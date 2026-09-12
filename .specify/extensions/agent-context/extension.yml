@@ -27,6 +27,10 @@ hooks:
     command: speckit.agent-context.update
     optional: true
     description: "Refresh agent context after planning"
+  after_converge:
+    command: speckit.agent-context.update
+    optional: true
+    description: "Refresh agent context after convergence"
 
 tags:
   - "agent"

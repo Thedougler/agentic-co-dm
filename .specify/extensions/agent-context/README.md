@@ -13,7 +13,7 @@ Not every Spec Kit user wants Spec Kit to write into the coding agent's context 
 - **Choose whether to install it at all** - `specify init` does **not** install it. Add it explicitly when you want Spec Kit to manage the agent context file; when it is absent, the file is never modified, and when it is disabled, its automatic hooks do not run.
 - **Customize the markers** by editing `.specify/extensions/agent-context/agent-context-config.yml` ([agent-context-config.yml](./agent-context-config.yml) in this repo) - the bundled scripts honor the `context_markers` value.
 - **Synchronize multiple agent anchors** by setting `context_files` when a project intentionally uses more than one coding agent context file, such as `AGENTS.md` and `CLAUDE.md`.
-- **Refresh on demand** by running the `speckit.agent-context.update` command in your agent, or automatically through the hooks declared in [extension.yml](./extension.yml) (`after_specify`, `after_plan`).
+- **Refresh on demand** by running the `speckit.agent-context.update` command in your agent, or automatically through the hooks declared in [extension.yml](./extension.yml) (`after_specify`, `after_plan`, `after_converge`).
 
 ## Installation
 
