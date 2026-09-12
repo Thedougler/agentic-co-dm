@@ -80,8 +80,19 @@ Same skill. Thin spawn files only:
 | Grok Bot | roster **Visualizer** — TotM / `[!narration]` pass 2; this skill plus `theatre-of-the-mind` |
 | Codex | this skill; optional `.codex/agents/copy-writer.toml` |
 | omp | `task` agent `.omp/agents/copy-writer.md` or this skill |
+| wiki-ingest | this skill on every distilled DM-facing page |
 
 Grok Bot packets that name **Visualizer** stay TotM-scoped unless the packet asks for other bands.
+
+### Ingest
+
+`wiki-ingest` already chose the destination. Polish that page. Do not re-route ideas, file the source as a wiki note, or invent filler for a fragment.
+
+Named ingest is DM approval for those sources (`docs/agents/work.md`). Write the destination. Conflicts stay a **proposal** / `^[ambiguous]`.
+
+Polish expression and **signal-density**. Keep settled facts, intent, and stated mechanics. Telegram stubs and agent shorthand are bad copy — rewrite them as complete sentences. Bad *wording* gets rewritten; settled *meaning* stays.
+
+**Complete when:** the destination reads as newly authored copy for its band, meaning unchanged, and the source is not a competing page.
 
 ## Workflow
 
@@ -173,8 +184,8 @@ Match the voice to the surface. A DM uses each surface differently; the wrong vo
 
 ## Handoffs
 
-- Missing or contradictory **facts** → Co-DM / ask Nick.
-- Missing **stock** (NPC design, place kernel, encounter math) → owning craft skill; write copy only after stock exists.
+- Missing or contradictory **facts** → Co-DM / ask Nick. During ingest, conflicts are a proposal (`wiki-ingest`); do not overwrite.
+- Idea routing, staging, manifest → `wiki-ingest`
 - **Monster / item math** → Monster-Brewer / Item-Brewer / Homebrewer.
 - **MOCs, indexes, hot structure** → Organizer.
 - **Run-guide cockpit** → Session-Planner owns pass 1 schema (`run-guide`); you own pass 2 DM-facing copy, then fill every empty `[!narration]` stub only on the TotM pass. TotM titles stay `[!narration]`. *Rulings* follow that skill’s Ruling section.
