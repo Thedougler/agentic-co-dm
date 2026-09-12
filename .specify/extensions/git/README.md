@@ -32,6 +32,7 @@ This extension provides Git operations as an optional, self-contained module. It
 | `before_plan` | `speckit.git.commit` | Yes | Commit outstanding changes before planning |
 | `before_tasks` | `speckit.git.commit` | Yes | Commit outstanding changes before task generation |
 | `before_implement` | `speckit.git.commit` | Yes | Commit outstanding changes before implementation |
+| `before_converge` | `speckit.git.commit` | Yes | Commit outstanding changes before convergence |
 | `before_checklist` | `speckit.git.commit` | Yes | Commit outstanding changes before checklist |
 | `before_analyze` | `speckit.git.commit` | Yes | Commit outstanding changes before analysis |
 | `before_taskstoissues` | `speckit.git.commit` | Yes | Commit outstanding changes before issue sync |
@@ -41,6 +42,7 @@ This extension provides Git operations as an optional, self-contained module. It
 | `after_plan` | `speckit.git.commit` | Yes | Auto-commit after planning |
 | `after_tasks` | `speckit.git.commit` | Yes | Auto-commit after task generation |
 | `after_implement` | `speckit.git.commit` | Yes | Auto-commit after implementation |
+| `after_converge` | `speckit.git.commit` | Yes | Auto-commit after convergence |
 | `after_checklist` | `speckit.git.commit` | Yes | Auto-commit after checklist |
 | `after_analyze` | `speckit.git.commit` | Yes | Auto-commit after analysis |
 | `after_taskstoissues` | `speckit.git.commit` | Yes | Auto-commit after issue sync |

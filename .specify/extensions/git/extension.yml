@@ -68,6 +68,11 @@ hooks:
     optional: true
     prompt: "Commit outstanding changes before implementation?"
     description: "Auto-commit before implementation"
+  before_converge:
+    command: speckit.git.commit
+    optional: true
+    prompt: "Commit outstanding changes before convergence?"
+    description: "Auto-commit before convergence"
   before_checklist:
     command: speckit.git.commit
     optional: true
@@ -113,6 +118,11 @@ hooks:
     optional: true
     prompt: "Commit implementation changes?"
     description: "Auto-commit after implementation"
+  after_converge:
+    command: speckit.git.commit
+    optional: true
+    prompt: "Commit convergence changes?"
+    description: "Auto-commit after convergence"
   after_checklist:
     command: speckit.git.commit
     optional: true
