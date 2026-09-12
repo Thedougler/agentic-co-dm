@@ -246,7 +246,6 @@ Spec Kit artifacts are the handoff protocol. Harness files must not copy feature
 ## Validation
 
 - Spec Kit status: `specify integration status --json` — must be `ok`, default `omp`, four integrations installed.
-- Drift check: `scripts/check-speckit-dry.sh` — exit 0.
 - OMP baseline: `scripts/check-omp-baseline.sh` — exit 0.
 
 ## Architecture Reference
