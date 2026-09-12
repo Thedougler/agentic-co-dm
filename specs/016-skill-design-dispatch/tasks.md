@@ -90,13 +90,13 @@ Contract: `specs/016-skill-design-dispatch/contracts/skill-design-dispatch.md`
 
 ## Phase 6: User Story 4 - Unavailability parks work and leaves files untouched (Priority: P4)
 
-**Goal**: Writer cannot start, stops, refuses, or errors → targets match dispatch-start content; scoped prompt is a GitHub issue a later session can find.
+**Goal**: Writer cannot start, stops, refuses, or errors → targets match dispatch-start content; scoped prompt is a GitHub issue a later session can find. Usage limit → that job incomplete with a retry time; do not retry before it.
 
-**Independent Test**: Simulate writer unavailable. Targets unchanged. Issue titled `Parked skill design: …` with `ready-for-agent` contains the scoped prompt.
+**Independent Test**: Simulate writer unavailable. Targets unchanged. Issue titled `Parked skill design: …` with `ready-for-agent` contains the scoped prompt. Simulate jobs 17–19: parked issue includes retry time; job is not re-attempted before that time; other in-session work is not marked incomplete.
 
 ### Implementation for User Story 4
 
-- [ ] T006 [US4] In `docs/agents/skill-design-dispatch.md`, add unavailability. Commit non-design work first; record `HEAD` as dispatch start. On non-success restore the prompt’s target paths to that revision. Park with `gh issue create`: Title `Parked skill design: <outcome>`; Label `ready-for-agent`; Body the scoped prompt. Search existing `Parked skill design:` issues before creating another for the same job. Session agent MUST NOT write the design-impact change. States: `open` → `resumed` → `done`.
+- [ ] T006 [US4] In `docs/agents/skill-design-dispatch.md`, add unavailability. Commit non-design work first; record `HEAD` as dispatch start. On non-success restore the prompt’s target paths to that revision. Park with `gh issue create`: Title `Parked skill design: <outcome>`; Label `ready-for-agent`; Body the scoped prompt. When reason is usage limit, Body also includes the retry time. Quote: Retry time is usage limit only; Reset time from the report when present; if none, 5 hours from the park; if a retry still reports a usage limit with no reset time, 24 hours from that attempt; Do not re-attempt before this time; Other in-session jobs are not marked incomplete for this reason. Search existing `Parked skill design:` issues before creating another for the same job. Session agent MUST NOT write the design-impact change. States: `open` → `resumed` → `done`. Resume of a usage-limit park waits until after retry time.
 
 **Checkpoint**: US1–US4 independently testable (quickstart step 4)
 
