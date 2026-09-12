@@ -1,21 +1,13 @@
 <!--
 Sync Impact Report
-- Version change: unratified scaffold → 1.0.0
-- Modified principles:
-  - [PRINCIPLE_1_NAME] → I. Domain Language Is Binding
-  - [PRINCIPLE_2_NAME] → II. Issues Are the Work Surface
-  - [PRINCIPLE_3_NAME] → III. Spec Before Code
-  - [PRINCIPLE_4_NAME] → IV. Tests Specify Behavior
-  - [PRINCIPLE_5_NAME] → V. Single Context, Documented Decisions
+- Version change: 1.0.0 → 1.1.0
+- Modified principles: none renamed
 - Added sections:
-  - Agent Operating Constraints
-  - Development Workflow
-  - Governance (filled from template)
-- Removed sections: none (template example comments stripped)
-- Follow-up TODOs:
-  - Product-domain principles (what Co-DM is, player/agent split, tabletop
-    rules) are deferred until CONTEXT.md exists. Amend after /domain-modeling
-    resolves terms.
+  - VI. Tools Are Agent-Shaped
+- Removed sections: none
+- Follow-up TODOs: none. Prior TODO (product-domain principles after
+  CONTEXT.md) is closed: CONTEXT.md exists; I. already binds it. Do not
+  duplicate glossary into this file.
 -->
 
 # Agentic Co-DM Constitution
@@ -77,11 +69,33 @@ is actually resolved, not up front.
 Rationale: one context until the map proves otherwise keeps the glossary
 and ADRs findable.
 
+### VI. Tools Are Agent-Shaped
+
+This is an agentic project in early development. Ship. Every script, tool,
+and util MUST be agent-shaped:
+
+- An agent MUST be able to invoke it without a GUI: arguments in, text or
+  JSON out, errors on stderr, an exit code that distinguishes done from
+  failed.
+- Agent-facing documents (skills, `AGENTS.md`, context pointers, CLIs
+  agents follow) MUST follow `.agents/skills/writing-for-agents`:
+  completion criteria on every step, leading words, progressive
+  disclosure, one source of truth, the environment as truth (not a stale
+  doc cache), positive instruction, prune no-ops and sediment.
+- MUST NOT add a human-only wrapper when an agent can run the same command.
+- MUST ship the agent-shaped tool first. Human chrome waits until a human
+  must operate it.
+
+Rationale: a tool the agent cannot run does not exist. Early speed is
+small, invocable tools, not delayed product surface.
+
 ## Agent Operating Constraints
 
 - Runtime guidance for agents is `AGENTS.md`. Skills MUST follow
   `docs/agents/issue-tracker.md`, `docs/agents/triage-labels.md`, and
   `docs/agents/domain.md`.
+- Skills, `AGENTS.md`, and other agent-consumed docs MUST follow
+  `.agents/skills/writing-for-agents`.
 - If `CONTEXT.md` or `docs/adr/` is absent, agents MUST proceed without
   flagging the absence or proposing those files as a prerequisite.
 - Wayfinder maps (issue labelled `wayfinder:map`) and child tickets are
@@ -97,9 +111,11 @@ and ADRs findable.
    independently testable user stories.
 3. Plan and tasks: `/speckit.plan` then `/speckit.tasks` after spec approval.
 4. Implement: TDD at agreed seams; one red → green slice at a time.
-   Refactoring belongs to review, not the implementation loop.
+   Refactoring belongs to review, not the implementation loop. Prefer a
+   small agent-shaped tool over waiting for a human-facing one.
 5. Review: code review MUST check constitution compliance, ADR conflicts,
-   and that tests observe behavior rather than internals.
+   that tests observe behavior rather than internals, and that new
+   scripts/tools/utils are agent-shaped.
 
 ## Governance
 
@@ -125,7 +141,8 @@ Compliance:
   principles before merge or implementation.
 - Unjustified complexity (new context, new abstraction, new tracker
   surface) MUST be rejected or recorded as an ADR.
+- A new script, tool, or util that is not agent-shaped MUST be rejected.
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.0.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-11
+**Version**: 1.1.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-11
