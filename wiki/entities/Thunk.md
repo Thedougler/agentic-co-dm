@@ -3,6 +3,7 @@ title: Thunk
 category: entities
 tags: [shattered-sea, npc, calveno]
 sources:
+  - "wiki/_archive/Thunk.md"
   - "Thunk"
 summary: Orc ship gunner and field smith aboard Uncertainty; his 1,000 gp cannon order leaves the crew with an unresolved debt.
 provenance:
@@ -14,7 +15,7 @@ lifecycle: canon
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T06:23:47Z
-updated: 2026-09-12T06:23:47Z
+updated: 2026-09-12T07:50:00Z
 type: npc
 reveal: revealed
 campaign: shattered-sea

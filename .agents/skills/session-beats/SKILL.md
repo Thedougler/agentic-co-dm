@@ -12,7 +12,7 @@ description: >-
 # Session beats
 ## Work gate
 
-Prep only. Follow `docs/agents/work.md`. Load `wiki/AGENTS.md`, `copy-writer`, and `obsidian-markdown` on every vault write.
+Prep only. Follow `docs/agents/work.md`.
 
 Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
 
@@ -20,8 +20,16 @@ Players see nothing until the DM accepts and presents.
 
 Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagged, grounding named.
 
-Remap durable output paths from `campaigns/<slug>/` to `wiki/` (entities/journal as appropriate). Templates live in `wiki/templates/`. Replace knowledge-bank terminology with wiki terminology, but do not change geographic river-bank language. Point at `docs/agents/work.md` rather than restating the glossary.
+Remap durable session-prep to `wiki/journal/sessions/<campaign-slug>/<session-number>/`. Templates live in `wiki/templates/`. Replace knowledge-bank terminology with wiki terminology, but do not change geographic river-bank language. Point at `docs/agents/work.md` rather than restating the glossary.
 
+
+## Filed spine
+
+After accept, file one spine at `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<number>-00-<Spine-Title>.md` with `type: session-prep`. Jobs: length, tone, prize, opposition, Hook/Climax/Resolution labels, dramatic spine, numbered skeleton with links to each live beat, per-beat purpose / table sees / truth / pressure / if they break / landing. Evidence: `wiki/_raw/Session-11-00-Birds-of-a-Feather.md`. The spine MUST NOT duplicate Scene ends when, Zones, or Be ready for. Live beats are composed with `run-guide` in Session 11 cockpit shape.
+
+`references/session-skeleton.md` is the planning form. The page the DM opens is the Session 11-00 shape, not that skeleton copied into the wiki.
+
+Done when: the spine answers those jobs, links every live beat, and contains no cockpit tables.
 
 Use a Beat Chart as a pacing palette, never as a script. Prepare pressures,
 factions, clues, locations, offers, and hazards that can become beats. Let what

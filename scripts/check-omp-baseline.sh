@@ -10,15 +10,15 @@ fail() {
 root="$(pwd)"
 passed=()
 
-python3 - "$root" <<'PY' || fail "integration is not omp in .specify/init-options.json"
+python3 - "$root" <<'PY' || fail "omp not in installed integrations"
 import json, sys
 from pathlib import Path
-p = Path(sys.argv[1]) / ".specify/init-options.json"
+p = Path(sys.argv[1]) / ".specify/integration.json"
 data = json.loads(p.read_text())
-if data.get("integration") != "omp":
+if "omp" not in data.get("installed_integrations", []):
     raise SystemExit(1)
 PY
-passed+=("integration-omp")
+passed+=("omp-installed")
 
 [[ -f .omp/commands/speckit.specify.md ]] || fail "missing .omp/commands/speckit.specify.md"
 [[ -f .omp/commands/speckit.converge.md ]] || fail "missing .omp/commands/speckit.converge.md"
@@ -26,9 +26,12 @@ passed+=("speckit-commands")
 
 [[ -f .omp/AGENTS.md ]] || fail "missing .omp/AGENTS.md"
 grep -q '@../AGENTS.md' .omp/AGENTS.md || fail ".omp/AGENTS.md missing @../AGENTS.md"
-grep -q '<!-- SPECKIT START -->' .omp/AGENTS.md || fail ".omp/AGENTS.md missing SPECKIT START"
-grep -q '<!-- SPECKIT END -->' .omp/AGENTS.md || fail ".omp/AGENTS.md missing SPECKIT END"
-passed+=("live-context")
+# SPECKIT live-context block now lives in root AGENTS.md, not .omp/AGENTS.md
+if grep -q '<!-- SPECKIT START -->' AGENTS.md || grep -q '<!-- SPECKIT START -->' .omp/AGENTS.md; then
+  passed+=("live-context")
+else
+  fail "SPECKIT START not found in AGENTS.md or .omp/AGENTS.md"
+fi
 
 [[ -f .omp/RULES.md ]] || fail "missing .omp/RULES.md"
 grep -qi 'verification' .omp/RULES.md || fail ".omp/RULES.md missing verification"
@@ -42,7 +45,7 @@ passed+=("sticky-rules")
 grep -q 'maxConcurrency: 4' .omp/config.yml || fail ".omp/config.yml maxConcurrency is not 4"
 grep -q 'maxRecursionDepth: 1' .omp/config.yml || fail ".omp/config.yml maxRecursionDepth is not 1"
 grep -A1 '^advisor:' .omp/config.yml | grep -q 'enabled: false' || fail ".omp/config.yml advisor not disabled"
-grep -A1 '^memory:' .omp/config.yml | grep -q 'backend: off' || fail ".omp/config.yml memory not off"
+grep -A1 '^memory:' .omp/config.yml | grep -qE 'backend: "?off"?' || fail ".omp/config.yml memory not off"
 grep -A1 '^autolearn:' .omp/config.yml | grep -q 'enabled: false' || fail ".omp/config.yml autolearn not off"
 passed+=("config-caps")
 
@@ -63,8 +66,10 @@ passed+=("no-phase-agents")
 [[ -f .omp/commands/feature-fast.md ]] || fail "missing .omp/commands/feature-fast.md"
 passed+=("feature-fast")
 
+# Root CLAUDE.md should not exist (replaced by .claude/CLAUDE.md thin import).
+# A thin .claude/CLAUDE.md import is fine; only a root CLAUDE.md with SPECKIT twin is a problem.
 if [[ -f CLAUDE.md ]] && grep -q '<!-- SPECKIT START -->' CLAUDE.md; then
-  fail "CLAUDE.md has a Spec Kit twin block"
+  fail "root CLAUDE.md has a Spec Kit twin block"
 fi
 passed+=("no-client-twin")
 

@@ -2,16 +2,16 @@
 name: session-wrapup
 description: >-
   Turn a completed campaign session into a durable, reviewable log and
-  surgical canon updates under wiki/<slug>/sessions/. Use after play or
-  after session-transcript-ingest has produced a bounded packet; do not use
-  for session prep or live narration.
+  surgical canon updates under wiki/journal/sessions/<campaign-slug>/<session-number>/.
+  Use after play or after session-transcript-ingest has produced a bounded
+  packet; do not use for session prep or live narration.
 ---
 
 # Session wrap-up
 
 ## Work gate
 
-Wrapup. Follow `docs/agents/work.md`. Show a chat proposal first. Write wiki pages only after DM accept (FR-019). Reject leaves no page. Load `wiki/AGENTS.md`, `copy-writer`, and `obsidian-markdown` on the post-accept write.
+Wrapup. Follow `docs/agents/work.md`. Show a chat proposal first. Write wiki pages only after DM accept (FR-019). Reject leaves no page.
 
 Invention is required when the wiki lacks the fact: flag it and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
 
@@ -19,7 +19,7 @@ Players see nothing until the DM accepts and presents.
 
 Done when: the DM has a chat proposal they can accept or reject; after accept, the filed page is inspectable Work.
 
-Remap durable output to `wiki/`; templates live in `wiki/templates/`. Unused prep is not canon.
+Remap durable output to `wiki/journal/sessions/<campaign-slug>/<session-number>/` for the session log. Owner updates stay on owner pages. Templates live in `wiki/templates/`. Unused prep is not canon.
 
 Turn what actually happened into the campaign's durable session record. This
 skill complements `session-transcript-ingest`: when the source is a raw,
@@ -40,12 +40,12 @@ between specialists.
    labels and short evidence spans when the ingest packet supplies them.
 3. **Propose the session log.** Show the beats in chat, addressed to the DM: actual beats in order, player-safe `[!narration]`, secrets revealed, loose threads, rewards, next hooks. Do not put DM-only facts, DCs, or unearned names in narration. Do not turn silence into an event. Do not write the wiki yet.
 4. **Propose surgical canon changes.** Name existing owner pages that play supports updating. For a genuinely new entity, propose a stub rather than inventing missing canon. Show contradictions to the DM.
-5. **File after accept.** After DM accept, write the smallest file under `wiki/` (session log + accepted owner updates). Follow `wiki/templates/` and the AGENTS `type` enum. Do not create `campaigns/`, `pages/`, or `raw/` trees. If the DM rejects, write nothing.
+5. **File after accept.** After DM accept, write the smallest session log under `wiki/journal/sessions/<campaign-slug>/<session-number>/` plus accepted owner updates. A session log MAY join that folder and MUST NOT replace the spine or beat cards. Follow `wiki/templates/session.md` and the AGENTS `type` enum (`session` for the log). Do not create `wiki/<slug>/sessions/`, `campaigns/`, `pages/`, or `raw/` trees. Attachments stay under `wiki/attachments/`. Owner pages stay outside the session folder. If the DM rejects, write nothing.
 6. **Hand off and finish.** Return a bounded receipt: log path, changed entity paths, unresolved contradictions, and any next-owner handoffs. Run `./scripts/after-write "skills: session wrap-up for <campaign>/<session>"` after writes. If the GM defers review, leave no silent canon write.
 
 ## Boundaries
 
-- Session logs are durable; `wiki/templates/Session prep.md` remains disposable.
+- Session logs are durable; `wiki/templates/session-prep.md` is Work until accept. The log uses `wiki/templates/session.md`.
 - `session-transcript-ingest` owns raw transcript/ASR cleanup and evidence
   packets; this skill owns the post-session log and approved surgical updates.
 - Use `qmd-retrieval` for lookup and `obsidian-markdown` for every vault note

@@ -3,6 +3,7 @@ title: Nona Black-Jaw
 category: entities
 tags: [shattered-sea, npc]
 sources:
+  - "wiki/_archive/Nona Black-Jaw.md"
   - "Nona Black-Jaw"
 summary: Calveno host and Passage route face who turns safehouse access and favors into practical work for the Black-Jaw Run.
 provenance:
@@ -14,7 +15,7 @@ lifecycle: canon
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T06:23:47Z
-updated: 2026-09-12T06:23:47Z
+updated: 2026-09-12T07:50:00Z
 type: npc
 reveal: revealed
 campaign: shattered-sea

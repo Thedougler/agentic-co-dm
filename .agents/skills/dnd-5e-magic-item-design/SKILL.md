@@ -7,7 +7,7 @@ description: Design, revise, or audit engaging and mechanically sound homebrew m
 
 ## Work gate
 
-Prep only. Follow `docs/agents/work.md`. Load `wiki/AGENTS.md`, `copy-writer`, and `obsidian-markdown` on every vault write.
+Prep only. Follow `docs/agents/work.md`.
 
 Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
 
@@ -81,7 +81,7 @@ Use `references/mechanical-audit.md` for the offense, defense, action economy, s
 - **qmd-retrieval:** campaign-vault facts and canon; do not invent setting details when retrieval is silent.
 
 ## Campaign item workflow
-Copy `wiki/templates/item.md` for consumables. Copy `wiki/templates/hazard.md` for flora hazards. Exemplars: `wiki/_raw/Ghost Plum.md`, `wiki/_raw/Razer-Grass.md`. The consumable note is flat: image → narration → type-line → mechanics:
+Copy `wiki/templates/item.md` for consumables. Copy `wiki/templates/hazard.md` for flora hazards. `wiki/_raw/Ghost Plum.md` and `wiki/_raw/Razer-Grass.md` illustrate. Pass is jobs in `wiki/AGENTS.md` Layout, not a frozen outline.
 Single item-design authority in ai-co-dm. Stackable gear remains PC/inventory data; mint a type: item note only when play, a query, or another note needs to cite the object.
 
 Before design, retrieve the target PC, campaign hot page, relevant front/quest/session, existing signature gear, and three same-tier comparators. State tier, intended wielder, acquisition mode, campaign constraints, attunement, cadence, and strongest party synergy. Write one Signature sentence: object + distinctive verb + why it belongs here.
@@ -92,15 +92,13 @@ Separate reveal into first sight, handling, known mechanics, earned lore, and DM
 
 ### Note format
 
-Copy `wiki/templates/item.md`. Exemplars: `wiki/_raw/Ghost Plum.md`. The note is flat: image → narration → type-line → mechanics:
+Copy those templates as scaffolds. Numbers live on one owner page.
 
-1. **Frontmatter** — `type: item`, plus `campaign`, `region`, `kind`, `rarity`, `attunement`, `owner`, `tags` (include region and kind in tags), and `wiki/AGENTS.md` required fields.
-2. **Title** — `# Item Name`.
-3. **Image embed** — `![[attachments/<campaign>/items/<slug>.png]]` when art exists.
-4. **Narration callout** — `> [!narration] Narration` — one paragraph cold object portrait. No secrets, DCs, unearned names.
-5. **Type-line** — `Kind, Rarity` (e.g., `Consumable, Rare`).
-6. **Mechanics** — terse runnable text. 2024/5.5e language; at-table grammar from `obsidian-markdown`.
+1. **Frontmatter** — `type: item`, plus `campaign`, `region`, `kind`, `rarity`, `attunement`, `tags` (include region and kind in tags), and `wiki/AGENTS.md` required fields. Omit unused keys including `owner`.
+2. **Spoken look** — `[!narration]` cold portrait. No secrets, DCs, unearned names.
+3. **Classification** — kind and rarity (consumable) or hazard start/notice.
+4. **One runnable effect** — terse 2024/5.5e text; at-table grammar from `obsidian-markdown`. Then stop on a consumable. Flora hazards also answer contact cost, careful passage, and counterplay.
 
-Complex items (magic weapons, relics, artifacts, sentient/cursed/evolving) add flat sections below mechanics when needed — `## Story hooks`, `## Provenance`, `## Charges`, or bold-label properties. Do not add sections a simple item does not need.
+Complex items (magic weapons, relics, artifacts, sentient/cursed/evolving) add sections below only when they change the table. Do not add sections a simple item does not need.
 
 Run obsidian-markdown and applicable checks. Finish with `./scripts/after-write "design or revise item"`.

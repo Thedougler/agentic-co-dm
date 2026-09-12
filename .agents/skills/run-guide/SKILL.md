@@ -15,7 +15,7 @@ description: >-
 # Run Guide
 ## Work gate
 
-Prep only. Follow `docs/agents/work.md`. Load `wiki/AGENTS.md`, `copy-writer`, and `obsidian-markdown` on every vault write.
+Prep only. Follow `docs/agents/work.md`.
 
 Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
 
@@ -23,7 +23,7 @@ Players see nothing until the DM accepts and presents.
 
 Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagged, grounding named.
 
-Remap durable output paths from `campaigns/<slug>/` to `wiki/` (entities/journal as appropriate). Templates live in `wiki/templates/`. Replace knowledge-bank terminology with wiki terminology, but do not change geographic river-bank language. Point at `docs/agents/work.md` rather than restating the glossary.
+Remap durable session-prep to `wiki/journal/sessions/<campaign-slug>/<session-number>/`. Owners stay under `wiki/`. Templates live in `wiki/templates/`. Replace knowledge-bank terminology with wiki terminology, but do not change geographic river-bank language. Point at `docs/agents/work.md` rather than restating the glossary.
 
 
 Build one **cockpit** the DM can run from Reading view without hunting the vault.
@@ -41,10 +41,7 @@ embed and no action-card numbers fails.
 One opposition want, said once. One *procedure*, named. Nothing restated later
 as a second framework.
 
-**Lean contract.** Run guides use the same default style as the rest of the
-vault: flat, direct, and only as sectioned as play requires. Preserve the
-existing heading spine, section names, and order when editing. Add a section
-only when the DM will use it to run this beat.
+**Session 11 cockpit.** Required job order is the Session 11 beat cards (`wiki/_raw/Session-11-01-Angry-Birds.md` through `wiki/_raw/Session-11-10-Aftermath.md`). Those files illustrate quality; do not photocopy a named Session 11 title. Omit a section only when that job is absent — no empty heading. Preserve heading spine, section names, and order when editing.
 
 **Image anchors.** If the beat has an overview or identity image, keep it near
 the top of the file as the visual first look. If the beat has battlemap art,
@@ -175,14 +172,15 @@ This pass fills every empty `[!narration]` stub and every empty Narration table
 cell. The DM copy is already clean — spoken prose is built on solid scaffolding.
 The DM may skip a block at the table; the writer fills all of them.
 
-6. **Fill narration.** Fill `Initial Narration` first — one concise, complete
-   scene-setting block for the players: perceivable subjects, relationships,
-   routes or cover, relative position, imminent pressure, actionable scene
-   stock, drawable appearance, and a non-sight sense. Then fill remaining stubs
-   and Narration cells in reading order. Completion: every `[!narration]` body
-   is filled; every Narration column cell is filled as `==_italic_==`; the
-   Initial Narration reaches the first real player opening without hidden truth,
-   DCs, mechanics talk, or padded mood; no stub restages Initial Narration.
+6. **Fill narration.** Fill `Initial Narration` first — the Layer 1 immediate
+   frame for the players: what is obvious without deliberate investigation,
+   with features that matter now already in the fiction. Salient features and
+   discoverable information are separate reveal blocks or zone/tick Narration
+   cells. Then fill remaining stubs and Narration cells in reading order.
+   Completion: every `[!narration]` body is filled; every Narration column cell
+   is filled as `==_italic_==`; the Initial Narration gives the table a stable
+   shared picture and something live to respond to without hidden truth, DCs,
+   mechanics talk, or padded mood; no stub restages Initial Narration.
 
 ### Pass 4: Ready check
 
@@ -202,13 +200,11 @@ One downward pass of the cockpit in Reading view.
 Frontmatter: `type: session-prep` (or `encounter`),
 `visibility: dm`.
 
-Use this as a section catalog, not a template to fill completely. A section
-earns space only when it changes a ruling, route, clock, resource, NPC response,
-or words to speak. The stable spine is:
-`Scene ends when`, `Glance`, `Initial Narration`, `How the Scene Resolves`.
+Required order: identity; optional first-beat recap; overview art if it exists; Scene ends when + At a Glance; Now; Action cards; Initial Narration; Procedure + Secondary objective if a second question exists; Zones; Be ready for; Threat clock + dials if a fuse exists; How the Scene Resolves; Roster if combat-mode sheets will be rolled; Backup; Battlemap at bottom if art exists. Omit a job only when it is absent.
 
-Add other sections only as the beat needs them. Keep the order already present
-in an existing file unless moving a section makes the card easier to run.
+Filename: `Session-<number>-<beat-number>-<Label>.md` with two-digit beat numbers (`01`, `02`, …) matching skeleton position. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/`. Copy-start: `wiki/templates/session-prep.md`.
+
+At a Glance scans as stakes, goal or exit, danger, silence, situation magnets. Scene ends when states the stop condition, a roughly thirty-minute budget, and behind/ahead cuts when pacing is not obvious. How the Scene Resolves hands to a beat on this session’s skeleton. Default-mode action-card numbers MAY sit on the beat; the beat MUST NOT become a second full owner page.
 
 **Columns.** Session cards use obsidian-columns **codeblock** syntax
 (`col` / `col-md`) so `[!narration]` stays a real callout. Syntax:
@@ -353,15 +349,23 @@ measurements. There is no separate Starting state heading.
 
 ## Scene-setting (Initial Narration)
 
-`theatre-of-the-mind` owns the prose. This skill owns **what must already be in the spoken block** before the question (Angry GM: goal, obstacle, tools; Alexandrian: all immediately perceived facts).
+`theatre-of-the-mind` owns the prose. This skill owns **what must already be in the spoken block** before the question.
 
-Pass 1 leaves `> [!narration] Initial Narration` empty. Pass 3 fills a complete *scene-setting* block: currently visible cover, routes, relative position, who is being hunted, imminent action, drawable appearance, accessible scene stock, and at least one non-sight sense, joined as flowing spoken prose. Those facts are not a later clock tick and not a DM catalog under the callout. If the owner already has an identity or overview image, keep it as the top visual anchor; the image does not replace the spoken look.
+Pass 1 leaves `> [!narration] Initial Narration` empty. Pass 3 fills the
+**Layer 1 immediate frame**: what is obvious without deliberate investigation,
+joined as flowing spoken prose. Salient features, discoverable information, and
+deeper facts are separate complete reveal blocks or zone/tick Narration cells
+(Layers 2–3) that describe the discovery, not the method. Features that matter
+tactically or interactively belong in Layer 1 before a player would need them.
+Those facts are not a DM catalog under the callout. If the owner already has an
+identity or overview image, keep it as the top visual anchor; the image does
+not replace the spoken look.
 If a battlemap is present, orient routes, zones, cover, and exits with the same
 compass used by the map: top north, right east, bottom south, left west. Use
 cardinal words where they help the table hold the scene; do not turn Initial
 Narration into a compass checklist.
 
-Stop at the reaction point after those facts, then “What do you do?” Typical filled length is two to four short spoken paragraphs.
+Stop on a live situation, then “What do you do?”
 
 ## Time and cut lines
 
@@ -420,7 +424,7 @@ Completion — all of these hold, or the draft is not done:
 - No naked checks. Every check says what success reveals or changes, what failure changes, and why the result matters now.
 - Pass 1: `dnd5e-mechanics` loaded; `copy-writer` and `theatre-of-the-mind` not loaded. Empty callout stubs and empty Narration-column cells at the TotM slots this beat can actually use; no player-facing prose in those bodies. How the Scene Resolves is one unconditional stub plus an options table, not a stack of variant callouts. Each option hands off to a beat on the skeleton, not off-scene.
 - Pass 2: `copy-writer` loaded after pass 1 completes; `theatre-of-the-mind` not loaded. DM-facing copy is usable, readable, useful, complete, and signal-only before spoken prose is filled. Every `[!narration]` body and Narration column cell is still empty.
-- Pass 3: `theatre-of-the-mind` loaded after pass 2 completes. Initial Narration concisely sets the scene with perceivable subjects, relationships, routes or cover, relative position, imminent pressure, actionable scene stock, drawable appearance, and a non-sight sense, then the first real player opening. Every stub is filled. Every Narration cell that is spoken is `==_italic_==`.
+- Pass 3: `theatre-of-the-mind` loaded after pass 2 completes. Initial Narration is the Layer 1 immediate frame — a stable shared picture and something live to respond to. Salient features and deeper facts are separate reveal blocks or zone/tick Narration cells (Layers 2–3). Every stub is filled. Every Narration cell that is spoken is `==_italic_==`.
 - Pass 4: Reading view was checked top to bottom; no `[!narration]` body or Narration table cell that should be spoken is empty.
 - Action cards sit near the procedure or ruling they support. Bloodied, cover-reached, and scene dials sit beside the Threat clock table when a Threat clock exists.
 - Every consequence is a *ruling* (see Ruling).

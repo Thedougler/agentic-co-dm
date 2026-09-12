@@ -3,14 +3,17 @@ name: visual-aids
 description: >-
   Attach, ground, generate, promote, or place a player-safe visual aid for a named campaign owner
   or session moment. Use when a page needs an identity image, prep names a moment to picture, or
-  a run guide needs approved images. Not map rendering, spoken narration, or invented faces.
+  a run guide needs approved images. Kind `visual-aids`. Does not gather references in place of
+  visual-references when a known owner is depicted. Reference image is durable identity.
+  Illustration is session-scoped and not identity. Not map rendering, spoken narration, or
+  invented faces.
 ---
 
 # Visual Aids
 
 ## Work gate
 
-Prep art is Work, not auto-canon. Follow `docs/agents/work.md`. Load `wiki/AGENTS.md`, `copy-writer`, and `obsidian-markdown` on every vault write.
+Prep art is Work, not auto-canon. Follow `docs/agents/work.md`.
 
 Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
 

@@ -3,6 +3,7 @@ title: Bloodhawk
 category: entities
 tags: [shattered-sea, creature, aruhe, apex-predator, aerial]
 sources:
+  - "wiki/_archive/Bloodhawk.md"
   - "house (2024 Roc chassis, SRD peer)"
 summary: CR 11 adult aerial skirmisher that telegraphs a stoop, seizes exposed prey, and breaks off when cover denies its dive.
 provenance:

@@ -1,6 +1,6 @@
 modelRoleStorage: project
 modelRoles:
-  default: opencode-go/grok-4.6:medium
+  default: opencode-go/grok-4.6:high
   plan: opencode-go/grok-4.6:high
   task: opencode-go/gpt-5.6-luna:medium
   review: opencode-go/grok-4.6:high
@@ -28,9 +28,11 @@ memory:
 autolearn:
   enabled: false
 tools:
-  approvalMode: write
+  approvalMode: yolo
 lsp:
   enabled: true
   lazy: true
   diagnosticsOnWrite: true
   diagnosticsDeduplicate: true
+disabledExtensions:
+  - context-file:project:CLAUDE.md

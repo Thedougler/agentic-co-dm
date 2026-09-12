@@ -4,14 +4,15 @@ description: >-
   Gather visual anchors — reference images and appearance prose — from vault entity pages before
   generating or editing art that depicts them. Fires before any image generation or image edit call
   when the composition includes a vault PC, NPC, monster, location, vehicle, item, or named moment.
-  Not for placing finished art on pages; use visual-aids for that.
+  Kind `visual-references`. Not for placing finished art on pages; use visual-aids for that.
+  Missing look → stop; do not invent a face.
 ---
 
 # Visual References
 
 ## Work gate
 
-Prep art is Work, not auto-canon. Follow `docs/agents/work.md`. Load `wiki/AGENTS.md`, `copy-writer`, and `obsidian-markdown` on every vault write.
+Prep art is Work, not auto-canon. Follow `docs/agents/work.md`.
 
 Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
 

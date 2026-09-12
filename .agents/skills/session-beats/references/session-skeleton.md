@@ -1,7 +1,6 @@
 # Session beat skeleton
 
-Copy this form. Delete candidates that stop mattering after play. Write
-situations and pressures, not outcomes.
+Copy this form while planning. Delete candidates that stop mattering after play. Write situations and pressures, not outcomes. This skeleton stays a planning form. The wiki page the DM opens is the Session 11-00 filed spine (`wiki/_raw/Session-11-00-Birds-of-a-Feather.md`), not this form copied into the vault.
 
 ## 0. Promise and state
 

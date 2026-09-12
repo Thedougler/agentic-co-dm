@@ -12,7 +12,7 @@ description: >-
 # NPC design
 ## Work gate
 
-Prep only. Follow `docs/agents/work.md`. Load `wiki/AGENTS.md`, `copy-writer`, and `obsidian-markdown` on every vault write.
+Prep only. Follow `docs/agents/work.md`.
 
 Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). New NPCs are Work: chat first, `type: npc` page only after accept. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. `type: npc` becomes `lifecycle: canon` only after DM accept.
 
@@ -20,7 +20,7 @@ Players see nothing until the DM accepts and presents.
 
 Done when: the DM has a chat proposal they can accept or reject; after accept, the filed `type: npc` page is inspectable Work.
 
-File durable output under `wiki/` (entities/journal as appropriate). Copy `wiki/templates/npc.md`. Add optional sections only from `specs/003-npc-page-standard/contracts/npc-page.md` when they have content.
+File durable output under `wiki/` (entities/journal as appropriate). Copy `wiki/templates/npc.md` as a scaffold. Pass on person jobs in `wiki/AGENTS.md` Layout. Add optional extra depth from `specs/003-npc-page-standard/contracts/npc-page.md` only when those facts exist.
 
 ## Central principle
 
@@ -108,46 +108,29 @@ choice with risk, not a predetermined moral reward.
 
 ## File the wiki note
 
-Copy `wiki/templates/npc.md`. Core order, always: title → At a Glance → spoken look → Running the NPC → Relationships.
+Copy `wiki/templates/npc.md` as a scaffold. Pass is person jobs in `wiki/AGENTS.md` Layout: who and want, look, first minutes and posture change, named ties. Combat only if they can fight.
 
 At a Glance is a cue table: Role, Nature, Home, Wants. Extra rows only when they change how the DM runs the NPC. End with a one-sentence **DM thesis**.
 
-Spoken look is `[!narration] {Name}`. Theatre of the mind. No secrets, DCs, unearned names, or DM thesis.
+Spoken look is `[!narration]` `{Name}`. Theatre of the mind. No secrets, DCs, unearned names, or DM thesis.
 
 Running the NPC: first move and the change that shifts posture.
 
-Relationships: wikilink + table meaning. Patron rows MAY add an invitation. Omit the section only on a stub with no named ties.
+Relationships: wikilink + table meaning. Omit the section only on a stub with no named ties.
 
 Omit unused optional sections. No empty History, Combat, activity log, knobs, or extra forms.
 
 Named-ingest stubs: identity fields + complete sentences. No optional scaffolding.
 
-Identity defaults live on the template. `role` must be supplied (`rival` \| `patron` \| `contact`).
+Identity defaults live on the template. `location` is `unknown` when unknown. `faction` is `none` when unknown. Omit `aliases` when unused. `role` must be supplied (`rival` \| `patron` \| `contact`).
 
-Build-step map: steps 1–3 → At a Glance; step 4 → extra Glance rows when needed; step 5 → DM thesis; step 6 → narration + Running; step 7 → Relationships.
+`wiki/_raw/Hinewai.md`, `wiki/_raw/Talon Skarn.md`, `wiki/_raw/Nona Black-Jaw.md`, and `wiki/_raw/Thunk.md` illustrate density. They are not required classes and not clone targets. Landmark/skirmish/patron/contact remain useful density examples.
 
-Layout source:
+`specs/003-npc-page-standard/contracts/npc-page.md` is optional extra depth when facts exist.
 
-- Landmark hostile: `wiki/_raw/Hinewai.md`
-- Skirmish hostile: `wiki/_raw/Talon Skarn.md`
-- Patron: `wiki/_raw/Nona Black-Jaw.md`
-- Contact: `wiki/_raw/Thunk.md`
+### Extra depth when true
 
-Optional sections and order: `specs/003-npc-page-standard/contracts/npc-page.md`.
-
-### `role: rival`
-
-**Landmark** (Hinewai): extra Glance rows for weakness, return, or permanent end when those facts exist; each extra form gets its own glance + spoken look; History when origin is needed; Combat stages keyed to a named condition the party can change, not walking-body hit points alone.
-
-**Skirmish** (Talon Skarn): Running includes opening, default turn, pressure response, target priority, and counterplay; one fight sheet; optional difficulty knobs change tactics or starting position only.
-
-### `role: patron`
-
-Nona-class. Current pressure. Public vs secret when a secret exists. Relationships MAY add invitation. Activity log after appearances. Unique lore after Running and before Relationships. Omit Combat unless the NPC can fight.
-
-### `role: contact`
-
-Thunk-class. Core spine plus at most one Current pressure and one practical-use block. No patron ledger, extra forms, or staged sheets.
+When the NPC is fightable, add Combat (encounter rule plus sheet or one pointer). When origin, extra form, live pressure, or a secret exists, file those facts. Thin people omit unused extra depth; they are not incomplete.
 
 ## Combat handoff
 

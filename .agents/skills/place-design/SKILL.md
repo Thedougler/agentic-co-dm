@@ -13,7 +13,7 @@ description: >-
 # Place design
 ## Work gate
 
-Prep only. Follow `docs/agents/work.md`. Load `wiki/AGENTS.md`, `copy-writer`, and `obsidian-markdown` on every vault write.
+Prep only. Follow `docs/agents/work.md`.
 
 Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
 
@@ -153,31 +153,27 @@ exposure, limits, or consequences.
 
 ## Presentation and handoffs
 
-Design with the [location skeleton](references/location-skeleton.md) and
-[node-key-and-affordances](references/node-key-and-affordances.md). File **facts**
-into `wiki/templates/place.md`. On create or edit, match that shape. Filled exemplars:
-`wiki/_raw/Old Gardens.md` and `wiki/_raw/River Line Bank.md`.
+Design with the [location skeleton](references/location-skeleton.md) and [node-key-and-affordances](references/node-key-and-affordances.md). File **facts** into `wiki/templates/place.md` as a scaffold. Pass is place jobs in `wiki/AGENTS.md` Layout, not heading-order match. `wiki/_raw/Old Gardens.md` and `wiki/_raw/River Line Bank.md` illustrate; do not require matching their headings.
 
-| Design work | Location note |
+| Design work | Place jobs |
 |---|---|
-| Identity image | After the title, before Overview (`visual-aids`) |
-| Opening geography, flora woven in, non-sight sense | **Overview** `[!narration]` (TotM; empty until fill) |
-| Identity, key adjacent links, skip/bypass | **At a glance** |
-| Navigation routes first, then interactions with changed consequences, then foraging tiers | **If the party** (`obsidian-markdown` / `dnd5e-mechanics`); omit default-safe, normal, or no-effect actions. |
-| Creatures and NPCs with behavioral niche | **Who** |
-| Environment, flora placement, fauna behavior, features | **What** |
-| North/east/south/west neighbors, canon gaps, and approximate days of travel | **Where** |
-| In-world reasons to come, stay, or care | **Why** |
-| Battlemaps, non-identity art | **Art** (omit the heading when none exist) |
+| Identity image | After the title when art exists (`visual-aids`) |
+| Spoken look | Theatre of the mind `[!narration]` |
+| Situation now | What this place is, which linked places it sits between |
+| Consequential moves | Player verbs that change the scene; omit no-op moves |
+| Presence or sign of absence | Who is here, or the sign they are not |
+| Table objects | Features, flora, fauna, objects; wikilink owner pages |
+| Connections | Neighbors and how this place connects; name a canon gap when unknown |
+| Purpose | Why a party comes, stays, or cares |
+| Extra art | Battlemaps; omit when unused |
 
 Kernel, 3Fs, promise, player-verb lists, topology audit, references, and the
 quality checklist stay in this skill. A climactic or anchor location
 (`Memorial Grove`) may carry kernel, topology, player verbs, hooks, secrets,
 and provenance directly when those facts serve the DM at the table — but the
-standard template stays clean.
-**Complete when:** the filed note matches `wiki/templates/place.md`, the
-`Where` section has north, east, south, and west entries with approximate days of travel
-or explicit canon gaps, and the skeleton is not on the wiki page.
+scaffold stays clean.
+
+**Complete when:** the filed note answers place jobs in `wiki/AGENTS.md` Layout, empty sections are omitted, connections name neighbors or canon gaps, and the skeleton is not on the wiki page.
 
 Run the audit: identity and promise are clear; topology has choices; nodes pass
 the verb test; clues are robust; factions have goals and moves; pressure changes
@@ -193,8 +189,8 @@ silent—mark a stub.
 ## World-bible and prep gates
 
 Keep location notes modular and table-findable in under 30 seconds. File **facts**
-in `wiki/templates/place.md` order. Secrets remain DM truth and never enter
-`[!narration]`; they live as facts under Who, What, or If the party. A location
+into `wiki/templates/place.md` as a scaffold. Secrets remain DM truth and never enter
+`[!narration]`; they live as facts that answer the jobs. A location
 earns depth from responsive systems: inhabitants move, factions react, routes
 change, and clocks advance — not from a larger lore block. Prepare only the
 topology, affordances, clues, and pressure the DM will not improvise, then link

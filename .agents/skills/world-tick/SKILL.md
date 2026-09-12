@@ -6,7 +6,7 @@ description: Post-session world advancement ritual — walks through active fact
 # World Tick
 ## Work gate
 
-Wrapup. Follow `docs/agents/work.md`. Load `wiki/AGENTS.md`, `copy-writer`, and `obsidian-markdown` on every vault write.
+Wrapup. Follow `docs/agents/work.md`.
 
 Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Off-screen movement is proposed Work grounded in wiki pages and/or D&D 5e rules; cite `[[pages]]`, surface contradictions to the DM, and never present invention as wiki fact. Outcomes remain proposed until accept, then make surgical owner-page updates. Unused prep is not canon.
 

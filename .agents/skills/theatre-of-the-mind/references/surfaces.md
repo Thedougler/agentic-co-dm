@@ -25,7 +25,7 @@ Promise / Trajectory / Aspects / Player verbs), Hunger/possession rule-talk, or
 invented mystery/located-change closers. Optional motion under water is only for
 **situated** survey when table state supplies current motion.
 
-If the job is `[!narration]` on a faction/organization owning page and no current table state is supplied, force a **standalone cold faction portrait**. Require about four to six connected sentences, with a floor of roughly four: public mask, one concrete kitchen-table method footprint, one environmental Tell, and a supplied shared title or face cue. Keep secret agenda, Rule of Two, hunt clocks, and other DM-only pressure out of the public block; ban abstract ledger or martial-reach jargon and do not invent plot to fill the length.
+If the job is `[!narration]` on a faction/organization owning page and no current table state is supplied, force a **standalone cold faction portrait**. Coverage dimensions: public mask, one concrete kitchen-table method footprint, one environmental Tell, and a supplied shared title or face cue. Keep secret agenda, Rule of Two, hunt clocks, and other DM-only pressure out of the public block; ban abstract ledger or martial-reach jargon and do not invent plot.
 
 - **Situated moment:** use the supplied viewpoint and current table state, then
   route to the matching contract below. A loaded first look is one complete
@@ -57,7 +57,7 @@ is contract coverage, not a dump of every parent heading.
 
 | Surface | Primary job and contract | Natural stop |
 | --- | --- | --- |
-| Place or encounter | Use the spatial camera. Select one frame: **approach/route**, **survey/layout**, or **tactical field**. Seat the viewpoint, introduce each landmark once, use concrete units and compass directions, and put one signature property on a usable anchor. A requested full/loaded first look is one coherent spoken block containing every relevant currently perceivable subject and relationship, including locations, routes, people, creatures, items, hazards, loot, lore signs, world details, and motion. **Scene-setting (`Initial Narration`):** second person present (**you see**, **you hear**, **you feel** physical, **you smell**). Currently visible cover, routes, relative position, who is being hunted, imminent action, drawable appearance, relevant scene stock, and at least one non-sight sense, woven into the spoken sentences. An owner photo on the run card is a DM glance, not a substitute for the spoken look; open those **pixels** per [vision.md](vision.md) so the spoken look matches the art. Do not say "the crew". | For a full/loaded first look, stop only after that visible state is complete, at its pressure, opportunity, micro-reveal, or choice — and after the table has the facts needed to act. A doorway-only partial pass applies only when explicitly requested. A located change is useful, not compulsory. |
+| Place or encounter | Use the spatial camera. Select one frame: **approach/route**, **survey/layout**, or **tactical field**. Seat the viewpoint, introduce each landmark once, and put one signature property on a usable anchor. **Scene-setting (`Initial Narration`)** is the **Layer 1 immediate frame**: what is obvious without deliberate investigation, in second person present tense. Salient features and discoverable information are separate complete reveal blocks or zone/tick Narration cells (Layers 2–3) that describe the discovery, not the method. Features that matter tactically or interactively belong in Layer 1 before a player would need them. Player-facing distance uses relational bands (Melee, Near, Far); DM-facing zones may keep feet. An owner photo on the run card is a DM glance; open those **pixels** per [vision.md](vision.md). Do not say "the crew". | Stop on a live situation (danger, contradiction, question, opportunity, demand, objective, or changing circumstance) after the Layer 1 frame gives the table a stable shared picture. Do not choose the party's response. |
 | Hazard or environmental hazard | Cold `[!narration]` is a standalone portrait of the **hazard body or patch**, not a creature Hookline/Reel and not a default place/lake-spine description. Lead with the waist/ground-scale form, then positive material or construction and one positive sensory or physical telegraph. Use kitchen-table wording: plain spoken nouns and concrete verbs over ecology or workshop compounds such as `colonies`, `opaline`, or `cut-ready`, while keeping positive glass and cut danger telegraph. A supported plain hardness contrast, such as fixed sparkles that do not sway like soft grass, is allowed; ban frost-mystery or absent-flash riddles, not every negative construction. Public or earned Detection facts may feed Appearance; keep DCs and private mechanics out. Ban invented landscape camera, em dash, and italic underscore wrappers. | Stop at the drawable hazard and its player-facing affordance or danger, before resolved contact, Shatter, Glass Bloom, or aftermath film. |
 | Faction or organization | Cold `[!narration]` is a public mask portrait in about four to six connected sentences, never a DM dossier. Show the public mask, one concrete kitchen-table method footprint, one environmental Tell, and a supplied shared title or face cue; ban ledger/martial-reach workshop jargon. These are coverage labels only: faction `[!narration]` must not say `mask`, `footprint`, `Tell`, or `face cue`; render the signs directly. Keep secret agenda, Rule of Two, hunt clocks, and hidden leverage in DM sections. | Stop on the shared title or name people hear, before secret goals, clocks, or faction procedure. |
 | Travel | Treat travel as a moving place: orient the route, ground or air, weather, and one live feature. Abstract uneventful distance. Frame a meaningful interruption or endpoint and offer the next choice. | Stop when the party must choose, respond, or decide whether to inspect the endpoint. |
@@ -68,7 +68,7 @@ is contract coverage, not a dump of every parent heading.
 | Creature or monster | Make the requested creature or group the grammatical and attentional subject; habitat gets only enough seat to locate its entrance or motion. Show observable body, behavior, posture, and sensory effects actually experienced. For a group, use a collective noun, one supported formation or motion, and one supported visible consequence. Convert supported numeric scale into a drawable body relation where possible without inventing a comparison. Separate visible manifestation, a qualified inference, and mechanic/secret text. Telegraph danger through buildup; do not recite exact aura radius, DC, condition, HP, or hidden ability without earned knowledge. On a first look or cold monster `[!narration]`, do not resolve Hookline/Reel, Stoop steal, Grubnade burst, claw, bite, grab, dive-grab, or other contact; do not time-skip tactics (`minutes later`). | **Reaction point (hard):** stop *before* resolved contact or completed signature move. Max danger is a visible telegraph (wings pin, whistling line starts, swell/hiss, hanging line snaps taut) with the creature as subject. Fail if steal/climb completes, burst detonates, haul finishes, ankle/boot seized, or PC cognition is narrated. Then a player choice or next live opening. |
 | Person or NPC | Give a reusable **Face**, the established current objective, an action or physical cue, and one sourced sense when useful. Do not invent a motive the viewpoint cannot know. | Stop when the person looks up, changes action, offers an opening, or waits for the players. |
 | Dialogue | Give the speaker's want now, tactic or physical cue, and one utterance that asks, presses, offers, answers, or threatens. Accents are optional. Keep the response opening answerable. | Stop after that beat; separate later aside, warning, or thank-you so players can interrupt. |
-| Combat update | Name the acting body, its intent or resolved action, position in the established field, causal fictional change, and the next live actor, threat, or opening. Keep routine hits short; put damage numbers and procedure in mechanics. A dramatic outcome may invite bounded player authorship without dictating a PC's injury or emotion. | Stop at the next turn, threat, opening, or bounded question. |
+| Combat update | Name the acting body, its intent or resolved action, position in the established field, causal fictional change, and the next live actor, threat, or opening. Keep routine hits short; put damage numbers and procedure in mechanics. A dramatic outcome may invite bounded player authorship without dictating a PC's injury or emotion. Combat updates are runtime — the DM invents them at the table. Do not prewrite turn-by-turn narration or top-of-round summaries. | Stop at the next turn, threat, opening, or bounded question. |
 | Recap | State only what play made true, in past tense, then restore the current pressure or handle. Invite a volunteer player memory when useful; correct facts and continue without requiring a performance. | Stop when tonight's situation is live again. |
 | Handout or rendered player text | Preserve the diegetic owner, in-world purpose, salient specifics, and one actionable payload plus its legal discovery channel. Make it scannable and rereadable as a player-held artifact, not spoken camera prose. Never include hidden truth. | Stop when the artifact gives the player what they can quote, inspect, or act on. |
 | Vision or illusion | Present the subjective image, sensory signal, and explicit uncertainty. Keep the experience separate from world fact and let players interpret it. | Stop when the image shifts, ends, or creates a player-facing decision. |
@@ -109,9 +109,9 @@ The fields below are coverage dimensions, not a required output sequence.
   commentary, and future outcomes out. Large regions may use a compact overview
   followed by coherent paragraphs; coverage is the supplied public descriptive
   identity, not every source section.
-- **Hazard:** make the hazard body or patch the subject and cover its drawable form/scale, positive material or construction, and a supported sensory or physical telegraph in connected prose. Use kitchen-table wording with plain spoken nouns and concrete verbs, not ecology/craft compounds such as `colonies`, `opaline`, or `cut-ready`; keep the positive glass/cut danger telegraph. A supported plain hardness contrast is allowed, but frost-mystery or absent-flash riddles are not. A public or earned Detection fact may enter the cold portrait. Keep creature contact scripts, place-camera staging, em dashes, italic wrappers, exact mechanics, and Shatter/Glass Bloom aftermath out.
+- **Hazard:** make the hazard body or patch the subject and cover its drawable form/scale, positive material or construction, and a supported sensory or physical telegraph in connected prose. Use kitchen-table wording with plain spoken nouns and concrete verbs. A supported plain hardness contrast is allowed, but frost-mystery or absent-flash riddles are not. A public or earned Detection fact may enter the cold portrait. Keep creature contact scripts, place-camera staging, em dashes, italic wrappers, exact mechanics, and aftermath out.
 
-- **Faction or organization:** make the public mask the organizing identity and cover a concrete method footprint, one environmental Tell, and any supplied shared title or face cue in at least roughly four connected sentences. Keep secret agenda, Rule of Two, hunt clocks, hidden leverage, and abstract ledger/martial-reach jargon out of cold `[!narration]`.
+- **Faction or organization:** make the public mask the organizing identity and cover a concrete method footprint, one environmental Tell, and any supplied shared title or face cue. Keep secret agenda, Rule of Two, hunt clocks, hidden leverage, and abstract ledger/martial-reach jargon out of cold `[!narration]`.
 
 ## Spatial contract
 
@@ -119,10 +119,12 @@ For place, encounter, travel, and vehicle work, make a private staging card:
 
 - **Stage:** the landmark or vehicle interface where the viewpoint is seated.
 - **Frame:** approach/route, survey/layout, or tactical field; choose one.
-- **Near / far / block:** what can be reached, what waits beyond a move, and
-  what blocks a straight path. Use bands a body can spend — next to, a short
-  run, a long run, or out of the turn — and add a number only when a rule needs
-  it.
+- **Distance:** player-facing spoken look uses relational bands — **Melee**
+  (immediately interactable), **Near** (reachable with normal movement this
+  turn), **Far** (not meaningfully interactable in melee this turn without extra
+  movement). Exact distance appears only when a rule or encounter requires it.
+  Coordinates disguised as prose are incomplete. DM-facing zones may keep feet.
+  What blocks a straight path.
 - **Anchors:** three to five is a ceiling and selection aid, not a law. Keep
   only the anchors the player must use or remember.
 - **Opening:** the pressure, opportunity, motion, question, or visible choice
@@ -137,12 +139,12 @@ surface: ask about it, inspect it, take it, fight it, avoid it, follow it, learn
 from it, or spend time on it. Use the same unit or band within a frame;
 introduce a named landmark once and reuse it. Broad orientation and close
 inspection are separate scales: questions and actions earn the closer detail.
-In a requested full/loaded first look, complete the visible state in the one
-block before the stop; anchor ceilings are attention aids, not permission to
-omit relevant subjects. Decision-useful geography that the viewpoint already
-has (cover below, open sky to the ship, who the predator is stooping on) is part
-of that completeness check — not a later reveal. For an uneventful place, a
-clear affordance or pressure can be the stop after that completeness check.
+Layer 1 is the immediate frame. Features that matter tactically or
+interactively belong in Layer 1 before a player would need them. Decision-useful
+geography that the viewpoint already has (cover below, open sky to the ship,
+who the predator is stooping on) is Layer 1. Salient features and discoverable
+information are Layers 2–3: separate complete reveal blocks or zone/tick
+Narration cells that describe the discovery, not the method.
 
 ## Wrappers and boundary
 
@@ -151,7 +153,7 @@ and generic narrated transition. Use `[!narration]` titled **Narration — speak
 for quoted NPC speech. On a **session/run beat**, use these titles (storage
 metadata, not a line to read):
 
-- **Initial Narration** — mandatory *scene-setting* first look
+- **Initial Narration** — Layer 1 immediate frame
 - **{Place}** — zone first look
 - **Tick {n}** — clock-tick combat update
 - **How the Scene Resolves** — one unconditional beat-end spoken state; most-likely options in the companion table as `==_italic_==`

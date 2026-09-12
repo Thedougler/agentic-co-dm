@@ -237,11 +237,11 @@
     {
       "id": 24,
       "prompt": "Using Fate Spinner parent (thumb-sized quartz four-sided top, worn faces, always cool; Kyzil cover \"meditation focus\"; actual Long Sight magic is DM/identified), write item-page `[!narration]` cold portrait. No identified-properties request.",
-      "expected_output": "~Three connected sentences of drawable visual detail (silhouette/scale, material/wear) plus allowed physical behavior; cover story and effects out; no mood-by-negation.",
+      "expected_output": "Drawable visual detail (silhouette/scale, material/wear) plus allowed physical behavior; cover story and effects out; no mood-by-negation. Length is the shortest block that makes a stable picture.",
       "expectations": [
         "Fails rather than glitter / mood-by-negation; like a meditation focus as description; Long Sight/visions in Appearance.",
-        "Fails if only ≤2 dry sentences with no extra visual material/wear/silhouette (under-written stub).",
-        "Passes with ~three connected sentences of drawable visual + physical behavior; cover/effects still out."
+        "Fails a telegram stub that cannot picture the subject.",
+        "Passes with drawable visual + physical behavior; cover/effects still out."
       ]
     },
     {
@@ -302,7 +302,7 @@
       "expected_output": "Object portrait: barrel/stock/brass/engraved nameplate + ordinary carry/hold behavior. No biography closer.",
       "expectations": [
         "Fails `He named it for Serafina` / marriage dedication in Appearance.",
-        "Passes drawable musket nouns (~3 connected sentences, Fate Spinner bar).",
+        "Passes drawable musket nouns covering form and nameplate.",
         "Keeps dedication in Story hooks.",
         "Fails `carries as` / `ordinary X for Y` catalog gloss."
       ]
@@ -390,7 +390,7 @@
     {
       "id": 42,
       "prompt": "Rewrite this failed Razer-Grass cold `[!narration]` using the hazard parent: `The valley turns winter-white. Waist-high stalks glitter, but the glitter does not move with the wind. No frost on your breath.` The parent establishes discrete waist-high colonies, opaline glass armor, contact cuts, fixed sparkles, old blood on lower blades, and a glassy tinkle in wind. No table state is supplied. Judge the kitchen-table voice as well as structure.",
-      "expected_output": "A passing cold hazard portrait makes the waist-high Razer-Grass patch the subject in about three connected sentences, with plain spoken nouns for its hard-as-glass material and edges that cut, plus one positive sensory or Detection signal. A structure-clean portrait still FAILS if it leans on jargon-register compounds such as `discrete colonies`, `opaline`, or `cut-ready` instead of table-understandable wording. It does not use a valley camera, italic wrapper, em dash, frost-mystery riddle, or absent-flash mood negation, and stops before contact, Shatter, Glass Bloom, or aftermath.",
+      "expected_output": "A passing cold hazard portrait makes the waist-high Razer-Grass patch the subject with plain spoken nouns for its hard-as-glass material and edges that cut, plus one positive sensory or Detection signal. A structure-clean portrait still FAILS if it leans on jargon-register compounds such as `discrete colonies`, `opaline`, or `cut-ready` instead of table-understandable wording. It does not use a valley camera, italic wrapper, em dash, frost-mystery riddle, or absent-flash mood negation, and stops before contact, Shatter, Glass Bloom, or aftermath.",
       "expectations": [
         "Makes the hazard body or patch the grammatical and attentional subject rather than opening on an invented valley camera or treating it as a place spine.",
         "Keeps positive, drawable glass material and cut danger telegraph in plain spoken nouns and concrete verbs; fixed sparkles, a thin glass sound, or old blood may supply the sensory signal.",
@@ -402,9 +402,9 @@
     {
       "id": 43,
       "prompt": "Using campaigns/shattered-sea/factions/Countless.md, write or judge the faction page’s cold narration with no current table state. The parent establishes Sentinel breakaways, missing or taken names and records, the shared title Talon, one-job hires who never learn the orderer, and searches of pilgrim routes, grey markets, and Sentinel waystations for Fate Spinner carriers. Keep the Rule of Two, immediate hunt, leadership, and other DM sections out.",
-      "expected_output": "PASS only for a public cold faction portrait longer than the failed telegram, in about four to six connected sentences, with a visible footprint and no workshop voice; the closer ends on the shared title or name people hear rather than a craft label.",
+      "expected_output": "PASS only for a public cold faction portrait with recognizable identity anchors, a visible footprint, and no workshop voice; the closer ends on the shared title or name people hear rather than a craft label. A telegram that cannot picture the subject fails.",
       "expectations": [
-        "Requires at least roughly four connected sentences rather than the current one-block telegram or padded fragments.",
+        "Fails a telegram stub that cannot picture the subject, and fails padded fragments.",
         "Shows the public mask and shared Talon title, plus a concrete footprint such as missing names or records, one-job hires, or the search through established routes and waystations.",
         "Keeps Rule of Two, hunt clocks or objectives, secret agenda, leadership, and other DM-only material out of the narration block.",
         "Fails abstract workshop phrasing such as martial reach or dropped the ledgers; uses plain, drawable public signs instead.",
@@ -419,6 +419,38 @@
         "Uses top/north and bottom/south map orientation correctly, with east and west relationships matching the supplied map.",
         "Keeps the orientation in flowing player-facing prose rather than a compass inventory.",
         "Does not add hidden routes, invented travel distances, unsupported creatures, or extra map features."
+      ]
+    },
+    {
+      "id": 45,
+      "prompt": "Write a Hook opening for a Beat where the party's ship runs aground on a reef at dawn. The spoken look should serve the Hook job. Do not script what the PCs do, feel, or decide.",
+      "expected_output": "A Hook opening that front-loads immediate interest (grounding impact, reef, dawn light, ship state) and ends on a live situation without assigning PC action, thought, emotion, or intent. The Beat job is identifiable without the label.",
+      "expectations": [
+        "Serves a Hook job: immediate interest or disturbance front-loaded with minimal orientation first.",
+        "Does not assign PC action, thought, emotion, intent, choice, success, or unresolved outcome.",
+        "Ends on a live situation without choosing the party's response.",
+        "No secrets, DCs, unearned names, or hidden causes in the spoken block."
+      ]
+    },
+    {
+      "id": 46,
+      "prompt": "Write a combat opening for a fight in a flooded temple ruin. Three sahuagin cluster near the altar (Near the party), two more lurk behind a collapsed pillar (Far). A cracked stone bridge connects the entry ledge to the altar platform. Knee-deep water covers the floor. Use relational distance, not coordinates.",
+      "expected_output": "A combat opening that makes threats, grouping, objective, relational distance, terrain, cover, and routes understandable without a floor plan. Distance uses Melee/Near/Far, not feet disguised as prose. Grouping is legible enough to answer an area-effect question.",
+      "expectations": [
+        "Uses relational bands (Melee, Near, Far) for player-facing distance, not feet or coordinates in spoken look.",
+        "Grouping of the three clustered sahuagin is legible enough to answer how many a reasonable area effect catches.",
+        "Does not include a turn-by-turn script or top-of-round summary.",
+        "Threats, terrain (bridge, water), cover (pillar), and routes are understandable."
+      ]
+    },
+    {
+      "id": 47,
+      "prompt": "Write a wiki portrait for a stone watchtower on a coastal headland. Supplied facts: three stories, weathered grey stone, arrow slits on upper floors, a rusted iron door, and a collapsed wooden stair visible through the door. No party, encounter, or transient state is supplied.",
+      "expected_output": "A standalone wiki portrait that is valid across sessions, does not assume an encounter or reference a party, and gives recognizable identity anchors. It is not a scene script and does not take a Beat type.",
+      "expectations": [
+        "Remains valid with no party and no encounter; does not stage a fight or plant the party.",
+        "Does not include unlabeled transient facts or assume current conditions beyond the supplied stable description.",
+        "Gives enough identity anchors (stone, height, slits, door, collapsed stair) to recognize and distinguish the watchtower."
       ]
     }
   ]

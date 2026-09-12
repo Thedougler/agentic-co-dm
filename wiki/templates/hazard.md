@@ -8,10 +8,13 @@ updated: YYYY-MM-DD
 type: item
 lifecycle: proposed
 reveal: unrevealed
-campaign: ""
+campaign: shattered-sea
+visibility: dm
 region: ""
 summary: ""
 ---
+<!-- Copy-start scaffold. Look plus start, notice, contact cost, careful passage, counterplay. Extra mechanical rows only when they change the table. Omit unused sections. Pass is flora-hazard jobs in wiki/AGENTS.md Layout. -->
+
 ![[hazard.jpg]]
 
 > [!narration] Narration

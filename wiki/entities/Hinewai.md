@@ -3,8 +3,11 @@ title: Hinewai
 category: entities
 tags: [shattered-sea, npc, aruhe, blight]
 sources:
+  - "wiki/_archive/Hinewai.md"
   - "house (Monster-Brewer; legacy Fantasy Statblock import; Hinewai/Death Bloom ingest 2026-09-05)"
-summary: Elf druid lich fused to Aruhe; her woman-in-the-woods form has pointed ears, amber eyes, long black hair, and a tattered black cloak.
+  - "legacy/campaign-os-v02/vault/stories/arc-blight-of-aruhe.md"
+  - "arc-blight-of-aruhe.md"
+summary: Elf druid lich fused to Aruhe after escaping Karath; her grief became the island's law and her woman-in-the-woods form guards its living systems.
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -14,7 +17,7 @@ lifecycle: canon
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T06:23:47Z
-updated: 2026-09-12T06:23:47Z
+updated: 2026-09-12T00:00:00Z
 type: npc
 reveal: unrevealed
 campaign: shattered-sea

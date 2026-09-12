@@ -26,10 +26,12 @@ You are ingesting source documents into an Obsidian wiki. Your job is not to sum
 3. Read `.manifest.json` at the vault root to check what's already been ingested
 4. Read `index.md` to understand current wiki content
 5. Read `log.md` to understand recent activity
-6. **Campaign vault.** Read `$OBSIDIAN_VAULT_PATH/AGENTS.md` (`wiki/AGENTS.md` in this repo). Load `copy-writer` and `obsidian-markdown` on every distilled page write. Campaign pages need `type`, `lifecycle`, and `reveal` from that file in addition to llm-wiki fields. A body written in AI shorthand or telegram stubs is invalid — rewrite as complete sentences before filing. Ingest only sources the DM named and approved (FR-019). Write distilled pages plus thin complete-sentence stubs for names in those sources (including as links). Do not create pages for names the sources do not contain. Invented extra names are a separate Work proposal. Early-dev `wiki/_raw/` samples keep section order, markdown, callouts, tables, and embeds; leave those files in `_raw/` (do not move them to `_archive/`). General ingest still distills. Creature pages stay linear (no `col` wrappers). Sample `type: monster` maps to campaign `type: creature`.
+6. **Campaign vault.** Read `$OBSIDIAN_VAULT_PATH/AGENTS.md` (`wiki/AGENTS.md` in this repo). Load `copy-writer` and `obsidian-markdown` on every distilled page write. Campaign pages need `type`, `lifecycle`, and `reveal` from that file in addition to llm-wiki fields. A body written in AI shorthand or telegram stubs is invalid — rewrite as complete sentences before filing. Ingest only sources the DM named and approved (FR-019). Write distilled pages plus thin complete-sentence stubs for names in those sources (including as links). Do not create pages for names the sources do not contain. Invented extra names are a separate Work proposal. Early-dev `wiki/_raw/` samples stay in `_raw/` as illustrations, not a layout source (do not move them to `_archive/`). General ingest still distills. Sample `type: monster` maps to campaign `type: creature`. Wrapup of a legacy page keeps that page's shape; it MUST NOT convert the page into a sample.
 
 
 When writing internal links in Step 5, apply the link format described in `llm-wiki/SKILL.md` (Link Format section) according to the `OBSIDIAN_LINK_FORMAT` value you read.
+
+**Quality bar.** Filed campaign pages match kinds and jobs in `$OBSIDIAN_VAULT_PATH/AGENTS.md` Layout. Incoming files are evidence, not exemplary format. Do not copy a foreign outline as the page shape. A source that already matches a kind is still judged against that kind’s jobs. Campaign-shaped session-prep and place keep Preserve treatments. Foreign sources of those subjects map into the kind.
 
 ## Linked art (campaign of record)
 
@@ -75,11 +77,13 @@ Output: `{"new": [...], "modified": [...], "unchanged": [...], "missing": [...]}
 - `unchanged` → skip entirely — hash matches, content is identical
 - `missing` → in manifest but no longer on disk; skip and optionally clean up
 
-After ingesting each source, record its hash:
+After a file is **complete**, record its hash:
 
 ```bash
 obsidian-wiki cache-update "$OBSIDIAN_VAULT_PATH" <source> --pages <page1> [page2 ...]
 ```
+
+Failed files MUST NOT be hashed as success.
 
 **Fallback** (if `obsidian-wiki` is not installed): compute hashes manually with `sha256sum -- "<file>"` (Linux) or `shasum -a 256 -- "<file>"` (macOS) and compare against `content_hash` in `.manifest.json`. If the entry has no `content_hash`, fall back to mtime comparison.
 
@@ -96,7 +100,7 @@ Process draft pages from the `_raw/` staging directory inside the vault. Use whe
 - The user says "process my drafts", "promote my raw pages", or drops files into `_raw/`
 - After a paste-heavy session where notes were captured quickly without structure
 
-In raw mode, each file in `OBSIDIAN_RAW_DIR` is treated as a source. After promoting a file to a proper wiki page, move the original into the repository-root `_archive/` directory (the sibling of `OBSIDIAN_RAW_DIR`, preserving its path relative to the raw directory, creating directories as needed) instead of deleting it — **except** early-dev layout samples in `wiki/_raw/` (place, item, hazard, creature notes such as Bloodhawk). Leave those samples in `_raw/`; they are the layout source. Never leave other promoted drafts in the live raw staging tree — they'll be double-processed on the next run; moving them into `_archive/` keeps them out of that scan while preserving the original draft.
+In raw mode, each file in `OBSIDIAN_RAW_DIR` is treated as a source. After promoting a file to a proper wiki page, move the original into the repository-root `_archive/` directory (the sibling of `OBSIDIAN_RAW_DIR`, preserving its path relative to the raw directory, creating directories as needed) instead of deleting it — **except** early-dev samples in `wiki/_raw/` (place, item, hazard, creature, person) and `wiki/_raw/Session-11-*.md` evidence. Leave those in `_raw/`; they illustrate quality. Session-prep still files a preserved copy into the session folder; `type: place` files a preserved copy into `wiki/entities/` (Preserve). Never leave other promoted drafts in the live raw staging tree — they'll be double-processed on the next run; moving them into `_archive/` keeps them out of that scan while preserving the original draft.
 
 This keeps faith with the "immutable raw layer" principle in `llm-wiki/SKILL.md`: even though `_raw/` drafts aren't Layer 1 sources, some have no other copy (e.g. a quick-capture finding typed straight into `_raw/` with no external document behind it), so the promoted file is the only record once it leaves the staging directory.
 
@@ -113,38 +117,42 @@ This keeps faith with the "immutable raw layer" principle in `llm-wiki/SKILL.md`
 
 **GUARD:** The source is 5etools creature JSON, 5etools quote-statblock markdown (`>## Name`), or markdown that already contains a `statblock` fence. A same-stem image rides with the fence file.
 
-Those files are a **foreign drop**. This vault mints them **chassis-first**. Read `references/combatant-drops.md` and follow it for those files. Other files in the same batch continue at Step 1.
+Those files are a **foreign drop**. This vault mints them **chassis-first**. Read `references/combatant-drops.md` and follow it for **this file**. Close the file (`complete` or `failed`) before the next file opens.
 
-**Complete when** every catalog file has been handed to that reference, and every other file remains on the main path.
+**Complete when** this catalog file has been handed to that reference.
+
+### Preserve
+
+**GUARD:** The source already matches campaign `type: session-prep` or `type: place` (map early `location` → `place` on file), or the filename matches `Session-<N>-…` as a spine or beat card.
+
+Campaign-shaped session-prep and place: file with required treatments. Do not distill those pages into `concepts/`. A foreign source that names a place or session beat is not this GUARD — map it into the kind on the distill path (Layout jobs).
+
+**Session-prep** (or Session-N filename): copy into `wiki/journal/sessions/<campaign-slug>/<session-number>/`. Keep the source filename (`Session-<number>-00-<Spine-Title>` or `Session-<number>-<beat-number>-<Label>` with two-digit beat numbers). Do not flatten columns, tables, `[!narration]`, highlighted narration cells, wikilinks, or embeds. Do not write these pages into `concepts/` or `entities/`. Companion notes for that night file into the same folder and must not use a live beat number. `wiki/_raw/Session-11-*.md` stay in `_raw/` as evidence; file copies into the session folder rather than restyling the evidence set.
+
+**Place:** copy into `wiki/entities/` with the source filename. Keep the open `[!narration]` titled **Narration** (typically under Overview): do not delete it, empty a filled look, or convert it to ordinary prose. A stub place still keeps the titled block even if the body is empty. Spoken look stays theatre of the mind (no secrets, DCs, unearned names). Keep Overview, At a glance, If the party, Who, What, Where, Why, and Art when present; omit unused jobs (no empty headings, no invented occupants). Owner numbers stay linked, not copied. Do not write into `concepts/` or replace the outline with a knowledge-wiki template. Place run jobs stay in `wiki/AGENTS.md` Layout. `_raw/` place evidence stays in `_raw/`; file copies rather than restyling the evidence set.
+
+Re-ingest with no body change: skip rewrite. Unaccepted Work does not publish, except named ingest of approved sources.
+
+Close this file (`complete` or `failed`) before the next file opens.
+
+**Complete when** this preserved page is at its destination with required treatments, and this file is closed.
 
 ## The Ingest Process
 
-### Step 0: Batch Planning for Large Folders
+### Step 0: Sequential files
 
-**GUARD: Only run this step when the source is a directory with more than 20 files.** For single files, small folders, or `_raw/` mode, skip directly to Step 1.
+One input file is `open` at a time. A directory is a list of files, not one unit. Order: the order the DM named, else folder listing. `cache-check` may skip unchanged. Folder size, batch size, and a request for speed do not overlap files. MUST NOT dispatch parallel subagents.
 
-When the source is a large directory of docs, plan the parallel dispatch first:
+For each remaining file:
 
-```bash
-obsidian-wiki batch-plan "$OBSIDIAN_VAULT_PATH" <source-dir> --pretty
-```
+1. Mark it `open`. Do not create or change wiki pages or tracking for any later file while this one is `open`.
+2. Run **this file** through Preserve / combatant-drops / Steps 1–7 as it qualifies. Unreadable, empty, or non-source binary: mark `failed` with a reason. Do not hash as success.
+3. Completing a file means: required pages filed or stubbed; on `complete`, `cache-update` this file only; write a `log.md` line for this file; mark `complete` or `failed`.
+4. Close the file before the next `open`. A later file may update a page from an earlier file only after the earlier file is `complete` or `failed`.
 
-This outputs a JSON plan with `batches` (each a list of files + total_bytes + kind counts) and `stats` (total, to_ingest, skipped_unchanged).
+After the run, report each file in processing order: `complete` or `failed`, pages produced or updated, failure reason. Attribute later updates to the later file.
 
-**What to do with the plan:**
-
-1. **Check `stats.skipped_unchanged`** — report to the user how many files are being skipped (already ingested, hash unchanged).
-2. **If `batch_count == 0`** — all files are unchanged. Tell the user and stop.
-3. **If `batch_count == 1`** — proceed with the single batch as a normal Step 1 ingest.
-4. **If `batch_count > 1`** — dispatch each batch as a **parallel subagent** (multiple Agent tool calls in a single message). Each subagent receives a message like:
-   ```
-   Ingest these files into the wiki at $OBSIDIAN_VAULT_PATH using wiki-ingest Step 1 onward:
-   <list of file paths from this batch>
-   Skip batch-plan — these files are already partitioned.
-   ```
-   Wait for all subagents to complete, then run `/cross-linker` once to wire cross-references across all batches.
-
-**Fallback** (if `obsidian-wiki` is not installed): process files sequentially in groups of 15.
+**Done when:** every file is `complete` or `failed`, at most one was `open` at a time, and the DM has the per-file report.
 
 ### Ingesting Git Repositories
 
@@ -348,6 +356,8 @@ If `obsidian-wiki` is not installed or the command fails, skip this step and pro
 
 ### Step 2: Extract Knowledge
 
+**GUARD:** If this source was filed on Preserve, skip to Step 7 for that file.
+
 From the source, identify:
 - **Key concepts** that deserve their own page or belong on an existing one
 - **Entities** (people, tools, projects, organizations) mentioned
@@ -422,7 +432,7 @@ For each page in your plan:
 **If `WIKI_STAGED_WRITES` is not set or is `false` (default):**
 
 **If creating a new page:**
-- Use the page template from the llm-wiki skill (frontmatter + sections). **For academic papers landing in `references/`, use the Paper Deep-Dive Template** from `llm-wiki/SKILL.md` instead of the generic one (see *Academic papers* in Step 1). Campaign entities use `wiki/templates/` and `wiki/AGENTS.md` `type` (`npc`, `place`, `faction`, `item`, `creature`, `session`, `recap`, `work`) rather than generic categories alone. Named ingest: thin complete-sentence stubs only for names in the approved source. Creature pages are linear (no `col` / `col-md`). Early-dev `wiki/_raw/` samples keep the source layout; sample `monster` → `type: creature`.
+- Use the page template from the llm-wiki skill (frontmatter + sections). **For academic papers landing in `references/`, use the Paper Deep-Dive Template** from `llm-wiki/SKILL.md` instead of the generic one (see *Academic papers* in Step 1). Campaign entities use `wiki/templates/` as scaffolds and `wiki/AGENTS.md` `type` (`npc`, `place`, `faction`, `item`, `creature`, `session`, `recap`, `work`) rather than generic categories alone. Named ingest: thin complete-sentence stubs only for names in the approved source. Sample pages pass on jobs in `wiki/AGENTS.md` Layout. Early-dev `wiki/_raw/` samples stay in `_raw/` as illustrations. Sample `monster` → `type: creature`. Wrapup of a legacy page MUST NOT convert that page into a sample.
 - Place in the correct category directory
 - Add `[[wikilinks]]` to at least 2-3 existing pages
 - Include the source in the `sources` frontmatter field. In raw mode: derive from `capture_source` + `sources` frontmatter of the `_raw/` file — never use the `_raw/` path itself (see Raw Mode section)
@@ -540,13 +550,16 @@ Record QMD refresh in the final report as one of:
 
 ## Handling Multiple Sources
 
-When ingesting a directory, process sources one at a time but maintain a running awareness of the full batch. Later sources may strengthen or contradict earlier ones — that's fine, just update pages as you go.
+Step 0 is the loop. Later files may strengthen or contradict earlier ones — update pages only after the earlier file is closed. Quality of a page in a batch matches single-file ingest of that source: same campaign kind, same Layout jobs.
 
 ## Quality Checklist
 
 After ingesting, verify:
 - [ ] Every new page has frontmatter with title, category, tags, sources
 - [ ] Campaign pages also have `type`, `lifecycle`, `reveal`; body is complete-sentence prose (FR-018)
+- [ ] Filed campaign pages match Layout kinds and jobs in `$OBSIDIAN_VAULT_PATH/AGENTS.md` (pointer; do not copy the job table here)
+- [ ] Multi-file runs were sequential: one file `complete` or `failed` before the next `open`; per-file report is in `log.md` and the end-of-run list
+- [ ] Failed files were not hashed as success
 - [ ] Every new page has at least 2 wikilinks to existing pages
 - [ ] No orphaned pages (pages with zero incoming links)
 - [ ] `index.md` reflects all changes

@@ -43,4 +43,4 @@ Only accepted Work may change wiki facts. Wrapup proposes session outcomes in ch
 
 ## File
 
-Load `wiki/AGENTS.md`, `copy-writer`, and `obsidian-markdown` on every vault write.
+Classify the write against the stack table in `AGENTS.md`. Unknown reader → `DM`. Vault is `false` until the text is filed as a wiki vault note.

@@ -8,7 +8,7 @@ updated: YYYY-MM-DD
 type: npc
 lifecycle: proposed
 reveal: unrevealed
-campaign: ""
+campaign: shattered-sea
 status: alive
 role: ""
 location: unknown
@@ -16,6 +16,8 @@ faction: none
 visibility: dm
 summary: ""
 ---
+<!-- Copy-start scaffold. Who/want, look, first minutes and posture change, named ties. Combat omit-if-empty. Omit unused identity keys (aliases unused; location unknown; faction none). Pass is person jobs in wiki/AGENTS.md Layout. -->
+
 # {{title}}
 
 ````col
@@ -66,3 +68,5 @@ What ends the welcome, closes the door, or takes priority.
 | Relationship | Meaning |
 | ------------ | ------- |
 | [[page]]     | What this tie does at the table. |
+
+<!-- Combat: omit unless they can fight. Encounter rule plus sheet or one pointer. -->

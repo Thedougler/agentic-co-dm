@@ -8,12 +8,13 @@ updated: YYYY-MM-DD
 type: place
 lifecycle: proposed
 reveal: unrevealed
-campaign: ""
+campaign: shattered-sea
+visibility: dm
 kind: site
 region: ""
-aliases: []
 summary: ""
 ---
+<!-- Copy-start scaffold. Omit unused sections. Pass is place jobs in wiki/AGENTS.md Layout. -->
 # {{title}}
 ![[identity.jpg|short visible caption]]
 ## Overview
@@ -32,7 +33,7 @@ Write what this place is now, which linked places it sits between, and which edg
 ---
 ## Who
 
-- Who is here, in what numbers, and what they do. Wikilink creatures and people.
+- Who is here, in what numbers, and what they do; or the sign of absence. Wikilink creatures and people. Do not invent occupants.
 
 ---
 ## What
@@ -52,3 +53,4 @@ Write what this place is now, which linked places it sits between, and which edg
 ---
 ## Art
 ![[battlemap-or-extra.jpg|short visible caption]]
+<!-- Omit Art when unused. -->

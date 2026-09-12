@@ -126,21 +126,18 @@ territory, red line, current move, and between-visit update. Add:
 
 ## 11. Table presentation
 
-File the facts into `wiki/templates/place.md`. This section is a check, not a second
-note shape. Filled exemplars: `wiki/_raw/Old Gardens.md`, `wiki/_raw/River Line Bank.md`.
+File the facts into `wiki/templates/place.md` as a scaffold. This section is a check, not a second required outline. `wiki/_raw/Old Gardens.md` and `wiki/_raw/River Line Bank.md` illustrate.
 
-- **Identity image:** after the title, before Overview
-- **Opening description:** spatial first, flora woven in, at least one non-sight
-  sense; no secrets, DCs, or unearned names → **Overview** `[!narration]`
-- **Identity, links, skip/bypass:** → **At a glance**
-- **Navigation routes first, then interactions, then foraging:** → **If the party**
-- **Creatures and NPCs with behavioral niche:** → **Who**
-- **Environment, flora placement, fauna behavior:** → **What**
-- **North/east/south/west neighbors, canon gaps, and approximate days of travel:** → **Where**
-- **In-world reasons:** → **Why**
+- **Spoken look:** spatial first, flora woven in, at least one non-sight sense; no secrets, DCs, or unearned names
+- **Situation now:** identity, links, skip/bypass
+- **Consequential moves:** navigation first, then interactions; omit no-op moves
+- **Presence or sign of absence:** creatures and NPCs with behavioral niche, or the sign they are gone
+- **Table objects:** environment, flora, fauna; wikilink owner pages
+- **Connections:** neighbors, canon gaps, approximate days of travel
+- **Purpose:** in-world reasons
 - **Read-aloud boundary:** `[!narration]` only
-- **Handoffs:** dungeon-design, theatre-of-the-mind, session-beats,
-  qmd-retrieval, visual-aids
+- **Handoffs:** dungeon-design, theatre-of-the-mind, session-beats, qmd-retrieval, visual-aids
+
 
 ## 12. Quality audit
 
@@ -148,8 +145,7 @@ note shape. Filled exemplars: `wiki/_raw/Old Gardens.md`, `wiki/_raw/River Line 
 - Does the promise create a choice?
 - Do nodes pass the verb test and edges have costs/consequences?
 - Are routes, loops, bypasses, and retreats real rather than labels?
-- Does the filed `Where` section name north, east, south, and west neighbors
-  with approximate days of travel or explicit canon gaps?
+- Do connections name neighbors with approximate days of travel or explicit canon gaps?
 - Are required clues available through about three vectors?
 - Do inhabitants pursue goals and make location moves?
 - Does pressure advance, and does return state remember play?

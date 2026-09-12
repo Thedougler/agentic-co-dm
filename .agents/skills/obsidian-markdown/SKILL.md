@@ -4,8 +4,9 @@ description: >-
   Format every campaign wiki `.md` with Obsidian Flavored Markdown (wikilinks,
   embeds, callouts, properties) and the at-table scan grammar (one Markdown
   treatment = one meaning; checks/saves as **Ability (Skill) — `DC n`**;
-  `DC n` and dice in inline code). Required on any create or edit of wiki notes
-  before or while writing. Use whenever writing Obsidian markdown in this vault.
+  `DC n` and dice in inline code). Vault `true` → obsidian-markdown. Format
+  for wiki vault notes only. Not required for writing that is not a wiki
+  vault note. Skill files and repository docs are not wiki vault notes.
 ---
 
 # Obsidian markdown
@@ -13,12 +14,12 @@ description: >-
 Vault: `$OBSIDIAN_VAULT_PATH` (this repo's `wiki/`). Schema: `wiki/AGENTS.md`.
 Load this `SKILL.md` before every vault `.md` write; open `references/` only when stuck.
 Every wiki write must preserve vault wikilinks, `[!narration]` for spoken text, and
-`wiki/AGENTS.md` properties (`type`, `lifecycle`, `reveal` plus llm-wiki required fields).
+`wiki/AGENTS.md` properties (`type`, `lifecycle`, `reveal`, `campaign`, `visibility` plus llm-wiki required fields).
 
 ## Hard rules
 
 - **Wikilinks in-vault:** `[[Note]]` / `[[Note|text]]` / `[[Note#Heading]]`. Markdown links only for external `https://` URLs. In a Markdown table cell, write the alias or size pipe as `\|` so the cell stays one cell: `[[Note\|text]]`, `![[image.png\|400]]`. Bare `[[Note]]` needs no escape.
-- **Frontmatter (`wiki/AGENTS.md`):** include `title`, `category`, `tags`, `sources`, `created`, `updated`, plus campaign `type`, `lifecycle`, and `reveal`. `type` enum: `npc` | `place` | `faction` | `item` | `creature` | `session` | `recap` | `work`. `lifecycle`: `draft` | `proposed` | `accepted` | `rejected` | `canon`. `reveal`: `unrevealed` | `revealed`. Prefer those fields over generic `title`-only notes.
+- **Frontmatter (`wiki/AGENTS.md`):** include `title`, `category`, `tags`, `sources`, `created`, `updated`, plus campaign `type`, `lifecycle`, `reveal`, `campaign`, and `visibility`. `type` enum: `npc` | `place` | `faction` | `item` | `creature` | `session` | `recap` | `work`. `lifecycle`: `draft` | `proposed` | `accepted` | `rejected` | `canon`. `reveal`: `unrevealed` | `revealed`. `visibility` defaults to `dm` and is distinct from `reveal`. Prefer those fields over generic `title`-only notes.
 - **`summary` frontmatter:** one sentence — what the note is and anything non-obvious or unexpected. Use it to assess a note without reading the full file. Create on every new note; update whenever the note changes. Keep it concise, specific, and direct. Quote the value when it contains `: ` (colon-space) — unquoted `: ` breaks YAML.
 - **Player prose:** owner pages use leading `> [!narration] Narration` (empty until TotM fill). Session/run beats use mandatory `> [!narration] Initial Narration` plus titled stubs per `run-guide` TotM slots. Unconditional spoken stays in `[!narration]`. Conditional spoken lives in a table cell as `==_italic_==`. Empty on mechanical pass 1; fill on pass 2. No secrets/DCs/unearned names inside `[!narration]` or those highlighted cells.
 - **Live session surfaces:** In run-guide, session-prep, session, and beat notes, never use collapsed callouts (`[!…]-`); keep DM information open so session cards do not hide it. Collapsed secrets remain allowed on long-lived owner pages (NPC/PC/faction) when useful.
@@ -26,7 +27,7 @@ Every wiki write must preserve vault wikilinks, `[!narration]` for spoken text, 
 - **Complete sentences on live surfaces:** Every DM-facing line on a run guide, session prep, or beat card must be a **complete grammatical sentence** (or a short list of complete sentences). Telegram shorthand, letter-code-only clauses, and slash-stacks that need a decoder are presentation fails. Wikilinks, bold field labels, compact tables, and the **at-table check/save grammar** below are allowed when cells remain readable sentences or clear subject-bearing fragments.
 - **Signal-only lines:** Every wiki line must earn table attention by changing a choice, ruling, risk, resource, route, clock, NPC response, or words to speak. Cut default, normal, and no-effect statements; mention safety, permission, ordinary water, weather, or light only when that fact changes play. Campaign and session notes state what to run, say, or know; agent-process bans stay in skills, AGENTS, and templates-for-agents.
 - **At-table scan:** each Markdown treatment has exactly one meaning (table under Syntax). `DC 15` is inline code. Private DM notes are headings on session/run surfaces, and `[!secret]` / `[!mechanic]` on owner pages.
-- **Monsters:** Fantasy Statblocks fence (```` ```statblock ````) immediately after frontmatter, or after a single `## Statblock` heading so run cards can `![[Name#Statblock]]`. See `wiki/templates/creature.md` + `./scripts/lint-statblocks`. Never a prose AC/HP table instead of the fence. No WotC book paste. The fence keeps 5e YAML phrasing (`DC 15 Constitution saving throw`); at-table scan is for wiki body, not the fence. Linear note; no `col` wrappers.
+- **Creatures:** Fantasy Statblocks fence (```` ```statblock ````) immediately after frontmatter, or after a single `## Statblock` heading so run cards can `![[Name#Statblock]]`. See `wiki/templates/creature.md` + `./scripts/lint-statblocks`. Never a prose AC/HP table instead of the fence. No WotC book paste. The fence keeps 5e YAML phrasing (`DC 15 Constitution saving throw`); at-table scan is for wiki body, not the fence. Column density is allowed. Pass is creature jobs in `wiki/AGENTS.md` Layout, not heading-order match.
 - **Run-card roster:** embed the owner heading (`![[Bloodhawk#Statblock]]`) at the bottom. Put default-mode compact numbers on the action cards (`run-guide`). Do not retype the owner's full Multiattack/HP table into the card body. Do not embed the whole monster essay.
 - **Paths:** scratch → `inbox/`; **images/media** under `attachments/` (campaign subfolders ok). Embed with `![[attachments/…]]`; wikilink with `[[attachments/…]]`. See [[attachments/00 Attachments]] + [references/EMBEDS.md](references/EMBEDS.md). No parallel `wiki/` · `concepts/` · `sources/` tree.
 - **Surgical edits only:** Edit the elements in scope for the current pass. Preserve existing image embeds, wikilink paths, frontmatter fields, and structure unless that exact element is broken and verified broken. A copy pass edits copy; it does not rewrite embeds or paths.
@@ -35,9 +36,9 @@ Every wiki write must preserve vault wikilinks, `[!narration]` for spoken text, 
 
 ## Write workflow
 
-1. Copy matching `wiki/templates/` note when creating.
-2. Fill frontmatter (`type`, `lifecycle`, `reveal` + llm-wiki fields + `summary`).
-3. If `type: monster` → optional `## Statblock`, then the `statblock` fence.
+1. Copy matching `wiki/templates/` note as a scaffold when creating. Omit empty sections.
+2. Fill frontmatter (`type`, `lifecycle`, `reveal`, `campaign`, `visibility` + llm-wiki fields + `summary`). On file, `type` is `creature` not `monster`.
+3. If `type: creature` → optional `## Statblock`, then the `statblock` fence.
 4. Leading `[!narration]` when the template expects it.
 5. Body: one topic/note; facts to run, say, or know; wikilink nearest index/MOC/`hot` as needed. Drop `## Do not` and other author-process bans.
 6. On session/run beats, procedure is a heading; the only callout is `[!narration]`. Do not add a `DM truth` section — the whole card is DM-facing. Layout uses `col` / `col-md` codeblock fences, not `[!col]`. Do not put callouts inside table cells. Conditional spoken in a cell is `==_italic_==`. On owner pages, DM procedure / hidden truth → `[!mechanic]` or `[!secret]`. Use collapsed `[!secret]-` only on long-lived owner pages such as NPC/PC/faction pages.
@@ -182,6 +183,8 @@ category: entities
 type: npc
 lifecycle: proposed
 reveal: unrevealed
+campaign: shattered-sea
+visibility: dm
 tags: [npc]
 sources: []
 summary: Harbor clerk who sells tide tables and owes the dock syndicate.

@@ -8,14 +8,16 @@ updated: YYYY-MM-DD
 type: item
 lifecycle: proposed
 reveal: unrevealed
-campaign: ""
+campaign: shattered-sea
+visibility: dm
 region: ""
 kind: consumable
 rarity: rare
 attunement: false
-owner: ""
 summary: ""
 ---
+<!-- Copy-start scaffold. Portrait, classification, one runnable effect, then stop. Omit unused keys including owner. Pass is consumable jobs in wiki/AGENTS.md Layout. -->
+
 # {{title}}
 
 ![[item.jpg]]

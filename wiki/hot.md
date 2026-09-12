@@ -1,29 +1,11 @@
 ---
 title: Hot Cache
-updated: 2026-09-12T06:23:47Z
+updated: 2026-09-12
 ---
-
-# Hot Cache
-
-*A ~500-word semantic snapshot of recent activity. Updated after every major write operation.*
-
 ## Recent Activity
-
-- Filed the four NPC layout baselines as `type: npc` pages: Hinewai, Talon Skarn, Nona Black-Jaw, Thunk. Left the samples in `_raw/`.
-- Copied six named portraits/tokens into `wiki/attachments/`. Thin stubs for the Unnamed Companion, Talon Vantyrus, Perrin, Enzo, and Ruk.
-- Nona's unnamed favor and missing-persons chase (314+ fighting-age men) now has a patron page the DM can run.
-
+Ingested the Young Bloodhawk as a proposed juvenile creature page, linking its Flush Dive hunting role to the adult Bloodhawk and Aruhe's exposed routes.
 ## Active Threads
-
-- Umberlee still wants the Pearl of Souls; Delmar offered it and has not paid.
-- Nona's unnamed favor and missing-persons chase (314+ fighting-age men).
-- Osset named twice. Fate Spinner hunters. Captives maybe bound for Karath.
-- Aruhe is eating the raid survivors. Crown squid at the tree line. Others inland.
-
+The adult Bloodhawk's hunting line now has a runnable juvenile pressure element.
 ## Key Takeaways
-
-The crew took a Crown cutter, renamed her Uncertainty, became Calveno's Defenders after Otar died in the Mercatura crater, and are now off an island that kills people for taking fruit. Wiki facts on these pages are extracted from owner recaps.
-
+Aruhe's aerial predators use staged pressure: the adult breaks prey from cover, while young Bloodhawks drive exposed or airborne bodies downward.
 ## Flagged Contradictions
-
-*None yet.*

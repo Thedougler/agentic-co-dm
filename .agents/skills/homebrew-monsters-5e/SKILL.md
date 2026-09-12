@@ -1,13 +1,13 @@
 ---
 name: homebrew-monsters-5e
-description: Research, design, reskin, balance, audit, and revise monsters for the 2024/2025 D&D rules commonly called 5.5e. Use when creating individual monsters, variants, minions, encounter groups, legendary creatures, or boss fights. Do not use for player-character builds.
+description: Research, design, reskin, balance, audit, and revise monsters for the 2024/2025 D&D rules commonly called 5.5e. Use when creating individual monsters, variants, minions, encounter groups, legendary creatures, or boss fights. Custom features communicate lore, origin, or stakes a second person can state. Substantial homebrew names the plot or character beat it manifests. Number-only or difficulty-only is incomplete. Stock unchanged and explicit stock-fight overrides are exempt. Do not use for player-character builds.
 ---
 
 # Homebrew Monsters 5e
 
 ## Work gate
 
-Prep only. Follow `docs/agents/work.md`. Load `wiki/AGENTS.md`, `copy-writer`, and `obsidian-markdown` on every vault write.
+Prep only. Follow `docs/agents/work.md`.
 
 Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
 
@@ -18,6 +18,9 @@ Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagge
 
 ## Success criteria
 - The monster has a memorable fiction signature, a readable role, counterplay, and a reason to exist in this encounter.
+- A custom combat feature (ability, phase shift, legendary action, or equivalent tell added or rewritten) communicates lore, origin, or stakes a second person can state. Number-only features are incomplete.
+- A substantial homebrew rewrite (changes how the creature acts, not a light reskin) names the plot or character beat it manifests. Difficulty-only is incomplete.
+- Stock published opposition used unchanged does not need custom features. An explicit DM request for a stock or featureless fight overrides.
 - Mechanics use legal 2024/2025 notation, are internally consistent, calibrated against peers, and runnable without hidden arithmetic.
 - Output gives the DM decisions to make, not a pile of abilities. Prefer delete and clarify.
 - Setting-agnostic paraphrased rules language. Never paste WotC proprietary book text.
@@ -85,15 +88,16 @@ Use `DC 15`; `+7 to hit`; `Hit: 11 (2d8 + 2) damage`; `Recharge 5–6`; `1/Day`;
 Two paths depending on whether the creature has a personal identity:
 
 ### Standalone creature → `wiki/templates/creature.md`
-H1 title → `[!narration]` → `## Statblock` (image then fence) → `## Visual reference` when a sheet exists → `## Behavior` → `## Tactics` → `## Art`. Linear layout — no column wrappers. Frontmatter includes `region` and `source` alongside standard fields. Exemplar: `wiki/_raw/Bloodhawk.md`.
+Pass on creature jobs in `wiki/AGENTS.md` Layout: look, runnable sheet, life, hunt. Copy the template as a scaffold. Visual reference omit-if-empty. Column density is allowed. Frontmatter includes `region` alongside standard fields. `wiki/_raw/Bloodhawk.md`, `wiki/_raw/Deerstalker.md`, and `wiki/_raw/Wolfrabbit.md` illustrate density.
 
-**Behavior** uses list items with bold labels (`- **Label.** text`): **Habitat** (terrain, territory, where it lives), **Behavior** (observable habits, body language, movement patterns), **Diet** (what it eats, feeding signs, hunger drivers), **Social Structure** (solitary/pack/herd, interactions with other creatures).
+**Life** answers habitat (ground it uses and ground it refuses when that refusal is true), habits, diet, social. Shut-downs MUST be things the party can do.
 
-**Tactics** uses list items with bold labels (`- **Label.** text`): **Signs** (what trackers find — tracks, marks, smells, sounds), **Instincts** (what triggers aggression, what ends a hunt), **Tactics** (how it fights — opening, follow-up, preferred conditions), **Weaknesses** (exploitable flaws — terrain it hates, movement it cannot make, formations that shut it down), **Aftermath** (what the scene looks like after an encounter, salvageable remains).
+**Hunt** answers signs, instincts, opening, shut-down, aftermath.
 
-**Art** holds additional images: tokens, alternate views, reference art. One embed per line.
+**Art** holds extra images when they exist. Omit when unused.
 
-Design outputs map: fiction signature → narration + Behavior; decision loop → Tactics; three-round script informs Tactics but stays in the design conversation; encounter integration → Habitat + Social Structure + Instincts; counterplay → Weaknesses; running notes → Tactics + Aftermath.
+Design outputs map: fiction signature → narration + life; decision loop → hunt; three-round script informs hunt but stays in the design conversation; encounter integration → habitat + social + instincts; counterplay → shut-down; running notes → hunt + aftermath.
+
 ### NPC with combat form → `wiki/templates/npc.md`
 When the creature has a name, history, relationships, and a personal identity, statblocks live in the NPC file's `# Combat` section — not a separate creature note. The NPC file owns identity, history, and relationships; the `# Combat` section owns the stat fences.
 

@@ -10,13 +10,15 @@ description: >-
   surfaces. When filling `[!narration]` or a first look, open related owner,
   session, or user-attached images and ground the spoken picture in the
   pixels. Prefer complete, natural flowing prose that paints a drawable
-  picture — not telegram stubs and not verbose padding.
+  picture — not telegram stubs and not verbose padding. Reader `players` →
+  theatre of the mind. Does not own DM procedure, hidden truth, or agent
+  instruction.
 ---
 
 # Theatre of the mind
 ## Work gate
 
-Prep only. Follow `docs/agents/work.md`. Load `wiki/AGENTS.md`, `copy-writer`, and `obsidian-markdown` on every vault write.
+Prep only. Follow `docs/agents/work.md`.
 
 Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
 
@@ -28,6 +30,91 @@ Remap durable output paths from `campaigns/<slug>/` to `wiki/` (entities/journal
 
 All spoken copy is Work for the DM and player-safe; `[!narration]` is the spoken slot.
 
+## Authoring outcomes
+
+Player-facing theatre of the mind for a prepared Beat MUST be complete before
+the session so the DM can read or paraphrase it without an agent and without
+inventing the opening picture. Spoken look that depends on runtime player
+decisions (including turn-by-turn combat and top-of-round battlefield
+summaries) MUST NOT be prewritten.
+
+**Agency.** Player-facing narration MUST describe the world. Incomplete:
+PC action, thought, emotion, intent, choice, success, or unresolved outcome;
+secrets, DCs, unearned names, hidden causes, or agent-process language in the
+spoken block. Involuntary or emotional reactions MUST be expressed through the
+environment when they appear, not assigned to a PC.
+
+**Beat job.** Every situated scene opening names a Beat type and job:
+
+- **Hook** — immediate interest with minimal orientation first.
+- **Development** — changed information unmistakable.
+- **Cliffhanger** — danger or instability front-loaded.
+- **Climax** — opposition, stakes, features, in-motion consequences clear.
+  MUST NOT narrate victory, defeat, sacrifice, surrender, escape, or any other
+  player-controlled outcome.
+- **Resolution** — visible consequences only. Conditional variants when the
+  Climax can end substantially differently.
+
+Beat job is one sentence. Required when Beat is set. Decorative prose with no
+job is incomplete. Portraits and short updates do not take a Beat type.
+
+**State independence and layering.** Blocks remain usable regardless of party
+formation, position, resources, drawn weapons, speaking order, investigation
+order, intended approach, mood, or character-specific reactions — unless the
+Beat guarantees the resulting world state. Important elements MUST be related to
+one another (beneath, beyond, between, blocking, …). Isolated inventories
+without relationships are incomplete.
+
+Opening narration is the **Layer 1 immediate frame** — what is obvious without
+deliberate investigation. Salient features and discoverable information are
+separate complete reveal blocks (Layers 2–3) that describe the discovery, not
+the method. Features that matter tactically or interactively MUST be in Layer 1
+before a player would need them. Hierarchy: most important perceptible thing
+first; not an architectural inventory. Sensory information is selective: one or
+two defining details suffice; do not cycle every sense. An opening block MUST
+end on a live situation (danger, contradiction, question, opportunity, demand,
+objective, or changing circumstance) and MUST NOT choose the party's response.
+
+**Combat.** When violence is imminent, combat opening narration MUST make
+threats, threat relationships, objectives, relative distance, major terrain,
+cover, hazards, interactable opportunities, routes, and obvious exceptional
+conditions understandable. Clarity outranks literary flourish. Player-facing
+distance defaults to relational bands: **Melee** (immediately interactable),
+**Near** (reachable with normal movement this turn), **Far** (not meaningfully
+interactable in melee without extra movement). Exact measurements appear in
+spoken look only when a rule or encounter requires them. Coordinates disguised
+as prose are incomplete. Enemy grouping MUST be legible enough for the DM to
+answer how many a reasonable area effect can catch. Combat Work includes a
+complete opening and concise DM-only tactical facts on existing beat-card slots
+(zones, action cards, procedure). It MUST NOT include a turn-by-turn script or
+top-of-round summary. World-triggered changes (ritual phase, collapse,
+reinforcements) MUST have complete escalation or reveal blocks that do not
+assume PC behavior.
+
+**Wiki portrait.** Mode is situated moment (table or Beat state supplied) or
+wiki portrait (standalone; no party/encounter). A wiki portrait MUST remain
+valid across sessions. It MUST NOT reference current party state, assume an
+encounter, or include unlabeled transient facts. Completeness: recognizable
+identity anchors. Not every parent heading. Not a Beat. Not a scene script.
+
+**Interactive problems.** Traps, hazards, and trials MUST expose a visible
+symptom or usable clue in the current or earlier fiction so a solution is
+available in play. A challenge solvable only by omitted information is
+incomplete. Betrayal and sabotage MUST remain detectable, preventable, or
+respondable opportunities — not predetermined outcomes with no chance to notice.
+Reasonable player-created details that fit the established fiction MUST be
+permitted. Prep MUST NOT be treated as a closed inventory.
+
+**Prepared scene facts** use existing Session 11 slots when on a beat card:
+`[!narration]` for spoken look, Now for fixed truths, Zones for spatial
+relationships, zone/tick Narration cells for reveals, Be ready for for
+adjudication. Omit empty sections. Do not add a second cockpit for the same
+Beat. How those facts appear on a Session 11 beat card remains that card's
+layout.
+
+These are outcomes, not a single sentence architecture, word count, or expert
+process as the only valid method. Do not rewrite legacy wiki pages solely to
+match this standard.
 
 This is the default and sole authority for prose that crosses the DM/player
 boundary. It covers a live sentence, a boxed passage, a chat reply, a recap,
@@ -45,54 +132,25 @@ Use common, normal human words unless the common word would be inaccurate. The
 goal is clear table communication, not literary display. A line that sounds like
 it is trying to impress an English professor is failing the table.
 
-**Complete picture, not pad.** Cover every relevant player-visible fact the
-surface owes (subject, relationships, senses the viewpoint can use, motion or
-stable behavior). Join those facts into connected sentences with plain nouns
-and concrete verbs. Do not stop at a single encyclopedic clause when the
-picture is still incomplete. Do not add purple adjectives, theme sentences, or
-mood claims to fake completeness.
+**Complete picture, not pad.** Join supported facts into connected sentences
+with plain nouns and concrete verbs. Do not stop at a single encyclopedic
+clause when the picture is still incomplete. Do not add purple adjectives,
+theme sentences, or mood claims to fake completeness.
 
-For a session beat, completeness means **scene stock**: every currently
-perceivable thing the players can question, touch, take, fight, avoid, follow,
-use as cover, learn from, or spend time on. Include hazards, loot, monsters,
-routes, navigation handles, lore signs, world-building details, weather, light,
-sound, smell, and changing pressure when they are present and accessible. Fold
-them into the spoken picture by relationship and use: the idol beside the pit,
-the smoke beyond the prints, the glass grass under the only dry route, the
-priest's stained sleeve beside the missing coin box. Do not dump a catalog.
-Omitting actionable scene stock is a failure; padding the block with
+Every sentence must change the picture, attention, risk, route, relationship,
+or possible action. Cut ordinary defaults and no-effect reassurance. State a
+visible relation once in its strongest place; repeating the same claim in both
+a table cell and the spoken prose is padding unless the second use changes the
+picture or choice. Omitting actionable scene stock is a failure; padding with
 non-actionable color is also a failure.
-Player-facing prose is signal-only too: every sentence must change the picture, attention, risk, route, relationship, or possible action. Cut ordinary defaults and no-effect reassurance. State a visible relation once in its strongest place; repeating the same line-of-sight, cover, route, or absence claim in both a table cell and the spoken prose is padding unless the second use changes the picture or choice.
 
-Length still follows the moment: a hit, reveal, or dialogue turn may be one
-tight line; a `[!narration]` portrait, room/place first look, creature first
-sight, or recap is usually one coherent spoken block (often a short paragraph
-of several connected sentences). **Item and creature page `[!narration]`** cold
-portraits usually run about **three connected sentences** covering
-silhouette/scale, material/parts/wear, and one stable sensory or physical
-behavior — not a one- or two-line stub. **Session-beat `Initial Narration`** is
-the long *scene-setting* block: typically **two to four short spoken
-paragraphs** covering every currently perceivable subject, relationship,
-cover/route, relative position, imminent action, drawable appearance, scene
-stock, and at least one non-sight sense. Situational beat stubs (zone, tick,
-How the Scene Resolves, creature-in-this-scene) are shorter: one to three sentences, one job,
-no restage of Initial Narration. Fill missing visual nouns; do not pad with
-purple, mood-by-negation, or cover-story similes. Do **not** use the hit-line
-license to compress a creature first look or Initial Narration into a
-resolved-snatch telegram. Stop at the next meaningful player opening — for a
-creature first look or Initial Narration, that is the reaction point
-(telegraph), never after the haul.
-Do not force every surface into a spoken block, a fixed beat, or a located
-change.
-
-When the user requests a full or loaded first look, produce one coherent spoken
-block containing every relevant subject and relationship currently perceivable:
-locations and routes, NPCs, creatures, items, and current motion. Attention
-hierarchy and fold keep that block drawable; the anchor ceiling is a selection
-aid, never permission to omit relevant visible facts. Exclude hidden items,
-unearned identities or mechanics, future action, and player choice. A partial
-doorway snapshot is appropriate only when the user explicitly asks for that
-limited view.
+Length is the shortest block that makes a stable shared picture and performs the
+job. Not a word-count pass/fail. A hit or dialogue turn may be one tight line;
+a portrait or scene opening is usually a short paragraph or more of connected
+sentences. Situational beat stubs (zone, tick, How the Scene Resolves,
+creature-in-this-scene) are shorter: one to three sentences, one job, no
+restage of the opening. Do not force every surface into a spoken block, a fixed
+beat, or a located change.
 
 ## Choose the mode
 
@@ -119,33 +177,33 @@ blood, eyes, claws onto the body in flowing prose.
 **Hard mode gate for location/site `[!narration]`:** if the request is filling
 or rewriting `[!narration]` on a location note and no party position or other
 current table state is supplied, the mode is **standalone cold place portrait**
-of **stable public geography** with **one spine that is already this place**
-(not the concept of a lake/forest/room — Colville). Fold landmarks as dependents
-of that spine. Fail **Strong-echo / checklist cadence** (one fact per sentence
-in shore → depth → mouths → Grove → cool air order, or parroting a Strong
-example’s architecture). Fail thin telegram openers (`The shore is wet stone.`).
+of **stable public geography**. Choose an organizing spine independently.
 Require body-scale size and at least one usable affordance cue as nouns/verbs
-(wet stone underfoot, followable channel, climbable ledge) — never theme
-(`rest`/`direction`). Ban place-design kernel fields and schema voice: Function,
-Fantastic, Conflict, Promise, Trajectory, Aspects, Player verbs, Hunger /
-possession metaphysics, and rule-talk like `unclaimed` / `claim`. Ban invented
-mystery closers and staged located-change drama unless current table state
-supplies that motion. Creature signs and encounter pressure belong to a
-**situated** first look. Design kernels stay upstream (`place-design`); TotM
-renders geography. Respect the owning note's `Where` ledger; do not invent
-north/east/south/west neighbors or travel-day distances. Examples teach moves,
-not sentence architecture to echo.
+(wet stone underfoot, followable channel, climbable ledge). Ban place-design
+kernel fields and schema voice: Function, Fantastic, Conflict, Promise,
+Trajectory, Aspects, Player verbs, Hunger / possession metaphysics, and
+rule-talk like `unclaimed` / `claim`. Ban invented mystery closers and staged
+located-change drama unless current table state supplies that motion. Creature
+signs and encounter pressure belong to a **situated** first look. Design
+kernels stay upstream (`place-design`); TotM renders geography. Respect the
+owning note’s `Where` ledger; do not invent north/east/south/west neighbors or
+travel-day distances.
 
-Cold-place sweep bans: never use the rigid definition -> smell hang-over -> use/closer formula. Do not close on a thesis (treated as a border), leak Aspects/secrets (charts get wrong, Hunger/free-flow ownership), or use opaque caste/jargon nouns (Purple watch, Unknown-quarry stone). Darts, a blue watcher, and similar staged hostility require current table state unless the parent explicitly establishes stable public ecology without encounter film. A dual-title note must publicly render both halves or be retitled. Keep vehicle access kitchen-table (lines, rail, hold), never boarding interface in player prose. Keep lore miracles such as the duck has died and reformed in Secrets/DM. The cold spine is already this place plus body-scale geography and a drawable affordance, and it stops on stable geography.
+Do not close on a thesis, leak Aspects/secrets, or use opaque caste/jargon
+nouns. Staged hostility requires current table state unless the parent
+explicitly establishes stable public ecology without encounter film. A
+dual-title note must publicly render both halves or be retitled. Keep vehicle
+access kitchen-table (lines, rail, hold), never boarding interface in player
+prose. Keep lore miracles in Secrets/DM. The cold spine is body-scale geography
+and a drawable affordance, stopping on stable geography.
 
 **Hard mode gate for hazard notes (`[!narration]` on a hazard page):** if no
 current table state is supplied, write a **standalone cold hazard portrait**.
 The hazard body or patch is the grammatical and attentional subject. Do not
 route it through the creature contract (no Hookline/Reel-style contact film)
 or the place contract (no invented valley camera and no lake/terrain spine).
-Usually use about three connected sentences to make the patch drawable: form
-and scale, positive material or construction, and one positive sensory or
-physical warning. Prefer kitchen-table words: plain spoken nouns and concrete
+Coverage: form and scale, positive material or construction, and one positive
+sensory or physical warning. Prefer kitchen-table words: plain spoken nouns and concrete
 verbs over ecology or workshop compounds. For Razer-Grass, keep the positive
 glass and cut danger telegraph, but describe it in player-ready terms rather
 than relying on `colonies`, `opaline`, or `cut-ready`; a thin glass sound and
@@ -161,9 +219,9 @@ Shatter, Glass Bloom, or a scripted aftermath; those belong to the table state
 or mechanic layer.
 
 
-**Hard mode gate for faction/organization notes (`[!narration]` on a faction or organization page):** when no current table state is supplied, use a standalone **cold faction portrait**. Give it a length floor of about **four connected sentences** (usually four to six), then stop; a one- or two-sentence telegram fails this mode. The public mask comes first, followed by one concrete, kitchen-table method footprint, one environmental **Tell** that a bystander could notice, and a shared title or face cue when the parent supplies one. These are coverage dimensions, not a rigid sentence order, and they must join into drawable prose rather than an abstract organization gloss. In the player-facing block, these are craft labels, not words to say: never use `mask`, `footprint`, `Tell`, or `face cue` in faction `[!narration]`; render the concrete signs directly.
+**Hard mode gate for faction/organization notes (`[!narration]` on a faction or organization page):** when no current table state is supplied, use a standalone **cold faction portrait**. Coverage dimensions (not a rigid sentence order): public mask, one concrete kitchen-table method footprint, one environmental Tell a bystander could notice, and a shared title or face cue when the parent supplies one. These must join into drawable prose rather than an abstract organization gloss. In the player-facing block, these are craft labels, not words to say: never use `mask`, `footprint`, `Tell`, or `face cue` in faction `[!narration]`; render the concrete signs directly.
 
-Keep secret agenda, Rule of Two, hunt clocks, and other DM-only pressure out of faction Appearance. Ban workshop abstractions such as `martial reach`, `dropped the ledgers`, or ledger language used as a vague organizational label; use only supported concrete signs such as missing names or records, one-job hires, or a shared title. Do not invent a plot, venue, encounter, or hidden motive to meet the length floor. Stop once those public facts are shown, ending on the shared title as the name people hear.
+Keep secret agenda, Rule of Two, hunt clocks, and other DM-only pressure out of faction Appearance. Ban workshop abstractions such as `martial reach`, `dropped the ledgers`, or ledger language. Do not invent a plot, venue, encounter, or hidden motive. Stop once those public facts are shown.
 
 
 **Hard mode gate for technique notes (`kind: technique` or technique tags):** if
@@ -180,7 +238,7 @@ lore stay in Fiction / Training. Mechanical package stays Mechanics.
 
 **Hard mode gate for object/weapon cold Appearance (Fate Spinner bar +):** cold
 item `[!narration]` must read aloud as a drawable object, not a catalog gloss.
-Coverage (flowing prose, ~3 sentences — dimensions, not a checklist dump):
+Coverage (flowing prose — dimensions, not a checklist dump):
 1. **Concrete noun** (musket, long gun, carbine, blade) — not inventory jargon as
    the whole sentence.
 2. **Scale vs body** (shoulder stock, barrel past the forearm).
@@ -358,12 +416,12 @@ bottom is south, and left is west. Fold only the relevant directions into the
 spoken block as natural geography; do not recite all four compass entries
 unless the scene is a true survey.
 
-Use concrete measurement. Spatial and travel prose may use north, south, east,
-west, feet for tactical 5.5e distance, and days, hours, or minutes for travel
-time. Do not use range bands, distance bands, near, far, close, nearby,
-distant, inner, or outer as measurements. If one of those words appears as
-ordinary descriptive prose, pair it with a concrete direction, distance, or
-travel time when orientation matters.
+Use concrete measurement on DM-facing zones and positioning. Spatial and travel
+prose may use north, south, east, west, feet for tactical 5.5e distance, and
+days, hours, or minutes for travel time. Player-facing spoken distance defaults
+to relational bands (Melee, Near, Far); exact measurements appear in spoken
+look only when a rule or encounter makes them perceptible and
+decision-constraining. Coordinates disguised as prose are incomplete.
 
 The spatial staging card is a private drafting aid: viewpoint, compass frame,
 concrete distance or travel time, blocked paths, three to five anchors, and the
@@ -371,96 +429,32 @@ current opening. Audit visible entrances, exits, retreat, cover, blocked paths,
 and traversable hazards whenever those facts affect a decision. Introduce each
 landmark once, then reuse it.
 
-For a requested full or loaded spatial first look, complete the current visible
-state in that one block before stopping: include every relevant visible subject,
-relationship, route, and motion, while leaving hidden items and future outcomes
-out. Stop after that complete state at its pressure or opening. Only an
-explicitly requested doorway-only snapshot may be intentionally partial.
-
 **Scene-setting (session-beat `Initial Narration`):** address the party as
-**you**. Present tense. Lead with sensory verbs: **you see**, **you hear**,
-**you feel** (physical: wind, current, heat, mud), **you smell** when the
-viewpoint supports it. Do not say "the crew". Do not narrate a feeling,
-thought, or choice (`you feel afraid`, `you decide`). The spoken block must
-already contain the facts the table needs for the first decision (Angry GM:
-goal, obstacle, tools on hand). Currently perceivable cover, routes, relative
-position, who is being hunted, imminent action, drawable appearance, and at
-least one non-sight sense join as flowing spoken prose. Weave look and sound
-into the sentences. Do not park them as a DM catalog under the callout. An owner identity image on the run
-card is a DM glance; it does not replace the spoken look. Open those **pixels**
-so the spoken look matches the art. An adult striking
-other prey may be visible windup; do not resolve PC injury. Visible grass,
-river, or shipward sky that is already under or beside them belongs in this
-block, not on a later clock tick. Then stop at the reaction point and ask.
+**you**. Present tense. Do not say "the crew". Do not narrate a feeling,
+thought, or choice (`you feel afraid`, `you decide`). Initial Narration is the
+**Layer 1 immediate frame**: what is obvious without deliberate investigation.
+Salient features, discoverable information, and deeper facts are separate
+complete reveal blocks or existing zone/tick Narration cells (Layers 2–3) that
+describe the discovery, not the method. Features that matter tactically or
+interactively belong in Layer 1 before a player would need them. An owner
+identity image on the run card is a DM glance; it does not replace the spoken
+look. Open those **pixels** so the spoken look matches the art. Then stop on a
+live situation and ask.
 
 **Session-beat spoken fill is pass 3.** Pass 1 (`run-guide`) leaves empty prose
 slots, and pass 2 (`copy-writer`) edits DM-facing copy first. Load this skill
 only when pass 3 begins, then fill every spoken slot. The DM may skip a block
 at the table; the writer fills all of them.
 
-**Callout stubs:** `Initial Narration` (mandatory, long scene-setting),
+**Callout stubs:** `Initial Narration` (Layer 1 immediate frame),
 one `How the Scene Resolves` for the unconditional end state, `{Creature}` after each roster embed,
 `Exit` only when the next cockpit is on the same file. Most-likely options sit in a table beside that callout (`run-guide`).
 
-**Cliffhanger beat narration:** a Cliffhanger stub carries the same contracts
-as other session-beat stubs with a physical-pressure focus. Initial Narration
-front-loads the visible danger, the contested position or resource, the
-available routes/tools, the relevant scene stock, and the cost already in
-motion. The natural stop is the reaction point: the danger is visible and the
-outcome is unresolved. Smaller Cliffhanger stubs are short combat, chase,
-escape, or pressure updates that show what physically changed and what can be
-acted on next.
-
-**Climax beat narration:** a climax stub carries the same contracts as other
-session-beat stubs (second person, present tense, sensory verbs, reaction
-point) with three additions. First, make costs and stakes **perceivable**: if
-the sacrifice, defense, negotiation, or catastrophe has visible consequences,
-those consequences belong in the spoken block as concrete nouns — not as DM
-summary after the fact. Second, **echo prior choices**: things the party did
-in earlier beats should be visible in the environment, NPC behavior, or
-available options — the climax narration connects the session's thread. Third,
-the **resolution transition**: the final climax stub (How the Scene Resolves or last tick)
-describes the changed world in present tense before the DM asks what the party
-does next. A climax stub is still one to three sentences per slot; intensity
-comes from concrete specificity, not from longer blocks or purple language.
-
-**Development beat narration:** a Development stub uses the same tense and
-viewpoint contracts as other session-beat stubs (second person, present tense,
-sensory verbs) with a different focus. Initial Narration shows who is present
-and what they are doing, the social or environmental atmosphere, discoverable
-details, relevant scene stock, and at least one non-sight sense. The spoken
-picture carries what the players can perceive, question, or act on in a
-conversation or investigation — make discoverable details concrete and
-drawable. The natural stop is the **decision point**: enough visible information
-is on the table for players to choose what to ask, propose, or do. Smaller
-Development stubs (an NPC's visible reaction, a revealed object, a pressure
-moment) are one to three sentences, one job per slot. Intensity in a
-Development comes from specificity of detail and social tension, not physical
-danger language.
-
-**Hook beat narration:** a Hook stub uses the same contracts as other
-session-beat stubs (second person, present tense, sensory verbs, reaction
-point) with a **strong-start** focus. Initial Narration is the most critical
-spoken block of the session — it must land the situation in one continuous
-delivery and leave the party ready to act. Lead with the immediate pressure:
-what is happening, who is at stake, what demands attention right now. Make
-the opening problem perceivable and actionable within the first paragraph:
-visible danger, an urgent offer, a discovery with consequences, or a crisis
-already in motion. Weave drawable appearance and at least one non-sight sense
-into the opening picture, including the scene stock needed for the first real
-choice. The reaction point for a Hook is the first player decision of the
-session — stop when the party has enough to choose a response, not after the DM
-has described every prepared element. Smaller Hook stubs (zone, tick, How the Scene Resolves)
-stay one to three sentences, one job. Intensity in a Hook comes from immediacy
-and concrete stakes, not volume or purple urgency.
-
-**Resolution beat narration:** a Resolution stub shows the aftermath at the
-same scale as the Climax. Initial Narration shows what changed, what remains
-usable or lost, who is present, what costs are visible, what rewards or routes
-are now accessible, and which unresolved pressure is still perceivable. The
-natural stop is a renewed choice: players can name what is different and what
-they want next. Do not smuggle in DM conclusions, future montage, or moral
-summary.
+**Beat-type stubs:** all session-beat stubs use second person, present tense,
+and end on a live situation. The Beat job in Authoring outcomes above governs
+what each type must accomplish. Smaller stubs (zone, tick, How the Scene
+Resolves, creature-in-scene) are one job per slot. Intensity comes from
+concrete specificity, not purple language or longer blocks.
 
 **Table Narration columns:** when Zones, Threat clock, or How the Scene Resolves
 options tables include a Narration column, write conditional spoken prose in
@@ -484,10 +478,9 @@ Read the result aloud once. Ask the branch's questions from
 [references/surfaces.md](references/surfaces.md), then run the slop and thin
 gates in [references/voice.md](references/voice.md). Fail the draft if a
 player hearing it once cannot sketch or distinguish the subject. Fail a
-situated session-beat Initial Narration if the table is asked to act before
-they have currently visible cover, routes, relative position, imminent action,
-relevant scene stock, drawable look, and a non-sight sense, or if
-look/sound/scene stock were left as a DM list under the callout.
+situated session-beat Initial Narration if the Layer 1 immediate frame does not
+give the table a stable shared picture and something live to respond to, or if
+scene stock was left as a DM list under the callout.
 Cut telegram lists, isolated details, private metaphors, premature labels,
 unsupported mechanics, future outcomes, and repeated line-of-sight, cover,
 route, or absence claims. Cut purple register that adds no drawable fact. Add

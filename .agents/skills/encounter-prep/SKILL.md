@@ -2,16 +2,18 @@
 name: encounter-prep
 description: >-
   Design a runnable combat, social, exploration, skill-challenge, or hybrid encounter grounded
-  in the party, location, opposition, and desired stakes. Use for encounter design, fight balance,
-  tense obstacle scenes, and travel-event handoffs. Not pasted rules tables, statblock authoring,
-  reconciliation, or a scripted sequence of player choices.
+  in the party, location, opposition, and desired stakes. Customized combat mechanics serve a
+  named narrative beat (lore, origin, stakes, plot, or character). A named place has mechanical
+  pressure that changes a choice. Use for encounter design, fight balance, tense obstacle scenes,
+  and travel-event handoffs. Not pasted rules tables, statblock authoring, reconciliation, or a
+  scripted sequence of player choices.
 ---
 
 # Encounter Prep
 
 ## Work gate
 
-Prep only. Follow `docs/agents/work.md`. Load `wiki/AGENTS.md`, `copy-writer`, and `obsidian-markdown` on every vault write.
+Prep only. Follow `docs/agents/work.md`.
 
 Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
 
@@ -23,6 +25,15 @@ Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagge
 An encounter is a situation with an active problem, opposition or obstacle with its own agenda, a
 meaningful choice surface, and consequences. Calibrate to the actual party and current rules;
 never paste proprietary rules text or copyrighted challenge tables.
+
+## Combat instance
+
+Customized combat mechanics serve a named narrative beat (lore, origin, stakes, plot, or character) a second person can name. Number-only math is incomplete.
+
+When the encounter has a named place (lair, site, battlefield), that place has at least one mechanical pressure that belongs to it and changes a choice. Flavor-only scenery is incomplete. No named place, or an explicit DM request for a featureless skirmish, does not require invented lair mechanics.
+
+Stock opposition used unchanged needs no custom features. Do not author statblocks — `homebrew-monsters-5e` owns those.
+
 
 ## Ground and type
 

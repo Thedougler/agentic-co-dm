@@ -1,11 +1,28 @@
 ---
 name: writing-for-agents
-description: Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.
+description: >
+  Write text an agent will follow: a skill, standing instruction, pointed-at
+  procedure, spec, or constitution. Reader `agent` → writing-for-agents.
+  When that document is D&D content guidance, research experts then integrate
+  outcomes. Ordinary wiki content jobs are not this entity. Does not own DM
+  Work, wiki prose, or player-facing text.
 ---
 
 Reference for writing any document an agent consumes: a skill, an `AGENTS.md` / `CLAUDE.md`, a doc reached by a pointer. The packaging differs; the writing does not: the same levers make each one predictable, since the agent takes the same _process_ every run rather than producing the same output.
 
 When the document you're writing is a skill, read [`SKILL-MECHANICS.md`](SKILL-MECHANICS.md) for frontmatter, invocation choice, and router skills.
+
+## D&D content guidance
+
+When the document is a skill, standing instruction, or pointed-at procedure that creates D&D wiki content:
+
+1. Name the content problem the guidance must solve. Done: one sentence.
+2. Research named published designers and documented craft (host web search). If those are silent, high-quality homebrew. If none found, invent and flag. Done: sources named, or invention flagged.
+3. Fold expert-solved outcomes into this document as one source. Cite techniques as examples. Done: a second person can point at the outcomes; not a quote dump; not a second competing procedure; not a named person's process as the only method.
+4. Never paste proprietary book text.
+
+Ordinary wiki content jobs follow the resulting guidance. They do not re-run this research.
+
 
 ## Context pointers
 

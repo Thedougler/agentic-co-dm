@@ -8,12 +8,15 @@ updated: YYYY-MM-DD
 type: creature
 lifecycle: proposed
 reveal: unrevealed
-campaign: ""
+campaign: shattered-sea
+visibility: dm
 region: ""
 role: ""
 cr: ""
 summary: ""
 ---
+<!-- Copy-start scaffold. Look, sheet, life, hunt. Visual reference omit-if-empty. Column density allowed. Pass is creature jobs in wiki/AGENTS.md Layout. -->
+
 # {{title}}
 
 > [!narration] Narration
@@ -38,7 +41,7 @@ cr: 0
 ```
 
 ## Visual reference
-Write the supplied reference-sheet facts in complete sentences when a sheet exists.
+Write the supplied reference-sheet facts in complete sentences when a sheet exists. Omit this heading when none exists.
 
 ## Behavior
 
@@ -57,3 +60,4 @@ Write the supplied reference-sheet facts in complete sentences when a sheet exis
 
 ## Art
 ![[token-or-extra.jpg|short visible caption]]
+<!-- Omit Art when unused. -->

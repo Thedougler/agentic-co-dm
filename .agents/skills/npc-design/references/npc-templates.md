@@ -14,23 +14,19 @@
 
 ## Significant or recurring NPC card
 
-Design fields that feed the wiki note. Copy `wiki/templates/npc.md`. Optional sections: `specs/003-npc-page-standard/contracts/npc-page.md`. Layout source: `wiki/_raw/Hinewai.md`, `wiki/_raw/Talon Skarn.md`, `wiki/_raw/Nona Black-Jaw.md`, `wiki/_raw/Thunk.md`.
+Design fields that feed the wiki note. Copy `wiki/templates/npc.md` as a scaffold. Pass is person jobs in `wiki/AGENTS.md` Layout. `specs/003-npc-page-standard/contracts/npc-page.md` is optional extra depth when facts exist, not a clone target. `wiki/_raw/Hinewai.md`, `wiki/_raw/Talon Skarn.md`, `wiki/_raw/Nona Black-Jaw.md`, and `wiki/_raw/Thunk.md` illustrate density.
 
 Wiki identity `role` is `rival` | `patron` | `contact`. Craft labels in **Common functions** below stay design notes. They are not frontmatter.
 
-| Design field | Wiki destination |
+| Design field | Person jobs |
 | --- | --- |
-| Identity, public function | **At a Glance** table (Role, Nature rows) |
-| Immediate want, longer want, fear | **At a Glance** table (Wants; extra rows only if they change how the DM runs the NPC) |
-| Leverage, need, cost, limit | **At a Glance** extra rows when they change play |
-| Productive contradiction | **DM thesis** |
-| Four portrayal signals | **`[!narration]`** + **Running** |
-| Attitude, request posture, influence approach | **Running** subsections |
-| Relationships per PC, faction, NPC | **Relationships** table (wikilink + meaning; patron MAY add invitation) |
-| Origin, companion, formative events | **History** only when that origin is needed |
-| Combat identity, stages, conditions | **Combat** (encounter rule + on-page sheet or one pointer) when fightable |
-| Activity log | After Relationships, after each appearance |
-| Next move / interrupt point | **Running** or an At a Glance row |
+| Identity, public function | Who |
+| Immediate want, longer want, fear | Want |
+| Four portrayal signals | Spoken look + first minutes |
+| Attitude, request posture, influence approach | First minutes and posture change |
+| Relationships per PC, faction, NPC | Named ties |
+| Combat identity, stages, conditions | Combat only if fightable (encounter rule + sheet or one pointer) |
+| Origin, companion, formative events, activity log | Extra depth only when those facts exist |
 
 ## Activity log
 

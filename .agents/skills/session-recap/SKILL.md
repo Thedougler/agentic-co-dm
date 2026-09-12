@@ -11,7 +11,7 @@ disable-model-invocation: true
 
 ## Work gate
 
-Wrapup. Follow `docs/agents/work.md`. Show a chat proposal first. Write to `wiki/` only after DM accept (FR-019). Reject leaves no page. Load `wiki/AGENTS.md`, `copy-writer`, and `obsidian-markdown` on the post-accept write. Ground claims in wiki pages and/or D&D 5e rules; cite `[[pages]]`. Recap is human prose. Unused prep is not canon. Players see nothing until accepted and presented.
+Wrapup. Follow `docs/agents/work.md`. Show a chat proposal first. Write to `wiki/` only after DM accept (FR-019). Reject leaves no page. Ground claims in wiki pages and/or D&D 5e rules; cite `[[pages]]`. Recap is human prose. Unused prep is not canon. Players see nothing until accepted and presented.
 
 ## What this produces
 

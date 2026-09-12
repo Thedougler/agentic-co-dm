@@ -3,6 +3,11 @@
 **/.DS_Store
 Thumbs.db
 *.tmp
+*.swp
+*.log
+.vscode/
+.idea/
+
 
 # Secrets / machine paths
 .env
@@ -32,7 +37,8 @@ wiki/.trash/
 **/.qmd/refresh.*
 
 # Harness copies of pipx wiki skills (absolute machine symlinks)
-.claude/skills/
+.claude/skills/*
+!.claude/skills/speckit-*/
 .cursor/skills/
 .kiro/skills/
 .pi/skills/
