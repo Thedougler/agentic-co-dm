@@ -24,6 +24,12 @@
 
 **Alternatives considered**: Chat-only (dies with the session; fails SC-007). Queue markdown in the repo (second tracker). New triage label (Constitution II names five strings). `ready-for-human` (this is agent work once the writer is available).
 
+## Decision: Usage-limit parks carry a retry time
+
+**Rationale**: FR-017 / SC-008. The specific job stays incomplete; other in-session work is not marked incomplete for that reason. Retry time is the reset time in the usage-limit report when present; if none, 5 hours from the park; if a retry still reports a usage limit with no reset time, 24 hours from that attempt. Record retry time in the parked issue body. Later sessions MUST NOT re-attempt before that time. Do not put the backoff in `AGENTS.md` (procedure only).
+
+**Alternatives considered**: Single 24-hour default always (ignores a reported reset). Owner-picked retry time (human gate; Constitution X). No retry time (job is findable but immediately re-attempted, burning quota again).
+
 ## Decision: On writer failure, restore targets to the revision at dispatch start
 
 **Rationale**: FR-009 — incomplete means files match pre-attempt content, including a writer that died mid-edit. Session agent commits non-design work first (Constitution X), records `HEAD`, invokes the writer, and on non-success restores the prompt’s target paths from that revision. Session agent does not finish the design (FR-010).

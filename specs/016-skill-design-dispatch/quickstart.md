@@ -28,9 +28,11 @@ Jobs 6–10: session agent does not modify those targets. A scoped prompt exists
 
 Fail if the session agent drafts the new skill or rewrites the trigger.
 
-## 4. Unavailability parks and restores (P4, SC-004, SC-007)
+## 4. Unavailability parks and restores (P4, SC-004, SC-007, SC-008)
 
 Simulate job 16 (writer unavailable). Targets match pre-attempt content. An issue titled `Parked skill design: …` with `ready-for-agent` contains the scoped prompt. A later session can resume from that issue without the original chat.
+
+Simulate jobs 17–19 (usage limit). The parked issue includes a retry time: reset time from the report, else 5 hours from park, else 24 hours after a still-limited retry. Fail if the job is re-attempted before that time. Fail if other in-session work is marked incomplete solely because this job hit a usage limit.
 
 Fail if the session agent writes the design. Fail if partial target edits remain.
 

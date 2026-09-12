@@ -62,10 +62,11 @@ Tracked incomplete design-impact work.
 |---|---|
 | Title | `Parked skill design: <outcome>` |
 | Label | `ready-for-agent` |
-| Body | The scoped prompt |
+| Body | The scoped prompt. When reason is usage limit: also the retry time. |
 | Targets on disk | Match content at dispatch start |
+| Retry time | Usage limit only. Reset time from the report when present; if none, 5 hours from the park; if a retry still reports a usage limit with no reset time, 24 hours from that attempt. Do not re-attempt before this time. Other in-session jobs are not marked incomplete for this reason. |
 
-States: `open` → `resumed` → `done`. Search existing `Parked skill design:` issues before creating another for the same job.
+States: `open` → `resumed` → `done`. Search existing `Parked skill design:` issues before creating another for the same job. Resume of a usage-limit park waits until after retry time.
 
 ## Dispatch outcome
 
@@ -81,5 +82,6 @@ States: `open` → `resumed` → `done`. Search existing `Parked skill design:` 
 - Instruction edit → one class → one writer (unless mixed request, then split)
 - Design-impact + writer available → dispatched
 - Design-impact + writer unavailable → parked dispatch
+- Usage limit → parked dispatch with retry time; later session waits
 - Parked dispatch → later session resumes from issue body, no original chat
 - Successful dispatch → session agent verifies, does not rewrite
