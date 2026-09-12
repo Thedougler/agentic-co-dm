@@ -2,12 +2,27 @@
   "version": "1.0.6",
   "integration_state_schema": 1,
   "installed_integrations": [
-    "omp"
+    "omp",
+    "codex",
+    "grok",
+    "claude"
   ],
   "integration_settings": {
     "omp": {
-      "script": "sh",
+      "script": "py",
       "invoke_separator": "."
+    },
+    "codex": {
+      "script": "py",
+      "invoke_separator": "-"
+    },
+    "grok": {
+      "script": "py",
+      "invoke_separator": "-"
+    },
+    "claude": {
+      "script": "py",
+      "invoke_separator": "-"
     }
   },
   "integration": "omp",

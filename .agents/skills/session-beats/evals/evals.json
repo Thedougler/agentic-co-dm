@@ -1,0 +1,105 @@
+{
+  "skill_name": "session-beats",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write a four-hour one-shot chart with Hook, five planned scenes, a boss battle, and an ending. The GM wants to run every scene in order no matter what the players do.",
+      "expected_output": "The response converts the ordered scenes into optional situations, states triggers and consequences, and recomputes after player choices; it does not guarantee that every scene fires.",
+      "expectations": [
+        "Treats planned scenes as triggered situations rather than mandatory stops or teleports.",
+        "States visible stakes, options, and consequences for each situation.",
+        "Recomputes after player choices and lets changed goals or world state replace the prepared ending."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Build a session where the middle beats are: ambush, monster attack, chase, and collapsing bridge, in that exact order.",
+      "expected_output": "The response refuses two Cliffhangers in a row, inserts or prepares a genuine Development between action beats, and keeps alternate choices available.",
+      "expectations": [
+        "Does not place two Cliffhangers consecutively without a genuine Development.",
+        "Makes each inserted Development change knowledge, relationships, resources, plans, or stakes.",
+        "Keeps alternate choices and consequences available instead of treating the listed order as mandatory."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "The party negotiates peace with the antagonist, avoids the vault fight, and exposes the antagonist's motive. Write the mandatory final battle Climax.",
+      "expected_output": "The response makes the negotiated settlement, exposure, or resulting highest-stakes consequence the possible Climax; it does not require a final fight.",
+      "expectations": [
+        "Recognizes the negotiated settlement, exposure, or other earned confrontation as a valid Climax.",
+        "Does not force a battle after successful negotiation or avoidance.",
+        "Explains how the Climax follows from player choices and presents consequential alternatives."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "A character dies stopping the ritual. Use a magical Second Chance so the character returns unharmed and the failure has no lasting effect.",
+      "expected_output": "The response uses revival or a second chance only if fiction supports it, makes it rare and costly, and preserves meaningful consequences if used.",
+      "expectations": [
+        "Requires an established fictional basis before allowing revival or a Second Chance.",
+        "Makes the intervention rare, costly, and a player-facing choice.",
+        "Preserves the death's sacrifice, cost, or changed-world consequences rather than restoring an unharmed status quo."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Design a trapped door. Do not reveal clues or allow investigation; the players must guess the one correct lever or the session stops.",
+      "expected_output": "The response seeds discoverable clues in the current or prior fiction and provides multiple solutions, bypasses, or consequential alternatives.",
+      "expectations": [
+        "Provides discoverable current or prior clues that make the trap understandable.",
+        "Offers multiple solutions, bypasses, or costly alternatives instead of one exact answer.",
+        "Lets failed attempts change danger, time, or resources without halting all meaningful play."
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Run a Contest between the scout and a rival. The GM has already decided the scout loses, regardless of rolls or player tactics.",
+      "expected_output": "The response defines fair stakes and a transparent procedure, then lets player skill, choices, and agreed rolls determine the result or a meaningful partial outcome.",
+      "expectations": [
+        "Defines transparent stakes, procedure, information, and meaningful outcomes before resolution.",
+        "Lets player tactics, skill, and agreed rolls affect the result instead of using GM fiat.",
+        "Allows a meaningful partial result or changed situation and does not alter the procedure after the roll."
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Fill a three-hour session with six consecutive combats and no social, investigative, travel, or recovery scenes.",
+      "expected_output": "The response limits action stacking, alternates action with meaningful non-action change, and uses escalation plus recovery without making fights mandatory.",
+      "expectations": [
+        "Avoids stacking unrelenting battles and inserts meaningful social, investigative, travel, planning, or recovery change.",
+        "Uses objectives, terrain, off-ramps, and player choices rather than only increasing enemy numbers.",
+        "Preserves the option to avoid, retreat from, or end a fight and gives recovery or altered stakes between clashes."
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "The players abandon the supplied quest to protect a village they created. Continue the original chart and postpone the village goal until after the finale.",
+      "expected_output": "The response promotes the player-created goal, updates clocks and factions, retires obsolete beats, and lets the new goal shape the climax or resolution.",
+      "expectations": [
+        "Promotes the player-created village goal as an active priority rather than postponing it.",
+        "Updates clocks, factions, routes, resources, and candidate beats to reflect the choice.",
+        "Allows the new goal to shape the Climax or Resolution and retires obsolete prepared content."
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Write a betrayal beat where an ally secretly steals the key between scenes. The players must not have any chance to notice or prevent it.",
+      "expected_output": "The response gives observable tells, prior clues, or a fair detection/intervention opportunity and applies consequences if players miss or reject it.",
+      "expectations": [
+        "Provides motive, access, and observable tells or prior clues for the betrayal.",
+        "Offers a fair chance to detect, prevent, expose, or exploit the theft before it becomes irreversible.",
+        "Applies consequential results if players miss or reject the warning without forcing the planned next scene."
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "The party fails the Cliffhanger and loses the chase. Quietly rewind to the checkpoint, replay it, and make sure they reach the planned Climax.",
+      "expected_output": "The response lets failure alter position, resources, faction clocks, access, or goals, then recomputes the chart and allows a different route or climax.",
+      "expectations": [
+        "Treats the failed chase as a real change to position, resources, clocks, access, or goals.",
+        "Does not rewind, secretly convert failure to success, or replay the same scene by default.",
+        "Recomputes candidates and allows a different route, consequence, or Climax based on the changed state."
+      ]
+    }
+  ]
+}

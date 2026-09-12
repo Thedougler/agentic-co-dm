@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "stats": {
+    "total_sources_ingested": 6,
+    "total_pages": 2
+  },
+  "sources": {
+    "specs/015-wiki-ingest-polish/fixtures/sources/01-existing-page.md": {
+      "pages_produced": ["entities/red-harbor.md"],
+      "source_type": "document"
+    },
+    "specs/015-wiki-ingest-polish/fixtures/sources/02-new-coherent.md": {
+      "pages_produced": ["entities/tide-glass.md"],
+      "source_type": "document"
+    },
+    "specs/015-wiki-ingest-polish/fixtures/sources/02b-fragment.md": {
+      "pages_produced": ["_raw/02b-fragment.md"],
+      "source_type": "document"
+    },
+    "specs/015-wiki-ingest-polish/fixtures/sources/03-conflict.md": {
+      "pages_produced": ["entities/red-harbor.md"],
+      "source_type": "document"
+    },
+    "specs/015-wiki-ingest-polish/fixtures/sources/04-surfaces.md": {
+      "pages_produced": ["entities/red-harbor.md"],
+      "source_type": "document"
+    },
+    "specs/015-wiki-ingest-polish/fixtures/sources/05-readable.md": {
+      "pages_produced": ["entities/red-harbor.md"],
+      "source_type": "document"
+    }
+  }
+}

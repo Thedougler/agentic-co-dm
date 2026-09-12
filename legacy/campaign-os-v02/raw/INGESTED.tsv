@@ -1,0 +1,490 @@
+# source-path (relative to /Users/nick/ai-os/shattered-sea/)	target/outcome	commit	date
+wiki/entities/characters/npcs/estratto.md	world/npcs/estratto.md	4faec06	2026-07-13
+wiki/entities/characters/pcs/jean-claude-tabarnack.md	R1: refusal (PC boundary); R4 line ingests	501f387	2026-07-13
+wiki/entities/places/settlements/calveno/calveno-reference.md	world/locations/calveno.md	f9f4132	2026-07-13
+wiki/entities/items/common/preserved-eel.md	world/items/preserved-eel.md	0280891	2026-07-13
+wiki/entities/factions/sentinels-of-the-eyrie.md	world/factions/sentinels-of-the-eyrie.md	ff53e88	2026-07-13
+wiki/entities/creatures/background/gentle-hag.md	world/creatures/gentle-hag.md	1214f8a0	2026-07-13
+wiki/entities/deities/syranita.md	world/lore/syranita.md	14fafec	2026-07-13
+wiki/lore/species/grung.md	world/lore/grung.md	21bef01	2026-07-13
+wiki/entities/vehicles/vethka.md	world/ships/vethka.md	9497e4b	2026-07-13
+wiki/lore/campaign-overview.md	world/lore/campaign-overview.md	d794cc8	2026-07-13
+wiki/rules/subclasses/swashbuckler.md	world/rules/swashbuckler.md	2d3d139	2026-07-13
+wiki/sessions/session-01-recap.md	sessions/01-boarding-of-the-saltwright/ (transcript+ledger)	75ae5e5	2026-07-13
+wiki/situations/dormant/draves-bloodline-question.md	homeless-pressure flag only (needs Crown/Aldric faction page)	84d8f8a	2026-07-13
+wiki/narrative-islands/port-tidefall-dockfront.md	no page by design (run-guide-scoped; options logged)	bcfa763	2026-07-13
+wiki/system/character-interview-guide.md	mapped: dnd5e-character-interview	240d188	2026-07-13
+wiki/entities/characters/minor/ferrin-locke.md	world/npcs/ferrin-locke.md	20fb033	2026-07-13
+wiki/entities/places/buildings/grimaldis-dispensary.md	world/locations/grimaldis-dispensary.md	4f8b6f9	2026-07-13
+wiki/entities/items/common/fish-broth.md	world/items/fish-broth.md	4cc3a33	2026-07-13
+wiki/entities/factions/waveservants.md	world/factions/waveservants.md	eff7aa7	2026-07-13
+wiki/entities/creatures/background/giant-owl.md	world/creatures/giant-owl.md	ac61fc3	2026-07-13
+wiki/entities/deities/tyr.md	world/lore/tyr.md	d94e7ac	2026-07-13
+wiki/entities/species/human.md	world/lore/human.md (W9: byte-identical to lore/species/human-culture.md)	a424d8d	2026-07-13
+wiki/lore/species/human-culture.md	covered by world/lore/human.md (degenerate duplicate)	a424d8d	2026-07-13
+wiki/entities/vehicles/greyteeth-runner.md	world/ships/greyteeth-runner.md	f66b4a1	2026-07-13
+wiki/lore/the-vault-of-the-first-factor.md	world/lore/the-vault-of-the-first-factor.md	ebdb1b6	2026-07-13
+wiki/rules/subclasses/draconic-sorcery.md	world/rules/draconic-sorcery.md	cd0659c	2026-07-13
+wiki/situations/dormant/sentinels-true-head.md	absorbed → world/factions/sentinels-of-the-eyrie.md Front	1b69422	2026-07-13
+wiki/dm/perrin-primer.md	refusal (PC-tactical primer; Arc Notes ownership open)	1542d7b	2026-07-13
+wiki/entities/creatures/planned/soul-incarnate.md	world/creatures/soul-incarnate.md	07e407b	2026-07-13
+wiki/entities/items/uncommon/delmars-cloak-of-the-manta-ray.md	world/items/delmars-cloak-of-the-manta-ray.md	8714561	2026-07-13
+wiki/entities/items/artifact/pearl-of-souls.md	world/items/pearl-of-souls.md	b5a2520	2026-07-13
+wiki/entities/items/artifact/pearl-of-souls-dm.md	folded into world/items/pearl-of-souls.md DM Only	b5a2520	2026-07-13
+wiki/entities/places/dungeons/calveno-sewers-grung-magazines.md	world/locations/calveno-sewers-grung-magazines.md	6b80112	2026-07-13
+wiki/entities/places/planes/elemental-plane-of-water.md	world/locations/elemental-plane-of-water.md	04b9ee8	2026-07-13
+wiki/rules/subsystems/carpenters-shop.md	world/rules/carpenters-shop.md	18eb204	2026-07-13
+wiki/rules/backgrounds/guard.md	world/rules/guard.md	4e4dcd1	2026-07-13
+wiki/sessions/session-02-recap.md	sessions/02-conflict-is-a-surety/ (transcript+ledger)	8c83215	2026-07-13
+wiki/situations/active/sunken-crown-blessing-crisis.md	absorbed → world/factions/waveservants.md Front	b9ae11d	2026-07-13
+wiki/dm/combat-analytics.md	mapped: encounter-design combat-calibration (recompute-fresh design)	cb3d2a9	2026-07-13
+wiki/hot.md	mapped: session-run-guide Hard Rule 5 (grep, never a state file)	510543d	2026-07-13
+wiki/entities/characters/crew/alys-kuiper.md	world/npcs/alys-kuiper.md	49d1e23	2026-07-13
+wiki/entities/vehicles/hcs-surety-dm-guide.md	folded into world/ships/hcs-surety.md DM Only	67b03e1	2026-07-13
+wiki/entities/vehicles/hcs-surety-layout.md	world/ships/hcs-surety-layout.md	3a78e41	2026-07-13
+wiki/entities/vehicles/hcs-surety-manifest.md	world/ships/hcs-surety-manifest.md	cc084d1	2026-07-13
+wiki/entities/vehicles/hcs-surety-owners-manual.md	world/ships/hcs-surety-owners-manual.md	c564112	2026-07-13
+wiki/rules/classes/ranger.md	world/rules/ranger.md	0a82bff	2026-07-14
+wiki/rules/core/siege-rules.md	world/rules/siege-rules.md	4ffdded	2026-07-14
+wiki/faq.md	internal-equivalent — no wiki page (see queue: ss5-root-faq.md)	965ce1b	2026-07-14
+notebooklm-export/2026-06-14/la-vasca.md	expand-in-place: world/locations/calveno-la-vasca.md	8b52b6a	2026-07-14
+entities/characters/pcs/catarina-davirelli.md	pcs/catarina-davirelli.md	3dc4ca1	2026-07-14
+entities/characters/pcs/crissdalynn-khinriss.md	pcs/crissdalynn-khinriss.md	46d8255	2026-07-14
+lore/peoples-of-the-shattered-sea.md	world/lore/peoples-of-the-shattered-sea.md	8d2d201	2026-07-14
+entities/characters/pcs/delmar-fisk.md	pcs/delmar-fisk.md	98fe114	2026-07-14
+wiki/entities/characters/npcs/ket.md	world/npcs/ket.md	3d76929	2026-07-14
+wiki/entities/items/sending-stone-nona.md	world/items/sending-stone-nona.md	1758e36	2026-07-14
+entities/factions/grung-clans.md	world/factions/grung-clans.md	40eb100	2026-07-14
+entities/places/settlements/warren.md	world/locations/warren.md	51e58a7	2026-07-14
+entities/characters/npcs/nona-black-jaw.md	world/npcs/nona-black-jaw.md	677cd6c	2026-07-14
+wiki/narrative-islands/warren-grung-sewers.md	no page by design (run-guide-scoped; qmd-discovery weave against calveno-sewers-grung-magazines.md logged)	42789cc	2026-07-14
+wiki/situations/resolved/nonas-favor.md	absorption -> world/npcs/nona-black-jaw.md (historical DM Only)	da2f769	2026-07-14
+situations/active/warren-situation.md	absorption -> world/locations/warren.md (DM Only expansion)	75e92a9	2026-07-14
+wiki/discrepancy-log.md	mapping documented (c: unmigrated, both entries) -> archive/2026-07/ss7-discrepancy-log.md	6a3d38e	2026-07-14
+wiki/log.md	refused — internal-equivalent-check (maps to INGESTED.tsv+MIGRATION-LEDGER.md, no wiki page)	a9164f3	2026-07-14
+notebooklm-export/2026-06-14/session-05-run-guide.md	refused — planned/unplayed run-guide, R4 precedent (0acfd23) holds; prep-side pending not exercised (no migration-mode owned prep path)	82e5311	2026-07-14
+wiki/work-queue.md	refused — internal-equivalent-check (maps to INGESTED.tsv+MIGRATION-LEDGER.md; unmapped residuals: bela-silt-paw, nimmik-vollask, 4 active situations)	ce6f37e	2026-07-14
+wiki/sessions/session-03-recap.md	sessions/03-getting-in-on-the-joke/ (transcript.md + state-changes.md, LEGACY-SOURCE gate)	7ad1e3b	2026-07-14
+entities/items/uncommon/oil-of-still-water.md	world/items/oil-of-still-water.md	1a5bcbe	2026-07-14
+session-06-export/session-06-run-guide.md	maps/refuses — staging content, no target page; candidate-canon extracted to queue	69116eb2bc646f9f91d1c073d7f8668879c9c646	2026-07-14
+lore/the-galewall-runners-drop.md	world/lore/the-galewall-runners-drop.md	784e8fc	2026-07-14
+session-06-export/solange-barret.md	world/npcs/solange-barret.md, pending	0a67a283fb91f2310eadecfa47868cda17f46a86	2026-07-14
+session-06-export/rupert-knighton.md	world/npcs/rupert-knighton.md (canon)	f2fc18a	2026-07-14
+session-06-export/bazzoth-the-steeped.md	world/npcs/bazzoth-the-steeped.md (pending)	5957b50	2026-07-14
+session-06-export/otar-the-foul.md	world/npcs/otar-the-foul.md (new, status: pending)	d8999c0	2026-07-14
+session-06-export/session-04.md	sessions/04-the-frog-the-owl-and-the-bomb/ (transcript.md + state-changes.md, LEGACY-SOURCE gate; byte-identical twin notebooklm-export/2026-06-14/session-04.md also covered)	a7cc227	2026-07-14
+session-06-export/calveno-sewers-grung-magazines.md	world/locations/calveno-sewers-grung-magazines.md (expand)	2a530824f784e773373ee0322ef8c44517a5d9f3	2026-07-14
+session-06-export/warren-grung-sewers.md	world/locations/calveno-sewers-grung-magazines.md (expand — 1 fact)	e484ffa35e963757a221de0d9d1140b7aef86dcb	2026-07-14
+entities/creatures/active/bazzoth-the-steeped.md	world/npcs/bazzoth-the-steeped.md (expanded)	f3ab557	2026-07-14
+entities/characters/minor/bela-silt-paw.md	world/npcs/bela-silt-paw.md (new, pending)	ae65d86	2026-07-14
+wiki/entities/creatures/active/grung-elite-warrior.md	world/creatures/grung-elite-warrior.md (new, canonical statblock; Room 3 excerpt flagged for de-dup)	9a4cf9d	2026-07-14
+entities/characters/npcs/anzolo.md	world/npcs/anzolo.md (new, canon)	2c0db8fea1d3c384292ed18dcfd233f44c2073c1	2026-07-14
+entities/creatures/active/ruma-delacroix.md	world/npcs/ruma-delacroix.md (new, canon; actual source at wiki/entities/characters/npcs/ruma-delacroix.md — ledger path never existed in shattered-sea git history)	4e7c996e3e9ec62e675745677d8829387c71fcff	2026-07-14
+wiki/entities/places/settlements/calveno/ponte-bassa.md	world/locations/ponte-bassa.md	98b45644145b9a9347be7ba5adb0b44e2441441c	2026-07-14
+entities/places/buildings/studio-orsini.md	world/locations/studio-orsini.md	0b6c256	2026-07-14
+entities/creatures/active/ozzeth-the-twiceborn.md	world/npcs/ozzeth-the-twiceborn.md	840d616e253bd59c40c4745c9b2a8584514aa1c4	2026-07-14
+entities/characters/npcs/enzo.md	world/npcs/enzo.md	6cbf93f	2026-07-14
+entities/creatures/active/vashu-the-weeping-veil.md	world/npcs/vashu-the-weeping-veil.md	f7cad16c6c8c73787e76205bc0a59c7c89dba887	2026-07-14
+situations/active/calveno-beffa-grung-raid.md	absorbed: world/factions/grung-clans.md + world/locations/calveno-sewers-grung-magazines.md	ff8e8f5	2026-07-14
+notebooklm-export/2026-06-14/session-04-day-1.md	sessions/04-the-frog-the-owl-and-the-bomb/transcript-day-1.md (5 new claim lines appended to state-changes.md)	b6e0643	2026-07-14
+wiki/entities/deities/umberlee.md	world/lore/umberlee.md	b5061711eb7a3ecfbd26203389f2a3f021906f47	2026-07-14
+wiki/entities/characters/npcs/ruk.md	world/npcs/ruk.md	7dd93e3	2026-07-14
+situations/active/surety-missing.md	homeless-pressure flag only (needs Crown/Hollowell faction pages, Port-Tidefall/Harwick/Kalowe/Central-Strait/Midchain location pages; ship-bound content deferred to hcs-surety.md canonize resume)	30c8099	2026-07-14
+entities/places/settlements/calveno/casa-lupo.md	world/locations/casa-lupo.md	ce7913633c4d8d2d01c3b5e5ced1246687dd293c	2026-07-14
+entities/characters/npcs/barnaby-rook.md	world/npcs/barnaby-rook.md	e9592d2	2026-07-14
+entities/places/settlements/calveno/le-paludi.md	world/locations/le-paludi.md (new)	95d9f9c	2026-07-14
+entities/characters/npcs/felix-aho.md	world/npcs/felix-aho.md	c0b9cea	2026-07-14
+entities/characters/npcs/master-kyzil.md	world/npcs/master-kyzil.md — W9 promotion, canon rung 2	94a5cec	2026-07-14
+notebooklm-export/2026-06-14/session-04-day-2.md	sessions/04-the-frog-the-owl-and-the-bomb/transcript-day-2.md (6 new claim lines appended to state-changes.md)	a91a48d	2026-07-14
+entities/items/whip-shark-barb.md	world/items/whip-shark-barb.md	62eb3e93c9317df1882db9cc6f6d07e53e9d4eef	2026-07-14
+situations/active/umberlees-message.md	world/lore/umberlee.md (expand)	2d16c2805112b61975403496378bcbd25b89b18f	2026-07-14
+entities/places/settlements/calveno/moretti-and-sons.md	world/locations/moretti-and-sons.md	46156b1	2026-07-14
+entities/items/letters-of-marque.md	world/items/letters-of-marque.md — canon rung 2	f6e99ad	2026-07-14
+entities/characters/minor/marta-orsini.md	world/npcs/marta-orsini.md	fd2e4f7	2026-07-14
+entities/characters/minor/vincenzo-black-jaw.md	world/npcs/vincenzo-black-jaw.md	42ca1e07f51cf71509064269abd567e72fee51f4	2026-07-14
+entities/characters/minor/giacomo-moretti.md	world/npcs/giacomo-moretti.md (new, canon)	e44a17ccc15b834ec111bf634c7b83bcceacc6d4	2026-07-14
+entities/characters/minor/oleandro-fuschi.md	world/npcs/oleandro-fuschi.md	b0989ae	2026-07-14
+entities/factions/five-blades.md	world/factions/five-blades.md (new)	8251368	2026-07-14
+situations/active/knighton-pursuit.md	world/npcs/rupert-knighton.md (absorbed, pending)	d4c9ca3	2026-07-14
+entities/factions/chain-council.md	world/factions/chain-council.md (canon)	4cf8c61	2026-07-14
+entities/characters/npcs/leviathan-entity.md	world/npcs/leviathan.md	3b7a611	2026-07-14
+entities/characters/minor/capn-gorgeous.md	world/npcs/capn-gorgeous.md	0b25ddbf373308b8968c4c7906e7bf3baded96f6	2026-07-14
+entities/characters/npcs/shepherd-grigori.md	world/npcs/shepherd-grigori.md	90387946964496988813cf8664c940d91b52f0a9	2026-07-14
+entities/characters/npcs/branca.md	world/npcs/branca.md	c2d8332148f5089141ca0672dd83ecaf1ed6e5e9	2026-07-14
+entities/places/islands/keth-naar.md	world/locations/keth-naar.md	8917436	2026-07-14
+entities/characters/minor/cobb.md	world/npcs/cobb.md	f2c53261abe4f920a87f6fa2499c0c9fbdf4cdc5	2026-07-14
+situations/active/who-commissioned-the-theft.md	world/factions/chain-council.md (expand, gap resolution)	0aa1427	2026-07-14
+entities/characters/npcs/beaumont-sel.md	world/npcs/beaumont-sel.md	3eb102f	2026-07-14
+notebooklm-export/2026-06-14/session-04-day-3.md	sessions/04-the-frog-the-owl-and-the-bomb/transcript-day-3.md (6 new claim lines appended to state-changes.md)	34a5b79	2026-07-14
+entities/factions/the-passage.md	world/factions/the-passage.md	9a075654bad3cc7c672fa56d53696fe6ae1c5333	2026-07-14
+entities/factions/tessarine-concordat.md	world/factions/tessarine-concordat.md	fbb1b746d5574f37f44d49761367c961bed8e9f7	2026-07-14
+entities/factions/dravosi-crown.md	world/factions/dravosi-crown.md	aa5518a	2026-07-14
+entities/characters/npcs/simone-tabarnack.md	world/npcs/simone-tabarnack.md	6068b54	2026-07-14
+situations/active/shepherd-grigori-situation.md	world/npcs/shepherd-grigori.md (absorption) + world/locations/calveno-la-vasca.md (location fact)	ef89dec4f02425d7d53f47b3b07030189b1cc776	2026-07-14
+notebooklm-export/2026-06-14/session-04-day-4.md	sessions/04-the-frog-the-owl-and-the-bomb/transcript-day-4.md + state-changes.md (3 new claims)	23c2de46cb50306f1c2d38e58880523e13418d00	2026-07-14
+situations/dormant/draves-bloodline-question.md	world/factions/dravosi-crown.md	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+notebooklm-export/2026-06-14/session-04-day-5.md	sessions/04-the-frog-the-owl-and-the-bomb/transcript-day-5.md + state-changes.md (3 new claims)	e2185e57c03cc5021c986552557628239daffc07	2026-07-14
+entities/characters/minor/essa-two-tooth.md	world/npcs/essa-two-tooth.md (pending) + warren relink	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+entities/characters/minor/pell.md	world/npcs/pell.md (canon)	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+wiki/entities/factions/vaka.md	world/factions/vaka.md (pending)	e0b57bcc645c3dda655346d9a8ea0c1175824d27	2026-07-14
+entities/characters/minor/batta-zusto.md	world/npcs/batta-zusto.md	0f61492	2026-07-14
+situations/active/nona-midchain-commission.md	world/locations/warren.md (pending, expand) + pcs/perrin-black-jaw.md (canon, expand) — nona-black-jaw deferred, no page written	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+entities/factions/black-jaw-run.md	world/factions/black-jaw-run.md (canon, new)	1a3c50e	2026-07-14
+situations/active/the-canister.md	world/npcs/simone-tabarnack.md + world/locations/calveno-sewers-grung-magazines.md (absorbed)	a4c359f5fb51e6277a0f28a93d3017571eb99d296dbc6243d9b677e392954db3	2026-07-14
+docs/campaign/legacy-skills/shattered-sea/wiki/entities/items/uncommon/puntura.md	world/items/puntura.md	200a61033566873d355488bb10fb8b4ed5ddab60	2026-07-14
+lore/il-gioco-delle-beffe.md	world/lore/il-gioco-delle-beffe.md (+ narrative-islands/il-gioco-delle-beffe-dm.md folded)	ccbfd9fb2d3163ae10e74b3901930a1a613eb2ef	2026-07-14
+situations/active/kalowe-drifting-hulk.md	world/quests/kalowe-drifting-hulk.md :: pending, quest_status: rumored	cf4348774593ab3ed2e2615846b83a7e0d4a0c6ae60206937e6d5349c7c8df17	2026-07-14
+situations/active/kalowe-bad-receipt-cache.md	world/quests/kalowe-bad-receipt-cache.md (new quest, pending/rumored)	38fbe20	2026-07-14
+situations/active/kalowe-sawek-bounty.md	world/quests/kalowe-sawek-bounty.md (new quest, pending/rumored)	0a394cf	2026-07-14
+situations/active/kalowe-captains-map.md	world/quests/kalowe-captains-map.md (new quest, pending/rumored)	e38eaff	2026-07-14
+situations/active/kalowe-merrows-prize.md	world/quests/kalowe-merrows-prize.md (new quest page, pending/rumored)	1bfb333	2026-07-14
+situations/active/kalowe-takowan.md	world/quests/kalowe-takowan.md (new quest page, pending/rumored)	8073b45	2026-07-14
+entities/characters/minor/reweti-kahurangi.md	world/npcs/reweti-kahurangi.md (pending)	718c0c9c1510e96daf5965160cfaac50482bc1ec984e8a329fd9c625ece17990	2026-07-14
+entities/places/settlements/tidefall.md	world/locations/tidefall.md (canon r2) + reverse-links in kalowe-captains-map.md, kalowe-merrows-prize.md	5cfd7cb	2026-07-14
+entities/creatures/planned/hunter-shark.md	world/creatures/hunter-shark.md pending	f208db1	2026-07-14
+entities/characters/minor/sera-maddock.md	world/npcs/sera-maddock.md (pending)	0e051e541c15	2026-07-14
+entities/creatures/active/sawek.md	world/creatures/sawek.md (pending — CR5 statblock, reverse-linked kalowe-sawek-bounty + grimaldis-dispensary)	2516ac9	2026-07-14
+entities/places/settlements/kalowe/taufa-fifita-and-sons.md	world/locations/taufa-fifita-and-sons.md (pending)	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+entities/places/buildings/the-flat-water.md	world/locations/the-flat-water.md (pending)	d9519522	2026-07-14
+entities/places/buildings/kalowe-waveservant-shrine.md	world/locations/kalowe-waveservant-shrine.md (pending)	167202e	2026-07-14
+entities/characters/minor/davu-kamu.md	world/npcs/davu-kamu.md (pending)	c09d9d2	2026-07-14
+entities/places/settlements/kalowe.md	world/locations/kalowe.md (canon r2)	42b3dc57a8fb775db434f92179aca2daf84a5fe9	2026-07-14
+entities/places/settlements/port-tidefall.md	world/locations/tidefall.md (EXPAND) + 6 relinks resolved	1a4d20f	2026-07-14
+entities/places/buildings/inspection-pier.md	world/locations/inspection-pier.md (pending, filled)	98f796e	2026-07-14
+entities/places/buildings/fort-crestwall.md	world/locations/fort-crestwall.md (pending)	d6860618cb2b9f1f6fff488b30d71327ac6370b2	2026-07-14
+entities/places/settlements/port-tidefall/port-tidefall-waveservant-shrine.md	world/locations/port-tidefall-waveservant-shrine.md (pending)	3c68e24	2026-07-14
+entities/places/buildings/hook-and-ledger.md	world/locations/hook-and-ledger.md (pending, status: pending)	376b6552	2026-07-14
+entities/places/buildings/anchor-and-line.md	world/locations/anchor-and-line.md (pending)	9d722252d0bacdc5f72efa555a59b59f247fe55a	2026-07-14
+entities/places/buildings/the-governors-seat.md	world/locations/the-governors-seat.md (pending, +tidefall.md reverse-link)	f9393b0	2026-07-14
+entities/places/buildings/harbourmasters-office.md	world/locations/harbourmasters-office.md (pending)	67e24088ad3f06a5e6fefa456a1d352414b29f39	2026-07-14
+entities/places/buildings/tidefall-chandlery.md	world/locations/tidefall-chandlery.md (pending)	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+entities/places/regions/central-strait.md	world/locations/central-strait.md (canon r2)	f030f8e	2026-07-14
+entities/places/islands/calders-tooth.md	world/locations/calders-tooth.md (island page, pending)	bde76d60ffaf180b144c8a38bfe81eb8e5538c3f	2026-07-14
+entities/places/buildings/tessarine-trade-house.md	world/locations/tessarine-trade-house.md (pending)	ccbaac6	2026-07-14
+entities/places/buildings/fifitas-slip.md	world/locations/fifitas-slip.md (pending, boatyard stub)	d21fea1f2e9b59253b8f513ab47565b3ae1f9cf6	2026-07-14
+entities/places/buildings/south-harbour-impound.md	world/locations/south-harbour-impound.md → pending	4dfe85c	2026-07-14
+entities/places/buildings/the-mud-pits.md	world/locations/the-mud-pits.md — ingested pending	506dfd3	2026-07-14
+entities/places/buildings/wibowos-provisions.md	world/locations/wibowos-provisions.md	f925a47	2026-07-14
+entities/places/buildings/ormssons-fittings.md	world/locations/ormssons-fittings.md (pending)	d367d5458580c6ded974c423e03541e3f2800819eb7f4fe79171bdd39f6dc08d	2026-07-14
+entities/places/buildings/fare-ia.md	world/locations/fare-ia.md (new, pending) + relink pass: tidefall.md, calders-tooth.md, felix-aho.md	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+entities/places/buildings/shelf-instrument-dealer.md	world/locations/shelf-instrument-dealer.md (pending)	2c99e40	2026-07-14
+entities/places/settlements/south-harbour.md	world/locations/south-harbour.md (pending)	f85253e	2026-07-14
+entities/places/settlements/calders-tooth/overland-track.md	world/locations/overland-track.md (pending)	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+entities/places/settlements/calveno/waveservant-shrine.md	world/locations/waveservant-shrine.md (canon r2)	c75e3eed4cf38d7d5262e719f2be6371c8b94682	2026-07-14
+entities/places/islands/orak.md	world/locations/orak.md — landed, relinked sera-maddock.md + kalowe-captains-map.md + grimaldis-dispensary.md	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+entities/places/settlements/calveno/cabinet-of-morsani.md	world/locations/cabinet-of-morsani.md (pending)	ebfa3e1	2026-07-14
+entities/places/settlements/calveno/acqua-nera.md	world/locations/acqua-nera.md (pending)	1a5ca7f1ea1cc41f73875152efa3c676469146f9	2026-07-14
+entities/places/settlements/calveno/la-cenere.md	world/locations/la-cenere.md (pending — new page, no session hits)	629d7c4b742484acab30e86e3259e577eacb0dc1	2026-07-14
+entities/places/islands/veth.md	world/locations/veth.md — landed, reverse-linked grung-clans.md + kalowe-bad-receipt-cache.md + kalowe-sawek-bounty.md (canon r2, thin)	cdf28db20705ec57cc58a82fb9a892f8153a2ed1	2026-07-14
+entities/places/settlements/calveno/carpenters-slip.md	world/locations/carpenters-slip.md	d3b1b9bbce70af828dfd60a25fbeee9db88a3c74	2026-07-14
+entities/places/settlements/calveno/kats-curios.md	world/locations/kats-curios.md (pending) — landed, reverse-linked calveno/catarina-davirelli/puntura/whip-shark-barb/ship-upgrades/cabinet-of-morsani	cf61d58e6ac1c08999820338d46255ba84fe14c9	2026-07-14
+entities/places/regions/the-drowned-maw.md	world/locations/the-drowned-maw.md (canon r2, new region page + 13-file reverse-link sweep)	8eab1859	2026-07-14
+entities/places/buildings/cats-curios.md	world/locations/kats-curios.md (pending) — EXPAND, folded brass-cat + animated-rug-of-smothering source links, services already covered	45a24954b0b6dfa063a817a43f18d1195e029f8d	2026-07-14
+entities/places/regions/midchain.md	world/locations/midchain.md — canon r2, HUB RISK reverse-link pass (26 files)	85f6b780d813e7e387394d37bb3e042bf6da4912	2026-07-14
+entities/characters/crew/drav-holke.md	world/npcs/drav-holke.md (pending)	b4b9a4007d9416fcb51d014493de5dd6842f4f32	2026-07-14
+entities/characters/crew/lenne-vor.md	world/npcs/lenne-vor.md (pending)	00710fc	2026-07-14
+entities/characters/crew/fen.md	world/npcs/fen.md — landed	c0df99a	2026-07-14
+entities/characters/crew/noor.md	world/npcs/noor.md (canon r2)	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+entities/characters/crew/wessa.md	world/npcs/wessa.md (pending)	7ffa1d52611d0afc23a402de4fa2d276888e68c3	2026-07-14
+entities/characters/crew/sem-holst.md	world/npcs/sem-holst.md (canon r2)	28eee6c0f79c9056b63d7a7cf23bcc1fd8a0a7d7	2026-07-14
+entities/factions/beaumonts-crew.md	world/factions/beaumonts-crew.md (canon r2)	c57fffa	2026-07-14
+entities/characters/crew/geoffrey-draves.md	world/npcs/geoffrey-draves.md (canon r2)	c4cefb1	2026-07-14
+entities/characters/crew/thunk.md	world/npcs/thunk.md (canon r2)	7d647f8	2026-07-14
+entities/characters/crew/old-faas.md	world/npcs/old-faas.md — canon r2 landed + 4-page reverse-link sweep (hcs-surety, shepherd-grigori, thunk, sem-holst)	06247806eeba8b6ee359748d2a43368a64cf223eb130f15fe25bc7d9e3999f18	2026-07-14
+entities/characters/npcs/dario-vanni.md	world/npcs/dario-vanni.md (pending)	e4b21f7	2026-07-14
+entities/places/settlements/warren/tangle-chambers.md	world/locations/tangle-chambers.md (pending)	ddaed4af	2026-07-14
+entities/characters/minor/savia-brentino.md	world/npcs/savia-brentino.md (pending — unconfirmed prep material, R18 relink closed)	771e2f8	2026-07-14
+entities/characters/minor/prospero-morsani.md	world/npcs/prospero-morsani.md (pending)	f9174856eaed557de6edbf2bb8e11218de457325	2026-07-14
+entities/places/settlements/warren/marrows.md	world/locations/marrows.md (pending)	4d312841054ea5acb257fcc75a56672e55b30f8c	2026-07-14
+entities/places/settlements/warren/the-splint.md	world/locations/the-splint.md (pending)	a3475ea	2026-07-14
+entities/places/settlements/warren/low-lamp.md	world/locations/low-lamp.md — pending, no session hits	e92297c4923afc5d28e5adb2a62607542fd154a0	2026-07-14
+entities/characters/minor/lavinia-sordi.md	world/npcs/lavinia-sordi.md (pending)	6acde42	2026-07-14
+narrative-islands/warren-nonas-table.md	world/quests/warren-nonas-table.md (new quest page, pending)	6e42a7b	2026-07-14
+narrative-islands/warren-marrows-crate.md	world/quests/warren-marrows-crate.md (new — pending, no session hits)	ead9583c725c92e224ffc0c8aa3e73aa06e222aa	2026-07-14
+entities/characters/npcs/rael-corven.md	world/npcs/rael-corven.md (pending)	9791bfc06fe8889b22453428501573407a5baaf0	2026-07-14
+entities/characters/npcs/verity-hollowell.md	world/npcs/verity-hollowell.md (pending)	d249ad1	2026-07-14
+entities/characters/npcs/maren.md	world/npcs/maren.md (pending)	46c2bc6c327b753baa44d769f19309029788fc4cc6ecdcee2780283de212d7a4	2026-07-14
+entities/characters/npcs/commander-gideon-ault.md	world/npcs/commander-gideon-ault.md (pending)	31323f0be12d57c52d3be89c606c37b6ebd57173dc1deeac716cbd7d0403c899	2026-07-14
+entities/characters/npcs/elder-anton.md	world/npcs/elder-anton.md (pending)	fc8249f796319ef3c69b49fc046bb1fdf32fd5f8	2026-07-14
+entities/characters/npcs/admiral-fisk.md	world/npcs/admiral-fisk.md (pending)	997daa7	2026-07-14
+entities/characters/npcs/serafina-windfall-fisk.md	world/npcs/serafina-windfall-fisk.md (pending)	cee102a	2026-07-14
+narrative-islands/warren-ferrin-locke.md	world/quests/warren-ferrin-locke.md (pending)	b1764f5d76ebf10774dafdb7290bb5a55d98dfe2	2026-07-14
+entities/characters/npcs/noa-fifita.md	world/npcs/noa-fifita.md (pending, reverse-linked kalowe-takowan + fifitas-slip + kalowe)	d7447ff	2026-07-14
+narrative-islands/warren-bela-silt-paw.md	world/quests/warren-bela-silt-paw.md (new quest, pending) + reverse-link warren.md, bela-silt-paw.md	7a397a24	2026-07-14
+entities/places/settlements/calveno/studio-orsini.md	world/locations/studio-orsini.md (already-covered, no new content — duplicate of buildings/studio-orsini.md path, see 0b6c256)	0b6c256	2026-07-14
+entities/characters/minor/giacinto.md	world/npcs/giacinto.md (new)	1a64297	2026-07-14
+entities/places/settlements/al-fondale.md	world/locations/al-fondale.md (new, canon)	7f1a10e8250ae69bf0796b998f5b4d425fae57c5	2026-07-14
+entities/characters/npcs/bice-riva.md	world/npcs/bice-riva.md (new)	e17235f	2026-07-14
+entities/characters/npcs/ettore-lupo.md	world/npcs/ettore-lupo.md (new, pending)	e815410	2026-07-14
+entities/characters/npcs/cosimo-verantio.md	world/npcs/cosimo-verantio.md (new)	6066728d4c4249931f2266ce8bc0caeb08ac3213	2026-07-14
+entities/places/settlements/calveno/calveno-locations.md	world/locations/calveno.md (expanded)	425d744	2026-07-14
+entities/characters/npcs/aldo-riva.md	world/npcs/aldo-riva.md (new)	f1df92166a4450608211495c1e583353156f5060c7a18b1fcf4b47ded2764477	2026-07-14
+entities/places/settlements/calveno/calveno-districts.md	world/locations/calveno.md (DM Only expand)	3aa84e8	2026-07-14
+entities/places/settlements/calveno/calveno-improv.md	world/locations/calveno.md (EXPAND DM Only)	04d8e0c	2026-07-14
+entities/vehicles/uncertainty.md	world/ships/hcs-surety.md (EXPAND) + world/npcs/sem-holst.md + world/npcs/geoffrey-draves.md + world/npcs/alys-kuiper.md (EXPAND)	549ae03	2026-07-14
+wiki/sessions/session-05-run-guide.md	refused — planned/unplayed, same disposition as notebooklm-export twin (R4 precedent 0acfd23); revised encounter balance only, no play evidence	(queue-file-only, no wiki write)	2026-07-14
+wiki/sessions/session-05-run-guide.md	UPDATE (R25): still never canon, but full content landed as prep/backlog/session-05-run-guide.md (new-source mode, status: pending) per user directive to ingest everything, not just triage	da6affa	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/core/01-session-05-run-guide.md	stale pre-recalibration draft of the run-guide, superseded by wiki copy just landed — no unique facts	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/core/02-calveno-sewers-grung-magazines.md	stale draft, dungeon page already fully landed — no unique facts	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/core/03-calveno-beffa-grung-raid.md	wikilink-prefix cosmetics only, already absorbed (ff8e8f5) — no unique facts	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/core/source-manifest.md	packaging metadata, not wiki content	(no write)	2026-07-14
+.raw/sessions/session-05/printshop-packet/PRINTSHOP-MANIFEST.md	packaging metadata, not wiki content	(no write)	2026-07-14
+.raw/sessions/session-05/source-manifest.md	packaging metadata, not wiki content; "no audio or transcripts recorded yet" cited in R24	(no write)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/encounters-and-statblocks/anzolo.md	byte-identical to landed wiki/world twin	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/encounters-and-statblocks/enzo.md	byte-identical to landed wiki/world twin	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/encounters-and-statblocks/felix-aho.md	byte-identical to landed wiki/world twin	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/encounters-and-statblocks/master-kyzil.md	byte-identical to landed wiki/world twin	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/encounters-and-statblocks/nona-black-jaw.md	byte-identical to landed wiki/world twin	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/encounters-and-statblocks/ruk.md	byte-identical to landed wiki/world twin	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/encounters-and-statblocks/grung-elite-warrior.md	wikilink-prefix cosmetics only, already landed at world/creatures/grung-elite-warrior.md	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/encounters-and-statblocks/grung-npc.md	wikilink-prefix cosmetics only vs wiki; base creature never landed as its own page — flagged relink on prep/backlog/session-05-run-guide.md	(no write, flagged)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/encounters-and-statblocks/otar-the-foul.md	stale pre-recalibration draft (CR 8); world/npcs/otar-the-foul.md already reflects the CR 12 recalibration from the newer wiki copy — verified directly, no gap	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/encounters-and-statblocks/ruma-delacroix.md	stale pre-ally-turn draft; world/npcs/ruma-delacroix.md already carries the full session-05 ally-turn content — verified directly, no gap	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/encounters-and-statblocks/solange-barret.md	wikilink-prefix cosmetics only, already landed at world/npcs/solange-barret.md	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/supporting-context/calveno-jean-claude-beats.md	byte-identical to landed wiki twin	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/supporting-context/calveno-palio-dm.md	byte-identical to landed wiki twin	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/supporting-context/calveno-raid-signs.md	byte-identical to landed wiki twin	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/supporting-context/calveno-sandbox-run-guide.md	byte-identical to landed wiki twin	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/supporting-context/calveno-situation.md	byte-identical to landed wiki twin	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/supporting-context/calveno-street-encounters.md	byte-identical to landed wiki twin	(no write, verified)	2026-07-14
+.raw/sessions/session-05/printshop-packet/docs/supporting-context/warren-grung-sewers.md	wikilink-prefix cosmetics only, already absorbed into world/locations/warren.md + dungeon page	(no write, verified)	2026-07-14
+wiki/sessions/session-04.md	byte-identical to session-06-export/session-04.md, already landed via R9 (ss9-session-04.md) as sessions/04-the-frog-the-owl-and-the-bomb/transcript.md	(no write, verified)	2026-07-14
+wiki/sessions/session-04-day-1.md	byte-identical to notebooklm-export/2026-06-14/session-04-day-1.md, already landed via R11 (ss11-s04-day-1) as sessions/04-the-frog-the-owl-and-the-bomb/transcript-day-1.md	(no write, verified)	2026-07-14
+wiki/sessions/session-04-day-2.md	byte-identical to notebooklm-export/2026-06-14/session-04-day-2.md, already landed via R11 (ss11-s04-day-2) as sessions/04-the-frog-the-owl-and-the-bomb/transcript-day-2.md	(no write, verified)	2026-07-14
+wiki/sessions/session-04-day-3.md	byte-identical to notebooklm-export/2026-06-14/session-04-day-3.md, already landed via R11 (ss11-s04-day-3) as sessions/04-the-frog-the-owl-and-the-bomb/transcript-day-3.md	(no write, verified)	2026-07-14
+wiki/sessions/session-04-day-4.md	byte-identical to notebooklm-export/2026-06-14/session-04-day-4.md, already landed via R11 (ss11-s04-day-4) as sessions/04-the-frog-the-owl-and-the-bomb/transcript-day-4.md + state-changes.md	(no write, verified)	2026-07-14
+wiki/sessions/session-04-day-5.md	byte-identical to notebooklm-export/2026-06-14/session-04-day-5.md, already landed via R11 (ss11-s04-day-5) as sessions/04-the-frog-the-owl-and-the-bomb/transcript-day-5.md + state-changes.md	(no write, verified)	2026-07-14
+wiki/sessions/session-04-highlight-1-grung-capture.md	handoff to visual-aids, no write	2ce7efe	2026-07-14
+wiki/sessions/session-04-highlight-2-dagger-cigarette.md	handoff to visual-aids, no write	1033109	2026-07-14
+wiki/sessions/session-04-highlights.md	handoff to visual-aids, no write	2cd33fc	2026-07-14
+wiki/sessions/session-04-highlight-4-sending-black-powder.md	handoff to visual-aids, no write	928f9791e4245d2aebbb1458b3b667425830bd75	2026-07-14
+wiki/sessions/session-04-highlight-3-bird-rat-human.md	handoff to visual-aids, no write	ede9dc3	2026-07-14
+wiki/sessions/session-04-highlight-5-drunk-bard-schwa.md	handoff to visual-aids, no write	f8b6cc469665dab6fe734d80e80c7d6868dfae36	2026-07-14
+wiki/sessions/session-04-highlight-6-roof-perverts.md	handoff to visual-aids, no write	fe8a381	2026-07-14
+wiki/sessions/session-04-highlight-7-kingfisher-tree-frogs.md	handoff to visual-aids, no write	f8b6cc469665dab6fe734d80e80c7d6868dfae36	2026-07-14
+wiki/sessions/session-04-run-guide.md	prep/backlog/session-04-run-guide.md (new-source, status: pending)	8e5215af9ca63158582efaae0a12aea5ce5b44bf	2026-07-14
+wiki/sessions/session-03-scene-05-calveno-approach.md	refused — redundant, wholly covered by session-03-run-guide.md	cbe0f90	2026-07-14
+wiki/sessions/session-03-scene-07-calveno-day-two.md	refused — redundant, wholly covered by session-03-run-guide.md	3ddb61f	2026-07-14
+wiki/sessions/session-03-scene-03-aftermath.md	prep/backlog/session-03-scene-03-aftermath.md (status: pending, map-don't-migrate)	6c0ece7	2026-07-14
+wiki/sessions/session-03-scene-02-the-shark.md	prep/backlog/session-03-scene-02-the-shark.md (pending, new-source-mode)	9506a52973b4e4b71b002b92a72994c94dca5220	2026-07-14
+wiki/sessions/session-03-scene-04-five-days.md	prep/backlog/session-03-scene-04-five-days.md (new-source-mode prep, pending)	367ba64	2026-07-14
+wiki/sessions/session-03-scene-01-auralis.md	prep/backlog/session-03-scene-01-auralis.md (new-source, status: pending)	083d33b	2026-07-14
+wiki/sessions/session-03-scene-06-calveno-day-one.md	prep/backlog/session-03-scene-06-calveno-day-one.md (new-source, status: pending)	6665683a700d3aae11bfd5e0b7c32c8ef400445b	2026-07-14
+wiki/sessions/session-03-run-guide.md	prep/backlog/session-03-run-guide.md (new-source, status: pending)	ebdcb1475f363365cc800316d0a6db0a6664cb58	2026-07-14
+wiki/sessions/session-03.md	sessions/03-getting-in-on-the-joke/transcript-dm-notes.md (LEGACY-SOURCE, corroboration-only, +10 state-changes.md lines)	3b082adab9b3358abb3c2c03ead751d2f1aaceb4	2026-07-14
+wiki/sessions/session-02-scene-01-rook-final.md	prep/backlog/session-02-scene-01-rook-final.md (new-source, status: pending)	631b8b6	2026-07-14
+wiki/sessions/session-02-run-guide.md	prep/backlog/session-02-run-guide.md	a394138	2026-07-14
+wiki/sessions/session-02-scene-05-central-strait.md	refused — map, don't migrate (unplayed reusable travel-event menu, see archive/2026-07/session-02-scene-05-central-strait.md)	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+wiki/sessions/session-02.md	sessions/02-conflict-is-a-surety/transcript-dm-notes.md (corroboration only)	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+wiki/sessions/session-02-scene-04-ship-exploration.md	prep/backlog/session-02-scene-04-ship-exploration.md (new-source-mode prep, pending)	cd55d71	2026-07-14
+wiki/sessions/session-02-scene-03-grigori.md	prep/backlog/session-02-scene-03-grigori.md (new-source-mode prep, status: pending)	adb9deae0c01d174cc999e9863c346054de869b8	2026-07-14
+wiki/entities/characters/npcs/auralis.md	world/npcs/auralis.md, canon; resolved 3 relink flags (pcs/perrin-black-jaw.md, world/npcs/leviathan.md x2)	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+wiki/sessions/session-01-scene-07-the-hold.md	prep/backlog/session-01-scene-07-the-hold.md (new-source-mode, status: pending)	f26e9cda9733c01ce7d2ef404f1890249cb32b13	2026-07-14
+wiki/sessions/session-01-scene-04-stripes.md	prep/backlog/session-01-scene-04-stripes.md (new-source-mode prep, pending)	bb055c7	2026-07-14
+wiki/sessions/session-01-scene-02-crissdalynn.md	prep/backlog/session-01-scene-02-crissdalynn.md (new-source prep, status: pending)	af77715	2026-07-14
+wiki/sessions/session-01-scene-03-delmar.md	prep/backlog/session-01-scene-03-delmar.md (new-source, status: pending)	7d0cf49	2026-07-14
+wiki/sessions/session-01-scene-05-perrin.md	prep/backlog/session-01-scene-05-perrin.md (new-source-mode prep, pending)	1533085f2e2c7a8403f3bc2b9cbcf4ae780e329f	2026-07-14
+wiki/sessions/session-01-scene-06-jean-claude.md	prep/backlog/session-01-scene-06-jean-claude.md (new-source, status: pending)	771d4198bc47d8e0152018f406059e4ab9b1c36e	2026-07-14
+wiki/sessions/session-01.md	sessions/01-boarding-of-the-saltwright/transcript-dm-notes.md (zero net-new claims)	da11dc9	2026-07-14
+wiki/sessions/session-01-scene-01-world.md	prep/backlog/session-01-scene-01-world.md	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+wiki/sessions/session-01-scene-08-encounter.md	prep/backlog/session-01-scene-08-encounter.md (new-source, status: pending)	adb03cd	2026-07-14
+dm/daily-log.md	refused — internal-equivalent-check (INGESTED.tsv+MIGRATION-LEDGER.md+git history)	9a738a4	2026-07-14
+dm/review-queue.md	skipped: internal-equivalent-check (full_lint.py)	5581217518ab06c964183e0cdc25e9ee59aeada1	2026-07-14
+entities/deities/aerdrie-faenya.md	world/lore/aerdrie-faenya.md	fedd395	2026-07-14
+entities/deities/valkur.md	world/lore/valkur.md pending	0bc9914245fb36306bfc105a526faaf550d7f384	2026-07-14
+entities/deities/remnis.md	world/lore/remnis.md, pending	fedd395646ca880ca0055e5f9d07d483c9f1b7f3	2026-07-14
+dm/jean-claude-primer.md	pcs/jean-claude-tabarnack.md DM Only (fold)	c16a1c74b58abd49ee264c7c4d847409911c6e7b	2026-07-14
+wiki/dm/player-interests.md	refusal (cross-PC engagement tracking; pc-tactical-note x4, no single hub)	3d527dcb0ae3ee3dffdbece31fdd42c6d0b34adc	2026-07-14
+entities/factions/khlysty.md	world/factions/khlysty.md — pending	682a5940bad6be5217caa397788e90554f02c137	2026-07-14
+entities/factions/tarahs.md	world/factions/tarahs.md, restructure + nona-black-jaw.md relink resolved	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+entities/factions/fisks-fleet.md	world/factions/fisks-fleet.md, restructure	af824710b3b7cb899616f72fb8c50c2c5836ed70	2026-07-14
+narrative-islands/calveno-sandbox-run-guide.md	refused — byte-identical duplicate of ss4-raw-sandbox-run-guide precedent	cf1b1e5223a6da7cee3bc2d61c8d080f07451e55bcfe8aa9113484c022c9f09a	2026-07-14
+narrative-islands/il-gioco-delle-beffe-dm.md	skipped — duplicate, already folded into world/lore/il-gioco-delle-beffe.md (INGESTED.tsv:135)	3d4fcf7	2026-07-14
+narrative-islands/calveno-raid-signs.md	no page by design (run-guide-scoped; Day1-3 raid-clock beats already absorbed via session-04 into grung-clans.md/vethka.md; remainder uncorroborated)	8651233	2026-07-14
+narrative-islands/calveno-street-encounters.md	refused — map, don't migrate (unplayed reusable street-encounter menu, see archive/2026-07/calveno-street-encounters.md)	42e377b	2026-07-14
+narrative-islands/shepherd-grigori-island.md	refused — wholly redundant with shepherd-grigori.md/khlysty.md/alys-kuiper.md/session-02-scene-03-grigori.md	49a9214143359606a41d93ff25bd1cbe99d905bd49df05f088e6a69adfd7ca23	2026-07-14
+narrative-islands/red-lady-salvage-money.md	map/refuse — no wiki page	225d660	2026-07-14
+narrative-islands/calveno-jean-claude-beats.md	world/npcs/giacinto.md (fold, expand); pcs/jean-claude-tabarnack.md Arrival Observation beat REFUSED (PC-page boundary)	62c6335	2026-07-14
+narrative-islands/mud-pits.md	world/locations/the-mud-pits.md (DM Only expand)	140be63	2026-07-14
+entities/factions/fisks-fleet-dm.md	world/factions/fisks-fleet.md (fold, DM Only expand)	ced30756cf7c30984e38f69c9d6be21c52ae1eff	2026-07-14
+entities/factions/the-glass-debt.md	world/factions/the-glass-debt.md	ff446210e4c604365e806189c7bee4a483518ba0	2026-07-14
+entities/factions/the-velvet-noose.md	world/factions/the-velvet-noose.md — canon, ship-as-faction restructure	9eccd5f18eb9bb34195127bd12eda94c9bd4a511	2026-07-14
+lore/shattered-sea-pantheon.md	world/lore/shattered-sea-pantheon.md	5bf49e284b72fbad280dea46acbead25ff2fabbd	2026-07-14
+lore/antheri.md	world/lore/antheri.md	e78b117	2026-07-14
+lore/the-grandfather-hole.md	world/lore/the-grandfather-hole.md	4c942d289e484e80b406814f1244a512f28f70cc3bf1d5a7db1f893d75dde107	2026-07-14
+lore/il-palio-delle-voci.md	world/lore/il-palio-delle-voci.md, restructure + companion fold	aeee7235bf3f11bdbb4a8921d316666d8b17bd5e	2026-07-14
+lore/species/sea-elf.md	world/lore/sea-elf.md (pending)	fb511d1	2026-07-14
+lore/species/minotaur.md	world/lore/minotaur.md, canon	aa97d7e	2026-07-14
+lore/campaign-timeline.md	skipped — duplicate, absorbed across 15+ pages	a00a168	2026-07-14
+lore/species/lizardfolk.md	world/lore/lizardfolk.md (new, canon) + world/factions/fisks-fleet.md (relink resolved)	0fed62d	2026-07-14
+lore/species/tabaxi.md	world/lore/tabaxi.md, pending	bc2d4854f09d352592b95331fbbc98f0848441be	2026-07-14
+lore/species/rattkin.md	world/lore/rattkin.md, canon	37c2481	2026-07-14
+lore/species/aarakocra.md	world/lore/aarakocra.md (new, canon rung 2) + pcs/crissdalynn-khinriss.md (relink)	a326f18	2026-07-14
+situations/active/calveno-palio-dm.md	skipped — duplicate, already absorbed into world/lore/il-palio-delle-voci.md (companion-fold cited in its own Sources section)	a608a75	2026-07-14
+situations/active/cape-solitude-mystery.md	world/locations/calders-tooth.md#DM Only (absorbed)	b790cdb	2026-07-14
+situations/active/what-sunk-the-vestra.md	world/npcs/leviathan.md (fold)	a7c150a	2026-07-14
+situations/active/crissdalynns-pilgrimage.md	UPDATE: PC-page boundary lifted (user directive 2026-07-14, "pc content should still be ingested") — folded missing-Sentinels thread + weather warning + 6-day fissure unlock into pcs/crissdalynn-khinriss.md Arc Notes	(orchestrator, pending commit)	2026-07-14
+situations/active/nona-and-anzolo.md	world/npcs/nona-black-jaw.md (DM Only expand)	d8006ae	2026-07-14
+situations/active/governors-seat.md	world/locations/the-governors-seat.md DM Only	716b1899	2026-07-14
+situations/active/calveno-situation.md	world/locations/calveno.md (EXPAND, one fact) — rest refused as redundant	a73868c	2026-07-14
+situations/active/maw-pearl-crisis.md	refused — wholly redundant with pearl-of-souls.md/fisks-fleet.md/auralis.md/leviathan.md/umberlee.md/branca.md/rael-corven.md/maren.md/elemental-plane-of-water.md	2e4b9b8	2026-07-14
+situations/active/abyss-vision.md	world/npcs/auralis.md (fold, DM Only Current state)	9151d1d	2026-07-14
+situations/active/aruhe-dm-notes.md	world/locations/aruhe.md (new, pending) + relink resolved on warren.md, warren-nonas-table.md, perrin-black-jaw.md	e45930a	2026-07-14
+situations/active/fort-crestwall-sealed-orders.md	world/locations/fort-crestwall.md	84d2c67	2026-07-14
+situations/resolved/the-rook-resolution.md	refused — wholly redundant with world/npcs/barnaby-rook.md § Session 02 + prep/backlog/session-02-scene-01-rook-final.md	1551d000cba3fc150742afe6978649c8476d7336	2026-07-14
+situations/dormant/tail-staging-island.md	REFUSED — homeless, no owning page (archive/2026-07/tail-staging-island.md)	801c13b	2026-07-14
+situations/dormant/concordat-magus-dragon.md	world/factions/tessarine-concordat.md (expand)	f83199a	2026-07-14
+situations/resolved/hull-impacts.md	refused — wholly redundant with hcs-surety.md/crissdalynn-khinriss.md/jean-claude-tabarnack.md/whip-shark-barb.md	9e22ccfd342b1cccaf4285cc86eed46030fece5e	2026-07-14
+situations/dormant/aldric-drave-designed-the-crown.md	world/factions/dravosi-crown.md + world/locations/fort-crestwall.md (expand)	0cd93bbf	2026-07-14
+situations/active/jean-claudes-desertion.md	pcs/jean-claude-tabarnack.md (Arc Notes expand)	f32eae4	2026-07-14
+system/doctrine.md	refused — pure redirect stub, no campaign facts	8016231	2026-07-14
+system/delmar-primer.md	pcs/delmar-fisk.md (Arc Notes DM Only expand)	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+system/crissdalynn-primer.md	pcs/crissdalynn-khinriss.md (Arc Notes fold)	6abbb78d87727d8516d852cab83de2f1ac98eccd	2026-07-14
+wiki/system/art-style.md	GAP: maps to craft/art-style.md (visual-aids-owned, missing) — no wiki page, style content unmigrated	eb190879b2265ba37fecf77c11733d40cabb9153	2026-07-14
+system/catarina-primer.md	pcs/catarina-davirelli.md (Arc Notes fold)	d137fcc13ea227fb820df9093a83a311d77692d032e4bb5e1362062391cffa42	2026-07-14
+system/session-zero.md	skipped: thin stub, no independent claims	ce9215d	2026-07-14
+system/shattered-sea-tone-guide.md	world/lore/shattered-sea-tone-guide.md (new lore page)	5d7791610cded04daae29046729ba05a233e0a0e	2026-07-14
+system/lines-and-veils.md	docs/campaign/LINES-AND-VEILS.md (new reference doc)	3c0cf2d	2026-07-14
+system/taxonomy.md	internal-equivalent-check: mapped to world/_meta/tags.md + WIKI.md § Tag taxonomy (no wiki page); REVIEW item 8 flagged stale	b5375e0	2026-07-14
+wiki/system/stripes-primer.md	world/npcs/stripes-bitemore.md (new, status:pending); sweep: world/npcs/elder-anton.md, world/lore/tabaxi.md, world/factions/waveservants.md	587e3c6dc81d7d2f8f2aaac5d597f3dccf1878b4d2d565915a9ca7124a75c8d4	2026-07-14
+system/city-creation-guide.md	refused — internal-equivalent-check (city-builder skill supersedes: Ride-structure table supersets Attraction categories, theme list supersets examples)	0194660	2026-07-14
+system/dungeon-creation-method.md	refused — internal-equivalent (encounter-design ratio + location-prep dungeon-subtype); GAP: theme-synthesis device (Steps I/II/V) uncovered, flagged not built	f633ce7	2026-07-14
+system/mystery-making-framework.md	refused — internal-equivalent-check (sandbox-principles.md §3 Three-Clue Rule + faction-prep/encounter-design/npc-prep supersede)	9ae7095	2026-07-14
+system/blm-prep-framework.md	refused — internal-equivalent-check (Toy Method/PC-Connection/Strong Start/tentpole-portability/DC-tiers/no-fudge all covered); 3 methodology gaps flagged (Box of Doom, Resource-for-Advantage Trade, Schrödinger geography-flex)	99fbc82a85dd4797bbc1c60dc1524b79dcf9f441	2026-07-14
+system/situations-not-stories.md	refused — internal-equivalent-check (faction-prep Goals & Fronts + world-update Front template supersede; no wiki page)	1c477c730efeff791d9f641098b1cd3b7fa7c47a	2026-07-14
+system/character-creation-three-pillars.md	refused — partial internal-equivalent (dnd5e-character-interview supersedes Want/Conflict via Q5/Q6/Q7/Q9/Q11/Q13); GAP: Gimmick behavioral-archetype pillar uncovered, flagged not built	064f41a	2026-07-14
+system/dm-philosophy.md	refused — internal-equivalent-check (dnd5e-scene-narration + faction-prep/world-update Front + session-run-guide supersede; death-policy + session-zero gaps flagged, not built)	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+system/player-agency.md	no wiki page — internal-equivalent (sandbox-narrative)	0c00ce3	2026-07-14
+system/one-shot-modular-method.md	refused — internal-equivalent-check (session-run-guide covers modular/skippable-scene principle; Two Paths/Key/branching-Endings quest architecture has no analog, flagged as gap)	859935a	2026-07-14
+system/player-gravity-wells.md	decomposed into 4 pcs/ Arc Notes (perrin, jean-claude, delmar, crissdalynn)	bab4088	2026-07-14
+wiki/system/party-session-primer.md	no-op — confirmed stale stub, no claims	b4ce25e	2026-07-14
+wiki/system/task-routing.md	refused — internal-equivalent-check (CLAUDE.md Routing table + DISPATCH.md), no wiki page	e4e42835	2026-07-14
+wiki/system/spotlight-management.md	no wiki page — partial internal-equivalent (session-run-guide), 2 gaps flagged	3b011c8	2026-07-14
+system/party-crew.md	no-op — superseded by geoffrey-draves.md + hcs-surety.md	054fa4a5ee2cd5dbd55d0f51ec6c7992b8553c3eee89b34729b79ca4547d2b64	2026-07-14
+system/party-combat-primer.md	distributed: pcs/crissdalynn-khinriss.md, pcs/perrin-black-jaw.md, pcs/jean-claude-tabarnack.md, pcs/delmar-fisk.md (Arc Notes); world/npcs/otar-the-foul.md (relink resolved); aggregate content NOT migrated	90baaffc8ce2d7ae4f3fb07c791d74866dc3bd6f	2026-07-14
+entities/vehicles/hcs-surety.md	world/ships/hcs-surety.md (expand — crew standdown mechanic)	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+wiki/entities/vehicles/hcs-relentless.md	world/ships/hcs-relentless.md (new, pending) + world/ships/hcs-surety.md (link-only)	075aaa81e97fbec41242a68d874e90c1a	2026-07-14
+entities/vehicles/brass-cat.md	world/ships/brass-cat.md (pending) — new ship page, DaVirelli submersible schooner	8457decd9535fcc3460c9105488c93daecc2e434	2026-07-14
+wiki/entities/vehicles/ships-index.md	refused — internal-equivalent-check (maps to world/_meta/index.md navigation + MIGRATION-LEDGER.md:306-331 per-ship lines)	02cfa63	2026-07-14
+wiki/entities/vehicles/hcs-tangent.md	world/ships/hcs-tangent.md (pending)	4ed0cf447f9aefaacfa8ca9c4a281c8cac1653e8	2026-07-14
+entities/vehicles/hcs-constancy.md	world/ships/hcs-constancy.md (pending)	ee33a017fe7113bafd0aa5c590dc36922b1149e3	2026-07-14
+entities/vehicles/hcs-warrant.md	world/ships/hcs-warrant.md (pending) + fleet-link sweep (hcs-relentless, hcs-tangent, commander-gideon-ault)	773e0485	2026-07-14
+entities/vehicles/hcs-sovereign.md	world/ships/hcs-sovereign.md	c031bbb4aac6b320083eaa48c78f7e5a498e853d	2026-07-14
+entities/vehicles/saltwright.md	world/ships/saltwright.md + reverse-link sweep (9 npc files)	478924d	2026-07-14
+entities/vehicles/hcs-ordinance.md	world/ships/hcs-ordinance.md (pending)	ef15302	2026-07-14
+entities/vehicles/tessarine-amberreach.md	world/ships/tessarine-amberreach.md (pending)	0d6dc94	2026-07-14
+entities/vehicles/dead-lady.md	world/ships/dead-lady.md (pending)	ce72f711e207e531e7d9ceb9a018623459249c36bca5376a3d39cf35e33aedad	2026-07-14
+entities/vehicles/lasting-insult.md	world/ships/lasting-insult.md (pending) — impounded courier sloop, three-year impound at South Harbour/Port Tidefall	95948376e13fd85e9aa56382c086b2a27e9f3209	2026-07-14
+entities/vehicles/nimmik-vollask.md	world/ships/nimmik-vollask.md, pending	edc05fe3e812b86ce62ba5055b498ff6f6fcbdb4	2026-07-14
+entities/vehicles/knifes-wake.md	world/ships/knifes-wake.md (pending)	13576f34a6a1514cecbb260962ea462b8ab20b2f	2026-07-14
+entities/vehicles/ironmantle.md	world/ships/ironmantle.md (pending)	f3f5f931cb883cd2eaaf8241e241e3391c2222b92fde39086c97e31d2cdc6095	2026-07-14
+entities/vehicles/heft.md	world/ships/heft.md (pending)	6df1ce6e13958485bac303180247e8b5b0877186	2026-07-14
+entities/vehicles/loud-argument.md	world/ships/loud-argument.md (pending)	af7a396096ea4d478975ee367b5757023ae2f541	2026-07-14
+entities/vehicles/fernen.md	world/ships/fernen.md (pending)	6df1ce6e13958485bac303180247e8b5b0877186	2026-07-14
+wiki/entities/vehicles/red-lady.md	world/ships/red-lady.md — canon	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+entities/vehicles/tessarine-silkvane.md	world/ships/tessarine-silkvane.md (pending)	0faf180e1ea9d2f7fea253801ed3bdf2a4c43386	2026-07-14
+entities/vehicles/the-narrow.md	world/ships/the-narrow.md	5a0e336f9a1c22292a56c5b0a8bad24984ca3b7f	2026-07-14
+entities/vehicles/the-bad-receipt.md	world/ships/the-bad-receipt.md (new ship, pending) + reverse-linked kalowe-bad-receipt-cache.md + the-flat-water.md; central-strait.md reverse-link blocked (canon_gate, no link-only exception)	2c33f277b003f8774b53ac9843c0f980ede9774d	2026-07-14
+entities/vehicles/the-quorum.md	world/ships/the-quorum.md (pending, rung 4)	33b14b38b28cc4c0ec83b867b138a429a6dde5a9b6d5270846a2c13b3206bb92	2026-07-14
+wiki/entities/vehicles/the-tallow-bell.md	world/ships/the-tallow-bell.md — canon	7e3503a269c794d23228ee78a3c34facf75eae58	2026-07-14
+entities/vehicles/vestra.md	world/ships/vestra.md	aca788752bc7058635b8650257ac7826cf6de67340b00ac34a948e1c7c77f824	2026-07-14
+entities/places/index.md	refused — nav index, world/_meta/index.md equivalent	8aefd691495bfa08a67c936e5534ff8a013ed373	2026-07-14
+entities/places/islands/dath-mar.md	world/locations/dath-mar.md pending	9fee63ef2dfa6ef76e934e7542af13ee70f8fa02	2026-07-14
+entities/places/islands/calven.md	world/locations/calven.md (new); central-strait.md relink:calven resolved	889c919	2026-07-14
+entities/places/islands/cape-solitude.md	world/locations/cape-solitude.md	ebd4c595415df6518b2ba378cce56b5f81ae5ccc	2026-07-14
+entities/places/islands/aldenmere.md	world/locations/aldenmere.md (pending)	069dbf9	2026-07-14
+entities/places/islands/aruhe.md	world/locations/aruhe.md (expanded)	069dbf9	2026-07-14
+entities/places/islands/dreth.md	world/locations/dreth.md	42a0479	2026-07-14
+entities/places/islands/karath.md	world/locations/karath.md (new, pending) + reverse-linked warren.md, aruhe.md, orak.md, vaka.md, jean-claude-tabarnack.md; felix-aho.md CANON-GATE BLOCKED (no link-only exception, precedent)	2958522168e7ec12f45daae51447b1e4f13dcaaf	2026-07-14
+entities/places/islands/harwick.md	world/locations/harwick.md	af4ddc1	2026-07-14
+entities/places/islands/huahei.md	world/locations/huahei.md	4ec9c36	2026-07-14
+entities/places/islands/ral-arn.md	world/locations/ral-arn.md — status: pending	192855c	2026-07-14
+entities/places/islands/stenmark.md	world/locations/stenmark.md	a26fbc8	2026-07-14
+entities/places/regions/doldrums.md	world/locations/doldrums.md — pending, region	2f9a035	2026-07-14
+entities/places/islands/meth-var.md	world/locations/meth-var.md :: pending, new location page + reverse link on ral-arn.md	194ddfe	2026-07-14
+entities/places/islands/sorn.md	world/locations/sorn.md (new, pending)	004c2b841823772a27a16f62f7479be766fb663a	2026-07-14
+entities/places/regions/ashwall-islands.md	world/locations/ashwall-islands.md	623f33713cfb8b1f73df68d0caa2e6ca3a23b91ef42e99a8bd1fb248458ade49	2026-07-14
+entities/places/islands/vel-orn.md	world/locations/vel-orn.md	88dd868	2026-07-14
+entities/places/islands/umberlee-shrine.md	world/locations/umberlee-shrine.md (new, canon)	078dfdeeca973f2729766c55b6426cafb54e32b3	2026-07-14
+entities/places/regions/crown-islands.md	world/locations/crown-islands.md	3535d2e	2026-07-14
+entities/places/settlements/calveno/index.md	refused — nav index, world/locations/calveno.md equivalent (Notable Venues + Notable NPCs + See Also already carry every entry)	749bf9dc2b7ac5be6c3f535d9041a6a4a8a86b78	2026-07-14
+entities/places/regions/shattered-sea.md	REDUNDANT — no new page; resolved relink:shattered-sea on crown-islands/doldrums/ashwall-islands/the-drowned-maw.md to campaign-overview.md; central-strait/midchain blocked by canon_gate	f577ee8	2026-07-14
+entities/places/regions/outer-reach.md	world/locations/outer-reach.md	689d0c0	2026-07-14
+entities/places/regions/verdant-scatter.md	world/locations/verdant-scatter.md (new, pending) + 4 reverse-links (ironmantle, serafina-windfall-fisk, the-drowned-maw, crown-islands)	b31b46b9ba58ab9385c0413ea67ca06791a2feb4	2026-07-14
+entities/places/settlements/calveno/la-vasca.md	world/locations/calveno.md (CONTRADICTION append) + world/locations/calveno-la-vasca.md (fact-add BLOCKED, not applied)	cd9a7da	2026-07-14
+entities/places/regions/tail.md	world/locations/tail.md (pending)	fae72f1	2026-07-14
+entities/places/regions/verdant-teeth.md	world/locations/verdant-teeth.md (new, pending) + 14 reverse-link fixes	86a6ce0	2026-07-14
+entities/places/regions/galewall.md	world/locations/galewall.md (pending, resolves 5 sibling relink flags)	3f66e39	2026-07-14
+entities/places/settlements/calveno.md	world/locations/calveno.md (expanded)	1390daf	2026-07-14
+entities/places/regions/sunken-crown.md	world/locations/sunken-crown.md (new, pending)	db434a27	2026-07-14
+entities/places/regions/galewall-dm.md	world/locations/galewall.md § DM Only (fold-in)	80c5167	2026-07-14
+entities/places/settlements/high-line.md	world/locations/high-line.md (new, canon)	ae18dff	2026-07-14
+entities/places/sites/drave-vaults.md	world/locations/drave-vaults.md	188c19c	2026-07-14
+entities/places/settlements/oshas-slip.md	world/locations/oshas-slip.md	ae888824b4176675091c92f468caa4704543197b	2026-07-14
+entities/places/settlements/murrat.md	world/locations/murrat.md (canon)	540fa5d	2026-07-14
+entities/places/settlements/halythion.md	world/locations/halythion.md (new, pending)	c990f4e	2026-07-14
+entities/places/sites/shelfworks.md	world/locations/shelfworks.md	9c665c76db7fb85e1cc8cf54374421ebe026fc10	2026-07-14
+entities/places/sites/high-eyrie.md	world/locations/high-eyrie.md	03cfb80	2026-07-14
+entities/places/sites/antheri-ruins.md	world/locations/antheri-ruins.md (new, pending, dungeon) + reverse-link sweep (5 files) + 1 canon_gate block reported (auralis.md)	6171e59	2026-07-14
+entities/characters/pcs/index.md	refused — nav index, world/_meta/index.md equivalent (## pc section)	f60d3b9dc9520003210185c0883326f8fc0cf411	2026-07-14
+entities/characters/minor/index.md	refused — nav index, world/_meta/index.md equivalent (all 17 entries pre-accounted-for by individual cluster ledger lines or prior rounds)	6eb6042	2026-07-14
+entities/characters/crew/index.md	refused — nav index, world/_meta/index.md equivalent (npc section)	b2bcc5a	2026-07-14
+entities/characters/npcs/index.md	refused — nav index, world/_meta/index.md equivalent (11 public + 12 DM-only npc links, each with own R35 ledger line)	15e733d179e86783f98f2a710da870fce1149ea5	2026-07-14
+entities/characters/index.md	refused — nav index, world/_meta/index.md equivalent (## pc + ## npc sections cover all 9 linked entities)	c741ecd	2026-07-14
+entities/characters/minor/cedric-hollowell.md	world/npcs/cedric-hollowell.md	8b48eb495b94221784655fd5c36cb605bdc806cb	2026-07-14
+entities/characters/minor/bala-tane.md	world/npcs/bala-tane.md	56c5a984c54902a1c66d190f9b24c557cab6ef87	2026-07-14
+entities/characters/minor/colla.md	world/npcs/colla.md canon	592f5ed7de3eb0dcc8e53232fdfe134eaaa269a5fcbf94f489f51e00435ba6c8	2026-07-14
+entities/characters/minor/bisou.md	world/npcs/bisou.md — canon	5179b65	2026-07-14
+entities/characters/minor/algernon-reginald-clyde.md	world/npcs/algernon-reginald-clyde.md, pending	fba8d4f	2026-07-14
+entities/characters/minor/gost.md	world/npcs/gost.md	651c8d9	2026-07-14
+entities/characters/minor/dario.md	world/npcs/dario-vanni.md (duplicate, no new content — see R18 e4b21f7)	9429667	2026-07-14
+entities/characters/minor/enzo.md	duplicate — already landed as world/npcs/enzo.md via R11 (ss11-npc-enzo, 6cbf93f), same source under mismatched path; verified content match, no write	(no write, verified)	2026-07-14
+entities/characters/minor/ensign-wouters.md	world/npcs/ensign-wouters.md	6fb2047	2026-07-14
+entities/characters/minor/hector-podge.md	world/npcs/hector-podge.md	9623d54	2026-07-14
+entities/characters/minor/flappers-the-seal.md	world/creatures/flappers-the-seal.md	c1df444	2026-07-14
+entities/characters/minor/coralyra-dranra.md	world/npcs/coralyra-dranra.md (pending)	331aa74	2026-07-14
+entities/characters/minor/ilaria-grimaldi.md	refused (redundant) -- grimaldis-dispensary.md	7ef65c9fd5557b5e46ca5655f3baca2e7e3cce8c	2026-07-14
+entities/characters/minor/ettore.md	world/npcs/ettore-lupo.md (expand, pending->canon)	e9d345b	2026-07-14
+entities/characters/minor/iacopo-fieschi.md	world/npcs/iacopo-fieschi.md	ce4f1cd355221edded03ca796edc7cc0a309632a	2026-07-14
+entities/characters/minor/margaret-porcelain-pots.md	world/npcs/margaret-porcelain-pots.md (new, pending)	98448d8	2026-07-14
+entities/characters/minor/kettil-ormsson.md	world/npcs/kettil-ormsson.md — canon rung 3	06abf152bdf9e148d52c90fe58b75258d7d34b09	2026-07-14
+entities/characters/minor/ruk.md	duplicate — already landed as world/npcs/ruk.md via R11 (ss11-npc-ruk, 7dd93e3), same source under mismatched path; verified content match, no write	(no write, verified)	2026-07-14
+entities/characters/minor/reginald-fenn.md	world/npcs/reginald-fenn.md (new, canon rung 3)	1c49212	2026-07-14
+entities/characters/minor/nigel-strutt.md	world/npcs/nigel-strutt.md	1f0890b	2026-07-14
+entities/characters/minor/oswald-crench.md	world/npcs/oswald-crench.md (new, canon rung 3)	daec3f740ae4dc9f26b53e35958de28787a73da6	2026-07-14
+entities/characters/minor/petra-venn.md	world/npcs/petra-venn.md	5582e8e3ad01074efb52f3ff750d2bef40348bded79d36aff79b9a660f94b1db	2026-07-14
+entities/characters/minor/norrington-kingsly.md	world/npcs/norrington-kingsly.md (new, pending)	338bf42a62df	2026-07-14
+entities/characters/minor/marrow.md	world/npcs/marrow.md	2ab04147ecb2d72098a5b95355c877983ec97d73	2026-07-14
+entities/characters/minor/serin-haut.md	world/npcs/serin-haut.md	704d5d6	2026-07-14
+entities/characters/minor/stripes-bitemore.md	duplicate — already landed as world/npcs/stripes-bitemore.md via R32 (system/stripes-primer.md source); verified content match (bio/backstory/character/relationships/DM hook all present), no write; image asset (Belmore-Archer.webp) flagged for visual-aids, not embedded (no npc page in repo embeds portraits)	(no write, verified)	2026-07-14
+entities/characters/npcs/cotter-foss.md	world/npcs/cotter-foss.md	782dac5	2026-07-14
+entities/characters/minor/umberlee-servant.md	duplicate — Branca (world/npcs/branca.md) + waveservant-shrine.md, no write	2a5e14c	2026-07-14
+entities/characters/minor/vrtek.md	world/npcs/vrtek.md, pending	a75d3699c54bcdc9207f33f0dcc5acf65a920e73	2026-07-14
+entities/characters/minor/taufa-fifita.md	world/npcs/taufa-fifita.md (canon)	928a968a0f03c861b220c808ebc6251e811f6257	2026-07-14
+entities/characters/npcs/andriana-trevisan.md	world/npcs/andriana-trevisan.md (new, pending)	64af6638	2026-07-14
+entities/characters/npcs/aldous-draves.md	world/npcs/aldous-draves.md (new, pending)	36f60b1	2026-07-14
+entities/characters/minor/suryo-wibowo.md	world/npcs/suryo-wibowo.md (new npc, canon rung 3)	909ed08a20f20f87b33b86dea88a47f6fa9efe6c43de63c17977a7b3ff86f987	2026-07-14
+entities/characters/npcs/bastian-crev.md	world/npcs/bastian-crev.md (new, pending)	89cfdc6	2026-07-14
+entities/characters/npcs/aldric-drave.md	world/npcs/aldric-drave.md (new, pending)	602352f8fe443c44f553aeac90b92ea93d61cbc2	2026-07-14
+entities/characters/npcs/solange-barret.md	duplicate — already landed as world/npcs/solange-barret.md (ss9-npc-solange, 0a67a28), same content under mismatched source path; verified content match, no write	(no write, verified)	2026-07-14
+entities/characters/npcs/toa.md	world/npcs/toa.md — pending	4373920718754fc68aa6fe29f7d9c2e80a0e7552	2026-07-14
+entities/characters/npcs/suke.md	world/npcs/suke.md, pending	ff564ffe985ece5a898cbb8d978ef20bae67731a	2026-07-14
+entities/characters/npcs/oriana-becht.md	world/npcs/oriana-becht.md, pending (rung 1 stub)	43feb1a	2026-07-14
+entities/characters/npcs/rupert-knighton.md	world/npcs/rupert-knighton.md (expand)	eb190879b2265ba37fecf77c11733d40cabb9153	2026-07-14
+entities/characters/npcs/dorian-bishop.md	world/npcs/dorian-bishop.md (new, pending)	5dfa652	2026-07-14
+entities/characters/npcs/detto-kalash.md	world/npcs/detto-kalash.md	d26ef4b	2026-07-14
+entities/characters/npcs/ruma-delacroix.md	world/npcs/ruma-delacroix.md (duplicate no-op — already landed prior round under a mismatched INGESTED.tsv path; cleaned 2 stale relink flags + reverse-linked calveno-sewers-grung-magazines.md)	26bb4e1	2026-07-14
+entities/characters/npcs/sienne-orre.md	world/npcs/sienne-orre.md (new, pending)	e365fdc	2026-07-14
+entities/characters/npcs/varet.md	world/npcs/varet.md	a9b8868	2026-07-14
+entities/characters/npcs/wirra.md	world/npcs/wirra.md, pending (new)	97f6cdf7891de3dcbb53085fa8436d1ad28f25a5	2026-07-14
+entities/characters/pcs/perrin-black-jaw.md	pcs/perrin-black-jaw.md (canon, expand — resolved vestra+ponte-bassa relinks, CONTRADICTION flagged: Cobb/La Vasca vs Ponte Bassa)	d5c6e5d4189d5750020ea29fa18efd1de19ea7f2	2026-07-14
+entities/creatures/active/grung-npc.md	world/creatures/grung-npc.md (new, creature skeleton); world/creatures/grung-elite-warrior.md (forward-link resolved)	fe9a567	2026-07-14
+entities/creatures/active/purple-caste-enforcer.md	world/creatures/purple-caste-enforcer.md	da2b406	2026-07-14
+entities/creatures/active/ozvok-the-vermillion-distiller.md	world/npcs/ozvok-the-vermillion-distiller.md (npc, pending)	c91fdeff98c60c90baf4414a3c7d243a7bae25d9	2026-07-14
+entities/creatures/active/dravosi-alchemist.md	world/creatures/dravosi-alchemist.md, canon	55be8c9	2026-07-14
+entities/creatures/active/purple-caste-zealot.md	world/creatures/purple-caste-zealot.md	84991aa	2026-07-14
+entities/creatures/active/moucheron.md	world/creatures/moucheron.md (canon)	c21e532	2026-07-14
+entities/creatures/active/whip-shark.md	world/creatures/whip-shark.md — canon	b6f07213adcb172d534f762ba158bacee3c9a452	2026-07-14
+entities/creatures/active/reef-shark.md	world/creatures/reef-shark.md (pending — CR 1/2 bestiary entry, uncorroborated play claim; link-upgraded hunter-shark.md + shelfworks.md)	04aa808d333a733322c848867883e1956bed4c11	2026-07-14
+entities/creatures/planned/blight.md	world/creatures/blight.md, pending	df04ba1	2026-07-14
+entities/creatures/planned/leviathan.md	world/npcs/leviathan.md (duplicate, no new page — legend/rumor fully subsumed by existing DM-truth canon page, rung 2)	074ab34	2026-07-14

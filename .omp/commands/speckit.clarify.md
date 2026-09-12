@@ -1,17 +1,11 @@
 ---
 description: Identify underspecified areas in the current feature spec by asking up to 5 highly targeted clarification questions and encoding answers back into the spec.
 handoffs:
-- label: Build Technical Plan
-  agent: speckit.plan
-  prompt: Create a plan for the spec. I am building with...
-scripts:
-  sh: .specify/scripts/bash/check-prerequisites.sh --json --paths-only
-  ps: .specify/scripts/powershell/check-prerequisites.ps1 -Json -PathsOnly
-  py: .specify/scripts/python/check_prerequisites.py --json --paths-only
+  - label: Build Technical Plan
+    agent: speckit.plan
+    prompt: Create a plan for the spec. I am building with...
 ---
 
-
-<!-- Source: core (bundled) -->
 ## User Input
 
 ```text
@@ -63,7 +57,7 @@ Note: This clarification workflow is expected to run (and be completed) BEFORE i
 
 Execution steps:
 
-1. Run `.specify/scripts/bash/check-prerequisites.sh --json --paths-only` from repo root **once** (combined `--json --paths-only` mode / `-Json -PathsOnly`). Parse minimal JSON payload fields:
+1. Run `.venv/bin/python .specify/scripts/python/check_prerequisites.py --json --paths-only` from repo root **once** (combined `--json --paths-only` mode / `-Json -PathsOnly`). Parse minimal JSON payload fields:
    - `FEATURE_DIR`
    - `FEATURE_SPEC`
    - (Optionally capture `IMPL_PLAN`, `TASKS` for future chained flows.)

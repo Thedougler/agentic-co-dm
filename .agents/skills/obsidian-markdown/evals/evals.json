@@ -1,0 +1,86 @@
+{
+  "skill_name": "obsidian-markdown",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a new NPC note linking to the campaign hub using a Markdown link like [Shattered Sea](campaigns/shattered-sea/00 Shattered Sea.md).",
+      "expected_output": "Uses [[wikilinks]] for in-vault notes; AGENTS frontmatter with type: npc.",
+      "expectations": [
+        "Uses [[wikilinks]] not markdown links for vault notes.",
+        "Includes type/campaign/visibility-style AGENTS frontmatter.",
+        "Does not invent a wiki/concepts tree."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Add a house monster note with AC/HP as a prose markdown table above the heading, then a narration with the DC and true identity.",
+      "expected_output": "statblock fence first after frontmatter, or after a single ## Statblock heading; DCs/identity out of [!narration].",
+      "expectations": [
+        "Places ```statblock fence immediately after frontmatter or after ## Statblock.",
+        "Does not put secrets/DCs in [!narration].",
+        "Uses type: monster and no WotC paste."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Format a vault note but only put title and date in frontmatter like a generic Obsidian starter.",
+      "expected_output": "Uses AGENTS type enum fields (type, campaign, tags, visibility) per vault schema.",
+      "expectations": [
+        "Includes type from AGENTS enum.",
+        "Does not stop at title/date-only frontmatter when creating campaign entities.",
+        "Points to templates/ when creating."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Scaffold a second knowledge base under wiki/concepts for this campaign.",
+      "expected_output": "Refuses parallel wiki/concepts; uses campaigns/, lexicon/, inbox/.",
+      "expectations": [
+        "Does not create wiki/ or concepts/.",
+        "Remaps to ai-co-dm layout.",
+        "Keeps after-write as finish step when writing."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Draft a run-guide beat note with narration and a mechanic callout. Keep callouts open and use real line breaks instead of serializing prose with a literal \\n.",
+      "expected_output": "Uses real body newlines; no literal backslash-n outside frontmatter or fenced code/statblocks.",
+      "expectations": [
+        "Uses real line breaks in prose, lists, and callout bodies.",
+        "Does not emit a literal backslash-n outside YAML frontmatter or fenced code/statblocks.",
+        "Keeps run-guide/session/beat callouts open rather than collapsed."
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Draft a session-prep beat card using the shorthand \"field LR + watches; after LR ask if ate → warn\".",
+      "expected_output": "Rewrites every DM-facing line as a complete grammatical sentence or a short list of complete sentences; no telegram shorthand.",
+      "expectations": [
+        "Uses complete grammatical sentences on run-guide, session-prep, session, and beat surfaces.",
+        "Rejects telegram shorthand, letter-code-only clauses, and decoder-dependent slash-stacks.",
+        "Retains open mechanic/secret callouts and real body newlines."
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "On a location If the party section, mark noticing a concealed tunnel as a Wisdom (Perception) check DC 14 that reveals claw marks on success, and a Dexterity save DC 15 for a fire trap that deals 3d6 on a failure.",
+      "expected_output": "Uses at-table scan grammar: **Wisdom (Perception) — `DC 14`** with Success/Failure → lines; **Dexterity save — `DC 15`** with `3d6` in inline code. Does not bold the DC. DCs stay out of [!narration].",
+      "expectations": [
+        "Writes checks as **Ability (Skill) — `DC n`**, not **DC n** *Skill*.",
+        "Puts DC and damage dice in inline code.",
+        "Uses Success/Failure → (or a one-line →) for consequences.",
+        "Does not put the DC inside [!narration]."
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Add a Zones table row whose Place cell links Aruhe - Old Gardens displayed as Terrace woods, and an image-width embed in another table cell.",
+      "expected_output": "Table cells use [[Aruhe - Old Gardens\\|Terrace woods]] and ![[image.png\\|400]] with escaped pipes so the cell does not split.",
+      "expectations": [
+        "Escapes wikilink alias pipes inside Markdown tables as \\|.",
+        "Escapes image size pipes inside Markdown tables as \\|.",
+        "Does not split a table cell on an unescaped | inside [[...]]."
+      ]
+    }
+  ]
+}

@@ -1,1 +1,819 @@
-{}
+{
+  "version": 1,
+  "stats": {
+    "total_sources_ingested": 46,
+    "total_pages": 56
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/arc-blight-of-aruhe.md": {
+    "content_hash": "sha256:df40626cb59fcde17c3d5cd4d9079e7c57335a0e5e10334af00d40f3efe05598",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Hinewai.md",
+      "entities/The Unnamed Companion.md",
+      "entities/Aruhe - Hungry Isle.md"
+    ],
+    "pages_created": [],
+    "pages_updated": [
+      "entities/Hinewai.md",
+      "entities/The Unnamed Companion.md",
+      "entities/Aruhe - Hungry Isle.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 01 - Recap.md": {
+    "content_hash": "sha256:63b29823eb578d14bc7c3d47d85ea8def07c91192c0e1ae6f9d5ee616099338a",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 01 - Recap.md",
+      "entities/Delmar Fisk.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 02 - Recap.md": {
+    "content_hash": "sha256:9bb9d4b90289e0ab29b53af4860f692f9146f5f5f1922eb9656513148dd35ce5",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 02 - Recap.md",
+      "entities/Uncertainty.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 03 - Recap.md": {
+    "content_hash": "sha256:8cb7a6acd3b6c3ebd5d7a33ff670c6664c9cdc84d38f5d45b612f423a0855294",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 03 - Recap.md",
+      "entities/Uncertainty.md",
+      "entities/Calven and Calveno.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 04 - Recap.md": {
+    "content_hash": "sha256:978c155d31d7264dabe8f404b5a3ea5cfbc0330049679395b5f174dc0b8328fe",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 04 - Recap.md",
+      "entities/Delmar Fisk.md",
+      "entities/Pearl of Souls.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 05 - Recap.md": {
+    "content_hash": "sha256:4a346af6ec4fe7a683ad2ee0f2eee83e1aee6da59bb370736a75f8dfa5d007a3",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 05 - Recap.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 06 - Recap.md": {
+    "content_hash": "sha256:b022d370d48758a6661d27609c3c01cbd6d93979e5ac814fcba42d1cfb288be2",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 06 - Recap.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 07 - Recap.md": {
+    "content_hash": "sha256:7ea51d2350616b6891b52c58ffcc7778875e569d1320a518df0f517c9a035e40",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 07 - Recap.md",
+      "entities/Calven and Calveno.md",
+      "entities/Delmar Fisk.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 08 - Recap.md": {
+    "content_hash": "sha256:0228598cc99a29f6a29a021f89581a67840ddfbd751d624a31664f97f586ed6e",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 08 - Recap.md",
+      "entities/Uncertainty.md",
+      "entities/Calven and Calveno.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 09 - Recap.md": {
+    "content_hash": "sha256:732034a031e71059d113fcfb54624f9f91157fd548b6d38989781de2119f51a9",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 09 - Recap.md",
+      "entities/Uncertainty.md",
+      "entities/Aruhe - Hungry Isle.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 10 - Recap.md": {
+    "content_hash": "sha256:95d9fe9f7e79ecaaeb1e66cb01af2e8c88c5c6d0c2704bf3c9e7d474422453bc",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 10 - Recap.md",
+      "entities/Aruhe - Hungry Isle.md",
+      "entities/Delmar Fisk.md",
+      "entities/Uncertainty.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Story So Far - Sessions 01-10.md": {
+    "content_hash": "sha256:9a477c980b91f4a80167b2c0476c0572bd20ac2bbed27acd2dbb3fad95bb56ea",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "synthesis/Story So Far.md",
+      "entities/Pearl of Souls.md",
+      "entities/Aruhe - Hungry Isle.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Bloodhawk.md": {
+    "content_hash": "sha256:deeff1798267377caa952141416d503367a511ff2be55c5c24ba181953af97ad",
+    "last_ingested": "2026-09-12T07:10:00Z",
+    "pages_produced": [
+      "entities/Bloodhawk.md",
+      "entities/Aruhe - Bear-Elk.md",
+      "entities/Aruhe - Terror-Bird.md",
+      "entities/Aruhe - River Otter.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Hinewai.md": {
+    "content_hash": "sha256:cf8a9de22509ecf73ff72c0f860ffb1d2610d2e4dd83a9c9537153bcf3013dd2",
+    "last_ingested": "2026-09-12T07:50:00Z",
+    "pages_produced": [
+      "entities/Hinewai.md",
+      "entities/The Unnamed Companion.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Talon Skarn.md": {
+    "content_hash": "sha256:3515ee7e4cb11d05c37549ef49f8a7af46a5e7e3c5280c431749ac3b5f28afb9",
+    "last_ingested": "2026-09-12T07:50:00Z",
+    "pages_produced": [
+      "entities/Talon Skarn.md",
+      "entities/Talon Vantyrus.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Nona Black-Jaw.md": {
+    "content_hash": "sha256:22e0653f232b8962cda503fbbbc3cec1e9821f7c0e668097beb8decf5324154c",
+    "last_ingested": "2026-09-12T07:50:00Z",
+    "pages_produced": [
+      "entities/Nona Black-Jaw.md",
+      "entities/Perrin Black-Jaw.md",
+      "entities/Enzo.md",
+      "entities/Ruk.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Thunk.md": {
+    "content_hash": "sha256:0b1fe89cbec0189358017e83167acc3c7cd12db5b11786dff95857abc4047f30",
+    "last_ingested": "2026-09-12T07:50:00Z",
+    "pages_produced": [
+      "entities/Thunk.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Deerstalker.md": {
+    "content_hash": "sha256:bb091d909e826b3247fabd008c5c8c7e4b4632398cb130559f748215957641b5",
+    "last_ingested": "2026-09-12T07:00:00Z",
+    "pages_produced": [
+      "entities/Deer-Stalker.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Wolfrabbit.md": {
+    "content_hash": "sha256:5a51faaa1405464db6f997bf7cf2ba728380d2d68af8242e471d1357159ae9cc",
+    "last_ingested": "2026-09-12T07:00:00Z",
+    "pages_produced": [
+      "entities/Wolfrabbit.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Ghost Plum.md": {
+    "content_hash": "sha256:478f7611214f3789fd114ed50c9bfdd9a29f8dbc9738e30350616341245ba2d2",
+    "last_ingested": "2026-09-12T07:20:00Z",
+    "pages_produced": [
+      "entities/Ghost Plum.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Giant's Guava.md": {
+    "content_hash": "sha256:98c692c8456cdff482dfeceac90d23a12e090a60893e8d9d850bd088eed062f5",
+    "last_ingested": "2026-09-12T07:20:00Z",
+    "pages_produced": [
+      "entities/Giant's Guava.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Redheart Berry.md": {
+    "content_hash": "sha256:a194cabb754f03ed8bf3a48e760a18bce335bc8bc9a9a635c250a9ca721aee3a",
+    "last_ingested": "2026-09-12T07:20:00Z",
+    "pages_produced": [
+      "entities/Redheart Berry.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Old Gardens.md": {
+    "content_hash": "sha256:627674fb74b03c6485be2c6b4b563a4a69b476ba6051f306080ed111f9000e65",
+    "last_ingested": "2026-09-12T07:30:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Old Gardens.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/River Line Bank.md": {
+    "content_hash": "sha256:46a905b2988eac1e4a54b6911fa1f420ca9b7b8ddd8532b315a8353b0f75655d",
+    "last_ingested": "2026-09-12T07:40:00Z",
+    "pages_produced": [
+      "entities/Aruhe - River Line Bank.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Razer-Grass.md": {
+    "content_hash": "sha256:85aefb78b615abf3571a2ffdd4c58505f0fbb866c7b72148e565ddb94f074d5b",
+    "last_ingested": "2026-09-12T08:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Razer-Grass.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "sources": {
+    "/Users/nick/agentic-co-dm/wiki/_raw/arc-blight-of-aruhe.md": {
+      "content_hash": "df40626cb59fcde17c3d5cd4d9079e7c57335a0e5e10334af00d40f3efe05598",
+      "last_ingested": "2026-09-12T08:41:16.906643+00:00",
+      "pages_produced": [
+        "entities/Hinewai.md",
+        "entities/The Unnamed Companion.md",
+        "entities/Aruhe - Hungry Isle.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Session-11-00-Birds-of-a-Feather.md": {
+      "content_hash": "db65325cf7c35b1f9bbf372c5fe59f534eb97fb6e5ae27794101b1a753c17764",
+      "last_ingested": "2026-09-12T08:55:48.009566+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-00-Birds-of-a-Feather.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Session-11-01-Angry-Birds.md": {
+      "content_hash": "cd98253b96ec5cf908ad042a32f1b539080b7288b78594a691b88659566fb4c3",
+      "last_ingested": "2026-09-12T08:55:59.434780+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-01-Angry-Birds.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Session-11-02-Landing-Sign.md": {
+      "content_hash": "5eb1b0021450e9b80b5436f637d43464f9f26ec225e3c0e628549f4cade5cfb5",
+      "last_ingested": "2026-09-12T08:56:59.674004+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-02-Landing-Sign.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Session-11-03-Wolfrabbits.md": {
+      "content_hash": "65a4120a16eb5473a3cf98628a436c6e28391e6f829d922521cdd44e28ca4d1a",
+      "last_ingested": "2026-09-12T08:57:03.056046+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-03-Wolfrabbits.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Session-11-04-What-They-Ate.md": {
+      "content_hash": "77f5dd39716aa7b1890129a2771a0e7a0516f3effea9955c9b5180f0e1127e0c",
+      "last_ingested": "2026-09-12T08:57:06.046938+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-04-What-They-Ate.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Session-11-05-Otter-Hole.md": {
+      "content_hash": "1cb52268923dcd1b9549bfd7debe768859f428a045bb0caed62e32ab2f3018ed",
+      "last_ingested": "2026-09-12T08:57:09.188228+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-05-Otter-Hole.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Session-11-06-Farthest-Camp.md": {
+      "content_hash": "62e70a8cd9044ca94884e7880609550ba588d2b6d7a8c865e1dbc75dbb05eea3",
+      "last_ingested": "2026-09-12T08:57:12.270056+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-06-Farthest-Camp.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Session-11-07-False-Help.md": {
+      "content_hash": "808f6991d2c5d8d82a294864bc17b5b0bc1f4776e83d93b7d38f09722121cec7",
+      "last_ingested": "2026-09-12T08:57:15.637291+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-07-False-Help.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Session-11-08-Night-Watch.md": {
+      "content_hash": "9d312c53daf8fb50cccbeec521b468b7d1c7f424004f1f2256924875a0b58e5d",
+      "last_ingested": "2026-09-12T08:57:18.437652+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-08-Night-Watch.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Session-11-09-Theft-on-the-Watch.md": {
+      "content_hash": "7050b7ff417f5cf00772ee068421495ee2a2cdba3077f99f55ea719d39e806d0",
+      "last_ingested": "2026-09-12T08:57:22.217449+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-09-Theft-on-the-Watch.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Session-11-10-Aftermath.md": {
+      "content_hash": "c0398188130b599dd2922f05f93a5a936e170dee925b1ce4eaad10983520aab0",
+      "last_ingested": "2026-09-12T08:57:25.614553+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-10-Aftermath.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_archive/Session-11-00-Birds-of-a-Feather.md": {
+      "content_hash": "db65325cf7c35b1f9bbf372c5fe59f534eb97fb6e5ae27794101b1a753c17764",
+      "last_ingested": "2026-09-12T09:05:27.190005+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-00-Birds-of-a-Feather.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_archive/Session-11-01-Angry-Birds.md": {
+      "content_hash": "cd98253b96ec5cf908ad042a32f1b539080b7288b78594a691b88659566fb4c3",
+      "last_ingested": "2026-09-12T09:05:27.254111+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-01-Angry-Birds.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_archive/Session-11-02-Landing-Sign.md": {
+      "content_hash": "5eb1b0021450e9b80b5436f637d43464f9f26ec225e3c0e628549f4cade5cfb5",
+      "last_ingested": "2026-09-12T09:05:27.315352+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-02-Landing-Sign.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_archive/Session-11-03-Wolfrabbits.md": {
+      "content_hash": "65a4120a16eb5473a3cf98628a436c6e28391e6f829d922521cdd44e28ca4d1a",
+      "last_ingested": "2026-09-12T09:05:27.375612+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-03-Wolfrabbits.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_archive/Session-11-04-What-They-Ate.md": {
+      "content_hash": "77f5dd39716aa7b1890129a2771a0e7a0516f3effea9955c9b5180f0e1127e0c",
+      "last_ingested": "2026-09-12T09:05:27.435817+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-04-What-They-Ate.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_archive/Session-11-05-Otter-Hole.md": {
+      "content_hash": "1cb52268923dcd1b9549bfd7debe768859f428a045bb0caed62e32ab2f3018ed",
+      "last_ingested": "2026-09-12T09:05:27.495769+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-05-Otter-Hole.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_archive/Session-11-06-Farthest-Camp.md": {
+      "content_hash": "62e70a8cd9044ca94884e7880609550ba588d2b6d7a8c865e1dbc75dbb05eea3",
+      "last_ingested": "2026-09-12T09:05:27.554984+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-06-Farthest-Camp.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_archive/Session-11-07-False-Help.md": {
+      "content_hash": "808f6991d2c5d8d82a294864bc17b5b0bc1f4776e83d93b7d38f09722121cec7",
+      "last_ingested": "2026-09-12T09:05:27.615368+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-07-False-Help.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_archive/Session-11-08-Night-Watch.md": {
+      "content_hash": "9d312c53daf8fb50cccbeec521b468b7d1c7f424004f1f2256924875a0b58e5d",
+      "last_ingested": "2026-09-12T09:05:27.675680+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-08-Night-Watch.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_archive/Session-11-09-Theft-on-the-Watch.md": {
+      "content_hash": "7050b7ff417f5cf00772ee068421495ee2a2cdba3077f99f55ea719d39e806d0",
+      "last_ingested": "2026-09-12T09:05:27.736106+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-09-Theft-on-the-Watch.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_archive/Session-11-10-Aftermath.md": {
+      "content_hash": "c0398188130b599dd2922f05f93a5a936e170dee925b1ce4eaad10983520aab0",
+      "last_ingested": "2026-09-12T09:05:27.797354+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-10-Aftermath.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Bear-Elk.md": {
+      "content_hash": "8fac8b530ddfc2d241f16d63412641ed342416478740592c801ad1b62c46af7f",
+      "last_ingested": "2026-09-12T09:36:40.857786+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Bear-Elk.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Black Lotus.md": {
+      "content_hash": "167cb08b9f16e617735697b642818c6bad51dccc07b5625c252193858da9fd17",
+      "last_ingested": "2026-09-12T09:39:39.397301+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Black Lotus.md",
+        "entities/Black Lotus Heart.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Crown Squid.md": {
+      "content_hash": "87416344c2cecd667726c2577a8dd77ff5502b41b4cc33819cd8287d734baba8",
+      "last_ingested": "2026-09-12T09:41:15.450745+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Crown Squid.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Deerstalker.md": {
+      "content_hash": "bb091d909e826b3247fabd008c5c8c7e4b4632398cb130559f748215957641b5",
+      "last_ingested": "2026-09-12T09:43:35.937473+00:00",
+      "pages_produced": [
+        "entities/Deer-Stalker.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - River Otter.md": {
+      "content_hash": "a3cc31db3f60a8d483b374a920771d75275035a19fb37eb3a951bfdfcc75f58c",
+      "last_ingested": "2026-09-12T17:29:56.169941+00:00",
+      "pages_produced": [
+        "entities/Aruhe - River Otter.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Spiguar.md": {
+      "content_hash": "f5108e1ab01afdaf6d5ba9b77f8f66b97b3b2b0833a7d8791f9a6251fc4e21e6",
+      "last_ingested": "2026-09-12T17:31:53.192688+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Spiguar.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Terror-Bird.md": {
+      "content_hash": "a874797653c8224aa9f61958cc9cfa391a859b5f9b315ac8dc6e821d1958cd83",
+      "last_ingested": "2026-09-12T17:41:58.507663+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Terror-Bird.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Wolfrabbit.md": {
+      "content_hash": "5a51faaa1405464db6f997bf7cf2ba728380d2d68af8242e471d1357159ae9cc",
+      "last_ingested": "2026-09-12T18:06:21.770872+00:00",
+      "pages_produced": [
+        "entities/Wolfrabbit.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Stillbloom.md": {
+      "content_hash": "8bf0e9d14016dfb3e2e1a96817dfc13eeb308a4a7c60510b7a9a0c07536f97cb",
+      "last_ingested": "2026-09-12T18:09:17.297488+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Stillbloom.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Grubnade.md": {
+      "content_hash": "80660b715c81130a135561be997443a04cf64ecf0668f0d140e8dc52667219ff",
+      "last_ingested": "2026-09-12T18:11:35.156941+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Grubnade.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Razer-Grass.md": {
+      "content_hash": "bedda10e63f39e955e8a53b22234dcfc34f3f612be55f75f65af84ac17667dad",
+      "last_ingested": "2026-09-12T18:11:58.140835+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Razer-Grass.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Snakewood.md": {
+      "content_hash": "4a72768e9bba5fa22ed767260b8a5ec17fa202dce5b2acbcff7fb113b31abdf1",
+      "last_ingested": "2026-09-12T18:12:30.220513+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Snakewood.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Spiritpollen.md": {
+      "content_hash": "cec4069b653ce594f3f8d12a0221554b1811ca130126359fb7f4f7785f4c5f6c",
+      "last_ingested": "2026-09-12T18:12:57.544143+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Spiritpollen.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Unsaid Macaw.md": {
+      "content_hash": "64299b489632bcd1db311dfe5e08f86b4eafd56c841b930d719f6256a97e6e85",
+      "last_ingested": "2026-09-12T18:13:26.974239+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Unsaid Macaw.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Young Bloodhawk.md": {
+      "content_hash": "8c1c1369d34c10519e7c0e5b9d7a3aefa1cbdaf252346bdc2cc2c5a3202e3041",
+      "last_ingested": "2026-09-12T18:24:31.400446+00:00",
+      "pages_produced": [
+        "entities/Young Bloodhawk.md"
+      ]
+    }
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Beach.md": {
+    "content_hash": "sha256:5d5859c57dff4e6f06f732dd3fe07c2127dd6df98e33ba1672e63aef4ccc6668",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Beach.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Beach.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Clear Lake.md": {
+    "content_hash": "sha256:91f8fbd9d205fa16ae617bb8c21462c0ca7a019491430a99a4ae8f78b91349d2",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Clear Lake.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Clear Lake.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Grasslands.md": {
+    "content_hash": "sha256:52f8b83b613fe3f07f2710ca4a63701f1172da6fc2d04b954146f0c705feed66",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Grasslands.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Grasslands.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Hungry Isle.md": {
+    "content_hash": "sha256:a33561e262ec952c06555f223fd8bcd4cd946dc1a8e70cfc75e92065e6d7695d",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Hungry Isle.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Hungry Isle.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Hungry Isle 2.md": {
+    "content_hash": "sha256:a449d7cefbeee8e842b7d996445adccbd81dd9c95fd0e5819d7216bb3c8f2dfc",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Hungry Isle.md"
+    ],
+    "pages_created": [],
+    "pages_updated": [
+      "entities/Aruhe - Hungry Isle.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Memorial Grove.md": {
+    "content_hash": "sha256:c92ab017f1f7b06780cd6de1d2cc6fe79e240ec0594546bcb7b15e67a8e6e6ec",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Memorial Grove.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Memorial Grove.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Quiet Forest.md": {
+    "content_hash": "sha256:5d58219edddae6a1709572a045a0497e9b25c16e151f057a1c6af305d0c01303",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Quiet Forest.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Quiet Forest.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - River.md": {
+    "content_hash": "sha256:5c43c093a648e4f367f0ab942ecb9ccc67c9f340bd6ebcbed7ad56ba319e7f26",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - River.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - River.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - The Mangroves.md": {
+    "content_hash": "sha256:d03e809a3bd546c101e5a78d70478feba6fd6fb3842f30e5b0399f7b5b0eecb9",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - The Mangroves.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - The Mangroves.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - The Marshes.md": {
+    "content_hash": "sha256:fd44ed6c87eea986bff026ae17738b6a583769aa9986a09c8ad1c6d5585720f1",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - The Marshes.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - The Marshes.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/aruhe-caves.md": {
+    "content_hash": "sha256:1fc4a8d12fb9bda4e4cde426374a88de7bc7e4b722be5acef62acf50fa704bc8",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Lava Tubes.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Lava Tubes.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Grasslands - Print Braid.md": {
+    "content_hash": "sha256:0a4c42e3c52d58927a0ea9c29d8b6607aff94056fad3f1e311a825c248889068",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Grasslands - Print Braid.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Grasslands - Print Braid.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Grasslands Torn Crossing.md": {
+    "content_hash": "sha256:f6c2454ed1d59afc8f811979a4251b7365ce179dacb0724aaa5389293f9a1024",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Grasslands Torn Crossing.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Grasslands Torn Crossing.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Lava Tubes.md": {
+    "content_hash": "sha256:354c6f407b47f330765a1986e0cf4f57692809d73057bb608c7fa3aa4a4306d3",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Lava Tubes.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Lava Tubes.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Old Gardens.md": {
+    "content_hash": "sha256:8f01d10a0d7820a4c56b1aa85d2bf2a0d5c4c1cf70a4deed8d84581c7b79b81c",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Old Gardens.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Old Gardens.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Quiet Forest Cutoff Lip.md": {
+    "content_hash": "sha256:097cc7e00049524e527a3f651743afddb56a680a4437491c9bf08dc20add2e19",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Quiet Forest Cutoff Lip.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Quiet Forest Cutoff Lip.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Quiet Forest Spoke Ring.md": {
+    "content_hash": "sha256:acaec1df6471ae8ecdc0559b5285d3b28cfd75e7b87842f05f9d3bf49e87482b",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Quiet Forest Spoke Ring.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Quiet Forest Spoke Ring.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Quiet Forest Star Cut.md": {
+    "content_hash": "sha256:08b7d024bd4c29c3f1cdad67bec09d26f89f6f9505d83ce089f209cc346509e1",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Quiet Forest Star Cut.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Quiet Forest Star Cut.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Bear-Elk.md": {
+    "content_hash": "sha256:8fac8b530ddfc2d241f16d63412641ed342416478740592c801ad1b62c46af7f",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Bear-Elk.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Bear-Elk.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Black Lotus.md": {
+    "content_hash": "sha256:167cb08b9f16e617735697b642818c6bad51dccc07b5625c252193858da9fd17",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Black Lotus.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Black Lotus.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Bloodhawk.md": {
+    "content_hash": "sha256:deeff1798267377caa952141416d503367a511ff2be55c5c24ba181953af97ad",
+    "last_ingested": "2026-09-12T00:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Bloodhawk.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Bloodhawk.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  }
+}

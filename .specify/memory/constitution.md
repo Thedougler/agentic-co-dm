@@ -1,13 +1,14 @@
 <!--
 Sync Impact Report
-- Version change: 1.0.0 → 1.1.0
-- Modified principles: none renamed
+- Version change: 1.2.0 → 1.3.0
+- Modified principles:
+  - none renamed
 - Added sections:
-  - VI. Tools Are Agent-Shaped
+  - X. Agents Act Autonomously By Default
 - Removed sections: none
-- Follow-up TODOs: none. Prior TODO (product-domain principles after
-  CONTEXT.md) is closed: CONTEXT.md exists; I. already binds it. Do not
-  duplicate glossary into this file.
+- Follow-up TODOs: none in this file. Informal "wait to commit/push" in
+  AGENTS.md / RULES.md / git extension config is superseded and must be
+  aligned outside this command.
 -->
 
 # Agentic Co-DM Constitution
@@ -43,8 +44,12 @@ acceptance scenarios before implementation starts. The Full SDD Cycle is
 specify → plan → tasks → implement; spec and plan review gates MUST be
 honored when that workflow is used. `ready-for-agent` means the spec is
 complete enough to implement without further human clarification.
+Acceptance scenarios MUST name outcomes. They MUST NOT prescribe a
+creative method, voice, or implementation when more than one approach
+meets those outcomes (see VII).
 
-Rationale: underspecified work produces agent drift and unreviewable diffs.
+Rationale: underspecified work produces agent drift; overspecified work
+suffocates the creative product.
 
 ### IV. Tests Specify Behavior
 
@@ -69,10 +74,11 @@ is actually resolved, not up front.
 Rationale: one context until the map proves otherwise keeps the glossary
 and ADRs findable.
 
-### VI. Tools Are Agent-Shaped
+### VI. Software Is Agent-Shaped
 
 This is an agentic project in early development. Ship. Every script, tool,
-and util MUST be agent-shaped:
+util, and other software in this repository MUST be agent-shaped and
+usable by an agent as the primary operator:
 
 - An agent MUST be able to invoke it without a GUI: arguments in, text or
   JSON out, errors on stderr, an exit code that distinguishes done from
@@ -89,33 +95,125 @@ and util MUST be agent-shaped:
 Rationale: a tool the agent cannot run does not exist. Early speed is
 small, invocable tools, not delayed product surface.
 
+### VII. Do Not Suffocate Agents
+
+Overspecificity is a defect in creative work and in the agentic design of
+creative software and infrastructure. Specs, skills, templates, checklists,
+and reviews MUST constrain only independently testable acceptance, safety,
+domain language, and named failure modes. They MUST NOT prescribe a single
+creative method, voice, structure, or implementation when more than one
+valid approach meets those constraints. A required step, gate, or checklist
+item that does not prevent a named failure MUST NOT be added. Agents
+working in this repository MUST retain judgment on creative Work.
+
+Rationale: this product exists to produce playable creative Work. Process
+that smothers judgment produces worse Work, not safer Work.
+
+### VIII. Safe Automation Runs Unattended
+
+Easy, safe, idempotent automation MUST run without an agent choosing to
+invoke it or sequencing it in a skill. Formatters, index refresh,
+hook-driven repository init, and equivalent post-write maintenance MUST be
+automatic, idempotent, and safe to re-run. Agents MUST assume those steps
+already ran and MUST NOT spend tokens considering them. Automation that is
+not easy, not safe, or not idempotent MUST stay explicit. It MUST NOT be
+hidden in a hook.
+
+Rationale: chores that need no judgment are not agent work.
+
+### IX. Design Trends Toward Token Efficiency
+
+Agent-consumed surfaces (skills, `AGENTS.md`, constitutions, CLIs, errors)
+MUST trend toward fewer tokens for the same outcome. Standing context MUST
+be load-bearing. Skills MUST use progressive disclosure; the environment
+is truth. A change that increases tokens an agent must read or emit to
+complete the same task MUST be justified by a named failure it prevents.
+Duplicating guidance that already lives in one source of truth is a defect.
+
+Rationale: extra tokens are latency, cost, and noise that drown the signal.
+
+### X. Agents Act Autonomously By Default
+
+Agents MUST complete the git and context loop without waiting to be asked.
+Waiting for a human to say "commit", "push", "make a branch", or "update
+from main" is a defect unless a named safety failure applies.
+
+Git by default:
+
+- Agents MUST commit completed work on the current task as they go.
+- Agents MUST push the working branch to `origin` after those commits.
+- Agents MUST use a feature branch for work that does not already have
+  one. They MUST NOT commit feature work directly to `main`.
+- Agents MUST fetch and update the working branch from `origin/main`
+  before starting substantial work and before reporting done.
+- When the assigned work is complete and required checks pass, agents
+  MUST land it on `main` by the repository's normal path (merge or PR)
+  and MUST leave `origin/main` current. They MUST NOT wait for a human
+  to merge a ready branch.
+- Agents MUST NOT force-push `main` or rewrite published default-branch
+  history. They MUST NOT commit secrets, credentials, or unrelated dirty
+  files. They MUST NOT skip required checks to land on `main`.
+
+Agent context by default:
+
+- Spec Kit agent-context MUST be used. Live feature context MUST live in
+  the configured agent context file, not in chat paste.
+- After specify, plan, or equivalent artifact changes, agents MUST refresh
+  that context file rather than telling the next session to "remember"
+  the plan.
+
+Agentic development defaults otherwise follow this constitution and
+established agentic practice: spec before code, small slices, evidence
+before done, one writer per canonical artifact, no duplicate sources of
+truth. A skill or sticky rule that requires a human prompt for commit,
+push, branch, or agent-context refresh is informal practice and loses
+(see Governance).
+
+Rationale: an agent that stops for git ceremony is not autonomous. The
+repository and its context files are the memory; the default branch must
+not lag completed work.
+
 ## Agent Operating Constraints
 
 - Runtime guidance for agents is `AGENTS.md`. Skills MUST follow
   `docs/agents/issue-tracker.md`, `docs/agents/triage-labels.md`, and
   `docs/agents/domain.md`.
 - Skills, `AGENTS.md`, and other agent-consumed docs MUST follow
-  `.agents/skills/writing-for-agents`.
+  `.agents/skills/writing-for-agents` and MUST stay as short as the
+  named failure they prevent.
 - If `CONTEXT.md` or `docs/adr/` is absent, agents MUST proceed without
   flagging the absence or proposing those files as a prerequisite.
 - Wayfinder maps (issue labelled `wayfinder:map`) and child tickets are
   the exploration surface when that workflow is in use. Blocking MUST use
   GitHub issue dependencies when available.
-- PRs-as-request-surface is **no**.
+- PRs-as-request-surface is **no**. PRs remain a landing path for X.
+- Agents MUST NOT re-run or document easy, safe, idempotent automation
+  that already runs unattended.
+- Agents MUST auto-commit, auto-push the working branch, keep it current
+  with `main`, and refresh agent-context, per X. They MUST NOT ask
+  permission for those steps.
 
 ## Development Workflow
 
 1. Triage: an issue is not implementable until it carries `ready-for-agent`
    or `ready-for-human`.
 2. Specify: write the spec (`/speckit.specify`) with prioritized,
-   independently testable user stories.
+   independently testable user stories. Stop at acceptance. Do not encode
+   a creative method. Refresh agent-context. Commit and push.
 3. Plan and tasks: `/speckit.plan` then `/speckit.tasks` after spec approval.
+   Plans MUST NOT add steps an unattended hook already performs. Refresh
+   agent-context. Commit and push. Keep the branch current with `main`.
 4. Implement: TDD at agreed seams; one red → green slice at a time.
    Refactoring belongs to review, not the implementation loop. Prefer a
-   small agent-shaped tool over waiting for a human-facing one.
+   small agent-shaped tool over waiting for a human-facing one. Commit
+   per slice, push, and land on `main` when the slice is done and checks
+   pass.
 5. Review: code review MUST check constitution compliance, ADR conflicts,
-   that tests observe behavior rather than internals, and that new
-   scripts/tools/utils are agent-shaped.
+   that tests observe behavior rather than internals, that new
+   software is agent-shaped, that process is not overspecific, that easy
+   safe idempotent automation is unattended, that standing agent
+   context did not grow without a named failure, and that git/context
+   autonomy was not reintroduced as a human gate.
 
 ## Governance
 
@@ -142,7 +240,14 @@ Compliance:
 - Unjustified complexity (new context, new abstraction, new tracker
   surface) MUST be rejected or recorded as an ADR.
 - A new script, tool, or util that is not agent-shaped MUST be rejected.
+- A required creative procedure, extra standing context, or agent-facing
+  chore that does not prevent a named failure MUST be rejected.
+- Easy, safe, idempotent work left as a manual agent step MUST be
+  rejected in favor of unattended automation.
+- A required human prompt to commit, push, branch, update from `main`,
+  or refresh agent-context MUST be rejected unless it prevents a named
+  safety failure (secrets, force-push of `main`, skipping checks).
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.1.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-11
+**Version**: 1.3.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12

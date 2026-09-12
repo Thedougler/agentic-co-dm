@@ -1,0 +1,28 @@
+collections:
+  wiki:
+    path: wiki
+    pattern: "**/*.md"
+    context:
+      "": "Compiled campaign wiki in this repo. Current canon. Prefer -c wiki for lookups."
+  shattered-sea:
+    path: /Users/nick/Documents/ai-co-dm/campaigns/shattered-sea
+    pattern: "**/*.md"
+    includeByDefault: false
+    context:
+      "": "Legacy live campaign notes (campaign of record). Not canon here. Search after wiki silence. Do not write here."
+  legacy-ss:
+    path: /Users/nick/shattered-sea/wiki/shattered-sea
+    pattern: "**/*.md"
+    includeByDefault: false
+    context:
+      "": "Older Campaign OS wiki. Not canon. Search after shattered-sea silence. Never write here."
+  legacy:
+    path: legacy
+    pattern: "**/*.md"
+    includeByDefault: false
+    context:
+      "": "Local Campaign OS archive under legacy/. Not canon. Opt-in only: -c legacy. Do not mix with wiki, shattered-sea, or legacy-ss."
+models:
+  embed: hf:ggml-org/embeddinggemma-300M-GGUF/embeddinggemma-300M-Q8_0.gguf
+  generate: hf:tobil/qmd-query-expansion-1.7B-gguf/qmd-query-expansion-1.7B-q4_k_m.gguf
+  rerank: hf:ggml-org/Qwen3-Reranker-0.6B-Q8_0-GGUF/qwen3-reranker-0.6b-q8_0.gguf

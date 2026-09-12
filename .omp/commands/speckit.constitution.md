@@ -1,17 +1,11 @@
 ---
 description: Create or update the project constitution from interactive or provided principle inputs.
 handoffs:
-- label: Build Specification
-  agent: speckit.specify
-  prompt: Implement the feature specification based on the updated constitution. I want to build...
-scripts:
-  sh: .specify/scripts/bash/resolve-template.sh constitution-template --json
-  ps: .specify/scripts/powershell/resolve-template.ps1 constitution-template -Json
-  py: .specify/scripts/python/resolve_template.py constitution-template --json
+  - label: Build Specification
+    agent: speckit.specify
+    prompt: Implement the feature specification based on the updated constitution. I want to build...
 ---
 
-
-<!-- Source: core (bundled) -->
 ## User Input
 
 ```text
@@ -82,7 +76,7 @@ preset/template resolution stack.
 
 Follow this execution flow:
 
-1. Run `.specify/scripts/bash/resolve-template.sh constitution-template --json` from the repository root and parse `TEMPLATE_CONTENT` as the active template.
+1. Run `.venv/bin/python .specify/scripts/python/resolve_template.py constitution-template --json` from the repository root and parse `TEMPLATE_CONTENT` as the active template.
    - The shared resolver applies project overrides, composing preset layers, and extension layers
      before the core template fallback. It MUST succeed before continuing.
    - If it fails, stop and report the resolution error; do not continue with only one contributing

@@ -1,0 +1,32 @@
+---
+type: entity
+subtype: building
+campaign: shattered-sea
+status: stub
+audience: dm
+publish: false
+summary: "DaVirelli's shop; source of the Brass Cat's arcane artillery. Note: aliased as both 'Cat's Curios' and 'Kat's Curios' in source — confirm the canonical spelling."
+created: 2026-05-28
+updated: 2026-06-06
+tags:
+  - needs-detail
+sources:
+  - wiki/entities/vehicles/brass-cat.md
+  - wiki/entities/creatures/animated-rug-of-smothering.md
+confidence_level: medium
+---
+
+# Cat's Curios — Stub
+
+[[catarina-davirelli|Catarina DaVirelli]]'s shop; source of the *Brass Cat*'s arcane artillery. No page yet.
+
+> [!dm]
+> Source spells this both "Cat's Curios" and "Kat's Curios" — confirm which is canon before this page is fleshed out.
+
+## Known Services
+
+- [[artificer-commission|Artificer commission]] — Custom precision work; referral required; priced per job.
+- [[mechanism-repair|Mechanism repair]] — Clockwork, firearms, and arcane mechanisms. Referral required.
+- [[pneumatic-grapple|Pneumatic grapple]] — Wrist-mounted. Three shots; 10-minute repressurize. Prototype pricing on request.
+- [[spark-pistol|Spark pistol]] — Single-shot lightning. No powder, no wet-weather misfire. One prototype; Catarina has not decided what went wrong with it.
+- [[puntura|Puntura]] — On commission. Not for sale. See notes.

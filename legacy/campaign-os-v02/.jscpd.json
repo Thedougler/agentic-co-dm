@@ -1,0 +1,25 @@
+{
+  "path": [
+    "vault",
+    "_templates",
+    ".claude/skills",
+    "docs"
+  ],
+  "format": [
+    "markdown"
+  ],
+  "minLines": 3,
+  "minTokens": 50,
+  "mode": "weak",
+  "ignore": [
+    "**/node_modules/**",
+    "**/.claude/worktrees/**",
+    "vault/refs/table-*.md",
+    "vault/campaigns/shattered-sea/pcs/va-scripts/**"
+  ],
+  "reporters": [
+    "console"
+  ],
+  "absolute": false,
+  "gitignore": true
+}

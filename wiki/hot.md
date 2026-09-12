@@ -1,24 +1,11 @@
 ---
 title: Hot Cache
-updated: 2026-09-12T03:37:27Z
+updated: 2026-09-12
 ---
-
-# Hot Cache
-
-*A ~500-word semantic snapshot of recent activity. Updated after every major write operation.*
-
 ## Recent Activity
-
-- [2026-09-12T03:37:27Z] INIT — vault created at /Users/nick/agentic-co-dm/wiki
-
+Ingested the Young Bloodhawk as a proposed juvenile creature page, linking its Flush Dive hunting role to the adult Bloodhawk and Aruhe's exposed routes.
 ## Active Threads
-
-*None yet — start ingesting sources to populate.*
-
+The adult Bloodhawk's hunting line now has a runnable juvenile pressure element.
 ## Key Takeaways
-
-*None yet.*
-
+Aruhe's aerial predators use staged pressure: the adult breaks prey from cover, while young Bloodhawks drive exposed or airborne bodies downward.
 ## Flagged Contradictions
-
-*None yet.*

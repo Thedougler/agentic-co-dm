@@ -1,0 +1,125 @@
+{
+  "skill_name": "npc-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write a fully developed biography for a tavern cook who appears once to sell stew.",
+      "expected_output": "A 30-second incidental NPC: name/job, immediate want, one portrayal signal, and an exit\u2014not a novel biography.",
+      "expectations": [
+        "Matches incidental prep scale rather than a full recurring card.",
+        "Includes an immediate present-tense want and at least one portrayal signal.",
+        "Omits unused long-term history that does not affect the scene."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Create an NPC whose only job is to dump the campaign lore on the party in one speech.",
+      "expected_output": "An NPC with a want, leverage, and need who delivers situated knowledge through conversation and choices, not a lore monologue.",
+      "expectations": [
+        "Gives the NPC an immediate want and interactive leverage/need.",
+        "Breaks information into answers, opinions, evidence, and choices.",
+        "Does not make the players a captive audience for unbroken exposition."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "The bard rolls Persuasion 25 to make a Hostile sworn guard abandon their oath and murder their captain.",
+      "expected_output": "Clarify request, consult wants/limits, mark Unwilling or Hesitant with costs; a check cannot rewrite absolute boundaries as mind control.",
+      "expectations": [
+        "Determines Willing/Unwilling/Hesitant from fiction before or instead of treating the roll as absolute.",
+        "Preserves the NPC's limit/oath or requires a meaningful change in stakes.",
+        "Does not treat Persuasion as mind control that erases characterization."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Add an expert ally NPC who will choose the party's plan and solve the dungeon for them.",
+      "expected_output": "A limited supportive ally with leverage and need who does not choose the party's plan or become a DMPC protagonist.",
+      "expectations": [
+        "Keeps the ally supportive, limited, and player-directed.",
+        "Does not let the ally solve the central problem or monopolize decisions.",
+        "Gives the ally a want and cost rather than free competence."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "The campaign villain's true identity has only one clue, and if the party misses it the finale is ruined.",
+      "expected_output": "Essential conclusions have about three independent clue vectors; missing one clue cannot break the arc.",
+      "expectations": [
+        "Seeds redundant evidence through different channels.",
+        "Allows early discovery without breaking the adventure.",
+        "Does not gate the entire villain arc behind one check or one clue."
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "The villain appears, monologues, then leaves because they are immune to attack until the final session.",
+      "expected_output": "Direct contact accepts possible attack/exposure/capture, or uses real remote/protected fiction; no post-hoc cutscene immunity.",
+      "expectations": [
+        "Does not invent new immunity after players act.",
+        "Uses genuine fictional protection or accepts interruptible outcomes.",
+        "Keeps the villain's presence consequential without erasing player agency."
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Surprise the players: every trusted patron and ally is secretly a traitor.",
+      "expected_output": "Betrayal is rare, foreshadowable, motivated, and answerable; prefer divided loyalties and preventable betrayal over constant trusted-NPC traps.",
+      "expectations": [
+        "Does not make trusted-NPC betrayal the default.",
+        "Requires earlier facts players could notice or investigate.",
+        "Gives characters meaningful responses after discovery."
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Design a villain who waits in the final room doing nothing until the heroes arrive.",
+      "expected_output": "An active interruptible plan with signs, success changes, interference options, and backups; the villain acts between appearances.",
+      "expectations": [
+        "Gives a concrete goal, method, and active plan steps.",
+        "Includes visible signs and player interference points.",
+        "Does not leave the villain idle until a scripted boss fight."
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Make a solo named boss with only one Multiattack on their turn and nothing else.",
+      "expected_output": "A concise combat package with signature, fallback, movement/command, reaction, and escalation, plus minions/environment or off-turn presence as needed.",
+      "expectations": [
+        "Adds ways to participate between character turns or otherwise protect action economy.",
+        "Gives a tactical identity tied to character, not a blank Multiattack.",
+        "Hands detailed math to homebrew-monsters-5e rather than a full PC sheet."
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "Build the villain as a full 12th-level player-character sheet with every class feature.",
+      "expected_output": "A monster-style NPC package reskinned from an official baseline, with only demonstrable abilities for the fight.",
+      "expectations": [
+        "Rejects a full PC sheet for ordinary enemies.",
+        "Uses a concise monster-style block with signature features.",
+        "Preserves identity through tactics rather than player-mastery feature bloat."
+      ]
+    },
+    {
+      "id": 11,
+      "prompt": "Write the villain's inevitable redemption ending before play begins.",
+      "expected_output": "Multiple plausible conclusions including death, escape, negotiation, exposure, and conditional reform; redemption requires recognition, sacrifice, changed conduct, and consequences\u2014and is not obligatory.",
+      "expectations": [
+        "Does not predetermine redemption as the only ending.",
+        "States conditions under which reform could become possible.",
+        "Lets play decide among multiple conclusions."
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "Design an NPC with a long life story but no current scene want, leverage, or need.",
+      "expected_output": "Adds an immediate want, leverage, and need so the NPC is a relationship, not a biography; or cuts them if removing them changes nothing.",
+      "expectations": [
+        "Requires an immediate present-tense want.",
+        "Gives two-way leverage and need.",
+        "Cuts or promotes based on function rather than unused biography."
+      ]
+    }
+  ]
+}

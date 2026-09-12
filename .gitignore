@@ -3,10 +3,19 @@
 **/.DS_Store
 Thumbs.db
 *.tmp
+*.swp
+*.log
+.vscode/
+.idea/
+
 
 # Secrets / machine paths
 .env
 .env.*
+!.env.example
+mcp.json
+foundry-data/
+foundry-data
 
 # Spec Kit local
 .specify/presets/.registry
@@ -28,7 +37,8 @@ wiki/.trash/
 **/.qmd/refresh.*
 
 # Harness copies of pipx wiki skills (absolute machine symlinks)
-.claude/skills/
+.claude/skills/*
+!.claude/skills/speckit-*/
 .cursor/skills/
 .kiro/skills/
 .pi/skills/
@@ -36,6 +46,8 @@ wiki/.trash/
 
 # Local pipx wiki-skill installs under the agent root (machine symlinks)
 .agents/skills/wiki-*
+!.agents/skills/wiki-ingest/
+!.agents/skills/wiki-ingest/**
 .agents/skills/claude-history-ingest
 .agents/skills/code-understand
 .agents/skills/codex-history-ingest
@@ -55,3 +67,17 @@ wiki/.trash/
 .agents/skills/skill-creator
 .agents/skills/tag-taxonomy
 .agents/skills/vault-skill-factory
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+dist/
+
+# Legacy archive — retain Markdown and WebP only.
+# .gitignore cannot enforce a WebP size limit; keep those assets lightweight.
+legacy/**
+!legacy/**/
+!legacy/**/*.md
+!legacy/**/*.webp

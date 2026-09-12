@@ -1,0 +1,26 @@
+filters:
+  and:
+    - file.inFolder("vault/srd/rules/")
+
+views:
+  - type: table
+    name: "Rules"
+    order:
+      - file.name
+      - type
+      - status
+      - tags
+      - touched
+    groupBy:
+      property: type
+      direction: ASC
+  - type: table
+    name: "House Rules"
+    filters:
+      and:
+        - 'type == "rule"'
+    order:
+      - file.name
+      - subtype
+      - status
+      - touched

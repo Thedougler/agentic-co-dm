@@ -21,12 +21,16 @@ The before-session window where the Co-DM authors playable Work for the DM (spok
 _Avoid_: in-session assistance; treating prep as what happened
 
 **Wrapup**:
-The after-session window where the Co-DM ingests the transcript and updates the knowledge bank to match play.
+The after-session window where the Co-DM ingests the transcript and updates the wiki to match play.
 _Avoid_: live agent note-taking; leaving prep as canon after play contradicts it
 
-**Knowledge bank**:
-Compiled, citable campaign pages the DM browses and the Co-DM must retrieve from.
-_Avoid_: unaudited chat memory; a second store beside the vault
+**Wiki**:
+Compiled, citable campaign pages the DM browses and the Co-DM must retrieve from (formerly referred to as "knowledge bank"). Written in complete sentences a human can read.
+_Avoid_: knowledge bank; the bank; unaudited chat memory; a second store beside the vault; AI shorthand; telegraphic agent-speak
+
+**Search index**:
+Derived retrieval layer over the wiki (commonly QMD). The wiki remains the source of truth.
+_Avoid_: treating the index as a second canon store
 
 **Theatre of the mind**:
 Spoken, sensory language the DM can read aloud. The mouth surface.
@@ -45,13 +49,13 @@ The current Co-DM vault — skills, templates, exemplars, and campaign notes at 
 _Avoid_: the empty wiki in this repo as source of truth; a third full copy of the campaign
 
 **Canon proposal**:
-A suggested change to bank facts. The Co-DM never silently edits canon. Fun may shape Work; facts change only when the DM accepts.
-_Avoid_: fun-as-silent-override; inventing lore or mechanics into the bank
+A suggested change to wiki facts. The Co-DM never silently edits canon. Fun may shape Work; facts change only when the DM accepts.
+_Avoid_: fun-as-silent-override; inventing lore or mechanics into the wiki as silent canon
 
 **Redesign**:
 A clean rebuild around best practice. It is not a patch list of current-vault failures.
 _Avoid_: user-corrections as spec; documenting operational grain as domain language
 
 **Prose wiki**:
-Obsidian markdown pages with a `type` and templates. The vault is the product the DM opens.
-_Avoid_: Campaign OS compilers as this product; a type-less dump of notes
+Obsidian markdown pages with a `type` and templates. The vault is the product the DM opens. Copy is ordinary human prose.
+_Avoid_: Campaign OS compilers as this product; a type-less dump of notes; pages that read like agent notes

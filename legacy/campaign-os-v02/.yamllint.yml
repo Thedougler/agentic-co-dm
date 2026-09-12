@@ -1,0 +1,32 @@
+# yamllint config for Campaign OS.
+#
+# Fires: pre-commit (on changed .yaml/.yml) and manual `yamllint .`. Surface is
+# small — session speakers.yaml, GitHub workflows, and the repo's own tool
+# configs. Frontmatter YAML inside .md pages is NOT yamllint's job (wiki_lint.py
+# parses that); yamllint only sees standalone .yaml/.yml files. Warn tier only:
+# yamllint has no autofix, so its findings are always agent-surfaced, never
+# silently changed.
+extends: default
+
+rules:
+  line-length:
+    max: 120
+    allow-non-breakable-words: true
+  document-start: disable   # speakers.yaml / configs don't require a `---`
+  truthy:
+    check-keys: false       # GitHub Actions uses `on:` as a mapping key
+  comments:
+    min-spaces-from-content: 1
+
+ignore: |
+  node_modules/
+  utils/site/
+  docs/campaign/legacy-skills/
+  pnpm-lock.yaml
+  **/pnpm-lock.yaml
+  **/*.lock
+  docs/vale-styles/proselint/
+  docs/vale-styles/write-good/
+  docs/vale-styles/Readability/
+  docs/vale-styles/ai-tells/
+  docs/vale-styles/ai-tells-commits/

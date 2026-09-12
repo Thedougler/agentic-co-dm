@@ -1,0 +1,42 @@
+# Rig config for shattered-audio (loaded when running from tools/audio/;
+# see Config.load in src/shattered_audio/config.py for the lookup order).
+
+# Preferred capture: the hand-built CoreAudio Aggregate Device (Audio MIDI
+# Setup) combining both mics on one clock with drift compensation — one
+# ffmpeg, inherently sample-aligned tracks, no chirp calibration needed.
+# `name` matches the avfoundation device by substring; `mics` entries are
+# positional (first = mic00 = dm-mic) and `channel` is the 0-based aggregate
+# channel that mic's audio lives on. This rig (probe-verified 2026-07-20):
+# ch0+ch1 = EMEET (bit-identical DSP mono — keep one), ch2 = MacBook mic.
+aggregate:
+  name: Aggregate Device
+  mics:
+    - {channel: 2, name: MacBook Air Microphone}    # mic00 → dm-mic
+    - {channel: 0, name: EMEET OfficeCore M0 Plus}  # mic01 → player-mic
+
+# Per-leg chirp calibration sweep bands — MANUAL FALLBACK for per-mic
+# (non-aggregate) capture only; aggregate mode shares one clock and skips
+# calibration entirely. Keyed by a name substring (or mic_id) of the mic
+# LISTENING on that leg (see chirp.run_calibration; name keys survive
+# avfoundation index reshuffles, positional mic_ids don't). Probe-validated
+# 2026-07-20 (scripts/chirp_band_probe.py): EMEET speaker -> MacBook mic
+# couples at 15-17.5 kHz (peak 0.585 @ 0.9 amplitude, floor 0.5) —
+# near-silent to adults. MacBook speaker -> EMEET mic is hard-capped at
+# 8 kHz Nyquist (16 kHz ADC), audible band kept (peak 0.697).
+chirp_bands:
+  MacBook: [15000, 17500]   # MacBook mic listens: EMEET emits near-ultrasonic
+  EMEET: [200, 8000]        # EMEET mic listens: MacBook emits audible sweep
+
+# Player -> character replacement, applied to transcript Speaker labels and
+# in-text mentions (session_transcribe.apply_speaker_map). Keeps player names
+# out of wiki content — they live only on their pcs/players/ pages. Keys are
+# the capitalized names voice profiles / mic priors emit; matching is
+# case-sensitive whole-word so lowercase collisions (the verb "nick") pass
+# through untouched.
+speaker_map:
+  Nick: DM
+  Chad: Jean-Claude Tabarnack
+  Courtney: Crissdalynn Khinriss
+  Frederick: Delmar Fisk
+  Kaden: Perrin Black-Jaw
+  Kaitlin: Catarina Da'Virelli

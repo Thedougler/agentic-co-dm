@@ -1,0 +1,8 @@
+extends: existence
+message: "Scoped-only fixture trigger %s — only fires under a directory-scoped .vale.ini section."
+link: https://github.com/anthropics/campaign-os
+level: error
+scope: text
+ignorecase: true
+tokens:
+  - 'scoped-only-trigger-phrase'

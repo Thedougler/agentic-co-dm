@@ -1,0 +1,12 @@
+/* Live-table-reference density. Tightens vertical rhythm (line height, paragraph and
+   list spacing, heading spacing) so more of a page fits on screen mid-session, without
+   touching --font-text-size (the user's own Appearance-settings font size choice).
+   Variables: docs.obsidian.md Reference/CSS variables/Foundations/Typography. */
+:root {
+  --line-height-normal: 1.45;
+  --p-spacing: 0.65em;
+  --heading-spacing: 1.1em;
+
+  /* Editor/List */
+  --list-spacing: 0.15em;
+}

@@ -1,0 +1,341 @@
+{
+  "monsters": [
+    [
+      "Vashu, the Weeping Veil (Winded)",
+      {
+        "layout": "Basic 5e Layout",
+        "name": "Vashu, the Weeping Veil (Winded)",
+        "size": "Small",
+        "type": "humanoid",
+        "subtype": "grung",
+        "alignment": "lawful evil",
+        "ac": "18 (unarmored, perfected Still-Water Discipline, winded)",
+        "hp": 80,
+        "hit_dice": "20d6 + 20",
+        "speed": "30 ft., climb 30 ft.",
+        "stats": [
+          14,
+          20,
+          18,
+          11,
+          20,
+          13
+        ],
+        "saves": [
+          {
+            "Dex": 8
+          },
+          {
+            "Con": 7
+          },
+          {
+            "Wis": 8
+          }
+        ],
+        "skillsaves": [
+          {
+            "Acrobatics": 8
+          },
+          {
+            "Athletics": 5
+          },
+          {
+            "Insight": 8
+          },
+          {
+            "Perception": 8
+          },
+          {
+            "Stealth": 8
+          }
+        ],
+        "damage_immunities": "poison",
+        "condition_immunities": "blinded, poisoned",
+        "senses": "blindsight 40 ft. (blind beyond this radius), passive Perception 18",
+        "languages": "Grung",
+        "cr": 5,
+        "source": "Homebrew — winded combat state of Vashu, the Weeping Veil",
+        "traits": [
+          {
+            "name": "Blind Discipline",
+            "desc": "Vashu can't use sight and is unaffected by anything that relies on seeing her or on obscured vision. A constant, rapid tongue-click lets her perceive everything within 40 feet by echo, vibration, and scent, ignoring darkness, fog, invisibility, and her own Weeping Veil. An attacker Vashu can perceive gains no benefit from being unseen."
+          },
+          {
+            "name": "Standing Leap",
+            "desc": "Vashu's long jump is 30 feet and her high jump is 20 feet, with or without a running start."
+          },
+          {
+            "name": "Evasion",
+            "desc": "When Vashu is subjected to an effect that allows a Dexterity saving throw for half damage, she instead takes no damage on a success and half on a failure."
+          },
+          {
+            "name": "Slippery Grip (3/Day)",
+            "desc": "Vashu has advantage on ability checks and saving throws to avoid or escape being grappled or restrained. In addition, if she fails a saving throw, or a creature attempts to grapple or restrain her, she can choose to succeed on the save instead, or cause the grapple/restrain attempt to automatically fail — she must decide before knowing whether the roll would have succeeded."
+          },
+          {
+            "name": "Venom-Wet Strikes",
+            "desc": "A creature that hits Vashu with a melee attack while within 5 feet of her, or that grapples her, must succeed on a DC 14 Constitution saving throw or be poisoned until the start of its next turn."
+          }
+        ],
+        "actions": [
+          {
+            "name": "Multiattack",
+            "desc": "Vashu makes one Still-Water Strike attack and one Tongue Lash attack."
+          },
+          {
+            "name": "Still-Water Strike",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage. If the target is poisoned, it also takes 9 (2d8) poison damage."
+          }
+        ],
+        "bonus_actions": [
+          {
+            "name": "Tongue Lash",
+            "desc": "Vashu lashes her tongue at one creature she can perceive within 20 feet. Ranged Weapon Attack: +7 to hit. Hit: 5 (1d4 + 3) bludgeoning damage, and Vashu pulls the target up to 15 feet toward her, to an unoccupied space, ending the pull early if it would put the target in danger (e.g. a fall, hazard, or lava). No effect on a target two or more size categories larger than Vashu."
+          },
+          {
+            "name": "Weeping Veil (Recharge 5–6)",
+            "desc": "Vashu shatters a bone vial, releasing a bitter mist in a 25-foot-radius sphere centered on herself. The area is heavily obscured until the start of her next turn. Each creature that starts its turn in the area, or enters it for the first time on a turn, must succeed on a DC 14 Constitution saving throw or be blinded and poisoned until the end of that turn. Vashu is unaffected. She carries 4 vials."
+          },
+          {
+            "name": "Step of the Tide",
+            "desc": "Vashu takes the Dash or Disengage action."
+          }
+        ],
+        "reactions": [
+          {
+            "name": "Still-Water Deflection",
+            "desc": "When Vashu or an ally within 10 feet of her is hit by a ranged attack Vashu can perceive, she reduces the damage to that target by 15 (2d10 + 4). If this reduces the damage taken by Vashu herself to 0, she can redirect the missile at a creature she can perceive within 30 feet: +7 to hit, 12 (2d10 + 1) damage of the triggering attack's type."
+          }
+        ]
+      }
+    ],
+    [
+      "Grung Elite Warrior",
+      {
+        "layout": "Basic 5e Layout",
+        "name": "Grung Elite Warrior",
+        "size": "Small",
+        "type": "humanoid",
+        "subtype": "grung",
+        "alignment": "Typically Lawful Evil",
+        "ac": 13,
+        "ac_note": "natural armor",
+        "hp": 49,
+        "hit_dice": "9d6 + 18",
+        "speed": "25 ft., Climb 25 ft.",
+        "stats": [
+          7,
+          16,
+          15,
+          10,
+          11,
+          12
+        ],
+        "saves": [
+          {
+            "dexterity": 5
+          }
+        ],
+        "skillsaves": [
+          {
+            "athletics": 2
+          },
+          {
+            "perception": 2
+          },
+          {
+            "stealth": 5
+          },
+          {
+            "survival": 2
+          }
+        ],
+        "damage_immunities": "poison",
+        "condition_immunities": "poisoned",
+        "senses": "Passive Perception 12",
+        "languages": "Grung",
+        "cr": "2",
+        "traits": [
+          {
+            "name": "Amphibious",
+            "desc": "The grung can breathe air and water."
+          },
+          {
+            "name": "Poisonous Skin",
+            "desc": "Any creature that grapples the grung or otherwise comes into direct contact with the grung's skin must succeed on a DC 12 Constitution saving throw or become poisoned for 1 minute. A poisoned creature no longer in direct contact with the grung can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+          },
+          {
+            "name": "Standing Leap",
+            "desc": "The grung's long jump is up to 25 feet and its high jump is up to 15 feet, with or without a running start."
+          }
+        ],
+        "actions": [
+          {
+            "name": "Multiattack",
+            "desc": "The grung makes two attacks with its dagger or shortbow."
+          },
+          {
+            "name": "Dagger",
+            "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 5 (2d4) poison damage."
+          },
+          {
+            "name": "Shortbow",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 5 (2d4) poison damage."
+          },
+          {
+            "name": "Mesmerizing Chirr (Recharge 6)",
+            "desc": "The grung makes a chirring noise to which grung are immune. Each humanoid or beast within 15 feet of the grung that can hear it must succeed on a DC 12 Wisdom saving throw or be stunned until the end of the grung's next turn."
+          }
+        ],
+        "source": "Homebrew"
+      }
+    ],
+    [
+      "Ozzeth, the Twiceborn",
+      {
+        "layout": "Basic 5e Layout",
+        "name": "Ozzeth, the Twiceborn",
+        "size": "Small",
+        "type": "humanoid",
+        "subtype": "grung",
+        "campaign": "shattered-sea",
+        "alignment": "lawful evil",
+        "ac": 16,
+        "ac_class": "mage armour (chromatic ward)",
+        "hp": 130,
+        "hit_dice": "20d6 + 60",
+        "speed": "25 ft., climb 25 ft., swim 30 ft.",
+        "stats": [
+          8,
+          16,
+          16,
+          20,
+          14,
+          16
+        ],
+        "saves": [
+          {
+            "constitution": 6
+          },
+          {
+            "intelligence": 8
+          },
+          {
+            "wisdom": 5
+          }
+        ],
+        "skillsaves": [
+          {
+            "arcana": 8
+          },
+          {
+            "deception": 6
+          },
+          {
+            "insight": 5
+          },
+          {
+            "stealth": 6
+          }
+        ],
+        "damage_immunities": "poison",
+        "condition_immunities": "poisoned",
+        "senses": "passive Perception 15",
+        "languages": "Grung, Common, Deep Speech",
+        "cr": 8,
+        "traits": [
+          {
+            "name": "Twiceborn Will",
+            "desc": "Ozzeth has advantage on Constitution saving throws to maintain concentration, and advantage on saving throws against being charmed or frightened. A being whose own body has broken the caste order does not bend easily to anyone else's."
+          },
+          {
+            "name": "Chromatic Anomaly",
+            "desc": "Ozzeth's skin runs blue and red at once, the colours shifting as he moves. He is never surprised while he can see, and a creature that tries to read his caste, rank, or intent by sight (an Insight check to gauge him) has disadvantage — the signal he broadcasts is a contradiction. Purely diegetic; it grants no combat bonus beyond this."
+          },
+          {
+            "name": "Standing Leap",
+            "desc": "Ozzeth's long jump is 25 feet and his high jump is 15 feet, with or without a running start."
+          },
+          {
+            "name": "Toxic Skin",
+            "desc": "A creature that touches Ozzeth or hits him with a melee attack while within 5 feet, or that grapples him, must succeed on a DC 14 Constitution saving throw or take 5 (2d4) poison damage and be poisoned until the start of its next turn."
+          },
+          {
+            "name": "Spellcasting",
+            "desc": "Ozzeth is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). He casts with no verbal components — his conjuring is scent, gesture, and colour. Cantrips (at will): mind sliver, minor illusion, poison spray, message. 1st level (4 slots): shield, charm person, disguise self, silent image. 2nd level (3 slots): hold person, misty step, mirror image. 3rd level (3 slots): fireball, fear, hypnotic pattern. 4th level (3 slots): greater invisibility, dimension door, phantasmal killer. 5th level (1 slot): dominate person."
+          },
+          {
+            "name": "Legendary Resistance (2/Day)",
+            "desc": "If Ozzeth fails a saving throw, he can choose to succeed instead."
+          }
+        ],
+        "actions": [
+          {
+            "name": "Multiattack",
+            "desc": "Ozzeth casts one cantrip and makes one Venom Lash attack."
+          },
+          {
+            "name": "Venom Lash",
+            "desc": "Melee Weapon Attack (tongue): +6 to hit, reach 10 ft., one target. Hit: 5 (1d4 + 3) piercing damage, and the target must succeed on a DC 14 Constitution saving throw or take 7 (2d6) poison damage. Ozzeth can pull a target of Medium size or smaller 5 feet toward him on a hit."
+          },
+          {
+            "name": "Poison Spray (Cantrip)",
+            "desc": "One creature within 10 feet must succeed on a DC 16 Constitution saving throw or take 11 (2d10) poison damage. (Grung venom, wept as a needle-fine mist.)"
+          }
+        ],
+        "bonus_actions": [
+          {
+            "name": "Misty Step (2nd-Level Slot)",
+            "desc": "Ozzeth teleports up to 30 feet to an unoccupied space he can see."
+          }
+        ],
+        "reactions": [
+          {
+            "name": "Shield (1st-Level Slot)",
+            "desc": "When hit by an attack or targeted by magic missile, Ozzeth gains a +5 bonus to AC until the start of his next turn, including against the triggering attack, and takes no damage from magic missile."
+          }
+        ],
+        "legendary_actions": [
+          {
+            "name": "Weeping Cantrip",
+            "desc": "Ozzeth casts a cantrip (typically poison spray or mind sliver)."
+          },
+          {
+            "name": "Slip the Skin",
+            "desc": "Ozzeth moves up to his speed without provoking opportunity attacks. He may climb or enter water as part of this move."
+          },
+          {
+            "name": "Pull the Thread (Costs 2 Actions)",
+            "desc": "Ozzeth targets one creature charmed, frightened, or dominated by him that he can see within 60 feet. That creature immediately uses its reaction to move up to its speed and make one weapon attack against a target of Ozzeth's choice."
+          }
+        ],
+        "source": "Homebrew"
+      }
+    ]
+  ],
+  "defaultLayouts": {},
+  "layouts": [],
+  "default": "basic-5e-layout",
+  "useDice": true,
+  "renderDice": false,
+  "export": true,
+  "showAdvanced": false,
+  "version": {
+    "major": 4,
+    "minor": 10,
+    "patch": 3
+  },
+  "paths": [
+    "srd/monsters",
+    "campaigns/shattered-sea/monsters"
+  ],
+  "autoParse": true,
+  "disableSRD": false,
+  "tryToRenderLinks": true,
+  "debug": false,
+  "notifiedOfFantasy": false,
+  "hideConditionHelp": false,
+  "alwaysImport": false,
+  "defaultLayoutsIntegrated": true,
+  "atomicWrite": false
+}

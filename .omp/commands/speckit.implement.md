@@ -1,13 +1,7 @@
 ---
 description: Execute the implementation plan by processing and executing all tasks defined in tasks.md
-scripts:
-  sh: .specify/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks
-  ps: .specify/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks
-  py: .specify/scripts/python/check_prerequisites.py --json --require-tasks --include-tasks
 ---
 
-
-<!-- Source: core (bundled) -->
 ## User Input
 
 ```text
@@ -53,7 +47,7 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 ## Outline
 
-1. Run `.specify/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks` from repo root and parse FEATURE_DIR and AVAILABLE_DOCS list. All paths must be absolute. For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
+1. Run `.venv/bin/python .specify/scripts/python/check_prerequisites.py --json --require-tasks --include-tasks` from repo root and parse FEATURE_DIR and AVAILABLE_DOCS list. All paths must be absolute. For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
 
 2. **Check checklists status** (if FEATURE_DIR/checklists/ exists):
    - Treat checklist markers as a read-only gate: scan checkbox state, report status, and ask before proceeding when needed; do NOT modify checklist files or markers

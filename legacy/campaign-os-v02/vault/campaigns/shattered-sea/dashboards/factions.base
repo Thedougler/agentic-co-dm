@@ -1,0 +1,18 @@
+filters:
+  and:
+    - file.inFolder("content/factions/")
+    - type == "faction"
+    - or:
+        - campaigns.isEmpty()
+        - campaigns.contains("Shattered Sea")
+views:
+  - type: table
+    name: Factions
+    groupBy:
+      property: status
+      direction: ASC
+    order:
+      - file.name
+      - status
+      - tags
+      - touched

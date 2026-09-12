@@ -26,6 +26,58 @@ You can maintain multiple vaults (each a `~/.obsidian-wiki/config.<name>` file m
 
 **After reading config, always read `$OBSIDIAN_VAULT_PATH/AGENTS.md` if it exists.** It contains owner-specific conventions (domain vocabulary, ingest preferences, writing style, project scoping) that override framework defaults for all skills. Apply it for the duration of the session.
 
+## Campaign Co-DM
+
+Load `wiki/AGENTS.md` before any write to `wiki/` (campaign `type`, `lifecycle`, `reveal`, complete-sentence prose).
+Load `docs/agents/work.md` before Co-DM prep or wrapup output (Work gate: chat proposal; wiki write after DM accept).
+
+## Writing and visual authorities
+
+Reader is `agent` | `DM` | `players`. Unknown reader → `DM`. Vault is `true` if the destination is a wiki vault note, else `false`. Authorities are every matching row; they stack and do not cancel. Incomplete until all matching authorities are applied.
+
+| Classifier | Authority |
+|---|---|
+| An agent will follow the text | writing-for-agents |
+| The DM will read the text | copy-writer |
+| Players will hear or see the text | theatre of the mind |
+| Destination is a wiki vault note | obsidian-markdown |
+| Working with visual references for a depiction | visual-references |
+| Producing (attach, ground, generate, promote, place) a visual aid | visual-aids |
+
+
+## Skill design dispatch
+
+Classify before any in-scope instruction file changes. Class is `design-impact` | `not`. Length MUST NOT be the gate.
+
+Design-impact if the change would alter skill triggering, workflow ownership, standing load, or would create a skill or subagent. Borderline of those four bullets MUST be treated as design-impact. Creating a new skill or subagent MUST be classified as design-impact.
+
+| Class | Writer |
+|---|---|
+| `design-impact` | designated writer |
+| `not` | session agent |
+| owner explicitly skips dispatch | session agent |
+
+Writer is designated writer if design-impact (unless owner overrule), else session agent. Overrule is explicit owner skip only; silence is not overrule.
+
+In-scope: source skill; standing instruction / sticky rule; subagent definition; writing-for-agents.
+Out-of-scope: constitution; feature specs; generated Spec Kit adapters; campaign wiki.
+
+Design-impact work: `docs/agents/skill-design-dispatch.md`.
+
+## Vault retrieval
+
+Search is on by default against collection `wiki`. Empty `QMD_WIKI_COLLECTION` still means `wiki`.
+
+Load `.agents/skills/qmd` for query/get. Snippets are leads — `qmd get` / `qmd multi-get` before citing facts.
+
+Order (`specs/004-qmd-search-default/contracts/retrieval-precedence.md`): `-c wiki` first; if silence `-c shattered-sea`; if silence `-c legacy-ss`; if still silence, say the wiki is silent.
+
+Wiki hit = current canon. Legacy hit = campaign-of-record context; wiki write only after DM accept. Wiki vs legacy disagreement → cite wiki.
+
+Collection `legacy` is the `legacy/` archive. Search it only with `-c legacy`. Do not add it to the wiki / shattered-sea / legacy-ss order.
+
+If `qmd status` fails at session start, run `scripts/qmd-maintain.sh`. After wiki writes, wiki-ingest Step 8 runs that script. Exit 1: report the failure; already-written wiki pages stay.
+
 ## Vault Structure
 
 ```
@@ -164,6 +216,39 @@ See `wiki-query` and `wiki-export` skills for how the filter is applied.
 - **Single source of truth.** Visibility tags shape how content is surfaced — they don't duplicate or separate it.
 - **Keep context warm.** `hot.md` is a ~500-word semantic snapshot of recent activity. Every write skill updates it so the next session can pick up where the last one left off without crawling the full vault.
 
+## Sources of Truth
+
+Each fact has one owner. Do not restate these in harness config, generated adapters, or orchestrator skills.
+
+| Owner | Owns |
+|---|---|
+| `.specify/memory/constitution.md` | Non-negotiable project principles |
+| `specs/<feature>/spec.md` | Feature behavior and requirements |
+| `specs/<feature>/plan.md` | Feature technical design |
+| `specs/<feature>/tasks.md` | Feature implementation work graph |
+| `docs/` | Architecture, domain docs, harness dispatch procedure |
+| Source + tests | Executable truth |
+| Harness runtime files (`.omp/config.yml`, etc.) | That harness's runtime concerns only |
+| Spec Kit generated adapters | Harness invocation of Spec Kit phases (disposable) |
+
+Orchestrator procedure: `docs/agents/harness-dispatch.md`.
+
+## Workflow
+
+Spec Kit artifacts are the handoff protocol. Harness files must not copy feature requirements.
+
+- **Read, don't re-specify.** When a feature already has `specs/<feature>/{spec,plan,tasks}.md`, consume those artifacts. Do not reconstruct the feature from the original prompt.
+- **Spec-first changes.** When intended behavior must change, update the specification first, then reconcile plan and tasks, then implement. Do not silently redefine requirements in `tasks.md` or code.
+- **One writer per artifact.** At any moment each canonical artifact (spec, plan, tasks, writable workspace) has at most one writer. Others may inspect, review, test, or propose.
+- **Separate workspaces for parallel work.** Multiple write-capable harnesses must not share one writable workspace.
+- **Handoff is repository state.** Changing harness passes paths, commits, artifacts, expected phase, and only constraints absent from the repo — not pasted copies of canonical documents.
+
+## Validation
+
+- Spec Kit status: `specify integration status --json` — must be `ok`, default `omp`, four integrations installed.
+- Drift check: `scripts/check-speckit-dry.sh` — exit 0.
+- OMP baseline: `scripts/check-omp-baseline.sh` — exit 0.
+
 ## Architecture Reference
 
 For the full pattern (three-layer architecture, page templates, project org), read `.skills/llm-wiki/SKILL.md`.
@@ -171,3 +256,9 @@ For the full pattern (three-layer architecture, page templates, project org), re
 Human-facing documentation lives in `docs/` — `installation.md`, `agents.md`, `skills.md`, `cli.md`, `configuration.md`, `architecture.md`, `session-brain.md`, `contributing.md`. `README.md` is a landing page only; when you add a skill, CLI command, or config variable, update the matching `docs/` page rather than the README.
 
 The vault format is structurally conformant with the [Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) — markdown files with YAML frontmatter, category subfolders, reserved `index.md`/`log.md`. `wiki-export` (OKF mode) and `wiki-import` are the bridge: they translate between our native frontmatter (`title`/`category`/`tags`/`sources`/`created`/`updated` + `summary`) and OKF (`type`/`title`/`description`/`resource`/`tags`/`timestamp`), making vaults exchangeable with any OKF tool. The OKF round-trip is lossless; the `graph.json` round-trip is not.
+
+<!-- SPECKIT START -->
+For additional context about technologies to be used, project structure,
+shell commands, and other important information, read the current plan
+at specs/016-skill-design-dispatch/plan.md
+<!-- SPECKIT END -->

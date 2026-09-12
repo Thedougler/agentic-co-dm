@@ -1,0 +1,107 @@
+[vault]
+root = "vault"
+templates = "vault/_templates"
+
+[lint]
+scoped_roots = ["vault", ".claude"]
+
+[bench]
+scoped_budget_s = 5
+sweep_budget_s = 60
+
+[gravity]
+active_window = 3
+active_weight = 2.0
+encountered_weight = 1.0
+
+[thresholds]
+STATUS_ENUM = "draft | pending | canon | srd | retired"
+PAGE_LENGTH_HEADROOM_PCT = "100"
+PAGE_LENGTH_MIN_SAMPLE = "1"
+PAGE_LENGTH_FALLBACK_MAX = "400"
+MAX_SUMMARY_CHARS = "200"
+IMAGE_EXTENSIONS = "png, jpg, jpeg, webp, gif, svg"
+AUDIO_EXTENSIONS = "mp3, wav, ogg, m4a, flac"
+ASSET_SUBFOLDERS = "banners, portraits, layouts, maps, battlemaps, scene-art, dialogue, audio, misc, character-sheets, reference"
+SLUG_SUBFOLDERS = "banners, portraits"
+RELINK_PATTERN = 'relink:\s*'
+PLAY_CALLOUTS = "read-aloud | narration | dm | mechanic | check | dialogue | spoiler"
+DOC_CALLOUTS = "note | tip | caution | important | summary | abstract | info | hint | success | question | failure | danger | bug | example | warning | quote"
+SECTION_LENGTH_HEADROOM_PCT = "100"
+MIN_SECTION_SIBLINGS = "5"
+SECTION_PROSE_FLOOR = "20"
+PAGE_PROSE_FLOOR = "150"
+SENTENCE_LENGTH_HEADROOM_PCT = "100"
+MIN_SENTENCE_LENGTH_SIBLINGS = "5"
+SENTENCE_LENGTH_FLOOR = "20"
+SENTENCE_LENGTH_MIN_SIBLING_SENTENCES = "2"
+PARAGRAPH_LENGTH_HEADROOM_PCT = "100"
+MIN_PARAGRAPH_LENGTH_SIBLINGS = "5"
+PARAGRAPH_LENGTH_FLOOR = "60"
+CLICHE_DENSITY_HEADROOM_PCT = "100"
+MIN_CLICHE_DENSITY_SIBLINGS = "5"
+CLICHE_DENSITY_FLOOR = "2"
+MECHANIC_MAX_LINES = "6"
+DM_MAX_SENTENCES = "4"
+STORY_GATE_MIN_SESSION = "7"
+RUN_GUIDE_SHAPE_MIN_SESSION = "9"
+CREATED_UPDATED_PATTERN = '^\d{4}-\d{2}-\d{2}$'
+PROCESS_LEAK_TERMS = "Hard Rule | one-fact-one-page | draft-lore | the wiki's | this repo | source repo | ledger line | relink flag | SKILL.md | CLAUDE.md | _templates/ | pile-signal | new-source-mode | ingest queue"
+DEDUP_NARRATION_TERMS = "not duplicated here | not repeated here | not restated here | not re-litigated here | see that page | see this page"
+VA_SCRIPT_DELIVERY_PHRASES = "I say this | I lower my voice | I raise my voice | under my breath | the way I said it | in a whisper | in a hushed voice | at the top of my lungs | I whisper this | I shout this"
+VA_SCRIPT_INSTRUCTION_PHRASES = "say this one | say this clean | read this | here's a harder one | here's the hardest | don't trip | doesn't count unless | times through | twice running | three times | last one, and it's the hardest | clean or nothing | try saying"
+VA_SCRIPT_DIRECTION_MAX_WORDS = "10"
+SPOKEN_CALLOUT_TYPES = "read-aloud | dialogue"
+BANNED_CLICHES = 'shivers down (the|your) spine;;hair on (the|your) neck( (stands|stood|rises))?;;a chill (runs|ran);;an air of \w+;;long-forgotten;;time seems to slow;;shrouded in (mystery|darkness|shadow);;\bloom(s|ing)?\b;;dust motes;;deafening silence|silence (is|was) deafening;;air (hangs|hung) heavy;;darkness swallow(s|ed);;shadows danc(e|ed|ing);;the very (air|stone) itself'
+MYSTERY_TELL_PHRASES = "for reasons unknown;;for (some|unknown) reason;;nobody knows why;;no one knows (why|what|how);;nobody knows (what|how);;remains? a mystery;;shrouded in mystery;;no one (is|was) (sure|certain) (why|what|how);;it'?s unclear why;;something feels? off"
+UNLINKED_MENTION_STOPLIST = "the admiral;;the hold;;scout;;lines;;dead;;stable;;light;;gate;;knight;;action;;identify;;target;;condition check;;reach;;fear;;message;;slow;;frog;;harm;;resistance;;priest;;shield;;divination;;darkness;;darkvision;;bane;;goat;;tail;;mimic;;nick;;creation;;sleep;;berserker;;narrow;;index;;maintain;;overview;;templater;;human;;readme;;recap;;skilled;;chain;;daylight;;ghost;;mirror;;combat;;encounter;;command;;commands;;galley;;whip;;book;;chest;;segalla;;kettley;;domain;;soldier;;defender;;acid;;the slip;;rogue;;grigori;;paper;;example;;interview;;frontmatter;;lifecycle;;output;;claude;;content;;npcs;;structure;;front;;villains;;craft;;slow burn"
+UNLINKED_MENTION_ALLOWLIST = "blinded;;charmed;;deafened;;exhaustion;;frightened;;grappled;;incapacitated;;invisible;;paralyzed;;petrified;;poisoned;;prone;;restrained;;stunned;;unconscious;;immunity;;damage-types;;strength;;dexterity;;constitution;;intelligence;;wisdom;;charisma"
+PROVENANCE_NARRATION_PHRASES = 'Corroborated( in play)?:;;Confirmed (in play|via|by the transcript|at the table);;per the transcript;;Verified against;;Detected during;;^Source(s)?: `?(Inbox|sessions|archive);;Confidence: (confirmed|high|medium|low);;as of [Ss]ession \d;;\(DM[- ](confirmed|approved|ruled)[^)]*\);;per DM (ruling|direction|brief);;[Pp]layed at the table per;;canon-review, \d{4}-\d{2}-\d{2}'
+STALE_WORK_MARKER_PHRASES = 'NOTED \(not done;;not yet (done|fixed|verified|implemented|resolved|attempted|written|re-verified|encountered|built);;known issue;;known-stale;;workaround until;;overdue for a (repair|re-?sim|QC|re-verify|cleanup|dedicated);;repair pass;;still needs? (a |its own |one more )?(re-?sim|re-?verif|QC|repair|update|dispatch|fix)+;;needs? (one more|another) (pass|check|dispatch|QC);;kept for (historical|reference|posterity);;preserved for (historical|reference);;for historical (reasons|purposes|interest);;left as[- ]is;;out of scope;;explicitly deferred;;deferred (to|until) a (later|future|following);;TODO:;;FIXME'
+SCAFFOLD_HEADER_PHRASES = "What goes here"
+SKILL_MAX_LINES = "200"
+SKILL_FRONTMATTER_MAX_CHARS = "1024"
+SKILL_FRONTMATTER_KEYS = "name | description | disable-model-invocation | allowed-tools"
+SKILL_DESCRIPTION_WORD_BUDGET = "80"
+SKILL_DESCRIPTION_MAX_CHARS = "1536"
+SKILL_TRIGGER_OVERLAP_THRESHOLD = "0.35"
+SKILL_TRIGGER_OVERLAP_MIN_SHARED = "12"
+KIT_MAX_IRON_RULES = "15"
+KIT_MAX_CAPS_LINES = "5"
+KIT_MAX_ZONE_LINES = "60"
+PLOT_DEFENSE_TELL_PHRASES = "don'?t let (?:a|the) (?:pc|party|players?);;(?:the )?party (?:can'?t|cannot) skip;;(?:the )?players? (?:can'?t|cannot) skip;;nobody at the table tests;;no (?:group|party|table) will actually;;won'?t actually happen;;prevent the party from;;(?:the )?players? must not"
+PLOT_DEFENSE_FALLBACK_PHRASES = "if they do;;if a player insists;;if a pc insists;;let it happen;;fallback:;;if they try anyway;;if they succeed;;if someone insists"
+OPERATIVE_HEADINGS = "Run Sheet | Tactical Notes | Raising the Stakes | Lowering the Stakes | Endings"
+NAMING_DISCIPLINE_TELL_PHRASES = 'naming discipline;;never (?:say|speak)s? [^.\n]{0,60}aloud;;never (?:heard|learned) the name'
+NAMING_SUBSTITUTE_MARKER_PHRASES = "substitut;;call (?:it|him|her|them);;instead;;table[- ]safe"
+NAMING_SUBSTITUTE_LOOKAHEAD_LINES = "3"
+SHELL_FENCE_LANGS = "bash, sh, zsh"
+SHELL_GLOB_COMMANDS = "grep, ls, find, cat, rm, mv, cp, head, tail, wc"
+PLOT_DEFENSE_FALLBACK_LOOKAHEAD_LINES = "5"
+DUPLICATION_KNOWN_BOILERPLATE = "obsidian-shellcommands:shell-command-voicepr;;Read while recording: [[dm-voice-script|voice-profile script]];;zoomDelta: 0.125;;Every physical place occupies space relative to other places;;Every location worth a page hides at least one findable-but-not-obvious;;**Casting Time:** Action\n\n**Range:** 60 feet;;**Casting Time:** Action\n\n**Range:** 120 feet\n\n**Components:** V, S\n\n**Duration:** Instantaneous;;`run-guide.md`, parent Run Guide"
+TABLE_LINE_WEIGHT = "0.35"
+TEMPLATE_LEAK_EXEMPT_TYPES = "class | subclass | spell | monster"
+TRANSIENT_MARKER_MAX_AGE_DAYS = "30"
+SENTENCE_MONOTONY_MIN_SENTENCES = "4"
+SENTENCE_MONOTONY_MIN_WORDS = "60"
+SENTENCE_LENGTH_MIN_CV = "0.35"
+SENTENCE_MONOTONY_MIN_MEAN_WORDS = "15"
+SENSORY_MIN_WORDS = "40"
+SUBTYPE_PARTITION_MIN_PAGES = "10"
+CONSECUTIVE_CALLOUT_TYPES = "dm | mechanic"
+TABLE_MAX_COLUMNS = "6"
+GUARDRAIL_DOC_MAX_LINES = "120"
+GUARDRAIL_DOC_MAX_WORDS = "1100"
+GUARDRAIL_RULE_MAX_WORDS = "60"
+ATOMICITY_SECTION_HEADROOM_PCT = "100"
+ATOMICITY_MIN_SIBLINGS = "5"
+ATOMICITY_SECTION_FLOOR = "9"
+CONTAINMENT_ROW_LABELS = "Region,Parent Region,Location,Part Of,Parent,Found In,Sits In"
+LABEL_SLOT_MAX_RESIDUAL_WORDS = "2"
+LINK_FOOTER_HEADINGS = "See Also,Related,Related Items,Related Pages,Related Links,Related Resources,Related Restraint Items,Related Protective Cloaks,Related Legendary Armor,Further Reading,Links,Sources,Source"
+CONTEXT_COST_SPIKE_PCT = "40"
+CONTEXT_COST_DECISION_COOLDOWN_DAYS = "14"
+CONTEXT_COST_CLAIM_TIMEOUT_MINUTES = "120"
+CONTEXT_COST_RESPIKE_PCT = "20"
+MONSTER_FOUND_AT_MIN = "2"
+CALLOUT_FRAGMENT_PATTERN = '-c\d{2,}\.md$'

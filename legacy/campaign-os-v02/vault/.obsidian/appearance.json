@@ -1,0 +1,20 @@
+{
+  "enabledCssSnippets": [
+    "file-width",
+    "leaflet-marker",
+    "custom-callouts",
+    "palette",
+    "typography",
+    "tables-properties",
+    "tags-headings",
+    "reference-image",
+    "exemplar-layout",
+    "multi-column",
+    "embed-statblock",
+    "clean-embeds",
+    "dashboard-cards",
+    "at-table",
+    "print"
+  ],
+  "theme": "obsidian"
+}

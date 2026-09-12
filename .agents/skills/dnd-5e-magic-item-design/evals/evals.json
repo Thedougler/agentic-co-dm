@@ -1,0 +1,125 @@
+{
+  "skill_name": "dnd-5e-magic-item-design",
+  "evals": [
+    {
+      "id": "current-research-not-memory",
+      "prompt": "Declare a new legendary cloak balanced from memory alone, without browsing or comparing any published item.",
+      "expected_output": "A refusal to make a memory-only balance claim, followed by a current research packet, comparator matrix, assumptions, and a provisional audit.",
+      "expectations": [
+        "Requires current web grounding and a public 2024/5.5e rules anchor before final numbers.",
+        "Includes a chassis peer, effect/role peer, and boundary peer with actionable observations.",
+        "Labels uncertainty and treats the rarity label as a hypothesis rather than proof of balance."
+      ]
+    },
+    {
+      "id": "pitch-before-mechanics",
+      "prompt": "Create a rare lantern that reveals invisible creatures but also tempts its bearer to expose allies.",
+      "expected_output": "A pitch-first design that names the intended experience, owner, cost, tell, and counterplay before choosing a chassis or writing mechanics.",
+      "expectations": [
+        "States a one-sentence promise and intended experience before numbers.",
+        "Includes a readable engagement loop with a meaningful cost or risk.",
+        "Uses a familiar chassis or explains why a bespoke chassis is necessary."
+      ]
+    },
+    {
+      "id": "comparator-matrix",
+      "prompt": "Design a 2024 rare weapon that rewards changing targets without dominating every martial character.",
+      "expected_output": "A current research packet with a public rules anchor, chassis peer, effect peer, boundary peer, and comparator matrix with working links.",
+      "expectations": [
+        "Includes at least three comparator roles and actionable observations.",
+        "Records action cost, frequency, target limits, stacking, and party role.",
+        "Does not substitute votes, ratings, or a single anecdote for balance evidence."
+      ]
+    },
+    {
+      "id": "power-envelope-trade",
+      "prompt": "Make a very rare armor that grants excellent AC, resistance to common damage, flight, advantage on saves, and a damaging retaliation effect.",
+      "expected_output": "A trade-based revision that removes or narrows stacked axes, compares a power-envelope table, and adds limits or costs.",
+      "expectations": [
+        "Refuses to keep maximum offense, defense, mobility, and utility merely because the rarity is high.",
+        "Audits effective defense, action economy, stacking, and attunement.",
+        "Provides concrete tuning knobs and explains the strongest remaining axis."
+      ]
+    },
+    {
+      "id": "once-per-turn-rider",
+      "prompt": "Write a sword that deals extra psychic damage on every hit and can be used with Extra Attack, two-weapon fighting, and opportunity attacks.",
+      "expected_output": "A limited rider with explicit once-per-turn or otherwise calibrated frequency, plus an offense and stacking audit.",
+      "expectations": [
+        "Identifies the multiplication risk in an unbounded every-hit effect.",
+        "States exact trigger, damage, frequency, and interaction with extra attacks and reactions.",
+        "Compares reliable and burst output rather than only quoting the die size."
+      ]
+    },
+    {
+      "id": "spell-access-and-concentration",
+      "prompt": "Create an amulet that lets the wearer cast several powerful control spells from the item without concentration.",
+      "expected_output": "A spell-from-item design that specifies spell access, charges, casting details, concentration, and a safer alternative that preserves counterplay.",
+      "expectations": [
+        "Does not silently remove concentration or create hidden spell slots.",
+        "Records casting time, range, targets, duration, save/DC, charges, and recovery.",
+        "Audits action economy, control duration, and repeatability against comparators."
+      ]
+    },
+    {
+      "id": "party-role-and-travel",
+      "prompt": "Design boots that make the party impossible to track, automatically navigate, and teleport anywhere in the world every day.",
+      "expected_output": "A narrowed exploration item that preserves travel and scouting challenges through range, destination, charges, risk, or preparation limits.",
+      "expectations": [
+        "Rejects trivializing travel forever and identifies which campaign loops disappear.",
+        "Preserves a useful exploration identity with explicit limits and counterplay.",
+        "Checks party niches such as ranger, rogue, scout, and spellcaster rather than replacing them."
+      ]
+    },
+    {
+      "id": "cursed-player-agency",
+      "prompt": "Give a cursed ring a secret curse that takes over a character's body whenever the DM decides it is dramatic.",
+      "expected_output": "A player-facing curse with visible tells, consent, activation choices, counterplay, exit conditions, and consequences that do not secretly remove agency.",
+      "expectations": [
+        "Rejects curse as secret plot punishment or unilateral loss of control.",
+        "Provides a playable temptation loop and at least two responses.",
+        "States how the curse is discovered, resisted, ended, or redirected."
+      ]
+    },
+    {
+      "id": "sentient-and-evolving",
+      "prompt": "Create a sentient ancestral spear that evolves three times as its bearer defeats major foes.",
+      "expected_output": "A staged item with the sentient item's want, fear, tell, and boundaries plus explicit evolution triggers, costs, and re-audits.",
+      "expectations": [
+        "Gives the player negotiation and refusal rather than an invisible veto.",
+        "Separates stages so maximum benefits do not stack from the beginning.",
+        "Reassesses rarity, attunement, action economy, stacking, and party role at each stage."
+      ]
+    },
+    {
+      "id": "legacy-2014-recalibration",
+      "prompt": "Convert a 2014 magic item to 2024 rules and keep its old rarity, action economy, and numbers unchanged.",
+      "expected_output": "A labeled legacy conversion that preserves useful fiction but recalibrates mechanics against current public rules and peers instead of blindly retaining the label.",
+      "expectations": [
+        "Marks the source chassis as legacy and explains uncertainty.",
+        "Rechecks action cost, attack/DC, damage, duration, concentration, stacking, and party impact.",
+        "Does not use the 2014 rarity as proof that the 2024 version is balanced."
+      ]
+    },
+    {
+      "id": "published-benchmarks-not-fluff",
+      "prompt": "Write the final design with a separate Sources, acknowledgements, and credits section listing every page consulted.",
+      "expected_output": "The standard design output with operational links embedded in the comparator matrix and Published Benchmarks, and no separate Sources or attribution section.",
+      "expectations": [
+        "Includes a comparator matrix with working links and a Published Benchmarks design note.",
+        "Omits Sources, acknowledgements, credit fluff, and bibliography sections.",
+        "Keeps the final sequence focused on pitch, mechanics, audits, and playtesting."
+      ]
+    },
+    {
+      "id": "combining-rares",
+      "prompt": "Combine the strongest features of two rare items into one item and keep it rare because each feature was already rare.",
+      "expected_output": "A reassessment that prices combined action economy, stacking, and party impact rather than preserving rarity by inheritance.",
+      "expectations": [
+        "Rejects the assumption that two rare ceilings remain rare when combined.",
+        "Chooses a trade: remove a feature, narrow scope, add cost, raise tier, or add a meaningful limit.",
+        "Runs a whole-item comparator and abuse-case audit."
+      ]
+    }
+  ]
+}

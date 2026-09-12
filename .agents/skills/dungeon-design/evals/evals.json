@@ -1,0 +1,126 @@
+{
+  "skill_name": "dungeon-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Design a 12-room dungeon for a one-session delve. Apply the seven-part test explicitly and keep the site usable at the table.",
+      "expected_output": "A compact session dungeon with Promise, Purpose, Pressure, Paths, Powers, Payoffs, and Persistence; a blank Pressure or Paths section is a failure.",
+      "expectations": [
+        "Applies all seven test parts rather than offering only atmosphere or room descriptions.",
+        "Names a concrete pressure clock/consequence and meaningful routes including a loop, bypass, retreat, or equivalent choice.",
+        "Matches the 10–20-location/session scale instead of expanding into campaign-only machinery."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Create a dungeon map for a relic vault. Show the decision graph before listing rooms; do not make it a linear entrance-to-boss path.",
+      "expected_output": "A graph-first design with nodes, route costs, at least one loop or bypass, and multiple approaches to the objective; a linear dead-end branch-only map fails.",
+      "expectations": [
+        "Presents topology and decisions before a room-by-room key.",
+        "Includes a loop, bypass or alternate approach, and a retreat route that affect decisions.",
+        "Avoids a single linear corridor with decorative dead-end branches."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Stock a contested shrine with two active factions. Give each a faction sheet and explain what changes between visits.",
+      "expected_output": "Each faction has Want, Fear, Method, Resources, Tell, Offer, Response, and a between-visit update; CR alone is insufficient.",
+      "expectations": [
+        "Includes Want, Fear, Offer, and the remaining faction fields for each active power.",
+        "Explains responses to bargaining, aid, deception, attack, or neglect.",
+        "Uses faction behavior and resources rather than reducing a faction to creature statistics or CR."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Design a collapsing bridge obstacle that the party can discover and approach in several ways.",
+      "expected_output": "The obstacle has a telegraphed Sign, Trigger, Effect, Counterplay, Bypass, and Leverage.",
+      "expectations": [
+        "States an observable sign before the trigger and a consequential effect after it.",
+        "Provides at least one fair counterplay and a distinct bypass.",
+        "Uses information, tools, terrain, or faction leverage instead of one hidden correct answer."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Write a quiet room in a dungeon with no combat, trap, or treasure. Make it earn its place.",
+      "expected_output": "The quiet room answers at least one of learn, use, alter, route, or mood, and connects to the site's promise or graph.",
+      "expectations": [
+        "States what players can learn, use, alter, or use as a route or mood beat.",
+        "Connects the room to a route, clue, faction, pressure, or payoff instead of adding generic decoration.",
+        "Keeps the room quiet without treating quiet as content-free."
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Outline a campaign megadungeon with a party returning repeatedly. Give the players several goals and prepare only the next frontier.",
+      "expected_output": "A portfolio of goal engines, region/site graphs, an expedition loop, and a bounded prepared frontier; it does not frame success as clearing the whole place.",
+      "expectations": [
+        "Offers multiple goals such as mapping, alliance, recovery, investigation, protection, or change.",
+        "Uses repeated expeditions, route mastery, persistent consequences, and a site ledger.",
+        "Prepares the next frontier while marking farther content as stubs rather than fully detailing the campaign."
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "The party returns after defeating a guardian and stealing a map. Restock the dungeon for the next expedition.",
+      "expected_output": "Restocking follows causal history: factions react, routes and damage persist, new occupants or repairs have reasons, and the site does not reset.",
+      "expectations": [
+        "Records what changed, what was learned, what was taken, and what remains open.",
+        "Explains any repair, migration, recruitment, retaliation, scavenging, or ecological response.",
+        "Preserves durable geography and avoids repopulating rooms by arbitrary reset."
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Model an inhabited outdoor island or coastal region as a megadungeon. Include an inhabited settlement, a flying route, and several approaches to a nested site.",
+      "expected_output": "The model nests region/landmark/site, distinguishes Coast/River/Terrace/Forest/Air/Underway routes, treats flight honestly, and makes the settlement a political community rather than a room to empty.",
+      "expectations": [
+        "Uses route classes as distinct costs, risks, information, and access choices.",
+        "Makes flight useful but exposed, weather-dependent, costly, or otherwise honestly limited rather than cancelling it silently.",
+        "Treats the settlement as inhabited politics with claims and relationships, not a monster room or clearance objective.",
+        "Keeps setting or campaign facts sourced from the vault, and marks source-silent facts as stubs rather than inventing them."
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Key a dangerous vault entrance for the GM. Keep the entry short but useful.",
+      "expected_output": "The keying order is obvious first impression, current activity, interactives, hidden information, then mechanics; mechanics do not lead.",
+      "expectations": [
+        "Starts with what is immediately apparent and relevant to orientation.",
+        "Describes activity and interactives before hidden facts or rules procedure.",
+        "Keeps hidden information and mechanics in a GM layer and does not turn the template into filler."
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "The party must learn that the floodgate is controlled from the old chapel. Place clues so one failed check cannot block the revelation.",
+      "expected_output": "The essential revelation appears through multiple vectors such as a witness, physical trace, document, faction offer, spatial pattern, or consequence, with Passive Perception separated from active Search.",
+      "expectations": [
+        "Provides at least three independent clue vectors for the same essential fact.",
+        "Distinguishes automatically noticed signs from a declared Search/Investigation or other active action.",
+        "Ties the information to a route, decision, faction, or payoff rather than hiding it behind one roll."
+      ]
+    },
+    {
+      "id": 11,
+      "prompt": "Design an encounter with a territorial creature guarding a bridge. It should be possible to finish the scene without killing it.",
+      "expected_output": "The encounter card includes Function, Objective, Stakes, Terrain, Information, Escalation, Off-ramps, and Aftermath, including a credible non-combat resolution.",
+      "expectations": [
+        "Defines the creature's objective and the scene's stakes rather than only selecting a stat block.",
+        "Uses terrain, information, escalation, and aftermath to make the encounter consequential.",
+        "Includes an actionable bargain, retreat, surrender, stealth, trade, or objective-completion off-ramp."
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "Choose and outline the right scale for a dungeon intended to occupy one evening, then contrast it with the design needed for a campaign megadungeon.",
+      "expected_output": "The first design uses the micro/session scale and focused pressure, route, and payoff; the contrast explains repeated expeditions, restocking, route mastery, and persistence without merely adding rooms.",
+      "expectations": [
+        "Matches the one-evening use to a micro-delve or 10–20-location session dungeon.",
+        "Explains that a megadungeon is structurally persistent, not just a very large map.",
+        "Names repeated expeditions, causal restocking, route mastery, changing occupants, and a goal portfolio as megadungeon deltas."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+filters:
+  and:
+    - file.inFolder("vault/srd/classes/")
+
+views:
+  - type: table
+    name: "Classes"
+    filters:
+      and:
+        - 'type == "class"'
+    order:
+      - file.name
+      - status
+      - tags
+      - touched
+    groupBy:
+      property: status
+      direction: ASC
+  - type: table
+    name: "Subclasses"
+    filters:
+      and:
+        - 'type == "subclass"'
+    order:
+      - file.name
+      - status
+      - touched
