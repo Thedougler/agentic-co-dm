@@ -35,7 +35,7 @@ Contract: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`
 
 **Purpose**: Stay inside the plan file list. No `src/`, no seventh skill, no Campaign OS port.
 
-- [ ] T001 Confirm the files listed under Source Code in `specs/017-session-beats-skills/plan.md` exist or will be created as listed; do not add a router skill, `src/`, linter, or port of `.claude/skills/composing-beats` or `writing-*-beats`; do not edit `.agents/skills/writing-beats/SKILL.md`; do not rewrite `wiki/_raw/Session-11-*.md`
+- [X] T001 Confirm the files listed under Source Code in `specs/017-session-beats-skills/plan.md` exist or will be created as listed; do not add a router skill, `src/`, linter, or port of `.claude/skills/composing-beats` or `writing-*-beats`; do not edit `.agents/skills/writing-beats/SKILL.md`; do not rewrite `wiki/_raw/Session-11-*.md`
 
 ---
 

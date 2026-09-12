@@ -1,14 +1,13 @@
 <!--
 Sync Impact Report
-- Version change: 1.2.0 → 1.3.0
+- Version change: 1.3.0 → 1.4.0
 - Modified principles:
   - none renamed
 - Added sections:
-  - X. Agents Act Autonomously By Default
+  - none (Agent Operating Constraints: exclusive Claude writer)
 - Removed sections: none
-- Follow-up TODOs: none in this file. Informal "wait to commit/push" in
-  AGENTS.md / RULES.md / git extension config is superseded and must be
-  aligned outside this command.
+- Follow-up TODOs: none in this file. Dispatch invocation in
+  `docs/agents/skill-design-dispatch.md` must use `--model claude-opus-4-6`.
 -->
 
 # Agentic Co-DM Constitution
@@ -192,6 +191,9 @@ not lag completed work.
 - Agents MUST auto-commit, auto-push the working branch, keep it current
   with `main`, and refresh agent-context, per X. They MUST NOT ask
   permission for those steps.
+- Exclusive Claude writer: `claude-opus-4-6` at `--effort high`. MUST NOT
+  use the `opus` alias or default Opus. Default Opus output is worthless
+  for language work (issue #3).
 
 ## Development Workflow
 
@@ -250,4 +252,4 @@ Compliance:
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.3.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
+**Version**: 1.4.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12

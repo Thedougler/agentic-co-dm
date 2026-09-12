@@ -21,7 +21,7 @@ Class `design-impact` and no owner overrule:
    - **Job** — one design job, not an unbounded rewrite
 2. Leave those target instruction files unmodified.
 3. Commit non-design work first. Record `HEAD` as dispatch start.
-4. Invoke the designated writer with the scoped prompt: `claude -p --model opus --effort high`. Flags from `claude --help`; do not pin a version string. Tell the writer to follow writing-for-agents. Do not prescribe skill-design method, voice, or structure.
+4. Invoke the designated writer with the scoped prompt: `claude -p --model claude-opus-4-6 --effort high`. Flags from `claude --help`. Do not use the `opus` alias or default Opus. Tell the writer to follow writing-for-agents. Do not prescribe skill-design method, voice, or structure.
 5. Designated writer is the sole writer of a change that lands.
 
 Done: writer finished, or Unavailability or Usage-limit wait started.
