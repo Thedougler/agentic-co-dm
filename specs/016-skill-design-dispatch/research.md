@@ -8,7 +8,7 @@
 
 ## Decision: Procedure lives in `docs/agents/skill-design-dispatch.md`
 
-**Rationale**: `docs/` already owns harness dispatch. Progressive disclosure: standing gate classifies; the procedure is reached only when the class is design-impact (or when resuming parked work). Steps: write scoped prompt; invoke designated writer; on failure restore targets and park; on success verify and do not rewrite.
+**Rationale**: `docs/` already owns harness dispatch. Progressive disclosure: standing gate classifies; the procedure is reached only when the class is design-impact (or when resuming parked work). Steps: write scoped prompt; invoke designated writer; on non-usage-limit failure restore targets and park; on usage limit restore and wait; on success verify and do not rewrite.
 
 **Alternatives considered**: New skill (always-loaded description cost; competes with `skill-creator`). Fold into `writing-for-agents` (that document owns craft, not who writes). Fold into `harness-dispatch.md` (that document owns Spec Kit harness handoff, not instruction-file authorship).
 
@@ -24,11 +24,11 @@
 
 **Alternatives considered**: Chat-only (dies with the session; fails SC-007). Queue markdown in the repo (second tracker). New triage label (Constitution II names five strings). `ready-for-human` (this is agent work once the writer is available).
 
-## Decision: Usage-limit parks carry a retry time
+## Decision: Usage limits wait; they are not parked dispatch
 
-**Rationale**: FR-017 / SC-008. The specific job stays incomplete; other in-session work is not marked incomplete for that reason. Retry time is the reset time in the usage-limit report when present; if none, 5 hours from the park; if a retry still reports a usage limit with no reset time, 24 hours from that attempt. Record retry time in the parked issue body. Later sessions MUST NOT re-attempt before that time. Do not put the backoff in `AGENTS.md` (procedure only).
+**Rationale**: FR-017 / SC-008. Owner: do not file a GitHub issue on usage limits. The specific job stays incomplete with a retry time; other in-session work is not marked incomplete for that reason. Retry time is the reset time in the usage-limit report when present; if none, 5 hours from the stop; if a retry still reports a usage limit with no reset time, 24 hours from that attempt. Report the retry time; do not create parked dispatch. A later session after that time retries. Do not put the backoff in `AGENTS.md` (procedure only).
 
-**Alternatives considered**: Single 24-hour default always (ignores a reported reset). Owner-picked retry time (human gate; Constitution X). No retry time (job is findable but immediately re-attempted, burning quota again).
+**Alternatives considered**: Park as a GitHub issue (pollutes the tracker on every quota miss; owner rejected). Single 24-hour default always (ignores a reported reset). Owner-picked retry time (human gate; Constitution X). No retry time (immediately re-attempted, burning quota again).
 
 ## Decision: On writer failure, restore targets to the revision at dispatch start
 
@@ -44,6 +44,6 @@
 
 ## Decision: Quickstart is the behavioral test; no live writer required for classification
 
-**Rationale**: Constitution IV — observe classification and outcome (session-agent / dispatched / parked / out-of-scope), not whether `AGENTS.md` contains a string. Live `claude` is optional for a dispatch smoke; classification must pass without it (SC-001).
+**Rationale**: Constitution IV — observe classification and outcome (session-agent / dispatched / parked / usage-limited / out-of-scope), not whether `AGENTS.md` contains a string. Live `claude` is optional for a dispatch smoke; classification must pass without it (SC-001).
 
 **Alternatives considered**: pytest over AGENTS.md text (implementation-coupled). Require a billed Claude Code run in every quickstart (scarcity the feature exists to protect).

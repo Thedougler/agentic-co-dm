@@ -45,7 +45,7 @@ Length is not a field. Borderline of those four → `design-impact`. New skill o
 
 ## Scoped prompt
 
-Handoff from session agent to designated writer (or into parked work).
+Handoff from session agent to designated writer (or into parked work). Not stored as an issue on usage limit.
 
 | Field | Rule |
 |---|---|
@@ -62,11 +62,19 @@ Tracked incomplete design-impact work.
 |---|---|
 | Title | `Parked skill design: <outcome>` |
 | Label | `ready-for-agent` |
-| Body | The scoped prompt. When reason is usage limit: also the retry time. |
+| Body | The scoped prompt |
 | Targets on disk | Match content at dispatch start |
-| Retry time | Usage limit only. Reset time from the report when present; if none, 5 hours from the park; if a retry still reports a usage limit with no reset time, 24 hours from that attempt. Do not re-attempt before this time. Other in-session jobs are not marked incomplete for this reason. |
 
-States: `open` → `resumed` → `done`. Search existing `Parked skill design:` issues before creating another for the same job. Resume of a usage-limit park waits until after retry time.
+States: `open` → `resumed` → `done`. Search existing `Parked skill design:` issues before creating another for the same job. Usage limits are not parked dispatch.
+
+## Usage-limit wait
+
+| Field | Rule |
+|---|---|
+| Retry time | Reset time from the report when present; if none, 5 hours from the stop; if a retry still reports a usage limit with no reset time, 24 hours from that attempt |
+| Targets on disk | Match content at dispatch start |
+| Tracked work | None — do not create parked dispatch |
+| Next attempt | A new session after retry time. Do not re-attempt before this time. Other in-session jobs are not marked incomplete for this reason |
 
 ## Dispatch outcome
 
@@ -74,14 +82,15 @@ States: `open` → `resumed` → `done`. Search existing `Parked skill design:` 
 |---|---|
 | `session-agent` | Class is not design-impact, or owner overruled |
 | `dispatched` | Designated writer landed the change; session agent verified; no rewrite |
-| `parked` | Designated writer could not complete; targets restored; issue exists |
+| `parked` | Designated writer could not complete for a reason other than usage limit; targets restored; issue exists |
+| `usage-limited` | Usage limit; targets restored; retry time recorded; no issue |
 | `out-of-scope` | File is not in-scope; this routing does not apply |
 
 ## Relationships
 
 - Instruction edit → one class → one writer (unless mixed request, then split)
 - Design-impact + writer available → dispatched
-- Design-impact + writer unavailable → parked dispatch
-- Usage limit → parked dispatch with retry time; later session waits
+- Design-impact + writer unavailable (not usage limit) → parked dispatch
+- Usage limit → usage-limited wait; no parked dispatch; later session after retry time
 - Parked dispatch → later session resumes from issue body, no original chat
 - Successful dispatch → session agent verifies, does not rewrite

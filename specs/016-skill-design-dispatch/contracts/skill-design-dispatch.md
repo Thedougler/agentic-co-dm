@@ -40,9 +40,9 @@ Additional jobs the same reviewers should also agree on:
 | 14 | Campaign wiki page | out-of-scope | existing authoring loop |
 | 15 | Trigger rewrite, owner says skip dispatch | design-impact, overruled | session agent |
 | 16 | Trigger rewrite, designated writer unavailable | design-impact | parked; files untouched |
-| 17 | Trigger rewrite, usage limit with reset time | design-impact | parked; retry time = that reset; do not retry before it |
-| 18 | Usage limit with no reset time | design-impact | parked; retry time = 5 hours from park |
-| 19 | Retry still usage-limited, no reset time | design-impact | parked; next retry time = 24 hours from that attempt |
+| 17 | Trigger rewrite, usage limit with reset time | design-impact | usage-limited; retry time = that reset; no parked dispatch; do not retry before it |
+| 18 | Usage limit with no reset time | design-impact | usage-limited; retry time = 5 hours from the stop; no parked dispatch |
+| 19 | Retry still usage-limited, no reset time | design-impact | usage-limited; next retry time = 24 hours from that attempt; no parked dispatch |
 
 ## Dispatch rules
 
@@ -50,8 +50,8 @@ Additional jobs the same reviewers should also agree on:
 2. Non-design-impact: session agent completes it; no parked issue.
 3. Design-impact: session agent does not write the targets. Scoped prompt names outcome, files, bounds.
 4. Designated writer is the sole writer of a change that lands.
-5. Writer cannot start, stops, refuses, or errors: restore targets to dispatch-start content; park `Parked skill design: <outcome>` with `ready-for-agent` and the scoped prompt; session agent does not finish the design.
-6. Usage limit: that specific job is incomplete with a retry time (reset time from the report, else 5 hours, then 24 hours if still limited). Do not re-attempt before that time. Other in-session jobs are not marked incomplete for that reason.
+5. Writer cannot start, stops, refuses, or errors for a reason other than a usage limit: restore targets to dispatch-start content; park `Parked skill design: <outcome>` with `ready-for-agent` and the scoped prompt; session agent does not finish the design.
+6. Usage limit: that specific job is incomplete with a retry time (reset time from the report, else 5 hours from the stop, then 24 hours if still limited). Do not create parked dispatch. Do not re-attempt before that time; a new session retries after it. Other in-session jobs are not marked incomplete for that reason.
 7. After success: session agent verifies targets ⊆ in-scope and outcome met; does not rewrite.
 8. Search existing `Parked skill design:` issues before creating another for the same job.
 9. Routing applies even when `skill-creator` / `omp-harness` were not loaded.
