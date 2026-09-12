@@ -1,14 +1,17 @@
 # Quickstart: Session Beat Skills
 
-Prove the split by classifying jobs and checking isolation. Do not rewrite Session 11 to prove it.
+Prove the beat split by classifying jobs and checking isolation. Prove vehicle and spell kinds with one page each. Session 11 bodies stay as they are.
 
 ## Prerequisites
 
 - Branch `017-session-beats-skills`
-- Spec [spec.md](./spec.md), contract [contracts/beat-skill-routing.md](./contracts/beat-skill-routing.md)
+- Spec [spec.md](./spec.md), contracts [beat-skill-routing.md](./contracts/beat-skill-routing.md) and [wiki-kind-pages.md](./contracts/wiki-kind-pages.md)
 - `session-beats` is composition only (no five type-card catalogs in that skill)
 - Type skills `hook-beats`, `development-beats`, `cliffhanger-beats`, `climax-beats`, `resolution-beats` exist
-- `AGENTS.md` contains the routing table
+- `spell-design` exists; `vehicle-design` fills the vehicle sheet
+- `wiki/templates/vehicle.md` and `wiki/templates/spell.md` exist
+- `wiki/AGENTS.md` lists `type: vehicle` and `type: spell` and Layout jobs
+- `AGENTS.md` contains the beat routing table
 - `.omp/AGENTS.md` does not copy that table
 - `.agents/skills/writing-beats` unchanged
 - Session 11 `_raw/` / wiki beat bodies unchanged
@@ -53,3 +56,19 @@ Fail if polarity is wrong. Fail if a beat has only one viable response. Fail if 
 - `writing-beats` (article skill) untouched.
 
 Pass: steps 1–6 hold. Fail any step → the blob is not split yet.
+
+## 7. Vehicle and spell pages (P2, SC-011–SC-014)
+
+Give a job to create a named ship. Primary skill is `vehicle-design`. Page starts from `wiki/templates/vehicle.md` and includes narration, sheet, and hull/component figures a DM can run.
+
+Give a job to create a spell. Primary skill is `spell-design`. Page starts from `wiki/templates/spell.md` and includes narration, classification, and a runnable 2024 effect.
+
+Fail if the vehicle page has no sheet. Fail if the spell job is classified as `session-beats` or `dnd-5e-magic-item-design`.
+
+## 8. Claude Code dispatch (SC-015)
+
+A skill-update dispatch for this feature uses `claude-opus-4-6 --effort medium`. The prompt names deliverables and a completion test.
+
+Fail if the dispatch uses the `opus` alias, default Opus, or `--effort high`.
+
+Pass: steps 1–8 hold.

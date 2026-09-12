@@ -6,27 +6,31 @@
 
 ## Summary
 
-Split the `session-beats` blob. Keep `session-beats` as the composition skill (plan a session / Beat Chart). Add five model-invoked type skills — `hook-beats`, `development-beats`, `cliffhanger-beats`, `climax-beats`, `resolution-beats` — primary when writing, editing, or filling a beat of that type. RTG cards move with their type. Skills load each other only at named seams. One `AGENTS.md` routing table. Callers retarget. No second pacing system. No Session 11 rewrite. Creating the type skills and changing composition ownership is design-impact: designated writer lands it.
+Split the `session-beats` blob. Keep `session-beats` as the composition skill (plan a session / Beat Chart). Add five model-invoked type skills — `hook-beats`, `development-beats`, `cliffhanger-beats`, `climax-beats`, `resolution-beats` — primary when writing, editing, or filling a beat of that type. RTG cards move with their type. Skills load each other only at named seams. One `AGENTS.md` routing table. Callers retarget.
+
+Also add campaign wiki kinds `vehicle` and `spell`: install `wiki/templates/vehicle.md` and `wiki/templates/spell.md`, list them in `wiki/AGENTS.md` Layout, update `vehicle-design` to fill the 5e sheet, create `spell-design` as primary for spell pages. Skills state what to write and when the page is done.
+
+Design-impact skill updates dispatch to Claude Code with a minimal prompt (`Outcome` / `Files` / `Bounds` / `Job`, deliverables, completion criteria) at `claude-opus-4-6 --effort medium`.
 
 ## Technical Context
 
-**Language/Version**: Markdown skills and standing agent docs. Host agent executes them. No new compiled language.
+**Language/Version**: Markdown skills, wiki templates, standing agent docs. Host agent executes them. No new compiled language.
 
-**Primary Dependencies**: `session-beats`; `run-guide`; `writing-for-agents`; `docs/agents/work.md`; `docs/agents/skill-design-dispatch.md`; `wiki/AGENTS.md`; theatre of the mind; encounter-prep; traps-trials. Method source: *Scripting the Game* as already adapted in `session-beats` (agency gates, not a railroad).
+**Primary Dependencies**: `session-beats`; `run-guide`; `vehicle-design`; `writing-for-agents`; `docs/agents/work.md`; `docs/agents/skill-design-dispatch.md`; `wiki/AGENTS.md`; theatre of the mind; encounter-prep; traps-trials. Method source: *Scripting the Game* as already adapted in `session-beats`. Vehicle/spell scaffolds: the templates provided for this feature.
 
 **Storage**: Files. Not a database.
 
-**Testing**: [quickstart.md](./quickstart.md). Classify the contract jobs. Observe primary skill and named-seam loads. Existing `session-beats` evals that test the chart stay on composition; type-card evals move with their type. No bulk suite. No rewrite of Session 11 files.
+**Testing**: [quickstart.md](./quickstart.md). Classify contract jobs. Observe primary skill and named-seam loads. Inspect a new vehicle page and a new spell page against their templates. Chart evals stay on composition; type-card evals move with their type. No bulk suite. No rewrite of Session 11 files.
 
 **Target Platform**: Local DM workstation. Co-DM agent on omp (and other hosts that load `AGENTS.md` plus `.agents/skills/`).
 
-**Project Type**: Agent skill pack + standing instructions.
+**Project Type**: Agent skill pack + standing instructions + wiki templates.
 
-**Performance Goals**: SC-001 — two reviewers agree on 100% of at least 15 primary-skill jobs. SC-007 — 0 skills contain both the full Beat Chart and all five type-card catalogs.
+**Performance Goals**: SC-001 — two reviewers agree on 100% of at least 15 primary-skill beat jobs. SC-007 — 0 skills contain both the full Beat Chart and all five type-card catalogs. SC-015 — skill-update dispatches use Opus 4.6 medium with a minimal prompt.
 
-**Constraints**: FR-004 five types, not one skill per card. FR-013/014/015 cockpit, Work, assembly, and crafts keep owners. FR-016 no Session 11 rewrite. Constitution I domain language. Constitution VII no creative-method prescription. Constitution IX one source of truth; six descriptions, not a seventh router. Constitution X git/context autonomy; design-impact still dispatches.
+**Constraints**: FR-004 five beat types, not one skill per card. FR-013/014 cockpit, Work, assembly keep owners. FR-016 no Session 11 rewrite. FR-019–024 wiki kinds and positive skill text. FR-025 Claude Code dispatch. Constitution I domain language. Constitution VII jobs and done-when, not a plot or voice. Constitution IX one SoT; no seventh beat router. Constitution X git/context autonomy; exclusive writer `claude-opus-4-6 --effort medium`.
 
-**Scale/Scope**: One composition skill (existing, slimmed). Five new type skills. One `AGENTS.md` table. Pointer retargets on skills that currently name `session-beats` for typed-beat craft. No `src/`. Do not port `.claude/skills/composing-beats` or `writing-*-beats`. Do not touch `.agents/skills/writing-beats` (article journey, unrelated).
+**Scale/Scope**: One composition skill (existing, slimmed). Five new beat type skills. One `spell-design` skill. `vehicle-design` updated. Two wiki templates. `wiki/AGENTS.md` type + Layout. One `AGENTS.md` beat routing table. Pointer retargets on beat callers. No `src/`. Leave `.agents/skills/writing-beats` (article journey) as it is.
 
 ## Constitution Check
 
@@ -34,18 +38,18 @@ Split the `session-beats` blob. Keep `session-beats` as the composition skill (p
 
 | Gate | Status |
 |---|---|
-| I. Domain language is binding | Pass — Hook, Development, Cliffhanger, Climax, Resolution, Beat Chart, session spine, live beat, Work, Co-DM, DM. No GM. No knowledge bank. |
+| I. Domain language is binding | Pass — Hook, Development, Cliffhanger, Climax, Resolution, Beat Chart, session spine, live beat, Work, Co-DM, DM, vehicle, spell. |
 | II. Issues are the work surface | Pass — plan does not treat PRs as a request surface. |
-| III. Spec before code | Pass — spec has independently testable stories P1–P3. |
-| IV. Tests specify behavior | Pass — quickstart observes primary skill and seam loads, not skill internals. |
+| III. Spec before code | Pass — spec has independently testable stories P1–P3 plus US6. |
+| IV. Tests specify behavior | Pass — quickstart observes primary skill, seam loads, and runnable wiki pages. |
 | V. Single context | Pass — no second bounded context. No new glossary file. |
-| VI. Software is agent-shaped | Pass — AGENTS.md + skills, no GUI, no human-only wrapper. |
-| VII. Do not suffocate agents | Pass — skills name jobs and completion tests; they do not prescribe a single plot or voice. No seventh skill. No extra checklist. |
-| VIII. Safe automation runs unattended | Pass — no new agent chore. No formatter/index step added to skills. |
-| IX. Design trends toward token efficiency | Pass — split so a typed-beat job does not load five card catalogs; composition does not carry cards; one routing table; pointers not copies. |
-| X. Agents act autonomously by default | Pass — no human gate for commit/push/context. Design-impact still dispatches (016). |
+| VI. Software is agent-shaped | Pass — AGENTS.md + skills + templates, no GUI. |
+| VII. Do not suffocate agents | Pass — skills name jobs and completion tests. No beat-router skill. `spell-design` is the spell-page owner, same shape as `vehicle-design`. |
+| VIII. Safe automation runs unattended | Pass — no new agent chore. |
+| IX. Design trends toward token efficiency | Pass — split catalogs; one routing table; minimal Claude Code prompts. |
+| X. Agents act autonomously by default | Pass — no human gate for commit/push/context. Design-impact dispatches at Opus 4.6 medium. |
 
-**Post-design re-check**: still pass. Contract is which skill is primary for a job. Complexity table empty.
+**Post-design re-check**: still pass. Complexity table empty.
 
 ## Project Structure
 
@@ -58,7 +62,8 @@ specs/017-session-beats-skills/
 ├── data-model.md
 ├── quickstart.md
 ├── contracts/
-│   └── beat-skill-routing.md
+│   ├── beat-skill-routing.md
+│   └── wiki-kind-pages.md
 └── tasks.md             # /speckit.tasks — not this command
 ```
 
@@ -67,6 +72,8 @@ specs/017-session-beats-skills/
 ```text
 AGENTS.md
 wiki/AGENTS.md
+wiki/templates/vehicle.md
+wiki/templates/spell.md
 .agents/skills/session-beats/SKILL.md
 .agents/skills/session-beats/references/agency.md
 .agents/skills/session-beats/references/session-skeleton.md
@@ -76,15 +83,18 @@ wiki/AGENTS.md
 .agents/skills/cliffhanger-beats/
 .agents/skills/climax-beats/
 .agents/skills/resolution-beats/
+.agents/skills/vehicle-design/SKILL.md
+.agents/skills/spell-design/
 .agents/skills/run-guide/SKILL.md
 .agents/skills/cold-opens/SKILL.md
 .agents/skills/narrative-islands/SKILL.md
 .agents/skills/sandbox-narrative/SKILL.md
+docs/agents/skill-design-dispatch.md
 ```
 
-Delete `.agents/skills/session-beats/references/beat-types.md` after its cards live with their types. Other skills that name `session-beats` for typed-beat craft get a pointer retarget only.
+Delete `.agents/skills/session-beats/references/beat-types.md` after its cards live with their types. Beat callers that name `session-beats` for typed-beat craft get a pointer retarget. Install vehicle/spell templates from the scaffolds provided for this feature.
 
-**Structure Decision**: Keep skills in `.agents/skills/`. `session-beats` stays the composition skill. Five new sibling type skills. `AGENTS.md` holds the routing table. `.omp/AGENTS.md` already imports `AGENTS.md` — do not duplicate the table there. Do not add a router skill. Do not copy Campaign OS `.claude/skills/composing-beats` or `writing-*-beats`. Do not edit `legacy/` or rewrite Session 11 wiki/`_raw/` pages.
+**Structure Decision**: Skills stay in `.agents/skills/`. Templates stay in `wiki/templates/`. `session-beats` stays composition. Five beat type skills. `spell-design` is new. `vehicle-design` fills the vehicle template including the sheet. `AGENTS.md` holds the beat routing table. `.omp/AGENTS.md` already imports `AGENTS.md`. `wiki/AGENTS.md` lists `type` and Layout jobs. No beat-router skill.
 
 ## Complexity Tracking
 

@@ -44,12 +44,30 @@
 
 ## Decision: Implementation is design-impact
 
-**Rationale**: Creating five skills and changing `session-beats` trigger/ownership/standing load are the four 016 bullets. Session agent writes a scoped prompt; designated writer lands the skills. Pointer retargets that only swap a skill name without changing who does the step may be `not` — classify per 016. Spec, plan, and this research are out of scope for dispatch.
+**Rationale**: Creating beat type skills, changing `session-beats` trigger/ownership/standing load, creating `spell-design`, and changing `vehicle-design` ownership are 016 bullets. Session agent writes a minimal scoped prompt (Outcome, Files, Bounds, Job, deliverables, completion criteria); designated writer lands the skills at `claude -p --model claude-opus-4-6 --effort medium`. Pointer retargets that only swap a skill name without changing who does the step may be `not` — classify per 016. Installing wiki templates and adding Layout jobs in `wiki/AGENTS.md` is standing campaign convention: session agent may land those if they are not skill files. Spec, plan, and this research are out of scope for dispatch.
 
-**Alternatives considered**: Session agent drafts the six skills (016 FR-007 fail). One unbounded rewrite of every pacing skill (scoped-prompt bound fail).
+**Alternatives considered**: Session agent drafts the skills (016 FR-007 fail). One unbounded rewrite of every pacing skill (scoped-prompt bound fail). `opus` alias / default Opus / `--effort high` (constitution 1.4.1: exclusive writer is Opus 4.6 medium).
 
 ## Decision: Quickstart observes routing, not file internals
 
 **Rationale**: Constitution IV. Classify the contract jobs. A planning job produces a valid chart without type-card catalogs. A typed-beat job does not open the other four catalogs unless a named seam fires. After the split, no skill contains both the full chart and all five catalogs. Do not require rewriting Session 11 to prove it.
 
 **Alternatives considered**: pytest over SKILL.md strings (implementation-coupled). Require a live session to be composed as the only proof (slow; still needed later at implement).
+
+## Decision: Vehicle and spell are wiki kinds with templates
+
+**Rationale**: Clarifications 2026-09-12. Scaffolds go to `wiki/templates/vehicle.md` and `wiki/templates/spell.md`. `wiki/AGENTS.md` adds `type: vehicle` and `type: spell` and Layout jobs. Pass is those jobs. `vehicle-design` fills the 5e sheet, components, crew, handling, and combat. `spell-design` is primary for write/edit/create of a spell page.
+
+**Alternatives considered**: Keep vehicle notes as play-dials with a blank sheet (pages are not runnable). Fold spells into `dnd-5e-magic-item-design` (wrong kind). Layout jobs with no `spell-design` (no skill fires).
+
+## Decision: Skills teach the work to do now
+
+**Rationale**: Clarification: write positive jobs and done-when. Vehicle design is in scope now. Text that frames a missing craft as something that will never exist is the named failure.
+
+**Alternatives considered**: Keep “leave HP/speed blank” as a standing ban (contradicts the template). Extra exception lists instead of jobs.
+
+## Decision: Claude Code skill updates use a minimal prompt and Opus 4.6 medium
+
+**Rationale**: FR-025 / constitution 1.4.1. Token-efficient dispatch. Default model is `claude-opus-4-6` at `--effort medium`. Prompt names deliverables and a completion test.
+
+**Alternatives considered**: `--effort high` (superseded). `opus` alias (default Opus). Long pasted spec/plan in the writer prompt (IX).

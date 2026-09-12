@@ -68,9 +68,9 @@ Reviewers must also agree which extra skill may load:
 4. A type skill does not include the full Beat Chart or another type's cards.
 5. After the split, no skill contains both the full Beat Chart and all five type-card catalogs.
 6. Play a Cliffhanger/Development as Hook remains one Hook for the session.
-7. Cockpit layout stays `run-guide`. Work accept-gate stays Work. Spoken text stays theatre of the mind.
+7. Cockpit layout stays `run-guide`. Work accept-gate stays Work. Spoken text stays theatre of the mind. Vehicle pages stay `vehicle-design`. Spell pages stay `spell-design`.
 8. Existing Session 11 beats are not rewritten to prove this contract.
 
 ## Out of contract
 
-How the designated writer phrases a skill. One skill per subtype card. Campaign OS `composing-beats` / `writing-*-beats`. The article skill `writing-beats`. Foundry staging. Cold opens (not a Hook).
+How the designated writer phrases a skill. One skill per subtype card. Campaign OS `composing-beats` / `writing-*-beats`. The article skill `writing-beats`. Foundry staging. Cold opens (not a Hook). Vehicle and spell page jobs ([wiki-kind-pages.md](./wiki-kind-pages.md)).
