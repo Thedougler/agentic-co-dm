@@ -42,7 +42,7 @@ From `.specify/integration.json` + `specify integration status --json`.
 | Field | Healthy value after repair |
 |---|---|
 | `status` | `ok` |
-| `default_integration` | `codex` |
+| `default_integration` | `omp` |
 | `installed_integrations` | `codex`, `grok`, `omp`, `claude` (order irrelevant) |
 | script flavor | Spec Kit shipped Python (`py`) for each installed integration |
 | `missing_managed_files` | `0` unexplained |
@@ -57,7 +57,7 @@ omp-only + script sh
   → install missing (codex, grok, claude) --script py
   → upgrade omp --script py
   → register extensions per integration
-  → use codex (default)
+  → use omp (default)
   → status ok
 ```
 

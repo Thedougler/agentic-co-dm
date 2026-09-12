@@ -25,13 +25,13 @@ specify integration install grok --script py
 specify integration install claude --script py
 specify integration upgrade omp --script py
 specify integration use grok
-specify integration use omp
 specify integration use claude
 specify integration use codex
+specify integration use omp
 specify integration status --json
 ```
 
-Expect `status=ok`, default `codex`, installed set includes `codex`, `grok`, `omp`, `claude`.
+Expect `status=ok`, default `omp`, installed set includes `codex`, `grok`, `omp`, `claude`.
 
 If status reports modified managed files: stop, migrate unique text, then continue. Do not `--force` by default.
 

@@ -28,6 +28,8 @@ jobs:
           d = json.load(sys.stdin)
           if d.get('status') != 'ok':
               sys.exit(f'status: {d.get(\"status\")}')
+          if d.get('default_integration') != 'omp':
+              sys.exit(f'default_integration: {d.get(\"default_integration\")}')
           required = {'codex', 'grok', 'omp', 'claude'}
           installed = set(d.get('installed_integrations', []))
           missing = required - installed

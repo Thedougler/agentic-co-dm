@@ -167,7 +167,7 @@ Maintainers verify repair by what each consumer actually loads, not by a tidy fi
 - **FR-008**: Unique human intent in any configuration file MUST be classified and migrated to its owner before that file is regenerated or removed.
 - **FR-009**: When integration metadata is healthy, repair MUST refresh adapters by installing missing integrations and upgrading installed ones. Force re-initialization MUST be reserved for unusable or missing metadata after preservation.
 - **FR-010**: Codex, Grok Build, Oh My Pi, and Claude Code MUST each have a native Spec Kit integration. Installing an additional safe integration MUST NOT by itself change the default integration.
-- **FR-011**: The repository MUST pick one stable default Spec Kit integration as scaffolding policy. That default MUST NOT be interpreted as a requirement that every task run through that harness.
+- **FR-011**: The repository MUST pick one stable default Spec Kit integration as scaffolding policy. The chosen default is Oh My Pi (`omp`). That default MUST NOT be interpreted as a requirement that every task run through that harness.
 - **FR-012**: Generated Spec Kit adapters MUST NOT contain unique project policy. After repair they MUST be regenerable without information loss.
 - **FR-013**: Hand-copied or legacy Spec Kit command and prompt copies that are not manifest-managed MUST be removed after unique intent is migrated and native adapters work.
 - **FR-014**: Claude Code MUST consume the canonical operating contract through a thin compatibility import. A full duplicate policy file MUST NOT remain at the repository root.
@@ -222,7 +222,7 @@ Maintainers verify repair by what each consumer actually loads, not by a tidy fi
 
 - Target coding harnesses are Codex, Grok Build, Oh My Pi, and Claude Code (used occasionally). Grok Bot is an outer-loop orchestrator, not a fifth Spec Kit integration.
 - Designated surfaces (product choices, not success metrics): canonical operating contract is the repository-root agent instruction file; Claude's thin import lives in Claude's project instruction file and points at that contract; constitution lives in Spec Kit memory; feature artifacts live under `specs/`; Codex adapters under the Codex skills location; Grok adapters under the Grok skills location; Oh My Pi adapters under the Oh My Pi commands location; Claude adapters under the Claude skills location; Bot orchestration procedure is a reusable Bot skill. Exact paths may follow current Spec Kit layouts.
-- Stable default Spec Kit integration is Codex. Other installed integrations remain installed. This is scaffolding policy, not a mandate that Codex perform every task.
+- Stable default Spec Kit integration is Oh My Pi (`omp`). Other installed integrations remain installed. This is scaffolding policy, not a mandate that Oh My Pi perform every task.
 - Spec Kit script mode for this repository is Spec Kit's default/shipped Python implementation (`--script py` or equivalent). That means selecting Spec Kit's own Python scripts, not writing custom Python (or other) scripts for Spec Kit. The current shell-script setting is the brownfield defect this feature removes.
 - Generated adapter similarity across harnesses is not a DRY violation. DRY applies only to human-maintained semantics.
 - User-level Grok Claude-compatibility isolation may be required for strict runtime isolation and cannot always be stored in the project. The requirement is the observed Grok session behavior; the user-level setting is the documented means when project config cannot govern it.

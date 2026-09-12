@@ -68,7 +68,7 @@ specs/014-dry-multiharness-speckit/
 
 ```text
 AGENTS.md                                            # canonical operating map + SPECKIT markers
-.specify/init-options.json                           # script: py; default_integration: codex
+.specify/init-options.json                           # script: py; default_integration: omp
 .specify/integration.json                            # installed: codex, grok, omp, claude
 .specify/extensions/agent-context/agent-context-config.yml  # context_file: AGENTS.md
 .specify/scripts/                                    # Spec Kit shipped (python after --script py)

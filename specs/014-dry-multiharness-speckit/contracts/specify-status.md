@@ -7,7 +7,7 @@ CI and `scripts/check-speckit-dry.sh` consume this object. Fail closed.
 ```json
 {
   "status": "ok",
-  "default_integration": "codex",
+  "default_integration": "omp",
   "installed_integrations": ["codex", "grok", "omp", "claude"],
   "missing_managed_files": 0,
   "modified_managed_files": 0,
@@ -21,7 +21,7 @@ CI and `scripts/check-speckit-dry.sh` consume this object. Fail closed.
 ## Fail
 
 - `status` other than `ok`
-- default not `codex`
+- default not `omp`
 - any of `codex`, `grok`, `omp`, `claude` absent
 - unexplained missing or modified managed files
 - invalid manifests
@@ -30,4 +30,4 @@ CI and `scripts/check-speckit-dry.sh` consume this object. Fail closed.
 ## Do not assert
 
 - Identical bytes across harness adapters
-- That every task must run in Codex
+- That every task must run in Oh My Pi

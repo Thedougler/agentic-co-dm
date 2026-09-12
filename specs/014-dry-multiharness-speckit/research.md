@@ -10,11 +10,11 @@
 
 ## Default integration and script flavor
 
-**Decision**: Keep OMP installed. Install `codex`, `grok`, and `claude` with Spec Kit's shipped Python implementation (`--script py`). Upgrade OMP to `--script py`. Then `specify integration use codex` last. Do not write project Spec Kit scripts.
+**Decision**: Keep OMP as the default integration. Install `codex`, `grok`, and `claude` with Spec Kit's shipped Python implementation (`--script py`). Upgrade OMP to `--script py`. Then `specify integration use omp` last so the default stays `omp`. Do not write project Spec Kit scripts.
 
-**Rationale**: Today `init-options.json` and `integration.json` have `script: sh` and `default_integration: omp`. Spec FR-011/029. Codex/Grok/Claude are multi-install safe. Python is Spec Kit's own script pack, not a repo-authored replacement.
+**Rationale**: `init-options.json` and `integration.json` already use `default_integration: omp`. Spec FR-011/029. Codex/Grok/Claude are multi-install safe. Python is Spec Kit's own script pack, not a repo-authored replacement. Switching the default to Codex would contradict the chosen scaffolding policy.
 
-**Alternatives considered**: Leave default OMP — contradicts the spec's scaffolding default. Custom Python wrappers around `specify` — FR-029 forbids. Switching default before other integrations exist — `use` needs them installed.
+**Alternatives considered**: Switch default to Codex — rejected; Oh My Pi remains the stable default. Custom Python wrappers around `specify` — FR-029 forbids. Switching default before other integrations exist — `use` needs them installed.
 
 ## Canonical operating contract
 
@@ -66,7 +66,7 @@
 
 **Decision**: Add `scripts/check-speckit-dry.sh` (same shape as `scripts/check-omp-baseline.sh`: cwd root, exit 0/1, stdout status). Relax `check-omp-baseline.sh` so it no longer requires `integration == omp` or forbids a Claude file that is a thin import. Keep OMP command/specialist/rules checks.
 
-**Rationale**: After default=codex, the 005 script would fail the healthy state. Two scripts, two seams.
+**Rationale**: Two scripts, two seams. The DRY check owns `default_integration == omp`. The 005 script owns OMP adapters, specialists, and caps.
 
 **Alternatives considered**: One combined script — mixes 005 and 014. Pytest — bulk suite, constitution IV.
 

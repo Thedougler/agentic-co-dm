@@ -31,4 +31,4 @@ None.
 
 ## 005 coexistence
 
-`scripts/check-omp-baseline.sh` must not require `default_integration == omp` after this feature. It may still require `.omp/commands/speckit.specify.md` and OMP specialists.
+`scripts/check-omp-baseline.sh` requires OMP is installed and OMP adapters exist. It does not own the `default_integration` assertion; this script does (`omp`). It may still require `.omp/commands/speckit.specify.md` and OMP specialists.

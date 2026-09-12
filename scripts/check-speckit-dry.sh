@@ -18,6 +18,8 @@ import json, sys
 d = json.loads(sys.argv[1])
 if d.get("status") != "ok":
     raise SystemExit(f"status is {d.get('status')}, expected ok")
+if d.get("default_integration") != "omp":
+    raise SystemExit(f"default_integration is {d.get('default_integration')}, expected omp")
 required = {"codex", "grok", "omp", "claude"}
 installed = set(d.get("installed_integrations", []))
 missing = required - installed
@@ -100,11 +102,39 @@ if grep -q '# Agentic Co-DM Constitution' docs/agents/harness-dispatch.md; then
 fi
 passed+=("dispatcher")
 
-# 10. No project-authored Spec Kit scripts
-if [[ -d .specify/scripts ]]; then
-  repo_scripts="$(find .specify/scripts -type f ! -name '*.py' ! -name '*.sh' ! -name '__pycache__' 2>/dev/null | head -1)"
-  # We only check for non-standard files; shipped py and sh are expected
-fi
+# 10. No project-authored Spec Kit scripts (shipped py/sh only)
+python3 - "$root" <<'PY' || fail "project-authored Spec Kit scripts under .specify/scripts/"
+import sys
+from pathlib import Path
+root = Path(sys.argv[1]) / ".specify/scripts"
+if not root.is_dir():
+    raise SystemExit(0)
+allowed = {
+    "bash/check-prerequisites.sh",
+    "bash/common.sh",
+    "bash/create-new-feature.sh",
+    "bash/resolve-template.sh",
+    "bash/setup-plan.sh",
+    "bash/setup-tasks.sh",
+    "python/check_prerequisites.py",
+    "python/common.py",
+    "python/create_new_feature.py",
+    "python/resolve_template.py",
+    "python/setup_plan.py",
+    "python/setup_tasks.py",
+}
+extras = []
+for p in root.rglob("*"):
+    if not p.is_file():
+        continue
+    if "__pycache__" in p.parts:
+        continue
+    rel = p.relative_to(root).as_posix()
+    if rel not in allowed:
+        extras.append(rel)
+if extras:
+    raise SystemExit("unexpected files: " + ", ".join(sorted(extras)))
+PY
 passed+=("no-custom-speckit-scripts")
 
 echo "speckit-dry: pass (${passed[*]})"
