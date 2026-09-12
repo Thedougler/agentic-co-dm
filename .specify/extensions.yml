@@ -58,6 +58,15 @@ hooks:
     prompt: Commit outstanding changes before implementation?
     description: Auto-commit before implementation
     condition: null
+  before_converge:
+  - extension: git
+    command: speckit.git.commit
+    enabled: true
+    optional: false
+    priority: 10
+    prompt: Commit outstanding changes before convergence?
+    description: Auto-commit before convergence
+    condition: null
   before_checklist:
   - extension: git
     command: speckit.git.commit
@@ -154,6 +163,15 @@ hooks:
     priority: 10
     prompt: Commit implementation changes?
     description: Auto-commit after implementation
+    condition: null
+  after_converge:
+  - extension: git
+    command: speckit.git.commit
+    enabled: true
+    optional: false
+    priority: 10
+    prompt: Commit convergence changes?
+    description: Auto-commit after convergence
     condition: null
   after_checklist:
   - extension: git

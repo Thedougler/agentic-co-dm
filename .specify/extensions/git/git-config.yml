@@ -41,6 +41,9 @@ auto_commit:
   before_implement:
     enabled: true
     message: "[Spec Kit] Save progress before implementation"
+  before_converge:
+    enabled: true
+    message: "[Spec Kit] Save progress before convergence"
   before_checklist:
     enabled: true
     message: "[Spec Kit] Save progress before checklist"
@@ -68,6 +71,9 @@ auto_commit:
   after_implement:
     enabled: true
     message: "[Spec Kit] Implementation progress"
+  after_converge:
+    enabled: true
+    message: "[Spec Kit] Convergence progress"
   after_checklist:
     enabled: true
     message: "[Spec Kit] Add checklist"
