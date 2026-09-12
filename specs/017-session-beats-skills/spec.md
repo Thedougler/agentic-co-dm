@@ -8,6 +8,13 @@
 
 **Input**: User description: "composing session beats should be split into multiple skills that load eachother as necessary, so composing session beats can be done optimally by agents following the methods of /Users/nick/Downloads/RTG-ScriptingtheGamev1.2.pdf with a main skill that loads when agents are planning a session, directing them how to compose the beats together, then beat specific skills for each type of beat, to be used when writing a new session beat of that type, editing a session beat of that type, or creating content for that session beat."
 
+## Clarifications
+
+### Session 2026-09-12
+
+- Q: When a named vehicle page is written, should it include the 5e vehicle sheet from the new template (size, speed, hull HP, weapons, combat) even though vehicle-design currently forbids inventing those numbers? → A: Fill the sheet. Update skills to match the templates. Write positive instructions (jobs and done-when). Treat missing crafts as not-yet-done, now in scope — not as crafts that will never exist. Vehicle design is in scope now and going forward.
+- Q: When an author creates or edits a campaign spell page, which skill is primary? → A: New `spell-design` skill is primary for write/edit/create of a spell page.
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Planning a session uses the composition skill (Priority: P1)
@@ -112,6 +119,29 @@ This split does not take jobs that already have owners. New live beats still mat
 
 ---
 
+### User Story 6 - Spell and vehicle wiki pages use the new templates (Priority: P2)
+
+A Co-DM creates or edits a named **vehicle** or **spell** campaign page. They start from `wiki/templates/vehicle.md` or `wiki/templates/spell.md` (the scaffolds provided for this feature). `wiki/AGENTS.md` lists `type: vehicle` and `type: spell` and Layout jobs for those kinds. Pass is those jobs, not heading-order match. Omit unused sections.
+
+A vehicle page is runnable at the table: spoken look, sheet (size, type, speed, crew, passengers, cargo), components (hull, helm, movement, weapons when armed), crew stations, handling, and combat. `vehicle-design` fills that page, including those numbers. Theatre of the mind still owns `[!narration]`.
+
+A spell page is runnable at the table: spoken look of the casting, classification line, 2024 effect block (time, range, components, duration, saves, damage, conditions, scaling when it scales), then Discovery and Lore when the spell needs placement or history. `spell-design` is primary for that page. Theatre of the mind still owns `[!narration]`.
+
+Skills that teach these pages state what to write and when the page is done. They describe work that has not been done yet as the work to do now.
+
+**Why this priority**: The wiki has no spell or vehicle kind yet. The templates are the layout. Skills that still teach "leave the sheet blank" will not produce playable pages.
+
+**Independent Test**: Give an author a job to create a named ship. The page starts from `wiki/templates/vehicle.md` and includes narration, a filled sheet, and hull/component figures so the craft can enter play. Give an author a job to create a spell. `spell-design` is primary. The page starts from `wiki/templates/spell.md` and includes narration, classification, and a runnable 2024 effect. A reviewer can run both without another format guide.
+
+**Acceptance Scenarios**:
+
+1. **Given** a job to create or edit a named vehicle, **When** the author writes the wiki page, **Then** they copy `wiki/templates/vehicle.md` and fill sheet, components, crew, handling, and combat so the vehicle can be run.
+2. **Given** a job to create or edit a spell, **When** the author writes the wiki page, **Then** `spell-design` is primary, they copy `wiki/templates/spell.md`, and they fill narration, classification, and the runnable effect block.
+3. **Given** `wiki/AGENTS.md`, **When** an author classifies the page, **Then** `type` may be `vehicle` or `spell`, and Layout lists jobs for those kinds.
+4. **Given** `vehicle-design` after this feature, **When** an author follows it, **Then** it tells them to fill the vehicle sheet and components as part of the page.
+
+---
+
 ### Edge Cases
 
 - Play a Cliffhanger as Hook or Play a Development as Hook: still one Hook for the session; the borrowed type is loaded only for that opening shape; the next beat still follows polarity.
@@ -126,6 +156,8 @@ This split does not take jobs that already have owners. New live beats still mat
 - After this feature, no remaining single skill contains the full chart plus all five type-card catalogs.
 - Existing Session 11 beats and spines are not rewritten solely to prove the split.
 - Companion notes (hazards tables) are not typed beats and do not load type skills.
+- Unused template sections on a new spell or vehicle page are omitted; filled jobs stay.
+- A beat that needs a named craft or a spell hands off to that wiki kind; the beat skill still owns the beat.
 
 ## Requirements *(mandatory)*
 
@@ -149,6 +181,12 @@ This split does not take jobs that already have owners. New live beats still mat
 - **FR-016**: Existing Session 11 beats and spines MUST NOT be rewritten solely to satisfy this feature.
 - **FR-017**: After this feature, no single skill MAY contain the full Beat Chart plus all five type-card catalogs.
 - **FR-018**: Companion notes that are not typed beats MUST NOT be required to load a type skill.
+- **FR-019**: `wiki/templates/vehicle.md` and `wiki/templates/spell.md` MUST be the scaffolds for those campaign kinds, matching the templates provided for this feature.
+- **FR-020**: Campaign `type` MUST include `vehicle` and `spell`. Layout MUST list jobs for Vehicle and Spell. Pass is those jobs.
+- **FR-021**: A new or edited vehicle page MUST include a spoken look and a filled 5e vehicle sheet: size, type, speed, crew, and hull plus component AC/HP. Armed craft include weapons. Handling and combat are filled so the vehicle can enter play.
+- **FR-022**: `vehicle-design` MUST teach filling that vehicle template, including the sheet and component numbers.
+- **FR-023**: A job to write, edit, or create a spell page MUST use `spell-design` as its primary skill. The page MUST include a spoken look, a classification line, and a runnable 2024 effect block (casting time, range, components, duration, and the effect). Discovery and Lore are filled when the spell needs placement or history.
+- **FR-024**: Skills updated for these kinds MUST state what to write and when the page is done. They MUST treat work that has not been done yet as the work to do now.
 
 ### Key Entities
 
@@ -165,6 +203,9 @@ This split does not take jobs that already have owners. New live beats still mat
 - **Session spine**: The session-level chart the DM opens for order and purpose. Not a cockpit.
 - **Live beat**: One ~thirty-minute slice the DM runs. Format owned by the Session 11 cockpit standard.
 - **Work**: Mutable prep. Not wiki until the DM accepts.
+- **Vehicle page**: A named craft note. `type: vehicle`. Sheet, components, crew, handling, combat. Owner: `vehicle-design`.
+- **Spell page**: A named spell note. `type: spell`. Narration, classification, runnable effect. Discovery and Lore when needed. Owner: `spell-design`.
+- **spell-design**: The skill that is primary when writing, editing, or creating a spell page.
 
 ## Success Criteria *(mandatory)*
 
@@ -180,13 +221,17 @@ This split does not take jobs that already have owners. New live beats still mat
 - **SC-008**: After this feature is in force, 0% of existing Session 11 beats or spines are rewritten solely to prove the split.
 - **SC-009**: In a walkthrough that plans a session then fills one Hook and one later typed beat, extra skills load only when a named seam fires; 0% extra type-card catalogs open otherwise.
 - **SC-010**: In a review of newly composed beats, 100% offer at least two viable player responses, and 0% require a single prepared outcome to continue the session.
+- **SC-011**: 100% of new vehicle pages started from `wiki/templates/vehicle.md` include narration plus a filled sheet (size, type, speed, crew) and hull/component figures a DM can run.
+- **SC-012**: 100% of new spell pages started from `wiki/templates/spell.md` include narration, classification, and a runnable 2024 effect block.
+- **SC-013**: After this feature, `vehicle-design` directs the author to fill the vehicle sheet and components as part of the page.
+- **SC-014**: Two reviewers classify write, edit, and create-content jobs for a spell page and agree `spell-design` is primary for 100% of those jobs.
 
 ## Assumptions
 
 - "Type of beat" means the five Beat Chart types (Hook, Development, Cliffhanger, Climax, Resolution), not one skill per subtype card. Cards stay inside their type skill.
 - The current session-beats blob is split into the composition skill plus the five type skills. The blob is not kept beside the split.
 - Method source is *Scripting the Game* (Pondsmith, with concepts from Flint Dille, R. Talsorian Games, 2020), as already adapted for this campaign: Beat Chart rules plus player-agency gates. Skills teach the methods; they do not paste the source text.
-- Session 11 cockpit format, session-folder filing, Work accept-before-wiki, live-beat assembly, theatre of the mind, and encounter/trap/place/monster crafts stay as they are. This feature only splits who teaches composition versus who teaches a typed beat.
-- Creating content for a beat means filling that beat's jobs (situation, pressure, spoken opening, procedure, landing), then handing off to existing crafts when those crafts own the work.
-- A cold open is not a Hook and is out of scope for these skills.
-- Out of scope: rewriting Session 11 to prove the split; Foundry staging; a second pacing system beside the Beat Chart; one skill per card; changing who owns cockpit layout or spoken player text.
+- Session 11 cockpit format, session-folder filing, Work accept-before-wiki, live-beat assembly, theatre of the mind, and encounter/trap/place/monster crafts stay as they are for beats. This feature also adds spell and vehicle wiki kinds: templates, Layout jobs, `vehicle-design` updated to fill the vehicle sheet, and a new `spell-design` skill so those pages are runnable.
+- Creating content for a beat means filling that beat's jobs (situation, pressure, spoken opening, procedure, landing), then handing off to existing crafts when those crafts own the work, including vehicle and spell pages when a beat needs a named craft or spell.
+- A cold open is not a Hook and is out of scope for the beat skills.
+- Out of scope: rewriting Session 11 to prove the split; Foundry staging; a second pacing system beside the Beat Chart; one skill per beat-subtype card; changing who owns cockpit layout or spoken player text.
