@@ -1,25 +1,25 @@
 # Ingest Prompt Templates
 
-These are the mental frameworks to use when distilling a source into wiki pages.
+These are the mental frameworks to use when distilling a source into wiki pages. The source is **evidence**. Extract **ideas** and route them; do not copy the file as a wiki note.
 
 ## Knowledge Extraction Frame
 
 When reading a source document, ask yourself:
 
-1. **What are the 3-5 most important ideas in this document?**
-   These become concepts pages or updates to existing concept pages.
+1. **What are the discrete ideas in this document?**
+   Claims, creative decisions, mechanics, descriptions, relationships. Each idea gets a destination: an existing page, a justified new page, staged/unresolved, or a canon proposal.
 
-2. **Who or what is mentioned that deserves its own page?**
-   People, tools, organizations, projects → entity pages.
+2. **Who or what is mentioned that already has a page, or deserves a justified new one?**
+   Prefer the existing page. People, tools, organizations, projects → entity pages only when the idea has coherent standalone scope.
 
 3. **What does this document teach you how to do?**
-   Procedures, workflows, techniques → skills pages.
+   Procedures, workflows, techniques → skills pages, or updates to existing skill pages.
 
-4. **What claims does this document make?**
-   Each claim needs a source attribution. If it contradicts an existing wiki claim, note the contradiction.
+4. **What claims does this document make, and with what confidence?**
+   Each claim needs a source attribution. Extracted claims need no marker. Synthesized claims are `^[inferred]`. Unclear or conflicting claims are `^[ambiguous]`.
 
 5. **How does this connect to what the wiki already knows?**
-   This is the most important question. The value of the wiki compounds through connections.
+   This is the most important question. Route by topic, not by the source outline. The value of the wiki compounds through connections.
 
 ## Paper Extraction Frame
 
@@ -37,10 +37,12 @@ These map onto the Paper Deep-Dive Template in `llm-wiki/SKILL.md`. The goal is 
 
 When a new source covers ground that existing pages already cover:
 
-- Don't duplicate — synthesize
-- If the new source agrees with existing content, strengthen the claims with additional attribution
-- If it disagrees, create an "Open Questions" or "Debate" section noting both positions
-- If it adds nuance, weave it into the existing narrative
+- Prefer the existing page; do not duplicate
+- If the new source agrees, strengthen claims with additional attribution
+- If it disagrees with established **canon**, keep the existing fact, mark `^[ambiguous]`, and surface a **proposal** for the DM (`docs/agents/work.md`). Do not overwrite. Named ingest approves those sources; it does not grant silent canon edits
+- If it disagrees on a non-campaign knowledge page, note both positions without dropping either
+- If it adds nuance without conflict, weave it into the existing narrative
+- Polish expression and structure; keep settled intent and stated mechanics
 
 ## Cross-Reference Discovery
 

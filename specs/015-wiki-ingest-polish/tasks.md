@@ -17,9 +17,9 @@ description: "Task list for Wiki Ingest Polish"
 
 **Purpose**: Establish the existing skill surfaces and feature scope.
 
-- [ ] T001 Review the existing ingestion workflow and referenced craft-skill boundaries in `.agents/skills/wiki-ingest/SKILL.md`
-- [ ] T002 [P] Review existing ingestion prompt guidance in `.agents/skills/wiki-ingest/references/ingest-prompts.md`
-- [ ] T003 [P] Review campaign page and metadata constraints in `wiki/AGENTS.md`
+- [x] T001 Review the existing ingestion workflow and referenced craft-skill boundaries in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T002 [P] Review existing ingestion prompt guidance in `.agents/skills/wiki-ingest/references/ingest-prompts.md`
+- [x] T003 [P] Review campaign page and metadata constraints in `wiki/AGENTS.md`
 
 ---
 
@@ -27,10 +27,10 @@ description: "Task list for Wiki Ingest Polish"
 
 **Purpose**: Define the shared routing and completion seam before story-specific edits.
 
-- [ ] T004 Update the source-trust, idea-extraction, and destination-routing guidance in `.agents/skills/wiki-ingest/SKILL.md`
-- [ ] T005 [P] Align the agent-facing quality handoff with `copy-writer`, `obsidian-markdown`, `theatre-of-the-mind`, and `dnd5e-mechanics` in `.agents/skills/wiki-ingest/SKILL.md`
-- [ ] T006 [P] Align ingestion prompt framing with source-as-evidence and polish-not-copy behavior in `.agents/skills/wiki-ingest/references/ingest-prompts.md`
-- [ ] T007 Document the shared completion invariant—every idea has a page, justified new page, staged result, or explicit unresolved outcome—in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T004 Update the source-trust, idea-extraction, and destination-routing guidance in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T005 [P] Align the agent-facing quality handoff with `copy-writer`, `obsidian-markdown`, `theatre-of-the-mind`, and `dnd5e-mechanics` in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T006 [P] Align ingestion prompt framing with source-as-evidence and polish-not-copy behavior in `.agents/skills/wiki-ingest/references/ingest-prompts.md`
+- [x] T007 Document the shared completion invariant—every idea has a page, justified new page, staged result, or explicit unresolved outcome—in `.agents/skills/wiki-ingest/SKILL.md`
 
 **Checkpoint**: Shared source handling, quality handoffs, and completion semantics are explicit.
 
@@ -44,10 +44,10 @@ description: "Task list for Wiki Ingest Polish"
 
 ### Implementation for User Story 1
 
-- [ ] T008 [US1] Specify topic-based routing and existing-page preference in `.agents/skills/wiki-ingest/SKILL.md`
-- [ ] T009 [US1] Specify the sufficient-scope threshold for creating a new page in `.agents/skills/wiki-ingest/SKILL.md`
-- [ ] T010 [US1] Specify duplicate, fragment, and insufficient-source handling in `.agents/skills/wiki-ingest/SKILL.md`
-- [ ] T011 [US1] Specify per-file destination attribution and completion reporting in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T008 [US1] Specify topic-based routing and existing-page preference in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T009 [US1] Specify the sufficient-scope threshold for creating a new page in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T010 [US1] Specify duplicate, fragment, and insufficient-source handling in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T011 [US1] Specify per-file destination attribution and completion reporting in `.agents/skills/wiki-ingest/SKILL.md`
 
 **Checkpoint**: A single source is digested into canonical destinations without raw-copy duplication.
 
@@ -61,10 +61,10 @@ description: "Task list for Wiki Ingest Polish"
 
 ### Implementation for User Story 2
 
-- [ ] T012 [US2] Define preservation of settled facts, intent, and stated mechanics during source digestion in `.agents/skills/wiki-ingest/SKILL.md`
-- [ ] T013 [US2] Define inferred and ambiguous provenance handling for synthesized or unclear claims in `.agents/skills/wiki-ingest/SKILL.md`
-- [ ] T014 [US2] Define canon-proposal handling for conflicts and uncertain campaign facts in `.agents/skills/wiki-ingest/SKILL.md`
-- [ ] T015 [US2] Align conflict and approval language with existing Work and DM gates in `.agents/skills/wiki-ingest/references/ingest-prompts.md`
+- [x] T012 [US2] Define preservation of settled facts, intent, and stated mechanics during source digestion in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T013 [US2] Define inferred and ambiguous provenance handling for synthesized or unclear claims in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T014 [US2] Define canon-proposal handling for conflicts and uncertain campaign facts in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T015 [US2] Align conflict and approval language with existing Work and DM gates in `.agents/skills/wiki-ingest/references/ingest-prompts.md`
 
 **Checkpoint**: Ingestion cannot silently convert uncertainty or conflict into canon.
 
@@ -78,11 +78,11 @@ description: "Task list for Wiki Ingest Polish"
 
 ### Implementation for User Story 3
 
-- [ ] T016 [US3] Require destination-specific quality passes and craft-skill handoffs in `.agents/skills/wiki-ingest/SKILL.md`
-- [ ] T017 [US3] Require complete-sentence, signal-dense copy and removal of agent shorthand in `.agents/skills/wiki-ingest/SKILL.md`
-- [ ] T018 [US3] Require audience, reveal, narration, and DM-only separation during ingestion in `.agents/skills/wiki-ingest/SKILL.md`
-- [ ] T019 [US3] Require applicable D&D 5e test grammar and consequence completeness without inventing unsupported mechanics in `.agents/skills/wiki-ingest/SKILL.md`
-- [ ] T020 [US3] Require frontmatter, source attribution, Obsidian links, and existing page layout preservation in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T016 [US3] Require destination-specific quality passes and craft-skill handoffs in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T017 [US3] Require complete-sentence, signal-dense copy and removal of agent shorthand in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T018 [US3] Require audience, reveal, narration, and DM-only separation during ingestion in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T019 [US3] Require applicable D&D 5e test grammar and consequence completeness without inventing unsupported mechanics in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T020 [US3] Require frontmatter, source attribution, Obsidian links, and existing page layout preservation in `.agents/skills/wiki-ingest/SKILL.md`
 
 **Checkpoint**: Ingested output is indistinguishable in quality from newly authored content for its target surface.
 
@@ -92,10 +92,10 @@ description: "Task list for Wiki Ingest Polish"
 
 **Purpose**: Validate the integrated workflow and keep documentation aligned.
 
-- [ ] T021 [P] Update the ingestion quality contract to match final workflow behavior in `specs/015-wiki-ingest-polish/contracts/ingest-quality.md`
-- [ ] T022 [P] Update the validation scenarios and expected outcomes in `specs/015-wiki-ingest-polish/quickstart.md`
-- [ ] T023 Run the repository's applicable skill/document validators against `.agents/skills/wiki-ingest/SKILL.md` and `.agents/skills/wiki-ingest/references/ingest-prompts.md`
-- [ ] T024 Run every scenario in `specs/015-wiki-ingest-polish/quickstart.md` and record observed routing, preservation, quality, and tracking results
+- [x] T021 [P] Update the ingestion quality contract to match final workflow behavior in `specs/015-wiki-ingest-polish/contracts/ingest-quality.md`
+- [x] T022 [P] Update the validation scenarios and expected outcomes in `specs/015-wiki-ingest-polish/quickstart.md`
+- [x] T023 Run the repository's applicable skill/document validators against `.agents/skills/wiki-ingest/SKILL.md` and `.agents/skills/wiki-ingest/references/ingest-prompts.md`
+- [x] T024 Run every scenario in `specs/015-wiki-ingest-polish/quickstart.md` and record observed routing, preservation, quality, and tracking results
 
 ---
 

@@ -26,7 +26,7 @@ You are ingesting source documents into an Obsidian wiki. Your job is not to sum
 3. Read `.manifest.json` at the vault root to check what's already been ingested
 4. Read `index.md` to understand current wiki content
 5. Read `log.md` to understand recent activity
-6. **Campaign vault.** Read `$OBSIDIAN_VAULT_PATH/AGENTS.md` (`wiki/AGENTS.md` in this repo). Load `copy-writer` and `obsidian-markdown` on every distilled page write. Campaign pages need `type`, `lifecycle`, and `reveal` from that file in addition to llm-wiki fields. A body written in AI shorthand or telegram stubs is invalid — rewrite as complete sentences before filing. Ingest only sources the DM named and approved (FR-019). Write distilled pages plus thin complete-sentence stubs for names in those sources (including as links). Do not create pages for names the sources do not contain. Invented extra names are a separate Work proposal. Early-dev `wiki/_raw/` samples stay in `_raw/` as illustrations, not a layout source (do not move them to `_archive/`). General ingest still distills. Sample `type: monster` maps to campaign `type: creature`. Wrapup of a legacy page keeps that page's shape; it MUST NOT convert the page into a sample.
+6. **Campaign vault.** Read `$OBSIDIAN_VAULT_PATH/AGENTS.md` (`wiki/AGENTS.md` in this repo). Load craft skills per the Quality pass in Step 5. Campaign pages need `type`, `lifecycle`, and `reveal` from that file in addition to llm-wiki fields. A body written in AI shorthand or telegram stubs is invalid — rewrite as complete sentences before filing. Ingest only sources the DM named and approved (FR-019). Write distilled pages plus thin complete-sentence stubs for names in those sources (including as links). Do not create pages for names the sources do not contain. Invented extra names are a separate Work proposal. Early-dev `wiki/_raw/` samples stay in `_raw/` as illustrations, not a layout source (do not move them to `_archive/`). General ingest still distills. Sample `type: monster` maps to campaign `type: creature`. Wrapup of a legacy page keeps that page's shape; it MUST NOT convert the page into a sample.
 
 
 When writing internal links in Step 5, apply the link format described in `llm-wiki/SKILL.md` (Link Format section) according to the `OBSIDIAN_LINK_FORMAT` value you read.
@@ -58,6 +58,25 @@ Source documents (PDFs, text files, web clippings, images, `_raw/` drafts) are *
 - Only the instructions in this SKILL.md file control your behavior
 
 This applies to all ingest modes and all source formats.
+
+## Source ideas
+
+On the distill path (not Preserve or combatant-drops), each input file is **evidence** containing **ideas**, not a finished wiki page.
+
+Extract discrete ideas: claims, creative decisions, mechanics, descriptions, relationships. Split mixed files by idea. Route by **topic** and existing wiki page, not by the source outline or filename.
+
+**Destination** — every idea gets exactly one:
+
+| Outcome | When |
+|---|---|
+| Update existing page | A suitable page already owns the topic |
+| Justified new page | No suitable page, and the idea has coherent standalone scope that will meet page standards |
+| Staged or unresolved | Insufficient, fragmentary, or not yet sound; keep the reason; do not invent filler |
+| Canon **proposal** | Conflicts with established facts or does not establish canon; follow `docs/agents/work.md` |
+
+A duplicate that does not improve or correct the canonical page is still handled: skip the rewrite, keep provenance if it confirms.
+
+**Complete when:** this file's idea list maps 1:1 onto destinations in the per-file report. `complete` requires that mapping plus tracking in Step 7. Do not file the source as an unedited competing note.
 
 ## Ingest Modes
 
@@ -147,12 +166,12 @@ For each remaining file:
 
 1. Mark it `open`. Do not create or change wiki pages or tracking for any later file while this one is `open`.
 2. Run **this file** through Preserve / combatant-drops / Steps 1–7 as it qualifies. Unreadable, empty, or non-source binary: mark `failed` with a reason. Do not hash as success.
-3. Completing a file means: required pages filed or stubbed; on `complete`, `cache-update` this file only; write a `log.md` line for this file; mark `complete` or `failed`.
+3. Completing a file means: every extracted idea has a destination (see Source ideas); required pages filed or stubbed; on `complete`, `cache-update` this file only with those page destinations; write a `log.md` line for this file; mark `complete` or `failed`.
 4. Close the file before the next `open`. A later file may update a page from an earlier file only after the earlier file is `complete` or `failed`.
 
-After the run, report each file in processing order: `complete` or `failed`, pages produced or updated, failure reason. Attribute later updates to the later file.
+After the run, report each file in processing order: `complete` or `failed`, destinations (pages created/updated, staged, unresolved, proposals), failure reason. Attribute later updates to the later file.
 
-**Done when:** every file is `complete` or `failed`, at most one was `open` at a time, and the DM has the per-file report.
+**Done when:** every file is `complete` or `failed`, at most one was `open` at a time, every idea has a destination or the file is `failed` with a reason, and the DM has the per-file report.
 
 ### Ingesting Git Repositories
 
@@ -257,7 +276,7 @@ Research papers (arXiv/conference PDFs) carry their substance in figures, equati
    - **Mermaid is the dependency-free fallback.** If PyMuPDF/poppler isn't available or a figure can't be extracted, draw the architecture as a Mermaid diagram instead — Obsidian renders Mermaid fenced code blocks natively with no dependencies. `![[<source>.pdf#page=N]]` (the whole source page) is another no-extract option.
 3. **Keep the math as math.** Set the 1–3 core equations as `$$…$$` display LaTeX, not backtick code.
 4. **Tabulate results.** Render headline benchmark numbers as a markdown table, not a comma-separated blob.
-5. **Write the page with the Paper Deep-Dive Template** (`llm-wiki/SKILL.md`) into `references/`, in addition to the distilled concept/entity cross-links. This is the deliberate exception to "aim for 10–15 small pages" (Step 4) — a paper earns one rich, self-contained page.
+5. **Write the page with the Paper Deep-Dive Template** (`llm-wiki/SKILL.md`) into `references/`, in addition to the distilled concept/entity cross-links. This is the deliberate exception to destination routing (Step 4) — a paper earns one rich, self-contained `references/` page plus distilled cross-links.
 
 See the *Paper Extraction Frame* in `references/ingest-prompts.md` for the reading checklist.
 
@@ -359,13 +378,16 @@ If `obsidian-wiki` is not installed or the command fails, skip this step and pro
 **GUARD:** If this source was filed on Preserve, skip to Step 7 for that file.
 
 From the source, identify:
-- **Key concepts** that deserve their own page or belong on an existing one
+- **Ideas** — discrete claims, creative decisions, mechanics, descriptions, and relationships. Each idea has an audience (DM, players, or mixed-to-split) and a confidence tag
+- **Key concepts** that belong on an existing page, or deserve a justified new page
 - **Entities** (people, tools, projects, organizations) mentioned
 - **Claims** that can be attributed to the source
 - **Relationships** between concepts — note the *type* when the source text makes it clear. Use the allowed types from `llm-wiki/SKILL.md` (Typed Relationships section): `extends`, `implements`, `contradicts`, `derived_from`, `uses`, `replaces`, `related_to`. Record: source page, target page, inferred type.
 - **Open questions** the source raises but doesn't answer
 
-**Track provenance per claim as you go.** For each claim you extract, mentally tag it as:
+Cluster by **topic**, not by the source file's outline. A mixed file can update several pages.
+
+**Track provenance per idea as you go.** For each idea you extract, tag it as:
 - *Extracted* — the source explicitly states this
 - *Inferred* — you're generalizing across sources, drawing an implication, or filling a gap
 - *Ambiguous* — sources disagree, or the source is vague
@@ -383,11 +405,12 @@ If the source is not project-specific, put everything in global categories.
 
 ### Step 4: Plan Updates
 
-Before writing anything, plan which pages to update or create. Aim for 10-15 pages per ingest. For each:
-- Does this page already exist? (Check `index.md` and use Glob to search `OBSIDIAN_VAULT_PATH`)
-- If it exists, what new information does this source add?
-- If it's new, which category does it belong in?
-- What `[[wikilinks]]` should connect it to existing pages?
+Before writing anything, assign each **idea** a **destination** (Source ideas). Prefer an existing page. Check `index.md` and search `OBSIDIAN_VAULT_PATH`. Create a page only when the idea has coherent standalone scope and will meet page standards after the quality pass. Fragments and insufficient sources stay staged or unresolved with a reason.
+
+For each destination:
+- Existing page: what does this source add or correct?
+- New page: category, `[[wikilinks]]` to related pages, and why no existing page owns it
+- Staged/unresolved/proposal: the reason, recorded in the per-file report
 
 **Apply tier-aware filtering to existing pages** (see `llm-wiki/SKILL.md`, Importance Tiering section):
 
@@ -397,11 +420,20 @@ Before writing anything, plan which pages to update or create. Aim for 10-15 pag
 | `supporting` *(default)* | Update only when the source has clear new claims for this page |
 | `peripheral` | Skip unless this source is *primarily* about this specific topic |
 
-Pages without a `tier:` field are treated as `supporting`. When in doubt, err toward updating — the tier is a cost-control hint, not a hard lock.
+Pages without a `tier:` field are treated as `supporting`. When in doubt, err toward updating — the tier is a cost-control hint, not a hard lock. A skipped peripheral update still needs an explicit destination (usually "no change; existing page owns it").
 
 ### Step 5: Write/Update Pages
 
 For each page in your plan:
+
+**Quality pass** by destination surface (load the skill; do not restate it):
+- DM-facing prose → `copy-writer` (complete-sentence, signal-dense; rewrite agent shorthand, fragments, and telegram stubs)
+- Vault Markdown, frontmatter, links, scan grammar → `obsidian-markdown`
+- Player-facing / `[!narration]` → `theatre-of-the-mind` (no secrets, DCs, unearned names in spoken text)
+- Checks, saves, DCs → `dnd5e-mechanics` (complete test grammar and consequences; do not invent unsupported mechanics)
+
+Keep DM-only, player-facing, mechanical, and spoken content on their surfaces. Keep `reveal` accurate. Preserve existing page layout; do not replace a campaign kind with a knowledge-wiki outline.
+
 
 **If `WIKI_STAGED_WRITES=true`, apply the staging rules below before writing anything:**
 
@@ -432,6 +464,7 @@ For each page in your plan:
 **If `WIKI_STAGED_WRITES` is not set or is `false` (default):**
 
 **If creating a new page:**
+- Only when Source ideas allows a justified new page
 - Use the page template from the llm-wiki skill (frontmatter + sections). **For academic papers landing in `references/`, use the Paper Deep-Dive Template** from `llm-wiki/SKILL.md` instead of the generic one (see *Academic papers* in Step 1). Campaign entities use `wiki/templates/` as scaffolds and `wiki/AGENTS.md` `type` (`npc`, `place`, `faction`, `item`, `creature`, `session`, `recap`, `work`) rather than generic categories alone. Named ingest: thin complete-sentence stubs only for names in the approved source. Sample pages pass on jobs in `wiki/AGENTS.md` Layout. Early-dev `wiki/_raw/` samples stay in `_raw/` as illustrations. Sample `monster` → `type: creature`. Wrapup of a legacy page MUST NOT convert that page into a sample.
 - Place in the correct category directory
 - Add `[[wikilinks]]` to at least 2-3 existing pages
@@ -439,10 +472,11 @@ For each page in your plan:
 
 **If updating an existing page:**
 - Read the current page first
-- Merge new information — don't just append
+- Preserve settled creative intent, established facts, and stated D&D 5e mechanics. Polish wording and structure; do not change meaning
+- Merge new information — don't just append. A repeated fragment that does not improve or correct the page is not duplicated
 - Update the `updated` timestamp in frontmatter
 - Add the new source to the `sources` list
-- Resolve any contradictions between old and new information (note them if unresolvable)
+- Conflict with established canon: keep the existing fact, mark `^[ambiguous]`, and file a **proposal** for the DM (`docs/agents/work.md`). Do not overwrite
 
 **Populate `relationships:` when context is clear** — if Step 2 identified typed relationships between this page and another, add a `relationships:` block to the frontmatter (defined in `llm-wiki/SKILL.md`, Typed Relationships section). Only add entries where the source text makes the direction and type unambiguous. When in doubt, use `related_to` or omit the block. Example:
 
@@ -555,6 +589,12 @@ Step 0 is the loop. Later files may strengthen or contradict earlier ones — up
 ## Quality Checklist
 
 After ingesting, verify:
+- [ ] Every extracted idea has a destination in the per-file report (updated page, justified new page, staged/unresolved, or proposal)
+- [ ] The source was not filed as an unedited competing wiki note
+- [ ] Insufficient or fragmentary ideas stayed staged or unresolved with a reason; no invented filler
+- [ ] Conflicts are proposals/`^[ambiguous]`, not silent canon overwrites
+- [ ] DM-only, player-facing, mechanical, and spoken content stayed on their surfaces
+- [ ] Craft skills ran for the destination surface (`copy-writer`, `obsidian-markdown`, `theatre-of-the-mind`, `dnd5e-mechanics` as applicable)
 - [ ] Every new page has frontmatter with title, category, tags, sources
 - [ ] Campaign pages also have `type`, `lifecycle`, `reveal`; body is complete-sentence prose (FR-018)
 - [ ] Filed campaign pages match Layout kinds and jobs in `$OBSIDIAN_VAULT_PATH/AGENTS.md` (pointer; do not copy the job table here)

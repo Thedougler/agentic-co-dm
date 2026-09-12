@@ -1,0 +1,1 @@
+Tide-glass is a palm-sized lens of sea-green glass found in Red Harbor nets after a spring tide. Held to the eye, it shows the waterline as a bright seam even in fog. Sailors keep one on a cord and use it to judge whether a skiff can clear the inner bar. It is an item, not a place, and it is distinct from the lighthouse.
