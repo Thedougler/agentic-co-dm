@@ -44,6 +44,26 @@ Reader is `agent` | `DM` | `players`. Unknown reader → `DM`. Vault is `true` i
 | Working with visual references for a depiction | visual-references |
 | Producing (attach, ground, generate, promote, place) a visual aid | visual-aids |
 
+
+## Skill design dispatch
+
+Classify before any in-scope instruction file changes. Class is `design-impact` | `not`. Length MUST NOT be the gate.
+
+Design-impact if the change would alter skill triggering, workflow ownership, standing load, or would create a skill or subagent. Borderline of those four bullets MUST be treated as design-impact. Creating a new skill or subagent MUST be classified as design-impact.
+
+| Class | Writer |
+|---|---|
+| `design-impact` | designated writer |
+| `not` | session agent |
+| owner explicitly skips dispatch | session agent |
+
+Writer is designated writer if design-impact (unless owner overrule), else session agent. Overrule is explicit owner skip only; silence is not overrule.
+
+In-scope: source skill; standing instruction / sticky rule; subagent definition; writing-for-agents.
+Out-of-scope: constitution; feature specs; generated Spec Kit adapters; campaign wiki.
+
+Design-impact work: `docs/agents/skill-design-dispatch.md`.
+
 ## Vault retrieval
 
 Search is on by default against collection `wiki`. Empty `QMD_WIKI_COLLECTION` still means `wiki`.

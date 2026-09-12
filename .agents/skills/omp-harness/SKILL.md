@@ -15,6 +15,8 @@ Write context files, skills, and subagent definitions for [omp](https://omp.sh) 
 
 Also load `writing-for-agents` — its levers (context pointers, information hierarchy, leading words, completion criteria, pruning) apply to every omp document. This skill covers omp-specific packaging and mechanics.
 
+Design-impact omp context, skills, or subagent definitions: follow `docs/agents/skill-design-dispatch.md`.
+
 ## 1 · Context files
 
 Context files are standing instructions loaded automatically. omp walks upward from the working directory to the repository root, composing files at each level. Most-local wins.
