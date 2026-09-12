@@ -8,6 +8,13 @@
 
 **Input**: User description: "When agents must perform large modifications to skill files, or other agent facing text, small changes or modifications may be done by the main agent (changing a value, a sentence, a path, a single word or a couple words) however beyond that, agents should delegate the skill modification or creation to a reserved high-expertise writer which will complete the task. In the event usage limits cause it to stop or refuse or otherwise error, it will be resumed later and the task left incomplete. Due to these limits the reserved writer is only used for these large changes where expertise in skill design is necessary, and its task will be appropriately scoped and prompted. Small changes to skill files that dont impact the overall design can be handled by the main agent." Later direction: only skill files and big changes to standing agent-facing instructions; used for high-level agentic design with far-reaching scope and implications. Grill settlements: the gate is design-impact not size; closed in-scope set; unavailability leaves files untouched.
 
+## Clarifications
+
+### Session 2026-09-12
+
+- Q: When the designated writer reports a usage limit, what happens to that job? → A: Mark that specific job incomplete, record a retry time, and re-attempt after usage limits are relaxed.
+- Q: When Claude reports a usage limit, how should the retry time be chosen? → A: Use the reset time in the usage-limit report; if none, wait 5 hours, then 24 hours if still limited.
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Classify design-impact before writing (Priority: P1)
@@ -76,7 +83,7 @@ This routing applies in every coding session that would edit those files, includ
 
 ### User Story 4 - Unavailability parks work and leaves files untouched (Priority: P4)
 
-If the designated writer cannot start, stops, refuses, or errors (including usage limits), the design-impact job is incomplete. In-scope target files match their content from before the attempt. The scoped prompt is tracked work a later session can find without the original chat. The session agent does not finish the design itself.
+If the designated writer cannot start, stops, refuses, or errors, the design-impact job is incomplete. In-scope target files match their content from before the attempt. The scoped prompt is tracked work a later session can find without the original chat. The session agent does not finish the design itself. If the writer reports a **usage limit**, that specific job stays incomplete and carries a **retry time**; it is not re-attempted until after that time, when usage limits are relaxed. Retry time is the reset time in the usage-limit report when present; if none, 5 hours from the park; if a retry still reports a usage limit with no reset time, 24 hours from that attempt.
 
 **Why this priority**: A half-written skill is worse than a delayed one. Falling back to the session agent guts the policy the first time the reserved writer is unavailable, which is expected.
 
@@ -88,6 +95,9 @@ If the designated writer cannot start, stops, refuses, or errors (including usag
 2. **Given** that stop, **When** a later session looks for incomplete design-impact work, **Then** it finds tracked work that contains the scoped prompt.
 3. **Given** that stop, **When** the session agent is still capable of editing files, **Then** it still does not write the design-impact change.
 4. **Given** a designated writer that dies after changing some but not all target files, **When** the job is marked incomplete, **Then** those files are restored to their pre-attempt content before the session reports incomplete.
+5. **Given** the designated writer reports a usage limit, **When** the session agent stops, **Then** that specific job is marked incomplete with a retry time, target files are unchanged, and it is not re-attempted until after that retry time.
+6. **Given** a usage-limit report with no reset time, **When** the job is marked incomplete, **Then** retry time is 5 hours from the park.
+7. **Given** a retry that still reports a usage limit with no reset time, **When** the job is parked again, **Then** the next retry time is 24 hours from that attempt.
 
 ---
 
@@ -119,6 +129,7 @@ The owner may overrule and tell the session agent to write anyway. Absent that o
 - Designated writer unavailable after a scoped prompt already exists: do not create a second tracker item for the same job; resume the existing one.
 - Session agent "just fixing wording" that actually changes a trigger or ownership: that is design-impact, not a clarifying sentence.
 - Multiple in-scope files in one design-impact job: one scoped prompt, one dispatch (or one parked item), not a prompt per file unless the outcomes are independent jobs.
+- Designated writer reports a usage limit: that specific job is incomplete with a retry time (reset time from the report, else 5 hours, then 24 hours if still limited); do not re-attempt until after that time. Other in-session work is not marked incomplete for that reason.
 
 ## Requirements *(mandatory)*
 
@@ -140,6 +151,7 @@ The owner may overrule and tell the session agent to write anyway. Absent that o
 - **FR-014**: A mixed request MUST be split: non-design work by the session agent, design-impact work dispatched or parked.
 - **FR-015**: Creating a new skill or subagent MUST be classified as design-impact.
 - **FR-016**: Parked work for a job that already has a scoped prompt MUST be resumed rather than duplicated.
+- **FR-017**: When the designated writer reports a usage limit, that specific job MUST be marked incomplete with a retry time and MUST NOT be re-attempted until after that time (when usage limits are relaxed). Other jobs in the session MUST NOT be marked incomplete solely because this one hit a usage limit. Retry time MUST be the reset time in the usage-limit report when present; if none, 5 hours from the park; if a retry still reports a usage limit with no reset time, 24 hours from that attempt.
 
 ### Key Entities
 
@@ -148,7 +160,7 @@ The owner may overrule and tell the session agent to write anyway. Absent that o
 - **In-scope instruction file**: A source skill, standing project instruction or sticky rule, subagent definition, or the agent-writing authority.
 - **Design-impact**: A change that would alter skill triggering, workflow ownership, standing load, or that would create a skill or subagent.
 - **Scoped prompt**: The handoff artifact naming outcome, in-scope files, and bounds.
-- **Parked dispatch**: Tracked incomplete design-impact work containing the scoped prompt, with target files untouched.
+- **Parked dispatch**: Tracked incomplete design-impact work containing the scoped prompt, with target files untouched. When the reason is a usage limit, it includes a retry time (reset time from the report, else 5 hours, then 24 hours if still limited) and is not re-attempted until after that time.
 
 ## Success Criteria *(mandatory)*
 
@@ -161,6 +173,7 @@ The owner may overrule and tell the session agent to write anyway. Absent that o
 - **SC-005**: After successful dispatch, 0% of those files are rewritten by the session agent for the same change.
 - **SC-006**: In a sample of sessions that edit in-scope files without loading a skill-authoring playbook, 100% still classify and dispatch (or park) correctly.
 - **SC-007**: A later session can resume a parked dispatch from tracked work alone, without the original chat, in 100% of sampled parked jobs.
+- **SC-008**: When the designated writer reports a usage limit, 100% of those jobs are marked incomplete with a retry time (reset time from the report, else 5 hours, then 24 hours if still limited), and 0% are re-attempted before that time.
 
 ## Assumptions
 
