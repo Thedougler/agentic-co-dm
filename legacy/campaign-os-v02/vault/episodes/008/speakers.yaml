@@ -1,0 +1,19 @@
+# Session 08 speaker resolution. Source CSV (inbox/008-transcript.m4a.csv)
+# arrived with role/character names in the Speaker column (DM, Delmar, Perrin,
+# Jean Claude, Catarina, Crysdalynn), not SPEAKER_NN diarization IDs, matching
+# session 07's transcription-pass shape.
+DM: "Nick (DM)"                            # high — role label, pre-resolved by the transcription pass
+Delmar: "Frederick (as Delmar)"            # high — carried from s06/s07 speakers.yaml (delmar-fisk.md player: tabalicious83, a handle)
+Perrin: "Kaden (as Perrin)"                # high — matches pcs/perrin-black-jaw.md player: Kaden
+Jean Claude: "Chad (as Jean-Claude)"       # high — matches pcs/jean-claude-tabarnack.md player: Chad
+Catarina: "Kaitlin (as Catarina)"          # high — matches pcs/catarina-davirelli.md player: Kaitlin
+Crysdalynn: "Courtney (as Crissdalynn)"    # high — spelling variant of Crissdalynn in the CSV's Speaker column; matches pcs/crissdalynn-khinriss.md player: Courtney
+
+# "Speaker 1" (259 of 4797 rows, 5.4%) was an unresolved diarization bucket,
+# same pattern as s06/s07. Resolved with the s06 DM ruling: a block whose
+# bordering rows (prev and next non-Speaker-1 row) share the same resolved
+# speaker resolves to that speaker (84 of 166 blocks — this subsumes the
+# "bordered by DM on both sides" tier, since DM-DM is just same-speaker-both-
+# sides). The remaining 82 blocks (138 rows, 2.9% of total) had no usable
+# border and stay **?:** in transcript.md — 82 of 824 lines, 10.0%.
+# confidence: medium (rule-based, not per-block verified)

@@ -7,6 +7,10 @@ Thumbs.db
 # Secrets / machine paths
 .env
 .env.*
+!.env.example
+mcp.json
+foundry-data/
+foundry-data
 
 # Spec Kit local
 .specify/presets/.registry
@@ -36,6 +40,8 @@ wiki/.trash/
 
 # Local pipx wiki-skill installs under the agent root (machine symlinks)
 .agents/skills/wiki-*
+!.agents/skills/wiki-ingest/
+!.agents/skills/wiki-ingest/**
 .agents/skills/claude-history-ingest
 .agents/skills/code-understand
 .agents/skills/codex-history-ingest
@@ -55,3 +61,10 @@ wiki/.trash/
 .agents/skills/skill-creator
 .agents/skills/tag-taxonomy
 .agents/skills/vault-skill-factory
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+dist/

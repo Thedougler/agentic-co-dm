@@ -1,0 +1,27 @@
+extends: existence
+message: "Banned cliché %s — bad prose is bad prose anywhere on the page, not just in read-aloud text; reword it."
+link: https://github.com/anthropics/campaign-os
+level: error
+scope: text
+ignorecase: true
+tokens:
+  - 'shivers down (the|your) spine'
+  - 'hair on (the|your) neck( (stands|stood|rises))?'
+  - 'a chill (runs|ran)'
+  - 'chills (ran|run) down'
+  - 'an air of \w+'
+  - 'long-forgotten'
+  - 'time seems to slow'
+  - 'shrouded in (mystery|darkness|shadow)'
+  - '\bloom(s|ing)?\b'
+  - 'dust motes'
+  - 'deafening silence|silence (is|was) deafening'
+  - 'air (hangs|hung) heavy'
+  - 'darkness swallow(s|ed)'
+  - 'shadows danc(e|ed|ing)'
+  - 'the very (air|stone) itself'
+  - 'little did (he|she|they) know'
+  - 'blood ran cold'
+  - 'eyes widened in horror'
+  - 'if only (he|she|they) (knew|had known)'
+  - 'little did (he|she|they) (realize|suspect)'

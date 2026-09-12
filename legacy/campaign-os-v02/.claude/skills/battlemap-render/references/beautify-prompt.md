@@ -1,0 +1,207 @@
+# Beautify Prompt — structure & rules
+
+The beautify step feeds the image model **only two things**: the rendered guide PNG and this prompt.
+No token manifest, no auto-legend — the agent writes the prompt. The guide is a *planning diagram*
+(filled surfaces + colored outline regions + UPPERCASE labels); the model must paint the scene and
+**erase every interior annotation**.
+
+## Write it as a nano-banana *edit brief*
+
+Nano-banana reasons about a scene like a creative director reading a brief — **not** a diffusion
+tag-matcher. **Chain-load the `prompting-nano-banana-2` skill first** (Skill tool, every beautify) —
+it owns the full model-specific craft; this file is the battlemap-render-specific layer on top of it. So:
+
+- **Prose, not tags.** Full sentences describing the finished map. No comma-keyword strings, no quality
+  boosters ("masterpiece, 4k"), and **no negative prompts** — to exclude a thing, describe the positive
+  state ("plain unbroken wall", not "no door").
+- **State the purpose first:** "a finished top-down battlemap for tabletop RPG play, …" — intent sharpens it.
+- **Frame it as an edit: name what CHANGES and what STAYS.** This is the structure lock. Always include an
+  explicit *preserve* clause: "PRESERVE exactly — do not move, add, or resize — the wall layout, the
+  proportions and aspect ratio, the position of every region; keep the whole composition identical."
+  The words *preserve / keep / identical* are what hold the geometry.
+- **Name materials, not categories** ("rough wet limestone", "banded iron grate"), and put any kept text in
+  **quotes** (`the word "ARCHWAY"`).
+- **Direct camera + light:** "strictly orthographic bird's-eye top-down, no perspective; soft short contact
+  shadows; warm lamplight". One style family only (painterly illustrated battlemap).
+- **Close with the output spec:** match the input's aspect ratio, 2K (or 4K for a print final).
+- **Model:** `google/nano-banana-2` for drafts; `--model google/nano-banana-pro` for the hero/print final —
+  best text (sharper kept labels) and 4K, at 2–3× cost.
+
+The battlemap-render-specific moves, in order:
+
+1. **Lead with annotation-removal — two SEPARATE jobs.** The guide has two kinds of overlay, and the
+   model handles them far better when you split them explicitly (don't fold one into the other):
+
+   **(A) The colored outline boxes — ALL of them get painted over. Unconditional.** State it as its own
+   top-level rule: "none of the colored outline rectangles, boxes, or borders survive — paint over every
+   one completely; the finished map has no colored outlines anywhere." This is easy to under-state when
+   you're busy describing labels; with many regions the bright boxes leak unless you forbid them outright.
+
+   **(B) The text labels — by location.** The model removes/keeps them reliably only when told the fate of
+   each kind:
+   - **BORDER labels** naming an off-map exit (the `ARCHWAY` labels at the map edges): **KEEP these** —
+     they are useful exit markers. Leave the word legible at the edge AND paint a real open
+     tunnel-mouth in the wall there. These are the **only** labels that survive into the final image.
+   - **INTERIOR labels** naming something inside the play area (`DEEP WATER`, `SHALLOW WATER`,
+     `RUBBLE`, `TORCH`, props, traps): these **must NOT remain as text or marks**. Replace each
+     **entirely** with the real thing it names, naturally woven into the painted scene. No words,
+     letters, boxes or outlines anywhere in the playable map.
+
+   Tell the model "keep the edge labels, remove the inside ones" explicitly — a blanket "remove all
+   text" scrubs the exit markers too (over-correction), and a blanket "keep the labels" leaks the
+   interior ones. The location split is what makes it selective.
+   Naming the labels and their location is load-bearing; a generic "remove annotations" alone leaks.
+
+   **In-world text the players SHOULD see** (a carved wall sign, a commission plaque, a name over a
+   door) is a special case: **describe it in the prompt prose at its wall location with the exact words
+   in quotes — do NOT author it as an outlined region/label.** A region's colored box leaks (magenta is
+   the worst offender), and the keep-the-text-but-erase-the-box combination confuses the model. Prose-
+   placed signs render cleanly; specify orientation ("upright, readable with the top of the map as up")
+   so it doesn't come out mirrored or upside-down.
+2. **Lock the layout, not the annotations.** Tell it to keep walls/floor/proportions/aspect exactly,
+   but to paint *over* every colored box and label. Two locks the model breaks on big/irregular rooms
+   unless you state them forcefully:
+   - **True top-down projection.** The camera points *straight down at the floor*. Walls are seen only
+     as their **tops**, never their vertical inner faces — **no perspective, no vanishing point, no 3D
+     extrusion, not a room photographed at an angle.** A flat floor plan. (On wide corridors and large
+     chambers the model drifts into an angled 3D "room view"; say this loudly or it will.)
+   - **Interior walls are real walls.** Wall blocks that jut *into* the room — a single-file pinch, a
+     pillar, a divider — are solid stone; keep them exactly as drawn. The model's instinct is to "heal"
+     them open into one smooth chamber; forbid that explicitly.
+3. **Place, don't centre — but lock structure.** Loose props (barrels, sacks, crates, a lantern)
+   should settle *naturally* — against the nearest wall or into a corner, never floating dead-centre.
+   But **structural features (ladders, stairs, doors, archways, exits) must stay exactly in their
+   marked cell** — they are tactical positions minis interact with; do not let the model relocate them.
+3b. **Exactly one of each TACTICAL feature — no duplicates.** Paint exactly one feature per labelled
+   box and **do not add, duplicate, or echo** any *tactical* feature elsewhere — no second
+   ladder/door/exit/chest/terrain zone (the model invents these unless forbidden). This bans extra
+   **interactive / keyed** things and exits. It does **not** ban ambient texture — that you positively
+   *want* (rule 6). "Don't invent extra *features*" ≠ "don't add detail."
+4. **Hidden things are NOT on the map at all.** This is a player-facing map; fog of war (the VTT)
+   covers every secret. The model's urge to *reveal* a hidden thing it was told about is too strong to
+   suppress (label it "secret" and it paints a glowing trap door). So **never author a region for a
+   secret door, hidden passage, trap, or concealed cache, and never write the words
+   hidden / secret / concealed / trap / passage in the prompt.** A secret door is just unbroken wall;
+   a trap tile is just ordinary floor; a hidden cache isn't drawn. The DM tracks where these are from
+   canon, not the map. At most, ask for a *mundane* detail in that spot (a hairline crack in the mortar,
+   a draft-stirred cobweb) that reads as ordinary wear and hints at **nothing** — and only if it earns
+   its place atmospherically.
+5. **Terrain is regions too — fill each within its bounds.** Water, deep water, lava, grass, etc. are
+   outlined labeled *areas* (not just props). Tell the model to fill each region with its material
+   **only within that outline** and not let it spread; call out the depth/material change at the
+   boundary. Verified: an outlined `DEEP WATER` region holds its bounds; the old solid blue *fill*
+   grew to swallow the room. **Word shallow water as a visible material**, e.g. "a thin sheet of
+   reflective standing water *covering* the floor" — "ankle-deep over stone" reads as plain wet stone.
+6. **Make it a real, lived-in place — add incidental detail.** Keyed features are the skeleton; a
+   believable space also has *non-interactive* texture and the **traces of who uses it**. Once the
+   features are placed, direct the model to enrich the surfaces — explicitly **drawn from the canon
+   history** you pulled in §1, not generic grime: drag-trails and scuff paths where the inhabitants
+   haul through, residue/film concentrated where they work, water tide-lines and mineral staining on
+   the walls, soot above a lamp, eroded mortar and cracked/patched masonry, rust streaks under iron,
+   grime deepening into the corners, a little scattered mundane debris (a dropped lid, coiled rope,
+   silt, grit). This is what turns an atmospheric *empty set* into a place that is used. Three
+   guardrails: it stays **subordinate to tactical legibility** (never bury where minis stand or
+   obscure a keyed feature), strictly **non-interactive** (nothing that reads as a lootable prop,
+   exit, or hazard), and it **implies nothing hidden** (rule 4 still holds — ambient wear hints at no
+   secret). Without this line the map comes back clean and empty between features; with it, inhabited.
+7. **Close with a clean-output check** — no boxes, outlines, rectangles, text, labels, letters, grid.
+
+## Color roles in the guide
+
+Only WALL (dark fill) and the default FLOOR (light fill) are flood-filled. Everything else — terrain
+variations included — is an **outlined, labeled region** in a plain color:
+
+| Outline color | Role | Prompt as |
+|---|---|---|
+| green (limegreen) | prop / furniture / stairs | the labelled object, placed naturally |
+| orange | door / opening | a door set flush into the wall (or hidden — see rule 4) |
+| yellow | hazard / trap | **subtle** — blended into the floor, not obvious |
+| magenta | point of interest / marker | per label |
+| cyan (deepskyblue) | shallow water | a thin sheet of reflective standing water covering the floor |
+| royal blue | deep water | a deep, dark, still pool, within its bounds, clear depth change at the edge |
+| orangered | lava | molten lava within its bounds |
+| sienna / peru | rubble / wood floor | per label |
+| (dark fill) | stone wall | keep exactly |
+| (light fill) | stone floor | walkable damp/dry ground |
+
+## Fill-in template
+
+```
+You are painting a single finished top-down tabletop battlemap FROM A PLANNING DIAGRAM.
+
+THE INPUT IS A DIAGRAM, NOT A SCENE. It is a flat floor plan with bright colored OUTLINE RECTANGLES
+and UPPERCASE TEXT LABELS drawn on top — annotations telling you what to paint where, not objects.
+First: NONE of the colored outline rectangles or boxes survive — paint over every one completely, so
+the finished map has no colored outlines or boxes anywhere. Then handle the TEXT labels by WHERE they sit:
+- BORDER labels naming an off-map exit (the ARCHWAY labels at the map's edges) → KEEP the word
+  legible at the edge and paint a real open tunnel-mouth in the wall there. These are the only words
+  that stay; the openings are plain arches — NO doors, gates, or hatches.
+- INTERIOR labels naming anything inside the room (DEEP WATER, SHALLOW WATER, RUBBLE, TORCH, …) →
+  these MUST NOT remain as text or marks. Replace each ENTIRELY with the real thing it names, woven
+  naturally into the scene. NO words, letters, outlines, boxes or grid lines inside the playable map.
+
+STYLE: a 2-Minute Tabletop hand-painted battlemap — painterly, illustrated, stylized realism.
+STRICTLY ORTHOGRAPHIC TOP-DOWN: the camera points straight DOWN at the floor; you see only the TOPS
+of the walls, never their vertical inner faces; NO perspective, NO vanishing point, NO 3D extrusion —
+a flat floor plan, not a room photographed at an angle. Soft short contact shadows only;
+<LIGHTING>; solid near-black outside the walls.
+
+THEME: <§1's atmosphere brief, in two or three rich sentences — THIS exact place's materials,
+light and colour, residue/stains/algae, wear, clutter, the traces of who uses it, and mood. This
+line is the window into the DM's world; make it read as this specific room, never a generic one>.
+
+PAINT EXACTLY ONE of each labelled TACTICAL feature (exits, props, terrain zones). Do NOT add,
+duplicate, echo, or invent any extra exit, prop, hazard, or terrain zone. (Ambient texture is NOT a
+feature — see LIVED-IN DETAIL below; that you SHOULD add.)
+
+LAYOUT — preserve exactly: the dark-grey border is stone WALL, keep every wall where it is; the
+plain light region is walkable FLOOR. Keep the same aspect ratio and proportions. Do not add,
+move, or remove any wall or opening. INTERIOR wall blocks that jut into the room (a single-file
+pinch, a pillar, a divider) are SOLID stone — keep them exactly as drawn; do NOT open, smooth, or
+merge them into the floor.
+
+FILL EACH OUTLINED TERRAIN REGION with its material, kept WITHIN its outline (do not spread past it):
+- the cyan <SHALLOW WATER> region → a thin sheet of reflective standing water covering the floor.
+- the royal-blue <DEEP WATER> region → a deep dark still pool, with a clear depth change at its edge.
+- <other terrain regions per their label and color>.
+
+STRUCTURAL FEATURES STAY LOCKED in the exact cell their box marks (do not relocate):
+- the green <STAIRS/LADDER> box → one, exactly there.
+- the orange <DOOR/ARCHWAY> box → one opening, exactly there.
+
+LOOSE PROPS settle naturally — against the nearest wall or into a corner, never floating dead-centre:
+- where the green <PROP LABEL> box is → <the object, placed naturally>.
+
+LIVED-IN DETAIL — make it a used, real place (non-interactive texture only; never a new feature,
+never a hint of anything hidden):
+- traces of use from canon: <e.g. churned silt and drag-trails where barrels were hauled; residue/film
+  heaviest where they worked; foot-worn paths into the floor>.
+- material + age: <eroded mortar; cracked/patched brick vs limestone; mineral seepage; rust streaks
+  under iron fittings; soot above the lamp; grime deepening into the corners>.
+- light: <warm lamp falloff and reflections on the wet stone; darker, cooler corners>.
+Keep all of it subordinate to the tactical layout — never obscure a keyed feature or where minis stand.
+(Hidden things get NO box and NO mention — see rule 4; there is nothing to draw for them.)
+
+FINAL OUTPUT = only the painted room. No boxes, outlines, rectangles, text, labels, letters, grid.
+```
+
+Worked examples that produced clean maps live in this skill's history; keep the rules above intact
+and only swap THEME, the per-box lines, and the lived-in detail.
+
+## Common mistakes
+
+| Mistake | Fix |
+|---|---|
+| Filling regions with solid color | Fill **only** wall + floor; everything else is an `outline`+`label` region. Solid blobs leak/drift. |
+| Stopping at `render`/`flat.png` | The guide isn't the map. The finished map is `player.png`, after **beautify → composite**. |
+| Feeding `flat.png` (with grid) to beautify | Feed `base.png` (the guide, no grid). The grid is composited last, crisp. |
+| Re-prompting to fix wrong terrain extent | That's an **authoring** bug — fix the grid; each region holds its own bounds. |
+| Padding the grid / re-rendering so an edge label fits | Unneeded — the renderer **auto-clamps every label on-canvas**. Author the exit as one border cell; re-render only for wrong *geometry*. |
+| Reading the scripts / a prior scene to learn the format, or oversizing the room | The schema is **complete** — don't spelunk. Size to canon: **1 cell = 5 ft**. |
+| Interior labels leaking into the art | Prompt per-location: **keep** edge exit labels, **replace** every interior label with its entity. |
+| Duplicated/invented features | Say "**exactly one of each, no duplicates**" — the model adds extras unless forbidden. |
+| Map feels like an empty mood-lit set | Add incidental **lived-in detail** from canon (traces of use, wear, stains, debris). "No invented features" bans extra *tactical* features, not texture. See rule 6 above. |
+| Hidden trap/door rendered obviously | The prompt hints **subtly** (a trap door shut and flush); the guide still labels it normally. |
+| Colors too similar to read | Pick simple, distinct CSS colors; your prompt references them by name. |
+| `Cannot find module 'sharp'` | First-run setup: `cd scripts && npm install`. |
+| Using battlemap-render for scene art | That's `visual-aids`; battlemap-render is top-down tactical only. |

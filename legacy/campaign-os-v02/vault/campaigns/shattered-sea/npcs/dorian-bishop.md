@@ -1,0 +1,82 @@
+---
+type: npc
+status: canon
+publish: false
+aliases: []
+created: 2026-07-30
+updated: 2026-08-09
+tags:
+- combat
+summary: Crown captain commanding the HCS Tangent, sent when enforcement fails; CR 6, AC 17, HP 165, working the Crown Islands and Central Strait. Far more dangerous than Rook in single combat.
+subtype: recurring
+location: "[[crown-islands|Crown Islands]]"
+campaigns: [Shattered Sea]
+role: []
+uid: 8ceaf33c-8e0a-4250-a279-ac9bd4f5f9fc
+---
+
+# Captain Dorian Bishop
+
+*Unrevealed, not yet in play. Do not deploy until Rook is fully resolved.*
+
+The Crown sends Dorian Bishop when other approaches fail. Unlike Rook who charges straight ahead, Bishop circles obstacles. What comes next looks clear only after it happens. Nobody sees it coming.
+
+Bishop commands the [[hcs-tangent|HCS Tangent]], a [[dravosi-crown|Dravosi Crown]] warship built for real combat. The ship is far heavier than Rook's boat, with a full crew and gun deck. When it appears, trouble has started and the target is in danger. Bishop chose this name but said nothing about why.
+
+Bishop is sharp, cultured, and calm, like all truly hard people. He never thinks too little of enemies or shows his hand. He never uses the same move twice. He sees Rook as a master sees a novice, with respect not scorn. When Rook dies, he weighs if it matters and acts only if yes.
+
+Bishop does not fight head-on. He reads the fight to find weak spots and strikes from angles enemies don't see. His footwork keeps him where they never aim. At sea, the *Tangent* stays far back, making enemies chase and adjust. When they've gone too far, Bishop strikes, and survivors see they guarded the wrong place.
+
+Bishop ranks between [[barnaby-rook|Rook]] and [[rupert-knighton|Knighton]] in the Dravosi Crown. Where Rook ran shakedowns as a privateer, Bishop handles looking into things and keeps control by stepping in when normal force fails. He is twice as hard as Rook and twice as sharp. His arrival means the party matters, and Rook's death or fall brings him. The *Tangent* comes when Crown heat moves from talk to war.
+
+## Stats & Combat
+
+```statblock
+layout: Basic 5e Layout
+name: Captain Dorian Bishop
+size: Medium
+type: entity
+subtype: human
+alignment: lawful neutral
+ac: 17
+hp: 165
+hit_dice: 22d8+66
+speed: "35 ft."
+stats: [14, 18, 16, 15, 14, 14]
+saves:
+  - dexterity: 7
+  - constitution: 6
+skillsaves:
+  - athletics: 5
+  - deception: 5
+  - insight: 5
+  - perception: 5
+senses: "passive Perception 15"
+languages: "Common"
+cr: 6
+traits:
+  - name: Uncanny Footwork
+    desc: "Opportunity attacks against Bishop are made at disadvantage."
+bonus_actions:
+  - name: Disengage
+    desc: "Bishop can Disengage as a bonus action."
+actions:
+  - name: Multiattack
+    desc: "Bishop makes three Naval Blade attacks, or one Flintlock Pistol attack and two Naval Blade attacks."
+  - name: Naval Blade
+    desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) slashing damage."
+  - name: Flintlock Pistol
+    desc: "Ranged Weapon Attack: +7 to hit, range 30/90 ft., one target. Hit: 12 (2d8 + 3) piercing damage. Once fired, requires an action to reload."
+reactions:
+  - name: Parry
+    desc: "When an attack hits Bishop, he reduces the damage by 1d10 + 5. Applies to melee and ranged attacks. He must be holding a melee weapon and be aware of the attacker."
+```
+
+Bishop and the *Tangent* work the [[crown-islands|Crown Islands]] and the [[central-strait|Central Strait]], the waters where Crown enforcement escalates from talk to force.
+
+## Relationships
+
+- [[hcs-tangent|HCS Tangent]] (commands)
+- [[barnaby-rook|Barnaby Rook]] (successor to; Rook's failure activates Bishop)
+- [[rupert-knighton|Rupert Knighton]] (serves under; institutional superior)
+- [[dravosi-crown|Dravosi Crown]] (serves)

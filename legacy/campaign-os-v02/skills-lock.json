@@ -1,0 +1,359 @@
+{
+  "version": 1,
+  "skills": {
+    "File Organizer": {
+      "source": "claude-office-skills/skills",
+      "sourceType": "github",
+      "skillPath": "file-organizer/SKILL.md",
+      "computedHash": "c0ee059875e0bb07780229a5ba96acfdf151031a05e203168f5ee4a07fff4f8e"
+    },
+    "Obsidian Automation": {
+      "source": "claude-office-skills/skills",
+      "sourceType": "github",
+      "skillPath": "obsidian-automation/SKILL.md",
+      "computedHash": "29ceb93a77c56fa05ffade965305bd500040fed7ed4651bdfaac2fefa03429b8"
+    },
+    "PDF OCR Extraction": {
+      "source": "claude-office-skills/skills",
+      "sourceType": "github",
+      "skillPath": "pdf-ocr/SKILL.md",
+      "computedHash": "89d2e796a30b97e509bd1096b0f5fb38220f48672e12bebeefc96da1524edab8"
+    },
+    "Spotify Automation": {
+      "source": "claude-office-skills/skills",
+      "sourceType": "github",
+      "skillPath": "spotify-automation/SKILL.md",
+      "computedHash": "adcf3c914f32e2cfa1234cd9977ca1865c3bd94acbff5540a43378f8fe608fb4"
+    },
+    "audit-context-building": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/audit-context-building/skills/audit-context-building/SKILL.md",
+      "computedHash": "47ae283f86574c2f21778b9b1b4979dbc81af4f9c018bd9585535b2744266e51"
+    },
+    "audit-feedback-loop": {
+      "source": "zernie/vigiles",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/audit-feedback-loop/SKILL.md",
+      "computedHash": "0b571b4b2e49def12f9c2bebdb8c17d80b0a70b3382ae1c759ae08942aeae025"
+    },
+    "avoid-ai-writing": {
+      "source": "conorbronsdon/avoid-ai-writing",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "24d428864d62a34b7593048713bab74d758b119a924ff0ee2b33c1bb075d2136"
+    },
+    "brainstorming": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/brainstorming/SKILL.md",
+      "computedHash": "b58d55b64742ecd37923985ec7bdfbe678ffbcb9895562abd28c0a32dcacd7fb"
+    },
+    "claude-handoff": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/claude-handoff/SKILL.md",
+      "computedHash": "40a7f4ec80b9826ad7d0c47b0778c99686d6d9d662112b3e175a816f3aca4c39"
+    },
+    "cliamp-terminal-music-player": {
+      "source": "aradotso/devtools-skills",
+      "sourceType": "github",
+      "skillPath": "skills/cliamp-terminal-music-player/SKILL.md",
+      "computedHash": "836da9ade0aa6e7552fd8fb2c67466f145eee496a8ae7fc15edff448d2399030"
+    },
+    "context-driven-development": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "skillPath": "plugins/conductor/skills/context-driven-development/SKILL.md",
+      "computedHash": "69b009af0a1495ca05b6ec7511b28d56816285b9df66a31f5c6f16436148f771"
+    },
+    "context-engineering": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/context-engineering/SKILL.md",
+      "computedHash": "bb8864454c5a24636cab86c4b3c4b29e7e7431c80485bfd7c9c0a19a01936510"
+    },
+    "context-engineering-collection": {
+      "source": "muratcankoylan/agent-skills-for-context-engineering",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "3bcba1655ece96a1eb48620656e347c51cfc94085aee5c792032d305d90cb69e"
+    },
+    "context-map": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "skillPath": "skills/context-map/SKILL.md",
+      "computedHash": "cca0523289057f0f6fbff2c3ead5063359dd2482a451bf8694eac0f282185786"
+    },
+    "continuous-learning-v2": {
+      "source": "affaan-m/everything-claude-code",
+      "sourceType": "github",
+      "skillPath": "skills/continuous-learning-v2/SKILL.md",
+      "computedHash": "3a24e65b7da6da8e18846d839e8875011495620f345104dbb2dbb062a3b787b5"
+    },
+    "creative-writing-craft": {
+      "source": "4444j99/a-i--skills",
+      "sourceType": "github",
+      "skillPath": "skills/creative/creative-writing-craft/SKILL.md",
+      "computedHash": "02166af8ffad33921c9fd231b9484a4d543a2548e8a930721ad88e4b60e47ecb"
+    },
+    "cross-linker": {
+      "source": "ar9av/obsidian-wiki",
+      "sourceType": "github",
+      "skillPath": ".skills/cross-linker/SKILL.md",
+      "computedHash": "5644a5c787f497edc76fdbe1d03440455bb4e97cb1a8adc41d0f5bdde2375470"
+    },
+    "defuddle": {
+      "source": "kepano/obsidian-skills",
+      "sourceType": "github",
+      "skillPath": "skills/defuddle/SKILL.md",
+      "computedHash": "0ed68bc3e818ba0e6b8d192357ea3daaf552a3893f8854e7fd43c06831f91323"
+    },
+    "diagram-creator": {
+      "source": "claude-office-skills/skills",
+      "sourceType": "github",
+      "skillPath": "diagram-creator/SKILL.md",
+      "computedHash": "194c79fd66c553077dc7b957d5deec6d231eb53c48bd146ea5a25d2a18fa7f06"
+    },
+    "dispatching-parallel-agents": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/dispatching-parallel-agents/SKILL.md",
+      "computedHash": "b011107f17188e0b2898bb1856b5bac8b49537cc86e737c82126558a235bd62a"
+    },
+    "dnd5e-srd": {
+      "source": "microck/ordinary-claude-skills",
+      "sourceType": "github",
+      "skillPath": "skills_all/dnd5e-srd/SKILL.md",
+      "computedHash": "4dfcd658aad31fae6e842e7fc0749d32f45636dab61d1faa26737c915953105d"
+    },
+    "dndtale": {
+      "source": "mickume/dndtale",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/dndtale/SKILL.md",
+      "computedHash": "a30433e091cf2110d657ec10a1d340c2b0d4f19c7609dfd7da5cf39f4bd8dbe3"
+    },
+    "domain-modeling": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/domain-modeling/SKILL.md",
+      "computedHash": "363cb0f53b0b431e7c00086ad1f823500b7e1b70b5616ee969c979f0934e9e6e"
+    },
+    "edit-article": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/personal/edit-article/SKILL.md",
+      "computedHash": "cb2a13b2acb6c8a0706eb3a973a2681f30fd74c00784c74ceaa98e12eb2b2fc3"
+    },
+    "executing-plans": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/executing-plans/SKILL.md",
+      "computedHash": "78a07800ee99a5861ae10be59d79fad085fdca10444e8aaeb2691597e357cff8"
+    },
+    "humanize-writing": {
+      "source": "jpeggdev/humanize-writing",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "664d5d3470ba6113825613afb1212d1705af7d86d5ed0b438e6961f77fb9e3bb"
+    },
+    "loop-factory": {
+      "source": "juliusbrussee/skills",
+      "sourceType": "github",
+      "skillPath": "skills/loop-factory/SKILL.md",
+      "computedHash": "f210ad4e024c49581e3818a9cc42c3a6c5e595160a2689a857cf2a5852008abe"
+    },
+    "loopy": {
+      "source": "forward-future/loopy",
+      "sourceType": "github",
+      "skillPath": "skills/loopy/SKILL.md",
+      "computedHash": "f22d8ce0bc7079e5c411e149d7bfa6fc1ca8d988f31d3d4c411dce97bd649ef9"
+    },
+    "minimax-music-playlist": {
+      "source": "minimax-ai/skills",
+      "sourceType": "github",
+      "skillPath": "skills/minimax-music-playlist/SKILL.md",
+      "computedHash": "43a844569a8810c31328d9ca981b1198e403d26e9635d719687f41612462acf2"
+    },
+    "obsidian-layout-adjustment": {
+      "source": "ar9av/obsidian-wiki",
+      "sourceType": "github",
+      "skillPath": ".skills/obsidian-layout-adjustment/SKILL.md",
+      "computedHash": "053aaef6f0d1efa96e46e340e0479a72b1a3c9e4170697cb24a2f4dd72d6c651"
+    },
+    "obsidian-ui-skills": {
+      "source": "ihlamury/design-skills",
+      "sourceType": "github",
+      "skillPath": "skills/obsidian/SKILL.md",
+      "computedHash": "0e3257f6669fb42507e1837f253052a9b5f5f47b91dc3e38bec935a7c2efa362"
+    },
+    "obsidian-vault": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/personal/obsidian-vault/SKILL.md",
+      "computedHash": "5c08eda96fd76a71793c0a8cb91bef41d518586654a14af4f2edf8f8fd0f96a7"
+    },
+    "pdf": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/pdf/SKILL.md",
+      "computedHash": "cfbc539377088ca7e44a813b30c306327385bbd973cd7a721e1743f60837dd62"
+    },
+    "ponytail": {
+      "source": "dietrichgebert/ponytail",
+      "sourceType": "github",
+      "skillPath": "skills/ponytail/SKILL.md",
+      "computedHash": "210fa0831f649ce9f8a305f7b7c8cf2a0dd09ac4dd53067109941b96e7811d4e"
+    },
+    "pretty-mermaid": {
+      "source": "imxv/pretty-mermaid-skills",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "7c490ca8cac54a6038dcf31cb5f5472ff1c982e7352763ebb54e5387349529a6"
+    },
+    "prompt-engineering-patterns": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "skillPath": "plugins/llm-application-dev/skills/prompt-engineering-patterns/SKILL.md",
+      "computedHash": "e6b7544a39770a3a65f6b2f5da0c455b99a2fe004fe7c6caf6f5040cda85cc54"
+    },
+    "recursive-systems-architect": {
+      "source": "4444j99/a-i--skills",
+      "sourceType": "github",
+      "skillPath": "skills/knowledge/recursive-systems-architect/SKILL.md",
+      "computedHash": "765f4f1bc4cfb43d04592d023bd82677f7c90c8b91558dc9821e1922e60e7fb8"
+    },
+    "self-improving-agent": {
+      "source": "charon-fan/agent-playbook",
+      "sourceType": "github",
+      "skillPath": "skills/self-improving-agent/SKILL.md",
+      "computedHash": "4d5f4b36af90b0339c089a679b43962cc79dc4ce5b9fdc9abaa060ddfefafa9a"
+    },
+    "self-learning": {
+      "source": "philschmid/self-learning-skill",
+      "sourceType": "github",
+      "skillPath": "skills/self-learning/SKILL.md",
+      "computedHash": "554f37953a7806ec8866880a585f31e86185542eecd79c1536c55e26218e24ab"
+    },
+    "skill-cleaner": {
+      "source": "steipete/agent-scripts",
+      "sourceType": "github",
+      "skillPath": "skills/skill-cleaner/SKILL.md",
+      "computedHash": "4aaf81611a1b437a02d4fee50d9e3c7908891b5ec5447946c82994271142d189"
+    },
+    "smart-ocr": {
+      "source": "claude-office-skills/skills",
+      "sourceType": "github",
+      "skillPath": "smart-ocr/SKILL.md",
+      "computedHash": "31c5bd5513224fcbdd7c0f44e6d34ac65f62d67d9fce6b6fa5bb562c039f5792"
+    },
+    "subagent-driven-development": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/subagent-driven-development/SKILL.md",
+      "computedHash": "f32739563160d3612fe2febd0dad4a9cc8a6d1ea7dfcda59f245b3a4b968f7cf"
+    },
+    "systematic-debugging": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/systematic-debugging/SKILL.md",
+      "computedHash": "a2750dfbaed1690da73b120254892c4f926b4576cb82eb16fc877783941fe39b"
+    },
+    "tabletop-rpg-design": {
+      "source": "omer-metin/skills-for-antigravity",
+      "sourceType": "github",
+      "skillPath": "skills/tabletop-rpg-design/SKILL.md",
+      "computedHash": "cbce185d031036713a6d5a5c84d6b666cdf4e2ba12afe51109310f844025538e"
+    },
+    "tag-taxonomy": {
+      "source": "ar9av/obsidian-wiki",
+      "sourceType": "github",
+      "skillPath": ".skills/tag-taxonomy/SKILL.md",
+      "computedHash": "4e5de513e28f56eaa344ec733bfda781800d58429de58714dc593a4be99ec0ce"
+    },
+    "test-driven-development": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/test-driven-development/SKILL.md",
+      "computedHash": "a4126a9c5f17be3c228aa9e5755898ade283448b86099f56f40852e8c14532be"
+    },
+    "ubiquitous-language": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/deprecated/ubiquitous-language/SKILL.md",
+      "computedHash": "0395170031b57ea63f2eb22561542894c03e3047430a2f1118a06b411054429b"
+    },
+    "using-superpowers": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/using-superpowers/SKILL.md",
+      "computedHash": "a77a803b7fc1a19c87605cf7a5ef318c5adc233de10b9ebeecb2ee2609f5454e"
+    },
+    "verification-before-completion": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/verification-before-completion/SKILL.md",
+      "computedHash": "b529822bdac4b197b180fe12225cff86b930b65910435103c10622df7f041651"
+    },
+    "web-search": {
+      "source": "claude-office-skills/skills",
+      "sourceType": "github",
+      "skillPath": "web-search/SKILL.md",
+      "computedHash": "ec4bd9f90f8e7aea9ed7fa35b5a6a26bb88b5121dd22065aa6308187ed780f82"
+    },
+    "what-context-needed": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "skillPath": "skills/what-context-needed/SKILL.md",
+      "computedHash": "9a7c2542d4fc0e2868de10c2254b3f7b24b406501e3dd35f27d254fddf0f8367"
+    },
+    "writing-beats": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/writing-beats/SKILL.md",
+      "computedHash": "7581e49a991e45e4e486b128c6391b82bd112c143cea3cc4426c23530dd545af"
+    },
+    "writing-clearly-and-concisely": {
+      "source": "obra/the-elements-of-style",
+      "sourceType": "github",
+      "skillPath": "skills/writing-clearly-and-concisely/SKILL.md",
+      "computedHash": "c702d9db967bc320da26630c1bb2b6794ec7d058bc535818f72e2d3301c2448a"
+    },
+    "writing-for-agents": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/writing-for-agents/SKILL.md",
+      "computedHash": "ccfa1e94d8f6ab5c6a1edd55293ca477faf93c39207771331efdb1e798ed21d6"
+    },
+    "writing-fragments": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/writing-fragments/SKILL.md",
+      "computedHash": "972ab831c7a39dab971439fa4718b668114d3063d347d8ba29b2a19765b3f911"
+    },
+    "writing-plans": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/writing-plans/SKILL.md",
+      "computedHash": "a8a8b0d07b744173079b25d26c6a189a0b5e7ddd80444ce92055b974dab7352b"
+    },
+    "writing-shape": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/writing-shape/SKILL.md",
+      "computedHash": "90899c7b3853a80da0d9ef634844b22871cc3ea6aa1bc9e4299f40484ac05392"
+    },
+    "youtube-playlist": {
+      "source": "zeropointrepo/youtube-skills",
+      "sourceType": "github",
+      "skillPath": "skills/youtube-playlist/SKILL.md",
+      "computedHash": "c8aecc3a6ff5a263d959f270dc0060e11a77cd4af44836b713bb5f0fc8d4c830"
+    },
+    "yt-dlp-downloader": {
+      "source": "mapleshaw/yt-dlp-downloader-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "00dd5731e78a0c7b95b0e8b99c824312aab512362f0f7f30311cca50ccc9559d"
+    }
+  }
+}

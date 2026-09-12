@@ -1,0 +1,32 @@
+/* Reference-image thumbnail for the `reference_image` frontmatter field,
+   rendered via obsidian-meta-bind-plugin:
+   ```meta-bind
+   VIEW[{reference_image}][image(class(reference-image-view))]
+   ```
+   Bounds it to a small thumbnail rather than a banner. Meta Bind's `class(...)`
+   modifier lands the class on the view field's rendered container; the
+   descendant `img` selector also covers the case where it lands directly on
+   the image element. Border var verified against docs.obsidian.md
+   Reference/CSS variables/Foundations/Colors (--background-modifier-border);
+   already theme-aware via palette.css's `.theme-dark` override, so no
+   separate light/dark block is needed here. */
+.reference-image-view,
+.reference-image-view img {
+  --reference-image-max: 320px;
+  max-width: var(--reference-image-max);
+  max-height: var(--reference-image-max);
+  border-radius: 8px;
+}
+
+.reference-image-view {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--background-modifier-border);
+}
+
+.reference-image-view img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}

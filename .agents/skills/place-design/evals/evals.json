@@ -1,0 +1,135 @@
+{
+  "skill_name": "place-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Design a memorable settlement, wilderness region, or ruin using the place kernel and promise framework.",
+      "expected_output": "A playable place with identity, topology, affordances, inhabitants, information, pressure, and consequences; lore-only scenery fails.",
+      "expectations": [
+        "Uses the five-sentence kernel, 3Fs, contradiction, and signature details.",
+        "Names a player-facing promise that produces actionable choices.",
+        "Includes topology, inhabitants, clues, pressure, and a return consequence rather than only atmosphere or history."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Map the significant nodes and routes of a ruin with several approaches to its central objective.",
+      "expected_output": "A decision graph with loops, bypasses, retreats, and route tradeoffs; no-topology or purely linear maps fail.",
+      "expectations": [
+        "Presents nodes and edges before room or landmark prose.",
+        "Includes at least one meaningful loop, bypass, retreat, and non-corridor connection where plausible.",
+        "Explains the cost, information, danger, and consequence of important edges."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Create three branches from a gatehouse that do not feel like identical corridor forks.",
+      "expected_output": "The branches differ in function, approach, cost, information, or social/environmental meaning; identical corridor forks fail.",
+      "expectations": [
+        "Uses distinct edge types such as a negotiation, exposed climb, flood channel, or hidden service route.",
+        "Each branch changes a later decision or payoff.",
+        "Includes a reconnection or intentional isolation with a stated reason."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Prepare a sealed archive whose required truth is that the lower sluice can be controlled from a bell tower.",
+      "expected_output": "The truth is discoverable through about three clue vectors and does not depend on one hidden roll or one prescribed key.",
+      "expectations": [
+        "Provides witness/faction, physical/document, and spatial/consequence clue vectors or equivalent independent paths.",
+        "Separates automatic signs from declared Search, Study, or other actions.",
+        "A failed check adds a cost or complication without blocking the revelation."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Design an obstacle at an ancient gate and give players several ways to overcome it.",
+      "expected_output": "The obstacle has sign, trigger, effect, counterplay, bypass, and leverage, not a single correct solution.",
+      "expectations": [
+        "Telegraphs the trigger and consequence in the fiction.",
+        "Includes at least one counterplay and one distinct bypass.",
+        "Rewards information, relationships, tools, terrain, or party capabilities without requiring one prescribed method."
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Populate an inhabited landmark contested by two factions. Explain what they do while the party is gone.",
+      "expected_output": "Factions have goals, fears, methods, resources, tells, offers, responses, rosters, and location moves; creatures waiting in rooms with no goals fail.",
+      "expectations": [
+        "Provides a faction sheet for each active faction and a meaningful between-visit update.",
+        "Gives inhabitants movement, objectives, and responses to bargaining, aid, deception, attack, or neglect.",
+        "Uses progression states or a clock with visible changes."
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Write four location moves for a market that becomes politically unstable as the party investigates a theft.",
+      "expected_output": "Each move has actor, trigger, visible result, new opportunity, and lasting consequence; a place with no moves fails.",
+      "expectations": [
+        "Moves are triggered by party action, faction action, pressure, rest, or another stated cause.",
+        "Moves alter routes, relationships, resources, information, or rules of access.",
+        "The return state preserves history instead of resetting the market."
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Open a location with a mural, a collapsed stair, and a living caretaker. Give concise table-ready opening text and GM truth.",
+      "expected_output": "The opening provides orientation, an invitation, and uncertainty without a mural lore dump.",
+      "expectations": [
+        "Separates observable first impression from hidden history and mechanics.",
+        "Uses the mural or stair as an actionable affordance rather than reciting its entire lore.",
+        "States what the caretaker is doing and what changes if ignored."
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Design a high-tier wilderness site for a party with flight and teleportation.",
+      "expected_output": "The design respects party capabilities and gives them honest costs, exposure, limits, or new opportunities rather than arbitrarily negating them.",
+      "expectations": [
+        "States what flight and teleportation can accomplish.",
+        "Uses fiction-based constraints such as visibility, anchors, weather, exposure, or incomplete information only where justified.",
+        "Does not make every route a fake wall or declare abilities invalid without a setting reason."
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "Create a ruin that remains engaging after all hostile creatures leave or are defeated.",
+      "expected_output": "The final enemies-vanished test passes through exploration, clues, routes, resources, factions, hazards, or changes.",
+      "expectations": [
+        "Includes meaningful non-combat verbs and affordances.",
+        "Includes a payoff or consequence tied to the place's promise.",
+        "Does not rely on an encounter quota to make nodes worth visiting."
+      ]
+    },
+    {
+      "id": 11,
+      "prompt": "Design a planar bazaar where the rule of strangeness is that spoken promises become physical routes.",
+      "expected_output": "The surreal place has a reliable testable rule, limit or price, stable cues, and player agency; random unreliability fails.",
+      "expectations": [
+        "States what changes, when it changes, and what remains invariant.",
+        "Provides ways to learn, exploit, resist, bargain with, or redirect the rule.",
+        "Uses landmarks, repeated cues, or customs to preserve navigability."
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "Contrast a settlement with a dungeon using the same location-design framework.",
+      "expected_output": "The settlement is treated as an inhabited political community, while the dungeon emphasizes bounded topology, pressure, and route consequences.",
+      "expectations": [
+        "Settlement design includes claims, services, routines, laws, status, relationships, and social routes.",
+        "Dungeon design includes loops, bypasses, retreats, factions, pressure, and persistent geography.",
+        "Both places include affordances, robust clues, location moves, and a meaningful return state."
+      ]
+    },
+    {
+      "id": 13,
+      "prompt": "File a wilderness location into the campaign location template. Public canon establishes a lake two days north, a mangrove wall one day east, no established southern neighbor, and an old road three days west.",
+      "expected_output": "The filed location uses the Location template and its Where section includes natural-language north, east, south, and west entries with wikilinked neighbors where known, approximate days of travel, and an explicit canon gap for the south.",
+      "expectations": [
+        "Includes all four cardinal directions in the filed Where section.",
+        "Names known neighbors as wikilinks and gives approximate travel-day distances rather than precise mileage math.",
+        "Marks the missing southern neighbor as an explicit canon gap instead of inventing a place."
+      ]
+    }
+  ]
+}

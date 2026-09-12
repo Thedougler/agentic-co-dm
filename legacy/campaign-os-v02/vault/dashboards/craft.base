@@ -1,0 +1,27 @@
+filters:
+  or:
+    - file.inFolder("vault/refs/stories/")
+    - file.inFolder("vault/refs/ideas/")
+    - file.inFolder("vault/refs/vault/")
+    - and:
+        - file.inFolder("vault/refs/")
+        - not:
+            - file.inFolder("vault/refs/stories/")
+            - file.inFolder("vault/refs/ideas/")
+            - file.inFolder("vault/refs/vault/")
+        - or:
+            - 'type == "craft"'
+            - 'type == "guide"'
+            - 'type == "reference"'
+
+views:
+  - type: table
+    name: "Craft Guidance"
+    order:
+      - file.name
+      - type
+      - status
+      - touched
+    groupBy:
+      property: type
+      direction: ASC

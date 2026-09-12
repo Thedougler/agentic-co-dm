@@ -1,0 +1,120 @@
+{
+  // Campaign-os-specific rules (W-table) that markdownlint-obsidian's
+  // built-ins can't express — see utils/scripts/lint-rules/README.md.
+  "customRules": [],
+  "vaultRoot": "./",
+  "resolve": true,
+  "rules": {
+    // vault/campaigns/shattered-sea/pcs/va-scripts/*.md wraps every Direction/Meta-note line in italics
+    // spanning the whole line — *(sincerely)*, *(as yourself)* — which
+    // MD036 (emphasis-used-instead-of-heading) otherwise flags once the
+    // line is long/sentence-like, since it always ends in `)*` rather than
+    // one of MD036's default trailing-punctuation characters. `)` added to
+    // the accepted set; this is vault-wide (no per-glob rule override
+    // exists — see the _templates/ note below), but a paragraph that's
+    // pure emphasis AND happens to end in `)` is rare enough elsewhere
+    // that widening the punctuation set here is safe.
+    "MD036": { "options": { "punctuation": ".,;:!?。,;:!?)" } },
+    // (TEMPORARY 2026-08-02, resolve when: the 22 remaining ambiguous
+    // wikilinks are gone — flip true + full sweep to re-measure. 77 of the
+    // original 99 were fixed by path-qualifying vault/** links; the rest
+    // split two ways. (a) 14 raw/2026-07/* snapshots shadow live
+    // basenames — the fix is renaming those archive files plus a
+    // source:/wikilink sweep, a structural call for the DM.
+    // (b) 8 are resolver false positives: this built-in's target index
+    // scans utils/** and docs/guardrails/**, which .obsidian/app.json's
+    // userIgnoreFilters hide from Obsidian itself, and the rule offers no
+    // resolver scoping ("ignores" was tested and is not honored) — an
+    // upstream markdownlint-obsidian limitation. Catalog rows also can't
+    // be path-qualified without breaking W32's link-text sort key.)
+    "OFM004": false
+  },
+  // vault/campaigns/shattered-sea/dashboards/*.base embeds (![[npcs.base]]) are legitimate
+  // Obsidian Bases syntax, not a broken embed — extend the built-in
+  // extension list rather than exempting the whole file from OFM024.
+  "embeds": {
+    "allowedExtensions": [
+      "md", "png", "jpg", "jpeg", "gif", "svg", "webp", "pdf",
+      "mp4", "webm", "mp3", "wav", "ogg", "base"
+    ]
+  },
+  // _templates/*.md is deliberately NOT globbed: its placeholder syntax
+  // (bare-slug wikilinks like [[<pc-slug>]], bold-as-heading labels,
+  // language-less illustrative fences) trips built-in OFM001/MD036/MD040 —
+  // real defects everywhere else, false positives here by design. This
+  // tool has no per-glob rule override (only a global rules{ruleId:
+  // {enabled}} switch), and OFM001 is W3 (hard) elsewhere, so disabling it
+  // vault-wide to quiet templates isn't an option. W55 (the rule that
+  // needs to see _templates/*.md) reaches it via explicit file args.
+  // NOTE: --no-globs bypasses only this "globs" allowlist, NEVER "ignores"
+  // — sweeping an ignored tree (_templates/) uses the
+  // checked-in utils/scripts/lint-rules/sweep-config.jsonc, copied outside the
+  // repo first (an explicit --config is the lowest-precedence layer; this
+  // file, as an ancestor, would override it in place):
+  //   cp utils/scripts/lint-rules/sweep-config.jsonc /tmp/sweep-config.jsonc
+  //   node_modules/.bin/markdownlint-obsidian --config /tmp/sweep-config.jsonc <path>
+  "globs": [
+    "vault/**/*.md",
+    // The tag taxonomy source — W112 self-lints its structure (a parse slip
+    // there silently corrupts W13's enum on every content page).
+    "docs/tags.md"
+  ],
+  "ignores": [
+    // vault/_templates and vault/_assets are the real directories; the
+    // repo-root `_assets` is a symlink back to vault/_assets. Obsidian's own
+    // vault root is vault/, so a banner is embedded vault-relative
+    // (`![[_assets/banners/x.webp]]`) — but "vaultRoot" above is the repo
+    // root, which the custom rules need for thresholds.json and their
+    // `rel.startsWith("vault/")` scope tests. The symlink is what lets one
+    // setting serve both: the vault-relative embed path also resolves from
+    // the repo root. The vault/**/*.md glob still follows into these dirs,
+    // which would lint every template a second time under a path that is not
+    // its real home.
+    "vault/_templates/**",
+    "vault/_assets/**",
+    "**/.claude/**",
+    "**/CLAUDE.md",
+    // Vale's own ephemeral frontmatter-guard sibling copies (prose-scope.mjs
+    // withFrontmatterGuard) — one process's temp file can outlive its
+    // creation only briefly before cleanup(), and a concurrent
+    // directory-scoped markdownlint-obsidian run racing against that window
+    // hits ENOENT (OFM901) opening a file another process just deleted.
+    // Never real content — always excluded, race or no race. Named
+    // `<original-stem>.vale-fm-<pid>-<uuid>.md` — marker sits mid-name, so
+    // the glob has no leading-dot anchor either.
+    "**/*.vale-fm-*.md",
+    // Vale's own line-chunk ephemeral copies (prose-scope.mjs
+    // withLineChunking) — same race as .vale-fm- above, but the marker sits
+    // on the enclosing directory so the copy keeps the original's basename.
+    "**/.vale-chunk-*/**",
+    "**/*.vale-chunk-*.md",
+    // Obsidian .base files under vault/campaigns/shattered-sea/dashboards/ aren't matched by the
+    // `**/*.md` globs above at all (not Markdown); the landing note
+    // vault/campaigns/shattered-sea/dm-hub.md is template-governed (`type: reference`)
+    // and linted like any other page.
+    "vault/episodes/*/transcript.md",
+    "vault/episodes/*/transcript.raw.md",
+    "vault/episodes/*/transcript-*.md",
+    "vault/episodes/*/transcripts/**",
+    // script-writer's audition scripts are production aids, not wiki content:
+    // no frontmatter/status/publish by the skill's own contract, never shown
+    // in recaps or the published site — same non-canon shape as a transcript.
+    "vault/campaigns/*/pcs/va-scripts/*-voice-script.md",
+    "**/*.yaml",
+    "**/*.yml"
+  ],
+  "callouts": {
+    // Entries stay UPPERCASE: the extractor uppercases parsed types before this
+    // compare, so these match any-case source. Lowercase-as-written is W22's job;
+    // play-vs-docs taxonomy is W23's; prose contracts: vault/campaigns/.claude/skills/callouts.
+    "allowList": [
+      "NOTE", "WARNING", "TIP", "IMPORTANT", "CAUTION", "ABSTRACT",
+      "SUMMARY", "INFO", "HINT", "SUCCESS", "QUESTION", "FAILURE",
+      "DANGER", "BUG", "EXAMPLE", "QUOTE",
+      "READ-ALOUD", "DM", "MECHANIC", "CHECK", "VISUAL-AID", "SPOILER", "DIALOGUE"
+    ],
+    "caseSensitive": true,
+    "requireTitle": false,
+    "allowFold": true
+  }
+}

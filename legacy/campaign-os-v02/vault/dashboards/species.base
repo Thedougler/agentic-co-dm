@@ -1,0 +1,12 @@
+filters:
+  and:
+    - file.inFolder("vault/srd/species/")
+    - 'type == "guide"'
+
+views:
+  - type: table
+    name: "Species"
+    order:
+      - file.name
+      - status
+      - touched

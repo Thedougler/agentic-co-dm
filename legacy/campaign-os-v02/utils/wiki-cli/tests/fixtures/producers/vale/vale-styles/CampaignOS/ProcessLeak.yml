@@ -1,0 +1,28 @@
+extends: existence
+message: >-
+  Repo-process vocabulary %s in wiki prose — in-world pages never describe
+  the system that wrote them; move the note to a DM-side page, or delete
+  it (vault/refs/runbook-wiki.md).
+link: https://github.com/anthropics/campaign-os
+level: error
+scope: text
+ignorecase: true
+tokens:
+  - 'Hard Rule'
+  - 'one-fact-one-page'
+  - 'draft-lore'
+  - "the wiki's"
+  - 'this repo'
+  - 'source repo'
+  - 'ledger line'
+  - 'relink flag'
+  - '(?-i:SKILL\.md)'
+  # Word-boundary guarded: bare "CLAUDE\.md" false-positives on unrelated
+  # real filenames like vale-for-claude.md (a Vale style guide page, nothing
+  # to do with this repo's own CLAUDE.md) since it substring-matches inside
+  # them case-insensitively.
+  - '(?:^|[^\w-])CLAUDE\.md'
+  - '_templates/'
+  - 'pile-signal'
+  - 'new-source-mode'
+  - 'ingest queue'

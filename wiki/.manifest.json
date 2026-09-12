@@ -1,1 +1,186 @@
-{}
+{
+  "version": 1,
+  "stats": {
+    "total_sources_ingested": 16,
+    "total_pages": 29
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 01 - Recap.md": {
+    "content_hash": "sha256:63b29823eb578d14bc7c3d47d85ea8def07c91192c0e1ae6f9d5ee616099338a",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 01 - Recap.md",
+      "entities/Delmar Fisk.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 02 - Recap.md": {
+    "content_hash": "sha256:9bb9d4b90289e0ab29b53af4860f692f9146f5f5f1922eb9656513148dd35ce5",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 02 - Recap.md",
+      "entities/Uncertainty.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 03 - Recap.md": {
+    "content_hash": "sha256:8cb7a6acd3b6c3ebd5d7a33ff670c6664c9cdc84d38f5d45b612f423a0855294",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 03 - Recap.md",
+      "entities/Uncertainty.md",
+      "entities/Calven and Calveno.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 04 - Recap.md": {
+    "content_hash": "sha256:978c155d31d7264dabe8f404b5a3ea5cfbc0330049679395b5f174dc0b8328fe",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 04 - Recap.md",
+      "entities/Delmar Fisk.md",
+      "entities/Pearl of Souls.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 05 - Recap.md": {
+    "content_hash": "sha256:4a346af6ec4fe7a683ad2ee0f2eee83e1aee6da59bb370736a75f8dfa5d007a3",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 05 - Recap.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 06 - Recap.md": {
+    "content_hash": "sha256:b022d370d48758a6661d27609c3c01cbd6d93979e5ac814fcba42d1cfb288be2",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 06 - Recap.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 07 - Recap.md": {
+    "content_hash": "sha256:7ea51d2350616b6891b52c58ffcc7778875e569d1320a518df0f517c9a035e40",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 07 - Recap.md",
+      "entities/Calven and Calveno.md",
+      "entities/Delmar Fisk.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 08 - Recap.md": {
+    "content_hash": "sha256:0228598cc99a29f6a29a021f89581a67840ddfbd751d624a31664f97f586ed6e",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 08 - Recap.md",
+      "entities/Uncertainty.md",
+      "entities/Calven and Calveno.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 09 - Recap.md": {
+    "content_hash": "sha256:732034a031e71059d113fcfb54624f9f91157fd548b6d38989781de2119f51a9",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 09 - Recap.md",
+      "entities/Uncertainty.md",
+      "entities/Aruhe - Hungry Isle.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Session 10 - Recap.md": {
+    "content_hash": "sha256:95d9fe9f7e79ecaaeb1e66cb01af2e8c88c5c6d0c2704bf3c9e7d474422453bc",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "journal/Session 10 - Recap.md",
+      "entities/Aruhe - Hungry Isle.md",
+      "entities/Delmar Fisk.md",
+      "entities/Uncertainty.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_archive/Story So Far - Sessions 01-10.md": {
+    "content_hash": "sha256:9a477c980b91f4a80167b2c0476c0572bd20ac2bbed27acd2dbb3fad95bb56ea",
+    "last_ingested": "2026-09-12T04:56:01Z",
+    "pages_produced": [
+      "synthesis/Story So Far.md",
+      "entities/Pearl of Souls.md",
+      "entities/Aruhe - Hungry Isle.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Bloodhawk.md": {
+    "content_hash": "sha256:deeff1798267377caa952141416d503367a511ff2be55c5c24ba181953af97ad",
+    "last_ingested": "2026-09-12T05:40:07Z",
+    "pages_produced": [
+      "entities/Bloodhawk.md",
+      "entities/Aruhe - Bear-Elk.md",
+      "entities/Aruhe - Terror-Bird.md",
+      "entities/Aruhe - River Otter.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Hinewai.md": {
+    "content_hash": "sha256:cf8a9de22509ecf73ff72c0f860ffb1d2610d2e4dd83a9c9537153bcf3013dd2",
+    "last_ingested": "2026-09-12T06:23:47Z",
+    "pages_produced": [
+      "entities/Hinewai.md",
+      "entities/The Unnamed Companion.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Talon Skarn.md": {
+    "content_hash": "sha256:3515ee7e4cb11d05c37549ef49f8a7af46a5e7e3c5280c431749ac3b5f28afb9",
+    "last_ingested": "2026-09-12T06:23:47Z",
+    "pages_produced": [
+      "entities/Talon Skarn.md",
+      "entities/Talon Vantyrus.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Nona Black-Jaw.md": {
+    "content_hash": "sha256:22e0653f232b8962cda503fbbbc3cec1e9821f7c0e668097beb8decf5324154c",
+    "last_ingested": "2026-09-12T06:23:47Z",
+    "pages_produced": [
+      "entities/Nona Black-Jaw.md",
+      "entities/Perrin Black-Jaw.md",
+      "entities/Enzo.md",
+      "entities/Ruk.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/Users/nick/agentic-co-dm/wiki/_raw/Thunk.md": {
+    "content_hash": "sha256:0b1fe89cbec0189358017e83167acc3c7cd12db5b11786dff95857abc4047f30",
+    "last_ingested": "2026-09-12T06:23:47Z",
+    "pages_produced": [
+      "entities/Thunk.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  }
+}

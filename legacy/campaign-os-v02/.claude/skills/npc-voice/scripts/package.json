@@ -1,0 +1,13 @@
+{
+  "name": "@shattered-sea/npc-voice",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "ElevenLabs dialogue audio CLI for the npc-voice skill.",
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@elevenlabs/elevenlabs-js": "^2.58.0"
+  }
+}

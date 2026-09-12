@@ -1,0 +1,41 @@
+/* Wide note surface: keep the main markdown content readable while using the pane. */
+.markdown-preview-view,
+.markdown-source-view.mod-cm6 {
+  --file-line-width: 100% !important;
+  --line-width: 100% !important;
+}
+
+.markdown-preview-view > .markdown-preview-sizer,
+.markdown-source-view.mod-cm6 .cm-sizer,
+.markdown-source-view.mod-cm6 .cm-content {
+  width: 92% !important;
+  max-width: 92% !important;
+  margin-inline: auto !important;
+}
+
+/* Remove Obsidian's narrower per-block reading-width cap as well. */
+.markdown-source-view.mod-cm6 .cm-line {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.markdown-preview-view .markdown-preview-sizer > * {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Center standalone visual and structured blocks inside the wide surface. */
+.markdown-preview-view .markdown-preview-sizer > p:has(> img),
+.markdown-preview-view .markdown-preview-sizer > .internal-embed,
+.markdown-preview-view .markdown-preview-sizer > table,
+.markdown-preview-view .markdown-preview-sizer > pre,
+.markdown-preview-view .markdown-preview-sizer > .callout,
+.markdown-source-view.mod-cm6 .cm-content > .HyperMD-quote,
+.markdown-source-view.mod-cm6 .cm-content > .HyperMD-table,
+.markdown-source-view.mod-cm6 .cm-content > .HyperMD-codeblock {
+  margin-inline: auto !important;
+}
+
+.markdown-preview-view .markdown-preview-sizer > p:has(> img) {
+  text-align: center;
+}

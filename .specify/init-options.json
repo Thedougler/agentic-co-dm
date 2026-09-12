@@ -1,7 +1,7 @@
 {
   "ai": "omp",
   "feature_numbering": "sequential",
-  "here": false,
+  "here": true,
   "integration": "omp",
   "script": "sh",
   "speckit_version": "1.0.6"

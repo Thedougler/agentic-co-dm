@@ -1,0 +1,26 @@
+{
+  "//": "Editor Pyright config. Must live at the workspace root — Pyright does not read pyrightconfig.json from subdirectories, and venvPath/venv are global-only settings that cannot be set per executionEnvironment (docs/configuration.md). Two independent Python packages (utils/dndsim, utils/wiki-cli) each have their own .venv; only one can be the global venvPath/venv, so the other resolves third-party imports via its own executionEnvironment's extraPaths pointing straight at its venv's site-packages instead. Authoritative type checking is mypy, run by pre-commit; this exists so the editor agrees with it.",
+  "include": [
+    "utils/dndsim/src",
+    "utils/dndsim/tests",
+    "utils/dndsim/scripts",
+    "utils/wiki-cli/src",
+    "utils/wiki-cli/tests"
+  ],
+  "venvPath": "utils/dndsim",
+  "venv": ".venv",
+  "typeCheckingMode": "standard",
+  "executionEnvironments": [
+    {
+      "root": "utils/wiki-cli",
+      "extraPaths": [
+        "utils/wiki-cli/src",
+        "utils/wiki-cli/.venv/lib/python3.14t/site-packages"
+      ]
+    },
+    {
+      "root": "utils/dndsim",
+      "extraPaths": ["utils/dndsim/src", "utils/dndsim/scripts"]
+    }
+  ]
+}

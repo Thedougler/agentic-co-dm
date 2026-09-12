@@ -26,6 +26,25 @@ You can maintain multiple vaults (each a `~/.obsidian-wiki/config.<name>` file m
 
 **After reading config, always read `$OBSIDIAN_VAULT_PATH/AGENTS.md` if it exists.** It contains owner-specific conventions (domain vocabulary, ingest preferences, writing style, project scoping) that override framework defaults for all skills. Apply it for the duration of the session.
 
+## Campaign Co-DM
+
+Load `wiki/AGENTS.md` before any write to `wiki/` (campaign `type`, `lifecycle`, `reveal`, complete-sentence prose).
+Load `docs/agents/work.md` before Co-DM prep or wrapup output (Work gate: chat proposal; wiki write after DM accept).
+
+## Vault retrieval
+
+Search is on by default against collection `wiki`. Empty `QMD_WIKI_COLLECTION` still means `wiki`.
+
+Load `.agents/skills/qmd` for query/get. Snippets are leads — `qmd get` / `qmd multi-get` before citing facts.
+
+Order (`specs/004-qmd-search-default/contracts/retrieval-precedence.md`): `-c wiki` first; if silence `-c shattered-sea`; if silence `-c legacy-ss`; if still silence, say the wiki is silent.
+
+Wiki hit = current canon. Legacy hit = campaign-of-record context; wiki write only after DM accept. Wiki vs legacy disagreement → cite wiki.
+
+Collection `legacy` is the `legacy/` archive. Search it only with `-c legacy`. Do not add it to the wiki / shattered-sea / legacy-ss order.
+
+If `qmd status` fails at session start, run `scripts/qmd-maintain.sh`. After wiki writes, wiki-ingest Step 8 runs that script. Exit 1: report the failure; already-written wiki pages stay.
+
 ## Vault Structure
 
 ```

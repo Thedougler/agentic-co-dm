@@ -1,0 +1,21 @@
+filters:
+  and:
+    - file.inFolder("vault/campaigns/shattered-sea/vehicles/")
+    - 'type == "ship"'
+    - or:
+        - 'campaigns.isEmpty()'
+        - 'campaigns.contains("Shattered Sea")'
+
+views:
+  - type: table
+    name: "Ships"
+    order:
+      - file.name
+      - ship_class
+      - tier
+      - home_port
+      - status
+      - touched
+    groupBy:
+      property: status
+      direction: ASC

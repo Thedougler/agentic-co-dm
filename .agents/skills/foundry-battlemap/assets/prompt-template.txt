@@ -1,0 +1,24 @@
+Foundry VTT battlemap. Czepeku-quality hand-painted TTRPG battlemap. Orthographic top-down cartography. Full and complete map — every square of the canvas is finished terrain.
+
+Camera: locked straight down. 90-degree overhead. Orthographic. No tilt. No isometric. No 3/4 perspective. No horizon. No skybox. No first-person scene.
+
+Frame: {FRAME}. The play-space fills the entire canvas edge to edge. No border, no letterbox, no vignette frame.
+
+Place: {PLACE}.
+Beat jobs: {BEAT_JOBS}.
+Zones: {ZONES}.
+Routes and cover: {ROUTES_AND_COVER}.
+Biome and materials: {BIOME}.
+Light and time: {TIME}.
+Weather: {WEATHER}.
+Tactics: {TACTICS}.
+Suggested grid feel: {SCALE} squares on this rectangle, five feet each. Features are small enough that this many squares of the place fit — more forest, grass, river, and land left and right on a zoomed-out board. Do not draw the grid. No grid lines whatsoever.
+
+Style: {STYLE}.
+Materials: {MATERIALS}.
+Identity: {IDENTITY}. Architecture and crossings are those the owner page names.
+Finish: sharp readable materials, painted texture, thin inked edges, rich narrative clutter on the borders and landmarks, open floor where tokens will stand. Contact shadows and cast shadows ground every prop. Edge-to-edge fill — no dead space, no accidental seams.
+
+Empty board: terrain, architecture, furniture, and environmental props only. No player characters. No monster tokens. No corpses unless the place is a battlefield the user named. No fog of war. No light-source overlays. No walls-as-lines.
+
+Forbidden: square grid, hex grid, measurement marks, compass rose, title caption, watermark, UI chrome, token rings, character portraits, isometric 30-degree view, satellite photorealism, fisheye, horizon line, baked lighting regions, page margin, any grid overlay.

@@ -1,0 +1,11 @@
+{
+  "mean": 17.8,
+  "stdev": 10.9,
+  "ending_mix": {
+    "concrete": 0.6,
+    "dialogue": 0.0,
+    "epigram": 0.4
+  },
+  "distilled_from": "4 DM samples (Atlas, Humanism, Democratic Technocracy, True Seeking); arc-blight-of-aruhe unavailable (deleted from vault at the DM's own instruction, commit 9ce1cd9cb) — 2026-08-09 — raw samples not stored",
+  "dm_signed_off": false
+}

@@ -1,0 +1,36 @@
+modelRoleStorage: project
+modelRoles:
+  default: opencode-go/grok-4.6:medium
+  plan: opencode-go/grok-4.6:high
+  task: opencode-go/gpt-5.6-luna:medium
+  review: opencode-go/grok-4.6:high
+  smol: opencode-go/gpt-5.6-luna:high
+  advisor: opencode-go/grok-4.6:medium
+task:
+  batch: true
+  maxConcurrency: 4
+  maxRecursionDepth: 1
+  enableEffort: true
+  isolation:
+    enabled: true
+async:
+  enabled: true
+compaction:
+  enabled: true
+  asyncEnabled: true
+  midTurnEnabled: true
+  keepRecentTokens: 20000
+  autoContinue: true
+advisor:
+  enabled: false
+memory:
+  backend: "off"
+autolearn:
+  enabled: false
+tools:
+  approvalMode: write
+lsp:
+  enabled: true
+  lazy: true
+  diagnosticsOnWrite: true
+  diagnosticsDeduplicate: true

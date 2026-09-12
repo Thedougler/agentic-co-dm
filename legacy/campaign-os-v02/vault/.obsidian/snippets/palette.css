@@ -1,0 +1,33 @@
+/* Warm dark palette for the DM-reference vault. Base theme stays "obsidian" (dark) —
+   this only re-tunes the accent hue and a few surface/border variables so the vault
+   reads like a lamp-lit table rather than a stock grey app. See docs.obsidian.md
+   Reference/CSS variables/Foundations/Colors for every variable used here.
+
+   Scoped to .theme-dark only — has no effect if the vault is ever switched to light
+   mode, by design (no light palette has been designed to go with it). */
+.theme-dark {
+  /* Accent: warm brass/amber, echoing the read-aloud callout gold (custom-callouts.css
+     --callout-color: 201, 162, 74) instead of Obsidian's stock purple. */
+  --accent-h: 41;
+  --accent-s: 54%;
+  --accent-l: 54%;
+
+  /* Surfaces: a subtle warm-dark tint instead of neutral grey. */
+  --background-primary: #1c1a17;
+  --background-primary-alt: #211e1a;
+  --background-secondary: #171512;
+  --background-secondary-alt: #1c1a17;
+  --background-modifier-border: #3a352e;
+  --background-modifier-border-hover: #4a443a;
+  --background-modifier-hover: rgba(255, 255, 255, 0.05);
+
+  /* Shared status-color mapping — reused by tables-properties.css (properties panel,
+     Bases dashboards) and tags-headings.css so status:/quest_status: values read the
+     same everywhere. Maps onto Obsidian's own extended colors rather than inventing
+     new ones. */
+  --dm-status-canon: var(--color-green);
+  --dm-status-pending: var(--color-yellow);
+  --dm-status-draft: var(--color-orange);
+  --dm-status-active: var(--color-cyan);
+  --dm-status-dormant: var(--color-base-50);
+}

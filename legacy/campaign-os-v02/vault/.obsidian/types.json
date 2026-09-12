@@ -1,0 +1,13 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "category": "multitext",
+    "campaigns": "multitext",
+    "role": "multitext",
+    "geography": "multitext",
+    "location": "multitext",
+    "form": "multitext"
+  }
+}

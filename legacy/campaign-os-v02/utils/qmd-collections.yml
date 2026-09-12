@@ -1,0 +1,38 @@
+# Canonical qmd search collections for this repo.
+# qmd's real config lives outside git at ~/.config/qmd/index.yml, so this file is
+# the checked-in source of truth and `npm run search:sync` splices it in.
+# {{REPO}} is replaced with the repo root at sync time.
+collections:
+  content:
+    path: "{{REPO}}/vault"
+    pattern: "**/*.md"
+  wiki:
+    path: "{{REPO}}"
+    pattern: "vault/**/*.md"
+  pcs:
+    path: "{{REPO}}/vault/campaigns/shattered-sea/pcs"
+    pattern: "**/*.md"
+  sessions:
+    path: "{{REPO}}/vault/episodes"
+    pattern: "**/*.md"
+  stories:
+    path: "{{REPO}}"
+    pattern: "{vault/stories/**/*.md,vault/episodes/**/session-*.md}"
+  ideas:
+    path: "{{REPO}}/vault/ideas"
+    pattern: "**/*.md"
+  craft:
+    path: "{{REPO}}"
+    pattern: "vault/refs/**/*.md"
+  external:
+    path: "{{REPO}}"
+    pattern: "vault/srd/**/*.md"
+  guardrails:
+    path: "{{REPO}}/docs"
+    pattern: "**/*.md"
+  inbox:
+    path: "{{REPO}}/inbox"
+    pattern: "**/*.md"
+  raw:
+    path: "{{REPO}}/raw"
+    pattern: "**/*.md"

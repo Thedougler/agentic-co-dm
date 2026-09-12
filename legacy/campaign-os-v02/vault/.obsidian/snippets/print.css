@@ -1,0 +1,53 @@
+/* Print stylesheet — a paper/PDF handout render of a note (Obsidian's own Print/Export-to-PDF
+   command). The vault's warm-dark palette (palette.css, scoped .theme-dark only, no light
+   palette by design) is a screen-only choice; print always reverts to plain light/ink-cheap
+   colors regardless of the app's active theme, so this block is unscoped by .theme-dark/
+   .theme-light on purpose. Structural blocks never split mid-page: callouts, statblocks, and
+   tables/Bases embeds each get break-inside: avoid, the same rule multi-column.css and
+   tables-properties.css already use for the same reason. Sidebar/panel chrome has no meaning on
+   paper, so it's hidden defensively; a selector that doesn't exist in Obsidian's print-render DOM
+   is a harmless no-op, not an error (same hedge tables-properties.css documents for an
+   unconfirmed Bases variable name).
+
+   Class sources: .metadata-container/.metadata-content/.metadata-property are the Properties
+   panel family (the latter two already vault-confirmed in tables-properties.css).
+   .workspace-split.mod-left-split/.mod-right-split, .workspace-ribbon, and .status-bar are
+   Obsidian's own workspace-chrome classes (forum.obsidian.md ribbon/sidebar-hiding threads). */
+@media print {
+  :root,
+  .theme-dark,
+  .theme-light {
+    --background-primary: #ffffff;
+    --background-primary-alt: #f7f7f5;
+    --background-secondary: #f0f0ee;
+    --text-normal: #1a1a1a;
+    --text-muted: #444444;
+    --text-accent: #55483a;
+    --background-modifier-border: #cccccc;
+  }
+
+  /* Callouts always render fully open on paper — the fold triangle is a screen affordance. */
+  .callout {
+    break-inside: avoid;
+  }
+  .callout.is-collapsed .callout-content {
+    display: block !important;
+    height: auto !important;
+  }
+
+  .statblock-plugin-parent,
+  table,
+  .bases-embed,
+  .markdown-embed {
+    break-inside: avoid;
+  }
+
+  .metadata-container,
+  .workspace-split.mod-left-split,
+  .workspace-split.mod-right-split,
+  .workspace-ribbon,
+  .workspace-tab-header-container,
+  .status-bar {
+    display: none !important;
+  }
+}

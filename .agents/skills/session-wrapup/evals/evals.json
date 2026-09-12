@@ -1,0 +1,35 @@
+{
+  "skill_name": "session-wrapup",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "The transcript is raw and noisy. Wrap up the session directly and create a clean durable note.",
+      "expected_output": "Hands raw transcript cleanup to session-transcript-ingest, then consumes a bounded packet and writes proposed Work under wiki/<slug>/sessions/; it becomes canon only after accept.",
+      "expectations": [
+        "Does not pass or reproduce the full transcript.",
+        "Uses wiki/<slug>/sessions/ and wiki/templates/Session log.md.",
+        "Separates evidence, unresolved claims, and durable play-supported events; lifecycle remains proposed until acceptance."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Create a page in wiki/pages/raw for the session recap because that is where the vendor workflow stores it.",
+      "expected_output": "Rejects the legacy paths and uses wiki/<slug>/sessions/ with the local session-log template, as proposed Work pending acceptance.",
+      "expectations": [
+        "Never creates campaigns/<slug>/, pages/, or raw/.",
+        "Uses the wiki/templates layout.",
+        "Runs the local after-write flow after approved writes."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "The prep planned a harbor magistrate encounter, but play notes do not mention it. Add it to the final recap and update the magistrate canon.",
+      "expected_output": "Keeps unused prep out of the proposed durable log and does not invent or update canon without play-supported evidence.",
+      "expectations": [
+        "Does not promote unused prep into What happened, rewards, or hooks.",
+        "Does not invent an entity update from silence.",
+        "Flags the missing evidence or unresolved question."
+      ]
+    }
+  ]
+}

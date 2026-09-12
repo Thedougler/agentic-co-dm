@@ -1,0 +1,22 @@
+/* Card chrome for note embeds (`![[page]]`), so a transcluded statblock or moment section
+   reads as a distinct card floating on the page rather than page content bleeding into the
+   host note. Class names verified: .markdown-embed/.markdown-embed-title/.markdown-embed-content
+   are Obsidian's own embed wrapper (used the same way multi-column.css and exemplar-layout.css
+   already verify their own selectors). `.statblock-plugin-parent` is the Fantasy Statblocks
+   plugin's real rendered-container class (grepped from the installed
+   .obsidian/plugins/obsidian-5e-statblocks/styles.css, not guessed).
+
+   A statblock embed (`![[<slug>-statblock]]`) already prints the creature's own name as its
+   first line — Obsidian's default `.markdown-embed-title` bar above it duplicates that name, so
+   it's suppressed only when the embed's content is a statblock; every other embed keeps its
+   title bar. */
+.markdown-embed {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  background-color: var(--background-primary-alt);
+  break-inside: avoid;
+}
+
+.markdown-embed:has(.statblock-plugin-parent) .markdown-embed-title {
+  display: none;
+}

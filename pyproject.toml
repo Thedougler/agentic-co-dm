@@ -1,0 +1,10 @@
+[project]
+name = "agentic-co-dm"
+version = "0.1.0"
+description = "Campaign wiki checks for Agentic Co-DM. No runtime dependencies."
+readme = "CONTEXT.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.agentic-co-dm]
+vault = "wiki"

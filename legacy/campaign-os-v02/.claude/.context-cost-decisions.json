@@ -1,0 +1,12 @@
+{
+  "decisions": {
+    "vault/campaigns/shattered-sea/items/artifact/pearl-of-souls.md": {
+      "action": "claimed",
+      "verdict": null,
+      "tokens_total_at_decision": null,
+      "decided_at": "2026-08-07T01:49:31.092Z",
+      "session_id": "unknown",
+      "note": null
+    }
+  }
+}
