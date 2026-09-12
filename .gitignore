@@ -74,3 +74,10 @@ __pycache__/
 .venv/
 venv/
 dist/
+
+# Legacy archive — retain Markdown and WebP only.
+# .gitignore cannot enforce a WebP size limit; keep those assets lightweight.
+legacy/**
+!legacy/**/
+!legacy/**/*.md
+!legacy/**/*.webp

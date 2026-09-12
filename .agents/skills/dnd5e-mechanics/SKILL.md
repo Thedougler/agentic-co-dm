@@ -22,6 +22,14 @@ Players see nothing until the DM accepts and presents.
 
 Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagged, grounding named.
 
+## Ingest
+
+When `wiki-ingest` loads this skill, named ingest is DM approval for those sources (`docs/agents/work.md`). Write *d20 tests* on the chosen destination. Do not re-route ideas or mint mechanics the source does not support.
+
+Complete every written test: **Ability (Skill) — `DC n`**, success, failure. Keep settled DCs and stated mechanics. Conflicts stay a **proposal** / `^[ambiguous]`.
+
+**Complete when:** every ingested test on the destination meets this skill's success criteria, meaning unchanged.
+
 
 Adjudicate *d20 tests* as **5.5e RAW** (public SRD 5.2.1). Pick the correct
 *check* or *save*, name the ability and skill or tool, and set the *DC* from a
@@ -201,6 +209,7 @@ success result, failure result, and current player use.
   `run-guide`. A *quality ladder* on one *check* stays here.
 - Monster attack bonus, HP, and save *number* → `homebrew-monsters-5e`.
 - Spoken prose → `theatre-of-the-mind` after the mechanical pass.
+- Idea routing, staging, manifest → `wiki-ingest`.
 
 ## References
 

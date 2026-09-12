@@ -30,6 +30,14 @@ Remap durable output paths from `campaigns/<slug>/` to `wiki/` (entities/journal
 
 All spoken copy is Work for the DM and player-safe; `[!narration]` is the spoken slot.
 
+## Ingest
+
+When `wiki-ingest` loads this skill, named ingest is DM approval for those sources (`docs/agents/work.md`). Write player-facing `[!narration]` on the chosen destination. Do not re-route ideas, chat-propose the same page, or put secrets, DCs, or unearned names in spoken text.
+
+Polish stubs into flowing spoken prose. Keep settled look and facts. Do not invent a scene the source does not support.
+
+**Complete when:** spoken blocks on the destination are player-safe TotM for their mode, meaning unchanged.
+
 ## Authoring outcomes
 
 Player-facing theatre of the mind for a prepared Beat MUST be complete before
