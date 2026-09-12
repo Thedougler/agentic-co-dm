@@ -30,7 +30,7 @@ Contract: `specs/016-skill-design-dispatch/contracts/skill-design-dispatch.md`
 
 **Purpose**: Stay inside the plan file list. No new skill, wrapper CLI, or `src/`.
 
-- [X] T001 Confirm the files listed under Source Code in `specs/016-skill-design-dispatch/plan.md` exist or will be created as listed; do not add a skill, wrapper script, `src/`, scanner, or a second copy of the gate in `.omp/AGENTS.md` or `.claude/CLAUDE.md`
+- [ ] T001 Confirm the files listed under Source Code in `specs/016-skill-design-dispatch/plan.md` exist or will be created as listed; do not add a skill, wrapper script, `src/`, scanner, or a second copy of the gate in `.omp/AGENTS.md` or `.claude/CLAUDE.md`
 
 ---
 
@@ -40,7 +40,7 @@ Contract: `specs/016-skill-design-dispatch/contracts/skill-design-dispatch.md`
 
 **⚠️ CRITICAL**: No user story work until this phase is complete
 
-- [X] T002 Add the design-impact gate to `AGENTS.md` from `specs/016-skill-design-dispatch/contracts/skill-design-dispatch.md`. Quote: Class is `design-impact` \| `not`; Design-impact if the change would alter skill triggering, workflow ownership, standing load, or would create a skill or subagent; Length does not decide; Borderline of those four is design-impact; Writer is designated writer if design-impact (unless owner overrule), else session agent; Overrule is explicit owner skip only, silence is not overrule. Name in-scope kinds (source skill, standing instruction/sticky rule, subagent definition, writing-for-agents) and out-of-scope (constitution, feature specs, generated Spec Kit adapters, campaign wiki). Point design-impact work at `docs/agents/skill-design-dispatch.md`. Do not duplicate the gate in `.omp/AGENTS.md` or `.claude/CLAUDE.md`. Do not prescribe how the designated writer designs.
+- [ ] T002 Add the design-impact gate to `AGENTS.md` from `specs/016-skill-design-dispatch/contracts/skill-design-dispatch.md`. Quote: Class is `design-impact` | `not`; Design-impact if the change would alter skill triggering, workflow ownership, standing load, or would create a skill or subagent; Length does not decide; Borderline of those four is design-impact; Writer is designated writer if design-impact (unless owner overrule), else session agent; Overrule is explicit owner skip only, silence is not overrule. Name in-scope kinds (source skill, standing instruction/sticky rule, subagent definition, writing-for-agents) and out-of-scope (constitution, feature specs, generated Spec Kit adapters, campaign wiki). Point design-impact work at `docs/agents/skill-design-dispatch.md`. Do not duplicate the gate in `.omp/AGENTS.md` or `.claude/CLAUDE.md`. Do not prescribe how the designated writer designs.
 
 **Checkpoint**: Foundation ready — user stories can start
 
@@ -54,7 +54,7 @@ Contract: `specs/016-skill-design-dispatch/contracts/skill-design-dispatch.md`
 
 ### Implementation for User Story 1
 
-- [X] T003 [US1] In `AGENTS.md`, state classify before any in-scope instruction file changes. Quote: "Length MUST NOT be the gate"; "Borderline of those four bullets MUST be treated as design-impact"; "Creating a new skill or subagent MUST be classified as design-impact".
+- [ ] T003 [US1] In `AGENTS.md`, state classify before any in-scope instruction file changes. Quote: "Length MUST NOT be the gate"; "Borderline of those four bullets MUST be treated as design-impact"; "Creating a new skill or subagent MUST be classified as design-impact".
 
 **Checkpoint**: US1 independently testable (quickstart step 1)
 
@@ -68,7 +68,7 @@ Contract: `specs/016-skill-design-dispatch/contracts/skill-design-dispatch.md`
 
 ### Implementation for User Story 2
 
-- [X] T004 [US2] Create `docs/agents/skill-design-dispatch.md` with the non-design path: if class is `not`, the session agent completes the edit in the same session; do not park. Quote: mixed request MUST be split — non-design work by the session agent, design-impact work dispatched or parked. Do not copy the four bullets (they live in `AGENTS.md`).
+- [ ] T004 [US2] Create `docs/agents/skill-design-dispatch.md` with the non-design path: if class is `not`, the session agent completes the edit in the same session; do not park. Quote: mixed request MUST be split — non-design work by the session agent, design-impact work dispatched or parked. Do not copy the four bullets (they live in `AGENTS.md`).
 
 **Checkpoint**: US1 + US2 independently testable (quickstart step 2)
 
@@ -82,7 +82,7 @@ Contract: `specs/016-skill-design-dispatch/contracts/skill-design-dispatch.md`
 
 ### Implementation for User Story 3
 
-- [X] T005 [US3] In `docs/agents/skill-design-dispatch.md`, add the design-impact path. Scoped prompt fields: Outcome (what must be true when done); Files (in-scope targets); Bounds (what must not change); Job (one design job, not an unbounded rewrite). Session agent MUST NOT modify the target instruction files. Invoke designated writer with `claude -p --model opus --effort high` (flags from `claude --help`, do not pin a version string). Designated writer is the sole writer of a change that lands. Do not prescribe skill-design method, voice, or structure; tell the writer to follow writing-for-agents.
+- [ ] T005 [US3] In `docs/agents/skill-design-dispatch.md`, add the design-impact path. Scoped prompt fields: Outcome (what must be true when done); Files (in-scope targets); Bounds (what must not change); Job (one design job, not an unbounded rewrite). Session agent MUST NOT modify the target instruction files. Invoke designated writer with `claude -p --model opus --effort high` (flags from `claude --help`, do not pin a version string). Designated writer is the sole writer of a change that lands. Do not prescribe skill-design method, voice, or structure; tell the writer to follow writing-for-agents.
 
 **Checkpoint**: US1–US3 independently testable (quickstart step 3)
 
@@ -90,13 +90,14 @@ Contract: `specs/016-skill-design-dispatch/contracts/skill-design-dispatch.md`
 
 ## Phase 6: User Story 4 - Unavailability parks work and leaves files untouched (Priority: P4)
 
-**Goal**: Writer cannot start, stops, refuses, or errors → targets match dispatch-start content; scoped prompt is a GitHub issue a later session can find. Usage limit → that job incomplete with a retry time; do not retry before it.
+**Goal**: Writer cannot start, stops, refuses, or errors (other than usage limit) → targets match dispatch-start content; scoped prompt is a GitHub issue a later session can find. Usage limit → that job incomplete with a retry time; no parked dispatch; a new session retries after that time.
 
-**Independent Test**: Simulate writer unavailable. Targets unchanged. Issue titled `Parked skill design: …` with `ready-for-agent` contains the scoped prompt. Simulate jobs 17–19: parked issue includes retry time; job is not re-attempted before that time; other in-session work is not marked incomplete.
+**Independent Test**: Simulate writer unavailable (not usage limit). Targets unchanged. Issue titled `Parked skill design: …` with `ready-for-agent` contains the scoped prompt. Simulate jobs 17–19: no parked issue; retry time recorded; job is not re-attempted before that time; other in-session work is not marked incomplete.
 
 ### Implementation for User Story 4
 
-- [X] T006 [US4] In `docs/agents/skill-design-dispatch.md`, add unavailability. Commit non-design work first; record `HEAD` as dispatch start. On non-success restore the prompt’s target paths to that revision. Park with `gh issue create`: Title `Parked skill design: <outcome>`; Label `ready-for-agent`; Body the scoped prompt. When reason is usage limit, Body also includes the retry time. Quote: Retry time is usage limit only; Reset time from the report when present; if none, 5 hours from the park; if a retry still reports a usage limit with no reset time, 24 hours from that attempt; Do not re-attempt before this time; Other in-session jobs are not marked incomplete for this reason. Search existing `Parked skill design:` issues before creating another for the same job. Session agent MUST NOT write the design-impact change. States: `open` → `resumed` → `done`. Resume of a usage-limit park waits until after retry time.
+- [ ] T006 [US4] In `docs/agents/skill-design-dispatch.md`, add unavailability for reasons other than usage limit. Commit non-design work first; record `HEAD` as dispatch start. On non-success restore the prompt’s target paths to that revision. Park with `gh issue create`: Title `Parked skill design: <outcome>`; Label `ready-for-agent`; Body the scoped prompt. Quote parked-dispatch constraints: Title `Parked skill design: <outcome>`; Label `ready-for-agent`; Body the scoped prompt; Targets on disk Match content at dispatch start; Usage limits are not parked dispatch. Search existing `Parked skill design:` issues before creating another for the same job. Session agent MUST NOT write the design-impact change. States: `open` → `resumed` → `done`.
+- [ ] T007 [US4] In `docs/agents/skill-design-dispatch.md`, add usage-limit wait. Quote: Retry time Reset time from the report when present; if none, 5 hours from the stop; if a retry still reports a usage limit with no reset time, 24 hours from that attempt; Targets on disk Match content at dispatch start; Tracked work None — do not create parked dispatch; Next attempt A new session after retry time. Do not re-attempt before this time. Other in-session jobs are not marked incomplete for this reason.
 
 **Checkpoint**: US1–US4 independently testable (quickstart step 4)
 
@@ -110,7 +111,7 @@ Contract: `specs/016-skill-design-dispatch/contracts/skill-design-dispatch.md`
 
 ### Implementation for User Story 5
 
-- [X] T007 [US5] In `docs/agents/skill-design-dispatch.md`, add verify-and-stop. After success the session agent reports whether touched files were in-scope and whether the prompt outcome was met, and MUST NOT rewrite those files for the same change. Owner overrule remains the only license for the session agent to write design-impact (already in `AGENTS.md`).
+- [ ] T008 [US5] In `docs/agents/skill-design-dispatch.md`, add verify-and-stop. After success the session agent reports whether touched files were in-scope and whether the prompt outcome was met, and MUST NOT rewrite those files for the same change. Owner overrule remains the only license for the session agent to write design-impact (already in `AGENTS.md`).
 
 **Checkpoint**: All five stories independently testable (quickstart step 5)
 
@@ -120,10 +121,10 @@ Contract: `specs/016-skill-design-dispatch/contracts/skill-design-dispatch.md`
 
 **Purpose**: Conflicting “you draft it” paths gone. One source of truth. Quickstart holds.
 
-- [X] T008 [P] In `.agents/skills/skill-creator/SKILL.md`, stop instructing the session agent to draft design-impact skill work; point at `docs/agents/skill-design-dispatch.md`. Do not copy the four bullets.
-- [X] T009 [P] In `.agents/skills/omp-harness/SKILL.md`, stop instructing the session agent to draft design-impact omp context, skills, or subagent defs; point at `docs/agents/skill-design-dispatch.md`. Do not copy the four bullets.
-- [X] T010 Run `specs/016-skill-design-dispatch/quickstart.md` steps 1–6 against `specs/016-skill-design-dispatch/contracts/skill-design-dispatch.md`
-- [X] T011 Confirm `.omp/AGENTS.md` and `.claude/CLAUDE.md` still only import `AGENTS.md`; this change set adds no skill, no wrapper CLI, and no `src/`
+- [ ] T009 [P] In `.agents/skills/skill-creator/SKILL.md`, stop instructing the session agent to draft design-impact skill work; point at `docs/agents/skill-design-dispatch.md`. Do not copy the four bullets.
+- [ ] T010 [P] In `.agents/skills/omp-harness/SKILL.md`, stop instructing the session agent to draft design-impact omp context, skills, or subagent defs; point at `docs/agents/skill-design-dispatch.md`. Do not copy the four bullets.
+- [ ] T011 Run `specs/016-skill-design-dispatch/quickstart.md` steps 1–6 against `specs/016-skill-design-dispatch/contracts/skill-design-dispatch.md`
+- [ ] T012 Confirm `.omp/AGENTS.md` and `.claude/CLAUDE.md` still only import `AGENTS.md`; this change set adds no skill, no wrapper CLI, and no `src/`
 
 ---
 
@@ -136,7 +137,7 @@ Contract: `specs/016-skill-design-dispatch/contracts/skill-design-dispatch.md`
 - **US1 (Phase 3)**: After Foundational — MVP
 - **US2 (Phase 4)**: After Foundational; procedure file created here; US3–US5 edit that file after
 - **US3–US5 (Phases 5–7)**: After US2 (same procedure file — sequential)
-- **Polish (Phase 8)**: After desired stories; T008/T009 independent of each other
+- **Polish (Phase 8)**: After desired stories; T009/T010 independent of each other
 
 ### User Story Dependencies
 
@@ -146,17 +147,17 @@ Contract: `specs/016-skill-design-dispatch/contracts/skill-design-dispatch.md`
 
 ### Parallel Opportunities
 
-- T008, T009 (skill-creator and omp-harness)
+- T009, T010 (skill-creator and omp-harness)
 - Do not parallelize T002/T003 (`AGENTS.md`)
-- Do not parallelize T004–T007 (same procedure file)
+- Do not parallelize T004–T008 (same procedure file)
 
 ---
 
 ## Parallel Example: Polish
 
 ```text
-Task: pointer in .agents/skills/skill-creator/SKILL.md (T008)
-Task: pointer in .agents/skills/omp-harness/SKILL.md (T009)
+Task: pointer in .agents/skills/skill-creator/SKILL.md (T009)
+Task: pointer in .agents/skills/omp-harness/SKILL.md (T010)
 ```
 
 ---
@@ -177,7 +178,7 @@ Task: pointer in .agents/skills/omp-harness/SKILL.md (T009)
 2. US1 → classification is the default
 3. US2 → non-design stays local
 4. US3 → dispatch
-5. US4 → park and restore
+5. US4 → park (not usage limit); usage-limit wait, no issue
 6. US5 → verify, no rewrite
 7. Polish → skill pointers; quickstart 1–6
 
@@ -190,5 +191,6 @@ Task: pointer in .agents/skills/omp-harness/SKILL.md (T009)
 - Do not add test files unless a later command asks
 - Do not add a dispatch skill or a wrapper around `claude`/`gh`
 - Do not prescribe how the designated writer designs
+- Do not create parked dispatch for usage limits
 - Commit after each task or logical group
 - Stop at checkpoints
