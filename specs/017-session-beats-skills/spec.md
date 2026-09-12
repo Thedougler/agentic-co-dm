@@ -15,6 +15,7 @@
 - Q: When a named vehicle page is written, should it include the 5e vehicle sheet from the new template (size, speed, hull HP, weapons, combat) even though vehicle-design currently forbids inventing those numbers? → A: Fill the sheet. Update skills to match the templates. Write positive instructions (jobs and done-when). Treat missing crafts as not-yet-done, now in scope — not as crafts that will never exist. Vehicle design is in scope now and going forward.
 - Q: When an author creates or edits a campaign spell page, which skill is primary? → A: New `spell-design` skill is primary for write/edit/create of a spell page.
 - Q: For Claude Code skill updates, what is the default prompt shape and model? → A: Minimal, focused, direct prompt with clear deliverables and completion criteria, optimized for token efficiency. Default model: Opus 4.6 medium.
+- Q: When should Claude Code write skill work versus the session agent? → A: Claude Code only for novel skill design, skill redesign, or major skill-file change. Session agents do smaller edits to established files, Spec Kit pattern tweaks, and AGENTS.md. Conserve Claude Code; use it only when necessary.
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -188,7 +189,7 @@ Skills that teach these pages state what to write and when the page is done. The
 - **FR-022**: `vehicle-design` MUST teach filling that vehicle template, including the sheet and component numbers.
 - **FR-023**: A job to write, edit, or create a spell page MUST use `spell-design` as its primary skill. The page MUST include a spoken look, a classification line, and a runnable 2024 effect block (casting time, range, components, duration, and the effect). Discovery and Lore are filled when the spell needs placement or history.
 - **FR-024**: Skills updated for these kinds MUST state what to write and when the page is done. They MUST treat work that has not been done yet as the work to do now.
-- **FR-025**: Claude Code skill-update dispatch MUST send a minimal, focused, direct prompt that names deliverables and completion criteria. Default model is Opus 4.6 at medium effort (`claude-opus-4-6`, `--effort medium`).
+- **FR-025**: Claude Code MUST be used only for novel skill design, skill redesign, or a major skill-file change. Those dispatches MUST send a minimal, focused, direct prompt that names deliverables and completion criteria, at Opus 4.6 medium (`claude-opus-4-6`, `--effort medium`). Session agents MUST complete smaller edits to established files, Spec Kit pattern tweaks, and `AGENTS.md` without Claude Code.
 
 ### Key Entities
 
@@ -227,14 +228,14 @@ Skills that teach these pages state what to write and when the page is done. The
 - **SC-012**: 100% of new spell pages started from `wiki/templates/spell.md` include narration, classification, and a runnable 2024 effect block.
 - **SC-013**: After this feature, `vehicle-design` directs the author to fill the vehicle sheet and components as part of the page.
 - **SC-014**: Two reviewers classify write, edit, and create-content jobs for a spell page and agree `spell-design` is primary for 100% of those jobs.
-- **SC-015**: 100% of Claude Code skill-update dispatches for this feature use Opus 4.6 at medium effort, and the prompt names deliverables plus a completion test.
+- **SC-015**: 100% of Claude Code skill dispatches that occur use Opus 4.6 at medium effort with a prompt that names deliverables plus a completion test. 0% of `AGENTS.md`-only edits or Spec Kit pattern tweaks are dispatched to Claude Code.
 
 ## Assumptions
 
 - "Type of beat" means the five Beat Chart types (Hook, Development, Cliffhanger, Climax, Resolution), not one skill per subtype card. Cards stay inside their type skill.
 - The current session-beats blob is split into the composition skill plus the five type skills. The blob is not kept beside the split.
 - Method source is *Scripting the Game* (Pondsmith, with concepts from Flint Dille, R. Talsorian Games, 2020), as already adapted for this campaign: Beat Chart rules plus player-agency gates. Skills teach the methods; they do not paste the source text.
-- Session 11 cockpit format, session-folder filing, Work accept-before-wiki, live-beat assembly, theatre of the mind, and encounter/trap/place/monster crafts stay as they are for beats. This feature also adds spell and vehicle wiki kinds: templates, Layout jobs, `vehicle-design` updated to fill the vehicle sheet, and a new `spell-design` skill so those pages are runnable. Design-impact skill updates are dispatched to Claude Code with a minimal prompt and Opus 4.6 medium.
+- Session 11 cockpit format, session-folder filing, Work accept-before-wiki, live-beat assembly, theatre of the mind, and encounter/trap/place/monster crafts stay as they are for beats. This feature also adds spell and vehicle wiki kinds: templates, Layout jobs, `vehicle-design` updated to fill the vehicle sheet, and a new `spell-design` skill so those pages are runnable. New skills and major skill redesigns dispatch to Claude Code (minimal prompt, Opus 4.6 medium). `AGENTS.md` tables, templates, and small tweaks to established files stay with the session agent.
 - Creating content for a beat means filling that beat's jobs (situation, pressure, spoken opening, procedure, landing), then handing off to existing crafts when those crafts own the work, including vehicle and spell pages when a beat needs a named craft or spell.
 - A cold open is not a Hook and is out of scope for the beat skills.
 - Out of scope: rewriting Session 11 to prove the split; Foundry staging; a second pacing system beside the Beat Chart; one skill per beat-subtype card; changing who owns cockpit layout or spoken player text.

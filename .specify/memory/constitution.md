@@ -1,12 +1,11 @@
 <!--
 Sync Impact Report
-- Version change: 1.4.0 → 1.4.1
+- Version change: 1.4.1 → 1.5.0
 - Modified principles:
   - none renamed
-- Added sections: none
+- Added sections: none (Agent Operating Constraints: Claude Code only when necessary)
 - Removed sections: none
-- Follow-up TODOs: none in this file. Dispatch uses
-  `--model claude-opus-4-6 --effort medium`.
+- Follow-up TODOs: none in this file.
 -->
 
 # Agentic Co-DM Constitution
@@ -190,10 +189,13 @@ not lag completed work.
 - Agents MUST auto-commit, auto-push the working branch, keep it current
   with `main`, and refresh agent-context, per X. They MUST NOT ask
   permission for those steps.
-- Exclusive Claude writer: `claude-opus-4-6` at `--effort medium`. MUST NOT
-  use the `opus` alias or default Opus. Default Opus output is worthless
-  for language work (issue #3). Skill-update prompts are minimal, focused,
-  and direct; they name deliverables and completion criteria.
+- Exclusive Claude writer, when used: `claude-opus-4-6` at `--effort medium`.
+  MUST NOT use the `opus` alias or default Opus. Default Opus output is
+  worthless for language work (issue #3). Use Claude Code only for novel
+  skill design, skill redesign, or a major skill-file change (issue #4).
+  Session agents complete smaller edits to established files, Spec Kit
+  pattern tweaks, and `AGENTS.md`. Skill-update prompts are minimal,
+  focused, and direct; they name deliverables and completion criteria.
 
 ## Development Workflow
 
@@ -252,4 +254,4 @@ Compliance:
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.4.1 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
+**Version**: 1.5.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12

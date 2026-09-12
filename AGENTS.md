@@ -49,7 +49,7 @@ Reader is `agent` | `DM` | `players`. Unknown reader → `DM`. Vault is `true` i
 
 Classify before any in-scope instruction file changes. Class is `design-impact` | `not`. Length MUST NOT be the gate.
 
-Design-impact if the change would alter skill triggering, workflow ownership, standing load, or would create a skill or subagent. Borderline of those four bullets MUST be treated as design-impact. Creating a new skill or subagent MUST be classified as design-impact.
+Design-impact if the change is a novel skill, a skill redesign, or a major skill-file change. Creating a new skill or subagent is design-impact. Smaller edits to established files, Spec Kit pattern tweaks, and `AGENTS.md` are class `not`. Conserve Claude Code; use it only when necessary.
 
 | Class | Writer |
 |---|---|
