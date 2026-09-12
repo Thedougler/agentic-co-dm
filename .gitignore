@@ -1,0 +1,57 @@
+# OS
+.DS_Store
+**/.DS_Store
+Thumbs.db
+*.tmp
+
+# Secrets / machine paths
+.env
+.env.*
+
+# Spec Kit local
+.specify/presets/.registry
+
+# Obsidian — local UI state (keep shared app/appearance)
+wiki/.obsidian/workspace.json
+wiki/.obsidian/workspace-mobile.json
+wiki/.obsidian/workspaces.json
+wiki/.obsidian/graph.json
+wiki/.obsidian/cache/
+wiki/.obsidian/plugins/*/data.json
+wiki/.obsidian/*.bak
+wiki/.obsidian/*.backup-*
+wiki/.trash/
+
+# qmd local indexes
+**/.qmd/*.sqlite
+**/.qmd/*.sqlite-*
+**/.qmd/refresh.*
+
+# Harness copies of pipx wiki skills (absolute machine symlinks)
+.claude/skills/
+.cursor/skills/
+.kiro/skills/
+.pi/skills/
+.windsurf/skills/
+
+# Local pipx wiki-skill installs under the agent root (machine symlinks)
+.agents/skills/wiki-*
+.agents/skills/claude-history-ingest
+.agents/skills/code-understand
+.agents/skills/codex-history-ingest
+.agents/skills/copilot-history-ingest
+.agents/skills/cross-linker
+.agents/skills/daily-update
+.agents/skills/graph-colorize
+.agents/skills/hermes-history-ingest
+.agents/skills/impl-validator
+.agents/skills/llm-wiki
+.agents/skills/memory-bridge
+.agents/skills/obsidian-layout-adjustment
+.agents/skills/openclaw-history-ingest
+.agents/skills/pi-history-ingest
+.agents/skills/session-brain
+.agents/skills/session-search
+.agents/skills/skill-creator
+.agents/skills/tag-taxonomy
+.agents/skills/vault-skill-factory
