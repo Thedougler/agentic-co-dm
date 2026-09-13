@@ -54,6 +54,8 @@ Cut wasted context without waiting. A change MUST NOT count as an improvement if
 
 ### Helpers
 
+After merges (or when starting box work), sync with `./scripts/git-sync-main` (feature branches only; never leave `main` dirty). Refuse unique local main commits; use `--force-clean` only to discard stranded dirt.
+
 If a job will repeat and no existing command does it, create an agent-shaped helper without being asked. Arguments in, text or JSON out, exit done vs failed. Use it on the next same-kind sitting. Keep it current or remove it. No helper for a one-off. No wrap of an existing command.
 
 ### Error ledger
