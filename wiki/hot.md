@@ -3,9 +3,10 @@ title: Hot Cache
 updated: 2026-09-12
 ---
 ## Recent Activity
-Ingested the Young Bloodhawk as a proposed juvenile creature page, linking its Flush Dive hunting role to the adult Bloodhawk and Aruhe's exposed routes.
+Ingested the Crown Squid brief and upgraded its owner page with canopy pursuit, isolation pressure, and geographical escape conditions.
+Filed Stonepear and Lesser Black Lotus as proposed Aruhe owners, then preserved Slack Basin as a Session 11 place companion.
 ## Active Threads
-The adult Bloodhawk's hunting line now has a runnable juvenile pressure element.
+The Aruhe expedition now has a complete river-hazard loop: claimed water, dangerous flora, canopy predators, and route-specific counterplay.
 ## Key Takeaways
-Aruhe's aerial predators use staged pressure: the adult breaks prey from cover, while young Bloodhawks drive exposed or airborne bodies downward.
+The Crown Squid owns connected canopy, while open ground and occupied water provide meaningful escape routes.
 ## Flagged Contradictions

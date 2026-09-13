@@ -2,7 +2,9 @@
 title: Ghost Plum
 category: entities
 tags: [shattered-sea, item, aruhe, consumable]
-sources: ["wiki/_archive/Ghost Plum.md"]
+sources:
+  - "wiki/_archive/Ghost Plum.md"
+  - "wiki/_raw/Aruhe - Ghost Plum.md"
 summary: A rare Aruhe fruit that makes its eater Invisible for one hour.
 provenance:
   extracted: 1.0

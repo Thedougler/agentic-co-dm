@@ -1,8 +1,8 @@
 {
   "version": 1,
   "stats": {
-    "total_sources_ingested": 46,
-    "total_pages": 56
+    "total_sources_ingested": 54,
+    "total_pages": 60
   },
   "/Users/nick/agentic-co-dm/wiki/_raw/arc-blight-of-aruhe.md": {
     "content_hash": "sha256:df40626cb59fcde17c3d5cd4d9079e7c57335a0e5e10334af00d40f3efe05598",
@@ -540,6 +540,62 @@
       "last_ingested": "2026-09-12T18:24:31.400446+00:00",
       "pages_produced": [
         "entities/Young Bloodhawk.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/aruhe-blight-hinewa.md": {
+      "content_hash": "4f6bcfa5451f1a605240f5482c826001857da6730c173a67dde631f968ab34a4",
+      "last_ingested": "2026-09-13T01:00:50.087691+00:00",
+      "pages_produced": [
+        "entities/Hinewai.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/aruhe-crown-squid.md": {
+      "content_hash": "89a8714a1f3649a04af1d4c4580ff5208f4db2c0318ee645d1ac3066c68380ad",
+      "last_ingested": "2026-09-13T01:01:53.660733+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Crown Squid.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Session-11-00-Random-Tables.md": {
+      "content_hash": "f7fd8a3bc6f1ad0c9551a64cd105c93473dff11d54675aa22368236df02e6fe3",
+      "last_ingested": "2026-09-13T01:02:13.959059+00:00",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-00-Random-Tables.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Stonepear.md": {
+      "content_hash": "0e6da1ae248fcae16a03f4542f69accf8c3fba3d81ca5974b59d454572b26228",
+      "last_ingested": "2026-09-13T01:02:49.150674+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Stonepear.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Ghost Plum.md": {
+      "content_hash": "478f7611214f3789fd114ed50c9bfdd9a29f8dbc9738e30350616341245ba2d2",
+      "last_ingested": "2026-09-13T01:03:20.711266+00:00",
+      "pages_produced": [
+        "entities/Ghost Plum.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Lesser Black Lotus.md": {
+      "content_hash": "b8264884605e30778e80a568c7588e2323212edbcf2186e36ccb009d416d43a8",
+      "last_ingested": "2026-09-13T01:03:59.858527+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Lesser Black Lotus.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - River Slack Basin.md": {
+      "content_hash": "dc8570781cd3f62eff582fa2edc66d837a25fcddcdc9d8532028dc4f5243ab15",
+      "last_ingested": "2026-09-13T01:05:09.614622+00:00",
+      "pages_produced": [
+        "entities/Aruhe - River Slack Basin.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Giant's Guava.md": {
+      "content_hash": "98c692c8456cdff482dfeceac90d23a12e090a60893e8d9d850bd088eed062f5",
+      "last_ingested": "2026-09-13T01:06:53.263188+00:00",
+      "pages_produced": [
+        "entities/Giant's Guava.md"
       ]
     }
   },

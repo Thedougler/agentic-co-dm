@@ -71,3 +71,12 @@ title: Wiki Log
 - [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - Black Lotus.md" pages_updated=0 pages_created=1 mode=append
 - [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - Bloodhawk.md" pages_updated=0 pages_created=1 mode=append
 - [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - Young Bloodhawk.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/aruhe-blight-hinewa.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/aruhe-crown-squid.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Session-11-00-Random-Tables.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - Stonepear.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - Ghost Plum.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - Lesser Black Lotus.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - River Slack Basin.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - Giant's Guava.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-12T00:00:00Z] INGEST_FAILED source="wiki/_raw/.DS_Store" reason="non-source binary file"

@@ -7,6 +7,7 @@ sources:
   - "house (Monster-Brewer; legacy Fantasy Statblock import; Hinewai/Death Bloom ingest 2026-09-05)"
   - "legacy/campaign-os-v02/vault/stories/arc-blight-of-aruhe.md"
   - "arc-blight-of-aruhe.md"
+  - "wiki/_raw/aruhe-blight-hinewa.md"
 summary: Elf druid lich fused to Aruhe after escaping Karath; her grief became the island's law and her woman-in-the-woods form guards its living systems.
 provenance:
   extracted: 1.0

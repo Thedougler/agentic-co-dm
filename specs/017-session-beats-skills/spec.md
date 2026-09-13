@@ -19,6 +19,10 @@
 - Q: If Claude Code hits a usage limit, what happens to the rest of the work? → A: Defer only the Claude-dependent task until Claude Code is available. Complete remaining tasks that do not depend on it.
 - Q: How should an agent decide that Claude Code will not be usable within the hour? → A: Use the retry time on the blocked task: more than one hour away means Codex may run.
 - Q: After Codex finishes one blocked skill job, should the next blocked skill job go to Codex without checking Claude Code again? → A: Re-check before each job: Claude Code if available, else Codex if the gates still hold.
+- Q: What must a new or edited faction wiki page contain to pass? → A: Named scaffold jobs: public face; DM thesis; current state; one active agenda; table-relevant assets, people, places, and relationships; faction-turn log. Extra headings omit-if-unused.
+- Q: Which skill is primary when creating or editing a faction wiki page? → A: New `faction-design` skill is primary. Remove `faction-prep`.
+- Q: Who fills and advances the faction-turn log on a faction page? → A: `faction-design` writes Current Turn as the planned next move, no roll. `world-tick` runs the turn and writes the log.
+- Q: Where does an active faction’s clock live so it does not drift? → A: Page clock is the owner. `hot.md` may point at the faction; it must not store a second clock.
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -147,6 +151,27 @@ Skills that teach these pages state what to write and when the page is done. The
 
 ---
 
+### User Story 7 - Faction wiki pages use the new template (Priority: P2)
+
+A Co-DM creates or edits a named **faction** campaign page. They start from `wiki/templates/faction.md` (the scaffold provided for this feature). `faction-design` is primary for that page. `wiki/AGENTS.md` already lists `type: faction`. Layout lists jobs for that kind. Pass is those jobs, not heading-order match. Omit unused sections.
+
+A faction page is runnable at the table when it has: public face; DM thesis; current state; one active agenda; table-relevant assets, people, places, and relationships; and a faction-turn log. Extra headings in the scaffold are omitted when unused. Theatre of the mind still owns `[!narration]` for the public face.
+
+`faction-design` writes Current Turn as the planned next move and does not roll or canonize the result. `world-tick` still runs the turn, rolls, and appends the log. The agenda clock lives on the faction page; `hot.md` may point at that faction and MUST NOT store a second clock. `faction-design` states what to write and when the page is done. It describes work that has not been done yet as the work to do now. `faction-prep` is removed; it is not kept as a stub.
+
+**Why this priority**: `type: faction` exists without a template or Layout jobs. Current `faction-prep` required sections (Agenda, Membership, Methods, Public Face, Clock) do not match the scaffold. A second owner beside `faction-design` would split the same job.
+
+**Independent Test**: Give an author a job to create a named faction. `faction-design` is primary. The page starts from `wiki/templates/faction.md` and includes the named jobs. A reviewer can answer what the faction wants, what it can do, what it will do next, what changes if it succeeds, and how the party can notice or interfere, without another format guide.
+
+**Acceptance Scenarios**:
+
+1. **Given** a job to create or edit a named faction, **When** the author writes the wiki page, **Then** `faction-design` is primary, they copy `wiki/templates/faction.md`, and they fill public face, DM thesis, current state, one active agenda, table-relevant assets/people/places/relationships, and a faction-turn log.
+2. **Given** that page, **When** unused scaffold headings have no play-relevant content, **Then** they are omitted.
+3. **Given** `wiki/AGENTS.md`, **When** an author classifies the page, **Then** `type` may be `faction`, and Layout lists jobs for Faction.
+4. **Given** `faction-design` after this feature, **When** an author follows it, **Then** it tells them to fill those jobs as part of the page. **Given** a job that previously would have loaded `faction-prep`, **When** the author starts, **Then** they load `faction-design` and `faction-prep` is not present.
+5. **Given** a new faction page, **When** `faction-design` finishes, **Then** Current Turn names the planned next move and no roll has been made. **Given** a later `world-tick`, **When** that faction can affect current play, **Then** `world-tick` resolves the move and appends the faction-turn log.
+6. **Given** an active faction with an independent agenda, **When** the page is written, **Then** the agenda clock is on that page. **Given** `hot.md`, **When** it mentions that faction, **Then** it points at the page and does not keep a duplicate clock.
+
 ### Edge Cases
 
 - Play a Cliffhanger as Hook or Play a Development as Hook: still one Hook for the session; the borrowed type is loaded only for that opening shape; the next beat still follows polarity.
@@ -161,8 +186,12 @@ Skills that teach these pages state what to write and when the page is done. The
 - After this feature, no remaining single skill contains the full chart plus all five type-card catalogs.
 - Existing Session 11 beats and spines are not rewritten solely to prove the split.
 - Companion notes (hazards tables) are not typed beats and do not load type skills.
-- Unused template sections on a new spell or vehicle page are omitted; filled jobs stay.
-- A beat that needs a named craft or a spell hands off to that wiki kind; the beat skill still owns the beat.
+- Unused template sections on a new spell, vehicle, or faction page are omitted; filled jobs stay.
+- A beat that needs a named craft, spell, or faction hands off to that wiki kind; the beat skill still owns the beat.
+- Existing faction pages are not rewritten solely to prove the new template.
+- A job that previously loaded `faction-prep` loads `faction-design` instead. `faction-prep` is not kept as a stub.
+- `faction-design` does not roll or canonize a future move. `world-tick` remains the advancement ritual and writes the log.
+- The faction page owns the agenda clock. `hot.md` may link to the faction and MUST NOT keep a second clock.
 - Claude Code usage limit: defer that Claude-dependent task until Claude Code is available; complete remaining tasks that do not depend on it. If every remaining open task is blocked by that limit, no other work can be done, and the retry time on the blocked task is more than one hour away, the session agent MAY instead send the same tightly scoped skill-writing prompt to the Codex CLI at ChatGPT 5.5 medium. Re-check those gates before each remaining blocked skill job; prefer Claude Code if it is usable again.
 
 ## Requirements *(mandatory)*
@@ -195,6 +224,13 @@ Skills that teach these pages state what to write and when the page is done. The
 - **FR-024**: Skills updated for these kinds MUST state what to write and when the page is done. They MUST treat work that has not been done yet as the work to do now.
 - **FR-025**: Claude Code MUST be used only for novel skill design, skill redesign, or a major skill-file change. Those dispatches MUST send a minimal, focused, direct prompt that names deliverables and completion criteria, at Opus 4.6 medium (`claude-opus-4-6`, `--effort medium`). Session agents MUST complete smaller edits to established files, Spec Kit pattern tweaks, and `AGENTS.md` without Claude Code.
 - **FR-026**: When Claude Code is unavailable because of a usage limit, the session agent MUST defer only the Claude-dependent task until Claude Code is available, and MUST complete remaining tasks that do not depend on it. If every remaining open task is blocked by that usage limit, no other work can be done, and the retry time recorded on the blocked task is more than one hour away, the session agent MAY invoke the Codex CLI at ChatGPT 5.5 medium with the same tightly scoped skill-writing prompt that would have gone to Claude Code (Opus 4.6 medium). The session agent MUST NOT write the design-impact change itself. Before each remaining blocked skill job, the session agent MUST re-check those gates and MUST prefer Claude Code if it is usable again.
+- **FR-027**: `wiki/templates/faction.md` MUST be the scaffold for campaign `type: faction`, matching the template provided for this feature.
+- **FR-028**: A new or edited faction page MUST include: public face; DM thesis; current state; one active agenda; table-relevant assets, people, places, and relationships; and a faction-turn log. Extra scaffold headings MUST be omitted when unused. Pass is those jobs, not heading-order match.
+- **FR-029**: Layout MUST list jobs for Faction matching FR-028.
+- **FR-030**: A job to write, edit, or create a faction page MUST use `faction-design` as its primary skill.
+- **FR-031**: `faction-prep` MUST be removed. Jobs that previously loaded `faction-prep` MUST load `faction-design` instead.
+- **FR-032**: `faction-design` MUST write Current Turn as the planned next move and MUST NOT roll or canonize the result. `world-tick` MUST remain the owner of faction advancement: it runs the turn and appends the faction-turn log.
+- **FR-033**: The agenda clock for an active faction MUST live on the faction page. `hot.md` MAY point at that faction and MUST NOT store a second clock for it.
 
 ### Key Entities
 
@@ -214,6 +250,10 @@ Skills that teach these pages state what to write and when the page is done. The
 - **Vehicle page**: A named craft note. `type: vehicle`. Sheet, components, crew, handling, combat. Owner: `vehicle-design`.
 - **Spell page**: A named spell note. `type: spell`. Narration, classification, runnable effect. Discovery and Lore when needed. Owner: `spell-design`.
 - **spell-design**: The skill that is primary when writing, editing, or creating a spell page.
+- **Faction page**: A named organization note. `type: faction`. Jobs: public face; DM thesis; current state; one active agenda; table-relevant assets, people, places, and relationships; faction-turn log. Owner: `faction-design`.
+- **faction-design**: The skill that is primary when writing, editing, or creating a faction page. It writes Current Turn as a planned next move and does not roll.
+- **Faction-turn log**: Changed canon from faction advancement, newest first. `world-tick` appends it. `faction-design` does not.
+- **Agenda clock**: Progress toward the faction's current goal, recorded on the faction page. `hot.md` may point at the faction; it does not duplicate the clock.
 
 ## Success Criteria *(mandatory)*
 
@@ -235,13 +275,17 @@ Skills that teach these pages state what to write and when the page is done. The
 - **SC-014**: Two reviewers classify write, edit, and create-content jobs for a spell page and agree `spell-design` is primary for 100% of those jobs.
 - **SC-015**: 100% of Claude Code skill dispatches that occur use Opus 4.6 at medium effort with a prompt that names deliverables plus a completion test. 0% of `AGENTS.md`-only edits or Spec Kit pattern tweaks are dispatched to Claude Code.
 - **SC-016**: After a Claude Code usage-limit stop, 100% of remaining tasks that do not depend on the deferred Claude job are completed in that session; a deferred job is retried with Claude Code only after the recorded retry time, unless the Codex fallback in FR-026 applies. 100% of Codex fallback jobs re-check those gates first; 0% skip Claude Code when it is usable again.
+- **SC-017**: 100% of new faction pages started from `wiki/templates/faction.md` include public face, DM thesis, current state, one active agenda, table-relevant assets/people/places/relationships, and a faction-turn log.
+- **SC-018**: Two reviewers classify write, edit, and create-content jobs for a faction page and agree `faction-design` is primary for 100% of those jobs. 0% of those jobs load `faction-prep`.
+- **SC-019**: 100% of new faction pages have a Current Turn that names a planned next move with no rolled result. After a `world-tick` that includes that faction, 100% of those pages have a new faction-turn log row for the resolved move.
+- **SC-020**: 100% of new active-faction pages that have an independent agenda keep the agenda clock on the page. 0% of those factions have a second clock stored in `hot.md`.
 
 ## Assumptions
 
 - "Type of beat" means the five Beat Chart types (Hook, Development, Cliffhanger, Climax, Resolution), not one skill per subtype card. Cards stay inside their type skill.
 - The current session-beats blob is split into the composition skill plus the five type skills. The blob is not kept beside the split.
 - Method source is *Scripting the Game* (Pondsmith, with concepts from Flint Dille, R. Talsorian Games, 2020), as already adapted for this campaign: Beat Chart rules plus player-agency gates. Skills teach the methods; they do not paste the source text.
-- Session 11 cockpit format, session-folder filing, Work accept-before-wiki, live-beat assembly, theatre of the mind, and encounter/trap/place/monster crafts stay as they are for beats. This feature also adds spell and vehicle wiki kinds: templates, Layout jobs, `vehicle-design` updated to fill the vehicle sheet, and a new `spell-design` skill so those pages are runnable. New skills and major skill redesigns dispatch to Claude Code (minimal prompt, Opus 4.6 medium). `AGENTS.md` tables, templates, and small tweaks to established files stay with the session agent. A Claude Code usage limit defers only that job unless FR-026's Codex fallback applies.
-- Creating content for a beat means filling that beat's jobs (situation, pressure, spoken opening, procedure, landing), then handing off to existing crafts when those crafts own the work, including vehicle and spell pages when a beat needs a named craft or spell.
+- Session 11 cockpit format, session-folder filing, Work accept-before-wiki, live-beat assembly, theatre of the mind, and encounter/trap/place/monster crafts stay as they are for beats. This feature also adds spell, vehicle, and faction wiki kinds: templates, Layout jobs, `vehicle-design` updated to fill the vehicle sheet, a new `spell-design` skill, and a new `faction-design` skill so those pages are runnable. `faction-prep` is removed. `world-tick` is updated to append the faction-turn log and still owns off-screen faction advancement. The faction page owns the agenda clock; `hot.md` may point at the faction and does not store a second clock. New skills and major skill redesigns dispatch to Claude Code (minimal prompt, Opus 4.6 medium). `AGENTS.md` tables, templates, and small tweaks to established files stay with the session agent. A Claude Code usage limit defers only that job unless FR-026's Codex fallback applies.
+- Creating content for a beat means filling that beat's jobs (situation, pressure, spoken opening, procedure, landing), then handing off to existing crafts when those crafts own the work, including vehicle, spell, and faction pages when a beat needs a named craft, spell, or faction.
 - A cold open is not a Hook and is out of scope for the beat skills.
 - Out of scope: rewriting Session 11 to prove the split; Foundry staging; a second pacing system beside the Beat Chart; one skill per beat-subtype card; changing who owns cockpit layout or spoken player text.
