@@ -19,14 +19,14 @@ This skill can be invoked directly or via the `wiki-history-ingest` router (`/wi
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` and `PI_HISTORY_PATH` (defaults to `~/.pi/agent/sessions`)
-2. Read `.manifest.json` at the vault root to check what has already been ingested
+2. Query the ingest ledger with `python3 scripts/manifest.py` (`stats` / `has` / `get` / `delta`) — do **not** read whole `.manifest.json` into context
 3. Read `index.md` at the vault root to understand what the wiki already contains
 
 ## Ingest Modes
 
 ### Append Mode (default)
 
-Check `.manifest.json` for each source file. Only process:
+For each source, use `python3 scripts/manifest.py has`/`get`/`delta`. Only process:
 
 - Files not in the manifest (new sessions)
 - Files whose modification time is newer than `ingested_at` in the manifest
@@ -90,7 +90,7 @@ Skip `model_change`, `thinking_level_change`, `custom` (extension state), and `l
 
 ## Step 1: Survey and Compute Delta
 
-Scan `PI_HISTORY_PATH` and compare against `.manifest.json`:
+Scan `PI_HISTORY_PATH`; compare with `python3 scripts/manifest.py delta`/`has`:
 
 ```bash
 # List all session files
@@ -105,7 +105,7 @@ Build an inventory. For each session file, record:
 - `cwd` — decoded from parent directory name (`--<path>--` → `/path`)
 - `session_name` — from the latest `session_info` entry (if any)
 - `modified_at` — file mtime
-- `already_ingested` — presence in `.manifest.json`
+- `already_ingested` — `scripts/manifest.py has` exits 0
 
 Classify each file:
 - **New** — not in manifest
@@ -228,7 +228,7 @@ Before writing any page, verify the draft against the evidence ledger:
 
 ## Step 5: Update Manifest, Log, and Index
 
-### Update `.manifest.json`
+### Update ingest ledger (`scripts/manifest.py upsert`)
 
 For each processed source file:
 

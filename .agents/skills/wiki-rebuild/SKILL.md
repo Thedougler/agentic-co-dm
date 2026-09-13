@@ -15,7 +15,7 @@ You are performing a destructive operation on the wiki. Always archive first, al
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` and optional QMD settings such as `QMD_WIKI_COLLECTION`
-2. Read `.manifest.json` to understand current state
+2. Use `python3 scripts/manifest.py stats` on the vault — do **not** read whole `.manifest.json` into context
 3. **Confirm the user's intent.** This skill supports three modes:
    - **Archive only** — snapshot current wiki, no rebuild
    - **Archive + Rebuild** — snapshot, then reprocess all sources from scratch

@@ -17,7 +17,7 @@ This skill can be invoked directly or via the `wiki-history-ingest` router (`/wi
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` and `CLAUDE_HISTORY_PATH` (defaults to `~/.claude`)
-2. Read `.manifest.json` at the vault root to check what's already been ingested
+2. Query the ingest ledger with `python3 scripts/manifest.py` (`stats` / `has` / `get` / `delta`) — do **not** read whole `.manifest.json` into context
 3. Read `index.md` at the vault root to know what the wiki already contains
 4. **Project Scoping** — read `WIKI_SKIP_PROJECTS` from config (comma-separated substrings). Exclude any project directory whose name contains one of them from **every** step below (scan, delta, sampling, manifest writes). If the user names extra projects to skip this run, add them. Apply the exclusion **once, uniformly** — don't hand-write `grep -v` filters into individual commands, which drifts between the scan and manifest steps.
 
@@ -25,7 +25,7 @@ This skill can be invoked directly or via the `wiki-history-ingest` router (`/wi
 
 ### Append Mode (default)
 
-Check `.manifest.json` for each source file (conversation JSONL, memory file). Only process:
+For each source, use `python3 scripts/manifest.py has`/`get`/`delta`. Only process:
 
 - Files not in the manifest (new conversations, new memory files, new projects)
 - Files whose modification time is newer than their `ingested_at` in the manifest
@@ -181,7 +181,7 @@ find ~/Library/Application\ Support/Claude/local-agent-mode-sessions -name "*.js
 
 ## Step 1: Survey and Compute Delta
 
-Scan both data locations and compare against `.manifest.json`:
+Scan both data locations; compare with `python3 scripts/manifest.py delta`/`has` (not a whole-file read):
 
 ```bash
 # --- Source 1: CLI sessions (~/.claude) ---
@@ -377,7 +377,7 @@ On update, leave `lifecycle` and `lifecycle_changed` unchanged — only a human 
 
 ## Step 6: Update Manifest, Journal, and Special Files
 
-### Update `.manifest.json`
+### Update ingest ledger (`scripts/manifest.py upsert`)
 
 For each source file processed, add/update its entry with:
 

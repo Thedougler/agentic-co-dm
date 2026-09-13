@@ -17,11 +17,11 @@ You are computing the current state of the wiki: what's been ingested, what's ne
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `OBSIDIAN_SOURCES_DIR`, `CLAUDE_HISTORY_PATH`, and `CODEX_HISTORY_PATH`.
-2. Read `.manifest.json` at the vault root — this is the ingest tracking ledger
+2. Use `python3 scripts/manifest.py stats "$OBSIDIAN_VAULT_PATH"` (then `has`/`get`/`lookup` as needed) — do **not** read whole `.manifest.json`
 
 ## The Manifest
 
-The manifest lives at `$OBSIDIAN_VAULT_PATH/.manifest.json`. It tracks every source file that has been ingested. If it doesn't exist, this is a fresh vault with nothing ingested.
+The ledger file is `$OBSIDIAN_VAULT_PATH/.manifest.json`, but agents must query it via `python3 scripts/manifest.py` only. If `stats` shows empty/missing, this is a fresh vault.
 
 > **Source keys are canonical absolute paths** (`~` and env vars expanded). Never mix `~`-relative and absolute keys — the same file would be tracked twice and re-ingested. See `llm-wiki/SKILL.md` → `.manifest.json`. Repair a mixed manifest with `scripts/manifest.py normalize <vault>`.
 
