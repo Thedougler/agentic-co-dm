@@ -23,6 +23,10 @@
 - Q: Which skill is primary when creating or editing a faction wiki page? → A: New `faction-design` skill is primary. Remove `faction-prep`.
 - Q: Who fills and advances the faction-turn log on a faction page? → A: `faction-design` writes Current Turn as the planned next move, no roll. `world-tick` runs the turn and writes the log.
 - Q: Where does an active faction’s clock live so it does not drift? → A: Page clock is the owner. `hot.md` may point at the faction; it must not store a second clock.
+- Q: What must a new or edited lore wiki page contain to pass? → A: One durable question per note; At a Glance (core truth + why it matters); Current Truth; At the Table (what players notice, what this explains/enables/warns). Other headings omit-if-unused.
+- Q: Which skill is primary when creating or editing a lore wiki page? → A: New `lore-design` skill is primary for write/edit/create of a lore page.
+- Q: After `type: lore` exists, what should happen to the current ingest rule that maps a `lore` label to `item`? → A: Remove `lore`→`item`. World-truth notes use `type: lore`. Actual items stay `item`.
+- Q: Who writes the Canon Log when established lore changes after play? → A: Lore is not canon until players interact with or witness it; until then the DM may change it freely. `lore-design` omits Canon Log until play has a change to record. `session-wrapup` / `reconciling-session-evidence` append the log and update Current Truth.
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -171,6 +175,29 @@ A faction page is runnable at the table when it has: public face; DM thesis; cur
 4. **Given** `faction-design` after this feature, **When** an author follows it, **Then** it tells them to fill those jobs as part of the page. **Given** a job that previously would have loaded `faction-prep`, **When** the author starts, **Then** they load `faction-design` and `faction-prep` is not present.
 5. **Given** a new faction page, **When** `faction-design` finishes, **Then** Current Turn names the planned next move and no roll has been made. **Given** a later `world-tick`, **When** that faction can affect current play, **Then** `world-tick` resolves the move and appends the faction-turn log.
 6. **Given** an active faction with an independent agenda, **When** the page is written, **Then** the agenda clock is on that page. **Given** `hot.md`, **When** it mentions that faction, **Then** it points at the page and does not keep a duplicate clock.
+---
+
+### User Story 8 - Lore wiki pages use the new template (Priority: P2)
+
+A Co-DM creates or edits a named **lore** campaign page. They start from `wiki/templates/lore.md` (the scaffold provided for this feature). `lore-design` is primary for that page. Layout lists jobs for that kind. Pass is those jobs, not heading-order match. Omit unused sections.
+
+One lore note answers one durable question about the world. Unrelated truths are split into linked notes. A lore page is runnable at the table when it has: At a Glance (core truth and why it matters); Current Truth; and At the Table (what players notice, and what this explains, enables, or warns). Extra headings in the scaffold — Accounts, Discovery, History, Canon Log, and the rest — are omitted when unused.
+
+`lore-design` states what to write and when the page is done. It describes work that has not been done yet as the work to do now. Lore is not canon until players interact with or witness it at the table; until then the DM may change it freely and Canon Log is omitted. After that, `session-wrapup` or `reconciling-session-evidence` updates Current Truth and appends the Canon Log. `lore-design` does not invent table history.
+
+**Why this priority**: Campaign `type` does not currently include `lore`, and ingest still maps old `lore` labels to `item`. There is no lore skill. Without a template, Layout jobs, a primary skill, and a real `type: lore`, lore becomes encyclopedia pages or gets filed as items.
+
+**Independent Test**: Give an author a job to create a named lore note. `lore-design` is primary. The page starts from `wiki/templates/lore.md`, answers one durable question, and includes At a Glance, Current Truth, and At the Table. A reviewer can run the note at the table without another format guide.
+
+**Acceptance Scenarios**:
+
+1. **Given** a job to create or edit a named lore note, **When** the author writes the wiki page, **Then** `lore-design` is primary, they copy `wiki/templates/lore.md`, and they fill At a Glance (core truth + why it matters), Current Truth, and At the Table (notice / explains / enables / warns).
+2. **Given** that page, **When** unused scaffold headings have no play-relevant content, **Then** they are omitted.
+3. **Given** two unrelated truths, **When** they would share one page, **Then** they are split into linked notes instead.
+4. **Given** `wiki/AGENTS.md`, **When** an author classifies the page, **Then** `type` may be `lore`, and Layout lists jobs for Lore.
+5. **Given** `lore-design` after this feature, **When** an author follows it, **Then** it tells them to fill those jobs as part of the page.
+6. **Given** ingest after this feature, **When** a world-truth note is labeled `lore`, **Then** it is filed as `type: lore`, not remapped to `item`. **Given** a page that is actually an item, **When** it was previously labeled `lore`, **Then** it stays `item`.
+7. **Given** a lore page the players have not interacted with or witnessed, **When** the DM changes it, **Then** it is not `canon`, the change needs no Canon Log, and the DM may change it freely. **Given** a later session where the party interacts with or witnesses that lore, **When** wrapup or reconcile runs, **Then** Current Truth is updated if needed and a Canon Log row is appended.
 
 ### Edge Cases
 
@@ -186,12 +213,14 @@ A faction page is runnable at the table when it has: public face; DM thesis; cur
 - After this feature, no remaining single skill contains the full chart plus all five type-card catalogs.
 - Existing Session 11 beats and spines are not rewritten solely to prove the split.
 - Companion notes (hazards tables) are not typed beats and do not load type skills.
-- Unused template sections on a new spell, vehicle, or faction page are omitted; filled jobs stay.
-- A beat that needs a named craft, spell, or faction hands off to that wiki kind; the beat skill still owns the beat.
-- Existing faction pages are not rewritten solely to prove the new template.
+- Unused template sections on a new spell, vehicle, faction, or lore page are omitted; filled jobs stay.
+- Ingest MUST NOT map `lore` to `item`. World-truth notes use `type: lore`. Actual items stay `item`.
+- A beat that needs a named craft, spell, faction, or lore note hands off to that wiki kind; the beat skill still owns the beat.
+- Existing faction pages are not rewritten solely to prove the new template. Existing pages labeled `lore` that are actually items stay `item`; they are not rewritten solely to prove the lore template.
 - A job that previously loaded `faction-prep` loads `faction-design` instead. `faction-prep` is not kept as a stub.
 - `faction-design` does not roll or canonize a future move. `world-tick` remains the advancement ritual and writes the log.
 - The faction page owns the agenda clock. `hot.md` may link to the faction and MUST NOT keep a second clock.
+- Lore is not `canon` until players interact with or witness it. Until then the DM may change it freely and Canon Log is omitted. `lore-design` does not invent table history. `session-wrapup` and `reconciling-session-evidence` append the Canon Log after play.
 - Claude Code usage limit: defer that Claude-dependent task until Claude Code is available; complete remaining tasks that do not depend on it. If every remaining open task is blocked by that limit, no other work can be done, and the retry time on the blocked task is more than one hour away, the session agent MAY instead send the same tightly scoped skill-writing prompt to the Codex CLI at ChatGPT 5.5 medium. Re-check those gates before each remaining blocked skill job; prefer Claude Code if it is usable again.
 
 ## Requirements *(mandatory)*
@@ -231,6 +260,12 @@ A faction page is runnable at the table when it has: public face; DM thesis; cur
 - **FR-031**: `faction-prep` MUST be removed. Jobs that previously loaded `faction-prep` MUST load `faction-design` instead.
 - **FR-032**: `faction-design` MUST write Current Turn as the planned next move and MUST NOT roll or canonize the result. `world-tick` MUST remain the owner of faction advancement: it runs the turn and appends the faction-turn log.
 - **FR-033**: The agenda clock for an active faction MUST live on the faction page. `hot.md` MAY point at that faction and MUST NOT store a second clock for it.
+- **FR-034**: `wiki/templates/lore.md` MUST be the scaffold for campaign `type: lore`, matching the template provided for this feature.
+- **FR-035**: A new or edited lore page MUST answer one durable question and MUST include: At a Glance (core truth and why it matters); Current Truth; and At the Table (what players notice, and what this explains, enables, or warns). Extra scaffold headings MUST be omitted when unused. Pass is those jobs, not heading-order match. Unrelated truths MUST be split into linked notes.
+- **FR-036**: Campaign `type` MUST include `lore`. Layout MUST list jobs for Lore matching FR-035.
+- **FR-037**: A job to write, edit, or create a lore page MUST use `lore-design` as its primary skill.
+- **FR-038**: The ingest remap `lore`→`item` MUST be removed. World-truth notes MUST use `type: lore`. Pages that are actually items MUST stay `item`.
+- **FR-039**: A lore page MUST NOT be `canon` until players interact with or witness it at the table. Until then the DM MAY change it freely, and Canon Log MUST be omitted. After that interaction or witnessing, `session-wrapup` or `reconciling-session-evidence` MUST update Current Truth when it changed and MUST append the Canon Log. `lore-design` MUST NOT invent table history.
 
 ### Key Entities
 
@@ -254,6 +289,9 @@ A faction page is runnable at the table when it has: public face; DM thesis; cur
 - **faction-design**: The skill that is primary when writing, editing, or creating a faction page. It writes Current Turn as a planned next move and does not roll.
 - **Faction-turn log**: Changed canon from faction advancement, newest first. `world-tick` appends it. `faction-design` does not.
 - **Agenda clock**: Progress toward the faction's current goal, recorded on the faction page. `hot.md` may point at the faction; it does not duplicate the clock.
+- **Lore page**: A named world-truth note. `type: lore`. One durable question. Jobs: At a Glance; Current Truth; At the Table. Extra headings omit-if-unused. Owner: `lore-design`. Not an `item`.
+- **lore-design**: The skill that is primary when writing, editing, or creating a lore page. It does not invent table history or mark lore `canon`.
+- **Canon Log**: How established lore changed at the table. Written by `session-wrapup` or `reconciling-session-evidence` after players interact with or witness the lore. Omitted until then.
 
 ## Success Criteria *(mandatory)*
 
@@ -279,13 +317,17 @@ A faction page is runnable at the table when it has: public face; DM thesis; cur
 - **SC-018**: Two reviewers classify write, edit, and create-content jobs for a faction page and agree `faction-design` is primary for 100% of those jobs. 0% of those jobs load `faction-prep`.
 - **SC-019**: 100% of new faction pages have a Current Turn that names a planned next move with no rolled result. After a `world-tick` that includes that faction, 100% of those pages have a new faction-turn log row for the resolved move.
 - **SC-020**: 100% of new active-faction pages that have an independent agenda keep the agenda clock on the page. 0% of those factions have a second clock stored in `hot.md`.
+- **SC-021**: 100% of new lore pages started from `wiki/templates/lore.md` answer one durable question and include At a Glance (core truth + why it matters), Current Truth, and At the Table (notice / explains / enables / warns).
+- **SC-022**: Two reviewers classify write, edit, and create-content jobs for a lore page and agree `lore-design` is primary for 100% of those jobs.
+- **SC-023**: After this feature, 0% of newly ingested world-truth notes labeled `lore` are remapped to `item`. 100% of pages that are actually items remain `type: item`.
+- **SC-024**: 0% of lore pages the party has not interacted with or witnessed are `canon`. After wrapup or reconcile of a session where the party did interact with or witness that lore, 100% of those pages that changed have a new Canon Log row.
 
 ## Assumptions
 
 - "Type of beat" means the five Beat Chart types (Hook, Development, Cliffhanger, Climax, Resolution), not one skill per subtype card. Cards stay inside their type skill.
 - The current session-beats blob is split into the composition skill plus the five type skills. The blob is not kept beside the split.
 - Method source is *Scripting the Game* (Pondsmith, with concepts from Flint Dille, R. Talsorian Games, 2020), as already adapted for this campaign: Beat Chart rules plus player-agency gates. Skills teach the methods; they do not paste the source text.
-- Session 11 cockpit format, session-folder filing, Work accept-before-wiki, live-beat assembly, theatre of the mind, and encounter/trap/place/monster crafts stay as they are for beats. This feature also adds spell, vehicle, and faction wiki kinds: templates, Layout jobs, `vehicle-design` updated to fill the vehicle sheet, a new `spell-design` skill, and a new `faction-design` skill so those pages are runnable. `faction-prep` is removed. `world-tick` is updated to append the faction-turn log and still owns off-screen faction advancement. The faction page owns the agenda clock; `hot.md` may point at the faction and does not store a second clock. New skills and major skill redesigns dispatch to Claude Code (minimal prompt, Opus 4.6 medium). `AGENTS.md` tables, templates, and small tweaks to established files stay with the session agent. A Claude Code usage limit defers only that job unless FR-026's Codex fallback applies.
-- Creating content for a beat means filling that beat's jobs (situation, pressure, spoken opening, procedure, landing), then handing off to existing crafts when those crafts own the work, including vehicle, spell, and faction pages when a beat needs a named craft, spell, or faction.
+- Session 11 cockpit format, session-folder filing, Work accept-before-wiki, live-beat assembly, theatre of the mind, and encounter/trap/place/monster crafts stay as they are for beats. This feature also adds spell, vehicle, faction, and lore wiki kinds: templates, Layout jobs, `vehicle-design` updated to fill the vehicle sheet, a new `spell-design` skill, a new `faction-design` skill, and a new `lore-design` skill so those pages are runnable. `faction-prep` is removed. The ingest remap `lore`→`item` is removed. `world-tick` is updated to append the faction-turn log and still owns off-screen faction advancement. The faction page owns the agenda clock; `hot.md` may point at the faction and does not store a second clock. Lore pages use `wiki/templates/lore.md` and the FR-035 jobs. Lore is not canon until players interact with or witness it; wrapup/reconcile then own Current Truth updates and the Canon Log. New skills and major skill redesigns dispatch to Claude Code (minimal prompt, Opus 4.6 medium). `AGENTS.md` tables, templates, and small tweaks to established files stay with the session agent. A Claude Code usage limit defers only that job unless FR-026's Codex fallback applies.
+- Creating content for a beat means filling that beat's jobs (situation, pressure, spoken opening, procedure, landing), then handing off to existing crafts when those crafts own the work, including vehicle, spell, faction, and lore pages when a beat needs a named craft, spell, faction, or lore note.
 - A cold open is not a Hook and is out of scope for the beat skills.
 - Out of scope: rewriting Session 11 to prove the split; Foundry staging; a second pacing system beside the Beat Chart; one skill per beat-subtype card; changing who owns cockpit layout or spoken player text.
