@@ -65,10 +65,10 @@ Give a job to create a spell. Primary skill is `spell-design`. Page starts from 
 
 Fail if the vehicle page has no sheet. Fail if the spell job is classified as `session-beats` or `dnd-5e-magic-item-design`.
 
-## 8. Claude Code dispatch (SC-015)
+## 8. Claude Code dispatch (SC-015, SC-016)
 
-A skill-update dispatch for this feature uses `claude-opus-4-6 --effort medium`. The prompt names deliverables and a completion test.
+Claude Code runs only for a new skill or a major skill redesign. Those dispatches use `claude-opus-4-6 --effort medium`. The prompt names deliverables and a completion test. `AGENTS.md` and template installs are session-agent work.
 
-Fail if the dispatch uses the `opus` alias, default Opus, or `--effort high`.
+Fail if those dispatches use the `opus` alias, default Opus, or `--effort high`. Fail if an `AGENTS.md`-only edit was sent to Claude Code. After a usage-limit stop, independent tasks still completed.
 
 Pass: steps 1–8 hold.

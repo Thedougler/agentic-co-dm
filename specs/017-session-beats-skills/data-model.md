@@ -124,4 +124,4 @@ Theatre of the mind owns `[!narration]`. Omit unused sections.
 
 ## Dispatch prompt
 
-Claude Code skill-update jobs: model `claude-opus-4-6`, `--effort medium`. Prompt names Outcome, Files, Bounds, Job, deliverables, completion criteria.
+Claude Code runs only for novel skill design, skill redesign, or a major skill-file change. Model `claude-opus-4-6`, `--effort medium`. Prompt names Outcome, Files, Bounds, Job, deliverables, completion criteria. Usage limit: defer that job; complete remaining independent tasks.

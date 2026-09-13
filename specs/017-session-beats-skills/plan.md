@@ -10,7 +10,7 @@ Split the `session-beats` blob. Keep `session-beats` as the composition skill (p
 
 Also add campaign wiki kinds `vehicle` and `spell`: install `wiki/templates/vehicle.md` and `wiki/templates/spell.md`, list them in `wiki/AGENTS.md` Layout, update `vehicle-design` to fill the 5e sheet, create `spell-design` as primary for spell pages. Skills state what to write and when the page is done.
 
-Design-impact skill updates dispatch to Claude Code with a minimal prompt (`Outcome` / `Files` / `Bounds` / `Job`, deliverables, completion criteria) at `claude-opus-4-6 --effort medium`.
+Claude Code only for novel skills, skill redesigns, or major skill-file changes (`claude-opus-4-6 --effort medium`, minimal prompt). Session agent lands `AGENTS.md`, wiki templates, Layout jobs, Spec Kit pattern tweaks, and small edits to established files. A usage limit defers only the Claude-dependent task; independent work continues.
 
 ## Technical Context
 
@@ -26,9 +26,9 @@ Design-impact skill updates dispatch to Claude Code with a minimal prompt (`Outc
 
 **Project Type**: Agent skill pack + standing instructions + wiki templates.
 
-**Performance Goals**: SC-001 — two reviewers agree on 100% of at least 15 primary-skill beat jobs. SC-007 — 0 skills contain both the full Beat Chart and all five type-card catalogs. SC-015 — skill-update dispatches use Opus 4.6 medium with a minimal prompt.
+**Performance Goals**: SC-001 — two reviewers agree on 100% of at least 15 primary-skill beat jobs. SC-007 — 0 skills contain both the full Beat Chart and all five type-card catalogs. SC-015 — Claude Code, when used, is Opus 4.6 medium with a minimal prompt. SC-016 — usage-limit stop still completes independent tasks.
 
-**Constraints**: FR-004 five beat types, not one skill per card. FR-013/014 cockpit, Work, assembly keep owners. FR-016 no Session 11 rewrite. FR-019–024 wiki kinds and positive skill text. FR-025 Claude Code dispatch. Constitution I domain language. Constitution VII jobs and done-when, not a plot or voice. Constitution IX one SoT; no seventh beat router. Constitution X git/context autonomy; exclusive writer `claude-opus-4-6 --effort medium`.
+**Constraints**: FR-004 five beat types, not one skill per card. FR-013/014 cockpit, Work, assembly keep owners. FR-016 no Session 11 rewrite. FR-019–024 wiki kinds and positive skill text. FR-025 Claude Code only when necessary. FR-026 usage-limit deferral. Constitution I domain language. Constitution VII jobs and done-when. Constitution IX one SoT; no seventh beat router. Constitution X git/context autonomy; exclusive writer `claude-opus-4-6 --effort medium` when Claude is used (1.5.1).
 
 **Scale/Scope**: One composition skill (existing, slimmed). Five new beat type skills. One `spell-design` skill. `vehicle-design` updated. Two wiki templates. `wiki/AGENTS.md` type + Layout. One `AGENTS.md` beat routing table. Pointer retargets on beat callers. No `src/`. Leave `.agents/skills/writing-beats` (article journey) as it is.
 
@@ -47,7 +47,7 @@ Design-impact skill updates dispatch to Claude Code with a minimal prompt (`Outc
 | VII. Do not suffocate agents | Pass — skills name jobs and completion tests. No beat-router skill. `spell-design` is the spell-page owner, same shape as `vehicle-design`. |
 | VIII. Safe automation runs unattended | Pass — no new agent chore. |
 | IX. Design trends toward token efficiency | Pass — split catalogs; one routing table; minimal Claude Code prompts. |
-| X. Agents act autonomously by default | Pass — no human gate for commit/push/context. Design-impact dispatches at Opus 4.6 medium. |
+| X. Agents act autonomously by default | Pass — no human gate for commit/push/context. Claude Code only when necessary. Usage limit defers that job; independent work continues. |
 
 **Post-design re-check**: still pass. Complexity table empty.
 

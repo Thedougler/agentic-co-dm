@@ -30,7 +30,7 @@ A beat that needs a named craft or a spell hands off to that owner. The beat ski
 
 ## Claude Code skill updates
 
-Dispatch: `claude -p --model claude-opus-4-6 --effort medium`. Prompt is minimal, focused, and direct. It names deliverables and a completion test.
+Claude Code only for novel `spell-design` and a `vehicle-design` redesign. Dispatch: `claude -p --model claude-opus-4-6 --effort medium`. Prompt is minimal; names deliverables and a completion test. Templates and `wiki/AGENTS.md` Layout are session-agent work. Usage limit: defer the Claude job; complete independent tasks.
 
 ## Out of contract
 

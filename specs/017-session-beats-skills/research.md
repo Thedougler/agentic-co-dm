@@ -42,11 +42,11 @@
 
 **Alternatives considered**: Routing only in skill descriptions (misses sessions that do not match). Duplicate table in `.omp/AGENTS.md` (Constitution IX). New `docs/agents/session-beats.md` procedure file (extra hop for a table that fits in `AGENTS.md`).
 
-## Decision: Implementation is design-impact
+## Decision: Claude Code only for novel or major skill work
 
-**Rationale**: Creating beat type skills, changing `session-beats` trigger/ownership/standing load, creating `spell-design`, and changing `vehicle-design` ownership are 016 bullets. Session agent writes a minimal scoped prompt (Outcome, Files, Bounds, Job, deliverables, completion criteria); designated writer lands the skills at `claude -p --model claude-opus-4-6 --effort medium`. Pointer retargets that only swap a skill name without changing who does the step may be `not` — classify per 016. Installing wiki templates and adding Layout jobs in `wiki/AGENTS.md` is standing campaign convention: session agent may land those if they are not skill files. Spec, plan, and this research are out of scope for dispatch.
+**Rationale**: FR-025 / constitution 1.5.1. New type skills, `spell-design`, and a `session-beats` or `vehicle-design` redesign are Claude Code jobs (`claude-opus-4-6 --effort medium`, minimal prompt). Session agent lands `AGENTS.md`, wiki templates, `wiki/AGENTS.md` Layout, pointer retargets, and Spec Kit pattern tweaks. Conserve Claude Code.
 
-**Alternatives considered**: Session agent drafts the skills (016 FR-007 fail). One unbounded rewrite of every pacing skill (scoped-prompt bound fail). `opus` alias / default Opus / `--effort high` (constitution 1.4.1: exclusive writer is Opus 4.6 medium).
+**Alternatives considered**: Dispatch every standing-load edit (wastes quota). Session agent drafts new skills (016 fail for novel design). `opus` alias / `--effort high` (superseded).
 
 ## Decision: Quickstart observes routing, not file internals
 
@@ -66,8 +66,14 @@
 
 **Alternatives considered**: Keep “leave HP/speed blank” as a standing ban (contradicts the template). Extra exception lists instead of jobs.
 
+## Decision: Usage limit defers only the Claude job
+
+**Rationale**: FR-026 / SC-016. Restore Claude targets, record retry time, complete remaining tasks that do not depend on that job.
+
+**Alternatives considered**: Halt the whole implement (leaves independent wiki/AGENTS.md work undone). Session agent writes the novel skill anyway (016 fail).
+
 ## Decision: Claude Code skill updates use a minimal prompt and Opus 4.6 medium
 
-**Rationale**: FR-025 / constitution 1.4.1. Token-efficient dispatch. Default model is `claude-opus-4-6` at `--effort medium`. Prompt names deliverables and a completion test.
+**Rationale**: FR-025. When Claude Code runs, default model is `claude-opus-4-6` at `--effort medium`. Prompt names deliverables and a completion test.
 
 **Alternatives considered**: `--effort high` (superseded). `opus` alias (default Opus). Long pasted spec/plan in the writer prompt (IX).
