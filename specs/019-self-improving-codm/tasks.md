@@ -295,3 +295,4 @@ T033 wiki/templates/dm-intelligence.md type work
 
 - [X] T039 Remove `scripts/after-write` and every reference to it from maintained skills and skill evaluations; retain current filing and check guidance (FR-049).
 - [X] T040 Run a repository-wide reference scan and the feature fixture check, confirming no maintained skill or evaluation retains the removed command and all existing scenarios still pass (SC-031).
+- [ ] T041 Dispatch the designated writer to reconcile explicit imperative wiki-file requests with the Work acceptance gate in `docs/agents/work.md` and the maintained prose skills; Claude usage-limit wait recorded 2026-09-13, retry at 16:10 America/Vancouver.
