@@ -1,3 +1,16 @@
+<!--
+Sync Impact Report
+- Version change: 1.10.1 → 1.11.0
+- Modified principles:
+  - XI. Designated Writer Work Has Bounded Concurrency (expanded: session agent MAY write design-impact when both Claude Code and Codex are usage-limited)
+- Added sections: none
+- Removed sections: none
+- Other modified sections:
+  - Agent Operating Constraints (session-agent write is last-resort after both designated writers report usage limits)
+  - Governance / Compliance (same last-resort exception)
+- Follow-up TODOs: none
+-->
+
 # Agentic Co-DM Constitution
 
 ## Core Principles
@@ -177,12 +190,17 @@ another governance rule forbids it. Deferred designated-writer tasks MUST
 remain incomplete on the feature `tasks.md` with a retry time. Completing
 other or new work during a usage-limit wait MUST NOT drop, close, or omit
 those tasks; they MUST be carried over and retried only after the recorded
-time, except where the Codex fallback below applies.
+time, except where the Codex fallback or session-agent usage-limit
+fallback below applies. When both Claude Code and Codex are unavailable
+due to usage limits, the session agent MAY write the deferred
+design-impact change. The session agent MUST NOT write design-impact work
+while either designated writer is usable.
 
 Rationale: bounded Claude Code concurrency uses available capacity without
 allowing competing edits to the same artifact. Codex remains serialized
 and isolated from Claude Code. Carry-over keeps deferred work findable on
-the Spec Kit task list when other work lands.
+the Spec Kit task list when other work lands. Session-agent write is last
+resort when both designated writers are usage-limited.
 
 ## Agent Operating Constraints
 
@@ -220,10 +238,14 @@ the Spec Kit task list when other work lands.
   on the blocked task is more than one hour away, the session agent MAY
   invoke the Codex CLI at ChatGPT 5.5 medium with the same tightly scoped
   skill-writing prompt. Codex MUST NOT run concurrently with Claude Code.
-  The session agent MUST NOT write the design-impact change itself. Before
-  each remaining blocked skill job, the session agent MUST re-check those
-  gates and MUST prefer Claude Code if it is usable again. Retry after the
-  recorded time unless that Codex fallback applied.
+  If that Codex invocation is itself unavailable due to a usage limit, and
+  Claude Code remains unavailable due to a usage limit, the session agent
+  MAY write the design-impact change itself. Otherwise the session agent
+  MUST NOT write the design-impact change itself. Before each remaining
+  blocked skill job, the session agent MUST re-check those gates and MUST
+  prefer Claude Code if it is usable again, then Codex if Claude Code is
+  still usage-limited. Retry after the recorded time unless that Codex
+  fallback or session-agent fallback applied.
 
 ## Development Workflow
 
@@ -289,8 +311,10 @@ Compliance:
   MUST remain on the feature `tasks.md` with a retry time when other work
   completed during the wait, and Codex fallback may run only when every
   remaining open task was blocked, no other work could be done, and the
-  retry time was more than one hour away.
+  retry time was more than one hour away. Session-agent write of a
+  design-impact change is allowed only when both Claude Code and Codex
+  were unavailable due to usage limits under those same gates.
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.10.1 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
+**Version**: 1.11.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
