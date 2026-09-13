@@ -81,7 +81,7 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 
 - [X] T005 [P] [US2] Create `.agents/skills/hook-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Party has committed to a response to the opening pressure. One Hook per session." Include Play a Cliffhanger as Hook and Play a Development as Hook as Hook cards.
 - [X] T006 [P] [US2] Create `.agents/skills/development-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Players can name what they now know or can decide that they could not before."
-- [ ] T007 [P] [US2] Create `.agents/skills/cliffhanger-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "The contest resolved; physical situation (position, resources, safety, time) changed." Retry after 2026-09-12 18:30 America/Vancouver.
+- [X] T007 [P] [US2] Create `.agents/skills/cliffhanger-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "The contest resolved; physical situation (position, resources, safety, time) changed."
 - [ ] T008 [P] [US2] Create `.agents/skills/climax-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Highest-stakes confrontation the middle made inevitable; threads harvested." Retry after 2026-09-12 18:30 America/Vancouver.
 - [ ] T009 [P] [US2] Create `.agents/skills/resolution-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Players can name what is different and what they want next." Retry after 2026-09-12 18:30 America/Vancouver.
 
