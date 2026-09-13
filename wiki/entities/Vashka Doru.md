@@ -1,8 +1,9 @@
 ---
 title: "Vashka Doru"
 category: entities
-tags: ["shattered-sea", "npc", "maritime"]
+tags: [npc, shattered-sea, maritime]
 sources:
+  - "wiki/_archive/vashka-doru.md"
   - "campaign-os:vashka-doru.md"
 created: 2026-09-13
 updated: 2026-09-13
@@ -11,26 +12,70 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: contact
+location: "[[Sparhold]]"
 visibility: dm
-summary: "Tavern keeper and watch-post sentinel in Sparhold, keeping decades of harbor records and a secret about one of Delmar's captains."
+summary: "Sparhold tavern-and-watch keeper. Forty years of harbor tallies, and one ship she has not told the families about."
 provenance:
-  extracted: 0.85
-  inferred: 0.10
-  ambiguous: 0.05
+  extracted: 0.95
+  inferred: 0.05
+  ambiguous: 0.00
 base_confidence: 0.55
 tier: supporting
 ---
 # Vashka Doru
 
-**Wants:** maintain the quiet arrangement that lets her run both tavern and watch-post without becoming a trophy in the families' succession duel, before the Challenge Bell sounds often enough that one side claims her as an asset.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-> [!narration] Narration
-> The loft is all chalk dust and lamplight, the tally slates for the Challenge Bell duels hung in neat rows along one wall. Vashka sits at a scarred table with a ledger and a brass spyglass, her weathered hands already reaching for a fresh slate before the latest duel-bell has finished its toll. She doesn't look up, doesn't flinch at the sound. She just marks down another outcome with the economy of someone who's heard that bell ring two hundred times and knows she'll hear it two hundred more. Salt-and-pepper hair pulled back hard, lines around her eyes that read as patience, not concern. She's dressed for work: linen shirt with grease stains, apron, a slate pencil tucked behind one ear. The crossbow rack mounted above her head holds three quarrels at ready, and her eyes flick downward to the harbor (to the ships riding at anchor, the channels between them) with the focus of someone reading a book she knows by heart, checking for the one page someone's torn out.
+| **Role**   | Tavern keeper and watch-post sentinel |
+| ---------- | ------------------------------------- |
+| **Nature** | Patient tally, not a trophy |
+| **Home**   | The loft above [[Sparhold]] harbor |
+| **Wants**  | Keep running both tavern and watch without becoming an asset in the families' succession duel. |
+
+> **DM thesis:** She reads the harbor the way other people read a book they already know, watching for the torn page.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Vashka Doru
+> Chalk dust and lamplight. Tally slates for Challenge Bell duels hang in neat rows. A woman sits at a scarred table with a ledger and a brass spyglass. Weathered hands reach for a fresh slate before the latest bell has finished. Salt-and-pepper hair is pulled back hard. Lines at the eyes read as patience. Linen shirt, grease stains, apron, a slate pencil behind one ear. Three quarrels sit ready in the crossbow rack above her head. Her eyes go down to the ships and the channels between them.
+```
+````
+
+## Running Vashka Doru
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+She does not look up for the bell. She marks the outcome and goes back to the harbor. No sample line is on file.
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+One side in the succession duel trying to claim her as an asset. Or [[Delmar Fisk]] walking in, because the ship she has not reported is his to hear.
+```
+````
 
 ## Relationships
 
-**[[Delmar Fisk]].** Forty years of reading [[Sparhold]]'s harbor have taught Vashka to know what doesn't fit. Three weeks ago, the *Siren's Debt* appeared at the western pier. She hadn't seen this ship in seventeen years. It once belonged to Captain Theln Arest, one of the five souls Delmar carries.
+| Relationship | Meaning |
+| ------------ | ------- |
+| [[Sparhold]] | Forty years of this harbor. |
+| [[Delmar Fisk]] | She has not told either family. He should know. |
+| [[Bell-Tone Draught]] | She keeps four vials in the table drawer for nights when a count cannot be lost. |
 
-Now the ship docks after midnight with minimal crew and no manifest. She keeps a tally slate: exact dates, exact times. The same figure who appears each time is a person in a merchant's coat, never a sailor's walk.
-
-Vashka hasn't told either family in Sparhold's succession duel. But Delmar should know: something tethers to the *Siren's Debt*, and it moves through her harbor.
+> [!secret] Siren's Debt
+> Three weeks ago the *Siren's Debt* came to the western pier. She had not seen it in seventeen years. It once belonged to Captain Theln Arest, one of the five souls Delmar carries. It docks after midnight with a thin crew and no manifest. The same figure in a merchant's coat, never a sailor's walk. She keeps dates and times on a slate.

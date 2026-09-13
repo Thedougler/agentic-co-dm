@@ -1,10 +1,12 @@
 ---
 title: "Nico Renzetti"
 category: entities
-tags: ["shattered-sea", "npc"]
+tags: [npc, shattered-sea]
 sources:
-  - "campaign-os:nico-renzetti-narration-appearance.md"
+  - "wiki/_archive/nico-renzetti.md"
+  - "wiki/_archive/nico-renzetti-narration-appearance.md"
   - "campaign-os:nico-renzetti.md"
+  - "campaign-os:nico-renzetti-narration-appearance.md"
 created: 2026-09-13
 updated: 2026-09-13
 type: npc
@@ -12,45 +14,72 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: contact
+location: "[[Sparhold]]"
+faction: "[[House Renzetti]]"
 visibility: dm
-summary: "A lean man in his twenties, jaw set, checking a blade's edge over and over when nobody is watching."
+summary: "House Renzetti's coerced champion. He doubts the death-duel his family already rang the bell for."
 provenance:
-  extracted: 0.85
-  inferred: 0.10
-  ambiguous: 0.05
-base_confidence: 0.55
+  extracted: 0.95
+  inferred: 0.05
+  ambiguous: 0.00
+base_confidence: 0.58
 tier: supporting
 ---
-
 # Nico Renzetti
 
-**Wants:** survive the duel with his honor intact — or fail that, die on terms he chose rather than ones his family chose for him; but Ottavia's command and family honor leave him no way to refuse or back out.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-![[nico-renzetti-narration-appearance]]
+| **Role**   | Compelled champion |
+| ---------- | ------------------ |
+| **Nature** | Forced confidence over real fear |
+| **Home**   | [[Sparhold]] |
+| **Wants**  | Survive the duel with honor intact, or die on terms he chose. [[Ottavia Renzetti]] left him no refusal. |
 
-## Stats & Combat
+> **DM thesis:** He is already in the bell. The fear is the tell, not the speech.
+```
 
-![[commoner#Stats & Combat]]
+```col-md
+flexGrow=1
+===
+> [!narration] Nico Renzetti
+> A lean man in his twenties, sharp-featured, jaw set, shoulders squared like someone who memorized unafraid. His hands give him away. Thumb to the edge, pull back, half-sheathe, check again. Oil is already on the thumb. He wipes it on the trouser seam and starts over the moment nobody is watching.
+```
+````
 
-## Toy Chest
+## Running Nico Renzetti
 
-| Field | Value |
-|---|---|
-| primary_goal | survive the duel, or fail that, die on terms he chose rather than ones his family chose for him |
-| consistent_method | obeys Ottavia openly, doubts privately — keeps the fear masked in public, never voices it where family can hear |
-| active_problem | cannot refuse the duel without shaming himself and House Renzetti, and the bell has already rung — there's no way out once it tolls |
-| performance_hooks | *Vibe:* forced confidence over real fear. *Tic:* checks his weapon's edge and sheaths/unsheathes it needlessly when the fear surfaces. |
-| link_of_relevance | a PC who reads a room or a fighter's readiness is the one who can catch what he's hiding before the bell tolls |
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
 
-## Voice & Delivery Notes
+Public voice is clipped and formal. Unwatched, he goes quiet. Sample: "The bell's already rung. After it rings, there's only one way out."
+```
 
-- *Speech pattern:* clipped and formal in public (family honor voice), but hesitant and quieter when unwatched.
-- *Physical mannerism:* checks his weapon's edge repeatedly, sheaths and unsheathes it needlessly — a tic that betrays the fear beneath the forced confidence.
-- *Emotional default:* controlled panic beneath a rehearsed veneer.
-- *A moment of honesty:* "The bell's already rung. After it rings, there's only one way out." — not quite resignation, but a man weighing his limited choices.
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+A PC who reads a fighter's readiness can catch the tic before the bell. Refusal in front of family is closed once it has tolled. A halfhearted loss costs [[House Renzetti]] everything.
+```
+````
 
 ## Relationships
 
-**[[Ottavia Renzetti]]** (House Head, Compeller). Ottavia bound him into service through family honor and duty. He cannot refuse her face to face; once the challenge bell rings, refusal ends. If he loses halfheartedly, House Renzetti loses everything, and Ottavia's claim to Sparhold collapses with it.
+| Relationship | Meaning |
+| ------------ | ------- |
+| [[Ottavia Renzetti]] | House head. She bound him through honor. He cannot refuse her face to face. |
+| [[House Renzetti]] | If he loses halfheartedly, the house loses, and Ottavia's claim to [[Sparhold]] collapses with it. |
+| [[Sparhold]] | Settlement rule hangs on this duel. |
 
-**[[Sparhold]]** (The Stakes). The settlement's rule hangs on the outcome of the duel he was compelled into. Whether he survives or falls, the weight of that consequence is his to carry.
+## Combat
+
+He is in a death-duel. The source points at a commoner sheet that is not a live wiki page. Do not invent Armor Class or hit points.

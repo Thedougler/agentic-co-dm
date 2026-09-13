@@ -3,6 +3,7 @@ title: "Bell-Tone Draught"
 category: entities
 tags: ["shattered-sea", "item", "combat", "common"]
 sources:
+  - "wiki/_archive/common/bell-tone-draught.md"
   - "campaign-os:bell-tone-draught.md"
 created: 2026-09-13
 updated: 2026-09-13
@@ -12,36 +13,22 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "A vial of clear liquor that holds one sustained note when tapped, steadying a caster's grip on a spell for the hour after it is drunk."
+kind: consumable
+rarity: common
+attunement: false
+summary: "Single-sip vial that adds +5 to the first Constitution save to keep a spell this hour."
 provenance:
-  extracted: 0.85
+  extracted: 0.90
   inferred: 0.10
-  ambiguous: 0.05
+  ambiguous: 0.00
 base_confidence: 0.55
 tier: supporting
 ---
 # Bell-Tone Draught
 
 > [!narration] Narration
-> A finger-thin vial of clear liquor, stoppered with a plug of bell-rope hemp gone brown at the end.
->
-> Tapped with a fingernail, the glass gives back one note and holds it far longer than glass should, and the liquid inside sits dead still while the note lasts.
->
-> It goes down cold and tastes of chalk and rainwater.
->
-> The note is still going when you set the vial back on the table.
+> The vial is finger-thin and filled with clear liquor. A plug of bell-rope hemp, browned at the tip, stops it. Tap the glass and it answers with one note that lasts longer than glass should. The liquid does not move while the note holds. It goes down cold and tastes of chalk and rain. The note is still going after the empty vial is back on the table.
 
-*Potion, Common.* Distilled thin for the loft's watch-shift readers, who hold one count of the harbor in their heads while a bell tolls over the top of it.
+Potion, Common
 
-## Mechanics
-
-> [!mechanic]
-> **Bell-Tone Draught [HB].** Single use. Drinking it takes a Bonus Action. For the next hour you add +5 to the first Constitution saving throw you make to maintain concentration on a spell.
->
-> **Edge cases:** the bonus is spent on that first save whether it succeeds or fails. A second draught drunk before the hour is out replaces the first rather than stacking with it.
->
-> **Limitations:** it does nothing for any other saving throw, grants no bonus to spell attack rolls or save DCs, and cannot restore concentration once it has broken.
-
-## Provenance
-
-The tavern below the loft distils a case at a time, and [[Vashka Doru]] keeps four vials in the table drawer against nights when the bell rings across a count she cannot afford to lose.
+Drink it as a Bonus Action. For 1 hour, add +5 to the first Constitution saving throw you make to maintain Concentration on a spell. That first save spends the bonus whether it succeeds or fails. A second draught drunk before the hour ends replaces the first; the bonuses do not stack. It does not help any other saving throw, does not raise spell attack rolls or save DCs, and cannot restore Concentration after it breaks. [[Vashka Doru]] keeps four vials in a table drawer. 100 gp.

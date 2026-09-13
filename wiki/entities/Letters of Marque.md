@@ -3,6 +3,7 @@ title: "Letters of Marque"
 category: entities
 tags: ["shattered-sea", "item", "politics", "intrigue", "common"]
 sources:
+  - "wiki/_archive/common/letters-of-marque.md"
   - "campaign-os:letters-of-marque.md"
 created: 2026-09-13
 updated: 2026-09-13
@@ -12,24 +13,40 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "Official documents granting privateer operations under the Dravosi Crown."
+kind: plot
+rarity: common
+attunement: false
+summary: "Worn Crown parchment that licensed Barnaby Rook as a privateer; no magic, details unclear."
 provenance:
-  extracted: 0.85
-  inferred: 0.10
-  ambiguous: 0.05
+  extracted: 0.95
+  inferred: 0.05
+  ambiguous: 0.00
 base_confidence: 0.55
 tier: supporting
 ---
 # Letters of Marque
 
-Weathered parchment with the Dravosi Crown's seal. The edges show age and wear. These documents give permission for privateering, but the details are unclear.
+> [!narration] Narration
+> The sheets are parchment gone soft at the folds. A crown seal is pressed into the wax. The edges are nicked and dark where hands have worried them.
 
-_Document, Common._
+Plot item (no magical effect). Document, Common.
 
-## Mechanics
+These letters have no charges, activation, or saving throws. They are a credential. If someone presents them as real or forged authority, stop and rule from the scene; the source does not fix the outcome.
 
-These have no magical properties. No charges, activation, or save DCs. If they try to use them as a fake or real credential, ask the DM for guidance.
+## At a Glance
+
+The crew holds the papers that licensed [[Barnaby Rook]] to privateer for the [[Dravosi Crown]]. Listed value is 30,000 gp. What the text actually permits is unclear.
+
+## At the Table
+
+Flash them as a Crown warrant and you are making a claim. The page does not tell you who buys it.
+
+## Connections
+
+- [[Barnaby Rook]] — Named licensee.
+- [[HCS Surety]] — Cabin where the crew found them.
+- [[Dravosi Crown]] — The seal and the authority, if anyone honors it.
 
 ## Provenance
 
-Found in [[Barnaby Rook]]'s cabin aboard the [[Uncertainty|HCS Surety]]. Also in the cabin: 45 gp and a blunderbuss. Hidden under the floor: 110 more gp and two garnets. These letters gave Rook the right to work as a privateer for the [[Dravosi Crown]]. The crew has them now.
+Taken from Rook's cabin with 45 gp and a blunderbuss. Under the floor: 110 gp and two garnets.
