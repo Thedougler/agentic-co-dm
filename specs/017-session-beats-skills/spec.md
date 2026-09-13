@@ -31,6 +31,11 @@
 - Q: Which skill is primary when creating or editing a quest wiki page? → A: `narrative-islands` stays primary. Update it to fill `wiki/templates/quest.md`. No new skill.
 - Q: Who updates World in motion, portents, and the Quest log after the page exists? → A: `narrative-islands` owns all later updates, including rolls and the Quest log.
 - Q: Does `wiki/templates/quest.md` also become the page for fronts and encounters, or only for `type: quest`? → A: One situation type named `quest`. Retire `type: front` and `type: encounter`; those situations become quests.
+- Q: What must a new or edited city wiki page contain to pass? → A: Arrival; At a glance including current pressure; Orientation (districts and getting around); Gazetteer enough to intentionally seek a place; rules that matter at the table; at least one active situation with if-nobody-intervenes. Extra headings omit-if-unused.
+- Q: Which skill is primary when creating or editing a city wiki page? → A: New `city-design` is primary. `place-design` is the hub for all places and defers to specialized skills. Do not keep cities on `place-design` because settlements resemble cities.
+- Q: What must a new or edited region wiki page contain to pass? → A: Spoken look; At a glance; Current state; geography/travel enough to choose a route; active powers; change log. Scale-specific headings omit per the draft (MACRO / REGIONAL / LOCAL). Pressure is not required.
+- Q: Which skill is primary when creating or editing a region wiki page? → A: New `region-design` is primary. `place-design` defers for region jobs.
+- Q: When a region lists a front or pressure, is that a `type: quest` page or only a section on the region note? → A: Regions do not inherently need pressure. Include a pressure only if it is already stated, and link the existing wiki note. Do not revive `type: front`.
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -225,6 +230,49 @@ A quest page is runnable at the table when it has: summary (objective, why now, 
 5. **Given** `narrative-islands` after this feature, **When** an author follows it for a quest, **Then** it tells them to fill `wiki/templates/quest.md` and those jobs as part of the page. No `quest-design` skill exists.
 6. **Given** a later update to an existing quest, **When** portents, World in motion, or the Quest log change, **Then** `narrative-islands` is still primary, including any roll. `world-tick` and wrapup do not own those updates.
 7. **Given** a durable situation that would previously have been `type: front` or `type: encounter`, **When** the author files it, **Then** it is `type: quest` on `wiki/templates/quest.md`. Those two types are not used.
+---
+
+### User Story 10 - City wiki pages use the new template (Priority: P2)
+
+A Co-DM creates or edits a named **city** campaign page. They start from `wiki/templates/city.md` (the scaffold provided for this feature). The page is `type: place` with `kind: city`. `city-design` is primary for that page. `place-design` is the hub for all places and defers to `city-design` for cities. Layout lists jobs for City. Pass is those jobs, not heading-order match. Omit unused sections. Keep the page runnable, not encyclopedic.
+
+A city page is runnable at the table when it has: Arrival; At a glance including current pressure; Orientation (districts and getting around); Gazetteer enough to intentionally seek a place; rules that matter at the table; and at least one active situation with what happens if nobody intervenes. Extra headings are omitted when unused. Theatre of the mind still owns `[!narration]` for Arrival. Faction full agendas stay on faction pages; this page records only local posture.
+
+`city-design` states what to write and when the page is done. It describes work that has not been done yet as the work to do now.
+
+**Why this priority**: Settlements are already `type: place`, but `place-design` is a hub, not the city writer. The site scaffold cannot run a city. Without city jobs and a specialized skill, the page becomes an encyclopedia or a site note stretched too far.
+
+**Independent Test**: Give an author a job to create a named city. `city-design` is primary. The page starts from `wiki/templates/city.md` and includes the named jobs. A reviewer can arrive, find a district, seek a place on purpose, name a local rule that changes play, and say what happens if nobody intervenes, without another format guide.
+
+**Acceptance Scenarios**:
+
+1. **Given** a job to create or edit a named city, **When** the author writes the wiki page, **Then** `city-design` is primary, they copy `wiki/templates/city.md`, and they fill Arrival, At a glance including current pressure, Orientation (districts and getting around), Gazetteer enough to seek a place, rules that matter at the table, and at least one active situation with if-nobody-intervenes.
+2. **Given** that page, **When** unused scaffold headings have no play-relevant content, **Then** they are omitted.
+3. **Given** `wiki/AGENTS.md`, **When** an author classifies the page, **Then** `type` is `place`, `kind` is `city`, and Layout lists jobs for City.
+4. **Given** faction detail, **When** it is more than local posture in this city, **Then** it lives on the faction page, not the city page.
+5. **Given** `place-design` and a city job, **When** the author starts, **Then** `place-design` defers to `city-design`. `place-design` remains the hub for places that have no specialized skill.
+---
+
+### User Story 11 - Region wiki pages use the new template (Priority: P2)
+
+A Co-DM creates or edits a named **region** campaign page. They start from `wiki/templates/region.md` (the scaffold provided for this feature). `region-design` is primary for that page. `place-design` defers when the job is a region. Layout lists jobs for Region. Pass is those jobs, not heading-order match. Omit unused sections. Keep persistent geography separate from ephemeral events. Scale (macro / regional / local) decides which extra headings earn a place.
+
+A region page is runnable at the table when it has: spoken look; At a glance; Current state; geography and travel enough to choose a route; active powers; and a change log. Extra headings omit by scale. Theatre of the mind still owns `[!narration]`. Detailed sites get their own [[place]] notes once they no longer fit here. The page does not invent pressure. If a pressure is already stated elsewhere, link that note.
+
+`region-design` states what to write and when the page is done. It describes work that has not been done yet as the work to do now.
+
+**Why this priority**: Wilderness regions currently fall through site place notes. `place-design` is a hub, not the region writer. Without region jobs and a specialized skill, the page becomes an encyclopedia or a stretched site.
+
+**Independent Test**: Give an author a job to create a named region. `region-design` is primary. The page starts from `wiki/templates/region.md` and includes the named jobs. A reviewer can travel and name who can change the region, without another format guide. A region with no already-stated pressure still passes.
+
+**Acceptance Scenarios**:
+
+1. **Given** a job to create or edit a named region, **When** the author writes the wiki page, **Then** `region-design` is primary, they copy `wiki/templates/region.md`, and they fill spoken look, At a glance, Current state, geography/travel enough to choose a route, active powers, and a change log.
+2. **Given** a macro region, **When** encounter tables and minor sites add no choice, **Then** they are omitted. **Given** a local region, **When** Subregions add no choice, **Then** Subregions are omitted.
+3. **Given** `wiki/AGENTS.md`, **When** an author classifies the page, **Then** `type` may be `region`, and Layout lists jobs for Region.
+4. **Given** a detailed site inside the region, **When** its key no longer fits on the region page, **Then** it becomes a linked [[place]] note.
+5. **Given** `place-design` and a region job, **When** the author starts, **Then** `place-design` defers to `region-design`.
+6. **Given** no already-stated pressure, **When** the region page is written, **Then** it has no invented front and still passes. **Given** a pressure already stated on another wiki note, **When** it matters here, **Then** the region links that note and does not copy it.
 
 ### Edge Cases
 
@@ -232,18 +280,18 @@ A quest page is runnable at the table when it has: summary (objective, why now, 
 - Editing one beat on an existing spine: type skill is primary; composition loads only if order, polarity, threads, or transitions change.
 - Creating content for a beat is filling that beat's jobs, not becoming encounter, trap, place, or spoken-prose crafts. Hand off; do not absorb.
 - Two consecutive same-type middle beats: composition rejects the order and recomputes; it does not pad a third beat of the other type just to satisfy the chart.
-- The party breaks the chart: recompute; do not force the next prepared slot.
+- Unused template sections on a new spell, vehicle, faction, lore, quest, city, or region page are omitted; filled jobs stay.
 - The central question resolves early: that resolution is the Climax; deliver Resolution rather than padding to a planned slot.
-- Session length changes: Hook, Climax, and Resolution still account for about ninety minutes; remaining time is Development/Cliffhanger pairs.
 - A cold open before the Hook is not a second Hook.
 - A type skill restating the full Beat Chart, or composition restating another type's card catalog, is a defect.
 - After this feature, no remaining single skill contains the full chart plus all five type-card catalogs.
 - Existing Session 11 beats and spines are not rewritten solely to prove the split.
 - Companion notes (hazards tables) are not typed beats and do not load type skills.
-- Unused template sections on a new spell, vehicle, faction, lore, or quest page are omitted; filled jobs stay.
 - Ingest MUST NOT map `lore` to `item`. World-truth notes use `type: lore`. Actual items stay `item`.
-- A beat that needs a named craft, spell, faction, lore note, or quest hands off to that wiki kind; the beat skill still owns the beat.
+- A beat that needs a named craft, spell, faction, lore note, quest, city, or region hands off to that wiki kind; the beat skill still owns the beat.
+- `place-design` is the hub for all places. It defers to `city-design` for `kind: city` and to `region-design` for region jobs. Site places still use `wiki/templates/place.md`.
 - Night-only pressure stays a session-plan section. A durable situation page is `type: quest` on `wiki/templates/quest.md`, not session-prep. `type: front` and `type: encounter` are retired; those situations are quests.
+- A region MUST NOT invent pressure. If a pressure is already stated, the region links that wiki note. `type: front` stays retired.
 - After a quest page exists, `narrative-islands` owns later updates including rolls and the Quest log. `world-tick` does not advance quest portents. Wrapup does not own the Quest log.
 - Retiring `type: encounter` does not replace encounter-prep, traps-trials, or other fight/site crafts. Those still own math and sites. The wiki situation page is `type: quest`.
 - Existing faction pages are not rewritten solely to prove the new template. Existing pages labeled `lore` that are actually items stay `item`; they are not rewritten solely to prove the lore template.
@@ -302,9 +350,16 @@ A quest page is runnable at the table when it has: summary (objective, why now, 
 - **FR-043**: A job to write, edit, or create a quest page MUST use `narrative-islands` as its primary skill. `narrative-islands` MUST teach filling `wiki/templates/quest.md`. There MUST NOT be a `quest-design` skill.
 - **FR-044**: After a quest page exists, `narrative-islands` MUST remain the owner of later updates, including World in motion, portents, rolls, Situation, status, and the Quest log. `world-tick` MUST NOT advance quest portents. `session-wrapup` MUST NOT own the Quest log.
 - **FR-045**: Campaign situation pages MUST use `type: quest`. `type: front` and `type: encounter` MUST NOT be used. Situations that would have used those types MUST be `type: quest`.
+- **FR-046**: `wiki/templates/city.md` MUST be the scaffold for a city, matching the template provided for this feature. The page MUST be `type: place` with `kind: city`.
+- **FR-047**: A new or edited city page MUST include: Arrival; At a glance including current pressure; Orientation (districts and getting around); Gazetteer enough to intentionally seek a place; rules that matter at the table; and at least one active situation with what happens if nobody intervenes. Extra scaffold headings MUST be omitted when unused. Pass is those jobs, not heading-order match. Faction full agendas MUST stay on faction pages.
+- **FR-048**: Layout MUST list jobs for City matching FR-047. Site places MUST keep using `wiki/templates/place.md` and existing Place jobs.
+- **FR-049**: A job to write, edit, or create a city page MUST use `city-design` as its primary skill. `place-design` MUST remain the hub for all places and MUST defer to `city-design` for cities. `place-design` MUST NOT write the city page itself.
+- **FR-050**: `wiki/templates/region.md` MUST be the scaffold for campaign `type: region`, matching the template provided for this feature.
+- **FR-051**: A new or edited region page MUST include: spoken look; At a glance; Current state; geography and travel enough to choose a route; active powers; and a change log. Extra scaffold headings MUST be omitted by scale (macro / regional / local) when they add no choice. Pass is those jobs, not heading-order match. A region MUST NOT invent pressure. If a pressure is already stated, the region MUST link that wiki note. `type: front` MUST NOT be revived.
+- **FR-052**: Campaign `type` MUST include `region`. Layout MUST list jobs for Region matching FR-051.
+- **FR-053**: A job to write, edit, or create a region page MUST use `region-design` as its primary skill. `place-design` MUST defer to `region-design` for region jobs and MUST NOT write the region page itself.
 
 ### Key Entities
-
 - **Composition skill**: The skill that loads when planning a session. It directs how to compose beats together as a Beat Chart. It does not write a typed beat's cards.
 - **Type skill**: The skill for one beat type — Hook, Development, Cliffhanger, Climax, or Resolution. Primary when writing, editing, or creating content for a beat of that type.
 - **Beat Chart**: The pacing palette: Hook, alternating Development/Cliffhanger pairs, Climax, Resolution.
@@ -329,6 +384,11 @@ A quest page is runnable at the table when it has: summary (objective, why now, 
 - **lore-design**: The skill that is primary when writing, editing, or creating a lore page. It does not invent table history or mark lore `canon`.
 - **Canon Log**: How established lore changed at the table. Written by `session-wrapup` or `reconciling-session-evidence` after players interact with or witness the lore. Omitted until then.
 - **Quest page**: A named sandbox situation note. `type: quest`. Jobs: summary; Situation; Stakes including walk-away; World in motion; at least two independent leads. Resolution omitted while unresolved. Not a plotted sequence. Owner: `narrative-islands`, including later updates, rolls, and the Quest log. Replaces `type: front` and `type: encounter`.
+- **City page**: A named settlement note. `type: place`, `kind: city`. Jobs: Arrival; At a glance including pressure; Orientation; Gazetteer enough to seek a place; table rules; at least one active situation with if-nobody-intervenes. Not an encyclopedia. Not a site place. Owner: `city-design`. Hub: `place-design`.
+- **city-design**: The skill that is primary when writing, editing, or creating a city page. `place-design` defers to it.
+- **place-design**: The hub skill for all places. It writes site places and defers to specialized skills (`city-design`, `region-design`).
+- **Region page**: A named travel-and-powers note. `type: region`. Jobs: spoken look; At a glance; Current state; geography/travel enough to choose a route; active powers; change log. Scale omits extra headings. Pressure only if already stated, as a link. Owner: `region-design`. Hub: `place-design`.
+- **region-design**: The skill that is primary when writing, editing, or creating a region page. `place-design` defers to it.
 
 ## Success Criteria *(mandatory)*
 
@@ -362,13 +422,17 @@ A quest page is runnable at the table when it has: summary (objective, why now, 
 - **SC-026**: Two reviewers classify write, edit, and create-content jobs for a quest page and agree `narrative-islands` is primary for 100% of those jobs. 0% of those jobs load a `quest-design` skill.
 - **SC-027**: After a quest page exists, 100% of portent, World in motion, and Quest log updates are done under `narrative-islands`. 0% of those updates are owned by `world-tick` or `session-wrapup`.
 - **SC-028**: After this feature, 0% of newly filed durable situation pages use `type: front` or `type: encounter`. 100% of those pages use `type: quest`.
+- **SC-029**: 100% of new city pages started from `wiki/templates/city.md` include Arrival, At a glance with current pressure, Orientation (districts and getting around), Gazetteer enough to seek a place, rules that matter at the table, and at least one active situation with if-nobody-intervenes.
+- **SC-030**: Two reviewers classify write, edit, and create-content jobs for a city page and agree `city-design` is primary for 100% of those jobs. 0% of those jobs stay on `place-design` after the hub defers.
+- **SC-031**: 100% of new region pages started from `wiki/templates/region.md` include spoken look, At a glance, Current state, geography/travel enough to choose a route, active powers, and a change log. 0% of region pages invent a pressure that was not already stated. 100% of already-stated pressures that matter here are linked, not copied.
 
+- **SC-032**: Two reviewers classify write, edit, and create-content jobs for a region page and agree `region-design` is primary for 100% of those jobs. 0% of those jobs stay on `place-design` after the hub defers.
 ## Assumptions
 
 - "Type of beat" means the five Beat Chart types (Hook, Development, Cliffhanger, Climax, Resolution), not one skill per subtype card. Cards stay inside their type skill.
 - The current session-beats blob is split into the composition skill plus the five type skills. The blob is not kept beside the split.
 - Method source is *Scripting the Game* (Pondsmith, with concepts from Flint Dille, R. Talsorian Games, 2020), as already adapted for this campaign: Beat Chart rules plus player-agency gates. Skills teach the methods; they do not paste the source text.
-- Session 11 cockpit format, session-folder filing, Work accept-before-wiki, live-beat assembly, theatre of the mind, and encounter/trap/place/monster crafts stay as they are for beats. This feature also adds spell, vehicle, faction, lore, and quest wiki kinds: templates, Layout jobs, `vehicle-design` updated to fill the vehicle sheet, a new `spell-design` skill, a new `faction-design` skill, and a new `lore-design` skill so those pages are runnable. `faction-prep` is removed. The ingest remap `lore`→`item` is removed. `world-tick` is updated to append the faction-turn log and still owns off-screen faction advancement; it does not advance quest portents. The faction page owns the agenda clock; `hot.md` may point at the faction and does not store a second clock. Lore pages use `wiki/templates/lore.md` and the FR-035 jobs. Lore is not canon until players interact with or witness it; wrapup/reconcile then own Current Truth updates and the Canon Log. Quest pages use `wiki/templates/quest.md` and the FR-041 jobs; `narrative-islands` is primary, is updated to fill that template, and owns later quest updates including rolls and the Quest log. No `quest-design` skill is added. Durable sandbox situations are `type: quest` only; `type: front` and `type: encounter` are retired. New skills and major skill redesigns dispatch to Claude Code (minimal prompt, Opus 4.6 medium). `AGENTS.md` tables, templates, and small tweaks to established files stay with the session agent. A Claude Code usage limit defers only that job unless FR-026's Codex fallback applies.
-- Creating content for a beat means filling that beat's jobs (situation, pressure, spoken opening, procedure, landing), then handing off to existing crafts when those crafts own the work, including vehicle, spell, faction, lore, and quest pages when a beat needs a named craft, spell, faction, lore note, or quest.
+- Session 11 cockpit format, session-folder filing, Work accept-before-wiki, live-beat assembly, theatre of the mind, and encounter/trap/place/monster crafts stay as they are for beats. This feature also adds spell, vehicle, faction, lore, quest, city, and region wiki kinds: templates, Layout jobs, `vehicle-design` updated to fill the vehicle sheet, a new `spell-design` skill, a new `faction-design` skill, a new `lore-design` skill, a new `city-design` skill, and a new `region-design` skill so those pages are runnable. `place-design` remains the hub for places and defers to specialized skills. `faction-prep` is removed. The ingest remap `lore`→`item` is removed. `world-tick` is updated to append the faction-turn log and still owns off-screen faction advancement; it does not advance quest portents. The faction page owns the agenda clock; `hot.md` may point at the faction and does not store a second clock. Lore pages use `wiki/templates/lore.md` and the FR-035 jobs. Lore is not canon until players interact with or witness it; wrapup/reconcile then own Current Truth updates and the Canon Log. Quest pages use `wiki/templates/quest.md` and the FR-041 jobs; `narrative-islands` is primary, is updated to fill that template, and owns later quest updates including rolls and the Quest log. No `quest-design` skill is added. Durable sandbox situations are `type: quest` only; `type: front` and `type: encounter` are retired. City pages use `wiki/templates/city.md` and the FR-047 jobs; they remain `type: place` with `kind: city`. Region pages use `wiki/templates/region.md` and the FR-051 jobs. New skills and major skill redesigns dispatch to Claude Code (minimal prompt, Opus 4.6 medium). `AGENTS.md` tables, templates, and small tweaks to established files stay with the session agent. A Claude Code usage limit defers only that job unless FR-026's Codex fallback applies.
+- Creating content for a beat means filling that beat's jobs (situation, pressure, spoken opening, procedure, landing), then handing off to existing crafts when those crafts own the work, including vehicle, spell, faction, lore, quest, city, and region pages when a beat needs a named craft, spell, faction, lore note, quest, city, or region.
 - A cold open is not a Hook and is out of scope for the beat skills.
 - Out of scope: rewriting Session 11 to prove the split; Foundry staging; a second pacing system beside the Beat Chart; one skill per beat-subtype card; changing who owns cockpit layout or spoken player text.
