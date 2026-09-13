@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex CLI Collaborator"
+  short_description: "Use Codex CLI as an agent collaborator"
+  default_prompt: "Use $codex-cli-collaborator to ask Codex CLI for a focused implementation or review pass."

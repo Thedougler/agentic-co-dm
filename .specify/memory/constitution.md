@@ -1,3 +1,12 @@
+<!--
+Sync Impact Report
+- Version change: 1.6.0 → 1.7.0
+- Modified principles: none renamed
+- Added sections: none
+- Removed sections: none
+- Follow-up TODOs: none in this file.
+-->
+
 # Agentic Co-DM Constitution
 
 ## Core Principles
@@ -166,9 +175,14 @@ Agents MUST run at most one concurrent Claude Code instance. When multiple
 tasks require Claude Code, agents MUST execute those tasks sequentially;
 they MUST NOT overlap Claude Code instances. Independent non-Claude work
 MAY continue concurrently unless another governance rule forbids it.
+Deferred Claude Code tasks MUST remain incomplete on the feature
+`tasks.md` with a retry time. Completing other or new work during a
+usage-limit wait MUST NOT drop, close, or omit those tasks; they MUST
+be carried over and retried only after the recorded time.
 
 Rationale: serial Claude Code usage prevents competing writers, preserves
-resource limits, and makes task ownership and resulting changes auditable.
+resource limits, and makes task ownership auditable. Carry-over keeps
+deferred work findable on the Spec Kit task list when other work lands.
 
 ## Agent Operating Constraints
 
@@ -195,7 +209,11 @@ resource limits, and makes task ownership and resulting changes auditable.
   skill design, skill redesign, or a major skill-file change (issue #4).
   Session agents complete smaller edits to established files, Spec Kit
   pattern tweaks, and `AGENTS.md`. A Claude Code usage limit defers only
-  that Claude-dependent task; remaining independent work continues.
+  that Claude-dependent task on the feature `tasks.md` with a retry time;
+  remaining independent work continues. Completing other or new work
+  while waiting MUST carry those deferred tasks forward still incomplete;
+  they MUST NOT be dropped, closed, or omitted, and MUST be retried only
+  after the recorded time.
 
 ## Development Workflow
 
@@ -252,8 +270,10 @@ Compliance:
   safety failure (secrets, force-push of `main`, skipping checks).
 - Reviews MUST verify that no more than one Claude Code instance runs at
   a time and that Claude Code tasks are sequential when multiple tasks
-  require it.
+  require it. Reviews MUST verify that usage-limited tasks remain on the
+  feature `tasks.md` with a retry time when other work completed during
+  the wait.
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.6.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
+**Version**: 1.7.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
