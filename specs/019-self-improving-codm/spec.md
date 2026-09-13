@@ -16,6 +16,7 @@
 - Q: Who manages token cost? → A: Agents. They decrease it objectively. The DM does not manage, review, or gate token cost.
 - Q: How should agents pursue lower token cost? → A: Proactively create and maintain reusable, flexible, agent-shaped helper scripts. Do not wait for the DM. Use an existing command when it already does the job.
 - Q: Does this spec govern `errors.md`? → A: Yes. Agents fill it at runtime when an operation fails. They drain an entry when a wiki improvement (or other accepted fix) actually removes the cause. Do not drain without a fix. Do not leave a fixed error in the ledger.
+- Q: Should the system organize its own files and folders? → A: Yes. Agents self-organize file and folder layout as the system grows, including the wiki (llm-wiki), optimizing for agent lookup and token cost. The DM does not manage layout. Changing wiki facts still uses the accept-gate.
 
 
 ## User Scenarios & Testing *(mandatory)*
@@ -111,6 +112,25 @@ When a Co-DM operation fails at runtime, agents write that failure to the error 
 3. **Given** an error ledger entry whose cause is not yet fixed, **When** agents improve the wiki for other reasons, **Then** that entry remains.
 4. **Given** a wiki write that would fix a recorded error, **When** the DM has not accepted that write, **Then** the wiki is unchanged and the entry is not drained.
 5. **Given** a drained entry, **When** inspected, **Then** the cause was fixed; the entry was not removed as cleanup without a fix.
+---
+
+### User Story 6 - Layout grows into agent-shaped structure (Priority: P6)
+
+As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize files and folders so a later sitting can find the one file it needs without loading unrelated trees. That includes the wiki (llm-wiki). Layout is optimized for agent use: names and locations match the job or page kind, mixed dumps are split, and unused paths are not standing load. Agents do this as the system grows. They do not wait for the DM. A layout change that makes lookup slower or loads more unrelated material is not an improvement. Moving or regrouping a wiki page without changing its facts is layout, not a canon write. Changing wiki facts still waits on accept. When a page moves, agents keep it findable (links and names still resolve).
+
+**Why this priority**: Growth without organization is wasted context. Agents already own token cost and helpers; layout is the same job at folder scale, including the wiki they retrieve from.
+
+**Independent Test**: Start from a mixed dump of unrelated agent files **and** mixed wiki pages of different kinds. After growth-triggered organization, a later sitting for one named job or one page kind opens only the files for that job or kind. The DM was not asked for the layout change. A reorg that scatters the needed file or forces a wider load does not count. Wiki facts were not rewritten. Links still resolve.
+
+**Acceptance Scenarios**:
+
+1. **Given** agent-facing files for different jobs mixed in one place, **When** that mix has grown past a single sitting's job, **Then** agents split or move them so each job has a findable location, without asking the DM.
+2. **Given** wiki pages of different kinds mixed so lookup loads unrelated trees, **When** that mix has grown, **Then** agents regroup them for agent lookup without asking the DM, and without changing page facts.
+3. **Given** that organization, **When** a later sitting runs one named job or retrieves one page kind, **Then** agents find those files without loading unrelated trees, at equal or lower token cost.
+4. **Given** a layout change that increases hops or unrelated load for the same job or page kind, **When** it is judged as an improvement, **Then** it does not count as one.
+5. **Given** a wiki layout move, **When** it lands, **Then** page facts are unchanged, links still resolve, and the DM was not asked to accept the move.
+6. **Given** a change to wiki facts, **When** agents would file it, **Then** that change still waits on the DM accept-gate. Layout is not a path around canon.
+7. **Given** a one-off file that is not growing a mixed dump, **When** agents consider reorganizing, **Then** they leave it; growth, not tidiness, is the trigger.
 
 ---
 
@@ -145,6 +165,12 @@ When a Co-DM operation fails at runtime, agents write that failure to the error 
 - Draining the whole ledger because some entries were fixed: invalid; drain only matching fixed causes.
 - Filling the ledger with process talk or token-cost numbers the DM must review: out of scope; the ledger is agent-owned.
 - Error whose fix is not a wiki change (a helper, wasted-context cut): drain when that fix lands; still no DM gate unless the fix is campaign-facing.
+- Reorganizing agent-facing or wiki layout on a one-off file: skip; wait until mixed growth makes lookup costly.
+- Layout change that hides the file an agent needs or requires a wider tree load: not an improvement.
+- Moving or regrouping a wiki page without changing facts: layout; agents do it; the DM is not asked.
+- Changing wiki facts under the cover of a layout move: invalid; that is a canon write and still needs accept.
+- Asking the DM to approve folder names for helpers, ledgers, scripts, or wiki grouping: out of scope; agents own layout.
+- Wiki layout move that leaves broken links: incomplete; agents keep the page findable in the same change.
 
 ## Requirements *(mandatory)*
 
@@ -156,7 +182,7 @@ When a Co-DM operation fails at runtime, agents write that failure to the error 
 - **FR-004**: When the DM updates the players or the intent, later Work MUST use the updated aim.
 - **FR-005**: A missing wiki fact or missing Co-DM practice MUST NOT prevent the Co-DM from offering playable Work in that sitting.
 - **FR-006**: When Work is offered despite a gap, the Co-DM MUST name the gap to the DM.
-- **FR-007**: A proposed change to how the Co-DM works that would change campaign Work or what the DM sees MUST be a proposal the DM accepts, edits, or rejects. The Co-DM MUST NOT apply that campaign-facing change before accept. Token-cost-only changes that do not change Work quality or wiki facts MUST follow FR-019 through FR-031 instead, with no DM accept step.
+- **FR-007**: A proposed change to how the Co-DM works that would change campaign Work or what the DM sees MUST be a proposal the DM accepts, edits, or rejects. The Co-DM MUST NOT apply that campaign-facing change before accept. Token-cost-only changes, helper work, error-ledger fill/drain, and layout changes (agent-facing **or** wiki file/folder layout) that do not change Work quality or wiki facts MUST follow FR-019 through FR-046 instead, with no DM accept step.
 - **FR-008**: After wrapup, the Co-DM MUST offer a reflection that names at least one concrete observation about these players.
 - **FR-009**: After prep, the Co-DM MUST offer a reflection when the DM asks, and MUST NOT require the DM to ask in wrapup.
 - **FR-010**: A reflection MUST be accept-or-reject Work. It MUST NOT write wiki facts by itself. It MUST NOT apply a campaign-facing practice change by itself.
@@ -164,7 +190,7 @@ When a Co-DM operation fails at runtime, agents write that failure to the error 
 - **FR-012**: An accepted reflection that calls for a campaign-facing change in how the Co-DM works MUST become an improvement proposal and MUST still wait for accept before that change is applied.
 - **FR-013**: After the DM accepts an improvement, later sittings of that kind of job MUST follow the accepted change.
 - **FR-014**: The Co-DM MUST NOT run reflection or improvement during a session.
-- **FR-015**: Campaign wiki writes, invention marking, and the DM accept-gate from the existing Co-DM product still bind. This loop MUST NOT create a second path around them.
+- **FR-015**: Campaign wiki **fact** writes, invention marking, and the DM accept-gate from the existing Co-DM product still bind. This loop MUST NOT create a second path around canon. Wiki **layout** (where pages live, how they are grouped) is FR-039 through FR-046, not a canon write.
 - **FR-016**: Existing quality evaluation for D&D content guidance, and existing rules for who may redesign how the Co-DM is instructed, still bind. This loop MUST NOT skip them.
 - **FR-017**: The Co-DM MUST address reflections and improvement proposals to the DM, never to the players.
 - **FR-018**: Agent and DM communication in this loop MUST be inspectable after the fact (aim, Work, reflection, proposal, accept or reject, applied change). Token cost is inspectable to agents. The DM MUST NOT be required to review it.
@@ -188,6 +214,14 @@ When a Co-DM operation fails at runtime, agents write that failure to the error 
 - **FR-036**: After a wiki improvement lands, leftover ledger entries for causes that improvement fixed MUST be treated as wasted context and drained in the same sitting.
 - **FR-037**: The DM MUST NOT be required to fill, review, or drain the error ledger. A wiki write that is the fix still waits on the DM accept-gate; drain MUST wait until that write has landed.
 - **FR-038**: An undrained ledger of already-fixed errors MUST count as wasted context, not as an improvement record.
+- **FR-039**: Agents MUST self-organize agent-facing files and folders **and** the wiki (llm-wiki) as the system grows, so a later sitting can find the file for a named job or page kind without loading unrelated trees.
+- **FR-040**: Layout MUST be optimized for agent use: names and locations match the job or page kind; mixed dumps of unrelated jobs or kinds MUST be split; unused paths MUST NOT stay in standing load.
+- **FR-041**: Agents MUST NOT wait for the DM to request, review, or accept layout changes (agent-facing or wiki grouping).
+- **FR-042**: A layout change that increases lookup cost or unrelated load for the same job or page kind MUST NOT count as an improvement.
+- **FR-043**: A wiki layout move or regroup MUST NOT change page facts. Changing wiki facts MUST still wait on the DM accept-gate.
+- **FR-044**: One-off files MUST NOT be reorganized solely for tidiness. Growth that makes lookup costly is the trigger.
+- **FR-045**: When a wiki page moves or is regrouped, agents MUST keep it findable in the same change (links and names still resolve).
+- **FR-046**: Layout MUST NOT be used as a path around the canon accept-gate.
 
 ### Key Entities
 
@@ -205,6 +239,8 @@ When a Co-DM operation fails at runtime, agents write that failure to the error 
 - **Wasted context**: Reading or writing that does not change the sitting's outcome. Agents cut it when quality holds. The DM does not gate that cut.
 - **Agent-shaped helper**: A reusable command agents create and maintain so a later sitting spends fewer tokens on the same job. Arguments in, result out, done vs failed. Owned by agents, not the DM.
 - **Error ledger** (`errors.md`): Agent-owned list of runtime failures. Filled when operations fail. Drained when the cause is actually fixed, including when improving the wiki.
+- **Agent-facing layout**: How helpers, ledgers, skills, and other agent files are named and grouped. Owned by agents.
+- **Wiki layout**: How wiki (llm-wiki) pages are named and grouped. Owned by agents. Optimized for findability and token cost as the system grows. Not a change to page facts.
 
 ## Success Criteria *(mandatory)*
 
@@ -234,6 +270,11 @@ When a Co-DM operation fails at runtime, agents write that failure to the error 
 - **SC-022**: After a wiki improvement that removes the cause of recorded errors, 100% of matching entries are drained in that sitting.
 - **SC-023**: 0% of drained entries in that sample were removed without the cause being fixed.
 - **SC-024**: In a sample of at least five fill or drain actions, 0% required the DM to edit the error ledger.
+- **SC-025**: After a mixed dump of unrelated agent-facing files **or** mixed wiki kinds is organized, a later sitting for one named job or one page kind loads files for that job or kind only, in 100% of sampled jobs, at equal or lower token cost.
+- **SC-026**: 0% of those layout changes (agent-facing or wiki grouping) required the DM to request, review, or accept them.
+- **SC-027**: 0% of sampled layout changes that increased hops or unrelated load for the same job or page kind are counted as improvements.
+- **SC-028**: In that sample, 0% of wiki layout moves change page facts, and 100% keep links resolving.
+- **SC-029**: 0% of sampled wiki fact changes are filed as layout moves without the DM accept-gate.
 
 ## Assumptions
 
@@ -243,10 +284,10 @@ When a Co-DM operation fails at runtime, agents write that failure to the error 
 - v1 remains one campaign, one table, D&D 5e.
 - Self-bootstrap means: produce Work from an incomplete start and name the gap. It does not mean the Co-DM rewrites campaign-facing practice without accept.
 - Self-reflection means: after wrapup (and after prep when asked), offer inspectable observations about these players. It does not mean a live agent at the table, and it does not mean contacting players.
-- Self-improvement means: accepted reflections become proposals the DM gates when they change the campaign or what the DM sees. Token cost of the sitting is a core metric owned by agents: more Work at the same quality, less wasted context, proactive agent-shaped helpers, no DM review.
-- Creativity, communication, and collaboration are already the Co-DM experiment. This feature adds shared aim and a closed improve-with-accept loop for campaign Work. It does not add a second communication path to players. It does not make the DM an efficiency reviewer.
-- Fun may still shape Work. Wiki facts still change only when the DM accepts a canon proposal.
+- Self-improvement means: accepted reflections become proposals the DM gates when they change the campaign or what the DM sees. Token cost of the sitting is a core metric owned by agents: more Work at the same quality, less wasted context, proactive agent-shaped helpers, self-organized agent-facing **and wiki** layout, no DM review of layout.
+- Creativity, communication, and collaboration are already the Co-DM experiment. This feature adds shared aim and a closed improve-with-accept loop for campaign Work. It does not add a second communication path to players. It does not make the DM an efficiency or folder reviewer.
+- Fun may still shape Work. Wiki facts still change only when the DM accepts a canon proposal. Wiki file and folder layout is not a fact change.
 - One reflection per wrapup is enough unless the DM asks for another.
-- Token cost is how much the Co-DM must read and write to finish the jobs. Agents manage it and decrease it objectively, including by creating and maintaining reusable agent-shaped helpers. Quality is a constraint, not a trade. Fewer tokens that produce worse Work is not improvement. More tokens for the same jobs is not improvement unless they prevent a named failure. The DM is not asked to accept token-cost numbers, efficiency-only cuts, or helpers.
+- Token cost is how much the Co-DM must read and write to finish the jobs. Agents manage it and decrease it objectively, including by creating and maintaining reusable agent-shaped helpers and by organizing files and folders — including the wiki (llm-wiki) — for agent lookup as the system grows. Quality is a constraint, not a trade. Fewer tokens that produce worse Work is not improvement. More tokens for the same jobs is not improvement unless they prevent a named failure. The DM is not asked to accept token-cost numbers, efficiency-only cuts, helpers, or layout.
 - The error ledger (`errors.md`) is agent-owned. Runtime failures fill it. Wiki improvements and other landed fixes drain matching entries. Drain without a fix is a defect. Leaving fixed errors in the ledger is wasted context.
-- Out of scope: a Co-DM agent during a session; player accounts or player-operated feedback; autonomous rewrite of campaign canon; replacing existing content evaluation or instruction-redesign rules for D&D content guidance; multi-campaign orchestration; non-5e rules systems; billing; replacing the DM; a hidden quality score; the DM managing or gating token cost, helpers, or the error ledger; human-only wrappers; wrapping a command that already does the job.
+- Out of scope: a Co-DM agent during a session; player accounts or player-operated feedback; autonomous rewrite of campaign **canon facts**; replacing existing content evaluation or instruction-redesign rules for D&D content guidance; multi-campaign orchestration; non-5e rules systems; billing; replacing the DM; a hidden quality score; the DM managing or gating token cost, helpers, the error ledger, or layout; human-only wrappers; wrapping a command that already does the job; reorganizing one-off files for tidiness.
