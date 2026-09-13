@@ -1,4 +1,3 @@
-
 # Agentic Co-DM Constitution
 
 ## Core Principles
@@ -76,9 +75,10 @@ usable by an agent as the primary operator:
   completion criteria on every step, leading words, progressive
   disclosure, one source of truth, the environment as truth (not a stale
   doc cache), positive instruction, prune no-ops and sediment.
-- Regardless of the agent utilized, any agent assigned a skill change MUST
-  receive an instruction, in addition to the task prompt, to use
-  `.agents/skills/writing-for-agents` for that work.
+- Regardless of the agent utilized for a skill change, that agent MUST
+  receive an instruction, in addition to all original Spec Kit requirements
+  and the task-specific prompt, to use `.agents/skills/writing-for-agents`
+  for that work.
 - MUST NOT add a human-only wrapper when an agent can run the same command.
 - MUST ship the agent-shaped tool first. Human chrome waits until a human
   must operate it.
@@ -268,8 +268,9 @@ Compliance:
 
 - Reviews and `/speckit.analyze` MUST check proposed work against these
   principles before merge or implementation.
-- Reviews MUST verify that every skill-change assignment includes the
-  writing-for-agents instruction, regardless of the agent utilized.
+- Reviews MUST verify that every skill-change assignment preserves all
+  original Spec Kit requirements and includes the writing-for-agents
+  instruction, regardless of the agent utilized.
 - Unjustified complexity (new context, new abstraction, new tracker
   surface) MUST be rejected or recorded as an ADR.
 - A new script, tool, or util that is not agent-shaped MUST be rejected.
@@ -292,4 +293,4 @@ Compliance:
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.10.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
+**Version**: 1.10.1 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
