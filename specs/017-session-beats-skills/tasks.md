@@ -215,7 +215,7 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 
 - [X] T041 [P] [US10] Create `wiki/templates/city.md` from the provided city scaffold. Jobs: Arrival; At a glance including current pressure; Orientation (districts and getting around); Gazetteer enough to intentionally seek a place; rules that matter at the table; at least one active situation with if-nobody-intervenes. Extra headings omit-if-unused. Frontmatter: `type: place`, `kind: city`. Pass is those jobs.
 - [X] T042 [US10] In `wiki/AGENTS.md`, Layout jobs for City matching FR-047. Site places keep using `wiki/templates/place.md` and existing Place jobs. Quote: page is `type: place` with `kind: city`.
-- [ ] T043 [US10] Create `.agents/skills/city-design/SKILL.md` (Claude Code). Primary for write, edit, or create of a city page. Completes when FR-047 jobs are filled. Faction full agendas stay on faction pages. A pursuable situation links a quest. Design-impact: designated writer, `claude-opus-4-6 --effort medium`, minimal prompt.
+- [X] T043 [US10] Create `.agents/skills/city-design/SKILL.md` (Codex CLI gpt-5.5 medium). Primary for write, edit, or create of a city page. Completes when FR-047 jobs are filled. Faction full agendas stay on faction pages. A pursuable situation links a quest. Design-impact: designated writer, Codex CLI at ChatGPT 5.5 medium after Claude Code usage-limit deferral.
 
 **Checkpoint**: US10 independently testable (quickstart step 9 city)
 
