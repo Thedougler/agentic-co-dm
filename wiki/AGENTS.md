@@ -18,13 +18,13 @@ Campaign pages also require:
 
 | Field | Values |
 |---|---|
-| `type` | `npc` \| `place` \| `faction` \| `item` \| `creature` \| `vehicle` \| `spell` \| `lore` \| `quest` \| `region` \| `session-prep` \| `session` \| `recap` \| `work` |
+| `type` | `npc` \| `pc` \| `place` \| `faction` \| `item` \| `creature` \| `vehicle` \| `spell` \| `lore` \| `quest` \| `region` \| `session-prep` \| `session` \| `recap` \| `work` |
 | `lifecycle` | `draft` \| `proposed` \| `accepted` \| `rejected` \| `canon` |
 | `reveal` | `unrevealed` \| `revealed` |
 | `kind` | On `type: session-prep`: `hook` \| `development` \| `cliffhanger` \| `climax` \| `resolution` \| `session-plan`. City pages stay `type: place` `kind: city`. |
 
 Do not invent `type` values. Category is the llm-wiki folder (`entities/`, `journal/`, …). `type` is the campaign kind.
-Map early sample labels on file: `location`→`place`, `monster`→`creature`. World-truth notes use `type: lore`. Actual items stay `item`. Campaign situation pages use `type: quest`.
+Map early sample labels on file: `location`→`place`, `monster`→`creature`. Player characters use `type: pc` (not `npc` with a pc tag). World-truth notes use `type: lore`. Actual items stay `item`. Campaign situation pages use `type: quest`.
 `lifecycle` defaults to `proposed` until the DM accepts. `visibility` defaults to `dm` and is distinct from `reveal`. `summary` is one sentence a DM can read in a list. Omit unused identity keys.
 
 
@@ -47,6 +47,7 @@ Copy the matching `wiki/templates/` scaffold for the campaign `type` (and `kind`
 | Recap | Cold open optional; player-safe `[!narration] Recap`; Wiki facts. `type: recap`. Copy `wiki/templates/recap.md`. Pass is those jobs. |
 | Creature | Look; runnable sheet; life (habitat, habits, diet, social); hunt (signs, instincts, opening, shut-down, aftermath) |
 | Person | Who and want; look; first minutes and posture change; named ties; combat only if they can fight |
+| PC | Spoken look; At a Glance (class/level/player/home ship + play-pattern thesis); Connections; Sheet + Combat Profile; Abilities; Spells when caster; Inventory; Session Log; Voice; Art. Single H1 only — flatten satellites; forbid nested `# Title — Facet` dumps. `type: pc`. Copy `wiki/templates/pc.md`. Pass is those jobs. |
 | Session plan | Compass; beat map; floating beats; pressure; PC touchpoints. `type: session-prep` `kind: session-plan`. Copy `wiki/templates/session-plan.md`. File `Session-<n>-00-<Title>.md`. Pass is those jobs. |
 | Hook | At the table; Open on; Situation; Run the hook; Decision handles; Handoff. `type: session-prep` `kind: hook`. Copy `wiki/templates/hook.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
 | Development | Abstract; Opening; Run the beat; Situation; Revelations; Exits. `type: session-prep` `kind: development`. Copy `wiki/templates/development.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
