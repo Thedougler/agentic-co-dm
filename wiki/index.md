@@ -22,7 +22,12 @@ title: Wiki Index
 - [[Aruhe - Grasslands Torn Crossing]] — Flood-scoured grassland crossing where prints, slick stone, razer-grass, deep water, and a Spiguar hunting lane constrain movement. ( #shattered-sea #place #aruhe #grasslands)
 
 - [[Delmar Fisk]] — Privateer who told the table he was an admiral, stole the Pearl of Souls, and now carries Umberlee's price. ( #shattered-sea #npc)
-- [[Uncertainty]] — Prize cutter taken from the Crown, renamed without prefix, now kept moving off Aruhe. ( #shattered-sea #place)
+- [[Uncertainty]] — Prize cutter taken from the Crown and renamed; her legacy chassis is Gargantuan with AC 11 and 130 hit points. ( #shattered-sea #vehicle #ship)
+- [[HCS Sovereign]] — Gargantuan Crown first-rate ship of the line whose copper hull and more than one hundred guns make its arrival a political event. ( #shattered-sea #vehicle #ship #crown)
+- [[HCS Ordinance]] — Crown warship listed by the source as a related vessel to HCS Sovereign. ( #shattered-sea #vehicle #ship #crown)
+- [[Harwick]] — Place identified by the source as the build site and berth of HCS Sovereign. ( #shattered-sea #place #crown)
+- [[Crown Islands]] — Region identified by the source as HCS Sovereign's operating region. ( #shattered-sea #region #crown)
+- [[Dravosi Crown]] — Faction whose visible authority is represented by the HCS Sovereign's arrival. ( #shattered-sea #faction #crown)
 - [[Calven and Calveno]] — Harbor city where the party became Defenders after the Mercatura crater. ( #shattered-sea #place #calveno)
 - [[Pearl of Souls]] — Shrine relic Delmar's fleet stole; Umberlee named it as her price. ( #shattered-sea #item)
 - [[Aruhe - Hungry Isle]] — Island protected by Hinewai's grief-bound law: receiving is safe, but taking fruit, fish, plants, or beasts brings Nature's fury. ( #shattered-sea #place #aruhe)

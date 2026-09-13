@@ -1,8 +1,8 @@
 {
   "version": 1,
   "stats": {
-    "total_sources_ingested": 54,
-    "total_pages": 60
+    "total_sources_ingested": 56,
+    "total_pages": 65
   },
   "/Users/nick/agentic-co-dm/wiki/_raw/arc-blight-of-aruhe.md": {
     "content_hash": "sha256:df40626cb59fcde17c3d5cd4d9079e7c57335a0e5e10334af00d40f3efe05598",
@@ -597,6 +597,28 @@
       "pages_produced": [
         "entities/Giant's Guava.md"
       ]
+    },
+    "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Uncertainty.md": {
+      "content_hash": "0adf76d2efb7a6ddf7cd5503dfda7fa930dcabfb81a1169e0b6cd8906f4a6f42",
+      "last_ingested": "2026-09-13T02:48:48.865236+00:00",
+      "pages_produced": [
+        "entities/Uncertainty.md"
+      ],
+      "source_type": "document",
+      "project": "shattered-sea"
+    },
+    "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/HCS Sovereign.md": {
+      "content_hash": "535ba40fe57075c5208ddac57db19fc25cfb0762f690ba8787f95ac474a74df0",
+      "last_ingested": "2026-09-13T02:51:28.147626+00:00",
+      "pages_produced": [
+        "entities/HCS Sovereign.md",
+        "entities/Harwick.md",
+        "entities/Crown Islands.md",
+        "entities/Dravosi Crown.md",
+        "entities/HCS Ordinance.md"
+      ],
+      "source_type": "document",
+      "project": "shattered-sea"
     }
   },
   "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Beach.md": {

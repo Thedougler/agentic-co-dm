@@ -37,13 +37,19 @@
 - Q: Which skill is primary when creating or editing a region wiki page? → A: New `region-design` is primary. `place-design` defers for region jobs.
 - Q: When a region lists a front or pressure, is that a `type: quest` page or only a section on the region note? → A: Regions do not inherently need pressure. Include a pressure only if it is already stated, and link the existing wiki note. Do not revive `type: front`.
 
+### Session 2026-09-13
+
+- Q: Should a new Hook, Development, Cliffhanger, Climax, or Resolution page copy that type’s draft template, or still be the same Session 11 cockpit card? → A: Typed draft templates become the live pages. Keep the draft jobs. Add columns and the rest of the current template layout. Session 11 proves readability, not heading order.
+- Q: Should the composition skill fill the session-plan draft (compass, beat map, floating beats, pressure, PC touchpoints), or keep the Session 11 spine (length, prize, opposition, numbered skeleton)? → A: Fill the session-plan draft. Keep Beat Chart rules. Keep compass, beat map, floating beats, pressure, PC touchpoints. Upgrade layout. Not a live beat.
+- Q: Should new Hook through Resolution pages and the session plan stay `type: session-prep`, or get new campaign types? → A: Keep `type: session-prep`. Use a kind field for the five beats and the session plan.
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Planning a session uses the composition skill (Priority: P1)
 
 A Co-DM is planning a session, one-shot, adventure arc, or expedition evening. They load the **composition skill**. That skill directs how to compose beats together as a Beat Chart: one Hook to start, alternating Developments and Cliffhangers in the middle, one Climax then one Resolution to end. It sets polarity (action opening then a Development; cerebral opening then a Cliffhanger; the middle beat before an action Climax is a Development; the middle beat before a cerebral Climax is a Cliffhanger), the time budget (about thirty minutes per beat; Hook, Climax, and Resolution together about ninety minutes), thread planting and harvest, escalation, and transitions (how one beat's resolution becomes the next beat's trigger).
 
-They produce a session spine: length, prize, opposition, Hook/Climax/Resolution labels, numbered skeleton, and why each beat exists. They do not need the five type-card catalogs to draw that chart.
+They copy the session-plan draft. The page is `type: session-prep` with kind `session-plan`. It is the night's chart: compass, beat map, floating beats, pressure, PC touchpoints, and links to the typed beat pages. Beat Chart rules still bind. It is not a sixth live beat and does not duplicate a beat's run jobs. They do not need the five type-card catalogs to draw that chart.
 
 **Why this priority**: The named failure is one blob of guidance. Session planning is a chart job. Mixing it with every Hook, Development, Cliffhanger, Climax, and Resolution card wastes attention and produces filler or railroads.
 
@@ -52,9 +58,10 @@ They produce a session spine: length, prize, opposition, Hook/Climax/Resolution 
 **Acceptance Scenarios**:
 
 1. **Given** a job to plan a session, **When** the author starts, **Then** the composition skill is the primary skill.
-2. **Given** that planning job, **When** the author produces the spine, **Then** the chart starts with one Hook, ends with one Climax then one Resolution, and places Developments and Cliffhangers only in alternating order.
-3. **Given** that spine, **When** a reviewer inspects it, **Then** each prepared beat advances at least one live thread, early pairs cost less than later pairs, and How the Scene Resolves of each slot names a trigger for the next.
+2. **Given** that planning job, **When** the author produces the session plan, **Then** the chart starts with one Hook, ends with one Climax then one Resolution, and places Developments and Cliffhangers only in alternating order.
+3. **Given** that session plan, **When** a reviewer inspects it, **Then** each prepared beat advances at least one live thread, early pairs cost less than later pairs, and the handoff of each slot names a trigger for the next.
 4. **Given** that planning job, **When** the author draws the chart, **Then** they are not required to open the Hook, Development, Cliffhanger, Climax, or Resolution type-card catalogs.
+5. **Given** that session plan, **When** the DM opens it, **Then** they see compass, beat map, floating beats, pressure, and PC touchpoints in current-template layout, and they follow links to typed beat pages rather than running the night from duplicated beat jobs on the chart.
 
 ---
 
@@ -62,7 +69,7 @@ They produce a session spine: length, prize, opposition, Hook/Climax/Resolution 
 
 A Co-DM is writing a new session beat of one type, editing an existing beat of that type, or creating content for that beat (situation, pressure, spoken opening, procedure, landing). They load that **type skill** as primary: Hook, Development, Cliffhanger, Climax, or Resolution.
 
-The type skill owns that type's job, when it is complete, its cards (the proven shapes under that type), and how to fill this beat. A Hook author can finish a Hook without reading Development, Cliffhanger, Climax, or Resolution cards. The same isolation holds for the other four types, except the named seams in User Story 3.
+They copy that type's draft template. The page is `type: session-prep` with kind matching the beat (`hook`, `development`, `cliffhanger`, `climax`, or `resolution`). The type skill owns that type's job, when it is complete, its cards (the proven shapes under that type), and how to fill this beat. A Hook author can finish a Hook without reading Development, Cliffhanger, Climax, or Resolution cards. The same isolation holds for the other four types, except the named seams in User Story 3.
 
 **Why this priority**: The second half of the split. A Hook is not a Cliffhanger. Loading every type to write one beat is the same blob as before.
 
@@ -86,7 +93,7 @@ Named seams that require a second skill:
 - Filling a chart slot → composition loads that type skill.
 - Chart position, polarity, thread harvest, or transition is in question while writing a typed beat → the type skill loads composition.
 - **Play a Cliffhanger as Hook** or **Play a Development as Hook** → Hook loads the borrowed type.
-- How the Scene Resolves names the next type → the current type skill may load that next type only for the handoff, not for rewriting this beat.
+- the handoff names the next type → the current type skill may load that next type only for the handoff, not for rewriting this beat.
 
 Any other reason to open a second type-card catalog is a defect.
 
@@ -124,20 +131,23 @@ Type skills carry that type's cards from the same method (Kidnapped, Discovery, 
 
 ---
 
-### User Story 5 - Cockpit, Work, and live-beat assembly keep their owners (Priority: P3)
+### User Story 5 - Typed beat templates are the live pages; Work and crafts keep their owners (Priority: P1)
 
-This split does not take jobs that already have owners. New live beats still match the Session 11 cockpit. The session spine still stays the chart, not a second cockpit. No campaign wiki write until the DM accepts. The existing live-beat assembly job still builds the page the DM runs. Theatre of the mind still owns spoken player text. Encounter, trap, place, and monster crafts still own their math and sites. Composition and type skills may hand off to those owners; they do not replace them.
+A Co-DM writing a Hook, Development, Cliffhanger, Climax, or Resolution copies that type's draft template. The page the DM runs is that filled template. Draft jobs stay. Layout matches current wiki templates: columns, tables, omit unused. Session 11 remains the scan-quality bar — a DM can timebox, speak the opening, and name the next state from that page alone. It is not a required heading-name match.
 
-**Why this priority**: A split that rewrites format or steals assembly is a different feature and would break Session 11.
+The session plan still stays the chart, not a sixth live beat. No campaign wiki write until the DM accepts. Theatre of the mind still owns spoken player text. Encounter, trap, place, and monster crafts still own their math and sites. Type skills fill the typed page. They do not hand the beat to a later assembly step that rewrites it into a Session 11 cockpit.
 
-**Independent Test**: After the split, compose one new live beat of any type. A second DM judges it the same kind of card as a Session 11 beat of that type. Work was proposed in chat before any wiki write. Live-beat assembly still produced the cockpit.
+**Why this priority**: The draft jobs are the product. Cloning Session 11 headings would throw them away. Two layouts (draft then cockpit) is the blob again.
+
+**Independent Test**: Give an author a job to write a Hook. The page starts from the Hook draft template. A second DM can run it from that page and does not need a Session 11 heading spine. Work was proposed in chat before any wiki write.
 
 **Acceptance Scenarios**:
 
-1. **Given** a new live beat written under a type skill, **When** the DM opens it in Reading view, **Then** it is the same kind of cockpit card as a Session 11 beat of that type.
-2. **Given** a new session spine written under composition, **When** the DM opens it, **Then** it still does not duplicate Scene ends when, Zones, or Be ready for.
+1. **Given** a new live beat written under a type skill, **When** the DM opens it in Reading view, **Then** it presents that type's draft jobs in current-template layout (columns where a dashboard pair shares the scan), not Session 11 heading order.
+2. **Given** that page, **When** a second DM scans it, **Then** they can timebox the slice, speak the opening, and name the next state without another format guide.
 3. **Given** proposed beats, **When** the DM has not accepted, **Then** no campaign wiki page is written.
 4. **Given** spoken player text on a beat, **When** it is written, **Then** theatre of the mind still owns it. **Given** a fight, trap, or site on a beat, **When** those are designed, **Then** their existing craft owners still own them.
+5. **Given** a filled typed beat, **When** it is filed, **Then** no later assembly rewrites it into a Session 11 cockpit card.
 
 ---
 
@@ -280,13 +290,14 @@ A region page is runnable at the table when it has: spoken look; At a glance; Cu
 - Editing one beat on an existing spine: type skill is primary; composition loads only if order, polarity, threads, or transitions change.
 - Creating content for a beat is filling that beat's jobs, not becoming encounter, trap, place, or spoken-prose crafts. Hand off; do not absorb.
 - Two consecutive same-type middle beats: composition rejects the order and recomputes; it does not pad a third beat of the other type just to satisfy the chart.
-- Unused template sections on a new spell, vehicle, faction, lore, quest, city, or region page are omitted; filled jobs stay.
+- Unused template sections on a new spell, vehicle, faction, lore, quest, city, region, or typed beat page are omitted; filled jobs stay.
 - The central question resolves early: that resolution is the Climax; deliver Resolution rather than padding to a planned slot.
 - A cold open before the Hook is not a second Hook.
 - A type skill restating the full Beat Chart, or composition restating another type's card catalog, is a defect.
 - After this feature, no remaining single skill contains the full chart plus all five type-card catalogs.
 - Existing Session 11 beats and spines are not rewritten solely to prove the split.
 - Companion notes (hazards tables) are not typed beats and do not load type skills.
+- A new typed beat MUST NOT be judged by whether Session 11 heading names are present.
 - Ingest MUST NOT map `lore` to `item`. World-truth notes use `type: lore`. Actual items stay `item`.
 - A beat that needs a named craft, spell, faction, lore note, quest, city, or region hands off to that wiki kind; the beat skill still owns the beat.
 - `place-design` is the hub for all places. It defers to `city-design` for `kind: city` and to `region-design` for region jobs. Site places still use `wiki/templates/place.md`.
@@ -306,7 +317,7 @@ A region page is runnable at the table when it has: spoken look; At a glance; Cu
 ### Functional Requirements
 
 - **FR-001**: A job to plan a session, one-shot, adventure arc, or expedition evening MUST use the composition skill as its primary skill.
-- **FR-002**: The composition skill MUST direct Beat Chart assembly: one Hook to start; Developments and Cliffhangers only in alternating order; one Climax followed by one Resolution to end; polarity as in User Story 4; about thirty minutes per beat; Hook, Climax, and Resolution together about ninety minutes; plant threads early, harvest them at the Climax, show their final state in the Resolution; escalate cost across the middle; treat How the Scene Resolves as the next beat's trigger.
+- **FR-002**: The composition skill MUST direct Beat Chart assembly: one Hook to start; Developments and Cliffhangers only in alternating order; one Climax followed by one Resolution to end; polarity as in User Story 4; about thirty minutes per beat; Hook, Climax, and Resolution together about ninety minutes; plant threads early, harvest them at the Climax, show their final state in the Resolution; escalate cost across the middle; treat each beat's handoff as the next beat's trigger. Composition MUST fill the session-plan draft supplied for this feature. That page MUST include compass, beat map, floating beats, pressure, and PC touchpoints. It MUST NOT duplicate a live beat's run jobs.
 - **FR-003**: A job to write a new beat of one type, edit a beat of that type, or create content for that beat MUST use that type's skill as its primary skill.
 - **FR-004**: There MUST be exactly five type skills, one each for Hook, Development, Cliffhanger, Climax, and Resolution. Subtype cards MUST live with their type. There MUST NOT be a separate skill per subtype card.
 - **FR-005**: A type skill MUST own that type's purpose, completion test, cards, and how to fill this beat. It MUST NOT own Beat Chart assembly.
@@ -317,9 +328,9 @@ A region page is runnable at the table when it has: spoken look; At a glance; Cu
 - **FR-010**: Newly composed sessions MUST satisfy the three Beat Chart rules and polarity in User Story 4.
 - **FR-011**: Prepared beats MUST be situations with at least two viable player responses. The chart MUST recompute after play rather than forcing the next prepared slot. The chart MAY shrink, branch, pause, or end early when the new state warrants it.
 - **FR-012**: A card MUST be selected because current fiction calls for it, not to fill an empty slot.
-- **FR-013**: New live beats MUST still match the Session 11 cockpit owned by the session-beat format standard. New spines MUST still stay the chart and MUST NOT duplicate the cockpit.
+- **FR-013**: New live beats MUST copy that type's draft template (Hook, Development, Cliffhanger, Climax, or Resolution). They MUST keep that draft's jobs. They MUST use the same scan layout family as current wiki templates (columns, tables, omit unused). Session 11 cockpit heading names MUST NOT be the pass test. Pass is the type's jobs plus readable scan, not heading-order match.
 - **FR-014**: No campaign wiki write until the DM accepts, except named ingest stubs already allowed by Work rules.
-- **FR-015**: Live-beat assembly, theatre of the mind, and encounter, trap, place, and monster crafts MUST keep their existing jobs. Composition and type skills MAY hand off to them and MUST NOT replace them.
+- **FR-015**: Theatre of the mind and encounter, trap, place, and monster crafts MUST keep their existing jobs. Composition and type skills MAY hand off to them and MUST NOT replace them. Live-beat assembly MUST NOT rewrite a typed beat into a Session 11 cockpit.
 - **FR-016**: Existing Session 11 beats and spines MUST NOT be rewritten solely to satisfy this feature.
 - **FR-017**: After this feature, no single skill MAY contain the full Beat Chart plus all five type-card catalogs.
 - **FR-018**: Companion notes that are not typed beats MUST NOT be required to load a type skill.
@@ -358,6 +369,8 @@ A region page is runnable at the table when it has: spoken look; At a glance; Cu
 - **FR-051**: A new or edited region page MUST include: spoken look; At a glance; Current state; geography and travel enough to choose a route; active powers; and a change log. Extra scaffold headings MUST be omitted by scale (macro / regional / local) when they add no choice. Pass is those jobs, not heading-order match. A region MUST NOT invent pressure. If a pressure is already stated, the region MUST link that wiki note. `type: front` MUST NOT be revived.
 - **FR-052**: Campaign `type` MUST include `region`. Layout MUST list jobs for Region matching FR-051.
 - **FR-053**: A job to write, edit, or create a region page MUST use `region-design` as its primary skill. `place-design` MUST defer to `region-design` for region jobs and MUST NOT write the region page itself.
+- **FR-054**: The five typed beat templates and the session-plan draft supplied for this feature MUST be the scaffolds for Hook, Development, Cliffhanger, Climax, Resolution, and the session plan. They MUST be shaped into one family with current wiki-template layout. Unused sections MUST be omitted.
+- **FR-055**: New live beats and the session plan MUST use campaign `type: session-prep`. Kind MUST be `hook`, `development`, `cliffhanger`, `climax`, `resolution`, or `session-plan`. Layout MUST list jobs for those kinds. `type: beat`, `type: session-beat`, and `type: session-plan` MUST NOT be added.
 
 ### Key Entities
 - **Composition skill**: The skill that loads when planning a session. It directs how to compose beats together as a Beat Chart. It does not write a typed beat's cards.
@@ -370,8 +383,8 @@ A region page is runnable at the table when it has: spoken look; At a glance; Cu
 - **Resolution**: The tag after the Climax. Shows what changed, what it cost, and what players can pursue next.
 - **Card**: A proven shape under a type (Discovery, Chase, Clue, Final Battle, Happy Ending, and the rest in campaign use). Trigger, stakes, player options, agency note.
 - **Named seam**: A job that may load a second skill. Listed in FR-008.
-- **Session spine**: The session-level chart the DM opens for order and purpose. Not a cockpit.
-- **Live beat**: One ~thirty-minute slice the DM runs. Format owned by the Session 11 cockpit standard.
+- **Session plan** (formerly referred to as "session spine"): The session-level chart the DM opens for order and purpose. `type: session-prep`, kind `session-plan`. Copied from the session-plan draft. Not a live beat.
+- **Live beat**: One ~thirty-minute slice the DM runs. `type: session-prep` with kind `hook`, `development`, `cliffhanger`, `climax`, or `resolution`. Format owned by that type's draft template. Session 11 is scan-quality evidence, not the heading spine.
 - **Work**: Mutable prep. Not wiki until the DM accepts.
 - **Vehicle page**: A named craft note. `type: vehicle`. Sheet, components, crew, handling, combat. Owner: `vehicle-design`.
 - **Spell page**: A named spell note. `type: spell`. Narration, classification, runnable effect. Discovery and Lore when needed. Owner: `spell-design`.
@@ -395,11 +408,11 @@ A region page is runnable at the table when it has: spoken look; At a glance; Cu
 ### Measurable Outcomes
 
 - **SC-001**: Two independent reviewers classify a set of at least 15 jobs covering plan-a-session plus write, edit, and create-content for each of the five types, and agree on the primary skill for 100% of those jobs.
-- **SC-002**: In a session-planning job, an author produces a valid Beat Chart spine without opening any of the five type-card catalogs.
+- **SC-002**: In a session-planning job, an author produces a valid Beat Chart session plan from the session-plan draft, without opening any of the five type-card catalogs, and the page includes compass, beat map, floating beats, pressure, and PC touchpoints.
 - **SC-003**: In a typed-beat write, edit, or create-content job with no named seam, 0% of the other four type-card catalogs are opened.
 - **SC-004**: In a review of newly composed sessions after this feature is in force, 100% start with one Hook, end with one Climax then one Resolution, and contain no consecutive same-type middle beats.
 - **SC-005**: In that same review, 100% of action Hooks are followed by a Development, 100% of cerebral Hooks are followed by a Cliffhanger, 100% of action Climaxes are preceded by a Development, and 100% of cerebral Climaxes are preceded by a Cliffhanger.
-- **SC-006**: In a side-by-side Reading-view comparison, a second DM judges 100% of newly composed live beats as the same kind of card as a Session 11 beat of that type.
+- **SC-006**: In a Reading-view review of newly composed live beats, 100% present that type's draft jobs (not Session 11 heading order) and are scannable as current wiki templates (columns present where a pair of jobs share a dashboard).
 - **SC-007**: After this feature is in force, 0% of skills contain both the full Beat Chart and all five type-card catalogs.
 - **SC-008**: After this feature is in force, 0% of existing Session 11 beats or spines are rewritten solely to prove the split.
 - **SC-009**: In a walkthrough that plans a session then fills one Hook and one later typed beat, extra skills load only when a named seam fires; 0% extra type-card catalogs open otherwise.
@@ -427,12 +440,15 @@ A region page is runnable at the table when it has: spoken look; At a glance; Cu
 - **SC-031**: 100% of new region pages started from `wiki/templates/region.md` include spoken look, At a glance, Current state, geography/travel enough to choose a route, active powers, and a change log. 0% of region pages invent a pressure that was not already stated. 100% of already-stated pressures that matter here are linked, not copied.
 
 - **SC-032**: Two reviewers classify write, edit, and create-content jobs for a region page and agree `region-design` is primary for 100% of those jobs. 0% of those jobs stay on `place-design` after the hub defers.
+- **SC-033**: In a Reading-view review of newly composed session plans, 100% follow the session-plan draft jobs (not Session 11 spine heading order), link to typed beat pages, and do not duplicate Scene ends when, Zones, or Be ready for.
+- **SC-034**: 100% of newly composed live beats and session plans are `type: session-prep` with the matching kind. 0% use `type: beat`, `type: session-beat`, or `type: session-plan`.
 ## Assumptions
 
 - "Type of beat" means the five Beat Chart types (Hook, Development, Cliffhanger, Climax, Resolution), not one skill per subtype card. Cards stay inside their type skill.
 - The current session-beats blob is split into the composition skill plus the five type skills. The blob is not kept beside the split.
 - Method source is *Scripting the Game* (Pondsmith, with concepts from Flint Dille, R. Talsorian Games, 2020), as already adapted for this campaign: Beat Chart rules plus player-agency gates. Skills teach the methods; they do not paste the source text.
-- Session 11 cockpit format, session-folder filing, Work accept-before-wiki, live-beat assembly, theatre of the mind, and encounter/trap/place/monster crafts stay as they are for beats. This feature also adds spell, vehicle, faction, lore, quest, city, and region wiki kinds: templates, Layout jobs, `vehicle-design` updated to fill the vehicle sheet, a new `spell-design` skill, a new `faction-design` skill, a new `lore-design` skill, a new `city-design` skill, and a new `region-design` skill so those pages are runnable. `place-design` remains the hub for places and defers to specialized skills. `faction-prep` is removed. The ingest remap `lore`→`item` is removed. `world-tick` is updated to append the faction-turn log and still owns off-screen faction advancement; it does not advance quest portents. The faction page owns the agenda clock; `hot.md` may point at the faction and does not store a second clock. Lore pages use `wiki/templates/lore.md` and the FR-035 jobs. Lore is not canon until players interact with or witness it; wrapup/reconcile then own Current Truth updates and the Canon Log. Quest pages use `wiki/templates/quest.md` and the FR-041 jobs; `narrative-islands` is primary, is updated to fill that template, and owns later quest updates including rolls and the Quest log. No `quest-design` skill is added. Durable sandbox situations are `type: quest` only; `type: front` and `type: encounter` are retired. City pages use `wiki/templates/city.md` and the FR-047 jobs; they remain `type: place` with `kind: city`. Region pages use `wiki/templates/region.md` and the FR-051 jobs. New skills and major skill redesigns dispatch to Claude Code (minimal prompt, Opus 4.6 medium). `AGENTS.md` tables, templates, and small tweaks to established files stay with the session agent. A Claude Code usage limit defers only that job unless FR-026's Codex fallback applies.
+- Session-folder filing, Work accept-before-wiki, theatre of the mind, and encounter/trap/place/monster crafts stay as they are for beats. New live beats use the typed draft templates, not the Session 11 heading spine. New session plans use the session-plan draft, not the Session 11 spine heading list. Session 11 remains scan-quality evidence. Live-beat assembly does not rewrite a typed beat into a Session 11 cockpit. This feature also adds spell, vehicle, faction, lore, quest, city, and region wiki kinds: templates, Layout jobs, `vehicle-design` updated to fill the vehicle sheet, a new `spell-design` skill, a new `faction-design` skill, a new `lore-design` skill, a new `city-design` skill, and a new `region-design` skill so those pages are runnable. `place-design` remains the hub for places and defers to specialized skills. `faction-prep` is removed. The ingest remap `lore`→`item` is removed. `world-tick` is updated to append the faction-turn log and still owns off-screen faction advancement.
+- DM-facing callouts on the typed drafts stay for scan. `[!narration]` remains the only player-spoken surface. Harmonizing shared identity keys besides `type` and `kind` is a planning concern.
 - Creating content for a beat means filling that beat's jobs (situation, pressure, spoken opening, procedure, landing), then handing off to existing crafts when those crafts own the work, including vehicle, spell, faction, lore, quest, city, and region pages when a beat needs a named craft, spell, faction, lore note, quest, city, or region.
 - A cold open is not a Hook and is out of scope for the beat skills.
-- Out of scope: rewriting Session 11 to prove the split; Foundry staging; a second pacing system beside the Beat Chart; one skill per beat-subtype card; changing who owns cockpit layout or spoken player text.
+- Out of scope: rewriting Session 11 files to prove the split or the new templates; Foundry staging; a second pacing system beside the Beat Chart; one skill per beat-subtype card; changing who owns spoken player text.
