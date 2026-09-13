@@ -23,6 +23,10 @@
 - Q: What job should those seventeen legacy content types do in this feature? → A: Layout kinds only, and only for types that are not already a campaign `type`. Existing `type` values stay. Do not add a second name for Characters (`npc`), Places (`place`/`region`), Factions (`faction`), Deities (`lore`), Items (`item`), Vehicles (`vehicle`), Creatures (`creature`), Situations (`quest`), Narrative Islands (`quest`), Sessions (`session`/`session-prep`/`recap`), or Lore (`lore`). Keep Encounters, Rules, System, DM Intelligence, Campaign State, and Source Material as layout kinds.
 - Q: For those six layout kinds, which files are wiki pages and which are agent files? → A: Wiki: Encounters, Rules, Campaign State, DM Intelligence. Agent-facing: System, Source Material.
 - Q: Where should the recorded table aim live relative to Campaign State and DM Intelligence? → A: Aim stays on the campaign hub, grouped under Campaign State. DM Intelligence is separate analysis, not the aim.
+- Q: Should Encounters, Rules, Campaign State, and DM Intelligence get wiki copy-start templates as new campaign page types, or as templates that leave the existing type list unchanged? → A: Templates for those four wiki groups; existing campaign type list unchanged.
+- Q: Which existing campaign type should a new Encounters, Rules, Campaign State, or DM Intelligence page use when copied from its template? → A: Encounters: `session-prep`; Rules: `lore`; Campaign State: `lore`; DM Intelligence: `work`.
+- Q: Should existing wiki pages in those four groups be rewritten onto the new templates, or do the templates apply only to new pages? → A: Rewrite existing pages in those four groups onto the new templates.
+- Q: Does rewriting those existing pages onto the templates wait for DM accept, or may agents do it without accept so long as page facts stay the same? → A: Agents rewrite without accept when facts stay the same; fact changes still wait on accept.
 
 
 ## User Scenarios & Testing *(mandatory)*
@@ -139,6 +143,8 @@ As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize fi
 6. **Given** a change to wiki facts, **When** agents would file it, **Then** that change still waits on the DM accept-gate. Layout is not a path around canon.
 7. **Given** a one-off file that is not growing a mixed dump, **When** agents consider reorganizing, **Then** they leave it; growth, not tidiness, is the trigger.
 8. **Given** System or Source Material files mixed with wiki pages, **When** agents regroup, **Then** those files stay agent-facing; they are not filed as wiki canon.
+9. **Given** a new Encounters, Rules, Campaign State, or DM Intelligence wiki page, **When** it is created, **Then** a matching copy-start template exists, and the page uses `session-prep`, `lore`, `lore`, or `work` respectively (no new type value).
+10. **Given** existing Encounters, Rules, Campaign State, or DM Intelligence wiki pages, **When** the templates land, **Then** those pages are rewritten onto the matching templates without adding a campaign `type`, without moving table aim off the hub, and without a DM accept step when page facts stay the same.
 
 ---
 
@@ -180,6 +186,8 @@ As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize fi
 - Changing wiki facts under the cover of a layout move: invalid; that is a canon write and still needs accept.
 - Asking the DM to approve folder names for helpers, ledgers, scripts, or wiki grouping: out of scope; agents own layout.
 - Changing a page's campaign `type` during a layout move: invalid; layout kinds group files, they do not replace `type`. Adding a layout kind that duplicates an existing `type` (Characters for `npc`, Places for `place`, and the other redundant names) is invalid. Filing Source Material or System files as wiki canon via layout is invalid.
+- Adding a campaign `type` for Encounters, Rules, Campaign State, or DM Intelligence: invalid. Those four have wiki copy-start templates; they stay layout kinds. New pages use `session-prep`, `lore`, `lore`, and `work` respectively. Existing pages in those four groups are rewritten onto those templates. System and Source Material do not get wiki templates.
+- Rewriting an existing Encounters, Rules, Campaign State, or DM Intelligence page onto its template while changing facts: invalid without accept. Structure-only rewrite is agent-owned.
 
 ## Requirements *(mandatory)*
 
@@ -231,6 +239,8 @@ As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize fi
 - **FR-044**: One-off files MUST NOT be reorganized solely for tidiness. Growth that makes lookup costly is the trigger.
 - **FR-045**: When a wiki page moves or is regrouped, agents MUST keep it findable in the same change (links and names still resolve).
 - **FR-046**: Layout MUST NOT be used as a path around the canon accept-gate.
+- **FR-047**: The wiki MUST have copy-start templates for Encounters, Rules, Campaign State, and DM Intelligence. New pages from those templates MUST use existing campaign `type` values: Encounters `session-prep`, Rules `lore`, Campaign State `lore`, DM Intelligence `work`. Those templates MUST NOT add campaign `type` values. System and Source Material MUST NOT get wiki templates.
+- **FR-048**: Existing Encounters, Rules, Campaign State, and DM Intelligence wiki pages MUST be rewritten onto the matching copy-start templates. That rewrite MUST NOT add a campaign `type`. Table aim MUST remain on the campaign hub. Agents MUST rewrite without DM accept when page facts stay the same. A rewrite that would change wiki facts MUST still wait on the DM accept-gate.
 
 ### Key Entities
 
@@ -250,7 +260,7 @@ As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize fi
 - **Error ledger** (`errors.md`): Agent-owned list of runtime failures. Filled when operations fail. Drained when the cause is actually fixed, including when improving the wiki.
 - **Agent-facing layout**: How helpers, ledgers, skills, System files, and Source Material are named and grouped. Owned by agents. Not wiki canon.
 - **Wiki layout**: How wiki (llm-wiki) pages are named and grouped by wiki **layout kind** (Encounters, Rules, Campaign State, DM Intelligence). Owned by agents. Optimized for findability and token cost as the system grows. Not a change to page facts or campaign `type`.
-- **Layout kind**: A grouping name for agent lookup. Not a campaign `type` value. Wiki: Encounters, Rules, Campaign State, DM Intelligence. Agent-facing: System, Source Material. Not used for Characters, Places, Factions, Deities, Items, Vehicles, Creatures, Situations, Narrative Islands, Sessions, or Lore — those already have `type`.
+- **Layout kind**: A grouping name for agent lookup. Not a campaign `type` value. Wiki: Encounters (`session-prep`), Rules (`lore`), Campaign State (`lore`), DM Intelligence (`work`) — each has a wiki copy-start template. Agent-facing: System, Source Material — no wiki templates. Not used for Characters, Places, Factions, Deities, Items, Vehicles, Creatures, Situations, Narrative Islands, Sessions, or Lore — those already have `type`.
 
 ## Success Criteria *(mandatory)*
 
@@ -285,12 +295,13 @@ As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize fi
 - **SC-027**: 0% of sampled layout changes that increased hops or unrelated load for the same job or layout kind are counted as improvements.
 - **SC-028**: In that sample, 0% of wiki layout moves change page facts, and 100% keep links resolving.
 - **SC-029**: 0% of sampled wiki fact changes are filed as layout moves without the DM accept-gate.
+- **SC-030**: 100% of Encounters, Rules, Campaign State, and DM Intelligence have a wiki copy-start template. New pages from those templates use `session-prep`, `lore`, `lore`, and `work` respectively. Existing pages in those four groups are rewritten onto the matching templates. 0% of those templates add a campaign `type` value. 0% of System or Source Material files are wiki templates. 100% of sampled rewrites keep table aim on the hub. 0% of structure-only rewrites required DM accept. 0% of sampled fact-changing rewrites skipped the accept-gate.
 
 ## Assumptions
 
 - Primary user is the human DM. Players receive the campaign; they do not operate this loop.
 - "Best possible campaign" is judged by the DM for this table. There is no hidden quality score the Co-DM optimizes without the DM.
-- This feature is the improvement loop around the existing Co-DM product. It does not replace ingest, prep proposals, play-surface staging, or wrapup filing. Layout kinds are lookup grouping only. Wiki layout kinds: Encounters, Rules, Campaign State, DM Intelligence. Agent-facing layout kinds: System, Source Material. They do not replace the campaign `type` enum and do not add a Work-coverage requirement per kind.
+- This feature is the improvement loop around the existing Co-DM product. It does not replace ingest, prep proposals, play-surface staging, or wrapup filing. Layout kinds are lookup grouping only. Wiki layout kinds: Encounters, Rules, Campaign State, DM Intelligence — each has a wiki copy-start template (`session-prep`, `lore`, `lore`, `work`) and does not become a campaign `type`. Agent-facing layout kinds: System, Source Material. They do not replace the campaign `type` enum and do not add a Work-coverage requirement per kind.
 - v1 remains one campaign, one table, D&D 5e.
 - Self-bootstrap means: produce Work from an incomplete start and name the gap. It does not mean the Co-DM rewrites campaign-facing practice without accept.
 - Self-reflection means: after wrapup (and after prep when asked), offer inspectable observations about these players. It does not mean a live agent at the table, and it does not mean contacting players.
