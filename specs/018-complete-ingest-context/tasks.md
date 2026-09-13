@@ -45,10 +45,10 @@ description: "Task list for Complete Ingest Context"
 
 **CRITICAL**: No user story work begins until this phase is complete.
 
-- [ ] T006 Add a complete-context pass after the primary is read and before extract/compile in `.agents/skills/wiki-ingest/SKILL.md` without creating a second skill
-- [ ] T007 Bound discovery in `.agents/skills/wiki-ingest/SKILL.md` to: "Candidates come from the primary’s content (links, embeds, explicit names) and from the primary’s own subject"; "Each identity is considered at most once per primary"
-- [ ] T008 Keep related files as corroboration only in `.agents/skills/wiki-ingest/SKILL.md`: "A related source is not an `open` ingest unit unless it is also a later named primary"; related reads must not open a later named file or attribute wiki/tracking writes to it while the current primary is `open`
-- [ ] T009 Point ingest-time search at existing collections in `.agents/skills/wiki-ingest/SKILL.md` without restating 004/009/015; ingest-time corroboration "does not use query-time short-circuit (`wiki` silence before legacy)"
+- [x] T006 Add a complete-context pass after the primary is read and before extract/compile in `.agents/skills/wiki-ingest/SKILL.md` without creating a second skill
+- [x] T007 Bound discovery in `.agents/skills/wiki-ingest/SKILL.md` to: "Candidates come from the primary’s content (links, embeds, explicit names) and from the primary’s own subject"; "Each identity is considered at most once per primary"
+- [x] T008 Keep related files as corroboration only in `.agents/skills/wiki-ingest/SKILL.md`: "A related source is not an `open` ingest unit unless it is also a later named primary"; related reads must not open a later named file or attribute wiki/tracking writes to it while the current primary is `open`
+- [x] T009 Point ingest-time search at existing collections in `.agents/skills/wiki-ingest/SKILL.md` without restating 004/009/015; ingest-time corroboration "does not use query-time short-circuit (`wiki` silence before legacy)"
 
 **Checkpoint**: Shared pass, discovery bound, sequential non-overlap, and collection pointer exist.
 
@@ -62,9 +62,9 @@ description: "Task list for Complete Ingest Context"
 
 ### Implementation for User Story 1
 
-- [ ] T010 [US1] Require in `.agents/skills/wiki-ingest/SKILL.md` that "a primary is not `complete` until related discovery has run, each candidate is `read`, `missed`, or `unreadable`, recency has been applied, and 015 destinations exist for extracted ideas"
-- [ ] T011 [US1] Require in `.agents/skills/wiki-ingest/SKILL.md` that "Related misses do not by themselves fail the primary" and "Failure of the primary still requires a reason"
-- [ ] T012 [US1] Forbid skipping related search for speed in `.agents/skills/wiki-ingest/SKILL.md`; a primary with no related hits still completes from its own content
+- [x] T010 [US1] Require in `.agents/skills/wiki-ingest/SKILL.md` that "a primary is not `complete` until related discovery has run, each candidate is `read`, `missed`, or `unreadable`, recency has been applied, and 015 destinations exist for extracted ideas"
+- [x] T011 [US1] Require in `.agents/skills/wiki-ingest/SKILL.md` that "Related misses do not by themselves fail the primary" and "Failure of the primary still requires a reason"
+- [x] T012 [US1] Forbid skipping related search for speed in `.agents/skills/wiki-ingest/SKILL.md`; a primary with no related hits still completes from its own content
 
 **Checkpoint**: Completeness is discovery-plus-primary, not primary-alone.
 
@@ -78,9 +78,9 @@ description: "Task list for Complete Ingest Context"
 
 ### Implementation for User Story 2
 
-- [ ] T013 [US2] Require staging search of `_raw/` in `.agents/skills/wiki-ingest/SKILL.md` with related origin `staging` and status `unread` → `read` | `missed` | `unreadable`
-- [ ] T014 [US2] Require legacy-collection search via the existing `qmd` CLI in `.agents/skills/wiki-ingest/SKILL.md` with origin `legacy`; fetch full sources before relying on a fact; do not answer from snippets
-- [ ] T015 [US2] Require in `.agents/skills/wiki-ingest/SKILL.md` that a staging hit does not skip legacy search and a legacy hit does not skip staging search; "no filing a legacy hit as a wiki page without DM accept"
+- [x] T013 [US2] Require staging search of `_raw/` in `.agents/skills/wiki-ingest/SKILL.md` with related origin `staging` and status `unread` → `read` | `missed` | `unreadable`
+- [x] T014 [US2] Require legacy-collection search via the existing `qmd` CLI in `.agents/skills/wiki-ingest/SKILL.md` with origin `legacy`; fetch full sources before relying on a fact; do not answer from snippets
+- [x] T015 [US2] Require in `.agents/skills/wiki-ingest/SKILL.md` that a staging hit does not skip legacy search and a legacy hit does not skip staging search; "no filing a legacy hit as a wiki page without DM accept"
 
 **Checkpoint**: Both places are searched; legacy stays campaign-of-record context.
 
@@ -94,9 +94,9 @@ description: "Task list for Complete Ingest Context"
 
 ### Implementation for User Story 3
 
-- [ ] T016 [US3] Rank the primary plus related sources in `.agents/skills/wiki-ingest/SKILL.md` so newest files are latest decisions; recency "defaults to which file is newer" unless "the content itself dates a decision more clearly"
-- [ ] T017 [US3] Require in `.agents/skills/wiki-ingest/SKILL.md` that "Uncontradicted older detail remains available as supporting context" and "an older source must not silently replace a newer decision"; surface that conflict as a proposal or explicit unresolved item
-- [ ] T018 [US3] Require in `.agents/skills/wiki-ingest/SKILL.md` "no silent overwrite of compiled wiki canon"; named ingest of an approved primary still follows 015 for compiling that primary
+- [x] T016 [US3] Rank the primary plus related sources in `.agents/skills/wiki-ingest/SKILL.md` so newest files are latest decisions; recency "defaults to which file is newer" unless "the content itself dates the decision more clearly"
+- [x] T017 [US3] Require in `.agents/skills/wiki-ingest/SKILL.md` that "Uncontradicted older detail remains available as supporting context" and "an older source must not silently replace a newer decision"; surface that conflict as a proposal or explicit unresolved item
+- [x] T018 [US3] Require in `.agents/skills/wiki-ingest/SKILL.md` "no silent overwrite of compiled wiki canon"; named ingest of an approved primary still follows 015 for compiling that primary
 
 **Checkpoint**: Recency ranks sources; wiki canon and older support both hold.
 
@@ -110,9 +110,9 @@ description: "Task list for Complete Ingest Context"
 
 ### Implementation for User Story 4
 
-- [ ] T019 [US4] Extend the per-file ingest record in `.agents/skills/wiki-ingest/SKILL.md` to list the primary and each related read with identity, origin (`staging` | `legacy`), and role
-- [ ] T020 [US4] Require misses (named related identity not found or not readable, with reason) in that record in `.agents/skills/wiki-ingest/SKILL.md`
-- [ ] T021 [US4] Require recency conflicts in that record in `.agents/skills/wiki-ingest/SKILL.md`; "A “no related hits” search is still recorded, not omitted"
+- [x] T019 [US4] Extend the per-file ingest record in `.agents/skills/wiki-ingest/SKILL.md` to list the primary and each related read with identity, origin (`staging` | `legacy`), and role
+- [x] T020 [US4] Require misses (named related identity not found or not readable, with reason) in that record in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T021 [US4] Require recency conflicts in that record in `.agents/skills/wiki-ingest/SKILL.md`; "A “no related hits” search is still recorded, not omitted"
 
 **Checkpoint**: Completeness is visible from the ingest record alone.
 
@@ -122,10 +122,10 @@ description: "Task list for Complete Ingest Context"
 
 **Purpose**: Public-seam check and artifact alignment after the skill change.
 
-- [ ] T022 [P] Align final workflow language in `specs/018-complete-ingest-context/contracts/complete-ingest-context.md`
-- [ ] T023 [P] Align expected outcomes in `specs/018-complete-ingest-context/quickstart.md`
-- [ ] T024 Add the runnable fixture check at `specs/018-complete-ingest-context/fixtures/check.py` covering quickstart scenarios 1–6 (related reads, recency, misses, sequential non-overlap, ingest record). Assert page and record outcomes; do not snapshot skill wording
-- [ ] T025 Run every scenario in `specs/018-complete-ingest-context/quickstart.md` via `.venv/bin/python specs/018-complete-ingest-context/fixtures/check.py`
+- [x] T022 [P] Align final workflow language in `specs/018-complete-ingest-context/contracts/complete-ingest-context.md`
+- [x] T023 [P] Align expected outcomes in `specs/018-complete-ingest-context/quickstart.md`
+- [x] T024 Add the runnable fixture check at `specs/018-complete-ingest-context/fixtures/check.py` covering quickstart scenarios 1–6 (related reads, recency, misses, sequential non-overlap, ingest record). Assert page and record outcomes; do not snapshot skill wording
+- [x] T025 Run every scenario in `specs/018-complete-ingest-context/quickstart.md` via `.venv/bin/python specs/018-complete-ingest-context/fixtures/check.py`
 
 ---
 
