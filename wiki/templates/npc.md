@@ -16,7 +16,7 @@ faction: none
 visibility: dm
 summary: ""
 ---
-<!-- Copy-start scaffold. Who/want, look, first minutes and posture change, named ties. Combat omit-if-empty. Omit unused identity keys (aliases unused; location unknown; faction none). Pass is person jobs in wiki/AGENTS.md Layout. -->
+<!-- Copy-start scaffold. Who/want, look, first minutes and posture change, Connections (named ties). Single H1 only (`# {{title}}`). Combat omit-if-empty. Omit unused identity keys (aliases unused; location unknown; faction none). Pass is person jobs in wiki/AGENTS.md Layout. -->
 
 # {{title}}
 
@@ -63,10 +63,11 @@ What ends the welcome, closes the door, or takes priority.
 ```
 ````
 
-# Relationships
+## Connections
 
-| Relationship | Meaning |
-| ------------ | ------- |
-| [[page]]     | What this tie does at the table. |
+| Connection | Meaning |
+| ---------- | ------- |
+| [[page]]   | What this tie does at the table. |
 
+<!-- Shared heading Connections (not Relationships). Omit when unused. -->
 <!-- Combat: omit unless they can fight. Encounter rule plus sheet or one pointer. -->
