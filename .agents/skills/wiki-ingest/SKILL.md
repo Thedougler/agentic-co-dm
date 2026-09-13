@@ -23,9 +23,9 @@ You are ingesting source documents into an Obsidian wiki. Your job is not to sum
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `OBSIDIAN_SOURCES_DIR`, `OBSIDIAN_LINK_FORMAT` (default: `wikilink`), and `WIKI_STAGED_WRITES`. Only read the specific variables you need — do not log, echo, or reference any other values from these files.
 2. **Check `WIKI_STAGED_WRITES`** — if set to `true`, all new and updated category pages go to `_staging/<category>/` instead of their final location. Tell the user at the start of the ingest: "Staged writes mode is enabled — pages will land in `_staging/` for your review. Run `/wiki-stage-commit` when ready to promote."
-3. Read `.manifest.json` at the vault root to check what's already been ingested
-4. Read `index.md` to understand current wiki content
-5. Read `log.md` to understand recent activity
+3. **Manifest (do not read `.manifest.json` whole — token waste):** use `python3 scripts/manifest.py` against `$OBSIDIAN_VAULT_PATH` — `stats`, `has`/`get`/`delta` for sources, `lookup --page` for reverse page→sources, `upsert` after write. Loading the full ledger into context is a bug.
+4. Prefer capped lookup (`qmd` / targeted `rg` / `hot.md`) over reading all of `index.md` or `log.md` unless you truly need the full inventory
+5. Skim recent activity via `hot.md` first; open `log.md` only for a bounded recent slice if needed
 6. **Campaign vault.** Read `$OBSIDIAN_VAULT_PATH/AGENTS.md` (`wiki/AGENTS.md` in this repo). Load craft skills per the Quality pass in Step 5. Campaign pages need `type`, `lifecycle`, and `reveal` from that file in addition to llm-wiki fields. A body written in AI shorthand or telegram stubs is invalid — rewrite as complete sentences before filing. Ingest only sources the DM named and approved (FR-019). Write distilled pages plus thin complete-sentence stubs for names in those sources (including as links). Do not create pages for names the sources do not contain. Invented extra names are a separate Work proposal. Early-dev `wiki/_raw/` samples stay in `_raw/` as illustrations, not a layout source (do not move them to `_archive/`). General ingest still distills. Sample `type: monster` maps to campaign `type: creature`. Wrapup of a legacy page keeps that page's shape; it MUST NOT convert the page into a sample.
 
 
@@ -104,7 +104,7 @@ obsidian-wiki cache-update "$OBSIDIAN_VAULT_PATH" <source> --pages <page1> [page
 
 Failed files MUST NOT be hashed as success.
 
-**Fallback** (if `obsidian-wiki` is not installed): compute hashes manually with `sha256sum -- "<file>"` (Linux) or `shasum -a 256 -- "<file>"` (macOS) and compare against `content_hash` in `.manifest.json`. If the entry has no `content_hash`, fall back to mtime comparison.
+**Fallback** (if `obsidian-wiki` is not installed): `python3 scripts/manifest.py delta "$OBSIDIAN_VAULT_PATH" --paths-file <list>` (or `has`/`get` per path). Do **not** read the whole `.manifest.json`. If needed, compute `sha256sum`/`shasum -a 256` and compare to the single entry's `content_hash` from `get`; if missing, fall back to mtime.
 
 This avoids redundant work even when timestamps are unreliable (git checkout, NFS drift, copy operations).
 
@@ -542,21 +542,17 @@ After writing pages, check that wikilinks work in both directions. If page A lin
 
 ### Step 7: Update Manifest and Special Files
 
-**`.manifest.json`** — For each source file ingested, add or update its entry:
+**`.manifest.json`** — Prefer `python3 scripts/manifest.py upsert "$OBSIDIAN_VAULT_PATH" <source> --json '{...}'` (never load/edit the whole file in context). Entry shape:
 ```json
 {
   "content_hash": "sha256:<64-char-hex>",
   "last_ingested": "TIMESTAMP",
   "pages_produced": ["list/of/pages.md"],
-  "source_type": "document",  // or "image" for png/jpg/webp/gif and image-only PDFs; "data" for chat/log/CSV/JSON sources
+  "source_type": "document",
   "project": "project-name-or-null"
 }
 ```
-`content_hash`, `last_ingested`, and `pages_produced` are the three fields `cache.py` reads and writes (`cache-check` / `cache-update`) — the field names must match exactly or incremental-skip detection breaks. `content_hash` is the SHA-256 of the file contents at ingest time; it's the primary skip signal on subsequent runs, so always write it. `source_type` and `project` are advisory metadata for your own bookkeeping — the cache layer doesn't read them.
-
-Also update `stats.total_sources_ingested` and `stats.total_pages`.
-
-If the manifest doesn't exist yet, create it with `version: 1`.
+`content_hash`, `last_ingested`, and `pages_produced` are the three fields `cache.py` reads and writes (`cache-check` / `cache-update`) — names must match. `content_hash` is the primary skip signal. `source_type` and `project` are advisory. `upsert` maintains stats; if the ledger is missing, create `version: 1` via the CLI/path the helper uses — still do not dump the file into context.
 
 **`index.md`** — Add entries for any new pages, update summaries for modified pages.
 
