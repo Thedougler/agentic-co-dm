@@ -9,8 +9,9 @@ Who these players are and the current campaign intent.
 - **players**: Named people at the table (at least one; tests use three).
 - **intent**: What this campaign is trying to be for them now.
 - **status**: `missing` → `recorded` (after DM accept on the campaign hub) → `updated`.
+- **home**: Campaign hub wiki page, grouped under layout kind Campaign State.
 
-Validation: Co-DM MUST NOT treat Work as aimed while `missing`. Work that could swap onto another table without edits is not aimed.
+Validation: Co-DM MUST NOT treat Work as aimed while `missing`. Work that could swap onto another table without edits is not aimed. DM Intelligence MUST NOT hold a second copy of the aim.
 
 ## Sitting
 
@@ -61,17 +62,28 @@ Chat Work after wrapup (and after prep when asked).
 
 Validation: reject leaves wiki facts and campaign-facing practice unchanged. Accept that needs a fact change becomes a Canon proposal. Accept that needs campaign-facing practice becomes an Improvement proposal. Token/layout/ledger are not this object.
 
+## Layout Kind
+
+Grouping name for agent lookup. Not a campaign `type`. Not a frontmatter field.
+
+- **name**: One of Encounters, Rules, Campaign State, DM Intelligence, System, Source Material
+- **surface**: `wiki` (Encounters, Rules, Campaign State, DM Intelligence) | `agent-facing` (System, Source Material)
+
+Validation: MUST NOT duplicate an existing `type` (Characters, Places, Factions, Deities, Items, Vehicles, Creatures, Situations, Narrative Islands, Sessions, Lore). System and Source Material MUST NOT be treated as wiki canon. Source Material is `wiki/_raw/` staging. System is skills/`AGENTS.md`/`docs/agents`. Campaign State includes the campaign hub. DM Intelligence is not the aim.
+
 ## Layout Move
 
 Regroup of agent-facing files or wiki pages.
 
 - **from** / **to**: Locations
 - **scope**: `agent-facing` | `wiki`
+- **layout_kind**: One Layout Kind name
 - **facts_changed**: Must be false for wiki moves
+- **type_changed**: Must be false
 - **links_resolve**: Must be true after the move
 - **trigger**: `growth` (mixed dump / unrelated load). Not `tidiness`
 
-Validation: one-off skip. Worse lookup is not an improvement. Wiki fact change is not a layout move.
+Validation: one-off skip. Worse lookup is not an improvement. Wiki fact change is not a layout move. Changing campaign `type` is not a layout move. Filing System or Source Material as canon is not a layout move. Copying table aim onto DM Intelligence is not a layout move.
 
 ## State
 
@@ -83,7 +95,7 @@ sitting open
   → on wrapup (or prep if asked): offer reflection
   → record sitting (token cost)
   → if repeating job and no command: create/maintain helper
-  → if mixed growth: layout move (keep links; no fact rewrite)
+  → if mixed growth: layout move by layout kind (keep links; no fact rewrite; no type rewrite; System/Source Material stay non-canon)
 sitting recorded
 
 wiki fact write accepted

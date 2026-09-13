@@ -5,7 +5,7 @@ Agent-facing. Players never operate this loop. Does not replace [001 Co-DM](../.
 ## Aim
 
 1. If table aim is missing, ask for players and current intent before treating Work as aimed.
-2. After the DM records it on the campaign hub (accept), later Work uses that aim.
+2. After the DM records it on the campaign hub (accept), later Work uses that aim. The hub is grouped under Campaign State. DM Intelligence is not the aim.
 3. Work that could be used on a different table without edits does not count as aimed.
 
 ## Gaps
@@ -49,13 +49,17 @@ Agent-facing. Players never operate this loop. Does not replace [001 Co-DM](../.
 
 ## Layout (agents)
 
-28. As agent-facing files **and** the wiki (llm-wiki) grow mixed, regroup so one job or page kind does not load unrelated trees.
+28. As agent-facing files **and** the wiki (llm-wiki) grow mixed, regroup so one job or layout kind does not load unrelated trees.
 29. Trigger is growth that makes lookup costly, not tidiness.
 30. The DM does not approve layout.
-31. Wiki layout moves do not change page facts. Links and names still resolve in the same change.
+31. Wiki layout moves do not change page facts or campaign `type`. Links and names still resolve in the same change.
 32. Wiki fact changes still use the accept-gate. Layout is not a path around canon.
 33. A layout change that increases hops or unrelated load is not an improvement.
+34. Wiki layout kinds: Encounters, Rules, Campaign State, DM Intelligence. Agent-facing layout kinds: System, Source Material.
+35. Do not add a layout kind that duplicates an existing `type`. Do not add `type: encounter` or `type: rules`.
+36. System and Source Material stay non-canon. Source Material is `wiki/_raw/` staging.
+37. Table aim stays on the campaign hub. Layout MUST NOT copy it onto DM Intelligence.
 
 ## Out of contract
 
-Live Co-DM during a session. Player-operated feedback. Tokenizer infrastructure. New wiki kind for table aim. New self-improve skill. Wrapping `qmd` or git. Blind-eval of reflection chat. Rewriting session-log bands (that remains wrapup/012 if those bands change).
+Live Co-DM during a session. Player-operated feedback. Tokenizer infrastructure. New wiki kind or `type` for table aim, Encounters, or Rules. New self-improve skill. Wrapping `qmd` or git. Blind-eval of reflection chat. Rewriting session-log bands (that remains wrapup/012 if those bands change). A mandated folder taxonomy. Work coverage for every layout kind.

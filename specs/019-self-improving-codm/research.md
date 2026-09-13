@@ -59,3 +59,33 @@
 **Rationale**: IV. Fixture: ledger append/drain, sitting fields, mixed-dump layout (repo + wiki kinds) → one-job load, reflection present as chat Work, fact write still gated.
 
 **Alternatives considered**: Grep `AGENTS.md` for slogans. Rejected.
+
+## Decision: Layout kinds are non-redundant grouping names, not new `type` values
+
+**Rationale**: Owner: include the legacy content types that are not already a campaign `type`. Existing enum covers Characters (`npc`), Places (`place`/`region`), Factions, Deities (`lore`), Items, Vehicles, Creatures, Situations (`quest`), Narrative Islands (`quest`), Sessions, Lore. Adding a second name for those is wasted context. Remaining layout kinds: Encounters, Rules, Campaign State, DM Intelligence (wiki); System, Source Material (agent-facing). No new frontmatter field. No folder tree mandated (VII) — outcome is one-kind load without unrelated trees.
+
+**Alternatives considered**: All seventeen as layout kinds. Rejected — redundant with `type`. Replace the `type` enum. Rejected — 001/012/016. Require Work coverage per kind. Rejected — 019 is the improvement loop, not a content pack.
+
+## Decision: Wiki vs agent-facing split for the six kinds
+
+**Rationale**: Encounters, Rules, Campaign State, and DM Intelligence are campaign wiki pages (facts still gated). System is skills/`AGENTS.md`/`docs/agents`. Source Material is `wiki/_raw/` staging, not canon. Layout of System or Source Material MUST NOT file those files as wiki canon.
+
+**Alternatives considered**: All six as wiki groups. Rejected — System and `_raw/` are not canon. All six as agent files. Rejected — Encounters/Rules/hub/analysis are wiki pages.
+
+## Decision: Table aim stays on the campaign hub under Campaign State
+
+**Rationale**: US1 already files aim on the hub after accept. Campaign State is the wiki group that includes that hub (clocks, live threads, indexes). DM Intelligence is a separate wiki group for table analysis (interests, combat patterns, review queues). Layout MUST NOT copy the aim onto a DM Intelligence page or invent a second hub.
+
+**Alternatives considered**: Aim is DM Intelligence. Rejected — aim is who+intent, not analysis. One page for aim, Campaign State, and DM Intelligence. Rejected — mixes facts with analysis and widens load.
+
+## Decision: Encounters and Rules keep existing page `type`
+
+**Rationale**: Layout kinds group files for lookup. They do not add `type: encounter` or `type: rules`. Encounter packages already exist as `session-prep` or `work`. Mechanical references already exist as `lore` or `work`. Changing `type` during a layout move is invalid.
+
+**Alternatives considered**: New `type` values. Rejected — owner kept the enum. `kind:` frontmatter for layout. Rejected — extra schema for the same outcome.
+
+## Decision: Source Material is `wiki/_raw/`; System is agent docs
+
+**Rationale**: Staging already lives at `wiki/_raw/`. Grouping those files is agent-facing layout. Promoting them to compiled wiki is ingest/accept, not layout. System files are `AGENTS.md`, skills, and `docs/agents/` — regroup only when mixed growth makes lookup costly.
+
+**Alternatives considered**: A repo `source-material/` tree. Rejected — `_raw/` already exists. Treat `_raw/` as wiki canon grouping. Rejected — staging is not facts.
