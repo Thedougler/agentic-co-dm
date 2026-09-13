@@ -13,7 +13,7 @@ description: "Task list for Self-Improving Co-DM"
 
 **Organization**: Tasks are grouped by user story so each story can be implemented and validated independently.
 
-**Writer**: Edits to `.agents/skills/session-wrapup/SKILL.md` are design-impact. `/speckit.implement` dispatches the designated writer with a scoped prompt (outcome, files, bounds, job) and `writing-for-agents`. Session agent writes `AGENTS.md`, `docs/agents/work.md`, `errors.md`, and `scripts/error-ledger.py`. No new skill. No new campaign `type`. No layout-kind frontmatter.
+**Writer**: Edits to `.agents/skills/session-wrapup/SKILL.md` are design-impact. `/speckit.implement` dispatches the designated writer with a scoped prompt (outcome, files, bounds, job) and `writing-for-agents`. Session agent writes `AGENTS.md`, `docs/agents/work.md`, `errors.md`, `scripts/error-ledger.py`, `wiki/templates/{encounter,rules,campaign-state,dm-intelligence}.md`, and `wiki/AGENTS.md` layout rows. No new skill. No new campaign `type`. No layout-kind frontmatter.
 
 ## Format: `[ID] [P?] [Story] Description`
 
@@ -30,6 +30,7 @@ description: "Task list for Self-Improving Co-DM"
 - Sitting log: append-only file next to `errors.md`, owned by the helper
 - Source Material: `wiki/_raw/`
 - System: `AGENTS.md`, `.agents/skills/`, `docs/agents/`
+- Wiki templates: `wiki/templates/encounter.md`, `rules.md`, `campaign-state.md`, `dm-intelligence.md`
 - Contract: `specs/019-self-improving-codm/contracts/self-improving-codm.md`
 - Do not add a `self-improve` skill. Do not wrap `qmd` or git. Do not add a tokenizer. Do not add `type: encounter` or `type: rules`.
 
@@ -142,28 +143,36 @@ description: "Task list for Self-Improving Co-DM"
 
 ## Phase 8: User Story 6 - Layout grows into agent-shaped structure (Priority: P6)
 
-**Goal**: Mixed growth is regrouped by layout kind. Wiki kinds: Encounters, Rules, Campaign State, DM Intelligence. Agent-facing: System, Source Material. Existing `type` stays. Facts stay gated.
+**Goal**: Mixed growth is regrouped by layout kind. Wiki kinds: Encounters, Rules, Campaign State, DM Intelligence. Agent-facing: System, Source Material. Existing `type` stays. Facts stay gated. Four wiki copy-start templates exist; existing pages in those groups are rewritten when facts stay the same.
 
-**Independent Test**: Start from mixed System + Source Material (`wiki/_raw/`) and mixed Encounters + Rules wiki pages. After growth-triggered organization, retrieving one layout kind opens only that kind. The DM was not asked. Wiki facts and campaign `type` were not rewritten. Source Material was not filed as canon. Links still resolve. Aim remains on the hub.
+**Independent Test**: Start from mixed System + Source Material (`wiki/_raw/`) and mixed Encounters + Rules wiki pages. After growth-triggered organization, retrieving one layout kind opens only that kind. The DM was not asked. Wiki facts and campaign `type` were not rewritten. Source Material was not filed as canon. Links still resolve. Aim remains on the hub. The four templates exist with pinned `type` values. Existing pages in those groups match template jobs without a fact change.
 
 ### Implementation for User Story 6
 
 - [X] T023 [US6] In `AGENTS.md`: as agent-facing files and the wiki (llm-wiki) grow mixed, regroup so one job or layout kind does not load unrelated trees; trigger is `growth` ("mixed dump / unrelated load"). "Not `tidiness`"; "One-off files MUST NOT be reorganized solely for tidiness"; do not mandate a folder taxonomy (FR-039, FR-044)
 - [X] T024 [US6] In `AGENTS.md`: wiki layout kinds are Encounters, Rules, Campaign State, and DM Intelligence; agent-facing layout kinds are System and Source Material; "MUST NOT duplicate an existing `type`"; do not add `type: encounter` or `type: rules`; no layout-kind frontmatter (FR-040)
 - [X] T025 [US6] In `AGENTS.md`: wiki layout moves have `facts_changed` "Must be false for wiki moves", `type_changed` "Must be false", and `links_resolve` "Must be true after the move"; Source Material is `wiki/_raw/` staging; System is skills/`AGENTS.md`/`docs/agents`; "System and Source Material MUST NOT be treated as wiki canon"; "Copying table aim onto DM Intelligence is not a layout move"; wiki fact changes still wait on accept (FR-041–FR-046)
+- [ ] T030 [P] [US6] Create copy-start `wiki/templates/encounter.md` with existing campaign `type` `session-prep`; "MUST NOT add a campaign `type`"; follow `.agents/skills/writing-for-agents` for D&D content guidance; omit empty sections; pass is jobs not heading-order match (FR-047)
+- [ ] T031 [P] [US6] Create copy-start `wiki/templates/rules.md` with existing campaign `type` `lore`; "MUST NOT add a campaign `type`"; follow writing-for-agents; omit empty sections (FR-047)
+- [ ] T032 [P] [US6] Create copy-start `wiki/templates/campaign-state.md` with existing campaign `type` `lore`; table aim home is the campaign hub; "MUST NOT add a campaign `type`"; follow writing-for-agents (FR-047)
+- [ ] T033 [P] [US6] Create copy-start `wiki/templates/dm-intelligence.md` with existing campaign `type` `work`; "DM Intelligence is not the aim"; "MUST NOT add a campaign `type`"; follow writing-for-agents; "System and Source Material MUST NOT get wiki templates" (FR-047)
+- [ ] T034 [US6] In `wiki/AGENTS.md` layout table, add Encounter, Rules, Campaign State, and DM Intelligence rows that name jobs and the copy-start path (`wiki/templates/encounter.md`, `rules.md`, `campaign-state.md`, `dm-intelligence.md`); "Pass is those jobs, not heading-order match"; do not add `type: encounter` or `type: rules` (FR-047)
+- [ ] T035 [US6] Rewrite existing Encounters, Rules, Campaign State, and DM Intelligence wiki pages onto the matching templates; "Existing pages of that layout kind are rewritten onto the template when facts stay the same"; "A rewrite that would change facts waits on accept"; "Table aim MUST remain on the campaign hub" (FR-048)
 
-**Checkpoint**: Growth splits mixed dumps by layout kind; wiki moves keep facts and `type`; System/Source Material stay non-canon; one-offs stay put.
+**Checkpoint**: Growth splits mixed dumps by layout kind; wiki moves keep facts and `type`; four templates exist with pinned types; existing pages rewritten without fact change; System/Source Material stay non-canon; one-offs stay put.
 
 ---
 
 ## Phase 9: Polish & Cross-Cutting Concerns
 
-**Purpose**: Public-seam fixture and artifact alignment after standing rules and helper land.
+**Purpose**: Public-seam fixture and artifact alignment after standing rules, helper, and wiki templates land.
 
 - [X] T026 [P] Align final contract language in `specs/019-self-improving-codm/contracts/self-improving-codm.md` with landed standing rules (no new skill, no tokenizer, wrapup owns required reflection, layout kinds 34–37)
 - [X] T027 [P] Align expected outcomes in `specs/019-self-improving-codm/quickstart.md`
 - [X] T028 Add the runnable fixture check at `specs/019-self-improving-codm/fixtures/check.py` with `fixtures/wiki/` and `fixtures/ops/` covering quickstart scenarios 1–8 (missing aim on hub not DM Intelligence; gap does not stall; wrapup reflection is Work; sitting is recorded without the DM; ledger fill and drain; helper on a repeating job; mixed Encounters vs Rules plus System vs Source Material; layout is not a canon back door). Assert observable files and Work outcomes; drain without `cause_fixed` fails the helper; do not snapshot `AGENTS.md` or `session-wrapup` wording
 - [X] T029 Run every scenario in `specs/019-self-improving-codm/quickstart.md` via `.venv/bin/python specs/019-self-improving-codm/fixtures/check.py`
+- [ ] T036 Extend `specs/019-self-improving-codm/fixtures/check.py` for quickstart scenarios 9–10: four templates exist with `type` `session-prep`/`lore`/`lore`/`work`; no `type: encounter` or `type: rules`; existing-page rewrite keeps facts and aim on the hub; structure-only rewrite has no DM accept; fact-changing rewrite fails without accept
+- [ ] T037 Run every scenario in `specs/019-self-improving-codm/quickstart.md` via `.venv/bin/python specs/019-self-improving-codm/fixtures/check.py`
 
 ---
 
@@ -198,9 +207,11 @@ description: "Task list for Self-Improving Co-DM"
 - T017 can run in parallel with T018–T020 (helper vs `AGENTS.md`)
 - T021 can run in parallel with T022 (helper vs `AGENTS.md`)
 - T026 and T027 can run in parallel after implementation
+- T030–T033 can run in parallel (different template files)
 - `AGENTS.md` tasks (T007, T008, T011, T013, T018–T020, T022–T025) are sequential — one writer
 - `docs/agents/work.md` tasks (T009, T010, T011, T012, T014, T016) are sequential — one writer
 - `scripts/error-ledger.py` tasks (T005, T006, T017, T021) are sequential — one writer
+- `wiki/AGENTS.md` T034 and rewrite T035 are sequential after T030–T033
 
 ---
 
@@ -225,6 +236,16 @@ T017 Sitting record fields in scripts/error-ledger.py
 T018 Token-cost ownership standing rule in AGENTS.md
 ```
 
+## Parallel Example: User Story 6 templates
+
+```text
+T030 wiki/templates/encounter.md type session-prep
+T031 wiki/templates/rules.md type lore
+T032 wiki/templates/campaign-state.md type lore
+T033 wiki/templates/dm-intelligence.md type work
+```
+
+
 ---
 
 ## Implementation Strategy
@@ -245,12 +266,13 @@ T018 Token-cost ownership standing rule in AGENTS.md
 4. Add US3 → wrapup reflection as Work (designated writer)
 5. Add US4 → sitting records and helpers
 6. Add US5 → ledger fill/drain
-7. Add US6 → layout kinds (wiki vs agent-facing)
-8. Polish → fixture check covering quickstart 1–8
+7. Add US6 → layout kinds (wiki vs agent-facing) and four wiki templates
+8. Polish → fixture check covering quickstart 1–10
 
 ### Dispatch
 
 - T015: designated writer only. Session agent writes the scoped prompt, leaves `.agents/skills/session-wrapup/SKILL.md` unmodified, then invokes `claude -p --model claude-opus-4-6 --effort medium` per `docs/agents/skill-design-dispatch.md`.
+- T030–T035: session agent. Follow writing-for-agents (D&D content guidance) for the four templates. 012 still binds.
 - All other tasks: session agent.
 - On usage-limit wait: leave T015 incomplete on this file with a retry time; complete independent tasks; do not write the wrapup skill in-session unless both designated writers are usage-limited.
 
@@ -260,6 +282,6 @@ T018 Token-cost ownership standing rule in AGENTS.md
 
 - [P] tasks = different files, no incomplete dependencies
 - [Story] label maps task to US1–US6
-- Data-model constraints are quoted in T008–T010, T015, T017, T020, T021, T023–T025
-- No new skill, no tokenizer, no second ledger helper, no wiki `type` for table aim / Encounters / Rules, no layout-kind frontmatter, no mandated folder taxonomy
+- Data-model constraints are quoted in T008–T010, T015, T017, T020, T021, T023–T025, T030–T035
+- No new skill, no tokenizer, no second ledger helper, no wiki `type` for table aim / Encounters / Rules, no layout-kind frontmatter, no mandated folder taxonomy, no wiki templates for System or Source Material
 - Stop at any checkpoint to validate the story independently
