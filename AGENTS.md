@@ -289,5 +289,5 @@ The vault format is structurally conformant with the [Open Knowledge Format (OKF
 <!-- SPECKIT START -->
 For additional context about technologies to be used, project structure,
 shell commands, and other important information, read the current plan
-at specs/017-session-beats-skills/plan.md
+at specs/018-complete-ingest-context/plan.md
 <!-- SPECKIT END -->
