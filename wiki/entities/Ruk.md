@@ -124,7 +124,7 @@ CR 6 grappler. Ruk closes and locks a target down instead of trading blows at ra
 
 **Pin Down** restrains a creature he's already grappled. **Hungry Jaws** lets him bite for self-healing once per rest (useful when he's absorbing a hit meant for [[Nona Black-Jaw|Nona]]). **Territorial Senses** means he's never caught flat-footed, and **Relentless Endurance** gives him one free save to stay on his feet if knocked down outright.
 
-## Relationships
+## Connections
 
 - [[Nona Black-Jaw]]: protects her with his body, understands her through territory, loyalty, feeding rituals, and hatchling-defense
 - [[Enzo]]: fellow bodyguard who manages social reads while Ruk manages physical ones

@@ -42,7 +42,7 @@ When Ussa marks the timber line, she's tallied the season's drift. She knows wha
 | performance_hooks | **Vibe:** a scout who has learned to wear another caste's colors by holding herself apart from everyone wearing them. **Tic:** she traces the old caste scars at her temples when she's thinking about a lie she just told. |
 | link_of_relevance | [[Jean-Claude Tabarnack]], a fellow [[Grung]] defector, would recognize what she's trading and how little it buys. |
 
-## Relationships
+## Connections
 
 [[Petro Amaru]] bribes Ussa to keep the cut-line silent in the harbor books. She takes his coin, lets him think she's complicit, but the money is always leverage toward freeing her kin.
 

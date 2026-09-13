@@ -18,7 +18,7 @@ This skill can be invoked directly or via the `wiki-history-ingest` router (`/wi
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` and `HERMES_HISTORY_PATH` (defaults to `~/.hermes`)
 2. Query the ingest ledger with `python3 scripts/manifest.py` (`stats` / `has` / `get` / `delta`) — do **not** read whole `.manifest.json` into context
-3. Read `index.md` at the vault root to understand what the wiki already contains
+3. Prefer `hot.md` + capped `qmd`/`rg` for existing wiki context; full `index.md` only if required — whole-file preload is token waste
 
 ## Ingest Modes
 

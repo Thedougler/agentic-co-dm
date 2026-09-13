@@ -55,7 +55,7 @@ tier: supporting
 - "AND SHE'LL NEVER LOOK AT IT THE SAME WAY AGAIN!" (flat) "We're out of the blue ones."
 - "AND THAT'S the whole demonstration." (flat) "Four silver, or three if you're trading up for something worse."
 
-## Relationships
+## Connections
 
 - [[Fioravante Selmerin|Fioravante "Fio" Selmerin]]
 - [[Tam Slim-Nail]]

@@ -67,7 +67,7 @@ A Blade of Unerring Return that came back overnight with nobody throwing it. He 
 ```
 ````
 
-## Relationships
+## Connections
 
 | Relationship | Meaning |
 | ------------ | ------- |

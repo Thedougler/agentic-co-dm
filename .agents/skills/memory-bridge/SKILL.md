@@ -16,7 +16,7 @@ You are helping the user browse and compare their Obsidian wiki knowledge filter
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`.
-2. Provenance lives in the ingest ledger — query via `python3 scripts/manifest.py` (`stats` / `get` / `lookup`); do **not** load whole `.manifest.json` into context.
+2. Provenance lives in the ingest ledger — query via `python3 scripts/manifest.py` (`stats` / `list [--project|--since|--limit]` / `get` / `lookup`); do **not** load whole `.manifest.json` into context.
 3. Read `$OBSIDIAN_VAULT_PATH/index.md` for page titles and one-line descriptions.
 
 ## Commands
@@ -35,7 +35,7 @@ Recognized tool names: `claude`, `codex`, `hermes`, `openclaw`, `copilot`, `pi`,
 
 ## Step 1: Build the Source Map
 
-Do not load whole `.manifest.json` into context. Prefer `stats`, then compact shell extraction of `source_type` histograms if needed; use `get`/`lookup` for specifics. For each entry you intentionally fetch, extract:
+Do not load whole `.manifest.json` into context. Prefer `stats`, then `list --limit N` (tsv/json) for compact rows; use `get`/`lookup` for specifics. For each entry you intentionally fetch, extract:
 - `source_type` — maps to tool name:
   - `claude_conversation`, `claude_memory`, `claude_audit_log`, `claude_desktop_session` → `claude`
   - `codex_rollout`, `codex_index`, `codex_history` → `codex`

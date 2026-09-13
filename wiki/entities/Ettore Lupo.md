@@ -54,7 +54,7 @@ tier: supporting
 
 His tone stays flat and calm.
 
-## Relationships
+## Connections
 
 - [[Casa Lupo]]: proprietor; page of record for his stock knowledge and merchant history
 - [[Delmar Fisk]]: remembers every scarlet coat sold in Calveno

@@ -17,7 +17,7 @@ You are enforcing consistent tagging across the wiki by normalizing tags to a co
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`
 2. Read `$OBSIDIAN_VAULT_PATH/_meta/taxonomy.md` — this is the canonical tag list
-3. Read `index.md` to understand the wiki's scope
+3. Prefer `hot.md` + capped `qmd`/`rg` to understand scope; full `index.md` only if required — whole-file preload is token waste
 
 ## The Taxonomy File
 

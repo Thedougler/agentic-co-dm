@@ -26,7 +26,7 @@ A [[Murrat]]-born [[Moucheron]], Suke is the newest [[Five Blades]] member. She 
 
 Quiet and watchful. She never eats. She keeps her back to the wall and avoids eye contact with strangers until she makes up her mind about them.
 
-## Relationships
+## Connections
 
 - [[Five Blades]]: newest member of the mercenary company.
 - [[Murrat]]: origin.

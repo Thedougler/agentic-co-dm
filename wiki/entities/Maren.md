@@ -49,7 +49,7 @@ She has strong opinions about the Navy. The sea belongs to everyone. Two decades
 
 Not stated in source.
 
-## Relationships
+## Connections
 
 - [[Delmar Fisk]], admiral; now carries her soul
 - [[Fisk's Fleet]], she captained the *Narrow*

@@ -470,7 +470,7 @@ Reading the vault is the dominant cost of every read-side skill. Use the cheapes
 
 | Need | Primitive | Relative cost |
 |---|---|---|
-| Does a page exist? What's its title/category/tags? | Read `index.md`; `Grep` frontmatter blocks (scope with a pattern that targets `^---` blocks at file heads) | **Cheapest** |
+| Does a page exist? What's its title/category/tags? | Capped `qmd`/`rg` / frontmatter grep first; full `index.md` only if needed | **Cheapest** |
 | 1–2 sentence preview of a page | Read the `summary:` field in its frontmatter | **Cheap** |
 | A specific claim or section inside a page | `Grep -A <n> -B <n> "<term>" <file>` — returns only the matching lines plus context | **Medium** |
 | Whole-page content | `Read <file>` | **Expensive** — last resort |

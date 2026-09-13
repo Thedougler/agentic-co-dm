@@ -61,7 +61,7 @@ A publisher hired him in his early thirties, and he spent three months on the co
 
 Seventeen copies sold in three days at Port Tidefall. At each port, he argues the same points: the Scatter loves its sea creatures and he hates them, people love the names they gave them and he hates those too. He finds this work baffling and tiring. Find him at the docks arguing about someone's pet.
 
-## Relationships
+## Connections
 
 - [[Perrin Black-Jaw]] carries his Bestiary
 - [[Sawek]] and [[Leviathan]] are creatures he documented

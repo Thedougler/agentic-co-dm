@@ -64,7 +64,7 @@ The call-off reached his last port too late, as he had moved on toward [[Calveno
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Nona Black-Jaw]]: sends him as her first card when she needs something found or handled outside the Warren
 - [[Perrin Black-Jaw]]: the person Nona dispatched him to locate. Her call-off is in transit but hasn't reached him.

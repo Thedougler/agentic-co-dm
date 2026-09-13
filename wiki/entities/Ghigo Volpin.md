@@ -54,7 +54,7 @@ tier: supporting
 
 Table-ready lines: "That one's spoken for, that one will take your thumb, and that one, maybe." / "Your grandfather haggled better than you." / "It bonds to one handler and only one, and a wrong pick shows itself at the worst possible moment."
 
-## Relationships
+## Connections
 
 - [[Perrin Black-Jaw]], offered a lodro at his grandfather's old price.
 - [[Vincenzo Black-Jaw]], bought a lodro from these pens decades ago.

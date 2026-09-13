@@ -116,7 +116,7 @@ With two or more allies near, Officer's Advantage helps him in initiative and re
 
 Naval Footwork lets him move away and disengage without cost. He repositions or reloads as needed. A clean [[knock]] off his footing costs him that disengage outright, and [[Delmar Fisk|Delmar]] used exactly that to put him in the water twice. Aboard the Surety, his lair actions transform the ship into a weapon. One round spent on Arm the Guns prepares Fire the Guns the following round. Dropping him below half HP triggers Call to Arms.
 
-## Relationships
+## Connections
 
 - [[Norrington Kingsly]]: his predecessor, replaced by Rook as the harder choice.
 - [[Dravosi Crown]]: the naval and inspection authority both serve.

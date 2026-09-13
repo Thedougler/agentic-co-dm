@@ -46,7 +46,7 @@ tier: supporting
 
 ![[commoner#Stats & Combat]]
 
-## Relationships
+## Connections
 
 **[[Toa Kailani]]** (Family Head). Rangi is sworn to House Kailani; Toa commands his service and has chosen him as the family's champion in the challenge duel. Rangi respects Toa's authority absolutely and sees defending the house as an extension of duty itself.
 

@@ -120,7 +120,7 @@ Nona protects people through a network whose survival requires transactional pre
 ```
 ````
 
-# Relationships
+## Connections
 
 | Relationship | Meaning / invitation |
 | --- | --- |

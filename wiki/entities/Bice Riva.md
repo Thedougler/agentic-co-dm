@@ -67,7 +67,7 @@ She has not yet told Nona about a man who has taken the corner table three eveni
 
 <!-- Not stated in source. -->
 
-## Relationships
+## Connections
 
 - [[Aldo Riva]]: husband, co-proprietor, runs the kitchen
 - [[Nona Black-Jaw]]: arranged the Warren cellar entrance two years ago

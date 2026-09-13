@@ -42,7 +42,7 @@ tier: supporting
 
 No statblock recorded in the source. Non-combatant navigator, killed by stray fire during the boarding, not fought directly.
 
-## Relationships
+## Connections
 
 - [[Uncertainty|HCS Surety]] (his post, under Barnaby Rook).
 - [[Barnaby Rook]] (his captain).

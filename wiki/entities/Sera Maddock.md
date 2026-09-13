@@ -36,7 +36,7 @@ She is in the back room of [[Grimaldi's Dispensary]] (see [[Kalowe, The Captain'
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Grimaldi's Dispensary]]: back room, where she is dying
 - [[Ilaria Grimaldi]]: treating physician, estimates three days left

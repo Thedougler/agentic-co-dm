@@ -54,7 +54,7 @@ He buys base compound from [[Studio Orsini]] by standing order and finishes the 
 
 Sample lines: *"Sit first. I'll know what you want by the time you've finished that."* / *"The shelf blends are for people who came here so someone would watch them buy something."* / *"I don't keep a book. You can check the back room if you like."*
 
-## Relationships
+## Connections
 
 - [[La Brace]]: proprietor, licence-holder, and the only person who knows the back-room recipes.
 - [[Marta Orsini]]: supplier by standing order. She sends base compound and asks nothing about the finishing.

@@ -65,7 +65,7 @@ The [[Leviathan]] and [[Umberlee]]'s rage disrupt trade routes that anchor Conco
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Tessarine Concordat]] (his instrument)
 - [[Iacopo Fieschi]] (Concordat envoy, public face in Calveno)

@@ -28,7 +28,7 @@ Lean and middle-aged, with silver hair cropped close and fingertips stained by t
 
 **Roleplay anchor:** methodical skeptic. She has documented everything. She is right more often than not.
 
-## Relationships
+## Connections
 
 - [[Beaumont Sel]], captain of the Saltwright and her employer.
 - [[Drav Holke]], [[Fen]], [[Wessa]], fellow crew aboard the Saltwright and members of [[Beaumont's Crew]].

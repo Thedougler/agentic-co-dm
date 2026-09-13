@@ -47,7 +47,7 @@ While restraining her, they found doodles of chemical formulas rendered like sta
 
 None worth rolling. No weapon, no combat stats, basic NPC, non-combatant. If somehow forced into a fight, she flees or freezes. Do not treat her as a threat or a resource in a fight.
 
-## Relationships
+## Connections
 
 - The refugees (ally since Session 05). Hiding them in Room 6; not combat
   support, but intel, cover, and a safe room.

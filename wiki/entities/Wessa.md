@@ -28,7 +28,7 @@ Stocky and grey-haired, she cooks so well that the crew eats better than it shou
 
 **Roleplay anchor:** impossible standards without theatrics. The food appears correct.
 
-## Relationships
+## Connections
 
 - [[Beaumont Sel]], captain of the [[The Saltwright|Saltwright]] and her employer.
 - [[Drav Holke]], [[Lenne Vor]], [[Fen]], fellow Saltwright crew members of [[Beaumont's Crew]].

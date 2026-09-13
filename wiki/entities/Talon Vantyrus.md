@@ -102,7 +102,7 @@ legendary_actions:
 
 CR 14. The build is Master Kyzil's own Kensei technique reskinned colder and more controlled, the same lineage Vantyrus taught Kyzil before their break.
 
-## Relationships
+## Connections
 
 - [[Master Kyzil]]: his own student at [[High Eyrie]], taught Kensei technique alongside a generation of other Sentinels, his most gifted by far. Vantyrus broke from the order over a doctrine that only ever recorded deaths it never prevented and asked Kyzil to break with him; Kyzil refused. Neither has stopped believing he was right. Now the Sentinels' senior master, and Vantyrus's real obstacle.
 - [[Talon Skarn]]: his apprentice, bound with him under the Countless's Rule of Two, an open contest for his life that neither has called off.

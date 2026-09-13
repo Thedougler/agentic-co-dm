@@ -41,7 +41,7 @@ He runs [[Taufa Fifita & Sons]], Kalowe's main chandlery. His adult sons work th
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Taufa Fifita & Sons]]: the chandlery he runs.
 - [[Kalowe]]: his home, two generations in the port trade.

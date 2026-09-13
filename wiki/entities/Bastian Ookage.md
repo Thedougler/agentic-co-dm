@@ -60,7 +60,7 @@ Bastian's original profile listed him as Human, but [[Fisk's Fleet]]'s crew tabl
 
 Not stated in source.
 
-## Relationships
+## Connections
 
 - [[Delmar Fisk]]: one of the five captains. Now a soul in Fisk.
 - *[[Loud Argument]]*: his captained vessel

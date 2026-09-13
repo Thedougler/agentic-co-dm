@@ -54,7 +54,7 @@ Six weeks ago, she found Geoffrey on the missing [[Uncertainty|HCS Surety]]'s cr
 
 <!-- Not stated in source. -->
 
-## Relationships
+## Connections
 
 - [[Geoffrey Draves]]. The sailor she knew. Now serves with the [[The Saltwright|Saltwright]] crew.
 - [[Cedric Hollowell]]. Her father. She manages his accounts.

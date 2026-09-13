@@ -17,7 +17,7 @@ You are computing the current state of the wiki: what's been ingested, what's ne
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `OBSIDIAN_SOURCES_DIR`, `CLAUDE_HISTORY_PATH`, and `CODEX_HISTORY_PATH`.
-2. Use `python3 scripts/manifest.py stats "$OBSIDIAN_VAULT_PATH"` (then `has`/`get`/`lookup` as needed) — do **not** read whole `.manifest.json`
+2. Use `python3 scripts/manifest.py stats "$OBSIDIAN_VAULT_PATH"` (then `list`/`has`/`get`/`lookup` as needed) — do **not** read whole `.manifest.json`
 
 ## The Manifest
 

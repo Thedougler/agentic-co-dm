@@ -79,7 +79,7 @@ reactions:
 
 Bishop and the *Tangent* work the [[Crown Islands]] and the [[Central Strait]], the waters where Crown enforcement escalates from talk to force.
 
-## Relationships
+## Connections
 
 - [[HCS Tangent]] (commands)
 - [[Barnaby Rook]] (successor to; Rook's failure activates Bishop)

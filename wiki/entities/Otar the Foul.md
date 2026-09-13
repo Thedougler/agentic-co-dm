@@ -166,7 +166,7 @@ His worst ability opens in Phase 2.
 > [!mechanic]
 > **Spawn Tadpoles (the brood underfoot).** New epic action (2 LA cost): Otar sheds a clutch of [[slaad tadpoles]] from his rotting hide. Cheap and cheap. But a tadpole that drops a creature to 0 HP doesn't just leave a body. That creature risks transforming into a [[Minor Slaad]] under Otar's control. It's the same fate Solange suffered, scaled down. Use it reactively like other epic actions (never a targeting decision). When a PC goes down near Otar, this becomes the real clock. Allies have three rounds to pull the body clear or make a Medicine check. After that, it's not a body anymore. It's another combatant.
 
-## Relationships
+## Connections
 
 - [[Solange Barret]]. Otar appears through her body. The ritual consumes her when complete, not kills her.
 - [[Simone Tabarnack]]. Contracted the summoning. Never appears on site.

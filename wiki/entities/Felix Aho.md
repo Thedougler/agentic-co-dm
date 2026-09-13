@@ -69,7 +69,7 @@ This is a discarded DM prep concept. It describes a [[Vaka]] elder and Karath de
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 **Session-canon (captive):**
 

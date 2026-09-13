@@ -84,7 +84,7 @@ reactions:
     desc: "When Vashu or an ally within 10 feet of her is hit by a ranged attack Vashu can perceive, she reduces the damage to that target by 15 (2d10 + 4). If this reduces the damage taken by Vashu herself to 0, she can redirect the missile at a creature she can perceive within 30 feet: +7 to hit, 12 (2d10 + 1) damage of the triggering attack's type."
 ```
 
-## Relationships
+## Connections
 
 Same NPC as [[Vashu the Weeping Veil|Vashu, the Weeping Veil]]. See her page for the full relationship list.
 

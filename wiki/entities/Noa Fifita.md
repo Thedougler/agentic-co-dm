@@ -35,7 +35,7 @@ His family owns the [[Taufa Fifita]] business. Bosses don't ask what he does. He
 
 Operator of [[Fifita's Slip]], an unofficial boatyard on Kalowe's lagoon side. It does not appear in harbour books. Access is by introduction or prior arrangement only. Cold approaches from the water get nothing. The slip looks like storage.
 
-## Relationships
+## Connections
 
 - [[Fifita's Slip]], the boatyard he operates
 - [[Kalowe]], the island where the slip sits

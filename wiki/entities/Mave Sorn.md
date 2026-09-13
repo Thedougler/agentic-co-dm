@@ -35,7 +35,7 @@ tier: supporting
 
 ![[mave-sorn-statblock]]
 
-## Relationships
+## Connections
 
 - [[The Velvet Noose]]: commands this vessel.
 

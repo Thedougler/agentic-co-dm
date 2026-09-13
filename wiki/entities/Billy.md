@@ -72,7 +72,7 @@ world, not rumor or hearsay.
 trying to be in charge. Somebody has to be. *Billy*: *(quiet)* I already know
 what happens if nobody comes.
 
-## Relationships
+## Connections
 
 - [[Toby]], the self-declared emperor whose escalating collision with
   Frankie Billy is trying to stop.

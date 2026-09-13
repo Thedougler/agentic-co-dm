@@ -60,7 +60,7 @@ tier: supporting
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Jean-Claude Tabarnack]] (examined his moustache with professional interest during the Day 1 supply run)
 

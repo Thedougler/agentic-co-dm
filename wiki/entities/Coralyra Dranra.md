@@ -49,7 +49,7 @@ A beautiful, siren-like elf [[sorcerer]]/[[bard]] (level 5). Her voice stops peo
 
 **Backstory:** she grew up in Halythion, happy and safe. People said her music bothered them and she needed evaluation. She fled before that could happen. A [[Sawek]] marked her. She made a hermit crab homeless by accident.
 
-## Relationships
+## Connections
 
 - [[Flappers the Seal]]. Her closest friend. Chases mackerel.
 - Sea turtles. She trusts them with her life.

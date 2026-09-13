@@ -61,7 +61,7 @@ Voice is fast, loud, and self-interrupting. She corrects her own sentence mid-wo
 > **[[Counterspell]]:** not applicable — declarations are not discrete cast events. There is no caster to target.
 > The children are keys; the entity and the fissure are the source. Harming Toby or Frankie does nothing to the power itself. The Maw entity and fissure are the only lever.
 
-## Relationships
+## Connections
 
 - [[Toby]]. Her rival, he took her spot as his Royal Best Friend, the real slight underneath their escalating duels.
 - [[Halewick]]. The island whose ground bears every scar their collisions leave behind.

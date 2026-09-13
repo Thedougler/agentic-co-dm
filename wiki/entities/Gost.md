@@ -69,7 +69,7 @@ Blood, or the watch arriving. If the crew handles it without either, he finds th
 ```
 ````
 
-## Relationships
+## Connections
 
 | Relationship | Meaning |
 | ------------ | ------- |

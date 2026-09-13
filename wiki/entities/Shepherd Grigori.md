@@ -111,7 +111,7 @@ He is one of the campaign's two Hierarchs (see [[Hierarch]]). His full combat nu
 
 Against a level-4 crew, CR 19 makes a real fight a death scenario. It's one he doesn't want. He liked them. If tracked down and cornered, he uses dominate person and mass suggestion to end the encounter without casualties. Killing them would be, to him, a waste.
 
-## Relationships
+## Connections
 
 - [[Khlysty]]. Shepherd source of his healing.
 

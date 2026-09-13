@@ -50,7 +50,7 @@ Detto's ordinary [[Tessarine Concordat|Tessarine]] correspondence route unknowin
 
 Not stated in source.
 
-## Relationships
+## Connections
 
 - [[Delmar Fisk]], admiral; now carries his soul, one of the five captains
 - *[[Heft]]*, his ship
