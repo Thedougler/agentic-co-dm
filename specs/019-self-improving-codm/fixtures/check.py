@@ -267,6 +267,57 @@ def scenario_layout_not_canon() -> None:
         fail("fact text changed without accept")
 
 
+def scenario_templates() -> None:
+    templates = ROOT / "wiki" / "templates"
+    expected = {
+        "encounter.md": "session-prep",
+        "rules.md": "lore",
+        "campaign-state.md": "lore",
+        "dm-intelligence.md": "work",
+    }
+    for name, typ in expected.items():
+        text = read(templates / name)
+        if f"type: {typ}" not in text:
+            fail(f"{name} missing type {typ}")
+        if "type: encounter" in text or "type: rules" in text:
+            fail(f"{name} added a campaign type")
+    if (templates / "system.md").is_file() or (templates / "source-material.md").is_file():
+        fail("System or Source Material got a wiki template")
+
+
+def scenario_rewrite() -> None:
+    hub = read(WIKI / "campaign-hub.md")
+    intel = read(WIKI / "dm-intelligence.md")
+    encounter = read(OPS / "mixed-dump" / "dock-skirmish.md")
+    rules = read(OPS / "mixed-dump" / "grapple.md")
+    proposal = read(OPS / "fact-changing-rewrite.md")
+    if "players: Alex, Blair, Casey" not in hub:
+        fail("aim left the hub")
+    if "A coastal sandbox where the three players chase sea-god debts, not a railroaded module." not in hub:
+        fail("hub facts changed")
+    if "## Table aim" not in hub:
+        fail("campaign state missing template jobs")
+    if "players:" in intel or "intent:" in intel:
+        fail("aim copied off the hub")
+    if "## Table analysis" not in intel:
+        fail("DM Intelligence missing template jobs")
+    if "A harbor fight package. Facts stay on this page." not in encounter:
+        fail("encounter rewrite changed facts")
+    if "## Situation" not in encounter:
+        fail("encounter missing template jobs")
+    if "Mechanical reference for the table." not in rules:
+        fail("rules rewrite changed facts")
+    if "## Current Truth" not in rules:
+        fail("rules missing template jobs")
+    if (OPS / "rewrite-accept.md").is_file():
+        fail("structure-only rewrite required DM accept")
+    if "lifecycle: proposed" not in proposal:
+        fail("fact-changing rewrite is not waiting on accept")
+    if "Silent canon: the sea-god is dead." in hub:
+        fail("fact-changing rewrite landed without accept")
+
+
+
 def main() -> int:
     scenario_aim()
     scenario_gap()
@@ -276,6 +327,8 @@ def main() -> int:
     scenario_helper()
     scenario_layout()
     scenario_layout_not_canon()
+    scenario_templates()
+    scenario_rewrite()
     print("PASS")
     return 0
 

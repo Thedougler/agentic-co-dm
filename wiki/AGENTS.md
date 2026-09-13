@@ -34,7 +34,7 @@ Done when: required fields are present, body is complete sentences, related page
 
 ## Layout
 
-Copy the matching `wiki/templates/` scaffold for the campaign `type` (and `kind` when the page is session-prep). Session-prep pages copy `wiki/templates/hook.md`, `development.md`, `cliffhanger.md`, `climax.md`, `resolution.md`, or `session-plan.md`. Do not copy-start `wiki/templates/session-prep.md` for new beats or plans. Omit empty sections. Pass is run jobs, not heading-order match.
+Copy the matching `wiki/templates/` scaffold for the campaign `type` (and `kind` when the page is a session-prep beat). Session-prep beats copy `wiki/templates/hook.md`, `development.md`, `cliffhanger.md`, `climax.md`, `resolution.md`, or `session-plan.md`. Do not copy-start `wiki/templates/session-prep.md` for new beats or plans. Layout kinds Encounters, Rules, Campaign State, and DM Intelligence copy `wiki/templates/encounter.md`, `rules.md`, `campaign-state.md`, and `dm-intelligence.md`. Those names are not campaign `type` values. Do not add `type: encounter` or `type: rules`. Omit empty sections. Pass is run jobs, not heading-order match.
 
 `wiki/_raw/` illustrates quality. It is not a clone target. Incoming ingest files are evidence of facts, not exemplary format. Filed pages are judged against the kinds and jobs in this file.
 
@@ -58,6 +58,10 @@ Copy the matching `wiki/templates/` scaffold for the campaign `type` (and `kind`
 | Quest | Summary (objective, why now, deadline); Situation; Stakes including walk-away; World in motion (driver and next move if uninterrupted); at least two independent leads. Resolution omitted while unresolved. Pass is those jobs. |
 | City | Arrival; At a glance including current pressure; Orientation (districts and getting around); Gazetteer enough to intentionally seek a place; rules that matter at the table; at least one active situation with if-nobody-intervenes. Page is `type: place` with `kind: city`. Site places keep using `wiki/templates/place.md` and existing Place jobs. Pass is those jobs. |
 | Region | Spoken look; At a glance; Current state; geography/travel enough to choose a route; active powers; change log. Pass is those jobs. |
+| Encounter | Situation; Opening pressure; Opposition; Choice surface; If ignored; Handoff. `type: session-prep`. Copy `wiki/templates/encounter.md`. Pass is those jobs. |
+| Rules | At a Glance; Current Truth; At the Table. `type: lore`. Copy `wiki/templates/rules.md`. Pass is those jobs. |
+| Campaign State | Table aim on the campaign hub; Live state; Index. `type: lore`. Copy `wiki/templates/campaign-state.md`. Pass is those jobs. |
+| DM Intelligence | Table analysis; Grounding; Decision. `type: work`. Copy `wiki/templates/dm-intelligence.md`. DM Intelligence is not the aim. Pass is those jobs. |
 
 Spoken look is theatre of the mind: no secrets, DCs, unearned names, author thesis.
 
