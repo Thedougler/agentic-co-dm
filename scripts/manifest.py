@@ -8,6 +8,8 @@ Usage:
   python3 scripts/manifest.py has <vault> <source>
   python3 scripts/manifest.py get <vault> <source>
   python3 scripts/manifest.py lookup <vault> --page <vault-rel-page>
+  python3 scripts/manifest.py list <vault> [--project NAME] [--since ISO] [--limit N]
+  python3 scripts/manifest.py --format tsv list <vault> --limit 20
   python3 scripts/manifest.py delta <vault> --paths-file <file|->
   python3 scripts/manifest.py upsert <vault> <source> --json '{...}'
   python3 scripts/manifest.py normalize <vault> [--dry-run]
@@ -144,6 +146,15 @@ def emit(data: Any) -> None:
     print(json.dumps(data, indent=2, sort_keys=True))
 
 
+def emit_fmt(fmt: str, rows: list[dict[str, Any]]) -> None:
+    if fmt == "tsv":
+        print("path\tlast_ingested\tpages")
+        for row in rows:
+            print(f"{row['path']}\t{row['last_ingested']}\t{row['pages']}")
+        return
+    emit(rows)
+
+
 def cmd_stats(args: argparse.Namespace) -> int:
     data = load(args.vault)
     rows = iter_entries(data)
@@ -193,6 +204,33 @@ def cmd_lookup(args: argparse.Namespace) -> int:
             hits.append(key)
     emit({"page": args.page, "sources": hits})
     return 0 if hits else 1
+
+
+def page_count(entry: dict[str, Any]) -> int:
+    pages: set[str] = set()
+    for field in PAGE_FIELDS:
+        pages.update(str(item) for item in (entry.get(field) or []))
+    return len(pages)
+
+
+def cmd_list(args: argparse.Namespace) -> int:
+    seen: set[str] = set()
+    rows: list[dict[str, Any]] = []
+    for key, entry, _where in iter_entries(load(args.vault)):
+        if key in seen:
+            continue
+        seen.add(key)
+        if args.project and entry.get("project") != args.project:
+            continue
+        stamp = ingested_stamp(entry)
+        if args.since and stamp < args.since:
+            continue
+        rows.append({"path": key, "last_ingested": stamp, "pages": page_count(entry)})
+    rows.sort(key=lambda row: row["path"])
+    if args.limit is not None:
+        rows = rows[: args.limit]
+    emit_fmt(args.format, rows)
+    return 0
 
 
 def cmd_delta(args: argparse.Namespace) -> int:
@@ -279,7 +317,6 @@ def cmd_normalize(args: argparse.Namespace) -> int:
         for _key, entry, _where in rows[1:]:
             merged = merge_entries(merged, entry)
         keep_key, _keep_entry, keep_where = rows[0]
-        # drop extras, write merged onto the first key
         for key, _entry, where in rows[1:]:
             if where == "sources":
                 data.get("sources", {}).pop(key, None)
@@ -297,6 +334,7 @@ def cmd_normalize(args: argparse.Namespace) -> int:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--format", choices=("json", "tsv"), default="json")
     sub = parser.add_subparsers(dest="cmd", required=True)
 
     def vault_arg(p: argparse.ArgumentParser) -> None:
@@ -320,6 +358,13 @@ def build_parser() -> argparse.ArgumentParser:
     vault_arg(lookup)
     lookup.add_argument("--page", required=True)
     lookup.set_defaults(func=cmd_lookup)
+
+    listing = sub.add_parser("list", help="paths, last_ingested, page counts")
+    vault_arg(listing)
+    listing.add_argument("--project")
+    listing.add_argument("--since")
+    listing.add_argument("--limit", type=int)
+    listing.set_defaults(func=cmd_list)
 
     delta = sub.add_parser("delta", help="which listed paths need ingest")
     vault_arg(delta)
