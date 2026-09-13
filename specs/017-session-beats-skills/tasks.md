@@ -83,7 +83,7 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 - [X] T006 [P] [US2] Create `.agents/skills/development-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Players can name what they now know or can decide that they could not before."
 - [X] T007 [P] [US2] Create `.agents/skills/cliffhanger-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "The contest resolved; physical situation (position, resources, safety, time) changed."
 - [X] T008 [P] [US2] Create `.agents/skills/climax-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Highest-stakes confrontation the middle made inevitable; threads harvested."
-- [ ] T009 [P] [US2] Create `.agents/skills/resolution-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Players can name what is different and what they want next." Retry after 2026-09-12 18:30 America/Vancouver.
+- [X] T009 [P] [US2] Create `.agents/skills/resolution-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Players can name what is different and what they want next."
 
 **Checkpoint**: US1 + US2 independently testable (quickstart steps 1, 3)
 
@@ -99,7 +99,7 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 
 - [X] T010 [US3] In `.agents/skills/session-beats/SKILL.md`, load a type skill only when filling a typed slot; after load, that type skill is primary for the fill. Quote seam: "Composition filling a typed slot → That type skill; type becomes primary for the fill."
 - [X] T011 [P] [US3] In `.agents/skills/hook-beats/SKILL.md`, load `session-beats` only when chart position, polarity, threads, or transition is in question (not as primary for writing the beat). Play a Cliffhanger as Hook loads `.agents/skills/cliffhanger-beats/` for opening shape only; Play a Development as Hook loads `.agents/skills/development-beats/` for opening shape only; beat remains the session's one Hook.
-- [ ] T012 [P] [US3] In `.agents/skills/development-beats/SKILL.md`, `.agents/skills/cliffhanger-beats/SKILL.md`, `.agents/skills/climax-beats/SKILL.md`, and `.agents/skills/resolution-beats/SKILL.md`, load `session-beats` only for chart position, polarity, threads, or transition; load the next type skill only when How the Scene Resolves names that type, for the handoff only. Quote: "Any other extra type-card catalog is a defect."
+- [X] T012 [P] [US3] In `.agents/skills/development-beats/SKILL.md`, `.agents/skills/cliffhanger-beats/SKILL.md`, `.agents/skills/climax-beats/SKILL.md`, and `.agents/skills/resolution-beats/SKILL.md`, load `session-beats` only for chart position, polarity, threads, or transition; load the next type skill only when How the Scene Resolves names that type, for the handoff only. Quote: "Any other extra type-card catalog is a defect."
 
 **Checkpoint**: US1–US3 independently testable (quickstart step 4)
 
@@ -242,13 +242,13 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 
 **Purpose**: Blob gone. Evals follow owners. Quickstart 1–10 holds. Dispatch flags hold.
 
-- [ ] T022 Delete `.agents/skills/session-beats/references/beat-types.md` after its cards live in the five type skills
-- [ ] T023 Split `.agents/skills/session-beats/evals/evals.json`: chart/agency/alternation/polarity evals stay on composition; type-card evals move with their type skill
+- [X] T022 Delete `.agents/skills/session-beats/references/beat-types.md` after its cards live in the five type skills
+- [X] T023 Split `.agents/skills/session-beats/evals/evals.json`: chart/agency/alternation/polarity evals stay on composition; type-card evals move with their type skill
 - [ ] T024 Run `specs/017-session-beats-skills/quickstart.md` steps 1–10 against `specs/017-session-beats-skills/contracts/beat-skill-routing.md` and `specs/017-session-beats-skills/contracts/wiki-kind-pages.md`
 - [ ] T025 Confirm this change set does not rewrite bodies of `wiki/_raw/Session-11-*.md`, does not edit `.agents/skills/writing-beats/SKILL.md`, does not copy routing tables into `.omp/AGENTS.md`, leaves 0 skills that contain both the full Beat Chart and all five type-card catalogs, does not add a `quest-design` skill, has no `.agents/skills/faction-prep/`, does not remap `lore`→`item`, and does not file new durable situations as `type: front` or `type: encounter`
 - [ ] T026 Confirm designated-writer jobs T003, T005–T009, T017, T018, T031, T036, T040, T043, T046 used `claude-opus-4-6 --effort medium` with a prompt that names deliverables plus a completion test, per `docs/agents/skill-design-dispatch.md`, except Codex CLI at ChatGPT 5.5 medium when FR-026 gates held; `AGENTS.md` and templates were session-agent work
 - [X] T027 Update `docs/agents/skill-design-dispatch.md` so usage-limit wait records retry time on this `tasks.md`, carries deferred tasks forward, and MAY invoke Codex CLI at ChatGPT 5.5 medium when every remaining open task is blocked, no other work can be done, and that retry time is more than one hour away; re-check those gates before each remaining blocked skill job; prefer Claude Code if it is usable again.
-- [ ] T048 Confirm type skills MAY hand off a named vehicle, spell, faction, lore note, quest, city, or region to that wiki-kind owner without absorbing the page job, in `.agents/skills/hook-beats/SKILL.md`, `.agents/skills/development-beats/SKILL.md`, `.agents/skills/cliffhanger-beats/SKILL.md`, `.agents/skills/climax-beats/SKILL.md`, and `.agents/skills/resolution-beats/SKILL.md`
+- [X] T048 Confirm type skills MAY hand off a named vehicle, spell, faction, lore note, quest, city, or region to that wiki-kind owner without absorbing the page job, in `.agents/skills/hook-beats/SKILL.md`, `.agents/skills/development-beats/SKILL.md`, `.agents/skills/cliffhanger-beats/SKILL.md`, `.agents/skills/climax-beats/SKILL.md`, and `.agents/skills/resolution-beats/SKILL.md`
 
 ---
 

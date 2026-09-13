@@ -90,5 +90,4 @@ Opening another type-card catalog for any other reason is a defect.
 Beat Chart assembly, polarity rules, time budget, thread planting, escalation,
 recompute, and the filed spine belong to `session-beats`. Cockpit layout belongs
 to `run-guide`. Spoken player text belongs to theatre of the mind. Encounter,
-trap, place, and monster crafts keep their owners. Wiki kind pages keep their
-owners.
+trap, place, and monster crafts keep their owners. A named vehicle, spell, faction, lore note, quest, city, or region hands off to that wiki-kind owner without absorbing the page job.
