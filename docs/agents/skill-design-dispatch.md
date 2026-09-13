@@ -50,19 +50,21 @@ Writer reports a usage limit:
 2. Do not create a GitHub issue.
 3. Record the job and retry time on the feature's `tasks.md`. Retry time is the reset time from the report when present; if none, 5 hours from the stop; if a retry still reports a usage limit with no reset time, 24 hours from that attempt.
 4. Do not re-attempt before this time. A new session retries after it. Defer only the Claude-dependent task. Complete remaining tasks that do not depend on it; do not mark those jobs incomplete. Completing other or new work MUST carry those deferred tasks forward still incomplete.
-5. Session agent does not write the design-impact change.
+5. Leave the design-impact files at dispatch-start until a designated writer or the last-resort write below lands them.
 
-When every remaining open task is blocked by that usage limit, no other work can be done, and the retry time on the blocked task is more than one hour away, invoke the Codex CLI at ChatGPT 5.5 medium with the same scoped prompt. Re-check those gates before each remaining blocked skill job. Prefer Claude Code if it is usable again.
+When every remaining open task is blocked by that usage limit, no other work can be done, and the retry time on the blocked task is more than one hour away, invoke the Codex CLI at ChatGPT 5.5 medium with the same scoped prompt. Re-check those gates before each remaining blocked skill job. Prefer Claude Code if it is usable again, then Codex if Claude Code is still usage-limited.
 
-Done: targets match dispatch-start content; job stays incomplete on `tasks.md` with retry time; independent work completed; deferred tasks carried forward; no GitHub issue.
+If that Codex invocation is itself unavailable due to a usage limit, and Claude Code remains unavailable due to a usage limit, write the design-impact change in this session. Follow writing-for-agents. Keep the scoped prompt’s files, bounds, and outcome.
+
+Done: wait path — targets match dispatch-start content; job stays incomplete on `tasks.md` with retry time; independent work completed; deferred tasks carried forward; no GitHub issue. Last-resort path — change is on disk; prompt outcome met; job no longer deferred for that usage-limit wait.
 
 ## Verify
 
-After a successful designated-writer run:
+After a successful designated-writer run or last-resort session write:
 
 1. Report whether touched files were in-scope and whether the prompt outcome was met.
 2. Stop. Do not rewrite those files for the same change.
 
-Owner overrule (explicit skip in `AGENTS.md`) is the only license for the session agent to write design-impact.
+Owner overrule (explicit skip in `AGENTS.md`) or the usage-limit last-resort write licenses the session agent to write design-impact.
 
-Done: scope and outcome reported; dispatched files unchanged by the session agent for this change.
+Done: scope and outcome reported; dispatched files unchanged by the session agent for this change unless overrule or last-resort write applied.
