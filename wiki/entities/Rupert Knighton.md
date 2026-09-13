@@ -50,7 +50,7 @@ Knighton visits [[Catarina Da'Virelli]]'s workshop before the [[Grung]] crisis, 
 
 ![[commoner#Stats & Combat]]
 
-## Relationships
+## Connections
 
 - [[Geoffrey Draves]]: blood nephew. Knighton doesn't think about him much, and Geoffrey has never met him. The blood tie may earn Geoffrey a hearing but not aid. Whether Knighton treats him well depends on real stakes (`draves-bloodline-question.md`).
 - [[Dravosi Crown]]: commands the Knight Squadron within it and answers to the Admiralty.

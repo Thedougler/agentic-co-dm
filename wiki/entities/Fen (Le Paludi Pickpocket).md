@@ -33,7 +33,7 @@ If cornered, she has the purse she lifted, a folding knife she will not use, and
 
 She carries a maintenance hatch key she cannot explain. She stole it thinking it valuable, and turns out she was right. It fits the sewer network below [[the Bridge]] connector and is a loaded gun for the [[Warren: Grung in the Sewers]] investigation. Leave it in her possession unless the party specifically looks for it.
 
-## Relationships
+## Connections
 
 - [[Calveno (Districts & Running the City)]]: her working ground; full chase-encounter mechanics live there ("The Chase")
 - [[Warren (Grung in the Sewers)]]: her stolen hatch key connects here

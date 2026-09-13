@@ -68,7 +68,7 @@ Jean-Claude told his contact he did not know what he wanted, only that he would 
 
 Emotional default: on the verge of something, permanently, and perfectly happy there.
 
-## Relationships
+## Connections
 
 - [[Il Preludio]]: owner and impresario.
 - [[Serena Cottle]]: co-owner. Finishes his sentences a fourth higher.

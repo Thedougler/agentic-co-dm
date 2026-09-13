@@ -39,7 +39,7 @@ Fifties, broad even for an orc, efficient. He works fast and talks at the same s
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Wibowo's Provisions]], the shop he runs.
 - [[Kalowe]], his home port.

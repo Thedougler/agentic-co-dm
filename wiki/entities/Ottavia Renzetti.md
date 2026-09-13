@@ -47,7 +47,7 @@ tier: supporting
 - *Emotional default:* controlled. Anger manifests as coldness, not heat.
 - *Worldview:* ambition tempered by clear-eyed assessment. She values strength, family bonds, and direct action over sentiment.
 
-## Relationships
+## Connections
 
 **[[Toa Kailani]]** (Rival). Ottavia has rung the challenge bell against his claim to [[Sparhold]]'s rule, forcing a duel to the death between their families' champions. His current hold on the settlement's defense is absolute. If his fighter falls to hers, power shifts entirely.
 

@@ -38,7 +38,7 @@ When discovered in her room:
 > [!mechanic] Encounter. Serin Haut at Bay (source: inbox/narrative-islands/Calveno-street-encounters.md)
 > Triggers when they approach her room or she spots them first. Combat happens in a narrow hallway (3 feet wide) outside her room above a canal-side notary's office, where a hired thug (HP 32, AC 11, club +4, 2d4+2) blocks the exit. Serin uses Cunning [[Action]] to escape and hide. At 10 HP or lower, she trades her codebook and help for her life.
 
-## Relationships
+## Connections
 
 - [[Dravosi Crown]]: employer; spy contact
 - [[Calveno]]: where she works undercover

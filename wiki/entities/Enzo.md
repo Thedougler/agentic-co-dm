@@ -127,7 +127,7 @@ reactions:
     desc: "Replaces Uncanny Dodge. When a creature Enzo can see targets [[Nona Black-Jaw]] with an attack, Enzo moves up to his speed toward the attacker without provoking opportunity attacks, and that attack roll is made with disadvantage."
 ```
 
-## Relationships
+## Connections
 
 - [[Nona Black-Jaw]], bodyguard, household
 - [[Ruk]], fellow bodyguard

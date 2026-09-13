@@ -117,7 +117,7 @@ Her Blind Discipline works within 40 feet. It defeats invisibility, darkness, fo
 
 Evasion shields her from ranged attacks. Still-Water Deflection blocks area hits. Slippery Grip makes her hard to hold. Tongue Lash pulls foes toward her. Pressure Point is a legendary action that lets her threaten her foes between their turns.
 
-## Relationships
+## Connections
 
 - [[Purple-Caste Enforcer]]: assigned escort, Room T1/Magazine Gamma
 - [[Bazzoth, the Steeped]]: fellow guardian, Room 5/Magazine Beta

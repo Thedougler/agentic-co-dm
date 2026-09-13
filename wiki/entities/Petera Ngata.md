@@ -72,7 +72,7 @@ Either company pressing her floor for the false log, or a name on the memorial w
 ```
 ````
 
-## Relationships
+## Connections
 
 | Relationship | Meaning |
 | ------------ | ------- |

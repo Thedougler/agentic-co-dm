@@ -56,7 +56,7 @@ He buys short batches and failed runs from [[Studio Orsini]] at a fraction of wh
 
 Sample lines: *"That one's ninety, which beats the hundred you paid last week, so we're both winning."* / *"It'll do what it does, and sometimes it does nothing, which is what ninety buys you."* / *"Don't move the cat."*
 
-## Relationships
+## Connections
 
 - [[La Gatta]]: proprietor, such as a board on trestles has a proprietor.
 - [[Marta Orsini]]: supplier, though she has not agreed to be one. He buys her short batches through a third party.

@@ -70,7 +70,7 @@ The current [[Penance Bar siege]] does not use her. If you put her on stage anyw
 ```
 ````
 
-## Relationships
+## Connections
 
 | Relationship | Meaning |
 | ------------ | ------- |

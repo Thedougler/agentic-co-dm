@@ -39,7 +39,7 @@ The Red Lady salvage commission: he doesn't know who funds it. He sells intel ar
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - Red Lady salvage commission, the funded rival crew racing to the wreck; he brokers intel on its funding and logistics.
 - [[Red Lady]], the wreck the commission targets.

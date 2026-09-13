@@ -30,7 +30,7 @@ visibility: dm
 ![[osset-narration-appearance]]
 
 
-## Relationships
+## Connections
 
 [[Delmar Fisk]] found Osset's name in Session 08. He spotted the scrap of paper at [[the Cabinet of Morsani]]. He pocketed it unseen (Sleight of Hand 25) and read it later (Insight 17). It named Ossanth, or Osset: once a monk of the [[High Eyrie]] and a master among the [[Sentinels of the Eyrie]]. He left the order during the schism and went unheard of since.
 

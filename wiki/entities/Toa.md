@@ -33,6 +33,6 @@ He is cheerful. He wants to know why fights go wrong. He offers his thoughts fre
 
 Not stated in the source.
 
-## Relationships
+## Connections
 
 - [[Five Blades]]: fellow member, alongside [[Varet]], [[Suke]], and [[Wirra]].

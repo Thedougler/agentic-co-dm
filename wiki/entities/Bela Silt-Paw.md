@@ -34,7 +34,7 @@ A Water [[Weird]] (AC 13, HP 58) holds her in the chamber. She awaits discovery 
 
 No stats given in source for Bela.
 
-## Relationships
+## Connections
 
 - [[Warren]]: current location. She remains trapped in its flooded sub-chamber.
 - [[Rattkin]]: her species.

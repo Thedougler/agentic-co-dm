@@ -54,7 +54,7 @@ Dry, clipped, sharp-tongued. Quick with a dark joke and quicker to cut off anyon
 
 Physical mannerisms: wipes the same spot on the bar when she's buying herself a beat before answering. Never stops moving glasses, even mid-conversation. Emotional default: exasperated, unsentimental, done fearing something that stopped being new years ago.
 
-## Relationships
+## Connections
 
 - [[Otel Karn]]: the island she's lived her whole life on. Nothing she pours there ever actually costs anyone anything.
 - [[Stillmere]]: her village. She's watched the same handful of wounds fail to close for longer than she can count.

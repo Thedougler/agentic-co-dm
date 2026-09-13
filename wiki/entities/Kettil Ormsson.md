@@ -41,7 +41,7 @@ He runs [[Ormsson's Fittings]], the shop closest to the main dry-dock. He works 
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Ormsson's Fittings]]: the shop he runs alone.
 - [[Kalowe]]: his home base since leaving Crown territory.

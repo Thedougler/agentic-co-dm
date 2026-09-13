@@ -72,7 +72,7 @@ A question that treats the coven as framed, or a look at the locked quarters and
 ```
 ````
 
-## Relationships
+## Connections
 
 | Relationship | Meaning |
 | ------------ | ------- |

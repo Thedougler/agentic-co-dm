@@ -60,7 +60,7 @@ She has run the register since the Goldrush's second year, back when the store w
 - *Marta Kessler*: *(low, once the customer's a regular)* Off the record. I've got what you actually need in the back.
 - Physical mannerism: double-stamps a receipt when annoyed. Emotional default: brisk, watchful, one eye on the harbor's far shore.
 
-## Relationships
+## Connections
 
 - [[Voyvode Works]]: her employer. The crate-count landing this month threatens the trades she's been running around its books.
 - [[Yevgenia Sorrel]]: Sunkline's shopkeeper, near-identical at a glance across the harbor. Marta despises her, a personal rivalry, not corporate loyalty.

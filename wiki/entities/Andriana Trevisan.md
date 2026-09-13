@@ -26,6 +26,6 @@ tier: supporting
 
 A minor contact who knows roughly where the [[Warren]] is, but will not name a contact there or lead anyone to it.
 
-## Relationships
+## Connections
 
 - [[Warren]]: knows its rough location but withholds a contact or escort.

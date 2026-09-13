@@ -74,7 +74,7 @@ Otho follows the CR-built path (`vault/refs/vault/npc/references/villains.md`), 
 
 Open combat is the Hardest of his three resolution paths by design (see the Toy Chest above and Goals & Fronts below). This section exists to telegraph that at the table, not to invite a fair fight.
 
-## Relationships
+## Connections
 
 - [[Otel Karn]]. His home in disguise, three generations deep, and the site of the original careless bargain.
 - [[Shepherd Grigori]]. His star disciple, the vessel who carried the office of Korabl further than any before him. Otho is obliviously proud of him and has no sense of how many centuries "my boy" has actually survived.

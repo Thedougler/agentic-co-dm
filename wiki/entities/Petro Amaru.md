@@ -49,7 +49,7 @@ Petro's operation is the only thing keeping [[Sparhold]] competitive with [[Kalo
 
 Physical mannerisms: he adjusts the ledger and tucks the pencil behind his ear. His scarred forearm rolls as if checking it for pain. Eyes stay fixed on numbers in the air or in the ledger, never on you.
 
-## Relationships
+## Connections
 
 - **[[Ussa]]** (bribed boundary scout, low-caste [[Grung]] defector). She misreports the cut-line on his payroll. Her position is becoming precarious as the raids escalate and suspicion grows.
 - **Timber crews** (his operation's backbone). They cut closer to [[Grung]] territory each season on his orders, aware only that the margin improves when they push the boundary.

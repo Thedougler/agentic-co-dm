@@ -29,7 +29,7 @@ Word at the [[Tallow Row]] table is Thassos lost his passage-sense to drink year
 
 He's not smiling at all once he's sure of a thing. He said as much to [[Thunk]] mid-hand, flat and certain: *"You've been lucky a great many times. Every hand the shoe's run thin, you've bet like you already knew."* He was right, and he was the one who called it out loud.
 
-## Relationships
+## Connections
 
 - [[Tallow Row]]: the den where he plays most nights.
 - [[Thunk]]: called out Thunk's card-counting at the table, mid-hand, in front of the whole room.

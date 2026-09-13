@@ -29,7 +29,7 @@ She keeps her name the way her kind do, a use-name that shows what she does. At 
 
 She was first to spot [[Thunk]]'s tells before [[Thassos]] said it out loud, but she kept it to herself.
 
-## Relationships
+## Connections
 
 - [[Tallow Row]], the den where she plays most nights.
 - [[Thassos]], fellow regular at the felt who called out at the table what she'd already clocked.

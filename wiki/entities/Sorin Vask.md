@@ -50,7 +50,7 @@ tier: supporting
 - Never posts a price twice. The weighing gesture from the Toy Chest above does the haggling for him.
 
 
-## Relationships
+## Connections
 
 - [[The shop he runs]] on Kalowe's docks
 - [[Kalowe]], the free port where he trades, watched by the Island Council's dock bosses

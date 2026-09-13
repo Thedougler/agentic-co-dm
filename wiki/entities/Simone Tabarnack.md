@@ -69,7 +69,7 @@ Once she understands the real mechanism (see Grung Clans), her plan changes shap
 
 ![[commoner#Stats & Combat]]
 
-## Relationships
+## Connections
 
 - [[Jean-Claude Tabarnack]]: older brother. She
   betrayed him and [[Pell]] to their parents. Now she hunts him with a

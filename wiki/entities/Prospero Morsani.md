@@ -65,7 +65,7 @@ No stats given in source.
 > **[[Detect Magic]]:** Evocation — cold current along every threshold; hinges hum faintly when magic passes near.
 > **[[Counterspell]]:** not applicable — trigger-activated enchantment, not a live cast; [[Dispel Magic]] suppresses it.
 
-## Relationships
+## Connections
 
 - [[Cabinet of Morsani]]: proprietor
 - [[Calveno]]: his shop sits in the Velo Quarter

@@ -69,7 +69,7 @@ One side in the succession duel trying to claim her as an asset. Or [[Delmar Fis
 ```
 ````
 
-## Relationships
+## Connections
 
 | Relationship | Meaning |
 | ------------ | ------- |

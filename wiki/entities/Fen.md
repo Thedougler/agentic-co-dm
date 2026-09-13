@@ -28,7 +28,7 @@ Seventeen or eighteen. Still growing a beard. He follows orders and does good wo
 
 **Roleplay anchor:** young, earnest, serious about his first sea job.
 
-## Relationships
+## Connections
 
 - [[Beaumont Sel]], captain of the [[Saltwright]], his employer.
 - [[Saltwright]], the ship he crews aboard.

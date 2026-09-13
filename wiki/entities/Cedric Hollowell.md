@@ -52,7 +52,7 @@ He is not hostile to the crew by default. He is a factor, and factors profit whe
 
 <!-- Not stated in source. -->
 
-## Relationships
+## Connections
 
 - [[Verity Hollowell]]: his daughter. She runs his secondary accounts.
 - [[Aldous Draves]]: knows Cedric and helped set [[Geoffrey Draves|Geoffrey]]'s berth terms.

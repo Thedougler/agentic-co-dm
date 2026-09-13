@@ -48,7 +48,7 @@ He is free, [[flying]] toward Murrat.
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Uncertainty|HCS Surety]]: held him captive in its brig for three weeks.
 - [[Jean-Claude Tabarnack|Jean-Claude]]: fed him his own blood to calm him.

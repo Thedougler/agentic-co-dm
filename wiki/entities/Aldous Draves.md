@@ -38,7 +38,7 @@ He got [[Geoffrey Draves|Geoffrey]] a berth on the [[Uncertainty|HCS Surety]], a
 
 He learned formality young, the way some men learn a trade — informality ruins a family name, so he doesn't risk it. He calls [[Geoffrey Draves|Geoffrey]] by his full name even alone in his own head, and delivers the same flat, correct sentences to a clerk or a son alike. *"Geoffrey is capable. His future depends on his choices."* Or: *"Getting this posting took work. That's what the Crown does for important roles."* Both are true. Neither says what he actually wants, which is real Crown status — proven by his son succeeding at something Aldous arranged and will never admit to arranging.
 
-## Relationships
+## Connections
 
 - [[Geoffrey Draves]]: his son. Got him a job on the [[Uncertainty|HCS Surety]] through connections he keeps secret.
 - [[Rupert Knighton]]: a Crown officer. Geoffrey's work may reach his desk. Aldous will respond based on what happens.

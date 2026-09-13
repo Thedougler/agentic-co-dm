@@ -30,6 +30,6 @@ visibility: dm
 
 The wiki has little on Oriana. She is Senior Factor of the [[Tessarine Amberreach]]. She signs contracts at sea. See the ship's page for her cabin, DC, and crew role.
 
-## Relationships
+## Connections
 
 - [[Tessarine Amberreach]]: her ship and role details.

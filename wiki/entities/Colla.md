@@ -53,7 +53,7 @@ Table-ready lines: "Let me work." / "That was preventable." / "I'll write it dow
 
 Physical mannerisms: focused, intense. Her whiskers tremble as she concentrates. When disapproving of an injury's cause, her expression hardens until the patient understands she won't waste care on preventable wounds.
 
-## Relationships
+## Connections
 
 - Tetta, his aunt who trained him over ten years and now lives retired
 - Dosia, surface-side herbalist supplier in [[Le Paludi]]

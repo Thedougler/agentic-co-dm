@@ -33,7 +33,7 @@ visibility: dm
 
 **Lore Sheet:** runs [[Zort's Pits]] in [[Le Paludi]], a fenced dirt pit of cages holding exotic and working animals. Calls himself the animal expert in [[Calveno]] and has a contact who supplies most of his reptiles from the Mid-Chain. Offered to pass that contact's name to [[Catarina Da'Virelli|Catarina]] in exchange for a prosthetic leg built to his measurements.
 
-## Relationships
+## Connections
 
 - [[Zort's Pits]]: proprietor.
 - [[Catarina Da'Virelli|Catarina]]: agreed to bring him a prototype prosthetic in exchange for his reptile contact's name, Session 08.

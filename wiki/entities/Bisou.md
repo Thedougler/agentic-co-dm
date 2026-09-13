@@ -35,7 +35,7 @@ Bisou has ridden [[Beaumont Sel]]'s left shoulder for the full eleven years he h
 
 No separate statblock stated in source. She is Beaumont's delivery mechanism in combat. See [[Beaumont Sel]]'s page for how the [[Kalowe]], [[Calveno]], and [[Tidefall]] Maneuvers describe his actions with her aid.
 
-## Relationships
+## Connections
 
 - [[Beaumont Sel]]: the tortle captain of the [[Saltwright]] she rides on his left shoulder. Companion for the full eleven years he has run the [[Midchain]].
 

@@ -106,7 +106,7 @@ In [[Calven and Calveno|Calveno]], blackout-drunk Thunk ordered `1,000 gp` of ne
 
 The creditor, terms, and purpose remain open. Use the debt as generosity, leverage, or a future bill depending on who comes asking.
 
-# Relationships
+## Connections
 
 | Relationship                              | Meaning                                                        |
 | ----------------------------------------- | -------------------------------------------------------------- |
