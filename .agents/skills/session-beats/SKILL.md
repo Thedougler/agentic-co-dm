@@ -24,11 +24,11 @@ Remap durable session-prep to `wiki/journal/sessions/<campaign-slug>/<session-nu
 
 ## Filed session plan
 
-After accept, file one session plan at `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<number>-00-<Title>.md` copied from `wiki/templates/session-plan.md` with `type: session-prep` and `kind: session-plan`. Jobs: compass, Beat Map, Floating Beats, Pressure, PC Touchpoints, and links to typed beat pages. The plan MUST NOT duplicate Scene ends when, Zones, or Be ready for. Live beats are typed pages filled by their type skills, not Session 11 cockpit cards.
+After accept, file one session plan at `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<number>-00-<Title>.md` copied from `wiki/templates/session-plan.md` with `type: session-prep` and `kind: session-plan`. Jobs: compass, Beat Map, Floating Beats, Pressure, PC Touchpoints, and links to typed beat pages. The plan MUST NOT duplicate Scene ends when, Zones, or Be ready for. Live beats are typed pages filled by their type skills.
 
 `references/session-skeleton.md` is the planning form. The filed page the DM opens is the filled session-plan template, not the planning skeleton.
 
-Done when: the session plan answers those jobs, links every live beat, has `type: session-prep` and `kind: session-plan`, and contains no cockpit-only sections.
+Done when: the session plan answers those jobs, links every live beat, has `type: session-prep` and `kind: session-plan`, and contains only session-plan jobs.
 
 Use a Beat Chart as a pacing palette, never as a script. Prepare pressures,
 factions, clues, locations, offers, and hazards that can become beats. Let what

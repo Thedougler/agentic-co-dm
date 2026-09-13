@@ -1,16 +1,3 @@
-<!--
-Sync Impact Report
-- Version change: 1.15.0 → 1.16.0
-- Modified principles:
-  - XIV. User Corrections Become Durable Error Records (new)
-- Added sections: none
-- Removed sections: none
-- Other modified sections:
-  - Agent Operating Constraints (correction logging and implementation checks)
-  - Development Workflow / Review (correction-log check during implementation)
-  - Governance / Compliance (correction-log enforcement)
-- Follow-up TODOs: none
--->
 
 # Agentic Co-DM Constitution
 
