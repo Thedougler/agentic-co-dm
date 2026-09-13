@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+# Sync local main to origin/main. Does not push. Does not touch other branches.
+#
+# Usage (repo root or any worktree):
+#   ./scripts/git-sync-main
+#   ./scripts/git-sync-main --force-clean
+set -euo pipefail
+
+force_clean=0
+if [[ "${1:-}" == "--force-clean" ]]; then
+  force_clean=1
+elif [[ -n "${1:-}" ]]; then
+  echo "usage: $0 [--force-clean]" >&2
+  exit 2
+fi
+
+root="$(git rev-parse --show-toplevel)"
+cd "$root"
+
+git fetch origin
+
+if ! git rev-parse --verify origin/main >/dev/null 2>&1; then
+  echo "refuse: origin/main missing" >&2
+  exit 1
+fi
+
+if ! git rev-parse --verify main >/dev/null 2>&1; then
+  echo "refuse: local main missing" >&2
+  exit 1
+fi
+
+if unique="$(git rev-list --max-count=50 origin/main..main)" && [[ -n "$unique" ]]; then
+  echo "refuse: local main has commits not on origin/main" >&2
+  git rev-list --format='%H %s' origin/main..main >&2
+  exit 1
+fi
+
+if [[ -n "$(git status --porcelain --untracked-files=no)" ]]; then
+  if [[ "$force_clean" -eq 0 ]]; then
+    echo "refuse: uncommitted changes present (pass --force-clean to discard)" >&2
+    git status --short >&2
+    exit 2
+  fi
+fi
+
+current="$(git rev-parse --abbrev-ref HEAD)"
+if [[ "$current" != "main" ]]; then
+  if [[ "$force_clean" -eq 1 ]]; then
+    git checkout -f main
+  else
+    git checkout main
+  fi
+fi
+
+git reset --hard origin/main
+echo "HEAD $(git rev-parse HEAD)"
+echo "origin/main $(git rev-parse origin/main)"
