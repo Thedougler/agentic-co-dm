@@ -249,7 +249,7 @@ Pages with no lifecycle field (legacy pages predating the schema) are treated th
 
 **Surface the project source path (project-scoped queries).** When the cited pages are project-scoped — their path is under `projects/<name>/...`, or their frontmatter carries a `source_path` field — resolve where the actual code lives so a proposed fix can name real files and a follow-up turn can edit them:
 
-1. Read `$OBSIDIAN_VAULT_PATH/.manifest.json` and look up `.projects.<name>.source_cwd` — this is the authoritative path.
+1. Resolve project path via `python3 scripts/manifest.py get/stats` — do **not** load whole `.manifest.json`. Prefer `.projects.<name>.source_cwd` from a targeted get if present.
 2. Fallback: if the project isn't in the manifest, use the page's `source_path` frontmatter.
 
 Include a **`Source code:`** line in the answer with that absolute path. When the query implies a code fix is wanted, name the specific files to edit using that path (e.g. `<source_cwd>/public/lib/anticheat.js`) and **offer to implement it as an explicit, separate next step** — but never edit during the query itself (see the READ-ONLY guard above).

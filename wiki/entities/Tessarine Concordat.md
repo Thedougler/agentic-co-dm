@@ -3,6 +3,7 @@ title: Tessarine Concordat
 category: entities
 tags: [shattered-sea, faction, tessarine, mercantile, calven, concordat]
 sources:
+  - "campaign-os:tessarine-concordat.md"
   - "inbox/archive/FILED-2026-09-05-tessarine-concordat.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-tessarine-concordat.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/_archive/the-vault-of-the-first-factor.md"
@@ -18,7 +19,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T03:04:18Z
-updated: 2026-09-13T20:35:00Z
+updated: 2026-09-13
 type: faction
 reveal: unrevealed
 campaign: shattered-sea

@@ -3,6 +3,14 @@ title: Delmar Fisk
 category: entities
 tags: [shattered-sea, npc, pc]
 sources:
+  - "wiki/_archive/delmar-fisk.md"
+  - "wiki/_archive/abilities/delmar-fisk-abilities.md"
+  - "wiki/_archive/stats/delmar-fisk-stats.md"
+  - "wiki/_archive/character-sheets/delmar-fisk-sheet.md"
+  - "wiki/_archive/inventory/delmar-fisk-inventory.md"
+  - "wiki/_archive/combat-profile/delmar-fisk-combat-profile.md"
+  - "wiki/_archive/va-scripts/delmar-fisk-voice-script.md"
+  - "wiki/_archive/interviews/delmar-fisk-interview.md"
   - "Session 01 - Recap.md"
   - "Session 04 - Recap.md"
   - "Session 07 - Recap.md"
@@ -36,20 +44,28 @@ relationships:
   - target: "[[Flying Boots]]"
     type: related_to
 ---
-
 # Delmar Fisk
 
 Party member. Frederick plays him. The table has heard him as both Delmar and Admiral Fisk. Foundry actor name: Admiral Delmar A. Fisk.
 
 ## At a Glance
 
-He is the man who asked Geoffrey Draves which side would keep him alive, then put Barnaby Rook in the water. He told the others, walking to the harbor in [[Calven and Calveno]], that he had commanded a five-ship privateer fleet, stolen the [[Pearl of Souls]], and watched the Drowned Maw wreck that fleet within hours.
+| **Role**          | PC |
+| ----------------- | -- |
+| **Class / Level** | Rogue 5 (Swashbuckler) |
+| **Player**        | Frederick |
+| **Home ship**     | [[Uncertainty]] |
 
-## At the table
+> **DM thesis:** Charm first, then Admiral Fisk when the pressure hits. Sneak Attack rides the blunderbuss. [[Crissdalynn Khinriss]] has already pulled him back once.
 
-Play the slip into Admiral Fisk when pressure hits, and let Crissdalynn be the person who has already pulled him back once. He ended Otar the Foul with a chair and a shot through the eye while Catarina was in the thing's mouth. Shepherd Grigori has spoken of his Umberlee curse. He is training Geoffrey on the night watches.
+## Connections
 
-## Wiki facts
+- [[Pearl of Souls]] — He stole it. [[Umberlee]] named it as her price after reading his offer out of his head.
+- [[Uncertainty]] — Berth and station.
+- [[Barnaby Rook]] — Delmar put him in the water.
+- [[Geoffrey Draves]] — Asked which side would keep him alive. Now training him on night watches.
+- [[Catarina Da'Virelli]] — Gave him Lamarae's Fang. Enchanted the blunderbuss mid-fight.
+- [[Vashka Doru]] — Has a harbor secret about a ship that once belonged to one of the five souls he carries.
 
 Umberlee named the Pearl as her price after reading Delmar's offer out of his head. Catarina Da'Virelli gave him Lamarae's Fang. He is aboard *[[Uncertainty]]* at [[Aruhe - Hungry Isle]]. See [[journal/Session 04 - Recap]] and [[Story So Far]].
 

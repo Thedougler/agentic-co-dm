@@ -20,14 +20,14 @@ This skill can be invoked directly or via the `wiki-history-ingest` router (`/wi
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `COPILOT_HISTORY_PATH` (defaults to `~/.copilot/session-state`), and `COPILOT_VSCODE_STORAGE_PATH` (VS Code `workspaceStorage`; platform-specific — ask the user if absent)
-2. Read `.manifest.json` at the vault root to check what's already been ingested
+2. Query the ingest ledger with `python3 scripts/manifest.py` (`stats` / `has` / `get` / `delta`) — do **not** read whole `.manifest.json` into context
 3. Read `index.md` at the vault root to know what the wiki already contains
 
 ## Ingest Modes
 
 ### Append Mode (default)
 
-Check `.manifest.json` for each source file (events JSONL, transcript JSONL, checkpoint, session-store DB). Only process:
+For each source, use `python3 scripts/manifest.py has`/`get`/`delta`. Only process:
 
 - Sessions not in the manifest (new sessions)
 - Sessions whose `updated_at` is newer than their `ingested_at` in the manifest
@@ -101,7 +101,7 @@ VS Code extension data, keyed by workspace hash. The path is platform-specific a
 
 ## Step 1: Survey and Compute Delta
 
-Scan all three data locations and compare against `.manifest.json`:
+Scan all three data locations; compare with `python3 scripts/manifest.py delta`/`has` (not a whole-file read):
 
 ```bash
 # --- Source 1: per-session directories ---
@@ -289,7 +289,7 @@ Leave `lifecycle` unchanged on update.
 
 ## Step 6: Update Manifest, Journal, and Special Files
 
-### Update `.manifest.json`
+### Update ingest ledger (`scripts/manifest.py upsert`)
 
 For each session processed, add/update its entry with:
 

@@ -8,6 +8,7 @@ sources:
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/_archive/the-vault-of-the-first-factor.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/region-calven.md"
   - "Khlysty - the Flock.md"
+  - "campaign-os:oriana-becht.md"
 summary: "Senior Tessarine factor signing in the field."
 provenance:
   extracted: 1.0
@@ -18,17 +19,17 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T20:35:00Z
-updated: 2026-09-13T20:35:00Z
+updated: 2026-09-13
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 ---
+
 # Oriana Becht
 
-[[Oriana Becht]] is a senior [[Tessarine Concordat]] factor who signs in the field.
+The wiki has little on Oriana. She is Senior Factor of the [[Tessarine Amberreach]]. She signs contracts at sea. See the ship's page for her cabin, DC, and crew role.
 
-## Connections
+## Relationships
 
-- [[Tessarine Concordat]]
-- [[Calven and Calveno]]
+- [[Tessarine Amberreach]]: her ship and role details.

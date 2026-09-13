@@ -3,6 +3,15 @@ title: Jean-Claude Tabarnack
 category: entities
 tags: [shattered-sea, npc, pc]
 sources:
+  - "wiki/_archive/jean-claude-tabarnack.md"
+  - "wiki/_archive/abilities/jean-claude-tabarnack-abilities.md"
+  - "wiki/_archive/stats/jean-claude-tabarnack-stats.md"
+  - "wiki/_archive/character-sheets/jean-claude-tabarnack-sheet.md"
+  - "wiki/_archive/inventory/jean-claude-tabarnack-inventory.md"
+  - "wiki/_archive/spells/jean-claude-tabarnack-spells.md"
+  - "wiki/_archive/combat-profile/jean-claude-tabarnack-combat-profile.md"
+  - "wiki/_archive/va-scripts/jean-claude-tabarnack-voice-script.md"
+  - "wiki/_archive/galleries/jean-claude-tabarnack-gallery.md"
   - "wiki/_raw/Grung clans.md"
   - "Foundry VTT Shattered-Sea actor Jean Claude Tabarnack 2026-09-13"
 summary: Level 5 Gloom Stalker Grung at 51/51 HP whose red beret marks censure and whose sister Simone still hunts him.

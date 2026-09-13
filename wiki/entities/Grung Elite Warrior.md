@@ -3,6 +3,7 @@ title: Grung Elite Warrior
 category: entities
 tags: [shattered-sea, creature, grung]
 sources:
+  - "campaign-os:grung-elite-warrior.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/the-grung-clans/creature.grung-elite-warrior.md"
 summary: "CR 2 Small grung warrior with poisonous skin, standing leap, poisoned weapons, and Mesmerizing Chirr."
 provenance:
@@ -14,7 +15,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T20:10:00Z
-updated: 2026-09-13T20:10:00Z
+updated: 2026-09-13
 type: creature
 reveal: unrevealed
 campaign: shattered-sea

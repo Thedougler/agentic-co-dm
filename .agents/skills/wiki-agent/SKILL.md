@@ -35,7 +35,7 @@ If no query is given, default to **recent sessions mode**: ingest the last 5 unp
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`.
-2. Read `$OBSIDIAN_VAULT_PATH/.manifest.json` → know what's already ingested.
+2. Use `python3 scripts/manifest.py stats/has/get/delta` on `$OBSIDIAN_VAULT_PATH` — do **not** read whole `.manifest.json`.
 3. Read `$OBSIDIAN_VAULT_PATH/hot.md` if it exists → warm context on recent wiki activity.
 
 ---
@@ -239,7 +239,7 @@ If a query was given but no relevant sessions were found, say so explicitly: "No
 
 ## Step 7: Update Tracking Files
 
-Update `.manifest.json` for each session file processed:
+Upsert each session file with `python3 scripts/manifest.py upsert` (do not load whole `.manifest.json`):
 ```json
 {
   "<path>": {

@@ -8,25 +8,15 @@ updated: YYYY-MM-DD
 type: session
 lifecycle: proposed
 reveal: unrevealed
+campaign: shattered-sea
+visibility: dm
 summary: ""
 ---
+<!-- DEPRECATED as copy-start for new post-play logs.
+     Use wiki/templates/recap.md (type: recap) instead.
+     Kept so old links and enum mentions do not break.
+-->
 
 # {{title}}
 
-Record what happened at the table in complete sentences. File as proposed Work until the DM accepts.
-
-## Beats
-
-Write the play-supported events in order.
-
-## Secrets revealed
-
-Write only secrets that play actually revealed.
-
-## Loose threads
-
-Write open questions and unfinished promises.
-
-## Next hooks
-
-Write handles for the next prep window.
+**Use `wiki/templates/recap.md` instead.** Post-play scaffold: optional cold open, `> [!narration] Recap`, then `## Wiki facts`.

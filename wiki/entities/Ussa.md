@@ -1,0 +1,51 @@
+---
+title: "Ussa"
+category: entities
+tags: ["shattered-sea", "npc"]
+sources:
+  - "campaign-os:ussa-narration-appearance.md"
+  - "campaign-os:ussa.md"
+created: 2026-09-13
+updated: 2026-09-13
+type: npc
+lifecycle: proposed
+lifecycle_changed: "2026-09-13"
+reveal: unrevealed
+campaign: shattered-sea
+visibility: dm
+summary: "A green-skinned scout in Sparhold colours, bare webbed feet, chalk-dusted palms, eyes always on the tree line."
+provenance:
+  extracted: 0.85
+  inferred: 0.10
+  ambiguous: 0.05
+base_confidence: 0.55
+tier: supporting
+---
+
+# Ussa
+
+**Wants:** to buy freedom for her enslaved kin under the [[Grung clans|Grung Clans]], but the bribes she takes to misreport the timber cut-line are pushing [[Sparhold]]'s crews into raiding season.
+
+![[ussa-narration-appearance]]
+
+Ussa fled the clans and traded everything she had built inside the rigid caste hierarchy to become someone else. Her defection bought her freedom. It cost her family, still caged. Every coin [[Petro Amaru]] pays her goes toward buying her kin out.
+
+She speaks rarely and moves constantly. A scout's economy. An exile's reluctance to stay anywhere long.
+
+When Ussa marks the timber line, she's tallied the season's drift. She knows what it means if the trend continues. Amaru's ledger pays better when the line stays hidden. Her family's freedom is worth more than the warning she could sound alone.
+
+| Field | Detail |
+|---|---|
+| primary_goal | Buy freedom for her enslaved kin living in the [[Grung clans|Grung Clans]]' hatchery camps. |
+| consistent_method | Takes bribes from [[Petro Amaru]] to report false cut-line positions on official boundary records. Payment passes in private, recorded only in memory. |
+| active_problem | The misreported lines are drifting timber crews closer to Grung-claimed territory with each season, and raids on the [[Midchain]] have been climbing in parallel. The connection is unproven, but Ussa sees it. |
+| performance_hooks | **Vibe:** a scout who has learned to wear another caste's colors by holding herself apart from everyone wearing them. **Tic:** she traces the old caste scars at her temples when she's thinking about a lie she just told. |
+| link_of_relevance | [[Jean-Claude Tabarnack]], a fellow [[Grung]] defector, would recognize what she's trading and how little it buys. |
+
+## Relationships
+
+[[Petro Amaru]] bribes Ussa to keep the cut-line silent in the harbor books. She takes his coin, lets him think she's complicit, but the money is always leverage toward freeing her kin.
+
+[[Grung clans|The Grung Clans]] hold her family enslaved in the hatchery camps. Their freedom is the only thing Ussa is working toward.
+
+[[Jean-Claude Tabarnack]] is a fellow defector now sailing with [[Uncertainty|the Uncertainty]]. He would recognize the bind she's in: defection bought her freedom, but at the cost of her family still caged.

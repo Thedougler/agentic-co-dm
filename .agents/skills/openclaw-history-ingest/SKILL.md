@@ -17,14 +17,14 @@ This skill can be invoked directly or via the `wiki-history-ingest` router (`/wi
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` and `OPENCLAW_HISTORY_PATH` (defaults to `~/.openclaw`)
-2. Read `.manifest.json` at the vault root to check what has already been ingested
+2. Query the ingest ledger with `python3 scripts/manifest.py` (`stats` / `has` / `get` / `delta`) — do **not** read whole `.manifest.json` into context
 3. Read `index.md` at the vault root to understand what the wiki already contains
 
 ## Ingest Modes
 
 ### Append Mode (default)
 
-Check `.manifest.json` for each source file. Only process:
+For each source, use `python3 scripts/manifest.py has`/`get`/`delta`. Only process:
 
 - Files not in the manifest (new session logs, updated MEMORY.md or daily notes)
 - Files whose modification time is newer than `ingested_at` in the manifest
@@ -70,7 +70,7 @@ Skip `credentials/` entirely. Skip `agents/*/agent/models.json` (runtime config,
 
 ## Step 1: Survey and Compute Delta
 
-Scan `OPENCLAW_HISTORY_PATH` and compare against `.manifest.json`:
+Scan `OPENCLAW_HISTORY_PATH`; compare with `python3 scripts/manifest.py delta`/`has`:
 
 - `~/.openclaw/workspace/MEMORY.md`
 - `~/.openclaw/workspace/DREAMS.md` (if present)
@@ -172,7 +172,7 @@ For each impacted project, create/update `projects/<name>/<name>.md`.
 
 ## Step 7: Update Manifest, Log, and Index
 
-### Update `.manifest.json`
+### Update ingest ledger (`scripts/manifest.py upsert`)
 
 For each processed source file:
 

@@ -15,7 +15,11 @@ region: ""
 berth: ""
 summary: ""
 ---
-<!-- Copy-start scaffold. Look; sheet; components; crew stations; handling; combat. Omit unused sections. Pass is those jobs. -->
+<!-- Copy-start scaffold. Jobs: Look; sheet; components; crew stations; handling; combat.
+     After combat, shared omit-if-empty owner sections in this order (Red Lady / Dead Lady practice):
+     At a Glance → Secrets → Connections → At the Table → Provenance → Art.
+     Pass is vehicle jobs in wiki/AGENTS.md Layout. Omit unused sections.
+-->
 
 # {{title}}
 
@@ -49,3 +53,29 @@ Conditions, maneuvers, and limits that change a choice.
 ## Combat
 
 Initiative, ramming, boarding, and destruction when the craft fights. Omit when it does not enter play as a fighting craft.
+
+## At a Glance
+
+One short block: what this craft is now, where it sits, and why a DM opens the page. Omit when Sheet + narration already cover it.
+
+## Secrets
+
+Hidden or unearned truth (wreck cargo, true flag, who is hunting it). Prefer `[!secret]` when progressive disclosure helps. Omit when unused.
+
+## Connections
+
+- [[page]] — What this tie does at the table.
+
+<!-- Omit Connections when unused. -->
+
+## At the Table
+
+How to run the craft tonight — approach, berth, pursuit, boarding choice. Omit when unused.
+
+## Provenance
+
+Chassis source, rename history, contested ownership. Omit when unused.
+
+## Art
+
+<!-- Omit Art when unused. -->

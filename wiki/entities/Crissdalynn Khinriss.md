@@ -35,7 +35,6 @@ relationships:
   - target: "[[Fate Spinner]]"
     type: related_to
 ---
-
 # Crissdalynn Khinriss
 
 Party member. Courtney plays her. Foundry actor name: Crisdalynn Khinris. The supplied vehicle source identifies her as the person who pulled [[Delmar Fisk]] from the Red Lady's crow's nest when the fleet sank.
@@ -112,6 +111,6 @@ Attuned: Eldritch Claw Tattoo (equipped). Cloak of Displacement is **unequipped*
 | [[Fate Spinner]] | [[Talon Vantyrus]] sent a ship to take it. |
 | [[Uncertainty]] | Aboard at [[Aruhe - Hungry Isle]]. |
 
-## Provenance
+## Sheet
 
 The Red Lady source does not establish current goals beyond the live Foundry sheet and table play. Foundry spelling is Crisdalynn Khinris; this page keeps the vault title.

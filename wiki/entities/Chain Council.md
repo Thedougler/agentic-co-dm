@@ -3,6 +3,7 @@ title: Chain Council
 category: entities
 tags: [shattered-sea, faction, chain-council, pearl, maw, tessarine]
 sources:
+  - "campaign-os:chain-council.md"
   - "inbox/archive/FILED-2026-09-05-tessarine-concordat.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-chain-council.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-tessarine-concordat.md"
@@ -17,7 +18,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T03:04:18Z
-updated: 2026-09-13T19:50:00Z
+updated: 2026-09-13
 type: faction
 reveal: unrevealed
 campaign: shattered-sea

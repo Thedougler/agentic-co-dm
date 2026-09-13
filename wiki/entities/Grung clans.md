@@ -3,6 +3,7 @@ title: Grung Clans
 category: entities
 tags: [shattered-sea, faction]
 sources:
+  - "campaign-os:grung-clans.md"
   - "wiki/_raw/Grung clans.md"
 summary: Political Grung clans that keep the Verdant Teeth closed, trade toxin, and raid for captives while their water power declines.
 provenance:
@@ -14,7 +15,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T00:00:00Z
-updated: 2026-09-12T00:00:00Z
+updated: 2026-09-13
 type: faction
 reveal: unrevealed
 campaign: shattered-sea

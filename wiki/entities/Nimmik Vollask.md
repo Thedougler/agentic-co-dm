@@ -3,6 +3,7 @@ title: "Nimmik Vollask"
 category: entities
 tags: [shattered-sea, vehicle, maritime]
 sources:
+  - "campaign-os:nimmik-vollask.md"
   - "/workspace/midchain-ingest/group-a/vehicles/Nimmik Vollask.md"
 summary: "Gnome-crewed orange cargo brig (the Depot) on the Central Strait; Cotter Foss sells from the rail and nobody Medium boards."
 provenance:
@@ -14,7 +15,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T19:56:00Z
-updated: 2026-09-13T19:56:00Z
+updated: 2026-09-13
 type: vehicle
 reveal: unrevealed
 campaign: shattered-sea
@@ -29,6 +30,7 @@ relationships:
   - target: "[[Cotter Foss]]"
     type: related_to
 ---
+
 # Nimmik Vollask
 
 > [!narration] Narration
@@ -63,3 +65,16 @@ Service model: pull up and flag [[Cotter Foss]] at the rail, name the cargo, pay
 ## Combat
 
 Armed for defense with swivel guns. Primary play is resupply on the [[Central Strait]], not ship-to-ship offense. After four years on that circuit the ship has never sunk.
+
+## At a Glance
+
+Gnome-crewed orange cargo brig (alias: the Depot) on the [[Central Strait]]. [[Cotter Foss]] sells from the starboard rail; Medium-or-larger customers do not board.
+
+## Connections
+
+- [[Central Strait]] — Four-year resupply circuit; primary play is trade, not offense.
+- [[Cotter Foss]] — Public interface at the rail; ledger, coffee, and crane-and-hatch handoffs.
+
+## At the Table
+
+Pull up and flag [[Cotter Foss]] at the rail, name the cargo, pay the fee. Free coffee and gnomish meatballs come with the deal. Orders leave by crane-and-hatch handoff across open water; nobody Medium boards. Passages below are Small-or-smaller.
