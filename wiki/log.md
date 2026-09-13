@@ -122,3 +122,59 @@ title: Wiki Log
 - [2026-09-13T07:15:00Z] ARCHIVE_RAW source="wiki/_raw/Blackrule.md" destination="wiki/_archive/Blackrule.md" pages=2
 - [2026-09-13T07:20:00Z] INGEST source="wiki/_raw/Aruhe - Grasslands.md" pages_updated=1 pages_created=1 mode=append
 - [2026-09-13T07:20:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Grasslands.md" destination="wiki/_archive/Aruhe - Grasslands.md" pages=2
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Aruhe - River Line Bank.md" pages_updated=1 pages_created=0 mode=append note="skip rewrite; existing entities/Aruhe - River - Line Bank.md"
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - River Line Bank.md" destination="wiki/_archive/Aruhe - River Line Bank.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Ashwalls.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Ashwalls.md" destination="wiki/_archive/Ashwalls.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Calder's Tooth and Port Tidefall.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Calder's Tooth and Port Tidefall.md" destination="wiki/_archive/Calder's Tooth and Port Tidefall.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Central Strait.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Central Strait.md" destination="wiki/_archive/Central Strait.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Deep Works.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Deep Works.md" destination="wiki/_archive/Deep Works.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Doldrums.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Doldrums.md" destination="wiki/_archive/Doldrums.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Fathomrush.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Fathomrush.md" destination="wiki/_archive/Fathomrush.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Galewall.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Galewall.md" destination="wiki/_archive/Galewall.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Greyteeth.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Greyteeth.md" destination="wiki/_archive/Greyteeth.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Halewick.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Halewick.md" destination="wiki/_archive/Halewick.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/High Eyrie.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/High Eyrie.md" destination="wiki/_archive/High Eyrie.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Kalowe.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Kalowe.md" destination="wiki/_archive/Kalowe.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Keth Naar.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Keth Naar.md" destination="wiki/_archive/Keth Naar.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Mid-Works.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Mid-Works.md" destination="wiki/_archive/Mid-Works.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Murrat.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Murrat.md" destination="wiki/_archive/Murrat.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Outer Reach.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Outer Reach.md" destination="wiki/_archive/Outer Reach.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Sanvashti.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Sanvashti.md" destination="wiki/_archive/Sanvashti.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Sarn's Landing.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Sarn's Landing.md" destination="wiki/_archive/Sarn's Landing.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Shattered Sea.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Shattered Sea.md" destination="wiki/_archive/Shattered Sea.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Sorn Guarded Beach.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Sorn Guarded Beach.md" destination="wiki/_archive/Sorn Guarded Beach.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Sparhold Isle.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Sparhold Isle.md" destination="wiki/_archive/Sparhold Isle.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Sparhold.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Sparhold.md" destination="wiki/_archive/Sparhold.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Stenmark.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Stenmark.md" destination="wiki/_archive/Stenmark.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Tail.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Tail.md" destination="wiki/_archive/Tail.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Vault of the First Factor.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Vault of the First Factor.md" destination="wiki/_archive/Vault of the First Factor.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Vel Orn.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Vel Orn.md" destination="wiki/_archive/Vel Orn.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Verdant Scatter.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Verdant Scatter.md" destination="wiki/_archive/Verdant Scatter.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Yssenmoor.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Yssenmoor.md" destination="wiki/_archive/Yssenmoor.md" pages=1

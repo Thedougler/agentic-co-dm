@@ -30,6 +30,6 @@
 - [x] No implementation details leak into specification
 
 ## Notes
-
-- Validation iteration 1 failed: P2 independent test said "practice file"; FR-016 and an edge case named writer-dispatch; FR-009 and FR-018 had no story acceptance scenarios; User Story 3 prescribed a "short" reflection.
+- Validation iteration 2 passed: those items were corrected in spec.md. No [NEEDS CLARIFICATION] markers.
+- Validation iteration 3 passed after owner add: token cost of an operation/sitting is a core improvement metric (US4, FR-019–FR-024, SC-011–SC-014). Quality is a constraint, not a trade. Ready for `/speckit.clarify` or `/speckit.plan`.
 - Validation iteration 2 passed: those items were corrected in spec.md. No [NEEDS CLARIFICATION] markers. Ready for `/speckit.clarify` or `/speckit.plan`.

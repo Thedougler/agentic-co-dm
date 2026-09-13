@@ -8,6 +8,13 @@
 
 **Input**: User description: "agentic-co-dm is a self bootstraping, self reflecting, self improving exercise in agentic and human creativity, communication and collaboration with both aligned towards the goal of producing the best posible dnd campaign for the users players."
 
+## Clarifications
+
+### Session 2026-09-12
+
+- Q: What is a core metric of self-improvement besides serving these players? → A: Token cost of an operation or sitting. More Work completed at the same quality. Wasted context hurts focus and output quality, so cutting it is an improvement only when quality holds.
+
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Aim at these players (Priority: P1)
@@ -61,7 +68,25 @@ After wrapup — and after prep when the DM asks — the Co-DM offers a reflecti
 5. **Given** an accepted improvement, **When** a later sitting uses the same kind of job, **Then** the Co-DM follows the accepted change rather than the obsolete practice.
 6. **Given** a session in progress, **When** play is happening, **Then** no reflection or improvement is running.
 7. **Given** the DM asks for a reflection after prep, **When** that prep sitting is complete, **Then** they receive a reflection they can accept, edit, or reject, with the same gate as wrapup.
-8. **Given** a completed sitting that included aim, Work, reflection, and a proposal the DM accepted or rejected, **When** the DM later inspects that sitting, **Then** they can see each of those steps.
+8. **Given** a completed sitting that included aim, Work, reflection, a proposal the DM accepted or rejected, and the sitting's token cost, **When** the DM later inspects that sitting, **Then** they can see each of those steps.
+
+---
+
+### User Story 4 - More Work, less waste, quality holds (Priority: P4)
+
+A sitting has a token cost: how much the Co-DM had to read and write to finish its jobs. That cost is a core improvement metric. The DM and Co-DM use it to get more Work done in a sitting without dropping quality. Wasted context (reading or writing that does not change the sitting's outcome) is named so it can be cut. An accepted change that finishes the same jobs with lower token cost at the same quality is an improvement. A change that saves tokens by lowering quality is not. A change that raises token cost for the same jobs, without preventing a named failure, is not.
+
+**Why this priority**: Token waste drowns signal. Less waste improves focus and the quality of Work for these players. Efficiency that trades away quality is not self-improvement.
+
+**Independent Test**: Record token cost and accepted Work for a sitting. Apply an accepted efficiency change. Repeat the same kind of sitting. Token cost is lower, at least as much Work is accepted, and quality still passes. A proposed change that raises token cost with no named failure, or that lowers quality to save tokens, does not count as an improvement.
+
+**Acceptance Scenarios**:
+
+1. **Given** a finished prep or wrapup sitting, **When** that sitting is complete, **Then** its token cost is recorded and inspectable with the rest of the loop.
+2. **Given** two sittings of the same kind, **When** the later one follows an accepted efficiency improvement, **Then** it finishes the same jobs at a lower token cost and quality still passes.
+3. **Given** a proposed change that lowers token cost by producing worse Work, **When** it is judged as an improvement, **Then** it does not count as one.
+4. **Given** a proposed change that raises token cost for the same jobs and does not prevent a named failure, **When** it is judged as an improvement, **Then** it does not count as one.
+5. **Given** wasted context in a sitting (read or written material that did not change the outcome), **When** the Co-DM reflects on efficiency, **Then** that waste is named so the DM can accept or reject cutting it.
 
 ---
 
@@ -81,6 +106,10 @@ After wrapup — and after prep when the DM asks — the Co-DM offers a reflecti
 - Players never give direct feedback: the DM is the judge of "best for these players"; the Co-DM does not contact players.
 - Two reflections in one wrapup: one reflection per wrapup unless the DM asks for another.
 - Empty or uningested campaign: bootstrap still applies; mark invention; do not fake wiki citations.
+- First sitting of a kind has no prior token cost: record this sitting's cost; compare starting with the next same-kind sitting.
+- Token cost compared across different jobs or different sitting kinds: invalid; compare only same kind of sitting.
+- Cutting tokens by omitting a quality evaluation or the DM accept-gate: not an improvement.
+- Adding standing context the Co-DM must always read, when that context does not prevent a named failure: wasted context; not an improvement.
 
 ## Requirements *(mandatory)*
 
@@ -103,7 +132,13 @@ After wrapup — and after prep when the DM asks — the Co-DM offers a reflecti
 - **FR-015**: Campaign wiki writes, invention marking, and the DM accept-gate from the existing Co-DM product still bind. This loop MUST NOT create a second path around them.
 - **FR-016**: Existing quality evaluation for D&D content guidance, and existing rules for who may redesign how the Co-DM is instructed, still bind. This loop MUST NOT skip them.
 - **FR-017**: The Co-DM MUST address reflections and improvement proposals to the DM, never to the players.
-- **FR-018**: Agent and DM communication in this loop MUST be inspectable after the fact (aim, Work, reflection, proposal, accept or reject, applied change).
+- **FR-018**: Agent and DM communication in this loop MUST be inspectable after the fact (aim, Work, reflection, proposal, accept or reject, applied change, token cost).
+- **FR-019**: Each prep or wrapup sitting MUST record its token cost (how much the Co-DM had to read and write to finish that sitting's jobs).
+- **FR-020**: Token cost of an operation or sitting MUST be a core metric of self-improvement, alongside whether Work served these players.
+- **FR-021**: A change MUST NOT count as an improvement if it raises token cost for the same jobs without preventing a named failure.
+- **FR-022**: A change MUST NOT count as an improvement if it lowers token cost by lowering Work quality.
+- **FR-023**: Completing more accepted Work in a sitting at the same quality and at equal or lower token cost MUST count as an efficiency win.
+- **FR-024**: Standing context the Co-DM must read or write that does not change the sitting's outcome MUST be nameable as wasted context in an efficiency reflection.
 
 ### Key Entities
 
@@ -117,6 +152,8 @@ After wrapup — and after prep when the DM asks — the Co-DM offers a reflecti
 - **Canon proposal**: A suggested change to wiki facts. Not applied unless the DM accepts.
 - **Improvement proposal**: A suggested change to how the Co-DM works. Not applied unless the DM accepts.
 - **Wiki**: Compiled, citable campaign pages. Human prose. Source of truth for canon.
+- **Token cost**: How much the Co-DM must read and write to finish one operation or one sitting. Core metric of self-improvement.
+- **Wasted context**: Reading or writing that does not change the sitting's outcome. Cutting it is an improvement only when quality holds.
 
 ## Success Criteria *(mandatory)*
 
@@ -132,6 +169,10 @@ After wrapup — and after prep when the DM asks — the Co-DM offers a reflecti
 - **SC-008**: In a debrief after at least three sessions, the DM rates Co-DM Work as aimed at these players (not generic D&D) for 80% or more of accepted Work.
 - **SC-009**: A DM can review one chain — reflection to accepted proposal to visible change — in under 10 minutes without a second operator.
 - **SC-010**: 0% of sampled sessions have reflection or improvement running while play is happening.
+- **SC-011**: After an accepted efficiency improvement, a repeat of the same sitting kind finishes the same jobs at a lower token cost in 100% of sampled pairs, and quality still passes the bar that applied before the change.
+- **SC-012**: 0% of accepted improvements raise token cost for the same jobs without naming the failure they prevent.
+- **SC-013**: 0% of accepted efficiency improvements produce Work that fails the quality bar that applied before the change.
+- **SC-014**: In those same-kind pairs, the later sitting yields at least as many accepted Work items as the earlier sitting.
 
 ## Assumptions
 
@@ -141,8 +182,9 @@ After wrapup — and after prep when the DM asks — the Co-DM offers a reflecti
 - v1 remains one campaign, one table, D&D 5e.
 - Self-bootstrap means: produce Work from an incomplete start and name the gap. It does not mean the Co-DM rewrites how it works without accept.
 - Self-reflection means: after wrapup (and after prep when asked), offer inspectable observations about these players. It does not mean a live agent at the table, and it does not mean contacting players.
-- Self-improvement means: accepted reflections become proposals the DM gates. Campaign changes stay canon proposals. Practice changes stay improvement proposals.
+- Self-improvement means: accepted reflections become proposals the DM gates. Campaign changes stay canon proposals. Practice changes stay improvement proposals. Token cost of the sitting is a core metric: more Work at the same quality, less wasted context.
 - Creativity, communication, and collaboration are already the Co-DM experiment. This feature adds shared aim and a closed improve-with-accept loop. It does not add a second communication path to players.
 - Fun may still shape Work. Wiki facts still change only when the DM accepts a canon proposal.
 - One reflection per wrapup is enough unless the DM asks for another.
-- Out of scope: a Co-DM agent during a session; player accounts or player-operated feedback; autonomous rewrite of Co-DM practice; replacing existing content evaluation or instruction-redesign rules; multi-campaign orchestration; non-5e rules systems; billing; replacing the DM.
+- Token cost is how much the Co-DM must read and write to finish the jobs. Quality is a constraint, not a trade. Fewer tokens that produce worse Work is not improvement. More tokens for the same jobs is not improvement unless they prevent a named failure.
+- Out of scope: a Co-DM agent during a session; player accounts or player-operated feedback; autonomous rewrite of Co-DM practice; replacing existing content evaluation or instruction-redesign rules; multi-campaign orchestration; non-5e rules systems; billing; replacing the DM; a hidden quality score the Co-DM optimizes by cutting tokens without the DM.
