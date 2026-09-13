@@ -77,3 +77,39 @@
 **Rationale**: FR-025. When Claude Code runs, default model is `claude-opus-4-6` at `--effort medium`. Prompt names deliverables and a completion test.
 
 **Alternatives considered**: `--effort high` (superseded). `opus` alias (default Opus). Long pasted spec/plan in the writer prompt (IX).
+
+## Decision: Add faction, lore, quest, city, and region wiki kinds
+
+**Rationale**: Clarifications 2026-09-12. Same pattern as vehicle/spell: template + Layout jobs + one primary skill. Pass is jobs, not heading-order match. Omit unused sections. Scaffolds are the drafts provided for this feature, installed at `wiki/templates/{faction,lore,quest,city,region}.md`.
+
+**Alternatives considered**: Keep stretching site `place.md` and session-prep for cities, regions, and quests (pages are not runnable). One mega-template for all geography (Constitution VII fail).
+
+## Decision: New skills for faction, lore, city, and region; keep existing owners for quest and place hub
+
+**Rationale**: Spec FR-030/031, FR-037, FR-043, FR-049, FR-053. `faction-design` replaces `faction-prep` (removed, not a stub). `lore-design` is new. `city-design` and `region-design` are new. `place-design` is the hub for all places and defers to those specialized skills; it still writes site places from `wiki/templates/place.md`. `narrative-islands` stays primary for `type: quest` and fills `wiki/templates/quest.md`. No `quest-design`.
+
+**Alternatives considered**: Keep `faction-prep` beside `faction-design` (split owner). Put cities on `place-design` because settlements resemble cities (owner rejected; hub must defer). New `quest-design` (owner rejected; islands already owns quests).
+
+## Decision: Fewer situation types — quest only
+
+**Rationale**: FR-045. Durable sandbox situations are `type: quest`. `type: front` and `type: encounter` are retired. Encounter-prep and traps-trials still own fight/site math. Night-only pressure stays a session-plan section. Region pages do not invent pressure; if a pressure is already stated, they link that note (FR-051).
+
+**Alternatives considered**: Keep front/encounter as extra types (owner wants fewer types). Apply the quest template to fronts and encounters (wrong name). Require every region to invent a front (owner rejected).
+
+## Decision: Later-update owners stay split by kind
+
+**Rationale**: Faction: `faction-design` writes Current Turn with no roll; `world-tick` rolls and appends the faction-turn log; agenda clock lives on the faction page; `hot.md` may point, not duplicate (FR-032/033). Lore: not `canon` until players interact or witness; until then the DM may change it freely and Canon Log is omitted; wrapup/reconcile append the log (FR-039). Quest: `narrative-islands` owns later updates including rolls and the Quest log; `world-tick` does not advance quest portents (FR-044). City change log and local clocks stay on the city page under `city-design`; a pursuable city situation is a linked quest, same as region pressure. Region change log stays on the region page under `region-design`.
+
+**Alternatives considered**: `world-tick` owns every clock (drifts from page). `lore-design` marks lore canon at accept (owner: not until table).
+
+## Decision: Ingest remap `lore`→`item` is removed
+
+**Rationale**: FR-038. `type: lore` is a real kind. World-truth notes use it. Actual items stay `item`. Existing mislabeled flora stay `item` and are not rewritten solely to prove the template.
+
+**Alternatives considered**: Keep `lore`→`item` for old files only (new lore notes get filed as items). Rename the kind to avoid the collision (owner wants `lore`).
+
+## Decision: Claude Code for the new kind skills and the islands/quest redesign
+
+**Rationale**: FR-025. Novel: `faction-design`, `lore-design`, `city-design`, `region-design`. Redesign: `narrative-islands` to fill the quest template and stop minting front/encounter. Session agent: templates, `wiki/AGENTS.md` Layout and type enum, `AGENTS.md` routing rows, `faction-prep` deletion and caller retarget, `place-design` hub defer pointers, `world-tick` faction-turn log, wrapup/reconcile Canon Log pointers.
+
+**Alternatives considered**: Session agent writes novel skills (016 fail). Dispatch `place-design` pointer-only defer to Claude Code (unnecessary).

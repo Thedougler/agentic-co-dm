@@ -1,6 +1,6 @@
 # Quickstart: Session Beat Skills
 
-Prove the beat split by classifying jobs and checking isolation. Prove vehicle and spell kinds with one page each. Session 11 bodies stay as they are.
+Prove the beat split by classifying jobs and checking isolation. Prove wiki kinds with one page each. Session 11 bodies stay as they are.
 
 ## Prerequisites
 
@@ -8,14 +8,17 @@ Prove the beat split by classifying jobs and checking isolation. Prove vehicle a
 - Spec [spec.md](./spec.md), contracts [beat-skill-routing.md](./contracts/beat-skill-routing.md) and [wiki-kind-pages.md](./contracts/wiki-kind-pages.md)
 - `session-beats` is composition only (no five type-card catalogs in that skill)
 - Type skills `hook-beats`, `development-beats`, `cliffhanger-beats`, `climax-beats`, `resolution-beats` exist
-- `spell-design` exists; `vehicle-design` fills the vehicle sheet
-- `wiki/templates/vehicle.md` and `wiki/templates/spell.md` exist
-- `wiki/AGENTS.md` lists `type: vehicle` and `type: spell` and Layout jobs
+- `spell-design`, `faction-design`, `lore-design`, `city-design`, `region-design` exist
+- `vehicle-design` fills the vehicle sheet
+- `narrative-islands` fills `wiki/templates/quest.md`; no `quest-design`
+- `place-design` defers city and region jobs
+- `faction-prep` is gone
+- Wiki templates exist for vehicle, spell, faction, lore, quest, city, region
+- `wiki/AGENTS.md` lists the kinds and Layout jobs
 - `AGENTS.md` contains the beat routing table
 - `.omp/AGENTS.md` does not copy that table
 - `.agents/skills/writing-beats` unchanged
 - Session 11 `_raw/` / wiki beat bodies unchanged
-
 ## 1. Classify the contract jobs (P1, SC-001)
 
 Cover jobs 1–15 in the contract. A second reviewer names the primary skill without seeing the first list.
@@ -65,10 +68,24 @@ Give a job to create a spell. Primary skill is `spell-design`. Page starts from 
 
 Fail if the vehicle page has no sheet. Fail if the spell job is classified as `session-beats` or `dnd-5e-magic-item-design`.
 
-## 8. Claude Code dispatch (SC-015, SC-016)
+## 8. Faction, lore, quest (P2, SC-017–SC-028)
+
+Faction: `faction-design` is primary. Page from `wiki/templates/faction.md` has the named jobs. Current Turn has no roll. Fail if `faction-prep` still loads.
+
+Lore: `lore-design` is primary. Page from `wiki/templates/lore.md` answers one question and has At a Glance, Current Truth, At the Table. Fail if ingest remaps `lore` to `item`. Fail if an unwitnessed lore page is `canon`.
+
+Quest: `narrative-islands` is primary. Page from `wiki/templates/quest.md` has summary, Situation, walk-away stakes, World in motion, two independent leads. Fail if a `quest-design` skill exists. Fail if a new durable situation is `type: front` or `type: encounter`.
+
+## 9. City and region (P2, SC-029–SC-032)
+
+City: start at `place-design` for a city; it defers to `city-design`. Page is `type: place` `kind: city` from `wiki/templates/city.md` with Arrival, pressure, districts, gazetteer, table rules, one if-nobody-intervenes situation.
+
+Region: start at `place-design` for a region; it defers to `region-design`. Page is `type: region` from `wiki/templates/region.md` with look, current state, choosable routes, active powers, change log. Fail if the region invents a pressure that was not already stated. Fail if `type: front` is revived.
+
+## 10. Claude Code dispatch (SC-015, SC-016)
 
 Claude Code runs only for a new skill or a major skill redesign. Those dispatches use `claude-opus-4-6 --effort medium`. The prompt names deliverables and a completion test. `AGENTS.md` and template installs are session-agent work. After a usage-limit stop, independent tasks still completed and deferred jobs stay on `tasks.md` with a retry time. Codex CLI at ChatGPT 5.5 medium is allowed only when every remaining open task is blocked, no other work can be done, and that retry time is more than one hour away. Re-check those gates before each remaining blocked skill job.
 
 Fail if those dispatches use the `opus` alias, default Opus, or `--effort high`. Fail if an `AGENTS.md`-only edit was sent to Claude Code. Fail if Codex ran while other independent work remained, or while the retry time was within one hour, or without re-checking Claude Code first on a later job.
 
-Pass: steps 1–8 hold.
+Pass: steps 1–10 hold.

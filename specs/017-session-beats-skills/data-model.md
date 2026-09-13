@@ -13,7 +13,7 @@ Name: `session-beats`. Primary when planning a session, one-shot, adventure arc,
 | Polarity, ~30 min budget, 90 min core | Session 11 cockpit layout (`run-guide`) |
 | Threads, escalation, transitions | Spoken player text (theatre of the mind) |
 | Recompute / agency gates | Encounter/trap/place/monster math |
-| Filed spine jobs (007) | Wiki write before accept; vehicle and spell pages |
+| Filed spine jobs (007) | Wiki write before accept; wiki kind pages |
 
 ## Type skill
 
@@ -49,10 +49,10 @@ One act of planning, writing, editing, or filling.
 
 | Field | Rule |
 |---|---|
-| Kind | `plan-session` \| `write-beat` \| `edit-beat` \| `fill-beat` \| `write-vehicle` \| `edit-vehicle` \| `write-spell` \| `edit-spell` |
-| Type | Empty on `plan-session`; beat type on beat jobs; empty on vehicle/spell jobs |
-| Primary skill | Composition if `plan-session`; beat type skill if beat job; `vehicle-design` if vehicle job; `spell-design` if spell job |
-| Extra skills | Empty unless a named seam fires |
+| Kind | `plan-session` \| `write-beat` \| `edit-beat` \| `fill-beat` \| `write-vehicle` \| `edit-vehicle` \| `write-spell` \| `edit-spell` \| `write-faction` \| `write-lore` \| `write-quest` \| `write-city` \| `write-region` \| `write-place` |
+| Type | Empty on `plan-session`; beat type on beat jobs; empty on wiki-kind jobs |
+| Primary skill | Composition if `plan-session`; beat type skill if beat job; see wiki-kind routing if wiki-kind job |
+| Extra skills | Empty unless a named seam fires. `place-design` defers city → `city-design`, region → `region-design`. |
 
 ## Named seam
 
@@ -87,10 +87,14 @@ Order: Hook → alternating Development/Cliffhanger pairs → Climax → Resolut
 
 - `plan-session` → composition skill → spine (007)
 - fill slot → type skill → live beat (007 cockpit via `run-guide`)
-- type skill → cards of that type only
-- type skill → existing crafts (theatre of the mind, encounter-prep, traps-trials, place, monster, vehicle, spell) by handoff
+- type skill → existing crafts (theatre of the mind, encounter-prep, traps-trials, place, monster, vehicle, spell, faction, lore, quest, city, region) by handoff
 - `write-vehicle` / `edit-vehicle` → `vehicle-design` → vehicle page
 - `write-spell` / `edit-spell` → `spell-design` → spell page
+- `write-faction` → `faction-design` → faction page; `world-tick` appends faction-turn log
+- `write-lore` → `lore-design` → lore page; wrapup/reconcile append Canon Log after table witness
+- `write-quest` → `narrative-islands` → quest page (owns later updates)
+- `write-city` → `city-design` → city page; `place-design` defers
+- `write-region` → `region-design` → region page; `place-design` defers
 - Work remains Work until DM accept
 
 ## Vehicle page
@@ -122,6 +126,83 @@ Theatre of the mind owns `[!narration]`. Omit unused sections.
 
 Theatre of the mind owns `[!narration]`. Omit unused sections.
 
+## Faction page
+
+`type: faction`. Owner: `faction-design`. Scaffold: `wiki/templates/faction.md`. `faction-prep` removed.
+
+| Job | Done when |
+|---|---|
+| Public face | `[!narration]` an informed person can observe |
+| DM thesis | One sentence of campaign pressure |
+| Current state | Status quo, recent change, pressure, strength, vulnerability |
+| Active agenda | One concrete goal, next move, player opening |
+| Table-relevant assets/people/places/relationships | Only what currently changes play |
+| Faction-turn log | Current Turn named with no roll at create; `world-tick` appends resolved rows |
+
+Agenda clock lives on the page. `hot.md` may point; no second clock.
+
+## Lore page
+
+`type: lore`. Owner: `lore-design`. Scaffold: `wiki/templates/lore.md`.
+
+| Job | Done when |
+|---|---|
+| One question | Unrelated truths are split into linked notes |
+| At a Glance | Core truth + why it matters |
+| Current Truth | What is actually true now |
+| At the Table | Notice / explains / enables / warns |
+
+Not `canon` until players interact or witness. Canon Log omitted until then; wrapup/reconcile append. Not an `item`.
+
+## Quest page
+
+`type: quest`. Owner: `narrative-islands`. Scaffold: `wiki/templates/quest.md`. Replaces `type: front` and `type: encounter`.
+
+| Job | Done when |
+|---|---|
+| Summary | Objective, why now, deadline |
+| Situation | Unstable present; no prescribed party sequence |
+| Stakes | Includes walk-away |
+| World in motion | Driver and next move if uninterrupted |
+| Leads | At least two independent routes |
+| Resolution | Omitted while unresolved |
+
+`narrative-islands` owns later updates including rolls and the Quest log.
+
+## City page
+
+`type: place`, `kind: city`. Owner: `city-design`. Hub: `place-design`. Scaffold: `wiki/templates/city.md`.
+
+| Job | Done when |
+|---|---|
+| Arrival | `[!narration]` of entering or overlooking |
+| At a glance | Includes current pressure |
+| Orientation | Districts and getting around |
+| Gazetteer | Enough to intentionally seek a place |
+| Table rules | Law/weapons/magic/violence that change a choice |
+| Active situation | At least one with if-nobody-intervenes; pursuable situations link a quest |
+
+Faction full agendas stay on faction pages.
+
+## Region page
+
+`type: region`. Owner: `region-design`. Hub: `place-design`. Scaffold: `wiki/templates/region.md`.
+
+| Job | Done when |
+|---|---|
+| Spoken look | `[!narration]` of first travel |
+| At a glance | Scale, kind, character, anchor |
+| Current state | Status quo now |
+| Geography / travel | Enough to choose a route |
+| Active powers | Few groups that can change the region |
+| Change log | Deltas, not a rewrite |
+
+MUST NOT invent pressure. If already stated, link that note. Scale omits extra headings.
+
+## Place hub
+
+`place-design` writes site places (`wiki/templates/place.md`). Defers `kind: city` to `city-design` and region jobs to `region-design`.
+
 ## Dispatch prompt
 
-Claude Code runs only for novel skill design, skill redesign, or a major skill-file change. Model `claude-opus-4-6`, `--effort medium`. Prompt names Outcome, Files, Bounds, Job, deliverables, completion criteria. One designated writer at a time. Usage limit: defer that job on `tasks.md` with a retry time; complete remaining independent tasks; carry deferred tasks forward. Codex CLI at ChatGPT 5.5 medium MAY run the same prompt only when every remaining open task is blocked, no other work can be done, and that retry time is more than one hour away. Re-check those gates before each remaining blocked skill job; prefer Claude Code if it is usable again.
+Claude Code runs only for novel skill design, skill redesign, or a major skill-file change. Model `claude-opus-4-6`, `--effort medium`. Prompt names Outcome, Files, Bounds, Job, deliverables, completion criteria. One designated writer at a time. Usage limit: defer that job on `tasks.md` with a retry time; complete remaining independent tasks; carry deferred tasks forward. Codex CLI at ChatGPT 5.5 medium MAY run the same prompt only when every remaining open task is blocked, no other work can be done, and that retry time is more than one hour away. Re-check those gates before each remaining blocked skill job; prefer Claude Code if it is usable again. Novel this feature: `faction-design`, `lore-design`, `city-design`, `region-design`, `narrative-islands` quest redesign.
