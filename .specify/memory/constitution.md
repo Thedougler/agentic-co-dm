@@ -1,9 +1,10 @@
 <!--
 Sync Impact Report
-- Version change: 1.5.0 → 1.5.1
+- Version change: 1.5.1 → 1.6.0
 - Modified principles:
   - none renamed
-- Added sections: none
+- Added sections:
+  - Principle XI: Claude Code Work Is Serialized
 - Removed sections: none
 - Follow-up TODOs: none in this file.
 -->
@@ -143,10 +144,10 @@ Git by default:
   one. They MUST NOT commit feature work directly to `main`.
 - Agents MUST fetch and update the working branch from `origin/main`
   before starting substantial work and before reporting done.
-- When the assigned work is complete and required checks pass, agents
-  MUST land it on `main` by the repository's normal path (merge or PR)
-  and MUST leave `origin/main` current. They MUST NOT wait for a human
-  to merge a ready branch.
+- When the assigned work is complete and required checks pass, agents MUST
+  land it on `main` by the repository's normal path (merge or PR) and MUST
+  leave `origin/main` current. They MUST NOT wait for a human to merge a
+  ready branch.
 - Agents MUST NOT force-push `main` or rewrite published default-branch
   history. They MUST NOT commit secrets, credentials, or unrelated dirty
   files. They MUST NOT skip required checks to land on `main`.
@@ -169,6 +170,16 @@ push, branch, or agent-context refresh is informal practice and loses
 Rationale: an agent that stops for git ceremony is not autonomous. The
 repository and its context files are the memory; the default branch must
 not lag completed work.
+
+### XI. Claude Code Work Is Serialized
+
+Agents MUST run at most one concurrent Claude Code instance. When multiple
+tasks require Claude Code, agents MUST execute those tasks sequentially;
+they MUST NOT overlap Claude Code instances. Independent non-Claude work
+MAY continue concurrently unless another governance rule forbids it.
+
+Rationale: serial Claude Code usage prevents competing writers, preserves
+resource limits, and makes task ownership and resulting changes auditable.
 
 ## Agent Operating Constraints
 
@@ -196,8 +207,6 @@ not lag completed work.
   Session agents complete smaller edits to established files, Spec Kit
   pattern tweaks, and `AGENTS.md`. A Claude Code usage limit defers only
   that Claude-dependent task; remaining independent work continues.
-  Skill-update prompts are minimal, focused, and direct; they name
-  deliverables and completion criteria.
 
 ## Development Workflow
 
@@ -211,15 +220,14 @@ not lag completed work.
    agent-context. Commit and push. Keep the branch current with `main`.
 4. Implement: TDD at agreed seams; one red → green slice at a time.
    Refactoring belongs to review, not the implementation loop. Prefer a
-   small agent-shaped tool over waiting for a human-facing one. Commit
-   per slice, push, and land on `main` when the slice is done and checks
-   pass.
+   small agent-shaped tool over waiting for a human-facing one. Commit per
+   slice, push, and land on `main` when the slice is done and checks pass.
 5. Review: code review MUST check constitution compliance, ADR conflicts,
-   that tests observe behavior rather than internals, that new
-   software is agent-shaped, that process is not overspecific, that easy
-   safe idempotent automation is unattended, that standing agent
-   context did not grow without a named failure, and that git/context
-   autonomy was not reintroduced as a human gate.
+   that tests observe behavior rather than internals, that new software is
+   agent-shaped, that process is not overspecific, that easy safe idempotent
+   automation is unattended, that standing agent context did not grow
+   without a named failure, and that git/context autonomy was not
+   reintroduced as a human gate.
 
 ## Governance
 
@@ -230,8 +238,8 @@ document wins.
 Amendments:
 
 - Propose the change in a GitHub issue.
-- Update `.specify/memory/constitution.md` in the same change that
-  adopts the amendment.
+- Update `.specify/memory/constitution.md` in the same change that adopts
+  the amendment.
 - Bump **Version** using:
   - MAJOR: remove or redefine a principle incompatibly.
   - MINOR: add or materially expand a principle or section.
@@ -253,7 +261,10 @@ Compliance:
 - A required human prompt to commit, push, branch, update from `main`,
   or refresh agent-context MUST be rejected unless it prevents a named
   safety failure (secrets, force-push of `main`, skipping checks).
+- Reviews MUST verify that no more than one Claude Code instance runs at
+  a time and that Claude Code tasks are sequential when multiple tasks
+  require it.
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.5.1 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
+**Version**: 1.6.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
