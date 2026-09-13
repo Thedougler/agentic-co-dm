@@ -22,13 +22,13 @@ Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagge
 Remap durable session-prep to `wiki/journal/sessions/<campaign-slug>/<session-number>/`. Templates live in `wiki/templates/`. Replace knowledge-bank terminology with wiki terminology, but do not change geographic river-bank language. Point at `docs/agents/work.md` rather than restating the glossary.
 
 
-## Filed spine
+## Filed session plan
 
-After accept, file one spine at `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<number>-00-<Spine-Title>.md` with `type: session-prep`. Jobs: length, tone, prize, opposition, Hook/Climax/Resolution labels, dramatic spine, numbered skeleton with links to each live beat, per-beat purpose / table sees / truth / pressure / if they break / landing. Evidence: `wiki/_raw/Session-11-00-Birds-of-a-Feather.md`. The spine MUST NOT duplicate Scene ends when, Zones, or Be ready for. Live beats are composed with `run-guide` in Session 11 cockpit shape.
+After accept, file one session plan at `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<number>-00-<Title>.md` copied from `wiki/templates/session-plan.md` with `type: session-prep` and `kind: session-plan`. Jobs: compass, Beat Map, Floating Beats, Pressure, PC Touchpoints, and links to typed beat pages. The plan MUST NOT duplicate Scene ends when, Zones, or Be ready for. Live beats are typed pages filled by their type skills, not Session 11 cockpit cards.
 
-`references/session-skeleton.md` is the planning form. The page the DM opens is the Session 11-00 shape, not that skeleton copied into the wiki.
+`references/session-skeleton.md` is the planning form. The filed page the DM opens is the filled session-plan template, not the planning skeleton.
 
-Done when: the spine answers those jobs, links every live beat, and contains no cockpit tables.
+Done when: the session plan answers those jobs, links every live beat, has `type: session-prep` and `kind: session-plan`, and contains no cockpit-only sections.
 
 Use a Beat Chart as a pacing palette, never as a script. Prepare pressures,
 factions, clues, locations, offers, and hazards that can become beats. Let what
@@ -101,14 +101,9 @@ visible. PC goals pursued since the Hook have a clear new status.
 2. **Set a flexible budget.** Treat roughly 30 minutes of real play as one Beat.
    Reserve Hook, Climax, and Resolution for about 90 minutes together; fill
    additional time with alternating Development/Cliffhanger pairs. Adjust for
-   table speed, not the clock alone. Each live beat that `run-guide` will render
-   carries **Scene ends when** plus two *cut lines*: **If behind** (what to skip
-   so the beat still ends) and **If ahead** (one extra complication only if it is
-   fully inlined). `run-guide` builds that beat through **four passes**:
-   mechanical cockpit plus empty titled `[!narration]` stubs, DM-facing copy
-   edit, TotM fill, then Reading-view ready check. A Hook with a
-   cover endpoint does not also run unbounded travel; the walk to the next
-   landmark is the next beat (Sly Flourish: Watch the Time).
+   table speed, not the clock alone. Record the budget in the session plan's
+   Beat Map. A Hook with a cover endpoint does not also run unbounded travel;
+   the walk to the next landmark is the next beat (Sly Flourish: Watch the Time).
 3. **Prepare situations, not outcomes.** For each candidate, record trigger,
    actors, stakes, visible information, fuse, costs, at least two viable
    responses, and what changes afterward. For a suspense candidate, require
@@ -207,8 +202,8 @@ visible. PC goals pursued since the Hook have a clear new status.
 - Let players ignore a Development, fail a Cliffhanger, or pursue a goal they
   create. Apply visible consequences and recompute; do not hide a correct path.
 - Let the chart shrink, branch, pause, or end early when the new state warrants it.
-- Make player-facing prose a theatre-of-the-mind **pass 3** fill of the empty
-  stubs `run-guide` placed. Use dungeon-design for sites, routes, pressure
+- Make player-facing prose a theatre-of-the-mind fill inside the typed beat
+  page's narration surface. Use dungeon-design for sites, routes, pressure
   procedures, and decision graphs. Retrieve setting canon with qmd-retrieval;
   if the vault is silent, use a marked stub rather than inventing canon. Never
   paste WotC proprietary text.
@@ -239,7 +234,7 @@ for preparation. Run [evals/evals.json](evals/evals.json) against drafts.
 
 ## Typed fill
 
-This skill assembles the Beat Chart spine. Composition filling a typed slot → That type skill; type becomes primary for the fill.
+This skill assembles the Beat Chart session plan. Composition filling a typed slot → That type skill; type becomes primary for the fill.
 
 
 | Slot | Skill |
@@ -251,7 +246,7 @@ This skill assembles the Beat Chart spine. Composition filling a typed slot → 
 | Resolution | `resolution-beats` |
 
 Type-card catalogs live in those skills, not here. A planning job produces a
-valid spine without opening a type-card catalog.
+valid session plan without opening a type-card catalog.
 
 ## Session ritual
 

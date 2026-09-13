@@ -1,14 +1,14 @@
 <!--
 Sync Impact Report
-- Version change: 1.14.0 → 1.15.0
+- Version change: 1.15.0 → 1.16.0
 - Modified principles:
-  - XIII. Wiki Media Filenames Distinguish Kind (expanded: no spaces; existing spaces → `-`)
+  - XIV. User Corrections Become Durable Error Records (new)
 - Added sections: none
 - Removed sections: none
 - Other modified sections:
-  - Agent Operating Constraints (wiki media filenames have no spaces)
-  - Development Workflow / Review (same)
-  - Governance / Compliance (reject spaced wiki media filenames)
+  - Agent Operating Constraints (correction logging and implementation checks)
+  - Development Workflow / Review (correction-log check during implementation)
+  - Governance / Compliance (correction-log enforcement)
 - Follow-up TODOs: none
 -->
 
@@ -250,6 +250,20 @@ Rationale: opening every image to learn whether it is a token or a
 battlemap wastes tokens and produces wrong attachments. Spaces force
 quoting and make agents guess separators.
 
+### XIV. User Corrections Become Durable Error Records
+
+When a user corrects an agent about a factual, procedural, or implementation
+error, the agent that received the correction MUST immediately record the
+error, correction, affected scope, and resulting rule or action in the
+repo-tracked root file `errors.md`. The agent MUST then continue its assigned
+task without waiting for a separate logging step. During implementation,
+agents MUST check `errors.md` for related open errors, fold applicable fixes
+into the current work, and avoid duplicating already-recorded work. Resolved
+records MUST remain traceable rather than being silently deleted.
+
+Rationale: durable correction records prevent repeated mistakes across agents
+and sessions while keeping the active task moving.
+
 ## Agent Operating Constraints
 
 - Runtime guidance for agents is `AGENTS.md`. Skills MUST follow
@@ -274,6 +288,11 @@ quoting and make agents guess separators.
   task-irrelevant padding.
 - Wiki media assets MUST follow XIII: kind in the filename, no spaces,
   no guessing.
+
+- When a user correction identifies an agent error, agents MUST record it in
+  the repo-tracked root `errors.md` immediately, then continue the assigned
+  task. During implementation, agents MUST check that file for related open
+  errors and incorporate them without duplicating work.
 - Designated writer, when used: Claude Code at `claude-opus-4-6`
   `--effort medium`. MUST NOT use the `opus` alias or default Opus.
   Default Opus output is worthless for language work (issue #3). Up to
@@ -310,7 +329,9 @@ quoting and make agents guess separators.
 3. Plan and tasks: `/speckit.plan` then `/speckit.tasks` after spec approval.
    Plans MUST NOT add steps an unattended hook already performs. Refresh
    agent-context. Commit and push. Keep the branch current with `main`.
-4. Implement: TDD at agreed seams; one red → green slice at a time.
+4. Implement: before each slice, check the repo-tracked root `errors.md` for
+   related open corrections and fold applicable work into the slice without
+   duplicating it. Use TDD at agreed seams; one red → green slice at a time.
    Refactoring belongs to review, not the implementation loop. Prefer a
    small agent-shaped tool over waiting for a human-facing one. Commit per
    slice, push, and land on `main` when the slice is done and checks pass.
@@ -366,6 +387,10 @@ Compliance:
 - A wiki media filename that does not encode kind, contains a space, or
   that requires opening the file or guessing from nearby notes to
   classify it, MUST be rejected.
+
+- Reviews MUST verify that user corrections were recorded immediately in
+  `errors.md`, that implementation work checked related open records, and
+  that applicable corrections were incorporated without duplicate work.
 - Reviews MUST verify that no more than two Claude Code designated-writer
   instances run concurrently, that a second is used only when the agents
   involved have no other task to complete, and that no canonical artifact
@@ -380,4 +405,4 @@ Compliance:
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.15.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
+**Version**: 1.16.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
