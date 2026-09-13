@@ -13,7 +13,7 @@ description: "Task list for Self-Improving Co-DM"
 
 **Organization**: Tasks are grouped by user story so each story can be implemented and validated independently.
 
-**Writer**: Edits to `.agents/skills/session-wrapup/SKILL.md` are design-impact. `/speckit.implement` dispatches the designated writer with a scoped prompt (outcome, files, bounds, job) and `writing-for-agents`. Session agent writes `AGENTS.md`, `docs/agents/work.md`, `errors.md`, and `scripts/error-ledger.py`. No new skill.
+**Writer**: Edits to `.agents/skills/session-wrapup/SKILL.md` are design-impact. `/speckit.implement` dispatches the designated writer with a scoped prompt (outcome, files, bounds, job) and `writing-for-agents`. Session agent writes `AGENTS.md`, `docs/agents/work.md`, `errors.md`, and `scripts/error-ledger.py`. No new skill. No new campaign `type`. No layout-kind frontmatter.
 
 ## Format: `[ID] [P?] [Story] Description`
 
@@ -28,8 +28,10 @@ description: "Task list for Self-Improving Co-DM"
 - Ledger helper: `scripts/error-ledger.py`
 - Ledger file: `errors.md` (repo root, not wiki)
 - Sitting log: append-only file next to `errors.md`, owned by the helper
+- Source Material: `wiki/_raw/`
+- System: `AGENTS.md`, `.agents/skills/`, `docs/agents/`
 - Contract: `specs/019-self-improving-codm/contracts/self-improving-codm.md`
-- Do not add a `self-improve` skill. Do not wrap `qmd` or git. Do not add a tokenizer.
+- Do not add a `self-improve` skill. Do not wrap `qmd` or git. Do not add a tokenizer. Do not add `type: encounter` or `type: rules`.
 
 ---
 
@@ -38,7 +40,7 @@ description: "Task list for Self-Improving Co-DM"
 **Purpose**: Confirm existing owners so 019 points at them instead of restating.
 
 - [ ] T001 Review the Work gate and wiki-fact accept path in `docs/agents/work.md` and the Campaign Co-DM pointer in `AGENTS.md` against `specs/001-agentic-co-dm/` so 019 does not duplicate 001
-- [ ] T002 [P] Review `specs/019-self-improving-codm/contracts/self-improving-codm.md` and `specs/019-self-improving-codm/data-model.md` (table aim, sitting, error entry, helper, reflection, layout move)
+- [ ] T002 [P] Review `specs/019-self-improving-codm/contracts/self-improving-codm.md` and `specs/019-self-improving-codm/data-model.md` (table aim, sitting, error entry, helper, layout kind, layout move, reflection)
 - [ ] T003 [P] Review `docs/agents/skill-design-dispatch.md` for the wrapup design-impact edit; 012 does not gate reflection chat
 
 ---
@@ -52,7 +54,7 @@ description: "Task list for Self-Improving Co-DM"
 - [ ] T004 Create empty repo-root `errors.md` as the agent-owned error ledger (not a wiki page, not under `wiki/`)
 - [ ] T005 Create `scripts/error-ledger.py` with `error` (`append`, `drain`, `list`) and `sitting` (`record`, `list`) subcommands: arguments in, JSON or Markdown out, exit distinguishes done vs failed; `drain` without `cause_fixed` true exits non-zero; do not wrap `qmd` or git
 - [ ] T006 Persist sitting records as an append-only log next to `errors.md` owned by `scripts/error-ledger.py` (not `wiki/log.md`)
-- [ ] T007 Add a Campaign Co-DM pointer in `AGENTS.md` that the 019 loop lives in `AGENTS.md` plus `docs/agents/work.md`, wrapup owns the required reflection, and there is no new skill; do not restate the 001 Work gate
+- [ ] T007 Add a Campaign Co-DM pointer in `AGENTS.md` that the 019 loop lives in `AGENTS.md` plus `docs/agents/work.md`, wrapup owns the required reflection, and there is no new skill; do not restate the 001 Work gate; do not add a campaign `type`
 
 **Checkpoint**: Ledger file, helper CLI, sitting log, and no-new-skill pointer exist.
 
@@ -60,17 +62,17 @@ description: "Task list for Self-Improving Co-DM"
 
 ## Phase 3: User Story 1 - Aim at these players (Priority: P1) 🎯 MVP
 
-**Goal**: Shared table aim (who these players are and current campaign intent). Missing aim is asked. Work that could swap tables is not aimed.
+**Goal**: Shared table aim on the campaign hub (Campaign State). Missing aim is asked. Work that could swap tables is not aimed. DM Intelligence is not the aim.
 
-**Independent Test**: Name a table of at least three players and a current campaign intent. Ask the DM and the Co-DM separately what the campaign is for. They match on who and on intent. A later prep proposal that could have been written for any table fails this test.
+**Independent Test**: Name a table of at least three players and a current campaign intent. Ask the DM and the Co-DM separately what the campaign is for. They match on who and on intent. A later prep proposal that could have been written for any table fails this test. The aim is on the hub, not a DM Intelligence page.
 
 ### Implementation for User Story 1
 
 - [ ] T008 [US1] In `AGENTS.md`: if table aim status is `missing`, ask the DM to name the players ("at least one; tests use three") and the current campaign intent before treating Work as aimed (FR-003)
-- [ ] T009 [P] [US1] In `docs/agents/work.md`: after DM accept, file table aim (`players` + `intent`) on the existing campaign hub; status `missing` → `recorded` (after DM accept on the campaign hub) → `updated`; do not invent a new wiki kind
-- [ ] T010 [US1] In `docs/agents/work.md`: "Co-DM MUST NOT treat Work as aimed while `missing`"; "Work that could swap onto another table without edits is not aimed"; when the DM updates players or intent, later Work uses the updated aim (FR-002, FR-004)
+- [ ] T009 [P] [US1] In `docs/agents/work.md`: after DM accept, file table aim (`players` + `intent`) on the existing campaign hub; **home**: "Campaign hub wiki page, grouped under layout kind Campaign State"; status `missing` → `recorded` (after DM accept on the campaign hub) → `updated`; do not invent a new wiki kind or `type`
+- [ ] T010 [US1] In `docs/agents/work.md`: "Co-DM MUST NOT treat Work as aimed while `missing`"; "Work that could swap onto another table without edits is not aimed"; "DM Intelligence MUST NOT hold a second copy of the aim"; when the DM updates players or intent, later Work uses the updated aim (FR-001, FR-002, FR-004)
 
-**Checkpoint**: Missing aim is asked; recorded aim is on the hub after accept; generic-table Work does not count as aimed.
+**Checkpoint**: Missing aim is asked; recorded aim is on the hub under Campaign State; generic-table Work does not count as aimed.
 
 ---
 
@@ -140,16 +142,17 @@ description: "Task list for Self-Improving Co-DM"
 
 ## Phase 8: User Story 6 - Layout grows into agent-shaped structure (Priority: P6)
 
-**Goal**: Mixed growth of agent files and wiki kinds is regrouped for one-job / one-kind load. Wiki facts stay gated. Tidiness is not the trigger.
+**Goal**: Mixed growth is regrouped by layout kind. Wiki kinds: Encounters, Rules, Campaign State, DM Intelligence. Agent-facing: System, Source Material. Existing `type` stays. Facts stay gated.
 
-**Independent Test**: Start from a mixed dump of unrelated agent files and mixed wiki pages of different kinds. After growth-triggered organization, a later sitting for one named job or one page kind opens only the files for that job or kind. The DM was not asked for the layout change. Wiki facts were not rewritten. Links still resolve.
+**Independent Test**: Start from mixed System + Source Material (`wiki/_raw/`) and mixed Encounters + Rules wiki pages. After growth-triggered organization, retrieving one layout kind opens only that kind. The DM was not asked. Wiki facts and campaign `type` were not rewritten. Source Material was not filed as canon. Links still resolve. Aim remains on the hub.
 
 ### Implementation for User Story 6
 
-- [ ] T023 [US6] In `AGENTS.md`: as agent-facing files and the wiki (llm-wiki) grow mixed, regroup so one job or page kind does not load unrelated trees; trigger is `growth` ("mixed dump / unrelated load"). "Not `tidiness`"; "One-off files MUST NOT be reorganized solely for tidiness" (FR-039, FR-040, FR-044)
-- [ ] T024 [US6] In `AGENTS.md`: wiki layout moves have `facts_changed` "Must be false for wiki moves" and `links_resolve` "Must be true after the move"; wiki fact changes still wait on the DM accept-gate; "Layout MUST NOT be used as a path around the canon accept-gate"; a layout change that increases hops or unrelated load is not an improvement; the DM does not approve layout (FR-041–FR-046)
+- [ ] T023 [US6] In `AGENTS.md`: as agent-facing files and the wiki (llm-wiki) grow mixed, regroup so one job or layout kind does not load unrelated trees; trigger is `growth` ("mixed dump / unrelated load"). "Not `tidiness`"; "One-off files MUST NOT be reorganized solely for tidiness"; do not mandate a folder taxonomy (FR-039, FR-044)
+- [ ] T024 [US6] In `AGENTS.md`: wiki layout kinds are Encounters, Rules, Campaign State, and DM Intelligence; agent-facing layout kinds are System and Source Material; "MUST NOT duplicate an existing `type`"; do not add `type: encounter` or `type: rules`; no layout-kind frontmatter (FR-040)
+- [ ] T025 [US6] In `AGENTS.md`: wiki layout moves have `facts_changed` "Must be false for wiki moves", `type_changed` "Must be false", and `links_resolve` "Must be true after the move"; Source Material is `wiki/_raw/` staging; System is skills/`AGENTS.md`/`docs/agents`; "System and Source Material MUST NOT be treated as wiki canon"; "Copying table aim onto DM Intelligence is not a layout move"; wiki fact changes still wait on accept (FR-041–FR-046)
 
-**Checkpoint**: Growth splits mixed dumps; wiki moves keep facts and links; one-offs stay put.
+**Checkpoint**: Growth splits mixed dumps by layout kind; wiki moves keep facts and `type`; System/Source Material stay non-canon; one-offs stay put.
 
 ---
 
@@ -157,10 +160,10 @@ description: "Task list for Self-Improving Co-DM"
 
 **Purpose**: Public-seam fixture and artifact alignment after standing rules and helper land.
 
-- [ ] T025 [P] Align final contract language in `specs/019-self-improving-codm/contracts/self-improving-codm.md` with landed standing rules (no new skill, no tokenizer, wrapup owns required reflection)
-- [ ] T026 [P] Align expected outcomes in `specs/019-self-improving-codm/quickstart.md`
-- [ ] T027 Add the runnable fixture check at `specs/019-self-improving-codm/fixtures/check.py` with `fixtures/wiki/` and `fixtures/ops/` covering quickstart scenarios 1–8 (missing aim is asked; gap does not stall; wrapup reflection is Work; sitting is recorded without the DM; ledger fill and drain; helper on a repeating job; mixed dump layout; layout is not a canon back door). Assert observable files and Work outcomes; drain without `cause_fixed` fails the helper; do not snapshot `AGENTS.md` or `session-wrapup` wording
-- [ ] T028 Run every scenario in `specs/019-self-improving-codm/quickstart.md` via `.venv/bin/python specs/019-self-improving-codm/fixtures/check.py`
+- [ ] T026 [P] Align final contract language in `specs/019-self-improving-codm/contracts/self-improving-codm.md` with landed standing rules (no new skill, no tokenizer, wrapup owns required reflection, layout kinds 34–37)
+- [ ] T027 [P] Align expected outcomes in `specs/019-self-improving-codm/quickstart.md`
+- [ ] T028 Add the runnable fixture check at `specs/019-self-improving-codm/fixtures/check.py` with `fixtures/wiki/` and `fixtures/ops/` covering quickstart scenarios 1–8 (missing aim on hub not DM Intelligence; gap does not stall; wrapup reflection is Work; sitting is recorded without the DM; ledger fill and drain; helper on a repeating job; mixed Encounters vs Rules plus System vs Source Material; layout is not a canon back door). Assert observable files and Work outcomes; drain without `cause_fixed` fails the helper; do not snapshot `AGENTS.md` or `session-wrapup` wording
+- [ ] T029 Run every scenario in `specs/019-self-improving-codm/quickstart.md` via `.venv/bin/python specs/019-self-improving-codm/fixtures/check.py`
 
 ---
 
@@ -171,40 +174,33 @@ description: "Task list for Self-Improving Co-DM"
 - **Setup (Phase 1)**: No dependencies — can start immediately
 - **Foundational (Phase 2)**: Depends on Setup completion — BLOCKS all user stories
 - **User Story 1 (Phase 3)**: Depends on Foundational — MVP
-- **User Story 2 (Phase 4)**: Depends on Foundational — independently testable after the Work/gap rules exist
-- **User Story 3 (Phase 5)**: Depends on Foundational — wrapup reflection does not require US1/US2
-- **User Story 4 (Phase 6)**: Depends on Foundational helper skeleton — sitting record and helper rules
-- **User Story 5 (Phase 7)**: Depends on Foundational helper skeleton — ledger fill/drain
-- **User Story 6 (Phase 8)**: Depends on Foundational — layout standing rule only
+- **User Story 2 (Phase 4)**: Depends on Foundational
+- **User Story 3 (Phase 5)**: Depends on Foundational
+- **User Story 4 (Phase 6)**: Depends on Foundational helper skeleton
+- **User Story 5 (Phase 7)**: Depends on Foundational helper skeleton
+- **User Story 6 (Phase 8)**: Depends on Foundational — layout standing rule; aim-on-hub constraint shares US1
 - **Polish (Phase 9)**: Depends on the desired user stories being complete
 
 ### User Story Dependencies
 
-- **User Story 1 (P1)**: After Foundational only. No dependency on other stories.
+- **User Story 1 (P1)**: After Foundational only.
 - **User Story 2 (P2)**: After Foundational. Shares `docs/agents/work.md` with US1/US3 — serialize those edits.
 - **User Story 3 (P3)**: After Foundational. Wrapup skill is independent; `work.md` reflection gate shares that file with US1/US2.
 - **User Story 4 (P4)**: After Foundational. Helper sitting fields share `scripts/error-ledger.py` with US5.
 - **User Story 5 (P5)**: After Foundational. Error fields share `scripts/error-ledger.py` with US4.
-- **User Story 6 (P6)**: After Foundational. Shares `AGENTS.md` with US1/US2/US4/US5 — serialize those edits.
-
-### Within Each User Story
-
-- Data-model constraints are quoted in the task that creates the field
-- Standing rules before fixture check
-- Story complete before moving to the next priority if one writer
+- **User Story 6 (P6)**: After Foundational. Shares `AGENTS.md` with US1/US2/US4/US5 — serialize those edits. Aim-on-hub vs DM Intelligence depends on US1 landing first if one writer.
 
 ### Parallel Opportunities
 
-- T002 and T003 can run in parallel with each other after T001 starts
+- T002 and T003 can run in parallel
 - T009 can run in parallel with T008 (different files)
 - T015 can run in parallel with T014 (wrapup skill vs `work.md`)
 - T017 can run in parallel with T018–T020 (helper vs `AGENTS.md`)
 - T021 can run in parallel with T022 (helper vs `AGENTS.md`)
-- T025 and T026 can run in parallel after implementation
-- `AGENTS.md` tasks (T007, T008, T011, T013, T018–T020, T022–T024) are sequential — one writer
+- T026 and T027 can run in parallel after implementation
+- `AGENTS.md` tasks (T007, T008, T011, T013, T018–T020, T022–T025) are sequential — one writer
 - `docs/agents/work.md` tasks (T009, T010, T011, T012, T014, T016) are sequential — one writer
 - `scripts/error-ledger.py` tasks (T005, T006, T017, T021) are sequential — one writer
-- User stories can start in parallel after Phase 2 only if those shared files are coordinated; otherwise implement in priority order
 
 ---
 
@@ -212,7 +208,7 @@ description: "Task list for Self-Improving Co-DM"
 
 ```text
 T008 In AGENTS.md: ask for table aim while status is missing
-T009 In docs/agents/work.md: file players + intent on the campaign hub after accept
+T009 In docs/agents/work.md: file players + intent on the campaign hub under Campaign State
 ```
 
 ## Parallel Example: User Story 3
@@ -238,18 +234,18 @@ T018 Token-cost ownership standing rule in AGENTS.md
 1. Complete Phase 1: Setup
 2. Complete Phase 2: Foundational (CRITICAL — blocks all stories)
 3. Complete Phase 3: User Story 1
-4. **STOP and VALIDATE**: Independent Test — named table of three players; DM and Co-DM match on who and intent; generic-table prep fails
+4. **STOP and VALIDATE**: Independent Test — named table of three players; DM and Co-DM match on who and intent; aim on hub not DM Intelligence; generic-table prep fails
 5. Then continue to US2 (gaps) before claiming the loop is closed
 
 ### Incremental Delivery
 
 1. Setup + Foundational → helper and no-new-skill pointer ready
-2. Add US1 → shared aim (MVP)
+2. Add US1 → shared aim on hub (MVP)
 3. Add US2 → gaps do not stall
 4. Add US3 → wrapup reflection as Work (designated writer)
 5. Add US4 → sitting records and helpers
 6. Add US5 → ledger fill/drain
-7. Add US6 → layout self-org
+7. Add US6 → layout kinds (wiki vs agent-facing)
 8. Polish → fixture check covering quickstart 1–8
 
 ### Dispatch
@@ -264,7 +260,6 @@ T018 Token-cost ownership standing rule in AGENTS.md
 
 - [P] tasks = different files, no incomplete dependencies
 - [Story] label maps task to US1–US6
-- Each user story is independently completable once Foundational is done, modulo shared-file serialization
-- Data-model constraints are quoted in T008–T010, T015, T017, T020, T021, T023, T024
-- No new skill, no tokenizer, no second ledger helper, no wiki kind for table aim
+- Data-model constraints are quoted in T008–T010, T015, T017, T020, T021, T023–T025
+- No new skill, no tokenizer, no second ledger helper, no wiki `type` for table aim / Encounters / Rules, no layout-kind frontmatter, no mandated folder taxonomy
 - Stop at any checkpoint to validate the story independently
