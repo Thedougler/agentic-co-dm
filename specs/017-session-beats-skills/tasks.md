@@ -11,7 +11,7 @@ description: "Task list for Session Beat Skills"
 
 **Organization**: Setup → Foundational → US1 → US2 → US3 → US4 → US6 → US5 → Polish.
 
-**Dispatch**: Creating type skills, `spell-design`, and changing `session-beats` or `vehicle-design` trigger, ownership, or standing load is design-impact (`docs/agents/skill-design-dispatch.md`). Session agent does not write those targets. Designated writer lands them with a minimal prompt (Outcome, Files, Bounds, Job, deliverables, completion criteria) at `claude -p --model claude-opus-4-6 --effort medium`. Follow `writing-for-agents`. Skills state what to write and when the page is done.
+**Dispatch**: Claude Code only for novel skills, skill redesigns, or major skill-file changes: T003 (`session-beats` rewrite), T005–T009 (new type skills), T017 (`vehicle-design` redesign), T018 (new `spell-design`). Minimal prompt at `claude -p --model claude-opus-4-6 --effort medium`. Session agent lands T001, T002 (`AGENTS.md`), T004, T010–T016, T019–T026. Usage limit: defer the Claude-dependent task; complete remaining independent tasks. Follow `writing-for-agents`. Skills state what to write and when the page is done.
 
 ## Format: `[ID] [P?] [Story] Description`
 
@@ -61,7 +61,7 @@ Contracts: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`, `sp
 
 ### Implementation for User Story 1
 
-- [ ] T003 [US1] Rewrite `.agents/skills/session-beats/SKILL.md` as composition only. Description fires on planning a session, one-shot, adventure arc, or expedition evening — not on writing a typed beat. Owns: Beat Chart assembly; one Hook; alternate D/C; Climax then Resolution; polarity; ~30 min per beat; Hook+Climax+Resolution ~90 min; threads, escalation, transitions; recompute / agency gates; filed spine jobs. Point typed fill at the five type skills. Quote data-model: "Primary when planning a session, one-shot, adventure arc, or expedition evening."
+- [ ] T003 [US1] Rewrite `.agents/skills/session-beats/SKILL.md` as composition only (Claude Code). Description fires on planning a session, one-shot, adventure arc, or expedition evening. Owns: Beat Chart assembly; one Hook; alternate D/C; Climax then Resolution; polarity; ~30 min per beat; Hook+Climax+Resolution ~90 min; threads, escalation, transitions; recompute / agency gates; filed spine jobs. Point typed fill at the five type skills. Quote data-model: "Primary when planning a session, one-shot, adventure arc, or expedition evening."
 - [ ] T004 [US1] Keep `.agents/skills/session-beats/references/agency.md` and `.agents/skills/session-beats/references/session-skeleton.md` as composition references. Skeleton stays the planning form; filed spine remains Session 11-00 shape.
 
 **Checkpoint**: US1 independently testable (quickstart steps 1 job 1, 2)
@@ -78,11 +78,11 @@ Contracts: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`, `sp
 
 Quote each type's completion test from `specs/017-session-beats-skills/data-model.md`. Each type skill owns purpose, completion test, cards for that type, how to fill this beat. Card fields: Type exactly one of the five; Trigger when fiction calls for it — not to fill a slot; Stakes visible; Player options at least two viable responses; Agency note ignoring, failing, or redirecting updates the world. Move cards out of `.agents/skills/session-beats/references/beat-types.md` into the matching type skill. Model-invoked descriptions: write, edit, or create content for that type.
 
-- [ ] T005 [P] [US2] Create `.agents/skills/hook-beats/SKILL.md` (and its card reference). Completes when: "Party has committed to a response to the opening pressure. One Hook per session." Include Play a Cliffhanger as Hook and Play a Development as Hook as Hook cards.
-- [ ] T006 [P] [US2] Create `.agents/skills/development-beats/SKILL.md` (and its card reference). Completes when: "Players can name what they now know or can decide that they could not before."
-- [ ] T007 [P] [US2] Create `.agents/skills/cliffhanger-beats/SKILL.md` (and its card reference). Completes when: "The contest resolved; physical situation (position, resources, safety, time) changed."
-- [ ] T008 [P] [US2] Create `.agents/skills/climax-beats/SKILL.md` (and its card reference). Completes when: "Highest-stakes confrontation the middle made inevitable; threads harvested."
-- [ ] T009 [P] [US2] Create `.agents/skills/resolution-beats/SKILL.md` (and its card reference). Completes when: "Players can name what is different and what they want next."
+- [ ] T005 [P] [US2] Create `.agents/skills/hook-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Party has committed to a response to the opening pressure. One Hook per session." Include Play a Cliffhanger as Hook and Play a Development as Hook as Hook cards.
+- [ ] T006 [P] [US2] Create `.agents/skills/development-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Players can name what they now know or can decide that they could not before."
+- [ ] T007 [P] [US2] Create `.agents/skills/cliffhanger-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "The contest resolved; physical situation (position, resources, safety, time) changed."
+- [ ] T008 [P] [US2] Create `.agents/skills/climax-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Highest-stakes confrontation the middle made inevitable; threads harvested."
+- [ ] T009 [P] [US2] Create `.agents/skills/resolution-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Players can name what is different and what they want next."
 
 **Checkpoint**: US1 + US2 independently testable (quickstart steps 1, 3)
 
@@ -160,7 +160,7 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 - [ ] T023 Split `.agents/skills/session-beats/evals/evals.json`: chart/agency/alternation/polarity evals stay on composition; type-card evals move with their type skill
 - [ ] T024 Run `specs/017-session-beats-skills/quickstart.md` steps 1–8 against `specs/017-session-beats-skills/contracts/beat-skill-routing.md` and `specs/017-session-beats-skills/contracts/wiki-kind-pages.md`
 - [ ] T025 Confirm this change set does not rewrite bodies of `wiki/_raw/Session-11-*.md`, does not edit `.agents/skills/writing-beats/SKILL.md`, does not copy the beat routing table into `.omp/AGENTS.md`, and leaves 0 skills that contain both the full Beat Chart and all five type-card catalogs
-- [ ] T026 Confirm skill-update dispatch for this feature uses `claude-opus-4-6 --effort medium` and a prompt that names deliverables plus a completion test, per `docs/agents/skill-design-dispatch.md`
+- [ ] T026 Confirm Claude Code was used only for T003, T005–T009, T017, T018; those dispatches used `claude-opus-4-6 --effort medium` with a prompt that names deliverables plus a completion test, per `docs/agents/skill-design-dispatch.md`; `AGENTS.md` and templates were session-agent work
 
 ---
 
@@ -251,6 +251,7 @@ Task: Create wiki/templates/spell.md (T015)
 - Do not add a beat-router skill
 - Do not port Campaign OS composing/writing-*-beats
 - Do not rewrite Session 11 to prove the split
-- Design-impact tasks dispatch at Opus 4.6 medium; session agent does not draft those skills
+- Claude Code: T003, T005–T009, T017, T018 only. Session agent: the rest
+- Usage limit: defer that Claude task; complete remaining independent tasks
 - Commit after each task or logical group
 - Stop at checkpoints
