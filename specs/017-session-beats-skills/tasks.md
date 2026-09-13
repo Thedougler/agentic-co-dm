@@ -62,7 +62,7 @@ Contracts: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`, `sp
 
 ### Implementation for User Story 1
 
-- [ ] T003 [US1] Rewrite `.agents/skills/session-beats/SKILL.md` as composition only (Claude Code). Description fires on planning a session, one-shot, adventure arc, or expedition evening. Owns: Beat Chart assembly; one Hook; alternate D/C; Climax then Resolution; polarity; ~30 min per beat; Hook+Climax+Resolution ~90 min; threads, escalation, transitions; recompute / agency gates; filed spine jobs. Point typed fill at the five type skills. MUST NOT include the five type-card catalogs. MUST NOT stand-load `.agents/skills/session-beats/references/beat-types.md`. Quote data-model: "Primary when planning a session, one-shot, adventure arc, or expedition evening." Retry after 2026-09-12 18:30 America/Vancouver.
+- [X] T003 [US1] Rewrite `.agents/skills/session-beats/SKILL.md` as composition only (Claude Code). Description fires on planning a session, one-shot, adventure arc, or expedition evening. Owns: Beat Chart assembly; one Hook; alternate D/C; Climax then Resolution; polarity; ~30 min per beat; Hook+Climax+Resolution ~90 min; threads, escalation, transitions; recompute / agency gates; filed spine jobs. Point typed fill at the five type skills. MUST NOT include the five type-card catalogs. MUST NOT stand-load `.agents/skills/session-beats/references/beat-types.md`. Quote data-model: "Primary when planning a session, one-shot, adventure arc, or expedition evening."
 - [X] T004 [US1] Keep `.agents/skills/session-beats/references/agency.md` and `.agents/skills/session-beats/references/session-skeleton.md` as composition references. Skeleton stays the planning form; filed spine remains Session 11-00 shape.
 
 **Checkpoint**: US1 independently testable (quickstart steps 1 job 1, 2)
@@ -97,7 +97,7 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 
 ### Implementation for User Story 3
 
-- [ ] T010 [US3] In `.agents/skills/session-beats/SKILL.md`, load a type skill only when filling a typed slot; after load, that type skill is primary for the fill. Quote seam: "Composition filling a typed slot → That type skill; type becomes primary for the fill."
+- [X] T010 [US3] In `.agents/skills/session-beats/SKILL.md`, load a type skill only when filling a typed slot; after load, that type skill is primary for the fill. Quote seam: "Composition filling a typed slot → That type skill; type becomes primary for the fill."
 - [ ] T011 [P] [US3] In `.agents/skills/hook-beats/SKILL.md`, load `session-beats` only when chart position, polarity, threads, or transition is in question (not as primary for writing the beat). Play a Cliffhanger as Hook loads `.agents/skills/cliffhanger-beats/` for opening shape only; Play a Development as Hook loads `.agents/skills/development-beats/` for opening shape only; beat remains the session's one Hook.
 - [ ] T012 [P] [US3] In `.agents/skills/development-beats/SKILL.md`, `.agents/skills/cliffhanger-beats/SKILL.md`, `.agents/skills/climax-beats/SKILL.md`, and `.agents/skills/resolution-beats/SKILL.md`, load `session-beats` only for chart position, polarity, threads, or transition; load the next type skill only when How the Scene Resolves names that type, for the handoff only. Quote: "Any other extra type-card catalog is a defect."
 
@@ -113,7 +113,7 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 
 ### Implementation for User Story 4
 
-- [ ] T013 [US4] In `.agents/skills/session-beats/SKILL.md` and `.agents/skills/session-beats/references/agency.md`, bind chart rules from `specs/017-session-beats-skills/contracts/beat-skill-routing.md`: one Hook to start; Developments and Cliffhangers only in alternating order; one Climax followed by one Resolution; Action Hook → next Development; cerebral Hook → next Cliffhanger; Action Climax preceded by Development; cerebral Climax preceded by Cliffhanger; about thirty minutes per beat; Hook + Climax + Resolution about ninety minutes; every prepared beat advances a live thread; at least two viable player responses; recompute rather than force the next slot. Quote data-model: "Situations not required outcomes; recompute; chart may shrink/branch/pause/end early."
+- [X] T013 [US4] In `.agents/skills/session-beats/SKILL.md` and `.agents/skills/session-beats/references/agency.md`, bind chart rules from `specs/017-session-beats-skills/contracts/beat-skill-routing.md`: one Hook to start; Developments and Cliffhangers only in alternating order; one Climax followed by one Resolution; Action Hook → next Development; cerebral Hook → next Cliffhanger; Action Climax preceded by Development; cerebral Climax preceded by Cliffhanger; about thirty minutes per beat; Hook + Climax + Resolution about ninety minutes; every prepared beat advances a live thread; at least two viable player responses; recompute rather than force the next slot. Quote data-model: "Situations not required outcomes; recompute; chart may shrink/branch/pause/end…
 
 **Checkpoint**: US1–US4 independently testable (quickstart step 5)
 
