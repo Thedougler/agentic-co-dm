@@ -231,7 +231,7 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 
 - [X] T044 [P] [US11] Create `wiki/templates/region.md` from the provided region scaffold. Jobs: spoken look; At a glance; Current state; geography/travel enough to choose a route; active powers; change log. Extra headings omit by scale (MACRO / REGIONAL / LOCAL). Pass is those jobs.
 - [X] T045 [US11] In `wiki/AGENTS.md`, add `type` value `region`. Layout jobs for Region matching FR-051.
-- [ ] T046 [US11] Create `.agents/skills/region-design/SKILL.md` (Claude Code). Primary for write, edit, or create of a region page. Completes when FR-051 jobs are filled. MUST NOT invent pressure. If a pressure is already stated, link that wiki note. MUST NOT revive `type: front`. Design-impact: designated writer, `claude-opus-4-6 --effort medium`, minimal prompt.
+- [X] T046 [US11] Create `.agents/skills/region-design/SKILL.md` (Codex CLI gpt-5.5 medium). Primary for write, edit, or create of a region page. Completes when FR-051 jobs are filled. MUST NOT invent pressure. If a pressure is already stated, link that wiki note. MUST NOT revive `type: front`. Design-impact: designated writer, Codex CLI at ChatGPT 5.5 medium after Claude Code usage-limit deferral.
 - [X] T047 [US11] In `.agents/skills/place-design/SKILL.md`, remain the hub for all places; write site places from `wiki/templates/place.md`; defer `kind: city` to `city-design`; defer region jobs to `region-design`; MUST NOT write the city or region page itself.
 
 **Checkpoint**: US10–US11 independently testable (quickstart step 9)
@@ -365,6 +365,6 @@ Task: Create wiki/templates/region.md (T044)
 - Designated writer: T003, T005–T009, T017, T018, T031, T036, T040, T043, T046 only. Session agent: the rest
 - Writer tasks are sequential even when marked [P] for files
 - Usage limit: defer that writer task on this file with a retry time; complete remaining independent tasks; carry deferred tasks forward. Codex CLI at ChatGPT 5.5 medium only when every remaining open task is blocked, no other work can be done, and retry time is more than one hour away
-- Remaining designated-writer jobs T031, T036, T040, T043, T046: Codex CLI at ChatGPT 5.5 medium (owner: Claude-deferred tasks go to Codex)
+- Designated-writer jobs T018, T031, T036, T040, T043, T046: Codex CLI at ChatGPT 5.5 medium after Claude Code usage-limit deferral (owner instruction)
 - Commit after each task or logical group
 - Stop at checkpoints
