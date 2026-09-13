@@ -3,6 +3,7 @@ title: Otel Karn
 category: entities
 tags: [shattered-sea, place, otel-karn]
 sources:
+  - "isle-of-the-undying.md"
   - "Khlysty - the Flock.md"
   - "Otel Karn.md"
 summary: Remote island root of the Flock tradition, where Otho's bargain stopped death and Grigori learned the blood-anchor technique.
@@ -15,7 +16,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T03:04:18Z
-updated: 2026-09-13T07:50:00Z
+updated: 2026-09-13T21:10:00Z
 type: place
 reveal: unrevealed
 campaign: shattered-sea
@@ -45,3 +46,7 @@ Otel Karn is a remote island and the root of the tradition the [[Dravosi Crown]]
 - [[Otho]]
 - [[Shepherd Grigori]]
 - [[Dravosi Crown]]
+
+## Stillmere
+
+[[Stillmere]] is named as the proving ground where the crew can duel before the cost of unhealable wounds becomes clear. Butchered livestock still walk and graze. [[Otho]] walks among islanders as a beloved local drunk. Easiest resolution is to bore him; a straight fight at near level 10 is named as unwinnable.

@@ -4,6 +4,7 @@ category: entities
 tags: ["shattered-sea", "region"]
 sources:
   - "Shattered Sea.md"
+  - "shattered-sea.md"
   - "00 Shattered Sea.md"
 summary: "Roughly 60,000 square miles of archipelago south of Chult; Season 2 pressure sits at Aruhe after Sparhold while Crown, Tessarine, councils, and Waveservants all claim the sea."
 provenance:
@@ -114,3 +115,5 @@ The Shattered Sea is a long, bent west–east corridor in open ocean south of Ch
 - Eastward, both arcs pinch into the [[Tail]], then the cold, sharp approach to the Maw. Past the trench is [[Outer Reach]]: no trusted landmark, reversing currents, and no resupply.
 
 The sea is not empty between the named hubs: reefs, deep cuts, and small particular islands make unofficial routes valuable to whoever learned them first.
+
+The Scatter Current is named as running clockwise around the central channel. West wants papers. East wants a debt that can be called later. Every harbour pays [[Umberlee]] through the [[Waveservants]].

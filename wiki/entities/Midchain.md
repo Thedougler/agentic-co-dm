@@ -2,7 +2,7 @@
 title: "Midchain"
 category: entities
 tags: ["shattered-sea", "region"]
-sources: ["Midchain.md", "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md"]
+sources: ["Midchain.md", "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md", "midchain-east.md", "midchain-narration-appearance.md", "midchain-south.md", "midchain-west.md"]
 summary: "Densely packed small tropical islands, free ports, reefs, and local councils; feels busy beyond enforcement."
 provenance:
   extracted: 1.0
@@ -13,7 +13,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T03:00:00Z
-updated: 2026-09-13T07:45:00Z
+updated: 2026-09-13T21:20:00Z
 type: region
 reveal: unrevealed
 campaign: shattered-sea
@@ -23,7 +23,7 @@ region: "Shattered Sea"
 ---
 # Midchain
 > [!narration] Narration
-> Midchain is densely packed small tropical islands of reefs, free-port jetties, and low green ground. Pilots call depths while council bells and dock offers compete. Brine and fruit ride the air over channels local boats already use.
+> Midchain is densely packed small tropical islands of reefs, free-port jetties, and low green ground. Pilots call depths while council bells and dock offers compete. Brine and fruit ride the air over channels local boats already use. Grey-green water gives way to turquoise clear enough to show reef shadows. Smoke threads from unmarked coves: cook fires, kilns, and something that probably should not be burning.
 
 
 ## At a glance

@@ -3,6 +3,7 @@ title: "Maw fissure and the tribute system"
 category: entities
 tags: ["shattered-sea", "quest"]
 sources:
+  - "umberlee-pearl-fissure-erosion.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-antheri.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/npc-auralis.md"
 summary: "Pressure clock: tribute and the Pearl may be holding the Drowned Maw fissure shut."
@@ -32,3 +33,5 @@ Tribute and the [[Pearl of Souls]] may be holding the [[Drowned Maw]] fissure sh
 - [[Antheri]]
 - [[Pearl of Souls]]
 - [[Shattered Sea]]
+
+The Border Ethereal is a universal Inner-Plane separator. The Maw is a local puncture. Something larger than [[Leviathan]], [[Ridgeback]], or [[Krakling]] scrapes at the far side. Whether that surfaces later stays open.

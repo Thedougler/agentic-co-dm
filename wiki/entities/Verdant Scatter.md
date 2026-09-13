@@ -2,7 +2,7 @@
 title: "Verdant Scatter"
 category: entities
 tags: ["shattered-sea", "region", "scatter"]
-sources: ["Verdant Scatter.md"]
+sources: ["verdant-scatter.md", "Verdant Scatter.md"]
 summary: "The inhabited chain between the Galewall/Ashwalls and the Tail/Maw, with Crown water north and Midchain south; feels crowded, green, and only partly charted."
 provenance:
   extracted: 1.0
@@ -52,3 +52,5 @@ The inhabited chain between the Galewall/Ashwalls and the Tail/Maw, with Crown w
 
 ## Secrets (DM)
 “Verdant Scatter” is the inhabited chain name in the dump; keep it distinct from the five-island [[Verdant Teeth]] band.
+
+The northern arc is the [[Crown Islands]]. The southern arc is the [[Midchain]]. The [[Central Strait]] runs between them. The arcs meet at the [[Tail]].

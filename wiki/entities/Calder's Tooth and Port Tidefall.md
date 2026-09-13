@@ -2,7 +2,7 @@
 title: "Calder's Tooth and Port Tidefall"
 category: entities
 tags: ["shattered-sea", "place", "tidefall", "crestwall", "dravosi-crown"]
-sources: ["Calder's Tooth and Port Tidefall.md"]
+sources: ["Calder's Tooth and Port Tidefall.md", "calders-tooth.md"]
 summary: "Three tiers on the cliff: docks at the water, a trade shelf on the face, and [[Fort Crestwall]] on the crown with the guns. Every ship entering the western Strait should stop at the Inspection Pier, a"
 provenance:
   extracted: 1.0
@@ -13,7 +13,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T07:30:00Z
-updated: 2026-09-13T07:30:00Z
+updated: 2026-09-13T20:45:00Z
 type: place
 reveal: unrevealed
 campaign: shattered-sea
@@ -41,9 +41,20 @@ The house's visible dispatch work runs through [[Silkvane]], a pale grey sloop c
 ## Maw staging
 Extra companies have arrived at Crestwall under Admiralty-sealed orders. Their manifests include reef-diving gear and underwater charges marked for the [[Drowned Maw]]. The Governor has not been told why. This is staging pressure, not a resolved operation.
 
+## Island shape
+
+Calder's Tooth is a jagged limestone-and-basalt island at the [[Central Strait]]'s west mouth. The west face is sheer. The east side slopes into mudflats and mangroves. A fog-thick ridge called the [[Marrow]] runs north to south with sinkholes and collapsed caves.
+
+[[Port Tidefall]] is the west-cliff fortress-port. [[South Harbour]] is the lightly policed east harbour for repairs and fishing. [[Osha's Slip]] is a stilt village over the mudflats. [[Cape Solitude]] is the wind-battered northern tip with a ruined lighthouse whose light is dead. [[High Line]] is a cliff hamlet on the northeast that works nets by winch. The [[Overland Track]] is the muddy southern road over the Marrow. [[The Passage]] moves cargo through caves below that road; the Crown has not found it.
+
+Inside Tidefall the named rooms are [[Fort Crestwall]], the Inspection Pier, the Harbourmaster's Office, Tidefall Chandlery, the [[Tessarine Trade House]], a Shelf instrument dealer, the Governor's Seat, the Hook and Ledger tavern, the Fare I'a jerky counter, and a [[Waveservants]] shrine. [[South Harbour Impound]] sits on the east pier.
+
+Giant bats roost in caves and sinkholes. Giant boar tear the wet ridges. Giant wolf spiders nest in old cisterns. Giant axe beaks pace wagons on the track.
+
 ## Connections
-- → [[Central Strait]] · [[Crown Islands]] · [[Harwick]] · [[Drowned Maw]] · [[Calven and Calveno]]
+- → [[Central Strait]] · [[Crown Islands]] · [[Harwick]] · [[Drowned Maw]] · [[Calven and Calveno]] · [[Midchain]] · [[Galewall]]
 - → [[Dravosi Crown]] · [[Governor Voss]] · [[Rupert Knighton]] · [[Tessarine Concordat]] · [[Silkvane]] · [[Amberreach]]
+- → [[South Harbour]] · [[Osha's Slip]] · [[Cape Solitude]] · [[High Line]] · [[Marrow]] · [[Overland Track]] · [[The Passage]]
 
 ## Secrets (DM)
 The sealed Crestwall orders and the vaults beneath the fort are separate layers of Crown secrecy. The Governor never saw the orders; he also does not know the reason for the extra companies. The Tessarine house is a separate pressure: legal paper, credit, and sealed mail rather than Admiralty force.

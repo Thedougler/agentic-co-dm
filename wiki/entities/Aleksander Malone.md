@@ -5,6 +5,7 @@ tags: [shattered-sea, npc, dravosi-crown]
 sources:
   - "Khlysty - the Flock.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/kill-the-shepherd/npc.aleksander-malone.md"
+  - "aleksander-malone.md"
 summary: "Hound of Tyr reserved by the Crown for confirmed Flock infiltration; CR 14 elf hunter with a blessed fight sheet."
 provenance:
   extracted: 0.95
@@ -15,7 +16,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T03:04:18Z
-updated: 2026-09-13T19:40:00Z
+updated: 2026-09-13T20:20:00Z
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -32,12 +33,14 @@ relationships:
     type: related_to
   - target: "[[Shepherd Grigori]]"
     type: related_to
+  - target: "[[Blackrule]]"
+    type: related_to
 ---
 # Aleksander Malone
 
 ## Who and want
 
-[[Aleksander Malone]] is the [[Dravosi Crown]]'s Hound of [[Tyr]]. The Crown reserves him for confirmed [[Khlysty - the Flock]] infiltration. He trains at [[Blackrule]] and leaves only when heresy is confirmed. He was aboard [[HCS Ordinance]] under [[Corbin Knighton]] while hunting [[Shepherd Grigori]].
+[[Aleksander Malone]] is the [[Dravosi Crown]]'s Hound of [[Tyr]]. The Crown reserves him for confirmed [[Khlysty - the Flock]] infiltration. He trains at [[Blackrule]] and leaves only when heresy is confirmed. Word of confirmed heresy reaches him and he goes on his own judgment; the Crown once assigned a handler, and that handler did not survive contact. Crown talk names him a dog that needs a long leash. He was aboard [[HCS Ordinance]] under [[Corbin Knighton]] while hunting [[Shepherd Grigori]]. His signature line is: "May God have mercy on my enemies, for they shall have none from me."
 
 ## Look
 
@@ -45,7 +48,7 @@ Source is silent beyond half plate and blessed weapons on the fight sheet. Mediu
 
 ## First minutes and posture
 
-When heresy is confirmed, Malone arrives as a Crown hunter, not a negotiator. At [[Sarn's Landing]] he was once loosed in public; the result was ugly enough that Crown policy now requires formal heresy confirmation before he is released. On [[HCS Ordinance]], he hunted Grigori while the cutter stood under merchant cover.
+When heresy is confirmed, Malone arrives as a Crown hunter, not a negotiator. He treats the violence as righteous judgment and takes grim joy in it rather than reluctance. At [[Sarn's Landing]] he was once loosed in public; the result was ugly enough that Crown policy now requires formal heresy confirmation before he is released. On [[HCS Ordinance]], he hunted Grigori while the cutter stood under merchant cover.
 
 ## Named ties
 
@@ -53,12 +56,13 @@ When heresy is confirmed, Malone arrives as a Crown hunter, not a negotiator. At
 - [[Tyr]] — scales cut into the altar stone at [[Blackrule]].
 - [[Khlysty - the Flock]] / [[Shepherd Grigori]] — the hunt target pattern.
 - [[Corbin Knighton]] / [[HCS Ordinance]] — recent boarding companion.
-- [[Blackrule]] — training chapterhouse.
+- [[Blackrule]] — chapterhouse he chose himself, cut into volcanic terrace-rock in the southern [[Midchain]], from disdain for civilized excess rather than exile.
 - [[Sarn's Landing]] — public release that changed Crown policy.
+- [[Ashglass]], [[Hollow Choir]], and [[Corrigan's Rest]] — named places the source says do not overlap [[Blackrule]].
 
 ## Combat
 
-CR 14. Regeneration 20, Heretic's Bane against fiends and undead, Sneak Attack, 7th-level Wisdom spellcasting (DC 17), Multiattack with blessed longsword and bayonet, Bayonet Barrage cone, Action Surge, Spiritual Weapon, Rebuke the Unclean, Guided Judgment, and Withdraw by Judgment when reduced below 49 hit points.
+CR 14. Regeneration 20, Heretic's Bane against fiends and undead, Sneak Attack, 7th-level Wisdom spellcasting (DC 17), Multiattack with blessed longsword and bayonet, Bayonet Barrage cone, Action Surge, Spiritual Weapon, Rebuke the Unclean, Guided Judgment, and Withdraw by Judgment when reduced below 49 hit points. A later idea note asks for no invented supernatural resilience; the live sheet is kept. ^[ambiguous] See [[Work - Malone regeneration]].
 
 ```statblock
 layout: Basic 5e Layout

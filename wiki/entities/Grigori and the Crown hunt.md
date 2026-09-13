@@ -3,6 +3,7 @@ title: "Grigori and the Crown hunt"
 category: entities
 tags: ["shattered-sea", "quest"]
 sources:
+  - "grigori-ascension.md"
   - "00 Shattered Sea.md"
 summary: "Open quest covering Shepherd Grigori and the Crown hunt pressure around Flock infiltration."
 provenance:
@@ -30,3 +31,7 @@ Open quest covering Shepherd Grigori and the Crown hunt pressure around Flock in
 - [[Shepherd Grigori]]
 - [[Dravosi Crown]]
 - [[Shattered Sea]]
+
+## Situation
+
+[[Aleksander Malone]]'s hunt is already live from Grigori's earlier house pattern, not from any Knighton wound. The source asks the party to choose whether to protect the healer who saved a crewmate or hand him to Malone.

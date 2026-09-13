@@ -1,8 +1,8 @@
 {
   "version": 1,
   "stats": {
-    "total_sources_ingested": 78,
-    "total_pages": 172
+    "total_sources_ingested": 194,
+    "total_pages": 314
   },
   "/Users/nick/agentic-co-dm/wiki/_raw/arc-blight-of-aruhe.md": {
     "content_hash": "sha256:df40626cb59fcde17c3d5cd4d9079e7c57335a0e5e10334af00d40f3efe05598",
@@ -1709,6 +1709,1367 @@
     "last_ingested": "2026-09-13T21:00:00Z",
     "pages_produced": [
       "entities/Waveservants.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/workspace/midchain-ingest/group-a/npcs/Sir Quackers the Fowl.md": {
+    "content_hash": "sha256:fe18dbbd4cba0726fb425361bbdfbb0c48bc12b7d0bc7985ee5fbd55f13c9406",
+    "last_ingested": "2026-09-13T19:50:26Z",
+    "pages_produced": [
+      "entities/Sir Quackers the Fowl.md",
+      "entities/Soul Incarnate.md"
+    ],
+    "pages_created": [
+      "entities/Sir Quackers the Fowl.md",
+      "entities/Soul Incarnate.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/workspace/midchain-ingest/group-a/items/Aruhe - Rotheart.md": {
+    "content_hash": "sha256:e6a495863e1a55fb8dd392d96990977268a9012090be108cdb643b7eedc93782",
+    "last_ingested": "2026-09-13T19:51:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Rotheart.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Rotheart.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/workspace/midchain-ingest/group-a/items/Flying Boots.md": {
+    "content_hash": "sha256:1670cc61fb1665e45155c521b8ba4ff6fe84c9247da27defde4b31f5701a7460",
+    "last_ingested": "2026-09-13T19:52:00Z",
+    "pages_produced": [
+      "entities/Flying Boots.md",
+      "entities/Work - Flying Boots provenance.md"
+    ],
+    "pages_created": [
+      "entities/Flying Boots.md",
+      "entities/Work - Flying Boots provenance.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/workspace/midchain-ingest/group-a/lore/Istishia.md": {
+    "content_hash": "sha256:75f5080175ebdf47f8d9bd71ae4664cee36dbad56fcd6a5771c5ce1227779472",
+    "last_ingested": "2026-09-13T19:53:00Z",
+    "pages_produced": [
+      "entities/Istishia.md",
+      "entities/Elemental Plane of Water.md"
+    ],
+    "pages_created": [
+      "entities/Istishia.md",
+      "entities/Elemental Plane of Water.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/workspace/midchain-ingest/group-a/monsters/Blackrail.md": {
+    "content_hash": "sha256:9d1d94632b6a0d6b5a2a1f908a82b0dde729d73aa87beda7376aca9cac89796f",
+    "last_ingested": "2026-09-13T19:54:00Z",
+    "pages_produced": [
+      "entities/Blackrail.md"
+    ],
+    "pages_created": [
+      "entities/Blackrail.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/workspace/midchain-ingest/group-a/monsters/Welak.md": {
+    "content_hash": "sha256:6fbcaf675c1c655b7c1f388ec0e9837857161f1538bf8aadce5adddee78d9920",
+    "last_ingested": "2026-09-13T19:55:00Z",
+    "pages_produced": [
+      "entities/Welak.md"
+    ],
+    "pages_created": [
+      "entities/Welak.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/workspace/midchain-ingest/group-a/vehicles/Nimmik Vollask.md": {
+    "content_hash": "sha256:9bfa78ecc2dfc16cbe1870cb4c94add5da39cda59b7a1f9f06ff7057a173ab72",
+    "last_ingested": "2026-09-13T19:56:00Z",
+    "pages_produced": [
+      "entities/Nimmik Vollask.md",
+      "entities/Cotter Foss.md"
+    ],
+    "pages_created": [
+      "entities/Nimmik Vollask.md",
+      "entities/Cotter Foss.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/workspace/midchain-ingest/group-a/monsters/Young Snakewood.md": {
+    "content_hash": "sha256:97e0a4a1c00cfd75ada7f9366e6647c71e7913d66e5d800929bf965a9edcfe43",
+    "last_ingested": "2026-09-13T19:57:00Z",
+    "pages_produced": [
+      "entities/Young Snakewood.md"
+    ],
+    "pages_created": [
+      "entities/Young Snakewood.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/workspace/midchain-ingest/group-a/monsters/Snakewood.md": {
+    "content_hash": "sha256:28e9dfa73d09a71e0c55e07206b7d932879d3428c8dea67a357563bb1c73f358",
+    "last_ingested": "2026-09-13T19:57:00Z",
+    "pages_produced": [
+      "entities/Work - Snakewood creature vs hazard.md",
+      "entities/Aruhe - Snakewood.md"
+    ],
+    "pages_created": [
+      "entities/Work - Snakewood creature vs hazard.md"
+    ],
+    "pages_updated": [
+      "entities/Aruhe - Snakewood.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/workspace/midchain-ingest/group-a/monsters/Cave Bats.md": {
+    "content_hash": "sha256:489c7f5fd8a047e8781a249fc97c8992908712feaf5ab3bda834812fe0a5c48e",
+    "last_ingested": "2026-09-13T19:58:00Z",
+    "pages_produced": [
+      "entities/Cave Bats.md"
+    ],
+    "pages_created": [
+      "entities/Cave Bats.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/workspace/midchain-ingest/group-a/monsters/Vine Lash.md": {
+    "content_hash": "sha256:82cb5f677b793a46dad0ebf5949e8ead7dd06f039e0eab1edc2883971e05a8b3",
+    "last_ingested": "2026-09-13T19:59:00Z",
+    "pages_produced": [
+      "entities/Vine Lash.md"
+    ],
+    "pages_created": [
+      "entities/Vine Lash.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/workspace/midchain-ingest/group-a/monsters/Silence Moths.md": {
+    "content_hash": "sha256:307dfacfd76a16d79232e0a6ec48c2cc8169a21a19370f2894e4f10ed1a07de1",
+    "last_ingested": "2026-09-13T20:00:00Z",
+    "pages_produced": [
+      "entities/Silence Moths.md"
+    ],
+    "pages_created": [
+      "entities/Silence Moths.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/workspace/midchain-ingest/group-a/monsters/Grinning Ape.md": {
+    "content_hash": "sha256:9bdff7c24598182aba9d22a86519640097f30ffad46e9345ed677f3d37eaa1c3",
+    "last_ingested": "2026-09-13T20:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Grinning Ape.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Grinning Ape.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/workspace/midchain-ingest/group-a/monsters/Strangler Fig.md": {
+    "content_hash": "sha256:c8cba44763d832ea7e0b58a564f83f1cbd7a513b78d3899dd26b4f8260b1d35b",
+    "last_ingested": "2026-09-13T20:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Strangler Fig.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Strangler Fig.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/workspace/midchain-ingest/group-a/monsters/Thornback.md": {
+    "content_hash": "sha256:af4cdbabfd8ebb8bbd2c3bbbb05737c689b28f11d500e8ff90840d6f61f1fca2",
+    "last_ingested": "2026-09-13T20:00:00Z",
+    "pages_produced": [
+      "entities/Aruhe - Thornback.md"
+    ],
+    "pages_created": [
+      "entities/Aruhe - Thornback.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/workspace/midchain-ingest/group-a/monsters/Corpsewood.md": {
+    "content_hash": "sha256:d1f2c82cad527075d95dca2a85a81ade8f5359d0b9056ab15bf2a458a884d681",
+    "last_ingested": "2026-09-13T20:00:00Z",
+    "pages_produced": [
+      "entities/Corpsewood.md"
+    ],
+    "pages_created": [
+      "entities/Corpsewood.md"
+    ],
+    "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/00 Locations.md": {
+    "content_hash": "sha256:67657f0748ea245bd9e577c80f856a0fd8c9ec9e4c06facab4edadbbb3d39671",
+    "last_ingested": "2026-09-13T19:57:50Z",
+    "pages_produced": [
+      "entities/Locations.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aldenmere.md": {
+    "content_hash": "sha256:e8126fe5c06f866e9b2a0d041b9521f51c4c7583bc105a4b8a45649d345595f3",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aldenmere.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - Beach.md": {
+    "content_hash": "sha256:5d5859c57dff4e6f06f732dd3fe07c2127dd6df98e33ba1672e63aef4ccc6668",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - Beach.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - Clear Lake.md": {
+    "content_hash": "sha256:91f8fbd9d205fa16ae617bb8c21462c0ca7a019491430a99a4ae8f78b91349d2",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - Clear Lake.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - Grasslands - Print Braid.md": {
+    "content_hash": "sha256:0a4c42e3c52d58927a0ea9c29d8b6607aff94056fad3f1e311a825c248889068",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - Grasslands - Print Braid.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - Grasslands Torn Crossing.md": {
+    "content_hash": "sha256:f6c2454ed1d59afc8f811979a4251b7365ce179dacb0724aaa5389293f9a1024",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - Grasslands Torn Crossing.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - Grasslands.md": {
+    "content_hash": "sha256:52f8b83b613fe3f07f2710ca4a63701f1172da6fc2d04b954146f0c705feed66",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - Grasslands.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - Hungry Isle.md": {
+    "content_hash": "sha256:a33561e262ec952c06555f223fd8bcd4cd946dc1a8e70cfc75e92065e6d7695d",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - Hungry Isle.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - Lava Tubes.md": {
+    "content_hash": "sha256:354c6f407b47f330765a1986e0cf4f57692809d73057bb608c7fa3aa4a4306d3",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - Lava Tubes.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - Memorial Grove.md": {
+    "content_hash": "sha256:c92ab017f1f7b06780cd6de1d2cc6fe79e240ec0594546bcb7b15e67a8e6e6ec",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - Memorial Grove.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - Old Gardens.md": {
+    "content_hash": "sha256:627674fb74b03c6485be2c6b4b563a4a69b476ba6051f306080ed111f9000e65",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - Old Gardens.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - Quiet Forest Cutoff Lip.md": {
+    "content_hash": "sha256:097cc7e00049524e527a3f651743afddb56a680a4437491c9bf08dc20add2e19",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - Quiet Forest Cutoff Lip.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - Quiet Forest Spoke Ring.md": {
+    "content_hash": "sha256:acaec1df6471ae8ecdc0559b5285d3b28cfd75e7b87842f05f9d3bf49e87482b",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - Quiet Forest Spoke Ring.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - Quiet Forest Star Cut.md": {
+    "content_hash": "sha256:08b7d024bd4c29c3f1cdad67bec09d26f89f6f9505d83ce089f209cc346509e1",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - Quiet Forest Star Cut.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - Quiet Forest.md": {
+    "content_hash": "sha256:5d58219edddae6a1709572a045a0497e9b25c16e151f057a1c6af305d0c01303",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - Quiet Forest.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - River Landing Bank.md": {
+    "content_hash": "sha256:c709ec50940959d9eb6ab002e91884832d59a3ccfb15e32e29455128fce9bea4",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - River Landing Bank.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - River Line Bank.md": {
+    "content_hash": "sha256:46a905b2988eac1e4a54b6911fa1f420ca9b7b8ddd8532b315a8353b0f75655d",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - River - Line Bank.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - River Slack Basin.md": {
+    "content_hash": "sha256:dc8570781cd3f62eff582fa2edc66d837a25fcddcdc9d8532028dc4f5243ab15",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - River Slack Basin.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - River.md": {
+    "content_hash": "sha256:5c43c093a648e4f367f0ab942ecb9ccc67c9f340bd6ebcbed7ad56ba319e7f26",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - River.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - The Mangroves.md": {
+    "content_hash": "sha256:d03e809a3bd546c101e5a78d70478feba6fd6fb3842f30e5b0399f7b5b0eecb9",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - The Mangroves.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aruhe - The Marshes.md": {
+    "content_hash": "sha256:fd44ed6c87eea986bff026ae17738b6a583769aa9986a09c8ad1c6d5585720f1",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Aruhe - The Marshes.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Ashwalls.md": {
+    "content_hash": "sha256:27d061357566da900c772f893f56bc6c3c0c87242bd7982f874009630d015faa",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Ashwalls.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Blackrule.md": {
+    "content_hash": "sha256:73ab66222ec600f074a1f147241fc78b7068d4acc8e23bf2ffff5efa53b96b0e",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Blackrule.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Calder's Tooth and Port Tidefall.md": {
+    "content_hash": "sha256:bd51519201f1cbef7f90fa271428f4f5f04e83e5a0ba9088be662fecd1cb050c",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Calder's Tooth and Port Tidefall.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Calven and Calveno.md": {
+    "content_hash": "sha256:1589d4f751bb8a749b6a5fbfc62853e733698274e4e9cafae449418a460da05d",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Calven and Calveno.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Central Strait.md": {
+    "content_hash": "sha256:11f66e53af80fd676a71b5834d9677775598cc64fe390f6ff3dfd07f91a7f75e",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Central Strait.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Crown Islands.md": {
+    "content_hash": "sha256:94c43a416b1a8f9b02721163669a4ac8a282650edb5974d17bb5a7223d4382a7",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Crown Islands.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Deep Works.md": {
+    "content_hash": "sha256:dd98fbd8a9eed299543aca525b9a37857727f23f0f9b6d0e06258c593d5e91f5",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Deep Works.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Doldrums.md": {
+    "content_hash": "sha256:864b4a24d2f5bdd9d548a61f389dd75193be28ff0e364fb0da6519cb0dfc9f89",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Doldrums.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Dreth-Orak Channel.md": {
+    "content_hash": "sha256:4314ab5b57454edb37e7d3a76b18a287b0010c2304ef7caef3f9e3f96c20450a",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Dreth-Orak Channel.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Dreth.md": {
+    "content_hash": "sha256:9e2ee136ac10695af049e02c6b292f8012c46bfc6abce01b99d7f8cd1c90ea6a",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Dreth.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Drowned Maw.md": {
+    "content_hash": "sha256:40afbf03dc17739de50f8ba3701bf47f9631d61eb9ea2724ef0a917035136354",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Drowned Maw.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Fathomrush.md": {
+    "content_hash": "sha256:ac83dd284406e51494d393324c6cca774a88e5e2d5cda50e611b165441951cc7",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Fathomrush.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Galewall.md": {
+    "content_hash": "sha256:8823357a404bf0174d98b39f40e13481fc5c6cd6549749e6c565dcad6fac48a9",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Galewall.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Greyteeth.md": {
+    "content_hash": "sha256:90db9b6c85e8064bad0e07523b45c596198e1e541fe5cb3fe0216f33f6b08a97",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Greyteeth.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Halewick.md": {
+    "content_hash": "sha256:8ce5631103cf047adacec496ed950e1c7c961523f74e0ad287c20ddd7b227ea7",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Halewick.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Harwick.md": {
+    "content_hash": "sha256:cea9ad45e09858a6f611ae097c932172f7896cb917858dc19c41c366dbf924f1",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Harwick.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/High Eyrie.md": {
+    "content_hash": "sha256:50becc31fd32abe1bc0cb1c3a83390fcdd014c8e4a913a5d1047a759ca641f09",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/High Eyrie.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Kalowe.md": {
+    "content_hash": "sha256:2519b27d41145ca5f484fc8e0b780fd06145ab93300f3b381c49c8433929cd2d",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Kalowe.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Karath.md": {
+    "content_hash": "sha256:4341e360b38b609b691c171e75770b8439be5131875ccaf7e4e6d83aced839fd",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Karath.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Keth Naar.md": {
+    "content_hash": "sha256:24d2923fb77b89c174000b8c81d23489d8aec79bf297820e4da7cc4d6847eb29",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Keth Naar.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Mercatura.md": {
+    "content_hash": "sha256:08b77e61394018d565753c40a21a36b30864559c1ea1efe948c10edf02f7ca6f",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Mercatura.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Mid-Works.md": {
+    "content_hash": "sha256:f8a30ded604b75f374f0ad27b3b8f053d204cec64e9bb0ae125937f713ebf862",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Mid-Works.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Midchain.md": {
+    "content_hash": "sha256:a531b4d16f6cb2b8169fa19b1fafd06c076749ccd3d607211c5afeb589e23673",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Midchain.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Murrat.md": {
+    "content_hash": "sha256:6e4c1f874cf0440c565a4be97774856eca2bc2dc18362349ba8c10c4fd8818a4",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Murrat.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Orak.md": {
+    "content_hash": "sha256:bf53b5926d26a9ed1c057e54056dda907b143237c8b51a0dca39f30fbfb2c2df",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Orak.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Otel Karn.md": {
+    "content_hash": "sha256:9bb6a772ee9d453b7f8e0b790e3570ddb0fb1c0ea28e022621775edfb84e0c76",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Otel Karn.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Outer Reach.md": {
+    "content_hash": "sha256:20afb9178589f4ae90613f94a1efe87aa08767c5edd9bd024d8cbda606791b49",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Outer Reach.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Sanvashti.md": {
+    "content_hash": "sha256:4febc22f22e2f1ea06f3f073e71ac8abc3fbbacd043f58521fd2548598851964",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Sanvashti.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Sarn's Landing.md": {
+    "content_hash": "sha256:bbc850460fb67637359492eb8b5f40e38cb52cb1b0c983722f90d3009d66bae1",
+    "last_ingested": "2026-09-13T19:58:01Z",
+    "pages_produced": [
+      "entities/Sarn's Landing.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Session-11-00-Birds-of-a-Feather.md": {
+    "content_hash": "sha256:270f2f2c33a36b887e326e553dec046744774f514c619aa599b45f763b58a4c2",
+    "last_ingested": "2026-09-13T19:58:34Z",
+    "pages_produced": [
+      "journal/sessions/shattered-sea/11/Session-11-00-Birds-of-a-Feather.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Shattered Sea.md": {
+    "content_hash": "sha256:2d7f5c9dcade6910c449752dac541bc2777f2c86f91f276ff1faded9b4930c93",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Shattered Sea.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Shelfworks.md": {
+    "content_hash": "sha256:3aad34fc30e822dc123df21a27c978169f0716fb7679a1ee465e3be4e27c63e3",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Shelfworks.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Sorn Guarded Beach.md": {
+    "content_hash": "sha256:3365f582e5aab0a78bff4aadf4ed00387085d24068710320c08eae3730879415",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Sorn Guarded Beach.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Sorn.md": {
+    "content_hash": "sha256:a8527f2f1f1fd92bbfd137068cd5b91d0d128f973db8776523ddb4ab6cd4057c",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Sorn.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Sparhold Isle.md": {
+    "content_hash": "sha256:6a3de6a5344e3800700a7b50b20d19f2c752e64cb5494ab1d48b588ac3ab7a9f",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Sparhold Isle.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Sparhold.md": {
+    "content_hash": "sha256:e1c330a04363fe872529eb2c88852c40eceb8a88d76169d3a46832106654e3c7",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Sparhold.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Stenmark.md": {
+    "content_hash": "sha256:187e4e46302a389e37e4190f53d8a0f49d3146d4fedd7073e675f79cad9c1cd6",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Stenmark.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Tail.md": {
+    "content_hash": "sha256:ff9ec4b8310cdc517b63128f4c0ba639ab508176f16bbcb65f149ca304adf240",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Tail.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Uncertainty.md": {
+    "content_hash": "sha256:200750b14a69eec755ec1daeff6d57a5ef873cfbe4fc270bef5a40bec38665c2",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Uncertainty.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Vault of the First Factor.md": {
+    "content_hash": "sha256:02ff97e767915528dc56a0cbf23e1fa702f644b57225254e20fd7cf4bfbe0198",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Vault of the First Factor.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Vel Orn.md": {
+    "content_hash": "sha256:e0485530709a8900a86c800a7aa1529d036658c849a057285793422abb8e6e1c",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Vel Orn.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Verdant Scatter.md": {
+    "content_hash": "sha256:3eaca102ae6add6d6c2dbc84879f51b3b5997268090c55d5e85301e5efef00cd",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Verdant Scatter.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Verdant Teeth.md": {
+    "content_hash": "sha256:28d6d356a526b7bc17c0e28cbf5a6c1d172e09f7a2abe411677db50a1d640d03",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Verdant Teeth.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Vestra.md": {
+    "content_hash": "sha256:e870050b7cfeadb8c1706280cf5f5be8c77d3b6c6585239f3b4ae7be3eda9ad7",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Vestra.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Veth West Beach.md": {
+    "content_hash": "sha256:93fef42c3d35eebf8cd20f671d86529d8a50e6fb38a8273c9893cec911fe68f4",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Veth West Beach.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Veth.md": {
+    "content_hash": "sha256:13b7f69ce17a19c761751535b631117cdbd05ca69a0c553d1c616f1367355335",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Veth.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Warren.md": {
+    "content_hash": "sha256:ad80610d69f7a5025e3f96ce79abd259ceb91196f5175792f39b4df4fe85ca44",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Warren.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Yssenmoor.md": {
+    "content_hash": "sha256:e93d08b22019d085836ebe0ed881caa58bfdf4e59061e73bfadba688953ad000",
+    "last_ingested": "2026-09-13T19:58:41Z",
+    "pages_produced": [
+      "entities/Yssenmoor.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/aleksander-malone.md": {
+    "content_hash": "sha256:5ad5b79cbd28e3dc6a53b559bea1a136387645c161edc623a6f9f17dcf98ac16",
+    "last_ingested": "2026-09-13T19:59:28Z",
+    "pages_produced": [
+      "entities/Aleksander Malone.md",
+      "entities/Ashglass.md",
+      "entities/Hollow Choir.md",
+      "entities/Corrigan's Rest.md",
+      "entities/Work - Malone regeneration.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/arc-blight-of-aruhe.md": {
+    "content_hash": "sha256:df40626cb59fcde17c3d5cd4d9079e7c57335a0e5e10334af00d40f3efe05598",
+    "last_ingested": "2026-09-13T20:00:08Z",
+    "pages_produced": [
+      "entities/Hinewai.md",
+      "entities/The Unnamed Companion.md",
+      "entities/Aruhe - Hungry Isle.md",
+      "entities/Grung and the Making of Aruhe.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/arc-malones-verdict.md": {
+    "content_hash": "sha256:ac62697b63b070dea5486bd47a1b2942c73602ee2a1f6f3b528a5f3a078535e4",
+    "last_ingested": "2026-09-13T20:00:43Z",
+    "pages_produced": [
+      "entities/Sarn's Landing.md",
+      "entities/Aleksander Malone.md",
+      "entities/Corah Vance.md",
+      "entities/Halvard Oss.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/ash-caldera-dragon.md": {
+    "content_hash": "sha256:6b79f546b30649e498ec7d0bb90b220b6e73b0674ca5968c9003808d621ab8cb",
+    "last_ingested": "2026-09-13T20:00:57Z",
+    "pages_produced": [
+      "entities/Ashglass.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/ashwall-islands.md": {
+    "content_hash": "sha256:6a8a530f9d2aeeb011ba4212d4926d1b604f744d05f37100b1c70036aca62ad5",
+    "last_ingested": "2026-09-13T20:01:19Z",
+    "pages_produced": [
+      "entities/Ashwalls.md",
+      "entities/Duvane.md",
+      "entities/Arclight Phoenix.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/calders-tooth.md": {
+    "content_hash": "sha256:f6a313cf720604b883c94239b5ba13aa40519c587d02f2b699fe5584b3319af9",
+    "last_ingested": "2026-09-13T20:01:38Z",
+    "pages_produced": [
+      "entities/Calder's Tooth and Port Tidefall.md",
+      "entities/South Harbour.md",
+      "entities/Osha's Slip.md",
+      "entities/Cape Solitude.md",
+      "entities/High Line.md",
+      "entities/Marrow.md",
+      "entities/Overland Track.md",
+      "entities/South Harbour Impound.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/central-strait-crossing-narration-condition.md": {
+    "content_hash": "sha256:f5db9afd2d596f1add825b9f5ff67316bcfa05058afc8eeb7f4010dc1040d16d",
+    "last_ingested": "2026-09-13T20:01:49Z",
+    "pages_produced": [
+      "entities/Central Strait Crossing.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/central-strait-crossing.md": {
+    "content_hash": "sha256:624055966e2ce059728572b33247851be254e632ad15b92374dc68550f98708b",
+    "last_ingested": "2026-09-13T20:02:09Z",
+    "pages_produced": [
+      "entities/Central Strait Crossing.md",
+      "entities/Sandtable Shoal.md",
+      "entities/Sawek.md",
+      "entities/Glass Debt.md",
+      "entities/Velvet Noose.md",
+      "entities/The Bad Receipt.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/central-strait.md": {
+    "content_hash": "sha256:45a79d2035e4ffc7bac89933e37239c913ce48774f4619e6b150effb6f4ab919",
+    "last_ingested": "2026-09-13T20:02:22Z",
+    "pages_produced": [
+      "entities/Central Strait.md",
+      "entities/Central Strait Crossing.md",
+      "entities/Sandtable Shoal.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/crissdalynns-dreidel.md": {
+    "content_hash": "sha256:8f1ae1b7085649836d1a953846c11fbfd3ed5e48ea40329a1cbbe8cf19704ff3",
+    "last_ingested": "2026-09-13T20:02:40Z",
+    "pages_produced": [
+      "entities/Fate Spinner.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/crown-islands.md": {
+    "content_hash": "sha256:ad2ec1aaa4a520faa3406fa550c0eb3327ec8b627337d45b1588284d118773a5",
+    "last_ingested": "2026-09-13T20:02:40Z",
+    "pages_produced": [
+      "entities/Crown Islands.md",
+      "entities/Greyteeth.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/dead-lady-escalation.md": {
+    "content_hash": "sha256:dac7044567c5c02cf0187aeaac32fb250e123766476c204f9ecab6509e1ed664",
+    "last_ingested": "2026-09-13T20:03:12Z",
+    "pages_produced": [
+      "entities/Red Lady - Dead Lady.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/elemental-plane-of-water.md": {
+    "content_hash": "sha256:ee0d28f6477136667c556b8eebe6ce0c74ba3fdcf0a4d106e5cbfe4444d814c0",
+    "last_ingested": "2026-09-13T20:03:12Z",
+    "pages_produced": [
+      "entities/Elemental Plane of Water.md",
+      "entities/Ridgeback.md",
+      "entities/Krakling.md",
+      "entities/Algernon Reginald Clyde.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/lines.md": {
+    "content_hash": "sha256:d266a5ff66c01ac197fb2461b3c06d4d2e66e7f8160aaec41c4aeb5cf826371e",
+    "last_ingested": "2026-09-13T20:03:12Z",
+    "pages_produced": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/grigori-ascension.md": {
+    "content_hash": "sha256:c019bf16af699b4be8a9e9b1806c4792d243a7c9329fcf39e970d9a9ed809fe0",
+    "last_ingested": "2026-09-13T20:03:44Z",
+    "pages_produced": [
+      "entities/Shepherd Grigori.md",
+      "entities/Grigori and the Crown hunt.md",
+      "entities/Corvin Knighton.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/isle-of-cursed-speech.md": {
+    "content_hash": "sha256:17436be38d91f32f1e724b160927c97e6e1a5c0615ef9f2add370a362e4eef51",
+    "last_ingested": "2026-09-13T20:03:44Z",
+    "pages_produced": [
+      "entities/Halewick.md",
+      "entities/Toby.md",
+      "entities/Frankie.md",
+      "entities/Billy.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/isle-of-the-undying.md": {
+    "content_hash": "sha256:a304c8494a3ea11670f5c924778f42f0af2306db7f2bb0c9d5e407cbd1e68806",
+    "last_ingested": "2026-09-13T20:03:44Z",
+    "pages_produced": [
+      "entities/Otel Karn.md",
+      "entities/Stillmere.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/lavinia-sordi.md": {
+    "content_hash": "sha256:f00dc17576ca4638520c7d85b55d090928cdf70f364796f31ad7ee2dbc2af569",
+    "last_ingested": "2026-09-13T20:03:44Z",
+    "pages_produced": [
+      "entities/Lavinia Sordi.md",
+      "entities/La Cenere.md",
+      "entities/Ashkevet.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/midchain-east.md": {
+    "content_hash": "sha256:18f8b8fe6a3dd66ba6c5c1d4434995399869dd32bf94af8d8a54749c300bffa9",
+    "last_ingested": "2026-09-13T20:04:05Z",
+    "pages_produced": [
+      "entities/Midchain.md",
+      "entities/Amberfall.md",
+      "entities/Coeur Bris\u00e9.md",
+      "entities/Torvalline.md",
+      "entities/Lethys.md",
+      "entities/Windrow.md",
+      "entities/Thistlewick.md",
+      "entities/Nallowick.md",
+      "entities/Cambrey's Fold.md",
+      "entities/Vantry's Choice.md",
+      "entities/Rowan's Hush.md",
+      "entities/Corvenna.md",
+      "entities/Gullmoth Reach.md",
+      "entities/Vresh.md",
+      "entities/Rasalgethi.md",
+      "entities/Belumara.md",
+      "entities/Halythion.md",
+      "entities/Duskveil.md",
+      "entities/The Gilded Cage.md",
+      "entities/Wrack's End.md",
+      "entities/Ferrymoor.md",
+      "entities/Thoon Adar.md",
+      "entities/The Petrified Court.md",
+      "entities/The Unplotted.md",
+      "entities/Old Harrow's Bones.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/midchain-narration-appearance.md": {
+    "content_hash": "sha256:b4bdac0d6d5030a838f968112e9d11fca7ce5e00dff5886525f9570fe1a2e6b1",
+    "last_ingested": "2026-09-13T20:04:20Z",
+    "pages_produced": [
+      "entities/Midchain.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/midchain-south.md": {
+    "content_hash": "sha256:0abeb3a0059e3d8640c2b4afca697183a27594c10b0429cfa92417088adc9486",
+    "last_ingested": "2026-09-13T20:04:20Z",
+    "pages_produced": [
+      "entities/Midchain.md",
+      "entities/Bresk Hollow.md",
+      "entities/Corvid's Table.md",
+      "entities/Ashen Roost.md",
+      "entities/Copperlight.md",
+      "entities/Candlemere.md",
+      "entities/Enkoa.md",
+      "entities/Feyroa.md",
+      "entities/Slackwater.md",
+      "entities/Ket Solane.md",
+      "entities/Ossira.md",
+      "entities/Palutai.md",
+      "entities/Twineye.md",
+      "entities/Ravasol.md",
+      "entities/Sable Roost.md",
+      "entities/Velk Ithera.md",
+      "entities/Sump Cradle.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/midchain-west.md": {
+    "content_hash": "sha256:56b39e0f0aaa745555eef24aa25e4dc50a10a42f82e90bc87f76ca1feb4fcc88",
+    "last_ingested": "2026-09-13T20:04:36Z",
+    "pages_produced": [
+      "entities/Midchain.md",
+      "entities/Toa Kiri.md",
+      "entities/Marenui.md",
+      "entities/The Anchorless.md",
+      "entities/Roste's Landing.md",
+      "entities/Farrowmere.md",
+      "entities/Chorewick.md",
+      "entities/Sabrique.md",
+      "entities/Ossuary Cay.md",
+      "entities/Ussamet.md",
+      "entities/Marlstrand.md",
+      "entities/Ferrand's Wager.md",
+      "entities/Gallowmere.md",
+      "entities/Corallith.md",
+      "entities/Cradle Reef.md",
+      "entities/Huahei.md",
+      "entities/Kettleback.md",
+      "entities/Verrow's Cradle.md",
+      "entities/Cade's Fortune.md",
+      "entities/Whit's Larder.md",
+      "entities/The Weeping Stair.md",
+      "entities/Penance Bar.md",
+      "entities/Yevka's Folly.md",
+      "entities/Rin Dola.md",
+      "entities/The Ledger Isle.md",
+      "entities/Nine Bells.md",
+      "entities/Perrinelle.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/outer-reach.md": {
+    "content_hash": "sha256:56f5c1fbcee6e087dec54a4a4ffd8712e604e1356f16075f657c153bcf7f42b8",
+    "last_ingested": "2026-09-13T20:04:50Z",
+    "pages_produced": [
+      "entities/Outer Reach.md",
+      "entities/Sunken Crown.md",
+      "entities/Redwind Isles.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/overland-track.md": {
+    "content_hash": "sha256:ead1374203b17f9cbd9720189c17916b6e265f193bd3c29b3a22f12eabe93dc5",
+    "last_ingested": "2026-09-13T20:04:50Z",
+    "pages_produced": [
+      "entities/Overland Track.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/penance-bar-siege.md": {
+    "content_hash": "sha256:898b9f3c4d62a47b5854df2ed4d36791539f9e654fd49e33ed4e4a5a45d84cf3",
+    "last_ingested": "2026-09-13T20:05:23Z",
+    "pages_produced": [
+      "entities/Penance Bar.md",
+      "entities/Corvin Ashe.md",
+      "entities/Sula Marn.md",
+      "entities/Sorrowbell.md",
+      "entities/Penance Bar siege.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/quest-aruhe-castaways.md": {
+    "content_hash": "sha256:90d5ce7f4e6891d8adc29dd97ed7ff5b2791c19e3b1998cd6a33cae5e24d5704",
+    "last_ingested": "2026-09-13T20:05:23Z",
+    "pages_produced": [
+      "entities/Sandro.md",
+      "entities/Nino.md",
+      "entities/Aruhe - Hungry Isle.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/quest-penance-bar.md": {
+    "content_hash": "sha256:9434ef3b2f54e9ebe9200cdf028cb5dba936303477769cdee2d11a67b090b9b3",
+    "last_ingested": "2026-09-13T20:05:23Z",
+    "pages_produced": [
+      "entities/Penance Bar.md",
+      "entities/Corvin Ashe.md",
+      "entities/Sula Marn.md",
+      "entities/Halda Wren.md",
+      "entities/Penance Bar siege.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/redwind-isles.md": {
+    "content_hash": "sha256:72a5749e23c33f40e8589156dd060a17bfa2975ba30cc19ca4bb8dec0ae907f6",
+    "last_ingested": "2026-09-13T20:05:23Z",
+    "pages_produced": [
+      "entities/Redwind Isles.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/sir-quackers-the-fowl.md": {
+    "content_hash": "sha256:d654aa8549b4c1ff96ccb6d776e946479a09c84e050a04a88489d581392851d4",
+    "last_ingested": "2026-09-13T20:05:23Z",
+    "pages_produced": [
+      "entities/Sir Quackers the Fowl.md",
+      "entities/RTLB.md",
+      "entities/Yssenmoor.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/season-02-arc.md": {
+    "content_hash": "sha256:68df1741ba3ef5a406cc4a5e5e8de6ba44c77177515c0dee62c36b527a23eedc",
+    "last_ingested": "2026-09-13T20:05:55Z",
+    "pages_produced": [
+      "entities/Season 2.md",
+      "synthesis/Story So Far.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/season-02-the-open-midchain.md": {
+    "content_hash": "sha256:a9cbaa79114ae7370f4c677f03d316a0008ba6708e2c113742206ba63a3f0588",
+    "last_ingested": "2026-09-13T20:05:55Z",
+    "pages_produced": [
+      "entities/Season 2.md",
+      "entities/Tomo.md",
+      "entities/Le Paludi.md",
+      "entities/Sandro.md",
+      "entities/Nino.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/shattered-sea.md": {
+    "content_hash": "sha256:50c896d9daa952dfd3077db29b344204581233047fcd121ab4a8a00c97bbffa7",
+    "last_ingested": "2026-09-13T20:05:55Z",
+    "pages_produced": [
+      "entities/Shattered Sea.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/shelfworks-narration-appearance.md": {
+    "content_hash": "sha256:3bc8bee2d537db7cfa5279b78d4399a080b7c9a8e714d8a1c6f9d1ff4f445e00",
+    "last_ingested": "2026-09-13T20:05:55Z",
+    "pages_produced": [
+      "entities/Shelfworks.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/sin-and-sanctuary.md": {
+    "content_hash": "sha256:ee8877893665de39bd3c6c26a9a37a6f6ca25a9ea41effadf080891045390032",
+    "last_ingested": "2026-09-13T20:05:55Z",
+    "pages_produced": [
+      "entities/Sin and Sanctuary.md",
+      "entities/Penance Bar siege.md",
+      "entities/Corvin Ashe.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/sunken-crown.md": {
+    "content_hash": "sha256:e8809bdaf68d92c2ab55dd9acfb067ef6e446b134e51333ce7023474aa30d614",
+    "last_ingested": "2026-09-13T20:06:40Z",
+    "pages_produced": [
+      "entities/Sunken Crown.md",
+      "entities/Ral-Arn.md",
+      "entities/Dath-Mar.md",
+      "entities/Meth-Var.md",
+      "entities/Keth Naar.md",
+      "entities/Vel Orn.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/the-countless.md": {
+    "content_hash": "sha256:a18be2088fc044edb3120d6b7b7f614f097461b51a124aa7bdb8533046fb21a7",
+    "last_ingested": "2026-09-13T20:06:40Z",
+    "pages_produced": [
+      "entities/Countless.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/the-drowned-maw-narration-appearance.md": {
+    "content_hash": "sha256:2136b5c9c41668f304eb350d3f941b73f64ff2ece5a9aa59444aa5234d5a4044",
+    "last_ingested": "2026-09-13T20:06:40Z",
+    "pages_produced": [
+      "entities/Drowned Maw.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/the-drowned-maw.md": {
+    "content_hash": "sha256:1f1cfa354c735d2955ad89dd294841762d7bd3367ea54d896d9fc3d219e8f788",
+    "last_ingested": "2026-09-13T20:06:40Z",
+    "pages_produced": [
+      "entities/Drowned Maw.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/the-unplotted.md": {
+    "content_hash": "sha256:49565c94998e76c42b5ff7e2900a52c15f50e82f4eb0f5f3701d97cacaffdbdc",
+    "last_ingested": "2026-09-13T20:06:40Z",
+    "pages_produced": [
+      "entities/The Unplotted.md",
+      "entities/Elder Mimic.md",
+      "entities/Corallith.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/twiceborn.md": {
+    "content_hash": "sha256:0cd34b2d4843910b2861b78b545e656d48af4b98aa10988998484f0bef33ae75",
+    "last_ingested": "2026-09-13T20:06:40Z",
+    "pages_produced": [
+      "entities/Twiceborn.md",
+      "entities/Grung Color and the Sealing Rite.md",
+      "entities/Karath.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/umberlee-pearl-fissure-erosion.md": {
+    "content_hash": "sha256:4af29f3d47686d0d58002e040cd53e33460b8e0c001dfbaef73504c0750016cb",
+    "last_ingested": "2026-09-13T20:06:40Z",
+    "pages_produced": [
+      "entities/Umberlee.md",
+      "entities/Maw fissure and the tribute system.md",
+      "entities/Elemental Plane of Water.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/verdant-scatter.md": {
+    "content_hash": "sha256:e0d981d28606a50497fa9f366532274beb0243f930162efe959ceca2447dd53b",
+    "last_ingested": "2026-09-13T20:06:40Z",
+    "pages_produced": [
+      "entities/Verdant Scatter.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/verdant-teeth.md": {
+    "content_hash": "sha256:34ebbb9b15967764273c96bf923e9bcd2eb3feb21134257a35fb0440cef7607f",
+    "last_ingested": "2026-09-13T20:06:40Z",
+    "pages_produced": [
+      "entities/Verdant Teeth.md"
     ],
     "source_type": "document",
     "project": "shattered-sea"

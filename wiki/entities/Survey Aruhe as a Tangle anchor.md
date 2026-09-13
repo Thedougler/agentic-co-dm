@@ -3,6 +3,7 @@ title: Survey Aruhe as a Tangle anchor
 category: entities
 tags: [shattered-sea, aruhe]
 sources:
+  - "quest-aruhe-castaways.md"
   - "inbox/archive/FILED-2026-09-05-tessarine-concordat.md"
   - "wiki/_archive/Nona Black-Jaw.md"
 summary: Nona's owed survey of whether Aruhe can take a Passage route or must be left alone.

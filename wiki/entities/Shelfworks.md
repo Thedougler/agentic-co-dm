@@ -2,7 +2,7 @@
 title: "Shelfworks"
 category: entities
 tags: ["shattered-sea", "place"]
-sources: ["Shelfworks.md", "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md"]
+sources: ["Shelfworks.md", "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md", "shelfworks-narration-appearance.md"]
 summary: "Salvage shelf holding ruins of [[Antheri]] above the trench; feels lucrative, unstable, and older than the charts."
 provenance:
   extracted: 1.0
@@ -96,3 +96,5 @@ The Shelfworks are the Antheri salvage field on the Maw's western shelf, about f
 - The ruins are newer exhaust for a deep engine that has not fully stopped; dark alloy and living-light channels connect this salvage field to [[Mid-Works]] and [[Deep Works]].
 
 **Provenance:** Dump source 2026-09-05; legacy `/Users/nick/shattered-sea/wiki/shattered-sea/region-shelfworks.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/situation-drowned-maws-open-shelf.md`.
+
+Marker buoys and dive lines stitch the open water. Forty feet down, pale [[Antheri]] stone takes the light. Twenty metres east of the last visible wall the ruins drop into directionless blue with no floor.

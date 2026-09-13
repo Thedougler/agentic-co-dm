@@ -3,6 +3,7 @@ title: Countless
 category: entities
 tags: [shattered-sea, faction, countless, schism]
 sources:
+  - "the-countless.md"
   - "Countless.md"
 summary: "Breakaway Sentinel order that erases names from ledgers; Talons hunt Fate Spinner carriers under Vantyrus."
 provenance:
@@ -71,3 +72,5 @@ Countless bends fate for itself and ensures nothing is counted against it, hunti
 - [[Long Sight Hunt]]
 - [[Rule of Two]]
 - [[Yssenmoor]]
+
+The name The Uncounted is retired. Long Reach is the common Eldritch Claw Tattoo every Sentinel apprentice earns. Long Sight is rare and withheld. [[Crissdalynn Khinriss]] has early partial access because the [[Fate Spinner]] unlocked it and [[Master Kyzil]] never explained how far it reaches. Taken names replace Eyrie names. Power is proven by surviving your own student.
