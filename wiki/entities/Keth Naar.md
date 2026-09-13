@@ -32,7 +32,7 @@ The wash-up point for [[Perrin Black-Jaw]] after the [[Vestra]] sinking; feels l
 Perrin's account names the thing that rose under the Vestra “the Leviathan.” Whether that beast sank the vessel remains the leading account, not settled fact.
 
 ## Connections
-- → [[Vestra]] · [[Perrin Black-Jaw]] · [[Leviathan]]
+- → [[Vestra]] · [[Perrin Black-Jaw]] · Leviathan <!-- broken link: no match found -->
 
 ## Provenance
 Dump source 2026-09-05; legacy: `/Users/nick/shattered-sea/wiki/shattered-sea/creature-leviathan.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/pc-perrin-black-jaw.md`.

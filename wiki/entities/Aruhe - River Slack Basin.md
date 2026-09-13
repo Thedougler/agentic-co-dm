@@ -43,13 +43,13 @@ relationships:
 
 ---
 ## At a glance
-Slack Basin is a claimed backwater of [[Aruhe - River]] inside [[Aruhe - Grasslands]], just upvalley of [[Aruhe - River Line Bank|Line Bank]]. The live channel keeps moving over a rock lip. This scooped pool holds still. People already tried the water here and died, or they climbed out and left along the bloody bank into the trees. One inland straggler went back for a pack and is still in the slack. Stay on a ridge or grass edge and the basin can be skipped; drop to the wet sand and it remains slack water, remains that do not wash away, a living person at the hanging roots, and a forest-edge detour onto [[Aruhe - Quiet Forest Cutoff Lip]]. Downstream returns to Line Bank. [[Aruhe - River Otter|River Otters]] own this cut.
+Slack Basin is a claimed backwater of [[Aruhe - River]] inside [[Aruhe - Grasslands]], just upvalley of [[Aruhe - River - Line Bank|Line Bank]]. The live channel keeps moving over a rock lip. This scooped pool holds still. People already tried the water here and died, or they climbed out and left along the bloody bank into the trees. One inland straggler went back for a pack and is still in the slack. Stay on a ridge or grass edge and the basin can be skipped; drop to the wet sand and it remains slack water, remains that do not wash away, a living person at the hanging roots, and a forest-edge detour onto [[Aruhe - Quiet Forest Cutoff Lip]]. Downstream returns to Line Bank. [[Aruhe - River Otter|River Otters]] own this cut.
 
 ---
 ## If the party
 
 - **Follow the blood trail into the trees:** The living prints leave this water and climb onto [[Aruhe - Quiet Forest Cutoff Lip]].
-- **Walk back downstream:** [[Aruhe - River Line Bank|Line Bank]].
+- **Walk back downstream:** [[Aruhe - River - Line Bank|Line Bank]].
 - **Stay on a ridge or grass edge and skip the basin:** The slack, the remains, the isolated person, and the bloody-bank detour are lost.
 - **Walk the eight-foot grass:** The grass is Difficult Terrain and heavily obscures beyond 10 feet. Movement leaves a crushed corridor. The otters do not chase far overland.
 - **Search the cane, smear, and prints:** **Intelligence (Investigation) or Wisdom (Perception) — `DC 10`** → The cane is planted in the smear at the waterline, and living prints leave the slack with the blood into the trees. Searching them does not name how many people died or what the pack holds. Failure → The searcher spends time at the smear and learns only that the climb-out is fresh.
@@ -78,10 +78,10 @@ Slack Basin is a claimed backwater of [[Aruhe - River]] inside [[Aruhe - Grassla
 ---
 ## Where
 
-- Grasslands river site upvalley of [[Aruhe - River Line Bank|Line Bank]]
+- Grasslands river site upvalley of [[Aruhe - River - Line Bank|Line Bank]]
 - Bloody-bank detour inland onto [[Aruhe - Quiet Forest Cutoff Lip]]
 - The live channel continues upvalley through [[Aruhe - Grasslands]] along [[Aruhe - River]]
-- Downstream to [[Aruhe - River Line Bank|Line Bank]], then [[Aruhe - Grasslands Torn Crossing]], then [[Aruhe - River Landing Bank]]
+- Downstream to [[Aruhe - River - Line Bank|Line Bank]], then [[Aruhe - Grasslands Torn Crossing]], then [[Aruhe - River Landing Bank]]
 - Smoke inland in this same valley, not a place on this basin
 
 ---

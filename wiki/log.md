@@ -195,4 +195,45 @@ title: Wiki Log
 - [2026-09-13T19:23:43Z] COPY_ASSETS source="/Users/nick/Documents/ai-co-dm/attachments/shattered-sea" destination="wiki/attachments" copied=59
 - [2026-09-13T19:23:43Z] LINK_REPAIR paths="wiki/_archive, wiki/templates" reason="resolved all broken image embeds; preserved existing asset formats and replaced template placeholders with optional-art comments"
 - [2026-09-13T19:29:06Z] COPY_ASSETS source="wiki/attachments" destination="wiki/attachments/shattered-sea" copied=6 reason="made every explicit attachments/shattered-sea embed resolve at its literal vault path"
+- [2026-09-13T19:30:00Z] INGEST source="wiki/_raw/00 Shattered Sea.md" pages_updated=1 pages_created=6 mode=append
+- [2026-09-13T19:30:00Z] ARCHIVE_RAW source="wiki/_raw/00 Shattered Sea.md" destination="wiki/_archive/00 Shattered Sea.md" pages=7
+- [2026-09-13T19:31:09Z] DEDUP merge secondary="entities/Bloodhawk.md" into="entities/Aruhe - Bloodhawk.md" reason="duplicate title Bloodhawk; orphan secondary; bodies identical" redirect_stub=true index_deduped=1
+- [2026-09-13T19:35:00Z] INGEST source="wiki/_raw/00 Story so far.md" pages_updated=1 pages_created=18 mode=append
+- [2026-09-13T19:35:00Z] ARCHIVE_RAW source="wiki/_raw/00 Story so far.md" destination="wiki/_archive/00 Story so far.md" pages=19
 - [2026-09-13T19:37:44Z] INGEST source="wiki/_raw/Session-11-00-Birds-of-a-Feather.md" pages_updated=1 pages_created=0 mode=append note="rewrote the preserved spine as the session-plan template and linked all ten live beats"
+- [2026-09-13T19:40:00Z] INGEST source="wiki/_raw/Aleksander Malone.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-13T19:40:00Z] ARCHIVE_RAW source="wiki/_raw/Aleksander Malone.md" destination="wiki/_archive/Aleksander Malone.md" pages=1
+- [2026-09-13T19:45:00Z] INGEST source="wiki/_raw/Antheri.md" pages_updated=0 pages_created=2 mode=append
+- [2026-09-13T19:45:00Z] ARCHIVE_RAW source="wiki/_raw/Antheri.md" destination="wiki/_archive/Antheri.md" pages=2
+- [2026-09-13T19:50:00Z] INGEST source="wiki/_raw/Chain Council.md" pages_updated=1 pages_created=3 mode=append
+- [2026-09-13T19:50:00Z] ARCHIVE_RAW source="wiki/_raw/Chain Council.md" destination="wiki/_archive/Chain Council.md" pages=4
+- [2026-09-13T19:55:00Z] INGEST source="wiki/_raw/Countless.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T19:55:00Z] ARCHIVE_RAW source="wiki/_raw/Countless.md" destination="wiki/_archive/Countless.md" pages=1
+- [2026-09-13T19:55:00Z] LINT/DEDUP/FIX session11_fm=12 random_tables_type=session-prep broken_rewrites=303 files=52+ index_session11=12 bloodhawk_stub_skipped=1 river_fm_repaired=1 before_broken_uniq=210 after_broken_uniq=0 before_missing_fm=11 after_missing_fm=1(stub) report=/workspace/wiki-fix-report.md
+- [2026-09-13T20:00:00Z] INGEST source="wiki/_raw/Dravosi Crown.md" pages_updated=1 pages_created=3 mode=append
+- [2026-09-13T20:00:00Z] ARCHIVE_RAW source="wiki/_raw/Dravosi Crown.md" destination="wiki/_archive/Dravosi Crown.md" pages=4
+- [2026-09-13T20:05:00Z] INGEST source="wiki/_raw/Dravosi Deckhand.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T20:05:00Z] ARCHIVE_RAW source="wiki/_raw/Dravosi Deckhand.md" destination="wiki/_archive/Dravosi Deckhand.md" pages=1
+- [2026-09-13T20:10:00Z] INGEST source="wiki/_raw/Grung Elite Warrior.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T20:10:00Z] ARCHIVE_RAW source="wiki/_raw/Grung Elite Warrior.md" destination="wiki/_archive/Grung Elite Warrior.md" pages=1
+- [2026-09-13T20:15:00Z] INGEST source="wiki/_raw/Rattkin Runs and Black-Jaw Run.md" pages_updated=0 pages_created=2 mode=append
+- [2026-09-13T20:15:00Z] ARCHIVE_RAW source="wiki/_raw/Rattkin Runs and Black-Jaw Run.md" destination="wiki/_archive/Rattkin Runs and Black-Jaw Run.md" pages=2
+- [2026-09-13T20:20:00Z] INGEST source="wiki/_raw/Sentinels of the Eyrie.md" pages_updated=0 pages_created=5 mode=append
+- [2026-09-13T20:20:00Z] ARCHIVE_RAW source="wiki/_raw/Sentinels of the Eyrie.md" destination="wiki/_archive/Sentinels of the Eyrie.md" pages=5
+- [2026-09-13T20:25:00Z] INGEST source="wiki/_raw/Sunkline.md" pages_updated=0 pages_created=4 mode=append
+- [2026-09-13T20:25:00Z] ARCHIVE_RAW source="wiki/_raw/Sunkline.md" destination="wiki/_archive/Sunkline.md" pages=4
+- [2026-09-13T20:30:00Z] INGEST source="wiki/_raw/Tangle.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T20:30:00Z] ARCHIVE_RAW source="wiki/_raw/Tangle.md" destination="wiki/_archive/Tangle.md" pages=1
+- [2026-09-13T20:35:00Z] INGEST source="wiki/_raw/Tessarine Concordat.md" pages_updated=2 pages_created=8 mode=append
+- [2026-09-13T20:35:00Z] ARCHIVE_RAW source="wiki/_raw/Tessarine Concordat.md" destination="wiki/_archive/Tessarine Concordat.md" pages=10
+- [2026-09-13T20:40:00Z] INGEST source="wiki/_raw/The Gold-Caste Serene.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-13T20:40:00Z] ARCHIVE_RAW source="wiki/_raw/The Gold-Caste Serene.md" destination="wiki/_archive/The Gold-Caste Serene.md" pages=1
+- [2026-09-13T20:45:00Z] INGEST source="wiki/_raw/Thunk.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-13T20:45:00Z] ARCHIVE_RAW source="wiki/_raw/Thunk.md" destination="wiki/_archive/Thunk.md" pages=1
+- [2026-09-13T20:50:00Z] INGEST source="wiki/_raw/Umberlee.md" pages_updated=1 pages_created=4 mode=append
+- [2026-09-13T20:50:00Z] ARCHIVE_RAW source="wiki/_raw/Umberlee.md" destination="wiki/_archive/Umberlee.md" pages=5
+- [2026-09-13T20:55:00Z] INGEST source="wiki/_raw/Voyvode.md" pages_updated=0 pages_created=3 mode=append
+- [2026-09-13T20:55:00Z] ARCHIVE_RAW source="wiki/_raw/Voyvode.md" destination="wiki/_archive/Voyvode.md" pages=3
+- [2026-09-13T21:00:00Z] INGEST source="wiki/_raw/Waveservants.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T21:00:00Z] ARCHIVE_RAW source="wiki/_raw/Waveservants.md" destination="wiki/_archive/Waveservants.md" pages=1
+- [2026-09-13T19:47:14Z] LINT_FIX restored links for Deerstalker→[[Deer-Stalker]] (prior false archive-only demotion; live page entities/Deer-Stalker.md)

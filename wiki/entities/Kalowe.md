@@ -46,18 +46,18 @@ Three reef-linked islets joined by stone bridges, ringed by reef with one naviga
 ## Connections
 - → [[Midchain]]
 - → [[Central Strait]] via pilot routes
-- → [[Penance Bar]] · [[Ashkevet]] · [[Sabrique]]
+- → Penance Bar <!-- broken link: no match found --> · Ashkevet <!-- broken link: no match found --> · Sabrique <!-- broken link: no match found -->
 
 ## Hooks
 - Take a paying hull through the one navigable gap without answering Crown papers.
-- Find out what still rings the yard bell at [[Ashkevet]].
+- Find out what still rings the yard bell at Ashkevet <!-- broken link: no match found -->.
 - Decide what the Chain Council's refusal to seat a ruler costs during a crisis.
 
 ## Secrets (DM)
 Kalowe's free-port posture is practical rather than empty of power: pilots, the Chain Council, and the shrine each control a different part of arrival. The exact fort hierarchy remains open.
 
 ## Legacy continuity
-After the *[[Red Lady - Dead Lady]]* sank, [[Master Kyzil]] tracked current and weather and searched Kalowe and [[Tidefall]] before finding [[Crissdalynn Khinriss]] in [[Calveno]].
+After the *[[Red Lady - Dead Lady]]* sank, [[Master Kyzil]] tracked current and weather and searched Kalowe and Tidefall <!-- broken link: no match found --> before finding [[Crissdalynn Khinriss]] in Calveno <!-- broken link: no match found -->.
 
 ## Waveservant shrine
 The shrine is a stone niche in the causeway wall at the reef-gap, under a salvaged timber roof. Every hull through the gap passes within reach of its basin; one attendant knows ships by what they owe. The [[Chain Council]] has been raising Kalowe's tribute to buy silence about the Pearl theft, which only teaches the clergy who else belongs on the ledger.

@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-09-13T07:50:00Z*
+*This index is automatically maintained. Last updated: 2026-09-13T21:00:00Z*
 ## Concepts
 
 *No pages yet.*
@@ -31,17 +31,17 @@ title: Wiki Index
 - [[HCS Ordinance]] — Crown warship listed by the source as a related vessel to HCS Sovereign. ( #shattered-sea #vehicle #ship #crown)
 - [[Harwick]] — Place identified by the source as the build site and berth of HCS Sovereign. ( #shattered-sea #place #crown)
 - [[Crown Islands]] — Region identified by the source as HCS Sovereign's operating region. ( #shattered-sea #region #crown)
-- [[Dravosi Crown]] — Crown faction whose visible authority includes HCS Sovereign and whose heresy arm hunts confirmed Flock infiltration. ( #shattered-sea #faction #crown )
+- [[Dravosi Crown]] — Tethyr colonial court and naval service in the Verdant Scatter; HCS hulls, inspection law, and Malone for confirmed heresy. ( #shattered-sea #faction #crown )
 - [[Khlysty - the Flock]] — Ecstatic Otel Karn tradition that treats flesh as spirit's vehicle and spreads blood anchors through noble houses. ( #shattered-sea #faction #khlysty #flock #heresy )
 - [[Otel Karn]] — Island root and original context of the Khlysty, or Flock, tradition. ( #shattered-sea #place #otel-karn )
 - [[Shepherd Grigori]] — Korabl of the Flock who believes he authored its blood-anchor survival trick. ( #shattered-sea #npc #khlysty )
 - [[Otho]] — Archfey source of the old teaching on Otel Karn, whose bargain shaped the Flock's hidden origin. ( #shattered-sea #npc #archfey #khlysty )
-- [[Aleksander Malone]] — Hound of Tyr reserved by the Crown for confirmed Flock infiltration. ( #shattered-sea #npc #dravosi-crown )
-- [[Tessarine Concordat]] — Named power in Grigori's intended network of blood anchors. ( #shattered-sea #faction #tessarine-concordat )
-- [[Chain Council]] — Named power in Grigori's intended network of blood anchors. ( #shattered-sea #faction #chain-council )
+- [[Aleksander Malone]] — Hound of Tyr reserved by the Crown for confirmed Flock infiltration; CR 14 fight sheet on the NPC page. ( #shattered-sea #npc #dravosi-crown)
+- [[Tessarine Concordat]] — Eastern mercantile colonial power that holds the Scatter with paper, debt, and courtesy that is always a contract. ( #shattered-sea #faction #tessarine-concordat )
+- [[Chain Council]] — Midchain political council that masks Pearl-control interests; commissioned Delmar Fisk's five-ship theft from Vel Orn. ( #shattered-sea #faction #chain-council)
 - [[Red Lady - Dead Lady]] — Raised wreck serving Umberlee's Red Wake, with a Gargantuan hull that takes boats and changes familiar lanes. ( #shattered-sea #vehicle #ship #red-wake)
 - [[Drowned Maw]] — Maritime place tied by the source to the Red Lady's sinking, routes, and moving wake. ( #shattered-sea #place #sea)
-- [[Umberlee]] — Deity whose Red Wake uses the raised Dead Lady as a collection hull. ( #shattered-sea #lore #deity)
+- [[Umberlee]] — The sea as it is: tribute theology, Pearl frustration at the Maw boundary, and the Dead Lady as collection hull. ( #shattered-sea #lore #deity)
 - [[Red Wake]] — Moving maritime pressure marked by a red wake and expressed through the Dead Lady's collection route. ( #shattered-sea #lore #sea)
 - [[Crissdalynn Khinriss]] — Survivor who pulled Delmar Fisk from the Red Lady's crow's nest when his fleet sank. ( #shattered-sea #npc #survivor)
 - [[Rael Corven]] — Person identified by the source as aboard the original Red Lady during the fleet's sinking. ( #shattered-sea #npc #fleet)
@@ -59,7 +59,6 @@ title: Wiki Index
 - [[Aruhe - Beach|Western Landing]] — Aruhe's known sea approach: a reef gap, a short shingle beach, and a retreat that depends on tide and surf. ( #shattered-sea #place #aruhe #landing )
 - [[Aruhe - Clear Lake]] — Calm inland crater basin with otters, clear shallows, and routes toward the River and Grove. ( #shattered-sea #place #aruhe #lake )
 - [[Aruhe - Grasslands]] — Hot river-cut valleys of tall grass where water, cover, and predators force exposed choices. ( #shattered-sea #place #aruhe #grasslands )
-- [[Bloodhawk]] — CR 11 adult aerial skirmisher that telegraphs a stoop, seizes exposed prey, and breaks off when cover denies its dive. ( #shattered-sea #creature #aruhe)
 - [[Aruhe - Reef Skull]] — Dog-sized hermit crabs that live in hull pieces or skulls and bury themselves in Aruhe's western shingle. ( #shattered-sea #creature #aruhe)
 - [[Taking on Aruhe]] — Taking a living plant, animal, or claim on Aruhe draws surrounding life into hostility. ( #shattered-sea #lore #aruhe)
 - [[Young Bloodhawk]] — CR 2 juvenile aerial skirmisher that drives exposed prey into an adult Bloodhawk's hunting line. ( #shattered-sea #creature #aruhe #aerial #juvenile)
@@ -69,7 +68,7 @@ title: Wiki Index
 - [[Hinewai]] — Elf druid lich fused to Aruhe after escaping Karath; her grief became the island's law. ( #shattered-sea #npc #aruhe)
 - [[Talon Skarn]] — Countless peregrine apprentice and CR 13 flying skirmisher; his stoop-and-chain combat kit supports the Rule of Two rivalry with Talon Vantyrus. ( #shattered-sea #npc)
 - [[Nona Black-Jaw]] — Calveno host and Passage route face who turns safehouse access and favors into practical work for the Black-Jaw Run. ( #shattered-sea #npc)
-- [[Thunk]] — Orc ship gunner and field smith aboard Uncertainty; his 1,000 gp cannon order leaves the crew with an unresolved debt. ( #shattered-sea #npc)
+- [[Thunk]] — Orc ship gunner and field smith aboard Uncertainty; CR 1/4 fight sheet on the NPC page. ( #shattered-sea #npc)
 - [[The Unnamed Companion]] — The drowned man Hinewai buried on Aruhe; his grave became the reason for the island's law. ( #shattered-sea #npc #aruhe)
 - [[Talon Vantyrus]] — Countless master [[Talon Skarn]] is trying to kill under the Rule of Two. ( #shattered-sea #npc)
 - [[Perrin Black-Jaw]] — Nona's grandson and surveyor; he owes an Aruhe survey and carries a sending stone. ( #shattered-sea #npc)
@@ -103,7 +102,7 @@ title: Wiki Index
 - [[Simone]] — Purple Grung officer who holds the Sorn garrison, sells toxin, and hunts her brother Jean-Claude. ( #shattered-sea #npc)
 - [[Jean-Claude Tabarnack]] — Blue Grung from Botukuri whose red beret marks censure and whose sister Simone still hunts him. ( #shattered-sea #npc)
 - [[Gold Caste Serene]] — Fiction-layer name for the serene gold authority associated with Grung faith and decrees. ( #shattered-sea)
-- [[The Gold-Caste Serene]] — Existing Grung encounter-sheet name for the unlookable gold presence; this source adds no new creature math. ( #shattered-sea)
+- [[The Gold-Caste Serene]] — CR 30 unlookable gold Grung presence with Certainty Ward; fight sheet on the creature page. ( #shattered-sea #creature)
 - [[Veth]] — Largest Verdant Teeth island, with a western beach trade strip and blue intermediaries but no pier. ( #shattered-sea #place)
 - [[Sorn]] — Verdant Teeth farm heart where Botukuri uses seasonal flood-pulse lanes and Simone holds a guarded beach. ( #shattered-sea #place)
 - [[Karath]] — Raid and hatchery island where captives, tannin rivers, and hidden gold reagent farms support the Grung interior. ( #shattered-sea #place)
@@ -136,7 +135,7 @@ title: Wiki Index
 - [[Galewall]] — Permanent storm belt separating charted homeland from the Scatter; feels like weather made into a wall. ( #shattered-sea #region)
 - [[Greyteeth]] — Long pale reef ridges breaking the surface between the Crown Islands; three generations of charts have failed to make them ordinary water. ( #shattered-sea #region #reef #crown-islands #secret-arrangement)
 - [[Halewick]] — Southern Midchain fishing island where a planar alignment landed on the line between Common and Truespeak about three weeks ago; feels ordinary, wrong, and locally unrecognized. ( #shattered-sea #place #halewick #truespeak #pearl-signal)
-- [[High Eyrie]] — A basalt stack beyond the eastern Crown chain, held by the [[Sentinels of the Eyrie]] for two hundred years and overlooking the [[Drowned Maw]]. ( #shattered-sea #place #sentinel #schism #crown-islands)
+- [[High Eyrie]] — A basalt stack beyond the eastern Crown chain, held by the Sentinels of the Eyrie <!-- broken link: no match found --> for two hundred years and overlooking the [[Drowned Maw]]. ( #shattered-sea #place #sentinel #schism #crown-islands)
 - [[Kalowe]] — Three reef-linked islets joined by stone bridges, ringed by reef with one navigable gap; feels crowded, practical, and deliberately unpapered. ( #shattered-sea #place #free-port)
 - [[Keth Naar]] — The wash-up point for [[Perrin Black-Jaw]] after the [[Vestra]] sinking; feels like a survivor's shore and an unreliable witness. ( #shattered-sea #place #keth-naar #vestra #perrin)
 - [[Mid-Works]] — Antheri residential tier from 200\u2013500 feet below the Maw shelf; feels sealed, pressurized, and built for bodies that did not need floors or air. ( #shattered-sea #place #maw #antheri #mid-works)
@@ -144,14 +143,14 @@ title: Wiki Index
 - [[Outer Reach]] — Water past the [[Drowned Maw]], with no resupply or pilot-trusted landmark; feels directionless, reversing, and unwilling to finish a story. ( #shattered-sea #region #outer-reach)
 - [[Sanvashti]] — Sanvashti is a mossed terrace in the Southern Midchain where rival Grung clans meet under an old truce. It feels less like neutral ground than a promise everyone is afraid to break. ( #shattered-sea #place #midchain #grung #truce)
 - [[Sarn's Landing]] — A small Crown Islands fishing village where [[Aleksander Malone]] was once loosed in public. The results were ugly enough to change Crown policy: Malone now requires formal heresy confirmation before  ( #shattered-sea #place #crown-islands #malone)
-- [[Shattered Sea]] — A roughly 60,000-square-mile archipelago weeks beyond the last charted Faer\u00fbn coast; two island arcs and a shipping corridor make every crossing a negotiation. Feels remote, exposed, and politically u ( #shattered-sea #region)
+- [[Shattered Sea]] — Roughly 60,000 square miles south of Chult; Season 2 pressure sits at Aruhe after Sparhold while major powers claim the sea. ( #shattered-sea #region)
 - [[Sorn Guarded Beach]] — Sorn's held landing and Simone's post. The last hundred yards are recut as policy; the interior is not open. ( #shattered-sea #place #grung #beach #sorn)
 - [[Sparhold Isle]] — A half-mile cut-over islet at the southern lip of the Northern Midchain strip; feels timber-poor, fortified, and close to the Teeth. ( #shattered-sea #place #midchain #sparhold)
 - [[Sparhold]] — The next stop on the raiding-fleet trail; details remain open. The settlement is a place to ask where the taken went while every answer can make someone richer, safer, or more exposed. ( #shattered-sea #place)
 - [[Stenmark]] — The easternmost Crown island: stone cliffs, cold deep water, a harbour face, thin farmland, and a signal station watching the discoloured water where the [[Drowned Maw]] begins. ( #shattered-sea #region #crown-islands #cold-water #watch)
 - [[Tail]] — The eastern pinch where both arcs become fewer, taller islands and cold trench-coloured water; feels like land narrowing into a warning. ( #shattered-sea #region #tail #maw)
 - [[Vault of the First Factor]] — An uncharted limestone spire in the Midchain jungle, said to hold collateral that outlived the debtors who left it. The place is unconfirmed and unmapped. ( #shattered-sea #place #tessarine #vault #midchain)
-- [[Vel Orn]] — On Vel Orn in the [[Sunken Crown]], five small islands ring the [[Blue Hole]]. Umberlee's older house is cut into black cliff stone, reachable only when the surge is timed and the approach is known. I ( #shattered-sea #place #shrine #waveservants #umberlee)
+- [[Vel Orn]] — On Vel Orn in the Sunken Crown <!-- broken link: no match found -->, five small islands ring the Blue Hole <!-- broken link: no match found -->. Umberlee's older house is cut into black cliff stone, reachable only when the surge is timed and the approach is known. I ( #shattered-sea #place #shrine #waveservants #umberlee)
 - [[Verdant Scatter]] — The inhabited chain between the Galewall/Ashwalls and the Tail/Maw, with Crown water north and Midchain south; feels crowded, green, and only partly charted. ( #shattered-sea #region #scatter)
 - [[Yssenmoor]] — A place over a hidden ley line that reacts to [[Fate Spinner]]; feels like an unresolved point of contact between old power and a watchful relic. ( #shattered-sea #place #ley-line #sentinel)
 - [[Mercatura]] — Functioning city where Solange Barret's ritual ran beneath; Otar's defeat and the bombs are a closed Season 1 thread. ( #shattered-sea #place #city)
@@ -160,6 +159,84 @@ title: Wiki Index
 - [[Vestra]] — Family brig built and captained by Vincenzo Black-Jaw; something massive rose and took it. ( #shattered-sea #vehicle #ship)
 - [[Vincenzo Black-Jaw]] — Builder and captain of the family brig Vestra. ( #shattered-sea #npc)
 - [[Survey Aruhe as a Tangle anchor]] — Nona's owed survey of whether Aruhe can take a Passage route or must be left alone. ( #shattered-sea #aruhe)
+
+- [[Bring the Pearl of Souls to Umberlee]] — Open quest to bring the Pearl of Souls to Umberlee as the outstanding divine price. ( #shattered-sea #quest)
+- [[Complete the Maw map pilgrimage]] — Open quest to complete the Maw map pilgrimage tied to Sentinel duty and the Drowned Maw. ( #shattered-sea #quest)
+- [[Grigori and the Crown hunt]] — Open quest covering Shepherd Grigori and the Crown hunt pressure around Flock infiltration. ( #shattered-sea #quest)
+- [[Sentinels and Countless]] — Open quest tracking the Sentinel schism pressure and Countless interest in the seal. ( #shattered-sea #quest)
+- [[Pearl signal across the boundary]] — Open quest about a Pearl signal across the Maw boundary. ( #shattered-sea #quest)
+- [[Catarina Da'Virelli]] — Player character at the Shattered Sea table, played by Kaitlin. ( #shattered-sea #npc #pc)
+
+- [[Geoffrey Draves]] — First hand recruited when the crew took the Crown cutter Surety. ( #shattered-sea)
+- [[Barnaby Rook]] — Boarded the Crown cutter Surety during the Saltwright fight. ( #shattered-sea)
+- [[Ket]] — Freed by the crew to fly home toward Murrat after the Surety boarding. ( #shattered-sea)
+- [[Master Kyzil]] — Entered the chase around Calveno and the Sentinel schism. ( #shattered-sea)
+- [[Branca]] — Taken by Umberlee when the Pearl of Souls demand became explicit. ( #shattered-sea)
+- [[Iacopo Fieschi]] — Named the crew Calveno's Defenders on Tessarine paper after Otar fell. ( #shattered-sea)
+- [[Rupert Knighton]] — Issued evacuation orders before the Mercatura collapse that did not reach Fieschi. ( #shattered-sea)
+- [[Osset]] — Alias of Talon Vantyrus named on the Snap page and by Nightmantle's seller. ( #shattered-sea)
+- [[Nightmantle]] — Item whose seller, Lavinia Sordi, named Osset a second time. ( #shattered-sea)
+- [[Lavinia Sordi]] — Seller of Nightmantle who named Osset a second time. ( #shattered-sea)
+- [[Zort]] — Armless contact who offered a Midchain reptile lead for a prosthetic. ( #shattered-sea)
+- [[Roka Sten]] — Midchain reptile contact in Sparhold for Zort's prosthetic lead. ( #shattered-sea)
+- [[Corbin Knighton]] — Commanded HCS Ordinance when it intercepted Uncertainty under merchant cover. ( #shattered-sea)
+- [[HCS Surety]] — Crown cutter the crew took and later renamed Uncertainty. ( #shattered-sea)
+- [[Long Sight Hunt]] — Live pressure through which Countless and the Sentinel schism pursue Fate Spinner carriers. ( #shattered-sea)
+- [[Rule of Two]] — Live schism pressure between Skarn and Vantyrus with Crissdalynn in the crossfire. ( #shattered-sea)
+- [[Countless through the Maw seal]] — Live pressure as Vantyrus and Countless probe the Maw seal. ( #shattered-sea)
+
+- [[Antheri]] — Vanished builders of a Maw western-wall city and Water-plane route; ruins and salvage remain at Shelfworks. ( #shattered-sea #faction #maw)
+- [[Maw fissure and the tribute system]] — Pressure clock: tribute and the Pearl may be holding the Drowned Maw fissure shut. ( #shattered-sea #quest)
+
+- [[Fisk's Captains]] — Captains commissioned with Delmar Fisk on the five-ship Pearl theft. ( #shattered-sea)
+- [[Cosimo Verantio]] — Hidden principal behind a Chain Council signatory for the Tessarine Concordat. ( #shattered-sea)
+- [[Aldric Drave]] — Real target of the Pearl theft that the Chain Council did not know it served. ( #shattered-sea)
+
+- [[Countless]] — Breakaway Sentinel order that erases names from ledgers; Talons hunt Fate Spinner carriers under Vantyrus. ( #shattered-sea #faction #countless #schism)
+
+- [[Governor Voss]] — Crown governor whose orders never covered the Fort Crestwall detachments. ( #shattered-sea #dravosi-crown)
+- [[Aldous Draves]] — Draves-branch relative who placed Geoffrey Draves. ( #shattered-sea #dravosi-crown)
+- [[Fort Crestwall]] — Fort whose sealed vaults hold Aldric Drave's living bloodline chart. ( #shattered-sea #dravosi-crown)
+
+- [[Dravosi Deckhand]] — CR 1/8 Crown shiphand with Sea Legs, cutlass, hand crossbow, and an Alert Call reaction. ( #shattered-sea #creature #dravosi-crown)
+
+- [[Grung Elite Warrior]] — CR 2 Small grung warrior with poisonous skin, standing leap, poisoned weapons, and Mesmerizing Chirr. ( #shattered-sea #creature #grung)
+
+- [[Rattkin Runs and Black-Jaw Run]] — Rattkin family Runs that move people by coded trust; Nona and Perrin Black-Jaw are the visible faces. ( #shattered-sea #faction)
+- [[Rattkin]] — People whose family Runs stay connected through coded trust, couriers, and the Black-Jaw Run. ( #shattered-sea #lore)
+
+- [[Sentinels of the Eyrie]] — Aarakocra monks at High Eyrie who watch the Drowned Maw and record without conclusion; schism birthed Countless. ( #shattered-sea #faction #sentinel)
+- [[Schism's Third Name]] — Named Sentinel-linked pressure or technique from the Sentinels dump. ( #shattered-sea)
+- [[Soul Incarnate's Watch]] — Named Sentinel-linked pressure or technique from the Sentinels dump. ( #shattered-sea)
+- [[Long Reach]] — Named Sentinel-linked pressure or technique from the Sentinels dump. ( #shattered-sea)
+- [[Long Sight]] — Named Sentinel-linked pressure or technique from the Sentinels dump. ( #shattered-sea)
+
+- [[Sunkline]] — Tessarine-funded salvage company commercializing Mid-Works while hiding a forged mid-shelf trial certificate. ( #shattered-sea #faction #sunkline)
+- [[Adriana Tarquine]] — Sunkline chief engineer. ( #shattered-sea #npc)
+- [[Yevgenia Sorrel]] — Sunkline store face. ( #shattered-sea #npc)
+- [[Petera Ngata]] — Keeps Sunkline's complete death list. ( #shattered-sea #npc)
+
+- [[Tangle]] — Elder teaching and proposed anchor referenced by the Rattkin Runs; Aruhe is a survey site. ( #shattered-sea #faction #lore)
+
+- [[Detto Kalash]] — Named Tessarine face, craft, or house from the Concordat dump. ( #shattered-sea #tessarine)
+- [[Oriana Becht]] — Named Tessarine face, craft, or house from the Concordat dump. ( #shattered-sea #tessarine)
+- [[Estratto]] — Named Tessarine face, craft, or house from the Concordat dump. ( #shattered-sea #tessarine)
+- [[Maret]] — Named Tessarine face, craft, or house from the Concordat dump. ( #shattered-sea #tessarine)
+- [[Samuel]] — Named Tessarine face, craft, or house from the Concordat dump. ( #shattered-sea #tessarine)
+- [[Amberreach]] — Named Tessarine face, craft, or house from the Concordat dump. ( #shattered-sea #tessarine)
+- [[Silkvane]] — Named Tessarine face, craft, or house from the Concordat dump. ( #shattered-sea #tessarine)
+- [[Tessarine Trade House]] — Named Tessarine face, craft, or house from the Concordat dump. ( #shattered-sea #tessarine)
+
+- [[Umberlee - Branca]] — Named from the Umberlee dump. ( #shattered-sea)
+- [[Tithe of the Bitch Queen]] — Named from the Umberlee dump. ( #shattered-sea)
+- [[Valkur]] — Named from the Umberlee dump. ( #shattered-sea)
+- [[Leviathan]] — Named from the Umberlee dump. ( #shattered-sea)
+
+- [[Voyvode]] — Crown-backed Fathomrush salvage rival that runs open honest pressure-rig trials against Sunkline's fraud. ( #shattered-sea #faction #voyvode)
+- [[Branimir Karsovine]] — Named Voyvode face. ( #shattered-sea #npc)
+- [[Marta Kessler]] — Named Voyvode face. ( #shattered-sea #npc)
+
+- [[Waveservants]] — Umberlee's harbour clergy who collect tribute at the same rate from every flag and keep the ledger neutral. ( #shattered-sea #faction #waveservants)
 ## Skills
 
 *No pages yet.*
@@ -170,7 +247,7 @@ title: Wiki Index
 
 ## Synthesis
 
-- [[Story So Far]] — Sessions 01–10 from the Saltwright hold to Aruhe; Umberlee still wants the Pearl. ( #shattered-sea #recap)
+- [[Story So Far]] — Sessions 01–10 from the Saltwright hold to Aruhe; Season 1 is closed and Season 2's live handle is the Hungry Isle. ( #shattered-sea #recap)
 
 ## Journal
 
@@ -185,14 +262,14 @@ title: Wiki Index
 - [[Session 09 - Recap]] — Uncertainty left for Sparhold; HCS Ordinance boarded under merchant cover. ( #shattered-sea #recap #session)
 - [[Session 10 - Recap]] — Grigori warned of a Fate Spinner hunt; Aruhe has two survivors aboard. ( #shattered-sea #recap #session)
 - [[Session-11-00-Birds-of-a-Feather|Session 11 - Birds of a Feather]] — Accepted session plan linking the ten-beat inland hunt, survivor camp, borrowed voice, and Fate Spinner theft. ( #shattered-sea #session-prep #session-plan )
-- [[Session 11 - Angry Birds]] — Opening aerial escape from an adult Bloodhawk hunting the Crown Squid. ( #shattered-sea #session-prep )
-- [[Session 11 - Landing sign and smoke]] — Development beat following fresh survivor tracks and smoke upriver toward Torn Crossing. ( #shattered-sea #session-prep )
-- [[Session 11 - Torn Crossing hunt]] — Ecological hunt where wolfrabbits and a Spiguar punish isolated movement. ( #shattered-sea #session-prep )
-- [[Session 11 - What they ate]] — Clue beat distinguishing safe fallen food from claimed living plants and fish. ( #shattered-sea #session-prep )
-- [[Session 11 - Rescue at the otter hole]] — Slack Basin rescue obstacle involving otters, a separated survivor, and a dangerous game. ( #shattered-sea #session-prep )
-- [[Session 11 - The farthest camp]] — Survivor camp debate over returning to Uncertainty or following the garden invitation. ( #shattered-sea #session-prep )
-- [[Session 11 - False help]] — Borrowed-voice ambush that tests whether the party isolates a body at night. ( #shattered-sea #session-prep )
-- [[Session 11 - Night watch]] — Preparation beat where actual precautions determine the watch's opening advantage. ( #shattered-sea #session-prep )
-- [[Session 11 - Theft on the watch]] — Climax in which Talon Skarn makes a committed attempt to steal the Fate Spinner. ( #shattered-sea #session-prep )
-- [[Session 11 - Aftermath]] — Resolution covering the theft outcome, hawk pursuit, survivors, and the garden invitation. ( #shattered-sea #session-prep )
-- [[Session 11 - Random Tables]] — Current-hazard table for Aruhe river and grassland travel, with dedicated scene exclusions. ( #shattered-sea #session-prep #aruhe)
+- [[Session-11-01-Angry-Birds|Session 11 - Angry Birds]] — Opening aerial escape from an adult Bloodhawk hunting the Crown Squid. ( #shattered-sea #session-prep )
+- [[Session-11-02-Landing-Sign|Session 11 - Landing sign and smoke]] — Development beat following fresh survivor tracks and smoke upriver toward Torn Crossing. ( #shattered-sea #session-prep )
+- [[Session-11-03-Wolfrabbits|Session 11 - Torn Crossing hunt]] — Ecological hunt where wolfrabbits and a Spiguar punish isolated movement. ( #shattered-sea #session-prep )
+- [[Session-11-04-What-They-Ate|Session 11 - What they ate]] — Clue beat distinguishing safe fallen food from claimed living plants and fish. ( #shattered-sea #session-prep )
+- [[Session-11-05-Otter-Hole|Session 11 - Rescue at the otter hole]] — Slack Basin rescue obstacle involving otters, a separated survivor, and a dangerous game. ( #shattered-sea #session-prep )
+- [[Session-11-06-Farthest-Camp|Session 11 - The farthest camp]] — Survivor camp debate over returning to Uncertainty or following the garden invitation. ( #shattered-sea #session-prep )
+- [[Session-11-07-False-Help|Session 11 - False help]] — Borrowed-voice ambush that tests whether the party isolates a body at night. ( #shattered-sea #session-prep )
+- [[Session-11-08-Night-Watch|Session 11 - Night watch]] — Preparation beat where actual precautions determine the watch's opening advantage. ( #shattered-sea #session-prep )
+- [[Session-11-09-Theft-on-the-Watch|Session 11 - Theft on the watch]] — Climax in which Talon Skarn makes a committed attempt to steal the Fate Spinner. ( #shattered-sea #session-prep )
+- [[Session-11-10-Aftermath|Session 11 - Aftermath]] — Resolution covering the theft outcome, hawk pursuit, survivors, and the garden invitation. ( #shattered-sea #session-prep )
+- [[Session-11-00-Random-Tables|Session 11 - Random Tables]] — Current-hazard table for Aruhe river and grassland travel, with dedicated scene exclusions. ( #shattered-sea #session-prep #aruhe)

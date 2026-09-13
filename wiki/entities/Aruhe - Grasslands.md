@@ -60,7 +60,7 @@ The Grasslands are river-cut valleys inside Aruhe's jungle, not a sixth concentr
 
 - [[Aruhe - Terror-Bird|Terror-Birds]] hold the shaded rims and grass cuts, about a quarter-mile each. Eight-foot grass, water, or a [[Aruhe - Razer-Grass]] stand ends the hunt.
 - [[Aruhe - Spiguar|Spiguars]] own the long grass channels and river bends where prey must stop, drink, or choose between cover and sightline.
-- [[Aruhe - Deerstalker|Deer-Stalkers]] use the grass cover. They will not walk [[Aruhe - Razer-Grass]].
+- [[Deer-Stalker|Deer-Stalkers]] use the grass cover. They will not walk [[Aruhe - Razer-Grass]].
 
 ---
 ## What
@@ -69,10 +69,10 @@ The Grasslands are river-cut valleys inside Aruhe's jungle, not a sixth concentr
 - [[Aruhe - River Otter|River Otters]]: Channels and wet banks. They will not haul a kill onto [[Aruhe - Razer-Grass]].
 - [[Aruhe - Bear-Elk]]: Scored-tree beats that cross the openings. [[Aruhe - Terror-Bird|Terror-birds]] step aside.
 - [[Aruhe - Spiguar|Spiguars]]: Motionless grass-mantled cats that pounce from cover, bite deep, and drag prey back into broken sightlines.
-- [[Aruhe - Deerstalker|Deer-Stalkers]] use the grass cover. They will not walk [[Aruhe - Razer-Grass]].
-- [[Aruhe - Wolfrabbit|Wolfrabbits]]: Jump [[Aruhe - Razer-Grass]] rather than land in it.
+- [[Deer-Stalker|Deer-Stalkers]] use the grass cover. They will not walk [[Aruhe - Razer-Grass]].
+- [[Wolfrabbit|Wolfrabbits]]: Jump [[Aruhe - Razer-Grass]] rather than land in it.
 - [[Redheart Berry]] grows at the wet bends, where fallen berries can be foraged from the mud and stone.
-- [[Aruhe - Giant's Guava]] hangs above the grass at the jungle rim, low enough to pick from a living branch if Aruhe is willing to answer.
+- [[Giant's Guava]] hangs above the grass at the jungle rim, low enough to pick from a living branch if Aruhe is willing to answer.
 - Spent [[Grung - Authority Seal|Grung Authority Seals]] may be half-buried near old grung bones. They are no longer active, but investigation can reveal the inland survey command they carried.
 
 ---
@@ -80,7 +80,7 @@ The Grasslands are river-cut valleys inside Aruhe's jungle, not a sixth concentr
 
 - Terrace descent from [[Aruhe - Old Gardens]] onto [[Aruhe - River Landing Bank|Landing Bank]]
 - First flood-scoured hunting lane upvalley of Landing Bank: [[Aruhe - Grasslands Torn Crossing|Torn Crossing]]
-- Used fruiting margin upvalley of Torn Crossing: [[Aruhe - River Line Bank|Line Bank]]
+- Used fruiting margin upvalley of Torn Crossing: [[Aruhe - River - Line Bank|Line Bank]]
 - Claimed otter basin upvalley of Line Bank: [[Aruhe - River Slack Basin|Slack Basin]]
 - Forest-edge detour off Slack Basin: [[Aruhe - Quiet Forest Cutoff Lip|Cutoff Lip]]
 - Forest-edge print braid north of that lip: [[Aruhe - Grasslands - Print Braid|Print Braid]]

@@ -1,12 +1,21 @@
 ---
+title: Session 11 — Torn Crossing hunt
+category: journal
+tags: [session-prep, run-guide, shattered-sea, cliffhanger]
+sources:
+  - "journal/sessions/shattered-sea/11/Session-11-03-Wolfrabbits.md"
+created: 2026-09-13
+updated: 2026-09-13
 type: session-prep
+kind: cliffhanger
+lifecycle: proposed
+reveal: unrevealed
+summary: Cliffhanger hunt at Torn Crossing. Two flushed wolfrabbits cross the print lane while a Spiguar feeds nearby; the party stays safe only by avoiding the grass, the meal, and the escape lane.
 campaign: shattered-sea
 session: 11
 status: ready
 date: 2026-09-06
 visibility: dm
-tags: [session-prep, run-guide]
-summary: Cliffhanger hunt at Torn Crossing. Two flushed wolfrabbits cross the print lane while a Spiguar feeds nearby; the party stays safe only by avoiding the grass, the meal, and the escape lane.
 ---
 # Session 11 — Torn Crossing hunt
 
@@ -32,7 +41,7 @@ flexGrow=2
 
 - **Stakes:** The hunt is already crossing the party's path. Isolation turns a party member into the easier meal.
 - **Goal / exit:** Stay off the meal, let the [[Aruhe - Spiguar]] keep its wolfrabbit, and keep the upriver prints for [[Session-11-04-What-They-Ate]].
-- **Danger:** Two flushed [[Aruhe - Wolfrabbit|wolfrabbits]] bound across the path, one 10 feet north and one 20 feet south. They keep running until someone blocks the escape lane, stands in the grass, bleeds, drops **Prone**, gets loud, or strikes the [[Aruhe - Spiguar]].
+- **Danger:** Two flushed [[Wolfrabbit|wolfrabbits]] bound across the path, one 10 feet north and one 20 feet south. They keep running until someone blocks the escape lane, stands in the grass, bleeds, drops **Prone**, gets loud, or strikes the [[Aruhe - Spiguar]].
 - **Silence:** Present the two crossings, then wait. If the party freezes in the grass, tick the clock once at the end of the round.
 - **Situation magnets:** Anyone isolated, bleeding, standing in the grass, loud, **Prone**, or striking the [[Aruhe - Spiguar]].
 ```
@@ -40,14 +49,14 @@ flexGrow=2
 
 ## Now
 
-The party stands in the flood-torn muddy corridor of [[Aruhe - Grasslands Torn Crossing]], facing north upriver. One [[Aruhe - Wolfrabbit]] crosses west 10 feet north; a second crosses west 20 feet south. Neither looks at the party. The river lip is 20 feet west and 30 feet south. The [[Aruhe - Spiguar]] is 20 feet east in the gold grass, already pinning a third striped body. One [[Aruhe - Razer-Grass]] island stands 15 feet west in the scour, and two more stand 25 feet east in the grass. Bank-woods stand 40 feet east. Living [[Aruhe - Redheart Berry|red berries]] hang on short stems at the west wet margin. The upriver prints bunch through this corridor, bend around the white stands, avoid the cat's grass, and continue north beyond the first crossing. A 30-foot move south reaches the south lip and passes the rear runner. A 30-foot move west through eight-foot grass covers 15 feet. A 60-foot Dash west reaches the river lip. A Dash along the corridor can intercept either runner. Wolfrabbit speed is 50 feet.
+The party stands in the flood-torn muddy corridor of [[Aruhe - Grasslands Torn Crossing]], facing north upriver. One [[Wolfrabbit]] crosses west 10 feet north; a second crosses west 20 feet south. Neither looks at the party. The river lip is 20 feet west and 30 feet south. The [[Aruhe - Spiguar]] is 20 feet east in the gold grass, already pinning a third striped body. One [[Aruhe - Razer-Grass]] island stands 15 feet west in the scour, and two more stand 25 feet east in the grass. Bank-woods stand 40 feet east. Living [[Redheart Berry|red berries]] hang on short stems at the west wet margin. The upriver prints bunch through this corridor, bend around the white stands, avoid the cat's grass, and continue north beyond the first crossing. A 30-foot move south reaches the south lip and passes the rear runner. A 30-foot move west through eight-foot grass covers 15 feet. A 60-foot Dash west reaches the river lip. A Dash along the corridor can intercept either runner. Wolfrabbit speed is 50 feet.
 
 ## Action cards
 
 ````col
 ===
 ```col-md
-**Loop.** The [[Aruhe - Spiguar]] starts on a wolfrabbit. Two flushed [[Aruhe - Wolfrabbit|wolfrabbits]] bound west across the corridor, one 10 feet north and one 20 feet south, and keep running.
+**Loop.** The [[Aruhe - Spiguar]] starts on a wolfrabbit. Two flushed [[Wolfrabbit|wolfrabbits]] bound west across the corridor, one 10 feet north and one 20 feet south, and keep running.
 
 - **Tell:** The two crossings cut the print lane. Twenty feet east, a reed-matted clump has broken open around a striped body.
 - **Want:** The [[Aruhe - Spiguar]] owns this channel and is hunting the pack.
@@ -57,14 +66,14 @@ The party stands in the flood-torn muddy corridor of [[Aruhe - Grasslands Torn C
 ```
 
 ```col-md
-**Easy pack.** Use only the two crossing [[Aruhe - Wolfrabbit|wolfrabbits]]. Skip Devour the Pack.
+**Easy pack.** Use only the two crossing [[Wolfrabbit|wolfrabbits]]. Skip Devour the Pack.
 
 - **Names:** Torn-ear in front, White-blaze behind, only after the table sees those traits.
 - **Extras:** Extra bodies stay unnamed. The [[Aruhe - Spiguar]] already has one body.
 ```
 
 ```col-md
-**Hard pack.** Five or six [[Aruhe - Wolfrabbit|wolfrabbits]], with the extras still in the grass. The open is still the two crossings.
+**Hard pack.** Five or six [[Wolfrabbit|wolfrabbits]], with the extras still in the grass. The open is still the two crossings.
 
 - **Frenzy:** Use Devour the Pack and Frenzy Toward the Fallen when one drops.
 - **Next meal:** The [[Aruhe - Spiguar]] treats the nearest isolated party member as the next meal.
@@ -78,11 +87,11 @@ The party stands in the flood-torn muddy corridor of [[Aruhe - Grasslands Torn C
 ```
 ===
 ```col-md
-**Compact [[Aruhe - Wolfrabbit]].** AC 15. 68 hit points. Speed 50 feet.
+**Compact [[Wolfrabbit]].** AC 15. 68 hit points. Speed 50 feet.
 
 - **Pouncing Bound:** Leap up to 30 feet, then Raking Claws +7 to hit, `12` slashing. If the leap began at least 20 feet away and hits, **Strength save — `DC 15`** or **Prone**.
 - **Bite:** +7 to hit, `14` piercing.
-- **Pack Rend:** Extra `5 (1d10)` piercing on a **Prone** target if another [[Aruhe - Wolfrabbit]] is within 5 feet.
+- **Pack Rend:** Extra `5 (1d10)` piercing on a **Prone** target if another [[Wolfrabbit]] is within 5 feet.
 ```
 
 ```col-md
@@ -106,7 +115,7 @@ The party stands in the flood-torn muddy corridor of [[Aruhe - Grasslands Torn C
 ```
 
 ```col-md
-**Wet-margin berries.** Living stems at the west lip are [[Aruhe - Redheart Berry]].
+**Wet-margin berries.** Living stems at the west lip are [[Redheart Berry]].
 
 - **Fallen:** Eating a fallen berry is a Bonus Action and regains `8d4 + 8` hit points.
 - **Living stem:** Plucking a living stem is a [[Taking on Aruhe]] claim and pulls an extra wolfrabbit.
@@ -132,7 +141,7 @@ flexGrow=3
 
 **Escape mode.** After everyone has acted, advance the threat clock once if anyone remains on a magnet: isolated, standing in the grass, bleeding, loud, **Prone**, or striking the [[Aruhe - Spiguar]]. Failed rolls impose only their Be ready for ruling. A frozen table still ticks once at the end of the round. The hunt breaks when the party leaves the hunting geometry, reaches deep water or the bank-woods, or stops presenting magnets.
 
-If a party member takes open valley air, that person leaves this hunt. Point at a [[Aruhe - Young Bloodhawk]].
+If a party member takes open valley air, that person leaves this hunt. Point at a [[Young Bloodhawk]].
 
 **Combat mode:** If the party commits to killing the pack or the [[Aruhe - Spiguar]], stop the clock and run the embedded statblocks. Killing the [[Aruhe - Spiguar]] is lethal for this band.
 ```
@@ -159,15 +168,15 @@ The bunched prints are the survivor-safe lane. They skirt the white stands and s
 
 | Intent | Approach | DC | Success | Partial | Failure |
 | --- | --- | --- | --- | --- | --- |
-| Stay off the meal | Dodge, drop **Prone** off the corridor, or move to the river lip without striking the [[Aruhe - Spiguar]] | Leave the magnets | That party member is not the next meal. The [[Aruhe - Spiguar]] keeps its wolfrabbit. The two flushed [[Aruhe - Wolfrabbit\|wolfrabbits]] keep running unless someone remains in the grass. | That party member is still in the grass. The clock still ticks if anyone remains on a magnet. | That party member is still obvious. A flushed [[Aruhe - Wolfrabbit]] uses Pouncing Bound: Raking Claws +7, `12` slashing, then **Strength save — `DC 15`** or **Prone**. |
-| Stand the jump or fight the pack | Attack vs AC 15, Dodge, or a **Strength save — `DC 15`** if Pouncing Bound hits | Attack vs AC 15, or `DC 15` Strength | That party member stays standing. If a [[Aruhe - Wolfrabbit]] drops, the [[Aruhe - Spiguar]] may take that corpse instead of a party member. If the party commits to killing the pack, switch to combat mode. | That party member stays standing but remains in the grass. The clock still ticks if anyone remains on a magnet. | That party member is **Prone**. The next [[Aruhe - Wolfrabbit]] Bite can Pack Rend: Bite +7, `14` piercing, plus `5 (1d10)` if another [[Aruhe - Wolfrabbit]] is within 5 feet. |
+| Stay off the meal | Dodge, drop **Prone** off the corridor, or move to the river lip without striking the [[Aruhe - Spiguar]] | Leave the magnets | That party member is not the next meal. The [[Aruhe - Spiguar]] keeps its wolfrabbit. The two flushed [[Wolfrabbit|wolfrabbits]] keep running unless someone remains in the grass. | That party member is still in the grass. The clock still ticks if anyone remains on a magnet. | That party member is still obvious. A flushed [[Wolfrabbit]] uses Pouncing Bound: Raking Claws +7, `12` slashing, then **Strength save — `DC 15`** or **Prone**. |
+| Stand the jump or fight the pack | Attack vs AC 15, Dodge, or a **Strength save — `DC 15`** if Pouncing Bound hits | Attack vs AC 15, or `DC 15` Strength | That party member stays standing. If a [[Wolfrabbit]] drops, the [[Aruhe - Spiguar]] may take that corpse instead of a party member. If the party commits to killing the pack, switch to combat mode. | That party member stays standing but remains in the grass. The clock still ticks if anyone remains on a magnet. | That party member is **Prone**. The next [[Wolfrabbit]] Bite can Pack Rend: Bite +7, `14` piercing, plus `5 (1d10)` if another [[Wolfrabbit]] is within 5 feet. |
 | Strike the [[Aruhe - Spiguar]] | Attack vs AC 17 | Attack vs AC 17 | That party member hits the spotted cat. The party is now the meal. The [[Aruhe - Spiguar]] drops or ignores its kill and uses Pounce or Drag Through Grass on that party member. If the party commits to killing it, switch to combat mode. | That party member grazes it and remains in the grass. The [[Aruhe - Spiguar]] still switches to the party. | The attack misses. The [[Aruhe - Spiguar]] still treats that party member as the meal. |
 | Pull a dragged party member | **Strength (Athletics)** or **Dexterity (Acrobatics)** | `DC 18` | That party member breaks the [[Aruhe - Spiguar]]'s **Grappled** hold. The cat still has its wolfrabbit unless this was the only body. | That party member keeps a hand on the dragged person and is pulled 10 feet into the grass. | That party member loses the hold. The [[Aruhe - Spiguar]] drags its target up to 30 feet toward the bank-woods. |
-| Hide in this grass | **Dexterity (Stealth)** | `DC 15` | That party member is hidden only if they are not bleeding. Blood-Scented still finds anyone below max HP. | That party member is in the grass but makes noise. The pack still chases a runner who stays in the grass, and the clock still ticks if anyone remains on a magnet. | That party member is still obvious. A flushed [[Aruhe - Wolfrabbit]] uses Pouncing Bound: Raking Claws +7, `12` slashing, then **Strength save — `DC 15`** or **Prone**. |
-| Drop into deep water | Reach deep water south or west of this lip | Reach deep water | The [[Aruhe - Wolfrabbit\|wolfrabbits]] and the [[Aruhe - Spiguar]] break contact with that party member. | That party member reaches the river edge but not deep water. The clock still ticks if anyone remains on a magnet. | That party member is still obvious. A flushed [[Aruhe - Wolfrabbit]] uses Pouncing Bound: Raking Claws +7, `12` slashing, then **Strength save — `DC 15`** or **Prone**. |
+| Hide in this grass | **Dexterity (Stealth)** | `DC 15` | That party member is hidden only if they are not bleeding. Blood-Scented still finds anyone below max HP. | That party member is in the grass but makes noise. The pack still chases a runner who stays in the grass, and the clock still ticks if anyone remains on a magnet. | That party member is still obvious. A flushed [[Wolfrabbit]] uses Pouncing Bound: Raking Claws +7, `12` slashing, then **Strength save — `DC 15`** or **Prone**. |
+| Drop into deep water | Reach deep water south or west of this lip | Reach deep water | The [[Wolfrabbit|wolfrabbits]] and the [[Aruhe - Spiguar]] break contact with that party member. | That party member reaches the river edge but not deep water. The clock still ticks if anyone remains on a magnet. | That party member is still obvious. A flushed [[Wolfrabbit]] uses Pouncing Bound: Raking Claws +7, `12` slashing, then **Strength save — `DC 15`** or **Prone**. |
 | Shove or get shoved into [[Aruhe - Razer-Grass]] | A knockdown, shove, or forced movement into a razer island | [[Aruhe - Razer-Grass]] owner numbers | That party member goes around the [[Aruhe - Razer-Grass]] island, or uses Careful Passage: one Action, 5 feet, no movement damage. The pack jumps the island, and the [[Aruhe - Spiguar]] will not willingly rush it. | That party member takes `1d4` slashing per 5 feet through the intact [[Aruhe - Razer-Grass]] stand and remains in the scour. | That party member falls **Prone** in the [[Aruhe - Razer-Grass]] island. Shatter: **Dexterity save — `DC 14`**, `2d6` slashing. Mineral Dust: **Constitution save — `DC 14`** or **Glass-Choked**. |
 | Burn the grass on this stretch | **Utilize** fire on the tall grass, or on a [[Aruhe - Razer-Grass]] island | Fire is set | Fire scatters the pack, drives the [[Aruhe - Spiguar]] off its kill, and ends the hunt here. The smoke announces the party down the valley. Hand to [[Session-11-04-What-They-Ate]] if they keep the upriver prints. | The hunt leaves, but the fire is loud down the valley. The smoke on the horizon does not get closer. | The hunt still holds this stretch while the fire announces the party. Fire on a [[Aruhe - Razer-Grass]] island triggers Shatter and Mineral Dust there automatically. |
-| Pick living fruit on this stretch | Pluck a living stem at the wet margin | Claim | That party member takes a living [[Aruhe - Redheart Berry]]. That is a [[Taking on Aruhe]] claim. The later hazards-table roll uses `2d8`, keeping the lower result. An extra unnamed [[Aruhe - Wolfrabbit]] joins from the grass. | There is no partial. | There is no partial. Plucking a living stem is a claim. |
+| Pick living fruit on this stretch | Pluck a living stem at the wet margin | Claim | That party member takes a living [[Redheart Berry]]. That is a [[Taking on Aruhe]] claim. The later hazards-table roll uses `2d8`, keeping the lower result. An extra unnamed [[Wolfrabbit]] joins from the grass. | There is no partial. | There is no partial. Plucking a living stem is a claim. |
 
 Unforeseen intents use the same want: the [[Aruhe - Spiguar]] is hunting the pack. The flushed rabbits keep running until someone enters the escape lane or becomes easier meat. Rule from zones, the clock, and whether the approach stays in the grass, reaches deep water or bank-woods, or strikes the spotted cat.
 
@@ -179,14 +188,14 @@ flexGrow=3
 
 | Tick | What happens | Narration |
 | --- | --- | --- |
-| 1 | Each remaining [[Aruhe - Wolfrabbit]] uses Pouncing Bound against whoever is isolated, bleeding, or standing in the grass: leap up to 30 feet, Raking Claws +7, `12` slashing, then **Strength save — `DC 15`** or **Prone** if the leap began at least 20 feet away. The [[Aruhe - Spiguar]] stays on its wolfrabbit unless a party member is already easier meat. | ==_The next bound comes at anyone still in this grass._== |
-| 2 | A [[Aruhe - Wolfrabbit]] Bites a **Prone** party member: +7 to hit, `14` piercing, plus Pack Rend for `5 (1d10)` piercing if another [[Aruhe - Wolfrabbit]] is within 5 feet. If a party member is **Prone**, isolated, bleeding, or hitting the [[Aruhe - Spiguar]], the cat drops its kill long enough to Pounce or Saber Bite that party member. Otherwise, it drags its wolfrabbit toward the bank-woods. | ==_The nearest hunter drives teeth into anyone already down while another crowds the same body. In the east grass, the spotted cat either hauls its kill toward the trees or turns its saber teeth toward a body that has gone still._== |
+| 1 | Each remaining [[Wolfrabbit]] uses Pouncing Bound against whoever is isolated, bleeding, or standing in the grass: leap up to 30 feet, Raking Claws +7, `12` slashing, then **Strength save — `DC 15`** or **Prone** if the leap began at least 20 feet away. The [[Aruhe - Spiguar]] stays on its wolfrabbit unless a party member is already easier meat. | ==_The next bound comes at anyone still in this grass._== |
+| 2 | A [[Wolfrabbit]] Bites a **Prone** party member: +7 to hit, `14` piercing, plus Pack Rend for `5 (1d10)` piercing if another [[Wolfrabbit]] is within 5 feet. If a party member is **Prone**, isolated, bleeding, or hitting the [[Aruhe - Spiguar]], the cat drops its kill long enough to Pounce or Saber Bite that party member. Otherwise, it drags its wolfrabbit toward the bank-woods. | ==_The nearest hunter drives teeth into anyone already down while another crowds the same body. In the east grass, the spotted cat either hauls its kill toward the trees or turns its saber teeth toward a body that has gone still._== |
 | 3 | A knockdown sends a **Prone** party member into the river current or a [[Aruhe - Razer-Grass]] island. Razer-Grass deals `1d4` slashing per 5 feet; falling **Prone** in it triggers Shatter: **Dexterity save — `DC 14`**, `2d6` slashing. If the [[Aruhe - Spiguar]] has a **Grappled** party member, it drags that body up to 30 feet toward the bank-woods. | ==_A knock sends anyone already down toward the river or into a white stand. If the spotted cat has someone, it hauls that body through the gold grass toward the trees._== |
-| 4 | If the party lingered, claimed living fruit, burned grass, or struck the [[Aruhe - Spiguar]], an unnamed extra [[Aruhe - Wolfrabbit]] joins from the grass. Otherwise, the [[Aruhe - Spiguar]] finishes dragging its kill into cover and the remaining pack breaks off unless someone is still on a magnet. | ==_Another dark-striped hunter shoulders out of the tall grass and gathers for a leap. If no new body draws the hunt, the spotted cat disappears under bent reeds with its kill._== |
+| 4 | If the party lingered, claimed living fruit, burned grass, or struck the [[Aruhe - Spiguar]], an unnamed extra [[Wolfrabbit]] joins from the grass. Otherwise, the [[Aruhe - Spiguar]] finishes dragging its kill into cover and the remaining pack breaks off unless someone is still on a magnet. | ==_Another dark-striped hunter shoulders out of the tall grass and gathers for a leap. If no new body draws the hunt, the spotted cat disappears under bent reeds with its kill._== |
 ```
 
 ```col-md
-**Bloodied.** When one [[Aruhe - Wolfrabbit]] dies, survivors frenzy on Hard with Devour the Pack and Frenzy Toward the Fallen. Easy skips Devour the Pack. The [[Aruhe - Spiguar]] prefers a wolfrabbit corpse over a standing group. Spiguar bloodied is 93 hit points. At that threshold, it drags its current body into the bank-woods and breaks contact.
+**Bloodied.** When one [[Wolfrabbit]] dies, survivors frenzy on Hard with Devour the Pack and Frenzy Toward the Fallen. Easy skips Devour the Pack. The [[Aruhe - Spiguar]] prefers a wolfrabbit corpse over a standing group. Spiguar bloodied is 93 hit points. At that threshold, it drags its current body into the bank-woods and breaks contact.
 
 **Cover reached.** Deep water or the first trunks 40 feet east breaks the hunt for a party member who reaches that cover. The pack still chases a runner who stays in the grass. The [[Aruhe - Spiguar]] breaks pursuit into deep water, onto [[Aruhe - Razer-Grass]], or under open sky, and it drags a kill into the bank-woods to feed.
 
@@ -238,7 +247,7 @@ The [[Aruhe - Spiguar]] keeps its wolfrabbit, and the pack breaks off Torn Cross
 
 ## Backup
 
-[[Aruhe - Grasslands Torn Crossing]] · [[Aruhe - Grasslands]] · [[Aruhe - Spiguar]] · [[Aruhe - Wolfrabbit]] · [[Aruhe - Razer-Grass]] · [[Aruhe - Redheart Berry]] · [[Taking on Aruhe]] · [[Session-11-00-Random-Tables]] · [[Aruhe - River - Line Bank]] · [[Session-11-04-What-They-Ate]] · [[Session-11-00-Birds-of-a-Feather]] · [[Aruhe - Young Bloodhawk]] · [[Flying Boots]]
+[[Aruhe - Grasslands Torn Crossing]] · [[Aruhe - Grasslands]] · [[Aruhe - Spiguar]] · [[Wolfrabbit]] · [[Aruhe - Razer-Grass]] · [[Redheart Berry]] · [[Taking on Aruhe]] · [[Session-11-00-Random-Tables]] · [[Aruhe - River - Line Bank]] · [[Session-11-04-What-They-Ate]] · [[Session-11-00-Birds-of-a-Feather]] · [[Young Bloodhawk]] · Flying Boots <!-- broken link: no match found -->
 
 ## Battlemap
 

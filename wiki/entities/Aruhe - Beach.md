@@ -31,7 +31,7 @@ relationships:
 ![[attachments/shattered-sea/places/aruhe-western-landing-alternative-map-view.jpg|Alternative aerial map view of Aruhe's beach and western landing edge]]
 ## Overview
 > [!narration] Narration
-> Western Landing is a jagged coral reef about half a mile offshore; at low tide the teeth show, and one boat gap leads to a short shingle beach that takes only minutes to cross end to end. Elsewhere the coast is cliffs, coves, or beaches trapped behind reef. Surf works the coral and salt spray carries over loose stone. At the inland edge, broad wet leaves hold [[Aruhe - Ghost Plum|ghost plums]] in the shade, while [[Aruhe - Giant's Guava|giant's guavas]] hang deeper in the green above the stream.
+> Western Landing is a jagged coral reef about half a mile offshore; at low tide the teeth show, and one boat gap leads to a short shingle beach that takes only minutes to cross end to end. Elsewhere the coast is cliffs, coves, or beaches trapped behind reef. Surf works the coral and salt spray carries over loose stone. At the inland edge, broad wet leaves hold [[Ghost Plum|ghost plums]] in the shade, while [[Giant's Guava|giant's guavas]] hang deeper in the green above the stream.
 
 ---
 ## At a glance
@@ -68,7 +68,7 @@ Western Landing is Aruhe's known sea approach and retreat edge: a jagged reef, o
 - Elsewhere the coast is cliffs, coves, or beaches trapped behind reef; the southern mangrove wall is not a landing. The boat gap is the known usable approach.
 - Reef movement, hull strain, surf on coral, salt spray, and wet stone make the approach legible before the party commits.
 - Giant sharks, giant crabs, Bloodhawks, and [[Aruhe - Reef Skull|Reef Skulls]] make the reef and shingle a landing problem without requiring reef-fauna mechanics here.
-- At the inland edge, [[Aruhe - Ghost Plum]] hangs beneath wet leaves and [[Aruhe - Giant's Guava]] fruits above the stream. Fallen specimens can be foraged, while living branches can be picked at the cost of drawing Aruhe's response.
+- At the inland edge, [[Ghost Plum]] hangs beneath wet leaves and [[Giant's Guava]] fruits above the stream. Fallen specimens can be foraged, while living branches can be picked at the cost of drawing Aruhe's response.
 - A loose stone or shed shell can mark the route. A living claim draws surrounding life into hostility. [[Taking on Aruhe]]
 
 ---

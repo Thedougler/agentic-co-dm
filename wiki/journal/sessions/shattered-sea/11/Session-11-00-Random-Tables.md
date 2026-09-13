@@ -1,16 +1,22 @@
 ---
-type: encounter
+title: Aruhe River / Grasslands Hazards
+category: journal
+tags: [aruhe, session-11, shattered-sea, session-prep, development]
+sources:
+  - "journal/sessions/shattered-sea/11/Session-11-00-Random-Tables.md"
+created: 2026-09-13
+updated: 2026-09-13
+type: session-prep
+kind: development
+lifecycle: proposed
+reveal: unrevealed
+summary: The single current-hazards table for Session-11-00-Birds-of-a-Feather. No Grung. Do not restage beat 9 (Talon Skarn).
 campaign: shattered-sea
 session: 11
 status: ready
-location: "[[Aruhe - Grasslands]]"
 visibility: dm
-tags:
-  - encounter
-  - aruhe
-  - session-11
+location: "[[Aruhe - Grasslands]]"
 ---
-
 # Aruhe River / Grasslands Hazards
 
 The single current-hazards table for [[Session-11-00-Birds-of-a-Feather]]. No Grung. Do not restage beat 9 ([[Talon Skarn]]).
@@ -51,7 +57,7 @@ If the rolled hazard does not belong in the current ground, reroll once. If a de
 
 ## Deep
 
-- The current hazard roster is also indexed at [[00 Hazards]].
+- The current hazard roster is also indexed at 00 Hazards <!-- broken link: no match found -->.
 - Dedicated scene cards take precedence over this table. Do not roll it during the landing, the wolfrabbit pack, [[Aruhe - River - Line Bank]], the otter hole, the night watch, [[Aruhe - Grasslands - Print Braid]], or [[Aruhe - Quiet Forest Spoke Ring]].
 - No planned treasure is attached to a roll. Living plants remain subject to [[Taking on Aruhe]]; fallen fruit is genuinely beneficial when its owner note says it is.
 

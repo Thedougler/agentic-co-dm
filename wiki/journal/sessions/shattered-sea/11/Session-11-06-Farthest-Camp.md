@@ -1,12 +1,21 @@
 ---
+title: Session 11 — The farthest camp
+category: journal
+tags: [session-prep, run-guide, shattered-sea, development]
+sources:
+  - "journal/sessions/shattered-sea/11/Session-11-06-Farthest-Camp.md"
+created: 2026-09-13
+updated: 2026-09-13
 type: session-prep
+kind: development
+lifecycle: proposed
+reveal: unrevealed
+summary: "Development at Spoke Ring. Calveno wreck people split over the garden and the route back to [[Uncertainty]] under the last sun; the unfinished argument hands to [[Session-11-07-False-Help]]."
 campaign: shattered-sea
 session: 11
 status: ready
 date: 2026-09-06
 visibility: dm
-tags: [session-prep, run-guide]
-summary: Development at Spoke Ring. Calveno wreck people split over the garden and the route back to [[Uncertainty]] under the last sun; the unfinished argument hands to [[Session-11-07-False-Help]].
 ---
 # Session 11 — The farthest camp
 
@@ -20,7 +29,7 @@ This beat ends when the ship-versus-garden split at [[Aruhe - Quiet Forest Spoke
 
 Plan for about thirty minutes.
 
-**If behind:** Put [[Matteo Scola]] and the two camp stories in front of the party, then ask what they do.
+**If behind:** Put Matteo Scola <!-- broken link: no match found --> and the two camp stories in front of the party, then ask what they do.
 
 **If ahead:** Leave the argument unfinished and hand to beat 7. [[Talon Skarn]] stays in the sun. The garden stays out of reach tonight.
 
@@ -32,17 +41,17 @@ flexGrow=2
 ===
 ## At a Glance
 
-- **Stakes:** [[Matteo Scola]] is here if they pulled him from the hole. This camp wants to see the garden, but not everyone wants to leave [[Uncertainty]].
+- **Stakes:** Matteo Scola <!-- broken link: no match found --> is here if they pulled him from the hole. This camp wants to see the garden, but not everyone wants to leave [[Uncertainty]].
 - **Goal / exit:** Make the party choose whether to keep the survivors at the fire, play along toward the garden, or break for the ship.
 - **Danger:** Pushing for the ship tonight breaks the group. Playing along sends the night north. Leaving before the invitation removes beat 7's lure. Open valley air is hawk sky.
-- **Silence:** Put [[Matteo Scola]] and the two stories in view, then wait.
-- **Situation magnets:** [[Matteo Scola]] while he remains in the firelight, and anyone who walks a north trail alone.
+- **Silence:** Put Matteo Scola <!-- broken link: no match found --> and the two stories in view, then wait.
+- **Situation magnets:** Matteo Scola <!-- broken link: no match found --> while he remains in the firelight, and anyone who walks a north trail alone.
 ```
 ````
 
 ## Now
 
-The party stands on the packed-dirt hub of [[Aruhe - Quiet Forest Spoke Ring]] in the last sun. Smoke hangs under the leaves above the central stone ring. Four woven mats lie 10 feet from the coals. If the party pulled [[Matteo Scola]] onto the sand at the hole, he sits 5 feet from the fire with a split, wet lip, one boot missing, and a grey, salt-stiff shirt that is still damp. If they left him in the hole, he is not here, and this fire has fewer people than the tracks suggest.
+The party stands on the packed-dirt hub of [[Aruhe - Quiet Forest Spoke Ring]] in the last sun. Smoke hangs under the leaves above the central stone ring. Four woven mats lie 10 feet from the coals. If the party pulled Matteo Scola <!-- broken link: no match found --> onto the sand at the hole, he sits 5 feet from the fire with a split, wet lip, one boot missing, and a grey, salt-stiff shirt that is still damp. If they left him in the hole, he is not here, and this fire has fewer people than the tracks suggest.
 
 Three or four other Calveno wreck people sit in the firelight. One watches the north trails whenever branches move. Another says anyone who listens to the woman is mad. Fallen [[Aruhe - Stonepear]] rests beside the coals while living stonepears hang above them. Crushed prints enter from the south. The south trail reaches gold-green grass in 20 feet. The west trail reaches the river through a root-cut in 30 feet. The north trails reach darker wood in 20 feet. A 30-foot move stays on the hub. A Dash of 60 feet follows one trail off the ring. [[Aruhe - Quiet Forest Star Cut]] and [[Aruhe - Memorial Grove]] are farther than a Dash. Stop hazard-table rolls once the party reaches this fire.
 
@@ -50,7 +59,7 @@ Three or four other Calveno wreck people sit in the firelight. One watches the n
 
 ````col
 ```col-md
-**[[Matteo Scola]].** If the party pulled him onto the sand and he can speak, use his name. If they left him in the hole, remove him from this card.
+**Matteo Scola <!-- broken link: no match found -->.** If the party pulled him onto the sand and he can speak, use his name. If they left him in the hole, remove him from this card.
 
 - **Look:** He has a split, wet lip, one boot missing, and a grey salt-stiff shirt that is still damp. He sits 5 feet from the fire, close to whoever pulled him and away from the north trails.
 - **Want:** He is Friendly toward the people who pulled him and wants to stay with living people.
@@ -69,7 +78,7 @@ Three or four other Calveno wreck people sit in the firelight. One watches the n
 - **Tell:** They watch the south grass more than the north trails and talk over the invitation in hard, low voices.
 - **Sample:** "She is leading you into danger. Anyone who listens is mad."
 
-**[[Aruhe - Deerstalker]].** It is already listening in the north spokes. It remains unseen.
+**[[Deer-Stalker]].** It is already listening in the north spokes. It remains unseen.
 ```
 
 ```col-md
@@ -112,7 +121,7 @@ flexGrow=3
 ===
 ## Procedure
 
-**Talk mode.** Run this fire as a talk-and-commit slice. There is no fight and no threat clock on this card. After everyone acts, if the ship-versus-garden split is still unclear, keep [[Matteo Scola]] and the two camp stories in view, then ask what they do. Freezing still leaves the argument unfinished. Failed checks impose only the Be ready for ruling.
+**Talk mode.** Run this fire as a talk-and-commit slice. There is no fight and no threat clock on this card. After everyone acts, if the ship-versus-garden split is still unclear, keep Matteo Scola <!-- broken link: no match found --> and the two camp stories in view, then ask what they do. Freezing still leaves the argument unfinished. Failed checks impose only the Be ready for ruling.
 
 If the party goes quiet and stays at the fire after the split is clear, hand to [[Session-11-07-False-Help]] on this hub. If they agree to see the garden, they commit past this valley; the garden stays out of reach tonight, and they still go to beat 7 on the first north trail. If they force a march to the ship tonight, some survivors balk or slip into the north trails, and beat 7 may still fire on anyone who ends up isolated. If they leave without hearing the woman, beat 7 has no woman-lure; drop beat 7 or recompute a weaker peel. The invitation is genuine. If a party member takes open valley air, that character leaves the hub for hawk sky. This is the last sun over the roof, not the bloodhawk stoop. Do not start [[Session-11-07-False-Help]] until the handoff, and do not start night watch.
 
@@ -122,7 +131,7 @@ If the party goes quiet and stays at the fire after the split is clear, hand to 
 ```col-md
 ## Secondary objective
 
-Hear the garden invitation before anyone leaves this fire. If they hear it, [[Session-11-07-False-Help]] has the woman-lure. If they leave first, drop beat 7 or run a weaker peel. If they pulled [[Matteo Scola]], keep him on this dirt; he wants living people and will not take a north trail alone. If anyone plucks living stems at this fire, mark [[Taking on Aruhe]], and this camp treats that as the wrong walk.
+Hear the garden invitation before anyone leaves this fire. If they hear it, [[Session-11-07-False-Help]] has the woman-lure. If they leave first, drop beat 7 or run a weaker peel. If they pulled Matteo Scola <!-- broken link: no match found -->, keep him on this dirt; he wants living people and will not take a north trail alone. If anyone plucks living stems at this fire, mark [[Taking on Aruhe]], and this camp treats that as the wrong walk.
 ```
 ````
 
@@ -130,7 +139,7 @@ Hear the garden invitation before anyone leaves this fire. If they hear it, [[Se
 
 | Place | Distance from the party | Cover | Narration |
 | --- | --- | --- | --- |
-| [[Aruhe - Quiet Forest Spoke Ring\|This fire]] / [[Matteo Scola]] | Here, on the packed dirt around the stone ring. Matteo sits 5 feet from the coals if the party pulled him. Four woven mats lie 10 feet out. | Grouped people here are not isolated. Matteo talks from this dirt. | ==_He watches the people talking, not the north trails. His shirt is warm from the fire and smells of smoke._== |
+| [[Aruhe - Quiet Forest Spoke Ring\|This fire]] / Matteo Scola <!-- broken link: no match found --> | Here, on the packed dirt around the stone ring. Matteo sits 5 feet from the coals if the party pulled him. Four woven mats lie 10 feet out. | Grouped people here are not isolated. Matteo talks from this dirt. | ==_He watches the people talking, not the north trails. His shirt is warm from the fire and smells of smoke._== |
 | Garden group | 10 feet toward the north trail mouths, still on this hub. | They look into the wood whenever branches move. | ==_They repeat, come admire her garden, this way, leave the living plants. When a branch moves, they look north and stop talking._== |
 | Ship group | 10 feet toward the south trail, still on this hub. | They watch the last grass more than the north trails. | ==_They talk over the others. They say she is leading people into danger, and anyone who listens is mad._== |
 | South trail / last grass | 20 feet south. Crushed prints enter this hub here. | Breaking off this way is a rebuild. A Dash does not reach the beach. | ==_Footprints run south through the last trees into gold-green grass._== |
@@ -143,7 +152,7 @@ Hear the garden invitation before anyone leaves this fire. If they hear it, [[Se
 | Intent | Approach | DC | Success | Partial | Failure |
 | --- | --- | --- | --- | --- | --- |
 | Assess the situation | **Wisdom (Perception)**, **Wisdom (Survival)**, or **Wisdom (Insight)** | `DC 10` | The fire has fewer people than the crushed prints suggest. Two stories are already in the air: a woman in the woods asked them to admire her garden, while the other group says anyone who listens is mad. | The looker hears both stories and remains at the fire. | The looker gains no useful extra read and remains at the fire. |
-| Talk to [[Matteo Scola]] | Listening, or ordinary questions. Influence: **Charisma (Persuasion)** only if the party tries to change what he will do tonight. | Talk, or `DC 15` to move him | Matteo says the others kept walking toward the smoke. He deserted them after rejecting the woman's advice, then went back for the pack. He does not name the woman. If the Influence succeeds, he talks about [[Uncertainty]] and stays with the party instead of taking the north trails. | He answers questions about the hole, then falls silent when the garden comes up. He stays on this dirt. | He looks toward the garden group and goes quiet. The split stays unresolved unless someone else talks. |
+| Talk to Matteo Scola <!-- broken link: no match found --> | Listening, or ordinary questions. Influence: **Charisma (Persuasion)** only if the party tries to change what he will do tonight. | Talk, or `DC 15` to move him | Matteo says the others kept walking toward the smoke. He deserted them after rejecting the woman's advice, then went back for the pack. He does not name the woman. If the Influence succeeds, he talks about [[Uncertainty]] and stays with the party instead of taking the north trails. | He answers questions about the hole, then falls silent when the garden comes up. He stays on this dirt. | He looks toward the garden group and goes quiet. The split stays unresolved unless someone else talks. |
 | Hear the two stories | Listening, or **Charisma (Persuasion)** to get them talking | Talk, or `DC 15` to draw out a hesitant survivor | The table hears both stories: a woman in the woods asked them to admire her garden and told them where to walk and what not to take; the other group says she is leading people into danger and anyone who listens is mad. This camp listened. They are alive. They want the garden. They can vouch, bargain, refuse evacuation, or help later, but they are not automatic allies. | They listen, then look at the trees. The round is spent, and the split remains live. | They look north and let the talk thin. The invitation remains half-heard. |
 | Test for a spell | **Wisdom (Insight)** | `DC 15` | They are not under a spell. They want the invitation. | The spell question stays unanswered. The two stories are still on the table. | That party member treats the garden-want as a spell or trick. The two stories are still on the table. |
 | Extract to [[Uncertainty]] | Influence: **Charisma (Persuasion)** to ask the survivors back to the ship | `DC 15` | Some survivors talk about [[Uncertainty]], but the garden group refuses. This camp does not all want to go. The split is on the table, night is coming, and waiting until morning still leaves beat 7 live. Pushing the walk tonight uses the forced-march row. | They listen, then look at the trees. The round is spent, and the split remains live. | They refuse. If the party keeps pushing a march tonight, use the forced-march row. |
@@ -157,7 +166,7 @@ Hear the garden invitation before anyone leaves this fire. If they hear it, [[Se
 | Leave this camp | Walk the south trail toward the last grass, the river, the terrace line, the beach, or [[Uncertainty]] without hearing the woman | Walk | The party leaves this fire without hearing the invitation. Beat 7 has no woman-lure. Drop beat 7 or recompute a weaker peel. End this scene. | There is no partial result. | There is no partial result. |
 | Attack this camp | Attack, or draw a weapon on the people at this fire | Attack | The party loses the prize. These people scatter. Rebuild from that; they still have a night. End this scene. | There is no partial result. | There is no partial result. |
 
-Unforeseen intents use the same wants: this camp wants the garden, while [[Matteo Scola]] wants living people. Rule from the two stories and whether the party stays, extracts, plays along, marches, or leaves.
+Unforeseen intents use the same wants: this camp wants the garden, while Matteo Scola <!-- broken link: no match found --> wants living people. Rule from the two stories and whether the party stays, extracts, plays along, marches, or leaves.
 
 ## How the Scene Resolves
 
@@ -169,7 +178,7 @@ If the party left without hearing the woman, beat 7 has no woman-lure. Rebuild o
 
 If the party attacked this camp, the prize is gone. They still have a night. Rebuild from that.
 
-If [[Matteo Scola]] is with the party, he is still on this dirt or on the north trail, with his lip split and wet and one boot missing.
+If Matteo Scola <!-- broken link: no match found --> is with the party, he is still on this dirt or on the north trail, with his lip split and wet and one boot missing.
 
 > [!narration] How the Scene Resolves
 > The sun has gone down. The people around the fire are still arguing. From the dark trail north of the fire, someone whispers the same words they were using: come admire her garden, this way, leave the living plants.
@@ -181,7 +190,7 @@ If [[Matteo Scola]] is with the party, he is still on this dirt or on the north 
 
 ## Backup
 
-[[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Stonepear]] · [[Matteo Scola]] · [[Taking on Aruhe]] · [[Uncertainty]] · [[Aruhe - Memorial Grove]] · [[Crissdalynn Khinriss]] · [[Talon Skarn]] · [[Aruhe - Deerstalker]] · [[Session-11-05-Otter-Hole]] · [[Session-11-07-False-Help]] · [[Session-11-00-Birds-of-a-Feather]]
+[[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Stonepear]] · Matteo Scola <!-- broken link: no match found --> · [[Taking on Aruhe]] · [[Uncertainty]] · [[Aruhe - Memorial Grove]] · [[Crissdalynn Khinriss]] · [[Talon Skarn]] · [[Deer-Stalker]] · [[Session-11-05-Otter-Hole]] · [[Session-11-07-False-Help]] · [[Session-11-00-Birds-of-a-Feather]]
 
 ## Battlemap
 

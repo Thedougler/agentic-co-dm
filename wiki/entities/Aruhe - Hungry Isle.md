@@ -3,7 +3,7 @@ title: Aruhe
 category: entities
 tags: [shattered-sea, region, aruhe]
 aliases: [Hungry Isle, Aruhe Hungry Isle]
-sources: ["[[Midchain]]", "Aruhe - Hungry Isle.md", "[[Aruhe - Hungry Isle]]", "[[Aruhe - Hungry Isle 2]]", "arc-blight-of-aruhe.md", "[[Aruhe - Beach]]", "[[Aruhe - Clear Lake]]", "[[Aruhe - Grasslands]]"]
+sources: ["[[Midchain]]", "Aruhe - Hungry Isle.md", "[[Aruhe - Hungry Isle]]", "[[Aruhe - Hungry Isle]]", "arc-blight-of-aruhe.md", "[[Aruhe - Beach]]", "[[Aruhe - Clear Lake]]", "[[Aruhe - Grasslands]]"]
 summary: "Aruhe is a vast untamed island in the eastern [[Midchain]]: about 500 miles end to end and about 150 miles across at its waist. No settlement is visible from offshore. [[Karath]] sits close to one wes"
 provenance:
   extracted: 1.0
@@ -65,7 +65,7 @@ Aruhe is an old volcanic island, about five hundred miles end to end, with green
 
 The clearest physical pattern is the root network. Pale, luminous roots run wrist-thick to thigh-thick from the shelf above [[Aruhe - Clear Lake|Clear Lake]], through [[Aruhe - The Marshes|the Marshes]], and into both unmarked graves in [[Aruhe - Memorial Grove|Memorial Grove]]. In [[Aruhe - Lava Tubes|the lava tubes]], the surface forest reaches down as root curtains. A wrecked raiding hull sits above the tideline at [[Aruhe - Beach|Western Landing]], marking the known entry point and the collapse of the Calveno raid landing.
 
-Across those bands, [[Aruhe - Redheart Berry]] beads along wet lowlands and river margins, while [[Aruhe - Giant's Guava]] hangs from high forest branches. Fallen fruit can be foraged; fruit taken from a living branch is a claim against the island.
+Across those bands, [[Redheart Berry]] beads along wet lowlands and river margins, while [[Giant's Guava]] hangs from high forest branches. Fallen fruit can be foraged; fruit taken from a living branch is a claim against the island.
 
 Aruhe distinguishes between receiving and taking. Fallen fruit and genuine offerings can be accepted without triggering the island's hostility. A living claim is different: taking fruit from a branch, cutting living growth, trapping an animal, or treating the island as property draws aligned local life into response. [[Taking on Aruhe]] is the reference for adjudicating those claims.
 
@@ -87,4 +87,4 @@ The inward pull of Aruhe leads toward [[Aruhe - Memorial Grove|Memorial Grove]],
 
 The island's excess comes from [[Hinewai|Hinewai]] preserving a grave at [[Aruhe - Memorial Grove|Memorial Grove]]. The Death Bloom is not a portable object hidden somewhere on the island. It is the tree, both graves, the black-flower ring, the bound soil, and the relationship holding them together. That grief has made Aruhe's life systems overactive: too much growth, too much repair, too much adaptation, and a violent response to taking.
 
-Right now, Aruhe matters because the Calveno raid broke here. Some survivors are aboard [[Uncertainty]], more remain inland, and the crew can still recover people before the island kills them or absorbs them into its local pressures. The broader campaign handle is to survey a possible [[Tangle]] anchor without treating a living island as property, rescue the living, preserve a route back to the sea, and decide what to do about the grief at the island's heart.
+Right now, Aruhe matters because the Calveno raid broke here. Some survivors are aboard [[Uncertainty]], more remain inland, and the crew can still recover people before the island kills them or absorbs them into its local pressures. The broader campaign handle is to survey a possible Tangle <!-- broken link: no match found --> anchor without treating a living island as property, rescue the living, preserve a route back to the sea, and decide what to do about the grief at the island's heart.

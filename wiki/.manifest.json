@@ -1,8 +1,8 @@
 {
   "version": 1,
   "stats": {
-    "total_sources_ingested": 59,
-    "total_pages": 109
+    "total_sources_ingested": 78,
+    "total_pages": 172
   },
   "/Users/nick/agentic-co-dm/wiki/_raw/arc-blight-of-aruhe.md": {
     "content_hash": "sha256:df40626cb59fcde17c3d5cd4d9079e7c57335a0e5e10334af00d40f3efe05598",
@@ -1485,6 +1485,231 @@
       "entities/Aruhe - Bloodhawk.md"
     ],
     "pages_updated": [],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/00 Shattered Sea.md": {
+    "content_hash": "sha256:e56dcfe03005ade4f48e9d62037b211fb5f588a7e028f36303098914d784cc9f",
+    "last_ingested": "2026-09-13T19:30:00Z",
+    "pages_produced": [
+      "entities/Shattered Sea.md",
+      "entities/Bring the Pearl of Souls to Umberlee.md",
+      "entities/Complete the Maw map pilgrimage.md",
+      "entities/Grigori and the Crown hunt.md",
+      "entities/Sentinels and Countless.md",
+      "entities/Pearl signal across the boundary.md",
+      "entities/Catarina Da'Virelli.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/00 Story so far.md": {
+    "content_hash": "sha256:f9f68176a9a9927178cd1e27ee9c074c2be115e497240968942718f94a02f62f",
+    "last_ingested": "2026-09-13T19:35:00Z",
+    "pages_produced": [
+      "synthesis/Story So Far.md",
+      "entities/Geoffrey Draves.md",
+      "entities/Barnaby Rook.md",
+      "entities/Ket.md",
+      "entities/Master Kyzil.md",
+      "entities/Branca.md",
+      "entities/Iacopo Fieschi.md",
+      "entities/Rupert Knighton.md",
+      "entities/Osset.md",
+      "entities/Nightmantle.md",
+      "entities/Lavinia Sordi.md",
+      "entities/Zort.md",
+      "entities/Roka Sten.md",
+      "entities/Corbin Knighton.md",
+      "entities/Fate Spinner.md",
+      "entities/HCS Surety.md",
+      "entities/Long Sight Hunt.md",
+      "entities/Rule of Two.md",
+      "entities/Countless through the Maw seal.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Aleksander Malone.md": {
+    "content_hash": "sha256:f97a1a443364ffa160903d9bb8bf01f1c581025ecf7657d22004e830e5a7e65f",
+    "last_ingested": "2026-09-13T19:40:00Z",
+    "pages_produced": [
+      "entities/Aleksander Malone.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Antheri.md": {
+    "content_hash": "sha256:1b4169006f21c9532ec28d5f2d230d84c126a8b673eac39e9ae6b89a612514d2",
+    "last_ingested": "2026-09-13T19:45:00Z",
+    "pages_produced": [
+      "entities/Antheri.md",
+      "entities/Maw fissure and the tribute system.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Chain Council.md": {
+    "content_hash": "sha256:8648e78bd61316a8749905753959aba65d584740bcd411fd9097f3dda9aab00b",
+    "last_ingested": "2026-09-13T19:50:00Z",
+    "pages_produced": [
+      "entities/Chain Council.md",
+      "entities/Fisk's Captains.md",
+      "entities/Cosimo Verantio.md",
+      "entities/Aldric Drave.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Countless.md": {
+    "content_hash": "sha256:95d3a454ace1eef6c860a48d487b34f208b469f5a0c90ebfcc18a90758a3a90b",
+    "last_ingested": "2026-09-13T19:55:00Z",
+    "pages_produced": [
+      "entities/Countless.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Dravosi Crown.md": {
+    "content_hash": "sha256:67b1d6215c0d6ecd93e5a0b02b708d38123d30263394a069be72cab31817b09f",
+    "last_ingested": "2026-09-13T20:00:00Z",
+    "pages_produced": [
+      "entities/Dravosi Crown.md",
+      "entities/Governor Voss.md",
+      "entities/Aldous Draves.md",
+      "entities/Fort Crestwall.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Dravosi Deckhand.md": {
+    "content_hash": "sha256:92d33862b4e51221e77a9c8f4fbb87ce5f56bd69da7464dc4982960624cd339a",
+    "last_ingested": "2026-09-13T20:05:00Z",
+    "pages_produced": [
+      "entities/Dravosi Deckhand.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Grung Elite Warrior.md": {
+    "content_hash": "sha256:173f41b21c7dd061cd5327d4304426f86804e323ea041e9fe74a548bdccc4815",
+    "last_ingested": "2026-09-13T20:10:00Z",
+    "pages_produced": [
+      "entities/Grung Elite Warrior.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Rattkin Runs and Black-Jaw Run.md": {
+    "content_hash": "sha256:a140fbe62df8b7a60146be6271c996d805b82ee52fffb64d67edf075fcf46bbd",
+    "last_ingested": "2026-09-13T20:15:00Z",
+    "pages_produced": [
+      "entities/Rattkin Runs and Black-Jaw Run.md",
+      "entities/Rattkin.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Sentinels of the Eyrie.md": {
+    "content_hash": "sha256:245b5b5e2b7067e762c8f62f59d9f40424a4efcbe20b4a16f493aef292dac4bd",
+    "last_ingested": "2026-09-13T20:20:00Z",
+    "pages_produced": [
+      "entities/Sentinels of the Eyrie.md",
+      "entities/Schism's Third Name.md",
+      "entities/Soul Incarnate's Watch.md",
+      "entities/Long Reach.md",
+      "entities/Long Sight.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Sunkline.md": {
+    "content_hash": "sha256:127d4873d68afb3f466cbc0265c7c08106b6273213685482b2d7fa78eff32fb0",
+    "last_ingested": "2026-09-13T20:25:00Z",
+    "pages_produced": [
+      "entities/Sunkline.md",
+      "entities/Adriana Tarquine.md",
+      "entities/Yevgenia Sorrel.md",
+      "entities/Petera Ngata.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Tangle.md": {
+    "content_hash": "sha256:c59b94476e0f0a3e53943165d450f1bb13001e4545804a60d4d44fb93805b3ed",
+    "last_ingested": "2026-09-13T20:30:00Z",
+    "pages_produced": [
+      "entities/Tangle.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Tessarine Concordat.md": {
+    "content_hash": "sha256:35e634c776e0ac9a638916bbe26a0170ffbce863f1c5bebfb6a71c6158425fc1",
+    "last_ingested": "2026-09-13T20:35:00Z",
+    "pages_produced": [
+      "entities/Tessarine Concordat.md",
+      "entities/Detto Kalash.md",
+      "entities/Oriana Becht.md",
+      "entities/Estratto.md",
+      "entities/Maret.md",
+      "entities/Samuel.md",
+      "entities/Amberreach.md",
+      "entities/Silkvane.md",
+      "entities/Tessarine Trade House.md",
+      "entities/Cosimo Verantio.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/The Gold-Caste Serene.md": {
+    "content_hash": "sha256:e96e263b59565ec91fb4724f2d496b3c9c9aa4f122495b35d3223a6455148443",
+    "last_ingested": "2026-09-13T20:40:00Z",
+    "pages_produced": [
+      "entities/The Gold-Caste Serene.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Thunk.md": {
+    "content_hash": "sha256:bbd0d0439a4106b78e9463499b55df774e5938b5bfcfbaa002e47a261efa628a",
+    "last_ingested": "2026-09-13T20:45:00Z",
+    "pages_produced": [
+      "entities/Thunk.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Umberlee.md": {
+    "content_hash": "sha256:46d41c8d9d1f32e17d572f57a69dce44f6ebf4a25d127e81c125f7eb6af7bdfb",
+    "last_ingested": "2026-09-13T20:50:00Z",
+    "pages_produced": [
+      "entities/Umberlee.md",
+      "entities/Umberlee - Branca.md",
+      "entities/Tithe of the Bitch Queen.md",
+      "entities/Valkur.md",
+      "entities/Leviathan.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Voyvode.md": {
+    "content_hash": "sha256:0ee64d210ec0c2baaf8c9914c0ebe6a6f26e41941d00e5f5f979c9dc2308e18b",
+    "last_ingested": "2026-09-13T20:55:00Z",
+    "pages_produced": [
+      "entities/Voyvode.md",
+      "entities/Branimir Karsovine.md",
+      "entities/Marta Kessler.md"
+    ],
+    "source_type": "document",
+    "project": "shattered-sea"
+  },
+  "/home/box/agentic-co-dm/wiki/_raw/Waveservants.md": {
+    "content_hash": "sha256:eb8a6497253fe7432fef62ff50051ed616524c57128cd6014335b2e80b1caede",
+    "last_ingested": "2026-09-13T21:00:00Z",
+    "pages_produced": [
+      "entities/Waveservants.md"
+    ],
     "source_type": "document",
     "project": "shattered-sea"
   }

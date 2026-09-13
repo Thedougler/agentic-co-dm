@@ -1,12 +1,21 @@
 ---
+title: Session 11 — Aftermath
+category: journal
+tags: [session-prep, run-guide, shattered-sea, resolution]
+sources:
+  - "journal/sessions/shattered-sea/11/Session-11-10-Aftermath.md"
+created: 2026-09-13
+updated: 2026-09-13
 type: session-prep
+kind: resolution
+lifecycle: proposed
+reveal: unrevealed
+summary: "Resolution after the Star Cut theft. Hawks hunt [[Talon Skarn]] only if the [[Fate Spinner]] left this fire; otherwise the camp splits, the mark speaks once, and the night ends short of the garden."
 campaign: shattered-sea
 session: 11
 status: ready
 date: 2026-09-06
 visibility: dm
-tags: [session-prep, run-guide]
-summary: Resolution after the Star Cut theft. Hawks hunt [[Talon Skarn]] only if the [[Fate Spinner]] left this fire; otherwise the camp splits, the mark speaks once, and the night ends short of the garden.
 ---
 # Session 11 — Aftermath
 
@@ -40,7 +49,7 @@ flexGrow=2
 
 ## Now
 
-The party is still on [[Aruhe - Quiet Forest Star Cut]] unless beat 8 sent them onto the column or into a knot. [[Crissdalynn Khinriss]] and the watch partner stand at the east fire's north edge. Sleeping rolls line both jungle walls. The north mouth is 40 feet of packed dirt from the coals. A 30-foot move from the fire stays on the aisle. A 60-foot Dash does not reach [[Aruhe - Quiet Forest Spoke Ring|Spoke Ring]], the beach, or [[Uncertainty]]. This dirt is ordinary ground. [[Crissdalynn Khinriss]] uses her aarakocra fly speed from her sheet. The wood beyond either jungle wall is Difficult Terrain and heavily obscured beyond 10 feet. If the party pulled [[Matteo Scola]] free, he is still on this dirt.
+The party is still on [[Aruhe - Quiet Forest Star Cut]] unless beat 8 sent them onto the column or into a knot. [[Crissdalynn Khinriss]] and the watch partner stand at the east fire's north edge. Sleeping rolls line both jungle walls. The north mouth is 40 feet of packed dirt from the coals. A 30-foot move from the fire stays on the aisle. A 60-foot Dash does not reach [[Aruhe - Quiet Forest Spoke Ring|Spoke Ring]], the beach, or [[Uncertainty]]. This dirt is ordinary ground. [[Crissdalynn Khinriss]] uses her aarakocra fly speed from her sheet. The wood beyond either jungle wall is Difficult Terrain and heavily obscured beyond 10 feet. If the party pulled Matteo Scola <!-- broken link: no match found --> free, he is still on this dirt.
 
 **Held.** The steal was disrupted. The [[Fate Spinner]] is on [[Crissdalynn Khinriss]], on the packed dirt at this watch, or recovered. [[Talon Skarn]] is already in Quiet north of the star-cut, empty-handed and more than 60 feet away. No hawk stoop follows because nothing left this island. Start with Initial Narration.
 
@@ -52,7 +61,7 @@ The party is still on [[Aruhe - Quiet Forest Star Cut]] unless beat 8 sent them 
 
 **Knot.** If beat 9 sat at [[Aruhe - Quiet Forest Spoke Ring]], start at that fire. Open sky is above the leaf roof. Living [[Aruhe - Stonepear]] still hangs there.
 
-**Mark live.** Speak the last paragraph of Initial Narration. The garden words come once from beyond the firelight. Nobody at this fire walks toward them. Keep the [[Aruhe - Deerstalker]] off this card.
+**Mark live.** Speak the last paragraph of Initial Narration. The garden words come once from beyond the firelight. Nobody at this fire walks toward them. Keep the [[Deer-Stalker]] off this card.
 
 **Mark spent.** Cut that last paragraph. The people at this fire refuse to leave the firelight, and the living fruit hangs untouched.
 
@@ -82,7 +91,7 @@ The party is still on [[Aruhe - Quiet Forest Star Cut]] unless beat 8 sent them 
 ```
 
 ```col-md
-**Aftermath.** Show what changed, what it cost, and what the party can still pursue. This is not a fight to the death. Keep the [[Aruhe - Deerstalker]] off this card.
+**Aftermath.** Show what changed, what it cost, and what the party can still pursue. This is not a fight to the death. Keep the [[Deer-Stalker]] off this card.
 
 **Garden mouths.** Keep them unnamed. They listened, and they still want the garden. Sample: "She asked us to come admire her garden. This way. Leave the living plants."
 
@@ -130,7 +139,7 @@ Keep the [[Fate Spinner]] on [[Crissdalynn Khinriss]], or recover it from a talo
 | Place | Distance from the party | Cover | Narration |
 | --- | --- | --- | --- |
 | East fire / this watch | Here. [[Crissdalynn Khinriss]] and the watch partner stand at the fire's north edge. | Packed dirt. Clay bowls and sleeping rolls sit in this light. Grouped people here are not isolated. | ==_The people who sat up keep looking north, then back to the living fruit. Heat still rises from the east coals._== |
-| West rolls / guavas | 20 feet west of the coals, against the jungle wall. | Sleeping rolls and fallen [[Aruhe - Giant's Guava]] in the leaf litter. Open dirt to the aisle. | ==_Pink-gold guavas rest in the wet leaves while living fruit bends the branches above them. Sweet musk hangs in the air._== |
+| West rolls / guavas | 20 feet west of the coals, against the jungle wall. | Sleeping rolls and fallen [[Giant's Guava]] in the leaf litter. Open dirt to the aisle. | ==_Pink-gold guavas rest in the wet leaves while living fruit bends the branches above them. Sweet musk hangs in the air._== |
 | North mouth / star-cut | 40 feet north of the coals. [[Talon Skarn]] starts here on Stolen. | This was his exit. Packed dirt. No crown blocks a climb into the cut. | ==_The leaf roof splits above this mouth, and stars show between the crowns. Night air spills down onto the aisle._== |
 | Open sky | 40 feet up over the north mouth. The hunt is here on Stolen. | Exposed. The adult [[Aruhe - Bloodhawk]] will not follow into closed canopy or eight-foot grass. | ==_You see the lean peregrine in the open north mouth, a small quartz top held in a hooked blade. Above him, an enormous four-winged hawk folds its charcoal wings into a straight fall. Crimson feathers flash beneath the wings, and a ragged red crest streams behind the pale hooked beak. Smaller charcoal hawks follow the drop. Wind from the wings slams the crowns, and you feel the buffet even from this dirt._== |
 | Jungle walls | 15 feet off either side of the aisle. | Difficult Terrain. Heavily obscures beyond 10 feet. A body in that wood is isolated. | ==_Trunks and hanging roots crowd both sides of the aisle. Water ticks from the leaves in that darkness, and anyone who enters it is off the lane._== |
@@ -151,7 +160,7 @@ Keep the [[Fate Spinner]] on [[Crissdalynn Khinriss]], or recover it from a talo
 | Walk toward the garden tonight | Agreeing to go admire the garden, or walking Quiet north | Commit | The party commits past this valley. The garden invitation stays open, but this is not [[Aruhe - Memorial Grove]] tonight. The scene ends. | Binary; no partial. | Binary; no partial. Walking north tonight still ends this scene short of the garden. |
 | Extract to [[Uncertainty]] | Influence: **Charisma (Persuasion)** to ask them to the ship, or walking south | `DC 15`, or Walk | Some people at this fire balk or refuse. If the party starts walking anyway, it keeps whoever comes. Rebuild toward the last grass, the river, the terrace line, the beach, or [[Uncertainty]]. The scene ends. | They listen, then look at the trees. The round is spent. | They refuse. The garden mouths remain, and living fruit still hangs. |
 | Sleep | Committing to rest on this aisle or back at [[Aruhe - Quiet Forest Spoke Ring]] | Commit | The night ends in this valley. The garden invitation stays open, but the party does not reach [[Aruhe - Memorial Grove]] tonight. The scene ends. | Binary; no partial. | Binary; no partial. Sleep ends this scene. |
-| Take fallen fruit | **Intelligence (Nature)** or **Wisdom (Survival)** to sort fallen fruit from living stems. **Utilize** if that party member takes fruit already down. | `DC 10` | That party member takes only fruit already down, which is not a claim. If they eat it, use [[Aruhe - Giant's Guava]] or [[Aruhe - Stonepear]] as this fire's fruit. | That party member takes some living stems. That is an [[Taking on Aruhe]] claim, and the camp notices. | That party member strips living fruit. That is an [[Taking on Aruhe]] claim, and surrounding life converges in response. |
+| Take fallen fruit | **Intelligence (Nature)** or **Wisdom (Survival)** to sort fallen fruit from living stems. **Utilize** if that party member takes fruit already down. | `DC 10` | That party member takes only fruit already down, which is not a claim. If they eat it, use [[Giant's Guava]] or [[Aruhe - Stonepear]] as this fire's fruit. | That party member takes some living stems. That is an [[Taking on Aruhe]] claim, and the camp notices. | That party member strips living fruit. That is an [[Taking on Aruhe]] claim, and surrounding life converges in response. |
 
 Unforeseen intents use the same want: isolation is still how a body becomes prey, and the [[Fate Spinner]] either stayed or left. Rule from the zones and from whether the approach stays on this dirt, enters Open sky, addresses the camp, or ends in sleep.
 
@@ -178,7 +187,7 @@ Tick this clock only on Stolen, and only while someone remains in Open sky. If t
 
 **Scene dials.** Easy: Multiattack only. Do not recharge Canopy Dive. Do not spawn a second adult. Survivors who run are not extra enemies.
 
-Keep the [[Aruhe - Deerstalker]], [[Talon Vantyrus]], and [[Aruhe - Memorial Grove]] off this clock. Freeze in Open sky still ticks the hunt once.
+Keep the [[Deer-Stalker]], [[Talon Vantyrus]], and [[Aruhe - Memorial Grove]] off this clock. Freeze in Open sky still ticks the hunt once.
 ```
 ````
 
@@ -213,7 +222,7 @@ Keep the people at this fire unnamed.
 
 ## Backup
 
-[[Aruhe - Quiet Forest Star Cut]] · [[Session-11-09-Theft-on-the-Watch]] · [[Session-11-00-Birds-of-a-Feather]] · [[Crissdalynn Khinriss]] · [[Talon Skarn]] · [[Fate Spinner]] · [[Aruhe - Bloodhawk]] · [[Aruhe - Young Bloodhawk]] · [[Aruhe - Giant's Guava]] · [[Aruhe - Stonepear]] · [[Taking on Aruhe]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Deerstalker]] · [[Matteo Scola]] · [[Uncertainty]] · [[Aruhe - Memorial Grove]]
+[[Aruhe - Quiet Forest Star Cut]] · [[Session-11-09-Theft-on-the-Watch]] · [[Session-11-00-Birds-of-a-Feather]] · [[Crissdalynn Khinriss]] · [[Talon Skarn]] · [[Fate Spinner]] · [[Aruhe - Bloodhawk]] · [[Young Bloodhawk]] · [[Giant's Guava]] · [[Aruhe - Stonepear]] · [[Taking on Aruhe]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Deer-Stalker]] · Matteo Scola <!-- broken link: no match found --> · [[Uncertainty]] · [[Aruhe - Memorial Grove]]
 
 ## Battlemap
 

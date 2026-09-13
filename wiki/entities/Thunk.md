@@ -5,17 +5,18 @@ tags: [shattered-sea, npc, calveno]
 sources:
   - "wiki/_archive/Thunk.md"
   - "Thunk"
+  - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/boarding-of-the-surety/npc.thunk.md"
 summary: Orc ship gunner and field smith aboard Uncertainty; his 1,000 gp cannon order leaves the crew with an unresolved debt.
 provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.57
+base_confidence: 0.65
 lifecycle: canon
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T06:23:47Z
-updated: 2026-09-12T07:50:00Z
+updated: 2026-09-13T20:45:00Z
 type: npc
 reveal: revealed
 campaign: shattered-sea
@@ -115,4 +116,35 @@ The creditor, terms, and purpose remain open. Use the debt as generosity, levera
 
 # Combat
 
-If Thunk enters a fight, use [[monsters/Thunk|Thunk]] — the legacy fight sheet. This page keeps only his NPC cues and ship utility.
+CR 1/4 Medium orc. Relentless Endurance, Gunner's Cadence, Smith's Hand, Powder Sense, and warhammer. The fight sheet lives on this NPC page.
+
+```statblock
+layout: Basic 5e Layout
+name: Thunk
+size: Medium
+type: entity
+subtype: orc
+alignment: neutral good
+ac: 13
+hp: 19
+hit_dice: 2d10+8
+speed: "30 ft."
+stats: [20, 10, 18, 6, 10, 12]
+skillsaves:
+  - athletics: 7
+senses: "darkvision 60 ft., passive Perception 10"
+languages: "Common, Orc"
+cr: 1/4
+traits:
+  - name: Relentless Endurance
+    desc: "When reduced to 0 hit points but not killed outright, Thunk drops to 1 hit point instead. Once used, this feature can't be used again until he finishes a long rest."
+  - name: Gunner's Cadence
+    desc: "When Thunk mans a cannon or other ship weapon, he counts as two crew for the purpose of determining how many weapons can be manned simultaneously."
+  - name: Smith's Hand
+    desc: "Thunk is proficient with smith's tools. He can maintain, repair, and modify metal equipment in the field given materials and time."
+  - name: Powder Sense
+    desc: "Thunk has advantage on checks involving cannon maintenance, powder handling, or assessing explosive materials. He cannot explain his reasoning. He is nevertheless correct."
+actions:
+  - name: Warhammer
+    desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) bludgeoning damage, or 10 (1d10 + 5) bludgeoning damage if used with two hands."
+```

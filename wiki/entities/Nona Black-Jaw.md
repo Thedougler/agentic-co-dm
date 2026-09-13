@@ -59,7 +59,7 @@ flexGrow=2
 flexGrow=1
 ===
 > [!narration] Nona Black-Jaw
-> Nona is a broad, pale-furred Rattkin woman who stands near the kitchen fire with a guarded door behind her. She keeps [[Enzo]] and [[Ruk]] between visitors and danger, and keeps the warm, thumb-polished [[Sending Stone (Nona's)|sending stone]] close enough to reach without looking. Her clipped questions make every favor sound like a route with a cost.
+> Nona is a broad, pale-furred Rattkin woman who stands near the kitchen fire with a guarded door behind her. She keeps [[Enzo]] and [[Ruk]] between visitors and danger, and keeps the warm, thumb-polished sending stone <!-- broken link: no match found --> close enough to reach without looking. Her clipped questions make every favor sound like a route with a cost.
 ```
 ````
 
@@ -140,7 +140,7 @@ Nona protects people through a network whose survival requires transactional pre
 
 ## Appearances
 
-- [[campaigns/shattered-sea/story/00 Story so far]]
+- 00 Story so far <!-- broken link: no match found -->
 - [[Pursue the Grung raiding fleet]]
 - [[Survey Aruhe as a Tangle anchor]]
 

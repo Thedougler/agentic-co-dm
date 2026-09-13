@@ -52,9 +52,9 @@ The Lava Tubes are the underworld beneath Aruhe's living surface: old volcanic p
 ---
 ## Who
 
-- [[Blackrail]] owns miles of the cave road in the fiction roster; it is a 40-foot cave centipede, not a combat encounter stored here.
-- [[Glass Crickets]] occupy root wells and skylight approaches; their stillness can warn of Blackrail country.
-- [[Cave Bats]] use skylights, wells, and the lava tubes as part of the underworld food cycle.
+- Blackrail <!-- broken link: no match found --> owns miles of the cave road in the fiction roster; it is a 40-foot cave centipede, not a combat encounter stored here.
+- Glass Crickets <!-- broken link: no match found --> occupy root wells and skylight approaches; their stillness can warn of Blackrail country.
+- Cave Bats <!-- broken link: no match found --> use skylights, wells, and the lava tubes as part of the underworld food cycle.
 - Giant spiders, ordinary, use the dark passages.
 - [[Aruhe - Snakewood|Snakewood]] reaches down through the living root network rather than forming a separate subterranean flora.
 
@@ -65,7 +65,7 @@ The Lava Tubes are the underworld beneath Aruhe's living surface: old volcanic p
 - Pale curtains of living root hang through breaks in the ceilings and drip water from their tips. The roots are surface forest reaching down, not a separate flora.
 - The luminous root network points back toward the sick interior and stops at the verge of the last clearing's graves.
 - Cave seepage marks a route through the living cave toward [[Aruhe - Clear Lake|Clear Lake]].
-- [[Aruhe - Ghost Plum]] hangs beneath the wet root curtains, and [[Aruhe - Stonepear]] fruits beside the seepage where branches find cracks in the basalt. Fallen fruit can be foraged, while living fruit can be picked as a claim against Aruhe.
+- [[Ghost Plum]] hangs beneath the wet root curtains, and [[Aruhe - Stonepear]] fruits beside the seepage where branches find cracks in the basalt. Fallen fruit can be foraged, while living fruit can be picked as a claim against Aruhe.
 - Drips, wingbeats, echoes, and movement along stone make distance difficult to judge.
 - The tubes are a route through Aruhe's underworld, not proof of a hidden city or a single subterranean ruler.
 

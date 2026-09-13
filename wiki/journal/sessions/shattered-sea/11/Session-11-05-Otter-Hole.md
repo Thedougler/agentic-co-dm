@@ -1,12 +1,21 @@
 ---
+title: Session 11 — Rescue at the otter hole
+category: journal
+tags: [session-prep, run-guide, shattered-sea, cliffhanger]
+sources:
+  - "journal/sessions/shattered-sea/11/Session-11-05-Otter-Hole.md"
+created: 2026-09-13
+updated: 2026-09-13
 type: session-prep
+kind: cliffhanger
+lifecycle: proposed
+reveal: unrevealed
+summary: Cliffhanger rescue at Slack Basin. Two otters have taken a game of tag too far with a separated survivor; joining the game can pull them off him until they tire or get hungry.
 campaign: shattered-sea
 session: 11
 status: ready
 date: 2026-09-06
 visibility: dm
-tags: [session-prep, run-guide]
-summary: Cliffhanger rescue at Slack Basin. Two otters have taken a game of tag too far with a separated survivor; joining the game can pull them off him until they tire or get hungry.
 ---
 # Session 11 — Rescue at the otter hole
 
@@ -68,7 +77,7 @@ Living prints and the blood trail climb 20 feet north into the jungle wall. Gold
 ```
 
 ```col-md
-**[[Matteo Scola]].** Until the party pulls him onto the bank, call him the man in the grey shirt.
+**Matteo Scola <!-- broken link: no match found -->.** Until the party pulls him onto the bank, call him the man in the grey shirt.
 
 - **Look:** His lip is split, one boot is missing, and his shirt is grey and salt-stiff. He clings to hanging roots 20 feet north with his hips in the slack.
 - **Want:** He wants this bank and thinks the otters are killing him. He went back for the pack after the others climbed out. He does not name the woman.
@@ -101,7 +110,7 @@ If anyone joins this round by entering the water, throwing a toy, or chasing, th
 
 **Combat mode:** If the party commits to killing the [[Aruhe - River Otter]], or Hunt starts from an attack, fishing, or pulling a dead body or pack, stop the clock and run the embedded statblocks.
 
-If a party member takes open valley air, that party member leaves this hole for hawk sky. Point at a [[Aruhe - Young Bloodhawk]].
+If a party member takes open valley air, that party member leaves this hole for hawk sky. Point at a [[Young Bloodhawk]].
 ```
 
 ```col-md
@@ -183,7 +192,7 @@ The party takes the bloody-bank detour toward the smoke on [[Aruhe - Quiet Fores
 
 ## Backup
 
-[[Aruhe - River Slack Basin]] · [[Aruhe - Quiet Forest Cutoff Lip]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - River Otter]] · [[Matteo Scola]] · [[Taking on Aruhe]] · [[Aruhe - River - Line Bank]] · [[Aruhe - Grasslands]] · [[Aruhe - Young Bloodhawk]] · [[Session-11-00-Random-Tables]] · [[Session-11-04-What-They-Ate]] · [[Session-11-06-Farthest-Camp]] · [[Session-11-00-Birds-of-a-Feather]]
+[[Aruhe - River Slack Basin]] · [[Aruhe - Quiet Forest Cutoff Lip]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - River Otter]] · Matteo Scola <!-- broken link: no match found --> · [[Taking on Aruhe]] · [[Aruhe - River - Line Bank]] · [[Aruhe - Grasslands]] · [[Young Bloodhawk]] · [[Session-11-00-Random-Tables]] · [[Session-11-04-What-They-Ate]] · [[Session-11-06-Farthest-Camp]] · [[Session-11-00-Birds-of-a-Feather]]
 
 ## Battlemap
 

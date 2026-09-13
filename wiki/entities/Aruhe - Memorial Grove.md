@@ -65,7 +65,7 @@ The Grove is a place to look, remember, study, pay respect, map, listen, disting
 ---
 ## What
 
-- The central tree bears [[Aruhe - Redheart Berry]] in bright lower clusters and [[Aruhe - Giant's Guava]] above them. Fallen fruit can be foraged, while fruit picked from the living tree begins aging once removed.
+- The central tree bears [[Redheart Berry]] in bright lower clusters and [[Giant's Guava]] above them. Fallen fruit can be foraged, while fruit picked from the living tree begins aging once removed.
 - Two low unmarked graves sit beneath the tree. No root, fungus, insect, or seedling crosses either grave, although the surrounding island is hyper-fertile.
 - Black flowers form the ring and mark the boundary the mourners will not cross.
 - [[Aruhe - Stillbloom]] and [[Aruhe - Spiritpollen]] may mark forest approaches, the treeline, or sunbreak routes, but neither enters the still memorial clearing; the Grove's black-flower ring is a memorial boundary, not a Black Lotus patch.
