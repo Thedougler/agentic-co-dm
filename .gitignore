@@ -44,29 +44,6 @@ wiki/.trash/
 .pi/skills/
 .windsurf/skills/
 
-# Local pipx wiki-skill installs under the agent root (machine symlinks)
-.agents/skills/wiki-*
-!.agents/skills/wiki-ingest/
-!.agents/skills/wiki-ingest/**
-.agents/skills/claude-history-ingest
-.agents/skills/code-understand
-.agents/skills/codex-history-ingest
-.agents/skills/copilot-history-ingest
-.agents/skills/cross-linker
-.agents/skills/daily-update
-.agents/skills/graph-colorize
-.agents/skills/hermes-history-ingest
-.agents/skills/impl-validator
-.agents/skills/llm-wiki
-.agents/skills/memory-bridge
-.agents/skills/obsidian-layout-adjustment
-.agents/skills/openclaw-history-ingest
-.agents/skills/pi-history-ingest
-.agents/skills/session-brain
-.agents/skills/session-search
-.agents/skills/skill-creator
-.agents/skills/tag-taxonomy
-.agents/skills/vault-skill-factory
 # Python
 __pycache__/
 *.pyc
