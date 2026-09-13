@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """Schedulable wiki health lint. Wraps tools/lint_wiki.py. Adds no checks.
 
-Default (--hard): fail only on broken_links and missing_frontmatter.
---all: fail on any finding (same as tools/lint_wiki.py).
+Default: tools/lint_wiki.py --hard-only (owner-schema HARD).
+--all: fail on any finding.
 
 Usage (repo root):
   ./scripts/wiki-lint
   ./scripts/wiki-lint --json
   ./scripts/wiki-lint --all
-  ./scripts/wiki-lint --hard wiki
+  ./scripts/wiki-lint wiki
 """
 from __future__ import annotations
 
@@ -20,10 +20,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 LINT = ROOT / "tools" / "lint_wiki.py"
-HARD = ("broken_links", "missing_frontmatter")
 
 
-def run_lint(vault: Path, extra: list[str]) -> dict:
+def run_lint(vault: Path, extra: list[str]) -> tuple[int, dict]:
     cmd = [sys.executable, str(LINT), "--json", str(vault), *extra]
     proc = subprocess.run(cmd, capture_output=True, text=True)
     if proc.returncode not in (0, 1):
@@ -31,11 +30,7 @@ def run_lint(vault: Path, extra: list[str]) -> dict:
         raise SystemExit(proc.returncode)
     if not proc.stdout.strip():
         raise SystemExit("lint_wiki.py produced no JSON")
-    return json.loads(proc.stdout)
-
-
-def hard_fail(counts: dict) -> bool:
-    return any(int(counts.get(key, 0) or 0) > 0 for key in HARD)
+    return proc.returncode, json.loads(proc.stdout)
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -50,6 +45,8 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     extra: list[str] = []
+    if not args.all:
+        extra.append("--hard-only")
     for value in args.allow_lifecycle:
         extra.extend(["--allow-lifecycle", value])
     for value in args.allow_relationship_type:
@@ -58,22 +55,20 @@ def main(argv: list[str] | None = None) -> int:
     vault = Path(args.vault)
     if not vault.is_absolute():
         vault = (Path.cwd() / vault).resolve()
-    report = run_lint(vault, extra)
+    code, report = run_lint(vault, extra)
     counts = report.get("counts", {})
-    report["hard"] = list(HARD)
-    report["hard_fail"] = hard_fail(counts)
-    fail = any(counts.values()) if args.all else report["hard_fail"]
+    hard = list(report.get("schema", {}).get("hard") or ("broken_links", "missing_frontmatter"))
+    fail = bool(report.get("hard_fail")) if not args.all else code == 1
+    if args.all:
+        fail = any(int(counts.get(key, 0) or 0) > 0 for key in counts)
 
     if args.json:
         print(json.dumps(report, indent=2, sort_keys=True))
     else:
         pages = report.get("scope", {}).get("pages", "?")
         print(f"wiki-lint: {pages} pages, hard_fail={str(fail).lower()}")
-        print(
-            "hard: "
-            + ", ".join(f"{key}={counts.get(key, 0)}" for key in HARD)
-        )
-        soft = [f"{k}={v}" for k, v in sorted(counts.items()) if k not in HARD and v]
+        print("hard: " + ", ".join(f"{key}={counts.get(key, 0)}" for key in hard))
+        soft = [f"{k}={v}" for k, v in sorted(counts.items()) if k not in hard and v]
         if soft:
             print("soft: " + ", ".join(soft))
     return 1 if fail else 0
