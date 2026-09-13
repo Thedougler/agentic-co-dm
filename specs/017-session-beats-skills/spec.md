@@ -27,6 +27,10 @@
 - Q: Which skill is primary when creating or editing a lore wiki page? → A: New `lore-design` skill is primary for write/edit/create of a lore page.
 - Q: After `type: lore` exists, what should happen to the current ingest rule that maps a `lore` label to `item`? → A: Remove `lore`→`item`. World-truth notes use `type: lore`. Actual items stay `item`.
 - Q: Who writes the Canon Log when established lore changes after play? → A: Lore is not canon until players interact with or witness it; until then the DM may change it freely. `lore-design` omits Canon Log until play has a change to record. `session-wrapup` / `reconciling-session-evidence` append the log and update Current Truth.
+- Q: What must a new or edited quest wiki page contain to pass? → A: Summary (objective, why now, deadline); Situation; Stakes including walk-away; World in motion (driver and next move if uninterrupted); at least two independent leads. Extra headings omit-if-unused. Resolution omitted while unresolved.
+- Q: Which skill is primary when creating or editing a quest wiki page? → A: `narrative-islands` stays primary. Update it to fill `wiki/templates/quest.md`. No new skill.
+- Q: Who updates World in motion, portents, and the Quest log after the page exists? → A: `narrative-islands` owns all later updates, including rolls and the Quest log.
+- Q: Does `wiki/templates/quest.md` also become the page for fronts and encounters, or only for `type: quest`? → A: One situation type named `quest`. Retire `type: front` and `type: encounter`; those situations become quests.
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -198,6 +202,29 @@ One lore note answers one durable question about the world. Unrelated truths are
 5. **Given** `lore-design` after this feature, **When** an author follows it, **Then** it tells them to fill those jobs as part of the page.
 6. **Given** ingest after this feature, **When** a world-truth note is labeled `lore`, **Then** it is filed as `type: lore`, not remapped to `item`. **Given** a page that is actually an item, **When** it was previously labeled `lore`, **Then** it stays `item`.
 7. **Given** a lore page the players have not interacted with or witnessed, **When** the DM changes it, **Then** it is not `canon`, the change needs no Canon Log, and the DM may change it freely. **Given** a later session where the party interacts with or witnesses that lore, **When** wrapup or reconcile runs, **Then** Current Truth is updated if needed and a Canon Log row is appended.
+---
+
+### User Story 9 - Quest wiki pages use the new template (Priority: P2)
+
+A Co-DM creates or edits a named **quest** campaign page. They start from `wiki/templates/quest.md` (the scaffold provided for this feature). `narrative-islands` is primary for that page. Layout lists jobs for that kind. Pass is those jobs, not heading-order match. Omit unused sections. Track the situation, not a plotted sequence.
+
+A quest page is runnable at the table when it has: summary (objective, why now, deadline); Situation; Stakes including what continues if the party walks away; World in motion (the driver and its next move if uninterrupted); and at least two independent leads. Extra headings are omitted when unused. Resolution is omitted while the quest is unresolved. Theatre of the mind still owns `[!narration]` for the player-facing brief.
+
+`narrative-islands` states what to write and when the page is done. It describes work that has not been done yet as the work to do now. It fills `wiki/templates/quest.md` instead of minting quests from session-prep. After the page exists, `narrative-islands` owns later updates: World in motion, portents, rolls, Situation, status, and the Quest log. `world-tick` and wrapup do not take that job. No `quest-design` skill is added.
+
+**Why this priority**: `narrative-islands` already owns situation pages. There is no quest template or Layout row. Extra situation types (`front`, `encounter`) split the same job. Quest is the name for a durable sandbox situation.
+
+**Independent Test**: Give an author a job to create a named quest. `narrative-islands` is primary. The page starts from `wiki/templates/quest.md` and includes the named jobs. A reviewer can run the situation, name what continues if the party walks away, and point to at least two independent leads, without another format guide.
+
+**Acceptance Scenarios**:
+
+1. **Given** a job to create or edit a named quest, **When** the author writes the wiki page, **Then** `narrative-islands` is primary, they copy `wiki/templates/quest.md`, and they fill summary (objective, why now, deadline), Situation, Stakes including walk-away, World in motion (driver and next move if uninterrupted), and at least two independent leads.
+2. **Given** that page, **When** unused scaffold headings have no play-relevant content, **Then** they are omitted. **Given** an unresolved quest, **When** Resolution has no outcome yet, **Then** Resolution is omitted.
+3. **Given** `wiki/AGENTS.md`, **When** an author classifies the page, **Then** `type` may be `quest`, and Layout lists jobs for Quest.
+4. **Given** a quest page, **When** a reviewer inspects routes, **Then** there is no required sequence of party actions and at least two independent leads remain.
+5. **Given** `narrative-islands` after this feature, **When** an author follows it for a quest, **Then** it tells them to fill `wiki/templates/quest.md` and those jobs as part of the page. No `quest-design` skill exists.
+6. **Given** a later update to an existing quest, **When** portents, World in motion, or the Quest log change, **Then** `narrative-islands` is still primary, including any roll. `world-tick` and wrapup do not own those updates.
+7. **Given** a durable situation that would previously have been `type: front` or `type: encounter`, **When** the author files it, **Then** it is `type: quest` on `wiki/templates/quest.md`. Those two types are not used.
 
 ### Edge Cases
 
@@ -213,9 +240,12 @@ One lore note answers one durable question about the world. Unrelated truths are
 - After this feature, no remaining single skill contains the full chart plus all five type-card catalogs.
 - Existing Session 11 beats and spines are not rewritten solely to prove the split.
 - Companion notes (hazards tables) are not typed beats and do not load type skills.
-- Unused template sections on a new spell, vehicle, faction, or lore page are omitted; filled jobs stay.
+- Unused template sections on a new spell, vehicle, faction, lore, or quest page are omitted; filled jobs stay.
 - Ingest MUST NOT map `lore` to `item`. World-truth notes use `type: lore`. Actual items stay `item`.
-- A beat that needs a named craft, spell, faction, or lore note hands off to that wiki kind; the beat skill still owns the beat.
+- A beat that needs a named craft, spell, faction, lore note, or quest hands off to that wiki kind; the beat skill still owns the beat.
+- Night-only pressure stays a session-plan section. A durable situation page is `type: quest` on `wiki/templates/quest.md`, not session-prep. `type: front` and `type: encounter` are retired; those situations are quests.
+- After a quest page exists, `narrative-islands` owns later updates including rolls and the Quest log. `world-tick` does not advance quest portents. Wrapup does not own the Quest log.
+- Retiring `type: encounter` does not replace encounter-prep, traps-trials, or other fight/site crafts. Those still own math and sites. The wiki situation page is `type: quest`.
 - Existing faction pages are not rewritten solely to prove the new template. Existing pages labeled `lore` that are actually items stay `item`; they are not rewritten solely to prove the lore template.
 - A job that previously loaded `faction-prep` loads `faction-design` instead. `faction-prep` is not kept as a stub.
 - `faction-design` does not roll or canonize a future move. `world-tick` remains the advancement ritual and writes the log.
@@ -266,6 +296,12 @@ One lore note answers one durable question about the world. Unrelated truths are
 - **FR-037**: A job to write, edit, or create a lore page MUST use `lore-design` as its primary skill.
 - **FR-038**: The ingest remap `lore`→`item` MUST be removed. World-truth notes MUST use `type: lore`. Pages that are actually items MUST stay `item`.
 - **FR-039**: A lore page MUST NOT be `canon` until players interact with or witness it at the table. Until then the DM MAY change it freely, and Canon Log MUST be omitted. After that interaction or witnessing, `session-wrapup` or `reconciling-session-evidence` MUST update Current Truth when it changed and MUST append the Canon Log. `lore-design` MUST NOT invent table history.
+- **FR-040**: `wiki/templates/quest.md` MUST be the scaffold for campaign `type: quest`, matching the template provided for this feature.
+- **FR-041**: A new or edited quest page MUST include: summary (objective, why now, deadline); Situation; Stakes including what continues if the party walks away; World in motion (driver and next move if uninterrupted); and at least two independent leads. Extra scaffold headings MUST be omitted when unused. Resolution MUST be omitted while the quest is unresolved. Pass is those jobs, not heading-order match. The page MUST NOT prescribe a required sequence of party actions.
+- **FR-042**: Campaign `type` MUST include `quest`. Layout MUST list jobs for Quest matching FR-041.
+- **FR-043**: A job to write, edit, or create a quest page MUST use `narrative-islands` as its primary skill. `narrative-islands` MUST teach filling `wiki/templates/quest.md`. There MUST NOT be a `quest-design` skill.
+- **FR-044**: After a quest page exists, `narrative-islands` MUST remain the owner of later updates, including World in motion, portents, rolls, Situation, status, and the Quest log. `world-tick` MUST NOT advance quest portents. `session-wrapup` MUST NOT own the Quest log.
+- **FR-045**: Campaign situation pages MUST use `type: quest`. `type: front` and `type: encounter` MUST NOT be used. Situations that would have used those types MUST be `type: quest`.
 
 ### Key Entities
 
@@ -292,6 +328,7 @@ One lore note answers one durable question about the world. Unrelated truths are
 - **Lore page**: A named world-truth note. `type: lore`. One durable question. Jobs: At a Glance; Current Truth; At the Table. Extra headings omit-if-unused. Owner: `lore-design`. Not an `item`.
 - **lore-design**: The skill that is primary when writing, editing, or creating a lore page. It does not invent table history or mark lore `canon`.
 - **Canon Log**: How established lore changed at the table. Written by `session-wrapup` or `reconciling-session-evidence` after players interact with or witness the lore. Omitted until then.
+- **Quest page**: A named sandbox situation note. `type: quest`. Jobs: summary; Situation; Stakes including walk-away; World in motion; at least two independent leads. Resolution omitted while unresolved. Not a plotted sequence. Owner: `narrative-islands`, including later updates, rolls, and the Quest log. Replaces `type: front` and `type: encounter`.
 
 ## Success Criteria *(mandatory)*
 
@@ -321,13 +358,17 @@ One lore note answers one durable question about the world. Unrelated truths are
 - **SC-022**: Two reviewers classify write, edit, and create-content jobs for a lore page and agree `lore-design` is primary for 100% of those jobs.
 - **SC-023**: After this feature, 0% of newly ingested world-truth notes labeled `lore` are remapped to `item`. 100% of pages that are actually items remain `type: item`.
 - **SC-024**: 0% of lore pages the party has not interacted with or witnessed are `canon`. After wrapup or reconcile of a session where the party did interact with or witness that lore, 100% of those pages that changed have a new Canon Log row.
+- **SC-025**: 100% of new quest pages started from `wiki/templates/quest.md` include summary (objective, why now, deadline), Situation, Stakes including walk-away, World in motion (driver and next move if uninterrupted), and at least two independent leads. 0% of unresolved quest pages include a filled Resolution.
+- **SC-026**: Two reviewers classify write, edit, and create-content jobs for a quest page and agree `narrative-islands` is primary for 100% of those jobs. 0% of those jobs load a `quest-design` skill.
+- **SC-027**: After a quest page exists, 100% of portent, World in motion, and Quest log updates are done under `narrative-islands`. 0% of those updates are owned by `world-tick` or `session-wrapup`.
+- **SC-028**: After this feature, 0% of newly filed durable situation pages use `type: front` or `type: encounter`. 100% of those pages use `type: quest`.
 
 ## Assumptions
 
 - "Type of beat" means the five Beat Chart types (Hook, Development, Cliffhanger, Climax, Resolution), not one skill per subtype card. Cards stay inside their type skill.
 - The current session-beats blob is split into the composition skill plus the five type skills. The blob is not kept beside the split.
 - Method source is *Scripting the Game* (Pondsmith, with concepts from Flint Dille, R. Talsorian Games, 2020), as already adapted for this campaign: Beat Chart rules plus player-agency gates. Skills teach the methods; they do not paste the source text.
-- Session 11 cockpit format, session-folder filing, Work accept-before-wiki, live-beat assembly, theatre of the mind, and encounter/trap/place/monster crafts stay as they are for beats. This feature also adds spell, vehicle, faction, and lore wiki kinds: templates, Layout jobs, `vehicle-design` updated to fill the vehicle sheet, a new `spell-design` skill, a new `faction-design` skill, and a new `lore-design` skill so those pages are runnable. `faction-prep` is removed. The ingest remap `lore`→`item` is removed. `world-tick` is updated to append the faction-turn log and still owns off-screen faction advancement. The faction page owns the agenda clock; `hot.md` may point at the faction and does not store a second clock. Lore pages use `wiki/templates/lore.md` and the FR-035 jobs. Lore is not canon until players interact with or witness it; wrapup/reconcile then own Current Truth updates and the Canon Log. New skills and major skill redesigns dispatch to Claude Code (minimal prompt, Opus 4.6 medium). `AGENTS.md` tables, templates, and small tweaks to established files stay with the session agent. A Claude Code usage limit defers only that job unless FR-026's Codex fallback applies.
-- Creating content for a beat means filling that beat's jobs (situation, pressure, spoken opening, procedure, landing), then handing off to existing crafts when those crafts own the work, including vehicle, spell, faction, and lore pages when a beat needs a named craft, spell, faction, or lore note.
+- Session 11 cockpit format, session-folder filing, Work accept-before-wiki, live-beat assembly, theatre of the mind, and encounter/trap/place/monster crafts stay as they are for beats. This feature also adds spell, vehicle, faction, lore, and quest wiki kinds: templates, Layout jobs, `vehicle-design` updated to fill the vehicle sheet, a new `spell-design` skill, a new `faction-design` skill, and a new `lore-design` skill so those pages are runnable. `faction-prep` is removed. The ingest remap `lore`→`item` is removed. `world-tick` is updated to append the faction-turn log and still owns off-screen faction advancement; it does not advance quest portents. The faction page owns the agenda clock; `hot.md` may point at the faction and does not store a second clock. Lore pages use `wiki/templates/lore.md` and the FR-035 jobs. Lore is not canon until players interact with or witness it; wrapup/reconcile then own Current Truth updates and the Canon Log. Quest pages use `wiki/templates/quest.md` and the FR-041 jobs; `narrative-islands` is primary, is updated to fill that template, and owns later quest updates including rolls and the Quest log. No `quest-design` skill is added. Durable sandbox situations are `type: quest` only; `type: front` and `type: encounter` are retired. New skills and major skill redesigns dispatch to Claude Code (minimal prompt, Opus 4.6 medium). `AGENTS.md` tables, templates, and small tweaks to established files stay with the session agent. A Claude Code usage limit defers only that job unless FR-026's Codex fallback applies.
+- Creating content for a beat means filling that beat's jobs (situation, pressure, spoken opening, procedure, landing), then handing off to existing crafts when those crafts own the work, including vehicle, spell, faction, lore, and quest pages when a beat needs a named craft, spell, faction, lore note, or quest.
 - A cold open is not a Hook and is out of scope for the beat skills.
 - Out of scope: rewriting Session 11 to prove the split; Foundry staging; a second pacing system beside the Beat Chart; one skill per beat-subtype card; changing who owns cockpit layout or spoken player text.
