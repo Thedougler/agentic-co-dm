@@ -14,16 +14,28 @@ import json
 import re
 from pathlib import Path
 from typing import Any
-DEFAULT_LIFECYCLES = {"draft", "reviewed", "verified", "disputed", "archived"}
+
+OWNER_LIFECYCLES = {"draft", "proposed", "accepted", "rejected", "canon"}
+DEFAULT_LIFECYCLES = set(OWNER_LIFECYCLES)
 DEFAULT_RELATIONSHIPS = {
     "extends", "implements", "contradicts", "derived_from", "uses", "replaces", "related_to"
 }
 REQUIRED = ("title", "category", "tags", "sources", "created", "updated")
 CAMPAIGN_REQUIRED = ("type", "lifecycle", "reveal")
-CAMPAIGN_TYPES = {
+OWNER_TYPES = {
     "npc", "place", "faction", "item", "creature", "vehicle", "spell",
+    "lore", "quest", "region",
     "session-prep", "session", "recap", "work",
 }
+CAMPAIGN_TYPES = set(OWNER_TYPES)
+HARD_KEYS = (
+    "broken_links",
+    "missing_frontmatter",
+    "bad_type",
+    "bad_lifecycle",
+    "typed_relationships",
+)
+TOKEN = re.compile(r"`([^`]+)`")
 RESERVED_FILES = {"AGENTS.md", "index.md", "log.md", "hot.md"}
 SKIP_DIRS = {".obsidian", "_archive", "_archives", "_raw", "_readouts", "_meta", "templates"}
 
@@ -58,6 +70,21 @@ def normalize(value: str) -> str:
     value = value.split("#", 1)[0].strip().replace("\\", "/")
     value = re.sub(r"\.md$", "", value, flags=re.I)
     return value.casefold()
+
+
+def parse_owner_schema(path: Path) -> tuple[set[str], set[str]]:
+    types: set[str] = set()
+    lifecycles: set[str] = set()
+    if not path.is_file():
+        return types, lifecycles
+    for line in path.read_text(encoding="utf-8").splitlines():
+        stripped = line.lstrip()
+        tokens = TOKEN.findall(line)
+        if stripped.startswith("| `type`"):
+            types.update(token for token in tokens if token != "type")
+        elif stripped.startswith("| `lifecycle`"):
+            lifecycles.update(token for token in tokens if token != "lifecycle")
+    return types, lifecycles
 
 
 def load(vault: Path) -> tuple[dict[str, dict], dict[str, list[str]]]:
@@ -97,6 +124,8 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("vault", type=Path, nargs="?", default=Path("wiki"))
     parser.add_argument("--json", action="store_true", help="emit JSON")
+    parser.add_argument("--hard-only", action="store_true", help="exit nonzero only on HARD findings")
+    parser.add_argument("--schema-source", type=Path, help="Owner AGENTS.md (default: <vault>/AGENTS.md)")
     parser.add_argument("--allow-lifecycle", action="append", default=[])
     parser.add_argument("--allow-relationship-type", action="append", default=[])
     parser.add_argument("--required-trust-field", action="append", choices=("base_confidence", "lifecycle", "lifecycle_changed", "updated"), default=["base_confidence", "lifecycle"])
@@ -108,11 +137,21 @@ def main() -> int:
     args = parse_args()
     vault = args.vault.resolve()
     pages, lookup = load(vault)
-    lifecycles = DEFAULT_LIFECYCLES | set(args.allow_lifecycle)
+    schema_path = args.schema_source.resolve() if args.schema_source else vault / "AGENTS.md"
+    owner_types, owner_lifecycles = parse_owner_schema(schema_path)
+    types = CAMPAIGN_TYPES | owner_types
+    lifecycles = DEFAULT_LIFECYCLES | owner_lifecycles | set(args.allow_lifecycle)
     relationships = DEFAULT_RELATIONSHIPS | set(args.allow_relationship_type)
     result: dict[str, object] = {
         "scope": {"vault": str(vault), "pages": len(pages), "excluded_dirs": sorted(SKIP_DIRS)},
-        "schema": {"allowed_lifecycles": sorted(lifecycles), "allowed_relationship_types": sorted(relationships), "required_trust_fields": args.required_trust_field},
+        "schema": {
+            "source": str(schema_path) if schema_path.is_file() else None,
+            "allowed_types": sorted(types),
+            "allowed_lifecycles": sorted(lifecycles),
+            "allowed_relationship_types": sorted(relationships),
+            "required_trust_fields": args.required_trust_field,
+            "hard": list(HARD_KEYS),
+        },
         "findings": {},
     }
     findings: dict[str, Any] = result["findings"]  # type: ignore[assignment]
@@ -123,7 +162,7 @@ def main() -> int:
     findings["missing_summary"] = [rel for rel, item in pages.items() if not item["fields"].get("summary")]
     findings["long_summary"] = [{"page": rel, "chars": len(item["fields"]["summary"])} for rel, item in pages.items() if len(item["fields"].get("summary", "")) > 200]
     findings["bad_lifecycle"] = [{"page": rel, "value": item["fields"].get("lifecycle")} for rel, item in pages.items() if item["fields"].get("lifecycle") and item["fields"]["lifecycle"].strip("\"'") not in lifecycles]
-    findings["bad_type"] = [{"page": rel, "value": item["fields"].get("type")} for rel, item in pages.items() if item["fields"].get("type") and item["fields"]["type"].strip("\"'") not in CAMPAIGN_TYPES]
+    findings["bad_type"] = [{"page": rel, "value": item["fields"].get("type")} for rel, item in pages.items() if item["fields"].get("type") and item["fields"]["type"].strip("\"'") not in types]
     findings["missing_trust"] = [{"page": rel, "missing": [key for key in args.required_trust_field if not item["fields"].get(key)]} for rel, item in pages.items() if any(not item["fields"].get(key) for key in args.required_trust_field)]
 
     documents = {}
@@ -164,7 +203,6 @@ def main() -> int:
         "missing_from_index": sorted(set(pages) - index_targets),
         "broken_links": [item for item in broken if item["page"] == "index.md"],
     }
-
 
     relationship_findings: list[dict[str, object]] = []
     for rel, item in pages.items():
@@ -238,6 +276,8 @@ def main() -> int:
 
     counts = {key: count(key, value) for key, value in findings.items()}
     result["counts"] = counts
+    hard_fail = any(int(counts.get(key, 0) or 0) > 0 for key in HARD_KEYS)
+    result["hard_fail"] = hard_fail
     if args.json:
         print(json.dumps(result, indent=2, sort_keys=True))
     else:
@@ -250,6 +290,8 @@ def main() -> int:
                 print(f"\n{key}")
                 for item in items if isinstance(items, list) else items.values():
                     print(f"- {item}")
+    if args.hard_only:
+        return 1 if hard_fail else 0
     return 1 if any(counts.values()) else 0
 
 
