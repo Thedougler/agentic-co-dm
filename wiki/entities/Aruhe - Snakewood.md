@@ -4,6 +4,7 @@ category: entities
 tags: [shattered-sea, item, aruhe, hazard, flora]
 sources:
   - "house (user-supplied hazard capture; 2026-09-08)"
+  - "/workspace/midchain-ingest/group-a/monsters/Snakewood.md"
 summary: A canopy vine colony that attacks movement from above, grapples travelers, and steadily increases acid damage until they escape.
 provenance:
   extracted: 0.98
@@ -14,7 +15,7 @@ lifecycle: proposed
 lifecycle_changed: 2026-09-12
 tier: supporting
 created: 2026-09-12T11:10:00Z
-updated: 2026-09-12T11:10:00Z
+updated: 2026-09-13T19:57:00Z
 type: item
 reveal: unrevealed
 campaign: shattered-sea
@@ -47,3 +48,6 @@ relationships:
 - **Movement Instinct.** Snakewood attacks movement rather than creatures specifically. A thrown object, swinging pack, moving animal, *mage hand*, or similar distraction can trigger the ambush instead.
 - **Placement.** Adult colonies dominate sections of [[Aruhe - Quiet Forest|the Quiet]] and [[Aruhe - The Marshes|the Marshes]], especially above game trails and waterways. Younger Snakewood appears in [[Aruhe - Old Gardens|the Old Gardens]], and dense colonies hunt above [[Aruhe - The Mangroves|Mangrove channels]].
 - **Counterplay.** Keep another object moving elsewhere, bait the strike before passing, cut a captured creature free, stay beneath solid overhead cover, or avoid the connected canopy entirely.
+
+> [!warning] Canon conflict
+> A campaign monster drop also supplies a CR 6 Snakewood creature sheet. Live hazard facts are kept. See [[Work - Snakewood creature vs hazard]].^[ambiguous]

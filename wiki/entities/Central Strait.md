@@ -2,7 +2,7 @@
 title: "Central Strait"
 category: entities
 tags: ["shattered-sea", "region"]
-sources: ["Central Strait.md"]
+sources: ["Central Strait.md", "central-strait.md"]
 summary: "The primary shipping corridor between the two arcs; feels like a moving border."
 provenance:
   extracted: 1.0
@@ -13,7 +13,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T07:30:00Z
-updated: 2026-09-13T07:30:00Z
+updated: 2026-09-13T20:55:00Z
 type: region
 reveal: unrevealed
 campaign: shattered-sea
@@ -88,3 +88,13 @@ Quiet → Alert → Contested → Transformed: routine traffic → signals multi
 
 ## Geography ingest — working road
 The Strait is the shipping road between the two green arcs. [[Calder's Tooth and Port Tidefall]] owns the western mouth: every hull is supposed to stop, answer questions, and show papers. [[Nimmik Vollask]] works the water, and patrol cutters own the official lane; smart captains leave it when pilots and risk allow. The Strait's northern view is Crown water and Greyteeth; its southern exits feed the pilot-named bands of the [[Midchain]].
+
+## Scale and lanes
+
+The Strait runs some five hundred to six hundred miles between the [[Crown Islands]] and the [[Midchain]], a five-day crossing in a fast ship, and stretches sixteen hundred to twenty-four hundred miles west to east. The Scatter Current flows east. The Blue Lane is the unmarked fastest line; see [[Central Strait Crossing]]. [[Sandtable Shoal]] sits south of [[Aldenmere]] and shifts that lane slightly south.
+
+The Calven Roads are sheltered water south of [[Calven and Calveno]]. The Harwick Reach is deeper water south of [[Harwick]] where Crown patrol frigates stage. The Kalowe Run is the angled southern peel to [[Kalowe]]. At the eastern end the current turns north in a bend pilots call the Cold Turn, or the Fool's Assist; a ship that misses it rides north toward [[Stenmark]]'s cliffs.
+
+Pilots call the [[High Eyrie]] sea stack the Eyrie Light because spotting it confirms position, not because it carries an actual light. [[Stenmark]]'s signal station warns when the [[Drowned Maw]] acts odd.
+
+[[Master Kyzil]]'s search for [[Crissdalynn Khinriss]] passed through this water after he corrected course from east of [[Midchain]].

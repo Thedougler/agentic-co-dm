@@ -13,7 +13,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T07:30:00Z
-updated: 2026-09-13T07:30:00Z
+updated: 2026-09-13T21:10:00Z
 type: place
 reveal: unrevealed
 campaign: shattered-sea
@@ -29,9 +29,9 @@ region: "Southern Midchain"
 Southern Midchain fishing island where a planar alignment landed on the line between Common and Truespeak about three weeks ago; feels ordinary, wrong, and locally unrecognized.
 
 ## Canon
-- Two children are rewriting the island with arguments.
+- Two children are rewriting the island with arguments. The named source identifies them as [[Toby]] and [[Frankie]], with [[Billy]] as the third child who sent villagers to find heroes.
 - [[Delmar Fisk]] does not know Halewick exists. The Pearl signal's distant alignment has found another place to go wrong.
-- This is a stub: do not decide the children's identities, scope, or solution here.
+- Deaf people on the island keep un-overwritten memory. New commands need the utterance perceived; leaving the island does not undo a command that already landed.
 
 ## Connections
 - → [[Midchain]] · [[Pearl signal across the boundary]] · [[Drowned Maw]]

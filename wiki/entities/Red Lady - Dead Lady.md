@@ -5,6 +5,7 @@ tags: [shattered-sea, vehicle, ship, red-wake]
 aliases: [Red Lady, Dead Lady]
 sources:
   - "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md"
+  - "dead-lady-escalation.md"
 summary: Raised wreck serving Umberlee's Red Wake, with a Gargantuan hull that takes boats, carries evidence, and turns familiar lanes into a moving encounter.
 provenance:
   extracted: 0.95
@@ -15,7 +16,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T03:00:00Z
-updated: 2026-09-13T03:00:00Z
+updated: 2026-09-13T21:05:00Z
 type: vehicle
 reveal: unrevealed
 campaign: shattered-sea
@@ -74,6 +75,8 @@ The Red Lady, also called the Dead Lady, is a moving sign of [[Umberlee]]'s Red 
 ## Secrets (DM)
 
 The source leaves the exact wreck history, active mechanism, crew, and encounter timing unresolved. The original Red Lady was [[Delmar Fisk]]'s flagship, and [[Crissdalynn Khinriss]] pulled him from its crow's nest when the fleet sank.
+
+A later idea note says [[Umberlee]] starts taking payment herself after Delmar's deadline passed with no movement toward the Maw. Dumping cargo is tribute with no priest and no consent. The party first hears the red-ship rumor at [[Kalowe]]. Nobody has connected it to Delmar yet.
 
 ## Connections
 

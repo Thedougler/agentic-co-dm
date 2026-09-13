@@ -2,7 +2,7 @@
 title: "Drowned Maw"
 category: entities
 tags: ["shattered-sea", "place"]
-sources: ["Drowned Maw.md", "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md"]
+sources: ["the-drowned-maw.md", "the-drowned-maw-narration-appearance.md", "Drowned Maw.md", "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md"]
 summary: "A deep trench at the edge of charts where currents reverse and sailors refuse to say what lies beyond; feels hungry and load-bearing."
 provenance:
   extracted: 1.0
@@ -99,3 +99,7 @@ The northern and southern arcs pinch together into the [[Tail]] before the Maw: 
 - [[Fathomrush]] stages dives; [[High Eyrie]] watches since 1295 DR; [[Calder's Tooth / Port Tidefall]] has sealed staging orders; [[Outer Reach]] begins past the door with no map or resupply.
 
 **Provenance:** Dump source 2026-09-05; legacy `/Users/nick/shattered-sea/wiki/shattered-sea/region-drowned-maw.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/season-01.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/pearl-and-the-maw/index.md`.
+
+Blue-green Scatter shallows give way to a blue with no bottom. The surface goes flat. Seabirds turn back. Fish will not school. The air carries a low-tide smell of fish left on a beach in the sun.
+
+The trench runs 40 to 90 miles across along the eastern edge of the [[Verdant Scatter]]. Compasses drift within five miles. Most captains sail by stars and run it fast. Nobody anchors over the Maw.

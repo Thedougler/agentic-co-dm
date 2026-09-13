@@ -3,6 +3,7 @@ title: Story So Far
 category: synthesis
 tags: [shattered-sea, recap]
 sources:
+  - "season-02-arc.md"
   - "Story So Far - Sessions 01-10.md"
   - "Session 01 - Recap.md"
   - "Session 02 - Recap.md"
@@ -87,3 +88,5 @@ The crew is at and around [[Aruhe - Hungry Isle]] aboard mobile [[Uncertainty]].
 [[Nona Black-Jaw]]'s unspecified favor, the unread Otar scrap, the unscratched chair, [[Red Wake]], and the Karath captive pipeline remain unresolved.
 
 Session pages: [[journal/Session 01 - Recap]] through [[journal/Session 10 - Recap]].
+
+A Season 2 pitch names an open Midchain sandbox after the Calveno repair. Live Season 2 handle on this page remains the Hungry Isle until play moves it.

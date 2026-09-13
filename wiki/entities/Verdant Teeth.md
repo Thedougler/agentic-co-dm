@@ -81,3 +81,5 @@ Track which beach is open, which patrol has moved, whether the fleet has departe
 
 ## Geography ingest — five-island shape
 The Teeth are five country-scale rainforest islands, close enough that facing shores are hours apart but whose interiors take weeks. Jungle reaches the tide, pale reef rings the channels, and beach trade is selective; interiors remain closed. From west to east: [[Veth]] is the largest and has one sanctioned western beach; [[Sorn]] is the Botukuri farm heart with a purple garrison; [[Karath]] is loud, blackwater, chemical, and faces [[Aruhe - Hungry Isle]] across a channel about half a mile wide at the closest edge; [[Dreth]] is drowned forest with no named shoreline; [[Orak]] is raised karst linked to Dreth by shallows and a flooded channel. The five are not a generic island chain: each is country-scale and the beach is an interface, not an invitation.
+
+Five reef-fringed Grung-held islands sit in the middle of the [[Midchain]], with dense rainforest interiors, strict trade protocols, and lethal boundaries.

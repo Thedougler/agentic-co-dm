@@ -3,6 +3,7 @@ title: Umberlee
 category: entities
 tags: [shattered-sea, lore, deity, umberlee, sea]
 sources:
+  - "umberlee-pearl-fissure-erosion.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/location-umberlee-shrine-vel-orn.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/event-delmar-umberlee-bargain.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/pearl-and-the-maw/region-drowned-maw.md"
@@ -83,3 +84,5 @@ The [[Tithe of the Bitch Queen]] is a separate Sunken Crown hoard in tidal caves
 - [[Maw fissure and the tribute system]]
 - [[Tithe of the Bitch Queen]]
 - [[Delmar Fisk]]
+
+Umberlee's claim is categorical over material-plane water. As the Maw fissure widens, elemental water replaces trench water she can no longer feel as hers. She cannot complain without giving mortals a reason to stop paying. She never admits the fear. [[Auralis]] was never her rival; Antheri containment predates her Maw claim, not her godhood.
