@@ -19,6 +19,11 @@ summary: ""
      After combat, shared omit-if-empty owner sections in this order (Red Lady / Dead Lady practice):
      At a Glance → Secrets → Connections → At the Table → Provenance → Art.
      Pass is vehicle jobs in wiki/AGENTS.md Layout. Omit unused sections.
+
+     Known/Unknown distill: blank sheet/component lines are Unknown — do not repeat "not established" absences.
+     Numbers one-home: hull AC/HP (and other sheet numbers) live under Components/Sheet headings, not an unheaded blob.
+     Handling vs At the Table: one play loop — do not duplicate the same run advice in both.
+     Provenance is ownership/history facts only — forbid meta ingest Provenance on DM pages.
 -->
 
 # {{title}}
@@ -48,7 +53,7 @@ Named stations and current vs minimum complement.
 
 ## Handling
 
-Conditions, maneuvers, and limits that change a choice.
+Conditions, maneuvers, and limits that change a choice. Do not restate this loop under At the Table.
 
 ## Combat
 
@@ -70,11 +75,11 @@ Hidden or unearned truth (wreck cargo, true flag, who is hunting it). Prefer `[!
 
 ## At the Table
 
-How to run the craft tonight — approach, berth, pursuit, boarding choice. Omit when unused.
+How to run the craft tonight — approach, berth, pursuit, boarding choice. Omit when unused. Do not duplicate Handling.
 
 ## Provenance
 
-Chassis source, rename history, contested ownership. Omit when unused.
+Chassis source, rename history, contested ownership. Facts only — no ingest/process meta. Omit when unused.
 
 ## Art
 

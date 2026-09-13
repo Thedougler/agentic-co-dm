@@ -36,6 +36,8 @@ Completion: a DM reading downward does not meet the same setup three times befor
 
 ## Prose principles
 
+Owner-page **At the Table** (and similar run-tonight blocks): playable consequence only — cut design diary, RAW comparison, and balance commentary.
+
 Three gates in priority order. **Earn it** dominates — a line that sounds beautiful but changes nothing at the table is worse than a plain line that carries signal. A line that fails any gate gets rewritten.
 
 **Earn it.** The removal test: take the line out. If no choice, ruling, risk, resource, route, clock, NPC response, or spoken picture changes, the line is dead weight. Cut it. Dead weight takes common forms:
