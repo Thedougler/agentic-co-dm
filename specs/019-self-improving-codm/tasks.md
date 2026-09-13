@@ -13,7 +13,7 @@ description: "Task list for Self-Improving Co-DM"
 
 **Organization**: Tasks are grouped by user story so each story can be implemented and validated independently.
 
-**Writer**: Edits to `.agents/skills/session-wrapup/SKILL.md` are design-impact. `/speckit.implement` dispatches the designated writer with a scoped prompt (outcome, files, bounds, job) and `writing-for-agents`. Session agent writes `AGENTS.md`, `docs/agents/work.md`, `errors.md`, `scripts/error-ledger.py`, `wiki/templates/{encounter,rules,campaign-state,dm-intelligence}.md`, and `wiki/AGENTS.md` layout rows. No new skill. No new campaign `type`. No layout-kind frontmatter.
+**Writer**: Edits to `.agents/skills/session-wrapup/SKILL.md` are design-impact. `/speckit.implement` dispatches the designated writer with a scoped prompt (outcome, files, bounds, job) and `writing-for-agents`. Session agent writes `AGENTS.md`, `docs/agents/work.md`, `errors.md`, `scripts/error-ledger.py`, `wiki/templates/{encounter,rules,campaign-state,dm-intelligence}.md`, `wiki/AGENTS.md` layout rows, and the current-skill cleanup. No new skill. No new campaign `type`. No layout-kind frontmatter.
 
 ## Format: `[ID] [P?] [Story] Description`
 
@@ -32,7 +32,7 @@ description: "Task list for Self-Improving Co-DM"
 - System: `AGENTS.md`, `.agents/skills/`, `docs/agents/`
 - Wiki templates: `wiki/templates/encounter.md`, `rules.md`, `campaign-state.md`, `dm-intelligence.md`
 - Contract: `specs/019-self-improving-codm/contracts/self-improving-codm.md`
-- Do not add a `self-improve` skill. Do not wrap `qmd` or git. Do not add a tokenizer. Do not add `type: encounter` or `type: rules`.
+- Do not add a `self-improve` skill. Do not wrap `qmd` or git. Do not add a tokenizer. Do not add `type: encounter` or `type: rules`. Maintained skills and skill evaluations reference only current, available procedures; absent legacy commands are removed rather than preserved.
 
 ---
 
@@ -290,3 +290,8 @@ T033 wiki/templates/dm-intelligence.md type work
 ## Phase 10: Convergence
 
 - [X] T038 In `wiki/AGENTS.md` Approval, except layout moves and structure-only template rewrites that keep facts and `type` unchanged so agents do not wait on DM accept per FR-007, FR-041, FR-048 (contradicts)
+
+## Phase 11: Current Skill Pack
+
+- [X] T039 Remove `scripts/after-write` and every reference to it from maintained skills and skill evaluations; retain current filing and check guidance (FR-049).
+- [X] T040 Run a repository-wide reference scan and the feature fixture check, confirming no maintained skill or evaluation retains the removed command and all existing scenarios still pass (SC-031).

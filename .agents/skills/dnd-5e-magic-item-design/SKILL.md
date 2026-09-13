@@ -101,4 +101,4 @@ Copy those templates as scaffolds. Numbers live on one owner page.
 
 Complex items (magic weapons, relics, artifacts, sentient/cursed/evolving) add sections below only when they change the table. Do not add sections a simple item does not need.
 
-Run obsidian-markdown and applicable checks. Finish with `./scripts/after-write "design or revise item"`.
+Run obsidian-markdown and applicable checks.

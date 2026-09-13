@@ -193,7 +193,6 @@ One downward pass of the cockpit in Reading view.
 
 8. **File.** `obsidian-markdown` (wikilinks, real newlines, at-table scan, codeblock columns).
    The only callout on the card is `[!narration]`. Layout uses `col` / `col-md` fences, not `[!col]`.
-   `./scripts/after-write` on named paths.
 
 ## Lean Surface
 
@@ -459,7 +458,6 @@ owner image onto the card. Monster math → `homebrew-monsters-5e`. Check, save,
 DC, and player-interaction mechanics → `dnd5e-mechanics`. Do not invent canon,
 copy owner essays, or write player decisions.
 
-Finish with `./scripts/after-write "add run guide" -- path1 [path2…]`.
 
 ## Attribution
 

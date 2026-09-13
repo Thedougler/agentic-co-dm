@@ -6,7 +6,7 @@
 
 ## Summary
 
-Close the Co-DM improvement loop around 001: shared table aim, no stall on gaps, wrapup reflection with DM-gated campaign changes, and agent-owned efficiency (token cost, helpers, `errors.md` fill/drain, file/folder layout including llm-wiki).
+Close the Co-DM improvement loop around 001: shared table aim, no stall on gaps, wrapup reflection with DM-gated campaign changes, and agent-owned efficiency (token cost, helpers, `errors.md` fill/drain, file/folder layout including llm-wiki). Maintained skills contain only current, factual, actionable procedures; absent legacy commands are removed rather than preserved.
 
 No new skill. Standing rules in `AGENTS.md` and `docs/agents/work.md`. One wrapup skill add for the required reflection (design-impact). One agent-shaped helper for the repeating error-ledger job. Sitting cost is recorded as what was loaded and finished, not a tokenizer. Layout kinds are lookup grouping only: wiki Encounters, Rules, Campaign State, DM Intelligence; agent-facing System, Source Material. Existing campaign `type` stays. Table aim stays on the campaign hub, grouped under Campaign State. Four wiki copy-start templates exist for those wiki layout kinds (`session-prep`, `lore`, `lore`, `work`). Existing pages in those groups are rewritten onto the templates when facts stay the same.
 ## Technical Context
@@ -17,7 +17,7 @@ No new skill. Standing rules in `AGENTS.md` and `docs/agents/work.md`. One wrapu
 
 **Storage**: Repo-root `errors.md`; append-only sitting records; campaign hub wiki page for table aim (facts, DM accept; hub grouped under Campaign State); llm-wiki pages stay Markdown; Source Material stays staging (`wiki/_raw/`), not canon; wiki copy-start templates at `wiki/templates/encounter.md`, `rules.md`, `campaign-state.md`, `dm-intelligence.md`
 
-**Testing**: One fixture check at the public seam: ledger append/drain invariants, sitting record fields, layout findability (mixed dump of wiki layout kinds + agent-facing System/Source Material → one-kind load), wrapup reflection is chat Work, aim not copied onto DM Intelligence, four templates exist with the pinned `type` values, existing-page rewrite keeps facts. Do not snapshot instruction wording.
+**Testing**: One fixture check at the public seam: ledger append/drain invariants, sitting record fields, layout findability (mixed dump of wiki layout kinds + agent-facing System/Source Material → one-kind load), wrapup reflection is chat Work, aim not copied onto DM Intelligence, four templates exist with the pinned `type` values, existing-page rewrite keeps facts, and maintained skills contain no absent legacy command references. Do not snapshot instruction wording.
 
 **Target Platform**: Local DM workstation and any agent host that loads repository skills
 
@@ -71,8 +71,22 @@ specs/019-self-improving-codm/
 AGENTS.md
 docs/agents/work.md
 .agents/skills/session-wrapup/SKILL.md
+.agents/skills/copy-writer/SKILL.md
+.agents/skills/dnd-5e-magic-item-design/SKILL.md
+.agents/skills/encounter-prep/SKILL.md
+.agents/skills/obsidian-markdown/SKILL.md
+.agents/skills/pc-interview/SKILL.md
+.agents/skills/reconciling-session-evidence/SKILL.md
+.agents/skills/run-guide/SKILL.md
+.agents/skills/session-recap/SKILL.md
+.agents/skills/travel-events/SKILL.md
+.agents/skills/visual-aids/SKILL.md
+.agents/skills/world-tick/SKILL.md
+.agents/skills/obsidian-markdown/evals/evals.json
+.agents/skills/session-wrapup/evals/evals.json
 errors.md
 scripts/error-ledger.py
+scripts/after-write (removed)
 wiki/AGENTS.md
 wiki/templates/encounter.md
 wiki/templates/rules.md
@@ -80,7 +94,7 @@ wiki/templates/campaign-state.md
 wiki/templates/dm-intelligence.md
 ```
 
-**Structure Decision**: Keep existing owners. Standing loop lives in `AGENTS.md` + `work.md`. Reflection is a required wrapup chat step, not a new skill. Error ledger is a repo-root Markdown file operated by one helper. Sitting records append beside it (same helper or a sibling command). Wiki layout self-org is a standing rule, not an ingest-engine rewrite. Layout kinds do not add frontmatter or a new `type`. The four wiki layout kinds get copy-start templates under `wiki/templates/` and layout-table rows in `wiki/AGENTS.md`. Existing pages in those groups are rewritten onto the templates when facts stay the same.
+**Structure Decision**: Keep existing owners. Standing loop lives in `AGENTS.md` + `work.md`. Reflection is a required wrapup chat step, not a new skill. Error ledger is a repo-root Markdown file operated by one helper. Sitting records append beside it (same helper or a sibling command). Wiki layout self-org is a standing rule, not an ingest-engine rewrite. Layout kinds do not add frontmatter or a new `type`. The four wiki layout kinds get copy-start templates under `wiki/templates/` and layout-table rows in `wiki/AGENTS.md`. Existing pages in those groups are rewritten onto the templates when facts stay the same. Maintained skills are the current operational source; remove absent legacy procedures and compatibility guidance instead of adding shims.
 
 Implementation of the wrapup skill edit is **design-impact**. The session agent writes these Spec Kit artifacts, `AGENTS.md`, `work.md`, `errors.md`, the helper, the four templates, and the `wiki/AGENTS.md` layout rows. The wrapup skill is unmodified until `/speckit.implement` dispatches the designated writer.
 
@@ -98,6 +112,7 @@ None.
 - Confirm layout kinds (non-redundant only; wiki vs agent-facing; hub under Campaign State).
 - Confirm 016 dispatch only for wrapup.
 - Confirm four wiki templates without new `type` values; rewrite existing pages structure-only.
+- Confirm every maintained skill command and procedure is available and current; remove absent legacy references.
 ## Phase 1: Design
 
 - Model table aim, sitting, error entry, helper, layout move, layout kind, wiki template, reflection.

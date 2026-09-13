@@ -26,7 +26,7 @@
 - Q: Should Encounters, Rules, Campaign State, and DM Intelligence get wiki copy-start templates as new campaign page types, or as templates that leave the existing type list unchanged? → A: Templates for those four wiki groups; existing campaign type list unchanged.
 - Q: Which existing campaign type should a new Encounters, Rules, Campaign State, or DM Intelligence page use when copied from its template? → A: Encounters: `session-prep`; Rules: `lore`; Campaign State: `lore`; DM Intelligence: `work`.
 - Q: Should existing wiki pages in those four groups be rewritten onto the new templates, or do the templates apply only to new pages? → A: Rewrite existing pages in those four groups onto the new templates.
-- Q: Does rewriting those existing pages onto the templates wait for DM accept, or may agents do it without accept so long as page facts stay the same? → A: Agents rewrite without accept when facts stay the same; fact changes still wait on accept.
+- Q: Should skills retain references to absent legacy procedures? → A: No. Remove the absent `after-write` script and every skill or skill-evaluation reference to it. Skills contain only current, factual, actionable agent guidance; they provide no backwards-compatibility instructions.
 
 
 ## User Scenarios & Testing *(mandatory)*
@@ -143,8 +143,7 @@ As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize fi
 6. **Given** a change to wiki facts, **When** agents would file it, **Then** that change still waits on the DM accept-gate. Layout is not a path around canon.
 7. **Given** a one-off file that is not growing a mixed dump, **When** agents consider reorganizing, **Then** they leave it; growth, not tidiness, is the trigger.
 8. **Given** System or Source Material files mixed with wiki pages, **When** agents regroup, **Then** those files stay agent-facing; they are not filed as wiki canon.
-9. **Given** a new Encounters, Rules, Campaign State, or DM Intelligence wiki page, **When** it is created, **Then** a matching copy-start template exists, and the page uses `session-prep`, `lore`, `lore`, or `work` respectively (no new type value).
-10. **Given** existing Encounters, Rules, Campaign State, or DM Intelligence wiki pages, **When** the templates land, **Then** those pages are rewritten onto the matching templates without adding a campaign `type`, without moving table aim off the hub, and without a DM accept step when page facts stay the same.
+9. **Given** a skill or skill evaluation refers to an absent or legacy procedure, **When** agents maintain the skill pack, **Then** they remove that reference and any compatibility guidance rather than preserving or replacing the legacy procedure.
 
 ---
 
@@ -187,7 +186,7 @@ As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize fi
 - Asking the DM to approve folder names for helpers, ledgers, scripts, or wiki grouping: out of scope; agents own layout.
 - Changing a page's campaign `type` during a layout move: invalid; layout kinds group files, they do not replace `type`. Adding a layout kind that duplicates an existing `type` (Characters for `npc`, Places for `place`, and the other redundant names) is invalid. Filing Source Material or System files as wiki canon via layout is invalid.
 - Adding a campaign `type` for Encounters, Rules, Campaign State, or DM Intelligence: invalid. Those four have wiki copy-start templates; they stay layout kinds. New pages use `session-prep`, `lore`, `lore`, and `work` respectively. Existing pages in those four groups are rewritten onto those templates. System and Source Material do not get wiki templates.
-- Rewriting an existing Encounters, Rules, Campaign State, or DM Intelligence page onto its template while changing facts: invalid without accept. Structure-only rewrite is agent-owned.
+- A skill refers to an absent or legacy command: remove the reference and compatibility guidance; do not preserve a shim or backwards-compatibility path in the skill pack.
 
 ## Requirements *(mandatory)*
 
@@ -241,6 +240,7 @@ As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize fi
 - **FR-046**: Layout MUST NOT be used as a path around the canon accept-gate.
 - **FR-047**: The wiki MUST have copy-start templates for Encounters, Rules, Campaign State, and DM Intelligence. New pages from those templates MUST use existing campaign `type` values: Encounters `session-prep`, Rules `lore`, Campaign State `lore`, DM Intelligence `work`. Those templates MUST NOT add campaign `type` values. System and Source Material MUST NOT get wiki templates.
 - **FR-048**: Existing Encounters, Rules, Campaign State, and DM Intelligence wiki pages MUST be rewritten onto the matching copy-start templates. That rewrite MUST NOT add a campaign `type`. Table aim MUST remain on the campaign hub. Agents MUST rewrite without DM accept when page facts stay the same. A rewrite that would change wiki facts MUST still wait on the DM accept-gate.
+- **FR-049**: Skills and skill evaluations MUST reference only current procedures and tools present in the repository or its configured environment. Agents MUST remove absent, stale, inaccurate, vague, or wrong guidance and MUST NOT preserve it as backwards-compatibility instructions or a shim.
 
 ### Key Entities
 
@@ -296,6 +296,7 @@ As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize fi
 - **SC-028**: In that sample, 0% of wiki layout moves change page facts, and 100% keep links resolving.
 - **SC-029**: 0% of sampled wiki fact changes are filed as layout moves without the DM accept-gate.
 - **SC-030**: 100% of Encounters, Rules, Campaign State, and DM Intelligence have a wiki copy-start template. New pages from those templates use `session-prep`, `lore`, `lore`, and `work` respectively. Existing pages in those four groups are rewritten onto the matching templates. 0% of those templates add a campaign `type` value. 0% of System or Source Material files are wiki templates. 100% of sampled rewrites keep table aim on the hub. 0% of structure-only rewrites required DM accept. 0% of sampled fact-changing rewrites skipped the accept-gate.
+- **SC-031**: In a scan of the maintained skill pack, 100% of referenced commands and procedures are current and available in the repository or configured environment, and 0% of skills or skill evaluations retain the removed `after-write` command or backwards-compatibility guidance.
 
 ## Assumptions
 
@@ -310,5 +311,5 @@ As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize fi
 - Fun may still shape Work. Wiki facts still change only when the DM accepts a canon proposal. Wiki file and folder layout is not a fact change.
 - One reflection per wrapup is enough unless the DM asks for another.
 - Token cost is how much the Co-DM must read and write to finish the jobs. Agents manage it and decrease it objectively, including by creating and maintaining reusable agent-shaped helpers and by organizing files and folders — including the wiki (llm-wiki) — for agent lookup as the system grows. Quality is a constraint, not a trade. Fewer tokens that produce worse Work is not improvement. More tokens for the same jobs is not improvement unless they prevent a named failure. The DM is not asked to accept token-cost numbers, efficiency-only cuts, helpers, or layout.
-- The error ledger (`errors.md`) is agent-owned. Runtime failures fill it. Wiki improvements and other landed fixes drain matching entries. Drain without a fix is a defect. Leaving fixed errors in the ledger is wasted context.
+- Skills are current agent guidance, not a compatibility archive. When a procedure or tool is absent, stale, inaccurate, vague, or wrong, agents remove its guidance rather than maintaining a legacy path.
 - Out of scope: a Co-DM agent during a session; player accounts or player-operated feedback; autonomous rewrite of campaign **canon facts**; replacing existing content evaluation or instruction-redesign rules for D&D content guidance; replacing the campaign `type` enum; requiring Work for every layout kind; multi-campaign orchestration; non-5e rules systems; billing; replacing the DM; a hidden quality score; the DM managing or gating token cost, helpers, the error ledger, or layout; human-only wrappers; wrapping a command that already does the job; reorganizing one-off files for tidiness.

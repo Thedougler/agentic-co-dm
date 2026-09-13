@@ -53,11 +53,7 @@ are affected, load `decomposing-campaign-content` after the claim ledger exists.
    gated change, or retain as evidence/diagnostic. Preserve authored prose and provenance; never
    copy transcript wording throughout the vault or hand-author derived compiler output.
 
-Run applicable link/frontmatter/derived-state checks and finish writes with:
-
-```bash
-./scripts/after-write "reconcile session evidence"
-```
+Run applicable link, frontmatter, and derived-state checks.
 
 ## Completion
 

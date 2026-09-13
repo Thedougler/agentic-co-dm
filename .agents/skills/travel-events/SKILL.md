@@ -75,5 +75,5 @@ one-night event page.
 ## Completion
 
 Every event has derivation, named connection, advancement, choice surface, toll, independent
-if-ignored movement, and loose end. The leg has a landmark and arrival-changed line. Finish an
-authorized vault write with `./scripts/after-write "add travel event procedure"`.
+if-ignored movement, and loose end. The leg has a landmark and arrival-changed line. Run applicable
+checks and report the changed path.

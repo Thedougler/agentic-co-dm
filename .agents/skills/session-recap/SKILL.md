@@ -54,7 +54,7 @@ If the DM rejects, write nothing.
 
 ## Finish
 
-Run `./scripts/lint-obsidian-markdown` on the recap, then `./scripts/after-write` after any write. Commit only when the caller explicitly requests it.
+Run `./scripts/lint-obsidian-markdown` on the recap after any write.
 
 ## Post-session wiki spine
 
