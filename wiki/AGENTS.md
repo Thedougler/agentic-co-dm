@@ -18,12 +18,12 @@ Campaign pages also require:
 
 | Field | Values |
 |---|---|
-| `type` | `npc` \| `place` \| `faction` \| `item` \| `creature` \| `vehicle` \| `spell` \| `session-prep` \| `session` \| `recap` \| `work` |
+| `type` | `npc` \| `place` \| `faction` \| `item` \| `creature` \| `vehicle` \| `spell` \| `lore` \| `quest` \| `region` \| `session-prep` \| `session` \| `recap` \| `work` |
 | `lifecycle` | `draft` \| `proposed` \| `accepted` \| `rejected` \| `canon` |
 | `reveal` | `unrevealed` \| `revealed` |
 
 Do not invent `type` values. Category is the llm-wiki folder (`entities/`, `journal/`, …). `type` is the campaign kind.
-Map early sample labels on file: `location`→`place`, `monster`→`creature`, `lore`→`item`.
+Map early sample labels on file: `location`→`place`, `monster`→`creature`. World-truth notes use `type: lore`. Actual items stay `item`. Campaign situation pages use `type: quest`.
 `lifecycle` defaults to `proposed` until the DM accepts. `visibility` defaults to `dm` and is distinct from `reveal`. `summary` is one sentence a DM can read in a list. Omit unused identity keys.
 
 
@@ -48,6 +48,11 @@ Copy `wiki/templates/` as a scaffold for the campaign `type`. Omit empty section
 | Session spine | Filed spine: `.agents/skills/session-beats/SKILL.md`. Evidence `wiki/_raw/Session-11-00-Birds-of-a-Feather.md`. |
 | Vehicle | Look; sheet; components; crew stations; handling; combat. Pass is those jobs. |
 | Spell | Look of the casting; classification; runnable 2024 effect; Discovery when placement needed; Lore when history needed. Pass is those jobs. |
+| Faction | Public face; DM thesis; current state; one active agenda; table-relevant assets, people, places, and relationships; faction-turn log. Pass is those jobs. |
+| Lore | One durable question; At a Glance (core truth + why it matters); Current Truth; At the Table (notice / explains / enables / warns). Pass is those jobs. |
+| Quest | Summary (objective, why now, deadline); Situation; Stakes including walk-away; World in motion (driver and next move if uninterrupted); at least two independent leads. Resolution omitted while unresolved. Pass is those jobs. |
+| City | Arrival; At a glance including current pressure; Orientation (districts and getting around); Gazetteer enough to intentionally seek a place; rules that matter at the table; at least one active situation with if-nobody-intervenes. Page is `type: place` with `kind: city`. Site places keep using `wiki/templates/place.md` and existing Place jobs. Pass is those jobs. |
+| Region | Spoken look; At a glance; Current state; geography/travel enough to choose a route; active powers; change log. Pass is those jobs. |
 
 Spoken look is theatre of the mind: no secrets, DCs, unearned names, author thesis.
 

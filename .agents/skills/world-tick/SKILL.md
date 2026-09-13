@@ -135,7 +135,7 @@ Close out by marking each ledger line with its evidence, the proposed before/aft
 
 ## ai-co-dm write boundary
 
-Stage proposed advances in `inbox/world-tick-<YYYY-MM-DD>.md` after triage and per-thread review. Do not write a front, faction, NPC, location, or `hot.md` until Nick/Co-DM confirms the interpretation. Once approved, apply only confirmed surgical changes, run `./scripts/after-write`, and return a bounded receipt. Never assume a destination, add a new front, or use a raw transcript as evidence.
+Stage proposed advances in `inbox/world-tick-<YYYY-MM-DD>.md` after triage and per-thread review. Do not write a front, faction, NPC, location, or `hot.md` until Nick/Co-DM confirms the interpretation. Once approved, apply only confirmed surgical changes, run `./scripts/after-write`, and return a bounded receipt. Never assume a destination, add a new front, or use a raw transcript as evidence. After a resolved faction turn, append a row to that faction's Faction Turn Log. Current Turn at page create is the planned next move with no roll. Agenda clock lives on the faction page; `hot.md` may point at the faction. Quest portents stay with `narrative-islands`.
 
 ## Session-to-world spine
 

@@ -5,6 +5,9 @@ A **skill-based framework** for building and maintaining an Obsidian knowledge b
 ## README Translation Parity
 
 `README.md` and `README_TW.md` are one documentation surface. Keep headings, examples, links, and user-facing behavior aligned between the two translations. The check is advisory and never blocks a PR: the `readme-translation-drift` CI job only reports drift. Run `python tools/check_readme_sync.py` to list commits that changed `README.md` without a later `README_TW.md` update, along with the pending English diff — then translate and backfill those changes into `README_TW.md`. Reviewers assess translation quality.
+## Spec Kit Git Automation
+
+Spec Kit auto-commit is enabled for the configured before/after hooks. The commit style is fixed (`commit_style: fixed`); use the configured `[Spec Kit] ...` messages rather than generating Conventional Commit messages. `.specify/extensions/git/git-config.yml` is the source of truth.
 
 ## Configuration
 
@@ -56,6 +59,21 @@ Reader is `agent` | `DM` | `players`. Unknown reader → `DM`. Vault is `true` i
 | Write, edit, or create content for a Resolution | `resolution-beats` |
 
 Unknown typed-beat job → classify the type first; do not default to `session-beats` for filling a beat. Named seams: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`.
+
+## Wiki kind routing
+
+| Job | Skill |
+|---|---|
+| Write, edit, or create a named vehicle page | `vehicle-design` |
+| Write, edit, or create a named spell page | `spell-design` |
+| Write, edit, or create a named faction page | `faction-design` |
+| Write, edit, or create a named lore page | `lore-design` |
+| Write, edit, or create a named quest page | `narrative-islands` |
+| Write, edit, or create a named city page | `city-design` |
+| Write, edit, or create a named region page | `region-design` |
+| Write, edit, or create a site place | `place-design` |
+
+`place-design` is the hub for all places. It defers to `city-design` for `kind: city` and to `region-design` for region jobs.
 
 ## Skill design dispatch
 

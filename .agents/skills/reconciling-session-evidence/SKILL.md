@@ -73,4 +73,4 @@ acted, decisions that became true, and open threads in roughly 15 minutes. Promo
 improvised NPCs, places, loot, and other durable facts only to their typed atomic
 owners, preserving provenance and uncertainty. Compare a player recap only after
 the evidence-backed log exists; route faction clocks and off-screen movement to
-`world-tick`. Never use raw transcript wording as the vault's durable prose.
+`world-tick`. After players interact with or witness lore: update Current Truth when it changed and append a Canon Log row. Until then the DM may change lore freely. Quest log stays with `narrative-islands`. Never use raw transcript wording as the vault's durable prose.

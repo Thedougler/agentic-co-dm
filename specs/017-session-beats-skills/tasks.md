@@ -132,7 +132,7 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 - [X] T016 [US6] In `wiki/AGENTS.md`, add `type` values `vehicle` and `spell`. Layout jobs: Vehicle — Look; sheet; components; crew stations; handling; combat. Spell — Look of the casting; classification; runnable 2024 effect; Discovery when placement needed; Lore when history needed. Quote: "Pass is those jobs."
 - [ ] T017 [US6] Rewrite `.agents/skills/vehicle-design/SKILL.md` so it fills `wiki/templates/vehicle.md`, including size, type, speed, crew, and hull plus component AC/HP. Quote data-model: "Size, type, speed, crew (min), passengers, cargo filled so the craft can enter play." State what to write and when the page is done. Treat missing crafts as work to do now. Design-impact: designated writer, `claude-opus-4-6 --effort medium`, minimal prompt. Retry after 2026-09-12 18:30 America/Vancouver.
 - [ ] T018 [US6] Create `.agents/skills/spell-design/SKILL.md`. Primary for write, edit, or create of a spell page. Completes when narration, classification, and a runnable 2024 effect block are filled. Discovery and Lore when the spell needs placement or history. Design-impact: designated writer, `claude-opus-4-6 --effort medium`, minimal prompt. Retry after 2026-09-12 18:30 America/Vancouver.
-- [ ] T028 [US6] Add the wiki-kind routing table to `AGENTS.md` from `specs/017-session-beats-skills/contracts/wiki-kind-pages.md`. Quote: write/edit/create vehicle → `vehicle-design`; spell → `spell-design`; faction → `faction-design`; lore → `lore-design`; quest → `narrative-islands`; city → `city-design`; region → `region-design`; site place → `place-design`. Quote: "`place-design` is the hub for all places. It defers to `city-design` for `kind: city` and to `region-design` for region jobs." Do not copy the table into `.omp/AGENTS.md`.
+- [X] T028 [US6] Add the wiki-kind routing table to `AGENTS.md` from `specs/017-session-beats-skills/contracts/wiki-kind-pages.md`. Quote: write/edit/create vehicle → `vehicle-design`; spell → `spell-design`; faction → `faction-design`; lore → `lore-design`; quest → `narrative-islands`; city → `city-design`; region → `region-design`; site place → `place-design`. Quote: "`place-design` is the hub for all places. It defers to `city-design` for `kind: city` and to `region-design` for region jobs." Do not copy the table into `.omp/AGENTS.md`.
 
 **Checkpoint**: US6 independently testable (quickstart step 7)
 
@@ -162,11 +162,11 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 
 ### Implementation for User Story 7
 
-- [ ] T029 [P] [US7] Create `wiki/templates/faction.md` from the provided faction scaffold. Jobs: public face; DM thesis; current state; one active agenda; table-relevant assets, people, places, and relationships; faction-turn log. Extra headings omit-if-unused. Pass is those jobs.
-- [ ] T030 [US7] In `wiki/AGENTS.md`, keep `type` value `faction`. Layout jobs for Faction matching FR-028: public face; DM thesis; current state; one active agenda; table-relevant assets/people/places/relationships; faction-turn log. Quote: "Pass is those jobs."
+- [X] T029 [P] [US7] Create `wiki/templates/faction.md` from the provided faction scaffold. Jobs: public face; DM thesis; current state; one active agenda; table-relevant assets, people, places, and relationships; faction-turn log. Extra headings omit-if-unused. Pass is those jobs.
+- [X] T030 [US7] In `wiki/AGENTS.md`, keep `type` value `faction`. Layout jobs for Faction matching FR-028: public face; DM thesis; current state; one active agenda; table-relevant assets/people/places/relationships; faction-turn log. Quote: "Pass is those jobs."
 - [ ] T031 [US7] Create `.agents/skills/faction-design/SKILL.md` (Claude Code). Primary for write, edit, or create of a faction page. Completes when FR-028 jobs are filled. Quote: "Current Turn named with no roll at create". Agenda clock lives on the faction page. `hot.md` MAY point; MUST NOT store a second clock. State what to write and when the page is done. Design-impact: designated writer, `claude-opus-4-6 --effort medium`, minimal prompt.
 - [ ] T032 [US7] Delete `.agents/skills/faction-prep/` after T031. Retarget remaining live callers in `.agents/skills/` and `AGENTS.md` to `faction-design`. Do not keep a stub. Do not rewrite `legacy/`.
-- [ ] T033 [US7] In `.agents/skills/world-tick/SKILL.md`, append the faction-turn log after a resolved turn; MUST NOT write Current Turn as a rolled result at page create; MUST NOT store a second agenda clock in `hot.md`; MUST NOT advance quest portents.
+- [X] T033 [US7] In `.agents/skills/world-tick/SKILL.md`, append the faction-turn log after a resolved turn; MUST NOT write Current Turn as a rolled result at page create; MUST NOT store a second agenda clock in `hot.md`; MUST NOT advance quest portents.
 
 **Checkpoint**: US7 independently testable (quickstart step 8 faction)
 
@@ -180,10 +180,10 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 
 ### Implementation for User Story 8
 
-- [ ] T034 [P] [US8] Create `wiki/templates/lore.md` from the provided lore scaffold. Jobs: one durable question; At a Glance (core truth + why it matters); Current Truth; At the Table (notice / explains / enables / warns). Extra headings omit-if-unused. Pass is those jobs.
-- [ ] T035 [US8] In `wiki/AGENTS.md`, add `type` value `lore`. Layout jobs for Lore matching FR-035. Remove the ingest remap `lore`→`item` from the line that currently maps `location`→`place`, `monster`→`creature`, `lore`→`item`. World-truth notes use `type: lore`. Actual items stay `item`.
+- [X] T034 [P] [US8] Create `wiki/templates/lore.md` from the provided lore scaffold. Jobs: one durable question; At a Glance (core truth + why it matters); Current Truth; At the Table (notice / explains / enables / warns). Extra headings omit-if-unused. Pass is those jobs.
+- [X] T035 [US8] In `wiki/AGENTS.md`, add `type` value `lore`. Layout jobs for Lore matching FR-035. Remove the ingest remap `lore`→`item` from the line that currently maps `location`→`place`, `monster`→`creature`, `lore`→`item`. World-truth notes use `type: lore`. Actual items stay `item`.
 - [ ] T036 [US8] Create `.agents/skills/lore-design/SKILL.md` (Claude Code). Primary for write, edit, or create of a lore page. Completes when FR-035 jobs are filled. Unrelated truths split into linked notes. MUST NOT mark lore `canon` until players interact or witness. Canon Log omitted until then. MUST NOT invent table history. Design-impact: designated writer, `claude-opus-4-6 --effort medium`, minimal prompt.
-- [ ] T037 [US8] In `.agents/skills/session-wrapup/SKILL.md` and `.agents/skills/reconciling-session-evidence/SKILL.md`, after players interact with or witness lore: update Current Truth when it changed and append a Canon Log row. Until then the DM may change it freely. MUST NOT own the Quest log (`narrative-islands` owns it).
+- [X] T037 [US8] In `.agents/skills/session-wrapup/SKILL.md` and `.agents/skills/reconciling-session-evidence/SKILL.md`, after players interact with or witness lore: update Current Truth when it changed and append a Canon Log row. Until then the DM may change it freely. MUST NOT own the Quest log (`narrative-islands` owns it).
 
 **Checkpoint**: US8 independently testable (quickstart step 8 lore)
 
@@ -197,8 +197,8 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 
 ### Implementation for User Story 9
 
-- [ ] T038 [P] [US9] Create `wiki/templates/quest.md` from the provided quest scaffold. Jobs: summary (objective, why now, deadline); Situation; Stakes including walk-away; World in motion (driver and next move if uninterrupted); at least two independent leads. Resolution omitted while unresolved. Extra headings omit-if-unused. Pass is those jobs.
-- [ ] T039 [US9] In `wiki/AGENTS.md`, add `type` value `quest`. Layout jobs for Quest matching FR-041. Campaign situation pages use `type: quest`. `type: front` and `type: encounter` MUST NOT be used.
+- [X] T038 [P] [US9] Create `wiki/templates/quest.md` from the provided quest scaffold. Jobs: summary (objective, why now, deadline); Situation; Stakes including walk-away; World in motion (driver and next move if uninterrupted); at least two independent leads. Resolution omitted while unresolved. Extra headings omit-if-unused. Pass is those jobs.
+- [X] T039 [US9] In `wiki/AGENTS.md`, add `type` value `quest`. Layout jobs for Quest matching FR-041. Campaign situation pages use `type: quest`. `type: front` and `type: encounter` MUST NOT be used.
 - [ ] T040 [US9] Redesign `.agents/skills/narrative-islands/SKILL.md` (Claude Code) to fill `wiki/templates/quest.md` as primary for write/edit/create of a quest page. Owns later updates including World in motion, portents, rolls, Situation, status, and the Quest log. MUST NOT mint `type: front` or `type: encounter`. MUST NOT add a `quest-design` skill. Keep T020 typed-beat retarget: chart → `session-beats`, typed beat → matching type skill. Design-impact: designated writer, `claude-opus-4-6 --effort medium`, minimal prompt.
 
 **Checkpoint**: US9 independently testable (quickstart step 8 quest)
@@ -213,8 +213,8 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 
 ### Implementation for User Story 10
 
-- [ ] T041 [P] [US10] Create `wiki/templates/city.md` from the provided city scaffold. Jobs: Arrival; At a glance including current pressure; Orientation (districts and getting around); Gazetteer enough to intentionally seek a place; rules that matter at the table; at least one active situation with if-nobody-intervenes. Extra headings omit-if-unused. Frontmatter: `type: place`, `kind: city`. Pass is those jobs.
-- [ ] T042 [US10] In `wiki/AGENTS.md`, Layout jobs for City matching FR-047. Site places keep using `wiki/templates/place.md` and existing Place jobs. Quote: page is `type: place` with `kind: city`.
+- [X] T041 [P] [US10] Create `wiki/templates/city.md` from the provided city scaffold. Jobs: Arrival; At a glance including current pressure; Orientation (districts and getting around); Gazetteer enough to intentionally seek a place; rules that matter at the table; at least one active situation with if-nobody-intervenes. Extra headings omit-if-unused. Frontmatter: `type: place`, `kind: city`. Pass is those jobs.
+- [X] T042 [US10] In `wiki/AGENTS.md`, Layout jobs for City matching FR-047. Site places keep using `wiki/templates/place.md` and existing Place jobs. Quote: page is `type: place` with `kind: city`.
 - [ ] T043 [US10] Create `.agents/skills/city-design/SKILL.md` (Claude Code). Primary for write, edit, or create of a city page. Completes when FR-047 jobs are filled. Faction full agendas stay on faction pages. A pursuable situation links a quest. Design-impact: designated writer, `claude-opus-4-6 --effort medium`, minimal prompt.
 
 **Checkpoint**: US10 independently testable (quickstart step 9 city)
@@ -229,10 +229,10 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 
 ### Implementation for User Story 11
 
-- [ ] T044 [P] [US11] Create `wiki/templates/region.md` from the provided region scaffold. Jobs: spoken look; At a glance; Current state; geography/travel enough to choose a route; active powers; change log. Extra headings omit by scale (MACRO / REGIONAL / LOCAL). Pass is those jobs.
-- [ ] T045 [US11] In `wiki/AGENTS.md`, add `type` value `region`. Layout jobs for Region matching FR-051.
+- [X] T044 [P] [US11] Create `wiki/templates/region.md` from the provided region scaffold. Jobs: spoken look; At a glance; Current state; geography/travel enough to choose a route; active powers; change log. Extra headings omit by scale (MACRO / REGIONAL / LOCAL). Pass is those jobs.
+- [X] T045 [US11] In `wiki/AGENTS.md`, add `type` value `region`. Layout jobs for Region matching FR-051.
 - [ ] T046 [US11] Create `.agents/skills/region-design/SKILL.md` (Claude Code). Primary for write, edit, or create of a region page. Completes when FR-051 jobs are filled. MUST NOT invent pressure. If a pressure is already stated, link that wiki note. MUST NOT revive `type: front`. Design-impact: designated writer, `claude-opus-4-6 --effort medium`, minimal prompt.
-- [ ] T047 [US11] In `.agents/skills/place-design/SKILL.md`, remain the hub for all places; write site places from `wiki/templates/place.md`; defer `kind: city` to `city-design`; defer region jobs to `region-design`; MUST NOT write the city or region page itself.
+- [X] T047 [US11] In `.agents/skills/place-design/SKILL.md`, remain the hub for all places; write site places from `wiki/templates/place.md`; defer `kind: city` to `city-design`; defer region jobs to `region-design`; MUST NOT write the city or region page itself.
 
 **Checkpoint**: US10–US11 independently testable (quickstart step 9)
 
@@ -247,7 +247,7 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 - [ ] T024 Run `specs/017-session-beats-skills/quickstart.md` steps 1–10 against `specs/017-session-beats-skills/contracts/beat-skill-routing.md` and `specs/017-session-beats-skills/contracts/wiki-kind-pages.md`
 - [ ] T025 Confirm this change set does not rewrite bodies of `wiki/_raw/Session-11-*.md`, does not edit `.agents/skills/writing-beats/SKILL.md`, does not copy routing tables into `.omp/AGENTS.md`, leaves 0 skills that contain both the full Beat Chart and all five type-card catalogs, does not add a `quest-design` skill, has no `.agents/skills/faction-prep/`, does not remap `lore`→`item`, and does not file new durable situations as `type: front` or `type: encounter`
 - [ ] T026 Confirm designated-writer jobs T003, T005–T009, T017, T018, T031, T036, T040, T043, T046 used `claude-opus-4-6 --effort medium` with a prompt that names deliverables plus a completion test, per `docs/agents/skill-design-dispatch.md`, except Codex CLI at ChatGPT 5.5 medium when FR-026 gates held; `AGENTS.md` and templates were session-agent work
-- [ ] T027 Update `docs/agents/skill-design-dispatch.md` so usage-limit wait records retry time on this `tasks.md`, carries deferred tasks forward, and MAY invoke Codex CLI at ChatGPT 5.5 medium when every remaining open task is blocked, no other work can be done, and that retry time is more than one hour away; re-check those gates before each remaining blocked skill job; prefer Claude Code if it is usable again
+- [X] T027 Update `docs/agents/skill-design-dispatch.md` so usage-limit wait records retry time on this `tasks.md`, carries deferred tasks forward, and MAY invoke Codex CLI at ChatGPT 5.5 medium when every remaining open task is blocked, no other work can be done, and that retry time is more than one hour away; re-check those gates before each remaining blocked skill job; prefer Claude Code if it is usable again.
 - [ ] T048 Confirm type skills MAY hand off a named vehicle, spell, faction, lore note, quest, city, or region to that wiki-kind owner without absorbing the page job, in `.agents/skills/hook-beats/SKILL.md`, `.agents/skills/development-beats/SKILL.md`, `.agents/skills/cliffhanger-beats/SKILL.md`, `.agents/skills/climax-beats/SKILL.md`, and `.agents/skills/resolution-beats/SKILL.md`
 
 ---
