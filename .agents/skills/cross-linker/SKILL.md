@@ -19,7 +19,7 @@ You are weaving the wiki's knowledge graph tighter by finding and inserting miss
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` and `OBSIDIAN_LINK_FORMAT` (default: `wikilink`).
-2. Read `index.md` to get the full inventory of pages and their one-line descriptions
+2. Prefer capped `qmd`/`rg` (and `hot.md`) for candidate pages; full `index.md` only if required — whole-file preload is token waste
 3. Skim `log.md` to see what was recently ingested (focus linking effort on new pages)
 
 When inserting links in Step 4, apply the link format from `llm-wiki/SKILL.md` (Link Format section) using the `OBSIDIAN_LINK_FORMAT` value. When `OBSIDIAN_LINK_FORMAT=markdown`, compute the relative `.md` path from the **file being edited** to the target page.

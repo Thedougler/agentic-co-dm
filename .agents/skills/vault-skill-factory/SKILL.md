@@ -41,7 +41,7 @@ conversation into a page; the factory turns a body of pages into a reusable skil
      is graph-/lint-/index-tracked).
    - `SKILL_FACTORY_MATURITY` — comma list of `lifecycle:` values that count as "mature".
      Default: `reviewed,verified`. Pages with `tier: core` also qualify.
-2. Read `index.md` to understand what the vault holds.
+2. Prefer `hot.md` + capped `qmd`/`rg` to learn what the vault holds; full `index.md` only if required — whole-file preload is token waste.
 
 ## Step 1: Choose the cluster
 
