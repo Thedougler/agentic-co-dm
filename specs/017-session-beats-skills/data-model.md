@@ -124,4 +124,4 @@ Theatre of the mind owns `[!narration]`. Omit unused sections.
 
 ## Dispatch prompt
 
-Claude Code runs only for novel skill design, skill redesign, or a major skill-file change. Model `claude-opus-4-6`, `--effort medium`. Prompt names Outcome, Files, Bounds, Job, deliverables, completion criteria. Usage limit: defer that job; complete remaining independent tasks.
+Claude Code runs only for novel skill design, skill redesign, or a major skill-file change. Model `claude-opus-4-6`, `--effort medium`. Prompt names Outcome, Files, Bounds, Job, deliverables, completion criteria. One designated writer at a time. Usage limit: defer that job on `tasks.md` with a retry time; complete remaining independent tasks; carry deferred tasks forward. Codex CLI at ChatGPT 5.5 medium MAY run the same prompt only when every remaining open task is blocked, no other work can be done, and that retry time is more than one hour away. Re-check those gates before each remaining blocked skill job; prefer Claude Code if it is usable again.

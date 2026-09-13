@@ -67,8 +67,8 @@ Fail if the vehicle page has no sheet. Fail if the spell job is classified as `s
 
 ## 8. Claude Code dispatch (SC-015, SC-016)
 
-Claude Code runs only for a new skill or a major skill redesign. Those dispatches use `claude-opus-4-6 --effort medium`. The prompt names deliverables and a completion test. `AGENTS.md` and template installs are session-agent work.
+Claude Code runs only for a new skill or a major skill redesign. Those dispatches use `claude-opus-4-6 --effort medium`. The prompt names deliverables and a completion test. `AGENTS.md` and template installs are session-agent work. After a usage-limit stop, independent tasks still completed and deferred jobs stay on `tasks.md` with a retry time. Codex CLI at ChatGPT 5.5 medium is allowed only when every remaining open task is blocked, no other work can be done, and that retry time is more than one hour away. Re-check those gates before each remaining blocked skill job.
 
-Fail if those dispatches use the `opus` alias, default Opus, or `--effort high`. Fail if an `AGENTS.md`-only edit was sent to Claude Code. After a usage-limit stop, independent tasks still completed.
+Fail if those dispatches use the `opus` alias, default Opus, or `--effort high`. Fail if an `AGENTS.md`-only edit was sent to Claude Code. Fail if Codex ran while other independent work remained, or while the retry time was within one hour, or without re-checking Claude Code first on a later job.
 
 Pass: steps 1–8 hold.

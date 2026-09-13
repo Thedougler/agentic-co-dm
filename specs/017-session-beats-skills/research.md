@@ -44,7 +44,7 @@
 
 ## Decision: Claude Code only for novel or major skill work
 
-**Rationale**: FR-025 / constitution 1.5.1. New type skills, `spell-design`, and a `session-beats` or `vehicle-design` redesign are Claude Code jobs (`claude-opus-4-6 --effort medium`, minimal prompt). Session agent lands `AGENTS.md`, wiki templates, `wiki/AGENTS.md` Layout, pointer retargets, and Spec Kit pattern tweaks. Conserve Claude Code.
+**Rationale**: FR-025 / constitution 1.8.0. New type skills, `spell-design`, and a `session-beats` or `vehicle-design` redesign are Claude Code jobs (`claude-opus-4-6 --effort medium`, minimal prompt). Session agent lands `AGENTS.md`, wiki templates, `wiki/AGENTS.md` Layout, pointer retargets, and Spec Kit pattern tweaks. Conserve Claude Code.
 
 **Alternatives considered**: Dispatch every standing-load edit (wastes quota). Session agent drafts new skills (016 fail for novel design). `opus` alias / `--effort high` (superseded).
 
@@ -66,11 +66,11 @@
 
 **Alternatives considered**: Keep “leave HP/speed blank” as a standing ban (contradicts the template). Extra exception lists instead of jobs.
 
-## Decision: Usage limit defers only the Claude job
+## Decision: Usage limit defers only the Claude job; Codex is a gated fallback
 
-**Rationale**: FR-026 / SC-016. Restore Claude targets, record retry time, complete remaining tasks that do not depend on that job.
+**Rationale**: FR-026 / SC-016 / constitution 1.8.0. Restore Claude targets, record retry time on the feature `tasks.md`, complete remaining tasks that do not depend on that job. Completing other work MUST carry those deferred tasks forward. If every remaining open task is blocked, no other work can be done, and the retry time on the blocked task is more than one hour away, the session agent MAY invoke the Codex CLI at ChatGPT 5.5 medium with the same tightly scoped prompt. Re-check those gates before each remaining blocked skill job; prefer Claude Code if it is usable again. Session agent does not write the design.
 
-**Alternatives considered**: Halt the whole implement (leaves independent wiki/AGENTS.md work undone). Session agent writes the novel skill anyway (016 fail).
+**Alternatives considered**: Halt the whole implement (leaves independent wiki/AGENTS.md work undone). Session agent writes the novel skill anyway (016 fail). Park usage limits as GitHub issues (owner rejected; Spec Kit `tasks.md` is the tracker). Always switch to Codex on first usage-limit (skips Claude when it returns inside the hour).
 
 ## Decision: Claude Code skill updates use a minimal prompt and Opus 4.6 medium
 

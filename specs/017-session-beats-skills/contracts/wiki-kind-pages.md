@@ -30,7 +30,7 @@ A beat that needs a named craft or a spell hands off to that owner. The beat ski
 
 ## Claude Code skill updates
 
-Claude Code only for novel `spell-design` and a `vehicle-design` redesign. Dispatch: `claude -p --model claude-opus-4-6 --effort medium`. Prompt is minimal; names deliverables and a completion test. Templates and `wiki/AGENTS.md` Layout are session-agent work. Usage limit: defer the Claude job; complete independent tasks.
+Claude Code only for novel `spell-design` and a `vehicle-design` redesign. Dispatch: `claude -p --model claude-opus-4-6 --effort medium`. Prompt is minimal; names deliverables and a completion test. Templates and `wiki/AGENTS.md` Layout are session-agent work. Usage limit: defer the Claude job on `tasks.md`; complete independent tasks. Codex CLI at ChatGPT 5.5 medium MAY take the same prompt only when every remaining open task is blocked, no other work can be done, and the retry time is more than one hour away. Re-check those gates before each remaining blocked job.
 
 ## Out of contract
 
