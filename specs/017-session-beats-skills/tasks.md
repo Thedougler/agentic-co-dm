@@ -252,7 +252,6 @@ Task: Create wiki/templates/spell.md (T015)
 - Do not port Campaign OS composing/writing-*-beats
 - Do not rewrite Session 11 to prove the split
 - Claude Code: T003, T005–T009, T017, T018 only. Session agent: the rest
-- Usage limit: defer that Claude task; complete remaining independent tasks
-- Claude usage-limit wait: T003, T005–T009, T017, T018 deferred. Retry after 2026-09-12 18:30 America/Vancouver. Sequential dispatch only. Targets left at 9d16056.
+- Usage limit: defer that Claude task; complete remaining independent tasks. Queue: `docs/agents/claude-dispatch-queue.md`.
 - Commit after each task or logical group
 - Stop at checkpoints
