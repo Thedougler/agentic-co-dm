@@ -1,25 +1,83 @@
 ---
 title: "Sula Marn"
 category: entities
-tags: [shattered-sea]
-sources: ["penance-bar-siege.md"]
-summary: "Elderly elven Reeve of Penance Bar trying to hold the peace."
-provenance:
-  extracted: 1.0
-  inferred: 0.0
-  ambiguous: 0.0
-base_confidence: 0.37
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
-tier: supporting
-created: 2026-09-13T21:40:00Z
+tags: [npc, shattered-sea, maritime]
+sources:
+  - "wiki/_archive/sula-marn.md"
+  - "wiki/_archive/penance-bar-siege.md"
+  - "wiki/_archive/quest-penance-bar.md"
+  - "wiki/_archive/dessa-wule.md"
+  - "campaign-os:sula-marn.md"
+created: 2026-09-13
 updated: 2026-09-13
 type: npc
+lifecycle: proposed
+lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: contact
+location: "[[Penance Bar]]"
 visibility: dm
+summary: "Reeve of Penance Bar. She tries to hold the peace while Corvin Ashe whips the town."
+provenance:
+  extracted: 0.75
+  inferred: 0.10
+  ambiguous: 0.15
+base_confidence: 0.60
+tier: supporting
 ---
-
 # Sula Marn
 
-Stub spawned by location-prep from penance-bar.md. Needs a full npc-guide pass (Toy Chest, Voice & Delivery, Relationships) before the table sees them.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
+
+| **Role**   | Reeve |
+| ---------- | ----- |
+| **Nature** | Genuine ally trying to hold the peace |
+| **Home**   | [[Penance Bar]] |
+| **Wants**  | Keep the town from marching on the grove before the truth lands. |
+
+> **DM thesis:** She is the civil brake on Ashe's panic, not his secret-keeper.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Sula Marn
+> An elderly elven woman waits on the causeway before the fields. A dog trots a half-step behind her.^[ambiguous]
+```
+````
+
+## Running Sula Marn
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+She catches the crew on the causeway after [[Corvin Ashe]] has already sent them to the grove. Sample: "He sent you to the grove? Be careful, witches aren't always what they seem."
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+The mob organizing is the clock. She will not cover for Ashe. If strangers ask after Mirela Cass, she steers them off the name.
+```
+````
+
+## Relationships
+
+| Relationship | Meaning |
+| ------------ | ------- |
+| [[Penance Bar]] | She is Reeve. Talk to her in town is a lead on the siege. |
+| [[Corvin Ashe]] | He sends people to the grove. She warns them the witches are not what he says. |
+| [[Dessa Wule]] | Sula uses the back corner table. Dessa does not know what Sula knows. |
+| [[Penance Bar siege]] | She tries to hold the peace while the mob forms. |
+| [[Sorrowbell]] | Ashe's shrine. Sula is not its priest. |

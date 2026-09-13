@@ -3,6 +3,7 @@ title: "Reinforced Specimen Cage"
 category: entities
 tags: ["shattered-sea", "item", "exploration", "craft"]
 sources:
+  - "wiki/_archive/homebrew/reinforced-specimen-cage.md"
   - "campaign-os:reinforced-specimen-cage.md"
 created: 2026-09-13
 updated: 2026-09-13
@@ -12,20 +13,30 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "Iron-framed and oak-slat specimen cage designed for safe transport of dangerous creatures on expedition. Includes air-holes and a reinforced latch."
+kind: durable
+rarity: common
+attunement: false
+summary: "Three-foot iron-and-oak travel cage that holds a specimen against ordinary strength and claws."
 provenance:
-  extracted: 0.85
-  inferred: 0.10
-  ambiguous: 0.05
+  extracted: 0.95
+  inferred: 0.05
+  ambiguous: 0.00
 base_confidence: 0.55
 tier: supporting
 ---
 # Reinforced Specimen Cage
 
 > [!narration] Narration
-> The cage endures and holds. Iron bands frame a skeleton of tight-fitted oak slats, each one cut thin enough to bend to the shape but thick enough that claws cannot splinter through. The bars are square-steel, riveted instead of welded, and spaced close enough to contain a hand without enough room for knuckles to turn. A heavy iron latch with a padlock loop sits at the corner, and the bottom holds a sliding feed tray so you can get food and water in and waste out without opening the main door. Air holes ring the top third, a dozen thumb-sized circles punched clean through oak and iron both.
+> Iron bands frame tight oak slats, thin enough to flex and thick enough that a claw does not splinter through. The bars are square steel, riveted, set close enough to take a hand and too close for knuckles to turn. A heavy latch with a padlock loop sits at one corner. The floor has a sliding feed tray so food, water, and waste move without opening the door. A dozen thumb-sized air holes ring the upper third, punched through wood and iron together.
 
-*Tool, Common.* A portable specimen cage used by expedition teams to transport living creatures, hostile or valuable, over rough terrain. Weighs 45 pounds when empty, roughly 3 feet on each side.
+Durable gear, Common
 
-> [!mechanic]
-> Secured creatures cannot escape with [[Strength]] checks below DC 16. The cage itself resists damage from claws and simple melee attacks (AC 14, 20 hp). The latch supports a padlock or rope binding.
+Empty weight is 45 pounds. The box is about 3 feet on a side. A creature secured inside cannot escape with a Strength check below `DC 16`. The cage itself is AC 14 and 20 hit points against claws and simple melee. The latch takes a padlock or a rope binding.
+
+## At a Glance
+
+Portable expedition cage for a living specimen, hostile or valuable. 60 gp.
+
+## At the Table
+
+Lock something in, feed it through the tray, and do not open the door. Ordinary Strength will not walk it out under `DC 16`.

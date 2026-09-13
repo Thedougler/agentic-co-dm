@@ -3,6 +3,7 @@ title: "Tattletale Goggles"
 category: entities
 tags: ["shattered-sea", "item", "combat", "comedy", "uncommon"]
 sources:
+  - "wiki/_archive/uncommon/tattletale-goggles.md"
   - "campaign-os:tattletale-goggles.md"
 created: 2026-09-13
 updated: 2026-09-13
@@ -12,41 +13,40 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "Goggles that grant darkvision, but make everyone nearby, friend or foe, feel an inexplicable certainty that someone is at the wearer's location."
+kind: magic
+rarity: uncommon
+attunement: false
+owner: "[[Delmar Fisk]]"
+summary: "Unattuned darkvision goggles that also make everyone nearby sure someone stands at the wearer."
 provenance:
-  extracted: 0.85
+  extracted: 0.90
   inferred: 0.10
-  ambiguous: 0.05
+  ambiguous: 0.00
 base_confidence: 0.55
 tier: supporting
 ---
 # Tattletale Goggles
 
 > [!narration] Narration
-> Worn, slightly oversize goggles, one lens visibly larger than the other, the mismatched glass held together by a magnetized steampunk-style fitting that clicks firmly into place. The straps have gone soft with age, and the frame settles over the eyes with more weight than its size suggests, cool brass warming quickly against the skin. Through the lenses, everything takes on a faint, grainy tint, like looking through smoked glass.
+> The goggles are worn and a little too large. One lens is bigger than the other. A magnetized brass fitting clicks the mismatched glass home. The straps have gone soft. The frame sits heavier on the face than the size should allow; the metal starts cool and warms fast. Through the glass the world goes grainy, like smoked pane.
 
-*Wondrous Item, Uncommon.*
+*Wondrous item, uncommon.*
 
-| Field | Value |
-|---|---|
-| one_thing | Grants Darkvision out to 60 feet while worn (or extends existing Darkvision by 60 feet), the same effect as [[Goggles of Night]], but every creature within a wide radius, ally or hostile, gets an inexplicable, nagging certainty that someone is present at the wearer's exact location, with no sensory explanation for the feeling. Mechanically, the wearer has disadvantage on Stealth checks while wearing them. |
-| rarity_justification | Matches Goggles of Night exactly: a straight Darkvision grant, Uncommon rarity, unattuned. The Stealth disadvantage is a pure downside layered on top and doesn't push the power budget in either direction. |
-| attunement_reason | Grants no attack, damage, save, or AC bonus, and Darkvision alone doesn't require attunement per Goggles of Night's own precedent. The Stealth disadvantage is only a penalty, so it doesn't trigger the attunement decision tree's first branch, which requires a bonus of some kind. |
-| pc_connection | [[Delmar Fisk]] bought these to see in the dark. The curse means every time stealth actually matters, wearing them makes him easy to spot instead. |
-| current_holder | [[Delmar Fisk]], carried in his kit. |
-| narrative_hook | Already in play. The next time Delmar tries to sneak anywhere while wearing these, whoever's nearby, friendly or not, just knows he's there. |
+While worn, you have Darkvision out to 60 feet. If you already have Darkvision, wearing them increases that range by 60 feet instead. You also have Disadvantage on Dexterity (Stealth) checks for as long as they stay on. Any creature in a wide radius, ally or foe, feels a sudden unexplained certainty that someone is present at your exact location: a rough hunch, not a map square, and not a source anyone present can name. The hunch fires whether you are hiding or not. It does not grant Advantage on attacks against you, does not pierce total cover, and does not reach long range. The goggles grant no other combat bonus.
 
-## Mechanics
+## At a Glance
 
-**Tattletale Sight [RAW-analog+HB].** While wearing these goggles, the wearer has Darkvision out to 60 feet. If the wearer already has Darkvision, wearing the goggles increases its range by 60 feet instead.
+[[Delmar Fisk]] bought them to see in the dark. Wearing them is what gives him away.
 
-While worn, the goggles also curse the wearer with disadvantage on Stealth checks. Any creature within a wide radius of the wearer, whether ally or hostile, gets a sudden, nagging, unexplained certainty that someone is present at the wearer's exact location. It's a vague, unshakeable hunch pointing roughly toward the wearer, with no clear source anyone present could name.
+## At the Table
 
-- Edge case: the effect fires anytime the wearer wears the goggles, regardless of whether they're trying to hide or attempting concealment.
-- Edge case: the hunch affects hostile creatures exactly the same as allies. Nothing about the goggles distinguishes friend from foe.
+If he sneaks with these on, nearby creatures just know someone is there. Friend and foe get the same hunch.
 
-**Limitations.** The goggles grant no combat bonus of any kind beyond Darkvision itself, and the Stealth disadvantage is a pure cost with nothing offsetting it. The "nagging certainty" is a felt hunch. It doesn't grant advantage on attacks against the wearer, doesn't reveal the wearer's exact square on a map, and doesn't work through total cover or at long range. It's a rough, general sense of presence, not a targeting solution.
+## Connections
+
+- [[Delmar Fisk]] — Current holder.
+- [[Lavinia Sordi]] — Sold them from [[La Cenere]].
 
 ## Provenance
 
-Sold by [[Lavinia Sordi]] from her rack at [[La Cenere]] in [[Le Paludi]], [[Calveno]]. The price was 60 gp, haggled down from 75. [[Delmar Fisk]] bought them in Session 8. During the sale, Lavinia doused the shop's actual candles and lanterns to show the darkvision working in real darkness. That was Lavinia's own staged effect. The goggles themselves play no part in creating darkness.
+Session 8 sale at [[La Cenere]] in [[Le Paludi]]: 60 gp, talked down from 75. Lavinia doused the shop candles to show the darkvision. That darkness was her staging, not the goggles.

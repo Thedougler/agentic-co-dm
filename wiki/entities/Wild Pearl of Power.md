@@ -3,6 +3,7 @@ title: "Wild Pearl of Power"
 category: entities
 tags: ["shattered-sea", "item", "comedy", "uncommon"]
 sources:
+  - "wiki/_archive/uncommon/wild-pearl-of-power.md"
   - "campaign-os:wild-pearl-of-power.md"
 created: 2026-09-13
 updated: 2026-09-13
@@ -12,41 +13,40 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "A Pearl of Power that regains a spell slot but triggers a full Wild Magic Surge every single time it's used."
+kind: magic
+rarity: uncommon
+attunement: true
+owner: "[[Catarina Da'Virelli]]"
+summary: "Attuned Pearl of Power that always rolls a Wild Magic Surge when it returns a slot."
 provenance:
-  extracted: 0.85
+  extracted: 0.90
   inferred: 0.10
-  ambiguous: 0.05
+  ambiguous: 0.00
 base_confidence: 0.55
 tier: supporting
 ---
 # Wild Pearl of Power
 
 > [!narration] Narration
-> A pearl the size of a thumbnail, its surface catching light in an off-color shimmer that never settles into one hue. Turn it in your palm and the iridescence lags half a second behind the motion, as if it's still deciding which way to shine. Too warm. Held too long, a faint hum vibrates against your skin. It goes silent the instant you notice it, and something inside seems to hold its breath.
+> The pearl is the size of a thumbnail. Light crawls across it in a color that will not settle. Turn it and the shine lags half a breath behind the motion. It is too warm for a stone. Hold it long enough and a faint hum sits against the skin, then cuts the instant you notice, as if something inside stopped to listen.
 
-*Wondrous Item, Uncommon (Requires Attunement by a Spellcaster).*
+*Wondrous item, uncommon (requires attunement by a spellcaster).*
 
-| Field | Value |
-|---|---|
-| one_thing | As an action, spend one of the pearl's charges to regain one expended spell slot of 3rd level or lower, the standard [[Pearl of Power]] effect. Every single use, with no exceptions, also triggers a full Wild Magic Surge: roll on the Sorcerer's Wild Magic Surge d100 table immediately after regaining the slot. |
-| rarity_justification | Uncommon, requires attunement. Matches the RAW Pearl of Power exactly (a spell-slot-recovery wondrous item, always Uncommon/attunement-by-a-spellcaster). The guaranteed surge is a wildcard: the Wild Magic Surge table skews roughly neutral across its full range, so it raises the variance of every use without pushing the power budget in either direction. |
-| attunement_reason | Restores a spell slot and requires attunement by a spellcaster. Matches the unmodified RAW item's own attunement rule exactly. |
-| pc_connection | [[Catarina Da'Virelli|Catarina Davirelli]] bought it to get spell slots back mid-adventure. The guaranteed surge means every single recovery is also a real gamble, on top of the utility she's paying for. |
-| current_holder | [[Catarina Da'Virelli|Catarina Davirelli]], carried in her kit. |
-| narrative_hook | Already in play, two charges left. The next time Catarina spends a charge, roll the Wild Magic Surge table and find out what happens. |
+The pearl holds 3 charges and regains `1d3` expended charges daily at dawn. As an Action, spend 1 charge to regain one expended spell slot of 3rd level or lower. Every charge spent this way also triggers a full Wild Magic Surge: immediately after the slot returns, roll on the Sorcerer Wild Magic Surge table (d100) and apply the result as written. There is no roll to see whether the surge happens. A surge that spends a slot, asks for Concentration, or calls for a spellcasting ability uses the wielder's. The pearl cannot restore a slot above 3rd level. One surge per charge, never a second. You cannot take the slot and decline the surge.
 
-## Mechanics
+## At a Glance
 
-**Unstable Recovery [RAW+HB, Pearl of Power].** The pearl holds 3 charges and regains 1d3 expended charges daily at dawn. As an action, the wielder can spend one charge to regain one expended spell slot of 3rd level or lower, the same effect as the base item.
+[[Catarina Da'Virelli]] carries it. Two charges remain. The next spend is a guaranteed surge.
 
-Every time the wielder spends a charge this way, without exception, it also triggers a full Wild Magic Surge. Immediately after regaining the slot, roll on the [[Sorcerer]] class's Wild Magic Surge table (d100) and apply the result exactly as written there.
+## At the Table
 
-- Edge case: the pearl always triggers the surge on every single charge expenditure. There's no roll to see whether it triggers, only what it rolls as.
-- Edge case: a surge result that itself costs a spell slot, requires concentration, or otherwise interacts with spellcasting resolves normally, using the wielder's own spellcasting ability where the surge table calls for one.
+She bought a slot back. You roll the d100 in front of the table and live with it.
 
-**Limitations.** The pearl can't restore a spell slot above 3rd level, and using it (or trying to) doesn't proc a second surge; one surge per charge spent, never more. Nothing about this pearl lets the wielder decline the surge or choose not to spend a charge if they want the slot back.
+## Connections
+
+- [[Catarina Da'Virelli]] — Current holder; she bought it to recover slots mid-adventure.
+- [[Lavinia Sordi]] — Sold it from the rack at [[La Cenere]].
 
 ## Provenance
 
-Sold by [[Lavinia Sordi]] from her rack at [[La Cenere]] in [[Le Paludi]], [[Calveno]], for 300 gp, Session 8. The asking price started at 350 gp before the sale. [[Catarina Da'Virelli|Catarina Davirelli]] identified it at the table with a DC-beating Arcana check, confirming it as unstable with a loosened weave and two charges remaining. The exact nature of the instability wasn't pinned down until later.
+Session 8, [[La Cenere]] in [[Le Paludi]], [[Calven and Calveno]]. Ask started at 350 gp; sale was 300 gp. Catarina identified it as unstable with a loosened weave. The exact surge rule landed later.

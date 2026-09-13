@@ -3,6 +3,7 @@ title: "Driftlight Lantern"
 category: entities
 tags: ["shattered-sea", "item", "mystery", "common"]
 sources:
+  - "wiki/_archive/common/driftlight-lantern.md"
   - "campaign-os:driftlight-lantern.md"
 created: 2026-09-13
 updated: 2026-09-13
@@ -12,43 +13,41 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "A salvaged nautical lantern whose shutter opens a window onto another plane, real or false with no way to tell; if real, something looks back."
+kind: magic
+rarity: common
+attunement: false
+owner: "[[Lavinia Sordi]]"
+summary: "Salvaged lantern whose opened shutter may window another plane, and may look back."
 provenance:
-  extracted: 0.85
+  extracted: 0.90
   inferred: 0.10
-  ambiguous: 0.05
+  ambiguous: 0.00
 base_confidence: 0.55
 tier: supporting
 ---
 # Driftlight Lantern
 
 > [!narration] Narration
-> A battered nautical lantern, its brass casing pitted with salt and old fire. Cracks web the glass, warping the light, but the flame inside never wavers.
->
-> Heavy. The shutter mechanism weighs far past what a lantern this size ought to carry, as though something waits behind the glass, held there on purpose.
->
-> The glow doesn't comfort the way lantern-light should, and the feeling clings to you after you look away.
+> The lantern is nautical brass, pitted by salt and old fire. Cracks web the glass and warp the glow, but the flame inside does not flicker. The shutter is heavier than a lamp this size should be, as if weight sits behind the pane on purpose. The light does not comfort the way a lamp should, and the unease stays after you look away.
 
-_Wondrous Item, Common._
+*Wondrous item, common.*
 
-| Field | Detail |
-|---|---|
-| `one_thing` | When its holder deliberately opens the shutter, the lantern's light briefly windows onto another plane. The DM secretly determines whether the glimpse is real or false and never tells the player which. If it's real, something on the other side is looking back, and the holder always knows that at once, unmistakably. |
-| `rarity_justification` | Common, comparable to Orb of Direction (a fixed-location pointer with no combat use) and Pipe of Smoke Monsters (a passive narrative effect outside combat). The lantern's own combat benefit is nil; its cost is entirely narrative, the certainty of having drawn notice from something across the veil. The rarity budget's power test (does this affect combat at all?) keeps it at Common. |
-| `attunement_reason` | No attack, damage, save, or AC bonus, and a single power with no combat application. None of the attunement decision tree's branches trigger. |
-| `pc_connection` | None named. DM ruling: this remains unclaimed shop stock on [[Lavinia Sordi]]'s rack, offered to the whole party to choose from once revealed. No PC-specific pull yet. |
-| `current_holder` | [[Lavinia Sordi]], on the rack at [[La Cenere]]. |
-| `narrative_hook` | On Lavinia Sordi's rack at La Cenere for 60 gp, salvaged in part off the [[Red Lady]] wreck. She'll only confirm it's Continual Flame and that it "sometimes shows things at the edge of the light that may or may not be there." |
+The lantern sheds light as the Continual Flame spell: no fuel, and only covering it or closing the shutter puts the flame out. As an Action, the holder may open the shutter on purpose to window another plane. You secretly decide whether the glimpse is real or false and never tell the player which. A false glimpse is indistinguishable from a true one in the moment. If the glimpse is real, the window runs both ways: something on the other side looks back, and the holder knows that part at once, with no ambiguity. Closing the shutter is an Action and ends the glimpse. The holder does not choose the plane, cannot travel or act through the window, and gains no combat benefit. Being seen back has no immediate mechanical cost; later consequence is yours to introduce.
 
-## Mechanics
+## At a Glance
 
-> [!mechanic]
-> **Planar Window [HB].** The lantern casts light exactly as the [[Continual Flame]] spell: no fuel needed, and only covering it or closing its shutter puts the flame out. At any time, its holder can spend an action to open the shutter on purpose, attempting to window through to another plane. The DM secretly rolls to decide whether the resulting glimpse is real or false, a determination the DM never reveals to the player. If the glimpse is real, the window runs both ways. Something on the other side looks back, and the holder knows this immediately, with no ambiguity about that part, only about whether the vision itself was true. Closing the shutter (an action) ends the glimpse.
->
-> **Edge cases:** what the vision actually shows is the DM's call each time, drawn from whichever plane fits the scene. A false glimpse is indistinguishable from a true one in the moment. The holder gets no in-fiction tell that would let them know which they just saw.
->
-> **Limitations:** the lantern doesn't let its holder choose which plane appears, doesn't permit travel or any interaction through the window (a window, never a door), and grants no combat benefit of any kind. Being "seen back" carries no immediate mechanical effect by itself. Any consequence that follows is the DM's to introduce later, on its own timeline.
+Still on [[Lavinia Sordi]]'s rack at [[La Cenere]] for 60 gp. Not shown at the table in Session 8.
+
+## At the Table
+
+Opening the shutter is a choice. You know whether the window is real. They only know if something looked back.
+
+## Connections
+
+- [[Lavinia Sordi]] — Current holder; she will confirm Continual Flame and that it "sometimes shows things at the edge of the light that may or may not be there."
+- [[La Cenere]] — Rack in [[Le Paludi]].
+- [[Red Lady]] — Salvage the lantern came off.
 
 ## Provenance
 
-Sold by [[Lavinia Sordi]] from her rack at [[La Cenere]] in [[Le Paludi]], [[Calveno]], for 60 gp, part of the stock that came up off the [[Red Lady]] salvage. Never shown at the table yet (Session 8): it sat on the rack unmentioned.
+Part of the [[Red Lady]] stock Lavinia put out in [[Calven and Calveno]]. Unclaimed shop goods.
