@@ -11,7 +11,7 @@ description: "Task list for Session Beat Skills"
 
 **Organization**: Setup → Foundational → US1 → US2 → US3 → US4 → US6 → US5 → Polish.
 
-**Dispatch**: Claude Code only for novel skills, skill redesigns, or major skill-file changes: T003 (`session-beats` rewrite), T005–T009 (new type skills), T017 (`vehicle-design` redesign), T018 (new `spell-design`). Minimal prompt at `claude -p --model claude-opus-4-6 --effort medium`. Session agent lands T001, T002 (`AGENTS.md`), T004, T010–T016, T019–T026. Usage limit: defer the Claude-dependent task; complete remaining independent tasks. Follow `writing-for-agents`. Skills state what to write and when the page is done.
+**Dispatch**: Designated writer for novel skills, skill redesigns, or major skill-file changes: T003 (`session-beats` rewrite), T005–T009 (new type skills), T017 (`vehicle-design` redesign), T018 (new `spell-design`). Default: `claude -p --model claude-opus-4-6 --effort medium`, sequential, one instance. Session agent lands T001, T002 (`AGENTS.md`), T004, T010–T016, T019–T027. Usage limit: defer that writer task on this file with a retry time; complete remaining independent tasks; carry deferred tasks forward. If every remaining open task is blocked, no other work can be done, and the retry time is more than one hour away, MAY send the same scoped prompt to the Codex CLI at ChatGPT 5.5 medium. Re-check those gates before each remaining blocked skill job; prefer Claude Code if it is usable again. Follow `writing-for-agents`. Skills state what to write and when the page is done.
 
 ## Format: `[ID] [P?] [Story] Description`
 
@@ -160,7 +160,8 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 - [ ] T023 Split `.agents/skills/session-beats/evals/evals.json`: chart/agency/alternation/polarity evals stay on composition; type-card evals move with their type skill
 - [ ] T024 Run `specs/017-session-beats-skills/quickstart.md` steps 1–8 against `specs/017-session-beats-skills/contracts/beat-skill-routing.md` and `specs/017-session-beats-skills/contracts/wiki-kind-pages.md`
 - [ ] T025 Confirm this change set does not rewrite bodies of `wiki/_raw/Session-11-*.md`, does not edit `.agents/skills/writing-beats/SKILL.md`, does not copy the beat routing table into `.omp/AGENTS.md`, and leaves 0 skills that contain both the full Beat Chart and all five type-card catalogs
-- [ ] T026 Confirm Claude Code was used only for T003, T005–T009, T017, T018; those dispatches used `claude-opus-4-6 --effort medium` with a prompt that names deliverables plus a completion test, per `docs/agents/skill-design-dispatch.md`; `AGENTS.md` and templates were session-agent work
+- [ ] T026 Confirm designated-writer jobs T003, T005–T009, T017, T018 used `claude-opus-4-6 --effort medium` with a prompt that names deliverables plus a completion test, per `docs/agents/skill-design-dispatch.md`, except Codex CLI at ChatGPT 5.5 medium when FR-026 gates held; `AGENTS.md` and templates were session-agent work
+- [ ] T027 Update `docs/agents/skill-design-dispatch.md` so usage-limit wait records retry time on this `tasks.md`, carries deferred tasks forward, and MAY invoke Codex CLI at ChatGPT 5.5 medium when every remaining open task is blocked, no other work can be done, and that retry time is more than one hour away; re-check those gates before each remaining blocked skill job
 
 ---
 
@@ -251,7 +252,7 @@ Task: Create wiki/templates/spell.md (T015)
 - Do not add a beat-router skill
 - Do not port Campaign OS composing/writing-*-beats
 - Do not rewrite Session 11 to prove the split
-- Claude Code: T003, T005–T009, T017, T018 only. Session agent: the rest
-- Usage limit: defer that Claude task; complete remaining independent tasks.
+- Designated writer: T003, T005–T009, T017, T018 only. Session agent: the rest
+- Usage limit: defer that writer task on this file with a retry time; complete remaining independent tasks; carry deferred tasks forward. Codex CLI at ChatGPT 5.5 medium only when every remaining open task is blocked, no other work can be done, and retry time is more than one hour away.
 - Commit after each task or logical group
 - Stop at checkpoints
