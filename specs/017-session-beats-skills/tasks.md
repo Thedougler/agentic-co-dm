@@ -144,9 +144,9 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 
 ### Implementation for User Story 5
 
-- [ ] T019 [P] [US5] In `.agents/skills/run-guide/SKILL.md`, load `session-beats` when the chart is missing; load the matching type skill when a live beat of that type is missing. Do not move cockpit job order into composition or type skills.
-- [ ] T020 [P] [US5] In `.agents/skills/cold-opens/SKILL.md`, `.agents/skills/narrative-islands/SKILL.md`, and `.agents/skills/sandbox-narrative/SKILL.md`, retarget typed-beat craft to `session-beats` for the chart and the matching type skill for a typed beat. Work gate stays `docs/agents/work.md`.
-- [ ] T021 [US5] Confirm `wiki/AGENTS.md` still points the filed spine at `.agents/skills/session-beats/SKILL.md` and cockpit jobs at `.agents/skills/run-guide/SKILL.md`. Type skills MAY hand off to theatre of the mind, encounter-prep, traps-trials, place, monster, vehicle, and spell crafts.
+- [X] T019 [P] [US5] In `.agents/skills/run-guide/SKILL.md`, load `session-beats` when the chart is missing; load the matching type skill when a live beat of that type is missing. Do not move cockpit job order into composition or type skills.
+- [X] T020 [P] [US5] In `.agents/skills/cold-opens/SKILL.md`, `.agents/skills/narrative-islands/SKILL.md`, and `.agents/skills/sandbox-narrative/SKILL.md`, retarget typed-beat craft to `session-beats` for the chart and the matching type skill for a typed beat. Work gate stays `docs/agents/work.md`.
+- [X] T021 [US5] Confirm `wiki/AGENTS.md` still points the filed spine at `.agents/skills/session-beats/SKILL.md` and cockpit jobs at `.agents/skills/run-guide/SKILL.md`. Type skills MAY hand off to theatre of the mind, encounter-prep, traps-trials, place, monster, vehicle, and spell crafts.
 
 **Checkpoint**: All stories independently testable (quickstart steps 6–7)
 
@@ -253,5 +253,6 @@ Task: Create wiki/templates/spell.md (T015)
 - Do not rewrite Session 11 to prove the split
 - Claude Code: T003, T005–T009, T017, T018 only. Session agent: the rest
 - Usage limit: defer that Claude task; complete remaining independent tasks
+- Claude usage-limit wait: T003, T005–T009, T017, T018 deferred. Retry after 2026-09-12 18:30 America/Vancouver. Sequential dispatch only. Targets left at 9d16056.
 - Commit after each task or logical group
 - Stop at checkpoints

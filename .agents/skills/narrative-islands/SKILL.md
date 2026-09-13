@@ -148,7 +148,7 @@ opens or closes, and the cost of delay.
 ### 8. Add candidate beats
 
 Attach beats to triggers or states, not timestamps. Delegate craft to
-`session-beats` and the `writing-*-beats` skills.
+`session-beats` for the chart and the matching type skill for a typed beat.
 
 **Complete when** candidate beats remain conditional.
 

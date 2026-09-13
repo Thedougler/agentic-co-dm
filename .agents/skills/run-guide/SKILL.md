@@ -105,19 +105,20 @@ is a skill-load boundary.
    describe — the skeleton's Purpose and Table sees name it. That element and
    its dramatis personae must have owners before the card is written; create
    via the appropriate craft skill (`npc-design`, `place-design`,
-   `vehicle-design`). Missing mechanical stock → owning skill (`encounter-prep`,
-   `session-beats`). Missing player-visible scene stock → owning page or craft
-   skill before TotM fill. Empty `[!narration]` stubs are expected on this pass;
-   TotM fill is pass 3. A creature you will roll that has no owner →
+   `vehicle-design`). Missing chart → `session-beats`. Missing live beat of a
+   type → that type skill (`hook-beats`, `development-beats`, `cliffhanger-beats`,
+   `climax-beats`, `resolution-beats`). Missing mechanical stock → `encounter-prep`.
+   Missing player-visible scene stock → owning page or craft skill before TotM fill.
+   Empty `[!narration]` stubs are expected on this pass; TotM fill is pass 3. A creature you will roll that has no owner →
    `homebrew-monsters-5e`. Choose live beats. Completion: no invented canon;
    the central element has an owner; every actionable hazard, loot, monster,
    route, clue, lore sign, and world detail has an owner or is marked unknown.
 
 ### Pass 1: Mechanical cockpit
 
-**Load:** `dnd5e-mechanics`. Also `session-beats` when beat composition or
-pacing is missing, `encounter-prep` when encounter stock is missing. Do **not**
-load `copy-writer` or `theatre-of-the-mind` on this pass.
+**Load:** `dnd5e-mechanics`. Also `session-beats` when the chart is missing; the
+matching type skill when a live beat of that type is missing; `encounter-prep`
+when encounter stock is missing. Do **not** load `copy-writer` or `theatre-of-the-mind` on this pass.
 
 This pass builds the runnable structure: every section, table, ruling, DC,
 action card, clock, zone, and procedure the DM will use, plus the empty prose
@@ -449,9 +450,9 @@ hunting. Do not add a second card schema or prep-management menu.
 
 ## Handoffs
 
-`session-beats` owns missing beat charts and *cut line* pacing. `encounter-prep`
-owns reusable encounter stock that fits this cockpit. This skill owns pass 1
-(mechanical card + empty stubs). `copy-writer` owns pass 2 DM copy.
+`session-beats` owns missing beat charts and *cut line* pacing. A missing live
+beat of a type → that type skill. `encounter-prep` owns reusable encounter stock
+that fits this cockpit. This skill owns pass 1 (mechanical card + empty stubs). `copy-writer` owns pass 2 DM copy.
 `theatre-of-the-mind` owns pass 3 spoken fill (TUI copy-writer; Grok Bots Visualizer).
 Pass 4 is the ready check. `visual-aids` assembles an already-listed
 owner image onto the card. Monster math → `homebrew-monsters-5e`. Check, save,

@@ -55,8 +55,7 @@ and post-play truth to `reconciling-session-evidence`.
 
 ## Handoffs
 
-`narrative-islands` owns situation topology; `session-beats` owns beat composition; `run-guide`
-owns table assembly; `encounter-prep` owns encounter procedure. This skill audits those outputs.
+`narrative-islands` owns situation topology; `session-beats` owns the Beat Chart; the matching type skill owns a typed beat; `run-guide`
 
 ## Session-prep ritual
 
