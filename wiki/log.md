@@ -192,3 +192,7 @@ title: Wiki Log
 - [2026-09-13T07:50:00Z] ARCHIVE_RAW source="wiki/_raw/Uncertainty.md" destination="wiki/_archive/Uncertainty.md" pages=1
 - [2026-09-13T18:35:00Z] COPY_UPDATE path="wiki/journal/sessions/shattered-sea/11/Session-11-01-Angry-Birds.md" reason="accepted Session 11-01 DM copy and woven hiatus reminder"
 - [2026-09-13T19:15:50Z] COPY_UPDATE path="wiki/journal/sessions/shattered-sea/11/Session-11-02-Landing-Sign.md" reason="rewrote DM copy and player-safe development narration; preserved route, clock, and taking rulings"
+- [2026-09-13T19:23:43Z] COPY_ASSETS source="/Users/nick/Documents/ai-co-dm/attachments/shattered-sea" destination="wiki/attachments" copied=59
+- [2026-09-13T19:23:43Z] LINK_REPAIR paths="wiki/_archive, wiki/templates" reason="resolved all broken image embeds; preserved existing asset formats and replaced template placeholders with optional-art comments"
+- [2026-09-13T19:29:06Z] COPY_ASSETS source="wiki/attachments" destination="wiki/attachments/shattered-sea" copied=6 reason="made every explicit attachments/shattered-sea embed resolve at its literal vault path"
+- [2026-09-13T19:37:44Z] INGEST source="wiki/_raw/Session-11-00-Birds-of-a-Feather.md" pages_updated=1 pages_created=0 mode=append note="rewrote the preserved spine as the session-plan template and linked all ten live beats"

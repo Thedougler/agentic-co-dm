@@ -36,7 +36,7 @@ Design basis: city gazetteer + meaningful districts + layered urban activity; si
 
 # {{title}}
 
-![[city.jpg|short visible caption]]
+<!-- Add identity art when available. -->
 
 > [!narration] Arrival
 > Write what the party can perceive as they enter or first overlook the city. Establish scale, silhouette, movement, sound, smell, and one unmistakable landmark. Use only information immediately available to them; no secrets, hidden history, or unearned names.
@@ -59,7 +59,7 @@ Design basis: city gazetteer + meaningful districts + layered urban activity; si
 
 ### Map
 
-![[city-map.jpg|{{title}}]]
+<!-- Add a map when available. -->
 
 ### Districts
 

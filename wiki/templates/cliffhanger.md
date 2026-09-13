@@ -81,7 +81,7 @@ flexGrow=1
   - **Feature:** What a character can obviously do with it and what changes.
   - **Feature:** What a character can obviously do with it and what changes.
 - **Change.** One believable way the environment can evolve during the beat.
-- **Map.** ![[battlemap.jpg|short visible caption]]
+- **Map.** Add a battlemap when available.
 
 <!-- Omit the map line when theater of the mind is faster. -->
 

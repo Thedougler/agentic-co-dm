@@ -21,7 +21,7 @@ summary: ""
 
 # {{title}}
 
-![[faction.jpg|short visible caption]]
+<!-- Add faction art when available. -->
 
 > [!narration] Public face
 > Write what an informed person in the setting can observe or reasonably know about this faction: symbols, reputation, customs, territory, visible activities, and public purpose. No secret motives, hidden leaders, or unrevealed plans.

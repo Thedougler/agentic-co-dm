@@ -23,7 +23,7 @@ summary: ""
 > Write the spoken look in complete sentences. No secrets, DCs, or unearned names.
 
 ## Statblock
-![[creature.jpg|short visible caption]]
+<!-- Add a creature reference image when available. -->
 ```statblock
 layout: Basic 5e Layout
 name: "{{title}}"
@@ -59,5 +59,5 @@ Write the supplied reference-sheet facts in complete sentences when a sheet exis
 - **Aftermath.** What the scene looks like after.
 
 ## Art
-![[token-or-extra.jpg|short visible caption]]
+<!-- Add token or extra art when available. -->
 <!-- Omit Art when unused. -->

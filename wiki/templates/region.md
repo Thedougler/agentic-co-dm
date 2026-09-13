@@ -41,7 +41,7 @@ Keep persistent geography separate from ephemeral events. Give a detailed site i
 
 # {{title}}
 
-![[region.jpg|short visible caption]]
+<!-- Add region art when available. -->
 
 > [!narration] Narration
 > Describe the region as a traveler first experiences it: horizon, terrain, weather, movement, sound, and one unmistakable feature. Complete sentences. No secrets, DCs, or unearned names.
@@ -108,7 +108,7 @@ Describe the physical logic of the region: what contains it, divides it, feeds i
 
 ### Structure
 
-* **Map:** ![[region-map.jpg|map]]
+* **Map:** Add a region map when available.
 * **Travel structure:** Hexcrawl / pointcrawl / known routes / abstract
 * **Scale:** One hex, leg, or travel turn represents …
 * **Procedure:** [[travel procedure]]

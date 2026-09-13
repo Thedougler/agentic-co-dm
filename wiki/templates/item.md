@@ -20,7 +20,7 @@ summary: ""
 
 # {{title}}
 
-![[item.jpg]]
+<!-- Add item art when available. -->
 
 > [!narration] Narration
 > Write a cold object portrait in complete sentences. No secrets, DCs, or unearned names.

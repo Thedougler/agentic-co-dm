@@ -184,7 +184,7 @@ title: Wiki Index
 - [[Session 08 - Recap]] — Nona's list passed 314 fighting-age men; Osset was named twice. ( #shattered-sea #recap #session)
 - [[Session 09 - Recap]] — Uncertainty left for Sparhold; HCS Ordinance boarded under merchant cover. ( #shattered-sea #recap #session)
 - [[Session 10 - Recap]] — Grigori warned of a Fate Spinner hunt; Aruhe has two survivors aboard. ( #shattered-sea #recap #session)
-- [[Session 11 - Birds of a Feather]] — Session-prep spine for the inland hunt, survivor camp, borrowed voice, and Fate Spinner theft. ( #shattered-sea #session-prep )
+- [[Session-11-00-Birds-of-a-Feather|Session 11 - Birds of a Feather]] — Accepted session plan linking the ten-beat inland hunt, survivor camp, borrowed voice, and Fate Spinner theft. ( #shattered-sea #session-prep #session-plan )
 - [[Session 11 - Angry Birds]] — Opening aerial escape from an adult Bloodhawk hunting the Crown Squid. ( #shattered-sea #session-prep )
 - [[Session 11 - Landing sign and smoke]] — Development beat following fresh survivor tracks and smoke upriver toward Torn Crossing. ( #shattered-sea #session-prep )
 - [[Session 11 - Torn Crossing hunt]] — Ecological hunt where wolfrabbits and a Spiguar punish isolated movement. ( #shattered-sea #session-prep )

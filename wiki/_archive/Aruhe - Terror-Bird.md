@@ -14,7 +14,7 @@ tags: [monster, aruhe]
 ```col-md
 flexGrow=3
 ===
-![[attachments/shattered-sea/creatures/terror-bird-of-aruhe-v4.png|Terror-Bird of Aruhe]]
+![[attachments/shattered-sea/creatures/terror-bird-of-aruhe-v4.jpg|Terror-Bird of Aruhe]]
 
 > [!narration] Narration
 > Taller than a horse, a black Terror-Bird tears through the jungle with ragged wings spread for balance. Moss clings to its feathers, but a yellow eye, serrated beak, and hooked talons make the shape unmistakable. Dust jumps beneath each stride as it bears down the path; the ground shakes before it reaches you.
