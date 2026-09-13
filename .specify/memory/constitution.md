@@ -1,14 +1,15 @@
 <!--
 Sync Impact Report
-- Version change: 1.14.0 → 1.15.0
-- Modified principles:
-  - XIII. Wiki Media Filenames Distinguish Kind (expanded: no spaces; existing spaces → `-`)
-- Added sections: none
+- Version change: 1.15.0 → 1.16.0
+- Modified principles: none
+- Added sections:
+  - XIV. Use The Simplest Tool
 - Removed sections: none
 - Other modified sections:
-  - Agent Operating Constraints (wiki media filenames have no spaces)
+  - XI. Designated Writer (Codex fallback invoked as `codex exec`)
+  - Agent Operating Constraints (simplest tool)
   - Development Workflow / Review (same)
-  - Governance / Compliance (reject spaced wiki media filenames)
+  - Governance / Compliance (reject CLI wrappers)
 - Follow-up TODOs: none
 -->
 
@@ -250,6 +251,16 @@ Rationale: opening every image to learn whether it is a token or a
 battlemap wastes tokens and produces wrong attachments. Spaces force
 quoting and make agents guess separators.
 
+### XIV. Use The Simplest Tool
+
+Agents MUST use the simplest tool that completes the job. When a CLI exists
+for the work, agents MUST run that CLI as the command. Codex work uses
+`codex exec` on the command line. Claude Code work uses `claude -p` on the
+command line. MUST NOT wrap a CLI in Python, an eval cell, a hub process,
+or another launcher when the command can be run directly.
+
+Rationale: wrappers hide stdin, timeouts, and errors. The CLI is the tool.
+
 ## Agent Operating Constraints
 
 - Runtime guidance for agents is `AGENTS.md`. Skills MUST follow
@@ -274,6 +285,7 @@ quoting and make agents guess separators.
   task-irrelevant padding.
 - Wiki media assets MUST follow XIII: kind in the filename, no spaces,
   no guessing.
+- Agents MUST follow XIV: run the simplest tool; CLIs as CLIs, not wrappers.
 - Designated writer, when used: Claude Code at `claude-opus-4-6`
   `--effort medium`. MUST NOT use the `opus` alias or default Opus.
   Default Opus output is worthless for language work (issue #3). Up to
@@ -290,7 +302,8 @@ quoting and make agents guess separators.
   blocked by that usage limit, no other work can be done, and the retry time
   on the blocked task is more than one hour away, the session agent MAY
   invoke the Codex CLI at ChatGPT 5.5 medium with the same tightly scoped
-  skill-writing prompt. Codex MUST NOT run concurrently with Claude Code.
+  skill-writing prompt, by running `codex exec` on the command line.
+  Codex MUST NOT run concurrently with Claude Code.
   If that Codex invocation is itself unavailable due to a usage limit, and
   Claude Code remains unavailable due to a usage limit, the session agent
   MAY write the design-impact change itself. Otherwise the session agent
@@ -321,8 +334,10 @@ quoting and make agents guess separators.
    without a named failure, that prompts to other agents carry objectives
    and complete acceptance rather than operating manuals, Spec Kit
    lectures, or other task-irrelevant padding, that wiki media filenames
-   distinguish kind, contain no spaces, and do not require guessing, and
-   that git/context autonomy was not reintroduced as a human gate.
+   distinguish kind, contain no spaces, and do not require guessing, that
+   git/context autonomy was not reintroduced as a human gate, and that
+   CLIs were run as CLIs rather than wrapped in Python, eval, hub, or
+   another launcher.
 
 ## Governance
 
@@ -366,6 +381,8 @@ Compliance:
 - A wiki media filename that does not encode kind, contains a space, or
   that requires opening the file or guessing from nearby notes to
   classify it, MUST be rejected.
+- A CLI wrapped in Python, an eval cell, a hub process, or another
+  launcher when that CLI could be run as a command MUST be rejected.
 - Reviews MUST verify that no more than two Claude Code designated-writer
   instances run concurrently, that a second is used only when the agents
   involved have no other task to complete, and that no canonical artifact
@@ -380,4 +397,4 @@ Compliance:
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.15.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
+**Version**: 1.16.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
