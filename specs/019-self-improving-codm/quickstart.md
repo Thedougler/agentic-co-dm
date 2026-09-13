@@ -63,10 +63,22 @@ A “move” that also rewrites a wiki fact, or that files Source Material as ca
 
 **Observed:** Fact text is unchanged without accept. Source Material is not canon. Aim remains on the hub. The check fails the move if any of those happened.
 
+### 9. Four wiki templates, no new type
+
+Copy-start templates for Encounters, Rules, Campaign State, and DM Intelligence.
+
+**Observed:** `wiki/templates/encounter.md`, `rules.md`, `campaign-state.md`, and `dm-intelligence.md` exist. Their `type` values are `session-prep`, `lore`, `lore`, and `work`. No `type: encounter` or `type: rules`. No templates for System or Source Material.
+
+### 10. Existing pages rewritten, facts held
+
+An existing Encounters, Rules, Campaign State, or DM Intelligence page after templates land.
+
+**Observed:** The page matches the template jobs. Facts unchanged. Aim still on the hub. No DM accept step for that structure-only rewrite. A rewrite that changes a fact fails the check unless accept is recorded.
+
 ## Repository checks
 
 ```bash
 .venv/bin/python specs/019-self-improving-codm/fixtures/check.py
 ```
 
-That check is the public seam. It covers scenarios 1–8 against `fixtures/wiki/` and `fixtures/ops/`, and invokes `scripts/error-ledger.py` for sitting records and ledger fill/drain.
+That check is the public seam. It covers scenarios 1–10 against `fixtures/wiki/` and `fixtures/ops/`, and invokes `scripts/error-ledger.py` for sitting records and ledger fill/drain.

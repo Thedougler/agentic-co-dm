@@ -59,6 +59,10 @@ Agent-facing. Players never operate this loop. Does not replace [001 Co-DM](../.
 35. Do not add a layout kind that duplicates an existing `type`. Do not add `type: encounter` or `type: rules`.
 36. System and Source Material stay non-canon. Source Material is `wiki/_raw/` staging.
 37. Table aim stays on the campaign hub. Layout MUST NOT copy it onto DM Intelligence.
+38. Wiki copy-start templates exist for Encounters, Rules, Campaign State, and DM Intelligence. New pages use `session-prep`, `lore`, `lore`, and `work` respectively.
+39. System and Source Material do not get wiki templates.
+40. Existing pages in those four groups are rewritten onto the matching templates when facts stay the same. Fact-changing rewrites still wait on accept.
+41. Templates MUST NOT add a campaign `type`.
 
 ## Out of contract
 

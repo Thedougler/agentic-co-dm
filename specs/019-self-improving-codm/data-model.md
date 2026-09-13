@@ -68,8 +68,21 @@ Grouping name for agent lookup. Not a campaign `type`. Not a frontmatter field.
 
 - **name**: One of Encounters, Rules, Campaign State, DM Intelligence, System, Source Material
 - **surface**: `wiki` (Encounters, Rules, Campaign State, DM Intelligence) | `agent-facing` (System, Source Material)
+- **template**: Wiki kinds only — `wiki/templates/encounter.md` (`session-prep`), `rules.md` (`lore`), `campaign-state.md` (`lore`), `dm-intelligence.md` (`work`)
 
-Validation: MUST NOT duplicate an existing `type` (Characters, Places, Factions, Deities, Items, Vehicles, Creatures, Situations, Narrative Islands, Sessions, Lore). System and Source Material MUST NOT be treated as wiki canon. Source Material is `wiki/_raw/` staging. System is skills/`AGENTS.md`/`docs/agents`. Campaign State includes the campaign hub. DM Intelligence is not the aim.
+Validation: MUST NOT duplicate an existing `type` (Characters, Places, Factions, Deities, Items, Vehicles, Creatures, Situations, Narrative Islands, Sessions, Lore). System and Source Material MUST NOT be treated as wiki canon and MUST NOT get wiki templates. Source Material is `wiki/_raw/` staging. System is skills/`AGENTS.md`/`docs/agents`. Campaign State includes the campaign hub. DM Intelligence is not the aim. New pages from a wiki template use that template's pinned `type`.
+
+## Wiki Template
+
+Copy-start scaffold for one wiki layout kind.
+
+- **layout_kind**: Encounters | Rules | Campaign State | DM Intelligence
+- **path**: `wiki/templates/<file>.md`
+- **type**: Existing campaign `type` only (`session-prep` | `lore` | `work`)
+- **jobs**: Named in the `wiki/AGENTS.md` layout table. Pass is those jobs, not heading-order match.
+
+Validation: MUST NOT add a campaign `type`. Existing pages of that layout kind are rewritten onto the template when facts stay the same. A rewrite that would change facts waits on accept. Table aim stays on the hub.
+
 
 ## Layout Move
 
@@ -100,4 +113,8 @@ sitting recorded
 
 wiki fact write accepted
   → drain matching open error entries whose cause that write fixed
+
+wiki template lands
+  → rewrite existing pages of that layout kind onto the template when facts_changed is false
+  → if facts would change: wait on accept
 ```

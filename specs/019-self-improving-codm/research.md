@@ -80,12 +80,19 @@
 
 ## Decision: Encounters and Rules keep existing page `type`
 
-**Rationale**: Layout kinds group files for lookup. They do not add `type: encounter` or `type: rules`. Encounter packages already exist as `session-prep` or `work`. Mechanical references already exist as `lore` or `work`. Changing `type` during a layout move is invalid.
+**Rationale**: Layout kinds group files for lookup. They do not add `type: encounter` or `type: rules`. New pages pin Encounters to `session-prep`, Rules to `lore`, Campaign State to `lore`, DM Intelligence to `work`. Changing `type` during a layout move is invalid.
 
-**Alternatives considered**: New `type` values. Rejected — owner kept the enum. `kind:` frontmatter for layout. Rejected — extra schema for the same outcome.
+**Alternatives considered**: New `type` values. Rejected — owner kept the enum. `kind:` frontmatter for layout. Rejected — extra schema for the same outcome. All four as `work`. Rejected — owner pinned the four existing types.
+
 
 ## Decision: Source Material is `wiki/_raw/`; System is agent docs
 
 **Rationale**: Staging already lives at `wiki/_raw/`. Grouping those files is agent-facing layout. Promoting them to compiled wiki is ingest/accept, not layout. System files are `AGENTS.md`, skills, and `docs/agents/` — regroup only when mixed growth makes lookup costly.
 
 **Alternatives considered**: A repo `source-material/` tree. Rejected — `_raw/` already exists. Treat `_raw/` as wiki canon grouping. Rejected — staging is not facts.
+
+## Decision: Four wiki copy-start templates; no new `type`
+
+**Rationale**: Owner: templates for Encounters, Rules, Campaign State, and DM Intelligence, type list unchanged. Files: `wiki/templates/encounter.md`, `rules.md`, `campaign-state.md`, `dm-intelligence.md`. `wiki/AGENTS.md` layout table names jobs and the copy-start path. System and Source Material stay agent-facing — no wiki templates. Existing pages in those four groups are rewritten onto the templates when facts stay the same; fact changes still wait on accept. Session agent writes the templates (wiki scaffolds, not a skill redesign). 012 still binds because the templates are D&D content guidance.
+
+**Alternatives considered**: New campaign `type` values with templates. Rejected — FR-040. Templates for new pages only. Rejected — owner rewrites existing pages. Every rewrite waits on accept. Rejected — structure-only is agent-owned. Templates for System/Source Material. Rejected — not wiki canon.
