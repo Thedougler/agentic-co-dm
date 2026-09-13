@@ -132,6 +132,15 @@ def main() -> int:
         if set(rel.parts) & SKIP_DIRS:
             continue
         documents[rel.as_posix()] = path.read_text(encoding="utf-8")
+    title_groups: dict[str, list[str]] = collections.defaultdict(list)
+    for rel, item in pages.items():
+        title = normalize(item["title"])
+        if title:
+            title_groups[title].append(rel)
+    findings["duplicate_titles"] = [
+        {"title": title, "pages": sorted(members)}
+        for title, members in sorted(title_groups.items()) if len(members) > 1
+    ]
 
     broken: list[dict[str, object]] = []
     incoming = collections.Counter()
@@ -146,6 +155,15 @@ def main() -> int:
                 broken.append({"page": rel, "target": raw})
     findings["broken_links"] = broken
     findings["orphan_pages"] = [rel for rel in pages if incoming[rel] == 0]
+    index_targets = set()
+    for raw in links(documents.get("index.md", "")):
+        targets = resolve(raw, pages, lookup)
+        if len(targets) == 1:
+            index_targets.add(targets[0])
+    findings["index_issues"] = {
+        "missing_from_index": sorted(set(pages) - index_targets),
+        "broken_links": [item for item in broken if item["page"] == "index.md"],
+    }
 
 
     relationship_findings: list[dict[str, object]] = []
@@ -211,7 +229,14 @@ def main() -> int:
             stale.append({"page": rel, "updated": value, "days": age, "lifecycle": item["fields"].get("lifecycle", "")})
     findings["stale_pages"] = stale
 
-    counts = {key: len(value) for key, value in findings.items()}
+    def count(key: str, value: Any) -> int:
+        if key == "missing_frontmatter":
+            return len(value)
+        if isinstance(value, dict):
+            return sum(len(item) if isinstance(item, list) else 1 for item in value.values())
+        return len(value)
+
+    counts = {key: count(key, value) for key, value in findings.items()}
     result["counts"] = counts
     if args.json:
         print(json.dumps(result, indent=2, sort_keys=True))

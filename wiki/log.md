@@ -80,3 +80,4 @@ title: Wiki Log
 - [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - River Slack Basin.md" pages_updated=0 pages_created=1 mode=append
 - [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - Giant's Guava.md" pages_updated=1 pages_created=0 mode=append
 - [2026-09-12T00:00:00Z] INGEST_FAILED source="wiki/_raw/.DS_Store" reason="non-source binary file"
+- [2026-09-12T00:00:00Z] LINT scope="active-structural" issues_found=488 orphans=1 broken_links=438 stale=0 contradictions=0 prov_issues=0 missing_summary=3 fragmented_clusters=4 visibility_issues=0 promotion_candidates=0 synthesis_gaps=0 relationship_issues=0

@@ -10,3 +10,6 @@ The Aruhe expedition now has a complete river-hazard loop: claimed water, danger
 ## Key Takeaways
 The Crown Squid owns connected canopy, while open ground and occupied water provide meaningful escape routes.
 ## Flagged Contradictions
+
+## Maintenance
+The active structural lint found 438 broken wikilinks, 12 pages missing campaign frontmatter, 28 pages missing `base_confidence`, and one orphaned Bloodhawk page. No lifecycle, provenance, typed-relationship, or stale-page findings were detected in scope.
