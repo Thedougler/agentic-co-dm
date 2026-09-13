@@ -87,4 +87,4 @@ Quiet → Alert → Contested → Transformed: routine traffic → signals multi
 - **Return state:** record lane used, witnesses, and current pressure state.
 
 ## Geography ingest — working road
-The Strait is the shipping road between the two green arcs. [[Calder's Tooth and Port Tidefall]] owns the western mouth: every hull is supposed to stop, answer questions, and show papers. Nimmik Vollask <!-- broken link: no match found --> works the water, and patrol cutters own the official lane; smart captains leave it when pilots and risk allow. The Strait's northern view is Crown water and Greyteeth; its southern exits feed the pilot-named bands of the [[Midchain]].
+The Strait is the shipping road between the two green arcs. [[Calder's Tooth and Port Tidefall]] owns the western mouth: every hull is supposed to stop, answer questions, and show papers. [[Nimmik Vollask]] works the water, and patrol cutters own the official lane; smart captains leave it when pilots and risk allow. The Strait's northern view is Crown water and Greyteeth; its southern exits feed the pilot-named bands of the [[Midchain]].

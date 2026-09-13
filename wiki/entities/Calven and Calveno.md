@@ -34,7 +34,7 @@ Pale four- and five-storey buildings line the canals. Deals are shouted in the o
 ## Control
 The [[Dravosi Crown]] owns visible harbour authority and rates ships. Merchant families still sit the Seven Houses Council, but the seating chart is not six Tessarine seats: four houses owe enough, profit enough, or fear disruption enough to vote the [[Tessarine Concordat]]'s way, while three can still stall if refusal looks cheaper than compliance. Some people call that six of seven because it is the feeling on the ground. Debt is the politics.
 
-The city talks Italian in its canals—Alvise, Lavinia, Grimani, Sordi—because Tessarine records outlast the flag. Under Le Paludi, Rattkin <!-- broken link: no match found --> have been in the old drains longer than either colonial power and prefer the official story to stay that way.
+The city talks Italian in its canals—Alvise, Lavinia, Grimani, Sordi—because Tessarine records outlast the flag. Under Le Paludi, [[Rattkin]] have been in the old drains longer than either colonial power and prefer the official story to stay that way.
 
 ## Geography and play
 - Calven's northern and western flats flood and drain with the tide; foot travel needs local guidance.
@@ -49,4 +49,4 @@ The Crown inspects and the Concordat invoices. Both collect from the same fisher
 ## Connections
 - → [[Crown Islands]] · [[Calder's Tooth and Port Tidefall]] · [[Harwick]] · [[Central Strait]] · [[Warren]] · [[Mercatura]] · [[Tessarine Concordat]]
 
-**Provenance:** Dump source staged at FILED-2026-09-05-tessarine-concordat.md <!-- broken link: no match found -->. Legacy read-only context: `/Users/nick/shattered-sea/wiki/shattered-sea/region-calven.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/calveno-raid/settlement-calveno.md`.
+**Provenance:** Dump source staged at [[inbox/archive/FILED-2026-09-05-tessarine-concordat.md]]. Legacy read-only context: `/Users/nick/shattered-sea/wiki/shattered-sea/region-calven.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/calveno-raid/settlement-calveno.md`.

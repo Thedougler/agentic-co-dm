@@ -52,9 +52,9 @@ The Lava Tubes are the underworld beneath Aruhe's living surface: old volcanic p
 ---
 ## Who
 
-- Blackrail <!-- broken link: no match found --> owns miles of the cave road in the fiction roster; it is a 40-foot cave centipede, not a combat encounter stored here.
-- Glass Crickets <!-- broken link: no match found --> occupy root wells and skylight approaches; their stillness can warn of Blackrail country.
-- Cave Bats <!-- broken link: no match found --> use skylights, wells, and the lava tubes as part of the underworld food cycle.
+- [[Blackrail]] owns miles of the cave road in the fiction roster; it is a 40-foot cave centipede, not a combat encounter stored here.
+- [[Glass Crickets]] occupy root wells and skylight approaches; their stillness can warn of Blackrail country.
+- [[Cave Bats]] use skylights, wells, and the lava tubes as part of the underworld food cycle.
 - Giant spiders, ordinary, use the dark passages.
 - [[Aruhe - Snakewood|Snakewood]] reaches down through the living root network rather than forming a separate subterranean flora.
 

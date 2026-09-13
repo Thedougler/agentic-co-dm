@@ -59,7 +59,7 @@ Investigate, salvage, or decide what Maw evidence to expose. Old breach evidence
 
 - Places: [[Shelfworks]], [[Mid-Works]], [[Deep Works]], [[Drowned Maw]], [[Fathomrush]]
 - Machine: [[Auralis]] (Antheri machine holding the fissure)
-- Historical stake: Waveservants <!-- broken link: no match found --> and Sentinels of the Eyrie <!-- broken link: no match found --> each have a stake in what the Maw means
+- Historical stake: [[Waveservants]] and [[Sentinels of the Eyrie]] each have a stake in what the Maw means
 - No known living leader
 
 ## Connections

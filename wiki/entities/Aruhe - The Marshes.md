@@ -67,7 +67,7 @@ The Marshes begin along the wet southern shore of [[Aruhe - Clear Lake|Clear Lak
   - **Wisdom (Survival) — harvest**
     - `DC 10` → Fallen ordinary take.
     - `DC 15` → Ripe useful specimen.
-    - `DC 20` → Prize grade, including a Aruhe - Rotheart <!-- broken link: no match found --> on the sickest interior tree.
+    - `DC 20` → Prize grade, including a [[Aruhe - Rotheart]] on the sickest interior tree.
     - Failure → Local fauna close in, or the living source is claimed.
 
 ---
@@ -75,10 +75,10 @@ The Marshes begin along the wet southern shore of [[Aruhe - Clear Lake|Clear Lak
 
 - [[Aruhe - Crown Squid]] move through the lower canopy, using flooded openings where prey cannot easily sprint away. The oldest sit heavier here, where food is easy.
 - [[Deer-Stalker|Deer-Stalkers]] use the firmer animal paths and root ridges from the Quiet floor.
-- Corpsewood <!-- broken link: no match found --> patrols the deep tree line on a seasonal beat and never leaves the forest.
+- [[Corpsewood]] patrols the deep tree line on a seasonal beat and never leaves the forest.
 - [[Aruhe - Snakewood|Snakewood]] grows heavily here, with branches crossing above waterways that appear open from below.
 - [[Aruhe - Bear-Elk]] run scored-tree beats on the Quiet–Marshes boundary.
-- Silence Moths <!-- broken link: no match found --> drift dusk and dawn on marsh and Grove approaches through the trees.
+- [[Silence Moths]] drift dusk and dawn on marsh and Grove approaches through the trees.
 - [[Aruhe - River Otter|River Otters]] hold only the lake-fed clear channels. Brown standing water is not their claim.
 - Clouds of biting insects are constant. Some follow heat, some blood, and some the carbon dioxide of breathing animals.
 
@@ -94,7 +94,7 @@ The Marshes begin along the wet southern shore of [[Aruhe - Clear Lake|Clear Lak
 - Luminous roots run wrist-thick to thigh-thick through the wet ground from the shelf above Clear Lake, all pointing toward the unmarked graves in [[Aruhe - Memorial Grove]].
 - Soft ground can give way toward volcanic stone: a subsurface breach into [[Aruhe - Lava Tubes]].
 - [[Aruhe - Stonepear]] hangs along the firmer root ridges, where fallen fruit can be foraged without entering the deeper pools.
-- Aruhe - Rotheart <!-- broken link: no match found --> appears only on the sickest trees after spore-air has begun to wear a body down.
+- [[Aruhe - Rotheart]] appears only on the sickest trees after spore-air has begun to wear a body down.
 - At night the marsh becomes louder rather than quieter. Frogs, insects, distant splashes, branch movement, and cries overlap until locating any one sound is difficult.
 
 ---

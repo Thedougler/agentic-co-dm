@@ -75,8 +75,8 @@ Keep western approaches under inspection law while [[Khlysty - the Flock]] infil
 - Reserved instrument: [[Aleksander Malone]].
 - Related bloodline: [[Geoffrey Draves]] and [[Aldous Draves]].
 - Rival: [[Tessarine Concordat]] inspects less and invoices more; both share harbours, collect from fishermen, pay Umberlee as infrastructure, and compete over who defines movement.
-- Hostile or outside record: [[Passage]] and Rattkin <!-- broken link: no match found --> movement; [[Greyteeth]] pilots and an unwritten blue-dragon arrangement make the reefs usable for some captains.
-- Complicated: Waveservants <!-- broken link: no match found -->, island communities.
+- Hostile or outside record: [[Passage]] and [[Rattkin]] movement; [[Greyteeth]] pilots and an unwritten blue-dragon arrangement make the reefs usable for some captains.
+- Complicated: [[Waveservants]], island communities.
 
 ## Private Crown (DM)
 

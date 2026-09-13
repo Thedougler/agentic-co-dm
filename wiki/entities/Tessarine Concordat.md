@@ -64,7 +64,7 @@ Oral tradition puts the [[Vault of the First Factor]] on an uncharted limestone 
 
 ## Active agenda
 
-After [[Iacopo Fieschi]] confessed his Tessarine debt in public, the house contained the noise rather than argue it. A second public confession would be worse than a stolen chest. The house wants the name and upper layout of [[Shelfworks]], not the deep city. [[Sunkline]] at [[Fathomrush]] is its pressure-rig shop, racing Voyvode <!-- broken link: no match found -->; the rig has not passed a real deep trial, but its certificate has.
+After [[Iacopo Fieschi]] confessed his Tessarine debt in public, the house contained the noise rather than argue it. A second public confession would be worse than a stolen chest. The house wants the name and upper layout of [[Shelfworks]], not the deep city. [[Sunkline]] at [[Fathomrush]] is its pressure-rig shop, racing [[Voyvode]]; the rig has not passed a real deep trial, but its certificate has.
 
 [[Shepherd Grigori]] names the Concordat among blood-anchor targets; this source does not establish the Concordat's response.
 

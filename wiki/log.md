@@ -237,3 +237,4 @@ title: Wiki Log
 - [2026-09-13T21:00:00Z] INGEST source="wiki/_raw/Waveservants.md" pages_updated=0 pages_created=1 mode=append
 - [2026-09-13T21:00:00Z] ARCHIVE_RAW source="wiki/_raw/Waveservants.md" destination="wiki/_archive/Waveservants.md" pages=1
 - [2026-09-13T19:47:14Z] LINT_FIX restored links for Deerstalker→[[Deer-Stalker]] (prior false archive-only demotion; live page entities/Deer-Stalker.md)
+- [2026-09-13T19:49:58Z] LINT_FIX reverse_demotions restored=156 sweep=6 skipped_archived_deerstalker=44 failed=3 leftover_nomatch_comments=0

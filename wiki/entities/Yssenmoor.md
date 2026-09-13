@@ -31,7 +31,7 @@ A place over a hidden ley line that reacts to [[Fate Spinner]]; feels like an un
 
 ## Five-sentence kernel
 - **Function:** Exact present function is unknown; the hidden ley line runs beneath it.
-- **Fantastic:** Sir Quackers the Fowl <!-- broken link: no match found --> has died and reformed countless times on the ley line and is unknowingly edging toward demigodhood.
+- **Fantastic:** [[Sir Quackers the Fowl]] has died and reformed countless times on the ley line and is unknowingly edging toward demigodhood.
 - **Conflict:** The Fate Spinner reacts to the ley line while [[Talon Vantyrus]] recognizes the Soul Incarnate signature.
 - **Promise:** Study the reaction and decide what information can safely be carried away.
 - **Trajectory:** If ignored, the reaction remains a readable imprint for Vantyrus’s transformation-technique hunt.
@@ -40,13 +40,13 @@ A place over a hidden ley line that reacts to [[Fate Spinner]]; feels like an un
 `hidden ley line, repeated reforming, Fate Spinner reaction`
 
 ## Who is here
-- Sir Quackers the Fowl <!-- broken link: no match found -->
+- [[Sir Quackers the Fowl]]
 - [[Talon Vantyrus]] may sense the signature without the party knowing it
 
 ## Connections
 - → [[Midchain]]
 - → [[Fate Spinner]]
-- → Soul Incarnate <!-- broken link: no match found -->
+- → [[Soul Incarnate]]
 
 ## Hooks
 - Observe the Fate Spinner’s reaction.
@@ -57,4 +57,4 @@ A place over a hidden ley line that reacts to [[Fate Spinner]]; feels like an un
 The place’s settlement, terrain, routes, and exact ley-line behavior are unknown beyond the hidden line and the reaction described above.
 
 ## Geography ingest — physical approach
-Yssenmoor is three miles of unclaimed bog under fog that does not lift. Sound arrives before its source, Sir Quackers the Fowl <!-- broken link: no match found --> holds it, and there is no dry landing. These physical facts coexist with the hidden ley line and [[Fate Spinner]] reaction already recorded here.
+Yssenmoor is three miles of unclaimed bog under fog that does not lift. Sound arrives before its source, [[Sir Quackers the Fowl]] holds it, and there is no dry landing. These physical facts coexist with the hidden ley line and [[Fate Spinner]] reaction already recorded here.

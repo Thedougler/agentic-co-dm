@@ -43,7 +43,7 @@ A roughly 60,000-square-mile archipelago weeks beyond the last charted Faerûn c
 * **Pressure.** Active named pressures include the Maw fissure and tribute system, [[The taken 314]], Long Sight Hunt, Rule of Two, Schism's Third Name, and Countless through the Maw seal. Soul Incarnate's Watch remains dormant until [[Crissdalynn Khinriss]] completes a Maw pilgrimage.
 * **Opportunity.** Open table threads include [[Pursue the Grung raiding fleet]], [[Survey Aruhe as a Tangle anchor]], [[Simone's hunters]], [[Bring the Pearl of Souls to Umberlee]], [[Complete the Maw map pilgrimage]], [[Grigori and the Crown hunt]], [[Red Wake]], [[Sentinels and Countless]], and [[Pearl signal across the boundary]].
 * **Table.** Players at this table: Kaden → [[Perrin Black-Jaw]]; Frederick → [[Delmar Fisk]]; Courtney → [[Crissdalynn Khinriss]]; Chad → [[Jean-Claude Tabarnack]]; Kaitlin → [[Catarina Da'Virelli]].
-* **Systems in play.** [[Dravosi Crown]] naval law, [[Tessarine Concordat]] debt, independent councils, and Waveservants <!-- broken link: no match found --> port infrastructure all claim a piece of the sea.
+* **Systems in play.** [[Dravosi Crown]] naval law, [[Tessarine Concordat]] debt, independent councils, and [[Waveservants]] port infrastructure all claim a piece of the sea.
 
 ## Five-sentence kernel
 - **Function:** A far-flung archipelago connecting Crown harbours, Midchain free ports, and routes toward the Scatter.
@@ -84,7 +84,7 @@ A roughly 60,000-square-mile archipelago weeks beyond the last charted Faerûn c
 - **Supporting:** evade, map, salvage, rescue, exploit infrastructure, return with consequences.
 - **Rewards:** information, access, leverage, relationships, changed routes, rescued people.
 ## Who is here
-- [[Dravosi Crown]], [[Tessarine Concordat]], [[Passage]], [[Grung clans]], Waveservants <!-- broken link: no match found -->, Sentinels of the Eyrie <!-- broken link: no match found -->, [[Countless]], Umberlee, and the crew.
+- [[Dravosi Crown]], [[Tessarine Concordat]], [[Passage]], [[Grung clans]], [[Waveservants]], [[Sentinels of the Eyrie]], [[Countless]], Umberlee, and the crew.
 ## Connections
 - [[Crown Islands]] · [[Midchain]] · [[Central Strait]] · [[Galewall]] · [[Drowned Maw]]
 ## Hooks

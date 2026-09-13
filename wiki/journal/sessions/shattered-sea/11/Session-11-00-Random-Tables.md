@@ -57,7 +57,7 @@ If the rolled hazard does not belong in the current ground, reroll once. If a de
 
 ## Deep
 
-- The current hazard roster is also indexed at 00 Hazards <!-- broken link: no match found -->.
+- The current hazard roster is also indexed at [[00 Hazards]].
 - Dedicated scene cards take precedence over this table. Do not roll it during the landing, the wolfrabbit pack, [[Aruhe - River - Line Bank]], the otter hole, the night watch, [[Aruhe - Grasslands - Print Braid]], or [[Aruhe - Quiet Forest Spoke Ring]].
 - No planned treasure is attached to a roll. Living plants remain subject to [[Taking on Aruhe]]; fallen fruit is genuinely beneficial when its owner note says it is.
 

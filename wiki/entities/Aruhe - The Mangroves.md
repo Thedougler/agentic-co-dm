@@ -79,7 +79,7 @@ The Mangroves are the southern end of [[Aruhe - The Marshes|the Marshes]], where
 - The mud can swallow a leg to the thigh while neighboring ground is firm enough to stand on.
 - Roots create thousands of enclosed pockets where predators can remain within striking distance without being visible.
 - The canopy is nearly continuous. What cannot reach a traveler from below may reach them from above. Insects occupy the air between.
-- In fresher pockets, [[Ghost Plum]] hangs beneath wet leaves, while Aruhe - Rotheart <!-- broken link: no match found --> grows in dark clusters on old vinewood above the channels. Fallen fruit can be foraged from the roots, and living fruit can be picked only by drawing a response from Aruhe.
+- In fresher pockets, [[Ghost Plum]] hangs beneath wet leaves, while [[Aruhe - Rotheart]] grows in dark clusters on old vinewood above the channels. Fallen fruit can be foraged from the roots, and living fruit can be picked only by drawing a response from Aruhe.
 - Surf can be heard through much of the outer forest, creating the constant impression that the open sea is only a short distance away. It usually is not.
 - This is a wall, not a harbor. Purple Grung work western reefs and will not set foot on Aruhe; they also do not treat this coast as an entrance.
 

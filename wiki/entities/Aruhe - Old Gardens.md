@@ -33,8 +33,8 @@ Ancient terraces run inland from [[Aruhe - Beach|Western Landing]]. The builders
 - **Take the green route:** Enter [[Aruhe - Quiet Forest|the Quiet]].
 - **Descend to the beach:** Return to [[Aruhe - Beach|Western Landing]].
 - **Follow a terrace edge:** Skip most of the planted abundance.
-- **Walk beneath hanging rope-vines:** Some vines are Vine Lashes <!-- broken link: no match found --> that grab.
-- **Walk a wider low-canopy lane:** Young Snakewood <!-- broken link: no match found --> hunts here, while adult [[Aruhe - Snakewood]] lives farther inland.
+- **Walk beneath hanging rope-vines:** Some vines are [[Vine Lash|Vine Lashes]] that grab.
+- **Walk a wider low-canopy lane:** [[Young Snakewood]] hunts here, while adult [[Aruhe - Snakewood]] lives farther inland.
 - **Disturb a hot yellow bloom:** A [[Aruhe - Grubnade]] swells, hisses, and detonates at the end of the turn. Creatures within 5 feet make a DC 12 Dexterity saving throw, taking 2d6 fire damage on a failure or half as much on a success.
 - **Approach a table-sized black flower:** [[Aruhe - Black Lotus]] can restrain a creature and drain its highest-level available spell slot. Stay outside 10 feet or cast from beyond 30 feet.
 - **Disturb an ember-veined black flower:** [[Aruhe - Lesser Black Lotus]] retaliates with a ranged spell from the nearest spellcaster. Probe the ground or trigger it from range.
@@ -42,14 +42,14 @@ Ancient terraces run inland from [[Aruhe - Beach|Western Landing]]. The builders
 
 ## Who
 
-- Groups of three to five Grinning Apes <!-- broken link: no match found --> sit in the terrace canopy and drop together after throwing stones.
+- Groups of three to five [[Aruhe - Grinning Ape|Grinning Apes]] sit in the terrace canopy and drop together after throwing stones.
 - Packs of four to six [[Wolfrabbit|Wolfrabbits]] hunt the collapsed first terraces at dawn and dusk. Their warrens honeycomb the stone, and a mature [[Aruhe - Grubnade]] can abort their pounce.
 
 ## What
 
 - Broken steps hold yam vines, ordinary citrus, and algae-green irrigation ditches.
-- Vine Lashes <!-- broken link: no match found --> hang among ordinary rope-vines over the trail lanes.
-- Young Snakewood <!-- broken link: no match found --> hunts from connected low branches.
+- [[Vine Lash|Vine Lashes]] hang among ordinary rope-vines over the trail lanes.
+- [[Young Snakewood]] hunts from connected low branches.
 - [[Redheart Berry]] hangs in clusters along the terraces, while [[Giant's Guava]] follows the inland tree line.
 
 ## Where

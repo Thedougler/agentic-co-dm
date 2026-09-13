@@ -3,7 +3,7 @@ title: "High Eyrie"
 category: entities
 tags: ["shattered-sea", "place", "sentinel", "schism", "crown-islands"]
 sources: ["High Eyrie.md"]
-summary: "A basalt stack beyond the eastern Crown chain, held by the Sentinels of the Eyrie <!-- broken link: no match found --> for two hundred years and overlooking the [[Drowned Maw]]."
+summary: "A basalt stack beyond the eastern Crown chain, held by the [[Sentinels of the Eyrie]] for two hundred years and overlooking the [[Drowned Maw]]."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -26,7 +26,7 @@ region: "Crown Islands"
 > A basalt stack stands beyond the eastern island chain, high over discoloured water. Wind shears the rock face, and the stack holds a clear view of the approaches below.
 
 ## At a glance
-A basalt stack beyond the eastern Crown chain, held by the Sentinels of the Eyrie <!-- broken link: no match found --> for two hundred years and overlooking the [[Drowned Maw]].
+A basalt stack beyond the eastern Crown chain, held by the [[Sentinels of the Eyrie]] for two hundred years and overlooking the [[Drowned Maw]].
 
 ## Sentinel refusal
 The [[Dravosi Crown]] has offered the Sentinels three deals. They have refused all three. The offers' exact terms remain unnamed; the refusal is established, not a license to invent their contents.
@@ -35,7 +35,7 @@ The [[Dravosi Crown]] has offered the Sentinels three deals. They have refused a
 [[Sentinels of the Eyrie]], [[Master Kyzil]], apprentices, record-keepers, and the Maw observation ledgers.
 
 ## Connections
-- → [[Crown Islands]] · [[Stenmark]] · [[Drowned Maw]] · Sentinels of the Eyrie <!-- broken link: no match found -->
+- → [[Crown Islands]] · [[Stenmark]] · [[Drowned Maw]] · [[Sentinels of the Eyrie]]
 
 ## Secrets (DM)
 The seal and founding records remain tied to the existing Sentinel material. The Crown's three refusals are a political pressure, not proof that the Sentinels understand the Crown's hidden founder.

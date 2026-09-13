@@ -26,7 +26,7 @@ kind: mercantile
 relationships:
   - target: "[[Tessarine Concordat]]"
     type: related_to
-  - target: "Voyvode <!-- broken link: no match found -->"
+  - target: "[[Voyvode]]"
     type: related_to
   - target: "[[Fathomrush]]"
     type: related_to
@@ -50,20 +50,20 @@ Keep a forged mid-shelf trial certificate from discovery long enough to preserve
 
 ## Active agenda
 
-Prevent certificate discovery while the memorial wall fills. Losing the compound empties into Voyvode <!-- broken link: no match found -->'s dock.
+Prevent certificate discovery while the memorial wall fills. Losing the compound empties into [[Voyvode]]'s dock.
 
 ## Assets, people, places, relationships
 
 - Chief engineer: [[Adriana Tarquine]]
 - Store: [[Yevgenia Sorrel]]
-- Rival: Voyvode <!-- broken link: no match found -->
+- Rival: [[Voyvode]]
 - Funder: [[Tessarine Concordat]]
 - Places: [[Fathomrush]], [[Mid-Works]], Last Berth
 
 ## Connections
 
 - [[Tessarine Concordat]]
-- Voyvode <!-- broken link: no match found -->
+- [[Voyvode]]
 - [[Fathomrush]]
 - [[Mid-Works]]
 - [[Adriana Tarquine]]

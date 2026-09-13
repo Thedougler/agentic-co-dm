@@ -22,7 +22,7 @@ visibility: dm
 status: active
 kind: breakaway order
 relationships:
-  - target: "Sentinels of the Eyrie <!-- broken link: no match found -->"
+  - target: "[[Sentinels of the Eyrie]]"
     type: related_to
   - target: "[[Talon Vantyrus]]"
     type: related_to
@@ -38,7 +38,7 @@ relationships:
 
 ## Public face
 
-Breakaways from the Sentinels of the Eyrie <!-- broken link: no match found --> who kept martial reach and dropped discipline. Their public face is absence from every ledger: taken names, no records, and a shared title of Talon.
+Breakaways from the [[Sentinels of the Eyrie]] who kept martial reach and dropped discipline. Their public face is absence from every ledger: taken names, no records, and a shared title of Talon.
 
 ## DM thesis
 
@@ -56,7 +56,7 @@ Countless bends fate for itself and ensures nothing is counted against it, hunti
 
 - Method: hired blades and paid contacts receive one job each and never know who ordered it. Countless sweeps pilgrim routes, grey markets, and Sentinel waystations for Fate Spinner carriers.
 - Leverage: covert routes, taken names, and the ability to avoid ledgers. No records and one-job contacts limit what any individual agent knows.
-- Rival: Sentinels of the Eyrie <!-- broken link: no match found -->
+- Rival: [[Sentinels of the Eyrie]]
 - Target: [[Crissdalynn Khinriss]]
 - Internal pressure: [[Rule of Two]]
 - Related pressure: [[Countless through the Maw seal]]
@@ -65,7 +65,7 @@ Countless bends fate for itself and ensures nothing is counted against it, hunti
 
 - [[Talon Vantyrus]]
 - [[Talon Skarn]]
-- Sentinels of the Eyrie <!-- broken link: no match found -->
+- [[Sentinels of the Eyrie]]
 - [[Crissdalynn Khinriss]]
 - [[Fate Spinner]]
 - [[Long Sight Hunt]]

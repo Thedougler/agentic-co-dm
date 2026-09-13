@@ -3,7 +3,7 @@ title: "Crown Islands"
 category: entities
 tags: ["shattered-sea", "region", "crown-islands", "dravosi-crown"]
 sources: ["Crown Islands.md", "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/HCS Sovereign.md"]
-summary: "The Crown Islands are a fortified western island chain: Calven <!-- broken link: no match found -->, [[Harwick]], [[Aldenmere]], and [[Stenmark]], with [[Calder's Tooth and Port Tidefall]] as a gatepost and [[High Eyrie]] beyond t..."
+summary: "The Crown Islands are a fortified western island chain: [[Calven]], [[Harwick]], [[Aldenmere]], and [[Stenmark]], with [[Calder's Tooth and Port Tidefall]] as a gatepost and [[High Eyrie]] beyond t..."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -26,7 +26,7 @@ region: "Shattered Sea"
 > A fortified western island chain shows pale forts, cannon, and flags over watchful water. Reef ridges break the approaches, and the harbours look built to inspect every hull that tries to pass.
 
 ## At a glance
-The Crown Islands are a fortified western island chain: Calven <!-- broken link: no match found -->, [[Harwick]], [[Aldenmere]], and [[Stenmark]], with [[Calder's Tooth and Port Tidefall]] as a gatepost and [[High Eyrie]] beyond the eastern edge. Pale forts, cannon, flags, and Greyteeth reefs make the water watchful.
+The Crown Islands are a fortified western island chain: [[Calven]], [[Harwick]], [[Aldenmere]], and [[Stenmark]], with [[Calder's Tooth and Port Tidefall]] as a gatepost and [[High Eyrie]] beyond the eastern edge. Pale forts, cannon, flags, and Greyteeth reefs make the water watchful.
 
 ## Function and control
 The strongest Dravosi foothold and the administrative counterweight to the Midchain. The Crown claims the chain, rates its ships, and keeps the big harbours honest; it does not keep the whole sea. West of the [[Galewall]] its forts can enforce. Eastward, patrols thin into cutters on the main lanes.

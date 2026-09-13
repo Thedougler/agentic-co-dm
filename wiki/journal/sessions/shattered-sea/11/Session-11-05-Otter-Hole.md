@@ -77,7 +77,7 @@ Living prints and the blood trail climb 20 feet north into the jungle wall. Gold
 ```
 
 ```col-md
-**Matteo Scola <!-- broken link: no match found -->.** Until the party pulls him onto the bank, call him the man in the grey shirt.
+**[[Matteo Scola]].** Until the party pulls him onto the bank, call him the man in the grey shirt.
 
 - **Look:** His lip is split, one boot is missing, and his shirt is grey and salt-stiff. He clings to hanging roots 20 feet north with his hips in the slack.
 - **Want:** He wants this bank and thinks the otters are killing him. He went back for the pack after the others climbed out. He does not name the woman.
@@ -192,7 +192,7 @@ The party takes the bloody-bank detour toward the smoke on [[Aruhe - Quiet Fores
 
 ## Backup
 
-[[Aruhe - River Slack Basin]] · [[Aruhe - Quiet Forest Cutoff Lip]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - River Otter]] · Matteo Scola <!-- broken link: no match found --> · [[Taking on Aruhe]] · [[Aruhe - River - Line Bank]] · [[Aruhe - Grasslands]] · [[Young Bloodhawk]] · [[Session-11-00-Random-Tables]] · [[Session-11-04-What-They-Ate]] · [[Session-11-06-Farthest-Camp]] · [[Session-11-00-Birds-of-a-Feather]]
+[[Aruhe - River Slack Basin]] · [[Aruhe - Quiet Forest Cutoff Lip]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - River Otter]] · [[Matteo Scola]] · [[Taking on Aruhe]] · [[Aruhe - River - Line Bank]] · [[Aruhe - Grasslands]] · [[Young Bloodhawk]] · [[Session-11-00-Random-Tables]] · [[Session-11-04-What-They-Ate]] · [[Session-11-06-Farthest-Camp]] · [[Session-11-00-Birds-of-a-Feather]]
 
 ## Battlemap
 

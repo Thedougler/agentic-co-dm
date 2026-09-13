@@ -55,8 +55,8 @@ The exact boomtown authority and claim system are open; the Red Lady wreck is on
 ## Drowned Maw ingest — split harbor
 About eight hundred people pass through. Two piers face each other across mud; Sunkline's sunburst and Voyvode's eagle are close enough to read. There is no mayor; each company keeps law inside its gates. A plank memorial wall bears a hundred diver names and no crest; both companies maintain it.
 
-- Sunkline <!-- broken link: no match found --> is Tessarine money. Adriana Tarquine <!-- broken link: no match found --> leads; the mid-shelf certificate is forged, and the false log is under the Last Berth floorboard. Petera Ngata <!-- broken link: no match found --> keeps the only complete death list.
-- Voyvode <!-- broken link: no match found --> is Crown money. Branimir Karsovine <!-- broken link: no match found --> personally tests rigs; his notes are honest and incomplete, and most fresh memorial names are his crews.
-- Yevgenia Sorrel <!-- broken link: no match found --> runs Sunkline's store; Marta Kessler <!-- broken link: no match found --> runs Voyvode's. The rivalry resolves off-screen: certificate discovery or another run of crew loss empties one compound into the other's dock.
+- [[Sunkline]] is Tessarine money. [[Adriana Tarquine]] leads; the mid-shelf certificate is forged, and the false log is under the Last Berth floorboard. [[Petera Ngata]] keeps the only complete death list.
+- [[Voyvode]] is Crown money. [[Branimir Karsovine]] personally tests rigs; his notes are honest and incomplete, and most fresh memorial names are his crews.
+- [[Yevgenia Sorrel]] runs Sunkline's store; [[Marta Kessler]] runs Voyvode's. The rivalry resolves off-screen: certificate discovery or another run of crew loss empties one compound into the other's dock.
 
 **Provenance:** Dump source 2026-09-05; legacy `/Users/nick/shattered-sea/wiki/shattered-sea/situation-fathomrushs-split-harbor.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/faction-sunkline-company.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/faction-voyvode-works.md`.

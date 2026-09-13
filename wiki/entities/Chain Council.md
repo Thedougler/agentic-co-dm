@@ -59,7 +59,7 @@ Keep Midchain law workable while Pearl and Maw pressure escalate. Commissions, s
 
 - Commission face: [[Delmar Fisk]] / [[Fisk's Captains]]
 - Hidden principal: [[Cosimo Verantio]], acting as "the Principal" behind a Council signatory for the [[Tessarine Concordat]]. The Council thought it was buying [[Umberlee]]'s mercy and did not learn that the real target was [[Aldric Drave]].
-- Complicated ties: [[Tessarine Concordat]], [[Dravosi Crown]], Waveservants <!-- broken link: no match found -->
+- Complicated ties: [[Tessarine Concordat]], [[Dravosi Crown]], [[Waveservants]]
 - Places: [[Vel Orn]], Midchain harbours
 
 ## Connections

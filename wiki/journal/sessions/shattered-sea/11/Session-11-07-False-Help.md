@@ -57,7 +57,7 @@ flexGrow=2
 
 ## Now
 
-Night covers the packed-dirt hub of [[Aruhe - Quiet Forest Spoke Ring]]. Smoke catches under the leaf roof above the stone ring. If the party pulled Matteo Scola <!-- broken link: no match found --> from the hole, he sits 5 feet from the coals with a split, wet lip, one boot missing, and a grey salt-stiff shirt that is still damp. If they left him in the hole, he is not here.
+Night covers the packed-dirt hub of [[Aruhe - Quiet Forest Spoke Ring]]. Smoke catches under the leaf roof above the stone ring. If the party pulled [[Matteo Scola]] from the hole, he sits 5 feet from the coals with a split, wet lip, one boot missing, and a grey salt-stiff shirt that is still damp. If they left him in the hole, he is not here.
 
 Three or four other Calveno wreck people sit in the firelight. Fallen [[Aruhe - Stonepear]] lies beside the coals, living stonepears hang above, two spears rest 10 feet south of the ring, and four woven mats lie 10 feet out. The south trail reaches gold-green grass in 20 feet. The west trail drops toward the river through a root-cut in 30 feet. North trails enter darker wood in 20 feet. Deeper wood begins 50 feet north. The whisper comes from one north trail, with no matching feet on the dirt.
 
@@ -86,7 +86,7 @@ A 30-foot move stays on the hub or reaches the first north-trail mouth. A 60-foo
 
 **Ship mouths.** These unnamed survivors call the listeners mad. If the party holds the fire, they talk over any attempt to lure someone north.
 
-**Matteo Scola <!-- broken link: no match found -->.** If the party pulled him from the hole and he can speak, use his name. If he is still **Unconscious**, call him the man until he wakes and says Matteo. If the party left him in the hole, remove him from this card.
+**[[Matteo Scola]].** If the party pulled him from the hole and he can speak, use his name. If he is still **Unconscious**, call him the man until he wakes and says Matteo. If the party left him in the hole, remove him from this card.
 
 - **Want:** He wants living people and will not walk a north trail alone.
 ```
@@ -197,7 +197,7 @@ If the party broke from the hub, rebuild from the new route toward the last gras
 
 ## Backup
 
-[[Aruhe - Quiet Forest Spoke Ring]] · [[Deer-Stalker]] · [[Taking on Aruhe]] · [[Aruhe - Quiet Forest Star Cut]] · [[Aruhe - Stonepear]] · Matteo Scola <!-- broken link: no match found --> · [[Aruhe - Quiet Forest]] · [[Aruhe - River]] · [[Aruhe - Memorial Grove]] · [[Uncertainty]] · [[Talon Skarn]] · [[Session-11-06-Farthest-Camp]] · [[Session-11-08-Night-Watch]] · [[Session-11-09-Theft-on-the-Watch]] · [[Session-11-00-Birds-of-a-Feather]]
+[[Aruhe - Quiet Forest Spoke Ring]] · [[Deer-Stalker]] · [[Taking on Aruhe]] · [[Aruhe - Quiet Forest Star Cut]] · [[Aruhe - Stonepear]] · [[Matteo Scola]] · [[Aruhe - Quiet Forest]] · [[Aruhe - River]] · [[Aruhe - Memorial Grove]] · [[Uncertainty]] · [[Talon Skarn]] · [[Session-11-06-Farthest-Camp]] · [[Session-11-08-Night-Watch]] · [[Session-11-09-Theft-on-the-Watch]] · [[Session-11-00-Birds-of-a-Feather]]
 
 ## Battlemap
 

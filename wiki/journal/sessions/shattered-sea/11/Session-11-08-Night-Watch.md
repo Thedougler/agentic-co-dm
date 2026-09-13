@@ -51,7 +51,7 @@ flexGrow=2
 
 ## Now
 
-The party is on the packed-dirt hub of [[Aruhe - Quiet Forest Spoke Ring]], unless beat 7 ended on a north trail; in that case, they start 20 feet north of the fire. The stone ring is at the center, with four woven mats 10 feet from the coals. The fire is the only open light beneath the leaves. If the party pulled Matteo Scola <!-- broken link: no match found --> from the hole, he sits 5 feet from the coals with a split, wet lip, one boot missing, and a grey salt-stiff shirt that is still damp. If they left him in the hole, he is not here.
+The party is on the packed-dirt hub of [[Aruhe - Quiet Forest Spoke Ring]], unless beat 7 ended on a north trail; in that case, they start 20 feet north of the fire. The stone ring is at the center, with four woven mats 10 feet from the coals. The fire is the only open light beneath the leaves. If the party pulled [[Matteo Scola]] from the hole, he sits 5 feet from the coals with a split, wet lip, one boot missing, and a grey salt-stiff shirt that is still damp. If they left him in the hole, he is not here.
 
 Unnamed wreck people sit in the light, fewer than the crushed prints entering from the south, and fewer again if beat 7 lost a peeler. The fire is thinner or messier if beat 7 left it that way. Fallen [[Aruhe - Stonepear]] lies by the coals, living stonepears hang overhead, and two spears rest on the packed dirt south of the ring.
 
@@ -74,7 +74,7 @@ The south trail reaches gold-green grass between the last trunks in 20 feet. The
 ```
 
 ```col-md
-**Matteo Scola <!-- broken link: no match found -->.** If the party pulled him from the hole and he can speak, use his name. If he is still **Unconscious**, call him the man until he wakes and says Matteo. If the party left him in the hole, remove him from this card.
+**[[Matteo Scola]].** If the party pulled him from the hole and he can speak, use his name. If he is still **Unconscious**, call him the man until he wakes and says Matteo. If the party left him in the hole, remove him from this card.
 
 - **Want:** He wants living people and will not walk a north trail alone.
 
@@ -185,7 +185,7 @@ Keep the people at this fire unnamed. Identify them only as garden mouths or shi
 
 ## Backup
 
-[[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Quiet Forest Star Cut]] · [[Aruhe - Stonepear]] · [[Crissdalynn Khinriss]] · [[Fate Spinner]] · [[Talon Skarn]] · [[Taking on Aruhe]] · Matteo Scola <!-- broken link: no match found --> · [[Deer-Stalker]] · [[Uncertainty]] · [[Aruhe - Memorial Grove]] · [[Aruhe - Quiet Forest]] · [[Aruhe - River]] · [[Session-11-07-False-Help]] · [[Session-11-09-Theft-on-the-Watch]] · [[Session-11-00-Birds-of-a-Feather]]
+[[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Quiet Forest Star Cut]] · [[Aruhe - Stonepear]] · [[Crissdalynn Khinriss]] · [[Fate Spinner]] · [[Talon Skarn]] · [[Taking on Aruhe]] · [[Matteo Scola]] · [[Deer-Stalker]] · [[Uncertainty]] · [[Aruhe - Memorial Grove]] · [[Aruhe - Quiet Forest]] · [[Aruhe - River]] · [[Session-11-07-False-Help]] · [[Session-11-09-Theft-on-the-Watch]] · [[Session-11-00-Birds-of-a-Feather]]
 
 ## Battlemap
 

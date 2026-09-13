@@ -49,7 +49,7 @@ flexGrow=2
 
 ## Now
 
-The party is still on [[Aruhe - Quiet Forest Star Cut]] unless beat 8 sent them onto the column or into a knot. [[Crissdalynn Khinriss]] and the watch partner stand at the east fire's north edge. Sleeping rolls line both jungle walls. The north mouth is 40 feet of packed dirt from the coals. A 30-foot move from the fire stays on the aisle. A 60-foot Dash does not reach [[Aruhe - Quiet Forest Spoke Ring|Spoke Ring]], the beach, or [[Uncertainty]]. This dirt is ordinary ground. [[Crissdalynn Khinriss]] uses her aarakocra fly speed from her sheet. The wood beyond either jungle wall is Difficult Terrain and heavily obscured beyond 10 feet. If the party pulled Matteo Scola <!-- broken link: no match found --> free, he is still on this dirt.
+The party is still on [[Aruhe - Quiet Forest Star Cut]] unless beat 8 sent them onto the column or into a knot. [[Crissdalynn Khinriss]] and the watch partner stand at the east fire's north edge. Sleeping rolls line both jungle walls. The north mouth is 40 feet of packed dirt from the coals. A 30-foot move from the fire stays on the aisle. A 60-foot Dash does not reach [[Aruhe - Quiet Forest Spoke Ring|Spoke Ring]], the beach, or [[Uncertainty]]. This dirt is ordinary ground. [[Crissdalynn Khinriss]] uses her aarakocra fly speed from her sheet. The wood beyond either jungle wall is Difficult Terrain and heavily obscured beyond 10 feet. If the party pulled [[Matteo Scola]] free, he is still on this dirt.
 
 **Held.** The steal was disrupted. The [[Fate Spinner]] is on [[Crissdalynn Khinriss]], on the packed dirt at this watch, or recovered. [[Talon Skarn]] is already in Quiet north of the star-cut, empty-handed and more than 60 feet away. No hawk stoop follows because nothing left this island. Start with Initial Narration.
 
@@ -222,7 +222,7 @@ Keep the people at this fire unnamed.
 
 ## Backup
 
-[[Aruhe - Quiet Forest Star Cut]] · [[Session-11-09-Theft-on-the-Watch]] · [[Session-11-00-Birds-of-a-Feather]] · [[Crissdalynn Khinriss]] · [[Talon Skarn]] · [[Fate Spinner]] · [[Aruhe - Bloodhawk]] · [[Young Bloodhawk]] · [[Giant's Guava]] · [[Aruhe - Stonepear]] · [[Taking on Aruhe]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Deer-Stalker]] · Matteo Scola <!-- broken link: no match found --> · [[Uncertainty]] · [[Aruhe - Memorial Grove]]
+[[Aruhe - Quiet Forest Star Cut]] · [[Session-11-09-Theft-on-the-Watch]] · [[Session-11-00-Birds-of-a-Feather]] · [[Crissdalynn Khinriss]] · [[Talon Skarn]] · [[Fate Spinner]] · [[Aruhe - Bloodhawk]] · [[Young Bloodhawk]] · [[Giant's Guava]] · [[Aruhe - Stonepear]] · [[Taking on Aruhe]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Deer-Stalker]] · [[Matteo Scola]] · [[Uncertainty]] · [[Aruhe - Memorial Grove]]
 
 ## Battlemap
 
