@@ -21,22 +21,25 @@ Class `design-impact` and no owner overrule — novel skill, skill redesign, or 
    - **Job** — one design job, not an unbounded rewrite
 2. Leave those target instruction files unmodified.
 3. Commit non-design work first. Record `HEAD` as dispatch start.
-4. Invoke the designated writer with the scoped prompt: `claude -p --model claude-opus-4-6 --effort medium`. Flags from `claude --help`. Do not use the `opus` alias or default Opus. Tell the writer to follow writing-for-agents. Do not prescribe skill-design method, voice, or structure.
-5. Designated writer is the sole writer of a change that lands.
+4. Preflight the writer environment before dispatch. For every target path, verify actual create, write, and delete capability at that path, not metadata permissions: existing target — copy bytes aside, write the same bytes back, delete the target, restore it, and compare content to dispatch-start; absent target — create it, write a marker, delete it, and confirm it is absent. If any target fails in the current workspace, do not invoke the writer there. Use a fresh writable isolated worktree when available, restore it to dispatch-start, and run the same preflight before starting. If no preflighted writable target set exists, follow Unavailability or Usage-limit handling.
+5. Invoke the designated writer with the scoped prompt: `claude -p --model claude-opus-4-6 --effort medium`. Flags from `claude --help`. Do not use the `opus` alias or default Opus. Tell the writer to follow writing-for-agents and to return a commit or patch. Do not prescribe skill-design method, voice, or structure.
+6. Accept only complete delegated work: target-only scope, prompt outcome met, and a writer commit or patch that can be merged from the writer environment. The parent does not hand-edit the delegated change. Permission failure, missing commit/patch, out-of-scope edits, or unmet outcome is a partial writer result: restore all target paths to dispatch-start and follow Unavailability or Usage-limit handling.
+7. Designated writer is the sole writer of a change that lands.
 
-Done: writer finished, or Unavailability or Usage-limit wait started.
+Done: writer change accepted, or Unavailability or Usage-limit wait started.
 
 ## Unavailability
 
 Writer cannot start, stops, refuses, or errors for a reason other than a usage limit:
 
 1. Restore the prompt’s target paths to the dispatch-start revision (`git checkout <dispatch-start> -- <paths>`).
-2. Search existing `Parked skill design:` issues before creating another for the same job.
-3. Park with `gh issue create`:
+2. Restore all writer worktrees or patches for those targets to dispatch-start; keep no partial delegated edits.
+3. Search existing `Parked skill design:` issues before creating another for the same job.
+4. Park with `gh issue create`:
    - Title: `Parked skill design: <outcome>`
    - Label: `ready-for-agent`
    - Body: the scoped prompt
-4. Session agent does not write the design-impact change.
+5. Session agent does not write the design-impact change.
 
 States: `open` → `resumed` → `done`.
 
@@ -47,10 +50,11 @@ Done: targets match dispatch-start content; issue exists with the scoped prompt.
 Writer reports a usage limit:
 
 1. Restore the prompt’s target paths to the dispatch-start revision (`git checkout <dispatch-start> -- <paths>`).
-2. Do not create a GitHub issue.
-3. Record the job and retry time on the feature's `tasks.md`. Retry time is the reset time from the report when present; if none, 5 hours from the stop; if a retry still reports a usage limit with no reset time, 24 hours from that attempt.
-4. Do not re-attempt before this time. A new session retries after it. Defer only the Claude-dependent task. Complete remaining tasks that do not depend on it; do not mark those jobs incomplete. Completing other or new work MUST carry those deferred tasks forward still incomplete.
-5. Leave the design-impact files at dispatch-start until a designated writer or the last-resort write below lands them.
+2. Restore all writer worktrees or patches for those targets to dispatch-start; keep no partial delegated edits.
+3. Do not create a GitHub issue.
+4. Record the job and retry time on the feature's `tasks.md`. Retry time is the reset time from the report when present; if none, 5 hours from the stop; if a retry still reports a usage limit with no reset time, 24 hours from that attempt.
+5. Do not re-attempt before this time. A new session retries after it. Defer only the Claude-dependent task. Complete remaining tasks that do not depend on it; do not mark those jobs incomplete. Completing other or new work MUST carry those deferred tasks forward still incomplete.
+6. Leave the design-impact files at dispatch-start until a designated writer or the last-resort write below lands them.
 
 When every remaining open task is blocked by that usage limit, no other work can be done, and the retry time on the blocked task is more than one hour away, invoke the Codex CLI at ChatGPT 5.5 medium with the same scoped prompt. Re-check those gates before each remaining blocked skill job. Prefer Claude Code if it is usable again, then Codex if Claude Code is still usage-limited.
 
@@ -62,8 +66,9 @@ Done: wait path — targets match dispatch-start content; job stays incomplete o
 
 After a successful designated-writer run or last-resort session write:
 
-1. Report whether touched files were in-scope and whether the prompt outcome was met.
-2. Stop. Do not rewrite those files for the same change.
+1. For a designated-writer run, verify the merged commit or patch touched only prompt target paths and met the prompt outcome. Partial delegated work is not success; restore targets to dispatch-start and follow Unavailability or Usage-limit handling.
+2. Report whether touched files were in-scope and whether the prompt outcome was met.
+3. Stop. Do not rewrite those files for the same change.
 
 Owner overrule (explicit skip in `AGENTS.md`) or the usage-limit last-resort write licenses the session agent to write design-impact.
 
