@@ -35,8 +35,8 @@ is a railroad.
 
 ## 2. Hook candidates (fire one)
 
-Choose the card from beat-types.md whose trigger matches the fiction. Prefer
-a card that connects to the previous session's ending or an active PC goal.
+Fire one Hook. Filling that slot is the Hook type skill. Prefer an opening that
+connects to the previous session's ending or an active PC goal.
 One Hook fires; the others are backup or drop.
 
 ### Hook A: [name]
@@ -88,8 +88,8 @@ For each candidate, include sign, trigger, effect, counterplay, bypass, and off-
 ## 5. Climax candidates (choose after recompute)
 
 Before an action Climax, finish the preceding beat with a Development. Before
-a cerebral Climax, finish it with a Cliffhanger. See Climax cards in
-[beat-types.md](references/beat-types.md) for shape options.
+a cerebral Climax, finish it with a Cliffhanger. Filling that slot is the
+Climax type skill.
 
 ### Candidate A: [confrontation / operation / settlement / sacrifice / defense / trial]
 - **Player choices that would make it inevitable:**

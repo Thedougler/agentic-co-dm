@@ -18,7 +18,7 @@ Campaign pages also require:
 
 | Field | Values |
 |---|---|
-| `type` | `npc` \| `place` \| `faction` \| `item` \| `creature` \| `session-prep` \| `session` \| `recap` \| `work` |
+| `type` | `npc` \| `place` \| `faction` \| `item` \| `creature` \| `vehicle` \| `spell` \| `session-prep` \| `session` \| `recap` \| `work` |
 | `lifecycle` | `draft` \| `proposed` \| `accepted` \| `rejected` \| `canon` |
 | `reveal` | `unrevealed` \| `revealed` |
 
@@ -46,6 +46,8 @@ Copy `wiki/templates/` as a scaffold for the campaign `type`. Omit empty section
 | Person | Who and want; look; first minutes and posture change; named ties; combat only if they can fight |
 | Session beat | Cockpit jobs: `.agents/skills/run-guide/SKILL.md`. Evidence `wiki/_raw/Session-11-01-Angry-Birds.md`–`10`. Omit empty. |
 | Session spine | Filed spine: `.agents/skills/session-beats/SKILL.md`. Evidence `wiki/_raw/Session-11-00-Birds-of-a-Feather.md`. |
+| Vehicle | Look; sheet; components; crew stations; handling; combat. Pass is those jobs. |
+| Spell | Look of the casting; classification; runnable 2024 effect; Discovery when placement needed; Lore when history needed. Pass is those jobs. |
 
 Spoken look is theatre of the mind: no secrets, DCs, unearned names, author thesis.
 

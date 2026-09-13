@@ -37,7 +37,7 @@ Contracts: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`, `sp
 
 **Purpose**: Stay inside the plan file list. No `src/`, no beat-router skill, no Campaign OS port.
 
-- [ ] T001 Confirm the files listed under Source Code in `specs/017-session-beats-skills/plan.md` exist or will be created as listed; do not add a beat-router skill, `src/`, linter, or port of `.claude/skills/composing-beats` or `writing-*-beats`; do not edit `.agents/skills/writing-beats/SKILL.md`; do not rewrite `wiki/_raw/Session-11-*.md`
+- [X] T001 Confirm the files listed under Source Code in `specs/017-session-beats-skills/plan.md` exist or will be created as listed; do not add a beat-router skill, `src/`, linter, or port of `.claude/skills/composing-beats` or `writing-*-beats`; do not edit `.agents/skills/writing-beats/SKILL.md`; do not rewrite `wiki/_raw/Session-11-*.md`
 
 ---
 
@@ -47,7 +47,7 @@ Contracts: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`, `sp
 
 **⚠️ CRITICAL**: No user story work until this phase is complete
 
-- [ ] T002 Add the beat-skill routing table to `AGENTS.md` from `specs/017-session-beats-skills/contracts/beat-skill-routing.md`. Quote: plan a session, one-shot, adventure arc, or expedition evening → `session-beats`; write, edit, or create content for a Hook → `hook-beats`; Development → `development-beats`; Cliffhanger → `cliffhanger-beats`; Climax → `climax-beats`; Resolution → `resolution-beats`. Quote: "Unknown typed-beat job → classify the type first; do not default to `session-beats` for filling a beat." Point at `specs/017-session-beats-skills/contracts/beat-skill-routing.md` for named seams. Do not copy the table into `.omp/AGENTS.md`.
+- [X] T002 Add the beat-skill routing table to `AGENTS.md` from `specs/017-session-beats-skills/contracts/beat-skill-routing.md`. Quote: plan a session, one-shot, adventure arc, or expedition evening → `session-beats`; write, edit, or create content for a Hook → `hook-beats`; Development → `development-beats`; Cliffhanger → `cliffhanger-beats`; Climax → `climax-beats`; Resolution → `resolution-beats`. Quote: "Unknown typed-beat job → classify the type first; do not default to `session-beats` for filling a beat." Point at `specs/017-session-beats-skills/contracts/beat-skill-routing.md` for named seams. Do not copy the table into `.omp/AGENTS.md`.
 
 **Checkpoint**: Foundation ready — user stories can start
 
@@ -62,7 +62,7 @@ Contracts: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`, `sp
 ### Implementation for User Story 1
 
 - [ ] T003 [US1] Rewrite `.agents/skills/session-beats/SKILL.md` as composition only (Claude Code). Description fires on planning a session, one-shot, adventure arc, or expedition evening. Owns: Beat Chart assembly; one Hook; alternate D/C; Climax then Resolution; polarity; ~30 min per beat; Hook+Climax+Resolution ~90 min; threads, escalation, transitions; recompute / agency gates; filed spine jobs. Point typed fill at the five type skills. Quote data-model: "Primary when planning a session, one-shot, adventure arc, or expedition evening."
-- [ ] T004 [US1] Keep `.agents/skills/session-beats/references/agency.md` and `.agents/skills/session-beats/references/session-skeleton.md` as composition references. Skeleton stays the planning form; filed spine remains Session 11-00 shape.
+- [X] T004 [US1] Keep `.agents/skills/session-beats/references/agency.md` and `.agents/skills/session-beats/references/session-skeleton.md` as composition references. Skeleton stays the planning form; filed spine remains Session 11-00 shape.
 
 **Checkpoint**: US1 independently testable (quickstart steps 1 job 1, 2)
 
@@ -126,9 +126,9 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 
 ### Implementation for User Story 6
 
-- [ ] T014 [P] [US6] Create `wiki/templates/vehicle.md` from the provided vehicle scaffold. Jobs: spoken look; sheet (size, type, speed, crew, passengers, cargo); components (hull AC/HP/DT, helm, movement, weapons when armed); crew stations; handling; combat. Omit unused sections.
-- [ ] T015 [P] [US6] Create `wiki/templates/spell.md` from the provided spell scaffold. Jobs: spoken look of the casting; classification line; runnable 2024 effect block (casting time, range, components, duration, saves, damage, conditions; scaling when it scales); Discovery when placement needed; Lore when history needed. Omit unused sections.
-- [ ] T016 [US6] In `wiki/AGENTS.md`, add `type` values `vehicle` and `spell`. Layout jobs: Vehicle — Look; sheet; components; crew stations; handling; combat. Spell — Look of the casting; classification; runnable 2024 effect; Discovery when placement needed; Lore when history needed. Quote: "Pass is those jobs."
+- [X] T014 [P] [US6] Create `wiki/templates/vehicle.md` from the provided vehicle scaffold. Jobs: spoken look; sheet (size, type, speed, crew, passengers, cargo); components (hull AC/HP/DT, helm, movement, weapons when armed); crew stations; handling; combat. Omit unused sections.
+- [X] T015 [P] [US6] Create `wiki/templates/spell.md` from the provided spell scaffold. Jobs: spoken look of the casting; classification line; runnable 2024 effect block (casting time, range, components, duration, saves, damage, conditions; scaling when it scales); Discovery when placement needed; Lore when history needed. Omit unused sections.
+- [X] T016 [US6] In `wiki/AGENTS.md`, add `type` values `vehicle` and `spell`. Layout jobs: Vehicle — Look; sheet; components; crew stations; handling; combat. Spell — Look of the casting; classification; runnable 2024 effect; Discovery when placement needed; Lore when history needed. Quote: "Pass is those jobs."
 - [ ] T017 [US6] Rewrite `.agents/skills/vehicle-design/SKILL.md` so it fills `wiki/templates/vehicle.md`, including size, type, speed, crew, and hull plus component AC/HP. Quote data-model: "Size, type, speed, crew (min), passengers, cargo filled so the craft can enter play." State what to write and when the page is done. Design-impact: designated writer, `claude-opus-4-6 --effort medium`, minimal prompt.
 - [ ] T018 [US6] Create `.agents/skills/spell-design/SKILL.md`. Primary for write, edit, or create of a spell page. Completes when narration, classification, and a runnable 2024 effect block are filled. Discovery and Lore when the spell needs placement or history. Design-impact: designated writer, `claude-opus-4-6 --effort medium`, minimal prompt.
 

@@ -44,6 +44,18 @@ Reader is `agent` | `DM` | `players`. Unknown reader → `DM`. Vault is `true` i
 | Working with visual references for a depiction | visual-references |
 | Producing (attach, ground, generate, promote, place) a visual aid | visual-aids |
 
+## Beat skill routing
+
+| Job | Skill |
+|---|---|
+| Plan a session, one-shot, adventure arc, or expedition evening | `session-beats` |
+| Write, edit, or create content for a Hook | `hook-beats` |
+| Write, edit, or create content for a Development | `development-beats` |
+| Write, edit, or create content for a Cliffhanger | `cliffhanger-beats` |
+| Write, edit, or create content for a Climax | `climax-beats` |
+| Write, edit, or create content for a Resolution | `resolution-beats` |
+
+Unknown typed-beat job → classify the type first; do not default to `session-beats` for filling a beat. Named seams: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`.
 
 ## Skill design dispatch
 
