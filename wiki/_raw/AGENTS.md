@@ -1,0 +1,15 @@
+## Project — vault/campaigns/shattered-sea/pcs/ (governed wiki pages)
+
+vault/campaigns/shattered-sea/pcs/ pages share vault/'s wiki governance in full — templated from _templates/ (pc.md, pc-stats.md, pc-abilities.md, pc-spells.md, pc-inventory.md, pc-gallery.md, pc-sheet.md, pc-interview.md, session-history.md, va-script.md, pc-combat-profile.md, player.md), same canon/status/publish rules. A PC's mechanical attributes live on their satellite pages (vault/campaigns/shattered-sea/pcs/stats/, vault/campaigns/shattered-sea/pcs/abilities/, vault/campaigns/shattered-sea/pcs/spells/, vault/campaigns/shattered-sea/pcs/inventory/), never in `vault/campaigns/shattered-sea/pcs/<name>.md` prose — the hub transcludes them. See vault/CLAUDE.md for the full rule set; this file repeats only the triggers that must independently fire when Claude touches vault/campaigns/shattered-sea/pcs/ (each subdir CLAUDE.md loads on its own — it cannot consult a sibling dir's file).
+
+2. Canon is simple: **played at the table = `status: canon` in frontmatter, edits additive-only**; **not yet played = `status: pending`, edit freely**. Canon state lives in frontmatter ONLY — prose states facts plainly, no provenance narration (git log is the history).
+3. NEVER create a wiki page freeform — instantiate the matching template from _templates/ (L4); no matching template exists → chain-load content-type-scaffold first.
+4. _templates/ is sole formatting authority — pattern absent from template = strip from every file, no exceptions, no asking, however common (precedent isn't evidence).
+5. Sweeping a template-conformance removal: add the dropped pattern to W34's STALE_PATTERNS (`docs/vale-styles/CampaignOS/StalePattern.yml`'s `swap:` map), then dispatch `content-fixer` per flagged file — 3+ files → one background Agent batch (PJ15) — the linter tracks the sweep to 0, not your grep.
+6. Each fact lives on exactly one page. Elsewhere, wikilink to it. Rot (structural or duplicate) → fix per docs/guardrails/PROJECT.md PJ11.
+7. Pending content NEVER appears in recaps or the site; INGEST promotes what actually hit the table.
+8. Creative work (governed .md prose in vault/**, including its vault/campaigns/shattered-sea/pcs/ and vault/episodes/ subtrees): rules above bind facts, canon, structure, visibility — never style. Kit CODE/PLAN/VERIFY routing + iron rules don't bind it either — read docs/guardrails/PROJECT.md. Invent boldly inside these rails; a timid minimum-risk draft violates this rule.
+
+- About to edit any file under vault/ → read vault/refs/runbook-wiki.md
+- Read tool returns a vault/** file (incl. the vendored SRD/craft reference material under it) → fix any lint finding now, same turn, never NOTED (not done) (docs/guardrails/PROJECT.md PJ15)
+- About to hand-fix the same content defect a 2nd time, OR about to grep/sweep the repo for an old key, path, name, or shape (any migration/rename) → BEFORE fixing any page, add the old shape to W34's STALE_PATTERNS (`docs/vale-styles/CampaignOS/StalePattern.yml`'s `swap:` map) or a new rule (`utils/wiki-cli/src/wiki_cli/rules/`) — the linter, not your grep, tracks the sweep to 0
