@@ -213,10 +213,30 @@ def build_parser() -> argparse.ArgumentParser:
     return parser
 
 
+def _hoist_parent_flags(argv: list[str]) -> list[str]:
+    """Move --root/--format ahead of subcommands so either order works."""
+    parent = {"--format", "--root"}
+    hoisted: list[str] = []
+    rest: list[str] = []
+    i = 0
+    while i < len(argv):
+        arg = argv[i]
+        if arg in parent and i + 1 < len(argv):
+            hoisted.extend([arg, argv[i + 1]])
+            i += 2
+            continue
+        if arg.startswith("--format=") or arg.startswith("--root="):
+            hoisted.append(arg)
+            i += 1
+            continue
+        rest.append(arg)
+        i += 1
+    return hoisted + rest
+
+
 def main(argv: list[str] | None = None) -> int:
-    parser = build_parser()
-    # Accept --format before or after subcommands (agent-natural flag order).
-    args = parser.parse_intermixed_args(argv)
+    raw = list(sys.argv[1:] if argv is None else argv)
+    args = build_parser().parse_args(_hoist_parent_flags(raw))
     args.root = args.root.resolve()
     args.root.mkdir(parents=True, exist_ok=True)
     return args.func(args)
