@@ -290,9 +290,9 @@ The main use case: you're working in some other project and want to sync knowled
 2. Scan the current project: README, source structure, git log, package metadata
 3. Distill what's worth remembering (architecture decisions, patterns, trade-offs — not code listings)
 4. Write to `$VAULT/projects/<project-name>.md`, cross-linking to concept/entity pages as needed
-5. Update `.manifest.json`, `index.md`, and `log.md`
+5. Update the ingest ledger via `python3 scripts/manifest.py upsert …` (not a whole-file read), plus `index.md` and `log.md`
 
-On repeat runs, it checks `last_commit_synced` in `.manifest.json` and only processes the delta via `git log <last_commit>..HEAD`.
+On repeat runs, use `scripts/manifest.py` (`has`/`get`/`delta`) for ledger checks — do not load all of `.manifest.json` into context. Project sync may still use `git log <last_commit>..HEAD` when `last_commit_synced` is present on the relevant entry.
 
 ### wiki-query (read from wiki)
 
@@ -328,7 +328,7 @@ See `wiki-query` and `wiki-export` skills for how the filter is applied.
 ## Core Principles
 
 - **Compile, don't retrieve.** The wiki is pre-compiled knowledge. Update existing pages — don't append or duplicate.
-- **Track everything.** Update `.manifest.json` after ingesting, `index.md`, `log.md`, and `hot.md` after any write operation.
+- **Track everything.** After ingest, `python3 scripts/manifest.py upsert` for the source (never whole-file read of `.manifest.json`); update `index.md`, `log.md`, and `hot.md` after writes.
 - **Connect with `[[wikilinks]]`.** Every page should link to related pages. This is what makes it a knowledge graph, not a folder of files.
 - **Frontmatter is required.** Every wiki page needs: `title`, `category`, `tags`, `sources`, `created`, `updated`.
 - **Single source of truth.** Visibility tags shape how content is surfaced — they don't duplicate or separate it.
