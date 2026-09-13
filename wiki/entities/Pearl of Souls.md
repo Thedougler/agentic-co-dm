@@ -22,6 +22,7 @@ type: item
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
+kind: plot
 relationships:
   - target: "[[Delmar Fisk]]"
     type: related_to
@@ -31,22 +32,42 @@ relationships:
 
 # Pearl of Souls
 
-# Pearl of Souls
-
 ![[Pearl Of Souls Banner]]
 
-A fist-sized black pearl with an iridescent sheen that shifts under light. It never stays still. Anyone who senses death will feel it before they see it. This divine instrument belonged to [[Umberlee]]. It rested in one of her shrines for years, guarded by the [[Waveservants]].
+> [!narration] Narration
+> A fist-sized black pearl with an iridescent sheen that shifts under light. It never stays still. Anyone who senses death will feel it before they see it.
 
-*Wondrous item, artifact.*
+Plot item, artifact (no activation required; passive soul collection).
 
-The Pearl collects souls from anyone who drowns near it. It works nonstop, with no activation and no attunement needed. Once trapped in the Pearl, a soul cannot escape by normal means. The Pearl is one of seven instruments of **Umberlee**, each controlling a different part of her domain. No one has found the other six.
+The Pearl collects souls from anyone who drowns near it. It works nonstop, with no activation and no attunement needed. Once trapped in the Pearl, a soul cannot escape by normal means. The Pearl is one of seven instruments of **Umberlee**, each controlling a different part of her domain. No one has found the other six. The source files describe only these narrative properties, not charges, save DCs, or other balance numbers. Use `item-prep` if balance numbers are needed for play.
 
-[[Delmar Fisk]] stole the Pearl from a Waveservant Shrine, and in anger [[Umberlee]] sank all five of his ships, taking the Pearl down with them. The wreck now rests at Red Lady site in the eastern [[Shelfworks]], deep inside [[The Drowned Maw]] below the planar boundary, where Umberlee's power stops. She cannot retrieve her own Pearl. The Pearl keeps working, collecting every drowned soul and holding Fisk's crews and those killed by the [[Leviathan]], while Umberlee bound the five captains to Fisk, the sole survivor, whose mind now holds them as their crews remain trapped in the Pearl.
+## At a Glance
 
-The Pearl is not merely calling. It holds a store of raw, untapped soul-power, and that power reaches across the planar boundary to anything on the far side that wants it. The Pearl sends a signal across the planar boundary to the [[Elemental Plane of Water]] (the Maw Entanglement), which the [[Leviathan]] found by following it. Every creature drawn to the fissure answers this call, including [[Auralis]], who woke when the signal crossed the boundary. What has come through so far, the Leviathan among them, is only the smallest of what wants in; see [[Elemental Plane of Water]] for what pushes at the breach from the other side. Recovering the Pearl stops the signal and renders the fissure normal again. This is Season 1's most important action. If left in place, the signal keeps calling and will draw something larger to the next fissure.
+This divine instrument belonged to [[Umberlee]] and now rests with the wreck at the Red Lady site in the eastern [[Shelfworks]], deep inside [[The Drowned Maw]] below the planar boundary, where Umberlee's power stops. Recovering it is Season 1's most important action.
 
-The [[Tessarine Concordat]] fears what [[Aldric Drave]] could do with the Pearl. With it, he could expand his power beyond his bloodline. He could gather drowned souls for stability or turn mass drowning into phylactery material. The Concordat used the [[Chain Council]] to have [[Fisk's Fleet]] steal it before Aldric could. They claimed they wanted to protect it from Umberlee's wrath. Their real goal was control: stop Aldric from claiming it, then take it themselves. Before whoever reaches the wreck gets there, decide what the Pearl does when recovered and who accesses the souls. This artifact is a tool of power, never neutral.
+## At the Table
 
-## Mechanics
+The Pearl holds a store of raw, untapped soul-power and sends a signal across the planar boundary to the [[Elemental Plane of Water]] (the Maw Entanglement). The [[Leviathan]] found the fissure by following that signal; [[Auralis]] woke when the signal crossed the boundary. Recovering the Pearl stops the signal and renders the fissure normal again. If left in place, the signal keeps calling and will draw something larger to the next fissure. Before whoever reaches the wreck gets there, decide what the Pearl does when recovered and who accesses the souls. This artifact is a tool of power, never neutral.
 
-The source files describe only the Pearl's narrative properties, not game mechanics like charges, save DCs, or activation effects. It gathers souls passively and continuously without attunement or activation. Use `item-prep` if you need balance numbers for play.
+## Connections
+
+- [[Umberlee]] — Owner of the instrument; sank Delmar's fleet in anger after the theft.
+- [[Waveservants]] — Guarded the shrine where the Pearl rested for years.
+- [[Delmar Fisk]] — Stole the Pearl from a Waveservant Shrine; sole survivor bound to the five captains whose crews remain trapped in the Pearl.
+- [[Fisk's Fleet]] — Stole the Pearl under Chain Council direction before Aldric could claim it.
+- [[The Drowned Maw]] — Wreck site below the planar boundary; Umberlee cannot retrieve her Pearl here.
+- [[Leviathan]] — Drawn to the fissure by the Pearl's signal; among those whose drowned souls the Pearl holds.
+- [[Auralis]] — Woke when the signal crossed the boundary.
+- [[Elemental Plane of Water]] — Far side of the Maw Entanglement signal.
+- [[Tessarine Concordat]] — Fears what [[Aldric Drave]] could do with the Pearl; used the [[Chain Council]] to arrange the theft for control, not protection.
+- [[Aldric Drave]] — Could expand power beyond his bloodline, gather drowned souls for stability, or turn mass drowning into phylactery material.
+- [[Khlysty - the Flock]] — Sees the Pearl as a possible shortcut to transcendence.
+- [[Shelfworks]] — Eastern site of the wreck.
+
+## Secrets
+
+The [[Tessarine Concordat]] claimed they wanted to protect the Pearl from Umberlee's wrath. Their real goal was control: stop Aldric from claiming it, then take it themselves. What has come through the fissure so far, the Leviathan among them, is only the smallest of what wants in.
+
+## Provenance
+
+This divine instrument belonged to [[Umberlee]]. It rested in one of her shrines for years, guarded by the [[Waveservants]]. [[Delmar Fisk]] stole the Pearl from a Waveservant Shrine, and in anger [[Umberlee]] sank all five of his ships, taking the Pearl down with them. The wreck now rests at the Red Lady site in the eastern [[Shelfworks]], deep inside [[The Drowned Maw]] below the planar boundary. The Pearl keeps working, collecting every drowned soul and holding Fisk's crews and those killed by the [[Leviathan]], while Umberlee bound the five captains to Fisk, the sole survivor, whose mind now holds them as their crews remain trapped in the Pearl. The [[Chain Council]] had [[Fisk's Fleet]] steal it before [[Aldric Drave]] could.

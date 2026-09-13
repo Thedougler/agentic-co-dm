@@ -22,30 +22,23 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+kind: magic
+attunement: true
+owner: "[[Crissdalynn Khinriss]]"
 ---
-
-# Fate Spinner
 
 # Fate Spinner
 
 ![[Fate Spinner Narration Appearance]]
 
-*Wondrous Item, Artifact (Requires Attunement, gated by an act of risking one's own life to save another).*
+> [!narration] Narration
+> Crissdalynn's meditation focus — the dreidel also called the Fate Spinner — rides in her kit as an ordinary spinning charm until it bonds.
 
-| Field | Value |
-|---|---|
-| one_thing | Once per day, opens a vision on someone the holder personally knows (same plane only) for up to 30 minutes or until dismissed; for that whole window, every check or save the target rolls, the holder rolls alongside them and donates it, so the target has advantage on all. |
-| rarity_justification | Artifact: the viewing half alone tracks below [[Crystal Ball]] (Very Rare, at-will [[Scrying]] with broad targeting), since this is narrower (known-person-only, same-plane-only, 1/day). But unlimited, no-cost advantage on *every* check and save a target makes for 30 minutes has no RAW ceiling below Legendary/Artifact, a deliberate DM design call, not oversight. |
-| attunement_reason | Attunement required, per the Artifact-tier default. But the dreidel refuses the standard short-rest ritual and only bonds to someone who has already risked their own life to save another's. |
-| pc_connection | [[Crissdalynn Khinriss]]: gifted to her by her mentor [[Master Kyzil]] before her pilgrimage sent her away. He gave her a way never to be fully alone, without knowing what he was actually handing her. |
-| current_holder | [[Crissdalynn Khinriss]]: carries it as her meditation focus. |
-| narrative_hook | Already in play. Established in her backstory as Kyzil's gift before the [[Red Lady]] sinking. No acquisition arc needed, just on her person since before Session 01. |
-
-## Mechanics
+*Wondrous item, artifact (requires attunement, gated by an act of risking one's own life to save another).*
 
 **[HB] Attunement.** The dreidel ignores the standard ritual. It bonds only to a creature who has knowingly risked their own life to save another's. The DM judges whether an act qualifies (a judgment call, purely discretion).
 
-Crissdalynn satisfied this pulling [[Delmar Fisk|Delmar]] through thirty feet of solid water as the [[Red Lady]] went down, long before she knew the dreidel was magical.
+[[Crissdalynn Khinriss]] satisfied this pulling [[Delmar Fisk|Delmar]] through thirty feet of solid water as the [[Red Lady]] went down, long before she knew the dreidel was magical.
 
 Once bonded, it stays attuned normally. Re-attune only if it's lost, given away, or the bond is deliberately broken.
 
@@ -57,14 +50,34 @@ Every check or save the target rolls, the holder rolls alongside and donates it.
 
 Edge cases: an invalid target or the target's plane-shift ends the use. It grants sight only: no two-way communication, and the target never learns why they have advantage.
 
-**Limitations.** No benefit to the holder's rolls or defenses. One vision at a time. Same-plane targets only. Must know them personally.
+**Limitations.** No benefit to the holder's rolls or defenses. One vision at a time. Same-plane targets only. Must know them personally. The holder and target can't be in the same place while it's active. It can't aid a fight the holder is in.
 
-The holder and target can't be in the same place while it's active. It can't aid a fight the holder is in.
+## At a Glance
+
+Also called the dreidel. [[Crissdalynn Khinriss]] carries it as her meditation focus; it was gifted by her mentor [[Master Kyzil]] before her pilgrimage. Already in play since before Session 01. Talon Vantyrus has sent a ship to take it.
+
+## At the Table
+
+Once per day the holder opens a same-plane vision on someone they personally know for up to 30 minutes; for that window every check or save the target rolls, the holder rolls alongside and donates advantage. The viewing half alone tracks below [[Crystal Ball]] (Very Rare, at-will [[Scrying]] with broad targeting), since this is narrower (known-person-only, same-plane-only, 1/day). Unlimited no-cost advantage on every check and save for 30 minutes has no RAW ceiling below Legendary/Artifact — a deliberate DM design call.
+
+## Connections
+
+- [[Crissdalynn Khinriss]] — Current holder; gifted by [[Master Kyzil]] before her pilgrimage sent her away.
+- [[Master Kyzil]] — Gave her a way never to be fully alone, without knowing what he was actually handing her.
+- [[High Eyrie]] — Where Kyzil gave her the dreidel.
+- [[Red Lady]] — She was aboard when it sank; her rescue of Delmar satisfied attunement.
+- [[Drowned Maw]] — Destination of her pilgrimage that put her aboard the Red Lady.
+- [[Sentinels of the Eyrie]] — Record without conclusion; they never intervene, yet this item watches and acts.
+- [[Soul Incarnate]] — Founding documents reference the same old intervention tradition.
+- [[Delmar Fisk]] — The life she risked herself to save that bonded the dreidel.
+- [[Grung]] — She used the dreidel in-fiction to calm a Grung child (Session 06).
+
+## Secrets
+
+Its nature predates Kyzil. The [[Sentinels of the Eyrie]] record without conclusion and never intervene. This item breaks that rule: it watches and acts. It's older than their doctrine, a piece of what the order practiced before swearing off intervention. The [[Soul Incarnate]]'s founding documents reference this same old tradition, though they never explain it.
+
+The table (Session 06) never determined the dreidel's magic. The player named her tattoo as her one confirmed item. Yet she used the dreidel in-fiction to calm a [[Grung]] child. This page settles that: the dreidel is magical. The Changed Record above is what it does.
 
 ## Provenance
 
 Given to [[Crissdalynn Khinriss]] by her mentor [[Master Kyzil]] at the [[High Eyrie]], before her [[Drowned Maw]] pilgrimage put her aboard the [[Red Lady]] when it sank. Carried since as her meditation focus. No other owner recorded.
-
-Its nature predates Kyzil. The [[Sentinels of the Eyrie]] record without conclusion. They never intervene. This item breaks that rule: it watches and acts. It's older than their doctrine, a piece of what the order practiced before swearing off intervention. The [[Soul Incarnate]]'s founding documents reference this same old tradition, though they never explain it.
-
-The table (Session 06) never determined the dreidel's magic. The player named her tattoo as her one confirmed item. Yet she used the dreidel in-fiction to calm a [[Grung]] child. This page settles that: the dreidel is magical. The Changed Record above is what it does.

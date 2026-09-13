@@ -38,7 +38,7 @@ relationships:
 # Red Lady / Dead Lady
 
 > [!narration] Narration
-> A raised wreck moves across the water with a damaged hull, broken rigging, and a red wake. A boarding line can reach its high deck from the water, while open lanes still run around the moving obstruction.
+> A raised wreck moves across the water with a damaged hull, broken rigging, and a red wake. A boarding line can reach its high deck from the water, while open lanes still run around the moving obstruction. Her hull runs the length and rig of an older wreck, but the paint has gone dark red, blood-in-water red. The figurehead is a carved woman, eyes fixed forward. No crew show themselves on deck. Her sails hold full no matter what the wind is doing. She makes no sound. Her hull stays silent against the water. Her freeboard sits low enough to climb from a boat. Other ships give her room the moment they place her outline against the horizon.
 
 ## Sheet
 
@@ -70,11 +70,11 @@ The Dead Lady holds station, knows [[Delmar Fisk]]'s heading, and makes defiance
 
 A boarding line can reach the raised deck from the water, and the wreck can be tracked, boarded, evaded, or bargained with. The supplied vehicle source does not establish initiative, ramming, weapon attacks, component targeting, sinking, or destruction procedures. Use only the Gargantuan chassis and hull figures until those procedures are authored.
 
-## At a glance
+## At a Glance
 
 The Red Lady, also called the Dead Lady, is a moving sign of [[Umberlee]]'s Red Wake. Her raised hull blocks lanes, carries evidence of the original sinking, and brings the [[Pearl of Souls]] and [[Drowned Maw]] into the crew's route.
 
-## Secrets (DM)
+## Secrets
 
 The source leaves the exact wreck history, active mechanism, crew, and encounter timing unresolved. The original Red Lady was [[Delmar Fisk]]'s flagship, and [[Crissdalynn Khinriss]] pulled him from its crow's nest when the fleet sank.
 
@@ -93,17 +93,10 @@ A later idea note says [[Umberlee]] starts taking payment herself after Delmar's
 - [[Shelfworks]]
 - [[Midchain]]
 
-## At the table
+## At the Table
 
 Track the wake before committing to the lane. Once the wreck converges, the crew must choose whether to board for evidence, cut away and preserve distance, signal and bargain, or accept that the route has changed.
 
 ## Provenance
 
 The supplied vehicle drop establishes the Red Lady and Dead Lady identities, Gargantuan size, AC `12`, `230` hit points, raised-wreck silhouette, red wake, boarding line, lane pressure, survivor history, Pearl and Maw connection, collection behaviour, and unresolved exact crew and mechanism. It does not establish detailed ship mechanics.
-
-## Narration
-
-> [!narration]
-> *Her hull runs the length and rig of an older wreck, but the paint has gone dark red, blood-in-water red. The figurehead is a carved woman, eyes fixed forward. No crew show themselves on deck.*
->
-> *Her sails hold full no matter what the wind is doing. She makes no sound. Her hull stays silent against the water. Her freeboard sits low enough to climb from a boat. Other ships give her room the moment they place her outline against the horizon.*
