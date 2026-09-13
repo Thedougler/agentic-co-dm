@@ -1,14 +1,14 @@
 <!--
 Sync Impact Report
-- Version change: 1.13.0 → 1.14.0
+- Version change: 1.14.0 → 1.15.0
 - Modified principles:
-  - XII. Prompt Other Agents With Objectives (expanded: trust spec + Spec Kit; no redundant task-irrelevant details)
+  - XIII. Wiki Media Filenames Distinguish Kind (expanded: no spaces; existing spaces → `-`)
 - Added sections: none
 - Removed sections: none
 - Other modified sections:
-  - Agent Operating Constraints (prompts omit Spec Kit lectures)
+  - Agent Operating Constraints (wiki media filenames have no spaces)
   - Development Workflow / Review (same)
-  - Governance / Compliance (reject Spec Kit and redundant prompt padding)
+  - Governance / Compliance (reject spaced wiki media filenames)
 - Follow-up TODOs: none
 -->
 
@@ -241,8 +241,14 @@ MUST NOT treat folder placement as the only kind signal. Agents MUST NOT
 guess kind from pixels or adjacent wiki text when the filename does not
 name it.
 
+Wiki media filenames MUST NOT contain spaces. New files MUST use `-`
+where a space would have been. Existing filenames that contain spaces
+MUST be renamed by replacing each space with `-`. References to those
+files MUST be updated in the same change.
+
 Rationale: opening every image to learn whether it is a token or a
-battlemap wastes tokens and produces wrong attachments.
+battlemap wastes tokens and produces wrong attachments. Spaces force
+quoting and make agents guess separators.
 
 ## Agent Operating Constraints
 
@@ -266,7 +272,8 @@ battlemap wastes tokens and produces wrong attachments.
 - Prompts to Claude Code, Codex, or equivalent MUST follow XII: objective,
   complete acceptance and deliverables, no Spec Kit lecture, no
   task-irrelevant padding.
-- Wiki media assets MUST follow XIII: kind in the filename, no guessing.
+- Wiki media assets MUST follow XIII: kind in the filename, no spaces,
+  no guessing.
 - Designated writer, when used: Claude Code at `claude-opus-4-6`
   `--effort medium`. MUST NOT use the `opus` alias or default Opus.
   Default Opus output is worthless for language work (issue #3). Up to
@@ -314,8 +321,8 @@ battlemap wastes tokens and produces wrong attachments.
    without a named failure, that prompts to other agents carry objectives
    and complete acceptance rather than operating manuals, Spec Kit
    lectures, or other task-irrelevant padding, that wiki media filenames
-   distinguish kind without guessing, and that git/context autonomy was
-   not reintroduced as a human gate.
+   distinguish kind, contain no spaces, and do not require guessing, and
+   that git/context autonomy was not reintroduced as a human gate.
 
 ## Governance
 
@@ -356,9 +363,9 @@ Compliance:
   Spec Kit tutorial, or other detail irrelevant to the task, omits
   acceptance criteria or deliverables, or is longer than needed to state
   those facts MUST be rejected.
-- A wiki media filename that does not encode kind, or that requires
-  opening the file or guessing from nearby notes to classify it, MUST be
-  rejected.
+- A wiki media filename that does not encode kind, contains a space, or
+  that requires opening the file or guessing from nearby notes to
+  classify it, MUST be rejected.
 - Reviews MUST verify that no more than two Claude Code designated-writer
   instances run concurrently, that a second is used only when the agents
   involved have no other task to complete, and that no canonical artifact
@@ -373,4 +380,4 @@ Compliance:
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.14.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
+**Version**: 1.15.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
