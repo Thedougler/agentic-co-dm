@@ -22,7 +22,7 @@ type: item
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
-kind: plot
+kind: magic
 relationships:
   - target: "[[Delmar Fisk]]"
     type: related_to
@@ -37,7 +37,7 @@ relationships:
 > [!narration] Narration
 > A fist-sized black pearl with an iridescent sheen that shifts under light. It never stays still. Anyone who senses death will feel it before they see it.
 
-Plot item, artifact (no activation required; passive soul collection).
+Magic item, artifact (no activation required; passive soul collection).
 
 The Pearl collects souls from anyone who drowns near it. It works nonstop, with no activation and no attunement needed. Once trapped in the Pearl, a soul cannot escape by normal means. The Pearl is one of seven instruments of **Umberlee**, each controlling a different part of her domain. No one has found the other six. The source files describe only these narrative properties, not charges, save DCs, or other balance numbers. Use `item-prep` if balance numbers are needed for play.
 
