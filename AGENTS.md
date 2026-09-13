@@ -46,7 +46,9 @@ A missing wiki fact or missing Co-DM practice MUST NOT prevent playable Work in 
 
 ### Token cost
 
-Record every finished prep or wrapup sitting with `scripts/error-ledger.py sitting record`. Compare only same-kind sittings. The DM MUST NOT be asked to record or accept it.
+Record every finished prep or wrapup sitting with the ledger helper. Compare only same-kind sittings. The DM MUST NOT be asked to record or accept it.
+
+Example: `python3 scripts/error-ledger.py sitting record --kind prep --job "…" --path-read "…" --skill "…" --helper error-ledger`
 
 Cut wasted context without waiting. A change MUST NOT count as an improvement if it lowers token cost by lowering Work quality. A change MUST NOT count as an improvement if it raises token cost for the same jobs without preventing a named failure.
 
@@ -56,7 +58,12 @@ If a job will repeat and no existing command does it, create an agent-shaped hel
 
 ### Error ledger
 
-On runtime failure, append to `errors.md` with `scripts/error-ledger.py error append` before the sitting is complete. Drain matching entries when a wiki improvement or other landed fix actually removes the cause. Leftover entries for already-fixed causes are wasted context. The DM MUST NOT fill, review, or drain the ledger. A wiki fact write that is the fix still waits on accept; drain after that write lands.
+On runtime failure, append to `errors.md` before the sitting is complete. Drain matching entries when a wiki improvement or other landed fix actually removes the cause. Leftover entries for already-fixed causes are wasted context. The DM MUST NOT fill, review, or drain the ledger. A wiki fact write that is the fix still waits on accept; drain after that write lands.
+
+Examples:
+- `python3 scripts/error-ledger.py error append --cause "…" --sitting "prep: …"`
+- `python3 scripts/error-ledger.py error drain --id e-N --cause-fixed true`
+- `python3 scripts/error-ledger.py error list`
 
 ### Layout
 

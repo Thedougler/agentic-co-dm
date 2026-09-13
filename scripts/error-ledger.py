@@ -214,7 +214,9 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: list[str] | None = None) -> int:
-    args = build_parser().parse_args(argv)
+    parser = build_parser()
+    # Accept --format before or after subcommands (agent-natural flag order).
+    args = parser.parse_intermixed_args(argv)
     args.root = args.root.resolve()
     args.root.mkdir(parents=True, exist_ok=True)
     return args.func(args)
