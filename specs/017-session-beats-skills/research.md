@@ -130,12 +130,12 @@ Stop using `wiki/templates/session-prep.md` as copy-start for new beats or plans
 
 **Alternatives considered**: Keep Session 11 cockpit as the live page (owner rejected; two layouts is the blob). Keep Session 11-00 spine jobs on composition (owner rejected; fill the session-plan draft). Seventh campaign `type` per beat (owner rejected; keep `type: session-prep`). Leave `session-prep.md` as the copy-start (agents would still mint cockpits).
 
-## Decision: Shared session-prep identity is `type` + `kind` only
+## Decision: Session-prep identity is `type` + `kind`; drop useless draft keys
 
-**Rationale**: FR-055. New live beats and session plans are `type: session-prep`. `kind` is `hook` | `development` | `cliffhanger` | `climax` | `resolution` | `session-plan`. MUST NOT add `type: beat`, `type: session-beat`, or `type: session-plan`. Draft frontmatter that used those types, plus `beat:` / `beat_type:` aliases, rewrite on install.
+**Rationale**: FR-055. New live beats and session plans are `type: session-prep`. `kind` is `hook` | `development` | `cliffhanger` | `climax` | `resolution` | `session-plan`. MUST NOT add `type: beat`, `type: session-beat`, or `type: session-plan`. Draft `beat:` / `beat_type:` rewrite to `kind`. `category` is `journal`.
 
-Shared keys (wiki/AGENTS.md + this family): `title`, `category`, `tags`, `sources`, `created`, `updated`, `type`, `kind`, `lifecycle`, `reveal`, `campaign`, `session`, `visibility`, `summary`. `category` is `journal` (session-folder filing). Omit unused identity keys.
+Shared keys: `title`, `category`, `tags`, `sources`, `created`, `updated`, `type`, `kind`, `lifecycle`, `reveal`, `campaign`, `session`, `visibility`, `summary`. Page jobs, card, polarity, handoff, location, budget, and previous/next live in the body. Drop draft extras that duplicate those jobs or `kind`: `intensity`, `pacing`, `card`/`hook_kind`/`development_type`/`climax_kind`, minute/order/sequence/duration fields, location, previous/next aliases, `participants`, extra `status`, session-plan `date`/`planned_length`/`previous_session`/`next_session`. Do not copy a kind's extras onto the other pages.
 
-Type-specific draft keys (`hook_kind`, `pacing`, `estimated_minutes`, `development_type`, `climax_kind`, `follows`, `date`, `planned_length`, …) stay out of frontmatter. Subtype and handoff already live in body jobs and in the type-card catalogs. Extra identity keys do not prevent a named failure (Constitution IX). Cliffhanger draft `kind:` (empty) collides with the discriminator — drop it.
+Page identity and jobs live in [session-prep-pages.md](./contracts/session-prep-pages.md), not folded into beat-skill-routing.
 
-**Alternatives considered**: Keep each draft's unique keys (six schemas; Layout cannot scan them). Add `type: session-plan` as the owner asked not to. Harmonize `beat:` beside `kind` (two names for one field).
+**Alternatives considered**: Keep every draft key on every page (owner: all files do not need all those keys). Keep `intensity` (owner: useless as frontmatter). Keep `pacing`/`card` as Hook-only extras (body already has key and card). Add `type: session-plan` (owner rejected). Harmonize `beat:` beside `kind` (two names for one field).

@@ -91,7 +91,7 @@ Shared keys on every new live beat and session plan:
 
 `kind` is `hook` | `development` | `cliffhanger` | `climax` | `resolution` | `session-plan`.
 
-MUST NOT use `type: beat`, `type: session-beat`, or `type: session-plan`. Omit unused identity keys. Subtype (Kidnapped, Chase, Final Battle) lives in the body and in the type-card catalog, not extra frontmatter.
+MUST NOT use `type: beat`, `type: session-beat`, or `type: session-plan`. Omit unused identity keys. Card, polarity, handoff, location, budget, and previous/next live in body jobs. Drop `intensity` and other draft extras that duplicate those jobs. Full map: [session-prep-pages.md](./contracts/session-prep-pages.md).
 
 ## Session plan
 

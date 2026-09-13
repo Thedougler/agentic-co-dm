@@ -60,16 +60,9 @@ Reviewers must also agree which extra skill may load:
 7. Every prepared beat advances a live thread.
 8. At least two viable player responses; recompute rather than force the next slot.
 
-## Page rules (session-prep kinds)
+## Page rules
 
-1. New session plans copy `wiki/templates/session-plan.md`. `type: session-prep`, `kind: session-plan`. Jobs: compass, beat map, floating beats, pressure, PC touchpoints, links to typed beat pages. MUST NOT duplicate Scene ends when, Zones, or Be ready for.
-2. New live beats copy `wiki/templates/{hook,development,cliffhanger,climax,resolution}.md`. `type: session-prep` with matching `kind`. Keep that draft's jobs. Current-template layout (columns where a dashboard pair shares the scan, tables, omit unused). Session 11 heading names are not the pass test.
-3. MUST NOT add `type: beat`, `type: session-beat`, or `type: session-plan`.
-4. Shared identity: `title`, `category` (`journal`), `tags`, `sources`, `created`, `updated`, `type`, `kind`, `lifecycle`, `reveal`, `campaign`, `session`, `visibility`, `summary`. Omit unused. Subtype is not extra frontmatter.
-5. `run-guide` MUST NOT rewrite a typed beat into a Session 11 cockpit.
-6. Work accept-gate stays Work. Spoken text stays theatre of the mind. Wiki kind pages stay their owners in [wiki-kind-pages.md](./wiki-kind-pages.md).
-7. Existing Session 11 beats are not rewritten to prove this contract.
-8. Stop using `wiki/templates/session-prep.md` as copy-start for new beats or plans.
+Identity, jobs, and layout: [session-prep-pages.md](./session-prep-pages.md).
 
 ## Isolation rules
 
@@ -79,9 +72,9 @@ Reviewers must also agree which extra skill may load:
 4. A type skill does not include the full Beat Chart or another type's cards.
 5. After the split, no skill contains both the full Beat Chart and all five type-card catalogs.
 6. Play a Cliffhanger/Development as Hook remains one Hook for the session.
-7. Typed draft templates are the live pages. Composition fills the session-plan draft. See Page rules.
+7. Typed draft templates are the live pages. Composition fills the session-plan draft. See [session-prep-pages.md](./session-prep-pages.md).
 8. Existing Session 11 beats are not rewritten to prove this contract.
 
 ## Out of contract
 
-How the designated writer phrases a skill. One skill per subtype card. Campaign OS `composing-beats` / `writing-*-beats`. The article skill `writing-beats`. Foundry staging. Cold opens (not a Hook). Wiki kind page jobs ([wiki-kind-pages.md](./wiki-kind-pages.md)).
+How the designated writer phrases a skill. One skill per subtype card. Campaign OS `composing-beats` / `writing-*-beats`. The article skill `writing-beats`. Foundry staging. Cold opens (not a Hook). Wiki kind page jobs ([wiki-kind-pages.md](./wiki-kind-pages.md)). Session-prep page identity and jobs ([session-prep-pages.md](./session-prep-pages.md)).

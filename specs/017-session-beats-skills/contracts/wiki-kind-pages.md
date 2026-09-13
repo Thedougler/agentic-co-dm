@@ -2,7 +2,7 @@
 
 The interface is a campaign wiki page job. Co-DM is the author. Naming the wrong primary skill is a fail. A page that cannot be run at the table is a fail. Pass is jobs, not heading-order match. Omit unused sections.
 
-Session-prep live beats and the session plan are not this contract — see [beat-skill-routing.md](./beat-skill-routing.md) Page rules.
+Session-prep live beats and the session plan are not this contract — see [session-prep-pages.md](./session-prep-pages.md).
 
 
 ## Routing table

@@ -1,8 +1,8 @@
 {
   "version": 1,
   "stats": {
-    "total_sources_ingested": 57,
-    "total_pages": 73
+    "total_sources_ingested": 58,
+    "total_pages": 80
   },
   "/Users/nick/agentic-co-dm/wiki/_raw/arc-blight-of-aruhe.md": {
     "content_hash": "sha256:df40626cb59fcde17c3d5cd4d9079e7c57335a0e5e10334af00d40f3efe05598",
@@ -635,6 +635,21 @@
       ],
       "source_type": "document",
       "project": "shattered-sea"
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Khlysty - the Flock.md": {
+      "content_hash": "417f59fa2a23b3c2112b6d418cd13081ed15960430d4c4730ace70c6c9e2d606",
+      "last_ingested": "2026-09-13T03:07:03.219854+00:00",
+      "pages_produced": [
+        "entities/Khlysty - the Flock.md",
+        "entities/Otel Karn.md",
+        "entities/Shepherd Grigori.md",
+        "entities/Otho.md",
+        "entities/Aleksander Malone.md",
+        "entities/Tessarine Concordat.md",
+        "entities/Chain Council.md",
+        "entities/Dravosi Crown.md",
+        "entities/Pearl of Souls.md"
+      ]
     }
   },
   "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Beach.md": {

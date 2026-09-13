@@ -48,7 +48,7 @@ Claude Code only for novel skills, skill redesigns, or major skill-file changes 
 | VI. Software is agent-shaped | Pass — AGENTS.md + skills + templates, no GUI. |
 | VII. Do not suffocate agents | Pass — skills name jobs and completion tests. No beat-router skill. Wiki kinds and session-prep kinds pass on jobs, omit unused. `place-design` hub defers. No required Session 11 heading spine. |
 | VIII. Safe automation runs unattended | Pass — no new agent chore. |
-| IX. Design trends toward token efficiency | Pass — split catalogs; one routing table; shared session-prep identity (`type` + `kind`); strip draft research comments on install; minimal Claude Code prompts. |
+| IX. Design trends toward token efficiency | Pass — split catalogs; one routing table; shared session-prep identity (`type` + `kind`); drop useless draft extras (`intensity` and aliases that duplicate body jobs); strip draft research comments on install; minimal Claude Code prompts. |
 | X. Agents act autonomously by default | Pass — no human gate for commit/push/context. Claude Code only when necessary. Usage limit defers that job on `tasks.md`; independent work continues; deferred tasks carry over. |
 | XI. Designated writer work has bounded concurrency | Pass — one Claude Code or Codex instance at a time. Codex only when every remaining open task is blocked, no other work can be done, and retry time is more than one hour away. Re-check before each remaining blocked job. Session-agent write only when both writers are usage-limited. |
 
@@ -66,6 +66,7 @@ specs/017-session-beats-skills/
 ├── quickstart.md
 ├── contracts/
 │   ├── beat-skill-routing.md
+│   ├── session-prep-pages.md
 │   └── wiki-kind-pages.md
 └── tasks.md             # /speckit.tasks — not this command
 ```
@@ -116,9 +117,9 @@ wiki/templates/session-prep.md
 docs/agents/skill-design-dispatch.md
 ```
 
-Delete `.agents/skills/session-beats/references/beat-types.md` after its cards live with their types. Delete `.agents/skills/faction-prep/` after callers load `faction-design`. Beat callers that name `session-beats` for typed-beat craft get a pointer retarget. Install wiki-kind templates from the scaffolds provided for this feature. Install the six session-prep kind templates from the drafts supplied for this feature; rewrite draft `type`/`beat` keys to `type: session-prep` + `kind`; strip design-basis comments. Stop using `wiki/templates/session-prep.md` as copy-start for new beats or session plans.
+Delete `.agents/skills/session-beats/references/beat-types.md` after its cards live with their types. Delete `.agents/skills/faction-prep/` after callers load `faction-design`. Beat callers that name `session-beats` for typed-beat craft get a pointer retarget. Install wiki-kind templates from the scaffolds provided for this feature. Install the six session-prep kind templates from the drafts supplied for this feature; rewrite draft `type`/`beat` keys to `type: session-prep` + `kind`; drop useless extra keys (`intensity` and aliases that duplicate body jobs); strip design-basis comments. Stop using `wiki/templates/session-prep.md` as copy-start for new beats or session plans.
 
-**Structure Decision**: Skills stay in `.agents/skills/`. Templates stay in `wiki/templates/`. `session-beats` stays composition and fills `wiki/templates/session-plan.md`. Five beat type skills fill `wiki/templates/{hook,development,cliffhanger,climax,resolution}.md`. New kind skills as named. `place-design` hub defers. `narrative-islands` owns quests. `AGENTS.md` holds the beat routing table. `.omp/AGENTS.md` already imports `AGENTS.md`. `wiki/AGENTS.md` lists `type`, `kind` for session-prep, and Layout jobs. No beat-router skill. No `quest-design`. No `type: beat`, `type: session-beat`, or `type: session-plan`.
+**Structure Decision**: Skills stay in `.agents/skills/`. Templates stay in `wiki/templates/`. `session-beats` stays composition and fills `wiki/templates/session-plan.md`. Five beat type skills fill `wiki/templates/{hook,development,cliffhanger,climax,resolution}.md`. New kind skills as named. `place-design` hub defers. `narrative-islands` owns quests. `AGENTS.md` holds the beat routing table. `.omp/AGENTS.md` already imports `AGENTS.md`. `wiki/AGENTS.md` lists `type`, `kind` for session-prep, and Layout jobs. Session-prep page identity and jobs: `contracts/session-prep-pages.md`. No beat-router skill. No `quest-design`. No `type: beat`, `type: session-beat`, or `type: session-plan`.
 
 ## Complexity Tracking
 

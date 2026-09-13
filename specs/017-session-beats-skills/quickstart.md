@@ -5,7 +5,7 @@ Prove the beat split by classifying jobs and checking isolation. Prove wiki kind
 ## Prerequisites
 
 - Branch `017-session-beats-skills`
-- Spec [spec.md](./spec.md), contracts [beat-skill-routing.md](./contracts/beat-skill-routing.md) and [wiki-kind-pages.md](./contracts/wiki-kind-pages.md)
+- Spec [spec.md](./spec.md), contracts [beat-skill-routing.md](./contracts/beat-skill-routing.md), [session-prep-pages.md](./contracts/session-prep-pages.md), and [wiki-kind-pages.md](./contracts/wiki-kind-pages.md)
 - `session-beats` is composition only (no five type-card catalogs in that skill)
 - Type skills `hook-beats`, `development-beats`, `cliffhanger-beats`, `climax-beats`, `resolution-beats` exist
 - `spell-design`, `faction-design`, `lore-design`, `city-design`, `region-design` exist
