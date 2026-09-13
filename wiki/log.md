@@ -191,3 +191,4 @@ title: Wiki Log
 - [2026-09-13T07:50:00Z] INGEST source="wiki/_raw/Uncertainty.md" pages_updated=0 pages_created=0 mode=append note="skip rewrite; existing vehicle page owns Uncertainty"
 - [2026-09-13T07:50:00Z] ARCHIVE_RAW source="wiki/_raw/Uncertainty.md" destination="wiki/_archive/Uncertainty.md" pages=1
 - [2026-09-13T18:35:00Z] COPY_UPDATE path="wiki/journal/sessions/shattered-sea/11/Session-11-01-Angry-Birds.md" reason="accepted Session 11-01 DM copy and woven hiatus reminder"
+- [2026-09-13T19:15:50Z] COPY_UPDATE path="wiki/journal/sessions/shattered-sea/11/Session-11-02-Landing-Sign.md" reason="rewrote DM copy and player-safe development narration; preserved route, clock, and taking rulings"
