@@ -49,7 +49,7 @@ They know every sailing manual by heart. They have sailed on almost none of them
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Uncertainty|HCS Surety]], where they serve as ship's cook (learning), formerly under [[Barnaby Rook]]'s command.
 - [[Barnaby Rook]], former captain of the HCS Surety, under whom they formerly served.

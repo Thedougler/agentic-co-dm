@@ -72,7 +72,7 @@ The mob organizing is the clock. She will not cover for Ashe. If strangers ask a
 ```
 ````
 
-## Relationships
+## Connections
 
 | Relationship | Meaning |
 | ------------ | ------- |

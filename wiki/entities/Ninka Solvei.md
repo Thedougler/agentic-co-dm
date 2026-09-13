@@ -57,6 +57,6 @@ Ninka's speech is terse and transactional. She quotes prices and recites her rul
 
 *Ninka*: Never happened. I didn't see you, you didn't see me. The place was empty.
 
-## Relationships
+## Connections
 
 [[Catarina Da'Virelli]] (referral-only contact who knows to ask for specific [[Antheri]] salvage; Ninka has learned not to expect her to stop by the shop in person)

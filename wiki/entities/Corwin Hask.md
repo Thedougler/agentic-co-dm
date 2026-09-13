@@ -42,7 +42,7 @@ one incident from losing the only dock work left that'll still hire him.
 
 Non-combatant.
 
-## Relationships
+## Connections
 
 - [[Crissdalynn Khinriss]]. See Toy Chest below.
 - [[Kalowe]]. Works the docks here.

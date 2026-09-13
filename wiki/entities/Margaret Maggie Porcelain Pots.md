@@ -30,6 +30,6 @@ When she appears, the reunion will feel like both gift and threat for Delmar. Sh
 
 She does not know Delmar married. She heard his fleet went down and did not reach out afterward. No bad blood there, she just doesn't chase. Her pottery business can organically cross the party's path across islands. She always returns home.
 
-## Relationships
+## Connections
 
 - [[Delmar Fisk]]: first love. Together a couple of years. It ended badly. She left him with a week-long shiner she's never explained away.

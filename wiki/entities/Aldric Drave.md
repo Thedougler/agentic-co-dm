@@ -46,7 +46,7 @@ visibility: dm
 
 ![[Commoner]]
 
-## Relationships
+## Connections
 
 - [[Dravosi Crown]]: the empire he secretly founded and has run from underneath for three centuries.
 - [[Port Tidefall]]: the city he lives beneath.

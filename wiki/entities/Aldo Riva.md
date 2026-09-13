@@ -43,7 +43,7 @@ He is not a member of [[The Passage]] and does not know the cellar arrangement d
 
 At midnight two nights ago, he came down for a bottle of wine and heard the cellar panel mechanism click. He went back upstairs without mentioning it to [[Bice]]; he does not want her to worry, and the click has cost him sleep since, an unshared weight he carries alone. If a PC gets him talking about canal history, the building, or "anything unusual lately," the panel surfaces mid-tangent: *"The water flows the way it does now, you see. And that reminds me, two nights ago I heard something in the cellar. Probably nothing. Where was I?"* If both Bice and Aldo are present when it does, Bice goes still in a way he doesn't notice.
 
-## Relationships
+## Connections
 
 - [[Al Fondale]]: co-proprietor. Runs the kitchen.
 - [[Bice Riva]]: wife and co-proprietor. Runs the front of house.

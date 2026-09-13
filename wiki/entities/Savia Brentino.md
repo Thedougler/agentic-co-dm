@@ -51,7 +51,7 @@ tier: supporting
 
 **Voice & Delivery:** direct, technical. She does not posture or explain. You either understand hulls or you don't. "That transom carries too much" is her version of hello. "She'll hold through [[Central Strait|the Strait]]" is her warmest greeting. Holds opinions about Dravosi caulking and shares them unprompted.
 
-## Relationships
+## Connections
 
 - [[Carpenter's Slip]]: proprietor.
 - [[Calveno]]: based here.

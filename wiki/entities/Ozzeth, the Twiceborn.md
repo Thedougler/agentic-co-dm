@@ -116,7 +116,7 @@ Guards **Room T2 (Magazine Delta)** with [[Purple-Caste Zealot]] in [[Calveno Se
 
 Ozzeth casts with no speech, and [[Silence]] won't stop him (that trick won't work here). The Purple-Caste Zealot draws all fire, freeing him up to use *dominate person* and other control magic. [[Dominate Person]] is best, used once per fight at the right moment.
 
-## Relationships
+## Connections
 
 - [[Purple-Caste Zealot]]: escort, guards Room T2/Magazine Delta alongside him
 - [[Vashu the Weeping Veil|Vashu, the Weeping Veil]]: fellow guardian, Room T1/Magazine Gamma

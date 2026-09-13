@@ -40,6 +40,6 @@ She is the one who writes the written apology when a bundle misses the hold.
 
 She knows current stock and can quote comparative prices against [[Calveno]] and [[Kalowe]] chandleries from memory. She will extend a line of credit to returning customers with a clean payment history (the terms are fair, and the ledger is accurate). She has opinions about every port in the [[Central Strait]]. She offers them calmly, without prompting.
 
-## Relationships
+## Connections
 
 - [[Nimmik Vollask]]: the ship she manages. She is sole public-facing staff.

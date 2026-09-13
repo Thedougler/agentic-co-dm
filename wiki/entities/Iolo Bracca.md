@@ -33,7 +33,7 @@ Iolo Bracca stamps Crown inspection paper on the [[Calveno]] harbour front and p
 
 His chatter flows from real hunger, not careless talk. He wants your ship's details in exchange for information about which hulls pass the mole at odd hours, how late seals arrive when timing counts, and which cousins profit. The table never interrupts him. A clerk who holds a hull at anchor for a season kills more crews than [[Grukan]] ever has, and Iolo manages this with perfect cheer.
 
-## Relationships
+## Connections
 
 - [[Tallow Row]], the den where he plays most weeks and loses on purpose.
 - [[Vittoria Sanzio]], who banks the table but never his paper, taking his goodwill instead.

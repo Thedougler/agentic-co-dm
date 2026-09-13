@@ -24,7 +24,7 @@ tier: supporting
 
 She's a [[Dravosi Crown]] spy in [[Calveno]]. She poses as a [[Tessarine Concordat|Tessarine]] merchant, four months in now, and runs [[Ferrin Locke]] as her asset. She calls in every 9 days, or the Crown swaps her out. See [[Warren: Ferrin Locke]] for all details.
 
-## Relationships
+## Connections
 
 - [[Dravosi Crown]], the Crown she spies for
 - [[Calveno]], her posting under merchant cover

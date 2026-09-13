@@ -111,7 +111,7 @@ After two full rounds of chanting or when the garrison drops to 2, she triggers 
 
 **If enemies disrupt the circle before detonation:** Solange loses the summoning but still detonates as a diversion. She escapes via [[Misty Step]] (break line of sight), then uses [[Dimension Door]] (to the surface). She won't die for a failed ritual.
 
-## Relationships
+## Connections
 
 - [[Simone Tabarnack]]: commander, the only person whose orders Solange follows without question
 - [[Otar the Foul]]: the entity Solange's circle summons

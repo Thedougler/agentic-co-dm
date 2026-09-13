@@ -32,6 +32,6 @@ He has not mentioned that the captain's widow in [[Tidefall]] has a legal claim 
 
 Stub (stats unavailable in source).
 
-## Relationships
+## Connections
 
 [[Kalowe (The Merrow's Prize)]]: the quest tied to Davu's role. He was the wrecked *Cormorant*'s former first mate. He offers a cut of the salvage to any who help recover the captain's strongbox.

@@ -70,7 +70,7 @@ Her shelves hold salted meat and hides that never seem to run short no matter ho
 
 Not built for a fight. She's an old shopkeeper with no combat role, and nothing here calls for numbers.
 
-## Relationships
+## Connections
 
 - [[Otel Karn]]: the island she's lived on longer than anyone can rightly account for, and whose refusal to let anything die shapes everything she stocks and tracks.
 - [[Stillmere]]: the village she's served from behind her counter for decades beyond a normal lifespan.

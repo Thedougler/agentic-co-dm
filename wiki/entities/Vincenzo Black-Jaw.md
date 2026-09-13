@@ -39,7 +39,7 @@ Nona speaks of him constantly. His chair at family meals stays empty. Nobody sit
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Nona Black-Jaw]] (widow)
 - [[Perrin Black-Jaw]] (grandson; inherited the [[Vestra]])

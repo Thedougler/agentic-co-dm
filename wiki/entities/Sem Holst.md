@@ -59,7 +59,7 @@ Mannerisms: eyes constantly assess strangers the way he reads timber. His hands 
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 Wikilinks withheld for entities without a landed page yet (see this queue's `## Flags` at `archive/2026-07/r19-sem-holst.md`).
 

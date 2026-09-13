@@ -28,7 +28,7 @@ A strong Human in his 40s who works as a chandlery factor in [[Calveno]]. Secret
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Petra Venn]], his handler
 - [[Le Paludi]], where his wife and daughter live

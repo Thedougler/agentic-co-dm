@@ -52,7 +52,7 @@ Voice & delivery: clipped, company-trained cadence, every line sized for a trans
 *Yevgenia Sorrel*: *(flat, then sharper)* We match Voyvode on everything but the smile. Mine's real.
 
 
-## Relationships
+## Connections
 
 - [[Sunkline Company]]: employer; the source of the identical apron, patter, and price sheet.
 - [[Marta Kessler]]: rival counterpart at Voyvode General Store, the one person Yevgenia's company sameness can't cover.

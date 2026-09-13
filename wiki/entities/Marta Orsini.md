@@ -51,7 +51,7 @@ tier: supporting
 
 (none stated in source)
 
-## Relationships
+## Connections
 
 - [[Studio Orsini]]: proprietor.
 - [[Le Paludi]]: her district. Never leaves it.

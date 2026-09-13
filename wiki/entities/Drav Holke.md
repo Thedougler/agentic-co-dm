@@ -28,6 +28,6 @@ Bosun aboard [[the Saltwright]] under [[Beaumont Sel]].
 
 **Roleplay Notes:** practical and direct. Wants ship work done right. Hates wasted time and foolish questions.
 
-## Relationships
+## Connections
 
 Bosun under [[Beaumont Sel]]. One of four hirelings crewing the Saltwright, alongside [[Fen]], [[Lenne Vor]], and [[Wessa]].

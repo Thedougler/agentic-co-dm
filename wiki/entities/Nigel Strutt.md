@@ -43,7 +43,7 @@ Clerk at the [[Tidefall Chandlery]], Port Tidefall's Crown-sanctioned naval outf
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Tidefall Chandlery]], where he clerks.
 - [[Port Tidefall]], his home port.

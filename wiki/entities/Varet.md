@@ -30,7 +30,7 @@ Small even for a Moucheron. She knows where everyone is in the room, a navigator
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Five Blades]]: the mercenary company she speaks contracts for.
 - [[The Flat Water]]: where she brokers her contracts.

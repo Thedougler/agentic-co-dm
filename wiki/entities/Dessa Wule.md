@@ -32,6 +32,6 @@ tier: supporting
 > She sets a bowl on the counter in front of you with both hands, unhurried. Eye contact comes only after the bowl is down.
 
 
-## Relationships
+## Connections
 
 [[Sula Marn|Reeve Sula Marn]] uses the back corner table. Dessa doesn't know what Marn knows, only that Marn keeps strangers away from [[Mirela Cass]]'s name. Dessa knew Mirela's sister [[Ysolde]] before this started. Each fortieth morning she leaves a second clay bowl at an empty spot and clears it at close without ceremony. She has not explained this to anyone.

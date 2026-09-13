@@ -58,7 +58,7 @@ Roleplay note (source). Based on Scruffy the Janitor (literally fearless, inexpl
 
 *No combat stats recorded in the source.*
 
-## Relationships
+## Connections
 
 - [[Uncertainty|HCS Surety]]. Bosun and rigger, formerly under [[Barnaby Rook]]'s command.
 - [[Barnaby Rook]]. Ran cargo together "in the old days," before the Surety.

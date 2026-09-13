@@ -43,7 +43,7 @@ He owns the [[Shelf Instrument Dealer]], Port Tidefall's only navigation shop. E
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Shelf Instrument Dealer]]. The shop he runs.
 - [[Port Tidefall]]. His home port.

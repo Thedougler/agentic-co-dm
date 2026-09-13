@@ -57,7 +57,7 @@ Declared himself Emperor of Halewick three weeks ago. Nobody voted, and nobody r
 > **[[Counterspell]]:** not applicable — declarations are not discrete cast events. There is no caster to target.
 > The children are keys; the entity and the fissure are the source. Harming Toby or Frankie does nothing to the power itself. The Maw entity and fissure are the only lever.
 
-## Relationships
+## Connections
 
 - [[Delmar Fisk]], whose cursed speech runs on Delmar's own unresolved Pearl of Souls theft, entirely unknown to Delmar (link_of_relevance).
 - [[Frankie]], his playground rival. Their overlapping decrees collide and scar the island wherever they clash.

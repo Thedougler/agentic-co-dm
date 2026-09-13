@@ -50,7 +50,7 @@ She went to sea because it held mysteries. She couldn't rest without understandi
 
 Not stated in source.
 
-## Relationships
+## Connections
 
 - [[Delmar Fisk]], the admiral; now carries her soul, one of the five captains
 - *[[Fernen]]*, her ship

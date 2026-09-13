@@ -36,7 +36,7 @@ Jean-Claude proposed faking her death and smuggling her west. She said yes. He w
 
 [[Dead]] before the campaign began. No appearance possible unless flashback, memory, or supernatural contact. Jean-Claude carries her weight entirely. The count of thirty-one days is the number he carries.
 
-## Relationships
+## Connections
 
 - [[Jean-Claude Tabarnack]]: her closest friend; JC carries her death
 - [[Simone Tabarnack]]: her betrayal put her in chains

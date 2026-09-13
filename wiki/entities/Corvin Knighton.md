@@ -63,7 +63,7 @@ relationships:
 2. **What do they fear?** His uncle casting him as a ceremonial heir, seeing only naval doctrine and broadsides as legitimate power and rendering his Tessarine training worthless. Or his uncle's death before Corvin proves himself worthy.
 3. **What is their tell?** The constant two-inch draw-and-sheathe of his blade between sentences, a physical expression of his compulsive need to show control and mastery. It quickens under pressure.
 
-## Relationships
+## Connections
 
 [[Shepherd Grigori]]: unwitting target of Grigori's manipulation via the [[Khlysty]].
 

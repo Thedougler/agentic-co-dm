@@ -55,7 +55,7 @@ He does not tell the wearer to take the moustache off. He thinks it's doing real
 
 No statistics recorded for this NPC.
 
-## Relationships
+## Connections
 
 - [[Jean-Claude Tabarnack]]: sold him the disguise kit central to his Calveno cover
 - [[Calveno]]: works the Velo Quarter

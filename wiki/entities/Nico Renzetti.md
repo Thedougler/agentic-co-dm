@@ -72,7 +72,7 @@ A PC who reads a fighter's readiness can catch the tic before the bell. Refusal 
 ```
 ````
 
-## Relationships
+## Connections
 
 | Relationship | Meaning |
 | ------------ | ------- |

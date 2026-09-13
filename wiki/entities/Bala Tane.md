@@ -43,7 +43,7 @@ Pit boss of [[The Mud Pits]] on [[Kalowe]]'s third island. Controls entry, makes
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[The Mud Pits]]: the pit she runs.
 - [[Kalowe]]: her home island.

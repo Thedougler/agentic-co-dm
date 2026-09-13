@@ -65,7 +65,7 @@ Umberlee used Branca as a vessel, snapped her neck before witnesses, and brought
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Delmar Fisk]]: the target of Umberlee's claim. Branca is the messenger and instrument of the possession/negotiation.
 - [[Umberlee]]: the goddess who speaks and acts through her

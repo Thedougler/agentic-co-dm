@@ -27,7 +27,7 @@ tier: supporting
 
 Grukan is the sole doorman at the [[Tallow Row]] card den, working the two-eye window and the Draconic challenge that decides who gets past it. Like a buyer appraising cargo, he studies a newcomer's shoulders to judge whether they're worth the room's trouble. Once decided, he steps aside without a word. Though he doesn't often show it, he remembers faces well, especially anyone who lingers under his stare or makes noise before he finishes deciding.
 
-## Relationships
+## Connections
 
 - [[Tallow Row]]. The den where he works the door.
 - [[Old Faas]]. A regular who answers Grukan's Draconic challenge in the same flat cadence he uses for everything. That's enough to get him waved through without a second look.

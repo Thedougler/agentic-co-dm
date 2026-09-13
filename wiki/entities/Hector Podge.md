@@ -41,7 +41,7 @@ Proprietor of the [[Hook & Ledger]], the Shelf tavern where the paper side of Ti
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Hook & Ledger]]. The tavern he runs.
 - [[Port Tidefall]]. His home port.

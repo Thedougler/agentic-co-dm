@@ -1,0 +1,103 @@
+#!/usr/bin/env python3
+"""Remorph NPC Relationships headings to ## Connections.
+
+Only type: npc pages. H1/H2/H3 titled Relationships become ## Connections.
+Does not rewrite lore, body text, or other types.
+
+Usage (repo root):
+  ./scripts/remorph-npc-connections --dry-run
+  ./scripts/remorph-npc-connections --apply
+  ./scripts/remorph-npc-connections --vault wiki --json --dry-run
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import sys
+from pathlib import Path
+
+SKIP_DIRS = {".obsidian", "_raw", "_archive"}
+HEADING = re.compile(r"(?m)^(#{1,3})[ \t]+Relationships[ \t]*$")
+TYPE = re.compile(r"(?m)^type:\s*['\"]?([A-Za-z0-9_-]+)")
+
+
+def page_type(text: str) -> str | None:
+    if not text.startswith("---"):
+        return None
+    end = text.find("\n---", 3)
+    if end < 0:
+        return None
+    match = TYPE.search(text[4:end])
+    return match.group(1) if match else None
+
+
+def iter_pages(vault: Path) -> list[Path]:
+    pages = []
+    for path in sorted(vault.rglob("*.md")):
+        if any(part in SKIP_DIRS or part.startswith(".") for part in path.parts):
+            continue
+        pages.append(path)
+    return pages
+
+
+def remorph(text: str) -> str:
+    return HEADING.sub("## Connections", text)
+
+
+def scan(vault: Path) -> list[dict[str, str]]:
+    rows = []
+    for path in iter_pages(vault):
+        text = path.read_text(encoding="utf-8")
+        if page_type(text) != "npc":
+            continue
+        if not HEADING.search(text):
+            continue
+        rows.append({"path": str(path.relative_to(vault)), "from": "Relationships", "to": "## Connections"})
+    return rows
+
+
+def emit(data: object) -> None:
+    print(json.dumps(data, indent=2, sort_keys=True))
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--vault", type=Path, default=Path("wiki"))
+    parser.add_argument("--json", action="store_true")
+    mode = parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--dry-run", action="store_true")
+    mode.add_argument("--apply", action="store_true")
+    args = parser.parse_args(argv)
+    vault = args.vault.expanduser().resolve()
+    if not vault.is_dir():
+        print(f"missing vault: {vault}", file=sys.stderr)
+        return 2
+    rows = scan(vault)
+    if args.dry_run:
+        if args.json:
+            emit({"would_change": len(rows), "pages": rows})
+        else:
+            print(f"would_change\t{len(rows)}")
+            for row in rows:
+                print(row["path"])
+        return 0
+    changed = []
+    for row in rows:
+        path = vault / row["path"]
+        text = path.read_text(encoding="utf-8")
+        new = remorph(text)
+        if new != text:
+            path.write_text(new, encoding="utf-8")
+            changed.append(row["path"])
+    if args.json:
+        emit({"changed": len(changed), "pages": changed})
+    else:
+        print(f"changed\t{len(changed)}")
+        for path in changed:
+            print(path)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

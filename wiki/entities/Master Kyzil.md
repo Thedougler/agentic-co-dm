@@ -124,7 +124,7 @@ legendary_actions:
     desc: "Each creature of Kyzil's choice within 10 feet must succeed on a DC 19 Strength saving throw or take 9 (2d8) bludgeoning damage, be pushed 10 feet, and be knocked prone."
 ```
 
-## Relationships
+## Connections
 
 - [[Crissdalynn Khinriss]]: student/mentee (calls her Priscilla); gifted her the [[Fate Spinner]], her crystal dreidel, before her pilgrimage
 - [[Talon Vantyrus]]: his old master at [[High Eyrie]]. Kyzil believes he departed the order decades ago. He has no idea Vantyrus is alive, active, or leading [[the Countless]] now.

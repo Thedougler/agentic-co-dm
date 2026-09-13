@@ -63,7 +63,7 @@ The Cloak of Useful Things went down with the *Red Lady* at the [[Shelfworks]] e
 
 Not stated in source.
 
-## Relationships
+## Connections
 
 - [[Delmar Fisk]]: oldest professional relationship, now a soul in Fisk
 - *[[Red Lady]]*: captained
