@@ -54,7 +54,11 @@ example sentence architecture from references.
 - For spatial work, keep assumed PC bodies, formation, and touch out of the
   line. Seat the field on landmarks and describe the relationship a character
   can actually perceive; do not write “whoever is last,” an ankle, a boot, or
-  “your faces” without a declared position or action.
+  “your faces” without a declared position or action. Body-scale environment
+  (`heat sits under the canopy`, `the ceiling runs at seven feet`) comes from
+  the space; assigned PC physiology (`sweat stands on the neck`, `your asses
+  are sore`, `your nose crinkles`) is an agency violation even when the
+  stimulus is real.
 - Silhouette before parts: give a creature or person its familiar shape, scale,
   and supplied stable posture or ordinary behavior before minor anatomy. Use a
   current posture only in a situated moment. Every body part belongs to a named
@@ -169,6 +173,7 @@ evidence.
 | skin takes branch and leaf / becomes the trees / is the canopy | named color/material match on the skin, or cut |
 | rather than glitter / not flashy / without dazzle / quiet weight rather than X | a positive drawable sensory or physical fact, or cut |
 | offer rest and direction / provide shelter (as theme) / stays unclaimed / claim the water | pointable shore, channel, cool water, wet stone; no kernel metaphysics |
+| assigned PC body reaction (`sweat on the neck`, `your asses are sore`, `bones ache`, `your nose crinkles`) | body-scale environment from the space (`heat under the canopy`, `the ceiling barely clears your head`, `rot off the carcass`) |
 | em dash (`—`) or en-dash used as stylish pause in player prose | period, comma, or parenthesis |
 | river cuts / embouchure / thalweg / other workshop geography | river mouths, where the rivers open into the lake, lake edge |
 | braid / print braid / other opaque campaign label as spoken geography | tracks split, cross, and join; prints in the mud; forked trail |
@@ -182,6 +187,41 @@ evidence.
 | private motive or future outcome | the current action and the response opening |
 | a mechanic disguised as atmosphere | an observable manifestation, then a separate mechanic |
 | warning system / population / general traffic / provides seating / on offer | the named body using the supported place, object, or service in a concrete verb |
+
+## Repetition and specificity scan
+
+This gate catches two distinct failures: **repeated low-information state
+words** and **weak generic verbs even on first use**. Run both checks on every
+spoken block after the slop gate, regardless of whether repetition is present.
+
+**Repeated state words.** Read the spoken block aloud and flag any word that
+appears more than once in the same block when both uses describe state rather
+than action. Common offenders: `still`, `seems`, `appears`, `looms`, `sits`,
+`rests`, `remains`, `continues`. A repeated state word is legitimate only when
+it names a genuinely persisting condition that the listener needs to track
+across two distinct subjects — not when the second use is filler or a
+weakened restatement of the first.
+
+**Weak generic verbs (even once).** Flag any state or positioning verb that
+costs the listener a concrete image a more specific verb would have supplied.
+This check applies to every use, not only to repeats. A generic verb passes
+only when replacing it would lose a real physical fact or introduce false
+precision.
+
+| If the scan finds | Do this |
+| --- | --- |
+| same state word twice with no new drawable information on the second use | delete the second use or replace it with a concrete verb that shows a visible change, position, or physical fact |
+| a weak generic verb (`sits`, `rests`, `looms`, `seems`, `appears`, `remains`, `continues`) where a specific verb would show shape, posture, motion, or relation — even on first and only use | replace with the verb that paints the actual physical situation (`leans`, `spans`, `drips`, `blocks`, `hangs`, `catches`, `fills`, `runs`, `climbs`) |
+| three or more uses of the same word in a single block regardless of function | rewrite; the block has a rhythm problem even if individual uses are defensible |
+
+The scan is not a banned-word list. A word fails when it costs the listener a
+concrete image they would have gotten from a better verb. A word passes when
+cutting or replacing it would lose a real fact.
+
+**Completion criterion:** no state word appears twice in the same spoken block
+unless both uses name distinct persisting conditions with different subjects,
+and no verb can be replaced by a more concrete alternative without losing
+accuracy.
 
 ## Thin gate
 
@@ -209,6 +249,7 @@ evidence.
 | a portrait claims completeness by copying every parent heading | cover the target portrait contract only; keep private mechanics, tactics, lore, and unresolved facts out |
 | the draft retains source or checklist order, or swaps synonyms sentence by sentence | use an unordered coverage checklist as an audit, choose an independent organizing spine, then rebuild from fragmentary facts and compare structure as well as wording |
 | spatial field lacks a route, retreat, cover, or blocked path that matters | show the visible option or obstruction |
+| scene-setting lists furniture without frame or body scale | frame the space first (size at body scale, ground, air, light) before anchors; see [places.md](places.md) |
 | spatial ending is only mood | a pressure, opportunity, micro-reveal, or located change |
 | visual geometry is the subject (“same plane,” “green sitting,” “hole of noon”) | name the object and verb: moss blends into leaves; noon glare fills the valley |
 | a boundary hangs on an unseen thing | show the surface, edge, or landmark that owns the boundary |
