@@ -44,3 +44,29 @@ Only accepted Work may change wiki facts. Wrapup proposes session outcomes in ch
 ## File
 
 Classify the write against the stack table in `AGENTS.md`. Unknown reader → `DM`. Vault is `false` until the text is filed as a wiki vault note.
+
+## Table aim
+
+Home: campaign hub wiki page, grouped under layout kind Campaign State. Fields: `players` (at least one; tests use three) and `intent`. Status: `missing` → `recorded` (after DM accept on the campaign hub) → `updated`.
+
+After DM accept, file `players` + `intent` on the existing campaign hub. Do not invent a new wiki kind or `type`.
+
+Co-DM MUST NOT treat Work as aimed while `missing`. Work that could swap onto another table without edits is not aimed. DM Intelligence MUST NOT hold a second copy of the aim. When the DM updates players or intent, later Work uses the updated aim.
+
+Done when: missing aim was asked; recorded aim is on the hub; generic-table Work is not treated as aimed.
+
+## Gaps
+
+A missing wiki fact or missing Co-DM practice MUST NOT prevent playable Work in that sitting. When Work is offered despite a gap, name the gap.
+
+A campaign-facing practice fix is a proposal the DM accepts, edits, or rejects. How the Co-DM works is unchanged until accept. A rejected fix is not applied.
+
+Done when: the DM has playable Work in that sitting and the gap is named; campaign-facing practice is unchanged unless accepted.
+
+## Reflection
+
+After wrapup, offer a reflection. After prep, offer a reflection only if the DM asks. Do not run reflection or improvement during a session.
+
+An accepted reflection that needs a campaign fact change becomes a canon proposal and still waits for accept. An accepted campaign-facing practice change becomes an improvement proposal and still waits for accept. Later sittings of that kind of job follow the accepted change.
+
+Done when: wrapup offered inspectable reflection Work; wiki facts and campaign-facing practice change only after accept.

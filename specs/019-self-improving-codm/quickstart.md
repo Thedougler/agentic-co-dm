@@ -69,4 +69,4 @@ A “move” that also rewrites a wiki fact, or that files Source Material as ca
 .venv/bin/python specs/019-self-improving-codm/fixtures/check.py
 ```
 
-That check is the public seam. Implement may add it; this plan does not ship the checker or the fixture files.
+That check is the public seam. It covers scenarios 1–8 against `fixtures/wiki/` and `fixtures/ops/`, and invokes `scripts/error-ledger.py` for sitting records and ledger fill/drain.

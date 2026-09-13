@@ -40,7 +40,7 @@ Agent-facing. Players never operate this loop. Does not replace [001 Co-DM](../.
 
 ## Error ledger (agents)
 
-22. File is `errors.md` at the repo root.
+22. File is `errors.md` at the repo root. Operated by `scripts/error-ledger.py` (`error append|drain|list`, `sitting record|list`). Sitting log is `sittings.jsonl` beside it.
 23. On runtime failure, append an entry before the sitting is complete.
 24. Drain an entry only when its cause is actually fixed.
 25. After an accepted wiki fact write (or other landed fix) that removes a cause, drain matching entries in that sitting.

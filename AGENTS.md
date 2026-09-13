@@ -34,6 +34,38 @@ You can maintain multiple vaults (each a `~/.obsidian-wiki/config.<name>` file m
 Load `wiki/AGENTS.md` before any write to `wiki/` (campaign `type`, `lifecycle`, `reveal`, complete-sentence prose).
 Load `docs/agents/work.md` before Co-DM prep or wrapup output (Work gate: chat proposal; wiki write after DM accept).
 
+The 019 loop lives in this file plus `docs/agents/work.md`. Wrapup owns the required reflection. No new skill.
+
+### Table aim
+
+If table aim is `missing`, ask the DM to name the players (at least one; tests use three) and the current campaign intent before treating Work as aimed.
+
+### Gaps
+
+A missing wiki fact or missing Co-DM practice MUST NOT prevent playable Work in that sitting. When Work is offered despite a gap, name the gap. A gap that is only wasted context is closed without a DM proposal — token cost, helpers, and layout below.
+
+### Token cost
+
+Record every finished prep or wrapup sitting with `scripts/error-ledger.py sitting record`. Compare only same-kind sittings. The DM MUST NOT be asked to record or accept it.
+
+Cut wasted context without waiting. A change MUST NOT count as an improvement if it lowers token cost by lowering Work quality. A change MUST NOT count as an improvement if it raises token cost for the same jobs without preventing a named failure.
+
+### Helpers
+
+If a job will repeat and no existing command does it, create an agent-shaped helper without being asked. Arguments in, text or JSON out, exit done vs failed. Use it on the next same-kind sitting. Keep it current or remove it. No helper for a one-off. No wrap of an existing command.
+
+### Error ledger
+
+On runtime failure, append to `errors.md` with `scripts/error-ledger.py error append` before the sitting is complete. Drain matching entries when a wiki improvement or other landed fix actually removes the cause. Leftover entries for already-fixed causes are wasted context. The DM MUST NOT fill, review, or drain the ledger. A wiki fact write that is the fix still waits on accept; drain after that write lands.
+
+### Layout
+
+As agent-facing files and the wiki (llm-wiki) grow mixed, regroup so one job or layout kind does not load unrelated trees. Trigger is `growth` (mixed dump / unrelated load). Not `tidiness`. One-off files MUST NOT be reorganized solely for tidiness. Do not mandate a folder taxonomy.
+
+Wiki layout kinds: Encounters, Rules, Campaign State, DM Intelligence. Agent-facing layout kinds: System, Source Material. MUST NOT duplicate an existing `type`. Do not add `type: encounter` or `type: rules`. No layout-kind frontmatter.
+
+Wiki layout moves have `facts_changed` false, `type_changed` false, and `links_resolve` true after the move. Source Material is `wiki/_raw/` staging. System is skills/`AGENTS.md`/`docs/agents`. System and Source Material MUST NOT be treated as wiki canon. Copying table aim onto DM Intelligence is not a layout move. Wiki fact changes still wait on accept.
+
 ## Writing and visual authorities
 
 Reader is `agent` | `DM` | `players`. Unknown reader → `DM`. Vault is `true` if the destination is a wiki vault note, else `false`. Authorities are every matching row; they stack and do not cancel. Incomplete until all matching authorities are applied.

@@ -39,9 +39,9 @@ description: "Task list for Self-Improving Co-DM"
 
 **Purpose**: Confirm existing owners so 019 points at them instead of restating.
 
-- [ ] T001 Review the Work gate and wiki-fact accept path in `docs/agents/work.md` and the Campaign Co-DM pointer in `AGENTS.md` against `specs/001-agentic-co-dm/` so 019 does not duplicate 001
-- [ ] T002 [P] Review `specs/019-self-improving-codm/contracts/self-improving-codm.md` and `specs/019-self-improving-codm/data-model.md` (table aim, sitting, error entry, helper, layout kind, layout move, reflection)
-- [ ] T003 [P] Review `docs/agents/skill-design-dispatch.md` for the wrapup design-impact edit; 012 does not gate reflection chat
+- [X] T001 Review the Work gate and wiki-fact accept path in `docs/agents/work.md` and the Campaign Co-DM pointer in `AGENTS.md` against `specs/001-agentic-co-dm/` so 019 does not duplicate 001
+- [X] T002 [P] Review `specs/019-self-improving-codm/contracts/self-improving-codm.md` and `specs/019-self-improving-codm/data-model.md` (table aim, sitting, error entry, helper, layout kind, layout move, reflection)
+- [X] T003 [P] Review `docs/agents/skill-design-dispatch.md` for the wrapup design-impact edit; 012 does not gate reflection chat
 
 ---
 
@@ -51,10 +51,10 @@ description: "Task list for Self-Improving Co-DM"
 
 **CRITICAL**: No user story work begins until this phase is complete.
 
-- [ ] T004 Create empty repo-root `errors.md` as the agent-owned error ledger (not a wiki page, not under `wiki/`)
-- [ ] T005 Create `scripts/error-ledger.py` with `error` (`append`, `drain`, `list`) and `sitting` (`record`, `list`) subcommands: arguments in, JSON or Markdown out, exit distinguishes done vs failed; `drain` without `cause_fixed` true exits non-zero; do not wrap `qmd` or git
-- [ ] T006 Persist sitting records as an append-only log next to `errors.md` owned by `scripts/error-ledger.py` (not `wiki/log.md`)
-- [ ] T007 Add a Campaign Co-DM pointer in `AGENTS.md` that the 019 loop lives in `AGENTS.md` plus `docs/agents/work.md`, wrapup owns the required reflection, and there is no new skill; do not restate the 001 Work gate; do not add a campaign `type`
+- [X] T004 Create empty repo-root `errors.md` as the agent-owned error ledger (not a wiki page, not under `wiki/`)
+- [X] T005 Create `scripts/error-ledger.py` with `error` (`append`, `drain`, `list`) and `sitting` (`record`, `list`) subcommands: arguments in, JSON or Markdown out, exit distinguishes done vs failed; `drain` without `cause_fixed` true exits non-zero; do not wrap `qmd` or git
+- [X] T006 Persist sitting records as an append-only log next to `errors.md` owned by `scripts/error-ledger.py` (not `wiki/log.md`)
+- [X] T007 Add a Campaign Co-DM pointer in `AGENTS.md` that the 019 loop lives in `AGENTS.md` plus `docs/agents/work.md`, wrapup owns the required reflection, and there is no new skill; do not restate the 001 Work gate; do not add a campaign `type`
 
 **Checkpoint**: Ledger file, helper CLI, sitting log, and no-new-skill pointer exist.
 
@@ -68,9 +68,9 @@ description: "Task list for Self-Improving Co-DM"
 
 ### Implementation for User Story 1
 
-- [ ] T008 [US1] In `AGENTS.md`: if table aim status is `missing`, ask the DM to name the players ("at least one; tests use three") and the current campaign intent before treating Work as aimed (FR-003)
-- [ ] T009 [P] [US1] In `docs/agents/work.md`: after DM accept, file table aim (`players` + `intent`) on the existing campaign hub; **home**: "Campaign hub wiki page, grouped under layout kind Campaign State"; status `missing` → `recorded` (after DM accept on the campaign hub) → `updated`; do not invent a new wiki kind or `type`
-- [ ] T010 [US1] In `docs/agents/work.md`: "Co-DM MUST NOT treat Work as aimed while `missing`"; "Work that could swap onto another table without edits is not aimed"; "DM Intelligence MUST NOT hold a second copy of the aim"; when the DM updates players or intent, later Work uses the updated aim (FR-001, FR-002, FR-004)
+- [X] T008 [US1] In `AGENTS.md`: if table aim status is `missing`, ask the DM to name the players ("at least one; tests use three") and the current campaign intent before treating Work as aimed (FR-003)
+- [X] T009 [P] [US1] In `docs/agents/work.md`: after DM accept, file table aim (`players` + `intent`) on the existing campaign hub; **home**: "Campaign hub wiki page, grouped under layout kind Campaign State"; status `missing` → `recorded` (after DM accept on the campaign hub) → `updated`; do not invent a new wiki kind or `type`
+- [X] T010 [US1] In `docs/agents/work.md`: "Co-DM MUST NOT treat Work as aimed while `missing`"; "Work that could swap onto another table without edits is not aimed"; "DM Intelligence MUST NOT hold a second copy of the aim"; when the DM updates players or intent, later Work uses the updated aim (FR-001, FR-002, FR-004)
 
 **Checkpoint**: Missing aim is asked; recorded aim is on the hub under Campaign State; generic-table Work does not count as aimed.
 
@@ -84,9 +84,9 @@ description: "Task list for Self-Improving Co-DM"
 
 ### Implementation for User Story 2
 
-- [ ] T011 [US2] In `AGENTS.md` and `docs/agents/work.md`: a missing wiki fact or missing Co-DM practice MUST NOT prevent playable Work in that sitting; when Work is offered despite a gap, name the gap (FR-005, FR-006)
-- [ ] T012 [US2] In `docs/agents/work.md`: a campaign-facing practice fix is a proposal the DM accepts, edits, or rejects; how the Co-DM works is unchanged until accept; a rejected fix is not applied (FR-007)
-- [ ] T013 [US2] In `AGENTS.md`: a gap that is only wasted context is closed by agents without a DM proposal; point at the token/helper/layout rules rather than restating them
+- [X] T011 [US2] In `AGENTS.md` and `docs/agents/work.md`: a missing wiki fact or missing Co-DM practice MUST NOT prevent playable Work in that sitting; when Work is offered despite a gap, name the gap (FR-005, FR-006)
+- [X] T012 [US2] In `docs/agents/work.md`: a campaign-facing practice fix is a proposal the DM accepts, edits, or rejects; how the Co-DM works is unchanged until accept; a rejected fix is not applied (FR-007)
+- [X] T013 [US2] In `AGENTS.md`: a gap that is only wasted context is closed by agents without a DM proposal; point at the token/helper/layout rules rather than restating them
 
 **Checkpoint**: Gaps produce named, playable Work; campaign-facing practice does not change before accept.
 
@@ -100,9 +100,9 @@ description: "Task list for Self-Improving Co-DM"
 
 ### Implementation for User Story 3
 
-- [ ] T014 [US3] In `docs/agents/work.md`: after wrapup, offer a reflection; after prep, offer a reflection only if the DM asks; do not run reflection or improvement during a session (FR-008, FR-009, FR-014)
+- [X] T014 [US3] In `docs/agents/work.md`: after wrapup, offer a reflection; after prep, offer a reflection only if the DM asks; do not run reflection or improvement during a session (FR-008, FR-009, FR-014)
 - [ ] T015 [P] [US3] Dispatch the designated writer per `docs/agents/skill-design-dispatch.md` to add a required chat reflection step in `.agents/skills/session-wrapup/SKILL.md`: `observation` is "At least one concrete note about these players"; `next_change` optional; status `offered` → `accepted` | `edited` | `rejected`; "reject leaves wiki facts and campaign-facing practice unchanged"; instruct the writer to follow `.agents/skills/writing-for-agents`; do not run 012 blind-eval on reflection chat; session agent does not write that file
-- [ ] T016 [US3] In `docs/agents/work.md`: accepted reflection that needs a campaign fact change becomes a canon proposal and still waits for accept; accepted campaign-facing practice change becomes an improvement proposal and still waits for accept; later sittings of that kind of job follow the accepted change (FR-010–FR-013)
+- [X] T016 [US3] In `docs/agents/work.md`: accepted reflection that needs a campaign fact change becomes a canon proposal and still waits for accept; accepted campaign-facing practice change becomes an improvement proposal and still waits for accept; later sittings of that kind of job follow the accepted change (FR-010–FR-013)
 
 **Checkpoint**: Wrapup always offers inspectable reflection Work; wiki facts and campaign-facing practice change only after accept.
 
@@ -116,10 +116,10 @@ description: "Task list for Self-Improving Co-DM"
 
 ### Implementation for User Story 4
 
-- [ ] T017 [P] [US4] In `scripts/error-ledger.py` sitting `record`: `kind` is `prep` | `wrapup`; fields `jobs`, `paths_read`, `skills_loaded`, `helpers_used`, `waste_named`, `errors_filled`; `token_cost` is "Derived from paths/skills/output for same-kind compare — not a tokenizer"; status `open` → `recorded`; "every finished prep/wrapup sitting is `recorded`"; "DM is not a field"
-- [ ] T018 [US4] In `AGENTS.md`: agents record token cost of every prep or wrapup sitting; "The DM MUST NOT be asked to record or accept it"; compare only same-kind sittings (FR-019, FR-020)
-- [ ] T019 [US4] In `AGENTS.md`: agents cut wasted context without waiting; "A change MUST NOT count as an improvement if it lowers token cost by lowering Work quality"; "A change MUST NOT count as an improvement if it raises token cost for the same jobs without preventing a named failure" (FR-021–FR-025)
-- [ ] T020 [US4] In `AGENTS.md`: if a job will repeat and no existing command does it, create an agent-shaped helper without being asked ("Arguments in, text or JSON out, exit done vs failed"); use it on the next same-kind sitting; keep it current or remove it; "no helper for a one-off"; "No wrap of an existing command" (FR-026–FR-031)
+- [X] T017 [P] [US4] In `scripts/error-ledger.py` sitting `record`: `kind` is `prep` | `wrapup`; fields `jobs`, `paths_read`, `skills_loaded`, `helpers_used`, `waste_named`, `errors_filled`; `token_cost` is "Derived from paths/skills/output for same-kind compare — not a tokenizer"; status `open` → `recorded`; "every finished prep/wrapup sitting is `recorded`"; "DM is not a field"
+- [X] T018 [US4] In `AGENTS.md`: agents record token cost of every prep or wrapup sitting; "The DM MUST NOT be asked to record or accept it"; compare only same-kind sittings (FR-019, FR-020)
+- [X] T019 [US4] In `AGENTS.md`: agents cut wasted context without waiting; "A change MUST NOT count as an improvement if it lowers token cost by lowering Work quality"; "A change MUST NOT count as an improvement if it raises token cost for the same jobs without preventing a named failure" (FR-021–FR-025)
+- [X] T020 [US4] In `AGENTS.md`: if a job will repeat and no existing command does it, create an agent-shaped helper without being asked ("Arguments in, text or JSON out, exit done vs failed"); use it on the next same-kind sitting; keep it current or remove it; "no helper for a one-off"; "No wrap of an existing command" (FR-026–FR-031)
 
 **Checkpoint**: Finished sittings are recorded without the DM; helpers exist only for repeating jobs with no existing command.
 
@@ -133,8 +133,8 @@ description: "Task list for Self-Improving Co-DM"
 
 ### Implementation for User Story 5
 
-- [ ] T021 [P] [US5] In `scripts/error-ledger.py` error `append`/`drain`: Error Entry has `id` (stable id), `cause`, `sitting`, status `open` → `drained`, `cause_fixed` boolean; "drain requires true"; "Drain-without-fix is invalid"; "Bulk-clear is invalid"
-- [ ] T022 [US5] In `AGENTS.md`: on runtime failure, append to `errors.md` before the sitting is complete; drain matching entries when a wiki improvement or other landed fix actually removes the cause; leftover entries for already-fixed causes are wasted context; the DM MUST NOT fill, review, or drain the ledger; a wiki fact write that is the fix still waits on accept; drain after that write lands (FR-032–FR-038)
+- [X] T021 [P] [US5] In `scripts/error-ledger.py` error `append`/`drain`: Error Entry has `id` (stable id), `cause`, `sitting`, status `open` → `drained`, `cause_fixed` boolean; "drain requires true"; "Drain-without-fix is invalid"; "Bulk-clear is invalid"
+- [X] T022 [US5] In `AGENTS.md`: on runtime failure, append to `errors.md` before the sitting is complete; drain matching entries when a wiki improvement or other landed fix actually removes the cause; leftover entries for already-fixed causes are wasted context; the DM MUST NOT fill, review, or drain the ledger; a wiki fact write that is the fix still waits on accept; drain after that write lands (FR-032–FR-038)
 
 **Checkpoint**: Fill happens without the DM; drain happens only with `cause_fixed` after the fix lands.
 
@@ -148,9 +148,9 @@ description: "Task list for Self-Improving Co-DM"
 
 ### Implementation for User Story 6
 
-- [ ] T023 [US6] In `AGENTS.md`: as agent-facing files and the wiki (llm-wiki) grow mixed, regroup so one job or layout kind does not load unrelated trees; trigger is `growth` ("mixed dump / unrelated load"). "Not `tidiness`"; "One-off files MUST NOT be reorganized solely for tidiness"; do not mandate a folder taxonomy (FR-039, FR-044)
-- [ ] T024 [US6] In `AGENTS.md`: wiki layout kinds are Encounters, Rules, Campaign State, and DM Intelligence; agent-facing layout kinds are System and Source Material; "MUST NOT duplicate an existing `type`"; do not add `type: encounter` or `type: rules`; no layout-kind frontmatter (FR-040)
-- [ ] T025 [US6] In `AGENTS.md`: wiki layout moves have `facts_changed` "Must be false for wiki moves", `type_changed` "Must be false", and `links_resolve` "Must be true after the move"; Source Material is `wiki/_raw/` staging; System is skills/`AGENTS.md`/`docs/agents`; "System and Source Material MUST NOT be treated as wiki canon"; "Copying table aim onto DM Intelligence is not a layout move"; wiki fact changes still wait on accept (FR-041–FR-046)
+- [X] T023 [US6] In `AGENTS.md`: as agent-facing files and the wiki (llm-wiki) grow mixed, regroup so one job or layout kind does not load unrelated trees; trigger is `growth` ("mixed dump / unrelated load"). "Not `tidiness`"; "One-off files MUST NOT be reorganized solely for tidiness"; do not mandate a folder taxonomy (FR-039, FR-044)
+- [X] T024 [US6] In `AGENTS.md`: wiki layout kinds are Encounters, Rules, Campaign State, and DM Intelligence; agent-facing layout kinds are System and Source Material; "MUST NOT duplicate an existing `type`"; do not add `type: encounter` or `type: rules`; no layout-kind frontmatter (FR-040)
+- [X] T025 [US6] In `AGENTS.md`: wiki layout moves have `facts_changed` "Must be false for wiki moves", `type_changed` "Must be false", and `links_resolve` "Must be true after the move"; Source Material is `wiki/_raw/` staging; System is skills/`AGENTS.md`/`docs/agents`; "System and Source Material MUST NOT be treated as wiki canon"; "Copying table aim onto DM Intelligence is not a layout move"; wiki fact changes still wait on accept (FR-041–FR-046)
 
 **Checkpoint**: Growth splits mixed dumps by layout kind; wiki moves keep facts and `type`; System/Source Material stay non-canon; one-offs stay put.
 
@@ -160,10 +160,10 @@ description: "Task list for Self-Improving Co-DM"
 
 **Purpose**: Public-seam fixture and artifact alignment after standing rules and helper land.
 
-- [ ] T026 [P] Align final contract language in `specs/019-self-improving-codm/contracts/self-improving-codm.md` with landed standing rules (no new skill, no tokenizer, wrapup owns required reflection, layout kinds 34–37)
-- [ ] T027 [P] Align expected outcomes in `specs/019-self-improving-codm/quickstart.md`
-- [ ] T028 Add the runnable fixture check at `specs/019-self-improving-codm/fixtures/check.py` with `fixtures/wiki/` and `fixtures/ops/` covering quickstart scenarios 1–8 (missing aim on hub not DM Intelligence; gap does not stall; wrapup reflection is Work; sitting is recorded without the DM; ledger fill and drain; helper on a repeating job; mixed Encounters vs Rules plus System vs Source Material; layout is not a canon back door). Assert observable files and Work outcomes; drain without `cause_fixed` fails the helper; do not snapshot `AGENTS.md` or `session-wrapup` wording
-- [ ] T029 Run every scenario in `specs/019-self-improving-codm/quickstart.md` via `.venv/bin/python specs/019-self-improving-codm/fixtures/check.py`
+- [X] T026 [P] Align final contract language in `specs/019-self-improving-codm/contracts/self-improving-codm.md` with landed standing rules (no new skill, no tokenizer, wrapup owns required reflection, layout kinds 34–37)
+- [X] T027 [P] Align expected outcomes in `specs/019-self-improving-codm/quickstart.md`
+- [X] T028 Add the runnable fixture check at `specs/019-self-improving-codm/fixtures/check.py` with `fixtures/wiki/` and `fixtures/ops/` covering quickstart scenarios 1–8 (missing aim on hub not DM Intelligence; gap does not stall; wrapup reflection is Work; sitting is recorded without the DM; ledger fill and drain; helper on a repeating job; mixed Encounters vs Rules plus System vs Source Material; layout is not a canon back door). Assert observable files and Work outcomes; drain without `cause_fixed` fails the helper; do not snapshot `AGENTS.md` or `session-wrapup` wording
+- [X] T029 Run every scenario in `specs/019-self-improving-codm/quickstart.md` via `.venv/bin/python specs/019-self-improving-codm/fixtures/check.py`
 
 ---
 
