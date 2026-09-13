@@ -12,6 +12,10 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+kind: magic
+rarity: uncommon
+attunement: true
+owner: "[[Jean-Claude Tabarnack]]"
 summary: "A +2 damage archery bracer carrying two paired curses: a nat 1 turns the wearer neon and leaves a permanent mark, a nat 20 compels a loud boast."
 provenance:
   extracted: 0.85
@@ -25,38 +29,31 @@ tier: supporting
 > [!narration] Narration
 > Plain leather bracers, buckled tight at the wrist, made well but plainly, kept supple by regular oiling. The broken-in leather sits flush against the forearm without pinching, and the buckles hold with a firm, quiet click. The weight and stitching mark them as nothing more than a sturdy archer's accessory.
 
-*Wondrous Item, Uncommon (Requires Attunement).*
+*Wondrous item, uncommon (requires attunement).*
 
-| Field | Value |
-|---|---|
-| one_thing | While worn and attuned, grants proficiency with the longbow and shortbow and a +2 bonus to damage rolls made with them, the standard [[Bracers of Archery]] effect. It also carries two paired curses. One triggers on a natural 1, turning the wearer a random neon color for an hour and leaving one permanent patch behind. The other triggers on a natural 20, compelling a loud, involuntary boast that can blow the wearer's cover. |
-| rarity_justification | Uncommon, requires attunement. Matches the RAW Bracers of Archery exactly (a straight damage-and-proficiency bonus, always Uncommon/attunement per the rarity budget's own citation of that item). Both curses are cosmetic/behavioral, not combat bonuses or penalties, so neither moves the power budget. |
-| attunement_reason | Grants a damage bonus. The attunement decision tree's first branch requires it, same as the unmodified RAW item. |
-| pc_connection | [[Jean-Claude Tabarnack]] bought these to boost his ranged damage, pairing with his +1 Silent Shortbow. Both curses cost him control over his own image in front of his companions. One turns him a random neon color in a way that slowly leaves permanent marks. The other forces him to loudly claim credit even when that isn't wise in the moment. |
-| current_holder | [[Jean-Claude Tabarnack]], carried in his kit. |
-| narrative_hook | Already in play. Every natural 1 or natural 20 Jean-Claude rolls with these bracers is a moment his companions get to watch play out. |
+While wearing these bracers, you have proficiency with the [[Longbow]] and [[Shortbow]], and you gain a +2 bonus to damage rolls made with such weapons.
 
-## Mechanics
+**Neon Flare Curse.** Whenever you roll a natural 1 on an attack roll while wearing these bracers, your entire body turns a random neon color (DM's or random-table choice each time) for 1 hour. When the hour ends, the color fades from everywhere except one random patch of skin, which stays that color permanently. Only [[Remove Curse]] or a comparable curse-breaking effect removes the permanent mark. Multiple natural 1s accumulate separate permanent patches, each a different color, with no cap. The color change is purely cosmetic and visible to everyone present; ordinary clothing covers a patch the same as any mark, but nothing mundane erases the color itself.
 
-**Archer's Bracers [RAW, Bracers of Archery].** While wearing these bracers, you have proficiency with the [[Longbow]] and [[Shortbow]], and you gain a +2 bonus to damage rolls made with such weapons.
+**Glory Shot Curse.** Whenever you roll a natural 20 on an attack roll while wearing these bracers, you are compelled to immediately shout and loudly take credit for the shot, audible at a good distance. The compulsion allows no save. When you are trying to stay hidden or unnoticed, the compelled shout gives away your position. The curse triggers on every natural 20 with the bracers regardless of the situation.
 
-**Neon Flare Curse [HB].** Whenever the wearer rolls a natural 1 on an attack roll while wearing these bracers, their entire body turns a random neon color (DM's or random-table choice each time) for 1 hour.
+Both curses leave attacks, checks, and saves untouched. Neither curse affects removing or un-attuning the bracers. Only a permanent Neon Flare patch needs Remove Curse specifically.
 
-When the hour ends, the color fades from everywhere except one random patch of skin, which stays that color permanently. Only [[Remove Curse]] or a comparable curse-breaking effect removes the permanent mark.
+## At a Glance
 
-- Edge case: this stacks. A wearer who rolls more than one natural 1 over a career accumulates a separate permanent neon patch for each incident, each a different color, with no cap.
-- Edge case: the color change is purely cosmetic and visible to everyone present. Ordinary clothing over the patch still covers it, the same as any mark would. Nothing mundane erases or disguises the color itself.
+[[Jean-Claude Tabarnack]] bought these to boost ranged damage alongside his +1 Silent Shortbow. Both curses cost him control over his image: neon marks that accumulate, and involuntary boasts that can blow cover.
 
-**Glory Shot Curse [HB].** Whenever the wearer rolls a natural 20 on an attack roll while wearing these bracers, they're compelled to immediately shout and loudly take credit for the shot, audible at a good distance. The compulsion allows no save.
+## At the Table
 
-Most of the time this is harmless bravado, free of mechanical cost. When the wearer is trying to stay hidden or unnoticed, such as attempting Stealth or sniping from concealment, the compelled shout gives away their position instead.
+Every natural 1 or natural 20 Jean-Claude rolls with these bracers is a moment his companions get to watch play out — a permanent neon patch on a miss extreme, or a loud claim of credit on a crit.
 
-- Edge case: this triggers on every natural 20 with the bracers regardless of the situation. The curse doesn't know or care whether stealth matters right then, so it's fine most of the time and costly on occasion.
+## Connections
 
-**Limitations.** Both curses are entirely cosmetic and situational. They leave the wearer's rolls untouched: attacks, checks, and saves work exactly as they would without the bracers.
-
-Neon Flare's cost is a permanent visible mark, and Glory Shot's cost is the risk of blowing the wearer's own cover. Neither curse affects removing or un-attuning the bracers themselves. Only a permanent Neon Flare patch needs Remove Curse specifically.
+- [[Jean-Claude Tabarnack]] — Current holder; carried in his kit.
+- [[Bracers of Archery]] — Base effect this cursed pair matches.
+- [[Lavinia Sordi]] — Sold them from her rack at [[La Cenere]].
+- [[La Cenere]] — Purchase site in [[Le Paludi]], [[Calveno]].
 
 ## Provenance
 
-Sold by [[Lavinia Sordi]] from her rack at [[La Cenere]] in [[Le Paludi]], [[Calveno]], for 100 gp, Session 8. [[Jean-Claude Tabarnack]] had it identified shortly after, which is when the nat-1 curse first came to light. The random color that came up was flamingo pink.
+Sold by [[Lavinia Sordi]] from her rack at [[La Cenere]] in [[Le Paludi]], [[Calveno]], for 100 gp, Session 8. [[Jean-Claude Tabarnack]] had them identified shortly after, when the nat-1 curse first came to light. The random color that came up was flamingo pink.

@@ -12,6 +12,10 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+kind: magic
+rarity: uncommon
+attunement: true
+owner: "[[Delmar Fisk]]"
 summary: "A magical cloak granting 60 ft. swim speed, underwater breathing, and a manta ray form while the hood is up."
 provenance:
   extracted: 0.85
@@ -23,23 +27,27 @@ tier: supporting
 # Delmar's Cloak of the Manta Ray
 
 > [!narration] Narration
-> A long red admiral's coat, salt-worn and well-kept, with a deep hood that falls forward when raised. The lining is smooth and dark, and the coat moves in water the way cloth shouldn't. Owned by [[Delmar Fisk]].
+> A long red admiral's coat, salt-worn and well-kept, with a deep hood that falls forward when raised. The lining is smooth and dark, and the coat moves in water the way cloth shouldn't.
 
-_Wondrous Item, Uncommon (Requires [[Attunement]])._
+*Wondrous item, uncommon (requires attunement).*
 
-| Field | Value |
-|---|---|
-| one_thing | Grants a 60 ft. swim speed, the ability to breathe underwater, and a manta ray battle form when the hood is up. |
-| rarity_justification | Standard DMG _[[Cloak of the Manta Ray]]_ (no house-rule additions beyond the RAW item). |
-| attunement_reason | Matches the RAW item's attunement (DMG). |
-| pc_connection | A Fisk family heirloom, worn by [[Delmar Fisk]] the day [[Umberlee]] sank his fleet. |
-| current_holder | [[Delmar Fisk]]. |
-| narrative_hook | Its buoyancy in the water already carried Delmar and [[Crissdalynn Khinriss|Crissdalynn]] to the surface once, when the walls closed in (see Provenance). |
+While wearing this cloak with the hood up, you have a swimming speed of 60 feet, can breathe underwater, and take a manta ray form for as long as the hood stays raised.
 
-## Mechanics
+## At a Glance
 
-**[RAW]** Standard _Cloak of the Manta Ray_ (DMG): grants 60 ft. swim speed and underwater breathing, plus a manta ray form while the hood is up.
+A Fisk family heirloom worn by [[Delmar Fisk]]. Its buoyancy already carried Delmar and [[Crissdalynn Khinriss|Crissdalynn]] to the surface once when the walls closed in.
+
+## At the Table
+
+When Delmar needs to move or survive underwater, raise the hood for swim speed, breathing, and the manta form — the same coat that once floated him and Crissdalynn clear of a sinking.
+
+## Connections
+
+- [[Delmar Fisk]] — Current holder; wore it the day [[Umberlee]] sank his fleet.
+- [[Crissdalynn Khinriss]] — Dove from the crow's nest, grabbed him, and rode the coat's buoyancy to the surface with him.
+- [[Cloak of the Manta Ray]] — Base item this coat matches.
+- [[Umberlee]] — Sank Fisk's fleet the day he wore it.
 
 ## Provenance
 
-A family heirloom. Fisk wore it the day [[Umberlee]] sank his fleet, [[Crissdalynn Khinriss|Crissdalynn]] dove from the crow's nest and grabbed him, and the coat's buoyancy in the water carried them both to the surface when the walls closed in.
+A family heirloom. Fisk wore it the day [[Umberlee]] sank his fleet. [[Crissdalynn Khinriss|Crissdalynn]] dove from the crow's nest and grabbed him, and the coat's buoyancy in the water carried them both to the surface when the walls closed in.
