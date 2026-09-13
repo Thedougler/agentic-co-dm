@@ -33,7 +33,7 @@ tier: supporting
 
 **Lore Sheet:** crashed his gondola into the canal wall near the [[Mercatura]] and went into the water. [[Crissdalynn Khinriss|Crissdalynn]] grabbed him, [[Perrin Black-Jaw|Perrin]] jumped in and righted the boat, [[Delmar Fisk|Delmar]] threw him a line, and Crissdalynn fished his dropped belongings (papers and scraps) out of the water. He introduced himself as still learning the trade but confident in it; when the crew declined his offer of a free gondola ride as thanks, he danced his way back to his boat undeterred.
 
-## Relationships
+## Connections
 
 - [[Calveno]], works its canals as a gondolier
 

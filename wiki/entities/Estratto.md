@@ -170,7 +170,7 @@ Estratto avoids fights. It only uses these tactics if talking fails. The first a
 > [!mechanic]
 > **Killing it changes nothing.** At 0 HP, it casts [[Sending]] and reports your names. Then it shuts down. The Concordat picks it up in 24 hours. A new agent comes with the same writ and no patience.
 
-## Relationships
+## Connections
 
 Wikilinks withheld. None of the pages below exist in vault/ yet. Re-link once each target lands.
 

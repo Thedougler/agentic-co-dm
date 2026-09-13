@@ -43,7 +43,7 @@ His real name will surface eventually (not yet decided). House Knighton has serv
 
 No statblock recorded in the source. He never got to act. Killed in a single simultaneous strike (poisoned arrow, musket blast, shattered kneecap) before he could respond.
 
-## Relationships
+## Connections
 
 - [[Barnaby Rook]], who sent him down the ladder first into the Saltwright's hold.
 - [[Shepherd Grigori]], who recognized his House Knighton crest and told the crew he was dead.

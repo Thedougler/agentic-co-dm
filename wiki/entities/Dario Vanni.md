@@ -55,7 +55,7 @@ tier: supporting
 
 (none; not a combat NPC)
 
-## Relationships
+## Connections
 
 - [[Acqua Nera]], proprietor and master
 - [[Calveno]], keeps distance from the Canal Commission

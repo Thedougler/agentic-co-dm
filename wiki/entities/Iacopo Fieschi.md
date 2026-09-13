@@ -57,7 +57,7 @@ visibility: dm
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Tessarine Concordat]]. The faction he fronts in Calveno.
 - [[Cosimo Verantio]]. His principal, with whom he communicates only through correspondence.

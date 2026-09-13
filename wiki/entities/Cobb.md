@@ -96,7 +96,7 @@ Read while recording: [[voice-profile script]]
 
 No combat stats in source.
 
-## Relationships
+## Connections
 
 - [[Perrin Black-Jaw|Perrin]], old contact, knew him for years before
   the campaign; greets him at La Vasca, later finds him in Calveno to relay Nona's message.

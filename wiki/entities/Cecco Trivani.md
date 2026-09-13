@@ -56,7 +56,7 @@ tier: supporting
 - "Today I thought I'd final-" ([[Serena]]'s price call swallows it)
 - "You want to know what it-" (Tam reads the count aloud)
 
-## Relationships
+## Connections
 
 - [[Il Preludio]]: apprentice, the shop where he works and where the number never comes.
 - [[Fioravante "Fio" Selmerin]]: owner, sets the pace of every day Cecco works.

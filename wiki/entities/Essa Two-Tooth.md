@@ -53,7 +53,7 @@ tier: supporting
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Warren]]: embedded in its social structure; runs the
   [[Low Lamp]] there

@@ -98,7 +98,7 @@ actions:
 
 He's a carpenter first, second, and third. His cutlass skill is a byproduct of Crown boarding duties, not combat training. Use him as background crew in boarding actions where he's useful for his carpentry, not as a combat threat.
 
-## Relationships
+## Connections
 
 - [[Delmar Fisk|Delmar]]: offered him protection over a threat during the boarding, recruited him immediately, then trained him in transit toward Calveno.
 - [[Uncertainty|HCS Surety]]: his former posting under [[Barnaby Rook]], now the crew's ship. Rook knowingly underpaid him relative to a rated marine's wage.

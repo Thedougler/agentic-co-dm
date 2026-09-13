@@ -200,7 +200,7 @@ Hinewai took the old druid bargain past its breaking point. She fused her soul a
 
 ---
 
-# Relationships
+## Connections
 
 | Relationship                      | Meaning                                                        |
 | --------------------------------- | -------------------------------------------------------------- |

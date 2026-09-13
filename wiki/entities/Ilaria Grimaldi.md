@@ -51,7 +51,7 @@ tier: supporting
 
 Works at the counter throughout any exchange, the scale and the mortar never idle, and doesn't look up until she's named her price.
 
-## Relationships
+## Connections
 
 - [[Grimaldi's Dispensary]]: runs the shop, fifteen years
 - [[Kalowe]]: operates from the free port's third island

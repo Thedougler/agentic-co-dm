@@ -34,6 +34,6 @@ He does not have [[Midchain]] coverage past the basic surveys sold at his counte
 
 He sells official Dravosi surveys and answers trade board questions. He gives the best ship routes available for sale in the Crown Islands. The [[Dravosi Crown]] pays him because he is the best, though he has never asked them to admit this.
 
-## Relationships
+## Connections
 
 [[Dravosi Crown]]: employer who keeps him for his flawless accuracy. [[Harbourmaster's Office]]: he manages the chart counter there.

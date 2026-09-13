@@ -102,7 +102,7 @@ He gains Multiattack (two Toxin-Slick Blade attacks, or swap both for one Hurl C
 
 **Legendary Actions (Optional).** Use this suite only if running Ozvok solo or with few minions. Drop it entirely if he has three or more minions. Ozvok can take 2 legendary actions from the options above, using one at a time and only at the end of another creature's turn. He regains spent legendary actions at the start of his turn.
 
-## Relationships
+## Connections
 
 - [[Vashu the Weeping Veil|Vashu, the Weeping Veil]] (fellow prepped guardian for [[Calveno Sewer Magazines]])
 - [[Bazzoth, the Steeped]] (fellow drunk-alchemist archetype; Ozvok lost the slot to him)

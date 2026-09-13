@@ -30,6 +30,6 @@ She carries a medical kit that has nothing to do with the group's combat work. S
 
 Not stated in the source.
 
-## Relationships
+## Connections
 
 - [[Five Blades]]: fellow member, alongside [[Toa]], [[Varet]], and [[Suke]].

@@ -39,7 +39,7 @@ He ran [[Midchain|the Midchain]] patrol route for over a decade and knew every c
 > [!dm]
 > He doesn't press the matter of why they retired him. They pushed him out to make room for [[Barnaby Rook|Rook]]'s shakedown operation. Surfacing what he knows would expose eleven years of his own complicity. What came next was corrupt, unpredictable, and lethal.
 
-## Relationships
+## Connections
 
 - [[Beaumont Sel]] ran the same Midchain route for eleven years. His absence was the first sign the rules had changed.
 - [[Barnaby Rook|Rook]]: his rise followed Norrington's quiet retirement, which opened the door for his shakedown operation.

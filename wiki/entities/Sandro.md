@@ -32,7 +32,7 @@ visibility: dm
 > She doesn't look up, working a bent hook through a length of shoelace, the notch-marks she stopped counting worn smooth under her thumb.
 
 
-## Relationships
+## Connections
 
 - [[Nino]], swam ashore with him onto [[Aruhe]] alongside an older man, Tomo. Tomo broke the island's fruit taboo that first night. Something dragged him into the treeline, and only the drag marks remained. Sandro still hasn't explained that death to Nino, and cuts the subject short the moment the treeline comes up.
 - [[Perrin Black-Jaw]], his private Aruhe survey commission targets the island where she's stranded.

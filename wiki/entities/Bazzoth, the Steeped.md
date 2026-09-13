@@ -91,7 +91,7 @@ reactions:
     desc: "When Bazzoth takes damage, or a creature ends its turn within 5 feet of him, he speaks a short rite and steps through a puff of stinging reek, teleporting to an unoccupied space he can see within 30 feet. This movement does not provoke opportunity attacks."
 ```
 
-## Relationships
+## Connections
 
 - [[Vashu the Weeping Veil|Vashu, the Weeping Veil]]: fellow guardian.
 - [[Ozvok, the Vermillion Distiller]]: Grung alchemist.

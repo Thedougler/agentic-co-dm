@@ -119,7 +119,7 @@ His real weapon is [[Bisou]]: he throws her, hands her things, and trusts her to
 
 All three depend on Bisou being conscious and reachable, most often his shoulder, and each returns her to him by the start of his next turn.
 
-## Relationships
+## Connections
 
 - [[Bisou]], a capuchin monkey, serves as his shoulder companion for the full eleven years he has run the [[Midchain]]. Threw her through a gun port to jam Rook's cannons. Tosses her into combat as a delivery mechanism.
 - [[Crissdalynn Khinriss]], [[Delmar Fisk]] (both pulled from the water after her fleet went down, given passage west).

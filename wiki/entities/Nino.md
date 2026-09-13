@@ -28,7 +28,7 @@ visibility: dm
 > Salt-cracked skin gone sun-dark, a dyer's callus still faint on two fingers, the last trace of the trade she never finished learning. He watches long before he moves toward anything, then points instead of explaining, saving words for when nothing else will do: "Don't touch it," flat, already turning away. One hand stays closed on whatever's solid within reach.
 
 
-## Relationships
+## Connections
 
 - [[Sandro]], fellow castaway who swam ashore with him onto [[Aruhe]] alongside an older man, Tomo. Tomo broke the island's only rule and ate from a shore bush. Something dragged him into the treeline by both ankles before dawn. Nino hasn't spoken a full sentence since.
 - [[Vethka]], the wrecked ship she rode ashore on and shelters in. It sailed south for [[Karath]] with the rest of the fleet until an easterly storm drove it onto Aruhe.

@@ -30,6 +30,6 @@ Reweti is a tortle (she/her) who runs [[The Flat Water]] in [[Kalowe]]. She has 
 
 Stub. No stats given in source.
 
-## Relationships
+## Connections
 
 Beyond her role at [[The Flat Water]], two quest ties stand out. In [[Kalowe Bad Receipt Cache]], she notices Damu's business. She nods capable parties toward him. She distrusts crews. In [[Kalowe Merrow's Prize]], capable crews may seek her out for new work.

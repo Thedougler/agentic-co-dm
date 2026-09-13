@@ -41,7 +41,7 @@ She'll announce flatly that the healer's kit is good for two more fights and tha
 
 She never came back from shore leave in Calveno after Session 03; her departure from [[Calveno]] leaves the post unfilled. Her berth was empty. A [[Le Paludi]] boarding house saw her leave after a man came by. That's all anyone knows. The Surgeon's Berth still needs a surgeon.
 
-## Relationships
+## Connections
 
 - [[Uncertainty|HCS Surety]]: her post; ship's surgeon, formerly serving under [[Barnaby Rook]]'s command aboard this vessel.
 - [[Barnaby Rook]]: former captain of the HCS Surety, under whom she formerly served.

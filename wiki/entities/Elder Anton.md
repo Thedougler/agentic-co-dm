@@ -60,7 +60,7 @@ Outsiders arriving with any account of the [[Pearl of Souls|Pearl]] theft change
 
 Not stated in source.
 
-## Relationships
+## Connections
 
 - [[Keth Naar|Keth-Naar]]: elder and memory-keeper of the tribe
 

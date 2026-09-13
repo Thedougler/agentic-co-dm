@@ -68,7 +68,7 @@ A fare that actually has to be on time. He still does not crash and does not los
 ```
 ````
 
-## Relationships
+## Connections
 
 | Relationship | Meaning |
 | ------------ | ------- |

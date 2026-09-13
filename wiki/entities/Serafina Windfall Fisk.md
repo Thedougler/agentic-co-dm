@@ -38,7 +38,7 @@ She is [[Delmar Fisk|Delmar Fisk's]] wife. They married knowing their work would
 
 Not stated in source.
 
-## Relationships
+## Connections
 
 - [[Delmar Fisk]] (husband)
 - the Duchess (Delmar's musket, named for her)

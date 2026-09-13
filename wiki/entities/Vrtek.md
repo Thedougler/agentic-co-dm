@@ -35,7 +35,7 @@ Small Rattkin dockhand, coat with more pockets than any coat has a right to. Cur
 > [!dm]
 > Sosse, a regular at the [[Anchor and Line]], tells [[Perrin Black-Jaw|Perrin]] after the third drink that Vrtek has something official that does not belong to him.
 
-## Relationships
+## Connections
 
 - [[Port Tidefall]], passing through between ships.
 - [[Anchor and Line]], where he sorts his pockets.

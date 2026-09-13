@@ -80,7 +80,7 @@ He does not understand the [[Fate Spinner]] dreidel reaction or the [[Soul Incar
 ```
 ````
 
-# Relationships
+## Connections
 
 | Relationship | Meaning |
 | ------------ | ------- |

@@ -51,6 +51,6 @@ She does not know, and does not think to ask, why a young [[Aarakocra]] bird-wom
 | **Performance Hooks** | A buyer seeking a specific rare creature she can no longer get. A spooked expedition returning with fragments of a bigger story from the Teeth. A rival dealer undercutting her by securing stock she cannot access. |
 | **Link of Relevance** | [[Crissdalynn Khinriss]] and the crimson-crowned harrier. |
 
-## Relationships
+## Connections
 
 [[Roka Sten]] (business partner, expedition coordinator) · [[Spar & Snare Outfitters]] (supplier network)

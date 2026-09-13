@@ -52,7 +52,7 @@ tier: supporting
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Ponte Bassa]]. Proprietor of this canal-side tavern
 

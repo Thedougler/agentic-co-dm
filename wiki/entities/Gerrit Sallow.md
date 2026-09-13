@@ -69,7 +69,7 @@ A stranger's blade that finally works. Ysolde has already named that fear: she i
 ```
 ````
 
-## Relationships
+## Connections
 
 | Relationship | Meaning |
 | ------------ | ------- |
