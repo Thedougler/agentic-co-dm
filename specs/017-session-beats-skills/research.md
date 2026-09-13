@@ -2,15 +2,15 @@
 
 ## Decision: Keep `session-beats` as the composition skill
 
-**Rationale**: Its description already fires on planning a session, one-shot, adventure arc, or expedition evening (spec US1). 007 already assigned composition and the filed spine to it. Renaming to `composing-beats` would duplicate the Campaign OS skill name and force every caller to move for no behavior change.
+**Rationale**: Its description already fires on planning a session, one-shot, adventure arc, or expedition evening (spec US1). Renaming to `composing-beats` would duplicate the Campaign OS skill name and force every caller to move for no behavior change.
 
-**Alternatives considered**: New `composing-beats` beside `session-beats` (two composition skills). Rename `session-beats` (churn; 007 spine owner moves). User-invoked router (type skills could not load each other; SKILL-MECHANICS).
+**Alternatives considered**: New `composing-beats` beside `session-beats` (two composition skills). Rename `session-beats` (churn). User-invoked router (type skills could not load each other; SKILL-MECHANICS).
 
 ## Decision: Five new type skills named after the type
 
 **Rationale**: Spec FR-004 — Hook, Development, Cliffhanger, Climax, Resolution. Names `hook-beats`, `development-beats`, `cliffhanger-beats`, `climax-beats`, `resolution-beats` use the type as the leading word. They do not collide with Campaign OS `writing-*-beats` if those directories are still discoverable.
 
-**Alternatives considered**: One skill per RTG card (~50 skills; FR-004 forbids; Constitution IX). Reuse `writing-hook-beats` etc. (second system, different domain). Fold cards into `session-beats/references/` only (blob remains; agents still load all cards).
+**Alternatives considered**: One skill per RTG card (~50 skills; FR-004 forbids; Constitution IX). Reuse `writing-hook-beats` etc. (second system, different domain). Fold cards into `session-beats/references/` only (blob remains).
 
 ## Decision: Do not port Campaign OS composing/writing-*-beats
 
@@ -26,7 +26,7 @@
 
 ## Decision: Cards live with their type; chart lives with composition
 
-**Rationale**: FR-006 / SC-007. `beat-types.md` is the blob. Split cards into per-type disclosed reference. Composition keeps agency, skeleton, filed-spine jobs, polarity, budget, threads, recompute. Type skill keeps purpose, completion test, cards, how to fill this beat. Pointers, not copies.
+**Rationale**: FR-006 / SC-007. `beat-types.md` is the blob. Split cards into per-type disclosed reference. Composition keeps agency, polarity, budget, threads, recompute. Type skill keeps purpose, completion test, cards, how to fill this beat. Pointers, not copies.
 
 **Alternatives considered**: Keep `beat-types.md` as shared reference both load (agents still open the full catalog). Duplicate card summaries in composition (SoT split).
 
@@ -38,19 +38,21 @@
 
 ## Decision: `AGENTS.md` holds one routing table
 
-**Rationale**: Same pattern as 010 writing authorities. Sessions that never open `session-beats` still need to pick the right skill. `.omp/AGENTS.md` imports `AGENTS.md` — do not copy the table. `wiki/AGENTS.md` already points spine to `session-beats`; keep that. Description of each type skill carries its write/edit/fill branches.
+**Rationale**: Same pattern as 010 writing authorities. Sessions that never open `session-beats` still need to pick the right skill. `.omp/AGENTS.md` imports `AGENTS.md` — do not copy the table. Description of each type skill carries its write/edit/fill branches.
 
-**Alternatives considered**: Routing only in skill descriptions (misses sessions that do not match). Duplicate table in `.omp/AGENTS.md` (Constitution IX). New `docs/agents/session-beats.md` procedure file (extra hop for a table that fits in `AGENTS.md`).
+**Alternatives considered**: Routing only in skill descriptions (misses sessions that do not match). Duplicate table in `.omp/AGENTS.md` (Constitution IX). New `docs/agents/session-beats.md` procedure file (extra hop).
 
 ## Decision: Claude Code only for novel or major skill work
 
-**Rationale**: FR-025 / constitution 1.8.0. New type skills, `spell-design`, and a `session-beats` or `vehicle-design` redesign are Claude Code jobs (`claude-opus-4-6 --effort medium`, minimal prompt). Session agent lands `AGENTS.md`, wiki templates, `wiki/AGENTS.md` Layout, pointer retargets, and Spec Kit pattern tweaks. Conserve Claude Code.
+**Rationale**: FR-025 / constitution XI. New type skills, `spell-design`, and a `session-beats` or `vehicle-design` redesign are Claude Code jobs (`claude-opus-4-6 --effort medium`, minimal prompt). Session agent lands `AGENTS.md`, wiki templates, `wiki/AGENTS.md` Layout, pointer retargets, and Spec Kit pattern tweaks. Conserve Claude Code.
+
+This re-plan: filling the session-plan draft (instead of the Session 11-00 spine) is a `session-beats` redesign → designated writer. Type-skill "copy this template / fill these jobs" pointers and the `run-guide` "do not rewrite into Session 11" line are small established-file edits → session agent.
 
 **Alternatives considered**: Dispatch every standing-load edit (wastes quota). Session agent drafts new skills (016 fail for novel design). `opus` alias / `--effort high` (superseded).
 
 ## Decision: Quickstart observes routing, not file internals
 
-**Rationale**: Constitution IV. Classify the contract jobs. A planning job produces a valid chart without type-card catalogs. A typed-beat job does not open the other four catalogs unless a named seam fires. After the split, no skill contains both the full chart and all five catalogs. Do not require rewriting Session 11 to prove it.
+**Rationale**: Constitution IV. Classify the contract jobs. A planning job produces a valid chart from the session-plan draft without type-card catalogs. A typed-beat job does not open the other four catalogs unless a named seam fires. After the split, no skill contains both the full chart and all five catalogs. Do not require rewriting Session 11 to prove it.
 
 **Alternatives considered**: pytest over SKILL.md strings (implementation-coupled). Require a live session to be composed as the only proof (slow; still needed later at implement).
 
@@ -66,11 +68,13 @@
 
 **Alternatives considered**: Keep “leave HP/speed blank” as a standing ban (contradicts the template). Extra exception lists instead of jobs.
 
-## Decision: Usage limit defers only the Claude job; Codex is a gated fallback
+## Decision: Usage limit defers only the Claude job; Codex is a gated fallback; session-agent last-resort follows constitution XI
 
-**Rationale**: FR-026 / SC-016 / constitution 1.8.0. Restore Claude targets, record retry time on the feature `tasks.md`, complete remaining tasks that do not depend on that job. Completing other work MUST carry those deferred tasks forward. If every remaining open task is blocked, no other work can be done, and the retry time on the blocked task is more than one hour away, the session agent MAY invoke the Codex CLI at ChatGPT 5.5 medium with the same tightly scoped prompt. Re-check those gates before each remaining blocked skill job; prefer Claude Code if it is usable again. Session agent does not write the design.
+**Rationale**: FR-026 / SC-016 / constitution 1.11.0. Restore Claude targets, record retry time on the feature `tasks.md`, complete remaining tasks that do not depend on that job. Completing other work MUST carry those deferred tasks forward. If every remaining open task is blocked, no other work can be done, and the retry time on the blocked task is more than one hour away, the session agent MAY invoke the Codex CLI at ChatGPT 5.5 medium with the same tightly scoped prompt. Re-check those gates before each remaining blocked skill job; prefer Claude Code if it is usable again.
 
-**Alternatives considered**: Halt the whole implement (leaves independent wiki/AGENTS.md work undone). Session agent writes the novel skill anyway (016 fail). Park usage limits as GitHub issues (owner rejected; Spec Kit `tasks.md` is the tracker). Always switch to Codex on first usage-limit (skips Claude when it returns inside the hour).
+Named conflict: FR-026 says the session agent MUST NOT write the design-impact change itself. Constitution XI (Last Amended 2026-09-12) allows session-agent write when both Claude Code and Codex are usage-limited. Constitution wins for operating constraints. `docs/agents/skill-design-dispatch.md` already records that last-resort path.
+
+**Alternatives considered**: Halt the whole implement (leaves independent wiki/AGENTS.md work undone). Session agent writes the novel skill on first usage-limit (016 fail). Park usage limits as GitHub issues (owner rejected; Spec Kit `tasks.md` is the tracker). Always switch to Codex on first usage-limit (skips Claude when it returns inside the hour). Ignore constitution XI last-resort (operating-constraint miss).
 
 ## Decision: Claude Code skill updates use a minimal prompt and Opus 4.6 medium
 
@@ -80,7 +84,7 @@
 
 ## Decision: Add faction, lore, quest, city, and region wiki kinds
 
-**Rationale**: Clarifications 2026-09-12. Same pattern as vehicle/spell: template + Layout jobs + one primary skill. Pass is jobs, not heading-order match. Omit unused sections. Scaffolds are the drafts provided for this feature, installed at `wiki/templates/{faction,lore,quest,city,region}.md`.
+**Rationale**: Clarifications 2026-09-12. Same pattern as vehicle/spell: template + Layout jobs + one primary skill. Pass is jobs, not heading-order match. Omit unused sections. Scaffolds are installed at `wiki/templates/{faction,lore,quest,city,region}.md`.
 
 **Alternatives considered**: Keep stretching site `place.md` and session-prep for cities, regions, and quests (pages are not runnable). One mega-template for all geography (Constitution VII fail).
 
@@ -113,3 +117,25 @@
 **Rationale**: FR-025. Novel: `faction-design`, `lore-design`, `city-design`, `region-design`. Redesign: `narrative-islands` to fill the quest template and stop minting front/encounter. Session agent: templates, `wiki/AGENTS.md` Layout and type enum, `AGENTS.md` routing rows, `faction-prep` deletion and caller retarget, `place-design` hub defer pointers, `world-tick` faction-turn log, wrapup/reconcile Canon Log pointers.
 
 **Alternatives considered**: Session agent writes novel skills (016 fail). Dispatch `place-design` pointer-only defer to Claude Code (unnecessary).
+
+## Decision: Typed draft templates are the live pages; session-plan draft is the chart
+
+**Rationale**: Clarifications 2026-09-13 / FR-013 / FR-054 / US5. The page the DM runs is the filled typed draft, not a later Session 11 cockpit rewrite. Composition fills the session-plan draft (compass, beat map, floating beats, pressure, PC touchpoints, links to typed beats). Beat Chart rules still bind. Session 11 remains scan-quality evidence. FR-015: `run-guide` MUST NOT rewrite a typed beat into a Session 11 cockpit.
+
+Install the six supplied drafts at `wiki/templates/{hook,development,cliffhanger,climax,resolution,session-plan}.md`. Keep draft jobs. Add `col` / `col-md` where a pair of scan jobs share a dashboard. Keep DM-facing callouts on the typed drafts for scan. `[!narration]` remains the only player-spoken surface. Strip HTML design-basis comments and citation crumbs on install (skills teach methods; they do not paste the source). Drop the session-plan draft comment that treats alternation as optional — FR-010 still requires alternating middle beats; FR-011 still allows skip/reorder/end early after play.
+
+Stop using `wiki/templates/session-prep.md` as copy-start for new beats or plans (it is the old Session 11 cockpit scaffold). Filing path and `Session-<n>-<BB>-<Label>.md` names stay (wiki/AGENTS.md). Do not adopt the draft's `{{title}} - B01 - Strong Start` filename scheme.
+
+`session-skeleton.md` must not teach Session 11-00 as the filed page. Point composition at `wiki/templates/session-plan.md`.
+
+**Alternatives considered**: Keep Session 11 cockpit as the live page (owner rejected; two layouts is the blob). Keep Session 11-00 spine jobs on composition (owner rejected; fill the session-plan draft). Seventh campaign `type` per beat (owner rejected; keep `type: session-prep`). Leave `session-prep.md` as the copy-start (agents would still mint cockpits).
+
+## Decision: Shared session-prep identity is `type` + `kind` only
+
+**Rationale**: FR-055. New live beats and session plans are `type: session-prep`. `kind` is `hook` | `development` | `cliffhanger` | `climax` | `resolution` | `session-plan`. MUST NOT add `type: beat`, `type: session-beat`, or `type: session-plan`. Draft frontmatter that used those types, plus `beat:` / `beat_type:` aliases, rewrite on install.
+
+Shared keys (wiki/AGENTS.md + this family): `title`, `category`, `tags`, `sources`, `created`, `updated`, `type`, `kind`, `lifecycle`, `reveal`, `campaign`, `session`, `visibility`, `summary`. `category` is `journal` (session-folder filing). Omit unused identity keys.
+
+Type-specific draft keys (`hook_kind`, `pacing`, `estimated_minutes`, `development_type`, `climax_kind`, `follows`, `date`, `planned_length`, …) stay out of frontmatter. Subtype and handoff already live in body jobs and in the type-card catalogs. Extra identity keys do not prevent a named failure (Constitution IX). Cliffhanger draft `kind:` (empty) collides with the discriminator — drop it.
+
+**Alternatives considered**: Keep each draft's unique keys (six schemas; Layout cannot scan them). Add `type: session-plan` as the owner asked not to. Harmonize `beat:` beside `kind` (two names for one field).

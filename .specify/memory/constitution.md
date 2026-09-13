@@ -1,14 +1,14 @@
 <!--
 Sync Impact Report
-- Version change: 1.11.0 → 1.12.0
+- Version change: 1.12.0 → 1.13.0
 - Modified principles: none
 - Added sections:
-  - XII. Prompt Other Agents With Objectives
+  - XIII. Wiki Media Filenames Distinguish Kind
 - Removed sections: none
 - Other modified sections:
-  - Agent Operating Constraints (prompts to other agents follow XII)
+  - Agent Operating Constraints (wiki media filenames follow XIII)
   - Development Workflow / Review (same)
-  - Governance / Compliance (reject padded or incomplete agent prompts)
+  - Governance / Compliance (reject kind-silent media filenames)
 - Follow-up TODOs: none
 -->
 
@@ -225,6 +225,23 @@ Rationale: the other agent already knows its tools and environment.
 Tokens spent teaching that are cost without signal. Incomplete
 acceptance criteria is the actual failure.
 
+### XIII. Wiki Media Filenames Distinguish Kind
+
+Wiki media assets MUST encode their kind in the filename so an agent can
+classify the file from the name alone, without opening it or guessing from
+nearby notes. Distinct kinds include at least battlemap, portrait, token,
+and scene. New media kinds MUST also encode kind in the filename. Two
+assets of different kinds MUST NOT be distinguishable only by directory,
+extension, or surrounding prose. A filename that is silent on kind is a
+defect.
+
+MUST NOT treat folder placement as the only kind signal. Agents MUST NOT
+guess kind from pixels or adjacent wiki text when the filename does not
+name it.
+
+Rationale: opening every image to learn whether it is a token or a
+battlemap wastes tokens and produces wrong attachments.
+
 ## Agent Operating Constraints
 
 - Runtime guidance for agents is `AGENTS.md`. Skills MUST follow
@@ -246,6 +263,7 @@ acceptance criteria is the actual failure.
   permission for those steps.
 - Prompts to Claude Code, Codex, or equivalent MUST follow XII: objective,
   complete acceptance and deliverables, no operating-manual padding.
+- Wiki media assets MUST follow XIII: kind in the filename, no guessing.
 - Designated writer, when used: Claude Code at `claude-opus-4-6`
   `--effort medium`. MUST NOT use the `opus` alias or default Opus.
   Default Opus output is worthless for language work (issue #3). Up to
@@ -291,8 +309,9 @@ acceptance criteria is the actual failure.
    agent-shaped, that process is not overspecific, that easy safe idempotent
    automation is unattended, that standing agent context did not grow
    without a named failure, that prompts to other agents carry objectives
-   and complete acceptance rather than operating manuals, and that
-   git/context autonomy was not reintroduced as a human gate.
+   and complete acceptance rather than operating manuals, that wiki media
+   filenames distinguish kind without guessing, and that git/context
+   autonomy was not reintroduced as a human gate.
 
 ## Governance
 
@@ -332,6 +351,9 @@ Compliance:
 - A prompt to another coding agent that includes an operating manual,
   omits acceptance criteria or deliverables, or is longer than needed to
   state those facts MUST be rejected.
+- A wiki media filename that does not encode kind, or that requires
+  opening the file or guessing from nearby notes to classify it, MUST be
+  rejected.
 - Reviews MUST verify that no more than two Claude Code designated-writer
   instances run concurrently, that a second is used only when the agents
   involved have no other task to complete, and that no canonical artifact
@@ -346,4 +368,4 @@ Compliance:
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.12.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
+**Version**: 1.13.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
