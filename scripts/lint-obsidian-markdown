@@ -17,6 +17,7 @@ Skips: .agents/ .git/ .obsidian/ .qmd/ node_modules/ docs/ scripts/ specs/
 Usage (repo root):
   ./scripts/lint-obsidian-markdown
   ./scripts/lint-obsidian-markdown --json
+  ./scripts/lint-obsidian-markdown --path wiki/journal/sessions/shattered-sea/11
   ./scripts/lint-obsidian-markdown --strict   # also fail title_only (default: warn)
 """
 from __future__ import annotations
@@ -124,7 +125,11 @@ def blank_fences(text: str) -> str:
     return "".join(out)
 
 
-def iter_notes() -> list[Path]:
+def iter_notes(scope: Path | None = None) -> list[Path]:
+    if scope is not None:
+        if scope.is_file():
+            return [scope]
+        return sorted(p for p in scope.rglob("*.md") if p.is_file())
     out: list[Path] = []
     for path in WIKI.rglob("*.md"):
         rel = path.relative_to(ROOT).as_posix()
@@ -271,6 +276,7 @@ def check_file(path: Path) -> list[dict]:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--path", type=Path, help="Limit to a file or directory")
     ap.add_argument(
         "--strict",
         action="store_true",
@@ -278,8 +284,13 @@ def main() -> int:
     )
     args = ap.parse_args()
 
-    findings = check_forbidden_trees()
-    for path in iter_notes():
+    scope = args.path.resolve() if args.path else None
+    if scope is not None and not scope.exists():
+        print(f"agentic-co-dm: path not found: {scope}", file=sys.stderr)
+        return 2
+
+    findings = [] if scope is not None else check_forbidden_trees()
+    for path in iter_notes(scope):
         findings.extend(check_file(path))
 
     warn_statuses = {"title_only_frontmatter", "missing_frontmatter"}

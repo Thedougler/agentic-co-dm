@@ -1,19 +1,39 @@
 ---
 title: Bloodhawk
 category: entities
-tags: [monster, aruhe, apex-predator, aerial]
-sources: ["Aruhe - Bloodhawk.md"]
-created: 2026-09-12
-updated: 2026-09-12
+tags: [shattered-sea, creature, aruhe, apex-predator, aerial]
+aliases: [Bloodhawk]
+sources:
+  - "wiki/_archive/Bloodhawk.md"
+  - "house (2024 Roc chassis, SRD peer)"
+  - "Aruhe - Bloodhawk.md"
+  - "wiki/_raw/Aruhe - Bloodhawk.md"
+summary: CR 11 adult aerial skirmisher that telegraphs a stoop, seizes exposed prey, and breaks off when cover denies its dive.
+provenance:
+  extracted: 1.0
+  inferred: 0.0
+  ambiguous: 0.0
+lifecycle: canon
+lifecycle_changed: "2026-09-12"
+tier: supporting
+created: 2026-09-12T05:40:07Z
+updated: 2026-09-13T19:31:09Z
 type: creature
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 region: aruhe
-summary: CR 11 adult aerial skirmisher that telegraphs a stoop, seizes exposed prey, and breaks off when cover denies its dive.
 role: skirmisher
 cr: 11
+relationships:
+  - target: "[[Aruhe - Hungry Isle]]"
+    type: related_to
+  - target: "[[Aruhe - Bear-Elk]]"
+    type: related_to
+  - target: "[[Aruhe - Terror-Bird]]"
+    type: related_to
+  - target: "[[Aruhe - River Otter]]"
+    type: related_to
 ---
 # Bloodhawk
 

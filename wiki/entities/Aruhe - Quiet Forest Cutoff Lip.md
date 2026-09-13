@@ -40,7 +40,7 @@ Cutoff Lip is the first Quiet, a dry packed print shelf above a downslope seep o
 ---
 ## Who
 
-- [[Aruhe - Deerstalker|Deer-Stalkers]] work this lip. They use the knee palisade and the root-bowl. They will not walk [[Aruhe - Razer-Grass]]. They retreat from a grouped camp into deeper [[Aruhe - Quiet Forest]].
+- [[Deer-Stalker|Deer-Stalkers]] work this lip. They use the knee palisade and the root-bowl. They will not walk [[Aruhe - Razer-Grass]]. They retreat from a grouped camp into deeper [[Aruhe - Quiet Forest]].
 - No one from the inland group is here now. Packed prints and a hard dirt shelf show they slept and kept going toward the smoke.
 
 ---

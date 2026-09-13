@@ -1,12 +1,21 @@
 ---
+title: Session 11 — What they ate
+category: journal
+tags: [session-prep, run-guide, shattered-sea, development]
+sources:
+  - "journal/sessions/shattered-sea/11/Session-11-04-What-They-Ate.md"
+created: 2026-09-13
+updated: 2026-09-13
 type: session-prep
+kind: development
+lifecycle: proposed
+reveal: unrevealed
+summary: Development on Line Bank. Fallen fruit and fish remains are safe evidence; blood sits only under snapped living stems, and delay lets the smoke thin.
 campaign: shattered-sea
 session: 11
 status: ready
 date: 2026-09-06
 visibility: dm
-tags: [session-prep, run-guide]
-summary: Development on Line Bank. Fallen fruit and fish remains are safe evidence; blood sits only under snapped living stems, and delay lets the smoke thin.
 ---
 # Session 11 — What they ate
 
@@ -56,11 +65,11 @@ The group ahead has survived on fallen fruit and fish. Snapped living stems are 
 ```
 
 ```col-md
-**Fallen fruit.** The three bushes still hold tawny orange fruit. Eating a still-firm fallen fruit is a Bonus Action and regains `8d4 + 8` hit points, as [[Aruhe - Redheart Berry]]. Fermenting rinds and split skins have no listed healing. Blood under snapped living stems marks someone else's claim.
+**Fallen fruit.** The three bushes still hold tawny orange fruit. Eating a still-firm fallen fruit is a Bonus Action and regains `8d4 + 8` hit points, as [[Redheart Berry]]. Fermenting rinds and split skins have no listed healing. Blood under snapped living stems marks someone else's claim.
 
 **Intelligence (Nature) — identify the fruit**
 - `DC 10` → The still-firm fallen fruit is edible, not poison. Fermenting rinds are already down.
-- `DC 15` or *Identify* → Eating a still-firm fallen fruit is a Bonus Action and regains `8d4 + 8` hit points, as [[Aruhe - Redheart Berry]].
+- `DC 15` or *Identify* → Eating a still-firm fallen fruit is a Bonus Action and regains `8d4 + 8` hit points, as [[Redheart Berry]].
 
 ![[aruhe-redheart-berry.jpg|Redheart Berry]]
 ```
@@ -83,7 +92,7 @@ flexGrow=3
 
 **Clue.** This is a look-and-commit slice. There is no fight on this card. After everyone has acted, if anyone remains on the bank, advance the threat clock once. A frozen table still advances it once at the end of the round. Failed checks impose only the Be ready for ruling and never advance the clock. When the party follows the north prints or breaks south, the scene ends. Do not roll the hazards table here. Do not start [[Aruhe - River Slack Basin]].
 
-If a party member takes open valley air, that person leaves this bank. Point at a [[Aruhe - Young Bloodhawk]].
+If a party member takes open valley air, that person leaves this bank. Point at a [[Young Bloodhawk]].
 ```
 
 ```col-md
@@ -111,9 +120,9 @@ If anyone plucks living plants, traps, or kills to carry flesh on this bank, mar
 | Assess the situation | **Wisdom (Perception)**, **Wisdom (Survival)**, or **Intelligence (Nature)** | `DC 10` | The fermenting fruit is already down, rinds and seeds, with no blood under it. The living bushes have snapped stems and blood in the dirt. Fish bones, scales, and a crude line sit at the river, pointing north with the prints and the smoke. The smoke's distance and the number of people who passed remain unknown. | The looker identifies the three piles and the northbound route but remains on the bank. | The looker gets no useful extra read and remains on the bank. |
 | Follow the north prints and smoke | Walk the crushed corridor north off the bank. | Commit | The party commits to the north trail toward the smoke. Hand to [[Session-11-05-Otter-Hole]]. This scene ends. Fallen fruit is not a claim. Any living-plant claim is already applied, and the trail remains. | Binary; no partial. | Binary; no partial. |
 | Search the pole, bones, and line | **Intelligence (Investigation)** or **Wisdom (Perception)** | `DC 10` | That party member can take the crude pole, line, and baskets. The bones and scales are already on the sand. Searching them does not reveal how many people fished or what they caught. | That party member remains at the pole and confirms this stop is fresh. | That party member remains at the line. Catch, head count, and smoke distance stay unknown. |
-| Pick fruit | **Intelligence (Nature)** or **Wisdom (Survival)** to sort fallen fruit from living stems. **Utilize** if that party member plucks without sorting. Plucking living stems on purpose is a claim. | `DC 10` | That party member takes only fruit already down. That is not a claim. Eating a still-firm fallen fruit is a Bonus Action and regains `8d4 + 8` hit points, as [[Aruhe - Redheart Berry]]. The trail and smoke remain. | That party member takes some living stems. That is a [[Taking on Aruhe]] claim. The later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. | That party member strips living fruit. That is a [[Taking on Aruhe]] claim. The later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. |
+| Pick fruit | **Intelligence (Nature)** or **Wisdom (Survival)** to sort fallen fruit from living stems. **Utilize** if that party member plucks without sorting. Plucking living stems on purpose is a claim. | `DC 10` | That party member takes only fruit already down. That is not a claim. Eating a still-firm fallen fruit is a Bonus Action and regains `8d4 + 8` hit points, as [[Redheart Berry]]. The trail and smoke remain. | That party member takes some living stems. That is a [[Taking on Aruhe]] claim. The later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. | That party member strips living fruit. That is a [[Taking on Aruhe]] claim. The later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. |
 | Look up-sun | **Wisdom (Perception)**, only if they ask who that flyer is | `DC 27` | The looker sees [[Talon Skarn]] up-sun: a man-sized peregrine body in the midday glare, then gone. | Sun-glare only. The looker remains on the bank. | Sun-glare only. The looker remains on the bank. |
-| Fly (hawk sky) | Fly up out of the grass into open valley air | Take open valley air | That party member leaves the bank into open valley air. Point at a [[Aruhe - Young Bloodhawk]]. This scene ends for that flyer. | Binary; no partial. | Binary; no partial. Taking open valley air is hawk sky. |
+| Fly (hawk sky) | Fly up out of the grass into open valley air | Take open valley air | That party member leaves the bank into open valley air. Point at a [[Young Bloodhawk]]. This scene ends for that flyer. | Binary; no partial. | Binary; no partial. Taking open valley air is hawk sky. |
 | Return toward [[Aruhe - Grasslands Torn Crossing]] | Walk south through the valley. | Walk | The party leaves this bank south toward [[Aruhe - Grasslands Torn Crossing]], the terrace line, the beach, or [[Uncertainty]]. Rebuild from that. This scene ends. | Binary — no partial. | Binary — no partial. |
 
 Unforeseen intents use the same rule: the group ahead has been living off fallen fruit and fish, and snapped living stems left the blood. Rule from zones and whether the approach lingers, picks live stems, or keeps the north prints.
@@ -140,7 +149,7 @@ The party follows the north prints toward the smoke. [[Aruhe - River Slack Basin
 
 ## Backup
 
-[[Aruhe - River - Line Bank]] · [[Aruhe - Grasslands Torn Crossing]] · [[Aruhe - River Landing Bank]] · [[Aruhe - River Slack Basin]] · [[Session-11-00-Random-Tables]] · [[Taking on Aruhe]] · [[Aruhe - Grasslands]] · [[Aruhe - River]] · [[Aruhe - Redheart Berry]] · [[Uncertainty]] · [[Talon Skarn]] · [[Aruhe - Young Bloodhawk]] · [[Session-11-03-Wolfrabbits]] · [[Session-11-00-Birds-of-a-Feather]] · [[Session-11-05-Otter-Hole]]
+[[Aruhe - River - Line Bank]] · [[Aruhe - Grasslands Torn Crossing]] · [[Aruhe - River Landing Bank]] · [[Aruhe - River Slack Basin]] · [[Session-11-00-Random-Tables]] · [[Taking on Aruhe]] · [[Aruhe - Grasslands]] · [[Aruhe - River]] · [[Redheart Berry]] · [[Uncertainty]] · [[Talon Skarn]] · [[Young Bloodhawk]] · [[Session-11-03-Wolfrabbits]] · [[Session-11-00-Birds-of-a-Feather]] · [[Session-11-05-Otter-Hole]]
 
 ## Battlemap
 

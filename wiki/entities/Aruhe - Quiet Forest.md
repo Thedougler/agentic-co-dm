@@ -42,10 +42,10 @@ The Quiet is rainforest above the last terrace of [[Aruhe - Old Gardens]], where
 - **Follow the packed prints north of the lip:** [[Aruhe - Grasslands - Print Braid]].
 - **Follow the inland prints off Print Braid into the Quiet hub:** [[Aruhe - Quiet Forest Spoke Ring|Spoke Ring]].
 - **Follow the north spoke off Spoke Ring onto the night aisle:** [[Aruhe - Quiet Forest Star Cut|Star Cut]].
-- **Walk a game trail pinched through stone:** A single [[Aruhe - Strangler Fig]] may fill the bottleneck with hanging roots and a hollow trunk.
+- **Walk a game trail pinched through stone:** A single Aruhe - Strangler Fig <!-- broken link: no match found --> may fill the bottleneck with hanging roots and a hollow trunk.
 - **Move through a Quiet-to-Marshes game trail or sunbreak beside a four-foot waxy stalk:** [[Aruhe - Stillbloom]] raises pale bracts around dark needles. A charged mature stalk fires when a grounded Small or larger creature within `20 feet` moves more than `10 feet`, Dashes, jumps, falls, is forced `10 feet` or more, or makes a violent motion; each creature within `15 feet` makes a **Dexterity save — `DC 14`**. Failure → `2d6` piercing and an embedded spine, followed by a **Constitution save — `DC 12`** for **Exposure**. Walk `10 feet` or less per turn, throw an object to trigger the volley, fly over the root mat, or use total cover during the reload.
 - **Walk a deeper Quiet game trail beneath smooth dark coils and hanging carcasses:** [[Aruhe - Snakewood]] reacts to any Small or larger creature moving below an active colony; the target makes a **Dexterity save — `DC 14`**. Failure → `1d6` bludgeoning, **Grappled**, and pulled `15 feet` toward the canopy; a **Grappled** creature takes `2d6` acid damage at the start of its turn, increasing by `1d6` each consecutive round to `4d6`. Bait the strike with a moving object, stay beneath solid cover, sever the section (**AC 13**, `15 HP`), or escape with **Strength (Athletics) or Dexterity (Acrobatics) — `DC 14`**.
-- **Take fruit under the roof:** [[Aruhe - Stonepear]] is common here, often before [[Aruhe - Terror-Bird]] ground; [[Aruhe - Giant's Guava]] is common, often near [[Aruhe - Bear-Elk]] crossing signs; [[Aruhe - Ghost Plum]] is uncommon. Fallen fruit is receiving. Pluck a living plant → surrounding life converges, hostile. [[Taking on Aruhe]]
+- **Take fruit under the roof:** [[Aruhe - Stonepear]] is common here, often before [[Aruhe - Terror-Bird]] ground; [[Giant's Guava]] is common, often near [[Aruhe - Bear-Elk]] crossing signs; [[Ghost Plum]] is uncommon. Fallen fruit is receiving. Pluck a living plant → surrounding life converges, hostile. [[Taking on Aruhe]]
   - **Intelligence (Nature) — identify**
     - `DC 13` → Broad function.
     - `DC 15` or *Identify* → Exact effect.
@@ -54,18 +54,18 @@ The Quiet is rainforest above the last terrace of [[Aruhe - Old Gardens]], where
 ## Who
 
 - [[Aruhe - Crown Squid]] hunts the Quiet canopy. It avoids open grass and deep otter water.
-- [[Aruhe - Deerstalker|Deer-Stalkers]] work the Quiet floor into the Marshes. Meeting is a carcass interrupt.
-- [[Aruhe - Thornback|Thornbacks]] root the Quiet floor, solitary. Spent spines litter the trails they shove open. Two in one stretch fight each other first.
+- [[Deer-Stalker|Deer-Stalkers]] work the Quiet floor into the Marshes. Meeting is a carcass interrupt.
+- Thornbacks <!-- broken link: no match found --> root the Quiet floor, solitary. Spent spines litter the trails they shove open. Two in one stretch fight each other first.
 - [[Aruhe - Bear-Elk]] run scored-tree beats on the Quiet–Marshes boundary. [[Aruhe - Terror-Bird|Terror-birds]] step aside.
 
 ---
 ## What
 
-- [[Aruhe - Strangler Fig|Strangler Figs]] sit singly where packed game trails pinch between stone. Aerial roots hang in curtains; old bones show in the hollow trunk.
-- [[Silence Moths]]: Sail-sized clouds at dusk and dawn on Marshes and Grove approaches through the trees. The jungle goes quiet ahead of them, then the cloud fills a mouth. Fire drives them off; they will not follow anyone out of the trees.
+- Strangler Figs <!-- broken link: no match found --> sit singly where packed game trails pinch between stone. Aerial roots hang in curtains; old bones show in the hollow trunk.
+- Silence Moths <!-- broken link: no match found -->: Sail-sized clouds at dusk and dawn on Marshes and Grove approaches through the trees. The jungle goes quiet ahead of them, then the cloud fills a mouth. Fire drives them off; they will not follow anyone out of the trees.
 - [[Aruhe - Stonepear]] is common beneath the roof, and fallen fruit can be foraged from the moss.
-- [[Aruhe - Giant's Guava]] is common here, with low branches that can be picked.
-- [[Aruhe - Ghost Plum]] is uncommon, hanging under the wet leaves.
+- [[Giant's Guava]] is common here, with low branches that can be picked.
+- [[Ghost Plum]] is uncommon, hanging under the wet leaves.
 
 ---
 ## Where

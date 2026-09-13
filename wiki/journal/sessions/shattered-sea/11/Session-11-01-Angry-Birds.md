@@ -1,7 +1,7 @@
 ---
 title: Session 11 — Angry Birds
 category: journal
-tags: [hook, session-prep]
+tags: [hook, session-prep, shattered-sea]
 sources:
   - "[[Session-11-00-Birds-of-a-Feather]]"
   - "[[Session 10 - Recap]]"
@@ -14,10 +14,10 @@ type: session-prep
 kind: hook
 lifecycle: accepted
 reveal: unrevealed
+summary: Action Hook. An adult Bloodhawk stoops on the Crown Squid over the Old Gardens; dropping into grass or river is how the party leaves that hunt.
 campaign: shattered-sea
 session: 11
 visibility: dm
-summary: Action Hook. An adult Bloodhawk stoops on the Crown Squid over the Old Gardens; dropping into grass or river is how the party leaves that hunt.
 ---
 # Session 11 — Angry Birds
 

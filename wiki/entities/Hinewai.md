@@ -149,9 +149,9 @@ Damage to the memorial weakens Hinewai. Damage to her walking body alone never c
 
 | Memorial state | Use |
 | --- | --- |
-| **Whole** | [[#Death Bloom Whole]] |
-| **Wounded** | [[#Death Bloom Wounded]] |
-| **Near ruin** | [[#Death Bloom Near Ruin]] |
+| **Whole** | Death Bloom Whole |
+| **Wounded** | Death Bloom Wounded |
+| **Near ruin** | Death Bloom Near Ruin |
 | **Ruined** | No rebirth; body destruction is permanent. |
 
 See [[Aruhe - Memorial Grove#Destruction timeline]].

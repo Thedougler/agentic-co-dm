@@ -1,12 +1,21 @@
 ---
+title: Session 11 — Night watch
+category: journal
+tags: [session-prep, run-guide, shattered-sea, development]
+sources:
+  - "journal/sessions/shattered-sea/11/Session-11-08-Night-Watch.md"
+created: 2026-09-13
+updated: 2026-09-13
 type: session-prep
+kind: development
+lifecycle: proposed
+reveal: unrevealed
+summary: "Development watch-posting at Spoke Ring. Actual precautions lock fortified, paired, or thin before [[Session-11-09-Theft-on-the-Watch]]; an excellent watch still brings [[Talon Skarn]]."
 campaign: shattered-sea
 session: 11
 status: ready
 date: 2026-09-06
 visibility: dm
-tags: [session-prep, run-guide]
-summary: Development watch-posting at Spoke Ring. Actual precautions lock fortified, paired, or thin before [[Session-11-09-Theft-on-the-Watch]]; an excellent watch still brings [[Talon Skarn]].
 ---
 # Session 11 — Night watch
 
@@ -22,7 +31,7 @@ Plan for about thirty minutes.
 
 **If behind:** Ask who watches, where each person stands, how [[Crissdalynn Khinriss]] and the [[Fate Spinner]] are protected, and whether the fire is quiet or messy. Lock fortified, paired, or thin, then end the beat.
 
-**If ahead:** Still end on watch terms. Keep [[Talon Skarn]] and the [[Aruhe - Deerstalker]] off this card. The valley does not reach [[Aruhe - Memorial Grove]] tonight.
+**If ahead:** Still end on watch terms. Keep [[Talon Skarn]] and the [[Deer-Stalker]] off this card. The valley does not reach [[Aruhe - Memorial Grove]] tonight.
 
 This slice is watch-posting at [[Aruhe - Quiet Forest Spoke Ring]], not a fight, [[Aruhe - Memorial Grove]], or the theft.
 ```
@@ -42,7 +51,7 @@ flexGrow=2
 
 ## Now
 
-The party is on the packed-dirt hub of [[Aruhe - Quiet Forest Spoke Ring]], unless beat 7 ended on a north trail; in that case, they start 20 feet north of the fire. The stone ring is at the center, with four woven mats 10 feet from the coals. The fire is the only open light beneath the leaves. If the party pulled [[Matteo Scola]] from the hole, he sits 5 feet from the coals with a split, wet lip, one boot missing, and a grey salt-stiff shirt that is still damp. If they left him in the hole, he is not here.
+The party is on the packed-dirt hub of [[Aruhe - Quiet Forest Spoke Ring]], unless beat 7 ended on a north trail; in that case, they start 20 feet north of the fire. The stone ring is at the center, with four woven mats 10 feet from the coals. The fire is the only open light beneath the leaves. If the party pulled Matteo Scola <!-- broken link: no match found --> from the hole, he sits 5 feet from the coals with a split, wet lip, one boot missing, and a grey salt-stiff shirt that is still damp. If they left him in the hole, he is not here.
 
 Unnamed wreck people sit in the light, fewer than the crushed prints entering from the south, and fewer again if beat 7 lost a peeler. The fire is thinner or messier if beat 7 left it that way. Fallen [[Aruhe - Stonepear]] lies by the coals, living stonepears hang overhead, and two spears rest on the packed dirt south of the ring.
 
@@ -61,11 +70,11 @@ The south trail reaches gold-green grass between the last trunks in 20 feet. The
 - **March:** Beat 9 is the column. Do not move them to [[Aruhe - Quiet Forest Star Cut]].
 - **Record:** Quiet or messy fire. Whether [[Crissdalynn Khinriss]] is on watch. Whether the [[Fate Spinner]] is in view.
 - **[[Talon Skarn]]:** He wants the carrier on a thin watch. He does not appear on this card. An excellent watch does not cancel [[Session-11-09-Theft-on-the-Watch]].
-- **[[Aruhe - Deerstalker]]:** It waits for another split. Keep it off this card and off [[Session-11-09-Theft-on-the-Watch]].
+- **[[Deer-Stalker]]:** It waits for another split. Keep it off this card and off [[Session-11-09-Theft-on-the-Watch]].
 ```
 
 ```col-md
-**[[Matteo Scola]].** If the party pulled him from the hole and he can speak, use his name. If he is still **Unconscious**, call him the man until he wakes and says Matteo. If the party left him in the hole, remove him from this card.
+**Matteo Scola <!-- broken link: no match found -->.** If the party pulled him from the hole and he can speak, use his name. If he is still **Unconscious**, call him the man until he wakes and says Matteo. If the party left him in the hole, remove him from this card.
 
 - **Want:** He wants living people and will not walk a north trail alone.
 
@@ -176,7 +185,7 @@ Keep the people at this fire unnamed. Identify them only as garden mouths or shi
 
 ## Backup
 
-[[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Quiet Forest Star Cut]] · [[Aruhe - Stonepear]] · [[Crissdalynn Khinriss]] · [[Fate Spinner]] · [[Talon Skarn]] · [[Taking on Aruhe]] · [[Matteo Scola]] · [[Aruhe - Deerstalker]] · [[Uncertainty]] · [[Aruhe - Memorial Grove]] · [[Aruhe - Quiet Forest]] · [[Aruhe - River]] · [[Session-11-07-False-Help]] · [[Session-11-09-Theft-on-the-Watch]] · [[Session-11-00-Birds-of-a-Feather]]
+[[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Quiet Forest Star Cut]] · [[Aruhe - Stonepear]] · [[Crissdalynn Khinriss]] · [[Fate Spinner]] · [[Talon Skarn]] · [[Taking on Aruhe]] · Matteo Scola <!-- broken link: no match found --> · [[Deer-Stalker]] · [[Uncertainty]] · [[Aruhe - Memorial Grove]] · [[Aruhe - Quiet Forest]] · [[Aruhe - River]] · [[Session-11-07-False-Help]] · [[Session-11-09-Theft-on-the-Watch]] · [[Session-11-00-Birds-of-a-Feather]]
 
 ## Battlemap
 

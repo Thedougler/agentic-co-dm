@@ -1,12 +1,21 @@
 ---
+title: Session 11 — Landing sign and smoke
+category: journal
+tags: [session-prep, run-guide, shattered-sea, development]
+sources:
+  - "journal/sessions/shattered-sea/11/Session-11-02-Landing-Sign.md"
+created: 2026-09-13
+updated: 2026-09-13
 type: session-prep
+kind: development
+lifecycle: proposed
+reveal: unrevealed
+summary: "Landing Bank development beat: fresh prints, cold ash, loose fruit, and thinning smoke push the party north to Torn Crossing before the trail goes cold."
 campaign: shattered-sea
 session: 11
 status: ready
 date: 2026-09-06
 visibility: dm
-tags: [session-prep, run-guide]
-summary: "Landing Bank development beat: fresh prints, cold ash, loose fruit, and thinning smoke push the party north to Torn Crossing before the trail goes cold."
 ---
 # Session 11 — Landing sign and smoke
 
@@ -67,7 +76,7 @@ Do not roll the hazards table on this card.
 ```
 
 ```col-md
-**Fallen [[Aruhe - Redheart Berry]].** Red berries still hang from short, thick stems at the wet margin.
+**Fallen [[Redheart Berry]].** Red berries still hang from short, thick stems at the wet margin.
 
 - **Fallen:** Eating a fallen berry is a Bonus Action and regains `8d4 + 8` hit points.
 - **Orange fruit:** The orange fruit at the crate has no listed healing effect.
@@ -79,7 +88,7 @@ Do not roll the hazards table on this card.
 **Identify the red berries.** **Intelligence (Nature)**
 
 - `DC 10` → The red berries are edible, not poison.
-- `DC 15` or *Identify* → Eating a fallen [[Aruhe - Redheart Berry]] is a Bonus Action and regains `8d4 + 8` hit points.
+- `DC 15` or *Identify* → Eating a fallen [[Redheart Berry]] is a Bonus Action and regains `8d4 + 8` hit points.
 ```
 ````
 
@@ -126,7 +135,7 @@ If anyone plucks living plants, fishes, traps, or kills to carry flesh on this b
 | Assess the situation | **Wisdom (Perception)**, **Wisdom (Survival)**, or **Intelligence (Investigation)** | `DC 10` | The ash, tracks, bowls, and rinds are recent. The route runs north toward the smoke. Fruit on the ground is off the plant, while red berries still hang at the wet margin. The group's size and treatment of living fruit remain unknown. | The looker identifies the northbound trail but learns nothing else about the stop or fruit. | The looker gains no useful detail and remains on this bank. |
 | Follow the north prints and smoke off this bank | Walk the crushed corridor north off this bank. | Commit | Following the corridor commits the party to the north trail toward the smoke. Hand to [[Session-11-03-Wolfrabbits]] and end this scene. | This is a binary choice. The party leaves the bank only if it follows the corridor. | This is a binary choice. The party remains on this bank until it chooses a route. |
 | Search the crate and fire scrape | **Intelligence (Investigation)** or **Wisdom (Perception)** | `DC 10` | The searcher can carry the closed crate and confirms that the scrape is cold ash in cleared dirt. The search does not establish the group's size or treatment of living fruit. | The searcher confirms that the stop is recent but remains at the crate. | The searcher remains at the used stop, and the crate's contents stay unknown. |
-| Pick fruit on this river-valley bank | **Intelligence (Nature)** or **Wisdom (Survival)** to sort fallen fruit from living stems. Use **Utilize** if the party member plucks without sorting. Plucking living stems on purpose counts as a take. | `DC 10` | The forager takes only fruit already on the ground, which does not count as a take. Eating a fallen [[Aruhe - Redheart Berry]] is a Bonus Action and regains `8d4 + 8` hit points. The trail and smoke remain. | The forager plucks some living stems. Mark [[Taking on Aruhe]]; the later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. | The forager strips living fruit. Mark [[Taking on Aruhe]]; the later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. |
+| Pick fruit on this river-valley bank | **Intelligence (Nature)** or **Wisdom (Survival)** to sort fallen fruit from living stems. Use **Utilize** if the party member plucks without sorting. Plucking living stems on purpose counts as a take. | `DC 10` | The forager takes only fruit already on the ground, which does not count as a take. Eating a fallen [[Redheart Berry]] is a Bonus Action and regains `8d4 + 8` hit points. The trail and smoke remain. | The forager plucks some living stems. Mark [[Taking on Aruhe]]; the later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. | The forager strips living fruit. Mark [[Taking on Aruhe]]; the later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. |
 
 For an intent not listed, keep the used bank and northbound route as the anchor. Decide whether the approach lingers, takes from living stems, or follows the trail, then use the zones and clock.
 
@@ -164,7 +173,7 @@ The party follows the north prints toward the smoke and enters [[Aruhe - Grassla
 
 ## Backup
 
-[[Aruhe - River Landing Bank]] · [[Aruhe - Grasslands Torn Crossing]] · [[Session-11-00-Random-Tables]] · [[Taking on Aruhe]] · [[Aruhe - Grasslands]] · [[Aruhe - River]] · [[Aruhe - Old Gardens]] · [[Aruhe - Redheart Berry]] · [[Session-11-00-Birds-of-a-Feather]] · [[Session-11-01-Angry-Birds]] · [[Session-11-03-Wolfrabbits]]
+[[Aruhe - River Landing Bank]] · [[Aruhe - Grasslands Torn Crossing]] · [[Session-11-00-Random-Tables]] · [[Taking on Aruhe]] · [[Aruhe - Grasslands]] · [[Aruhe - River]] · [[Aruhe - Old Gardens]] · [[Redheart Berry]] · [[Session-11-00-Birds-of-a-Feather]] · [[Session-11-01-Angry-Birds]] · [[Session-11-03-Wolfrabbits]]
 
 ## Battlemap
 

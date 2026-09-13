@@ -1,48 +1,97 @@
 ---
 title: Dravosi Crown
 category: entities
-tags: [shattered-sea, faction, crown]
+tags: [shattered-sea, faction, crown, colonial, naval]
 sources:
+  - "inbox/archive/FILED-2026-09-05-dravosi-crown.md"
+  - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/region-crown-islands.md"
+  - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/region-harwick.md"
+  - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/boarding-of-the-surety/creature-dravosi-enforcer.md"
+  - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/boarding-of-the-surety/creature-dravosi-deckhand.md"
+  - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/boarding-of-the-surety/creature-dravosi-alchemist.md"
+  - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/kill-the-shepherd/faction-khlysty.md"
   - "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/HCS Sovereign.md"
   - "Khlysty - the Flock.md"
-summary: Crown faction whose visible authority includes HCS Sovereign and whose heresy arm hunts confirmed Flock infiltration.
+summary: "Tethyr colonial court and naval service in the Verdant Scatter; HCS hulls, inspection law, and Malone reserved for confirmed heresy."
 provenance:
-  extracted: 1.0
-  inferred: 0.0
-  ambiguous: 0.0
-base_confidence: 0.71
+  extracted: 0.85
+  inferred: 0.10
+  ambiguous: 0.05
+base_confidence: 0.75
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T02:55:00Z
-updated: 2026-09-13T03:04:18Z
+updated: 2026-09-13T20:00:00Z
 type: faction
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+status: active
+kind: military
 relationships:
   - target: "[[HCS Sovereign]]"
     type: related_to
   - target: "[[Crown Islands]]"
     type: related_to
-  - target: "[[Khlysty - the Flock]]"
-    type: related_to
   - target: "[[Aleksander Malone]]"
     type: related_to
+  - target: "[[Tessarine Concordat]]"
+    type: related_to
+  - target: "[[Aldric Drave]]"
+    type: related_to
 ---
-
 # Dravosi Crown
 
-The supplied vehicle source identifies the [[HCS Sovereign]] as the peak of the Dravosi Crown's visible claim. The Khlysty source identifies the Crown as the power that calls the tradition Khlysty and reserves [[Aleksander Malone]] for confirmed infiltration.
+> [!narration] Narration
+> Grey Crown hulls with white Admiralty stripes and brass work the western harbours. Inspection papers, garrison stamps, and dockside shrine smoke mark where Crown law still claims the water.
+
+## Public face
+
+A colonial court and naval service from Tethyr, planted in warmer water south of Chult. Its charter runs through Port Nyanzaru and the last charted coasts of Faerûn to the [[Verdant Scatter]], where the Crown claims harbours, timber, deep water, and a continuing flag. On paper it is one polity; in practice it is a transplanted, human-majority homeland held together by garrisons, stamps, and inspection law.
+
+## DM thesis
+
+Make the sea legible and keep the western approach under Crown law: letters of marque, vessel ratings, compulsory harbour stops, garrisons, and a fleet that can turn paperwork into force.
+
+## Current state
+
+- **Crown Islands:** Calven, [[Harwick]], [[Aldenmere]], and [[Stenmark]] form the western chain; [[Calder's Tooth and Port Tidefall]] is the gatepost at the [[Central Strait]], while [[High Eyrie]] stands beyond the eastern edge.
+- **Harwick:** army island, Naval Yard, Admiralty, and the Bight anchorage for ships of the line.
+- **Calven:** nominal Dravosi harbour authority over a low island where four of seven [[Calven and Calveno]] Council houses align with [[Tessarine Concordat]] credit; three can still stall. "Six of seven" is ground feeling, not the seating chart.^[ambiguous]
+- **Tidefall:** every incoming ship should answer questions, show papers, and accept a recorded rating at the Inspection Pier.
+- **Reach:** strongest west of the [[Galewall]] and in the Crown Islands; by the Midchain it can run cutters down the main lanes but cannot keep the whole sea.
+
+The Crown swears by [[Tyr]] as the court god of oaths, commissions, courts martial, and warrants. Sailors still pay [[Umberlee]] at dockside shrines because the sea is a fact while a document is a claim. In ordinary cases an inspector leads, enforcers follow, and a court receives the matter. Heresy is different: [[Aleksander Malone]] is reserved for confirmed heresy, not ordinary crime.
+
+## Active agenda
+
+Keep western approaches under inspection law while [[Khlysty - the Flock]] infiltration and Midchain pressure escalate. A toxin pipeline runs through [[Simone]]: substitute stock, not Karath farm product, has appeared in privateer kit and Calveno's sewers.
+
+## Assets, people, places, relationships
+
+- Fleet: Crown hulls carry the HCS prefix. [[Harwick]] builds them with grey hulls, white Admiralty stripes, brass, and crown-bearing figureheads. [[HCS Sovereign]] is the first-rate show of force; [[HCS Ordinance]] is the three-deck court that appears in shipping lanes. Cutters, inspection boats, deckhands, enforcers, and an alchemist complement do the daily work.
+- Public command: [[Corbin Knighton]], [[Rupert Knighton]], [[Governor Voss]], and [[Barnaby Rook]].
+- Reserved instrument: [[Aleksander Malone]].
+- Related bloodline: [[Geoffrey Draves]] and [[Aldous Draves]].
+- Rival: [[Tessarine Concordat]] inspects less and invoices more; both share harbours, collect from fishermen, pay Umberlee as infrastructure, and compete over who defines movement.
+- Hostile or outside record: [[Passage]] and Rattkin <!-- broken link: no match found --> movement; [[Greyteeth]] pilots and an unwritten blue-dragon arrangement make the reefs usable for some captains.
+- Complicated: Waveservants <!-- broken link: no match found -->, island communities.
+
+## Private Crown (DM)
+
+The public service does not know that [[Aldric Drave]] founded the colonial project as a bloodline map. He has existed as a lich since before the first Dravosi landfall in the Scatter; every noble house the Crown raised carries some of him. Sealed vaults under [[Fort Crestwall]] hold the living chart. Two garrison detachments hold the fort on orders [[Governor Voss]] never saw. Destroying the body is not enough: Aldric returns through descendants, chooses the strongest surviving sorcerous heir, and begins another roughly three-century inhabitation cycle. He favours the Draves branch. [[Barnaby Rook]] served the bureaucracy and never learned the founder's name; [[Geoffrey Draves]] is a nineteen-year-old carpenter who defected, placed by Aldous.
+
+The Crown's succession is dynastic, but the monarch's name remains unnamed in ordinary files. Do not invent a monarch name from this dump.
 
 ## Connections
 
-- [[HCS Sovereign]]
 - [[Crown Islands]]
-- [[Khlysty - the Flock]]
+- [[HCS Sovereign]]
+- [[HCS Ordinance]]
 - [[Aleksander Malone]]
-
-## Provenance
-
-This remains a thin named-ingest page. The sources establish the Crown's visible naval authority and its response to confirmed Flock infiltration, but not its broader structure or agenda.
-
+- [[Tessarine Concordat]]
+- [[Aldric Drave]]
+- [[Passage]]
+- [[Tyr]]
+- [[Umberlee]]

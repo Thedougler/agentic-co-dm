@@ -2,6 +2,9 @@ collections:
   wiki:
     path: wiki
     pattern: "**/*.md"
+    ignore:
+      - "_raw/**"
+      - "log.md"
     context:
       "": "Compiled campaign wiki in this repo. Current canon. Prefer -c wiki for lookups."
   shattered-sea:

@@ -2,18 +2,20 @@
 title: "Shattered Sea"
 category: entities
 tags: ["shattered-sea", "region"]
-sources: ["Shattered Sea.md"]
-summary: "A roughly 60,000-square-mile archipelago weeks beyond the last charted Faer\u00fbn coast; two island arcs and a shipping corridor make every crossing a negotiation. Feels remote, exposed, and politically u"
+sources:
+  - "Shattered Sea.md"
+  - "00 Shattered Sea.md"
+summary: "Roughly 60,000 square miles of archipelago south of Chult; Season 2 pressure sits at Aruhe after Sparhold while Crown, Tessarine, councils, and Waveservants all claim the sea."
 provenance:
-  extracted: 1.0
-  inferred: 0.0
+  extracted: 0.9
+  inferred: 0.1
   ambiguous: 0.0
-base_confidence: 0.37
+base_confidence: 0.42
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T07:30:00Z
-updated: 2026-09-13T07:30:00Z
+updated: 2026-09-13T19:30:00Z
 type: region
 reveal: unrevealed
 campaign: shattered-sea
@@ -32,6 +34,17 @@ region: "south of Chult"
 
 ## At a glance
 A roughly 60,000-square-mile archipelago weeks beyond the last charted Faerûn coast; two island arcs and a shipping corridor make every crossing a negotiation. Feels remote, exposed, and politically unfinished.
+## Current state
+
+> [!summary] Status quo — as of 1495 DR (Season 2)
+> The crew works from mobile [[Uncertainty]] after the first chosen stop at [[Sparhold]]. Immediate pressure is the wreck field, [[Aruhe - Hungry Isle]] survivors, taking-places, and the crown squid around Aruhe.
+
+* **Recent change.** Season 2 opened at and around Aruhe after Sparhold.
+* **Pressure.** Active named pressures include the Maw fissure and tribute system, [[The taken 314]], Long Sight Hunt, Rule of Two, Schism's Third Name, and Countless through the Maw seal. Soul Incarnate's Watch remains dormant until [[Crissdalynn Khinriss]] completes a Maw pilgrimage.
+* **Opportunity.** Open table threads include [[Pursue the Grung raiding fleet]], [[Survey Aruhe as a Tangle anchor]], [[Simone's hunters]], [[Bring the Pearl of Souls to Umberlee]], [[Complete the Maw map pilgrimage]], [[Grigori and the Crown hunt]], [[Red Wake]], [[Sentinels and Countless]], and [[Pearl signal across the boundary]].
+* **Table.** Players at this table: Kaden → [[Perrin Black-Jaw]]; Frederick → [[Delmar Fisk]]; Courtney → [[Crissdalynn Khinriss]]; Chad → [[Jean-Claude Tabarnack]]; Kaitlin → [[Catarina Da'Virelli]].
+* **Systems in play.** [[Dravosi Crown]] naval law, [[Tessarine Concordat]] debt, independent councils, and Waveservants <!-- broken link: no match found --> port infrastructure all claim a piece of the sea.
+
 ## Five-sentence kernel
 - **Function:** A far-flung archipelago connecting Crown harbours, Midchain free ports, and routes toward the Scatter.
 - **Fantastic:** Charts end at permanent weather, reversed currents, and a trench sailors treat as a boundary rather than a destination.
@@ -71,7 +84,7 @@ A roughly 60,000-square-mile archipelago weeks beyond the last charted Faerûn c
 - **Supporting:** evade, map, salvage, rescue, exploit infrastructure, return with consequences.
 - **Rewards:** information, access, leverage, relationships, changed routes, rescued people.
 ## Who is here
-- [[Dravosi Crown]], [[Tessarine Concordat]], [[Passage]], [[Grung clans]], [[Waveservants]], [[Sentinels of the Eyrie]], [[Countless]], Umberlee, and the crew.
+- [[Dravosi Crown]], [[Tessarine Concordat]], [[Passage]], [[Grung clans]], Waveservants <!-- broken link: no match found -->, Sentinels of the Eyrie <!-- broken link: no match found -->, [[Countless]], Umberlee, and the crew.
 ## Connections
 - [[Crown Islands]] · [[Midchain]] · [[Central Strait]] · [[Galewall]] · [[Drowned Maw]]
 ## Hooks

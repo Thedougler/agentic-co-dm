@@ -22,7 +22,7 @@ summary: Night-watch aisle north of Spoke Ring, with an offset fire, sleeping ro
 
 ---
 ## At a glance
-Star Cut is the night-watch aisle north of [[Aruhe - Quiet Forest Spoke Ring|Spoke Ring]], on the seam of [[Aruhe - Quiet Forest]], [[Aruhe - Grasslands]], and [[Aruhe - River]]. Its identity is the straight sightline: packed dirt aimed north at one open strip of sky, a fire offset east of the path, and west-wall bedrolls under [[Aruhe - Giant's Guava|giant guava]] branches. Unlike Spoke Ring's round hub, center fire, and leaf roof that holds smoke, this site is linear and exposed to stars at the north mouth. Unlike [[Aruhe - Quiet Forest Cutoff Lip|Cutoff Lip]]'s knee palisade and sleep-shelf, there is no drumroot wall here. Stay under Spoke Ring's roof or turn back on the south aisle and this cut can be skipped. Walk the north spoke for a watch that can see sky, and it remains the aisle, the east fire, the west guavas, and a lane where someone at the coals can look straight into the dark.
+Star Cut is the night-watch aisle north of [[Aruhe - Quiet Forest Spoke Ring|Spoke Ring]], on the seam of [[Aruhe - Quiet Forest]], [[Aruhe - Grasslands]], and [[Aruhe - River]]. Its identity is the straight sightline: packed dirt aimed north at one open strip of sky, a fire offset east of the path, and west-wall bedrolls under [[Giant's Guava|giant guava]] branches. Unlike Spoke Ring's round hub, center fire, and leaf roof that holds smoke, this site is linear and exposed to stars at the north mouth. Unlike [[Aruhe - Quiet Forest Cutoff Lip|Cutoff Lip]]'s knee palisade and sleep-shelf, there is no drumroot wall here. Stay under Spoke Ring's roof or turn back on the south aisle and this cut can be skipped. Walk the north spoke for a watch that can see sky, and it remains the aisle, the east fire, the west guavas, and a lane where someone at the coals can look straight into the dark.
 
 ---
 ## If the party
@@ -33,11 +33,11 @@ Star Cut is the night-watch aisle north of [[Aruhe - Quiet Forest Spoke Ring|Spo
 - **Walk the packed aisle:** The dirt is ordinary ground. The wood beyond either jungle wall is Difficult Terrain and heavily obscures beyond 10 feet. A body in that wood is isolated from anyone who stayed on the aisle.
 - **Stand watch at the east fire, facing the star-cut:** That post is on packed dirt at the fire's north edge. Heat and woodsmoke sit here. The north mouth is a straight lane 40 feet to the coals.
 - **Climb the jungle wall into the star-cut:** **Strength (Athletics) — `DC 10`** → That climber reaches the crown split and the night sky above the aisle. Failure → That climber spends the round in hanging roots and stays on this floor.
-- **Search the fire, bowls, rolls, and fruit:** **Intelligence (Investigation)** or **Wisdom (Perception) — `DC 10`** → Clay bowls sit by the east stone ring. Sleeping rolls lie along both jungle walls, fewer than the people who argued at Spoke Ring. Fallen [[Aruhe - Giant's Guava]] sits in the west leaf litter. Living guavas still hang. Searching does not name the woman in the woods or how far any garden is. Failure → The searcher spends time at the coals and learns only that people sleep here.
+- **Search the fire, bowls, rolls, and fruit:** **Intelligence (Investigation)** or **Wisdom (Perception) — `DC 10`** → Clay bowls sit by the east stone ring. Sleeping rolls lie along both jungle walls, fewer than the people who argued at Spoke Ring. Fallen [[Giant's Guava]] sits in the west leaf litter. Living guavas still hang. Searching does not name the woman in the woods or how far any garden is. Failure → The searcher spends time at the coals and learns only that people sleep here.
 - **Take fruit at this aisle:** Fallen fruit is receiving. Plucking a living plant makes surrounding life converge, hostile. [[Taking on Aruhe]]
   - **Intelligence (Nature) — identify**
     - `DC 10` → Edible, not poison.
-    - `DC 15` or *Identify* → Exact effect: eating a fallen [[Aruhe - Giant's Guava]] sets a Primary Ability score to 25 for 1 hour.
+    - `DC 15` or *Identify* → Exact effect: eating a fallen [[Giant's Guava]] sets a Primary Ability score to 25 for 1 hour.
   - **Wisdom (Survival) — harvest**
     - `DC 10` → Fallen ordinary take.
     - `DC 15` → Ripe useful specimen.
@@ -50,14 +50,14 @@ Star Cut is the night-watch aisle north of [[Aruhe - Quiet Forest Spoke Ring|Spo
 
 - Unnamed people from the Calveno wreck sleep along this aisle on the second night, fewer than the mouths that argued at [[Aruhe - Quiet Forest Spoke Ring|Spoke Ring]]. They came here because the hub's leaf roof hides the sky. Do not invent named survivors.
 - [[Hinewai]] is not standing on this aisle as a named body. Garden talk still points north of the star-cut. Do not name her, the graves, or [[Aruhe - Memorial Grove]] at the table.
-- [[Aruhe - Deerstalker|Deer-Stalkers]] work the Quiet edge south of here. They will not walk [[Aruhe - Razer-Grass]]. Do not spawn one on this aisle.
+- [[Deer-Stalker|Deer-Stalkers]] work the Quiet edge south of here. They will not walk [[Aruhe - Razer-Grass]]. Do not spawn one on this aisle.
 
 ---
 ## What
 
 - A packed north-south dirt aisle sits under Quiet leaves, with leaf litter on the floor and jungle walls close enough to touch. The leaf roof splits at the north end. Stars show in that cut.
 - The fire is offset east of the aisle, a live ring of stones with clay bowls beside it. Two sleeping rolls lie in that east light. Three more rolls lie against the west wall.
-- [[Aruhe - Giant's Guava]] hangs pink-gold and ribbed over the west wall, each fruit broad enough for two hands. Fallen guavas already sit in the leaf litter. Living stems still bow the branches.
+- [[Giant's Guava]] hangs pink-gold and ribbed over the west wall, each fruit broad enough for two hands. Fallen guavas already sit in the leaf litter. Living stems still bow the branches.
 - West of the wall, a thin sheet of [[Aruhe - River]] talks through roots. The water is close enough to hear and drink, not open enough to make this a river camp.
 - South of this aisle the packed dirt returns toward [[Aruhe - Quiet Forest Spoke Ring|Spoke Ring]]. Gold-green grass is behind that hub, not standing on this floor.
 - The Quiet has no insect-saw and no bird chatter past the jungle walls. The star-cut is the only open sky on this stretch.

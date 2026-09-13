@@ -40,13 +40,13 @@ Print Braid is a forest-edge stretch of [[Aruhe - Grasslands]], north of [[Aruhe
 - **Walk a wood fork off the prints:** Wet leaf and hanging roots are Difficult Terrain. The wood heavily obscures beyond 10 feet, and a body there is isolated from anyone who stayed on the inland strand in the grass.
 - **Shout into a wood fork:** The same word comes back stretched from that fork. No new information answers. The packed prints still do not enter the fork.
 - **Search the cobble ring:** An Intelligence (Investigation) or Wisdom (Perception) check at DC 12 finds wet river stones in a ring on the southwest bank, with no coals and no kit. Searching them does not identify who stacked them or why the inland group left the water strand.
-- **Take fruit along the braid:** Fallen fruit is receiving. Plucking a living plant makes surrounding life converge, hostile. [[Taking on Aruhe]] An Intelligence (Nature) check at DC 13 identifies the broad function; DC 15 or *Identify* reveals that [[Aruhe - Giant's Guava]] sets a Primary Ability score to 25 for 1 hour and [[Aruhe - Ghost Plum]] grants the **Invisible** condition for 1 hour.
+- **Take fruit along the braid:** Fallen fruit is receiving. Plucking a living plant makes surrounding life converge, hostile. [[Taking on Aruhe]] An Intelligence (Nature) check at DC 13 identifies the broad function; DC 15 or *Identify* reveals that [[Giant's Guava]] sets a Primary Ability score to 25 for 1 hour and [[Ghost Plum]] grants the **Invisible** condition for 1 hour.
 - **Fish, trap, or kill to carry flesh:** Surrounding life converges, hostile. [[Taking on Aruhe]] That water still belongs farther downslope; this braid is not [[Aruhe - River Slack Basin]].
 
 ---
 ## Who
 
-- [[Aruhe - Deerstalker|Deer-Stalkers]] work this grassland edge. They use a wood fork that has no matching prints, and they retreat from a grouped line on the inland strand. They will not walk [[Aruhe - Razer-Grass]].
+- [[Deer-Stalker|Deer-Stalkers]] work this grassland edge. They use a wood fork that has no matching prints, and they retreat from a grouped line on the inland strand. They will not walk [[Aruhe - Razer-Grass]].
 - No one from the inland group is here now. Packed prints keep the inland strand through the grass toward the smoke. The wood forks and cobble ring show no camp.
 
 ---
@@ -54,8 +54,8 @@ Print Braid is a forest-edge stretch of [[Aruhe - Grasslands]], north of [[Aruhe
 
 - Eight-foot gold-green grass hides a standing body. A braid of packed dirt paths cuts through it along the jungle wall, narrow enough that each strand feels chosen. The inland strand is hard with crushed prints.
 - Wood forks drop off the print line into [[Aruhe - Quiet Forest]]. Wet leaf and hanging roots close in, and the darkness begins at the fork mouth rather than deeper inside. Those forks hold no matching feet.
-- [[Aruhe - Giant's Guava]] bows over the grass at the jungle rim, with pink-gold fruit visible from the open strand.
-- [[Aruhe - Ghost Plum]] hangs under wet leaves in the wood forks, hard to place until pollen catches its edge.
+- [[Giant's Guava]] bows over the grass at the jungle rim, with pink-gold fruit visible from the open strand.
+- [[Ghost Plum]] hangs under wet leaves in the wood forks, hard to place until pollen catches its edge.
 - A ring of wet cobbles sits on the southwest river bank where one side braid reaches the water. There is no fire and no kit.
 - Open sky sits over the grass, while the jungle wall takes the small sounds as soon as a path enters the wood. The sound break is part of the place's identity, not proof of a creature.
 - The inland strand keeps toward [[Aruhe - Quiet Forest Spoke Ring|Spoke Ring]]. That hub is not on this braid.

@@ -3,8 +3,8 @@ title: "The River"
 category: entities
 tags: ["shattered-sea", "region", "aruhe", "river", "water"]
 aliases: ["The River", "Aruhe River"]
-sources: ["[[Aruhe - Hungry Isle]]", "Aruhe - River.md", "[\"[[Aruhe - Hungry Isle]]\"]"]
-summary: "The rivers draining [[Aruhe - Clear Lake]] braid through Aruhe and cut across the island's bands. They are the best road, and they are occupied: the fast clear water belongs to [[Aruhe - River Otte..."
+sources: ["[[Aruhe - Hungry Isle]]", "Aruhe - River.md"]
+summary: "Rivers draining Clear Lake braid through Aruhe as the best road, occupied by River Otter families in fast clear water."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -30,7 +30,7 @@ region: "aruhe"
 
 ---
 ## At a glance
-The rivers draining [[Aruhe - Clear Lake]] braid through Aruhe and cut across the island's bands. They are the best road, and they are occupied: the fast clear water belongs to [[Aruhe - River Otter|River Otter]] families. Follow the current downhill or the water uphill toward the lake. Lateral channels reach [[Aruhe - Grasslands]], [[Aruhe - The Marshes]], and [[Aruhe - Quiet Forest]]. The first grassland mouth after the terraces is [[Aruhe - River Landing Bank|Landing Bank]]. Upvalley of the first hunting lane, the used fruiting margin is [[Aruhe - River Line Bank|Line Bank]]. Upvalley of Line Bank, the claimed slack is [[Aruhe - River Slack Basin|Slack Basin]]. The jungle-bank lip after Slack Basin is [[Aruhe - Quiet Forest Cutoff Lip|Cutoff Lip]]. North of that lip the packed prints braid at [[Aruhe - Grasslands - Print Braid|Print Braid]]. Stay on a bank and the channel can be skipped; enter the water and it is otter play.
+The rivers draining [[Aruhe - Clear Lake]] braid through Aruhe and cut across the island's bands. They are the best road, and they are occupied: the fast clear water belongs to [[Aruhe - River Otter|River Otter]] families. Follow the current downhill or the water uphill toward the lake. Lateral channels reach [[Aruhe - Grasslands]], [[Aruhe - The Marshes]], and [[Aruhe - Quiet Forest]]. The first grassland mouth after the terraces is [[Aruhe - River Landing Bank|Landing Bank]]. Upvalley of the first hunting lane, the used fruiting margin is [[Aruhe - River - Line Bank|Line Bank]]. Upvalley of Line Bank, the claimed slack is [[Aruhe - River Slack Basin|Slack Basin]]. The jungle-bank lip after Slack Basin is [[Aruhe - Quiet Forest Cutoff Lip|Cutoff Lip]]. North of that lip the packed prints braid at [[Aruhe - Grasslands - Print Braid|Print Braid]]. Stay on a bank and the channel can be skipped; enter the water and it is otter play.
 
 ---
 ## If the party
@@ -38,7 +38,7 @@ The rivers draining [[Aruhe - Clear Lake]] braid through Aruhe and cut across th
 - **Follow the water uphill:** [[Aruhe - Clear Lake]].
 - **Follow a lateral channel:** [[Aruhe - Grasslands]], [[Aruhe - The Marshes]], or [[Aruhe - Quiet Forest]].
 - **Drop from the terraces into the first grassland mouth:** [[Aruhe - River Landing Bank|Landing Bank]].
-- **Walk the grassland bank upvalley of the first hunting lane:** [[Aruhe - River Line Bank|Line Bank]].
+- **Walk the grassland bank upvalley of the first hunting lane:** [[Aruhe - River - Line Bank|Line Bank]].
 - **Walk the grassland bank upvalley of Line Bank:** [[Aruhe - River Slack Basin|Slack Basin]].
 - **Climb the jungle-bank lip off Slack Basin:** [[Aruhe - Quiet Forest Cutoff Lip|Cutoff Lip]].
 - **Walk the packed prints north of that lip:** [[Aruhe - Grasslands - Print Braid|Print Braid]].
@@ -72,9 +72,9 @@ The rivers draining [[Aruhe - Clear Lake]] braid through Aruhe and cut across th
 
 - The water is gin-clear because the otters tend it: they cull grazers, drop shade-trees, and patrol the banks. Concentrated fish, submerged growth, and unnaturally quiet insect life mark a tended reach.
 - Three learnable rules: entering the water is participating; what comes from the river belongs to the family; responding to play teaches a new game.
-- They play with a [[Aruhe - Deerstalker|deer-stalker's]] antlered head in the shallows after a meal. They will not haul a kill onto [[Aruhe - Razer-Grass]], sniff a [[Aruhe - Grubnade]] and leave it, and pull against a [[Aruhe - Crown Squid]] line that trails into occupied water.
-- [[Aruhe - Redheart Berry]] grows beside the grassland bank, where fallen berries can be foraged from the shallows.
-- [[Aruhe - Ghost Plum]] hangs from wet roots on the jungle bank, close enough to pick where the current leaves a foothold.
+- They play with a [[Deer-Stalker|deer-stalker's]] antlered head in the shallows after a meal. They will not haul a kill onto [[Aruhe - Razer-Grass]], sniff a [[Aruhe - Grubnade]] and leave it, and pull against a [[Aruhe - Crown Squid]] line that trails into occupied water.
+- [[Redheart Berry]] grows beside the grassland bank, where fallen berries can be foraged from the shallows.
+- [[Ghost Plum]] hangs from wet roots on the jungle bank, close enough to pick where the current leaves a foothold.
 - Flood stage widens the grasslands and makes the current lethal. Dry stage exposes limestone shelves and concentrates the otters.
 - [[Aruhe - Bloodhawk|Bloodhawks]] take canoes in open channel. They will not put a foot in occupied otter water.
 
@@ -84,7 +84,7 @@ The rivers draining [[Aruhe - Clear Lake]] braid through Aruhe and cut across th
 - Outlet fans from [[Aruhe - Clear Lake|Clear Lake]]
 - Lateral channels into [[Aruhe - Grasslands|the Grasslands]], [[Aruhe - The Marshes|the Marshes]], and [[Aruhe - Quiet Forest|the Quiet]]
 - First grassland mouth after the terraces: [[Aruhe - River Landing Bank|Landing Bank]]
-- Used fruiting margin upvalley of Torn Crossing: [[Aruhe - River Line Bank|Line Bank]]
+- Used fruiting margin upvalley of Torn Crossing: [[Aruhe - River - Line Bank|Line Bank]]
 - Claimed slack upvalley of Line Bank: [[Aruhe - River Slack Basin|Slack Basin]]
 - Jungle-bank lip after Slack Basin: [[Aruhe - Quiet Forest Cutoff Lip|Cutoff Lip]]
 - Packed-print braid north of that lip: [[Aruhe - Grasslands - Print Braid|Print Braid]]

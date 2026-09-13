@@ -44,7 +44,7 @@ Spoke Ring is the first Quiet hub north of [[Aruhe - Grasslands - Print Braid|Pr
 
 - Unnamed people from the Calveno wreck sit at this fire, fewer than the tracks that led here. They argue in half-voices over a woman in the woods and a garden. They look into the spokes when the branches move. Do not invent named survivors.
 - [[Hinewai]] is not standing at this fire as a named body. She is courteous to guests. She is drawing these people inland toward [[Aruhe - Memorial Grove]], which is still far beyond tonight. Do not name her, the graves, or the Grove at the table.
-- [[Aruhe - Deerstalker|Deer-Stalkers]] work the Quiet edge south of here. They will not walk [[Aruhe - Razer-Grass]]. Do not spawn one on this hub.
+- [[Deer-Stalker|Deer-Stalkers]] work the Quiet edge south of here. They will not walk [[Aruhe - Razer-Grass]]. Do not spawn one on this hub.
 
 ---
 ## What

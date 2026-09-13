@@ -51,4 +51,4 @@ An uncharted limestone spire in the Midchain jungle, said to hold collateral tha
 ## Secrets (DM)
 The vault is the closest physical analogue to Cosimo's hoard in the source, but its existence, exact location, defences, and contents are not confirmed. Do not place it on a map until play earns that fact.
 
-**Provenance:** Dump source staged at [[inbox/archive/FILED-2026-09-05-tessarine-concordat.md]]. Legacy read-only context: `/Users/nick/shattered-sea/wiki/shattered-sea/_archive/the-vault-of-the-first-factor.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/faction-tessarine-concordat.md`.
+**Provenance:** Dump source staged at FILED-2026-09-05-tessarine-concordat.md <!-- broken link: no match found -->. Legacy read-only context: `/Users/nick/shattered-sea/wiki/shattered-sea/_archive/the-vault-of-the-first-factor.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/faction-tessarine-concordat.md`.

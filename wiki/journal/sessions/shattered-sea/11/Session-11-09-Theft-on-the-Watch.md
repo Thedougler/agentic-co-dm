@@ -1,12 +1,21 @@
 ---
+title: Session 11 — Theft on the watch
+category: journal
+tags: [session-prep, run-guide, shattered-sea, climax]
+sources:
+  - "journal/sessions/shattered-sea/11/Session-11-09-Theft-on-the-Watch.md"
+created: 2026-09-13
+updated: 2026-09-13
 type: session-prep
+kind: climax
+lifecycle: proposed
+reveal: unrevealed
+summary: "Climax theft on the Star Cut watch, or the column if they marched. [[Talon Skarn]] makes one committed attempt at the [[Fate Spinner]]; the watch answers into [[Session-11-10-Aftermath]]."
 campaign: shattered-sea
 session: 11
 status: ready
 date: 2026-09-06
 visibility: dm
-tags: [session-prep, run-guide]
-summary: Climax theft on the Star Cut watch, or the column if they marched. [[Talon Skarn]] makes one committed attempt at the [[Fate Spinner]]; the watch answers into [[Session-11-10-Aftermath]].
 ---
 # Session 11 — Theft on the watch
 
@@ -113,7 +122,7 @@ Keep the [[Fate Spinner]] on [[Crissdalynn Khinriss]]. The required beat is disr
 | Place | Distance from the party | Cover | Narration |
 | --- | --- | --- | --- |
 | East fire / this watch | Here. [[Crissdalynn Khinriss]] and one other watcher stand at the fire's north edge, facing the star-cut. | Packed dirt. Kusarigama reaches 20 feet from anyone who closes. Clay bowls and two sleeping rolls sit in the firelight. | ==_East coals throw heat across the watch. Clay bowls and two rolls sit inside the light._== |
-| West rolls / fruit | 20 feet west of the coals, against the jungle wall. | Three sleeping rolls and fallen [[Aruhe - Giant's Guava]] lie in the leaf litter. Open dirt connects this wall to the aisle. | ==_Sweet musk hangs over the fruit along the west wall._== |
+| West rolls / fruit | 20 feet west of the coals, against the jungle wall. | Three sleeping rolls and fallen [[Giant's Guava]] lie in the leaf litter. Open dirt connects this wall to the aisle. | ==_Sweet musk hangs over the fruit along the west wall._== |
 | North mouth / star-cut | 40 feet north of the coals. [[Talon Skarn]] starts here unless the watch is Thin. | His approach and exit are the same: packed dirt with no crown blocking a climb into the cut. | ==_The leaf roof splits at this north mouth. The east fire sits 40 feet south along the packed aisle._== |
 | Jungle walls | 15 feet from either side of the aisle. | Difficult Terrain. Heavily obscures beyond 10 feet. [[Talon Skarn]] ignores anyone who is not between him and [[Crissdalynn Khinriss]]. | ==_Past the first trunks, the firelight dies._== |
 | West river-talk | 40 feet west through the wood. | Difficult Terrain. A Dash reaches the root-cut. This is not [[Aruhe - River Slack Basin]]. | ==_The aisle stays dry. Water moves through the roots close enough to drink._== |
@@ -132,7 +141,7 @@ Keep the [[Fate Spinner]] on [[Crissdalynn Khinriss]]. The required beat is disr
 | Hand off the [[Fate Spinner]] | Utilize to pass the [[Fate Spinner]] to another carrier | Commit | If the pass happened before this camp, [[Talon Skarn]] is wrong; this is the only time he changes targets. If the pass happens during the fight, he reads it and goes to the new carrier. | The pass is messy. [[Talon Skarn]] sees the object, and the theft can end in one Kusarigama pull. | The [[Fate Spinner]] comes into view during the pass. [[Talon Skarn]] goes for it and stops fighting for anything else. |
 | Take star-cut sky | Flying up the north mouth | Commit | That party member reaches the star-cut sky. [[Talon Skarn]] can follow at fly 90 feet, and this is his stoop lane. Drawing him up pulls him off the carrier for that beat. [[Crissdalynn Khinriss]] uses her aarakocra fly speed from her sheet. | Binary — no partial. | Binary — no partial. Taking star-cut sky does not start a second fight or bring bloodhawks onto this card. |
 | Wake this camp / make a mess | Shouting, kicking this fire, or running survivors | Commit | The camp becomes messy. Shouting, running survivors, and a kicked-over fire give [[Talon Skarn]] cover, not the watch. He still ignores anyone who is not between him and [[Crissdalynn Khinriss]]. | Binary — no partial. | Binary — no partial. A messy camp gives [[Talon Skarn]] cover. |
-| Help the survivors or take fruit | Walking to the west rolls, or Utilize fallen [[Aruhe - Giant's Guava]] | Commit | [[Talon Skarn]] ignores survivors, fruit, and anyone who is not between him and [[Crissdalynn Khinriss]]. That party member is outside this pass unless they put themselves between them. Fallen fruit is receiving. | Binary — no partial. | If that party member steps between [[Talon Skarn]] and [[Crissdalynn Khinriss]], he spends the next beat on them only long enough to reopen the grab. |
+| Help the survivors or take fruit | Walking to the west rolls, or Utilize fallen [[Giant's Guava]] | Commit | [[Talon Skarn]] ignores survivors, fruit, and anyone who is not between him and [[Crissdalynn Khinriss]]. That party member is outside this pass unless they put themselves between them. Fallen fruit is receiving. | Binary — no partial. | If that party member steps between [[Talon Skarn]] and [[Crissdalynn Khinriss]], he spends the next beat on them only long enough to reopen the grab. |
 
 For an unforeseen intent, use the same want: [[Talon Skarn]] wants the [[Fate Spinner]] off [[Crissdalynn Khinriss]]. Rule from the zones, the clock, and whether the approach keeps the object hidden, shows it, Grapples him, or takes star-cut sky.
 
@@ -186,7 +195,7 @@ If [[Talon Skarn]] leaves with the [[Fate Spinner]], the small quartz top is in 
 
 ## Backup
 
-[[Aruhe - Quiet Forest Star Cut]] · [[Session-11-08-Night-Watch]] · [[Session-11-10-Aftermath]] · [[Session-11-00-Birds-of-a-Feather]] · [[Crissdalynn Khinriss]] · [[Talon Skarn]] · [[Fate Spinner]] · [[Aruhe - Giant's Guava]] · [[Uncertainty]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Memorial Grove]] · [[Talon Vantyrus]]
+[[Aruhe - Quiet Forest Star Cut]] · [[Session-11-08-Night-Watch]] · [[Session-11-10-Aftermath]] · [[Session-11-00-Birds-of-a-Feather]] · [[Crissdalynn Khinriss]] · [[Talon Skarn]] · [[Fate Spinner]] · [[Giant's Guava]] · [[Uncertainty]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Memorial Grove]] · [[Talon Vantyrus]]
 
 ## Battlemap
 

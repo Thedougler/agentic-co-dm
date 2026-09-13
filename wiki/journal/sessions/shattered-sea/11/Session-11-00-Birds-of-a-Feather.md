@@ -1,7 +1,7 @@
 ---
 title: "Session 11 — Birds of a Feather"
 category: journal
-tags: [session-plan, session-prep]
+tags: [session-plan, session-prep, shattered-sea]
 sources:
   - "Session-11-00-Birds-of-a-Feather.md"
 created: 2026-09-06
@@ -13,6 +13,8 @@ reveal: unrevealed
 campaign: shattered-sea
 session: 11
 visibility: dm
+hours: 5
+beats: 10
 summary: "Five-hour inland hunt that follows survivor tracks to a night camp, then tests whether the party can keep the Fate Spinner from Talon Skarn."
 ---
 
