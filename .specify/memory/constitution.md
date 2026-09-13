@@ -1,14 +1,3 @@
-<!--
-Sync Impact Report
-- Version change: 1.5.1 → 1.6.0
-- Modified principles:
-  - none renamed
-- Added sections:
-  - Principle XI: Claude Code Work Is Serialized
-- Removed sections: none
-- Follow-up TODOs: none in this file.
--->
-
 # Agentic Co-DM Constitution
 
 ## Core Principles
