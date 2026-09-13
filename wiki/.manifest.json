@@ -1182,6 +1182,37 @@
       "pages_produced": [
         "entities/Warren.md"
       ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Mercatura.md": {
+      "content_hash": "08b77e61394018d565753c40a21a36b30864559c1ea1efe948c10edf02f7ca6f",
+      "last_ingested": "2026-09-13T06:54:18.353679+00:00",
+      "pages_produced": [
+        "entities/Mercatura.md",
+        "entities/Otar the Foul.md",
+        "entities/Mercatura and Otar.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Otel Karn.md": {
+      "content_hash": "9bb6a772ee9d453b7f8e0b790e3570ddb0fb1c0ea28e022621775edfb84e0c76",
+      "last_ingested": "2026-09-13T06:54:18.435632+00:00",
+      "pages_produced": [
+        "entities/Otel Karn.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Vestra.md": {
+      "content_hash": "e870050b7cfeadb8c1706280cf5f5be8c77d3b6c6585239f3b4ae7be3eda9ad7",
+      "last_ingested": "2026-09-13T06:54:18.504806+00:00",
+      "pages_produced": [
+        "entities/Vestra.md",
+        "entities/Vincenzo Black-Jaw.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Uncertainty.md": {
+      "content_hash": "200750b14a69eec755ec1daeff6d57a5ef873cfbe4fc270bef5a40bec38665c2",
+      "last_ingested": "2026-09-13T06:54:18.571468+00:00",
+      "pages_produced": [
+        "entities/Uncertainty.md"
+      ]
     }
   },
   "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Beach.md": {

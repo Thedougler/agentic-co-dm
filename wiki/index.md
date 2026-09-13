@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-09-12T00:00:00Z*
+*This index is automatically maintained. Last updated: 2026-09-13T07:50:00Z*
 ## Concepts
 
 *No pages yet.*
@@ -154,6 +154,11 @@ title: Wiki Index
 - [[Vel Orn]] — On Vel Orn in the [[Sunken Crown]], five small islands ring the [[Blue Hole]]. Umberlee's older house is cut into black cliff stone, reachable only when the surge is timed and the approach is known. I ( #shattered-sea #place #shrine #waveservants #umberlee)
 - [[Verdant Scatter]] — The inhabited chain between the Galewall/Ashwalls and the Tail/Maw, with Crown water north and Midchain south; feels crowded, green, and only partly charted. ( #shattered-sea #region #scatter)
 - [[Yssenmoor]] — A place over a hidden ley line that reacts to [[Fate Spinner]]; feels like an unresolved point of contact between old power and a watchful relic. ( #shattered-sea #place #ley-line #sentinel)
+- [[Mercatura]] — Functioning city where Solange Barret's ritual ran beneath; Otar's defeat and the bombs are a closed Season 1 thread. ( #shattered-sea #place #city)
+- [[Otar the Foul]] — Named opponent whose defeat at Mercatura is a closed Season 1 thread. ( #shattered-sea #npc)
+- [[Mercatura and Otar]] — Closed Season 1 thread covering Otar's defeat and the Mercatura bombs. ( #shattered-sea #lore)
+- [[Vestra]] — Family brig built and captained by Vincenzo Black-Jaw; something massive rose and took it. ( #shattered-sea #vehicle #ship)
+- [[Vincenzo Black-Jaw]] — Builder and captain of the family brig Vestra. ( #shattered-sea #npc)
 - [[Survey Aruhe as a Tangle anchor]] — Nona's owed survey of whether Aruhe can take a Passage route or must be left alone. ( #shattered-sea #aruhe)
 ## Skills
 

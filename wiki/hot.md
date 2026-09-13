@@ -1,11 +1,11 @@
 ---
 title: Hot Cache
-updated: 2026-09-13T06:31:54Z
+updated: 2026-09-13T07:50:00Z
 ---
 ## Recent Activity
+Ingested the `_raw/` location set into owner pages: Aruhe sites restored with `[!narration]` treatments, Crown/Midchain/Verdant Teeth geography filed, and dump notes archived out of staging.
+Filled stale Visualizer placeholders on Crown and Tessarine place pages from source geography only.
 Ingested Passage as a runnable faction: kitchens and cover routes, Nona as face, Warren as deepest anchor, and a law against moving people as property.
-Completed ingest/archive for five existing Aruhe and Session 11 pages; removed six superseded raw template copies after confirming their replacements in `wiki/templates/`.
-Ingested the Grung Clans faction and 28 thin named stubs, connecting the Verdant Teeth closure, toxin trade, captive pipeline, and declining water reach.
 ## Active Threads
 The Grung clans are losing water reach while raids, toxin exports, and captive movement sharpen around the Verdant Teeth. Passage rescue routes and Crown inspections now intersect the fleet's route toward Karath.
 The Flock is spreading a distributed blood-anchor network from Otel Karn while the Dravosi Crown reserves Aleksander Malone for confirmed infiltration. The Pearl of Souls remains both Umberlee's outstanding price and a possible Flock shortcut to transcendence.

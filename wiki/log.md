@@ -178,3 +178,15 @@ title: Wiki Log
 - [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Verdant Scatter.md" destination="wiki/_archive/Verdant Scatter.md" pages=1
 - [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Yssenmoor.md" pages_updated=0 pages_created=1 mode=append
 - [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Yssenmoor.md" destination="wiki/_archive/Yssenmoor.md" pages=1
+- [2026-09-13T07:40:00Z] INGEST source="wiki/_raw/Aruhe - Hungry Isle.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-13T07:40:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Hungry Isle.md" destination="wiki/_archive/Aruhe - Hungry Isle-1.md" pages=1
+- [2026-09-13T07:45:00Z] INGEST source="wiki/_raw/Aruhe - Memorial Grove.md, wiki/_raw/Aruhe - Quiet Forest.md, wiki/_raw/Aruhe - River.md, wiki/_raw/Aruhe - The Mangroves.md, wiki/_raw/Aruhe - The Marshes.md" pages_updated=5 pages_created=0 mode=append
+- [2026-09-13T07:45:00Z] INGEST source="wiki/_raw/Calven and Calveno.md, wiki/_raw/Crown Islands.md, wiki/_raw/Dreth-Orak Channel.md, wiki/_raw/Dreth.md, wiki/_raw/Drowned Maw.md, wiki/_raw/Harwick.md, wiki/_raw/Karath.md, wiki/_raw/Midchain.md, wiki/_raw/Orak.md, wiki/_raw/Shelfworks.md, wiki/_raw/Sorn.md, wiki/_raw/Verdant Teeth.md, wiki/_raw/Veth West Beach.md, wiki/_raw/Veth.md, wiki/_raw/Warren.md" pages_updated=15 pages_created=0 mode=append
+- [2026-09-13T07:50:00Z] INGEST source="wiki/_raw/Mercatura.md" pages_updated=0 pages_created=3 mode=append
+- [2026-09-13T07:50:00Z] ARCHIVE_RAW source="wiki/_raw/Mercatura.md" destination="wiki/_archive/Mercatura.md" pages=3
+- [2026-09-13T07:50:00Z] INGEST source="wiki/_raw/Otel Karn.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-13T07:50:00Z] ARCHIVE_RAW source="wiki/_raw/Otel Karn.md" destination="wiki/_archive/Otel Karn.md" pages=1
+- [2026-09-13T07:50:00Z] INGEST source="wiki/_raw/Vestra.md" pages_updated=0 pages_created=2 mode=append
+- [2026-09-13T07:50:00Z] ARCHIVE_RAW source="wiki/_raw/Vestra.md" destination="wiki/_archive/Vestra.md" pages=2
+- [2026-09-13T07:50:00Z] INGEST source="wiki/_raw/Uncertainty.md" pages_updated=0 pages_created=0 mode=append note="skip rewrite; existing vehicle page owns Uncertainty"
+- [2026-09-13T07:50:00Z] ARCHIVE_RAW source="wiki/_raw/Uncertainty.md" destination="wiki/_archive/Uncertainty.md" pages=1

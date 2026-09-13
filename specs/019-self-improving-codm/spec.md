@@ -14,6 +14,8 @@
 
 - Q: What is a core metric of self-improvement besides serving these players? → A: Token cost of an operation or sitting. More Work completed at the same quality. Wasted context hurts focus and output quality, so cutting it is an improvement only when quality holds.
 - Q: Who manages token cost? → A: Agents. They decrease it objectively. The DM does not manage, review, or gate token cost.
+- Q: How should agents pursue lower token cost? → A: Proactively create and maintain reusable, flexible, agent-shaped helper scripts. Do not wait for the DM. Use an existing command when it already does the job.
+- Q: Does this spec govern `errors.md`? → A: Yes. Agents fill it at runtime when an operation fails. They drain an entry when a wiki improvement (or other accepted fix) actually removes the cause. Do not drain without a fix. Do not leave a fixed error in the ledger.
 
 
 ## User Scenarios & Testing *(mandatory)*
@@ -76,11 +78,11 @@ After wrapup — and after prep when the DM asks — the Co-DM offers a reflecti
 
 ### User Story 4 - Agents cut waste, quality holds (Priority: P4)
 
-A sitting has a token cost: how much the Co-DM had to read and write to finish its jobs. That cost is a core improvement metric, and **agents own it**. They record it, compare same-kind sittings, and objectively decrease it. The DM does not manage token cost, does not review it, and does not accept or reject efficiency changes. Wasted context (reading or writing that does not change the sitting's outcome) is cut by agents without waiting on the DM. A change that finishes the same jobs with lower token cost at the same quality is an improvement. A change that saves tokens by lowering quality is not. A change that raises token cost for the same jobs, without preventing a named failure, is not.
+A sitting has a token cost: how much the Co-DM had to read and write to finish its jobs. That cost is a core improvement metric, and **agents own it**. They record it, compare same-kind sittings, and objectively decrease it. They proactively create and maintain reusable, flexible, agent-shaped helpers so a later sitting runs a command instead of re-deriving the procedure in context. The DM does not manage token cost, does not review it, and does not accept or reject efficiency changes. Wasted context (reading or writing that does not change the sitting's outcome) is cut by agents without waiting on the DM. A change that finishes the same jobs with lower token cost at the same quality is an improvement. A change that saves tokens by lowering quality is not. A change that raises token cost for the same jobs, without preventing a named failure, is not.
 
 **Why this priority**: Token waste drowns signal. Less waste improves focus and the quality of Work for these players. The DM's job is the campaign; the agents' job is to spend fewer tokens on the same quality of Work.
 
-**Independent Test**: Record token cost and accepted Work for a sitting. Agents apply an efficiency change without a DM accept step. Repeat the same kind of sitting. Token cost is lower, at least as much Work is accepted, and quality still passes. A change that raises token cost with no named failure, or that lowers quality to save tokens, does not count as an improvement. The DM was not asked to manage any of this.
+**Independent Test**: Record token cost and accepted Work for a sitting. Agents apply an efficiency change without a DM accept step, including a helper when the job will repeat. Repeat the same kind of sitting. Token cost is lower, at least as much Work is accepted, quality still passes, and the later sitting uses the helper rather than re-teaching the procedure. The DM was not asked to manage any of this.
 
 **Acceptance Scenarios**:
 
@@ -89,6 +91,26 @@ A sitting has a token cost: how much the Co-DM had to read and write to finish i
 3. **Given** a proposed change that lowers token cost by producing worse Work, **When** it is judged as an improvement, **Then** it does not count as one.
 4. **Given** a proposed change that raises token cost for the same jobs and does not prevent a named failure, **When** it is judged as an improvement, **Then** it does not count as one.
 5. **Given** wasted context in a sitting (read or written material that did not change the outcome), **When** agents can cut it without changing the sitting's outcome or Work quality, **Then** they cut it without a DM accept step.
+6. **Given** a job that will repeat or has repeated, **When** a reusable helper would lower token cost of the next sitting, **Then** agents create that helper without waiting for the DM and without being asked.
+7. **Given** such a helper exists, **When** a later same-kind sitting runs, **Then** agents use it instead of re-deriving the procedure in context, and they keep it current as the job changes.
+8. **Given** a command already completes the same job, **When** agents would add a helper, **Then** they run that command instead of wrapping it.
+---
+
+### User Story 5 - Fill the error ledger, drain it when the wiki improves (Priority: P5)
+
+When a Co-DM operation fails at runtime, agents write that failure to the error ledger (`errors.md`). They do not wait for the DM. When later work improves the wiki — or otherwise actually removes the cause — agents drain the matching entries. A drained entry is gone because the cause is fixed, not because someone cleared the file. Leftover entries for already-fixed causes are wasted context. Filling and draining the ledger is agent-owned. A wiki write that is the fix still waits on the DM accept-gate; the drain happens after that write lands.
+
+**Why this priority**: An undrained ledger is a second brain of unfixed failure. Filling without draining is noise. Draining without a fix hides the failure. The improvement loop has to do both.
+
+**Independent Test**: Cause a runtime failure. Confirm an entry exists. Land a wiki improvement that removes the cause. Confirm that entry is gone and that no other entry disappeared without its cause being fixed. The DM was not asked to edit the ledger.
+
+**Acceptance Scenarios**:
+
+1. **Given** a Co-DM operation that fails at runtime, **When** that sitting ends, **Then** the error ledger contains an entry for that failure. The DM was not asked to write it.
+2. **Given** an error ledger entry whose cause a wiki improvement has actually removed, **When** that wiki improvement has landed, **Then** agents have drained that entry.
+3. **Given** an error ledger entry whose cause is not yet fixed, **When** agents improve the wiki for other reasons, **Then** that entry remains.
+4. **Given** a wiki write that would fix a recorded error, **When** the DM has not accepted that write, **Then** the wiki is unchanged and the entry is not drained.
+5. **Given** a drained entry, **When** inspected, **Then** the cause was fixed; the entry was not removed as cleanup without a fix.
 
 ---
 
@@ -114,6 +136,15 @@ A sitting has a token cost: how much the Co-DM had to read and write to finish i
 - Adding standing context the Co-DM must always read, when that context does not prevent a named failure: wasted context; agents cut it; the DM is not asked.
 - Token-cost changes that would also change campaign wiki facts or player-visible Work: those campaign effects still need the DM accept-gate; the token-cost part does not wait on the DM.
 - Asking the DM to review or accept a token-cost number: out of scope; agents own that metric.
+- One-off job that will not repeat: do not create a helper.
+- Helper goes stale: agents update or remove it. A stale helper agents still load is wasted context.
+- Helper that only a human can operate: not agent-shaped; does not count.
+- Helper that changes campaign wiki facts or player-visible Work: those campaign effects still need the DM accept-gate.
+- Asking the DM to request, review, or accept a helper: out of scope; agents own that work.
+- Runtime failure with no ledger entry: incomplete sitting; fill the ledger.
+- Draining the whole ledger because some entries were fixed: invalid; drain only matching fixed causes.
+- Filling the ledger with process talk or token-cost numbers the DM must review: out of scope; the ledger is agent-owned.
+- Error whose fix is not a wiki change (a helper, wasted-context cut): drain when that fix lands; still no DM gate unless the fix is campaign-facing.
 
 ## Requirements *(mandatory)*
 
@@ -125,7 +156,7 @@ A sitting has a token cost: how much the Co-DM had to read and write to finish i
 - **FR-004**: When the DM updates the players or the intent, later Work MUST use the updated aim.
 - **FR-005**: A missing wiki fact or missing Co-DM practice MUST NOT prevent the Co-DM from offering playable Work in that sitting.
 - **FR-006**: When Work is offered despite a gap, the Co-DM MUST name the gap to the DM.
-- **FR-007**: A proposed change to how the Co-DM works that would change campaign Work or what the DM sees MUST be a proposal the DM accepts, edits, or rejects. The Co-DM MUST NOT apply that campaign-facing change before accept. Token-cost-only changes that do not change Work quality or wiki facts MUST follow FR-019 through FR-025 instead, with no DM accept step.
+- **FR-007**: A proposed change to how the Co-DM works that would change campaign Work or what the DM sees MUST be a proposal the DM accepts, edits, or rejects. The Co-DM MUST NOT apply that campaign-facing change before accept. Token-cost-only changes that do not change Work quality or wiki facts MUST follow FR-019 through FR-031 instead, with no DM accept step.
 - **FR-008**: After wrapup, the Co-DM MUST offer a reflection that names at least one concrete observation about these players.
 - **FR-009**: After prep, the Co-DM MUST offer a reflection when the DM asks, and MUST NOT require the DM to ask in wrapup.
 - **FR-010**: A reflection MUST be accept-or-reject Work. It MUST NOT write wiki facts by itself. It MUST NOT apply a campaign-facing practice change by itself.
@@ -144,6 +175,19 @@ A sitting has a token cost: how much the Co-DM had to read and write to finish i
 - **FR-023**: Completing more accepted Work in a sitting at the same quality and at equal or lower token cost MUST count as an efficiency win. Agents MUST pursue that win without a DM accept step.
 - **FR-024**: Standing context the Co-DM must read or write that does not change the sitting's outcome MUST be treated as wasted context. Agents MUST cut it when they can do so without lowering quality. They MUST NOT wait for the DM.
 - **FR-025**: Agents MUST objectively decrease token cost of same-kind sittings over time when quality holds. "Objectively" means same jobs, measured token cost, quality still passing — not DM opinion.
+- **FR-026**: Agents MUST proactively create reusable, flexible, agent-shaped helpers when that would lower token cost of a repeating job. They MUST NOT wait for the DM or for a request.
+- **FR-027**: Agents MUST maintain those helpers as the job changes. A stale helper that agents still load MUST be treated as wasted context: update it or remove it.
+- **FR-028**: A helper MUST be agent-shaped: invocable without a GUI, arguments in, text or structured output out, and an exit that distinguishes done from failed. A human-only wrapper MUST NOT count.
+- **FR-029**: A helper MUST be reusable and flexible enough for the next same-kind sitting's inputs. A one-shot hardcode that cannot take the next sitting's inputs MUST NOT count.
+- **FR-030**: Agents MUST NOT wrap a command that already completes the same job. They MUST run that command.
+- **FR-031**: A helper that does not lower token cost of a later same-kind sitting, or that lowers Work quality, MUST NOT count as an efficiency win.
+- **FR-032**: This spec MUST govern the error ledger (`errors.md`): runtime fill and drain-on-fix.
+- **FR-033**: When a Co-DM operation fails at runtime, agents MUST append an entry to the error ledger before the sitting is complete. They MUST NOT wait for the DM.
+- **FR-034**: When a wiki improvement or other landed fix actually removes the cause of an error ledger entry, agents MUST drain that entry.
+- **FR-035**: Agents MUST NOT drain an entry whose cause is not yet fixed.
+- **FR-036**: After a wiki improvement lands, leftover ledger entries for causes that improvement fixed MUST be treated as wasted context and drained in the same sitting.
+- **FR-037**: The DM MUST NOT be required to fill, review, or drain the error ledger. A wiki write that is the fix still waits on the DM accept-gate; drain MUST wait until that write has landed.
+- **FR-038**: An undrained ledger of already-fixed errors MUST count as wasted context, not as an improvement record.
 
 ### Key Entities
 
@@ -159,6 +203,8 @@ A sitting has a token cost: how much the Co-DM had to read and write to finish i
 - **Wiki**: Compiled, citable campaign pages. Human prose. Source of truth for canon.
 - **Token cost**: How much the Co-DM must read and write to finish one operation or one sitting. Core metric of self-improvement. Owned by agents, not the DM.
 - **Wasted context**: Reading or writing that does not change the sitting's outcome. Agents cut it when quality holds. The DM does not gate that cut.
+- **Agent-shaped helper**: A reusable command agents create and maintain so a later sitting spends fewer tokens on the same job. Arguments in, result out, done vs failed. Owned by agents, not the DM.
+- **Error ledger** (`errors.md`): Agent-owned list of runtime failures. Filled when operations fail. Drained when the cause is actually fixed, including when improving the wiki.
 
 ## Success Criteria *(mandatory)*
 
@@ -179,6 +225,15 @@ A sitting has a token cost: how much the Co-DM had to read and write to finish i
 - **SC-013**: 0% of agent-applied efficiency changes produce Work that fails the quality bar that applied before the change.
 - **SC-014**: In those same-kind pairs, the later sitting yields at least as many accepted Work items as the earlier sitting.
 - **SC-015**: In a sample of at least five token-cost records and efficiency cuts, 0% required the DM to record, review, or accept the token cost.
+- **SC-016**: In a sample of at least three repeating same-kind sittings where a helper would lower token cost, 100% of later sittings use an existing helper rather than re-deriving the procedure in context.
+- **SC-017**: 0% of those helpers were requested, reviewed, or accepted by the DM.
+- **SC-018**: 100% of those helpers are invocable as a command (arguments in, text or structured result out, done vs failed).
+- **SC-019**: 0% of those helpers wrap a command that already completed the same job.
+- **SC-020**: After the repeating job changes, 100% of sampled helpers are updated or removed before the next sitting; 0% remain stale and still loaded.
+- **SC-021**: In a sample of at least five runtime Co-DM failures, 100% produce an error ledger entry before the sitting ends, with 0% requiring the DM to write it.
+- **SC-022**: After a wiki improvement that removes the cause of recorded errors, 100% of matching entries are drained in that sitting.
+- **SC-023**: 0% of drained entries in that sample were removed without the cause being fixed.
+- **SC-024**: In a sample of at least five fill or drain actions, 0% required the DM to edit the error ledger.
 
 ## Assumptions
 
@@ -188,9 +243,10 @@ A sitting has a token cost: how much the Co-DM had to read and write to finish i
 - v1 remains one campaign, one table, D&D 5e.
 - Self-bootstrap means: produce Work from an incomplete start and name the gap. It does not mean the Co-DM rewrites campaign-facing practice without accept.
 - Self-reflection means: after wrapup (and after prep when asked), offer inspectable observations about these players. It does not mean a live agent at the table, and it does not mean contacting players.
-- Self-improvement means: accepted reflections become proposals the DM gates when they change the campaign or what the DM sees. Token cost of the sitting is a core metric owned by agents: more Work at the same quality, less wasted context, no DM review.
+- Self-improvement means: accepted reflections become proposals the DM gates when they change the campaign or what the DM sees. Token cost of the sitting is a core metric owned by agents: more Work at the same quality, less wasted context, proactive agent-shaped helpers, no DM review.
 - Creativity, communication, and collaboration are already the Co-DM experiment. This feature adds shared aim and a closed improve-with-accept loop for campaign Work. It does not add a second communication path to players. It does not make the DM an efficiency reviewer.
 - Fun may still shape Work. Wiki facts still change only when the DM accepts a canon proposal.
 - One reflection per wrapup is enough unless the DM asks for another.
-- Token cost is how much the Co-DM must read and write to finish the jobs. Agents manage it and decrease it objectively. Quality is a constraint, not a trade. Fewer tokens that produce worse Work is not improvement. More tokens for the same jobs is not improvement unless they prevent a named failure. The DM is not asked to accept token-cost numbers or efficiency-only cuts.
-- Out of scope: a Co-DM agent during a session; player accounts or player-operated feedback; autonomous rewrite of campaign canon; replacing existing content evaluation or instruction-redesign rules for D&D content guidance; multi-campaign orchestration; non-5e rules systems; billing; replacing the DM; a hidden quality score; the DM managing or gating token cost.
+- Token cost is how much the Co-DM must read and write to finish the jobs. Agents manage it and decrease it objectively, including by creating and maintaining reusable agent-shaped helpers. Quality is a constraint, not a trade. Fewer tokens that produce worse Work is not improvement. More tokens for the same jobs is not improvement unless they prevent a named failure. The DM is not asked to accept token-cost numbers, efficiency-only cuts, or helpers.
+- The error ledger (`errors.md`) is agent-owned. Runtime failures fill it. Wiki improvements and other landed fixes drain matching entries. Drain without a fix is a defect. Leaving fixed errors in the ledger is wasted context.
+- Out of scope: a Co-DM agent during a session; player accounts or player-operated feedback; autonomous rewrite of campaign canon; replacing existing content evaluation or instruction-redesign rules for D&D content guidance; multi-campaign orchestration; non-5e rules systems; billing; replacing the DM; a hidden quality score; the DM managing or gating token cost, helpers, or the error ledger; human-only wrappers; wrapping a command that already does the job.
