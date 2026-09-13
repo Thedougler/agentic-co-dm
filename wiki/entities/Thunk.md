@@ -3,6 +3,8 @@ title: Thunk
 category: entities
 tags: [shattered-sea, npc, calveno]
 sources:
+  - "campaign-os:thunk.md"
+  - "campaign-os:thunk-narration-appearance.md"
   - "wiki/_archive/Thunk.md"
   - "Thunk"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/boarding-of-the-surety/npc.thunk.md"
@@ -16,7 +18,7 @@ lifecycle: canon
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T06:23:47Z
-updated: 2026-09-13T20:45:00Z
+updated: 2026-09-13
 type: npc
 reveal: revealed
 campaign: shattered-sea
@@ -148,3 +150,10 @@ actions:
   - name: Warhammer
     desc: "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) bludgeoning damage, or 10 (1d10 + 5) bludgeoning damage if used with two hands."
 ```
+
+## Narration
+
+> [!narration]
+> *[[thunk|Thunk]] fills a gun deck the way a crate fills a hatch. Orc, enormous, middle-aged, powder-black at the nails and in the creases of his knuckles. A coin pouch knocks whatever rail he leans on.*
+>
+> *He grins as a default. When he speaks it comes slow and cheerful and takes up the space around it. He smells of powder and hot bronze.*

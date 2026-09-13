@@ -3,6 +3,7 @@ title: Dravosi Deckhand
 category: entities
 tags: [shattered-sea, creature, dravosi-crown]
 sources:
+  - "campaign-os:dravosi-deckhand.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/boarding-of-the-surety/creature.dravosi-deckhand.md"
 summary: "CR 1/8 Crown shiphand with Sea Legs, cutlass, hand crossbow, and an Alert Call reaction."
 provenance:
@@ -14,7 +15,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T20:05:00Z
-updated: 2026-09-13T20:05:00Z
+updated: 2026-09-13
 type: creature
 reveal: unrevealed
 campaign: shattered-sea

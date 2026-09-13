@@ -3,6 +3,7 @@ title: Uncertainty
 category: entities
 tags: [shattered-sea, vehicle, ship]
 sources:
+  - "campaign-os:uncertainty-narration-appearance.md"
   - "Session 02 - Recap.md"
   - "Session 03 - Recap.md"
   - "Session 09 - Recap.md"
@@ -18,7 +19,7 @@ lifecycle: canon
 lifecycle_changed: "2026-09-12"
 tier: core
 created: 2026-09-12T04:56:01Z
-updated: 2026-09-12T12:00:00Z
+updated: 2026-09-13
 type: vehicle
 reveal: revealed
 campaign: shattered-sea
@@ -73,3 +74,12 @@ The ship is the party's mobile base and escape route. Keep her moving while the 
 ## Provenance
 
 The supplied foreign vehicle drop identifies Uncertainty as a Gargantuan vehicle with AC `11` and `130` hit points. Existing campaign notes establish her capture as HCS Surety, renaming, Calveno refit, current crew pressures, and continued movement off Aruhe.
+
+## Narration
+
+> [!narration]
+> *Eighty feet of cutter, low and lean. The light finds nothing to hold onto anywhere along her. One unbroken blue-black from cap rail to copper, a bare masthead over it.*
+>
+> *Gun muzzles come out along the side, a long pair and a squat pair. At the bow, above an iron-edged ram plate set flush to the waterline, a hardwood woman walks forward with her hands open and nothing written on her face.*
+>
+> *She smells of pitch and new caulk. From half a mile she reads as somebody's coastal trader.*

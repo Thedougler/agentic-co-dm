@@ -3,6 +3,7 @@ title: Deer-Stalker
 category: entities
 tags: [shattered-sea, creature, aruhe, ambusher]
 sources:
+  - "campaign-os:deer-stalkers.md"
   - "house (wiki creature.deer-stalker, upgraded)"
 summary: CR 8 solitary Aruhe ambusher that isolates prey, drags it from the group, and retreats when allies close in.
 provenance:
@@ -14,7 +15,7 @@ lifecycle: proposed
 lifecycle_changed: 2026-09-12
 tier: supporting
 created: 2026-09-12T00:00:00Z
-updated: 2026-09-12T09:40:00Z
+updated: 2026-09-13
 type: creature
 reveal: unrevealed
 campaign: shattered-sea

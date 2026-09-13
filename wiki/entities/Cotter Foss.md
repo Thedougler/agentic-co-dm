@@ -4,6 +4,7 @@ category: entities
 tags: [shattered-sea, npc]
 sources:
   - "/workspace/midchain-ingest/group-a/vehicles/Nimmik Vollask.md"
+  - "campaign-os:cotter-foss.md"
 summary: "Halfling shopkeeper and public face of the Nimmik Vollask; takes orders from the rail with ledger and coffee."
 provenance:
   extracted: 1.0
@@ -14,7 +15,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T19:56:00Z
-updated: 2026-09-13T19:56:00Z
+updated: 2026-09-13
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -24,44 +25,21 @@ location: "[[Nimmik Vollask]]"
 faction: none
 visibility: dm
 ---
+
 # Cotter Foss
 
-````col
-```col-md
-flexGrow=2
-===
-## At a Glance
+A halfling woman in her late thirties, compact and still. She works on a ship that lurches every forty seconds. She carries a ledger, a warm coffee pot, and has a knowing smile that suggests she knows your question before you ask it, and she knows what you will think of the price.
 
-| **Role**   | Ship manager and sole public-facing staff of [[Nimmik Vollask]] |
-| ---------- | --- |
-| **Nature** | Halfling shopkeeper with ledger and chalk |
-| **Home**   | The Depot rail of [[Nimmik Vollask]] |
-| **Wants**  | Clean orders, paid fees, and a confirmed crane handoff |
+**Appearance & Manner:** she is not a gnome and has no authority over the gnomes below decks. She does not act. Her job is to be the part of the [[Nimmik Vollask]] that other-sized people can talk to. She does this with care, knowing the rest of the ship is not accessible to most customers. She went below twice on her first day. She has not returned.
 
-> **DM thesis:** She is the only Medium-world face the Depot allows.
-```
+She keeps a running tally in her head that she claims is accurate to within five gold across all current orders and outstanding accounts. No one has successfully proven otherwise.
 
-```col-md
-flexGrow=1
-===
-> [!narration] Cotter Foss
-> A halfling woman waits at the starboard rail behind a folding table, ledger open, a coffee pot steaming at her elbow. She closes the book, chalk already in hand, and looks up across the gap.
-```
-````
+**Role & Operations:** manager and sole public-facing staff of the *Nimmik Vollask*. She stations herself at the starboard rail with a folding table, her ledger, and coffee. She takes orders and writes them down in the ledger. Prices come from memory. She collects gold before the gnomes pull stock and provides meatballs. When the bundle arrives, she confirms the manifest by ear as the gnomes announce contents, then gives clearance for the yeet.
 
-## Running Cotter Foss
+She is the one who writes the written apology when a bundle misses the hold.
 
-### First meeting
+She knows current stock and can quote comparative prices against [[Calveno]] and [[Kalowe]] chandleries from memory. She will extend a line of credit to returning customers with a clean payment history (the terms are fair, and the ledger is accurate). She has opinions about every port in the [[Central Strait]]. She offers them calmly, without prompting.
 
-Flag her at the rail, name the cargo, pay the fee. Coffee and meatballs come with the deal.
+## Relationships
 
-### When posture changes
-
-She confirms manifests by ear from the gnomish voices below before she clears the crane swing.
-
-# Relationships
-
-| Relationship | Meaning |
-| ------------ | ------- |
-| [[Nimmik Vollask]] | She runs the public interface; the gnomes work below. |
-| [[Central Strait]] | The Depot's operating circuit. |
+- [[Nimmik Vollask]]: the ship she manages. She is sole public-facing staff.

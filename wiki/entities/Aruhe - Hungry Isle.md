@@ -3,7 +3,19 @@ title: Aruhe
 category: entities
 tags: [shattered-sea, region, aruhe]
 aliases: [Hungry Isle, Aruhe Hungry Isle]
-sources: ["[[Midchain]]", "Aruhe - Hungry Isle.md", "[[Aruhe - Hungry Isle]]", "[[Aruhe - Hungry Isle]]", "arc-blight-of-aruhe.md", "[[Aruhe - Beach]]", "[[Aruhe - Clear Lake]]", "[[Aruhe - Grasslands]]"]
+sources:
+  - "campaign-os:hungry-isle-legend.md"
+  - "campaign-os:aruhe-hungry-isle.md"
+  - "campaign-os:aruhe-hungry-isle-run-guide.md"
+  - "[[Midchain]]"
+  - "Aruhe - Hungry Isle.md"
+  - "[[Aruhe - Hungry Isle]]"
+  - "[[Aruhe - Hungry Isle]]"
+  - "arc-blight-of-aruhe.md"
+  - "[[Aruhe - Beach]]"
+  - "[[Aruhe - Clear Lake]]"
+  - "[[Aruhe - Grasslands]]"
+  - "campaign-os:aruhe-hungry-isle-narration-condition.md"
 summary: "Aruhe is a vast untamed island in the eastern [[Midchain]]: about 500 miles end to end and about 150 miles across at its waist. No settlement is visible from offshore. [[Karath]] sits close to one wes"
 provenance:
   extracted: 1.0
@@ -14,7 +26,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-12T00:00:00Z
-updated: 2026-09-13T07:40:00Z
+updated: 2026-09-13
 type: region
 reveal: unrevealed
 campaign: shattered-sea
@@ -88,3 +100,56 @@ The inward pull of Aruhe leads toward [[Aruhe - Memorial Grove|Memorial Grove]],
 The island's excess comes from [[Hinewai|Hinewai]] preserving a grave at [[Aruhe - Memorial Grove|Memorial Grove]]. The Death Bloom is not a portable object hidden somewhere on the island. It is the tree, both graves, the black-flower ring, the bound soil, and the relationship holding them together. That grief has made Aruhe's life systems overactive: too much growth, too much repair, too much adaptation, and a violent response to taking.
 
 Right now, Aruhe matters because the Calveno raid broke here. Some survivors are aboard [[Uncertainty]], more remain inland, and the crew can still recover people before the island kills them or absorbs them into its local pressures. The broader campaign handle is to survey a possible [[Tangle]] anchor without treating a living island as property, rescue the living, preserve a route back to the sea, and decide what to do about the grief at the island's heart.
+
+## Narration
+
+> [!narration]
+> *Past the reef gap the water calms under three limestone walls, their faces cut with stair steps gone green under vine. The wind brings salt, bruised citrus, and no birds.*
+>
+> *On the shingle a [[vethka|Vethka]] proa lies broken on one side, outrigger snapped, ribs hung with wet cloth. A cooking fire has gone to grey ash beside the hull. Water jars stand in the surviving shade. Fresh footprints run from the wreck to the tideline, then stop at the first terrace.*
+>
+> *[[sandro|Sandro]] and [[nino|Nino]] still use that shade. Inland the jungle is a solid green wall. Nothing shows past the first trunks. The air coats the roof of the mouth, fruit rotting under fruit still ripening.*
+
+## Run guide
+
+# Aruhe's Hungry Isle
+
+## Prep
+
+After the cold open, if they turn east or follow wreckage. The Sequence already ran; this is the island as a place.
+
+## 1 — Arrive
+
+![[Aruhe Hungry Isle Narration Condition]]
+
+> [!check] Aruhe's Hungry Isle
+>
+> | Check | DC | Failure | Pass |
+> |---|---|---|---|
+> | Survival | 14 | a rich island | one berry or fish turns the island against the taker |
+> | Perception | 13 | jungle | reef and beach, then terraces, then closed sight lines |
+> | Investigation | 15 | a wreck | [[Warren Aruhe Survey]] — [[Perrin Black-Jaw|Perrin]]'s Tangle-anchor question |
+
+![[Aruhe - Hungry Isle]]
+
+## 2 — What's live
+
+![[Aruhe - Hungry Isle]]
+
+![[Aruhe - Hungry Isle]]
+
+> [!check] Actors
+>
+> | Check | DC | Failure | Pass |
+> |---|---|---|---|
+> | Insight | 12 | two castaways | [[Sandro]] will risk the shore; [[Nino]] will not cross the garden line |
+> | Persuasion | 13 | they stay put | testimony: Tomo, the fruit, the wreck |
+> | Nature | 14 | the garden | [[Blight]] is what the protection became |
+
+## 3 — If they dig
+
+![[Aruhe - Hungry Isle]]
+
+## Exit
+
+- they leave the island → [[The Open Strait]]

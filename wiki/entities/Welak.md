@@ -3,6 +3,7 @@ title: "Welak"
 category: entities
 tags: [shattered-sea, creature, maw, whip-shark]
 sources:
+  - "campaign-os:whip-shark.md"
   - "/workspace/midchain-ingest/group-a/monsters/Welak.md"
 summary: "CR 5 surface ambusher also called whip shark; follows salvage-pump vibration and hits hull or crew before a reload."
 provenance:

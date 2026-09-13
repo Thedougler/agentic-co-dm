@@ -3,6 +3,7 @@ title: "Aruhe - Strangler Fig"
 category: entities
 tags: [shattered-sea, creature, aruhe]
 sources:
+  - "campaign-os:strangler-fig.md"
   - "/workspace/midchain-ingest/group-a/monsters/Strangler Fig.md"
 summary: "CR 8 strangling fig controller from living-stock ecology."
 provenance:
@@ -14,7 +15,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T20:00:00Z
-updated: 2026-09-13T20:00:00Z
+updated: 2026-09-13
 type: creature
 reveal: unrevealed
 campaign: shattered-sea

@@ -3,6 +3,7 @@ title: "Sir Quackers the Fowl"
 category: entities
 tags: [shattered-sea, npc, ley-line]
 sources:
+  - "campaign-os:sir-quackers-the-fowl-narration-appearance.md"
   - "/workspace/midchain-ingest/group-a/npcs/Sir Quackers the Fowl.md"
   - "sir-quackers-the-fowl.md"
 summary: "A duck familiar at Yssenmoor who has died and reformed for centuries on a hidden ley line, edging toward demigodhood without understanding it."
@@ -15,7 +16,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T19:50:00Z
-updated: 2026-09-13T21:40:00Z
+updated: 2026-09-13
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -88,3 +89,8 @@ He does not understand the [[Fate Spinner]] dreidel reaction or the [[Soul Incar
 | [[Soul Incarnate]] | The Fate Spinner reaction exposes a Soul Incarnate signature he does not comprehend. |
 
 The familiar's former wizard is named only as RTLB. RTLB set Quackers free and is now gone. The relationship stays unresolved backstory.
+
+## Narration
+
+> [!narration]
+> A duck built like nothing that should stand upright, white-feathered and corded with muscle under gilded pauldrons, a longsword resting easy in one hand and a bow taller than a person slung across his back. He doesn't blink. His eyes track movement with an intensity that belongs to nothing that eats bread crumbs. Somewhere behind him, water keeps dripping in a slow, wrong rhythm, like it hasn't decided yet whether to fall—and where the drops land, the marsh grass doesn't ripple. His free hand taps twice against the flat of his blade, waiting on an answer nobody's given yet, and the sound carries farther than it should.

@@ -3,6 +3,7 @@ title: HCS Sovereign
 category: entities
 tags: [shattered-sea, vehicle, ship, crown]
 sources:
+  - "campaign-os:hcs-sovereign.md"
   - "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/HCS Sovereign.md"
 summary: Gargantuan Crown first-rate ship of the line whose copper hull and more than one hundred guns make its arrival a political event.
 provenance:
@@ -14,7 +15,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T02:55:00Z
-updated: 2026-09-13T02:55:00Z
+updated: 2026-09-13
 type: vehicle
 reveal: unrevealed
 campaign: shattered-sea

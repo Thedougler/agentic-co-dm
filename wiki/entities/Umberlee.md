@@ -3,6 +3,7 @@ title: Umberlee
 category: entities
 tags: [shattered-sea, lore, deity, umberlee, sea]
 sources:
+  - "campaign-os:umberlee.md"
   - "umberlee-pearl-fissure-erosion.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/location-umberlee-shrine-vel-orn.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/event-delmar-umberlee-bargain.md"
@@ -20,7 +21,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T03:00:00Z
-updated: 2026-09-13T20:50:00Z
+updated: 2026-09-13
 type: lore
 reveal: unrevealed
 campaign: shattered-sea

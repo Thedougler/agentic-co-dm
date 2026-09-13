@@ -3,6 +3,7 @@ title: Waveservants
 category: entities
 tags: [shattered-sea, faction, waveservants, umberlee, clergy]
 sources:
+  - "campaign-os:waveservants.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/location-waveservant-shrine.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/settlement-kalowe.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/calveno-raid/location-mercatura.md"
@@ -19,7 +20,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T21:00:00Z
-updated: 2026-09-13T21:00:00Z
+updated: 2026-09-13
 type: faction
 reveal: unrevealed
 campaign: shattered-sea

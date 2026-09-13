@@ -3,6 +3,7 @@ title: Dravosi Crown
 category: entities
 tags: [shattered-sea, faction, crown, colonial, naval]
 sources:
+  - "campaign-os:dravosi-crown.md"
   - "inbox/archive/FILED-2026-09-05-dravosi-crown.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/region-crown-islands.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/region-harwick.md"
@@ -22,7 +23,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T02:55:00Z
-updated: 2026-09-13T20:00:00Z
+updated: 2026-09-13
 type: faction
 reveal: unrevealed
 campaign: shattered-sea

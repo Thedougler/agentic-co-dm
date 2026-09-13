@@ -3,6 +3,7 @@ title: Antheri
 category: entities
 tags: ["shattered-sea", "faction", "maw"]
 sources:
+  - "campaign-os:antheri.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-antheri.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/npc-auralis.md"
 summary: "Vanished builders of a Maw western-wall city and Water-plane route; their ruins and salvage remain at Shelfworks."
@@ -15,7 +16,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T19:45:00Z
-updated: 2026-09-13T19:45:00Z
+updated: 2026-09-13
 type: faction
 reveal: unrevealed
 campaign: shattered-sea

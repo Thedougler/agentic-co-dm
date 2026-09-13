@@ -3,6 +3,7 @@ title: The Gold-Caste Serene
 category: entities
 tags: [shattered-sea, creature, grung]
 sources:
+  - "campaign-os:gold-caste-serene.md"
   - "wiki/_raw/Grung clans.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/the-grung-clans/creature.the-gold-caste-serene.md"
 summary: "CR 30 unlookable gold Grung presence with Certainty Ward; encounter sheet now lives on this creature page."
@@ -15,7 +16,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T00:00:00Z
-updated: 2026-09-13T20:40:00Z
+updated: 2026-09-13
 type: creature
 reveal: unrevealed
 campaign: shattered-sea

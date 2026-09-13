@@ -1,0 +1,47 @@
+---
+title: "HCS Tangent"
+category: entities
+tags: ["shattered-sea", "vehicle", "maritime"]
+sources:
+  - "campaign-os:hcs-tangent.md"
+created: 2026-09-13
+updated: 2026-09-13
+type: vehicle
+lifecycle: proposed
+lifecycle_changed: "2026-09-13"
+reveal: unrevealed
+campaign: shattered-sea
+visibility: dm
+summary: "A Dravosi Crown warship with heavy armament and full naval crew, deployed when enforcement becomes naval."
+provenance:
+  extracted: 0.85
+  inferred: 0.10
+  ambiguous: 0.05
+base_confidence: 0.55
+tier: supporting
+---
+# HCS Tangent
+
+A warship built for war, armed with heavy guns and staffed with a full crew. Not a patrol cutter. When it arrives at your port, something has failed. When it comes for you, you are the problem.
+
+This is the Crown's next move after [[HCS Warrant]]. Call it when inspections fail. The *Tangent* does not inspect. It acts.
+
+> [!dm]
+> Deploy the *Tangent* when Crown enforcement shifts from authority to force.
+
+Commanded by [[Captain Dorian Bishop|Dorian Bishop]], Crown Captain and twice the fighter [[Barnaby Rook]] is. Dorian is odd and lateral. Dorian positions wide, making you react, then strikes when you overextend.
+
+## Stats & Combat
+
+No stats given in source.
+
+## Crew
+
+- Captain: [[Captain Dorian Bishop|Dorian Bishop]]
+
+## Connections
+
+- [[Captain Dorian Bishop|Dorian Bishop]]: commands.
+- [[Dravosi Crown]]: operates under
+- [[Uncertainty|HCS Surety]] / Uncertainty: pursuit target
+- [[HCS Warrant]]: prior Crown response

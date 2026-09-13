@@ -3,6 +3,7 @@ title: Wolfrabbit
 category: entities
 tags: [shattered-sea, creature, aruhe, skirmisher]
 sources:
+  - "campaign-os:wolfrabbits.md"
   - "house (wiki creature.wolfrabbit; living-stock 2026-09-05; 2024 CR 4 conversion)"
 summary: CR 4 pack skirmisher that pounces targets prone, rends them with nearby packmates, and feeds on fallen members.
 provenance:
