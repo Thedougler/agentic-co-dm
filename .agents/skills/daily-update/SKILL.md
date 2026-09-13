@@ -21,7 +21,7 @@ You run a lightweight maintenance pass over the wiki: check source freshness, re
    STATE_DIR="$HOME/.obsidian-wiki/state/$VAULT_ID"
    mkdir -p "$STATE_DIR"
    ```
-3. Read `$OBSIDIAN_VAULT_PATH/.manifest.json`.
+3. Use `python3 scripts/manifest.py stats "$OBSIDIAN_VAULT_PATH"` (and `has`/`get`/`delta` as needed) — do **not** read whole `.manifest.json`.
 
 ## Modes
 
@@ -31,7 +31,7 @@ Execute the maintenance cycle:
 
 **Step 1: Source freshness check**
 
-Compare each source in `.manifest.json` against its file's modification time. Classify as:
+For candidate paths, use `python3 scripts/manifest.py delta`/`get` and compare mtime/hash — do not scan the whole ledger in context. Classify as:
 - **Fresh** — `mtime ≤ ingested_at`
 - **Stale** — `mtime > ingested_at` (new content exists, not yet ingested)
 - **Missing** — source file no longer exists

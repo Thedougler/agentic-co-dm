@@ -15,7 +15,7 @@ You are distilling knowledge from the current project into the user's Obsidian w
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `OBSIDIAN_WIKI_REPO`, `OBSIDIAN_LINK_FORMAT` (`wikilink` default or `markdown`), and optional QMD settings such as `QMD_WIKI_COLLECTION`. Works from any project directory.
-3. Read `$OBSIDIAN_VAULT_PATH/.manifest.json` to check if this project has been synced before.
+3. Check prior sync with `python3 scripts/manifest.py` (`stats` / `has` / `get`) on `$OBSIDIAN_VAULT_PATH` — do **not** read whole `.manifest.json`.
 4. Read `$OBSIDIAN_VAULT_PATH/index.md` to know what the wiki already contains.
 
 When writing internal links in Steps 4–5, apply the link format from `llm-wiki/SKILL.md` (Link Format section) using the `OBSIDIAN_LINK_FORMAT` value.
@@ -34,7 +34,7 @@ Derive a clean project name from the directory name.
 
 ## Step 2: Compute the Delta
 
-Check `.manifest.json` for this project:
+Check this project via `python3 scripts/manifest.py has`/`get` (not a whole-file read):
 
 - **First time?** Full scan. Everything is new.
 - **Synced before?** Look at `last_commit_synced`. Before computing the delta, verify the stored SHA is still reachable:
@@ -188,7 +188,7 @@ After creating/updating pages:
 
 ## Step 6: Update Tracking
 
-### Update `.manifest.json`
+### Update ingest ledger (`scripts/manifest.py upsert`)
 
 Add or update this project's entry:
 
