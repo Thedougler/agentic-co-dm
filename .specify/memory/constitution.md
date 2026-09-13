@@ -241,11 +241,14 @@ quoting and make agents guess separators.
 When a user corrects an agent about a factual, procedural, or implementation
 error, the agent that received the correction MUST immediately record the
 error, correction, affected scope, and resulting rule or action in the
-repo-tracked root file `errors.md`. The agent MUST then continue its assigned
-task without waiting for a separate logging step. During implementation,
-agents MUST check `errors.md` for related open errors, fold applicable fixes
-into the current work, and avoid duplicating already-recorded work. Resolved
-records MUST remain traceable rather than being silently deleted.
+repo-tracked root file `errors.md`. If that file is absent, the agent MUST
+create it before recording the correction, then run `git add errors.md`
+immediately after writing. The agent MUST then continue its
+assigned task without waiting for a separate logging step. During
+implementation, agents MUST check `errors.md` for related open errors, fold
+applicable fixes into the current work, and avoid duplicating already-recorded
+work. Resolved records MUST remain traceable rather than being silently
+deleted.
 
 Rationale: durable correction records prevent repeated mistakes across agents
 and sessions while keeping the active task moving.
@@ -276,9 +279,10 @@ and sessions while keeping the active task moving.
   no guessing.
 
 - When a user correction identifies an agent error, agents MUST record it in
-  the repo-tracked root `errors.md` immediately, then continue the assigned
-  task. During implementation, agents MUST check that file for related open
-  errors and incorporate them without duplicating work.
+  the repo-tracked root `errors.md` immediately, creating and staging that
+  file with `git add errors.md` if it does not exist, then continue the
+  assigned task. During implementation, agents MUST check that file for
+  related open errors and incorporate them without duplicating work.
 - Designated writer, when used: Claude Code at `claude-opus-4-6`
   `--effort medium`. MUST NOT use the `opus` alias or default Opus.
   Default Opus output is worthless for language work (issue #3). Up to
