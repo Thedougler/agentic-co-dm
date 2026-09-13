@@ -48,11 +48,11 @@ Writer reports a usage limit:
 
 1. Restore the prompt’s target paths to the dispatch-start revision (`git checkout <dispatch-start> -- <paths>`).
 2. Do not create a GitHub issue.
-3. Record the job and retry time on `docs/agents/claude-dispatch-queue.md`. Retry time is the reset time from the report when present; if none, 5 hours from the stop; if a retry still reports a usage limit with no reset time, 24 hours from that attempt.
+3. Record the job and retry time on the feature's `tasks.md`. Retry time is the reset time from the report when present; if none, 5 hours from the stop; if a retry still reports a usage limit with no reset time, 24 hours from that attempt.
 4. Do not re-attempt before this time. A new session retries after it. Defer only the Claude-dependent task. Complete remaining tasks that do not depend on it; do not mark those jobs incomplete.
 5. Session agent does not write the design-impact change.
 
-Done: targets match dispatch-start content; job is on the dispatch queue; independent work completed; no GitHub issue.
+Done: targets match dispatch-start content; job stays incomplete on `tasks.md`; independent work completed; no GitHub issue.
 
 ## Verify
 

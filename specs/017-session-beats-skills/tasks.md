@@ -61,7 +61,7 @@ Contracts: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`, `sp
 
 ### Implementation for User Story 1
 
-- [ ] T003 [US1] Rewrite `.agents/skills/session-beats/SKILL.md` as composition only (Claude Code). Description fires on planning a session, one-shot, adventure arc, or expedition evening. Owns: Beat Chart assembly; one Hook; alternate D/C; Climax then Resolution; polarity; ~30 min per beat; Hook+Climax+Resolution ~90 min; threads, escalation, transitions; recompute / agency gates; filed spine jobs. Point typed fill at the five type skills. Quote data-model: "Primary when planning a session, one-shot, adventure arc, or expedition evening."
+- [ ] T003 [US1] Rewrite `.agents/skills/session-beats/SKILL.md` as composition only (Claude Code). Description fires on planning a session, one-shot, adventure arc, or expedition evening. Owns: Beat Chart assembly; one Hook; alternate D/C; Climax then Resolution; polarity; ~30 min per beat; Hook+Climax+Resolution ~90 min; threads, escalation, transitions; recompute / agency gates; filed spine jobs. Point typed fill at the five type skills. Quote data-model: "Primary when planning a session, one-shot, adventure arc, or expedition evening." Retry after 2026-09-12 18:30 America/Vancouver.
 - [X] T004 [US1] Keep `.agents/skills/session-beats/references/agency.md` and `.agents/skills/session-beats/references/session-skeleton.md` as composition references. Skeleton stays the planning form; filed spine remains Session 11-00 shape.
 
 **Checkpoint**: US1 independently testable (quickstart steps 1 job 1, 2)
@@ -78,11 +78,11 @@ Contracts: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`, `sp
 
 Quote each type's completion test from `specs/017-session-beats-skills/data-model.md`. Each type skill owns purpose, completion test, cards for that type, how to fill this beat. Card fields: Type exactly one of the five; Trigger when fiction calls for it — not to fill a slot; Stakes visible; Player options at least two viable responses; Agency note ignoring, failing, or redirecting updates the world. Move cards out of `.agents/skills/session-beats/references/beat-types.md` into the matching type skill. Model-invoked descriptions: write, edit, or create content for that type.
 
-- [ ] T005 [P] [US2] Create `.agents/skills/hook-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Party has committed to a response to the opening pressure. One Hook per session." Include Play a Cliffhanger as Hook and Play a Development as Hook as Hook cards.
-- [ ] T006 [P] [US2] Create `.agents/skills/development-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Players can name what they now know or can decide that they could not before."
-- [ ] T007 [P] [US2] Create `.agents/skills/cliffhanger-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "The contest resolved; physical situation (position, resources, safety, time) changed."
-- [ ] T008 [P] [US2] Create `.agents/skills/climax-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Highest-stakes confrontation the middle made inevitable; threads harvested."
-- [ ] T009 [P] [US2] Create `.agents/skills/resolution-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Players can name what is different and what they want next."
+- [ ] T005 [P] [US2] Create `.agents/skills/hook-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Party has committed to a response to the opening pressure. One Hook per session." Include Play a Cliffhanger as Hook and Play a Development as Hook as Hook cards. Retry after 2026-09-12 18:30 America/Vancouver.
+- [ ] T006 [P] [US2] Create `.agents/skills/development-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Players can name what they now know or can decide that they could not before." Retry after 2026-09-12 18:30 America/Vancouver.
+- [ ] T007 [P] [US2] Create `.agents/skills/cliffhanger-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "The contest resolved; physical situation (position, resources, safety, time) changed." Retry after 2026-09-12 18:30 America/Vancouver.
+- [ ] T008 [P] [US2] Create `.agents/skills/climax-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Highest-stakes confrontation the middle made inevitable; threads harvested." Retry after 2026-09-12 18:30 America/Vancouver.
+- [ ] T009 [P] [US2] Create `.agents/skills/resolution-beats/SKILL.md` (and its card reference) (Claude Code). Completes when: "Players can name what is different and what they want next." Retry after 2026-09-12 18:30 America/Vancouver.
 
 **Checkpoint**: US1 + US2 independently testable (quickstart steps 1, 3)
 
@@ -129,8 +129,8 @@ Quote each type's completion test from `specs/017-session-beats-skills/data-mode
 - [X] T014 [P] [US6] Create `wiki/templates/vehicle.md` from the provided vehicle scaffold. Jobs: spoken look; sheet (size, type, speed, crew, passengers, cargo); components (hull AC/HP/DT, helm, movement, weapons when armed); crew stations; handling; combat. Omit unused sections.
 - [X] T015 [P] [US6] Create `wiki/templates/spell.md` from the provided spell scaffold. Jobs: spoken look of the casting; classification line; runnable 2024 effect block (casting time, range, components, duration, saves, damage, conditions; scaling when it scales); Discovery when placement needed; Lore when history needed. Omit unused sections.
 - [X] T016 [US6] In `wiki/AGENTS.md`, add `type` values `vehicle` and `spell`. Layout jobs: Vehicle — Look; sheet; components; crew stations; handling; combat. Spell — Look of the casting; classification; runnable 2024 effect; Discovery when placement needed; Lore when history needed. Quote: "Pass is those jobs."
-- [ ] T017 [US6] Rewrite `.agents/skills/vehicle-design/SKILL.md` so it fills `wiki/templates/vehicle.md`, including size, type, speed, crew, and hull plus component AC/HP. Quote data-model: "Size, type, speed, crew (min), passengers, cargo filled so the craft can enter play." State what to write and when the page is done. Design-impact: designated writer, `claude-opus-4-6 --effort medium`, minimal prompt.
-- [ ] T018 [US6] Create `.agents/skills/spell-design/SKILL.md`. Primary for write, edit, or create of a spell page. Completes when narration, classification, and a runnable 2024 effect block are filled. Discovery and Lore when the spell needs placement or history. Design-impact: designated writer, `claude-opus-4-6 --effort medium`, minimal prompt.
+- [ ] T017 [US6] Rewrite `.agents/skills/vehicle-design/SKILL.md` so it fills `wiki/templates/vehicle.md`, including size, type, speed, crew, and hull plus component AC/HP. Quote data-model: "Size, type, speed, crew (min), passengers, cargo filled so the craft can enter play." State what to write and when the page is done. Design-impact: designated writer, `claude-opus-4-6 --effort medium`, minimal prompt. Retry after 2026-09-12 18:30 America/Vancouver.
+- [ ] T018 [US6] Create `.agents/skills/spell-design/SKILL.md`. Primary for write, edit, or create of a spell page. Completes when narration, classification, and a runnable 2024 effect block are filled. Discovery and Lore when the spell needs placement or history. Design-impact: designated writer, `claude-opus-4-6 --effort medium`, minimal prompt. Retry after 2026-09-12 18:30 America/Vancouver.
 
 **Checkpoint**: US6 independently testable (quickstart step 7)
 
@@ -252,6 +252,6 @@ Task: Create wiki/templates/spell.md (T015)
 - Do not port Campaign OS composing/writing-*-beats
 - Do not rewrite Session 11 to prove the split
 - Claude Code: T003, T005–T009, T017, T018 only. Session agent: the rest
-- Usage limit: defer that Claude task; complete remaining independent tasks. Queue: `docs/agents/claude-dispatch-queue.md`.
+- Usage limit: defer that Claude task; complete remaining independent tasks.
 - Commit after each task or logical group
 - Stop at checkpoints
