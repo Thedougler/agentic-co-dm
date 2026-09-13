@@ -13,12 +13,13 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T21:40:00Z
-updated: 2026-09-13T21:40:00Z
+updated: 2026-09-13
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 ---
+
 # Sula Marn
 
-[[Sula Marn]] is Reeve of [[Penance Bar]]. The siege note names her a genuine ally, not a protector of Ashe's secret. A draft fiction gives her a dog and a warning that witches are not always what they seem.
+Stub spawned by location-prep from penance-bar.md. Needs a full npc-guide pass (Toy Chest, Voice & Delivery, Relationships) before the table sees them.

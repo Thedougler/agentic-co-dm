@@ -3,6 +3,7 @@ title: "Nimmik Vollask"
 category: entities
 tags: [shattered-sea, vehicle, maritime]
 sources:
+  - "campaign-os:nimmik-vollask.md"
   - "/workspace/midchain-ingest/group-a/vehicles/Nimmik Vollask.md"
 summary: "Gnome-crewed orange cargo brig (the Depot) on the Central Strait; Cotter Foss sells from the rail and nobody Medium boards."
 provenance:
@@ -14,7 +15,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T19:56:00Z
-updated: 2026-09-13T19:56:00Z
+updated: 2026-09-13
 type: vehicle
 reveal: unrevealed
 campaign: shattered-sea

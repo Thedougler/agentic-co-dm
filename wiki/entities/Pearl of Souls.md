@@ -6,6 +6,7 @@ sources:
   - "Session 04 - Recap.md"
   - "Story So Far - Sessions 01-10.md"
   - "Khlysty - the Flock.md"
+  - "campaign-os:pearl-of-souls.md"
 summary: Shrine relic stolen by Delmar's fleet and named by Umberlee as her price; the Flock sees it as a possible shortcut to transcendence.
 provenance:
   extracted: 0.97
@@ -16,7 +17,7 @@ lifecycle: canon
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T04:56:01Z
-updated: 2026-09-13T03:04:18Z
+updated: 2026-09-13
 type: item
 reveal: revealed
 campaign: shattered-sea
@@ -27,26 +28,25 @@ relationships:
   - target: "[[Khlysty - the Flock]]"
     type: related_to
 ---
+
 # Pearl of Souls
 
-Named relic. It is not in the party's hands on the page of record.
+# Pearl of Souls
 
-## At a Glance
+![[Pearl Of Souls Banner]]
 
-[[Delmar Fisk]]'s five-ship fleet stole it from a shrine. The Drowned Maw destroyed that fleet within hours. At the harbor shrine in [[Calven and Calveno]], Umberlee killed Branca, brought her back, and named this Pearl as the price of a later talk.
+A fist-sized black pearl with an iridescent sheen that shifts under light. It never stays still. Anyone who senses death will feel it before they see it. This divine instrument belonged to [[Umberlee]]. It rested in one of her shrines for years, guarded by the [[Waveservants]].
 
-The [[Khlysty - the Flock]] source identifies the Pearl as a possible shortcut to transcendence.
+*Wondrous item, artifact.*
 
-## At the Table
+The Pearl collects souls from anyone who drowns near it. It works nonstop, with no activation and no attunement needed. Once trapped in the Pearl, a soul cannot escape by normal means. The Pearl is one of seven instruments of **Umberlee**, each controlling a different part of her domain. No one has found the other six.
 
-Delmar offered the Pearl and the commissioners. Umberlee read the offer out of his head: “Bring me the pearl. We will talk then.” The debt remains outstanding through [[journal/Session 10 - Recap]].
+[[Delmar Fisk]] stole the Pearl from a Waveservant Shrine, and in anger [[Umberlee]] sank all five of his ships, taking the Pearl down with them. The wreck now rests at Red Lady site in the eastern [[Shelfworks]], deep inside [[The Drowned Maw]] below the planar boundary, where Umberlee's power stops. She cannot retrieve her own Pearl. The Pearl keeps working, collecting every drowned soul and holding Fisk's crews and those killed by the [[Leviathan]], while Umberlee bound the five captains to Fisk, the sole survivor, whose mind now holds them as their crews remain trapped in the Pearl.
 
-## Connections
+The Pearl is not merely calling. It holds a store of raw, untapped soul-power, and that power reaches across the planar boundary to anything on the far side that wants it. The Pearl sends a signal across the planar boundary to the [[Elemental Plane of Water]] (the Maw Entanglement), which the [[Leviathan]] found by following it. Every creature drawn to the fissure answers this call, including [[Auralis]], who woke when the signal crossed the boundary. What has come through so far, the Leviathan among them, is only the smallest of what wants in; see [[Elemental Plane of Water]] for what pushes at the breach from the other side. Recovering the Pearl stops the signal and renders the fissure normal again. This is Season 1's most important action. If left in place, the signal keeps calling and will draw something larger to the next fissure.
 
-- [[Khlysty - the Flock]]
-- [[Delmar Fisk]]
-- [[Drowned Maw]]
+The [[Tessarine Concordat]] fears what [[Aldric Drave]] could do with the Pearl. With it, he could expand his power beyond his bloodline. He could gather drowned souls for stability or turn mass drowning into phylactery material. The Concordat used the [[Chain Council]] to have [[Fisk's Fleet]] steal it before Aldric could. They claimed they wanted to protect it from Umberlee's wrath. Their real goal was control: stop Aldric from claiming it, then take it themselves. Before whoever reaches the wreck gets there, decide what the Pearl does when recovered and who accesses the souls. This artifact is a tool of power, never neutral.
 
-## Wiki Facts
+## Mechanics
 
-The Pearl is a live clock, not a recovered object. See [[Story So Far]].
+The source files describe only the Pearl's narrative properties, not game mechanics like charges, save DCs, or activation effects. It gathers souls passively and continuously without attunement or activation. Use `item-prep` if you need balance numbers for play.

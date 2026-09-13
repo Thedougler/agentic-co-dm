@@ -3,7 +3,9 @@ title: Vethka
 category: entities
 tags: [shattered-sea, vehicle]
 sources:
+  - "campaign-os:vethka-narration-appearance.md"
   - "wiki/_raw/Grung clans.md"
+  - "campaign-os:vethka.md"
 summary: Name attached to the narrow Grung war proas that carry raiding power through reefs and channels.
 provenance:
   extracted: 1.0
@@ -14,7 +16,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T00:00:00Z
-updated: 2026-09-12T00:00:00Z
+updated: 2026-09-13
 type: vehicle
 reveal: unrevealed
 campaign: shattered-sea
@@ -25,15 +27,47 @@ relationships:
   - target: "[[Verdant Teeth]]"
     type: related_to
 ---
+
 # Vethka
 
-Vethka is the source's name for the narrow Grung war proas that carry raiding power through the [[Verdant Teeth]] reefs and channels. Their construction and mechanics remain a fiction stub.
+![[vethka-narration-appearance]]
+
+*War proa · Tier 1 · [[Karath]].*
+
+*Vethka* is the [[Grung]] term for this class of vessel, not a proper name but a caste-designation. Roughly, it means *the waterline that moves toward you*. Every raiding proa built to the standard pattern receives this designation from its crews.
+
+The hull is single-piece iron-pillar hardwood from [[Verdant Teeth]], adze-worked by green-caste artisans, sealed inside and out with boiled tree resin. Water slides off. Rain cannot swell it. Spray sheds cleanly. From more than half a mile away on a dark night, a *vethka* running low with no sail set reads as debris, by design.
+
+In reef country, nothing with a keel can catch a *Vethka*. [[Grung]] Standing Leap means the crew is over the rail before the bow stops moving. The double outrigger lets it handle reef passages that would shred deeper hulls. Its threat comes from surprise, speed, and the poison bench, not from gunnery.
+
+## Stats & Combat
+
+| | |
+|---|---|
+| **Tier** | 1 ([[Speed]]-Built) |
+| **Hull Points** | 70 |
+| **Hull AC** | 11 |
+| **Maneuverability** | Superior |
+| **Profile** | Minimal |
+| **Crew (min/full)** | 2 / 12 |
+| **Cargo** | 2 tons |
+
+## Crew
+
+- Captain: none fixed. Command runs through the caste hierarchy, purple-caste leading each raid.
+- Notable crew: blue-caste handles navigation and piloting.
+- Notable crew: purple-caste runs raiding and assault, and is the sole caste permitted to work the poison bench.
+- Notable crew: green-caste covers construction and upkeep.
+- Notable crew: red-caste designed the poison bench, a narrow work surface sealed with flat resin forward of amidships, but never crews it.
 
 ## Connections
 
-- [[Grung clans]]
-- [[Verdant Teeth]]
+- [[Grung clans|Grung Clans]]: builders and operators of the *Vethka* class.
+- [[Verdant Teeth]]: source of the iron-pillar hardwood used in the hull.
+- [[Karath]]: home island, its no-harbour shoreline built for exactly this hull's low, unmoored profile. Karath alone crews six of the class.
+- [[Jean-Claude Tabarnack]]: tracks Karath's *Vethka* fleet, which runs crew and captives for the operation holding his family.
 
-## Provenance
+## Session Log
 
-This is a thin named-ingest stub. The source establishes their role but not a complete vehicle sheet.
+- s04: party sighted the *Vethka* extraction fleet clearing the [[Calven]] Roads with their Human cargo, during the Session 4 raid climax.
+- s05 to s06: pursuit of the *Vethka* carried forward as an established hook.

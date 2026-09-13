@@ -3,6 +3,7 @@ title: Talon Skarn
 category: entities
 tags: [shattered-sea, npc, countless]
 sources:
+  - "campaign-os:talon-skarn.md"
   - "wiki/_archive/Talon Skarn.md"
   - "Talon Skarn"
 summary: Countless peregrine apprentice and CR 13 flying skirmisher; his stoop-and-chain combat kit supports the Rule of Two rivalry with Talon Vantyrus.
@@ -15,7 +16,7 @@ lifecycle: canon
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T06:23:47Z
-updated: 2026-09-12T07:50:00Z
+updated: 2026-09-13
 type: npc
 reveal: unrevealed
 campaign: shattered-sea

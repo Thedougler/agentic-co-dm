@@ -3,6 +3,7 @@ title: Sentinels of the Eyrie
 category: entities
 tags: [shattered-sea, faction, sentinel, schism]
 sources:
+  - "campaign-os:sentinels-of-the-eyrie.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-sentinels-of-the-eyrie.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/location-high-eyrie.md"
 summary: "Aarakocra monks at High Eyrie who watch the Drowned Maw and record without conclusion; schism birthed Countless."
@@ -15,7 +16,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T20:20:00Z
-updated: 2026-09-13T20:20:00Z
+updated: 2026-09-13
 type: faction
 reveal: unrevealed
 campaign: shattered-sea

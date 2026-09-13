@@ -4,6 +4,8 @@ category: entities
 tags: [shattered-sea, vehicle, ship, red-wake]
 aliases: [Red Lady, Dead Lady]
 sources:
+  - "campaign-os:dead-lady.md"
+  - "campaign-os:dead-lady-narration-appearance.md"
   - "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md"
   - "dead-lady-escalation.md"
 summary: Raised wreck serving Umberlee's Red Wake, with a Gargantuan hull that takes boats, carries evidence, and turns familiar lanes into a moving encounter.
@@ -16,7 +18,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T03:00:00Z
-updated: 2026-09-13T21:05:00Z
+updated: 2026-09-13
 type: vehicle
 reveal: unrevealed
 campaign: shattered-sea
@@ -98,3 +100,10 @@ Track the wake before committing to the lane. Once the wreck converges, the crew
 ## Provenance
 
 The supplied vehicle drop establishes the Red Lady and Dead Lady identities, Gargantuan size, AC `12`, `230` hit points, raised-wreck silhouette, red wake, boarding line, lane pressure, survivor history, Pearl and Maw connection, collection behaviour, and unresolved exact crew and mechanism. It does not establish detailed ship mechanics.
+
+## Narration
+
+> [!narration]
+> *Her hull runs the length and rig of an older wreck, but the paint has gone dark red, blood-in-water red. The figurehead is a carved woman, eyes fixed forward. No crew show themselves on deck.*
+>
+> *Her sails hold full no matter what the wind is doing. She makes no sound. Her hull stays silent against the water. Her freeboard sits low enough to climb from a boat. Other ships give her room the moment they place her outline against the horizon.*

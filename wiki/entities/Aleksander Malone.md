@@ -3,6 +3,7 @@ title: Aleksander Malone
 category: entities
 tags: [shattered-sea, npc, dravosi-crown]
 sources:
+  - "campaign-os:aleksander-malone-narration-appearance.md"
   - "Khlysty - the Flock.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/kill-the-shepherd/npc.aleksander-malone.md"
   - "aleksander-malone.md"
@@ -16,7 +17,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T03:04:18Z
-updated: 2026-09-13T20:20:00Z
+updated: 2026-09-13
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -128,3 +129,10 @@ reactions:
 - [[Blackrule]]
 - [[HCS Ordinance]]
 - [[Corbin Knighton]]
+
+## Narration
+
+> [!narration]
+> *Tall and spare, a High Elf in a Crown-service coat that has been through worse than tailoring can hide. The wool carries salt and something older. Seams gone pale at the shoulders, patched at the elbows with leather that matches nothing else on him. His hands are steady and unused to stillness, resting open at his sides the way a man's do when he expects to need them.*
+>
+> *Before he speaks again, fingers touch his lips. Quick as a blessing. His eyes have already finished with whoever he is looking at.*

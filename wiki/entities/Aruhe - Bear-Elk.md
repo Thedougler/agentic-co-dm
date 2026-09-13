@@ -2,9 +2,11 @@
 title: Bear-Elk
 category: entities
 tags: [monster, aruhe]
-sources: ["Aruhe - Bear-Elk.md"]
+sources:
+  - "Aruhe - Bear-Elk.md"
+  - "campaign-os:bear-elk.md"
 created: 2026-09-12
-updated: 2026-09-12
+updated: 2026-09-13
 type: creature
 lifecycle: proposed
 reveal: unrevealed

@@ -3,6 +3,7 @@ title: "Aruhe - Grinning Ape"
 category: entities
 tags: [shattered-sea, creature, aruhe]
 sources:
+  - "campaign-os:grinning-apes.md"
   - "/workspace/midchain-ingest/group-a/monsters/Grinning Ape.md"
 summary: "CR 6 Aruhe bruiser ape from living-stock ecology."
 provenance:

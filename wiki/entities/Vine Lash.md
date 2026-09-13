@@ -3,6 +3,7 @@ title: "Vine Lash"
 category: entities
 tags: [shattered-sea, creature, aruhe]
 sources:
+  - "campaign-os:vine-lash.md"
   - "/workspace/midchain-ingest/group-a/monsters/Vine Lash.md"
 summary: "CR 3 trail-controller vine that hangs as rope, whips, wraps, and squeezes; fire and breakable bundles are the answers."
 provenance:
@@ -14,7 +15,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T19:59:00Z
-updated: 2026-09-13T19:59:00Z
+updated: 2026-09-13
 type: creature
 reveal: unrevealed
 campaign: shattered-sea
