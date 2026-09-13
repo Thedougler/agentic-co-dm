@@ -18,12 +18,18 @@
 - Q: Does this spec govern `errors.md`? → A: Yes. Agents fill it at runtime when an operation fails. They drain an entry when a wiki improvement (or other accepted fix) actually removes the cause. Do not drain without a fix. Do not leave a fixed error in the ledger.
 - Q: Should the system organize its own files and folders? → A: Yes. Agents self-organize file and folder layout as the system grows, including the wiki (llm-wiki), optimizing for agent lookup and token cost. The DM does not manage layout. Changing wiki facts still uses the accept-gate.
 
+### Session 2026-09-13
+
+- Q: What job should those seventeen legacy content types do in this feature? → A: Layout kinds only, and only for types that are not already a campaign `type`. Existing `type` values stay. Do not add a second name for Characters (`npc`), Places (`place`/`region`), Factions (`faction`), Deities (`lore`), Items (`item`), Vehicles (`vehicle`), Creatures (`creature`), Situations (`quest`), Narrative Islands (`quest`), Sessions (`session`/`session-prep`/`recap`), or Lore (`lore`). Keep Encounters, Rules, System, DM Intelligence, Campaign State, and Source Material as layout kinds.
+- Q: For those six layout kinds, which files are wiki pages and which are agent files? → A: Wiki: Encounters, Rules, Campaign State, DM Intelligence. Agent-facing: System, Source Material.
+- Q: Where should the recorded table aim live relative to Campaign State and DM Intelligence? → A: Aim stays on the campaign hub, grouped under Campaign State. DM Intelligence is separate analysis, not the aim.
+
 
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Aim at these players (Priority: P1)
 
-The DM names the people at the table and what this campaign is trying to be for them. The Co-DM works from that aim. When the DM and the Co-DM later state the aim independently, they name the same players and the same current intent. Generic "good D&D" is not the aim.
+The DM names the people at the table and what this campaign is trying to be for them. The Co-DM works from that aim. When the DM and the Co-DM later state the aim independently, they name the same players and the same current intent. Generic "good D&D" is not the aim. The recorded aim lives on the campaign hub. That hub is grouped under the Campaign State layout kind. DM Intelligence is a separate wiki group for table analysis (player interests, combat patterns, review queues); it is not a second copy of the aim.
 
 **Why this priority**: Bootstrap, reflection, and improvement have no target without a shared aim. Alignment is the product; the rest of the loop exists to serve it.
 
@@ -35,6 +41,7 @@ The DM names the people at the table and what this campaign is trying to be for 
 2. **Given** a recorded table aim, **When** the DM and the Co-DM each state the aim without seeing the other's wording, **Then** both name the same players and the same current intent.
 3. **Given** a recorded table aim, **When** the Co-DM proposes prep Work, **Then** the proposal is specific to those players and that intent, not interchangeable with a proposal for a different table.
 4. **Given** the DM changes who is at the table or what the campaign is trying to be, **When** they tell the Co-DM, **Then** later Work uses the updated aim and does not keep the obsolete one.
+5. **Given** a recorded table aim, **When** agents regroup Campaign State or DM Intelligence pages, **Then** the aim remains on the campaign hub and is not copied onto a DM Intelligence page.
 
 ---
 
@@ -116,27 +123,29 @@ When a Co-DM operation fails at runtime, agents write that failure to the error 
 
 ### User Story 6 - Layout grows into agent-shaped structure (Priority: P6)
 
-As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize files and folders so a later sitting can find the one file it needs without loading unrelated trees. That includes the wiki (llm-wiki). Layout is optimized for agent use: names and locations match the job or page kind, mixed dumps are split, and unused paths are not standing load. Agents do this as the system grows. They do not wait for the DM. A layout change that makes lookup slower or loads more unrelated material is not an improvement. Moving or regrouping a wiki page without changing its facts is layout, not a canon write. Changing wiki facts still waits on accept. When a page moves, agents keep it findable (links and names still resolve).
+As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize files and folders so a later sitting can find the one file it needs without loading unrelated trees. That includes the wiki (llm-wiki). Layout is optimized for agent use: names and locations match the job or **layout kind**, mixed dumps are split, and unused paths are not standing load. Layout kinds are only the non-redundant names. Wiki layout kinds: Encounters, Rules, Campaign State, DM Intelligence. Agent-facing layout kinds: System, Source Material. They are grouping names for lookup. They MUST NOT replace the campaign `type` enum. Existing types already cover Characters, Places, Factions, Deities, Items, Vehicles, Creatures, Situations, Narrative Islands, Sessions, and Lore — do not add a second grouping name for those. Agents do this as the system grows. They do not wait for the DM. A layout change that makes lookup slower or loads more unrelated material is not an improvement. Moving or regrouping a wiki page without changing its facts is layout, not a canon write. Changing wiki facts still waits on accept. Grouping System or Source Material does not make those files wiki canon. When a page moves, agents keep it findable (links and names still resolve).
 
 **Why this priority**: Growth without organization is wasted context. Agents already own token cost and helpers; layout is the same job at folder scale, including the wiki they retrieve from.
 
-**Independent Test**: Start from a mixed dump of unrelated agent files **and** mixed wiki pages of different kinds. After growth-triggered organization, a later sitting for one named job or one page kind opens only the files for that job or kind. The DM was not asked for the layout change. A reorg that scatters the needed file or forces a wider load does not count. Wiki facts were not rewritten. Links still resolve.
+**Independent Test**: Start from a mixed dump of unrelated agent files (System or Source Material) **and** mixed wiki pages of different wiki layout kinds (at least two of Encounters, Rules, Campaign State, DM Intelligence). After growth-triggered organization, a later sitting for one named job or one layout kind opens only the files for that job or kind. The DM was not asked for the layout change. A reorg that scatters the needed file or forces a wider load does not count. Wiki facts were not rewritten. Campaign `type` values were not rewritten. Source Material was not filed as canon. Links still resolve.
 
 **Acceptance Scenarios**:
 
 1. **Given** agent-facing files for different jobs mixed in one place, **When** that mix has grown past a single sitting's job, **Then** agents split or move them so each job has a findable location, without asking the DM.
-2. **Given** wiki pages of different kinds mixed so lookup loads unrelated trees, **When** that mix has grown, **Then** agents regroup them for agent lookup without asking the DM, and without changing page facts.
-3. **Given** that organization, **When** a later sitting runs one named job or retrieves one page kind, **Then** agents find those files without loading unrelated trees, at equal or lower token cost.
-4. **Given** a layout change that increases hops or unrelated load for the same job or page kind, **When** it is judged as an improvement, **Then** it does not count as one.
+2. **Given** wiki pages of different layout kinds mixed so lookup loads unrelated trees, **When** that mix has grown, **Then** agents regroup them by layout kind for agent lookup without asking the DM, and without changing page facts or campaign `type`.
+3. **Given** that organization, **When** a later sitting runs one named job or retrieves one layout kind, **Then** agents find those files without loading unrelated trees, at equal or lower token cost.
+4. **Given** a layout change that increases hops or unrelated load for the same job or layout kind, **When** it is judged as an improvement, **Then** it does not count as one.
 5. **Given** a wiki layout move, **When** it lands, **Then** page facts are unchanged, links still resolve, and the DM was not asked to accept the move.
 6. **Given** a change to wiki facts, **When** agents would file it, **Then** that change still waits on the DM accept-gate. Layout is not a path around canon.
 7. **Given** a one-off file that is not growing a mixed dump, **When** agents consider reorganizing, **Then** they leave it; growth, not tidiness, is the trigger.
+8. **Given** System or Source Material files mixed with wiki pages, **When** agents regroup, **Then** those files stay agent-facing; they are not filed as wiki canon.
 
 ---
 
 ### Edge Cases
 
 - No players named yet: the Co-DM does not claim the Work is aimed; it asks for the table aim first.
+- Moving table aim off the campaign hub onto a DM Intelligence page: invalid; the hub stays the single recorded aim, grouped under Campaign State.
 - DM names players but no intent: the Co-DM still asks for current campaign intent before treating alignment as done.
 - Reflection is only praise or only process talk: it is incomplete until it names a concrete observation about these players.
 - Reflection contradicts a wiki page: treat it as Work; do not silently overwrite canon.
@@ -170,13 +179,13 @@ As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize fi
 - Moving or regrouping a wiki page without changing facts: layout; agents do it; the DM is not asked.
 - Changing wiki facts under the cover of a layout move: invalid; that is a canon write and still needs accept.
 - Asking the DM to approve folder names for helpers, ledgers, scripts, or wiki grouping: out of scope; agents own layout.
-- Wiki layout move that leaves broken links: incomplete; agents keep the page findable in the same change.
+- Changing a page's campaign `type` during a layout move: invalid; layout kinds group files, they do not replace `type`. Adding a layout kind that duplicates an existing `type` (Characters for `npc`, Places for `place`, and the other redundant names) is invalid. Filing Source Material or System files as wiki canon via layout is invalid.
 
 ## Requirements *(mandatory)*
 
 ### Functional Requirements
 
-- **FR-001**: The DM MUST be able to record who the players are and the current campaign intent for those players.
+- **FR-001**: The DM MUST be able to record who the players are and the current campaign intent for those players on the campaign hub. The hub MUST be grouped under Campaign State. DM Intelligence MUST NOT hold a second copy of the aim.
 - **FR-002**: The Co-DM MUST work from that recorded aim. Work that could be swapped onto a different table without edits MUST NOT count as aimed.
 - **FR-003**: When no table aim is recorded, the Co-DM MUST ask for it before treating Work as aimed.
 - **FR-004**: When the DM updates the players or the intent, later Work MUST use the updated aim.
@@ -214,10 +223,10 @@ As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize fi
 - **FR-036**: After a wiki improvement lands, leftover ledger entries for causes that improvement fixed MUST be treated as wasted context and drained in the same sitting.
 - **FR-037**: The DM MUST NOT be required to fill, review, or drain the error ledger. A wiki write that is the fix still waits on the DM accept-gate; drain MUST wait until that write has landed.
 - **FR-038**: An undrained ledger of already-fixed errors MUST count as wasted context, not as an improvement record.
-- **FR-039**: Agents MUST self-organize agent-facing files and folders **and** the wiki (llm-wiki) as the system grows, so a later sitting can find the file for a named job or page kind without loading unrelated trees.
-- **FR-040**: Layout MUST be optimized for agent use: names and locations match the job or page kind; mixed dumps of unrelated jobs or kinds MUST be split; unused paths MUST NOT stay in standing load.
+- **FR-039**: Agents MUST self-organize agent-facing files and folders **and** the wiki (llm-wiki) as the system grows, so a later sitting can find the file for a named job or layout kind without loading unrelated trees.
+- **FR-040**: Layout MUST be optimized for agent use: names and locations match the job or layout kind; mixed dumps of unrelated jobs or layout kinds MUST be split; unused paths MUST NOT stay in standing load. Wiki layout kinds are Encounters, Rules, Campaign State, and DM Intelligence. Agent-facing layout kinds are System and Source Material. This loop MUST NOT replace the campaign `type` enum, MUST NOT add a layout kind that duplicates an existing `type`, and MUST NOT treat System or Source Material as wiki canon.
 - **FR-041**: Agents MUST NOT wait for the DM to request, review, or accept layout changes (agent-facing or wiki grouping).
-- **FR-042**: A layout change that increases lookup cost or unrelated load for the same job or page kind MUST NOT count as an improvement.
+- **FR-042**: A layout change that increases lookup cost or unrelated load for the same job or layout kind MUST NOT count as an improvement.
 - **FR-043**: A wiki layout move or regroup MUST NOT change page facts. Changing wiki facts MUST still wait on the DM accept-gate.
 - **FR-044**: One-off files MUST NOT be reorganized solely for tidiness. Growth that makes lookup costly is the trigger.
 - **FR-045**: When a wiki page moves or is regrouped, agents MUST keep it findable in the same change (links and names still resolve).
@@ -228,7 +237,7 @@ As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize fi
 - **DM**: The human who runs the session. Sole table runtime. Judge of whether the campaign is serving these players.
 - **Co-DM**: Agent work in prep and wrapup. Addresses the DM, never the players, and does not run during a session.
 - **Players**: The humans at this table. They receive the campaign. They do not operate the wiki or the Co-DM.
-- **Table aim**: Who these players are, and what this campaign is currently trying to be for them. Recorded by the DM. The shared target for alignment.
+- **Table aim**: Who these players are, and what this campaign is currently trying to be for them. Recorded by the DM on the campaign hub. The hub is grouped under Campaign State. DM Intelligence is not the aim.
 - **Work**: Mutable prep the DM may accept, edit, or reject.
 - **Gap**: A missing wiki fact or missing Co-DM practice that would otherwise be used for this sitting's job.
 - **Reflection**: Work offered after wrapup (and after prep when asked) that names what served these players and what did not.
@@ -239,8 +248,9 @@ As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize fi
 - **Wasted context**: Reading or writing that does not change the sitting's outcome. Agents cut it when quality holds. The DM does not gate that cut.
 - **Agent-shaped helper**: A reusable command agents create and maintain so a later sitting spends fewer tokens on the same job. Arguments in, result out, done vs failed. Owned by agents, not the DM.
 - **Error ledger** (`errors.md`): Agent-owned list of runtime failures. Filled when operations fail. Drained when the cause is actually fixed, including when improving the wiki.
-- **Agent-facing layout**: How helpers, ledgers, skills, and other agent files are named and grouped. Owned by agents.
-- **Wiki layout**: How wiki (llm-wiki) pages are named and grouped. Owned by agents. Optimized for findability and token cost as the system grows. Not a change to page facts.
+- **Agent-facing layout**: How helpers, ledgers, skills, System files, and Source Material are named and grouped. Owned by agents. Not wiki canon.
+- **Wiki layout**: How wiki (llm-wiki) pages are named and grouped by wiki **layout kind** (Encounters, Rules, Campaign State, DM Intelligence). Owned by agents. Optimized for findability and token cost as the system grows. Not a change to page facts or campaign `type`.
+- **Layout kind**: A grouping name for agent lookup. Not a campaign `type` value. Wiki: Encounters, Rules, Campaign State, DM Intelligence. Agent-facing: System, Source Material. Not used for Characters, Places, Factions, Deities, Items, Vehicles, Creatures, Situations, Narrative Islands, Sessions, or Lore — those already have `type`.
 
 ## Success Criteria *(mandatory)*
 
@@ -270,9 +280,9 @@ As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize fi
 - **SC-022**: After a wiki improvement that removes the cause of recorded errors, 100% of matching entries are drained in that sitting.
 - **SC-023**: 0% of drained entries in that sample were removed without the cause being fixed.
 - **SC-024**: In a sample of at least five fill or drain actions, 0% required the DM to edit the error ledger.
-- **SC-025**: After a mixed dump of unrelated agent-facing files **or** mixed wiki kinds is organized, a later sitting for one named job or one page kind loads files for that job or kind only, in 100% of sampled jobs, at equal or lower token cost.
+- **SC-025**: After a mixed dump of unrelated agent-facing files **or** mixed wiki layout kinds is organized, a later sitting for one named job or one layout kind loads files for that job or kind only, in 100% of sampled jobs, at equal or lower token cost.
 - **SC-026**: 0% of those layout changes (agent-facing or wiki grouping) required the DM to request, review, or accept them.
-- **SC-027**: 0% of sampled layout changes that increased hops or unrelated load for the same job or page kind are counted as improvements.
+- **SC-027**: 0% of sampled layout changes that increased hops or unrelated load for the same job or layout kind are counted as improvements.
 - **SC-028**: In that sample, 0% of wiki layout moves change page facts, and 100% keep links resolving.
 - **SC-029**: 0% of sampled wiki fact changes are filed as layout moves without the DM accept-gate.
 
@@ -280,7 +290,7 @@ As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize fi
 
 - Primary user is the human DM. Players receive the campaign; they do not operate this loop.
 - "Best possible campaign" is judged by the DM for this table. There is no hidden quality score the Co-DM optimizes without the DM.
-- This feature is the improvement loop around the existing Co-DM product. It does not replace ingest, prep proposals, play-surface staging, or wrapup filing.
+- This feature is the improvement loop around the existing Co-DM product. It does not replace ingest, prep proposals, play-surface staging, or wrapup filing. Layout kinds are lookup grouping only. Wiki layout kinds: Encounters, Rules, Campaign State, DM Intelligence. Agent-facing layout kinds: System, Source Material. They do not replace the campaign `type` enum and do not add a Work-coverage requirement per kind.
 - v1 remains one campaign, one table, D&D 5e.
 - Self-bootstrap means: produce Work from an incomplete start and name the gap. It does not mean the Co-DM rewrites campaign-facing practice without accept.
 - Self-reflection means: after wrapup (and after prep when asked), offer inspectable observations about these players. It does not mean a live agent at the table, and it does not mean contacting players.
@@ -290,4 +300,4 @@ As helpers, ledgers, skills, **and wiki pages** accumulate, agents reorganize fi
 - One reflection per wrapup is enough unless the DM asks for another.
 - Token cost is how much the Co-DM must read and write to finish the jobs. Agents manage it and decrease it objectively, including by creating and maintaining reusable agent-shaped helpers and by organizing files and folders — including the wiki (llm-wiki) — for agent lookup as the system grows. Quality is a constraint, not a trade. Fewer tokens that produce worse Work is not improvement. More tokens for the same jobs is not improvement unless they prevent a named failure. The DM is not asked to accept token-cost numbers, efficiency-only cuts, helpers, or layout.
 - The error ledger (`errors.md`) is agent-owned. Runtime failures fill it. Wiki improvements and other landed fixes drain matching entries. Drain without a fix is a defect. Leaving fixed errors in the ledger is wasted context.
-- Out of scope: a Co-DM agent during a session; player accounts or player-operated feedback; autonomous rewrite of campaign **canon facts**; replacing existing content evaluation or instruction-redesign rules for D&D content guidance; multi-campaign orchestration; non-5e rules systems; billing; replacing the DM; a hidden quality score; the DM managing or gating token cost, helpers, the error ledger, or layout; human-only wrappers; wrapping a command that already does the job; reorganizing one-off files for tidiness.
+- Out of scope: a Co-DM agent during a session; player accounts or player-operated feedback; autonomous rewrite of campaign **canon facts**; replacing existing content evaluation or instruction-redesign rules for D&D content guidance; replacing the campaign `type` enum; requiring Work for every layout kind; multi-campaign orchestration; non-5e rules systems; billing; replacing the DM; a hidden quality score; the DM managing or gating token cost, helpers, the error ledger, or layout; human-only wrappers; wrapping a command that already does the job; reorganizing one-off files for tidiness.
