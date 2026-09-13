@@ -4,6 +4,7 @@ category: entities
 tags: [shattered-sea]
 sources:
   - "wiki/_raw/Grung clans.md"
+  - "inbox/archive/FILED-2026-09-05-tessarine-concordat.md"
 summary: Captive pipeline clock tracking more than 314 fighting-age people moved from festival ports toward Karath.
 provenance:
   extracted: 1.0
@@ -14,7 +15,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T00:00:00Z
-updated: 2026-09-12T00:00:00Z
+updated: 2026-09-13T06:31:54Z
 type: quest
 reveal: unrevealed
 campaign: shattered-sea
@@ -29,7 +30,7 @@ relationships:
 ---
 # The taken 314
 
-The taken 314 is the captive-pipeline clock for more than `314` fighting-age people routed from festival ports through the Grung fleet toward [[Karath]]. [[Passage]] and Crown inspections create competing chances to find or lose them.
+The taken 314 is the captive-pipeline clock for more than `314` fighting-age people routed from festival ports through the Grung fleet toward [[Karath]]. [[Passage]] can still move people while the [[Dravosi Crown]] tries to own the rescue.
 
 ## Connections
 

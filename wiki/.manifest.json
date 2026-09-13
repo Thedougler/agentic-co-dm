@@ -472,7 +472,7 @@
         "entities/Aruhe - River Otter.md"
       ]
     },
-    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Spiguar.md": {
+    "/Users/nick/agentic-co-dm/wiki/_archive/Aruhe - Spiguar.md": {
       "content_hash": "f5108e1ab01afdaf6d5ba9b77f8f66b97b3b2b0833a7d8791f9a6251fc4e21e6",
       "last_ingested": "2026-09-12T17:31:53.192688+00:00",
       "pages_produced": [
@@ -514,7 +514,7 @@
         "entities/Aruhe - Razer-Grass.md"
       ]
     },
-    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Snakewood.md": {
+    "/Users/nick/agentic-co-dm/wiki/_archive/Aruhe - Snakewood.md": {
       "content_hash": "4a72768e9bba5fa22ed767260b8a5ec17fa202dce5b2acbcff7fb113b31abdf1",
       "last_ingested": "2026-09-12T18:12:30.220513+00:00",
       "pages_produced": [
@@ -542,21 +542,21 @@
         "entities/Young Bloodhawk.md"
       ]
     },
-    "/Users/nick/agentic-co-dm/wiki/_raw/aruhe-blight-hinewa.md": {
+    "/Users/nick/agentic-co-dm/wiki/_archive/aruhe-blight-hinewa.md": {
       "content_hash": "4f6bcfa5451f1a605240f5482c826001857da6730c173a67dde631f968ab34a4",
       "last_ingested": "2026-09-13T01:00:50.087691+00:00",
       "pages_produced": [
         "entities/Hinewai.md"
       ]
     },
-    "/Users/nick/agentic-co-dm/wiki/_raw/aruhe-crown-squid.md": {
+    "/Users/nick/agentic-co-dm/wiki/_archive/aruhe-crown-squid.md": {
       "content_hash": "89a8714a1f3649a04af1d4c4580ff5208f4db2c0318ee645d1ac3066c68380ad",
       "last_ingested": "2026-09-13T01:01:53.660733+00:00",
       "pages_produced": [
         "entities/Aruhe - Crown Squid.md"
       ]
     },
-    "/Users/nick/agentic-co-dm/wiki/_raw/Session-11-00-Random-Tables.md": {
+    "/Users/nick/agentic-co-dm/wiki/_archive/Session-11-00-Random-Tables.md": {
       "content_hash": "f7fd8a3bc6f1ad0c9551a64cd105c93473dff11d54675aa22368236df02e6fe3",
       "last_ingested": "2026-09-13T01:02:13.959059+00:00",
       "pages_produced": [
@@ -699,8 +699,7 @@
         "entities/Ozzeth.md",
         "entities/Botukuri.md",
         "entities/Twiceborn.md"
-      ]
-      ,
+      ],
       "pages_created": [
         "entities/Grung clans.md",
         "entities/Verdant Teeth.md",
@@ -735,6 +734,111 @@
       "pages_updated": [],
       "source_type": "document",
       "project": "shattered-sea"
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Passage.md": {
+      "content_hash": "d09fd91e887f423d74bd0c4ed3c1e52956c75295d971566f6bc95d7302aee0c2",
+      "last_ingested": "2026-09-13T06:33:44.747170+00:00",
+      "pages_produced": [
+        "entities/Passage.md",
+        "entities/Beaumont Sel.md",
+        "entities/Warren.md",
+        "entities/Survey Aruhe as a Tangle anchor.md",
+        "entities/The taken 314.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aldenmere.md": {
+      "content_hash": "e8126fe5c06f866e9b2a0d041b9521f51c4c7583bc105a4b8a45649d345595f3",
+      "last_ingested": "2026-09-13T06:42:30.489732+00:00",
+      "pages_produced": [
+        "entities/Aldenmere.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Beach.md": {
+      "content_hash": "5d5859c57dff4e6f06f732dd3fe07c2127dd6df98e33ba1672e63aef4ccc6668",
+      "last_ingested": "2026-09-13T06:44:05.508707+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Beach.md",
+        "entities/Aruhe - Reef Skull.md",
+        "entities/Taking on Aruhe.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Clear Lake.md": {
+      "content_hash": "91f8fbd9d205fa16ae617bb8c21462c0ca7a019491430a99a4ae8f78b91349d2",
+      "last_ingested": "2026-09-13T06:44:58.768038+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Clear Lake.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Grasslands - Print Braid.md": {
+      "content_hash": "0a4c42e3c52d58927a0ea9c29d8b6607aff94056fad3f1e311a825c248889068",
+      "last_ingested": "2026-09-13T06:45:28.004640+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Grasslands - Print Braid.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Grasslands Torn Crossing.md": {
+      "content_hash": "f6c2454ed1d59afc8f811979a4251b7365ce179dacb0724aaa5389293f9a1024",
+      "last_ingested": "2026-09-13T06:46:11.368459+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Grasslands Torn Crossing.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Lava Tubes.md": {
+      "content_hash": "354c6f407b47f330765a1986e0cf4f57692809d73057bb608c7fa3aa4a4306d3",
+      "last_ingested": "2026-09-13T06:46:11.431438+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Lava Tubes.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Quiet Forest Cutoff Lip.md": {
+      "content_hash": "097cc7e00049524e527a3f651743afddb56a680a4437491c9bf08dc20add2e19",
+      "last_ingested": "2026-09-13T06:46:11.491791+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Quiet Forest Cutoff Lip.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Quiet Forest Spoke Ring.md": {
+      "content_hash": "acaec1df6471ae8ecdc0559b5285d3b28cfd75e7b87842f05f9d3bf49e87482b",
+      "last_ingested": "2026-09-13T06:46:11.551261+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Quiet Forest Spoke Ring.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Quiet Forest Star Cut.md": {
+      "content_hash": "08b7d024bd4c29c3f1cdad67bec09d26f89f6f9505d83ce089f209cc346509e1",
+      "last_ingested": "2026-09-13T06:46:11.614494+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Quiet Forest Star Cut.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - River Landing Bank.md": {
+      "content_hash": "c709ec50940959d9eb6ab002e91884832d59a3ccfb15e32e29455128fce9bea4",
+      "last_ingested": "2026-09-13T06:47:05.364813+00:00",
+      "pages_produced": [
+        "entities/Aruhe - River Landing Bank.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Old Gardens.md": {
+      "content_hash": "627674fb74b03c6485be2c6b4b563a4a69b476ba6051f306080ed111f9000e65",
+      "last_ingested": "2026-09-13T06:47:47.393167+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Old Gardens.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Blackrule.md": {
+      "content_hash": "73ab66222ec600f074a1f147241fc78b7068d4acc8e23bf2ffff5efa53b96b0e",
+      "last_ingested": "2026-09-13T06:48:10.029343+00:00",
+      "pages_produced": [
+        "entities/Blackrule.md"
+      ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Grasslands.md": {
+      "content_hash": "52f8b83b613fe3f07f2710ca4a63701f1172da6fc2d04b954146f0c705feed66",
+      "last_ingested": "2026-09-13T06:49:24.103442+00:00",
+      "pages_produced": [
+        "entities/Aruhe - Grasslands.md",
+        "entities/Grung - Authority Seal.md"
+      ]
     }
   },
   "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Beach.md": {

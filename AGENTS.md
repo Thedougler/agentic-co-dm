@@ -107,6 +107,7 @@ Wiki hit = current canon. Legacy hit = campaign-of-record context; wiki write on
 Collection `legacy` is the `legacy/` archive. Search it only with `-c legacy`. Do not add it to the wiki / shattered-sea / legacy-ss order.
 
 If `qmd status` fails at session start, run `scripts/qmd-maintain.sh`. After wiki writes, wiki-ingest Step 8 runs that script. Exit 1: report the failure; already-written wiki pages stay.
+`qmd query`, `qmd embed`, and `qmd vsearch` need the local LLM. Agent harnesses set `CI=true`, which makes qmd refuse those calls. Prefix them with `env -u CI`. The maintain script already does this.
 
 ## Vault Structure
 

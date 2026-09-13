@@ -192,4 +192,4 @@ If the party broke from the hub, rebuild from the new route toward the last gras
 
 ## Battlemap
 
-![[attachments/shattered-sea/battlemaps/11-07-upscaled.jpg|Spoke Ring battlemap, fire hub and searchable Quiet with dead-end trails]]
+![[attachments/shattered-sea/battlemaps/11-06-upscaled.jpg|Session 11-06 Spoke Ring battlemap]]

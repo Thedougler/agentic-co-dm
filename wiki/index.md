@@ -10,6 +10,10 @@ title: Wiki Index
 *No pages yet.*
 
 ## Entities
+- [[Aldenmere]] — Quiet Crown farm island with a mile-wide tidal mere; a revenue officer collects the fishing tithe twice a year and leaves. ( #shattered-sea #region #crown-islands)
+- [[Blackrule]] — Volcanic terrace chapterhouse with one boat stair; Aleksander Malone trains here and leaves only when heresy is confirmed. ( #shattered-sea #place #midchain)
+- [[Tyr]] — Deity whose scales are cut into the altar stone at Blackrule. ( #shattered-sea #lore #deity)
+- [[Grung - Authority Seal]] — Spent gold-script seals that once compelled lower-caste grung to survey inland Aruhe and report back. ( #shattered-sea #item #grung)
 - [[Aruhe - Bear-Elk]] — CR 11 solitary territorial bruiser with a predictable patrol. ( #shattered-sea #creature #aruhe)
 - [[Aruhe - Black Lotus]] — Magic-feeding flora hazard that traps creatures and drains spell slots. ( #shattered-sea #hazard #aruhe #flora)
 - [[Aruhe - Bloodhawk]] — CR 11 aerial skirmisher that seizes exposed prey from a stoop. ( #shattered-sea #creature #aruhe)
@@ -52,10 +56,12 @@ title: Wiki Index
 - [[Aruhe - River|The River]] — Fastest route across Aruhe, occupied by otter families who treat entry and taking as claims. ( #shattered-sea #place #aruhe #river )
 - [[Aruhe - Quiet Forest|The Quiet]] — Silent rainforest where small life has disappeared and game trails guide travel toward the Marshes. ( #shattered-sea #place #aruhe #rainforest )
 - [[Aruhe - Memorial Grove]] — Still clearing where Hinewai's grief preserves the Death Bloom around a fruit tree and two graves. ( #shattered-sea #place #aruhe #grove )
-- [[Aruhe - Beach|Western Landing]] — Known reef-gap approach and retreat edge for Aruhe. ( #shattered-sea #place #aruhe #landing )
+- [[Aruhe - Beach|Western Landing]] — Aruhe's known sea approach: a reef gap, a short shingle beach, and a retreat that depends on tide and surf. ( #shattered-sea #place #aruhe #landing )
 - [[Aruhe - Clear Lake]] — Calm inland crater basin with otters, clear shallows, and routes toward the River and Grove. ( #shattered-sea #place #aruhe #lake )
 - [[Aruhe - Grasslands]] — Hot river-cut valleys of tall grass where water, cover, and predators force exposed choices. ( #shattered-sea #place #aruhe #grasslands )
 - [[Bloodhawk]] — CR 11 adult aerial skirmisher that telegraphs a stoop, seizes exposed prey, and breaks off when cover denies its dive. ( #shattered-sea #creature #aruhe)
+- [[Aruhe - Reef Skull]] — Dog-sized hermit crabs that live in hull pieces or skulls and bury themselves in Aruhe's western shingle. ( #shattered-sea #creature #aruhe)
+- [[Taking on Aruhe]] — Taking a living plant, animal, or claim on Aruhe draws surrounding life into hostility. ( #shattered-sea #lore #aruhe)
 - [[Young Bloodhawk]] — CR 2 juvenile aerial skirmisher that drives exposed prey into an adult Bloodhawk's hunting line. ( #shattered-sea #creature #aruhe #aerial #juvenile)
 - [[Aruhe - Bear-Elk]] — Huge solitary territorial bruiser whose predictable patrol makes it dangerous but trackable in Aruhe's wet forest margins. ( #shattered-sea #creature #aruhe)
 - [[Aruhe - Terror-Bird]] — CR 13 solitary bruiser that announces its charge through the ground, grapples prey with its beak, and swallows isolated targets. ( #shattered-sea #creature #aruhe)
@@ -75,6 +81,7 @@ title: Wiki Index
 - [[Giant's Guava]] — Rare Aruhe fruit that sets the eater's Primary Ability score to 25 for one hour. ( #shattered-sea #item #aruhe #consumable)
 - [[Redheart Berry]] — Rare Aruhe berry that restores 8d4 + 8 hit points as a Bonus Action. ( #shattered-sea #item #aruhe #consumable)
 - [[Aruhe - Old Gardens]] — Ancient fruit terraces inland from Western Landing, forming Aruhe's first route toward the Grasslands and Quiet Forest. ( #shattered-sea #place #aruhe #terraces #gardens)
+- [[Aruhe - River Landing Bank|Landing Bank]] — First grassland mouth after the Old Gardens: eight-foot grass, a used stop, north prints, and a wadeable river. ( #shattered-sea #place #aruhe #river #grasslands)
 - [[Aruhe - River - Line Bank]] — Used fruiting margin where abandoned fishing gear, fresh prints, and three fruit piles mark the route upriver. ( #shattered-sea #place #aruhe #river #grasslands)
 - [[Aruhe - Razer-Grass]] — Pale glass-edged grass that cuts movers, explodes when shattered, and fills the air with choking mineral dust. ( #shattered-sea #hazard #aruhe #flora)
 - [[Aruhe - Black Lotus]] — Magic-feeding flora hazard that traps creatures, drains spell slots, and can yield a crystallized Black Lotus Heart. ( #shattered-sea #item #aruhe #hazard #flora)
@@ -105,7 +112,7 @@ title: Wiki Index
 - [[Veth West Beach]] — Specific sanctioned Veth trade site where blue intermediaries meet outsiders without opening the interior. ( #shattered-sea #place)
 - [[Dreth-Orak Channel]] — Forbidden flooded crossing between Dreth and Orak, not an ordinary strait for outsider travel. ( #shattered-sea #place)
 - [[Vethka]] — Name attached to the narrow Grung war proas that carry raiding power through reefs and channels. ( #shattered-sea #vehicle)
-- [[Passage]] — Rescue network whose routes can intersect Grung raids without sharing their goals. ( #shattered-sea #faction)
+- [[Passage]] — Rescue network that moves people off official routes, with Nona as the face and a law against treating people as cargo. ( #shattered-sea #faction)
 - [[The taken 314]] — Captive pipeline clock tracking more than 314 fighting-age people moved from festival ports toward Karath. ( #shattered-sea)
 - [[Pursue the Grung raiding fleet]] — Pursuit thread following the Grung fleet through reefs, supply pressure, and the captive route toward Karath. ( #shattered-sea)
 - [[Simone's hunters]] — Family-pressure thread around Simone's report, leak hunt, and toxin stock against Jean-Claude and his allies. ( #shattered-sea)
@@ -118,6 +125,9 @@ title: Wiki Index
 - [[Ozzeth]] — Named Grung face whose color and current role are not established by this source. ( #shattered-sea #npc)
 - [[Botukuri]] — Sorn farming clan that occupies seasonal flood-pulse lanes rather than a permanent town. ( #shattered-sea #faction)
 - [[Twiceborn]] — Grung censure status signaled by sanctioned marking, color, hats, and public avoidance. ( #shattered-sea)
+- [[Beaumont Sel]] — Passage operative and family-linked courier who named Perrin a Friend of the Passage. ( #shattered-sea #npc)
+- [[Warren]] — Deepest Passage anchor, where the network grew around 1240 DR. ( #shattered-sea #place)
+- [[Survey Aruhe as a Tangle anchor]] — Nona's owed survey of whether Aruhe can take a Passage route or must be left alone. ( #shattered-sea #aruhe)
 ## Skills
 
 *No pages yet.*

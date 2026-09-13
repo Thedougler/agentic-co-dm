@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Agent harnesses export CI=true; qmd then refuses local LLM (embed/query).
+exec env -u CI qmd "$@"

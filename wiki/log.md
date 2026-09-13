@@ -87,3 +87,38 @@ title: Wiki Log
 - [2026-09-13T02:54:13Z] INGEST source="/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md" pages_updated=0 pages_created=8 mode=append
 - [2026-09-13T03:07:03Z] INGEST source="wiki/_raw/Khlysty - the Flock.md" pages_updated=2 pages_created=7 mode=append
 - [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Grung clans.md" pages_updated=0 pages_created=29 mode=append
+- [2026-09-13T05:05:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Spiguar.md" destination="wiki/_archive/Aruhe - Spiguar.md" pages=1
+- [2026-09-13T05:05:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Snakewood.md" destination="wiki/_archive/Aruhe - Snakewood.md" pages=1
+- [2026-09-13T05:05:00Z] ARCHIVE_RAW source="wiki/_raw/aruhe-blight-hinewa.md" destination="wiki/_archive/aruhe-blight-hinewa.md" pages=1
+- [2026-09-13T05:05:00Z] ARCHIVE_RAW source="wiki/_raw/aruhe-crown-squid.md" destination="wiki/_archive/aruhe-crown-squid.md" pages=1
+- [2026-09-13T05:05:00Z] ARCHIVE_RAW source="wiki/_raw/Session-11-00-Random-Tables.md" destination="wiki/_archive/Session-11-00-Random-Tables.md" pages=1
+- [2026-09-13T05:05:00Z] DELETE_RAW_TEMPLATES files=6 reason="copied to wiki/templates/"
+- [2026-09-13T06:31:54Z] INGEST source="wiki/_raw/Passage.md" pages_updated=2 pages_created=3 mode=append
+- [2026-09-13T06:31:54Z] ARCHIVE_RAW source="wiki/_raw/Passage.md" destination="wiki/_archive/Passage.md" pages=5
+- [2026-09-13T06:40:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - {Spiritpollen,Stillbloom,Stonepear,Terror-Bird,Unsaid Macaw,Wolfrabbit,Young Bloodhawk,Crown Squid,Deerstalker,Ghost Plum,Giant's Guava,Grubnade,Lesser Black Lotus,Razer-Grass,River Otter,River Slack Basin}.md" destination="wiki/_archive/" pages=16 reason="already ingested; cleared from _raw/"
+- [2026-09-13T06:41:34Z] INGEST source="wiki/_raw/Aldenmere.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T06:41:34Z] ARCHIVE_RAW source="wiki/_raw/Aldenmere.md" destination="wiki/_archive/Aldenmere.md" pages=1
+- [2026-09-13T06:50:00Z] INGEST source="wiki/_raw/Aruhe - Beach.md" pages_updated=1 pages_created=2 mode=append
+- [2026-09-13T06:50:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Beach.md" destination="wiki/_archive/Aruhe - Beach.md" pages=3
+- [2026-09-13T06:55:00Z] INGEST source="wiki/_raw/Aruhe - Clear Lake.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-13T06:55:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Clear Lake.md" destination="wiki/_archive/Aruhe - Clear Lake.md" pages=1
+- [2026-09-13T07:00:00Z] INGEST source="wiki/_raw/Aruhe - Grasslands - Print Braid.md" pages_updated=0 pages_created=0 mode=append note="skip rewrite; existing page already preserved"
+- [2026-09-13T07:00:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Grasslands - Print Braid.md" destination="wiki/_archive/Aruhe - Grasslands - Print Braid.md" pages=1
+- [2026-09-13T07:05:00Z] INGEST source="wiki/_raw/Aruhe - Grasslands Torn Crossing.md" pages_updated=0 pages_created=0 mode=append note="skip rewrite; existing page already preserved"
+- [2026-09-13T07:05:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Grasslands Torn Crossing.md" destination="wiki/_archive/Aruhe - Grasslands Torn Crossing.md" pages=1
+- [2026-09-13T07:05:00Z] INGEST source="wiki/_raw/Aruhe - Lava Tubes.md" pages_updated=0 pages_created=0 mode=append note="skip rewrite; existing page already preserved"
+- [2026-09-13T07:05:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Lava Tubes.md" destination="wiki/_archive/Aruhe - Lava Tubes.md" pages=1
+- [2026-09-13T07:05:00Z] INGEST source="wiki/_raw/Aruhe - Quiet Forest Cutoff Lip.md" pages_updated=0 pages_created=0 mode=append note="skip rewrite; existing page already preserved"
+- [2026-09-13T07:05:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Quiet Forest Cutoff Lip.md" destination="wiki/_archive/Aruhe - Quiet Forest Cutoff Lip.md" pages=1
+- [2026-09-13T07:05:00Z] INGEST source="wiki/_raw/Aruhe - Quiet Forest Spoke Ring.md" pages_updated=0 pages_created=0 mode=append note="skip rewrite; existing page already preserved"
+- [2026-09-13T07:05:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Quiet Forest Spoke Ring.md" destination="wiki/_archive/Aruhe - Quiet Forest Spoke Ring.md" pages=1
+- [2026-09-13T07:05:00Z] INGEST source="wiki/_raw/Aruhe - Quiet Forest Star Cut.md" pages_updated=0 pages_created=0 mode=append note="skip rewrite; existing page already preserved"
+- [2026-09-13T07:05:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Quiet Forest Star Cut.md" destination="wiki/_archive/Aruhe - Quiet Forest Star Cut.md" pages=1
+- [2026-09-13T07:10:00Z] INGEST source="wiki/_raw/Aruhe - River Landing Bank.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:10:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - River Landing Bank.md" destination="wiki/_archive/Aruhe - River Landing Bank.md" pages=1
+- [2026-09-13T07:15:00Z] INGEST source="wiki/_raw/Aruhe - Old Gardens.md" pages_updated=0 pages_created=0 mode=append note="skip rewrite; existing page already preserved"
+- [2026-09-13T07:15:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Old Gardens.md" destination="wiki/_archive/Aruhe - Old Gardens.md" pages=1
+- [2026-09-13T07:15:00Z] INGEST source="wiki/_raw/Blackrule.md" pages_updated=0 pages_created=2 mode=append
+- [2026-09-13T07:15:00Z] ARCHIVE_RAW source="wiki/_raw/Blackrule.md" destination="wiki/_archive/Blackrule.md" pages=2
+- [2026-09-13T07:20:00Z] INGEST source="wiki/_raw/Aruhe - Grasslands.md" pages_updated=1 pages_created=1 mode=append
+- [2026-09-13T07:20:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Grasslands.md" destination="wiki/_archive/Aruhe - Grasslands.md" pages=2

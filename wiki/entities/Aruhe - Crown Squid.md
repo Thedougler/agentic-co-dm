@@ -4,7 +4,7 @@ category: entities
 tags: [shattered-sea, creature, aruhe, canopy]
 sources:
   - "house (wiki creature.aruhe-crown-squid; CR 11 simplification)"
-  - "wiki/_raw/aruhe-crown-squid.md"
+  - "wiki/_archive/aruhe-crown-squid.md"
 summary: Gargantuan canopy predator that selects isolated prey, reels it above the forest floor, and pursues through connected crowns.
 provenance:
   extracted: 0.82
