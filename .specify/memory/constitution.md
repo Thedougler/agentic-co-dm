@@ -1,14 +1,14 @@
 <!--
 Sync Impact Report
-- Version change: 1.12.0 → 1.13.0
-- Modified principles: none
-- Added sections:
-  - XIII. Wiki Media Filenames Distinguish Kind
+- Version change: 1.13.0 → 1.14.0
+- Modified principles:
+  - XII. Prompt Other Agents With Objectives (expanded: trust spec + Spec Kit; no redundant task-irrelevant details)
+- Added sections: none
 - Removed sections: none
 - Other modified sections:
-  - Agent Operating Constraints (wiki media filenames follow XIII)
+  - Agent Operating Constraints (prompts omit Spec Kit lectures)
   - Development Workflow / Review (same)
-  - Governance / Compliance (reject kind-silent media filenames)
+  - Governance / Compliance (reject Spec Kit and redundant prompt padding)
 - Follow-up TODOs: none
 -->
 
@@ -207,23 +207,25 @@ resort when both designated writers are usage-limited.
 
 When a session agent prompts another coding agent (Claude Code, Codex, or
 equivalent), that prompt MUST trust the target to operate itself and its
-environment. It MUST state the objective. It MUST completely communicate
-independently testable acceptance criteria and deliverables. It MUST use
-the most token-efficient, cost-effective wording that still does those
-three things.
+environment, to follow the spec, and to use Spec Kit. It MUST state the
+objective. It MUST completely communicate independently testable acceptance
+criteria and deliverables for this task. It MUST use the most
+token-efficient, cost-effective wording that still does those things.
 
 The prompt MUST NOT include tool tutorials, harness walkthroughs, or
-environment operating manuals the target already has. MUST NOT pad with
-restated standing procedure, git ceremony, or skill internals the target
-already loads. Extra tokens are a defect unless they prevent a named
-failure or carry missing acceptance or deliverable facts. Required
+environment operating manuals the target already has. MUST NOT prompt the
+target about Spec Kit, spec-before-code, or other standing process the
+target already loads. MUST NOT pad with restated standing procedure, git
+ceremony, skill internals, or any other detail irrelevant to the task that
+subagent must complete. Extra tokens are a defect unless they prevent a
+named failure or carry missing acceptance or deliverable facts. Required
 instructions from this constitution (including VI's writing-for-agents
 instruction) remain in the prompt; they are named-failure prevention,
 not padding.
 
-Rationale: the other agent already knows its tools and environment.
-Tokens spent teaching that are cost without signal. Incomplete
-acceptance criteria is the actual failure.
+Rationale: the other agent already knows its tools, environment, and Spec
+Kit. Tokens spent teaching that, or restating process, are cost without
+signal. Incomplete acceptance criteria is the actual failure.
 
 ### XIII. Wiki Media Filenames Distinguish Kind
 
@@ -262,7 +264,8 @@ battlemap wastes tokens and produces wrong attachments.
   with `main`, and refresh agent-context, per X. They MUST NOT ask
   permission for those steps.
 - Prompts to Claude Code, Codex, or equivalent MUST follow XII: objective,
-  complete acceptance and deliverables, no operating-manual padding.
+  complete acceptance and deliverables, no Spec Kit lecture, no
+  task-irrelevant padding.
 - Wiki media assets MUST follow XIII: kind in the filename, no guessing.
 - Designated writer, when used: Claude Code at `claude-opus-4-6`
   `--effort medium`. MUST NOT use the `opus` alias or default Opus.
@@ -309,9 +312,10 @@ battlemap wastes tokens and produces wrong attachments.
    agent-shaped, that process is not overspecific, that easy safe idempotent
    automation is unattended, that standing agent context did not grow
    without a named failure, that prompts to other agents carry objectives
-   and complete acceptance rather than operating manuals, that wiki media
-   filenames distinguish kind without guessing, and that git/context
-   autonomy was not reintroduced as a human gate.
+   and complete acceptance rather than operating manuals, Spec Kit
+   lectures, or other task-irrelevant padding, that wiki media filenames
+   distinguish kind without guessing, and that git/context autonomy was
+   not reintroduced as a human gate.
 
 ## Governance
 
@@ -349,8 +353,9 @@ Compliance:
   or refresh agent-context MUST be rejected unless it prevents a named
   safety failure (secrets, force-push of `main`, skipping checks).
 - A prompt to another coding agent that includes an operating manual,
-  omits acceptance criteria or deliverables, or is longer than needed to
-  state those facts MUST be rejected.
+  Spec Kit tutorial, or other detail irrelevant to the task, omits
+  acceptance criteria or deliverables, or is longer than needed to state
+  those facts MUST be rejected.
 - A wiki media filename that does not encode kind, or that requires
   opening the file or guessing from nearby notes to classify it, MUST be
   rejected.
@@ -368,4 +373,4 @@ Compliance:
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.13.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
+**Version**: 1.14.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
