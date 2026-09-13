@@ -49,10 +49,10 @@ Writer reports a usage limit:
 1. Restore the prompt’s target paths to the dispatch-start revision (`git checkout <dispatch-start> -- <paths>`).
 2. Do not create parked dispatch.
 3. Record retry time: reset time from the report when present; if none, 5 hours from the stop; if a retry still reports a usage limit with no reset time, 24 hours from that attempt.
-4. Do not re-attempt before this time. A new session retries after it. Other in-session jobs are not marked incomplete for this reason.
+4. Do not re-attempt before this time. A new session retries after it. Defer only the Claude-dependent task. Complete remaining tasks that do not depend on it; do not mark those jobs incomplete.
 5. Session agent does not write the design-impact change.
 
-Done: targets match dispatch-start content; retry time recorded; no `Parked skill design:` issue.
+Done: targets match dispatch-start content; retry time recorded; independent work completed; no `Parked skill design:` issue.
 
 ## Verify
 

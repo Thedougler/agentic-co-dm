@@ -1,9 +1,9 @@
 <!--
 Sync Impact Report
-- Version change: 1.4.1 → 1.5.0
+- Version change: 1.5.0 → 1.5.1
 - Modified principles:
   - none renamed
-- Added sections: none (Agent Operating Constraints: Claude Code only when necessary)
+- Added sections: none
 - Removed sections: none
 - Follow-up TODOs: none in this file.
 -->
@@ -194,8 +194,10 @@ not lag completed work.
   worthless for language work (issue #3). Use Claude Code only for novel
   skill design, skill redesign, or a major skill-file change (issue #4).
   Session agents complete smaller edits to established files, Spec Kit
-  pattern tweaks, and `AGENTS.md`. Skill-update prompts are minimal,
-  focused, and direct; they name deliverables and completion criteria.
+  pattern tweaks, and `AGENTS.md`. A Claude Code usage limit defers only
+  that Claude-dependent task; remaining independent work continues.
+  Skill-update prompts are minimal, focused, and direct; they name
+  deliverables and completion criteria.
 
 ## Development Workflow
 
@@ -254,4 +256,4 @@ Compliance:
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.5.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
+**Version**: 1.5.1 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
