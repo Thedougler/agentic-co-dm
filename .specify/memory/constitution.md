@@ -1,7 +1,7 @@
 <!--
 Sync Impact Report
-- Version change: 1.6.0 → 1.7.0
-- Modified principles: none renamed
+- Version change: 1.7.0 → 1.8.0
+- Modified principles: XI. Claude Code Work Is Serialized → XI. Designated Writer Work Is Serialized
 - Added sections: none
 - Removed sections: none
 - Follow-up TODOs: none in this file.
@@ -169,18 +169,19 @@ Rationale: an agent that stops for git ceremony is not autonomous. The
 repository and its context files are the memory; the default branch must
 not lag completed work.
 
-### XI. Claude Code Work Is Serialized
+### XI. Designated Writer Work Is Serialized
 
-Agents MUST run at most one concurrent Claude Code instance. When multiple
-tasks require Claude Code, agents MUST execute those tasks sequentially;
-they MUST NOT overlap Claude Code instances. Independent non-Claude work
-MAY continue concurrently unless another governance rule forbids it.
-Deferred Claude Code tasks MUST remain incomplete on the feature
-`tasks.md` with a retry time. Completing other or new work during a
-usage-limit wait MUST NOT drop, close, or omit those tasks; they MUST
-be carried over and retried only after the recorded time.
+Agents MUST run at most one concurrent designated-writer instance
+(Claude Code or Codex). When multiple tasks require that writer, agents
+MUST execute those tasks sequentially; they MUST NOT overlap instances.
+Independent non-writer work MAY continue concurrently unless another
+governance rule forbids it. Deferred designated-writer tasks MUST remain
+incomplete on the feature `tasks.md` with a retry time. Completing other
+or new work during a usage-limit wait MUST NOT drop, close, or omit those
+tasks; they MUST be carried over and retried only after the recorded time,
+except where the Codex fallback below applies.
 
-Rationale: serial Claude Code usage prevents competing writers, preserves
+Rationale: one writer at a time prevents competing edits, preserves
 resource limits, and makes task ownership auditable. Carry-over keeps
 deferred work findable on the Spec Kit task list when other work lands.
 
@@ -203,17 +204,25 @@ deferred work findable on the Spec Kit task list when other work lands.
 - Agents MUST auto-commit, auto-push the working branch, keep it current
   with `main`, and refresh agent-context, per X. They MUST NOT ask
   permission for those steps.
-- Exclusive Claude writer, when used: `claude-opus-4-6` at `--effort medium`.
-  MUST NOT use the `opus` alias or default Opus. Default Opus output is
-  worthless for language work (issue #3). Use Claude Code only for novel
-  skill design, skill redesign, or a major skill-file change (issue #4).
-  Session agents complete smaller edits to established files, Spec Kit
-  pattern tweaks, and `AGENTS.md`. A Claude Code usage limit defers only
-  that Claude-dependent task on the feature `tasks.md` with a retry time;
+- Exclusive designated writer, when used: Claude Code at
+  `claude-opus-4-6` `--effort medium`. MUST NOT use the `opus` alias or
+  default Opus. Default Opus output is worthless for language work
+  (issue #3). Use that writer only for novel skill design, skill
+  redesign, or a major skill-file change (issue #4). Session agents
+  complete smaller edits to established files, Spec Kit pattern tweaks,
+  and `AGENTS.md`. A Claude Code usage limit defers only that
+  Claude-dependent task on the feature `tasks.md` with a retry time;
   remaining independent work continues. Completing other or new work
   while waiting MUST carry those deferred tasks forward still incomplete;
-  they MUST NOT be dropped, closed, or omitted, and MUST be retried only
-  after the recorded time.
+  they MUST NOT be dropped, closed, or omitted. If every remaining open
+  task is blocked by that usage limit, no other work can be done, and the
+  retry time on the blocked task is more than one hour away, the session
+  agent MAY invoke the Codex CLI at ChatGPT 5.5 medium with the same
+  tightly scoped skill-writing prompt. The session agent MUST NOT write
+  the design-impact change itself. Before each remaining blocked skill
+  job, the session agent MUST re-check those gates and MUST prefer Claude
+  Code if it is usable again. Retry after the recorded time unless that
+  Codex fallback applied.
 
 ## Development Workflow
 
@@ -268,12 +277,14 @@ Compliance:
 - A required human prompt to commit, push, branch, update from `main`,
   or refresh agent-context MUST be rejected unless it prevents a named
   safety failure (secrets, force-push of `main`, skipping checks).
-- Reviews MUST verify that no more than one Claude Code instance runs at
-  a time and that Claude Code tasks are sequential when multiple tasks
+- Reviews MUST verify that no more than one designated-writer instance
+  runs at a time and that those tasks are sequential when multiple tasks
   require it. Reviews MUST verify that usage-limited tasks remain on the
   feature `tasks.md` with a retry time when other work completed during
-  the wait.
+  the wait, and that Codex fallback ran only when every remaining open
+  task was blocked, no other work could be done, and the retry time was
+  more than one hour away.
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.7.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
+**Version**: 1.8.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
