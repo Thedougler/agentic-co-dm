@@ -1,0 +1,157 @@
+#!/bin/sh
+# Path-scoped commit + push. QMD maintain is background.
+# From repo root:
+#   ./scripts/after-write "commit message" -- path1 [path2…]
+# Flags: --no-embed | --dry-run | --allow-unrelated-dirty
+# Paths required for real commits. Only those paths are staged/committed.
+set -eu
+
+ROOT=$(CDPATH= cd -P "$(dirname "$0")/.." && pwd -P)
+cd "$ROOT"
+
+DO_EMBED=1
+DRY=0
+ALLOW_UNRELATED=0
+REQUIRE_BRANCH="${AI_CO_DM_REQUIRE_BRANCH:-}"
+MSG=""
+SEEN_SEP=0
+PATHS_FILE=$(mktemp)
+trap 'rm -f "$PATHS_FILE"' EXIT
+
+usage() {
+  printf '%s\n' "Usage: ./scripts/after-write [--no-embed] [--dry-run] [--allow-unrelated-dirty] \"commit message\" -- path1 [path2…]"
+  printf '%s\n' "Real commits require -- and at least one path. Only those paths are staged/committed."
+  printf '%s\n' "Commit contains only named paths. Unstaged leftover WIP is left alone (warning). Abort if the index would include a path you did not name, unless --allow-unrelated-dirty."
+  printf '%s\n' "Optional: --require-branch NAME or AI_CO_DM_REQUIRE_BRANCH (refuse if HEAD ≠ name)."
+}
+
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --no-embed) DO_EMBED=0; shift ;;
+    --dry-run) DRY=1; shift ;;
+    --allow-unrelated-dirty) ALLOW_UNRELATED=1; shift ;;
+    --require-branch)
+      if [ $# -lt 2 ]; then printf '%s\n' 'agentic-co-dm: --require-branch needs a name' >&2; exit 2; fi
+      REQUIRE_BRANCH=$2; shift 2 ;;
+    -h|--help) usage; exit 0 ;;
+    --)
+      SEEN_SEP=1
+      shift
+      while [ $# -gt 0 ]; do
+        printf '%s\n' "$1" >>"$PATHS_FILE"
+        shift
+      done
+      break
+      ;;
+    *)
+      if [ -n "$MSG" ]; then
+        printf '%s\n' "agentic-co-dm: unexpected arg: $1 (paths go after --)" >&2
+        usage >&2
+        exit 2
+      fi
+      MSG=$1
+      shift
+      ;;
+  esac
+done
+
+path_count=$(wc -l <"$PATHS_FILE" | tr -d ' ')
+
+if [ -z "$MSG" ] && [ "$DRY" -eq 0 ]; then
+  printf '%s\n' "agentic-co-dm: commit message required (or pass --dry-run)." >&2
+  usage >&2
+  exit 2
+fi
+
+if [ "$DRY" -eq 0 ] && { [ "$SEEN_SEP" -eq 0 ] || [ "$path_count" -eq 0 ]; }; then
+  printf '%s\n' "agentic-co-dm: path-scoped commit required — pass -- path1 [path2…]." >&2
+  usage >&2
+  exit 2
+fi
+
+if [ -n "$REQUIRE_BRANCH" ]; then
+  head_branch=$(git rev-parse --abbrev-ref HEAD)
+  if [ "$head_branch" != "$REQUIRE_BRANCH" ]; then
+    printf '%s\n' "agentic-co-dm: after-write aborted — on branch '$head_branch', required '$REQUIRE_BRANCH'." >&2
+    printf '%s\n' "Checkout the packet branch (or unset AI_CO_DM_REQUIRE_BRANCH / omit --require-branch)." >&2
+    exit 4
+  fi
+fi
+
+if [ "$DRY" -eq 0 ] && [ "$DO_EMBED" -eq 1 ]; then
+  if [ -x "$ROOT/scripts/qmd-maintain.sh" ]; then
+    "$ROOT/scripts/qmd-maintain.sh" || true
+  fi
+fi
+
+if [ "$DRY" -eq 1 ]; then
+  printf '%s\n' "== dry-run: git status =="
+  git status --short
+  if [ "$path_count" -gt 0 ]; then
+    printf '%s\n' "== dry-run: would stage =="
+    cat "$PATHS_FILE"
+  fi
+  exit 0
+fi
+
+is_allowed() {
+  candidate=$1
+  while IFS= read -r allowed; do
+    [ -n "$allowed" ] || continue
+    case $candidate in
+      "$allowed"|"$allowed"/*) return 0 ;;
+    esac
+  done <"$PATHS_FILE"
+  return 1
+}
+
+printf '%s\n' "== git commit + push (scoped) =="
+git reset HEAD -- . >/dev/null 2>&1 || true
+
+while IFS= read -r path; do
+  [ -n "$path" ] || continue
+  git add -A -- "$path"
+done <"$PATHS_FILE"
+
+SCOOP_FILE=$(mktemp)
+LEFTOVER_FILE=$(mktemp)
+trap 'rm -f "$PATHS_FILE" "$SCOOP_FILE" "$LEFTOVER_FILE"' EXIT
+
+git diff --cached --name-only | while IFS= read -r path; do
+  [ -n "$path" ] || continue
+  if ! is_allowed "$path"; then
+    printf '%s\n' "$path"
+  fi
+done >"$SCOOP_FILE"
+
+if [ -s "$SCOOP_FILE" ] && [ "$ALLOW_UNRELATED" -eq 0 ]; then
+  printf '%s\n' "agentic-co-dm: after-write aborted — commit index includes paths you did not name:" >&2
+  sed 's/^/  /' "$SCOOP_FILE" >&2
+  printf '%s\n' "Name only your paths after --, or ask Ops for --allow-unrelated-dirty (rare)." >&2
+  git reset HEAD -- . >/dev/null 2>&1 || true
+  exit 3
+fi
+
+{
+  git diff --name-only
+  git ls-files --others --exclude-standard
+} | sort -u | while IFS= read -r path; do
+  [ -n "$path" ] || continue
+  if ! is_allowed "$path"; then
+    printf '%s\n' "$path"
+  fi
+done >"$LEFTOVER_FILE"
+
+if [ -s "$LEFTOVER_FILE" ]; then
+  printf '%s\n' "agentic-co-dm: leaving unstaged WIP (not in this commit):" >&2
+  sed 's/^/  /' "$LEFTOVER_FILE" >&2
+fi
+
+if git diff --cached --quiet; then
+  printf '%s\n' "nothing to commit for given paths."
+  exit 0
+fi
+
+git commit -m "$MSG"
+git push -u origin HEAD
+git log -1 --oneline

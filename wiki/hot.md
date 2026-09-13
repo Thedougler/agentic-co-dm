@@ -1,10 +1,11 @@
 ---
 title: Hot Cache
-updated: 2026-09-13T07:50:00Z
+updated: 2026-09-13T18:35:56Z
 ---
 ## Recent Activity
 Ingested the `_raw/` location set into owner pages: Aruhe sites restored with `[!narration]` treatments, Crown/Midchain/Verdant Teeth geography filed, and dump notes archived out of staging.
 Filled stale Visualizer placeholders on Crown and Tessarine place pages from source geography only.
+Revised Session 11-01 so the opening re-enters the prior Crown Squid escape before the Bloodhawk stoop; DM copy now uses the updated narration-only session format.
 Ingested Passage as a runnable faction: kitchens and cover routes, Nona as face, Warren as deepest anchor, and a law against moving people as property.
 ## Active Threads
 The Grung clans are losing water reach while raids, toxin exports, and captive movement sharpen around the Verdant Teeth. Passage rescue routes and Crown inspections now intersect the fleet's route toward Karath.

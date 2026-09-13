@@ -1,0 +1,135 @@
+#!/usr/bin/env python3
+"""Fail on literal backslash-n (\\n) in session/beat markdown *bodies*.
+
+Wiki-UI / Obsidian readability: accidental ``\\n`` in prose shows as text, not a break.
+
+Scopes (default):
+  wiki/journal/sessions/**/*.md
+  wiki/templates/Session*.md
+
+Skips / leaves alone:
+  YAML frontmatter between --- fences
+  Fenced code blocks (``` … ```) — incl. Fantasy Statblocks
+  .agents/ .git/ .obsidian/ .qmd/ docs/ scripts/
+
+Usage (repo root):
+  ./scripts/lint-literal-newlines
+  ./scripts/lint-literal-newlines --json
+  ./scripts/lint-literal-newlines --path wiki/journal/sessions/shattered-sea/11
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+
+FRONTMATTER = re.compile(r"^---\s*\n(.*?)\n---\s*\n?", re.S)
+FENCE = re.compile(r"```[\s\S]*?```")
+LITERAL_N = re.compile(r"\\n")
+
+DEFAULT_GLOBS = (
+    "wiki/journal/sessions/**/*.md",
+    "wiki/templates/Session*.md",
+    "wiki/templates/**/Session*.md",
+)
+
+
+def strip_protected(text: str) -> str:
+    m = FRONTMATTER.match(text)
+    if m:
+        fm = m.group(0)
+        text = " " * len(fm) + text[len(fm):]
+
+    def blank(m: re.Match[str]) -> str:
+        return " " * len(m.group(0))
+
+    return FENCE.sub(blank, text)
+
+
+def iter_targets(scope: Path | None) -> list[Path]:
+    if scope is not None:
+        if scope.is_file():
+            return [scope]
+        return sorted(p for p in scope.rglob("*.md") if p.is_file())
+
+    out: list[Path] = []
+    for pattern in DEFAULT_GLOBS:
+        out.extend(ROOT.glob(pattern))
+    seen: set[Path] = set()
+    uniq: list[Path] = []
+    for p in sorted(out):
+        rp = p.resolve()
+        if rp in seen:
+            continue
+        seen.add(rp)
+        uniq.append(p)
+    return uniq
+
+
+def line_col(text: str, idx: int) -> tuple[int, int]:
+    line = text.count("\n", 0, idx) + 1
+    last_nl = text.rfind("\n", 0, idx)
+    col = idx - last_nl
+    return line, col
+
+
+def lint_file(path: Path) -> list[dict]:
+    try:
+        raw = path.read_text(encoding="utf-8")
+    except OSError as e:
+        return [{"path": str(path), "rule": "read_error", "msg": str(e)}]
+
+    scanned = strip_protected(raw)
+    hits: list[dict] = []
+    rel = path.relative_to(ROOT).as_posix()
+    for m in LITERAL_N.finditer(scanned):
+        line, col = line_col(raw, m.start())
+        snippet = raw[m.start(): min(len(raw), m.start() + 40)].split("\n", 1)[0]
+        hits.append(
+            {
+                "path": rel,
+                "rule": "literal_backslash_n",
+                "line": line,
+                "col": col,
+                "snippet": snippet,
+            }
+        )
+    return hits
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--json", action="store_true")
+    ap.add_argument("--path", type=Path, help="Limit to a file or directory")
+    args = ap.parse_args()
+
+    scope = args.path.resolve() if args.path else None
+    if scope is not None and not scope.exists():
+        print(f"agentic-co-dm: path not found: {scope}", file=sys.stderr)
+        return 2
+
+    files = iter_targets(scope)
+    all_hits: list[dict] = []
+    for path in files:
+        all_hits.extend(lint_file(path))
+
+    if args.json:
+        print(json.dumps({"fails": all_hits, "files": len(files)}, indent=2))
+    else:
+        if not all_hits:
+            print(f"ok — no literal \\n in session/beat bodies ({len(files)} files)")
+        else:
+            print(f"FAIL — {len(all_hits)} literal \\n outside fences/YAML ({len(files)} files scanned)")
+            for h in all_hits:
+                print(f"  {h['path']}:{h['line']}:{h['col']}  {h['rule']}  {h.get('snippet', '')!r}")
+            print("Fix: real newlines in prose (Wiki-UI). Leave YAML/statblock fences alone.")
+
+    return 1 if all_hits else 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

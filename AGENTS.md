@@ -169,57 +169,105 @@ Every wiki page has required frontmatter: `title`, `category`, `tags`, `sources`
 
 ## Skill Routing
 
-Skills live in `.skills/<name>/SKILL.md`. Match the user's intent to the right skill:
+Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the right skill. Beat-type routing and wiki-kind routing have their own tables above — this table covers everything else.
+
+### Wiki
 
 | User says something like… | Skill |
 |---|---|
 | "set up my wiki" / "initialize" | `wiki-setup` |
-| "/wiki-history-ingest claude" / "/wiki-history-ingest copilot" / "/wiki-history-ingest codex" / "/wiki-history-ingest hermes" / "/wiki-history-ingest openclaw" / "/wiki-history-ingest pi" | `wiki-history-ingest` |
-| "ingest" / "add this to the wiki" / "process these docs" / "process this export" / "ingest this data" / logs, transcripts / "/ingest-url <url>" / "add this URL" / "ingest this link" / "save this page" | `wiki-ingest` |
-| "import my Claude history" / "mine my conversations" | `claude-history-ingest` |
-| "import my Codex history" / "mine my Codex sessions" | `codex-history-ingest` |
-| "import my Hermes history" / "mine my Hermes memories" / "ingest ~/.hermes" | `hermes-history-ingest` |
-| "import my OpenClaw history" / "mine my OpenClaw sessions" / "ingest ~/.openclaw" | `openclaw-history-ingest` |
-| "import my Copilot history" / "mine my Copilot sessions" / "ingest ~/.copilot" | `copilot-history-ingest` |
-| "import my Pi history" / "mine my Pi sessions" / "ingest ~/.pi" | `pi-history-ingest` |
+| "/wiki-history-ingest claude" / "import my Claude history" / "mine my Copilot sessions" / any agent-history ingest | `wiki-history-ingest` |
+| "ingest" / "add this to the wiki" / "process these docs" / "/ingest-url <url>" / logs, transcripts | `wiki-ingest` |
 | "what's the status" / "what's been ingested" / "show the delta" | `wiki-status` |
 | "wiki insights" / "hubs" / "wiki structure" | `wiki-status` (insights mode) |
 | "what do I know about X" / "find info on Y" / any question | `wiki-query` |
 | "use my vault as context" / "context pack for X" / "bounded context" | `wiki-context-pack` |
-| "narrate" / "briefing" / "explain this topic" / "/wiki-narrate" | `wiki-narrate` |
+| "narrate" / "briefing" / "explain this topic" | `wiki-narrate` |
 | "audit" / "lint" / "find broken links" / "wiki health" | `wiki-lint` |
-| "dedup my wiki" / "find duplicate pages" / "merge duplicates" / "identity resolution" / "consolidate my wiki" | `wiki-dedup` |
+| "dedup my wiki" / "find duplicate pages" / "merge duplicates" | `wiki-dedup` |
 | "rebuild" / "start over" / "archive" / "restore" | `wiki-rebuild` |
 | "link my pages" / "cross-reference" / "connect my wiki" | `cross-linker` |
 | "fix my tags" / "normalize tags" / "tag audit" | `tag-taxonomy` |
 | "update wiki" / "sync to wiki" / "save this to my wiki" | `wiki-update` |
-| `@work update wiki` / `wiki-query @personal ...` / `@research save this` | Any matching wiki skill + Config Resolution Protocol `@name` override |
-| "export wiki" / "export graph" / "graphml" / "neo4j" / "export to OKF" / "OKF bundle" / "open knowledge format" | `wiki-export` |
-| "import wiki" / "import from export" / "load graph.json" / "import vault" / "import OKF bundle" / "/wiki-import" | `wiki-import` |
-| "color my graph" / "color code obsidian" / "color by tag/category/visibility" | `graph-colorize` |
-| "save this" / "/wiki-capture" / "capture this" / "file this conversation" / "/wiki-capture --quick" / "quick capture" / "capture this finding" / "save this gotcha" / "drop to raw" | `wiki-capture` |
+| `@work update wiki` / `wiki-query @personal ...` | Any matching wiki skill + Config Resolution Protocol `@name` override |
+| "export wiki" / "export graph" / "export to OKF" | `wiki-export` |
+| "import wiki" / "import from export" / "import OKF bundle" | `wiki-import` |
+| "color my graph" / "color code obsidian" | `graph-colorize` |
+| "save this" / "/wiki-capture" / "capture this" / "quick capture" / "drop to raw" | `wiki-capture` |
 | "/wiki-research [topic]" / "research X" / "find everything about Y" | `wiki-research` |
-| "create a dashboard" / "vault dashboard" / "show all X as a table" / "dynamic view" | `wiki-dashboard` |
-| "synthesize my wiki" / "find connections" / "what concepts keep coming up together" / "/wiki-synthesize" | `wiki-synthesize` |
+| "create a dashboard" / "vault dashboard" / "show all X as a table" | `wiki-dashboard` |
+| "synthesize my wiki" / "find connections" | `wiki-synthesize` |
+| "/wiki-claude [topic]" / "/wiki-codex [topic]" / "/wiki-hermes [topic]" | `wiki-agent` |
+| "/memory-bridge" / "browse codex memory" / "cross-tool memory" | `memory-bridge` |
+| "/session-brain" / "build my session map" / "what topics have gone stale" | `session-brain` |
+| "/wiki-sessions [topic]" / "which session did I do X in" | `session-search` |
+| "/daily-update" / "morning sync" / "refresh the wiki index" | `daily-update` |
+| "/wiki-switch NAME" / "switch vault" / "list my wikis" | `wiki-switch` |
+| "/wiki-digest" / "weekly digest" / "what's new in my wiki" | `wiki-digest` |
+| "/wiki-stage-commit" / "review staged pages" / "commit staged writes" | `wiki-stage-commit` |
+| "restyle Obsidian" / "CSS snippet" / "tune tabs/sidebars/graph panes" | `obsidian-layout-adjustment` |
+
+### Co-DM — session lifecycle
+
+| User says something like… | Skill |
+|---|---|
+| "run the session" / "start the sitting" / live-play guidance | `run-guide` |
+| "session wrapup" / "post-session" / end-of-session processing | `session-wrapup` |
+| "session recap" / "what happened last session" / recap for players | `session-recap` |
+| "plan the campaign" / "campaign arc" / "what's the long-term plan" | `campaign-planning` |
+| "cold open" / "how should the session start" | `cold-opens` |
+| "prep this encounter" / "build an encounter" / "encounter balance" | `encounter-prep` |
+| "reconcile session evidence" / "what actually happened vs. wiki" | `reconciling-session-evidence` |
+
+### Co-DM — world-building and design
+
+| User says something like… | Skill |
+|---|---|
+| "design a dungeon" / "dungeon layout" / "map this dungeon" | `dungeon-design` |
+| "homebrew monster" / "build a creature" / "stat block" | `homebrew-monsters-5e` |
+| "design a magic item" / "homebrew item" | `dnd-5e-magic-item-design` |
+| "design an NPC" / "build an NPC" / "NPC stat block" | `npc-design` |
+| "design a trap" / "trial" / "puzzle" / "hazard" | `traps-trials` |
+| "travel event" / "random encounter" / "journey event" | `travel-events` |
+| "world tick" / "what happens off-screen" / "advance the world" | `world-tick` |
+| "sandbox" / "player-driven narrative" / "open world" | `sandbox-narrative` |
+| "interview my PC" / "character interview" / "backstory session" | `pc-interview` |
+| "5e rules" / "how does X work in 5e" / mechanics question | `dnd5e-mechanics` |
+
+### Co-DM — presentation and Foundry VTT
+
+| User says something like… | Skill |
+|---|---|
+| "theatre of the mind" / "narrate this scene" / TotM description | `theatre-of-the-mind` |
+| "polish this prose" / "rewrite for the DM" / DM-facing copy | `copy-writer` |
+| visual reference for a depiction | `visual-references` |
+| produce / attach / place a visual aid | `visual-aids` |
+| "Foundry battlemap" / "build a map in Foundry" | `foundry-battlemap` |
+| "Foundry scene" / "stage this in Foundry" | `foundry-stage` |
+| "Foundry token" / "create a token" | `foundry-token` |
+
+### Tooling and meta
+
+| User says something like… | Skill |
+|---|---|
+| "search the wiki" / `qmd query` / semantic retrieval | `qmd` |
 | "create a new skill" | `skill-creator` |
-| "/vault-skill-factory" / "make a skill from my wiki" / "turn these pages into a skill" / "package my notes on X as a skill" / "build a domain-expert skill from my vault" | `vault-skill-factory` |
-| "/wiki-claude [topic]" / "/wiki-codex [topic]" / "/wiki-hermes [topic]" / "/wiki-openclaw [topic]" / "/wiki-copilot [topic]" / "/wiki-pi [topic]" | `wiki-agent` |
-| "/memory-bridge" / "browse codex memory" / "what did codex know about X" / "compare tool memories" / "cross-tool memory" | `memory-bridge` |
-| "/session-brain" / "build my session map" / "cluster my claude sessions" / "rebuild the session graph" / "what topics have gone stale" | `session-brain` |
-| "/wiki-sessions [topic]" / "which session did I do X in" / "find the session about X" / "when did I last work on X" / "have I done this before" | `session-search` |
-| "/daily-update" / "morning sync" / "refresh the wiki index" / "set up the daily cron" / "install terminal notification" | `daily-update` |
-| "/impl-validator" / "check this implementation" / "validate what you did" / "is this correct?" | `impl-validator` |
-| "/wiki-switch NAME" / "switch to my work wiki" / "switch vault" / "change wiki" / "list my wikis" / "show my vaults" / "create a new vault config" | `wiki-switch` |
-| "/wiki-digest" / "what did I learn this week" / "weekly digest" / "knowledge summary" / "what's new in my wiki" / "summarize my recent learning" / "monthly review" | `wiki-digest` |
-| "/wiki-context-pack" / "make a context pack" / "context slice for X" / "pack the wiki for my agent" / "bounded context for Y" | `wiki-context-pack` |
-| "/wiki-stage-commit" / "review staged pages" / "commit staged writes" / "promote staged pages" / "what's waiting in staging" | `wiki-stage-commit` |
-| "restyle Obsidian" / "adjust the vault layout" / "CSS snippet" / "tune tabs/sidebars/graph panes" | `obsidian-layout-adjustment` |
+| "/vault-skill-factory" / "make a skill from my wiki" | `vault-skill-factory` |
+| "research X" (general, not wiki-research) | `research` |
+| "domain model" / "model this domain" | `domain-modeling` |
+| "grill me" / "challenge my design" / "poke holes" | `grilling` |
+| "grill with docs" / "challenge against the spec" | `grill-with-docs` |
+| "write for agents" / "agent-facing prose" | `writing-for-agents` |
+| "obsidian markdown" / link/frontmatter standards | `obsidian-markdown` |
+| TDD / "write a test first" | `tdd` |
+
+Spec Kit adapters (`speckit-*`) are generated harness integrations, not primary intent routes. Invoke them via `/speckit-<phase>` directly.
 
 ### Session history: ingest vs. retrieve
 
 Three skills read agent session caches, and they are not interchangeable:
 
-- `wiki-history-ingest` (and its per-agent variants) **ingests** — distils sessions into permanent vault pages.
+- `wiki-history-ingest` **ingests** — distils sessions into permanent vault pages. Handles all agent variants (Claude, Copilot, Codex, Hermes, OpenClaw, Pi) as modes.
 - `wiki-agent` **ingests a slice** — finds sessions about one topic in another agent's history and pulls them into the vault.
 - `session-brain` / `session-search` **retrieve** — build a topic graph over the raw sessions and find or load one. They write a sidecar at `~/.claude/session-brain/` and never touch the vault.
 
