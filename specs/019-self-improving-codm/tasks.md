@@ -284,3 +284,9 @@ T033 wiki/templates/dm-intelligence.md type work
 - Data-model constraints are quoted in T008–T010, T015, T017, T020, T021, T023–T025, T030–T035
 - No new skill, no tokenizer, no second ledger helper, no wiki `type` for table aim / Encounters / Rules, no layout-kind frontmatter, no mandated folder taxonomy, no wiki templates for System or Source Material
 - Stop at any checkpoint to validate the story independently
+
+---
+
+## Phase 10: Convergence
+
+- [ ] T038 In `wiki/AGENTS.md` Approval, except layout moves and structure-only template rewrites that keep facts and `type` unchanged so agents do not wait on DM accept per FR-007, FR-041, FR-048 (contradicts)
