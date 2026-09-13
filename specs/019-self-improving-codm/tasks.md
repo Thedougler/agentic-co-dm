@@ -289,4 +289,4 @@ T033 wiki/templates/dm-intelligence.md type work
 
 ## Phase 10: Convergence
 
-- [ ] T038 In `wiki/AGENTS.md` Approval, except layout moves and structure-only template rewrites that keep facts and `type` unchanged so agents do not wait on DM accept per FR-007, FR-041, FR-048 (contradicts)
+- [X] T038 In `wiki/AGENTS.md` Approval, except layout moves and structure-only template rewrites that keep facts and `type` unchanged so agents do not wait on DM accept per FR-007, FR-041, FR-048 (contradicts)

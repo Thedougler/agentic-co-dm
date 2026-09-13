@@ -80,8 +80,8 @@ Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<ses
 
 ## Approval (FR-019)
 
-Do not create or change a campaign wiki page until the DM approves.
+Wiki facts change only after the DM accepts. Named ingest of approved sources, and thin complete-sentence stubs for names those sources contain (including as links), may file without a second accept. Invented names not in the source are Work — chat proposal first. Rejected proposals leave no page.
 
-Exceptions: named ingest of approved sources, and thin complete-sentence stubs for names those sources contain (including as links). Invented names not in the source are Work — chat proposal first.
+Layout moves and structure-only template rewrites that keep facts and `type` unchanged proceed without waiting.
 
-Rejected proposals leave no page. Wiki facts change only after accept.
+Done when: fact writes waited on accept; layout and structure-only rewrites did not.
