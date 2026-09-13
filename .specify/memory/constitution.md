@@ -1,4 +1,3 @@
-
 # Agentic Co-DM Constitution
 
 ## Core Principles
