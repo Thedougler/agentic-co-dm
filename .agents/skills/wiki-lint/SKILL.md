@@ -23,8 +23,8 @@ You are performing a health check on an Obsidian wiki. Your goal is to find and 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` plus any `OBSIDIAN_ALLOWED_LIFECYCLES`, `OBSIDIAN_ALLOWED_RELATIONSHIP_TYPES`, `OBSIDIAN_REQUIRED_TRUST_FIELDS`, and `OBSIDIAN_SCHEMA_SOURCE` values.
 2. **Read owner rules** — if `$OBSIDIAN_VAULT_PATH/AGENTS.md` exists, read it before interpreting any schema. Owner rules override framework defaults.
 3. **Form the effective schema** — record the schema source locator plus effective required/optional frontmatter, lifecycle values, relationship types, and provenance markers. Framework values are defaults; preserve owner extensions and relaxed requiredness exactly. Never coerce an owner type to a framework type.
-4. Read `index.md` for the full page inventory
-5. Read `log.md` for recent activity context
+4. Prefer `hot.md` + capped `qmd`/`rg` for inventory; full `index.md` only if that fails — whole-file preload is token waste
+5. Prefer `hot.md` for recent activity; open a bounded slice of `log.md` only if needed — do not preload all of `log.md`
 
 Pass the effective schema to deterministic checks explicitly. For example, add each owner extension with `--allow-lifecycle` / `--allow-relationship-type`, replace trust requiredness with repeatable `--required-trust-field`, and identify the authority with `--schema-source "$OBSIDIAN_VAULT_PATH/AGENTS.md"`. The JSON report's `schema` block must match the schema you formed before findings are accepted.
 

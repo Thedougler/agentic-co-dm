@@ -21,7 +21,7 @@ This skill can be invoked directly or via the `wiki-history-ingest` router (`/wi
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `COPILOT_HISTORY_PATH` (defaults to `~/.copilot/session-state`), and `COPILOT_VSCODE_STORAGE_PATH` (VS Code `workspaceStorage`; platform-specific — ask the user if absent)
 2. Query the ingest ledger with `python3 scripts/manifest.py` (`stats` / `has` / `get` / `delta`) — do **not** read whole `.manifest.json` into context
-3. Read `index.md` at the vault root to know what the wiki already contains
+3. Prefer `hot.md` + capped `qmd`/`rg` for existing wiki context; full `index.md` only if required — whole-file preload is token waste
 
 ## Ingest Modes
 
@@ -156,7 +156,7 @@ ORDER BY s.updated_at DESC, c.checkpoint_number ASC;
 
 Each checkpoint file has: `title`, `overview`, `history`, `work_done`, `technical_details`, `important_files`, `next_steps`.
 
-Read `index.md` (if present) as a session-level summary — it's typically written at session end and is already concise.
+Prefer a capped read of session summary material (`hot.md` / targeted `rg`); do not preload full vault `index.md` for this.
 
 ### What to extract:
 

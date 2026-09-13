@@ -98,7 +98,7 @@ Also decide the **mode**:
 
 Build a candidate set *without opening any page bodies*:
 
-- You've already read `index.md` above — use it as the first filter. It lists every page with a one-line description and tags.
+- Prefer `hot.md` + capped `qmd`/`rg` as the first filter; full `index.md` only if that fails — whole-file preload is token waste.
 - Use `Grep` to scan page **frontmatter only** for title, tag, alias, and summary matches. A pattern like `^(title|tags|aliases|summary):` scoped to vault `.md` files is far cheaper than content grep.
 - Collect the top 5–10 candidate page paths ranked by:
   1. Exact title or alias match
