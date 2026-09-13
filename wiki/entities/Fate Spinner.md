@@ -32,23 +32,25 @@ owner: "[[Crissdalynn Khinriss]]"
 ![[Fate Spinner Narration Appearance]]
 
 > [!narration] Narration
-> Crissdalynn's meditation focus — the dreidel also called the Fate Spinner — rides in her kit as an ordinary spinning charm until it bonds.
+> A four-sided top no bigger than a thumb, cut from a single piece of clear quartz. It stays cool even in a warm hand. Years of a thumbnail setting it spinning wore its faces smooth; no maker's mark survives. Spun in sunlight, it casts coins of colored light across the surface it sits on, and it spins far longer than such a small piece should. A faint glass-on-glass tick marks each turn — smaller than a coin drop, and harder to ignore.
 
 *Wondrous item, artifact (requires attunement, gated by an act of risking one's own life to save another).*
 
-**[HB] Attunement.** The dreidel ignores the standard ritual. It bonds only to a creature who has knowingly risked their own life to save another's. The DM judges whether an act qualifies (a judgment call, purely discretion).
+## Attunement
+
+**[HB]** The dreidel ignores the standard ritual. It bonds only to a creature who has knowingly risked their own life to save another's. The DM judges whether an act qualifies.
 
 [[Crissdalynn Khinriss]] satisfied this pulling [[Delmar Fisk|Delmar]] through thirty feet of solid water as the [[Red Lady]] went down, long before she knew the dreidel was magical.
 
-Once bonded, it stays attuned normally. Re-attune only if it's lost, given away, or the bond is deliberately broken.
+Once bonded, it stays attuned normally. Re-attune only if it is lost, given away, or the bond is deliberately broken.
 
-**[HB] The Changed Record.** Once per day, the holder may spin the dreidel to open a vision on one creature they know personally. Same plane only. Any distance. It lasts 30 minutes or until dismissed.
+## The Changed Record
 
-The holder sees and hears what the target sees and hears.
+**[HB]** Once per day, the holder may spin the dreidel to open a vision on one creature they know personally. Same plane only. Any distance. It lasts 30 minutes or until dismissed.
 
-Every check or save the target rolls, the holder rolls alongside and donates it. The target gains advantage on each one, automatically, with no cost beyond the vision itself.
+The holder sees and hears what the target sees and hears. Every check or save the target rolls, the holder rolls alongside and donates it. The target gains advantage on each one, automatically, with no cost beyond the vision itself.
 
-Edge cases: an invalid target or the target's plane-shift ends the use. It grants sight only: no two-way communication, and the target never learns why they have advantage.
+Edge cases: an invalid target or the target's plane-shift ends the use. It grants sight only — no two-way communication, and the target never learns why they have advantage.
 
 **Limitations.** No benefit to the holder's rolls or defenses. One vision at a time. Same-plane targets only. Must know them personally. The holder and target can't be in the same place while it's active. It can't aid a fight the holder is in.
 
@@ -58,7 +60,7 @@ Also called the dreidel. [[Crissdalynn Khinriss]] carries it as her meditation f
 
 ## At the Table
 
-Once per day the holder opens a same-plane vision on someone they personally know for up to 30 minutes; for that window every check or save the target rolls, the holder rolls alongside and donates advantage. The viewing half alone tracks below [[Crystal Ball]] (Very Rare, at-will [[Scrying]] with broad targeting), since this is narrower (known-person-only, same-plane-only, 1/day). Unlimited no-cost advantage on every check and save for 30 minutes has no RAW ceiling below Legendary/Artifact — a deliberate DM design call.
+When she spins it tonight, she can open a same-plane vision on someone she personally knows for up to 30 minutes. For that window every check or save the target rolls gains donated advantage from her parallel roll — sight only, no warning to the target, and she cannot use it on a fight she is already in.
 
 ## Connections
 
@@ -74,9 +76,9 @@ Once per day the holder opens a same-plane vision on someone they personally kno
 
 ## Secrets
 
-Its nature predates Kyzil. The [[Sentinels of the Eyrie]] record without conclusion and never intervene. This item breaks that rule: it watches and acts. It's older than their doctrine, a piece of what the order practiced before swearing off intervention. The [[Soul Incarnate]]'s founding documents reference this same old tradition, though they never explain it.
+Its nature predates Kyzil. The [[Sentinels of the Eyrie]] record without conclusion and never intervene. This item breaks that rule: it watches and acts. It is older than their doctrine, a piece of what the order practiced before swearing off intervention. The [[Soul Incarnate]]'s founding documents reference this same old tradition, though they never explain it.
 
-The table (Session 06) never determined the dreidel's magic. The player named her tattoo as her one confirmed item. Yet she used the dreidel in-fiction to calm a [[Grung]] child. This page settles that: the dreidel is magical. The Changed Record above is what it does.
+Session 06 never determined the dreidel's magic at the table; the player named her tattoo as her one confirmed item, yet she used the dreidel in-fiction to calm a [[Grung]] child. The Changed Record above is the magic it carries.
 
 ## Provenance
 

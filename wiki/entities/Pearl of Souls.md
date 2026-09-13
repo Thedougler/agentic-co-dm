@@ -39,15 +39,17 @@ relationships:
 
 Plot-relevant item, artifact (no activation required; passive soul collection).
 
-The Pearl collects souls from anyone who drowns near it. It works nonstop, with no activation and no attunement needed. Once trapped in the Pearl, a soul cannot escape by normal means. The Pearl is one of seven instruments of **Umberlee**, each controlling a different part of her domain. No one has found the other six. The source files describe only these narrative properties, not charges, save DCs, or other balance numbers. Use `item-prep` if balance numbers are needed for play.
+## Effect
+
+The Pearl collects souls from anyone who drowns near it. It works nonstop, with no activation and no attunement needed. Once trapped in the Pearl, a soul cannot escape by normal means. The Pearl is one of seven instruments of [[Umberlee]], each controlling a different part of her domain; the other six remain unfound. Sources describe these narrative properties only — no charges, save DCs, or balance numbers are recorded here.
 
 ## At a Glance
 
-This divine instrument belonged to [[Umberlee]] and now rests with the wreck at the Red Lady site in the eastern [[Shelfworks]], deep inside [[The Drowned Maw]] below the planar boundary, where Umberlee's power stops. Recovering it is Season 1's most important action.
+Season 1's key recovery target. The Pearl rests with the wreck at the Red Lady site in the eastern [[Shelfworks]], deep inside [[The Drowned Maw]] below the planar boundary, where Umberlee's power stops.
 
 ## At the Table
 
-The Pearl holds a store of raw, untapped soul-power and sends a signal across the planar boundary to the [[Elemental Plane of Water]] (the Maw Entanglement). The [[Leviathan]] found the fissure by following that signal; [[Auralis]] woke when the signal crossed the boundary. Recovering the Pearl stops the signal and renders the fissure normal again. If left in place, the signal keeps calling and will draw something larger to the next fissure. Before whoever reaches the wreck gets there, decide what the Pearl does when recovered and who accesses the souls. This artifact is a tool of power, never neutral.
+The Pearl holds raw, untapped soul-power and sends a signal across the planar boundary to the [[Elemental Plane of Water]] (the Maw Entanglement). The [[Leviathan]] found the fissure by following that signal; [[Auralis]] woke when the signal crossed the boundary. Recovering the Pearl stops the signal and renders the fissure normal again. If left in place, the signal keeps calling and will draw something larger to the next fissure. Before whoever reaches the wreck gets there, decide what the Pearl does when recovered and who accesses the souls. This artifact is a tool of power, never neutral.
 
 ## Connections
 
@@ -70,4 +72,4 @@ The [[Tessarine Concordat]] claimed they wanted to protect the Pearl from Umberl
 
 ## Provenance
 
-This divine instrument belonged to [[Umberlee]]. It rested in one of her shrines for years, guarded by the [[Waveservants]]. [[Delmar Fisk]] stole the Pearl from a Waveservant Shrine, and in anger [[Umberlee]] sank all five of his ships, taking the Pearl down with them. The wreck now rests at the Red Lady site in the eastern [[Shelfworks]], deep inside [[The Drowned Maw]] below the planar boundary. The Pearl keeps working, collecting every drowned soul and holding Fisk's crews and those killed by the [[Leviathan]], while Umberlee bound the five captains to Fisk, the sole survivor, whose mind now holds them as their crews remain trapped in the Pearl. The [[Chain Council]] had [[Fisk's Fleet]] steal it before [[Aldric Drave]] could.
+[[Delmar Fisk]] stole the Pearl from a Waveservant shrine that had guarded it for years. In anger [[Umberlee]] sank all five of his ships, taking the Pearl down with them. The wreck now rests at the Red Lady site. The Pearl keeps collecting drowned souls — including Fisk's crews and those killed by the [[Leviathan]] — while Umberlee bound the five captains to Fisk, the sole survivor. The [[Chain Council]] had [[Fisk's Fleet]] steal it before [[Aldric Drave]] could.

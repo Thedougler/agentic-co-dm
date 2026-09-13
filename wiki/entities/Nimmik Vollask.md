@@ -44,12 +44,15 @@ relationships:
 - **Crew (min).** 8 minimum; about 62 full; 70 max.
 - **Passengers.** Medium-or-larger customers do not board.
 - **Cargo.** 90 tons.
-
-Hull points 190, hull AC 11, poor maneuverability, high profile, four swivel-gun mounts, about 110 gp/week upkeep.
+- **Hull points.** `190`.
+- **Hull AC.** `11`.
+- **Maneuverability.** Poor; high profile.
+- **Weapons.** Four swivel-gun mounts.
+- **Upkeep.** About 110 gp/week.
 
 ## Components
 
-- **Hull.** Boxy proportions with a questionable centre of gravity; orange paint over older colors.
+- **Hull.** Boxy proportions with a questionable centre of gravity; orange paint over older colors. AC `11`; `190` hit points.
 - **Helm.** Gnomish rotating consensus via shift leads below decks; [[Cotter Foss]] is the public interface.
 - **Movement.** Sail; rocks and sways in any wind.
 - **Weapons.** Swivel guns only.
@@ -77,4 +80,4 @@ Gnome-crewed orange cargo brig (alias: the Depot) on the [[Central Strait]]. [[C
 
 ## At the Table
 
-Pull up and flag [[Cotter Foss]] at the rail, name the cargo, pay the fee. Free coffee and gnomish meatballs come with the deal. Orders leave by crane-and-hatch handoff across open water; nobody Medium boards. Passages below are Small-or-smaller.
+When the crew needs stores mid-strait, run the rail buy — flag Cotter, settle the list and fee, take the crane handoff. Do not stage a boarding scene; passages below are Small-or-smaller, and Medium characters stay on their own deck.

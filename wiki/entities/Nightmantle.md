@@ -44,7 +44,7 @@ This cloak carries a curse layered on top of that protection. When a creature wi
 
 ## At a Glance
 
-[[Crissdalynn Khinriss]] bought it expecting straightforward protection and carries it in her kit. The cloak matches RAW [[Cloak of Displacement]] protection plus a curse that pulls ranged attacks meant for nearby allies onto her at a normal roll.
+[[Crissdalynn Khinriss]] bought it expecting straightforward protection and carries it in her kit. Displacement makes her hard to hit; the curse pulls ranged fire meant for nearby allies onto her at a normal roll.
 
 ## At the Table
 
@@ -53,15 +53,15 @@ The next time an ally within 10 feet of her is the target of a ranged attack, th
 ## Connections
 
 - [[Crissdalynn Khinriss]] — Current holder; bought expecting protection.
-- [[Lavinia Sordi]] — Sold it from her rack at [[La Cenere]] in [[Le Paludi]], [[Calveno]], for 900 gp under the name Nightmantle (Session 8). Believed it to be a [[Cloak of Protection]].
-- [[Osset]] — Falcon-featured man Lavinia said she acquired it from.
+- [[Lavinia Sordi]] — Sold it from her rack at [[La Cenere]] in [[Le Paludi]], [[Calveno]], for 900 gp under the name Nightmantle (Session 8).
+- [[Osset]] — Falcon-featured man Lavinia named as the prior source.
 - [[Cloak of Displacement]] — Correct identification in play; cursed variant.
 - [[Cloak of Protection]] — What Lavinia believed she was selling.
 
 ## Secrets
 
-Lavinia believed it to be a [[Cloak of Protection]]. Play identified it correctly as a cursed Cloak of Displacement. Lavinia said she acquired it from a falcon-featured man calling himself [[Osset]].
+Play identified the cloak as a cursed [[Cloak of Displacement]], not the [[Cloak of Protection]] Lavinia thought she sold. The seller's misidentification is the hidden friction; the curse itself is already on the effect block.
 
 ## Provenance
 
-Sold by [[Lavinia Sordi]] from her rack at [[La Cenere]] in [[Le Paludi]], [[Calveno]], for 900 gp, to [[Crissdalynn Khinriss]], Session 8, under the name Nightmantle. Lavinia believed it to be a [[Cloak of Protection]]. Play identified it correctly as a cursed Cloak of Displacement. Lavinia said she acquired it from a falcon-featured man calling himself [[Osset]].
+Sold by [[Lavinia Sordi]] from her rack at [[La Cenere]] in [[Le Paludi]], [[Calveno]], for 900 gp, to [[Crissdalynn Khinriss]], Session 8, under the name Nightmantle. Lavinia said she acquired it from a falcon-featured man calling himself [[Osset]].
