@@ -1,13 +1,14 @@
 <!--
 Sync Impact Report
-- Version change: 1.10.1 → 1.11.0
-- Modified principles:
-  - XI. Designated Writer Work Has Bounded Concurrency (expanded: session agent MAY write design-impact when both Claude Code and Codex are usage-limited)
-- Added sections: none
+- Version change: 1.11.0 → 1.12.0
+- Modified principles: none
+- Added sections:
+  - XII. Prompt Other Agents With Objectives
 - Removed sections: none
 - Other modified sections:
-  - Agent Operating Constraints (session-agent write is last-resort after both designated writers report usage limits)
-  - Governance / Compliance (same last-resort exception)
+  - Agent Operating Constraints (prompts to other agents follow XII)
+  - Development Workflow / Review (same)
+  - Governance / Compliance (reject padded or incomplete agent prompts)
 - Follow-up TODOs: none
 -->
 
@@ -202,6 +203,28 @@ and isolated from Claude Code. Carry-over keeps deferred work findable on
 the Spec Kit task list when other work lands. Session-agent write is last
 resort when both designated writers are usage-limited.
 
+### XII. Prompt Other Agents With Objectives
+
+When a session agent prompts another coding agent (Claude Code, Codex, or
+equivalent), that prompt MUST trust the target to operate itself and its
+environment. It MUST state the objective. It MUST completely communicate
+independently testable acceptance criteria and deliverables. It MUST use
+the most token-efficient, cost-effective wording that still does those
+three things.
+
+The prompt MUST NOT include tool tutorials, harness walkthroughs, or
+environment operating manuals the target already has. MUST NOT pad with
+restated standing procedure, git ceremony, or skill internals the target
+already loads. Extra tokens are a defect unless they prevent a named
+failure or carry missing acceptance or deliverable facts. Required
+instructions from this constitution (including VI's writing-for-agents
+instruction) remain in the prompt; they are named-failure prevention,
+not padding.
+
+Rationale: the other agent already knows its tools and environment.
+Tokens spent teaching that are cost without signal. Incomplete
+acceptance criteria is the actual failure.
+
 ## Agent Operating Constraints
 
 - Runtime guidance for agents is `AGENTS.md`. Skills MUST follow
@@ -221,6 +244,8 @@ resort when both designated writers are usage-limited.
 - Agents MUST auto-commit, auto-push the working branch, keep it current
   with `main`, and refresh agent-context, per X. They MUST NOT ask
   permission for those steps.
+- Prompts to Claude Code, Codex, or equivalent MUST follow XII: objective,
+  complete acceptance and deliverables, no operating-manual padding.
 - Designated writer, when used: Claude Code at `claude-opus-4-6`
   `--effort medium`. MUST NOT use the `opus` alias or default Opus.
   Default Opus output is worthless for language work (issue #3). Up to
@@ -265,8 +290,9 @@ resort when both designated writers are usage-limited.
    that tests observe behavior rather than internals, that new software is
    agent-shaped, that process is not overspecific, that easy safe idempotent
    automation is unattended, that standing agent context did not grow
-   without a named failure, and that git/context autonomy was not
-   reintroduced as a human gate.
+   without a named failure, that prompts to other agents carry objectives
+   and complete acceptance rather than operating manuals, and that
+   git/context autonomy was not reintroduced as a human gate.
 
 ## Governance
 
@@ -303,6 +329,9 @@ Compliance:
 - A required human prompt to commit, push, branch, update from `main`,
   or refresh agent-context MUST be rejected unless it prevents a named
   safety failure (secrets, force-push of `main`, skipping checks).
+- A prompt to another coding agent that includes an operating manual,
+  omits acceptance criteria or deliverables, or is longer than needed to
+  state those facts MUST be rejected.
 - Reviews MUST verify that no more than two Claude Code designated-writer
   instances run concurrently, that a second is used only when the agents
   involved have no other task to complete, and that no canonical artifact
@@ -317,4 +346,4 @@ Compliance:
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.11.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
+**Version**: 1.12.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12

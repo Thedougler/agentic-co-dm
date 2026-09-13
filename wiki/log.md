@@ -84,3 +84,4 @@ title: Wiki Log
 - [2026-09-13T01:24:28Z] LINT scope="active-structural" issues_found=513 orphans=1 broken_links=438 stale=0 contradictions=0 prov_issues=0 missing_summary=2 fragmented_clusters=4 visibility_issues=0 promotion_candidates=0 synthesis_gaps=0 relationship_issues=0
 - [2026-09-13T02:48:57Z] INGEST source="/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Uncertainty.md" pages_updated=1 pages_created=0 mode=append
 - [2026-09-13T02:51:28Z] INGEST source="/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/HCS Sovereign.md" pages_updated=0 pages_created=5 mode=append
+- [2026-09-13T02:54:13Z] INGEST source="/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md" pages_updated=0 pages_created=8 mode=append
