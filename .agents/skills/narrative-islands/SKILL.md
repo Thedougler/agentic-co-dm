@@ -1,225 +1,193 @@
 ---
 name: narrative-islands
 description: >-
-  Situation topology for sandbox play — forces, gravity, bridges, tide,
-  wake. Use when creating or revising a type: front, quest, or encounter (choose the existing owner) page, converting
-  a linear plot into a playable island, or auditing agency and
-  connectivity. Night-only pressure stays a session-plan section.
+  Quest-page situation topology. Primary for writing, editing, or creating a
+  named `type: quest` page from `wiki/templates/quest.md`; also use to convert
+  a linear plot into a playable situation or audit agency and connectivity.
+  Beat charts stay with `session-beats`; typed beats stay with their beat skill.
 ---
 
 # Narrative Islands
 
-## Work gate
+Build named quest pages as live situations: forces act, pressure advances, and
+the party chooses the route. Campaign situation pages use `type: quest`.
+
+## Work Gate
 
 Prep only. Follow `docs/agents/work.md`.
 
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
+Show a chat proposal; write a campaign wiki page only after DM accept. Reject
+leaves no page. Invention is required when the wiki lacks the fact: set
+`invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]`
+for wiki claims. Show the DM any contradiction with an existing page. Never
+present invention as a wiki fact. Never write silent canon. A craft `type`
+becomes `canon` only after DM accept.
 
-Players see nothing until the DM accepts and presents.
+Done when: the page is inspectable Work, `lifecycle: proposed`, invention is
+flagged, and grounding is named.
 
-Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagged, grounding named.
+## Ownership
 
-Remap durable output paths from `campaigns/<slug>/` to `wiki/`; use `wiki/templates/`. Replace knowledge-bank wording with wiki wording. Keep the craft procedure.
+This skill is primary for write, edit, or create jobs on a named quest page.
+Use `wiki/templates/quest.md` and fill `type: quest`.
 
-Build **narrative islands**: bounded, causally live situations that give
-players meaningful things to pursue without prescribing the route.
+Retarget composition work:
 
-**Island** is the method. The page is `type: front, quest, or encounter (choose the existing owner)` when another
-page, a future session, or a Beat Chart must refer to this topology as
-a node. A night-only pressure stays a session-plan Situations section.
-There is no `type: narrative-island`; use the nearest existing `type` and template.
+- Beat Chart or session plan structure: `session-beats`.
+- Typed beat page or typed beat prose: the matching beat skill.
+- Fight math inside a quest: `encounter-prep`.
+- Missing or unplayable place: `place-design`; use `dungeon-design` for a
+  multi-room dungeon complex.
+- Named item, vehicle, spell, faction, lore, city, or region node: its owner.
 
-The island owns **situation topology**: what is happening, who wants
-what, why it matters, how it changes, how the PCs can engage, and what
-changes afterward. The players choose the route.
+There is no `quest-design` skill. This skill owns quests.
 
-## Method
+## Craft Basis
+
+Use node-based and clue-rich prep: Justin Alexander's node and clue guidance,
+Sly Flourish's secrets-and-clues prep, and Robin D. Laws's attention to turns of
+pressure all point to the same outcome here: prepare actionable information,
+several routes, and moving forces instead of a required sequence.
+
+## Quest Method
 
 Three states:
 
 - **True:** established canon or explicit DM ruling.
-- **Possible:** prepared pressure, clues, options, or consequences.
+- **Possible:** prepared pressure, leads, options, or consequences.
 - **Happened:** events established through play evidence.
 
-Unused preparation has no authority over play. Improvisation that lands
-at the table outranks unused prep.
+Unused preparation has no authority over play. Improvisation that lands at the
+table outranks unused prep.
 
-Legal prep: an NPC makes an offer; a faction searches; a storm drives
-ships off course; a clue exists in three discoverable forms.
-
-Seed broadly, observe play, identify attention, deepen selectively.
-
-A Live Branches row on the Beat Chart is legal only when the party's
-own choice creates materially different future situations — the collapse
-test in `session-beats/references/audits.md`. If outcomes
-reconverge, collapse them into one beat.
-
-## Core model
-
-Think in an **archipelago**, not a plot chain. An island contains:
-
-- a live **situation**
-- competing **forces** with independent goals
-- **gravity** that can attract the PCs
-- several **bridges**
-- useful **affordances**
-- a **tide** that changes the situation when ignored
-- several possible **state changes**
-- a **wake** into the wider campaign
-
-Prepare what the world **does**. Discover what the PCs **do** at the table.
-
-## Threat-in-motion gate
-
-When an island is meant to carry suspense, reveal a bad thing already moving
-without revealing the whole picture. Show its fuse and make waiting unsafe;
-hide the clean answer, not the problem; attach a real cost to every route; then
-leave the players free to act, including with an unplanned clever solution.
-Mystery hides information for digging, while surprise withholds the bomb; do not
-use either as a substitute for a visible pressure point. A threat is not live if
-factions pause for shopping or rest.
-
-**Complete when:** the threat, early tell, fuse, unknown clean answer, delay
-change, costs, and at least three materially different response paths are
-written, with a playable partial success.
+Write what the world does. Discover what the PCs do at the table.
 
 ## Workflow
 
-Element catalogs and the audit: `references/workflow-detail.md`.
+Element catalogs and the audit live in `references/workflow-detail.md`.
 
-### 1. Load the current world
+### 1. Load the Current World
 
-Search the compiled vault. Read the smallest set of pages for PC goals,
-active factions, unresolved hooks, locations, clocks, and recent state
-changes.
+Search the compiled vault. Read the smallest set of pages for PC goals, active
+factions, unresolved hooks, locations, clocks, and recent state changes.
 
-**Complete when** every reused fact traces to current canon and every
-new fact is identifiable as new prep.
+Complete when: every reused fact traces to current canon and every new fact is
+identifiable as new prep.
 
-### 2. State the situation
+### 2. Choose the Quest Frame
 
-**[Forces] want [incompatible things] in or around [context] before
-[pressure matures].** Define the dramatic question. Test at least three
-materially different end states.
+Name the unstable situation in one sentence:
 
-**Complete when** the sentence names incompatible wants, a threat already
-in motion, and a maturing pressure/fuse.
+`[Forces] want [incompatible things] in or around [context] before [deadline or pressure matures].`
 
-### 3. Establish gravity
+Define the table question the quest exists to answer. Keep the page about a
+pursuable situation, not a scripted episode.
 
-Connect to existing PC goals, fears, loyalties, and interests. Prefer
-multiple weak pulls over one compulsory hook. Declining remains
-legitimate.
+Complete when: the sentence names incompatible wants, the live pressure, and
+what can change if nobody interrupts it.
 
-**Complete when** engagement follows from things the PCs already value.
+### 3. Fill the Summary
 
-### 4. Build active forces
+Fill the summary callout and frontmatter fields from `wiki/templates/quest.md`:
 
-Every load-bearing actor: want, reason, constraint, leverage, next
-action, tell. Every major force can advance the situation without the
-party; shopping, travel, or rest does not pause its plan.
+- **Objective:** the result the party could accomplish, not the method.
+- **Why now:** the pressure, opportunity, or danger that makes delay matter.
+- **Deadline:** none, a date, or the fictional event after which the situation
+  changes.
 
-**Complete when** no load-bearing actor waits politely for the PCs.
+Complete when: objective, why now, and deadline are all explicit.
 
-### 5. Build bridges
+### 4. Write the Situation
 
-At least two materially different entry vectors (three or four is
-strong). Losing one bridge does not erase the island.
+Write the unstable present. Include what the party knows and what is really
+happening. Do not prescribe the party's next action.
 
-**Complete when** two bridges remain after any one is lost.
+Complete when: a DM can explain the current tension, involved forces, and
+visible hook without reading a plotted sequence.
 
-### 6. Prepare affordances
+### 5. Write the Stakes
 
-What PCs can manipulate **in this situation**. Durable physical logic
-belongs on the spatial page — invoke `place-design` when the place
-cannot be run. If an obstacle has only one answer, add an affordance
-or remove the gate.
+Fill success, failure, walk-away, and play-to-find-out questions. The walk-away
+entry names what continues without the party.
 
-**Complete when** unscripted combinations can change the situation.
+Complete when: success, failure, and walk-away each change the world
+materially, and at least one question remains open for play.
 
-### 7. Set the tide
+### 6. Set World in Motion
 
-The smallest useful progression for when PCs are elsewhere. Treat it as
-the fuse: for each step record cause, what changes, visible evidence, what
-opens or closes, and the cost of delay.
+Name the driver, what it wants, its current move, its next move if
+uninterrupted, and the end state if it gets what it wants. Progress portents are
+observable changes, not hidden bookkeeping.
 
-**Complete when** ignoring the island still changes the world.
+Complete when: the driver and uninterrupted next move are concrete enough for
+the DM to advance the quest without `world-tick`. `world-tick` does not advance
+quest portents.
 
-### 8. Add candidate beats
+### 7. Build Leads and Routes
 
-Attach beats to triggers or states, not timestamps. Delegate craft to
-`session-beats` for the chart and the matching type skill for a typed beat.
+Write at least two independent leads. Each lead points to useful progress from
+a different source, vector, or location. Losing one lead does not erase the
+quest.
 
-**Complete when** candidate beats remain conditional.
+Complete when: the party has at least two independent routes and no required
+sequence of actions.
 
-### 9. Define state changes
+### 8. Fill Support Sections
 
-Consequence logic, not endings. Who gains leverage, what becomes true
-or impossible, who learns, which clocks and bridges change.
+Add only table-useful rows under People & factions, Relevant places, Useful
+things, Complications, and Rewards & consequences. Link detailed owners instead
+of restating them.
 
-**Complete when** more than one persistent state is possible.
+Complete when: every filled row helps the DM run, update, or adjudicate the
+quest.
 
-### 10. Write the wake
+### 9. Handle Resolution
 
-Propagate into NPCs, factions, other situations, reputation.
+Omit `## Resolution` while the quest is unresolved. Add it only when play or DM
+ruling creates a stable outcome: resolved, failed, expired, or transformed.
 
-**Complete when** the island points toward more than one future situation.
+Complete when: unresolved quests have no Resolution section, and resolved
+quests record what actually happened plus lasting world changes and loose
+threads.
 
-### 11. Write the page
+### 10. Update an Existing Quest
 
-Mint `type: front, quest, or encounter (choose the existing owner)` from `templates/Session prep.md or the nearest existing campaign note template`
-when the threshold is met. Otherwise write the same topology into the
-session-plan Situations section. If a place the island occupies is
-missing or unplayable, invoke `place-design` first — or
-`dungeon-design` when it is a multi-room dungeon complex. If a notable
-object must be cited as a node and has no page, invoke `dnd-5e-magic-item-design`.
-If a named conveyance must be cited as a node and has no page, invoke
-`vehicle-design`. If a node exists but has no presence, invoke
-`flesh-out`.
+After meaningful play, downtime, rolls, or DM ruling:
 
-List playable `type: location` sites in a `locations:` property when the existing template supports it; wikilink other spatial notes in the body.
+- Change `status`, `last_advanced`, and `updated` when needed.
+- Rewrite Situation to the new present.
+- Advance, alter, or cancel World in motion and portents.
+- Update found, invalidated, or new leads.
+- Update changed people, factions, places, rewards, fallout, and complications.
+- Add one Quest log row.
 
-**Complete when** a DM can scan the page and run the situation.
+Complete when: the page reflects the current playable situation and the Quest
+log records what changed.
 
-### 12. Run the island audit
+### 11. Audit the Page
 
-`references/workflow-detail.md`: agency, causality, activity,
-connectivity, gravity, persistence, vault integrity.
+Use `references/workflow-detail.md` for agency, causality, activity,
+connectivity, gravity, persistence, and vault integrity.
 
-**Complete when** every audit question has a concrete answer in the
-page or current canon.
+Complete when: a DM can run the situation, name the walk-away consequence, and
+point to at least two independent leads.
 
-## Cold opens
+## Hard Gates
 
-A cold open is authored by `cold-opens`. An island that opens
-on one delegates the whole frame to that skill.
+- Mint `type: quest` only.
+- Retired campaign situations are quests; do not mint `type: front` or
+  `type: encounter`.
+- Do not create or invoke a `quest-design` skill.
+- Night-only pressure stays in the session plan unless it needs a named quest
+  page.
 
-## Done check
+## Done Check
 
-`NI: <situation premise + pressure + if-ignored change + table-open question>`
-
-## GM-prep gates
-
-A situation is a toolbox of actors, locations, motivations, and pressures in
-tension, not a screenplay. Prepare only the uncertain pieces: a skeleton of
-states, modular clues, likely hiccups, and a few independent moves. Keep secrets
-floating across multiple clue vectors rather than assigning each to one room.
-Before play, check that each PC has at least one possible limelight connection,
-that the opening is purposeful, and that a parachute situation exists if the
-party leaves the prepared area. Keep the page atomic and link its nearest
-Organizer-owned hub/MOC.
+`NI: <objective + why now + deadline + walk-away + driver next move + two independent leads>`
 
 ## References
 
 | File | Read when |
 |---|---|
-| `references/narrative-islands.md` | Converting linear adventures, diagnosing rails, repairing static islands |
+| `references/narrative-islands.md` | Converting linear adventures, diagnosing rails, repairing static situations |
 | `references/workflow-detail.md` | Element catalogs, island audit |
-
-## Eruptible-conflict gate
-
-Make each island able to erupt without a scripted trigger: competing actors keep
-moving, pressure has visible tells, and a PC arrival, choice, or silence can
-collide with the current state. Consequences of inaction should be real but
-legible. Let strongholds, routes, and relationships create political leverage,
-and keep at least one interruptible off-ramp for an unexpected approach.
