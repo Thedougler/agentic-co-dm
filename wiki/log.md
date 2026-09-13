@@ -4,6 +4,8 @@ title: Wiki Log
 
 # Wiki Log
 
+- [2026-09-13T23:40:00Z] UPDATE pages="entities/Delmar Fisk.md,entities/Crissdalynn Khinriss.md,entities/Jean-Claude Tabarnack.md,entities/Perrin Black-Jaw.md" mode="foundry" notes="Live Foundry sheets for four PCs from Shattered-Sea world"
+
 - [2026-09-12T03:37:27Z] INIT vault_path="/Users/nick/agentic-co-dm/wiki" categories=concepts,entities,skills,references,synthesis,journal
 - [2026-09-13T20:00:00Z] INGEST source="/workspace/midchain-ingest/group-a/monsters/Silence Moths.md" pages_updated=0 pages_created=1 mode=append
 - [2026-09-13T20:00:00Z] INGEST source="/workspace/midchain-ingest/group-a/monsters/Grinning Ape.md" pages_updated=0 pages_created=1 mode=append

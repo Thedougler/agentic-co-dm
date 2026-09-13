@@ -4,7 +4,7 @@ title: Wiki Index
 
 # Wiki Index
 
-*This index is automatically maintained. Last updated: 2026-09-13T22:10:00Z*
+*This index is automatically maintained. Last updated: 2026-09-13T23:40:00Z*
 ## Concepts
 
 *No pages yet.*
@@ -45,7 +45,7 @@ title: Wiki Index
 - [[Aruhe - Grasslands - Print Braid]] — Forest-edge grassland braid where inland prints split toward Spoke Ring, fruiting wood, and a cold river cobble ring. ( #shattered-sea #place #aruhe #grasslands #river)
 - [[Aruhe - Grasslands Torn Crossing]] — Flood-scoured grassland crossing where prints, slick stone, razer-grass, deep water, and a Spiguar hunting lane constrain movement. ( #shattered-sea #place #aruhe #grasslands)
 
-- [[Delmar Fisk]] — Privateer who told the table he was an admiral, stole the Pearl of Souls, and now carries Umberlee's price. ( #shattered-sea #npc)
+- [[Delmar Fisk]] — Level 5 Swashbuckler at 35/38 HP who stole the Pearl of Souls and now carries Umberlee's price. ( #shattered-sea #npc #pc)
 - [[Uncertainty]] — Prize cutter taken from the Crown and renamed; her legacy chassis is Gargantuan with AC 11 and 130 hit points. ( #shattered-sea #vehicle #ship)
 - [[HCS Sovereign]] — Gargantuan Crown first-rate ship of the line whose copper hull and more than one hundred guns make its arrival a political event. ( #shattered-sea #vehicle #ship #crown)
 - [[HCS Ordinance]] — Crown warship listed by the source as a related vessel to HCS Sovereign. ( #shattered-sea #vehicle #ship #crown)
@@ -63,7 +63,7 @@ title: Wiki Index
 - [[Drowned Maw]] — Maritime place tied by the source to the Red Lady's sinking, routes, and moving wake. ( #shattered-sea #place #sea)
 - [[Umberlee]] — The sea as it is: tribute theology, Pearl frustration at the Maw boundary, and the Dead Lady as collection hull. ( #shattered-sea #lore #deity)
 - [[Red Wake]] — Moving maritime pressure marked by a red wake and expressed through the Dead Lady's collection route. ( #shattered-sea #lore #sea)
-- [[Crissdalynn Khinriss]] — Survivor who pulled Delmar Fisk from the Red Lady's crow's nest when his fleet sank. ( #shattered-sea #npc #survivor)
+- [[Crissdalynn Khinriss]] — Level 5 Kensei Aarakocra at 33/33 HP plus 6 temp who pulled Delmar from the Red Lady. ( #shattered-sea #npc #pc)
 - [[Rael Corven]] — Person identified by the source as aboard the original Red Lady during the fleet's sinking. ( #shattered-sea #npc #fleet)
 - [[Shelfworks]] — Eastern maritime site where the sunken Red Lady settled with the Pearl aboard. ( #shattered-sea #place #sea)
 - [[Midchain]] — Sea region whose route the Dead Lady knows when it follows Delmar Fisk's heading. ( #shattered-sea #region #sea)
@@ -91,7 +91,7 @@ title: Wiki Index
 - [[Thunk]] — Orc ship gunner and field smith aboard Uncertainty; CR 1/4 fight sheet on the NPC page. ( #shattered-sea #npc)
 - [[The Unnamed Companion]] — The drowned man Hinewai buried on Aruhe; his grave became the reason for the island's law. ( #shattered-sea #npc #aruhe)
 - [[Talon Vantyrus]] — Countless master [[Talon Skarn]] is trying to kill under the Rule of Two. ( #shattered-sea #npc)
-- [[Perrin Black-Jaw]] — Nona's grandson and surveyor; he owes an Aruhe survey and carries a sending stone. ( #shattered-sea #npc)
+- [[Perrin Black-Jaw]] — Warlock 2 / Lore Bard 3 at 49/49 HP who owes Nona an Aruhe survey and carries her sending stone. ( #shattered-sea #npc #pc)
 - [[Enzo]] — Bodyguard at Nona Black-Jaw's kitchen safehouse who holds the door with Ruk. ( #shattered-sea #npc)
 - [[Ruk]] — Bodyguard at Nona Black-Jaw's kitchen who has guarded Passage witnesses. ( #shattered-sea #npc)
 - [[Deer-Stalker]] — CR 8 solitary Aruhe ambusher that isolates prey, drags it from the group, and retreats when allies close in. ( #shattered-sea #creature #aruhe #ambusher)
@@ -120,7 +120,7 @@ title: Wiki Index
 - [[Auralis]] — Public Grung mandate and name associated with a serene gold presence whose exact nature remains unknown. ( #shattered-sea)
 - [[Grung Color and the Sealing Rite]] — Grung diet and daily soaking produce the body's current color, which signals social role without proving permanent rank. ( #shattered-sea)
 - [[Simone]] — Purple Grung officer who holds the Sorn garrison, sells toxin, and hunts her brother Jean-Claude. ( #shattered-sea #npc)
-- [[Jean-Claude Tabarnack]] — Blue Grung from Botukuri whose red beret marks censure and whose sister Simone still hunts him. ( #shattered-sea #npc)
+- [[Jean-Claude Tabarnack]] — Level 5 Gloom Stalker Grung at 51/51 HP whose red beret marks censure and whose sister Simone still hunts him. ( #shattered-sea #npc #pc)
 - [[Gold Caste Serene]] — Fiction-layer name for the serene gold authority associated with Grung faith and decrees. ( #shattered-sea)
 - [[The Gold-Caste Serene]] — CR 30 unlookable gold Grung presence with Certainty Ward; fight sheet on the creature page. ( #shattered-sea #creature)
 - [[Veth]] — Largest Verdant Teeth island, with a western beach trade strip and blue intermediaries but no pier. ( #shattered-sea #place)
