@@ -49,7 +49,7 @@ unless the request establishes another count.
 | `references/cold-open-page.md` | the page skeleton, the repo's beat-page integration (group check, picture-then-check steps, labeled landings), and wiki conventions |
 | `references/cold-open-gates.md` | the completion gate every finished cold open passes |
 
-Sibling authorities: `session-beats` owns Hook beats the party plays as
+Sibling authorities: `hook-beats` owns Hook beats the party plays as
 themselves; `session-beats` owns the main session's Beat Chart;
 `theatre-of-the-mind` owns every player-facing paragraph this skill produces.
 

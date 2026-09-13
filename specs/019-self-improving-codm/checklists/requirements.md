@@ -1,0 +1,40 @@
+# Specification Quality Checklist: Self-Improving Co-DM
+
+**Purpose**: Validate specification completeness and quality before proceeding to planning
+**Created**: 2026-09-12
+**Feature**: [spec.md](../spec.md)
+
+## Content Quality
+
+- [x] No implementation details (languages, frameworks, APIs)
+- [x] Focused on user value and business needs
+- [x] Written for non-technical stakeholders
+- [x] All mandatory sections completed
+
+## Requirement Completeness
+
+- [x] No [NEEDS CLARIFICATION] markers remain
+- [x] Requirements are testable and unambiguous
+- [x] Success criteria are measurable
+- [x] Success criteria are technology-agnostic (no implementation details)
+- [x] All acceptance scenarios are defined
+- [x] Edge cases are identified
+- [x] Scope is clearly bounded
+- [x] Dependencies and assumptions identified
+
+## Feature Readiness
+
+- [x] All functional requirements have clear acceptance criteria
+- [x] User scenarios cover primary flows
+- [x] Feature meets measurable outcomes defined in Success Criteria
+- [x] No implementation details leak into specification
+
+## Notes
+
+- Validation iteration 1 failed: P2 independent test said "practice file"; FR-016 and an edge case named writer-dispatch; FR-009 and FR-018 had no story acceptance scenarios; User Story 3 prescribed a "short" reflection.
+- Validation iteration 2 passed those items.
+- Validation iteration 3: token cost added as a core metric (US4, FR-019–FR-025, SC-011–SC-015). Quality is a constraint, not a trade.
+- Validation iteration 4 passed after owner add: agents own token cost and decrease it objectively; the DM does not manage, review, or gate it. Campaign-facing changes still use the DM accept-gate.
+- Validation iteration 5 passed after owner add: agents proactively create and maintain reusable, flexible, agent-shaped helpers (FR-026–FR-031, SC-016–SC-020). Do not wrap an existing command. Do not wait for the DM.
+- Validation iteration 6 passed after owner add: this spec governs `errors.md` — runtime fill, drain when the wiki (or other landed fix) actually removes the cause (US5, FR-032–FR-038, SC-021–SC-024).
+- Validation iteration 7 passed after owner add: agents self-organize file/folder layout as the system grows, including the wiki/llm-wiki (US6, FR-039–FR-046, SC-025–SC-029). Layout is not a canon write. No [NEEDS CLARIFICATION] markers. Ready for `/speckit.clarify` or `/speckit.plan`.

@@ -73,15 +73,18 @@ Beat guarantees the resulting world state. Important elements MUST be related to
 one another (beneath, beyond, between, blocking, …). Isolated inventories
 without relationships are incomplete.
 
-Opening narration is the **Layer 1 immediate frame** — what is obvious without
-deliberate investigation. Salient features and discoverable information are
-separate complete reveal blocks (Layers 2–3) that describe the discovery, not
-the method. Features that matter tactically or interactively MUST be in Layer 1
-before a player would need them. Hierarchy: most important perceptible thing
-first; not an architectural inventory. Sensory information is selective: one or
-two defining details suffice; do not cycle every sense. An opening block MUST
-end on a live situation (danger, contradiction, question, opportunity, demand,
-objective, or changing circumstance) and MUST NOT choose the party's response.
+Opening narration is the **Layer 1 immediate frame**: where the party stands,
+how large the space is at body scale, what the ground/air/light is doing, and
+what is obvious without deliberate investigation. Frame and body-scale
+environment seat the party before furniture; see
+[references/places.md](references/places.md) for the moves. Salient features
+and discoverable information are separate complete reveal blocks (Layers 2–3)
+that describe the discovery, not the method. Features that matter tactically or
+interactively MUST be in Layer 1 before a player would need them. Sensory
+information is selective: one or two defining details suffice; do not cycle
+every sense. An opening block MUST end on a live situation (danger,
+contradiction, question, opportunity, demand, objective, or changing
+circumstance) and MUST NOT choose the party's response.
 
 **Combat.** When violence is imminent, combat opening narration MUST make
 threats, threat relationships, objectives, relative distance, major terrain,
@@ -439,15 +442,14 @@ landmark once, then reuse it.
 
 **Scene-setting (session-beat `Initial Narration`):** address the party as
 **you**. Present tense. Do not say "the crew". Do not narrate a feeling,
-thought, or choice (`you feel afraid`, `you decide`). Initial Narration is the
-**Layer 1 immediate frame**: what is obvious without deliberate investigation.
-Salient features, discoverable information, and deeper facts are separate
-complete reveal blocks or existing zone/tick Narration cells (Layers 2–3) that
-describe the discovery, not the method. Features that matter tactically or
-interactively belong in Layer 1 before a player would need them. An owner
-identity image on the run card is a DM glance; it does not replace the spoken
-look. Open those **pixels** so the spoken look matches the art. Then stop on a
-live situation and ask.
+thought, or choice (`you feel afraid`, `you decide`). Do not assign PC body
+reactions (`sweat on the neck`, `your nose crinkles`); body-scale environment
+comes from the space. Layer 1 seats the party in the space before listing
+furniture; the criterion is in Authoring outcomes and the moves are in
+[references/places.md](references/places.md). An owner identity image on the
+run card is a DM glance; it does not replace the spoken look. Open those
+**pixels** so the spoken look matches the art. Then stop on a live situation
+and ask.
 
 **Session-beat spoken fill is pass 3.** Pass 1 (`run-guide`) leaves empty prose
 slots, and pass 2 (`copy-writer`) edits DM-facing copy first. Load this skill
@@ -483,8 +485,8 @@ as decoration. Draft in connected prose first — whole picture, then trim —
 rather than starting from a one-line stub and padding.
 
 Read the result aloud once. Ask the branch's questions from
-[references/surfaces.md](references/surfaces.md), then run the slop and thin
-gates in [references/voice.md](references/voice.md). Fail the draft if a
+[references/surfaces.md](references/surfaces.md), then run the slop gate,
+repetition and specificity scan, and thin gate in [references/voice.md](references/voice.md). Fail the draft if a
 player hearing it once cannot sketch or distinguish the subject. Fail a
 situated session-beat Initial Narration if the Layer 1 immediate frame does not
 give the table a stable shared picture and something live to respond to, or if

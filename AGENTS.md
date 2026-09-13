@@ -5,6 +5,9 @@ A **skill-based framework** for building and maintaining an Obsidian knowledge b
 ## README Translation Parity
 
 `README.md` and `README_TW.md` are one documentation surface. Keep headings, examples, links, and user-facing behavior aligned between the two translations. The check is advisory and never blocks a PR: the `readme-translation-drift` CI job only reports drift. Run `python tools/check_readme_sync.py` to list commits that changed `README.md` without a later `README_TW.md` update, along with the pending English diff — then translate and backfill those changes into `README_TW.md`. Reviewers assess translation quality.
+## Spec Kit Git Automation
+
+Spec Kit auto-commit is enabled for the configured before/after hooks. The commit style is fixed (`commit_style: fixed`); use the configured `[Spec Kit] ...` messages rather than generating Conventional Commit messages. `.specify/extensions/git/git-config.yml` is the source of truth.
 
 ## Configuration
 
@@ -31,6 +34,38 @@ You can maintain multiple vaults (each a `~/.obsidian-wiki/config.<name>` file m
 Load `wiki/AGENTS.md` before any write to `wiki/` (campaign `type`, `lifecycle`, `reveal`, complete-sentence prose).
 Load `docs/agents/work.md` before Co-DM prep or wrapup output (Work gate: chat proposal; wiki write after DM accept).
 
+The 019 loop lives in this file plus `docs/agents/work.md`. Wrapup owns the required reflection. No new skill.
+
+### Table aim
+
+If table aim is `missing`, ask the DM to name the players (at least one; tests use three) and the current campaign intent before treating Work as aimed.
+
+### Gaps
+
+A missing wiki fact or missing Co-DM practice MUST NOT prevent playable Work in that sitting. When Work is offered despite a gap, name the gap. A gap that is only wasted context is closed without a DM proposal — token cost, helpers, and layout below.
+
+### Token cost
+
+Record every finished prep or wrapup sitting with `scripts/error-ledger.py sitting record`. Compare only same-kind sittings. The DM MUST NOT be asked to record or accept it.
+
+Cut wasted context without waiting. A change MUST NOT count as an improvement if it lowers token cost by lowering Work quality. A change MUST NOT count as an improvement if it raises token cost for the same jobs without preventing a named failure.
+
+### Helpers
+
+If a job will repeat and no existing command does it, create an agent-shaped helper without being asked. Arguments in, text or JSON out, exit done vs failed. Use it on the next same-kind sitting. Keep it current or remove it. No helper for a one-off. No wrap of an existing command.
+
+### Error ledger
+
+On runtime failure, append to `errors.md` with `scripts/error-ledger.py error append` before the sitting is complete. Drain matching entries when a wiki improvement or other landed fix actually removes the cause. Leftover entries for already-fixed causes are wasted context. The DM MUST NOT fill, review, or drain the ledger. A wiki fact write that is the fix still waits on accept; drain after that write lands.
+
+### Layout
+
+As agent-facing files and the wiki (llm-wiki) grow mixed, regroup so one job or layout kind does not load unrelated trees. Trigger is `growth` (mixed dump / unrelated load). Not `tidiness`. One-off files MUST NOT be reorganized solely for tidiness. Do not mandate a folder taxonomy.
+
+Wiki layout kinds: Encounters, Rules, Campaign State, DM Intelligence. Agent-facing layout kinds: System, Source Material. MUST NOT duplicate an existing `type`. Do not add `type: encounter` or `type: rules`. No layout-kind frontmatter.
+
+Wiki layout moves have `facts_changed` false, `type_changed` false, and `links_resolve` true after the move. Source Material is `wiki/_raw/` staging. System is skills/`AGENTS.md`/`docs/agents`. System and Source Material MUST NOT be treated as wiki canon. Copying table aim onto DM Intelligence is not a layout move. Wiki fact changes still wait on accept.
+
 ## Writing and visual authorities
 
 Reader is `agent` | `DM` | `players`. Unknown reader → `DM`. Vault is `true` if the destination is a wiki vault note, else `false`. Authorities are every matching row; they stack and do not cancel. Incomplete until all matching authorities are applied.
@@ -44,12 +79,39 @@ Reader is `agent` | `DM` | `players`. Unknown reader → `DM`. Vault is `true` i
 | Working with visual references for a depiction | visual-references |
 | Producing (attach, ground, generate, promote, place) a visual aid | visual-aids |
 
+## Beat skill routing
+
+| Job | Skill |
+|---|---|
+| Plan a session, one-shot, adventure arc, or expedition evening | `session-beats` |
+| Write, edit, or create content for a Hook | `hook-beats` |
+| Write, edit, or create content for a Development | `development-beats` |
+| Write, edit, or create content for a Cliffhanger | `cliffhanger-beats` |
+| Write, edit, or create content for a Climax | `climax-beats` |
+| Write, edit, or create content for a Resolution | `resolution-beats` |
+
+Unknown typed-beat job → classify the type first; do not default to `session-beats` for filling a beat. Named seams: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`.
+
+## Wiki kind routing
+
+| Job | Skill |
+|---|---|
+| Write, edit, or create a named vehicle page | `vehicle-design` |
+| Write, edit, or create a named spell page | `spell-design` |
+| Write, edit, or create a named faction page | `faction-design` |
+| Write, edit, or create a named lore page | `lore-design` |
+| Write, edit, or create a named quest page | `narrative-islands` |
+| Write, edit, or create a named city page | `city-design` |
+| Write, edit, or create a named region page | `region-design` |
+| Write, edit, or create a site place | `place-design` |
+
+`place-design` is the hub for all places. It defers to `city-design` for `kind: city` and to `region-design` for region jobs.
 
 ## Skill design dispatch
 
 Classify before any in-scope instruction file changes. Class is `design-impact` | `not`. Length MUST NOT be the gate.
 
-Design-impact if the change would alter skill triggering, workflow ownership, standing load, or would create a skill or subagent. Borderline of those four bullets MUST be treated as design-impact. Creating a new skill or subagent MUST be classified as design-impact.
+Design-impact if the change is a novel skill, a skill redesign, or a major skill-file change. Creating a new skill or subagent is design-impact. Smaller edits to established files, Spec Kit pattern tweaks, and `AGENTS.md` are class `not`. Conserve Claude Code; use it only when necessary.
 
 | Class | Writer |
 |---|---|
@@ -77,6 +139,7 @@ Wiki hit = current canon. Legacy hit = campaign-of-record context; wiki write on
 Collection `legacy` is the `legacy/` archive. Search it only with `-c legacy`. Do not add it to the wiki / shattered-sea / legacy-ss order.
 
 If `qmd status` fails at session start, run `scripts/qmd-maintain.sh`. After wiki writes, wiki-ingest Step 8 runs that script. Exit 1: report the failure; already-written wiki pages stay.
+`qmd query`, `qmd embed`, and `qmd vsearch` need the local LLM. Agent harnesses set `CI=true`, which makes qmd refuse those calls. Prefix them with `env -u CI`. The maintain script already does this.
 
 ## Vault Structure
 
@@ -106,57 +169,105 @@ Every wiki page has required frontmatter: `title`, `category`, `tags`, `sources`
 
 ## Skill Routing
 
-Skills live in `.skills/<name>/SKILL.md`. Match the user's intent to the right skill:
+Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the right skill. Beat-type routing and wiki-kind routing have their own tables above — this table covers everything else.
+
+### Wiki
 
 | User says something like… | Skill |
 |---|---|
 | "set up my wiki" / "initialize" | `wiki-setup` |
-| "/wiki-history-ingest claude" / "/wiki-history-ingest copilot" / "/wiki-history-ingest codex" / "/wiki-history-ingest hermes" / "/wiki-history-ingest openclaw" / "/wiki-history-ingest pi" | `wiki-history-ingest` |
-| "ingest" / "add this to the wiki" / "process these docs" / "process this export" / "ingest this data" / logs, transcripts / "/ingest-url <url>" / "add this URL" / "ingest this link" / "save this page" | `wiki-ingest` |
-| "import my Claude history" / "mine my conversations" | `claude-history-ingest` |
-| "import my Codex history" / "mine my Codex sessions" | `codex-history-ingest` |
-| "import my Hermes history" / "mine my Hermes memories" / "ingest ~/.hermes" | `hermes-history-ingest` |
-| "import my OpenClaw history" / "mine my OpenClaw sessions" / "ingest ~/.openclaw" | `openclaw-history-ingest` |
-| "import my Copilot history" / "mine my Copilot sessions" / "ingest ~/.copilot" | `copilot-history-ingest` |
-| "import my Pi history" / "mine my Pi sessions" / "ingest ~/.pi" | `pi-history-ingest` |
+| "/wiki-history-ingest claude" / "import my Claude history" / "mine my Copilot sessions" / any agent-history ingest | `wiki-history-ingest` |
+| "ingest" / "add this to the wiki" / "process these docs" / "/ingest-url <url>" / logs, transcripts | `wiki-ingest` |
 | "what's the status" / "what's been ingested" / "show the delta" | `wiki-status` |
 | "wiki insights" / "hubs" / "wiki structure" | `wiki-status` (insights mode) |
 | "what do I know about X" / "find info on Y" / any question | `wiki-query` |
 | "use my vault as context" / "context pack for X" / "bounded context" | `wiki-context-pack` |
-| "narrate" / "briefing" / "explain this topic" / "/wiki-narrate" | `wiki-narrate` |
+| "narrate" / "briefing" / "explain this topic" | `wiki-narrate` |
 | "audit" / "lint" / "find broken links" / "wiki health" | `wiki-lint` |
-| "dedup my wiki" / "find duplicate pages" / "merge duplicates" / "identity resolution" / "consolidate my wiki" | `wiki-dedup` |
+| "dedup my wiki" / "find duplicate pages" / "merge duplicates" | `wiki-dedup` |
 | "rebuild" / "start over" / "archive" / "restore" | `wiki-rebuild` |
 | "link my pages" / "cross-reference" / "connect my wiki" | `cross-linker` |
 | "fix my tags" / "normalize tags" / "tag audit" | `tag-taxonomy` |
 | "update wiki" / "sync to wiki" / "save this to my wiki" | `wiki-update` |
-| `@work update wiki` / `wiki-query @personal ...` / `@research save this` | Any matching wiki skill + Config Resolution Protocol `@name` override |
-| "export wiki" / "export graph" / "graphml" / "neo4j" / "export to OKF" / "OKF bundle" / "open knowledge format" | `wiki-export` |
-| "import wiki" / "import from export" / "load graph.json" / "import vault" / "import OKF bundle" / "/wiki-import" | `wiki-import` |
-| "color my graph" / "color code obsidian" / "color by tag/category/visibility" | `graph-colorize` |
-| "save this" / "/wiki-capture" / "capture this" / "file this conversation" / "/wiki-capture --quick" / "quick capture" / "capture this finding" / "save this gotcha" / "drop to raw" | `wiki-capture` |
+| `@work update wiki` / `wiki-query @personal ...` | Any matching wiki skill + Config Resolution Protocol `@name` override |
+| "export wiki" / "export graph" / "export to OKF" | `wiki-export` |
+| "import wiki" / "import from export" / "import OKF bundle" | `wiki-import` |
+| "color my graph" / "color code obsidian" | `graph-colorize` |
+| "save this" / "/wiki-capture" / "capture this" / "quick capture" / "drop to raw" | `wiki-capture` |
 | "/wiki-research [topic]" / "research X" / "find everything about Y" | `wiki-research` |
-| "create a dashboard" / "vault dashboard" / "show all X as a table" / "dynamic view" | `wiki-dashboard` |
-| "synthesize my wiki" / "find connections" / "what concepts keep coming up together" / "/wiki-synthesize" | `wiki-synthesize` |
+| "create a dashboard" / "vault dashboard" / "show all X as a table" | `wiki-dashboard` |
+| "synthesize my wiki" / "find connections" | `wiki-synthesize` |
+| "/wiki-claude [topic]" / "/wiki-codex [topic]" / "/wiki-hermes [topic]" | `wiki-agent` |
+| "/memory-bridge" / "browse codex memory" / "cross-tool memory" | `memory-bridge` |
+| "/session-brain" / "build my session map" / "what topics have gone stale" | `session-brain` |
+| "/wiki-sessions [topic]" / "which session did I do X in" | `session-search` |
+| "/daily-update" / "morning sync" / "refresh the wiki index" | `daily-update` |
+| "/wiki-switch NAME" / "switch vault" / "list my wikis" | `wiki-switch` |
+| "/wiki-digest" / "weekly digest" / "what's new in my wiki" | `wiki-digest` |
+| "/wiki-stage-commit" / "review staged pages" / "commit staged writes" | `wiki-stage-commit` |
+| "restyle Obsidian" / "CSS snippet" / "tune tabs/sidebars/graph panes" | `obsidian-layout-adjustment` |
+
+### Co-DM — session lifecycle
+
+| User says something like… | Skill |
+|---|---|
+| "run the session" / "start the sitting" / live-play guidance | `run-guide` |
+| "session wrapup" / "post-session" / end-of-session processing | `session-wrapup` |
+| "session recap" / "what happened last session" / recap for players | `session-recap` |
+| "plan the campaign" / "campaign arc" / "what's the long-term plan" | `campaign-planning` |
+| "cold open" / "how should the session start" | `cold-opens` |
+| "prep this encounter" / "build an encounter" / "encounter balance" | `encounter-prep` |
+| "reconcile session evidence" / "what actually happened vs. wiki" | `reconciling-session-evidence` |
+
+### Co-DM — world-building and design
+
+| User says something like… | Skill |
+|---|---|
+| "design a dungeon" / "dungeon layout" / "map this dungeon" | `dungeon-design` |
+| "homebrew monster" / "build a creature" / "stat block" | `homebrew-monsters-5e` |
+| "design a magic item" / "homebrew item" | `dnd-5e-magic-item-design` |
+| "design an NPC" / "build an NPC" / "NPC stat block" | `npc-design` |
+| "design a trap" / "trial" / "puzzle" / "hazard" | `traps-trials` |
+| "travel event" / "random encounter" / "journey event" | `travel-events` |
+| "world tick" / "what happens off-screen" / "advance the world" | `world-tick` |
+| "sandbox" / "player-driven narrative" / "open world" | `sandbox-narrative` |
+| "interview my PC" / "character interview" / "backstory session" | `pc-interview` |
+| "5e rules" / "how does X work in 5e" / mechanics question | `dnd5e-mechanics` |
+
+### Co-DM — presentation and Foundry VTT
+
+| User says something like… | Skill |
+|---|---|
+| "theatre of the mind" / "narrate this scene" / TotM description | `theatre-of-the-mind` |
+| "polish this prose" / "rewrite for the DM" / DM-facing copy | `copy-writer` |
+| visual reference for a depiction | `visual-references` |
+| produce / attach / place a visual aid | `visual-aids` |
+| "Foundry battlemap" / "build a map in Foundry" | `foundry-battlemap` |
+| "Foundry scene" / "stage this in Foundry" | `foundry-stage` |
+| "Foundry token" / "create a token" | `foundry-token` |
+
+### Tooling and meta
+
+| User says something like… | Skill |
+|---|---|
+| "search the wiki" / `qmd query` / semantic retrieval | `qmd` |
 | "create a new skill" | `skill-creator` |
-| "/vault-skill-factory" / "make a skill from my wiki" / "turn these pages into a skill" / "package my notes on X as a skill" / "build a domain-expert skill from my vault" | `vault-skill-factory` |
-| "/wiki-claude [topic]" / "/wiki-codex [topic]" / "/wiki-hermes [topic]" / "/wiki-openclaw [topic]" / "/wiki-copilot [topic]" / "/wiki-pi [topic]" | `wiki-agent` |
-| "/memory-bridge" / "browse codex memory" / "what did codex know about X" / "compare tool memories" / "cross-tool memory" | `memory-bridge` |
-| "/session-brain" / "build my session map" / "cluster my claude sessions" / "rebuild the session graph" / "what topics have gone stale" | `session-brain` |
-| "/wiki-sessions [topic]" / "which session did I do X in" / "find the session about X" / "when did I last work on X" / "have I done this before" | `session-search` |
-| "/daily-update" / "morning sync" / "refresh the wiki index" / "set up the daily cron" / "install terminal notification" | `daily-update` |
-| "/impl-validator" / "check this implementation" / "validate what you did" / "is this correct?" | `impl-validator` |
-| "/wiki-switch NAME" / "switch to my work wiki" / "switch vault" / "change wiki" / "list my wikis" / "show my vaults" / "create a new vault config" | `wiki-switch` |
-| "/wiki-digest" / "what did I learn this week" / "weekly digest" / "knowledge summary" / "what's new in my wiki" / "summarize my recent learning" / "monthly review" | `wiki-digest` |
-| "/wiki-context-pack" / "make a context pack" / "context slice for X" / "pack the wiki for my agent" / "bounded context for Y" | `wiki-context-pack` |
-| "/wiki-stage-commit" / "review staged pages" / "commit staged writes" / "promote staged pages" / "what's waiting in staging" | `wiki-stage-commit` |
-| "restyle Obsidian" / "adjust the vault layout" / "CSS snippet" / "tune tabs/sidebars/graph panes" | `obsidian-layout-adjustment` |
+| "/vault-skill-factory" / "make a skill from my wiki" | `vault-skill-factory` |
+| "research X" (general, not wiki-research) | `research` |
+| "domain model" / "model this domain" | `domain-modeling` |
+| "grill me" / "challenge my design" / "poke holes" | `grilling` |
+| "grill with docs" / "challenge against the spec" | `grill-with-docs` |
+| "write for agents" / "agent-facing prose" | `writing-for-agents` |
+| "obsidian markdown" / link/frontmatter standards | `obsidian-markdown` |
+| TDD / "write a test first" | `tdd` |
+
+Spec Kit adapters (`speckit-*`) are generated harness integrations, not primary intent routes. Invoke them via `/speckit-<phase>` directly.
 
 ### Session history: ingest vs. retrieve
 
 Three skills read agent session caches, and they are not interchangeable:
 
-- `wiki-history-ingest` (and its per-agent variants) **ingests** — distils sessions into permanent vault pages.
+- `wiki-history-ingest` **ingests** — distils sessions into permanent vault pages. Handles all agent variants (Claude, Copilot, Codex, Hermes, OpenClaw, Pi) as modes.
 - `wiki-agent` **ingests a slice** — finds sessions about one topic in another agent's history and pulls them into the vault.
 - `session-brain` / `session-search` **retrieve** — build a topic graph over the raw sessions and find or load one. They write a sidecar at `~/.claude/session-brain/` and never touch the vault.
 
@@ -259,5 +370,5 @@ The vault format is structurally conformant with the [Open Knowledge Format (OKF
 <!-- SPECKIT START -->
 For additional context about technologies to be used, project structure,
 shell commands, and other important information, read the current plan
-at specs/016-skill-design-dispatch/plan.md
+at specs/019-self-improving-codm/plan.md
 <!-- SPECKIT END -->

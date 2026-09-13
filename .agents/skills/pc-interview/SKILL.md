@@ -49,9 +49,8 @@ answers as given. Preserve prior rounds. Link existing entities; do not mint NPC
 inside the interview. Contradictions with protected canon are a DM gate, not a silent overwrite.
 Do not set player audience, combat statistics, inventory, or unstated feelings.
 
-Write one note in `wiki/<campaign>/pcs/`, run applicable Obsidian/frontmatter lint, and finish
-with `./scripts/after-write "capture PC interview"`. Report unanswered questions and any owner
-work deferred.
+Write one note in `wiki/<campaign>/pcs/`, run applicable Obsidian/frontmatter lint, and report
+changed paths plus unanswered questions and deferred owner work.
 
 ## Campaign-bone gate
 

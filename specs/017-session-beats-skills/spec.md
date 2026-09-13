@@ -1,0 +1,454 @@
+# Feature Specification: Session Beat Skills
+
+**Feature Branch**: `017-session-beats-skills`
+
+**Created**: 2026-09-12
+
+**Status**: Draft
+
+**Input**: User description: "composing session beats should be split into multiple skills that load eachother as necessary, so composing session beats can be done optimally by agents following the methods of /Users/nick/Downloads/RTG-ScriptingtheGamev1.2.pdf with a main skill that loads when agents are planning a session, directing them how to compose the beats together, then beat specific skills for each type of beat, to be used when writing a new session beat of that type, editing a session beat of that type, or creating content for that session beat."
+
+## Clarifications
+
+### Session 2026-09-12
+
+- Q: When a named vehicle page is written, should it include the 5e vehicle sheet from the new template (size, speed, hull HP, weapons, combat) even though vehicle-design currently forbids inventing those numbers? → A: Fill the sheet. Update skills to match the templates. Write positive instructions (jobs and done-when). Treat missing crafts as not-yet-done, now in scope — not as crafts that will never exist. Vehicle design is in scope now and going forward.
+- Q: When an author creates or edits a campaign spell page, which skill is primary? → A: New `spell-design` skill is primary for write/edit/create of a spell page.
+- Q: For Claude Code skill updates, what is the default prompt shape and model? → A: Minimal, focused, direct prompt with clear deliverables and completion criteria, optimized for token efficiency. Default model: Opus 4.6 medium.
+- Q: When should Claude Code write skill work versus the session agent? → A: Claude Code only for novel skill design, skill redesign, or major skill-file change. Session agents do smaller edits to established files, Spec Kit pattern tweaks, and AGENTS.md. Conserve Claude Code; use it only when necessary.
+- Q: If Claude Code hits a usage limit, what happens to the rest of the work? → A: Defer only the Claude-dependent task until Claude Code is available. Complete remaining tasks that do not depend on it.
+- Q: How should an agent decide that Claude Code will not be usable within the hour? → A: Use the retry time on the blocked task: more than one hour away means Codex may run.
+- Q: After Codex finishes one blocked skill job, should the next blocked skill job go to Codex without checking Claude Code again? → A: Re-check before each job: Claude Code if available, else Codex if the gates still hold.
+- Q: What must a new or edited faction wiki page contain to pass? → A: Named scaffold jobs: public face; DM thesis; current state; one active agenda; table-relevant assets, people, places, and relationships; faction-turn log. Extra headings omit-if-unused.
+- Q: Which skill is primary when creating or editing a faction wiki page? → A: New `faction-design` skill is primary. Remove `faction-prep`.
+- Q: Who fills and advances the faction-turn log on a faction page? → A: `faction-design` writes Current Turn as the planned next move, no roll. `world-tick` runs the turn and writes the log.
+- Q: Where does an active faction’s clock live so it does not drift? → A: Page clock is the owner. `hot.md` may point at the faction; it must not store a second clock.
+- Q: What must a new or edited lore wiki page contain to pass? → A: One durable question per note; At a Glance (core truth + why it matters); Current Truth; At the Table (what players notice, what this explains/enables/warns). Other headings omit-if-unused.
+- Q: Which skill is primary when creating or editing a lore wiki page? → A: New `lore-design` skill is primary for write/edit/create of a lore page.
+- Q: After `type: lore` exists, what should happen to the current ingest rule that maps a `lore` label to `item`? → A: Remove `lore`→`item`. World-truth notes use `type: lore`. Actual items stay `item`.
+- Q: Who writes the Canon Log when established lore changes after play? → A: Lore is not canon until players interact with or witness it; until then the DM may change it freely. `lore-design` omits Canon Log until play has a change to record. `session-wrapup` / `reconciling-session-evidence` append the log and update Current Truth.
+- Q: What must a new or edited quest wiki page contain to pass? → A: Summary (objective, why now, deadline); Situation; Stakes including walk-away; World in motion (driver and next move if uninterrupted); at least two independent leads. Extra headings omit-if-unused. Resolution omitted while unresolved.
+- Q: Which skill is primary when creating or editing a quest wiki page? → A: `narrative-islands` stays primary. Update it to fill `wiki/templates/quest.md`. No new skill.
+- Q: Who updates World in motion, portents, and the Quest log after the page exists? → A: `narrative-islands` owns all later updates, including rolls and the Quest log.
+- Q: Does `wiki/templates/quest.md` also become the page for fronts and encounters, or only for `type: quest`? → A: One situation type named `quest`. Retire `type: front` and `type: encounter`; those situations become quests.
+- Q: What must a new or edited city wiki page contain to pass? → A: Arrival; At a glance including current pressure; Orientation (districts and getting around); Gazetteer enough to intentionally seek a place; rules that matter at the table; at least one active situation with if-nobody-intervenes. Extra headings omit-if-unused.
+- Q: Which skill is primary when creating or editing a city wiki page? → A: New `city-design` is primary. `place-design` is the hub for all places and defers to specialized skills. Do not keep cities on `place-design` because settlements resemble cities.
+- Q: What must a new or edited region wiki page contain to pass? → A: Spoken look; At a glance; Current state; geography/travel enough to choose a route; active powers; change log. Scale-specific headings omit per the draft (MACRO / REGIONAL / LOCAL). Pressure is not required.
+- Q: Which skill is primary when creating or editing a region wiki page? → A: New `region-design` is primary. `place-design` defers for region jobs.
+- Q: When a region lists a front or pressure, is that a `type: quest` page or only a section on the region note? → A: Regions do not inherently need pressure. Include a pressure only if it is already stated, and link the existing wiki note. Do not revive `type: front`.
+
+### Session 2026-09-13
+
+- Q: Should a new Hook, Development, Cliffhanger, Climax, or Resolution page copy that type’s draft template, or still be the same Session 11 cockpit card? → A: Typed draft templates become the live pages. Keep the draft jobs. Add columns and the rest of the current template layout. Session 11 proves readability, not heading order.
+- Q: Should the composition skill fill the session-plan draft (compass, beat map, floating beats, pressure, PC touchpoints), or keep the Session 11 spine (length, prize, opposition, numbered skeleton)? → A: Fill the session-plan draft. Keep Beat Chart rules. Keep compass, beat map, floating beats, pressure, PC touchpoints. Upgrade layout. Not a live beat.
+- Q: Should new Hook through Resolution pages and the session plan stay `type: session-prep`, or get new campaign types? → A: Keep `type: session-prep`. Use a kind field for the five beats and the session plan.
+
+## User Scenarios & Testing *(mandatory)*
+
+### User Story 1 - Planning a session uses the composition skill (Priority: P1)
+
+A Co-DM is planning a session, one-shot, adventure arc, or expedition evening. They load the **composition skill**. That skill directs how to compose beats together as a Beat Chart: one Hook to start, alternating Developments and Cliffhangers in the middle, one Climax then one Resolution to end. It sets polarity (action opening then a Development; cerebral opening then a Cliffhanger; the middle beat before an action Climax is a Development; the middle beat before a cerebral Climax is a Cliffhanger), the time budget (about thirty minutes per beat; Hook, Climax, and Resolution together about ninety minutes), thread planting and harvest, escalation, and transitions (how one beat's resolution becomes the next beat's trigger).
+
+They copy the session-plan draft. The page is `type: session-prep` with kind `session-plan`. It is the night's chart: compass, beat map, floating beats, pressure, PC touchpoints, and links to the typed beat pages. Beat Chart rules still bind. It is not a sixth live beat and does not duplicate a beat's run jobs. They do not need the five type-card catalogs to draw that chart.
+
+**Why this priority**: The named failure is one blob of guidance. Session planning is a chart job. Mixing it with every Hook, Development, Cliffhanger, Climax, and Resolution card wastes attention and produces filler or railroads.
+
+**Independent Test**: Give an author a session-planning job and no type-card catalogs. They can name tonight's Beat Chart (Hook → alternating middle pairs → Climax → Resolution), polarity, time budget, and which live threads each slot advances. A second reviewer judges the chart valid without seeing the type cards.
+
+**Acceptance Scenarios**:
+
+1. **Given** a job to plan a session, **When** the author starts, **Then** the composition skill is the primary skill.
+2. **Given** that planning job, **When** the author produces the session plan, **Then** the chart starts with one Hook, ends with one Climax then one Resolution, and places Developments and Cliffhangers only in alternating order.
+3. **Given** that session plan, **When** a reviewer inspects it, **Then** each prepared beat advances at least one live thread, early pairs cost less than later pairs, and the handoff of each slot names a trigger for the next.
+4. **Given** that planning job, **When** the author draws the chart, **Then** they are not required to open the Hook, Development, Cliffhanger, Climax, or Resolution type-card catalogs.
+5. **Given** that session plan, **When** the DM opens it, **Then** they see compass, beat map, floating beats, pressure, and PC touchpoints in current-template layout, and they follow links to typed beat pages rather than running the night from duplicated beat jobs on the chart.
+
+---
+
+### User Story 2 - Writing, editing, or filling a typed beat uses that type's skill (Priority: P1)
+
+A Co-DM is writing a new session beat of one type, editing an existing beat of that type, or creating content for that beat (situation, pressure, spoken opening, procedure, landing). They load that **type skill** as primary: Hook, Development, Cliffhanger, Climax, or Resolution.
+
+They copy that type's draft template. The page is `type: session-prep` with kind matching the beat (`hook`, `development`, `cliffhanger`, `climax`, or `resolution`). The type skill owns that type's job, when it is complete, its cards (the proven shapes under that type), and how to fill this beat. A Hook author can finish a Hook without reading Development, Cliffhanger, Climax, or Resolution cards. The same isolation holds for the other four types, except the named seams in User Story 3.
+
+**Why this priority**: The second half of the split. A Hook is not a Cliffhanger. Loading every type to write one beat is the same blob as before.
+
+**Independent Test**: Give an author a job to write, edit, or fill a Development and withhold the other four type-card catalogs. The result is a Development: the decision space changed, players can name what they now know or can decide, and a second reviewer does not classify it as a Cliffhanger, Hook, Climax, or Resolution.
+
+**Acceptance Scenarios**:
+
+1. **Given** a job to write, edit, or create content for a Hook, **When** the author works, **Then** the Hook skill is primary and the other four type-card catalogs are not required.
+2. **Given** the same kind of job for a Development, Cliffhanger, Climax, or Resolution, **When** the author works, **Then** that type's skill is primary and the other four type-card catalogs are not required.
+3. **Given** a newly written or edited beat of one type, **When** a second reviewer classifies it, **Then** they name the same type the author claimed, using that type's completion test.
+4. **Given** content created for a typed beat (spoken opening, pressure, procedure, landing), **When** it is placed, **Then** it serves that beat's type job and does not turn the beat into a different type.
+
+---
+
+### User Story 3 - Skills load each other only when the current job needs them (Priority: P2)
+
+Composition and type skills load each other as necessary, then drop. They are not one standing bundle.
+
+Named seams that require a second skill:
+
+- Filling a chart slot → composition loads that type skill.
+- Chart position, polarity, thread harvest, or transition is in question while writing a typed beat → the type skill loads composition.
+- **Play a Cliffhanger as Hook** or **Play a Development as Hook** → Hook loads the borrowed type.
+- the handoff names the next type → the current type skill may load that next type only for the handoff, not for rewriting this beat.
+
+Any other reason to open a second type-card catalog is a defect.
+
+**Why this priority**: Split without load-on-need is two copies of the blob. The product is the seam list.
+
+**Independent Test**: Walk a planning job that then fills one Hook and one Development. Record which skills were primary and which were loaded at seams. Composition was primary for the chart; Hook was primary for the Hook; Development was primary for the Development; extra type catalogs opened only if a named seam fired.
+
+**Acceptance Scenarios**:
+
+1. **Given** a session-planning job that then fills a named slot, **When** the author starts filling that slot, **Then** composition loads that type skill and that type skill becomes primary for the fill.
+2. **Given** a typed-beat job whose chart position or polarity is unclear, **When** the author needs the chart, **Then** the type skill loads composition for that question and does not keep it as the primary skill for writing the beat.
+3. **Given** a Hook that is Play a Cliffhanger as Hook or Play a Development as Hook, **When** the author writes it, **Then** Hook remains the session's one Hook and loads the borrowed type only for that opening shape.
+4. **Given** a typed-beat job with no named seam, **When** the author finishes, **Then** no other type-card catalog was opened.
+
+---
+
+### User Story 4 - The chart still follows Scripting the Game, with player agency (Priority: P2)
+
+The composition skill follows the Beat Chart methods in *Scripting the Game* (Pondsmith / R. Talsorian): start with a Hook; end on a Climax followed by a Resolution; Developments move the story without physical conflict; Cliffhangers are contests whose outcome stays in doubt to the end; Developments and Cliffhangers always alternate; keep Cliffhangers short and save the strongest pressure for the Climax; about one beat per half-hour of play.
+
+It also keeps this campaign's agency gates: prepare situations not required outcomes; recompute after every beat; do not force the next scene because a slot is empty; let the chart shrink, branch, pause, or end early when the new state warrants it.
+
+Type skills carry that type's cards from the same method (Kidnapped, Discovery, Chase, Clue, Final Battle, Happy Ending, and the rest already in campaign use), each with a trigger, stakes, player options, and an agency note. A card is chosen because the fiction calls for it, not to fill an empty slot.
+
+**Why this priority**: The split exists so agents can follow those methods well, not so they can invent a second pacing system.
+
+**Independent Test**: Give two reviewers a new session spine and its live beats. They confirm the three Beat Chart rules, polarity, time budget, and that no beat forces a required player outcome. They do not need to see the method source.
+
+**Acceptance Scenarios**:
+
+1. **Given** a newly composed session, **When** a reviewer audits order, **Then** it begins with one Hook, never places two Developments or two Cliffhangers consecutively, and ends with one Climax followed by one Resolution.
+2. **Given** an action-heavy Hook, **When** the next beat is placed, **Then** it is a Development. **Given** a cerebral Hook, **When** the next beat is placed, **Then** it is a Cliffhanger.
+3. **Given** an action Climax, **When** the last middle beat is placed, **Then** it is a Development. **Given** a cerebral Climax, **When** the last middle beat is placed, **Then** it is a Cliffhanger.
+4. **Given** a typed beat written from a card, **When** players act, **Then** at least two viable responses exist and ignoring, failing, or redirecting the beat updates the world rather than replaying the slot.
+
+---
+
+### User Story 5 - Typed beat templates are the live pages; Work and crafts keep their owners (Priority: P1)
+
+A Co-DM writing a Hook, Development, Cliffhanger, Climax, or Resolution copies that type's draft template. The page the DM runs is that filled template. Draft jobs stay. Layout matches current wiki templates: columns, tables, omit unused. Session 11 remains the scan-quality bar — a DM can timebox, speak the opening, and name the next state from that page alone. It is not a required heading-name match.
+
+The session plan still stays the chart, not a sixth live beat. No campaign wiki write until the DM accepts. Theatre of the mind still owns spoken player text. Encounter, trap, place, and monster crafts still own their math and sites. Type skills fill the typed page. They do not hand the beat to a later assembly step that rewrites it into a Session 11 cockpit.
+
+**Why this priority**: The draft jobs are the product. Cloning Session 11 headings would throw them away. Two layouts (draft then cockpit) is the blob again.
+
+**Independent Test**: Give an author a job to write a Hook. The page starts from the Hook draft template. A second DM can run it from that page and does not need a Session 11 heading spine. Work was proposed in chat before any wiki write.
+
+**Acceptance Scenarios**:
+
+1. **Given** a new live beat written under a type skill, **When** the DM opens it in Reading view, **Then** it presents that type's draft jobs in current-template layout (columns where a dashboard pair shares the scan), not Session 11 heading order.
+2. **Given** that page, **When** a second DM scans it, **Then** they can timebox the slice, speak the opening, and name the next state without another format guide.
+3. **Given** proposed beats, **When** the DM has not accepted, **Then** no campaign wiki page is written.
+4. **Given** spoken player text on a beat, **When** it is written, **Then** theatre of the mind still owns it. **Given** a fight, trap, or site on a beat, **When** those are designed, **Then** their existing craft owners still own them.
+5. **Given** a filled typed beat, **When** it is filed, **Then** no later assembly rewrites it into a Session 11 cockpit card.
+
+---
+
+### User Story 6 - Spell and vehicle wiki pages use the new templates (Priority: P2)
+
+A Co-DM creates or edits a named **vehicle** or **spell** campaign page. They start from `wiki/templates/vehicle.md` or `wiki/templates/spell.md` (the scaffolds provided for this feature). `wiki/AGENTS.md` lists `type: vehicle` and `type: spell` and Layout jobs for those kinds. Pass is those jobs, not heading-order match. Omit unused sections.
+
+A vehicle page is runnable at the table: spoken look, sheet (size, type, speed, crew, passengers, cargo), components (hull, helm, movement, weapons when armed), crew stations, handling, and combat. `vehicle-design` fills that page, including those numbers. Theatre of the mind still owns `[!narration]`.
+
+A spell page is runnable at the table: spoken look of the casting, classification line, 2024 effect block (time, range, components, duration, saves, damage, conditions, scaling when it scales), then Discovery and Lore when the spell needs placement or history. `spell-design` is primary for that page. Theatre of the mind still owns `[!narration]`.
+
+Skills that teach these pages state what to write and when the page is done. They describe work that has not been done yet as the work to do now.
+
+**Why this priority**: The wiki has no spell or vehicle kind yet. The templates are the layout. Skills that still teach "leave the sheet blank" will not produce playable pages.
+
+**Independent Test**: Give an author a job to create a named ship. The page starts from `wiki/templates/vehicle.md` and includes narration, a filled sheet, and hull/component figures so the craft can enter play. Give an author a job to create a spell. `spell-design` is primary. The page starts from `wiki/templates/spell.md` and includes narration, classification, and a runnable 2024 effect. A reviewer can run both without another format guide.
+
+**Acceptance Scenarios**:
+
+1. **Given** a job to create or edit a named vehicle, **When** the author writes the wiki page, **Then** they copy `wiki/templates/vehicle.md` and fill sheet, components, crew, handling, and combat so the vehicle can be run.
+2. **Given** a job to create or edit a spell, **When** the author writes the wiki page, **Then** `spell-design` is primary, they copy `wiki/templates/spell.md`, and they fill narration, classification, and the runnable effect block.
+3. **Given** `wiki/AGENTS.md`, **When** an author classifies the page, **Then** `type` may be `vehicle` or `spell`, and Layout lists jobs for those kinds.
+4. **Given** `vehicle-design` after this feature, **When** an author follows it, **Then** it tells them to fill the vehicle sheet and components as part of the page.
+
+---
+
+### User Story 7 - Faction wiki pages use the new template (Priority: P2)
+
+A Co-DM creates or edits a named **faction** campaign page. They start from `wiki/templates/faction.md` (the scaffold provided for this feature). `faction-design` is primary for that page. `wiki/AGENTS.md` already lists `type: faction`. Layout lists jobs for that kind. Pass is those jobs, not heading-order match. Omit unused sections.
+
+A faction page is runnable at the table when it has: public face; DM thesis; current state; one active agenda; table-relevant assets, people, places, and relationships; and a faction-turn log. Extra headings in the scaffold are omitted when unused. Theatre of the mind still owns `[!narration]` for the public face.
+
+`faction-design` writes Current Turn as the planned next move and does not roll or canonize the result. `world-tick` still runs the turn, rolls, and appends the log. The agenda clock lives on the faction page; `hot.md` may point at that faction and MUST NOT store a second clock. `faction-design` states what to write and when the page is done. It describes work that has not been done yet as the work to do now. `faction-prep` is removed; it is not kept as a stub.
+
+**Why this priority**: `type: faction` exists without a template or Layout jobs. Current `faction-prep` required sections (Agenda, Membership, Methods, Public Face, Clock) do not match the scaffold. A second owner beside `faction-design` would split the same job.
+
+**Independent Test**: Give an author a job to create a named faction. `faction-design` is primary. The page starts from `wiki/templates/faction.md` and includes the named jobs. A reviewer can answer what the faction wants, what it can do, what it will do next, what changes if it succeeds, and how the party can notice or interfere, without another format guide.
+
+**Acceptance Scenarios**:
+
+1. **Given** a job to create or edit a named faction, **When** the author writes the wiki page, **Then** `faction-design` is primary, they copy `wiki/templates/faction.md`, and they fill public face, DM thesis, current state, one active agenda, table-relevant assets/people/places/relationships, and a faction-turn log.
+2. **Given** that page, **When** unused scaffold headings have no play-relevant content, **Then** they are omitted.
+3. **Given** `wiki/AGENTS.md`, **When** an author classifies the page, **Then** `type` may be `faction`, and Layout lists jobs for Faction.
+4. **Given** `faction-design` after this feature, **When** an author follows it, **Then** it tells them to fill those jobs as part of the page. **Given** a job that previously would have loaded `faction-prep`, **When** the author starts, **Then** they load `faction-design` and `faction-prep` is not present.
+5. **Given** a new faction page, **When** `faction-design` finishes, **Then** Current Turn names the planned next move and no roll has been made. **Given** a later `world-tick`, **When** that faction can affect current play, **Then** `world-tick` resolves the move and appends the faction-turn log.
+6. **Given** an active faction with an independent agenda, **When** the page is written, **Then** the agenda clock is on that page. **Given** `hot.md`, **When** it mentions that faction, **Then** it points at the page and does not keep a duplicate clock.
+---
+
+### User Story 8 - Lore wiki pages use the new template (Priority: P2)
+
+A Co-DM creates or edits a named **lore** campaign page. They start from `wiki/templates/lore.md` (the scaffold provided for this feature). `lore-design` is primary for that page. Layout lists jobs for that kind. Pass is those jobs, not heading-order match. Omit unused sections.
+
+One lore note answers one durable question about the world. Unrelated truths are split into linked notes. A lore page is runnable at the table when it has: At a Glance (core truth and why it matters); Current Truth; and At the Table (what players notice, and what this explains, enables, or warns). Extra headings in the scaffold — Accounts, Discovery, History, Canon Log, and the rest — are omitted when unused.
+
+`lore-design` states what to write and when the page is done. It describes work that has not been done yet as the work to do now. Lore is not canon until players interact with or witness it at the table; until then the DM may change it freely and Canon Log is omitted. After that, `session-wrapup` or `reconciling-session-evidence` updates Current Truth and appends the Canon Log. `lore-design` does not invent table history.
+
+**Why this priority**: Campaign `type` does not currently include `lore`, and ingest still maps old `lore` labels to `item`. There is no lore skill. Without a template, Layout jobs, a primary skill, and a real `type: lore`, lore becomes encyclopedia pages or gets filed as items.
+
+**Independent Test**: Give an author a job to create a named lore note. `lore-design` is primary. The page starts from `wiki/templates/lore.md`, answers one durable question, and includes At a Glance, Current Truth, and At the Table. A reviewer can run the note at the table without another format guide.
+
+**Acceptance Scenarios**:
+
+1. **Given** a job to create or edit a named lore note, **When** the author writes the wiki page, **Then** `lore-design` is primary, they copy `wiki/templates/lore.md`, and they fill At a Glance (core truth + why it matters), Current Truth, and At the Table (notice / explains / enables / warns).
+2. **Given** that page, **When** unused scaffold headings have no play-relevant content, **Then** they are omitted.
+3. **Given** two unrelated truths, **When** they would share one page, **Then** they are split into linked notes instead.
+4. **Given** `wiki/AGENTS.md`, **When** an author classifies the page, **Then** `type` may be `lore`, and Layout lists jobs for Lore.
+5. **Given** `lore-design` after this feature, **When** an author follows it, **Then** it tells them to fill those jobs as part of the page.
+6. **Given** ingest after this feature, **When** a world-truth note is labeled `lore`, **Then** it is filed as `type: lore`, not remapped to `item`. **Given** a page that is actually an item, **When** it was previously labeled `lore`, **Then** it stays `item`.
+7. **Given** a lore page the players have not interacted with or witnessed, **When** the DM changes it, **Then** it is not `canon`, the change needs no Canon Log, and the DM may change it freely. **Given** a later session where the party interacts with or witnesses that lore, **When** wrapup or reconcile runs, **Then** Current Truth is updated if needed and a Canon Log row is appended.
+---
+
+### User Story 9 - Quest wiki pages use the new template (Priority: P2)
+
+A Co-DM creates or edits a named **quest** campaign page. They start from `wiki/templates/quest.md` (the scaffold provided for this feature). `narrative-islands` is primary for that page. Layout lists jobs for that kind. Pass is those jobs, not heading-order match. Omit unused sections. Track the situation, not a plotted sequence.
+
+A quest page is runnable at the table when it has: summary (objective, why now, deadline); Situation; Stakes including what continues if the party walks away; World in motion (the driver and its next move if uninterrupted); and at least two independent leads. Extra headings are omitted when unused. Resolution is omitted while the quest is unresolved. Theatre of the mind still owns `[!narration]` for the player-facing brief.
+
+`narrative-islands` states what to write and when the page is done. It describes work that has not been done yet as the work to do now. It fills `wiki/templates/quest.md` instead of minting quests from session-prep. After the page exists, `narrative-islands` owns later updates: World in motion, portents, rolls, Situation, status, and the Quest log. `world-tick` and wrapup do not take that job. No `quest-design` skill is added.
+
+**Why this priority**: `narrative-islands` already owns situation pages. There is no quest template or Layout row. Extra situation types (`front`, `encounter`) split the same job. Quest is the name for a durable sandbox situation.
+
+**Independent Test**: Give an author a job to create a named quest. `narrative-islands` is primary. The page starts from `wiki/templates/quest.md` and includes the named jobs. A reviewer can run the situation, name what continues if the party walks away, and point to at least two independent leads, without another format guide.
+
+**Acceptance Scenarios**:
+
+1. **Given** a job to create or edit a named quest, **When** the author writes the wiki page, **Then** `narrative-islands` is primary, they copy `wiki/templates/quest.md`, and they fill summary (objective, why now, deadline), Situation, Stakes including walk-away, World in motion (driver and next move if uninterrupted), and at least two independent leads.
+2. **Given** that page, **When** unused scaffold headings have no play-relevant content, **Then** they are omitted. **Given** an unresolved quest, **When** Resolution has no outcome yet, **Then** Resolution is omitted.
+3. **Given** `wiki/AGENTS.md`, **When** an author classifies the page, **Then** `type` may be `quest`, and Layout lists jobs for Quest.
+4. **Given** a quest page, **When** a reviewer inspects routes, **Then** there is no required sequence of party actions and at least two independent leads remain.
+5. **Given** `narrative-islands` after this feature, **When** an author follows it for a quest, **Then** it tells them to fill `wiki/templates/quest.md` and those jobs as part of the page. No `quest-design` skill exists.
+6. **Given** a later update to an existing quest, **When** portents, World in motion, or the Quest log change, **Then** `narrative-islands` is still primary, including any roll. `world-tick` and wrapup do not own those updates.
+7. **Given** a durable situation that would previously have been `type: front` or `type: encounter`, **When** the author files it, **Then** it is `type: quest` on `wiki/templates/quest.md`. Those two types are not used.
+---
+
+### User Story 10 - City wiki pages use the new template (Priority: P2)
+
+A Co-DM creates or edits a named **city** campaign page. They start from `wiki/templates/city.md` (the scaffold provided for this feature). The page is `type: place` with `kind: city`. `city-design` is primary for that page. `place-design` is the hub for all places and defers to `city-design` for cities. Layout lists jobs for City. Pass is those jobs, not heading-order match. Omit unused sections. Keep the page runnable, not encyclopedic.
+
+A city page is runnable at the table when it has: Arrival; At a glance including current pressure; Orientation (districts and getting around); Gazetteer enough to intentionally seek a place; rules that matter at the table; and at least one active situation with what happens if nobody intervenes. Extra headings are omitted when unused. Theatre of the mind still owns `[!narration]` for Arrival. Faction full agendas stay on faction pages; this page records only local posture.
+
+`city-design` states what to write and when the page is done. It describes work that has not been done yet as the work to do now.
+
+**Why this priority**: Settlements are already `type: place`, but `place-design` is a hub, not the city writer. The site scaffold cannot run a city. Without city jobs and a specialized skill, the page becomes an encyclopedia or a site note stretched too far.
+
+**Independent Test**: Give an author a job to create a named city. `city-design` is primary. The page starts from `wiki/templates/city.md` and includes the named jobs. A reviewer can arrive, find a district, seek a place on purpose, name a local rule that changes play, and say what happens if nobody intervenes, without another format guide.
+
+**Acceptance Scenarios**:
+
+1. **Given** a job to create or edit a named city, **When** the author writes the wiki page, **Then** `city-design` is primary, they copy `wiki/templates/city.md`, and they fill Arrival, At a glance including current pressure, Orientation (districts and getting around), Gazetteer enough to seek a place, rules that matter at the table, and at least one active situation with if-nobody-intervenes.
+2. **Given** that page, **When** unused scaffold headings have no play-relevant content, **Then** they are omitted.
+3. **Given** `wiki/AGENTS.md`, **When** an author classifies the page, **Then** `type` is `place`, `kind` is `city`, and Layout lists jobs for City.
+4. **Given** faction detail, **When** it is more than local posture in this city, **Then** it lives on the faction page, not the city page.
+5. **Given** `place-design` and a city job, **When** the author starts, **Then** `place-design` defers to `city-design`. `place-design` remains the hub for places that have no specialized skill.
+---
+
+### User Story 11 - Region wiki pages use the new template (Priority: P2)
+
+A Co-DM creates or edits a named **region** campaign page. They start from `wiki/templates/region.md` (the scaffold provided for this feature). `region-design` is primary for that page. `place-design` defers when the job is a region. Layout lists jobs for Region. Pass is those jobs, not heading-order match. Omit unused sections. Keep persistent geography separate from ephemeral events. Scale (macro / regional / local) decides which extra headings earn a place.
+
+A region page is runnable at the table when it has: spoken look; At a glance; Current state; geography and travel enough to choose a route; active powers; and a change log. Extra headings omit by scale. Theatre of the mind still owns `[!narration]`. Detailed sites get their own [[place]] notes once they no longer fit here. The page does not invent pressure. If a pressure is already stated elsewhere, link that note.
+
+`region-design` states what to write and when the page is done. It describes work that has not been done yet as the work to do now.
+
+**Why this priority**: Wilderness regions currently fall through site place notes. `place-design` is a hub, not the region writer. Without region jobs and a specialized skill, the page becomes an encyclopedia or a stretched site.
+
+**Independent Test**: Give an author a job to create a named region. `region-design` is primary. The page starts from `wiki/templates/region.md` and includes the named jobs. A reviewer can travel and name who can change the region, without another format guide. A region with no already-stated pressure still passes.
+
+**Acceptance Scenarios**:
+
+1. **Given** a job to create or edit a named region, **When** the author writes the wiki page, **Then** `region-design` is primary, they copy `wiki/templates/region.md`, and they fill spoken look, At a glance, Current state, geography/travel enough to choose a route, active powers, and a change log.
+2. **Given** a macro region, **When** encounter tables and minor sites add no choice, **Then** they are omitted. **Given** a local region, **When** Subregions add no choice, **Then** Subregions are omitted.
+3. **Given** `wiki/AGENTS.md`, **When** an author classifies the page, **Then** `type` may be `region`, and Layout lists jobs for Region.
+4. **Given** a detailed site inside the region, **When** its key no longer fits on the region page, **Then** it becomes a linked [[place]] note.
+5. **Given** `place-design` and a region job, **When** the author starts, **Then** `place-design` defers to `region-design`.
+6. **Given** no already-stated pressure, **When** the region page is written, **Then** it has no invented front and still passes. **Given** a pressure already stated on another wiki note, **When** it matters here, **Then** the region links that note and does not copy it.
+
+### Edge Cases
+
+- Play a Cliffhanger as Hook or Play a Development as Hook: still one Hook for the session; the borrowed type is loaded only for that opening shape; the next beat still follows polarity.
+- Editing one beat on an existing spine: type skill is primary; composition loads only if order, polarity, threads, or transitions change.
+- Creating content for a beat is filling that beat's jobs, not becoming encounter, trap, place, or spoken-prose crafts. Hand off; do not absorb.
+- Two consecutive same-type middle beats: composition rejects the order and recomputes; it does not pad a third beat of the other type just to satisfy the chart.
+- Unused template sections on a new spell, vehicle, faction, lore, quest, city, region, or typed beat page are omitted; filled jobs stay.
+- The central question resolves early: that resolution is the Climax; deliver Resolution rather than padding to a planned slot.
+- A cold open before the Hook is not a second Hook.
+- A type skill restating the full Beat Chart, or composition restating another type's card catalog, is a defect.
+- After this feature, no remaining single skill contains the full chart plus all five type-card catalogs.
+- Existing Session 11 beats and spines are not rewritten solely to prove the split.
+- Companion notes (hazards tables) are not typed beats and do not load type skills.
+- A new typed beat MUST NOT be judged by whether Session 11 heading names are present.
+- Ingest MUST NOT map `lore` to `item`. World-truth notes use `type: lore`. Actual items stay `item`.
+- A beat that needs a named craft, spell, faction, lore note, quest, city, or region hands off to that wiki kind; the beat skill still owns the beat.
+- `place-design` is the hub for all places. It defers to `city-design` for `kind: city` and to `region-design` for region jobs. Site places still use `wiki/templates/place.md`.
+- Night-only pressure stays a session-plan section. A durable situation page is `type: quest` on `wiki/templates/quest.md`, not session-prep. `type: front` and `type: encounter` are retired; those situations are quests.
+- A region MUST NOT invent pressure. If a pressure is already stated, the region links that wiki note. `type: front` stays retired.
+- After a quest page exists, `narrative-islands` owns later updates including rolls and the Quest log. `world-tick` does not advance quest portents. Wrapup does not own the Quest log.
+- Retiring `type: encounter` does not replace encounter-prep, traps-trials, or other fight/site crafts. Those still own math and sites. The wiki situation page is `type: quest`.
+- Existing faction pages are not rewritten solely to prove the new template. Existing pages labeled `lore` that are actually items stay `item`; they are not rewritten solely to prove the lore template.
+- A job that previously loaded `faction-prep` loads `faction-design` instead. `faction-prep` is not kept as a stub.
+- `faction-design` does not roll or canonize a future move. `world-tick` remains the advancement ritual and writes the log.
+- The faction page owns the agenda clock. `hot.md` may link to the faction and MUST NOT keep a second clock.
+- Lore is not `canon` until players interact with or witness it. Until then the DM may change it freely and Canon Log is omitted. `lore-design` does not invent table history. `session-wrapup` and `reconciling-session-evidence` append the Canon Log after play.
+- Claude Code usage limit: defer that Claude-dependent task until Claude Code is available; complete remaining tasks that do not depend on it. If every remaining open task is blocked by that limit, no other work can be done, and the retry time on the blocked task is more than one hour away, the session agent MAY instead send the same tightly scoped skill-writing prompt to the Codex CLI at ChatGPT 5.5 medium. Re-check those gates before each remaining blocked skill job; prefer Claude Code if it is usable again.
+
+## Requirements *(mandatory)*
+
+### Functional Requirements
+
+- **FR-001**: A job to plan a session, one-shot, adventure arc, or expedition evening MUST use the composition skill as its primary skill.
+- **FR-002**: The composition skill MUST direct Beat Chart assembly: one Hook to start; Developments and Cliffhangers only in alternating order; one Climax followed by one Resolution to end; polarity as in User Story 4; about thirty minutes per beat; Hook, Climax, and Resolution together about ninety minutes; plant threads early, harvest them at the Climax, show their final state in the Resolution; escalate cost across the middle; treat each beat's handoff as the next beat's trigger. Composition MUST fill the session-plan draft supplied for this feature. That page MUST include compass, beat map, floating beats, pressure, and PC touchpoints. It MUST NOT duplicate a live beat's run jobs.
+- **FR-003**: A job to write a new beat of one type, edit a beat of that type, or create content for that beat MUST use that type's skill as its primary skill.
+- **FR-004**: There MUST be exactly five type skills, one each for Hook, Development, Cliffhanger, Climax, and Resolution. Subtype cards MUST live with their type. There MUST NOT be a separate skill per subtype card.
+- **FR-005**: A type skill MUST own that type's purpose, completion test, cards, and how to fill this beat. It MUST NOT own Beat Chart assembly.
+- **FR-006**: The composition skill MUST NOT include the five type-card catalogs. A type skill MUST NOT include the full Beat Chart or another type's card catalog.
+- **FR-007**: Skills MUST load each other only when the current job needs the other skill. They MUST NOT be required together as one standing bundle.
+- **FR-008**: Named seams that MAY load a second skill are: composition filling a typed slot; a typed-beat job that needs chart position, polarity, threads, or transition; Play a Cliffhanger as Hook; Play a Development as Hook; a handoff whose next type must be named. Opening another type-card catalog for any other reason MUST be treated as a defect.
+- **FR-009**: Play a Cliffhanger as Hook and Play a Development as Hook MUST remain Hook jobs. The session MUST still have one Hook. The borrowed type MUST load only for that opening shape.
+- **FR-010**: Newly composed sessions MUST satisfy the three Beat Chart rules and polarity in User Story 4.
+- **FR-011**: Prepared beats MUST be situations with at least two viable player responses. The chart MUST recompute after play rather than forcing the next prepared slot. The chart MAY shrink, branch, pause, or end early when the new state warrants it.
+- **FR-012**: A card MUST be selected because current fiction calls for it, not to fill an empty slot.
+- **FR-013**: New live beats MUST copy that type's draft template (Hook, Development, Cliffhanger, Climax, or Resolution). They MUST keep that draft's jobs. They MUST use the same scan layout family as current wiki templates (columns, tables, omit unused). Session 11 cockpit heading names MUST NOT be the pass test. Pass is the type's jobs plus readable scan, not heading-order match.
+- **FR-014**: No campaign wiki write until the DM accepts, except named ingest stubs already allowed by Work rules.
+- **FR-015**: Theatre of the mind and encounter, trap, place, and monster crafts MUST keep their existing jobs. Composition and type skills MAY hand off to them and MUST NOT replace them. Live-beat assembly MUST NOT rewrite a typed beat into a Session 11 cockpit.
+- **FR-016**: Existing Session 11 beats and spines MUST NOT be rewritten solely to satisfy this feature.
+- **FR-017**: After this feature, no single skill MAY contain the full Beat Chart plus all five type-card catalogs.
+- **FR-018**: Companion notes that are not typed beats MUST NOT be required to load a type skill.
+- **FR-019**: `wiki/templates/vehicle.md` and `wiki/templates/spell.md` MUST be the scaffolds for those campaign kinds, matching the templates provided for this feature.
+- **FR-020**: Campaign `type` MUST include `vehicle` and `spell`. Layout MUST list jobs for Vehicle and Spell. Pass is those jobs.
+- **FR-021**: A new or edited vehicle page MUST include a spoken look and a filled 5e vehicle sheet: size, type, speed, crew, and hull plus component AC/HP. Armed craft include weapons. Handling and combat are filled so the vehicle can enter play.
+- **FR-022**: `vehicle-design` MUST teach filling that vehicle template, including the sheet and component numbers.
+- **FR-023**: A job to write, edit, or create a spell page MUST use `spell-design` as its primary skill. The page MUST include a spoken look, a classification line, and a runnable 2024 effect block (casting time, range, components, duration, and the effect). Discovery and Lore are filled when the spell needs placement or history.
+- **FR-024**: Skills updated for these kinds MUST state what to write and when the page is done. They MUST treat work that has not been done yet as the work to do now.
+- **FR-025**: Claude Code MUST be used only for novel skill design, skill redesign, or a major skill-file change. Those dispatches MUST send a minimal, focused, direct prompt that names deliverables and completion criteria, at Opus 4.6 medium (`claude-opus-4-6`, `--effort medium`). Session agents MUST complete smaller edits to established files, Spec Kit pattern tweaks, and `AGENTS.md` without Claude Code.
+- **FR-026**: When Claude Code is unavailable because of a usage limit, the session agent MUST defer only the Claude-dependent task until Claude Code is available, and MUST complete remaining tasks that do not depend on it. If every remaining open task is blocked by that usage limit, no other work can be done, and the retry time recorded on the blocked task is more than one hour away, the session agent MAY invoke the Codex CLI at ChatGPT 5.5 medium with the same tightly scoped skill-writing prompt that would have gone to Claude Code (Opus 4.6 medium). The session agent MUST NOT write the design-impact change itself. Before each remaining blocked skill job, the session agent MUST re-check those gates and MUST prefer Claude Code if it is usable again.
+- **FR-027**: `wiki/templates/faction.md` MUST be the scaffold for campaign `type: faction`, matching the template provided for this feature.
+- **FR-028**: A new or edited faction page MUST include: public face; DM thesis; current state; one active agenda; table-relevant assets, people, places, and relationships; and a faction-turn log. Extra scaffold headings MUST be omitted when unused. Pass is those jobs, not heading-order match.
+- **FR-029**: Layout MUST list jobs for Faction matching FR-028.
+- **FR-030**: A job to write, edit, or create a faction page MUST use `faction-design` as its primary skill.
+- **FR-031**: `faction-prep` MUST be removed. Jobs that previously loaded `faction-prep` MUST load `faction-design` instead.
+- **FR-032**: `faction-design` MUST write Current Turn as the planned next move and MUST NOT roll or canonize the result. `world-tick` MUST remain the owner of faction advancement: it runs the turn and appends the faction-turn log.
+- **FR-033**: The agenda clock for an active faction MUST live on the faction page. `hot.md` MAY point at that faction and MUST NOT store a second clock for it.
+- **FR-034**: `wiki/templates/lore.md` MUST be the scaffold for campaign `type: lore`, matching the template provided for this feature.
+- **FR-035**: A new or edited lore page MUST answer one durable question and MUST include: At a Glance (core truth and why it matters); Current Truth; and At the Table (what players notice, and what this explains, enables, or warns). Extra scaffold headings MUST be omitted when unused. Pass is those jobs, not heading-order match. Unrelated truths MUST be split into linked notes.
+- **FR-036**: Campaign `type` MUST include `lore`. Layout MUST list jobs for Lore matching FR-035.
+- **FR-037**: A job to write, edit, or create a lore page MUST use `lore-design` as its primary skill.
+- **FR-038**: The ingest remap `lore`→`item` MUST be removed. World-truth notes MUST use `type: lore`. Pages that are actually items MUST stay `item`.
+- **FR-039**: A lore page MUST NOT be `canon` until players interact with or witness it at the table. Until then the DM MAY change it freely, and Canon Log MUST be omitted. After that interaction or witnessing, `session-wrapup` or `reconciling-session-evidence` MUST update Current Truth when it changed and MUST append the Canon Log. `lore-design` MUST NOT invent table history.
+- **FR-040**: `wiki/templates/quest.md` MUST be the scaffold for campaign `type: quest`, matching the template provided for this feature.
+- **FR-041**: A new or edited quest page MUST include: summary (objective, why now, deadline); Situation; Stakes including what continues if the party walks away; World in motion (driver and next move if uninterrupted); and at least two independent leads. Extra scaffold headings MUST be omitted when unused. Resolution MUST be omitted while the quest is unresolved. Pass is those jobs, not heading-order match. The page MUST NOT prescribe a required sequence of party actions.
+- **FR-042**: Campaign `type` MUST include `quest`. Layout MUST list jobs for Quest matching FR-041.
+- **FR-043**: A job to write, edit, or create a quest page MUST use `narrative-islands` as its primary skill. `narrative-islands` MUST teach filling `wiki/templates/quest.md`. There MUST NOT be a `quest-design` skill.
+- **FR-044**: After a quest page exists, `narrative-islands` MUST remain the owner of later updates, including World in motion, portents, rolls, Situation, status, and the Quest log. `world-tick` MUST NOT advance quest portents. `session-wrapup` MUST NOT own the Quest log.
+- **FR-045**: Campaign situation pages MUST use `type: quest`. `type: front` and `type: encounter` MUST NOT be used. Situations that would have used those types MUST be `type: quest`.
+- **FR-046**: `wiki/templates/city.md` MUST be the scaffold for a city, matching the template provided for this feature. The page MUST be `type: place` with `kind: city`.
+- **FR-047**: A new or edited city page MUST include: Arrival; At a glance including current pressure; Orientation (districts and getting around); Gazetteer enough to intentionally seek a place; rules that matter at the table; and at least one active situation with what happens if nobody intervenes. Extra scaffold headings MUST be omitted when unused. Pass is those jobs, not heading-order match. Faction full agendas MUST stay on faction pages.
+- **FR-048**: Layout MUST list jobs for City matching FR-047. Site places MUST keep using `wiki/templates/place.md` and existing Place jobs.
+- **FR-049**: A job to write, edit, or create a city page MUST use `city-design` as its primary skill. `place-design` MUST remain the hub for all places and MUST defer to `city-design` for cities. `place-design` MUST NOT write the city page itself.
+- **FR-050**: `wiki/templates/region.md` MUST be the scaffold for campaign `type: region`, matching the template provided for this feature.
+- **FR-051**: A new or edited region page MUST include: spoken look; At a glance; Current state; geography and travel enough to choose a route; active powers; and a change log. Extra scaffold headings MUST be omitted by scale (macro / regional / local) when they add no choice. Pass is those jobs, not heading-order match. A region MUST NOT invent pressure. If a pressure is already stated, the region MUST link that wiki note. `type: front` MUST NOT be revived.
+- **FR-052**: Campaign `type` MUST include `region`. Layout MUST list jobs for Region matching FR-051.
+- **FR-053**: A job to write, edit, or create a region page MUST use `region-design` as its primary skill. `place-design` MUST defer to `region-design` for region jobs and MUST NOT write the region page itself.
+- **FR-054**: The five typed beat templates and the session-plan draft supplied for this feature MUST be the scaffolds for Hook, Development, Cliffhanger, Climax, Resolution, and the session plan. They MUST be shaped into one family with current wiki-template layout. Unused sections MUST be omitted.
+- **FR-055**: New live beats and the session plan MUST use campaign `type: session-prep`. Kind MUST be `hook`, `development`, `cliffhanger`, `climax`, `resolution`, or `session-plan`. Layout MUST list jobs for those kinds. `type: beat`, `type: session-beat`, and `type: session-plan` MUST NOT be added.
+
+### Key Entities
+- **Composition skill**: The skill that loads when planning a session. It directs how to compose beats together as a Beat Chart. It does not write a typed beat's cards.
+- **Type skill**: The skill for one beat type — Hook, Development, Cliffhanger, Climax, or Resolution. Primary when writing, editing, or creating content for a beat of that type.
+- **Beat Chart**: The pacing palette: Hook, alternating Development/Cliffhanger pairs, Climax, Resolution.
+- **Hook**: The session's one strong start. Completes when the party has committed to a response to the opening pressure.
+- **Development**: A non-action beat that changes the decision space and sets direction until the next Development. Completes when players can name what they now know or can decide that they could not before.
+- **Cliffhanger**: A contest whose outcome stays in doubt to the end. Changes the physical situation — position, resources, safety, time.
+- **Climax**: The highest-stakes confrontation the middle made inevitable. Harvests threads the middle planted. Only Resolution may follow it.
+- **Resolution**: The tag after the Climax. Shows what changed, what it cost, and what players can pursue next.
+- **Card**: A proven shape under a type (Discovery, Chase, Clue, Final Battle, Happy Ending, and the rest in campaign use). Trigger, stakes, player options, agency note.
+- **Named seam**: A job that may load a second skill. Listed in FR-008.
+- **Session plan** (formerly referred to as "session spine"): The session-level chart the DM opens for order and purpose. `type: session-prep`, kind `session-plan`. Copied from the session-plan draft. Not a live beat.
+- **Live beat**: One ~thirty-minute slice the DM runs. `type: session-prep` with kind `hook`, `development`, `cliffhanger`, `climax`, or `resolution`. Format owned by that type's draft template. Session 11 is scan-quality evidence, not the heading spine.
+- **Work**: Mutable prep. Not wiki until the DM accepts.
+- **Vehicle page**: A named craft note. `type: vehicle`. Sheet, components, crew, handling, combat. Owner: `vehicle-design`.
+- **Spell page**: A named spell note. `type: spell`. Narration, classification, runnable effect. Discovery and Lore when needed. Owner: `spell-design`.
+- **spell-design**: The skill that is primary when writing, editing, or creating a spell page.
+- **Faction page**: A named organization note. `type: faction`. Jobs: public face; DM thesis; current state; one active agenda; table-relevant assets, people, places, and relationships; faction-turn log. Owner: `faction-design`.
+- **faction-design**: The skill that is primary when writing, editing, or creating a faction page. It writes Current Turn as a planned next move and does not roll.
+- **Faction-turn log**: Changed canon from faction advancement, newest first. `world-tick` appends it. `faction-design` does not.
+- **Agenda clock**: Progress toward the faction's current goal, recorded on the faction page. `hot.md` may point at the faction; it does not duplicate the clock.
+- **Lore page**: A named world-truth note. `type: lore`. One durable question. Jobs: At a Glance; Current Truth; At the Table. Extra headings omit-if-unused. Owner: `lore-design`. Not an `item`.
+- **lore-design**: The skill that is primary when writing, editing, or creating a lore page. It does not invent table history or mark lore `canon`.
+- **Canon Log**: How established lore changed at the table. Written by `session-wrapup` or `reconciling-session-evidence` after players interact with or witness the lore. Omitted until then.
+- **Quest page**: A named sandbox situation note. `type: quest`. Jobs: summary; Situation; Stakes including walk-away; World in motion; at least two independent leads. Resolution omitted while unresolved. Not a plotted sequence. Owner: `narrative-islands`, including later updates, rolls, and the Quest log. Replaces `type: front` and `type: encounter`.
+- **City page**: A named settlement note. `type: place`, `kind: city`. Jobs: Arrival; At a glance including pressure; Orientation; Gazetteer enough to seek a place; table rules; at least one active situation with if-nobody-intervenes. Not an encyclopedia. Not a site place. Owner: `city-design`. Hub: `place-design`.
+- **city-design**: The skill that is primary when writing, editing, or creating a city page. `place-design` defers to it.
+- **place-design**: The hub skill for all places. It writes site places and defers to specialized skills (`city-design`, `region-design`).
+- **Region page**: A named travel-and-powers note. `type: region`. Jobs: spoken look; At a glance; Current state; geography/travel enough to choose a route; active powers; change log. Scale omits extra headings. Pressure only if already stated, as a link. Owner: `region-design`. Hub: `place-design`.
+- **region-design**: The skill that is primary when writing, editing, or creating a region page. `place-design` defers to it.
+
+## Success Criteria *(mandatory)*
+
+### Measurable Outcomes
+
+- **SC-001**: Two independent reviewers classify a set of at least 15 jobs covering plan-a-session plus write, edit, and create-content for each of the five types, and agree on the primary skill for 100% of those jobs.
+- **SC-002**: In a session-planning job, an author produces a valid Beat Chart session plan from the session-plan draft, without opening any of the five type-card catalogs, and the page includes compass, beat map, floating beats, pressure, and PC touchpoints.
+- **SC-003**: In a typed-beat write, edit, or create-content job with no named seam, 0% of the other four type-card catalogs are opened.
+- **SC-004**: In a review of newly composed sessions after this feature is in force, 100% start with one Hook, end with one Climax then one Resolution, and contain no consecutive same-type middle beats.
+- **SC-005**: In that same review, 100% of action Hooks are followed by a Development, 100% of cerebral Hooks are followed by a Cliffhanger, 100% of action Climaxes are preceded by a Development, and 100% of cerebral Climaxes are preceded by a Cliffhanger.
+- **SC-006**: In a Reading-view review of newly composed live beats, 100% present that type's draft jobs (not Session 11 heading order) and are scannable as current wiki templates (columns present where a pair of jobs share a dashboard).
+- **SC-007**: After this feature is in force, 0% of skills contain both the full Beat Chart and all five type-card catalogs.
+- **SC-008**: After this feature is in force, 0% of existing Session 11 beats or spines are rewritten solely to prove the split.
+- **SC-009**: In a walkthrough that plans a session then fills one Hook and one later typed beat, extra skills load only when a named seam fires; 0% extra type-card catalogs open otherwise.
+- **SC-010**: In a review of newly composed beats, 100% offer at least two viable player responses, and 0% require a single prepared outcome to continue the session.
+- **SC-011**: 100% of new vehicle pages started from `wiki/templates/vehicle.md` include narration plus a filled sheet (size, type, speed, crew) and hull/component figures a DM can run.
+- **SC-012**: 100% of new spell pages started from `wiki/templates/spell.md` include narration, classification, and a runnable 2024 effect block.
+- **SC-013**: After this feature, `vehicle-design` directs the author to fill the vehicle sheet and components as part of the page.
+- **SC-014**: Two reviewers classify write, edit, and create-content jobs for a spell page and agree `spell-design` is primary for 100% of those jobs.
+- **SC-015**: 100% of Claude Code skill dispatches that occur use Opus 4.6 at medium effort with a prompt that names deliverables plus a completion test. 0% of `AGENTS.md`-only edits or Spec Kit pattern tweaks are dispatched to Claude Code.
+- **SC-016**: After a Claude Code usage-limit stop, 100% of remaining tasks that do not depend on the deferred Claude job are completed in that session; a deferred job is retried with Claude Code only after the recorded retry time, unless the Codex fallback in FR-026 applies. 100% of Codex fallback jobs re-check those gates first; 0% skip Claude Code when it is usable again.
+- **SC-017**: 100% of new faction pages started from `wiki/templates/faction.md` include public face, DM thesis, current state, one active agenda, table-relevant assets/people/places/relationships, and a faction-turn log.
+- **SC-018**: Two reviewers classify write, edit, and create-content jobs for a faction page and agree `faction-design` is primary for 100% of those jobs. 0% of those jobs load `faction-prep`.
+- **SC-019**: 100% of new faction pages have a Current Turn that names a planned next move with no rolled result. After a `world-tick` that includes that faction, 100% of those pages have a new faction-turn log row for the resolved move.
+- **SC-020**: 100% of new active-faction pages that have an independent agenda keep the agenda clock on the page. 0% of those factions have a second clock stored in `hot.md`.
+- **SC-021**: 100% of new lore pages started from `wiki/templates/lore.md` answer one durable question and include At a Glance (core truth + why it matters), Current Truth, and At the Table (notice / explains / enables / warns).
+- **SC-022**: Two reviewers classify write, edit, and create-content jobs for a lore page and agree `lore-design` is primary for 100% of those jobs.
+- **SC-023**: After this feature, 0% of newly ingested world-truth notes labeled `lore` are remapped to `item`. 100% of pages that are actually items remain `type: item`.
+- **SC-024**: 0% of lore pages the party has not interacted with or witnessed are `canon`. After wrapup or reconcile of a session where the party did interact with or witness that lore, 100% of those pages that changed have a new Canon Log row.
+- **SC-025**: 100% of new quest pages started from `wiki/templates/quest.md` include summary (objective, why now, deadline), Situation, Stakes including walk-away, World in motion (driver and next move if uninterrupted), and at least two independent leads. 0% of unresolved quest pages include a filled Resolution.
+- **SC-026**: Two reviewers classify write, edit, and create-content jobs for a quest page and agree `narrative-islands` is primary for 100% of those jobs. 0% of those jobs load a `quest-design` skill.
+- **SC-027**: After a quest page exists, 100% of portent, World in motion, and Quest log updates are done under `narrative-islands`. 0% of those updates are owned by `world-tick` or `session-wrapup`.
+- **SC-028**: After this feature, 0% of newly filed durable situation pages use `type: front` or `type: encounter`. 100% of those pages use `type: quest`.
+- **SC-029**: 100% of new city pages started from `wiki/templates/city.md` include Arrival, At a glance with current pressure, Orientation (districts and getting around), Gazetteer enough to seek a place, rules that matter at the table, and at least one active situation with if-nobody-intervenes.
+- **SC-030**: Two reviewers classify write, edit, and create-content jobs for a city page and agree `city-design` is primary for 100% of those jobs. 0% of those jobs stay on `place-design` after the hub defers.
+- **SC-031**: 100% of new region pages started from `wiki/templates/region.md` include spoken look, At a glance, Current state, geography/travel enough to choose a route, active powers, and a change log. 0% of region pages invent a pressure that was not already stated. 100% of already-stated pressures that matter here are linked, not copied.
+
+- **SC-032**: Two reviewers classify write, edit, and create-content jobs for a region page and agree `region-design` is primary for 100% of those jobs. 0% of those jobs stay on `place-design` after the hub defers.
+- **SC-033**: In a Reading-view review of newly composed session plans, 100% follow the session-plan draft jobs (not Session 11 spine heading order), link to typed beat pages, and do not duplicate Scene ends when, Zones, or Be ready for.
+- **SC-034**: 100% of newly composed live beats and session plans are `type: session-prep` with the matching kind. 0% use `type: beat`, `type: session-beat`, or `type: session-plan`.
+## Assumptions
+
+- "Type of beat" means the five Beat Chart types (Hook, Development, Cliffhanger, Climax, Resolution), not one skill per subtype card. Cards stay inside their type skill.
+- The current session-beats blob is split into the composition skill plus the five type skills. The blob is not kept beside the split.
+- Method source is *Scripting the Game* (Pondsmith, with concepts from Flint Dille, R. Talsorian Games, 2020), as already adapted for this campaign: Beat Chart rules plus player-agency gates. Skills teach the methods; they do not paste the source text.
+- Session-folder filing, Work accept-before-wiki, theatre of the mind, and encounter/trap/place/monster crafts stay as they are for beats. New live beats use the typed draft templates, not the Session 11 heading spine. New session plans use the session-plan draft, not the Session 11 spine heading list. Session 11 remains scan-quality evidence. Live-beat assembly does not rewrite a typed beat into a Session 11 cockpit. This feature also adds spell, vehicle, faction, lore, quest, city, and region wiki kinds: templates, Layout jobs, `vehicle-design` updated to fill the vehicle sheet, a new `spell-design` skill, a new `faction-design` skill, a new `lore-design` skill, a new `city-design` skill, and a new `region-design` skill so those pages are runnable. `place-design` remains the hub for places and defers to specialized skills. `faction-prep` is removed. The ingest remap `lore`→`item` is removed. `world-tick` is updated to append the faction-turn log and still owns off-screen faction advancement.
+- DM-facing callouts on the typed drafts stay for scan. `[!narration]` remains the only player-spoken surface. Harmonizing shared identity keys besides `type` and `kind` is a planning concern.
+- Creating content for a beat means filling that beat's jobs (situation, pressure, spoken opening, procedure, landing), then handing off to existing crafts when those crafts own the work, including vehicle, spell, faction, lore, quest, city, and region pages when a beat needs a named craft, spell, faction, lore note, quest, city, or region.
+- A cold open is not a Hook and is out of scope for the beat skills.
+- Out of scope: rewriting Session 11 files to prove the split or the new templates; Foundry staging; a second pacing system beside the Beat Chart; one skill per beat-subtype card; changing who owns spoken player text.

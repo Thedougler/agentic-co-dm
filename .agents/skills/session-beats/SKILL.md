@@ -1,12 +1,11 @@
 ---
 name: session-beats
 description: >-
-  Pace and run exciting TTRPG sessions with a Beat Chart adapted for player
-  agency. Use when planning or running a session, one-shot, adventure arc,
-  or expedition evening: Hook, alternating Developments and Cliffhangers,
-  Climax, and Resolution — as a situation palette and pacing dial, not a
-  railroad. Use when the table feels flat, overly linear, or when action and
-  downtime need balancing without forcing outcomes.
+  Primary skill for planning a session, one-shot, adventure arc, or expedition
+  evening. Composition only: Beat Chart assembly, thread map, polarity,
+  escalation, transitions, recompute, agency gates. Typed fill (Hook,
+  Development, Cliffhanger, Climax, Resolution) is pointed at the five
+  type-beat skills. Does not stand-load type-card catalogs.
 ---
 
 # Session beats
@@ -23,13 +22,13 @@ Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagge
 Remap durable session-prep to `wiki/journal/sessions/<campaign-slug>/<session-number>/`. Templates live in `wiki/templates/`. Replace knowledge-bank terminology with wiki terminology, but do not change geographic river-bank language. Point at `docs/agents/work.md` rather than restating the glossary.
 
 
-## Filed spine
+## Filed session plan
 
-After accept, file one spine at `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<number>-00-<Spine-Title>.md` with `type: session-prep`. Jobs: length, tone, prize, opposition, Hook/Climax/Resolution labels, dramatic spine, numbered skeleton with links to each live beat, per-beat purpose / table sees / truth / pressure / if they break / landing. Evidence: `wiki/_raw/Session-11-00-Birds-of-a-Feather.md`. The spine MUST NOT duplicate Scene ends when, Zones, or Be ready for. Live beats are composed with `run-guide` in Session 11 cockpit shape.
+After accept, file one session plan at `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<number>-00-<Title>.md` copied from `wiki/templates/session-plan.md` with `type: session-prep` and `kind: session-plan`. Jobs: compass, Beat Map, Floating Beats, Pressure, PC Touchpoints, and links to typed beat pages. The plan MUST NOT duplicate Scene ends when, Zones, or Be ready for. Live beats are typed pages filled by their type skills.
 
-`references/session-skeleton.md` is the planning form. The page the DM opens is the Session 11-00 shape, not that skeleton copied into the wiki.
+`references/session-skeleton.md` is the planning form. The filed page the DM opens is the filled session-plan template, not the planning skeleton.
 
-Done when: the spine answers those jobs, links every live beat, and contains no cockpit tables.
+Done when: the session plan answers those jobs, links every live beat, has `type: session-prep` and `kind: session-plan`, and contains only session-plan jobs.
 
 Use a Beat Chart as a pacing palette, never as a script. Prepare pressures,
 factions, clues, locations, offers, and hazards that can become beats. Let what
@@ -102,14 +101,9 @@ visible. PC goals pursued since the Hook have a clear new status.
 2. **Set a flexible budget.** Treat roughly 30 minutes of real play as one Beat.
    Reserve Hook, Climax, and Resolution for about 90 minutes together; fill
    additional time with alternating Development/Cliffhanger pairs. Adjust for
-   table speed, not the clock alone. Each live beat that `run-guide` will render
-   carries **Scene ends when** plus two *cut lines*: **If behind** (what to skip
-   so the beat still ends) and **If ahead** (one extra complication only if it is
-   fully inlined). `run-guide` builds that beat through **four passes**:
-   mechanical cockpit plus empty titled `[!narration]` stubs, DM-facing copy
-   edit, TotM fill, then Reading-view ready check. A Hook with a
-   cover endpoint does not also run unbounded travel; the walk to the next
-   landmark is the next beat (Sly Flourish: Watch the Time).
+   table speed, not the clock alone. Record the budget in the session plan's
+   Beat Map. A Hook with a cover endpoint does not also run unbounded travel;
+   the walk to the next landmark is the next beat (Sly Flourish: Watch the Time).
 3. **Prepare situations, not outcomes.** For each candidate, record trigger,
    actors, stakes, visible information, fuse, costs, at least two viable
    responses, and what changes afterward. For a suspense candidate, require
@@ -118,12 +112,11 @@ visible. PC goals pursued since the Hook have a clear new status.
    Climax, or Resolution only when it fires.
 4. **Fire one Hook at the start.** The Hook is the session's **strong start**:
    the first pressure the party faces, landing in one spoken delivery. Present
-   an actionable problem, offer, threat, discovery, or opening. Choose the
-   Hook card whose trigger matches the current fiction — prefer cards that
-   connect to the previous session's ending or an active PC goal.
+   an actionable problem, offer, threat, discovery, or opening. Prefer an
+   opening that connects to the previous session's ending or an active PC goal.
    Only this first beat may recap the previous session. Later beats start from
    the immediate current situation and do not summarize earlier beats or
-   prior-session events.
+   prior-session events. Filling the Hook slot is a `hook-beats` job.
 
    *Polarity handoff:* if the Hook is action-heavy (pursuit, fight, crisis,
    ambush), make the next beat a Development so the party can process what
@@ -143,14 +136,8 @@ visible. PC goals pursued since the Hook have a clear new status.
    Each Development makes the next Cliffhanger's stakes legible; each
    Cliffhanger makes the next Development's information urgent. Two of the
    same type dulls both — Cliffhanger after Cliffhanger dulls danger faster
-   than it builds excitement.
-
-   Front-load the threat in a Cliffhanger: put the danger visible and the
-   outcome uncertain from the start, keep it short, and let it resolve. A
-   Chase works well after a Kidnapping or Revelation Hook. A Race follows a
-   Discovery or clue Development that gives players a target. A Retreat
-   follows a Cliffhanger the party lost. These pairings are the natural
-   grammar, not a mandate.
+   than it builds excitement. Filling Development slots is a `development-beats`
+   job; filling Cliffhanger slots is a `cliffhanger-beats` job.
 
    A Development is complete when players can name what they now know or can
    decide that they could not before. A player-caused pause, detour, or
@@ -184,7 +171,8 @@ visible. PC goals pursued since the Hook have a clear new status.
    beat with a Development; before a cerebral Climax, end it with a Cliffhanger.
    A final battle is one shape among many: sacrifice, defense, desperate gambit,
    reckoning, negotiation under duress, catastrophe survival, trial, betrayal
-   cascade, or reframing can be the climax. Recognize formation: when player
+   cascade, or reframing can be the climax. Filling the Climax slot is a
+   `climax-beats` job. Recognize formation: when player
    choices close most open routes and the remaining paths converge on one
    high-stakes confrontation, the climax is near — call it when players commit,
    not when the chart says it is due. If the central question resolves early,
@@ -193,15 +181,16 @@ visible. PC goals pursued since the Hook have a clear new status.
    the anticipated climax entirely, the avoided confrontation's consequences
    become the new world state; recompute and let a different confrontation earn
    the role or close with a Resolution.
-10. **Show the aftermath.** Follow Climax with one Resolution. Match scope to
-    the Climax: a relationship-scale climax gets a relationship-scale
-    resolution; a faction-scale climax gets a power-vacuum resolution. Show
-    what changed, what it cost, and what the players can now pursue. Honor the
-    outcome — a surviving threat earns its place only when its survival follows
-    from established fiction and leaves the players with consequential knowledge
-    or options. Threads planted in the Hook and middle show their final
-    state; costs paid across the session are visible. Completion: the players
-    can name what is different in the world and what they want to do next.
+10. **Show the aftermath.** Follow Climax with one Resolution. Filling the
+    Resolution slot is a `resolution-beats` job. Match scope to the Climax: a
+    relationship-scale climax gets a relationship-scale resolution; a
+    faction-scale climax gets a power-vacuum resolution. Show what changed,
+    what it cost, and what the players can now pursue. Honor the outcome — a
+    surviving threat earns its place only when its survival follows from
+    established fiction and leaves the players with consequential knowledge or
+    options. Threads planted in the Hook and middle show their final state;
+    costs paid across the session are visible. Completion: the players can name
+    what is different in the world and what they want to do next.
 
 ## Agency gates
 
@@ -213,8 +202,8 @@ visible. PC goals pursued since the Hook have a clear new status.
 - Let players ignore a Development, fail a Cliffhanger, or pursue a goal they
   create. Apply visible consequences and recompute; do not hide a correct path.
 - Let the chart shrink, branch, pause, or end early when the new state warrants it.
-- Make player-facing prose a theatre-of-the-mind **pass 3** fill of the empty
-  stubs `run-guide` placed. Use dungeon-design for sites, routes, pressure
+- Make player-facing prose a theatre-of-the-mind fill inside the typed beat
+  page's narration surface. Use dungeon-design for sites, routes, pressure
   procedures, and decision graphs. Retrieve setting canon with qmd-retrieval;
   if the vault is silent, use a marked stub rather than inventing canon. Never
   paste WotC proprietary text.
@@ -240,9 +229,24 @@ healthy when it creates pressure and openings without deciding what players
 must choose.
 
 Read [references/agency.md](references/agency.md) for the recompute loop and
-anti-railroad tests. Use [references/beat-types.md](references/beat-types.md)
-for practical cards, then copy [references/session-skeleton.md](references/session-skeleton.md)
+anti-railroad tests. Copy [references/session-skeleton.md](references/session-skeleton.md)
 for preparation. Run [evals/evals.json](evals/evals.json) against drafts.
+
+## Typed fill
+
+This skill assembles the Beat Chart session plan. Composition filling a typed slot → That type skill; type becomes primary for the fill.
+
+
+| Slot | Skill |
+|---|---|
+| Hook | `hook-beats` |
+| Development | `development-beats` |
+| Cliffhanger | `cliffhanger-beats` |
+| Climax | `climax-beats` |
+| Resolution | `resolution-beats` |
+
+Type-card catalogs live in those skills, not here. A planning job produces a
+valid session plan without opening a type-card catalog.
 
 ## Session ritual
 

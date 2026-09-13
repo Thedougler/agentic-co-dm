@@ -262,9 +262,37 @@ Name one landmark. Hang every later line on it. Full seating lines live in [expe
 
 ## What to copy
 
-- Camera first. Sentence one says where the viewpoint stands — from the door,
+Presence, not postcard. A postcard is a camera looking at a drawable inventory
+from no particular position. Presence puts the party inside a space they can
+feel, point from, and act in. Cold portraits stay third person and do not take
+presence moves; the moves below are for situated scene-setting only.
+
+- Frame first. Sentence one says where the viewpoint stands — from the door,
   at the tree line, looking north across the room, or forty feet below the
-  ledge — plus how large the space is in concrete terms. Keep one camera within
+  ledge — and how large the space is at body scale: ceiling height, width in
+  strides, depth of water, distance to the far wall. Frame the space before
+  listing its furniture.
+- Body-scale environment, not assigned physiology. Ground underfoot, ceiling
+  relative to a standing body, air temperature from a source, light direction.
+  These come from the space: `heat sits under the canopy`, `the ceiling runs at
+  seven feet`. Assigned PC body reactions (`sweat on the neck`, `your asses are
+  sore`, `your nose crinkles`) are agency violations even when the stimulus is
+  real.
+- One iconic detail does most flavor work — the half-iced cake on the
+  blacksmith's table, the jade mask at chest height, the scratching behind the
+  fireplace. Choosing one frees the rest of the description for orientation and
+  action.
+- Threats and opportunities are doing something. Put a verb on the goblin, the
+  furnace, the patrol boat. A threat stationed and described is weaker than a
+  threat already in motion.
+- Attention order follows the Beat job. A Hook leads with immediate interest. A
+  Climax leads with opposition and stakes. A Resolution leads with visible
+  consequences. Do not adopt a universal enemies-first or enemies-last order.
+- Later stubs re-enter through contact with established space — glass crunching
+  underfoot, the same sweet rot, surf still slapping the hull. Persistent
+  details do not need redescription; they re-enter when a character touches,
+  crosses, or hears them again.
+- Camera first. Keep one camera within
   the selected spatial frame. Place the first anchors with north, south, east,
   west, feet, or travel time before adding more subjects.
 - Image first. Name the visible thing, then the likeness. The canopy packed so tight it looks like a floor. The lake flashing between the trees. Do not let the metaphor be the subject. A phrase they cannot mark on a sketch is not a stage.

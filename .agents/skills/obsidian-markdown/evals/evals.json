@@ -37,8 +37,7 @@
       "expected_output": "Refuses parallel wiki/concepts; uses campaigns/, lexicon/, inbox/.",
       "expectations": [
         "Does not create wiki/ or concepts/.",
-        "Remaps to ai-co-dm layout.",
-        "Keeps after-write as finish step when writing."
+        "Leaves no parallel wiki/concepts tree and follows the current repository filing flow."
       ]
     },
     {

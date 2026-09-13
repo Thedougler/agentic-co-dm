@@ -180,4 +180,4 @@ Keep the people at this fire unnamed. Identify them only as garden mouths or shi
 
 ## Battlemap
 
-![[attachments/shattered-sea/battlemaps/11-08-upscaled.jpg|Spoke Ring battlemap, fire hub and searchable Quiet with dead-end trails]]
+![[attachments/shattered-sea/battlemaps/11-06-upscaled.jpg|Session 11-06 Spoke Ring battlemap]]

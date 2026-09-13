@@ -1,14 +1,16 @@
 <!--
 Sync Impact Report
-- Version change: 1.2.0 → 1.3.0
-- Modified principles:
-  - none renamed
+- Version change: 1.15.0 → 1.16.0
+- Modified principles: none
 - Added sections:
-  - X. Agents Act Autonomously By Default
+  - XIV. Use The Simplest Tool
 - Removed sections: none
-- Follow-up TODOs: none in this file. Informal "wait to commit/push" in
-  AGENTS.md / RULES.md / git extension config is superseded and must be
-  aligned outside this command.
+- Other modified sections:
+  - XI. Designated Writer (Codex fallback invoked as `codex exec`)
+  - Agent Operating Constraints (simplest tool)
+  - Development Workflow / Review (same)
+  - Governance / Compliance (reject CLI wrappers)
+- Follow-up TODOs: none
 -->
 
 # Agentic Co-DM Constitution
@@ -88,6 +90,10 @@ usable by an agent as the primary operator:
   completion criteria on every step, leading words, progressive
   disclosure, one source of truth, the environment as truth (not a stale
   doc cache), positive instruction, prune no-ops and sediment.
+- Regardless of the agent utilized for a skill change, that agent MUST
+  receive an instruction, in addition to all original Spec Kit requirements
+  and the task-specific prompt, to use `.agents/skills/writing-for-agents`
+  for that work.
 - MUST NOT add a human-only wrapper when an agent can run the same command.
 - MUST ship the agent-shaped tool first. Human chrome waits until a human
   must operate it.
@@ -146,10 +152,10 @@ Git by default:
   one. They MUST NOT commit feature work directly to `main`.
 - Agents MUST fetch and update the working branch from `origin/main`
   before starting substantial work and before reporting done.
-- When the assigned work is complete and required checks pass, agents
-  MUST land it on `main` by the repository's normal path (merge or PR)
-  and MUST leave `origin/main` current. They MUST NOT wait for a human
-  to merge a ready branch.
+- When the assigned work is complete and required checks pass, agents MUST
+  land it on `main` by the repository's normal path (merge or PR) and MUST
+  leave `origin/main` current. They MUST NOT wait for a human to merge a
+  ready branch.
 - Agents MUST NOT force-push `main` or rewrite published default-branch
   history. They MUST NOT commit secrets, credentials, or unrelated dirty
   files. They MUST NOT skip required checks to land on `main`.
@@ -173,6 +179,88 @@ Rationale: an agent that stops for git ceremony is not autonomous. The
 repository and its context files are the memory; the default branch must
 not lag completed work.
 
+### XI. Designated Writer Work Has Bounded Concurrency
+
+Agents MAY run up to two concurrent Claude Code designated-writer
+instances. An agent MAY use a second Claude Code instance only when the
+agents involved have no other task to complete. Agents MUST NOT run more
+than one concurrent Codex designated-writer instance, and Codex MUST NOT
+overlap with Claude Code designated-writer instances. Multiple tasks that
+modify the same canonical artifact MUST remain single-writer and MUST NOT
+overlap. Independent non-writer work MAY continue concurrently unless
+another governance rule forbids it. Deferred designated-writer tasks MUST
+remain incomplete on the feature `tasks.md` with a retry time. Completing
+other or new work during a usage-limit wait MUST NOT drop, close, or omit
+those tasks; they MUST be carried over and retried only after the recorded
+time, except where the Codex fallback or session-agent usage-limit
+fallback below applies. When both Claude Code and Codex are unavailable
+due to usage limits, the session agent MAY write the deferred
+design-impact change. The session agent MUST NOT write design-impact work
+while either designated writer is usable.
+
+Rationale: bounded Claude Code concurrency uses available capacity without
+allowing competing edits to the same artifact. Codex remains serialized
+and isolated from Claude Code. Carry-over keeps deferred work findable on
+the Spec Kit task list when other work lands. Session-agent write is last
+resort when both designated writers are usage-limited.
+
+### XII. Prompt Other Agents With Objectives
+
+When a session agent prompts another coding agent (Claude Code, Codex, or
+equivalent), that prompt MUST trust the target to operate itself and its
+environment, to follow the spec, and to use Spec Kit. It MUST state the
+objective. It MUST completely communicate independently testable acceptance
+criteria and deliverables for this task. It MUST use the most
+token-efficient, cost-effective wording that still does those things.
+
+The prompt MUST NOT include tool tutorials, harness walkthroughs, or
+environment operating manuals the target already has. MUST NOT prompt the
+target about Spec Kit, spec-before-code, or other standing process the
+target already loads. MUST NOT pad with restated standing procedure, git
+ceremony, skill internals, or any other detail irrelevant to the task that
+subagent must complete. Extra tokens are a defect unless they prevent a
+named failure or carry missing acceptance or deliverable facts. Required
+instructions from this constitution (including VI's writing-for-agents
+instruction) remain in the prompt; they are named-failure prevention,
+not padding.
+
+Rationale: the other agent already knows its tools, environment, and Spec
+Kit. Tokens spent teaching that, or restating process, are cost without
+signal. Incomplete acceptance criteria is the actual failure.
+
+### XIII. Wiki Media Filenames Distinguish Kind
+
+Wiki media assets MUST encode their kind in the filename so an agent can
+classify the file from the name alone, without opening it or guessing from
+nearby notes. Distinct kinds include at least battlemap, portrait, token,
+and scene. New media kinds MUST also encode kind in the filename. Two
+assets of different kinds MUST NOT be distinguishable only by directory,
+extension, or surrounding prose. A filename that is silent on kind is a
+defect.
+
+MUST NOT treat folder placement as the only kind signal. Agents MUST NOT
+guess kind from pixels or adjacent wiki text when the filename does not
+name it.
+
+Wiki media filenames MUST NOT contain spaces. New files MUST use `-`
+where a space would have been. Existing filenames that contain spaces
+MUST be renamed by replacing each space with `-`. References to those
+files MUST be updated in the same change.
+
+Rationale: opening every image to learn whether it is a token or a
+battlemap wastes tokens and produces wrong attachments. Spaces force
+quoting and make agents guess separators.
+
+### XIV. Use The Simplest Tool
+
+Agents MUST use the simplest tool that completes the job. When a CLI exists
+for the work, agents MUST run that CLI as the command. Codex work uses
+`codex exec` on the command line. Claude Code work uses `claude -p` on the
+command line. MUST NOT wrap a CLI in Python, an eval cell, a hub process,
+or another launcher when the command can be run directly.
+
+Rationale: wrappers hide stdin, timeouts, and errors. The CLI is the tool.
+
 ## Agent Operating Constraints
 
 - Runtime guidance for agents is `AGENTS.md`. Skills MUST follow
@@ -192,6 +280,38 @@ not lag completed work.
 - Agents MUST auto-commit, auto-push the working branch, keep it current
   with `main`, and refresh agent-context, per X. They MUST NOT ask
   permission for those steps.
+- Prompts to Claude Code, Codex, or equivalent MUST follow XII: objective,
+  complete acceptance and deliverables, no Spec Kit lecture, no
+  task-irrelevant padding.
+- Wiki media assets MUST follow XIII: kind in the filename, no spaces,
+  no guessing.
+- Agents MUST follow XIV: run the simplest tool; CLIs as CLIs, not wrappers.
+- Designated writer, when used: Claude Code at `claude-opus-4-6`
+  `--effort medium`. MUST NOT use the `opus` alias or default Opus.
+  Default Opus output is worthless for language work (issue #3). Up to
+  two Claude Code instances MAY run concurrently only when the agents
+  involved have no other task to complete; they MUST NOT modify the same
+  canonical artifact concurrently. Use that writer only for novel skill
+  design, skill redesign, or a major skill-file change (issue #4). Session
+  agents complete smaller edits to established files, Spec Kit pattern
+  tweaks, and `AGENTS.md`. A Claude Code usage limit defers only that
+  Claude-dependent task on the feature `tasks.md` with a retry time;
+  remaining independent work continues. Completing other or new work while
+  waiting MUST carry those deferred tasks forward still incomplete; they
+  MUST NOT be dropped, closed, or omitted. If every remaining open task is
+  blocked by that usage limit, no other work can be done, and the retry time
+  on the blocked task is more than one hour away, the session agent MAY
+  invoke the Codex CLI at ChatGPT 5.5 medium with the same tightly scoped
+  skill-writing prompt, by running `codex exec` on the command line.
+  Codex MUST NOT run concurrently with Claude Code.
+  If that Codex invocation is itself unavailable due to a usage limit, and
+  Claude Code remains unavailable due to a usage limit, the session agent
+  MAY write the design-impact change itself. Otherwise the session agent
+  MUST NOT write the design-impact change itself. Before each remaining
+  blocked skill job, the session agent MUST re-check those gates and MUST
+  prefer Claude Code if it is usable again, then Codex if Claude Code is
+  still usage-limited. Retry after the recorded time unless that Codex
+  fallback or session-agent fallback applied.
 
 ## Development Workflow
 
@@ -205,15 +325,19 @@ not lag completed work.
    agent-context. Commit and push. Keep the branch current with `main`.
 4. Implement: TDD at agreed seams; one red → green slice at a time.
    Refactoring belongs to review, not the implementation loop. Prefer a
-   small agent-shaped tool over waiting for a human-facing one. Commit
-   per slice, push, and land on `main` when the slice is done and checks
-   pass.
+   small agent-shaped tool over waiting for a human-facing one. Commit per
+   slice, push, and land on `main` when the slice is done and checks pass.
 5. Review: code review MUST check constitution compliance, ADR conflicts,
-   that tests observe behavior rather than internals, that new
-   software is agent-shaped, that process is not overspecific, that easy
-   safe idempotent automation is unattended, that standing agent
-   context did not grow without a named failure, and that git/context
-   autonomy was not reintroduced as a human gate.
+   that tests observe behavior rather than internals, that new software is
+   agent-shaped, that process is not overspecific, that easy safe idempotent
+   automation is unattended, that standing agent context did not grow
+   without a named failure, that prompts to other agents carry objectives
+   and complete acceptance rather than operating manuals, Spec Kit
+   lectures, or other task-irrelevant padding, that wiki media filenames
+   distinguish kind, contain no spaces, and do not require guessing, that
+   git/context autonomy was not reintroduced as a human gate, and that
+   CLIs were run as CLIs rather than wrapped in Python, eval, hub, or
+   another launcher.
 
 ## Governance
 
@@ -224,8 +348,8 @@ document wins.
 Amendments:
 
 - Propose the change in a GitHub issue.
-- Update `.specify/memory/constitution.md` in the same change that
-  adopts the amendment.
+- Update `.specify/memory/constitution.md` in the same change that adopts
+  the amendment.
 - Bump **Version** using:
   - MAJOR: remove or redefine a principle incompatibly.
   - MINOR: add or materially expand a principle or section.
@@ -237,6 +361,9 @@ Compliance:
 
 - Reviews and `/speckit.analyze` MUST check proposed work against these
   principles before merge or implementation.
+- Reviews MUST verify that every skill-change assignment preserves all
+  original Spec Kit requirements and includes the writing-for-agents
+  instruction, regardless of the agent utilized.
 - Unjustified complexity (new context, new abstraction, new tracker
   surface) MUST be rejected or recorded as an ADR.
 - A new script, tool, or util that is not agent-shaped MUST be rejected.
@@ -247,7 +374,27 @@ Compliance:
 - A required human prompt to commit, push, branch, update from `main`,
   or refresh agent-context MUST be rejected unless it prevents a named
   safety failure (secrets, force-push of `main`, skipping checks).
+- A prompt to another coding agent that includes an operating manual,
+  Spec Kit tutorial, or other detail irrelevant to the task, omits
+  acceptance criteria or deliverables, or is longer than needed to state
+  those facts MUST be rejected.
+- A wiki media filename that does not encode kind, contains a space, or
+  that requires opening the file or guessing from nearby notes to
+  classify it, MUST be rejected.
+- A CLI wrapped in Python, an eval cell, a hub process, or another
+  launcher when that CLI could be run as a command MUST be rejected.
+- Reviews MUST verify that no more than two Claude Code designated-writer
+  instances run concurrently, that a second is used only when the agents
+  involved have no other task to complete, and that no canonical artifact
+  is modified by concurrent writers. Reviews MUST verify that Codex remains
+  single-instance and does not overlap with Claude Code. Usage-limited tasks
+  MUST remain on the feature `tasks.md` with a retry time when other work
+  completed during the wait, and Codex fallback may run only when every
+  remaining open task was blocked, no other work could be done, and the
+  retry time was more than one hour away. Session-agent write of a
+  design-impact change is allowed only when both Claude Code and Codex
+  were unavailable due to usage limits under those same gates.
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.3.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
+**Version**: 1.16.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12

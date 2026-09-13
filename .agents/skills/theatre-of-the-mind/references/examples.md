@@ -24,6 +24,40 @@ Other surfaces stop at their own player opening.
 Human table examples live in [humans.md](humans.md). Published boxed text and live-table place passages live in [places.md](places.md). Creature and fight lines live in [experts.md](experts.md). Person first looks live in [npcs.md](npcs.md). The ear and the slop gate live in [voice.md](voice.md).
 
 
+## Postcard vs presence (situated scene-setting)
+
+A postcard is a camera looking at a drawable inventory from no particular
+position. Presence puts the party inside a space they can feel, point from, and
+act in. Cold portraits stay third person and do not take presence moves.
+
+**Weak — postcard inventory**
+
+> The room has a long table, six chairs, a fireplace on the east wall, a tapestry above it, and a door to the courtyard on the north side. A silver candelabra sits on the table. The air smells of old smoke.
+
+No position, no body-scale size, no ground or light. A player cannot say where they stand or how big the room is. The inventory is viewable from nowhere.
+
+**Strong — presence (situated)**
+
+> From the door the room is one long stone hall, low enough that the candles on the table throw your shadows on the ceiling. Fire on the east wall, mostly coals. A tapestry above it, colors gone dark with smoke. The courtyard door at the far end stands open and cold air comes through it. The candelabra on the table is silver and recently polished.
+
+Doorway camera, body-scale ceiling, light source, ground-level air from a named source, then one iconic detail (polished silver in a smoky room). The player knows where they stand, how big the space is, and what the air is doing.
+
+## Assigned viscera vs body-scale environment
+
+Body-scale environment comes from the space. Assigned PC physiology steals the player's reaction.
+
+**Weak — assigned PC body reactions**
+
+> You push open the heavy door and step into the room. The heat hits you like a wall. Sweat pours down your face. Your stomach turns at the stench. Every nerve in your body screams to run.
+
+Sweat, stomach, and nerves are the PC's body, not the room. The player's reaction has been written for them.
+
+**Strong — environment at body scale**
+
+> The door opens on a forge room, heat rolling out past your hands on the wood. The furnace at the back glows white. Soot covers the floor in an even layer, unmarked. Something rotten under the coal smell.
+
+Heat, light, and smell are in the space. The player decides whether their character sweats, gags, or walks in unfazed.
+
 ## Complete picture vs stub (default for `[!narration]`)
 
 ## Camouflage: drawable miss-cue vs purple merge

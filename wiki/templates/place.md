@@ -16,7 +16,7 @@ summary: ""
 ---
 <!-- Copy-start scaffold. Omit unused sections. Pass is place jobs in wiki/AGENTS.md Layout. -->
 # {{title}}
-![[identity.jpg|short visible caption]]
+<!-- Add identity art when available. -->
 ## Overview
 > [!narration] Narration
 > Write the spoken look of this place in complete sentences. Routes, senses, and what a body can use. No secrets, DCs, or unearned names.
@@ -52,5 +52,5 @@ Write what this place is now, which linked places it sits between, and which edg
 
 ---
 ## Art
-![[battlemap-or-extra.jpg|short visible caption]]
+<!-- Add battlemap or extra art when available. -->
 <!-- Omit Art when unused. -->

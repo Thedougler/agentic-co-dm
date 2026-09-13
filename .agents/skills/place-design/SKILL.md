@@ -153,6 +153,8 @@ exposure, limits, or consequences.
 
 ## Presentation and handoffs
 
+Hub for all places. Write site places from `wiki/templates/place.md`. For `kind: city`, load `city-design` as primary for that page. For a region job, load `region-design` as primary for that page.
+
 Design with the [location skeleton](references/location-skeleton.md) and [node-key-and-affordances](references/node-key-and-affordances.md). File **facts** into `wiki/templates/place.md` as a scaffold. Pass is place jobs in `wiki/AGENTS.md` Layout, not heading-order match. `wiki/_raw/Old Gardens.md` and `wiki/_raw/River Line Bank.md` illustrate; do not require matching their headings.
 
 | Design work | Place jobs |

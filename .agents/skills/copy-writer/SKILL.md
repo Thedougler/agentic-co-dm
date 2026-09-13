@@ -117,7 +117,7 @@ Polish expression and **signal-density**. Keep settled facts, intent, and stated
 
    Completion: all of the above hold, or the draft is not done.
 
-5. **File.** Wikilinks, template constraints, `[!narration]` for TotM only. Session layout uses `col` / `col-md` fences, not `[!col]`. `./scripts/after-write "why" -- path1 [path2…]` on named paths only. Completion: after-write succeeded, and the only callout on the note is `[!narration]`.
+5. **File.** Apply wikilinks and template constraints, then report changed paths and any deferred owner work. Completion: the only callout on the note is `[!narration]` when the surface requires one.
 
 ## Bands
 

@@ -124,7 +124,7 @@ non-combat resolution where fiction permits; do not write PC decisions, feelings
 hidden conclusions, seed three distinct clues, at least two reachable without combat. Reusable/
 complex encounters live under the campaign's established encounters bucket; session-only scenes
 stay inline. Use `sandbox-narrative` for an anti-railroading pass and `obsidian-markdown` for
-structure. Finish writes with `./scripts/after-write "add encounter procedure"`.
+structure. Run applicable checks; report changed paths and any deferred owner work.
 
 Ability check, save, and DC choice → `dnd5e-mechanics`. Write those tests with
 the at-table grammar in `obsidian-markdown`. `npc-design`, `place-design`,

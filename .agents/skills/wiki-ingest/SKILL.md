@@ -76,7 +76,7 @@ Extract discrete ideas: claims, creative decisions, mechanics, descriptions, rel
 
 A duplicate that does not improve or correct the canonical page is still handled: skip the rewrite, keep provenance if it confirms.
 
-**Complete when:** this file's idea list maps 1:1 onto destinations in the per-file report. `complete` requires that mapping plus tracking in Step 7. Do not file the source as an unedited competing note.
+**Complete when:** this file's idea list maps 1:1 onto destinations in the per-file report. `complete` requires that mapping plus tracking in Step 7 **and** Step 1d *complete context* (every related candidate `read`, `missed`, or `unreadable`). Do not file the source as an unedited competing note.
 
 ## Ingest Modes
 
@@ -166,12 +166,12 @@ For each remaining file:
 
 1. Mark it `open`. Do not create or change wiki pages or tracking for any later file while this one is `open`.
 2. Run **this file** through Preserve / combatant-drops / Steps 1–7 as it qualifies. Unreadable, empty, or non-source binary: mark `failed` with a reason. Do not hash as success.
-3. Completing a file means: every extracted idea has a destination (see Source ideas); required pages filed or stubbed; on `complete`, `cache-update` this file only with those page destinations; write a `log.md` line for this file; mark `complete` or `failed`.
+3. Completing a file means: Step 1d ran; every extracted idea has a destination (see Source ideas); required pages filed or stubbed; on `complete`, `cache-update` this file only with those page destinations; write a `log.md` line for this file; mark `complete` or `failed`. Related misses do not by themselves fail the primary. Failure of the primary still requires a reason.
 4. Close the file before the next `open`. A later file may update a page from an earlier file only after the earlier file is `complete` or `failed`.
 
-After the run, report each file in processing order: `complete` or `failed`, destinations (pages created/updated, staged, unresolved, proposals), failure reason. Attribute later updates to the later file.
+After the run, report each file in processing order: `complete` or `failed`; related reads (identity, origin `staging` or `legacy`, role); misses; recency conflicts; destinations (pages created/updated, staged, unresolved, proposals); failure reason. If related search returned nothing, say so. Attribute later updates to the later file.
 
-**Done when:** every file is `complete` or `failed`, at most one was `open` at a time, every idea has a destination or the file is `failed` with a reason, and the DM has the per-file report.
+**Done when:** every file is `complete` or `failed`, at most one was `open` at a time, every idea has a destination or the file is `failed` with a reason, Step 1d recorded related reads or an empty search, and the DM has the per-file report.
 
 ### Ingesting Git Repositories
 
@@ -282,7 +282,7 @@ See the *Paper Extraction Frame* in `references/ingest-prompts.md` for the readi
 
 ### Step 1b: QMD Source Discovery (optional — requires `QMD_PAPERS_COLLECTION` in `.env`)
 
-**GUARD: If `$QMD_PAPERS_COLLECTION` is empty or unset, skip this entire step and proceed to Step 2.**
+**GUARD: If `$QMD_PAPERS_COLLECTION` is empty or unset, skip this entire step and proceed to Step 1d.**
 
 > **No QMD?** Skip this step entirely. Use `Grep` in Step 4 to check for existing pages on the same topic before creating new ones. See `.env.example` for QMD setup instructions.
 
@@ -295,7 +295,7 @@ Choose the QMD transport from `$QMD_TRANSPORT`:
 - `mcp` (default): use the QMD MCP tool configured in the agent.
 - `cli`: run the local qmd CLI. Use `$QMD_CLI` if set; otherwise use `qmd`.
 
-If the selected transport is unavailable (no MCP tool, `qmd` not on PATH, or the command errors), skip QMD and continue with Step 2.
+If the selected transport is unavailable (no MCP tool, `qmd` not on PATH, or the command errors), skip QMD and continue with Step 1d.
 
 For MCP transport:
 
@@ -370,14 +370,31 @@ The output is JSON with three sections you'll use directly:
 
 5. **Skip code files in the LLM pass** — do NOT send `.py`, `.ts`, `.go`, etc. source files to the model for Step 2 extraction. The AST output already captured their structure. Only send: `README.md`, `CHANGELOG.md`, inline docstrings/comments (extract as plain text), and any `.md`/`.txt` docs alongside the code.
 
-If `obsidian-wiki` is not installed or the command fails, skip this step and proceed to Step 2 as normal — it is an optimisation, not a requirement.
+If `obsidian-wiki` is not installed or the command fails, skip this step and proceed to Step 1d as normal — it is an optimisation, not a requirement.
+
+### Step 1d: Complete context
+
+Required on the distill path. Preserve and combatant-drops skip this step. Speed does not skip it.
+
+*Complete context* is the open *primary* compiled with its *related* evidence in hand. Related files are corroboration, not an `open` ingest unit, unless that file is also a later named primary (009).
+
+1. **Discover.** From this primary's content, collect candidates: links, embeds, explicit names, and the primary's own subject. Each identity once. Done when the list is only those items.
+2. **Search staging.** Look in `_raw/` for each candidate. Read each relevant hit. Origin: `staging`. Status: `read`, `missed`, or `unreadable`.
+3. **Search legacy.** Search legacy collections with `qmd` for the same subject and clearly related subjects. Fetch full sources (`qmd get` / `qmd multi-get`). Origin: `legacy`. A staging hit does not skip this search; a legacy hit does not skip staging. Ingest-time corroboration does not use query-time short-circuit (004).
+4. **Rank recency.** Newest files among the primary and related sources are the latest decisions. Older versions are supporting context. Recency is which file is newer unless the content dates the decision more clearly.
+5. **Apply.** Keep the newest decision. Keep uncontradicted older detail. When an older source contradicts a newer decision, keep the newer decision and surface a proposal or unresolved item. Compiled wiki remains current canon against a legacy hit (004). Named ingest of an approved primary still follows 015. Do not file a legacy hit as a wiki page without DM accept.
+
+A miss, unreadable file, or unreachable collection is recorded. It does not fail the primary by itself. A primary with no related hits still completes; record that search returned nothing.
+
+**Done when:** every candidate is `read`, `missed`, or `unreadable`; recency is applied; staging and legacy were both searched or the miss is recorded; the related set is ready for Step 2.
+
 
 
 ### Step 2: Extract Knowledge
 
 **GUARD:** If this source was filed on Preserve, skip to Step 7 for that file.
 
-From the source, identify:
+From the primary and its related evidence, identify:
 - **Ideas** — discrete claims, creative decisions, mechanics, descriptions, and relationships. Each idea has an audience (DM, players, or mixed-to-split) and a confidence tag
 - **Key concepts** that belong on an existing page, or deserve a justified new page
 - **Entities** (people, tools, projects, organizations) mentioned
@@ -590,6 +607,10 @@ Step 0 is the loop. Later files may strengthen or contradict earlier ones — up
 
 After ingesting, verify:
 - [ ] Every extracted idea has a destination in the per-file report (updated page, justified new page, staged/unresolved, or proposal)
+- [ ] Step 1d ran before the primary was marked `complete`: each related candidate is `read`, `missed`, or `unreadable`
+- [ ] Staging (`_raw/`) and legacy collections were both searched, or the miss is in the ingest record
+- [ ] Newest decisions were kept; uncontradicted older detail was available; older contradictions are proposals/`^[ambiguous]`, not silent preference for the older wording
+- [ ] The ingest record lists the primary, related reads (origin `staging` or `legacy`), misses, recency conflicts, and empty related search when nothing was found
 - [ ] The source was not filed as an unedited competing wiki note
 - [ ] Insufficient or fragmentary ideas stayed staged or unresolved with a reason; no invented filler
 - [ ] Conflicts are proposals/`^[ambiguous]`, not silent canon overwrites

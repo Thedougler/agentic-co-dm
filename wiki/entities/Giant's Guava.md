@@ -2,7 +2,9 @@
 title: Giant's Guava
 category: entities
 tags: [shattered-sea, item, aruhe, consumable]
-sources: ["wiki/_archive/Giant's Guava.md"]
+sources:
+  - "wiki/_archive/Giant's Guava.md"
+  - "wiki/_raw/Aruhe - Giant's Guava.md"
 summary: A rare Aruhe fruit that sets the eater's Primary Ability score to 25 for one hour.
 provenance:
   extracted: 1.0

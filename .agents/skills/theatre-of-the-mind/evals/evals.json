@@ -452,6 +452,28 @@
         "Does not include unlabeled transient facts or assume current conditions beyond the supplied stable description.",
         "Gives enough identity anchors (stone, height, slits, door, collapsed stair) to recognize and distinguish the watchtower."
       ]
+    },
+    {
+      "id": 48,
+      "prompt": "Write a situated scene-setting Initial Narration (Hook beat) for a party entering an underground market cavern. Supplied facts: the cavern ceiling is three stories high with stalactites, the floor is packed dirt with wooden stalls in rows, lanterns hang from ropes between the stalactites, a crowd moves through the stalls, and the nearest stall sells dried fish. No other facts are supplied. Use second person present tense. Do not assign PC emotion, thought, or body reaction.",
+      "expected_output": "A situated Layer 1 opening that seats the party in the space: where they stand, body-scale size of the cavern, ground/air/light before stall inventory. Ends on a Hook-appropriate live situation. No postcard inventory from nowhere, no assigned PC physiology.",
+      "expectations": [
+        "The opening establishes where the party stands and the space at body scale (ceiling height, passage width, or similar) before listing stalls or occupants.",
+        "Ground, air, or light conditions come from the space, not from assigned PC body reactions (no 'your eyes adjust', 'your stomach growls', 'sweat on your brow').",
+        "Serves a Hook job: immediate interest front-loaded.",
+        "Fails if the opening reads as a postcard inventory viewable from no particular position."
+      ]
+    },
+    {
+      "id": 49,
+      "prompt": "Judge this situated scene-setting Initial Narration: 'You enter the forge. The heat makes you sweat. A large anvil sits in the center of the room. Hammers line the wall. The smith, a burly man with burns on his arms, looks up. Your heart pounds.' Explain what fails and why.",
+      "expected_output": "FAIL — assigns PC body reactions ('makes you sweat', 'heart pounds') instead of placing the heat and threat in the environment. The opening also lists furniture without establishing body-scale frame first.",
+      "expectations": [
+        "Identifies assigned PC physiology ('makes you sweat', 'heart pounds') as an agency violation.",
+        "Identifies the opening as a postcard/furniture list without frame or body-scale orientation.",
+        "Does not reject 'heat' itself — only its assignment to the PC body rather than the space.",
+        "Notes that body-scale environment (heat rolling from the furnace, low ceiling, soot underfoot) would convey the same intensity without stealing the PC's reaction."
+      ]
     }
   ]
 }

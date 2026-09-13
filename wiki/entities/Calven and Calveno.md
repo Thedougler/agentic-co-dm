@@ -1,44 +1,52 @@
 ---
-title: Calven and Calveno
+title: "Calven and Calveno"
 category: entities
-tags: [shattered-sea, place, calveno]
-sources:
-  - "Session 03 - Recap.md"
-  - "Session 07 - Recap.md"
-  - "Session 08 - Recap.md"
-  - "Session 09 - Recap.md"
-summary: Twin harbor city where the party became Defenders after the Mercatura crater; hundreds of fighting-age men are still missing.
+tags: ["shattered-sea", "place", "calven", "calveno", "tessarine"]
+sources: ["Calven and Calveno.md", "Session 03 - Recap.md", "Session 07 - Recap.md", "Session 08 - Recap.md", "Session 09 - Recap.md"]
+summary: "Calven is older, lower, and wetter: marsh, tidal flats, farms on a middle plateau, and one city on the only solid ground that would take a foundation. Calveno's harbour flies the Dravosi flag; the ..."
 provenance:
-  extracted: 0.9
-  inferred: 0.1
+  extracted: 1.0
+  inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.42
-lifecycle: canon
-lifecycle_changed: "2026-09-12"
+base_confidence: 0.53
+lifecycle: proposed
+lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-12T04:56:01Z
-updated: 2026-09-12T04:56:01Z
+updated: 2026-09-13T07:45:00Z
 type: place
-reveal: revealed
-relationships:
-  - target: "[[Uncertainty]]"
-    type: related_to
-  - target: "[[Pearl of Souls]]"
-    type: related_to
+reveal: unrevealed
+campaign: shattered-sea
+visibility: dm
+kind: settlement
+region: "Crown Islands"
 ---
-
 # Calven and Calveno
+> [!narration] Narration
+> Marsh and tidal flats run up to farms on a middle plateau, then to one city on the only solid ground. Canal water is the street. Pale four- and five-storey buildings line the harbour, and an unmarked pale building watches the far end without a sign.
 
-Harbor city. Too busy for Crown colours on the main approach. La Vasca cradles ships.
+## At a glance
+Calven is older, lower, and wetter: marsh, tidal flats, farms on a middle plateau, and one city on the only solid ground that would take a foundation. Calveno's harbour flies the Dravosi flag; the money does not.
 
-## At a Glance
+## Calveno's visible work
+Pale four- and five-storey buildings line the canals. Deals are shouted in the open; privacy is sold by the hour. Water is the street. An unmarked pale building at the far end of the harbour watches everything come in and says nothing.
 
-The Mercatura crater is a missing-persons desk. Nona Black-Jaw's list passed three hundred fourteen fighting-age men. Iacopo Fieschi signed the party as Calveno's Defenders on Tessarine letterhead because the Crown did not defend the city.
+## Control
+The [[Dravosi Crown]] owns visible harbour authority and rates ships. Merchant families still sit the Seven Houses Council, but the seating chart is not six Tessarine seats: four houses owe enough, profit enough, or fear disruption enough to vote the [[Tessarine Concordat]]'s way, while three can still stall if refusal looks cheaper than compliance. Some people call that six of seven because it is the feeling on the ground. Debt is the politics.
 
-## At the table
+The city talks Italian in its canals—Alvise, Lavinia, Grimani, Sordi—because Tessarine records outlast the flag. Under Le Paludi, [[Rattkin]] have been in the old drains longer than either colonial power and prefer the official story to stay that way.
 
-Nona's kitchen, Umberlee's harbor shrine, the Warren sewers, and Fieschi's office with the crater in the window are the rooms the table already knows. HCS Ordinance and the Hound of Tyr were sent here with the party's merchant story. Nona was warned by stone.
+## Geography and play
+- Calven's northern and western flats flood and drain with the tide; foot travel needs local guidance.
+- Calveno stands on the southeast coast, with canals, bridges, harbour flags, and credit records.
+- [[Warren]] and Le Paludi sit below the public city; Passage routes trade privacy for trust and danger.
+- A harbour paper can conflict with a Tessarine credit record; either can close a gate.
+- The far harbour's unmarked pale building is a useful observation point and an unresolved Tessarine lead.
 
-## Wiki facts
+## Crown rivalry
+The Crown inspects and the Concordat invoices. Both collect from the same fishermen and pay [[Umberlee]] as infrastructure. Crown toxin substitute stock has appeared in Calveno's sewers; [[Simone]] is the named pipeline face, and [[Lavinia Sordi]] left a Crown prison records desk over it.
 
-Umberlee named the [[Pearl of Souls]] as her price in this harbor. Rupert Knighton ordered an evacuation days before the ceiling opened; Fieschi received no warning. Two Passage ships already chase the raiders. See [[journal/Session 07 - Recap]] and [[Story So Far]].
+## Connections
+- → [[Crown Islands]] · [[Calder's Tooth and Port Tidefall]] · [[Harwick]] · [[Central Strait]] · [[Warren]] · [[Mercatura]] · [[Tessarine Concordat]]
+
+**Provenance:** Dump source staged at [[inbox/archive/FILED-2026-09-05-tessarine-concordat.md]]. Legacy read-only context: `/Users/nick/shattered-sea/wiki/shattered-sea/region-calven.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/calveno-raid/settlement-calveno.md`.

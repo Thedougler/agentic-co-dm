@@ -15,7 +15,7 @@ summary: ""
 ---
 <!-- Copy-start scaffold. Look plus start, notice, contact cost, careful passage, counterplay. Extra mechanical rows only when they change the table. Omit unused sections. Pass is flora-hazard jobs in wiki/AGENTS.md Layout. -->
 
-![[hazard.jpg]]
+<!-- Add hazard art when available. -->
 
 > [!narration] Narration
 > Write the spoken look of the hazard in complete sentences. No unearned names.

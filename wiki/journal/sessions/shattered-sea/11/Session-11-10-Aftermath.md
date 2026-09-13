@@ -217,4 +217,4 @@ Keep the people at this fire unnamed.
 
 ## Battlemap
 
-![[attachments/shattered-sea/battlemaps/session-11-09-theft-on-the-watch-base.jpg|Session 11-09 Star Cut battlemap]]
+![[attachments/shattered-sea/battlemaps/11-06-upscaled.jpg|Session 11-06 Spoke Ring battlemap]]

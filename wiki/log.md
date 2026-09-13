@@ -71,3 +71,128 @@ title: Wiki Log
 - [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - Black Lotus.md" pages_updated=0 pages_created=1 mode=append
 - [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - Bloodhawk.md" pages_updated=0 pages_created=1 mode=append
 - [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - Young Bloodhawk.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/aruhe-blight-hinewa.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/aruhe-crown-squid.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Session-11-00-Random-Tables.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - Stonepear.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - Ghost Plum.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - Lesser Black Lotus.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - River Slack Basin.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Aruhe - Giant's Guava.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-12T00:00:00Z] INGEST_FAILED source="wiki/_raw/.DS_Store" reason="non-source binary file"
+- [2026-09-12T00:00:00Z] LINT scope="active-structural" issues_found=488 orphans=1 broken_links=438 stale=0 contradictions=0 prov_issues=0 missing_summary=3 fragmented_clusters=4 visibility_issues=0 promotion_candidates=0 synthesis_gaps=0 relationship_issues=0
+- [2026-09-13T01:24:28Z] LINT scope="active-structural" issues_found=513 orphans=1 broken_links=438 stale=0 contradictions=0 prov_issues=0 missing_summary=2 fragmented_clusters=4 visibility_issues=0 promotion_candidates=0 synthesis_gaps=0 relationship_issues=0
+- [2026-09-13T02:48:57Z] INGEST source="/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Uncertainty.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-13T02:51:28Z] INGEST source="/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/HCS Sovereign.md" pages_updated=0 pages_created=5 mode=append
+- [2026-09-13T02:54:13Z] INGEST source="/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md" pages_updated=0 pages_created=8 mode=append
+- [2026-09-13T03:07:03Z] INGEST source="wiki/_raw/Khlysty - the Flock.md" pages_updated=2 pages_created=7 mode=append
+- [2026-09-12T00:00:00Z] INGEST source="wiki/_raw/Grung clans.md" pages_updated=0 pages_created=29 mode=append
+- [2026-09-13T05:05:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Spiguar.md" destination="wiki/_archive/Aruhe - Spiguar.md" pages=1
+- [2026-09-13T05:05:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Snakewood.md" destination="wiki/_archive/Aruhe - Snakewood.md" pages=1
+- [2026-09-13T05:05:00Z] ARCHIVE_RAW source="wiki/_raw/aruhe-blight-hinewa.md" destination="wiki/_archive/aruhe-blight-hinewa.md" pages=1
+- [2026-09-13T05:05:00Z] ARCHIVE_RAW source="wiki/_raw/aruhe-crown-squid.md" destination="wiki/_archive/aruhe-crown-squid.md" pages=1
+- [2026-09-13T05:05:00Z] ARCHIVE_RAW source="wiki/_raw/Session-11-00-Random-Tables.md" destination="wiki/_archive/Session-11-00-Random-Tables.md" pages=1
+- [2026-09-13T05:05:00Z] DELETE_RAW_TEMPLATES files=6 reason="copied to wiki/templates/"
+- [2026-09-13T06:31:54Z] INGEST source="wiki/_raw/Passage.md" pages_updated=2 pages_created=3 mode=append
+- [2026-09-13T06:31:54Z] ARCHIVE_RAW source="wiki/_raw/Passage.md" destination="wiki/_archive/Passage.md" pages=5
+- [2026-09-13T06:40:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - {Spiritpollen,Stillbloom,Stonepear,Terror-Bird,Unsaid Macaw,Wolfrabbit,Young Bloodhawk,Crown Squid,Deerstalker,Ghost Plum,Giant's Guava,Grubnade,Lesser Black Lotus,Razer-Grass,River Otter,River Slack Basin}.md" destination="wiki/_archive/" pages=16 reason="already ingested; cleared from _raw/"
+- [2026-09-13T06:41:34Z] INGEST source="wiki/_raw/Aldenmere.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T06:41:34Z] ARCHIVE_RAW source="wiki/_raw/Aldenmere.md" destination="wiki/_archive/Aldenmere.md" pages=1
+- [2026-09-13T06:50:00Z] INGEST source="wiki/_raw/Aruhe - Beach.md" pages_updated=1 pages_created=2 mode=append
+- [2026-09-13T06:50:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Beach.md" destination="wiki/_archive/Aruhe - Beach.md" pages=3
+- [2026-09-13T06:55:00Z] INGEST source="wiki/_raw/Aruhe - Clear Lake.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-13T06:55:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Clear Lake.md" destination="wiki/_archive/Aruhe - Clear Lake.md" pages=1
+- [2026-09-13T07:00:00Z] INGEST source="wiki/_raw/Aruhe - Grasslands - Print Braid.md" pages_updated=0 pages_created=0 mode=append note="skip rewrite; existing page already preserved"
+- [2026-09-13T07:00:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Grasslands - Print Braid.md" destination="wiki/_archive/Aruhe - Grasslands - Print Braid.md" pages=1
+- [2026-09-13T07:05:00Z] INGEST source="wiki/_raw/Aruhe - Grasslands Torn Crossing.md" pages_updated=0 pages_created=0 mode=append note="skip rewrite; existing page already preserved"
+- [2026-09-13T07:05:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Grasslands Torn Crossing.md" destination="wiki/_archive/Aruhe - Grasslands Torn Crossing.md" pages=1
+- [2026-09-13T07:05:00Z] INGEST source="wiki/_raw/Aruhe - Lava Tubes.md" pages_updated=0 pages_created=0 mode=append note="skip rewrite; existing page already preserved"
+- [2026-09-13T07:05:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Lava Tubes.md" destination="wiki/_archive/Aruhe - Lava Tubes.md" pages=1
+- [2026-09-13T07:05:00Z] INGEST source="wiki/_raw/Aruhe - Quiet Forest Cutoff Lip.md" pages_updated=0 pages_created=0 mode=append note="skip rewrite; existing page already preserved"
+- [2026-09-13T07:05:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Quiet Forest Cutoff Lip.md" destination="wiki/_archive/Aruhe - Quiet Forest Cutoff Lip.md" pages=1
+- [2026-09-13T07:05:00Z] INGEST source="wiki/_raw/Aruhe - Quiet Forest Spoke Ring.md" pages_updated=0 pages_created=0 mode=append note="skip rewrite; existing page already preserved"
+- [2026-09-13T07:05:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Quiet Forest Spoke Ring.md" destination="wiki/_archive/Aruhe - Quiet Forest Spoke Ring.md" pages=1
+- [2026-09-13T07:05:00Z] INGEST source="wiki/_raw/Aruhe - Quiet Forest Star Cut.md" pages_updated=0 pages_created=0 mode=append note="skip rewrite; existing page already preserved"
+- [2026-09-13T07:05:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Quiet Forest Star Cut.md" destination="wiki/_archive/Aruhe - Quiet Forest Star Cut.md" pages=1
+- [2026-09-13T07:10:00Z] INGEST source="wiki/_raw/Aruhe - River Landing Bank.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:10:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - River Landing Bank.md" destination="wiki/_archive/Aruhe - River Landing Bank.md" pages=1
+- [2026-09-13T07:15:00Z] INGEST source="wiki/_raw/Aruhe - Old Gardens.md" pages_updated=0 pages_created=0 mode=append note="skip rewrite; existing page already preserved"
+- [2026-09-13T07:15:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Old Gardens.md" destination="wiki/_archive/Aruhe - Old Gardens.md" pages=1
+- [2026-09-13T07:15:00Z] INGEST source="wiki/_raw/Blackrule.md" pages_updated=0 pages_created=2 mode=append
+- [2026-09-13T07:15:00Z] ARCHIVE_RAW source="wiki/_raw/Blackrule.md" destination="wiki/_archive/Blackrule.md" pages=2
+- [2026-09-13T07:20:00Z] INGEST source="wiki/_raw/Aruhe - Grasslands.md" pages_updated=1 pages_created=1 mode=append
+- [2026-09-13T07:20:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Grasslands.md" destination="wiki/_archive/Aruhe - Grasslands.md" pages=2
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Aruhe - River Line Bank.md" pages_updated=1 pages_created=0 mode=append note="skip rewrite; existing entities/Aruhe - River - Line Bank.md"
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - River Line Bank.md" destination="wiki/_archive/Aruhe - River Line Bank.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Ashwalls.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Ashwalls.md" destination="wiki/_archive/Ashwalls.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Calder's Tooth and Port Tidefall.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Calder's Tooth and Port Tidefall.md" destination="wiki/_archive/Calder's Tooth and Port Tidefall.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Central Strait.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Central Strait.md" destination="wiki/_archive/Central Strait.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Deep Works.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Deep Works.md" destination="wiki/_archive/Deep Works.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Doldrums.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Doldrums.md" destination="wiki/_archive/Doldrums.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Fathomrush.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Fathomrush.md" destination="wiki/_archive/Fathomrush.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Galewall.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Galewall.md" destination="wiki/_archive/Galewall.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Greyteeth.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Greyteeth.md" destination="wiki/_archive/Greyteeth.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Halewick.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Halewick.md" destination="wiki/_archive/Halewick.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/High Eyrie.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/High Eyrie.md" destination="wiki/_archive/High Eyrie.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Kalowe.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Kalowe.md" destination="wiki/_archive/Kalowe.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Keth Naar.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Keth Naar.md" destination="wiki/_archive/Keth Naar.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Mid-Works.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Mid-Works.md" destination="wiki/_archive/Mid-Works.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Murrat.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Murrat.md" destination="wiki/_archive/Murrat.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Outer Reach.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Outer Reach.md" destination="wiki/_archive/Outer Reach.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Sanvashti.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Sanvashti.md" destination="wiki/_archive/Sanvashti.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Sarn's Landing.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Sarn's Landing.md" destination="wiki/_archive/Sarn's Landing.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Shattered Sea.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Shattered Sea.md" destination="wiki/_archive/Shattered Sea.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Sorn Guarded Beach.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Sorn Guarded Beach.md" destination="wiki/_archive/Sorn Guarded Beach.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Sparhold Isle.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Sparhold Isle.md" destination="wiki/_archive/Sparhold Isle.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Sparhold.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Sparhold.md" destination="wiki/_archive/Sparhold.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Stenmark.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Stenmark.md" destination="wiki/_archive/Stenmark.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Tail.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Tail.md" destination="wiki/_archive/Tail.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Vault of the First Factor.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Vault of the First Factor.md" destination="wiki/_archive/Vault of the First Factor.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Vel Orn.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Vel Orn.md" destination="wiki/_archive/Vel Orn.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Verdant Scatter.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Verdant Scatter.md" destination="wiki/_archive/Verdant Scatter.md" pages=1
+- [2026-09-13T07:30:00Z] INGEST source="wiki/_raw/Yssenmoor.md" pages_updated=0 pages_created=1 mode=append
+- [2026-09-13T07:30:00Z] ARCHIVE_RAW source="wiki/_raw/Yssenmoor.md" destination="wiki/_archive/Yssenmoor.md" pages=1
+- [2026-09-13T07:40:00Z] INGEST source="wiki/_raw/Aruhe - Hungry Isle.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-13T07:40:00Z] ARCHIVE_RAW source="wiki/_raw/Aruhe - Hungry Isle.md" destination="wiki/_archive/Aruhe - Hungry Isle-1.md" pages=1
+- [2026-09-13T07:45:00Z] INGEST source="wiki/_raw/Aruhe - Memorial Grove.md, wiki/_raw/Aruhe - Quiet Forest.md, wiki/_raw/Aruhe - River.md, wiki/_raw/Aruhe - The Mangroves.md, wiki/_raw/Aruhe - The Marshes.md" pages_updated=5 pages_created=0 mode=append
+- [2026-09-13T07:45:00Z] INGEST source="wiki/_raw/Calven and Calveno.md, wiki/_raw/Crown Islands.md, wiki/_raw/Dreth-Orak Channel.md, wiki/_raw/Dreth.md, wiki/_raw/Drowned Maw.md, wiki/_raw/Harwick.md, wiki/_raw/Karath.md, wiki/_raw/Midchain.md, wiki/_raw/Orak.md, wiki/_raw/Shelfworks.md, wiki/_raw/Sorn.md, wiki/_raw/Verdant Teeth.md, wiki/_raw/Veth West Beach.md, wiki/_raw/Veth.md, wiki/_raw/Warren.md" pages_updated=15 pages_created=0 mode=append
+- [2026-09-13T07:50:00Z] INGEST source="wiki/_raw/Mercatura.md" pages_updated=0 pages_created=3 mode=append
+- [2026-09-13T07:50:00Z] ARCHIVE_RAW source="wiki/_raw/Mercatura.md" destination="wiki/_archive/Mercatura.md" pages=3
+- [2026-09-13T07:50:00Z] INGEST source="wiki/_raw/Otel Karn.md" pages_updated=1 pages_created=0 mode=append
+- [2026-09-13T07:50:00Z] ARCHIVE_RAW source="wiki/_raw/Otel Karn.md" destination="wiki/_archive/Otel Karn.md" pages=1
+- [2026-09-13T07:50:00Z] INGEST source="wiki/_raw/Vestra.md" pages_updated=0 pages_created=2 mode=append
+- [2026-09-13T07:50:00Z] ARCHIVE_RAW source="wiki/_raw/Vestra.md" destination="wiki/_archive/Vestra.md" pages=2
+- [2026-09-13T07:50:00Z] INGEST source="wiki/_raw/Uncertainty.md" pages_updated=0 pages_created=0 mode=append note="skip rewrite; existing vehicle page owns Uncertainty"
+- [2026-09-13T07:50:00Z] ARCHIVE_RAW source="wiki/_raw/Uncertainty.md" destination="wiki/_archive/Uncertainty.md" pages=1
+- [2026-09-13T18:35:00Z] COPY_UPDATE path="wiki/journal/sessions/shattered-sea/11/Session-11-01-Angry-Birds.md" reason="accepted Session 11-01 DM copy and woven hiatus reminder"
+- [2026-09-13T19:15:50Z] COPY_UPDATE path="wiki/journal/sessions/shattered-sea/11/Session-11-02-Landing-Sign.md" reason="rewrote DM copy and player-safe development narration; preserved route, clock, and taking rulings"
+- [2026-09-13T19:23:43Z] COPY_ASSETS source="/Users/nick/Documents/ai-co-dm/attachments/shattered-sea" destination="wiki/attachments" copied=59
+- [2026-09-13T19:23:43Z] LINK_REPAIR paths="wiki/_archive, wiki/templates" reason="resolved all broken image embeds; preserved existing asset formats and replaced template placeholders with optional-art comments"
+- [2026-09-13T19:29:06Z] COPY_ASSETS source="wiki/attachments" destination="wiki/attachments/shattered-sea" copied=6 reason="made every explicit attachments/shattered-sea embed resolve at its literal vault path"
+- [2026-09-13T19:37:44Z] INGEST source="wiki/_raw/Session-11-00-Birds-of-a-Feather.md" pages_updated=1 pages_created=0 mode=append note="rewrote the preserved spine as the session-plan template and linked all ten live beats"

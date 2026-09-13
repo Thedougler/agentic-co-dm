@@ -69,8 +69,8 @@ Spoken `[!narration]` still owns the look.
 
 Ground pixels only in style guidance, the depicted owner's look, and that owner's approved identity
 references. Exclude secrets, hidden events, inaccessible pages, unrelated illustrations, and details
-outside the output audience. Patch the owner, never a `kind: image` page. Use `obsidian-markdown`,
-inspect for visibility leakage, and finish writes with `./scripts/after-write "ground visual aid"`.
+outside the output audience. Patch the owner, never a `kind: image` page. Use `obsidian-markdown`
+and inspect for visibility leakage.
 
 If generation is unavailable, leave an unresolved visual-aid request with the full safe prompt;
 do not pretend a file exists. `obsidian-leaflet` owns maps and `theatre-of-the-mind` owns spoken

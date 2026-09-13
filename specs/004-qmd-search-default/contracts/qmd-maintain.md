@@ -17,7 +17,7 @@ Exit 0 when:
 1. Project `.qmd/` exists.
 2. Collections `wiki`, `shattered-sea`, and `legacy-ss` are present.
 3. `qmd update` has run.
-4. Embeddings exist or `qmd embed` has been attempted and succeeded.
+4. Embeddings exist or `qmd embed` has been attempted and succeeded. The script unsets `CI` before every `qmd` call because qmd disables local LLM (embed/query) when `CI=true`.
 5. `qmd status` succeeds.
 6. A search `-c wiki` for a page that exists under `wiki/` returns that page.
 

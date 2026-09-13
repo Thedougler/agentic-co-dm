@@ -16,7 +16,8 @@ cleanup() { rm -f "$errf" "$outf"; }
 trap cleanup EXIT
 
 qmd_ok() {
-  if ! qmd "$@" >"$outf" 2>"$errf"; then
+  # Agent harnesses export CI=true; qmd then refuses local LLM (embed/query).
+  if ! env -u CI qmd "$@" >"$outf" 2>"$errf"; then
     msg="$(tr '\n' ' ' <"$errf" | sed 's/  */ /g')"
     case "$msg" in
       *NODE_MODULE_VERSION*|*better-sqlite3*|*ERR_DLOPEN*)
@@ -53,8 +54,8 @@ printf '%s' "$status" | grep -q "legacy-ss (qmd://legacy-ss/)" || fail "required
 
 docs="$(printf '%s' "$status" | sed -n 's/.*Total:[[:space:]]*\([0-9]*\) files indexed.*/\1/p' | head -1)"
 vecs="$(printf '%s' "$status" | sed -n 's/.*Vectors:[[:space:]]*\([0-9]*\) embedded.*/\1/p' | head -1)"
-if [[ "${docs:-0}" -gt 0 && "${vecs:-0}" -eq 0 ]]; then
-  qmd_ok embed
+if [[ "${docs:-0}" -gt 0 && "${vecs:-0}" -lt "${docs:-0}" ]]; then
+  qmd_ok embed -c wiki
 fi
 
 qmd_ok search Hinewai -c wiki --format files
