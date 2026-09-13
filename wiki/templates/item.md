@@ -27,6 +27,11 @@ summary: ""
      MAGIC | PLOT | DURABLE: Keep leading narration + classification + runnable effect.
      Add omit-if-empty sections below in this order: At a Glance, At the Table, Connections, Secrets, Provenance, Art.
      Prefer one shared section order over kind-specific quirks. Numbers live on this owner page.
+
+     Distill once — do not triple-tell the same fact across body / At a Glance / Provenance.
+     No agent-process asides (skill names, remorph notes, "item-prep") in wiki voice.
+     Incomplete magic items: either runnable table rules + spoken look, or mark provenance-only / incomplete explicitly — do not ship empty stubs as ready.
+     At the Table = playable consequence tonight only — no design diary, RAW comparison, or balance commentary.
 -->
 
 # {{title}}
@@ -56,7 +61,7 @@ One or two sentences: what this item is now, who holds it when known, and why a 
 
 ## At the Table
 
-How the item changes a choice tonight — notice, spend, reveal, or pressure. Omit when unused.
+How the item changes a choice tonight — notice, spend, reveal, or pressure. Playable consequence only. Omit when unused. No design diary or RAW/balance commentary.
 
 ## Connections
 
@@ -70,7 +75,7 @@ Hidden or unearned truth. Prefer `[!secret]` on long-lived owner pages when prog
 
 ## Provenance
 
-Where it came from, contested ownership chains, and open questions. Omit when unused.
+Where it came from, contested ownership chains, and open questions. Facts only — not ingest meta or process notes. Omit when unused; do not restate At a Glance.
 
 ## Art
 

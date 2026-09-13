@@ -31,7 +31,9 @@ You are ingesting source documents into an Obsidian wiki. Your job is not to sum
 
 When writing internal links in Step 5, apply the link format described in `llm-wiki/SKILL.md` (Link Format section) according to the `OBSIDIAN_LINK_FORMAT` value you read.
 
-**Quality bar.** Filed campaign pages match kinds and jobs in `$OBSIDIAN_VAULT_PATH/AGENTS.md` Layout. Incoming files are evidence, not exemplary format. Do not copy a foreign outline as the page shape. A source that already matches a kind is still judged against that kind’s jobs. Campaign-shaped session-prep maps into the matching kind template. Place keeps Preserve treatments. Foreign sources of those subjects map into the kind.
+**Quality bar.** Filed campaign pages match kinds and jobs in `$OBSIDIAN_VAULT_PATH/AGENTS.md` Layout.
+
+**Remorph / owner-page distill (signal):** Known vs Unknown — do not pad with repeated absences. Distill each fact once (no triple-tell across sections). Keep agent-process and skill names out of owner-page voice. Section jobs must not overlap (Secrets / Provenance / Connections / At the Table each earn distinct table work). Provenance is in-world history, never ingest meta. Item/vehicle templates own numbers in one home. Incoming files are evidence, not exemplary format. Do not copy a foreign outline as the page shape. A source that already matches a kind is still judged against that kind’s jobs. Campaign-shaped session-prep maps into the matching kind template. Place keeps Preserve treatments. Foreign sources of those subjects map into the kind.
 
 ## Linked art (campaign of record)
 
