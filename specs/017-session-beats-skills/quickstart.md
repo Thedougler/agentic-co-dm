@@ -1,6 +1,6 @@
 # Quickstart: Session Beat Skills
 
-Prove the beat split by classifying jobs and checking isolation. Prove wiki kinds with one page each. Session 11 bodies stay as they are.
+Prove the beat split by classifying jobs and checking isolation. Prove wiki kinds with one page each. Prove new session-prep pages use typed/session-plan drafts. Session 11 bodies stay as they are.
 
 ## Prerequisites
 
@@ -14,22 +14,25 @@ Prove the beat split by classifying jobs and checking isolation. Prove wiki kind
 - `place-design` defers city and region jobs
 - `faction-prep` is gone
 - Wiki templates exist for vehicle, spell, faction, lore, quest, city, region
-- `wiki/AGENTS.md` lists the kinds and Layout jobs
+- Wiki templates exist for hook, development, cliffhanger, climax, resolution, session-plan
+- `wiki/templates/session-prep.md` is not copy-start for new beats or plans
+- `wiki/AGENTS.md` lists the kinds and Layout jobs, including session-prep `kind`
 - `AGENTS.md` contains the beat routing table
 - `.omp/AGENTS.md` does not copy that table
 - `.agents/skills/writing-beats` unchanged
 - Session 11 `_raw/` / wiki beat bodies unchanged
+
 ## 1. Classify the contract jobs (P1, SC-001)
 
 Cover jobs 1–15 in the contract. A second reviewer names the primary skill without seeing the first list.
 
 Expected: 100% agreement. Fail if planning a session is classified as a type skill. Fail if writing a Hook is classified as `session-beats`.
 
-## 2. Chart without type catalogs (P1, SC-002)
+## 2. Chart without type catalogs (P1, SC-002, SC-033, SC-034)
 
-Give a session-planning job and withhold the five type-card catalogs. Author produces a Beat Chart spine: one Hook, alternating middle, Climax then Resolution, polarity, budget, threads.
+Give a session-planning job and withhold the five type-card catalogs. Author produces a Beat Chart session plan from `wiki/templates/session-plan.md`: compass, beat map, floating beats, pressure, PC touchpoints, links to typed beat pages. `type: session-prep`, `kind: session-plan`. One Hook, alternating middle, Climax then Resolution, polarity, budget, threads.
 
-Fail if the author must open a type-card catalog to draw the chart. Fail if two same-type middle beats sit consecutively.
+Fail if the author must open a type-card catalog to draw the chart. Fail if two same-type middle beats sit consecutively. Fail if the page uses Session 11-00 heading order (length, prize, opposition, numbered skeleton as the run jobs). Fail if it duplicates Scene ends when, Zones, or Be ready for. Fail if `type` is `session-plan`, `beat`, or `session-beat`.
 
 ## 3. Typed beat without other catalogs (P1, SC-003, SC-007)
 
@@ -49,14 +52,17 @@ Audit a newly composed chart against contract chart rules 1–8.
 
 Fail if polarity is wrong. Fail if a beat has only one viable response. Fail if the next slot is forced after the party breaks the chart.
 
-## 6. Owners and leftovers (P3, SC-006, SC-007, SC-008)
+## 6. Owners and leftovers (P1, SC-006, SC-007, SC-008, SC-034)
 
-- New live beat still reads as a Session 11 cockpit card (`run-guide`).
-- Spine still does not duplicate Scene ends when / Zones / Be ready for.
+- New live beat starts from that type's draft template, presents that type's draft jobs, and is scannable as current wiki templates (columns where a dashboard pair shares the scan). Not Session 11 heading order.
+- New live beat is `type: session-prep` with matching `kind`. Fail if `type` is `beat` or `session-beat`.
+- `run-guide` did not rewrite the typed beat into a Session 11 cockpit.
+- Session plan still does not duplicate Scene ends when / Zones / Be ready for.
 - No skill contains both the full Beat Chart and all five type-card catalogs.
 - `beat-types.md` is gone from `session-beats` or is not the standing load for composition.
 - Zero Session 11 beat/spine bodies rewritten solely for this feature.
 - `writing-beats` (article skill) untouched.
+- Work was proposed in chat before any wiki write.
 
 Pass: steps 1–6 hold. Fail any step → the blob is not split yet.
 
@@ -84,7 +90,7 @@ Region: start at `place-design` for a region; it defers to `region-design`. Page
 
 ## 10. Claude Code dispatch (SC-015, SC-016)
 
-Claude Code runs only for a new skill or a major skill redesign. Those dispatches use `claude-opus-4-6 --effort medium`. The prompt names deliverables and a completion test. `AGENTS.md` and template installs are session-agent work. After a usage-limit stop, independent tasks still completed and deferred jobs stay on `tasks.md` with a retry time. Codex CLI at ChatGPT 5.5 medium is allowed only when every remaining open task is blocked, no other work can be done, and that retry time is more than one hour away. Re-check those gates before each remaining blocked skill job.
+Claude Code runs only for a new skill or a major skill redesign. Those dispatches use `claude-opus-4-6 --effort medium`. The prompt names deliverables and a completion test. `AGENTS.md` and template installs are session-agent work. After a usage-limit stop, independent tasks still completed and deferred jobs stay on `tasks.md` with a retry time. Codex CLI at ChatGPT 5.5 medium is allowed only when every remaining open task is blocked, no other work can be done, and that retry time is more than one hour away. Re-check those gates before each remaining blocked skill job. Session-agent last-resort write only when both Claude Code and Codex are usage-limited.
 
 Fail if those dispatches use the `opus` alias, default Opus, or `--effort high`. Fail if an `AGENTS.md`-only edit was sent to Claude Code. Fail if Codex ran while other independent work remained, or while the retry time was within one hour, or without re-checking Claude Code first on a later job.
 

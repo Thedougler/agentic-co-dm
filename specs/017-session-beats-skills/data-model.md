@@ -10,10 +10,10 @@ Name: `session-beats`. Primary when planning a session, one-shot, adventure arc,
 |---|---|
 | Beat Chart assembly | Type-card catalogs |
 | One Hook; alternate D/C; Climax then Resolution | How to fill a typed beat |
-| Polarity, ~30 min budget, 90 min core | Session 11 cockpit layout (`run-guide`) |
+| Polarity, ~30 min budget, 90 min core | Session 11 cockpit layout |
 | Threads, escalation, transitions | Spoken player text (theatre of the mind) |
 | Recompute / agency gates | Encounter/trap/place/monster math |
-| Filed spine jobs (007) | Wiki write before accept; wiki kind pages |
+| Session plan (`kind: session-plan`) | Wiki write before accept; wiki kind pages |
 
 ## Type skill
 
@@ -27,7 +27,7 @@ One per Beat Chart type.
 | `climax-beats` | Climax | Highest-stakes confrontation the middle made inevitable; threads harvested. |
 | `resolution-beats` | Resolution | Players can name what is different and what they want next. |
 
-Each owns: purpose, completion test, cards for that type, how to fill this beat. Does not own Beat Chart assembly or another type's cards.
+Each owns: purpose, completion test, cards for that type, how to fill this beat from that type's draft template. Does not own Beat Chart assembly or another type's cards.
 
 ## Card
 
@@ -83,11 +83,105 @@ Order: Hook → alternating Development/Cliffhanger pairs → Climax → Resolut
 | Threads | Every prepared beat advances a live thread; Climax harvests; Resolution shows final state |
 | Agency | Situations not required outcomes; recompute; chart may shrink/branch/pause/end early |
 
+## Session-prep identity
+
+Shared keys on every new live beat and session plan:
+
+`title`, `category` (`journal`), `tags`, `sources`, `created`, `updated`, `type: session-prep`, `kind`, `lifecycle`, `reveal`, `campaign`, `session`, `visibility`, `summary`.
+
+`kind` is `hook` | `development` | `cliffhanger` | `climax` | `resolution` | `session-plan`.
+
+MUST NOT use `type: beat`, `type: session-beat`, or `type: session-plan`. Omit unused identity keys. Subtype (Kidnapped, Chase, Final Battle) lives in the body and in the type-card catalog, not extra frontmatter.
+
+## Session plan
+
+`type: session-prep`, `kind: session-plan`. Owner: `session-beats`. Scaffold: `wiki/templates/session-plan.md`. Not a live beat.
+
+| Job | Done when |
+|---|---|
+| Compass | Opening situation; immediate pressure; session question; if the party does nothing; Now; On deck |
+| Beat map | Hook first; alternating middle; Climax then Resolution; each row has trigger, what changes, hand-off, budget; links to typed beat pages |
+| Floating beats | Optional beats with bring-in / job / drop — no mandatory slot |
+| Pressure | Night-only steps without the party; not a second quest clock |
+| PC touchpoints | What matters to each PC this session and which beat(s) touch it |
+
+MUST NOT duplicate Scene ends when, Zones, or Be ready for. Optional draft sections (Branches & Skips, Critical Routes, Floating Secrets, Session Toolkit, Live Notes, After the Session, Prep Audit) omit when unused.
+
+## Live beat
+
+One ~thirty-minute slice. `type: session-prep` with `kind` matching the beat. Owner: that type skill. Scaffold: `wiki/templates/{hook,development,cliffhanger,climax,resolution}.md`. Session 11 is scan-quality evidence, not the heading spine. `run-guide` MUST NOT rewrite this page into a Session 11 cockpit.
+
+Pass is the type's draft jobs plus readable scan (columns where a dashboard pair shares the scan). DM-facing callouts stay. `[!narration]` is the only player-spoken surface. Theatre of the mind owns `[!narration]`. Encounter, trap, place, and monster crafts keep their math and sites.
+
+### Hook — `wiki/templates/hook.md`
+
+| Job | Done when |
+|---|---|
+| At the table | Something happens; why it matters; the decision; Hook lands when |
+| Open on | `[!narration]` the DM can speak; first changed thing |
+| Situation | Where, who, what changed, pressure, open question |
+| Run the hook | Engages / hesitates / rejects / surprises — world response, not a required sequence |
+| Decision handles | At least two materially different approaches |
+| Handoff | Next Development or Cliffhanger; carry-forward; continuity change |
+
+Optional omit: Character pull, Leads, Checks, Action setup.
+
+### Development — `wiki/templates/development.md`
+
+| Job | Done when |
+|---|---|
+| Abstract | Purpose, trigger, turn, exit, ~30 min |
+| Opening | `[!narration]` of what characters immediately perceive |
+| Run the beat | Present → engage → make the turn → hand back the choice |
+| Situation | Where, present, immediate want, friction, pressure, if ignored |
+| Revelations | Core truth that changes what they know, want, or can do |
+| Exits | Pursue / refuse / other — next page, not a required sequence |
+
+Optional omit: Actors, Checks & Costs, Player Levers, required-conclusion redundancy, stall box, After Play.
+
+### Cliffhanger — `wiki/templates/cliffhanger.md`
+
+| Job | Done when |
+|---|---|
+| At a Glance | Trigger, PC objective, opposition objective, stakes, ends when |
+| Open on Action | `[!narration]` of immediate danger; end on a decision |
+| Run the beat | Opposition, default motion, pressure, leverage, danger, ways out (2+) |
+| Resolution | Objective gained / costly success / withdrawal / unexpected |
+| Handoff | Changed state; next Development |
+
+Optional omit: Battlefield/Chase/Hazard, Discoveries, References.
+
+### Climax — `wiki/templates/climax.md`
+
+| Job | Done when |
+|---|---|
+| Run this | Party goal, opposition goal, stakes, pressure, end when, next Resolution |
+| Opening image | `[!narration]` of the decisive situation |
+| Situation | What is true now; if nobody interferes; visible levers |
+| Pressure | Ticks that change the situation without dictating a response |
+| Opposition | Wants, opening move, response, desperation, exit |
+| Outcome | Possible state changes; hand off to Resolution |
+
+Optional omit: Final Battle, Final Revelation, Stage, Payoffs, Live notes.
+
+### Resolution — `wiki/templates/resolution.md`
+
+| Job | Done when |
+|---|---|
+| Abstract | Follows Climax; purpose; one-sentence outcome |
+| Run the beat | Confirm outcome → show consequence → pay stakes → let them react → end on an image |
+| Closing image | `[!narration]` of the new status quo; no PC feelings or future |
+| What is true now | Climax result, objective, opposition, stakes, price, reward, new status quo |
+| Consequences | Party earned/paid/changed access; world people/places/power/evidence |
+
+Optional omit: Payoffs, Character Epilogues, Loose Ends, Rewards, Stinger.
+
 ## Relationships
 
-- `plan-session` → composition skill → spine (007)
-- fill slot → type skill → live beat (007 cockpit via `run-guide`)
+- `plan-session` → composition skill → session plan (`kind: session-plan`)
+- fill slot → type skill → live beat (typed template)
 - type skill → existing crafts (theatre of the mind, encounter-prep, traps-trials, place, monster, vehicle, spell, faction, lore, quest, city, region) by handoff
+- `run-guide` may assemble hard-to-scan existing prep; it does not rewrite a typed beat into a Session 11 cockpit
 - `write-vehicle` / `edit-vehicle` → `vehicle-design` → vehicle page
 - `write-spell` / `edit-spell` → `spell-design` → spell page
 - `write-faction` → `faction-design` → faction page; `world-tick` appends faction-turn log
@@ -205,4 +299,6 @@ MUST NOT invent pressure. If already stated, link that note. Scale omits extra h
 
 ## Dispatch prompt
 
-Claude Code runs only for novel skill design, skill redesign, or a major skill-file change. Model `claude-opus-4-6`, `--effort medium`. Prompt names Outcome, Files, Bounds, Job, deliverables, completion criteria. One designated writer at a time. Usage limit: defer that job on `tasks.md` with a retry time; complete remaining independent tasks; carry deferred tasks forward. Codex CLI at ChatGPT 5.5 medium MAY run the same prompt only when every remaining open task is blocked, no other work can be done, and that retry time is more than one hour away. Re-check those gates before each remaining blocked skill job; prefer Claude Code if it is usable again. Novel this feature: `faction-design`, `lore-design`, `city-design`, `region-design`, `narrative-islands` quest redesign.
+Claude Code runs only for novel skill design, skill redesign, or a major skill-file change. Model `claude-opus-4-6`, `--effort medium`. Prompt names Outcome, Files, Bounds, Job, deliverables, completion criteria. One designated writer at a time. Usage limit: defer that job on `tasks.md` with a retry time; complete remaining independent tasks; carry deferred tasks forward. Codex CLI at ChatGPT 5.5 medium MAY run the same prompt only when every remaining open task is blocked, no other work can be done, and that retry time is more than one hour away. Re-check those gates before each remaining blocked skill job; prefer Claude Code if it is usable again. If Codex is also usage-limited and Claude Code remains so, the session agent MAY write the design-impact change (constitution XI).
+
+Novel this feature: `faction-design`, `lore-design`, `city-design`, `region-design`, `spell-design`. Redesign: `narrative-islands` (quest template); `session-beats` (fill session-plan draft, not Session 11-00 spine); `vehicle-design` (sheet fill). Session agent: templates, Layout, routing tables, type-skill template pointers, `run-guide` no-rewrite line, `faction-prep` deletion.
