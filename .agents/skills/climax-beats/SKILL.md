@@ -13,6 +13,10 @@ description: >-
 Prep only. Follow `docs/agents/work.md`. Chat proposal first; wiki page only
 after DM accept.
 
+## Copy-start
+
+Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: climax`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a Session 11 cockpit.
+
 ## Purpose
 
 A Climax is the highest-stakes confrontation the middle made inevitable. It
@@ -81,6 +85,6 @@ Any other extra type-card catalog is a defect.
 ## What this skill does not own
 
 Beat Chart assembly, polarity rules, time budget, thread planting, escalation,
-recompute, filed spine, cockpit layout, spoken text, encounter/trap/place/monster
-crafting pages, wiki kind pages (vehicle, spell, faction, lore, quest, city,
-region, place).
+recompute, session plan, spoken text, encounter/trap/place/monster crafting
+pages, wiki kind pages (vehicle, spell, faction, lore, quest, city, region,
+place). Do not absorb Session 11 cockpit job order.

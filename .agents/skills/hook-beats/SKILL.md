@@ -14,6 +14,10 @@ Prep only. Follow `docs/agents/work.md`.
 
 Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims.
 
+## Copy-start
+
+Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: hook`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a Session 11 cockpit.
+
 ## Purpose
 
 A Hook is the session's **strong start**: the first situation demanding a
@@ -86,8 +90,9 @@ Load a second skill only when a named seam fires:
 Opening another type-card catalog for any other reason is a defect.
 
 ## What this skill does not own
-
 Beat Chart assembly, polarity rules, time budget, thread planting, escalation,
-recompute, and the filed spine belong to `session-beats`. Cockpit layout belongs
-to `run-guide`. Spoken player text belongs to theatre of the mind. Encounter,
-trap, place, and monster crafts keep their owners. A named vehicle, spell, faction, lore note, quest, city, or region hands off to that wiki-kind owner without absorbing the page job.
+recompute, and the session plan belong to `session-beats`. Do not absorb
+Session 11 cockpit job order. Spoken player text belongs to theatre of the mind.
+Encounter, trap, place, and monster crafts keep their owners. A named vehicle,
+spell, faction, lore note, quest, city, or region hands off to that wiki-kind
+owner without absorbing the page job.

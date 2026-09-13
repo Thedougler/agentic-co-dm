@@ -41,8 +41,7 @@ embed and no action-card numbers fails.
 One opposition want, said once. One *procedure*, named. Nothing restated later
 as a second framework.
 
-**Session 11 cockpit.** Required job order is the Session 11 beat cards (`wiki/_raw/Session-11-01-Angry-Birds.md` through `wiki/_raw/Session-11-10-Aftermath.md`). Those files illustrate quality; do not photocopy a named Session 11 title. Omit a section only when that job is absent — no empty heading. Preserve heading spine, section names, and order when editing.
-
+**Typed beats stay typed.** Live-beat assembly MUST NOT rewrite a typed beat into a Session 11 cockpit. Pass is that type's draft jobs plus readable scan. Session 11 files (`wiki/_raw/Session-11-01-Angry-Birds.md` through `wiki/_raw/Session-11-10-Aftermath.md`, and `wiki/_raw/Session-11-00-Birds-of-a-Feather.md`) are scan-quality evidence only — columns, omit unused, sole-authority — not a heading spine to copy.
 **Image anchors.** If the beat has an overview or identity image, keep it near
 the top of the file as the visual first look. If the beat has battlemap art,
 keep it fixed at the bottom of the file after the runnable card. These anchors
@@ -201,10 +200,11 @@ One downward pass of the cockpit in Reading view.
 Frontmatter: `type: session-prep` (or `encounter`),
 `visibility: dm`.
 
-Required order: identity; optional first-beat recap; overview art if it exists; Scene ends when + At a Glance; Now; Action cards; Initial Narration; Procedure + Secondary objective if a second question exists; Zones; Be ready for; Threat clock + dials if a fuse exists; How the Scene Resolves; Roster if combat-mode sheets will be rolled; Backup; Battlemap at bottom if art exists. Omit a job only when it is absent.
+Typed live beat: keep that type's draft jobs from `wiki/templates/{hook,development,cliffhanger,climax,resolution}.md`. Do not rewrite into Scene ends when / Zones / Be ready for. Session plan: `wiki/templates/session-plan.md`. `wiki/templates/session-prep.md` is not copy-start for new beats or plans.
 
-Filename: `Session-<number>-<beat-number>-<Label>.md` with two-digit beat numbers (`01`, `02`, …) matching skeleton position. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/`. Copy-start: `wiki/templates/session-prep.md`.
+Filename: `Session-<number>-<beat-number>-<Label>.md` with two-digit beat numbers (`01`, `02`, …). File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/`.
 
+When this skill assembles a cockpit from untyped or hard-to-scan prep (not a typed beat rewrite), jobs are: identity; optional first-beat recap; overview art if it exists; Scene ends when + At a Glance; Now; Action cards; Initial Narration; Procedure + Secondary objective if a second question exists; Zones; Be ready for; Threat clock + dials if a fuse exists; How the Scene Resolves; Roster if combat-mode sheets will be rolled; Backup; Battlemap at bottom if art exists. Omit a job only when it is absent.
 At a Glance scans as stakes, goal or exit, danger, silence, situation magnets. Scene ends when states the stop condition, a roughly thirty-minute budget, and behind/ahead cuts when pacing is not obvious. How the Scene Resolves hands to a beat on this session’s skeleton. Default-mode action-card numbers MAY sit on the beat; the beat MUST NOT become a second full owner page.
 
 **Columns.** Session cards use obsidian-columns **codeblock** syntax
