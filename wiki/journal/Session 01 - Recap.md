@@ -15,6 +15,8 @@ tier: supporting
 created: 2026-09-12T04:56:01Z
 updated: 2026-09-12T04:56:01Z
 type: recap
+campaign: shattered-sea
+visibility: dm
 reveal: revealed
 relationships:
   - target: "[[Uncertainty]]"

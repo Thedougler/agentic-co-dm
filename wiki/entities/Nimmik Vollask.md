@@ -30,6 +30,7 @@ relationships:
   - target: "[[Cotter Foss]]"
     type: related_to
 ---
+
 # Nimmik Vollask
 
 > [!narration] Narration
@@ -64,3 +65,16 @@ Service model: pull up and flag [[Cotter Foss]] at the rail, name the cargo, pay
 ## Combat
 
 Armed for defense with swivel guns. Primary play is resupply on the [[Central Strait]], not ship-to-ship offense. After four years on that circuit the ship has never sunk.
+
+## At a Glance
+
+Gnome-crewed orange cargo brig (alias: the Depot) on the [[Central Strait]]. [[Cotter Foss]] sells from the starboard rail; Medium-or-larger customers do not board.
+
+## Connections
+
+- [[Central Strait]] — Four-year resupply circuit; primary play is trade, not offense.
+- [[Cotter Foss]] — Public interface at the rail; ledger, coffee, and crane-and-hatch handoffs.
+
+## At the Table
+
+Pull up and flag [[Cotter Foss]] at the rail, name the cargo, pay the fee. Free coffee and gnomish meatballs come with the deal. Orders leave by crane-and-hatch handoff across open water; nobody Medium boards. Passages below are Small-or-smaller.
