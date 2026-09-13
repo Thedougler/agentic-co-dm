@@ -1,113 +1,102 @@
-# Implementation Plan: [FEATURE]
+# Implementation Plan: Self-Improving Co-DM
 
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
+**Branch**: `019-self-improving-codm` | **Date**: 2026-09-12 | **Spec**: [spec.md](./spec.md)
 
-**Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
-
-**Note**: This template is filled in by the `/speckit.plan` command; its definition describes the execution workflow.
+**Input**: Feature specification from `/specs/019-self-improving-codm/spec.md`
 
 ## Summary
 
-[Extract from feature spec: primary requirement + technical approach from research]
+Close the Co-DM improvement loop around 001: shared table aim, no stall on gaps, wrapup reflection with DM-gated campaign changes, and agent-owned efficiency (token cost, helpers, `errors.md` fill/drain, file/folder layout including llm-wiki).
+
+No new skill. Standing rules in `AGENTS.md` and `docs/agents/work.md`. One wrapup skill add for the required reflection (design-impact). One agent-shaped helper for the repeating error-ledger job. Sitting cost is recorded as what was loaded and finished, not a tokenizer.
 
 ## Technical Context
 
-<!--
-  ACTION REQUIRED: Replace the content in this section with the technical details
-  for the project. The structure here is presented in advisory capacity to guide
-  the iteration process.
--->
+**Language/Version**: Markdown standing instructions and skills executed by the host agent; Python 3 for one small CLI helper
 
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]
+**Primary Dependencies**: existing Co-DM product (001), `session-wrapup`, `docs/agents/work.md`, `AGENTS.md`, wiki-ingest destinations, writing-for-agents (VI)
 
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]
+**Storage**: Repo-root `errors.md`; append-only sitting records; campaign hub wiki page for table aim (facts, DM accept); llm-wiki pages stay Markdown
 
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]
+**Testing**: One fixture check at the public seam: ledger append/drain invariants, sitting record fields, layout findability (mixed dump → one-job load), wrapup reflection is chat Work. Do not snapshot instruction wording.
 
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]
+**Target Platform**: Local DM workstation and any agent host that loads repository skills
 
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
+**Project Type**: Agent skill pack, standing instructions, and one helper CLI
 
-**Project Type**: [e.g., library/cli/web-service/mobile-app/compiler/desktop-app or NEEDS CLARIFICATION]
+**Performance Goals**: Same-kind sittings trend to lower token cost at the same quality. Lookup of one job or wiki kind does not load unrelated trees.
 
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]
+**Constraints**: Co-DM still prep/wrapup only. Wiki **facts** stay DM-gated. Layout, token cost, helpers, and the error ledger are agent-owned. Do not wrap an existing command. Do not reorganize one-off files for tidiness. 012/016 still bind when they apply.
 
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]
-
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Scale/Scope**: One campaign, one table, D&D 5e. Standing rules + wrapup reflection step + error-ledger helper + sitting record. No new app, database, or skill.
 
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+| Gate | Status |
+|---|---|
+| I. Domain language is binding | Pass — DM, Co-DM, Wiki, Work, Session, Prep, Wrapup, Canon proposal. Feature objects (table aim, token cost, helper, error ledger, layout) stay in this spec’s data model, not a silent glossary fork. |
+| II. Issues are the work surface | Pass — this plan is the feature workflow, not a new request surface. |
+| III. Spec before code | Pass — spec has independently testable P1–P6 scenarios. |
+| IV. Tests specify behavior | Pass — fixtures observe ledger, sitting records, layout findability, reflection-as-Work. Not instruction wording. |
+| V. Single context | Pass — no second wiki or glossary file. |
+| VI. Software is agent-shaped | Pass — helper is args in, text/JSON out, done vs failed. No GUI wrapper. |
+| VII. Do not suffocate agents | Pass — outcomes and named failures only; no prescribed reflection voice or folder taxonomy. |
+| VIII. Safe automation runs unattended | Pass — no new human chore; ledger helper is agent-invoked. |
+| IX. Design trends toward token efficiency | Pass — this feature *is* IX. No new skill; point at 001/work.md instead of restating. |
+| X. Agents act autonomously by default | Pass — agents own token cost, helpers, ledger, layout without waiting. |
+| XI. Designated writer bounded concurrency | Pass — `session-wrapup` reflection step is design-impact; implement dispatches one writer. `AGENTS.md` / `work.md` are session-agent. This plan does not write the wrapup skill. |
+| XII. Prompt other agents with objectives | Pass — implement uses a scoped prompt for the wrapup edit. |
+| XIII. Wiki media filenames distinguish kind | Pass — layout self-org does not drop kind-in-filename or reintroduce spaces. |
+| XIV. Use the simplest tool | Pass — one helper only where the job repeats and no command exists; otherwise Edit/Write. No wrapper around `qmd` or git. |
 
 ## Project Structure
 
 ### Documentation (this feature)
 
 ```text
-specs/[###-feature]/
-├── plan.md              # This file (/speckit.plan command output)
-├── research.md          # Phase 0 output (/speckit.plan command)
-├── data-model.md        # Phase 1 output (/speckit.plan command)
-├── quickstart.md        # Phase 1 output (/speckit.plan command)
-├── contracts/           # Phase 1 output (/speckit.plan command)
-└── tasks.md             # Phase 2 output (/speckit.tasks command - NOT created by /speckit.plan)
+specs/019-self-improving-codm/
+├── spec.md
+├── plan.md
+├── research.md
+├── data-model.md
+├── quickstart.md
+└── contracts/
+    └── self-improving-codm.md
 ```
 
-### Source Code (repository root)
-<!--
-  ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
-  for this feature. Delete unused options and expand the chosen structure with
-  real paths (e.g., apps/admin, packages/something). The delivered plan must
-  not include Option labels.
--->
+### Source Changes
 
 ```text
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
-src/
-├── models/
-├── services/
-├── cli/
-└── lib/
-
-tests/
-├── contract/
-├── integration/
-└── unit/
-
-# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
-backend/
-├── src/
-│   ├── models/
-│   ├── services/
-│   └── api/
-└── tests/
-
-frontend/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── services/
-└── tests/
-
-# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
-api/
-└── [same as backend above]
-
-ios/ or android/
-└── [platform-specific structure: feature modules, UI flows, platform tests]
+AGENTS.md
+docs/agents/work.md
+.agents/skills/session-wrapup/SKILL.md
+errors.md
+scripts/error-ledger.py
 ```
 
-**Structure Decision**: [Document the selected structure and reference the real
-directories captured above]
+**Structure Decision**: Keep existing owners. Standing loop lives in `AGENTS.md` + `work.md`. Reflection is a required wrapup chat step, not a new skill. Error ledger is a repo-root Markdown file operated by one helper. Sitting records append beside it (same helper or a sibling command). Wiki layout self-org is a standing rule, not an ingest-engine rewrite.
+
+Implementation of the wrapup skill edit is **design-impact**. The session agent writes these Spec Kit artifacts, `AGENTS.md`, `work.md`, `errors.md`, and the helper. The wrapup skill is unmodified until `/speckit.implement` dispatches the designated writer.
 
 ## Complexity Tracking
 
-> **Fill ONLY if Constitution Check has violations that must be justified**
+None.
 
-| Violation | Why Needed | Simpler Alternative Rejected Because |
-|-----------|------------|-------------------------------------|
-| [e.g., 4th project] | [current need] | [why 3 projects insufficient] |
-| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient] |
+## Phase 0: Research
+
+- Confirm no new skill.
+- Confirm token cost without a tokenizer.
+- Confirm `errors.md` path and drain-on-fix.
+- Confirm wrapup owns the reflection offer.
+- Confirm wiki layout vs wiki facts.
+- Confirm 016 dispatch only for wrapup.
+
+## Phase 1: Design
+
+- Model table aim, sitting, error entry, helper, layout move, reflection.
+- Document the agent-facing contract.
+- Provide fixture scenarios for aim-ask, gap-no-stall, reflection gate, token/helper, ledger fill/drain, mixed-dump layout (repo + wiki kinds).
+
+**Post-design gate**: Constitution checks above still pass. No unresolved technical unknowns remain.
