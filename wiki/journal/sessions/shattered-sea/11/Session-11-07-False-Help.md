@@ -190,7 +190,7 @@ If the party broke from the hub, rebuild from the new route toward the last gras
 
 ## Roster
 
-![[Aruhe - Deerstalker#Statblock]]
+![[Deer-Stalker#Statblock]]
 
 > [!narration] Deer-Stalker
 > A deer-tall body stands in the north-trail stems, shaggy brown coat and branching antlers filling the gap between trunks. Bone-pale forelimbs hang past the knees and end in blood-marked claws. You see a pale muzzle and forward-set eyes that do not blink, and you smell blood on that coat. The garden words come from that same space. Then the muzzle says, "You're not welcome here."

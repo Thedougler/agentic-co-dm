@@ -112,7 +112,7 @@ flexGrow=2
 | **Travel pressure** | [[Session-11-00-Random-Tables]] · [[Taking on Aruhe]] |
 | **Places** | [[Aruhe - Old Gardens]] · [[Aruhe - Grasslands Torn Crossing]] · [[Aruhe - River Slack Basin]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Quiet Forest Star Cut]] |
 | **People and objects** | [[Crissdalynn Khinriss]] · [[Matteo Scola]] · [[Talon Skarn]] · [[Fate Spinner]] · [[Uncertainty]] |
-| **Opposition** | [[Aruhe - Bloodhawk]] · [[Aruhe - Wolfrabbit]] · [[Aruhe - Spiguar]] · [[Aruhe - River Otter]] · [[Aruhe - Deerstalker]] |
+| **Opposition** | [[Aruhe - Bloodhawk]] · [[Aruhe - Wolfrabbit]] · [[Aruhe - Spiguar]] · [[Aruhe - River Otter]] · [[Deer-Stalker]] |
 ```
 ````
 
@@ -121,7 +121,7 @@ flexGrow=2
 - [ ] The man-sized flyer is visible up-sun only when the party asks during beats 1, 4, or 6; do not prompt the check.
 - [ ] Blood under snapped living stems distinguishes a claim from receiving fallen fruit.
 - [ ] The inland survivors are divided over a genuine invitation, not controlled by a spell.
-- [ ] The night voice is the [[Aruhe - Deerstalker]] borrowing the survivors' words.
+- [ ] The night voice is the [[Deer-Stalker]] borrowing the survivors' words.
 - [ ] Skarn repeats Aruhe's lesson deliberately: isolate the carrier, cut the gear, and take the object rather than fight the camp.
 - [ ] A stolen [[Fate Spinner]] reverses the first beat's hunt; a held Spinner leaves the garden invitation unresolved.
 
