@@ -1,254 +1,150 @@
 ---
 name: vehicle-design
 description: >-
-  Design named, playable vehicles for the campaign wiki, especially ships and
-  boats. Use when a craft needs a persistent identity, travel role, ecology,
-  topology, hooks, or a DM-ready vehicle note. Fill the Vehicle template and
-  keep mechanics as play dials; hand player-facing [!narration] to
-  theatre-of-the-mind / Visualizer. Do not use for generic transport,
-  creature-only design, or invented vehicle CR/HP/speed tables.
+  Design named, playable vehicle pages for the campaign wiki, especially ships
+  and boats. Use when a craft needs a persistent identity, travel role, crew,
+  components, handling, combat, or a DM-ready vehicle note. Fill
+  wiki/templates/vehicle.md, including the sheet and component figures.
 ---
 
-# Vehicle design
-## Work gate
+# Vehicle Design
+
+## Work Gate
 
 Prep only. Follow `docs/agents/work.md`.
 
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Ground invention in wiki pages and/or D&D 5e rules; set `invention: true`, cite `[[pages]]`, and show the DM contradictions. Never present invention as wiki fact or write silent canon. Players see nothing until DM acceptance.
+Show a chat proposal before writing a campaign wiki page. Write under `wiki/`
+only after DM acceptance. If a needed named craft is missing, that craft is work
+to do now: propose the vehicle page instead of treating the missing note as
+out of scope. Ground invention in wiki pages and/or D&D 5e vehicle rules; set
+`invention: true`, cite `[[pages]]`, and show contradictions. Never present
+invention as wiki fact or write silent canon.
 
-Output durable pages under `wiki/`; templates live in `wiki/templates/`. Point at `docs/agents/work.md`; keep the craft procedure.
+## Vehicle Job
 
----
+A vehicle page makes a named craft runnable: a spoken look, a filled sheet,
+component figures, crew stations, handling, and combat when the craft can fight
+or be attacked. The craft is done when a DM can put it on the table without
+another format guide.
 
-
-A vehicle is a **recognizable craft + operational signature + usable access +
-travel/ecology role + choices under pressure**. Design the craft as something
-players can point to, approach, use, evade, protect, alter, or return to. Keep
-DM truth and player-facing prose separate. This skill owns the vehicle note and
-its playable structure; `theatre-of-the-mind` owns prose that crosses the
-DM/player boundary.
-
-## When to create a named craft note
-
-Create a note when a ship, boat, or other craft has a name or durable identity
-and at least one of these is true:
-
-- it recurs as a travel anchor, berth, route, refuge, threat, or destination;
-- players can make meaningful choices aboard it, from it, or because of it;
-- its crew, owner, cargo, wake, route, or condition can change between visits;
-- it carries clues, factions, NPCs, hazards, or consequences worth linking;
-- its silhouette and operational behavior distinguish it from ordinary
-  transportation.
-
-Ships and boats are the first-class use case. Use `kind: ship` for a ship,
-`kind: boat` for a boat, and `kind: other` for another persistent craft. Do not
-create a named note for every cart, ferry ride, or one-line conveyance. If the
-craft is only a scene prop, keep it in the owning place or session note until
-it earns a durable identity.
-
-Store the note under the Organizer-owned folder:
+Create or edit a named craft page when a ship, boat, or other vehicle has a
+durable identity and players can use, approach, evade, protect, damage, crew,
+alter, follow, or return to it. Use `kind: ship`, `kind: boat`, or
+`kind: other`. Store the note under:
 
 `wiki/<campaign>/vehicles/`
 
-Link the note from the campaign vehicle MOC when one exists. Do not treat a
-vehicle as a `location`, and do not migrate or rewrite existing craft notes
-merely to apply this skill. Existing notes such as Saltwright and Red Lady /
-Dead Lady are layout examples only.
+Do not create a durable vehicle note for a one-line ferry ride or prop. Keep
+that in the owning beat, place, or session note until the craft has a name or
+recurring consequence.
 
 ## Procedure
 
-### 1. Retrieve before inventing
+### 1. Retrieve The Craft
 
-Read the brief, relevant campaign notes, the Vehicle template, and linked place,
-NPC, faction, hazard, and route notes. Preserve established names, aliases,
-berths, conditions, and uncertainties. Mark an unresolved detail as a seed or
-stub instead of filling it with genre default. Read Saltwright or Red Lady /
-Dead Lady briefly only to understand the existing layout; do not rewrite their
-narration or migrate more notes.
+Read the brief, `wiki/templates/vehicle.md`, and relevant place, NPC, faction,
+route, hazard, and prior vehicle notes. Preserve established names, aliases,
+berths, conditions, owners, cargo, and uncertainties.
 
-Write a one-sentence identity before expanding the page:
+Write one identity sentence before the page:
 
-> This is a [ship/boat/other] that [travels/serves/blocks/carries] [role], is
-> recognized by [silhouette or operational signature], and gives players
-> [choice or pressure].
+> This is a [ship/boat/other] that [role], recognized by [silhouette or
+> operational signature], and it gives players [choice or pressure].
 
-If that sentence does not imply a route, action, or consequence, the craft is
-not ready for a named note.
+If that sentence has no route, table action, or consequence, keep retrieving or
+ask for the missing premise before drafting the page.
 
-### 2. Create the note from the exact template
+### 2. Start From The Template
 
-Start from `templates/Vehicle.md`. Keep its frontmatter fields and section
-names. Fill known values; leave genuinely unknown values blank or marked as a
-DM seed rather than inventing them.
-
-Use this frontmatter shape:
+Copy `wiki/templates/vehicle.md`. Keep its frontmatter and headings unless an
+unused template section says it may be omitted. Fill these frontmatter fields:
 
 ```yaml
----
 type: vehicle
+lifecycle: proposed
+reveal: unrevealed
 campaign: <campaign slug>
-kind: ship # ship | boat | other
-region: <known region or blank>
-berth: <home port / mooring / linked place, or blank>
 visibility: dm
-tags: [vehicle]
----
+kind: ship # ship | boat | other
+region: "<known region or blank>"
+berth: "<home port / mooring / linked place, or blank>"
+summary: "<one runnable sentence>"
 ```
 
-`kind` must be exactly one of `ship`, `boat`, or `other`. `berth` is optional,
-but fill it when the craft has a home port, mooring, linked place, or reliable
-point of departure. Add no alternate type such as `location`.
+The page body follows the template's jobs. Do not invent a second vehicle
+template.
 
-Fill the body in the template's order and with its intent:
+### 3. Fill The Playable Page
 
-- `# {{name}}`: use the established craft name, including an established
-  alias when needed.
-- `[!narration] Narration`: leave empty for Visualizer, or provide a narrow
-  handoff brief outside player prose. Do not independently author the final
-  read-aloud block here.
-- `## At a Glance`: one sentence naming the class of craft and its immediate
-  playable identity, followed by a supported “feels like…” mood. Do not turn
-  this into a history paragraph.
-- `## Aspects`: exactly three playable traits in Lazy DM style. Make each one
-  actionable or pressure-bearing, not a decorative adjective list.
-- `## Vehicle surface / topology`: describe what the table can point to and
-  how those parts relate. Name physical access such as rail, deck, hold, hatch,
-  lines, tiller, rigging, cabin, or engine space only when supported. State
-  what moves with the craft and what stays fixed relative to the deck. Give
-  nodes and edges, including a route, a bypass when fiction permits, and a
-  retreat or safe return. Use physical language, never interface jargon.
-- `## Who is here`: link known NPCs, factions, crew, passengers, or a stated
-  crew pattern. Distinguish current presence from a future or unresolved seed.
-- `## Connections`: link berth, routes, linked places, and other vehicles.
-  Record the travel relationship and its cost or exposure when that changes a
-  choice.
-- `## Hooks`: list things players can do, discover, protect, alter, follow, or
-  decide aboard or from the craft. Prefer verbs and consequences over plot
-  promises.
-- `## Secrets (DM)`: record clues available here as their content and access
-  vector, not only “roll Investigation.” Keep hidden cause, ownership, and
-  unresolved canon private when appropriate.
-- `## Mechanics`: include only play dials: cover, movement, routes, hazards,
-  Search/Study/Influence/Utilize, exposure, supplies, crew pressure, or links
-  to encounters and monsters. Do not invent CR, HP, speed, action, or vehicle
-  stat tables. `Homebrewer` owns later numeric vehicle mechanics.
-- `## Do not`: retain the template guardrails. In particular, keep the note in
-  `wiki/<campaign>/vehicles/`, ban “boarding interface” in narration, do
-  not dump a full keyed deck map unless play needs short subsections, and do
-  not invent CR/HP/speed tables without Homebrewer.
+Fill `> [!narration] Narration` with the spoken look or a precise
+theatre-of-the-mind handoff. It must give silhouette, scale, and body-scale
+access from the supplied viewpoint in complete sentences. Keep secrets, DCs,
+and unearned names out of player-facing prose.
 
-Do not add a location kernel, monster stat block, or a full keyed map merely to
-make the page look complete. The template's sections are the deliverable.
+Fill `## Sheet` so the craft can enter play:
 
-### 3. Design ecology and travel role
+- **Size.** Use a 5e size category or table-usable footprint.
+- **Type.** State the craft class in ordinary language.
+- **Speed.** Give the movement rate used in play, with mode when needed.
+- **Crew (min).** Minimum crew required to operate it.
+- **Passengers.** Safe passenger capacity.
+- **Cargo.** Cargo capacity, or `none` for a craft that cannot carry cargo.
 
-Give the craft a role in the living travel network, not just a destination.
-Answer the smallest useful set of questions:
+Fill `## Components` with AC and HP for each relevant component:
 
-- What waters, roads, skies, routes, weather, traffic, or hazards does it use?
-- Who uses, services, watches, avoids, hunts, taxes, shelters, or follows it?
-- What does its movement change for nearby places, factions, and other craft?
-- What visible trace identifies its operation: wake, smoke, bell, sail, rigging,
-  cargo pattern, route mark, silence, smell, or repeated timing?
-- What happens when it is delayed, damaged, diverted, exposed, abandoned, or
-  returned?
+- **Hull.** AC, HP, damage threshold.
+- **Helm.** AC, HP, and what control is lost when disabled.
+- **Movement.** AC, HP, and what speed or maneuver is lost when disabled.
+- **Weapons.** For armed craft only: each weapon's AC, HP, attack, range, hit
+  effect, crew needed, and reload or use limit. Omit this row when unarmed.
 
-Use ecology as playable context: traffic patterns, berth relationships,
-seasonal or environmental pressure, crew routines, and consequences of route
-choice. Do not assert a complete maritime economy or hidden crew roster when
-the vault is silent. Link to a place, faction, NPC, hazard, or route instead of
-repeating that note's lore.
+Use official 5e vehicle columns as the numeric anchor: speed, crew, passengers,
+cargo, AC, HP, and damage threshold. Reskin a close official craft when exact
+canon is silent; mark material changes as invention.
 
-### 4. Build topology without ship math
+Fill `## Crew stations` with named stations and current vs minimum complement.
+A station is done when the DM knows who can operate it, what check or action it
+supports, and what happens when it is empty.
 
-Represent the craft and its approach as compact physical edges, for example:
+Fill `## Handling` with conditions, maneuvers, limits, and environmental
+pressures that change choices: wind, current, tight channels, reefs, repairs,
+turning room, launch time, exposed approach, cover, noise, or route cost.
 
-`approach lane -- exposed approach --> wake / rail`
+Fill `## Combat` when the craft can fight, ram, be boarded, be chased, or be
+destroyed. State initiative, movement on its turn, ramming, boarding access,
+component targeting, destruction, sinking/crashing, and crew exposure. Omit the
+section only when the craft will not enter play as a fighting or attackable
+craft.
 
-`rail -- line or ladder --> deck`
+### 4. Add Routes, Hooks, And Return State
 
-`deck -- hatch --> hold`
+Add only the extra material the page needs to run:
 
-`deck -- turn / cover --> tiller or rigging`
+- Physical access: approach, rail, deck, hold, hatch, lines, tiller, rigging,
+  cabin, engine space, launch, retreat, and bypasses.
+- Connections: berth, routes, linked places, owners, passengers, cargo,
+  factions, hazards, and other vehicles.
+- Hooks and secrets: things players can do, discover, protect, alter, follow,
+  or decide, with clues recorded as content plus access vector.
+- Return state: berth, route exposure, crew status, damage, cargo, evidence,
+  changed links, and the next safe handoff.
 
-Each edge should say what it costs or changes: exposure, evidence, cover,
-position, time, separation, noise, or a route opportunity. Include, where the
-fiction supports it:
+Keep links pointed at existing notes. Mark unresolved facts as seeds/stubs
+instead of genre defaults.
 
-- a primary approach and a less obvious or costly approach;
-- one loop or return route through the craft;
-- one bypass that gives up information, access, or leverage;
-- one retreat, launch, cast-off, or safe return;
-- a relation to water, current, weather, traffic, terrain, or a moving hazard.
+## Done
 
-Topology is not a keyed deck plan. Short subsections are enough when a specific
-choice needs them. Never use topology to smuggle in numeric ship statistics.
-Describe what characters can do and observe; hand CR, HP, speed, resistance,
-vehicle actions, and balance to `homebrew-monsters-5e` only for creatures and to
-`Homebrewer` for vehicle mechanics.
+The page is done when:
 
-### 5. Use the vehicle TotM bar path
-
-When the note needs a player-facing first look, choose one existing accepted
-TotM bar sample before drafting. The choice is a quality bar, not a prose
-pattern: a place sample such as Clear Lake can test drawable body-scale access,
-and a hazard sample such as Razer-Grass can test a concrete operational danger.
-For a vehicle, route to the existing **Vehicle** surface in
-`.agent/skills/theatre-of-the-mind/references/surfaces.md` and the vehicle rules
-in `.agent/skills/theatre-of-the-mind/SKILL.md`. Do not invent a new TotM skill,
-vehicle renderer, or boarding workflow.
-
-Audit the vehicle spine through four gates:
-
-1. **Silhouette:** the whole craft, its scale, and its distinguishing shape are
-   drawable from the supplied viewpoint.
-2. **Kitchen-table access:** at least one supported physical relation is clear,
-   such as a line to the rail, a hatch into the hold, a deck underfoot, a
-   tiller, or a visible route around the hull. Use plain nouns players can
-   point at.
-3. **Operational signature:** one supported motion, sound, wake, working part,
-   traffic effect, or stable behavior shows how this craft operates.
-4. **Stop:** stop at the supported access point, operating problem, arrival, or
-   player opening. Do not resolve the boarding, search, escape, or consequence
-   in the first look.
-
-The player-facing bar must never say **“boarding interface.”** Use `line`,
-`rail`, `deck`, `hold`, `hatch`, `tiller`, `rigging`, `cabin`, `wake`, or another
-established physical noun. “Boarding interface” is banned from `[!narration]`
-and player-facing prose even when the DM note discusses access.
-
-Hand the `[!narration]` block to **Visualizer/WE** with the note path, viewpoint,
-supported facts, and the four-gate constraints. Visualizer/WE must use the
-existing TotM vehicle surface; do not duplicate or fork TotM guidance inside a
-vehicle note. Keep private topology, secrets, mechanics, and unsupported
-absence outside the player-facing block.
-
-### 6. Add pressure and return state
-
-Give the craft a small state change that matters between visits: for example,
-recognized → watched → compromised, or sound → delayed → damaged. For each
-move, state trigger, visible result, player opportunity, and lasting
-consequence. Keep it interruptible; the craft does not run a cutscene.
-
-Record a return state when useful: berth, route exposure, crew status, physical
-evidence, damage, cargo, changed links, or the next safe handoff. Failure
-should change position, time, trust, safety, resources, or route access, not
-silently erase a required clue.
-
-## Review checklist
-
-Before handing off or shipping the note, verify:
-
-- The note is named, recurring or consequential, and in
-  `wiki/<campaign>/vehicles/`.
-- Frontmatter has `type: vehicle`, a valid `kind`, and `berth` when known.
-- Every template heading is present and filled only with supported, useful
-  information.
-- The craft has three playable Aspects, a travel/ecology role, and a physical
-  topology with access, bypass, retreat, and consequences where supported.
-- Mechanics are play dials only. No invented CR/HP/speed/action tables appear.
-- `[!narration]` is empty or explicitly handed to Visualizer/WE.
-- The TotM Vehicle surface is referenced, not duplicated; the four bar gates
-  pass; “boarding interface” does not appear in player prose.
-- Unknowns are labeled as seeds/stubs, links point to existing notes, and the
-  page does not become a location, monster, or full deck-map rewrite.
+- It lives in `wiki/<campaign>/vehicles/` with `type: vehicle` and a valid
+  `kind`.
+- Narration, or an explicit TotM handoff, gives silhouette, scale, and
+  body-scale access.
+- `Size, type, speed, crew (min), passengers, cargo` are filled so the craft
+  can enter play.
+- Hull has AC, HP, and damage threshold.
+- Helm, movement, and every weapon present have AC/HP and a play consequence
+  when disabled.
+- Crew stations, handling, and combat contain enough procedure for the DM to
+  run travel, pursuit, boarding, damage, and destruction.
+- Invention is labeled, cited, and proposed for DM acceptance.
