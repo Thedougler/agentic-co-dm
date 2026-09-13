@@ -31,11 +31,11 @@ description: "Task list for Complete Ingest Context"
 
 **Purpose**: Confirm existing seams before changing ingest.
 
-- [ ] T001 Review the current sequential ingest loop and source-read steps in `.agents/skills/wiki-ingest/SKILL.md`
-- [ ] T002 [P] Review ingest-time vs query-time rules in `specs/004-qmd-search-default/contracts/retrieval-precedence.md`
-- [ ] T003 [P] Review the sequential unit in `specs/009-sequential-ingest-quality/contracts/sequential-ingest.md`
-- [ ] T004 [P] Review destination and canon rules in `specs/015-wiki-ingest-polish/contracts/ingest-quality.md`
-- [ ] T005 [P] Review the completeness contract in `specs/018-complete-ingest-context/contracts/complete-ingest-context.md`
+- [x] T001 Review the current sequential ingest loop and source-read steps in `.agents/skills/wiki-ingest/SKILL.md`
+- [x] T002 [P] Review ingest-time vs query-time rules in `specs/004-qmd-search-default/contracts/retrieval-precedence.md`
+- [x] T003 [P] Review the sequential unit in `specs/009-sequential-ingest-quality/contracts/sequential-ingest.md`
+- [x] T004 [P] Review destination and canon rules in `specs/015-wiki-ingest-polish/contracts/ingest-quality.md`
+- [x] T005 [P] Review the completeness contract in `specs/018-complete-ingest-context/contracts/complete-ingest-context.md`
 
 ---
 
