@@ -35,6 +35,10 @@ HARD_KEYS = (
     "bad_lifecycle",
     "typed_relationships",
     "pc_identity_mismatch",
+    "spaces_in_basename",
+    "aruhe_prefix",
+    "illegal_basename",
+    "duplicate_stems",
 )
 PC_ROLE = re.compile(r"^(pc|player character|player)$", re.I)
 TOKEN = re.compile(r"`([^`]+)`")
@@ -253,6 +257,94 @@ def pc_identity_mismatches(pages: dict[str, dict]) -> list[dict[str, object]]:
     return out
 
 
+ILLEGAL_BASENAME_CHARS = re.compile(r'[/\\:*?"<>|\x00-\x1f]')
+ARUHE_PREFIX = re.compile(r"^Aruhe\s*-\s*", re.I)
+SNAKE_OWNER_STEM = re.compile(r"^[a-z0-9]+(_[a-z0-9]+)+$")
+
+def illegal_basename_issues(stem: str) -> list[str]:
+    """Forbidden basename stem characters/shape (spaces reported separately)."""
+    reasons: list[str] = []
+    if ILLEGAL_BASENAME_CHARS.search(stem):
+        reasons.append("forbidden_char")
+    if stem != stem.strip():
+        reasons.append("edge_whitespace")
+    if any(ord(ch) < 32 for ch in stem):
+        reasons.append("control_char")
+    return reasons
+
+
+def spaces_in_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
+    """HARD: live page basenames must be space-free (kebab standard #80)."""
+    out: list[dict[str, object]] = []
+    for rel, item in pages.items():
+        if item["fields"].get("redirects_to"):
+            continue
+        if "attachments" in Path(rel).parts:
+            continue
+        stem = Path(rel).stem
+        if " " in stem:
+            out.append({"page": rel, "stem": stem})
+    return out
+
+
+def aruhe_prefixes(pages: dict[str, dict]) -> list[dict[str, object]]:
+    """HARD: legacy leading Aruhe - / Aruhe - prefix on live basenames."""
+    out: list[dict[str, object]] = []
+    for rel, item in pages.items():
+        if item["fields"].get("redirects_to"):
+            continue
+        if "attachments" in Path(rel).parts:
+            continue
+        stem = Path(rel).stem
+        if ARUHE_PREFIX.match(stem):
+            out.append({"page": rel, "stem": stem})
+    return out
+
+
+def illegal_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
+    """HARD: forbidden characters / edge whitespace / controls in live stems."""
+    out: list[dict[str, object]] = []
+    for rel in pages:
+        if "attachments" in Path(rel).parts:
+            continue
+        stem = Path(rel).stem
+        reasons = illegal_basename_issues(stem)
+        if reasons:
+            out.append({"page": rel, "stem": stem, "reasons": reasons})
+    return out
+
+
+def duplicate_stems(pages: dict[str, dict]) -> list[dict[str, object]]:
+    """HARD: vault-wide unique stems (casefold); attachments skipped."""
+    groups: dict[str, list[str]] = collections.defaultdict(list)
+    for rel in pages:
+        if "attachments" in Path(rel).parts:
+            continue
+        stem = Path(rel).stem
+        groups[stem.casefold()].append(rel)
+    return [
+        {"stem": Path(members[0]).stem, "pages": sorted(members)}
+        for _key, members in sorted(groups.items())
+        if len(members) > 1
+    ]
+
+
+def snake_owner_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
+    """Soft: snake_case owner basenames under entities/{type}/ (kebab preferred; not flagged)."""
+    out: list[dict[str, object]] = []
+    for rel in pages:
+        parts = Path(rel).parts
+        if len(parts) < 3 or parts[0] != "entities":
+            continue
+        if parts[1] not in OWNER_TYPES:
+            continue
+        stem = Path(rel).stem
+        if SNAKE_OWNER_STEM.fullmatch(stem):
+            out.append({"page": rel, "stem": stem, "kind": "snake"})
+    return out
+
+
+
 def main() -> int:
     args = parse_args()
     vault = args.vault.resolve()
@@ -301,6 +393,11 @@ def main() -> int:
             )
         )
     ]
+    findings["spaces_in_basename"] = spaces_in_basenames(pages)
+    findings["aruhe_prefix"] = aruhe_prefixes(pages)
+    findings["illegal_basename"] = illegal_basenames(pages)
+    findings["duplicate_stems"] = duplicate_stems(pages)
+    findings["snake_owner_basename"] = snake_owner_basenames(pages)
     findings["missing_trust"] = [{"page": rel, "missing": [key for key in args.required_trust_field if not item["fields"].get(key)]} for rel, item in pages.items() if any(not item["fields"].get(key) for key in args.required_trust_field)]
 
     documents = {}
