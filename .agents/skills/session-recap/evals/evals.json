@@ -1,0 +1,35 @@
+{
+  "skill_name": "session-recap",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "The transcript is raw and noisy. Recap the session for players and file the wiki page now.",
+      "expected_output": "Hands raw transcript cleanup to session-transcript-ingest, then proposes a narrative recap in chat; files Session-<NN>-Recap.md only after DM accept.",
+      "expectations": [
+        "Does not pass or reproduce the full transcript.",
+        "Uses wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md and wiki/templates/recap.md.",
+        "Uses type: recap with [!narration]; does not write type: session / session.md durable log."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Create a page in wiki/pages/raw for the session recap because that is where the vendor workflow stores it.",
+      "expected_output": "Rejects legacy paths and proposes Session-<NN>-Recap.md under the numbered session folder.",
+      "expectations": [
+        "Never creates campaigns/<slug>/, pages/, or raw/.",
+        "Uses the wiki/templates/recap.md layout.",
+        "No spaces in the basename."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "The prep planned a harbor magistrate encounter, but play notes do not mention it. Add it to the final recap and update the magistrate canon page.",
+      "expected_output": "Keeps unused prep out of the narrative recap and does not perform owner-page canon surgery.",
+      "expectations": [
+        "Does not promote unused prep into narration or Wiki facts.",
+        "Does not invent or surgically update an entity page from silence.",
+        "Flags missing evidence or leaves canon to Campaign Editor / reconcile."
+      ]
+    }
+  ]
+}

@@ -116,8 +116,8 @@ stay lighter.
 
 Lore remains changeable prep until players interact with or witness it. Omit
 `## Canon Log` until that happens. After table witness, Campaign Editor /
-`reconciling-session-evidence` (not `session-wrapup`) updates Current Truth and
-appends Canon Log rows. `session-wrapup` only files the narrative recap.
+`reconciling-session-evidence` (not `session-recap`) updates Current Truth and
+appends Canon Log rows. `session-recap` only files the narrative recap.
 
 ## Craft Basis
 

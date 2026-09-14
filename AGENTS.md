@@ -34,7 +34,7 @@ You can maintain multiple vaults (each a `~/.obsidian-wiki/config.<name>` file m
 Load `wiki/AGENTS.md` before any write to `wiki/` (campaign `type`, `lifecycle`, `reveal`, complete-sentence prose).
 Load `docs/agents/work.md` before Co-DM prep or wrapup output (Work gate: chat proposal; wiki write after DM accept).
 
-The 019 loop lives in this file plus `docs/agents/work.md`. Reflection is offered after a session sitting outside `session-wrapup` (that skill is narrative recap only). No new skill.
+The 019 loop lives in this file plus `docs/agents/work.md`. Reflection is offered after a session sitting outside `session-recap` (that skill is narrative recap only). No new skill.
 
 ### Table aim
 
@@ -231,7 +231,7 @@ Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the 
 | User says something like… | Skill |
 |---|---|
 | "run the session" / "start the sitting" / live-play guidance | `run-guide` |
-| "session wrapup" / "post-session" / "session recap" / "what happened last session" / recap for players | `session-wrapup` (narrative recap only → `Session-<NN>-Recap.md`; `session-recap` is an alias) |
+| "session wrapup" / "post-session" / "session recap" / "what happened last session" / recap for players | `session-recap` (sole narrative skill → `Session-<NN>-Recap.md`; `session-wrapup` retired) |
 | "plan the campaign" / "campaign arc" / "what's the long-term plan" | `campaign-planning` |
 | "cold open" / "how should the session start" | `cold-opens` |
 | "prep this encounter" / "build an encounter" / "encounter balance" | `encounter-prep` |

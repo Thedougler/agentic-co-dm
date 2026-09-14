@@ -4,6 +4,8 @@ title: Wiki Log
 
 # Wiki Log
 
+
+- [2026-09-14T21:30:00Z] CREATE pages="entities/place/la-vasca.md,entities/place/La Vasca.md" mode="restore" notes="Restore La Vasca dry-dock place from legacy calveno-la-vasca + la-vasca; spaced redirects_to stub so [[La Vasca]] resolves after remorph fallout"
 - [2026-09-13T23:40:00Z] UPDATE pages="entities/Delmar Fisk.md,entities/Crissdalynn Khinriss.md,entities/Jean-Claude Tabarnack.md,entities/Perrin Black-Jaw.md" mode="foundry" notes="Live Foundry sheets for four PCs from Shattered-Sea world"
 - [2026-09-13T23:40:00Z] UPDATE pages="journal/sessions/shattered-sea/11/Session-11-05-Otter-Hole.md" mode="copy" skills="copy-writer,theatre-of-the-mind,cliffhanger-beats" notes="Optimized DM-facing rescue procedure, branch scan, and player-safe basin narration"
 - [2026-09-13T23:40:00Z] UPDATE pages="journal/sessions/shattered-sea/11/Session-11-03-Wolfrabbits.md" mode="copy" skills="copy-writer,theatre-of-the-mind,cliffhanger-beats" notes="Optimized DM-facing hunt procedure, route scan, and player-safe crossing narration"
