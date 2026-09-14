@@ -52,6 +52,8 @@ Example: `python3 scripts/error-ledger.py sitting record --kind prep --job "…"
 
 Cut wasted context without waiting. A change MUST NOT count as an improvement if it lowers token cost by lowering Work quality. A change MUST NOT count as an improvement if it raises token cost for the same jobs without preventing a named failure.
 
+**Token measurement:** anything labeled tokens (including `WIKI_TOKEN_WARN_THRESHOLD`) uses tiktoken via `scripts/token-count.py` — default encoding `cl100k_base` (override `WIKI_TOKEN_ENCODING`). Do **not** use `file_size/4` as tokens. Method: `docs/agents/token-measurement.md` (issue #86).
+
 **Context waste:** max tokens on content + reasoning, not plumbing. Prefer `hot.md`, `scripts/manifest.py`, and Retrieval Primitives over whole `index.md` / `log.md` / `.manifest.json`. **Highest priority:** reconcile conflicting/redundant skill+AGENTS instructions only when surviving text keeps (or improves) agent output quality; do not thin narrative, mechanics, or craft that raises outputs. Byte-count is not a success metric. Method: `docs/agents/context-waste-method.md` (issue #71). Run `python3 scripts/context-waste-scan.py` for path+metric leads (size flags are investigation leads, not delete mandates). No prose-quality scoring.
 
 ### Helpers
