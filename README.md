@@ -101,7 +101,7 @@ Design lock: `docs/agents/wiki-maintenance-loop.md` (issue #90).
 | HARD wiki lint only | `./scripts/wiki-lint --json` |
 | Context-waste leads | `python3 scripts/context-waste-scan.py` |
 | Objective tokens | `python3 scripts/token-count.py --sum wiki` / `--footprint` — default `cl100k_base`; **not** `bytes/4` |
-| Filename remorph plan | `./scripts/remorph-page-filename-kebab --dry-run` — **`--apply` gated** until greenlit |
+| Filename remorph plan | `./scripts/remorph-page-filename-kebab --dry-run` then `--apply` (greenlit 2026-09-14 for kebab / Aruhe / 00 strips; prefer PR diffs) |
 
 **Do not automate without an explicit greenlight:** lore invent, dedup merge, link demotions during migration freeze, craft/narrative/mechanics thinning for token scores, or collapsing conflicting rumors into one “truth.” Mass kebab remorph `--apply` unlocked 2026-09-14 (Nick); still dry-run first. Scripts do not grade prose — Creative Director does.
 
