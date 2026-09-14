@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Layer A wiki maintenance report facade (ATE / #90).
 
-Bundles deterministic Layer A checks into one compact path+metric JSON.
-No new policy, no prose scoring, no auto remorph/merge.
+Bundles deterministic Layer A checks (A1–A6) into one compact path+metric JSON.
+Includes A6 dry-run plan stubs (filename remorph counts only; apply stays Nick-gated).
+No new policy, no prose scoring, no auto remorph/merge/dedup.
 
-Cite: docs/agents/wiki-maintenance-loop.md
+Cite: docs/agents/wiki-maintenance-loop.md (A6 row); #90 / #97 / #98
 
 Usage (repo root):
   ./scripts/wiki-maintain --report
@@ -26,6 +27,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WIKI_LINT = ROOT / "scripts" / "wiki-lint"
 CONTEXT_WASTE = ROOT / "scripts" / "context-waste-scan.py"
 TOKEN_COUNT = ROOT / "scripts" / "token-count.py"
+REMORPH_FILENAME = ROOT / "scripts" / "remorph-page-filename-kebab"
 
 # Ignore inbox placeholders — leftover staging is anything else under _raw/.
 RAW_IGNORE_NAMES = frozenset({".gitkeep", ".gitignore", ".DS_Store"})
@@ -223,6 +225,75 @@ def step_raw_empty(vault: str, cwd: Path) -> dict[str, Any]:
     }
 
 
+def step_a6_dry_run_plans(vault: str, cwd: Path) -> dict[str, Any]:
+    """A6: soft-include remorph dry-run plan counts (no full plans dump; no --apply)."""
+    if not REMORPH_FILENAME.is_file():
+        return {
+            "step": "A6",
+            "tool": "scripts/remorph-page-filename-kebab",
+            "ok": True,
+            "skipped": True,
+            "reason": "scripts/remorph-page-filename-kebab not present",
+            "mode": "dry-run",
+            "metric": {
+                "plan_count": None,
+                "skip_count": None,
+                "error_count": None,
+            },
+        }
+    code, data, err = run_json(
+        [
+            sys.executable,
+            str(REMORPH_FILENAME),
+            "--dry-run",
+            "--json",
+            "--wiki",
+            vault,
+        ],
+        cwd=cwd,
+    )
+    if data is None:
+        return {
+            "step": "A6",
+            "tool": "scripts/remorph-page-filename-kebab",
+            "ok": False,
+            "skipped": False,
+            "exit_code": code,
+            "mode": "dry-run",
+            "error": err,
+            "metric": {
+                "plan_count": None,
+                "skip_count": None,
+                "error_count": None,
+            },
+        }
+    plans = data.get("plans") or []
+    skips = data.get("skips") or []
+    errors = data.get("errors") or []
+    plan_count = data.get("count")
+    if plan_count is None:
+        plan_count = len(plans) if isinstance(plans, list) else 0
+    out: dict[str, Any] = {
+        "step": "A6",
+        "tool": "scripts/remorph-page-filename-kebab",
+        "ok": True,
+        "skipped": False,
+        "exit_code": code,
+        "mode": data.get("mode") or "dry-run",
+        "metric": {
+            "plan_count": int(plan_count),
+            "skip_count": len(skips) if isinstance(skips, list) else 0,
+            "error_count": len(errors) if isinstance(errors, list) else 0,
+        },
+    }
+    gated = data.get("gated")
+    if gated:
+        out["gated"] = gated
+    # Thin path+metric only — never embed full plans[] bodies.
+    return out
+
+
+
 def _rel(cwd: Path, path: Path) -> str:
     try:
         return path.resolve().relative_to(cwd.resolve()).as_posix()
@@ -235,11 +306,14 @@ def build_report(vault: str, cwd: Path) -> dict[str, Any]:
     a2 = step_context_waste(vault, cwd)
     a3 = step_token_count(vault, cwd)
     a5 = step_raw_empty(vault, cwd)
+    a6 = step_a6_dry_run_plans(vault, cwd)
 
     hard_total = int((a1.get("metric") or {}).get("hard_total") or 0) if a1.get("ok") else None
     hard_fail = bool(a1.get("hard_fail")) if a1.get("ok") else True
     waste_hard = int((a2.get("metric") or {}).get("hard_hits") or 0) if a2.get("ok") else None
     raw_clear = bool(a5.get("clear")) if a5.get("ok") else False
+    # Quiet = A1 HARD=0 and A5 clear and no P0 waste leads.
+    # A6 remorph plans are Nick-gated Layer C — report them but do not flip quiet.
     quiet = (
         a1.get("ok")
         and a2.get("ok")
@@ -249,6 +323,16 @@ def build_report(vault: str, cwd: Path) -> dict[str, Any]:
         and raw_clear
         and (waste_hard or 0) == 0
     )
+
+    if a6.get("skipped"):
+        a6_status = "skipped"
+        a6_plan_count = None
+    elif a6.get("ok"):
+        a6_status = "ok"
+        a6_plan_count = (a6.get("metric") or {}).get("plan_count")
+    else:
+        a6_status = "error"
+        a6_plan_count = None
 
     summary = {
         "a1_hard_fail": hard_fail if a1.get("ok") else None,
@@ -260,6 +344,8 @@ def build_report(vault: str, cwd: Path) -> dict[str, Any]:
         "a3_total_tokens": (a3.get("metric") or {}).get("total_tokens"),
         "a5_clear": raw_clear if a5.get("ok") else None,
         "a5_leftover_count": (a5.get("metric") or {}).get("leftover_count"),
+        "a6_status": a6_status,
+        "a6_plan_count": a6_plan_count,
         "quiet": quiet,
     }
 
@@ -275,6 +361,7 @@ def build_report(vault: str, cwd: Path) -> dict[str, Any]:
             "A2_context_waste": a2,
             "A3_token_count": a3,
             "A5_raw_empty": a5,
+            "A6_dry_run_plans": a6,
         },
     }
 
