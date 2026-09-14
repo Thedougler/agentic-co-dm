@@ -36,11 +36,11 @@ Petro's operation is the only thing keeping [[Sparhold]] competitive with [[Kalo
 
 | Field | Content |
 |---|---|
-| `primary_goal` | Get richer margins by harvesting spar-timber from the deepest, most valuable fringe ground the market will bear. |
-| `consistent_method` | Keep two ledgers (one for official records with falsified cut-lines, one for actual crew positions). Pay Ussa to misreport where crews actually work. |
-| `active_problem` | [[Grung]] raids are escalating. The harbor authority notices the link between his deeper cuts and the raids. They're watching his books more closely now. |
-| `performance_hooks` | Harbormaster meets timber roughneck. He adjusts the ledger constantly and licks his pencil tip before each notation. His scarred forearm rolls as if he's testing it for pain. |
-| `link_of_relevance` | Contact for any party investigating the timber trade, the raid escalation, or [[Sparhold]]'s economic survival. |
+| Primary goal | Get richer margins by harvesting spar-timber from the deepest, most valuable fringe ground the market will bear. |
+| Consistent method | Keep two ledgers (one for official records with falsified cut-lines, one for actual crew positions). Pay Ussa to misreport where crews actually work. |
+| Active problem | [[Grung]] raids are escalating. The harbor authority notices the link between his deeper cuts and the raids. They're watching his books more closely now. |
+| Performance hooks | Harbormaster meets timber roughneck. He adjusts the ledger constantly and licks his pencil tip before each notation. His scarred forearm rolls as if he's testing it for pain. |
+| Link of relevance | Contact for any party investigating the timber trade, the raid escalation, or [[Sparhold]]'s economic survival. |
 
 **Voice & Delivery:** brisk, clipped speech with a working-harbor accent. [[Prone]] to incomplete sentences when he's calculating aloud. Numbers animate him more than people do.
 

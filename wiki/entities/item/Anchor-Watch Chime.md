@@ -36,12 +36,12 @@ _Wondrous Item, Uncommon._
 
 | Field | Detail |
 |---|---|
-| `one_thing` | Nothing reaches a sleeping camp or a moored ship unannounced. |
-| `rarity_justification` | Narrower than [[Rope of Climbing]] (uncommon, unlimited uses, works anywhere) and than the [[Alarm]] spell a ritual caster gets free every night. This works only while the chime sits still, once between long rests, and gives no bonus to any roll. |
-| `attunement_reason` | No attack, damage, AC, or save modifier, and one power only. The attunement tree has no branch for it. |
-| `pc_connection` | The crew's damage sits almost entirely in [[Delmar Fisk|Delmar]] and [[Crissdalynn Khinriss|Crissdalynn]]'s melee lanes, so losing a first round costs them more than hit points do. |
-| `current_holder` | [[Giacomo Moretti]], on the signal-gear shelf at [[Moretti & Sons Chandlery]]. |
-| `narrative_hook` | Whoever struck out that name on the rim used the clapper's own wire to do it. |
+| One thing | Nothing reaches a sleeping camp or a moored ship unannounced. |
+| Rarity justification | Narrower than [[Rope of Climbing]] (uncommon, unlimited uses, works anywhere) and than the [[Alarm]] spell a ritual caster gets free every night. This works only while the chime sits still, once between long rests, and gives no bonus to any roll. |
+| Attunement reason | No attack, damage, AC, or save modifier, and one power only. The attunement tree has no branch for it. |
+| PC connection | The crew's damage sits almost entirely in [[Delmar Fisk|Delmar]] and [[Crissdalynn Khinriss|Crissdalynn]]'s melee lanes, so losing a first round costs them more than hit points do. |
+| Current holder | [[Giacomo Moretti]], on the signal-gear shelf at [[Moretti & Sons Chandlery]]. |
+| Narrative hook | Whoever struck out that name on the rim used the clapper's own wire to do it. |
 
 ## Mechanics
 

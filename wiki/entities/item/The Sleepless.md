@@ -38,12 +38,12 @@ A batch [[Studio Orsini]] left on the drying racks four days too long, sold unde
 
 | Field | Detail |
 |---|---|
-| `one_thing` | For 1 hour after lighting, the smoker rolls [[Wisdom]] saving throws with advantage. |
-| `rarity_justification` | Under [[Cloak of Protection]] (Uncommon, attunement, a permanent bonus to every saving throw and to AC) and level with [[Dust of Disappearance]] (Uncommon, single use, one guaranteed effect, free of an attunement slot). This covers a single save type for a single hour and then burns out. |
-| `attunement_reason` | None. Single use, one power, and no bonus to attack rolls, damage rolls, saving throws, or AC. |
-| `pc_connection` | [[Delmar Fisk]] and [[Catarina Da'Virelli|Catarina Davirelli]] both roll Wisdom saves at a whisker over nothing, and one area effect aimed at that number takes the crew's back line out of a fight together. |
-| `current_holder` | Board stock at [[La Gatta]], stacked loose in the tin at 120 gp under the Seconds discount. |
-| `narrative_hook` | Nobody buys four of these for a quiet week, so a regular clearing the tin already knows what is coming. |
+| One thing | For 1 hour after lighting, the smoker rolls [[Wisdom]] saving throws with advantage. |
+| Rarity justification | Under [[Cloak of Protection]] (Uncommon, attunement, a permanent bonus to every saving throw and to AC) and level with [[Dust of Disappearance]] (Uncommon, single use, one guaranteed effect, free of an attunement slot). This covers a single save type for a single hour and then burns out. |
+| Attunement reason | None. Single use, one power, and no bonus to attack rolls, damage rolls, saving throws, or AC. |
+| PC connection | [[Delmar Fisk]] and [[Catarina Da'Virelli|Catarina Davirelli]] both roll Wisdom saves at a whisker over nothing, and one area effect aimed at that number takes the crew's back line out of a fight together. |
+| Current holder | Board stock at [[La Gatta]], stacked loose in the tin at 120 gp under the Seconds discount. |
+| Narrative hook | Nobody buys four of these for a quiet week, so a regular clearing the tin already knows what is coming. |
 
 **Rarity:** the Uncommon tier carries this without strain. Cloak of Protection hands out a flat bonus to every save forever and still sits at Uncommon, behind an attunement slot. Dust of Disappearance is the closer match, a single-use consumable with one guaranteed effect and no attunement slot spent. An hour of advantage on one save, once, out of a cigarette, sits under both.
 

@@ -36,12 +36,12 @@ _Gear (Mount), Common._
 
 | Field | Detail |
 |---|---|
-| `one_thing` | A device seated in the cradle stays level and stays aimed while the deck under it moves. |
-| `rarity_justification` | Non-magical shipwright's fitting, priced between the [[Reinforced Specimen Cage]] (60 gp) and the [[Chain-Brake Winch]] (160 gp). It cancels one situational disadvantage and grants no bonus to any roll. |
-| `attunement_reason` | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
-| `pc_connection` | [[Catarina Da'Virelli|Catarina]] fights from the deck of the _[[Uncertainty]]_, and everything she plants on a rail has to hold its aim through the swell. |
-| `current_holder` | [[Kettil Ormsson]], on the counter at [[Ormsson's Fittings]], where he uses it to prove the point about the rings. |
-| `narrative_hook` | Every gun crew in [[Kalowe]] wants one and the yard buys them in pairs, so the shelf stays empty more weeks than not. |
+| One thing | A device seated in the cradle stays level and stays aimed while the deck under it moves. |
+| Rarity justification | Non-magical shipwright's fitting, priced between the [[Reinforced Specimen Cage]] (60 gp) and the [[Chain-Brake Winch]] (160 gp). It cancels one situational disadvantage and grants no bonus to any roll. |
+| Attunement reason | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
+| PC connection | [[Catarina Da'Virelli|Catarina]] fights from the deck of the _[[Uncertainty]]_, and everything she plants on a rail has to hold its aim through the swell. |
+| Current holder | [[Kettil Ormsson]], on the counter at [[Ormsson's Fittings]], where he uses it to prove the point about the rings. |
+| Narrative hook | Every gun crew in [[Kalowe]] wants one and the yard buys them in pairs, so the shelf stays empty more weeks than not. |
 
 ## Mechanics
 

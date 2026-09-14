@@ -48,11 +48,11 @@ He asks questions instead of making statements, even while teaching, and agrees 
 
 | Field | Value |
 |---|---|
-| primary_goal | Confirm Crissdalynn's readiness and account for the two Sentinels lost at The Drowned Maw. |
-| consistent_method | Asks questions instead of giving orders. Channels worry into action, not words. Never repeats himself. |
-| active_problem | Something foul from the south is moving beneath Calveno, pulling his attention in two directions. |
-| performance_hooks | Composed sentinel master vibe. Smooths his robes, refolds his wings right over left, then adjusts his hood when his composure threatens to crack. |
-| link_of_relevance | Assigned [[Crissdalynn Khinriss|Crissdalynn]] The Drowned Maw pilgrimage. Staked his own reputation on her readiness. |
+| Primary goal | Confirm Crissdalynn's readiness and account for the two Sentinels lost at The Drowned Maw. |
+| Consistent method | Asks questions instead of giving orders. Channels worry into action, not words. Never repeats himself. |
+| Active problem | Something foul from the south is moving beneath Calveno, pulling his attention in two directions. |
+| Performance hooks | Composed sentinel master vibe. Smooths his robes, refolds his wings right over left, then adjusts his hood when his composure threatens to crack. |
+| Link of relevance | Assigned [[Crissdalynn Khinriss|Crissdalynn]] The Drowned Maw pilgrimage. Staked his own reputation on her readiness. |
 
 The "foul wind from the south" he named when the ship went down was right: Talon Vantyrus and [[Talon Skarn]] of [[the Countless]] were operating in the Midchain at the time, a thread to introduce once the crew of the [[Uncertainty]] actually travels into or reaches the Midchain, not before. His own outstanding business: determine what the Eyrie needs to know about current Maw conditions, and whatever brought him to Calveno beyond Crissdalynn, which he hasn't said. Does he know about the [[Soul Incarnate]]? No: per Sentinels of the Eyrie doctrine, he doesn't know the [[Soul Incarnate]] exists as a conscious entity, only that the order's founding documents are ancient.
 

@@ -49,11 +49,11 @@ Voice is fast, loud, and self-interrupting. She corrects her own sentence mid-wo
 
 | Field | Value |
 |---|---|
-| primary_goal | Win the argument with Toby and get her spot back as his Royal Best Friend. |
-| consistent_method | Escalates every claim past his and refuses to let one go once she's said it. |
-| active_problem | Toby keeps escalating right back, and the ground under both of them keeps coming out scarred. |
-| performance_hooks | Playground-tyrant vibe, a kid who's never once lost an argument by her own count. Corrects her own sentence mid-word to make the claim bigger. |
-| link_of_relevance | Her cursed speech exists only because of [[Delmar Fisk]]'s own unresolved theft of the [[Pearl of Souls]], entirely unknown to him. |
+| Primary goal | Win the argument with Toby and get her spot back as his Royal Best Friend. |
+| Consistent method | Escalates every claim past his and refuses to let one go once she's said it. |
+| Active problem | Toby keeps escalating right back, and the ground under both of them keeps coming out scarred. |
+| Performance hooks | Playground-tyrant vibe, a kid who's never once lost an argument by her own count. Corrects her own sentence mid-word to make the claim bigger. |
+| Link of relevance | Her cursed speech exists only because of [[Delmar Fisk]]'s own unresolved theft of the [[Pearl of Souls]], entirely unknown to him. |
 
 > [!mechanic]
 > **Tradition:** none classifiable. **School:** unclassifiable. Source: planar contamination from the [[Drowned Maw]] entity — not cast by either child.

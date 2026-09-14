@@ -53,11 +53,11 @@ Her shelves hold salted meat and hides that never seem to run short no matter ho
 
 | Field | Value |
 |---|---|
-| `primary_goal` | Keep her private ledger complete and legible (the record of what the island won't let stay dead) for as long as her hands and eyes still allow it. |
-| `consistent_method` | Names a fair price once, doesn't haggle, and answers only the question actually asked. A buyer who doesn't ask isn't told. |
-| `active_problem` | Her handwriting is going along with her eyesight, and the private ledger is getting harder for even her to read back. |
-| `performance_hooks` | Dry old-country-store-keeper vibe. Taps the counter twice with a bent knuckle before naming a price. |
-| `link_of_relevance` | [[Perrin Black-Jaw]] failed his Arcana check identifying [[Shepherd Grigori]]'s necrotic healing magic in Session 03, needing a 22 and rolling only an 18, and has suspected something's wrong about him since without knowing what. Marta's private ledger and her half-remembered fragments of the old bargain story are a lead his suspicion has been missing, one he can pull on directly if he asks the right questions at her counter. |
+| Primary goal | Keep her private ledger complete and legible (the record of what the island won't let stay dead) for as long as her hands and eyes still allow it. |
+| Consistent method | Names a fair price once, doesn't haggle, and answers only the question actually asked. A buyer who doesn't ask isn't told. |
+| Active problem | Her handwriting is going along with her eyesight, and the private ledger is getting harder for even her to read back. |
+| Performance hooks | Dry old-country-store-keeper vibe. Taps the counter twice with a bent knuckle before naming a price. |
+| Link of relevance | [[Perrin Black-Jaw]] failed his Arcana check identifying [[Shepherd Grigori]]'s necrotic healing magic in Session 03, needing a 22 and rolling only an 18, and has suspected something's wrong about him since without knowing what. Marta's private ledger and her half-remembered fragments of the old bargain story are a lead his suspicion has been missing, one he can pull on directly if he asks the right questions at her counter. |
 
 **Voice & Delivery:**
 

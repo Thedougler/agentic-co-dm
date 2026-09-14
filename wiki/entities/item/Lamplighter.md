@@ -40,12 +40,12 @@ The dearest shaft in [[Ettore Lupo]]'s drawer at [[Casa Lupo]], and the only one
 
 | Field | Detail |
 |---|---|
-| `one_thing` | A creature it hits glows for an hour. Hiding does not stop the glow, and neither does dousing the light or turning invisible. |
-| `rarity_justification` | Comparable to [[Lantern of Revealing]] (reveals invisible creatures within 30 ft, reusable) and [[Goggles of Night]] (permanent darkvision, reusable). Lamplighter is single use and works on only one creature. It grants no bonus to hit, and it washes off. |
-| `attunement_reason` | It marks and nothing else, once, leaving attack, damage, save, and AC rolls alone. The attunement tree has no branch for it. |
-| `pc_connection` | [[Crissdalynn Khinriss]] regains district-wide tracking of one marked runner. |
-| `current_holder` | [[Ettore Lupo]], in his felt-lined drawer at [[Casa Lupo]]. |
-| `narrative_hook` | Somebody in [[Calven and Calveno]] is already marking people with these, and the glow outlasts the man who fired it by an hour. |
+| One thing | A creature it hits glows for an hour. Hiding does not stop the glow, and neither does dousing the light or turning invisible. |
+| Rarity justification | Comparable to [[Lantern of Revealing]] (reveals invisible creatures within 30 ft, reusable) and [[Goggles of Night]] (permanent darkvision, reusable). Lamplighter is single use and works on only one creature. It grants no bonus to hit, and it washes off. |
+| Attunement reason | It marks and nothing else, once, leaving attack, damage, save, and AC rolls alone. The attunement tree has no branch for it. |
+| PC connection | [[Crissdalynn Khinriss]] regains district-wide tracking of one marked runner. |
+| Current holder | [[Ettore Lupo]], in his felt-lined drawer at [[Casa Lupo]]. |
+| Narrative hook | Somebody in [[Calven and Calveno]] is already marking people with these, and the glow outlasts the man who fired it by an hour. |
 
 [[Crissdalynn Khinriss]] can follow anything from the air, but loses it the moment it goes into a crowd or under a roofline. A marked runner is one she can pick back up over a whole district, which is the only part of her mapping task she has ever been able to do reliably.
 

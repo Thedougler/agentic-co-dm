@@ -38,12 +38,12 @@ One of the blends [[Rufio Segalla]] keeps on the shelf at [[La Brace]], named fo
 
 | Field | Detail |
 |---|---|
-| `one_thing` | For 1 hour after lighting, the smoker rolls [[Initiative]] with advantage. |
-| `rarity_justification` | Below [[Sentinel Shield]] (Uncommon, permanent advantage on Initiative and [[Perception]], attunement required) and level with [[Cloak of Elvenkind]] (Uncommon, situational advantage, worn without attunement). Single use, one hour, one roll. |
-| `attunement_reason` | None. Single use, one power, no bonus to attack rolls, damage rolls, saving throws, or AC, and Initiative counts as an ability check. |
-| `pc_connection` | [[Delmar Fisk]] carries the crew's damage in the opening round and loses it the moment something else moves first. |
-| `current_holder` | Shelf stock at [[La Brace]], sold across the counter to anyone who walks in. |
-| `narrative_hook` | Smokers buy it on the way to something, so a spent stub in an alley says someone walked in there expecting a fight. |
+| One thing | For 1 hour after lighting, the smoker rolls [[Initiative]] with advantage. |
+| Rarity justification | Below [[Sentinel Shield]] (Uncommon, permanent advantage on Initiative and [[Perception]], attunement required) and level with [[Cloak of Elvenkind]] (Uncommon, situational advantage, worn without attunement). Single use, one hour, one roll. |
+| Attunement reason | None. Single use, one power, no bonus to attack rolls, damage rolls, saving throws, or AC, and Initiative counts as an ability check. |
+| PC connection | [[Delmar Fisk]] carries the crew's damage in the opening round and loses it the moment something else moves first. |
+| Current holder | Shelf stock at [[La Brace]], sold across the counter to anyone who walks in. |
+| Narrative hook | Smokers buy it on the way to something, so a spent stub in an alley says someone walked in there expecting a fight. |
 
 **Rarity:** the Uncommon tier holds this comfortably. Sentinel Shield hands out the same advantage permanently and adds Perception on top. It still sits at Uncommon, behind an attunement slot. Cloak of Elvenkind is the closer match, granting one situational advantage that anyone can put on. An hour of the same thing, once, out of a consumable, sits under both.
 

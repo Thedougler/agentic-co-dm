@@ -40,11 +40,11 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| primary_goal | Keep Ponte Bassa the sole reliable source for every ship's movements through Calveno. |
-| consistent_method | Remembers every detail without writing anything down; dispenses information to seekers over a drink, never volunteering. |
-| active_problem | Captains increasingly falsify their manifests, and his perfect record is becoming unreliable. |
-| performance_hooks | Quiet archival keeper vibe. Rocks back on his heels between orders, taking his time. |
-| link_of_relevance | Offers strategic intelligence to any PC investigating a ship, captain, or cargo that passed through Calveno. |
+| Primary goal | Keep Ponte Bassa the sole reliable source for every ship's movements through Calveno. |
+| Consistent method | Remembers every detail without writing anything down; dispenses information to seekers over a drink, never volunteering. |
+| Active problem | Captains increasingly falsify their manifests, and his perfect record is becoming unreliable. |
+| Performance hooks | Quiet archival keeper vibe. Rocks back on his heels between orders, taking his time. |
+| Link of relevance | Offers strategic intelligence to any PC investigating a ship, captain, or cargo that passed through Calveno. |
 
 **Voice & Delivery:** speaks in near-whispers, forcing people to lean in (flat, transactional, unhurried). He lets silence fill the room where others rush to speak. The quiet is where thinking happens.
 

@@ -34,12 +34,12 @@ tier: supporting
 
 | Field | Detail |
 |---|---|
-| `one_thing` | Advantage on rope-work checks — splicing, knotting, and repairing cordage. |
-| `rarity_justification` | Non-magical tool, comparable to [[Thieves' Tools]] (25 gp) in specificity but narrower in application. Grants advantage on one skill use, no attack/damage/save/AC bonus. Common. |
-| `attunement_reason` | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
-| `pc_connection` | Any PC working rigging, setting anchors, or binding prisoners benefits from better rope work. |
-| `current_holder` | [[Cotter Foss]] sells these from the rail of the [[Nimmik Vollask]]. The gnomes make them below decks. |
-| `narrative_hook` | A sailor carrying one of these marks themselves as someone who takes their knots seriously. The gnomes stamp each one — a mark nobody else uses. |
+| One thing | Advantage on rope-work checks — splicing, knotting, and repairing cordage. |
+| Rarity justification | Non-magical tool, comparable to [[Thieves' Tools]] (25 gp) in specificity but narrower in application. Grants advantage on one skill use, no attack/damage/save/AC bonus. Common. |
+| Attunement reason | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
+| PC connection | Any PC working rigging, setting anchors, or binding prisoners benefits from better rope work. |
+| Current holder | [[Cotter Foss]] sells these from the rail of the [[Nimmik Vollask]]. The gnomes make them below decks. |
+| Narrative hook | A sailor carrying one of these marks themselves as someone who takes their knots seriously. The gnomes stamp each one — a mark nobody else uses. |
 
 ## Mechanics
 

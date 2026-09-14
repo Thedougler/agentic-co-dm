@@ -38,12 +38,12 @@ An intact first run out of [[Studio Orsini]], not a second, not board stock, and
 
 | Field | Detail |
 |---|---|
-| `one_thing` | For 1 hour after lighting, the first saving throw the smoker fails becomes a success instead. |
-| `rarity_justification` | Under [[Ring of Evasion]] (Rare, attunement, three charges, each turning a failed [[Dexterity]] save into a success, recharging daily) and level with [[Potion of Heroism]] (Rare, single-use consumable, an hour of real combat benefit, no attunement). One save, any kind, once, then gone for good. |
-| `attunement_reason` | None. Single use, one power, and no standing bonus to attack rolls, damage rolls, saving throws, or AC. |
-| `pc_connection` | The crew's mind saves are close to unprotected across four of the five, so the roll that ends a fight for them is a save, not a hit. This is the only thing in [[Calven and Calveno]] that answers a specific save nobody at the table wants to roll. |
-| `current_holder` | Held under the board at [[La Gatta]] for a buyer who has not come back for it, and Nicco names 1,200 gp to anyone who asks. |
-| `narrative_hook` | The name on the card belongs to somebody, and Nicco has been holding a Rare blend for them long enough that the ink has aged. He has never said who. |
+| One thing | For 1 hour after lighting, the first saving throw the smoker fails becomes a success instead. |
+| Rarity justification | Under [[Ring of Evasion]] (Rare, attunement, three charges, each turning a failed [[Dexterity]] save into a success, recharging daily) and level with [[Potion of Heroism]] (Rare, single-use consumable, an hour of real combat benefit, no attunement). One save, any kind, once, then gone for good. |
+| Attunement reason | None. Single use, one power, and no standing bonus to attack rolls, damage rolls, saving throws, or AC. |
+| PC connection | The crew's mind saves are close to unprotected across four of the five, so the roll that ends a fight for them is a save, not a hit. This is the only thing in [[Calven and Calveno]] that answers a specific save nobody at the table wants to roll. |
+| Current holder | Held under the board at [[La Gatta]] for a buyer who has not come back for it, and Nicco names 1,200 gp to anyone who asks. |
+| Narrative hook | The name on the card belongs to somebody, and Nicco has been holding a Rare blend for them long enough that the ink has aged. He has never said who. |
 
 **Rarity:** Ring of Evasion is the ceiling this stays under. It does the same trick three times a day, forever, off an attunement slot, and it still only covers Dexterity. The Ninth Life covers any save, which is what pushes it past Uncommon, but it does so exactly once and then it is ash. Potion of Heroism is the price-and-scale match: a Rare consumable, an hour long, no attunement.
 

@@ -30,12 +30,12 @@ tier: supporting
 
 | Field | Detail |
 |---|---|
-| `one_thing` | Keeps tar at working temperature for 8 hours with no open flame — hull repairs at sea, in rain, in the dark. |
-| `rarity_justification` | Non-magical alchemical tool. Comparable to [[Alchemist's Fire]] (50 gp) in alchemical complexity but narrower in use — it heats tar, nothing else. Common. |
-| `attunement_reason` | Non-magical, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
-| `pc_connection` | Any crew maintaining a ship at sea needs workable tar without the risk of an open brazier on a wooden deck. |
-| `current_holder` | [[Cotter Foss]] sells these from the rail of the [[Nimmik Vollask]]. The gnomes make the heating elements below decks. |
-| `narrative_hook` | The heating element is a gnomish trade secret. Other chandleries sell the pots empty and buy the elements from the Depot at markup. |
+| One thing | Keeps tar at working temperature for 8 hours with no open flame — hull repairs at sea, in rain, in the dark. |
+| Rarity justification | Non-magical alchemical tool. Comparable to [[Alchemist's Fire]] (50 gp) in alchemical complexity but narrower in use — it heats tar, nothing else. Common. |
+| Attunement reason | Non-magical, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
+| PC connection | Any crew maintaining a ship at sea needs workable tar without the risk of an open brazier on a wooden deck. |
+| Current holder | [[Cotter Foss]] sells these from the rail of the [[Nimmik Vollask]]. The gnomes make the heating elements below decks. |
+| Narrative hook | The heating element is a gnomish trade secret. Other chandleries sell the pots empty and buy the elements from the Depot at markup. |
 
 ## Mechanics
 

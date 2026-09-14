@@ -44,11 +44,11 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| primary_goal | Sell the last four lodri at shortage price before the Commission stops dragging. |
-| consistent_method | Names one price from overhead, then goes silent and lets the buyer argue with the water. |
-| active_problem | The Commission bought his six best and he cannot breed replacements before the price falls. |
-| performance_hooks | Old market trader. Swings out over the pens mid-sentence to slap a tank lid down without looking. |
-| link_of_relevance | Offers [[Perrin Black-Jaw|Perrin]] a lodro at the price he gave Vincenzo, which is a debt wearing a kindness. |
+| Primary goal | Sell the last four lodri at shortage price before the Commission stops dragging. |
+| Consistent method | Names one price from overhead, then goes silent and lets the buyer argue with the water. |
+| Active problem | The Commission bought his six best and he cannot breed replacements before the price falls. |
+| Performance hooks | Old market trader. Swings out over the pens mid-sentence to slap a tank lid down without looking. |
+| Link of relevance | Offers [[Perrin Black-Jaw|Perrin]] a lodro at the price he gave Vincenzo, which is a debt wearing a kindness. |
 
 **Voice & Delivery:** loud, because the shed echoes and the animals are noisy, and the volume never drops for a private matter. He talks to the lodri mid-sentence without marking the switch, and he will tell a customer to their face that he doubts they can afford it before selling to them anyway. Worldview word: **brash**.
 

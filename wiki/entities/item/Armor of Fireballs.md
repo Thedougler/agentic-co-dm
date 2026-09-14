@@ -31,12 +31,12 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| `one_thing` | Action-activated [[Fireball]] centered on the wearer, who is immune to it. The armor's own fire resistance makes triggering it survivable. |
-| `rarity_justification` | Rare, comparable to [[Periapt of Proof against Poison]] (passive damage-type immunity paired with a linked benefit) and [[Ring of Evasion]] (a strong, recharge-gated combat action, not at-will). Both are Rare and both require attunement. |
-| `attunement_reason` | Rare tier default: always requires attunement if combat-relevant (item-rarity-budget.md). This item is combat-relevant on both its passive and active powers. |
-| `pc_connection` | None. World flavor, not tied to a specific PC's arc (DM ruling, 2026-08-06). |
-| `current_holder` | [[Vask's Reclaimed Goods]], on the rack near the counter. |
-| `narrative_hook` | On sale at [[Sorin Vask]]'s shop in [[Kalowe]] for 4,000 gp, its origin left to whoever buys it. |
+| One thing | Action-activated [[Fireball]] centered on the wearer, who is immune to it. The armor's own fire resistance makes triggering it survivable. |
+| Rarity justification | Rare, comparable to [[Periapt of Proof against Poison]] (passive damage-type immunity paired with a linked benefit) and [[Ring of Evasion]] (a strong, recharge-gated combat action, not at-will). Both are Rare and both require attunement. |
+| Attunement reason | Rare tier default: always requires attunement if combat-relevant (item-rarity-budget.md). This item is combat-relevant on both its passive and active powers. |
+| PC connection | None. World flavor, not tied to a specific PC's arc (DM ruling, 2026-08-06). |
+| Current holder | [[Vask's Reclaimed Goods]], on the rack near the counter. |
+| Narrative hook | On sale at [[Sorin Vask]]'s shop in [[Kalowe]] for 4,000 gp, its origin left to whoever buys it. |
 
 ## Mechanics
 

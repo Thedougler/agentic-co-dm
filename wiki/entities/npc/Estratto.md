@@ -53,11 +53,11 @@ Estratto holds a writ for your ship, the *Uncertainty* (Concordat records: *[[Un
 
 | Field | Content |
 |---|---|
-| `primary_goal` | Check your papers, verify your name, seize the ship. |
-| `consistent_method` | Issues a prompt. Waits. Offers help. Issues the same prompt again. Never raises its voice. |
-| `active_problem` | Your papers don't match Tessarine records. It needs at least one verified identity to proceed. |
-| `performance_hooks` | Self-checkout machine energy. Ends every non-answer with "Thank you for your patience." |
-| `link_of_relevance` | Delmar Fisk's cover persona is a compliance error. One true name breaks your whole cover. |
+| Primary goal | Check your papers, verify your name, seize the ship. |
+| Consistent method | Issues a prompt. Waits. Offers help. Issues the same prompt again. Never raises its voice. |
+| Active problem | Your papers don't match Tessarine records. It needs at least one verified identity to proceed. |
+| Performance hooks | Self-checkout machine energy. Ends every non-answer with "Thank you for your patience." |
+| Link of relevance | Delmar Fisk's cover persona is a compliance error. One true name breaks your whole cover. |
 
 ## Voice & Delivery
 

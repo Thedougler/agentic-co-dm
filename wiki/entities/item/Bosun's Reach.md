@@ -39,12 +39,12 @@ _[[Weapon]] (Arrow), Uncommon._
 
 | Field | Detail |
 |---|---|
-| `one_thing` | Fired into a wall, hull, or beam, it anchors and leaves sixty feet of climbable line hanging where nobody could have thrown a rope. |
-| `rarity_justification` | Comparable to [[Rope of Climbing]] (60 ft, anchors itself, permanent) and [[Immovable Rod]] (a fixed anchor point on command). Both are reusable. This is one shot. |
-| `attunement_reason` | A single power, spent in one shot, adding nothing to attack, damage, save, or AC rolls. No branch of the attunement tree fires. |
-| `pc_connection` | Solves [[Jean-Claude Tabarnack]]'s scouting problem: no way to bring the crew up after him. |
-| `current_holder` | [[Ettore Lupo]], in the felt-lined drawer below the counter at [[Casa Lupo]]. |
-| `narrative_hook` | Ask Ettore for a way onto something and he sells one over the counter. One still hangs off a warehouse wall in [[Le Paludi]], line and all. |
+| One thing | Fired into a wall, hull, or beam, it anchors and leaves sixty feet of climbable line hanging where nobody could have thrown a rope. |
+| Rarity justification | Comparable to [[Rope of Climbing]] (60 ft, anchors itself, permanent) and [[Immovable Rod]] (a fixed anchor point on command). Both are reusable. This is one shot. |
+| Attunement reason | A single power, spent in one shot, adding nothing to attack, damage, save, or AC rolls. No branch of the attunement tree fires. |
+| PC connection | Solves [[Jean-Claude Tabarnack]]'s scouting problem: no way to bring the crew up after him. |
+| Current holder | [[Ettore Lupo]], in the felt-lined drawer below the counter at [[Casa Lupo]]. |
+| Narrative hook | Ask Ettore for a way onto something and he sells one over the counter. One still hangs off a warehouse wall in [[Le Paludi]], line and all. |
 
 ## Mechanics
 

@@ -47,11 +47,11 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| primary_goal | Attach the thirty-second ring to an object worthy of it, the one piece that completes the collection. |
-| consistent_method | Asks a new guest to describe themselves back, then tells the history of an item that matches what they were too guarded to admit. |
-| active_problem | The locked case remains empty despite thirty-one attempts to fill it. The right object or customer has not yet arrived. |
-| performance_hooks | theatrical antiquarian vibe. Turns objects slowly in his hands while speaking, as if each rotation reveals another layer of the story. |
-| link_of_relevance | Whoever brings him a story worth a ring, a true account of loss or an object revealing its own history, draws his full attention. |
+| Primary goal | Attach the thirty-second ring to an object worthy of it, the one piece that completes the collection. |
+| Consistent method | Asks a new guest to describe themselves back, then tells the history of an item that matches what they were too guarded to admit. |
+| Active problem | The locked case remains empty despite thirty-one attempts to fill it. The right object or customer has not yet arrived. |
+| Performance hooks | theatrical antiquarian vibe. Turns objects slowly in his hands while speaking, as if each rotation reveals another layer of the story. |
+| Link of relevance | Whoever brings him a story worth a ring, a true account of loss or an object revealing its own history, draws his full attention. |
 
 **Voice & Delivery:** formal, patient, unhurried. "Every ring holds what someone loved about it and why they couldn't keep it." / "The lantern is ninety years old. Three owners, or four, have held it. The middle one left no name behind, which matters most." Never pressures a sale. Simply opens a case or picks up an object and begins. Watches what a customer says they need versus what they truly seek.
 

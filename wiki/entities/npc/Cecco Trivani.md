@@ -44,11 +44,11 @@ tier: supporting
 
 | Field | Detail |
 |---|---|
-| `primary_goal` | Get through one complete sung line, start to finish, uninterrupted. |
-| `consistent_method` | Draws the breath and opens his mouth on the first syllable, every single time, then lets the interruption stand and goes back to work without forcing the rest. |
-| `active_problem` | He has never gotten past three syllables. Something in the shop right now, a customer, a price called across the floor, a count read out loud, is one breath from cutting across him again. |
-| `performance_hooks` | Understudy-who-never-goes-on vibe. Taps the rhythm of the line he wanted against the counter while he waits for his next chance. |
-| `link_of_relevance` | None. Confirmed DM call: pure scenery, one of three supporting staff at [[Il Preludio]] with no PC hook. |
+| Primary goal | Get through one complete sung line, start to finish, uninterrupted. |
+| Consistent method | Draws the breath and opens his mouth on the first syllable, every single time, then lets the interruption stand and goes back to work without forcing the rest. |
+| Active problem | He has never gotten past three syllables. Something in the shop right now, a customer, a price called across the floor, a count read out loud, is one breath from cutting across him again. |
+| Performance hooks | Understudy-who-never-goes-on vibe. Taps the rhythm of the line he wanted against the counter while he waits for his next chance. |
+| Link of relevance | None. Confirmed DM call: pure scenery, one of three supporting staff at [[Il Preludio]] with no PC hook. |
 
 **Voice & Delivery:** earnest, always sounding one breath from starting something bigger. Speaks in short, complete bursts, like he's leaving room in the sentence for a line that never arrives. Laces his fingers at his sternum and rises onto his toes just before he means to speak. Emotional default: patient, certain his moment is coming later tonight. It never does.
 

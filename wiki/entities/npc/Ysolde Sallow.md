@@ -36,11 +36,11 @@ The draw-duel two nights back put both survivors in her chairs before the blood 
 
 | Field | Content |
 |---|---|
-| `primary_goal` | Keep The Long Toast pouring and its gallows humor carrying the honest weight the rest of Stillmere still won't, one shift at a time. |
-| `consistent_method` | Answers a straight question only after you've asked twice, pouring a drink in the gap between the first ask and the second. |
-| `active_problem` | The draw-duel left both survivors drinking at her bar within the hour, wounds unhealed and unhealable, and half the village still pretending that night proved nothing. |
-| `performance_hooks` | Weary dockside barkeep who's seen it all twice / wipes the same clean spot on the bar while she watches you decide whether she's joking. |
-| `link_of_relevance` | [[Perrin Black-Jaw]] failed an Arcana check (rolled 18, needed 22) identifying [[Shepherd Grigori]]'s necrotic healing magic in Session 03 and has suspected something's wrong ever since, without knowing what. Ysolde watched the draw-duel firsthand and isn't bound by the rest of the village's practiced silence. A conversation with her is where Perrin gets his first unvarnished account of what Otel Karn actually is. |
+| Primary goal | Keep The Long Toast pouring and its gallows humor carrying the honest weight the rest of Stillmere still won't, one shift at a time. |
+| Consistent method | Answers a straight question only after you've asked twice, pouring a drink in the gap between the first ask and the second. |
+| Active problem | The draw-duel left both survivors drinking at her bar within the hour, wounds unhealed and unhealable, and half the village still pretending that night proved nothing. |
+| Performance hooks | Weary dockside barkeep who's seen it all twice / wipes the same clean spot on the bar while she watches you decide whether she's joking. |
+| Link of relevance | [[Perrin Black-Jaw]] failed an Arcana check (rolled 18, needed 22) identifying [[Shepherd Grigori]]'s necrotic healing magic in Session 03 and has suspected something's wrong ever since, without knowing what. Ysolde watched the draw-duel firsthand and isn't bound by the rest of the village's practiced silence. A conversation with her is where Perrin gets his first unvarnished account of what Otel Karn actually is. |
 
 ## Voice & Delivery
 

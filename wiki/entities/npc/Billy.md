@@ -62,11 +62,11 @@ world, not rumor or hearsay.
 
 | Field | Value |
 |---|---|
-| primary_goal | Stop Toby and Frankie's collision before it consumes the whole island. |
-| consistent_method | Uses only one flat, absolute sentence, and only when nothing else will fix it. Then he stops talking entirely. |
-| active_problem | He doesn't know how to undo any of it, and neither does anyone else on the island. |
-| performance_hooks | The kid at the sleepover who already knows it's over. Keeps his hands jammed in his pockets so he can't gesture while he talks. |
-| link_of_relevance | Pressures [[Delmar Fisk]]'s own unresolved theft of the [[Pearl of Souls]]. Billy's plea exists only because of the [[Drowned Maw]] breach that theft is straining, entirely unknown to Delmar. |
+| Primary goal | Stop Toby and Frankie's collision before it consumes the whole island. |
+| Consistent method | Uses only one flat, absolute sentence, and only when nothing else will fix it. Then he stops talking entirely. |
+| Active problem | He doesn't know how to undo any of it, and neither does anyone else on the island. |
+| Performance hooks | The kid at the sleepover who already knows it's over. Keeps his hands jammed in his pockets so he can't gesture while he talks. |
+| Link of relevance | Pressures [[Delmar Fisk]]'s own unresolved theft of the [[Pearl of Souls]]. Billy's plea exists only because of the [[Drowned Maw]] breach that theft is straining, entirely unknown to Delmar. |
 
 **Voice & Delivery:** careful, clipped, older than his years. *Billy*: I'm not
 trying to be in charge. Somebody has to be. *Billy*: *(quiet)* I already know

@@ -36,12 +36,12 @@ _Gear ([[Lamp]]), Common._
 
 | Field | Detail |
 |---|---|
-| `one_thing` | It keeps burning underwater and through any knock a fight can give it. |
-| `rarity_justification` | Non-magical gear, a step above the [[Hooded Lantern]] (5 gp) and priced with the [[Reinforced Specimen Cage]] (60 gp). It sheds less light than [[Light]] and grants no bonus to any roll. |
-| `attunement_reason` | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
-| `pc_connection` | [[Delmar Fisk|Delmar]] does the searching, and six weeks of debris on the floor of a [[Sawek]]'s blue hole gives up nothing in the dark. |
-| `current_holder` | [[Kettil Ormsson]] keeps one lit in a bucket on the counter at [[Ormsson's Fittings]] and sells the rest off the shelf behind him. |
-| `narrative_hook` | The inter-island channel closes after dark, and everything worth finding down there sits twenty feet under it. |
+| One thing | It keeps burning underwater and through any knock a fight can give it. |
+| Rarity justification | Non-magical gear, a step above the [[Hooded Lantern]] (5 gp) and priced with the [[Reinforced Specimen Cage]] (60 gp). It sheds less light than [[Light]] and grants no bonus to any roll. |
+| Attunement reason | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
+| PC connection | [[Delmar Fisk|Delmar]] does the searching, and six weeks of debris on the floor of a [[Sawek]]'s blue hole gives up nothing in the dark. |
+| Current holder | [[Kettil Ormsson]] keeps one lit in a bucket on the counter at [[Ormsson's Fittings]] and sells the rest off the shelf behind him. |
+| Narrative hook | The inter-island channel closes after dark, and everything worth finding down there sits twenty feet under it. |
 
 ## Mechanics
 

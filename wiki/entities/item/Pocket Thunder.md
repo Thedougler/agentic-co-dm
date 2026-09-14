@@ -39,12 +39,12 @@ One of six blends sold as alchemical cigarettes in [[Calven and Calveno]], thoug
 
 | Field | Detail |
 |---|---|
-| `one_thing` | Thrown to a point, it goes off in a loud bang that blinds and deafens everyone nearby. |
-| `rarity_justification` | Comparable to Dust of Sneezing, Potion of Fire Breath. |
-| `attunement_reason` | Single use. Grants no bonus to attack, damage, saving throws, or AC rolls, and carries one power. No branch of the attunement tree fires. |
-| `pc_connection` | [[Jean-Claude Tabarnack]] already reads [[Grung]] handler stances in Calveno crowds. He knows eyes are on him. Pocket Thunder turns a crowded canal bridge into a way out, hands empty and cover intact. |
-| `current_holder` | Sold at [[La Brace]], [[La Gatta]] (reduced), and two stalls. |
-| `narrative_hook` | Bought openly at either stall, or found already on a courier or enforcer who works Calveno's crowds for a living. |
+| One thing | Thrown to a point, it goes off in a loud bang that blinds and deafens everyone nearby. |
+| Rarity justification | Comparable to Dust of Sneezing, Potion of Fire Breath. |
+| Attunement reason | Single use. Grants no bonus to attack, damage, saving throws, or AC rolls, and carries one power. No branch of the attunement tree fires. |
+| PC connection | [[Jean-Claude Tabarnack]] already reads [[Grung]] handler stances in Calveno crowds. He knows eyes are on him. Pocket Thunder turns a crowded canal bridge into a way out, hands empty and cover intact. |
+| Current holder | Sold at [[La Brace]], [[La Gatta]] (reduced), and two stalls. |
+| Narrative hook | Bought openly at either stall, or found already on a courier or enforcer who works Calveno's crowds for a living. |
 
 Comparable to [[Dust of Sneezing and Choking]] (Uncommon, thrown, area effect, Constitution save, no damage) and Potion of Fire Breath (Uncommon, single-use, area effect, [[Dexterity]] save). Pocket Thunder's effects last shorter than those items. It deals no damage. Both items work well.
 

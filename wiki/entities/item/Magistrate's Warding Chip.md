@@ -32,12 +32,12 @@ tier: supporting
 
 | | |
 |---|---|
-| `one_thing` | Once per day as a reaction, cause one divination spell or magical effect targeting you to fail automatically. |
-| `rarity_justification` | Uncommon. Comparable to [[Cloak of Protection]] (uncommon, attunement, +1 to AC and all saving throws continuously) and [[Bag of Tricks]] (uncommon, attunement, 8 charges/day varying effect). The chip lands harder in a narrower lane: 1/day hard block vs. divination only, more story weight, less combat breadth. |
-| `attunement_reason` | Grants a save-adjacent defensive benefit (automatic block of a targeted divination that would otherwise force or bypass a save), triggering the "any attack/damage/save/AC bonus" branch of the attunement decision tree. |
-| `pc_connection` | [[Perrin Black-Jaw]]. The Crown dispatch in the sealed case tracks "supernatural irregularity manifesting as arcane attunement outside standard registry." Perrin is the designated subject. The chip blocks the next scrying attempt before it resolves. |
-| `current_holder` | Mave Sorn, on her person during the [[Velvet Noose Intercept]] encounter. |
-| `narrative_hook` | Optional loot from [[Black Pennants]]: found on the Captain's person if the encounter ends in combat and she falls or submits to a search, or conceivably traded if the crew negotiates for it. The chip's absence from the figurehead creates a measurable gap in the Wardstone's coverage, detectable by any Crown diviner working at close range. She keeps her own register and will eventually come looking, with the same legally precise patience she brings to everything else. |
+| One thing | Once per day as a reaction, cause one divination spell or magical effect targeting you to fail automatically. |
+| Rarity justification | Uncommon. Comparable to [[Cloak of Protection]] (uncommon, attunement, +1 to AC and all saving throws continuously) and [[Bag of Tricks]] (uncommon, attunement, 8 charges/day varying effect). The chip lands harder in a narrower lane: 1/day hard block vs. divination only, more story weight, less combat breadth. |
+| Attunement reason | Grants a save-adjacent defensive benefit (automatic block of a targeted divination that would otherwise force or bypass a save), triggering the "any attack/damage/save/AC bonus" branch of the attunement decision tree. |
+| PC connection | [[Perrin Black-Jaw]]. The Crown dispatch in the sealed case tracks "supernatural irregularity manifesting as arcane attunement outside standard registry." Perrin is the designated subject. The chip blocks the next scrying attempt before it resolves. |
+| Current holder | Mave Sorn, on her person during the [[Velvet Noose Intercept]] encounter. |
+| Narrative hook | Optional loot from [[Black Pennants]]: found on the Captain's person if the encounter ends in combat and she falls or submits to a search, or conceivably traded if the crew negotiates for it. The chip's absence from the figurehead creates a measurable gap in the Wardstone's coverage, detectable by any Crown diviner working at close range. She keeps her own register and will eventually come looking, with the same legally precise patience she brings to everything else. |
 
 ## Mechanics
 

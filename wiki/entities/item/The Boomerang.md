@@ -37,12 +37,12 @@ One of six alchemical cigarette blends sold in [[Calven and Calveno]]. Among the
 
 | Field | Detail |
 |---|---|
-| `one_thing` | Once lit, it lets the wielder reroll their next missed ranged weapon attack against the same target. |
-| `rarity_justification` | Uncommon, comparable to Potion of Fire Breath (Uncommon, single-use consumable, no attunement, guarantees an area of fire damage on use) and [[Dust of Disappearance]] (Uncommon, single-use consumable, no attunement, guarantees invisibility for its duration). Both hand the user a certain combat benefit. The Boomerang only offers a second attempt at a roll that can still fail, so its power stays below both benchmarks. The repo's rarity budget puts anything with combat relevance at Uncommon or above, so this sits above Common despite the small effect. |
-| `attunement_reason` | Single use, grants no bonus to attack, damage, saving throws, or AC, and carries one power. The decision tree's attunement branches don't trigger. |
-| `pc_connection` | [[Jean-Claude Tabarnack]] (the cheapest blend on the board, and the one he can buy without anyone reading anything into it). He buys it for cover as much as for backup. |
-| `current_holder` | Sold from the shelf at [[La Brace]], a [[Velo Quarter]] smoking room run by [[Rufio Segalla]], the only room in Calveno licensed to burn alchemical smoke in the open. Also sold at 60 percent price (60 gp) as an unreliable second off a vending board called [[La Gatta]] on [[the Bridge]]'s bottom tier, run by [[Nicco Kettley]]. |
-| `narrative_hook` | Bought openly at either counter, or found already in the pocket of a dock crew regular who smokes it before a job. |
+| One thing | Once lit, it lets the wielder reroll their next missed ranged weapon attack against the same target. |
+| Rarity justification | Uncommon, comparable to Potion of Fire Breath (Uncommon, single-use consumable, no attunement, guarantees an area of fire damage on use) and [[Dust of Disappearance]] (Uncommon, single-use consumable, no attunement, guarantees invisibility for its duration). Both hand the user a certain combat benefit. The Boomerang only offers a second attempt at a roll that can still fail, so its power stays below both benchmarks. The repo's rarity budget puts anything with combat relevance at Uncommon or above, so this sits above Common despite the small effect. |
+| Attunement reason | Single use, grants no bonus to attack, damage, saving throws, or AC, and carries one power. The decision tree's attunement branches don't trigger. |
+| PC connection | [[Jean-Claude Tabarnack]] (the cheapest blend on the board, and the one he can buy without anyone reading anything into it). He buys it for cover as much as for backup. |
+| Current holder | Sold from the shelf at [[La Brace]], a [[Velo Quarter]] smoking room run by [[Rufio Segalla]], the only room in Calveno licensed to burn alchemical smoke in the open. Also sold at 60 percent price (60 gp) as an unreliable second off a vending board called [[La Gatta]] on [[the Bridge]]'s bottom tier, run by [[Nicco Kettley]]. |
+| Narrative hook | Bought openly at either counter, or found already in the pocket of a dock crew regular who smokes it before a job. |
 
 ## Mechanics
 

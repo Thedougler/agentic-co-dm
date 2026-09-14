@@ -30,12 +30,12 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| `one_thing` | The quiver infuses each drawn arrow with lightning. On a hit, it deals an extra 1d6 lightning damage alongside the arrow's normal damage. |
-| `rarity_justification` | Uncommon, comparable to [[Bracers of Archery]] (Uncommon, attunement, +2 damage to shortbow/longbow attacks) and a +1 weapon (Uncommon, attunement, +1 attack and damage). Avg +3.5 lightning per hit sits in the same power band. |
-| `attunement_reason` | Useful in most combats without consuming a resource. No class feature reproduced. |
-| `pc_connection` | [[Jean-Claude Tabarnack]], [[Ranger]] with [[Shortbow]] focus, affordable upgrade at current level. One attunement slot free. |
-| `current_holder` | [[Cotter Foss]] at [[Nimmik Vollask]], kept behind normal shelf stock. |
-| `narrative_hook` | Sold openly at the Vollask rail; nobody aboard explains how the gnomes charge the lining. Other items available through Cotter. |
+| One thing | The quiver infuses each drawn arrow with lightning. On a hit, it deals an extra 1d6 lightning damage alongside the arrow's normal damage. |
+| Rarity justification | Uncommon, comparable to [[Bracers of Archery]] (Uncommon, attunement, +2 damage to shortbow/longbow attacks) and a +1 weapon (Uncommon, attunement, +1 attack and damage). Avg +3.5 lightning per hit sits in the same power band. |
+| Attunement reason | Useful in most combats without consuming a resource. No class feature reproduced. |
+| PC connection | [[Jean-Claude Tabarnack]], [[Ranger]] with [[Shortbow]] focus, affordable upgrade at current level. One attunement slot free. |
+| Current holder | [[Cotter Foss]] at [[Nimmik Vollask]], kept behind normal shelf stock. |
+| Narrative hook | Sold openly at the Vollask rail; nobody aboard explains how the gnomes charge the lining. Other items available through Cotter. |
 
 ## Mechanics
 

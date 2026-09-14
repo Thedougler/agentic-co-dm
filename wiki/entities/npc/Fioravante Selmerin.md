@@ -52,11 +52,11 @@ tier: supporting
 
 | Field | Detail |
 |---|---|
-| `primary_goal` | Put Il Preludio in every mouth in Calveno as the shop a person has to see once. |
-| `consistent_method` | Builds a full setup for every item, breath and raised hand included, then talks straight through the place where the song would go. |
-| `active_problem` | The front window has stood half-dressed for nine days. He restarts the arrangement each time somebody stops to look at it. |
-| `performance_hooks` | A matinee idol demonstrating kitchenware. Draws breath on the last word of a sentence and lifts one open hand to shoulder height, then keeps talking with the hand up. |
-| `link_of_relevance` | [[Jean-Claude Tabarnack]] asked to go browse a magic shop. |
+| Primary goal | Put Il Preludio in every mouth in Calveno as the shop a person has to see once. |
+| Consistent method | Builds a full setup for every item, breath and raised hand included, then talks straight through the place where the song would go. |
+| Active problem | The front window has stood half-dressed for nine days. He restarts the arrangement each time somebody stops to look at it. |
+| Performance hooks | A matinee idol demonstrating kitchenware. Draws breath on the last word of a sentence and lifts one open hand to shoulder height, then keeps talking with the hand up. |
+| Link of relevance | [[Jean-Claude Tabarnack]] asked to go browse a magic shop. |
 
 Jean-Claude told his contact he did not know what he wanted, only that he would know it on sight. Fio's whole trade is putting an object into a browser's hands before they finish deciding.
 

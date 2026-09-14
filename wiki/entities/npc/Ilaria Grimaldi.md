@@ -37,11 +37,11 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| primary_goal | Keep the dispensary running as Kalowe's only healer's supply, protected by the fifteen-year truce she holds with the harbour bosses. |
-| consistent_method | Hears exactly what's asked and names one price without haggling. The discretionary stock only comes out once the customer's approach earns it. |
-| active_problem | A Takowan crew member came in two days ago with a hand wound and a distinctive Passage-style ring. She's told no one yet. |
-| performance_hooks | Brusque port apothecary, unimpressed by anything · keeps working the scale and mortar while she talks, doesn't look up until she names the price. |
-| link_of_relevance | Whoever asks the right way earns one of the three secrets she's currently holding: the Takowan crewman's ring, [[Sera Maddock]] dying in the back room ([[The Captain's Map]]), or the Sawek survivor's account ([[The Sawek Bounty]]). |
+| Primary goal | Keep the dispensary running as Kalowe's only healer's supply, protected by the fifteen-year truce she holds with the harbour bosses. |
+| Consistent method | Hears exactly what's asked and names one price without haggling. The discretionary stock only comes out once the customer's approach earns it. |
+| Active problem | A Takowan crew member came in two days ago with a hand wound and a distinctive Passage-style ring. She's told no one yet. |
+| Performance hooks | Brusque port apothecary, unimpressed by anything · keeps working the scale and mortar while she talks, doesn't look up until she names the price. |
+| Link of relevance | Whoever asks the right way earns one of the three secrets she's currently holding: the Takowan crewman's ring, [[Sera Maddock]] dying in the back room ([[The Captain's Map]]), or the Sawek survivor's account ([[The Sawek Bounty]]). |
 
 **Voice & Delivery:** exact and efficient, states a price once and expects payment without further explanation.
 

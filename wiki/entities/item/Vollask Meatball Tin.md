@@ -34,12 +34,12 @@ tier: supporting
 
 | Field | Detail |
 |---|---|
-| `one_thing` | Two days of rations in one tin, and they taste good — the only ship supply anyone eats by choice. |
-| `rarity_justification` | Non-magical food, a step above standard [[Rations]] (5 sp/day). No bonus to any roll; the value is caloric density and shelf life. |
-| `attunement_reason` | Non-magical consumable, no branch of the decision tree applies. |
-| `pc_connection` | Every customer of the Nimmik Vollask gets free meatballs with an order. The tins are what you pay for — expedition supply for a crew that won't see the Depot again for weeks. |
-| `current_holder` | [[Cotter Foss]] sells these from the rail of the [[Nimmik Vollask]]; the gnomes below decks make and tin them. |
-| `narrative_hook` | A tin lasts months sealed. Crews on long crossings treat them as currency when coin gets abstract. |
+| One thing | Two days of rations in one tin, and they taste good — the only ship supply anyone eats by choice. |
+| Rarity justification | Non-magical food, a step above standard [[Rations]] (5 sp/day). No bonus to any roll; the value is caloric density and shelf life. |
+| Attunement reason | Non-magical consumable, no branch of the decision tree applies. |
+| PC connection | Every customer of the Nimmik Vollask gets free meatballs with an order. The tins are what you pay for — expedition supply for a crew that won't see the Depot again for weeks. |
+| Current holder | [[Cotter Foss]] sells these from the rail of the [[Nimmik Vollask]]; the gnomes below decks make and tin them. |
+| Narrative hook | A tin lasts months sealed. Crews on long crossings treat them as currency when coin gets abstract. |
 
 ## Mechanics
 
