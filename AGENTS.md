@@ -56,7 +56,12 @@ Cut wasted context without waiting. A change MUST NOT count as an improvement if
 
 **Context waste:** max tokens on content + reasoning, not plumbing. Prefer `hot.md`, `scripts/manifest.py`, and Retrieval Primitives over whole `index.md` / `log.md` / `.manifest.json`. **Highest priority:** reconcile conflicting/redundant skill+AGENTS instructions only when surviving text keeps (or improves) agent output quality; do not thin narrative, mechanics, or craft that raises outputs. Byte-count is not a success metric. Method: `docs/agents/context-waste-method.md` (issue #71). Run `python3 scripts/context-waste-scan.py` for path+metric leads (size flags are investigation leads, not delete mandates). No prose-quality scoring.
 
-### Helpers
+#
+## Staged wiki writes
+
+When `WIKI_STAGED_WRITES=true` (default for this vault), agents MUST land new/updated category pages under `wiki/_staging/<category>/` (patches as `*.patch.md`) — not directly into the live tree. Promote only via `wiki-stage-commit` after Nick reviews. `_raw/` remains the ingest inbox; `_archive/` holds promoted sources; `_staging/` is the LLM review queue. See `.agents/skills/wiki-stage-commit/SKILL.md` and `wiki/_staging/README.md`.
+
+## Helpers
 
 **Wiki maintenance loop:** weekday Layer A scans + fleet routing — `docs/agents/wiki-maintenance-loop.md` (issue #90). Quiet when clean. Never auto lore invent, mass kebab rename, dedup merge, or craft cuts.
 
