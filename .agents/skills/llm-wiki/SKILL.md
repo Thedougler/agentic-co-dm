@@ -482,7 +482,7 @@ Reading the vault is the dominant cost of every read-side skill. Use the cheapes
 
 **Why this matters:** a 20-page vault lets you get away with full-vault scans. A 200-page vault does not. The primitives above are how the skills framework scales to large vaults without a database.
 
-Skills that consume this table: `wiki-query`, `cross-linker`, `wiki-lint`, `wiki-status` (insights mode). Any new skill that reads the vault should cite this section rather than reinvent the pattern. Anti-patterns (full manifest/index/log loads, oversized skill/page dumps) are scanned by `scripts/context-waste-scan.py` once present — see `docs/agents/context-waste-method.md`. Do not load those wholesale into chat.
+Skills that consume this table: `wiki-query`, `cross-linker`, `wiki-lint`, `wiki-status` (insights mode). Any new skill that reads the vault should cite this section rather than reinvent the pattern. Anti-patterns (full manifest/index/log loads, oversized skill/page dumps) are scanned by `scripts/context-waste-scan.py` — see `docs/agents/context-waste-method.md`. Do not load those wholesale into chat.
 
 ## QMD Index Freshness
 
