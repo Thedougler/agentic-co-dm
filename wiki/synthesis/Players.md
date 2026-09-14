@@ -36,7 +36,7 @@ Chad's campaign and character roster at the table, tracked across the Shattered 
 
 | Campaign | Character | Status |
 |---|---|---|
-| [[The Shattered Sea]] | [[Jean-Claude Tabarnack]] | active |
+| [[Shattered Sea]] | [[Jean-Claude Tabarnack]] | active |
 
 ## Notes
 
@@ -50,7 +50,7 @@ No additional notes.
 
 | Campaign | Character | Status |
 |---|---|---|
-| [[The Shattered Sea]] | [[Crissdalynn Khinriss]] | active |
+| [[Shattered Sea]] | [[Crissdalynn Khinriss]] | active |
 
 ## Notes
 
@@ -66,7 +66,7 @@ A real-world player's campaign/character roster.
 
 | Campaign | Character | Status |
 |---|---|---|
-| [[The Shattered Sea]] | [[Delmar Fisk]] | active |
+| [[Shattered Sea]] | [[Delmar Fisk]] | active |
 
 ## Notes
 
@@ -80,7 +80,7 @@ No additional notes.
 
 | Campaign | Character | Status |
 |---|---|---|
-| [[The Shattered Sea]] | [[Perrin Black-Jaw]] | active |
+| [[Shattered Sea]] | [[Perrin Black-Jaw]] | active |
 
 ## Notes
 
@@ -94,7 +94,7 @@ No additional notes.
 
 | [[Campaign]] | Character | Status |
 |---|---|---|
-| [[The Shattered Sea]] | — | DM |
+| [[Shattered Sea]] | — | DM |
 
 ## Notes
 

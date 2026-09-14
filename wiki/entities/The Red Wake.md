@@ -22,7 +22,7 @@ tier: supporting
 ---
 # The Red Wake
 
-*[[Umberlee]] registers [[Delmar Fisk|Delmar]]'s first crossing away from [[The Drowned Maw]], one week after commanding him through [[Branca]] to retrieve the [[Pearl of Souls]]. Her response escalates across the [[Midchain]] through weather, [[Dead Lady]] glimpses, and boats taken whole in the party's wake.*
+*[[Umberlee]] registers [[Delmar Fisk|Delmar]]'s first crossing away from [[Drowned Maw]], one week after commanding him through [[Branca]] to retrieve the [[Pearl of Souls]]. Her response escalates across the [[Midchain]] through weather, [[Dead Lady]] glimpses, and boats taken whole in the party's wake.*
 
 ## Actors
 
@@ -49,8 +49,8 @@ How can a mortal defy a god?
 
 ### Current State
 
-- Delmar departed [[La Vasca]] heading into the Midchain, not toward [[The Drowned Maw]].
-- One week since Umberlee commanded retrieval through [[Branca]] at the [[Calveno]] shrine.
+- Delmar departed [[La Vasca]] heading into the Midchain, not toward [[Drowned Maw]].
+- One week since Umberlee commanded retrieval through [[Branca]] at the [[Calven and Calveno]] shrine.
 - Three weeks since the Pearl theft and the fleet's destruction.
 - The Dead Lady is active behind the party's route, taking boats on lanes they have sailed.
 - Dock talk about boats found empty — the [[Taken Whole|"taken whole"]] pattern — circulates at Midchain ports. No one connects it to Delmar yet.

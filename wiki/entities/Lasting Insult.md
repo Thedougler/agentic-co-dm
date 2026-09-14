@@ -26,12 +26,12 @@ tier: supporting
 
 A weathered courier-rigged sloop, long impounded and wearing three years of neglect.
 
-*Sloop (courier-rigged) · Tier 1 · [[Port Tidefall]].*
+*Sloop (courier-rigged) · Tier 1 · [[Calder's Tooth and Port Tidefall]].*
 
 > [!narration] Narration
 > A courier-rigged sloop sits tied off in South Harbour Impound, looking abandoned at a glance. Paint peels in strips along the waterline. The figurehead has weathered to featureless wood. Years of repairs mark the rigging, each patch from different hands. Gun mounts sit empty on the rail. Beneath the paint at the bow, an older name still ghosts through: *Tessarine Grace*.
 
-The *Lasting Insult* sits impounded at [[South Harbour]] in [[Port Tidefall]], third pier from the end, for three years now. No colors fly from her mast. Her hull is sound but worn. Tired rigging has slowed her top speed until she gets refitted. Clearing debts and berthing fees costs 374 gp total.
+The *Lasting Insult* sits impounded at [[South Harbour]] in [[Calder's Tooth and Port Tidefall]], third pier from the end, for three years now. No colors fly from her mast. Her hull is sound but worn. Tired rigging has slowed her top speed until she gets refitted. Clearing debts and berthing fees costs 374 gp total.
 
 A Tier 1 sloop with a courier hull: fast for her size, low-profile, and light on cargo. She looks rougher than she is. The hull is sound, the sails are usable, and two functional cannons remain aboard unmounted in the hold.
 
@@ -73,7 +73,7 @@ No standing crew established. The ship has sat impounded and unmanned for three 
 
 ## Connections
 
-- [[Port Tidefall]]: home port, impounded at [[South Harbour]].
+- [[Calder's Tooth and Port Tidefall]]: home port, impounded at [[South Harbour]].
 - [[Harbourmaster's Office]]: holds the impound paperwork and lists the 374 gp release.
 - [[Hook & Ledger]]: source lists this as a connection with no further context given.
 

@@ -31,7 +31,7 @@ visibility: dm
 
 **Roleplay Concept:** an armless goblin animal dealer who does everything, gesturing, smoking, doodling, with his feet, and never treats the absence of his arms as anything but a fact of doing business.
 
-**Lore Sheet:** runs [[Zort's Pits]] in [[Le Paludi]], a fenced dirt pit of cages holding exotic and working animals. Calls himself the animal expert in [[Calveno]] and has a contact who supplies most of his reptiles from the Mid-Chain. Offered to pass that contact's name to [[Catarina Da'Virelli|Catarina]] in exchange for a prosthetic leg built to his measurements.
+**Lore Sheet:** runs [[Zort's Pits]] in [[Le Paludi]], a fenced dirt pit of cages holding exotic and working animals. Calls himself the animal expert in [[Calven and Calveno]] and has a contact who supplies most of his reptiles from the Mid-Chain. Offered to pass that contact's name to [[Catarina Da'Virelli|Catarina]] in exchange for a prosthetic leg built to his measurements.
 
 ## Connections
 

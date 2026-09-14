@@ -22,7 +22,7 @@ tier: supporting
 ---
 # Oil of Still Water
 
-A clear oil for wounds. Stops bleeding in 10 minutes and stops scars. Does not help deep cuts. Sold by [[Studio Orsini]] in [[Calveno]].
+A clear oil for wounds. Stops bleeding in 10 minutes and stops scars. Does not help deep cuts. Sold by [[Studio Orsini]] in [[Calven and Calveno]].
 
 _Consumable, Uncommon._
 

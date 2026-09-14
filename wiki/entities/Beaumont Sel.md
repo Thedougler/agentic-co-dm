@@ -114,8 +114,8 @@ The Salvaged [[Antheri]] Plate patched into his shell throws off ranged attacks 
 His real weapon is [[Bisou]]: he throws her, hands her things, and trusts her to deliver.
 
 - **The [[Kalowe]] Maneuver** lobs a potion of healing alongside her to a downed ally, who gets it emptied straight into their mouth.
-- **The [[Calveno]] Maneuver** sends her with an alchemical item up to 60 ft. She plants it and triggers it remotely.
-- **The [[Tidefall]] Maneuver** sends her to soak an exposed black powder supply so it won't fire.
+- **The [[Calven and Calveno]] Maneuver** sends her with an alchemical item up to 60 ft. She plants it and triggers it remotely.
+- **The [[Calder's Tooth and Port Tidefall]] Maneuver** sends her to soak an exposed black powder supply so it won't fire.
 
 All three depend on Bisou being conscious and reachable, most often his shoulder, and each returns her to him by the start of his next turn.
 
@@ -129,7 +129,7 @@ All three depend on Bisou being conscious and reachable, most often his shoulder
 - [[Jean-Claude Tabarnack]] (given the Truth Stone).
 - [[Nona Black-Jaw]] (passed on her message about her lost grandson). She believed someone had already sent [[Anzolo]].
 
-- [[Saltwright]], [[Kalowe]], [[Midchain]] (his merchant brig running the eleven-year Midchain route out of Kalowe). He read the weather toward [[Calveno]] the morning it departed.
+- [[Saltwright]], [[Kalowe]], [[Midchain]] (his merchant brig running the eleven-year Midchain route out of Kalowe). He read the weather toward [[Calven and Calveno]] the morning it departed.
 - Crew: [[Lenne Vor]] (navigator), [[Drav Holke]] (bosun), [[Wessa]] (cook), [[Fen]] (ordinary sailor).
 
 ## Session Log

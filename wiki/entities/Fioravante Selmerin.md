@@ -22,7 +22,7 @@ tier: supporting
 ---
 # Fioravante Selmerin
 
-**Wants:** [[Il Preludio]]'s name in every mouth in [[Calveno]]. The front window has stood half-dressed for nine days because he stops to introduce it to whoever walks past.
+**Wants:** [[Il Preludio]]'s name in every mouth in [[Calven and Calveno]]. The front window has stood half-dressed for nine days because he stops to introduce it to whoever walks past.
 
 **Quote:** "There comes a moment when a shelf finally speaks to a customer, and the lamp oil's gone up a copper again, did I mention?"
 

@@ -31,11 +31,11 @@ tier: supporting
 | ----------- | ---------------------------------------------- |
 | **Species** | [[Halfling]]                                        |
 | **Role**    | Co-proprietor, [[Al Fondale]] (front of house; husband [[Aldo Riva|Aldo]] runs the kitchen) |
-| **Location**| [[Al Fondale]], [[Le Paludi]], [[Calveno]]         |
+| **Location**| [[Al Fondale]], [[Le Paludi]], [[Calven and Calveno]]         |
 
 Halfling, white-haired, barely clears the tabletops. Moves between them with the economy of someone who stopped thinking about the route twenty years ago. Hands are flour-dusted in the morning, oil-stained in the evening. Wears an apron faded pale from decades of washing. Says *caro* to everyone regardless of gender, age, or threat level. Speaks in short declarative sentences. Does not repeat herself. Puts food on the table before asking what you want, then looks at you with the expression of someone who already knows the answer is yes.
 
-Bice Riva runs [[Al Fondale]] in [[Calveno]]'s [[Le Paludi]] district alongside her husband [[Aldo Riva|Aldo]], who runs the kitchen. She has lived in Le Paludi her entire life. She bought in with money she does not discuss the provenance of. She has seen the district change around her and the canal in front of her stay the same.
+Bice Riva runs [[Al Fondale]] in [[Calven and Calveno]]'s [[Le Paludi]] district alongside her husband [[Aldo Riva|Aldo]], who runs the kitchen. She has lived in Le Paludi her entire life. She bought in with money she does not discuss the provenance of. She has seen the district change around her and the canal in front of her stay the same.
 
 She is not a member of [[The Passage]]. She has known about the [[Warren]] entrance in her cellar for two years, when [[Nona Black-Jaw]] arranged it. The conversation was short. Bice asked no questions and no one has asked her to do anything beyond maintaining the appearance of a normal cellar, which she does by stocking it with wine and root vegetables and using it constantly. She is not brave about this. She is simply old enough that the arithmetic of risk looks different than it did at thirty.
 
@@ -74,4 +74,4 @@ She has not yet told Nona about a man who has taken the corner table three eveni
 - [[The Passage]]: not a member; knows of it, keeps its secret
 - [[Warren|The Warren]]: cellar entrance in Al Fondale connects to it
 - [[Al Fondale]]: the tavern she co-owns and runs
-- [[Le Paludi]], [[Calveno]]: home district and city
+- [[Le Paludi]], [[Calven and Calveno]]: home district and city

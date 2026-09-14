@@ -38,6 +38,6 @@ tier: supporting
 
 ## Provenance
 
-[[Delmar Fisk]] recovered it from the crater in [[Mercatura]], [[Calveno]]'s trading district, in the fight against [[Otar the Foul]] (Session 07), confirmed magical and seemingly indestructible, and carried it out in [[Catarina Da'Virelli|Catarina]]'s borrowed [[Bag of Holding]]. Identify in Session 08 confirmed it's the fleet commander's chair ([[Transcript]]). It now sits aft aboard the *[[Uncertainty]]*, in the space that was once the captain's cabin.
+[[Delmar Fisk]] recovered it from the crater in [[Mercatura]], [[Calven and Calveno]]'s trading district, in the fight against [[Otar the Foul]] (Session 07), confirmed magical and seemingly indestructible, and carried it out in [[Catarina Da'Virelli|Catarina]]'s borrowed [[Bag of Holding]]. Identify in Session 08 confirmed it's the fleet commander's chair ([[Transcript]]). It now sits aft aboard the *[[Uncertainty]]*, in the space that was once the captain's cabin.
 
 Underneath the shape it holds, it's an [[Elder Mimic]], patient enough to keep this form indefinitely.

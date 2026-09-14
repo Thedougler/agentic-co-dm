@@ -24,7 +24,7 @@ tier: supporting
 
 ![[reginald-fenn-banner]]
 
-Elf, he/him. Chart clerk at the [[Harbourmaster's Office]] in [[Port Tidefall]]. Mild and calm. Patient in a way that only makes sense once you know how long he has worked here.
+Elf, he/him. Chart clerk at the [[Harbourmaster's Office]] in [[Calder's Tooth and Port Tidefall]]. Mild and calm. Patient in a way that only makes sense once you know how long he has worked here.
 
 He surveyed parts of [[Crown Islands|the Crown Islands]] and [[Central Strait]] routes himself. He calls this time the "fieldwork years." He enjoyed it then and feels at home in his desk job now.
 

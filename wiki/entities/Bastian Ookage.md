@@ -31,7 +31,7 @@ tier: supporting
 
 Tall and commanding, he takes up space on purpose. Dark loose hair surrounds a face that shows every emotion without apology, bearing scars on his jaw and forearm that are old, settled, and never explained. He prizes the mystery and relishes making an entrance, working to dominate every scene.
 
-Bastian captained the *Loud Argument*, the fleet's dedicated fighter built for close engagement. Bow chasers were always pointed ahead. He commanded the distraction team at the main entrance during the shrine operation. He endured bombardment while suppressing spells and triggering traps. His job was to be impossible to ignore, and he was good at it. He drowned at [[The Drowned Maw]] when [[Umberlee]] closed the water over all five ships. Umberlee pressed his soul into Delmar at the moment he sank.
+Bastian captained the *Loud Argument*, the fleet's dedicated fighter built for close engagement. Bow chasers were always pointed ahead. He commanded the distraction team at the main entrance during the shrine operation. He endured bombardment while suppressing spells and triggering traps. His job was to be impossible to ignore, and he was good at it. He drowned at [[Drowned Maw]] when [[Umberlee]] closed the water over all five ships. Umberlee pressed his soul into Delmar at the moment he sank.
 
 Born to the Lizardfolk community of the [[Midchain]]. Warm-blooded traders see themselves in this place, but he does not. See Lizardfolk § Midchain culture.
 

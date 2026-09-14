@@ -32,7 +32,7 @@ Not revealed to the party: the fleet's ship names and captains are a secret held
 
 Fourth ship of [[Fisk's Fleet]]. Mid-sized and without distinguishing characteristics, the Fernen was a working ship fitted for long-range independent operation. Below decks featured crew quarters, a compact galley, a hold fitted for extended provisions, an oversize water cistern, and a navigator's station charting the full eastern Scatter.
 
-Lost with the rest of Fisk's Fleet when [[Umberlee]] opened the [[The Drowned Maw]] beneath them. All hands lost. See [[Fisk's Fleet]] for the full account of the sinking.
+Lost with the rest of Fisk's Fleet when [[Umberlee]] opened the [[Drowned Maw]] beneath them. All hands lost. See [[Fisk's Fleet]] for the full account of the sinking.
 
 ## Stats & Combat
 
@@ -49,5 +49,5 @@ Lost with the rest of Fisk's Fleet when [[Umberlee]] opened the [[The Drowned Ma
 
 - [[Fisk's Fleet]]: fleet
 - [[Delmar Fisk]]: fleet admiral
-- [[The Drowned Maw]]: sinking site
+- [[Drowned Maw]]: sinking site
 - [[Red Lady]], Fisk's flagship, lost the same night

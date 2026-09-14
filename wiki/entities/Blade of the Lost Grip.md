@@ -52,4 +52,4 @@ tier: supporting
 
 ## Provenance
 
-Sold by [[Lavinia Sordi]] from her rack at [[La Cenere]] in [[Le Paludi]], [[Calveno]], for 180 gp. The price is low for a +1 weapon. Per her own comment: "a legitimate dealer would charge five hundred. I am not a legitimate dealer." It never came up at the table (Session 8): it sat on the rack unmentioned.
+Sold by [[Lavinia Sordi]] from her rack at [[La Cenere]] in [[Le Paludi]], [[Calven and Calveno]], for 180 gp. The price is low for a +1 weapon. Per her own comment: "a legitimate dealer would charge five hundred. I am not a legitimate dealer." It never came up at the table (Session 8): it sat on the rack unmentioned.

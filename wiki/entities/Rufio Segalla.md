@@ -25,14 +25,14 @@ tier: supporting
 **Wants:** a licence that reaches past the Velo bridges so a second room can open in the [[Mercatura]], while the Concordat presses him for the one thing his business cannot produce.
 
 > [!narration] Narration
-> La Brace holds the only open-burn licence in [[Calveno]], and you can tell from the doorway. The air inside moves in slow visible sheets between the curtained booths, and the smell of scorched leaf sits thick enough to taste. Lanterns hang at four heights and not one of them is bright.
+> La Brace holds the only open-burn licence in [[Calven and Calveno]], and you can tell from the doorway. The air inside moves in slow visible sheets between the curtained booths, and the smell of scorched leaf sits thick enough to taste. Lanterns hang at four heights and not one of them is bright.
 >
 > Dark hair cut close to the skull, a broad face with a sharp scar line through one temple. He moves between the couches in shirtsleeves rolled to the elbow, unhurried. Small burns mark his forearms, each one healed in a different pattern, recording years of finishing work. His hands show calluses stained in different shades from the compounds he's used.
 >
 > He crosses the floor with a lit taper already in his hand, stepping over outstretched legs without once looking down. He does not smoke. Instead, he holds the flame at full arm's stretch and watches your face while you draw. When you exhale, he pulls a pocketbook from his vest and writes something inside. Then he turns a page.
 
 
-Rufio runs [[La Brace]] in the [[Velo Quarter]] of [[Calveno]], the only room in the city where alchemical smoke burns in the open and no one writes it down. City authority stops at the Velo bridges, and his entire trade sits in that gap.
+Rufio runs [[La Brace]] in the [[Velo Quarter]] of [[Calven and Calveno]], the only room in the city where alchemical smoke burns in the open and no one writes it down. City authority stops at the Velo bridges, and his entire trade sits in that gap.
 
 He buys base compound from [[Studio Orsini]] by standing order and finishes the blends himself in the back. The shelf holds the blends a customer buys in front of witnesses. He rolls the rest to order, after an hour on a couch, for someone whose face he already knows.
 

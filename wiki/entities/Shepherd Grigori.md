@@ -39,7 +39,7 @@ relationships:
 
 *Grigori*: "Anyone who wants off at the next port walks free."
 
-Grigori is a wandering holy man and healer working the noble courts of [[Crown Islands|the Crown Islands]], curing heirs of diseases and wounds past cure. Poison, drowning, and worse have all failed to kill him, and those he heals rarely ask how. He never sleeps. Check on him at any hour and he's awake. He prays at 3 a.m. in a strange tongue, and if caught at it, he finishes calmly and faces whoever's watching. He is currently in [[Calveno]] on business of his own, expected to take one to two weeks, and hasn't shared with the Surety's crew what he knows about Crown politics or what his magic actually is.
+Grigori is a wandering holy man and healer working the noble courts of [[Crown Islands|the Crown Islands]], curing heirs of diseases and wounds past cure. Poison, drowning, and worse have all failed to kill him, and those he heals rarely ask how. He never sleeps. Check on him at any hour and he's awake. He prays at 3 a.m. in a strange tongue, and if caught at it, he finishes calmly and faces whoever's watching. He is currently in [[Calven and Calveno]] on business of his own, expected to take one to two weeks, and hasn't shared with the Surety's crew what he knows about Crown politics or what his magic actually is.
 
 Grigori is in truth an undead sorcerer, shepherd of the [[Khlysty]], a secret mystical flock threaded through Dravosi and Tessarine noble courts. His healing is real and complete, but it also binds the patient as an unwitting phylactery thread, and as long as a bound heir lives, he cannot be permanently destroyed. The binding happens without the patient's knowledge, and his warmth toward them is entirely authentic. CHA 21 is not an act. He sees himself as a benefactor and savior to the people he heals. The binding began by accident, when healing a noble gutted in a duel, he transfused his own blood out of necessity and afterward found he could sense that noble's presence and nudge them. His blood, alive in someone else's body, kept a thread back to him. This is the source of the necrotic, blood-aspected magic that failed [[Perrin Black-Jaw|Perrin]]'s Arcana check. Each thread dilutes generation to generation unless refreshed with a light-touch renewal (a courtesy visit, a small kindness), well short of the drastic Heir ritual a [[Hierarch]] needs once a line goes cold for centuries, a threshold Grigori has never approached with only two confirmed binds. He believes himself the only being alive who has ever found this trick. Nothing has ever put that belief to the test.
 
@@ -115,7 +115,7 @@ Against a level-4 crew, CR 19 makes a real fight a death scenario. It's one he d
 
 - [[Khlysty]]. Shepherd source of his healing.
 
-- [[Calveno]]. Current destination for his business.
+- [[Calven and Calveno]]. Current destination for his business.
 
 - [[Rupert Knighton]]. Warned the crew about him.
 

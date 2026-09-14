@@ -39,7 +39,7 @@ relationships:
 | **Location**  | [[Warren|The Warren]] (held prisoner, Session 04)     |
 | **Status**    | Cooperating captive, traded intel for one month's protection |
 
-Green-caste [[Grung]] laborer caught in the [[Calveno]] sewers during the Grung bombing investigation. Someone hired him for the work. He is not ideological, just terrified and willing to cooperate with his captors. He is no leader.
+Green-caste [[Grung]] laborer caught in the [[Calven and Calveno]] sewers during the Grung bombing investigation. Someone hired him for the work. He is not ideological, just terrified and willing to cooperate with his captors. He is no leader.
 
 Interrogated in exchange for one month of protection, he revealed the bombing plot. Underground points held black-powder scaffolding against the sewers. Purple-caste garrisons with red-caste leaders stood at each site. Ships carried in the powder. They planned to strike during the festival.
 
@@ -59,7 +59,7 @@ This is a discarded DM prep concept. It describes a [[Vaka]] elder and Karath de
 
 **Voice:** soft and reedy, he pauses like Kermit before hard truths ("Well… yeah. That's the thing") and speaks "we" more than "I." He clears his throat when nervous. Only when scared or caught off [[Guard]] does he speak for himself alone. His surface reads as warm, earnest, and overwhelmed. When danger threatens someone he protects, he stills and focuses. He knows how to make things explode, yet chooses not to.
 
-**Karath defection:** green caste. He defected from Karath eight years ago, using homemade explosives to destroy [[Grung]] raiding groups in careful, deliberate work he never discussed. The Karath Gold know who did it, yet they have not found him. From a fish stall at [[Fare I'a]] in [[Port Tidefall]], he built the [[Vaka]] (Grung defectors and freed slaves) one conversation at a time.
+**Karath defection:** green caste. He defected from Karath eight years ago, using homemade explosives to destroy [[Grung]] raiding groups in careful, deliberate work he never discussed. The Karath Gold know who did it, yet they have not found him. From a fish stall at [[Fare I'a]] in [[Calder's Tooth and Port Tidefall]], he built the [[Vaka]] (Grung defectors and freed slaves) one conversation at a time.
 
 **What he knows:** each Verdant Tooth island's Gold caste runs itself. They conflict with each other. They hide truth from lower castes so clans look unified. [[Jean-Claude Tabarnack|Jean-Claude]] doesn't know this. Threat to the [[Vaka]] shows the violence he will not use.
 
@@ -79,7 +79,7 @@ No stats given in source.
 **Prep profile (unconfirmed, discarded continuity):**
 
 - [[Jean-Claude Tabarnack]] is a key [[Vaka]] contact in the prep framing. His exile makes him a natural connection. We know [[Simone Tabarnack]] only through J.C.'s profile.
-- An elder and primary organizer lead the [[Vaka]]. [[Fare I'a]] operates the stall at [[Port Tidefall]] (prep location).
+- An elder and primary organizer lead the [[Vaka]]. [[Fare I'a]] operates the stall at [[Calder's Tooth and Port Tidefall]] (prep location).
 - [[Karath]] is the origin island. The Gold there know what he did.
 
 ## Session Log

@@ -26,7 +26,7 @@ tier: supporting
 
 ## The Culture
 
-Teams design elaborate public hoaxes and execute them on willing marks across five days in [[Calveno]]. [[Shepherd Grigori]] left the crew of the [[Uncertainty]] to attend festival business as soon as the ship reached [[Calveno]], recorded in [[S05 Recap]].
+Teams design elaborate public hoaxes and execute them on willing marks across five days in [[Calven and Calveno]]. [[Shepherd Grigori]] left the crew of the [[Uncertainty]] to attend festival business as soon as the ship reached [[Calven and Calveno]], recorded in [[S05 Recap]].
 
 Registration is tomorrow morning from wherever the crew currently stands in the city. Legendary-scale declarations are already expected this year, so this year's pool should run large.
 

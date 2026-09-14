@@ -33,7 +33,7 @@ tier: supporting
 
 _Consumable, Uncommon._
 
-One of six blends of alchemical cigarettes sold in [[Calveno]]. Hunter's Blend is a bounty hunter's tool, built to turn a dropped trace into a heading.
+One of six blends of alchemical cigarettes sold in [[Calven and Calveno]]. Hunter's Blend is a bounty hunter's tool, built to turn a dropped trace into a heading.
 
 | Field | Detail |
 |---|---|

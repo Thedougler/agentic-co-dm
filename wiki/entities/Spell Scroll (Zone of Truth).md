@@ -30,7 +30,7 @@ _Scroll, Uncommon._ A _[[Spell Scroll]]_ bears the words of a single spell, writ
 
 If the spell is on your spell list but of a higher level than you can normally cast, you make an ability check using your spellcasting ability to determine whether you cast the spell. The DC equals 10 plus the spell's level. On a failed check, the spell disappears from the scroll with no other effect.
 
-For this 2nd-level [[spell scroll]], the spell uses a saving throw DC of **13** and has an attack bonus of **+5**. This scroll holds [[Zone of Truth]]. Harbor magistrates and merchants settling disputes favor scrolls like this one, now that every faction in [[Calveno]] seems to be showing up asking questions.
+For this 2nd-level [[spell scroll]], the spell uses a saving throw DC of **13** and has an attack bonus of **+5**. This scroll holds [[Zone of Truth]]. Harbor magistrates and merchants settling disputes favor scrolls like this one, now that every faction in [[Calven and Calveno]] seems to be showing up asking questions.
 
 ## Provenance
 

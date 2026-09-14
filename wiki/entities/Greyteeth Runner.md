@@ -29,7 +29,7 @@ tier: supporting
 > swivel gun sits on each side, four sweep oars rest inside the hull, and
 > nothing aboard suggests comfort or prestige.
 
-The *Greyteeth Runner* is a Tier 1 reef runner for sale in [[Port Tidefall]] harbour. Built by the Island Council for [[Midchain]] work, she trades guns and comfort for speed and nimble handling.
+The *Greyteeth Runner* is a Tier 1 reef runner for sale in [[Calder's Tooth and Port Tidefall]] harbour. Built by the Island Council for [[Midchain]] work, she trades guns and comfort for speed and nimble handling.
 
 The hull shows wear but remains sound. Visible patches mark the port bow, and seams need re-caulking. The deck is open aft with no cabin. Belowdecks holds crew and cargo in one space with hammock hooks, two hatches, and a minimal [[Galley]].
 
@@ -90,7 +90,7 @@ No standing crew established. This hull operates on a skeleton crew and runs fin
 
 Below is how this vessel connects to Port Tidefall, [[Midchain]], the Tessarine Concordat, and the Dravosi Crown.
 
-- [[Port Tidefall]]: home port. Currently listed for sale here through the
+- [[Calder's Tooth and Port Tidefall]]: home port. Currently listed for sale here through the
   Commission Board.
 - [[Midchain]]: the reef region this sloop handles best.
 - [[Tessarine Concordat]]: no registry held with this vessel.

@@ -28,7 +28,7 @@ tier: supporting
 | ------------- | --------------------------------------------------------------- |
 | **Species**   | [[Gnome]]                                                            |
 | **Pronouns**  | he/him                                                           |
-| **Location**  | [[Cabinet of Morsani]], [[Calveno]]  |
+| **Location**  | [[Cabinet of Morsani]], [[Calven and Calveno]]  |
 | **Role**      | Curio dealer                                                     |
 
 **Wants:** to complete a collection by placing each object in the right hands, then own the final piece that makes the set whole.
@@ -68,7 +68,7 @@ No stats given in source.
 ## Connections
 
 - [[Cabinet of Morsani]]: proprietor
-- [[Calveno]]: his shop sits in the Velo Quarter
+- [[Calven and Calveno]]: his shop sits in the Velo Quarter
 
 ## Session Log
 

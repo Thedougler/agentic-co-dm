@@ -44,7 +44,7 @@ _[[Weapon]] (Arrow), Uncommon._
 | `attunement_reason` | A lone power, gone in one shot, adding nothing to attack, damage, save, or AC rolls. The attunement tree never opens. |
 | `pc_connection` | Removes a watcher's sightline without giving [[Jean-Claude Tabarnack|Jean-Claude]] a target. |
 | `current_holder` | [[Ettore Lupo]], in the drawer beneath the till at [[Casa Lupo]]. |
-| `narrative_hook` | Anybody in [[Calveno]] whose work depends on nobody following them home carries two or three of these. |
+| `narrative_hook` | Anybody in [[Calven and Calveno]] whose work depends on nobody following them home carries two or three of these. |
 
 [[Jean-Claude Tabarnack]] fights and moves at range, and every plan of his fails the moment somebody watching a bridge can still see him. This is the only thing in his quiver that takes the watcher's eyes away without giving them a body to chase.
 

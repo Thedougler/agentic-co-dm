@@ -58,4 +58,4 @@ Toby and Frankie collide again over a fresh slight. A public place on Halewick c
 - [[Toby]], [[Frankie]], and [[Billy]] own the active child-actors and their fronts.
 - [[Word from Halewick]] owns the rumour version that can draw outside attention.
 - [[The Isle of Cursed Speech]] holds the wider island premise and unresolved cause.
-- [[Delmar Fisk]], [[Pearl of Souls]], and [[The Drowned Maw]] connect the island to Delmar's unresolved Pearl pressure.
+- [[Delmar Fisk]], [[Pearl of Souls]], and [[Drowned Maw]] connect the island to Delmar's unresolved Pearl pressure.

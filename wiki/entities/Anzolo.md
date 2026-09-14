@@ -33,7 +33,7 @@ tier: supporting
 |              |                              |
 | ------------ | ---------------------------- |
 | **Species**  | Tortle                       |
-| **Location** | [[Calveno]]          |
+| **Location** | [[Calven and Calveno]]          |
 | **Role**     | Vigilante, underground ally  |
 
 A tortle fixer and enforcer for the [[Black-Jaw Run]], trusted by The Tangle and working through the Warren to handle whatever [[Nona Black-Jaw|Nona]] needs found or handled outside its walls.
@@ -44,7 +44,7 @@ He works as a fixer and enforcer for the Black-Jaw Run, operating from the [[War
 
 Anzolo is at sea hunting [[Perrin Black-Jaw|Perrin]] on old orders, though Nona sent a call-off through [[Enzo]] that hasn't reached him yet. At an eastern port, he asked about Black-Jaw crew, and a Tessarine informant spotted him in the act. Now a Tessarine patrol knows his description and heading, and he remains unaware of the [[Tail]] behind him.
 
-The call-off reached his last port too late, as he had moved on toward [[Calveno]] and will arrive within a day. He doesn't know the search is over or that a Tessarine patrol tracks him from behind. If he arrives with the Tail still following, he could lead them to [[The Passage]]'s safe house and expose it just as Nona faces the [[Grung]] bombing crisis. Source: `situations/active/nona-and-anzolo.md` (shattered-sea legacy wiki, Sessions 03-04 World Updates); kept as a projection pending session-file ingestion, not asserted as confirmed play-canon.
+The call-off reached his last port too late, as he had moved on toward [[Calven and Calveno]] and will arrive within a day. He doesn't know the search is over or that a Tessarine patrol tracks him from behind. If he arrives with the Tail still following, he could lead them to [[The Passage]]'s safe house and expose it just as Nona faces the [[Grung]] bombing crisis. Source: `situations/active/nona-and-anzolo.md` (shattered-sea legacy wiki, Sessions 03-04 World Updates); kept as a projection pending session-file ingestion, not asserted as confirmed play-canon.
 
 **Roleplay Concept:** veteran tortle enforcer, the Warren's specialist for work outside its walls.
 

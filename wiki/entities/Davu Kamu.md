@@ -24,7 +24,7 @@ tier: supporting
 
 Mixed [[Midchain]] heritage, late thirties. Former first mate of the *Cormorant*, a merchant sloop that went down three months ago. He survived the wreck. The captain did not. He drinks steadily and speaks carefully, guarded about what he shares. He's been at [[The Flat Water]] two months with his savings spent. Now he offers 30% of wreck salvage and holds the captain's strongbox key.
 
-He has not mentioned that the captain's widow in [[Tidefall]] has a legal claim to the strongbox's contents. He is underselling the rubies inside it.
+He has not mentioned that the captain's widow in [[Calder's Tooth and Port Tidefall]] has a legal claim to the strongbox's contents. He is underselling the rubies inside it.
 
 **Davu Kamu (confronted about the rubies' true worth):** "I needed someone to say yes."
 

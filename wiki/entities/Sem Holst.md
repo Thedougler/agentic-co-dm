@@ -67,7 +67,7 @@ Wikilinks withheld for entities without a landed page yet (see this queue's `## 
 - [[Barnaby Rook]]: former captain of the HCS Surety, under whom he formerly served.
 - [[Geoffrey Draves]]: now his apprentice, post-refit. They worked side by side at the time of capture with no rivalry over the reporting line.
 - [[Jean-Claude Tabarnack]]: worked the hull with him during the five-day crossing to Calveno, Session 03.
-- [[Calveno]]: where the crew put in. His dry-dock keel-timber find happened here.
+- [[Calven and Calveno]]: where the crew put in. His dry-dock keel-timber find happened here.
 
 ## Session Log
 

@@ -34,7 +34,7 @@ A two-masted, privateer-rigged brigantine built by the [[Chain Council]], 96 fee
 
 The wreck sits at [[Shelfworks|the Shelfworks]]' eastern edge, below [[Umberlee]]'s reach, with the [[Pearl of Souls]] still aboard. The Fleet Room holds records of who hired the Pearl theft, including coded logs, keys, and notes. [[Rael Corven]]'s Cloak of Useful Things went down with the ship. A deeper dive might raise it.
 
-A salvage group is gathering in [[Calveno]] to raise the wreck. Strange money has caught the eye of [[Savia Brentino]] and [[The Tangle]]. [[Batta Zusto]] serves as their broker, knowing the group but not who funds it. The team runs 8 to 10 crew members with two or more trained to dive deep. Their mid-size cargo ship carries sealed maps, diving gear, air bags, and rope for the 10 to 14 day trip.
+A salvage group is gathering in [[Calven and Calveno]] to raise the wreck. Strange money has caught the eye of [[Savia Brentino]] and [[The Tangle]]. [[Batta Zusto]] serves as their broker, knowing the group but not who funds it. The team runs 8 to 10 crew members with two or more trained to dive deep. Their mid-size cargo ship carries sealed maps, diving gear, air bags, and rope for the 10 to 14 day trip.
 
 > [!check] Investigation — Canal District Gossip on the Commission
 > DC 12 to gather two of the three details below from [[Le Paludi]] tavern talk, ferry workers, and dock crews. (DC 8 if [[Delmar Fisk|Delmar]] asks specifically about Maw salvage equipment.)
@@ -45,7 +45,7 @@ A salvage group is gathering in [[Calveno]] to raise the wreck. Strange money ha
 > **Commission assembly clock.** 8 to 10 days to departure from Calveno when the party arrives. It ticks on each day that passes or each Maw-relevant decision the party delays. Visible tick: [[Batta Zusto|Zusto]] mentions the supply chain closing, or [[Savia]] sees a lugger taking on unusual cargo at the outer anchorage. **Consequence at fill:** the commission launches fully equipped and heads for the Maw. The party may arrive ahead of it, behind it, or alongside it depending on their pace. If ignored outright, it reaches the wreck first and the *Red Lady* is not empty when the party gets there.
 > **Parallel enquiry clock.** A second, unrelated buyer is also asking Calveno brokers about Maw wreck access this month (not the funding source, not the party). [[The Tangle]] has noticed it too. No visible tick until it reaches the Maw or the party identifies it.
 
-The sealed chart package is this group's main edge. Any party that gets it knows what the salvage crew knows. [[Batta Zusto|Zusto]] knows who made the chart but won't say without a second talk. If [[Delmar Fisk|Delmar]] shows up in Calveno as a Maw guide, the backer offers him work. The [[Port Tidefall]] trader who paid for this group is the best lead to the backer's name. Follow that thread far enough and you get a name, but not quickly and not in Calveno.
+The sealed chart package is this group's main edge. Any party that gets it knows what the salvage crew knows. [[Batta Zusto|Zusto]] knows who made the chart but won't say without a second talk. If [[Delmar Fisk|Delmar]] shows up in Calveno as a Maw guide, the backer offers him work. The [[Calder's Tooth and Port Tidefall]] trader who paid for this group is the best lead to the backer's name. Follow that thread far enough and you get a name, but not quickly and not in Calveno.
 
 ## Stats & Combat
 
@@ -111,4 +111,4 @@ The sealed chart package is this group's main edge. Any party that gets it knows
 
 ## Session Log
 
-- s04: [[Delmar Fisk|Delmar]] confessed the truth. He revealed he was a real admiral commanding five ships, Chain Council privateers, on the [[Pearl of Souls]] theft, until the Maw destroyed the fleet. The party learned the Pearl is recoverable from the *Red Lady* wreck at [[The Drowned Maw]].
+- s04: [[Delmar Fisk|Delmar]] confessed the truth. He revealed he was a real admiral commanding five ships, Chain Council privateers, on the [[Pearl of Souls]] theft, until the Maw destroyed the fleet. The party learned the Pearl is recoverable from the *Red Lady* wreck at [[Drowned Maw]].

@@ -22,11 +22,11 @@ tier: supporting
 ---
 # Magic as Commodity
 
-*Most people who use magic every day couldn't cast a spell to save their life. They just bought the thing that does it for them. A way of life shared setting-wide across [[the Shattered Sea]], not one people's custom.*
+*Most people who use magic every day couldn't cast a spell to save their life. They just bought the thing that does it for them. A way of life shared setting-wide across [[Shattered Sea]], not one people's custom.*
 
 ## The Culture
 
-Enchanting in [[the Shattered Sea]] works the way manufacturing does. Anything simple enough to standardize gets standardized, and anything a paying market wants eventually reaches a shelf. A frying pan comes with *create bonfire* built into the base for camping. A stone reaches exactly one other stone, handed over free with a sale, a shopkeeper's own goodwill token. Self-cooling iceboxes, self-lighting lanterns, a dozen other conveniences nobody blinks at.
+Enchanting in [[Shattered Sea]] works the way manufacturing does. Anything simple enough to standardize gets standardized, and anything a paying market wants eventually reaches a shelf. A frying pan comes with *create bonfire* built into the base for camping. A stone reaches exactly one other stone, handed over free with a sale, a shopkeeper's own goodwill token. Self-cooling iceboxes, self-lighting lanterns, a dozen other conveniences nobody blinks at.
 
 Ordinary people are the actual market, not adventurers. Most enchanted objects in the world exist for a fishmonger or a dockhand, and most of them never come up at the table. Any one of them still gets its own page the moment a scene actually names it, the same as any other entity in this wiki. Nothing here is exempt from that. It's just background texture until a story reaches for it.
 

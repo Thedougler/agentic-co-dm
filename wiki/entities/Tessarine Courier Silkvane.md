@@ -24,7 +24,7 @@ tier: supporting
 
 A fast Tessarine Concordat sloop built for speed, not cargo, with a single mast and pale grey hull. The transom bears a Concordat registry mark, and a Tessarine pennant flies when underway. It has one gun mount per side and clean rigging. Nothing about it suggests a cargo ship. Currently anchored in Port Tidefall harbour.
 
-*Dispatch sloop · Tier 1 · [[Port Tidefall]].*
+*Dispatch sloop · Tier 1 · [[Calder's Tooth and Port Tidefall]].*
 
 Below decks is a locked stern cabin with a desk and iron lockbox. Forward are four hammock hooks. The hold splits into two sections: the front for cargo, the back locked for mail and valuables. The ship carries items for the Tessarine Concordat.
 
@@ -56,5 +56,5 @@ You can remove both the pennant and registry mark. The ship needs 2 crew for sho
 ## Connections
 
 - [[Tessarine Concordat]]: owner
-- [[Port Tidefall]]: home port
+- [[Calder's Tooth and Port Tidefall]]: home port
 - [[Tessarine Factor Amberreach|Tessarine Amberreach]] (Tier 3 Concordat carrier, same routes)

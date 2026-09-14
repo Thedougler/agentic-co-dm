@@ -30,7 +30,7 @@ _Scroll, Common._ A _[[Spell Scroll]]_ bears the words of a single spell, writte
 
 If the spell is on your spell list but of a higher level than you can normally cast, you make an ability check using your spellcasting ability to determine whether you cast the spell. The DC equals 10 plus the spell's level. On a failed check, the spell disappears from the scroll with no other effect.
 
-For a 1st-level [[spell scroll]], the spell uses a saving throw DC of **13** and has an attack bonus of **+5**. This one carries [[Disguise Self]]. A recognized hero is public property now in [[Calveno]]'s crowds, where plenty of people would pay 18 gp for a night unrecognized.
+For a 1st-level [[spell scroll]], the spell uses a saving throw DC of **13** and has an attack bonus of **+5**. This one carries [[Disguise Self]]. A recognized hero is public property now in [[Calven and Calveno]]'s crowds, where plenty of people would pay 18 gp for a night unrecognized.
 
 ## Provenance
 

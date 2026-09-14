@@ -28,7 +28,7 @@ tier: supporting
 
 Small humanoids calibrated for getting into places they are not supposed to be. A locked cargo hold is a delay, and a drainage pipe is simply a road; give a Rattkin crew a ship's bilge and it becomes a neighborhood.
 
-[[Rattkin]] are the oldest continuous presence in every major [[Shattered Sea]] port. Their fixed origin point is [[Warren|the Warren]], and their living network is [[The Passage]]. [[Perrin Black-Jaw]] is a fancy-rat Rattkin PC from the [[Calveno]] Run.
+[[Rattkin]] are the oldest continuous presence in every major [[Shattered Sea]] port. Their fixed origin point is [[Warren|the Warren]], and their living network is [[The Passage]]. [[Perrin Black-Jaw]] is a fancy-rat Rattkin PC from the [[Calven and Calveno]] Run.
 
 Rattkin fall into three varieties, each tied to a functional role within a Run:
 

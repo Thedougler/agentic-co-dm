@@ -25,7 +25,7 @@ tier: supporting
 > [!narration] Narration
 > A small grey sloop moves toward the harbour mouth with its sail reefed neat and low, the canvas stained the colour of old candle smoke. No bright paint marks the hull. A bronze handbell hangs beneath the short bowsprit, dark with salt, and the stern rail bears sealed oilcloth bundles, rope coils, and covered basins that smell faintly of brine and tallow.
 
-*shrine sloop · Tier 1 · [[Port Tidefall]].*
+*shrine sloop · Tier 1 · [[Calder's Tooth and Port Tidefall]].*
 
 A Tier 1 Waveservant Shrine sloop. She moves clergy between harbours and carries priests, shrine staff, ledgers, candles, tokens, sealed offerings, and ritual supplies.
 
@@ -59,6 +59,6 @@ When a captain pays for an open-water blessing, she comes alongside with her bas
 
 - [[Waveservants]]: operator
 - [[Umberlee]]: divine authority
-- [[Port Tidefall]]: regular port of call
+- [[Calder's Tooth and Port Tidefall]]: regular port of call
 - [[Perrin Black-Jaw]]: hidden routes and hidden sailors still owe the sea
 - [[Delmar Fisk]]: Umberlee's active claim makes this ship uncomfortable company

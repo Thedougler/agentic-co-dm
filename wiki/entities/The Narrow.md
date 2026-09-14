@@ -26,7 +26,7 @@ Second ship of [[Fisk's Fleet]]. Scout sloop, narrow-hulled and single-masted, w
 
 Below decks held crew hammocks, a chart table bolted to the forward bulkhead, and storage for diving equipment and survey gear. Built to go places other ships couldn't and come back with information.
 
-Lost with the rest of Fisk's Fleet when [[Umberlee]] opened [[The Drowned Maw]] beneath them. All hands perished. See [[Fisk's Fleet]] for the full account of the sinking. (The table kept Fisk's Fleet's ship names and captains secret.)
+Lost with the rest of Fisk's Fleet when [[Umberlee]] opened [[Drowned Maw]] beneath them. All hands perished. See [[Fisk's Fleet]] for the full account of the sinking. (The table kept Fisk's Fleet's ship names and captains secret.)
 
 ## Stats & Combat
 
@@ -42,6 +42,6 @@ Lost with the rest of Fisk's Fleet when [[Umberlee]] opened [[The Drowned Maw]] 
 
 - [[Fisk's Fleet]]: fleet
 - [[Delmar Fisk]]: fleet admiral
-- [[The Drowned Maw]]: sinking site
+- [[Drowned Maw]]: sinking site
 - [[Red Lady]]: fleet flagship, lost the same night
 - [[Umberlee]]: sank the fleet

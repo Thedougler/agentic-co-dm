@@ -33,7 +33,7 @@ Bisou has ridden [[Beaumont Sel]]'s left shoulder for the full eleven years he h
 
 ## Stats & Combat
 
-No separate statblock stated in source. She is Beaumont's delivery mechanism in combat. See [[Beaumont Sel]]'s page for how the [[Kalowe]], [[Calveno]], and [[Tidefall]] Maneuvers describe his actions with her aid.
+No separate statblock stated in source. She is Beaumont's delivery mechanism in combat. See [[Beaumont Sel]]'s page for how the [[Kalowe]], [[Calven and Calveno]], and [[Calder's Tooth and Port Tidefall]] Maneuvers describe his actions with her aid.
 
 ## Connections
 

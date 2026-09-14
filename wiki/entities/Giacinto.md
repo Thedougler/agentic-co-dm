@@ -58,4 +58,4 @@ No statistics recorded for this NPC.
 ## Connections
 
 - [[Jean-Claude Tabarnack]]: sold him the disguise kit central to his Calveno cover
-- [[Calveno]]: works the Velo Quarter
+- [[Calven and Calveno]]: works the Velo Quarter

@@ -28,7 +28,7 @@ tier: supporting
 | ----------- | --------------------------- |
 | **Species** | [[Human]] (Dravosi)             |
 | **Role**    | Crown-licensed import factor |
-| **Location**| [[Port Tidefall]] |
+| **Location**| [[Calder's Tooth and Port Tidefall]] |
 
 Cedric runs an import agency near Tidefall's Inspection Pier. Thirty years in Crown licensing taught him the language of fees and delays. He is not corrupt. He simply knows every deal has a cost and every person has a use. He treats his family the same way he treats cargo.
 

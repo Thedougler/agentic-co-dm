@@ -45,7 +45,7 @@ The dearest shaft in [[Ettore Lupo]]'s drawer at [[Casa Lupo]], and the only one
 | `attunement_reason` | It marks and nothing else, once, leaving attack, damage, save, and AC rolls alone. The attunement tree has no branch for it. |
 | `pc_connection` | [[Crissdalynn Khinriss]] regains district-wide tracking of one marked runner. |
 | `current_holder` | [[Ettore Lupo]], in his felt-lined drawer at [[Casa Lupo]]. |
-| `narrative_hook` | Somebody in [[Calveno]] is already marking people with these, and the glow outlasts the man who fired it by an hour. |
+| `narrative_hook` | Somebody in [[Calven and Calveno]] is already marking people with these, and the glow outlasts the man who fired it by an hour. |
 
 [[Crissdalynn Khinriss]] can follow anything from the air, but loses it the moment it goes into a crowd or under a roofline. A marked runner is one she can pick back up over a whole district, which is the only part of her mapping task she has ever been able to do reliably.
 

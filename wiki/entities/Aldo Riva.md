@@ -47,7 +47,7 @@ At midnight two nights ago, he came down for a bottle of wine and heard the cell
 
 - [[Al Fondale]]: co-proprietor. Runs the kitchen.
 - [[Bice Riva]]: wife and co-proprietor. Runs the front of house.
-- [[Calveno]]: his tavern's home city.
+- [[Calven and Calveno]]: his tavern's home city.
 - [[Le Paludi]]: district of his birth and lifelong home.
 - [[The Passage]]: not a member. Does not know operational details.
 - [[Nona Black-Jaw]]: the Rattkin woman from the Warren with whom Bice arranged the cellar access.

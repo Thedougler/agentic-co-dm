@@ -24,7 +24,7 @@ tier: supporting
 
 ![[oleandro-fuschi-banner]]
 
-**Wants:** keep [[Ponte Bassa]] the only source for ship movements through [[Calveno]], but captains now falsify their manifests.
+**Wants:** keep [[Ponte Bassa]] the only source for ship movements through [[Calven and Calveno]], but captains now falsify their manifests.
 
 **Quote:** "I remember every ship that ever docked here. The ones that lied, especially."
 

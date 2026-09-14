@@ -29,7 +29,7 @@ relationships:
 
 # Ruma Delacroix
 
-[[Grung]] [[Grung Elite Warrior|blue-caste handler]] working for [[Simone Tabarnack]]'s sewer magazine operation beneath [[Calveno]]. She sat at a plank desk in Room 6, cross-referencing charts and tide marks. They sneaked up and grabbed her in Session 05. No fight broke out. She had no weapon.
+[[Grung]] [[Grung Elite Warrior|blue-caste handler]] working for [[Simone Tabarnack]]'s sewer magazine operation beneath [[Calven and Calveno]]. She sat at a plank desk in Room 6, cross-referencing charts and tide marks. They sneaked up and grabbed her in Session 05. No fight broke out. She had no weapon.
 
 While restraining her, they found doodles of chemical formulas rendered like star charts, complete with invented mythology and fan-fiction about compounds. This won her over immediately. Her first ocean crossing brought her to a sewer. The job since has meant 18-hour shifts of nothing. She's now an ally, not hostile. She's hiding them in what she calls her "nap room" (Room 6, dry, swept, hers) and keeping her check-ins with the network sounding normal so neither she nor they get caught.
 

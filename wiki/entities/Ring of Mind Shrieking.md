@@ -48,10 +48,10 @@ If anyone puts it on, surface thoughts of everyone nearby flood in at once — m
 ## Connections
 
 - [[Lavinia Sordi]] — Current holder; offered from the rack at [[La Cenere]].
-- [[La Cenere]] — Shop in [[Le Paludi]], [[Calveno]].
+- [[La Cenere]] — Shop in [[Le Paludi]], [[Calven and Calveno]].
 - [[Delmar Fisk]] — Tried it on in Session 8 without paying; handed it straight back.
 - [[Ring of Mind Shielding]] — Base protection this cursed ring still grants.
 
 ## Provenance
 
-Sold from [[Lavinia Sordi]]'s rack at [[La Cenere]] in [[Le Paludi]], [[Calveno]]. Listed at 50 gp, down from an original 200 gp asking price. [[Delmar Fisk]] tried it on at the table in Session 8 without paying, was immediately flooded with nearby surface thoughts, zoned out for a moment, then handed it straight back. Never purchased.
+Sold from [[Lavinia Sordi]]'s rack at [[La Cenere]] in [[Le Paludi]], [[Calven and Calveno]]. Listed at 50 gp, down from an original 200 gp asking price. [[Delmar Fisk]] tried it on at the table in Session 8 without paying, was immediately flooded with nearby surface thoughts, zoned out for a moment, then handed it straight back. Never purchased.

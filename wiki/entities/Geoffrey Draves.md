@@ -44,7 +44,7 @@ During the boarding of the Saltwright, when the fight turned and the men around 
 
 Crew assembled aboard the captured HCS Surety as ship's carpenter, alongside [[Sem Holst]] the shipwright, [[Alys Kuiper]] the surgeon, [[Old Faas]] for the rigging, [[Thunk]], and young [[Noor]]. `vault/episodes/002/transcript.raw.md:63`
 
-In transit toward [[Calveno]], [[Delmar Fisk|Delmar]] resumed training him, calling him "Mr. James" throughout, and later warned him off going anywhere alone after an encounter with a woman claiming to speak for [[Umberlee]]. `vault/episodes/003/transcript.md:92,126`
+In transit toward [[Calven and Calveno]], [[Delmar Fisk|Delmar]] resumed training him, calling him "Mr. James" throughout, and later warned him off going anywhere alone after an encounter with a woman claiming to speak for [[Umberlee]]. `vault/episodes/003/transcript.md:92,126`
 
 His father chose the water for him, not the other way around. Still, he's become good at a job he never wanted. His father's connections got him a carpenter's post on the [[Uncertainty|HCS Surety]] with marine boarding duties, for extra pay at seven and a half gold a week. It sounded like progress until he did the math. A rated marine earns fourteen gold a week on top of the carpenter rate, and [[Barnaby Rook]] knew it. Crew costs are operational line items. This was systematic underpayment, not an accident.
 
@@ -64,7 +64,7 @@ Controlled and quietly watchful. His face shows nothing. He learned long ago tha
 These hidden pressures shape how he responds at the table and the stakes of his eventual test:
 
 > [!mechanic] Geoffrey at the table
-> **Pressure tiers:** **Low:** he reads the ship's true condition and speaks it without embellishment (hulls, repairs, speed-versus-safety tradeoffs). Trust grows because his honesty means something here. **Medium:** the dancing surfaces and someone sees him; he chooses shame, defiance, or truth. **High:** the crew of the Saltwright needs something in [[Tidefall]], Knighton becomes relevant, the Aldric bloodline thread surfaces, Verity's ledger problem becomes their problem, or he learns the full wage picture (`draves-bloodline-question.md`). When pressure peaks, the crew will ask Geoffrey to do something that costs him something toward his goal. He said “any means,” and the campaign asks what that actually means in practice (`draves-bloodline-question.md`).
+> **Pressure tiers:** **Low:** he reads the ship's true condition and speaks it without embellishment (hulls, repairs, speed-versus-safety tradeoffs). Trust grows because his honesty means something here. **Medium:** the dancing surfaces and someone sees him; he chooses shame, defiance, or truth. **High:** the crew of the Saltwright needs something in [[Calder's Tooth and Port Tidefall]], Knighton becomes relevant, the Aldric bloodline thread surfaces, Verity's ledger problem becomes their problem, or he learns the full wage picture (`draves-bloodline-question.md`). When pressure peaks, the crew will ask Geoffrey to do something that costs him something toward his goal. He said “any means,” and the campaign asks what that actually means in practice (`draves-bloodline-question.md`).
 
 ## Stats & Combat
 

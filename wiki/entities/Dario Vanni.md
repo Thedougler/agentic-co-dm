@@ -58,7 +58,7 @@ tier: supporting
 ## Connections
 
 - [[Acqua Nera]], proprietor and master
-- [[Calveno]], keeps distance from the Canal Commission
+- [[Calven and Calveno]], keeps distance from the Canal Commission
 
 ## Session Log
 

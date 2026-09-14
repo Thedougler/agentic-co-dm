@@ -28,7 +28,7 @@ tier: supporting
 | ------------- | --------------------------------------------------------------------- |
 | **Species**   | [[Dwarf]]                                                                 |
 | **Pronouns**  | he/him                                                                |
-| **Location**  | [[Shelf Instrument Dealer]], [[Port Tidefall]] |
+| **Location**  | [[Shelf Instrument Dealer]], [[Calder's Tooth and Port Tidefall]] |
 | **Role**      | Navigation instrument dealer                                          |
 
 Oswald has squinted eyes from decades looking through lenses. He believes most things break under close inspection. He is not mean, but his quiet feels worse than rudeness.
@@ -46,4 +46,4 @@ No stats given in source.
 ## Connections
 
 - [[Shelf Instrument Dealer]]. The shop he runs.
-- [[Port Tidefall]]. His home port.
+- [[Calder's Tooth and Port Tidefall]]. His home port.

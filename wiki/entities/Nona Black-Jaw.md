@@ -165,7 +165,7 @@ Nona protects people through a network whose survival requires transactional pre
 
 I am reading for [[Nona Black-Jaw]]
 
-I run a kitchen in the [[Warren]], under [[Calveno]], and if you have found your way to my table, someone you trust vouched for you first.
+I run a kitchen in the [[Warren]], under [[Calven and Calveno]], and if you have found your way to my table, someone you trust vouched for you first.
 
 Black-Jaw is my husband's name and my family's name, and every soul who eats at this table wears it a little too, whether they know it yet or not.
 

@@ -34,7 +34,7 @@ tier: supporting
 > *(without looking up)* "Seconds," he says, tapping the board edge. "Perfectly good seconds."
 
 
-Nicco runs [[La Gatta]], a vending board on the bottom tier of the Bridge in [[Calveno]]. He came up out of the canal-city halfling trade and has never held a lease. Everything he owns fits in the tin, the trestles, and a locked box he carries home nightly.
+Nicco runs [[La Gatta]], a vending board on the bottom tier of the Bridge in [[Calven and Calveno]]. He came up out of the canal-city halfling trade and has never held a lease. Everything he owns fits in the tin, the trestles, and a locked box he carries home nightly.
 
 He buys short batches and failed runs from [[Studio Orsini]] at a fraction of what a finished blend costs, twists them shut himself, and sells them at prices no licensed room in the city can match. When one burns wrong, he says so afterward, cheerfully, and offers the next one at a discount.
 
@@ -61,4 +61,4 @@ Sample lines: *"That one's ninety, which beats the hundred you paid last week, s
 - [[La Gatta]]: proprietor, such as a board on trestles has a proprietor.
 - [[Marta Orsini]]: supplier, though she has not agreed to be one. He buys her short batches through a third party.
 - [[Jean-Claude Tabarnack]]: customer, and a name in the ledger he keeps in his head.
-- [[Calveno]]: he works the bottom tier of the Bridge district, on a board wedged between the fry stall and the rope seller.
+- [[Calven and Calveno]]: he works the bottom tier of the Bridge district, on a board wedged between the fry stall and the rope seller.

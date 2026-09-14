@@ -105,7 +105,7 @@ Not everything aboard belongs to the ship. [[Sem Holst]]'s carpenter's kit is hi
 
 | Item | Qty | Notes |
 |---|---|---|
-| Survey charts, [[Crown Islands]] and [[Central Strait]] | n/a | Admiralty marks scraped, [[Calveno]] notation laid over. Good coverage, no provenance |
+| Survey charts, [[Crown Islands]] and [[Central Strait]] | n/a | Admiralty marks scraped, [[Calven and Calveno]] notation laid over. Good coverage, no provenance |
 | Navigation dividers | 1 set | |
 | [[Barnaby Rook|Rook]]'s captain's log | 1 | Still worth reading |
 | [[Letters of Marque]] | 1 set | Rook's privateer authority. A forger could do a great deal with them |
@@ -126,7 +126,7 @@ Not everything aboard belongs to the ship. [[Sem Holst]]'s carpenter's kit is hi
 
 | Item | Qty | Notes |
 |---|---|---|
-| Seized goods crate | 1 | About 97 gp of silver candelabras, brandy, [[Calveno]] silk, a locked jewellery box, and a pendant cut *For Mira, from the sea* |
+| Seized goods crate | 1 | About 97 gp of silver candelabras, brandy, [[Calven and Calveno]] silk, a locked jewellery box, and a pendant cut *For Mira, from the sea* |
 | Confiscation crate | 1 | Spare flintlocks, and twenty vials of concentrated [[Grung]] poison tincture |
 | Opened cargo crate | 1 | Emptied. Held a chart marked *[[Galewall]] anchorage* |
 | Boarding axe | 8 | Replaced the Crown cutlasses. No rack anymore — dug out of a crate now |

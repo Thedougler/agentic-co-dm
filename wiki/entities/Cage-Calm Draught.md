@@ -45,4 +45,4 @@ tier: supporting
 
 ## Provenance
 
-Every dealership in [[Calveno]] mixes something like it. [[Zort]]'s recipe runs sweeter than most, and his stock crowds the front of the cage the moment a crock comes out.
+Every dealership in [[Calven and Calveno]] mixes something like it. [[Zort]]'s recipe runs sweeter than most, and his stock crowds the front of the cage the moment a crock comes out.

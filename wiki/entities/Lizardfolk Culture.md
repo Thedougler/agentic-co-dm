@@ -26,7 +26,7 @@ tier: supporting
 
 ## The Culture
 
-In [[the Shattered Sea]], Lizardfolk live in the tidal margins, on mangrove coasts, river deltas, and salt-and-fresh flats. Their homes look temporary to outsiders, but most have stood for generations. Lizardfolk build low in the water, and when the tide pattern shifts, they simply move. The old home already did its job.
+In [[Shattered Sea]], Lizardfolk live in the tidal margins, on mangrove coasts, river deltas, and salt-and-fresh flats. Their homes look temporary to outsiders, but most have stood for generations. Lizardfolk build low in the water, and when the tide pattern shifts, they simply move. The old home already did its job.
 
 At sea, Lizardfolk crew as hull-workers, salvagers, and repair hands. They can hold their breath for a quarter-hour. They work in cold water without slowing down. Their natural armor means fewer wounds from sharp keels and broken planks. A ship with a Lizardfolk crew needs less time in dry dock. [[Bastian Ookage]] is captain of the *[[Loud Argument]]* in [[Fisk's Fleet]]. He came up through salvage work before Fisk gave him a command.
 

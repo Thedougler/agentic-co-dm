@@ -22,11 +22,11 @@ tier: supporting
 ---
 # Petra Venn
 
-She's a [[Dravosi Crown]] spy in [[Calveno]]. She poses as a [[Tessarine Concordat|Tessarine]] merchant, four months in now, and runs [[Ferrin Locke]] as her asset. She calls in every 9 days, or the Crown swaps her out. See [[Warren: Ferrin Locke]] for all details.
+She's a [[Dravosi Crown]] spy in [[Calven and Calveno]]. She poses as a [[Tessarine Concordat|Tessarine]] merchant, four months in now, and runs [[Ferrin Locke]] as her asset. She calls in every 9 days, or the Crown swaps her out. See [[Warren: Ferrin Locke]] for all details.
 
 ## Connections
 
 - [[Dravosi Crown]], the Crown she spies for
-- [[Calveno]], her posting under merchant cover
+- [[Calven and Calveno]], her posting under merchant cover
 - [[Ferrin Locke]], the asset she runs and holds power over
 - [[Warren: Ferrin Locke]], the spy thread she runs

@@ -22,7 +22,7 @@ tier: supporting
 ---
 # Sera Maddock
 
-Old privateer. Compact and wheezing, still. Seventy-one years old. Three days from dead by [[Ilaria Grimaldi]]'s estimate from lung sickness, treatable in [[Tidefall]], not in [[Kalowe]]. She makes eye contact the way someone does who has spent a career reading strangers fast.
+Old privateer. Compact and wheezing, still. Seventy-one years old. Three days from dead by [[Ilaria Grimaldi]]'s estimate from lung sickness, treatable in [[Calder's Tooth and Port Tidefall]], not in [[Kalowe]]. She makes eye contact the way someone does who has spent a career reading strangers fast.
 
 She ran [[Dravosi Crown|Dravosi]]-licensed privateer work forty years ago. Her crew buried a cache on [[Orak]] from one of those runs and she is the last one alive who knows where. She bears half the chart tattooed on her left forearm. She burned the other half when the man she was going to share it with tried to sell her to the Crown.
 

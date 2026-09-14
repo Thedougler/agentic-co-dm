@@ -22,7 +22,7 @@ tier: supporting
 ---
 # Ferrin Locke
 
-A strong Human in his 40s who works as a chandlery factor in [[Calveno]]. Secretly, he is a spy in [[Warren|the Warren]] for his handler, [[Petra Venn]], who coerces him by holding his wife and daughter in [[Le Paludi]] as leverage. See [[Warren (Ferrin Locke)]] for more; if caught, he gives in.
+A strong Human in his 40s who works as a chandlery factor in [[Calven and Calveno]]. Secretly, he is a spy in [[Warren|the Warren]] for his handler, [[Petra Venn]], who coerces him by holding his wife and daughter in [[Le Paludi]] as leverage. See [[Warren (Ferrin Locke)]] for more; if caught, he gives in.
 
 ## Stats & Combat
 
@@ -33,4 +33,4 @@ No stats given in source.
 - [[Petra Venn]], his handler
 - [[Le Paludi]], where his wife and daughter live
 - [[Warren (Ferrin Locke)]], the spy thread
-- [[Calveno]], where he works
+- [[Calven and Calveno]], where he works

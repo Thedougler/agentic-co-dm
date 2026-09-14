@@ -47,4 +47,4 @@ tier: supporting
 
 ## Provenance
 
-Sat in the back corner of [[Zort's Pits]] for a year at a price nobody in [[Calveno]] has raised, which suits [[Zort]]: the dog draws customers in from the canal walk and eats less than the cats.
+Sat in the back corner of [[Zort's Pits]] for a year at a price nobody in [[Calven and Calveno]] has raised, which suits [[Zort]]: the dog draws customers in from the canal walk and eats less than the cats.

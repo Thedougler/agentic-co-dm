@@ -34,7 +34,7 @@ tier: supporting
 
 _Consumable, Common._
 
-Sold for the last scene of a play nobody in [[Calveno]] stages any more, in boxes of one because Fio prefers the sale to happen twice.
+Sold for the last scene of a play nobody in [[Calven and Calveno]] stages any more, in boxes of one because Fio prefers the sale to happen twice.
 
 | Field | Detail |
 |---|---|

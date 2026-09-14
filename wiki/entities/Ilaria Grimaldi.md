@@ -25,7 +25,7 @@ tier: supporting
 **Wants:** to keep the dispensary's fifteen-year truce with the harbour bosses intact, while she decides what to do about a [[Passage]]-marked ring she spotted on a wounded Takowan crewman two days ago.
 
 > [!narration] Narration
-> In her early sixties, a tiefling from [[Calveno]]'s northern Scatter, small horns and grey-violet skin, a faded accent she's never lost. The scent of camphor and vinegar hangs off her sleeves, and the mortar keeps grinding under her pestle while she works, until she looks up to ask what you need.
+> In her early sixties, a tiefling from [[Calven and Calveno]]'s northern Scatter, small horns and grey-violet skin, a faded accent she's never lost. The scent of camphor and vinegar hangs off her sleeves, and the mortar keeps grinding under her pestle while she works, until she looks up to ask what you need.
 
 *Ilaria Grimaldi*: "Tell me what exposed you, not what happened."
 

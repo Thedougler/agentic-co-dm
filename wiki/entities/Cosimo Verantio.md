@@ -30,7 +30,7 @@ visibility: dm
 | ------------- | --------------------------------------------------------------- |
 | **Species**   | [[Human]] (claimed)                                                 |
 | **Role**      | The Principal of the [[Tessarine Concordat]]      |
-| **Location**  | [[Calveno]] / correspondence-only                        |
+| **Location**  | [[Calven and Calveno]] / correspondence-only                        |
 
 > [!narration] Narration
 > The man at the head of the table has not moved since you entered. His beard is white, long, and forked. His clothes are plain dark cloth, well-made and unmarked. The air around him is still, almost cold. His hands rest flat on the table. He found you the moment you walked in. His gaze locked on yours without a flicker of interest or surprise. He has not looked away since. You hear nothing from him but the faint creak of his chair whenever he breathes. He does not seem to be waiting. He seems to have been here forever.
@@ -69,5 +69,5 @@ No stats given in source.
 
 - [[Tessarine Concordat]] (his instrument)
 - [[Iacopo Fieschi]] (Concordat envoy, public face in Calveno)
-- [[Calveno]] (the Concordat's strongest northern foothold)
+- [[Calven and Calveno]] (the Concordat's strongest northern foothold)
 - [[Aldric Drave]] (rival for the [[Pearl of Souls]])

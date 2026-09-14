@@ -24,7 +24,7 @@ tier: supporting
 
 # Campaign Timeline
 
-*Chronological index of [[the Shattered Sea]]'s history from the Antheri's height through Session 01, with full detail on each event's own page.*
+*Chronological index of [[Shattered Sea]]'s history from the Antheri's height through Session 01, with full detail on each event's own page.*
 
 ## The Fact
 
@@ -32,14 +32,14 @@ This page orders the record, not the story — strict chronology, not narrative-
 
 ### The Age of the Antheri
 
-- **-2000 DR**, [[Antheri|The Antheri]] build into the western wall of [[The Drowned Maw]], expanding toward the [[Elemental Plane of Water]]. [[Auralis]] first appears during this age.
+- **-2000 DR**, [[Antheri|The Antheri]] build into the western wall of [[Drowned Maw]], expanding toward the [[Elemental Plane of Water]]. [[Auralis]] first appears during this age.
 - **-495 DR**, The Antheri vanish. The planar breach widens beyond what the Antheri city can survive.
 
 ### The Shattered Sea Takes Shape
 
 - **895 DR**, [[Sentinels of the Eyrie]] start their Kensei order at [[High Eyrie]]. They oppose [[Umberlee]]'s [[Waveservants]].
-- **1195 DR**, [[Dravosi Crown|The Dravosi Crown]] arrives. They claim [[Crown Islands|the Crown Islands]] and found [[Port Tidefall]].
-- **1210 DR**, [[Tessarine Concordat|The Tessarine Concordat]] arrives. They form the Seven Houses of [[Calveno]].
+- **1195 DR**, [[Dravosi Crown|The Dravosi Crown]] arrives. They claim [[Crown Islands|the Crown Islands]] and found [[Calder's Tooth and Port Tidefall]].
+- **1210 DR**, [[Tessarine Concordat|The Tessarine Concordat]] arrives. They form the Seven Houses of [[Calven and Calveno]].
 - **1240 DR**, [[The Passage]] breaks away from [[Warren|the Warren]]. Its people flee colonial pressure.
 - **1295 DR**, The Sentinels of the Eyrie begin watching The Drowned Maw. They never stop.
 - **1385 DR**, The Spellplague closes the northern crossings for a generation. [[Verdant Scatter|The Scatter]] learns to stand alone. This pattern endures.

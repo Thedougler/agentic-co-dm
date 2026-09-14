@@ -24,7 +24,7 @@ tier: supporting
 
 # The Aruhe Wreck
 
-*A storm splits the Grung fleet carrying [[Calveno]]'s stolen hundreds south to [[Karath]]. Part of it wrecks on [[Aruhe]] instead, and the island keeps almost everyone who washes up on it.*
+*A storm splits the Grung fleet carrying [[Calven and Calveno]]'s stolen hundreds south to [[Karath]]. Part of it wrecks on [[Aruhe]] instead, and the island keeps almost everyone who washes up on it.*
 
 ## What Happened
 

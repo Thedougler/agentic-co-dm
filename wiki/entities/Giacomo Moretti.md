@@ -28,7 +28,7 @@ tier: supporting
 | ------------- | ------------------------------------------------------------ |
 | **Species**   | [[Halfling]]                                                     |
 | **Pronouns**  | he/him                                                       |
-| **Location**  | [[Moretti and Sons]], [[Calveno]]  |
+| **Location**  | [[Moretti and Sons]], [[Calven and Calveno]]  |
 | **Role**      | Ship chandler                                                |
 
 **Wants:** secure a six-month provisioning deal with the Concordat's credit and manage the crate in his back room that no one has claimed in three years.

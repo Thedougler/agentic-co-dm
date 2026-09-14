@@ -37,7 +37,7 @@ tier: supporting
 
 Fifteen, maybe. They hid during the fight. They came out with a sailing manual ready.
 
-They know every sailing manual by heart. They have sailed on almost none of them. They want to close the gap between what the manuals teach and real sailing. Any new ship is a better classroom than [[Port Tidefall]].
+They know every sailing manual by heart. They have sailed on almost none of them. They want to close the gap between what the manuals teach and real sailing. Any new ship is a better classroom than [[Calder's Tooth and Port Tidefall]].
 
 [[Shepherd Grigori]] calls them useful in the galley. They learned by watching. That's how they learn.
 

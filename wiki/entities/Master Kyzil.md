@@ -34,9 +34,9 @@ visibility: dm
 
 *Kyzil*: "I corrected course. Three times."
 
-Senior master of the [[Sentinels of the Eyrie]], an [[Aarakocra]] built and coloured like a barn owl, stationed out of [[High Eyrie]] and currently in [[Calveno]] since Day 2 of Session 03. A disciplined guardian who masks his anxiety beneath perfect composure: he asks questions instead of giving orders, and channels worry into action instead of words.
+Senior master of the [[Sentinels of the Eyrie]], an [[Aarakocra]] built and coloured like a barn owl, stationed out of [[High Eyrie]] and currently in [[Calven and Calveno]] since Day 2 of Session 03. A disciplined guardian who masks his anxiety beneath perfect composure: he asks questions instead of giving orders, and channels worry into action instead of words.
 
-He gave [[Crissdalynn Khinriss|Crissdalynn]] her pilgrimage himself: map [[The Drowned Maw]] from inside a storm, the hardest assignment on record, staking his own reputation on her readiness. When the [[Red Lady]] went down, he tracked her by current and weather, predicted where she'd wash ashore, and went to [[Port Tidefall]] to wait, then learned the ship had sunk. He searched east into the [[Midchain]] first, then west, after a maritime contact spotted an Aarakocra monk aboard a captured Crown patrol cutter.
+He gave [[Crissdalynn Khinriss|Crissdalynn]] her pilgrimage himself: map [[Drowned Maw]] from inside a storm, the hardest assignment on record, staking his own reputation on her readiness. When the [[Red Lady]] went down, he tracked her by current and weather, predicted where she'd wash ashore, and went to [[Calder's Tooth and Port Tidefall]] to wait, then learned the ship had sunk. He searched east into the [[Midchain]] first, then west, after a maritime contact spotted an Aarakocra monk aboard a captured Crown patrol cutter.
 
 Before any of that, Kyzil had his own master at High Eyrie, a teacher who came to see the order's "record without conclusion" doctrine as people dying in front of an order that only ever wrote it down, broke from the Sentinels over it, and asked Kyzil to break with him too, though Kyzil refused, and neither has stopped believing he was right since. The old master never actually died, though, and he's now [[Talon Vantyrus]], master of [[the Countless]], a fact Kyzil doesn't know.
 
@@ -130,7 +130,7 @@ legendary_actions:
 - [[Talon Vantyrus]]: his old master at [[High Eyrie]]. Kyzil believes he departed the order decades ago. He has no idea Vantyrus is alive, active, or leading [[the Countless]] now.
 - [[Sentinels of the Eyrie]]: the order he leads as senior master, based at High Eyrie
 - Crissdalynn's Pilgrimage: the task he assigned her
-- [[Calveno]]: present location
+- [[Calven and Calveno]]: present location
 - [[Jean-Claude Tabarnack]]: dismissed as “no threat”; tension established
 - [[Delmar Fisk]]: bear-hugged Kyzil on meeting; joined the spar uninvited
 - [[Perrin Black-Jaw]]: drum identified as tactical threat during the spar
@@ -142,7 +142,7 @@ legendary_actions:
 
 **Session 06** (`vault/episodes/006/`): led a rooftop chase across [[Le Paludi]] during [[Il Gioco delle Beffe]]. He batted away a water balloon, picked through a flower/balloon/net barrage, and wasn't fooled by a boy's fake drowning.
 
-**Session 03** (`vault/episodes/003/`): reunited with [[Crissdalynn Khinriss|Crissdalynn]] in the Le Paludi streets. He dove from the sun in silence, knocked her back twenty feet, and held her from the front. She recognized his smell before seeing him. Had searched [[Kalowe]] and [[Tidefall]] first. Said "a foul wind from the south." Party currently unaware of his broader context.
+**Session 03** (`vault/episodes/003/`): reunited with [[Crissdalynn Khinriss|Crissdalynn]] in the Le Paludi streets. He dove from the sun in silence, knocked her back twenty feet, and held her from the front. She recognized his smell before seeing him. Had searched [[Kalowe]] and [[Calder's Tooth and Port Tidefall]] first. Said "a foul wind from the south." Party currently unaware of his broader context.
 
 **Session 04** (`vault/episodes/004/`): told Crissdalynn he gave her the hardest pilgrimage in Eyrie history because he knew she could do it. Maw has been unruly and dangerous since the wreck. Weather odd. Sentinels saw the wreck. Senses something foul from the south.
 

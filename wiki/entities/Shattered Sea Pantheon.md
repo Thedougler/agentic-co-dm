@@ -22,7 +22,7 @@ tier: supporting
 ---
 # Shattered Sea Pantheon
 
-*Regional Index of [[the Shattered Sea]]'s divine landscape, shaped by water, risk, and law.*
+*Regional Index of [[Shattered Sea]]'s divine landscape, shaped by water, risk, and law.*
 
 Every deity worshipped here belongs to the wider [[Faerûnian]] pantheon. The colonial charters carried these faiths south with them, and the Scatter kept the ones that suited a life on the water.
 

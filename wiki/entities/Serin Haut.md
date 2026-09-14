@@ -22,7 +22,7 @@ tier: supporting
 ---
 # Serin Haut
 
-Serin Haut is a spy for the [[Dravosi Crown]]. She works in [[Calveno]] as a [[Tessarine Concordat|Tessarine]] trader.
+Serin Haut is a spy for the [[Dravosi Crown]]. She works in [[Calven and Calveno]] as a [[Tessarine Concordat|Tessarine]] trader.
 
 She killed courier Dren and now watches the [[Marrows]] canal, waiting for someone to claim the crate while changing hiding spots to avoid detection. See [[Warren (Marrow's Crate)]] for the full story.
 
@@ -41,7 +41,7 @@ When discovered in her room:
 ## Connections
 
 - [[Dravosi Crown]]: employer; spy contact
-- [[Calveno]]: where she works undercover
+- [[Calven and Calveno]]: where she works undercover
 - [[Marrow's]]: canal she watches
 - [[Ferrin Locke]]: has his signed deal in her strongbox
 - [[Warren (Marrow's Crate)]]: her current mission

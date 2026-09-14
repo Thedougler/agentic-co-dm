@@ -30,12 +30,12 @@ visibility: dm
 ![[Barnaby Rook Banner]]
 ![[Barnaby Rook Portrait]]
 
-**Wants:** to choke every irregular captain out of the [[Tidefall]] corridor for the [[Dravosi Crown]], narrowed since his fall off the Surety's rigging to running down the crew who defected or surrendered under him.
+**Wants:** to choke every irregular captain out of the [[Calder's Tooth and Port Tidefall]] corridor for the [[Dravosi Crown]], narrowed since his fall off the Surety's rigging to running down the crew who defected or surrendered under him.
 
 ![[Barnaby Rook Narration Appearance]]
 
 
-The face of the Crown's tightening grip on [[Tidefall]], Rook is a hard [[Dravosi Crown]] privateer captain who boards under colour of law and expects weaker captains to surrender before violence begins. When talk fails, he pivots to fear.
+The face of the Crown's tightening grip on [[Calder's Tooth and Port Tidefall]], Rook is a hard [[Dravosi Crown]] privateer captain who boards under colour of law and expects weaker captains to surrender before violence begins. When talk fails, he pivots to fear.
 
 He speaks in flat statements, not conversation. Each one is a command. He absorbs hits and comes back stronger. Threat is silent, never loud. It turns lethal in moments. He shows no hesitation about shooting crew members for defection.
 

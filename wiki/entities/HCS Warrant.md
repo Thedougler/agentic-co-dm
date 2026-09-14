@@ -25,7 +25,7 @@ tier: supporting
 > [!narration] Narration
 > A Crown brigantine bears down under full sail. Naval grey hull with a white stripe. Gun ports line each side: six per beam, twelve total. The brass plate at the bow is large enough to read. A rating officer stands at the rail with a speaking trumpet. The Crown pennant hangs still at the masthead. She comes downwind and close. She makes you feel it. She doesn't ask.
 
-The *HCS Warrant* patrols the [[Central Strait]] with crews from [[Harwick]]. She works the seas near [[Port Tidefall]], larger and better armed than Tidefall's patrol cutters. She makes ships comply where cutters alone cannot. She enforces Crown authority.
+The *HCS Warrant* patrols the [[Central Strait]] with crews from [[Harwick]]. She works the seas near [[Calder's Tooth and Port Tidefall]], larger and better armed than Tidefall's patrol cutters. She makes ships comply where cutters alone cannot. She enforces Crown authority.
 
 [[Commander Gideon Ault]] commands. Sealed orders grant him power to detain ships, seize cargo, arrest crews, and issue privateer letters to allies.
 
@@ -90,7 +90,7 @@ Captain [[Commander Gideon Ault]]. Twenty-four sailors from [[Harwick]]. Watch o
 - [[Uncertainty|HCS Surety]]: the missing vessel driving this deployment
 - [[HCS Relentless]]: fleet sibling
 - [[Central Strait]]: patrol waters
-- [[Port Tidefall]]: patrol approaches
+- [[Calder's Tooth and Port Tidefall]]: patrol approaches
 
 ## Sister Ships
 

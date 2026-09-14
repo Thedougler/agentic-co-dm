@@ -35,7 +35,7 @@ relationships:
 > [!narration] Narration
 > Gun decks rise above a grey hull in three rows. Fourteen gun ports line each side on each deck, all shut and spaced in straight rows from front to back. A white stripe runs down the middle at the main deck. The Crown flag flies from all three tall masts. The statue at the bow shows Tyr, blind and in robes, holding up gold scales. Metal shines at every corner. She is not fast. She does not need to be.
 
-Built at [[Harwick]] in the [[Crown Islands]], this warship has three gun decks. She is 210 feet long. When made, she was the biggest ship the [[Dravosi Crown]] had and the only one this big in [[the Shattered Sea]]. She shows the Crown's power.
+Built at [[Harwick]] in the [[Crown Islands]], this warship has three gun decks. She is 210 feet long. When made, she was the biggest ship the [[Dravosi Crown]] had and the only one this big in [[Shattered Sea]]. She shows the Crown's power.
 
 The hull is grey with a white stripe down the middle at deck level. She carries 96 guns: 42 heavy cannon on each side across three decks, plus 6 bow guns and 6 stern guns. The figurehead shows Tyr, blindfolded in robes, holding up scales. Gilding covers the scales and sandals, but carvers left the face bare.
 
@@ -88,7 +88,7 @@ The source does not name a captain or crew member. The ship carries an Admiral's
 
 - [[Dravosi Crown]]: commissioning authority.
 - [[Crown Islands]]: built at the [[Harwick]] Naval Yard.
-- [[Port Tidefall]]: named in source's own Connections list.
+- [[Calder's Tooth and Port Tidefall]]: named in source's own Connections list.
 - [[HCS Constancy]]: named in source's own Connections list.
 - [[HCS Sovereign]]: supersedes this entry as fleet flagship per source's own DM callout.
 

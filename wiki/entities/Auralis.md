@@ -31,18 +31,18 @@ relationships:
 
 # Auralis
 
-**Wants:** to keep the [[Elemental Plane of Water]] sealed behind [[The Drowned Maw]]'s fissure, wards that nearly failed once already. He's reaching through an unwitting bond now to use [[Perrin Black-Jaw|Perrin]] as a hand topside.
+**Wants:** to keep the [[Elemental Plane of Water]] sealed behind [[Drowned Maw]]'s fissure, wards that nearly failed once already. He's reaching through an unwitting bond now to use [[Perrin Black-Jaw|Perrin]] as a hand topside.
 
 > [!narration] Narration
 > Crushing cold, flattening pressure. A stone floor worn smooth by nothing that ever walked it runs into black water. Pale lights drift above like stars, in place of any face or body, the last threads of a two-thousand-year-old machine. A voice arrives with no mouth, unhurried, the pace of something that calls a century *not long*. The lights pulse once and drift on.
 
 ## Relationships
 
-- [[The Drowned Maw]]: his domain on the border between [[the Shattered Sea]] and what lies past the fissure, which he's sworn to [[Guard]] and has held shut since long before Umberlee claimed the waters above it.
+- [[Drowned Maw]]: his domain on the border between [[Shattered Sea]] and what lies past the fissure, which he's sworn to [[Guard]] and has held shut since long before Umberlee claimed the waters above it.
 - [[Antheri Ruins]]: his builders, not a god but [[Antheri]] technology. Dead builders lost a mind and built it a body that could survive the trench floor; that body is the Ruins' deep machine, and Auralis isn't inside it, he is it.
 - [[Elemental Plane of Water]]: what he guards.
 - [[Leviathan]]: what he contains, the first thing through when the wards gave.
-- [[Perrin Black-Jaw]]: his unwitting warlock patron. Perrin credits his cloak with saving him when the [[Vestra]] went down; Auralis did, forging a pact Perrin never agreed to and doesn't know exists. He's already spotted the glowing whale once, on the crossing into [[Calveno]], Auralis reaching for the one hand he has topside. Why Auralis chose him stays unknown.
+- [[Perrin Black-Jaw]]: his unwitting warlock patron. Perrin credits his cloak with saving him when the [[Vestra]] went down; Auralis did, forging a pact Perrin never agreed to and doesn't know exists. He's already spotted the glowing whale once, on the crossing into [[Calven and Calveno]], Auralis reaching for the one hand he has topside. Why Auralis chose him stays unknown.
 - [[Pearl of Souls]]: destabilizing the fissure.
 - [[Shelfworks]]: salvagers picking at the upper tier, unknowingly loosening what keeps his wards standing.
 - [[Umberlee]]: his predecessor over the mortal water above the Maw. She moved in only after his containment work had already held two hundred years.

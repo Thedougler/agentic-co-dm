@@ -52,8 +52,8 @@ Every natural 1 or natural 20 Jean-Claude rolls with these bracers is a moment h
 - [[Jean-Claude Tabarnack]] — Current holder; carried in his kit.
 - [[Bracers of Archery]] — Base effect this cursed pair matches.
 - [[Lavinia Sordi]] — Sold them from her rack at [[La Cenere]].
-- [[La Cenere]] — Purchase site in [[Le Paludi]], [[Calveno]].
+- [[La Cenere]] — Purchase site in [[Le Paludi]], [[Calven and Calveno]].
 
 ## Provenance
 
-Sold by [[Lavinia Sordi]] from her rack at [[La Cenere]] in [[Le Paludi]], [[Calveno]], for 100 gp, Session 8. [[Jean-Claude Tabarnack]] had them identified shortly after, when the nat-1 curse first came to light. The random color that came up was flamingo pink.
+Sold by [[Lavinia Sordi]] from her rack at [[La Cenere]] in [[Le Paludi]], [[Calven and Calveno]], for 100 gp, Session 8. [[Jean-Claude Tabarnack]] had them identified shortly after, when the nat-1 curse first came to light. The random color that came up was flamingo pink.

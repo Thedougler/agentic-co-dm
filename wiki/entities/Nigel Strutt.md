@@ -28,7 +28,7 @@ tier: supporting
 | ------------- | ------------------------------------------------------------------ |
 | **Species**   | [[Human]]                                                              |
 | **Pronouns**  | he/him                                                             |
-| **Location**  | [[Tidefall Chandlery]], [[Port Tidefall]] |
+| **Location**  | [[Tidefall Chandlery]], [[Calder's Tooth and Port Tidefall]] |
 | **Role**      | Crown chandlery clerk                                              |
 
 Young and neat, he moves like someone who read the rules and found them comforting. He knows the prices, the stock, and the Crown charter word for word. Ask once and you'll get what you need.
@@ -46,5 +46,5 @@ No stats given in source.
 ## Connections
 
 - [[Tidefall Chandlery]], where he clerks.
-- [[Port Tidefall]], his home port.
+- [[Calder's Tooth and Port Tidefall]], his home port.
 - [[Dravosi Crown]], his employer.
