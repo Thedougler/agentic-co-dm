@@ -22,7 +22,7 @@ summary: ""
 > Write the spoken look of this place in complete sentences. Routes, senses, and what a body can use. No secrets, DCs, or unearned names.
 
 ---
-## At a glance
+## At a Glance
 Write what this place is now, which linked places it sits between, and which edge can be skipped. Complete sentences.
 
 ---
