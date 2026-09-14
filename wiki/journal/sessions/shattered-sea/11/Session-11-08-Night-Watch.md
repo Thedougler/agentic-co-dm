@@ -139,7 +139,7 @@ Keep the thumb-sized [[fate-spinner]] hidden on [[crissdalynn-khinriss]] while t
 
 | Place | Distance from the party | Cover | Narration |
 | --- | --- | --- | --- |
-| [[Aruhe - Quiet Forest Spoke Ring\|This hub]] / fire | The party starts here on packed dirt around the stone ring unless beat 7 left them 20 feet north. Smoke marks this fire. | Grouped, awake people here are not isolated. Sleepers do not count as a posted watch. Fallen stonepears and two spears are in reach. Matteo stays on this dirt if he is here. | ==_Garden words pass around the fire. Fallen stonepears and two spears lie within reach._== |
+| [[spoke-ring\|This hub]] / fire | The party starts here on packed dirt around the stone ring unless beat 7 left them 20 feet north. Smoke marks this fire. | Grouped, awake people here are not isolated. Sleepers do not count as a posted watch. Fallen stonepears and two spears are in reach. Matteo stays on this dirt if he is here. | ==_Garden words pass around the fire. Fallen stonepears and two spears lie within reach._== |
 | Sleeping mats | 10 feet out from the coals, four mats around the ring. | Open dirt. A person on a mat is still on this hub. | ==_Four woven mats mark the fire's edge. Salt-stiff cloth shows where people sleep._== |
 | South trail / last grass | 20 feet south, then back toward the packed inland prints. | Breaking off this way is a rebuild. Gold-green still shows between the last trunks. A Dash does not reach the beach. | ==_Packed prints leave through the last trunks toward a bright strip of grass._== |
 | West trail / river | 30 feet west, down a root-cut. | Open root-cut. A Dash can reach the river. This is not [[river-slack-basin]]. | ==_The dirt drops between hanging roots. Clear water runs close below._== |

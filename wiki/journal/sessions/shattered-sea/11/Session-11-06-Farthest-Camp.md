@@ -139,7 +139,7 @@ Hear the garden invitation before anyone leaves this fire. If they hear it, [[Se
 
 | Place | Distance from the party | Cover | Narration |
 | --- | --- | --- | --- |
-| [[Aruhe - Quiet Forest Spoke Ring\|This fire]] / [[matteo-scola]] | Here, on the packed dirt around the stone ring. Matteo sits 5 feet from the coals if the party pulled him. Four woven mats lie 10 feet out. | Grouped people here are not isolated. Matteo talks from this dirt. | ==_He watches the people talking, not the north trails. His shirt is warm from the fire and smells of smoke._== |
+| [[spoke-ring\|This fire]] / [[matteo-scola]] | Here, on the packed dirt around the stone ring. Matteo sits 5 feet from the coals if the party pulled him. Four woven mats lie 10 feet out. | Grouped people here are not isolated. Matteo talks from this dirt. | ==_He watches the people talking, not the north trails. His shirt is warm from the fire and smells of smoke._== |
 | Garden group | 10 feet toward the north trail mouths, still on this hub. | They look into the wood whenever branches move. | ==_They repeat, come admire her garden, this way, leave the living plants. When a branch moves, they look north and stop talking._== |
 | Ship group | 10 feet toward the south trail, still on this hub. | They watch the last grass more than the north trails. | ==_They talk over the others. They say she is leading people into danger, and anyone who listens is mad._== |
 | South trail / last grass | 20 feet south. Crushed prints enter this hub here. | Breaking off this way is a rebuild. A Dash does not reach the beach. | ==_Footprints run south through the last trees into gold-green grass._== |

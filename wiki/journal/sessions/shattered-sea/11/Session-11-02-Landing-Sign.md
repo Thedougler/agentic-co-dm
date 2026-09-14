@@ -119,7 +119,7 @@ If anyone plucks a living plant, fishes, traps, or kills to carry flesh on this 
 
 | Place | Distance from the party | Cover | Narration |
 | --- | --- | --- | --- |
-| [[Aruhe - River Landing Bank\|This bank]] / grass and river | Here, in eight-foot grass. The river is immediately east and wraps south around this bank. | This grass hides a standing body, is **Difficult Terrain**, and heavily obscures anything beyond 10 feet. | ==_The grass closes over your shoulders, and the river rasps beside the bank._== |
+| [[landing-bank\|This bank]] / grass and river | Here, in eight-foot grass. The river is immediately east and wraps south around this bank. | This grass hides a standing body, is **Difficult Terrain**, and heavily obscures anything beyond 10 feet. | ==_The grass closes over your shoulders, and the river rasps beside the bank._== |
 | The used stop | 15 feet west of the water, on the river side of the prints. | Open grass around ash, crate, bowls, and fallen fruit. | ==_Cold ash fills the stone ring in scraped dirt. The shut crate, bowls, orange fruit, and torn skins are within reach; the skins smell sharp and sweet._== |
 | Terrace woods | 20 feet west of the prints. Crash-landed party members start here, **Prone**. | Thin cover among mossy garden stone, mangrove roots, and fruiting steps. | ==_Moss coats the low garden walls, and wet steps climb into the trees among split fruit and pink-gold globes._== |
 | Upriver prints | The prints run 60 feet north up this bank, then off toward the smoke. | Following that trail is [[Session-11-03-Wolfrabbits]]. | ==_Sharp sole marks hold the mud. A crushed path runs north beside the river and leaves this bank._== |

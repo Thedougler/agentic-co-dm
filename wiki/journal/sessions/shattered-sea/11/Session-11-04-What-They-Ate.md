@@ -106,7 +106,7 @@ If anyone plucks living plants, traps, or kills to carry flesh here, mark [[taki
 
 | Place | Distance from the party | Cover | Narration |
 | --- | --- | --- | --- |
-| [[Aruhe - River - Line Bank\|This bank]] / grass and river | Here, facing north. Eight-foot grass. The river is immediately east. | The grass hides a standing body, is Difficult Terrain, and heavily obscures beyond 10 feet. | ==_The crushed track runs through wet sand beneath the grass. Split skins have burst under the nearest bush._== |
+| [[line-bank\|This bank]] / grass and river | Here, facing north. Eight-foot grass. The river is immediately east. | The grass hides a standing body, is Difficult Terrain, and heavily obscures beyond 10 feet. | ==_The crushed track runs through wet sand beneath the grass. Split skins have burst under the nearest bush._== |
 | River-side pile and pole | 10 feet east of the prints, at the water. | Open sand around tawny fallen fruit, a wooden pole, baskets, and fish bones. | ==_The line taps the current beside the baskets. Fish bones and silver scales lie among the wet stones, while dark mud marks the living stems above them._== |
 | Downstream pile | 20 feet south along this same bank. | Open grass around pale-green fallen fruit and a second fruiting bush. | ==_Pale-green fruit and burst skins cover the sand below the second bush. The ground is clean until the living stems begin._== |
 | Inland pile | 25 feet west toward the jungle wall. | Thin cover as the grass thickens toward the trees. | ==_Rinds and whole fruit gather where the grass meets the trees. Sweet rot is strongest here, and blood-dark mud touches only living roots._== |
