@@ -107,6 +107,8 @@ Wiki page `.md` **basenames** (not attachment images — those stay kebab `{slug
 
 **No mass rename** until Nick greenlights after this standard lands. Lint/remorph are ATE follow-on (issue #69).
 
+Structural context waste (multi-H1 satellites, Foundry dump-copy beside Sheet, empty sections left in place) is a token bug — see `docs/agents/context-waste-method.md`. Not a prose-quality score.
+
 Cross-kind DM-usability rules for templates and filed pages: frontmatter core, shared Title Case headings (`At a Glance`, `At the Table`, `Connections`, `Secrets`, `Provenance`, `Art`), callout surfaces, omit-empty, and no synonym headings for the same job. Full text: `wiki/templates/00-shared-grammar.md`. Image assets: flat `wiki/attachments/{subject-slug}-{role}.{ext}` with roles `banner`\|`portrait`\|`token`\|`battlemap`\|`overview`\|`reference`\|`handout`\|`teaser` (see shared grammar Attachment filenames).
 
 When a shared job appears, use the shared heading name. DM-visible labels use Title Case / spaced words — never snake_case in body or table Field columns (`One thing`, not `one_thing`); YAML keys may stay snake_case. Kind-specific job blocks keep their own names. `Relationships` is not a Connections synonym — use `## Connections`. Recap/session/run spoken surfaces use only `[!narration]`; owner pages may add `[!mechanic]` / `[!secret]`.
