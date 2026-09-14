@@ -41,7 +41,7 @@ Design basis: city gazetteer + meaningful districts + layered urban activity; si
 > [!narration] Arrival
 > Write what the party can perceive as they enter or first overlook the city. Establish scale, silhouette, movement, sound, smell, and one unmistakable landmark. Use only information immediately available to them; no secrets, hidden history, or unearned names.
 
-## At a glance
+## At a Glance
 
 |                 |                                                                 |
 | --------------- | --------------------------------------------------------------- |
@@ -221,7 +221,9 @@ Keep faction histories and full agendas on their own pages. This table answers o
 > [!question] Fault line
 > What single disagreement, scarcity, succession, grievance, or incompatible ambition currently prevents the city's powers from settling into equilibrium?
 
-## Relationships
+## Connections
+
+<!-- Faction/power ties (shared Connections job). -->
 
 | Side        | Relationship                                      | Side        | What keeps this unstable |
 | ----------- | ------------------------------------------------- | ----------- | ------------------------ |
@@ -311,7 +313,7 @@ Check a rumor when the party hears it; replace stale entries between visits.
 * [ ]
 * [ ]
 
-## Secrets & clues
+## Secrets
 
 <!--
 Facts the party could discover during current play. These are truths or useful clues, not scripted scenes.
@@ -385,7 +387,7 @@ For incidental locations that do not deserve permanent notes unless play makes t
 
 ---
 
-# Connections
+## Connections
 
 ## Routes
 

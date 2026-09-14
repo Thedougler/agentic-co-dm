@@ -82,6 +82,12 @@ Done when: the kind's jobs are answered, empty sections are omitted, spoken look
 Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<session-number>/` (Session 11 → `wiki/journal/sessions/shattered-sea/11/`). Session plan `Session-<n>-00-<Title>.md`, numbered live beats `Session-<n>-<BB>-<Label>.md`, and that night’s companion notes only. Owner pages stay outside. `_raw/` is staging. Two campaigns do not share a session-number folder. Post-play logs use `type: recap` and copy `wiki/templates/recap.md` (not a map of `session-prep`). `wiki/templates/session.md` is deprecated as copy-start; `type: session` remains legacy in the enum. Do not file `{{title}} - B01 - Strong Start` names.
 
 
+## Shared grammar
+
+Cross-kind DM-usability rules for templates and filed pages: frontmatter core, shared Title Case headings (`At a Glance`, `At the Table`, `Connections`, `Secrets`, `Provenance`, `Art`), callout surfaces, omit-empty, and no synonym headings for the same job. Full text: `wiki/templates/00-shared-grammar.md`.
+
+When a shared job appears, use the shared heading name. Kind-specific job blocks keep their own names. `Relationships` is not a Connections synonym — use `## Connections`. Recap/session/run spoken surfaces use only `[!narration]`; owner pages may add `[!mechanic]` / `[!secret]`.
+
 ## Approval (FR-019)
 
 Wiki facts change only after the DM accepts. Named ingest of approved sources, and thin complete-sentence stubs for names those sources contain (including as links), may file without a second accept. Invented names not in the source are Work — chat proposal first. Rejected proposals leave no page.

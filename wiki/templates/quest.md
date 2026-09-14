@@ -42,7 +42,7 @@ campaign threads concise enough to review before play.
 > **Why now:** What makes this matter now?
 > **Deadline:** None, or the fictional event after which the situation changes.
 
-## At a glance
+## At a Glance
 
 |                 |                                            |
 | --------------- | ------------------------------------------ |

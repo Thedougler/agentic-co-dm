@@ -46,7 +46,7 @@ Keep persistent geography separate from ephemeral events. Give a detailed site i
 > [!narration] Narration
 > Describe the region as a traveler first experiences it: horizon, terrain, weather, movement, sound, and one unmistakable feature. Complete sentences. No secrets, DCs, or unearned names.
 
-## At a glance
+## At a Glance
 
 |                   |                                                                |
 | ----------------- | -------------------------------------------------------------- |

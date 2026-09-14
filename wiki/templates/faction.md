@@ -163,7 +163,7 @@ flexGrow=1
 
 ---
 
-## Relationships
+## Connections
 
 <!-- Record actionable relationships, not a complete diplomatic encyclopedia. A stance should explain what the relationship causes at the table. -->
 
