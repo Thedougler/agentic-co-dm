@@ -7,6 +7,7 @@ tags: [shattered-sea, aruhe, item]
 sources:
   - "wiki/_archive/Ghost Plum.md"
   - "wiki/_raw/Aruhe - Ghost Plum.md"
+  - "session-11-transcript.md"
 summary: A rare Aruhe fruit that makes its eater Invisible for one hour.
 provenance:
   extracted: 1.0
@@ -17,9 +18,9 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T00:00:00Z
-updated: 2026-09-12T00:00:00Z
+updated: 2026-09-14
 type: item
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 region: aruhe
 kind: consumable
@@ -41,3 +42,5 @@ relationships:
 Consumable, Rare.
 
 When you eat this fruit, you have the **Invisible** condition for **1 hour**.
+
+Session 11. [[matteo-scola]] ate one in front of the party and vanished. Duration talk at the table mixed one hour with ten minutes; this page keeps one hour until a later ruling replaces it. ^[ambiguous]

@@ -8,7 +8,7 @@ sources:
   - "campaign-os:talon-skarn.md"
   - "wiki/_archive/Talon Skarn.md"
   - "Talon Skarn"
-summary: Countless peregrine apprentice and CR 13 flying skirmisher; his stoop-and-chain combat kit supports the Rule of Two rivalry with Talon Vantyrus.
+summary: Countless peregrine apprentice caught mid-theft on Aruhe; he has spent one Legendary Resistance and is still in Crissdalynn's face.
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -18,13 +18,13 @@ lifecycle: canon
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T06:23:47Z
-updated: 2026-09-13
+updated: 2026-09-14
 type: npc
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 status: alive
 role: rival
-location: Midchain
+location: Aruhe - River Slack Basin
 faction: Countless
 visibility: dm
 relationships:
@@ -32,6 +32,10 @@ relationships:
     type: related_to
 ---
 # Talon Skarn
+
+## Now
+
+Session 11. He stooped on [[crissdalynn-khinriss]] during last watch at [[river-slack-basin]]. The stunning strike missed. He reached for the pack that might hold the [[fate-spinner]]. She stunned him; he spent one Legendary Resistance and stayed up. Play stopped there. The job is still the object, not a duel to 0 hit points.
 
 ![[talon-skarn-reference-sheet.jpg|Talon Skarn character reference sheet]]
 

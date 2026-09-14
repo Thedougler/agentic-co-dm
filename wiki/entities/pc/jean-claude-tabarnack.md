@@ -16,7 +16,7 @@ sources:
   - "wiki/_archive/galleries/jean-claude-tabarnack-gallery.md"
   - "wiki/_raw/Grung clans.md"
   - "Foundry VTT Shattered-Sea actor Jean Claude Tabarnack 2026-09-13"
-summary: Level 5 Gloom Stalker Grung at 51/51 HP whose red beret marks censure and whose sister Simone still hunts him.
+summary: Level 5 Gloom Stalker Grung, catatonic after the bloodhawk stoop, carried in Delmar's coat.
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -210,6 +210,7 @@ Wisdom. Save DC 14. Attack +6. Slots L1 4/4, L2 2/2. DDB dumped the full Ranger 
 | Session | Encounter | Note |
 | ------- | --------- | ---- |
 | 04 | Sewers | Invisible with Perrin; crew delivery after Crissdalynn's dive-seize. Kyzil heard a voucher for him. |
+| 11 | Aruhe inland | Went catatonic when the adult bloodhawk stooped. Conscious, stiff, silent. Carried in Delmar's coat swaddle. |
 
 ## Voice
 

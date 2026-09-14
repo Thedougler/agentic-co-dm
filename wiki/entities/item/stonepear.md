@@ -4,7 +4,7 @@ aliases:
   - Aruhe - Stonepear
 category: entities
 tags: [shattered-sea, aruhe, item]
-sources: ["wiki/_raw/Aruhe - Stonepear.md"]
+sources: ["wiki/_raw/Aruhe - Stonepear.md", "session-11-transcript.md"]
 summary: Rare Aruhe fruit that grants Resistance to all damage for one minute.
 provenance:
   extracted: 1.0
@@ -15,9 +15,9 @@ lifecycle: proposed
 lifecycle_changed: 2026-09-12
 tier: supporting
 created: 2026-09-12T00:00:00Z
-updated: 2026-09-12T00:00:00Z
+updated: 2026-09-14
 type: item
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 region: aruhe
@@ -42,6 +42,8 @@ relationships:
 ## Effect
 
 Stonepear is a rare consumable. As a Bonus Action, eat the fruit to gain **Resistance to all damage** for **1 minute**.
+
+Session 11 identified this at [[Aruhe - River Slack Basin]]. The party did not spend one in the fight that followed.
 
 ## Connections
 

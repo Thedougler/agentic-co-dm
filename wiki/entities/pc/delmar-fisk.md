@@ -18,7 +18,7 @@ sources:
   - "Session 07 - Recap.md"
   - "Session 10 - Recap.md"
   - "Foundry VTT Shattered-Sea actor Admiral Delmar A. Fisk 2026-09-13"
-summary: Level 5 Swashbuckler at 35/38 HP who stole the Pearl of Souls and now carries Umberlee's price.
+summary: Level 5 Swashbuckler carrying catatonic Jean-Claude on Aruhe; first watch at the otter camp.
 provenance:
   extracted: 0.9
   inferred: 0.1
@@ -188,6 +188,7 @@ Mobile ranged and melee skirmisher — Sneak Attack (3d6) on the blunderbuss is 
 | Session | Encounter | Note |
 | ------- | --------- | ---- |
 | 06 | Primary Chamber | One-shot a purple-caste enforcer with a pistol Sneak Attack. Resisted Dominate Person with Jean Claude's help. Catarina enchanted the blunderbuss mid-fight. Leveled to Rogue 5. |
+| 11 | Aruhe inland | Caught catatonic Jean-Claude and swaddled him in the coat. Rifle dropped a Spiguar; it fled. First watch. Heard admire my garden. |
 
 ## Voice
 

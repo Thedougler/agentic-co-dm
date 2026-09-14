@@ -9,7 +9,7 @@ sources:
   - "Foundry VTT Shattered-Sea actor Perrin Black-Jaw 2026-09-13"
   - "wiki/_archive/perrin-black-jaw.md"
   - "wiki/_archive/combat-profile/perrin-black-jaw-combat-profile.md"
-summary: Warlock 2 / Lore Bard 3 Rattkin at 49/49 HP who owes Nona an Aruhe survey and carries her sending stone.
+summary: Warlock 2 / Lore Bard 3 who baited Aruhe hunts with illusions and took Tasha's laughter from a lesser black lotus.
 lifecycle: canon
 created: 2026-09-12
 updated: 2026-09-14
@@ -196,6 +196,7 @@ Charisma. Save DC 16. Attack +8. Bard slots L1 4/4, L2 2/2. Pact Magic 2/2 (Warl
 | 01 | Saltwright boarding | Minor Illusion on the hold doorway; resisted Grung toxin gas. |
 | 04 | Kyzil spar / sewers | Healing Word and Inspiration support; invisible sewer scout with Jean Claude; warned Nona. |
 | 06 | Primary Chamber | Dropped to 0 HP; patron voice on the stabilizing death save; came back Bard 3 / Warlock 2. |
+| 11 | Aruhe inland | Illusion bait on bloodhawks and wolfrabbits. Mage Handed the lesser black lotus into the river; it hit him with Tasha's Hideous Laughter. Middle watch with Matteo. |
 
 ## Voice
 

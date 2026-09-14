@@ -1,8 +1,8 @@
 {
   "version": 1,
   "stats": {
-    "total_sources_ingested": 808,
-    "total_pages": 704,
+    "total_sources_ingested": 811,
+    "total_pages": 718,
     "packet_ingest-raw-2026-09-13-gh-2": 515
   },
   "/Users/nick/agentic-co-dm/wiki/_raw/arc-blight-of-aruhe.md": {
@@ -1233,6 +1233,37 @@
       "pages_produced": [
         "entities/lore/Auralis.md"
       ]
+    },
+    "_raw/session-11-transcript.md": {
+      "content_hash": "sha256:ebaab304136e0feef351bfc9a0def3f7a3a6b4e607220f60223b3523371e1c26",
+      "last_ingested": "2026-09-14T22:30:00Z",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-Recap.md",
+        "entities/npc/matteo-scola.md",
+        "synthesis/Story So Far.md",
+        "entities/lore/Taking on Aruhe.md",
+        "entities/item/Fate Spinner.md",
+        "entities/npc/Talon Skarn.md",
+        "entities/pc/Jean-Claude Tabarnack.md",
+        "entities/pc/Crissdalynn Khinriss.md",
+        "entities/pc/Delmar Fisk.md",
+        "entities/pc/Perrin Black-Jaw.md",
+        "entities/item/Ghost Plum.md",
+        "entities/item/Aruhe - Stonepear.md",
+        "entities/item/Redheart Berry.md",
+        "entities/item/Aruhe - Lesser Black Lotus.md"
+      ],
+      "source_type": "document",
+      "project": "shattered-sea"
+    },
+    "_raw/session-11-summary.md": {
+      "content_hash": "sha256:5b818e023af61a0e501284d8bfb8d7ddd9fa3f1106b962724346147d4bfcf335",
+      "last_ingested": "2026-09-14T22:31:00Z",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-Recap.md"
+      ],
+      "source_type": "document",
+      "project": "shattered-sea"
     }
   },
   "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Beach.md": {
@@ -8244,5 +8275,5 @@
     "project": "shattered-sea",
     "packet": "ingest-raw-2026-09-13-gh-2"
   },
-  "last_updated": "2026-09-13T21:48:40Z"
+  "last_updated": "2026-09-14T21:34:24Z"
 }

@@ -9,7 +9,7 @@ sources:
   - "story-so-far.md"
   - "crissdalynns-dreidel.md"
   - "campaign-os:fate-spinner.md"
-summary: "Also called the dreidel; Talon Vantyrus sent a ship to take it from Crissdalynn."
+summary: "Also called the dreidel; Crissdalynn still holds it while Talon Skarn is in her face at the otter camp."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -19,7 +19,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T19:35:00Z
-updated: 2026-09-13
+updated: 2026-09-14
 type: item
 reveal: unrevealed
 campaign: shattered-sea
@@ -57,7 +57,7 @@ Edge cases: an invalid target or the target's plane-shift ends the use. It grant
 
 ## At a Glance
 
-Also called the dreidel. [[crissdalynn-khinriss]] carries it as her meditation focus; it was gifted by her mentor [[master-kyzil]] before her pilgrimage. Already in play since before Session 01. Talon Vantyrus has sent a ship to take it.
+Also called the dreidel. [[crissdalynn-khinriss]] carries it as her meditation focus; it was gifted by her mentor [[master-kyzil]] before her pilgrimage. Already in play since before Session 01. [[talon-vantyrus]] sent a ship for it. In Session 11, [[talon-skarn]] stooped on Crissdalynn's last watch at [[river-slack-basin]] and went for the pack. Play stopped with the dreidel still on her.
 
 ## At the Table
 
@@ -74,6 +74,7 @@ When she spins it tonight, she can open a same-plane vision on someone she perso
 - [[soul-incarnate]] — Founding documents reference the same old intervention tradition.
 - [[delmar-fisk]] — The life she risked herself to save that bonded the dreidel.
 - [[Grung]] — She used the dreidel in-fiction to calm a Grung child (Session 06).
+- [[talon-skarn]] — Session 11 theft attempt in progress; one Legendary Resistance spent; the object is still Held.
 
 ## Secrets
 

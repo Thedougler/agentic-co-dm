@@ -4,7 +4,7 @@ aliases:
   - Aruhe - Lesser Black Lotus
 category: entities
 tags: [shattered-sea, aruhe, item]
-sources: ["wiki/_raw/Aruhe - Lesser Black Lotus.md"]
+sources: ["wiki/_raw/Aruhe - Lesser Black Lotus.md", "session-11-transcript.md"]
 summary: Scorched terrace flower that answers violent disturbance by casting a nearby spell back at its attacker.
 provenance:
   extracted: 1.0
@@ -15,9 +15,9 @@ lifecycle: proposed
 lifecycle_changed: 2026-09-12
 tier: supporting
 created: 2026-09-12T00:00:00Z
-updated: 2026-09-12T00:00:00Z
+updated: 2026-09-14
 type: item
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 region: aruhe
@@ -44,6 +44,8 @@ relationships:
 - **Wild Spellburst.** The nearest creature with Spellcasting, Pact Magic, or a similar feature chooses a ranged spell attack it knows or has prepared. The lotus casts that spell from its own position at the caster's highest available spell slot. A cantrip uses the caster's level for damage scaling. The spell uses the caster's spell attack bonus and spellcasting ability, targets the creature that threatened the lotus, supplies its own components, and cannot maintain Concentration. The lotus is destroyed after the spell resolves.
 - **Lesser harvest.** A carefully harvested bloom yields unstable magical material worth one-quarter of a [[black-lotus-heart]]. Four harvests can be refined into one Heart with **Intelligence (Arcana) — `DC 15`** during a Long Rest. Success → The four portions become one Heart. Failure → The material remains unstable and cannot be refined during that rest.
 - **Counterplay.** Step around the bloom, probe the terrace ahead, keep spellcasters away from it, trigger it from range with a disposable target, or harvest it carefully before disturbing the petals.
+
+Session 11. The party found a bloom near the wolfrabbit grass, then another near the otter camp. [[Perrin Black-Jaw]] used Mage Hand to set it on the river. The bloom answered with *Tasha's Hideous Laughter* centered on him, then drifted downstream. That table burst used the nearest caster's defensive spell rather than the ranged-attack line above. ^[ambiguous]
 
 ## Connections
 

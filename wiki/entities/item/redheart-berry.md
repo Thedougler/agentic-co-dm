@@ -4,7 +4,7 @@ aliases:
   - Redheart Berry
 category: entities
 tags: [shattered-sea, aruhe, item]
-sources: ["wiki/_archive/Redheart Berry.md"]
+sources: ["wiki/_archive/Redheart Berry.md", "session-11-transcript.md"]
 summary: A rare Aruhe berry that restores 8d4 + 8 hit points as a Bonus Action.
 provenance:
   extracted: 1.0
@@ -15,9 +15,9 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T00:00:00Z
-updated: 2026-09-12T00:00:00Z
+updated: 2026-09-14
 type: item
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 region: aruhe
 kind: consumable
@@ -39,3 +39,5 @@ relationships:
 Consumable, Rare.
 
 As a Bonus Action, eat this berry to regain `8d4 + 8` hit points.
+
+Session 11. [[crissdalynn-khinriss]] ate a fallen berry and regained `30` hit points. She is carrying five more.

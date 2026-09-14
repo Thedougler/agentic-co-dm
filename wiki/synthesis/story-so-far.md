@@ -17,8 +17,9 @@ sources:
   - "Session 08 - Recap.md"
   - "Session 09 - Recap.md"
   - "Session 10 - Recap.md"
+  - "Session 11 - Recap.md"
   - "story-so-far.md"
-summary: "Sessions 01–10 from the Saltwright hold to Aruhe; Season 1 is closed and Season 2's live handle is the Hungry Isle."
+summary: "Sessions 01–11 from the Saltwright hold to an otter-camp cliffhanger on Aruhe; Season 2's live handle is the Hungry Isle."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -41,7 +42,7 @@ relationships:
 ---
 # Story So Far
 
-Sessions 01 through 10 of the [[shattered-sea]]. Recap voice; past tense; live handle at the end. Season 1 is closed. Season 2's live handle is [[aruhe]].
+Sessions 01 through 11 of the [[shattered-sea]]. Recap voice; past tense; live handle at the end. Season 1 is closed. Season 2's live handle is [[aruhe]].
 
 > [!narration] Narration
 > A green crew on the stolen Crown cutter *Uncertainty* has carried Calveno's missing-persons crisis into the Midchain. The crew is now at and around Aruhe, where survivors describe a raid landing that the island is taking apart.
@@ -76,9 +77,11 @@ The crew disabled the following ship with gust, broadside, and fire without boar
 
 A landing party found terraces, dead people near taking-places, wolfrabbits, black lotus, spore plants, and dangerous caterpillars. Jean-Claude killed a spore plant; an invisible [[crown-squid]] rose from the canopy, cut Delmar, and tried to pull the party in. Illusion and flight brought them back over the terraces; the squid stopped at the tree line. The ship stayed mobile instead of anchoring, and inland survivors remain inland.
 
+Session 11 left the squid to an adult [[bloodhawk]]. [[jean-claude-tabarnack]] went catatonic. The inland four followed river smoke, learned fallen fruit from living stems, drove off a [[spiguar]], and pulled [[matteo-scola]] from otters at [[river-slack-basin]]. They camped there instead of reaching the farther survivors. On last watch a falcon, [[talon-skarn]], stooped on [[crissdalynn-khinriss]] for the [[fate-spinner]] and is still in her face.
+
 ## Open handle — Aruhe now
 
-The crew is at and around [[aruhe]] aboard mobile [[Uncertainty]]. Three storm survivors and two Aruhe survivors are aboard; inland people remain in the terraces.
+The inland four are at [[river-slack-basin]] with [[matteo-scola]], mid-watch, with [[talon-skarn]] in Crissdalynn's face. [[jean-claude-tabarnack]] is catatonic in Delmar's coat. *[[Uncertainty]]* is still offshore. Other inland survivors remain farther up the river.
 
 [[survey-aruhe-as-a-tangle-anchor]] is active, but passage must not become possession. The island's taking-places, dead, and crown squid are immediate pressure.
 
@@ -88,6 +91,6 @@ The crew is at and around [[aruhe]] aboard mobile [[Uncertainty]]. Three storm s
 
 [[nona-black-jaw]]'s unspecified favor, the unread Otar scrap, the unscratched chair, [[red-wake]], and the Karath captive pipeline remain unresolved.
 
-Session pages: [[journal/sessions/shattered-sea/01/Session-01-Recap]] through [[journal/sessions/shattered-sea/10/Session-10-Recap]].
+Session pages: [[journal/sessions/shattered-sea/01/Session-01-Recap]] through [[journal/sessions/shattered-sea/10/Session-10-Recap]], and [[journal/sessions/shattered-sea/11/Session-11-Recap]].
 
 A Season 2 pitch names an open Midchain sandbox after the Calveno repair. Live Season 2 handle on this page remains the Hungry Isle until play moves it.

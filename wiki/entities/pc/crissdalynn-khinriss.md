@@ -11,7 +11,7 @@ sources:
   - "wiki/_archive/session-logs/crissdalynn-khinriss-session-log.md"
   - "wiki/_archive/combat-profile/crissdalynn-khinriss-combat-profile.md"
   - "wiki/_archive/va-scripts/crissdalynn-khinriss-voice-script.md"
-summary: Level 5 Kensei Aarakocra at 33/33 HP plus 6 temp who pulled Delmar from the Red Lady.
+summary: Level 5 Kensei Aarakocra holding the Fate Spinner at the otter camp while Talon Skarn is in her face.
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -181,6 +181,7 @@ Wind Caller racial casting only. Not a full prepared caster on the sheet.
 | Shortbow (Vex) | 1 | Equipped |
 | Backpack, quiver | 1 | Equipped |
 | Arrows | 20 | — |
+| [[redheart-berry]] | 5 | Fallen and plucked fruit from Session 11; one already eaten for `30` HP |
 | Rope, torches, waterskin, oil, Calligrapher's Supplies, rations, bedroll, tinderbox | — | Torches 10, oil 2, rations 10 |
 
 ## Session Log
@@ -200,6 +201,7 @@ Arc threads recovered from the archive session compile (structure only; facts al
 | 06 | Primary Chamber | Deflected Tongue Lash twice; down to 1 HP; killed Vashu in melee; grappled Solange before teleport. Leveled to Monk 5. |
 | 07 | Otar | Tattoo active; deflected Tongue Lash and redirected. Later kept a diamond ring from Iacopo Fieschi. |
 | 08 | Cabinet / La Cenere | Secured Dragonhide Belt play; bought a cloak sold as Nightmantle, identified as cursed Cloak of Displacement. |
+| 11 | Aruhe inland | Ate a fallen redheart berry (`30` HP). Pulled Matteo from otters. Last watch. Skarn stooped for the dreidel; stunning strike landed, then Legendary Resistance. Fight open. |
 
 ## Voice
 
