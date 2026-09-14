@@ -48,16 +48,16 @@ flexGrow=2
 ## At a Glance
 
 - **Stakes:** The northbound sign is cooling. Delay thins the smoke and softens the wet prints.
-- **Goal / exit:** Follow the prints toward the smoke, then enter [[Aruhe - Grasslands Torn Crossing]].
+- **Goal / exit:** Follow the prints toward the smoke, then enter [[torn-crossing]].
 - **Danger:** Taking from a living plant brings hostile local life later.
 - **Silence:** Present the bank, ask what the party does, and wait. If the party freezes, advance the clock once at the end of the round.
-- **Situation magnets:** Lingering cools the sign. Plucking a living stem marks [[Taking on Aruhe]].
+- **Situation magnets:** Lingering cools the sign. Plucking a living stem marks [[taking-on-aruhe]].
 ```
 ````
 
 ## Now
 
-Start the party on [[Aruhe - River Landing Bank]]. Anyone who landed in the grass starts there; anyone who crash-landed starts **Prone** in the terrace woods. The clear river runs along the east edge and bends south around the bank. Wet prints begin in the mud and run 60 feet north toward the smoke. The used stop is 15 feet west of the water, on the river side of the prints. Mossy terrace stone stands 20 feet west of the prints. A 30-foot move stays on this bank; a 60-foot Dash follows the prints north off it. The smoke is a thin column on the northern horizon, not a reachable place in this slice.
+Start the party on [[landing-bank]]. Anyone who landed in the grass starts there; anyone who crash-landed starts **Prone** in the terrace woods. The clear river runs along the east edge and bends south around the bank. Wet prints begin in the mud and run 60 feet north toward the smoke. The used stop is 15 feet west of the water, on the river side of the prints. Mossy terrace stone stands 20 feet west of the prints. A 30-foot move stays on this bank; a 60-foot Dash follows the prints north off it. The smoke is a thin column on the northern horizon, not a reachable place in this slice.
 
 ## Action cards
 
@@ -69,12 +69,12 @@ Start the party on [[Aruhe - River Landing Bank]]. Anyone who landed in the gras
 - **Corridor:** Movement through it leaves a visible crushed corridor.
 
 ```col-md
-**[[Taking on Aruhe]].** Fruit already on the ground is received, not taken. Plucking a living plant, fishing, trapping, or killing to carry flesh counts as a take.
+**[[taking-on-aruhe]].** Fruit already on the ground is received, not taken. Plucking a living plant, fishing, trapping, or killing to carry flesh counts as a take.
 
 Do not roll the hazards table on this card.
 
 ```col-md
-**Fallen [[Redheart Berry]].** Red berries hang from short, thick stems at the wet margin.
+**Fallen [[redheart-berry]].** Red berries hang from short, thick stems at the wet margin.
 
 - **Fallen:** Eating a fallen berry is a Bonus Action and regains `8d4 + 8` hit points.
 - **Orange fruit:** The orange fruit at the crate has no listed healing effect.
@@ -86,7 +86,7 @@ Do not roll the hazards table on this card.
 **Identify the red berries.** **Intelligence (Nature)**
 
 - `DC 10` → The red berries are edible, not poison.
-- `DC 15` or *Identify* → Eating a fallen [[Redheart Berry]] is a Bonus Action and regains `8d4 + 8` hit points.
+- `DC 15` or *Identify* → Eating a fallen [[redheart-berry]] is a Bonus Action and regains `8d4 + 8` hit points.
 ````
 
 > [!narration] Initial Narration
@@ -111,7 +111,7 @@ At the end of each round, advance the threat clock once while anyone remains on 
 ```col-md
 ## Secondary objective
 
-If anyone plucks a living plant, fishes, traps, or kills to carry flesh on this bank, mark [[Taking on Aruhe]]. The later hazards-table roll on [[Session-11-00-Random-Tables]] uses `2d8` and keeps the lower result. Fruit already on the ground is received, not taken, and the trail and smoke remain either way.
+If anyone plucks a living plant, fishes, traps, or kills to carry flesh on this bank, mark [[taking-on-aruhe]]. The later hazards-table roll on [[Session-11-00-Random-Tables]] uses `2d8` and keeps the lower result. Fruit already on the ground is received, not taken, and the trail and smoke remain either way.
 ```
 ````
 
@@ -132,7 +132,7 @@ If anyone plucks a living plant, fishes, traps, or kills to carry flesh on this 
 | Assess the situation | **Wisdom (Perception)**, **Wisdom (Survival)**, or **Intelligence (Investigation)** | `DC 10` | The ash, tracks, bowls, and rinds are recent. The route runs north toward the smoke. Fruit on the ground is off the plant, while red berries hang at the wet margin. The group's size and treatment of living fruit remain unknown. | The looker identifies the northbound trail but learns nothing else about the stop or fruit. | The looker gains no useful detail and remains on this bank. |
 | Follow the north prints and smoke off this bank | Walk the crushed corridor north off this bank. | Commit | Following the corridor commits the party to the north trail toward the smoke. Hand to [[Session-11-03-Wolfrabbits]] and end this scene. | This is a binary choice. The party leaves the bank only by following the corridor. | This is a binary choice. The party remains on this bank until it chooses a route. |
 | Search the crate and fire scrape | **Intelligence (Investigation)** or **Wisdom (Perception)** | `DC 10` | The searcher can carry the closed crate and confirms that the scrape is cold ash in cleared dirt. The search does not establish the group's size or treatment of living fruit. | The searcher confirms that the stop is recent but remains at the crate. | The searcher remains at the used stop, and the crate's contents stay unknown. |
-| Pick fruit on this river-valley bank | **Intelligence (Nature)** or **Wisdom (Survival)** to distinguish fallen fruit from living stems. Use **Utilize** if the party member plucks without sorting. Deliberately plucking a living stem counts as a take. | `DC 10` | The forager takes only fruit already on the ground, which does not count as a take. Eating a fallen [[Redheart Berry]] is a Bonus Action and regains `8d4 + 8` hit points. The trail and smoke remain. | The forager plucks some living stems. Mark [[Taking on Aruhe]]; the later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. | The forager strips living fruit. Mark [[Taking on Aruhe]]; the later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. |
+| Pick fruit on this river-valley bank | **Intelligence (Nature)** or **Wisdom (Survival)** to distinguish fallen fruit from living stems. Use **Utilize** if the party member plucks without sorting. Deliberately plucking a living stem counts as a take. | `DC 10` | The forager takes only fruit already on the ground, which does not count as a take. Eating a fallen [[redheart-berry]] is a Bonus Action and regains `8d4 + 8` hit points. The trail and smoke remain. | The forager plucks some living stems. Mark [[taking-on-aruhe]]; the later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. | The forager strips living fruit. Mark [[taking-on-aruhe]]; the later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. |
 
 For an intent not listed, keep the used stop and northbound route as anchors. Decide whether the approach lingers, takes from living stems, or follows the trail, then use the zones and clock.
 
@@ -158,7 +158,7 @@ flexGrow=3
 
 ## How the Scene Resolves
 
-The party follows the north prints toward the smoke and enters [[Aruhe - Grasslands Torn Crossing]]. Hand to [[Session-11-03-Wolfrabbits]] and apply any [[Taking on Aruhe]] take already made.
+The party follows the north prints toward the smoke and enters [[torn-crossing]]. Hand to [[Session-11-03-Wolfrabbits]] and apply any [[taking-on-aruhe]] take already made.
 
 > [!narration] How the Scene Resolves
 > The used stop falls behind as the northbound path leaves the bank. The river keeps pace beside the crushed grass, and the smoke waits farther upvalley.
@@ -170,7 +170,7 @@ The party follows the north prints toward the smoke and enters [[Aruhe - Grassla
 
 ## Backup
 
-[[Aruhe - River Landing Bank]] · [[Aruhe - Grasslands Torn Crossing]] · [[Session-11-00-Random-Tables]] · [[Taking on Aruhe]] · [[Aruhe - Grasslands]] · [[Aruhe - River]] · [[Aruhe - Old Gardens]] · [[Redheart Berry]] · [[Session-11-00-Birds-of-a-Feather]] · [[Session-11-01-Angry-Birds]] · [[Session-11-03-Wolfrabbits]]
+[[landing-bank]] · [[torn-crossing]] · [[Session-11-00-Random-Tables]] · [[taking-on-aruhe]] · [[grasslands]] · [[the-river]] · [[old-gardens]] · [[redheart-berry]] · [[Session-11-00-Birds-of-a-Feather]] · [[Session-11-01-Angry-Birds]] · [[Session-11-03-Wolfrabbits]]
 
 ## Battlemap
 

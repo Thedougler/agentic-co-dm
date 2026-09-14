@@ -26,9 +26,9 @@ visibility: dm
 ---
 # Amberreach
 
-[[Amberreach]] is a reliable [[Calven and Calveno]] cargo galleon under [[Tessarine Concordat]] craft. White sails with blue triangles speak Concordat writ.
+[[Amberreach]] is a reliable [[calven-and-calveno]] cargo galleon under [[tessarine-concordat]] craft. White sails with blue triangles speak Concordat writ.
 
 ## Connections
 
-- [[Tessarine Concordat]]
-- [[Calven and Calveno]]
+- [[tessarine-concordat]]
+- [[calven-and-calveno]]

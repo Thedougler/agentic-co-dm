@@ -68,7 +68,7 @@ The ground shakes before you see one.
 
 ## Ecology
 
-**The standard axebeak is a CR 1/4 nuisance mount.** The [[Blight|Blight's]] corruption scaled them past every constraint that kept them manageable. Body mass and metabolic demand grew unchecked. Territorial range expanded to match. A terror-bird has outgrown every other animal on the island except the [[Aruhe - Bear-Elk|bear-elk]], and the two avoid each other by instinct.
+**The standard axebeak is a CR 1/4 nuisance mount.** The [[Blight|Blight's]] corruption scaled them past every constraint that kept them manageable. Body mass and metabolic demand grew unchecked. Territorial range expanded to match. A terror-bird has outgrown every other animal on the island except the [[bear-elk|bear-elk]], and the two avoid each other by instinct.
 
 Solitary. Each terror-bird holds a territory roughly a quarter-mile across and will not tolerate another of its kind inside it. It hunts by patience, standing motionless among the canopy, moss-covered and still, until prey enters its territory. Then it charges. The ground announces the charge before the bird does. It swallows what it catches and retreats to digest. It does not fight over scraps or chase prey that escapes its initial rush.
 

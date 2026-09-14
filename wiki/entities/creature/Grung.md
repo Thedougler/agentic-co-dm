@@ -62,7 +62,7 @@ actions:
     desc: "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage plus 5 (2d4) poison damage."
 ```
 
-**Wants:** Stay hidden and report an intrusion back to [[Grung Elite Warrior|the handler]] rather than engage it directly.
+**Wants:** Stay hidden and report an intrusion back to [[grung-elite-warrior|the handler]] rather than engage it directly.
 **Morale:** Flees immediately if the handler is killed or the grung itself drops below half HP; never fights to the death.
 
 ## Description
@@ -74,12 +74,12 @@ CR 1/4 humanoid grung — green-caste laborers and scouts, the lowest freeborn c
 
 ## Ecology
 
-Green-caste grung are laborers, not fighters, drawn from the rainforest-interior clan holds of [[Verdant Teeth]] and pressed into garrison duty across [[Midchain North]]. At the [[Calveno Sewer Magazines]] (itself `status: pending`), they serve as sentries alongside a blue-caste handler ([[Grung Elite Warrior]]): standing orders are hide at the sound of movement (Stealth +4, advantage in dim light near water), let intruders pass, and report after. They break cover only if intruders interfere with the blackpowder barrels under guard, and even then try to flee and report rather than fight — a sentry discipline built on the caste's low standing within [[Grung clans|Grung Clans]] society, not any lack of nerve.
+Green-caste grung are laborers, not fighters, drawn from the rainforest-interior clan holds of [[verdant-teeth]] and pressed into garrison duty across [[Midchain North]]. At the [[Calveno Sewer Magazines]] (itself `status: pending`), they serve as sentries alongside a blue-caste handler ([[grung-elite-warrior]]): standing orders are hide at the sound of movement (Stealth +4, advantage in dim light near water), let intruders pass, and report after. They break cover only if intruders interfere with the blackpowder barrels under guard, and even then try to flee and report rather than fight — a sentry discipline built on the caste's low standing within [[grung-clans|Grung Clans]] society, not any lack of nerve.
 
 ## Toy Chest
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
-| Provoke into the open | The party lingers near or handles the blackpowder barrels | The grung breaks cover, flees toward the handler, and raises the alarm | [[Grung Elite Warrior]] |
+| Provoke into the open | The party lingers near or handles the blackpowder barrels | The grung breaks cover, flees toward the handler, and raises the alarm | [[grung-elite-warrior]] |
 | Corner or grapple one | It's caught alone with its escape route cut off | Poisonous Skin triggers on contact, per the Description's Poisonous Skin stacking mechanic | [[Calveno Sewer Magazines]] |
-| Capture and interrogate | It's isolated and past its half-HP flee threshold | It talks — naming handler positions and patrol timing rather than dying for [[Grung clans|Grung Clans]] loyalty | [[Simone Tabarnack]] |
+| Capture and interrogate | It's isolated and past its half-HP flee threshold | It talks — naming handler positions and patrol timing rather than dying for [[grung-clans|Grung Clans]] loyalty | [[simone-tabarnack]] |

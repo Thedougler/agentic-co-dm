@@ -21,9 +21,9 @@ visibility: dm
 kind: site
 region: Midchain
 relationships:
-  - target: "[[Aleksander Malone]]"
+  - target: "[[aleksander-malone]]"
     type: related_to
-  - target: "[[Dravosi Crown]]"
+  - target: "[[dravosi-crown]]"
     type: related_to
 ---
 # Blackrule
@@ -33,7 +33,7 @@ relationships:
 
 ## At a Glance
 
-Blackrule is a [[Dravosi Crown]] chapterhouse in [[Midchain]], not an ordinary station. [[Aleksander Malone]] chose it for himself.
+Blackrule is a [[dravosi-crown]] chapterhouse in [[Midchain]], not an ordinary station. [[aleksander-malone]] chose it for himself.
 
 ## If the party
 
@@ -42,7 +42,7 @@ Blackrule is a [[Dravosi Crown]] chapterhouse in [[Midchain]], not an ordinary s
 
 ## Who
 
-[[Aleksander Malone]] trains here alone. He leaves when formal heresy is confirmed and returns when the work is done. The Crown does not staff it as a regular post.
+[[aleksander-malone]] trains here alone. He leaves when formal heresy is confirmed and returns when the work is done. The Crown does not staff it as a regular post.
 
 ## What
 

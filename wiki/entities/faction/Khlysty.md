@@ -26,7 +26,7 @@ tier: supporting
 
 ## Members
 
-**At the table:** the network has no public name. Families know only a healer who cures a dying heir and moves on. That pattern surfaced once: the cold handshake and [[Perrin Black-Jaw|Perrin]]'s failed Arcana check (through [[Shepherd Grigori]]'s hooks). No one has yet pieced the cases together or named it Khlysty.
+**At the table:** the network has no public name. Families know only a healer who cures a dying heir and moves on. That pattern surfaced once: the cold handshake and [[perrin-black-jaw|Perrin]]'s failed Arcana check (through [[shepherd-grigori]]'s hooks). No one has yet pieced the cases together or named it Khlysty.
 
 **What they call themselves:** an outsider label, never used internally. The sect says the Flock.
 
@@ -42,13 +42,13 @@ tier: supporting
 **The real motive (never stated aloud):**
 
 - **Binding mechanic:** when Grigori heals someone, he binds his phylactery into their life. They join the flock unaware. Their survival sustains him. He cannot be permanently destroyed while they live.
-- **Confirmed victims:** a Tessarine heir in [[Calven and Calveno]] and a Dravosi merchant-lord's daughter. (Full binding mechanic on Shepherd Grigori's page.)
+- **Confirmed victims:** a Tessarine heir in [[calven-and-calveno]] and a Dravosi merchant-lord's daughter. (Full binding mechanic on Shepherd Grigori's page.)
 - **How to play it:** the Turning and healings are real, with true warmth underneath both. The horror is that an undead sorcerer built an unkillable afterlife out of the gratitude of dying children and desperate families, and considers this reasonable.
 - Every other name in the flock is a thread bound through his healing. No one else holds real membership.
 
 ## Goals & Fronts
 
-**Spread:** the network grows privately through [[Dravosi Crown|Dravosi]] and [[Tessarine Concordat|Tessarine]] noble courts by reputation alone. Grigori heals a dying heir, asks only to be a guest awhile, then moves on. The grateful family spreads word to others in their position.
+**Spread:** the network grows privately through [[dravosi-crown|Dravosi]] and [[tessarine-concordat|Tessarine]] noble courts by reputation alone. Grigori heals a dying heir, asks only to be a guest awhile, then moves on. The grateful family spreads word to others in their position.
 
 Surface the cult in layers: miraculous healings with the same description, private correspondence using shepherd language, noble heirs deferential to Grigori without understanding why, then the phylactery network as the real shape of the threat. The crew's live investigation thread into Grigori, the cold handshake and the unidentifiable magic, concerns his operations directly.
 
@@ -58,7 +58,7 @@ Agenda, per the source: grow the flock one healing at a time. The source names n
 
 **Lifecycle:** active
 
-**Aim:** bind enough dispersed noble hosts across Dravosi, Tessarine, and the [[Chain Council]] that a [[Hierarch]]'s blood-thins-and-fails weakness becomes obsolete.
+**Aim:** bind enough dispersed noble hosts across Dravosi, Tessarine, and the [[chain-council]] that a [[Hierarch]]'s blood-thins-and-fails weakness becomes obsolete.
 
 **Approach:** heals a dying heir and moves on before gratitude curdles into suspicion, asking nothing in return. A small kindness later renews an older thread before it dilutes.
 
@@ -77,14 +77,14 @@ Agenda, per the source: grow the flock one healing at a time. The source names n
 | Interval | Move | Observable signal |
 |---|---|---|
 | Ongoing | a new court, a new binding | word of another unexplained cure reaches a court the crew has visited |
-| Mid-term | Grigori learns of the [[Pearl of Souls]] through Tessarine channels | he shows renewed interest in the crew's Season 1 business, without saying why |
+| Mid-term | Grigori learns of the [[pearl-of-souls]] through Tessarine channels | he shows renewed interest in the crew's Season 1 business, without saying why |
 | If the crew recovers the Pearl | Grigori works the goodwill from the [[Uncertainty|Surety]] voyage to try to get it | a friendly, plausible ask from an old ally |
 
 **Possible outcomes (2-3):** the crew notices the pattern and investigates early, or Grigori gains the Pearl through the crew, or a rival disrupts a renewal visit and forces his first Heir ritual, costing him a thread he can't easily replace.
 
-**PC connection:** [[Jean-Claude Tabarnack]], healed in Session 3, though whether it left a live thread stays unresolved (see Shepherd Grigori). The household gratitude and Surety goodwill are what Grigori actually leans on either way.
+**PC connection:** [[jean-claude-tabarnack]], healed in Session 3, though whether it left a live thread stays unresolved (see Shepherd Grigori). The household gratitude and Surety goodwill are what Grigori actually leans on either way.
 
-**Per-PC awareness:** [[Delmar Fisk]] felt the cold handshake directly, and [[Perrin Black-Jaw]] failed the Arcana check trying to identify the magic.
+**Per-PC awareness:** [[delmar-fisk]] felt the cold handshake directly, and [[perrin-black-jaw]] failed the Arcana check trying to identify the magic.
 
 **Quest link:** none yet.
 

@@ -1,31 +1,13 @@
 ---
-title: "Long Reach"
+title: Long Reach
+redirects_to: "[[long-reach|Long Reach]]"
 category: entities
-tags: [shattered-sea, lore]
-sources:
-  - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-sentinels-of-the-eyrie.md"
-  - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/location-high-eyrie.md"
-summary: "Martial technique every Sentinel apprentice earns; not a full mechanical homebrew here."
-provenance:
-  extracted: 1.0
-  inferred: 0.0
-  ambiguous: 0.0
-base_confidence: 0.45
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
-tier: supporting
-created: 2026-09-13T20:20:00Z
-updated: 2026-09-13T20:20:00Z
-type: lore
-reveal: unrevealed
-campaign: shattered-sea
-visibility: dm
+tags: []
+sources: []
+created: 2026-09-14
+updated: 2026-09-14
 ---
+
 # Long Reach
 
-[[Long Reach]] is a martial technique every [[Sentinels of the Eyrie]] apprentice earns. This source does not supply full mechanical homebrew.
-
-## Connections
-
-- [[Sentinels of the Eyrie]]
-- [[High Eyrie]]
+Redirect → [[long-reach|Long Reach]].

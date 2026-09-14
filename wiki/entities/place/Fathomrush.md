@@ -43,7 +43,7 @@ A boomtown staging dives on the [[Shelfworks]], the Antheri salvage field above 
 - Dives heading to [[Shelfworks]].
 
 ## Connections
-- → [[Shelfworks]] · [[Drowned Maw]] · [[Tail]] · [[Outer Reach]]
+- → [[Shelfworks]] · [[drowned-maw]] · [[Tail]] · [[outer-reach]]
 
 ## Hooks
 - Hire or sabotage a dive.
@@ -55,8 +55,8 @@ The exact boomtown authority and claim system are open; the Red Lady wreck is on
 ## Drowned Maw ingest — split harbor
 About eight hundred people pass through. Two piers face each other across mud; Sunkline's sunburst and Voyvode's eagle are close enough to read. There is no mayor; each company keeps law inside its gates. A plank memorial wall bears a hundred diver names and no crest; both companies maintain it.
 
-- [[Sunkline]] is Tessarine money. [[Adriana Tarquine]] leads; the mid-shelf certificate is forged, and the false log is under the Last Berth floorboard. [[Petera Ngata]] keeps the only complete death list.
-- [[Voyvode]] is Crown money. [[Branimir Karsovine]] personally tests rigs; his notes are honest and incomplete, and most fresh memorial names are his crews.
-- [[Yevgenia Sorrel]] runs Sunkline's store; [[Marta Kessler]] runs Voyvode's. The rivalry resolves off-screen: certificate discovery or another run of crew loss empties one compound into the other's dock.
+- [[Sunkline]] is Tessarine money. [[adriana-tarquine]] leads; the mid-shelf certificate is forged, and the false log is under the Last Berth floorboard. [[petera-ngata]] keeps the only complete death list.
+- [[Voyvode]] is Crown money. [[branimir-karsovine]] personally tests rigs; his notes are honest and incomplete, and most fresh memorial names are his crews.
+- [[yevgenia-sorrel]] runs Sunkline's store; [[marta-kessler]] runs Voyvode's. The rivalry resolves off-screen: certificate discovery or another run of crew loss empties one compound into the other's dock.
 
 **Provenance:** Dump source 2026-09-05; legacy `/Users/nick/shattered-sea/wiki/shattered-sea/situation-fathomrushs-split-harbor.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/faction-sunkline-company.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/faction-voyvode-works.md`.

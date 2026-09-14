@@ -4,7 +4,7 @@ category: entities
 tags: ["shattered-sea", "npc"]
 sources:
   - "campaign-os:osset-narration-appearance.md"
-  - "00 Story so far.md"
+  - "story-so-far.md"
   - "campaign-os:osset.md"
 summary: "Alias of Talon Vantyrus named on the Snap page and by Nightmantle's seller."
 provenance:
@@ -25,18 +25,18 @@ visibility: dm
 
 # Osset
 
-**Wants:** a complete read on [[Crissdalynn Khinriss]]'s Long Sight for [[Talon Vantyrus]]. He can't get it while [[Master Kyzil]] might recognize an old classmate's face.
+**Wants:** a complete read on [[crissdalynn-khinriss]]'s Long Sight for [[talon-vantyrus]]. He can't get it while [[master-kyzil]] might recognize an old classmate's face.
 
 ![[osset-narration-appearance]]
 
 
 ## Connections
 
-[[Delmar Fisk]] found Osset's name in Session 08. He spotted the scrap of paper at [[the Cabinet of Morsani]]. He pocketed it unseen (Sleight of Hand 25) and read it later (Insight 17). It named Ossanth, or Osset: once a monk of the [[High Eyrie]] and a master among the [[Sentinels of the Eyrie]]. He left the order during the schism and went unheard of since.
+[[delmar-fisk]] found Osset's name in Session 08. He spotted the scrap of paper at [[the Cabinet of Morsani]]. He pocketed it unseen (Sleight of Hand 25) and read it later (Insight 17). It named Ossanth, or Osset: once a monk of the [[high-eyrie]] and a master among the [[sentinels-of-the-eyrie]]. He left the order during the schism and went unheard of since.
 
-That same session, [[Lavinia Sordi]] of [[La Cenere]] named him too. She said a falcon-featured man calling himself Osset sold her the cursed [[Cloak of Displacement]]. She later passed it to [[Crissdalynn Khinriss]]. Confirmed: [[Transcript]].
+That same session, [[lavinia-sordi]] of [[la-cenere]] named him too. She said a falcon-featured man calling himself Osset sold her the cursed [[Cloak of Displacement]]. She later passed it to [[crissdalynn-khinriss]]. Confirmed: [[Transcript]].
 
-- [[Sentinels of the Eyrie]]: former member, left during the schism; now trades on his old standing there to run an errand for [[Talon Vantyrus]] of [[the Countless]].
-- [[Lavinia Sordi]]: sold her the cursed [[Cloak of Displacement]].
-- [[Crissdalynn Khinriss]]: the Sentinel he's quietly reading for Vantyrus; she's never heard his name from anyone at the Eyrie.
-- [[Master Kyzil]]: an old classmate at the High Eyrie who'd recognize his face on sight. Osset avoids any port where they might cross paths.
+- [[sentinels-of-the-eyrie]]: former member, left during the schism; now trades on his old standing there to run an errand for [[talon-vantyrus]] of [[the Countless]].
+- [[lavinia-sordi]]: sold her the cursed [[Cloak of Displacement]].
+- [[crissdalynn-khinriss]]: the Sentinel he's quietly reading for Vantyrus; she's never heard his name from anyone at the Eyrie.
+- [[master-kyzil]]: an old classmate at the High Eyrie who'd recognize his face on sight. Osset avoids any port where they might cross paths.

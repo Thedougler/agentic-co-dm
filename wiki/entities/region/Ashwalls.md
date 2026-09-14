@@ -42,7 +42,7 @@ Cold-water volcanic spires: last solid ground heading west and first safe lee re
 - Giant bats, scorpions, and vultures.
 
 ## Connections
-- → [[Galewall]] · [[Shattered Sea]] · [[Doldrums]]
+- → [[Galewall]] · [[shattered-sea]] · [[Doldrums]]
 
 ## Hooks
 - Reach the lee after the Galewall; decide whether apparent rescuers are rescuers.
@@ -54,7 +54,7 @@ Pilot families and repair crews work the lee. They treat the spires as a reckoni
 
 ## Geography
 
-North sits the [[Crown Islands]]. East sits the [[Central Strait]]. South sits the [[Midchain]]. West sits the [[Galewall]]. Water darkens from warm green to cold deep blue before the spires rise.
+North sits the [[crown-islands]]. East sits the [[central-strait]]. South sits the [[Midchain]]. West sits the [[Galewall]]. Water darkens from warm green to cold deep blue before the spires rise.
 
 The Ashwall lee is repair water. Volcanic vent caves stay warm through cold sea air.
 
@@ -70,7 +70,7 @@ Ashwall pilot families keep log books of practical signs. No formal destination 
 
 ## Hatch sign
 
-Crews distinguish two eruptions of lightning. Vertical cloud-to-stone fire is ordinary storm. Lateral fire that branches through ash and holds for a breath is the hatch sign. [[Arclight Phoenix]] birds hatch inside the volcanoes; lightning opens the remaining egg, and the bird flies west into the [[Galewall]] and does not return until it dies in the weather. Old families record: lateral vent-fire, westward departure, expected increase in Galewall activity.
+Crews distinguish two eruptions of lightning. Vertical cloud-to-stone fire is ordinary storm. Lateral fire that branches through ash and holds for a breath is the hatch sign. [[arclight-phoenix]] birds hatch inside the volcanoes; lightning opens the remaining egg, and the bird flies west into the [[Galewall]] and does not return until it dies in the weather. Old families record: lateral vent-fire, westward departure, expected increase in Galewall activity.
 
 One lightning-burned survivor described a white bird of stormlight in the rigging before the mainmast fell. Burn marks ran along contact points rather than down from a single strike. Iron fittings magnetized hard enough to pull nails.
 

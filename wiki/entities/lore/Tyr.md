@@ -21,7 +21,7 @@ visibility: dm
 relationships:
   - target: "[[Blackrule]]"
     type: related_to
-  - target: "[[Aleksander Malone]]"
+  - target: "[[aleksander-malone]]"
     type: related_to
 ---
 # Tyr

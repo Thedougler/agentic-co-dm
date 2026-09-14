@@ -3,7 +3,7 @@ title: "Karath"
 category: entities
 tags: [shattered-sea, aruhe, region]
 sources: ["Karath.md", "wiki/_raw/Grung clans.md"]
-summary: "Karath is the Grung raid and hatchery island, and [[Aruhe - Hungry Isle]]'s near neighbor across a channel about half a mile wide at the closest edge. It is close to Aruhe's rim, not to Aruhe's hea..."
+summary: "Karath is the Grung raid and hatchery island, and [[aruhe]]'s near neighbor across a channel about half a mile wide at the closest edge. It is close to Aruhe's rim, not to Aruhe's hea..."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -27,7 +27,7 @@ region: "Verdant Teeth / eastern Midchain"
 
 
 ## At a Glance
-Karath is the Grung raid and hatchery island, and [[Aruhe - Hungry Isle]]'s near neighbor across a channel about half a mile wide at the closest edge. It is close to Aruhe's rim, not to Aruhe's heart; the island is country-scale in its own right.
+Karath is the Grung raid and hatchery island, and [[aruhe]]'s near neighbor across a channel about half a mile wide at the closest edge. It is close to Aruhe's rim, not to Aruhe's heart; the island is country-scale in its own right.
 
 ## Five-sentence kernel
 - **Function:** A closed Grung island for raids, captive processing, hatchery enlargement, toxin work, and hidden gold-reagent production.
@@ -41,13 +41,13 @@ Karath is the Grung raid and hatchery island, and [[Aruhe - Hungry Isle]]'s near
 - `Karath reef gaps -- no sanctioned landing (dart and bow fire) --> tannin mouths.`
 - `tannin mouths -- wet cuts / flooded routes --> hatchery huts and captive pens.`
 - `hatchery works -- guarded interior (closed, hidden) --> gold reagent farms.`
-- `Karath -- half-mile closest channel --> [[Aruhe - Hungry Isle]] western edge.`
+- `Karath -- half-mile closest channel --> [[aruhe]] western edge.`
 - **Bypass:** remain offshore or approach through another Tooth; faster than inland entry, poorer information.
 - **Retreat:** reverse the reef gap or swim the channel only if the party has made the water survivable; neither route is safe by default.
 
 ## People and work
 
-The island’s poison race is also the clans’ supply contradiction: hidden Gold farms produce the rare toxin needed for true gold-tier color, while Simone’s [[Dravosi Crown]] stock is a substitute and must not be treated as Karath product.
+The island’s poison race is also the clans’ supply contradiction: hidden Gold farms produce the rare toxin needed for true gold-tier color, while Simone’s [[dravosi-crown]] stock is a substitute and must not be treated as Karath product.
 
 - Grung clans hold everything beyond the tree line and permit no sanctioned landing.
 - Fighting-age captives from raids enter a slavery pipeline. Captive casters are kept slow on toxin; a measured antidote lets them touch the Weave but not keep it.
@@ -67,14 +67,14 @@ The island’s poison race is also the clans’ supply contradiction: hidden Gol
 - Exposing the farms may fracture lower-caste trust; rescuing captives may make the fleet strike sooner.
 
 ## Connections
-- [[Verdant Teeth]] · [[Grung clans]] · [[Aruhe - Hungry Isle]] · [[Sorn]] · [[Dreth]]
-- [[The taken 314]] · [[Pursue the Grung raiding fleet]] · [[Grung Color and the Sealing Rite]]
+- [[verdant-teeth]] · [[grung-clans]] · [[aruhe]] · [[Sorn]] · [[Dreth]]
+- [[the-taken-314]] · [[pursue-the-grung-raiding-fleet]] · [[grung-color-and-the-sealing-rite]]
 
 ## Secrets
 Karath's gold reagent farms are secret even from lower castes. Simone has **never received Karath toxin**; her stalled partial gold is not proof that she controls or succeeded in the Karath process.
 
 ## Geography ingest — dual continuity
-This note keeps Karath's two established relationships together: it is the eastern [[Verdant Teeth]] island with blackwater, raids, hatchery/toxin work, and no sanctioned landing; it is also [[Aruhe - Hungry Isle]]'s near-edge channel neighbor, about half a mile away at the closest point. That distance reaches Aruhe's rim only; it does not make Karath a shortcut to the island's heart. The Aruhe-facing proximity explains continuity of patrol pressure without merging the two islands.
+This note keeps Karath's two established relationships together: it is the eastern [[verdant-teeth]] island with blackwater, raids, hatchery/toxin work, and no sanctioned landing; it is also [[aruhe]]'s near-edge channel neighbor, about half a mile away at the closest point. That distance reaches Aruhe's rim only; it does not make Karath a shortcut to the island's heart. The Aruhe-facing proximity explains continuity of patrol pressure without merging the two islands.
 
 ## Hinewai's captivity
 Karath captured Hinewai, an elf archdruid, and put her to work in the interior hatcheries. Captive spellcasters are dosed and kept slow, then given just enough antidote to touch the Weave so they can push ordinary vermin into giant toads, snakes, and spiders. Her autobiographical memory mostly rotted there; hatred of the Grung and of anyone who takes survived.

@@ -43,7 +43,7 @@ The eastern pinch where both arcs become fewer, taller islands and cold trench-c
 - The unnamed staging island before the Maw.
 
 ## Connections
-- → [[Midchain]] · [[Drowned Maw]] · [[Outer Reach]]
+- → [[Midchain]] · [[drowned-maw]] · [[outer-reach]]
 
 ## Hooks
 - Reach the last supplies and honest gossip before the trench.

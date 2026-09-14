@@ -28,26 +28,26 @@ A sturdy two-masted brigantine, plain-hulled and built for endurance. Dark brown
 
 *Two-masted brigantine · Unmoored.*
 
-Not revealed to the party: the fleet's ship names and captains are a secret held back at the table (see [[Fisk's Fleet]]).
+Not revealed to the party: the fleet's ship names and captains are a secret held back at the table (see [[fisks-fleet]]).
 
-Fourth ship of [[Fisk's Fleet]]. Mid-sized and without distinguishing characteristics, the Fernen was a working ship fitted for long-range independent operation. Below decks featured crew quarters, a compact galley, a hold fitted for extended provisions, an oversize water cistern, and a navigator's station charting the full eastern Scatter.
+Fourth ship of [[fisks-fleet]]. Mid-sized and without distinguishing characteristics, the Fernen was a working ship fitted for long-range independent operation. Below decks featured crew quarters, a compact galley, a hold fitted for extended provisions, an oversize water cistern, and a navigator's station charting the full eastern Scatter.
 
-Lost with the rest of Fisk's Fleet when [[Umberlee]] opened the [[Drowned Maw]] beneath them. All hands lost. See [[Fisk's Fleet]] for the full account of the sinking.
+Lost with the rest of Fisk's Fleet when [[Umberlee]] opened the [[drowned-maw]] beneath them. All hands lost. See [[fisks-fleet]] for the full account of the sinking.
 
 ## Stats & Combat
 
 - Armament: six gun mounts, three per side.
-- Draft: moderate (deeper than [[The Narrow]], shallower than the [[Heft]]).
+- Draft: moderate (deeper than [[the-narrow]], shallower than the [[Heft]]).
 - Hull/AC/speed: not stated in source.
 
 ## Crew
 
-- Captain: [[Sienne Orre]], a [[Minotaur]]
+- Captain: [[sienne-orre]], a [[Minotaur]]
 - Notable crew: none named in source.
 
 ## Connections
 
-- [[Fisk's Fleet]]: fleet
-- [[Delmar Fisk]]: fleet admiral
-- [[Drowned Maw]]: sinking site
-- [[Red Lady]], Fisk's flagship, lost the same night
+- [[fisks-fleet]]: fleet
+- [[delmar-fisk]]: fleet admiral
+- [[drowned-maw]]: sinking site
+- [[red-lady]], Fisk's flagship, lost the same night

@@ -26,7 +26,7 @@ kind: other
 relationships:
   - target: "[[Shelfworks]]"
     type: related_to
-  - target: "[[Drowned Maw]]"
+  - target: "[[drowned-maw]]"
     type: related_to
   - target: "[[Auralis]]"
     type: related_to
@@ -42,33 +42,33 @@ No living public spokesman remains. The surviving public record presents Antheri
 
 ## DM thesis
 
-Antheri are a vanished engineering power whose breach evidence can explain present Maw pressure and the [[Pearl of Souls]] signal without giving the table a living faction to negotiate with.
+Antheri are a vanished engineering power whose breach evidence can explain present Maw pressure and the [[pearl-of-souls]] signal without giving the table a living faction to negotiate with.
 
 ## Current state
 
 The Antheri reached their height roughly two thousand years before Dalereckoning and vanished while a task was still in progress. Workshops were left mid-task; the dead are absent; deep machinery still ran. Their dark alloy and living-light channels exceed current foundries, and soul-binding was architecture: a mind could be locked into an artificial frame that did not die.
 
-Their three tiers descend from the newer [[Shelfworks]] to the [[Mid-Works]] and pristine [[Deep Works]]. [[Auralis]] is the Antheri machine holding the fissure, not a confirmed sea-god; the Grung public Auralis layer is documented separately on [[Auralis]].
+Their three tiers descend from the newer [[Shelfworks]] to the [[Mid-Works]] and pristine [[deep-works]]. [[Auralis]] is the Antheri machine holding the fissure, not a confirmed sea-god; the Grung public Auralis layer is documented separately on [[Auralis]].
 
 One Faces line says they vanished around 495 DR; the deep-engine section says −495 DR.^[ambiguous]
 
 ## Active agenda
 
-Investigate, salvage, or decide what Maw evidence to expose. Old breach evidence may explain [[Pearl signal across the boundary]]. The Antheri breach is a possible source of the pressure a tribute system contains.
+Investigate, salvage, or decide what Maw evidence to expose. Old breach evidence may explain [[pearl-signal-across-the-boundary]]. The Antheri breach is a possible source of the pressure a tribute system contains.
 
 ## Assets, people, places, relationships
 
-- Places: [[Shelfworks]], [[Mid-Works]], [[Deep Works]], [[Drowned Maw]], [[Fathomrush]]
+- Places: [[Shelfworks]], [[Mid-Works]], [[deep-works]], [[drowned-maw]], [[Fathomrush]]
 - Machine: [[Auralis]] (Antheri machine holding the fissure)
-- Historical stake: [[Waveservants]] and [[Sentinels of the Eyrie]] each have a stake in what the Maw means
+- Historical stake: [[Waveservants]] and [[sentinels-of-the-eyrie]] each have a stake in what the Maw means
 - No known living leader
 
 ## Connections
 
 - [[Shelfworks]]
 - [[Mid-Works]]
-- [[Deep Works]]
-- [[Drowned Maw]]
+- [[deep-works]]
+- [[drowned-maw]]
 - [[Auralis]]
-- [[Pearl of Souls]]
-- [[Pearl signal across the boundary]]
+- [[pearl-of-souls]]
+- [[pearl-signal-across-the-boundary]]

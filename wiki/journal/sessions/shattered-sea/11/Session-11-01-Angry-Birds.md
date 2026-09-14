@@ -4,10 +4,10 @@ category: journal
 tags: [shattered-sea, session-prep]
 sources:
   - "[[Session-11-00-Birds-of-a-Feather]]"
-  - "[[journal/sessions/shattered-sea/recaps/Session 10 - Recap]]"
-  - "[[Aruhe - Bloodhawk]]"
-  - "[[Young Bloodhawk]]"
-  - "[[Aruhe - Crown Squid]]"
+  - "[[journal/sessions/shattered-sea/recaps/Session-10-Recap]]"
+  - "[[bloodhawk]]"
+  - "[[young-bloodhawk]]"
+  - "[[crown-squid]]"
 created: 2026-09-06
 updated: 2026-09-13
 type: session-prep
@@ -21,7 +21,7 @@ visibility: dm
 ---
 # Session 11 — Angry Birds
 
-![[journal/sessions/shattered-sea/recaps/Session 10 - Recap#Recap]]
+![[journal/sessions/shattered-sea/recaps/Session-10-Recap#Recap]]
 
 ````col
 ```col-md
@@ -50,8 +50,8 @@ visibility: dm
 
 ## Situation
 
-- **Where.** The party starts 60 feet above the north lip of [[Aruhe - Old Gardens]]. The [[Aruhe - Crown Squid]] is 30 feet north at the same height, fleeing through the last tree crowns. [[Aruhe - River]] and eight-foot grass lie east and 60 feet below. [[Aruhe - Beach|Western Landing]] and [[Uncertainty]] lie south across 60 feet of open sky.
-- **Who.** An adult [[Aruhe - Bloodhawk]] is diving on the squid. Two [[Young Bloodhawk|young Bloodhawks]] follow its line and strike whatever it flushes. [[Talon Skarn]] is the man-sized flyer up-sun, and he is not responsible for this hunt.
+- **Where.** The party starts 60 feet above the north lip of [[old-gardens]]. The [[crown-squid]] is 30 feet north at the same height, fleeing through the last tree crowns. [[the-river]] and eight-foot grass lie east and 60 feet below. [[western-landing|Western Landing]] and [[Uncertainty]] lie south across 60 feet of open sky.
+- **Who.** An adult [[bloodhawk]] is diving on the squid. Two [[young-bloodhawk|young Bloodhawks]] follow its line and strike whatever it flushes. [[talon-skarn]] is the man-sized flyer up-sun, and he is not responsible for this hunt.
 - **What changed.** The party remains in the squid's air when the adult hawk enters the same patch of sky.
 - **Pressure.** The adult continues after the squid unless the party makes itself the easier target. Each round in open air gives the birds another chance to isolate someone.
 - **Open question.** Do the party members drop quietly, stay with the squid, make the birds turn, or cross the exposed sky toward the beach?
@@ -62,7 +62,7 @@ visibility: dm
 | --- | --- |
 | **Engages** | If they move quietly away from both animals and reach cover, let them land; the adult hawk stays on the squid. If they attack the adult, stay close to the squid, use loud magic, grab the squid, or fly toward the young, the adult treats that character as prey. The young use Flush Dive on whatever the adult flushes. |
 | **Hesitates** | Keep the party in open air. The adult continues its dive on the squid, and one young hawk drives an obvious airborne body downward toward the terraces. Ask what they do again. |
-| **Rejects / leaves** | If they force a line back to the beach, the adult still hunts the squid across that sky and pressures anyone who remains exposed. If they reach the shingle, rebuild from [[Aruhe - Beach]]. |
+| **Rejects / leaves** | If they force a line back to the beach, the adult still hunts the squid across that sky and pressures anyone who remains exposed. If they reach the shingle, rebuild from [[western-landing]]. |
 | **Surprises you** | Improvise from the adult's want, the young birds' flushing behavior, the grass-and-river exit, and the exposed beach route. Do not turn this into a fight to the death. When the party reaches grass, river, terrace woods, or beach, end the hook. Do not run Survival checks or [[Session-11-00-Random-Tables]] here. |
 ## Decision handles
 
@@ -74,11 +74,11 @@ visibility: dm
 
 | Trigger | Check | Success | Failure / cost |
 | --- | --- | --- | --- |
-| When a player asks who else is above them and looks away from the hawk. | **Wisdom (Perception) — `DC 27`**. Do not prompt this check. | The player sees [[Talon Skarn]] up-sun, a man-sized peregrine body in the glare, then loses sight of him. | Sun glare reveals nothing. The character remains in open air above the terraces. |
+| When a player asks who else is above them and looks away from the hawk. | **Wisdom (Perception) — `DC 27`**. Do not prompt this check. | The player sees [[talon-skarn]] up-sun, a man-sized peregrine body in the glare, then loses sight of him. | Sun glare reveals nothing. The character remains in open air above the terraces. |
 ## Action setup
 
 - **Objective.** The adult hawk wants the Crown Squid. The party succeeds by leaving the open sky; neither animal needs to die.
-- **Opposition.** One adult [[Aruhe - Bloodhawk]] and two [[Young Bloodhawk|young Bloodhawks]] pursue the squid and any exposed body.
+- **Opposition.** One adult [[bloodhawk]] and two [[young-bloodhawk|young Bloodhawks]] pursue the squid and any exposed body.
 - **Terrain.** The party begins above open sky. The last terrace crowns are 30 feet north, the grass and river are 60 feet east and below, and the beach is 60 feet south across open sky.
 - **Escalation.** The adult selects the most exposed body that stays in the hunt. A young Bloodhawk drives that body downward after the adult's pass.
 - **End condition.** End the action when the party reaches grass, river, terrace woods, or beach. Do not run the Bloodhawk or Crown Squid to 0 hit points as the hook's default endpoint.

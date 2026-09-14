@@ -33,18 +33,18 @@ tier: supporting
 |              |                              |
 | ------------ | ---------------------------- |
 | **Species**  | Tortle                       |
-| **Location** | [[Calven and Calveno]]          |
+| **Location** | [[calven-and-calveno]]          |
 | **Role**     | Vigilante, underground ally  |
 
-A tortle fixer and enforcer for the [[Black-Jaw Run]], trusted by The Tangle and working through the Warren to handle whatever [[Nona Black-Jaw|Nona]] needs found or handled outside its walls.
+A tortle fixer and enforcer for the [[Black-Jaw Run]], trusted by The Tangle and working through the Warren to handle whatever [[nona-black-jaw|Nona]] needs found or handled outside its walls.
 
 Nona calls him *"a nice young man who helps old ladies with chores."* From Nona, that is high praise, earned through relentless, methodical work. The Tangle trusts him and backs his authority, which means Passage contacts cooperate with him without hesitation. Trouble does not seek him out. He finds it on his path.
 
-He works as a fixer and enforcer for the Black-Jaw Run, operating from the [[Warren]] and the broader Calveno underside on Passage-adjacent work. When Nona needs something found or handled outside the Warren, she sends him because he maintains contacts in both the Warren and Passage. Both the [[Tessarine Concordat]] and the [[Dravosi Crown]] seek him out.
+He works as a fixer and enforcer for the Black-Jaw Run, operating from the [[Warren]] and the broader Calveno underside on Passage-adjacent work. When Nona needs something found or handled outside the Warren, she sends him because he maintains contacts in both the Warren and Passage. Both the [[tessarine-concordat]] and the [[dravosi-crown]] seek him out.
 
-Anzolo is at sea hunting [[Perrin Black-Jaw|Perrin]] on old orders, though Nona sent a call-off through [[Enzo]] that hasn't reached him yet. At an eastern port, he asked about Black-Jaw crew, and a Tessarine informant spotted him in the act. Now a Tessarine patrol knows his description and heading, and he remains unaware of the [[Tail]] behind him.
+Anzolo is at sea hunting [[perrin-black-jaw|Perrin]] on old orders, though Nona sent a call-off through [[Enzo]] that hasn't reached him yet. At an eastern port, he asked about Black-Jaw crew, and a Tessarine informant spotted him in the act. Now a Tessarine patrol knows his description and heading, and he remains unaware of the [[Tail]] behind him.
 
-The call-off reached his last port too late, as he had moved on toward [[Calven and Calveno]] and will arrive within a day. He doesn't know the search is over or that a Tessarine patrol tracks him from behind. If he arrives with the Tail still following, he could lead them to [[The Passage]]'s safe house and expose it just as Nona faces the [[Grung]] bombing crisis. Source: `situations/active/nona-and-anzolo.md` (shattered-sea legacy wiki, Sessions 03-04 World Updates); kept as a projection pending session-file ingestion, not asserted as confirmed play-canon.
+The call-off reached his last port too late, as he had moved on toward [[calven-and-calveno]] and will arrive within a day. He doesn't know the search is over or that a Tessarine patrol tracks him from behind. If he arrives with the Tail still following, he could lead them to [[the-passage]]'s safe house and expose it just as Nona faces the [[Grung]] bombing crisis. Source: `situations/active/nona-and-anzolo.md` (shattered-sea legacy wiki, Sessions 03-04 World Updates); kept as a projection pending session-file ingestion, not asserted as confirmed play-canon.
 
 **Roleplay Concept:** veteran tortle enforcer, the Warren's specialist for work outside its walls.
 
@@ -58,7 +58,7 @@ The call-off reached his last port too late, as he had moved on toward [[Calven 
 | Consistent method | Checks every variable before moving. Enters no room without knowing the exits. |
 | Active problem | A Tessarine patrol trails him undetected while he remains unaware Nona called off the hunt for Perrin. |
 | Performance hooks | methodical veteran. Checks every exit before settling into a seat. |
-| Link of relevance | Dispatched by [[Nona Black-Jaw]] to locate [[Perrin Black-Jaw]]. |
+| Link of relevance | Dispatched by [[nona-black-jaw]] to locate [[perrin-black-jaw]]. |
 
 ## Stats & Combat
 
@@ -66,14 +66,14 @@ No stats given in source.
 
 ## Connections
 
-- [[Nona Black-Jaw]]: sends him as her first card when she needs something found or handled outside the Warren
-- [[Perrin Black-Jaw]]: the person Nona dispatched him to locate. Her call-off is in transit but hasn't reached him.
+- [[nona-black-jaw]]: sends him as her first card when she needs something found or handled outside the Warren
+- [[perrin-black-jaw]]: the person Nona dispatched him to locate. Her call-off is in transit but hasn't reached him.
 - [[Warren|The Warren]]: works out of, alongside the broader Calveno underside
 
-- [[Tessarine Concordat]]: would like a word with him. A patrol now has a partial description and his last known heading.
-- [[Dravosi Crown]]: would like a word with him
+- [[tessarine-concordat]]: would like a word with him. A patrol now has a partial description and his last known heading.
+- [[dravosi-crown]]: would like a word with him
 - [[The Tangle]]: trusts him and vouches for him with Passage contacts
-- [[The Passage]]: passage-adjacent, and Passage contacts cooperate with him
+- [[the-passage]]: passage-adjacent, and Passage contacts cooperate with him
 
 ## Session Log
 

@@ -21,19 +21,19 @@ campaign: shattered-sea
 visibility: dm
 status: unknown
 relationships:
-  - target: "[[Rattkin Runs and Black-Jaw Run]]"
+  - target: "[[rattkin-runs-and-black-jaw-run]]"
     type: related_to
-  - target: "[[Survey Aruhe as a Tangle anchor]]"
+  - target: "[[survey-aruhe-as-a-tangle-anchor]]"
     type: related_to
 ---
 # Tangle
 
-The [[Tangle]] is an elder teaching and proposed anchor referenced by the [[Rattkin Runs and Black-Jaw Run]]. Its full nature and history are unknown. [[Aruhe - Hungry Isle]] is a survey site under [[Survey Aruhe as a Tangle anchor]].
+The [[Tangle]] is an elder teaching and proposed anchor referenced by the [[rattkin-runs-and-black-jaw-run]]. Its full nature and history are unknown. [[aruhe]] is a survey site under [[survey-aruhe-as-a-tangle-anchor]].
 
 ## Connections
 
-- [[Perrin Black-Jaw]]
-- [[Nona Black-Jaw]]
-- [[Rattkin Runs and Black-Jaw Run]]
-- [[Survey Aruhe as a Tangle anchor]]
-- [[Aruhe - Hungry Isle]]
+- [[perrin-black-jaw]]
+- [[nona-black-jaw]]
+- [[rattkin-runs-and-black-jaw-run]]
+- [[survey-aruhe-as-a-tangle-anchor]]
+- [[aruhe]]

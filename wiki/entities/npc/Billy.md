@@ -66,7 +66,7 @@ world, not rumor or hearsay.
 | Consistent method | Uses only one flat, absolute sentence, and only when nothing else will fix it. Then he stops talking entirely. |
 | Active problem | He doesn't know how to undo any of it, and neither does anyone else on the island. |
 | Performance hooks | The kid at the sleepover who already knows it's over. Keeps his hands jammed in his pockets so he can't gesture while he talks. |
-| Link of relevance | Pressures [[Delmar Fisk]]'s own unresolved theft of the [[Pearl of Souls]]. Billy's plea exists only because of the [[Drowned Maw]] breach that theft is straining, entirely unknown to Delmar. |
+| Link of relevance | Pressures [[delmar-fisk]]'s own unresolved theft of the [[pearl-of-souls]]. Billy's plea exists only because of the [[drowned-maw]] breach that theft is straining, entirely unknown to Delmar. |
 
 **Voice & Delivery:** careful, clipped, older than his years. *Billy*: I'm not
 trying to be in charge. Somebody has to be. *Billy*: *(quiet)* I already know
@@ -79,8 +79,8 @@ what happens if nobody comes.
 - [[Frankie]], the rival whose duels with Toby Billy is trying to
   stop.
 - [[Halewick]], his home island.
-- [[Delmar Fisk]] (link_of_relevance). Billy's plea pressures Delmar's own
-  unresolved theft of the [[Pearl of Souls]], entirely unknown
+- [[delmar-fisk]] (link_of_relevance). Billy's plea pressures Delmar's own
+  unresolved theft of the [[pearl-of-souls]], entirely unknown
   to Delmar himself.
 
 ## Goals & Fronts
@@ -99,5 +99,5 @@ what happens if nobody comes.
 **Clock:** 6 segments (slow burn), filled: 0
 **Consequence at fill:** Billy runs out of other options. He acts alone, using his own cursed-tongue directly on Toby or Frankie to force the collision to stop, a fix at least as catastrophic as the collision itself.
 **Possible outcomes (2-3):** outside help arrives and finds a way to slow or end the duels. Help arrives too late and Billy acts first. Billy's plea reaches someone who isn't help at all and makes the collision worse.
-**PC connection:** pressures [[Delmar Fisk]]'s own unresolved theft of the [[Pearl of Souls]]. Billy's plea exists only because of the [[Drowned Maw]] breach that theft is straining, entirely unknown to Delmar.
+**PC connection:** pressures [[delmar-fisk]]'s own unresolved theft of the [[pearl-of-souls]]. Billy's plea exists only because of the [[drowned-maw]] breach that theft is straining, entirely unknown to Delmar.
 **Quest link:** none yet

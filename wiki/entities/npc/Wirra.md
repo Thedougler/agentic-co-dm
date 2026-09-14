@@ -22,7 +22,7 @@ tier: supporting
 ---
 # Wirra
 
-Wirra is a medic for [[Five Blades]] and a [[Moucheron]] mercenary. The surgeon calls on her when jobs go bad.
+Wirra is a medic for [[five-blades]] and a [[Moucheron]] mercenary. The surgeon calls on her when jobs go bad.
 
 She carries a medical kit that has nothing to do with the group's combat work. She is precise and unsentimental about keeping crews alive after fights. She also charges fees and states them upfront.
 
@@ -32,4 +32,4 @@ Not stated in the source.
 
 ## Connections
 
-- [[Five Blades]]: fellow member, alongside [[Toa]], [[Varet]], and [[Suke]].
+- [[five-blades]]: fellow member, alongside [[Toa]], [[Varet]], and [[Suke]].

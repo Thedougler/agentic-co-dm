@@ -21,7 +21,7 @@ visibility: dm
 kind: site
 region: "Otel Karn"
 relationships:
-  - target: "[[Otel Karn]]"
+  - target: "[[otel-karn]]"
     type: related_to
   - target: "[[Otho]]"
     type: related_to
@@ -35,5 +35,5 @@ relationships:
 
 ## At a Glance
 
-[[Stillmere]] is named as the proving ground on [[Otel Karn]]. Fatal wounds are not fatal, but they still hurt and nothing heals. The source offers it as a place for consequence-free duels before the cost becomes clear.
+[[Stillmere]] is named as the proving ground on [[otel-karn]]. Fatal wounds are not fatal, but they still hurt and nothing heals. The source offers it as a place for consequence-free duels before the cost becomes clear.
 

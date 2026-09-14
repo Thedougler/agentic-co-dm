@@ -25,7 +25,7 @@ visibility: dm
 ```col-md
 ## Scene ends when
 
-The beat ends when the party commits north toward the smoke and hands off to [[Session-11-05-Otter-Hole]], or leaves the bank south toward [[Aruhe - Grasslands Torn Crossing]], the beach, or the downstream terraces.
+The beat ends when the party commits north toward the smoke and hands off to [[Session-11-05-Otter-Hole]], or leaves the bank south toward [[torn-crossing]], the beach, or the downstream terraces.
 
 This beat is thirty minutes.
 
@@ -41,7 +41,7 @@ flexGrow=2
 
 - **Stakes:** Easy food lies on the ground. Blood marks only snapped living stems. Delay makes the smoke and fresh prints harder to follow.
 - **Goal / exit:** Take fallen fruit and follow the north prints to [[Session-11-05-Otter-Hole]], or leave the route south.
-- **Danger:** Plucking a living plant marks a [[Taking on Aruhe]] claim. Open valley air exposes a flyer to hawk sky.
+- **Danger:** Plucking a living plant marks a [[taking-on-aruhe]] claim. Open valley air exposes a flyer to hawk sky.
 - **Silence:** Present the bank, then wait. If the party remains here through the round, thin the smoke once and return the choice.
 - **Situation magnets:** Any character still on the bank at round end.
 ```
@@ -49,7 +49,7 @@ flexGrow=2
 
 ## Now
 
-The party arrives from [[Aruhe - Grasslands Torn Crossing]] on [[Aruhe - River - Line Bank]], facing north. The river is immediately east. The prints begin underfoot and run 60 feet north toward the smoke. The river-side pile, pole, and line are 10 feet east at the water; the downstream pile is 20 feet south; the inland pile is 25 feet west toward the jungle wall. A 30-foot move stays on the bank. A 60-foot Dash follows the prints off this card or reaches 40 feet south toward Torn Crossing. The smoke is a thin column in the same valley and is out of reach this slice. Apply any existing [[Taking on Aruhe]] claim.
+The party arrives from [[torn-crossing]] on [[line-bank]], facing north. The river is immediately east. The prints begin underfoot and run 60 feet north toward the smoke. The river-side pile, pole, and line are 10 feet east at the water; the downstream pile is 20 feet south; the inland pile is 25 feet west toward the jungle wall. A 30-foot move stays on the bank. A 60-foot Dash follows the prints off this card or reaches 40 feet south toward Torn Crossing. The smoke is a thin column in the same valley and is out of reach this slice. Apply any existing [[taking-on-aruhe]] claim.
 
 ## Action cards
 
@@ -57,19 +57,19 @@ The party arrives from [[Aruhe - Grasslands Torn Crossing]] on [[Aruhe - River -
 ```col-md
 **This bank.** Eight-foot gold-green grass is Difficult Terrain and heavily obscures anything beyond 10 feet. Movement leaves a crushed corridor.
 
-The survivors ahead have been living on fallen fruit and fish. Blood lies only beneath snapped living stems. Their number and the smoke's distance remain unknown. No named predator is on this card; reserve [[Aruhe - River Slack Basin]] for the north handoff.
+The survivors ahead have been living on fallen fruit and fish. Blood lies only beneath snapped living stems. Their number and the smoke's distance remain unknown. No named predator is on this card; reserve [[river-slack-basin]] for the north handoff.
 
-**[[Taking on Aruhe]] claim.** Fallen fruit is receiving. Plucking living plants, trapping, or killing to carry flesh marks a claim. Do not roll the hazards table on this card.
+**[[taking-on-aruhe]] claim.** Fallen fruit is receiving. Plucking living plants, trapping, or killing to carry flesh marks a claim. Do not roll the hazards table on this card.
 
-**Up-sun glimpse.** Only if the party asks who the flyer is, call for **Wisdom (Perception) — `DC 27`**. The answer is [[Talon Skarn]], a man-sized peregrine body in the glare, then gone. Do not prompt this check.
+**Up-sun glimpse.** Only if the party asks who the flyer is, call for **Wisdom (Perception) — `DC 27`**. The answer is [[talon-skarn]], a man-sized peregrine body in the glare, then gone. Do not prompt this check.
 ```
 
 ```col-md
-**Fallen fruit.** The three bushes still hold tawny orange fruit. A firm fallen fruit is edible and, when eaten as a Bonus Action, restores `8d4 + 8` hit points as [[Redheart Berry]]. Split skins and fermenting rinds are already down and have no listed healing. Blood beneath snapped living stems marks a living-plant claim.
+**Fallen fruit.** The three bushes still hold tawny orange fruit. A firm fallen fruit is edible and, when eaten as a Bonus Action, restores `8d4 + 8` hit points as [[redheart-berry]]. Split skins and fermenting rinds are already down and have no listed healing. Blood beneath snapped living stems marks a living-plant claim.
 
 **Intelligence (Nature) — identify the fruit**
 - `DC 10` → The firm fallen fruit is edible, not poison.
-- `DC 15` or *Identify* → Eating a firm fallen fruit is a Bonus Action that restores `8d4 + 8` hit points as [[Redheart Berry]].
+- `DC 15` or *Identify* → Eating a firm fallen fruit is a Bonus Action that restores `8d4 + 8` hit points as [[redheart-berry]].
 
 ![[aruhe-redheart-berry.jpg|Redheart Berry]]
 ```
@@ -90,15 +90,15 @@ flexGrow=3
 ===
 ## Procedure
 
-**Look and commit.** This is a clue slice, not a fight. After everyone acts, advance the threat clock once if anyone remains on the bank. A frozen table also advances it once at round end. Failed checks use only the **Be ready for** ruling and never add a second tick. End the beat when the party commits north or breaks south. Do not roll the hazards table here or start [[Aruhe - River Slack Basin]].
+**Look and commit.** This is a clue slice, not a fight. After everyone acts, advance the threat clock once if anyone remains on the bank. A frozen table also advances it once at round end. Failed checks use only the **Be ready for** ruling and never add a second tick. End the beat when the party commits north or breaks south. Do not roll the hazards table here or start [[river-slack-basin]].
 
-If a party member enters open valley air, that character leaves the bank. Point to a [[Young Bloodhawk]].
+If a party member enters open valley air, that character leaves the bank. Point to a [[young-bloodhawk]].
 ```
 
 ```col-md
 ## Secondary objective
 
-If anyone plucks living plants, traps, or kills to carry flesh here, mark [[Taking on Aruhe]]. The later roll on [[Session-11-00-Random-Tables]] uses `2d8`, keeping the lower result. Fallen fruit does not mark a claim. The north trail and smoke remain either way.
+If anyone plucks living plants, traps, or kills to carry flesh here, mark [[taking-on-aruhe]]. The later roll on [[Session-11-00-Random-Tables]] uses `2d8`, keeping the lower result. Fallen fruit does not mark a claim. The north trail and smoke remain either way.
 ```
 ````
 
@@ -120,10 +120,10 @@ If anyone plucks living plants, traps, or kills to carry flesh here, mark [[Taki
 | Assess the situation | **Wisdom (Perception)**, **Wisdom (Survival)**, or **Intelligence (Nature)** | `DC 10` | The party can sort the evidence: fallen fruit is already down, blood lies only under snapped living stems, and the pole, bones, and scales mark a used fishing stop. The prints and smoke point north, but their distance and the survivors' number remain unknown. | The looker identifies the three piles and northbound route but does not resolve the blood or the survivors' number. | The looker gains no additional read. The clock still waits for round end. |
 | Follow the north prints and smoke | Walk the crushed corridor north off the bank. | Commit | The party commits to the north trail and hands off to [[Session-11-05-Otter-Hole]]. Fallen fruit is not a claim; any existing living-plant claim remains applied. | Binary. | Binary. |
 | Search the pole, bones, and line | **Intelligence (Investigation)** or **Wisdom (Perception)** | `DC 10` | The searcher can take the pole, line, and baskets. The stop is recently used, but the bones and scales do not reveal the catch or the number of fishers. | The searcher confirms the visible evidence and remains at the pole. | The searcher finds nothing beyond the visible gear and remains at the line. |
-| Pick fruit | **Intelligence (Nature)** or **Wisdom (Survival)** to sort fallen fruit from living stems. **Utilize** if the character plucks without sorting. | `DC 10` | The character takes only fallen fruit. That is not a claim. A firm fallen fruit restores `8d4 + 8` hit points as a Bonus Action, as [[Redheart Berry]]. | The character takes some living stems and marks [[Taking on Aruhe]]. The later hazards-table roll uses `2d8`, keeping the lower result. | The character strips living fruit and marks [[Taking on Aruhe]]. The later hazards-table roll uses `2d8`, keeping the lower result. |
-| Look up-sun | **Wisdom (Perception)**, only if the party asks who the flyer is | `DC 27` | The looker sees [[Talon Skarn]] up-sun as a man-sized peregrine body in the glare, then loses sight of him. | Sun glare gives no identity. The looker remains on the bank. | Sun glare gives no identity. The looker remains on the bank. |
-| Fly (hawk sky) | Fly up out of the grass into open valley air | Take open valley air | That character leaves the bank and enters hawk sky. Point to a [[Young Bloodhawk]]. End this beat for that character. | Binary. | Binary. Open valley air is hawk sky. |
-| Return toward [[Aruhe - Grasslands Torn Crossing]] | Walk south through the valley. | Walk | The party leaves the bank south. Rebuild from [[Aruhe - Grasslands Torn Crossing]], the terrace line, the beach, or [[Uncertainty]], as the route demands. | Binary. | Binary. |
+| Pick fruit | **Intelligence (Nature)** or **Wisdom (Survival)** to sort fallen fruit from living stems. **Utilize** if the character plucks without sorting. | `DC 10` | The character takes only fallen fruit. That is not a claim. A firm fallen fruit restores `8d4 + 8` hit points as a Bonus Action, as [[redheart-berry]]. | The character takes some living stems and marks [[taking-on-aruhe]]. The later hazards-table roll uses `2d8`, keeping the lower result. | The character strips living fruit and marks [[taking-on-aruhe]]. The later hazards-table roll uses `2d8`, keeping the lower result. |
+| Look up-sun | **Wisdom (Perception)**, only if the party asks who the flyer is | `DC 27` | The looker sees [[talon-skarn]] up-sun as a man-sized peregrine body in the glare, then loses sight of him. | Sun glare gives no identity. The looker remains on the bank. | Sun glare gives no identity. The looker remains on the bank. |
+| Fly (hawk sky) | Fly up out of the grass into open valley air | Take open valley air | That character leaves the bank and enters hawk sky. Point to a [[young-bloodhawk]]. End this beat for that character. | Binary. | Binary. Open valley air is hawk sky. |
+| Return toward [[torn-crossing]] | Walk south through the valley. | Walk | The party leaves the bank south. Rebuild from [[torn-crossing]], the terrace line, the beach, or [[Uncertainty]], as the route demands. | Binary. | Binary. |
 
 For an unforeseen intent, keep the northbound prints and smoke as the route, and use the zones to decide whether the approach lingers, enters the grass, touches living stems, or leaves south.
 
@@ -137,20 +137,20 @@ For an unforeseen intent, keep the northbound prints and smoke as the route, and
 
 ## How the Scene Resolves
 
-The default north handoff is [[Session-11-05-Otter-Hole]]. Once the party commits, [[Aruhe - River Slack Basin]] comes into view. Apply any [[Taking on Aruhe]] claim already made.
+The default north handoff is [[Session-11-05-Otter-Hole]]. Once the party commits, [[river-slack-basin]] comes into view. Apply any [[taking-on-aruhe]] claim already made.
 
 > [!narration] How the Scene Resolves
 > The fruiting margin falls behind as the northbound corridor follows the river. Stems rasp against your legs, and the current keeps pace to the east. Ahead, the water begins to slow.
 
 | If | Next | Narration |
 | --- | --- | --- |
-| Fresh north commit | The party follows sharp prints toward [[Aruhe - River Slack Basin]]. Hand to [[Session-11-05-Otter-Hole]]. | ==_The prints stay sharp in the wet ground, and the smoke still stands north as you take the corridor upriver._== |
-| Lingered north commit | The party follows softened prints toward [[Aruhe - River Slack Basin]] after the clock advances. Hand to [[Session-11-05-Otter-Hole]]. | ==_The print edges have softened and the smoke is thinner as you take the corridor north._== |
-| Southbound break | The party leaves the bank toward [[Aruhe - Grasslands Torn Crossing]], the terrace line, the beach, or [[Uncertainty]]. Rebuild from the route chosen. | ==_You turn south, leaving the smoke and northbound prints behind as the used bank opens toward the torn crossing and the beach._== |
+| Fresh north commit | The party follows sharp prints toward [[river-slack-basin]]. Hand to [[Session-11-05-Otter-Hole]]. | ==_The prints stay sharp in the wet ground, and the smoke still stands north as you take the corridor upriver._== |
+| Lingered north commit | The party follows softened prints toward [[river-slack-basin]] after the clock advances. Hand to [[Session-11-05-Otter-Hole]]. | ==_The print edges have softened and the smoke is thinner as you take the corridor north._== |
+| Southbound break | The party leaves the bank toward [[torn-crossing]], the terrace line, the beach, or [[Uncertainty]]. Rebuild from the route chosen. | ==_You turn south, leaving the smoke and northbound prints behind as the used bank opens toward the torn crossing and the beach._== |
 
 ## Backup
 
-[[Aruhe - River - Line Bank]] · [[Aruhe - Grasslands Torn Crossing]] · [[Aruhe - River Landing Bank]] · [[Aruhe - River Slack Basin]] · [[Session-11-00-Random-Tables]] · [[Taking on Aruhe]] · [[Aruhe - Grasslands]] · [[Aruhe - River]] · [[Redheart Berry]] · [[Uncertainty]] · [[Talon Skarn]] · [[Young Bloodhawk]] · [[Session-11-03-Wolfrabbits]] · [[Session-11-00-Birds-of-a-Feather]] · [[Session-11-05-Otter-Hole]]
+[[line-bank]] · [[torn-crossing]] · [[landing-bank]] · [[river-slack-basin]] · [[Session-11-00-Random-Tables]] · [[taking-on-aruhe]] · [[grasslands]] · [[the-river]] · [[redheart-berry]] · [[Uncertainty]] · [[talon-skarn]] · [[young-bloodhawk]] · [[Session-11-03-Wolfrabbits]] · [[Session-11-00-Birds-of-a-Feather]] · [[Session-11-05-Otter-Hole]]
 
 ## Battlemap
 

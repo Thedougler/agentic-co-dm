@@ -30,14 +30,14 @@ Southern Midchain fishing island where a planar alignment landed on the line bet
 
 ## Canon
 - Two children are rewriting the island with arguments. The named source identifies them as [[Toby]] and [[Frankie]], with [[Billy]] as the third child who sent villagers to find heroes.
-- [[Delmar Fisk]] does not know Halewick exists. The Pearl signal's distant alignment has found another place to go wrong.
+- [[delmar-fisk]] does not know Halewick exists. The Pearl signal's distant alignment has found another place to go wrong.
 - Deaf people on the island keep un-overwritten memory. New commands need the utterance perceived; leaving the island does not undo a command that already landed.
 
 ## Connections
-- → [[Midchain]] · [[Pearl signal across the boundary]] · [[Drowned Maw]]
+- → [[Midchain]] · [[pearl-signal-across-the-boundary]] · [[drowned-maw]]
 
 ## Secrets
-Legacy calls this the Isle of Cursed Speech / “Word from Halewick”; the dump's alignment timing wins. [[Delmar Fisk]] remains unaware.
+Legacy calls this the Isle of Cursed Speech / “Word from Halewick”; the dump's alignment timing wins. [[delmar-fisk]] remains unaware.
 
 ## Provenance
 Dump source 2026-09-05; legacy: `/Users/nick/shattered-sea/wiki/shattered-sea/situation-isle-of-cursed-speech.md` and `/Users/nick/shattered-sea/wiki/shattered-sea/region-midchain-south.md`.

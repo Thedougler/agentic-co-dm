@@ -28,9 +28,9 @@ kind: ship
 region: "Aruhe and the Midchain"
 berth: "La Vasca, Calveno, during refit"
 relationships:
-  - target: "[[Calven and Calveno]]"
+  - target: "[[calven-and-calveno]]"
     type: related_to
-  - target: "[[Aruhe - Hungry Isle]]"
+  - target: "[[aruhe]]"
     type: related_to
 ---
 
@@ -61,11 +61,11 @@ The current named complement is Geoffrey Draves, Sem Holst, Alys Kuiper, Old Faa
 
 ## Handling
 
-Keep the ship moving off [[Aruhe - Hungry Isle]] instead of anchoring close. The refit cradle at [[Calven and Calveno]] is an established maintenance berth, but leaving it exposes the ship to pursuit and interception. The crew has already used merchant cover to survive a Crown approach, so route choice and visible identity matter.
+Keep the ship moving off [[aruhe]] instead of anchoring close. The refit cradle at [[calven-and-calveno]] is an established maintenance berth, but leaving it exposes the ship to pursuit and interception. The crew has already used merchant cover to survive a Crown approach, so route choice and visible identity matter.
 
 ## Combat
 
-The ship can be boarded or intercepted; [[HCS Ordinance]] crossed the crew under merchant cover before revealing Crown authority. The supplied vehicle chassis does not establish initiative, ramming, weapon attacks, component targeting, sinking, or destruction procedures. The current combat state is therefore the Gargantuan hull at AC `11` and `130` hit points, with the remaining combat figures unresolved.
+The ship can be boarded or intercepted; [[hcs-ordinance]] crossed the crew under merchant cover before revealing Crown authority. The supplied vehicle chassis does not establish initiative, ramming, weapon attacks, component targeting, sinking, or destruction procedures. The current combat state is therefore the Gargantuan hull at AC `11` and `130` hit points, with the remaining combat figures unresolved.
 
 ## At the Table
 

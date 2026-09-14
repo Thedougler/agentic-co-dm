@@ -23,7 +23,7 @@ visibility: dm
 role: ambusher
 cr: "5"
 relationships:
-  - target: "[[Drowned Maw]]"
+  - target: "[[drowned-maw]]"
     type: related_to
   - target: "[[Uncertainty]]"
     type: related_to
@@ -79,7 +79,7 @@ actions:
 
 ## Behavior
 
-- **Habitat.** [[Drowned Maw]] waters and Shelfworks salvage approaches. A fed Welak rarely leaves the Maw. The specimen that struck the [[Uncertainty]] west of Calveno was an outlier.
+- **Habitat.** [[drowned-maw]] waters and Shelfworks salvage approaches. A fed Welak rarely leaves the Maw. The specimen that struck the [[Uncertainty]] west of Calveno was an outlier.
 - **Behavior.** Surfaces once, fast, and attacks wood before a crew can reload. Follows salvage-pump vibration more than blood.
 - **Diet.** Ship-side prey and whatever the ambush yields; fed animals turn back toward the Maw.
 - **Social Structure.** Source is silent on packs; run as a singular ambusher unless another source says otherwise.

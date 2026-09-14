@@ -23,13 +23,13 @@ visibility: dm
 status: active
 kind: breakaway order
 relationships:
-  - target: "[[Sentinels of the Eyrie]]"
+  - target: "[[sentinels-of-the-eyrie]]"
     type: related_to
-  - target: "[[Talon Vantyrus]]"
+  - target: "[[talon-vantyrus]]"
     type: related_to
-  - target: "[[Talon Skarn]]"
+  - target: "[[talon-skarn]]"
     type: related_to
-  - target: "[[Fate Spinner]]"
+  - target: "[[fate-spinner]]"
     type: related_to
 ---
 # Countless
@@ -39,38 +39,38 @@ relationships:
 
 ## Public face
 
-Breakaways from the [[Sentinels of the Eyrie]] who kept martial reach and dropped discipline. Their public face is absence from every ledger: taken names, no records, and a shared title of Talon.
+Breakaways from the [[sentinels-of-the-eyrie]] who kept martial reach and dropped discipline. Their public face is absence from every ledger: taken names, no records, and a shared title of Talon.
 
 ## DM thesis
 
-Countless bends fate for itself and ensures nothing is counted against it, hunting [[Fate Spinner]] carriers while the [[Rule of Two]] turns the schism inward.
+Countless bends fate for itself and ensures nothing is counted against it, hunting [[fate-spinner]] carriers while the [[rule-of-two]] turns the schism inward.
 
 ## Current state
 
-[[Talon Vantyrus]] (also the [[Osset]] guise) leads; [[Talon Skarn]] is the apprentice. An apprentice openly schemes to overthrow the master; the master teaches treating the scheme as a standing threat. Survival is the verdict. Power is taken by force, not inherited.
+[[talon-vantyrus]] (also the [[Osset]] guise) leads; [[talon-skarn]] is the apprentice. An apprentice openly schemes to overthrow the master; the master teaches treating the scheme as a standing threat. Survival is the verdict. Power is taken by force, not inherited.
 
 ## Active agenda
 
-[[Long Sight Hunt]]: locate [[Crissdalynn Khinriss]], or any Sentinel who recently visited [[Yssenmoor]], once [[Uncertainty]] enters Midchain waters.
+[[long-sight-hunt]]: locate [[crissdalynn-khinriss]], or any Sentinel who recently visited [[Yssenmoor]], once [[Uncertainty]] enters Midchain waters.
 
 ## Assets, people, places, relationships
 
 - Method: hired blades and paid contacts receive one job each and never know who ordered it. Countless sweeps pilgrim routes, grey markets, and Sentinel waystations for Fate Spinner carriers.
 - Leverage: covert routes, taken names, and the ability to avoid ledgers. No records and one-job contacts limit what any individual agent knows.
-- Rival: [[Sentinels of the Eyrie]]
-- Target: [[Crissdalynn Khinriss]]
-- Internal pressure: [[Rule of Two]]
-- Related pressure: [[Countless through the Maw seal]]
+- Rival: [[sentinels-of-the-eyrie]]
+- Target: [[crissdalynn-khinriss]]
+- Internal pressure: [[rule-of-two]]
+- Related pressure: [[countless-through-the-maw-seal]]
 
 ## Connections
 
-- [[Talon Vantyrus]]
-- [[Talon Skarn]]
-- [[Sentinels of the Eyrie]]
-- [[Crissdalynn Khinriss]]
-- [[Fate Spinner]]
-- [[Long Sight Hunt]]
-- [[Rule of Two]]
+- [[talon-vantyrus]]
+- [[talon-skarn]]
+- [[sentinels-of-the-eyrie]]
+- [[crissdalynn-khinriss]]
+- [[fate-spinner]]
+- [[long-sight-hunt]]
+- [[rule-of-two]]
 - [[Yssenmoor]]
 
-The name The Uncounted is retired. Long Reach is the common Eldritch Claw Tattoo every Sentinel apprentice earns. Long Sight is rare and withheld. [[Crissdalynn Khinriss]] has early partial access because the [[Fate Spinner]] unlocked it and [[Master Kyzil]] never explained how far it reaches. Taken names replace Eyrie names. Power is proven by surviving your own student.
+The name The Uncounted is retired. Long Reach is the common Eldritch Claw Tattoo every Sentinel apprentice earns. Long Sight is rare and withheld. [[crissdalynn-khinriss]] has early partial access because the [[fate-spinner]] unlocked it and [[master-kyzil]] never explained how far it reaches. Taken names replace Eyrie names. Power is proven by surviving your own student.

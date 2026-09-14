@@ -33,7 +33,7 @@ He's not smiling at all once he's sure of a thing. He said as much to [[Thunk]] 
 
 - [[Tallow Row]]: the den where he plays most nights.
 - [[Thunk]]: called out Thunk's card-counting at the table, mid-hand, in front of the whole room.
-- [[Old Faas]]: a familiar face across the felt; Faas is one of the regulars the room already trusts.
+- [[old-faas]]: a familiar face across the felt; Faas is one of the regulars the room already trusts.
 
 ## Session Log
 

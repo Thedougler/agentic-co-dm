@@ -22,9 +22,9 @@ reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 relationships:
-  - target: "[[Grung clans]]"
+  - target: "[[grung-clans]]"
     type: related_to
-  - target: "[[Verdant Teeth]]"
+  - target: "[[verdant-teeth]]"
     type: related_to
 ---
 
@@ -36,7 +36,7 @@ relationships:
 
 *Vethka* is the [[Grung]] term for this class of vessel, not a proper name but a caste-designation. Roughly, it means *the waterline that moves toward you*. Every raiding proa built to the standard pattern receives this designation from its crews.
 
-The hull is single-piece iron-pillar hardwood from [[Verdant Teeth]], adze-worked by green-caste artisans, sealed inside and out with boiled tree resin. Water slides off. Rain cannot swell it. Spray sheds cleanly. From more than half a mile away on a dark night, a *vethka* running low with no sail set reads as debris, by design.
+The hull is single-piece iron-pillar hardwood from [[verdant-teeth]], adze-worked by green-caste artisans, sealed inside and out with boiled tree resin. Water slides off. Rain cannot swell it. Spray sheds cleanly. From more than half a mile away on a dark night, a *vethka* running low with no sail set reads as debris, by design.
 
 In reef country, nothing with a keel can catch a *Vethka*. [[Grung]] Standing Leap means the crew is over the rail before the bow stops moving. The double outrigger lets it handle reef passages that would shred deeper hulls. Its threat comes from surprise, speed, and the poison bench, not from gunnery.
 
@@ -62,10 +62,10 @@ In reef country, nothing with a keel can catch a *Vethka*. [[Grung]] Standing Le
 
 ## Connections
 
-- [[Grung clans|Grung Clans]]: builders and operators of the *Vethka* class.
-- [[Verdant Teeth]]: source of the iron-pillar hardwood used in the hull.
+- [[grung-clans|Grung Clans]]: builders and operators of the *Vethka* class.
+- [[verdant-teeth]]: source of the iron-pillar hardwood used in the hull.
 - [[Karath]]: home island, its no-harbour shoreline built for exactly this hull's low, unmoored profile. Karath alone crews six of the class.
-- [[Jean-Claude Tabarnack]]: tracks Karath's *Vethka* fleet, which runs crew and captives for the operation holding his family.
+- [[jean-claude-tabarnack]]: tracks Karath's *Vethka* fleet, which runs crew and captives for the operation holding his family.
 
 ## Session Log
 

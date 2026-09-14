@@ -22,8 +22,8 @@ tier: supporting
 ---
 # Remnis
 
-Deity. [[Aarakocra]] sky god, primary deity of [[Crissdalynn Khinriss|Crissdalynn]]. She wears her faith lightly, praying from habit more than theology.
+Deity. [[Aarakocra]] sky god, primary deity of [[crissdalynn-khinriss|Crissdalynn]]. She wears her faith lightly, praying from habit more than theology.
 
 ## The Fact
 
-Remnis is an [[Aarakocra]] sky god and primary deity. [[Crissdalynn Khinriss|Crissdalynn]] follows this faith but wears it lightly, praying from habit more than theology.
+Remnis is an [[Aarakocra]] sky god and primary deity. [[crissdalynn-khinriss|Crissdalynn]] follows this faith but wears it lightly, praying from habit more than theology.

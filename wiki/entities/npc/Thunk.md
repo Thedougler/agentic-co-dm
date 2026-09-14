@@ -30,9 +30,9 @@ visibility: dm
 relationships:
   - target: "[[Uncertainty]]"
     type: related_to
-  - target: "[[Calven and Calveno]]"
+  - target: "[[calven-and-calveno]]"
     type: related_to
-  - target: "[[Aruhe - Hungry Isle]]"
+  - target: "[[aruhe]]"
     type: related_to
 ---
 # Thunk
@@ -88,7 +88,7 @@ flexGrow=1
 ===
 ### When danger appears
 
-Thunk puts the ship's movement and guns first. Around [[Aruhe - Hungry Isle|Aruhe]], he works with Jeffrey and the crew to stay ready to move and watch for skull crabs and other threats.
+Thunk puts the ship's movement and guns first. Around [[aruhe|Aruhe]], he works with Jeffrey and the crew to stay ready to move and watch for skull crabs and other threats.
 
 If someone asks him to judge a cannon, powder, or explosive, let his correct instinct give them a useful lead. He cannot provide a technical explanation.
 ```
@@ -102,7 +102,7 @@ If someone asks him to judge a cannon, powder, or explosive, let his correct ins
 
 ## Current pressure
 
-In [[Calven and Calveno|Calveno]], blackout-drunk Thunk ordered `1,000 gp` of new cannons on *[[Uncertainty]]*'s credit. He signed twice — once upright and once upside down — then vomited on the order.
+In [[calven-and-calveno|Calveno]], blackout-drunk Thunk ordered `1,000 gp` of new cannons on *[[Uncertainty]]*'s credit. He signed twice — once upright and once upside down — then vomited on the order.
 
 The creditor, terms, and purpose remain open. Use the debt as generosity, leverage, or a future bill depending on who comes asking.
 
@@ -112,7 +112,7 @@ The creditor, terms, and purpose remain open. Use the debt as generosity, levera
 | ----------------------------------------- | -------------------------------------------------------------- |
 | [[Uncertainty]]                           | Current ship; Thunk keeps its guns and mobility working.       |
 | [[Calven and Calveno\|Calveno]]           | Where the `1,000 gp` cannon order created the open debt.       |
-| [[Aruhe - Hungry Isle]]                   | Current danger zone; Thunk helps keep the ship ready to leave. |
+| [[aruhe]]                   | Current danger zone; Thunk helps keep the ship ready to leave. |
 
 ---
 

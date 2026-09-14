@@ -3,7 +3,7 @@ title: "Branca"
 category: entities
 tags: ["shattered-sea", "npc"]
 sources:
-  - "00 Story so far.md"
+  - "story-so-far.md"
   - "campaign-os:branca.md"
 summary: "Taken by Umberlee when the Pearl of Souls demand became explicit."
 provenance:
@@ -33,7 +33,7 @@ visibility: dm
 | ------------- | --------------------------------------------------------------- |
 | **Species**   | [[Human]]                                                            |
 | **Role**      | Senior Waveservant / [[Umberlee]]'s appointment-keeper |
-| **Location**  | [[Calven and Calveno]] harbor shrine (Session 04)                  |
+| **Location**  | [[calven-and-calveno]] harbor shrine (Session 04)                  |
 | **Status**    | Active, recovering from the s04 possession/resurrection, returned to the Church of [[Umberlee]] |
 
 > [!narration] Narration
@@ -41,7 +41,7 @@ visibility: dm
 >
 > *Branca*: *(pleasantly)* You're a difficult man to find. We have an appointment.
 
-Branca is the senior Waveservant of [[Umberlee]], assigned to [[Delmar Fisk]]. She speaks through schedules and appointments, delivering divine will in soft language. She can appear at any shrine (Calveno, Port Tidefall, or Kalowe) with the same manner at every port. Use whichever shrine the adventurers find first. Call her when Umberlee needs to claim Fisk without a fight, and she makes divine force sound like scheduling.
+Branca is the senior Waveservant of [[Umberlee]], assigned to [[delmar-fisk]]. She speaks through schedules and appointments, delivering divine will in soft language. She can appear at any shrine (Calveno, Port Tidefall, or Kalowe) with the same manner at every port. Use whichever shrine the adventurers find first. Call her when Umberlee needs to claim Fisk without a fight, and she makes divine force sound like scheduling.
 
 **Appearance & Manner:** mid-forties, salt-white hair pulled back tight, sea-grey robes pressed and spotless. She carries a small leather tide-table booklet and always consults it before speaking. She reads it for real, not for show. When she looks at Fisk, she has the calm focus of an assistant with someone who missed a meeting. Professional. Unmoved. Already rescheduling.
 
@@ -67,11 +67,11 @@ No stats given in source.
 
 ## Connections
 
-- [[Delmar Fisk]]: the target of Umberlee's claim. Branca is the messenger and instrument of the possession/negotiation.
+- [[delmar-fisk]]: the target of Umberlee's claim. Branca is the messenger and instrument of the possession/negotiation.
 - [[Umberlee]]: the goddess who speaks and acts through her
 - [[Waveservants]]: the clergy order she belongs to
-- [[Pearl of Souls]]: the item at the center of the negotiation
-- [[Calder's Tooth and Port Tidefall]]: where she is normally assigned
+- [[pearl-of-souls]]: the item at the center of the negotiation
+- [[calders-tooth-and-port-tidefall]]: where she is normally assigned
 - [[Kalowe]]: alternate shrine port
 
 ## Session Log

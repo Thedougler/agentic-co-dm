@@ -22,7 +22,7 @@ tier: supporting
 ---
 # Paolo
 
-*A young gondolier still learning the trade in [[Calven and Calveno]]'s canals.*
+*A young gondolier still learning the trade in [[calven-and-calveno]]'s canals.*
 
 **Wants:** to master the gondolier's trade, and to pay back the crew who fished him out of the canal.
 
@@ -31,12 +31,12 @@ tier: supporting
 
 **Roleplay Concept:** cheerfully unbothered novice who talks up the journey over the destination.
 
-**Lore Sheet:** crashed his gondola into the canal wall near the [[Mercatura]] and went into the water. [[Crissdalynn Khinriss|Crissdalynn]] grabbed him, [[Perrin Black-Jaw|Perrin]] jumped in and righted the boat, [[Delmar Fisk|Delmar]] threw him a line, and Crissdalynn fished his dropped belongings (papers and scraps) out of the water. He introduced himself as still learning the trade but confident in it; when the crew declined his offer of a free gondola ride as thanks, he danced his way back to his boat undeterred.
+**Lore Sheet:** crashed his gondola into the canal wall near the [[Mercatura]] and went into the water. [[crissdalynn-khinriss|Crissdalynn]] grabbed him, [[perrin-black-jaw|Perrin]] jumped in and righted the boat, [[delmar-fisk|Delmar]] threw him a line, and Crissdalynn fished his dropped belongings (papers and scraps) out of the water. He introduced himself as still learning the trade but confident in it; when the crew declined his offer of a free gondola ride as thanks, he danced his way back to his boat undeterred.
 
 ## Connections
 
-- [[Calven and Calveno]], works its canals as a gondolier
+- [[calven-and-calveno]], works its canals as a gondolier
 
 ## Session Log
 
-- **Session 08** (`vault/episodes/008/`). Capsized his gondola near the Mercatura; rescued by [[Crissdalynn Khinriss|Crissdalynn]], [[Perrin Black-Jaw|Perrin]], and [[Delmar Fisk|Delmar]]. Confirmed: [[Transcript]].
+- **Session 08** (`vault/episodes/008/`). Capsized his gondola near the Mercatura; rescued by [[crissdalynn-khinriss|Crissdalynn]], [[perrin-black-jaw|Perrin]], and [[delmar-fisk|Delmar]]. Confirmed: [[Transcript]].

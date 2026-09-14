@@ -33,7 +33,7 @@ visibility: dm
 - [[Sandro]], fellow castaway who swam ashore with him onto [[Aruhe]] alongside an older man, Tomo. Tomo broke the island's only rule and ate from a shore bush. Something dragged him into the treeline by both ankles before dawn. Nino hasn't spoken a full sentence since.
 - [[Vethka]], the wrecked ship she rode ashore on and shelters in. It sailed south for [[Karath]] with the rest of the fleet until an easterly storm drove it onto Aruhe.
 - [[Aruhe]], the island she's stranded on. She's made herself the camp's only working lookout, watching the horizon before anyone else spots what's on it.
-- [[Calven and Calveno]], his home, a dyer's apprentice out of its Beffa quarter before the raid took him.
+- [[calven-and-calveno]], his home, a dyer's apprentice out of its Beffa quarter before the raid took him.
 - [[Grung]], whose raid on La Finestra took him and roughly 500 others captive.
-- [[Nona Black-Jaw]], counts her among the roughly 500 missing from the Beffa raid.
-- [[Perrin Black-Jaw]], PC connection. His vow to chase down Nona's missing is a debt Nino's survival helps answer.
+- [[nona-black-jaw]], counts her among the roughly 500 missing from the Beffa raid.
+- [[perrin-black-jaw]], PC connection. His vow to chase down Nona's missing is a debt Nino's survival helps answer.

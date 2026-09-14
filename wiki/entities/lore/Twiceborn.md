@@ -21,18 +21,18 @@ reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 relationships:
-  - target: "[[Grung clans]]"
+  - target: "[[grung-clans]]"
     type: related_to
-  - target: "[[Jean-Claude Tabarnack]]"
+  - target: "[[jean-claude-tabarnack]]"
     type: related_to
 ---
 # Twiceborn
 
-Twiceborn is a Grung censure status recognized through sanctioned marking, hats, colors, and public avoidance. [[Jean-Claude Tabarnack]]'s red beret is read in this social register, while the source leaves the full process unknown.
+Twiceborn is a Grung censure status recognized through sanctioned marking, hats, colors, and public avoidance. [[jean-claude-tabarnack]]'s red beret is read in this social register, while the source leaves the full process unknown.
 
 ## Connections
 
-- [[Grung clans]]
-- [[Jean-Claude Tabarnack]]
+- [[grung-clans]]
+- [[jean-claude-tabarnack]]
 
 Color comes from diet and becomes permanent only when a Gold sealing rite locks it. Gold-tier color requires a rare toxin grown on hidden farms in [[Karath]]. [[Ozzeth]] and [[Simone]] independently cast the rite on themselves; turned inward it never finishes. Twiceborn is Gold's official censure term.

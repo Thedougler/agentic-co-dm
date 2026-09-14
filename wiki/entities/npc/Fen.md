@@ -22,7 +22,7 @@ tier: supporting
 ---
 # Fen
 
-A young sailor aboard the Saltwright under [[Beaumont Sel]]. One of four crew members in [[Beaumont's Crew]], with [[Drav Holke]], [[Lenne Vor]], and [[Wessa]].
+A young sailor aboard the Saltwright under [[beaumont-sel]]. One of four crew members in [[beaumonts-crew]], with [[drav-holke]], [[lenne-vor]], and [[Wessa]].
 
 Seventeen or eighteen. Still growing a beard. He follows orders and does good work.
 
@@ -30,6 +30,6 @@ Seventeen or eighteen. Still growing a beard. He follows orders and does good wo
 
 ## Connections
 
-- [[Beaumont Sel]], captain of the [[Saltwright]], his employer.
+- [[beaumont-sel]], captain of the [[Saltwright]], his employer.
 - [[Saltwright]], the ship he crews aboard.
-- [[Drav Holke]], [[Lenne Vor]], [[Wessa]], fellow Saltwright crew, [[Beaumont's Crew]].
+- [[drav-holke]], [[lenne-vor]], [[Wessa]], fellow Saltwright crew, [[beaumonts-crew]].

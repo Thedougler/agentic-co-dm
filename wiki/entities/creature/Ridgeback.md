@@ -19,9 +19,9 @@ reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 relationships:
-  - target: "[[Elemental Plane of Water]]"
+  - target: "[[elemental-plane-of-water]]"
     type: related_to
-  - target: "[[Drowned Maw]]"
+  - target: "[[drowned-maw]]"
     type: related_to
 ---
 # Ridgeback
@@ -29,4 +29,4 @@ relationships:
 > [!narration] Narration
 >
 
-[[Ridgeback]] is named as the second entity through the [[Drowned Maw]] fissure from the [[Elemental Plane of Water]]. Clyde's Bestiary documents it. Like [[Leviathan]] and [[Krakling]], it is described with flat-black skin, no eyes, blindsight, and water breathing. No fight sheet is established here.
+[[Ridgeback]] is named as the second entity through the [[drowned-maw]] fissure from the [[elemental-plane-of-water]]. Clyde's Bestiary documents it. Like [[Leviathan]] and [[Krakling]], it is described with flat-black skin, no eyes, blindsight, and water breathing. No fight sheet is established here.

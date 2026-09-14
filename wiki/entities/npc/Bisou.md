@@ -29,15 +29,15 @@ tier: supporting
 
 A small capuchin monkey, dark-furred, with bright amber eyes more expressive than most animals allow themselves to be. Small, quick movements and quicker decisions. She tilts her head at things that interest her, and when something interests her, it's obvious. She is not decorative. She watches, steals, and has absolute confidence in both (the pipe most often, but she is not selective). When Beaumont needs her still, she is still, the shift immediate and complete. She has an opinion about coin tricks. The results depend on how good the trick is.
 
-Bisou has ridden [[Beaumont Sel]]'s left shoulder for the full eleven years he has run the [[Midchain]] route. Not a pet in any passive sense. She moves with precision and purpose while making quick decisions and showing zero hesitation about stealing the pipe from the corner of Beaumont's mouth. He corrects this with the weary patience of a man who has lost the argument many times. Her Tail stays looped once around his neck when she settles in. She goes where he goes.
+Bisou has ridden [[beaumont-sel]]'s left shoulder for the full eleven years he has run the [[Midchain]] route. Not a pet in any passive sense. She moves with precision and purpose while making quick decisions and showing zero hesitation about stealing the pipe from the corner of Beaumont's mouth. He corrects this with the weary patience of a man who has lost the argument many times. Her Tail stays looped once around his neck when she settles in. She goes where he goes.
 
 ## Stats & Combat
 
-No separate statblock stated in source. She is Beaumont's delivery mechanism in combat. See [[Beaumont Sel]]'s page for how the [[Kalowe]], [[Calven and Calveno]], and [[Calder's Tooth and Port Tidefall]] Maneuvers describe his actions with her aid.
+No separate statblock stated in source. She is Beaumont's delivery mechanism in combat. See [[beaumont-sel]]'s page for how the [[Kalowe]], [[calven-and-calveno]], and [[calders-tooth-and-port-tidefall]] Maneuvers describe his actions with her aid.
 
 ## Connections
 
-- [[Beaumont Sel]]: the tortle captain of the [[Saltwright]] she rides on his left shoulder. Companion for the full eleven years he has run the [[Midchain]].
+- [[beaumont-sel]]: the tortle captain of the [[Saltwright]] she rides on his left shoulder. Companion for the full eleven years he has run the [[Midchain]].
 
 ## Session Log
 

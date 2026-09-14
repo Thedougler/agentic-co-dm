@@ -3,7 +3,7 @@ title: "Nightmantle"
 category: entities
 tags: ["shattered-sea", "item"]
 sources:
-  - "00 Story so far.md"
+  - "story-so-far.md"
   - "campaign-os:nightmantle.md"
 summary: "Item whose seller, Lavinia Sordi, named Osset a second time."
 provenance:
@@ -23,7 +23,7 @@ visibility: dm
 kind: magic
 rarity: rare
 attunement: true
-owner: "[[Crissdalynn Khinriss]]"
+owner: "[[crissdalynn-khinriss]]"
 ---
 
 # Nightmantle
@@ -44,7 +44,7 @@ This cloak carries a curse layered on top of that protection. When a creature wi
 
 ## At a Glance
 
-[[Crissdalynn Khinriss]] bought it expecting straightforward protection and carries it in her kit. Displacement makes her hard to hit; the curse pulls ranged fire meant for nearby allies onto her at a normal roll.
+[[crissdalynn-khinriss]] bought it expecting straightforward protection and carries it in her kit. Displacement makes her hard to hit; the curse pulls ranged fire meant for nearby allies onto her at a normal roll.
 
 ## At the Table
 
@@ -52,8 +52,8 @@ The next time an ally within 10 feet of her is the target of a ranged attack, th
 
 ## Connections
 
-- [[Crissdalynn Khinriss]] — Current holder; bought expecting protection.
-- [[Lavinia Sordi]] — Sold it from her rack at [[La Cenere]] in [[Le Paludi]], [[Calven and Calveno]], for 900 gp under the name Nightmantle (Session 8).
+- [[crissdalynn-khinriss]] — Current holder; bought expecting protection.
+- [[lavinia-sordi]] — Sold it from her rack at [[la-cenere]] in [[le-paludi]], [[calven-and-calveno]], for 900 gp under the name Nightmantle (Session 8).
 - [[Osset]] — Falcon-featured man Lavinia named as the prior source.
 - [[Cloak of Displacement]] — Correct identification in play; cursed variant.
 - [[Cloak of Protection]] — What Lavinia believed she was selling.
@@ -64,4 +64,4 @@ Play identified the cloak as a cursed [[Cloak of Displacement]], not the [[Cloak
 
 ## Provenance
 
-Sold by [[Lavinia Sordi]] from her rack at [[La Cenere]] in [[Le Paludi]], [[Calven and Calveno]], for 900 gp, to [[Crissdalynn Khinriss]], Session 8, under the name Nightmantle. Lavinia said she acquired it from a falcon-featured man calling himself [[Osset]].
+Sold by [[lavinia-sordi]] from her rack at [[la-cenere]] in [[le-paludi]], [[calven-and-calveno]], for 900 gp, to [[crissdalynn-khinriss]], Session 8, under the name Nightmantle. Lavinia said she acquired it from a falcon-featured man calling himself [[Osset]].

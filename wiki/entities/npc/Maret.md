@@ -26,9 +26,9 @@ visibility: dm
 ---
 # Maret
 
-[[Maret]] is a Tidefall dockworker held under an open salvage note to the [[Tessarine Concordat]].
+[[Maret]] is a Tidefall dockworker held under an open salvage note to the [[tessarine-concordat]].
 
 ## Connections
 
-- [[Tessarine Concordat]]
-- [[Calder's Tooth and Port Tidefall]]
+- [[tessarine-concordat]]
+- [[calders-tooth-and-port-tidefall]]

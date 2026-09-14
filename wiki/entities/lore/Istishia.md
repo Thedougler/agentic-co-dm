@@ -23,15 +23,15 @@ kind: cosmology
 truth: partial
 scope: "Maw cosmological explanation only"
 relationships:
-  - target: "[[Elemental Plane of Water]]"
+  - target: "[[elemental-plane-of-water]]"
     type: related_to
-  - target: "[[Drowned Maw]]"
+  - target: "[[drowned-maw]]"
     type: related_to
 ---
 # Istishia
 
 > [!abstract] At a Glance
-> **Core truth.** Istishia is a name that can point at the [[Elemental Plane of Water]] and its cosmology in Maw discussions.
+> **Core truth.** Istishia is a name that can point at the [[elemental-plane-of-water]] and its cosmology in Maw discussions.
 >
 > **Why it matters.** The name stays available for cosmological explanation without becoming a committed plot engine.
 >
@@ -39,7 +39,7 @@ relationships:
 
 ## Current Truth
 
-Istishia can name the water cosmology around the [[Drowned Maw]]. The Drowned Maw material does not commit Istishia as a villain, actor, or encounter.
+Istishia can name the water cosmology around the [[drowned-maw]]. The Drowned Maw material does not commit Istishia as a villain, actor, or encounter.
 
 ## At the Table
 

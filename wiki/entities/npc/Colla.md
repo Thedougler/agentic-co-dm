@@ -35,7 +35,7 @@ tier: supporting
 
 **Opening move:** treating an injured patient · Colla speaks first · "Are you hurt?"
 
-**Lore Sheet:** runs [[The Splint]], the [[Warren]]'s only source of healing, accepting [[Rattkin|Kin]] at community rates and surface folk at five times that. Requires a Kin introduction for outsiders. Trained by her aunt Tetta over ten years. Treats injured combatants from opposing sides in the same room by policy, which no one has ever challenged. Her contact Dosia, an herbalist in [[Le Paludi]], supplies ingredients she cannot source underground.
+**Lore Sheet:** runs [[The Splint]], the [[Warren]]'s only source of healing, accepting [[Rattkin|Kin]] at community rates and surface folk at five times that. Requires a Kin introduction for outsiders. Trained by her aunt Tetta over ten years. Treats injured combatants from opposing sides in the same room by policy, which no one has ever challenged. Her contact Dosia, an herbalist in [[le-paludi]], supplies ingredients she cannot source underground.
 
 **Toy Chest**
 
@@ -56,4 +56,4 @@ Physical mannerisms: focused, intense. Her whiskers tremble as she concentrates.
 ## Connections
 
 - Tetta, his aunt who trained him over ten years and now lives retired
-- Dosia, surface-side herbalist supplier in [[Le Paludi]]
+- Dosia, surface-side herbalist supplier in [[le-paludi]]

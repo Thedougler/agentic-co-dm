@@ -38,6 +38,6 @@ The dragon's name, exact flags, chest contents, route, and agreement remain unna
 Local pilots, Crown patrols, pirates using the distress-signal gap, and captains trying to decide whether a wreck was navigation failure or protected passage.
 
 ## Connections
-- → [[Crown Islands]] · [[Central Strait]] · [[Stenmark]] · [[Dravosi Crown]]
+- → [[crown-islands]] · [[central-strait]] · [[Stenmark]] · [[dravosi-crown]]
 
 **Provenance:** Dump source 2026-09-05; legacy `/Users/nick/shattered-sea/wiki/shattered-sea/region-crown-islands.md`.

@@ -28,4 +28,4 @@ visibility: dm
 
 ## At a Glance
 
-[[Sorrowbell]] crowns the headland where the causeway ends at [[Penance Bar]]. Ash smears and tally marks belong here as siege evidence of [[Corvin Ashe]]'s fabrication.
+[[Sorrowbell]] crowns the headland where the causeway ends at [[penance-bar]]. Ash smears and tally marks belong here as siege evidence of [[corvin-ashe]]'s fabrication.

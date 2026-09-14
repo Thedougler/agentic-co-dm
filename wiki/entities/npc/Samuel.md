@@ -28,7 +28,7 @@ visibility: dm
 
 # Samuel
 
-*A toucan [[Aarakocra]] sent to run messages for [[Catarina Da'Virelli|Catarina]] at [[Cat's Curios]].*
+*A toucan [[Aarakocra]] sent to run messages for [[catarina-davirelli|Catarina]] at [[Cat's Curios]].*
 
 **Wants:** somebody to tell him plainly what the job actually is, what he's supposed to be doing here.
 
@@ -39,7 +39,7 @@ visibility: dm
 
 **Opening move:** waiting in Kat's Curios with a stack of messages, not yet knowing who to hand them to · Samuel speaks first, tentatively · "I have messages from Iacopo, who should I give these to?"
 
-**Lore Sheet:** [[Iacopo Fieschi]] sent him to [[Cat's Curios]] to run messages for [[Catarina Da'Virelli|Catarina]] and the crew, an intern placement, though nobody explained the scope to him. He shows up every morning at eight and does what he's told, floating free every night. He acts like an awkward teen. He dropped an egg the moment he walked in. Fieschi's staff treat him as just a clerk.
+**Lore Sheet:** [[iacopo-fieschi]] sent him to [[Cat's Curios]] to run messages for [[catarina-davirelli|Catarina]] and the crew, an intern placement, though nobody explained the scope to him. He shows up every morning at eight and does what he's told, floating free every night. He acts like an awkward teen. He dropped an egg the moment he walked in. Fieschi's staff treat him as just a clerk.
 
 **Toy Chest**
 
@@ -49,8 +49,8 @@ visibility: dm
 | Consistent method | Shows up on time, listens carefully and asks permission before acting. |
 | Active problem | Nobody has ever stated the job's actual scope or expectations. |
 | Performance hooks | Earnest, almost apologetic vibe. Fidgets with the beak-wax in his pocket when he's uncertain. |
-| Link of relevance | Runs messages between [[Catarina Da'Virelli|Catarina]] and the crew at [[Cat's Curios]]. |
+| Link of relevance | Runs messages between [[catarina-davirelli|Catarina]] and the crew at [[Cat's Curios]]. |
 
 ## Session Log
 
-- **Session 07** (`vault/episodes/007/`). Sent over by [[Iacopo Fieschi]] to run messages for [[Catarina Da'Virelli|Catarina]] between [[Cat's Curios]] and the crew. Confirmed: [[Transcript]].
+- **Session 07** (`vault/episodes/007/`). Sent over by [[iacopo-fieschi]] to run messages for [[catarina-davirelli|Catarina]] between [[Cat's Curios]] and the crew. Confirmed: [[Transcript]].

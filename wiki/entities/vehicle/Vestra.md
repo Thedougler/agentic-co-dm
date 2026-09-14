@@ -23,9 +23,9 @@ visibility: dm
 kind: ship
 status: lost
 relationships:
-  - target: "[[Nona Black-Jaw]]"
+  - target: "[[nona-black-jaw]]"
     type: related_to
-  - target: "[[Perrin Black-Jaw]]"
+  - target: "[[perrin-black-jaw]]"
     type: related_to
 ---
 # Vestra
@@ -34,8 +34,8 @@ Vestra is a family brig built and captained by Vincenzo Black-Jaw. Something mas
 
 ## Connections
 
-- [[Perrin Black-Jaw]]
-- [[Nona Black-Jaw]]
+- [[perrin-black-jaw]]
+- [[nona-black-jaw]]
 
 ## Narration
 

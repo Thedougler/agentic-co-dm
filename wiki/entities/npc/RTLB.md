@@ -21,4 +21,4 @@ visibility: dm
 ---
 # RTLB
 
-[[RTLB]] is named only by initials as the wizard who used [[Sir Quackers the Fowl]] as a familiar, then set him free on [[Yssenmoor]]. Whereabouts are unknown. The source says this is unresolved backstory, not a returning thread.
+[[RTLB]] is named only by initials as the wizard who used [[sir-quackers-the-fowl]] as a familiar, then set him free on [[Yssenmoor]]. Whereabouts are unknown. The source says this is unresolved backstory, not a returning thread.

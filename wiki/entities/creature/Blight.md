@@ -195,7 +195,7 @@ A Pointy Hat homebrew build — The Blight, a druid lich — reconstructed from 
 
 ## Description
 
-[[Aruhe]] hosts an active Blight, and the abandoned island's interior is its dungeon. Sailors who know the island at all know two things about it: it's the best landfall in the region, and nothing that's tried to take from it has come back to say so. Any [[Grung]] or other invader who lays a hand on Aruhe's plenty, its fruit, its river catch, its foraged growth, or its trapped game, meets Nature's fury in full, and the island takes them back into the dirt. The [[Grung clans|Grung Clans]] patrol the reefs nearby but refuse to land.
+[[Aruhe]] hosts an active Blight, and the abandoned island's interior is its dungeon. Sailors who know the island at all know two things about it: it's the best landfall in the region, and nothing that's tried to take from it has come back to say so. Any [[Grung]] or other invader who lays a hand on Aruhe's plenty, its fruit, its river catch, its foraged growth, or its trapped game, meets Nature's fury in full, and the island takes them back into the dirt. The [[grung-clans|Grung Clans]] patrol the reefs nearby but refuse to land.
 
 ## Ecology
 
@@ -203,15 +203,15 @@ A Blight starts as an Archdruid who fuses their soul and body to a piece of land
 
 This one's power drops as damage to the Death Bloom piles up. With the Bloom whole, she fights at Stage 1, near the height of her strength; real damage knocks her down to Stage 2, weaker and duller across the board; near-ruin drops her further, to Stage 3, where she turns desperate and leans on hazards in the room around her. Wreck the Death Bloom outright, and she stays dead for good.
 
-Background horror creatures like this one are rare in this campaign. She's one of the few staged so far, alongside the still-unplaced [[Gentle Hag]], another fey hag horror.
+Background horror creatures like this one are rare in this campaign. She's one of the few staged so far, alongside the still-unplaced [[gentle-hag]], another fey hag horror.
 
 ## Toy Chest
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
 | Land real damage on the Death Bloom | Bloom whole (Stage 1) | She falls back a stage, weaker and duller (Stage 2), then desperate and hazard-leaning (Stage 3) | [[Aruhe]] |
-| Take Aruhe's fruit, river catch, foraged growth, or trapped game | Any invader on the island | Nature's fury falls on the taker, and the island drags them into the dirt | [[Grung clans|Grung Clans]] |
+| Take Aruhe's fruit, river catch, foraged growth, or trapped game | Any invader on the island | Nature's fury falls on the taker, and the island drags them into the dirt | [[grung-clans|Grung Clans]] |
 
 ## Prepped Reveals
 
-This Blight was once a captive Archdruid, held on [[Karath]] and drugged into casting for the [[Grung clans|Grung Clans]]' hatchery, until she and a fellow captive burned it down and ran for the cliff, going off its edge together into the half-mile channel beyond. He took an arrow on the open stone past the treeline, four strides short of the cliff, and by the time her feet found Aruhe's sand, he was twenty feet behind her, already gone. The island opened a path for her that led to a grove at its center, where a tree stood in fruit already, the same fruit he used to eat. She buried him under it, and that tree is the Death Bloom now. She bound her own soul into the ground over his grave and asked the island for one thing in return. Aruhe's own page names the island in Grung and what the name means.
+This Blight was once a captive Archdruid, held on [[Karath]] and drugged into casting for the [[grung-clans|Grung Clans]]' hatchery, until she and a fellow captive burned it down and ran for the cliff, going off its edge together into the half-mile channel beyond. He took an arrow on the open stone past the treeline, four strides short of the cliff, and by the time her feet found Aruhe's sand, he was twenty feet behind her, already gone. The island opened a path for her that led to a grove at its center, where a tree stood in fruit already, the same fruit he used to eat. She buried him under it, and that tree is the Death Bloom now. She bound her own soul into the ground over his grave and asked the island for one thing in return. Aruhe's own page names the island in Grung and what the name means.

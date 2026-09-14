@@ -30,7 +30,7 @@ tier: supporting
 
 **Speed:** 25 feet, fly 35 feet
 
-Aarakocra track the world by altitude, not distance. They have feathered bodies, talon-tipped legs, large wings, and heads shaped like parrots, eagles, crows, or other birds. Rare among the [[peoples of the Shattered Sea]], nearly every one you meet here serves the [[Sentinels of the Eyrie]], the monastic order keeping a small permanent population at [[High Eyrie]]. Salt works into their feathers on that exposed summit the way it works into everything else there. As Aarakocra, you have these special traits.
+Aarakocra track the world by altitude, not distance. They have feathered bodies, talon-tipped legs, large wings, and heads shaped like parrots, eagles, crows, or other birds. Rare among the [[peoples of the Shattered Sea]], nearly every one you meet here serves the [[sentinels-of-the-eyrie]], the monastic order keeping a small permanent population at [[high-eyrie]]. Salt works into their feathers on that exposed summit the way it works into everything else there. As Aarakocra, you have these special traits.
 
 **Flight.** Lost while wearing armor not built for wings.
 

@@ -22,13 +22,13 @@ tier: supporting
 ---
 # Heft
 
-A heavy brig, the largest ship in [[Fisk's Fleet]] after the [[Red Lady]]. Broad in the beam and deep-keeled, high freeboard, the hull sitting low under its own weight. Hull painted black from waterline to rail with white gun port lids. Each side carried five gun mounts. A deliberate presence. Nothing about her proportions suggested speed.
+A heavy brig, the largest ship in [[fisks-fleet]] after the [[red-lady]]. Broad in the beam and deep-keeled, high freeboard, the hull sitting low under its own weight. Hull painted black from waterline to rail with white gun port lids. Each side carried five gun mounts. A deliberate presence. Nothing about her proportions suggested speed.
 
 *Heavy brig · Third of Fisk's Fleet.*
 
 Not revealed to players. Delmar's confession established the fleet's existence (see [[session 04 transcript]]), but the DM deliberately withheld the individual ship names (`vault/campaigns/shattered-sea/factions/fisks-fleet.md`).
 
-Below decks, a magazine sat below the waterline alongside a surgeon's berth and crew quarters for a full complement. The hold ran deep and wide, built to take punishment and hold position. She perished simultaneously with the rest of [[Fisk's Fleet]] when [[Umberlee]] opened [[Drowned Maw]] beneath them. All hands lost.
+Below decks, a magazine sat below the waterline alongside a surgeon's berth and crew quarters for a full complement. The hold ran deep and wide, built to take punishment and hold position. She perished simultaneously with the rest of [[fisks-fleet]] when [[Umberlee]] opened [[drowned-maw]] beneath them. All hands lost.
 
 ## Stats & Combat
 
@@ -36,11 +36,11 @@ Not stated in source.
 
 ## Crew
 
-- Captain: [[Detto Kalash]]
+- Captain: [[detto-kalash]]
 
 ## Connections
 
-- [[Fisk's Fleet]]
-- [[Drowned Maw]]
+- [[fisks-fleet]]
+- [[drowned-maw]]
 - [[Umberlee]]
-- [[Delmar Fisk]] (fleet admiral)
+- [[delmar-fisk]] (fleet admiral)

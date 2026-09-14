@@ -19,7 +19,7 @@ reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 relationships:
-  - target: "[[Elemental Plane of Water]]"
+  - target: "[[elemental-plane-of-water]]"
     type: related_to
   - target: "[[Midchain]]"
     type: related_to
@@ -29,4 +29,4 @@ relationships:
 > [!narration] Narration
 >
 
-A [[Krakling]] is named as a juvenile arm-predator sailors report near [[Midchain]], and as the third entity through the [[Drowned Maw]] fissure. It is described with flat-black skin, no eyes, blindsight, and water breathing. No fight sheet is established here.
+A [[Krakling]] is named as a juvenile arm-predator sailors report near [[Midchain]], and as the third entity through the [[drowned-maw]] fissure. It is described with flat-black skin, no eyes, blindsight, and water breathing. No fight sheet is established here.

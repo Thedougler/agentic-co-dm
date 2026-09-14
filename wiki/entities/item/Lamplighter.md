@@ -36,18 +36,18 @@ tier: supporting
 
 _[[Weapon]] (Arrow), Uncommon._
 
-The dearest shaft in [[Ettore Lupo]]'s drawer at [[Casa Lupo]], and the only one he warns buyers about. It works just as well on the person holding it.
+The dearest shaft in [[ettore-lupo]]'s drawer at [[Casa Lupo]], and the only one he warns buyers about. It works just as well on the person holding it.
 
 | Field | Detail |
 |---|---|
 | One thing | A creature it hits glows for an hour. Hiding does not stop the glow, and neither does dousing the light or turning invisible. |
 | Rarity justification | Comparable to [[Lantern of Revealing]] (reveals invisible creatures within 30 ft, reusable) and [[Goggles of Night]] (permanent darkvision, reusable). Lamplighter is single use and works on only one creature. It grants no bonus to hit, and it washes off. |
 | Attunement reason | It marks and nothing else, once, leaving attack, damage, save, and AC rolls alone. The attunement tree has no branch for it. |
-| PC connection | [[Crissdalynn Khinriss]] regains district-wide tracking of one marked runner. |
-| Current holder | [[Ettore Lupo]], in his felt-lined drawer at [[Casa Lupo]]. |
-| Narrative hook | Somebody in [[Calven and Calveno]] is already marking people with these, and the glow outlasts the man who fired it by an hour. |
+| PC connection | [[crissdalynn-khinriss]] regains district-wide tracking of one marked runner. |
+| Current holder | [[ettore-lupo]], in his felt-lined drawer at [[Casa Lupo]]. |
+| Narrative hook | Somebody in [[calven-and-calveno]] is already marking people with these, and the glow outlasts the man who fired it by an hour. |
 
-[[Crissdalynn Khinriss]] can follow anything from the air, but loses it the moment it goes into a crowd or under a roofline. A marked runner is one she can pick back up over a whole district, which is the only part of her mapping task she has ever been able to do reliably.
+[[crissdalynn-khinriss]] can follow anything from the air, but loses it the moment it goes into a crowd or under a roofline. A marked runner is one she can pick back up over a whole district, which is the only part of her mapping task she has ever been able to do reliably.
 
 Somebody in Calveno is already using them. A glowing man gets walked out of a tavern on the [[Mercatura]], and the men walking him do not need a hand on him to do it.
 
@@ -66,6 +66,6 @@ Somebody in Calveno is already using them. A glowing man gets walked out of a ta
 
 ## Provenance
 
-[[Marta Orsini]] grows the rot at [[Studio Orsini]] in a sealed jar she keeps behind everything else, and blown glass from the [[Velo Quarter]] carries it. [[Ettore Lupo]] has sold four in eleven years at [[Casa Lupo]] and remembers all four buyers, which is a longer list than it sounds.
+[[marta-orsini]] grows the rot at [[Studio Orsini]] in a sealed jar she keeps behind everything else, and blown glass from the [[Velo Quarter]] carries it. [[ettore-lupo]] has sold four in eleven years at [[Casa Lupo]] and remembers all four buyers, which is a longer list than it sounds.
 
-[[Prospero Morsani]] also had a quiver of these on his shelves at [[the Cabinet of Morsani]], Session 8, priced at 200 gold. Confirmed: [[Transcript]].
+[[prospero-morsani]] also had a quiver of these on his shelves at [[the Cabinet of Morsani]], Session 8, priced at 200 gold. Confirmed: [[Transcript]].

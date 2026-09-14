@@ -53,10 +53,10 @@ Voice is fast, loud, and self-interrupting. She corrects her own sentence mid-wo
 | Consistent method | Escalates every claim past his and refuses to let one go once she's said it. |
 | Active problem | Toby keeps escalating right back, and the ground under both of them keeps coming out scarred. |
 | Performance hooks | Playground-tyrant vibe, a kid who's never once lost an argument by her own count. Corrects her own sentence mid-word to make the claim bigger. |
-| Link of relevance | Her cursed speech exists only because of [[Delmar Fisk]]'s own unresolved theft of the [[Pearl of Souls]], entirely unknown to him. |
+| Link of relevance | Her cursed speech exists only because of [[delmar-fisk]]'s own unresolved theft of the [[pearl-of-souls]], entirely unknown to him. |
 
 > [!mechanic]
-> **Tradition:** none classifiable. **School:** unclassifiable. Source: planar contamination from the [[Drowned Maw]] entity — not cast by either child.
+> **Tradition:** none classifiable. **School:** unclassifiable. Source: planar contamination from the [[drowned-maw]] entity — not cast by either child.
 > **[[Detect Magic]]:** No school registers. The air feels like it's under strain — wrong pressure, something pushing through from somewhere else. DC 16 [[Intelligence]] (Arcana) check: on a success, planar contamination, not a cast spell; on a failure, the pressure reads as nothing classifiable — wrong, but sourceless.
 > **[[Counterspell]]:** not applicable — declarations are not discrete cast events. There is no caster to target.
 > The children are keys; the entity and the fissure are the source. Harming Toby or Frankie does nothing to the power itself. The Maw entity and fissure are the only lever.
@@ -65,7 +65,7 @@ Voice is fast, loud, and self-interrupting. She corrects her own sentence mid-wo
 
 - [[Toby]]. Her rival, he took her spot as his Royal Best Friend, the real slight underneath their escalating duels.
 - [[Halewick]]. The island whose ground bears every scar their collisions leave behind.
-- [[Delmar Fisk]]. Her cursed speech, the link_of_relevance, exists only because of his own unresolved theft of the [[Pearl of Souls]].
+- [[delmar-fisk]]. Her cursed speech, the link_of_relevance, exists only because of his own unresolved theft of the [[pearl-of-souls]].
 
 ## Goals & Fronts
 
@@ -81,5 +81,5 @@ Voice is fast, loud, and self-interrupting. She corrects her own sentence mid-wo
 **Clock:** 4 segments (fast-moving), filled: 0
 **Consequence at fill:** a landmark on Halewick, the dock, the square, someone's actual house, comes out permanently scarred by an overlapping tangle of absolute claims neither child can undo, regardless of what happens between Frankie and Toby afterward.
 **Possible outcomes (2-3):** the crew talks Frankie into naming her real grievance instead of another cosmic claim, defusing the escalation without a fight. Or the crew steps between her and Toby and eats a stray effect meant for the other kid. Or the crew finds Frankie a way to feel she's won without needing to say anything else absolute.
-**PC connection:** [[Delmar Fisk]]. Frankie's cursed speech, like Toby's, exists only because of his own unresolved theft of the [[Pearl of Souls]], entirely unknown to him.
+**PC connection:** [[delmar-fisk]]. Frankie's cursed speech, like Toby's, exists only because of his own unresolved theft of the [[pearl-of-souls]], entirely unknown to him.
 **Quest link:** none yet

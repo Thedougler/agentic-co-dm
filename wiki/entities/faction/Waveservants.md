@@ -30,11 +30,11 @@ kind: religious
 relationships:
   - target: "[[Umberlee]]"
     type: related_to
-  - target: "[[Umberlee - Branca]]"
+  - target: "[[umberlee-branca]]"
     type: related_to
-  - target: "[[Pearl of Souls]]"
+  - target: "[[pearl-of-souls]]"
     type: related_to
-  - target: "[[Vel Orn]]"
+  - target: "[[vel-orn]]"
     type: related_to
 ---
 # Waveservants
@@ -52,28 +52,28 @@ Harbour furniture that turns skipped tribute into a public, actionable default, 
 
 ## Current state
 
-Harbour seniors, juniors, basins, ledgers, and port infrastructure form a sea-wide ritual network. The hidden [[Vel Orn]] shrine is older and quieter, aimed at drowned names and water-debt rather than working-quay traffic. The [[Pearl of Souls]] is one of seven Umberlee instruments; the Waveservants guarded it at Vel Orn until the [[Chain Council]] commission stole it. Tribute may be the procedural system holding the [[Drowned Maw]] fissure shut. The *[[Red Lady - Dead Lady]]* is collection by hull while the Pearl remains out of reach.
+Harbour seniors, juniors, basins, ledgers, and port infrastructure form a sea-wide ritual network. The hidden [[vel-orn]] shrine is older and quieter, aimed at drowned names and water-debt rather than working-quay traffic. The [[pearl-of-souls]] is one of seven Umberlee instruments; the Waveservants guarded it at Vel Orn until the [[chain-council]] commission stole it. Tribute may be the procedural system holding the [[drowned-maw]] fissure shut. The *[[red-lady-dead-lady]]* is collection by hull while the Pearl remains out of reach.
 
 ## Active agenda
 
-Under pressure they change form or rate. The [[Chain Council]]'s effort to raise [[Kalowe]]'s tribute to buy silence only teaches them who else belongs on the ledger.
+Under pressure they change form or rate. The [[chain-council]]'s effort to raise [[Kalowe]]'s tribute to buy silence only teaches them who else belongs on the ledger.
 
 ## Assets, people, places, relationships
 
-- Face: [[Umberlee - Branca]] — senior Calveno Waveservant and appointment-keeper.
+- Face: [[umberlee-branca]] — senior Calveno Waveservant and appointment-keeper.
 - [[Kalowe]]: stone niche in the causeway wall at the reef-gap; every hull passes the basin.
-- [[Calven and Calveno]] / [[Mercatura]]: pale stone arch on the canal with tribute terms posted toward the water.
-- [[Calder's Tooth and Port Tidefall]]: low cut into the cliff at the south end of the Dockfront.
-- Political powers that use, evade, or manipulate the ledger: [[Dravosi Crown]], [[Tessarine Concordat]], [[Chain Council]].
-- Monastic counter: [[Sentinels of the Eyrie]].
+- [[calven-and-calveno]] / [[Mercatura]]: pale stone arch on the canal with tribute terms posted toward the water.
+- [[calders-tooth-and-port-tidefall]]: low cut into the cliff at the south end of the Dockfront.
+- Political powers that use, evade, or manipulate the ledger: [[dravosi-crown]], [[tessarine-concordat]], [[chain-council]].
+- Monastic counter: [[sentinels-of-the-eyrie]].
 
 ## Connections
 
 - [[Umberlee]]
-- [[Umberlee - Branca]]
-- [[Pearl of Souls]]
-- [[Vel Orn]]
+- [[umberlee-branca]]
+- [[pearl-of-souls]]
+- [[vel-orn]]
 - [[Kalowe]]
 - [[Mercatura]]
-- [[Red Lady - Dead Lady]]
-- [[Maw fissure and the tribute system]]
+- [[red-lady-dead-lady]]
+- [[maw-fissure-and-the-tribute-system]]

@@ -120,11 +120,11 @@ No separate `recaps/` tree; no flat `wiki/journal/Session-…`.
 
 **Ingest minting:** `wiki/entities/{type}/{kebab-slug}.md` from `title` via the slug function above (depth 1). Do not mint spaced basenames. Manifest / qmd keys track vault-relative paths (prefer relative keys).
 
-**Remorph apply greenlit** for legacy strips: kebab (no spaces), strip `Aruhe` place prefixes, strip `00`/`00-` prefixes — run `scripts/remorph-page-filename-kebab --apply` (GitHub PR diffs preferred). Other destructive consolidates stay gated. Live vault still being remorphed until clean.
+**Remorph apply greenlit 2026-09-14** (Nick): kebab (no spaces), strip `Aruhe` place prefixes, strip leading `00`/`00-` — run `./scripts/remorph-page-filename-kebab --dry-run` then `--apply` (GitHub PR diffs preferred). Other destructive consolidates stay gated. No lore invent.
 
 Structural context waste (multi-H1 satellites, Foundry dump-copy beside Sheet, empty sections left in place) is a token bug — see `docs/agents/context-waste-method.md`. Not a prose-quality score.
 
-Cross-kind DM-usability rules for templates and filed pages: frontmatter core, shared Title Case headings (`At a Glance`, `At the Table`, `Connections`, `Secrets`, `Provenance`, `Art`), callout surfaces, omit-empty, and no synonym headings for the same job. Full text: `wiki/templates/shared-grammar.md` (legacy file may still be `00-shared-grammar.md` until ATE renames). Image assets: flat `wiki/attachments/{subject-slug}-{role}.{ext}` with roles `banner`\|`portrait`\|`token`\|`battlemap`\|`overview`\|`reference`\|`handout`\|`teaser` (see shared grammar Attachment filenames).
+Cross-kind DM-usability rules for templates and filed pages: frontmatter core, shared Title Case headings (`At a Glance`, `At the Table`, `Connections`, `Secrets`, `Provenance`, `Art`), callout surfaces, omit-empty, and no synonym headings for the same job. Full text: `wiki/templates/shared-grammar.md`. Image assets: flat `wiki/attachments/{subject-slug}-{role}.{ext}` with roles `banner`\|`portrait`\|`token`\|`battlemap`\|`overview`\|`reference`\|`handout`\|`teaser` (see shared grammar Attachment filenames).
 
 When a shared job appears, use the shared heading name. DM-visible labels use Title Case / spaced words — never snake_case in body or table Field columns (`One thing`, not `one_thing`); YAML keys may stay snake_case. Kind-specific job blocks keep their own names. `Relationships` is not a Connections synonym — use `## Connections`. Recap/session/run spoken surfaces use only `[!narration]`; owner pages may add `[!mechanic]` / `[!secret]`.
 

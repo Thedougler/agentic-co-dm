@@ -52,8 +52,8 @@ Read while recording: [[voice-profile script]]
 | --------------- | ------------------------------------------------------------ |
 | **Species**     | [[Rattkin]]                                                       |
 | **Role**        | Dockhand at [[La Vasca]], runs the Basin day to day |
-| **Affiliation** | [[Nona Black-Jaw]]'s [[Warren]]; runner who reports up the chain |
-| **Location**    | [[La Vasca]], [[Le Paludi]], [[Calven and Calveno]] |
+| **Affiliation** | [[nona-black-jaw]]'s [[Warren]]; runner who reports up the chain |
+| **Location**    | [[La Vasca]], [[le-paludi]], [[calven-and-calveno]] |
 
 *Young Rattkin dockworker at La Vasca who greets the crew of the [[Uncertainty]] and carries messages from Nona Black-Jaw to Perrin.*
 
@@ -82,7 +82,7 @@ Read while recording: [[voice-profile script]]
 | Consistent method | Shows the work step-by-step, answers questions straight, won't rush the paint-hardening no matter what's offered. |
 | Active problem | The paint is still tacky and won't be ready for three days. The crew has just arrived wanting to set sail immediately. |
 | Performance hooks | Young Black-Jaw runner vibe. Wraps the rag tighter around his shoulder when uncertain, then forces focus back to the work. |
-| Link of relevance | [[Perrin Black-Jaw|Perrin]]'s childhood contact. The crew's trust in the refit depends on Cobb's pride in his work. |
+| Link of relevance | [[perrin-black-jaw|Perrin]]'s childhood contact. The crew's trust in the refit depends on Cobb's pride in his work. |
 
 **Voice & Delivery:** light, slightly scratchy tenor with a warm Italian accent. When showing off work, he speaks quickly with rising pride and energy. Otherwise, he keeps his words sparse and measured, answering only what's asked. Glances at exits from habit, a runner's instinct. Emotional default: cautious warmth. Cracks when asked to choose between Nona's instructions and Perrin's safety.
 
@@ -98,16 +98,16 @@ No combat stats in source.
 
 ## Connections
 
-- [[Perrin Black-Jaw|Perrin]], old contact, knew him for years before
+- [[perrin-black-jaw|Perrin]], old contact, knew him for years before
   the campaign; greets him at La Vasca, later finds him in Calveno to relay Nona's message.
-- [[Nona Black-Jaw]], reports to her as a runner; carries
+- [[nona-black-jaw]], reports to her as a runner; carries
   her messages to Perrin.
 - [[Nona's sending stone]], references it directly: "not decorative."
-- [[The Passage]], affiliated; La Vasca is Black-Jaw colors.
+- [[the-passage]], affiliated; La Vasca is Black-Jaw colors.
 
 ## Session Log
 
-- **Session 08** (`vault/episodes/008/`): per [[Nona Black-Jaw|Nona]]'s report, had the *[[Uncertainty]]* drying at [[La Vasca]] and ready in 12 hours; wanted to add more guns first, but Nona told him to stop his own side projects and finish it. Confirmed: [[Transcript]].
+- **Session 08** (`vault/episodes/008/`): per [[nona-black-jaw|Nona]]'s report, had the *[[Uncertainty]]* drying at [[La Vasca]] and ready in 12 hours; wanted to add more guns first, but Nona told him to stop his own side projects and finish it. Confirmed: [[Transcript]].
 - **Session 06** (`vault/episodes/006/`): gave the crew of the Uncertainty a tour aboard the ship. [[Thunk]]'s captain's-cabin-to-break-room conversion is underway. Cobb mentioned he'd picked up a proper armchair for it "next to nothing." Negotiated a future discount with the crew.
 
 - **Session 03**: first appearance. Greets the crew of the Uncertainty at the water's edge as their ship reaches [[La Vasca]]. `vault/episodes/003/transcript.md:112`.

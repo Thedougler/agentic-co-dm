@@ -1,0 +1,40 @@
+---
+title: "La Cenere"
+aliases:
+  - La Cenere
+category: entities
+tags: [shattered-sea, place]
+sources: ["lavinia-sordi.md"]
+summary: "Named later chapter of Lavinia Sordi's life, after she left Crown prison work."
+provenance:
+  extracted: 1.0
+  inferred: 0.0
+  ambiguous: 0.0
+base_confidence: 0.37
+lifecycle: proposed
+lifecycle_changed: "2026-09-13"
+tier: supporting
+created: 2026-09-13T21:10:00Z
+updated: 2026-09-13T21:10:00Z
+type: place
+reveal: unrevealed
+campaign: shattered-sea
+visibility: dm
+kind: site
+relationships:
+  - target: "[[lavinia-sordi]]"
+    type: related_to
+  - target: "[[dravosi-crown]]"
+    type: related_to
+---
+# La Cenere
+
+## Overview
+
+> [!narration] Narration
+>
+
+## At a Glance
+
+[[la-cenere]] is named only as the chapter after [[lavinia-sordi]] left an unnamed [[dravosi-crown]] prison. No other facts are established.
+

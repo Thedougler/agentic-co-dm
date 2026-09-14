@@ -21,9 +21,9 @@ visibility: dm
 kind: site
 region: Midchain
 relationships:
-  - target: "[[Dravosi Crown]]"
+  - target: "[[dravosi-crown]]"
     type: related_to
-  - target: "[[Lavinia Sordi]]"
+  - target: "[[lavinia-sordi]]"
     type: related_to
 ---
 # Ashkevet
@@ -35,5 +35,5 @@ relationships:
 
 ## At a Glance
 
-[[Ashkevet]] is named as a Dravosi prison already in older notes, abandoned a generation ago. The [[Lavinia Sordi]] source says the timeline does not cleanly fit and leaves her workplace as a different unnamed facility.
+[[Ashkevet]] is named as a Dravosi prison already in older notes, abandoned a generation ago. The [[lavinia-sordi]] source says the timeline does not cleanly fit and leaves her workplace as a different unnamed facility.
 

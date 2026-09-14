@@ -23,9 +23,9 @@ scale: local
 kind: district
 structure: routes
 relationships:
-  - target: "[[Crown Islands]]"
+  - target: "[[crown-islands]]"
     type: related_to
-  - target: "[[Dravosi Crown]]"
+  - target: "[[dravosi-crown]]"
     type: related_to
 ---
 # Aldenmere
@@ -43,7 +43,7 @@ relationships:
 | **Anchor**        | The tidal mere (no named town is established)                  |
 | **Known for**     | Quiet fishing and farming                                      |
 | **Feared for**    | None established                                               |
-| **Parent region** | [[Crown Islands]]                                              |
+| **Parent region** | [[crown-islands]]                                              |
 
 > **DM thesis:** A low-pressure Crown island where the flag is a twice-yearly visit, not a garrison.
 
@@ -65,10 +65,10 @@ A roughly mile-wide tidal mere sits among hedged farms. The water shallows in su
 
 | Edge | Neighbor | Crossing / boundary | What changes across it |
 | ---- | -------- | --------------------- | ---------------------- |
-|      | [[Crown Islands]] | Parent island group | Crown waters and other Crown islands |
+|      | [[crown-islands]] | Parent island group | Crown waters and other Crown islands |
 |      | [[Harwick]] | Canon gap: crossing not given | Canon gap |
 |      | [[Stenmark]] | Canon gap: crossing not given | Canon gap |
-|      | [[Calven and Calveno]] | Canon gap: crossing not given | Canon gap |
+|      | [[calven-and-calveno]] | Canon gap: crossing not given | Canon gap |
 
 ## Travel
 
@@ -78,16 +78,16 @@ No route times, costs, or risks are established. The mere is the local water; fi
 
 ## Who
 
-Fishing and farming families live here. Reeds, frogs, toads, crocodiles, and fish share the mere. A [[Dravosi Crown]] revenue officer arrives twice a year for the fishing tithe and leaves. There is no standing fortress or heavy military presence. The quiet is administrative, not independence.
+Fishing and farming families live here. Reeds, frogs, toads, crocodiles, and fish share the mere. A [[dravosi-crown]] revenue officer arrives twice a year for the fishing tithe and leaves. There is no standing fortress or heavy military presence. The quiet is administrative, not independence.
 
 ## Active powers
 
 | Power | Hold / presence | Wants now | Next move | What reveals that move |
 | ----- | --------------- | --------- | --------- | ---------------------- |
-| [[Dravosi Crown]] | Claim and twice-yearly fishing tithe; no garrison | The tithe | The next revenue visit | An officer on the mere or among the farms |
+| [[dravosi-crown]] | Claim and twice-yearly fishing tithe; no garrison | The tithe | The next revenue visit | An officer on the mere or among the farms |
 
 > [!secret]- Three refused deals
-> [[High Eyrie]] is the named Sentinel refusal. The Crown has offered the Sentinels three deals and all three were refused. Aldenmere is not a party to those negotiations.
+> [[high-eyrie]] is the named Sentinel refusal. The Crown has offered the Sentinels three deals and all three were refused. Aldenmere is not a party to those negotiations.
 
 ## Change log
 

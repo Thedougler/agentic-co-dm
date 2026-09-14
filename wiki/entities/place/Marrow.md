@@ -22,9 +22,9 @@ kind: site
 region: "Calder's Tooth"
 aliases: ["The Marrow"]
 relationships:
-  - target: "[[Calder's Tooth and Port Tidefall]]"
+  - target: "[[calders-tooth-and-port-tidefall]]"
     type: related_to
-  - target: "[[Overland Track]]"
+  - target: "[[overland-track]]"
     type: related_to
 ---
 
@@ -44,7 +44,7 @@ Gives no other name and is not asked for one. He has operated from his alcove in
 Cargo broker and document transporter at [[Marrow's]] in the Warren. Moves things that need to stay invisible. Reaching him requires a Kin introduction.
 
 > [!dm]
-> Currently holding the crate that courier Dren was transporting when [[Serin Haut]] killed him. The crate contains the Vretek/Brol letter, silver, and a signet ring. See [[Warren, Marrow's Crate]].
+> Currently holding the crate that courier Dren was transporting when [[serin-haut]] killed him. The crate contains the Vretek/Brol letter, silver, and a signet ring. See [[Warren, Marrow's Crate]].
 
 ## Stats & Combat
 
@@ -55,4 +55,4 @@ No stats given in source.
 - [[Marrow's]]: his alcove and place of business.
 - [[Warren|The Warren]]: where Marrow's sits.
 - [[Warren, Marrow's Crate]]: the crate currently on his shelf.
-- [[Serin Haut]]: killed the courier Dren who was carrying the crate.
+- [[serin-haut]]: killed the courier Dren who was carrying the crate.

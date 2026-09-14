@@ -45,8 +45,8 @@ Three reef-linked islets joined by stone bridges, ringed by reef with one naviga
 
 ## Connections
 - → [[Midchain]]
-- → [[Central Strait]] via pilot routes
-- → [[Penance Bar]] · [[Ashkevet]] · [[Sabrique]]
+- → [[central-strait]] via pilot routes
+- → [[penance-bar]] · [[Ashkevet]] · [[Sabrique]]
 
 ## Hooks
 - Take a paying hull through the one navigable gap without answering Crown papers.
@@ -57,9 +57,9 @@ Three reef-linked islets joined by stone bridges, ringed by reef with one naviga
 Kalowe's free-port posture is practical rather than empty of power: pilots, the Chain Council, and the shrine each control a different part of arrival. The exact fort hierarchy remains open.
 
 ## Legacy continuity
-After the *[[Red Lady - Dead Lady]]* sank, [[Master Kyzil]] tracked current and weather and searched Kalowe and [[Calder's Tooth and Port Tidefall]] before finding [[Crissdalynn Khinriss]] in [[Calven and Calveno]].
+After the *[[red-lady-dead-lady]]* sank, [[master-kyzil]] tracked current and weather and searched Kalowe and [[calders-tooth-and-port-tidefall]] before finding [[crissdalynn-khinriss]] in [[calven-and-calveno]].
 
 ## Waveservant shrine
-The shrine is a stone niche in the causeway wall at the reef-gap, under a salvaged timber roof. Every hull through the gap passes within reach of its basin; one attendant knows ships by what they owe. The [[Chain Council]] has been raising Kalowe's tribute to buy silence about the Pearl theft, which only teaches the clergy who else belongs on the ledger.
+The shrine is a stone niche in the causeway wall at the reef-gap, under a salvaged timber roof. Every hull through the gap passes within reach of its basin; one attendant knows ships by what they owe. The [[chain-council]] has been raising Kalowe's tribute to buy silence about the Pearl theft, which only teaches the clergy who else belongs on the ledger.
 
 **Provenance:** Dump source 2026-09-05; legacy `/Users/nick/shattered-sea/wiki/shattered-sea/settlement-kalowe.md`.
