@@ -73,7 +73,7 @@ Deep water south or west breaks pursuit. The pack breaks contact among the first
 ```
 ===
 ```col-md
-**Compact [[Aruhe - Wolfrabbit]].** AC 15. 68 hit points. Speed 50 feet.
+**Compact [[Wolfrabbit]].** AC 15. 68 hit points. Speed 50 feet.
 
 - **Pouncing Bound:** Leap up to 30 feet, then make Raking Claws at +7 to hit for `12` slashing. If the leap began at least 20 feet away and hits, the target makes a **Strength save — `DC 15`** or falls **Prone**.
 - **Bite:** +7 to hit for `14` piercing.
@@ -139,7 +139,7 @@ The northbound prints are the route through the crossing. They curve around the 
 
 | Place | Distance from the party | Cover | Narration |
 | --- | --- | --- | --- |
-| [[Aruhe - Grasslands Torn Crossing\|This crossing]] | Here, facing north. | Eight-foot grass hides a standing body, is Difficult Terrain, and heavily obscures beyond 10 feet. The muddy corridor is the pack's escape lane. | ==_Mud holds the fresh prints, and crushed stems show where the first runner crossed._== |
+| [[torn-crossing\|This crossing]] | Here, facing north. | Eight-foot grass hides a standing body, is Difficult Terrain, and heavily obscures beyond 10 feet. The muddy corridor is the pack's escape lane. | ==_Mud holds the fresh prints, and crushed stems show where the first runner crossed._== |
 | River lip | 20 feet west, or 30 feet south. | Deep water breaks pursuit. Glossy red berries hang from short stems at the west wet margin. | ==_The current pulls hard below the pale stone lip, and red berries shine above the wet bank._== |
 | Upriver prints | 10 feet north beyond the first crossing, then off this stretch. | The trail bends around the white stands and the Spiguar's grass. | ==_The prints keep to mud, turning around each white stand before they climb north._== |
 | [[razer-grass]] stands | Nearest stand 15 feet west in the scour; two more 25 feet east in the grass. | The pack jumps them, and the [[spiguar]] will not willingly rush them. A knockdown can send someone into a stand. | ==_Red smears mark the lower stalks, and the white blades tick like glass._== |
@@ -207,14 +207,14 @@ The default escape ends when the [[spiguar]] drags its kill into the bank-woods 
 
 ````col
 ```col-md
-![[Aruhe - Wolfrabbit#Statblock]]
+![[Wolfrabbit#Statblock]]
 
 > [!narration] Wolfrabbit
 > A wolf-sized, tawny cat bounds low across the mud, its torn left ear pinned back and dark stripes breaking across its coat. Red eyes stay fixed on the river.
 
 ![[attachments/shattered-sea/creatures/wolfrabbit-of-aruhe.jpg|Wolfrabbit of Aruhe]]
 
-![[Aruhe - Wolfrabbit#Tactics]]
+![[Wolfrabbit#Tactics]]
 ```
 
 ```col-md

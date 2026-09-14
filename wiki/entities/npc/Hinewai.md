@@ -57,7 +57,7 @@ flexGrow=2
 | **Fears**           | Wildfire and the death of her plants or animals                     |
 | **Hates**           | The Grung and anyone who takes from Aruhe                           |
 | **Loves**           | Living things, Aruhe, and the companion she buried                  |
-| **True weakness**   | The [[Aruhe - Memorial Grove\|Death Bloom]]                          |
+| **True weakness**   | The [[memorial-grove\|Death Bloom]]                          |
 | **Return**          | `1d10 days` if her body is destroyed while the Death Bloom survives |
 | **Permanent death** | Ruin the Death Bloom, then destroy her walking body                 |
 

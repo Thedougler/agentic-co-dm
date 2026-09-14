@@ -112,7 +112,7 @@ flexGrow=2
 | **Travel pressure** | [[Session-11-00-Random-Tables]] · [[taking-on-aruhe]] |
 | **Places** | [[old-gardens]] · [[torn-crossing]] · [[river-slack-basin]] · [[spoke-ring]] · [[star-cut]] |
 | **People and objects** | [[crissdalynn-khinriss]] · [[matteo-scola]] · [[talon-skarn]] · [[fate-spinner]] · [[Uncertainty]] |
-| **Opposition** | [[bloodhawk]] · [[Aruhe - Wolfrabbit]] · [[spiguar]] · [[river-otter]] · [[Deer-Stalker]] |
+| **Opposition** | [[bloodhawk]] · [[Wolfrabbit]] · [[spiguar]] · [[river-otter]] · [[Deer-Stalker]] |
 ```
 ````
 

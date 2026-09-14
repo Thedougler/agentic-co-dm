@@ -138,7 +138,7 @@ Get the man onto this sand before tick 3. Joining the game makes the otters drop
 
 | Place | Distance from the party | Cover | Narration |
 | --- | --- | --- | --- |
-| [[Aruhe - River Slack Basin\|This basin]] / wet sand and slack | Here, facing east. The slack begins 5 feet east. | Wet sand. No cover from the water. Watching from this sand does not start Hunt. | ==_Clear water laps at the sand. The otters keep their game beyond the bank and do not climb onto it._== |
+| [[river-slack-basin\|This basin]] / wet sand and slack | Here, facing east. The slack begins 5 feet east. | Wet sand. No cover from the water. Watching from this sand does not start Hunt. | ==_Clear water laps at the sand. The otters keep their game beyond the bank and do not climb onto it._== |
 | Man in the grey shirt / hanging roots | 20 feet north. His hips are in the slack. | Hanging roots. Thin cover in the slack. Once he reaches this sand, he is off the magnets. | ==_His fingers slip on the roots as he reaches toward the cane. The streaked otter cuts across the gap._== |
 | Pack, cloth, and dead body | The pack is 15 feet out. The body is 20 feet out. The maroon cloth is 25 feet toward the hanging roots. | Clear water. No cover. Pulling any of them starts Hunt. | ==_The closed pack lies on pale stone fifteen feet out. The face-down body and maroon sleeve hold their places beyond it._== |
 | Rock lip / white water | 30 feet east across the pool. | White water over rock. Crossing the slack to the lip joins the game. | ==_White water breaks across the far rock lip while the slack holds the pack and bodies._== |
