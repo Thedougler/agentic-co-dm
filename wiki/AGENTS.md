@@ -82,7 +82,7 @@ Legacy pages are out of scope. Wrapup MUST NOT convert a legacy page into a samp
 
 Done when: the kind's jobs are answered, empty sections are omitted, spoken look is player-safe.
 
-Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<session-number>/` (Session 11 → `wiki/journal/sessions/shattered-sea/11/`). Session plan `Session-<n>-00-<Title>.md`, numbered live beats `Session-<n>-<BB>-<Label>.md`, and that night’s companion notes only. Owner pages stay outside. `_raw/` is staging. Two campaigns do not share a session-number folder. Post-play logs use `type: recap` and copy `wiki/templates/recap.md` (not a map of `session-prep`). `wiki/templates/session.md` is deprecated as copy-start; `type: session` remains legacy in the enum. Do not file `{{title}} - B01 - Strong Start` names.
+Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<session-number>/` (Session 11 → `wiki/journal/sessions/shattered-sea/11/`; Session 01 → `…/01/`). Session plan `Session-<n>-00-<Title>.md`, numbered live beats `Session-<n>-<BB>-<Label>.md`, **post-play recaps**, and that night’s companion notes all live in the **same** session-number folder. Recap path: `wiki/journal/sessions/<campaign-slug>/<NN>/Session NN - Recap.md` (`type: recap`, copy `wiki/templates/recap.md`). Do **not** park recaps at flat `wiki/journal/Session NN - Recap.md` or a parallel `recaps/` folder. Owner pages stay outside. `_raw/` is staging. Two campaigns do not share a session-number folder. `wiki/templates/session.md` is deprecated as copy-start; `type: session` remains legacy in the enum. Do not file `{{title}} - B01 - Strong Start` names.
 
 
 ## Shared grammar
@@ -101,7 +101,7 @@ Wiki page `.md` **basenames** (not attachment images — those stay kebab `{slug
 
 **Wikilinks:** prefer `[[Title]]` matching the stem. Path-qualified links (`[[entities/npc/Title]]`) are optional hardening; display aliases use `[[Title|short]]`. On rename: update `title` + filename together; leave a `redirects_to` stub at the old stem when inbound links may linger; put alternate names in `aliases:` when useful.
 
-**Journal / session:** keep existing pattern — `Session-<n>-00-<Title>.md`, beats `Session-<n>-<BB>-<Label>.md` under `wiki/journal/sessions/<campaign-slug>/<session-number>/`. Companion notes that night only. Do not invent `Title - B01 - …` forms.
+**Journal / session:** under `wiki/journal/sessions/<campaign-slug>/<session-number>/` keep `Session-<n>-00-<Title>.md`, beats `Session-<n>-<BB>-<Label>.md`, and recaps `Session NN - Recap.md` (same folder as that night’s plan when present). Companion notes that night only. Do not invent `Title - B01 - …` forms; do not use a separate `recaps/` tree.
 
 **Ingest minting:** new owner page path = `wiki/entities/{type}/{title}.md` (depth 1). Refuse inventing a different slug file while `title` stays human. Manifest / qmd keys should track the vault-relative path; prefer relative keys over absolute machine paths when rewriting.
 
