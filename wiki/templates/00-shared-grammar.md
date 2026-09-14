@@ -106,8 +106,10 @@ Flat by default: `wiki/attachments/{subject-slug}-{role}.{ext}`
 | `overview` | Establishing/wide; TotM “where you are” |
 | `reference` | Props/details/still for TotM grounding |
 | `handout` | Player-facing table asset (letter, sketch, clue); not battlemap/portrait |
+| `teaser` | Cinematic scene still; player-shareable mood/hype; not battlemap, portrait, or diegetic handout |
 
-- **TotM/spoken:** portrait, overview, reference, handout (± banner mood).
+- **TotM/spoken / player-shareable:** portrait, overview, reference, handout, teaser (± banner mood).
+- Distinguish: `overview` = establishing/layout; `teaser` = cinematic scene still for share/hype; `handout` = diegetic table prop.
 - **Foundry-only:** token, battlemap.
 - kebab-case subject slug; one role suffix; no spaces.
 - Embed: `![[attachments/{subject-slug}-{role}.ext]]` (optional `\|width` in tables).

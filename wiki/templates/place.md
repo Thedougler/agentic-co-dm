@@ -53,4 +53,4 @@ Write what this place is now, which linked places it sits between, and which edg
 ---
 ## Art
 <!-- Add battlemap or extra art when available. -->
-<!-- Art embeds: wiki/attachments/{subject-slug}-{role}.ext — roles: banner|portrait|token|battlemap|overview|reference|handout. Flat folder; omit Art when unused. -->
+<!-- Art embeds: wiki/attachments/{subject-slug}-{role}.ext — roles: banner|portrait|token|battlemap|overview|reference|handout|teaser. Flat folder; omit Art when unused. -->
