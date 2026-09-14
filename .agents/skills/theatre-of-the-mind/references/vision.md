@@ -18,9 +18,10 @@ Take only images that depict the current subjects:
 | Owner Art / portrait / identity image | Cold portrait and situated look of that owner |
 | Run-card identity embed | Spoken look of that roster body |
 | Session illustration of **this** moment | Situated block for that beat only |
+| `*-teaser` cinematic still | Player-shareable scene mood/hype; not identity, layout, or diegetic handout |
 | User-attached picture of the subject | The offered look |
 | Foundry token | Color, gear, overhead silhouette when no portrait exists |
-| Layout / room plate | Spatial first look of that space |
+| Layout / room plate / `*-overview` | Spatial first look of that space |
 | Battlemap of **this** site | Situated place geometry |
 
 Leave unrelated campaign portraits, other-session art, and character sheets.
