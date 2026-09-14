@@ -121,7 +121,7 @@ Process draft pages from the `_raw/` staging directory inside the vault. Use whe
 - The user says "process my drafts", "promote my raw pages", or drops files into `_raw/`
 - After a paste-heavy session where notes were captured quickly without structure
 
-In raw mode, each file in `OBSIDIAN_RAW_DIR` is treated as a source. After promoting a file to a proper wiki page, move the original into the repository-root `_archive/` directory (the sibling of `OBSIDIAN_RAW_DIR`, preserving its path relative to the raw directory, creating directories as needed) instead of deleting it — **except** early-dev samples in `wiki/_raw/` (place, item, hazard, creature, person) and `wiki/_raw/Session-11-*.md` evidence. Leave those in `_raw/`; they illustrate quality. Session-prep files a kind-form copy into the session folder; `type: place` files a preserved copy into `wiki/entities/place/` (Preserve). Never leave other promoted drafts in the live raw staging tree — they'll be double-processed on the next run; moving them into `_archive/` is the close.
+In raw mode, each file in `OBSIDIAN_RAW_DIR` is treated as a source. After promoting a file to a proper wiki page, move the original into **`wiki/_archive/`** (vault archive; preserve path relative to `_raw/` when nested, creating directories as needed) instead of deleting it — **except** early-dev samples in `wiki/_raw/` (place, item, hazard, creature, person) and `wiki/_raw/Session-11-*.md` evidence. Leave those in `_raw/`; they illustrate quality. Session-prep files a kind-form copy into the session folder; `type: place` files a preserved copy into `wiki/entities/place/` (Preserve). Never leave other promoted drafts in the live raw staging tree — they'll be double-processed on the next run; moving them into `wiki/_archive/` is the close. **Do not** use a repository-root `_archive/` — that duplicate is removed.
 
 This keeps faith with the "immutable raw layer" principle in `llm-wiki/SKILL.md`: even though `_raw/` drafts aren't Layer 1 sources, some have no other copy (e.g. a quick-capture finding typed straight into `_raw/` with no external document behind it), so the promoted file is the only record once it leaves the staging directory.
 
@@ -132,7 +132,7 @@ This keeps faith with the "immutable raw layer" principle in `llm-wiki/SKILL.md`
 - If the file has only `sources:`, copy those entries verbatim.
 - Only fall back to the `_raw/` filename if the file has no `sources:` or `capture_source` fields at all.
 
-**Move safety:** Only move the specific file that was just promoted. Before moving, verify the resolved path is inside `OBSIDIAN_RAW_DIR` — never touch files outside this directory. Never use wildcards or recursive operations (`rm -rf`, `mv *`). Move one file at a time by its exact path into the repository-root `_archive/` directory, preserving its path relative to `OBSIDIAN_RAW_DIR`. If a file of the same name already exists there, append a numeric suffix rather than overwriting.
+**Move safety:** Only move the specific file that was just promoted. Before moving, verify the resolved path is inside `OBSIDIAN_RAW_DIR` — never touch files outside this directory. Never use wildcards or recursive operations (`rm -rf`, `mv *`). Move one file at a time by its exact path into `wiki/_archive/`, preserving its path relative to `OBSIDIAN_RAW_DIR`. If a file of the same name already exists there, append a numeric suffix rather than overwriting.
 
 ### Campaign OS combatant drops
 

@@ -46,7 +46,7 @@ def main() -> int:
     manifest_path = wiki / ".manifest.json"
     manifest = json.loads(manifest_path.read_text())
     produced: list[tuple[Path, str]] = []
-    archive = wiki.parent / "_archive"
+    archive = wiki / "_archive"  # vault archive only — no repo-root _archive
     archive.mkdir(exist_ok=True)
 
     for source_arg in args.sources:
