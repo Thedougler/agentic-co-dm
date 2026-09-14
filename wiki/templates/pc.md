@@ -217,10 +217,6 @@ Ability, save DC, attack bonus, ritual notes, focus.
 | ------- | --------- | ---- |
 |         |           |      |
 
-## Voice
-
-<!-- Player voice notes for the DM. Omit when unused. -->
-
 ## Art
 
 <!-- Art embeds: wiki/attachments/{subject-slug}-{role}.ext — roles: banner|portrait|token|battlemap|overview|reference|handout|teaser. Flat folder; omit Art when unused. -->
