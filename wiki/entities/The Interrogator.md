@@ -37,12 +37,12 @@ One of six blends sold as alchemical cigarettes made for smoking in [[Calven and
 
 | Field | Detail |
 |---|---|
-| `one_thing` | For 10 minutes after lighting, the smoker knows the instant a creature they can both see and hear knowingly lies to them, and learns nothing else. |
-| `rarity_justification` | Comparable to Uncommon spell scrolls and Medallion of Thoughts. |
-| `attunement_reason` | Single use, one power, grants no bonus to attack, damage, saving throws, or AC. None of the decision tree's attunement branches trigger. |
-| `pc_connection` | Reveals lies to a hidden traitor, never what's hidden. |
-| `current_holder` | [[Rufio Segalla]] rolls this one to order at [[La Brace]], a [[Velo Quarter]] smoking room in [[Calven and Calveno]]. He never keeps it on the shelf. Ordering it means an hour seated in the room first, with the price named only afterward. |
-| `narrative_hook` | It never appears on [[La Gatta]]'s board. A buyer has to already know Segalla rolls it, and has to sit for it in person. |
+| One thing | For 10 minutes after lighting, the smoker knows the instant a creature they can both see and hear knowingly lies to them, and learns nothing else. |
+| Rarity justification | Comparable to Uncommon spell scrolls and Medallion of Thoughts. |
+| Attunement reason | Single use, one power, grants no bonus to attack, damage, saving throws, or AC. None of the decision tree's attunement branches trigger. |
+| PC connection | Reveals lies to a hidden traitor, never what's hidden. |
+| Current holder | [[Rufio Segalla]] rolls this one to order at [[La Brace]], a [[Velo Quarter]] smoking room in [[Calven and Calveno]]. He never keeps it on the shelf. Ordering it means an hour seated in the room first, with the price named only afterward. |
+| Narrative hook | It never appears on [[La Gatta]]'s board. A buyer has to already know Segalla rolls it, and has to sit for it in person. |
 
 **Rarity justification:** uncommon, comparable to a spell scroll of [[Zone of Truth]] and a spell scroll of [[Detect Thoughts]], both 2nd-level spells scribed as Uncommon scrolls with a single use and unattuned casting. [[Medallion of Thoughts]], a permanent Uncommon item that reads surface thoughts outright, sets this tier's ceiling. This consumable's narrower one-shot lie detection matches that tier already.
 

@@ -41,11 +41,11 @@ Ninka runs [[Ninka's Findings]] from a reinforced shop in [[Sparhold|Sparhold's]
 
 | Field | Content |
 |---|---|
-| `primary_goal` | Become so entrenched as [[Sparhold|Sparhold's]] salvage intermediary that no one can trace goods flowing through her hands or predict her next buyer. |
-| `consistent_method` | Prices items using a bone abacus without haggling. Closes each transaction the moment coin changes hands. She tells first-time buyers her three rules: "You ask about provenance, I walk. You ask about destination, I walk. You want credit, I walk." Then she disengages. |
-| `active_problem` | Vrex, her [[Verdant Teeth]] contact, has gone silent for three weeks. The supply line has dried up. [[Catarina Da'Virelli]] is waiting on rare [[Antheri]] pieces Ninka promised. Other buyers are getting impatient. She needs to send someone into the Teeth to find out what happened. |
-| `performance_hooks` | Bureaucratic efficiency · wraps a mooring rope loosely around her abacus when pausing a transaction (a gesture suggesting dock-work habit). |
-| `link_of_relevance` | Connects to [[Catarina Da'Virelli]] as the sole reliable source for salvaged [[Antheri]] components. She holds a fractured [[Antheri]] wing-frame assembly (segmented alloy, spring-loaded articulation, shattered control crystal still mounted) that Catarina recognized as critical to understanding non-magical flight mechanics. |
+| Primary goal | Become so entrenched as [[Sparhold|Sparhold's]] salvage intermediary that no one can trace goods flowing through her hands or predict her next buyer. |
+| Consistent method | Prices items using a bone abacus without haggling. Closes each transaction the moment coin changes hands. She tells first-time buyers her three rules: "You ask about provenance, I walk. You ask about destination, I walk. You want credit, I walk." Then she disengages. |
+| Active problem | Vrex, her [[Verdant Teeth]] contact, has gone silent for three weeks. The supply line has dried up. [[Catarina Da'Virelli]] is waiting on rare [[Antheri]] pieces Ninka promised. Other buyers are getting impatient. She needs to send someone into the Teeth to find out what happened. |
+| Performance hooks | Bureaucratic efficiency · wraps a mooring rope loosely around her abacus when pausing a transaction (a gesture suggesting dock-work habit). |
+| Link of relevance | Connects to [[Catarina Da'Virelli]] as the sole reliable source for salvaged [[Antheri]] components. She holds a fractured [[Antheri]] wing-frame assembly (segmented alloy, spring-loaded articulation, shattered control crystal still mounted) that Catarina recognized as critical to understanding non-magical flight mechanics. |
 
 ## Voice & Delivery
 

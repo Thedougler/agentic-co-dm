@@ -41,11 +41,11 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| primary_goal | Preserve the Low Lamp as the Warren's true social center and ensure every debt recorded in her head gets paid |
-| consistent_method | Feeds every guest before business. Establishes the house's claim on their goodwill first, then conducts affairs |
-| active_problem | A sealed message shard has sat unclaimed at the bar for eight days, and one of her regulars stopped coming three weeks back |
-| performance_hooks | Warren elder vibe. Introduces her two named teeth (Scrimper and the Keeper) to every stranger before anything else. |
-| link_of_relevance | Holds the Warren's gathering house where every kin-deal unfolds and settles, and knows [[Perrin Black-Jaw|Perrin]]'s family through [[Nona Black-Jaw]] going back decades |
+| Primary goal | Preserve the Low Lamp as the Warren's true social center and ensure every debt recorded in her head gets paid |
+| Consistent method | Feeds every guest before business. Establishes the house's claim on their goodwill first, then conducts affairs |
+| Active problem | A sealed message shard has sat unclaimed at the bar for eight days, and one of her regulars stopped coming three weeks back |
+| Performance hooks | Warren elder vibe. Introduces her two named teeth (Scrimper and the Keeper) to every stranger before anything else. |
+| Link of relevance | Holds the Warren's gathering house where every kin-deal unfolds and settles, and knows [[Perrin Black-Jaw|Perrin]]'s family through [[Nona Black-Jaw]] going back decades |
 
 **Voice & Delivery:** drawl, unhurried and ancient. She doesn't posture or explain herself, letting words swing between "These two will want to hear this" and "You're too thin. Sit," while the quiet that follows serves as her real voice. She reads everything at the bar (how fast someone drinks, whether their cup stays full, who won't look up, what stays empty, what fills the space between people) and doesn't miss a transaction, debt, or grudge, staying emotionally steady as stone.
 

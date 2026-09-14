@@ -43,11 +43,11 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| primary_goal | Maintain the Surety's hull integrity and ensure she's sailed by people who understand her. |
-| consistent_method | Tests seams and timber in quiet work and documents findings no one solicited. Fixes damage others miss. |
-| active_problem | A fatigued timber fault in the forward keel joint found at Calveno's dry dock needs hardwood stock and dry dock time, but he hasn't mentioned it to the crew yet. |
-| performance_hooks | Weathered shipwright vibe. Tests seams and joints with one hand, fingers running across timber while he listens. |
-| link_of_relevance | Works as carpenter aboard [[Uncertainty]]. Judges the crew by their real interest in the ship's hull and proper building. |
+| Primary goal | Maintain the Surety's hull integrity and ensure she's sailed by people who understand her. |
+| Consistent method | Tests seams and timber in quiet work and documents findings no one solicited. Fixes damage others miss. |
+| Active problem | A fatigued timber fault in the forward keel joint found at Calveno's dry dock needs hardwood stock and dry dock time, but he hasn't mentioned it to the crew yet. |
+| Performance hooks | Weathered shipwright vibe. Tests seams and joints with one hand, fingers running across timber while he listens. |
+| Link of relevance | Works as carpenter aboard [[Uncertainty]]. Judges the crew by their real interest in the ship's hull and proper building. |
 
 **Voice & Delivery:** direct and terse, all business. Asks questions to assess and teach. No small talk, only assessments. Speaks plainly about the ship's condition and what repairs take.
 

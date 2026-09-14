@@ -29,12 +29,12 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| `one_thing` | A ration of salted meat that never runs out, because the herd it's cut from keeps producing meat after the knife takes its cut. |
-| `rarity_justification` | Mundane. No magical property of its own, an ordinary trade good priced the same as any salted ration. The strangeness is in the supply, not the object. |
-| `attunement_reason` | No combat or mechanical benefit exists to attune to. |
-| `pc_connection` | Pulls on [[Perrin Black-Jaw]]. Buying or asking about this stock is a second, physical thread into the same suspicion his failed Session 03 Arcana check against [[Shepherd Grigori]] left unresolved, a barrel of meat that never empties is the same undying-flesh phenomenon he already can't explain, sitting on a shelf instead of hidden behind a mystery. |
-| `current_holder` | [[Marta Anvez]], who sells it by the wedge without volunteering why the barrel never runs low. |
-| `narrative_hook` | Any restocking visit to Anvez's Provisions puts it in front of a crew. A second visit is what actually makes the endless supply noticeable. |
+| One thing | A ration of salted meat that never runs out, because the herd it's cut from keeps producing meat after the knife takes its cut. |
+| Rarity justification | Mundane. No magical property of its own, an ordinary trade good priced the same as any salted ration. The strangeness is in the supply, not the object. |
+| Attunement reason | No combat or mechanical benefit exists to attune to. |
+| PC connection | Pulls on [[Perrin Black-Jaw]]. Buying or asking about this stock is a second, physical thread into the same suspicion his failed Session 03 Arcana check against [[Shepherd Grigori]] left unresolved, a barrel of meat that never empties is the same undying-flesh phenomenon he already can't explain, sitting on a shelf instead of hidden behind a mystery. |
+| Current holder | [[Marta Anvez]], who sells it by the wedge without volunteering why the barrel never runs low. |
+| Narrative hook | Any restocking visit to Anvez's Provisions puts it in front of a crew. A second visit is what actually makes the endless supply noticeable. |
 
 ## Provenance
 

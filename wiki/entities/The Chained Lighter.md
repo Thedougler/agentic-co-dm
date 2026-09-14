@@ -38,12 +38,12 @@ The one thing on [[La Gatta]]'s board that is not stock, and the only fixture [[
 
 | Field | Detail |
 |---|---|
-| `one_thing` | Once a day, a blend lit from its flame takes hold in a second willing creature within 5 feet as fully as in the smoker. |
-| `rarity_justification` | Above [[Pearl of Power]] (Uncommon, attunement, one recovered spell slot of 3rd level or lower each day) and under [[Ring of Spell Storing]] (Rare, attunement, holds and releases up to five levels of spells at a time). It duplicates a consumable somebody already paid for, once a day, and does nothing on its own. |
-| `attunement_reason` | None. One power, no standing bonus to attack rolls, damage rolls, saving throws, or AC, so no branch of the attunement tree fires. |
-| `pc_connection` | The crew's saves fail in pairs across the back line, and one blend covering one person leaves the other rolling flat. This is the only thing in [[Calven and Calveno]] that turns a single hour of cover into two. |
-| `current_holder` | Bolted to the board at [[La Gatta]]. Nicco named 1,800 gp for it once, late, and has not repeated the number since. |
-| `narrative_hook` | He will not say where it came from, and the board is nine years old with a hole bored through it that is older. |
+| One thing | Once a day, a blend lit from its flame takes hold in a second willing creature within 5 feet as fully as in the smoker. |
+| Rarity justification | Above [[Pearl of Power]] (Uncommon, attunement, one recovered spell slot of 3rd level or lower each day) and under [[Ring of Spell Storing]] (Rare, attunement, holds and releases up to five levels of spells at a time). It duplicates a consumable somebody already paid for, once a day, and does nothing on its own. |
+| Attunement reason | None. One power, no standing bonus to attack rolls, damage rolls, saving throws, or AC, so no branch of the attunement tree fires. |
+| PC connection | The crew's saves fail in pairs across the back line, and one blend covering one person leaves the other rolling flat. This is the only thing in [[Calven and Calveno]] that turns a single hour of cover into two. |
+| Current holder | Bolted to the board at [[La Gatta]]. Nicco named 1,800 gp for it once, late, and has not repeated the number since. |
+| Narrative hook | He will not say where it came from, and the board is nine years old with a hole bored through it that is older. |
 
 **Rarity:** Pearl of Power gives back one spell slot a day off an attunement slot and sits at Uncommon. The Chained Lighter gives a second person a whole Uncommon consumable's effect, which is more than a 3rd-level slot in this city's economy, and it does it without an attunement slot. Ring of Spell Storing is the ceiling above it, holding five levels of stored spellcasting at once. This lands between them.
 

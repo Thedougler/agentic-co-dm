@@ -36,11 +36,11 @@ When Ussa marks the timber line, she's tallied the season's drift. She knows wha
 
 | Field | Detail |
 |---|---|
-| primary_goal | Buy freedom for her enslaved kin living in the [[Grung clans|Grung Clans]]' hatchery camps. |
-| consistent_method | Takes bribes from [[Petro Amaru]] to report false cut-line positions on official boundary records. Payment passes in private, recorded only in memory. |
-| active_problem | The misreported lines are drifting timber crews closer to Grung-claimed territory with each season, and raids on the [[Midchain]] have been climbing in parallel. The connection is unproven, but Ussa sees it. |
-| performance_hooks | **Vibe:** a scout who has learned to wear another caste's colors by holding herself apart from everyone wearing them. **Tic:** she traces the old caste scars at her temples when she's thinking about a lie she just told. |
-| link_of_relevance | [[Jean-Claude Tabarnack]], a fellow [[Grung]] defector, would recognize what she's trading and how little it buys. |
+| Primary goal | Buy freedom for her enslaved kin living in the [[Grung clans|Grung Clans]]' hatchery camps. |
+| Consistent method | Takes bribes from [[Petro Amaru]] to report false cut-line positions on official boundary records. Payment passes in private, recorded only in memory. |
+| Active problem | The misreported lines are drifting timber crews closer to Grung-claimed territory with each season, and raids on the [[Midchain]] have been climbing in parallel. The connection is unproven, but Ussa sees it. |
+| Performance hooks | **Vibe:** a scout who has learned to wear another caste's colors by holding herself apart from everyone wearing them. **Tic:** she traces the old caste scars at her temples when she's thinking about a lie she just told. |
+| Link of relevance | [[Jean-Claude Tabarnack]], a fellow [[Grung]] defector, would recognize what she's trading and how little it buys. |
 
 ## Connections
 

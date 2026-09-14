@@ -38,12 +38,12 @@ Shelf stock at [[La Brace]], and the blend regulars buy on the way into a meetin
 
 | Field | Detail |
 |---|---|
-| `one_thing` | For 1 hour after lighting, the smoker has advantage on [[Charisma]] saving throws. |
-| `rarity_justification` | Level with [[Elixir of Health]] (Uncommon, single use, cures blindness, deafness, disease, and poison outright) and [[Cloak of Elvenkind]] (Uncommon, one situational advantage, worn without attunement); under [[Potion of Heroism]], which is Rare and grants a flat bonus to every save for an hour. |
-| `attunement_reason` | None. Single use, one power, and advantage on one ability's saves, leaving the other five untouched. |
-| `pc_connection` | [[Jean-Claude Tabarnack]] saves at CHA -1, and his cover ends the first time something reaches past it and takes hold of him. |
-| `current_holder` | Shelf stock at [[La Brace]], sold across the counter to anyone who walks in. |
-| `narrative_hook` | Rufio sells more of this blend on days the [[Tessarine Concordat]] has business in the [[Velo Quarter]], and he has noticed the pattern. |
+| One thing | For 1 hour after lighting, the smoker has advantage on [[Charisma]] saving throws. |
+| Rarity justification | Level with [[Elixir of Health]] (Uncommon, single use, cures blindness, deafness, disease, and poison outright) and [[Cloak of Elvenkind]] (Uncommon, one situational advantage, worn without attunement); under [[Potion of Heroism]], which is Rare and grants a flat bonus to every save for an hour. |
+| Attunement reason | None. Single use, one power, and advantage on one ability's saves, leaving the other five untouched. |
+| PC connection | [[Jean-Claude Tabarnack]] saves at CHA -1, and his cover ends the first time something reaches past it and takes hold of him. |
+| Current holder | Shelf stock at [[La Brace]], sold across the counter to anyone who walks in. |
+| Narrative hook | Rufio sells more of this blend on days the [[Tessarine Concordat]] has business in the [[Velo Quarter]], and he has noticed the pattern. |
 
 **Rarity:** the Uncommon tier covers this. Elixir of Health is the same shape of consumable at the same tier and does more, curing four conditions outright where this improves one roll. Potion of Heroism sits a tier up at Rare and hands a flat bonus to every saving throw for the same hour without an attunement slot. One ability's saves, once, lands cleanly beneath both.
 

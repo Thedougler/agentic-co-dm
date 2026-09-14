@@ -37,12 +37,12 @@ One of six blends sold as alchemical cigarettes in [[Calven and Calveno]]. Ricoc
 
 | Field | Detail |
 |---|---|
-| `one_thing` | A hit with a [[ranged weapon attack]] lets the shot ricochet on to two more nearby targets, using the same attack bonus. |
-| `rarity_justification` | Matches Potion of Fire Breath, Dust of Disappearance. |
-| `attunement_reason` | Single use, one power, no bonus to attack, damage, saving throws, or AC. No branch of the attunement decision tree fires. |
-| `pc_connection` | [[Jean-Claude Tabarnack]] knows a [[Grung]] handler cell won't move on him alone. It sends a crew. Ricochet Red answers three of them with one shot. It costs enough that he needs a real reason to buy it. |
-| `current_holder` | [[Rufio Segalla]], rolled to order at [[La Brace]]. |
-| `narrative_hook` | Getting one means booking the hour at [[La Brace]] and waiting on Rufio Segalla's price at the end of it, never picking it off a shelf. |
+| One thing | A hit with a [[ranged weapon attack]] lets the shot ricochet on to two more nearby targets, using the same attack bonus. |
+| Rarity justification | Matches Potion of Fire Breath, Dust of Disappearance. |
+| Attunement reason | Single use, one power, no bonus to attack, damage, saving throws, or AC. No branch of the attunement decision tree fires. |
+| PC connection | [[Jean-Claude Tabarnack]] knows a [[Grung]] handler cell won't move on him alone. It sends a crew. Ricochet Red answers three of them with one shot. It costs enough that he needs a real reason to buy it. |
+| Current holder | [[Rufio Segalla]], rolled to order at [[La Brace]]. |
+| Narrative hook | Getting one means booking the hour at [[La Brace]] and waiting on Rufio Segalla's price at the end of it, never picking it off a shelf. |
 
 **Rarity:** like Potion of Fire Breath and [[Dust of Disappearance]], this is Uncommon. Single-use, it always works once used. Ricochet Red's chain can stop on the first hit, and each ricochet skips the wielder's bonus. Its power stays at or below both of those items.
 

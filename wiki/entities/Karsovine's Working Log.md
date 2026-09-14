@@ -29,12 +29,12 @@ tier: supporting
 
 | Field | Detail |
 |---|---|
-| `one_thing` | Real (if incomplete) trial-dive data on hull-pressure tolerance and air-pump endurance, recorded from every dive Branimir has personally run, failures logged, not hidden. |
-| `rarity_justification` | Mundane, a document with no magical properties, same category as [[Forged Rig-Trial Certificate]]; its worth is informational, not mechanical, so no magic-item rarity benchmark applies. |
-| `attunement_reason` | None required. A mundane document grants no attack/damage/save/AC bonus and has no distinct powers to attune to. |
-| `pc_connection` | [[Catarina Da'Virelli]]. Her hook is anything that may one day help her build a non-magical flying machine; real hull-tolerance and air-pump-endurance figures are directly adjacent engineering data to that research, not a general "ties in." |
-| `current_holder` | [[Branimir Karsovine]], who keeps it on his own person at [[Voyvode Works]], never sold, displayed, or lent. |
-| `narrative_hook` | Earned, not bought or found: Branimir shares what's in it only with someone he's decided to trust, tied to Voyvode's "Earn It The Hard Way" Front. |
+| One thing | Real (if incomplete) trial-dive data on hull-pressure tolerance and air-pump endurance, recorded from every dive Branimir has personally run, failures logged, not hidden. |
+| Rarity justification | Mundane, a document with no magical properties, same category as [[Forged Rig-Trial Certificate]]; its worth is informational, not mechanical, so no magic-item rarity benchmark applies. |
+| Attunement reason | None required. A mundane document grants no attack/damage/save/AC bonus and has no distinct powers to attune to. |
+| PC connection | [[Catarina Da'Virelli]]. Her hook is anything that may one day help her build a non-magical flying machine; real hull-tolerance and air-pump-endurance figures are directly adjacent engineering data to that research, not a general "ties in." |
+| Current holder | [[Branimir Karsovine]], who keeps it on his own person at [[Voyvode Works]], never sold, displayed, or lent. |
+| Narrative hook | Earned, not bought or found: Branimir shares what's in it only with someone he's decided to trust, tied to Voyvode's "Earn It The Hard Way" Front. |
 
 ## Provenance
 

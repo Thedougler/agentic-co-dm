@@ -45,11 +45,11 @@ visibility: dm
 
 | Field | Value |
 |---|---|
-| primary_goal | Restore his credit standing after his public debt admission. |
-| consistent_method | Writes everything in advance and leads with the Concordat name alone. Never explains operational details aloud. |
-| active_problem | The city prices his word at a discount, treating his admission as evidence of weakness. |
-| performance_hooks | Diplomatic functionary vibe. Holds correspondence and refolds it while listening, never fully setting it down. |
-| link_of_relevance | Negotiated a reward with [[Delmar Fisk|Delmar]], [[Crissdalynn Khinriss|Crissdalynn]], [[Catarina Da'Virelli|Catarina]], and [[Jean-Claude Tabarnack|Jean-Claude]] after the [[Mercatura]] raid. |
+| Primary goal | Restore his credit standing after his public debt admission. |
+| Consistent method | Writes everything in advance and leads with the Concordat name alone. Never explains operational details aloud. |
+| Active problem | The city prices his word at a discount, treating his admission as evidence of weakness. |
+| Performance hooks | Diplomatic functionary vibe. Holds correspondence and refolds it while listening, never fully setting it down. |
+| Link of relevance | Negotiated a reward with [[Delmar Fisk|Delmar]], [[Crissdalynn Khinriss|Crissdalynn]], [[Catarina Da'Virelli|Catarina]], and [[Jean-Claude Tabarnack|Jean-Claude]] after the [[Mercatura]] raid. |
 
 **Voice & Delivery:** he speaks flat and businesslike with formal speech. Every word comes from notes. Concordat orders arrive as statements, never his own. When pushed, he blames rules and process, not his errors. Control is his only feeling. He stiffens when things stray from his written plan. Jean-Claude's refusal of tea showed even this could change.
 

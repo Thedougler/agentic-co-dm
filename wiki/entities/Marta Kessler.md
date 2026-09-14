@@ -47,11 +47,11 @@ She has run the register since the Goldrush's second year, back when the store w
 
 | Field | Value |
 |---|---|
-| `primary_goal` | Make company buyer for Voyvode Works proper, off this dock and into the mainland office. |
-| `consistent_method` | Recites the company greeting word-for-word to strangers. Drops it the moment someone proves useful, then trades favors off the official ledger. |
-| `active_problem` | A Voyvode clerk arrives within the month to weigh every crate against her ledger. Her under-the-counter trades won't survive the count. |
-| `performance_hooks` | Call-center brightness stapled to dockworker bluntness. Stamps a receipt twice, hard, when a customer mentions Sunkline. |
-| `link_of_relevance` | [[Catarina Da'Virelli]] receives the rejected pressure-valve housings and bellows-pump components Marta pulls off Voyvode's scrap barge before they're logged, traded for tune-ups on the store's own broken stock scale, parts that feed straight into Catarina's flying-machine pressure research and won't survive the coming crate-count either. |
+| Primary goal | Make company buyer for Voyvode Works proper, off this dock and into the mainland office. |
+| Consistent method | Recites the company greeting word-for-word to strangers. Drops it the moment someone proves useful, then trades favors off the official ledger. |
+| Active problem | A Voyvode clerk arrives within the month to weigh every crate against her ledger. Her under-the-counter trades won't survive the count. |
+| Performance hooks | Call-center brightness stapled to dockworker bluntness. Stamps a receipt twice, hard, when a customer mentions Sunkline. |
+| Link of relevance | [[Catarina Da'Virelli]] receives the rejected pressure-valve housings and bellows-pump components Marta pulls off Voyvode's scrap barge before they're logged, traded for tune-ups on the store's own broken stock scale, parts that feed straight into Catarina's flying-machine pressure research and won't survive the coming crate-count either. |
 
 **Voice & Delivery:**
 

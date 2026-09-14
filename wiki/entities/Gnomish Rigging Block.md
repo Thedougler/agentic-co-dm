@@ -30,12 +30,12 @@ tier: supporting
 
 | Field | Detail |
 |---|---|
-| `one_thing` | Functions as a block and tackle but self-greasing, salt-resistant, half the weight, and grants advantage on hauling checks. |
-| `rarity_justification` | Non-magical tool, an upgrade over standard Block and Tackle (1 gp, 5 lb). Grants advantage on one type of Strength check. Common — narrow application, no save/AC/attack bonus. |
-| `attunement_reason` | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
-| `pc_connection` | Any crew hauling cargo, raising sail, or rigging a crane benefits. The party's own ship maintenance is the obvious use. |
-| `current_holder` | [[Cotter Foss]] sells these from the rail of the [[Nimmik Vollask]]. The gnomes use identical blocks on their own cargo cranes. |
-| `narrative_hook` | The Nimmik Vollask's cargo crane — the one that shoots bundles across the gap — runs on these blocks. Cotter will point at the crane and say that is the sales pitch. |
+| One thing | Functions as a block and tackle but self-greasing, salt-resistant, half the weight, and grants advantage on hauling checks. |
+| Rarity justification | Non-magical tool, an upgrade over standard Block and Tackle (1 gp, 5 lb). Grants advantage on one type of Strength check. Common — narrow application, no save/AC/attack bonus. |
+| Attunement reason | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
+| PC connection | Any crew hauling cargo, raising sail, or rigging a crane benefits. The party's own ship maintenance is the obvious use. |
+| Current holder | [[Cotter Foss]] sells these from the rail of the [[Nimmik Vollask]]. The gnomes use identical blocks on their own cargo cranes. |
+| Narrative hook | The Nimmik Vollask's cargo crane — the one that shoots bundles across the gap — runs on these blocks. Cotter will point at the crane and say that is the sales pitch. |
 
 ## Mechanics
 

@@ -43,11 +43,11 @@ tier: supporting
 
 | Field | Detail |
 |---|---|
-| `primary_goal` | Keep Il Preludio's ledger square and the shelves turning over, whatever Fio believes is happening behind them. |
-| `consistent_method` | Takes the last word of whatever Fio just said and answers it a fourth higher, full voice, arms wide. Then drops straight into a plain remark about stock or weather. |
-| `active_problem` | The returns barrel is over capacity again, and Fio keeps promising refunds he hasn't cleared with her. |
-| `performance_hooks` | A torch singer's crescendo. Finishes Fio's sentences a fourth higher, then flattens right away into stock talk. |
-| `link_of_relevance` | None. Confirmed DM call: pure scenery, comic backdrop for [[Il Preludio]] with no PC hook. |
+| Primary goal | Keep Il Preludio's ledger square and the shelves turning over, whatever Fio believes is happening behind them. |
+| Consistent method | Takes the last word of whatever Fio just said and answers it a fourth higher, full voice, arms wide. Then drops straight into a plain remark about stock or weather. |
+| Active problem | The returns barrel is over capacity again, and Fio keeps promising refunds he hasn't cleared with her. |
+| Performance hooks | A torch singer's crescendo. Finishes Fio's sentences a fourth higher, then flattens right away into stock talk. |
+| Link of relevance | None. Confirmed DM call: pure scenery, comic backdrop for [[Il Preludio]] with no PC hook. |
 
 **Voice & Delivery:** every reply to Fio opens on a half-second of full-throated crescendo, arms thrown wide. Then it flattens dead level into stock talk. Cuts anyone else off the same way, price named before any feeling about it. Emotional default: brisk, all business, never fazed by her own volume.
 

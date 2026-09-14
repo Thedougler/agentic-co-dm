@@ -29,12 +29,12 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| `one_thing` | Bulk bandages and splints, constantly restocked, priced for a village that never runs out of wounds needing them. |
-| `rarity_justification` | Mundane. Ordinary wound-dressing with no magical property, the strangeness is in the volume moved, not the object itself. |
-| `attunement_reason` | No combat or mechanical benefit exists to attune to. |
-| `pc_connection` | Pulls on [[Perrin Black-Jaw]]. The sheer bulk of restocked bandages is a second, physical thread into the same suspicion his failed Session 03 Arcana check against [[Shepherd Grigori]] left unresolved, a village that stocks for wounds that never close is living the same unhealing-flesh phenomenon he already can't explain. |
-| `current_holder` | [[Marta Anvez]], who restocks the shelf herself and sells it plainly, without selling false comfort alongside the gauze. |
-| `narrative_hook` | Any visit to Anvez's Provisions puts the oversize stock in view. Asking why a village this size needs this much dressing is the hook. |
+| One thing | Bulk bandages and splints, constantly restocked, priced for a village that never runs out of wounds needing them. |
+| Rarity justification | Mundane. Ordinary wound-dressing with no magical property, the strangeness is in the volume moved, not the object itself. |
+| Attunement reason | No combat or mechanical benefit exists to attune to. |
+| PC connection | Pulls on [[Perrin Black-Jaw]]. The sheer bulk of restocked bandages is a second, physical thread into the same suspicion his failed Session 03 Arcana check against [[Shepherd Grigori]] left unresolved, a village that stocks for wounds that never close is living the same unhealing-flesh phenomenon he already can't explain. |
+| Current holder | [[Marta Anvez]], who restocks the shelf herself and sells it plainly, without selling false comfort alongside the gauze. |
+| Narrative hook | Any visit to Anvez's Provisions puts the oversize stock in view. Asking why a village this size needs this much dressing is the hook. |
 
 ## Provenance
 

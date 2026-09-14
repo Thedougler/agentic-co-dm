@@ -43,11 +43,11 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| primary_goal | Run Acqua Nera at full capacity, stay unknown to the Canal Commission. |
-| consistent_method | Charges double for quiet work. Names one price, up front, takes cash only. Won't work with anyone who seems unsure. |
-| active_problem | Dark shapes swept past before dawn and somebody is talking about them in the wrong taverns. |
-| performance_hooks | Master craftsman vibe. Mixes paint by weight and nose, eyes on the middle distance. |
-| link_of_relevance | The crew brings their ship to Acqua Nera for work, and Dario has painted hull-class vessels for other people before. |
+| Primary goal | Run Acqua Nera at full capacity, stay unknown to the Canal Commission. |
+| Consistent method | Charges double for quiet work. Names one price, up front, takes cash only. Won't work with anyone who seems unsure. |
+| Active problem | Dark shapes swept past before dawn and somebody is talking about them in the wrong taverns. |
+| Performance hooks | Master craftsman vibe. Mixes paint by weight and nose, eyes on the middle distance. |
+| Link of relevance | The crew brings their ship to Acqua Nera for work, and Dario has painted hull-class vessels for other people before. |
 
 **Voice & Delivery:** terse, methodical, speaks from stillness. "I can't see it." / "The price is the price." / "Your hull or you go." He explains nothing of his work and apologizes for nothing. Watches faces while you decide.
 

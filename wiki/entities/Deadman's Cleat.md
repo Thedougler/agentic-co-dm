@@ -36,12 +36,12 @@ _Wondrous Item, Uncommon._
 
 | Field | Detail |
 |---|---|
-| `one_thing` | The wearer holds their ground when something tries to move them. |
-| `rarity_justification` | Narrower than [[Oil of Slipperiness]] (uncommon, 8 hours of full freedom of movement) and than [[Stone of Good Luck]] (uncommon, +1 to every save). This covers one narrow class of effect and nothing else. |
-| `attunement_reason` | No bonus to attack, damage, AC, or any save roll's number, and one power only. The attunement tree has no branch for it. |
-| `pc_connection` | [[Perrin Black-Jaw]] saves at [[Strength]] -1 with disadvantage on top, so every grappler and shover in the Teeth goes for him first. |
-| `current_holder` | [[Ninka Solvei]], on the counter at [[Ninka's Findings]]. |
-| `narrative_hook` | The knot is a diver's, tied to be cut from the far end, and it was cut from the far end. |
+| One thing | The wearer holds their ground when something tries to move them. |
+| Rarity justification | Narrower than [[Oil of Slipperiness]] (uncommon, 8 hours of full freedom of movement) and than [[Stone of Good Luck]] (uncommon, +1 to every save). This covers one narrow class of effect and nothing else. |
+| Attunement reason | No bonus to attack, damage, AC, or any save roll's number, and one power only. The attunement tree has no branch for it. |
+| PC connection | [[Perrin Black-Jaw]] saves at [[Strength]] -1 with disadvantage on top, so every grappler and shover in the Teeth goes for him first. |
+| Current holder | [[Ninka Solvei]], on the counter at [[Ninka's Findings]]. |
+| Narrative hook | The knot is a diver's, tied to be cut from the far end, and it was cut from the far end. |
 
 ## Mechanics
 

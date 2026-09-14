@@ -38,12 +38,12 @@ Sold to nobody yet. It stands in the locked case at the back of the shop, above 
 
 | Field | Detail |
 |---|---|
-| `one_thing` | One turn of the crank frightens every hostile creature within 60 feet that fails a save. |
-| `rarity_justification` | Rare: a once-daily 60-foot save-or-frightened area effect. |
-| `attunement_reason` | An area effect that forces a save on every hostile creature in it. |
-| `pc_connection` | The control tool the party has never carried into a fight it needed one for. |
-| `current_holder` | [[Fioravante Selmerin|Fio]], in the high case, booked. |
-| `narrative_hook` | 1,500 gp, and the tag already carries somebody else's name. |
+| One thing | One turn of the crank frightens every hostile creature within 60 feet that fails a save. |
+| Rarity justification | Rare: a once-daily 60-foot save-or-frightened area effect. |
+| Attunement reason | An area effect that forces a save on every hostile creature in it. |
+| PC connection | The control tool the party has never carried into a fight it needed one for. |
+| Current holder | [[Fioravante Selmerin|Fio]], in the high case, booked. |
+| Narrative hook | 1,500 gp, and the tag already carries somebody else's name. |
 
 Rare tier holds. [[Magic Item Rarity]] puts Rare goods in an approximate 500-5,000 gp band, and 1,500 gp sits low inside it beside [[La Cenere]]'s [[Necklace of Fireballs]] at the same price. The effect is _[[fear]]_ cast at 3rd level, traded out of a 30-foot cone into a 60-foot sphere and out of the caster's control into a fixed round of duration, once a day, on a device anyone attuned can work.
 

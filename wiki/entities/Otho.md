@@ -50,10 +50,10 @@ Physical mannerisms: flicks a coin across his knuckles and claps a hand on a sho
 
 | Field | Value |
 |---|---|
-| primary_goal | Chase whatever's most entertaining right now, a good party tonight, checking in fondly on his boy Grigori whenever it crosses his mind, whichever gets the better reaction. |
-| consistent_method | Buys the next round and tells the wildest story in the room, nudging every conversation toward whatever sounds most fun to watch unfold. He never explains the cost underneath. |
-| active_problem | Strangers have arrived asking pointed questions about the duel that proved nobody on this island can die. It's the first real audience he's had for his handiwork in longer than he's aware of. |
-| performance_hooks | The barroom uncle who's bought every regular a drink they can't remember. Flicks a coin end over end across his knuckles without ever looking down. |
+| Primary goal | Chase whatever's most entertaining right now, a good party tonight, checking in fondly on his boy Grigori whenever it crosses his mind, whichever gets the better reaction. |
+| Consistent method | Buys the next round and tells the wildest story in the room, nudging every conversation toward whatever sounds most fun to watch unfold. He never explains the cost underneath. |
+| Active problem | Strangers have arrived asking pointed questions about the duel that proved nobody on this island can die. It's the first real audience he's had for his handiwork in longer than he's aware of. |
+| Performance hooks | The barroom uncle who's bought every regular a drink they can't remember. Flicks a coin end over end across his knuckles without ever looking down. |
 | **Link of Relevance** | [[Perrin Black-Jaw]] failed the Arcana check identifying Grigori's necrotic magic in Session 03 and has suspected something's wrong ever since without knowing what. Meeting Otho, the source of Grigori's whole doctrine and the office of Korabl itself, is the piece that could finally give that suspicion real shape. |
 
 > [!mechanic]

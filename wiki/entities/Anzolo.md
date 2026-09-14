@@ -54,11 +54,11 @@ The call-off reached his last port too late, as he had moved on toward [[Calven 
 
 | Field | Value |
 |---|---|
-| primary_goal | Complete Nona's orders cleanly and return with everything she needs to know. |
-| consistent_method | Checks every variable before moving. Enters no room without knowing the exits. |
-| active_problem | A Tessarine patrol trails him undetected while he remains unaware Nona called off the hunt for Perrin. |
-| performance_hooks | methodical veteran. Checks every exit before settling into a seat. |
-| link_of_relevance | Dispatched by [[Nona Black-Jaw]] to locate [[Perrin Black-Jaw]]. |
+| Primary goal | Complete Nona's orders cleanly and return with everything she needs to know. |
+| Consistent method | Checks every variable before moving. Enters no room without knowing the exits. |
+| Active problem | A Tessarine patrol trails him undetected while he remains unaware Nona called off the hunt for Perrin. |
+| Performance hooks | methodical veteran. Checks every exit before settling into a seat. |
+| Link of relevance | Dispatched by [[Nona Black-Jaw]] to locate [[Perrin Black-Jaw]]. |
 
 ## Stats & Combat
 

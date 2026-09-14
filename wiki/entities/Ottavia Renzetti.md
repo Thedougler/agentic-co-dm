@@ -34,11 +34,11 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| primary_goal | claim Sparhold's rule by winning the challenge duel |
-| consistent_method | compels Nico Renzetti, her family's champion, into service; uses family authority and honor to ensure obedience; positions House Renzetti as ready to lead the settlement's defense |
-| active_problem | Nico Renzetti, her champion, is privately reluctant and shows every sign of not wanting the fight; if he loses the duel halfheartedly, she loses everything |
-| performance_hooks | *Cultural shorthand:* a seasoned maritime house leader, absolute in her authority. *Tic:* drums her fingers in a rhythm like the watch bell's toll, a nervous habit that betrays her calculations. |
-| link_of_relevance | (Unfilled: no PC connection provided) |
+| Primary goal | claim Sparhold's rule by winning the challenge duel |
+| Consistent method | compels Nico Renzetti, her family's champion, into service; uses family authority and honor to ensure obedience; positions House Renzetti as ready to lead the settlement's defense |
+| Active problem | Nico Renzetti, her champion, is privately reluctant and shows every sign of not wanting the fight; if he loses the duel halfheartedly, she loses everything |
+| Performance hooks | *Cultural shorthand:* a seasoned maritime house leader, absolute in her authority. *Tic:* drums her fingers in a rhythm like the watch bell's toll, a nervous habit that betrays her calculations. |
+| Link of relevance | (Unfilled: no PC connection provided) |
 
 **Voice & Delivery Notes:**
 

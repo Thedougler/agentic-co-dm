@@ -38,12 +38,12 @@ Sold to nobody yet. It lies in the locked case at the back of the shop, on the s
 
 | Field | Detail |
 |---|---|
-| `one_thing` | It unfolds as a double of its owner and takes one attack that would have hit them. |
-| `rarity_justification` | Rare: negates one hit per day outright, on a reaction, with no roll. |
-| `attunement_reason` | It copies its owner and answers their reaction, so it needs a bond. |
-| `pc_connection` | The one hit that drops [[Catarina Da'Virelli|Catarina]]'s concentration is the hit this eats. |
-| `current_holder` | [[Fioravante Selmerin|Fio]], in the high case above the ladder. |
-| `narrative_hook` | 1,800 gp, a full season of salvage, and Fio will not hold it against a deposit. |
+| One thing | It unfolds as a double of its owner and takes one attack that would have hit them. |
+| Rarity justification | Rare: negates one hit per day outright, on a reaction, with no roll. |
+| Attunement reason | It copies its owner and answers their reaction, so it needs a bond. |
+| PC connection | The one hit that drops [[Catarina Da'Virelli|Catarina]]'s concentration is the hit this eats. |
+| Current holder | [[Fioravante Selmerin|Fio]], in the high case above the ladder. |
+| Narrative hook | 1,800 gp, a full season of salvage, and Fio will not hold it against a deposit. |
 
 Rare tier holds. [[Magic Item Rarity]] puts Rare goods in an approximate 500-5,000 gp band, and 1,800 gp sits low inside it beside [[Moretti]]'s [[Gale-Cut Storm Sail]] at the same price. Against _[[mirror image]]_ it is narrower and blunter: one duplicate rather than three, one attack rather than a run of them, no concentration, no spell slot, and no chance at all that the wrong figure gets hit.
 
