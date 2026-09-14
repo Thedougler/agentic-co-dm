@@ -4,45 +4,65 @@
 
 ### Canonical owner and source boundary
 
-- Live PC owners remain `wiki/entities/pc/<kebab-slug>.md`; the sole copy-start scaffold is `wiki/templates/pc.md`. This follows `wiki/AGENTS.md` § Frontmatter, § Layout, and § Page filenames and matches all five live pages.
-- The five conformance targets are `jean-claude-tabarnack.md`, `perrin-black-jaw.md`, `catarina-davirelli.md`, `crissdalynn-khinriss.md`, and `delmar-fisk.md`. Files under `wiki/_archive/{abilities,character-sheets,combat-profile,galleries,inventory,session-logs,spells,stats,va-scripts}` remain evidence, not competing owner pages.
-- Conformance is structure-only. Existing facts, aliases, sources, lifecycle, reveal, visibility, art references, player handles, and links remain unchanged unless a source conflict is explicitly marked for verification. No campaign fact is silently selected or promoted.
+- **Decision:** Live PC owners remain `wiki/entities/pc/<kebab-slug>.md`. The sole copy-start scaffold is `wiki/templates/pc.md`. Archived facet files under `wiki/_archive/{abilities,character-sheets,combat-profile,galleries,inventory,session-logs,spells,stats,va-scripts}` stay evidence, not competing owners.
+- **Rationale:** `wiki/AGENTS.md` already requires one owner page and `type: pc`. The five conformance targets are `jean-claude-tabarnack.md`, `perrin-black-jaw.md`, `catarina-davirelli.md`, `crissdalynn-khinriss.md`, and `delmar-fisk.md`.
+- **Alternatives considered:** Split satellite model — rejected; extra `type` or folder — rejected.
 
-### Page shape and scan surfaces
+### PC-owning skill
 
-- Every filed page has one H1, leading `> [!narration] Narration`, and the shared Title Case spine: `At a Glance`, `Connections`, `Sheet`, `Combat Profile`, `Abilities`, conditional `Spells`, `Inventory`, conditional `Session Log`, and conditional `Art`. There is no `Voice` section: PCs are player-controlled, not DM-voiced.
-- Pair `At a Glance` with `Connections`, and `Sheet` with `Combat Profile`, using the supported nested `col` / `col-md` codeblock syntax. Keep the narration callout outside fences. Put each heading inside its child column so the page remains readable when the columns plugin is unavailable.
-- `Sheet` owns exact combat numbers and current state. `Combat Profile` owns interpretation, counters, dependencies, and party synergy; it points to the Sheet or named resource rows rather than retyping the same numeric value. Abilities own uses and recovery for actions and resources. This resolves the current duplicate combat-skims problem.
-- Spells is conditional: omit it for a non-caster; when present, use `Spellcasting`, `Cantrips`, `Prepared or Known`, and `Slots or Casting Resources`, omitting empty subsections. Inventory similarly omits empty `Attuned`, `Carried`, `Stowed`, and `Currency` subsections.
+- **Decision:** Add one skill at `.agents/skills/player-characters/SKILL.md`. It is the sole skill owner for `type: pc` pages. Name it `player-characters`, not `pc-design`. It records and represents a player-created character from supplied source. It MAY file a new wiki page when the player already made the character. It MUST NOT invent a PC, generate stats, or write the player's actions. `npc-design` and other NPC workflows MUST NOT create, rewrite, or prescribe PC pages; `npc-design` already says it is not for player-character builds, and that exclusion MUST become a hard route to this skill.
+- **Rationale:** Agents defaulted to treating PCs as NPCs. A template-only change does not stop that routing. `*-design` naming would invite generation.
+- **Alternatives considered:** Template plus existing-skill pointers only — rejected by spec clarification. Allow npc-design to fill combat/portrayal — rejected. Name the skill `pc-design` — rejected.
 
-### Player-control boundary
+This skill and the rewritten `wiki/templates/pc.md` are design-impact work. Implementation MUST dispatch them to the designated writer per `docs/agents/skill-design-dispatch.md` and MUST load `writing-for-agents`. Smaller pointer edits in established skills and `wiki/AGENTS.md` are not design-impact.
 
-- Existing `Voice` prose is not preserved as a DM performance surface. Decision-relevant behavior moves into the existing DM thesis or a named `Connections` entry; mechanical constraints move into `Abilities`; player performance choices remain attributable in source evidence when they do not affect adjudication. No new section replaces `Voice`.
+### Record-only ingest sources
 
-### Markdown and agent contract
+- **Decision:** The skill accepts PDF character sheets, prose descriptions, Foundry VTT actors via the existing MCP server (`get-character`, `list-characters`, `get-character-entity`, and related character tools), and other files the DM supplies. No new PDF parser, database, or Foundry client. The agent reads the source and transcribes it onto the template. Unreadable or unreachable source leaves fields unknown or `[verify]`; it does not invent stats or abort a usable partial page when some source remains.
+- **Rationale:** Spec FR-019 names those sources. Existing MCP and file-read tools already do the I/O.
+- **Alternatives considered:** New import service — rejected (XIV, YAGNI). Prose-only this feature — rejected by clarification.
 
-- `wiki/AGENTS.md` remains the campaign authority for type, lifecycle, reveal, visibility, owner paths, approval, headings, and omission. `obsidian-markdown` owns syntax: wikilinks, escaped table-cell pipes, callouts, complete sentences, inline-code DCs/dice, real newlines, and columns.
-- Because FR-010 explicitly requires codeblock columns for PC pages, add a narrow owner-page PC exception to the current columns guidance. It must not weaken the existing session/run rule: narration stays outside fences and headings/tables remain the semantic fallback.
-- Update `pc-interview` from the retired `templates/PC.md` and `wiki/<campaign>/pcs/` paths to the canonical template/path and map stated answers only into existing PC sections. An interview transcript is evidence; it is not an extra live PC facet or required heading.
-- Update `wiki-ingest` and reconciliation pointers to name the PC template, owner path, satellite-flattening rule, and conflict/unknown handling. Do not duplicate the full page contract in each skill.
-- The `obsidian-markdown` frontmatter type list must include `pc`, matching `wiki/AGENTS.md` and the lint implementation.
+### Newest supplied source wins
 
-### Conflicts, unknowns, and preservation
+- **Decision:** When a newer PDF, prose, Foundry actor, or other supplied source disagrees with the live wiki page on the same number, overwrite the wiki number with the newer source. A structure-only conformance pass is not a newer source and MUST NOT overwrite facts. One source that internally disagrees with itself still keeps both values or `[verify]`; the agent does not invent a resolution.
+- **Rationale:** Spec FR-020. Conformance remains structure-only (FR-017).
+- **Alternatives considered:** Wiki-always-wins — rejected by clarification. Foundry as permanent mechanical SoT — rejected. Side-by-side forever — rejected.
 
-- Existing sources contain real conflicts, including Crissdalynn's AC/HP/speed, Jean-Claude's HP/initiative, Perrin's AC/player handle, and Catarina's historical source density. Preserve the current owner value and attach a concise verification marker naming the conflicting source; do not invent a resolution.
-- Missing owner links remain explicit unresolved links or stated unknowns under existing wiki rules. Named item, spell, place, faction, and party pages are linked when present; their full descriptions are not copied.
-- Optional trust/provenance fields already present on a page are preserved. The redesign does not normalize lifecycle, confidence, tier, or source lineage as a side effect.
+### D&D Beyond page shape
+
+- **Decision:** Filed pages follow D&D Beyond information groups and order, implemented in Obsidian markdown and columns, not a visual clone of D&D Beyond chrome. Spine after the title and player-safe `[!narration]`: `Identity`, `Combat Stats`, `Ability Scores`, `Skills`, `Actions`, conditional `Spells`, `Inventory`, `Features`, then campaign extras `Connections`, `Session Log`, and conditional `Art`. No `Voice`, `At a Glance`, `Sheet`, `Combat Profile`, or required DM thesis.
+- **Rationale:** Spec FR-002–FR-005. D&D Beyond is a player sheet; Combat Profile / DM thesis is NPC dossier behavior.
+- **Alternatives considered:** Keep At a Glance / Combat Profile around a DDB mechanical block — rejected. Pixel-clone cards and site colors — rejected.
+
+### Column pairs
+
+- **Decision:** Two required pairs using nested `col` / `col-md` codeblocks, parent fence longer than children, headings inside child fences, narration outside fences:
+  1. `Identity` + `Combat Stats` (DDB header / combat bar)
+  2. `Ability Scores` + `Skills` (DDB left column)
+- Campaign extras MAY pair `Connections` + `Session Log` the same way when both exist. `Actions`, `Spells`, `Inventory`, `Features`, and `Art` stay full-width. Linear headings and tables remain the semantic fallback. Add a narrow PC exception in `obsidian-markdown` columns guidance; do not weaken the session/run rule that narration stays outside fences.
+- **Rationale:** Spec FR-010. Two pairs match DDB scan order without inventing chrome.
+- **Alternatives considered:** `[!col]` callouts — rejected. Pair every remaining section — rejected (VII).
+
+### Actions vs Features
+
+- **Decision:** `Actions` holds attacks, actions, bonus actions, and reactions (omit empty subsections). `Features` holds traits, class features, and feats. There is no `Abilities` heading. Each populated row states effect and uses or recovery when applicable. These lists record options; they MUST NOT script what the player will do.
+- **Rationale:** Spec FR-004, FR-005, and the record-only agency rule.
+- **Alternatives considered:** Keep a combined Abilities dump — rejected; it is not DDB order.
+
+### Markdown authorities
+
+- **Decision:** `wiki/AGENTS.md` owns campaign type, path, approval, and the PC layout row plus wiki-kind routing to `player-characters`. `obsidian-markdown` owns syntax. The page contract in `contracts/pc-page.md` is the observable spine. Skills point at those sources; they do not clone the contract. `pc-interview` maps answers into the DDB sections; an interview transcript is evidence, not a live facet. `wiki-ingest` and reconciliation point at `player-characters` for `type: pc`. Include `pc` in any obsidian-markdown type list that currently omits it.
+- **Rationale:** One owner per fact (IX). Interview/ingest already exist; they must stop implying NPC-like creation.
+- **Alternatives considered:** Duplicate the full contract into every skill — rejected.
 
 ### Verification
 
-- The public seam is the markdown owner-page contract, not an API. Use the feature contract plus a small feature-local fixture checker only for observable invariants; do not add AST or column-parser infrastructure.
-- Run scoped `./scripts/lint-wiki-write --path wiki/entities/pc`, strict scoped Markdown lint, and `./scripts/wiki-lint --json` after implementation. Use a five-page timed reference review and a source-to-owner fact-preservation comparison for outcomes that lint cannot prove.
-- `tools/check_wiki_pages.py` is not PC proof because its type set omits `pc`. `context-waste-scan.py` is diagnostic only; it must not score or delete narrative/mechanics.
+- **Decision:** Public seam is the markdown owner-page contract plus skill routing. Keep the feature-local fixture `specs/020-pc-page-redesign/fixtures/check.py` and update its spine/column assertions. Run scoped wiki/Markdown lint. Do not use `tools/check_wiki_pages.py` as PC proof (`pc` is omitted there). No AST or column parser.
+- **Rationale:** XIV. Existing fixture already fails un-conformed pages.
+- **Alternatives considered:** Generic page checker expansion this feature — out of scope.
 
-## Alternatives considered
+## Alternatives considered (feature-wide)
 
-- **Keep the old split satellite model:** rejected because current `wiki/AGENTS.md` requires one owner page, and multi-H1/facet dumps and Foundry copies are documented structural context waste.
-- **Use `[!col]` callouts:** rejected for this feature because FR-010 pins codeblock syntax and codeblocks preserve a real narration callout beside scan surfaces.
-- **Add a PC-specific campaign `type` or folder taxonomy:** rejected because `pc` and `wiki/entities/pc/` already exist and shared type/path rules forbid duplicate taxonomies.
-- **Copy full sheet, spell, and item text into multiple sections:** rejected because each fact needs one owner; pages should link to named owners and keep one canonical numeric home.
-- **Resolve conflicting source values during conformance:** rejected because structure-only work cannot change campaign facts; unresolved values need explicit verification markers.
+- Treat PCs through `npc-design` with a prettier template — rejected; that is the named failure.
+- Generate player characters the way NPCs are designed — rejected; players create PCs.
+- New character-sheet database or Foundry wrapper library — rejected; existing MCP and file reads are enough.
