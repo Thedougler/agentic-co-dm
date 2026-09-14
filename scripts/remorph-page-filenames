@@ -1,0 +1,363 @@
+#!/usr/bin/env python3
+"""Remorph wiki page basenames to AGENTS § Page filenames kebab slugs.
+
+Slug from frontmatter title (strip legacy Aruhe - prefix; lowercase kebab).
+Journal recaps → Session-<NN>-Recap.md. Rewrites path-qualified wikilinks/embeds,
+leaves redirects_to stub at old basename, adds old stem as alias on the live page;
+rewrites path-qualified and safe bare-stem wikilinks.
+
+Skip: _archive/_raw/templates/_meta/attachments/reserved; redirects_to stubs.
+GATED: do not mass --apply on the live vault until Nick greenlights.
+Prove --apply only on a temp vault copy.
+
+Usage (repo root):
+  ./scripts/remorph-page-filenames --dry-run [--wiki wiki|--vault wiki]
+  ./scripts/remorph-page-filenames --apply [--wiki wiki|--vault wiki]
+  ./scripts/remorph-page-filenames --dry-run --json
+
+GATED — no live mass apply until Nick greenlights.
+"""
+from __future__ import annotations
+
+import argparse
+import datetime as dt
+import json
+import re
+import sys
+from dataclasses import asdict, dataclass
+from pathlib import Path
+
+SKIP_DIRS = {
+    ".obsidian",
+    "_archive",
+    "_archives",
+    "_raw",
+    "_readouts",
+    "_meta",
+    "templates",
+    "attachments",
+}
+RESERVED = {"AGENTS.md", "index.md", "log.md", "hot.md"}
+ARUHE_PREFIX = re.compile(r"^Aruhe -\s*")  # case-sensitive; optional space after hyphen
+# Spaced or hyphenated Session NN Recap → canonical Session-NN-Recap
+SESSION_RECAP = re.compile(r"^Session[\s_-]+(\d+)[\s_-]+Recap$", re.I)
+# Session-N-BB-Label / Session N - … plan/beat forms
+SESSION_BEAT = re.compile(
+    r"^Session[\s_-]+(\d+)[\s_-]+(\d{2})[\s_-]+(.+)$", re.I
+)
+ILLEGAL = re.compile(r'[/\\:*?"<>|\x00-\x1f]')
+FM_BLOCK = re.compile(r"\A---\n(.*?)\n---\n?", re.DOTALL)
+FM_TITLE = re.compile(r"^title:\s*(.*)$", re.MULTILINE)
+FM_TYPE = re.compile(r"^type:\s*(.*)$", re.MULTILINE)
+FM_ALIASES_INLINE = re.compile(r"^aliases:\s*\[(.*?)\]\s*$", re.MULTILINE)
+PATH_LINK = re.compile(
+    r"(!?\[\[)"
+    r"((?:wiki/)?"
+    r"(?:entities|journal|concepts|synthesis|references|projects|misc|skills)/"
+    r"[^\]|#]*?/)"
+    r"([^\]|#/]+?)"
+    r"((?:\.md)?(?:#[^\]|]*)?(?:\|[^\]]*)?\]\])"
+)
+BARE_LINK = re.compile(r"(!?)\[\[([^\]|#]+)((?:#[^\]|]*)?(?:\|[^\]]*)?)\]\]")
+
+
+@dataclass
+class Plan:
+    src: str
+    dest: str
+    title: str
+    stem: str
+    new_stem: str
+    reason: str
+
+
+def parse_fm(text: str) -> dict[str, str]:
+    m = FM_BLOCK.match(text)
+    if not m:
+        return {}
+    fields: dict[str, str] = {}
+    for line in m.group(1).splitlines():
+        item = re.match(r"^([A-Za-z_][\w-]*):\s*(.*)$", line)
+        if item and not line.startswith((" ", "-")):
+            fields[item.group(1)] = item.group(2).strip()
+    return fields
+
+
+def title_of(fields: dict[str, str]) -> str:
+    return fields.get("title", "").strip().strip("\"'")
+
+
+def page_slug_from_title(title: str) -> str:
+    """wiki/AGENTS.md § Page filenames slug function."""
+    s = (title or "").strip()
+    s = ARUHE_PREFIX.sub("", s, count=1).strip()
+    s = re.sub(r"\s+", "-", s)
+    s = s.replace("'", "").replace("\u2019", "")
+    s = re.sub(r"[^A-Za-z0-9-]", "", s)
+    s = re.sub(r"-{2,}", "-", s).strip("-")
+    return s.casefold()
+
+
+def target_stem(stem: str, title: str, fields: dict[str, str]) -> tuple[str, str] | None:
+    """Return (new_stem, reason) if rename needed, else None.
+
+    Scope (gated remorph): spaced basenames, Aruhe-prefix, non-canonical Session
+    recaps, and spaced Session plan/beat forms. Already space-free non-Aruhe
+    kebab stems are left alone even if title slug differs (no mass casefold).
+    """
+    typ = (fields.get("type") or "").strip().strip("\"'").casefold()
+
+    # Recaps: Session-<NN>-Recap.md
+    m = SESSION_RECAP.match(stem)
+    if m or typ == "recap":
+        if m:
+            nn = m.group(1).zfill(2)
+        else:
+            m2 = re.search(r"(\d+)", stem) or re.search(r"(\d+)", title)
+            if not m2:
+                return None
+            nn = m2.group(1).zfill(2)
+        new = f"Session-{nn}-Recap"
+        if stem != new:
+            return new, "session_recap"
+        return None
+
+    # Session plan/beat with spaces → Session-<n>-<BB>-<kebab-label>
+    m = SESSION_BEAT.match(stem)
+    if m and " " in stem:
+        n, bb, label = m.group(1), m.group(2), m.group(3)
+        label_slug = page_slug_from_title(label)
+        if not label_slug:
+            return None
+        new = f"Session-{n}-{bb}-{label_slug}"
+        if stem != new:
+            return new, "session_beat"
+        return None
+
+    # General: only when spaces or Aruhe prefix (clear lint HARD findings)
+    if not (" " in stem or ARUHE_PREFIX.match(stem)):
+        return None
+    slug = page_slug_from_title(title) if title else page_slug_from_title(
+        ARUHE_PREFIX.sub("", stem, count=1)
+    )
+    if not slug:
+        return None
+    reason = "aruhe_prefix" if ARUHE_PREFIX.match(stem) else "spaces"
+    if stem == slug:
+        return None
+    return slug, reason
+
+
+def collect_plans(wiki: Path) -> tuple[list[Plan], list[str]]:
+    plans: list[Plan] = []
+    skips: list[str] = []
+    for path in sorted(wiki.rglob("*.md")):
+        rel = path.relative_to(wiki)
+        if set(rel.parts) & SKIP_DIRS or path.name in RESERVED:
+            continue
+        if "_redirects" in rel.parts:
+            continue
+        text = path.read_text(encoding="utf-8")
+        fields = parse_fm(text)
+        if fields.get("redirects_to"):
+            continue
+        stem = path.stem
+        title = title_of(fields)
+        result = target_stem(stem, title, fields)
+        if not result:
+            continue
+        new_stem, reason = result
+        if ILLEGAL.search(new_stem) or not new_stem:
+            skips.append(f"{rel.as_posix()}: dest slug illegal/empty ({new_stem!r})")
+            continue
+        dest = (path.parent / f"{new_stem}.md").relative_to(wiki).as_posix()
+        plans.append(
+            Plan(
+                src=rel.as_posix(),
+                dest=dest,
+                title=title or stem,
+                stem=stem,
+                new_stem=new_stem,
+                reason=reason,
+            )
+        )
+    return plans, skips
+
+
+def collision_errors(wiki: Path, plans: list[Plan]) -> list[str]:
+    errors: list[str] = []
+    dest_counts: dict[str, int] = {}
+    for p in plans:
+        dest_counts[p.dest] = dest_counts.get(p.dest, 0) + 1
+    for dest, n in dest_counts.items():
+        if n > 1:
+            errors.append(f"collision among plans: {dest} ({n})")
+    planned_src = {p.src for p in plans}
+    for p in plans:
+        dest_path = wiki / p.dest
+        if dest_path.exists() and p.dest not in planned_src:
+            errors.append(f"dest exists: {p.dest} (from {p.src})")
+    return errors
+
+
+def add_alias(text: str, alias: str) -> str:
+    m = FM_BLOCK.match(text)
+    if not m:
+        return text
+    block = m.group(1)
+    if re.search(rf"(?m)^\s*-\s*{re.escape(alias)}\s*$", block) or re.search(
+        rf"aliases:\s*\[[^\]]*?\b{re.escape(alias)}\b", block
+    ):
+        return text
+    inline = FM_ALIASES_INLINE.search(block)
+    if inline:
+        inner = inline.group(1).strip()
+        new_inner = f"{inner}, {alias}" if inner else alias
+        new_block = FM_ALIASES_INLINE.sub(f"aliases: [{new_inner}]", block, count=1)
+    elif re.search(r"(?m)^aliases:\s*$", block):
+        new_block = re.sub(r"(?m)^aliases:\s*$", f"aliases:\n  - {alias}", block, count=1)
+    elif FM_TITLE.search(block):
+        new_block = FM_TITLE.sub(
+            lambda mo: mo.group(0) + f"\naliases:\n  - {alias}", block, count=1
+        )
+    else:
+        new_block = f"aliases:\n  - {alias}\n" + block
+    rest = text[m.end() :]
+    return "---\n" + new_block + "\n---\n" + rest.lstrip("\n")
+
+
+def redirect_stub(old_stem: str, new_stem: str, display: str, today: str) -> str:
+    return (
+        f"---\n"
+        f"title: {old_stem}\n"
+        f"redirects_to: \"[[{new_stem}|{display}]]\"\n"
+        f"category: entities\n"
+        f"tags: []\n"
+        f"sources: []\n"
+        f"created: {today}\n"
+        f"updated: {today}\n"
+        f"---\n\n"
+        f"# {old_stem}\n\n"
+        f"Redirect → [[{new_stem}|{display}]].\n"
+    )
+
+
+def rewrite_links(wiki: Path, stem_map: dict[str, str]) -> int:
+    """Rewrite path-qualified + safe bare-stem links whose target is an old stem."""
+    if not stem_map:
+        return 0
+    changed = 0
+    for path in sorted(wiki.rglob("*.md")):
+        try:
+            rel = path.relative_to(wiki)
+        except ValueError:
+            continue
+        if set(rel.parts) & SKIP_DIRS:
+            continue
+        text = path.read_text(encoding="utf-8")
+
+        def path_repl(m: re.Match[str]) -> str:
+            prefix, mid, seg, suffix = m.groups()
+            new_stem = stem_map.get(seg)
+            if not new_stem:
+                return m.group(0)
+            return f"{prefix}{mid}{new_stem}{suffix}"
+
+        def bare_repl(m: re.Match[str]) -> str:
+            bang, target, rest = m.groups()
+            # Safe: exact bare stem only (no path, no display-title guess).
+            if "/" in target:
+                return m.group(0)
+            new_stem = stem_map.get(target)
+            if not new_stem:
+                return m.group(0)
+            return f"{bang}[[{new_stem}{rest}]]"
+
+        new_text, n1 = PATH_LINK.subn(path_repl, text)
+        new_text, n2 = BARE_LINK.subn(bare_repl, new_text)
+        if n1 or n2:
+            path.write_text(new_text, encoding="utf-8")
+            changed += 1
+    return changed
+
+
+def apply_plans(wiki: Path, plans: list[Plan]) -> dict:
+    today = dt.date.today().isoformat()
+    stem_map = {p.stem: p.new_stem for p in plans}
+    applied = []
+    for p in plans:
+        src = wiki / p.src
+        dest = wiki / p.dest
+        text = add_alias(src.read_text(encoding="utf-8"), p.stem)
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(text, encoding="utf-8")
+        src.write_text(redirect_stub(p.stem, p.new_stem, p.title, today), encoding="utf-8")
+        applied.append(asdict(p))
+    link_files = rewrite_links(wiki, stem_map)
+    return {"applied": applied, "link_files_rewritten": link_files}
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--wiki", type=Path, default=None, help="wiki root (alias of --vault)")
+    parser.add_argument("--vault", type=Path, default=None, help="wiki root (alias of --wiki)")
+    parser.add_argument("--json", action="store_true")
+    mode = parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument("--dry-run", action="store_true")
+    mode.add_argument("--apply", action="store_true")
+    args = parser.parse_args(argv)
+
+    if args.wiki and args.vault and args.wiki != args.vault:
+        print("conflicting --wiki and --vault", file=sys.stderr)
+        return 2
+    wiki = args.wiki or args.vault or Path("wiki")
+    wiki = wiki.expanduser()
+    wiki = wiki.resolve() if wiki.is_absolute() else (Path.cwd() / wiki).resolve()
+    if not wiki.is_dir():
+        print(f"wiki not found: {wiki}", file=sys.stderr)
+        return 2
+
+    plans, skips = collect_plans(wiki)
+    errors = collision_errors(wiki, plans)
+    report: dict = {
+        "wiki": str(wiki),
+        "mode": "apply" if args.apply else "dry-run",
+        "would_change": len(plans),
+        "count": len(plans),
+        "plans": [asdict(p) for p in plans],
+        "skips": skips,
+        "errors": errors,
+        "gated": "Do not mass --apply on live vault until Nick greenlights.",
+    }
+
+    if args.apply:
+        if errors:
+            if args.json:
+                print(json.dumps(report, indent=2, sort_keys=True))
+            else:
+                print(f"remorph-page-filenames: {len(plans)} plans, ERRORS={len(errors)}")
+                for e in errors:
+                    print(f"  ! {e}")
+            return 1
+        report["apply_result"] = apply_plans(wiki, plans)
+
+    if args.json:
+        print(json.dumps(report, indent=2, sort_keys=True))
+    else:
+        print(f"remorph-page-filenames: {len(plans)} plans ({report['mode']})")
+        for p in plans[:50]:
+            print(f"  {p.src} → {p.dest} ({p.reason})")
+        if len(plans) > 50:
+            print(f"  … {len(plans) - 50} more")
+        for s in skips:
+            print(f"  skip: {s}")
+        for e in errors:
+            print(f"  ! {e}")
+        if args.apply:
+            print(f"  link_files_rewritten={report['apply_result']['link_files_rewritten']}")
+        print(report["gated"])
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

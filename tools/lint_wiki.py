@@ -35,7 +35,7 @@ HARD_KEYS = (
     "bad_lifecycle",
     "typed_relationships",
     "pc_identity_mismatch",
-    "spaced_basename",
+    "basename_has_spaces",
     "aruhe_prefix_basename",
     "illegal_basename",
     "duplicate_stems",
@@ -258,7 +258,6 @@ def pc_identity_mismatches(pages: dict[str, dict]) -> list[dict[str, object]]:
 
 
 ILLEGAL_BASENAME_CHARS = re.compile(r'[/\\:*?"<>|\x00-\x1f]')
-ARUHE_PREFIX = re.compile(r"^Aruhe\s*-\s*", re.I)
 SNAKE_OWNER_STEM = re.compile(r"^[a-z0-9]+(_[a-z0-9]+)+$")
 
 def illegal_basename_issues(stem: str) -> list[str]:
@@ -273,8 +272,8 @@ def illegal_basename_issues(stem: str) -> list[str]:
     return reasons
 
 
-def spaced_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
-    """HARD: any whitespace in live page Path.stem (kebab standard #80/#72)."""
+def basename_has_spaces(pages: dict[str, dict]) -> list[dict[str, object]]:
+    """HARD: any space in live page Path.stem (redirects/attachments skipped)."""
     out: list[dict[str, object]] = []
     for rel, item in pages.items():
         if item["fields"].get("redirects_to"):
@@ -288,7 +287,7 @@ def spaced_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
 
 
 def aruhe_prefix_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
-    """HARD: leading Aruhe - / Aruhe - / Aruhe- on live basenames/stems."""
+    """HARD: stem starts with legacy 'Aruhe -' / 'Aruhe - ' (case-sensitive)."""
     out: list[dict[str, object]] = []
     for rel, item in pages.items():
         if item["fields"].get("redirects_to"):
@@ -296,7 +295,8 @@ def aruhe_prefix_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
         if "attachments" in Path(rel).parts:
             continue
         stem = Path(rel).stem
-        if ARUHE_PREFIX.match(stem):
+        # AGENTS: leading `Aruhe - ` / `Aruhe -` (case-sensitive; optional space after hyphen)
+        if stem.startswith("Aruhe -"):
             out.append({"page": rel, "stem": stem})
     return out
 
@@ -393,7 +393,7 @@ def main() -> int:
             )
         )
     ]
-    findings["spaced_basename"] = spaced_basenames(pages)
+    findings["basename_has_spaces"] = basename_has_spaces(pages)
     findings["aruhe_prefix_basename"] = aruhe_prefix_basenames(pages)
     findings["illegal_basename"] = illegal_basenames(pages)
     findings["duplicate_stems"] = duplicate_stems(pages)
