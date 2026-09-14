@@ -1,9 +1,13 @@
 ---
-title: Hot Cache
 updated: 2026-09-13T23:40:00Z
 ---
 ## Recent Activity
 Filed live Foundry sheets for Delmar, Crissdalynn, Jean-Claude, and Perrin from the Shattered-Sea world.
+Optimized Session 11 beat 3, Torn Crossing hunt, for clearer escape procedure, route choices, and player-safe predator narration.
+Optimized Session 11 beat 8, Night Watch, for DM scan speed, player-safe scene framing, and a clear handoff into the theft climax.
+Optimized Session 11 beat 9, Theft on the Watch, for climax procedure, branch handling, and player-safe theft narration.
+Optimized Session 11 beat 5, Otter Hole, for DM rescue procedure, branch clarity, and player-safe basin narration.
+Optimized Session 11 beat 10, Aftermath, for resolution branch scan, player-safe closure narration, and a clean stop before the garden.
 Finished the staged GitHub inbox: every `_raw/` file was distilled, including the Session 11 plan, then each original was archived so the inbox is empty.
 Named the Sunken Crown rim around the Blue Hole and filed The Unplotted as an island-scale elder mimic that follows traffic rather than waiting like Corallith.
 ## Active Threads

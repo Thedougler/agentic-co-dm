@@ -5,6 +5,11 @@ title: Wiki Log
 # Wiki Log
 
 - [2026-09-13T23:40:00Z] UPDATE pages="entities/Delmar Fisk.md,entities/Crissdalynn Khinriss.md,entities/Jean-Claude Tabarnack.md,entities/Perrin Black-Jaw.md" mode="foundry" notes="Live Foundry sheets for four PCs from Shattered-Sea world"
+- [2026-09-13T23:40:00Z] UPDATE pages="journal/sessions/shattered-sea/11/Session-11-05-Otter-Hole.md" mode="copy" skills="copy-writer,theatre-of-the-mind,cliffhanger-beats" notes="Optimized DM-facing rescue procedure, branch scan, and player-safe basin narration"
+- [2026-09-13T23:40:00Z] UPDATE pages="journal/sessions/shattered-sea/11/Session-11-03-Wolfrabbits.md" mode="copy" skills="copy-writer,theatre-of-the-mind,cliffhanger-beats" notes="Optimized DM-facing hunt procedure, route scan, and player-safe crossing narration"
+- [2026-09-13T23:40:00Z] UPDATE pages="journal/sessions/shattered-sea/11/Session-11-10-Aftermath.md" mode="copy" skills="copy-writer,theatre-of-the-mind,resolution-beats" notes="Optimized DM-facing resolution procedure, branch scan, and player-safe aftermath narration"
+- [2026-09-13T23:40:00Z] UPDATE pages="journal/sessions/shattered-sea/11/Session-11-09-Theft-on-the-Watch.md" mode="copy" skills="copy-writer,theatre-of-the-mind,climax-beats" notes="Optimized DM-facing climax procedure, branch scan, and player-safe theft narration"
+- [2026-09-13T20:56:15Z] UPDATE pages="journal/sessions/shattered-sea/11/Session-11-08-Night-Watch.md" mode="copy" skills="copy-writer,theatre-of-the-mind,development-beats" notes="Optimized DM-facing scan, player-safe narration, and watch handoff without changing beat state"
 
 - [2026-09-12T03:37:27Z] INIT vault_path="/Users/nick/agentic-co-dm/wiki" categories=concepts,entities,skills,references,synthesis,journal
 - [2026-09-13T20:00:00Z] INGEST source="/workspace/midchain-ingest/group-a/monsters/Silence Moths.md" pages_updated=0 pages_created=1 mode=append

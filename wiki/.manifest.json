@@ -1,8 +1,8 @@
 {
   "version": 1,
   "stats": {
-    "total_sources_ingested": 709,
-    "total_pages": 700,
+    "total_sources_ingested": 807,
+    "total_pages": 703,
     "packet_ingest-raw-2026-09-13-gh-2": 515
   },
   "/Users/nick/agentic-co-dm/wiki/_raw/arc-blight-of-aruhe.md": {
@@ -354,6 +354,9 @@
       ]
     },
     "/Users/nick/agentic-co-dm/wiki/_raw/Session-11-10-Aftermath.md": {
+      "pages_updated": [
+        "journal/sessions/shattered-sea/11/Session-11-10-Aftermath.md"
+      ],
       "content_hash": "c0398188130b599dd2922f05f93a5a936e170dee925b1ce4eaad10983520aab0",
       "last_ingested": "2026-09-12T08:57:25.614553+00:00",
       "pages_produced": [
@@ -8224,5 +8227,6 @@
     "source_type": "document",
     "project": "shattered-sea",
     "packet": "ingest-raw-2026-09-13-gh-2"
-  }
+  },
+  "last_updated": "2026-09-13T21:48:40Z"
 }
