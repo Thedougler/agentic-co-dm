@@ -95,9 +95,9 @@ Check form: `**Wisdom (Perception) — \`DC 14\`**`. Never `**DC 15**` or `**DC 
 
 ## Page filenames (wiki `.md`)
 
-Owner and journal **page** files use the **title stem**: basename = frontmatter `title` + `.md` (spaces/apostrophes OK). Vault-wide unique stems. Not kebab/snake. Full rule: `wiki/AGENTS.md` § Page filenames.
+Owner and journal **page** files use a **space-free kebab slug** derived from `title` (FM `title` may keep human spaces). Strip legacy `Aruhe - ` on mint/rename. Recaps: `Session-<NN>-Recap.md`. Full rule: `wiki/AGENTS.md` § Page filenames (issue #80).
 
-Attachment images remain kebab `{subject-slug}-{role}.ext` below — different surface.
+Attachment images remain kebab `{subject-slug}-{role}.ext` below — same family of space-free names, different role enum.
 
 ## Attachment filenames (images)
 
