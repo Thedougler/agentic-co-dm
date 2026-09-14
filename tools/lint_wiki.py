@@ -38,6 +38,11 @@ HARD_KEYS = (
 TOKEN = re.compile(r"`([^`]+)`")
 RESERVED_FILES = {"AGENTS.md", "index.md", "log.md", "hot.md"}
 SKIP_DIRS = {".obsidian", "_archive", "_archives", "_raw", "_readouts", "_meta", "templates"}
+# Closed set: common ability/stat wikilinks are not HARD broken_links (no auto-pages).
+MECHANIC_LINK_ALLOWLIST = {
+    "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma",
+    "speed", "initiative", "proficiency", "condition",
+}
 
 
 def frontmatter(text: str) -> tuple[str | None, dict[str, str]]:
@@ -108,16 +113,28 @@ def load(vault: Path) -> tuple[dict[str, dict], dict[str, list[str]]]:
 
 
 def resolve(raw: str, pages: dict[str, dict], lookup: dict[str, list[str]]) -> list[str]:
-    key = normalize(raw)
-    candidates = list(lookup.get(key, []))
-    if "/" in key:
-        candidates.extend(lookup.get(Path(key).name, []))
-        candidates.extend(rel for rel in pages if normalize(rel) == key)
-    return sorted(set(candidates))
+    def candidates_for(value: str) -> list[str]:
+        key = normalize(value)
+        found = list(lookup.get(key, []))
+        if "/" in key:
+            found.extend(lookup.get(Path(key).name, []))
+            found.extend(rel for rel in pages if normalize(rel) == key)
+        return sorted(set(found))
+
+    candidates = candidates_for(raw)
+    if candidates:
+        return candidates
+    # Exact miss: retry once after stripping a leading English article.
+    stripped = re.sub(r"^(the|a|an)\s+", "", raw.strip(), count=1, flags=re.I)
+    if stripped and stripped != raw.strip():
+        return candidates_for(stripped)
+    return []
 
 
 def links(text: str) -> list[str]:
-    return [m.group(1).split("|", 1)[0].strip() for m in re.finditer(r"(?<!!)\[\[([^\]]+)\]\]", text)]
+    # Ignore wikilinks that appear only inside inline code spans.
+    scrubbed = TOKEN.sub(lambda m: " " * len(m.group(0)), text)
+    return [m.group(1).split("|", 1)[0].strip() for m in re.finditer(r"(?<!!)\[\[([^\]]+)\]\]", scrubbed)]
 
 
 def parse_args() -> argparse.Namespace:
@@ -158,7 +175,11 @@ def main() -> int:
 
     missing = {rel: [key for key in REQUIRED + CAMPAIGN_REQUIRED if key not in item["fields"]]
                for rel, item in pages.items()}
-    findings["missing_frontmatter"] = {rel: fields for rel, fields in missing.items() if fields}
+    findings["missing_frontmatter"] = {
+        rel: fields
+        for rel, fields in missing.items()
+        if fields and not pages[rel]["fields"].get("redirects_to")
+    }
     findings["missing_summary"] = [rel for rel, item in pages.items() if not item["fields"].get("summary")]
     findings["long_summary"] = [{"page": rel, "chars": len(item["fields"]["summary"])} for rel, item in pages.items() if len(item["fields"].get("summary", "")) > 200]
     findings["bad_lifecycle"] = [{"page": rel, "value": item["fields"].get("lifecycle")} for rel, item in pages.items() if item["fields"].get("lifecycle") and item["fields"]["lifecycle"].strip("\"'") not in lifecycles]
@@ -184,13 +205,17 @@ def main() -> int:
     broken: list[dict[str, object]] = []
     incoming = collections.Counter()
     edges: list[tuple[str, str]] = []
-    for rel, text in documents.items():
-        for raw in links(text):
+    for rel, body in documents.items():
+        reserved_page = Path(rel).name in RESERVED_FILES
+        for raw in links(body):
+            if normalize(raw) in MECHANIC_LINK_ALLOWLIST:
+                continue
             targets = resolve(raw, pages, lookup)
             if len(targets) == 1:
                 incoming[targets[0]] += 1
                 edges.append((rel, targets[0]))
-            elif not targets:
+            elif not targets and not reserved_page:
+                # Skip HARD broken_links from reserved non-content (AGENTS/index/log/hot).
                 broken.append({"page": rel, "target": raw})
     findings["broken_links"] = broken
     findings["orphan_pages"] = [rel for rel in pages if incoming[rel] == 0]
