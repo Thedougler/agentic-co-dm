@@ -23,124 +23,192 @@ base_confidence: 0.37
 lifecycle: proposed
 lifecycle_changed: "2026-09-12"
 tier: supporting
-created: 2026-09-12T00:00:00Z
-updated: 2026-09-13T23:40:00Z
+created: 2026-09-12
+updated: 2026-09-14
 type: pc
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
 status: alive
-role: PC
-location: Uncertainty
 player: Chad
+class_levels: "Ranger 5 (Gloom Stalker)"
+level: 5
+ac: 16
+hp_max: 51
+init_mod: 7
+pp: 16
+speed: "25 ft. walk; climb equal to walk"
 foundry_id: kS3wQ76uMq1QgDCw
-relationships:
-  - target: "[[Grung clans]]"
-    type: related_to
-  - target: "[[Simone]]"
-    type: related_to
-  - target: "[[Botukuri]]"
-    type: related_to
-  - target: "[[Grung - Authority Seal]]"
-    type: related_to
 ---
-
 # Jean-Claude Tabarnack
 
-Party member. Chad plays him. Foundry actor name: Jean Claude Tabarnack.
+> [!narration] Narration
+> Electric-blue skin marked by black patches on a small, scarred, three-foot frame. Ranger gear, a red beret, and a false moustache he calls Corto di Velo. Wary eyes. What you see is what he is.
 
-Jean-Claude Tabarnack came from the [[Botukuri]] farming clan and carries blue social signals, while his red beret is read through the censure attached to Twiceborn status. His sister [[Simone]] still holds the Sorn garrison and hunts him.
+## At a Glance
 
-## Foundry sheet
+| **Role**          | PC |
+| ----------------- | -- |
+| **Class / Level** | Ranger 5 (Gloom Stalker) |
+| **Player**        | Chad |
+| **Also called**   | Jean Claude |
+| **Home ship**     | [[Uncertainty]] |
 
-Live snapshot from Foundry world Shattered-Sea on 2026-09-13. Actor `kS3wQ76uMq1QgDCw`. Shattered Sea Grung Ranger 5, Gloom Stalker, Guide. Proficiency Bonus `+3`. Hit Point Die `d10`. Current HP **51/51**.
-
-| Field | Value |
-| --- | --- |
-| **AC** | `16` (studded leather) |
-| **Speed** | Walk `25` ft. Climb equal to walk. Long Jump `25` ft., High Jump `15` ft. with or without a run. Must submerge 1 hour every 24 hours or gain Exhaustion. |
-| **Darkvision** | `60` ft. from Umbral Sight. While entirely in Darkness, he is **invisible** to creatures that rely on Darkvision to see him. |
-| **Spell save / attack** | Wisdom. DC `14`. Attack `+6`. Slots L1 `4/4`, L2 `2/2`. |
-
-| Ability | Score | Mod | Save |
-| --- | --- | --- | --- |
-| Strength | 12 | `+1` | `+4` |
-| Dexterity | 19 | `+4` | `+7` |
-| Constitution | 14 | `+2` | `+2` |
-| Intelligence | 11 | `+0` | `+0` |
-| Wisdom | 16 | `+3` | `+3` |
-| Charisma | 8 | `-1` | `-1` |
-
-Saves: Strength and Dexterity.
-
-| Skill | Bonus | Training |
-| --- | --- | --- |
-| Animal Handling | `+6` | proficient |
-| Athletics | `+4` | proficient |
-| Insight | `+6` | proficient |
-| Perception | `+6` | proficient |
-| Stealth | `+10` | expertise |
-| Survival | `+6` | proficient |
-
-Untrained: Acrobatics `+4`, Arcana `+0`, Deception `-1`, History `+0`, Intimidation `-1`, Investigation `+0`, Medicine `+3`, Nature `+0`, Performance `-1`, Persuasion `-1`, Religion `+0`, Sleight of Hand `+4`.
-
-Tools: Cartographer's Tools, Poisoner's Kit from Poisonous Skin.
-
-### Features in play
-
-- **Poisonous Skin.** Immunity to Poison damage and the **poisoned** condition. Bonus Action coats one melee weapon or up to five pieces of ammunition, Proficiency Bonus times per Long Rest.
-- **Sticky Tongue.** `10` ft. reach. Bonus Action Snatch an unattended object of his size or smaller. Lash can replace an attack.
-- **Arboreal / Aquatic Nature / Standing Leap.** Climb speed, air and water breathing with the soak requirement, fixed jump distances.
-- **Extra Attack.** Attack twice.
-- **Archery.** `+2` to attack rolls with Ranged weapons.
-- **Bracers of Archery.** Longbow and Shortbow proficiency, `+2` damage with those weapons.
-- **Dread Ambusher.** First turn of combat, Speed `+10` ft. Initiative adds Wisdom (`+3`). Once per turn on a weapon hit, extra Psychic damage Wisdom-modifier times (`3`) per Long Rest.
-- **Favored Enemy.** *Hunter's Mark* always prepared; cast twice without a slot per Long Rest.
-- **Gloom Stalker Spells.** Always prepared: *Disguise Self*, *Rope Trick*.
-- **Magic Initiate (Druid).** Cantrips *Druidcraft* and *Mending*. Level 1 *Jump* always prepared on the sheet.
-
-### Spells on the sheet
-
-DDB dumped the full Ranger list. Only these are prepared or always prepared:
-
-| Spell | Level | State |
-| --- | --- | --- |
-| Druidcraft | 0 | always |
-| Mending | 0 | always |
-| Cure Wounds | 1 | prepared |
-| Disguise Self | 1 | always (Gloom Stalker) |
-| Ensnaring Strike | 1 | prepared |
-| Hunter's Mark | 1 | always |
-| Jump | 1 | always (three copies on the sheet) |
-| Cordon of Arrows | 2 | prepared |
-| Pass without Trace | 2 | prepared |
-| Rope Trick | 2 | always (Gloom Stalker) |
-| Spike Growth | 2 | prepared |
-
-### Equipped and carried
-
-Attuned: Bracers of Archery, Cloak of Elvenkind. Eyes of the Eagle do not list attunement and are equipped.
-
-| Item | State |
-| --- | --- |
-| Studded leather | equipped |
-| Shortbow (Vex) | equipped |
-| Shortsword (Vex) | equipped |
-| Scimitar (Nick) | unequipped |
-| Unarmed Strike | equipped |
-| Bracers of Archery | equipped, attuned |
-| Cloak of Elvenkind | equipped, attuned; Perception to notice him has Disadvantage; he has Advantage on Stealth |
-| Eyes of the Eagle | equipped; Advantage on sight-based Perception |
-| Backpack, quiver | equipped |
-| Arrows | `20` equipped plus `20` carried |
-| [[Grung - Authority Seal]] | carried, not worn, attunement required |
-| Cartographer's Tools, bedrolls `2`, tent, sprig of mistletoe, traveler's clothes, oil `2`, rations `10`, rope, tinderbox, torches `10`, waterskin | carried |
+> **DM thesis:** Darkness ambush striker and ceiling scout. Concentration is the heel. Slavery or abuse snaps calm into violence.
 
 ## Connections
 
-| Relationship | Meaning |
-| --- | --- |
-| [[Simone]] | Sister who still hunts him from the Sorn garrison. |
-| [[Botukuri]] · [[Grung clans]] · [[Twiceborn]] | Origin, caste color, and censure. |
-| [[Grung - Authority Seal]] | One spent seal is on his sheet. |
-| [[Uncertainty]] | Aboard at [[Aruhe - Hungry Isle]]. |
+- [[Simone]] — Sister who still hunts him from the Sorn garrison.
+- [[Botukuri]] · [[Grung clans]] · [[Twiceborn]] — Origin, blue caste signals, and censure read through the red beret.
+- [[Grung - Authority Seal]] — One spent seal is on his sheet.
+- [[Uncertainty]] — Aboard at [[Aruhe - Hungry Isle]].
+- [[Crissdalynn Khinriss]] — Ally; crow Aarakocra who tests his bird phobia most directly.
+- [[Perrin Black-Jaw]] · [[Delmar Fisk]] — Crew allies.
+
+## Sheet
+
+Live Foundry snapshot from world Shattered-Sea on 2026-09-13. Actor `kS3wQ76uMq1QgDCw` (Jean Claude Tabarnack). Shattered Sea Grung Ranger 5, Gloom Stalker, Guide. Proficiency Bonus +3. Hit Point Die d10. Current HP **51/51**. Vault title stays Jean-Claude Tabarnack; table display prefers Jean Claude.
+
+| Ability | Score | Mod | Save |
+| ------- | ----- | --- | ---- |
+| STR     | 12    | +1  | +4   |
+| DEX     | 19    | +4  | +7   |
+| CON     | 14    | +2  | +2   |
+| INT     | 11    | +0  | +0   |
+| WIS     | 16    | +3  | +3   |
+| CHA     | 8     | -1  | -1   |
+
+**Skills.** Animal Handling +6 (proficient), Athletics +4 (proficient), Insight +6 (proficient), Perception +6 (proficient), Stealth +10 (expertise), Survival +6 (proficient). Untrained: Acrobatics +4, Arcana +0, Deception -1, History +0, Intimidation -1, Investigation +0, Medicine +3, Nature +0, Performance -1, Persuasion -1, Religion +0, Sleight of Hand +4. Tools: Cartographer's Tools, Poisoner's Kit from Poisonous Skin. Saves: Strength and Dexterity. Spell save DC 14. Spell attack +6.
+
+| Combat skim | Value |
+| ----------- | ----- |
+| AC          | 16 (studded leather) |
+| HP max      | 51 |
+| Init        | +7 (Dexterity +4 plus Wisdom +3 from Dread Ambusher) |
+| PP          | 16 |
+| Speed       | Walk 25 ft. Climb equal to walk. Long Jump 25 ft, High Jump 15 ft with or without a run. Must submerge 1 hour every 24 hours or gain Exhaustion. |
+| Darkvision  | 60 ft from Umbral Sight. While entirely in Darkness, invisible to creatures that rely on Darkvision to see him. |
+
+## Combat Profile
+
+### Fast Read
+
+Ranged ambush striker and darkness scout · AC 16 · HP 51 · poison-immune · Achilles heel is Concentration; bright light and open ground strip the ambush edge.
+
+### Counters & Synergy
+
+- **Hard counters.** Bright light, open ground, blindsight, and tremorsense.
+- **Soft counters.** Sustained damage that breaks Concentration; social combat.
+- **Amplifies / Depends on.** Dim light or darkness for peak output. Allies holding the front line while he opens from above.
+
+## Abilities
+
+### Traits
+
+| Trait | Effect |
+| ----- | ------ |
+| Poisonous Skin | Immunity to Poison damage and the poisoned condition. Bonus Action coats one melee weapon or up to five pieces of ammunition, Proficiency Bonus times per Long Rest. |
+| Sticky Tongue | 10 ft reach. Bonus Action Snatch an unattended object of his size or smaller. Lash can replace an attack. |
+| Arboreal / Aquatic Nature / Standing Leap | Climb speed; air and water breathing with the soak requirement; fixed jump distances. |
+
+### Features
+
+| Feature | Source | Effect | Uses | Recovery |
+| ------- | ------ | ------ | ---- | -------- |
+| Extra Attack | Ranger | Attack twice. | — | — |
+| Archery | Fighting Style | +2 to attack rolls with Ranged weapons. | — | — |
+| Bracers of Archery | Item | Longbow and Shortbow proficiency, +2 damage with those weapons. | — | — |
+| Dread Ambusher | Gloom Stalker | First turn of combat, Speed +10 ft. Initiative adds Wisdom (+3). Once per turn on a weapon hit, extra Psychic damage Wisdom-modifier times (3) per Long Rest. | 3 Psychic riders | Long Rest |
+| Favored Enemy | Ranger | *Hunter's Mark* always prepared; cast twice without a slot per Long Rest. | 2 free casts | Long Rest |
+| Gloom Stalker Spells | Gloom Stalker | Always prepared: *Disguise Self*, *Rope Trick*. | — | — |
+| Magic Initiate (Druid) | Feat | Cantrips *Druidcraft* and *Mending*. Level 1 *Jump* always prepared on the sheet. | — | — |
+| Umbral Sight | Gloom Stalker | Darkvision 60 ft; invisible in Darkness to Darkvision-reliant creatures. | — | — |
+
+### Actions
+
+| Action | To-Hit / DC | Damage / Effect | Uses | Notes |
+| ------ | ----------- | --------------- | ---- | ----- |
+| Shortbow (Vex) | Archery + Bracers | Ranged | — | Equipped |
+| Shortsword (Vex) | — | Melee | — | Equipped |
+| Scimitar (Nick) | — | Melee | — | Unequipped |
+
+### Bonus Actions
+
+| Bonus Action | Trigger / Cost | Effect | Uses | Recovery |
+| ------------ | -------------- | ------ | ---- | -------- |
+| Poisonous Skin coat | — | Coat melee weapon or up to five pieces of ammunition | PB / Long Rest | Long Rest |
+| Sticky Tongue Snatch | — | Snatch unattended object within 10 ft | — | — |
+| Hunter's Mark | Slot or free cast | Mark prey | slots / 2 free | Long Rest (free) |
+
+### Feats
+
+| Feat | Source | Effect |
+| ---- | ------ | ------ |
+| Magic Initiate (Druid) | — | Druidcraft, Mending, Jump |
+
+## Spells
+
+### Spellcasting
+
+Wisdom. Save DC 14. Attack +6. Slots L1 4/4, L2 2/2. DDB dumped the full Ranger list; only prepared or always-prepared spells are kept here.
+
+### Cantrips
+
+| Cantrip | Notes |
+| ------- | ----- |
+| Druidcraft | Always (Magic Initiate) |
+| Mending | Always (Magic Initiate) |
+
+### Prepared
+
+| Spell | Level | Notes |
+| ----- | ----- | ----- |
+| Cure Wounds | 1 | Prepared |
+| Disguise Self | 1 | Always (Gloom Stalker) |
+| Ensnaring Strike | 1 | Prepared |
+| Hunter's Mark | 1 | Always |
+| Jump | 1 | Always (Magic Initiate; three copies on the sheet) |
+| Cordon of Arrows | 2 | Prepared |
+| Pass without Trace | 2 | Prepared |
+| Rope Trick | 2 | Always (Gloom Stalker) |
+| Spike Growth | 2 | Prepared |
+
+### Slots
+
+| Level | Slots |
+| ----- | ----- |
+| 1st   | 4 |
+| 2nd   | 2 |
+
+## Inventory
+
+### Attuned
+
+| Item | Notes |
+| ---- | ----- |
+| Bracers of Archery | Equipped |
+| Cloak of Elvenkind | Equipped; Perception to notice him has Disadvantage; he has Advantage on Stealth |
+
+### Carried
+
+| Item | Qty | Notes |
+| ---- | --- | ----- |
+| Studded leather | 1 | Equipped |
+| Shortbow (Vex) | 1 | Equipped |
+| Shortsword (Vex) | 1 | Equipped |
+| Scimitar (Nick) | 1 | Unequipped |
+| Eyes of the Eagle | 1 | Equipped; Advantage on sight-based Perception; no attunement listed |
+| Backpack, quiver | 1 | Equipped |
+| Arrows | 40 | 20 equipped plus 20 carried |
+| [[Grung - Authority Seal]] | 1 | Carried, not worn, attunement required |
+| Cartographer's Tools, bedrolls, tent, sprig of mistletoe, traveler's clothes, oil, rations, rope, tinderbox, torches, waterskin | — | Bedrolls 2, oil 2, rations 10, torches 10 |
+
+## Session Log
+
+| Session | Encounter | Note |
+| ------- | --------- | ---- |
+| 04 | Sewers | Invisible with Perrin; crew delivery after Crissdalynn's dive-seize. Kyzil heard a voucher for him. |
+
+## Voice
+
+Reads first, then acts — unless slavery or abuse is in view, then instinct takes the wheel. Cannot lie or mask intention under the Mortis curse already on the sheet. Birds are a genetic terror; he and Crissdalyn have never once discussed it.

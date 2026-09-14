@@ -13,7 +13,7 @@ sources:
   - "wiki/_archive/va-scripts/catarina-davirelli-voice-script.md"
   - "wiki/_archive/galleries/catarina-davirelli-gallery.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-14
 type: pc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
@@ -195,7 +195,11 @@ A long utility list (Identify, Alarm, Cure Wounds, Detect Magic, and the rest of
 
 ### Currency
 
-112 gp, 90 sp, 23 ep.
+| Coin | Amount |
+| ---- | ------ |
+| gp   | 112 |
+| sp   | 90 |
+| ep   | 23 |
 
 ## Session Log
 
@@ -203,8 +207,6 @@ A long utility list (Identify, Alarm, Cure Wounds, Detect Magic, and the rest of
 | ------- | --------- | ---- |
 | 07 | Otar | In the thing's mouth when Delmar finished it. Lent the bag for the chair |
 | 08 | [[La Cenere]] | Bought the wild pearl |
-
-Combat-profile source still says no numeric combat log of her own.
 
 ## Voice
 
