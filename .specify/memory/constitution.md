@@ -1,6 +1,6 @@
 <!--
 Sync Impact Report
-- Version change: 1.17.0 → 2.0.0
+- Version change: 2.0.0 → 2.0.1
 - Modified principles:
   - IX Design Trends Toward Token Efficiency (quality bar: no craft cuts)
   - X Agents Act Autonomously By Default (branch only at specify)
@@ -10,7 +10,7 @@ Sync Impact Report
 - Added sections: none
 - Removed sections: none
 - Other modified sections:
-  - Agent Operating Constraints (IX quality bar, XV, XVI)
+  - Agent Operating Constraints (opus only for skills, agent instructions, templates)
   - Development Workflow (review checks for IX/XV/XVI)
   - Governance (compliance bullets for IX/XV/XVI; branch only at specify)
 - Follow-up TODOs: none
@@ -353,12 +353,15 @@ agent writing at the table.
   Default Opus output is worthless for language work (issue #3). Up to
   two Claude Code instances MAY run concurrently only when the agents
   involved have no other task to complete; they MUST NOT modify the same
-  canonical artifact concurrently. Use that writer only for novel skill
-  design, skill redesign, or a major skill-file change (issue #4). Session
-  agents complete smaller edits to established files, Spec Kit pattern
-  tweaks, and `AGENTS.md`. A Claude Code usage limit defers only that
-  Claude-dependent task on the feature `tasks.md` with a retry time;
-  remaining independent work continues. Completing other or new work while
+  canonical artifact concurrently. Use that writer only for making skills,
+  writing agent instructions, or writing wiki templates. MUST NOT invoke
+  Claude Code opus for campaign wiki pages, session-prep, TotM, recap,
+  constitution, specs, code, tests, or filling a page from a template.
+  Using a skill is not dispatch. Session agents complete smaller edits to
+  established files and Spec Kit pattern tweaks. A Claude Code usage limit
+  defers only that Claude-dependent task on the feature `tasks.md` with a
+  retry time; remaining independent work continues. Completing other or new
+  work while
   waiting MUST carry those deferred tasks forward still incomplete; they
   MUST NOT be dropped, closed, or omitted. If every remaining open task is
   blocked by that usage limit, no other work can be done, and the retry time
@@ -473,4 +476,4 @@ Compliance:
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 2.0.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-14
+**Version**: 2.0.1 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-14

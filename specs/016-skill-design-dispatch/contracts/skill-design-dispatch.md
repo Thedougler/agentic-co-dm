@@ -4,7 +4,7 @@ The interface is an instruction edit. The session agent classifies before write.
 
 ## Gate
 
-Design-impact if the change would alter skill triggering, workflow ownership, standing load, or would create a skill or subagent. Length does not decide. Borderline of those four is design-impact.
+Design-impact if the change would alter skill triggering, workflow ownership, standing load, or would create a skill or subagent. Length does not decide. Borderline of those four is `not` (session agent). Claude Code opus is ONLY for making skills, writing agent instructions, or writing wiki templates. Campaign wiki pages, session content, constitution, specs, code, and filling a page from a template are out of this routing.
 
 | Class | Writer |
 |---|---|

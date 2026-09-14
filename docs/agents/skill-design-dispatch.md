@@ -4,15 +4,27 @@ Follow after the `AGENTS.md` gate classifies an in-scope instruction edit. Class
 
 ## Non-design
 
-Class `not`: complete the edit in this session. Do not park. Includes smaller edits to established files, Spec Kit pattern tweaks, and `AGENTS.md`.
+Class `not`: complete the edit in this session. Do not park. Includes
+smaller edits to established files and Spec Kit pattern tweaks. Borderline
+is `not`. Using a skill to write wiki or session content is `not`.
 
-Mixed request: split. Session agent completes non-design in this session. Design-impact follows Dispatch, Unavailability, or Usage-limit wait.
+MUST NOT invoke Claude Code opus except to make a skill, write agent
+instructions, or write a wiki template. Campaign wiki pages, session-prep,
+TotM, recap, constitution, specs, code, tests, and filling a page from a
+template stay with the session agent.
 
-Done: non-design edits are on disk in this session; no `Parked skill design:` issue for them.
+Mixed request: split. Session agent completes non-design in this session.
+Design-impact follows Dispatch, Unavailability, or Usage-limit wait.
+
+Done: non-design edits are on disk in this session; no `Parked skill design:`
+issue for them.
 
 ## Dispatch
 
-Class `design-impact` and no owner overrule — novel skill, skill redesign, or major skill-file change only. Conserve Claude Code; skip dispatch when the session agent can land a small established-file edit.
+Class `design-impact` and no owner overrule — novel skill, skill redesign,
+major skill-file change, new subagent, new or rewritten agent-instruction
+file, or new or rewritten wiki template only. Conserve Claude Code; skip
+dispatch when the session agent can land a small established-file edit.
 
 1. Write a scoped prompt. Keep it minimal, focused, and direct. Name deliverables and completion criteria. No extra standing context.
    - **Outcome** — what must be true when done

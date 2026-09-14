@@ -148,9 +148,19 @@ Unknown typed-beat job → classify the type first; do not default to `session-b
 
 ## Skill design dispatch
 
-Classify before any in-scope instruction file changes. Class is `design-impact` | `not`. Length MUST NOT be the gate.
+Classify before changing an in-scope file. Class is `design-impact` | `not`.
+Length MUST NOT be the gate. Borderline is `not`.
 
-Design-impact if the change is a novel skill, a skill redesign, or a major skill-file change. Creating a new skill or subagent is design-impact. Smaller edits to established files, Spec Kit pattern tweaks, and `AGENTS.md` are class `not`. Conserve Claude Code; use it only when necessary.
+Claude Code opus (`claude -p --model claude-opus-4-6 --effort medium`) is
+ONLY for making skills, writing agent instructions, or writing wiki
+templates. MUST NOT invoke it for campaign wiki pages, session-prep, TotM,
+recap, constitution, specs, code, tests, or filling a page from a template.
+Using a skill is not dispatch.
+
+Design-impact: novel skill, skill redesign, major skill-file change, new
+subagent, new or rewritten agent-instruction file, new or rewritten wiki
+template. Smaller edits to established files and Spec Kit pattern tweaks
+are `not`. Conserve Claude Code.
 
 | Class | Writer |
 |---|---|
@@ -158,10 +168,15 @@ Design-impact if the change is a novel skill, a skill redesign, or a major skill
 | `not` | session agent |
 | owner explicitly skips dispatch | session agent |
 
-Writer is designated writer if design-impact (unless owner overrule), else session agent. Overrule is explicit owner skip only; silence is not overrule.
+Writer is designated writer if design-impact (unless owner overrule), else
+session agent. Overrule is explicit owner skip only; silence is not overrule.
 
-In-scope: source skill; standing instruction / sticky rule; subagent definition; writing-for-agents.
-Out-of-scope: constitution; feature specs; generated Spec Kit adapters; campaign wiki.
+In-scope files: skills (`.agents/skills/`, `.omp/skills/`); agent
+instructions (`AGENTS.md`, `.omp/AGENTS.md`, `.omp/RULES.md`,
+`.omp/agents/`, `docs/agents/`, writing-for-agents); wiki templates
+(`wiki/templates/`).
+Out-of-scope: constitution; feature specs; generated Spec Kit adapters;
+campaign wiki pages; session content.
 
 Design-impact work: `docs/agents/skill-design-dispatch.md`.
 
