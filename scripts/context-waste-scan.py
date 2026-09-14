@@ -4,6 +4,10 @@
 Per docs/agents/context-waste-method.md §4. Detector only — no body dumps,
 no prose scoring, soft gate (exit 0 on scan success).
 
+S3 (skill bytes) and S4 (page lines) are investigation leads for
+redundancy/conflict/infra — not mandates to shorten or delete craft,
+narrative, or mechanics. No HARD size gates.
+
 Usage:
   python3 scripts/context-waste-scan.py
   python3 scripts/context-waste-scan.py --vault wiki --skills .agents/skills
@@ -22,10 +26,10 @@ from typing import Any
 
 VERSION = 1
 
-# S3: oversized skill (~24KB)
+# S3: oversized skill lead (~24KB) — investigate, do not shorten-for-bytes
 SKILL_BYTES_SOFT = 24 * 1024
 
-# S4: oversized page (lines)
+# S4: oversized page lead (lines) — look for infra redundancy, not craft cuts
 ENTITY_LINES_SOFT = 250
 ENTITY_LINES_SOFT_PLUS = 400
 SESSION_PREP_LINES_SOFT = 220
@@ -187,7 +191,11 @@ def scan_skill_s3(path: Path, nbytes: int) -> dict[str, Any] | None:
         "signal": "S3_oversized_skill",
         "severity": "soft",
         "path": path.as_posix(),
-        "metric": {"bytes": nbytes, "threshold": SKILL_BYTES_SOFT},
+        "metric": {
+            "bytes": nbytes,
+            "threshold": SKILL_BYTES_SOFT,
+            "lead": "investigate_redundancy_conflict_not_shorten",
+        },
     }
 
 
@@ -215,6 +223,7 @@ def scan_page(
             "type": ptype or None,
             "threshold": threshold,
             "bucket": bucket,
+            "lead": "investigate_infra_redundancy_not_craft_cuts",
         }
         if bucket == "entity" and lines > ENTITY_LINES_SOFT_PLUS:
             metric["soft_plus"] = True
@@ -307,7 +316,12 @@ def emit_text(hits: list[dict[str, Any]]) -> None:
 
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
-        description="Scan skills + vault for structural context-waste signals (path+metric JSON)."
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=(
+            "S3/S4 size hits are investigation leads (redundancy/conflict/infra), "
+            "not shorten mandates. No HARD size gates."
+        ),
     )
     p.add_argument(
         "root",
