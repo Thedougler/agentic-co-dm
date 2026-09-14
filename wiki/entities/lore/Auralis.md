@@ -5,17 +5,18 @@ tags: [shattered-sea]
 sources:
   - "wiki/_raw/Grung clans.md"
   - "campaign-os:auralis.md"
+  - "wiki/_raw/auralis-reference.png (visual reference sheet, 2026-09-14)"
 summary: Public Grung mandate and name associated with a serene gold presence whose exact nature remains unknown.
 provenance:
-  extracted: 1.0
-  inferred: 0.0
-  ambiguous: 0.0
-base_confidence: 0.37
+  extracted: 0.82
+  inferred: 0.14
+  ambiguous: 0.04
+base_confidence: 0.68
 lifecycle: proposed
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T00:00:00Z
-updated: 2026-09-13
+updated: 2026-09-14T00:00:00Z
 type: lore
 reveal: unrevealed
 campaign: shattered-sea
@@ -29,12 +30,15 @@ relationships:
 
 # Auralis
 
-# Auralis
 
 **Wants:** to keep the [[Elemental Plane of Water]] sealed behind [[Drowned Maw]]'s fissure, wards that nearly failed once already. He's reaching through an unwitting bond now to use [[Perrin Black-Jaw|Perrin]] as a hand topside.
 
 > [!narration] Narration
-> Crushing cold, flattening pressure. A stone floor worn smooth by nothing that ever walked it runs into black water. Pale lights drift above like stars, in place of any face or body, the last threads of a two-thousand-year-old machine. A voice arrives with no mouth, unhurried, the pace of something that calls a century *not long*. The lights pulse once and drift on.
+> An elegant figure about eight feet tall stands beneath a blue-gray hood, its silver-gold faceplate carved with fine filigree and two blue-white lights burning where eyes should be. A long, embroidered cloak hangs over articulated armor, and a staff carries a bright blue orb like a captured star. Gold thread, aged brass, and dark charcoal metal break the cold blue glow; the voice arrives without a visible mouth, unhurried as something that calls a century not long.
+
+## Visual reference
+
+The reference sheet labels Auralis an arcane automaton with a scholar role and a height of about `210 cm`. The silhouette is tall and elegant, with a hooded blue-gray cloak over articulated silver-gold and aged-brass armor. The face is a sculpted metal mask with blue-white luminous eyes; ornate filigree, an embroidered gold-trimmed hem, and a circular chest medallion carry the design's sacred-machine character. A staff supports a bright blue, glass- or crystal-like energy orb, echoed by the glow in the eyes and chest core. The palette is silver-gold metal, aged brass, blue-gray fabric, bright blue light, gold embroidery, and charcoal shadow materials. The sheet shows relaxed, confident, walking, seated, staff-bearing, orb-interacting, and dynamic poses. The older contact description on this page presents only pale lights without a visible body; the reference sheet supplies a newer embodied visual anchor, but whether every manifestation uses that form remains unresolved. ^[inferred] ^[ambiguous]
 
 ## Connections
 
@@ -52,3 +56,6 @@ relationships:
 ## Session Log
 
 **Session 03.** Contacted Perrin Black-Jaw in an abyss vision during a night watch: attention, the hunt through a [[Whip Shark]]/whale's body, and the word "Grow." Full beat-script: [[Session 03: before the First Impact]].
+
+## Art
+![[attachments/auralis-reference.png|Auralis visual reference sheet]]

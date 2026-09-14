@@ -11,3 +11,4 @@
 {"cause": "lint-obsidian-markdown and lint-literal-newlines were first called with positional paths; rerun requires --path", "cause_fixed": false, "id": "e-9", "sitting": "prep: Session 11 Beat 4 copy pass", "status": "open"}
 {"cause": "full wiki hard lint reports repository-wide 1509 broken links and one missing frontmatter page; Beat 4 scoped lints pass", "cause_fixed": false, "id": "e-10", "sitting": "prep: Session 11 Beat 4 copy pass", "status": "open"}
 {"cause": "QMD encoded entity path lookup failed; use the hyphenated docid path returned by qmd search", "cause_fixed": false, "id": "e-11", "sitting": "prep: Session 11 beat 5 copy", "status": "open"}
+{"cause": "manifest upsert and cache-update timed out while recording the Spiguar reference image", "cause_fixed": false, "id": "e-12", "sitting": "ingest: reference images", "status": "open"}

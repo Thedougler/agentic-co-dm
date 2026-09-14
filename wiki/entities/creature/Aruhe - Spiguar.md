@@ -4,17 +4,18 @@ category: entities
 tags: [shattered-sea, creature, aruhe, grasslands]
 sources:
   - "house (rough draft and image concept 2026-09-08)"
+  - "wiki/_raw/spiguar-reference.png (visual reference sheet, 2026-09-14)"
 summary: CR 11 solitary grassland ambusher that pounces isolated prey, drags it into cover, and loses its edge in open terrain.
 provenance:
-  extracted: 0.96
-  inferred: 0.04
+  extracted: 0.87
+  inferred: 0.13
   ambiguous: 0.0
-base_confidence: 0.4
+base_confidence: 0.53
 lifecycle: proposed
 lifecycle_changed: 2026-09-12
 tier: supporting
 created: 2026-09-12T10:10:00Z
-updated: 2026-09-12T10:10:00Z
+updated: 2026-09-14T00:00:00Z
 type: creature
 reveal: unrevealed
 campaign: shattered-sea
@@ -33,7 +34,7 @@ relationships:
 # Aruhe - Spiguar
 
 > [!narration] Narration
-> A low spotted cat shape slides through the gold grass, almost invisible beneath a mat of reeds, creepers, and wet green leaves. Its saber teeth show first, pale against a dark muzzle, then the whole heavy body drops flatter than a hunting leopard should be able to move. The grass barely whispers until it breaks open at once and the weight of the thing arrives before the roar does.
+> A low, spotted cat shape slides through the gold grass, almost invisible beneath a mat of reeds, creepers, and wet green leaves. Amber eyes watch from above a dark muzzle, and ivory saber teeth show before the heavy body drops flatter than a hunting leopard should be able to move. The grass barely whispers until it breaks open at once and the weight of the thing arrives before the roar does.
 
 ## Statblock
 ![[attachments/shattered-sea/creatures/spiguar-of-aruhe-token.jpg|Spiguar of Aruhe Foundry VTT token]]
@@ -81,6 +82,10 @@ bonus_actions:
     desc: "The spiguar takes the Hide action."
 ```
 
+## Visual reference
+
+The reference sheet depicts a heavy, leopard-like cat with a broad head, long tail, large paws, and long ivory saber teeth. Its fur is golden brown with dark rosettes; amber-gold eyes and a dark nose and muzzle are its strongest facial marks. A dense camouflage mantle of fresh leaves, dry grass, vines, and plant fibers covers its back and shoulders, breaking up the silhouette while leaving the spotted face, legs, paws, and banded tail visible. The palette is muted jungle green, dry grass brown, golden fur, dark shadow accents, and ivory fangs and claws. The sheet shows the same body held low in relaxed, prowling, walking, stalking, and scenting poses; its default silhouette is powerful and close to the ground. ^[inferred]
+
 ## Behavior
 
 - **Habitat.** Spiguars dominate the hottest open cuts of [[Aruhe - Grasslands]], especially long channels where shaded banks and eight-foot grass force travelers to choose between cover and clear sight. They favor low rises, game trails, river bends, and the line where grass gives way to the darker jungle rim.
@@ -98,4 +103,5 @@ bonus_actions:
 
 ## Art
 ![[attachments/shattered-sea/creatures/spiguar-of-aruhe.jpg|Spiguar of Aruhe]]
+![[attachments/spiguar-reference.png|Spiguar visual reference sheet]]
 ![[attachments/shattered-sea/creatures/spiguar-of-aruhe-token-stand.jpg|Spiguar of Aruhe token stand]]

@@ -1,8 +1,8 @@
 {
   "version": 1,
   "stats": {
-    "total_sources_ingested": 807,
-    "total_pages": 703,
+    "total_sources_ingested": 808,
+    "total_pages": 704,
     "packet_ingest-raw-2026-09-13-gh-2": 515
   },
   "/Users/nick/agentic-co-dm/wiki/_raw/arc-blight-of-aruhe.md": {
@@ -1216,6 +1216,22 @@
       "last_ingested": "2026-09-13T06:54:18.571468+00:00",
       "pages_produced": [
         "entities/Uncertainty.md"
+      ]
+    },
+    "_raw/spiguar-reference.png": {
+      "content_hash": "sha256:41e17c168d41f3e47cbe19ee5876cca0f540050e49775c5b43c50b7ca3cc0311",
+      "last_ingested": "2026-09-14T20:31:29.632811+00:00",
+      "pages_produced": [
+        "entities/creature/Aruhe - Spiguar.md"
+      ],
+      "source_type": "image",
+      "project": "shattered-sea"
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/auralis-reference.png": {
+      "content_hash": "3a43cfdfd5d444efa27b5701fd8d0caf90ce6226272a74979c2798d62127ee2d",
+      "last_ingested": "2026-09-14T20:31:16.161924+00:00",
+      "pages_produced": [
+        "entities/lore/Auralis.md"
       ]
     }
   },

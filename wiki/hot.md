@@ -1,25 +1,18 @@
 ---
-updated: 2026-09-13T23:40:00Z
+updated: 2026-09-14T00:00:00Z
 ---
 ## Recent Activity
-Filed live Foundry sheets for Delmar, Crissdalynn, Jean-Claude, and Perrin from the Shattered-Sea world.
-Optimized Session 11 beat 3, Torn Crossing hunt, for clearer escape procedure, route choices, and player-safe predator narration.
-Optimized Session 11 beat 8, Night Watch, for DM scan speed, player-safe scene framing, and a clear handoff into the theft climax.
-Optimized Session 11 beat 9, Theft on the Watch, for climax procedure, branch handling, and player-safe theft narration.
-Optimized Session 11 beat 5, Otter Hole, for DM rescue procedure, branch clarity, and player-safe basin narration.
-Optimized Session 11 beat 10, Aftermath, for resolution branch scan, player-safe closure narration, and a clean stop before the garden.
-Finished the staged GitHub inbox: every `_raw/` file was distilled, including the Session 11 plan, then each original was archived so the inbox is empty.
-Named the Sunken Crown rim around the Blue Hole and filed The Unplotted as an island-scale elder mimic that follows traffic rather than waiting like Corallith.
+Updated [[Aruhe - Spiguar]] from a visual reference sheet: golden-brown rosettes, amber eyes, ivory saber teeth, and a dense leaf-and-grass camouflage mantle now anchor the creature's appearance.
+Updated [[Auralis]] from a visual reference sheet: an eight-foot hooded arcane automaton with silver-gold filigree armor, blue-white eyes and core, blue-gray embroidered cloak, and luminous orb staff.
+Filed both reference sheets as durable wiki attachments and recorded their source provenance.
 ## Active Threads
 - Aruhe expedition pressure (Blight/Hinewai, wreck rescue, Taking law) now backed by COS situation and creature sheets on entity pages.
-- Crown privateer corridor (Barnaby Rook, Surety, Tidefall) enriched from COS NPC drops.
+- Auralis's unresolved public-divine and Antheri-machine layers remain linked to Perrin's unwitting patron bond and the Drowned Maw fissure.
 - PC chassis (Catarina, Crissdalynn, Delmar, Jean-Claude, Perrin) gained abilities/spells/inventory/voice merges from satellite folders.
-
 ## Key Takeaways
-- `_raw/` is empty except `.gitkeep`. Archives preserve relative paths under `wiki/_archive/`.
-- Draft/pending COS fiction filed as `lifecycle: proposed`; accepted/canon live pages were not demoted.
-- Deer-Stalker retargets left on live ecology pages; Deer-Stalker entity remains the owner sheet.
-
+- `_raw/` now contains the two named visual reference sources; their durable copies live under `wiki/attachments/`.
+- Visual reference sheets add appearance anchors without changing Spiguar's mechanics or Auralis's unresolved identity layers.
+- Draft/pending COS fiction remains `lifecycle: proposed`; accepted/canon live pages were not demoted.
 ## Flagged Contradictions
 - Some plural/alias creature dumps (Wolfrabbits, Whip Shark, Grinning Apes) merged onto existing owner pages rather than kept as competing notes.
 - Situation pages filed as `type: quest` when they carried expedition/pressure structure; DM may retarget kind later.
