@@ -15,8 +15,11 @@ Flat image store for the campaign vault.
 | `overview` | Establishing/wide; TotM “where you are” |
 | `reference` | Props/details/still for TotM grounding |
 | `handout` | Player-facing table asset (letter, sketch, clue); not battlemap/portrait |
+| `teaser` | Cinematic scene still; player-shareable mood/hype; not battlemap/portrait/diegetic handout |
 
-**TotM/spoken:** portrait, overview, reference, handout (± banner mood).  
+Distinctions: `overview` = establishing/layout; `teaser` = cinematic scene still for share/hype; `handout` = diegetic table prop.
+
+**TotM/spoken:** portrait, overview, reference, handout, teaser (± banner mood).  
 **Foundry-only:** token, battlemap.
 
 ## Rules
