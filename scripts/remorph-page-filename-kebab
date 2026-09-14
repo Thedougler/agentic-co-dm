@@ -3,16 +3,19 @@
 
 Slug from frontmatter title (strip legacy Aruhe - prefix; lowercase kebab).
 Journal recaps → Session-<NN>-Recap.md. Rewrites path-qualified wikilinks/embeds,
-leaves redirects_to stub at old basename, adds old stem as alias on the live page.
+leaves redirects_to stub at old basename, adds old stem as alias on the live page;
+rewrites path-qualified and safe bare-stem wikilinks.
 
 Skip: _archive/_raw/templates/_meta/attachments/reserved; redirects_to stubs.
 GATED: do not mass --apply on the live vault until Nick greenlights.
 Prove --apply only on a temp vault copy.
 
 Usage (repo root):
-  ./scripts/remorph-page-filename-kebab --dry-run [--wiki wiki]
-  ./scripts/remorph-page-filename-kebab --apply [--wiki wiki]
+  ./scripts/remorph-page-filename-kebab --dry-run [--wiki wiki|--vault wiki]
+  ./scripts/remorph-page-filename-kebab --apply [--wiki wiki|--vault wiki]
   ./scripts/remorph-page-filename-kebab --dry-run --json
+
+GATED — no live mass apply until Nick greenlights.
 """
 from __future__ import annotations
 
@@ -55,6 +58,7 @@ PATH_LINK = re.compile(
     r"([^\]|#/]+?)"
     r"((?:\.md)?(?:#[^\]|]*)?(?:\|[^\]]*)?\]\])"
 )
+BARE_LINK = re.compile(r"(!?)\[\[([^\]|#]+)((?:#[^\]|]*)?(?:\|[^\]]*)?)\]\]")
 
 
 @dataclass
@@ -239,7 +243,7 @@ def redirect_stub(old_stem: str, new_stem: str, display: str, today: str) -> str
 
 
 def rewrite_links(wiki: Path, stem_map: dict[str, str]) -> int:
-    """Rewrite path-qualified links whose final path segment is an old stem."""
+    """Rewrite path-qualified + safe bare-stem links whose target is an old stem."""
     if not stem_map:
         return 0
     changed = 0
@@ -259,8 +263,19 @@ def rewrite_links(wiki: Path, stem_map: dict[str, str]) -> int:
                 return m.group(0)
             return f"{prefix}{mid}{new_stem}{suffix}"
 
+        def bare_repl(m: re.Match[str]) -> str:
+            bang, target, rest = m.groups()
+            # Safe: exact bare stem only (no path, no display-title guess).
+            if "/" in target:
+                return m.group(0)
+            new_stem = stem_map.get(target)
+            if not new_stem:
+                return m.group(0)
+            return f"{bang}[[{new_stem}{rest}]]"
+
         new_text, n1 = PATH_LINK.subn(path_repl, text)
-        if n1:
+        new_text, n2 = BARE_LINK.subn(bare_repl, new_text)
+        if n1 or n2:
             path.write_text(new_text, encoding="utf-8")
             changed += 1
     return changed
@@ -284,14 +299,19 @@ def apply_plans(wiki: Path, plans: list[Plan]) -> dict:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--wiki", type=Path, default=Path("wiki"))
+    parser.add_argument("--wiki", type=Path, default=None, help="wiki root (alias of --vault)")
+    parser.add_argument("--vault", type=Path, default=None, help="wiki root (alias of --wiki)")
     parser.add_argument("--json", action="store_true")
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument("--dry-run", action="store_true")
     mode.add_argument("--apply", action="store_true")
     args = parser.parse_args(argv)
 
-    wiki = args.wiki.expanduser()
+    if args.wiki and args.vault and args.wiki != args.vault:
+        print("conflicting --wiki and --vault", file=sys.stderr)
+        return 2
+    wiki = args.wiki or args.vault or Path("wiki")
+    wiki = wiki.expanduser()
     wiki = wiki.resolve() if wiki.is_absolute() else (Path.cwd() / wiki).resolve()
     if not wiki.is_dir():
         print(f"wiki not found: {wiki}", file=sys.stderr)
