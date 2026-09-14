@@ -79,7 +79,7 @@ qmd status
 
 If QMD is not initialized or its collections are stale, run `./scripts/qmd-maintain.sh` before `qmd status`.
 
-`wiki-maintain` Layer A includes objective token totals via `scripts/token-count.py`. A noisy vault (HARD lint) is expected during migration — quiet keep-ahead only when Layer A is clean.
+`wiki-maintain` A3 runs `scripts/token-count.py` when present (it is on main); soft-skips only if the CLI is absent. A noisy vault (HARD lint) is expected during migration — quiet keep-ahead only when Layer A is clean.
 
 ## Working with the project
 
