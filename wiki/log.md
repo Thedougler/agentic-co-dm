@@ -665,3 +665,4 @@ title: Wiki Log
 - [2026-09-14T20:46:15Z] TAG_NORMALIZE tags_renamed=882 pages_modified=638 new_tags_added=85 policy=canonical_campaign_and_type_tags
 - [2026-09-14T21:00:00Z] GRAPH_COLORIZE mode=by-tag groups=10 backup=graph.json.backup-20260914-2100
 - 2026-09-14: Drop spaced `entities/place/La Vasca.md` redirect stub (Nick: no spaced stubs; aliases on `la-vasca.md`). Keep owner + aliases.
+- [2026-09-14T21:37:37Z] INGEST batch=batch-aruhe-pilot-2026-09-14 mode=staging pages_created=3 pages_updated=13 status=complete dest=_staging/place/{hungry-isle,aruhe-caves,aruhe-beach}.md + _staging/{place,region,item,creature,npc}/*.patch.md note="dump remorph after_sim≪0.75; Young Bloodhawk/Cotter Foss patch kebab owners; aruhe-beach thin vs western-landing; do not demote aruhe.md"
