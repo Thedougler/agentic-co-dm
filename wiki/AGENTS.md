@@ -84,7 +84,7 @@ Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<ses
 
 ## Shared grammar
 
-Cross-kind DM-usability rules for templates and filed pages: frontmatter core, shared Title Case headings (`At a Glance`, `At the Table`, `Connections`, `Secrets`, `Provenance`, `Art`), callout surfaces, omit-empty, and no synonym headings for the same job. Full text: `wiki/templates/00-shared-grammar.md`.
+Cross-kind DM-usability rules for templates and filed pages: frontmatter core, shared Title Case headings (`At a Glance`, `At the Table`, `Connections`, `Secrets`, `Provenance`, `Art`), callout surfaces, omit-empty, and no synonym headings for the same job. Full text: `wiki/templates/00-shared-grammar.md`. Image assets: flat `wiki/attachments/{subject-slug}-{role}.{ext}` with roles `banner`\|`portrait`\|`token`\|`battlemap`\|`overview`\|`reference`\|`handout` (see shared grammar Attachment filenames).
 
 When a shared job appears, use the shared heading name. Kind-specific job blocks keep their own names. `Relationships` is not a Connections synonym — use `## Connections`. Recap/session/run spoken surfaces use only `[!narration]`; owner pages may add `[!mechanic]` / `[!secret]`.
 

@@ -79,4 +79,4 @@ Where it came from, contested ownership chains, and open questions. Facts only â
 
 ## Art
 
-<!-- Extra embeds only. Omit Art when unused. -->
+<!-- Art embeds: wiki/attachments/{subject-slug}-{role}.ext â€” roles: banner|portrait|token|battlemap|overview|reference|handout. Flat folder; omit Art when unused. -->
