@@ -42,19 +42,42 @@ REQUIRED_FRONTMATTER = (
     "speed",
 )
 SPINE = (
-    "At a Glance",
-    "Connections",
-    "Sheet",
-    "Combat Profile",
-    "Abilities",
+    "Identity",
+    "Combat Stats",
+    "Ability Scores",
+    "Skills",
+    "Actions",
     "Spells",
     "Inventory",
+    "Features",
+    "Connections",
     "Session Log",
     "Art",
 )
-ABILITY_HEADINGS = ("Traits", "Features", "Actions", "Bonus Actions", "Reactions", "Feats")
-SPELL_HEADINGS = ("Spellcasting", "Cantrips", "Prepared or Known", "Slots or Casting Resources")
-INVENTORY_HEADINGS = ("Attuned", "Carried", "Stowed", "Currency")
+REQUIRED_H2 = (
+    "Identity",
+    "Combat Stats",
+    "Ability Scores",
+    "Skills",
+    "Actions",
+    "Inventory",
+    "Features",
+)
+FORBIDDEN_H2 = (
+    "Voice",
+    "At a Glance",
+    "Sheet",
+    "Combat Profile",
+    "Abilities",
+)
+HEADER_PAIR = ("Identity", "Combat Stats")
+ABILITY_PAIR = ("Ability Scores", "Skills")
+ACTION_SUBHEADINGS = ("Attacks", "Actions", "Bonus Actions", "Reactions")
+FEATURE_SUBHEADINGS = ("Traits", "Class Features", "Feats")
+SPELL_SUBHEADINGS = ("Spellcasting", "Cantrips", "Prepared or Known", "Slots or Casting Resources")
+INVENTORY_SUBHEADINGS = ("Attuned", "Carried", "Stowed", "Currency")
+FENCE_OPEN = re.compile(r"^(?P<ticks>`{3,})(?P<info>\S.*)?\s*$")
+FENCE_CLOSE = re.compile(r"^(`{3,})\s*$")
 
 
 def fail(message: str, errors: list[str]) -> None:
@@ -82,41 +105,139 @@ def headings(text: str, level: int) -> list[str]:
     return [line[len(prefix) :].strip() for line in body_without_comments(text).splitlines() if line.startswith(prefix)]
 
 
-def section(text: str, heading: str) -> str:
+def section(text: str, heading: str, level: int = 2) -> str:
     body = body_without_comments(text)
-    match = re.search(rf"^## {re.escape(heading)}\s*$", body, re.MULTILINE)
+    marks = "#" * level
+    match = re.search(rf"^{marks} {re.escape(heading)}\s*$", body, re.MULTILINE)
     if not match:
         return ""
     tail = body[match.end() :]
-    next_heading = re.search(r"^## ", tail, re.MULTILINE)
+    next_heading = re.search(rf"^{marks} ", tail, re.MULTILINE)
     return tail[: next_heading.start() if next_heading else len(tail)]
+
+
+def nonempty_body(text: str) -> bool:
+    stripped = text.strip()
+    if not stripped:
+        return False
+    rows = [line for line in stripped.splitlines() if line.strip().startswith("|") and not re.match(r"^\|\s*-+", line.strip())]
+    if rows and all(re.match(r"^\|(?:\s*\|)+\s*$", row.replace("---", "").replace(":", "")) or re.search(r"\|\s+\|", row) and not re.search(r"\|\s*\S", row[row.find("|") + 1 :]) for row in rows[1:] or rows):
+        data_rows = rows[1:] if len(rows) > 1 else []
+        if data_rows and all(not re.search(r"[A-Za-z0-9\[\]]", row) for row in data_rows):
+            return False
+    return True
+
+
+def parse_fences(text: str) -> list[tuple[int, str, str]]:
+    """Return (tick_count, info, inner) for each fence, outermost first via nested scan."""
+    lines = text.splitlines()
+    found: list[tuple[int, str, str]] = []
+
+    def walk(start: int, end: int, min_close: int) -> int:
+        i = start
+        while i < end:
+            open_match = FENCE_OPEN.match(lines[i] or "")
+            if not open_match or FENCE_CLOSE.match(lines[i] or "") and not (open_match.group("info") or "").strip():
+                i += 1
+                continue
+            info = (open_match.group("info") or "").strip()
+            ticks = len(open_match.group("ticks"))
+            if ticks < min_close:
+                i += 1
+                continue
+            j = i + 1
+            close_at = None
+            while j < end:
+                close_match = FENCE_CLOSE.match(lines[j] or "")
+                if close_match and len(close_match.group(1)) >= ticks:
+                    close_at = j
+                    break
+                j += 1
+            if close_at is None:
+                found.append((ticks, info, "\n".join(lines[i + 1 : end])))
+                return end
+            inner = "\n".join(lines[i + 1 : close_at])
+            found.append((ticks, info, inner))
+            walk(i + 1, close_at, ticks + 1)
+            i = close_at + 1
+        return i
+
+    walk(0, len(lines), 3)
+    return found
+
+
+def col_parents(text: str) -> list[tuple[int, str]]:
+    return [(ticks, inner) for ticks, info, inner in parse_fences(text) if info.split()[0] == "col" if info]
+
+
+def col_children(inner: str) -> list[tuple[int, str]]:
+    return [(ticks, body) for ticks, info, body in parse_fences(inner) if info.split()[0] == "col-md" if info]
+
+
+def child_h2(body: str) -> list[str]:
+    return [line[3:].strip() for line in body.splitlines() if line.startswith("## ")]
 
 
 def validate_columns(text: str, label: str, errors: list[str]) -> None:
     body = body_without_comments(text)
     if "[!col]" in body:
         fail(f"{label}: uses prohibited [!col] syntax", errors)
-    lines = body.splitlines()
-    parent_opens = [i for i, line in enumerate(lines) if line == "```col"]
-    parent_closes = [i for i, line in enumerate(lines) if line == "```" and i > 0 and lines[i - 1] != "```col-md"]
-    child_opens = [i for i, line in enumerate(lines) if line == "```col-md"]
-    child_closes = [i for i, line in enumerate(lines) if line == "```" and i > 0 and lines[i - 1] != "```col"]
-    if len(parent_opens) != 2:
-        fail(f"{label}: expected two parent col fences, found {len(parent_opens)}", errors)
-    if len(child_opens) != 4:
-        fail(f"{label}: expected four child col-md fences, found {len(child_opens)}", errors)
-    if "```col-md\n## At a Glance" not in body or "```col-md\n## Connections" not in body:
-        fail(f"{label}: identity headings are not inside child columns", errors)
-    if "```col-md\n## Sheet" not in body or "```col-md\n## Combat Profile" not in body:
-        fail(f"{label}: mechanical headings are not inside child columns", errors)
-    for open_index in parent_opens:
-        close_index = next((i for i in range(open_index + 1, len(lines)) if lines[i] == "```"), None)
-        if close_index is None:
-            fail(f"{label}: unterminated parent col fence", errors)
+    parents = col_parents(body)
+    if len(parents) < 2:
+        fail(f"{label}: expected two parent col fences, found {len(parents)}", errors)
+        return
+    pair_headings: list[set[str]] = []
+    for parent_ticks, inner in parents:
+        children = col_children(inner)
+        if len(children) != 2:
+            fail(f"{label}: parent col fence lacks two nested col-md fences", errors)
             continue
-        child_text = "\n".join(lines[open_index + 1 : close_index])
-        if "```col-md" not in child_text:
-            fail(f"{label}: parent col fence lacks nested col-md fences", errors)
+        names: set[str] = set()
+        for child_ticks, child_body in children:
+            if parent_ticks <= child_ticks:
+                fail(f"{label}: parent col fence is not longer than child col-md fences", errors)
+            names.update(child_h2(child_body))
+        pair_headings.append(names)
+    required_pairs = [set(HEADER_PAIR), set(ABILITY_PAIR)]
+    for required in required_pairs:
+        if required not in pair_headings:
+            fail(f"{label}: missing nested pair {sorted(required)}", errors)
+    first_parent_at = body.find("````col")
+    narration_at = body.find("> [!narration] Narration")
+    if first_parent_at != -1 and narration_at != -1 and narration_at > first_parent_at:
+        fail(f"{label}: Narration callout is inside column fences", errors)
+
+
+def validate_spine(text: str, label: str, errors: list[str], *, title: str, template: bool) -> None:
+    h2 = headings(text, 2)
+    for forbidden in FORBIDDEN_H2:
+        if forbidden in h2:
+            fail(f"{label}: contains obsolete {forbidden} heading", errors)
+    present = [name for name in h2 if name in SPINE]
+    expected = [name for name in SPINE if name in h2]
+    if present != expected:
+        fail(f"{label}: D&D Beyond spine order is {present}", errors)
+    for name in REQUIRED_H2:
+        if name not in h2:
+            fail(f"{label}: missing required heading {name}", errors)
+    if title == "Delmar Fisk" and "Spells" in h2:
+        fail(f"{label}: non-caster retains Spells section", errors)
+    if not template:
+        for name in ("Spells", "Connections", "Session Log", "Art"):
+            if name in h2 and not nonempty_body(section(text, name)):
+                fail(f"{label}: empty optional section {name}", errors)
+        for heading, subs in (
+            ("Actions", ACTION_SUBHEADINGS),
+            ("Features", FEATURE_SUBHEADINGS),
+            ("Spells", SPELL_SUBHEADINGS),
+            ("Inventory", INVENTORY_SUBHEADINGS),
+        ):
+            if heading not in h2:
+                continue
+            body = section(text, heading)
+            for sub in subs:
+                if re.search(rf"^### {re.escape(sub)}\s*$", body, re.MULTILINE) and not nonempty_body(section(body, sub, 3)):
+                    fail(f"{label}: empty optional subsection {sub}", errors)
 
 
 def validate_page(path: Path, errors: list[str], template: bool = False) -> None:
@@ -137,32 +258,24 @@ def validate_page(path: Path, errors: list[str], template: bool = False) -> None
         fail(f"{label}: expected exactly one H1", errors)
     if "> [!narration] Narration" not in clean:
         fail(f"{label}: missing player-safe Narration callout", errors)
-    if re.search(r"^## Voice\s*$", clean, re.MULTILINE) or re.search(r"^# .*Voice", clean, re.MULTILINE):
-        fail(f"{label}: contains obsolete Voice heading", errors)
+    if re.search(r"DM thesis", clean, re.IGNORECASE):
+        fail(f"{label}: contains required DM thesis", errors)
     if "\\n" in clean:
         fail(f"{label}: contains literal escaped newline", errors)
+    validate_spine(text, label, errors, title=data.get("title", ""), template=template)
+    validate_columns(text, label, errors)
     if not template:
-        validate_columns(text, label, errors)
-        if "## At a Glance" not in clean or "**DM thesis:**" not in clean:
-            fail(f"{label}: missing At a Glance thesis", errors)
-        if "**Player**" not in clean or "**Class / Level**" not in clean:
+        identity = section(text, "Identity")
+        combat = section(text, "Combat Stats")
+        if "Player" not in identity or "Class" not in identity:
             fail(f"{label}: missing player or class identity", errors)
-        if "## Sheet" not in clean or "| Ability | Score | Mod | Save |" not in clean:
-            fail(f"{label}: missing canonical Sheet table", errors)
-        if "| Combat skim | Value |" not in clean:
-            fail(f"{label}: missing canonical combat skim", errors)
-        for heading in ("Abilities", "Inventory"):
-            if not section(text, heading).strip():
-                fail(f"{label}: empty required section {heading}", errors)
-        if "## Spells" not in clean and data.get("title") != "Delmar Fisk":
-            fail(f"{label}: missing Spells despite castable-resource owner", errors)
-        if "## Spells" in clean and data.get("title") == "Delmar Fisk":
-            fail(f"{label}: non-caster retains Spells section", errors)
+        for needle in ("AC", "HP", "Initiative"):
+            if needle not in combat:
+                fail(f"{label}: Combat Stats missing {needle}", errors)
+        if "| Ability | Score | Mod | Save |" not in clean:
+            fail(f"{label}: missing Ability Scores table", errors)
         if "|         |" in clean or "|      |" in clean:
             fail(f"{label}: contains an empty placeholder row", errors)
-        for optional_heading in ("Connections", "Combat Profile", "Session Log", "Art"):
-            if f"## {optional_heading}" in clean and not section(text, optional_heading).strip():
-                fail(f"{label}: empty optional section {optional_heading}", errors)
         owner_slug = re.sub(r"[^a-z0-9-]", "", data.get("title", "").lower().replace(" ", "-").replace("'", ""))
         if owner_slug and f"wiki/_archive/{owner_slug}.md" not in text:
             fail(f"{label}: source lineage does not name the owner archive", errors)
