@@ -40,8 +40,9 @@ SKIP_DIRS = {
 }
 RESERVED = {"AGENTS.md", "index.md", "log.md", "hot.md"}
 ARUHE_PREFIX = re.compile(r"^Aruhe\s*-\s*", re.I)
-# Leading sort-prefix only (not mid-stem Session-N-00-Title beat forms)
-ZERO_PREFIX = re.compile(r"^00(?:\s+|-)")
+# Leading sort-prefix only (not mid-stem Session-N-00-Title beat forms).
+# Forms: 00- / 00_ / 00<space> / bare 00 before a letter (AGENTS § Page filenames).
+ZERO_PREFIX = re.compile(r"^00(?:[-_\s]+|(?=[A-Za-z]))")
 # Spaced or hyphenated Session NN Recap → canonical Session-NN-Recap
 SESSION_RECAP = re.compile(r"^Session[\s_-]+(\d+)[\s_-]+Recap$", re.I)
 # Session-N-BB-Label / Session N - … plan/beat forms
@@ -94,6 +95,7 @@ def page_slug_from_title(title: str) -> str:
     """wiki/AGENTS.md § Page filenames slug function."""
     s = (title or "").strip()
     s = ARUHE_PREFIX.sub("", s, count=1).strip()
+    s = ZERO_PREFIX.sub("", s, count=1).strip()
     s = re.sub(r"\s+", "-", s)
     s = s.replace("'", "").replace("\u2019", "")
     s = re.sub(r"[^A-Za-z0-9-]", "", s)
@@ -146,7 +148,7 @@ def target_stem(stem: str, title: str, fields: dict[str, str]) -> tuple[str, str
     has_aruhe = bool(ARUHE_PREFIX.match(stem))
     has_space = " " in stem
 
-    # Leading 00 / 00- : strip sort-prefix only; remainder kept as-is
+    # Leading 00 / 00- / 00_ : strip sort-prefix only; remainder kept as-is
     # (archive may keep spaces; templates 00-foo → foo). Further kebab of
     # spaced remainder on live pages is a separate spaces pass / later apply.
     if has_zero:
