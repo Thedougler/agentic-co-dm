@@ -29,6 +29,7 @@ do not create a second live facet page. Preserve source lineage, aliases, links,
 unknowns, and [verify] markers. Omit an optional section or empty subsection.
 The player controls this PC. Narration is player-safe; the DM thesis and mechanics
 stay outside it. Exact numbers live in Sheet; frontmatter only mirrors key values.
+Escape alias pipes as \| inside Markdown table cells so wikilinks remain valid.
 -->
 
 # {{title}}
@@ -36,7 +37,7 @@ stay outside it. Exact numbers live in Sheet; frontmatter only mirrors key value
 > [!narration] Narration
 > Write a complete-sentence, sensory look that is safe to read aloud. Do not include secrets, DCs, unearned names, or the DM thesis.
 
-```col
+````col
 ```col-md
 ## At a Glance
 
@@ -55,11 +56,11 @@ stay outside it. Exact numbers live in Sheet; frontmatter only mirrors key value
 | --- | --- |
 | [[named-owner]] | State what this relationship changes at the table. |
 
-Use named owner links. Omit this section when there are no named ties.
+Use named owner links. Escape alias pipes as `\|` inside table cells. Omit this section when there are no named ties.
 ```
-```
+````
 
-```col
+````col
 ```col-md
 ## Sheet
 
@@ -98,7 +99,7 @@ State how the PC operates, what exact Sheet or Abilities rows matter, and the ma
 
 Omit this section only when no useful profile exists. Do not repeat Sheet numbers as a second authority.
 ```
-```
+````
 
 ## Abilities
 

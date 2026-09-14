@@ -17,7 +17,7 @@ description: "Task list for the PC Page Redesign feature"
 
 **Purpose**: Establish the feature-local validation entrypoint without adding a new dependency or database.
 
-- [ ] T001 Create the argument-free feature checker entrypoint in `specs/020-pc-page-redesign/fixtures/check.py`, using Python 3 and text/JSON-compatible exit behavior.
+- [X] T001 Create the argument-free feature checker entrypoint in `specs/020-pc-page-redesign/fixtures/check.py`, using Python 3 and text/JSON-compatible exit behavior.
 
 ---
 
@@ -41,9 +41,9 @@ description: "Task list for the PC Page Redesign feature"
 
 ### Implementation for User Story 1
 
-- [ ] T003 [P] [US1] Redesign the canonical PC scaffold in `wiki/templates/pc.md` with the required frontmatter, one-H1 spine, player-safe `Narration`, `At a Glance`, `Connections`, `Sheet`, `Combat Profile`, `Abilities`, conditional `Spells`, `Inventory`, conditional `Session Log`, and conditional `Art` sections.
-- [ ] T004 [US1] Encode the paired identity and mechanical scan surfaces in `wiki/templates/pc.md` with nested `col`/`col-md` fences, narration outside fences, headings inside child fences, readable linear fallback tables, and one canonical home for exact numbers.
-- [ ] T005 [US1] Make the template’s ability, spell, inventory, session, and art scaffolds omit empty subsections and preserve multiclass pools, resource recovery, owner links, unknowns, and conflict markers in `wiki/templates/pc.md`.
+- [X] T003 [P] [US1] Redesign the canonical PC scaffold in `wiki/templates/pc.md` with the required frontmatter, one-H1 spine, player-safe `Narration`, `At a Glance`, `Connections`, `Sheet`, `Combat Profile`, `Abilities`, conditional `Spells`, `Inventory`, conditional `Session Log`, and conditional `Art` sections.
+- [X] T004 [US1] Encode the paired identity and mechanical scan surfaces in `wiki/templates/pc.md` with nested `col`/`col-md` fences, narration outside fences, headings inside child fences, readable linear fallback tables, and one canonical home for exact numbers.
+- [X] T005 [US1] Make the template’s ability, spell, inventory, session, and art scaffolds omit empty subsections and preserve multiclass pools, resource recovery, owner links, unknowns, and conflict markers in `wiki/templates/pc.md`.
 
 **Checkpoint**: A new PC copied from `wiki/templates/pc.md` has a single predictable reference surface and can be checked by `specs/020-pc-page-redesign/fixtures/check.py` without relying on visual placement.
 
