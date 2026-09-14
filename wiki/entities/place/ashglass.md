@@ -1,10 +1,14 @@
 ---
-title: Ashglass
+title: "Ashglass"
+aliases:
+  - Ashglass
+  - Ash Caldera
 category: entities
 tags: [shattered-sea, place]
 sources:
   - "aleksander-malone.md"
   - "ash-caldera-dragon.md"
+  - "wiki/_archive/ash-caldera-dragon.md"
 summary: Dead volcanic island in the eastern Midchain whose crater holds a young red dragon and a slag hoard.
 provenance:
   extracted: 0.85
@@ -15,7 +19,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T20:20:00Z
-updated: 2026-09-13T20:35:00Z
+updated: 2026-09-14
 type: place
 reveal: unrevealed
 campaign: shattered-sea
@@ -26,6 +30,10 @@ relationships:
   - target: "[[Midchain]]"
     type: related_to
   - target: "[[Blackrule]]"
+    type: related_to
+  - target: "[[ash-caldera-dragon]]"
+    type: related_to
+  - target: "[[midchain-east]]"
     type: related_to
 ---
 # Ashglass
@@ -59,3 +67,4 @@ The rumor is a side pull for a party that can walk away. The source builds it as
 ## Where
 
 Eastern [[Midchain]], not overlapping [[Blackrule]].
+

@@ -2,6 +2,8 @@
 title: "Drowned Maw"
 aliases:
   - Drowned Maw
+  - The Drowned Maw
+  - Maw
 category: entities
 tags: ["shattered-sea", "place"]
 sources: ["the-drowned-maw.md", "the-drowned-maw-narration-appearance.md", "Drowned Maw.md", "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md"]
@@ -15,7 +17,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T03:00:00Z
-updated: 2026-09-13T07:45:00Z
+updated: 2026-09-14
 type: place
 reveal: unrevealed
 campaign: shattered-sea
