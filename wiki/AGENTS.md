@@ -23,7 +23,10 @@ Campaign pages also require:
 | `reveal` | `unrevealed` \| `revealed` |
 | `kind` | On `type: session-prep`: `hook` \| `development` \| `cliffhanger` \| `climax` \| `resolution` \| `session-plan`. City pages stay `type: place` `kind: city`. |
 
-Do not invent `type` values. Category is the llm-wiki folder (`entities/`, `journal/`, …). `type` is the campaign kind.
+Do not invent `type` values. Category is the top-level llm-wiki folder (`entities/`, `journal/`, …). `type` is the campaign kind — not a second category value (`category` stays `entities`, never `npc`).
+
+**Entities path (depth 1):** live owner pages file at `wiki/entities/{type}/{Title}.md` using frontmatter `type` only (npc, pc, place, faction, item, creature, vehicle, spell, lore, quest, region, work). No deeper nests. No rarity/facet/synonym folders (`monster`, `inventory`, `rare`, …). Session-prep / session / recap stay under `wiki/journal/…`, not `entities/`. Redirect stubs with a typed target sit beside that type; typeless stubs may use `wiki/entities/_redirects/` only.
+
 Redirect stubs with `redirects_to` omit campaign required fields (`sources`/`type`/`lifecycle`/`reveal`) from wiki-lint HARD `missing_frontmatter`.
 Map early sample labels on file: `location`→`place`, `monster`→`creature`. Player characters use `type: pc` (not `npc` with a pc tag). World-truth notes use `type: lore`. Actual items stay `item`. Campaign situation pages use `type: quest`.
 `lifecycle` defaults to `proposed` until the DM accepts. `visibility` defaults to `dm` and is distinct from `reveal`. `summary` is one sentence a DM can read in a list. Omit unused identity keys.
