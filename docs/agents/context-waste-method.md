@@ -4,7 +4,9 @@
 **Rule:** excess tokens for the same job = bug (`AGENTS.md` Token cost + error-ledger sittings).  
 **Goal:** max context on **content + reasoning about content**; plumbing stays out of the window unless required.
 
-Prior art (cite, do not reinvent): `scripts/manifest.py`, `hot.md` preference, `entities/{type}/` + title-stem (`wiki/AGENTS.md`), Retrieval Primitives / escalate-only (`llm-wiki/SKILL.md`), `WIKI_TOKEN_WARN_THRESHOLD` / wiki-status footprint, error-ledger token doctrine.
+**Nick constraint (2026-09-14):** Do **not** thin content — especially narrative prose or mechanics. Optimize **without** losing quality of agent instructions/skills. Primary target is **confusion and ambiguity**. **Highest priority:** conflicting or redundant instructions across skills/AGENTS. Byte-count “slim” that drops craft quality is forbidden.
+
+Prior art (cite, do not reinvent): `scripts/manifest.py`, `hot.md` preference, `entities/{type}/` + kebab filenames (`wiki/AGENTS.md`), Retrieval Primitives / escalate-only (`llm-wiki/SKILL.md`), `WIKI_TOKEN_WARN_THRESHOLD` / wiki-status footprint, error-ledger token doctrine, `scripts/context-waste-scan.py`.
 
 ---
 
@@ -58,9 +60,9 @@ Prefer heuristics agents/CLIs run **without** loading bodies into chat (path + m
 |---|---|---|---|
 | S1 | Skill instructs full `.manifest.json` read | `rg` on `.agents/skills/**/SKILL.md` for read/load/cat of `.manifest.json` **without** nearby “do not … whole” | HARD (skill contract) |
 | S2 | Skill instructs full `index.md`/`log.md` as first step | `rg` “Read …/index.md” / “Read …/log.md” vs cite Retrieval Primitives | SOFT→HARD after skill slim |
-| S3 | Oversized skill | `stat` byte size; flag `SKILL.md` > ~24KB (current top: ingest 50KB, run-guide 36KB, llm-wiki 35KB) | SOFT budget |
-| S4 | Oversized page without type justification | line count / bytes; defaults e.g. entity >250L SOFT, >400L SOFT+; session-prep beat >220L SOFT; exclude `index`/`log`/`templates`/`_archive` | SOFT |
-| S5 | Multiple H1 in body | count `(?m)^# ` after FM; >1 = hit | **Policy already** (PC single-H1); lint: SOFT now, HARD after remorph wave — **not** in `tools/lint_wiki.py` HARD_KEYS today |
+| S3 | Oversized skill (**lead only**) | `stat` byte size; flag `SKILL.md` > ~24KB → investigate for **redundancy/conflict**, not a mandate to shorten | SOFT lead |
+| S4 | Oversized page (**lead**) | line count / bytes as a lead to look for **infra** redundancy (multi-H1, Foundry dump, empty scaffolds) — **never** a reason to delete narrative/mechanics | SOFT lead |
+| S5 | Multiple H1 in body | count `(?m)^# ` after FM; >1 = hit → structural flatten only; **keep** all narrative/mechanics under one H1 | SOFT (structural); not HARD yet |
 | S6 | Satellite facet H1 pattern | `^# .+ — ` or second `#` matching title facet | SOFT |
 | S7 | Foundry dump-copy span | lines from `## Foundry` to next `##`; flag >40L on PC/NPC | SOFT (structural remorph) |
 | S8 | Empty sections | `## X` then only whitespace/comment before next `##` | SOFT |
@@ -72,13 +74,15 @@ Prefer heuristics agents/CLIs run **without** loading bodies into chat (path + m
 
 ---
 
-## 3. Fix paths (ranked)
+## 3. Fix paths (ranked — Nick order)
 
-1. **Skill slim / escalate-only** — Split or tier large skills; replace “Read index.md” with `rg`/`qmd`/frontmatter/`manifest.py`; cite Retrieval Primitives once; delete CLI restatements.
-2. **Thin CLIs (existing + missing)** — Keep using `manifest.py`, context-pack budget CLI, wiki-status token warn. **Missing:** `scripts/context-waste-scan.py` (below); optional later: `index-query` / `log-tail` so agents never need full index/log.
-3. **Page remorph (structural)** — Flatten satellite H1→H2 under one title H1; omit empty; distill Foundry dump into Sheet/Combat once (keep `foundry_id` in FM); remove process asides; one heading per job (shared grammar). **Not** creative rewrite.
-4. **Lint / budget gates** — Soft first: S1–S9 via scan CLI; promote S1 (and later multi-H1) to wiki-lint HARD when clean. Page >N lines soft with allowlist by `type`/`kind`.
-5. **Packet format** — Default cite: `{path, start_line, end_line, excerpt≤K chars}`; forbid pasting full skill/manifest/index/log.
+1. **Deduplicate / reconcile conflicting skill + AGENTS instructions** (highest priority) — Same job stated differently in two places → one owner, others cite. Contradictory paths/types/loads → pick the locked rule, delete the loser. Redundant CLI restates → delete prose, keep one thin invoke line.
+2. **Remove ambiguity that causes wrong loads** — Unclear “read the index” / dual homes / optional whole-file dumps that agents interpret as required. Replace with escalate-only primitives and explicit forbids.
+3. **Structural infra only when clearly redundant** — Multi-H1 satellites, Foundry dump beside Sheet, empty scaffolds, process asides — **only** when that block is not the sole home of mechanics or narrative. Remorph must **preserve** all craft content (prose, numbers, rulings).
+4. **Thin CLIs** — `manifest.py`, `context-waste-scan.py`, context-pack / wiki-status. Optional later: index-query / log-tail. CLIs answer questions; they do not replace skill craft.
+5. **Packet format** — `{path, start_line, end_line, excerpt≤K}`; forbid pasting full skill/manifest/index/log.
+
+**Forbidden fix:** “slim for byte count” that drops instruction quality, narrative, or mechanics. S3/S4 size flags are **investigation leads**, not delete targets.
 
 ---
 
@@ -124,16 +128,18 @@ Prefer heuristics agents/CLIs run **without** loading bodies into chat (path + m
 | `wiki/AGENTS.md` | Optional one-liner under Layout: multi-H1 / Foundry dump-copy / empty sections = structural waste (see #71) |
 | This doc | `docs/agents/context-waste-method.md` — method of record for ASE/ATE |
 
-Thresholds stay soft until a remorph + skill-slim pass lands; then promote S1 and multi-H1.
+Thresholds stay soft. Promote S1 (full-manifest reads) when skills are clean. Promote multi-H1 only after structural remorph that **preserves** narrative/mechanics. Never promote raw byte-size to HARD.
 
 ---
 
 ## ATE packet shape (handoff)
 
 ```text
-ATE: implement scripts/context-waste-scan.py per docs/agents/context-waste-method.md §4
+ATE: keep context-waste-scan.py aligned with Nick constraint
 Issue: #71
-Bounds: detector only; no mass remorph; no prose scoring; do not commit policy as HARD in lint_wiki yet
-Prove: sample JSON on wiki/ + .agents/skills with path+metric only; list top hits for S4/S5/S7
-Cite: manifest.py pattern (thin CLI, JSON out); Retrieval Primitives; wiki/AGENTS single-H1 PC rule
+Labels: S3/S4 are leads (redundancy/conflict/infra), not “shorten” mandates
+Bounds: detector only; no mass remorph that strips narrative/mechanics; no prose scoring;
+        do not add HARD size gates that force craft cuts; do not commit multi-H1 HARD until remorph preserves content
+Prove: scan JSON path+metric; document in --help / method that size ≠ delete
+Cite: this doc §3 ranked fixes; Retrieval Primitives
 ```
