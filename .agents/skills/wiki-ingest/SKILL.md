@@ -148,7 +148,7 @@ Those files are a **foreign drop**. This vault mints them **chassis-first**. Rea
 
 Campaign-shaped session-prep and place: file with required treatments. Do not distill those pages into `concepts/`. A foreign source that names a place or session beat is not this GUARD — map it into the kind on the distill path (Layout jobs).
 
-**Owner pages (npc, item, creature, vehicle, …):** file into `wiki/entities/{type}/{title}.md` using frontmatter `type` + `title` as the basename (depth 1 only; title-stem filename standard in `wiki/AGENTS.md`). Keep `category: entities`. Do not invent facet/rarity nests or a parallel kebab slug file. Redirect stubs follow `wiki/AGENTS.md`. **PC guardrail:** if `role` is PC (any casing) or `player:` is set, `type` must be `pc` and the path must be `wiki/entities/pc/` — never ingest as `npc` with a pc tag.
+**Owner pages (npc, item, creature, vehicle, …):** file into `wiki/entities/{type}/{kebab-slug}.md` using frontmatter `type` + kebab slug from `title` (depth 1; space-free slug function in `wiki/AGENTS.md` § Page filenames — strip legacy `Aruhe - `; no spaced basenames). Keep `category: entities`. Do not invent facet/rarity nests. Redirect stubs follow `wiki/AGENTS.md`. **PC guardrail:** if `role` is PC (any casing) or `player:` is set, `type` must be `pc` and the path must be `wiki/entities/pc/` — never ingest as `npc` with a pc tag.
 
 **Recap** (`type: recap`): file into the **same** session-number folder — `wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md` (e.g. `Session-01-Recap.md`; alongside plan/beats when present). Do not use spaced `Session NN - Recap.md`, flat `wiki/journal/…`, or `…/recaps/`.
 
