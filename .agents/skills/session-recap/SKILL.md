@@ -15,6 +15,11 @@ Nick standing (2026-09-14): post-session narrative write-up is **just a recap �
 
 Show a chat proposal first. Write the wiki recap only after DM accept (FR-019). Reject leaves no page. Follow `docs/agents/work.md`. Players see nothing until the DM accepts and presents.
 
+## HARD: entity-before-spoken + dm-facing-explicit
+
+Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit** (Nick 2026-09-14). Recap narration stays player-safe but grounded in named entities; **Wiki facts** (DM-facing) name concrete owners/stakes — no coy “something happened” bullets without who/what.
+
+
 Done when: the DM has an accept/rejectable narrative recap; after accept, `Session-<NN>-Recap.md` is filed and inspectable.
 
 ## Output (only)
