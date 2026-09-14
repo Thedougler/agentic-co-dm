@@ -9,17 +9,17 @@
 
 ### User Story 1 - Reference any PC from one page (Priority: P1)
 
-A DM opens a player character page during preparation or play. The page gives them an immediate player-safe look, party orientation, combat reference, key abilities, current resources, useful inventory, and the character's table-facing voice without requiring a search through satellite pages or source dumps. The players make all decisions and run their characters; the page helps the DM understand, portray, and adjudicate their choices.
+A DM opens a player character page during preparation or play. The page gives them an immediate player-safe look, party orientation, combat reference, key abilities, current resources, useful inventory, and decision-relevant connections without requiring a search through satellite pages or source dumps. The players make all decisions and run their characters; the page helps the DM understand, portray, and adjudicate their choices.
 
 **Why this priority**: The PC page is the DM's primary reference surface for portraying and adjudicating a party member, not a control sheet for the DM to run. Fast retrieval improves rulings and responsive table play.
 
-**Independent Test**: Open each of the five current PC pages and, without opening another page, identify the character's player, class and level, current combat resources, signature actions, key relationships, and voice in under one minute.
+**Independent Test**: Open each of the five current PC pages and, without opening another page, identify the character's player, class and level, current combat resources, signature actions, key relationships, and decision-relevant pressures in under one minute.
 
 **Acceptance Scenarios**:
 
 1. **Given** a complete PC page, **When** the DM opens it, **Then** the page begins with one title, a player-safe narration block, and an At a Glance surface containing the player's identity, class and level, home ship, and a concise reference thesis.
 2. **Given** a PC page during combat, **When** the DM needs to adjudicate a player choice, **Then** ability scores, modifiers, saves, skills, AC, HP, initiative, passive perception, speed, and other character-specific combat resources are findable in one predictable Sheet or Combat Profile area.
-3. **Given** a PC page during a scene, **When** the DM needs to portray or respond to the character, **Then** Connections, Voice, and relevant session changes identify named ties and concrete table consequences without prescribing the player's action.
+3. **Given** a PC page during a scene, **When** the DM needs to portray or respond to the character, **Then** Connections and relevant session changes identify named ties and concrete table consequences without prescribing the player's action.
 4. **Given** a PC with spells or other limited resources, **When** the DM needs to understand a player's available options, **Then** the page separates casting information, abilities, actions, uses, recovery, and current inventory without duplicating the same number in multiple sections.
 
 ---
@@ -90,14 +90,14 @@ A maintainer updates the PC template or an applicable wiki workflow. The instruc
 ### Functional Requirements
 
 - **FR-001**: The system MUST provide one canonical `type: pc` template for player character owner pages under `wiki/entities/pc/`, with the repository's required frontmatter fields and PC-specific identity fields.
-- **FR-002**: The PC template MUST define a stable, single-H1 section spine covering player-safe spoken look, At a Glance, Connections, Sheet, Combat Profile, Abilities, conditional Spells, Inventory, Session Log, Voice, and conditional Art; unused optional sections MUST be omitted from filed pages.
+- **FR-002**: The PC template MUST define a stable, single-H1 section spine covering player-safe spoken look, At a Glance, Connections, Sheet, Combat Profile, Abilities, conditional Spells, Inventory, Session Log, and conditional Art; unused optional sections MUST be omitted from filed pages.
 - **FR-003**: At a Glance MUST expose player, class and level, home ship or equivalent current base, and a concise DM thesis describing the PC's play pattern, party role, pressure, or decision-relevant weakness.
 - **FR-004**: Sheet and Combat Profile MUST make the character's table-critical numbers and combat behavior scannable, including ability scores and modifiers, saves, skills, AC, HP, initiative, passive perception, speed, signature resources, counters, and party synergy when those facts exist.
 - **FR-005**: Abilities MUST organize traits, features, actions, bonus actions, reactions, and feats into predictable subsections or omit unused subsections; each entry MUST state its effect and uses or recovery when applicable.
 - **FR-006**: A caster's Spells section MUST distinguish spellcasting ability and calculations, cantrips, prepared or known spells, and slots or other casting resources; a non-caster MUST NOT receive an empty Spells section.
 - **FR-007**: Inventory MUST distinguish attuned, carried, stowed, and currency information when present, and MUST link named item owners instead of duplicating their full descriptions.
 - **FR-008**: Session Log MUST preserve concise, dated or session-numbered changes that affect current play; long-form historical source material MUST remain attributable without becoming a duplicate satellite dump.
-- **FR-009**: Connections and Voice MUST give the DM named relationship links, table consequences, portrayal cues, and decision-relevant pressures in complete sentences; player-safe narration MUST remain free of secrets, DCs, unearned names, and DM thesis.
+- **FR-009**: Connections MUST give the DM named relationship links, table consequences, and decision-relevant pressures in complete sentences; player-safe narration MUST remain free of secrets, DCs, unearned names, and DM thesis.
 - **FR-010**: The template and applicable PC guidance MUST use the repository's supported Obsidian column codeblock syntax (`col` and `col-md`) for paired scan surfaces, keep narration callouts outside those fences, and preserve a readable linear order.
 - **FR-011**: All PC pages MUST use Obsidian wikilinks for in-vault entities and MUST escape alias or embed-size pipes inside Markdown table cells so links remain valid single cells.
 - **FR-012**: All PC pages MUST use complete-sentence prose for DM-facing content, the shared Title Case headings, inline-code formatting for DCs and dice, and the repository's callout meanings without introducing competing treatments for the same information.
@@ -122,7 +122,7 @@ A maintainer updates the PC template or an applicable wiki workflow. The instruc
 
 ### Measurable Outcomes
 
-- **SC-001**: In a timed review, a DM can locate player, class and level, AC, current/max HP, initiative, signature combat options, a named connection, and voice for each of the five conformed PCs in under 60 seconds per page.
+- **SC-001**: In a timed review, a DM can locate player, class and level, AC, current/max HP, initiative, signature combat options, a named connection, and a decision-relevant pressure for each of the five conformed PCs in under 60 seconds per page.
 - **SC-002**: 100% of the five live PC owner pages share the required frontmatter contract, single-H1 rule, and section spine; 0% retain a competing live satellite dump as a second PC representation.
 - **SC-003**: 100% of conformed PC pages preserve all previously supported facts or provide a clear owner-page link or explicit verification marker for each fact that cannot remain inline; no source list, alias, art embed, lifecycle, reveal, visibility, or player handle is silently lost.
 - **SC-004**: A second agent can create or update a representative caster, non-caster, and multiclass PC from the template without asking where required facts belong, and all three outputs pass applicable wiki lint on the first review.
