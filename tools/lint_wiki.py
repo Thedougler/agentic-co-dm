@@ -34,6 +34,7 @@ HARD_KEYS = (
     "bad_type",
     "bad_lifecycle",
     "typed_relationships",
+    "pc_identity_mismatch",
 )
 TOKEN = re.compile(r"`([^`]+)`")
 RESERVED_FILES = {"AGENTS.md", "index.md", "log.md", "hot.md"}
@@ -49,6 +50,8 @@ TABLE_ROW = re.compile(r"^\s*\|.*\|\s*$")
 LIST_BOLD_SNAKE = re.compile(
     r"^\s*(?:[-*+]|\d+[.)])\s+\*\*(" + SNAKE_TOKEN.pattern + r")\*\*"
 )
+
+PC_ROLE = re.compile(r"^(pc|player character|player)$", re.I)
 
 
 def body_after_frontmatter(text: str) -> tuple[int, str]:
@@ -150,6 +153,12 @@ def normalize(value: str) -> str:
     value = value.split("#", 1)[0].strip().replace("\\", "/")
     value = re.sub(r"\.md$", "", value, flags=re.I)
     return value.casefold()
+
+
+def is_entities_pc_path(rel: str) -> bool:
+    """True when path is wiki/entities/pc/<file>.md (depth-1 type folder)."""
+    parts = Path(rel).parts
+    return len(parts) == 3 and parts[0] == "entities" and parts[1] == "pc"
 
 
 def parse_owner_schema(path: Path) -> tuple[set[str], set[str]]:
@@ -318,6 +327,34 @@ def main() -> int:
             if rel in targets:
                 relationship_findings.append({"page": rel, "index": index, "issue": "self_reference", "target": target})
     findings["typed_relationships"] = relationship_findings
+
+    pc_identity_mismatch: list[dict[str, object]] = []
+    pc_tag_on_npc: list[dict[str, object]] = []
+    for rel, item in pages.items():
+        fields = item["fields"]
+        page_type = (fields.get("type") or "").strip("\"'")
+        role_raw = fields.get("role")
+        role_val = role_raw.strip("\"'") if role_raw is not None else None
+        has_player = "player" in fields
+        role_is_pc = bool(role_val and PC_ROLE.match(role_val))
+        if role_is_pc or has_player:
+            if page_type == "pc" and is_entities_pc_path(rel):
+                continue
+            finding: dict[str, object] = {
+                "page": rel,
+                "type": page_type or None,
+                "has_player": has_player,
+                "path": rel,
+            }
+            if role_raw is not None:
+                finding["role"] = role_val
+            pc_identity_mismatch.append(finding)
+        elif page_type == "npc":
+            tags = {t.casefold() for t in scalar_list(item["block"], "tags")}
+            if "pc" in tags:
+                pc_tag_on_npc.append({"page": rel, "type": page_type, "path": rel})
+    findings["pc_identity_mismatch"] = pc_identity_mismatch
+    findings["pc_tag_on_npc"] = pc_tag_on_npc
 
     snake_case_labels: list[dict[str, object]] = []
     for rel, item in pages.items():
