@@ -6,7 +6,7 @@
 
 **Nick constraint (2026-09-14):** Do **not** thin content — especially narrative prose or mechanics. Optimize **without** losing quality of agent instructions/skills. **Agent instructions must not lose output quality** — dedupe conflicts/ambiguity only when the surviving instruction still produces the same or better agent outputs. Never “optimize” by deleting craft that raises output quality. Primary target is **confusion and ambiguity**. **Highest priority:** conflicting or redundant instructions across skills/AGENTS. Byte-count is **not** a success metric.
 
-Prior art (cite, do not reinvent): `scripts/manifest.py`, `hot.md` preference, `entities/{type}/` + kebab filenames (`wiki/AGENTS.md`), Retrieval Primitives / escalate-only (`llm-wiki/SKILL.md`), `WIKI_TOKEN_WARN_THRESHOLD` / wiki-status footprint, error-ledger token doctrine, `scripts/context-waste-scan.py`.
+Prior art (cite, do not reinvent): `scripts/manifest.py`, `hot.md` preference, `entities/{type}/` + kebab filenames (`wiki/AGENTS.md`), Retrieval Primitives / escalate-only (`llm-wiki/SKILL.md`), `WIKI_TOKEN_WARN_THRESHOLD` / wiki-status footprint, error-ledger token doctrine, `scripts/context-waste-scan.py`. Objective token counts: `docs/agents/token-measurement.md` / `scripts/token-count.py` (tiktoken) — scan **bytes/lines** remain structural leads, not token fields.
 
 ---
 

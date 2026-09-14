@@ -195,7 +195,7 @@ After building the status summary, compute the token footprint estimate:
 
 1. **Per-tier page sizes** — Glob all `.md` pages. Read the `tier:` frontmatter field of each (cheap grep). Group pages by tier value (`core`, `supporting`, `peripheral`; unset → `supporting`).
 
-2. **Estimate tokens** — For each page, estimate token count as `file_size_bytes / 4` (4 chars/token heuristic — no actual tokenizer needed). Sum per tier and total.
+2. **Count tokens** — For each page (or a scoped rollup), use objective tiktoken counts via `python3 scripts/token-count.py` / shared helper (`docs/agents/token-measurement.md`). Default encoding `cl100k_base`. **Do not** use `file_size_bytes / 4`. Sum per tier and total from tiktoken.
 
 3. **Index-only estimate** — Estimate the cost of an index-only pass: sum `len(title) + len(summary) + len(tags)` for each page frontmatter (~100 chars each on average), divided by 4.
 
