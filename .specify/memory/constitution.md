@@ -1,11 +1,18 @@
 <!--
 Sync Impact Report
-- Version change: 1.16.0 → 1.17.0
-- Modified principles: X (wiki canon lands on main; agent instructions use a feature branch)
+- Version change: 1.17.0 → 2.0.0
+- Modified principles:
+  - IX Design Trends Toward Token Efficiency (quality bar: no craft cuts)
+  - X Agents Act Autonomously By Default (branch only at specify)
+- Added principles:
+  - XV. Wiki Page Filenames Are Kebab Slugs
+  - XVI. Named Owners Before Spoken Work (no visibility frontmatter)
 - Added sections: none
 - Removed sections: none
 - Other modified sections:
-  - Agent Operating Constraints (push per X)
+  - Agent Operating Constraints (IX quality bar, XV, XVI)
+  - Development Workflow (review checks for IX/XV/XVI)
+  - Governance (compliance bullets for IX/XV/XVI; branch only at specify)
 - Follow-up TODOs: none
 -->
 
@@ -132,23 +139,33 @@ is truth. A change that increases tokens an agent must read or emit to
 complete the same task MUST be justified by a named failure it prevents.
 Duplicating guidance that already lives in one source of truth is a defect.
 
+A change MUST NOT count as an improvement if it lowers token cost by
+lowering Work quality, narrative, mechanics, or agent instruction quality.
+Context-waste work MUST target conflicting, redundant, or ambiguous
+instruction first. Surviving guidance MUST yield equal-or-better agent
+outputs. Byte-count is not a success metric. Size flags are investigation
+leads; they MUST NOT mandate deleting craft.
+
 Rationale: extra tokens are latency, cost, and noise that drown the signal.
+Cutting craft to win a byte count produces worse Work, not cheaper Work.
 
 ### X. Agents Act Autonomously By Default
 
 Agents MUST complete the git and context loop without waiting to be asked.
-Waiting for a human to say "commit", "push", "make a branch", or "update
-from main" is a defect unless a named safety failure applies.
+Waiting for a human to say "commit", "push", or "update from main" is a
+defect unless a named safety failure applies.
 
 Git by default:
 
 - Agents MUST commit completed work on the current task as they go.
 - Wiki canon MUST commit on `main` and MUST push `origin/main`.
-- Agent-instruction work MUST use a feature branch, MUST push that branch,
-  and MUST land on `main` by the repository's normal PR path when checks
-  pass.
+- A new feature MUST get its branch during specify. Agents MUST NOT
+  create or switch branches at any other time, including constitution
+  updates, unless the owner tells them to. Stay on the current branch.
+- Feature-branch work MUST push that branch and MUST land on `main` by
+  the repository's normal PR path when checks pass.
 - Mixed sittings MUST split: wiki commit on `main`, instruction commit on
-  the feature branch.
+  the current branch.
 - Agents MUST fetch from `origin/main` before starting substantial work
   and before reporting done.
 - Agents MUST NOT wait for a human to merge a ready instruction branch or
@@ -169,7 +186,7 @@ Agentic development defaults otherwise follow this constitution and
 established agentic practice: spec before code, small slices, evidence
 before done, one writer per canonical artifact, no duplicate sources of
 truth. A skill or sticky rule that requires a human prompt for commit,
-push, branch, or agent-context refresh is informal practice and loses
+push, or agent-context refresh is informal practice and loses
 (see Governance).
 
 Rationale: an agent that stops for git ceremony is not autonomous. The
@@ -258,6 +275,49 @@ or another launcher when the command can be run directly.
 
 Rationale: wrappers hide stdin, timeouts, and errors. The CLI is the tool.
 
+### XV. Wiki Page Filenames Are Kebab Slugs
+
+Wiki page `.md` basenames MUST be space-free kebab slugs derived from the
+page `title` by the slug function in `wiki/AGENTS.md`. Frontmatter `title`
+MAY contain spaces and apostrophes. Stem and `title` MAY differ; the slug
+function is the mapping. Live vault stems MUST be unique vault-wide. New
+pages MUST NOT mint spaced basenames, leading `Aruhe` place prefixes, or
+leading `00`/`00-` prefixes.
+
+Journal session files MUST use space-free forms:
+`Session-<n>-00-<kebab-title>.md`, `Session-<n>-<BB>-<kebab-label>.md`,
+`Session-<NN>-Recap.md`.
+
+This principle does not replace XIII. Attachments remain kebab
+`{slug}-{role}` with kind in the filename.
+
+Rationale: agents need deterministic paths; Obsidian needs a human
+`title`. Two strings, one slug function. Spaced stems force quoting and
+collide.
+
+### XVI. Named Owners Before Spoken Work
+
+Production session content (session-prep beats, TotM/`[!narration]`,
+action cards, spoken text) that names or requires an NPC, item, creature,
+place, faction, vehicle, spell, quest, or other entity MUST have that
+owner page filed first. Vague or non-specific stand-ins for missing
+entities MUST NOT ship.
+
+Wiki pages are DM-visible by default. MUST NOT add a `visibility`
+frontmatter field; that field implies other audience options, and none
+exist. DM-facing layers (action cards, Be ready for, secrets, situation
+facts, Wiki facts, owner pages) MUST state who, what, where, and why. A
+planted mystery MUST have a DM answer on the page. Coy placeholders,
+unnamed people, and invented mystery without an answer MUST NOT ship.
+
+Player-facing narration MAY withhold facts from players. It MUST still be
+grounded in named entities that exist.
+
+A missing wiki fact MUST NOT prevent playable Work except these two gates.
+
+Rationale: the DM cannot run what does not exist, and cannot decode coy
+agent writing at the table.
+
 ## Agent Operating Constraints
 
 - Runtime guidance for agents is `AGENTS.md`. Skills MUST follow
@@ -281,6 +341,12 @@ Rationale: wrappers hide stdin, timeouts, and errors. The CLI is the tool.
   task-irrelevant padding.
 - Wiki media assets MUST follow XIII: kind in the filename, no spaces,
   no guessing.
+- Wiki page `.md` basenames MUST follow XV: kebab slug, no spaces, unique
+  stems; `title` remains the human display string.
+- Production session content MUST follow XVI: owner pages before spoken
+  text; DM layers explicit; no coy placeholders; no `visibility` field.
+- Token-efficiency work MUST follow IX: no craft or quality cuts; conflict
+  and redundancy first; byte-count is not success.
 - Agents MUST follow XIV: run the simplest tool; CLIs as CLIs, not wrappers.
 - Designated writer, when used: Claude Code at `claude-opus-4-6`
   `--effort medium`. MUST NOT use the `opus` alias or default Opus.
@@ -327,11 +393,14 @@ Rationale: wrappers hide stdin, timeouts, and errors. The CLI is the tool.
    that tests observe behavior rather than internals, that new software is
    agent-shaped, that process is not overspecific, that easy safe idempotent
    automation is unattended, that standing agent context did not grow
-   without a named failure, that prompts to other agents carry objectives
+   without a named failure, that token cuts did not delete craft or lower
+   output quality, that prompts to other agents carry objectives
    and complete acceptance rather than operating manuals, Spec Kit
    lectures, or other task-irrelevant padding, that wiki media filenames
    distinguish kind, contain no spaces, and do not require guessing, that
-   git/context autonomy was not reintroduced as a human gate, and that
+   wiki page `.md` basenames are kebab slugs with unique stems, that
+   production session content names its owners and DM layers are explicit,
+   that git/context autonomy was not reintroduced as a human gate, and that
    CLIs were run as CLIs rather than wrapped in Python, eval, hub, or
    another launcher.
 
@@ -367,9 +436,11 @@ Compliance:
   chore that does not prevent a named failure MUST be rejected.
 - Easy, safe, idempotent work left as a manual agent step MUST be
   rejected in favor of unattended automation.
-- A required human prompt to commit, push, branch, update from `main`,
+- A required human prompt to commit, push, update from `main`,
   or refresh agent-context MUST be rejected unless it prevents a named
   safety failure (secrets, force-push of `main`, skipping checks).
+  Creating or switching a branch outside specify for a new feature MUST
+  be rejected unless the owner directed it.
 - A prompt to another coding agent that includes an operating manual,
   Spec Kit tutorial, or other detail irrelevant to the task, omits
   acceptance criteria or deliverables, or is longer than needed to state
@@ -377,6 +448,15 @@ Compliance:
 - A wiki media filename that does not encode kind, contains a space, or
   that requires opening the file or guessing from nearby notes to
   classify it, MUST be rejected.
+- A wiki page `.md` basename that contains a space, uses a leading
+  `Aruhe` place prefix, uses a leading `00`/`00-` prefix, or collides
+  with another live stem MUST be rejected.
+- Production session content that ships a vague stand-in for a missing
+  owner, or a DM-facing layer that is coy, unnamed, or mystery without a
+  DM answer on the page, MUST be rejected. A `visibility` frontmatter
+  field on a wiki page MUST be rejected.
+- A token-cost change that deletes narrative, mechanics, or instruction
+  craft, or that treats byte-count as success, MUST be rejected.
 - A CLI wrapped in Python, an eval cell, a hub process, or another
   launcher when that CLI could be run as a command MUST be rejected.
 - Reviews MUST verify that no more than two Claude Code designated-writer
@@ -393,4 +473,4 @@ Compliance:
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.17.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-14
+**Version**: 2.0.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-14
