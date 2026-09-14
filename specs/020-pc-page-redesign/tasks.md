@@ -79,9 +79,9 @@ description: "Task list for the PC Page Redesign feature"
 
 - [X] T004 [US2] Dispatch the designated writer per `docs/agents/skill-design-dispatch.md` to create `.agents/skills/player-characters/SKILL.md`; instruct the writer to follow `.agents/skills/writing-for-agents`; session agent does not write that file. Outcome: `player-characters` is the sole skill owner for `type: pc`; name is `player-characters` not `pc-design`; state idle → record ("source supplied for a player-created character") → refuse ("no source, or a request to invent/generate/prescribe"); MAY file `wiki/entities/pc/<kebab-slug>.md` by transcribing supplied source only; MUST accept PDF character sheets, prose descriptions, Foundry VTT via existing MCP (`get-character`, `list-characters`, `get-character-entity`, related character tools), and other D…
 
-- [ ] T005 [P] [US2] Update `.agents/skills/npc-design/SKILL.md` so player-character builds are a hard stop that routes to `player-characters`; npc-design MUST NOT create, rewrite, or prescribe `type: pc` pages
+- [X] T005 [P] [US2] Update `.agents/skills/npc-design/SKILL.md` so player-character builds are a hard stop that routes to `player-characters`; npc-design MUST NOT create, rewrite, or prescribe `type: pc` pages
 
-- [ ] T006 [P] [US2] Update the PC layout row and add wiki-kind routing in `wiki/AGENTS.md`: live owner `wiki/entities/pc/` with `type: pc`; copy `wiki/templates/pc.md`; jobs are the D&D Beyond spine (Identity, Combat Stats, Ability Scores, Skills, Actions, conditional Spells, Inventory, Features, Connections, Session Log, Art); no Voice / At a Glance / Sheet / Combat Profile / Abilities / required DM thesis; player controls the PC; omit empty optional sections; flatten satellites; structure-only conformance does not change `lifecycle` / `reveal` / `visibility` / campaign facts; wiki-kind route "Write, edit, or create a named PC page" → `player-characters`
+- [X] T006 [P] [US2] Update the PC layout row and add wiki-kind routing in `wiki/AGENTS.md`: live owner `wiki/entities/pc/` with `type: pc`; copy `wiki/templates/pc.md`; jobs are the D&D Beyond spine (Identity, Combat Stats, Ability Scores, Skills, Actions, conditional Spells, Inventory, Features, Connections, Session Log, Art); no Voice / At a Glance / Sheet / Combat Profile / Abilities / required DM thesis; player controls the PC; omit empty optional sections; flatten satellites; structure-only conformance does not change `lifecycle` / `reveal` / `visibility` / campaign facts; wiki-kind route "Write, edit, or create a named PC page" → `player-characters`
 
 **Checkpoint**: The skill, template, npc-design exclusion, and governing wiki instructions tell an agent how to record a PC from source and when to refuse.
 
@@ -95,15 +95,15 @@ description: "Task list for the PC Page Redesign feature"
 
 ### Implementation for User Story 3
 
-- [ ] T007 [P] [US3] Conform `wiki/entities/pc/jean-claude-tabarnack.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md`: flatten applicable archive facts into canonical homes; preserve `tags`, `sources` lineage, `lifecycle` ("Existing value; structure-only conformance does not change it."), `reveal` ("Existing value; structure-only conformance does not change it."), `campaign` / `visibility`, aliases, art, player handle ("Player handle only; never real-player PII."), and `status` ("Existing character status; do not infer a change."); do not overwrite numbers (structure-only is not a newer source); mark one-source disagreements `[verify]` with the source; omit empty optional sections; keep multiclass/resource pools distinct
+- [X] T007 [P] [US3] Conform `wiki/entities/pc/jean-claude-tabarnack.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md`: flatten applicable archive facts into canonical homes; preserve `tags`, `sources` lineage, `lifecycle` ("Existing value; structure-only conformance does not change it."), `reveal` ("Existing value; structure-only conformance does not change it."), `campaign` / `visibility`, aliases, art, player handle ("Player handle only; never real-player PII."), and `status` ("Existing character status; do not infer a change."); do not overwrite numbers (structure-only is not a newer source); mark one-source disagreements `[verify]` with the source; omit empty optional sections; keep multiclass/resource pools distinct
 
-- [ ] T008 [P] [US3] Conform `wiki/entities/pc/perrin-black-jaw.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same preservation, flattening, `[verify]`, and omission rules as T007
+- [X] T008 [P] [US3] Conform `wiki/entities/pc/perrin-black-jaw.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same preservation, flattening, `[verify]`, and omission rules as T007
 
-- [ ] T009 [P] [US3] Conform `wiki/entities/pc/catarina-davirelli.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same preservation, flattening, `[verify]`, and omission rules as T007; keep caster pools in `Spells` without duplicating Combat Stats numbers
+- [X] T009 [P] [US3] Conform `wiki/entities/pc/catarina-davirelli.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same preservation, flattening, `[verify]`, and omission rules as T007; keep caster pools in `Spells` without duplicating Combat Stats numbers
 
-- [ ] T010 [P] [US3] Conform `wiki/entities/pc/crissdalynn-khinriss.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same preservation, flattening, `[verify]`, and omission rules as T007
+- [X] T010 [P] [US3] Conform `wiki/entities/pc/crissdalynn-khinriss.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same preservation, flattening, `[verify]`, and omission rules as T007
 
-- [ ] T011 [P] [US3] Conform `wiki/entities/pc/delmar-fisk.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same preservation, flattening, `[verify]`, and omission rules as T007; omit the entire `Spells` section (non-caster)
+- [X] T011 [P] [US3] Conform `wiki/entities/pc/delmar-fisk.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same preservation, flattening, `[verify]`, and omission rules as T007; omit the entire `Spells` section (non-caster)
 
 **Checkpoint**: All five live owners share the contract, retain canon, and contain no second live PC facet representation.
 
@@ -117,15 +117,15 @@ description: "Task list for the PC Page Redesign feature"
 
 ### Implementation for User Story 4
 
-- [ ] T012 [P] [US4] Update `.agents/skills/pc-interview/SKILL.md` to map stated answers into D&D Beyond sections on `wiki/templates/pc.md` at `wiki/entities/pc/`; route page writes through `player-characters`; treat the interview transcript as evidence, not a live facet; leave unknown mechanics unknown; never invent combat math or player choices
+- [X] T012 [P] [US4] Update `.agents/skills/pc-interview/SKILL.md` to map stated answers into D&D Beyond sections on `wiki/templates/pc.md` at `wiki/entities/pc/`; route page writes through `player-characters`; treat the interview transcript as evidence, not a live facet; leave unknown mechanics unknown; never invent combat math or player choices
 
-- [ ] T013 [P] [US4] Update `.agents/skills/wiki-ingest/SKILL.md` so `type: pc` ingest points at `player-characters` and `wiki/templates/pc.md`, files `wiki/entities/pc/<kebab-slug>.md`, flattens archived satellites, preserves `sources` lineage, and keeps conflicts/unknowns explicit without duplicating `specs/020-pc-page-redesign/contracts/pc-page.md`
+- [X] T013 [P] [US4] Update `.agents/skills/wiki-ingest/SKILL.md` so `type: pc` ingest points at `player-characters` and `wiki/templates/pc.md`, files `wiki/entities/pc/<kebab-slug>.md`, flattens archived satellites, preserves `sources` lineage, and keeps conflicts/unknowns explicit without duplicating `specs/020-pc-page-redesign/contracts/pc-page.md`
 
-- [ ] T014 [P] [US4] Update `.agents/skills/reconciling-session-evidence/SKILL.md` to route durable PC changes through `player-characters` into canonical owner sections, preserve `lifecycle` / `reveal` / `visibility`, and avoid satellite dumps or invented conflict resolutions
+- [X] T014 [P] [US4] Update `.agents/skills/reconciling-session-evidence/SKILL.md` to route durable PC changes through `player-characters` into canonical owner sections, preserve `lifecycle` / `reveal` / `visibility`, and avoid satellite dumps or invented conflict resolutions
 
-- [ ] T015 [P] [US4] Update `.agents/skills/obsidian-markdown/SKILL.md` so the campaign `type` enum includes `pc`; keep wikilink and escaped-pipe (`\|`) table-cell rules, complete-sentence DM prose, player-safe narration, inline-code DC/dice, real newlines, and omission rules; add the PC column exception without weakening the session/run rule that narration stays outside fences
+- [X] T015 [P] [US4] Update `.agents/skills/obsidian-markdown/SKILL.md` so the campaign `type` enum includes `pc`; keep wikilink and escaped-pipe (`\|`) table-cell rules, complete-sentence DM prose, player-safe narration, inline-code DC/dice, real newlines, and omission rules; add the PC column exception without weakening the session/run rule that narration stays outside fences
 
-- [ ] T016 [P] [US4] Update `.agents/skills/obsidian-markdown/references/COLUMNS.md` with the PC-only nested `col`/`col-md` pairs (Identity+Combat Stats, Ability Scores+Skills), longer parent fence, headings/tables as linear fallback, narration outside fences, and prohibition on `[!col]` for those PC pairs; Connections+Session Log MAY use the same pattern when both exist; Actions/Spells/Inventory/Features/Art stay full-width
+- [X] T016 [P] [US4] Update `.agents/skills/obsidian-markdown/references/COLUMNS.md` with the PC-only nested `col`/`col-md` pairs (Identity+Combat Stats, Ability Scores+Skills), longer parent fence, headings/tables as linear fallback, narration outside fences, and prohibition on `[!col]` for those PC pairs; Connections+Session Log MAY use the same pattern when both exist; Actions/Spells/Inventory/Features/Art stay full-width
 
 **Checkpoint**: PC interview, ingest, reconciliation, and Markdown workflows converge on the same template and skill and do not reintroduce obsolete paths.
 
@@ -135,14 +135,14 @@ description: "Task list for the PC Page Redesign feature"
 
 **Purpose**: Prove the quickstart: fixture, lint, routing, Reading view, preservation, representative recording, and refuse-to-generate.
 
-- [ ] T017 Run `.venv/bin/python specs/020-pc-page-redesign/fixtures/check.py` against `wiki/templates/pc.md`, `wiki/entities/pc/`, and applicable `wiki/_archive/` satellites; require exit `0`
-- [ ] T018 [P] Run `./scripts/lint-wiki-write --path wiki/entities/pc` against all five conformed owners; require exit `0`
-- [ ] T019 [P] Run `./scripts/lint-obsidian-markdown --strict --path wiki/entities/pc` against all five conformed owners; require exit `0`
-- [ ] T020 Run `./scripts/wiki-lint --json` and confirm no HARD findings for PC paths, frontmatter, links, filenames, or duplicate H1/facet structure; do not use `tools/check_wiki_pages.py` as PC proof
-- [ ] T021 Perform an Obsidian Reading-view review of `wiki/entities/pc/jean-claude-tabarnack.md`, `wiki/entities/pc/perrin-black-jaw.md`, `wiki/entities/pc/catarina-davirelli.md`, `wiki/entities/pc/crissdalynn-khinriss.md`, and `wiki/entities/pc/delmar-fisk.md`: full-width player-safe narration, paired Identity/Combat Stats and Ability Scores/Skills, linear fallback, no Voice / At a Glance / Sheet / Combat Profile / Abilities / empty optional heading / second H1 / required DM thesis / live satellite dump
-- [ ] T022 Perform the timed DM-reference review (under 60 seconds per page for player, class/level, AC, current/max HP, initiative, signature options, a named connection, and a decision-relevant pressure) and the structure-only preservation comparison of `wiki/entities/pc/` against pre-change copies and `wiki/_archive/{abilities,character-sheets,combat-profile,galleries,inventory,session-logs,spells,stats,va-scripts}/`
-- [ ] T023 Using only `player-characters`, `wiki/templates/pc.md`, `specs/020-pc-page-redesign/contracts/pc-page.md`, and representative supplied source, produce temporary scratch outputs for a caster with multiple casting pools, a non-caster with no `Spells` section, and a multiclass PC with distinct class/resource pools; each must omit empty sections, leave unknowns uninvented, keep narration safe, and pass scoped lint before scratch files are removed
-- [ ] T024 Confirm the negative: with no supplied source, or a request to invent a PC / generate stats / write the character's actions, `.agents/skills/player-characters/SKILL.md` refuses and does not mint a page
+- [X] T017 Run `.venv/bin/python specs/020-pc-page-redesign/fixtures/check.py` against `wiki/templates/pc.md`, `wiki/entities/pc/`, and applicable `wiki/_archive/` satellites; require exit `0`
+- [X] T018 [P] Run `./scripts/lint-wiki-write --path wiki/entities/pc` against all five conformed owners; require exit `0`
+- [X] T019 [P] Run `./scripts/lint-obsidian-markdown --strict --path wiki/entities/pc` against all five conformed owners; require exit `0`
+- [X] T020 Run `./scripts/wiki-lint --json` and confirm no HARD findings for PC paths, frontmatter, links, filenames, or duplicate H1/facet structure; do not use `tools/check_wiki_pages.py` as PC proof
+- [X] T021 Perform an Obsidian Reading-view review of `wiki/entities/pc/jean-claude-tabarnack.md`, `wiki/entities/pc/perrin-black-jaw.md`, `wiki/entities/pc/catarina-davirelli.md`, `wiki/entities/pc/crissdalynn-khinriss.md`, and `wiki/entities/pc/delmar-fisk.md`: full-width player-safe narration, paired Identity/Combat Stats and Ability Scores/Skills, linear fallback, no Voice / At a Glance / Sheet / Combat Profile / Abilities / empty optional heading / second H1 / required DM thesis / live satellite dump
+- [X] T022 Perform the timed DM-reference review (under 60 seconds per page for player, class/level, AC, current/max HP, initiative, signature options, a named connection, and a decision-relevant pressure) and the structure-only preservation comparison of `wiki/entities/pc/` against pre-change copies and `wiki/_archive/{abilities,character-sheets,combat-profile,galleries,inventory,session-logs,spells,stats,va-scripts}/`
+- [X] T023 Using only `player-characters`, `wiki/templates/pc.md`, `specs/020-pc-page-redesign/contracts/pc-page.md`, and representative supplied source, produce temporary scratch outputs for a caster with multiple casting pools, a non-caster with no `Spells` section, and a multiclass PC with distinct class/resource pools; each must omit empty sections, leave unknowns uninvented, keep narration safe, and pass scoped lint before scratch files are removed
+- [X] T024 Confirm the negative: with no supplied source, or a request to invent a PC / generate stats / write the character's actions, `.agents/skills/player-characters/SKILL.md` refuses and does not mint a page
 
 ---
 

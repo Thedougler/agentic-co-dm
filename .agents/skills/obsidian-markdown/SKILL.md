@@ -19,7 +19,8 @@ Every wiki write must preserve vault wikilinks, `[!narration]` for spoken text, 
 ## Hard rules
 
 - **Wikilinks in-vault:** `[[Note]]` / `[[Note|text]]` / `[[Note#Heading]]`. Markdown links only for external `https://` URLs. In a Markdown table cell, write the alias or size pipe as `\|` so the cell stays one cell: `[[Note\|text]]`, `![[image.png\|400]]`. Bare `[[Note]]` needs no escape.
-- **Frontmatter (`wiki/AGENTS.md`):** include `title`, `category`, `tags`, `sources`, `created`, `updated`, plus campaign `type`, `lifecycle`, `reveal`, `campaign`, and `visibility`. `type` enum: `npc` | `place` | `faction` | `item` | `creature` | `session` | `recap` | `work`. `lifecycle`: `draft` | `proposed` | `accepted` | `rejected` | `canon`. `reveal`: `unrevealed` | `revealed`. `visibility` defaults to `dm` and is distinct from `reveal`. Prefer those fields over generic `title`-only notes.
+- **Frontmatter (`wiki/AGENTS.md`):** include `title`, `category`, `tags`, `sources`, `created`, `updated`, plus campaign `type`, `lifecycle`, `reveal`, `campaign`, and `visibility`. `type` enum: `npc` | `pc` | `place` | `faction` | `item` | `creature` | `session` | `recap` | `work`. `lifecycle`: `draft` | `proposed` | `accepted` | `rejected` | `canon`. `reveal`: `unrevealed` | `revealed`. `visibility` defaults to `dm` and is distinct from `reveal`. Prefer those fields over generic `title`-only notes.
+
 - **`summary` frontmatter:** one sentence — what the note is and anything non-obvious or unexpected. Use it to assess a note without reading the full file. Create on every new note; update whenever the note changes. Keep it concise, specific, and direct. Quote the value when it contains `: ` (colon-space) — unquoted `: ` breaks YAML.
 - **Player prose:** owner pages use leading `> [!narration] Narration` (empty until TotM fill). Session/run beats use mandatory `> [!narration] Initial Narration` plus titled stubs per `run-guide` TotM slots. Unconditional spoken stays in `[!narration]`. Conditional spoken lives in a table cell as `==_italic_==`. Empty on mechanical pass 1; fill on pass 2. No secrets/DCs/unearned names inside `[!narration]` or those highlighted cells.
 - **Live session surfaces:** In run-guide, session-prep, session, and beat notes, never use collapsed callouts (`[!…]-`); keep DM information open so session cards do not hide it. Collapsed secrets remain allowed on long-lived owner pages (NPC/PC/faction) when useful.
@@ -250,3 +251,5 @@ Owner pages may still use callout `[!col]` when no `[!narration]` sits in the sa
 | `![](…)` / absolute disk paths for vault art | `![[attachments/…]]` / `[[attachments/…]]` |
 | Broken image wikilink | fix path or add file under `attachments/` |
 | `[!col]` / `[!col-md]` on a session/run card | `col` / `col-md` codeblock fences so `[!narration]` stays a callout |
+| `[!col]` for PC Identity+Combat Stats or Ability Scores+Skills | nested `col`/`col-md` codeblock fences; parent longer than children; narration stays outside fences |
+

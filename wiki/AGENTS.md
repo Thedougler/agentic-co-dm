@@ -53,7 +53,7 @@ Copy the matching `wiki/templates/` scaffold for the campaign `type` (and `kind`
 | Recap | Cold open optional; player-safe `[!narration] Recap`; Wiki facts. `type: recap`. Copy `wiki/templates/recap.md`. Pass is those jobs. |
 | Creature | Look; runnable sheet; life (habitat, habits, diet, social); hunt (signs, instincts, opening, shut-down, aftermath) |
 | Person | Who and want; look; first minutes and posture change; named ties; combat only if they can fight |
-| PC | Spoken look; At a Glance (class/level/player/home ship + play-pattern thesis); Connections; Sheet + Combat Profile; Abilities; Spells when caster; Inventory; Session Log; Voice; Art. Single H1 only — flatten satellites; forbid nested `# Title — Facet` dumps. `type: pc`. Copy `wiki/templates/pc.md`. Pass is those jobs. |
+| PC | Player-safe narration; Identity (player, class/level, species, background, home ship); Combat Stats; Ability Scores; Skills; Actions; Spells when the PC can cast; Inventory; Features; Connections; Session Log; Art. No Voice / At a Glance / Sheet / Combat Profile / Abilities / required DM thesis. Player controls the PC. Omit empty optional sections. Flatten satellites into canonical homes. Structure-only conformance does not change `lifecycle` / `reveal` / `visibility` / campaign facts. Live owner `wiki/entities/pc/` with `type: pc`. Copy `wiki/templates/pc.md`. Pass is those jobs. |
 | Session plan | Compass; beat map; floating beats; pressure; PC touchpoints. `type: session-prep` `kind: session-plan`. Copy `wiki/templates/session-plan.md`. File `Session-<n>-00-<Title>.md`. Pass is those jobs. |
 | Hook | At the table; Open on; Situation; Run the hook; Decision handles; Handoff. `type: session-prep` `kind: hook`. Copy `wiki/templates/hook.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
 | Development | Abstract; Opening; Run the beat; Situation; Revelations; Exits. `type: session-prep` `kind: development`. Copy `wiki/templates/development.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
@@ -83,6 +83,13 @@ Consumable, flora hazard, and magic/plot/durable items all use `type: item`; the
 Legacy pages are out of scope. Wrapup MUST NOT convert a legacy page into a sample.
 
 Done when: the kind's jobs are answered, empty sections are omitted, spoken look is player-safe.
+
+## Wiki kind routing
+
+| Job | Skill |
+|---|---|
+| Write, edit, or create a named PC page | `player-characters` |
+
 
 Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<session-number>/` (Session 11 → `wiki/journal/sessions/shattered-sea/11/`; Session 01 → `…/01/`). Session plan `Session-<n>-00-<Title>.md`, numbered live beats `Session-<n>-<BB>-<Label>.md`, **post-play recaps**, and that night’s companion notes all live in the **same** session-number folder. Recap path: `wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md` (`type: recap`, copy `wiki/templates/recap.md`). Do **not** park recaps at flat `wiki/journal/…`, spaced `Session NN - Recap.md`, or a parallel `recaps/` folder. Owner pages stay outside. `_raw/` is the ingest inbox (not LLM review staging). LLM review queue is `wiki/_staging/` when `WIKI_STAGED_WRITES=true` — promote via `wiki-stage-commit`. Two campaigns do not share a session-number folder. `wiki/templates/session.md` is deprecated as copy-start; `type: session` remains legacy in the enum. Do not file `{{title}} - B01 - Strong Start` names.
 

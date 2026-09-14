@@ -51,7 +51,8 @@ are affected, load `decomposing-campaign-content` after the claim ledger exists.
 6. **Apply narrowly.** Give each claim exactly one disposition: patch owner, create justified
    template-based node, patch session log/table state, promote lasting PC fact, record ruling, propose
    gated change, or retain as evidence/diagnostic. Preserve authored prose and provenance; never
-   copy transcript wording throughout the vault or hand-author derived compiler output.
+   copy transcript wording throughout the vault or hand-author derived compiler output. Route durable PC changes through `player-characters` into canonical owner sections. Preserve `lifecycle` / `reveal` / `visibility`. Do not dump satellites or invent conflict resolutions.
+
 
 Run applicable link, frontmatter, and derived-state checks.
 

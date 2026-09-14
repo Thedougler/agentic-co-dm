@@ -206,3 +206,15 @@ Monster roster rows never exceed two `![[Name#Statblock]]` columns. A third mons
 Do not wrap a session card in `[!col]` callouts. A narration callout inside `col-md` codeblock fences does render, but spoken blocks stay full width so the DM can read them aloud.
 
 Owner pages may use callout `[!col]` when the row has no spoken callout. Session/run surfaces always use codeblock syntax.
+
+### PC owner pages (codeblock only)
+
+`type: pc` pages use nested `col` / `col-md` for two required pairs. Parent fence has more backticks than children. Put each heading inside its child fence. Keep `[!narration]` outside fences. Do not use `[!col]` for these pairs. Headings and tables must read top-to-bottom when columns do not render.
+
+| Pair | Left | Right |
+|---|---|---|
+| Header | `## Identity` | `## Combat Stats` |
+| Ability | `## Ability Scores` | `## Skills` |
+
+`## Connections` and `## Session Log` MAY use the same pattern when both exist. Keep `## Actions`, `## Spells`, `## Inventory`, `## Features`, and `## Art` full width.
+

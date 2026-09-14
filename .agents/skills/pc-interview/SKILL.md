@@ -21,15 +21,15 @@ Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagge
 
 Remap durable output paths from `campaigns/<slug>/` to `wiki/`; use `wiki/templates/`. Replace knowledge-bank wording with wiki wording. Keep the craft procedure.
 
-This is a warm conversation with the player, not a character generator. The durable output is one
-PC note from `templates/PC.md`; the interview record is append-only.
+This is a warm conversation with the player, not a character generator. The interview transcript is evidence, not a live facet. Route page writes through `player-characters` onto `wiki/templates/pc.md` at `wiki/entities/pc/`.
+
 
 ## Identity and branch
-
-Search `wiki/<campaign>/pcs/` and, only for collision checking, `wiki/<campaign>/npcs/` for name/aliases.
+Search `wiki/entities/pc/` and, only for collision checking, `wiki/entities/npc/` for name/aliases.
 No match means create; one PC match means resume; an NPC match or ambiguity is a stop for identity
 confirmation. Read the existing note and `hot.md` before asking. Store player handles only, never
 real-player PII.
+
 
 ## Interview loop
 
@@ -42,15 +42,10 @@ the world to ask. Then ask once for player handle and class/level if known. Leav
 blank and never fill `pc-state` from prose.
 
 ## Synthesize and persist
+Map only stated answers into D&D Beyond sections on `wiki/templates/pc.md`: Identity, Connections, Features, and Session Log when the answer belongs there. Leave unknown mechanics unknown. Never invent combat math or player choices. Preserve prior interview rounds as source evidence, not as a second live PC page. Link existing entities; do not mint NPC/item/place notes inside the interview. Contradictions with protected canon are a DM gate, not a silent overwrite. Do not set player audience, combat statistics, inventory, or unstated feelings.
 
-Map only stated answers into overview, appearance if supplied, gravity/tensions, relationships,
-history, open hooks, and a dated `## Interview` round containing the questions actually asked and
-answers as given. Preserve prior rounds. Link existing entities; do not mint NPC/item/place notes
-inside the interview. Contradictions with protected canon are a DM gate, not a silent overwrite.
-Do not set player audience, combat statistics, inventory, or unstated feelings.
+Hand the mapped facts to `player-characters` to file `wiki/entities/pc/<kebab-slug>.md`. Run applicable Obsidian/frontmatter lint, and report changed paths plus unanswered questions and deferred owner work.
 
-Write one note in `wiki/<campaign>/pcs/`, run applicable Obsidian/frontmatter lint, and report
-changed paths plus unanswered questions and deferred owner work.
 
 ## Campaign-bone gate
 

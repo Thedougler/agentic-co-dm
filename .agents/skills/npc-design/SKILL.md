@@ -6,7 +6,9 @@ description: >-
   rivals, faction faces, villains, lieutenants, or social encounters. Covers
   wants, leverage, limits, portrayal, Influence/Attitude, villain plans, and
   monster-style combat packages. Do not use for pure monster design without a
-  personal identity (use homebrew-monsters-5e) or for player-character builds.
+  personal identity (use homebrew-monsters-5e) or for player-character builds
+  (hard stop: use player-characters). Do not create, rewrite, or prescribe
+  `type: pc` pages.
 ---
 
 # NPC design
@@ -21,6 +23,11 @@ Players see nothing until the DM accepts and presents.
 Done when: the DM has a chat proposal they can accept or reject; after accept, the filed `type: npc` page is inspectable Work.
 
 File durable output under `wiki/` (entities/journal as appropriate). Copy `wiki/templates/npc.md` as a scaffold. Pass on person jobs in `wiki/AGENTS.md` Layout. Add optional extra depth from `specs/003-npc-page-standard/contracts/npc-page.md` only when those facts exist.
+
+## Hard stop: player characters
+
+If the job is a player-created character or a `type: pc` page, stop. Use `player-characters`. Do not create, rewrite, or prescribe a PC page.
+
 
 ## Central principle
 
