@@ -4,6 +4,8 @@ title: Wiki Log
 
 # Wiki Log
 
+- [2026-09-14T23:50:00Z] LAYOUT pages=476 mode=drop-remorph-stubs notes="Deleted spaced redirects_to stubs from kebab remorph; rewrote inbound links; remorph now deletes the old basename instead of leaving a stub"
+- [2026-09-14T21:48:40Z] GRAPH_COLORIZE mode=by-tag groups=10 backup=graph.json.backup-20260914-1448
 - [2026-09-14T22:30:00Z] INGEST source="/Users/nick/agentic-co-dm/wiki/_raw/session-11-transcript.md" pages_updated=13 pages_created=2 mode=append
 - [2026-09-14T22:31:00Z] INGEST source="/Users/nick/agentic-co-dm/wiki/_raw/session-11-summary.md" pages_updated=1 pages_created=0 mode=append
 - [2026-09-14T21:30:00Z] CREATE pages="entities/place/la-vasca.md,entities/place/La Vasca.md" mode="restore" notes="Restore La Vasca dry-dock place from legacy calveno-la-vasca + la-vasca; spaced redirects_to stub so [[La Vasca]] resolves after remorph fallout"

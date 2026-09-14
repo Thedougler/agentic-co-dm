@@ -3,12 +3,12 @@
 
 Slug from frontmatter title (strip legacy Aruhe - prefix; lowercase kebab).
 Journal recaps → Session-<NN>-Recap.md. Rewrites path-qualified wikilinks/embeds,
-leaves redirects_to stub at old basename, adds old stem as alias on the live page;
+adds old stem as alias on the live page, deletes the old file in the same pass;
 rewrites path-qualified and safe bare-stem wikilinks.
 
 Skip: _archive/_raw/templates/_meta/attachments/reserved; redirects_to stubs.
 GREENLIT 2026-09-14 (Nick): legacy strips (kebab / Aruhe / leading 00 / 00-).
-Implements strip in this script (live redirects; archive/templates plain rename).
+Implements strip in this script (live rename+link rewrite; archive/templates plain rename).
 Prefer GitHub PR diffs. Dry-run first; no lore invent.
 
 Usage (repo root):
@@ -21,7 +21,6 @@ GREENLIT — legacy filename remorph apply allowed (kebab / Aruhe / 00 strips). 
 from __future__ import annotations
 
 import argparse
-import datetime as dt
 import json
 import re
 import sys
@@ -277,23 +276,6 @@ def add_alias(text: str, alias: str) -> str:
     rest = text[m.end() :]
     return "---\n" + new_block + "\n---\n" + rest.lstrip("\n")
 
-
-def redirect_stub(old_stem: str, new_stem: str, display: str, today: str) -> str:
-    return (
-        f"---\n"
-        f"title: {old_stem}\n"
-        f"redirects_to: \"[[{new_stem}|{display}]]\"\n"
-        f"category: entities\n"
-        f"tags: []\n"
-        f"sources: []\n"
-        f"created: {today}\n"
-        f"updated: {today}\n"
-        f"---\n\n"
-        f"# {old_stem}\n\n"
-        f"Redirect → [[{new_stem}|{display}]].\n"
-    )
-
-
 def rewrite_links(wiki: Path, stem_map: dict[str, str]) -> int:
     """Rewrite path-qualified + safe bare-stem links whose target is an old stem."""
     if not stem_map:
@@ -334,26 +316,21 @@ def rewrite_links(wiki: Path, stem_map: dict[str, str]) -> int:
 
 
 def apply_plans(wiki: Path, plans: list[Plan]) -> dict:
-    today = dt.date.today().isoformat()
     stem_map = {p.stem: p.new_stem for p in plans}
-    no_stub_dirs = {"_archive", "_archives", "templates"}
     applied = []
+    archive_or_templates = {"_archive", "_archives", "templates"}
     for p in plans:
         src = wiki / p.src
         dest = wiki / p.dest
-        plain = bool(set(Path(p.src).parts) & no_stub_dirs)
         body = src.read_text(encoding="utf-8")
-        if not plain:
+        if not (set(Path(p.src).parts) & archive_or_templates):
             body = add_alias(body, p.stem)
         dest.parent.mkdir(parents=True, exist_ok=True)
         if dest.resolve() == src.resolve():
             applied.append(asdict(p))
             continue
         dest.write_text(body, encoding="utf-8")
-        if plain:
-            src.unlink()
-        else:
-            src.write_text(redirect_stub(p.stem, p.new_stem, p.title, today), encoding="utf-8")
+        src.unlink()
         applied.append(asdict(p))
     link_files = rewrite_links(wiki, stem_map)
     return {"applied": applied, "link_files_rewritten": link_files}
