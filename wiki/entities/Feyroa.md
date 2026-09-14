@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Feyroa]] is a named island or site in the southern [[Midchain]]. A one-still coconut-wine distillery that trades only in secrets; never money.

@@ -21,7 +21,7 @@ summary: Radial Quiet Forest fire hub where survivor tracks, fallen stonepears, 
 > Packed dirt holds a round hub under Quiet leaves, wide enough for a fire, with narrow trails cutting away through buttress-root trunks like spokes from a ring of river stones. Stonepears hang above it in grey-green scales, heavy enough to bow the mossed branches; fallen fruit sits beside the coals as if it were placed there. South, one spoke opens onto a hot slice of gold-green grass. West, another drops through hanging roots to a strip of clear water, close enough to hear but not wide enough to make this a river camp. North, the spokes darken under leaves where the smoke cannot rise and every small grassland sound stops at the mouths of the trails.
 
 ---
-## At a glance
+## At a Glance
 Spoke Ring is the first Quiet hub north of [[Aruhe - Grasslands - Print Braid|Print Braid]], where game trails meet on the seam of [[Aruhe - Quiet Forest]], [[Aruhe - Grasslands]], and a small root-cut of [[Aruhe - River]]. Unlike Print Braid's grass braid and cobble ring, or [[Aruhe - Quiet Forest Cutoff Lip|Cutoff Lip]]'s packed sleep-shelf and knee palisade, this site is a radial dirt star under leaf roof: a live stone fire at the center, four mats set at equal remove, heavy stonepears overhead, and exits that offer different kinds of wrong direction. Stay on a grassland ridge or turn back on Print Braid and the hub can be skipped; walk the inland prints into the wood and it remains the fire ring, mats, fallen stonepears, and spokes that do not all want the same night. The inland group stopped here. The smoke the prints followed is this fire.
 
 ---

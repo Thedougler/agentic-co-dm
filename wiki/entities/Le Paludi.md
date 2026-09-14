@@ -26,6 +26,6 @@ visibility: dm
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Le Paludi]] is named in draft fiction as the place [[Osset]] sold a cloak to a woman who asks nothing. The draft marks itself as not canon.

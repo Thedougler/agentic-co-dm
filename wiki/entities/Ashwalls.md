@@ -26,7 +26,7 @@ region: "west of the Shattered Sea"
 > Ashwalls are cold-water volcanic spires with steam vents and warm cave mouths in black stone. Sulfur and salt hang over wreckage lodged in the lee. The caves are the first solid shelter heading west and the last safe lee returning east.
 
 
-## At a glance
+## At a Glance
 Cold-water volcanic spires: last solid ground heading west and first safe lee returning east; feels hot, sulfurous, and opportunistic.
 
 ## Aspects
@@ -74,5 +74,5 @@ Crews distinguish two eruptions of lightning. Vertical cloud-to-stone fire is or
 
 One lightning-burned survivor described a white bird of stormlight in the rigging before the mainmast fell. Burn marks ran along contact points rather than down from a single strike. Iron fittings magnetized hard enough to pull nails.
 
-## Secrets (DM)
+## Secrets
 The white-fire crossings are disputed: rigging fused, spars split outward, and stormlight moved like a bird. Do not resolve the cause here. The ashwall-islands note states that in-setting the Galewall runs on arclight phoenix activity; keep that as pilot lore unless a later accepted page makes it a broader world rule.

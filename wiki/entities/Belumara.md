@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Belumara]] is a named island or site in the eastern [[Midchain]]. Sacred freshwater sinkhole lake; free to draw from if a pilot leaves an offering in one of the rim's bowls.
 

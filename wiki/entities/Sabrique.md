@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Sabrique]] is a named island or site in the western [[Midchain]]. Salt-pan island worked by indentured labor. The salt is cheap; and buyers know not to ask why.

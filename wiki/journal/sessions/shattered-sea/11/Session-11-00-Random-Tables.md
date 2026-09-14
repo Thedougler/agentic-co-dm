@@ -48,7 +48,7 @@ If they pluck living plants, fish for themselves, or kill to carry flesh, roll `
 
 If the rolled hazard does not belong in the current ground, reroll once. If a dedicated scene already used that hazard, reroll once among hazards that have not appeared on this stretch.
 
-## At the table
+## At the Table
 
 1. Roll `1d8` after the Survival check.
 2. Read the linked hazard note's appearance or narration, then let the players choose their response.

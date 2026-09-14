@@ -140,7 +140,7 @@ flexGrow=1
 | [[Dreth]] and [[Orak]] | Hidden | Drowned forest, karst clefts, sinkholes, and wet nests. | No charted shoreline and a forbidden crossing. |
 | [[Veth West Beach]] | Temporary | Sanctioned outsider interface. | A beach protocol becomes an interior breach after departure. |
 
-## Relationships
+## Connections
 
 | Faction / person | Stance | What Grung Clans want from them | Leverage, debt, or friction |
 | --- | --- | --- | --- |

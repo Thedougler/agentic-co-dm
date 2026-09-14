@@ -26,7 +26,7 @@ region: "Midchain"
 > The Verdant Teeth are five country-scale rainforest islands with lush canopy down to the tide and pale reef ringing the channels. Short sanctioned beaches face the water without piers. The closed interior begins at the first trunks behind the sand.
 
 
-## At a glance
+## At a Glance
 Five country-scale rainforest islands held by Grung clans: lush, wet, layered, and theocratic. Sanctioned beaches are interfaces, not invitations; the interior is closed.
 
 ## Five-sentence kernel
@@ -66,11 +66,11 @@ The cluster loops by water and canopy routes, but every route has a different co
 ## Pressure
 Quiet → alert → contested → transformed. The fleet's water loss makes every approach more defensive. A broken beach rule closes a route; a captive witness opens a route but accelerates patrols; exposing gold farms risks caste fracture; losing a proa makes the remaining fleet more aggressive.
 
-## Links
+## Connections
 - [[Grung clans]] · [[Auralis]] · [[The taken 314]] · [[Pursue the Grung raiding fleet]]
 - [[Aruhe - Hungry Isle]] · [[Grung and the Making of Aruhe]] · [[Warren]] · [[Sparhold]]
 
-## Secrets (DM)
+## Secrets
 The Grung clans' historical crime against a far-Midchain druid and her companion is the reason [[Aruhe - Hungry Isle]] exists as it does today. The full origin is in [[Grung and the Making of Aruhe]] and [[Hinewai]]. Do not put the confession in the public narration.
 
 ## Provenance

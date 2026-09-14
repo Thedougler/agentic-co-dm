@@ -25,7 +25,7 @@ region: "Shattered Sea"
 > [!narration] Narration
 > A fortified western island chain shows pale forts, cannon, and flags over watchful water. Reef ridges break the approaches, and the harbours look built to inspect every hull that tries to pass.
 
-## At a glance
+## At a Glance
 The Crown Islands are a fortified western island chain: [[Calven]], [[Harwick]], [[Aldenmere]], and [[Stenmark]], with [[Calder's Tooth and Port Tidefall]] as a gatepost and [[High Eyrie]] beyond the eastern edge. Pale forts, cannon, flags, and Greyteeth reefs make the water watchful.
 
 ## Function and control

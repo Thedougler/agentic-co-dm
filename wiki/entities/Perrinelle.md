@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Perrinelle]] is a named island or site in the western [[Midchain]]. Four-generation lighthouse family island where the lamp still burns. The current keeper vanished weeks ago.

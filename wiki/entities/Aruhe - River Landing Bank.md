@@ -34,7 +34,7 @@ relationships:
 > Clear turquoise water runs the east side of a gold-green bank, pale stone showing under the current where submerged blades bend with the flow. Grass stands higher than a person, and a double muddy track of crushed stems cuts north up the bank. Fifteen feet west of the water a ring of stones holds grey ash beside a closed wooden crate, orange whole fruit, split skins, and a couple of bowls. Glossy red berries hang on short thick stems at the wet margin, water beading on ridged skin. Twenty feet west of the prints, mossy terrace walls and stacked garden stone rise out of the trees. The river knocks against the bank, and the burst skins smell sharp and sweet in the dirt.
 
 ---
-## At a glance
+## At a Glance
 Landing Bank is the first grassland mouth of [[Aruhe - River]] after [[Aruhe - Old Gardens]], where the water cuts [[Aruhe - Grasslands]] open. People already stopped here and walked north upriver. Stay on the terrace edge and the cut can be skipped; drop into the grass and it remains water, prints, and the used stop. North along the prints is [[Aruhe - Grasslands Torn Crossing]]. South through the terrace line returns toward [[Aruhe - Beach|Western Landing]].
 
 ---

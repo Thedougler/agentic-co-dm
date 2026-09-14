@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Ashkevet]] is named as a Dravosi prison already in older notes, abandoned a generation ago. The [[Lavinia Sordi]] source says the timeline does not cleanly fit and leaves her workplace as a different unnamed facility.
 

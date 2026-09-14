@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Rin Dola]] is a named island or site in the western [[Midchain]]. A reclusive cartographer sells uncannily accurate charts of places she insists she's never visited.

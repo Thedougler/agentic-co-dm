@@ -37,7 +37,7 @@ relationships:
 > [!narration] Narration
 > The river runs bright turquoise against a narrow strip of wet sand, with pale stone showing through the current and tall gold-green grass crowding the bank. Three fruiting bushes stand along the margin like stopping points, their branches heavy with tawny globes while split rinds and whole fallen fruit lie under the roots. Near the water, a rough wooden pole is lashed over a short frame, with one thin line still dangling into the current. Fish bones and silver scales scatter across the sand.
 
-## At a glance
+## At a Glance
 
 Line Bank is a used fruiting margin of [[Aruhe - River]] inside [[Aruhe - Grasslands]], just upvalley of [[Aruhe - Grasslands Torn Crossing]]. People already ate here and left a fishing line in the water. Travelers can stay on a ridge or grass edge to skip the piles, line, and prints; dropping into the grass reveals three fruit stops, a pole in the current, and cover that hides a standing body. Downstream returns to Torn Crossing. This stretch is not [[Aruhe - River Slack Basin]].
 

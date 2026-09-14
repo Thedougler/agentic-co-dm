@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Cade's Fortune]] is a named island or site in the western [[Midchain]]. A dozen expeditions have surveyed this "treasure island;" each certain the map was almost right.

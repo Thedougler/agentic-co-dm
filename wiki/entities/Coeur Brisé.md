@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Coeur Brisé]] is a named island or site in the eastern [[Midchain]]. Site of a centuries-old broken marriage pact between two feuding families; still technically unresolved.
 

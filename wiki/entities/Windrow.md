@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Windrow]] is a named island or site in the eastern [[Midchain]]. Disputes; courtships; and trade deals settled by competitive kite-flying.
 

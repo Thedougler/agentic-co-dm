@@ -27,7 +27,7 @@ region: "eastern Midchain / Maw edge"
 
 
 
-## At a glance
+## At a Glance
 A boomtown staging dives on the [[Shelfworks]], the Antheri salvage field above the Maw; feels temporary, lucrative, and one bad line from empty.
 
 ## Aspects
@@ -49,7 +49,7 @@ A boomtown staging dives on the [[Shelfworks]], the Antheri salvage field above 
 - Hire or sabotage a dive.
 - Find the last supplies, hands, or honest gossip before the trench.
 
-## Secrets (DM)
+## Secrets
 The exact boomtown authority and claim system are open; the Red Lady wreck is on the eastern edge of the Shelfworks field.
 
 ## Drowned Maw ingest — split harbor

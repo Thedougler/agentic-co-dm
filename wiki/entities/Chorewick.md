@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Chorewick]] is a named island or site in the western [[Midchain]]. A cooperative of escaped indentured workers; strict and fair; deeply suspicious of the well-dressed.

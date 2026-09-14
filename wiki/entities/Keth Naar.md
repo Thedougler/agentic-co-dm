@@ -25,7 +25,7 @@ region: "Shattered Sea"
 > [!narration] Narration
 > Keth Naar is where Perrin washed up alone after the water boiled beneath the Vestra and lightning broke a clear sky.
 
-## At a glance
+## At a Glance
 The wash-up point for [[Perrin Black-Jaw]] after the [[Vestra]] sinking; feels like a survivor's shore and an unreliable witness.
 
 ## Canon

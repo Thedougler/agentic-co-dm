@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Sandtable Shoal]] sits in the middle [[Central Strait]] south of [[Aldenmere]]. The bottom rises from two hundred feet to under forty feet over about two miles and shifts the Blue Lane slightly south. Giant octopuses lurk in wreckage around it. A [[Kalowe]] operator holds the Crown salvage contract; the [[Harwick]] Admiralty remains dissatisfied with that arrangement.
 

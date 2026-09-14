@@ -27,7 +27,7 @@ region: "south of Midchain"
 
 
 
-## At a glance
+## At a Glance
 Seasonal calm channels south of the Midchain, sliding 50–100 miles with the season; feels silent, exposed, and watched.
 
 ## Aspects
@@ -49,5 +49,5 @@ Seasonal calm channels south of the Midchain, sliding 50–100 miles with the se
 - Use the calm as a back door around Strait inspection.
 - Find the correct seasonal position before the still water finds the ship.
 
-## Secrets (DM)
+## Secrets
 The dragon and timing of its patrol are dump facts; motives and lair remain open.

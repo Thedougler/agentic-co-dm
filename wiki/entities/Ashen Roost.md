@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Ashen Roost]] is a named island or site in the southern [[Midchain]]. Nesting grounds for firebirds that scorch and regrow the island in patches. The ash sells for a fortune.

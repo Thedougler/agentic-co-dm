@@ -25,7 +25,7 @@ region: "Drowned Maw / Antheri wall"
 > [!narration] Narration
 > Two hundred feet below the Shelfworks, residential stone continues into sealed chambers where ordinary doors and floors stop making sense. Pumps hammer in the dark; warm water carries hot iron upward.
 
-## At a glance
+## At a Glance
 Antheri residential tier from 200–500 feet below the Maw shelf; feels sealed, pressurized, and built for bodies that did not need floors or air.
 
 ## Canon
@@ -40,7 +40,7 @@ Antheri residential tier from 200–500 feet below the Maw shelf; feels sealed, 
 - → [[Fathomrush]] (company staging)
 - → [[Antheri]] · [[Drowned Maw]]
 
-## Secrets (DM)
+## Secrets
 The residential tier is also a machine route. Its soul-pledge architecture may explain [[Auralis]], but whether other pledged minds still run is unresolved.
 
 ## Provenance

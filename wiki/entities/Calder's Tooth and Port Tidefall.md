@@ -25,7 +25,7 @@ region: "Crown Islands"
 > [!narration] Narration
 > Three cliff tiers drop to the water: docks at the base, a trade shelf on the face, and guns on the crown. An inspection pier stands in the approach, and black nooses hang over the gate.
 
-## At a glance
+## At a Glance
 Three tiers on the cliff: docks at the water, a trade shelf on the face, and [[Fort Crestwall]] on the crown with the guns. Every ship entering the western Strait should stop at the Inspection Pier, answer questions, and show papers.
 
 ## Two authorities
@@ -56,7 +56,7 @@ Giant bats roost in caves and sinkholes. Giant boar tear the wet ridges. Giant w
 - → [[Dravosi Crown]] · [[Governor Voss]] · [[Rupert Knighton]] · [[Tessarine Concordat]] · [[Silkvane]] · [[Amberreach]]
 - → [[South Harbour]] · [[Osha's Slip]] · [[Cape Solitude]] · [[High Line]] · [[Marrow]] · [[Overland Track]] · [[The Passage]]
 
-## Secrets (DM)
+## Secrets
 The sealed Crestwall orders and the vaults beneath the fort are separate layers of Crown secrecy. The Governor never saw the orders; he also does not know the reason for the extra companies. The Tessarine house is a separate pressure: legal paper, credit, and sealed mail rather than Admiralty force.
 
 **Provenance:** Dump source staged at [[inbox/archive/FILED-2026-09-05-tessarine-concordat.md]]. Legacy read-only context: `/Users/nick/shattered-sea/wiki/shattered-sea/settlement-tidefall.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/business-tessarine-trade-house.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/location-fort-crestwall.md`.

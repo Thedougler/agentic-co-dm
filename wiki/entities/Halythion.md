@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Halythion]] is a named island or site in the eastern [[Midchain]]. Ancient settlement built into the Teikhinos Reef; invisible from the surface; older than any colonial record.
 

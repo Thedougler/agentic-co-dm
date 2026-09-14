@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Nine Bells]] is a named island or site in the western [[Midchain]]. Rival lighthouse-keeper families; each certain their own bell rings truest.

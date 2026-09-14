@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Ravasol]] is a named island or site in the southern [[Midchain]]. Stilt village whose real business happens on the rooftops; run by a network of gossiping children.

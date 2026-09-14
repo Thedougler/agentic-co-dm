@@ -136,7 +136,7 @@ If the agenda completes, the taken move on Passage terms and the Crown does not 
 | [[Midchain]] | Contested | Sea lanes the Passage can use without staying on charts. | Crown cutters can run the main lanes. |
 | [[Aruhe - Hungry Isle]] | Temporary | A possible new route, or a route they must refuse. | The survey is still owed. |
 
-## Relationships
+## Connections
 
 | Faction / person | Stance | What Passage wants from them | Leverage, debt, or friction |
 | --- | --- | --- | --- |

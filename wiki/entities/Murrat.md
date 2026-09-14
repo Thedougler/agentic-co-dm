@@ -27,7 +27,7 @@ region: "Northern Midchain"
 
 
 
-## At a glance
+## At a Glance
 A mile-and-a-half limestone reef that looks empty until canopy closes twenty feet inland; feels hunted before the first rope bridge.
 
 ## Aspects
@@ -49,5 +49,5 @@ A mile-and-a-half limestone reef that looks empty until canopy closes twenty fee
 - Land only with a reason that survives local blood custom.
 - Find the eastern reef's true length before the tide pulls a boat onto two existing wrecks.
 
-## Secrets (DM)
+## Secrets
 The kin-villages' internal law and the reason for the two wrecks remain open.

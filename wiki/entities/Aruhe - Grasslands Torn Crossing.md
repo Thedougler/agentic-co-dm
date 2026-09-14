@@ -26,7 +26,7 @@ summary: Flood-scoured grassland crossing where prints, slick stone, razer-grass
 > Turquoise river water breaks around a torn lip of pale stone and black rock, leaving a muddy crossing where flattened grass, hooflike prints, and wet stones braid through the flood cut. Tall gold-green grass crowds both sides, but the path keeps bending around waist-high white stands whose glassy blades hold bright points of light instead of swaying with the seed heads. The inland side ends in a dark jungle wall. Water knocks against the rocks, mud sucks at each step, and the pale stalks make a thin ticking sound when the wind reaches them.
 
 ---
-## At a glance
+## At a Glance
 Torn Crossing is the rock-and-water break inside [[Aruhe - Grasslands]], just upvalley of [[Aruhe - River Landing Bank]]. Unlike the open grassland river lane, this stretch is a flood tear: exposed black rocks, a pale stone shelf, crushed stems, fast water, and pale [[Aruhe - Razer-Grass]] stands that force travelers to snake through the mud instead of walking straight. People already walked the crushed corridor toward inland smoke. Stay on a ridge or grass edge and the lane can be skipped; drop into the cut and it becomes water, prints, slick stone, glass stands, and cover that hides a standing body. Downstream returns to Landing Bank. A [[Aruhe - Spiguar]] owns this grass channel and hunts [[Wolfrabbit|wolfrabbit]] packs that work the cut.
 
 ---

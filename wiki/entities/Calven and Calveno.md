@@ -25,7 +25,7 @@ region: "Crown Islands"
 > [!narration] Narration
 > Marsh and tidal flats run up to farms on a middle plateau, then to one city on the only solid ground. Canal water is the street. Pale four- and five-storey buildings line the harbour, and an unmarked pale building watches the far end without a sign.
 
-## At a glance
+## At a Glance
 Calven is older, lower, and wetter: marsh, tidal flats, farms on a middle plateau, and one city on the only solid ground that would take a foundation. Calveno's harbour flies the Dravosi flag; the money does not.
 
 ## Calveno's visible work

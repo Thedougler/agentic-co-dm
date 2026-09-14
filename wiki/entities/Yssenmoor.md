@@ -26,7 +26,7 @@ region: "Midchain"
 > Yssenmoor is three miles of bog under fog that does not lift, with no dry landing. Sound arrives before its source across the wet ground. A thumb-sized quartz top turns differently here than on ordinary Midchain water.
 
 
-## At a glance
+## At a Glance
 A place over a hidden ley line that reacts to [[Fate Spinner]]; feels like an unresolved point of contact between old power and a watchful relic.
 
 ## Five-sentence kernel
@@ -53,7 +53,7 @@ A place over a hidden ley line that reacts to [[Fate Spinner]]; feels like an un
 - Question Sir Quackers about the ley line; his understanding is limited.
 - Prevent or follow the imprint’s use by Vantyrus.
 
-## Secrets (DM)
+## Secrets
 The place’s settlement, terrain, routes, and exact ley-line behavior are unknown beyond the hidden line and the reaction described above.
 
 ## Geography ingest — physical approach

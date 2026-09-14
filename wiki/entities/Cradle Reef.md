@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Cradle Reef]] is a named island or site in the western [[Midchain]]. A sea dragon nursery reef. The mothers hide themselves.

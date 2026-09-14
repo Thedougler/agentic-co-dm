@@ -26,7 +26,7 @@ region: "Sunken Crown"
 > [!narration] Narration
 > Five small islands ring a dark blue hole. An older house is cut into black cliff stone, kelp on the pillars, reachable only when the surge allows a known approach.
 
-## At a glance
+## At a Glance
 On Vel Orn in the [[Sunken Crown]], five small islands ring the [[Blue Hole]]. Umberlee's older house is cut into black cliff stone, reachable only when the surge is timed and the approach is known. It is not a working-quay collection point: its worship reaches toward the drowned rather than the living.
 
 ## Shrine

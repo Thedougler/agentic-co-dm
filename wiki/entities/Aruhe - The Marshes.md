@@ -29,7 +29,7 @@ region: "aruhe"
 > The ground below Clear Lake does not quite become land. Black water lies between hummocks of fern, flooded roots, and trees rising from knee-deep pools, while curtains of vine turn every open direction into another wall of green. Stonepears hang from mossy branches along the firmer ridges, and dark rotheart clusters mark the sickest trees deeper in the flooded forest. Warm rainwater drips from leaves broad enough to hide beneath, insects whine in clouds around exposed skin, and something heavy moves through the reeds without showing more than a wake. Every few hundred feet the earth changes its mind: firm mud becomes sucking water, a shallow pool drops past the waist, or what looked like a channel ends beneath a mat of floating plants.
 
 ---
-## At a glance
+## At a Glance
 The Marshes begin along the wet southern shore of [[Aruhe - Clear Lake|Clear Lake]] and spread downhill through flooded rainforest before tightening into [[Aruhe - The Mangroves|the Mangroves]] near the sea. This is Aruhe's green hell: hot, saturated, insect-thick country where water and land keep exchanging places. Travel is possible, but there is almost never a road. Channels split, vanish under vegetation, or become too shallow for anything larger than a person. Raised roots and occasional ridges offer firmer ground, and predators use them for the same reason. The region is not empty swamp. It is one of the most biologically crowded parts of Aruhe, and the place where the island's excess decay works loudest: leaves blacken at the edges, dead wood does not stay finished, and luminous roots run through the wet ground toward the Grove.
 
 ---

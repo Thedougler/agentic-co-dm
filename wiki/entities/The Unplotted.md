@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[The Unplotted]] is a named island or site in the eastern [[Midchain]]. Never in the same place on two charts; yet ships always find it exactly where they need it.
 

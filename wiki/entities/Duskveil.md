@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Duskveil]] is a named island or site in the eastern [[Midchain]]. A permanent illusion of dusk blankets the island; source unknown.
 

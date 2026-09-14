@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[The Petrified Court]] is a named island or site in the eastern [[Midchain]]. Eerily lifelike statues arranged like a royal court mid-conversation.
 

@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Corvid's Table]] is a named island or site in the southern [[Midchain]]. Claimed by an enormous; unnervingly organized flock of ravens who trade favors for shiny objects.

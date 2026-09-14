@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Roste's Landing]] is a named island or site in the western [[Midchain]]. A free clinic that treats anyone; no questions; payment negotiable to the point of absurdity.

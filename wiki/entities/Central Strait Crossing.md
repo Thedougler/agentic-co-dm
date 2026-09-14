@@ -38,7 +38,7 @@ relationships:
 >
 > For days the horizon holds only weather and other sails. A ship that comes to grief here has no nearby beach to reach. The fastest water is also the water anyone looking for a particular hull looks at first.
 
-## At a glance
+## At a Glance
 
 This is the open-water leg a ship actually sails between [[Calven and Calveno]] on the northern shore and [[Kalowe]] on the southern [[Midchain]]. It follows the Blue Lane, the deepest fastest line of the Scatter Current, unmarked but universal.
 

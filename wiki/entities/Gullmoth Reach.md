@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Gullmoth Reach]] is a named island or site in the eastern [[Midchain]]. Thousands of flame-drawn fey moths roost here. Sailors extinguish lanterns a mile out.
 

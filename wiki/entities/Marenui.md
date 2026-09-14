@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Marenui]] is a named island or site in the western [[Midchain]]. A floating market of lashed hulls that relocates every night; findable only by rumor.

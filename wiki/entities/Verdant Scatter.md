@@ -27,7 +27,7 @@ region: "Shattered Sea"
 
 
 
-## At a glance
+## At a Glance
 The inhabited chain between the Galewall/Ashwalls and the Tail/Maw, with Crown water north and Midchain south; feels crowded, green, and only partly charted.
 
 ## Aspects
@@ -50,7 +50,7 @@ The inhabited chain between the Galewall/Ashwalls and the Tail/Maw, with Crown w
 - Choose between the official road and a route someone learned first.
 - Find a named island without turning every small place into a new government.
 
-## Secrets (DM)
+## Secrets
 “Verdant Scatter” is the inhabited chain name in the dump; keep it distinct from the five-island [[Verdant Teeth]] band.
 
 The northern arc is the [[Crown Islands]]. The southern arc is the [[Midchain]]. The [[Central Strait]] runs between them. The arcs meet at the [[Tail]].

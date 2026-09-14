@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Torvalline]] is a named island or site in the eastern [[Midchain]]. Shipbreaker's yard stripping wrecks for parts; half the Midchain's "used" rigging traces back here.
 

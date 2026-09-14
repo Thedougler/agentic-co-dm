@@ -25,7 +25,7 @@ region: "Midchain"
 > [!narration] Narration
 > Pale limestone rises above jungle canopy, a spire whose water routes do not match public charts.
 
-## At a glance
+## At a Glance
 An uncharted limestone spire in the Midchain jungle, said to hold collateral that outlived the debtors who left it. The place is unconfirmed and unmapped.
 
 ## Aspects
@@ -48,7 +48,7 @@ An uncharted limestone spire in the Midchain jungle, said to hold collateral tha
 - Learn whether a masterwork weapon, family piece, or locked trade-bar chest was sent here.
 - Decide whether a credential opens the vault or merely identifies the next debtor.
 
-## Secrets (DM)
+## Secrets
 The vault is the closest physical analogue to Cosimo's hoard in the source, but its existence, exact location, defences, and contents are not confirmed. Do not place it on a map until play earns that fact.
 
 **Provenance:** Dump source staged at [[inbox/archive/FILED-2026-09-05-tessarine-concordat.md]]. Legacy read-only context: `/Users/nick/shattered-sea/wiki/shattered-sea/_archive/the-vault-of-the-first-factor.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/faction-tessarine-concordat.md`.

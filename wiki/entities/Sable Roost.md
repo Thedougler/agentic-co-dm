@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Sable Roost]] is a named island or site in the southern [[Midchain]]. An airship graveyard; each hulk still watched by its one surviving crewmate.

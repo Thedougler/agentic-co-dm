@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Ferrand's Wager]] is a named island or site in the western [[Midchain]]. A floating casino whose house always knows exactly how much you can afford to lose.

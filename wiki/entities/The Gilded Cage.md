@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[The Gilded Cage]] is a named island or site in the eastern [[Midchain]]. Kept in flawless condition by an unseen caretaker; for guests who never arrive.
 

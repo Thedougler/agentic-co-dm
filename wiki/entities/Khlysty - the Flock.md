@@ -139,7 +139,7 @@ flexGrow=1
 | [[Tessarine Concordat]] | Hidden | Noble houses that can carry dormant threads. | Grigori wants the network to cross its courts. |
 | [[Chain Council]] | Hidden | Noble houses that can carry dormant threads. | Grigori wants the network to cross its courts. |
 
-## Relationships
+## Connections
 
 | Faction / person | Stance | What the Flock wants from them | Leverage, debt, or friction |
 | --- | --- | --- | --- |

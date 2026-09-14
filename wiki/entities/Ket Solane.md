@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Ket Solane]] is a named island or site in the southern [[Midchain]]. Looks abandoned; honeycombed with false-bottomed smugglers' caves the Chain Council hasn't finished mapping.

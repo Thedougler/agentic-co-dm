@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Lethys]] is a named island or site in the eastern [[Midchain]]. A colony of feral griffons; generations wild since a dead aristocrat's menagerie got loose.
 

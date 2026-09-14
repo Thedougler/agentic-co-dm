@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 > Hedged fields run down to a tidal mere about a mile across. In summer the water pulls back over mud and reed beds; in spring it deepens. Small boats work the shallows, and frog-noise carries off the reeds.
 
-## At a glance
+## At a Glance
 
 |                   |                                                                |
 | ----------------- | -------------------------------------------------------------- |

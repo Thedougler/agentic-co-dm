@@ -25,7 +25,7 @@ region: "under Calveno\u2019s Le Paludi"
 > [!narration] Narration
 > Warren is a Rattkin settlement beneath Calveno's Le Paludi: low passages join homes, stores, and hidden runs, with hand marks guiding turns. Murmurs, taps, and water overhead fill the dark. Damp earth, food, and canal water mark a refuge reached by a learned descent.
 
-## At a glance
+## At a Glance
 Rattkin settlement and deepest [[Passage]] anchor beneath Calveno; feels communal, hidden, and taught by elders.
 ## Five-sentence kernel
 - **Function:** A refuge and route anchor under Calveno, where elders teach movement through hidden places.
@@ -80,7 +80,7 @@ Quiet → Alert → Contested → Transformed: normal refuge → watchers/change
 - [[Calven and Calveno]] · [[Passage]] · [[Rattkin Runs and Black-Jaw Run]] · [[Sparhold]]
 ## Hooks
 - Operative leads on the taken 314, Passage obligations, and a safe route toward Midchain.
-## Secrets (DM)
+## Secrets
 - Exact layout, Rattkin politics, and meaning of unnamed marks are **DM seed (unconfirmed)**.
 ## Mechanics and return
 - Tight passages provide cover and Difficult Terrain; Influence/Study/Utilize for trust, marks, supplies. Failure costs trust/time/resources.

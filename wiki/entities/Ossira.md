@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Ossira]] is a named island or site in the southern [[Midchain]]. Coral spit so thick with nesting seabirds the beach shifts underfoot with molted feathers.

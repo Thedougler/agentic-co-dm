@@ -67,7 +67,7 @@ Keep the ship moving off [[Aruhe - Hungry Isle]] instead of anchoring close. The
 
 The ship can be boarded or intercepted; [[HCS Ordinance]] crossed the crew under merchant cover before revealing Crown authority. The supplied vehicle chassis does not establish initiative, ramming, weapon attacks, component targeting, sinking, or destruction procedures. The current combat state is therefore the Gargantuan hull at AC `11` and `130` hit points, with the remaining combat figures unresolved.
 
-## At the table
+## At the Table
 
 The ship is the party's mobile base and escape route. Keep her moving while the crew works inland, and make any Crown approach a question of concealment, flight, or confrontation.
 

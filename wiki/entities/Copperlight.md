@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Copperlight]] is a named island or site in the southern [[Midchain]]. Self-glowing minerals light the shore after dark. The miners work only at night.

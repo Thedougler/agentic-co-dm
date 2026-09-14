@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[The Anchorless]] is a named island or site in the western [[Midchain]]. A bare; unapproachable rock. Every ship that passes in sight reports the same dream that night.

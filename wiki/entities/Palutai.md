@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Palutai]] is a named island or site in the southern [[Midchain]]. Fishing families in perpetual feud. Newcomers get conscripted to a side within the hour.

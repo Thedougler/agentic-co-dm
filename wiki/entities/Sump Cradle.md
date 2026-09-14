@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Sump Cradle]] is a named island or site in the southern [[Midchain]]. Genuinely curative hot mud; always with one small; strange; permanent side effect.

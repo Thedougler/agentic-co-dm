@@ -26,6 +26,6 @@ visibility: dm
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Ral-Arn]] is the record island of the [[Sunken Crown]]. Oldest family histories and seasonal marks are kept in stone.

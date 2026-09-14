@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[High Line]] is a cliff hamlet on the northeast of [[Calder's Tooth and Port Tidefall]]. Nets are worked by winch.
 

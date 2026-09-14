@@ -43,7 +43,7 @@ _The Hungry Isle_
 > From offshore Aruhe is a vast green volcanic island in deep blue water. Forested ridges fold around a dark crater lake, gold-tan bands cut the lower slopes, pale beaches break the cliffs, and white water works a reef rim. No town, field, road, or smoke marks the island. Redheart berries mark the wet lowlands in small red flashes, while heavy giant's guavas punctuate the deeper canopy. The green and the gold crowd every slope, more life than an island this size should hold.
 
 ---
-## At a glance
+## At a Glance
 Aruhe is a vast untamed island in the eastern [[Midchain]]: about 500 miles end to end and about 150 miles across at its waist. No settlement is visible from offshore. [[Karath]] sits close to one western edge, not to the heart hundreds of miles inland. [[Uncertainty]] is at or around the island and remains mobile. Land at [[Aruhe - Beach|Western Landing]]; inland bands are [[Aruhe - Old Gardens|the Old Gardens]], [[Aruhe - Quiet Forest|the Quiet]], [[Aruhe - Grasslands|the Grasslands]], [[Aruhe - River|the River]], [[Aruhe - The Marshes|the Marshes]], [[Aruhe - The Mangroves|the Mangroves]], [[Aruhe - Clear Lake|Clear Lake]], [[Aruhe - Memorial Grove|Memorial Grove]], and [[Aruhe - Lava Tubes|the lava tubes]]. Observe from offshore to skip the landing; the southern mangrove wall is not a second approach. The heart still stays many days inland. [[Survey Aruhe as a Tangle anchor]] is open.
 
 ---

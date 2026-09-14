@@ -25,7 +25,7 @@ region: "Southern Midchain"
 > [!narration] Narration
 > A mossed terrace sits in the southern islands, with separate caste fires spaced around the stone. Nobody has a weapon out, and each group watches the other fires more than any path in.
 
-## At a glance
+## At a Glance
 Sanvashti is a mossed terrace in the Southern Midchain where rival Grung clans meet under an old truce. It feels less like neutral ground than a promise everyone is afraid to break.
 
 ## Function
