@@ -593,7 +593,8 @@ The wiki is configured through environment variables (see `.env.example`). The o
 - `COPILOT_HISTORY_PATH` — Where to find Copilot session data
 - `OBSIDIAN_LINK_FORMAT` — Internal link syntax: `wikilink` (default) or `markdown`
 - `WIKI_TOKEN_WARN_THRESHOLD` — Emit a warning in `wiki-status` when the full-wiki token estimate exceeds this value (default: `100000`). Set to `0` to disable. See `wiki-status` for the token footprint report.
-- `WIKI_STAGED_WRITES` — When `true`, all LLM-written pages go to `_staging/<category>/` for human review before promotion. See `wiki-setup` and `wiki-stage-commit` for details.
+- `WIKI_STAGED_WRITES` — When `true` (default for this vault via `.env.example`), all LLM-written **category** pages go to `_staging/<category>/` (updates as `*.patch.md`) for human review before promotion. See `wiki-setup`, `wiki-stage-commit`, `wiki/_staging/README.md`, and AGENTS.md **Staged wiki writes**.
+  - **Writer obligation:** every companion skill that files category pages (`wiki-ingest`, `wiki-capture` full mode, history/agent ingest writers, `session-recap`, surgical owner updates after accept) MUST honor this flag. Do **not** write straight into the live `entities/` / `journal/` / `concepts/` / … tree when the flag is `true`. Promote only via `wiki-stage-commit`. `_raw/` remains the ingest inbox (not a substitute for `_staging/`).
 - `CODE_UNDERSTANDING_BACKEND` — how wiki-update understands a project before distilling: `auto` (CodeGraph when available, else builtin ast-extract + rg; default), `builtin`, or `codegraph` (explicitly require; warn/error if unavailable).
 - `CODE_UNDERSTANDING_CODEGRAPH_BIN` — optional path to the codegraph binary when it isn't on PATH.
 

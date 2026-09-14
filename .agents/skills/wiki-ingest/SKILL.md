@@ -484,7 +484,7 @@ Keep DM-only, player-facing, mechanical, and spoken content on their surfaces. K
 - `index.md` and `log.md` are always updated immediately (low-risk tracking files). `hot.md` notes that staged writes are pending.
 - When writing staged pages, use the path `_staging/<category>/` — create the directory if it doesn't exist.
 
-**If `WIKI_STAGED_WRITES` is not set or is `false` (default):**
+**If `WIKI_STAGED_WRITES` is not `true` (unset/`false` — unusual here; this vault defaults `true` in `.env.example`):**
 
 **If creating a new page:**
 - Only when Source ideas allows a justified new page
