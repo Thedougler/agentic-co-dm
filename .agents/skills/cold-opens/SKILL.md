@@ -45,6 +45,10 @@ unless the request establishes another count.
 
 Follow AGENTS.md **HARD: entity-before-spoken** (Nick 2026-09-14). Mint/file required owner pages (kebab + templates; stage when `WIKI_STAGED_WRITES=true`) **before** filling this beat's spoken/`[!narration]`/action-card text. Vague stand-ins for missing entities = critical error — do not ship.
 
+## HARD: dm-facing-explicit
+
+Follow AGENTS.md **HARD: dm-facing-explicit** (Nick 2026-09-14) together with **entity-before-spoken**. DM layers (action cards, Be ready for, secrets, situation facts) state who/what/where/why concretely — no coy placeholders. Player `[!narration]` may withhold from players but stays grounded in named owners.
+
 ## Reference
 
 | Read | When |

@@ -18,6 +18,10 @@ Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). 
 
 Follow AGENTS.md **HARD: entity-before-spoken** (Nick 2026-09-14). Mint/file required owner pages (kebab + templates; stage when `WIKI_STAGED_WRITES=true`) **before** filling this beat's spoken/`[!narration]`/action-card text. Vague stand-ins for missing entities = critical error — do not ship.
 
+## HARD: dm-facing-explicit
+
+Follow AGENTS.md **HARD: dm-facing-explicit** (Nick 2026-09-14) together with **entity-before-spoken**. DM layers (action cards, Be ready for, secrets, situation facts) state who/what/where/why concretely — no coy placeholders. Player `[!narration]` may withhold from players but stays grounded in named owners.
+
 ## Copy-start
 
 Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: hook`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a Session 11 cockpit.

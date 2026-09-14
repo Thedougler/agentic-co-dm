@@ -6,7 +6,7 @@ Owner conventions for this vault. Load before every write to `wiki/`. Overrides 
 
 Write **complete-sentence human prose**. A DM reads this without decoding agent shorthand. Telegram stubs, slash-stacks, and AI note-speak are invalid (FR-018).
 
-**HARD (Nick 2026-09-14):** Production session-prep / TotM / spoken text that names or requires an entity MUST have that owner page filed first (kebab + template; stage when `WIKI_STAGED_WRITES=true`). Vague stand-ins for missing entities do not ship — see root `AGENTS.md` entity-before-spoken.
+**HARD (Nick 2026-09-14):** Production session-prep / TotM / spoken text that names or requires an entity MUST have that owner page filed first (kebab + template; stage when `WIKI_STAGED_WRITES=true`). Vague stand-ins for missing entities do not ship — see root `AGENTS.md` entity-before-spoken. **DM-facing layers** (action cards, Be ready for, secrets, Wiki facts, owner pages): no coy/vague placeholders — see root `AGENTS.md` dm-facing-explicit.
 
 Classify each write against the stack table in `AGENTS.md`. Vault is `true` on wiki vault notes. Mixed documents classify per passage, then apply vault format to the whole note.
 

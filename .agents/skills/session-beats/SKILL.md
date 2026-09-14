@@ -31,6 +31,17 @@ Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagge
 Remap durable session-prep to `wiki/journal/sessions/<campaign-slug>/<session-number>/`. Templates live in `wiki/templates/`. Replace knowledge-bank terminology with wiki terminology, but do not change geographic river-bank language. Point at `docs/agents/work.md` rather than restating the glossary.
 
 
+## HARD: dm-facing-explicit (Nick 2026-09-14)
+
+**DM-facing content** (`visibility: dm`, action cards, Be ready for, secrets, situation facts, Wiki facts, owner pages): **no vagueness, non-specific placeholders, coy narration, or invented mystery.** The DM must have **all** scene/world facts available immediately. Making the DM decode coy agent writing = **critical error**.
+
+**Clarify vs player-safe TotM:** Player-facing `[!narration]` may withhold from *players*; it must still be grounded in named entities that exist (**HARD: entity-before-spoken**). DM layers must state who/what/where/why concretely — names, wants, true stakes — with a DM answer on the page for every planted mystery.
+
+**FAIL:** “a woman in the woods,” “unnamed survivors,” “something watches,” mystery with no DM answer on the page.
+**PASS:** Named `[[npc]]` with look/want/voice; named place; stated true invitation/threat.
+
+Pairs with entity-before-spoken. Completeness/explicitness gates — do **not** thin narrative craft.
+
 ## Filed session plan
 
 After accept, file one session plan at `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<number>-00-<Title>.md` copied from `wiki/templates/session-plan.md` with `type: session-prep` and `kind: session-plan`. Jobs: compass, Beat Map, Floating Beats, Pressure, PC Touchpoints, and links to typed beat pages. The plan MUST NOT duplicate Scene ends when, Zones, or Be ready for. Live beats are typed pages filled by their type skills.

@@ -39,6 +39,17 @@ Remap durable output paths from `campaigns/<slug>/` to `wiki/` (entities/journal
 
 All spoken copy is Work for the DM and player-safe; `[!narration]` is the spoken slot.
 
+## HARD: dm-facing-explicit (Nick 2026-09-14)
+
+**DM-facing content** (`visibility: dm`, action cards, Be ready for, secrets, situation facts, Wiki facts, owner pages): **no vagueness, non-specific placeholders, coy narration, or invented mystery.** The DM must have **all** scene/world facts available immediately. Making the DM decode coy agent writing = **critical error**.
+
+**Clarify vs player-safe TotM:** Player-facing `[!narration]` may withhold from *players*; it must still be grounded in named entities that exist (**HARD: entity-before-spoken**). DM layers must state who/what/where/why concretely — names, wants, true stakes — with a DM answer on the page for every planted mystery.
+
+**FAIL:** “a woman in the woods,” “unnamed survivors,” “something watches,” mystery with no DM answer on the page.
+**PASS:** Named `[[npc]]` with look/want/voice; named place; stated true invitation/threat.
+
+Pairs with entity-before-spoken. Completeness/explicitness gates — do **not** thin narrative craft.
+
 ## Ingest
 
 When `wiki-ingest` loads this skill, named ingest is DM approval for those sources (`docs/agents/work.md`). Write player-facing `[!narration]` on the chosen destination. Do not re-route ideas, chat-propose the same page, or put secrets, DCs, or unearned names in spoken text.
@@ -55,7 +66,7 @@ inventing the opening picture. Spoken look that depends on runtime player
 decisions (including turn-by-turn combat and top-of-round battlefield
 summaries) MUST NOT be prewritten.
 
-**Named entities.** Spoken/`[!narration]` MUST NOT hand-wave missing owners (vague “a figure”, “some item”) when the beat requires a specific entity — mint the owner page first (HARD entity-before-spoken). Incomplete also includes:
+**Named entities + DM layers.** Spoken/`[!narration]` MUST NOT hand-wave missing owners (vague “a figure”, “some item”) when the beat requires a specific entity — mint the owner page first (HARD entity-before-spoken). Player narration may withhold secrets from players; **DM-facing** slots (Be ready for, secrets, situation facts, action cards) MUST name who/what/where/why with a DM answer on the page — no coy mystery (HARD dm-facing-explicit). Incomplete also includes:
 
 **Agency.** Player-facing narration MUST describe the world. Incomplete:
 PC action, thought, emotion, intent, choice, success, or unresolved outcome;
