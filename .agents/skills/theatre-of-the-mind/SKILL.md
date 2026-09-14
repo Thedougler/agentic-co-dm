@@ -20,6 +20,15 @@ description: >-
 
 Prep only. Follow `docs/agents/work.md`.
 
+## HARD: entity-before-spoken (Nick 2026-09-14)
+
+**Production session content** (session-prep beats, TotM/`[!narration]`, action cards, spoken text) is **complete or it does not ship**. Vague/non-specific descriptions of unnamed people/things because the entity page is missing = **critical error**.
+
+**Dependency order (recursive):** If a beat/scene names or requires an NPC, item, creature, place, faction, vehicle, spell, quest, or other entity — **mint/file that owner page first** (current standards: kebab basename, matching `wiki/templates/`, land under `wiki/_staging/` when `WIKI_STAGED_WRITES=true`), **then** write/update the session/TotM text that depends on it. Even when Nick asks for a session that introduces new names — create the entities first. The DM cannot describe what does not exist.
+
+Agents MUST complete **all** recursive dependency steps to finish the goal — not only top-level, intermediary, or initial steps — in dependency order. This is a completeness gate; do **not** thin narrative craft to satisfy it.
+
+
 Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
 
 Players see nothing until the DM accepts and presents.
@@ -45,6 +54,8 @@ the session so the DM can read or paraphrase it without an agent and without
 inventing the opening picture. Spoken look that depends on runtime player
 decisions (including turn-by-turn combat and top-of-round battlefield
 summaries) MUST NOT be prewritten.
+
+**Named entities.** Spoken/`[!narration]` MUST NOT hand-wave missing owners (vague “a figure”, “some item”) when the beat requires a specific entity — mint the owner page first (HARD entity-before-spoken). Incomplete also includes:
 
 **Agency.** Player-facing narration MUST describe the world. Incomplete:
 PC action, thought, emotion, intent, choice, success, or unresolved outcome;

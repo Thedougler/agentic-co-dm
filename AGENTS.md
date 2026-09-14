@@ -40,9 +40,17 @@ The 019 loop lives in this file plus `docs/agents/work.md`. Reflection is offere
 
 If table aim is `missing`, ask the DM to name the players (at least one; tests use three) and the current campaign intent before treating Work as aimed.
 
+### HARD: entity-before-spoken (Nick 2026-09-14)
+
+**Production session content** (session-prep beats, TotM/`[!narration]`, action cards, spoken text) is **complete or it does not ship**. Vague/non-specific descriptions of unnamed people/things because the entity page is missing = **critical error**.
+
+**Dependency order (recursive):** If a beat/scene names or requires an NPC, item, creature, place, faction, vehicle, spell, quest, or other entity — **mint/file that owner page first** (kebab basename, matching `wiki/templates/`, `wiki/_staging/` when `WIKI_STAGED_WRITES=true`), **then** write/update the session/TotM text that depends on it. Even when Nick asks for a session that introduces new names — create the entities first. The DM cannot describe what does not exist.
+
+Agents MUST complete **all** recursive dependency steps to finish the goal — not only top-level, intermediary, or initial steps — in dependency order. Applies to `session-beats`, typed beat skills, `theatre-of-the-mind`, `cold-opens`, and Session Architect orchestration. Completeness gate — do **not** thin narrative craft.
+
 ### Gaps
 
-A missing wiki fact or missing Co-DM practice MUST NOT prevent playable Work in that sitting. When Work is offered despite a gap, name the gap. A gap that is only wasted context is closed without a DM proposal — token cost, helpers, and layout below.
+A missing wiki fact or missing Co-DM practice MUST NOT prevent playable Work in that sitting — **except** the entity-before-spoken HARD gate above (missing owners for named production-session dependencies are not an allowed gap; mint them first). When Work is offered despite a non-HARD gap, name the gap. A gap that is only wasted context is closed without a DM proposal — token cost, helpers, and layout below.
 
 ### Token cost
 
@@ -110,7 +118,7 @@ Reader is `agent` | `DM` | `players`. Unknown reader → `DM`. Vault is `true` i
 | Write, edit, or create content for a Climax | `climax-beats` |
 | Write, edit, or create content for a Resolution | `resolution-beats` |
 
-Unknown typed-beat job → classify the type first; do not default to `session-beats` for filling a beat. Named seams: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`.
+Unknown typed-beat job → classify the type first; do not default to `session-beats` for filling a beat. Named seams: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`. Before filling any typed beat or TotM spoken block, satisfy **HARD: entity-before-spoken** (mint required owners first).
 
 ## Wiki kind routing
 
