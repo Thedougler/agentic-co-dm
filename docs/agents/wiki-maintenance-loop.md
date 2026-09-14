@@ -4,7 +4,7 @@
 **Goal:** continuous vault health — lint → clean → organize → optimize — with minimal Nick babysitting, using **existing** repo skills/CLIs only.  
 **Do not invent parallel maintenance skills.**
 
-**Standing constraints:** conflict/redundancy first; no craft/narrative/mechanics thinning; equal-or-better agent output quality on dedupe (#71/#84/#87); scripts ≠ prose (CD); demotion freeze during migration; mass kebab rename gated until Nick greenlights (#80/#72); GitHub SoT; objective tokens via tiktoken when labeled (#86).
+**Standing constraints:** conflict/redundancy first; no craft/narrative/mechanics thinning; equal-or-better agent output quality on dedupe (#71/#84/#87); scripts ≠ prose (CD); demotion freeze during migration; legacy filename remorph (kebab / Aruhe / `00` strips) **greenlit**; other mass consolidates still gated; GitHub SoT; objective tokens via tiktoken when labeled (#86).
 
 ---
 
@@ -19,9 +19,9 @@ Run without fleet chat when clean. Emit compact JSON path+metric (no body dumps)
 | A1 | `./scripts/wiki-lint --json` | HARD keys only for fail-noise; soft findings listed separately |
 | A2 | `python3 scripts/context-waste-scan.py` | S3/S4 = **leads** (redundancy/conflict/infra), not shorten mandates |
 | A3 | `python3 scripts/token-count.py` (when #86 lands) | Optional footprint rollup; never ÷4 |
-| A4 | Filename lint (#72, when ready) | Spaces / `Aruhe -` prefix — **lint-only** until Nick greenlights remorph |
+| A4 | Filename lint | Spaces / `Aruhe` prefix / `00` prefix HARD — remorph `--apply` greenlit for those legacy strips |
 | A5 | Empty `_raw/` check | Ingest inbox must clear; report leftover staging files — never overwrite `_raw/` as live canon |
-| A6 | Dry-run / plan reports | Filename remorph, dedup audit, structural remorph plans — **report + editable plan only**; apply is Layer C / Nick |
+| A6 | Dry-run / plan reports | Dedup audit + structural remorph plans — report first; **filename legacy remorph apply is greenlit**; other applies stay Nick-gated |
 
 Layer A is **read-only scan + format/structure lint + dry-run plans**. Classify broken links (near-miss vs planned) as report-never-edit unless a deterministic safe fix exists. Lint-green ≠ fidelity (CD/Nick craft gate).
 
@@ -54,7 +54,7 @@ When cleaning or remorphing: prune **template fluff, duplicate section jobs, and
 
 - Lore invent / Midchain recreate / unapproved names / stubs replaced by invent
 - Link demotions during migration freeze; archive/demote ≠ delete without greenlight
-- Mass filename kebab rename / `Aruhe -` strip **apply** (dry-run OK in Layer A)
+- Mass consolidates **other than** greenlit filename legacy remorph (kebab / Aruhe / `00` strips)
 - `wiki-dedup --merge` / `--auto`
 - Auto-resolve contradictions; collapse conflicting rumors / public-secret into one truth; “enrich” by inventing to fill stubs
 - Craft cuts or instruction deletes for token/byte scores; thinning that loses output quality
@@ -100,7 +100,7 @@ CoS expands the existing Wiki lint keep-ahead routine; do not spawn duplicate ac
 - First keep-ahead establishes a **baseline**; later runs prefer **delta-only** digests (new/changed HARD + leads), not full reprint.
 - Dry-run / plan default; editable plan JSON for remorph/rename/dedup; blast-radius confirm before apply.
 - Confidence labels on packets (deterministic vs judgment).
-- Structural remorphs and mass renames ship as **GitHub PR diffs**, not silent vault edits.
+- Structural remorphs and filename remorphs ship as **GitHub PR diffs** (preferred), not silent multi-agent clobber. Filename legacy apply is greenlit; still prefer PR.
 - Dedup stays audit-only; conflicts become report pages / packets — never auto-merge.
 
 ## Nick-visible outputs
@@ -110,7 +110,7 @@ CoS expands the existing Wiki lint keep-ahead routine; do not spawn duplicate ac
 | Clean keep-ahead | Nothing |
 | HARD clusters / decisions | Ranked digest + who owns the packet |
 | Weekly | Knowledge digest (`wiki-digest`) |
-| Greenlight gates | Mass rename, dedup merge, demotion thaw, destructive consolidate, contradiction resolution, orphan delete/archive |
+| Greenlight gates | Dedup merge, demotion thaw, destructive consolidate, contradiction resolution, orphan delete/archive (filename kebab/Aruhe/`00` remorph apply is **already greenlit**) |
 
 ---
 

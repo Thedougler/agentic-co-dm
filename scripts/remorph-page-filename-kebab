@@ -7,15 +7,14 @@ leaves redirects_to stub at old basename, adds old stem as alias on the live pag
 rewrites path-qualified and safe bare-stem wikilinks.
 
 Skip: _archive/_raw/templates/_meta/attachments/reserved; redirects_to stubs.
-GATED: do not mass --apply on the live vault until Nick greenlights.
-Prove --apply only on a temp vault copy.
+GREENLIT for legacy strips (kebab / Aruhe place prefixes / leading 00-00 prefixes). Prefer GitHub PR diffs. Prove on a temp vault copy when unsure.
 
 Usage (repo root):
   ./scripts/remorph-page-filename-kebab --dry-run [--wiki wiki|--vault wiki]
   ./scripts/remorph-page-filename-kebab --apply [--wiki wiki|--vault wiki]
   ./scripts/remorph-page-filename-kebab --dry-run --json
 
-GATED — no live mass apply until Nick greenlights.
+GREENLIT — legacy filename remorph apply allowed (kebab / Aruhe / 00 strips). Prefer PR diffs.
 """
 from __future__ import annotations
 
@@ -101,7 +100,7 @@ def page_slug_from_title(title: str) -> str:
 def target_stem(stem: str, title: str, fields: dict[str, str]) -> tuple[str, str] | None:
     """Return (new_stem, reason) if rename needed, else None.
 
-    Scope (gated remorph): spaced basenames, Aruhe-prefix, non-canonical Session
+    Scope (greenlit remorph): spaced basenames, Aruhe-prefix, leading 00/00- prefixes, non-canonical Session
     recaps, and spaced Session plan/beat forms. Already space-free non-Aruhe
     kebab stems are left alone even if title slug differs (no mass casefold).
     """
@@ -326,7 +325,7 @@ def main(argv: list[str] | None = None) -> int:
         "plans": [asdict(p) for p in plans],
         "skips": skips,
         "errors": errors,
-        "gated": "Do not mass --apply on live vault until Nick greenlights.",
+        "gated": "GREENLIT for kebab/Aruhe/00 legacy strips; prefer GitHub PR diffs.",
     }
 
     if args.apply:

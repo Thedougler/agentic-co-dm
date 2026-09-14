@@ -95,14 +95,18 @@ Wiki page `.md` **basenames** (not attachment images — those stay kebab `{slug
 
 **Slug function (mint / rename):**
 1. Start from `title` (or the intended display name).
-2. Strip a leading legacy `Aruhe - ` / `Aruhe -` prefix (content about Aruhe stays; the prefix is dump legacy — do not preserve on new files or renames).
-3. Trim; replace each run of whitespace with a single `-`.
-4. Remove apostrophes (`'` / `’`); keep existing hyphens that separate words.
-5. Strip characters other than letters, digits, and `-` (no `/\:*?"<>|`, commas, etc.).
-6. Collapse repeated `-`; trim leading/trailing `-`.
-7. Result must contain **no spaces**. Prefer lowercase kebab for new mints (`hungry-isle.md`); do not invent a second parallel slug if one already matches this function.
+2. Strip leading legacy place-name prefixes (`Aruhe - `, `Aruhe -`, `Aruhe `) — content about the place stays in body/`title`; the prefix is dump legacy.
+3. Strip leading `00` / `00-` / `00_` filename prefixes (including templates — e.g. `00-shared-grammar` → `shared-grammar`). **Banned** anywhere in the live vault.
+4. Trim; replace each run of whitespace with a single `-`.
+5. Remove apostrophes (`'` / `’`); keep existing hyphens that separate words.
+6. Strip characters other than letters, digits, and `-` (no `/\:*?"<>|`, commas, etc.).
+7. Collapse repeated `-`; trim leading/trailing `-`.
+8. Result must contain **no spaces**. Prefer lowercase kebab for new mints (`hungry-isle.md`).
 
-Example: `title: Jean-Claude Tabarnack` → `wiki/entities/pc/jean-claude-tabarnack.md`. Example: legacy `Aruhe - Hungry Isle.md` → `hungry-isle.md` (under the correct `entities/{type}/`), with `title` still naming Hungry Isle / Aruhe as content requires.
+**Legacy = wrong:** current standards exclusively. Do not preserve spaced names, `Aruhe` place prefixes, or `00`/`00-` prefixes on mint or remorph.
+
+Example: `title: Jean-Claude Tabarnack` → `wiki/entities/pc/jean-claude-tabarnack.md`. Example: `Aruhe - Hungry Isle.md` → `hungry-isle.md`. Example: `00-shared-grammar.md` → `shared-grammar.md`.
+
 
 **Uniqueness:** vault-wide unique stem (no two live `.md` files share the same basename across folders). Prefer clearer titles/slugs over folder shadowing.
 
@@ -116,11 +120,11 @@ No separate `recaps/` tree; no flat `wiki/journal/Session-…`.
 
 **Ingest minting:** `wiki/entities/{type}/{kebab-slug}.md` from `title` via the slug function above (depth 1). Do not mint spaced basenames. Manifest / qmd keys track vault-relative paths (prefer relative keys).
 
-**No mass rename** in design PRs. Lint (#72) + remorph apply only after Nick greenlights. Live vault may still have spaced names until then.
+**Remorph apply greenlit** for legacy strips: kebab (no spaces), strip `Aruhe` place prefixes, strip `00`/`00-` prefixes — run `scripts/remorph-page-filename-kebab --apply` (GitHub PR diffs preferred). Other destructive consolidates stay gated. Live vault still being remorphed until clean.
 
 Structural context waste (multi-H1 satellites, Foundry dump-copy beside Sheet, empty sections left in place) is a token bug — see `docs/agents/context-waste-method.md`. Not a prose-quality score.
 
-Cross-kind DM-usability rules for templates and filed pages: frontmatter core, shared Title Case headings (`At a Glance`, `At the Table`, `Connections`, `Secrets`, `Provenance`, `Art`), callout surfaces, omit-empty, and no synonym headings for the same job. Full text: `wiki/templates/00-shared-grammar.md`. Image assets: flat `wiki/attachments/{subject-slug}-{role}.{ext}` with roles `banner`\|`portrait`\|`token`\|`battlemap`\|`overview`\|`reference`\|`handout`\|`teaser` (see shared grammar Attachment filenames).
+Cross-kind DM-usability rules for templates and filed pages: frontmatter core, shared Title Case headings (`At a Glance`, `At the Table`, `Connections`, `Secrets`, `Provenance`, `Art`), callout surfaces, omit-empty, and no synonym headings for the same job. Full text: `wiki/templates/shared-grammar.md` (legacy file may still be `00-shared-grammar.md` until ATE renames). Image assets: flat `wiki/attachments/{subject-slug}-{role}.{ext}` with roles `banner`\|`portrait`\|`token`\|`battlemap`\|`overview`\|`reference`\|`handout`\|`teaser` (see shared grammar Attachment filenames).
 
 When a shared job appears, use the shared heading name. DM-visible labels use Title Case / spaced words — never snake_case in body or table Field columns (`One thing`, not `one_thing`); YAML keys may stay snake_case. Kind-specific job blocks keep their own names. `Relationships` is not a Connections synonym — use `## Connections`. Recap/session/run spoken surfaces use only `[!narration]`; owner pages may add `[!mechanic]` / `[!secret]`.
 
