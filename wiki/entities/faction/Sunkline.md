@@ -24,7 +24,7 @@ visibility: dm
 status: active
 kind: mercantile
 relationships:
-  - target: "[[Tessarine Concordat]]"
+  - target: "[[tessarine-concordat]]"
     type: related_to
   - target: "[[Voyvode]]"
     type: related_to
@@ -46,7 +46,7 @@ Keep a forged mid-shelf trial certificate from discovery long enough to preserve
 
 ## Current state
 
-[[Tessarine Concordat]] credit funds the salvage pipeline. One [[Fathomrush]] compound holds dive lines, rigs, and the forged certificate. The false log is under a loose floorboard at the Last Berth; [[Petera Ngata]] keeps the complete death list.
+[[tessarine-concordat]] credit funds the salvage pipeline. One [[Fathomrush]] compound holds dive lines, rigs, and the forged certificate. The false log is under a loose floorboard at the Last Berth; [[petera-ngata]] keeps the complete death list.
 
 ## Active agenda
 
@@ -54,18 +54,18 @@ Prevent certificate discovery while the memorial wall fills. Losing the compound
 
 ## Assets, people, places, relationships
 
-- Chief engineer: [[Adriana Tarquine]]
-- Store: [[Yevgenia Sorrel]]
+- Chief engineer: [[adriana-tarquine]]
+- Store: [[yevgenia-sorrel]]
 - Rival: [[Voyvode]]
-- Funder: [[Tessarine Concordat]]
+- Funder: [[tessarine-concordat]]
 - Places: [[Fathomrush]], [[Mid-Works]], Last Berth
 
 ## Connections
 
-- [[Tessarine Concordat]]
+- [[tessarine-concordat]]
 - [[Voyvode]]
 - [[Fathomrush]]
 - [[Mid-Works]]
-- [[Adriana Tarquine]]
-- [[Yevgenia Sorrel]]
-- [[Petera Ngata]]
+- [[adriana-tarquine]]
+- [[yevgenia-sorrel]]
+- [[petera-ngata]]

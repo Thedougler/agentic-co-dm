@@ -26,4 +26,4 @@ Syranita is a deity of the [[Aarakocra]] sky-pantheon, holding secondary/margina
 
 ## The Fact
 
-Syranita is an Aarakocra sky-pantheon deity with secondary/marginal-observance status. Not yet revealed at the table. Related deities include [[Remnis]] (primary observance) and [[Aerdrie Faenya]] (tertiary observance). [[Crissdalynn Khinriss]] holds marginal observance of Syranita.
+Syranita is an Aarakocra sky-pantheon deity with secondary/marginal-observance status. Not yet revealed at the table. Related deities include [[Remnis]] (primary observance) and [[Aerdrie Faenya]] (tertiary observance). [[crissdalynn-khinriss]] holds marginal observance of Syranita.

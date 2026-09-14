@@ -22,16 +22,16 @@ reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 relationships:
-  - target: "[[Grung clans]]"
+  - target: "[[grung-clans]]"
     type: related_to
-  - target: "[[Grung Color and the Sealing Rite]]"
+  - target: "[[grung-color-and-the-sealing-rite]]"
     type: related_to
 ---
 
 # Auralis
 
 
-**Wants:** to keep the [[Elemental Plane of Water]] sealed behind [[Drowned Maw]]'s fissure, wards that nearly failed once already. He's reaching through an unwitting bond now to use [[Perrin Black-Jaw|Perrin]] as a hand topside.
+**Wants:** to keep the [[elemental-plane-of-water]] sealed behind [[drowned-maw]]'s fissure, wards that nearly failed once already. He's reaching through an unwitting bond now to use [[perrin-black-jaw|Perrin]] as a hand topside.
 
 > [!narration] Narration
 > An elegant figure about eight feet tall stands beneath a blue-gray hood, its silver-gold faceplate carved with fine filigree and two blue-white lights burning where eyes should be. A long, embroidered cloak hangs over articulated armor, and a staff carries a bright blue orb like a captured star. Gold thread, aged brass, and dark charcoal metal break the cold blue glow; the voice arrives without a visible mouth, unhurried as something that calls a century not long.
@@ -42,16 +42,16 @@ The reference sheet labels Auralis an arcane automaton with a scholar role and a
 
 ## Connections
 
-- [[Drowned Maw]]: his domain on the border between [[Shattered Sea]] and what lies past the fissure, which he's sworn to [[Guard]] and has held shut since long before Umberlee claimed the waters above it.
+- [[drowned-maw]]: his domain on the border between [[shattered-sea]] and what lies past the fissure, which he's sworn to [[Guard]] and has held shut since long before Umberlee claimed the waters above it.
 - [[Antheri Ruins]]: his builders, not a god but [[Antheri]] technology. Dead builders lost a mind and built it a body that could survive the trench floor; that body is the Ruins' deep machine, and Auralis isn't inside it, he is it.
-- [[Elemental Plane of Water]]: what he guards.
+- [[elemental-plane-of-water]]: what he guards.
 - [[Leviathan]]: what he contains, the first thing through when the wards gave.
-- [[Perrin Black-Jaw]]: his unwitting warlock patron. Perrin credits his cloak with saving him when the [[Vestra]] went down; Auralis did, forging a pact Perrin never agreed to and doesn't know exists. He's already spotted the glowing whale once, on the crossing into [[Calven and Calveno]], Auralis reaching for the one hand he has topside. Why Auralis chose him stays unknown.
-- [[Pearl of Souls]]: destabilizing the fissure.
+- [[perrin-black-jaw]]: his unwitting warlock patron. Perrin credits his cloak with saving him when the [[Vestra]] went down; Auralis did, forging a pact Perrin never agreed to and doesn't know exists. He's already spotted the glowing whale once, on the crossing into [[calven-and-calveno]], Auralis reaching for the one hand he has topside. Why Auralis chose him stays unknown.
+- [[pearl-of-souls]]: destabilizing the fissure.
 - [[Shelfworks]]: salvagers picking at the upper tier, unknowingly loosening what keeps his wards standing.
 - [[Umberlee]]: his predecessor over the mortal water above the Maw. She moved in only after his containment work had already held two hundred years.
 - [[Waveservants]]: unaware of him.
-- [[Sentinels of the Eyrie]]: unaware of him, despite two centuries watching the Maw from the [[High Eyrie]] and seeing nothing.
+- [[sentinels-of-the-eyrie]]: unaware of him, despite two centuries watching the Maw from the [[high-eyrie]] and seeing nothing.
 
 ## Session Log
 

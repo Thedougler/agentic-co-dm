@@ -25,21 +25,21 @@ tier: supporting
 ![[noor-banner]]
 ![[noor-portrait]]
 
-**Ship's Cook (learning)** aboard the [[Uncertainty|HCS Surety]], formerly under [[Barnaby Rook]]. The youngest crew member, learning from both books and real sailing.
+**Ship's Cook (learning)** aboard the [[Uncertainty|HCS Surety]], formerly under [[barnaby-rook]]. The youngest crew member, learning from both books and real sailing.
 
 |             |                                                            |
 | ----------- | ---------------------------------------------------------- |
 | **Species** | [[Human]]                                                       |
-| **Post**    | Formerly [[Uncertainty|HCS Surety]], under [[Barnaby Rook]] |
+| **Post**    | Formerly [[Uncertainty|HCS Surety]], under [[barnaby-rook]] |
 | **Rank**    | Ship's Cook (learning)                                      |
 | **Crew Role** | Cook                                                      |
 | **Wage**    | 4 gp/week (cook rate)                                       |
 
 Fifteen, maybe. They hid during the fight. They came out with a sailing manual ready.
 
-They know every sailing manual by heart. They have sailed on almost none of them. They want to close the gap between what the manuals teach and real sailing. Any new ship is a better classroom than [[Calder's Tooth and Port Tidefall]].
+They know every sailing manual by heart. They have sailed on almost none of them. They want to close the gap between what the manuals teach and real sailing. Any new ship is a better classroom than [[calders-tooth-and-port-tidefall]].
 
-[[Shepherd Grigori]] calls them useful in the galley. They learned by watching. That's how they learn.
+[[shepherd-grigori]] calls them useful in the galley. They learned by watching. That's how they learn.
 
 **Aboard ship**, they're easy to direct and quick to ask questions. They handle the galley and ship's provisions well. They help with any other work and always check the manual for new problems. When the manual has no answer, they see the gap as proof the book needs updating.
 
@@ -51,12 +51,12 @@ No stats given in source.
 
 ## Connections
 
-- [[Uncertainty|HCS Surety]], where they serve as ship's cook (learning), formerly under [[Barnaby Rook]]'s command.
-- [[Barnaby Rook]], former captain of the HCS Surety, under whom they formerly served.
-- [[Shepherd Grigori]], who credited them, obliquely, with being useful in the galley.
+- [[Uncertainty|HCS Surety]], where they serve as ship's cook (learning), formerly under [[barnaby-rook]]'s command.
+- [[barnaby-rook]], former captain of the HCS Surety, under whom they formerly served.
+- [[shepherd-grigori]], who credited them, obliquely, with being useful in the galley.
 
 ## Session Log
 
 Noor hasn't appeared in play yet beyond the crew assembly. This page got its canon status from the session record, not from the original source notes.
 
-`vault/episodes/002/transcript.raw.md:63` lists them among the crew assembled aboard ship with [[Geoffrey Draves]], [[Sem Holst]] the shipwright, [[Alys Kuiper]] the surgeon, [[Old Faas]] for the rigging, and [[Thunk]]. They are a new NPC, youngest of the group, on thin single-mention evidence.
+`vault/episodes/002/transcript.raw.md:63` lists them among the crew assembled aboard ship with [[geoffrey-draves]], [[sem-holst]] the shipwright, [[alys-kuiper]] the surgeon, [[old-faas]] for the rigging, and [[Thunk]]. They are a new NPC, youngest of the group, on thin single-mention evidence.

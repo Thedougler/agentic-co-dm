@@ -19,9 +19,9 @@ reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 relationships:
-  - target: "[[Central Strait]]"
+  - target: "[[central-strait]]"
     type: related_to
-  - target: "[[Central Strait Crossing]]"
+  - target: "[[central-strait-crossing]]"
     type: related_to
 ---
 

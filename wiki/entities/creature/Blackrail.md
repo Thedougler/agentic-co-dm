@@ -23,9 +23,9 @@ region: aruhe
 role: bruiser
 cr: "9"
 relationships:
-  - target: "[[Aruhe - Lava Tubes]]"
+  - target: "[[lava-tubes]]"
     type: related_to
-  - target: "[[Cave Bats]]"
+  - target: "[[cave-bats]]"
     type: related_to
 ---
 # Blackrail
@@ -83,9 +83,9 @@ actions:
 
 ## Behavior
 
-- **Habitat.** Main cave tubes and the Great Bore under [[Aruhe]], especially [[Aruhe - Lava Tubes]]. It cannot enter spaces narrower than 5 feet.
+- **Habitat.** Main cave tubes and the Great Bore under [[Aruhe]], especially [[lava-tubes]]. It cannot enter spaces narrower than 5 feet.
 - **Behavior.** It listens first: vibration, dust rings, then the leg-rattle. One adult owns miles of main tube. Juveniles mean the adult is elsewhere; adults eat unrelated young.
-- **Diet.** [[Cave Bats]] and fallen surface animals. Venom is meant for deer-sized prey.
+- **Diet.** [[cave-bats]] and fallen surface animals. Venom is meant for deer-sized prey.
 - **Social Structure.** Solitary adult ownership of tube roads; juveniles separate from the adult's beat.
 
 ## Tactics

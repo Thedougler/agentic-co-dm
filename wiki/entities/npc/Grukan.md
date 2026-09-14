@@ -30,7 +30,7 @@ Grukan is the sole doorman at the [[Tallow Row]] card den, working the two-eye w
 ## Connections
 
 - [[Tallow Row]]. The den where he works the door.
-- [[Old Faas]]. A regular who answers Grukan's Draconic challenge in the same flat cadence he uses for everything. That's enough to get him waved through without a second look.
+- [[old-faas]]. A regular who answers Grukan's Draconic challenge in the same flat cadence he uses for everything. That's enough to get him waved through without a second look.
 - [[Thunk]]. Vetted and let through on Faas's word during a debt-paying visit to the den.
 
 ## Session Log

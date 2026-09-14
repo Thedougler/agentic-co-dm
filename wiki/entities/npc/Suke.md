@@ -22,11 +22,11 @@ tier: supporting
 ---
 # Suke
 
-A [[Murrat]]-born [[Moucheron]], Suke is the newest [[Five Blades]] member. She is still adjusting to work in [[Kalowe]].
+A [[Murrat]]-born [[Moucheron]], Suke is the newest [[five-blades]] member. She is still adjusting to work in [[Kalowe]].
 
 Quiet and watchful. She never eats. She keeps her back to the wall and avoids eye contact with strangers until she makes up her mind about them.
 
 ## Connections
 
-- [[Five Blades]]: newest member of the mercenary company.
+- [[five-blades]]: newest member of the mercenary company.
 - [[Murrat]]: origin.

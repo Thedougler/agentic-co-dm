@@ -22,7 +22,7 @@ tier: supporting
 ---
 # Varet
 
-[[Moucheron]] member of the [[Five Blades]]. She speaks for the company in contracts, quoting the feeding clause before signing.
+[[Moucheron]] member of the [[five-blades]]. She speaks for the company in contracts, quoting the feeding clause before signing.
 
 Small even for a Moucheron. She knows where everyone is in the room, a navigator's habit. She has worked the [[Midchain]] long enough to pick up a Kalowe accent in her Sylvan. She brokers contracts through [[The Flat Water]] in [[Kalowe]].
 
@@ -32,6 +32,6 @@ No stats given in source.
 
 ## Connections
 
-- [[Five Blades]]: the mercenary company she speaks contracts for.
+- [[five-blades]]: the mercenary company she speaks contracts for.
 - [[The Flat Water]]: where she brokers her contracts.
 - [[Ket]]: per Ket's page, would recognize him as a fellow [[Murrat]] native on sight if the party reaches Murrat.

@@ -1,79 +1,13 @@
 ---
-title: "Kalowes Frozen Council"
+title: Kalowes Frozen Council
+redirects_to: "[[kalowes-frozen-council|Kalowes Frozen Council]]"
 category: entities
-tags: ["shattered-sea", "npc"]
-sources:
-  - "campaign-os:kalowes-frozen-council.md"
-  - "campaign-os:kalowes-frozen-council-run-guide.md"
-  - "campaign-os:kalowes-frozen-council-narration-condition.md"
-created: 2026-09-13
-updated: 2026-09-13
-type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
-reveal: unrevealed
-campaign: shattered-sea
-visibility: dm
-summary: "Kalowe's closed council chamber and reef-gap shrine wait on the same arrival: nine seats, sealed mail, and a tribute basin."
-provenance:
-  extracted: 0.85
-  inferred: 0.10
-  ambiguous: 0.05
-base_confidence: 0.55
-tier: supporting
+tags: []
+sources: []
+created: 2026-09-14
+updated: 2026-09-14
 ---
+
 # Kalowes Frozen Council
 
-## Source notes
-
-> [!narration]
-> *[[Kalowe]] holds its [[Chain Council]] in a closed room above the harbour. Nine seats. No public gallery. The air in that chamber smells of lamp oil and wet wool. A mail record sits in a locked case against the wall, still unburned, the seal on the case unbroken since it was set.*
->
-> *At the reef gap, the [[Waveservant shrine]] takes every arriving hull within reach. The basin there holds ordinary tribute for now: coin, a knotted cord, a splinter of ship's timber offered for safe passage. The water around it is clear enough to show the coins on the bottom, and the current keeps them moving in a slow, patient circle.*
-
-## Run guide
-
-# Kalowe's Frozen Council
-
-## Prep
-
-Southwest bearing. Seven days on the Crown's search water. Delmar's return.
-
-## 1 — Arrive
-
-![[kalowes-frozen-council-narration-condition]]
-
-> [!check] Kalowe's Frozen Council
->
-> | Check | DC | Failure | Pass |
-> |---|---|---|---|
-> | History | 14 | a port | [[Delmar Fisk]]'s old commission can become blame or leverage |
-> | Perception | 13 | a shrine | [[Kalowe Waveservant Shrine]] takes tribute from every arriving hull |
-> | Investigation | 15 | council talk | [[Detto Kalash]]'s mail route, or the [[Fleet Commanders Chair]]'s old debts |
-
-![[kalowes-frozen-council#Premise]]
-
-The leg is [[Central Strait Crossing]].
-
-## 2 — What's live
-
-![[kalowes-frozen-council#Pressure]]
-
-![[kalowes-frozen-council#Actors]]
-
-> [!check] Actors
->
-> | Check | DC | Failure | Pass |
-> |---|---|---|---|
-> | Insight | 14 | four fronts | which Council voice is buying time |
-> | Persuasion | 16 | the room holds | a vote, a re-term, or [[Delmar Fisk]] named in public |
-> | Religion | 13 | a shrine fee | [[Waveservants]] want the sea's due before the meeting |
-
-## 3 — If they dig
-
-![[kalowes-frozen-council#Discoverable / Affectable]]
-
-## Exit
-
-- they refuse [[Kalowe]] or turn off → [[The Open Strait]]
-- they leave for another named port → that destination's run-guide
+Redirect → [[kalowes-frozen-council|Kalowes Frozen Council]].

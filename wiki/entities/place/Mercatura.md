@@ -20,7 +20,7 @@ campaign: shattered-sea
 visibility: dm
 kind: city
 relationships:
-  - target: "[[Solange Barret]]"
+  - target: "[[solange-barret]]"
     type: related_to
 ---
 # Mercatura
@@ -30,7 +30,7 @@ relationships:
 
 ## At a Glance
 
-Mercatura is a functioning city. [[Solange Barret]]'s ritual ran beneath it. Season 1 records [[Otar the Foul]]'s defeat and the Mercatura bombs as a closed thread.
+Mercatura is a functioning city. [[solange-barret]]'s ritual ran beneath it. Season 1 records [[otar-the-foul]]'s defeat and the Mercatura bombs as a closed thread.
 
 ## Current pressure
 
@@ -38,6 +38,6 @@ None established now. The bombs and Otar's defeat are closed.
 
 ## Connections
 
-- [[Solange Barret]]
-- [[Otar the Foul]]
-- [[Mercatura and Otar]]
+- [[solange-barret]]
+- [[otar-the-foul]]
+- [[mercatura-and-otar]]

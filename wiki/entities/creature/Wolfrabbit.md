@@ -24,11 +24,11 @@ region: aruhe
 role: skirmisher
 cr: 4
 relationships:
-  - target: "[[Aruhe - Old Gardens]]"
+  - target: "[[old-gardens]]"
     type: related_to
-  - target: "[[Aruhe - Razer-Grass]]"
+  - target: "[[razer-grass]]"
     type: related_to
-  - target: "[[Aruhe - Grubnade]]"
+  - target: "[[grubnade]]"
     type: related_to
 ---
 # Wolfrabbit
@@ -87,9 +87,9 @@ The supplied reference sheet establishes the Wolfrabbit as a tall, serval-like f
 
 ## Behavior
 
-- **Habitat.** Packs of four to six hunt the collapsed first terraces of [[Aruhe - Old Gardens]] at dawn and dusk. Their warrens honeycomb the terrace stone, and a bound from a terrace wall can cover 30 feet.
+- **Habitat.** Packs of four to six hunt the collapsed first terraces of [[old-gardens]] at dawn and dusk. Their warrens honeycomb the terrace stone, and a bound from a terrace wall can cover 30 feet.
 - **Behavior.** A Wolfrabbit is a wolf-sized, dark-striped hunting cat with long ears and a body built to spring. When one falls, the others eat it from hunger rather than spite. They will not den past the Old Mouth once daylight dies in the tube; something below outranks them.
-- **Diet.** They avoid [[Aruhe - Razer-Grass]], break a pounce for the smell of a mature [[Aruhe - Grubnade|Grubnade]], and drive prey toward [[Aruhe - Snakewood]] strike-lanes.
+- **Diet.** They avoid [[razer-grass]], break a pounce for the smell of a mature [[grubnade|Grubnade]], and drive prey toward [[snakewood]] strike-lanes.
 - **Social Structure.** Packs work as a single hunting body, but each member reacts to a fallen packmate. Corpse-eating is hunger, not spite.
 
 ## Tactics

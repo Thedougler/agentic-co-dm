@@ -20,22 +20,22 @@ reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 relationships:
-  - target: "[[Grung clans]]"
+  - target: "[[grung-clans]]"
     type: related_to
-  - target: "[[Jean-Claude Tabarnack]]"
+  - target: "[[jean-claude-tabarnack]]"
     type: related_to
-  - target: "[[Dravosi Crown]]"
+  - target: "[[dravosi-crown]]"
     type: related_to
 ---
 # Simone
 
-Simone is a purple Grung officer who holds the [[Sorn]] garrison, sells toxin through the [[Dravosi Crown]], and hunts her brother [[Jean-Claude Tabarnack]].
+Simone is a purple Grung officer who holds the [[Sorn]] garrison, sells toxin through the [[dravosi-crown]], and hunts her brother [[jean-claude-tabarnack]].
 
 ## Connections
 
-- [[Grung clans]]
-- [[Jean-Claude Tabarnack]]
-- [[Dravosi Crown]]
+- [[grung-clans]]
+- [[jean-claude-tabarnack]]
+- [[dravosi-crown]]
 
 ## Provenance
 

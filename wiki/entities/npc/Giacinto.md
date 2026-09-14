@@ -26,7 +26,7 @@ An elderly gnome craftsman, late 60s, who works a booth in Calveno's [[Velo Quar
 
 He recognizes his own handiwork on sight, a moustache he's sold by its hand-cut inner edge. He treats a customer's disguise as an ongoing professional relationship: he'll offer to re-seal a lifting edge without prompting, unprompted, in the tone of a doctor checking a healing wound. He isn't suspicious of anyone wearing his work, only professionally invested in it. His working theory about why his kits pass as ordinary in a festival crowd is precise: *"The moustache says 'I am in a costume.' The beret says 'I do not care that you know.' Together? invisible. Don't change anything."*
 
-The kits are more than a costume: paired with a beret and moustache, they let a wearer read as one of the city's performer-travelers instead of drawing notice. A social invisibility field in a Beffa-heavy crowd. This makes Giacinto a key beat for [[Jean-Claude Tabarnack|Jean-Claude]]'s cover in Calveno.
+The kits are more than a costume: paired with a beret and moustache, they let a wearer read as one of the city's performer-travelers instead of drawing notice. A social invisibility field in a Beffa-heavy crowd. This makes Giacinto a key beat for [[jean-claude-tabarnack|Jean-Claude]]'s cover in Calveno.
 
 Currently preparing ten sets of accessories for registered [[Beffa]] teams this week. A ready reason he's occupied at the booth during festival week.
 
@@ -57,5 +57,5 @@ No statistics recorded for this NPC.
 
 ## Connections
 
-- [[Jean-Claude Tabarnack]]: sold him the disguise kit central to his Calveno cover
-- [[Calven and Calveno]]: works the Velo Quarter
+- [[jean-claude-tabarnack]]: sold him the disguise kit central to his Calveno cover
+- [[calven-and-calveno]]: works the Velo Quarter

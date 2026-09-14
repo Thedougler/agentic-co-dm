@@ -38,7 +38,7 @@ Different clans use the terrace as a truce site. Caste fires remain separate: ea
 - The old moss and worn approaches make this a meeting place, not a settlement or open Grung town.
 
 ## Linked
-- [[Midchain]] · [[Verdant Teeth]] · [[Grung clans]]
+- [[Midchain]] · [[verdant-teeth]] · [[grung-clans]]
 
 ## Provenance
 Primary source: staged Nick dump, `inbox/archive/FILED-2026-09-05-grung-teeth.md`. Legacy continuity: `/Users/nick/shattered-sea/wiki/shattered-sea/region-midchain-south.md` (Sanvashti listed as a Grung truce site).

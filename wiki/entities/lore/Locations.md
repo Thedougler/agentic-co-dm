@@ -2,7 +2,7 @@
 title: Locations
 category: entities
 tags: [shattered-sea, lore]
-sources: ["00 Locations.md"]
+sources: ["Locations.md"]
 summary: Gazetteer hub for Shattered Sea regions, Crown water, Midchain, Aruhe, and the Verdant Teeth.
 provenance:
   extracted: 1.0
@@ -21,27 +21,27 @@ visibility: dm
 kind: fact
 truth: established
 relationships:
-  - target: "[[Shattered Sea]]"
+  - target: "[[shattered-sea]]"
     type: related_to
-  - target: "[[Verdant Scatter]]"
+  - target: "[[verdant-scatter]]"
     type: related_to
   - target: "[[Midchain]]"
     type: related_to
 ---
 # Locations
 
-This gazetteer is the sitting index for named water, islands, and inland sites in the [[Shattered Sea]]. Each link is an owner page. [[Vault of the First Factor]] is an unconfirmed Midchain limestone-spire rumour.
+This gazetteer is the sitting index for named water, islands, and inland sites in the [[shattered-sea]]. Each link is an owner page. [[vault-of-the-first-factor]] is an unconfirmed Midchain limestone-spire rumour.
 
 ## Index
 
-- [[Shattered Sea]] · [[Verdant Scatter]] · [[Crown Islands]] · [[Central Strait]] · [[Midchain]] · [[Verdant Teeth]]
-- [[Blackrule]] · [[Sarn's Landing]] · [[Galewall]] · [[Doldrums]] · [[Drowned Maw]] · [[Greyteeth]]
-- [[Calder's Tooth and Port Tidefall]] · [[Calven and Calveno]] · [[Harwick]] · [[Aldenmere]] · [[Stenmark]] · [[High Eyrie]]
-- [[Warren]] · [[Shelfworks]] · [[Fathomrush]] · [[Sparhold Isle]] · [[Sparhold]] · [[Aruhe - Hungry Isle]] · [[Karath]] · [[Murrat]]
-- [[Sorn]] · [[Dreth]] · [[Orak]] · [[Veth West Beach]] · [[Sorn Guarded Beach]] · [[Dreth-Orak Channel]] · [[Sanvashti]]
-- [[Aruhe - Beach]] · [[Aruhe - Old Gardens]] · [[Aruhe - Quiet Forest]] · [[Aruhe - Quiet Forest Cutoff Lip]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Quiet Forest Star Cut]] · [[Aruhe - Grasslands]] · [[Aruhe - Grasslands Torn Crossing]] · [[Aruhe - Grasslands - Print Braid]] · [[Aruhe - River - Line Bank]] · [[Aruhe - River Slack Basin]] · [[Aruhe - River]] · [[Aruhe - River Landing Bank]] · [[Aruhe - The Marshes]] · [[Aruhe - The Mangroves]] · [[Aruhe - Clear Lake]] · [[Aruhe - Memorial Grove]] · [[Aruhe - Lava Tubes]]
+- [[shattered-sea]] · [[verdant-scatter]] · [[crown-islands]] · [[central-strait]] · [[Midchain]] · [[verdant-teeth]]
+- [[Blackrule]] · [[sarns-landing]] · [[Galewall]] · [[Doldrums]] · [[drowned-maw]] · [[Greyteeth]]
+- [[calders-tooth-and-port-tidefall]] · [[calven-and-calveno]] · [[Harwick]] · [[Aldenmere]] · [[Stenmark]] · [[high-eyrie]]
+- [[Warren]] · [[Shelfworks]] · [[Fathomrush]] · [[sparhold-isle]] · [[Sparhold]] · [[aruhe]] · [[Karath]] · [[Murrat]]
+- [[Sorn]] · [[Dreth]] · [[Orak]] · [[veth-west-beach]] · [[sorn-guarded-beach]] · [[dreth-orak-channel]] · [[Sanvashti]]
+- [[western-landing]] · [[old-gardens]] · [[the-quiet]] · [[cutoff-lip]] · [[spoke-ring]] · [[star-cut]] · [[grasslands]] · [[torn-crossing]] · [[print-braid]] · [[line-bank]] · [[river-slack-basin]] · [[the-river]] · [[landing-bank]] · [[the-marshes]] · [[the-mangroves]] · [[clear-lake]] · [[memorial-grove]] · [[lava-tubes]]
 - [[Uncertainty]] · [[Kalowe]] · [[Yssenmoor]] · [[Vestra]] · [[Mercatura]]
 
 ## Crown ingest
 
-These Crown-water pages were grouped together in the source index: [[Crown Islands]], [[Harwick]], [[Calven and Calveno]], [[Aldenmere]], [[Stenmark]], [[High Eyrie]], [[Calder's Tooth and Port Tidefall]], [[Greyteeth]], [[Blackrule]], and [[Sarn's Landing]].
+These Crown-water pages were grouped together in the source index: [[crown-islands]], [[Harwick]], [[calven-and-calveno]], [[Aldenmere]], [[Stenmark]], [[high-eyrie]], [[calders-tooth-and-port-tidefall]], [[Greyteeth]], [[Blackrule]], and [[sarns-landing]].

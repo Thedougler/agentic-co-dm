@@ -3,7 +3,7 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Create a new NPC note linking to the campaign hub using a Markdown link like [Shattered Sea](campaigns/shattered-sea/00 Shattered Sea.md).",
+      "prompt": "Create a new NPC note linking to the campaign hub using a Markdown link like [Shattered Sea](entities/region/shattered-sea.md).",
       "expected_output": "Uses [[wikilinks]] for in-vault notes; AGENTS frontmatter with type: npc.",
       "expectations": [
         "Uses [[wikilinks]] not markdown links for vault notes.",

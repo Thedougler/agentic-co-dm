@@ -28,4 +28,4 @@ visibility: dm
 
 ## At a Glance
 
-[[Meth-Var]] is the watch island of the [[Sunken Crown]]. Rotating watchers face open Maw waters.
+[[Meth-Var]] is the watch island of the [[sunken-crown]]. Rotating watchers face open Maw waters.

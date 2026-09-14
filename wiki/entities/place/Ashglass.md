@@ -37,7 +37,7 @@ relationships:
 
 ## At a Glance
 
-[[Ashglass]] is a dead volcanic island in the eastern [[Midchain]]. [[Aleksander Malone]]'s note names it as a young red dragon's lair that does not overlap [[Blackrule]]. A later caldera note describes the same eastern dead volcano without reprinting the name; the identity is inferred. ^[inferred]
+[[Ashglass]] is a dead volcanic island in the eastern [[Midchain]]. [[aleksander-malone]]'s note names it as a young red dragon's lair that does not overlap [[Blackrule]]. A later caldera note describes the same eastern dead volcano without reprinting the name; the identity is inferred. ^[inferred]
 
 The old Iron Choir stub is discarded. Midchain pilots and salvagers pass a treasure rumor: something glints on the crater floor on a clear night. Crews have gone in. None have come back to confirm what they saw.
 

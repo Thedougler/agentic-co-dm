@@ -3,7 +3,7 @@ title: "Stenmark"
 category: entities
 tags: [shattered-sea, region]
 sources: ["Stenmark.md"]
-summary: "The easternmost Crown island: stone cliffs, cold deep water, a harbour face, thin farmland, and a signal station watching the discoloured water where the [[Drowned Maw]] begins."
+summary: "The easternmost Crown island: stone cliffs, cold deep water, a harbour face, thin farmland, and a signal station watching the discoloured water where the [[drowned-maw]] begins."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -26,7 +26,7 @@ region: "Crown Islands"
 > Stone cliffs drop into cold deep water on the easternmost Crown island. A harbour face and thin farmland sit under a signal station that watches a stain of discoloured sea.
 
 ## At a Glance
-The easternmost Crown island: stone cliffs, cold deep water, a harbour face, thin farmland, and a signal station watching the discoloured water where the [[Drowned Maw]] begins.
+The easternmost Crown island: stone cliffs, cold deep water, a harbour face, thin farmland, and a signal station watching the discoloured water where the [[drowned-maw]] begins.
 
 ## Crown watch
 Stenmark is the last Dravosi flag before the Maw. Its signal station watches the approaches, but the dump says its logs hide patterns [[Harwick]] has not noticed. Keep the pattern unnamed until play establishes it.
@@ -38,7 +38,7 @@ Stenmark is the last Dravosi flag before the Maw. Its signal station watches the
 Crown signal watchers, fishers, harbour workers, cliff life, and whatever the discoloured water refuses to name.
 
 ## Connections
-- → [[Crown Islands]] · [[Greyteeth]] · [[Drowned Maw]] · [[High Eyrie]]
+- → [[crown-islands]] · [[Greyteeth]] · [[drowned-maw]] · [[high-eyrie]]
 
 ## Secrets
 The signal-log pattern and the name withheld by station watchers remain unresolved. Do not calculate or explain the Maw from this note.

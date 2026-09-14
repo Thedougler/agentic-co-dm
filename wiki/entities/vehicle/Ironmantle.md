@@ -33,7 +33,7 @@ tier: supporting
 
 *Remnant Sloop · Tier 1 · Unmoored.*
 
-This Valcoran sloop carries one mast and iron plating below the waterline — dark rust where metal meets water, the wood hull old but sound, with a rough repair joint no yard afloat today could reproduce. Four iron-tipped sweep oars line the hull for when the wind dies, and in rough water the plating hums audibly against the swell. The iron itself is sound but rusts steadily; only Valcoran ironworking — a skill lost with the people who built her — can fix it properly, and regular oiling only slows the rust, never stops it. The wood, by contrast, takes an easy repair. Below decks, a small stern cabin sleeps one, hammock hooks along the forward area hold five more, and low ceilings and loud iron bracing crowd out most cargo room. She is the toughest hull in her tier and the slowest: her iron plating shrugs off punishment no wooden sloop would survive, but the same weight makes her the poorest turner and the worst runner in a chase. Four units of hold space sit empty — the iron bracing rules out most bastion upgrades, but a [[Carpenter's Shop]] (1 unit) fits the hold cleanly; anything else needs ironworking she can't currently get. Salvaged from the reefs off the [[Verdant Scatter]] and never reclaimed, she currently answers to no captain. The gun mounts hold steady in weather that would throw off a lighter hull, and the iron itself is enough to make most raiders look elsewhere for an easier target.
+This Valcoran sloop carries one mast and iron plating below the waterline — dark rust where metal meets water, the wood hull old but sound, with a rough repair joint no yard afloat today could reproduce. Four iron-tipped sweep oars line the hull for when the wind dies, and in rough water the plating hums audibly against the swell. The iron itself is sound but rusts steadily; only Valcoran ironworking — a skill lost with the people who built her — can fix it properly, and regular oiling only slows the rust, never stops it. The wood, by contrast, takes an easy repair. Below decks, a small stern cabin sleeps one, hammock hooks along the forward area hold five more, and low ceilings and loud iron bracing crowd out most cargo room. She is the toughest hull in her tier and the slowest: her iron plating shrugs off punishment no wooden sloop would survive, but the same weight makes her the poorest turner and the worst runner in a chase. Four units of hold space sit empty — the iron bracing rules out most bastion upgrades, but a [[Carpenter's Shop]] (1 unit) fits the hold cleanly; anything else needs ironworking she can't currently get. Salvaged from the reefs off the [[verdant-scatter]] and never reclaimed, she currently answers to no captain. The gun mounts hold steady in weather that would throw off a lighter hull, and the iron itself is enough to make most raiders look elsewhere for an easier target.
 
 ## Stats & Combat
 
@@ -74,7 +74,7 @@ Estimated Value: 3,500 gp (hull and fittings — no current shipyard can reprodu
 
 ## Connections
 
-- [[Verdant Scatter]]
-- [[Vestra]] ([[Fisk's Fleet]] comparison vessel)
-- [[Loud Argument]] ([[Fisk's Fleet]] comparison vessel)
-- [[Fernen]] ([[Fisk's Fleet]] comparison vessel)
+- [[verdant-scatter]]
+- [[Vestra]] ([[fisks-fleet]] comparison vessel)
+- [[Loud Argument]] ([[fisks-fleet]] comparison vessel)
+- [[Fernen]] ([[fisks-fleet]] comparison vessel)

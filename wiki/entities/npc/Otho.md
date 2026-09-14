@@ -21,9 +21,9 @@ reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 relationships:
-  - target: "[[Khlysty - the Flock]]"
+  - target: "[[khlysty-the-flock]]"
     type: related_to
-  - target: "[[Otel Karn]]"
+  - target: "[[otel-karn]]"
     type: related_to
 ---
 
@@ -54,7 +54,7 @@ Physical mannerisms: flicks a coin across his knuckles and claps a hand on a sho
 | Consistent method | Buys the next round and tells the wildest story in the room, nudging every conversation toward whatever sounds most fun to watch unfold. He never explains the cost underneath. |
 | Active problem | Strangers have arrived asking pointed questions about the duel that proved nobody on this island can die. It's the first real audience he's had for his handiwork in longer than he's aware of. |
 | Performance hooks | The barroom uncle who's bought every regular a drink they can't remember. Flicks a coin end over end across his knuckles without ever looking down. |
-| **Link of Relevance** | [[Perrin Black-Jaw]] failed the Arcana check identifying Grigori's necrotic magic in Session 03 and has suspected something's wrong ever since without knowing what. Meeting Otho, the source of Grigori's whole doctrine and the office of Korabl itself, is the piece that could finally give that suspicion real shape. |
+| **Link of Relevance** | [[perrin-black-jaw]] failed the Arcana check identifying Grigori's necrotic magic in Session 03 and has suspected something's wrong ever since without knowing what. Meeting Otho, the source of Grigori's whole doctrine and the office of Korabl itself, is the piece that could finally give that suspicion real shape. |
 
 > [!mechanic]
 > **Tradition:** Divine (archfey patron bargain). **School:** Necromancy.
@@ -64,9 +64,9 @@ Physical mannerisms: flicks a coin across his knuckles and claps a hand on a sho
 
 ## Stats & Combat
 
-Calibrated against the real crew (`vault/campaigns/shattered-sea/pcs/*.md`): [[Catarina Da'Virelli|Catarina Davirelli]] ([[Artificer]] 5), [[Crissdalynn Khinriss]] ([[Monk]] 5), [[Delmar Fisk]] ([[Rogue]] 5), [[Jean-Claude Tabarnack]] ([[Ranger]] 5), and [[Perrin Black-Jaw]] ([[Bard]] 3/[[Warlock]] 2), all level 5 as of Season 1.
+Calibrated against the real crew (`vault/campaigns/shattered-sea/pcs/*.md`): [[catarina-davirelli|Catarina Davirelli]] ([[Artificer]] 5), [[crissdalynn-khinriss]] ([[Monk]] 5), [[delmar-fisk]] ([[Rogue]] 5), [[jean-claude-tabarnack]] ([[Ranger]] 5), and [[perrin-black-jaw]] ([[Bard]] 3/[[Warlock]] 2), all level 5 as of Season 1.
 
-Otho follows the CR-built path (`vault/refs/vault/npc/references/villains.md`), designed to stay unwinnable by force well past this crew's current level. He's pitched in the spirit of [[Shepherd Grigori|Grigori]]'s own CR-19 [[Hierarch]] build, one that dominates and de-escalates instead of fighting to the death (`vault/campaigns/shattered-sea/npcs/shepherd-grigori.md` § Stats & Combat), but pitched a full tier above it: roughly CR 23-24, AC 21, 450+ HP.
+Otho follows the CR-built path (`vault/refs/vault/npc/references/villains.md`), designed to stay unwinnable by force well past this crew's current level. He's pitched in the spirit of [[shepherd-grigori|Grigori]]'s own CR-19 [[Hierarch]] build, one that dominates and de-escalates instead of fighting to the death (`vault/campaigns/shattered-sea/npcs/shepherd-grigori.md` § Stats & Combat), but pitched a full tier above it: roughly CR 23-24, AC 21, 450+ HP.
 
 - **Legendary Resistance (3/day) [HB]:** no action, negates a failed save.
 - **Legendary Actions (3/round, refresh at the start of his turn) [HB]:** *Fey Step*, teleport 60 ft. instantly, spending no action. *Beguile*, a gaze effect, a [[Wisdom]] save, charmed for 1 round. *Command the Isle*, a minor terrain effect drawn from Otel Karn itself, a hedge of thorns, a fog bank, a swarm of gulls, lasting 1 round. The island functions as his lair while he's on it.
@@ -76,10 +76,10 @@ Open combat is the Hardest of his three resolution paths by design (see the Toy 
 
 ## Connections
 
-- [[Otel Karn]]. His home in disguise, three generations deep, and the site of the original careless bargain.
-- [[Shepherd Grigori]]. His star disciple, the vessel who carried the office of Korabl further than any before him. Otho is obliviously proud of him and has no sense of how many centuries "my boy" has actually survived.
+- [[otel-karn]]. His home in disguise, three generations deep, and the site of the original careless bargain.
+- [[shepherd-grigori]]. His star disciple, the vessel who carried the office of Korabl further than any before him. Otho is obliviously proud of him and has no sense of how many centuries "my boy" has actually survived.
 - [[Khlysty]]. His original ecstatic teaching, carried off the island generations ago, curdled into their doctrine. He's never traced the line from his own old sermon to their sect.
-- [[Perrin Black-Jaw]]. Failed the Arcana check identifying Grigori's necrotic magic in Session 03 and has suspected something's wrong ever since without knowing what. Otho is the piece that could finally give that suspicion real shape.
+- [[perrin-black-jaw]]. Failed the Arcana check identifying Grigori's necrotic magic in Session 03 and has suspected something's wrong ever since without knowing what. Otho is the piece that could finally give that suspicion real shape.
 
 ## Goals & Fronts
 
@@ -97,12 +97,12 @@ Open combat is the Hardest of his three resolution paths by design (see the Toy 
 **Clock:** 6 segments (slow burn), filled: 2 (the duel that revealed the truth, one earlier "quiet" incident islanders still whisper about)
 **Consequence at fill:** the island's population is entirely made up of walking, unhealable wounded, an accumulating ruin with the old superstition against landing there turned into simple, accurate warning.
 **Possible outcomes (2-3):** the crew wins Otho over with real entertainment and he lets the bargain lapse fondly, the joke finally spent (Easiest). Or the crew bests him at his own game or trial, at a real price (Middle). Or the crew leaves without engaging him and the wounds keep piling up unresolved.
-**PC connection:** [[Perrin Black-Jaw]] failed the Arcana check identifying Grigori's necrotic magic in Session 03 and has suspected something's wrong ever since without knowing what. Otho is the piece that could finally give that suspicion real shape.
+**PC connection:** [[perrin-black-jaw]] failed the Arcana check identifying Grigori's necrotic magic in Session 03 and has suspected something's wrong ever since without knowing what. Otho is the piece that could finally give that suspicion real shape.
 **Quest link:** none yet.
 
 **Three Clues** *(hidden conclusion)*.
 
 Conclusion: "Old Otho" is the archfey behind it all.
-Clue 1: [[Otel Karn]] itself, the pattern of duel survivors and unhealed wounds, found by talking to islanders.
+Clue 1: [[otel-karn]] itself, the pattern of duel survivors and unhealed wounds, found by talking to islanders.
 Clue 2: Otho's own tells in conversation, his fey time-blindness slipping through when he mentions "my boy Grigori," found by talking to him directly.
-Clue 3: [[Khlysty]]'s doctrine traced back to an older island teaching, found by cross-referencing the sect's ecstatic-practice lore the crew already has from [[Shepherd Grigori|Grigori]]'s own investigation thread.
+Clue 3: [[Khlysty]]'s doctrine traced back to an older island teaching, found by cross-referencing the sect's ecstatic-practice lore the crew already has from [[shepherd-grigori|Grigori]]'s own investigation thread.

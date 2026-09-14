@@ -20,16 +20,16 @@ reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 relationships:
-  - target: "[[Grung clans]]"
+  - target: "[[grung-clans]]"
     type: related_to
-  - target: "[[Calven and Calveno]]"
+  - target: "[[calven-and-calveno]]"
     type: related_to
 ---
 # Ozzeth
 
-Ozzeth is a named face of the [[Grung clans]]. The source does not establish Ozzeth's color, duties, or present location.
+Ozzeth is a named face of the [[grung-clans]]. The source does not establish Ozzeth's color, duties, or present location.
 
 ## Connections
 
-- [[Grung clans]]
-- [[Calven and Calveno]]
+- [[grung-clans]]
+- [[calven-and-calveno]]

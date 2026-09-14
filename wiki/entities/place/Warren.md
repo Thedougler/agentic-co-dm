@@ -49,9 +49,9 @@ Rattkin settlement and deepest [[Passage]] anchor beneath Calveno; feels communa
 - **Sound:** murmurs, taps, water above, and feet changing pace at turns.
 - **Smell:** damp earth, food, oil, and canal water.
 ## Topology
-- `[[Calven and Calveno]] -- Le Paludi descent (hidden, difficult, reveals route) --> Warren`.
+- `[[calven-and-calveno]] -- Le Paludi descent (hidden, difficult, reveals route) --> Warren`.
 - `Warren -- [[Passage]] run (coded, safe if trusted, social cost) --> Midchain routes`.
-- `Warren -- [[Rattkin Runs and Black-Jaw Run]] (fast, learned, risks exposure) --> linked routes`.
+- `Warren -- [[rattkin-runs-and-black-jaw-run]] (fast, learned, risks exposure) --> linked routes`.
 - `Warren -- old/sealed run (unknown destination, costly, evidence-rich) --> **DM seed (unconfirmed)**`.
 - **Loop:** public canal → Warren → Passage run → another Calveno entry.
 - **Bypass:** public route or Grung contact trades secrecy for speed/information.
@@ -60,7 +60,7 @@ Rattkin settlement and deepest [[Passage]] anchor beneath Calveno; feels communa
 ## Player verbs
 `ask, prove, teach, conceal, map, shelter, escort, compare traces, choose a door`.
 ## Who is here
-- Rattkin elders/community; [[Passage]]; [[Nona Black-Jaw]]; Felix Aho, Ruma Delacroix, and Bazzoth; Grung leads may surface.
+- Rattkin elders/community; [[Passage]]; [[nona-black-jaw]]; Felix Aho, Ruma Delacroix, and Bazzoth; Grung leads may surface.
 - **DM seed (unconfirmed):** no named elder is established.
 ## Information economy
 - **Secret:** where the taken moved and who in Grung operations can be approached.
@@ -77,7 +77,7 @@ Quiet → Alert → Contested → Transformed: normal refuge → watchers/change
 
 **Move:** Grung contact leaves after Crown scrutiny or failed bargain; directional lead disappears; follow trace or another face; taken clock advances if ignored.
 ## Connections
-- [[Calven and Calveno]] · [[Passage]] · [[Rattkin Runs and Black-Jaw Run]] · [[Sparhold]]
+- [[calven-and-calveno]] · [[Passage]] · [[rattkin-runs-and-black-jaw-run]] · [[Sparhold]]
 ## Hooks
 - Operative leads on the taken 314, Passage obligations, and a safe route toward Midchain.
 ## Secrets

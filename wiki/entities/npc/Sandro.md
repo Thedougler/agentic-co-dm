@@ -35,7 +35,7 @@ visibility: dm
 ## Connections
 
 - [[Nino]], swam ashore with him onto [[Aruhe]] alongside an older man, Tomo. Tomo broke the island's fruit taboo that first night. Something dragged him into the treeline, and only the drag marks remained. Sandro still hasn't explained that death to Nino, and cuts the subject short the moment the treeline comes up.
-- [[Perrin Black-Jaw]], his private Aruhe survey commission targets the island where she's stranded.
-- [[Nona Black-Jaw]], chasing the raid that took Sandro captive along with roughly five hundred other **[[Calven and Calveno]]** during [[Il Gioco delle Beffe|La Finestra]] (Session 04).
+- [[perrin-black-jaw]], his private Aruhe survey commission targets the island where she's stranded.
+- [[nona-black-jaw]], chasing the raid that took Sandro captive along with roughly five hundred other **[[calven-and-calveno]]** during [[il-gioco-delle-beffe|La Finestra]] (Session 04).
 - [[Grung]], his captors on the raid. He found two of them already dead on the beach after the wreck, and has never told Nino what killed them.
 - [[Vethka]], the wrecked hull he and Nino now shelter in. One of the fleet's ships, it sailed for [[Karath]] before the storm wrecked it on Aruhe.

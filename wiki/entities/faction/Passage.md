@@ -26,27 +26,27 @@ scope: regional
 region: Midchain
 base: "[[Warren]]"
 relationships:
-  - target: "[[Nona Black-Jaw]]"
+  - target: "[[nona-black-jaw]]"
     type: uses
-  - target: "[[Beaumont Sel]]"
+  - target: "[[beaumont-sel]]"
     type: uses
   - target: "[[Warren]]"
     type: uses
-  - target: "[[Tessarine Concordat]]"
+  - target: "[[tessarine-concordat]]"
     type: uses
-  - target: "[[Dravosi Crown]]"
+  - target: "[[dravosi-crown]]"
     type: related_to
-  - target: "[[The taken 314]]"
+  - target: "[[the-taken-314]]"
     type: related_to
-  - target: "[[Survey Aruhe as a Tangle anchor]]"
+  - target: "[[survey-aruhe-as-a-tangle-anchor]]"
     type: related_to
-  - target: "[[Grung clans]]"
+  - target: "[[grung-clans]]"
     type: related_to
 ---
 # Passage
 
 > [!narration] Public face
-> People who cannot use the official docks still move. They eat first in a kitchen that already knows their names, then they leave on a boat that looks like ordinary trade. [[Nona Black-Jaw]] is the person you ask if you already know to ask. Inspectors find commercial paper, not a passenger list.
+> People who cannot use the official docks still move. They eat first in a kitchen that already knows their names, then they leave on a boat that looks like ordinary trade. [[nona-black-jaw]] is the person you ask if you already know to ask. Inspectors find commercial paper, not a passenger list.
 
 ````col
 ```col-md
@@ -59,7 +59,7 @@ flexGrow=2
 | **Nature** | Rescue and smuggling network. |
 | **Scope** | Regional. |
 | **Base** | [[Warren]]. |
-| **Leader** | [[Nona Black-Jaw]], route face. |
+| **Leader** | [[nona-black-jaw]], route face. |
 | **Public purpose** | Move people, cargo, and news where official routes cannot. |
 | **Signature method** | Safe kitchens, family couriers, and commercial cover. |
 | **Current posture** | Acting. |
@@ -85,21 +85,21 @@ flexGrow=1
 ## Current State
 
 - **Status quo.** The Passage moves people, cargo, and news off Crown charts through kitchens, family ties, and Tessarine-looking paper that is cover, not a command structure.
-- **Recent change.** [[Nona Black-Jaw]] turned the Mercatura crater into a missing-persons desk, sent two Passage ships after the raiders, and still waits on the [[Survey Aruhe as a Tangle anchor|Aruhe survey]].
+- **Recent change.** [[nona-black-jaw]] turned the Mercatura crater into a missing-persons desk, sent two Passage ships after the raiders, and still waits on the [[survey-aruhe-as-a-tangle-anchor|Aruhe survey]].
 - **Pressure.** More than `314` fighting-age people are already on the captive pipeline, and the Crown will try to own any rescue it can see.
-- **Strength.** Deepest anchor at [[Warren]]; kitchens and family ties matter as much as ships; routes already touch [[Calven and Calveno]] and the [[Midchain]].
+- **Strength.** Deepest anchor at [[Warren]]; kitchens and family ties matter as much as ships; routes already touch [[calven-and-calveno]] and the [[Midchain]].
 - **Vulnerability.** Tessarine paper keeps a route off charts only while no inspector asks the next question, and there is no formal Concordat deal to hide behind.
 - **Opportunity.** The party can accept, reshape, or refuse Passage obligations without the network treating refusal as the end of the relationship.
 
 ## Active Agenda
 
-**Goal:** Move the taken without letting the [[Dravosi Crown]] own the rescue.
+**Goal:** Move the taken without letting the [[dravosi-crown]] own the rescue.
 
 **Why:** Official rescue turns movement into papers, debt, or cargo.
 
 **Clock:** ○ ○ ○ ○ ○ ○
 
-**Next move:** Keep the two ships already days behind the raiders on the captive route, and decide whether [[Aruhe - Hungry Isle]] can be a Passage route or must be left alone.
+**Next move:** Keep the two ships already days behind the raiders on the captive route, and decide whether [[aruhe]] can be a Passage route or must be left alone.
 
 **Needs:** Trusted kitchens, courier proof, and a survey answer that does not treat living Aruhe as a possession.
 
@@ -115,13 +115,13 @@ If the agenda completes, the taken move on Passage terms and the Crown does not 
 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
-| [[Nona Black-Jaw]] | Route face | Keep the network alive and recover the taken. | She will not expose the whole Passage to save one request. |
-| [[Beaumont Sel]] | Operative | Family-linked courier work. | Named Perrin a Friend of the Passage. |
+| [[nona-black-jaw]] | Route face | Keep the network alive and recover the taken. | She will not expose the whole Passage to save one request. |
+| [[beaumont-sel]] | Operative | Family-linked courier work. | Named Perrin a Friend of the Passage. |
 | Family-linked couriers | Agents | Move people and proof along existing kitchens. | Trust is coded; a bad proof closes the door. |
 
-**Who decides:** [[Nona Black-Jaw]]
+**Who decides:** [[nona-black-jaw]]
 
-**Who interprets those orders:** Family-linked couriers, including [[Beaumont Sel]]
+**Who interprets those orders:** Family-linked couriers, including [[beaumont-sel]]
 
 **Who actually carries them out:** Kitchens, couriers, and Passage ships
 
@@ -132,18 +132,18 @@ If the agenda completes, the taken move on Passage terms and the Crown does not 
 | Place | Presence | What they control or need here | Current pressure |
 | --- | --- | --- | --- |
 | [[Warren]] | Headquarters / Hidden | Deepest anchor and the network's origin. | Elder teaching still judges new routes. |
-| [[Calven and Calveno]] | Strong | Nona's kitchen and the missing-persons desk. | Crown and Concordat paper both touch the harbour. |
+| [[calven-and-calveno]] | Strong | Nona's kitchen and the missing-persons desk. | Crown and Concordat paper both touch the harbour. |
 | [[Midchain]] | Contested | Sea lanes the Passage can use without staying on charts. | Crown cutters can run the main lanes. |
-| [[Aruhe - Hungry Isle]] | Temporary | A possible new route, or a route they must refuse. | The survey is still owed. |
+| [[aruhe]] | Temporary | A possible new route, or a route they must refuse. | The survey is still owed. |
 
 ## Connections
 
 | Faction / person | Stance | What Passage wants from them | Leverage, debt, or friction |
 | --- | --- | --- | --- |
-| [[Dravosi Crown]] | Complicated | To keep movement off inspection books. | A related Crown draft calls the same relationship hostile. ^[ambiguous] |
-| [[Tessarine Concordat]] | Cover-only | Paper that waves a boat through. | No formal arrangement. |
-| [[Grung clans]] | Unaligned | Cross their raid routes without sharing their goals. | The taken are already on Grung hulls. |
-| [[Nona Black-Jaw]] | Leader | The party to carry routes and the Aruhe survey. | Favors can be refused or reshaped. |
+| [[dravosi-crown]] | Complicated | To keep movement off inspection books. | A related Crown draft calls the same relationship hostile. ^[ambiguous] |
+| [[tessarine-concordat]] | Cover-only | Paper that waves a boat through. | No formal arrangement. |
+| [[grung-clans]] | Unaligned | Cross their raid routes without sharing their goals. | The taken are already on Grung hulls. |
+| [[nona-black-jaw]] | Leader | The party to carry routes and the Aruhe survey. | Favors can be refused or reshaped. |
 
 ### Party
 

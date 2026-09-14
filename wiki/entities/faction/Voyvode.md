@@ -25,7 +25,7 @@ kind: military
 relationships:
   - target: "[[Sunkline]]"
     type: related_to
-  - target: "[[Dravosi Crown]]"
+  - target: "[[dravosi-crown]]"
     type: related_to
   - target: "[[Fathomrush]]"
     type: related_to
@@ -41,7 +41,7 @@ Prove a working Crown pressure rig and claim the deep shelf honestly. Open trial
 
 ## DM thesis
 
-Reach the [[Mid-Works]] before [[Sunkline]]'s fraud becomes public, even if honest trials continue to spend crews. [[Branimir Karsovine]] will not send a crew under an untested rig.
+Reach the [[Mid-Works]] before [[Sunkline]]'s fraud becomes public, even if honest trials continue to spend crews. [[branimir-karsovine]] will not send a crew under an untested rig.
 
 ## Current state
 
@@ -53,16 +53,16 @@ Another trial death; Sunkline certificate exposed; losing compound empties into 
 
 ## Assets, people, places, relationships
 
-- Trial leader: [[Branimir Karsovine]]
-- Store: [[Marta Kessler]]
+- Trial leader: [[branimir-karsovine]]
+- Store: [[marta-kessler]]
 - Rival: [[Sunkline]]
-- Backer: [[Dravosi Crown]]
+- Backer: [[dravosi-crown]]
 
 ## Connections
 
 - [[Sunkline]]
-- [[Dravosi Crown]]
+- [[dravosi-crown]]
 - [[Fathomrush]]
 - [[Mid-Works]]
-- [[Branimir Karsovine]]
-- [[Marta Kessler]]
+- [[branimir-karsovine]]
+- [[marta-kessler]]

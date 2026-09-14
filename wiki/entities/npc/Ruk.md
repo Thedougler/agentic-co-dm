@@ -58,7 +58,7 @@ Read while recording: [[voice-profile script]]
 
 **Opening move:** standing watch · Ruk speaks first · "Who sent you?"
 
-**Lore Sheet:** Ruk is Nona Black-Jaw's bodyguard for twenty years, bound to her through territory, loyalty, feeding rituals, and the protection of the young. His literal nature is his greatest asset: he cannot ignore lies or threats and speaks what he observes plainly. He is currently guarding [[Felix Aho]], a captured [[Grung]] prisoner, at the safe house.
+**Lore Sheet:** Ruk is Nona Black-Jaw's bodyguard for twenty years, bound to her through territory, loyalty, feeding rituals, and the protection of the young. His literal nature is his greatest asset: he cannot ignore lies or threats and speaks what he observes plainly. He is currently guarding [[felix-aho]], a captured [[Grung]] prisoner, at the safe house.
 
 **Toy Chest**
 
@@ -68,7 +68,7 @@ Read while recording: [[voice-profile script]]
 | Consistent method | Positions himself with his back to the wall, hands on the table, watching all doors. Never ignores a lie or a threat he observes. |
 | Active problem | Guarding a captured [[Grung]] prisoner held at the safe house. |
 | Performance hooks | Literal sentinel vibe. Rests at the wall with hands flat on the table, watching all doors. |
-| Link of relevance | Sworn guardian of [[Nona Black-Jaw]], bound to her through territory, loyalty, feeding rituals, and the defense of the young. |
+| Link of relevance | Sworn guardian of [[nona-black-jaw]], bound to her through territory, loyalty, feeding rituals, and the defense of the young. |
 
 **Voice & Delivery:** measured, flat, literal speech with clear words. He cannot hide lies or threats and states them plain. Not unkind, yet he'll give food first. Cross him twice and he stops being kind. At the table he reads the room while others see the people. Nona has used this skill for years.
 
@@ -122,21 +122,21 @@ bonus_actions:
 
 CR 6 grappler. Ruk closes and locks a target down instead of trading blows at range: **wrestler** lets him restrain or shove without losing his other attacks, while **Bite** seizes on a hit. Every attack against that target then lands with advantage.
 
-**Pin Down** restrains a creature he's already grappled. **Hungry Jaws** lets him bite for self-healing once per rest (useful when he's absorbing a hit meant for [[Nona Black-Jaw|Nona]]). **Territorial Senses** means he's never caught flat-footed, and **Relentless Endurance** gives him one free save to stay on his feet if knocked down outright.
+**Pin Down** restrains a creature he's already grappled. **Hungry Jaws** lets him bite for self-healing once per rest (useful when he's absorbing a hit meant for [[nona-black-jaw|Nona]]). **Territorial Senses** means he's never caught flat-footed, and **Relentless Endurance** gives him one free save to stay on his feet if knocked down outright.
 
 ## Connections
 
-- [[Nona Black-Jaw]]: protects her with his body, understands her through territory, loyalty, feeding rituals, and hatchling-defense
+- [[nona-black-jaw]]: protects her with his body, understands her through territory, loyalty, feeding rituals, and hatchling-defense
 - [[Enzo]]: fellow bodyguard who manages social reads while Ruk manages physical ones
-- [[Perrin Black-Jaw|Perrin]]: pushed him into a seat at Nona's safe house (Session 04)
-- [[Felix Aho]]: currently guarding him at the safe house, a captured Grung prisoner
+- [[perrin-black-jaw|Perrin]]: pushed him into a seat at Nona's safe house (Session 04)
+- [[felix-aho]]: currently guarding him at the safe house, a captured Grung prisoner
 - [[Warren|The Warren]]: home base
-- [[Le Paludi]]: district containing Nona's kitchen
+- [[le-paludi]]: district containing Nona's kitchen
 
 ## Session Log
 
-- **Session 06** (`vault/episodes/006/`): present at the Lothaludi fish market during [[Il Gioco delle Beffe]]. Pinned and tripped an attacker mid-prank.
+- **Session 06** (`vault/episodes/006/`): present at the Lothaludi fish market during [[il-gioco-delle-beffe]]. Pinned and tripped an attacker mid-prank.
 
 - **Session 03** (`vault/episodes/003/`): stood near the door in Nona's kitchen in Le Paludi when Perrin arrived. Told the crying [[Rattkin]] mother "Don't worry. Nona will take care of it."
 
-- **Session 04** (`vault/episodes/004/`): pushed Perrin into a seat when they arrived at Nona's safe house. Now guarding [[Felix Aho]] (captured Grung prisoner) at the safe house.
+- **Session 04** (`vault/episodes/004/`): pushed Perrin into a seat when they arrived at Nona's safe house. Now guarding [[felix-aho]] (captured Grung prisoner) at the safe house.

@@ -28,4 +28,4 @@ visibility: dm
 
 ## At a Glance
 
-[[Ral-Arn]] is the record island of the [[Sunken Crown]]. Oldest family histories and seasonal marks are kept in stone.
+[[Ral-Arn]] is the record island of the [[sunken-crown]]. Oldest family histories and seasonal marks are kept in stone.

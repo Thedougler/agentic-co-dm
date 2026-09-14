@@ -20,16 +20,16 @@ reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 relationships:
-  - target: "[[Grung clans]]"
+  - target: "[[grung-clans]]"
     type: related_to
-  - target: "[[Calven and Calveno]]"
+  - target: "[[calven-and-calveno]]"
     type: related_to
 ---
 # Bazzoth
 
-Bazzoth is a Grung operative whose color is unknown. The source names him among the current faces of the [[Grung clans]] but gives no further role or location.
+Bazzoth is a Grung operative whose color is unknown. The source names him among the current faces of the [[grung-clans]] but gives no further role or location.
 
 ## Connections
 
-- [[Grung clans]]
-- [[Calven and Calveno]]
+- [[grung-clans]]
+- [[calven-and-calveno]]

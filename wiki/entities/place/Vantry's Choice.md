@@ -1,39 +1,13 @@
 ---
-title: "Vantry's Choice"
+title: Vantry's Choice
+redirects_to: "[[vantrys-choice|Vantry's Choice]]"
 category: entities
-tags: [shattered-sea, place]
-sources: ["midchain-east.md"]
-summary: "Identical harbors side by side; one universally and inexplicably avoided"
-provenance:
-  extracted: 1.0
-  inferred: 0.0
-  ambiguous: 0.0
-base_confidence: 0.37
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
-tier: supporting
-created: 2026-09-13T21:20:00Z
-updated: 2026-09-13T21:20:00Z
-type: place
-reveal: unrevealed
-campaign: shattered-sea
-visibility: dm
-kind: site
-region: Midchain
-relationships:
-  - target: "[[Midchain]]"
-    type: related_to
-  - target: "[[Shattered Sea]]"
-    type: related_to
+tags: []
+sources: []
+created: 2026-09-14
+updated: 2026-09-14
 ---
+
 # Vantry's Choice
 
-## Overview
-
-> [!narration] Narration
->
-
-## At a Glance
-
-[[Vantry's Choice]] is a named island or site in the eastern [[Midchain]]. Identical harbors side by side; one universally and inexplicably avoided.
-
+Redirect → [[vantrys-choice|Vantry's Choice]].

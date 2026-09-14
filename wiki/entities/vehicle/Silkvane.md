@@ -26,9 +26,9 @@ visibility: dm
 ---
 # Silkvane
 
-[[Silkvane]] is a fast Tidefall dispatch sloop under [[Tessarine Concordat]] craft.
+[[Silkvane]] is a fast Tidefall dispatch sloop under [[tessarine-concordat]] craft.
 
 ## Connections
 
-- [[Tessarine Concordat]]
-- [[Calder's Tooth and Port Tidefall]]
+- [[tessarine-concordat]]
+- [[calders-tooth-and-port-tidefall]]

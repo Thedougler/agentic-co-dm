@@ -20,19 +20,19 @@ reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 relationships:
-  - target: "[[Grung clans]]"
+  - target: "[[grung-clans]]"
     type: related_to
   - target: "[[Sorn]]"
     type: related_to
-  - target: "[[Jean-Claude Tabarnack]]"
+  - target: "[[jean-claude-tabarnack]]"
     type: related_to
 ---
 # Botukuri
 
-Botukuri is a [[Sorn]] farming clan whose flood-pulse lanes are seasonal occupation rather than a permanent town. [[Jean-Claude Tabarnack]] came from Botukuri, and the source does not establish its full government or leader list.
+Botukuri is a [[Sorn]] farming clan whose flood-pulse lanes are seasonal occupation rather than a permanent town. [[jean-claude-tabarnack]] came from Botukuri, and the source does not establish its full government or leader list.
 
 ## Connections
 
-- [[Grung clans]]
+- [[grung-clans]]
 - [[Sorn]]
-- [[Jean-Claude Tabarnack]]
+- [[jean-claude-tabarnack]]

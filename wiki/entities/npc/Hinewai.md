@@ -24,7 +24,7 @@ reveal: unrevealed
 campaign: shattered-sea
 status: alive
 role: rival
-location: "[[Aruhe - Memorial Grove]]"
+location: "[[memorial-grove]]"
 faction: none
 visibility: dm
 aliases:
@@ -32,9 +32,9 @@ aliases:
   - The Blight
   - Druid Lich
 relationships:
-  - target: "[[Aruhe - Hungry Isle]]"
+  - target: "[[aruhe]]"
     type: related_to
-  - target: "[[The Unnamed Companion]]"
+  - target: "[[the-unnamed-companion]]"
     type: related_to
 ---
 # Hinewai
@@ -52,7 +52,7 @@ flexGrow=2
 | **Role**            | Undead guardian fused to Aruhe's living systems                     |
 | ------------------- | ------------------------------------------------------------------- |
 | **Nature**          | Grieving druid whose love of life became unchecked growth            |
-| **Home**            | [[Aruhe - Memorial Grove]]                                          |
+| **Home**            | [[memorial-grove]]                                          |
 | **Wants**           | Aruhe remains unspoiled by takers.                                  |
 | **Fears**           | Wildfire and the death of her plants or animals                     |
 | **Hates**           | The Grung and anyone who takes from Aruhe                           |
@@ -137,7 +137,7 @@ flexGrow=2
 
 **Hinewai's walking body is not the real target.** The Death Bloom is a **place**, not an object. It consists of the central fruit tree, her companion's grave, Hinewai's grave, the black-flower ring, the bound soil, and the ritual relationship between them.
 
-Together they are Hinewai's body and **place-bound phylactery**. There is no detachable object to find and smash. The Bloom's boundary is uncertain, so damage that appears complete may still leave enough of it intact for Hinewai to return. See [[Aruhe - Memorial Grove]].
+Together they are Hinewai's body and **place-bound phylactery**. There is no detachable object to find and smash. The Bloom's boundary is uncertain, so damage that appears complete may still leave enough of it intact for Hinewai to return. See [[memorial-grove]].
 ```
 
 ```col-md
@@ -154,7 +154,7 @@ Damage to the memorial weakens Hinewai. Damage to her walking body alone never c
 | **Near ruin** | Death Bloom Near Ruin |
 | **Ruined** | No rebirth; body destruction is permanent. |
 
-See [[Aruhe - Memorial Grove#Destruction timeline]].
+See [[memorial-grove#Destruction timeline]].
 ```
 ````
 
@@ -172,7 +172,7 @@ If Hinewai's walking body reaches **0 hit points** while the Death Bloom still h
 
 ## Root network
 
-Luminous roots run from the shelf above [[Aruhe - Clear Lake]] through [[Aruhe - The Marshes]], ranging from wrist-thick to thigh-thick and all pointing home. No root crosses either grave.
+Luminous roots run from the shelf above [[clear-lake]] through [[the-marshes]], ranging from wrist-thick to thigh-thick and all pointing home. No root crosses either grave.
 
 * **Companion's grave:** the reason.
 * **Hinewai's grave:** the mechanism.
@@ -204,14 +204,14 @@ Hinewai took the old druid bargain past its breaking point. She fused her soul a
 
 | Relationship                      | Meaning                                                        |
 | --------------------------------- | -------------------------------------------------------------- |
-| [[Aruhe - Memorial Grove]]        | Her body, memorial, and place-bound phylactery                 |
-| [[The Unnamed Companion]]         | The drowned man whose grave is the reason for the island's law |
-| [[Aruhe - Hungry Isle]]           | The living country warped by her preservation                  |
-| [[Taking on Aruhe]]               | The island's distinction between receiving and taking          |
+| [[memorial-grove]]        | Her body, memorial, and place-bound phylactery                 |
+| [[the-unnamed-companion]]         | The drowned man whose grave is the reason for the island's law |
+| [[aruhe]]           | The living country warped by her preservation                  |
+| [[taking-on-aruhe]]               | The island's distinction between receiving and taking          |
 | [[Karath]]                        | Captor island and source of her enduring hatred                |
-| [[Grung and the Making of Aruhe]] | DM history of the crime and aftermath                          |
-| [[Aruhe - Clear Lake]]            | Lakeward shelf and beginning of the root direction             |
-| [[Aruhe - The Marshes]]           | Wet country crossed by roots pointing toward the Grove         |
+| [[grung-and-the-making-of-aruhe]] | DM history of the crime and aftermath                          |
+| [[clear-lake]]            | Lakeward shelf and beginning of the root direction             |
+| [[the-marshes]]           | Wet country crossed by roots pointing toward the Grove         |
 
 ---
 

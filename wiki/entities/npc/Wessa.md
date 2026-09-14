@@ -22,7 +22,7 @@ tier: supporting
 ---
 # Wessa
 
-Cook aboard the Saltwright. She works under [[Beaumont Sel]] alongside crew members [[Drav Holke]], [[Lenne Vor]], and [[Fen]].
+Cook aboard the Saltwright. She works under [[beaumont-sel]] alongside crew members [[drav-holke]], [[lenne-vor]], and [[Fen]].
 
 Stocky and grey-haired, she cooks so well that the crew eats better than it should.
 
@@ -30,6 +30,6 @@ Stocky and grey-haired, she cooks so well that the crew eats better than it shou
 
 ## Connections
 
-- [[Beaumont Sel]], captain of the [[The Saltwright|Saltwright]] and her employer.
-- [[Drav Holke]], [[Lenne Vor]], [[Fen]], fellow Saltwright crew members of [[Beaumont's Crew]].
-- [[The Saltwright|Saltwright]], the ship she crews.
+- [[beaumont-sel]], captain of the [[the-saltwright|Saltwright]] and her employer.
+- [[drav-holke]], [[lenne-vor]], [[Fen]], fellow Saltwright crew members of [[beaumonts-crew]].
+- [[the-saltwright|Saltwright]], the ship she crews.

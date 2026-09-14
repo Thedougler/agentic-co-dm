@@ -43,7 +43,7 @@ Seasonal calm channels south of the Midchain, sliding 50–100 miles with the se
 - Westbound captains and pilots who know the week.
 
 ## Connections
-- → [[Midchain]] · [[Central Strait]] · [[Shattered Sea]]
+- → [[Midchain]] · [[central-strait]] · [[shattered-sea]]
 
 ## Hooks
 - Use the calm as a back door around Strait inspection.

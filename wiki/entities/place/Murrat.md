@@ -43,7 +43,7 @@ A mile-and-a-half limestone reef that looks empty until canopy closes twenty fee
 - Outsiders are hunted.
 
 ## Connections
-- → [[Midchain]] · [[Sparhold Isle]] · [[Verdant Teeth]]
+- → [[Midchain]] · [[sparhold-isle]] · [[verdant-teeth]]
 
 ## Hooks
 - Land only with a reason that survives local blood custom.

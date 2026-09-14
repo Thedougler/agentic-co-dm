@@ -22,7 +22,7 @@ tier: supporting
 ---
 # Toa
 
-A [[Moucheron]] mercenary from [[Kalowe]] and a [[Five Blades]] member, Toa is the biggest and most easy to read.
+A [[Moucheron]] mercenary from [[Kalowe]] and a [[five-blades]] member, Toa is the biggest and most easy to read.
 
 He is cheerful. He wants to know why fights go wrong. He offers his thoughts freely. His assessments prove sound.
 
@@ -35,4 +35,4 @@ Not stated in the source.
 
 ## Connections
 
-- [[Five Blades]]: fellow member, alongside [[Varet]], [[Suke]], and [[Wirra]].
+- [[five-blades]]: fellow member, alongside [[Varet]], [[Suke]], and [[Wirra]].

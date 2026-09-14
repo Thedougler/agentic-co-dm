@@ -23,7 +23,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Shattered Sea]]"
+  - target: "[[shattered-sea]]"
     type: related_to
 ---
 # Nallowick

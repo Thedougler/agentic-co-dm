@@ -28,4 +28,4 @@ visibility: dm
 
 ## At a Glance
 
-[[Dath-Mar]] is the refuge island of the [[Sunken Crown]]. Dragon turtle wyrmlings nest on its outer beaches.
+[[Dath-Mar]] is the refuge island of the [[sunken-crown]]. Dragon turtle wyrmlings nest on its outer beaches.

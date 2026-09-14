@@ -7,7 +7,9 @@ leaves redirects_to stub at old basename, adds old stem as alias on the live pag
 rewrites path-qualified and safe bare-stem wikilinks.
 
 Skip: _archive/_raw/templates/_meta/attachments/reserved; redirects_to stubs.
-GREENLIT for legacy strips (kebab / Aruhe place prefixes / leading 00-00 prefixes). Prefer GitHub PR diffs. Prove on a temp vault copy when unsure.
+GREENLIT 2026-09-14 (Nick): legacy strips (kebab / Aruhe / leading 00 / 00-).
+Implements strip in this script (live redirects; archive/templates plain rename).
+Prefer GitHub PR diffs. Dry-run first; no lore invent.
 
 Usage (repo root):
   ./scripts/remorph-page-filename-kebab --dry-run [--wiki wiki|--vault wiki]
@@ -38,6 +40,8 @@ SKIP_DIRS = {
 }
 RESERVED = {"AGENTS.md", "index.md", "log.md", "hot.md"}
 ARUHE_PREFIX = re.compile(r"^Aruhe\s*-\s*", re.I)
+# Leading sort-prefix only (not mid-stem Session-N-00-Title beat forms)
+ZERO_PREFIX = re.compile(r"^00(?:\s+|-)")
 # Spaced or hyphenated Session NN Recap → canonical Session-NN-Recap
 SESSION_RECAP = re.compile(r"^Session[\s_-]+(\d+)[\s_-]+Recap$", re.I)
 # Session-N-BB-Label / Session N - … plan/beat forms
@@ -100,26 +104,31 @@ def page_slug_from_title(title: str) -> str:
 def target_stem(stem: str, title: str, fields: dict[str, str]) -> tuple[str, str] | None:
     """Return (new_stem, reason) if rename needed, else None.
 
-    Scope (greenlit remorph): spaced basenames, Aruhe-prefix, leading 00/00- prefixes, non-canonical Session
-    recaps, and spaced Session plan/beat forms. Already space-free non-Aruhe
-    kebab stems are left alone even if title slug differs (no mass casefold).
+    Scope (greenlit remorph): spaced basenames, Aruhe-prefix, leading 00/00-
+    prefixes, non-canonical Session recaps, and spaced Session plan/beat forms.
+    Already space-free non-Aruhe non-00 kebab stems are left alone even if
+    title slug differs (no mass casefold).
     """
     typ = (fields.get("type") or "").strip().strip("\"'").casefold()
 
-    # Recaps: Session-<NN>-Recap.md
+    # Recaps: Session-<NN>-Recap.md (stem match or typed recap with session digits).
+    # Typed recap without digits falls through to spaces/Aruhe/00 handling.
     m = SESSION_RECAP.match(stem)
     if m or typ == "recap":
         if m:
             nn = m.group(1).zfill(2)
-        else:
-            m2 = re.search(r"(\d+)", stem) or re.search(r"(\d+)", title)
-            if not m2:
-                return None
+            new = f"Session-{nn}-Recap"
+            if stem != new:
+                return new, "session_recap"
+            return None
+        m2 = re.search(r"(\d+)", stem) or re.search(r"(\d+)", title)
+        if m2:
             nn = m2.group(1).zfill(2)
-        new = f"Session-{nn}-Recap"
-        if stem != new:
-            return new, "session_recap"
-        return None
+            new = f"Session-{nn}-Recap"
+            if stem != new:
+                return new, "session_recap"
+            return None
+        # else fall through (e.g. synthesis Story So Far typed recap)
 
     # Session plan/beat with spaces → Session-<n>-<BB>-<kebab-label>
     m = SESSION_BEAT.match(stem)
@@ -133,15 +142,30 @@ def target_stem(stem: str, title: str, fields: dict[str, str]) -> tuple[str, str
             return new, "session_beat"
         return None
 
+    has_zero = bool(ZERO_PREFIX.match(stem))
+    has_aruhe = bool(ARUHE_PREFIX.match(stem))
+    has_space = " " in stem
+
+    # Leading 00 / 00- : strip sort-prefix only; remainder kept as-is
+    # (archive may keep spaces; templates 00-foo → foo). Further kebab of
+    # spaced remainder on live pages is a separate spaces pass / later apply.
+    if has_zero:
+        rest = ZERO_PREFIX.sub("", stem, count=1).strip()
+        if not rest:
+            return None
+        if rest != stem:
+            return rest, "zero_prefix"
+        return None
+
     # General: only when spaces or Aruhe prefix (clear lint HARD findings)
-    if not (" " in stem or ARUHE_PREFIX.match(stem)):
+    if not (has_space or has_aruhe):
         return None
     slug = page_slug_from_title(title) if title else page_slug_from_title(
         ARUHE_PREFIX.sub("", stem, count=1)
     )
     if not slug:
         return None
-    reason = "aruhe_prefix" if ARUHE_PREFIX.match(stem) else "spaces"
+    reason = "aruhe_prefix" if has_aruhe else "spaces"
     if stem == slug:
         return None
     return slug, reason
@@ -150,14 +174,21 @@ def target_stem(stem: str, title: str, fields: dict[str, str]) -> tuple[str, str
 def collect_plans(wiki: Path) -> tuple[list[Plan], list[str]]:
     plans: list[Plan] = []
     skips: list[str] = []
+    zero_only_dirs = {"_archive", "_archives", "templates"}
     for path in sorted(wiki.rglob("*.md")):
         rel = path.relative_to(wiki)
-        if set(rel.parts) & SKIP_DIRS or path.name in RESERVED:
+        parts = set(rel.parts)
+        if path.name in RESERVED:
             continue
         if "_redirects" in rel.parts:
             continue
-        text = path.read_text(encoding="utf-8")
-        fields = parse_fm(text)
+        skip_hit = parts & SKIP_DIRS
+        if skip_hit:
+            # ASE #107: leading 00 / 00- strip also runs under archive/templates
+            if not (skip_hit <= zero_only_dirs) or not ZERO_PREFIX.match(path.stem):
+                continue
+        raw = path.read_text(encoding="utf-8")
+        fields = parse_fm(raw)
         if fields.get("redirects_to"):
             continue
         stem = path.stem
@@ -166,9 +197,29 @@ def collect_plans(wiki: Path) -> tuple[list[Plan], list[str]]:
         if not result:
             continue
         new_stem, reason = result
+        if skip_hit and reason != "zero_prefix":
+            continue
         if ILLEGAL.search(new_stem) or not new_stem:
             skips.append(f"{rel.as_posix()}: dest slug illegal/empty ({new_stem!r})")
             continue
+        # Resolve dest collisions for zero_prefix (archive -N pattern)
+        candidate = new_stem
+        dest_path = path.parent / f"{candidate}.md"
+        if reason == "zero_prefix" and dest_path.exists() and dest_path.resolve() != path.resolve():
+            n = 1
+            while True:
+                candidate = f"{new_stem}-{n}"
+                dest_path = path.parent / f"{candidate}.md"
+                if not dest_path.exists():
+                    break
+                n += 1
+                if n > 50:
+                    skips.append(f"{rel.as_posix()}: could not resolve dest collision")
+                    candidate = None
+                    break
+            if candidate is None:
+                continue
+            new_stem = candidate
         dest = (path.parent / f"{new_stem}.md").relative_to(wiki).as_posix()
         plans.append(
             Plan(
@@ -283,14 +334,24 @@ def rewrite_links(wiki: Path, stem_map: dict[str, str]) -> int:
 def apply_plans(wiki: Path, plans: list[Plan]) -> dict:
     today = dt.date.today().isoformat()
     stem_map = {p.stem: p.new_stem for p in plans}
+    no_stub_dirs = {"_archive", "_archives", "templates"}
     applied = []
     for p in plans:
         src = wiki / p.src
         dest = wiki / p.dest
-        text = add_alias(src.read_text(encoding="utf-8"), p.stem)
+        plain = bool(set(Path(p.src).parts) & no_stub_dirs)
+        body = src.read_text(encoding="utf-8")
+        if not plain:
+            body = add_alias(body, p.stem)
         dest.parent.mkdir(parents=True, exist_ok=True)
-        dest.write_text(text, encoding="utf-8")
-        src.write_text(redirect_stub(p.stem, p.new_stem, p.title, today), encoding="utf-8")
+        if dest.resolve() == src.resolve():
+            applied.append(asdict(p))
+            continue
+        dest.write_text(body, encoding="utf-8")
+        if plain:
+            src.unlink()
+        else:
+            src.write_text(redirect_stub(p.stem, p.new_stem, p.title, today), encoding="utf-8")
         applied.append(asdict(p))
     link_files = rewrite_links(wiki, stem_map)
     return {"applied": applied, "link_files_rewritten": link_files}
@@ -325,7 +386,7 @@ def main(argv: list[str] | None = None) -> int:
         "plans": [asdict(p) for p in plans],
         "skips": skips,
         "errors": errors,
-        "gated": "GREENLIT for kebab/Aruhe/00 legacy strips; prefer GitHub PR diffs.",
+        "gated": "GREENLIT 2026-09-14 for kebab/Aruhe/00 legacy strips; prefer GitHub PR diffs.",
     }
 
     if args.apply:

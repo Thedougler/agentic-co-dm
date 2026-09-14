@@ -25,7 +25,7 @@ tier: supporting
 ![[maren-banner-alt]]
 ![[maren-banner]]
 
-Water Genasi captain of the *[[Narrow]]*, [[Fisk's Fleet]] scout vessel. Deceased. Her soul is inside [[Delmar Fisk]]. Pronounced MARE-EN; she will correct you if you get it wrong, and she always will.
+Water Genasi captain of the *[[Narrow]]*, [[fisks-fleet]] scout vessel. Deceased. Her soul is inside [[delmar-fisk]]. Pronounced MARE-EN; she will correct you if you get it wrong, and she always will.
 
 Maren captained The *Narrow*, the fleet's scout vessel. She was fast in the water and could breathe beneath the surface. She could read a reef by feel alone. She and the scouts who worked the air above made the fleet's scouting without peer. No approach they surveyed surprised them twice.
 
@@ -43,7 +43,7 @@ She has strong opinions about the Navy. The sea belongs to everyone. Two decades
 > **Maren's Mortis Trigger.** Surfaces when Delmar faces denied passage, a sealed entrance, or naval authority. Forced trigger: entry/passage physically blocked (locked door, sentry refusing, sealed gate). Environmental trigger: navy vessel/insignia in view or a navy officer identified within earshot (contempt immediate, short sentences). When active, she gains Perception ([[Expertise]] +7) and Stealth (Expertise +7). Her personality trades Delmar's smoothness and charm for directness and sass. Performance falters noticeably; opinions pour out unfiltered, she demands the correct pronunciation of her name, and she automatically scans each space for escape routes.
 
 > [!spoiler]
-> **Halythion lead:** Maren learned of [[Halythion]] from a [[Sea Elf]] friend who shared details in pieces over months: a place south of the [[Midchain]] near [[Tail|the Tail]], a natural bay guarded by reefs where ships don't return. She never pushed for more and doesn't know if the friend survives. This is a personal lead, not tavern rumor, and surfaces through the Mortis mechanic.
+> **Halythion lead:** Maren learned of [[Halythion]] from a [[sea-elf]] friend who shared details in pieces over months: a place south of the [[Midchain]] near [[Tail|the Tail]], a natural bay guarded by reefs where ships don't return. She never pushed for more and doesn't know if the friend survives. This is a personal lead, not tavern rumor, and surfaces through the Mortis mechanic.
 
 ## Stats & Combat
 
@@ -51,8 +51,8 @@ Not stated in source.
 
 ## Connections
 
-- [[Delmar Fisk]], admiral; now carries her soul
-- [[Fisk's Fleet]], she captained the *Narrow*
+- [[delmar-fisk]], admiral; now carries her soul
+- [[fisks-fleet]], she captained the *Narrow*
 - [[Halythion]], holds a personal lead on its location
-- [[Norrington Kingsly]]
+- [[norrington-kingsly]]
 - [[Umberlee]], the force that ended her

@@ -49,17 +49,17 @@ Declared himself Emperor of Halewick three weeks ago. Nobody voted, and nobody r
 | Consistent method | States a want as a flat, immediate fact and expects it obeyed at once, every time. |
 | Active problem | Frankie's own cursed speech now lands as hard as his, and every collision between their decrees permanently scars another patch of the island. |
 | Performance hooks | Recess-yard king-of-the-hill swagger. Kicks his boots against the driftwood throne's rail while he talks, never still. |
-| Link of relevance | His entire power exists because of [[Delmar Fisk]]'s own unresolved Pearl of Souls theft and the breach it left open at [[Drowned Maw]], a fact Delmar has no idea is true. |
+| Link of relevance | His entire power exists because of [[delmar-fisk]]'s own unresolved Pearl of Souls theft and the breach it left open at [[drowned-maw]], a fact Delmar has no idea is true. |
 
 > [!mechanic]
-> **Tradition:** none classifiable. **School:** unclassifiable. Source: planar contamination from the [[Drowned Maw]] entity — not cast by either child.
+> **Tradition:** none classifiable. **School:** unclassifiable. Source: planar contamination from the [[drowned-maw]] entity — not cast by either child.
 > **[[Detect Magic]]:** No school registers. The air feels like it's under strain — wrong pressure, something pushing through from somewhere else. DC 16 [[Intelligence]] (Arcana) check: on a success, planar contamination, not a cast spell; on a failure, the pressure reads as nothing classifiable — wrong, but sourceless.
 > **[[Counterspell]]:** not applicable — declarations are not discrete cast events. There is no caster to target.
 > The children are keys; the entity and the fissure are the source. Harming Toby or Frankie does nothing to the power itself. The Maw entity and fissure are the only lever.
 
 ## Connections
 
-- [[Delmar Fisk]], whose cursed speech runs on Delmar's own unresolved Pearl of Souls theft, entirely unknown to Delmar (link_of_relevance).
+- [[delmar-fisk]], whose cursed speech runs on Delmar's own unresolved Pearl of Souls theft, entirely unknown to Delmar (link_of_relevance).
 - [[Frankie]], his playground rival. Their overlapping decrees collide and scar the island wherever they clash.
 - [[Halewick]], his island and self-declared throne.
 
@@ -78,5 +78,5 @@ Declared himself Emperor of Halewick three weeks ago. Nobody voted, and nobody r
 **Clock:** 6 segments (slow burn), filled: 2 (two collision scars already on the island)
 **Consequence at fill:** a collision lands squarely on Halewick's harbor or square. The island's only working dock and its fresh water both get overwritten as collateral. No clean fix exists.
 **Possible outcomes (2-3):** someone finds a way to make Toby and Frankie stop asserting things at each other, whether truce, distraction, or an actual reconciliation. One of them leaves the island's earshot for good, which stops new commands landing from that side but undoes nothing already landed. The collisions keep stacking until Halewick itself becomes unlivable.
-**PC connection:** pressures [[Delmar Fisk]], since the whole phenomenon exists because of Delmar's own unresolved theft of the [[Pearl of Souls]] and the still-open Drowned Maw breach it left behind, a fact entirely unknown to Delmar himself.
+**PC connection:** pressures [[delmar-fisk]], since the whole phenomenon exists because of Delmar's own unresolved theft of the [[pearl-of-souls]] and the still-open Drowned Maw breach it left behind, a fact entirely unknown to Delmar himself.
 **Quest link:** none yet

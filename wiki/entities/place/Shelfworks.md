@@ -50,10 +50,10 @@ Salvage shelf holding ruins of [[Antheri]] above the trench; feels lucrative, un
 - **Sound:** strain, stone shift, winches, spray, and calls across shelf.
 - **Smell/touch:** salt, wet stone, oil, dust, vibration.
 ## Topology
-- `[[Calven and Calveno]] -- salvage contract (legal access, debt/claim) --> Shelfworks`.
+- `[[calven-and-calveno]] -- salvage contract (legal access, debt/claim) --> Shelfworks`.
 - `Shelfworks -- shelf path (exposed, quick) --> ruin face`.
 - `ruin face -- line/crane (costly, lifts evidence) --> claim field`.
-- `claim field -- descent (danger, Maw information) --> [[Drowned Maw]]`.
+- `claim field -- descent (danger, Maw information) --> [[drowned-maw]]`.
 - **Loop:** contract → shelf → ruin → claim field → return line.
 - **Bypass:** observe from vessel or take an existing component; safer, less historical information.
 - **Retreat:** contract route to Calveno or vessel before shelf pressure rises.
@@ -77,7 +77,7 @@ Stable → Strained → Contested → Transformed: working shelf → cracks/clai
 
 **Move:** component answers after Study/Utilize or Maw step; sound/light/current response; record/disconnect/pursue; attention rises.
 ## Connections
-- [[Drowned Maw]] · [[Calven and Calveno]] · [[High Eyrie]] · [[Antheri]]
+- [[drowned-maw]] · [[calven-and-calveno]] · [[high-eyrie]] · [[Antheri]]
 ## Hooks
 - Salvage goldrush, Antheri truth, Maw mapping, practical invention.
 ## Secrets
@@ -92,8 +92,8 @@ The Shelfworks are the Antheri salvage field on the Maw's western shelf, about f
 ## Drowned Maw ingest — depth and pressure
 - The Shelfworks are 60–200 feet down. Upper ruins (40–80 ft) can be free-dived or pumped; mid-shelf (80–150 ft) needs pumps and a weather window; past 150 ft an uncontrolled descent does not return.
 - Working Antheri parts Catarina Da'Virelli hauled to Calveno in 1488 DR started the gold rush. The Concordat still has standing orders for intact structural pieces; Catarina has not accepted them.
-- Easy loot is gone. Heat pulses climb toward the surface and shrink working depth; a burned line marks the last depth treated as safe. Twenty metres east of the last wall, ruins fall into directionless blue. The *Red Lady* wreck and [[Pearl of Souls]] are on the eastern edge.
-- The ruins are newer exhaust for a deep engine that has not fully stopped; dark alloy and living-light channels connect this salvage field to [[Mid-Works]] and [[Deep Works]].
+- Easy loot is gone. Heat pulses climb toward the surface and shrink working depth; a burned line marks the last depth treated as safe. Twenty metres east of the last wall, ruins fall into directionless blue. The *Red Lady* wreck and [[pearl-of-souls]] are on the eastern edge.
+- The ruins are newer exhaust for a deep engine that has not fully stopped; dark alloy and living-light channels connect this salvage field to [[Mid-Works]] and [[deep-works]].
 
 **Provenance:** Dump source 2026-09-05; legacy `/Users/nick/shattered-sea/wiki/shattered-sea/region-shelfworks.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/situation-drowned-maws-open-shelf.md`.
 

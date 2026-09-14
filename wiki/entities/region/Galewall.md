@@ -75,7 +75,7 @@ Calm edge → Rising → Wall → Window/Breakdown: weather thickens, route clos
 
 **Move:** vessel separates after failed navigation; sightline breaks; signal/reunite/exploit; return state records changed trust/resources.
 ## Connections
-- [[Shattered Sea]] · [[Crown Islands]]
+- [[shattered-sea]] · [[crown-islands]]
 ## Hooks
 - Crossing, return, weather mapping, and the meaning of “no easy return.”
 ## Secrets

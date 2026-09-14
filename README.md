@@ -103,7 +103,7 @@ Design lock: `docs/agents/wiki-maintenance-loop.md` (issue #90).
 | Objective tokens | `python3 scripts/token-count.py --sum wiki` / `--footprint` — default `cl100k_base`; **not** `bytes/4` |
 | Filename remorph plan | `./scripts/remorph-page-filename-kebab --dry-run` — **`--apply` gated** until greenlit |
 
-**Do not automate without an explicit greenlight:** lore invent, mass kebab rename apply, dedup merge, link demotions during migration freeze, craft/narrative/mechanics thinning for token scores, or collapsing conflicting rumors into one “truth.” Scripts do not grade prose — Creative Director does.
+**Do not automate without an explicit greenlight:** lore invent, dedup merge, link demotions during migration freeze, craft/narrative/mechanics thinning for token scores, or collapsing conflicting rumors into one “truth.” Mass kebab remorph `--apply` unlocked 2026-09-14 (Nick); still dry-run first. Scripts do not grade prose — Creative Director does.
 
 Related methods: `docs/agents/context-waste-method.md`, `docs/agents/token-measurement.md`.
 

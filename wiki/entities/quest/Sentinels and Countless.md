@@ -1,32 +1,13 @@
 ---
-title: "Sentinels and Countless"
+title: Sentinels and Countless
+redirects_to: "[[sentinels-and-countless|Sentinels and Countless]]"
 category: entities
-tags: ["shattered-sea", "quest"]
-sources:
-  - "00 Shattered Sea.md"
-summary: "Open quest tracking the Sentinel schism pressure and Countless interest in the seal and Fate Spinner carriers."
-provenance:
-  extracted: 1.0
-  inferred: 0.0
-  ambiguous: 0.0
-base_confidence: 0.37
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
-tier: supporting
-created: 2026-09-13T19:30:00Z
-updated: 2026-09-13T19:30:00Z
-type: quest
-reveal: unrevealed
-campaign: shattered-sea
-visibility: dm
-status: active
+tags: []
+sources: []
+created: 2026-09-14
+updated: 2026-09-14
 ---
+
 # Sentinels and Countless
 
-Open quest tracking the Sentinel schism pressure and Countless interest in the seal and Fate Spinner carriers.
-
-## Connections
-
-- [[Shattered Sea]]
-- [[Crissdalynn Khinriss]]
-- [[Talon Vantyrus]]
+Redirect → [[sentinels-and-countless|Sentinels and Countless]].

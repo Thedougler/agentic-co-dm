@@ -21,7 +21,7 @@ visibility: dm
 
 # Enzo
 
-*(This is not [[Vincenzo Black-Jaw]], coincidental name similarity only, distinct characters. W17 flag resolved, canon-review 2026-07-14.)*
+*(This is not [[vincenzo-black-jaw]], coincidental name similarity only, distinct characters. W17 flag resolved, canon-review 2026-07-14.)*
 
 ```meta-bind-button
 label: ⏺ Record Voice Profile
@@ -62,7 +62,7 @@ Read while recording: [[voice-profile script]]
 
 **Opening move:** flanking Nona as she passes bread and fish to the crew gathered at the crater's rim · Enzo speaks first · "You should take some. Long day ahead."
 
-**Lore Sheet:** bodyguard to **Nona Black-Jaw**, working out of [[Le Paludi]] and [[Warren|The Warren]]. Reads every guest for threats and intentions through micro-gestures and silence. Uses a lit cigar as a timer for Nona's patience. If it burns too low while she waits for an answer, he unsheathes one claw. More comfortable with violence than with people.
+**Lore Sheet:** bodyguard to **Nona Black-Jaw**, working out of [[le-paludi]] and [[Warren|The Warren]]. Reads every guest for threats and intentions through micro-gestures and silence. Uses a lit cigar as a timer for Nona's patience. If it burns too low while she waits for an answer, he unsheathes one claw. More comfortable with violence than with people.
 
 **Toy Chest**
 
@@ -72,7 +72,7 @@ Read while recording: [[voice-profile script]]
 | Consistent method | Communicates through silence and small signals: tap of ash, weight shift, glance, or claw. |
 | Active problem | The raid brought new faces to the [[Mercatura]] and new guards to the quays. One person cannot read everyone at once. |
 | Performance hooks | Polished enforcer vibe. Taps his cigar ash against the table rim to mark conversation rhythm. |
-| Link of relevance | Arranged safe passage and consolation for [[Perrin Black-Jaw]]'s surviving crew on Nona's order (Session 03). |
+| Link of relevance | Arranged safe passage and consolation for [[perrin-black-jaw]]'s surviving crew on Nona's order (Session 03). |
 
 **Voice & Delivery:** never raises his voice, speaking with complete politeness regardless of message. "Nona asked you a question" lands as threat or favor depending on context. Holds doors and pulls chairs, reading crew like a banker reads a ledger while signaling to Nona with ash taps and weight shifts. Comfortable with violence, prefers it to talk.
 
@@ -124,21 +124,21 @@ reactions:
   - name: Uncanny Dodge
     desc: "When an attacker Enzo can see hits him with an attack, he halves the attack's damage against him."
   - name: Interpose
-    desc: "Replaces Uncanny Dodge. When a creature Enzo can see targets [[Nona Black-Jaw]] with an attack, Enzo moves up to his speed toward the attacker without provoking opportunity attacks, and that attack roll is made with disadvantage."
+    desc: "Replaces Uncanny Dodge. When a creature Enzo can see targets [[nona-black-jaw]] with an attack, Enzo moves up to his speed toward the attacker without provoking opportunity attacks, and that attack roll is made with disadvantage."
 ```
 
 ## Connections
 
-- [[Nona Black-Jaw]], bodyguard, household
+- [[nona-black-jaw]], bodyguard, household
 - [[Ruk]], fellow bodyguard
-- [[Le Paludi]], operates out of
-- [[The Passage]] / [[The Black-Jaw Run|Black-Jaw Run]], role tied to
-- [[Perrin Black-Jaw]], present at Perrin's reunion with Nona; sent to arrange consolation for the *[[Vestra]]*'s crew and to call off attacks against him
+- [[le-paludi]], operates out of
+- [[the-passage]] / [[the-black-jaw-run|Black-Jaw Run]], role tied to
+- [[perrin-black-jaw]], present at Perrin's reunion with Nona; sent to arrange consolation for the *[[Vestra]]*'s crew and to call off attacks against him
 
 ## Session Log
 
-**Session 06** (`vault/episodes/006/`). Present at the Lothaludi fish market during [[Il Gioco delle Beffe]]. He intercepted a chalk-powder attacker.
+**Session 06** (`vault/episodes/006/`). Present at the Lothaludi fish market during [[il-gioco-delle-beffe]]. He intercepted a chalk-powder attacker.
 
-**Session 03** (`vault/episodes/003/`). Present in Nona's kitchen in [[Le Paludi]] when Perrin arrived. He leaned against the far wall. After Nona met with the crew, she sent Enzo to arrange consolation for the *Vestra*'s surviving crew and call off the attacks she'd set against Perrin.
+**Session 03** (`vault/episodes/003/`). Present in Nona's kitchen in [[le-paludi]] when Perrin arrived. He leaned against the far wall. After Nona met with the crew, she sent Enzo to arrange consolation for the *Vestra*'s surviving crew and call off the attacks she'd set against Perrin.
 
 **Session 04** (`vault/episodes/004/`). Opened the door at Nona's safe house. He growled at the crew before letting them in.

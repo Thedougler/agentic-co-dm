@@ -35,7 +35,7 @@ flexGrow=2
 | **Role**   | Hired muscle |
 | ---------- | ------------ |
 | **Nature** | Half-orc berserker with no fixed loyalty |
-| **Home**   | [[Warren]], [[Calven and Calveno]] |
+| **Home**   | [[Warren]], [[calven-and-calveno]] |
 | **Wants**  | Work at going rate, 4 to 6 gp a week. |
 
 > **DM thesis:** He is a loose hook, not a required man. Pay him or lose him in the crowd.
@@ -74,8 +74,8 @@ Blood, or the watch arriving. If the crew handles it without either, he finds th
 | Relationship | Meaning |
 | ------------ | ------- |
 | [[Warren]] | He offers the sword to whoever pays. |
-| [[Calven and Calveno]] | Stub source is a street encounter here. |
-| [[Jean-Claude Tabarnack]] | If Jean-Claude tells him the watch is four minutes out, he stands down. No roll. |
+| [[calven-and-calveno]] | Stub source is a street encounter here. |
+| [[jean-claude-tabarnack]] | If Jean-Claude tells him the watch is four minutes out, he stands down. No roll. |
 
 ## Combat
 
