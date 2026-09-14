@@ -84,6 +84,8 @@ Done when: the kind's jobs are answered, empty sections are omitted, spoken look
 
 Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<session-number>/` (Session 11 → `wiki/journal/sessions/shattered-sea/11/`; Session 01 → `…/01/`). Session plan `Session-<n>-00-<Title>.md`, numbered live beats `Session-<n>-<BB>-<Label>.md`, **post-play recaps**, and that night’s companion notes all live in the **same** session-number folder. Recap path: `wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md` (`type: recap`, copy `wiki/templates/recap.md`). Do **not** park recaps at flat `wiki/journal/…`, spaced `Session NN - Recap.md`, or a parallel `recaps/` folder. Owner pages stay outside. `_raw/` is staging. Two campaigns do not share a session-number folder. `wiki/templates/session.md` is deprecated as copy-start; `type: session` remains legacy in the enum. Do not file `{{title}} - B01 - Strong Start` names.
 
+**Session evidence (post-play):** in the same session-number folder — `Session-<NN>-Recap.md` (summary), `Session-<NN>-Transcript.md` (text companion). Audio/video recording files use flat `wiki/attachments/session-<NN>-recording.{ext}` (role `recording`; kebab). Do not park transcripts/recordings under a parallel `recaps/` tree or repo-root folders. Raw dumps may stage in `wiki/_raw/` then promote; archive evidence into `wiki/_archive/` after ingest.
+
 
 ## Shared grammar
 

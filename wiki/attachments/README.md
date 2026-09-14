@@ -16,6 +16,7 @@ Flat image store for the campaign vault.
 | `reference` | Props/details/still for TotM grounding |
 | `handout` | Player-facing table asset (letter, sketch, clue); not battlemap/portrait |
 | `teaser` | Cinematic scene still; player-shareable mood/hype; not battlemap, portrait, or diegetic handout |
+| `recording` | Session audio/video capture; file as `session-<NN>-recording.{ext}`; not TotM art |
 
 **TotM/spoken / player-shareable:** portrait, overview, reference, handout, teaser (± banner mood).
 Distinguish: `overview` = establishing/layout; `teaser` = cinematic scene still; `handout` = diegetic table prop.  
