@@ -93,6 +93,12 @@ Cite: `.agents/skills/obsidian-markdown/SKILL.md` → **At-table scan**.
 Check form: `**Wisdom (Perception) — \`DC 14\`**`. Never `**DC 15**` or `**DC 15** *Perception*`.
 
 
+## Page filenames (wiki `.md`)
+
+Owner and journal **page** files use the **title stem**: basename = frontmatter `title` + `.md` (spaces/apostrophes OK). Vault-wide unique stems. Not kebab/snake. Full rule: `wiki/AGENTS.md` § Page filenames.
+
+Attachment images remain kebab `{subject-slug}-{role}.ext` below — different surface.
+
 ## Attachment filenames (images)
 
 Flat by default: `wiki/attachments/{subject-slug}-{role}.{ext}`

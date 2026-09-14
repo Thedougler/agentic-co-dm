@@ -87,6 +87,26 @@ Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<ses
 
 ## Shared grammar
 
+## Page filenames
+
+Wiki page `.md` **basenames** (not attachment images — those stay kebab `{slug}-{role}`).
+
+**Rule:** filename stem **equals** frontmatter `title` (Unicode, Title Case / display casing as spoken). Spaces and apostrophes are allowed. Example: `wiki/entities/npc/Jean-Claude Tabarnack.md` with `title: Jean-Claude Tabarnack`.
+
+**Why:** Obsidian graph nodes and bare `[[wikilinks]]` use the note name. Agents need one deterministic key — the same string as `title` — not a parallel kebab slug. Attachment kebab does **not** apply to pages.
+
+**Uniqueness:** vault-wide unique stem (no two live `.md` files share the same basename, even across `entities/{type}/`). Prefer fixing collisions with a clearer title, not folder shadowing.
+
+**Forbidden in basenames:** `/\:*?"<>|`, leading/trailing whitespace, control characters, consecutive spaces. Do not use snake_case or kebab-case page files for owner pages.
+
+**Wikilinks:** prefer `[[Title]]` matching the stem. Path-qualified links (`[[entities/npc/Title]]`) are optional hardening; display aliases use `[[Title|short]]`. On rename: update `title` + filename together; leave a `redirects_to` stub at the old stem when inbound links may linger; put alternate names in `aliases:` when useful.
+
+**Journal / session:** keep existing pattern — `Session-<n>-00-<Title>.md`, beats `Session-<n>-<BB>-<Label>.md` under `wiki/journal/sessions/<campaign-slug>/<session-number>/`. Companion notes that night only. Do not invent `Title - B01 - …` forms.
+
+**Ingest minting:** new owner page path = `wiki/entities/{type}/{title}.md` (depth 1). Refuse inventing a different slug file while `title` stays human. Manifest / qmd keys should track the vault-relative path; prefer relative keys over absolute machine paths when rewriting.
+
+**No mass rename** until Nick greenlights after this standard lands. Lint/remorph are ATE follow-on (issue #69).
+
 Cross-kind DM-usability rules for templates and filed pages: frontmatter core, shared Title Case headings (`At a Glance`, `At the Table`, `Connections`, `Secrets`, `Provenance`, `Art`), callout surfaces, omit-empty, and no synonym headings for the same job. Full text: `wiki/templates/00-shared-grammar.md`. Image assets: flat `wiki/attachments/{subject-slug}-{role}.{ext}` with roles `banner`\|`portrait`\|`token`\|`battlemap`\|`overview`\|`reference`\|`handout`\|`teaser` (see shared grammar Attachment filenames).
 
 When a shared job appears, use the shared heading name. DM-visible labels use Title Case / spaced words — never snake_case in body or table Field columns (`One thing`, not `one_thing`); YAML keys may stay snake_case. Kind-specific job blocks keep their own names. `Relationships` is not a Connections synonym — use `## Connections`. Recap/session/run spoken surfaces use only `[!narration]`; owner pages may add `[!mechanic]` / `[!secret]`.
