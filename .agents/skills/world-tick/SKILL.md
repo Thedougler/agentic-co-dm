@@ -37,7 +37,7 @@ When in doubt: read the file, then speak. Never the other way around.
 Look for the most recent session material in this order:
 
 1. `wiki/journal/sessions/<campaign-slug>/<NN>/` — that night’s plan/beats (preferred)
-2. `wiki/journal/sessions/<campaign-slug>/<NN>/Session NN - Recap.md` — player-facing recap (`type: recap`)
+2. `wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md` — player-facing recap (`type: recap`)
 
 If neither exists, ask:
 
