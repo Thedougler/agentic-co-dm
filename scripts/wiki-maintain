@@ -1,0 +1,329 @@
+#!/usr/bin/env python3
+"""Layer A wiki maintenance report facade (ATE / #90).
+
+Bundles deterministic Layer A checks into one compact path+metric JSON.
+No new policy, no prose scoring, no auto remorph/merge.
+
+Cite: docs/agents/wiki-maintenance-loop.md
+
+Usage (repo root):
+  ./scripts/wiki-maintain --report
+  python3 scripts/wiki-maintain --report --vault wiki
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import subprocess
+import sys
+from pathlib import Path
+from typing import Any
+
+VERSION = 1
+CITE = "docs/agents/wiki-maintenance-loop.md"
+
+ROOT = Path(__file__).resolve().parents[1]
+WIKI_LINT = ROOT / "scripts" / "wiki-lint"
+CONTEXT_WASTE = ROOT / "scripts" / "context-waste-scan.py"
+TOKEN_COUNT = ROOT / "scripts" / "token-count.py"
+
+# Ignore inbox placeholders — leftover staging is anything else under _raw/.
+RAW_IGNORE_NAMES = frozenset({".gitkeep", ".gitignore", ".DS_Store"})
+
+
+def run_json(cmd: list[str], cwd: Path) -> tuple[int, dict[str, Any] | None, str]:
+    """Run command; parse stdout JSON. Returns (returncode, data|None, stderr)."""
+    proc = subprocess.run(cmd, cwd=cwd, capture_output=True, text=True)
+    err = (proc.stderr or "").strip()
+    text = (proc.stdout or "").strip()
+    if not text:
+        return proc.returncode, None, err or "no stdout"
+    try:
+        return proc.returncode, json.loads(text), err
+    except json.JSONDecodeError as exc:
+        return proc.returncode, None, err or f"invalid JSON: {exc}"
+
+
+def step_wiki_lint(vault: str, cwd: Path) -> dict[str, Any]:
+    """A1: ./scripts/wiki-lint --json — summary counts only (no findings dump)."""
+    code, data, err = run_json(
+        [sys.executable, str(WIKI_LINT), "--json", vault], cwd=cwd
+    )
+    if data is None:
+        return {
+            "step": "A1",
+            "tool": "scripts/wiki-lint",
+            "ok": False,
+            "exit_code": code,
+            "error": err,
+        }
+    counts = data.get("counts") or {}
+    hard_keys = list((data.get("schema") or {}).get("hard") or ())
+    hard_counts = {k: int(counts.get(k, 0) or 0) for k in hard_keys}
+    soft_counts = {
+        k: int(v or 0)
+        for k, v in sorted(counts.items())
+        if k not in hard_counts and int(v or 0)
+    }
+    hard_total = sum(hard_counts.values())
+    hard_fail = bool(data.get("hard_fail"))
+    return {
+        "step": "A1",
+        "tool": "scripts/wiki-lint",
+        "ok": True,
+        "exit_code": code,
+        "hard_fail": hard_fail,
+        "scope": data.get("scope") or {},
+        "hard_counts": hard_counts,
+        "soft_counts": soft_counts,
+        "metric": {
+            "hard_total": hard_total,
+            "soft_nonzero_keys": len(soft_counts),
+            "pages": (data.get("scope") or {}).get("pages"),
+        },
+    }
+
+
+def step_context_waste(vault: str, cwd: Path) -> dict[str, Any]:
+    """A2: path+metric hits + summary (detector only; S3/S4 are leads)."""
+    code, data, err = run_json(
+        [sys.executable, str(CONTEXT_WASTE), "--vault", vault], cwd=cwd
+    )
+    if data is None:
+        return {
+            "step": "A2",
+            "tool": "scripts/context-waste-scan.py",
+            "ok": False,
+            "exit_code": code,
+            "error": err,
+        }
+    hits = data.get("hits") or []
+    by_signal: dict[str, int] = {}
+    hard_hits = 0
+    for hit in hits:
+        sig = str(hit.get("signal") or "unknown")
+        by_signal[sig] = by_signal.get(sig, 0) + 1
+        if str(hit.get("severity") or "") == "hard":
+            hard_hits += 1
+    # Keep path+metric leads; drop any accidental body-sized fields.
+    compact_hits = []
+    for hit in hits:
+        compact_hits.append(
+            {
+                "signal": hit.get("signal"),
+                "severity": hit.get("severity"),
+                "path": hit.get("path"),
+                "metric": hit.get("metric") or {},
+            }
+        )
+    return {
+        "step": "A2",
+        "tool": "scripts/context-waste-scan.py",
+        "ok": True,
+        "exit_code": code,
+        "summary": data.get("summary") or {},
+        "by_signal": dict(sorted(by_signal.items())),
+        "metric": {
+            "hits": len(hits),
+            "hard_hits": hard_hits,
+            "skills_scanned": (data.get("summary") or {}).get("skills_scanned"),
+            "pages_scanned": (data.get("summary") or {}).get("pages_scanned"),
+        },
+        "hits": compact_hits,
+    }
+
+
+def step_token_count(vault: str, cwd: Path) -> dict[str, Any]:
+    """A3: soft-skip when scripts/token-count.py is not landed yet."""
+    if not TOKEN_COUNT.is_file():
+        return {
+            "step": "A3",
+            "tool": "scripts/token-count.py",
+            "ok": True,
+            "skipped": True,
+            "reason": "scripts/token-count.py not present",
+            "metric": {"total_tokens": None},
+        }
+    vault_path = Path(vault)
+    if not vault_path.is_absolute():
+        vault_path = (cwd / vault_path).resolve()
+    code, data, err = run_json(
+        [sys.executable, str(TOKEN_COUNT), "--sum", str(vault_path)], cwd=cwd
+    )
+    if data is None:
+        # Fallback: bare path args if --sum not supported yet
+        code2, data2, err2 = run_json(
+            [sys.executable, str(TOKEN_COUNT), str(vault_path)], cwd=cwd
+        )
+        if data2 is None:
+            return {
+                "step": "A3",
+                "tool": "scripts/token-count.py",
+                "ok": False,
+                "skipped": False,
+                "exit_code": code2 if code2 else code,
+                "error": err2 or err,
+                "metric": {"total_tokens": None},
+            }
+        data, code, err = data2, code2, err2
+    total = data.get("total_tokens")
+    if total is None and isinstance(data.get("files"), list):
+        total = sum(int(f.get("tokens") or 0) for f in data["files"])
+    return {
+        "step": "A3",
+        "tool": "scripts/token-count.py",
+        "ok": True,
+        "skipped": False,
+        "exit_code": code,
+        "encoding": data.get("encoding"),
+        "metric": {
+            "total_tokens": total,
+            "files": len(data.get("files") or []) if isinstance(data.get("files"), list) else None,
+        },
+    }
+
+
+def step_raw_empty(vault: str, cwd: Path) -> dict[str, Any]:
+    """A5: report leftover staging files under vault/_raw/ (path+bytes)."""
+    raw_dir = Path(vault)
+    if not raw_dir.is_absolute():
+        raw_dir = (cwd / raw_dir).resolve()
+    raw_dir = raw_dir / "_raw"
+    if not raw_dir.is_dir():
+        return {
+            "step": "A5",
+            "tool": "raw-empty-check",
+            "ok": True,
+            "clear": True,
+            "path": _rel(cwd, raw_dir),
+            "metric": {"leftover_count": 0},
+            "leftovers": [],
+            "note": "_raw directory missing (treated as clear)",
+        }
+    leftovers: list[dict[str, Any]] = []
+    for path in sorted(raw_dir.rglob("*")):
+        if not path.is_file():
+            continue
+        if path.name in RAW_IGNORE_NAMES:
+            continue
+        rel = _rel(cwd, path)
+        try:
+            size = path.stat().st_size
+        except OSError:
+            size = None
+        leftovers.append({"path": rel, "metric": {"bytes": size}})
+    return {
+        "step": "A5",
+        "tool": "raw-empty-check",
+        "ok": True,
+        "clear": len(leftovers) == 0,
+        "path": _rel(cwd, raw_dir),
+        "metric": {"leftover_count": len(leftovers)},
+        "leftovers": leftovers,
+    }
+
+
+def _rel(cwd: Path, path: Path) -> str:
+    try:
+        return path.resolve().relative_to(cwd.resolve()).as_posix()
+    except ValueError:
+        return str(path)
+
+
+def build_report(vault: str, cwd: Path) -> dict[str, Any]:
+    a1 = step_wiki_lint(vault, cwd)
+    a2 = step_context_waste(vault, cwd)
+    a3 = step_token_count(vault, cwd)
+    a5 = step_raw_empty(vault, cwd)
+
+    hard_total = int((a1.get("metric") or {}).get("hard_total") or 0) if a1.get("ok") else None
+    hard_fail = bool(a1.get("hard_fail")) if a1.get("ok") else True
+    waste_hard = int((a2.get("metric") or {}).get("hard_hits") or 0) if a2.get("ok") else None
+    raw_clear = bool(a5.get("clear")) if a5.get("ok") else False
+    quiet = (
+        a1.get("ok")
+        and a2.get("ok")
+        and a5.get("ok")
+        and not hard_fail
+        and hard_total == 0
+        and raw_clear
+        and (waste_hard or 0) == 0
+    )
+
+    summary = {
+        "a1_hard_fail": hard_fail if a1.get("ok") else None,
+        "a1_hard_total": hard_total,
+        "a2_hits": (a2.get("metric") or {}).get("hits") if a2.get("ok") else None,
+        "a2_hard_hits": waste_hard,
+        "a2_by_signal": a2.get("by_signal") if a2.get("ok") else None,
+        "a3_status": "skipped" if a3.get("skipped") else ("ok" if a3.get("ok") else "error"),
+        "a3_total_tokens": (a3.get("metric") or {}).get("total_tokens"),
+        "a5_clear": raw_clear if a5.get("ok") else None,
+        "a5_leftover_count": (a5.get("metric") or {}).get("leftover_count"),
+        "quiet": quiet,
+    }
+
+    return {
+        "version": VERSION,
+        "cite": CITE,
+        "mode": "report",
+        "layer": "A",
+        "vault": vault,
+        "summary": summary,
+        "steps": {
+            "A1_wiki_lint": a1,
+            "A2_context_waste": a2,
+            "A3_token_count": a3,
+            "A5_raw_empty": a5,
+        },
+    }
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument(
+        "--report",
+        action="store_true",
+        required=True,
+        help="emit Layer A JSON aggregate (summary counts + path+metric)",
+    )
+    parser.add_argument(
+        "--vault",
+        default="wiki",
+        help="vault path relative to repo root (default: wiki)",
+    )
+    parser.add_argument(
+        "--summary-only",
+        action="store_true",
+        help="print only the top-level summary object (counts)",
+    )
+    args = parser.parse_args(argv)
+
+    cwd = ROOT
+    if not WIKI_LINT.is_file():
+        print("scripts/wiki-lint missing", file=sys.stderr)
+        return 2
+    if not CONTEXT_WASTE.is_file():
+        print("scripts/context-waste-scan.py missing", file=sys.stderr)
+        return 2
+
+    report = build_report(args.vault, cwd)
+    if args.summary_only:
+        print(json.dumps(report["summary"], indent=2, sort_keys=True))
+    else:
+        print(json.dumps(report, indent=2, sort_keys=False))
+
+    # Report facade: exit 0 when JSON produced; step failures are in payload.
+    if not all(
+        report["steps"][k].get("ok")
+        for k in ("A1_wiki_lint", "A2_context_waste", "A5_raw_empty")
+    ):
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
