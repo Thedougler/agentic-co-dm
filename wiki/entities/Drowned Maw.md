@@ -26,7 +26,7 @@ region: "eastern edge"
 > The Drowned Maw is a deep trench at the chart edge where dark water pulls lines sideways and currents reverse under the hull. Storm wall and broken horizon sit over cold spray. Wet rope goes taut before the next swell clears.
 
 
-## At a glance
+## At a Glance
 A deep trench at the edge of charts where currents reverse and sailors refuse to say what lies beyond; feels hungry and load-bearing.
 ## Five-sentence kernel
 - **Function:** A trench, boundary, and pressure point whose currents and seal shape the wider sea.
@@ -81,7 +81,7 @@ A deep trench at the edge of charts where currents reverse and sailors refuse to
 - [[Central Strait]] · [[Shelfworks]] · [[High Eyrie]] · [[Red Lady - Dead Lady]] · [[Pearl of Souls]]
 ## Hooks
 - Complete Maw map pilgrimage; decide Pearl’s fate; understand fissure before seal answers.
-## Secrets (DM)
+## Secrets
 - Far side, exact planar mechanics, and what was sealed are **DM seed / unresolved canon**.
 ## Mechanics and return
 - Storm/trench use Difficult Terrain, cover, travel, hazard telegraphs; Study/Utilize can map or anchor. No single roll blocks return.

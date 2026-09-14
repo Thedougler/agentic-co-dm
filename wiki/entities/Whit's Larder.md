@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Whit's Larder]] is a named island or site in the western [[Midchain]]. Impossible cuisine made from ingredients that shouldn't be local at all.

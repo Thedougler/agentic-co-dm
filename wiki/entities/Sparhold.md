@@ -26,7 +26,7 @@ region: "Midchain"
 > Sparhold is the timber fortress-market on the harbour slope of Sparhold Isle, the closest Midchain harbour to the Teeth. Cut-over ground above the walls faces Teethward water. Wet timber and pitch mark berths where arrivals get counted.
 
 
-## At a glance
+## At a Glance
 The next stop on the raiding-fleet trail; details remain open. The settlement is a place to ask where the taken went while every answer can make someone richer, safer, or more exposed.
 ## Five-sentence kernel
 - **Function:** **DM seed (unconfirmed):** a Midchain stop where crews exchange route news, labour, and protection.
@@ -98,7 +98,7 @@ Advance on public accusation, rest after confirmed sighting, lost witness, or vi
 - [[Uncertainty]] · [[Midchain]] · [[Aruhe - Hungry Isle]] · [[Warren]] · [[Verdant Teeth]]
 ## Hooks
 - Where the taken went; who profits from silence; rescue, expose, or preserve autonomy.
-## Secrets (DM)
+## Secrets
 - Physical layout, local leadership, specific faction names, and exact next destination are **DM seed (unconfirmed)**. Established canon is its position as next trail stop in Midchain.
 ## Mechanics and return
 - Use social access, cover, ordinary terrain, and Influence/Study/Search/Utilize. Combat is not required. Failure costs time/trust/position.

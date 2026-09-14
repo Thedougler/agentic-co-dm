@@ -36,7 +36,7 @@ relationships:
 > [!narration] Narration
 > Crushing cold, flattening pressure. A stone floor worn smooth by nothing that ever walked it runs into black water. Pale lights drift above like stars, in place of any face or body, the last threads of a two-thousand-year-old machine. A voice arrives with no mouth, unhurried, the pace of something that calls a century *not long*. The lights pulse once and drift on.
 
-## Relationships
+## Connections
 
 - [[Drowned Maw]]: his domain on the border between [[Shattered Sea]] and what lies past the fissure, which he's sworn to [[Guard]] and has held shut since long before Umberlee claimed the waters above it.
 - [[Antheri Ruins]]: his builders, not a god but [[Antheri]] technology. Dead builders lost a mind and built it a body that could survive the trench floor; that body is the Ruins' deep machine, and Auralis isn't inside it, he is it.

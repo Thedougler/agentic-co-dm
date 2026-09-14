@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[The Weeping Stair]] is a named island or site in the western [[Midchain]]. A submerged staircase rumored to lead to a drowned city. Nobody has confirmed reaching the bottom.

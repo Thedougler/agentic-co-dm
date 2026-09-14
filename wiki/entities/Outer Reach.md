@@ -26,7 +26,7 @@ region: "past Drowned Maw"
 > Outer Reach is cold water past the Maw with no resupply and no pilot-trusted landmark. Currents reverse under the hull. Deep salt and wet stone mark sea that offers no harbour.
 
 
-## At a glance
+## At a Glance
 Water past the [[Drowned Maw]], with no resupply or pilot-trusted landmark; feels directionless, reversing, and unwilling to finish a story.
 
 ## Aspects
@@ -48,7 +48,7 @@ Water past the [[Drowned Maw]], with no resupply or pilot-trusted landmark; feel
 - Cross only after deciding what no resupply means.
 - Track a current reversal without pretending the water is mapped.
 
-## Secrets (DM)
+## Secrets
 Far geography, planar mechanics, and trustworthy landmarks are unresolved; this is a route edge, not a blank invitation to invent settlements.
 
 ## Drowned Maw continuity

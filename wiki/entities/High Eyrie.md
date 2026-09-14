@@ -25,7 +25,7 @@ region: "Crown Islands"
 > [!narration] Narration
 > A basalt stack stands beyond the eastern island chain, high over discoloured water. Wind shears the rock face, and the stack holds a clear view of the approaches below.
 
-## At a glance
+## At a Glance
 A basalt stack beyond the eastern Crown chain, held by the [[Sentinels of the Eyrie]] for two hundred years and overlooking the [[Drowned Maw]].
 
 ## Sentinel refusal
@@ -37,7 +37,7 @@ The [[Dravosi Crown]] has offered the Sentinels three deals. They have refused a
 ## Connections
 - → [[Crown Islands]] · [[Stenmark]] · [[Drowned Maw]] · [[Sentinels of the Eyrie]]
 
-## Secrets (DM)
+## Secrets
 The seal and founding records remain tied to the existing Sentinel material. The Crown's three refusals are a political pressure, not proof that the Sentinels understand the Crown's hidden founder.
 
 **Provenance:** Dump source 2026-09-05; legacy `/Users/nick/shattered-sea/wiki/shattered-sea/schism-of-the-eyrie/location-high-eyrie.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/schism-of-the-eyrie/faction-sentinels-of-the-eyrie.md`.

@@ -34,7 +34,7 @@ relationships:
 > The Clear Lake fills a crater of cold clear water and steep green walls, wide enough that the far bank thins to a tree line and pale cliff scars. A shelf of black hexagonal stone steps into water so clear that schools of small fish show over round pale rocks and moss. Marsh grass and a slow brown channel gather along one side, then the color falls into deep blue. Cool wet air comes off the lake, and the stone underfoot is solid enough to walk or keep along the shore toward the higher green. Redheart berries bead along the marsh edge, while stonepears hang low where the shore trees meet the black shelf.
 
 ---
-## At a glance
+## At a Glance
 Clear Lake is the inland freshwater basin at the uphill end of Aruhe's rivers. A shelf of black hexagonal stone and glass-clear shallows make shore travel and camping straightforward. Otter families occupy this water. The outlet fans downhill into [[Aruhe - River]]; the marshy southern shore becomes [[Aruhe - The Marshes]]; the marsh and stone edge also continue toward [[Aruhe - Memorial Grove]]. Stay on a valley rim and the basin can be skipped; stay on the shelf and it remains water and stone.
 
 ---

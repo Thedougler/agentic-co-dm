@@ -32,7 +32,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[La Cenere]] is named only as the chapter after [[Lavinia Sordi]] left an unnamed [[Dravosi Crown]] prison. No other facts are established.
 

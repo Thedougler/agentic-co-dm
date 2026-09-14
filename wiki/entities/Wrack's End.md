@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Wrack's End]] is a named island or site in the eastern [[Midchain]]. Every message-in-a-bottle in the Sea eventually washes up here; read by a hermit who answers none.
 

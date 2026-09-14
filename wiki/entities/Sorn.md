@@ -26,7 +26,7 @@ region: "verdant-teeth"
 > Sorn is the farm heart of the Teeth: flood-pulse crop lanes standing in water behind one guarded beach of pale sand. A long-hut sits on the sand. The forest already takes the next inland row while the beach stays recut.
 
 
-## At a glance
+## At a Glance
 Sorn is the farm heart of the Teeth: flood-pulse várzea, Botukuri lanes, and one guarded beach. The beach stays clean because someone recuts it; the forest is already taking the next row.
 
 ## Playable structure

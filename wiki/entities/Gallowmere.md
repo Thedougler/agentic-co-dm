@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Gallowmere]] is a named island or site in the western [[Midchain]]. A former execution island whose ghost trials reportedly still run after midnight.

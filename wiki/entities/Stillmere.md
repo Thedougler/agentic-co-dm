@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Stillmere]] is named as the proving ground on [[Otel Karn]]. Fatal wounds are not fatal, but they still hurt and nothing heals. The source offers it as a place for consequence-free duels before the cost becomes clear.
 

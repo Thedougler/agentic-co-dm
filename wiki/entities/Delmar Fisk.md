@@ -138,7 +138,7 @@ Attuned: Cloak of the Manta Ray, [[Flying Boots|Winged Boots]] (`4` charges, reg
 | Common clothes, iron pot, shovel, Tinker's Tools, Thieves' Tools | carried |
 | Oil `7`, ball bearings `1000`, rations `5`, rope, bell, tinderbox, waterskin, hooded lantern, candles `10`, crowbar | carried |
 
-# Relationships
+## Connections
 
 | Relationship | Meaning |
 | --- | --- |

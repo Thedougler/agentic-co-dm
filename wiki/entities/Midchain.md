@@ -26,7 +26,7 @@ region: "Shattered Sea"
 > Midchain is densely packed small tropical islands of reefs, free-port jetties, and low green ground. Pilots call depths while council bells and dock offers compete. Brine and fruit ride the air over channels local boats already use. Grey-green water gives way to turquoise clear enough to show reef shadows. Smoke threads from unmarked coves: cook fires, kilns, and something that probably should not be burning.
 
 
-## At a glance
+## At a Glance
 Densely packed small tropical islands, free ports, reefs, and local councils; feels busy beyond enforcement.
 ## Five-sentence kernel
 - **Function:** A crowded middle route where island councils and free ports move people and goods outside strong Crown control.
@@ -92,7 +92,7 @@ Densely packed small tropical islands, free ports, reefs, and local councils; fe
 - [[Central Strait]] · [[Verdant Teeth]] · [[Sparhold]] · [[Aruhe - Hungry Isle]]
 ## Hooks
 - Follow the fleet trail; secure pilots; keep occupation from becoming the default answer.
-## Secrets (DM)
+## Secrets
 - New port names, exact fleet routes, and council structure are **DM seed (unconfirmed)**.
 ## Mechanics and return
 - Reef routes are Difficult Terrain for vessels; failure costs time or position, not the only clue. Use Study/Influence/Utilize for charts, tokens, signals.

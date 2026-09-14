@@ -102,7 +102,7 @@ Attuned: Cloak of Protection.
 | Backpack | equipped |
 | Book, drum, orb, oil `10`, parchment `10`, tinderbox, lamp, ink pen, ink | carried |
 
-# Relationships
+## Connections
 
 | Relationship | Meaning |
 | --- | --- |

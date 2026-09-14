@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Ussamet]] is a named island or site in the western [[Midchain]]. Half-sunken ruins that surface only at the lowest tides; on a schedule only the sea seems to keep.

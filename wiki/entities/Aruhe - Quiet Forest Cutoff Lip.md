@@ -21,7 +21,7 @@ summary: Dry packed shelf at the Quiet grassland seam, where knee-roots, a seep,
 > Packed dirt holds a shelf wide enough to sleep on between the gold-green grass slope and the first dark Quiet trunks. Hollow knee-roots stand chest-high along the wood in a pale open-mouthed wall, and a trail of crushed prints keeps to that lip instead of dropping back to the water. Downslope, a rock seep threads through the grass and flashes between black stones. Past the knees the small sounds stop, and the only drip is water off leaf onto packed dirt.
 
 ---
-## At a glance
+## At a Glance
 Cutoff Lip is the first Quiet, a dry packed print shelf above a downslope seep on the seam of [[Aruhe - Quiet Forest]], [[Aruhe - Grasslands]], and [[Aruhe - River]], inland of [[Aruhe - River Slack Basin|Slack Basin]]. Unlike the river cuts, this site is about the narrow shelf: grass and water fall away west, hollow knee-roots wall the east, and the usable path stays between them. Stay on a ridge or drop back to the water and this shelf can be skipped; camp the packed dirt and it remains prints, knee-roots, a root-bowl just inside the wood, and cover that hides a standing body. The bloody-bank detour from Slack Basin climbs onto this lip. The prints keep north along it toward inland smoke.
 
 ---

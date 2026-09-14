@@ -25,7 +25,7 @@ region: "between Crown Islands"
 > [!narration] Narration
 > Long pale reef ridges break the surface between the Crown islands. The water never reads as ordinary sea, and the ridges stay in the way of any straight run.
 
-## At a glance
+## At a Glance
 Long pale reef ridges breaking the surface between the Crown Islands; three generations of charts have failed to make them ordinary water.
 
 ## Arrangement (fiction only)

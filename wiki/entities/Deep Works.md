@@ -25,7 +25,7 @@ region: "Drowned Maw / Antheri fissure terminus"
 > [!narration] Narration
 > Past five hundred feet, the Antheri stone is too clean for ruins. Pale channels run beside black water, and the water itself starts to act on the body like a place with a different set of rules.
 
-## At a glance
+## At a Glance
 The deepest Antheri tier, past 500 feet, containing the soul-pledge chamber and the terminus of the Maw fissure; feels pristine, hostile, and only partly of this plane.
 
 ## Canon
@@ -38,7 +38,7 @@ The deepest Antheri tier, past 500 feet, containing the soul-pledge chamber and 
 - → [[Mid-Works]] (200–500 feet)
 - → [[Drowned Maw]] · [[Antheri]] · [[Pearl of Souls]]
 
-## Secrets (DM)
+## Secrets
 The chamber looks built for repeated soul-pledge use. Whether any minds besides Auralis remain active is unknown. The elemental water and fissure are not a committed [[Istishia]] villain plot.
 
 ## Provenance

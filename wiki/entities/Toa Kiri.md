@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Toa Kiri]] is a named island or site in the western [[Midchain]]. Pearl-diving island where the workers labor in total silence; bound to a superstition about the sea and speech.

@@ -21,7 +21,7 @@ summary: Volcanic underworld beneath Aruhe linking the Marshes, Memorial Grove, 
 > The lava tubes under Aruhe open as broad black basalt passages, high enough for old roots to hang through breaks in the ceiling and trail down toward the stone. Shallow water gathers across the uneven floor in dark pools and cave seepage, with loose rock underfoot and a tunnel mouth continuing into deeper shadow. Warm mineral air moves out of the vents in pale breaths, carrying the sound of drips and small echoes along the walls. Near the roof breaks, ghost plums hang beneath wet roots, while stonepears sit heavy on branches forcing through cracks beside the seepage.
 
 ---
-## At a glance
+## At a Glance
 The Lava Tubes are the underworld beneath Aruhe's living surface: old volcanic passages, warm vents, root curtains, and cave routes through basalt. [[Aruhe - The Marshes]] opens into them through a subsurface breach; [[Aruhe - Memorial Grove]] reaches them by a root-and-grave descent; free-flowing cave seepage can lead toward [[Aruhe - Clear Lake]]. The surface is a safer bypass. Entering commits travelers to darkness, vertical travel, uneven stone, and routes that may change when cave life or the descent is disturbed.
 
 ---

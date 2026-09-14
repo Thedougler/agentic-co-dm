@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Verrow's Cradle]] is a named island or site in the western [[Midchain]]. A floating orphanage quietly funded by a retired pirate captain's old treasure.

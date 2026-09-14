@@ -50,7 +50,7 @@ Cargo broker and document transporter at [[Marrow's]] in the Warren. Moves thing
 
 No stats given in source.
 
-## Relationships
+## Connections
 
 - [[Marrow's]]: his alcove and place of business.
 - [[Warren|The Warren]]: where Marrow's sits.

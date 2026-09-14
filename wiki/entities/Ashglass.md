@@ -35,7 +35,7 @@ relationships:
 > [!narration] Narration
 > Burned jungle has gone to black glass and ash-drift on the upper slopes. At night the crater glows faintly, visible to a ship that passes close enough.
 
-## At a glance
+## At a Glance
 
 [[Ashglass]] is a dead volcanic island in the eastern [[Midchain]]. [[Aleksander Malone]]'s note names it as a young red dragon's lair that does not overlap [[Blackrule]]. A later caldera note describes the same eastern dead volcano without reprinting the name; the identity is inferred. ^[inferred]
 

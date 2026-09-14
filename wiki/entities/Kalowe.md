@@ -27,7 +27,7 @@ region: "Western Midchain"
 
 
 
-## At a glance
+## At a Glance
 Three reef-linked islets joined by stone bridges, ringed by reef with one navigable gap; feels crowded, practical, and deliberately unpapered.
 
 ## Aspects
@@ -53,7 +53,7 @@ Three reef-linked islets joined by stone bridges, ringed by reef with one naviga
 - Find out what still rings the yard bell at [[Ashkevet]].
 - Decide what the Chain Council's refusal to seat a ruler costs during a crisis.
 
-## Secrets (DM)
+## Secrets
 Kalowe's free-port posture is practical rather than empty of power: pilots, the Chain Council, and the shrine each control a different part of arrival. The exact fort hierarchy remains open.
 
 ## Legacy continuity

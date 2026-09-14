@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Penance Bar]] is a named island or site in the western [[Midchain]]. A sandspit shrine doing endless penance for devils it never summoned; its priest is quietly paying off a debt of his own.
 

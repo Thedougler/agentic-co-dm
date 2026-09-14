@@ -136,7 +136,7 @@ Attuned: Bracers of Archery, Cloak of Elvenkind. Eyes of the Eagle do not list a
 | [[Grung - Authority Seal]] | carried, not worn, attunement required |
 | Cartographer's Tools, bedrolls `2`, tent, sprig of mistletoe, traveler's clothes, oil `2`, rations `10`, rope, tinderbox, torches `10`, waterskin | carried |
 
-# Relationships
+## Connections
 
 | Relationship | Meaning |
 | --- | --- |

@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Marlstrand]] is a named island or site in the western [[Midchain]]. Oracles read accurate futures in the pattern of stranded jellyfish.

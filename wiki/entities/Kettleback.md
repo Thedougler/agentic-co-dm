@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Kettleback]] is a named island or site in the western [[Midchain]]. Old mine tunnels running hot off a geothermal vent; repurposed into an unlicensed alchemical lab.

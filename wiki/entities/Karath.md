@@ -26,7 +26,7 @@ region: "Verdant Teeth / eastern Midchain"
 > Rainforest crowds tannin-black river mouths behind reef gaps. No open landing shows. Wet cuts run inland toward hatchery huts and pens, and the near shore sits only a short channel from another green island.
 
 
-## At a glance
+## At a Glance
 Karath is the Grung raid and hatchery island, and [[Aruhe - Hungry Isle]]'s near neighbor across a channel about half a mile wide at the closest edge. It is close to Aruhe's rim, not to Aruhe's heart; the island is country-scale in its own right.
 
 ## Five-sentence kernel
@@ -66,11 +66,11 @@ The island’s poison race is also the clans’ supply contradiction: hidden Gol
 - A diet/sealing trace that does not match public caste teaching points toward the gold farms.
 - Exposing the farms may fracture lower-caste trust; rescuing captives may make the fleet strike sooner.
 
-## Links
+## Connections
 - [[Verdant Teeth]] · [[Grung clans]] · [[Aruhe - Hungry Isle]] · [[Sorn]] · [[Dreth]]
 - [[The taken 314]] · [[Pursue the Grung raiding fleet]] · [[Grung Color and the Sealing Rite]]
 
-## Secrets (DM)
+## Secrets
 Karath's gold reagent farms are secret even from lower castes. Simone has **never received Karath toxin**; her stalled partial gold is not proof that she controls or succeeded in the Karath process.
 
 ## Geography ingest — dual continuity

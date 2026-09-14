@@ -33,7 +33,7 @@ region: "south of Chult"
 ![[shattered-sea-overview-map.jpg|Shattered Sea overview map]]
 
 
-## At a glance
+## At a Glance
 A roughly 60,000-square-mile archipelago weeks beyond the last charted Faerûn coast; two island arcs and a shipping corridor make every crossing a negotiation. Feels remote, exposed, and politically unfinished.
 ## Current state
 
@@ -92,7 +92,7 @@ A roughly 60,000-square-mile archipelago weeks beyond the last charted Faerûn c
 - Follow the Grung trail from [[Uncertainty]] to [[Sparhold]] and [[Aruhe - Hungry Isle]].
 - Decide what to do with the Pearl of Souls and the Drowned Maw.
 - Learn whether tribute is protection, exploitation, or both.
-## Secrets (DM)
+## Secrets
 - **Taken trail:** Nona’s desk and Warren contacts; signs of Grung movement; the trail’s directional endpoint at Sparhold.
 - **Maw boundary:** Sentinel pilgrimage/map; Antheri salvage and Pearl signal; a current or fissure that behaves unlike ordinary water.
 ## Pressure and location moves

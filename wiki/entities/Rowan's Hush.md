@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Rowan's Hush]] is a named island or site in the eastern [[Midchain]]. A silent monastic order that communicates entirely by hand-sign.
 

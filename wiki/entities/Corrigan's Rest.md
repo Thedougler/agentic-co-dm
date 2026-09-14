@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Corrigan's Rest]] is a welcoming hideaway for retired pirates in the northern [[Midchain]]. The source names it only to say it does not overlap [[Blackrule]].

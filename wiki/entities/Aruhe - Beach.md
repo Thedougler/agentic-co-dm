@@ -34,7 +34,7 @@ relationships:
 > Western Landing is a jagged coral reef about half a mile offshore; at low tide the teeth show, and one boat gap leads to a short shingle beach that takes only minutes to cross end to end. Elsewhere the coast is cliffs, coves, or beaches trapped behind reef. Surf works the coral and salt spray carries over loose stone. At the inland edge, broad wet leaves hold [[Ghost Plum|ghost plums]] in the shade, while [[Giant's Guava|giant's guavas]] hang deeper in the green above the stream.
 
 ---
-## At a glance
+## At a Glance
 Western Landing is Aruhe's known sea approach and retreat edge: a jagged reef, one usable boat gap, and a short shingle beach at the island's western rim. [[Sparhold]] has the established open-water route; [[Karath]] is close to one edge but does not shorten the country-scale journey to Aruhe's heart. The beach connects inland to [[Aruhe - Old Gardens]] and offshore to [[Uncertainty]]. Observe from the water for a safer but less informative approach; commit through the gap to reach the island.
 
 ---

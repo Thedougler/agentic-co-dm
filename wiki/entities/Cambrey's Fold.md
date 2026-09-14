@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Cambrey's Fold]] is a named island or site in the eastern [[Midchain]]. A pocket of terrain that folds space. Walk far enough and you loop back sooner than the distance should allow.
 

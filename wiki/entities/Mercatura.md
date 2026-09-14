@@ -28,7 +28,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 Mercatura is a functioning city. [[Solange Barret]]'s ritual ran beneath it. Season 1 records [[Otar the Foul]]'s defeat and the Mercatura bombs as a closed thread.
 

@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Osha's Slip]] is a stilt village over the eastern mudflats of [[Calder's Tooth and Port Tidefall]]. The source names it as a hub for local smuggling.
 

@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Slackwater]] is a named island or site in the southern [[Midchain]]. The row's one shared harbor, kept calm by the ruling family's tide-calming power.

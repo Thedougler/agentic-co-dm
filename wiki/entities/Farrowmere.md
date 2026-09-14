@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Farrowmere]] is a named island or site in the western [[Midchain]]. Locals farm a colony of dire crocodiles instead of fighting them.

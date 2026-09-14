@@ -25,7 +25,7 @@ region: "Crown Islands"
 > [!narration] Narration
 > Deep water holds a naval yard, Admiralty buildings, and a town packed against a fortified bight. The island reads as an army machine: docks, yards, and guns on the same deep basin.
 
-## At a glance
+## At a Glance
 The army island of the [[Dravosi Crown]], named from the old *hær-wīc*, where the Naval Yard, Admiralty, Harwick Town, and the Bight make a fortified machine of deep water.
 
 ## The Yard and Admiralty
@@ -40,7 +40,7 @@ Naval ratings, officers, shipwrights, Admiralty staff, civilians who service the
 ## Connections
 - → [[Crown Islands]] · [[Calven and Calveno]] · [[Aldenmere]] · [[Central Strait]] · [[Outer Reach]]
 
-## Secrets (DM)
+## Secrets
 Sealed orders can move a captain, company, or vessel without a civic petition. The Admiralty and [[Governor Voss]]'s civic authority are deliberately separate systems.
 
 **Provenance:** Dump source 2026-09-05; legacy `/Users/nick/shattered-sea/wiki/shattered-sea/region-harwick.md`.

@@ -26,7 +26,7 @@ region: "verdant-teeth"
 > Orak is high karst: stone towers in cloud, forest in the clefts, and sinkholes that breathe air colder than the day. White water falls toward drowned trees. The useful island is vertical; the holes are shafts, not doors.
 
 
-## At a glance
+## At a Glance
 Orak is the high karst twin to Dreth: towers, sinkholes, clefts, and wet dark nests. It has no sanctioned landing. The useful island is vertical and the holes are shafts, not doors.
 
 ## Playable structure

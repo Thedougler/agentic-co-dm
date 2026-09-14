@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Candlemere]] is a named island or site in the southern [[Midchain]]. A cliffside shrine tending a flame that has never once gone out.

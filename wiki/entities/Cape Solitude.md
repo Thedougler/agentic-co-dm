@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Cape Solitude]] is the northern tip of [[Calder's Tooth and Port Tidefall]]. A ruined lighthouse stands there with a dead light. The source says lighthouse crews vanished and that no tools or bodies remain. Harpies might explain it; the cause is unresolved.
 

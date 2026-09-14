@@ -32,7 +32,7 @@ relationships:
 > [!narration] Narration
 > Red grit settles on the deck in a fine film. Bare stone the colour of old brick steps out of water clear to the shelf. A single arch of rock stands off the nearest isle. Your chart shows four islands. You are looking at seven.
 
-## At a glance
+## At a Glance
 
 The [[Redwind Isles]] are under-charted islands in the [[Outer Reach]]. An ancient blue dragon may rule them.
 

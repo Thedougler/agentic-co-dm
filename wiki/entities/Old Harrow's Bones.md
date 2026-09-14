@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Old Harrow's Bones]] is a named island or site in the eastern [[Midchain]]. A single derelict ship so massive it's become an island; with a whole economy built into its ribs.
 

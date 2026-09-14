@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Thistlewick]] is a named island or site in the eastern [[Midchain]]. Brambles that produce a mild narcotic effect on contact.
 

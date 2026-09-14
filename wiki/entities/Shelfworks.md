@@ -26,7 +26,7 @@ region: "above Drowned Maw"
 > Shelfworks is Antheri ruins on a salvage shelf above the Maw: broken masonry, claim marks, winch lines, and dark water below. Stone shift and spray carry over salt, oil, and vibration. Crews work the unstable ground for components they can lift.
 
 
-## At a glance
+## At a Glance
 Salvage shelf holding ruins of [[Antheri]] above the trench; feels lucrative, unstable, and older than the charts.
 ## Five-sentence kernel
 - **Function:** A salvage site where Antheri remnants become components, claims, and clues above the Maw.
@@ -80,7 +80,7 @@ Stable → Strained → Contested → Transformed: working shelf → cracks/clai
 - [[Drowned Maw]] · [[Calven and Calveno]] · [[High Eyrie]] · [[Antheri]]
 ## Hooks
 - Salvage goldrush, Antheri truth, Maw mapping, practical invention.
-## Secrets (DM)
+## Secrets
 - Exact ruins, salvage owners, component effects, and shelf failure timing are **DM seed (unconfirmed)**.
 ## Mechanics and return
 - Exposed shelf uses cover, climbing, Difficult Terrain, hazard telegraphs; Study/Utilize for salvage. Failure costs position/resources, not all evidence.

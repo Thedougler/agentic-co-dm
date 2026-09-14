@@ -31,7 +31,7 @@ relationships:
 > [!narration] Narration
 > A chapterhouse is cut from black volcanic terrace-rock. One narrow stair drops to a landing that fits a single small boat. Inside, one hall serves as chapel and barracks, and Tyr's scales are cut into the altar stone.
 
-## At a glance
+## At a Glance
 
 Blackrule is a [[Dravosi Crown]] chapterhouse in [[Midchain]], not an ordinary station. [[Aleksander Malone]] chose it for himself.
 

@@ -32,7 +32,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 Otel Karn is a remote island and the root of the tradition the [[Dravosi Crown]] calls [[Khlysty - the Flock]]. Its old teaching treats flesh as the vehicle of spirit.
 

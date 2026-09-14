@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Ossuary Cay]] is a named island or site in the western [[Midchain]]. A bone-collecting cay tended by a death-cult that reads the tides through what washes ashore.

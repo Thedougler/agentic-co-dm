@@ -27,7 +27,7 @@ summary: Forest-edge grassland braid where inland prints split toward Spoke Ring
 > A packed dirt path crosses the tall gold-green grass, with one hard strand printed deep enough to follow and thinner strands peeling away on both sides. To the southwest, turquoise river water runs over pale stone beside a ring of wet cobbles. To the east, dark jungle forks open under hanging roots, pink-gold guavas bend over the grass, and pale oval fruit hangs back under wet leaves. Seed heads rasp in the open sky above the trail, the river keeps talking below it, and each wood fork takes the small grass-sounds as soon as the path enters shade.
 
 ---
-## At a glance
+## At a Glance
 Print Braid is a forest-edge stretch of [[Aruhe - Grasslands]], north of [[Aruhe - Quiet Forest Cutoff Lip|Cutoff Lip]], with [[Aruhe - River]] on the southwest bank and [[Aruhe - Quiet Forest]] as the jungle wall. Unlike Cutoff Lip's packed sleep-shelf and knee palisade, or Line Bank's used fishing margin, this site is a choice of strands through grass: one inland track holds hard prints toward [[Aruhe - Quiet Forest Spoke Ring|Spoke Ring]], side braids slide down to a cold cobble ring at the river, and darker forks enter fruiting wood with no matching feet. Stay on a ridge or turn back to Cutoff Lip and the braid can be skipped; walk the packed inland line and it remains prints through eight-foot grass, wood forks, and a river-side cobble ring that was used but not camped.
 
 ---

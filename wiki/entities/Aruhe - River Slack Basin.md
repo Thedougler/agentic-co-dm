@@ -42,7 +42,7 @@ relationships:
 > The river breaks around a low stone lip here, white water hissing past while a clear turquoise bowl sits almost still beside it. Tall gold-green grass presses close to the wet sand, and jungle roots hang over the quiet side like dark fingers touching the water. A thin cane stands in a dark smear at the shore, with muddy prints climbing from it into the first trees. Out in the slack, a closed wooden pack and a torn maroon sleeve hang in the clear water instead of drifting toward the rapids. The pool smells of cool stone and wet mud, and every sound from the fast river seems to stop at the edge of this basin.
 
 ---
-## At a glance
+## At a Glance
 Slack Basin is a claimed backwater of [[Aruhe - River]] inside [[Aruhe - Grasslands]], just upvalley of [[Aruhe - River - Line Bank|Line Bank]]. The live channel keeps moving over a rock lip. This scooped pool holds still. People already tried the water here and died, or they climbed out and left along the bloody bank into the trees. One inland straggler went back for a pack and is still in the slack. Stay on a ridge or grass edge and the basin can be skipped; drop to the wet sand and it remains slack water, remains that do not wash away, a living person at the hanging roots, and a forest-edge detour onto [[Aruhe - Quiet Forest Cutoff Lip]]. Downstream returns to Line Bank. [[Aruhe - River Otter|River Otters]] own this cut.
 
 ---

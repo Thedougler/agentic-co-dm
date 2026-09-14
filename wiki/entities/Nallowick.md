@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Nallowick]] is a named island or site in the eastern [[Midchain]]. A drifting peat-bog island with no fixed position; tracing the same slow circuit season after season.
 

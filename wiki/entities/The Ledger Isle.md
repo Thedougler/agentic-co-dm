@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[The Ledger Isle]] is a named island or site in the western [[Midchain]]. A reclusive accountant-sorcerer holds the true books behind half the region's smuggling.

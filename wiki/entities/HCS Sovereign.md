@@ -63,11 +63,11 @@ The Sovereign does not patrol or escort. News of its arrival travels weeks ahead
 
 The Sovereign can present overwhelming gun power, but the supplied source does not establish initiative, movement, ramming, boarding, component targeting, sinking, or destruction procedures. Use only the Gargantuan chassis and hull figures until those figures are authored.
 
-## At a glance
+## At a Glance
 
 Built at [[Harwick]] after six years on the stocks, the HCS Sovereign is the peak of the [[Dravosi Crown]]'s visible claim. Its arrival makes the Crown's authority legible across the Scatter at once.
 
-## Secrets (DM)
+## Secrets
 
 The Sovereign is a political instrument as much as a warship: its arrival makes every harbour read the flag together.
 

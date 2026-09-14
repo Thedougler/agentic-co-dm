@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Ferrymoor]] is a named island or site in the eastern [[Midchain]]. Departure point for a schedule-less; fog-bound ferry captained by someone who doesn't age.
 

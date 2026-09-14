@@ -29,7 +29,7 @@ region: "aruhe"
 > The forest stops touching the ground long before it reaches the sea. Mangrove trunks stand packed together in black water, their roots descending in cages, arches, spears, and tangled walls until there is scarcely enough open space to put a foot between them. The canopy seals overhead and turns daylight green. Ghost plums hang beneath the wet leaves in the fresher pockets, while almost-black rotheart clusters cling to old vinewood above the dark channels. Salt, mud, flowers, decay, and stagnant water hang together in the heat while insects crawl over bark and rise in clouds wherever something warm moves. Far beyond the roots comes the dull sound of surf, close enough to hear and completely unreachable.
 
 ---
-## At a glance
+## At a Glance
 The Mangroves are the southern end of [[Aruhe - The Marshes|the Marshes]], where freshwater forest becomes tidal swamp before reaching Aruhe's coast. They technically touch the ocean. They are not a landing. From offshore they look deceptively navigable: an endless green wall broken by dark seams of water. Those seams narrow into root tunnels, become inches deep without warning, or terminate in vegetation too dense to turn a boat around. A vessel attempting to land here becomes trapped. A person attempting to cross the Mangroves on foot is choosing the most dangerous possible way onto Aruhe. The known sea approach remains [[Aruhe - Beach|Western Landing]].
 
 ---

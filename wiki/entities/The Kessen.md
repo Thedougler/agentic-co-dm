@@ -39,7 +39,7 @@ League officials keep no fixed seat and are named at Members' request only — t
 | The Huahei Longtooth | [[Huahei]] | Lizardfolk roster running an aggressive opening strategy; most likely team in the league to end a bout in the first exchange. |
 | Corallith Tideborn | [[Corallith]] | Mixed-species roster, youngest average age in the league, this season's crowd favorite. |
 
-## Relationships
+## Connections
 
 - [[Bastian Ookage]] — a Midchain lizardfolk himself; his crew in [[Fisk's Fleet]] still remembers him running book on deck, Kessen-style, regardless of what was actually on the table.
 - [[The Mud Pits]] — Kalowe's own pit, where Vort Kessen retired to after leaving the league; unaffiliated with the Kessen itself, but shares his name and legend.

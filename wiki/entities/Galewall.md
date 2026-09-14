@@ -26,7 +26,7 @@ region: "western edge"
 > Galewall is a permanent storm belt: a cloud wall over white water with only occasional gaps in the spray. Cold salt wind hits the hull before the next wave clears. The edge is the only approach that still shows charted sea behind you.
 
 
-## At a glance
+## At a Glance
 Permanent storm belt separating charted homeland from the Scatter; feels like weather made into a wall.
 ## Five-sentence kernel
 - **Function:** A weather boundary separating charted homeland from the Scatter and framing the campaign’s remoteness.
@@ -78,7 +78,7 @@ Calm edge → Rising → Wall → Window/Breakdown: weather thickens, route clos
 - [[Shattered Sea]] · [[Crown Islands]]
 ## Hooks
 - Crossing, return, weather mapping, and the meaning of “no easy return.”
-## Secrets (DM)
+## Secrets
 - Storm cause, safe routes, Scatter geography, and permanent inhabitants are **DM seed (unconfirmed)**.
 ## Mechanics and return
 - Travel, visibility, cover, wind, Difficult Terrain, hazard telegraphs; failure costs time/position/resources. Do not arbitrarily negate flight/teleport.

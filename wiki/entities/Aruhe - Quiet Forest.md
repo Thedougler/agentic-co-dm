@@ -29,7 +29,7 @@ region: "aruhe"
 > Above the last terrace, the rainforest closes into trunks broader than doorways and leaves wide enough to roof a passage. A narrow game trail runs under hanging curtains of root and vine, with moss-slick stones at the edges and wet leaves pressed flat into the mud. Stonepears hang heavy beside the mossed roots, while giant's guavas bow branches over the trail and ghost plums nearly disappear beneath wet leaves. The green is dense, but it has too little small motion in it: no insect-saw, no bird chatter, only dripping water and the soft drag of leaves against each other. Farther in, the trail darkens between the roots where the forest stops looking like cover and starts looking like a mouth.
 
 ---
-## At a glance
+## At a Glance
 The Quiet is rainforest above the last terrace of [[Aruhe - Old Gardens]], where small life has been eaten out. The silence is that absence, not hidden birds. Sight dies in a few paces. A green route returns along the terrace edge; the silence boundary continues into [[Aruhe - The Marshes]]. The grassland-river seam is [[Aruhe - Quiet Forest Cutoff Lip]]. North of that lip the forest-edge grass is [[Aruhe - Grasslands - Print Braid]]. North of that braid the first Quiet hub is [[Aruhe - Quiet Forest Spoke Ring|Spoke Ring]]. North of that hub the night-watch aisle is [[Aruhe - Quiet Forest Star Cut|Star Cut]]. Stay on the terrace or grassland edge and the Quiet can be skipped; stay under the roof and it remains trunks, game trails, and no small sound.
 
 ---

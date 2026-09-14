@@ -26,7 +26,7 @@ region: "Shattered Sea"
 > The Central Strait is the primary shipping corridor between the two island arcs: sails, patrol craft, and signal flags on open salt water. Horns and shouted names carry between distant islands. Tarred canvas and wet rigging mark the lane you can follow.
 
 
-## At a glance
+## At a Glance
 The primary shipping corridor between the two arcs; feels like a moving border.
 ## Five-sentence kernel
 - **Function:** A shared sea lane connecting Crown-controlled harbours to Midchain traffic.
@@ -80,7 +80,7 @@ Quiet → Alert → Contested → Transformed: routine traffic → signals multi
 - [[Calder's Tooth and Port Tidefall]] · [[Midchain]] · [[Drowned Maw]]
 ## Hooks
 - Cross with the Grung trail; exploit inspection; investigate the first Maw sign.
-## Secrets (DM)
+## Secrets
 - Patrol strength, alternate channels, and timing are **DM seed (unconfirmed)**.
 ## Mechanics and return
 - Travel, cover, Study/Utilize for route and paperwork. Failure costs time/position/exposure, never the only clue.

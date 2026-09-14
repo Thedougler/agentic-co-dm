@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Huahei]] is a named island or site in the western [[Midchain]]. Small overgrown marshy island with a fey presence.

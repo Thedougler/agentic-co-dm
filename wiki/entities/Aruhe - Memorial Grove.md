@@ -29,7 +29,7 @@ region: "aruhe"
 > Memorial Grove is a round clearing held inside the dark forest, about a long bowshot across, with the trees pressed back from a ring of black flowers. In the middle, a single fruit tree stands over two low unmarked graves. Redheart berries cluster on the lower branches, giant's guavas hang above them, and fallen fruit rests in grass too green for the dark soil. The air smells sweet and rotten without turning sour, and the clearing stays still enough that no branch or blade moves in wind. The flower ring leaves open ground all the way around the tree, with room to walk, kneel at the graves, or keep to the edge without touching the memorial.
 
 ---
-## At a glance
+## At a Glance
 Memorial Grove is the 150-foot clearing where Aruhe's appetite stops. One fruit tree stands over two unmarked graves, black flowers ring the too-green grass, and independent predators gather at the tree line as silent mourners. The tree, graves, flower ring, bound soil, and ritual relationship between them are the Death Bloom: Hinewai's body and place-bound phylactery.
 
 The Grove is a place to look, remember, study, pay respect, map, listen, distinguish living from dead, and retreat. Arriving without taking allows [[Hinewai]] to meet visitors calm, proud, old, and courteous. Taking from the garden or carelessly harming it turns that warmth off cleanly; she states consequences as weather states them and does not threaten.

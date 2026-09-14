@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Vresh]] is a named island or site in the eastern [[Midchain]]. The remains of an ancient elemental forge; still faintly active; pulling loose metal toward it.
 

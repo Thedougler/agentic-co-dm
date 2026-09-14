@@ -23,7 +23,7 @@ summary: Ancient fruit terraces inland from Western Landing, forming Aruhe’s f
 > [!narration] Narration
 > Old stone terraces climb the forest slope in stacked walls, each level wide enough for a path before the next green drop. Moss darkens the blocks, stair cuts climb between them, and black openings sit under ledges where irrigation water gathers below. Redheart berries hang along the terrace lips, while giant's guavas bow over the lower steps. Fallen fruit splits on wet stone, and the air is warm and sugar-sour.
 
-## At a glance
+## At a Glance
 
 Ancient terraces run inland from [[Aruhe - Beach|Western Landing]]. The builders are gone, but the stone remains crowded with fruit, flowers, hanging vines, and water-cut channels. The terrace route continues toward [[Aruhe - Grasslands|the Grasslands]], while a green route leads toward [[Aruhe - Quiet Forest|the Quiet]]. Following a terrace edge lets travelers bypass much of the planted abundance.
 

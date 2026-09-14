@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Yevka's Folly]] is a named island or site in the western [[Midchain]]. A bankrupt merchant prince's half-built pleasure palace; now quietly squatted.

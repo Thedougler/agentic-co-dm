@@ -32,7 +32,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Sunken Crown]] sits east of the [[Drowned Maw]] in the [[Outer Reach]]. The source names it structurally unstable and subsiding, and as the primary route eastward.
 

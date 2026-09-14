@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Vantry's Choice]] is a named island or site in the eastern [[Midchain]]. Identical harbors side by side; one universally and inexplicably avoided.
 

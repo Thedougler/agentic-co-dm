@@ -25,7 +25,7 @@ region: "Southern Midchain"
 > [!narration] Narration
 > Halewick is an ordinary fishing island until two children argue with the world in words that do not sit cleanly in Common.
 
-## At a glance
+## At a Glance
 Southern Midchain fishing island where a planar alignment landed on the line between Common and Truespeak about three weeks ago; feels ordinary, wrong, and locally unrecognized.
 
 ## Canon
@@ -36,7 +36,7 @@ Southern Midchain fishing island where a planar alignment landed on the line bet
 ## Connections
 - → [[Midchain]] · [[Pearl signal across the boundary]] · [[Drowned Maw]]
 
-## Secrets (DM)
+## Secrets
 Legacy calls this the Isle of Cursed Speech / “Word from Halewick”; the dump's alignment timing wins. [[Delmar Fisk]] remains unaware.
 
 ## Provenance

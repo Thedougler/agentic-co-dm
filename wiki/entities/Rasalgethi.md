@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Rasalgethi]] is a named island or site in the eastern [[Midchain]]. Astronomers chart stars from a patch of sky no storm has ever crossed.
 

@@ -25,7 +25,7 @@ region: "Crown Islands"
 > [!narration] Narration
 > Stone cliffs drop into cold deep water on the easternmost Crown island. A harbour face and thin farmland sit under a signal station that watches a stain of discoloured sea.
 
-## At a glance
+## At a Glance
 The easternmost Crown island: stone cliffs, cold deep water, a harbour face, thin farmland, and a signal station watching the discoloured water where the [[Drowned Maw]] begins.
 
 ## Crown watch
@@ -40,7 +40,7 @@ Crown signal watchers, fishers, harbour workers, cliff life, and whatever the di
 ## Connections
 - → [[Crown Islands]] · [[Greyteeth]] · [[Drowned Maw]] · [[High Eyrie]]
 
-## Secrets (DM)
+## Secrets
 The signal-log pattern and the name withheld by station watchers remain unresolved. Do not calculate or explain the Maw from this note.
 
 **Provenance:** Dump source 2026-09-05; legacy `/Users/nick/shattered-sea/wiki/shattered-sea/region-stenmark.md`.

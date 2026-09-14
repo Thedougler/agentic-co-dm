@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Velk Ithera]] is a named island or site in the southern [[Midchain]]. A hillside carpeted in one connected fungal organism that reacts; faintly; to sound.

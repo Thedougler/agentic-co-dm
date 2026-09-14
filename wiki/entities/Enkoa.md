@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Enkoa]] is a named island or site in the southern [[Midchain]]. A hermit sorcerer's warded island; trades rare components only for equally rare favors; never coin.

@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Thoon Adar]] is a named island or site in the eastern [[Midchain]]. A ring of standing stones that reorient themselves overnight; slow enough nobody's caught them moving.
 

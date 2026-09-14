@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Corallith]] is a named island or site in the western [[Midchain]]. A single living coral colossus that relocates itself once a generation.

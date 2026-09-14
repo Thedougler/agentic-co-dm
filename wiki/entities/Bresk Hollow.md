@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Bresk Hollow]] is a named island or site in the southern [[Midchain]]. An interior sinkhole ecosystem sealed off from the surface world for centuries; growing something nobody up top has seen.

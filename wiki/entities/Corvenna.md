@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Corvenna]] is a named island or site in the eastern [[Midchain]]. Neutral dueling grounds where Midchain disputes get settled by champion combat instead of war.
 

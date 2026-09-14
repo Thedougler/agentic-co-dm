@@ -27,7 +27,7 @@ region: "eastern Shattered Sea"
 
 
 
-## At a glance
+## At a Glance
 The eastern pinch where both arcs become fewer, taller islands and cold trench-coloured water; feels like land narrowing into a warning.
 
 ## Aspects
@@ -49,5 +49,5 @@ The eastern pinch where both arcs become fewer, taller islands and cold trench-c
 - Reach the last supplies and honest gossip before the trench.
 - Decide whether a compass lie is weather, Maw pressure, or a bad chart.
 
-## Secrets (DM)
+## Secrets
 The Tail's unnamed staging island performs the same job as [[Fathomrush]] under another name; do not force them into one site without a future anchor.

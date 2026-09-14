@@ -29,7 +29,7 @@ region: "aruhe"
 > Clear green water braids through Aruhe in channels wide enough to follow, shallow at the pale limestone shelves and darker where the pools drop away. Submerged grass bends with the current, silver fish flash between the blades, and roots hang from the jungle bank like wet ropes over the water. Redheart berries brighten the grassland bank at the water's edge, while ghost plums hang in the dripping roots on the jungle side. The river smells of cool stone, dawn mist, and animal musk, and even the quiet places keep the sound of moving water close.
 
 ---
-## At a glance
+## At a Glance
 The rivers draining [[Aruhe - Clear Lake]] braid through Aruhe and cut across the island's bands. They are the best road, and they are occupied: the fast clear water belongs to [[Aruhe - River Otter|River Otter]] families. Follow the current downhill or the water uphill toward the lake. Lateral channels reach [[Aruhe - Grasslands]], [[Aruhe - The Marshes]], and [[Aruhe - Quiet Forest]]. The first grassland mouth after the terraces is [[Aruhe - River Landing Bank|Landing Bank]]. Upvalley of the first hunting lane, the used fruiting margin is [[Aruhe - River - Line Bank|Line Bank]]. Upvalley of Line Bank, the claimed slack is [[Aruhe - River Slack Basin|Slack Basin]]. The jungle-bank lip after Slack Basin is [[Aruhe - Quiet Forest Cutoff Lip|Cutoff Lip]]. North of that lip the packed prints braid at [[Aruhe - Grasslands - Print Braid|Print Braid]]. Stay on a bank and the channel can be skipped; enter the water and it is otter play.
 
 ---

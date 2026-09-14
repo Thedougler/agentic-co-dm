@@ -33,6 +33,6 @@ relationships:
 > [!narration] Narration
 >
 
-## At a glance
+## At a Glance
 
 [[Twineye]] is a named island or site in the southern [[Midchain]]. Twin islets joined by an arch; feuded over for generations by one estranged family.

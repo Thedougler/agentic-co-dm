@@ -102,7 +102,7 @@ Attuned: Eldritch Claw Tattoo (equipped). Cloak of Displacement is **unequipped*
 | Arrows | `20` |
 | Rope, torches `10`, waterskin, oil `2`, Calligrapher's Supplies, rations `10`, bedroll, tinderbox | carried |
 
-# Relationships
+## Connections
 
 | Relationship | Meaning |
 | --- | --- |
