@@ -24,6 +24,7 @@ Campaign pages also require:
 | `kind` | On `type: session-prep`: `hook` \| `development` \| `cliffhanger` \| `climax` \| `resolution` \| `session-plan`. City pages stay `type: place` `kind: city`. |
 
 Do not invent `type` values. Category is the llm-wiki folder (`entities/`, `journal/`, …). `type` is the campaign kind.
+Redirect stubs with `redirects_to` omit campaign required fields (`sources`/`type`/`lifecycle`/`reveal`) from wiki-lint HARD `missing_frontmatter`.
 Map early sample labels on file: `location`→`place`, `monster`→`creature`. Player characters use `type: pc` (not `npc` with a pc tag). World-truth notes use `type: lore`. Actual items stay `item`. Campaign situation pages use `type: quest`.
 `lifecycle` defaults to `proposed` until the DM accepts. `visibility` defaults to `dm` and is distinct from `reveal`. `summary` is one sentence a DM can read in a list. Omit unused identity keys.
 
