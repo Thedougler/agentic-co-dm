@@ -88,6 +88,6 @@ The crew is at and around [[aruhe]] aboard mobile [[Uncertainty]]. Three storm s
 
 [[nona-black-jaw]]'s unspecified favor, the unread Otar scrap, the unscratched chair, [[red-wake]], and the Karath captive pipeline remain unresolved.
 
-Session pages: [[journal/sessions/shattered-sea/recaps/Session-01-Recap]] through [[journal/sessions/shattered-sea/recaps/Session-10-Recap]].
+Session pages: [[journal/sessions/shattered-sea/01/Session-01-Recap]] through [[journal/sessions/shattered-sea/10/Session-10-Recap]].
 
 A Season 2 pitch names an open Midchain sandbox after the Calveno repair. Live Season 2 handle on this page remains the Hungry Isle until play moves it.
