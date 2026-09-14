@@ -27,119 +27,89 @@ Live owner: wiki/entities/pc/<kebab-slug>.md. Flatten archived sheets, abilities
 spells, inventory, combat profiles, galleries, and session logs into these homes;
 do not create a second live facet page. Preserve source lineage, aliases, links,
 unknowns, and [verify] markers. Omit an optional section or empty subsection.
-The player controls this PC. Narration is player-safe; the DM thesis and mechanics
-stay outside it. Exact numbers live in Sheet; frontmatter only mirrors key values.
+The player controls this PC. Narration is player-safe; mechanics stay outside it.
 Escape alias pipes as \| inside Markdown table cells so wikilinks remain valid.
 -->
 
 # {{title}}
 
 > [!narration] Narration
-> Write a complete-sentence, sensory look that is safe to read aloud. Do not include secrets, DCs, unearned names, or the DM thesis.
+> Write a complete-sentence, sensory look that is safe to read aloud. Do not include secrets, DCs, or unearned names.
 
 ````col
 ```col-md
-## At a Glance
+## Identity
 
 | Field | Value |
 | --- | --- |
 | Player | {{player}} |
 | Class / Level | {{class_levels}} |
+| Species / Race | |
+| Background | |
 | Home ship / base | [[ship-or-base]] |
-
-**DM thesis:** State the PC's play pattern, party role, pressure, or decision-relevant weakness in one complete sentence.
 ```
 ```col-md
-## Connections
+## Combat Stats
 
-| Tie | Table consequence |
+| Stat | Value |
 | --- | --- |
-| [[named-owner]] | State what this relationship changes at the table. |
+| AC | |
+| HP (current / max) | |
+| Initiative | |
+| Passive Perception | |
+| Speed | |
 
-Use named owner links. Escape alias pipes as `\|` inside table cells. Omit this section when there are no named ties.
+List character-specific resources and counters when known.
 ```
 ````
 
 ````col
 ```col-md
-## Sheet
+## Ability Scores
 
 | Ability | Score | Mod | Save |
 | --- | --- | --- | --- |
-| Strength |  |  |  |
-| Dexterity |  |  |  |
-| Constitution |  |  |  |
-| Intelligence |  |  |  |
-| Wisdom |  |  |  |
-| Charisma |  |  |  |
-
-**Skills.** List known skill bonuses and proficiencies in complete sentences.
-
-| Combat skim | Value |
-| --- | --- |
-| AC |  |
-| HP current / max |  |
-| Initiative |  |
-| Passive Perception |  |
-| Speed |  |
-| Signature resources / counters |  |
+| Strength | | | |
+| Dexterity | | | |
+| Constitution | | | |
+| Intelligence | | | |
+| Wisdom | | | |
+| Charisma | | | |
 ```
 ```col-md
-## Combat Profile
+## Skills
 
-### Fast Read
-
-State how the PC operates, what exact Sheet or Abilities rows matter, and the main pressure.
-
-### Counters & Synergy
-
-- **Hard counters.** State what shuts the PC down.
-- **Soft counters.** State what pressures the PC.
-- **Amplifies / Depends on.** State party conditions that change a ruling.
-
-Omit this section only when no useful profile exists. Do not repeat Sheet numbers as a second authority.
+List known skill bonuses and proficiencies. Do not duplicate Combat Stats numbers.
 ```
 ````
 
-## Abilities
+## Actions
 
-Omit empty subsections. Every populated table states effect, uses, and recovery when applicable.
+Omit empty subsections. Each populated row states effect, uses, and recovery when applicable.
 
-### Traits
+### Attacks
 
-| Trait | Effect |
-| --- | --- |
-|  |  |
-
-### Features
-
-| Feature | Source | Effect | Uses | Recovery |
-| --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| Attack | To-Hit / DC | Damage / Effect | Notes |
+| --- | --- | --- | --- |
+| | | | |
 
 ### Actions
 
 | Action | To-Hit / DC | Damage / Effect | Uses | Notes |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| | | | | |
 
 ### Bonus Actions
 
 | Bonus Action | Trigger / Cost | Effect | Uses | Recovery |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
+| | | | | |
 
 ### Reactions
 
 | Reaction | Trigger | Effect | Uses | Recovery |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-
-### Feats
-
-| Feat | Source | Effect |
-| --- | --- | --- |
-|  |  |  |
+| | | | | |
 
 ## Spells
 
@@ -153,47 +123,77 @@ State ability, save DC, attack bonus, casting focus, and ritual or pool notes.
 
 | Cantrip | Notes |
 | --- | --- |
-| [[spell-owner]] |  |
+| [[spell-owner]] | |
 
 ### Prepared or Known
 
 | Spell | Level / Pool | Notes |
 | --- | --- | --- |
-| [[spell-owner]] |  |  |
+| [[spell-owner]] | | |
 
 ### Slots or Casting Resources
 
 | Level / Pool | Current / Max | Recovery |
 | --- | --- | --- |
-|  |  |  |
+| | | |
 
 ## Inventory
 
-Omit empty subsections. Link named item owners and retain quantity, state, and table consequence rather than duplicating item descriptions.
+Omit empty subsections. Link named item owners and retain quantity, state, and table consequence.
 
 ### Attuned
 
 | Item | Notes |
 | --- | --- |
-| [[item-owner]] |  |
+| [[item-owner]] | |
 
 ### Carried
 
 | Item | Qty | Notes |
 | --- | --- | --- |
-| [[item-owner]] |  |  |
+| [[item-owner]] | | |
 
 ### Stowed
 
 | Item | Where | Notes |
 | --- | --- | --- |
-| [[item-owner]] |  |  |
+| [[item-owner]] | | |
 
 ### Currency
 
 | Coin | Amount |
 | --- | --- |
-| gp |  |
+| gp | |
+
+## Features
+
+Omit empty subsections. Each populated row states effect, uses, and recovery when applicable.
+
+### Traits
+
+| Trait | Effect |
+| --- | --- |
+| | |
+
+### Class Features
+
+| Feature | Source | Effect | Uses | Recovery |
+| --- | --- | --- | --- | --- |
+| | | | | |
+
+### Feats
+
+| Feat | Source | Effect |
+| --- | --- | --- |
+| | | |
+
+## Connections
+
+| Tie | Table consequence |
+| --- | --- |
+| [[named-owner]] | State what this relationship changes at the table. |
+
+Escape alias pipes as `\|` inside table cells. Omit this section when there are no named ties.
 
 ## Session Log
 
@@ -201,7 +201,7 @@ Omit for a new PC with no current changes. Keep only concise dated or session-nu
 
 | Session / Date | Encounter | Current-play change |
 | --- | --- | --- |
-|  |  |  |
+| | | |
 
 ## Art
 
