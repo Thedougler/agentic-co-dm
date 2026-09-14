@@ -1,15 +1,11 @@
 <!--
 Sync Impact Report
-- Version change: 1.15.0 → 1.16.0
-- Modified principles: none
-- Added sections:
-  - XIV. Use The Simplest Tool
+- Version change: 1.16.0 → 1.17.0
+- Modified principles: X (wiki canon lands on main; agent instructions use a feature branch)
+- Added sections: none
 - Removed sections: none
 - Other modified sections:
-  - XI. Designated Writer (Codex fallback invoked as `codex exec`)
-  - Agent Operating Constraints (simplest tool)
-  - Development Workflow / Review (same)
-  - Governance / Compliance (reject CLI wrappers)
+  - Agent Operating Constraints (push per X)
 - Follow-up TODOs: none
 -->
 
@@ -147,15 +143,16 @@ from main" is a defect unless a named safety failure applies.
 Git by default:
 
 - Agents MUST commit completed work on the current task as they go.
-- Agents MUST push the working branch to `origin` after those commits.
-- Agents MUST use a feature branch for work that does not already have
-  one. They MUST NOT commit feature work directly to `main`.
-- Agents MUST fetch and update the working branch from `origin/main`
-  before starting substantial work and before reporting done.
-- When the assigned work is complete and required checks pass, agents MUST
-  land it on `main` by the repository's normal path (merge or PR) and MUST
-  leave `origin/main` current. They MUST NOT wait for a human to merge a
-  ready branch.
+- Wiki canon MUST commit on `main` and MUST push `origin/main`.
+- Agent-instruction work MUST use a feature branch, MUST push that branch,
+  and MUST land on `main` by the repository's normal PR path when checks
+  pass.
+- Mixed sittings MUST split: wiki commit on `main`, instruction commit on
+  the feature branch.
+- Agents MUST fetch from `origin/main` before starting substantial work
+  and before reporting done.
+- Agents MUST NOT wait for a human to merge a ready instruction branch or
+  to push ready wiki canon.
 - Agents MUST NOT force-push `main` or rewrite published default-branch
   history. They MUST NOT commit secrets, credentials, or unrelated dirty
   files. They MUST NOT skip required checks to land on `main`.
@@ -277,9 +274,8 @@ Rationale: wrappers hide stdin, timeouts, and errors. The CLI is the tool.
 - PRs-as-request-surface is **no**. PRs remain a landing path for X.
 - Agents MUST NOT re-run or document easy, safe, idempotent automation
   that already runs unattended.
-- Agents MUST auto-commit, auto-push the working branch, keep it current
-  with `main`, and refresh agent-context, per X. They MUST NOT ask
-  permission for those steps.
+- Agents MUST auto-commit and auto-push per X, and refresh agent-context.
+  They MUST NOT ask permission for those steps.
 - Prompts to Claude Code, Codex, or equivalent MUST follow XII: objective,
   complete acceptance and deliverables, no Spec Kit lecture, no
   task-irrelevant padding.
@@ -397,4 +393,4 @@ Compliance:
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.16.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-12
+**Version**: 1.17.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-14

@@ -88,7 +88,7 @@ If QMD is not initialized or its collections are stale, run `./scripts/qmd-maint
 - Treat `wiki/` as the **compiled** campaign knowledge layer. `wiki/_raw/` is an ingest inbox only — file then archive; never leave sources parked there; never overwrite `_raw/` as live canon.
 - Prefer thin CLIs over dumping whole files into agent context (`scripts/manifest.py`, Retrieval Primitives in `llm-wiki`).
 - Run `./scripts/qmd-maintain.sh` after wiki changes when QMD search is enabled.
-- Keep feature work on branches; sync local `main` with `./scripts/git-sync-main` (ff-only to `origin/main`).
+- Wiki canon commits on `main`. Agent-instruction work uses a feature branch; sync local `main` with `./scripts/git-sync-main` (ff-only to `origin/main`).
 - Spec Kit workflows live under `specs/` and the configured agent integration.
 
 ## Wiki health (operators)

@@ -84,7 +84,7 @@ When `WIKI_STAGED_WRITES=true` (default for this vault), agents MUST land new/up
 
 **Wiki maintenance loop:** weekday Layer A scans + fleet routing — `docs/agents/wiki-maintenance-loop.md` (issue #90). Quiet when clean. Never auto lore invent, mass kebab rename, dedup merge, or craft cuts.
 
-After merges (or when starting box work), sync with `./scripts/git-sync-main` (feature branches only; never leave `main` dirty). Refuse unique local main commits; use `--force-clean` only to discard stranded dirt.
+Wiki canon (`wiki/` campaign pages, ingest, recap, `hot.md`/`index.md`/`log.md`): commit on `main` and push `main`. Agent instructions (skills, `AGENTS.md`, `docs/agents`, harness, agent-facing scripts): feature branch and PR. Mixed sitting: split those two commits. After merges, `./scripts/git-sync-main` from a feature branch (`--force-clean` only for stranded dirt).
 
 If a job will repeat and no existing command does it, create an agent-shaped helper without being asked. Arguments in, text or JSON out, exit done vs failed. Use it on the next same-kind sitting. Keep it current or remove it. No helper for a one-off. No wrap of an existing command.
 
