@@ -52,6 +52,8 @@ Example: `python3 scripts/error-ledger.py sitting record --kind prep --job "…"
 
 Cut wasted context without waiting. A change MUST NOT count as an improvement if it lowers token cost by lowering Work quality. A change MUST NOT count as an improvement if it raises token cost for the same jobs without preventing a named failure.
 
+**Context waste:** max tokens on content + reasoning, not plumbing. Prefer `hot.md`, `scripts/manifest.py`, and Retrieval Primitives over whole `index.md` / `log.md` / `.manifest.json`. Method: `docs/agents/context-waste-method.md` (issue #71). After the scanner lands: `python3 scripts/context-waste-scan.py`. Do not score creative prose with scripts.
+
 ### Helpers
 
 After merges (or when starting box work), sync with `./scripts/git-sync-main` (feature branches only; never leave `main` dirty). Refuse unique local main commits; use `--force-clean` only to discard stranded dirt.
