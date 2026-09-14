@@ -1,7 +1,7 @@
 ---
 title: Delmar Fisk
 category: entities
-tags: [shattered-sea, npc, pc]
+tags: [shattered-sea, pc]
 sources:
   - "wiki/_archive/delmar-fisk.md"
   - "wiki/_archive/abilities/delmar-fisk-abilities.md"
@@ -27,7 +27,7 @@ lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T04:56:01Z
 updated: 2026-09-13T23:40:00Z
-type: npc
+type: pc
 reveal: revealed
 campaign: shattered-sea
 visibility: dm

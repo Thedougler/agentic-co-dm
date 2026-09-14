@@ -1,7 +1,7 @@
 ---
 title: Perrin Black-Jaw
 category: entities
-tags: [shattered-sea, npc, pc]
+tags: [shattered-sea, pc]
 sources:
   - "Nona Black-Jaw"
   - "Foundry VTT Shattered-Sea actor Perrin Black-Jaw 2026-09-13"
@@ -9,7 +9,7 @@ summary: Warlock 2 / Lore Bard 3 Rattkin at 49/49 HP who owes Nona an Aruhe surv
 lifecycle: canon
 created: 2026-09-12T06:23:47Z
 updated: 2026-09-13T23:40:00Z
-type: npc
+type: pc
 reveal: revealed
 campaign: shattered-sea
 status: alive
