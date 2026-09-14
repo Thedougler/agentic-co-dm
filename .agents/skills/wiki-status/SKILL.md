@@ -201,7 +201,7 @@ After building the status summary, compute the token footprint estimate:
 
 4. **Typical query estimate** — Index-only tiktoken total + tiktoken cost of five representative full pages (or mean page tokens × 5 from the footprint rollup). Prefer calling `token-count.py` on concrete paths.
 
-5. **Threshold check** — Read `WIKI_TOKEN_WARN_THRESHOLD` from config (default: `100000`). If `0`, skip the warning. Compare against **tiktoken** full-wiki (or scoped) sum only (`docs/agents/token-measurement.md`). If `scripts/token-count.py` is not on main yet, say so and skip numeric warn rather than falling back to ÷4.
+5. **Threshold check** — Read `WIKI_TOKEN_WARN_THRESHOLD` from config (default: `100000`). If `0`, skip the warning. Compare against **tiktoken** full-wiki (or scoped) sum only via `scripts/token-count.py` (`docs/agents/token-measurement.md`). Never fall back to ÷4.
 
 6. **Include in every standard status run** — both normal and insights mode. Footnote the **encoding** (`cl100k_base` or `WIKI_TOKEN_ENCODING`), not a chars/token heuristic.
 
