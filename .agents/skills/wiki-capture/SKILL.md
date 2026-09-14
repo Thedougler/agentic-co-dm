@@ -161,7 +161,9 @@ Derive a clear, descriptive title from the content. Slugify it:
 
 ## Step 5: Write the Wiki Note
 
-Create the file at the target path with required frontmatter:
+**Staging gate.** Resolve `WIKI_STAGED_WRITES` with the Config Resolution Protocol (`llm-wiki`). When `true` (this vault’s default), write the finished page to `_staging/<category>/<slug>.md` (or `_staging/<category>/<slug>.patch.md` for updates to an existing live page) — **not** the live category path. Tell Nick the page is waiting and that `/wiki-stage-commit` promotes it. When the flag is not `true`, write the live category path as below. Quick mode still uses `_raw/` only (unchanged).
+
+Create the file at the (staged or live) target path with required frontmatter:
 
 ```yaml
 ---
