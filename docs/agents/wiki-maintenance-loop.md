@@ -46,13 +46,17 @@ Optional thin facade (ATE): `scripts/wiki-maintain --report` → one JSON bundli
 | Orphan triage | Wiki Linter / CE | Link, incubate, or archive proposal — not mass-delete |
 | Ingest backlog `_raw/` | Wiki Ingest | Clear staging per wiki-ingest; raw stays immutable evidence |
 
+## Anti-thinning (content craft)
+
+When cleaning or remorphing: prune **template fluff, duplicate section jobs, and inactive current-list cruft** only. **Keep** provisional vs revealed, NPC-knows vs party-knows, public vs secret, open threads, incomplete Known Facts, conflicting rumors, multi-clue paths, and expedition/diff history. Fidelity sample vs raw is a CD/Nick craft gate — lint-green ≠ craft quality.
+
 ### Layer C — Never auto without Nick
 
 - Lore invent / Midchain recreate / unapproved names / stubs replaced by invent
 - Link demotions during migration freeze; archive/demote ≠ delete without greenlight
 - Mass filename kebab rename / `Aruhe -` strip **apply** (dry-run OK in Layer A)
 - `wiki-dedup --merge` / `--auto`
-- Auto-resolve contradictions or collapse rumors/secrets/public-secret into one truth
+- Auto-resolve contradictions; collapse conflicting rumors / public-secret into one truth; “enrich” by inventing to fill stubs
 - Craft cuts or instruction deletes for token/byte scores; thinning that loses output quality
 - Destructive consolidate without dry-run + blast-radius confirm
 - Overwrite `_raw/`; silent multi-agent clobber; delete orphans/planned links
@@ -62,13 +66,14 @@ Optional thin facade (ATE): `scripts/wiki-maintain --report` → one JSON bundli
 
 ## Cadence (CoS routines)
 
-1. **Weekday ~09:00 keep-ahead** — Layer A full report (scan + dry-run plans). Quiet if clean. Else ranked digest + Layer B packets.
-2. **Optional midweek** — ASE context-waste / conflict triage from A2 leads (not byte slim).
-3. **Weekly** — `wiki-digest` knowledge summary to Nick (content), separate from tooling status.
-4. **Post-session (~15m)** — status/stubs append/diff (CE/Ingest); do not smooth-rewrite history.
-5. **Periodic** — contradiction/open-thread lint as **report** (not auto-resolve).
-6. **Monthly** — archive/incubate triage proposals (demotion freeze still blocks auto-demote).
-7. **Pre-migrate** — full Layer A dry-run + editable plan before any mass remorph/rename apply.
+1. **On-save / write-path** — format + structural write lint when filing; not a Nick ping.
+2. **Weekday ~09:00 keep-ahead** — Layer A full report (scan + dry-run plans). Quiet if clean. Else ranked digest + Layer B packets.
+3. **Optional midweek** — ASE context-waste / conflict triage from A2 leads (not byte slim).
+4. **Weekly** — `wiki-digest` knowledge summary to Nick (content), separate from tooling status.
+5. **Post-session (~15m)** — status/stubs append/diff (CE/Ingest); do not smooth-rewrite history.
+6. **Periodic** — contradiction/open-thread / stale lint as **report** (not auto-resolve).
+7. **Monthly** — archive inactive / incubate triage proposals (demotion freeze still blocks auto-demote).
+8. **Pre-migrate** — full Layer A dry-run + editable plan before any mass remorph/rename apply.
 
 CoS expands the existing Wiki lint keep-ahead routine; do not spawn duplicate ack-only pings. Prefer append/diff over rewrite; one-write entity pages + link-not-copy.
 
@@ -89,6 +94,14 @@ CoS expands the existing Wiki lint keep-ahead routine; do not spawn duplicate ac
 | Orchestration contract | this doc + `AGENTS.md` |
 
 ---
+
+## Report-only until Nick greenlight
+
+- First keep-ahead establishes a **baseline**; later runs prefer **delta-only** digests (new/changed HARD + leads), not full reprint.
+- Dry-run / plan default; editable plan JSON for remorph/rename/dedup; blast-radius confirm before apply.
+- Confidence labels on packets (deterministic vs judgment).
+- Structural remorphs and mass renames ship as **GitHub PR diffs**, not silent vault edits.
+- Dedup stays audit-only; conflicts become report pages / packets — never auto-merge.
 
 ## Nick-visible outputs
 
