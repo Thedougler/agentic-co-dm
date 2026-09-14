@@ -56,7 +56,7 @@ Use these **heading names** when the job is the same across kinds. Do not invent
 | `## Connections` | Named wikilinked ties that change a ruling or route | Bullets or a small table. Omit when empty. |
 | `## Secrets` | Unearned / hidden truth on owner pages | Prefer body heading + `[!secret]` where progressive disclosure helps. **Omit if empty.** |
 | `## Provenance` | Where the facts came from / contested chains | Owner pages when history or ingest ambiguity matters. **Omit if empty.** |
-| `## Art` | Extra embeds beyond a leading identity image | **Omit if empty.** |
+| `## Art` | Extra embeds beyond a leading identity image | Filenames: `attachments/{slug}-{role}.ext` — see Attachment filenames. **Omit if empty.** |
 
 Kind-specific job blocks (Sheet, Hazard bullets, Effect, Wiki facts, …) stay after narration / At a Glance and before Connections / Secrets / Provenance when those apply.
 
@@ -91,6 +91,29 @@ Cite: `.agents/skills/obsidian-markdown/SKILL.md` → **At-table scan**.
 | Conditional spoken in a table cell | Highlighted italic | `==_The grass closes over you._==` |
 
 Check form: `**Wisdom (Perception) — \`DC 14\`**`. Never `**DC 15**` or `**DC 15** *Perception*`.
+
+
+## Attachment filenames (images)
+
+Flat by default: `wiki/attachments/{subject-slug}-{role}.{ext}`
+
+| Role | Use |
+|---|---|
+| `banner` | Wiki/page hero; mood open; not Foundry |
+| `portrait` | Face/bust; TotM + player-visible; not a token |
+| `token` | Foundry piece only (circular crop); not TotM spoken art |
+| `battlemap` | Tactical grid Foundry/combat; not TotM |
+| `overview` | Establishing/wide; TotM “where you are” |
+| `reference` | Props/details/still for TotM grounding |
+| `handout` | Player-facing table asset (letter, sketch, clue); not battlemap/portrait |
+
+- **TotM/spoken:** portrait, overview, reference, handout (± banner mood).
+- **Foundry-only:** token, battlemap.
+- kebab-case subject slug; one role suffix; no spaces.
+- Embed: `![[attachments/{subject-slug}-{role}.ext]]` (optional `\|width` in tables).
+- Deprecate nested `attachments/shattered-sea/{type}/` unless multi-campaign collision forces a campaign prefix.
+- One file per subject+role; dedup parallel copies; update embeds on rename.
+- `## Art` cites these roles; omit section when unused.
 
 ## Explicit non-goals
 

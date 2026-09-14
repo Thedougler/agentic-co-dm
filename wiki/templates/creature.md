@@ -60,4 +60,4 @@ Write the supplied reference-sheet facts in complete sentences when a sheet exis
 
 ## Art
 <!-- Add token or extra art when available. -->
-<!-- Omit Art when unused. -->
+<!-- Art embeds: wiki/attachments/{subject-slug}-{role}.ext — roles: banner|portrait|token|battlemap|overview|reference|handout. Flat folder; omit Art when unused. -->

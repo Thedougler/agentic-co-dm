@@ -1,0 +1,30 @@
+# Wiki attachments
+
+Flat image store for the campaign vault.
+
+## Filename grammar
+
+`{subject-slug}-{role}.{ext}`
+
+| Role | Use |
+|---|---|
+| `banner` | Wiki/page hero; mood open; not Foundry |
+| `portrait` | Face/bust; TotM + player-visible; not a token |
+| `token` | Foundry piece only (circular crop); not TotM spoken art |
+| `battlemap` | Tactical grid Foundry/combat; not TotM |
+| `overview` | Establishing/wide; TotM “where you are” |
+| `reference` | Props/details/still for TotM grounding |
+| `handout` | Player-facing table asset (letter, sketch, clue); not battlemap/portrait |
+
+**TotM/spoken:** portrait, overview, reference, handout (± banner mood).  
+**Foundry-only:** token, battlemap.
+
+## Rules
+
+- kebab-case slug; one role suffix; no spaces
+- Embed: `![[attachments/{subject-slug}-{role}.ext]]`
+- Prefer flat `wiki/attachments/`; nested `attachments/shattered-sea/{type}/` is deprecated unless multi-campaign collision forces a campaign prefix
+- One file per subject+role; no parallel copies
+- Full convention: `wiki/templates/00-shared-grammar.md` → Attachment filenames
+
+Mass rename + embed rewrite is an ATE follow-on — do not migrate here without a remorph plan.

@@ -83,4 +83,4 @@ Chassis source, rename history, contested ownership. Facts only — no ingest/pr
 
 ## Art
 
-<!-- Omit Art when unused. -->
+<!-- Art embeds: wiki/attachments/{subject-slug}-{role}.ext — roles: banner|portrait|token|battlemap|overview|reference|handout. Flat folder; omit Art when unused. -->

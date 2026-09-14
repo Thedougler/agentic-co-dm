@@ -223,4 +223,4 @@ Ability, save DC, attack bonus, ritual notes, focus.
 
 ## Art
 
-<!-- Gallery embeds. Omit Art when unused. Never nest `# {{title}} Gallery`. -->
+<!-- Art embeds: wiki/attachments/{subject-slug}-{role}.ext — roles: banner|portrait|token|battlemap|overview|reference|handout. Flat folder; omit Art when unused. -->
