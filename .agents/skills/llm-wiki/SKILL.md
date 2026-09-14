@@ -48,7 +48,7 @@ Organize pages into these default categories (customizable in `.env`):
 | Category | Purpose | Example |
 |---|---|---|
 | `concepts/` | Ideas, theories, mental models | `concepts/transformer-architecture.md` |
-| `entities/` | People, orgs, tools, projects | `entities/andrej-karpathy.md` |
+| `entities/` | People, orgs, tools, projects | Campaign vault: `entities/{type}/name.md` (depth 1). Generic llm-wiki examples may stay flat. |
 | `skills/` | How-to knowledge, procedures | `skills/fine-tuning-llms.md` |
 | `references/` | Summaries of specific sources; academic papers use the Paper Deep-Dive Template (below) | `references/attention-is-all-you-need.md` |
 | `synthesis/` | Cross-cutting analysis across sources | `synthesis/scaling-laws-debate.md` |
@@ -56,7 +56,7 @@ Organize pages into these default categories (customizable in `.env`):
 
 ### Campaign types
 
-When the vault has `wiki/AGENTS.md`, campaign entities still live under llm-wiki categories (`entities/`, `journal/`, …) and also set campaign `type` from that file (`npc`, `place`, `faction`, `item`, `creature`, `session`, `recap`, `work`). Category is the folder; `type` is the campaign kind. Do not invent types.
+When the vault has `wiki/AGENTS.md`, campaign entities still live under llm-wiki categories (`entities/`, `journal/`, …) and also set campaign `type` from that file. Category is the **top-level** folder (`category: entities`); `type` may be a **depth-1** subfolder under that category (`entities/npc/…`). Do not set `category` to the type. Do not invent types. See `wiki/AGENTS.md` Entities path.
 
 ### Projects
 

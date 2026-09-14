@@ -69,7 +69,7 @@ Examples:
 
 ### Layout
 
-As agent-facing files and the wiki (llm-wiki) grow mixed, regroup so one job or layout kind does not load unrelated trees. Trigger is `growth` (mixed dump / unrelated load). Not `tidiness`. One-off files MUST NOT be reorganized solely for tidiness. Do not mandate a folder taxonomy.
+As agent-facing files and the wiki (llm-wiki) grow mixed, regroup so one job or layout kind does not load unrelated trees. Trigger is `growth` (mixed dump / unrelated load). Not `tidiness`. One-off files MUST NOT be reorganized solely for tidiness. Live `wiki/entities/` growth uses the depth-1 `entities/{type}/` map in `wiki/AGENTS.md` (deterministic from frontmatter `type`); do not invent ad-hoc nests.
 
 Wiki layout kinds: Encounters, Rules, Campaign State, DM Intelligence. Agent-facing layout kinds: System, Source Material. MUST NOT duplicate an existing `type`. Do not add `type: encounter` or `type: rules`. No layout-kind frontmatter.
 
