@@ -288,6 +288,19 @@ def main() -> int:
     findings["bad_lifecycle"] = [{"page": rel, "value": item["fields"].get("lifecycle")} for rel, item in pages.items() if item["fields"].get("lifecycle") and item["fields"]["lifecycle"].strip("\"'") not in lifecycles]
     findings["bad_type"] = [{"page": rel, "value": item["fields"].get("type")} for rel, item in pages.items() if item["fields"].get("type") and item["fields"]["type"].strip("\"'") not in types]
     findings["pc_identity_mismatch"] = pc_identity_mismatches(pages)
+    findings["pc_tag_on_npc"] = [
+        {"page": rel, "type": (item["fields"].get("type") or "").strip("\"'") or None, "path": rel}
+        for rel, item in pages.items()
+        if (item["fields"].get("type") or "").strip("\"'") == "npc"
+        and "pc" in {t.casefold() for t in scalar_list(item["block"], "tags")}
+        and not (
+            PC_ROLE.match((item["fields"].get("role") or "").strip("\"'"))
+            or (
+                item["fields"].get("player") is not None
+                and bool((item["fields"].get("player") or "").strip().strip("\"'"))
+            )
+        )
+    ]
     findings["missing_trust"] = [{"page": rel, "missing": [key for key in args.required_trust_field if not item["fields"].get(key)]} for rel, item in pages.items() if any(not item["fields"].get(key) for key in args.required_trust_field)]
 
     documents = {}
