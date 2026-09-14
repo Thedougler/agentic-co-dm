@@ -14,6 +14,7 @@ title: Wiki Index
 
 *No pages yet.*
 
+- [[la-vasca]] — Three-generation Black-Jaw dry dock in Le Paludi, concealed as a defunct tanning yard, where Cobb runs the Basin cradle.
 ## References
 
 *No pages yet.*
