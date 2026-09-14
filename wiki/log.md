@@ -664,3 +664,4 @@ title: Wiki Log
 - [2026-09-14T20:53:11Z] INGEST source="wiki/_raw/auralis-reference.png, wiki/_raw/spiguar-reference.png" pages_updated=2 pages_created=0 mode=append note="flat attachments/; emptied _raw/"
 - [2026-09-14T20:46:15Z] TAG_NORMALIZE tags_renamed=882 pages_modified=638 new_tags_added=85 policy=canonical_campaign_and_type_tags
 - [2026-09-14T21:00:00Z] GRAPH_COLORIZE mode=by-tag groups=10 backup=graph.json.backup-20260914-2100
+- 2026-09-14: Drop spaced `entities/place/La Vasca.md` redirect stub (Nick: no spaced stubs; aliases on `la-vasca.md`). Keep owner + aliases.
