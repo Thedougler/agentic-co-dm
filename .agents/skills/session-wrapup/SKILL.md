@@ -1,76 +1,61 @@
 ---
 name: session-wrapup
 description: >-
-  Turn a completed campaign session into a durable, reviewable log and
-  surgical canon updates under wiki/journal/sessions/<campaign-slug>/<session-number>/.
-  Use after play or after session-transcript-ingest has produced a bounded
-  packet; do not use for session prep or live narration.
+  Write the player-safe narrative session recap only: propose and file
+  wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md (type: recap).
+  Use after play when Nick wants a recap / wrapup / “what happened.” Not for
+  durable DM session logs, canon surgery, clocks, entity filing, or world-tick.
 ---
 
-# Session wrap-up
+# Session wrap-up (narrative recap only)
+
+Nick standing (2026-09-14): wrapup is **just for recapping a session — purely narrative write-up**. Nothing more.
 
 ## Work gate
 
-Wrapup. Follow `docs/agents/work.md`. Show a chat proposal first. Write wiki pages only after DM accept (FR-019). Reject leaves no page.
+Show a chat proposal first. Write the wiki recap only after DM accept (FR-019). Reject leaves no page. Players see nothing until the DM accepts and presents.
 
-Invention is required when the wiki lacks the fact: flag it and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
+Done when: the DM has an accept/rejectable narrative recap; after accept, `Session-<NN>-Recap.md` is filed and inspectable.
 
-Players see nothing until the DM accepts and presents.
+## Output (only)
 
-Done when: the DM has a chat proposal they can accept or reject; after accept, the filed page is inspectable Work.
+File (after accept):
 
-Remap durable output to `wiki/journal/sessions/<campaign-slug>/<session-number>/` for the session log. Owner updates stay on owner pages. Templates live in `wiki/templates/`. Unused prep is not canon.
+`wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md`
 
-Turn what actually happened into the campaign's durable session record. This
-skill complements `session-transcript-ingest`: when the source is a raw,
-messy, or timestamped transcript, hand it to that skill first and consume its
-bounded packet. Do not duplicate transcript cleanup or pass the full transcript
-between specialists.
+- `type: recap` (not `type: session`)
+- Copy scaffold: `wiki/templates/recap.md`
+- Player-safe `> [!narration] Recap` past tense, “you” address
+- Optional cold open; then `## Wiki facts` as short canon-delta bullets with `[[wikilinks]]` — **pointers only**, not owner-page surgery
+- No `[!secret]` / `[!mechanic]` on this surface
+- No spaces in basename; no `Aruhe` / `00` prefixes
+
+Align with `wiki/AGENTS.md` session-folder + page-filename rules.
 
 ## Procedure
 
-1. **Orient.** Use `./scripts/qmd` to retrieve the campaign hub, `hot.md`, the
-   relevant session note, and any existing entities named in the notes. Confirm
-   campaign and session identifiers; ask Nick/Co-DM rather than guessing a
-   missing ID. Read `wiki/templates/Session log.md` before creating a log.
-2. **Separate sources.** Read the play notes or the ingest packet and the
-   session-prep note for comparison. Only play-supported events become canon.
-   Keep unused prep, proposed actions, and unresolved audio separate from the
-   durable record. Preserve Said/Resolved/Implied/Uncertain/Contradiction
-   labels and short evidence spans when the ingest packet supplies them.
-3. **Propose the session log.** Show the beats in chat, addressed to the DM: actual beats in order, player-safe `[!narration]`, secrets revealed, loose threads, rewards, next hooks. Do not put DM-only facts, DCs, or unearned names in narration. Do not turn silence into an event. Do not write the wiki yet.
-4. **Propose surgical canon changes.** Name existing owner pages that play supports updating. For a genuinely new entity, propose a stub rather than inventing missing canon. Show contradictions to the DM. After players interact with or witness lore: update Current Truth when it changed and append a Canon Log row. Until then the DM may change lore freely. Quest log stays with `narrative-islands`.
-5. **File after accept.** After DM accept, write the smallest session log under `wiki/journal/sessions/<campaign-slug>/<session-number>/` plus accepted owner updates. A session log MAY join that folder and MUST NOT replace the spine or beat cards. Follow `wiki/templates/session.md` and the AGENTS `type` enum (`session` for the log). Do not create `wiki/<slug>/sessions/`, `campaigns/`, `pages/`, or `raw/` trees. Attachments stay under `wiki/attachments/`. Owner pages stay outside the session folder. If the DM rejects, write nothing.
-6. **Hand off and finish.** Return a bounded receipt: log path, changed entity paths, unresolved contradictions, and any next-owner handoffs. If the GM defers review, leave no silent canon write.
-7. **Reflect.** After the receipt, offer a reflection as Work. Two fields: `observation` (at least one concrete note about these players — a habit, a preference, a pattern from this session) and `next_change` (optional — one Co-DM practice change for the next same-kind sitting). Status is `offered` → `accepted` | `edited` | `rejected`. Reject leaves wiki facts and campaign-facing practice unchanged. An accepted `observation` that names a campaign fact becomes a canon proposal and still waits on a separate accept. An accepted `next_change` becomes an improvement proposal and still waits on a separate accept.
+1. **Orient.** Confirm campaign slug and session number (ask rather than guess). Prefer `hot.md` + that session folder over full index/log. If the source is a raw transcript, hand cleanup to `session-transcript-ingest` first and consume its bounded packet.
+2. **Propose the recap in chat.** Player-safe story of what play supported. No unearned secrets, DCs, or agent-process notes. Optional short Wiki facts list for the vault (names as wikilinks, clocks moved, next handles) — still proposal-only.
+3. **File after accept.** Write only the recap path above. If rejected, write nothing.
+4. **Stop.** Return the recap path. Do not cascade other skills from this skill.
 
-## Boundaries
+## MUST NOT (conflicts resolved)
 
-- Session logs are durable; `wiki/templates/session-prep.md` is Work until accept. The log uses `wiki/templates/session.md`.
-- `session-transcript-ingest` owns raw transcript/ASR cleanup and evidence
-  packets; this skill owns the post-session log and approved surgical updates.
-- Use `qmd-retrieval` for lookup and `obsidian-markdown` for every vault note
-  write. Never paste WotC text or invent setting canon.
+- Durable DM “session log” via `wiki/templates/session.md` / `type: session`
+- Surgical canon updates on owner pages (CE / `reconciling-session-evidence` / ingest)
+- Invent stubs or lore
+- Clocks, entity filing, fronts, `hot.md` writes
+- Own or trigger `world-tick`
+- Reflection / improvement Work cascade (offer that separately only if Nick asks outside this skill)
+- Compete with Campaign Editor, Wiki Ingest, lore-design, or world-tick
 
-## Post-session ritual
+## Related skills
 
-Aim to capture the durable dump within 24 hours and keep the first pass to about
-15 minutes: **who acted, what decisions landed, and which threads remain**. Then
-update the vault bible surgically: improvised NPCs, places, loot, and other
-lasting facts become typed atomic notes or updates on their existing owners. Keep
-unused prep disposable, compare the short player recap when available, and hand
-reviewed faction clocks or off-screen movement to `world-tick`. The session log
-is the evidence spine; it is not a raw transcript.
+| Need | Skill |
+|---|---|
+| Raw transcript → evidence packet | `session-transcript-ingest` |
+| Evidence vs wiki reconcile / canon surgery | `reconciling-session-evidence` / Campaign Editor |
+| Off-screen faction advance | `world-tick` (after Nick asks — not auto from wrapup) |
+| Alias phrase “session recap” | `session-recap` → points here |
 
-> **Attribution and license.** Adapted from AntTheLimey/gm-apprentice's
-> `session-wrapup` skill under **CC BY-SA 4.0**. Adapted for ai-co-dm by
-> Nick Davenock, including path/schema remapping and local handoff rules.
-> This adapted material remains available under **CC BY-SA 4.0**; see the
-> vendor `LICENSE` and `ATTRIBUTION.md` for the license and attribution terms.
-
-## Echo capture
-
-In the durable log, retain the consequences of action **and inaction**: what the
-party changed, what they left unattended, and which living faction or pressure
-moved in response. Keep those echoes as evidence-backed threads for `world-tick`,
-not as a retrofitted plot or hidden punishment.
+> **Attribution and license.** Adapted from AntTheLimey/gm-apprentice's `session-wrapup` skill under **CC BY-SA 4.0**. Remapped 2026-09-14 to narrative-recap-only for ai-co-dm. See vendor `LICENSE` / `ATTRIBUTION.md`.

@@ -226,8 +226,7 @@ Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the 
 | User says something like… | Skill |
 |---|---|
 | "run the session" / "start the sitting" / live-play guidance | `run-guide` |
-| "session wrapup" / "post-session" / end-of-session processing | `session-wrapup` |
-| "session recap" / "what happened last session" / recap for players | `session-recap` |
+| "session wrapup" / "post-session" / "session recap" / "what happened last session" / recap for players | `session-wrapup` (narrative recap only → `Session-<NN>-Recap.md`; `session-recap` is an alias) |
 | "plan the campaign" / "campaign arc" / "what's the long-term plan" | `campaign-planning` |
 | "cold open" / "how should the session start" | `cold-opens` |
 | "prep this encounter" / "build an encounter" / "encounter balance" | `encounter-prep` |

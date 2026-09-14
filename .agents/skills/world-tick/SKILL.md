@@ -1,6 +1,6 @@
 ---
 name: world-tick
-description: Post-session world advancement ritual — walks through active factions, NPCs, and plot threads one at a time, collaborates with the DM on each thread's offscreen goal, uses a real d20 roll to resolve it, then stages reviewed ledger lines and applies only approved surgical changes. Run after session-wrapup when off-screen advancement is wanted. Trigger on "world tick", "advance the world", "between sessions", "offscreen actions", "faction tick", "what moved while the party was elsewhere", or any request to update the world state after a session.
+description: Post-session world advancement ritual — walks through active factions, NPCs, and plot threads one at a time, collaborates with the DM on each thread's offscreen goal, uses a real d20 roll to resolve it, then stages reviewed ledger lines and applies only approved surgical changes. Run when Nick asks for off-screen advancement (not auto-chained from session-wrapup). Trigger on "world tick", "advance the world", "between sessions", "offscreen actions", "faction tick", "what moved while the party was elsewhere", or any request to update the world state after a session.
 ---
 
 # World Tick
@@ -139,13 +139,7 @@ Stage proposed advances in `inbox/world-tick-<YYYY-MM-DD>.md` after triage and p
 
 ## Session-to-world spine
 
-Run this after `session-wrapup` when off-screen movement is wanted. Within 24
-hours, make the durable post-session dump in roughly 15 minutes: who acted, what
-decisions landed, and which threads remain live. Update the vault bible only for
-supported improvised NPCs, places, loot, or other canon, using typed atomic notes;
-then advance reviewed faction clocks/world state. Keep the player recap separate,
-compare it with the DM log when useful, and leave unresolved evidence gated rather
-than inventing continuity.
+Run when Nick asks for off-screen movement — **not** as a mandatory follow-on to `session-wrapup` (wrapup is narrative recap only). Prefer Campaign Editor / `reconciling-session-evidence` for owner-page canon; use the filed `Session-<NN>-Recap.md` as player-safe narrative context. Leave unresolved evidence gated rather than inventing continuity.
 
 ## Momentum and echo gate
 

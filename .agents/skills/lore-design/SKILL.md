@@ -115,8 +115,9 @@ multiple independent clues from plausible sources; background revelations can
 stay lighter.
 
 Lore remains changeable prep until players interact with or witness it. Omit
-`## Canon Log` until that happens. After table witness, `session-wrapup` or
-`reconciling-session-evidence` updates Current Truth and appends Canon Log rows.
+`## Canon Log` until that happens. After table witness, Campaign Editor /
+`reconciling-session-evidence` (not `session-wrapup`) updates Current Truth and
+appends Canon Log rows. `session-wrapup` only files the narrative recap.
 
 ## Craft Basis
 
