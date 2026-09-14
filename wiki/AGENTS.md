@@ -82,7 +82,7 @@ Legacy pages are out of scope. Wrapup MUST NOT convert a legacy page into a samp
 
 Done when: the kind's jobs are answered, empty sections are omitted, spoken look is player-safe.
 
-Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<session-number>/` (Session 11 → `wiki/journal/sessions/shattered-sea/11/`; Session 01 → `…/01/`). Session plan `Session-<n>-00-<Title>.md`, numbered live beats `Session-<n>-<BB>-<Label>.md`, **post-play recaps**, and that night’s companion notes all live in the **same** session-number folder. Recap path: `wiki/journal/sessions/<campaign-slug>/<NN>/Session NN - Recap.md` (`type: recap`, copy `wiki/templates/recap.md`). Do **not** park recaps at flat `wiki/journal/Session NN - Recap.md` or a parallel `recaps/` folder. Owner pages stay outside. `_raw/` is staging. Two campaigns do not share a session-number folder. `wiki/templates/session.md` is deprecated as copy-start; `type: session` remains legacy in the enum. Do not file `{{title}} - B01 - Strong Start` names.
+Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<session-number>/` (Session 11 → `wiki/journal/sessions/shattered-sea/11/`; Session 01 → `…/01/`). Session plan `Session-<n>-00-<Title>.md`, numbered live beats `Session-<n>-<BB>-<Label>.md`, **post-play recaps**, and that night’s companion notes all live in the **same** session-number folder. Recap path: `wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md` (`type: recap`, copy `wiki/templates/recap.md`). Do **not** park recaps at flat `wiki/journal/…`, spaced `Session NN - Recap.md`, or a parallel `recaps/` folder. Owner pages stay outside. `_raw/` is staging. Two campaigns do not share a session-number folder. `wiki/templates/session.md` is deprecated as copy-start; `type: session` remains legacy in the enum. Do not file `{{title}} - B01 - Strong Start` names.
 
 
 ## Shared grammar
@@ -91,21 +91,32 @@ Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<ses
 
 Wiki page `.md` **basenames** (not attachment images — those stay kebab `{slug}-{role}`).
 
-**Rule:** filename stem **equals** frontmatter `title` (Unicode, Title Case / display casing as spoken). Spaces and apostrophes are allowed. Example: `wiki/entities/npc/Jean-Claude Tabarnack.md` with `title: Jean-Claude Tabarnack`.
+**Rule (issue #80; amends #69/#70):** basename is a **space-free kebab slug** derived from the page’s display name. Frontmatter `title` keeps the human Obsidian display string (spaces/apostrophes OK). Filename stem and `title` are related by a deterministic slug function — they are not required to be identical strings.
 
-**Why:** Obsidian graph nodes and bare `[[wikilinks]]` use the note name. Agents need one deterministic key — the same string as `title` — not a parallel kebab slug. Attachment kebab does **not** apply to pages.
+**Slug function (mint / rename):**
+1. Start from `title` (or the intended display name).
+2. Strip a leading legacy `Aruhe - ` / `Aruhe -` prefix (content about Aruhe stays; the prefix is dump legacy — do not preserve on new files or renames).
+3. Trim; replace each run of whitespace with a single `-`.
+4. Remove apostrophes (`'` / `’`); keep existing hyphens that separate words.
+5. Strip characters other than letters, digits, and `-` (no `/\:*?"<>|`, commas, etc.).
+6. Collapse repeated `-`; trim leading/trailing `-`.
+7. Result must contain **no spaces**. Prefer lowercase kebab for new mints (`hungry-isle.md`); do not invent a second parallel slug if one already matches this function.
 
-**Uniqueness:** vault-wide unique stem (no two live `.md` files share the same basename, even across `entities/{type}/`). Prefer fixing collisions with a clearer title, not folder shadowing.
+Example: `title: Jean-Claude Tabarnack` → `wiki/entities/pc/jean-claude-tabarnack.md`. Example: legacy `Aruhe - Hungry Isle.md` → `hungry-isle.md` (under the correct `entities/{type}/`), with `title` still naming Hungry Isle / Aruhe as content requires.
 
-**Forbidden in basenames:** `/\:*?"<>|`, leading/trailing whitespace, control characters, consecutive spaces. Do not use snake_case or kebab-case page files for owner pages.
+**Uniqueness:** vault-wide unique stem (no two live `.md` files share the same basename across folders). Prefer clearer titles/slugs over folder shadowing.
 
-**Wikilinks:** prefer `[[Title]]` matching the stem. Path-qualified links (`[[entities/npc/Title]]`) are optional hardening; display aliases use `[[Title|short]]`. On rename: update `title` + filename together; leave a `redirects_to` stub at the old stem when inbound links may linger; put alternate names in `aliases:` when useful.
+**Wikilinks:** bare `[[Display Title]]` resolves via `title` / `aliases` / path (lint already). Prefer putting the human name in `title` and former spaced stems in `aliases:` after rename. On rename: move file to new kebab stem; leave a `redirects_to` stub at the old basename when inbound links may linger; update path-qualified links.
 
-**Journal / session:** under `wiki/journal/sessions/<campaign-slug>/<session-number>/` keep `Session-<n>-00-<Title>.md`, beats `Session-<n>-<BB>-<Label>.md`, and recaps `Session NN - Recap.md` (same folder as that night’s plan when present). Companion notes that night only. Do not invent `Title - B01 - …` forms; do not use a separate `recaps/` tree.
+**Journal / session:** same session-number folder as today. Space-free forms:
+- Plan: `Session-<n>-00-<kebab-title>.md`
+- Beats: `Session-<n>-<BB>-<kebab-label>.md`
+- Recaps: `Session-<NN>-Recap.md` (e.g. `Session-01-Recap.md`) — **not** `Session NN - Recap.md`
+No separate `recaps/` tree; no flat `wiki/journal/Session-…`.
 
-**Ingest minting:** new owner page path = `wiki/entities/{type}/{title}.md` (depth 1). Refuse inventing a different slug file while `title` stays human. Manifest / qmd keys should track the vault-relative path; prefer relative keys over absolute machine paths when rewriting.
+**Ingest minting:** `wiki/entities/{type}/{kebab-slug}.md` from `title` via the slug function above (depth 1). Do not mint spaced basenames. Manifest / qmd keys track vault-relative paths (prefer relative keys).
 
-**No mass rename** until Nick greenlights after this standard lands. Lint/remorph are ATE follow-on (issue #69).
+**No mass rename** in design PRs. Lint (#72) + remorph apply only after Nick greenlights. Live vault may still have spaced names until then.
 
 Structural context waste (multi-H1 satellites, Foundry dump-copy beside Sheet, empty sections left in place) is a token bug — see `docs/agents/context-waste-method.md`. Not a prose-quality score.
 

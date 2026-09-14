@@ -56,7 +56,7 @@ Organize pages into these default categories (customizable in `.env`):
 
 ### Campaign types
 
-When the vault has `wiki/AGENTS.md`, campaign entities still live under llm-wiki categories (`entities/`, `journal/`, …) and also set campaign `type` from that file. Category is the **top-level** folder (`category: entities`); `type` may be a **depth-1** subfolder under that category (`entities/npc/…`). Do not set `category` to the type. Do not invent types. See `wiki/AGENTS.md` Entities path. Campaign **page** filenames use the title stem (readable; spaces OK) — see `wiki/AGENTS.md` § Page filenames. Do not kebab-case owner pages the way attachments are named.
+When the vault has `wiki/AGENTS.md`, campaign entities still live under llm-wiki categories (`entities/`, `journal/`, …) and also set campaign `type` from that file. Category is the **top-level** folder (`category: entities`); `type` may be a **depth-1** subfolder under that category (`entities/npc/…`). Do not set `category` to the type. Do not invent types. See `wiki/AGENTS.md` Entities path. Campaign **page** filenames use space-free kebab slugs from `title` (FM `title` stays human-readable) — see `wiki/AGENTS.md` § Page filenames (issue #80). Strip legacy `Aruhe - ` on mint/rename.
 
 ### Projects
 
