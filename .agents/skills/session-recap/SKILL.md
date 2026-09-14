@@ -20,7 +20,7 @@ A bounded player-facing rendering of a finished session log; it does not cascade
 ## Inputs
 
 One of:
-- An approved session log under `wiki/<campaign>/sessions/`
+- An approved session log under `wiki/journal/sessions/<campaign-slug>/<NN>/`
 - A bounded evidence packet from `session-transcript-ingest` or
   `reconciling-session-evidence`
 - A request like "process session 4" — locate the approved log after wrap-up
@@ -34,13 +34,13 @@ path first; do not use them directly as recap input.
 
 Read in this order, stopping when you have enough:
 1. `wiki/<campaign>/hot.md`
-2. The most recent `wiki/<campaign>/sessions/Session <NN> - Recap.md` — for continuity and tone
+2. The most recent `wiki/journal/sessions/<campaign-slug>/<NN>/Session NN - Recap.md` — for continuity and tone
 3. Active situation files in `wiki/<campaign>/fronts/` relevant to the session
 4. Entity pages referenced in the notes (summary frontmatter first; full page only if needed)
 
 ### 2. Propose, then file after accept
 
-Show the recap in chat. After DM accept, create `wiki/<campaign>/sessions/Session <NN> - Recap.md` (or `wiki/journal/` when that is the vault layout) following the established pattern:
+Show the recap in chat. After DM accept, create `wiki/journal/sessions/<campaign-slug>/<NN>/Session NN - Recap.md` (same folder as that night’s plan/beats; never flat `wiki/journal/Session NN - Recap.md` or a `recaps/` tree) following the established pattern:
 - Frontmatter: `type: recap`, `lifecycle: accepted`, campaign fields, `visibility: table`, and `tags: [session, recap]`
 - Player-facing prose — what happened as the players experienced it
 - Load `obsidian-markdown` for prose standards
