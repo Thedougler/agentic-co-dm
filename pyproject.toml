@@ -1,10 +1,12 @@
 [project]
 name = "agentic-co-dm"
 version = "0.1.0"
-description = "Campaign wiki checks for Agentic Co-DM. No runtime dependencies."
+description = "Campaign wiki checks for Agentic Co-DM. Runtime: tiktoken for objective token counts."
 readme = "CONTEXT.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "tiktoken>=0.7,<1",
+]
 
 [tool.agentic-co-dm]
 vault = "wiki"
