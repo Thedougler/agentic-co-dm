@@ -1,7 +1,7 @@
 ---
 title: Crissdalynn Khinriss
 category: entities
-tags: [shattered-sea, npc, pc]
+tags: [shattered-sea, pc]
 sources:
   - "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md"
   - "Foundry VTT Shattered-Sea actor Crisdalynn Khinris 2026-09-13"
@@ -16,7 +16,7 @@ lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T03:00:00Z
 updated: 2026-09-13T23:40:00Z
-type: npc
+type: pc
 reveal: revealed
 campaign: shattered-sea
 visibility: dm

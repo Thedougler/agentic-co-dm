@@ -1,7 +1,7 @@
 ---
 title: Jean-Claude Tabarnack
 category: entities
-tags: [shattered-sea, npc, pc]
+tags: [shattered-sea, pc]
 sources:
   - "wiki/_archive/jean-claude-tabarnack.md"
   - "wiki/_archive/abilities/jean-claude-tabarnack-abilities.md"
@@ -25,7 +25,7 @@ lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T00:00:00Z
 updated: 2026-09-13T23:40:00Z
-type: npc
+type: pc
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
