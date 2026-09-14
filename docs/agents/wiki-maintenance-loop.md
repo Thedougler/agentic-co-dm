@@ -1,6 +1,6 @@
 # ASE method: llm-wiki maintenance loop (#90)
 
-**Status:** design lock for CoS routines + ATE facade.  
+**Status:** design lock for CoS routines + ATE facade (Researcher hygiene practices folded 2026-09-14 — material Layer A/B/C/cadence only).  
 **Goal:** continuous vault health — lint → clean → organize → optimize — with minimal Nick babysitting, using **existing** repo skills/CLIs only.  
 **Do not invent parallel maintenance skills.**
 
@@ -20,11 +20,14 @@ Run without fleet chat when clean. Emit compact JSON path+metric (no body dumps)
 | A2 | `python3 scripts/context-waste-scan.py` | S3/S4 = **leads** (redundancy/conflict/infra), not shorten mandates |
 | A3 | `python3 scripts/token-count.py` (when #86 lands) | Optional footprint rollup; never ÷4 |
 | A4 | Filename lint (#72, when ready) | Spaces / `Aruhe -` prefix — **lint-only** until Nick greenlights remorph |
-| A5 | Empty `_raw/` check | Ingest inbox must clear; report leftover staging files |
+| A5 | Empty `_raw/` check | Ingest inbox must clear; report leftover staging files — never overwrite `_raw/` as live canon |
+| A6 | Dry-run / plan reports | Filename remorph, dedup audit, structural remorph plans — **report + editable plan only**; apply is Layer C / Nick |
+
+Layer A is **read-only scan + format/structure lint + dry-run plans**. Classify broken links (near-miss vs planned) as report-never-edit unless a deterministic safe fix exists. Lint-green ≠ fidelity (CD/Nick craft gate).
 
 **Quiet rule:** if A1 HARD count = 0 and A5 clear and no P0 waste leads, stay silent (no Nick ping).
 
-Optional thin facade (ATE): `scripts/wiki-maintain --report` → one JSON bundling A1–A5 without new policy.
+Optional thin facade (ATE): `scripts/wiki-maintain --report` → one JSON bundling A1–A6 without new policy.
 
 ### Layer B — Fleet route (CoS orchestrates; no ack-only)
 
@@ -38,28 +41,36 @@ Optional thin facade (ATE): `scripts/wiki-maintain --report` → one JSON bundli
 | Dedup candidates | `wiki-dedup` **audit only** | Report candidates; **no** `--merge`/`--auto` until Nick confirms |
 | Knowledge / weekly summary | `wiki-digest` | Player/DM-facing knowledge digest — not status theater |
 | Vault footprint / status | `wiki-status` | Tiktoken when available; threshold warn only |
-| Prose quality | Creative Director → Nick | Never auto-apply CD prose |
-| Ingest backlog `_raw/` | Wiki Ingest | Clear staging per wiki-ingest |
+| Prose / fidelity vs raw | Creative Director → Nick | Never auto-apply CD prose; lint-green ≠ fidelity |
+| Noted contradictions / rumor forks | Campaign Editor + CD; Nick decides | **Note** conflicts; do not auto-pick winners or collapse public/secret |
+| Orphan triage | Wiki Linter / CE | Link, incubate, or archive proposal — not mass-delete |
+| Ingest backlog `_raw/` | Wiki Ingest | Clear staging per wiki-ingest; raw stays immutable evidence |
 
 ### Layer C — Never auto without Nick
 
-- Lore invent / Midchain recreate / unapproved names
-- Link demotions during migration freeze
-- Mass filename kebab rename / `Aruhe -` strip apply
+- Lore invent / Midchain recreate / unapproved names / stubs replaced by invent
+- Link demotions during migration freeze; archive/demote ≠ delete without greenlight
+- Mass filename kebab rename / `Aruhe -` strip **apply** (dry-run OK in Layer A)
 - `wiki-dedup --merge` / `--auto`
-- Craft cuts or instruction deletes for token/byte scores
-- Destructive consolidate without dry-run + confirm when high blast radius
-- Any change that lowers agent output quality or strips narrative/mechanics
+- Auto-resolve contradictions or collapse rumors/secrets/public-secret into one truth
+- Craft cuts or instruction deletes for token/byte scores; thinning that loses output quality
+- Destructive consolidate without dry-run + blast-radius confirm
+- Overwrite `_raw/`; silent multi-agent clobber; delete orphans/planned links
+- Treat lint-green as fidelity or run prose QC via scripts
 
 ---
 
 ## Cadence (CoS routines)
 
-1. **Weekday ~09:00 keep-ahead** — Layer A full report. Quiet if clean. Else ranked digest + Layer B packets (specialists only for their rows).
+1. **Weekday ~09:00 keep-ahead** — Layer A full report (scan + dry-run plans). Quiet if clean. Else ranked digest + Layer B packets.
 2. **Optional midweek** — ASE context-waste / conflict triage from A2 leads (not byte slim).
 3. **Weekly** — `wiki-digest` knowledge summary to Nick (content), separate from tooling status.
+4. **Post-session (~15m)** — status/stubs append/diff (CE/Ingest); do not smooth-rewrite history.
+5. **Periodic** — contradiction/open-thread lint as **report** (not auto-resolve).
+6. **Monthly** — archive/incubate triage proposals (demotion freeze still blocks auto-demote).
+7. **Pre-migrate** — full Layer A dry-run + editable plan before any mass remorph/rename apply.
 
-CoS expands the existing Wiki lint keep-ahead routine; do not spawn duplicate ack-only pings.
+CoS expands the existing Wiki lint keep-ahead routine; do not spawn duplicate ack-only pings. Prefer append/diff over rewrite; one-write entity pages + link-not-copy.
 
 ---
 
@@ -86,7 +97,7 @@ CoS expands the existing Wiki lint keep-ahead routine; do not spawn duplicate ac
 | Clean keep-ahead | Nothing |
 | HARD clusters / decisions | Ranked digest + who owns the packet |
 | Weekly | Knowledge digest (`wiki-digest`) |
-| Greenlight gates | Mass rename, dedup merge, demotion thaw, destructive consolidate |
+| Greenlight gates | Mass rename, dedup merge, demotion thaw, destructive consolidate, contradiction resolution, orphan delete/archive |
 
 ---
 
@@ -106,3 +117,7 @@ Cite: docs/agents/wiki-maintenance-loop.md
 - [ ] CoS weekday routine runs Layer A + routes; quiet when clean
 - [ ] Nick digests only for decisions / HARD clusters / weekly knowledge
 - [ ] #71/#84/#87/#86/#80 constraints honored
+
+## Expert-practice grounding
+
+Researcher brief (#90): Layer A = read-only scan + format lint + dry-run plans; mutate/rename/merge/demote/conflict resolution stays Nick-gated. Practices mapped from Karpathy llm-wiki, Ranjan fidelity risks, Vault Inspector / vault-cli / Vault Link Check patterns, World Anvil one-write entities, Forte archive≠delete, Matuschak orphan triage, Sly Flourish simplicity ceiling — fleet Researcher packet 2026-09-14.
