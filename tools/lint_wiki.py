@@ -23,7 +23,7 @@ DEFAULT_RELATIONSHIPS = {
 REQUIRED = ("title", "category", "tags", "sources", "created", "updated")
 CAMPAIGN_REQUIRED = ("type", "lifecycle", "reveal")
 OWNER_TYPES = {
-    "npc", "place", "faction", "item", "creature", "vehicle", "spell",
+    "npc", "pc", "place", "faction", "item", "creature", "vehicle", "spell",
     "lore", "quest", "region",
     "session-prep", "session", "recap", "work",
 }
@@ -34,7 +34,9 @@ HARD_KEYS = (
     "bad_type",
     "bad_lifecycle",
     "typed_relationships",
+    "pc_identity_mismatch",
 )
+PC_ROLE = re.compile(r"^(pc|player character|player)$", re.I)
 TOKEN = re.compile(r"`([^`]+)`")
 RESERVED_FILES = {"AGENTS.md", "index.md", "log.md", "hot.md"}
 SKIP_DIRS = {".obsidian", "_archive", "_archives", "_raw", "_readouts", "_meta", "templates"}
@@ -225,6 +227,32 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def pc_identity_mismatches(pages: dict[str, dict]) -> list[dict[str, object]]:
+    """HARD: role PC / non-empty player: must be type pc under entities/pc/."""
+    out: list[dict[str, object]] = []
+    for rel, item in pages.items():
+        fields = item["fields"]
+        typ = (fields.get("type") or "").strip("\"'")
+        role = (fields.get("role") or "").strip("\"'")
+        player_raw = fields.get("player")
+        player_val = (player_raw or "").strip().strip("\"'")
+        has_player = player_raw is not None and bool(player_val)
+        if not (PC_ROLE.match(role) or has_player):
+            continue
+        parts = Path(rel).parts
+        under_pc = len(parts) >= 2 and parts[0] == "entities" and parts[1] == "pc"
+        under_npc = len(parts) >= 2 and parts[0] == "entities" and parts[1] == "npc"
+        if typ == "npc" or under_npc or typ != "pc" or not under_pc:
+            out.append({
+                "page": rel,
+                "type": typ or None,
+                "role": role or None,
+                "has_player": has_player,
+                "path": rel,
+            })
+    return out
+
+
 def main() -> int:
     args = parse_args()
     vault = args.vault.resolve()
@@ -259,6 +287,7 @@ def main() -> int:
     findings["long_summary"] = [{"page": rel, "chars": len(item["fields"]["summary"])} for rel, item in pages.items() if len(item["fields"].get("summary", "")) > 200]
     findings["bad_lifecycle"] = [{"page": rel, "value": item["fields"].get("lifecycle")} for rel, item in pages.items() if item["fields"].get("lifecycle") and item["fields"]["lifecycle"].strip("\"'") not in lifecycles]
     findings["bad_type"] = [{"page": rel, "value": item["fields"].get("type")} for rel, item in pages.items() if item["fields"].get("type") and item["fields"]["type"].strip("\"'") not in types]
+    findings["pc_identity_mismatch"] = pc_identity_mismatches(pages)
     findings["missing_trust"] = [{"page": rel, "missing": [key for key in args.required_trust_field if not item["fields"].get(key)]} for rel, item in pages.items() if any(not item["fields"].get(key) for key in args.required_trust_field)]
 
     documents = {}
