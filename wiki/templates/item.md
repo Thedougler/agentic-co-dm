@@ -32,6 +32,10 @@ summary: ""
      No agent-process asides (skill names, remorph notes, "item-prep") in wiki voice.
      Incomplete magic items: either runnable table rules + spoken look, or mark provenance-only / incomplete explicitly — do not ship empty stubs as ready.
      At the Table = playable consequence tonight only — no design diary, RAW comparison, or balance commentary.
+     DM-visible table labels: Title Case / spaced words only — never snake_case (`One thing`, not `one_thing`).
+     Prefer runnable effect prose over a Field/Value design table. If a short field table is needed, use:
+       One thing | Rarity justification | Attunement reason | PC connection | Current holder | Narrative hook
+     (Those design rows are prep notes — keep playable effect in the effect block; omit empty rows.)
 -->
 
 # {{title}}

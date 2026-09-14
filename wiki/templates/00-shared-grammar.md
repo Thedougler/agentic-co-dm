@@ -115,6 +115,15 @@ Flat by default: `wiki/attachments/{subject-slug}-{role}.{ext}`
 - One file per subject+role; dedup parallel copies; update embeds on rename.
 - `## Art` cites these roles; omit section when unused.
 
+
+## DM-visible labels (no snake_case)
+
+User-facing production wiki text must not use snake_case labels (e.g. table Field column `one_thing`, `primary_goal`). Prefer Title Case / spaced words: `One thing`, `Primary goal`.
+
+- Applies to: body prose, markdown table labels, callout titles, section stubs meant for the DM at the table.
+- Does **not** apply to: YAML frontmatter / machine keys (`quest_giver`, `hp_max`, `class_levels`, …), code fences, wikilink paths, attachment filenames.
+- Scaffolds must never present snake_case as a copy-start Field label.
+
 ## Explicit non-goals
 
 - Do **not** proliferate new callout types for the same job.

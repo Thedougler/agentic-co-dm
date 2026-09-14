@@ -16,7 +16,8 @@ faction: none
 visibility: dm
 summary: ""
 ---
-<!-- Copy-start scaffold. Who/want, look, first minutes and posture change, Connections (named ties). Single H1 only (`# {{title}}`). Combat omit-if-empty. Omit unused identity keys (aliases unused; location unknown; faction none). Pass is person jobs in wiki/AGENTS.md Layout. -->
+<!-- Copy-start scaffold. Who/want, look, first minutes and posture change, Connections (named ties). Single H1 only (`# {{title}}`). Combat omit-if-empty. Omit unused identity keys (aliases unused; location unknown; faction none). Pass is person jobs in wiki/AGENTS.md Layout.
+     DM-visible labels: Title Case / spaced words only — never snake_case (`Primary goal`, not `primary_goal`). YAML keys may stay snake_case. -->
 
 # {{title}}
 

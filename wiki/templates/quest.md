@@ -171,7 +171,7 @@ After meaningful play or campaign downtime:
 4. Update leads the party found or invalidated.
 5. Record changed NPC/faction goals.
 6. Add one Quest log row.
-7. Update last_advanced and updated.
+7. Update frontmatter `last_advanced` and `updated` (YAML keys; not DM-visible labels).
 -->
 
 ## Resolution
