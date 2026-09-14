@@ -1,7 +1,7 @@
 ---
 title: "Syranita"
 category: entities
-tags: ["shattered-sea", "lore", "mystery", "faith"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:syranita.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: "Corvid's Table"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-south.md"]
 summary: "Claimed by an enormous; unnervingly organized flock of ravens who trade favors for shiny objects"
 provenance:

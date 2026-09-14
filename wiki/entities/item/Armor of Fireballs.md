@@ -1,7 +1,7 @@
 ---
 title: "Armor of Fireballs"
 category: entities
-tags: ["shattered-sea", "item", "combat", "rare"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:armor-of-fireballs.md"
 created: 2026-09-13

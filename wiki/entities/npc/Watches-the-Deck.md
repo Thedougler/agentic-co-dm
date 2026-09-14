@@ -1,7 +1,7 @@
 ---
 title: "Watches-the-Deck"
 category: entities
-tags: ["shattered-sea", "npc", "intrigue"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:watches-the-deck.md"
 created: 2026-09-13

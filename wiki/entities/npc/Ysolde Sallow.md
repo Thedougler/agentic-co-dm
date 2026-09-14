@@ -1,7 +1,7 @@
 ---
 title: "Ysolde Sallow"
 category: entities
-tags: ["shattered-sea", "npc", "mystery", "horror"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:ysolde-sallow.md"
 created: 2026-09-13

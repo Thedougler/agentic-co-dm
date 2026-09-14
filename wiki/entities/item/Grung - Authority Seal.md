@@ -1,7 +1,7 @@
 ---
 title: Grung - Authority Seal
 category: entities
-tags: [shattered-sea, item, grung]
+tags: [shattered-sea, aruhe, item]
 aliases: [Grung Authority Seal, Grung Authority Seals]
 sources: ["Aruhe - Grasslands.md"]
 summary: Spent gold-script seals that once compelled lower-caste grung to survey inland Aruhe and report back.

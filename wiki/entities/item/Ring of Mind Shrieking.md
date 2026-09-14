@@ -1,7 +1,7 @@
 ---
 title: "Ring of Mind Shrieking"
 category: entities
-tags: ["shattered-sea", "item", "comedy", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:ring-of-mind-shrieking.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: Line Bank
 category: entities
-tags: [shattered-sea, place, aruhe, river, grasslands]
+tags: [shattered-sea, aruhe, place]
 aliases: [Passing Bank, Camp-in-Passing, Fish-Line Bank, Scale Bank, Three-Pile Bank]
 sources: ["wiki/_archive/River Line Bank.md"]
 summary: A used fruiting margin on the Aruhe river where abandoned fishing gear, fresh prints, and three fruit piles mark the route upriver.

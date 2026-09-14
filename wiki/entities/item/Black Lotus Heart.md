@@ -1,7 +1,7 @@
 ---
 title: Black Lotus Heart
 category: entities
-tags: [shattered-sea, item, aruhe]
+tags: [shattered-sea, aruhe, item]
 sources:
   - "wiki/_raw/Aruhe - Black Lotus.md"
 summary: Crystallized magical sap recovered from a mature Black Lotus after the flower can no longer close.

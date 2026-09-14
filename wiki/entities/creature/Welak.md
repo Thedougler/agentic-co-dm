@@ -1,7 +1,7 @@
 ---
 title: "Welak"
 category: entities
-tags: [shattered-sea, creature, maw, whip-shark]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:whip-shark.md"
   - "/workspace/midchain-ingest/group-a/monsters/Welak.md"

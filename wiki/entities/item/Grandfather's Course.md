@@ -1,7 +1,7 @@
 ---
 title: "Grandfather's Course"
 category: entities
-tags: ["shattered-sea", "item", "maritime"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:grandfathers-course-journal.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: "Property Snow"
 category: entities
-tags: ["shattered-sea", "item", "comedy", "survival", "common"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:property-snow.md"
 created: 2026-09-13

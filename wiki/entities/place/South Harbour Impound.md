@@ -1,7 +1,7 @@
 ---
 title: "South Harbour Impound"
 category: entities
-tags: [shattered-sea, place, tidefall]
+tags: [shattered-sea, place]
 sources: ["calders-tooth.md"]
 summary: "Crown seizure yard on the east pier of South Harbour."
 provenance:

@@ -1,7 +1,7 @@
 ---
 title: "Osha's Slip"
 category: entities
-tags: [shattered-sea, place, tidefall]
+tags: [shattered-sea, place]
 sources: ["calders-tooth.md"]
 summary: "Stilt village over Calder's Tooth mudflats and a hub for local smuggling."
 provenance:

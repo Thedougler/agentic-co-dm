@@ -1,7 +1,7 @@
 ---
 title: "The Drawn Curtain"
 category: entities
-tags: ["shattered-sea", "item", "intrigue", "rare"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:the-drawn-curtain.md"
 created: 2026-09-13

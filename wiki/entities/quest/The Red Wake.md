@@ -1,7 +1,7 @@
 ---
 title: "The Red Wake"
 category: entities
-tags: ["shattered-sea", "quest", "divine", "maritime"]
+tags: [shattered-sea, quest]
 sources:
   - "campaign-os:the-red-wake.md"
 created: 2026-09-13

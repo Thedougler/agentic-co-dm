@@ -1,7 +1,7 @@
 ---
 title: Grung and the Making of Aruhe
 category: entities
-tags: [shattered-sea, lore, aruhe]
+tags: [shattered-sea, aruhe, lore]
 sources:
   - "wiki/_raw/Grung clans.md"
   - "arc-blight-of-aruhe.md"

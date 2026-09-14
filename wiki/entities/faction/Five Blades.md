@@ -1,7 +1,7 @@
 ---
 title: "Five Blades"
 category: entities
-tags: ["shattered-sea", "faction", "combat"]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:five-blades.md"
 created: 2026-09-13

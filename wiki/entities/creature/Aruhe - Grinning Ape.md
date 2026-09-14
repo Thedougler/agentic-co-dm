@@ -1,7 +1,7 @@
 ---
 title: "Aruhe - Grinning Ape"
 category: entities
-tags: [shattered-sea, creature, aruhe]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "campaign-os:grinning-apes.md"
   - "/workspace/midchain-ingest/group-a/monsters/Grinning Ape.md"

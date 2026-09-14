@@ -1,7 +1,7 @@
 ---
 title: "HCS Surety"
 category: entities
-tags: ["shattered-sea", "vehicle", "ship"]
+tags: [shattered-sea, vehicle]
 sources:
   - "00 Story so far.md"
 summary: "Crown cutter the crew took and later renamed Uncertainty."

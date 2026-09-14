@@ -1,7 +1,7 @@
 ---
 title: "Chain-Brake Winch"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "craft"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:chain-brake-winch.md"
 created: 2026-09-13

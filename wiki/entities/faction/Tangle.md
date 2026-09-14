@@ -1,7 +1,7 @@
 ---
 title: Tangle
 category: entities
-tags: [shattered-sea, faction, lore, rattkin]
+tags: [shattered-sea, faction]
 sources:
   - "Tangle.md"
 summary: "Elder teaching and proposed anchor referenced by the Rattkin Runs; Aruhe is a survey site."

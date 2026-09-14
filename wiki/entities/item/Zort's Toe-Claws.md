@@ -1,7 +1,7 @@
 ---
 title: "Zort's Toe-Claws"
 category: entities
-tags: ["shattered-sea", "item", "exploration", "maritime", "common"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:zorts-toe-claws.md"
 created: 2026-09-13

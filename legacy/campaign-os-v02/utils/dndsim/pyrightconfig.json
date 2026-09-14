@@ -1,8 +1,0 @@
-{
-  "//": "Points the editor's Pyright at this uv project's own interpreter. Without it every dndsim file reports numpy/pydantic/dndsim.* as unresolved imports, which is noise in the editor and in any agent's context. Authoritative type checking is mypy, run via pre-commit and `npm run test:dndsim`'s sibling hook.",
-  "venvPath": ".",
-  "venv": ".venv",
-  "extraPaths": ["src", "scripts"],
-  "include": ["src", "tests", "scripts"],
-  "typeCheckingMode": "standard"
-}

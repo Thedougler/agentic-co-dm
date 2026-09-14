@@ -1,7 +1,7 @@
 ---
 title: Grasslands
 category: entities
-tags: [shattered-sea, place, aruhe, grasslands, rivers]
+tags: [shattered-sea, aruhe, place]
 aliases: [Grasslands, Aruhe Grasslands]
 sources: ["[[Aruhe - Hungry Isle]]", "Aruhe - Grasslands.md"]
 summary: Hot river-cut valleys of eight-foot gold-green grass where water, cover, and predators force exposed choices.

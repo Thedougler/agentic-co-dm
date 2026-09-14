@@ -1,7 +1,7 @@
 ---
 title: "Giant Owl"
 category: entities
-tags: ["shattered-sea", "creature", "exploration"]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:giant-owl.md"
 created: 2026-09-13

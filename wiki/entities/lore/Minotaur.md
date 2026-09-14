@@ -1,7 +1,7 @@
 ---
 title: "Minotaur"
 category: entities
-tags: ["shattered-sea", "lore", "maritime"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:minotaur.md"
 created: 2026-09-13

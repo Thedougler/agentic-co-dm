@@ -1,7 +1,7 @@
 ---
 title: Session 05 - Recap
 category: journal
-tags: [shattered-sea, recap, session]
+tags: [shattered-sea, recap]
 sources: ["Session 05 - Recap.md"]
 summary: Catarina joined the magazine raid; Magazine Beta went into the water; Room 8 was a live ritual under Solange Barret.
 provenance:

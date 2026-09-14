@@ -1,7 +1,7 @@
 ---
 title: "Grung-Resistant Climbing Harness"
 category: entities
-tags: ["shattered-sea", "item", "exploration", "craft"]
+tags: [shattered-sea, item]
 sources:
   - "wiki/_archive/homebrew/grung-resistant-climbing-harness.md"
   - "campaign-os:grung-resistant-climbing-harness.md"

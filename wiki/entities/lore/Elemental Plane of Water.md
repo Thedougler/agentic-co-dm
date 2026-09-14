@@ -1,7 +1,7 @@
 ---
 title: "Elemental Plane of Water"
 category: entities
-tags: [shattered-sea, lore, cosmology]
+tags: [shattered-sea, lore]
 sources:
   - "/workspace/midchain-ingest/group-a/lore/Istishia.md"
   - "elemental-plane-of-water.md"

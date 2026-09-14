@@ -1,7 +1,7 @@
 ---
 title: "The Chained Lighter"
 category: entities
-tags: ["shattered-sea", "item", "intrigue", "rare"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:the-chained-lighter.md"
 created: 2026-09-13

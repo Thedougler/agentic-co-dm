@@ -1,7 +1,7 @@
 ---
 title: "Six-Legged Pit Cat"
 category: entities
-tags: ["shattered-sea", "item", "exploration", "maritime", "rare"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:six-legged-pit-cat.md"
 created: 2026-09-13

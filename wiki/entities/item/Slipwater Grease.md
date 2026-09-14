@@ -1,7 +1,7 @@
 ---
 title: "Slipwater Grease"
 category: entities
-tags: ["shattered-sea", "item", "combat", "common"]
+tags: [shattered-sea, item]
 sources:
   - "wiki/_archive/common/slipwater-grease.md"
   - "campaign-os:slipwater-grease.md"

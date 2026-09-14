@@ -1,7 +1,7 @@
 ---
 title: Bear-Elk
 category: entities
-tags: [monster, aruhe]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "Aruhe - Bear-Elk.md"
   - "campaign-os:bear-elk.md"

@@ -1,7 +1,7 @@
 ---
 title: Aruhe - Stillbloom
 category: entities
-tags: [shattered-sea, item, aruhe, hazard, flora]
+tags: [shattered-sea, aruhe, item]
 sources:
   - "wiki/_raw/Aruhe - Stillbloom.md"
 summary: A vibration-triggered Aruhe plant that fires venomous spines at fast-moving grounded creatures and rewards careful passage.

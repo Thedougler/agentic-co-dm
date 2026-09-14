@@ -1,7 +1,7 @@
 ---
 title: "Yevka's Folly"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "A bankrupt merchant prince's half-built pleasure palace; now quietly squatted"
 provenance:

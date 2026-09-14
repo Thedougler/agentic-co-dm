@@ -1,7 +1,7 @@
 ---
 title: "Veth West Beach"
 category: entities
-tags: ["shattered-sea", "place", "grung", "beach", "trade"]
+tags: [shattered-sea, place]
 sources: ["Veth West Beach.md", "wiki/_raw/Grung clans.md"]
 summary: "Veth West Beach"
 provenance:

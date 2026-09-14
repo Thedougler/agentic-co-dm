@@ -1,7 +1,7 @@
 ---
 title: "Sir Quackers the Fowl"
 category: entities
-tags: [shattered-sea, npc, ley-line]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:sir-quackers-the-fowl-narration-appearance.md"
   - "/workspace/midchain-ingest/group-a/npcs/Sir Quackers the Fowl.md"

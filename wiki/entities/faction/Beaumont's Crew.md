@@ -1,7 +1,7 @@
 ---
 title: "Beaumont's Crew"
 category: entities
-tags: ["shattered-sea", "faction", "maritime"]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:beaumonts-crew.md"
 created: 2026-09-13

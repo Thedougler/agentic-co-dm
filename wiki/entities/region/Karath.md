@@ -1,7 +1,7 @@
 ---
 title: "Karath"
 category: entities
-tags: ["shattered-sea", "region", "grung", "karath", "aruhe"]
+tags: [shattered-sea, aruhe, region]
 sources: ["Karath.md", "wiki/_raw/Grung clans.md"]
 summary: "Karath is the Grung raid and hatchery island, and [[Aruhe - Hungry Isle]]'s near neighbor across a channel about half a mile wide at the closest edge. It is close to Aruhe's rim, not to Aruhe's hea..."
 provenance:

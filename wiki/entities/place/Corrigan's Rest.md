@@ -1,7 +1,7 @@
 ---
 title: "Corrigan's Rest"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["aleksander-malone.md"]
 summary: Retired pirates' hideaway in the northern Midchain that does not overlap Blackrule.
 provenance:

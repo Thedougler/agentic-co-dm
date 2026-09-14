@@ -1,7 +1,7 @@
 ---
 title: "The Aruhe Wreck"
 category: entities
-tags: ["shattered-sea", "lore", "maritime", "horror"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:aruhe-wreck.md"
 created: 2026-09-13

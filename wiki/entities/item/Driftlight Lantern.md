@@ -1,7 +1,7 @@
 ---
 title: "Driftlight Lantern"
 category: entities
-tags: ["shattered-sea", "item", "mystery", "common"]
+tags: [shattered-sea, item]
 sources:
   - "wiki/_archive/common/driftlight-lantern.md"
   - "campaign-os:driftlight-lantern.md"

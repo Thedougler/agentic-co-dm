@@ -1,7 +1,7 @@
 ---
 title: "Ket's Warning"
 category: entities
-tags: ["shattered-sea", "session-prep", "horror", "combat", "maritime"]
+tags: [shattered-sea, session-prep]
 sources:
   - "campaign-os:murrats-shroud-kets-warning.md"
 created: 2026-09-13

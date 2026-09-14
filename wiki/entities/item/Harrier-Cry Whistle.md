@@ -1,7 +1,7 @@
 ---
 title: "Harrier-Cry Whistle"
 category: entities
-tags: ["shattered-sea", "item", "exploration", "maritime", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:harrier-cry-whistle.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: Aruhe - Lesser Black Lotus
 category: entities
-tags: [shattered-sea, hazard, aruhe, flora]
+tags: [shattered-sea, aruhe, item]
 sources: ["wiki/_raw/Aruhe - Lesser Black Lotus.md"]
 summary: Scorched terrace flower that answers violent disturbance by casting a nearby spell back at its attacker.
 provenance:

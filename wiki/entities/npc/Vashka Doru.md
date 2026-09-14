@@ -1,7 +1,7 @@
 ---
 title: "Vashka Doru"
 category: entities
-tags: [npc, shattered-sea, maritime]
+tags: [shattered-sea, npc]
 sources:
   - "wiki/_archive/vashka-doru.md"
   - "campaign-os:vashka-doru.md"

@@ -1,7 +1,7 @@
 ---
 title: "Governor Voss"
 category: entities
-tags: ["shattered-sea", "npc", "dravosi-crown"]
+tags: [shattered-sea, npc]
 sources:
   - "inbox/archive/FILED-2026-09-05-dravosi-crown.md"
 summary: "Crown governor whose orders never covered the two Fort Crestwall detachments holding Aldric's vault."

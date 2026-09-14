@@ -1,7 +1,7 @@
 ---
 title: "High Eyrie"
 category: entities
-tags: ["shattered-sea", "place", "sentinel", "schism", "crown-islands"]
+tags: [shattered-sea, place]
 sources: ["High Eyrie.md"]
 summary: "A basalt stack beyond the eastern Crown chain, held by the [[Sentinels of the Eyrie]] for two hundred years and overlooking the [[Drowned Maw]]."
 provenance:

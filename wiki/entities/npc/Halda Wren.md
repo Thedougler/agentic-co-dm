@@ -1,7 +1,7 @@
 ---
 title: "Halda Wren"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, npc]
 sources: ["quest-penance-bar.md"]
 summary: "Woman at Sandy Grove who trades willowbark for salt fish."
 provenance:

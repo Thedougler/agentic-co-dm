@@ -1,7 +1,7 @@
 ---
 title: "Slow Burn"
 category: entities
-tags: ["shattered-sea", "item", "intrigue", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:slow-burn.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: Antheri
 category: entities
-tags: ["shattered-sea", "faction", "maw"]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:antheri.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-antheri.md"

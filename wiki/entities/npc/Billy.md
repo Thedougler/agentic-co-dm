@@ -1,7 +1,7 @@
 ---
 title: "Billy"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, npc]
 sources: ["isle-of-cursed-speech.md"]
 summary: "Third Halewick child who compelled villagers to find heroes to stop the other two."
 provenance:

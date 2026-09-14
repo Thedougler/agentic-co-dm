@@ -1,7 +1,7 @@
 ---
 title: "{{title}}"
 category: entities
-tags: [faction]
+tags: [shattered-sea, faction]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD

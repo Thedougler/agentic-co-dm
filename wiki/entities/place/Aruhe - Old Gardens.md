@@ -1,7 +1,7 @@
 ---
 title: Old Gardens
 category: entities
-tags: [shattered-sea, place, aruhe, terraces, gardens]
+tags: [shattered-sea, aruhe, place]
 sources: ["Aruhe - Old Gardens.md"]
 created: 2026-09-12
 updated: 2026-09-12

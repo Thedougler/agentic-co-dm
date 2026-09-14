@@ -1,7 +1,7 @@
 ---
 title: "Roka's Hidden Ledger"
 category: entities
-tags: ["shattered-sea", "item", "intrigue", "mystery"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:spar-and-snare-expedition-ledger-item.md"
 created: 2026-09-13

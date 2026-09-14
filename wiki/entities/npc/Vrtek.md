@@ -1,7 +1,7 @@
 ---
 title: "Vrtek"
 category: entities
-tags: ["shattered-sea", "npc", "salvage"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:vrtek.md"
 created: 2026-09-13

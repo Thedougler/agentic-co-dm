@@ -1,7 +1,7 @@
 ---
 title: "Ninefold Block"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "exploration", "rare"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:ninefold-block.md"
 created: 2026-09-13

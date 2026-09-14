@@ -12,3 +12,5 @@
 {"cause": "full wiki hard lint reports repository-wide 1509 broken links and one missing frontmatter page; Beat 4 scoped lints pass", "cause_fixed": false, "id": "e-10", "sitting": "prep: Session 11 Beat 4 copy pass", "status": "open"}
 {"cause": "QMD encoded entity path lookup failed; use the hyphenated docid path returned by qmd search", "cause_fixed": false, "id": "e-11", "sitting": "prep: Session 11 beat 5 copy", "status": "open"}
 {"cause": "manifest upsert and cache-update timed out while recording the Spiguar reference image", "cause_fixed": false, "id": "e-12", "sitting": "ingest: reference images", "status": "open"}
+{"cause": "QMD embed exceeded the 600-second command timeout while generating 3829 vectors", "cause_fixed": false, "id": "e-13", "sitting": "tag-normalize: clean canonical tags", "status": "open"}
+{"cause": "origin/main advanced, so the first push was rejected as non-fast-forward", "cause_fixed": false, "id": "e-14", "sitting": "commit and push wiki changes", "status": "open"}

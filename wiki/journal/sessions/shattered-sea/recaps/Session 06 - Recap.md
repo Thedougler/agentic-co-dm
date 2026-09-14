@@ -1,7 +1,7 @@
 ---
 title: Session 06 - Recap
 category: journal
-tags: [shattered-sea, recap, session]
+tags: [shattered-sea, recap]
 sources: ["Session 06 - Recap.md"]
 summary: Vashu and Ozzeth died covering Solange; she spoke Agni, dropped the ceiling, and stood remade at twelve feet.
 provenance:

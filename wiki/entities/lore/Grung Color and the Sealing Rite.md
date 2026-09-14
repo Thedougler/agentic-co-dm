@@ -1,7 +1,7 @@
 ---
 title: Grung Color and the Sealing Rite
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, lore]
 sources:
   - "wiki/_raw/Grung clans.md"
 summary: Grung diet and daily soaking produce the body's current color, which signals social role without proving permanent rank.

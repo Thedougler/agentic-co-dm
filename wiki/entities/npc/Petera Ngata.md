@@ -1,7 +1,7 @@
 ---
 title: "Petera Ngata"
 category: entities
-tags: [npc, shattered-sea, maritime, intrigue]
+tags: [shattered-sea, npc]
 sources:
   - "wiki/_archive/petera-ngata.md"
   - "wiki/_archive/Fathomrush.md"

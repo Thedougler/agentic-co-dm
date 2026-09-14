@@ -1,7 +1,7 @@
 ---
 title: "Sable Roost"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-south.md"]
 summary: "An airship graveyard; each hulk still watched by its one surviving crewmate"
 provenance:

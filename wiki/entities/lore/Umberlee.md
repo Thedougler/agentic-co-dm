@@ -1,7 +1,7 @@
 ---
 title: Umberlee
 category: entities
-tags: [shattered-sea, lore, deity, umberlee, sea]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:umberlee.md"
   - "umberlee-pearl-fissure-erosion.md"

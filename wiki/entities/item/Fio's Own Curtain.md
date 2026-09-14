@@ -1,7 +1,7 @@
 ---
 title: "Fio's Own Curtain"
 category: entities
-tags: ["shattered-sea", "item", "comedy", "intrigue", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:fios-own-curtain.md"
 created: 2026-09-13

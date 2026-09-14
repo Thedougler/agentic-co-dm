@@ -1,7 +1,7 @@
 ---
 title: "Long-Passage Biscuit"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "survival", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:long-passage-biscuit.md"
 created: 2026-09-13

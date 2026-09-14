@@ -1,7 +1,7 @@
 ---
 title: Aleksander Malone
 category: entities
-tags: [shattered-sea, npc, dravosi-crown]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:aleksander-malone-narration-appearance.md"
   - "Khlysty - the Flock.md"

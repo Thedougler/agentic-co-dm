@@ -1,5 +1,0 @@
-.block-language-leaflet .leaflet-div-icon {
-    --marker-size: 35px;
-    width: var(--marker-size) !important;
-    height: var(--marker-size) !important;
-}

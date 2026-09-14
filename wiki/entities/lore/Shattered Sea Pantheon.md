@@ -1,7 +1,7 @@
 ---
 title: "Shattered Sea Pantheon"
 category: entities
-tags: ["shattered-sea", "lore", "mystery", "faith"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:shattered-sea-pantheon.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: "Windrow"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "Disputes; courtships; and trade deals settled by competitive kite-flying"
 provenance:

@@ -1,7 +1,7 @@
 ---
 title: "Memorial Grove"
 category: entities
-tags: ["shattered-sea", "place", "aruhe", "grove", "death-bloom"]
+tags: [shattered-sea, aruhe, place]
 aliases: ["Memorial Grove", "The Grove", "Death Bloom"]
 sources: ["[[Aruhe - Hungry Isle]]", "Aruhe - Memorial Grove.md", "[\"[[Aruhe - Hungry Isle]]\"]"]
 summary: "Memorial Grove is the 150-foot clearing where Aruhe's appetite stops. One fruit tree stands over two unmarked graves, black flowers ring the too-green grass, and independent predators gather at the..."

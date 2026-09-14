@@ -1,7 +1,7 @@
 ---
 title: "The Tithe of the Bitch Queen"
 category: entities
-tags: ["shattered-sea", "lore", "horror", "faith"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:the-tithe-of-the-bitch-queen.md"
 created: 2026-09-13

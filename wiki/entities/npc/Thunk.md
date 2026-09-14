@@ -1,7 +1,7 @@
 ---
 title: Thunk
 category: entities
-tags: [shattered-sea, npc, calveno]
+tags: [shattered-sea, calveno, npc]
 sources:
   - "campaign-os:thunk.md"
   - "campaign-os:thunk-narration-appearance.md"

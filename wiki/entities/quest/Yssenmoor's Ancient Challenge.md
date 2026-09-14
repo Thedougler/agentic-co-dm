@@ -1,7 +1,7 @@
 ---
 title: "Yssenmoor's Ancient Challenge"
 category: entities
-tags: ["shattered-sea", "quest", "faith", "mystery"]
+tags: [shattered-sea, quest]
 sources:
   - "campaign-os:yssenmoors-ancient-challenge.md"
 created: 2026-09-13

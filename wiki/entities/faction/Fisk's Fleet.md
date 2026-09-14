@@ -1,7 +1,7 @@
 ---
 title: "Fisk's Fleet"
 category: entities
-tags: ["shattered-sea", "faction", "maritime", "heist"]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:fisks-fleet.md"
 created: 2026-09-13

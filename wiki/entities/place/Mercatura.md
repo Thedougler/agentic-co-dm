@@ -1,7 +1,7 @@
 ---
 title: Mercatura
 category: entities
-tags: [shattered-sea, place, city]
+tags: [shattered-sea, place]
 sources: ["Mercatura.md"]
 summary: Functioning city where Solange Barret's ritual ran beneath; Otar's defeat and the Mercatura bombs are a closed Season 1 thread.
 provenance:

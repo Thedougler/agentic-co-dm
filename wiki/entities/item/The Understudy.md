@@ -1,7 +1,7 @@
 ---
 title: "The Understudy"
 category: entities
-tags: ["shattered-sea", "item", "combat", "comedy", "rare"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:the-understudy.md"
 created: 2026-09-13

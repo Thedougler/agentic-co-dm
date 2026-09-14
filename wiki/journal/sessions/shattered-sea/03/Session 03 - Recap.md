@@ -1,7 +1,7 @@
 ---
 title: Session 03 - Recap
 category: journal
-tags: [shattered-sea, recap, session]
+tags: [shattered-sea, recap]
 sources: ["Session 03 - Recap.md"]
 summary: The crew killed the whip-shark, renamed the prize Uncertainty, and made landfall at Calveno with Nona's favor unpaid.
 provenance:

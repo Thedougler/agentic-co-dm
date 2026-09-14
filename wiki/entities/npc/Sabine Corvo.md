@@ -1,7 +1,7 @@
 ---
 title: "Sabine Corvo"
 category: entities
-tags: ["shattered-sea", "npc", "maritime"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:sabine-corvo.md"
 created: 2026-09-13

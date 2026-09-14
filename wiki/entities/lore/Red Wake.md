@@ -1,7 +1,7 @@
 ---
 title: Red Wake
 category: entities
-tags: [shattered-sea, lore, sea]
+tags: [shattered-sea, lore]
 sources:
   - "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md"
 summary: Moving maritime pressure marked by a red wake and expressed through the Dead Lady's collection route.

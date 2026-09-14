@@ -1,7 +1,7 @@
 ---
 title: Session 11 — What they ate
 category: journal
-tags: [session-prep, run-guide, shattered-sea, development]
+tags: [shattered-sea, session-prep]
 sources:
   - "journal/sessions/shattered-sea/11/Session-11-04-What-They-Ate.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: "DM Voice Notes"
 category: synthesis
-tags: ["shattered-sea", "npc"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:dm-voice-script.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: "Gullmoth Reach"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "Thousands of flame-drawn fey moths roost here. Sailors extinguish lanterns a mile out"
 provenance:

@@ -1,7 +1,7 @@
 ---
 title: "Rasalgethi"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "Astronomers chart stars from a patch of sky no storm has ever crossed"
 provenance:

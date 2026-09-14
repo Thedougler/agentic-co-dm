@@ -1,7 +1,7 @@
 ---
 title: "Nino"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, npc]
 sources: ["quest-aruhe-castaways.md"]
 summary: "Named companion in the Half the Fleet draft."
 provenance:

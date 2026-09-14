@@ -1,7 +1,7 @@
 ---
 title: "Ket Solane"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-south.md"]
 summary: "Looks abandoned; honeycombed with false-bottomed smugglers' caves the Chain Council hasn't finished mapping"
 provenance:

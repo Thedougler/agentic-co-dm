@@ -1,7 +1,7 @@
 ---
 title: "{{title}}"
 category: campaign
-tags: [quest]
+tags: [shattered-sea, quest]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD

@@ -1,7 +1,7 @@
 ---
 title: "Cecco Trivani"
 category: entities
-tags: ["shattered-sea", "npc", "comedy"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:cecco-trivani.md"
 created: 2026-09-13

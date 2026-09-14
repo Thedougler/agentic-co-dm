@@ -1,7 +1,7 @@
 ---
 title: "Oil of Still Water"
 category: entities
-tags: ["shattered-sea", "item", "mystery", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:oil-of-still-water.md"
 created: 2026-09-13

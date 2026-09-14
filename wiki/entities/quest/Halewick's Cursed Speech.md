@@ -1,7 +1,7 @@
 ---
 title: "Halewick's Cursed Speech"
 category: entities
-tags: ["shattered-sea", "quest", "mystery", "fairy-tale"]
+tags: [shattered-sea, quest]
 sources:
   - "campaign-os:halewicks-cursed-speech.md"
 created: 2026-09-13

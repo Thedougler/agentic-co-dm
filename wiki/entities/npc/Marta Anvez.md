@@ -1,7 +1,7 @@
 ---
 title: "Marta Anvez"
 category: entities
-tags: ["shattered-sea", "npc", "survival", "maritime"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:marta-anvez.md"
 created: 2026-09-13

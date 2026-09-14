@@ -1,7 +1,7 @@
 ---
 title: "Whit's Larder"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "Impossible cuisine made from ingredients that shouldn't be local at all"
 provenance:

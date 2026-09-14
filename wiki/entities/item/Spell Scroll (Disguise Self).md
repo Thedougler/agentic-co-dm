@@ -1,7 +1,7 @@
 ---
 title: "Spell Scroll (Disguise Self)"
 category: entities
-tags: ["shattered-sea", "item", "common"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:spell-scroll-disguise-self.md"
 created: 2026-09-13

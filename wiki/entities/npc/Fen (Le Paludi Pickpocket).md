@@ -1,7 +1,7 @@
 ---
 title: "Fen (Le Paludi Pickpocket)"
 category: entities
-tags: ["shattered-sea", "npc", "intrigue"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:fen-pickpocket.md"
 created: 2026-09-13

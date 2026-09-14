@@ -1,7 +1,7 @@
 ---
 title: "House Renzetti"
 category: entities
-tags: ["shattered-sea", "faction", "maritime", "intrigue", "politics"]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:house-renzetti.md"
 created: 2026-09-13

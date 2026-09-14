@@ -1,7 +1,7 @@
 ---
 title: Hinewai
 category: entities
-tags: [shattered-sea, npc, aruhe, blight]
+tags: [shattered-sea, aruhe, npc]
 sources:
   - "wiki/_archive/Hinewai.md"
   - "house (Monster-Brewer; legacy Fantasy Statblock import; Hinewai/Death Bloom ingest 2026-09-05)"

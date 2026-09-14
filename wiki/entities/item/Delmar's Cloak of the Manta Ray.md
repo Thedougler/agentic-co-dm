@@ -1,7 +1,7 @@
 ---
 title: "Delmar's Cloak of the Manta Ray"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:delmars-cloak-of-the-manta-ray.md"
 created: 2026-09-13

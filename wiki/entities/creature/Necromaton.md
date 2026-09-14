@@ -1,7 +1,7 @@
 ---
 title: "Necromaton"
 category: entities
-tags: ["shattered-sea", "creature", "undead"]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:necromaton.md"
 created: 2026-09-13

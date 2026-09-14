@@ -1,7 +1,7 @@
 ---
 title: "Stillmere"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, place]
 sources: ["isle-of-the-undying.md"]
 summary: "Proving ground on Otel Karn where death has stopped and wounds still hurt."
 provenance:

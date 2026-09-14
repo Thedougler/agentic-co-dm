@@ -1,7 +1,7 @@
 ---
 title: "Il Palio delle Voci Contese"
 category: entities
-tags: ["shattered-sea", "lore", "intrigue"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:il-palio-delle-voci.md"
   - "campaign-os:il-palio-delle-voci-mechanics.md"

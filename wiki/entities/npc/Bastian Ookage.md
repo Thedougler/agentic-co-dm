@@ -1,7 +1,7 @@
 ---
 title: "Bastian Ookage"
 category: entities
-tags: ["shattered-sea", "npc", "maritime"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:bastian-ookage-voice-script.md"
   - "campaign-os:bastian-ookage.md"

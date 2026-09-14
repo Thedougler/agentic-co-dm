@@ -1,7 +1,7 @@
 ---
 title: "Essa Two-Tooth"
 category: entities
-tags: ["shattered-sea", "npc", "intrigue"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:essa-two-tooth.md"
 created: 2026-09-13

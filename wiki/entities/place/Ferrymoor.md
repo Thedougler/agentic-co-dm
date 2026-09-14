@@ -1,7 +1,7 @@
 ---
 title: "Ferrymoor"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "Departure point for a schedule-less; fog-bound ferry captained by someone who doesn't age"
 provenance:

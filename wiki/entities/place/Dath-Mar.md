@@ -1,7 +1,7 @@
 ---
 title: "Dath-Mar"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, place]
 sources: ["sunken-crown.md"]
 summary: "Refuge island of the Sunken Crown used for emergencies and solitary retreat."
 provenance:

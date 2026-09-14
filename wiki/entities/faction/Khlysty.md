@@ -1,7 +1,7 @@
 ---
 title: "Khlysty"
 category: entities
-tags: ["shattered-sea", "faction", "mystery", "undead"]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:khlysty.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: "Verdant Teeth"
 category: entities
-tags: ["shattered-sea", "region", "grung", "verdant-teeth"]
+tags: [shattered-sea, region]
 sources: ["Verdant Teeth.md", "wiki/_raw/Grung clans.md"]
 summary: "Five country-scale rainforest islands held by Grung clans: lush, wet, layered, and theocratic. Sanctioned beaches are interfaces, not invitations; the interior is closed."
 provenance:

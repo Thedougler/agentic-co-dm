@@ -1,7 +1,7 @@
 ---
 title: "Rowan's Hush"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "A silent monastic order that communicates entirely by hand-sign"
 provenance:

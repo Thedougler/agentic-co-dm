@@ -1,7 +1,7 @@
 ---
 title: "Aruhe - Thornback"
 category: entities
-tags: [shattered-sea, creature, aruhe]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "/workspace/midchain-ingest/group-a/monsters/Thornback.md"
 summary: "CR 7 thorned bruiser from living-stock ecology."

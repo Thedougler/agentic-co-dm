@@ -1,7 +1,7 @@
 ---
 title: "The Petrified Court"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "Eerily lifelike statues arranged like a royal court mid-conversation"
 provenance:

@@ -1,7 +1,7 @@
 ---
 title: "The Deaf Ear"
 category: entities
-tags: ["shattered-sea", "item", "intrigue", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:the-deaf-ear.md"
 created: 2026-09-13

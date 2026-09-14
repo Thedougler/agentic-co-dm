@@ -1,7 +1,7 @@
 ---
 title: "Vaka"
 category: entities
-tags: ["shattered-sea", "faction", "politics"]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:vaka.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: "Blade of the Lost Grip"
 category: entities
-tags: ["shattered-sea", "item", "comedy", "combat", "rare"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:blade-of-the-lost-grip.md"
 created: 2026-09-13

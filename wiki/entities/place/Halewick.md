@@ -1,7 +1,7 @@
 ---
 title: "Halewick"
 category: entities
-tags: ["shattered-sea", "place", "halewick", "truespeak", "pearl-signal"]
+tags: [shattered-sea, place]
 sources: ["Halewick.md"]
 summary: "Southern Midchain fishing island where a planar alignment landed on the line between Common and Truespeak about three weeks ago; feels ordinary, wrong, and locally unrecognized."
 provenance:

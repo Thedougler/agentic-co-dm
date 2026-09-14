@@ -1,7 +1,7 @@
 ---
 title: "Corvo's Catch-Pole"
 category: entities
-tags: ["shattered-sea", "item", "exploration", "maritime", "common"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:corvos-catch-pole.md"
 created: 2026-09-13

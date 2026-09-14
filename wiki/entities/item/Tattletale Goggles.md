@@ -1,7 +1,7 @@
 ---
 title: "Tattletale Goggles"
 category: entities
-tags: ["shattered-sea", "item", "combat", "comedy", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "wiki/_archive/uncommon/tattletale-goggles.md"
   - "campaign-os:tattletale-goggles.md"

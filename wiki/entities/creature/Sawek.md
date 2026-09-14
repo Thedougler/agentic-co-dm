@@ -1,7 +1,7 @@
 ---
 title: "Sawek"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, creature]
 sources: ["central-strait-crossing.md"]
 summary: "Rumored apex predator of the Central Strait's dark southern Midchain approaches."
 provenance:

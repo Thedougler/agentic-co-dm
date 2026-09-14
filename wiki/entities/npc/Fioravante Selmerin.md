@@ -1,7 +1,7 @@
 ---
 title: "Fioravante Selmerin"
 category: entities
-tags: ["shattered-sea", "npc", "comedy"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:fioravante-selmerin.md"
 created: 2026-09-13

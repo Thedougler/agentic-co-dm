@@ -661,3 +661,5 @@ title: Wiki Log
 - [2026-09-14T00:00:00Z] INGEST source="wiki/_raw/spiguar-reference.png" pages_updated=1 pages_created=0 mode=append status=complete dest="entities/creature/Aruhe - Spiguar.md" related="staging:missed; legacy:read shattered-sea/monsters/Aruhe-Spiguar.md,shattered-sea/locations/Aruhe-Grasslands.md"
 - [2026-09-14T00:00:00Z] INGEST source="wiki/_raw/auralis-reference.png" pages_updated=1 pages_created=0 mode=append status=complete dest="entities/lore/Auralis.md" related="staging:missed; legacy:read shattered-sea/npcs/Auralis.md,shattered-sea/factions/Antheri.md,shattered-sea/locations/Deep-Works.md" recency_conflict="older pale-lights-only contact description retained as unresolved"
 - [2026-09-14T20:53:11Z] INGEST source="wiki/_raw/auralis-reference.png, wiki/_raw/spiguar-reference.png" pages_updated=2 pages_created=0 mode=append note="flat attachments/; emptied _raw/"
+- [2026-09-14T20:46:15Z] TAG_NORMALIZE tags_renamed=882 pages_modified=638 new_tags_added=85 policy=canonical_campaign_and_type_tags
+- [2026-09-14T21:00:00Z] GRAPH_COLORIZE mode=by-tag groups=10 backup=graph.json.backup-20260914-2100

@@ -1,7 +1,7 @@
 ---
 title: "Sunkline Company"
 category: entities
-tags: ["shattered-sea", "faction", "maritime", "intrigue"]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:sunkline-company.md"
 created: 2026-09-13

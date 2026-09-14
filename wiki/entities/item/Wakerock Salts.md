@@ -1,7 +1,7 @@
 ---
 title: "Wakerock Salts"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "wiki/_archive/uncommon/wakerock-salts.md"
   - "campaign-os:wakerock-salts.md"

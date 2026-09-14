@@ -1,7 +1,7 @@
 ---
 title: Aruhe - Snakewood
 category: entities
-tags: [shattered-sea, item, aruhe, hazard, flora]
+tags: [shattered-sea, aruhe, item]
 sources:
   - "house (user-supplied hazard capture; 2026-09-08)"
   - "/workspace/midchain-ingest/group-a/monsters/Snakewood.md"

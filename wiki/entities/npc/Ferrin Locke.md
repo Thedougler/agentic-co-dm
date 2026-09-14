@@ -1,7 +1,7 @@
 ---
 title: "Ferrin Locke"
 category: entities
-tags: ["shattered-sea", "npc", "intrigue"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:ferrin-locke.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: Aruhe - Spiritpollen
 category: entities
-tags: [shattered-sea, item, aruhe, hazard, flora]
+tags: [shattered-sea, aruhe, item]
 sources:
   - "house (user-supplied hazard capture)"
 summary: A pollen stand that causes breathing creatures to hallucinate hostile spirits and attack the threats they believe surround them.

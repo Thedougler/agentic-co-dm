@@ -1,7 +1,7 @@
 ---
 title: "Purple-Caste Enforcer"
 category: entities
-tags: ["shattered-sea", "creature", "combat"]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:purple-caste-enforcer.md"
 created: 2026-09-13

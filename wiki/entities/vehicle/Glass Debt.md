@@ -1,7 +1,7 @@
 ---
 title: "Glass Debt"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, vehicle]
 sources: ["central-strait-crossing.md"]
 summary: "Named hull whose sighting near the Strait pulls Crown captains off their usual patrol lines."
 provenance:

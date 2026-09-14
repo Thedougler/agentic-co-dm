@@ -1,7 +1,7 @@
 ---
 title: "Palutai"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-south.md"]
 summary: "Fishing families in perpetual feud. Newcomers get conscripted to a side within the hour"
 provenance:

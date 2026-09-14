@@ -1,7 +1,7 @@
 ---
 title: "Coeur Brisé"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "Site of a centuries-old broken marriage pact between two feuding families; still technically unresolved"
 provenance:

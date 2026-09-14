@@ -1,7 +1,7 @@
 ---
 title: "Corvenna"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "Neutral dueling grounds where Midchain disputes get settled by champion combat instead of war"
 provenance:

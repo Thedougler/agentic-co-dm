@@ -1,7 +1,7 @@
 ---
 title: "South Harbour"
 category: entities
-tags: [shattered-sea, place, tidefall]
+tags: [shattered-sea, place]
 sources: ["calders-tooth.md"]
 summary: "East harbour on Calder's Tooth for repairs and fishing, lightly policed."
 provenance:

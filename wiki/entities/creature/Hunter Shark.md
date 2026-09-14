@@ -1,7 +1,7 @@
 ---
 title: "Hunter Shark"
 category: entities
-tags: ["shattered-sea", "creature", "maritime", "combat"]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:hunter-shark.md"
 created: 2026-09-13

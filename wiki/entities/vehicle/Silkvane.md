@@ -1,7 +1,7 @@
 ---
 title: "Silkvane"
 category: entities
-tags: ["shattered-sea", "vehicle", "tessarine"]
+tags: [shattered-sea, vehicle]
 sources:
   - "inbox/archive/FILED-2026-09-05-tessarine-concordat.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-tessarine-concordat.md"

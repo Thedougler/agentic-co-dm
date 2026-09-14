@@ -1,7 +1,7 @@
 ---
 title: "Meth-Var"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, place]
 sources: ["sunken-crown.md"]
 summary: "Watch island of the Sunken Crown facing open Maw waters."
 provenance:

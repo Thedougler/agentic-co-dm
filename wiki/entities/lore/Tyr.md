@@ -1,7 +1,7 @@
 ---
 title: Tyr
 category: entities
-tags: [shattered-sea, lore, deity]
+tags: [shattered-sea, lore]
 sources: ["Blackrule.md"]
 summary: Deity whose scales are cut into the altar stone at Blackrule.
 provenance:

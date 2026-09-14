@@ -1,7 +1,7 @@
 ---
 title: "Corallith"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "A single living coral colossus that relocates itself once a generation"
 provenance:

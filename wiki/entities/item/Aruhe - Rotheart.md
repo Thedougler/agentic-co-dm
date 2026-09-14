@@ -1,7 +1,7 @@
 ---
 title: "Aruhe - Rotheart"
 category: entities
-tags: [shattered-sea, item, aruhe, consumable]
+tags: [shattered-sea, aruhe, item]
 sources:
   - "/workspace/midchain-ingest/group-a/items/Aruhe - Rotheart.md"
 summary: "Very rare black-hearted Rot fruit that clears exhaustion, poison, and disease, then maximizes Hit Dice healing for a day."

@@ -1,7 +1,7 @@
 ---
 title: "The Encore Bell"
 category: entities
-tags: ["shattered-sea", "item", "comedy", "intrigue", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:the-encore-bell.md"
 created: 2026-09-13

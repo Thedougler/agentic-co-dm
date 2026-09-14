@@ -1,7 +1,7 @@
 ---
 title: Locations
 category: entities
-tags: [shattered-sea, index, location]
+tags: [shattered-sea, lore]
 sources: ["00 Locations.md"]
 summary: Gazetteer hub for Shattered Sea regions, Crown water, Midchain, Aruhe, and the Verdant Teeth.
 provenance:

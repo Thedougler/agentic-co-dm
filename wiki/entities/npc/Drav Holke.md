@@ -1,7 +1,7 @@
 ---
 title: "Drav Holke"
 category: entities
-tags: ["shattered-sea", "npc", "maritime"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:drav-holke.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: Otel Karn
 category: entities
-tags: [shattered-sea, place, otel-karn]
+tags: [shattered-sea, place]
 sources:
   - "isle-of-the-undying.md"
   - "Khlysty - the Flock.md"

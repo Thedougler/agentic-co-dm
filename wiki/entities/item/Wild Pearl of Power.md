@@ -1,7 +1,7 @@
 ---
 title: "Wild Pearl of Power"
 category: entities
-tags: ["shattered-sea", "item", "comedy", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "wiki/_archive/uncommon/wild-pearl-of-power.md"
   - "campaign-os:wild-pearl-of-power.md"

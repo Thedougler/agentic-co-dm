@@ -1,7 +1,7 @@
 ---
 title: "Maren"
 category: entities
-tags: ["shattered-sea", "npc", "maritime"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:maren.md"
 created: 2026-09-13

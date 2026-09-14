@@ -1,7 +1,7 @@
 ---
 title: "Shattered Sea - Tone Guide"
 category: entities
-tags: ["shattered-sea", "lore", "mystery"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:shattered-sea-tone-guide.md"
 created: 2026-09-13

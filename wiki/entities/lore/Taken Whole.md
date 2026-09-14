@@ -1,7 +1,7 @@
 ---
 title: "Taken Whole"
 category: entities
-tags: ["shattered-sea", "lore", "maritime", "horror"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:taken-whole.md"
 created: 2026-09-13

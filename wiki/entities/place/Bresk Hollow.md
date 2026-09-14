@@ -1,7 +1,7 @@
 ---
 title: "Bresk Hollow"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-south.md"]
 summary: "An interior sinkhole ecosystem sealed off from the surface world for centuries; growing something nobody up top has seen"
 provenance:

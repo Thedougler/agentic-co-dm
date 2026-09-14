@@ -1,7 +1,7 @@
 ---
 title: "Sparhold Isle"
 category: entities
-tags: ["shattered-sea", "place", "midchain", "sparhold"]
+tags: [shattered-sea, place]
 sources: ["Sparhold Isle.md"]
 summary: "A half-mile cut-over islet at the southern lip of the Northern Midchain strip; feels timber-poor, fortified, and close to the Teeth."
 provenance:

@@ -1,11 +1,7 @@
 ---
 title: Torn Crossing
 category: entities
-tags:
-  - shattered-sea
-  - place
-  - aruhe
-  - grasslands
+tags: [shattered-sea, aruhe, place]
 sources:
   - "Aruhe - Grasslands Torn Crossing.md"
 created: 2026-09-12

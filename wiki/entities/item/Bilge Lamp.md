@@ -1,7 +1,7 @@
 ---
 title: "Bilge Lamp"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "exploration"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:bilge-lamp.md"
 created: 2026-09-13

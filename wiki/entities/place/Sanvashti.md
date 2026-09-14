@@ -1,7 +1,7 @@
 ---
 title: "Sanvashti"
 category: entities
-tags: ["shattered-sea", "place", "midchain", "grung", "truce"]
+tags: [shattered-sea, place]
 sources: ["Sanvashti.md"]
 summary: "Sanvashti is a mossed terrace in the Southern Midchain where rival Grung clans meet under an old truce. It feels less like neutral ground than a promise everyone is afraid to break."
 provenance:

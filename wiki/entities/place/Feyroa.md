@@ -1,7 +1,7 @@
 ---
 title: "Feyroa"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-south.md"]
 summary: "A one-still coconut-wine distillery that trades only in secrets; never money"
 provenance:

@@ -1,7 +1,7 @@
 ---
 title: "Harwick"
 category: entities
-tags: ["shattered-sea", "region", "crown-islands", "naval", "dravosi-crown"]
+tags: [shattered-sea, region]
 sources: ["Harwick.md", "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/HCS Sovereign.md"]
 summary: "The army island of the [[Dravosi Crown]], named from the old *h\u00e6r-w\u012bc*, where the Naval Yard, Admiralty, Harwick Town, and the Bight make a fortified machine of deep water."
 provenance:

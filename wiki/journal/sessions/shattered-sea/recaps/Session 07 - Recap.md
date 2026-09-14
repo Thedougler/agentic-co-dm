@@ -1,7 +1,7 @@
 ---
 title: Session 07 - Recap
 category: journal
-tags: [shattered-sea, recap, session]
+tags: [shattered-sea, recap]
 sources: ["Session 07 - Recap.md"]
 summary: Otar the Foul died in the Mercatura crater; Fieschi signed the crew as Calveno's Defenders; hundreds are missing.
 provenance:

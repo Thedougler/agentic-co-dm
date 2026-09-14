@@ -1,7 +1,7 @@
 ---
 title: "Tam Slim-Nail"
 category: entities
-tags: [npc, shattered-sea, comedy]
+tags: [shattered-sea, npc]
 sources:
   - "wiki/_archive/tam-slim-nail.md"
   - "campaign-os:tam-slim-nail.md"

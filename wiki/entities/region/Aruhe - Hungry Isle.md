@@ -1,7 +1,7 @@
 ---
 title: Aruhe
 category: entities
-tags: [shattered-sea, region, aruhe]
+tags: [shattered-sea, aruhe, region]
 aliases: [Hungry Isle, Aruhe Hungry Isle]
 sources:
   - "campaign-os:hungry-isle-legend.md"

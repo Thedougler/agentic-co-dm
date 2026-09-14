@@ -1,7 +1,7 @@
 ---
 title: "Pit-Broke Blink Dog"
 category: entities
-tags: ["shattered-sea", "item", "exploration", "maritime", "rare"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:pit-broke-blink-dog.md"
 created: 2026-09-13

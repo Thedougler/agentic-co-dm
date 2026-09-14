@@ -1,7 +1,7 @@
 ---
 title: "Doldrums"
 category: entities
-tags: ["shattered-sea", "region", "weather"]
+tags: [shattered-sea, region]
 sources: ["Doldrums.md"]
 summary: "Seasonal calm channels south of the Midchain, sliding 50\u2013100 miles with the season; feels silent, exposed, and watched."
 provenance:

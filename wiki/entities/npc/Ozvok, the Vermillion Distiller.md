@@ -1,7 +1,7 @@
 ---
 title: "Ozvok, the Vermillion Distiller"
 category: entities
-tags: ["shattered-sea", "npc", "combat"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:ozvok-the-vermillion-distiller.md"
 created: 2026-09-13

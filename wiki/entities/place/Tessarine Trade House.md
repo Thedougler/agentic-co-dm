@@ -1,7 +1,7 @@
 ---
 title: "Tessarine Trade House"
 category: entities
-tags: ["shattered-sea", "place", "tessarine"]
+tags: [shattered-sea, place]
 sources:
   - "inbox/archive/FILED-2026-09-05-tessarine-concordat.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-tessarine-concordat.md"

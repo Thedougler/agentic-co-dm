@@ -1,7 +1,7 @@
 ---
 title: "Spell Scroll (Counterspell)"
 category: entities
-tags: ["shattered-sea", "item", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:spell-scroll-counterspell.md"
 created: 2026-09-13

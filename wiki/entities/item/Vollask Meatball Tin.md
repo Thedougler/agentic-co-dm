@@ -1,7 +1,7 @@
 ---
 title: "Vollask Meatball Tin"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "survival"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:vollask-meatball-tin.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: "Outer Reach"
 category: entities
-tags: ["shattered-sea", "region", "outer-reach"]
+tags: [shattered-sea, region]
 sources: ["outer-reach.md", "Outer Reach.md"]
 summary: "Water past the [[Drowned Maw]], with no resupply or pilot-trusted landmark; feels directionless, reversing, and unwilling to finish a story."
 provenance:

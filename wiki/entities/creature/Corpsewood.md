@@ -1,7 +1,7 @@
 ---
 title: "Corpsewood"
 category: entities
-tags: [shattered-sea, creature, aruhe]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "campaign-os:corpsewood.md"
   - "/workspace/midchain-ingest/group-a/monsters/Corpsewood.md"

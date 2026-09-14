@@ -1,7 +1,7 @@
 ---
 title: "Island Mimic"
 category: entities
-tags: ["shattered-sea", "creature", "maritime", "horror"]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:island-mimic.md"
 created: 2026-09-13

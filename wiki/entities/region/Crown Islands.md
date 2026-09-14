@@ -1,7 +1,7 @@
 ---
 title: "Crown Islands"
 category: entities
-tags: ["shattered-sea", "region", "crown-islands", "dravosi-crown"]
+tags: [shattered-sea, region]
 sources: ["Crown Islands.md", "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/HCS Sovereign.md"]
 summary: "The Crown Islands are a fortified western island chain: [[Calven]], [[Harwick]], [[Aldenmere]], and [[Stenmark]], with [[Calder's Tooth and Port Tidefall]] as a gatepost and [[High Eyrie]] beyond t..."
 provenance:

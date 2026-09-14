@@ -1,7 +1,7 @@
 ---
 title: "Cave Bats"
 category: entities
-tags: [shattered-sea, creature, aruhe]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "/workspace/midchain-ingest/group-a/monsters/Cave Bats.md"
 summary: "Three- to four-foot-winged cave bats that leave skylights at dusk; guano feeds the caves and mass flight warns of Blackrail country."

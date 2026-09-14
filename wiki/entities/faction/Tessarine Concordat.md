@@ -1,7 +1,7 @@
 ---
 title: Tessarine Concordat
 category: entities
-tags: [shattered-sea, faction, tessarine, mercantile, calven, concordat]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:tessarine-concordat.md"
   - "inbox/archive/FILED-2026-09-05-tessarine-concordat.md"

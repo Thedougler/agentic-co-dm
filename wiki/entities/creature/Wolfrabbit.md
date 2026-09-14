@@ -1,7 +1,7 @@
 ---
 title: Wolfrabbit
 category: entities
-tags: [shattered-sea, creature, aruhe, skirmisher]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "campaign-os:wolfrabbits.md"
   - "house (wiki creature.wolfrabbit; living-stock 2026-09-05; 2024 CR 4 conversion)"

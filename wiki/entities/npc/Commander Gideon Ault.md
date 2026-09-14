@@ -1,7 +1,7 @@
 ---
 title: "Commander Gideon Ault"
 category: entities
-tags: ["shattered-sea", "npc", "war"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:commander-gideon-ault.md"
 created: 2026-09-13

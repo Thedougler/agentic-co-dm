@@ -1,7 +1,7 @@
 ---
 title: "The Weeping Stair"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "A submerged staircase rumored to lead to a drowned city. Nobody has confirmed reaching the bottom"
 provenance:

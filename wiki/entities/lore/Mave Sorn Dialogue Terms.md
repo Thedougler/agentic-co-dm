@@ -1,7 +1,7 @@
 ---
 title: "Mave Sorn Dialogue Terms"
 category: entities
-tags: ["shattered-sea", "lore", "maritime"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:mave-sorn-dialogue-terms.md"
 created: 2026-09-13

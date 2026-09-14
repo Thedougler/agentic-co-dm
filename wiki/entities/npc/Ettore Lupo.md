@@ -1,7 +1,7 @@
 ---
 title: "Ettore Lupo"
 category: entities
-tags: ["shattered-sea", "npc", "intrigue"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:ettore-lupo.md"
 created: 2026-09-13

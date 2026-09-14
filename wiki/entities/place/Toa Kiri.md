@@ -1,7 +1,7 @@
 ---
 title: "Toa Kiri"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "Pearl-diving island where the workers labor in total silence; bound to a superstition about the sea and speech"
 provenance:

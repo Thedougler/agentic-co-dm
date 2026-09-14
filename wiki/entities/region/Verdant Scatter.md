@@ -1,7 +1,7 @@
 ---
 title: "Verdant Scatter"
 category: entities
-tags: ["shattered-sea", "region", "scatter"]
+tags: [shattered-sea, region]
 sources: ["verdant-scatter.md", "Verdant Scatter.md"]
 summary: "The inhabited chain between the Galewall/Ashwalls and the Tail/Maw, with Crown water north and Midchain south; feels crowded, green, and only partly charted."
 provenance:

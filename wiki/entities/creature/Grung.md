@@ -1,7 +1,7 @@
 ---
 title: "Grung"
 category: entities
-tags: ["shattered-sea", "creature", "combat"]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:grung.md"
   - "campaign-os:grung-npc.md"

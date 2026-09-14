@@ -1,7 +1,7 @@
 ---
 title: "Bela Silt-Paw"
 category: entities
-tags: ["shattered-sea", "npc", "exploration"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:bela-silt-paw.md"
 created: 2026-09-13

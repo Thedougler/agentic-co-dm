@@ -1,7 +1,7 @@
 ---
 title: "Canal Ratter"
 category: entities
-tags: ["shattered-sea", "item", "exploration", "maritime", "common"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:canal-ratter.md"
 created: 2026-09-13

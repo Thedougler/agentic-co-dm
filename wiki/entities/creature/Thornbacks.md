@@ -1,7 +1,7 @@
 ---
 title: "Thornbacks"
 category: entities
-tags: ["shattered-sea", "creature", "combat", "horror"]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:thornbacks.md"
 created: 2026-09-13

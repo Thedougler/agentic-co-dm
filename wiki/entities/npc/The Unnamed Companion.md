@@ -1,7 +1,7 @@
 ---
 title: The Unnamed Companion
 category: entities
-tags: [shattered-sea, npc, aruhe]
+tags: [shattered-sea, aruhe, npc]
 sources:
   - "house (Monster-Brewer; legacy Fantasy Statblock import; Hinewai/Death Bloom ingest 2026-09-05)"
   - "legacy/campaign-os-v02/vault/stories/arc-blight-of-aruhe.md"

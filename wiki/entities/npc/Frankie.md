@@ -1,7 +1,7 @@
 ---
 title: "Frankie"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, npc]
 sources: ["isle-of-cursed-speech.md"]
 summary: "Rival child on Halewick whose cursed-speech duels with Toby scar the island."
 provenance:

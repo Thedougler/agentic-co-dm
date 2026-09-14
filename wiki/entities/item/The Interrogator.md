@@ -1,7 +1,7 @@
 ---
 title: "The Interrogator"
 category: entities
-tags: ["shattered-sea", "item", "intrigue", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:the-interrogator.md"
 created: 2026-09-13

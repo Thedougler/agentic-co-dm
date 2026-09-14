@@ -1,7 +1,7 @@
 ---
 title: Pursue the Grung raiding fleet
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, quest]
 sources:
   - "wiki/_raw/Grung clans.md"
 summary: Pursuit thread following the Grung fleet through reefs, supply pressure, and the captive route toward Karath.

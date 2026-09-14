@@ -1,7 +1,7 @@
 ---
 title: Black Lotus
 category: entities
-tags: [hazard, aruhe, flora]
+tags: [shattered-sea, aruhe, item]
 sources: ["Aruhe - Black Lotus.md"]
 created: 2026-09-12
 updated: 2026-09-12

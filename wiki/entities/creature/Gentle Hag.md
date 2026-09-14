@@ -1,7 +1,7 @@
 ---
 title: "Gentle Hag"
 category: entities
-tags: ["shattered-sea", "creature", "horror"]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:gentle-hag.md"
 created: 2026-09-13

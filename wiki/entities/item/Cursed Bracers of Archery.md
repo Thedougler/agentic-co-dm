@@ -1,7 +1,7 @@
 ---
 title: "Cursed Bracers of Archery"
 category: entities
-tags: ["shattered-sea", "item", "combat", "comedy", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:cursed-bracers-of-archery.md"
 created: 2026-09-13

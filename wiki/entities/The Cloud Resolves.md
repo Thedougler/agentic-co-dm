@@ -1,7 +1,7 @@
 ---
 title: "The Cloud Resolves"
 category: entities
-tags: ["shattered-sea", "session-prep", "horror", "maritime"]
+tags: [shattered-sea, session-prep]
 sources:
   - "campaign-os:murrats-shroud-the-cloud-resolves.md"
 created: 2026-09-13

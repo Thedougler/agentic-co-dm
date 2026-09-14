@@ -1,7 +1,7 @@
 ---
 title: "Murrat"
 category: entities
-tags: ["shattered-sea", "place", "midchain", "moucheron"]
+tags: [shattered-sea, place]
 sources: ["Murrat.md"]
 summary: "A mile-and-a-half limestone reef that looks empty until canopy closes twenty feet inland; feels hunted before the first rope bridge."
 provenance:

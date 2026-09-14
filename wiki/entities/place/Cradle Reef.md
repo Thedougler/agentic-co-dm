@@ -1,7 +1,7 @@
 ---
 title: "Cradle Reef"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "A sea dragon nursery reef. The mothers hide themselves"
 provenance:

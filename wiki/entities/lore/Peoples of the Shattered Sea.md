@@ -1,7 +1,7 @@
 ---
 title: "Peoples of the Shattered Sea"
 category: entities
-tags: ["shattered-sea", "lore", "maritime"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:peoples-of-the-shattered-sea.md"
 created: 2026-09-13

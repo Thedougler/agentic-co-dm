@@ -1,7 +1,7 @@
 ---
 title: "The Knife's Wake"
 category: entities
-tags: ["shattered-sea", "vehicle", "maritime", "heist"]
+tags: [shattered-sea, vehicle]
 sources:
   - "campaign-os:knifes-wake.md"
 created: 2026-09-13

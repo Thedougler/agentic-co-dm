@@ -1,7 +1,7 @@
 ---
 title: "Spell Scroll (Freedom of Movement)"
 category: entities
-tags: ["shattered-sea", "item", "rare"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:spell-scroll-freedom-of-movement.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: "Cape Solitude"
 category: entities
-tags: [shattered-sea, place, tidefall]
+tags: [shattered-sea, place]
 sources: ["calders-tooth.md"]
 summary: "Wind-battered northern tip of Calder's Tooth with a ruined lighthouse whose light is dead."
 provenance:

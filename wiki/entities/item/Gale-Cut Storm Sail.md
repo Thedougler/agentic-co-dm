@@ -1,7 +1,7 @@
 ---
 title: "Gale-Cut Storm Sail"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "intrigue", "rare"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:gale-cut-storm-sail.md"
 created: 2026-09-13

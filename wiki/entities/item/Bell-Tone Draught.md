@@ -1,7 +1,7 @@
 ---
 title: "Bell-Tone Draught"
 category: entities
-tags: ["shattered-sea", "item", "combat", "common"]
+tags: [shattered-sea, item]
 sources:
   - "wiki/_archive/common/bell-tone-draught.md"
   - "campaign-os:bell-tone-draught.md"

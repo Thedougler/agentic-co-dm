@@ -1,7 +1,7 @@
 ---
 title: "Iron Prayer Tablet"
 category: entities
-tags: ["shattered-sea", "item", "salvage", "faith"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:iron-prayer-tablet.md"
 created: 2026-09-13

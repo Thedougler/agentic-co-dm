@@ -1,7 +1,7 @@
 ---
 title: "Uncertainty - Deck Layouts"
 category: entities
-tags: ["shattered-sea", "vehicle", "maritime", "combat"]
+tags: [shattered-sea, vehicle]
 sources:
   - "campaign-os:uncertainty-layout.md"
 created: 2026-09-13

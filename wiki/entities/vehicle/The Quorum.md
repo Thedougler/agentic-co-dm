@@ -1,7 +1,7 @@
 ---
 title: "The Quorum"
 category: entities
-tags: ["shattered-sea", "vehicle", "maritime", "politics"]
+tags: [shattered-sea, vehicle]
 sources:
   - "campaign-os:the-quorum.md"
 created: 2026-09-13

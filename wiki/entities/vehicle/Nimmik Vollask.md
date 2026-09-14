@@ -1,7 +1,7 @@
 ---
 title: "Nimmik Vollask"
 category: entities
-tags: [shattered-sea, vehicle, maritime]
+tags: [shattered-sea, vehicle]
 sources:
   - "campaign-os:nimmik-vollask.md"
   - "/workspace/midchain-ingest/group-a/vehicles/Nimmik Vollask.md"

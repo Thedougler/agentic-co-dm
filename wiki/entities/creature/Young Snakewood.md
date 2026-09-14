@@ -1,7 +1,7 @@
 ---
 title: "Young Snakewood"
 category: entities
-tags: [shattered-sea, creature, aruhe]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "/workspace/midchain-ingest/group-a/monsters/Young Snakewood.md"
 summary: "CR 4 terrace clonal vine ambusher; one short-range bundle grab into the low canopy, distinct from Vine Lash and adult Snakewood."

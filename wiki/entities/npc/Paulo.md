@@ -1,7 +1,7 @@
 ---
 title: "Paulo"
 category: entities
-tags: [npc, shattered-sea, comedy, maritime]
+tags: [shattered-sea, npc]
 sources:
   - "wiki/_archive/paulo.md"
   - "campaign-os:paulo.md"

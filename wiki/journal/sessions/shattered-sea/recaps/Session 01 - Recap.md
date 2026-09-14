@@ -1,7 +1,7 @@
 ---
 title: Session 01 - Recap
 category: journal
-tags: [shattered-sea, recap, session]
+tags: [shattered-sea, recap]
 sources: ["Session 01 - Recap.md"]
 summary: The crew chose the Saltwright hold, took Geoffrey Draves, and left Barnaby Rook on the Surety with a spent flintlock.
 provenance:

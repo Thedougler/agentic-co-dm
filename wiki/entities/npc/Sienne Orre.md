@@ -1,7 +1,7 @@
 ---
 title: "Sienne Orre"
 category: entities
-tags: ["shattered-sea", "npc", "maritime"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:sienne-orre.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: The Gold-Caste Serene
 category: entities
-tags: [shattered-sea, creature, grung]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:gold-caste-serene.md"
   - "wiki/_raw/Grung clans.md"

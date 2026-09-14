@@ -1,7 +1,7 @@
 ---
 title: "Vantry's Choice"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "Identical harbors side by side; one universally and inexplicably avoided"
 provenance:

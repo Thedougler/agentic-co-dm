@@ -1,7 +1,7 @@
 ---
 title: "The Full House"
 category: entities
-tags: ["shattered-sea", "item", "combat", "comedy", "rare"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:the-full-house.md"
 created: 2026-09-13

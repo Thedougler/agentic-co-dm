@@ -1,7 +1,7 @@
 ---
 title: "{{title}}"
 category: journal
-tags: [recap, session]
+tags: [shattered-sea, recap]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD

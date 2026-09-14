@@ -1,7 +1,7 @@
 ---
 title: "Spell Scroll (Water Breathing)"
 category: entities
-tags: ["shattered-sea", "item", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:spell-scroll-water-breathing.md"
 created: 2026-09-13

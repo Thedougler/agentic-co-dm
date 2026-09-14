@@ -1,7 +1,7 @@
 ---
 title: "Penance Bar's Fear Siege"
 category: entities
-tags: ["shattered-sea", "quest", "horror", "faith"]
+tags: [shattered-sea, quest]
 sources:
   - "campaign-os:penance-bars-fear-siege.md"
 created: 2026-09-13

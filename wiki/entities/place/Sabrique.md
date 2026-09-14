@@ -1,7 +1,7 @@
 ---
 title: "Sabrique"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "Salt-pan island worked by indentured labor. The salt is cheap; and buyers know not to ask why"
 provenance:

@@ -1,7 +1,7 @@
 ---
 title: "Skimmed Duel Purse"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "intrigue"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:skimmed-duel-purse.md"
 created: 2026-09-13

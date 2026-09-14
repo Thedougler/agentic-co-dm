@@ -1,7 +1,7 @@
 ---
 title: "Sea Elf"
 category: entities
-tags: ["shattered-sea", "lore", "maritime"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:sea-elf.md"
 created: 2026-09-13

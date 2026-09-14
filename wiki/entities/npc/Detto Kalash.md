@@ -1,7 +1,7 @@
 ---
 title: "Detto Kalash"
 category: entities
-tags: ["shattered-sea", "npc", "tessarine"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:detto-kalash-voice-script.md"
   - "inbox/archive/FILED-2026-09-05-tessarine-concordat.md"

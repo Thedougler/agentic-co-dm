@@ -1,7 +1,7 @@
 ---
 title: "Halythion"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "Ancient settlement built into the Teikhinos Reef; invisible from the surface; older than any colonial record"
 provenance:

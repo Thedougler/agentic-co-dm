@@ -1,7 +1,7 @@
 ---
 title: Aruhe River / Grasslands Hazards
 category: journal
-tags: [aruhe, session-11, shattered-sea, session-prep, development]
+tags: [shattered-sea, aruhe, session-prep]
 sources:
   - "journal/sessions/shattered-sea/11/Session-11-00-Random-Tables.md"
 created: 2026-09-13

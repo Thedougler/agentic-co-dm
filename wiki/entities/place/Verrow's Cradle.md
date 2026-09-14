@@ -1,7 +1,7 @@
 ---
 title: "Verrow's Cradle"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "A floating orphanage quietly funded by a retired pirate captain's old treasure"
 provenance:

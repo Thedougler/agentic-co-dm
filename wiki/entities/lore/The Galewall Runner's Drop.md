@@ -1,7 +1,7 @@
 ---
 title: "The Galewall Runner's Drop"
 category: entities
-tags: ["shattered-sea", "lore", "maritime", "mystery"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:the-galewall-runners-drop.md"
 created: 2026-09-13

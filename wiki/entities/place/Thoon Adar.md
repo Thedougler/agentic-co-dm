@@ -1,7 +1,7 @@
 ---
 title: "Thoon Adar"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "A ring of standing stones that reorient themselves overnight; slow enough nobody's caught them moving"
 provenance:

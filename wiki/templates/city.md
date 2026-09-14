@@ -1,7 +1,7 @@
 ---
 title: "{{title}}"
 category: entities
-tags: [city]
+tags: [shattered-sea, place]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD

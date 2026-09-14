@@ -1,7 +1,7 @@
 ---
 title: "Petra Venn"
 category: entities
-tags: ["shattered-sea", "npc", "intrigue"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:petra-venn.md"
 created: 2026-09-13

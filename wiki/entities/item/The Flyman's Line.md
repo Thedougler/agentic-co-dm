@@ -1,7 +1,7 @@
 ---
 title: "The Flyman's Line"
 category: entities
-tags: ["shattered-sea", "item", "exploration", "comedy", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:the-flymans-line.md"
 created: 2026-09-13

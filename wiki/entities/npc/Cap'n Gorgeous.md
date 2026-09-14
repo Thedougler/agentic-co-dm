@@ -1,7 +1,7 @@
 ---
 title: "Cap'n Gorgeous"
 category: entities
-tags: ["shattered-sea", "npc", "combat"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:capn-gorgeous.md"
 created: 2026-09-13

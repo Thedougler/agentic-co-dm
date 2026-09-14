@@ -1,7 +1,7 @@
 ---
 title: "Serafina Windfall Fisk"
 category: entities
-tags: ["shattered-sea", "npc", "romance"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:serafina-windfall-fisk.md"
 created: 2026-09-13

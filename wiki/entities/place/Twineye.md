@@ -1,7 +1,7 @@
 ---
 title: "Twineye"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-south.md"]
 summary: "Twin islets joined by an arch; feuded over for generations by one estranged family"
 provenance:

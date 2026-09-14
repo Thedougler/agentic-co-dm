@@ -1,7 +1,7 @@
 ---
 title: Lava Tubes
 category: entities
-tags: [shattered-sea, place, aruhe, lava-tubes, underworld]
+tags: [shattered-sea, aruhe, place]
 sources: ["Aruhe - Lava Tubes.md"]
 created: 2026-09-12
 updated: 2026-09-12

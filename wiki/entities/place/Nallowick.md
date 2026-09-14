@@ -1,7 +1,7 @@
 ---
 title: "Nallowick"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "A drifting peat-bog island with no fixed position; tracing the same slow circuit season after season"
 provenance:

@@ -1,7 +1,7 @@
 ---
 title: "The River"
 category: entities
-tags: ["shattered-sea", "region", "aruhe", "river", "water"]
+tags: [shattered-sea, aruhe, region]
 aliases: ["The River", "Aruhe River"]
 sources: ["[[Aruhe - Hungry Isle]]", "Aruhe - River.md"]
 summary: "Rivers draining Clear Lake braid through Aruhe as the best road, occupied by River Otter families in fast clear water."

@@ -1,7 +1,7 @@
 ---
 title: "Calder's Tooth and Port Tidefall"
 category: entities
-tags: ["shattered-sea", "place", "tidefall", "crestwall", "dravosi-crown"]
+tags: [shattered-sea, place]
 sources: ["Calder's Tooth and Port Tidefall.md", "calders-tooth.md"]
 summary: "Three tiers on the cliff: docks at the water, a trade shelf on the face, and [[Fort Crestwall]] on the crown with the guns. Every ship entering the western Strait should stop at the Inspection Pier, a"
 provenance:

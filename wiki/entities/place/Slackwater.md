@@ -1,7 +1,7 @@
 ---
 title: "Slackwater"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-south.md"]
 summary: "The row's one shared harbor, kept calm by the ruling family's tide-calming power"
 provenance:

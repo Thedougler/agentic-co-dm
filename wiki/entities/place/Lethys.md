@@ -1,7 +1,7 @@
 ---
 title: "Lethys"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "A colony of feral griffons; generations wild since a dead aristocrat's menagerie got loose"
 provenance:

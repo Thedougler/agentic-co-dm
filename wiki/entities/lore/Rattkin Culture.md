@@ -1,7 +1,7 @@
 ---
 title: "Rattkin Culture"
 category: entities
-tags: ["shattered-sea", "lore", "heist"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:rattkin-culture.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: "The Ninth Life"
 category: entities
-tags: ["shattered-sea", "item", "intrigue", "rare"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:the-ninth-life.md"
 created: 2026-09-13

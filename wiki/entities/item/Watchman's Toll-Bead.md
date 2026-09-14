@@ -1,7 +1,7 @@
 ---
 title: "Watchman's Toll-Bead"
 category: entities
-tags: ["shattered-sea", "item", "combat", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:watchmans-toll-bead.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: Countless
 category: entities
-tags: [shattered-sea, faction, countless, schism]
+tags: [shattered-sea, faction]
 sources:
   - "the-countless.md"
   - "Countless.md"

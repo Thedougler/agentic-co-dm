@@ -1,7 +1,7 @@
 ---
 title: "Long Reach"
 category: entities
-tags: ["shattered-sea", "lore", "sentinel"]
+tags: [shattered-sea, lore]
 sources:
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-sentinels-of-the-eyrie.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/location-high-eyrie.md"

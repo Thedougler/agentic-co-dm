@@ -1,7 +1,7 @@
 ---
 title: Hollow Choir
 category: entities
-tags: [shattered-sea, faction, midchain]
+tags: [shattered-sea, faction]
 sources: ["aleksander-malone.md"]
 summary: Reclusive singing order in the southern Midchain that does not overlap Blackrule.
 provenance:

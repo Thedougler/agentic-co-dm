@@ -1,7 +1,7 @@
 ---
 title: "Redwind Isles"
 category: entities
-tags: [shattered-sea, place]
+tags: [shattered-sea, region]
 sources: ["outer-reach.md", "redwind-isles.md"]
 summary: "Under-charted Outer Reach islands that an ancient blue dragon may rule."
 provenance:

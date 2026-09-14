@@ -6,7 +6,7 @@ lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-tags: [shattered-sea, place, aruhe, river, grasslands]
+tags: [shattered-sea, aruhe, place]
 sources: ["wiki/_raw/Aruhe - River Slack Basin.md"]
 summary: Claimed backwater where trapped remains, a stranded survivor, and otter ownership make the river road dangerous.
 provenance:

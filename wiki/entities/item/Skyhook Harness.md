@@ -1,7 +1,7 @@
 ---
 title: "Skyhook Harness"
 category: entities
-tags: ["shattered-sea", "item", "exploration", "maritime", "rare"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:skyhook-harness.md"
 created: 2026-09-13

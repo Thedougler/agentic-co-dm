@@ -1,7 +1,7 @@
 ---
 title: "Fen-Glass Newt"
 category: entities
-tags: ["shattered-sea", "item", "exploration", "maritime", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:fen-glass-newt.md"
 created: 2026-09-13

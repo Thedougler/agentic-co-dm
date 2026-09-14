@@ -1,7 +1,7 @@
 ---
 title: Blackrule
 category: entities
-tags: [shattered-sea, place, midchain, chapterhouse]
+tags: [shattered-sea, place]
 sources: ["Blackrule.md"]
 summary: Volcanic terrace chapterhouse with one boat stair; Aleksander Malone trains here and leaves only when heresy is confirmed.
 provenance:

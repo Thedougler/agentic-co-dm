@@ -1,7 +1,7 @@
 ---
 title: "Marrow"
 category: entities
-tags: [shattered-sea, place, tidefall]
+tags: [shattered-sea, place]
 sources: ["calders-tooth.md"]
 summary: "Foggy north-south interior ridge of Calder's Tooth, porous with sinkholes and collapsed caves."
 provenance:

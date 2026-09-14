@@ -1,7 +1,7 @@
 ---
 title: "The Glass Debt"
 category: entities
-tags: ["shattered-sea", "faction", "maritime", "war"]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:the-glass-debt.md"
 created: 2026-09-13

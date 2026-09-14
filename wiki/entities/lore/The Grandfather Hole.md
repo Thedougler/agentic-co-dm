@@ -1,7 +1,7 @@
 ---
 title: "The Grandfather Hole"
 category: entities
-tags: ["shattered-sea", "lore", "mystery"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:the-grandfather-hole.md"
 created: 2026-09-13

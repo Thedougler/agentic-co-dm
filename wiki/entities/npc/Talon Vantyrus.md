@@ -1,7 +1,7 @@
 ---
 title: Talon Vantyrus
 category: entities
-tags: [shattered-sea, npc, countless]
+tags: [shattered-sea, npc]
 sources:
   - "Talon Skarn"
   - "campaign-os:talon-vantyrus.md"

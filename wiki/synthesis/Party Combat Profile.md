@@ -1,7 +1,7 @@
 ---
 title: "Party Combat Profile"
 category: synthesis
-tags: ["shattered-sea", "lore", "combat"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:party-combat-profile.md"
 created: 2026-09-13

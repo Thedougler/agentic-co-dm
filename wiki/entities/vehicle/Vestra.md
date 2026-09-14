@@ -1,7 +1,7 @@
 ---
 title: Vestra
 category: entities
-tags: [shattered-sea, vehicle, ship]
+tags: [shattered-sea, vehicle]
 sources:
   - "Vestra.md"
   - "campaign-os:vestra-narration-appearance.md"

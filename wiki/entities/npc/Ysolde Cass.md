@@ -1,7 +1,7 @@
 ---
 title: "Ysolde Cass"
 category: entities
-tags: [npc, shattered-sea, maritime]
+tags: [shattered-sea, npc]
 sources:
   - "wiki/_archive/ysolde-cass.md"
   - "wiki/_archive/penance-bar-siege.md"

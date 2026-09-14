@@ -1,7 +1,7 @@
 ---
 title: Cutoff Lip
 category: entities
-tags: [shattered-sea, place, aruhe, rainforest, grasslands]
+tags: [shattered-sea, aruhe, place]
 sources: ["Aruhe - Quiet Forest Cutoff Lip.md"]
 created: 2026-09-12
 updated: 2026-09-12

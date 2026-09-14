@@ -1,7 +1,7 @@
 ---
 title: "Karsovine's Working Log"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "intrigue"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:karsovines-working-log.md"
 created: 2026-09-13

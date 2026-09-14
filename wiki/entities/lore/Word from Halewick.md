@@ -1,7 +1,7 @@
 ---
 title: "Word from Halewick"
 category: entities
-tags: ["shattered-sea", "lore", "mystery", "fairy-tale"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:word-from-halewick.md"
 created: 2026-09-13

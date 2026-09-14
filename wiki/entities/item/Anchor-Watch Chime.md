@@ -1,7 +1,7 @@
 ---
 title: "Anchor-Watch Chime"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "exploration", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:anchor-watch-chime.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: "Letters of Marque"
 category: entities
-tags: ["shattered-sea", "item", "politics", "intrigue", "common"]
+tags: [shattered-sea, item]
 sources:
   - "wiki/_archive/common/letters-of-marque.md"
   - "campaign-os:letters-of-marque.md"

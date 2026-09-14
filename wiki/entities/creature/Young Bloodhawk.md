@@ -1,7 +1,7 @@
 ---
 title: Young Bloodhawk
 category: entities
-tags: [monster, aruhe, aerial, juvenile]
+tags: [shattered-sea, aruhe, creature]
 sources: ["wiki/_raw/Aruhe - Young Bloodhawk.md"]
 created: 2026-09-12
 updated: 2026-09-12

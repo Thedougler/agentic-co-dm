@@ -1,7 +1,7 @@
 ---
 title: "Ussamet"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "Half-sunken ruins that surface only at the lowest tides; on a schedule only the sea seems to keep"
 provenance:

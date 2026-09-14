@@ -1,7 +1,7 @@
 ---
 title: "Orak"
 category: entities
-tags: ["shattered-sea", "region", "grung", "verdant-teeth", "orak"]
+tags: [shattered-sea, region]
 sources: ["Orak.md", "wiki/_raw/Grung clans.md"]
 summary: "Orak is the high karst twin to Dreth: towers, sinkholes, clefts, and wet dark nests. It has no sanctioned landing. The useful island is vertical and the holes are shafts, not doors."
 provenance:

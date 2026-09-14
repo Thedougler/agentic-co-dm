@@ -1,7 +1,7 @@
 ---
 title: "Ral-Arn"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, place]
 sources: ["sunken-crown.md"]
 summary: "Record island of the Sunken Crown holding oldest family histories in stone."
 provenance:

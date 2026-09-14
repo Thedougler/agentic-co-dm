@@ -1,7 +1,7 @@
 ---
 title: "Dreth"
 category: entities
-tags: ["shattered-sea", "region", "grung", "verdant-teeth", "dreth"]
+tags: [shattered-sea, region]
 sources: ["Dreth.md", "wiki/_raw/Grung clans.md"]
 summary: "Dreth is the lower, wetter eastern Tooth: permanently drowned forest, timber works, and no charted shoreline. A hull must enter under canopy or not enter at all."
 provenance:

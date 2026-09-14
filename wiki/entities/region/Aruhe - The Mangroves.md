@@ -1,7 +1,7 @@
 ---
 title: "The Mangroves"
 category: entities
-tags: ["shattered-sea", "region", "aruhe", "mangrove", "wetlands"]
+tags: [shattered-sea, aruhe, region]
 aliases: ["The Mangroves", "Mangroves", "Aruhe Mangroves"]
 sources: ["[[Aruhe - Hungry Isle]]", "Aruhe - The Mangroves.md", "[\"[[Aruhe - Hungry Isle]]\"]"]
 summary: "The Mangroves are the southern end of [[Aruhe - The Marshes|the Marshes]], where freshwater forest becomes tidal swamp before reaching Aruhe's coast. They technically touch the ocean. They are not ..."

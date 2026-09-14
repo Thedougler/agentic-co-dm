@@ -1,7 +1,7 @@
 ---
 title: "Il Gioco delle Beffe"
 category: entities
-tags: ["shattered-sea", "lore", "intrigue"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:il-gioco-delle-beffe.md"
 created: 2026-09-13

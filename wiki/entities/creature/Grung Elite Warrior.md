@@ -1,7 +1,7 @@
 ---
 title: Grung Elite Warrior
 category: entities
-tags: [shattered-sea, creature, grung]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:grung-elite-warrior.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/the-grung-clans/creature.grung-elite-warrior.md"

@@ -1,7 +1,7 @@
 ---
 title: "Batta Zusto"
 category: entities
-tags: ["shattered-sea", "npc", "intrigue", "salvage"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:batta-zusto.md"
 created: 2026-09-13

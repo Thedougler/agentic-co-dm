@@ -1,7 +1,7 @@
 ---
 title: "Pest-House Bandages"
 category: entities
-tags: ["shattered-sea", "item", "survival", "mystery"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:pest-house-bandages.md"
 created: 2026-09-13

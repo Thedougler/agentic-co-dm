@@ -1,7 +1,7 @@
 ---
 title: HCS Ordinance
 category: entities
-tags: [shattered-sea, vehicle, ship, crown]
+tags: [shattered-sea, vehicle]
 sources:
   - "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/HCS Sovereign.md"
   - "campaign-os:hcs-ordinance.md"

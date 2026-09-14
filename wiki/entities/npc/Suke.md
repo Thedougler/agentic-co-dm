@@ -1,7 +1,7 @@
 ---
 title: "Suke"
 category: entities
-tags: ["shattered-sea", "npc", "combat"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:suke.md"
 created: 2026-09-13

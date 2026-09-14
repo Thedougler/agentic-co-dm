@@ -1,7 +1,7 @@
 ---
 title: Session 09 - Recap
 category: journal
-tags: [shattered-sea, recap, session]
+tags: [shattered-sea, recap]
 sources: ["Session 09 - Recap.md"]
 summary: Uncertainty left for Sparhold; three captives were pulled from wreckage; HCS Ordinance boarded under merchant cover and sailed for Calveno.
 provenance:

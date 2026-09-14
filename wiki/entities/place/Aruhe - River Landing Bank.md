@@ -1,7 +1,7 @@
 ---
 title: Landing Bank
 category: entities
-tags: [shattered-sea, place, aruhe, river, grasslands]
+tags: [shattered-sea, aruhe, place]
 aliases: [Landing Bank, River Landing Bank, First valley bank]
 sources: ["[[Aruhe - River]]", "Aruhe - River Landing Bank.md"]
 summary: First grassland mouth after the Old Gardens: eight-foot grass, a used stop, north prints, and a river that can be waded to a far bank.

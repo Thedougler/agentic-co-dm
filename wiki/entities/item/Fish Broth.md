@@ -1,7 +1,7 @@
 ---
 title: "Fish Broth"
 category: entities
-tags: ["shattered-sea", "item", "mystery", "common"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:fish-broth.md"
 created: 2026-09-13

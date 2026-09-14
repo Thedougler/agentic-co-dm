@@ -1,7 +1,7 @@
 ---
 title: "Lasting Insult"
 category: entities
-tags: ["shattered-sea", "vehicle", "intrigue"]
+tags: [shattered-sea, vehicle]
 sources:
   - "campaign-os:lasting-insult.md"
 created: 2026-09-13

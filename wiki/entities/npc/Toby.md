@@ -1,7 +1,7 @@
 ---
 title: "Toby"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, npc]
 sources: ["isle-of-cursed-speech.md"]
 summary: "Child on Halewick whose cursed speech declared him emperor and overwrote the island's memory."
 provenance:

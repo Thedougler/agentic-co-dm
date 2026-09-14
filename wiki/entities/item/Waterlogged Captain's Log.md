@@ -1,7 +1,7 @@
 ---
 title: "Waterlogged Captain's Log"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "exploration"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:waterlogged-captains-log.md"
 created: 2026-09-13

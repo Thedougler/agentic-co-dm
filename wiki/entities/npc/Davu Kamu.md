@@ -1,7 +1,7 @@
 ---
 title: "Davu Kamu"
 category: entities
-tags: ["shattered-sea", "npc", "maritime"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:davu-kamu.md"
 created: 2026-09-13

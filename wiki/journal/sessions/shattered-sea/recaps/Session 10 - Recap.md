@@ -1,7 +1,7 @@
 ---
 title: Session 10 - Recap
 category: journal
-tags: [shattered-sea, recap, session]
+tags: [shattered-sea, recap]
 sources: ["Session 10 - Recap.md"]
 summary: Grigori warned of a Fate Spinner hunt; the follower ship was left listing; Aruhe has two survivors aboard and a crown squid in the water.
 provenance:

@@ -1,7 +1,7 @@
 ---
 title: "Aarakocra"
 category: entities
-tags: ["shattered-sea", "lore", "mystery"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:aarakocra.md"
 created: 2026-09-13

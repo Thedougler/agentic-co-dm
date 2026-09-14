@@ -1,7 +1,7 @@
 ---
 title: "Ossira"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-south.md"]
 summary: "Coral spit so thick with nesting seabirds the beach shifts underfoot with molted feathers"
 provenance:

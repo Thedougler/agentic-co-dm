@@ -1,7 +1,7 @@
 ---
 title: "Dreth-Orak Channel"
 category: entities
-tags: ["shattered-sea", "place", "grung", "dreth", "orak"]
+tags: [shattered-sea, place]
 sources: ["Dreth-Orak Channel.md", "wiki/_raw/Grung clans.md"]
 summary: "Dreth-Orak Channel"
 provenance:

@@ -1,7 +1,7 @@
 ---
 title: HCS Sovereign
 category: entities
-tags: [shattered-sea, vehicle, ship, crown]
+tags: [shattered-sea, vehicle]
 sources:
   - "campaign-os:hcs-sovereign.md"
   - "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/HCS Sovereign.md"

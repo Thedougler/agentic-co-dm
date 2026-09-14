@@ -1,7 +1,7 @@
 ---
 title: "The Vault of the First Factor"
 category: entities
-tags: ["shattered-sea", "lore", "mystery", "exploration"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:the-vault-of-the-first-factor.md"
 created: 2026-09-13

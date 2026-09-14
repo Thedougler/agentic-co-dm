@@ -1,7 +1,7 @@
 ---
 title: "High Line"
 category: entities
-tags: [shattered-sea, place, tidefall]
+tags: [shattered-sea, place]
 sources: ["calders-tooth.md"]
 summary: "Northeast cliff hamlet on Calder's Tooth that works nets by winch."
 provenance:

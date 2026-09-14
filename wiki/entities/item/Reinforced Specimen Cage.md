@@ -1,7 +1,7 @@
 ---
 title: "Reinforced Specimen Cage"
 category: entities
-tags: ["shattered-sea", "item", "exploration", "craft"]
+tags: [shattered-sea, item]
 sources:
   - "wiki/_archive/homebrew/reinforced-specimen-cage.md"
   - "campaign-os:reinforced-specimen-cage.md"

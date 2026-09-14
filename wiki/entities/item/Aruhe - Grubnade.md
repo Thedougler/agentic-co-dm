@@ -1,7 +1,7 @@
 ---
 title: Aruhe - Grubnade
 category: entities
-tags: [shattered-sea, item, aruhe, hazard, flora]
+tags: [shattered-sea, aruhe, item]
 sources:
   - "house (wiki creature.grubnade, upgraded)"
 summary: A volatile Aruhe caterpillar that detonates when disturbed, igniting nearby growth and scattering harmless juveniles.

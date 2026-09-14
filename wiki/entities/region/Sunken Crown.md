@@ -1,7 +1,7 @@
 ---
 title: "Sunken Crown"
 category: entities
-tags: [shattered-sea, place]
+tags: [shattered-sea, region]
 sources: ["sunken-crown.md", "outer-reach.md"]
 summary: "Structurally unstable region east of the Maw and the primary Outer Reach route."
 provenance:

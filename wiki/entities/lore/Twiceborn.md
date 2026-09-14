@@ -1,7 +1,7 @@
 ---
 title: Twiceborn
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, lore]
 sources:
   - "twiceborn.md"
   - "wiki/_raw/Grung clans.md"

@@ -1,7 +1,7 @@
 ---
 title: Aruhe - Spiguar
 category: entities
-tags: [shattered-sea, creature, aruhe, grasslands]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "house (rough draft and image concept 2026-09-08)"
   - "wiki/attachments/spiguar-reference.png (visual reference sheet, 2026-09-14)"

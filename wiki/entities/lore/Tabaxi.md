@@ -1,7 +1,7 @@
 ---
 title: "Tabaxi"
 category: entities
-tags: ["shattered-sea", "lore", "exploration"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:tabaxi.md"
 created: 2026-09-13

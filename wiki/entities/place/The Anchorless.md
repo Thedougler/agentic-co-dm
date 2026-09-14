@@ -1,7 +1,7 @@
 ---
 title: "The Anchorless"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "A bare; unapproachable rock. Every ship that passes in sight reports the same dream that night"
 provenance:

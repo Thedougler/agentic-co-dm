@@ -1,7 +1,7 @@
 ---
 title: "Blind-Hood and Jesses"
 category: entities
-tags: ["shattered-sea", "item", "exploration", "maritime", "common"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:blind-hood-and-jesses.md"
 created: 2026-09-13

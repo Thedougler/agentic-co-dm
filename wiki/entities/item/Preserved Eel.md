@@ -1,7 +1,7 @@
 ---
 title: "Preserved Eel"
 category: entities
-tags: ["shattered-sea", "item", "exploration", "common"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:preserved-eel.md"
 created: 2026-09-13

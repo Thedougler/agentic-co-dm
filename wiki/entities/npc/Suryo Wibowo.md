@@ -1,7 +1,7 @@
 ---
 title: "Suryo Wibowo"
 category: entities
-tags: ["shattered-sea", "npc", "maritime"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:suryo-wibowo.md"
 created: 2026-09-13

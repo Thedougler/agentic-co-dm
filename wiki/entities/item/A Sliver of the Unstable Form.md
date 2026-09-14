@@ -1,7 +1,7 @@
 ---
 title: "A Sliver of the Unstable Form"
 category: entities
-tags: ["shattered-sea", "item", "combat", "very-rare"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:a-sliver-of-the-unstable-form.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: "Prospero Morsani"
 category: entities
-tags: ["shattered-sea", "npc", "mystery"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:prospero-morsani.md"
 created: 2026-09-13

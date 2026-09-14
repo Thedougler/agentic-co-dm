@@ -1,7 +1,7 @@
 ---
 title: "Wrack's End"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "Every message-in-a-bottle in the Sea eventually washes up here; read by a hermit who answers none"
 provenance:

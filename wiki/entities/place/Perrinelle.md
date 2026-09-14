@@ -1,7 +1,7 @@
 ---
 title: "Perrinelle"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "Four-generation lighthouse family island where the lamp still burns. The current keeper vanished weeks ago"
 provenance:

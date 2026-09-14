@@ -1,7 +1,7 @@
 ---
 title: "Rigging Cutpurse"
 category: entities
-tags: ["shattered-sea", "creature", "combat", "intrigue"]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:rigging-cutpurse.md"
 created: 2026-09-13

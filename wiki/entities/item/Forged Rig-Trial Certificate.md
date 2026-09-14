@@ -1,7 +1,7 @@
 ---
 title: "Forged Rig-Trial Certificate"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "intrigue"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:forged-rig-trial-certificate.md"
 created: 2026-09-13

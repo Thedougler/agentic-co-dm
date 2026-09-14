@@ -1,7 +1,7 @@
 ---
 title: "La Cenere"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, place]
 sources: ["lavinia-sordi.md"]
 summary: "Named later chapter of Lavinia Sordi's life, after she left Crown prison work."
 provenance:

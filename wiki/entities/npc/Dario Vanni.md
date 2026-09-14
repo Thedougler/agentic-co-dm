@@ -1,7 +1,7 @@
 ---
 title: "Dario Vanni"
 category: entities
-tags: ["shattered-sea", "npc", "maritime", "intrigue"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:dario-vanni.md"
 created: 2026-09-13

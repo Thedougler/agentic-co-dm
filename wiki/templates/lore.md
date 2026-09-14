@@ -1,7 +1,7 @@
 ---
 title: "{{title}}"
 category: lore
-tags: [lore]
+tags: [shattered-sea, lore]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD

@@ -1,7 +1,7 @@
 ---
 title: "Reef-Song Shard"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "mystery"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:reef-song-shard.md"
 created: 2026-09-13

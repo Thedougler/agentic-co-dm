@@ -1,7 +1,7 @@
 ---
 title: "Andriana Trevisan"
 category: entities
-tags: ["shattered-sea", "npc", "mystery"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:andriana-trevisan.md"
 created: 2026-09-13

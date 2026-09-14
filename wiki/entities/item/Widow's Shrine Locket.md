@@ -1,7 +1,7 @@
 ---
 title: "Widow's Shrine Locket"
 category: entities
-tags: ["shattered-sea", "item", "maritime"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:widows-shrine-locket.md"
 created: 2026-09-13

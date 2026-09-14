@@ -1,7 +1,7 @@
 ---
 title: "Barb-Line Harpoon"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "combat"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:barb-line-harpoon.md"
 created: 2026-09-13

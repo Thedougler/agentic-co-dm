@@ -1,7 +1,7 @@
 ---
 title: "Il Gioco delle Beffe - Running It"
 category: entities
-tags: ["shattered-sea", "lore", "intrigue"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:il-gioco-delle-beffe-mechanics.md"
 created: 2026-09-13

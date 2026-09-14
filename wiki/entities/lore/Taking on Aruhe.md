@@ -1,7 +1,7 @@
 ---
 title: Taking on Aruhe
 category: entities
-tags: [shattered-sea, lore, aruhe]
+tags: [shattered-sea, aruhe, lore]
 sources: ["Aruhe - Beach.md"]
 summary: Taking a living plant, animal, or claim on Aruhe draws surrounding life into hostility.
 provenance:

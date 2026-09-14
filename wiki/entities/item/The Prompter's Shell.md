@@ -1,7 +1,7 @@
 ---
 title: "The Prompter's Shell"
 category: entities
-tags: ["shattered-sea", "item", "intrigue", "exploration", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:the-prompters-shell.md"
 created: 2026-09-13

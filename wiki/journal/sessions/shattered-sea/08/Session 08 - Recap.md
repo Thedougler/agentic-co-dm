@@ -1,7 +1,7 @@
 ---
 title: Session 08 - Recap
 category: journal
-tags: [shattered-sea, recap, session]
+tags: [shattered-sea, recap]
 sources: ["Session 08 - Recap.md"]
 summary: Nona's missing-persons list passed 314 fighting-age men; Osset was named twice; Uncertainty's refit is twelve hours out.
 provenance:

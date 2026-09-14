@@ -1,7 +1,7 @@
 ---
 title: "Sarn's Landing"
 category: entities
-tags: ["shattered-sea", "place", "crown-islands", "malone"]
+tags: [shattered-sea, place]
 sources: ["Sarn's Landing.md", "arc-malones-verdict.md"]
 summary: "A small Crown Islands fishing village where [[Aleksander Malone]] was once loosed in public. The results were ugly enough to change Crown policy: Malone now requires formal heresy confirmation before "
 provenance:

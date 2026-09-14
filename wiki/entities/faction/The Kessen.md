@@ -1,7 +1,7 @@
 ---
 title: "The Kessen"
 category: entities
-tags: ["shattered-sea", "faction", "combat"]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:the-kessen.md"
 created: 2026-09-13

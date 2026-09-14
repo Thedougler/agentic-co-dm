@@ -1,7 +1,7 @@
 ---
 title: "Voyvode Works"
 category: entities
-tags: ["shattered-sea", "faction", "maritime", "intrigue"]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:voyvode-works.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: "Ashen Roost"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-south.md"]
 summary: "Nesting grounds for firebirds that scorch and regrow the island in patches. The ash sells for a fortune"
 provenance:

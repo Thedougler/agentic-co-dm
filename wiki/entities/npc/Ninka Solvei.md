@@ -1,7 +1,7 @@
 ---
 title: "Ninka Solvei"
 category: entities
-tags: ["shattered-sea", "npc", "salvage"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:ninka-solvei.md"
 created: 2026-09-13

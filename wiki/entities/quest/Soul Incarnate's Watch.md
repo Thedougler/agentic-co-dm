@@ -1,7 +1,7 @@
 ---
 title: "Soul Incarnate's Watch"
 category: entities
-tags: ["shattered-sea", "quest", "sentinel"]
+tags: [shattered-sea, quest]
 sources:
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-sentinels-of-the-eyrie.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/location-high-eyrie.md"

@@ -1,7 +1,7 @@
 ---
 title: "Elder Anton"
 category: entities
-tags: ["shattered-sea", "npc", "mystery"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:elder-anton.md"
 created: 2026-09-13

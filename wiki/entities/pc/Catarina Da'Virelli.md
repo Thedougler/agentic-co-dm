@@ -1,7 +1,7 @@
 ---
 title: "Catarina Da'Virelli"
 category: entities
-tags: [pc, shattered-sea]
+tags: [shattered-sea, pc]
 sources:
   - "wiki/_archive/catarina-davirelli.md"
   - "wiki/_archive/abilities/catarina-davirelli-abilities.md"

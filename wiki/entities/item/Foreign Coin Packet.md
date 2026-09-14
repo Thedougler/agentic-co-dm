@@ -1,7 +1,7 @@
 ---
 title: "Foreign Coin Packet"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "intrigue"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:foreign-coin-packet.md"
 created: 2026-09-13

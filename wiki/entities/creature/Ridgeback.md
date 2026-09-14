@@ -1,7 +1,7 @@
 ---
 title: Ridgeback
 category: entities
-tags: [shattered-sea, creature, maw]
+tags: [shattered-sea, creature]
 sources: ["elemental-plane-of-water.md"]
 summary: Second named entity through the Maw fissure, documented in Clyde's Bestiary.
 provenance:

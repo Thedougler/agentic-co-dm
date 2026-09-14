@@ -1,7 +1,7 @@
 ---
 title: "Warden's Collar"
 category: entities
-tags: ["shattered-sea", "item", "exploration", "maritime", "rare"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:wardens-collar.md"
 created: 2026-09-13

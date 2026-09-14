@@ -1,7 +1,7 @@
 ---
 title: "Deep Works"
 category: entities
-tags: ["shattered-sea", "place", "maw", "antheri", "deep-works"]
+tags: [shattered-sea, place]
 sources: ["Deep Works.md"]
 summary: "The deepest Antheri tier, past 500 feet, containing the soul-pledge chamber and the terminus of the Maw fissure; feels pristine, hostile, and only partly of this plane."
 provenance:

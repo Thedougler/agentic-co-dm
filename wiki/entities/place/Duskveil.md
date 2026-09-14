@@ -1,7 +1,7 @@
 ---
 title: "Duskveil"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "A permanent illusion of dusk blankets the island; source unknown"
 provenance:

@@ -1,7 +1,7 @@
 ---
 title: "Grimaldi's Waking Salts"
 category: entities
-tags: ["shattered-sea", "item", "healing", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:grimaldis-waking-salts.md"
 created: 2026-09-13

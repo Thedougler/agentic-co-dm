@@ -1,7 +1,7 @@
 ---
 title: "Fathomrush"
 category: entities
-tags: ["shattered-sea", "place", "settlement", "maw", "salvage"]
+tags: [shattered-sea, place]
 sources: ["Fathomrush.md"]
 summary: "A boomtown staging dives on the [[Shelfworks]], the Antheri salvage field above the Maw; feels temporary, lucrative, and one bad line from empty."
 provenance:

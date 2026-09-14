@@ -1,7 +1,7 @@
 ---
 title: "Flying Boots"
 category: entities
-tags: [shattered-sea, item, delmar]
+tags: [shattered-sea, item]
 sources:
   - "/workspace/midchain-ingest/group-a/items/Flying Boots.md"
   - "wiki/entities/Delmar Fisk.md"

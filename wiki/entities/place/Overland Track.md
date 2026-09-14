@@ -1,7 +1,7 @@
 ---
 title: "Overland Track"
 category: entities
-tags: [shattered-sea, place, tidefall]
+tags: [shattered-sea, place]
 sources: ["overland-track.md", "calders-tooth.md"]
 summary: "Muddy southern road over the Marrow between Tidefall and South Harbour."
 provenance:

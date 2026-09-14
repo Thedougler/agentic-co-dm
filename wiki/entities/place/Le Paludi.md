@@ -1,7 +1,7 @@
 ---
 title: "Le Paludi"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, place]
 sources: ["season-02-the-open-midchain.md"]
 summary: "Fence town where Osset sold a cloak in the Season 2 draft."
 provenance:

@@ -1,7 +1,7 @@
 ---
 title: "Delmar's Blunderbuss"
 category: entities
-tags: ["shattered-sea", "item", "combat", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:delmars-blunderbuss.md"
 created: 2026-09-13

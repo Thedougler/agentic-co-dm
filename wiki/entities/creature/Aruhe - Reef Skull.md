@@ -1,7 +1,7 @@
 ---
 title: Aruhe - Reef Skull
 category: entities
-tags: [shattered-sea, creature, aruhe]
+tags: [shattered-sea, aruhe, creature]
 aliases: [Reef Skull, Reef Skulls]
 sources: ["Aruhe - Beach.md"]
 summary: Dog-sized hermit crabs that live in hull pieces or skulls and bury themselves in Aruhe's western shingle.

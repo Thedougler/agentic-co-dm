@@ -1,7 +1,7 @@
 ---
 title: Waveservants
 category: entities
-tags: [shattered-sea, faction, waveservants, umberlee, clergy]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:waveservants.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/location-waveservant-shrine.md"

@@ -1,7 +1,7 @@
 ---
 title: "Depot Signal Whistle"
 category: entities
-tags: ["shattered-sea", "item", "maritime"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:depot-signal-whistle.md"
 created: 2026-09-13

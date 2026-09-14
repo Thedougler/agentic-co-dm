@@ -1,7 +1,7 @@
 ---
 title: "Ferran Balt"
 category: entities
-tags: ["shattered-sea", "npc", "maritime", "commerce", "horror"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:ferran-balt.md"
 created: 2026-09-13

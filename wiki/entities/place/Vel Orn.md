@@ -1,7 +1,7 @@
 ---
 title: "Vel Orn"
 category: entities
-tags: ["shattered-sea", "place", "shrine", "waveservants", "umberlee"]
+tags: [shattered-sea, place]
 aliases: ["[Vel-Orn, Umberlee's Hidden Shrine, Vafnar]"]
 sources: ["Vel Orn.md"]
 summary: "On Vel Orn in the [[Sunken Crown]], five small islands ring the [[Blue Hole]]. Umberlee's older house is cut into black cliff stone, reachable only when the surge is timed and the approach is known. I"

@@ -1,7 +1,7 @@
 ---
 title: Session 02 - Recap
 category: journal
-tags: [shattered-sea, recap, session]
+tags: [shattered-sea, recap]
 sources: ["Session 02 - Recap.md"]
 summary: The crew took the HCS Surety, named a prize crew, and took three hull strikes from below in a storm.
 provenance:

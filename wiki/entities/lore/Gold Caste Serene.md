@@ -1,7 +1,7 @@
 ---
 title: Gold Caste Serene
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, lore]
 sources:
   - "wiki/_raw/Grung clans.md"
 summary: Fiction-layer name for the serene gold authority associated with Grung faith and decrees.

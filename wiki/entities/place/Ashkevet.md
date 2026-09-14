@@ -1,7 +1,7 @@
 ---
 title: "Ashkevet"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, place]
 sources: ["lavinia-sordi.md"]
 summary: "Named Dravosi prison the Lavinia note refuses to treat as her workplace."
 provenance:

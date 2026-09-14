@@ -1,7 +1,7 @@
 ---
 title: "Fen"
 category: entities
-tags: ["shattered-sea", "npc", "maritime"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:fen.md"
 created: 2026-09-13

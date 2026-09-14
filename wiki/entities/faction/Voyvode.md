@@ -1,7 +1,7 @@
 ---
 title: Voyvode
 category: entities
-tags: [shattered-sea, faction, voyvode, maw, salvage]
+tags: [shattered-sea, faction]
 sources:
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-voyvode-works.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/situation-fathomrushs-split-harbor.md"

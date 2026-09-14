@@ -1,7 +1,7 @@
 ---
 title: "The Passage"
 category: entities
-tags: ["shattered-sea", "faction", "passage", "intrigue"]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:the-passage.md"
 created: 2026-09-13

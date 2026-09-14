@@ -1,7 +1,7 @@
 ---
 title: Clear Lake
 category: entities
-tags: [shattered-sea, place, aruhe, lake, water]
+tags: [shattered-sea, aruhe, place]
 aliases: [Clear Lake]
 sources: ["[[Aruhe - Hungry Isle]]", "Aruhe - Clear Lake.md"]
 summary: Aruhe's calm inland crater basin, with a black stone shelf, clear shallows, otter families, and routes toward the river, marshes, and Grove.

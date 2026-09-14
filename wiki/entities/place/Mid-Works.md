@@ -1,7 +1,7 @@
 ---
 title: "Mid-Works"
 category: entities
-tags: ["shattered-sea", "place", "maw", "antheri", "mid-works"]
+tags: [shattered-sea, place]
 sources: ["Mid-Works.md"]
 summary: "Antheri residential tier from 200\u2013500 feet below the Maw shelf; feels sealed, pressurized, and built for bodies that did not need floors or air."
 provenance:

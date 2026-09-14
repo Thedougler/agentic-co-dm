@@ -1,7 +1,7 @@
 ---
 title: "Keth Naar"
 category: entities
-tags: ["shattered-sea", "place", "keth-naar", "vestra", "perrin"]
+tags: [shattered-sea, place]
 sources: ["Keth Naar.md"]
 summary: "The wash-up point for [[Perrin Black-Jaw]] after the [[Vestra]] sinking; feels like a survivor's shore and an unreliable witness."
 provenance:

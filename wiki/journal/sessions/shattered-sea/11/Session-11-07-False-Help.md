@@ -1,7 +1,7 @@
 ---
 title: Session 11 — False help
 category: journal
-tags: [session-prep, run-guide, shattered-sea, cliffhanger]
+tags: [shattered-sea, session-prep]
 sources:
   - "journal/sessions/shattered-sea/11/Session-11-07-False-Help.md"
 created: 2026-09-13

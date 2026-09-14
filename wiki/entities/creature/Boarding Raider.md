@@ -1,7 +1,7 @@
 ---
 title: "Boarding Raider"
 category: entities
-tags: ["shattered-sea", "creature", "combat"]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:boarding-raider.md"
 created: 2026-09-13

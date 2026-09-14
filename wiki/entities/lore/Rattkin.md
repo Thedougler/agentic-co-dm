@@ -1,7 +1,7 @@
 ---
 title: Rattkin
 category: entities
-tags: [shattered-sea, lore, rattkin]
+tags: [shattered-sea, lore]
 sources:
   - "Rattkin Runs and Black-Jaw Run.md"
   - "campaign-os:rattkin.md"

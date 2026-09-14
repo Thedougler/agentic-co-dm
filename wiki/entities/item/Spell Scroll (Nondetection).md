@@ -1,7 +1,7 @@
 ---
 title: "Spell Scroll (Nondetection)"
 category: entities
-tags: ["shattered-sea", "item", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:spell-scroll-nondetection.md"
 created: 2026-09-13

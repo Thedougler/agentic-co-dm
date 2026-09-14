@@ -1,7 +1,7 @@
 ---
 title: The taken 314
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, quest]
 sources:
   - "wiki/_raw/Grung clans.md"
   - "inbox/archive/FILED-2026-09-05-tessarine-concordat.md"

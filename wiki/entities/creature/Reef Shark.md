@@ -1,7 +1,7 @@
 ---
 title: "Reef Shark"
 category: entities
-tags: ["shattered-sea", "creature", "combat", "maritime"]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:reef-shark.md"
 created: 2026-09-13

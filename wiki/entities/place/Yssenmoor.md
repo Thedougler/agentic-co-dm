@@ -1,7 +1,7 @@
 ---
 title: "Yssenmoor"
 category: entities
-tags: ["shattered-sea", "place", "ley-line", "sentinel"]
+tags: [shattered-sea, place]
 sources: ["Yssenmoor.md"]
 summary: "A place over a hidden ley line that reacts to [[Fate Spinner]]; feels like an unresolved point of contact between old power and a watchful relic."
 provenance:

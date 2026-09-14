@@ -1,7 +1,7 @@
 ---
 title: "Rufio Segalla"
 category: entities
-tags: ["shattered-sea", "npc", "intrigue"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:rufio-segalla.md"
 created: 2026-09-13

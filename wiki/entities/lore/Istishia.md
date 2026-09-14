@@ -1,7 +1,7 @@
 ---
 title: "Istishia"
 category: entities
-tags: [shattered-sea, lore, cosmology, maw]
+tags: [shattered-sea, lore]
 sources:
   - "/workspace/midchain-ingest/group-a/lore/Istishia.md"
 summary: "Cosmology pointer toward the Elemental Plane of Water in Maw talk; not committed as a villain, actor, or encounter."

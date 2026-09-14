@@ -1,7 +1,7 @@
 ---
 title: "Gerrit Sallow"
 category: entities
-tags: [npc, shattered-sea, mystery, horror]
+tags: [shattered-sea, npc]
 sources:
   - "wiki/_archive/gerrit-sallow.md"
   - "wiki/_archive/ysolde-sallow.md"

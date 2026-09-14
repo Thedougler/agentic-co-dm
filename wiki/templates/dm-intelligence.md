@@ -1,7 +1,7 @@
 ---
 title: "{{title}}"
 category: entities
-tags: []
+tags: [work]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD

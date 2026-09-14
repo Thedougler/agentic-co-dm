@@ -1,7 +1,7 @@
 ---
 title: "RTLB"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, npc]
 sources: ["sir-quackers-the-fowl.md"]
 summary: "Unnamed-beyond-initials wizard who bound and later freed Sir Quackers."
 provenance:

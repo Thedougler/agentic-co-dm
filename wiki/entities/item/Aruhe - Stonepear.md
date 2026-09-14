@@ -1,7 +1,7 @@
 ---
 title: Aruhe - Stonepear
 category: entities
-tags: [shattered-sea, item, aruhe, consumable]
+tags: [shattered-sea, aruhe, item]
 sources: ["wiki/_raw/Aruhe - Stonepear.md"]
 summary: Rare Aruhe fruit that grants Resistance to all damage for one minute.
 provenance:

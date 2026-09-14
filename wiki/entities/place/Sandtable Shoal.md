@@ -1,7 +1,7 @@
 ---
 title: "Sandtable Shoal"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, place]
 sources: ["central-strait-crossing.md"]
 summary: "Mid-Strait sandbank south of Aldenmere that lifts the bottom and shifts the Blue Lane south."
 provenance:

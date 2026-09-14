@@ -1,7 +1,7 @@
 ---
 title: "Lizardfolk"
 category: entities
-tags: ["shattered-sea", "lore", "maritime"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:lizardfolk.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: "The Quiet"
 category: entities
-tags: ["shattered-sea", "region", "aruhe", "rainforest", "quiet"]
+tags: [shattered-sea, aruhe, region]
 aliases: ["The Quiet", "Quiet", "Quiet Forest"]
 sources: ["[[Aruhe - Hungry Isle]]", "Aruhe - Quiet Forest.md", "[\"[[Aruhe - Hungry Isle]]\"]"]
 summary: "The Quiet is rainforest above the last terrace of [[Aruhe - Old Gardens]], where small life has been eaten out. The silence is that absence, not hidden birds. Sight dies in a few paces. A green rou..."

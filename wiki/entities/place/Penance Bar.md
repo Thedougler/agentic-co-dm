@@ -1,7 +1,7 @@
 ---
 title: "Penance Bar"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md", "penance-bar-siege.md", "quest-penance-bar.md"]
 summary: "A sandspit shrine doing endless penance for devils it never summoned; its priest is quietly paying off a debt of his own"
 provenance:

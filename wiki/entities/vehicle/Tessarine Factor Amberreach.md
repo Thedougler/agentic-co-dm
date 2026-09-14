@@ -1,7 +1,7 @@
 ---
 title: "Tessarine Factor Amberreach"
 category: entities
-tags: ["shattered-sea", "vehicle", "politics"]
+tags: [shattered-sea, vehicle]
 sources:
   - "campaign-os:tessarine-amberreach.md"
 created: 2026-09-13

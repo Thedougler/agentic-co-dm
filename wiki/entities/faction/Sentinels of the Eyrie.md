@@ -1,7 +1,7 @@
 ---
 title: Sentinels of the Eyrie
 category: entities
-tags: [shattered-sea, faction, sentinel, schism]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:sentinels-of-the-eyrie.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-sentinels-of-the-eyrie.md"

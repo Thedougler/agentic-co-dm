@@ -1,7 +1,7 @@
 ---
 title: "Purple-Caste Zealot"
 category: entities
-tags: ["shattered-sea", "creature", "combat"]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:purple-caste-zealot.md"
 created: 2026-09-13

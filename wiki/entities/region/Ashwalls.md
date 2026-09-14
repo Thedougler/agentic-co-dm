@@ -1,7 +1,7 @@
 ---
 title: "Ashwalls"
 category: entities
-tags: ["shattered-sea", "region", "volcanic", "crossing"]
+tags: [shattered-sea, region]
 sources: ["Ashwalls.md", "ashwall-islands.md"]
 summary: "Cold volcanic spires at the Galewall edge: last ground west, first lee east, with vent fauna and arclight phoenix hatch signs."
 provenance:

@@ -1,7 +1,7 @@
 ---
 title: Western Landing
 category: entities
-tags: [shattered-sea, place, aruhe, landing, reef]
+tags: [shattered-sea, aruhe, place]
 aliases: [Western Landing, Aruhe Beach]
 sources: ["[[Aruhe - Hungry Isle]]", "Aruhe - Beach.md"]
 summary: Aruhe's known sea approach: a reef gap, a short shingle beach, and a retreat that depends on tide and surf.

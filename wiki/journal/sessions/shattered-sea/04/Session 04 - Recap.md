@@ -1,7 +1,7 @@
 ---
 title: Session 04 - Recap
 category: journal
-tags: [shattered-sea, recap, session]
+tags: [shattered-sea, recap]
 sources: ["Session 04 - Recap.md"]
 summary: Delmar confessed the Pearl theft; Umberlee named her price; the Warren raid took Felix Aho two days before festival bombs.
 provenance:

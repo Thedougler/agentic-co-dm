@@ -1,7 +1,7 @@
 ---
 title: "Marenui"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "A floating market of lashed hulls that relocates every night; findable only by rumor"
 provenance:

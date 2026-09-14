@@ -1,7 +1,7 @@
 ---
 title: "Gallowmere"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "A former execution island whose ghost trials reportedly still run after midnight"
 provenance:

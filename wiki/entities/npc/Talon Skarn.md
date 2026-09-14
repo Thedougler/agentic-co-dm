@@ -1,7 +1,7 @@
 ---
 title: Talon Skarn
 category: entities
-tags: [shattered-sea, npc, countless]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:talon-skarn.md"
   - "wiki/_archive/Talon Skarn.md"

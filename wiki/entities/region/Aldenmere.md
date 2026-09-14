@@ -1,7 +1,7 @@
 ---
 title: Aldenmere
 category: entities
-tags: [shattered-sea, region, crown-islands]
+tags: [shattered-sea, region]
 sources: ["Aldenmere.md"]
 summary: Quiet Crown farm island with a mile-wide tidal mere; a revenue officer collects the fishing tithe twice a year and leaves.
 provenance:

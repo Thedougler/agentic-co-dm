@@ -1,7 +1,7 @@
 ---
 title: "Ironmantle"
 category: entities
-tags: ["shattered-sea", "vehicle", "maritime"]
+tags: [shattered-sea, vehicle]
 sources:
   - "campaign-os:ironmantle.md"
 created: 2026-09-13

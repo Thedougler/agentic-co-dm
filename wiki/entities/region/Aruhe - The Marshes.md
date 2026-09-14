@@ -1,7 +1,7 @@
 ---
 title: "The Marshes"
 category: entities
-tags: ["shattered-sea", "region", "aruhe", "marsh", "wetlands"]
+tags: [shattered-sea, aruhe, region]
 aliases: ["The Marshes", "The Marsh", "Aruhe Marshes", "The Rot"]
 sources: ["[[Aruhe - Hungry Isle]]", "Aruhe - The Marshes.md", "[\"[[Aruhe - Hungry Isle]]\"]"]
 summary: "The Marshes begin along the wet southern shore of [[Aruhe - Clear Lake|Clear Lake]] and spread downhill through flooded rainforest before tightening into [[Aruhe - The Mangroves|the Mangroves]] nea..."

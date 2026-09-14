@@ -1,7 +1,7 @@
 ---
 title: "Nigel Strutt"
 category: entities
-tags: ["shattered-sea", "npc", "comedy"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:nigel-strutt.md"
 created: 2026-09-13

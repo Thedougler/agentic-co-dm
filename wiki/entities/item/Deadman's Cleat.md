@@ -1,7 +1,7 @@
 ---
 title: "Deadman's Cleat"
 category: entities
-tags: ["shattered-sea", "item", "salvage", "maritime", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:deadmans-cleat.md"
 created: 2026-09-13

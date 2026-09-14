@@ -1,7 +1,7 @@
 ---
 title: "Minotaur Culture"
 category: entities
-tags: ["shattered-sea", "lore", "maritime"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:minotaur-culture.md"
 created: 2026-09-13

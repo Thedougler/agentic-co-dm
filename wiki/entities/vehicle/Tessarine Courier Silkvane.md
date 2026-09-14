@@ -1,7 +1,7 @@
 ---
 title: "Tessarine Courier Silkvane"
 category: entities
-tags: ["shattered-sea", "vehicle", "politics"]
+tags: [shattered-sea, vehicle]
 sources:
   - "campaign-os:tessarine-silkvane.md"
 created: 2026-09-13

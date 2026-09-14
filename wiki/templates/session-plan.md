@@ -1,7 +1,7 @@
 ---
 title: "{{title}}"
 category: journal
-tags: [session-plan]
+tags: [shattered-sea, session-prep]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD

@@ -1,7 +1,7 @@
 ---
 title: "Vine Lash"
 category: entities
-tags: [shattered-sea, creature, aruhe]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "campaign-os:vine-lash.md"
   - "/workspace/midchain-ingest/group-a/monsters/Vine Lash.md"

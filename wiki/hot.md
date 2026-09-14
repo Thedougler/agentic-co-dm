@@ -1,10 +1,10 @@
 ---
-updated: 2026-09-14T00:00:00Z
+updated: 2026-09-14T20:46:15Z
 ---
 ## Recent Activity
+Cleaned 638 active pages to canonical campaign/type tags; removed 882 legacy tags and expanded the type vocabulary.
 Updated [[Aruhe - Spiguar]] from a visual reference sheet: golden-brown rosettes, amber eyes, ivory saber teeth, and a dense leaf-and-grass camouflage mantle now anchor the creature's appearance.
 Updated [[Auralis]] from a visual reference sheet: an eight-foot hooded arcane automaton with silver-gold filigree armor, blue-white eyes and core, blue-gray embroidered cloak, and luminous orb staff.
-Filed both reference sheets as durable wiki attachments and recorded their source provenance.
 ## Active Threads
 - Aruhe expedition pressure (Blight/Hinewai, wreck rescue, Taking law) now backed by COS situation and creature sheets on entity pages.
 - Auralis's unresolved public-divine and Antheri-machine layers remain linked to Perrin's unwitting patron bond and the Drowned Maw fissure.

@@ -1,7 +1,7 @@
 ---
 title: "Enkoa"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-south.md"]
 summary: "A hermit sorcerer's warded island; trades rare components only for equally rare favors; never coin"
 provenance:

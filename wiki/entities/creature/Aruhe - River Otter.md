@@ -1,7 +1,7 @@
 ---
 title: Aruhe - River Otter
 category: entities
-tags: [shattered-sea, creature, aruhe]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "house (wiki creature.aruhe-river-otter; living-stock 2026-09-05; individual chassis provisional)"
 summary: CR 4 controller that shifts from playful gear-tugging to coordinated underwater grapples; pale chest marks identify family members.

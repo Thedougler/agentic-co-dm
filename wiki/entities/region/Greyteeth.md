@@ -1,7 +1,7 @@
 ---
 title: "Greyteeth"
 category: entities
-tags: ["shattered-sea", "region", "reef", "crown-islands", "secret-arrangement"]
+tags: [shattered-sea, region]
 sources: ["Greyteeth.md"]
 summary: "Long pale reef ridges breaking the surface between the Crown Islands; three generations of charts have failed to make them ordinary water."
 provenance:

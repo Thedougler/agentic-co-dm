@@ -1,7 +1,7 @@
 ---
 title: "Branimir Karsovine"
 category: entities
-tags: ["shattered-sea", "npc", "voyvode"]
+tags: [shattered-sea, npc]
 sources:
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-voyvode-works.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/situation-fathomrushs-split-harbor.md"

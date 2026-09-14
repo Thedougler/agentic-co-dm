@@ -1,7 +1,7 @@
 ---
 title: "Terror-Birds"
 category: entities
-tags: ["shattered-sea", "creature", "horror", "exploration"]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:terror-birds.md"
 created: 2026-09-13

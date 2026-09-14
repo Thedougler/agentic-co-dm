@@ -1,10 +1,7 @@
 ---
 title: Session 11 — Angry Birds
 category: journal
-tags:
-  - hook
-  - session-prep
-  - shattered-sea
+tags: [shattered-sea, session-prep]
 sources:
   - "[[Session-11-00-Birds-of-a-Feather]]"
   - "[[journal/sessions/shattered-sea/recaps/Session 10 - Recap]]"

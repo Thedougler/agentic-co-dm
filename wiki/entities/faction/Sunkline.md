@@ -1,7 +1,7 @@
 ---
 title: Sunkline
 category: entities
-tags: [shattered-sea, faction, sunkline, maw, salvage, tessarine]
+tags: [shattered-sea, faction]
 sources:
   - "inbox/archive/FILED-2026-09-05-tessarine-concordat.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-sunkline-company.md"

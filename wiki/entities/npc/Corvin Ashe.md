@@ -1,7 +1,7 @@
 ---
 title: "Corvin Ashe"
 category: entities
-tags: [npc, shattered-sea, maritime, faith]
+tags: [shattered-sea, npc]
 sources:
   - "wiki/_archive/corvin-ashe.md"
   - "wiki/_archive/penance-bar-siege.md"

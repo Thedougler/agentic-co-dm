@@ -1,7 +1,7 @@
 ---
 title: "The Tarahs"
 category: entities
-tags: ["shattered-sea", "faction", "intrigue"]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:tarahs.md"
 created: 2026-09-13

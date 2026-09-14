@@ -1,7 +1,7 @@
 ---
 title: "Unclaimed Delicacy Tin"
 category: entities
-tags: ["shattered-sea", "item", "maritime"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:unclaimed-delicacy-tin.md"
 created: 2026-09-13

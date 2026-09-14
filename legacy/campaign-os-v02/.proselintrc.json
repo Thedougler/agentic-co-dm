@@ -1,8 +1,0 @@
-{
-  "checks": {
-    "lexical_illusions": false,
-    "typography": false,
-    "cliches": false
-  },
-  "max_errors": 1000
-}

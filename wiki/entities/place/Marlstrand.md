@@ -1,7 +1,7 @@
 ---
 title: "Marlstrand"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "Oracles read accurate futures in the pattern of stranded jellyfish"
 provenance:

@@ -1,7 +1,7 @@
 ---
 title: "Harbor Merchant's Chalk"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "craft"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:harbor-merchants-chalk.md"
 created: 2026-09-13

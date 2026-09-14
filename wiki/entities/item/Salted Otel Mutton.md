@@ -1,7 +1,7 @@
 ---
 title: "Salted Otel Mutton"
 category: entities
-tags: ["shattered-sea", "item", "survival", "mystery"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:salted-otel-mutton.md"
 created: 2026-09-13

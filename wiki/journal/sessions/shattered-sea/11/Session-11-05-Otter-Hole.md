@@ -1,7 +1,7 @@
 ---
 title: Session 11 — Rescue at the otter hole
 category: journal
-tags: [session-prep, run-guide, shattered-sea, cliffhanger]
+tags: [shattered-sea, session-prep]
 sources:
   - "journal/sessions/shattered-sea/11/Session-11-05-Otter-Hole.md"
 created: 2026-09-13

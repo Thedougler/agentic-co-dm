@@ -1,7 +1,7 @@
 ---
 title: "Second Billing Placard"
 category: entities
-tags: ["shattered-sea", "item", "comedy", "intrigue", "common"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:second-billing-placard.md"
 created: 2026-09-13

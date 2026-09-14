@@ -1,7 +1,7 @@
 ---
 title: "Bisou"
 category: entities
-tags: ["shattered-sea", "npc", "maritime"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:bisou.md"
 created: 2026-09-13

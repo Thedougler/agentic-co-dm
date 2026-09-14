@@ -1,7 +1,7 @@
 ---
 title: Session 11 — The farthest camp
 category: journal
-tags: [session-prep, run-guide, shattered-sea, development]
+tags: [shattered-sea, session-prep]
 sources:
   - "journal/sessions/shattered-sea/11/Session-11-06-Farthest-Camp.md"
 created: 2026-09-13

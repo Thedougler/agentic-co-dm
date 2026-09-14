@@ -1,7 +1,7 @@
 ---
 title: Bloodhawk
 category: entities
-tags: [shattered-sea, creature, aruhe, apex-predator, aerial]
+tags: [shattered-sea, aruhe, creature]
 aliases: [Bloodhawk]
 sources:
   - "wiki/_archive/Bloodhawk.md"

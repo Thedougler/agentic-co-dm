@@ -1,7 +1,7 @@
 ---
 title: "Blackrail"
 category: entities
-tags: [shattered-sea, creature, aruhe]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "/workspace/midchain-ingest/group-a/monsters/Blackrail.md"
 summary: "CR 9 huge cave centipede that telegraphs with tremors, rushes main tubes, and pins prey with venomous segments."

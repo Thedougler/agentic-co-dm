@@ -1,7 +1,7 @@
 ---
 title: "Kalowe"
 category: entities
-tags: ["shattered-sea", "place", "free-port"]
+tags: [shattered-sea, place]
 sources: ["Kalowe.md"]
 summary: "Three reef-linked islets joined by stone bridges, ringed by reef with one navigable gap; feels crowded, practical, and deliberately unpapered."
 provenance:

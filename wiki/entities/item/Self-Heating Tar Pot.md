@@ -1,7 +1,7 @@
 ---
 title: "Self-Heating Tar Pot"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "craft"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:self-heating-tar-pot.md"
 created: 2026-09-13

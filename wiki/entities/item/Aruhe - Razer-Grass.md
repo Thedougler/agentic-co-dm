@@ -1,7 +1,7 @@
 ---
 title: Aruhe - Razer-Grass
 category: entities
-tags: [shattered-sea, hazard, aruhe, flora]
+tags: [shattered-sea, aruhe, item]
 sources:
   - "house (wiki hazard.razer-grass)"
 summary: Pale glass-edged grass that cuts movers, explodes when shattered, and fills the air with choking mineral dust.

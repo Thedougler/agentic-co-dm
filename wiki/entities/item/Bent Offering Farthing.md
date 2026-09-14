@@ -1,7 +1,7 @@
 ---
 title: "Bent Offering Farthing"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "faith"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:bent-offering-farthing.md"
 created: 2026-09-13

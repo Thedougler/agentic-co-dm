@@ -1,7 +1,7 @@
 ---
 title: "Gost"
 category: entities
-tags: [npc, shattered-sea, combat]
+tags: [shattered-sea, npc]
 sources:
   - "wiki/_archive/gost.md"
   - "campaign-os:gost.md"

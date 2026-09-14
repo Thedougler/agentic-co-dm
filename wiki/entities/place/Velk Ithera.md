@@ -1,7 +1,7 @@
 ---
 title: "Velk Ithera"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-south.md"]
 summary: "A hillside carpeted in one connected fungal organism that reacts; faintly; to sound"
 provenance:

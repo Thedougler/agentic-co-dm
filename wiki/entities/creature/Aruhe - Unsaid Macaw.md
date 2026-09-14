@@ -1,7 +1,7 @@
 ---
 title: Aruhe - Unsaid Macaw
 category: entities
-tags: [shattered-sea, creature, aruhe, fauna]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "house (wiki creature.unsaid-macaw; living-stock 2026-09-05)"
 summary: A macaw that echoes a listener's surface thought in their own voice and can briefly compel one truthful sentence.

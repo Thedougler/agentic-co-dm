@@ -1,7 +1,7 @@
 ---
 title: "Sorn Guarded Beach"
 category: entities
-tags: ["shattered-sea", "place", "grung", "beach", "sorn"]
+tags: [shattered-sea, place]
 sources: ["Sorn Guarded Beach.md"]
 summary: "Sorn's held landing and Simone's post. The last hundred yards are recut as policy; the interior is not open."
 provenance:

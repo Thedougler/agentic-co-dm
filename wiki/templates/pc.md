@@ -1,7 +1,7 @@
 ---
 title: "{{title}}"
 category: entities
-tags: [pc]
+tags: [shattered-sea, pc]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD

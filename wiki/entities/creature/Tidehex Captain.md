@@ -1,7 +1,7 @@
 ---
 title: "Tidehex Captain"
 category: entities
-tags: ["shattered-sea", "creature", "combat", "intrigue"]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:tidehex-captain.md"
 created: 2026-09-13

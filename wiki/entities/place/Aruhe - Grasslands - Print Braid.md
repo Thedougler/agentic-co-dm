@@ -1,12 +1,7 @@
 ---
 title: Print Braid
 category: entities
-tags:
-  - shattered-sea
-  - place
-  - aruhe
-  - grasslands
-  - river
+tags: [shattered-sea, aruhe, place]
 sources:
   - "Aruhe - Grasslands - Print Braid.md"
 created: 2026-09-12

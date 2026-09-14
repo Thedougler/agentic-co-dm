@@ -1,7 +1,7 @@
 ---
 title: "Heft"
 category: entities
-tags: ["shattered-sea", "vehicle", "combat"]
+tags: [shattered-sea, vehicle]
 sources:
   - "campaign-os:heft.md"
 created: 2026-09-13

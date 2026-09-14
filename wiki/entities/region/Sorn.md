@@ -1,7 +1,7 @@
 ---
 title: "Sorn"
 category: entities
-tags: ["shattered-sea", "region", "grung", "verdant-teeth", "sorn"]
+tags: [shattered-sea, region]
 sources: ["Sorn.md", "wiki/_raw/Grung clans.md"]
 summary: "Sorn is the farm heart of the Teeth: flood-pulse v\u00e1rzea, Botukuri lanes, and one guarded beach. The beach stays clean because someone recuts it; the forest is already taking the next row."
 provenance:

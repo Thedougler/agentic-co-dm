@@ -1,7 +1,7 @@
 ---
 title: "Cade's Fortune"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "A dozen expeditions have surveyed this "treasure island;" each certain the map was almost right"
 provenance:

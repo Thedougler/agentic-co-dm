@@ -1,7 +1,7 @@
 ---
 title: "Sump Cradle"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-south.md"]
 summary: "Genuinely curative hot mud; always with one small; strange; permanent side effect"
 provenance:

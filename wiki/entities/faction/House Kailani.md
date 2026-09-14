@@ -1,7 +1,7 @@
 ---
 title: "House Kailani"
 category: entities
-tags: ["shattered-sea", "faction", "maritime", "intrigue", "trade"]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:house-kailani.md"
 created: 2026-09-13

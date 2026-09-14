@@ -1,7 +1,7 @@
 ---
 title: Rael Corven
 category: entities
-tags: [shattered-sea, npc, fleet]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:rael-corven-voice-script.md"
   - "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md"

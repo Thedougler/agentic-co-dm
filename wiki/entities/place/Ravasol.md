@@ -1,7 +1,7 @@
 ---
 title: "Ravasol"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-south.md"]
 summary: "Stilt village whose real business happens on the rooftops; run by a network of gossiping children"
 provenance:

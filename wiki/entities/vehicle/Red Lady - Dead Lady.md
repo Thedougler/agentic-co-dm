@@ -1,7 +1,7 @@
 ---
 title: Red Lady / Dead Lady
 category: entities
-tags: [shattered-sea, vehicle, ship, red-wake]
+tags: [shattered-sea, vehicle]
 aliases: [Red Lady, Dead Lady]
 sources:
   - "campaign-os:dead-lady.md"

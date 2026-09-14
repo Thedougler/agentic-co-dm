@@ -1,7 +1,7 @@
 ---
 title: Auralis
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, lore]
 sources:
   - "wiki/_raw/Grung clans.md"
   - "campaign-os:auralis.md"

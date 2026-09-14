@@ -1,7 +1,7 @@
 ---
 title: "Sorrowbell"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, place]
 sources: ["penance-bar-siege.md"]
 summary: "Headland shrine at Penance Bar where the locked Tyr-box confrontation plays."
 provenance:

@@ -1,7 +1,7 @@
 ---
 title: Aruhe - Terror-Bird
 category: entities
-tags: [shattered-sea, creature, aruhe]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "house (wiki creature.terror-bird; living-stock 2026-09-05)"
 summary: CR 13 solitary bruiser that announces its charge through the ground, grapples prey with its beak, and swallows isolated targets.

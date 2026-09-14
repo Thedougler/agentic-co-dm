@@ -1,7 +1,7 @@
 ---
 title: "Vault of the First Factor"
 category: entities
-tags: ["shattered-sea", "place", "tessarine", "vault", "midchain"]
+tags: [shattered-sea, place]
 sources: ["Vault of the First Factor.md"]
 summary: "An uncharted limestone spire in the Midchain jungle, said to hold collateral that outlived the debtors who left it. The place is unconfirmed and unmapped."
 provenance:

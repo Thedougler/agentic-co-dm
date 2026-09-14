@@ -1,7 +1,7 @@
 ---
 title: "The Bad Receipt"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, vehicle]
 sources: ["central-strait-crossing.md"]
 summary: "Named operator known to work the southern approaches of the Calveno-Kalowe crossing."
 provenance:

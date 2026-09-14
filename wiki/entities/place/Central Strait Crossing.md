@@ -1,7 +1,7 @@
 ---
 title: Central Strait Crossing
 category: entities
-tags: [shattered-sea, place, route]
+tags: [shattered-sea, place]
 aliases: [The Blue Lane, Blue Lane]
 sources: ["central-strait-crossing-narration-condition.md", "central-strait-crossing.md"]
 summary: Five-to-six-day open-water Blue Lane between Calveno and Kalowe, with no nearby shore if a hull comes to grief.

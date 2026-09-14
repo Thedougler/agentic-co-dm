@@ -1,7 +1,7 @@
 ---
 title: "The Ledger Isle"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "A reclusive accountant-sorcerer holds the true books behind half the region's smuggling"
 provenance:

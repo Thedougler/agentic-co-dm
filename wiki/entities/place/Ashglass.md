@@ -1,7 +1,7 @@
 ---
 title: Ashglass
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources:
   - "aleksander-malone.md"
   - "ash-caldera-dragon.md"

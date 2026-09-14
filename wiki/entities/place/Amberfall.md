@@ -1,7 +1,7 @@
 ---
 title: "Amberfall"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "Amber-mining island whose petrified specimens preserve small creatures mid-motion. Some swear they're still moving"
 provenance:

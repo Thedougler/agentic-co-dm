@@ -1,7 +1,7 @@
 ---
 title: Redheart Berry
 category: entities
-tags: [shattered-sea, item, aruhe, consumable]
+tags: [shattered-sea, aruhe, item]
 sources: ["wiki/_archive/Redheart Berry.md"]
 summary: A rare Aruhe berry that restores 8d4 + 8 hit points as a Bonus Action.
 provenance:

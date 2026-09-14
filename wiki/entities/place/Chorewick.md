@@ -1,7 +1,7 @@
 ---
 title: "Chorewick"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "A cooperative of escaped indentured workers; strict and fair; deeply suspicious of the well-dressed"
 provenance:

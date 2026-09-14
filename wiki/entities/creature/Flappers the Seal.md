@@ -1,7 +1,7 @@
 ---
 title: "Flappers the Seal"
 category: entities
-tags: ["shattered-sea", "creature", "maritime"]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:flappers-the-seal.md"
 created: 2026-09-13

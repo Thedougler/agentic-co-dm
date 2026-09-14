@@ -1,7 +1,7 @@
 ---
 title: Otho
 category: entities
-tags: [shattered-sea, npc, archfey, khlysty]
+tags: [shattered-sea, npc]
 sources:
   - "Khlysty - the Flock.md"
   - "campaign-os:otho.md"

@@ -1,7 +1,7 @@
 ---
 title: "Yevgenia Sorrel"
 category: entities
-tags: ["shattered-sea", "npc", "sunkline"]
+tags: [shattered-sea, npc]
 sources:
   - "inbox/archive/FILED-2026-09-05-tessarine-concordat.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-sunkline-company.md"

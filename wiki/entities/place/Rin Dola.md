@@ -1,7 +1,7 @@
 ---
 title: "Rin Dola"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "A reclusive cartographer sells uncannily accurate charts of places she insists she's never visited"
 provenance:

@@ -1,7 +1,7 @@
 ---
 title: "Dessa Wule"
 category: entities
-tags: ["shattered-sea", "npc", "maritime", "faith", "horror"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:dessa-wule.md"
 created: 2026-09-13

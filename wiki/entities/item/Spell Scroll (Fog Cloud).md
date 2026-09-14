@@ -1,7 +1,7 @@
 ---
 title: "Spell Scroll (Fog Cloud)"
 category: entities
-tags: ["shattered-sea", "item", "common"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:spell-scroll-fog-cloud.md"
 created: 2026-09-13

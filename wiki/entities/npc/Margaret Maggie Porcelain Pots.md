@@ -1,7 +1,7 @@
 ---
 title: "Margaret Maggie Porcelain Pots"
 category: entities
-tags: ["shattered-sea", "npc", "romance"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:margaret-porcelain-pots.md"
 created: 2026-09-13

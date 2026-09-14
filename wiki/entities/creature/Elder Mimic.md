@@ -1,7 +1,7 @@
 ---
 title: "Elder Mimic"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, creature]
 sources: ["the-unplotted.md"]
 summary: "Doctrine source for The Unplotted: stop being a chest; be the shelter they choose."
 provenance:

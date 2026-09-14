@@ -1,7 +1,7 @@
 ---
 title: "Vial of Uncertain Healing"
 category: entities
-tags: ["shattered-sea", "item", "comedy", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:vial-of-uncertain-healing.md"
 created: 2026-09-13

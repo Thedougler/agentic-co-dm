@@ -1,7 +1,7 @@
 ---
 title: "The Unplotted"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["the-unplotted.md", "midchain-east.md"]
 summary: "Never in the same place on two charts; yet ships always find it exactly where they need it"
 provenance:

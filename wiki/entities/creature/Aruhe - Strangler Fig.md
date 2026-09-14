@@ -1,7 +1,7 @@
 ---
 title: "Aruhe - Strangler Fig"
 category: entities
-tags: [shattered-sea, creature, aruhe]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "campaign-os:strangler-fig.md"
   - "/workspace/midchain-ingest/group-a/monsters/Strangler Fig.md"

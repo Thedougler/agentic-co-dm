@@ -1,7 +1,7 @@
 ---
 title: Simone's hunters
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, quest]
 sources:
   - "wiki/_raw/Grung clans.md"
 summary: Family-pressure thread around Simone's report, leak hunt, and toxin stock against Jean-Claude and his allies.

@@ -19,12 +19,6 @@ collections:
     includeByDefault: false
     context:
       "": "Older Campaign OS wiki. Not canon. Search after shattered-sea silence. Never write here."
-  legacy:
-    path: legacy
-    pattern: "**/*.md"
-    includeByDefault: false
-    context:
-      "": "Local Campaign OS archive under legacy/. Not canon. Opt-in only: -c legacy. Do not mix with wiki, shattered-sea, or legacy-ss."
 models:
   embed: hf:ggml-org/embeddinggemma-300M-GGUF/embeddinggemma-300M-Q8_0.gguf
   generate: hf:tobil/qmd-query-expansion-1.7B-gguf/qmd-query-expansion-1.7B-q4_k_m.gguf

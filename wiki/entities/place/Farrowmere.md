@@ -1,7 +1,7 @@
 ---
 title: "Farrowmere"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "Locals farm a colony of dire crocodiles instead of fighting them"
 provenance:

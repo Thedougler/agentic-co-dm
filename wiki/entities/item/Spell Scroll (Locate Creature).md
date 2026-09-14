@@ -1,7 +1,7 @@
 ---
 title: "Spell Scroll (Locate Creature)"
 category: entities
-tags: ["shattered-sea", "item", "rare"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:spell-scroll-locate-creature.md"
 created: 2026-09-13

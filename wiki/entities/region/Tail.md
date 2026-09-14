@@ -1,7 +1,7 @@
 ---
 title: "Tail"
 category: entities
-tags: ["shattered-sea", "region", "tail", "maw"]
+tags: [shattered-sea, region]
 sources: ["Tail.md"]
 summary: "The eastern pinch where both arcs become fewer, taller islands and cold trench-coloured water; feels like land narrowing into a warning."
 provenance:

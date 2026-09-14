@@ -1,7 +1,7 @@
 ---
 title: Rattkin Runs and Black-Jaw Run
 category: entities
-tags: [shattered-sea, faction, rattkin, black-jaw]
+tags: [shattered-sea, faction]
 sources:
   - "Rattkin Runs and Black-Jaw Run.md"
 summary: "Rattkin family Runs that move people by coded trust; Nona and Perrin Black-Jaw are the visible faces."

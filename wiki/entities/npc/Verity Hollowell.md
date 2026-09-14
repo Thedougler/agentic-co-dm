@@ -1,7 +1,7 @@
 ---
 title: "Verity Hollowell"
 category: entities
-tags: ["shattered-sea", "npc", "romance"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:verity-hollowell.md"
 created: 2026-09-13

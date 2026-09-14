@@ -1,7 +1,7 @@
 ---
 title: "Silence Moths"
 category: entities
-tags: [shattered-sea, creature, aruhe]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "campaign-os:silence-moths.md"
   - "/workspace/midchain-ingest/group-a/monsters/Silence Moths.md"

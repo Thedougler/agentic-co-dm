@@ -1,7 +1,7 @@
 ---
 title: "The Snap"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:the-snap.md"
 created: 2026-09-13

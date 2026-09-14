@@ -1,7 +1,7 @@
 ---
 title: Krakling
 category: entities
-tags: [shattered-sea, creature, maw]
+tags: [shattered-sea, creature]
 sources: ["elemental-plane-of-water.md"]
 summary: Juvenile arm-predator sailors report near Midchain; third named entity through the Maw fissure.
 provenance:

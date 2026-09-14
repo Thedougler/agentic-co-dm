@@ -1,7 +1,7 @@
 ---
 title: "Serena Cottle"
 category: entities
-tags: ["shattered-sea", "npc", "comedy"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:serena-cottle.md"
 created: 2026-09-13

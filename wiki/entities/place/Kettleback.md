@@ -1,7 +1,7 @@
 ---
 title: "Kettleback"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "Old mine tunnels running hot off a geothermal vent; repurposed into an unlicensed alchemical lab"
 provenance:

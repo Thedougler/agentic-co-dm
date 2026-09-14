@@ -1,7 +1,7 @@
 ---
 title: "Human"
 category: entities
-tags: ["shattered-sea", "lore", "mystery"]
+tags: [shattered-sea, lore]
 sources:
   - "campaign-os:human.md"
 created: 2026-09-13

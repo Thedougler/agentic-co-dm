@@ -1,7 +1,7 @@
 ---
 title: "Salvage-Plate Harness"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "combat", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:salvage-plate-harness.md"
 created: 2026-09-13

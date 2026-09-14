@@ -1,7 +1,7 @@
 ---
 title: "Stenmark"
 category: entities
-tags: ["shattered-sea", "region", "crown-islands", "cold-water", "watch"]
+tags: [shattered-sea, region]
 sources: ["Stenmark.md"]
 summary: "The easternmost Crown island: stone cliffs, cold deep water, a harbour face, thin farmland, and a signal station watching the discoloured water where the [[Drowned Maw]] begins."
 provenance:

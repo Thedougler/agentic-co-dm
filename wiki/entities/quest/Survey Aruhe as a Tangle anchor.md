@@ -1,7 +1,7 @@
 ---
 title: Survey Aruhe as a Tangle anchor
 category: entities
-tags: [shattered-sea, aruhe]
+tags: [shattered-sea, aruhe, quest]
 sources:
   - "quest-aruhe-castaways.md"
   - "inbox/archive/FILED-2026-09-05-tessarine-concordat.md"

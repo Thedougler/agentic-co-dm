@@ -1,7 +1,7 @@
 ---
 title: "Hunter's Blend"
 category: entities
-tags: ["shattered-sea", "item", "intrigue", "uncommon"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:hunters-blend.md"
 created: 2026-09-13

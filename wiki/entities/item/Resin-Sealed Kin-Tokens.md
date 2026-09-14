@@ -1,7 +1,7 @@
 ---
 title: "Resin-Sealed Kin-Tokens"
 category: entities
-tags: ["shattered-sea", "item", "intrigue"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:resin-sealed-kin-tokens.md"
 created: 2026-09-13

@@ -1,7 +1,7 @@
 ---
 title: "Nico Renzetti"
 category: entities
-tags: [npc, shattered-sea]
+tags: [shattered-sea, npc]
 sources:
   - "wiki/_archive/nico-renzetti.md"
   - "wiki/_archive/nico-renzetti-narration-appearance.md"

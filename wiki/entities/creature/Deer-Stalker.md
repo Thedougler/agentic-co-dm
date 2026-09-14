@@ -1,7 +1,7 @@
 ---
 title: Deer-Stalker
 category: entities
-tags: [shattered-sea, creature, aruhe, ambusher]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "campaign-os:deer-stalkers.md"
   - "house (wiki creature.deer-stalker, upgraded)"

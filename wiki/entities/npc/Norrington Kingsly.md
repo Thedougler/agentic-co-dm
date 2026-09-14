@@ -1,7 +1,7 @@
 ---
 title: "Norrington Kingsly"
 category: entities
-tags: ["shattered-sea", "npc", "intrigue"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:norrington-kingsly.md"
 created: 2026-09-13

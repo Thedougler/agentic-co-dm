@@ -1,7 +1,7 @@
 ---
 title: "Venom-Cut Poultice"
 category: entities
-tags: ["shattered-sea", "item", "exploration", "common"]
+tags: [shattered-sea, item]
 sources:
   - "wiki/_archive/common/venom-cut-poultice.md"
   - "campaign-os:venom-cut-poultice.md"

@@ -1,7 +1,7 @@
 ---
 title: Uncertainty
 category: entities
-tags: [shattered-sea, vehicle, ship]
+tags: [shattered-sea, vehicle]
 sources:
   - "campaign-os:uncertainty-narration-appearance.md"
   - "Session 02 - Recap.md"

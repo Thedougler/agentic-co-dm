@@ -1,7 +1,7 @@
 ---
 title: Ghost Plum
 category: entities
-tags: [shattered-sea, item, aruhe, consumable]
+tags: [shattered-sea, aruhe, item]
 sources:
   - "wiki/_archive/Ghost Plum.md"
   - "wiki/_raw/Aruhe - Ghost Plum.md"

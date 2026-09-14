@@ -1,7 +1,7 @@
 ---
 title: "Corvin Knighton"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, npc]
 sources: ["grigori-ascension.md"]
 summary: "Young bladesong wizard and Rupert Knighton's heir; Grigori's intended Dravosi bind."
 provenance:

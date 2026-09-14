@@ -1,7 +1,7 @@
 ---
 title: "Ottavia Renzetti"
 category: entities
-tags: ["shattered-sea", "npc", "maritime", "intrigue"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:ottavia-renzetti.md"
 created: 2026-09-13

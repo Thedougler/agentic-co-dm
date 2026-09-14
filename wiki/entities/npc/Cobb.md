@@ -1,7 +1,7 @@
 ---
 title: "Cobb"
 category: entities
-tags: ["shattered-sea", "npc", "passage", "intrigue"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:cobb.md"
 created: 2026-09-13

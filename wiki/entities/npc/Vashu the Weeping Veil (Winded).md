@@ -1,7 +1,7 @@
 ---
 title: "Vashu the Weeping Veil (Winded)"
 category: entities
-tags: ["shattered-sea", "npc", "combat"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:vashu-the-weeping-veil-winded.md"
 created: 2026-09-13

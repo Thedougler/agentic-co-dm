@@ -1,7 +1,7 @@
 ---
 title: "Sula Marn"
 category: entities
-tags: [npc, shattered-sea, maritime]
+tags: [shattered-sea, npc]
 sources:
   - "wiki/_archive/sula-marn.md"
   - "wiki/_archive/penance-bar-siege.md"

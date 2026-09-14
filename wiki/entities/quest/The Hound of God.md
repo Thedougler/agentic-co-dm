@@ -1,7 +1,7 @@
 ---
 title: "The Hound of God"
 category: entities
-tags: ["shattered-sea", "quest", "faith", "intrigue", "politics"]
+tags: [shattered-sea, quest]
 sources:
   - "campaign-os:the-hound-of-god.md"
 created: 2026-09-13

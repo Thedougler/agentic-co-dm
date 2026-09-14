@@ -1,7 +1,7 @@
 ---
 title: Dravosi Deckhand
 category: entities
-tags: [shattered-sea, creature, dravosi-crown]
+tags: [shattered-sea, creature]
 sources:
   - "campaign-os:dravosi-deckhand.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/boarding-of-the-surety/creature.dravosi-deckhand.md"

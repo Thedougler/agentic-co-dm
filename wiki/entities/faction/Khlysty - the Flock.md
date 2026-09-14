@@ -1,7 +1,7 @@
 ---
 title: Khlysty / the Flock
 category: entities
-tags: [shattered-sea, faction, khlysty, flock, heresy]
+tags: [shattered-sea, faction]
 aliases: [Khlysty, the Flock]
 sources:
   - "Khlysty - the Flock.md"

@@ -1,7 +1,7 @@
 ---
 title: Session 11 — Aftermath
 category: journal
-tags: [session-prep, run-guide, shattered-sea, resolution]
+tags: [shattered-sea, session-prep]
 sources:
   - "journal/sessions/shattered-sea/11/Session-11-10-Aftermath.md"
 created: 2026-09-13

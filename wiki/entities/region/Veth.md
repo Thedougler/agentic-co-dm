@@ -1,7 +1,7 @@
 ---
 title: "Veth"
 category: entities
-tags: ["shattered-sea", "region", "grung", "verdant-teeth", "veth"]
+tags: [shattered-sea, region]
 sources: ["Veth.md", "wiki/_raw/Grung clans.md"]
 summary: "Veth is the largest of the five islands: old dry-ground rainforest, a western beach trade strip, and no pier. The beach is a concession; the stacked canopy behind it is closed."
 provenance:

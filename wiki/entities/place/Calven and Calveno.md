@@ -1,7 +1,7 @@
 ---
 title: "Calven and Calveno"
 category: entities
-tags: ["shattered-sea", "place", "calven", "calveno", "tessarine"]
+tags: [shattered-sea, calveno, place]
 sources: ["Calven and Calveno.md", "Session 03 - Recap.md", "Session 07 - Recap.md", "Session 08 - Recap.md", "Session 09 - Recap.md"]
 summary: "Calven is older, lower, and wetter: marsh, tidal flats, farms on a middle plateau, and one city on the only solid ground that would take a foundation. Calveno's harbour flies the Dravosi flag; the ..."
 provenance:

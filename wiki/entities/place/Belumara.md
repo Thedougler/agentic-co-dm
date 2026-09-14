@@ -1,7 +1,7 @@
 ---
 title: "Belumara"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "Sacred freshwater sinkhole lake; free to draw from if a pilot leaves an offering in one of the rim's bowls"
 provenance:

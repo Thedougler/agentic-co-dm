@@ -1,7 +1,7 @@
 ---
 title: Chain Council
 category: entities
-tags: [shattered-sea, faction, chain-council, pearl, maw, tessarine]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:chain-council.md"
   - "inbox/archive/FILED-2026-09-05-tessarine-concordat.md"

@@ -1,7 +1,7 @@
 ---
 title: Corah Vance
 category: entities
-tags: [shattered-sea, npc, dravosi-crown]
+tags: [shattered-sea, npc]
 sources: ["arc-malones-verdict.md"]
 summary: Crown inspection ensign named in a non-canon draft telling of the Sarn's Landing release.
 provenance:

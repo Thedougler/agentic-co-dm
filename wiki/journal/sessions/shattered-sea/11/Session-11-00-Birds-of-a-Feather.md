@@ -1,7 +1,7 @@
 ---
 title: "Session 11 — Birds of a Feather"
 category: journal
-tags: [session-plan, session-prep, shattered-sea]
+tags: [shattered-sea, session-prep]
 sources:
   - "Session-11-00-Birds-of-a-Feather.md"
 created: 2026-09-06

@@ -1,7 +1,7 @@
 ---
 title: "Ferrand's Wager"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
 summary: "A floating casino whose house always knows exactly how much you can afford to lose"
 provenance:

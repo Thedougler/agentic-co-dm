@@ -1,7 +1,7 @@
 ---
 title: Shepherd Grigori
 category: entities
-tags: [shattered-sea, npc, khlysty]
+tags: [shattered-sea, npc]
 sources:
   - "grigori-ascension.md"
   - "Khlysty - the Flock.md"

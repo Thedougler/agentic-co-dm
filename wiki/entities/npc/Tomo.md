@@ -1,7 +1,7 @@
 ---
 title: "Tomo"
 category: entities
-tags: [shattered-sea]
+tags: [shattered-sea, npc]
 sources: ["season-02-the-open-midchain.md"]
 summary: "Grung or wreck companion in the Season 2 draft who ate fruit and changed."
 provenance:

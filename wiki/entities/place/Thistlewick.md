@@ -1,7 +1,7 @@
 ---
 title: "Thistlewick"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
 summary: "Brambles that produce a mild narcotic effect on contact"
 provenance:

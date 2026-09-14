@@ -1,7 +1,7 @@
 ---
 title: "Wessa"
 category: entities
-tags: ["shattered-sea", "npc", "maritime"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:wessa.md"
 created: 2026-09-13

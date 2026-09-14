@@ -1,7 +1,7 @@
 ---
 title: "Candlemere"
 category: entities
-tags: [shattered-sea, place, midchain]
+tags: [shattered-sea, place]
 sources: ["midchain-south.md"]
 summary: "A cliffside shrine tending a flame that has never once gone out"
 provenance:

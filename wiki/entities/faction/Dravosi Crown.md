@@ -1,7 +1,7 @@
 ---
 title: Dravosi Crown
 category: entities
-tags: [shattered-sea, faction, crown, colonial, naval]
+tags: [shattered-sea, faction]
 sources:
   - "campaign-os:dravosi-crown.md"
   - "inbox/archive/FILED-2026-09-05-dravosi-crown.md"

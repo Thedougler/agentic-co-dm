@@ -1,7 +1,7 @@
 ---
 title: "Gnomish Rigging Block"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "craft"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:gnomish-rigging-block.md"
 created: 2026-09-13

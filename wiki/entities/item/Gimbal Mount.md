@@ -1,7 +1,7 @@
 ---
 title: "Gimbal Mount"
 category: entities
-tags: ["shattered-sea", "item", "maritime", "craft"]
+tags: [shattered-sea, item]
 sources:
   - "campaign-os:gimbal-mount.md"
 created: 2026-09-13

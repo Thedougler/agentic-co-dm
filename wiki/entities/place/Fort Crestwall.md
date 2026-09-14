@@ -1,7 +1,7 @@
 ---
 title: "Fort Crestwall"
 category: entities
-tags: ["shattered-sea", "place", "dravosi-crown"]
+tags: [shattered-sea, place]
 sources:
   - "inbox/archive/FILED-2026-09-05-dravosi-crown.md"
 summary: "Fort whose sealed vaults hold Aldric Drave's living bloodline chart."

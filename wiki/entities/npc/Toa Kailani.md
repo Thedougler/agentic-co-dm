@@ -1,7 +1,7 @@
 ---
 title: "Toa Kailani"
 category: entities
-tags: ["shattered-sea", "npc", "maritime", "intrigue"]
+tags: [shattered-sea, npc]
 sources:
   - "campaign-os:toa-kailani.md"
 created: 2026-09-13
