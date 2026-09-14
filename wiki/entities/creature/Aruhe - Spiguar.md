@@ -4,7 +4,7 @@ category: entities
 tags: [shattered-sea, creature, aruhe, grasslands]
 sources:
   - "house (rough draft and image concept 2026-09-08)"
-  - "wiki/_raw/spiguar-reference.png (visual reference sheet, 2026-09-14)"
+  - "wiki/attachments/spiguar-reference.png (visual reference sheet, 2026-09-14)"
 summary: CR 11 solitary grassland ambusher that pounces isolated prey, drags it into cover, and loses its edge in open terrain.
 provenance:
   extracted: 0.87

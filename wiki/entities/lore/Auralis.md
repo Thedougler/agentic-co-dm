@@ -5,7 +5,7 @@ tags: [shattered-sea]
 sources:
   - "wiki/_raw/Grung clans.md"
   - "campaign-os:auralis.md"
-  - "wiki/_raw/auralis-reference.png (visual reference sheet, 2026-09-14)"
+  - "wiki/attachments/auralis-reference.png (visual reference sheet, 2026-09-14)"
 summary: Public Grung mandate and name associated with a serene gold presence whose exact nature remains unknown.
 provenance:
   extracted: 0.82
