@@ -10,7 +10,7 @@ lifecycle: proposed
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
-status: alive
+summary: ""
 player: ""
 class_levels: ""
 level:
@@ -19,204 +19,189 @@ hp_max:
 init_mod:
 pp:
 speed: ""
-summary: ""
+status: alive
 ---
-<!-- Copy-start scaffold for type: pc.
+<!-- Copy-start scaffold for a canonical type: pc owner page.
 
-     Jobs (distinct from Person/npc): spoken look; orientation + play-pattern thesis;
-     named party/ship/faction ties; sheet + combat scan; abilities; spells (casters);
-     inventory; short session deltas; voice; art. No First meeting / posture change required.
-     Sheet + scan first — PC is not an NPC-with-tag.
-
-     INGEST (blocking remediation): Flatten satellite dumps (abilities / sheet / spells /
-     inventory / combat-profile / gallery / stats / session-combat-log) into the H2s below.
-     FORBID additional H1s — never nest `# {{title}} — Facet` or `# PlayerName` dumps.
-     Numbers live on this owner page. Other pages wikilink; they do not copy the sheet.
-     Omit empty sections. One Markdown treatment = one meaning (at-table scan).
-     Placeholders only — no invented lore.
-
+Live owner: wiki/entities/pc/<kebab-slug>.md. Flatten archived sheets, abilities,
+spells, inventory, combat profiles, galleries, and session logs into these homes;
+do not create a second live facet page. Preserve source lineage, aliases, links,
+unknowns, and [verify] markers. Omit an optional section or empty subsection.
+The player controls this PC. Narration is player-safe; the DM thesis and mechanics
+stay outside it. Exact numbers live in Sheet; frontmatter only mirrors key values.
 -->
 
 # {{title}}
 
 > [!narration] Narration
-> Write the spoken look in complete sentences. Player-safe TotM. No secrets, DCs, unearned names, or DM thesis.
+> Write a complete-sentence, sensory look that is safe to read aloud. Do not include secrets, DCs, unearned names, or the DM thesis.
 
+```col
+```col-md
 ## At a Glance
 
-| **Role**         | PC |
-| ---------------- | -- |
-| **Class / Level** | {{class_levels}} (level {{level}}) |
-| **Player**       |  |
-| **Home ship**    | [[ship]] |
+| Field | Value |
+| --- | --- |
+| Player | {{player}} |
+| Class / Level | {{class_levels}} |
+| Home ship / base | [[ship-or-base]] |
 
-> **DM thesis:** One sentence on how this PC plays at the table (lane, pressure, party role) — not NPC wants.
-
+**DM thesis:** State the PC's play pattern, party role, pressure, or decision-relevant weakness in one complete sentence.
+```
+```col-md
 ## Connections
 
-- [[party member]] — What this tie does at the table.
-- [[ship]] — Berth / station.
-- [[faction]] — Obligation or lean that changes a ruling.
+| Tie | Table consequence |
+| --- | --- |
+| [[named-owner]] | State what this relationship changes at the table. |
 
-<!-- Shared heading Connections — NOT `# Relationships`. Omit when unused. -->
+Use named owner links. Omit this section when there are no named ties.
+```
+```
 
+```col
+```col-md
 ## Sheet
 
-<!-- Compact numbers for mid-round skim. Prefer this table; optional ```statblock``` below only when a combatant block helps — omit-empty. -->
-
 | Ability | Score | Mod | Save |
-| ------- | ----- | --- | ---- |
-| STR     |       |     |      |
-| DEX     |       |     |      |
-| CON     |       |     |      |
-| INT     |       |     |      |
-| WIS     |       |     |      |
-| CHA     |       |     |      |
+| --- | --- | --- | --- |
+| Strength |  |  |  |
+| Dexterity |  |  |  |
+| Constitution |  |  |  |
+| Intelligence |  |  |  |
+| Wisdom |  |  |  |
+| Charisma |  |  |  |
 
-**Skills.** List proficient / expertise skills with bonuses, or point that full skill lines live in this section.
+**Skills.** List known skill bonuses and proficiencies in complete sentences.
 
 | Combat skim | Value |
-| ----------- | ----- |
-| AC          |       |
-| HP max      |       |
-| Init        |       |
-| PP          |       |
-| Speed       |       |
-
-<!-- Optional combatant block — omit when the table above is enough.
-```statblock
-layout: Basic 5e Layout
-name: "{{title}}"
-size: Medium
-type: humanoid
-ac: ""
-hp: 1
-speed: "30 ft."
-stats: [10, 10, 10, 10, 10, 10]
+| --- | --- |
+| AC |  |
+| HP current / max |  |
+| Initiative |  |
+| Passive Perception |  |
+| Speed |  |
+| Signature resources / counters |  |
 ```
--->
-
+```col-md
 ## Combat Profile
-
-<!-- At-table combat scan. Omit entire ## Combat Profile when unused. -->
 
 ### Fast Read
 
-One line: lane · key numbers · Achilles heel · toughest matchup when known.
+State how the PC operates, what exact Sheet or Abilities rows matter, and the main pressure.
 
 ### Counters & Synergy
 
-- **Hard counters.** What shuts them down.
-- **Soft counters.** What pressures them.
-- **Amplifies / Depends on.** Party synergy that changes a ruling.
+- **Hard counters.** State what shuts the PC down.
+- **Soft counters.** State what pressures the PC.
+- **Amplifies / Depends on.** State party conditions that change a ruling.
+
+Omit this section only when no useful profile exists. Do not repeat Sheet numbers as a second authority.
+```
+```
 
 ## Abilities
 
-<!-- Subsections as ### only. Never nest another `# {{title}} — Abilities`. No "What lives here and what does not" meta. -->
+Omit empty subsections. Every populated table states effect, uses, and recovery when applicable.
 
 ### Traits
 
 | Trait | Effect |
-| ----- | ------ |
-|       |        |
+| --- | --- |
+|  |  |
 
 ### Features
 
 | Feature | Source | Effect | Uses | Recovery |
-| ------- | ------ | ------ | ---- | -------- |
-|         |        |        |      |          |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
 
 ### Actions
 
 | Action | To-Hit / DC | Damage / Effect | Uses | Notes |
-| ------ | ----------- | --------------- | ---- | ----- |
-|        |             |                 |      |       |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
 
 ### Bonus Actions
 
 | Bonus Action | Trigger / Cost | Effect | Uses | Recovery |
-| ------------ | -------------- | ------ | ---- | -------- |
-|              |                |        |      |          |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
 
 ### Reactions
 
 | Reaction | Trigger | Effect | Uses | Recovery |
-| -------- | ------- | ------ | ---- | -------- |
-|          |         |        |      |          |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
 
 ### Feats
 
 | Feat | Source | Effect |
-| ---- | ------ | ------ |
-|      |        |        |
-
-<!-- Omit any empty ### subsection. -->
+| --- | --- | --- |
+|  |  |  |
 
 ## Spells
 
-<!-- Omit entire ## Spells if non-caster. Never nest `# {{title}} — Spells`. -->
+Include only for a caster or another castable resource. Omit empty subsections and keep multiclass pools distinct.
 
 ### Spellcasting
 
-Ability, save DC, attack bonus, ritual notes, focus.
+State ability, save DC, attack bonus, casting focus, and ritual or pool notes.
 
 ### Cantrips
 
 | Cantrip | Notes |
-| ------- | ----- |
-| [[spell]] |       |
+| --- | --- |
+| [[spell-owner]] |  |
 
-### Prepared
+### Prepared or Known
 
-| Spell | Level | Notes |
-| ----- | ----- | ----- |
-| [[spell]] |     |       |
+| Spell | Level / Pool | Notes |
+| --- | --- | --- |
+| [[spell-owner]] |  |  |
 
-### Slots
+### Slots or Casting Resources
 
-| Level | Slots |
-| ----- | ----- |
-| 1st   |       |
-| 2nd   |       |
+| Level / Pool | Current / Max | Recovery |
+| --- | --- | --- |
+|  |  |  |
 
 ## Inventory
 
-<!-- Wikilink item owner pages. Never nest `# {{title}} — Inventory`. -->
+Omit empty subsections. Link named item owners and retain quantity, state, and table consequence rather than duplicating item descriptions.
 
 ### Attuned
 
 | Item | Notes |
-| ---- | ----- |
-| [[item]] |    |
+| --- | --- |
+| [[item-owner]] |  |
 
 ### Carried
 
 | Item | Qty | Notes |
-| ---- | --- | ----- |
-| [[item]] |  |      |
+| --- | --- | --- |
+| [[item-owner]] |  |  |
 
 ### Stowed
 
 | Item | Where | Notes |
-| ---- | ----- | ----- |
-| [[item]] |    |       |
+| --- | --- | --- |
+| [[item-owner]] |  |  |
 
 ### Currency
 
 | Coin | Amount |
-| ---- | ------ |
-| gp   |        |
-
-<!-- Omit any empty ### subsection. -->
+| --- | --- |
+| gp |  |
 
 ## Session Log
 
-<!-- Short combat/session deltas only. Replaces nested Session Combat Log dumps. Omit when unused. -->
+Omit for a new PC with no current changes. Keep only concise dated or session-numbered changes affecting play.
 
-| Session | Encounter | Note |
-| ------- | --------- | ---- |
-|         |           |      |
+| Session / Date | Encounter | Current-play change |
+| --- | --- | --- |
+|  |  |  |
 
 ## Art
 
-<!-- Art embeds: wiki/attachments/{subject-slug}-{role}.ext — roles: banner|portrait|token|battlemap|overview|reference|handout|teaser. Flat folder; omit Art when unused. -->
+Omit when no approved art exists. Preserve existing attachment embeds and repository attachment names when present.
