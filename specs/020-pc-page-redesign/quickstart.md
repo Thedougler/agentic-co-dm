@@ -10,7 +10,7 @@ Run from the repository root after implementation has landed the `player-charact
 .venv/bin/python specs/020-pc-page-redesign/fixtures/check.py
 ```
 
-Expected result: exit `0`; the report confirms the template and five pages have the required frontmatter, D&D Beyond spine (`Identity`, `Combat Stats`, `Ability Scores`, `Skills`, `Actions`, …), no `Voice` / `At a Glance` / `Sheet` / `Combat Profile` / `Abilities`, fenced column pairs for Identity+Combat Stats and Ability Scores+Skills, omission behavior, preserved source/link metadata, and no live satellite duplicate.
+Expected result: exit `0`; the report confirms the template and five pages have the required frontmatter including `cssclasses` containing `pc-sheet`, D&D Beyond spine (`Identity`, `Combat Stats`, `Ability Scores`, `Skills`, `Actions`, …, optional `Stated Goals`, `Session Log`, `Art`), no `Voice` / `At a Glance` / `Sheet` / `Combat Profile` / `Abilities`, fenced column pair for featured portrait+Identity when art exists (Identity full-width when not) and Ability Scores+Skills, no Identity+Combat Stats pair, omission behavior, preserved source/link metadata, and no live satellite duplicate.
 
 ## 2. Run scoped Markdown checks
 
@@ -36,16 +36,19 @@ Open `.agents/skills/player-characters/SKILL.md` and the wiki-kind routing in `w
 - `player-characters` is the sole skill owner for `type: pc`.
 - `npc-design` has no PC-page path and tells agents to use `player-characters` instead.
 - The skill records from supplied source only (PDF, prose, Foundry MCP, other DM files) and refuses inventing a PC, generating stats, or writing the player's actions.
+- After a session that included the player, the skill refreshes Stated Goals from that session's transcript and does not invent goals.
 
 ## 5. Review the rendered surface
 
 Open each of the five pages in Obsidian Reading view. Confirm:
 
 - The narration callout is full width and player-safe.
-- `Identity`/`Combat Stats` and `Ability Scores`/`Skills` render as paired scan surfaces.
+- When the page has art, the featured portrait sits beside `Identity`; `Combat Stats` is full-width after that pair.
+- `Ability Scores`/`Skills` render as a paired scan surface.
 - Headings and tables remain understandable when columns are unavailable.
+- Vault-wide CSS is active; PC pages show sheet-scan tweaks without a distinct decorative theme. With CSS disabled, the page remains understandable.
 - No page has `## Voice`, `## At a Glance`, `## Sheet`, `## Combat Profile`, `## Abilities`, an empty optional heading, a second H1, a required DM thesis, or a competing live satellite dump.
-- A DM can locate player, class/level, AC, current/max HP, initiative, signature options, a named connection, and a decision-relevant pressure in under 60 seconds per page.
+- A DM can locate player, class/level, AC, current/max HP, initiative, signature options, a named connection, a decision-relevant pressure, and any Stated Goals in under 60 seconds per page.
 
 ## 6. Preserve facts (structure-only)
 
@@ -62,3 +65,9 @@ Using only `player-characters`, the template, this contract, governing wiki inst
 Each output must use the same frontmatter and heading contract, omit empty sections, preserve unknowns without invented values, keep narration safe, and pass the scoped lint checks before scratch files are removed.
 
 Also confirm a negative: with no supplied source, or with a request to invent a PC / generate stats / write the character's actions, the skill refuses and does not mint a page.
+
+## 7. Stated Goals and CSS files
+
+Confirm `wiki/.obsidian/snippets/ttrpg-styles.css` and `wide-note-surface.css` remain the vault default, and `wiki/.obsidian/snippets/pc-sheet.css` exists and is scoped to `.pc-sheet`. Confirm each live PC has `cssclasses` containing `pc-sheet`.
+
+If any of the five PCs has a transcript-supported player-stated goal, `## Stated Goals` is present and lists only those goals. If none, the heading is absent.

@@ -23,6 +23,7 @@ The canonical record for one player character is `wiki/entities/pc/<kebab-slug>.
 | `level`, `ac`, `hp_max`, `init_mod`, `pp` | yes when known | Scalar identity/reference values. Unknown values remain explicit unknowns. |
 | `speed` | yes when known | Walk and conditional movement as a string. |
 | `status` | yes when known | Existing character status; do not infer a change. |
+| `cssclasses` | yes on live PC pages | Must include `pc-sheet` so PC-only CSS tweaks apply. Not a campaign fact. |
 | `aliases`, `foundry_id`, `provenance`, `base_confidence`, `tier`, `lifecycle_changed` | optional | Preserve when present; omit when absent. |
 
 `ac`, `hp_max`, `init_mod`, `pp`, and `speed` mirror Combat Stats. Combat Stats is the human-readable authority. Current HP is state in Combat Stats, not a new identity field.
@@ -34,8 +35,8 @@ A newer supplied source that disagrees with a mirrored number overwrites both th
 A filed page uses one H1 and this D&D Beyond-ordered spine:
 
 1. Player-safe `Narration` callout.
-2. `Identity` — player, class/level, and other DDB identity facts when known (species/race, background). Home ship or current base when known.
-3. `Combat Stats` — AC, current/max HP, initiative, passive perception, speed, and related combat numbers when known.
+2. Featured portrait embed paired with `Identity` when art exists; otherwise `Identity` full-width — player, class/level, and other DDB identity facts when known (species/race, background). Home ship or current base when known.
+3. `Combat Stats` — AC, current/max HP, initiative, passive perception, speed, and related combat numbers when known. Full-width.
 4. `Ability Scores` — STR–CHA scores, modifiers, and saves.
 5. `Skills` — known skill bonuses and proficiencies.
 6. `Actions` — attacks, actions, bonus actions, reactions; omit empty subsections.
@@ -43,20 +44,23 @@ A filed page uses one H1 and this D&D Beyond-ordered spine:
 8. `Inventory` — attuned, carried, stowed, currency; omit empty subsections.
 9. `Features` — traits, class features, feats; omit empty subsections.
 10. `Connections` — named ties and table consequences when ties exist.
-11. Conditional `Session Log` — concise dated or session-numbered current-play changes.
-12. Conditional `Art` — existing approved embeds.
+11. Conditional `Stated Goals` — transcript-supported player statements (in or out of character); omit when none.
+12. Conditional `Session Log` — concise dated or session-numbered current-play changes.
+13. Conditional `Art` — leftover approved embeds after the featured portrait and any in-section pictures.
 
 There is no `Voice`, `At a Glance`, `Sheet`, `Combat Profile`, `Abilities`, or required DM thesis. Lists record available options and numbers. They do not script the player's action.
 
 ## Scan layout
 
-- `Identity` and `Combat Stats` form the DDB header pair.
+- Featured portrait and `Identity` form the header pair when at least one picture of the character exists. Left column is the embed only; right column is `Identity`.
+- When no pictures exist, `Identity` is full-width. Do not leave an empty portrait column.
+- `Combat Stats` is full-width after Identity.
 - `Ability Scores` and `Skills` form the DDB left-column pair.
 - Each required pair uses nested fenced `col` / `col-md` blocks with the parent fence longer than child fences.
 - Narration stays outside column fences.
 - Headings inside child columns and ordinary tables preserve a linear fallback.
-- `Actions`, `Spells`, `Inventory`, `Features`, and `Art` remain full-width.
-- `Connections` and `Session Log` MAY use the same column pair when both exist; otherwise they are full-width.
+- `Actions`, `Spells`, `Inventory`, `Features`, `Connections`, `Stated Goals`, `Session Log`, and `Art` remain full-width.
+- Additional pictures MAY sit next to the section they illustrate; leftovers live only in `Art`.
 
 ## Source satellite, ingest, and conformance
 
@@ -65,6 +69,7 @@ Archived facet pages are evidence attached through `sources`, not live PC repres
 | Fact kind | Home |
 |---|---|
 | Identity (player, class/level, species, background, base) | `Identity` |
+| Featured portrait | column pair with `Identity`; omit pair when no pictures |
 | Combat numbers and current HP/conditions | `Combat Stats` |
 | Ability scores, modifiers, saves | `Ability Scores` |
 | Skills and passive perception if not in Combat Stats | `Skills` |
@@ -73,8 +78,9 @@ Archived facet pages are evidence attached through `sources`, not live PC repres
 | Item ownership and location | `Inventory`, with item-owner links |
 | Traits, class features, feats | `Features` |
 | Relationship and table consequence | `Connections` |
+| Player-stated goal (transcript, IC or OOC) | `Stated Goals`; omit section when none |
 | Durable session changes | `Session Log` |
-| Approved identity art | `Art` |
+| Leftover approved identity art | `Art` |
 | Internal one-source disagreement | affected home with `[verify]` and source reference |
 | Newer supplied source vs live wiki number | newer source overwrites the wiki number |
 | Player-performance voice choices | source evidence only unless they change a ruling or relationship |
@@ -85,7 +91,7 @@ Structure-only conformance maps facts into these homes without changing campaign
 
 Not a wiki entity. The skill `player-characters` is the sole skill owner for recording `type: pc` pages from supplied source. It is not an NPC design workflow.
 
-State: idle → record (source supplied for a player-created character) → refuse (no source, or a request to invent/generate/prescribe).
+State: idle → record (source supplied for a player-created character) → refresh-goals (post-session transcript for a player who was in that session) → refuse (no source, or a request to invent/generate/prescribe, or inventing goals).
 
 ## Relationships
 
@@ -107,3 +113,5 @@ State: idle → record (source supplied for a player-created character) → refu
 9. Columns are presentation hints; headings and tables alone remain sufficient for agent parsing and linear reading.
 10. Agents use `player-characters` for `type: pc` work. They do not use `npc-design` to fill a PC page.
 11. The skill does not invent a PC, generate stats, or write the player's actions.
+12. Live PC pages include `cssclasses` containing `pc-sheet`. CSS never replaces headings/tables as the semantic record.
+13. `Stated Goals` contains only transcript-supported player statements. Summary-only or inferred goals are absent. Refresh runs after sessions that included that player.

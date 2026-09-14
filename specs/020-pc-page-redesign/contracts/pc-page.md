@@ -10,6 +10,7 @@ This is the agent-facing Markdown contract for `type: pc` owner pages. The canon
 - Required campaign frontmatter: `type: pc`, `lifecycle`, `reveal`, `campaign`, `visibility`, and `summary`.
 - PC identity: `player`, `class_levels`, `level`, `ac`, `hp_max`, `init_mod`, `pp`, `speed`, and existing `status` when known.
 - Preserve optional aliases, Foundry identity, provenance/confidence, tier, lifecycle dates, source list, and existing campaign state.
+- Live PC pages include `cssclasses` containing `pc-sheet`.
 - Unknown source values remain unknown or `[verify]`. Agents do not invent values.
 
 ## Semantic spine
@@ -17,7 +18,7 @@ This is the agent-facing Markdown contract for `type: pc` owner pages. The canon
 ```text
 # {{title}}
 > [!narration] Narration
-## Identity
+[featured portrait | ## Identity]   (pair only when art exists; else ## Identity full-width)
 ## Combat Stats
 ## Ability Scores
 ## Skills
@@ -41,28 +42,29 @@ This is the agent-facing Markdown contract for `type: pc` owner pages. The canon
 ### Class Features             (omit when empty)
 ### Feats                      (omit when empty)
 ## Connections                 (omit only with no named ties)
+## Stated Goals                (omit when no transcript-supported player-stated goal)
 ## Session Log                 (omit for a new PC with no session changes)
-## Art                         (omit when no approved art exists)
+## Art                         (omit when no leftover pictures remain)
 ```
 
-The heading order is semantic and follows D&D Beyond information groups. There is no `## Voice`, `## At a Glance`, `## Sheet`, `## Combat Profile`, or `## Abilities`. The PC is player-controlled. The page records options and numbers; it does not prescribe actions, voice, or play pattern.
+The heading order is semantic and follows D&D Beyond information groups. There is no `## Voice`, `## At a Glance`, `## Sheet`, `## Combat Profile`, or `## Abilities`. The PC is player-controlled. The page records options and numbers; it does not prescribe actions, voice, or play pattern. The featured portrait is an embed, not an H2.
 
 ## Column syntax
 
 Use exactly the supported nested fenced syntax for these pairs:
 
-- Header pair: `Identity` + `Combat Stats`.
+- Header pair (when art exists): featured portrait embed + `Identity`. Left `col-md` contains only the portrait embed. Right `col-md` contains `## Identity`. When no pictures exist, `Identity` is full-width with no empty portrait column.
 - Ability pair: `Ability Scores` + `Skills`.
 
 The parent `col` fence has more backticks than child `col-md` fences. Put each heading inside its child fence. Keep the leading narration callout outside all fences. Do not use `[!col]` for these PC pairs. Do not put callouts inside Markdown table cells. When a viewer cannot render columns, the headings and tables must read top-to-bottom without relying on visual placement. Do not recreate D&D Beyond cards, site colors, or non-Markdown chrome.
 
-`Connections` and `Session Log` MAY use the same column pattern when both exist.
+`Combat Stats` is full-width immediately after Identity. Campaign extras stay full-width. Do not pair `Identity` with `Combat Stats`. Do not pair `Connections` with `Session Log`.
 
 ## Section contracts
 
 ### Identity
 
-Provide player handle, class/level, and other D&D Beyond identity facts when known (species/race, background). Home ship or equivalent base, when known, appears here or in Connections and MUST NOT be dropped. Do not require a DM thesis or prescribed play pattern.
+Provide player handle, class/level, and other D&D Beyond identity facts when known (species/race, background). Home ship or equivalent base, when known, appears here or in Connections and MUST NOT be dropped. Do not require a DM thesis or prescribed play pattern. When at least one picture of the character exists, pair one featured portrait with this section as specified under Column syntax.
 
 ### Combat Stats
 
@@ -92,9 +94,15 @@ Separate attuned, carried, stowed, and currency rows when present. Link item own
 
 Traits, class features, and feats. Each populated row states effect and uses or recovery when applicable.
 
-### Connections, Session Log, and Art
+### Connections, Stated Goals, Session Log, and Art
 
-Connections use named Obsidian links. Each entry states what the tie changes at the table. Escape alias pipes as `\|` inside table cells. Do not duplicate the linked owner's full content. Session Log contains concise session-numbered or dated changes affecting current play. Art contains only existing approved embeds using repository attachment names and paths.
+Connections use named Obsidian links. Each entry states what the tie changes at the table. Escape alias pipes as `\|` inside table cells. Do not duplicate the linked owner's full content.
+
+Stated Goals lists only goals the player clearly stated in a game-session transcript, in character or out of character. Cite the session. A session summary MAY help locate or paraphrase a transcript-supported goal and MUST NOT be the sole source. Omit the section when none exist. Do not infer from play, connections, or DM thesis. After every session that included that player, refresh from that session's transcript: add newly stated goals; remove a goal only if the player said it is done or abandoned. Sessions that did not include the player do not refresh this section. Session planning that includes the player MUST read this section when present.
+
+Session Log contains concise session-numbered or dated changes affecting current play.
+
+Art contains leftover approved embeds after the featured portrait and any in-section pictures, using repository attachment names and paths. Omit when none remain. Additional pictures MAY appear next to the section they illustrate. One picture only is the featured portrait; then omit Art.
 
 ## Skill and ingest
 
@@ -104,6 +112,7 @@ Connections use named Obsidian links. Each entry states what the tie changes at 
 - When a newer supplied source disagrees with the live wiki page on the same number, keep the newer source's value and overwrite the wiki number (and matching frontmatter mirror). Structure-only conformance is not a newer source.
 - One source that internally conflicts with itself keeps the disagreement or `[verify]`; do not invent a resolution.
 - If a PDF cannot be read, Foundry MCP is unavailable, or another source fails: record what can be read; mark unread fields unknown or `[verify]`.
+- After a session that included the player, refresh Stated Goals from that session's transcript as specified above. Do not invent goals.
 
 ## Safety and preservation
 
@@ -111,3 +120,4 @@ Connections use named Obsidian links. Each entry states what the tie changes at 
 - Use complete-sentence DM-facing prose, Title Case headings, inline-code DCs/dice, and real newlines.
 - Preserve all existing links, aliases, art references, source entries, player handles, lifecycle, reveal, visibility, and campaign meaning during structure-only conformance.
 - Flatten archive/satellite facts into the canonical home or a named owner link. Do not leave a competing live facet dump.
+- Live PC pages include `cssclasses: [pc-sheet]`. Vault-wide CSS stays in `ttrpg-styles.css` and `wide-note-surface.css`. PC-only scan tweaks live in `pc-sheet.css` and MUST NOT add a decorative theme, cards, or D&D Beyond chrome.
