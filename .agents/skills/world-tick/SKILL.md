@@ -1,6 +1,6 @@
 ---
 name: world-tick
-description: Post-session world advancement ritual — walks through active factions, NPCs, and plot threads one at a time, collaborates with the DM on each thread's offscreen goal, uses a real d20 roll to resolve it, then stages reviewed ledger lines and applies only approved surgical changes. Run when Nick asks for off-screen advancement (not auto-chained from session-wrapup). Trigger on "world tick", "advance the world", "between sessions", "offscreen actions", "faction tick", "what moved while the party was elsewhere", or any request to update the world state after a session.
+description: Post-session world advancement ritual — walks through active factions, NPCs, and plot threads one at a time, collaborates with the DM on each thread's offscreen goal, uses a real d20 roll to resolve it, then stages reviewed ledger lines and applies only approved surgical changes. Run when Nick asks for off-screen advancement (not auto-chained from session-recap). Trigger on "world tick", "advance the world", "between sessions", "offscreen actions", "faction tick", "what moved while the party was elsewhere", or any request to update the world state after a session.
 ---
 
 # World Tick
@@ -139,7 +139,7 @@ Stage proposed advances in `inbox/world-tick-<YYYY-MM-DD>.md` after triage and p
 
 ## Session-to-world spine
 
-Run when Nick asks for off-screen movement — **not** as a mandatory follow-on to `session-wrapup` (wrapup is narrative recap only). Prefer Campaign Editor / `reconciling-session-evidence` for owner-page canon; use the filed `Session-<NN>-Recap.md` as player-safe narrative context. Leave unresolved evidence gated rather than inventing continuity.
+Run when Nick asks for off-screen movement — **not** as a mandatory follow-on to `session-recap` (recap is narrative only). Prefer Campaign Editor / `reconciling-session-evidence` for owner-page canon; use the filed `Session-<NN>-Recap.md` as player-safe narrative context. Leave unresolved evidence gated rather than inventing continuity.
 
 ## Momentum and echo gate
 

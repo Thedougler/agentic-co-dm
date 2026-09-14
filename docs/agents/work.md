@@ -35,7 +35,7 @@ A named ingest is DM approval for those sources, plus thin complete-sentence stu
 
 ## Canon
 
-Only accepted Work may change wiki facts. `session-wrapup` proposes the narrative recap in chat first, then files only `Session-<NN>-Recap.md` after accept — owner-page canon is Campaign Editor / reconcile / ingest.
+Only accepted Work may change wiki facts. `session-recap` proposes the narrative recap in chat first, then files only `Session-<NN>-Recap.md` after accept — owner-page canon is Campaign Editor / reconcile / ingest.
 
 ## Windows
 
@@ -67,8 +67,8 @@ Done when: the DM has playable Work in that sitting and the gap is named; campai
 
 ## Reflection
 
-After a session sitting (not inside `session-wrapup` itself — that skill is narrative recap only), offer a reflection when appropriate. After prep, offer a reflection only if the DM asks. Do not run reflection or improvement during a session.
+After a session sitting (not inside `session-recap` itself — that skill is narrative recap only), offer a reflection when appropriate. After prep, offer a reflection only if the DM asks. Do not run reflection or improvement during a session.
 
 An accepted reflection that needs a campaign fact change becomes a canon proposal and still waits for accept. An accepted campaign-facing practice change becomes an improvement proposal and still waits for accept. Later sittings of that kind of job follow the accepted change.
 
-Done when: a post-session sitting offered inspectable reflection Work when appropriate; wiki facts and campaign-facing practice change only after accept. Narrative recap filing stays in `session-wrapup` and does not own reflection.
+Done when: a post-session sitting offered inspectable reflection Work when appropriate; wiki facts and campaign-facing practice change only after accept. Narrative recap filing stays in `session-recap` and does not own reflection.
