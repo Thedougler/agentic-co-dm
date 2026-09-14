@@ -9,7 +9,7 @@ Agentic Co-DM is a skill-based toolkit for preparing and wrapping up tabletop RP
 - `uv` (used to install Spec Kit and manage Python tooling)
 - An Obsidian vault for campaign knowledge
 
-The Python project has no application dependencies beyond the tools listed below; its scripts use the Python standard library.
+Most repository scripts use the Python standard library. Spec Kit’s agent-context extension needs `PyYAML`. Objective token counts (when `scripts/token-count.py` is present) use `tiktoken` — see `docs/agents/token-measurement.md`.
 
 ## Setup
 
@@ -51,8 +51,6 @@ The Python project has no application dependencies beyond the tools listed below
    python -m pip install pyyaml
    ```
 
-   `PyYAML` is required by `.specify/extensions/agent-context`; the repository's own Python scripts otherwise use only the standard library.
-
 7. Install QMD:
 
    ```bash
@@ -66,7 +64,7 @@ The Python project has no application dependencies beyond the tools listed below
    ./scripts/qmd-maintain.sh
    ```
 
-   QMD indexes this repository's `wiki/` collection first. The maintenance script also expects the configured legacy campaign collections to exist; update those collection paths in `scripts/qmd-maintain.sh` if they are not available on your workstation.
+   QMD indexes this repository’s `wiki/` collection first. The maintenance script also expects the configured legacy campaign collections to exist; update those collection paths in `scripts/qmd-maintain.sh` if they are not available on your workstation.
 
 ## Verify the checkout
 
@@ -76,18 +74,38 @@ Run these checks from the repository root:
 python tools/check_wiki_pages.py
 specify --version
 qmd status
+./scripts/wiki-maintain --report --summary-only
 ```
 
 If QMD is not initialized or its collections are stale, run `./scripts/qmd-maintain.sh` before `qmd status`.
 
+`wiki-maintain` soft-skips token counting until `scripts/token-count.py` lands (issue #86). A noisy vault (HARD lint / open `_raw/`) is expected during migration — quiet keep-ahead only when Layer A is clean.
+
 ## Working with the project
 
-- Read `AGENTS.md` before making changes; it contains repository conventions and skill routing.
-- Use `.agents/skills/*/SKILL.md` for the available agent skills.
-- Treat `wiki/` as the compiled campaign knowledge source.
+- Read `AGENTS.md` before making changes; it is the source of truth for conventions and skill routing.
+- Use `.agents/skills/*/SKILL.md` for agent skills.
+- Treat `wiki/` as the **compiled** campaign knowledge layer. `wiki/_raw/` is an ingest inbox only — file then archive; never leave sources parked there; never overwrite `_raw/` as live canon.
+- Prefer thin CLIs over dumping whole files into agent context (`scripts/manifest.py`, Retrieval Primitives in `llm-wiki`).
 - Run `./scripts/qmd-maintain.sh` after wiki changes when QMD search is enabled.
-- Read feature plans and quickstarts under `specs/` for feature-specific verification.
-- Use the Spec Kit commands exposed by the configured agent integration for specification, planning, task generation, and implementation workflows.
+- Keep feature work on branches; sync local `main` with `./scripts/git-sync-main` (ff-only to `origin/main`).
+- Spec Kit workflows live under `specs/` and the configured agent integration.
+
+## Wiki health (operators)
+
+Design lock: `docs/agents/wiki-maintenance-loop.md` (issue #90).
+
+| Task | Command / pointer |
+| --- | --- |
+| Layer A report (lint + waste leads + `_raw/` + plans) | `./scripts/wiki-maintain --report` |
+| HARD wiki lint only | `./scripts/wiki-lint --json` |
+| Context-waste leads | `python3 scripts/context-waste-scan.py` |
+| Objective tokens (when CLI present) | `python3 scripts/token-count.py` — default `cl100k_base`; **not** `bytes/4` |
+| Filename remorph plan | `./scripts/remorph-page-filename-kebab --dry-run` — **`--apply` gated** until greenlit |
+
+**Do not automate without an explicit greenlight:** lore invent, mass kebab rename apply, dedup merge, link demotions during migration freeze, craft/narrative/mechanics thinning for token scores, or collapsing conflicting rumors into one “truth.” Scripts do not grade prose — Creative Director does.
+
+Related methods: `docs/agents/context-waste-method.md`, `docs/agents/token-measurement.md`.
 
 ## Repository layout
 
@@ -95,10 +113,11 @@ If QMD is not initialized or its collections are stale, run `./scripts/qmd-maint
 .agents/skills/   Agent skills and procedures
 .specify/         Spec Kit configuration and extensions
 .omp/             OMP integration commands and agents
-scripts/          Maintenance and ingest scripts
+docs/agents/      Operator/agent method locks (maintenance, tokens, waste, …)
+scripts/          Maintenance, lint, remorph, and ingest CLIs
 specs/            Feature specifications and quickstarts
-tools/             Repository validation tools
-wiki/             Obsidian campaign wiki
+tools/            Repository validation tools (e.g. wiki lint)
+wiki/             Obsidian campaign wiki (compiled knowledge)
 CONTEXT.md        Project vocabulary and domain boundaries
-AGENTS.md         Repository instructions
+AGENTS.md         Repository instructions (conventions + routing)
 ```
