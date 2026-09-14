@@ -72,7 +72,7 @@ foundry_id: O68NGfrVI6ibOW9v
 
 ## Sheet
 
-Umberlee named the Pearl as her price after reading Delmar's offer out of his head. Catarina Da'Virelli gave him Lamarae's Fang. He is aboard *[[Uncertainty]]* at [[aruhe]]. See [[journal/sessions/shattered-sea/recaps/Session-04-Recap]] and [[story-so-far]].
+Umberlee named the Pearl as her price after reading Delmar's offer out of his head. Catarina Da'Virelli gave him Lamarae's Fang. He is aboard *[[Uncertainty]]* at [[aruhe]]. See [[journal/sessions/shattered-sea/04/Session-04-Recap]] and [[story-so-far]].
 
 Live Foundry snapshot from world Shattered-Sea on 2026-09-13. Actor `O68NGfrVI6ibOW9v` (Admiral Delmar A. Fisk). Variant Human Rogue 5, Swashbuckler (SCAG), Sailor. Proficiency Bonus +3. Hit Point Die d8. Current HP **35/38**.
 

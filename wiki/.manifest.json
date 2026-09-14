@@ -2777,7 +2777,7 @@
     "pages_produced": [
       "entities/Midchain.md",
       "entities/Amberfall.md",
-      "entities/Coeur Bris\u00e9.md",
+      "entities/Coeur Brisé.md",
       "entities/Torvalline.md",
       "entities/Lethys.md",
       "entities/Windrow.md",
@@ -6578,7 +6578,7 @@
     "content_hash": "sha256:3602ff21b18f32e4d56b128a58faf0889f6100591f7ef8493a53d6b30d2ab932",
     "last_ingested": "2026-09-13T20:20:50Z",
     "pages_produced": [
-      "journal/sessions/shattered-sea/recaps/Crissdalynn Khinriss.md"
+      "entities/pc/crissdalynn-khinriss.md"
     ],
     "source_type": "document",
     "project": "shattered-sea",

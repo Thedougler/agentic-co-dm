@@ -4,7 +4,7 @@ category: journal
 tags: [shattered-sea, session-prep]
 sources:
   - "[[Session-11-00-Birds-of-a-Feather]]"
-  - "[[journal/sessions/shattered-sea/recaps/Session-10-Recap]]"
+  - "[[journal/sessions/shattered-sea/10/Session-10-Recap]]"
   - "[[bloodhawk]]"
   - "[[young-bloodhawk]]"
   - "[[crown-squid]]"
@@ -21,7 +21,7 @@ visibility: dm
 ---
 # Session 11 — Angry Birds
 
-![[journal/sessions/shattered-sea/recaps/Session-10-Recap#Recap]]
+![[journal/sessions/shattered-sea/10/Session-10-Recap#Recap]]
 
 ````col
 ```col-md
