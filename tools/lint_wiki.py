@@ -35,8 +35,8 @@ HARD_KEYS = (
     "bad_lifecycle",
     "typed_relationships",
     "pc_identity_mismatch",
-    "spaces_in_basename",
-    "aruhe_prefix",
+    "spaced_basename",
+    "aruhe_prefix_basename",
     "illegal_basename",
     "duplicate_stems",
 )
@@ -273,8 +273,8 @@ def illegal_basename_issues(stem: str) -> list[str]:
     return reasons
 
 
-def spaces_in_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
-    """HARD: live page basenames must be space-free (kebab standard #80)."""
+def spaced_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
+    """HARD: any whitespace in live page Path.stem (kebab standard #80/#72)."""
     out: list[dict[str, object]] = []
     for rel, item in pages.items():
         if item["fields"].get("redirects_to"):
@@ -282,13 +282,13 @@ def spaces_in_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
         if "attachments" in Path(rel).parts:
             continue
         stem = Path(rel).stem
-        if " " in stem:
+        if any(ch.isspace() for ch in stem):
             out.append({"page": rel, "stem": stem})
     return out
 
 
-def aruhe_prefixes(pages: dict[str, dict]) -> list[dict[str, object]]:
-    """HARD: legacy leading Aruhe - / Aruhe - prefix on live basenames."""
+def aruhe_prefix_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
+    """HARD: leading Aruhe - / Aruhe - / Aruhe- on live basenames/stems."""
     out: list[dict[str, object]] = []
     for rel, item in pages.items():
         if item["fields"].get("redirects_to"):
@@ -329,8 +329,8 @@ def duplicate_stems(pages: dict[str, dict]) -> list[dict[str, object]]:
     ]
 
 
-def snake_owner_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
-    """Soft: snake_case owner basenames under entities/{type}/ (kebab preferred; not flagged)."""
+def snake_case_owner_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
+    """Soft: snake_case owner basenames under entities/{type}/ only (kebab not flagged)."""
     out: list[dict[str, object]] = []
     for rel in pages:
         parts = Path(rel).parts
@@ -393,11 +393,11 @@ def main() -> int:
             )
         )
     ]
-    findings["spaces_in_basename"] = spaces_in_basenames(pages)
-    findings["aruhe_prefix"] = aruhe_prefixes(pages)
+    findings["spaced_basename"] = spaced_basenames(pages)
+    findings["aruhe_prefix_basename"] = aruhe_prefix_basenames(pages)
     findings["illegal_basename"] = illegal_basenames(pages)
     findings["duplicate_stems"] = duplicate_stems(pages)
-    findings["snake_owner_basename"] = snake_owner_basenames(pages)
+    findings["snake_case_owner_basename"] = snake_case_owner_basenames(pages)
     findings["missing_trust"] = [{"page": rel, "missing": [key for key in args.required_trust_field if not item["fields"].get(key)]} for rel, item in pages.items() if any(not item["fields"].get(key) for key in args.required_trust_field)]
 
     documents = {}
