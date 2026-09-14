@@ -197,13 +197,13 @@ After building the status summary, compute the token footprint estimate:
 
 2. **Count tokens** — For each page (or a scoped rollup), use objective tiktoken counts via `python3 scripts/token-count.py` / shared helper (`docs/agents/token-measurement.md`). Default encoding `cl100k_base`. **Do not** use `file_size_bytes / 4`. Sum per tier and total from tiktoken.
 
-3. **Index-only estimate** — Estimate the cost of an index-only pass: sum `len(title) + len(summary) + len(tags)` for each page frontmatter (~100 chars each on average), divided by 4.
+3. **Index-only estimate** — Build a compact index text (or sample) from each page’s `title` + `summary` + `tags`, then count with `token-count.py` / shared helper (same encoding). Do **not** divide char lengths by 4.
 
-4. **Typical query estimate** — Index-only estimate + average full-read cost of 5 pages (`total_chars / total_pages * 5 / 4`).
+4. **Typical query estimate** — Index-only tiktoken total + tiktoken cost of five representative full pages (or mean page tokens × 5 from the footprint rollup). Prefer calling `token-count.py` on concrete paths.
 
-5. **Threshold check** — Read `WIKI_TOKEN_WARN_THRESHOLD` from config (default: `100000`). If `0`, skip the warning. If full-wiki token estimate exceeds the threshold, emit a `⚠️` warning with the three remediation suggestions shown in the template above.
+5. **Threshold check** — Read `WIKI_TOKEN_WARN_THRESHOLD` from config (default: `100000`). If `0`, skip the warning. Compare against **tiktoken** full-wiki (or scoped) sum only (`docs/agents/token-measurement.md`). If `scripts/token-count.py` is not on main yet, say so and skip numeric warn rather than falling back to ÷4.
 
-6. **Include in every standard status run** — both normal and insights mode. The methodology note (`4 chars/token heuristic`) appears as a footnote below the table.
+6. **Include in every standard status run** — both normal and insights mode. Footnote the **encoding** (`cl100k_base` or `WIKI_TOKEN_ENCODING`), not a chars/token heuristic.
 
 ## Step 4: What to Do Next
 
