@@ -44,11 +44,11 @@ He buys base compound from [[Studio Orsini]] by standing order and finishes the 
 
 | Field | Detail |
 |---|---|
-| primary_goal | Extend La Brace's licence past the Velo bridges so a second room can open in the Mercatura, where the money sits. |
-| consistent_method | Seats customers first; the price depends on booth-privacy, never the compound. Keeps no ledger, ever, and ensures patrons watch him refuse to write. |
-| active_problem | The [[Tessarine Concordat]] has asked for a list of who books the curtained booths, and the absence of that list is the whole business. |
-| performance_hooks | Memory-keeper. Writes your face in his pocketbook after you draw. |
-| link_of_relevance | The only smoke room where [[Jean-Claude Tabarnack|Tabarnack]] can exist openly. |
+| Primary goal | Extend La Brace's licence past the Velo bridges so a second room can open in the Mercatura, where the money sits. |
+| Consistent method | Seats customers first; the price depends on booth-privacy, never the compound. Keeps no ledger, ever, and ensures patrons watch him refuse to write. |
+| Active problem | The [[Tessarine Concordat]] has asked for a list of who books the curtained booths, and the absence of that list is the whole business. |
+| Performance hooks | Memory-keeper. Writes your face in his pocketbook after you draw. |
+| Link of relevance | The only smoke room where [[Jean-Claude Tabarnack|Tabarnack]] can exist openly. |
 
 **Voice and delivery.** Quiet enough that the room has to settle for him, which it does. He answers a question with a longer version of the question when he does not intend to answer it at all. Worldview word: **discretion**. Not a kindness he extends, but the product he sells, and he puts a number on it.
 

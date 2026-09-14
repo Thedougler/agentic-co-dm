@@ -39,11 +39,11 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| primary_goal | Protect the integrity of her craft and prevent her work from being resold or corrupted. |
-| consistent_method | Works without interruption. Names a price once, flat, final. Demands obedience from every client. |
-| active_problem | Someone is reselling her failed batches under [[the Bridge]] at marked-up rates, and she does not yet know who. |
-| performance_hooks | Perfectionist who speaks to her failed batches on the shelf by name. Manipulates her tools with one hand while the other drifts toward her lips, thinking. |
-| link_of_relevance | Holds [[Jean-Claude Tabarnack]]'s fertilized Whip Shark eggs and remains skeptical of his competence on the matter. |
+| Primary goal | Protect the integrity of her craft and prevent her work from being resold or corrupted. |
+| Consistent method | Works without interruption. Names a price once, flat, final. Demands obedience from every client. |
+| Active problem | Someone is reselling her failed batches under [[the Bridge]] at marked-up rates, and she does not yet know who. |
+| Performance hooks | Perfectionist who speaks to her failed batches on the shelf by name. Manipulates her tools with one hand while the other drifts toward her lips, thinking. |
+| Link of relevance | Holds [[Jean-Claude Tabarnack]]'s fertilized Whip Shark eggs and remains skeptical of his competence on the matter. |
 
 **Voice & Delivery:** precise, unhurried, unforgiving. She shows no deference and no patience for wasted time, speaks as though she already knows every answer. When she speaks to the shelf of failures, her tone softens slightly, bringing acknowledgment without sympathy. "I do not ask questions" and "no returns" are law.
 

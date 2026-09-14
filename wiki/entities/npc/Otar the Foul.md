@@ -43,11 +43,11 @@ The summoning circle sits in the [[Calveno Sewer Magazines]]' primary detonation
 
 | Field | Value |
 |---|---|
-| primary_goal | Rend and consume everything in reach, chaotic and unfettered. |
-| consistent_method | Erupts chaotically, lashing and pulsing to shred prey, while regeneration sustains through all wounds. |
-| active_problem | Surrounded by adventurers in the plaza with townsfolk trapped in rubble within reach. |
-| performance_hooks | Primal chaos incarnate · weeps ichor from deepening cracks as he molts. |
-| link_of_relevance | Summoned to destroy Mercatura plaza, ultimately defeated by [[Delmar Fisk|Delmar]] and the adventurers. |
+| Primary goal | Rend and consume everything in reach, chaotic and unfettered. |
+| Consistent method | Erupts chaotically, lashing and pulsing to shred prey, while regeneration sustains through all wounds. |
+| Active problem | Surrounded by adventurers in the plaza with townsfolk trapped in rubble within reach. |
+| Performance hooks | Primal chaos incarnate · weeps ichor from deepening cracks as he molts. |
+| Link of relevance | Summoned to destroy Mercatura plaza, ultimately defeated by [[Delmar Fisk|Delmar]] and the adventurers. |
 
 ## Stats & Combat
 

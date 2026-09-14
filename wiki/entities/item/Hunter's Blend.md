@@ -37,12 +37,12 @@ One of six blends of alchemical cigarettes sold in [[Calven and Calveno]]. Hunte
 
 | Field | Detail |
 |---|---|
-| `one_thing` | Studied against a fresh physical trace and lit, it shows the compass direction of the marked creature for the next hour. |
-| `rarity_justification` | Uncommon, comparable to [[Wand of Secrets]] (no attunement, divination utility, points toward a hidden target within its own range) and [[Bag of Tricks]] (no attunement, charge-limited, one bounded effect per use). Hunter's Blend trades their repeatable charges for a single burn, and its direction-only readout with no distance and no line of sight keeps it well under the 4th-level [[Locate Creature]] spell. |
-| `attunement_reason` | Single use, grants no bonus to attack, damage, saving throws, or AC, and carries one power. The attunement decision tree's branches don't trigger. |
-| `pc_connection` | [[Jean-Claude Tabarnack]] already reads the [[Grung]] handler cell's stances in Calveno's crowds but can never follow one home. Hunter's Blend turns a single dropped trace into an hour of knowing which way a handler went. |
-| `current_holder` | Sold from the shelf at [[La Brace]], the [[Velo Quarter]] smoking room [[Rufio Segalla]] runs, the only room in Calveno licensed to burn alchemical smoke in the open. Also sold at 60% price as an unreliable second off [[La Gatta]], a vending board on [[the Bridge]]'s bottom tier run by [[Nicco Kettley]]. |
-| `narrative_hook` | Bought openly at either counter, or found already rolled in the coat of a courier or enforcer who tracks people for a living. |
+| One thing | Studied against a fresh physical trace and lit, it shows the compass direction of the marked creature for the next hour. |
+| Rarity justification | Uncommon, comparable to [[Wand of Secrets]] (no attunement, divination utility, points toward a hidden target within its own range) and [[Bag of Tricks]] (no attunement, charge-limited, one bounded effect per use). Hunter's Blend trades their repeatable charges for a single burn, and its direction-only readout with no distance and no line of sight keeps it well under the 4th-level [[Locate Creature]] spell. |
+| Attunement reason | Single use, grants no bonus to attack, damage, saving throws, or AC, and carries one power. The attunement decision tree's branches don't trigger. |
+| PC connection | [[Jean-Claude Tabarnack]] already reads the [[Grung]] handler cell's stances in Calveno's crowds but can never follow one home. Hunter's Blend turns a single dropped trace into an hour of knowing which way a handler went. |
+| Current holder | Sold from the shelf at [[La Brace]], the [[Velo Quarter]] smoking room [[Rufio Segalla]] runs, the only room in Calveno licensed to burn alchemical smoke in the open. Also sold at 60% price as an unreliable second off [[La Gatta]], a vending board on [[the Bridge]]'s bottom tier run by [[Nicco Kettley]]. |
+| Narrative hook | Bought openly at either counter, or found already rolled in the coat of a courier or enforcer who tracks people for a living. |
 
 ## Mechanics
 

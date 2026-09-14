@@ -66,11 +66,11 @@ Not sapient enough to act without a stronger slaad nearby directing it; left alo
 
 | Field | |
 |---|---|
-| `primary_goal` | Complete the caste molt Otar himself never finished — grow toward blue, then green. |
-| `consistent_method` | Never initiates alone; waits for a tadpole clutch or one of Otar's own attacks to create an opening, then piles onto an already-engaged target. |
-| `active_problem` | Incomplete metamorphosis leaves it pain-wracked and aggressive — much closer to feral than a true adult slaad, and it knows it. |
-| `performance_hooks` | Skin still wet and half-formed, sloughing translucent tissue with every movement. |
-| `link_of_relevance` | This is what a tadpole-infested host becomes — the same fate [[Solange Barret|Solange]] suffered, scaled down to a single reclaimed body; a downed ally lost to a tadpole clutch rises as one of these under Otar's control. |
+| Primary goal | Complete the caste molt Otar himself never finished — grow toward blue, then green. |
+| Consistent method | Never initiates alone; waits for a tadpole clutch or one of Otar's own attacks to create an opening, then piles onto an already-engaged target. |
+| Active problem | Incomplete metamorphosis leaves it pain-wracked and aggressive — much closer to feral than a true adult slaad, and it knows it. |
+| Performance hooks | Skin still wet and half-formed, sloughing translucent tissue with every movement. |
+| Link of relevance | This is what a tadpole-infested host becomes — the same fate [[Solange Barret|Solange]] suffered, scaled down to a single reclaimed body; a downed ally lost to a tadpole clutch rises as one of these under Otar's control. |
 
 ## Toy Chest
 

@@ -36,11 +36,11 @@ Ozzeth found the rite first and went further with it than Simone ever managed al
 
 | Field | Value |
 |---|---|
-| `primary_goal` | Keep [[Simone]]'s unsealed color-rite from collapsing, at any distance. |
-| `consistent_method` | Checks in by [[Sending]], timed to his own schedule instead of hers, so no watcher learns the pattern. |
-| `active_problem` | His own miscarried rite marked him "mage-abomination," so any help he offers has to travel through Sending, never his own name. |
-| `performance_hooks` | The silent professional who never explains himself + a casting hand that visibly bleeds color, red climbing one palm as blue drains the other. |
-| `link_of_relevance` | [[Jean-Claude Tabarnack]]: Ozzeth's death at his hands in Session 06 is what finally leaves Simone's rite unmaintained. |
+| Primary goal | Keep [[Simone]]'s unsealed color-rite from collapsing, at any distance. |
+| Consistent method | Checks in by [[Sending]], timed to his own schedule instead of hers, so no watcher learns the pattern. |
+| Active problem | His own miscarried rite marked him "mage-abomination," so any help he offers has to travel through Sending, never his own name. |
+| Performance hooks | The silent professional who never explains himself + a casting hand that visibly bleeds color, red climbing one palm as blue drains the other. |
+| Link of relevance | [[Jean-Claude Tabarnack]]: Ozzeth's death at his hands in Session 06 is what finally leaves Simone's rite unmaintained. |
 
 > [!mechanic]
 > **Ozzeth's Ossketh — incomplete arcane transmutation, background process.** The self-cast color-sealing rite never finished; it has been running unstably on his body for years (visible as the red-and-blue color shift in his hands during spellcasting). [[Detect Magic]] near Ozzeth: "Arcane transmutation — like a spell caught mid-execution, still running." His spellcasting is standard Arcane ([[Intelligence]], wizard tradition) and is separate from the Ossketh. The unstable Ossketh is a background process — [[Counterspell]] cannot target it.

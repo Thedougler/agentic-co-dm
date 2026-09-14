@@ -46,11 +46,11 @@ He buys short batches and failed runs from [[Studio Orsini]] at a fraction of wh
 
 | Field | Detail |
 |---|---|
-| primary_goal | Take a lease on the Bridge's middle tier (a shop with a door and a lock) before the Beffa crowds thin and the board's takings drop. |
-| consistent_method | Quotes a different price to each customer and dares them to notice. Pays for stock in gossip whenever the seller will take gossip. |
-| active_problem | His entire stock is [[Marta Orsini]]'s rejected batches, and Orsini has begun asking who is reselling her failures under the arch. |
-| performance_hooks | Counts change into your palm coin by coin without breaking eye contact. Works around the cat and never moves it. Closes every sale by naming the higher price he could have charged. |
-| link_of_relevance | Holds [[Jean-Claude Tabarnack]]'s smoking ledger. Trades it for gossip. |
+| Primary goal | Take a lease on the Bridge's middle tier (a shop with a door and a lock) before the Beffa crowds thin and the board's takings drop. |
+| Consistent method | Quotes a different price to each customer and dares them to notice. Pays for stock in gossip whenever the seller will take gossip. |
+| Active problem | His entire stock is [[Marta Orsini]]'s rejected batches, and Orsini has begun asking who is reselling her failures under the arch. |
+| Performance hooks | Counts change into your palm coin by coin without breaking eye contact. Works around the cat and never moves it. Closes every sale by naming the higher price he could have charged. |
+| Link of relevance | Holds [[Jean-Claude Tabarnack]]'s smoking ledger. Trades it for gossip. |
 
 **Voice and delivery.** Fast, warm, and never still. He talks over the fry stall's noise because he has to, and the volume never drops when the topic turns sensitive. Worldview word: **leverage**. Every fact he holds about a person is inventory he has not sold yet, which in his accounting is nothing at all like a betrayal.
 

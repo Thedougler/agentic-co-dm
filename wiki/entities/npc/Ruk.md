@@ -64,11 +64,11 @@ Read while recording: [[voice-profile script]]
 
 | Field | Value |
 |---|---|
-| primary_goal | Protect Nona Black-Jaw with his body and presence. |
-| consistent_method | Positions himself with his back to the wall, hands on the table, watching all doors. Never ignores a lie or a threat he observes. |
-| active_problem | Guarding a captured [[Grung]] prisoner held at the safe house. |
-| performance_hooks | Literal sentinel vibe. Rests at the wall with hands flat on the table, watching all doors. |
-| link_of_relevance | Sworn guardian of [[Nona Black-Jaw]], bound to her through territory, loyalty, feeding rituals, and the defense of the young. |
+| Primary goal | Protect Nona Black-Jaw with his body and presence. |
+| Consistent method | Positions himself with his back to the wall, hands on the table, watching all doors. Never ignores a lie or a threat he observes. |
+| Active problem | Guarding a captured [[Grung]] prisoner held at the safe house. |
+| Performance hooks | Literal sentinel vibe. Rests at the wall with hands flat on the table, watching all doors. |
+| Link of relevance | Sworn guardian of [[Nona Black-Jaw]], bound to her through territory, loyalty, feeding rituals, and the defense of the young. |
 
 **Voice & Delivery:** measured, flat, literal speech with clear words. He cannot hide lies or threats and states them plain. Not unkind, yet he'll give food first. Cross him twice and he stops being kind. At the table he reads the room while others see the people. Nona has used this skill for years.
 

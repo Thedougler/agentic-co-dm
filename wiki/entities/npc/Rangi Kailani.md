@@ -31,11 +31,11 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| primary_goal | defeat Nico Renzetti in the death-duel and preserve House Kailani's hold on Sparhold's rule |
-| consistent_method | trains constantly, disciplined and professional, treats the duel as a straight contest of skill with no cruelty, just duty |
-| active_problem | he reads the duel as personal combat between two fighters — he doesn't grasp that his opponent is being coerced, or that losing costs House Kailani everything, not just his own life |
-| performance_hooks | *Vibe:* watch-trained economy, nothing wasted. *Tic:* runs his thumb along his blade's edge before any decision, combat or otherwise. |
-| link_of_relevance | any PC reading combat readiness before the duel finds exactly what his reputation promises — no crack to exploit, no hidden weakness |
+| Primary goal | defeat Nico Renzetti in the death-duel and preserve House Kailani's hold on Sparhold's rule |
+| Consistent method | trains constantly, disciplined and professional, treats the duel as a straight contest of skill with no cruelty, just duty |
+| Active problem | he reads the duel as personal combat between two fighters — he doesn't grasp that his opponent is being coerced, or that losing costs House Kailani everything, not just his own life |
+| Performance hooks | *Vibe:* watch-trained economy, nothing wasted. *Tic:* runs his thumb along his blade's edge before any decision, combat or otherwise. |
+| Link of relevance | any PC reading combat readiness before the duel finds exactly what his reputation promises — no crack to exploit, no hidden weakness |
 
 **Voice & Delivery Notes:**
 

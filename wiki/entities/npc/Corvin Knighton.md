@@ -43,11 +43,11 @@ relationships:
 
 | Field | Value |
 |---|---|
-| `primary_goal` | Earn recognition as House Knighton's true successor on his own terms through blade and reputation, not through inherited rank or his uncle's fleet doctrine. |
-| `consistent_method` | Settles disputes and proves himself through formal, personal challenge over institutional authority. Issues challenges, never commands. |
-| `active_problem` | His Tessarine training and manners read as foreign airs to House Knighton's own officers, leaving him with no faction of his own inside the house he's meant to inherit. |
-| `performance_hooks` | Continental court-duelist vibe. Tic: sheathes and unsheathes two inches of his blade between sentences, never drawing it fully. |
-| `link_of_relevance` | A not-yet-played incident where the crew gravely wounds Corvin or his uncle will establish the specific connection. PC and mechanism remain open pending table play. |
+| Primary goal | Earn recognition as House Knighton's true successor on his own terms through blade and reputation, not through inherited rank or his uncle's fleet doctrine. |
+| Consistent method | Settles disputes and proves himself through formal, personal challenge over institutional authority. Issues challenges, never commands. |
+| Active problem | His Tessarine training and manners read as foreign airs to House Knighton's own officers, leaving him with no faction of his own inside the house he's meant to inherit. |
+| Performance hooks | Continental court-duelist vibe. Tic: sheathes and unsheathes two inches of his blade between sentences, never drawing it fully. |
+| Link of relevance | A not-yet-played incident where the crew gravely wounds Corvin or his uncle will establish the specific connection. PC and mechanism remain open pending table play. |
 
 > [!spoiler]
 > [[Shepherd Grigori]], shepherd of the [[Khlysty]], has identified Corvin, through Grigori's existing Tessarine ties, as his route into House Knighton. Grigori's plan: patiently engineer a circumstance untraceable to him where the crew gravely wounds Rupert or Corvin, then position himself to "rescue" them, binding House Knighton the same way he's bound two other noble threads while deepening the goodwill he already has with the crew. Corvin has no idea any of this is in motion.

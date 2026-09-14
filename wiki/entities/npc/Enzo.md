@@ -68,11 +68,11 @@ Read while recording: [[voice-profile script]]
 
 | Field | Value |
 |---|---|
-| primary_goal | Keep Nona alive and aware, reading every guest for threats and lies. |
-| consistent_method | Communicates through silence and small signals: tap of ash, weight shift, glance, or claw. |
-| active_problem | The raid brought new faces to the [[Mercatura]] and new guards to the quays. One person cannot read everyone at once. |
-| performance_hooks | Polished enforcer vibe. Taps his cigar ash against the table rim to mark conversation rhythm. |
-| link_of_relevance | Arranged safe passage and consolation for [[Perrin Black-Jaw]]'s surviving crew on Nona's order (Session 03). |
+| Primary goal | Keep Nona alive and aware, reading every guest for threats and lies. |
+| Consistent method | Communicates through silence and small signals: tap of ash, weight shift, glance, or claw. |
+| Active problem | The raid brought new faces to the [[Mercatura]] and new guards to the quays. One person cannot read everyone at once. |
+| Performance hooks | Polished enforcer vibe. Taps his cigar ash against the table rim to mark conversation rhythm. |
+| Link of relevance | Arranged safe passage and consolation for [[Perrin Black-Jaw]]'s surviving crew on Nona's order (Session 03). |
 
 **Voice & Delivery:** never raises his voice, speaking with complete politeness regardless of message. "Nona asked you a question" lands as threat or favor depending on context. Holds doors and pulls chairs, reading crew like a banker reads a ledger while signaling to Nona with ash taps and weight shifts. Comfortable with violence, prefers it to talk.
 

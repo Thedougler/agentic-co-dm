@@ -36,12 +36,12 @@ tier: supporting
 
 | Field | Detail |
 |---|---|
-| `one_thing` | Audible at 1,200 feet — twice the range of the SRD signal whistle — with three distinct tones for basic coded messages. |
-| `rarity_justification` | Non-magical tool, an upgrade over the SRD [[Signal Whistle]] (5 cp, 600 ft range). Grants no bonus to any roll. Common is generous given it is just a better whistle. |
-| `attunement_reason` | Non-magical, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
-| `pc_connection` | Ship-to-ship and ship-to-shore communication matters in the Central Strait, where fog and distance eat voices. |
-| `current_holder` | [[Cotter Foss]] sells these from the rail of the [[Nimmik Vollask]]. |
-| `narrative_hook` | Crews who work the same waters learn each other's whistle codes. A whistle pattern heard through fog tells you who is out there before you see them. |
+| One thing | Audible at 1,200 feet — twice the range of the SRD signal whistle — with three distinct tones for basic coded messages. |
+| Rarity justification | Non-magical tool, an upgrade over the SRD [[Signal Whistle]] (5 cp, 600 ft range). Grants no bonus to any roll. Common is generous given it is just a better whistle. |
+| Attunement reason | Non-magical, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
+| PC connection | Ship-to-ship and ship-to-shore communication matters in the Central Strait, where fog and distance eat voices. |
+| Current holder | [[Cotter Foss]] sells these from the rail of the [[Nimmik Vollask]]. |
+| Narrative hook | Crews who work the same waters learn each other's whistle codes. A whistle pattern heard through fog tells you who is out there before you see them. |
 
 ## Mechanics
 

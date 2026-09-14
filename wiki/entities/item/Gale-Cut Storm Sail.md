@@ -36,12 +36,12 @@ _Wondrous Item, Rare._
 
 | Field | Detail |
 |---|---|
-| `one_thing` | A ship under this sail keeps its course and its speed in weather that should stop it. |
-| `rarity_justification` | Beside [[Folding Boat]] (rare, a whole vessel out of a box) and above [[Decanter of Endless Water]] (uncommon, water on tap). This carries no vessel of its own and does nothing whatever off the water. |
-| `attunement_reason` | A mast carries it, and it modifies no roll a creature makes, so the attunement tree has no branch for it. |
-| `pc_connection` | The crew crosses open water in _[[Uncertainty]]_, and weather has already cost them a hull once. |
-| `current_holder` | [[Giacomo Moretti]], in the back-room crate the [[Tessarine Concordat|Tessarine]] factor house has not claimed. |
-| `narrative_hook` | The chalked tally in the corner names a tonnage no ship on the [[Mercatura]] carries. |
+| One thing | A ship under this sail keeps its course and its speed in weather that should stop it. |
+| Rarity justification | Beside [[Folding Boat]] (rare, a whole vessel out of a box) and above [[Decanter of Endless Water]] (uncommon, water on tap). This carries no vessel of its own and does nothing whatever off the water. |
+| Attunement reason | A mast carries it, and it modifies no roll a creature makes, so the attunement tree has no branch for it. |
+| PC connection | The crew crosses open water in _[[Uncertainty]]_, and weather has already cost them a hull once. |
+| Current holder | [[Giacomo Moretti]], in the back-room crate the [[Tessarine Concordat|Tessarine]] factor house has not claimed. |
+| Narrative hook | The chalked tally in the corner names a tonnage no ship on the [[Mercatura]] carries. |
 
 ## Mechanics
 

@@ -55,11 +55,11 @@ Non-combatant.
 
 | Field | Content |
 |---|---|
-| `primary_goal` | Get through one full day where nothing goes wrong for him or anyone standing near him. |
-| `consistent_method` | Narrates his own bad luck out loud before it lands (half a joke, half a warning). This makes it read as expected instead of alarming. He counts things under his breath (ropes, crates, steps) like he's warding off the next one. |
-| `active_problem` | The dockmaster is one incident from cutting him loose. His streak now reads as a liability to the crew working near him, not just to himself. |
-| `performance_hooks` | The dockworker everyone's quietly superstitious about. Nobody uses the word "cursed" to his face. They just won't hand him the winch controls anymore. Counts under his breath, mid-sentence, without noticing he's doing it. |
-| `link_of_relevance` | [[Crissdalynn Khinriss]]. He is the unrecorded cost of a [[Countless]] agent's passage, tied to her own order's schism. Helping him (instead of only recording what happened to him) puts her Sentinel training directly at odds with the doctrine she acquired. |
+| Primary goal | Get through one full day where nothing goes wrong for him or anyone standing near him. |
+| Consistent method | Narrates his own bad luck out loud before it lands (half a joke, half a warning). This makes it read as expected instead of alarming. He counts things under his breath (ropes, crates, steps) like he's warding off the next one. |
+| Active problem | The dockmaster is one incident from cutting him loose. His streak now reads as a liability to the crew working near him, not just to himself. |
+| Performance hooks | The dockworker everyone's quietly superstitious about. Nobody uses the word "cursed" to his face. They just won't hand him the winch controls anymore. Counts under his breath, mid-sentence, without noticing he's doing it. |
+| Link of relevance | [[Crissdalynn Khinriss]]. He is the unrecorded cost of a [[Countless]] agent's passage, tied to her own order's schism. Helping him (instead of only recording what happened to him) puts her Sentinel training directly at odds with the doctrine she acquired. |
 
 ## Voice & Delivery
 

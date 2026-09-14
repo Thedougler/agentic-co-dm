@@ -33,12 +33,12 @@ tier: supporting
 
 | Field | Detail |
 |---|---|
-| `one_thing` | Submerged, it lets the holder sense the seafloor's depth and contour within sixty feet as a tactile impression against the palm. |
-| `rarity_justification` | Uncommon — comparable to [[Goggles of Night]] (Uncommon, no attunement, at-will Darkvision 60 ft, pure sensory utility) and [[Cloak of Elvenkind]] (Uncommon, no attunement, advantage on Stealth in specific conditions). This item is narrower in application and limited to once per day. |
-| `attunement_reason` | Single power. No bonus to attack, damage, AC, or saving throws. No combat application. No branch of the attunement tree fires. |
-| `pc_connection` | [[Delmar Fisk]] — threading the [[Central Strait]] on a ship whose debt to the same Waveservant system that seized the *Salted Margin* makes the outer Midchain reef approaches the one crossing he cannot afford to get wrong. |
-| `current_holder` | Unclaimed, on the captain's table aboard [[the Salted Margin]]. |
-| `narrative_hook` | Used within the outer [[Midchain]] reef approaches, the disc shows dressed stone in the silt at a bearing no chart marks. Whether it is a ruin, a shrine, or a wreck is a question the disc cannot answer. |
+| One thing | Submerged, it lets the holder sense the seafloor's depth and contour within sixty feet as a tactile impression against the palm. |
+| Rarity justification | Uncommon — comparable to [[Goggles of Night]] (Uncommon, no attunement, at-will Darkvision 60 ft, pure sensory utility) and [[Cloak of Elvenkind]] (Uncommon, no attunement, advantage on Stealth in specific conditions). This item is narrower in application and limited to once per day. |
+| Attunement reason | Single power. No bonus to attack, damage, AC, or saving throws. No combat application. No branch of the attunement tree fires. |
+| PC connection | [[Delmar Fisk]] — threading the [[Central Strait]] on a ship whose debt to the same Waveservant system that seized the *Salted Margin* makes the outer Midchain reef approaches the one crossing he cannot afford to get wrong. |
+| Current holder | Unclaimed, on the captain's table aboard [[the Salted Margin]]. |
+| Narrative hook | Used within the outer [[Midchain]] reef approaches, the disc shows dressed stone in the silt at a bearing no chart marks. Whether it is a ruin, a shrine, or a wreck is a question the disc cannot answer. |
 
 ## Mechanics
 

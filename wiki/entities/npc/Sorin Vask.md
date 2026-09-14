@@ -37,11 +37,11 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| primary_goal | Keep his trade running without any dock boss deciding it's worth a claim. |
-| consistent_method | Buys quiet and sells firm-but-fair. Keeps no ledger of who sold him what, protecting his sellers and himself in the same move. |
-| active_problem | One of the dock bosses has started asking pointed questions about where his latest haul came from, the attention that gets a shop "protected" whether he wants it or not. |
-| performance_hooks | Dockside-salvage-foreman vibe. Weighs a piece once in his palm and sets it down flat before naming a price, never twice. |
-| link_of_relevance | A plausible standing fence and appraiser for whatever salvage crosses his counter next. |
+| Primary goal | Keep his trade running without any dock boss deciding it's worth a claim. |
+| Consistent method | Buys quiet and sells firm-but-fair. Keeps no ledger of who sold him what, protecting his sellers and himself in the same move. |
+| Active problem | One of the dock bosses has started asking pointed questions about where his latest haul came from, the attention that gets a shop "protected" whether he wants it or not. |
+| Performance hooks | Dockside-salvage-foreman vibe. Weighs a piece once in his palm and sets it down flat before naming a price, never twice. |
+| Link of relevance | A plausible standing fence and appraiser for whatever salvage crosses his counter next. |
 
 **Voice & Delivery:**
 

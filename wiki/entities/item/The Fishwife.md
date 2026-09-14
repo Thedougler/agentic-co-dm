@@ -39,12 +39,12 @@ Every Calveno household knows the sound this one makes, which is the point of it
 
 | Field | Detail |
 |---|---|
-| `one_thing` | It screams in a woman's voice for a minute wherever it lands, and everyone within half a mile turns toward the noise instead of toward you. |
-| `rarity_justification` | A minute of noise, where [[Pipes of Haunting]] frightens on a save and [[Bag of Tricks]] places a creature. |
-| `attunement_reason` | One power, spent in a single shot, touching no attack, damage, save, or AC roll. The attunement tree stays shut. |
-| `pc_connection` | [[Jean-Claude Tabarnack]] works crowds and patrols by reading where attention gathers. This puts the attention two canals away, in a voice the city has learned to chase, without anyone seeing him do anything at all. |
-| `current_holder` | [[Ettore Lupo]], in the drawer built into the counter at [[Casa Lupo]]. |
-| `narrative_hook` | Anyone who heard one go off during a festival night, and saw what the crowd did next, recognises the pierced tin head in another quiver. |
+| One thing | It screams in a woman's voice for a minute wherever it lands, and everyone within half a mile turns toward the noise instead of toward you. |
+| Rarity justification | A minute of noise, where [[Pipes of Haunting]] frightens on a save and [[Bag of Tricks]] places a creature. |
+| Attunement reason | One power, spent in a single shot, touching no attack, damage, save, or AC roll. The attunement tree stays shut. |
+| PC connection | [[Jean-Claude Tabarnack]] works crowds and patrols by reading where attention gathers. This puts the attention two canals away, in a voice the city has learned to chase, without anyone seeing him do anything at all. |
+| Current holder | [[Ettore Lupo]], in the drawer built into the counter at [[Casa Lupo]]. |
+| Narrative hook | Anyone who heard one go off during a festival night, and saw what the crowd did next, recognises the pierced tin head in another quiver. |
 
 ## Mechanics
 

@@ -36,12 +36,12 @@ _Gear (Winch), Common._
 
 | Field | Detail |
 |---|---|
-| `one_thing` | Every foot of chain the drum takes in stays in, so a hauled weight never loses ground. |
-| `rarity_justification` | Non-magical shipwright's machinery, priced above the [[Reinforced Specimen Cage]] (60 gp) for the ironwork in it and well under the [[Rope of Climbing]] (90 gp) in what it actually does. It grants no bonus to any roll. |
-| `attunement_reason` | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
-| `pc_connection` | [[Perrin Black-Jaw|Perrin]] saves at [[Strength]] -1 with disadvantage on top, so anything that grabs him takes him wherever it wants and the crew has to win the ground back another way. |
-| `current_holder` | [[Kettil Ormsson]], bolted to the counter edge at [[Ormsson's Fittings]] for customers to try. |
-| `narrative_hook` | A [[Sawek]] drags what it grabs toward its hole at twenty feet a round, and nobody has out-swum one yet. |
+| One thing | Every foot of chain the drum takes in stays in, so a hauled weight never loses ground. |
+| Rarity justification | Non-magical shipwright's machinery, priced above the [[Reinforced Specimen Cage]] (60 gp) for the ironwork in it and well under the [[Rope of Climbing]] (90 gp) in what it actually does. It grants no bonus to any roll. |
+| Attunement reason | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
+| PC connection | [[Perrin Black-Jaw|Perrin]] saves at [[Strength]] -1 with disadvantage on top, so anything that grabs him takes him wherever it wants and the crew has to win the ground back another way. |
+| Current holder | [[Kettil Ormsson]], bolted to the counter edge at [[Ormsson's Fittings]] for customers to try. |
+| Narrative hook | A [[Sawek]] drags what it grabs toward its hole at twenty feet a round, and nobody has out-swum one yet. |
 
 ## Mechanics
 

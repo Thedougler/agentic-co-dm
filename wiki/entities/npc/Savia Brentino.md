@@ -43,11 +43,11 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| primary_goal | Keep Carpenter's Slip running at peak efficiency and maintain her reputation as the structural expert. |
-| consistent_method | Takes deposits upfront. Meets every deadline. Refuses cosmetic work flat. |
-| active_problem | The Arsenal's slow pace means more work flows her way. She's becoming the primary yard for structural work. |
-| performance_hooks | Shipwright vibe. She reads keel wood like text to assess timber grain and age, speaks only about what a ship is, never what it looks like. |
-| link_of_relevance | Works on the ship(s) her clients sail or rely upon. |
+| Primary goal | Keep Carpenter's Slip running at peak efficiency and maintain her reputation as the structural expert. |
+| Consistent method | Takes deposits upfront. Meets every deadline. Refuses cosmetic work flat. |
+| Active problem | The Arsenal's slow pace means more work flows her way. She's becoming the primary yard for structural work. |
+| Performance hooks | Shipwright vibe. She reads keel wood like text to assess timber grain and age, speaks only about what a ship is, never what it looks like. |
+| Link of relevance | Works on the ship(s) her clients sail or rely upon. |
 
 **Voice & Delivery:** direct, technical. She does not posture or explain. You either understand hulls or you don't. "That transom carries too much" is her version of hello. "She'll hold through [[Central Strait|the Strait]]" is her warmest greeting. Holds opinions about Dravosi caulking and shares them unprompted.
 

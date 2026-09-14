@@ -38,12 +38,12 @@ Sold for the last scene of a play nobody in [[Calven and Calveno]] stages any mo
 
 | Field | Detail |
 |---|---|
-| `one_thing` | Burst on the floor, it fills twenty feet with drifting flake nothing sees through. |
-| `rarity_justification` | Common: a one-use consumable whose whole effect is a minute of cover. |
-| `attunement_reason` | None. Thrown and spent in one action. |
-| `pc_connection` | Covers the withdrawal [[Catarina Da'Virelli|Catarina]] and [[Perrin Black-Jaw|Perrin]] cannot buy with hit points. |
-| `current_holder` | [[Fio]], in a bowl at the counter's near end. |
-| `narrative_hook` | 60 gp a twist, and Fio counts how many leave in one sale. |
+| One thing | Burst on the floor, it fills twenty feet with drifting flake nothing sees through. |
+| Rarity justification | Common: a one-use consumable whose whole effect is a minute of cover. |
+| Attunement reason | None. Thrown and spent in one action. |
+| PC connection | Covers the withdrawal [[Catarina Da'Virelli|Catarina]] and [[Perrin Black-Jaw|Perrin]] cannot buy with hit points. |
+| Current holder | [[Fio]], in a bowl at the counter's near end. |
+| Narrative hook | 60 gp a twist, and Fio counts how many leave in one sale. |
 
 Common tier holds. [[Magic Item Rarity]] prices Common goods at 100 gp, and a single-use screen at 60 gp sits under that. The effect matches _[[fog cloud]]_ cast at 1st level, stripped of concentration and of the caster's ability to move it, which is the trade a scroll of the same spell does not make.
 

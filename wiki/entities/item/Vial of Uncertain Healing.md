@@ -29,12 +29,12 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| one_thing | Drinking this potion always heals 1d6 hit points and always leaves the drinker talking uncontrollably for 1 hour. A failed Constitution save also triggers one random potion effect rolled fresh from a d6 table. Every dose is a guaranteed heal wrapped in an unpredictable gamble, never just a plain healing potion. |
-| rarity_justification | Uncommon: the guaranteed 1d6 healing alone would be closer to Common (matching [[Potion of Healing]] (Common)), but the attached random effect draws from a table that includes real Uncommon-tier potion effects ([[Potion of Growth]], [[Potion of Poison]], and others), so the item as a whole sits at Uncommon to match its strongest possible outcome. |
-| attunement_reason | Potions never require attunement per SRD convention (single-use items, applied and spent immediately). This matches every potion in the vault. |
-| pc_connection | [[Delmar Fisk]] carries one, slipped into his coat by [[Lavinia Sordi]] along with a way to reach her directly. Each future use is a 1d6 gamble, not just a guaranteed heal. |
-| current_holder | [[Lavinia Sordi]] keeps vials stocked at [[La Cenere]]; [[Delmar Fisk]] carries one in his coat. |
-| narrative_hook | Still available to buy at [[La Cenere]] for 75 gp. Lavinia doesn't test her own stock, so nobody but the drinker ever finds out what a given vial actually does. |
+| One thing | Drinking this potion always heals 1d6 hit points and always leaves the drinker talking uncontrollably for 1 hour. A failed Constitution save also triggers one random potion effect rolled fresh from a d6 table. Every dose is a guaranteed heal wrapped in an unpredictable gamble, never just a plain healing potion. |
+| Rarity justification | Uncommon: the guaranteed 1d6 healing alone would be closer to Common (matching [[Potion of Healing]] (Common)), but the attached random effect draws from a table that includes real Uncommon-tier potion effects ([[Potion of Growth]], [[Potion of Poison]], and others), so the item as a whole sits at Uncommon to match its strongest possible outcome. |
+| Attunement reason | Potions never require attunement per SRD convention (single-use items, applied and spent immediately). This matches every potion in the vault. |
+| PC connection | [[Delmar Fisk]] carries one, slipped into his coat by [[Lavinia Sordi]] along with a way to reach her directly. Each future use is a 1d6 gamble, not just a guaranteed heal. |
+| Current holder | [[Lavinia Sordi]] keeps vials stocked at [[La Cenere]]; [[Delmar Fisk]] carries one in his coat. |
+| Narrative hook | Still available to buy at [[La Cenere]] for 75 gp. Lavinia doesn't test her own stock, so nobody but the drinker ever finds out what a given vial actually does. |
 
 ## Mechanics
 

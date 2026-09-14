@@ -30,12 +30,12 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| one_thing | Once per short rest, the instant its wielder becomes aware of a hostile creature, it launches itself from its scabbard and strikes the nearest hostile creature automatically for its weapon damage dice, bypassing the attack roll entirely. |
-| rarity_justification | Rare, comparable to a +2 weapon (Rare, always requires attunement, a reliable combat bonus) and [[Ring of Evasion]] (Rare, 1/day negate a failed [[Dexterity]] save, a strong periodic benefit). A plain +1 rapier alone would only be Uncommon, but an unconditional, no-roll-required free strike is exactly the pattern the rarity budget's balance-mistake table routes to Rare, not Uncommon. |
-| attunement_reason | Grants a +1 bonus to attack and damage rolls. The attunement decision tree's first branch requires attunement regardless of the item's other powers. |
-| pc_connection | None named. DM ruling: this sits on [[Lavinia Sordi]]'s rack as unclaimed shop stock, offered to the whole party to choose from once revealed, open to whichever PC wants it. |
-| current_holder | [[Lavinia Sordi]], on the rack at [[La Cenere]] |
-| narrative_hook | On Lavinia Sordi's rack at La Cenere, priced at 180 gp, cheap for a +1 weapon, because a sword that won't stay in your hand and won't stop insulting you is a hard sell to anyone who hasn't already decided the trade is worth it. |
+| One thing | Once per short rest, the instant its wielder becomes aware of a hostile creature, it launches itself from its scabbard and strikes the nearest hostile creature automatically for its weapon damage dice, bypassing the attack roll entirely. |
+| Rarity justification | Rare, comparable to a +2 weapon (Rare, always requires attunement, a reliable combat bonus) and [[Ring of Evasion]] (Rare, 1/day negate a failed [[Dexterity]] save, a strong periodic benefit). A plain +1 rapier alone would only be Uncommon, but an unconditional, no-roll-required free strike is exactly the pattern the rarity budget's balance-mistake table routes to Rare, not Uncommon. |
+| Attunement reason | Grants a +1 bonus to attack and damage rolls. The attunement decision tree's first branch requires attunement regardless of the item's other powers. |
+| PC connection | None named. DM ruling: this sits on [[Lavinia Sordi]]'s rack as unclaimed shop stock, offered to the whole party to choose from once revealed, open to whichever PC wants it. |
+| Current holder | [[Lavinia Sordi]], on the rack at [[La Cenere]] |
+| Narrative hook | On Lavinia Sordi's rack at La Cenere, priced at 180 gp, cheap for a +1 weapon, because a sword that won't stay in your hand and won't stop insulting you is a hard sell to anyone who hasn't already decided the trade is worth it. |
 
 ## Mechanics
 

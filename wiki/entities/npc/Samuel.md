@@ -45,11 +45,11 @@ visibility: dm
 
 | Field | Value |
 |---|---|
-| primary_goal | Get someone to tell him plainly what his job is. |
-| consistent_method | Shows up on time, listens carefully and asks permission before acting. |
-| active_problem | Nobody has ever stated the job's actual scope or expectations. |
-| performance_hooks | Earnest, almost apologetic vibe. Fidgets with the beak-wax in his pocket when he's uncertain. |
-| link_of_relevance | Runs messages between [[Catarina Da'Virelli|Catarina]] and the crew at [[Cat's Curios]]. |
+| Primary goal | Get someone to tell him plainly what his job is. |
+| Consistent method | Shows up on time, listens carefully and asks permission before acting. |
+| Active problem | Nobody has ever stated the job's actual scope or expectations. |
+| Performance hooks | Earnest, almost apologetic vibe. Fidgets with the beak-wax in his pocket when he's uncertain. |
+| Link of relevance | Runs messages between [[Catarina Da'Virelli|Catarina]] and the crew at [[Cat's Curios]]. |
 
 ## Session Log
 

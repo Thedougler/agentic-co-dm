@@ -38,12 +38,12 @@ A run [[Studio Orsini]] bound with the wrong fixative, which took the scent out 
 
 | Field | Detail |
 |---|---|
-| `one_thing` | For 1 hour after lighting, nobody who sees the smoker can afterward describe, name, or pick them out. |
-| `rarity_justification` | Under [[Hat of Disguise]] (Uncommon, attunement, at-will [[Disguise Self]] every hour the wearer keeps it on) and under [[Cloak of Elvenkind]] (Uncommon, free of an attunement slot, a standing penalty on every attempt to see the wearer). Single use, one hour, and a watcher who keeps looking sees everything. |
-| `attunement_reason` | None. Single use, one power, no bonus to attack rolls, damage rolls, saving throws, or AC. |
-| `pc_connection` | [[Jean-Claude Tabarnack]] reads [[Grung]] handler stances in the crowd and knows the reading runs both ways. Buying anything on [[the Bridge]]'s bottom tier happens in the most-watched twenty feet in [[Calven and Calveno]]. |
-| `current_holder` | Board stock at [[La Gatta]], sold at 90 gp under the Seconds discount, and [[Nicco Kettley]] never asks who wants one or why. |
-| `narrative_hook` | Somebody stood at the board, made a deal, and nobody on the tier can say who. Nicco can, and he prices that answer separately. |
+| One thing | For 1 hour after lighting, nobody who sees the smoker can afterward describe, name, or pick them out. |
+| Rarity justification | Under [[Hat of Disguise]] (Uncommon, attunement, at-will [[Disguise Self]] every hour the wearer keeps it on) and under [[Cloak of Elvenkind]] (Uncommon, free of an attunement slot, a standing penalty on every attempt to see the wearer). Single use, one hour, and a watcher who keeps looking sees everything. |
+| Attunement reason | None. Single use, one power, no bonus to attack rolls, damage rolls, saving throws, or AC. |
+| PC connection | [[Jean-Claude Tabarnack]] reads [[Grung]] handler stances in the crowd and knows the reading runs both ways. Buying anything on [[the Bridge]]'s bottom tier happens in the most-watched twenty feet in [[Calven and Calveno]]. |
+| Current holder | Board stock at [[La Gatta]], sold at 90 gp under the Seconds discount, and [[Nicco Kettley]] never asks who wants one or why. |
+| Narrative hook | Somebody stood at the board, made a deal, and nobody on the tier can say who. Nicco can, and he prices that answer separately. |
 
 **Rarity:** the Uncommon tier holds this without argument. Hat of Disguise runs all day off an attunement slot and changes what a watcher sees while they are watching. Nobody's Face does nothing in the moment. It spoils the account afterward, once, for an hour, and it cannot save a smoker whose watcher simply keeps them in sight.
 

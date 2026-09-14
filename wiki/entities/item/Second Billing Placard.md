@@ -38,12 +38,12 @@ Sold to companies too small to print a programme, so the second name on the bill
 
 | Field | Detail |
 |---|---|
-| `one_thing` | A name on the brass makes readers take that person for staff at the door it hangs on. |
-| `rarity_justification` | Common: one social effect at one doorway, with nothing riding on a save. |
-| `attunement_reason` | None. It hangs on a door and does its work there. |
-| `pc_connection` | Puts [[Delmar Fisk|Delmar]] inside a door instead of over its wall. |
-| `current_holder` | [[Fio]], fanned on a card at the counter. |
-| `narrative_hook` | 90 gp, and Fio never asks which door. |
+| One thing | A name on the brass makes readers take that person for staff at the door it hangs on. |
+| Rarity justification | Common: one social effect at one doorway, with nothing riding on a save. |
+| Attunement reason | None. It hangs on a door and does its work there. |
+| PC connection | Puts [[Delmar Fisk|Delmar]] inside a door instead of over its wall. |
+| Current holder | [[Fio]], fanned on a card at the counter. |
+| Narrative hook | 90 gp, and Fio never asks which door. |
 
 Common tier holds. [[Magic Item Rarity]] prices Common goods at 100 gp, and the placard's 90 gp sits under that. Its effect stops well short of _[[disguise self]]_: it changes nothing about the bearer's face, voice, or clothing, and it does no work at all once the bearer walks out of sight of the door.
 

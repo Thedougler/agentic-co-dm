@@ -35,12 +35,12 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| `one_thing` | A cake eaten over a short rest removes one level of [[Exhaustion]]. |
-| `rarity_justification` | Uncommon, three uses of a condition-clearing consumable, sitting between [[Potion of Healing (Greater)]] (one use, 4d4+4 hit points) and [[Oil of Slipperiness]] (one application, eight hours free of grapples and restraints). |
-| `attunement_reason` | None. One power, no bonus to attack, damage, saves, or AC. |
-| `pc_connection` | The crew of the [[Uncertainty]] on a Deep crossing, where exhaustion's penalty rides every d20 test at once: [[Catarina Da'Virelli|Catarina]] holds concentration on a flat save, and [[Perrin Black-Jaw|Perrin]]'s [[Strength]] save is already negative before a crossing takes anything off it. |
-| `current_holder` | [[Suryo Wibowo]], on the short shelf behind his counter. |
-| `narrative_hook` | Suryo sells a case to any captain who gives him a crew count and a days-at-sea figure, and tells the ones who come up short so to their faces. |
+| One thing | A cake eaten over a short rest removes one level of [[Exhaustion]]. |
+| Rarity justification | Uncommon, three uses of a condition-clearing consumable, sitting between [[Potion of Healing (Greater)]] (one use, 4d4+4 hit points) and [[Oil of Slipperiness]] (one application, eight hours free of grapples and restraints). |
+| Attunement reason | None. One power, no bonus to attack, damage, saves, or AC. |
+| PC connection | The crew of the [[Uncertainty]] on a Deep crossing, where exhaustion's penalty rides every d20 test at once: [[Catarina Da'Virelli|Catarina]] holds concentration on a flat save, and [[Perrin Black-Jaw|Perrin]]'s [[Strength]] save is already negative before a crossing takes anything off it. |
+| Current holder | [[Suryo Wibowo]], on the short shelf behind his counter. |
+| Narrative hook | Suryo sells a case to any captain who gives him a crew count and a days-at-sea figure, and tells the ones who come up short so to their faces. |
 
 ## Mechanics
 

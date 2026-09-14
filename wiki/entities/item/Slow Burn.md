@@ -38,12 +38,12 @@ Shelf stock at [[La Brace]], and the blend [[Rufio Segalla]] sells most of to pe
 
 | Field | Detail |
 |---|---|
-| `one_thing` | For 1 hour after lighting, the smoker has advantage on [[Constitution]] saving throws made to maintain [[Concentration]]. |
-| `rarity_justification` | Well under [[Necklace of Adaptation]] (Rare, outright immunity to the Concentration-breaking effect of damage, permanent, attunement required), and level with [[Cloak of Elvenkind]] (Uncommon, one situational advantage, worn without attunement). |
-| `attunement_reason` | None. Single use, one power, and the advantage covers one narrow class of save, leaving every other saving throw flat. |
-| `pc_connection` | [[Catarina Da'Virelli|Catarina Davirelli]] holds the crew's only advantage engine and saves flat at +5, with no [[War Caster]] behind it. |
-| `current_holder` | Shelf stock at [[La Brace]], sold across the counter to anyone who walks in. |
-| `narrative_hook` | Someone in [[Le Paludi]] spins the thread, and Rufio will not say who. He answers every other question about his shelf. |
+| One thing | For 1 hour after lighting, the smoker has advantage on [[Constitution]] saving throws made to maintain [[Concentration]]. |
+| Rarity justification | Well under [[Necklace of Adaptation]] (Rare, outright immunity to the Concentration-breaking effect of damage, permanent, attunement required), and level with [[Cloak of Elvenkind]] (Uncommon, one situational advantage, worn without attunement). |
+| Attunement reason | None. Single use, one power, and the advantage covers one narrow class of save, leaving every other saving throw flat. |
+| PC connection | [[Catarina Da'Virelli|Catarina Davirelli]] holds the crew's only advantage engine and saves flat at +5, with no [[War Caster]] behind it. |
+| Current holder | Shelf stock at [[La Brace]], sold across the counter to anyone who walks in. |
+| Narrative hook | Someone in [[Le Paludi]] spins the thread, and Rufio will not say who. He answers every other question about his shelf. |
 
 **Rarity:** the Uncommon tier fits. Necklace of Adaptation sits at Rare and removes the problem permanently instead of improving one roll, and it spends an attunement slot doing that. Cloak of Elvenkind sits closer, granting one advantage in one circumstance to anyone who puts it on. An hour of the same shape out of a consumable stays under both.
 

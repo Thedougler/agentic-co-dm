@@ -38,12 +38,12 @@ Sold for the prompter's box at the front of a stage, where somebody is always fe
 
 | Field | Detail |
 |---|---|
-| `one_thing` | Held to the ear, it whispers one true property of a creature or object in sight. |
-| `rarity_justification` | Uncommon: three uses a day, information only, no bonus to any roll. |
-| `attunement_reason` | None. One power, no roll bonus, no save. |
-| `pc_connection` | Answers the questions the crew's flat [[Intelligence]] rolls keep failing to. |
-| `current_holder` | [[Fioravante Selmerin|Fio]], on the mat beside the counter. |
-| `narrative_hook` | 300 gp, and Fio will not say who the whisper belongs to. |
+| One thing | Held to the ear, it whispers one true property of a creature or object in sight. |
+| Rarity justification | Uncommon: three uses a day, information only, no bonus to any roll. |
+| Attunement reason | None. One power, no roll bonus, no save. |
+| PC connection | Answers the questions the crew's flat [[Intelligence]] rolls keep failing to. |
+| Current holder | [[Fioravante Selmerin|Fio]], on the mat beside the counter. |
+| Narrative hook | 300 gp, and Fio will not say who the whisper belongs to. |
 
 Uncommon tier holds. [[Magic Item Rarity]] prices Uncommon goods at 400 gp with an approximate range of 100-500 gp, and the shell's 300 gp sits inside it beside [[La Brace]]'s [[Ricochet Red]] at the same price. It reaches nowhere near _[[identify]]_: one property, not the item's full properties, no attunement requirement disclosed, no spells stored, and nothing at all learned from touch or from a page of text.
 

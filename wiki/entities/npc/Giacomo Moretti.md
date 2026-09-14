@@ -48,11 +48,11 @@ tier: supporting
 
 | Field | Value |
 |---|---|
-| primary_goal | Convert the Concordat's credit into six months of provisioning and secure the profit margin. |
-| consistent_method | Quotes once, flat, final. Lets silence sell the number. |
-| active_problem | A mysterious buyer came asking about his dock customers that morning; he found it rude and hasn't linked it to anything else, but it unsettles him. |
-| performance_hooks | Beffa Accord member's bearing. Works a coil of silk line through both hands without looking at it. |
-| link_of_relevance | Holds disputed cargo with two claimants, faction-marked, three years unclaimed. |
+| Primary goal | Convert the Concordat's credit into six months of provisioning and secure the profit margin. |
+| Consistent method | Quotes once, flat, final. Lets silence sell the number. |
+| Active problem | A mysterious buyer came asking about his dock customers that morning; he found it rude and hasn't linked it to anything else, but it unsettles him. |
+| Performance hooks | Beffa Accord member's bearing. Works a coil of silk line through both hands without looking at it. |
+| Link of relevance | Holds disputed cargo with two claimants, faction-marked, three years unclaimed. |
 
 **Voice & Delivery:** transactional and precise. He quotes once. His stock responses are "Right," "The price is the price," and "Six months or cash?" He works without hurrying and gives a professional courtesy look when examined closely, as when he inspected Jean-Claude's moustache with interest. Asked about the back room, he says nobody comes out of there and lets it alone.
 

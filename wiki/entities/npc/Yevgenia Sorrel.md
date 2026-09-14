@@ -39,11 +39,11 @@ Company-store customer-service voice, drilled flat, cracking on one word, Marta.
 
 | Field | Detail |
 |---|---|
-| `primary_goal` | Out-price and out-stock Voyvode General Store's shelf, item for item, so neither company blinks first. |
-| `consistent_method` | Recites the company script until "Voyvode" comes up, then drops it mid-sentence for a real jab. |
-| `active_problem` | Sunkline just repriced its rope to match Voyvode's again, and she has to restock and reprice with nothing to show for it but another identical aisle. |
-| `performance_hooks` | The identikit company clerk drilled into cheerful sameness. Straightens the same shelf-row twice while she talks, like the aisle itself needs correcting. |
-| `link_of_relevance` | [[Catarina Da'Virelli]]: Yevgenia jury-rigs broken stock with scavenged Antheri scrap faster and better than the company catalog allows, and Catarina is the one customer sharp enough to notice the fix wasn't off any shelf. |
+| Primary goal | Out-price and out-stock Voyvode General Store's shelf, item for item, so neither company blinks first. |
+| Consistent method | Recites the company script until "Voyvode" comes up, then drops it mid-sentence for a real jab. |
+| Active problem | Sunkline just repriced its rope to match Voyvode's again, and she has to restock and reprice with nothing to show for it but another identical aisle. |
+| Performance hooks | The identikit company clerk drilled into cheerful sameness. Straightens the same shelf-row twice while she talks, like the aisle itself needs correcting. |
+| Link of relevance | [[Catarina Da'Virelli]]: Yevgenia jury-rigs broken stock with scavenged Antheri scrap faster and better than the company catalog allows, and Catarina is the one customer sharp enough to notice the fix wasn't off any shelf. |
 
 Voice & delivery: clipped, company-trained cadence, every line sized for a transaction.
 
