@@ -1,5 +1,7 @@
 ---
 title: Matteo Scola
+aliases:
+  - Matteo Scola
 category: entities
 tags: [shattered-sea, npc]
 sources:
@@ -28,10 +30,9 @@ relationships:
     type: related_to
   - target: "[[Crissdalynn Khinriss]]"
     type: related_to
-  - target: "[[Taking on Aruhe]]"
+  - target: "[[taking-on-aruhe]]"
     type: related_to
 ---
-
 # Matteo Scola
 
 ````col
@@ -85,7 +86,7 @@ He will not take a north trail alone. Push him toward the woman in the woods, or
 | ---------- | ------- |
 | [[Crissdalynn Khinriss]] | She pulled him from the otters. He stays close to whoever saved him. |
 | [[Aruhe - River Otter]] | Three of them had him in a game, not a kill. They swam downriver. |
-| [[Taking on Aruhe]] | He saw people die picking living fruit. Ground fruit is the rule he will teach. |
-| [[Ghost Plum]] | He ate one in front of the party and vanished. |
+| [[taking-on-aruhe]] | He saw people die picking living fruit. Ground fruit is the rule he will teach. |
+| [[ghost-plum]] | He ate one in front of the party and vanished. |
 | [[Uncertainty]] | He wants the ship. Other survivors went farther inland without him. |
 | Woman in the woods | He calls her a shadow with orange eyes. He thinks the listeners are mad, then admits they lived. |

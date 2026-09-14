@@ -23,9 +23,9 @@ reveal: revealed
 relationships:
   - target: "[[Aruhe - Hungry Isle]]"
     type: related_to
-  - target: "[[Matteo Scola]]"
+  - target: "[[matteo-scola]]"
     type: related_to
-  - target: "[[Fate Spinner]]"
+  - target: "[[fate-spinner]]"
     type: related_to
 ---
 
@@ -46,8 +46,8 @@ Aruhe. The island is still taking.
 
 ## Wiki facts
 
-Play stopped mid-fight. The [[Fate Spinner]] is still on [[Crissdalynn Khinriss]]. [[Talon Skarn]] is in her face at [[Aruhe - River Slack Basin]] and has spent one Legendary Resistance.
+Play stopped mid-fight. The [[fate-spinner]] is still on [[Crissdalynn Khinriss]]. [[talon-skarn]] is in her face at [[Aruhe - River Slack Basin]] and has spent one Legendary Resistance.
 
 [[Jean-Claude Tabarnack]] is catatonic and is being carried in [[Delmar Fisk]]'s coat. The party did not return to [[Uncertainty]]. They did not reach [[Aruhe - Quiet Forest Spoke Ring]] or the other inland survivors.
 
-[[Matteo Scola]] is with the camp and wants the ship. Fallen [[Redheart Berry]] healed; picking living fruit drew [[Wolfrabbit]]s. A [[Ghost Plum]] made Matteo **Invisible**. An [[Aruhe - Stonepear]] granted **Resistance** to all damage for one minute. The [[Aruhe - Lesser Black Lotus]] went downstream after the laughter. Live handle: [[Story So Far]].
+[[matteo-scola]] is with the camp and wants the ship. Fallen [[redheart-berry]] healed; picking living fruit drew [[Wolfrabbit]]s. A [[ghost-plum]] made Matteo **Invisible**. An [[Aruhe - Stonepear]] granted **Resistance** to all damage for one minute. The [[Aruhe - Lesser Black Lotus]] went downstream after the laughter. Live handle: [[story-so-far]].

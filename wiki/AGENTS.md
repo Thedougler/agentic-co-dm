@@ -114,7 +114,7 @@ Example: `title: Jean-Claude Tabarnack` → `wiki/entities/pc/jean-claude-tabarn
 
 **Uniqueness:** vault-wide unique stem (no two live `.md` files share the same basename across folders). Prefer clearer titles/slugs over folder shadowing.
 
-**Wikilinks:** bare `[[Display Title]]` resolves via `title` / `aliases` / path (lint already). Prefer putting the human name in `title` and former spaced stems in `aliases:` after rename. On rename: move file to new kebab stem; leave a `redirects_to` stub at the old basename when inbound links may linger; update path-qualified links.
+**Wikilinks:** bare `[[Display Title]]` resolves via `title` / `aliases` / path (lint already). Prefer putting the human name in `title` and former spaced stems in `aliases:` after rename. On rename: move the file to the new kebab stem and rewrite inbound wikilinks/embeds in the same pass so the old basename is gone. The old file is deleted in that pass, not kept as a `redirects_to` stub.
 
 **Journal / session:** same session-number folder as today. Space-free forms:
 - Plan: `Session-<n>-00-<kebab-title>.md`
