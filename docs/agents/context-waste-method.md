@@ -4,7 +4,7 @@
 **Rule:** excess tokens for the same job = bug (`AGENTS.md` Token cost + error-ledger sittings).  
 **Goal:** max context on **content + reasoning about content**; plumbing stays out of the window unless required.
 
-**Nick constraint (2026-09-14):** Do **not** thin content — especially narrative prose or mechanics. Optimize **without** losing quality of agent instructions/skills. Primary target is **confusion and ambiguity**. **Highest priority:** conflicting or redundant instructions across skills/AGENTS. Byte-count “slim” that drops craft quality is forbidden.
+**Nick constraint (2026-09-14):** Do **not** thin content — especially narrative prose or mechanics. Optimize **without** losing quality of agent instructions/skills. **Agent instructions must not lose output quality** — dedupe conflicts/ambiguity only when the surviving instruction still produces the same or better agent outputs. Never “optimize” by deleting craft that raises output quality. Primary target is **confusion and ambiguity**. **Highest priority:** conflicting or redundant instructions across skills/AGENTS. Byte-count is **not** a success metric.
 
 Prior art (cite, do not reinvent): `scripts/manifest.py`, `hot.md` preference, `entities/{type}/` + kebab filenames (`wiki/AGENTS.md`), Retrieval Primitives / escalate-only (`llm-wiki/SKILL.md`), `WIKI_TOKEN_WARN_THRESHOLD` / wiki-status footprint, error-ledger token doctrine, `scripts/context-waste-scan.py`.
 
@@ -82,7 +82,7 @@ Prefer heuristics agents/CLIs run **without** loading bodies into chat (path + m
 4. **Thin CLIs** — `manifest.py`, `context-waste-scan.py`, context-pack / wiki-status. Optional later: index-query / log-tail. CLIs answer questions; they do not replace skill craft.
 5. **Packet format** — `{path, start_line, end_line, excerpt≤K}`; forbid pasting full skill/manifest/index/log.
 
-**Forbidden fix:** “slim for byte count” that drops instruction quality, narrative, or mechanics. S3/S4 size flags are **investigation leads**, not delete targets.
+**Forbidden fix:** “slim for byte count” or any delete that drops instruction craft, narrative, mechanics, or **agent output quality**. Dedupe only with equal-or-better outputs. S3/S4 size flags are **investigation leads**, not delete targets. Byte-count is not a success metric.
 
 ---
 
