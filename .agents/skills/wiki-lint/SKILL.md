@@ -18,7 +18,7 @@ You are performing a health check on an Obsidian wiki. Your goal is to find and 
 
 ## Before You Start
 
-**Deterministic pass:** from repo root run `./scripts/wiki-lint --json` first (vault `wiki/`). HARD fail keys: `broken_links`, `missing_frontmatter`, `bad_type`, `bad_lifecycle`, `typed_relationships` (redirect stubs with `redirects_to` are omitted from `missing_frontmatter`; reserved files and mechanic allowlist links are omitted from `broken_links`). Use that report. Do not grep the vault for orphans or broken links unless a HARD finding is unclear.
+**Deterministic pass:** from repo root run `./scripts/wiki-lint --json` first (vault `wiki/`). HARD fail keys: `broken_links`, `missing_frontmatter`, `bad_type`, `bad_lifecycle`, `typed_relationships` (redirect stubs with `redirects_to` are omitted from `missing_frontmatter`; reserved files and mechanic allowlist links are omitted from `broken_links`). Use that report. Soft key `snake_case_labels`: DM-visible snake_case table/list labels (`{page,line,token,kind}`); not HARD. Do not grep the vault for orphans or broken links unless a HARD finding is unclear.
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` plus any `OBSIDIAN_ALLOWED_LIFECYCLES`, `OBSIDIAN_ALLOWED_RELATIONSHIP_TYPES`, `OBSIDIAN_REQUIRED_TRUST_FIELDS`, and `OBSIDIAN_SCHEMA_SOURCE` values.
 2. **Read owner rules** — if `$OBSIDIAN_VAULT_PATH/AGENTS.md` exists, read it before interpreting any schema. Owner rules override framework defaults.

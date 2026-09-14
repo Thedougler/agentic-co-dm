@@ -44,6 +44,81 @@ MECHANIC_LINK_ALLOWLIST = {
     "speed", "initiative", "proficiency", "condition",
 }
 
+SNAKE_TOKEN = re.compile(r"[A-Za-z][A-Za-z0-9]*(?:_[A-Za-z0-9]+)+")
+TABLE_ROW = re.compile(r"^\s*\|.*\|\s*$")
+LIST_BOLD_SNAKE = re.compile(
+    r"^\s*(?:[-*+]|\d+[.)])\s+\*\*(" + SNAKE_TOKEN.pattern + r")\*\*"
+)
+
+
+def body_after_frontmatter(text: str) -> tuple[int, str]:
+    """Return (1-based start line of body, body text). FM block is excluded."""
+    if not text.startswith("---\n"):
+        return 1, text
+    match = re.search(r"\n---\s*(?:\n|$)", text[4:])
+    if not match:
+        return 1, text
+    # body begins after the closing --- line
+    after = match.end()  # relative to text[4:]
+    body_offset = 4 + after
+    start_line = text[:body_offset].count("\n") + 1
+    return start_line, text[body_offset:]
+
+
+def classify_table_cell(cell: str) -> tuple[str, str] | None:
+    """If cell is only a snake_case label (bare/bt/bold), return (token, kind)."""
+    s = cell.strip()
+    if not s:
+        return None
+    if "attachments/" in s:
+        return None
+    if re.search(r"https?://|www\.", s):
+        return None
+    # entire cell is a wikilink / embed — not a DM label
+    if re.fullmatch(r"!?\[\[[^\]]+\]\]", s):
+        return None
+    m = re.fullmatch(r"\*\*(" + SNAKE_TOKEN.pattern + r")\*\*", s)
+    if m:
+        return m.group(1), "table_bold"
+    m = re.fullmatch(r"`(" + SNAKE_TOKEN.pattern + r")`", s)
+    if m:
+        return m.group(1), "table_bt"
+    m = re.fullmatch(SNAKE_TOKEN.pattern, s)
+    if m:
+        return m.group(0), "table_bare"
+    return None
+
+
+def find_snake_case_labels(text: str) -> list[dict[str, object]]:
+    """Soft findings for user-facing snake_case table/list labels (not YAML)."""
+    start_line, body = body_after_frontmatter(text)
+    findings: list[dict[str, object]] = []
+    in_fence = False
+    lines = body.splitlines()
+    for i, line in enumerate(lines):
+        line_no = start_line + i
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
+        if "attachments/" in line:
+            continue
+        if TABLE_ROW.match(line):
+            # drop leading/trailing empty from split on pipes
+            cells = line.strip().strip("|").split("|")
+            for cell in cells:
+                hit = classify_table_cell(cell)
+                if hit:
+                    token, kind = hit
+                    findings.append({"page": None, "line": line_no, "token": token, "kind": kind})
+            continue
+        m = LIST_BOLD_SNAKE.match(line)
+        if m:
+            findings.append({"page": None, "line": line_no, "token": m.group(1), "kind": "list_bold"})
+    return findings
+
 
 def frontmatter(text: str) -> tuple[str | None, dict[str, str]]:
     if not text.startswith("---\n"):
@@ -243,6 +318,14 @@ def main() -> int:
             if rel in targets:
                 relationship_findings.append({"page": rel, "index": index, "issue": "self_reference", "target": target})
     findings["typed_relationships"] = relationship_findings
+
+    snake_case_labels: list[dict[str, object]] = []
+    for rel, item in pages.items():
+        for hit in find_snake_case_labels(item["text"]):
+            hit = dict(hit)
+            hit["page"] = rel
+            snake_case_labels.append(hit)
+    findings["snake_case_labels"] = snake_case_labels
 
     provenance: list[dict[str, object]] = []
     for rel, item in pages.items():
