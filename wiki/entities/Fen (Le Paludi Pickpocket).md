@@ -27,7 +27,7 @@ tier: supporting
 > [!read-aloud]
 > A hand lifts clean from a coat pocket and disappears into the crowd. A small shape, already three bodies deep, weaves deeper and doesn't slow.
 
-A teenage halfling, fast and small, working the [[Calveno]] festival crowds for three days during [[Il Gioco delle Beffe]]. Not violent, not part of any operation. Use Spy stats, +5 Stealth, +5 Acrobatics.
+A teenage halfling, fast and small, working the [[Calven and Calveno]] festival crowds for three days during [[Il Gioco delle Beffe]]. Not violent, not part of any operation. Use Spy stats, +5 Stealth, +5 Acrobatics.
 
 If cornered, she has the purse she lifted, a folding knife she will not use, and a sob story that is about 40% true. The true part is that she is paying off a debt to a Bridge district broker who found her working his territory.
 

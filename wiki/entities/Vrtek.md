@@ -27,7 +27,7 @@ tier: supporting
 > [!narration] Narration
 > *The back section is quieter, lower benches, smaller cups. At the corner table, a [[Rattkin]] dockhand has emptied every pocket onto the wood in front of him and is sorting the results with methodical focus: useful, pretty, mysterious, food.*
 
-Small Rattkin dockhand, coat with more pockets than any coat has a right to. Currently between ships and passing through [[Port Tidefall]], seen at the [[Anchor and Line]]. Neutral disposition. Leaving port tomorrow unless something interesting happens.
+Small Rattkin dockhand, coat with more pockets than any coat has a right to. Currently between ships and passing through [[Calder's Tooth and Port Tidefall]], seen at the [[Anchor and Line]]. Neutral disposition. Leaving port tomorrow unless something interesting happens.
 
 > [!dm]
 > He found a crumpled note in his coat pocket (pulled from a Crown officer's coat during a crowd or close deal, he's unclear). He can't read the script. He doesn't know it's a treasure map: the note holds [[Detto Kalash]]'s buried cache directions (location, tide window, and DCs on [[Inspection Pier]]). The same coat also held four coins, a brass button, a candle stub, a carved fish, and a Dravosi rating stamp.
@@ -37,6 +37,6 @@ Small Rattkin dockhand, coat with more pockets than any coat has a right to. Cur
 
 ## Connections
 
-- [[Port Tidefall]], passing through between ships.
+- [[Calder's Tooth and Port Tidefall]], passing through between ships.
 - [[Anchor and Line]], where he sorts his pockets.
 - [[Detto Kalash]], unwitting source of his buried-cache note.

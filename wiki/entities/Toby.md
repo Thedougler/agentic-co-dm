@@ -49,7 +49,7 @@ Declared himself Emperor of Halewick three weeks ago. Nobody voted, and nobody r
 | consistent_method | States a want as a flat, immediate fact and expects it obeyed at once, every time. |
 | active_problem | Frankie's own cursed speech now lands as hard as his, and every collision between their decrees permanently scars another patch of the island. |
 | performance_hooks | Recess-yard king-of-the-hill swagger. Kicks his boots against the driftwood throne's rail while he talks, never still. |
-| link_of_relevance | His entire power exists because of [[Delmar Fisk]]'s own unresolved Pearl of Souls theft and the breach it left open at [[The Drowned Maw]], a fact Delmar has no idea is true. |
+| link_of_relevance | His entire power exists because of [[Delmar Fisk]]'s own unresolved Pearl of Souls theft and the breach it left open at [[Drowned Maw]], a fact Delmar has no idea is true. |
 
 > [!mechanic]
 > **Tradition:** none classifiable. **School:** unclassifiable. Source: planar contamination from the [[Drowned Maw]] entity — not cast by either child.

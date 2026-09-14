@@ -46,7 +46,7 @@ What lengths will the Crown go to in pursuit of their goals?
 
 - [[Delmar Fisk|Delmar]] — on record as the fleet's admiral, a name the Crown could weigh; the [[Uncertainty]] IS the captured Dravosi cutter, and exposure is existential
 - [[Perrin Black-Jaw|Perrin]] — Malone's dormant thread waits on the Crown confirming Perrin's pact as heresy; standing on a deck under an inquisitor's read is standing next to that trigger
-- [[Crissdalynn Khinriss|Crissdalynn]], [[Jean-Claude Tabarnack|Jean-Claude]], [[Catarina Da'Virelli|Catarina]] — sailed with Grigori and dropped him in [[Calveno]]; a direct question about the Shepherd is a direct question about what they did
+- [[Crissdalynn Khinriss|Crissdalynn]], [[Jean-Claude Tabarnack|Jean-Claude]], [[Catarina Da'Virelli|Catarina]] — sailed with Grigori and dropped him in [[Calven and Calveno]]; a direct question about the Shepherd is a direct question about what they did
 
 ### Current State
 

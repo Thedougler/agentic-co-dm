@@ -28,7 +28,7 @@ Below decks, the *Loud Argument* houses a locked magazine and crew quarters for 
 
 Fifth ship of the fleet.
 
-Lost simultaneously with the rest of [[Fisk's Fleet]] when [[Umberlee]] opened [[The Drowned Maw]] beneath them. All hands lost. The source material reveals no hidden details about ownership or secrets.
+Lost simultaneously with the rest of [[Fisk's Fleet]] when [[Umberlee]] opened [[Drowned Maw]] beneath them. All hands lost. The source material reveals no hidden details about ownership or secrets.
 
 ## Stats & Combat
 

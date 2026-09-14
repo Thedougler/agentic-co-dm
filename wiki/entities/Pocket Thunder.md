@@ -35,7 +35,7 @@ tier: supporting
 
 _Consumable, Uncommon._
 
-One of six blends sold as alchemical cigarettes in [[Calveno]], though nobody smokes this one. The wielder snaps it like a match, then throws it.
+One of six blends sold as alchemical cigarettes in [[Calven and Calveno]], though nobody smokes this one. The wielder snaps it like a match, then throws it.
 
 | Field | Detail |
 |---|---|

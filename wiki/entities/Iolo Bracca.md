@@ -29,7 +29,7 @@ tier: supporting
 >
 > He tells that last part as a joke. The Minotaur beside him laughs on cue. The ring keeps spinning.
 
-Iolo Bracca stamps Crown inspection paper on the [[Calveno]] harbour front and plays the [[Tallow Row]] felt most weeks like paying a subscription. He loses on purpose and knows it. Coin spent this way costs less than owing favours, and he values friendship over gold.
+Iolo Bracca stamps Crown inspection paper on the [[Calven and Calveno]] harbour front and plays the [[Tallow Row]] felt most weeks like paying a subscription. He loses on purpose and knows it. Coin spent this way costs less than owing favours, and he values friendship over gold.
 
 His chatter flows from real hunger, not careless talk. He wants your ship's details in exchange for information about which hulls pass the mole at odd hours, how late seals arrive when timing counts, and which cousins profit. The table never interrupts him. A clerk who holds a hull at anchor for a season kills more crews than [[Grukan]] ever has, and Iolo manages this with perfect cheer.
 

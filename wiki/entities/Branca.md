@@ -33,7 +33,7 @@ visibility: dm
 | ------------- | --------------------------------------------------------------- |
 | **Species**   | [[Human]]                                                            |
 | **Role**      | Senior Waveservant / [[Umberlee]]'s appointment-keeper |
-| **Location**  | [[Calveno]] harbor shrine (Session 04)                  |
+| **Location**  | [[Calven and Calveno]] harbor shrine (Session 04)                  |
 | **Status**    | Active, recovering from the s04 possession/resurrection, returned to the Church of [[Umberlee]] |
 
 > [!narration] Narration
@@ -71,7 +71,7 @@ No stats given in source.
 - [[Umberlee]]: the goddess who speaks and acts through her
 - [[Waveservants]]: the clergy order she belongs to
 - [[Pearl of Souls]]: the item at the center of the negotiation
-- [[Port Tidefall]]: where she is normally assigned
+- [[Calder's Tooth and Port Tidefall]]: where she is normally assigned
 - [[Kalowe]]: alternate shrine port
 
 ## Session Log

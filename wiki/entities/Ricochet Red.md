@@ -33,7 +33,7 @@ tier: supporting
 
 _Consumable, Uncommon._
 
-One of six blends sold as alchemical cigarettes in [[Calveno]]. Ricochet Red turns one solid hit into a chain. The shot passes from target to target across a crowd.
+One of six blends sold as alchemical cigarettes in [[Calven and Calveno]]. Ricochet Red turns one solid hit into a chain. The shot passes from target to target across a crowd.
 
 | Field | Detail |
 |---|---|

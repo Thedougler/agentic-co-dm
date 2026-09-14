@@ -22,11 +22,11 @@ tier: supporting
 ---
 # Minotaur Culture
 
-*[[Minotaur]] society, kinship bonds, life stages, naming, and the pilot's authority at sea in [[the Shattered Sea]].*
+*[[Minotaur]] society, kinship bonds, life stages, naming, and the pilot's authority at sea in [[Shattered Sea]].*
 
 ## The Culture
 
-In [[the Shattered Sea]], [[Minotaurs]] pilot ships. Many farm or fight, but most love the sea. They guide ships through blind channels and read reefs. They hold maps in their minds that keep ships safe. **Passages** shape Minotaur life. A passage is a sea route, a life stage, or a turn from one to the next.
+In [[Shattered Sea]], [[Minotaurs]] pilot ships. Many farm or fight, but most love the sea. They guide ships through blind channels and read reefs. They hold maps in their minds that keep ships safe. **Passages** shape Minotaur life. A passage is a sea route, a life stage, or a turn from one to the next.
 
 A Minotaur pilot costs more than any other hire in [[Midchain]]. Every coin is worth the price. [[Sienne Orre]], who leads the *[[Fernen]]* in [[Fisk's Fleet]], ran the survey work. Her gift for reading passages made her the clear choice.
 
@@ -63,4 +63,4 @@ A Minotaur pilot commands absolute authority over helm and heading in narrow wat
 
 ## Naming
 
-Minotaur personal names draw from Greek and Minoan roots: strong consonants, open vowels, -os/-as/-is endings. *Stavra, Kosmos, Thekla, Andronikos.* Sea-going Minotaurs in mixed crews often adopt local naming conventions. A Minotaur in [[Calveno]] waters might carry a name indistinguishable from a [[Tessarine Concordat|Tessarine]] Human. [[The Passage]] naming tradition persists informally among close kin. It remains a Sounding practice without formal structure.
+Minotaur personal names draw from Greek and Minoan roots: strong consonants, open vowels, -os/-as/-is endings. *Stavra, Kosmos, Thekla, Andronikos.* Sea-going Minotaurs in mixed crews often adopt local naming conventions. A Minotaur in [[Calven and Calveno]] waters might carry a name indistinguishable from a [[Tessarine Concordat|Tessarine]] Human. [[The Passage]] naming tradition persists informally among close kin. It remains a Sounding practice without formal structure.

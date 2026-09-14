@@ -42,7 +42,7 @@ tier: supporting
 **The real motive (never stated aloud):**
 
 - **Binding mechanic:** when Grigori heals someone, he binds his phylactery into their life. They join the flock unaware. Their survival sustains him. He cannot be permanently destroyed while they live.
-- **Confirmed victims:** a Tessarine heir in [[Calveno]] and a Dravosi merchant-lord's daughter. (Full binding mechanic on Shepherd Grigori's page.)
+- **Confirmed victims:** a Tessarine heir in [[Calven and Calveno]] and a Dravosi merchant-lord's daughter. (Full binding mechanic on Shepherd Grigori's page.)
 - **How to play it:** the Turning and healings are real, with true warmth underneath both. The horror is that an undead sorcerer built an unkillable afterlife out of the gratitude of dying children and desperate families, and considers this reasonable.
 - Every other name in the flock is a thread bound through his healing. No one else holds real membership.
 

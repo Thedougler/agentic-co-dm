@@ -126,7 +126,7 @@ Side betting: the crew may bet on themselves at registration, max 50 gp at 2:1 (
 | 4 years ago | Sable & Pepper | Salt shaker and sprig | Lucia Farro | Convinced her a famous dead sea captain had survived in [[Keth Naar]]. |
 | 5 years ago | The Blind Canal | Looped rope | Matteo Carver | Rerouted a maintenance canal so he filed four reports on the same stretch. |
 | 6 years ago | Il Velo | Half-mask | [[Oleandro Fuschi]] | Adjusted every tavern element by inches and swapped each wine for a near match. |
-| 7 years ago | The Usual Suspects | Crossed quills | Piet Ondra | Convinced a [[Chain Council]] observer that [[Calveno]] redefined a fathom. |
+| 7 years ago | The Usual Suspects | Crossed quills | Piet Ondra | Convinced a [[Chain Council]] observer that [[Calven and Calveno]] redefined a fathom. |
 | 8 years ago | The Devout | Closed eye | [[Waveservants|Waveservant]] Senior Matha | Forged a tide-tithe prophecy in the shrine donation box. |
 | 9 years ago | The Flagmen | Three-color band | Crob | Created a fake canal-boat health flag regulation. |
 | 10 years ago | The Quiet Tide | Still waterline | Valco | Replaced inventory contents with equal-weight substitutes before audit. |

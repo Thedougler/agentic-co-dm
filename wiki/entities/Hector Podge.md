@@ -28,7 +28,7 @@ tier: supporting
 | ------------- | ------------------------------------------------------------ |
 | **Species**   | [[Human]]                                                        |
 | **Pronouns**  | he/him                                                       |
-| **Location**  | [[Hook & Ledger]], [[Port Tidefall]] |
+| **Location**  | [[Hook & Ledger]], [[Calder's Tooth and Port Tidefall]] |
 | **Role**      | Tavern proprietor                                            |
 
 Heavyset and grey, settled as stone. He stopped moving fast years ago. He runs the [[Hook & Ledger]] with quiet authority. He has outlasted seven garrison commanders and three harbourmasters, and he expects to outlast more.
@@ -44,4 +44,4 @@ No stats given in source.
 ## Connections
 
 - [[Hook & Ledger]]. The tavern he runs.
-- [[Port Tidefall]]. His home port.
+- [[Calder's Tooth and Port Tidefall]]. His home port.

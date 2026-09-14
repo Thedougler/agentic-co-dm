@@ -28,7 +28,7 @@ A heavy brig, the largest ship in [[Fisk's Fleet]] after the [[Red Lady]]. Broad
 
 Not revealed to players. Delmar's confession established the fleet's existence (see [[session 04 transcript]]), but the DM deliberately withheld the individual ship names (`vault/campaigns/shattered-sea/factions/fisks-fleet.md`).
 
-Below decks, a magazine sat below the waterline alongside a surgeon's berth and crew quarters for a full complement. The hold ran deep and wide, built to take punishment and hold position. She perished simultaneously with the rest of [[Fisk's Fleet]] when [[Umberlee]] opened [[The Drowned Maw]] beneath them. All hands lost.
+Below decks, a magazine sat below the waterline alongside a surgeon's berth and crew quarters for a full complement. The hold ran deep and wide, built to take punishment and hold position. She perished simultaneously with the rest of [[Fisk's Fleet]] when [[Umberlee]] opened [[Drowned Maw]] beneath them. All hands lost.
 
 ## Stats & Combat
 
@@ -41,6 +41,6 @@ Not stated in source.
 ## Connections
 
 - [[Fisk's Fleet]]
-- [[The Drowned Maw]]
+- [[Drowned Maw]]
 - [[Umberlee]]
 - [[Delmar Fisk]] (fleet admiral)

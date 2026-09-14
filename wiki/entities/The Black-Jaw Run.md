@@ -26,7 +26,7 @@ tier: supporting
 
 *A smuggling network, refugee shelter, and underground community defense system rooted in the Warren beneath Calveno.*
 
-Kin call them the Black-Jaw Run; outsiders call them the Black-Jaw Family. A travelling family, crew, and route-network within [[the Passage]], anchored at [[Warren|the Warren]] beneath [[Calveno]]. [[Nona Black-Jaw]] leads it; her own history and household are covered in full on her page.
+Kin call them the Black-Jaw Run; outsiders call them the Black-Jaw Family. A travelling family, crew, and route-network within [[the Passage]], anchored at [[Warren|the Warren]] beneath [[Calven and Calveno]]. [[Nona Black-Jaw]] leads it; her own history and household are covered in full on her page.
 
 The Run smuggles goods, forges documents, shelters fugitives, bribes officials, moves messages, disappears people who need disappearing, and sabotages [[Dravosi Crown|Crown]] operations. It functions simultaneously as a refugee network, intelligence service, community defense system, and underground bank — Nona sees no contradiction between these roles.
 

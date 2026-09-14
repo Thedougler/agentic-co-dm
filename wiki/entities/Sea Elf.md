@@ -48,6 +48,6 @@ As a Sea Elf, you have these special traits.
 
 **Life Span.** Sea elves live 750+ years.
 
-**Homeland.** In [[the Shattered Sea]], sea elves are centered at [[Halythion]] and tied to the worship of Deep Sashelas; some trace ancestral ties to the [[Elemental Plane of Water]].
+**Homeland.** In [[Shattered Sea]], sea elves are centered at [[Halythion]] and tied to the worship of Deep Sashelas; some trace ancestral ties to the [[Elemental Plane of Water]].
 
 **Tome of Foes Variant (older — superseded for most campaigns).** +2 Dex, +1 Con. Sea Elf Training: proficiency with spear, trident, light crossbow, net. Friend of the Sea via gestures/sounds instead of speech. Languages: Common, Elven, Aquan.

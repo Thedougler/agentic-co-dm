@@ -34,7 +34,7 @@ visibility: dm
 
 **A lich since before the first Dravosi ship reached the Scatter.** Aldric Drave built the [[Hierarch]] form that founded the Dravosi Crown's colonial project in [[Verdant Scatter|the Scatter]], then spread his bloodline into every noble family the Crown built. He designed the Crown's own genealogical apparatus (ledgers, lineage records, deep files) to track every living descendant, and over two centuries the [[Dravosi Crown]] itself became, unknowingly, a map of his bloodline.
 
-**Bloodline mixing across three centuries has thinned the network past safe cohesion.** He lives beneath [[Port Tidefall]] in the sealed [[Drave Vaults]], cliffs closing them into the rock below [[Fort Crestwall]]. The fort's garrison hides two detachments holding it under his own sealed orders, and the Crown doesn't know the vaults exist. Every Dravosi noble carrying his blood is a phylactery, so destroying him means killing every living descendant, or he returns within weeks.
+**Bloodline mixing across three centuries has thinned the network past safe cohesion.** He lives beneath [[Calder's Tooth and Port Tidefall]] in the sealed [[Drave Vaults]], cliffs closing them into the rock below [[Fort Crestwall]]. The fort's garrison hides two detachments holding it under his own sealed orders, and the Crown doesn't know the vaults exist. Every Dravosi noble carrying his blood is a phylactery, so destroying him means killing every living descendant, or he returns within weeks.
 
 **The Tessarine Concordat's real target has always been him.** [[Cosimo Verantio]], the Concordat's Principal, treats the [[Pearl of Souls]] as Aldric's way past his own bloodline limits, whether new anchors or a soul reservoir outright, and the Concordat's commission that sent agents hunting the Pearl targeted Aldric from the start, not merely curiosity about him.
 
@@ -49,7 +49,7 @@ visibility: dm
 ## Connections
 
 - [[Dravosi Crown]]: the empire he secretly founded and has run from underneath for three centuries.
-- [[Port Tidefall]]: the city he lives beneath.
+- [[Calder's Tooth and Port Tidefall]]: the city he lives beneath.
 - [[Drave Vaults]]: his hidden lair and phylactery archive.
 - [[Fort Crestwall]]: named for his own house. Two of its garrison detachments answer to his own sealed orders, and the Crown doesn't know it.
 - [[Pearl of Souls]]: the believed key to freeing him from his bloodline limits.

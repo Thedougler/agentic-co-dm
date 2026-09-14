@@ -41,7 +41,7 @@ The blend [[Rufio Segalla]] built his trade on. [[La Brace]] sells privacy, and 
 | `one_thing` | Lit in an enclosed space, it fills a 20-foot cube for 1 hour, and no sense or divination outside that cube reaches anything happening within it. |
 | `rarity_justification` | Under [[Ring of Mind Shielding]] (Rare, permanent, blocks scrying and thought-reading, attunement required) and beside [[Necklace of Adaptation]] (Rare, permanent, attunement required). This one covers a single room for an hour and then burns out, and it needs no attunement slot. |
 | `attunement_reason` | None. Single use, one power, and no bonus to attack rolls, damage rolls, saving throws, or AC. |
-| `pc_connection` | [[Delmar Fisk]] plans in rooms belonging to other people, and so far he has laid every plan in [[Calveno]] within earshot of someone. |
+| `pc_connection` | [[Delmar Fisk]] plans in rooms belonging to other people, and so far he has laid every plan in [[Calven and Calveno]] within earshot of someone. |
 | `current_holder` | Rolled to order only. Rufio keeps at most one made up at a time, and a name sits on that one more often than not. |
 | `narrative_hook` | The [[Tessarine Concordat]] has twice asked for the booking list at [[La Brace]], and it does not know this blend leaves the building. |
 

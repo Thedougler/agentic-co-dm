@@ -27,7 +27,7 @@ tier: supporting
 
 A two-masted heavy frigate, 140 feet on the waterline, built at the [[Harwick]] Naval Yard. The Admiralty uses this class for enforcement rather than mere inspection. It carries enough guns to discourage resistance. It holds enough cargo for seized goods and prisoners. It has the range to patrol [[Verdant Scatter|the Scatter]] for months.
 
-*Heavy Frigate · Tier 3 · [[Port Tidefall]].*
+*Heavy Frigate · Tier 3 · [[Calder's Tooth and Port Tidefall]].*
 
 The hull is grey with a white stripe at the upper rail. A brass plate marks the bow. The Crown pennant hangs at the mainmast. The stern cabin is the captain's office with locked drawers, a record book, and a tube down to the gun deck.
 
@@ -81,6 +81,6 @@ The source names no captain or crew. The facility hirelings include a Rating Off
 
 - [[Dravosi Crown]] (operating authority)
 - [[Crown Islands]] (patrol waters)
-- [[Port Tidefall]] (home waters, unnamed as literal home port in source). Resolved (R33 close-out): the earlier "no page yet" note was stale. `vault/campaigns/shattered-sea/locations/calders-tooth/tidefall.md` carries `aliases: [Port Tidefall]` in its own frontmatter.
+- [[Calder's Tooth and Port Tidefall]] (home waters, unnamed as literal home port in source). Resolved (R33 close-out): the earlier "no page yet" note was stale. `vault/campaigns/shattered-sea/locations/calders-tooth/tidefall.md` carries `aliases: [Port Tidefall]` in its own frontmatter.
 - [[Harbourmaster's Office]] (issuing and enforcing civil authority for Impound Orders). This appears in the source's Purpose section but not as an explicit Connections-list entry, though named in body text.
 - [[HCS Sovereign]] (named in source's own Connections list)

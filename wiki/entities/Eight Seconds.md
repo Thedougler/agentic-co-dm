@@ -40,7 +40,7 @@ tier: supporting
 | `rarity_justification` | Rare, comparable to Potion of Invulnerability (resistance to all damage for 1 minute) and [[Potion of Heroism]] (10 temporary hit points plus a 1-hour [[Bless]] effect). None of the three requires attunement. Eight Seconds borrows [[Haste]]'s extra-action shape at a much smaller scale: it lasts two rounds where Haste lasts ten. Speed, AC, and [[Dexterity]] saves stay the same, and the burn ends by dropping the smoker prone with reactions gone for a turn. That smaller shape keeps Eight Seconds at Rare, below [[Potion of Speed]]'s Very Rare tier. |
 | `attunement_reason` | No attunement required: a single-use consumable with one power, and no bonus to attack, damage, save, or AC rolls. |
 | `pc_connection` | [[Jean-Claude Tabarnack]]. His cover holds only while nothing forces him to fight in the open, and Eight Seconds buys him two rounds to disappear before anyone works out what they just watched. |
-| `current_holder` | [[Rufio Segalla]] rolls this one to order at [[La Brace]], a [[Velo Quarter]] smoking room in [[Calveno]]. He never keeps it on the shelf. |
+| `current_holder` | [[Rufio Segalla]] rolls this one to order at [[La Brace]], a [[Velo Quarter]] smoking room in [[Calven and Calveno]]. He never keeps it on the shelf. |
 | `narrative_hook` | Buying it requires an hour seated in the room first, and Rufio names the price only afterward. It never appears on [[La Gatta]]'s board. |
 
 ## Mechanics

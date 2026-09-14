@@ -32,7 +32,7 @@ visibility: dm
 > Grey at the temples, spine straight as a mast rope. His coat carries the correct insignia for his Crown rank, and from across a room he reads as exactly what he is. Up close the cut gives him away — collar a decade out of current fashion, buttons brass where the newer style runs silver. A factor's ledger case hangs from one shoulder, its corner worn pale where his thumb rides it out of habit. He straightens his cuffs before he addresses you, unhurried, and when his hands aren't doing that, they're sorting invisible paper.
 
 
-Aldous Draves has held his Crown license as an import factor at [[Port Tidefall]] for thirty years, long enough to know every clerk on the docks worth knowing and none of the officers who outrank him. He works alongside the naval world without belonging to it — close enough to know a rated marine's pay to the shilling, which is more than the post he found for his son, though whether he ever told Geoffrey that is his own business.
+Aldous Draves has held his Crown license as an import factor at [[Calder's Tooth and Port Tidefall]] for thirty years, long enough to know every clerk on the docks worth knowing and none of the officers who outrank him. He works alongside the naval world without belonging to it — close enough to know a rated marine's pay to the shilling, which is more than the post he found for his son, though whether he ever told Geoffrey that is his own business.
 
 He got [[Geoffrey Draves|Geoffrey]] a berth on the [[Uncertainty|HCS Surety]], a patrol cutter, through connections he's never put on paper — the arrangement lives nowhere but his own memory, and he means to keep it that way. He promised his son bigger things would follow it, and let the contract's own printed language do the work of not mentioning what the posting actually paid; if anyone ever asks, the paperwork will answer for him, not his conscience. That was the last thing he said to his son with real confidence. Geoffrey is out on the eastern patrol routes now and hasn't written; Aldous has already asked the [[Harbourmaster's Office]] once, formally, correctly, and been told nothing worth repeating. So he waits, already composing — word for word, though he'd never admit to it — the inquiry letter he'd have to send if the news ever came back wrong, and does the one thing he's always done best, which is not show it.
 
@@ -45,4 +45,4 @@ He learned formality young, the way some men learn a trade — informality ruins
 - [[Uncertainty|HCS Surety]]: the patrol cutter posting he arranged for Geoffrey.
 - [[Verity Hollowell]]: connection unstated beyond name in source.
 - [[Cedric Hollowell]]: connection unstated beyond name in source.
-- [[Port Tidefall]]: where he operates as a Crown-licensed import factor.
+- [[Calder's Tooth and Port Tidefall]]: where he operates as a Crown-licensed import factor.

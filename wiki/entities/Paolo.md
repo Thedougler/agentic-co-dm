@@ -22,7 +22,7 @@ tier: supporting
 ---
 # Paolo
 
-*A young gondolier still learning the trade in [[Calveno]]'s canals.*
+*A young gondolier still learning the trade in [[Calven and Calveno]]'s canals.*
 
 **Wants:** to master the gondolier's trade, and to pay back the crew who fished him out of the canal.
 
@@ -35,7 +35,7 @@ tier: supporting
 
 ## Connections
 
-- [[Calveno]], works its canals as a gondolier
+- [[Calven and Calveno]], works its canals as a gondolier
 
 ## Session Log
 

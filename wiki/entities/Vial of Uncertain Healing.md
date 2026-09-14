@@ -59,6 +59,6 @@ tier: supporting
 
 ## Provenance
 
-[[Lavinia Sordi]] stocks these from her rack at [[La Cenere]] in [[Le Paludi]], [[Calveno]], for 75 gp. Her pitch: "Correct color, correct consistency. Probably Greater. I say probably because I don't drink my own stock."
+[[Lavinia Sordi]] stocks these from her rack at [[La Cenere]] in [[Le Paludi]], [[Calven and Calveno]], for 75 gp. Her pitch: "Correct color, correct consistency. Probably Greater. I say probably because I don't drink my own stock."
 
 [[Delmar Fisk]] drank one as a free sample in Session 8. Con save of 11 meant no adverse effect. He gained 1d6 healing and talked non-stop for an hour. Lavinia then slipped a second vial into his coat along with a note, winning a contested Sleight of Hand check.

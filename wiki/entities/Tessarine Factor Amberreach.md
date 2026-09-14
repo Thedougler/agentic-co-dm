@@ -25,7 +25,7 @@ tier: supporting
 > [!narration] Narration
 > The ship sits low and wide. Her grey hull is heavy with cargo. She carries freight, not speed. The beam spans wide. Cargo ports line her sides with neat numbers. A Tessarine flag flies from the mast. Gun ports sit open on her rail. No one approaches them without worry.
 
-A Tier 3 Tessarine cargo galleon. She sails from [[Calveno]] west through the [[Central Strait]]. The Concordat files all trips three ports ahead. She insures cargo and pays most losses within forty days. Merchants rely on her.
+A Tier 3 Tessarine cargo galleon. She sails from [[Calven and Calveno]] west through the [[Central Strait]]. The Concordat files all trips three ports ahead. She insures cargo and pays most losses within forty days. Merchants rely on her.
 
 The *Amberreach* gets what she wants through reliability. Her gun ports sit open as a warning to pirates. She does not attack merchants. They board her of their own will and walk away alive.
 
@@ -82,6 +82,6 @@ Senior Factor [[Oriana Becht]] signs legal papers aboard: loans to 2,000 gp, rou
 
 - [[Tessarine Concordat]], owner
 - [[Oriana Becht]], senior factor
-- [[Calveno]], home port
-- [[Port Tidefall]], inspection stop
+- [[Calven and Calveno]], home port
+- [[Calder's Tooth and Port Tidefall]], inspection stop
 - [[Tessarine Silkvane]], Concordat dispatch sloop

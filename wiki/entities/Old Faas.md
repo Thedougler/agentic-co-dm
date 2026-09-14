@@ -41,11 +41,11 @@ tier: supporting
 
 A rigger who has outlasted many captains and ships. He survived at least two deadly situations. He answers questions in short, clear sentences without raising his voice. Little surprises him.
 
-During the five-day crossing to [[Calveno]], he taught [[Perrin Black-Jaw|Perrin]] the ropes and told stories of running cargo with [[Barnaby Rook|Rook]]. The old man was solid as a brick shithouse, faster up the rigging than any rat.
+During the five-day crossing to [[Calven and Calveno]], he taught [[Perrin Black-Jaw|Perrin]] the ropes and told stories of running cargo with [[Barnaby Rook|Rook]]. The old man was solid as a brick shithouse, faster up the rigging than any rat.
 
 Between courses, he told the *[[Uncertainty]]*'s crew about an expedition to [[Murrat]]: *"He took us to Murrat. Wanted a live one. Went ashore with six crew. Four came back needing the surgeon."* He told it as you'd describe a storm. He was not one of those four who needed [[Alys Kuiper]]'s care.
 
-He came back from shore leave in [[Calveno]] with two well-fitted peg legs (good timber, brass ferrules, proper socket work). He was shorter and less steady standing still, but faster on the rigging than before. He tells three different stories about losing his original legs. One was a festival bull near the [[Bridge]]. Another was a shaky scaffold at the Beffa. The third was a current under the [[Mercatura]] dock. He tells each story with equal certainty.
+He came back from shore leave in [[Calven and Calveno]] with two well-fitted peg legs (good timber, brass ferrules, proper socket work). He was shorter and less steady standing still, but faster on the rigging than before. He tells three different stories about losing his original legs. One was a festival bull near the [[Bridge]]. Another was a shaky scaffold at the Beffa. The third was a current under the [[Mercatura]] dock. He tells each story with equal certainty.
 
 > [!mechanic]
 > At seven he fell from a hay loft onto a stone floor. Three days unconscious, then he woke without the capacity for fear (not suppressed, simply absent). This is not a death wish. He just can't feel what would stop him from doing dangerous things. He never mentioned it to a captain.
@@ -62,9 +62,9 @@ Roleplay note (source). Based on Scruffy the Janitor (literally fearless, inexpl
 
 - [[Uncertainty|HCS Surety]]. Bosun and rigger, formerly under [[Barnaby Rook]]'s command.
 - [[Barnaby Rook]]. Ran cargo together "in the old days," before the Surety.
-- [[Perrin Black-Jaw]]. Taught him the ropes during the five-day crossing to [[Calveno]].
+- [[Perrin Black-Jaw]]. Taught him the ropes during the five-day crossing to [[Calven and Calveno]].
 - [[Alys Kuiper]]. Fellow Surety crew. Treated the Murrat casualties from the expedition he described.
-- [[Calveno]]. Shore leave port where he returned aboard with two new peg legs.
+- [[Calven and Calveno]]. Shore leave port where he returned aboard with two new peg legs.
 
 ## Session Log
 

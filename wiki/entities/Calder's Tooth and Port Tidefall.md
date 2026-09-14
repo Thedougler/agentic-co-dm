@@ -45,7 +45,7 @@ Extra companies have arrived at Crestwall under Admiralty-sealed orders. Their m
 
 Calder's Tooth is a jagged limestone-and-basalt island at the [[Central Strait]]'s west mouth. The west face is sheer. The east side slopes into mudflats and mangroves. A fog-thick ridge called the [[Marrow]] runs north to south with sinkholes and collapsed caves.
 
-[[Port Tidefall]] is the west-cliff fortress-port. [[South Harbour]] is the lightly policed east harbour for repairs and fishing. [[Osha's Slip]] is a stilt village over the mudflats. [[Cape Solitude]] is the wind-battered northern tip with a ruined lighthouse whose light is dead. [[High Line]] is a cliff hamlet on the northeast that works nets by winch. The [[Overland Track]] is the muddy southern road over the Marrow. [[The Passage]] moves cargo through caves below that road; the Crown has not found it.
+[[Calder's Tooth and Port Tidefall]] is the west-cliff fortress-port. [[South Harbour]] is the lightly policed east harbour for repairs and fishing. [[Osha's Slip]] is a stilt village over the mudflats. [[Cape Solitude]] is the wind-battered northern tip with a ruined lighthouse whose light is dead. [[High Line]] is a cliff hamlet on the northeast that works nets by winch. The [[Overland Track]] is the muddy southern road over the Marrow. [[The Passage]] moves cargo through caves below that road; the Crown has not found it.
 
 Inside Tidefall the named rooms are [[Fort Crestwall]], the Inspection Pier, the Harbourmaster's Office, Tidefall Chandlery, the [[Tessarine Trade House]], a Shelf instrument dealer, the Governor's Seat, the Hook and Ledger tavern, the Fare I'a jerky counter, and a [[Waveservants]] shrine. [[South Harbour Impound]] sits on the east pier.
 

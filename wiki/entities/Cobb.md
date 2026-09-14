@@ -53,7 +53,7 @@ Read while recording: [[voice-profile script]]
 | **Species**     | [[Rattkin]]                                                       |
 | **Role**        | Dockhand at [[La Vasca]], runs the Basin day to day |
 | **Affiliation** | [[Nona Black-Jaw]]'s [[Warren]]; runner who reports up the chain |
-| **Location**    | [[La Vasca]], [[Le Paludi]], [[Calveno]] |
+| **Location**    | [[La Vasca]], [[Le Paludi]], [[Calven and Calveno]] |
 
 *Young Rattkin dockworker at La Vasca who greets the crew of the [[Uncertainty]] and carries messages from Nona Black-Jaw to Perrin.*
 

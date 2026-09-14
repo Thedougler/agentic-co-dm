@@ -26,7 +26,7 @@ tier: supporting
 | ----------- | ------------------------------------------------- |
 | **Species** | [[Human]] (Dravosi)             |
 | **Role**    | Account manager, Hollowell Import Agency             |
-| **Location**| [[Port Tidefall]]                         |
+| **Location**| [[Calder's Tooth and Port Tidefall]]                         |
 
 Verity Hollowell is the elder daughter of [[Cedric Hollowell]], whose agency operates near the Tidefall Inspection Pier. She entered ledger work by chance but found gaps in the accounts (errors and lies) that the men paid to watch had missed. Her father gave up pretending.
 
@@ -36,7 +36,7 @@ One evening her father went to the dock. He waited.
 
 She does not speak of it. She continues her work. She is careful about what she brings home.
 
-When travelers come to [[Port Tidefall]] and name [[Geoffrey Draves|Geoffrey]], she already knows him. She says nothing about this. She only answers their questions.
+When travelers come to [[Calder's Tooth and Port Tidefall]] and name [[Geoffrey Draves|Geoffrey]], she already knows him. She says nothing about this. She only answers their questions.
 
 She is more practical than her father. She has the same Tidefall access and better judgment.
 

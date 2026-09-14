@@ -29,7 +29,7 @@ tier: supporting
 > [!narration]
 > *The living blue-green of the [[Verdant Scatter]] ends along a line a person could walk. Beyond it the water is flat and current-less. No swell. A hull sits the way a hull sits in a dock.*
 >
-> *Sixty feet of clear water over the western shelf of [[The Drowned Maw]]. Ruin-tops show as straight grey shadows forty feet down, walls that meet at angles the reef never makes. At eighty feet the [[Shelfworks]] workshops still stand with their floors intact. A bucket drawn from here comes up warm as bathwater and smells of dead fish and hot iron.*
+> *Sixty feet of clear water over the western shelf of [[Drowned Maw]]. Ruin-tops show as straight grey shadows forty feet down, walls that meet at angles the reef never makes. At eighty feet the [[Shelfworks]] workshops still stand with their floors intact. A bucket drawn from here comes up warm as bathwater and smells of dead fish and hot iron.*
 
 ## Run guide
 

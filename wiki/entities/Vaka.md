@@ -24,7 +24,7 @@ tier: supporting
 
 Eight years old. Founded by [[Felix Aho|Félix Aho]] after his defection from [[Karath]] — green caste, the lowest freeborn. Roughly a dozen members: mostly green- and blue-caste defectors, plus a handful of freed non-[[Grung]] slaves who chose to stay connected rather than disappear entirely. No manifesto, no ideology — closer to a recovery group than a faction.
 
-Félix has been building it by showing up, keeping his head down, and making himself available to whoever finds him — making introductions, talking people through the disorientation of living in a world not built for their body, caste, or history. He runs a fish stall in [[Port Tidefall]]. Known gathering points also in [[Kalowe]].
+Félix has been building it by showing up, keeping his head down, and making himself available to whoever finds him — making introductions, talking people through the disorientation of living in a world not built for their body, caste, or history. He runs a fish stall in [[Calder's Tooth and Port Tidefall]]. Known gathering points also in [[Kalowe]].
 
 No ranks, no meetings, no formal hierarchy. Félix is the most connected member, not a leader. Members locate each other through port traders and known gathering points; the Vaka does not seek people out. What it offers any Grung who finds it is practical: somewhere to sleep, someone who has been through the same adjustment, and the knowledge that others made it.
 

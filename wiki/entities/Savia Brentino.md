@@ -24,7 +24,7 @@ tier: supporting
 
 ![[savia-brentino-banner]]
 
-[[Dwarf]] who runs [[Carpenter's Slip]] in [[Calveno]]. She talks about ships only by how they're built. That is the only currency that matters to her.
+[[Dwarf]] who runs [[Carpenter's Slip]] in [[Calven and Calveno]]. She talks about ships only by how they're built. That is the only currency that matters to her.
 
 **Quote:** "Paint does not hide what a ship is."
 
@@ -54,7 +54,7 @@ tier: supporting
 ## Connections
 
 - [[Carpenter's Slip]]: proprietor.
-- [[Calveno]]: based here.
+- [[Calven and Calveno]]: based here.
 - [[Acqua Nera]]: contrast, cosmetic repaint work, not structural.
 - [[Nona Black-Jaw]]: unconfirmed prep material names her as the required Warren vouch for discreet jobs (see DM Only).
 - [[Warren]]: unconfirmed prep material, introduction required for off-book work (see DM Only).

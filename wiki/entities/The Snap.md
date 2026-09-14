@@ -52,4 +52,4 @@ tier: supporting
 
 ## Provenance
 
-Sold by [[Prospero Morsani]] out of [[the Cabinet of Morsani]] in [[Calveno]]'s [[Velo Quarter]], bought by [[Perrin Black-Jaw]] for 150 gold, Session 8. Confirmed: [[Transcript]].
+Sold by [[Prospero Morsani]] out of [[the Cabinet of Morsani]] in [[Calven and Calveno]]'s [[Velo Quarter]], bought by [[Perrin Black-Jaw]] for 150 gold, Session 8. Confirmed: [[Transcript]].

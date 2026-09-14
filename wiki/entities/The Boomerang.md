@@ -33,7 +33,7 @@ tier: supporting
 
 _Consumable, Uncommon._
 
-One of six alchemical cigarette blends sold in [[Calveno]]. Among the dock crews it goes by its own name for itself: didn't hear no bell.
+One of six alchemical cigarette blends sold in [[Calven and Calveno]]. Among the dock crews it goes by its own name for itself: didn't hear no bell.
 
 | Field | Detail |
 |---|---|

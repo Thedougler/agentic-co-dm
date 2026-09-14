@@ -65,4 +65,4 @@ Edge cases:
 
 ## Provenance
 
-[[Marta Orsini]] rejects a run that over-cures, because a blend this dry burns unevenly and licensed rooms will not serve what they cannot grade at the counter. Nicco Kettley buys those runs through a third party, twists the ends shut himself, and sells them off the board under the arch at a price no room in [[Calveno]] can match.
+[[Marta Orsini]] rejects a run that over-cures, because a blend this dry burns unevenly and licensed rooms will not serve what they cannot grade at the counter. Nicco Kettley buys those runs through a third party, twists the ends shut himself, and sells them off the board under the arch at a price no room in [[Calven and Calveno]] can match.

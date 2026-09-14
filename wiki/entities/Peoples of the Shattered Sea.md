@@ -26,7 +26,7 @@ tier: supporting
 
 ## The Fact
 
-[[The Shattered Sea]] is at the edge of the colonial world. The crossing west of the [[Galewall]] reaches the known: Chult first, then the kingdoms, records, and recognized law of [[Faerûn]]. East of the Galewall lies [[Verdant Scatter|the Scatter]], and the Scatter does not ask where you came from. The further east you travel, the less the colonial map means. The [[Crown Islands]] are the western homelands transplanted to warmer water. [[Kalowe]] and the [[Midchain]] are those homelands losing the ability to enforce anything, and [[Tail|the Tail]] and the [[Outer Reach]] are what was here before the homelands ever arrived.
+[[Shattered Sea]] is at the edge of the colonial world. The crossing west of the [[Galewall]] reaches the known: Chult first, then the kingdoms, records, and recognized law of [[Faerûn]]. East of the Galewall lies [[Verdant Scatter|the Scatter]], and the Scatter does not ask where you came from. The further east you travel, the less the colonial map means. The [[Crown Islands]] are the western homelands transplanted to warmer water. [[Kalowe]] and the [[Midchain]] are those homelands losing the ability to enforce anything, and [[Tail|the Tail]] and the [[Outer Reach]] are what was here before the homelands ever arrived.
 
 ### Presence Terms
 
@@ -51,7 +51,7 @@ The oldest colonial foothold in the Scatter. The majority population is [[Human|
 | [[Dwarf]] | Common | Naval engineering, fortification work, armaments manufacture. |
 | [[Rattkin]] | Common | Port infrastructure, message networks, [[the Passage]]. Officially discouraged; practically irreplaceable. |
 | [[Gnome]] | Present | Instrument makers, cartographers, Tessarine ledger work. |
-| [[Tiefling]] | Present | Mixed colonial heritage. More visible in [[Calveno]] than in Tidefall. |
+| [[Tiefling]] | Present | Mixed colonial heritage. More visible in [[Calven and Calveno]] than in Tidefall. |
 | Orc | Present | Dock crews, ship labour, garrison soldiers. Often underranked relative to competence. |
 | [[Dragonborn]] | Present | Scattered across military and merchant roles. |
 | Aasimar | Rare | Occasional pilgrims and Tyr-aligned advocates. |
@@ -62,7 +62,7 @@ The oldest colonial foothold in the Scatter. The majority population is [[Human|
 
 *The main highway. The most transient, and therefore the most everything.*
 
-Not a place people live — a place people pass through. Port [[Tidefall]] processes hundreds of ships a year. [[Calveno]] turns over its dockside population on the tide and skews more diverse than the rest of the [[Crown Islands]] — the [[Tessarine Concordat]] does not care about heritage, only credit.
+Not a place people live — a place people pass through. Port [[Calder's Tooth and Port Tidefall]] processes hundreds of ships a year. [[Calven and Calveno]] turns over its dockside population on the tide and skews more diverse than the rest of the [[Crown Islands]] — the [[Tessarine Concordat]] does not care about heritage, only credit.
 
 | Species | Presence | Notes |
 |---|---|---|

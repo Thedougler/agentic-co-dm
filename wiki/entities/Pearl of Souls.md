@@ -45,7 +45,7 @@ The Pearl collects souls from anyone who drowns near it. It works nonstop, with 
 
 ## At a Glance
 
-Season 1's key recovery target. The Pearl rests with the wreck at the Red Lady site in the eastern [[Shelfworks]], deep inside [[The Drowned Maw]] below the planar boundary, where Umberlee's power stops.
+Season 1's key recovery target. The Pearl rests with the wreck at the Red Lady site in the eastern [[Shelfworks]], deep inside [[Drowned Maw]] below the planar boundary, where Umberlee's power stops.
 
 ## At the Table
 
@@ -57,7 +57,7 @@ The Pearl holds raw, untapped soul-power and sends a signal across the planar bo
 - [[Waveservants]] — Guarded the shrine where the Pearl rested for years.
 - [[Delmar Fisk]] — Stole the Pearl from a Waveservant Shrine; sole survivor bound to the five captains whose crews remain trapped in the Pearl.
 - [[Fisk's Fleet]] — Stole the Pearl under Chain Council direction before Aldric could claim it.
-- [[The Drowned Maw]] — Wreck site below the planar boundary; Umberlee cannot retrieve her Pearl here.
+- [[Drowned Maw]] — Wreck site below the planar boundary; Umberlee cannot retrieve her Pearl here.
 - [[Leviathan]] — Drawn to the fissure by the Pearl's signal; among those whose drowned souls the Pearl holds.
 - [[Auralis]] — Woke when the signal crossed the boundary.
 - [[Elemental Plane of Water]] — Far side of the Maw Entanglement signal.

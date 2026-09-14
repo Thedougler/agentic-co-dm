@@ -61,7 +61,7 @@ No stats given in source.
 
 - [[Tessarine Concordat]]. The faction he fronts in Calveno.
 - [[Cosimo Verantio]]. His principal, with whom he communicates only through correspondence.
-- [[Calveno]]. His seat of operations.
+- [[Calven and Calveno]]. His seat of operations.
 - [[Warren - Marrow's Crate]]. Indirectly named via advance agents.
 - [[Il Gioco delle Beffe]]. Present but not taken in the raid.
 - [[Samuel]]. His toucan clerk, sent to run messages for [[Catarina Da'Virelli|Catarina]]'s shop.

@@ -36,7 +36,7 @@ The Passage moves people, cargo, and information across routes that don't appear
 
 - **The Run**: travelling families and crews who pass route knowledge down through generations, marked in scratch-notation on bone and ceramic that only Kin can read.
 - **The Hold**. Caches and shelters built into drainage channels, dock supports, wall cavities, and old foundations, plus roof voids, cisterns, and forgotten city spaces.
-- **[[The Tangle]]**: seven senior elders who run the [[Calveno]] Run and hold The Passage's most secret route info. The [[Tangle Chambers]] themselves (physical location, guest history) already live on [[Warren|the Warren]] § Places.
+- **[[The Tangle]]**: seven senior elders who run the [[Calven and Calveno]] Run and hold The Passage's most secret route info. The [[Tangle Chambers]] themselves (physical location, guest history) already live on [[Warren|the Warren]] § Places.
 
 [[Nona Black-Jaw]] leads the [[The Black-Jaw Run|Black-Jaw Run]], the Warren's anchor Run. [[Enzo]] carries out her orders. [[Ruk]] guards the kitchen. [[Cobb]] runs the [[La Vasca]] dry dock under Black-Jaw colors.
 

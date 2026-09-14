@@ -36,7 +36,7 @@ scope: "Linked to ley-line phenomena at Yssenmoor"
 | **Observing** | Default, no Front trigger has fired | Never initiates contact, and does not act, respond, or reveal itself even under direct threat to anything but its own sealed body. It only records |
 | **Engaged** | Something breaches its seal, or the [[Front]]'s trigger condition on [[Sentinels of the Eyrie]] fires | Breaks two centuries of pure observation and fights without restraint, using its full combat suite |
 
-**Wants:** to keep [[The Drowned Maw]]'s unbroken, uninterpreted record running past its own death. The current escalation breaks that pattern entirely.
+**Wants:** to keep [[Drowned Maw]]'s unbroken, uninterpreted record running past its own death. The current escalation breaks that pattern entirely.
 **Morale:** it never flees. Bound to the sealed body beneath [[High Eyrie|the High Eyrie]], it simply stops fighting and returns to observation the moment the threat that forced it to act ends, dead intruder or resolved crisis alike.
 
 > [!narration] Narration
@@ -99,7 +99,7 @@ A monk who reached lichdom through years of meditation and then ritual desiccati
 
 ## Ecology
 
-The Soul Incarnate's body has not moved since the seal closed over it two centuries ago. Everything it knows of [[The Drowned Maw]] and the waters past it toward [[Outer Reach]] comes through the same discipline that built it: record what you see, add nothing to it. It shares no lair with anything living, and asks nothing of the Sentinels who pray, drill, and copy ledgers directly over its resting place, unaware a mind still occupies the stone beneath them. The seal never breaks. Each prior escalation at the Maw has spiked and settled at a slightly higher baseline within the record it keeps, and the current one exceeds every prior entry, meeting it with attention instead of the passivity the order's whole doctrine assumes of it.
+The Soul Incarnate's body has not moved since the seal closed over it two centuries ago. Everything it knows of [[Drowned Maw]] and the waters past it toward [[Outer Reach]] comes through the same discipline that built it: record what you see, add nothing to it. It shares no lair with anything living, and asks nothing of the Sentinels who pray, drill, and copy ledgers directly over its resting place, unaware a mind still occupies the stone beneath them. The seal never breaks. Each prior escalation at the Maw has spiked and settled at a slightly higher baseline within the record it keeps, and the current one exceeds every prior entry, meeting it with attention instead of the passivity the order's whole doctrine assumes of it.
 
 ## Toy Chest
 

@@ -22,11 +22,11 @@ tier: supporting
 ---
 # The Vault of the First Factor
 
-A legendary hidden depository, built by the earliest [[Tessarine Concordat]] Envoy to [[the Shattered Sea]], said to hold the physical collateral of the region's most desperate debtors.
+A legendary hidden depository, built by the earliest [[Tessarine Concordat]] Envoy to [[Shattered Sea]], said to hold the physical collateral of the region's most desperate debtors.
 
 ## The Fact
 
-The [[Tessarine Concordat]] never leaves its true wealth exposed in [[Calveno]], its regional base. The earliest Envoy built a hidden depository on an uncharted, jungle-choked limestone spire somewhere in the interior of the [[Midchain]], designed to hold the physical collateral of captains, governors, and merchants who could not meet their notes.
+The [[Tessarine Concordat]] never leaves its true wealth exposed in [[Calven and Calveno]], its regional base. The earliest Envoy built a hidden depository on an uncharted, jungle-choked limestone spire somewhere in the interior of the [[Midchain]], designed to hold the physical collateral of captains, governors, and merchants who could not meet their notes.
 
 The vault is a localized museum of institutional desperation. Known contents from oral tradition include masterwork weapons surrendered by captains who couldn't pay, magical family heirlooms, and locked chests of trade-bars from governors and colonial administrators. The vault predates the modern [[Tessarine Concordat|Concordat]] structure. No current Tessarine official will confirm its existence, which most observers interpret as confirmation.
 

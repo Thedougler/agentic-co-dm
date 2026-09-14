@@ -39,7 +39,7 @@ She kept the [[Murrat]] wounded alive, and she's clear about her limits: *"They 
 
 She'll announce flatly that the healer's kit is good for two more fights and that the surgical instruments are fine except for one probe. She isn't asking to stay or to leave; she does inventory because someone has to, and she's the one best suited to it. Recruiting her means acknowledging three things: that she's qualified, that the job is real, and that the Surgeon's Berth is ready. Give it a title — Surgeon, ship's medical officer, any real role — and she stays. If the crew signals they mean to keep the Berth staffed and stocked, she looks at the cabinet the way Holst looked at the hull: assessing what it could be. She's the crew's only surgeon — without her, supplies don't translate into action — and she fills the Berth the moment someone hires her; the bar is simple, just call it a real job.
 
-She never came back from shore leave in Calveno after Session 03; her departure from [[Calveno]] leaves the post unfilled. Her berth was empty. A [[Le Paludi]] boarding house saw her leave after a man came by. That's all anyone knows. The Surgeon's Berth still needs a surgeon.
+She never came back from shore leave in Calveno after Session 03; her departure from [[Calven and Calveno]] leaves the post unfilled. Her berth was empty. A [[Le Paludi]] boarding house saw her leave after a man came by. That's all anyone knows. The Surgeon's Berth still needs a surgeon.
 
 ## Connections
 

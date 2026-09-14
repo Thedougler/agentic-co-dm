@@ -37,7 +37,7 @@ Real name unknown. It never came up. [[Barnaby Rook]] sent the [[Dravosi Enforce
 
 He had an athletic build, long golden hair that moved like he was perpetually in a sea breeze, and a jawline that belonged on a coin. His pale blue eyes stayed sharp even in poor light. He wore a House Knighton crest on his coat and had the bearing of a man who wins fights just by showing up. [[Shepherd Grigori]] recognized the crest immediately aboard the HCS Surety in Session 02, and informed the crew that Cap'n Gorgeous was dead. He warned that [[Rupert Knighton]] would send ships. His crewmates probably had no idea what the crest meant.
 
-His real name will surface eventually (not yet decided). House Knighton has served the [[Dravosi Crown]] since its founding and has accrued corresponding leverage. Rupert Knighton will hear that his son died aboard a Crown patrol vessel now missing from [[Tidefall]]; when he does, he sends his own people, not the Crown navy, to find out what happened and to whom.
+His real name will surface eventually (not yet decided). House Knighton has served the [[Dravosi Crown]] since its founding and has accrued corresponding leverage. Rupert Knighton will hear that his son died aboard a Crown patrol vessel now missing from [[Calder's Tooth and Port Tidefall]]; when he does, he sends his own people, not the Crown navy, to find out what happened and to whom.
 
 ## Stats & Combat
 

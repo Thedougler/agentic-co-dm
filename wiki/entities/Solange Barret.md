@@ -116,7 +116,7 @@ After two full rounds of chanting or when the garrison drops to 2, she triggers 
 - [[Simone Tabarnack]]: commander, the only person whose orders Solange follows without question
 - [[Otar the Foul]]: the entity Solange's circle summons
 - [[Calveno Sewer Magazines]]: the primary detonation chamber where Solange operates
-- [[Calveno]]: the site of Beffa Grung Raid, the operation Solange's ritual anchors
+- [[Calven and Calveno]]: the site of Beffa Grung Raid, the operation Solange's ritual anchors
 - [[Jean-Claude Tabarnack]]: if Solange escapes, she identifies him to [[Simone Tabarnack|Simone]]
 - [[Grung Elite Warrior|Elite Warriors]]: her expendable shield during the ritual
 - [[Solange's Authority Seal]]: a red-caste command signet found on her, salvaged from the Primary Chamber rubble

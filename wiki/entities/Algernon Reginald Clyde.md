@@ -39,7 +39,7 @@ Approach him as Werner Herzog interpreting David Attenborough. He is rigorous, p
 
 Algernon Reginald Clyde is a gnome naturalist in his late sixties. He wrote Clyde's Bestiary of Oceanic Creatures, a multi-volume work on oceanic creatures. It's now the standard reference text for maritime creature identification across the Scatter. His writing is precise and accurate. He fills it with contempt for his subject matter. Readers agree this makes the work better. [[Perrin Black-Jaw]] carries a copy, among others.
 
-He is touring to promote Volume II, stopping at [[Port Tidefall]], [[Kalowe]], and [[Calveno]]. He didn't want to tour, but his publisher argued that a gnome who hates every creature he documented is a commercial asset, and Clyde had no good counter-argument. He insists he is not on tour and will correct anyone who says otherwise. He calls what he does field outreach to an at-risk population.
+He is touring to promote Volume II, stopping at [[Calder's Tooth and Port Tidefall]], [[Kalowe]], and [[Calven and Calveno]]. He didn't want to tour, but his publisher argued that a gnome who hates every creature he documented is a commercial asset, and Clyde had no good counter-argument. He insists he is not on tour and will correct anyone who says otherwise. He calls what he does field outreach to an at-risk population.
 
 **Appearance & Manner**
 
@@ -67,4 +67,4 @@ Seventeen copies sold in three days at Port Tidefall. At each port, he argues th
 - [[Sawek]] and [[Leviathan]] are creatures he documented
 - [[Whip Shark]], Ridgeback, Krakling are also in his Bestiary
 - His Bestiary is a multi-volume work
-- [[Tidefall]], [[Kalowe]], [[Calveno]] are tour stops
+- [[Calder's Tooth and Port Tidefall]], [[Kalowe]], [[Calven and Calveno]] are tour stops
