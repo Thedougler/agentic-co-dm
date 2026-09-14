@@ -1,8 +1,11 @@
 ---
 title: "Midchain"
+aliases:
+  - Midchain
+  - The Midchain
 category: entities
 tags: ["shattered-sea", "region"]
-sources: ["Midchain.md", "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md", "midchain-east.md", "midchain-narration-appearance.md", "midchain-south.md", "midchain-west.md"]
+sources: ["midchain-north.md", "Midchain.md", "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md", "midchain-east.md", "midchain-narration-appearance.md", "midchain-south.md", "midchain-west.md"]
 summary: "Densely packed small tropical islands, free ports, reefs, and local councils; feels busy beyond enforcement."
 provenance:
   extracted: 1.0
@@ -13,7 +16,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T03:00:00Z
-updated: 2026-09-13T21:20:00Z
+updated: 2026-09-14T21:45:00Z
 type: region
 reveal: unrevealed
 campaign: shattered-sea
@@ -112,15 +115,15 @@ The largest land and islands stacked into haze; west of the last island the shel
 ### Northern Midchain
 A dense defended strip two or three islands deep between Strait and Teeth. Passage is by consent, not merely coin. [[Murrat]] is a limestone reef of Moucheron kin-villages in cliff hollows; outsiders who land are hunted. [[sparhold-isle]] is the half-mile cut-over islet at the southern lip; [[Sparhold]] is its timber fortress-market and the closest, looser harbour to the Teeth. [[Yssenmoor]] is three miles of fog-lidded bog with no dry landing. [[the-unplotted]] moves like a green hill over a glass bay and appears where shelter is needed.
 
-Other northern-strip names, kept as compact index rather than orphan notes: [[Huahei]] (fey marsh and the Glutehorn); [[Adwe]] (rearranging mangrove); [[corrigans-rest]] (retired pirates); [[Barrow Ait]] (burial mounds); [[Drovannis]] (bird sanctuary); [[Calder's Verge]] (silica-vent glassblowers); [[Chronehall]] (clockmakers); [[Old Correspondence]] (unfinished letter); [[Ilo Maren]] (kelp matriarchy); [[Nemwe]] (watchtower whose signal-fire works); [[Munai]] (feral orchard); [[Kwoss]] (turtle nesting); [[Whitmoth Hollow]] (albino apes and a vanished garden); [[Vetau]] (geothermal atoll); [[Otanu]] (mild volcano); [[Thessit]] (wrecks displaced in time); [[The Foundling Shoals]] (infants on the reef); [[Quillane]] (sinking tidal observatory); [[Tor Vessane]] (real curse); [[Ghal Idrissa]] (Crown quarantine); [[The Long Wager]] (ageless judge); [[Vaelspire]] (one true question).
+Other northern-strip names, kept as compact index rather than orphan notes: [[Huahei]] (fey marsh and the Glutehorn); [[adwe|Adwe]] (rearranging mangrove); [[corrigans-rest]] (retired pirates); [[barrow-ait|Barrow Ait]] (burial mounds); [[drovannis|Drovannis]] (bird sanctuary); [[calders-verge|Calder's Verge]] (silica-vent glassblowers); [[chronehall|Chronehall]] (clockmakers); [[old-correspondence|Old Correspondence]] (unfinished letter); [[ilo-maren|Ilo Maren]] (kelp matriarchy); [[nemwe|Nemwe]] (watchtower whose signal-fire works); [[munai|Munai]] (feral orchard); [[kwoss|Kwoss]] (turtle nesting); [[whitmoth-hollow|Whitmoth Hollow]] (albino apes and a vanished garden); [[vetau|Vetau]] (geothermal atoll); [[otanu|Otanu]] (mild volcano); [[thessit|Thessit]] (wrecks displaced in time); [[the-foundling-shoals|The Foundling Shoals]] (infants on the reef); [[quillane|Quillane]] (sinking tidal observatory); [[tor-vessane|Tor Vessane]] (real curse); [[ghal-idrissa|Ghal Idrissa]] (Crown quarantine); [[the-long-wager|The Long Wager]] (ageless judge); [[vaelspire|Vaelspire]] (one true question).
 
 ### [[verdant-teeth]]
 Five country-scale rainforest islands sit close enough for facing shores to be hours apart while their interiors take weeks: [[Veth]], [[Sorn]], [[Karath]], [[Dreth]], and [[Orak]]. Trade is beach-only and sanctioned selectively; interiors are closed. [[Karath]] is the eastern Tooth and an Aruhe channel neighbor, not an approach to Aruhe's heart.
 
 ### Southern Midchain
-Steep volcanic knots with terraced slopes and very short beaches. Landing is negotiated on the sand, and these islands have not asked the Chain Council for help against Grung pressure. [[Halewick]] is the ordinary fishing island temporarily ruled by Toby and Frankie; [[Blackrule]] is a Tyr chapterhouse; [[Slackwater]] is the shared harbour. Compact index: [[ket-solane]] (smugglers' caves); [[Feyroa]] (secret-taking distillery); [[Ossira]] (seabird rookery); [[Palutai]] (reef feud); [[Ravasol]] (stilt village); [[sable-roost]] (sky-pirate wrecks); [[Sanvashti]] (Grung truce); [[sump-cradle]] (healing mud); [[The Hollow Choir]] (harmonic tide caves); [[Twineye]] (fighting families); [[velk-ithera]] (sound-sensitive fungal hill).
+Steep volcanic knots with terraced slopes and very short beaches. Landing is negotiated on the sand, and these islands have not asked the Chain Council for help against Grung pressure. [[Halewick]] is the ordinary fishing island temporarily ruled by Toby and Frankie; [[Blackrule]] is a Tyr chapterhouse; [[Slackwater]] is the shared harbour. Compact index: [[ket-solane]] (smugglers' caves); [[Feyroa]] (secret-taking distillery); [[Ossira]] (seabird rookery); [[Palutai]] (reef feud); [[Ravasol]] (stilt village); [[sable-roost]] (sky-pirate wrecks); [[Sanvashti]] (Grung truce); [[sump-cradle]] (healing mud); [[hollow-choir|The Hollow Choir]] (harmonic tide caves); [[Twineye]] (fighting families); [[velk-ithera]] (sound-sensitive fungal hill).
 
 ### Eastern Midchain and thin water
-East of the Teeth the land thins except for [[aruhe]], a mute country-scale island. Farther east, reef and soundings become less reliable; [[Halythion]] lies under Teikhinos Reef outside colonial surveys. Compact index: [[Amberfall]] (amber with things frozen inside); [[cambreys-fold]] (returning path); [[coeur-bris]] (split arch and locked chest); [[Corvenna]] (champion court); [[Duskveil]] (permanent dusk); [[Ferrymoor]] (unaffiliated fog crossing); [[gullmoth-reach]] (fey-moth roost); [[Lethys]] (griffon cliffs); [[old-harrows-bones]] (derelict island); [[otel-karn]] (wounds that do not heal); [[Ash Caldera]] (black-glass cone with missing salvage).
+East of the Teeth the land thins except for [[aruhe]], a mute country-scale island. Farther east, reef and soundings become less reliable; [[Halythion]] lies under Teikhinos Reef outside colonial surveys. Compact index: [[Amberfall]] (amber with things frozen inside); [[cambreys-fold]] (returning path); [[coeur-bris]] (split arch and locked chest); [[Corvenna]] (champion court); [[Duskveil]] (permanent dusk); [[Ferrymoor]] (unaffiliated fog crossing); [[gullmoth-reach]] (fey-moth roost); [[Lethys]] (griffon cliffs); [[old-harrows-bones]] (derelict island); [[otel-karn]] (wounds that do not heal); [[ashglass|Ash Caldera]] (black-glass cone with missing salvage).
 
 Near the Maw edge, [[Fathomrush]] stages dives on [[Shelfworks]]. The Tail's unnamed staging island serves the same last-supplies/last-hands function under another name.
