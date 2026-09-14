@@ -1,10 +1,13 @@
 ---
 title: Session 11 — Angry Birds
 category: journal
-tags: [hook, session-prep, shattered-sea]
+tags:
+  - hook
+  - session-prep
+  - shattered-sea
 sources:
   - "[[Session-11-00-Birds-of-a-Feather]]"
-  - "[[Session 10 - Recap]]"
+  - "[[journal/sessions/shattered-sea/recaps/Session 10 - Recap]]"
   - "[[Aruhe - Bloodhawk]]"
   - "[[Young Bloodhawk]]"
   - "[[Aruhe - Crown Squid]]"
@@ -14,14 +17,14 @@ type: session-prep
 kind: hook
 lifecycle: accepted
 reveal: unrevealed
-summary: "Action Hook. An adult hawk stoops on the Crown Squid over the Old Gardens; grass, river, terrace cover, or the beach ends the action."
+summary: Action Hook. An adult hawk stoops on the Crown Squid over the Old Gardens; grass, river, terrace cover, or the beach ends the action.
 campaign: shattered-sea
 session: 11
 visibility: dm
 ---
 # Session 11 — Angry Birds
 
-![[Session 10 - Recap#Recap]]
+![[journal/sessions/shattered-sea/recaps/Session 10 - Recap#Recap]]
 
 ````col
 ```col-md

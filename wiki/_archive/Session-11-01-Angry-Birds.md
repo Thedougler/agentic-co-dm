@@ -10,7 +10,7 @@ summary: Adult Bloodhawk hunts the Crown Squid while young Bloodhawks flush expo
 ---
 # Session 11 — Angry Birds
 
-![[Session 10 - Recap#Recap]]
+![[_archive/Session 10 - Recap#Recap]]
 
 
 ![[session-11-01-angry-birds-descent.jpg|Session 11-01 descent over Aruhe]]
