@@ -35,6 +35,9 @@ HARD_KEYS = (
     "bad_lifecycle",
     "typed_relationships",
     "pc_identity_mismatch",
+    "title_stem_mismatch",
+    "illegal_basename",
+    "duplicate_stems",
 )
 PC_ROLE = re.compile(r"^(pc|player character|player)$", re.I)
 TOKEN = re.compile(r"`([^`]+)`")
@@ -253,6 +256,100 @@ def pc_identity_mismatches(pages: dict[str, dict]) -> list[dict[str, object]]:
     return out
 
 
+SESSION_STEM = re.compile(r"^Session-\d+", re.I)
+ILLEGAL_BASENAME_CHARS = re.compile(r'[/\\:*?"<>|\x00-\x1f]')
+SNAKE_OWNER_STEM = re.compile(r"^[a-z0-9]+(_[a-z0-9]+)+$")
+KEBAB_OWNER_STEM = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)+$")
+
+
+def is_journal_session_stem(rel: str, stem: str) -> bool:
+    """Journal Session-* basenames are carved out of title-stem / snake-kebab rules."""
+    parts = Path(rel).parts
+    return bool(parts and parts[0] == "journal" and SESSION_STEM.match(stem))
+
+
+def illegal_basename_issues(stem: str) -> list[str]:
+    """Return reason codes for forbidden basename stem characters/shape."""
+    reasons: list[str] = []
+    if ILLEGAL_BASENAME_CHARS.search(stem):
+        reasons.append("forbidden_char")
+    if stem != stem.strip():
+        reasons.append("edge_whitespace")
+    if any(ord(ch) < 32 for ch in stem):
+        reasons.append("control_char")
+    if "  " in stem:
+        reasons.append("consecutive_spaces")
+    return reasons
+
+
+def title_stem_mismatches(pages: dict[str, dict]) -> list[dict[str, object]]:
+    """HARD: frontmatter title must equal Path.stem (journal Session-* + redirects skipped)."""
+    out: list[dict[str, object]] = []
+    for rel, item in pages.items():
+        if item["fields"].get("redirects_to"):
+            continue
+        if "attachments" in Path(rel).parts:
+            continue
+        stem = Path(rel).stem
+        if is_journal_session_stem(rel, stem):
+            continue
+        title = (item.get("title") or "").strip()
+        if not title:
+            continue
+        if title != stem:
+            out.append({"page": rel, "title": title, "stem": stem})
+    return out
+
+
+def illegal_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
+    """HARD: forbidden characters / whitespace shape in live page stems."""
+    out: list[dict[str, object]] = []
+    for rel in pages:
+        if "attachments" in Path(rel).parts:
+            continue
+        stem = Path(rel).stem
+        reasons = illegal_basename_issues(stem)
+        if reasons:
+            out.append({"page": rel, "stem": stem, "reasons": reasons})
+    return out
+
+
+def duplicate_stems(pages: dict[str, dict]) -> list[dict[str, object]]:
+    """HARD: vault-wide unique stems (casefold); attachments skipped."""
+    groups: dict[str, list[str]] = collections.defaultdict(list)
+    for rel in pages:
+        if "attachments" in Path(rel).parts:
+            continue
+        stem = Path(rel).stem
+        groups[stem.casefold()].append(rel)
+    return [
+        {"stem": Path(members[0]).stem, "pages": sorted(members)}
+        for _key, members in sorted(groups.items())
+        if len(members) > 1
+    ]
+
+
+def snake_kebab_owner_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
+    """Soft: snake_case / kebab-case owner basenames under entities/{owner-type}/."""
+    out: list[dict[str, object]] = []
+    for rel in pages:
+        parts = Path(rel).parts
+        if len(parts) < 3 or parts[0] != "entities":
+            continue
+        type_folder = parts[1]
+        if type_folder not in OWNER_TYPES:
+            continue
+        stem = Path(rel).stem
+        kind = None
+        if SNAKE_OWNER_STEM.fullmatch(stem):
+            kind = "snake"
+        elif KEBAB_OWNER_STEM.fullmatch(stem):
+            kind = "kebab"
+        if kind:
+            out.append({"page": rel, "stem": stem, "kind": kind})
+    return out
+
+
 def main() -> int:
     args = parse_args()
     vault = args.vault.resolve()
@@ -301,6 +398,10 @@ def main() -> int:
             )
         )
     ]
+    findings["title_stem_mismatch"] = title_stem_mismatches(pages)
+    findings["illegal_basename"] = illegal_basenames(pages)
+    findings["duplicate_stems"] = duplicate_stems(pages)
+    findings["snake_kebab_owner_basename"] = snake_kebab_owner_basenames(pages)
     findings["missing_trust"] = [{"page": rel, "missing": [key for key in args.required_trust_field if not item["fields"].get(key)]} for rel, item in pages.items() if any(not item["fields"].get(key) for key in args.required_trust_field)]
 
     documents = {}
