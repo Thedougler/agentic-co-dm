@@ -24,6 +24,16 @@
   object-fit: contain;
 }
 
-.pc-sheet .columnParent:not(:has(.columnChild:first-child img)) .columnChild {
+.pc-sheet .columnParent:not(:has(.columnChild:first-child img)) .columnChild:nth-child(1) {
+  flex: 0 1 16rem;
+  max-width: 18rem;
+}
+
+.pc-sheet .columnParent:not(:has(.columnChild:first-child img)) .columnChild:nth-child(2) {
+  flex: 0 1 18rem;
+  max-width: 22rem;
+}
+
+.pc-sheet .columnParent:not(:has(.columnChild:first-child img)) .columnChild:nth-child(3) {
   flex: 1 1 0;
 }
