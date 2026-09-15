@@ -6,7 +6,7 @@
 
 ## Summary
 
-Add a `player-characters` owning skill that records player-created characters onto `type: pc` wiki pages. Do not generate PCs or treat them as NPCs. Redesign `wiki/templates/pc.md` to D&D Beyond information groups and order, in Obsidian markdown and columns (not a visual clone): featured portrait beside Identity when art exists, leftover art in a bottom gallery, optional Stated Goals from session transcripts. Conform the five live PC owners. Ingest from PDF, prose, Foundry MCP, or other DM-supplied source. Newest supplied source overwrites conflicting wiki numbers; structure-only conformance does not. Keep vault-wide CSS; add PC-page scan tweaks only.
+Add a `player-characters` owning skill that records player-created characters onto `type: pc` wiki pages. Do not generate PCs or treat them as NPCs. Redesign `wiki/templates/pc.md` to D&D Beyond information groups and order, in Obsidian markdown and columns (not a visual clone): featured portrait beside Identity when art exists; Combat Stats full-width; then three columns (Ability Scores | Skills | Actions/Spells/Inventory/Features stacked). Every page includes `Spells` (state none when there is no casting). Leftover art in a bottom gallery. Optional Stated Goals from session transcripts. Conform the five live PC owners. Ingest from PDF, prose, Foundry MCP, or other DM-supplied source. Newest supplied source overwrites conflicting wiki numbers in place; structure-only conformance does not. Unknown or internally contested numbers stay off the live page (GitHub issue), not as `[verify]`. Keep vault-wide CSS; add PC-page scan tweaks only.
 
 There is no `Voice`, `At a Glance`, `Sheet`, `Combat Profile`, `Abilities`, or required DM thesis. The page lists options and numbers; it does not prescribe player actions.
 
@@ -26,7 +26,7 @@ There is no `Voice`, `At a Glance`, `Sheet`, `Combat Profile`, `Abilities`, or r
 
 **Performance Goals**: A DM can find required PC reference facts for each conformed page in under 60 seconds; an agent can transcribe a representative caster, non-caster, or multiclass from supplied source without npc-design and without inventing missing stats
 
-**Constraints**: Players create PCs; the skill only records them. Keep `type: pc` and `wiki/entities/pc/`. No `Voice` / NPC-dossier spine. No new database, PDF parser, or Foundry client. No visual clone of D&D Beyond chrome. Structure-only conformance preserves facts; ingest from a newer source overwrites conflicting numbers. Unrelated skills stay out of scope. CSS is snippets plus `cssclasses`, not a second theme.
+**Constraints**: Players create PCs; the skill only records them. Keep `type: pc` and `wiki/entities/pc/`. No `Voice` / NPC-dossier spine. No new database, PDF parser, or Foundry client. No visual clone of D&D Beyond chrome. Structure-only conformance preserves facts; ingest from a newer source overwrites conflicting numbers in place. Live pages MUST NOT contain `[verify]` (constitution XVIII). Unrelated skills stay out of scope. CSS is snippets plus `cssclasses`, not a second theme.
 
 **Scale/Scope**: One PC-owning skill (extend), one rewritten template, five named live PC owner pages, one PC CSS snippet, wiki-kind routing plus pointer edits, one fixture, one page-shape contract, Stated Goals refresh after sessions that included that player
 
@@ -38,8 +38,8 @@ There is no `Voice`, `At a Glance`, `Sheet`, `Combat Profile`, `Abilities`, or r
 |---|---|
 | I. Domain language is binding | Pass — uses existing wiki terms `PC`, `player character`, `type: pc`, `owner page`. Skill id `player-characters` is a filename, not a new glossary synonym for NPC. No `_Avoid_` term used. |
 | II. Issues are the work surface | Pass — Spec Kit feature workflow; no alternate request surface. |
-| III. Spec before code | Pass — `spec.md` has independently testable P1–P4 scenarios and ten recorded clarifications. |
-| IV. Tests specify behavior | Pass — fixture and quickstart assert page shape, routing, omission, preservation, overwrite-on-ingest, narration safety, refusal to generate a PC, Stated Goals sourcing, and CSS targeting. |
+| III. Spec before code | Pass — `spec.md` has independently testable P1–P4 scenarios and recorded clarifications. |
+| IV. Tests specify behavior | Pass — fixture and quickstart assert page shape, three-column sheet, required Spells, routing, omission, preservation, overwrite-on-ingest, narration safety, refusal to generate a PC, Stated Goals sourcing, no live `[verify]`, and CSS targeting. |
 | V. Single context | Pass — existing root context and wiki remain the sole domain context. |
 | VI. Software is agent-shaped | Pass — fixture stays an argument-free command; the skill is agent-invoked Markdown procedure; Foundry ingest uses existing MCP tools. |
 | VII. Do not suffocate agents | Pass — contract fixes ownership, section homes, agency (no prescribed actions), and named failure modes. Prose craft, in-section art placement, and player choices stay open. |
@@ -49,9 +49,11 @@ There is no `Voice`, `At a Glance`, `Sheet`, `Combat Profile`, `Abilities`, or r
 | XI. Designated writer bounded concurrency | Pass — `player-characters` and rewritten `wiki/templates/pc.md` are design-impact and MUST go to the designated writer with `writing-for-agents`. Pointer edits, fixture, CSS snippet, and page conformance are session-agent work. |
 | XII. Prompt other agents with objectives | Pass — designated-writer prompt can name the skill, template, contract, and acceptance without restating Spec Kit process. |
 | XIII. Wiki media filenames distinguish kind | Pass — featured portrait is an existing portrait-kind attachment; no media minted. Rename only if a filename still contains spaces. |
-| XIV. Use the simplest tool | Pass — Markdown edits, existing lint, existing Foundry MCP, existing snippets, one fixture. No new parser. |
+| XIV. Use the simplest tool | Pass — Markdown edits, existing lint, existing Foundry MCP, existing snippets, one fixture. No new parser. Three `col-md` children use the existing plugin. |
 | XV. Wiki page filenames are kebab slugs | Pass — live PC stems already kebab; no spaced rename in this feature. |
-| XVI. Named owners before spoken work | Pass — this feature records PC owner pages so named PCs exist before spoken work. It does not invent PCs or invent player goals to fill session prose. |
+| XVI. Named owners before spoken work | Pass — this feature records PC owner pages so named PCs exist before spoken work. It does not invent PCs or invent player goals to fill session prose. Existing `visibility` is preserved as a campaign field; this feature does not add a new audience model. |
+| XVII. Agent-facing text is DRY | Pass — `contracts/pc-page.md` owns the spine. Skills, `COLUMNS.md`, and `wiki/AGENTS.md` point at it rather than cloning section contracts. |
+| XVIII. Wiki pages hold present and planned facts only | Pass — newest source overwrites in place. Live PC pages omit unknown or internally contested numbers and MUST NOT contain `[verify]`, user questions, or superseded numbers beside current ones. Archive satellites stay evidence. |
 
 ## Project Structure
 
@@ -96,21 +98,23 @@ wiki/AGENTS.md
 specs/020-pc-page-redesign/fixtures/check.py
 ```
 
-**Structure Decision**: Keep the current wiki owner-page layout. Extend `player-characters`. Rewrite the PC template in place. Remorph the five owner files. Add `pc-sheet.css` and `cssclasses: [pc-sheet]`. Archived satellites stay immutable evidence. Guidance points at the page contract. Designated writer owns skill and template changes; session agent owns pointer edits, fixture, CSS snippet (via `obsidian-layout-adjustment`), and conformance.
+**Structure Decision**: Keep the current wiki owner-page layout. Extend `player-characters`. Rewrite the PC template in place. Remorph the five owner files to the three-column sheet and required `Spells`. Add `pc-sheet.css` and `cssclasses: [pc-sheet]`. Archived satellites stay immutable evidence. Guidance points at the page contract. Designated writer owns skill and template changes; session agent owns pointer edits, fixture, CSS snippet (via `obsidian-layout-adjustment`), and conformance.
+
+Current skill/template/pages/fixture still encode two column pairs and optional `Spells`. That shape is superseded. Implement MUST remorph them against this plan.
 
 ## Phase 0: Research
 
-Research is complete in [`research.md`](research.md). It resolves skill ownership and naming, record-only ingest, newest-source overwrite, D&D Beyond spine, featured-portrait + Identity pair, Stated Goals, vault CSS plus PC-page tweaks, Actions vs Features, and verification.
+Research is complete in [`research.md`](research.md). It resolves skill ownership and naming, record-only ingest, newest-source overwrite, constitution XVIII (no live `[verify]`), D&D Beyond spine, required Spells, three-column sheet, featured-portrait + Identity pair, Stated Goals, vault CSS plus PC-page tweaks, Actions vs Features, and verification.
 
 ## Phase 1: Design
 
 Design is complete in [`data-model.md`](data-model.md), [`contracts/pc-page.md`](contracts/pc-page.md), and [`quickstart.md`](quickstart.md).
 
-- The data model defines frontmatter including `cssclasses`, DDB section ownership, featured portrait, Stated Goals, ingest overwrite, skill state, and invariants.
-- The contract defines heading spine, column pairs (portrait+Identity, Ability Scores+Skills), agency rules, source kinds, goal refresh, and CSS targeting.
+- The data model defines frontmatter including `cssclasses`, DDB section ownership, required Spells, featured portrait, Stated Goals, ingest overwrite, skill state, and invariants.
+- The contract defines heading spine, header pair, three-column sheet row, agency rules, source kinds, goal refresh, no live `[verify]`, and CSS targeting.
 - The quickstart defines fixture, lint, skill-routing, Reading-view, preservation, refuse-to-generate, Stated Goals, and CSS checks.
 
-**Post-design gate**: Pass. No unresolved technical clarifications. No constitution violation requires complexity tracking. `tasks.md` predates FR-021–023 and MUST be regenerated or converged before implement of those items.
+**Post-design gate**: Pass. No unresolved technical clarifications. No constitution violation requires complexity tracking. `tasks.md` predates the three-column sheet, required Spells, and XVIII overlay and MUST be regenerated before implement.
 
 ## Complexity Tracking
 
