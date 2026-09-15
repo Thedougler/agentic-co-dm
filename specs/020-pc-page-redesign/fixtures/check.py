@@ -40,6 +40,7 @@ REQUIRED_FRONTMATTER = (
     "init_mod",
     "pp",
     "speed",
+    "cssclasses",
 )
 SPINE = (
     "Identity",
@@ -51,6 +52,7 @@ SPINE = (
     "Inventory",
     "Features",
     "Connections",
+    "Stated Goals",
     "Session Log",
     "Art",
 )
@@ -70,8 +72,8 @@ FORBIDDEN_H2 = (
     "Combat Profile",
     "Abilities",
 )
-HEADER_PAIR = ("Identity", "Combat Stats")
 ABILITY_PAIR = ("Ability Scores", "Skills")
+EMBED = re.compile(r"!\[\[[^\]]+\]\]|!\[[^\]]*\]\([^)]+\)")
 ACTION_SUBHEADINGS = ("Attacks", "Actions", "Bonus Actions", "Reactions")
 FEATURE_SUBHEADINGS = ("Traits", "Class Features", "Feats")
 SPELL_SUBHEADINGS = ("Spellcasting", "Cantrips", "Prepared or Known", "Slots or Casting Resources")
@@ -178,30 +180,53 @@ def child_h2(body: str) -> list[str]:
     return [line[3:].strip() for line in body.splitlines() if line.startswith("## ")]
 
 
+def heading_in_columns(parents: list[tuple[int, str]], heading: str) -> bool:
+    for _, inner in parents:
+        for _, child_body in col_children(inner):
+            if heading in child_h2(child_body):
+                return True
+    return False
+
+
 def validate_columns(text: str, label: str, errors: list[str]) -> None:
     body = body_without_comments(text)
     if "[!col]" in body:
         fail(f"{label}: uses prohibited [!col] syntax", errors)
     parents = col_parents(body)
-    if len(parents) < 2:
-        fail(f"{label}: expected two parent col fences, found {len(parents)}", errors)
-        return
     pair_headings: list[set[str]] = []
+    portrait_pair = False
     for parent_ticks, inner in parents:
         children = col_children(inner)
         if len(children) != 2:
             fail(f"{label}: parent col fence lacks two nested col-md fences", errors)
             continue
-        names: set[str] = set()
-        for child_ticks, child_body in children:
+        _left_ticks, left_body = children[0]
+        _right_ticks, right_body = children[1]
+        for child_ticks, _child_body in children:
             if parent_ticks <= child_ticks:
                 fail(f"{label}: parent col fence is not longer than child col-md fences", errors)
-            names.update(child_h2(child_body))
+        left_h2 = child_h2(left_body)
+        right_h2 = child_h2(right_body)
+        names = set(left_h2 + right_h2)
         pair_headings.append(names)
-    required_pairs = [set(HEADER_PAIR), set(ABILITY_PAIR)]
-    for required in required_pairs:
-        if required not in pair_headings:
-            fail(f"{label}: missing nested pair {sorted(required)}", errors)
+        if "Identity" in names and "Combat Stats" in names:
+            fail(f"{label}: pairs Identity with Combat Stats", errors)
+        if "Connections" in names and "Session Log" in names:
+            fail(f"{label}: pairs Connections with Session Log", errors)
+        if right_h2 == ["Identity"] and not left_h2:
+            if EMBED.search(left_body):
+                portrait_pair = True
+            else:
+                fail(f"{label}: empty portrait column", errors)
+    if set(ABILITY_PAIR) not in pair_headings:
+        fail(f"{label}: missing nested pair {sorted(ABILITY_PAIR)}", errors)
+    if heading_in_columns(parents, "Combat Stats"):
+        fail(f"{label}: Combat Stats is not full-width", errors)
+    if EMBED.search(body):
+        if not portrait_pair:
+            fail(f"{label}: missing featured portrait + Identity pair", errors)
+    elif heading_in_columns(parents, "Identity"):
+        fail(f"{label}: Identity is not full-width when no pictures exist", errors)
     first_parent_at = body.find("````col")
     narration_at = body.find("> [!narration] Narration")
     if first_parent_at != -1 and narration_at != -1 and narration_at > first_parent_at:
@@ -223,7 +248,7 @@ def validate_spine(text: str, label: str, errors: list[str], *, title: str, temp
     if title == "Delmar Fisk" and "Spells" in h2:
         fail(f"{label}: non-caster retains Spells section", errors)
     if not template:
-        for name in ("Spells", "Connections", "Session Log", "Art"):
+        for name in ("Spells", "Connections", "Stated Goals", "Session Log", "Art"):
             if name in h2 and not nonempty_body(section(text, name)):
                 fail(f"{label}: empty optional section {name}", errors)
         for heading, subs in (
@@ -252,6 +277,8 @@ def validate_page(path: Path, errors: list[str], template: bool = False) -> None
             fail(f"{label}: missing frontmatter key {key}", errors)
     if data.get("type") != "pc":
         fail(f"{label}: type must be pc", errors)
+    if "pc-sheet" not in data.get("cssclasses", ""):
+        fail(f"{label}: cssclasses must include pc-sheet", errors)
     if not re.search(r"^# (?:\{\{title\}\}|[^#].+)$", clean, re.MULTILINE):
         fail(f"{label}: missing title H1", errors)
     if not template and len(headings(text, 1)) != 1:
