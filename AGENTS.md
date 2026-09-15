@@ -112,6 +112,7 @@ Reader is `agent` | `DM` | `players`. Unknown reader → `DM`. Vault is `true` i
 | Classifier | Authority |
 |---|---|
 | An agent will follow the text | writing-for-agents |
+| A human will read the text | writing-for-humans |
 | The DM will read the text | copy-writer |
 | Players will hear or see the text | theatre of the mind |
 | Destination is a wiki vault note | obsidian-markdown |
@@ -295,6 +296,7 @@ Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the 
 | "grill me" / "challenge my design" / "poke holes" | `grilling` |
 | "grill with docs" / "challenge against the spec" | `grill-with-docs` |
 | "write for agents" / "agent-facing prose" | `writing-for-agents` |
+| "write for humans" / "human-readable prose" / "documentation voice" | `writing-for-humans` |
 | "obsidian markdown" / link/frontmatter standards | `obsidian-markdown` |
 | TDD / "write a test first" | `tdd` |
 
