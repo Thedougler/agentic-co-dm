@@ -42,7 +42,7 @@ the world to ask. Then ask once for player handle and class/level if known. Leav
 blank and never fill `pc-state` from prose.
 
 ## Synthesize and persist
-Map only stated answers into D&D Beyond sections on `wiki/templates/pc.md`: Identity, Connections, Features, and Session Log when the answer belongs there. Leave unknown mechanics unknown. Never invent combat math or player choices. Preserve prior interview rounds as source evidence, not as a second live PC page. Link existing entities; do not mint NPC/item/place notes inside the interview. Contradictions with protected canon are a DM gate, not a silent overwrite. Do not set player audience, combat statistics, inventory, or unstated feelings.
+Map only stated answers into D&D Beyond sections on `wiki/templates/pc.md`: Identity, Connections, Features, and Session Log when the answer belongs there. Leave unknown mechanics unknown. Never invent combat math, player choices, or `[verify]` prompts. Preserve prior interview rounds as source evidence, not as a second live PC page. Link existing entities; do not mint NPC/item/place notes inside the interview. Contradictions with protected canon are a DM gate, not a silent overwrite. Do not set player audience, combat statistics, inventory, or unstated feelings.
 
 Hand the mapped facts to `player-characters` to file `wiki/entities/pc/<kebab-slug>.md`. Run applicable Obsidian/frontmatter lint, and report changed paths plus unanswered questions and deferred owner work.
 

@@ -81,8 +81,8 @@ Live Foundry snapshot from world Shattered-Sea on 2026-09-13. Actor `O68NGfrVI6i
 | Speed | Walk 30 ft. [[flying-boots]] spend a charge for Fly 30 ft. for 1 hour. [[delmars-cloak-of-the-manta-ray]] grants Swim 60 ft. and water breathing while worn. |
 
 
-````col
-```col-md
+`````col
+````col-md
 ## Ability Scores
 
 | Ability | Score | Mod | Save |
@@ -93,14 +93,13 @@ Live Foundry snapshot from world Shattered-Sea on 2026-09-13. Actor `O68NGfrVI6i
 | Intelligence | 11 | +0 | +3 |
 | Wisdom | 12 | +1 | +1 |
 | Charisma | 15 | +2 | +2 |
-```
-```col-md
+````
+````col-md
 ## Skills
 
 Acrobatics +8 (proficient), Insight +4 (proficient), Investigation +6 (expertise), Perception +4 (proficient), Persuasion +8 (expertise), Sleight of Hand +8 (proficient), Stealth +8 (proficient). Untrained: Animal Handling +1, Arcana +0, Athletics +0, Deception +2, History +0, Intimidation +2, Medicine +1, Nature +0, Performance +2, Religion +0, Survival +1. Tools: Thieves' Tools, Tinker's Tools, Navigator's Tools (Sailor). Languages include Thieves' Cant. Saves: Dexterity and Intelligence.
-```
 ````
-
+````col-md
 ## Actions
 
 ### Attacks
@@ -132,6 +131,10 @@ Acrobatics +8 (proficient), Insight +4 (proficient), Investigation +6 (expertise
 | --- | --- | --- | --- | --- |
 | Uncanny Dodge | Attack he can see that hits | Halve that attack's damage | 1/reaction | — |
 | Firearm Specialist | Misfire | d20 vs misfire score to prevent it | — | — |
+
+## Spells
+
+This character has no spells.
 
 ## Inventory
 
@@ -198,7 +201,8 @@ Acrobatics +8 (proficient), Insight +4 (proficient), Investigation +6 (expertise
 | Firearm Specialist | — | Firearm proficiency. On a misfire, Reaction d20; higher than the misfire score prevents the misfire. |
 | Lucky | Variant Human | 3 Luck Points per Long Rest; spend on a D20 Test. |
 | Tavern Brawler | — | Unarmed Strike can deal `1d4` plus Strength bludgeoning; reroll 1s on those damage dice. |
-
+````
+`````
 ## Connections
 
 | Tie | Table consequence |

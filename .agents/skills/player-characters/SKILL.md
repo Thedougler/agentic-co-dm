@@ -9,7 +9,7 @@ description: >-
 
 # Player Characters
 
-Record-only skill for `type: pc` wiki pages. Players create characters; this skill transcribes supplied source onto the canonical owner page. It does not invent PCs, generate stats, prescribe actions, or write voice.
+Record-only skill for `type: pc` wiki pages. Players create characters; this skill transcribes supplied source onto the canonical owner page. This skill is the sole owner for `type: pc` wiki work; keep the skill name `player-characters`.
 
 ## Work gate
 
@@ -22,11 +22,11 @@ Show a chat proposal; write under `wiki/` only after DM accept. Structure-only c
 | State | Trigger | Action |
 | --- | --- | --- |
 | idle | No PC job | Nothing |
-| record | DM supplies source for a player-created character | Transcribe onto `wiki/entities/pc/<kebab-slug>.md` |
+| record | Source supplied for a player-created character | Transcribe onto `wiki/entities/pc/<kebab-slug>.md` |
 | refresh-goals | Post-session transcript for a player who was in that session | Refresh Stated Goals on the PC's live page from that transcript |
 | refuse | No source supplied, or request to invent/generate/prescribe a PC, or inventing goals | Refuse and say why |
 
-The skill enters `record` only when the DM supplies at least one source. It enters `refresh-goals` after a session that included the player, when the session transcript is available. A request without source is a `refuse`. A request to invent goals is a `refuse`.
+The skill enters `record` only when at least one source is supplied. It enters `refresh-goals` after a session that included the player, when the session transcript is available. A request without source is a `refuse`. A request to invent goals is a `refuse`. Do not mint a page on `refuse`.
 
 ## Accepted sources
 
@@ -35,7 +35,7 @@ The skill enters `record` only when the DM supplies at least one source. It ente
 - Foundry VTT actor via the existing MCP server (`get-character`, `list-characters`, `get-character-entity`, and related character tools).
 - Other DM-supplied file (image of a sheet, exported JSON, plain text).
 
-When a source cannot be read (PDF garbled, Foundry MCP unavailable, image illegible), record what can be read and mark unread fields unknown or `[verify]`. Do not invent values. Do not abort a usable partial page when other source remains.
+When a source cannot be read (PDF garbled, Foundry MCP unavailable, image illegible), transcribe what can be read and omit unread numbers. Do not invent values. Do not abort a usable partial page when other source remains.
 
 ## Procedure
 
@@ -47,7 +47,9 @@ Read the supplied source. Read the live owner page at `wiki/entities/pc/<kebab-s
 
 Copy `wiki/templates/pc.md` as the scaffold for a new page. For an existing page, reshape to match the template spine.
 
-Fill every field the source provides. Leave fields the source does not cover as unknown or `[verify]`. Omit optional sections that have no content per the contract.
+Fill every field the source provides. Omit unknown source values and optional sections per the contract. Do not write `[verify]` or questions onto the page.
+
+Use the template spine. Identity through Features, including required `## Spells`, appears on every page. When the PC has no spellcasting, `## Spells` states none. After `## Combat Stats`, use the three-column sheet row from the contract: `## Ability Scores` | `## Skills` | stacked `## Actions`, `## Spells`, `## Inventory`, and `## Features`.
 
 Narration is a real `[!narration]` callout with player-safe sensory description. No secrets, DCs, unearned names, or DM thesis.
 
@@ -72,7 +74,7 @@ After every session that included the player, refresh from that session's transc
 
 **Newer supplied source vs live wiki page:** When a newer supplied source disagrees with the live page on the same number, keep the newer source's value and overwrite the wiki number, including matching frontmatter mirrors. Structure-only conformance is not a newer source.
 
-**Source disagrees with itself:** Keep both values or mark `[verify]`. Do not invent a resolution.
+**Source disagrees with itself:** Omit the contested number from the page and file a GitHub issue. Do not invent a resolution. Do not write `[verify]`.
 
 ### 4. File
 
@@ -93,7 +95,7 @@ File at `wiki/entities/pc/<kebab-slug>.md`. When `WIKI_STAGED_WRITES=true`, land
 ## Boundaries
 
 - MUST NOT invent a PC, generate stats, write the player's actions, or invent goals.
-- MUST NOT use `npc-design` for `type: pc` work.
+- MUST NOT use `npc-design` or any `pc-design` path for `type: pc` work.
 - MUST NOT add `Voice`, `At a Glance`, `Sheet`, `Combat Profile`, `Abilities`, or a DM thesis section.
 - MUST NOT add a new PDF parser, database, or Foundry client.
 - MUST NOT file a Stated Goal sourced only from a session summary without transcript support.
@@ -103,8 +105,10 @@ File at `wiki/entities/pc/<kebab-slug>.md`. When `WIKI_STAGED_WRITES=true`, land
 The page is done when:
 
 - It lives at `wiki/entities/pc/<kebab-slug>.md` with `type: pc`.
-- Every source-provided field is filled; every missing field is unknown or `[verify]`.
+- Every source-provided field is filled; unread, unknown, and internally contested numbers are omitted.
 - The heading spine matches `specs/020-pc-page-redesign/contracts/pc-page.md`.
+- `## Spells` is present, and states none when the PC has no casting.
+- The sheet row after Combat Stats is three columns: Ability Scores | Skills | Actions/Spells/Inventory/Features stacked.
 - Narration is player-safe with no secrets, DCs, or unearned names.
 - Newer-source numbers overwrite stale wiki numbers and their frontmatter mirrors.
 - No stats, actions, identity, or goals were invented.

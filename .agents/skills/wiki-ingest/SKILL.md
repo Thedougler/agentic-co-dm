@@ -450,7 +450,7 @@ Pages without a `tier:` field are treated as `supporting`. When in doubt, err to
 
 For each page in your plan:
 
-**PC ingest:** Route `type: pc` through `player-characters` and `wiki/templates/pc.md` onto `wiki/entities/pc/<kebab-slug>.md`. Flatten archived satellites into canonical homes. Preserve `sources` lineage. Keep conflicts and unknowns explicit (`[verify]`); do not invent a resolution. Never ingest a PC as `npc` with a pc tag. A newer supplied source that disagrees with a live wiki number overwrites that number via `player-characters`.
+**PC ingest:** Route `type: pc` through `player-characters` and `wiki/templates/pc.md` onto `wiki/entities/pc/<kebab-slug>.md`. Flatten archived satellites into canonical homes. Preserve `sources` lineage. A newer supplied source that disagrees with a live wiki number overwrites that number via `player-characters`. Omit internally contested numbers instead of printing `[verify]`. Do not duplicate `specs/020-pc-page-redesign/contracts/pc-page.md`. Never ingest a PC as `npc` with a pc tag.
 
 **Quality pass** by destination surface (load the skill; do not restate it):
 - DM-facing prose → `copy-writer` (complete-sentence, signal-dense; rewrite agent shorthand, fragments, and telegram stubs)

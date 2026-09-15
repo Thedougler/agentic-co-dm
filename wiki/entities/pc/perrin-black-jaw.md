@@ -79,8 +79,8 @@ foundry_id: J9CeWsMCOahlafjx
 Foundry Shattered-Sea actor `J9CeWsMCOahlafjx`, snapshot 2026-09-13.
 
 
-````col
-```col-md
+`````col
+````col-md
 ## Ability Scores
 
 | Ability | Score | Mod | Save |
@@ -93,8 +93,8 @@ Foundry Shattered-Sea actor `J9CeWsMCOahlafjx`, snapshot 2026-09-13.
 | Charisma | 20 | +5 | +8 |
 
 Dexterity and Charisma saves come from Bard, Wisdom and Charisma saves come from Warlock, and the Cloak of Protection adds `+1` to saves while worn.
-```
-```col-md
+````
+````col-md
 ## Skills
 
 | Skill | Bonus / proficiency |
@@ -110,8 +110,8 @@ Dexterity and Charisma saves come from Bard, Wisdom and Charisma saves come from
 | Jack of All Trades | `+1` on the remaining checks: Animal Handling `+1`, Athletics `-1`, Deception `+6`, Intimidation `+6`, Medicine `+1`, Nature `+1`, Performance `+6`, Religion `+1`, Sleight of Hand `+5`, and Survival `+1` |
 
 Passive Insight and Passive Investigation are `13`. Languages: Common, Skitter-cant.
-```
 ````
+````col-md
 
 ## Actions
 
@@ -248,6 +248,8 @@ Magical Cunning is a one-minute rite that regains up to one expended Pact Magic 
 | Bardic Inspiration | Bard | Grants a `1d6` die within `60 ft.`; the Bonus Action and shared Cutting Words pool are listed under Actions | `5` | Long Rest |
 | Cutting Words | College of Lore | Reaction spends Bardic Inspiration to subtract the die from an attack, check, or damage roll within `60 ft.` | Shares Inspiration | Long Rest |
 
+````
+`````
 
 ## Connections
 

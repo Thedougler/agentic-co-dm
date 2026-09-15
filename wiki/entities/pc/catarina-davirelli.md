@@ -90,8 +90,8 @@ Raiders kidnapped her as a child. Her father made a distraction, and she escaped
 
 
 
-````col
-```col-md
+`````col
+````col-md
 ## Ability Scores
 
 | Ability | Score | Mod | Save |
@@ -103,8 +103,8 @@ Raiders kidnapped her as a child. Her father made a distraction, and she escaped
 | [[wisdom\|Wisdom]] | 12 | +1 | +1 |
 | [[charisma\|Charisma]] | 10 | +0 | +0 |
 Saving throw proficiency is recorded for Constitution and Intelligence; Strength, Dexterity, Wisdom, and Charisma are not marked proficient.
-```
-```col-md
+````
+````col-md
 ## Skills
 
 Full proficiency: Arcana (INT) `+8`, Investigation (INT) `+8`, Insight (WIS) `+4`, Sleight of Hand (DEX) `+5`, and Persuasion (CHA) `+3`.
@@ -112,9 +112,9 @@ Full proficiency: Arcana (INT) `+8`, Investigation (INT) `+8`, Insight (WIS) `+4
 Untrained bonuses recorded on the sheet are Nature (INT) `+5`, Religion (INT) `+5`, and Deception (CHA) `+0`; all other skills use their ability modifier. Passive Insight is `14`, and Passive Investigation is `18`.
 
 Tool skills include woodcarver's tools and one other artisan's tool of choice. The sheet lists no separate armor, weapon, or language proficiencies beyond what class and equipped gear provide.
-```
 ````
 
+````col-md
 ## Actions
 
 ### Attacks
@@ -245,6 +245,8 @@ The sheet itemizes no species traits for her Variant Human heritage beyond the [
 | Feat | Source | Effect |
 | --- | --- | --- |
 | [[alert\|Alert]] | Variant Human | `+5` initiative; she cannot be surprised while conscious, and unseen attackers do not gain advantage against her. |
+````
+`````
 
 ## Connections
 

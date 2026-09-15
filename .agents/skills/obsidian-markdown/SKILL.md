@@ -227,7 +227,7 @@ flexGrow=2
 Parent fences need more backticks than children. `flexGrow` sets relative width. Headings may sit inside `col-md` so the title stays with its body in Reading view. Monster roster rows are two `![[Name#Statblock]]` columns max; extra monsters wrap to the next row. Other cockpit pairs are unaffected.
 
 Owner pages may still use callout `[!col]` when no `[!narration]` sits in the same row. Full pairing catalog: [references/COLUMNS.md](references/COLUMNS.md).
-PC owner pages: `player-characters` and `wiki/templates/pc.md`. Pair featured portrait with Identity when art exists; Combat Stats stays full-width. Pair Ability Scores with Skills.
+PC owner pages: `player-characters` and `wiki/templates/pc.md`. Pair featured portrait with Identity when art exists; Combat Stats stays full-width. Sheet row is three `col-md` children (Ability Scores | Skills | Actions/Spells/Inventory/Features stacked). Point at [references/COLUMNS.md](references/COLUMNS.md). Narration stays outside fences.
 
 
 ### Also supported (use when needed)
@@ -253,5 +253,5 @@ PC owner pages: `player-characters` and `wiki/templates/pc.md`. Pair featured po
 | `![](…)` / absolute disk paths for vault art | `![[attachments/…]]` / `[[attachments/…]]` |
 | Broken image wikilink | fix path or add file under `attachments/` |
 | `[!col]` / `[!col-md]` on a session/run card | `col` / `col-md` codeblock fences so `[!narration]` stays a callout |
-| `[!col]` for PC featured-portrait+Identity or Ability Scores+Skills | nested `col`/`col-md` codeblock fences; Combat Stats full-width; parent longer than children; narration stays outside fences |
+| `[!col]` for PC featured-portrait+Identity or the three-column sheet | nested `col`/`col-md` codeblock fences; Combat Stats full-width; parent longer than children; narration stays outside fences |
 

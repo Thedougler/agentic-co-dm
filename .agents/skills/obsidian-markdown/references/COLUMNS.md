@@ -209,12 +209,12 @@ Owner pages may use callout `[!col]` when the row has no spoken callout. Session
 
 ### PC owner pages (codeblock only)
 
-`type: pc` pages use nested `col` / `col-md` for these pairs. Parent fence has more backticks than children. Put each heading inside its child fence. Keep `[!narration]` outside fences. Do not use `[!col]` for these pairs. Headings and tables must read top-to-bottom when columns do not render.
+`type: pc` pages use nested `col` / `col-md` for these rows. Parent fence has more backticks than children. Put each heading inside its child fence. Keep `[!narration]` outside fences. Do not use `[!col]` for these PC rows. Headings and tables must read top-to-bottom when columns do not render. Column widths are CSS (`pc-sheet.css`), not markdown `flexGrow`, unless CSS cannot set them.
 
-| Pair | Left | Right |
-|---|---|---|
-| Header (when art exists) | featured portrait embed only (no extra H2) | `## Identity` |
-| Ability | `## Ability Scores` | `## Skills` |
+| Row | Layout |
+|---|---|
+| Header (when art exists) | featured portrait embed only (no extra H2) \| `## Identity` |
+| Sheet after Combat Stats | three `col-md` children: `## Ability Scores` \| `## Skills` \| stacked `## Actions`, `## Spells`, `## Inventory`, `## Features` |
 
-When no pictures exist, `## Identity` is full-width with no empty portrait column. `## Combat Stats` is full-width immediately after Identity. Keep `## Actions`, `## Spells`, `## Inventory`, `## Features`, `## Connections`, `## Stated Goals`, `## Session Log`, and leftover `## Art` full width. Do not pair Identity with Combat Stats. Do not pair Connections with Session Log.
+When no pictures exist, `## Identity` is full-width with no empty portrait column. `## Combat Stats` is full-width immediately after Identity. Keep `## Connections`, `## Stated Goals`, `## Session Log`, and leftover `## Art` full width. Do not pair Identity with Combat Stats. Do not pair Connections with Session Log. Do not keep Actions/Spells/Inventory/Features full-width.
 

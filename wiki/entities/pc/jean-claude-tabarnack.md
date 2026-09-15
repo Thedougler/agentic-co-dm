@@ -92,8 +92,8 @@ Dread Ambusher provides `3` Psychic riders per Long Rest, using Wisdom-modifier 
 
 
 
-````col
-```col-md
+`````col
+````col-md
 ## Ability Scores
 
 | Ability | Score | Mod | Save |
@@ -106,15 +106,15 @@ Dread Ambusher provides `3` Psychic riders per Long Rest, using Wisdom-modifier 
 | Charisma | `8` | `-1` | `-1` |
 
 Strength and Dexterity saving throws are proficient.
-```
-```col-md
+````
+````col-md
 ## Skills
 
 Proficient skills are Animal Handling `+6`, Athletics `+4`, Insight `+6`, Perception `+6`, Stealth `+10` (expertise), and Survival `+6`. Untrained skills are Acrobatics `+4`, Arcana `+0`, Deception `-1`, History `+0`, Intimidation `-1`, Investigation `+0`, Medicine `+3`, Nature `+0`, Performance `-1`, Persuasion `-1`, Religion `+0`, and Sleight of Hand `+4`.
 
 Tools: Cartographer's Tools and Poisoner's Kit from Poisonous Skin.
-```
 ````
+````col-md
 
 ## Actions
 
@@ -253,6 +253,8 @@ Wisdom is the casting ability. Spell save DC is `14`, and spell attack bonus is 
 | --- | --- | --- |
 | Magic Initiate (Druid) | Feat | Druidcraft and Mending cantrips; Jump is always prepared |
 
+````
+`````
 ## Connections
 
 | Tie | Table consequence |

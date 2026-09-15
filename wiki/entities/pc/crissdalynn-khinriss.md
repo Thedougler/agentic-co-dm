@@ -86,8 +86,8 @@ foundry_id: Qkd4lEumNtyDVUxD
 | Pressure / synergy | Ranged focus fire and Wisdom pressure on stuns or fear are soft counters; open vertical space supports seize-and-carry, and ally advantage such as [[catarina-davirelli\|Catarina]]'s Faerie Fire helps. |
 
 
-````col
-```col-md
+`````col
+````col-md
 ## Ability Scores
 
 | Ability | Score | Mod | Save |
@@ -100,8 +100,8 @@ foundry_id: Qkd4lEumNtyDVUxD
 | Charisma | 10 | +0 | +0 |
 
 Strength and Dexterity are the proficient saving throws. The proficiency bonus is +3.
-```
-```col-md
+````
+````col-md
 ## Skills
 
 | Skill | Bonus | Proficiency |
@@ -126,8 +126,8 @@ Strength and Dexterity are the proficient saving throws. The proficiency bonus i
 | Survival | +3 | Untrained |
 
 Passive Insight is 13 and passive Investigation is 13. Tools: Calligrapher's Supplies (Kensei) and Navigator's Tools (Sailor). Weapon proficiencies include Hand Crossbow, Scimitar, Shortsword, and Simple Weapons; no armor proficiency is listed. Languages are not recorded [unknown: `wiki/_archive/stats/crissdalynn-khinriss-stats.md`].
-```
 ````
+````col-md
 
 ## Actions
 
@@ -243,6 +243,8 @@ Carried weight is 68 lb. Encumbrance begins at 180 lb.; Push/Drag/Lift is 360 lb
 | [[grappler\|Grappler]] | ASI feat | Punch and Grab: an Attack-action Unarmed Strike hit also Grapples once per turn. Gain Advantage against creatures she has Grappled. Fast Wrestler removes extra movement cost when moving a Grappled creature her size or smaller. |
 | Tavern Brawler | Origin (Sailor) | Enhanced Unarmed Strike can deal `1d4 + 1` bludgeoning instead of normal damage; reroll a 1 on an Unarmed Strike damage die and use the new roll; proficiency with improvised weapons; an Unarmed Strike hit can Push the target 5 ft. once per turn. |
 
+````
+`````
 ## Connections
 
 | Tie | Table consequence |
