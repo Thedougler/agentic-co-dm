@@ -18,33 +18,26 @@ summary: ""
 
 # {{title}}
 
-> [!summary] Session Compass
-> **Opening situation:** One sentence describing what is already happening when play begins.
->
-> **Immediate pressure:** What demands attention now.
->
-> **Session question:** What consequential question might play answer?
->
-> **If the party does nothing:** What the situation naturally becomes.
->
-> **Now:** [[Session-{{session}}-01-Label]]
->
-> **On deck:** [[Session-{{session}}-02-Label]] · [[Session-{{session}}-03-Label]]
+
+**Opening situation:** One sentence describing what is already happening when play begins.
+**Immediate pressure:** What demands attention now.
+**Session question:** What consequential question might play answer?
+**If the party does nothing:** What the situation naturally becomes.
+
+**Now:** [[Session-{{session}}-01-Label]]
+**On deck:** [[Session-{{session}}-02-Label]] · [[Session-{{session}}-03-Label]]
 
 ## Beat Map
 
-> [!tip] Run the situation, not the order
-> Chart binds one Hook first, Developments and Cliffhangers only in alternating order, then one Climax followed by one Resolution. Trigger a beat when its situation becomes relevant. After play, skip, reorder, or replace middle beats when player choices change the fiction. Preserve consequences rather than forcing the next planned slot.
-
-|  # | Beat                               | Form                      | Trigger                                                                             | What changes                                                      | Hand-off / options                                      | Budget |
-| -: | ---------------------------------- | ------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------- | -----: |
-| 01 | [[Session-{{session}}-01-Label]]   | **Hook**                  | Play begins                                                                         | What immediately becomes true, urgent, or actionable?             | [[Session-{{session}}-02-Label]]                        |        |
-| 02 | [[Session-{{session}}-02-Label]]   | Development / Cliffhanger | What choice, location, discovery, or pressure brings this into play?                | Information, position, stakes, relationship, or resources change. | [[Session-{{session}}-03-Label]]                        |        |
-| 03 | [[Session-{{session}}-03-Label]]   | Cliffhanger / Development |                                                                                     |                                                                   |                                                         |        |
-| 04 | [[Session-{{session}}-04-Label]]   | Development / Cliffhanger |                                                                                     |                                                                   |                                                         |        |
-| 05 | [[Session-{{session}}-05-Label]]   | Cliffhanger / Development |                                                                                     |                                                                   |                                                         |        |
-| 06 | [[Session-{{session}}-06-Label]]   | **Climax**                | What circumstances make the decisive confrontation, choice, or revelation possible? | What major question is decided?                                   | [[Session-{{session}}-07-Label]]                        |        |
-| 07 | [[Session-{{session}}-07-Label]]   | **Resolution**            | The climax resolves                                                                 | Consequences become visible and a new situation exists.           | [[Next Session]] / player-selected direction            |        |
+|   # | Beat                             | Form                      | Trigger                                                                             | What changes                                                      | Hand-off / options                           |
+| --: | -------------------------------- | ------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------- | -------------------------------------------- |
+|  01 | [[Session-{{session}}-01-Label]] | **Hook**                  | Play begins                                                                         | What immediately becomes true, urgent, or actionable?             | [[Session-{{session}}-02-Label]]             |
+|  02 | [[Session-{{session}}-02-Label]] | Development / Cliffhanger | What choice, location, discovery, or pressure brings this into play?                | Information, position, stakes, relationship, or resources change. | [[Session-{{session}}-03-Label]]             |
+|  03 | [[Session-{{session}}-03-Label]] | Cliffhanger / Development |                                                                                     |                                                                   |                                              |
+|  04 | [[Session-{{session}}-04-Label]] | Development / Cliffhanger |                                                                                     |                                                                   |                                              |
+|  05 | [[Session-{{session}}-05-Label]] | Cliffhanger / Development |                                                                                     |                                                                   |                                              |
+|  06 | [[Session-{{session}}-06-Label]] | **Climax**                | What circumstances make the decisive confrontation, choice, or revelation possible? | What major question is decided?                                   | [[Session-{{session}}-07-Label]]             |
+|  07 | [[Session-{{session}}-07-Label]] | **Resolution**            | The climax resolves                                                                 | Consequences become visible and a new situation exists.           | [[Next Session]] / player-selected direction |
 
 ### Floating Beats
 
@@ -103,7 +96,7 @@ flexGrow=2
 
 ## Floating Secrets & Clues
 
-<!-- Keep these unattached until play tells you where they belong. Reveal them wherever the fiction makes sense. Carry forward only those that remain useful. -->
+<!-- Reveal them wherever the fiction makes sense. Carry forward only those that remain useful. -->
 
 - [ ] A short, actionable fact the characters can discover.
 - [ ] A fact that changes how the party understands the situation.
@@ -120,17 +113,6 @@ flexGrow=2
 | **Opposition**                 | [[Creature]] · [[Faction]] |
 | **Rewards / objects**          | [[Item]]                   |
 | **Rules / special procedures** | [[Reference]]              |
-
-> [!warning]- If play stalls
-> **Advance pressure.** Let the world act rather than waiting for the party.
->
-> **Surface information.** Reveal an unused clue through something the characters are already examining or interacting with.
->
-> **Offer a consequence, not a command.** Make the available choices and their stakes clearer.
->
-> **Use a floating Beat.** Bring in prepared pressure or opportunity that follows naturally from the current situation.
->
-> **Ask for intent.** Clarify what the characters are trying to accomplish, then adjudicate from there.
 
 ## Live Notes
 
@@ -152,7 +134,7 @@ flexGrow=2
 - [ ] [[Session-{{session}}-06-Label]]
 - [ ] [[Session-{{session}}-07-Label]]
 
-> [!check]- Prep Audit
+<!-- Prep Audit
 >
 > - [ ] The Hook creates immediate interest, pressure, or a meaningful decision.
 > - [ ] Every Beat has a **trigger** and a clear **change**; none depends on the players choosing a predetermined action.
@@ -164,16 +146,4 @@ flexGrow=2
 > - [ ] The Climax can be reached through more than one sequence of player choices.
 > - [ ] The Resolution follows the **actual outcome**, not the planned outcome.
 > - [ ] Every linked Beat contains only the information needed to run that Beat at the table.
-
-## After the Session
-
-> [!note] Carry Forward
-> **Actual ending:** What situation exists now?
->
-> **Unresolved pressure:** What continues moving?
->
-> **Unused but still relevant:** [[Beat]] · clue · NPC · consequence
->
-> **Players intend to:** Their stated next move, in their words when possible.
->
-> **Next opening:** [[Next Session]] — one sentence suggesting where play can resume.
+-->

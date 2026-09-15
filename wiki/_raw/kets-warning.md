@@ -24,7 +24,7 @@ tier: supporting
 ---
 # Ket's Warning
 
-![[murrats-shroud-kets-warning-narration-open]]
+![[entities/npc/murrats-shroud-kets-warning-narration-open]]
 
 ## Climax Question
 
@@ -32,7 +32,7 @@ Does the crew use Ket's one-turn window to flee, or does curiosity and conversat
 
 ## Situation Now
 
-Three to five hungry [[Moucheron]] detach from the cloud and fly toward the [[Uncertainty]], covering sixty feet per round in the air. Among them is [[Ket]], recognizable to any crew member who saw him in the cage aboard the Surety. He is not leading. He is flying with them.
+Three to five hungry [[entities/creature/Moucheron]] detach from the cloud and fly toward the [[entities/vehicle/Uncertainty]], covering sixty feet per round in the air. Among them is [[entities/npc/Ket]], recognizable to any crew member who saw him in the cage aboard the Surety. He is not leading. He is flying with them.
 
 Ket recognizes the ship. He shouts a warning to leave. Now.
 
@@ -42,8 +42,8 @@ Ket holds back one turn. If the crew uses that turn to flee, they escape. If the
 
 ## Player Gravity
 
-- [[jean-claude-tabarnack|Jean-Claude]] — the Moucheron he fed his own blood is telling him to run
-- [[crissdalynn-khinriss|Crissdalynn]] — the creature she shielded from [[perrin-black-jaw|Perrin]]'s blade is about to attack her
+- [[entities/pc/jean-claude-tabarnack|Jean-Claude]] — the Moucheron he fed his own blood is telling him to run
+- [[entities/pc/crissdalynn-khinriss|Crissdalynn]] — the creature she shielded from [[entities/pc/perrin-black-jaw|Perrin]]'s blade is about to attack her
 
 ## Stakes
 
@@ -53,8 +53,8 @@ Ket holds back one turn. If the crew uses that turn to flee, they escape. If the
 
 ## Actors in Motion
 
-- [[Moucheron|Moucheron greeting party]] — **Wants:** blood and the ship gone. **Doing:** attacking every warm-blooded creature on deck. **Changes if:** the ship turns and gains distance. They do not pursue past a few hundred feet.
-- [[Ket]] — **Wants:** the crew to leave before the island kills them. **Doing:** shouting a warning while hovering with the others. **Changes if:** one turn passes. He joins the attack regardless of whether the crew listened.
+- [[entities/creature/Moucheron|Moucheron greeting party]] — **Wants:** blood and the ship gone. **Doing:** attacking every warm-blooded creature on deck. **Changes if:** the ship turns and gains distance. They do not pursue past a few hundred feet.
+- [[entities/npc/Ket]] — **Wants:** the crew to leave before the island kills them. **Doing:** shouting a warning while hovering with the others. **Changes if:** one turn passes. He joins the attack regardless of whether the crew listened.
 - The cloud — **Wants:** the same thing the greeting party wants. **Doing:** circling the island. **Changes if:** the party defeats the first wave. More detach and arrive within rounds.
 
 ## Earned Leverage
@@ -83,7 +83,7 @@ Ket holds back one turn. If the crew uses that turn to flee, they escape. If the
 
 ## Environment
 
-Open water beside a reef island. The [[Uncertainty]]'s deck is the battlefield. The Moucheron fly at sixty feet. The crew cannot hide on an open deck. The reef ring has no marked safe passage, and maneuvering close to shore risks the hull.
+Open water beside a reef island. The [[entities/vehicle/Uncertainty]]'s deck is the battlefield. The Moucheron fly at sixty feet. The crew cannot hide on an open deck. The reef ring has no marked safe passage, and maneuvering close to shore risks the hull.
 
 ## Consequence Lattice
 

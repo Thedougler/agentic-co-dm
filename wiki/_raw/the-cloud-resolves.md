@@ -24,16 +24,16 @@ tier: supporting
 ---
 # The Cloud Resolves
 
-![[murrats-shroud-the-cloud-resolves-narration-open]]
+![[entities/npc/murrats-shroud-the-cloud-resolves-narration-open]]
 
 ## Hook
 
-A dark mass sits over [[Murrat]] like a storm front that never moves. From open water it reads as weather, low cloud, dense fog, dark enough to flatten the island's outline. As the [[Uncertainty]] closes distance, the sound arrives before the shape does. A drone that builds from below hearing into a physical pressure against the hull, something louder than wind or surf. The buzzing resolves into wings, millions of them. The cloud is alive.
+A dark mass sits over [[entities/place/Murrat]] like a storm front that never moves. From open water it reads as weather, low cloud, dense fog, dark enough to flatten the island's outline. As the [[entities/vehicle/Uncertainty]] closes distance, the sound arrives before the shape does. A drone that builds from below hearing into a physical pressure against the hull, something louder than wind or surf. The buzzing resolves into wings, millions of them. The cloud is alive.
 
 ## Player Gravity
 
-- [[jean-claude-tabarnack|Jean-Claude]] — fed [[Ket]] his own blood aboard the Surety, and this is where Ket flew home to
-- [[crissdalynn-khinriss|Crissdalynn]] — let Ket feed from her arm, and this is the island that made him
+- [[entities/pc/jean-claude-tabarnack|Jean-Claude]] — fed [[entities/npc/Ket]] his own blood aboard the Surety, and this is where Ket flew home to
+- [[entities/pc/crissdalynn-khinriss|Crissdalynn]] — let Ket feed from her arm, and this is the island that made him
 
 ## First Look
 
@@ -49,7 +49,7 @@ A dark mass sits over [[Murrat]] like a storm front that never moves. From open 
 ## Open Vectors
 
 - **Turn away:** the crew reads the warning and sails on; the island stays behind them
-- **Close further:** the buzzing intensifies; individual [[Moucheron]] become visible; the greeting party launches
+- **Close further:** the buzzing intensifies; individual [[entities/creature/Moucheron]] become visible; the greeting party launches
 - **Observe from distance:** spyglasses reveal Tiny winged shapes circling in the millions, and the crew learns what Murrat is without risking contact
 
 ## If Unanswered

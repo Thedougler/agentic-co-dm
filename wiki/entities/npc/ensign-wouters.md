@@ -38,7 +38,7 @@ tier: supporting
 
 **Role & Habits:** aboard the [[Uncertainty|HCS Surety]], he lived at the chart table, keeping logs and updating manifests while watching for navigation problems before they turned into crises. He always sounded sorry about it, as if the reef were his fault. When pressure came, he did paperwork. Not to calm down, but because that's how he thought. The paperwork was always right. He organized things before anyone asked, then got embarrassed when someone noticed.
 
-**Fate:** during the Session 02 boarding, Delmar fired through the ship's second gun port and hit him in the dark below. He did not survive. Confirmed in [[Recap]]: "Delmar fired through the second port and hit Ensign Wouters in the dark below." His body remained on deck long enough for [[Ket]] to feed on it before the crew opened Ket's cage. Never recruited.
+**Fate:** during the Session 02 boarding, Delmar fired through the ship's second gun port and hit him in the dark below. He did not survive. Confirmed in [[session-recap]]: "Delmar fired through the second port and hit Ensign Wouters in the dark below." His body remained on deck long enough for [[Ket]] to feed on it before the crew opened Ket's cage. Never recruited.
 
 ## Stats & Combat
 

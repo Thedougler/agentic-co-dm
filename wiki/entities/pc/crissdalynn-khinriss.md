@@ -73,18 +73,9 @@ foundry_id: Qkd4lEumNtyDVUxD
 `````
 ## Combat Stats
 
-| Stat | Value |
-| --- | --- |
-| AC | 17 (Unarmored Defense: 10 + 4 + 3); Agile Parry adds +2 AC when available. |
-| HP (current / max) | `33 / 33` plus 6 temporary HP |
-| Initiative | +4 |
-| Passive Perception | 16 |
-| Speed | 40 ft. walk; fly equal to walk while not in medium or heavy armor |
-| Resources | Focus Points `5` per short or long rest; save DC `14`; Martial Arts die `1d8`. |
-| Proficiency / Hit Die | Proficiency bonus +3; hit point die `d8`. |
-| Defenses / constraints | Strength and Dexterity saves are proficient; no damage resistances are recorded. Charisma and Intelligence saves are +0, while low ceilings, wind, and nets can deny flight. |
-| Pressure / synergy | Ranged focus fire and Wisdom pressure on stuns or fear are soft counters; open vertical space supports seize-and-carry, and ally advantage such as [[catarina-davirelli\|Catarina]]'s Faerie Fire helps. |
-
+| AC  | HP (current / max) | Initiative | Speed            |
+| --- | ------------------ | ---------- | ---------------- |
+| 17  | 33 / 33            | +4         | 40 ft, 40 ft fly |
 
 `````col
 ````col-md
@@ -100,8 +91,7 @@ foundry_id: Qkd4lEumNtyDVUxD
 | Charisma | 10 | +0 | +0 |
 
 Strength and Dexterity are the proficient saving throws. The proficiency bonus is +3.
-````
-````col-md
+
 ## Skills
 
 | Skill | Bonus | Proficiency |
