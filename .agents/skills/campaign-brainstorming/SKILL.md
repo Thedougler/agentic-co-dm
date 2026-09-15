@@ -23,14 +23,18 @@ path if they want to lock the idea.
 
 1. Name the current spark in one sentence: what the DM is trying to explore,
    not a recap of everything said.
-2. Offer 3-5 fresh additions. Mix concrete nouns with play pressure: a named
+2. Load `wiki-query` on that spark and on names you are about to offer
+   (people, places, factions, items, claims). Wiki hits are canon; cite
+   `[[pages]]`. Show the DM any contradiction. If the wiki is silent, invent
+   and flag. Complete when every name in this turn's riffs has been queried.
+3. Offer 3-5 fresh additions. Mix concrete nouns with play pressure: a named
    person, a location detail, a faction move, a cost, a clue, a twist, or a
-   visual.
-3. Keep one open question only when a DM choice would meaningfully fork the
+   visual. Ground wiki hits; flag invention.
+4. Keep one open question only when a DM choice would meaningfully fork the
    brainstorm. Otherwise keep adding.
-4. Track promising fragments as **parking-lot** bullets when they appear.
+5. Track promising fragments as **parking-lot** bullets when they appear.
    Parking-lot bullets are seeds, not canon.
-5. When the DM wants commitment, hand off:
+6. When the DM wants commitment, hand off:
    - `campaign-planning` for anchors, seasons, horizon, or campaign contract.
    - `session-beats` for Beat Chart composition or production session prep.
    - `sandbox-narrative` for agency audit of a situation that feels scripted.
@@ -41,8 +45,7 @@ path if they want to lock the idea.
   narration, or Foundry staging during the jam.
 - Add material instead of interviewing. Use questions sparingly and only to
   choose between meaningful branches.
-- Mark invention plainly. Treat wiki facts as facts only when retrieved and
-  cited.
+- Mark invention plainly. Wiki facts come from `wiki-query`, cited.
 - Do not chain-load `grilling`.
 
 ## Craft Inputs
