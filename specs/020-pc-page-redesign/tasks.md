@@ -13,7 +13,7 @@ description: "Task list for the PC Page Redesign feature"
 
 **Organization**: Tasks are grouped by user story so each increment has a clear owner, dependency, and independent acceptance check.
 
-**Writer**: `.agents/skills/player-characters/SKILL.md` (new) and `wiki/templates/pc.md` (rewrite) are design-impact. `/speckit.implement` dispatches the designated writer per `docs/agents/skill-design-dispatch.md` with a scoped prompt (outcome, files, bounds, job) and `writing-for-agents`. Session agent writes the fixture spine update, `wiki/AGENTS.md`, pointer edits, and the five owner pages. Session agent MUST NOT write the skill or template while a designated writer is usable.
+**Writer**: Remaining design-impact work is the template and skill follow-through for FR-021–023: `wiki/templates/pc.md` and `.agents/skills/player-characters/SKILL.md`. `/speckit.implement` dispatches the designated writer per `docs/agents/skill-design-dispatch.md` with a scoped prompt (outcome, files, bounds, job) and `writing-for-agents`. Session agent writes the fixture update, CSS snippet, `wiki/AGENTS.md`, pointer edits, and the five owner reconforms. Session agent MUST NOT write the skill or template while a designated writer is usable. T001–T024 already landed the first-pass D&D Beyond sheet.
 
 ## Format: `[ID] [P?] [Story] Description`
 
@@ -27,11 +27,12 @@ description: "Task list for the PC Page Redesign feature"
 - Template: `wiki/templates/pc.md`
 - Live owners: `wiki/entities/pc/{jean-claude-tabarnack,perrin-black-jaw,catarina-davirelli,crissdalynn-khinriss,delmar-fisk}.md`
 - Governing wiki: `wiki/AGENTS.md`
-- Pointers: `.agents/skills/npc-design/SKILL.md`, `.agents/skills/pc-interview/SKILL.md`, `.agents/skills/wiki-ingest/SKILL.md`, `.agents/skills/reconciling-session-evidence/SKILL.md`, `.agents/skills/obsidian-markdown/SKILL.md`, `.agents/skills/obsidian-markdown/references/COLUMNS.md`
+- Pointers: `.agents/skills/npc-design/SKILL.md`, `.agents/skills/pc-interview/SKILL.md`, `.agents/skills/wiki-ingest/SKILL.md`, `.agents/skills/reconciling-session-evidence/SKILL.md`, `.agents/skills/obsidian-markdown/SKILL.md`, `.agents/skills/obsidian-markdown/references/COLUMNS.md`, `.agents/skills/session-beats/SKILL.md`, `.agents/skills/run-guide/SKILL.md`
 - Contract: `specs/020-pc-page-redesign/contracts/pc-page.md`
 - Fixture: `specs/020-pc-page-redesign/fixtures/check.py`
+- CSS: `wiki/.obsidian/snippets/ttrpg-styles.css`, `wiki/.obsidian/snippets/wide-note-surface.css`, `wiki/.obsidian/snippets/pc-sheet.css`
 - Archive evidence: `wiki/_archive/` (immutable; not a second live PC page)
-- Do not add a PDF parser, database, Foundry client, `pc-design` skill, extra `type`, or visual clone of D&D Beyond chrome
+- Do not add a PDF parser, database, Foundry client, `pc-design` skill, extra `type`, decorative PC theme, or visual clone of D&D Beyond chrome
 
 ---
 
@@ -146,96 +147,181 @@ description: "Task list for the PC Page Redesign feature"
 
 ---
 
+## Phase 8: Foundational update (FR-021–023)
+
+**Purpose**: Make the clarified contract executable. T001–T024 landed Identity+Combat Stats pairing. Remaining story work MUST NOT start until this fixture fails the old pair and requires portrait+Identity, optional Stated Goals, leftover `Art`, and `cssclasses` containing `pc-sheet`.
+
+**⚠️ CRITICAL**: T025 BLOCKS T026–T038.
+
+- [ ] T025 Update observable PC contract assertions in `specs/020-pc-page-redesign/fixtures/check.py` for `wiki/templates/pc.md` and the five owners under `wiki/entities/pc/`: required frontmatter `cssclasses` ("Must include `pc-sheet` so PC-only CSS tweaks apply. Not a campaign fact."); D&D Beyond spine `Identity`, `Combat Stats`, `Ability Scores`, `Skills`, `Actions`, conditional `Spells`, `Inventory`, `Features`, `Connections`, conditional `Stated Goals`, `Session Log`, `Art`; featured portrait + `Identity` nested `col`/`col-md` pair when art exists (left child embed only, no extra H2; right child `## Identity`); `Identity` full-width when no pictures exist; no empty portrait column; `Combat Stats` full-width after Identity; forbid pairing `Identity` with `Combat Stats`; keep `Ability Scores`+`Skills` pair; omit empty optional `Stated Goals` and leftover-only `Art`; parent fence longer than children; no `[!col]`
+
+**Checkpoint**: `specs/020-pc-page-redesign/fixtures/check.py` fails on the current Identity+Combat Stats pair and on missing `pc-sheet` cssclass.
+
+---
+
+## Phase 9: User Story 1 follow-through - scan surface (Priority: P1)
+
+**Goal**: Template and vault CSS match the locked header: featured portrait beside Identity, Combat Stats full-width, PC-page scan tweaks without a decorative theme.
+
+**Independent Test**: Copy-start from `wiki/templates/pc.md`. With a sample portrait embed, the portrait sits beside Identity and Combat Stats is below. With no art, Identity is full-width. Vault CSS still applies; `.pc-sheet` tweaks exist without cards or D&D Beyond chrome.
+
+### Implementation for User Story 1 follow-through
+
+- [ ] T026 [US1] Dispatch the designated writer per `docs/agents/skill-design-dispatch.md` to rewrite `wiki/templates/pc.md` against `specs/020-pc-page-redesign/contracts/pc-page.md`; instruct the writer to follow `.agents/skills/writing-for-agents`; session agent does not write that file. Outcome: frontmatter includes `cssclasses` ("Must include `pc-sheet` so PC-only CSS tweaks apply. Not a campaign fact."); after `[!narration]`, featured portrait + `## Identity` pair when art exists; `## Combat Stats` full-width; `Ability Scores`+`Skills` pair unchanged; campaign extras `Connections`, conditional `Stated Goals`, `Session Log`, leftover `Art`; omit empty optional sections; no Identity+Combat Stats pair; no decorative chrome
+- [ ] T027 [P] [US1] Using `.agents/skills/obsidian-layout-adjustment/SKILL.md`, add PC-page scan tweaks in `wiki/.obsidian/snippets/pc-sheet.css` scoped to `.pc-sheet` (featured-portrait size, Identity/Ability column widths, heading density); keep vault-wide defaults in `wiki/.obsidian/snippets/ttrpg-styles.css` and `wiki/.obsidian/snippets/wide-note-surface.css`; MUST NOT add a distinct decorative theme, cards, site colors, or D&D Beyond chrome
+
+**Checkpoint**: The template is the clarified scan surface. Live owners still fail the fixture until Phase 11.
+
+---
+
+## Phase 10: User Story 2 follow-through - record art and goals (Priority: P2)
+
+**Goal**: `player-characters` records featured portrait / leftover art and transcript-only Stated Goals, and refreshes goals after sessions that included that player.
+
+**Independent Test**: With a transcript where the player stated a goal in or out of character, the skill adds `## Stated Goals` citing that session and does not add summary-only or inferred goals. After a session that did not include the player, Stated Goals is unchanged. Art: one picture is the featured portrait; leftovers only in `## Art`.
+
+### Implementation for User Story 2 follow-through
+
+- [ ] T028 [US2] Dispatch the designated writer per `docs/agents/skill-design-dispatch.md` to update `.agents/skills/player-characters/SKILL.md`; instruct the writer to follow `.agents/skills/writing-for-agents`; session agent does not write that file. Outcome: point at `specs/020-pc-page-redesign/contracts/pc-page.md` instead of cloning it; state idle → record ("source supplied for a player-created character") → refresh-goals ("post-session transcript for a player who was in that session") → refuse ("no source, or a request to invent/generate/prescribe, or inventing goals"); featured portrait + Identity when pictures exist; additional pictures MAY sit next to the section they illustrate; leftover pictures only in `## Art`; Stated Goals lists only goals the player clearly stated in a game-session transcript, in character or out of character; session summary MAY locate or paraphrase and MUST NOT be the sole source; omit Stated Goals when none exist; after every session that included that player, add newly stated goals and remove a goal only if the player said it is done or abandoned; silence is not abandonment
+- [ ] T029 [P] [US2] Update the PC layout row in `wiki/AGENTS.md`: spine is featured portrait + Identity when art exists, Combat Stats full-width, Ability Scores, Skills, Actions, conditional Spells, Inventory, Features, Connections, conditional Stated Goals, Session Log, leftover Art; `cssclasses` must include `pc-sheet`; wiki-kind route remains `player-characters`
+
+**Checkpoint**: The skill and wiki-kind row describe art placement and transcript-only Stated Goals refresh.
+
+---
+
+## Phase 11: User Story 3 follow-through - conform live owners (Priority: P3)
+
+**Goal**: Five live PC owners use the clarified spine, `cssclasses` containing `pc-sheet`, featured portrait when art exists, leftover `Art` only, and transcript-only Stated Goals (omit when none), without changing campaign facts.
+
+**Independent Test**: Each owner has `cssclasses` including `pc-sheet`. If the page has pictures, one featured portrait is paired with Identity and leftovers are only in `## Art` (omit `Art` when none remain). `## Stated Goals` is present only for transcript-supported player statements. Structure-only pass does not overwrite numbers or lifecycle.
+
+### Implementation for User Story 3 follow-through
+
+- [ ] T030 [P] [US3] Reconform `wiki/entities/pc/jean-claude-tabarnack.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md`: set `cssclasses` ("Must include `pc-sheet` so PC-only CSS tweaks apply. Not a campaign fact."); pair one featured portrait with Identity when pictures exist; leftover pictures only in `## Art`; add `## Stated Goals` only for transcript-supported player statements (in or out of character) citing session; omit Stated Goals and Art when empty; preserve `lifecycle` ("Existing value; structure-only conformance does not change it."), `reveal` ("Existing value; structure-only conformance does not change it."), `campaign` / `visibility`, aliases, sources, player handle ("Player handle only; never real-player PII."), and `status` ("Existing character status; do not infer a change."); do not overwrite numbers
+- [ ] T031 [P] [US3] Reconform `wiki/entities/pc/perrin-black-jaw.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same `cssclasses`, portrait/Art, Stated Goals, preservation, and omission rules as T030
+- [ ] T032 [P] [US3] Reconform `wiki/entities/pc/catarina-davirelli.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same `cssclasses`, portrait/Art, Stated Goals, preservation, and omission rules as T030
+- [ ] T033 [P] [US3] Reconform `wiki/entities/pc/crissdalynn-khinriss.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same `cssclasses`, portrait/Art, Stated Goals, preservation, and omission rules as T030
+- [ ] T034 [P] [US3] Reconform `wiki/entities/pc/delmar-fisk.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same `cssclasses`, portrait/Art, Stated Goals, preservation, and omission rules as T030; keep `Spells` omitted (non-caster)
+
+**Checkpoint**: All five live owners pass the clarified fixture assertions without canon loss.
+
+---
+
+## Phase 12: User Story 4 follow-through - workflows (Priority: P4)
+
+**Goal**: Columns guidance, session evidence, and session planning agree on portrait+Identity, leftover Art, and transcript-only Stated Goals. Planning reads goals; it does not write the PC page.
+
+**Independent Test**: Trace `.agents/skills/obsidian-markdown/references/COLUMNS.md`, `.agents/skills/reconciling-session-evidence/SKILL.md`, `.agents/skills/session-beats/SKILL.md`, and `.agents/skills/run-guide/SKILL.md`. Confirm portrait+Identity pair, no Identity+Combat Stats pair, Stated Goals refresh routed through `player-characters`, and planning reads Stated Goals when the player is in the session.
+
+### Implementation for User Story 4 follow-through
+
+- [ ] T035 [P] [US4] Update `.agents/skills/obsidian-markdown/references/COLUMNS.md` with the PC-only nested `col`/`col-md` pairs (featured portrait+Identity when art exists, Ability Scores+Skills), Combat Stats full-width, longer parent fence, headings/tables as linear fallback, narration outside fences, prohibition on `[!col]` for those PC pairs, and full-width Connections / Stated Goals / Session Log / Art
+- [ ] T036 [P] [US4] Update `.agents/skills/reconciling-session-evidence/SKILL.md` so post-session Stated Goals refresh for PCs who were in that session routes through `player-characters`; do not invent goals; do not refresh a PC who was not in the session; preserve `lifecycle` / `reveal` / `visibility`
+- [ ] T037 [P] [US4] Update `.agents/skills/session-beats/SKILL.md` so session planning that includes a player MUST read that PC's `## Stated Goals` when present and MUST NOT write the PC owner page
+- [ ] T038 [P] [US4] Update `.agents/skills/run-guide/SKILL.md` so a run guide that includes a player MUST read that PC's `## Stated Goals` when present and MUST NOT write the PC owner page
+
+**Checkpoint**: Columns, reconciliation, and planning converge on the clarified contract.
+
+---
+
+## Phase 13: Polish follow-through
+
+**Purpose**: Re-run quickstart checks for the clarified contract.
+
+- [ ] T039 Run `.venv/bin/python specs/020-pc-page-redesign/fixtures/check.py` against `wiki/templates/pc.md` and `wiki/entities/pc/`; require exit `0`
+- [ ] T040 [P] Run `./scripts/lint-wiki-write --path wiki/entities/pc` against all five owners; require exit `0`
+- [ ] T041 [P] Run `./scripts/lint-obsidian-markdown --strict --path wiki/entities/pc` against all five owners; require exit `0`
+- [ ] T042 Confirm `wiki/.obsidian/snippets/pc-sheet.css` exists and is scoped to `.pc-sheet`, vault snippets `wiki/.obsidian/snippets/ttrpg-styles.css` and `wiki/.obsidian/snippets/wide-note-surface.css` remain, and each live PC has `cssclasses` containing `pc-sheet`
+- [ ] T043 Perform an Obsidian Reading-view review of the five owners: featured portrait beside Identity when art exists, Combat Stats full-width, Ability Scores/Skills paired, vault CSS plus PC scan tweaks without a decorative theme, Stated Goals only when transcript-supported, leftover Art only at the bottom
+- [ ] T044 Confirm the negatives in `.agents/skills/player-characters/SKILL.md`: no source / invent PC / generate stats / write actions / invent goals → refuse; summary-only goal is not filed; a session that did not include the player does not refresh that PC's Stated Goals
+
+
+---
+
 ## Dependencies & Execution Order
 
 ### Phase Dependencies
 
 - **Setup (Phase 1)**: T001 already landed the checker entrypoint
-- **Foundational (Phase 2)**: T002 depends on T001 and BLOCKS all user stories
-- **User Story 1 (Phase 3)**: Depends on T002; designated-writer template rewrite
-- **User Story 2 (Phase 4)**: Depends on User Story 1 so the skill can point at the redesigned template
-- **User Story 3 (Phase 5)**: Depends on User Stories 1 and 2; owner conformance uses the final template, skill, and `wiki/AGENTS.md` rules
-- **User Story 4 (Phase 6)**: Depends on User Story 2; pointer files are independent of one another and can run alongside User Story 3
-- **Polish (Phase 7)**: Depends on all desired story work; T017 before treating the page contract as complete
+- **Foundational (Phase 2)**: T002 already landed; BLOCKED first-pass stories
+- **User Stories 1–4 and Polish (Phases 3–7)**: T003–T024 already landed the first-pass D&D Beyond sheet
+- **Foundational update (Phase 8)**: T025 depends on T001 and BLOCKS T026–T038
+- **US1 follow-through (Phase 9)**: Depends on T025; T026 and T027 are different files
+- **US2 follow-through (Phase 10)**: Depends on T026 so the skill can point at the clarified template
+- **US3 follow-through (Phase 11)**: Depends on T026–T029; five owner files are independent
+- **US4 follow-through (Phase 12)**: Depends on T028; T035–T038 are independent of one another and of US3
+- **Polish follow-through (Phase 13)**: Depends on T026–T038; T039 before treating the clarified contract as complete
 
 ### User Story Dependencies
 
-- **User Story 1 (P1)**: After Foundational only. MVP template increment
-- **User Story 2 (P2)**: After User Story 1. Skill + npc-design exclusion + wiki-kind routing
-- **User Story 3 (P3)**: After User Stories 1 and 2. Each owner file is independent after the contract is fixed
-- **User Story 4 (P4)**: After User Story 2. Workflow files are independent of one another and of US3
+- **User Story 1 (P1)**: First-pass done. Follow-through after T025
+- **User Story 2 (P2)**: Follow-through after US1 follow-through template
+- **User Story 3 (P3)**: Follow-through after US1–US2 follow-through. Each owner file is independent
+- **User Story 4 (P4)**: Follow-through after US2 follow-through. Workflow files are independent of US3
 
 ### Within Each User Story
 
-- User Story 1: one designated-writer rewrite of `wiki/templates/pc.md`
-- User Story 2: designated-writer skill, then session-agent pointers in `npc-design` and `wiki/AGENTS.md`
-- User Story 3: preserve each owner's metadata and facts before flattening satellites; then validate each owner against the checker
-- User Story 4: point each workflow at the canonical contract; do not copy the contract into every skill
+- User Story 1 follow-through: designated-writer template, then CSS snippet on a different file
+- User Story 2 follow-through: designated-writer skill, then `wiki/AGENTS.md`
+- User Story 3 follow-through: preserve metadata; then portrait/Art/Stated Goals/`cssclasses`
+- User Story 4 follow-through: point each workflow at the contract; do not copy the contract into every skill
 
 ### Parallel Opportunities
 
-- T005 and T006 after T004 (different files)
-- T007–T011 after User Stories 1–2 (five owner files)
-- T012–T016 after User Story 2 (five guidance files)
-- User Story 3 and User Story 4 in parallel after User Story 2, one writer per file
-- T018 and T019 after source edits; T017 before claiming the contract complete
+- T026 and T027 after T025 (template vs CSS snippet)
+- T029 after T028 (`wiki/AGENTS.md`)
+- T030–T034 after T026–T029 (five owner files)
+- T035–T038 after T028 (four guidance files)
+- T040 and T041 after source edits; T039 before claiming the clarified contract complete
 
 ---
 
-## Parallel Example: User Story 2 pointers
+## Parallel Example: User Story 3 follow-through
 
 ```text
-Task: "Hard-route player-character builds from .agents/skills/npc-design/SKILL.md to player-characters"
-Task: "Update PC layout row and wiki-kind routing in wiki/AGENTS.md"
+Task: "Reconform wiki/entities/pc/jean-claude-tabarnack.md"
+Task: "Reconform wiki/entities/pc/perrin-black-jaw.md"
+Task: "Reconform wiki/entities/pc/catarina-davirelli.md"
+Task: "Reconform wiki/entities/pc/crissdalynn-khinriss.md"
+Task: "Reconform wiki/entities/pc/delmar-fisk.md"
 ```
 
-## Parallel Example: User Story 3
+## Parallel Example: User Story 4 follow-through
 
 ```text
-Task: "Conform wiki/entities/pc/jean-claude-tabarnack.md"
-Task: "Conform wiki/entities/pc/perrin-black-jaw.md"
-Task: "Conform wiki/entities/pc/catarina-davirelli.md"
-Task: "Conform wiki/entities/pc/crissdalynn-khinriss.md"
-Task: "Conform wiki/entities/pc/delmar-fisk.md"
-```
-
-## Parallel Example: User Story 4
-
-```text
-Task: "Update .agents/skills/pc-interview/SKILL.md"
-Task: "Update .agents/skills/wiki-ingest/SKILL.md"
-Task: "Update .agents/skills/reconciling-session-evidence/SKILL.md"
-Task: "Update .agents/skills/obsidian-markdown/SKILL.md"
 Task: "Update .agents/skills/obsidian-markdown/references/COLUMNS.md"
+Task: "Update .agents/skills/reconciling-session-evidence/SKILL.md"
+Task: "Update .agents/skills/session-beats/SKILL.md"
+Task: "Update .agents/skills/run-guide/SKILL.md"
 ```
 
 ---
 
 ## Implementation Strategy
 
-### MVP First (User Story 1 Only)
+### MVP remaining (User Story 1 follow-through)
 
-1. Complete Phase 1: Setup
-2. Complete Phase 2: Foundational checker (must fail on the old spine)
-3. Complete Phase 3: User Story 1 template rewrite (designated writer)
-4. Stop and inspect `wiki/templates/pc.md` against the Independent Test
-5. Do not claim live-party conformance until User Story 3
+1. Complete Phase 8: T025 fixture must fail the old Identity+Combat Stats pair
+2. Complete Phase 9: T026 template (designated writer) and T027 `pc-sheet.css`
+3. Stop and inspect `wiki/templates/pc.md` against the Independent Test
+4. Do not claim live-party conformance until Phase 11
 
 ### Incremental Delivery
 
-1. Setup + Foundational → executable D&D Beyond contract
-2. Add User Story 1 → canonical template MVP
-3. Add User Story 2 → record-only skill, npc-design exclusion, wiki-kind routing
-4. Add User Story 3 → five live owners conformed without canon loss
-5. Add User Story 4 → interview/ingest/reconcile/Markdown converge
-6. Run Phase 7 → fixture, lint, schema, Reading-view, timed-reference, recording, refuse-to-generate
+1. T001–T024 already delivered the first-pass sheet
+2. T025 → executable clarified contract
+3. T026–T027 → template + PC CSS
+4. T028–T029 → skill + wiki-kind row
+5. T030–T034 → five live owners
+6. T035–T038 → columns, reconcile, planning reads
+7. T039–T044 → fixture, lint, CSS files, Reading-view, refuse-to-invent-goals
 
 ### Dispatch
 
-- T003: designated writer only. Target `wiki/templates/pc.md`. Session agent writes the scoped prompt, leaves the template unmodified, then invokes `claude -p --model claude-opus-4-6 --effort medium`
-- T004: designated writer only. Target `.agents/skills/player-characters/SKILL.md`. Same dispatch. Do not overlap T003 and T004 on the same writer instance if they would share a workspace
-- T005–T016 and T002: session agent
-- On usage-limit wait: leave T003/T004 incomplete on this file with a retry time; complete independent session-agent tasks that do not depend on them; do not write the skill or template in-session unless both designated writers are usage-limited
+- T026: designated writer only. Target `wiki/templates/pc.md`. Session agent writes the scoped prompt, leaves the template unmodified, then invokes `claude -p --model claude-opus-4-6 --effort medium`
+- T028: designated writer only. Target `.agents/skills/player-characters/SKILL.md`. Same dispatch. Do not overlap T026 and T028 on the same writer instance if they would share a workspace
+- T025, T027, T029–T044: session agent
+- On usage-limit wait: leave T026/T028 incomplete on this file with a retry time; complete independent session-agent tasks that do not depend on them; do not write the skill or template in-session unless both designated writers are usage-limited
 
 ---
 
@@ -243,7 +329,8 @@ Task: "Update .agents/skills/obsidian-markdown/references/COLUMNS.md"
 
 - `[P]` marks tasks that touch different files and have no incomplete dependency
 - `[US#]` labels map implementation work to the prioritized stories in `spec.md`
-- Data-model constraints are quoted in T002–T004 and T007–T011
+- Data-model constraints are quoted in T025–T026 and T030–T034
 - Structure-only conformance preserves facts and campaign state; a newer supplied source overwrites conflicting wiki numbers; unresolved internal conflicts stay `[verify]`
-- Existing Markdown, lint, Obsidian Columns, Python 3, and Foundry MCP stay in place; no new parser, database, or `pc-design` skill
+- Stated Goals are transcript-only; session summaries are backup; silence is not abandonment
+- Existing Markdown, lint, Obsidian Columns, Python 3, Foundry MCP, and vault snippets stay in place; no new parser, database, `pc-design` skill, or decorative PC theme
 - Stop at any checkpoint to validate the story independently
