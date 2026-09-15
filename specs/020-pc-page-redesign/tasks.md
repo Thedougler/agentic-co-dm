@@ -342,3 +342,10 @@ Task: "Update .agents/skills/run-guide/SKILL.md"
 - [ ] T047 Move `type: pc` ingest routing in `.agents/skills/wiki-ingest/SKILL.md` out of the Preserve GUARD onto the general ingest path, include `pc` in the campaign type list, and except PC number conflicts so a newer supplied source overwrites via `player-characters` per FR-016, FR-020, T013 (partial)
 - [ ] T048 Remove Ranger spell slot counts from Combat Stats on `wiki/entities/pc/jean-claude-tabarnack.md` so caster pools live only in Spells per US1/AC4, FR-006 (partial)
 - [ ] T049 Rewrite the Work-gate invention sentence in `.agents/skills/pc-interview/SKILL.md` so it cannot require inventing combat math or player choices when the wiki lacks a fact per T012, FR-016, US2/AC5 (contradicts)
+
+## Phase 15: Convergence
+
+- [ ] T050 Restore dropped frontmatter aliases on `wiki/entities/pc/jean-claude-tabarnack.md` (`JC`, `Jumpy Don't Touch`, `Sticky Tongue Death Skin`, `Hopstradamus`), `wiki/entities/pc/perrin-black-jaw.md` (`Perrin`), `wiki/entities/pc/catarina-davirelli.md` (`Da'Virelli`, `Catarina`, `Caterina Da Virelle`, `Catarina Da Vrelle`), and `wiki/entities/pc/delmar-fisk.md` (`Delmar Atticus Fisk`) without renaming kebab titles or H1s per FR-014, SC-003, US3/AC3 (missing)
+- [ ] T051 Relink in-vault owners: `wiki/entities/pc/jean-claude-tabarnack.md` `[[boots-of-flying]]` → `[[flying-boots]]`; `wiki/entities/pc/delmar-fisk.md` bare Cloak of the Manta Ray → `[[delmars-cloak-of-the-manta-ray]]` per FR-011, FR-018, US2/AC3 (missing)
+- [ ] T052 Restore omitted archive satellite paths on `wiki/entities/pc/perrin-black-jaw.md` and `wiki/entities/pc/crissdalynn-khinriss.md` `sources` (abilities, stats, character-sheets, inventory, spells, galleries; Perrin also va-script) per FR-014, SC-003 (missing)
+- [ ] T053 Flatten dropped Delmar archive facts into canonical homes on `wiki/entities/pc/delmar-fisk.md`: Session Log 01–04, 07, 08; five captains and fleet; Pearl theft; childhood wreck; mother's watch; Maggie; Serafina; keep DM answers in secrets, not Stated Goals unless a transcript supports them per FR-014, FR-022, SC-003, US3/AC2 (missing)
