@@ -1,18 +1,16 @@
 <!--
 Sync Impact Report
-- Version change: 2.0.0 → 2.0.1
+- Version change: 2.0.1 → 2.1.0
 - Modified principles:
-  - IX Design Trends Toward Token Efficiency (quality bar: no craft cuts)
-  - X Agents Act Autonomously By Default (branch only at specify)
+  - IX Design Trends Toward Token Efficiency (duplication points at XVII)
 - Added principles:
-  - XV. Wiki Page Filenames Are Kebab Slugs
-  - XVI. Named Owners Before Spoken Work (no visibility frontmatter)
+  - XVII. Agent-Facing Text Is DRY
 - Added sections: none
 - Removed sections: none
 - Other modified sections:
-  - Agent Operating Constraints (opus only for skills, agent instructions, templates)
-  - Development Workflow (review checks for IX/XV/XVI)
-  - Governance (compliance bullets for IX/XV/XVI; branch only at specify)
+  - Agent Operating Constraints (DRY default for agent-consumed docs)
+  - Development Workflow (review check for XVII)
+  - Governance (compliance reject for non-DRY agent-facing copies)
 - Follow-up TODOs: none
 -->
 
@@ -137,7 +135,7 @@ MUST trend toward fewer tokens for the same outcome. Standing context MUST
 be load-bearing. Skills MUST use progressive disclosure; the environment
 is truth. A change that increases tokens an agent must read or emit to
 complete the same task MUST be justified by a named failure it prevents.
-Duplicating guidance that already lives in one source of truth is a defect.
+Duplicating guidance is a defect (see XVII).
 
 A change MUST NOT count as an improvement if it lowers token cost by
 lowering Work quality, narrative, mechanics, or agent instruction quality.
@@ -318,14 +316,36 @@ A missing wiki fact MUST NOT prevent playable Work except these two gates.
 Rationale: the DM cannot run what does not exist, and cannot decode coy
 agent writing at the table.
 
+### XVII. Agent-Facing Text Is DRY
+
+Text intended for agents to read — skills, agent instructions
+(`AGENTS.md` and equivalents), this constitution, templates, CLIs,
+errors, and any other agent-consumed content — MUST be DRY by default.
+
+A fact, rule, or procedure MUST have one owner. Other agent-facing text
+MUST point to that owner. It MUST NOT copy, restate, or paraphrase the
+same guidance. Duplicating a source of truth into a second agent-facing
+file so the agent "sees it here too" is a defect.
+
+DRY MUST NOT delete craft, narrative, mechanics, or independently
+testable acceptance (see IX). Player-facing and DM-facing Work have
+different readers; they are not this principle.
+
+A local restatement MUST name the failure it prevents. Silence is not
+an exception.
+
+Rationale: two copies drift. Agents follow the nearest copy. Tokens
+spent repeating a loaded rule are cost without signal.
+
 ## Agent Operating Constraints
 
 - Runtime guidance for agents is `AGENTS.md`. Skills MUST follow
   `docs/agents/issue-tracker.md`, `docs/agents/triage-labels.md`, and
   `docs/agents/domain.md`.
-- Skills, `AGENTS.md`, and other agent-consumed docs MUST follow
-  `.agents/skills/writing-for-agents` and MUST stay as short as the
-  named failure they prevent.
+- Skills, `AGENTS.md`, this constitution, templates, and other
+  agent-consumed docs MUST follow `.agents/skills/writing-for-agents`,
+  MUST stay as short as the named failure they prevent, and MUST be DRY
+  per XVII: one owner; point, do not copy.
 - If `CONTEXT.md` or `docs/adr/` is absent, agents MUST proceed without
   flagging the absence or proposing those files as a prerequisite.
 - Wayfinder maps (issue labelled `wayfinder:map`) and child tickets are
@@ -347,6 +367,7 @@ agent writing at the table.
   text; DM layers explicit; no coy placeholders; no `visibility` field.
 - Token-efficiency work MUST follow IX: no craft or quality cuts; conflict
   and redundancy first; byte-count is not success.
+- Agent-facing text MUST follow XVII.
 - Agents MUST follow XIV: run the simplest tool; CLIs as CLIs, not wrappers.
 - Designated writer, when used: Claude Code at `claude-opus-4-6`
   `--effort medium`. MUST NOT use the `opus` alias or default Opus.
@@ -397,15 +418,15 @@ agent writing at the table.
    agent-shaped, that process is not overspecific, that easy safe idempotent
    automation is unattended, that standing agent context did not grow
    without a named failure, that token cuts did not delete craft or lower
-   output quality, that prompts to other agents carry objectives
-   and complete acceptance rather than operating manuals, Spec Kit
-   lectures, or other task-irrelevant padding, that wiki media filenames
-   distinguish kind, contain no spaces, and do not require guessing, that
-   wiki page `.md` basenames are kebab slugs with unique stems, that
-   production session content names its owners and DM layers are explicit,
-   that git/context autonomy was not reintroduced as a human gate, and that
-   CLIs were run as CLIs rather than wrapped in Python, eval, hub, or
-   another launcher.
+   output quality, that agent-facing text is DRY per XVII, that prompts
+   to other agents carry objectives and complete acceptance rather than
+   operating manuals, Spec Kit lectures, or other task-irrelevant padding,
+   that wiki media filenames distinguish kind, contain no spaces, and do
+   not require guessing, that wiki page `.md` basenames are kebab slugs
+   with unique stems, that production session content names its owners
+   and DM layers are explicit, that git/context autonomy was not
+   reintroduced as a human gate, and that CLIs were run as CLIs rather
+   than wrapped in Python, eval, hub, or another launcher.
 
 ## Governance
 
@@ -460,6 +481,9 @@ Compliance:
   field on a wiki page MUST be rejected.
 - A token-cost change that deletes narrative, mechanics, or instruction
   craft, or that treats byte-count as success, MUST be rejected.
+- Agent-facing text that copies, restates, or paraphrases a rule that
+  already has an owner, without naming the failure the copy prevents,
+  MUST be rejected.
 - A CLI wrapped in Python, an eval cell, a hub process, or another
   launcher when that CLI could be run as a command MUST be rejected.
 - Reviews MUST verify that no more than two Claude Code designated-writer
@@ -476,4 +500,4 @@ Compliance:
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 2.0.1 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-14
+**Version**: 2.1.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-14
