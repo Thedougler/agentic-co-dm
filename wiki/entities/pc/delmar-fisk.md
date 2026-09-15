@@ -2,6 +2,7 @@
 title: Delmar Fisk
 aliases:
   - Delmar Fisk
+  - Delmar Atticus Fisk
 category: entities
 tags: [shattered-sea, pc]
 sources:
@@ -50,6 +51,11 @@ foundry_id: O68NGfrVI6ibOW9v
 > [!narration] Narration
 > Sandy red hair sits in a messy topknot above a thick beard and a curled moustache greying at the edges. His smile reaches his eyes. The sea wrote the rest of the look; the scarlet admiral coat stays ashore unless the night needs Admiral Fisk.
 
+`````col
+````col-md
+![[delmar-fisk-banner|Delmar Fisk banner]]
+````
+````col-md
 ## Identity
 
 | Field | Value |
@@ -59,6 +65,8 @@ foundry_id: O68NGfrVI6ibOW9v
 | Species / Race | Variant Human |
 | Background | Sailor |
 | Home ship / base | [[Uncertainty]] at [[aruhe]] |
+````
+`````
 
 ## Combat Stats
 
@@ -70,7 +78,7 @@ Live Foundry snapshot from world Shattered-Sea on 2026-09-13. Actor `O68NGfrVI6i
 | HP (current / max) | 35 / 38 |
 | Initiative | +7 (Dexterity +5 plus Charisma +2 from Rakish Audacity) |
 | Passive Perception | 14 |
-| Speed | Walk 30 ft. [[flying-boots]] spend a charge for Fly 30 ft. for 1 hour. Cloak of the Manta Ray grants Swim 60 ft. and water breathing while worn. |
+| Speed | Walk 30 ft. [[flying-boots]] spend a charge for Fly 30 ft. for 1 hour. [[delmars-cloak-of-the-manta-ray]] grants Swim 60 ft. and water breathing while worn. |
 
 
 ````col
@@ -131,7 +139,7 @@ Acrobatics +8 (proficient), Insight +4 (proficient), Investigation +6 (expertise
 
 | Item | Notes |
 | --- | --- |
-| Cloak of the Manta Ray | Swim 60 ft and water breathing while worn |
+| [[delmars-cloak-of-the-manta-ray]] | Swim 60 ft and water breathing while worn |
 | [[Flying Boots\|Winged Boots]] | 4 charges; regain `1d4` at dawn |
 
 ### Carried
@@ -152,6 +160,13 @@ Acrobatics +8 (proficient), Insight +4 (proficient), Investigation +6 (expertise
 | The Fleet Commander's Chair | 1 | Carried |
 | Common clothes, iron pot, shovel, Tinker's Tools, Thieves' Tools | — | Carried |
 | Oil, ball bearings, rations, rope, bell, tinderbox, waterskin, hooded lantern, candles, crowbar | — | Oil 7, ball bearings 1000, rations 5, candles 10 |
+| Mother's pocket watch | 1 | Holds his mother's picture; his father's only relic, stolen for him by a woman with quick hands |
+
+### Stowed
+
+| Item | Where | Notes |
+| --- | --- | --- |
+| Scarlet admiral coat | Captain's chest ashore in [[calveno]] | Worn when the night needs Admiral Fisk |
 
 ## Features
 
@@ -196,10 +211,33 @@ Acrobatics +8 (proficient), Insight +4 (proficient), Investigation +6 (expertise
 | [[catarina-davirelli]] | Gave him Lamarae's Fang. Enchanted the blunderbuss mid-fight. |
 | [[vashka-doru]] | Has a harbor secret about a ship that once belonged to one of the five souls he carries. |
 | [[flying-boots]] | Attuned on his feet; provenance still contested. |
+| [[fisks-fleet]] | Five ships sank in the Maw; five captains' souls ride with him. |
+| [[rael-corven]] · [[Maren]] · [[detto-kalash]] · [[sienne-orre]] · [[bastian-ookage]] | The five captains bound into him; each can surface as a distinct voice. |
+| [[margaret-maggie-porcelain-pots]] | First love; the shiner she left him has kept him off his home island. A reunion hits hard. |
+| [[serafina-windfall-fisk]] | Wife; she was not aboard the Red Lady. He named The Duchess for her. |
+| Childhood wreck | A pirate attack stranded him; he rafted away, returned later, and found only corpses. |
 
 ## Session Log
 
 | Session / Date | Encounter | Current-play change |
 | --- | --- | --- |
+| 01 | Hold boarding | Fired the opening musket shot and took temporary hearing loss. Knelt as a launch platform for Crissdalynn's deck breach. Talked [[geoffrey-draves]] into defecting. |
+| 02 | HCS Surety gun port | Fired through the gun port and hit [[ensign-wouters]]. Threw a chair. [[barnaby-rook]] went into the water a second time and did not come back. Told [[beaumont-sel]] he had a friend in Admiral Fisk. |
+| 03 | Whip Shark / Calveno | Fired both swivels and the broadside at the [[Welak]] in one timed shot. Dove in manta ray form for the Whip Shark Barb. Ran Admiral Fisk too long until Crissdalynn's flask snapped him back. Locked the scarlet coat in the captain's chest. Deceived [[branca]] (Deception 19). |
+| 04 | Confession and shrine | Confessed the five-ship fleet and the Pearl theft. Survived because Crissdalynn pulled him out. At the Calveno harbor shrine, [[Umberlee]] spoke through [[branca]]. Negotiated: bring the Pearl, keep his life. Received [[flying-boots]] from [[jean-claude-tabarnack]]. |
 | 06 | Primary Chamber | One-shot a purple-caste enforcer with a pistol Sneak Attack. Resisted Dominate Person with Jean Claude's help. Catarina enchanted the blunderbuss mid-fight. Leveled to Rogue 5. |
+| 07 | Otar | Activated flying boots, pulled Perrin and Catarina up, took Tongue Lash halved by Uncanny Dodge, whistled [[master-kyzil]] in, recovered the unbreakable chair, borrowed Catarina's Bag of Holding, and landed the finishing blow on [[otar-the-foul]]. |
+| 08 | Canal, Morsani, La Cenere | Threw a rope to Paolo. Paid 100 gp for Crissdalynn's dragonhide belt. Identified the crater armchair as the Fleet Commander's Chair. Tried the Ring of Mind Shielding and took it off. Gained a talking hour from a Vial of Uncertain Healing taster. |
 | 11 | Aruhe inland | Caught catatonic Jean-Claude and swaddled him in the coat. Rifle dropped a Spiguar; it fled. First watch. Heard admire my garden. |
+
+> [!secret]- Fleet crime
+> The crime that triggered the fleet's sinking was Delmar's own call. He did not intend what happened. Five captains paid with their souls. He has not told anyone.
+
+> [!secret]- Captains' voices
+> [[Umberlee]] pressed five captains' souls into him. They surface as distinct voices. [[serafina-windfall-fisk]] does not know.
+
+> [!secret]- Harbor gossip
+> After Session 04, [[branca]] reported the shrine communion. Harbor clergy watch for the one in the scarlet coat.
+
+> [!secret]- Resurrection drive
+> He wants to resurrect the five captains, or else release them. Full resurrection is where his guardrails come off.

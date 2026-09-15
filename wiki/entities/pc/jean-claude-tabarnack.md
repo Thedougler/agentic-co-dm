@@ -2,6 +2,10 @@
 title: Jean-Claude Tabarnack
 aliases:
   - Jean-Claude Tabarnack
+  - JC
+  - Jumpy Don't Touch
+  - Sticky Tongue Death Skin
+  - Hopstradamus
 category: entities
 tags: [shattered-sea, pc]
 sources:
@@ -84,7 +88,7 @@ foundry_id: kS3wQ76uMq1QgDCw
 | Darkvision | `60 ft.` from Umbral Sight; invisible in Darkness to creatures that rely on Darkvision to see him |
 | Aquatic requirement | Must submerge 1 hour every 24 hours or gain Exhaustion |
 
-Ranger spell slots are `1st: 4/4` and `2nd: 2/2`, recovering on a Long Rest. Dread Ambusher provides `3` Psychic riders per Long Rest, using Wisdom-modifier uses.
+Dread Ambusher provides `3` Psychic riders per Long Rest, using Wisdom-modifier uses.
 
 > [!mechanic] Archived baseline values `[verify]`
 > An earlier theoretical source recorded AC `15`, HP `44`, initiative `+5`, and Passive Perception `12`. The live Foundry snapshot above remains the current page authority; the earlier values are retained only for verification.
@@ -222,7 +226,7 @@ The archived baseline recorded Favored Enemy as `3` Hunter's Mark free casts per
 | Item | Where | Notes |
 | --- | --- | --- |
 | Simone's tincture | [[Uncertainty]] cargo | Twenty vials hidden since Session 02; no crew member has been told, and revealing them requires a serious reason |
-| [[boots-of-flying\|Boots of Flying]] `[verify: archived session]` | Crew stores | Bought from Casa Lupo in Session 04 and given to the crew; they went to Delmar after Perrin realized he does not wear shoes |
+| [[flying-boots\|Boots of Flying]] `[verify: archived session]` | Crew stores | Bought from Casa Lupo in Session 04 and given to the crew; they went to Delmar after Perrin realized he does not wear shoes |
 
 ### Currency
 

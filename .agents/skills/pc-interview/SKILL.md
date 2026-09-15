@@ -13,11 +13,11 @@ disable-model-invocation: true
 
 Prep only. Follow `docs/agents/work.md`.
 
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
+Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. When the wiki lacks a fact other than combat math or a player choice, set `invention: true` and ground in wiki pages and/or D&D 5e rules. Leave unknown combat math and unstated player choices unknown. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
 
 Players see nothing until the DM accepts and presents.
 
-Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagged, grounding named.
+Done when: the page is inspectable Work, `lifecycle: proposed`; invented facts, if any, are flagged and grounded.
 
 Remap durable output paths from `campaigns/<slug>/` to `wiki/`; use `wiki/templates/`. Replace knowledge-bank wording with wiki wording. Keep the craft procedure.
 

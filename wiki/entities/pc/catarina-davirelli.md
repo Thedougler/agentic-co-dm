@@ -2,6 +2,10 @@
 title: "Catarina Da'Virelli"
 aliases:
   - Catarina Da'Virelli
+  - Da'Virelli
+  - Catarina
+  - Caterina Da Virelle
+  - Catarina Da Vrelle
 category: entities
 tags: [shattered-sea, pc]
 sources:

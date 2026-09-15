@@ -148,7 +148,7 @@ Those files are a **foreign drop**. This vault mints them **chassis-first**. Rea
 
 Campaign-shaped session-prep and place: file with required treatments. Do not distill those pages into `concepts/`. A foreign source that names a place or session beat is not this GUARD — map it into the kind on the distill path (Layout jobs).
 
-**Owner pages (npc, item, creature, vehicle, …):** file into `wiki/entities/{type}/{kebab-slug}.md` using frontmatter `type` + kebab slug from `title` (depth 1; space-free slug function in `wiki/AGENTS.md` § Page filenames — strip legacy `Aruhe - `; no spaced basenames). Keep `category: entities`. Do not invent facet/rarity nests. Redirect stubs follow `wiki/AGENTS.md`. **PC ingest:** `type: pc` pages go through `player-characters` and `wiki/templates/pc.md` at `wiki/entities/pc/<kebab-slug>.md`. Flatten archived satellites into canonical homes. Preserve `sources` lineage. Keep conflicts and unknowns explicit (`[verify]`); do not invent a resolution. Never ingest a PC as `npc` with a pc tag.
+**Owner pages (npc, item, creature, vehicle, …):** file into `wiki/entities/{type}/{kebab-slug}.md` using frontmatter `type` + kebab slug from `title` (depth 1; space-free slug function in `wiki/AGENTS.md` § Page filenames — strip legacy `Aruhe - `; no spaced basenames). Keep `category: entities`. Do not invent facet/rarity nests. Redirect stubs follow `wiki/AGENTS.md`.
 
 
 **Recap** (`type: recap`): file into the **same** session-number folder — `wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md` (e.g. `Session-01-Recap.md`; alongside plan/beats when present). Do not use spaced `Session NN - Recap.md`, flat `wiki/journal/…`, or `…/recaps/`.
@@ -450,6 +450,8 @@ Pages without a `tier:` field are treated as `supporting`. When in doubt, err to
 
 For each page in your plan:
 
+**PC ingest:** Route `type: pc` through `player-characters` and `wiki/templates/pc.md` onto `wiki/entities/pc/<kebab-slug>.md`. Flatten archived satellites into canonical homes. Preserve `sources` lineage. Keep conflicts and unknowns explicit (`[verify]`); do not invent a resolution. Never ingest a PC as `npc` with a pc tag. A newer supplied source that disagrees with a live wiki number overwrites that number via `player-characters`.
+
 **Quality pass** by destination surface (load the skill; do not restate it):
 - DM-facing prose → `copy-writer` (complete-sentence, signal-dense; rewrite agent shorthand, fragments, and telegram stubs)
 - Vault Markdown, frontmatter, links, scan grammar → `obsidian-markdown`
@@ -489,7 +491,7 @@ Keep DM-only, player-facing, mechanical, and spoken content on their surfaces. K
 
 **If creating a new page:**
 - Only when Source ideas allows a justified new page
-- Use the page template from the llm-wiki skill (frontmatter + sections). **For academic papers landing in `references/`, use the Paper Deep-Dive Template** from `llm-wiki/SKILL.md` instead of the generic one (see *Academic papers* in Step 1). Campaign entities use `wiki/templates/` as scaffolds and `wiki/AGENTS.md` `type` (`npc`, `place`, `faction`, `item`, `creature`, `session`, `recap`, `work`) rather than generic categories alone. Named ingest: thin complete-sentence stubs only for names in the approved source. Sample pages pass on jobs in `wiki/AGENTS.md` Layout. Early-dev `wiki/_raw/` samples stay in `_raw/` as illustrations. Sample `monster` → `type: creature`. Wrapup of a legacy page MUST NOT convert that page into a sample.
+- Use the page template from the llm-wiki skill (frontmatter + sections). **For academic papers landing in `references/`, use the Paper Deep-Dive Template** from `llm-wiki/SKILL.md` instead of the generic one (see *Academic papers* in Step 1). Campaign entities use `wiki/templates/` as scaffolds and `wiki/AGENTS.md` `type` (`npc`, `pc`, `place`, `faction`, `item`, `creature`, `session`, `recap`, `work`) rather than generic categories alone. Named ingest: thin complete-sentence stubs only for names in the approved source. Sample pages pass on jobs in `wiki/AGENTS.md` Layout. Early-dev `wiki/_raw/` samples stay in `_raw/` as illustrations. Sample `monster` → `type: creature`. Wrapup of a legacy page MUST NOT convert that page into a sample.
 - Place in the correct category directory
 - Add `[[wikilinks]]` to at least 2-3 existing pages
 - Include the source in the `sources` frontmatter field. In raw mode: derive from `capture_source` + `sources` frontmatter of the `_raw/` file — never use the `_raw/` path itself (see Raw Mode section)
@@ -500,7 +502,7 @@ Keep DM-only, player-facing, mechanical, and spoken content on their surfaces. K
 - Merge new information — don't just append. A repeated fragment that does not improve or correct the page is not duplicated
 - Update the `updated` timestamp in frontmatter
 - Add the new source to the `sources` list
-- Conflict with established canon: keep the existing fact, mark `^[ambiguous]`, and file a **proposal** for the DM (`docs/agents/work.md`). Do not overwrite
+- Conflict with established canon: keep the existing fact, mark `^[ambiguous]`, and file a **proposal** for the DM (`docs/agents/work.md`). Do not overwrite. Exception: on `type: pc`, a newer supplied source that disagrees with a live wiki number overwrites that number via `player-characters`.
 
 **Populate `relationships:` when context is clear** — if Step 2 identified typed relationships between this page and another, add a `relationships:` block to the frontmatter (defined in `llm-wiki/SKILL.md`, Typed Relationships section). Only add entries where the source text makes the direction and type unambiguous. When in doubt, use `related_to` or omit the block. Example:
 

@@ -8,6 +8,12 @@ sources:
   - "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Red Lady - Dead Lady.md"
   - "Foundry VTT Shattered-Sea actor Crisdalynn Khinris 2026-09-13"
   - "wiki/_archive/crissdalynn-khinriss.md"
+  - "wiki/_archive/abilities/crissdalynn-khinriss-abilities.md"
+  - "wiki/_archive/stats/crissdalynn-khinriss-stats.md"
+  - "wiki/_archive/character-sheets/crissdalynn-khinriss-sheet.md"
+  - "wiki/_archive/inventory/crissdalynn-khinriss-inventory.md"
+  - "wiki/_archive/spells/crissdalynn-khinriss-spells.md"
+  - "wiki/_archive/galleries/crissdalynn-khinriss-gallery.md"
   - "wiki/_archive/session-logs/crissdalynn-khinriss-session-log.md"
   - "wiki/_archive/combat-profile/crissdalynn-khinriss-combat-profile.md"
   - "wiki/_archive/va-scripts/crissdalynn-khinriss-voice-script.md"
@@ -43,6 +49,11 @@ foundry_id: Qkd4lEumNtyDVUxD
 > [!narration] Narration
 > Blue-black iridescent feathers, geometric leather armor, a chart satchel, and talons that catch the light. She moves light and irreverent until the fight starts, then the air around her gets serious.
 
+`````col
+````col-md
+![[crissdalynn-khinriss-banner|Crissdalynn Khinriss banner]]
+````
+````col-md
 ## Identity
 
 | Field | Value |
@@ -58,7 +69,8 @@ foundry_id: Qkd4lEumNtyDVUxD
 | Current task | Finish the incomplete [[the-drowned-maw\|Drowned Maw]] map to end exile; she served the [[red-lady-dead-lady\|Red Lady]] for twenty-two months before it sank. |
 | Faith | [[remnis\|Remnis]] is primary, with [[syranita\|Syranita]] and [[aerdrie-faenya\|Aerdrie Faenya]] at the margins; the sheet prints “Great Old Crow” [verify: `wiki/_archive/character-sheets/crissdalynn-khinriss-sheet.md`]. |
 | Foundry identity | Actor `Qkd4lEumNtyDVUxD` from world Shattered-Sea, snapshot 2026-09-13; table display prefers Crissdalyn. |
-
+````
+`````
 ## Combat Stats
 
 | Stat | Value |
@@ -261,3 +273,7 @@ Kyzil's approval advanced from the S03 reunion rupture to the S04 rooftop acknow
 | 07 | Otar | Activated the tattoo for +1 to Unarmed attack and damage, landed strikes for 11 and 16, deflected an 11-damage Tongue Lash, redirected it before Otar dodged, and kept Iacopo Fieschi's diamond ring worth 500 gold. |
 | 08 | Cabinet of Morsani / La Cenere | Tested the Dragonhide Belt, secured it for Delmar after the market negotiation, and bought a cloak sold as Nightmantle that was identified as a cursed [[cloak-of-displacement\|Cloak of Displacement]] from Lavinia Sordi. |
 | 11 | Aruhe inland | Ate a fallen [[redheart-berry]] for `30` HP, pulled Matteo from otters, took last watch, and faced Skarn stooping for the dreidel after Stunning Strike landed and a Legendary Resistance answered. The fight remains open. |
+
+## Art
+
+![[crissdalynn-khinriss-banner-alt|Crissdalynn Khinriss banner alt]]

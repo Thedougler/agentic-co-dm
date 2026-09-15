@@ -2,13 +2,21 @@
 title: Perrin Black-Jaw
 aliases:
   - Perrin Black-Jaw
+  - Perrin
 category: entities
 tags: [shattered-sea, pc]
 sources:
   - "Nona Black-Jaw"
   - "Foundry VTT Shattered-Sea actor Perrin Black-Jaw 2026-09-13"
   - "wiki/_archive/perrin-black-jaw.md"
+  - "wiki/_archive/abilities/perrin-black-jaw-abilities.md"
+  - "wiki/_archive/stats/perrin-black-jaw-stats.md"
+  - "wiki/_archive/character-sheets/perrin-black-jaw-sheet.md"
+  - "wiki/_archive/inventory/perrin-black-jaw-inventory.md"
+  - "wiki/_archive/spells/perrin-black-jaw-spells.md"
+  - "wiki/_archive/galleries/perrin-black-jaw-gallery.md"
   - "wiki/_archive/combat-profile/perrin-black-jaw-combat-profile.md"
+  - "wiki/_archive/va-scripts/perrin-black-jaw-voice-script.md"
 summary: Warlock 2 / Lore Bard 3 who baited Aruhe hunts with illusions and took Tasha's laughter from a lesser black lotus.
 lifecycle: canon
 created: 2026-09-12
@@ -34,6 +42,11 @@ foundry_id: J9CeWsMCOahlafjx
 > [!narration] Narration
 > A three-foot fancy-rat Rattkin with a black head, white body, and a long pink tail. Shortest on the crew, he still fills a room with volume, charm, and nerve.
 
+`````col
+````col-md
+![[perrin-black-jaw-banner|Perrin Black-Jaw banner]]
+````
+````col-md
 ## Identity
 
 | Field | Value |
@@ -46,7 +59,8 @@ foundry_id: J9CeWsMCOahlafjx
 | Role | PC |
 | Tier | Supporting |
 | Alignment | Chaotic good [verify] from the archived character sheet |
-
+````
+`````
 ## Combat Stats
 
 | Stat | Value |
@@ -278,3 +292,7 @@ The archived level-5 sheet records no feats. War Caster appears only in the back
 | 11 | Aruhe inland | Baited bloodhawks and wolfrabbits with illusions, used Mage Hand to put the lesser black lotus into the river, and was hit by Tasha's Hideous Laughter. He kept middle watch with Matteo. |
 
 The archived combat log marks rounds active and most damage and damage-taken totals as `[unknown]`; its `0` damage and `0/0` attack entries are source records rather than transcription gaps. The profile's observed output through Session 06 is therefore effectively `0`, while the `[simulated]` figures above are reproducible from the supplied sheet.
+
+## Art
+
+![[perrin-black-jaw-reference|Perrin Black-Jaw likeness reference]]
