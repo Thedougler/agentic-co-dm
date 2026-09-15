@@ -23,9 +23,10 @@ Show a chat proposal; write under `wiki/` only after DM accept. Structure-only c
 | --- | --- | --- |
 | idle | No PC job | Nothing |
 | record | DM supplies source for a player-created character | Transcribe onto `wiki/entities/pc/<kebab-slug>.md` |
-| refuse | No source supplied, or request to invent/generate/prescribe a PC | Refuse and say why |
+| refresh-goals | Post-session transcript for a player who was in that session | Refresh Stated Goals on the PC's live page from that transcript |
+| refuse | No source supplied, or request to invent/generate/prescribe a PC, or inventing goals | Refuse and say why |
 
-The skill enters `record` only when the DM supplies at least one source. A request without source is a `refuse`.
+The skill enters `record` only when the DM supplies at least one source. It enters `refresh-goals` after a session that included the player, when the session transcript is available. A request without source is a `refuse`. A request to invent goals is a `refuse`.
 
 ## Accepted sources
 
@@ -49,6 +50,23 @@ Copy `wiki/templates/pc.md` as the scaffold for a new page. For an existing page
 Fill every field the source provides. Leave fields the source does not cover as unknown or `[verify]`. Omit optional sections that have no content per the contract.
 
 Narration is a real `[!narration]` callout with player-safe sensory description. No secrets, DCs, unearned names, or DM thesis.
+
+#### Art placement
+
+- **Pictures exist:** one featured portrait embed paired with `## Identity` in the col/col-md layout. Additional pictures MAY sit next to the section they illustrate. Leftover approved embeds go in `## Art`.
+- **One picture only:** that picture is the featured portrait paired with Identity. Omit `## Art`.
+- **No pictures:** `## Identity` renders full-width with no col fences and no empty portrait column. Omit `## Art`.
+
+#### Stated Goals (refresh-goals)
+
+After every session that included the player, refresh from that session's transcript:
+
+1. Read the session transcript. A session summary MAY help locate or paraphrase a transcript-supported goal but MUST NOT be the sole source.
+2. Add newly stated goals the player clearly stated in the transcript, in character or out of character. Cite the session.
+3. Remove a goal only if the player said it is done or abandoned in the transcript.
+4. Do not infer goals from play, connections, or DM thesis. A summary-only goal is not filed.
+5. Sessions that did not include the player do not refresh this section.
+6. Omit the section entirely when no transcript-supported goals exist.
 
 ### 3. Resolve conflicts
 
@@ -74,10 +92,11 @@ File at `wiki/entities/pc/<kebab-slug>.md`. When `WIKI_STAGED_WRITES=true`, land
 
 ## Boundaries
 
-- MUST NOT invent a PC, generate stats, or write the player's actions.
+- MUST NOT invent a PC, generate stats, write the player's actions, or invent goals.
 - MUST NOT use `npc-design` for `type: pc` work.
 - MUST NOT add `Voice`, `At a Glance`, `Sheet`, `Combat Profile`, `Abilities`, or a DM thesis section.
 - MUST NOT add a new PDF parser, database, or Foundry client.
+- MUST NOT file a Stated Goal sourced only from a session summary without transcript support.
 
 ## Done
 
@@ -88,4 +107,6 @@ The page is done when:
 - The heading spine matches `specs/020-pc-page-redesign/contracts/pc-page.md`.
 - Narration is player-safe with no secrets, DCs, or unearned names.
 - Newer-source numbers overwrite stale wiki numbers and their frontmatter mirrors.
-- No stats, actions, or identity were invented.
+- No stats, actions, identity, or goals were invented.
+- Art placement follows the art rules: featured portrait paired with Identity when pictures exist; one picture only means no Art section; no pictures means Identity full-width and no Art section.
+- Stated Goals contains only transcript-supported player-stated goals with session citations, or the section is omitted.
