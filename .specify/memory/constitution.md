@@ -1,16 +1,15 @@
 <!--
 Sync Impact Report
-- Version change: 2.0.1 → 2.1.0
-- Modified principles:
-  - IX Design Trends Toward Token Efficiency (duplication points at XVII)
+- Version change: 2.1.0 → 2.2.0
+- Modified principles: none
 - Added principles:
-  - XVII. Agent-Facing Text Is DRY
+  - XVIII. Wiki Pages Hold Present And Planned Facts Only
 - Added sections: none
 - Removed sections: none
 - Other modified sections:
-  - Agent Operating Constraints (DRY default for agent-consumed docs)
-  - Development Workflow (review check for XVII)
-  - Governance (compliance reject for non-DRY agent-facing copies)
+  - Agent Operating Constraints (pointer to XVIII)
+  - Development Workflow (review check for XVIII)
+  - Governance (reject superseded facts and user questions on wiki pages)
 - Follow-up TODOs: none
 -->
 
@@ -337,6 +336,28 @@ an exception.
 Rationale: two copies drift. Agents follow the nearest copy. Tokens
 spent repeating a loaded rule are cost without signal.
 
+### XVIII. Wiki Pages Hold Present And Planned Facts Only
+
+Each llm-wiki page MUST compile the latest rendition of each fact it
+owns. Wiki files MUST contain present content and/or future planned
+content only.
+
+MUST NOT keep prior versions, archived baselines, superseded numbers, or
+explanations of how a fact used to read. History belongs in git, not on
+the page. Updating a fact MUST replace it in place.
+
+MUST NOT write questions, `[verify]` prompts, or other user-facing
+interrogatives into wiki files. Uncertain facts stay off the page or
+become a GitHub issue. They MUST NOT pollute the page.
+
+A session recap or journal entry MAY record what became true in play.
+That is present canon. It MUST NOT retain a superseded rendition of an
+owner-page fact.
+
+Rationale: two numbers on a page are two truths. Agents and the DM
+follow the nearest copy. A question on a wiki page is unfinished Work
+shipped as canon.
+
 ## Agent Operating Constraints
 
 - Runtime guidance for agents is `AGENTS.md`. Skills MUST follow
@@ -368,6 +389,7 @@ spent repeating a loaded rule are cost without signal.
 - Token-efficiency work MUST follow IX: no craft or quality cuts; conflict
   and redundancy first; byte-count is not success.
 - Agent-facing text MUST follow XVII.
+- Wiki pages MUST follow XVIII.
 - Agents MUST follow XIV: run the simplest tool; CLIs as CLIs, not wrappers.
 - Designated writer, when used: Claude Code at `claude-opus-4-6`
   `--effort medium`. MUST NOT use the `opus` alias or default Opus.
@@ -418,15 +440,16 @@ spent repeating a loaded rule are cost without signal.
    agent-shaped, that process is not overspecific, that easy safe idempotent
    automation is unattended, that standing agent context did not grow
    without a named failure, that token cuts did not delete craft or lower
-   output quality, that agent-facing text is DRY per XVII, that prompts
-   to other agents carry objectives and complete acceptance rather than
-   operating manuals, Spec Kit lectures, or other task-irrelevant padding,
-   that wiki media filenames distinguish kind, contain no spaces, and do
-   not require guessing, that wiki page `.md` basenames are kebab slugs
-   with unique stems, that production session content names its owners
-   and DM layers are explicit, that git/context autonomy was not
-   reintroduced as a human gate, and that CLIs were run as CLIs rather
-   than wrapped in Python, eval, hub, or another launcher.
+   output quality, that agent-facing text is DRY per XVII, that wiki pages
+   hold only present or planned facts and no user questions per XVIII,
+   that prompts to other agents carry objectives and complete acceptance
+   rather than operating manuals, Spec Kit lectures, or other
+   task-irrelevant padding, that wiki media filenames distinguish kind,
+   contain no spaces, and do not require guessing, that wiki page `.md`
+   basenames are kebab slugs with unique stems, that production session
+   content names its owners and DM layers are explicit, that git/context
+   autonomy was not reintroduced as a human gate, and that CLIs were run
+   as CLIs rather than wrapped in Python, eval, hub, or another launcher.
 
 ## Governance
 
@@ -484,6 +507,8 @@ Compliance:
 - Agent-facing text that copies, restates, or paraphrases a rule that
   already has an owner, without naming the failure the copy prevents,
   MUST be rejected.
+- A wiki page that retains a superseded fact, archived baseline,
+  prior-version explanation, or a question to the user MUST be rejected.
 - A CLI wrapped in Python, an eval cell, a hub process, or another
   launcher when that CLI could be run as a command MUST be rejected.
 - Reviews MUST verify that no more than two Claude Code designated-writer
@@ -500,4 +525,4 @@ Compliance:
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 2.1.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-14
+**Version**: 2.2.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-14
