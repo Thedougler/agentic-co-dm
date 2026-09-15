@@ -334,3 +334,11 @@ Task: "Update .agents/skills/run-guide/SKILL.md"
 - Stated Goals are transcript-only; session summaries are backup; silence is not abandonment
 - Existing Markdown, lint, Obsidian Columns, Python 3, Foundry MCP, and vault snippets stay in place; no new parser, database, `pc-design` skill, or decorative PC theme
 - Stop at any checkpoint to validate the story independently
+
+## Phase 14: Convergence
+
+- [ ] T045 Update `.agents/skills/obsidian-markdown/SKILL.md` so PC column guidance names `player-characters` and `wiki/templates/pc.md`, and replace the Identity+Combat Stats anti-pattern with featured-portrait+Identity (Combat Stats full-width) per FR-010, FR-016, US4/AC2, SC-008 (contradicts)
+- [ ] T046 Restore archive art onto `wiki/entities/pc/perrin-black-jaw.md`, `wiki/entities/pc/crissdalynn-khinriss.md`, and `wiki/entities/pc/delmar-fisk.md`: one featured portrait paired with Identity, leftovers only in `## Art`, omitted when none remain per FR-014, FR-021, SC-003, US3/AC3 (missing)
+- [ ] T047 Move `type: pc` ingest routing in `.agents/skills/wiki-ingest/SKILL.md` out of the Preserve GUARD onto the general ingest path, include `pc` in the campaign type list, and except PC number conflicts so a newer supplied source overwrites via `player-characters` per FR-016, FR-020, T013 (partial)
+- [ ] T048 Remove Ranger spell slot counts from Combat Stats on `wiki/entities/pc/jean-claude-tabarnack.md` so caster pools live only in Spells per US1/AC4, FR-006 (partial)
+- [ ] T049 Rewrite the Work-gate invention sentence in `.agents/skills/pc-interview/SKILL.md` so it cannot require inventing combat math or player choices when the wiki lacks a fact per T012, FR-016, US2/AC5 (contradicts)
