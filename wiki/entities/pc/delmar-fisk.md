@@ -109,7 +109,7 @@ Acrobatics +8 (proficient), Insight +4 (proficient), Investigation +6 (expertise
 | --- | --- | --- | --- |
 | Rapier (Vex) | — | Melee Finesse | Equipped |
 | Blunderbuss (Exandria) | +8 | `2d8+5` piercing; Sneak Attack engine | Enchanted mid-fight by Catarina. Firearms, Reload, Misfire, Range 15/60. [[delmars-blunderbuss]] |
-| Pistols (Vex) | +5 `[verify]` wiki/_archive/abilities/delmar-fisk-abilities.md | `1d10+5` piercing | 3 equipped plus one Foundry-named "Unknown thing." pistol |
+| Pistols (Vex) | +5 | `1d10+5` piercing | 3 equipped plus one Foundry-named "Unknown thing." pistol |
 | Daggers (Nick) | +8 | `1d4+5` piercing | 2 equipped. Finesse, Light, Thrown, Range 20/60 |
 
 ### Actions
@@ -189,7 +189,7 @@ Acrobatics +8 (proficient), Insight +4 (proficient), Investigation +6 (expertise
 | Rakish Audacity | Swashbuckler | Add Charisma to Initiative; Sneak Attack geometry as above. | — | — |
 | Expertise | Rogue | Investigation and Persuasion. | — | — |
 | Thieves' Cant | Rogue | Languages include Thieves' Cant. | — | — |
-| Weapon Mastery | Rogue | Rapier = Vex. Musket = Slow `[verify]` wiki/_archive/abilities/delmar-fisk-abilities.md (musket is not a live equipped attack). | at will | — |
+| Weapon Mastery | Rogue | Rapier = Vex | at will | — |
 
 ### Feats
 

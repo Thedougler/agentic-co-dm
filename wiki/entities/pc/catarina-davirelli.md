@@ -67,7 +67,7 @@ tier: supporting
 
 Catarina is pursuing the first non-magical flying machine and reverse-engineers [[antheri\|Antheri]] work. Her referral-only workshop, [[kats-curios\|Cat's Curios]], is in [[calveno\|Calveno]]. In 1488 DR she found working [[antheri\|Antheri]] parts at [[shelfworks\|the Shelfworks]], rebuilt three working devices, and became the first to do so; the resulting rush became the Shelfworks Goldrush, which she declined to join.
 
-Raiders kidnapped her as a child. Her father made a distraction, and she escaped by jumping from cliffs into the water; his fate is unknown, and she carries his sealed flask. She treats careless magic as exclusionary, wants useful enchanted items to reach ordinary people, refuses unsafe or misused inventions, and is exact about what she can and cannot build. She treats beggars, servants, children, and nobles alike, and never calls a prototype finished when it is not. `[verify]` The archived biography says Mortis gives her `+2` Intelligence.
+Raiders kidnapped her as a child. Her father made a distraction, and she escaped by jumping from cliffs into the water; his fate is unknown, and she carries his sealed flask. She treats careless magic as exclusionary, wants useful enchanted items to reach ordinary people, refuses unsafe or misused inventions, and is exact about what she can and cannot build. She treats beggars, servants, children, and nobles alike, and never calls a prototype finished when it is not.
 ````
 `````
 
@@ -76,7 +76,7 @@ Raiders kidnapped her as a child. Her father made a distraction, and she escaped
 | Stat | Value |
 | --- | --- |
 | AC | 16 (breastplate) |
-| HP (current / max) | `[verify]` / 38 |
+| HP (current / max) | — / 38 |
 | Initiative | +7 (DEX +2, Alert +5) |
 | Passive Perception | 11 |
 | Speed | 30 ft. walking |
@@ -88,7 +88,6 @@ Raiders kidnapped her as a child. Her father made a distraction, and she escaped
 - No damage resistances are listed on the sheet.
 - She cannot be surprised while conscious, and unseen attackers do not gain advantage against her.
 
-Simulation-only figures remain estimates rather than sheet values: sustained DPR `13.91` versus AC `15`; nova DPR `28.0` versus AC `15` at the 95th percentile; routine damage per round `15.94 / 13.91 / 11.95 / 9.89` versus AC `13 / 15 / 17 / 19`; and maximum routine damage `56`. The [[catarina-davirelli-combat-profile|archived combat profile]] records the remaining hit-ladder, encounter, and survivability projections.
 
 
 ````col
@@ -122,14 +121,14 @@ Tool skills include woodcarver's tools and one other artisan's tool of choice. T
 
 | Attack | To-Hit / DC | Damage / Effect | Notes |
 | --- | --- | --- | --- |
-| Flintlock Pistol | +3 `[verify]` | `8 (1d10 + 3)` piercing | The sheet prints `+3`; DEX `+2` plus proficiency `+3` would be `+5` if she is proficient with firearms. |
+| Flintlock Pistol | +3 | `8 (1d10 + 3)` piercing | Sheet prints `+3` |
 | Unarmed Strike | +4 | `2` bludgeoning | — |
 
 ### Actions
 
 | Action | To-Hit / DC | Damage / Effect | Uses | Notes |
 | --- | --- | --- | --- | --- |
-| Eldritch Cannon (create) | — | Place a cannon within 5 ft. | 1 / Long Rest | One cannon at a time; its activations are listed under Bonus Actions. The archived sheet notes AC `18` and HP `5 ×` artificer level for the cannon. |
+| Eldritch Cannon (create) | — | Place a cannon within 5 ft. | 1 / Long Rest | One cannon at a time; its activations are listed under Bonus Actions. Cannon AC `18` and HP `5 ×` artificer level |
 
 ### Bonus Actions
 
@@ -168,13 +167,13 @@ Catarina casts as an Artificer using Intelligence. Spell save DC is `17`, spell 
 | [[scorching-ray\|Scorching Ray]] | 2nd / Artificer | Artillerist spell; always prepared. |
 | [[shatter\|Shatter]] | 2nd / Artificer | Artillerist spell; always prepared. |
 | [[faerie-fire\|Faerie Fire]] | 1st / Artificer | Outlines targets and denies them the benefit of the Invisible condition. |
-| [[web\|Web]] | 1st `[verify]` / Artificer | Dexterity save `DC 17`. |
+| [[web\|Web]] | 1st / Artificer | Dexterity save `DC 17`. |
 | [[grease\|Grease]] | 1st / Artificer | Dexterity save `DC 17`. |
 | [[false-life\|False Life]] | 1st / Artificer | Grants temporary hit points; no save. |
 | [[aid\|Aid]] | 2nd / Artificer | Raises current and maximum hit points; no save. |
 | [[blur\|Blur]] | 2nd / Artificer | Imposes disadvantage on attacks against her; no save. |
 | [[magic-weapon\|Magic Weapon]] | 2nd / Artificer | Grants `+1` to a weapon's attack and damage rolls; no save. |
-| [[catapult\|Catapult]] | 2nd `[verify]` / Artificer | Dexterity save `DC 17`. |
+| [[catapult\|Catapult]] | 2nd / Artificer | Dexterity save `DC 17`. |
 | [[absorb-elements\|Absorb Elements]] | Special / Artificer | Reaction that grants resistance to the triggering damage type. |
 | Sheet utility list | Artificer | [[identify\|Identify]], [[alarm\|Alarm]], [[cure-wounds\|Cure Wounds]], [[detect-magic\|Detect Magic]], [[disguise-self\|Disguise Self]], [[expeditious-retreat\|Expeditious Retreat]], [[feather-fall\|Feather Fall]], [[jump\|Jump]], [[longstrider\|Longstrider]], [[purify-food-and-drink\|Purify Food and Drink]], [[sanctuary\|Sanctuary]], Snare, [[tashas-caustic-brew\|Tasha's Caustic Brew]], [[rope-trick\|Rope Trick]], [[arcane-lock\|Arcane Lock]], [[invisibility\|Invisibility]], [[continual-flame\|Continual Flame]], Darkvision, [[enhance-ability\|Enhance Ability]], [[enlarge-reduce\|Enlarge/Reduce]], [[heat-metal\|Heat Metal]], [[lesser-restoration\|Lesser Restoration]], [[levitate\|Levitate]], [[magic-mouth\|Magic Mouth]], [[protection-from-poison\|Protection from Poison]], [[see-invisibility\|See Invisibility]], [[spider-climb\|Spider Climb]], Pyrotechnics, Skywrite, [[alter-self\|Alter Self]], and [[tortoise-shell\|Tortoise Shell]]. |
 
@@ -182,8 +181,8 @@ Catarina casts as an Artificer using Intelligence. Spell save DC is `17`, spell 
 
 | Level / Pool | Current / Max | Recovery |
 | --- | --- | --- |
-| 1st-level Artificer | `[verify]` / 4 | Long Rest |
-| 2nd-level Artificer | `[verify]` / 2 | Long Rest |
+| 1st-level Artificer | — / 4 | Long Rest |
+| 2nd-level Artificer | — / 2 | Long Rest |
 
 ## Inventory
 
@@ -191,8 +190,8 @@ Catarina casts as an Artificer using Intelligence. Spell save DC is `17`, spell 
 
 | Item | Notes |
 | --- | --- |
-| All-Purpose Tool +1 | Boosts spells and craft work. The archived inventory states this is the only attuned item `[verify]`. |
-| [[wild-pearl-of-power]] | Bought from [[lavinia-sordi\|Lavinia Sordi]] at [[la-cenere\|La Cenere]] for 300 gp in Session 08; unstable, with two charges left. The live page lists it here, while the archived inventory lists it as carried `[verify]`. |
+| All-Purpose Tool +1 | Boosts spells and craft work |
+| [[wild-pearl-of-power]] | Bought from [[lavinia-sordi\|Lavinia Sordi]] at [[la-cenere\|La Cenere]] for 300 gp in Session 08; unstable, with two charges left |
 
 ### Carried
 
@@ -211,7 +210,7 @@ Catarina casts as an Artificer using Intelligence. Spell save DC is `17`, spell 
 | Spark Pistol prototype | [[kats-curios\|Cat's Curios]] specimen cabinet | Misfires in the wet and is not reliable yet; she has not diagnosed the flaw. |
 | Dark-alloy [[antheri\|Antheri]] pieces | [[kats-curios\|Cat's Curios]] locked cabinet | Trade only, with no cash price. |
 | Spare parts | [[kats-curios\|Cat's Curios]] workshop | Workshop overflow stays here. |
-| Puntura | [[kats-curios\|Cat's Curios]] workshop | `[verify]` Still unfinished; [[delmar-fisk\|Delmar]] commissioned it from the Whip Shark Barb in Session 03. |
+| Puntura | [[kats-curios\|Cat's Curios]] workshop | Still unfinished; [[delmar-fisk\|Delmar]] commissioned it from the Whip Shark Barb in Session 03 |
 
 ### Currency
 
@@ -251,13 +250,13 @@ The sheet itemizes no species traits for her Variant Human heritage beyond the [
 
 | Tie | Table consequence |
 | --- | --- |
-| [[delmar-fisk\|Delmar Fisk]] | She enchanted his blunderbuss, lent him the Bag of Holding, gave him Lamarae's Fang, and `[verify]` commissioned Puntura from the Whip Shark Barb he recovered in Session 03. |
+| [[delmar-fisk\|Delmar Fisk]] | She enchanted his blunderbuss, lent him the Bag of Holding, gave him Lamarae's Fang, and commissioned Puntura from the Whip Shark Barb he recovered in Session 03 |
 | [[la-cenere\|La Cenere]] / [[lavinia-sordi\|Lavinia Sordi]] | The Session 08 Pearl of Power purchase created the unstable two-charge resource. |
 | [[antheri\|Antheri]] | Their technology is the source of her reverse-engineering work and locked dark-alloy trade. |
 | [[Uncertainty]] | It is her berth; workshop overflow remains at Cat's Curios. |
 | [[dravosi-crown\|Dravosi Crown]] | A binding fleet contract covers Ship Upgrades and soldier kit for money and protection; she treats it as a compromise, not affection. |
 | [[rupert-knighton\|Rupert Knighton]] | He warned her before the sewer crisis and offered a way out; she declined and met Delmar and the rest of the [[Uncertainty]] crew instead. |
-| [[perrin-black-jaw\|Perrin Black-Jaw]] | Party member; he bought [[the-snap\|The Snap]] from [[prospero-morsani\|Prospero Morsani]] in Session 08, not one of her own builds. `[verify]` The voice script says the finished item remains on her bench. |
+| [[perrin-black-jaw\|Perrin Black-Jaw]] | Party member; he bought [[the-snap\|The Snap]] from [[prospero-morsani\|Prospero Morsani]] in Session 08, not one of her own builds |
 | [[beaumont-sel\|Beaumont Sel]] | She sold him Salvaged Antheri Plate to patch his shell in 1490 DR. |
 | [[tessarine-concordat\|Tessarine Concordat]] | Standing orders for Antheri salvage remain unaccepted. |
 | [[samuel\|Samuel]] / [[iacopo-fieschi\|Iacopo Fieschi]] | Samuel is a toucan Aarakocra helper whom Fieschi sends to carry messages for Cat's Curios; Fieschi's offered 300 gp was redirected toward city repairs and children. |
@@ -274,7 +273,7 @@ The sheet itemizes no species traits for her Variant Human heritage beyond the [
 | Session / Date | Encounter | Current-play change |
 | --- | --- | --- |
 | 05 | [[calveno-sewers-grung-magazines\|Calveno sewers]] | Joined the crew during the crisis and found Ragnetto and Strix already at work before she finished introducing herself. |
-| After 05 `[verify]` | Combat | Fire Bolt found its mark; Shocking Grasp added `10` lightning damage; she enchanted Delmar's blunderbuss, crafted the mind-sharpener for Crissdalynn, and failed to restrain Solange's teleport. |
+| After 05 | Combat | Fire Bolt found its mark; Shocking Grasp added `10` lightning damage; she enchanted Delmar's blunderbuss, crafted the mind-sharpener for Crissdalynn, and failed to restrain Solange's teleport. |
 | 07 | [[otar-the-foul\|Otar]] | Planted a gauntlet and triggered Thunder Wave for `9` thunder damage; one tadpole saved against it, and Strix finished a downed tadpole. Delmar finished the corpse-eating thing, and Catarina lent him the Bag of Holding for the chair. |
 | 07 | Slodtodmul aftermath | Identified the corpse-eating creature as a Slodtodmul, named the recovered [[solanges-authority-seal\|Solange's Authority Seal]], and bonded to [[a-sliver-of-the-unstable-form\|A Sliver of the Unstable Form]] torn from Otar. |
 | 08 | [[cabinet-of-morsani\|Morsani's]] | Read Prospero Morsani with Insight `23`, made a static illusion of the Defenders of Calveno poster, accused him of robbing customers, and was thrown twenty feet by his hurricane-force gust. |

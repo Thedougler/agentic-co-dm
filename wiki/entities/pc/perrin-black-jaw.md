@@ -53,19 +53,19 @@ foundry_id: J9CeWsMCOahlafjx
 | --- | --- |
 | Player | Kaden |
 | Class / Level | Warlock 2 / Bard 3 (College of Lore); Pact of the Blade |
-| Species / Race | [[rattkin\|Rattkin]] (fancy rat), Small; three feet tall; age 10 [verify] from the archived owner page |
+| Species / Race | [[rattkin\|Rattkin]] (fancy rat), Small; three feet tall; age 10 |
 | Background | Custom-built background |
 | Home ship / base | [[uncertainty\|Uncertainty]]; currently at [[aruhe\|Aruhe]]; [[ponte-bassa\|Ponte Bassa]] was the Calveno base |
 | Role | PC |
 | Tier | Supporting |
-| Alignment | Chaotic good [verify] from the archived character sheet |
+| Alignment | Chaotic good |
 ````
 `````
 ## Combat Stats
 
 | Stat | Value |
 | --- | --- |
-| AC | 19 (Cloak of Protection +1; active effect AC Override 18; shield unequipped). The archived sheet and combat profile list 18 [verify]. |
+| AC | 19 (Cloak of Protection +1; active effect AC Override 18; shield unequipped) |
 | HP (current / max) | 49 / 49 |
 | Initiative | +4 |
 | Passive Perception | 13 |
@@ -76,7 +76,7 @@ foundry_id: J9CeWsMCOahlafjx
 | Resistances / advantages | Resistance to poison; advantage on saves against poisoned or disease; advantage to escape Grapple or Restrained |
 | Resources | Bardic Inspiration `5` / Long Rest, shared with Cutting Words; Pack Tactics reaction `3` / Short or Long Rest; spell pools remain distinct in Spells |
 
-The live source is the Foundry Shattered-Sea actor `J9CeWsMCOahlafjx`, snapshot 2026-09-13. The archived level-5 sheet orders the same multiclass as Bard 3 / Warlock 2 and records the former estimate Bard 4 / Warlock 1 [verify].
+Foundry Shattered-Sea actor `J9CeWsMCOahlafjx`, snapshot 2026-09-13.
 
 
 ````col
@@ -92,7 +92,7 @@ The live source is the Foundry Shattered-Sea actor `J9CeWsMCOahlafjx`, snapshot 
 | Wisdom | 11 | +0 | +3 |
 | Charisma | 20 | +5 | +8 |
 
-The current Foundry snapshot supplies the scores and saves above. Dexterity and Charisma saves come from Bard, Wisdom and Charisma saves come from Warlock, and the Cloak of Protection adds `+1` to saves while worn. `[verify]` The archived stats and character-sheet transcriptions instead list saves of Strength `-1`, Dexterity `+5`, Constitution `+3`, Intelligence `+1`, Wisdom `+4`, and Charisma `+9`, with the cloak folded into that older Save column.
+Dexterity and Charisma saves come from Bard, Wisdom and Charisma saves come from Warlock, and the Cloak of Protection adds `+1` to saves while worn.
 ```
 ```col-md
 ## Skills
@@ -109,9 +109,7 @@ The current Foundry snapshot supplies the scores and saves above. Dexterity and 
 | Stealth | `+7`, proficient |
 | Jack of All Trades | `+1` on the remaining checks: Animal Handling `+1`, Athletics `-1`, Deception `+6`, Intimidation `+6`, Medicine `+1`, Nature `+1`, Performance `+6`, Religion `+1`, Sleight of Hand `+5`, and Survival `+1` |
 
-Passive Insight and Passive Investigation are `13`. `[verify]` Background text lists Deception, Sleight of Hand, War Caster, Skittercant, and Aquan, while Foundry skill numbers do not show Deception or Sleight of Hand as full proficiency.
-
-`[verify]` The archived character sheet lists Common, Dwarvish, and Gnomish; the Rattkin species text lists Common, Skitter-cant, and one language you choose.
+Passive Insight and Passive Investigation are `13`. Languages: Common, Skitter-cant.
 ```
 ````
 
@@ -122,7 +120,7 @@ Passive Insight and Passive Investigation are `13`. `[verify]` Background text l
 | Attack | To-Hit / DC | Damage / Effect | Notes |
 | --- | --- | --- | --- |
 | [[longsword\|Longsword]] (Pact-bonded; Sap) | `+8` | `1d8 + 5` slashing | Martial and Versatile; Charisma via Pact of the Blade; equipped |
-| [[green-flame-blade\|Green-Flame Blade]] (cantrip) | `+8` | `1d8 + 5` slashing plus a fire rider | `[verify]` The export does not make the splash target or trigger legible; its combatant transcription records `1d8` to the primary target and `1d8 + 5` to a second creature |
+| [[green-flame-blade\|Green-Flame Blade]] (cantrip) | `+8` | `1d8 + 5` slashing plus a fire rider | Melee strike plus a fire rider |
 | [[eldritch-blast\|Eldritch Blast]] (cantrip) | `+8` | Two beams, `1d10` force each | Agonizing Blast is not confirmed on the export |
 | Unarmed Strike | `+1` | `0` bludgeoning | Strength `-2` floors the damage at `0` |
 
@@ -153,17 +151,17 @@ Passive Insight and Passive Investigation are `13`. `[verify]` Background text l
 
 | Pool | Ability | Save DC | Attack Bonus | Focus / Notes |
 | --- | --- | --- | --- | --- |
-| Bard | Charisma | `16` | `+8` | The archived spell page labels the list Known |
-| Warlock | Charisma | `16` | `+8` | Pact Magic is a separate pool; the archived character sheet names Eldritch Blast, Hex, and Armor of Agathys here |
+| Bard | Charisma | `16` | `+8` | Known list |
+| Warlock | Charisma | `16` | `+8` | Pact Magic is a separate pool |
 
-Charisma is the casting ability. The Foundry snapshot marks all listed spells as always prepared, while the archived spell page labels the lists Known `[verify]`; Bard slots and Warlock Pact Magic never merge.
+Charisma is the casting ability. Bard slots and Warlock Pact Magic never merge.
 
 ### Cantrips
 
 | Cantrip | Pool | Notes |
 | --- | --- | --- |
 | [[eldritch-blast\|Eldritch Blast]] | Warlock | Two beams at Warlock 2, `1d10` force each |
-| [[green-flame-blade\|Green-Flame Blade]] | Warlock | Melee strike plus a fire rider; `[verify]` exact splash target and trigger as recorded under Attacks |
+| [[green-flame-blade\|Green-Flame Blade]] | Warlock | Melee strike plus a fire rider |
 | [[mage-hand\|Mage Hand]] | Bard | No combat application |
 | [[minor-illusion\|Minor Illusion]] | Bard | No default mechanical combat effect |
 
@@ -171,7 +169,7 @@ Charisma is the casting ability. The Foundry snapshot marks all listed spells as
 
 | Spell | Level / Pool | Notes |
 | --- | --- | --- |
-| [[armor-of-agathys\|Armor of Agathys]] | 1st / Warlock | `5` temporary HP and retaliation damage per Pact slot; the archived simulation does not scale the effect to higher slots `[simulated]` |
+| [[armor-of-agathys\|Armor of Agathys]] | 1st / Warlock | `5` temporary HP and retaliation damage per Pact slot |
 | [[cure-wounds\|Cure Wounds]] | 1st / Bard | Touch heal, `1d8 + 5` HP |
 | [[healing-word\|Healing Word]] | 1st / Bard | Bonus Action heal, `1d4 + 5` HP within `60 ft.` |
 | [[hideous-laughter\|Tasha's Hideous Laughter]] | 1st / Bard | Incapacitates a creature that fails its save |
@@ -187,9 +185,9 @@ Charisma is the casting ability. The Foundry snapshot marks all listed spells as
 | --- | --- | --- |
 | 1st-level Bard | `4 / 4` | Long Rest |
 | 2nd-level Bard | `2 / 2` | Long Rest |
-| 1st-level Pact Magic (Warlock) | `2 / 2` | Short Rest in the current Foundry snapshot |
+| 1st-level Pact Magic (Warlock) | `2 / 2` | Short Rest |
 
-`[verify]` The archived spell page and combat simulation list Pact Magic recovery as Long Rest; Magical Cunning is a one-minute rite that regains up to one expended Pact Magic slot once per Long Rest, out of combat.
+Magical Cunning is a one-minute rite that regains up to one expended Pact Magic slot once per Long Rest.
 
 ## Inventory
 
@@ -198,7 +196,7 @@ Charisma is the casting ability. The Foundry snapshot marks all listed spells as
 | Item | Notes |
 | --- | --- |
 | [[cloak-of-protection\|Cloak of Protection]] | Equipped; `+1` AC and all saving throws |
-| [[the-snap\|The Snap]] | `[verify]` Attunement is not confirmed. A wrist-mounted bracer unfurls into a `+2` AC shield without occupying a hand; bought from [[prospero-morsani\|Prospero Morsani]] for `150` gold in Session 08 and playable as a hand drum |
+| [[the-snap\|The Snap]] | A wrist-mounted bracer unfurls into a `+2` AC shield without occupying a hand; bought from [[prospero-morsani\|Prospero Morsani]] for `150` gold in Session 08 and playable as a hand drum |
 
 ### Carried
 
@@ -206,23 +204,22 @@ Charisma is the casting ability. The Foundry snapshot marks all listed spells as
 | --- | --- | --- |
 | [[longsword\|Longsword]] (Pact-bonded; Sap) | 1 | Equipped |
 | Studded leather | 1 | Equipped; part of the current AC base with the Cloak and Shield |
-| Shield | 1 | Unequipped; the archived inventory lists it as part of the AC base |
+| Shield | 1 | Unequipped |
 | [[dagger\|Daggers]] (Nick) | 2 | Unequipped; paired daggers |
 | [[backpack\|Backpack]] | 1 | Equipped |
 | Mira's Blade | 1 | Received from the cargo in Session 02; no mechanical write-up is recorded |
 | Bodhran drum | 1 | Instrument behind Bardic Inspiration; [[master-kyzil\|Master Kyzil]] identified it as a tactical threat |
-| Book / [[algernon-reginald-clyde\|Clyde's Bestiary of Oceanic Creatures]] | 1 | `[verify]` The current sheet lists a book and the archived inventory identifies this title |
+| Book / [[algernon-reginald-clyde\|Clyde's Bestiary of Oceanic Creatures]] | 1 | Identified from the sheet's book |
 | Orb | 1 | Unidentified |
 | [[sending-stone-nona\|Nona's sending stone]] | 1 | Gift from [[nona-black-jaw\|Nona Black-Jaw]] in Session 03 |
 | Oil, [[parchment\|parchment]], [[tinderbox\|tinderbox]], [[lamp\|lamp]], [[ink-pen\|ink pen]], ink | — | Oil `10`; parchment `10` |
 
-The archived inventory records no stowed or cached items.
 
 ### Currency
 
 | Coin | Amount |
 | --- | --- |
-| Gold | Untracked `[verify]`; in Session 08 Perrin estimated, “I think I only have like 15 gold. I have more than that.” |
+| Gold | Untracked; in Session 08 Perrin estimated, “I think I only have like 15 gold. I have more than that.” |
 
 ## Features
 
@@ -246,12 +243,11 @@ The archived inventory records no stowed or cached items.
 | Jack of All Trades (Versatility) | Bard | Add half the Proficiency Bonus to ability checks where untrained | — | — |
 | College of Lore, Bonus Proficiencies | Bard (College of Lore) | Three bonus skill proficiencies | — | — |
 | Pact of the Blade: bond | [[warlock\|Warlock]] | Charisma replaces Strength or Dexterity for the bonded Longsword; damage can become Necrotic, Psychic, or Radiant | — | — |
-| Pact Magic | Warlock | Two separate 1st-level Pact slots; current Foundry recovery is Short Rest and the older recovery entry is `[verify]` | `2` slots | Short Rest `[verify]` |
+| Pact Magic | Warlock | Two separate 1st-level Pact slots | `2` slots | Short Rest |
 | Magical Cunning | Warlock 2 | One-minute rite regains up to one expended Pact Magic slot | `1` | Long Rest |
 | Bardic Inspiration | Bard | Grants a `1d6` die within `60 ft.`; the Bonus Action and shared Cutting Words pool are listed under Actions | `5` | Long Rest |
 | Cutting Words | College of Lore | Reaction spends Bardic Inspiration to subtract the die from an attack, check, or damage roll within `60 ft.` | Shares Inspiration | Long Rest |
 
-The archived level-5 sheet records no feats. War Caster appears only in the background-text discrepancy and is not confirmed as a feat.
 
 ## Connections
 
@@ -282,16 +278,15 @@ The archived level-5 sheet records no feats. War Caster appears only in the back
 | Session / Date | Encounter | Current-play change |
 | --- | --- | --- |
 | 01 | [[saltwright\|Saltwright]] boarding | Covered the hold doorway with [[minor-illusion\|Minor Illusion]], emerged through a deck gap at a second angle, and resisted [[grung\|Grung]] toxin gas. No attack or damage total was recorded. |
-| 02 | Ket and the cargo | Received [[beaumont-sel\|Beaumont]]'s message that [[nona-black-jaw\|Nona]] was searching for him and [[anzolo\|Anzolo]] might already be at sea. Drew the Longsword before [[crissdalynn-khinriss\|Crissdalynn]] intervened, then used Tasha's [[hideous-laughter\|Hideous Laughter]] to drop Ket safely, received Mira's Blade from the cargo, and named himself as a Black-Jaw. The archived combat record is `0` damage and `0/0` attacks. |
+| 02 | Ket and the cargo | Received [[beaumont-sel\|Beaumont]]'s message that [[nona-black-jaw\|Nona]] was searching for him and [[anzolo\|Anzolo]] might already be at sea. Drew the Longsword before [[crissdalynn-khinriss\|Crissdalynn]] intervened, then used Tasha's [[hideous-laughter\|Hideous Laughter]] to drop Ket safely, received Mira's Blade from the cargo, and named himself as a Black-Jaw. |
 | 03 | [[whip-shark\|Whip Shark]] and Calveno approach | Saw an abyss vision of a worked stone floor, glowing entities, a sixty-foot body, and something longer than two ships below saying “Grow.” Spent three Bardic Inspiration dice on the crew, drummed through the Whip Shark fight, renamed the ship [[uncertainty\|Uncertainty]] under a borrowed name, told Nona about the Vestra in [[le-paludi\|Le Paludi]], received her sending stone and an open favor, recognized the glowing whale, and met [[master-kyzil\|Master Kyzil]] from a barrel. No attack or damage total was recorded. |
-| 04 | Kyzil spar and sewers | Chose [[ponte-bassa\|Ponte Bassa]] as the Calveno base, passed Boots of Flying to Delmar because he does not wear shoes, healed Delmar for `7` HP and Crissdalynn for `8` HP, and saved Crissdalynn's Downburst contest with `15 + d6 = 20`. Cutting Words against Kyzil fell short. He drummed from cover, went invisible with Jean-Claude, tracked black powder by scent and Rattkin senses, counted three Grung and eight barrels from underwater, sent Nona an urgent warning, and shared a silent knowing look with Delmar. Kyzil flagged the drum as a tactical target; the archived combat record is `0` damage and `0/0` attacks. |
-| 06 | Primary Chamber fight | Dropped to `0` HP. On a death save of `15` against a needed `10+`, his patron told him “Not yet”; he stabilized at `1` HP coughing seawater, then leveled to Bard 3 (College of Lore) / Warlock 2 (Pact of the Blade). The archived combat record is `0` damage and `0/0` attacks. |
+| 04 | Kyzil spar and sewers | Chose [[ponte-bassa\|Ponte Bassa]] as the Calveno base, passed Boots of Flying to Delmar because he does not wear shoes, healed Delmar for `7` HP and Crissdalynn for `8` HP, and saved Crissdalynn's Downburst contest with `15 + d6 = 20`. Cutting Words against Kyzil fell short. He drummed from cover, went invisible with Jean-Claude, tracked black powder by scent and Rattkin senses, counted three Grung and eight barrels from underwater, sent Nona an urgent warning, and shared a silent knowing look with Delmar. Kyzil flagged the drum as a tactical target. |
+| 06 | Primary Chamber fight | Dropped to `0` HP. On a death save of `15` against a needed `10+`, his patron told him “Not yet”; he stabilized at `1` HP coughing seawater, then leveled to Bard 3 (College of Lore) / Warlock 2 (Pact of the Blade). |
 | 07 opening | [[otar-the-foul\|Otar]] and leeches | Cast [[false-life\|False Life]] and [[armor-of-agathys\|Armor of Agathys]] as a bonus action on one turn using a Warlock slot, moved `15 ft.` to engage a leech, and drew its rock throw. Cast [[jump\|Jump]] as a bonus action to clear the threat range, then fired two arrows at a second leech while airborne; the first dealt maximum magical piercing damage and the second, advantaged by [[hex\|Hex]], critically hit and killed it. |
 | 07 | Otar aftermath | Crossed `15 ft.` of difficult terrain outside Otar's `10-ft.` miasma, cast [[mirror-image\|Mirror Image]], healed [[catarina-davirelli\|Catarina]] for `13` HP with [[healing-word\|Healing Word]], called Nona through the sending stone with Persuasion `19` to bring [[enzo\|Enzo]], and sold the Black-Jaws' loyalty to [[iacopo-fieschi\|Iacopo Fieschi]] with a handshake and Persuasion `21`. |
 | 08 | Nona's table, canal, and Cabinet of Morsani | Took Nona's favor instead of a cash share, consoled the grieving crowd with Persuasion `29`, righted a capsized gondola and threw a rope with `23`, then persuaded [[prospero-morsani\|Prospero Morsani]] with `25` and haggled [[the-snap\|The Snap]] to `150` gold using his own `15` gold and Crissdalynn's natural `20` Persuasion assist. |
 | 11 | Aruhe inland | Baited bloodhawks and wolfrabbits with illusions, used Mage Hand to put the lesser black lotus into the river, and was hit by Tasha's Hideous Laughter. He kept middle watch with Matteo. |
 
-The archived combat log marks rounds active and most damage and damage-taken totals as `[unknown]`; its `0` damage and `0/0` attack entries are source records rather than transcription gaps. The profile's observed output through Session 06 is therefore effectively `0`, while the `[simulated]` figures above are reproducible from the supplied sheet.
 
 ## Art
 

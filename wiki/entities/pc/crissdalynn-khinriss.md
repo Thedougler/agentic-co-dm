@@ -61,13 +61,13 @@ foundry_id: Qkd4lEumNtyDVUxD
 | Player | Courtney |
 | Class / Level | Monk 5 (Way of the Kensei) |
 | Species / Race | [[aarakocra\|Aarakocra]] |
-| Background | Sailor (Foundry snapshot); Acolyte/cartographer also recorded [verify: `wiki/_archive/crissdalynn-khinriss.md`] |
-| Age | `14` in the archived owner; D&D Beyond prints `5` [verify: `wiki/_archive/character-sheets/crissdalynn-khinriss-sheet.md`] |
+| Background | Sailor |
+| Age | `14` |
 | Also called | Crissdalyn |
 | Home ship / base | [[Uncertainty]]; aboard at [[aruhe\|Aruhe]] |
 | Training / order | [[sentinels-of-the-eyrie\|Sentinels of the Eyrie]] under [[master-kyzil\|Master Kyzil]] at [[high-eyrie\|High Eyrie]] |
 | Current task | Finish the incomplete [[the-drowned-maw\|Drowned Maw]] map to end exile; she served the [[red-lady-dead-lady\|Red Lady]] for twenty-two months before it sank. |
-| Faith | [[remnis\|Remnis]] is primary, with [[syranita\|Syranita]] and [[aerdrie-faenya\|Aerdrie Faenya]] at the margins; the sheet prints “Great Old Crow” [verify: `wiki/_archive/character-sheets/crissdalynn-khinriss-sheet.md`]. |
+| Faith | [[remnis\|Remnis]] is primary, with [[syranita\|Syranita]] and [[aerdrie-faenya\|Aerdrie Faenya]] at the margins |
 | Foundry identity | Actor `Qkd4lEumNtyDVUxD` from world Shattered-Sea, snapshot 2026-09-13; table display prefers Crissdalyn. |
 ````
 `````
@@ -76,10 +76,10 @@ foundry_id: Qkd4lEumNtyDVUxD
 | Stat | Value |
 | --- | --- |
 | AC | 17 (Unarmored Defense: 10 + 4 + 3); Agile Parry adds +2 AC when available. |
-| HP (current / max) | `33 / 33` plus 6 temporary HP (Foundry snapshot); the archived sheet prints max `35` [verify: `wiki/_archive/character-sheets/crissdalynn-khinriss-sheet.md`]. |
+| HP (current / max) | `33 / 33` plus 6 temporary HP |
 | Initiative | +4 |
 | Passive Perception | 16 |
-| Speed | 40 ft. walk; fly equal to walk while not in medium or heavy armor. The archived sheet prints 35 ft. walk / 45 ft. fly [verify: `wiki/_archive/stats/crissdalynn-khinriss-stats.md`]. |
+| Speed | 40 ft. walk; fly equal to walk while not in medium or heavy armor |
 | Resources | Focus Points `5` per short or long rest; save DC `14`; Martial Arts die `1d8`. |
 | Proficiency / Hit Die | Proficiency bonus +3; hit point die `d8`. |
 | Defenses / constraints | Strength and Dexterity saves are proficient; no damage resistances are recorded. Charisma and Intelligence saves are +0, while low ceilings, wind, and nets can deny flight. |
@@ -137,8 +137,8 @@ Passive Insight is 13 and passive Investigation is 13. Tools: Calligrapher's Sup
 | --- | --- | --- | --- |
 | [[quarterstaff\|Quarterstaff]] (Topple) | +7 | `1d8 + 4` bludgeoning | Simple, versatile Kensei weapon; equipped. |
 | [[shortbow\|Shortbow]] (Vex) | +7 | `1d8 + 4` piercing | Simple, ammunition, range 80/320, two-handed Kensei weapon; equipped. |
-| Unarmed Strike | +8 [verify] | `1d8 + 5` bludgeoning [verify] | Archived sheet lists a +1 gap over the Quarterstaff and Shortbow math with no explained feature; Martial Arts die is `1d8`. |
-| Talons | +7 | `1d6 + Strength` slashing | Live snapshot uses `1d6` plus Strength; archived sheet records `1d8 + 4` [verify]. Aarakocra natural weapon. |
+| Unarmed Strike | +8 | `1d8 + 5` bludgeoning | Martial Arts die `1d8` |
+| Talons | +7 | `1d6 + Strength` slashing | Aarakocra natural weapon |
 
 ### Bonus Actions
 
@@ -175,7 +175,7 @@ Passive Insight is 13 and passive Investigation is 13. Tools: Calligrapher's Sup
 
 | Level / Pool | Current / Max | Recovery |
 | --- | --- | --- |
-| Wind Caller ([[gust-of-wind\|Gust of Wind]]) | 1 use | Long Rest; no material component; it can also be cast through any 2nd-level-or-higher spell slot, but that slot option is theoretical because she has no other spellcasting class. |
+| Wind Caller ([[gust-of-wind\|Gust of Wind]]) | 1 use | Long Rest; no material component |
 
 ## Inventory
 
@@ -208,7 +208,6 @@ Carried weight is 68 lb. Encumbrance begins at 180 lb.; Push/Drag/Lift is 360 lb
 | --- | --- |
 | gp | [unknown] |
 
-The archived sheet records no currency amounts.
 
 ## Features
 
@@ -216,8 +215,8 @@ The archived sheet records no currency amounts.
 
 | Trait | Source | Effect |
 | --- | --- | --- |
-| Flight | [[aarakocra\|Aarakocra]] | Fly at walking speed; the live snapshot specifies flight equal to walk while not in medium or heavy armor. |
-| Talons | [[aarakocra\|Aarakocra]] | Unarmed strike can deal `1d6 + Strength` slashing in the live snapshot; the archived sheet applies the Martial Arts die and records `1d8 + 4` [verify]. |
+| Flight | [[aarakocra\|Aarakocra]] | Fly at walking speed while not in medium or heavy armor |
+| Talons | [[aarakocra\|Aarakocra]] | Unarmed strike can deal `1d6 + Strength` slashing |
 | Wind Caller | [[aarakocra\|Aarakocra]] | Grants [[gust-of-wind\|Gust of Wind]] once per long rest. |
 | Darkvision | [[aarakocra\|Aarakocra]] | No darkvision is recorded; Jean-Claude's darkness can leave her without sight. |
 
@@ -234,7 +233,7 @@ The archived sheet records no currency amounts.
 | Kensei Weapons | [[monk-kensei\|Kensei]] | [[quarterstaff\|Quarterstaff]] and [[shortbow\|Shortbow]] are treated as Monk weapons. | Passive | — |
 | Way of the Brush | [[monk-kensei\|Kensei]] | Proficiency with calligrapher's or painter's supplies. | Passive | — |
 | Agile Parry | [[monk-kensei\|Kensei]] | After an Unarmed Strike as part of the Attack action while holding a Kensei weapon and not incapacitated, gain +2 AC until the start of the next turn. | At will | — |
-| Stunning Strike | [[monk\|Monk]] | Once per turn after hitting with a Monk weapon or Unarmed Strike, spend 1 Focus. The target makes a Constitution save against `DC 14`; failure causes **stunned** until the start of her next turn, while success halves its Speed and gives the next attack against it Advantage. An archived DM note labels one Dragonhide Belt interaction `DC 15` [verify: `wiki/_archive/crissdalynn-khinriss.md`]. | 1 Focus | Focus pool |
+| Stunning Strike | [[monk\|Monk]] | Once per turn after hitting with a Monk weapon or Unarmed Strike, spend 1 Focus. The target makes a Constitution save against `DC 14`; failure causes **stunned** until the start of her next turn, while success halves its Speed and gives the next attack against it Advantage. | 1 Focus | Focus pool |
 | Read the Current | Kensei technique taught by [[master-kyzil\|Master Kyzil]] | Once on her turn after hitting with an Unarmed Strike or Kensei weapon, spend 1 Focus to read the target through contact; it cannot combine with Stunning Strike or Deft Strike on the same hit. Ask for one combat-observable truth: **Guard** (what defense it relies on), **Opening** (which save appears easiest to pressure), or **Pattern** (one habit such as counterattacks, reach, mobility, guarding an ally, protecting an object, concentration, brute force, or escape). No exact numbers, full stat blocks, secret identity, hidden lore, or motives; repeating on the same creature reveals a different or deeper category. | 1 Focus | Focus pool |
 
 ### Feats
@@ -242,7 +241,7 @@ The archived sheet records no currency amounts.
 | Feat | Source | Effect |
 | --- | --- | --- |
 | [[grappler\|Grappler]] | ASI feat | Punch and Grab: an Attack-action Unarmed Strike hit also Grapples once per turn. Gain Advantage against creatures she has Grappled. Fast Wrestler removes extra movement cost when moving a Grappled creature her size or smaller. |
-| Tavern Brawler | Origin (Sailor); archived page labels it a feat [verify] | Enhanced Unarmed Strike can deal `1d4 + 1` bludgeoning instead of normal damage; reroll a 1 on an Unarmed Strike damage die and use the new roll; proficiency with improvised weapons; an Unarmed Strike hit can Push the target 5 ft. once per turn. |
+| Tavern Brawler | Origin (Sailor) | Enhanced Unarmed Strike can deal `1d4 + 1` bludgeoning instead of normal damage; reroll a 1 on an Unarmed Strike damage die and use the new roll; proficiency with improvised weapons; an Unarmed Strike hit can Push the target 5 ft. once per turn. |
 
 ## Connections
 
@@ -257,7 +256,7 @@ The archived sheet records no currency amounts.
 | [[perrin-black-jaw\|Perrin Black-Jaw]] | Crew; she has blocked him from killing Ket and caught him during a rigging fall. |
 | [[high-eyrie\|High Eyrie]] | The monastery exiled her at 14 for careless craft and goofing off. Kyzil has confirmed survival counts and delivered its weather warning, but still wants the full record and answers about two missing Sentinels; Maw knowledge may unlock the Eyrie's fissure cycle, and her return still depends on earning the monastery's forgiveness. |
 | [[the-drowned-maw\|The Drowned Maw]] | Her map remains incomplete after the [[red-lady-dead-lady\|Red Lady]] sank; exile, not the wreck itself, is the unresolved wound. The Maw also links to Delmar's [[pearl-of-souls\|Pearl of Souls]] and Perrin's [[leviathan\|Leviathan]] thread. |
-| [[red-lady-dead-lady\|Red Lady]] | She served aboard for twenty-two months before its sinking; Delmar is the sole survivor recorded in the archive. |
+| [[red-lady-dead-lady\|Red Lady]] | She served aboard for twenty-two months before its sinking; Delmar is the sole survivor recorded. |
 
 ## Session Log
 

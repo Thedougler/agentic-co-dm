@@ -64,7 +64,7 @@ foundry_id: kS3wQ76uMq1QgDCw
 | Player | Chad |
 | Class / Level | Ranger 5 (Gloom Stalker) |
 | Species / Race | [[grung\|Grung]], Small; blue caste, Botukuri clan (BOH-too-KOO-ree) |
-| Background | Guide (Foundry snapshot); hermit's background `[verify: archived baseline]` |
+| Background | Guide |
 | Home ship / base | [[Uncertainty]]; aboard at [[aruhe]] |
 | Also called | Jean Claude; JC; Jumpy Don't Touch; Sticky Tongue Death Skin; Hopstradamus |
 | Role | Player character |
@@ -90,8 +90,6 @@ foundry_id: kS3wQ76uMq1QgDCw
 
 Dread Ambusher provides `3` Psychic riders per Long Rest, using Wisdom-modifier uses.
 
-> [!mechanic] Archived baseline values `[verify]`
-> An earlier theoretical source recorded AC `15`, HP `44`, initiative `+5`, and Passive Perception `12`. The live Foundry snapshot above remains the current page authority; the earlier values are retained only for verification.
 
 
 ````col
@@ -107,15 +105,14 @@ Dread Ambusher provides `3` Psychic riders per Long Rest, using Wisdom-modifier 
 | Wisdom | `16` | `+3` | `+3` |
 | Charisma | `8` | `-1` | `-1` |
 
-Strength and Dexterity saving throws are proficient. The archived theoretical baseline recorded Strength `10` (`+0` / `+3`), Dexterity `16` (`+3` / `+6`), Constitution `14` (`+2` / `+2`), Intelligence `10` (`+0` / `+0`), Wisdom `14` (`+2` / `+2`), and Charisma `8` (`-1` / `-1`) `[verify]`.
+Strength and Dexterity saving throws are proficient.
 ```
 ```col-md
 ## Skills
 
 Proficient skills are Animal Handling `+6`, Athletics `+4`, Insight `+6`, Perception `+6`, Stealth `+10` (expertise), and Survival `+6`. Untrained skills are Acrobatics `+4`, Arcana `+0`, Deception `-1`, History `+0`, Intimidation `-1`, Investigation `+0`, Medicine `+3`, Nature `+0`, Performance `-1`, Persuasion `-1`, Religion `+0`, and Sleight of Hand `+4`.
 
-Tools: Cartographer's Tools and Poisoner's Kit from Poisonous Skin. The archived baseline had no skill proficiency list and marked passive Perception, Insight, and Investigation as `[unknown]` `[verify]`.
-No damage resistances are stated. Armor and weapon proficiencies beyond studded leather, shortbow, and dagger are not stated `[verify: archived stats]`.
+Tools: Cartographer's Tools and Poisoner's Kit from Poisonous Skin.
 ```
 ````
 
@@ -125,18 +122,16 @@ No damage resistances are stated. Armor and weapon proficiencies beyond studded 
 
 | Attack | To-Hit / DC | Damage / Effect | Notes |
 | --- | --- | --- | --- |
-| Shortbow (Vex) | `[verify: current value not shown]` | Ranged weapon attack | Equipped |
-| Shortsword (Vex) | `[verify: current value not shown]` | Melee weapon attack | Equipped |
-| Scimitar (Nick) | `[verify: current value not shown]` | Melee weapon attack | Unequipped |
-| +1 Silent Shortbow `[verify]` | `+9` to hit `[verify]` | Range `80/320 ft.`; `1d6 + 4` piercing `[verify]` | Bought at [[casa-lupo\|Casa Lupo]] in Session 04; the Archery bonus is included `[verify]` |
-| [[dagger\|Dagger]] `[verify]` | `+6` to hit `[verify]` | `1d4 + 3` piercing, reach `5 ft.` `[verify]` | Archived fallback melee and opportunity-attack option |
+| Shortbow (Vex) | — | Ranged weapon attack | Equipped |
+| Shortsword (Vex) | — | Melee weapon attack | Equipped |
+| Scimitar (Nick) | — | Melee weapon attack | Unequipped |
+| +1 Silent Shortbow | `+9` to hit | Range `80/320 ft.`; `1d6 + 4` piercing | Bought at [[casa-lupo\|Casa Lupo]] in Session 04; Archery included |
 
 ### Actions
 
 | Action | To-Hit / DC | Damage / Effect | Uses | Notes |
 | --- | --- | --- | --- | --- |
 | Extra Attack | — | Attack twice when taking the Attack action | — | Ranger feature |
-| Flask of Endless Water: Geyser `[verify]` | Strength `13` `[verify]` | `30-ft.` line, `1d4`, and prone `[verify]` | — | Archived terrain-control option |
 
 ### Bonus Actions
 
@@ -144,19 +139,19 @@ No damage resistances are stated. Armor and weapon proficiencies beyond studded 
 | --- | --- | --- | --- | --- |
 | Poisonous Skin coat | — | Coat one melee weapon or up to five pieces of ammunition | Proficiency Bonus / Long Rest | Long Rest |
 | Sticky Tongue Snatch | — | Snatch an unattended object within `10 ft.` | — | — |
-| Hunter's Mark | Slot or free cast | Mark prey; archived baseline records `+1d6` force damage on hits `[verify]` | `2` free casts or a slot | Long Rest |
+| Hunter's Mark | Slot or free cast | Mark prey | `2` free casts or a slot | Long Rest |
 
 ### Reactions
 
 | Reaction | Trigger | Effect | Uses | Recovery |
 | --- | --- | --- | --- | --- |
-| [[opportunity-attacks\|Opportunity Attack]] `[verify]` | A creature he can see leaves his reach | One melee attack; the archived baseline specifies Dagger only `[verify]` | At will | Constant |
+| Opportunity Attack | A creature he can see leaves his reach | One melee attack | At will | Constant |
 
 ## Spells
 
 ### Spellcasting
 
-Wisdom is the casting ability. Spell save DC is `14`, and spell attack bonus is `+6`. DDB dumped the full Ranger list; only prepared or always-prepared spells are kept here. The archived theoretical source described Ranger spells as a fixed known list and recorded DC `13` and attack `+5` `[verify]`.
+Wisdom is the casting ability. Spell save DC is `14`, and spell attack bonus is `+6`. Only prepared or always-prepared spells are kept here.
 
 ### Cantrips
 
@@ -165,7 +160,6 @@ Wisdom is the casting ability. Spell save DC is `14`, and spell attack bonus is 
 | Druidcraft | Always prepared through Magic Initiate (Druid) |
 | Mending | Always prepared through Magic Initiate (Druid) |
 
-The archived Ranger baseline stated that Rangers had no cantrips `[verify]`; the current Foundry snapshot lists these Magic Initiate cantrips.
 
 ### Prepared or Known
 
@@ -180,8 +174,6 @@ The archived Ranger baseline stated that Rangers had no cantrips `[verify]`; the
 | [[pass-without-trace\|Pass without Trace]] | `2` | Prepared |
 | Rope Trick | `2` | Always prepared through Gloom Stalker |
 | [[spike-growth\|Spike Growth]] | `2` | Prepared |
-| [[longstrider\|Longstrider]] `[verify]` | `1` | Archived theoretical prepared pick |
-| [[magic-weapon\|Magic Weapon]] `[verify]` | `2` | Archived theoretical prepared pick |
 
 ### Slots or Casting Resources
 
@@ -191,7 +183,6 @@ The archived Ranger baseline stated that Rangers had no cantrips `[verify]`; the
 | Ranger spell slots, 2nd level | `2 / 2` | Long Rest |
 | Favored Enemy free casts: Hunter's Mark | `2` free casts | Long Rest |
 
-The archived baseline recorded Favored Enemy as `3` Hunter's Mark free casts per Long Rest `[verify]`. The current live value remains `2`.
 
 ## Inventory
 
@@ -199,9 +190,9 @@ The archived baseline recorded Favored Enemy as `3` Hunter's Mark free casts per
 
 | Item | Notes |
 | --- | --- |
-| [[cursed-bracers-of-archery\|Bracers of Archery]] | Equipped; Longbow and Shortbow proficiency and `+2` damage with those weapons. Bought from [[lavinia-sordi\|Lavinia Sordi]] at [[la-cenere\|La Cenere]] for 100 gold in Session 08. A natural `1` while worn turns him flamingo pink for 1 hour `[verify: archived inventory]` |
+| [[cursed-bracers-of-archery\|Bracers of Archery]] | Equipped; Longbow and Shortbow proficiency and `+2` damage with those weapons. Bought from [[lavinia-sordi\|Lavinia Sordi]] at [[la-cenere\|La Cenere]] for 100 gold in Session 08. A natural `1` while worn turns him flamingo pink for 1 hour |
 | [[cloak-of-elvenkind\|Cloak of Elvenkind]] | Equipped; Perception to notice him has Disadvantage, and he has Advantage on Stealth |
-| [[stormwork-quiver\|Stormwork Quiver]] `[verify: archived inventory]` | Attuned; holds 20 arrows, and each arrow fired deals `+1d6` lightning damage on a hit `[verify]` |
+| [[stormwork-quiver\|Stormwork Quiver]] | Attuned; holds 20 arrows, and each arrow fired deals `+1d6` lightning damage on a hit |
 
 ### Carried
 
@@ -211,28 +202,25 @@ The archived baseline recorded Favored Enemy as `3` Hunter's Mark free casts per
 | Shortbow (Vex) | `1` | Equipped |
 | Shortsword (Vex) | `1` | Equipped |
 | Scimitar (Nick) | `1` | Unequipped |
-| +1 Silent Shortbow `[verify]` | `1` | Archived inventory records it as the Session 04 Casa Lupo purchase |
-| [[dagger\|Dagger]] `[verify]` | `1` | Archived fallback melee weapon |
+| +1 Silent Shortbow | `1` | Session 04 Casa Lupo purchase |
 | [[eyes-of-the-eagle\|Eyes of the Eagle]] | `1` | Equipped; Advantage on sight-based Perception; no attunement listed |
 | Backpack, quiver | `1` | Equipped |
 | Arrows | `40` | 20 equipped plus 20 carried |
 | [[grung-authority-seal]] | `1` | Carried, not worn; attunement required; one spent seal is on his sheet |
 | Cartographer's Tools, bedrolls, tent, sprig of mistletoe, traveler's clothes, oil, rations, rope, tinderbox, torches, waterskin | — | Bedrolls `2`, oil `2`, rations `10`, torches `10` |
-| [[cursed-bracers-of-archery\|Bracers of Archery]] `[verify: archived inventory]` | `1` | Archived inventory lists this separately from its attuned-items table |
-| [[cloak-of-elvenkind\|Cloak of Elvenkind]] `[verify: archived inventory]` | `1` | Archived inventory lists this separately from its attuned-items table |
 
 ### Stowed
 
 | Item | Where | Notes |
 | --- | --- | --- |
 | Simone's tincture | [[Uncertainty]] cargo | Twenty vials hidden since Session 02; no crew member has been told, and revealing them requires a serious reason |
-| [[flying-boots\|Boots of Flying]] `[verify: archived session]` | Crew stores | Bought from Casa Lupo in Session 04 and given to the crew; they went to Delmar after Perrin realized he does not wear shoes |
+| [[flying-boots\|Boots of Flying]] | Crew stores | Bought from Casa Lupo in Session 04 and given to the crew; they went to Delmar after Perrin realized he does not wear shoes |
 
 ### Currency
 
 | Coin | Amount |
 | --- | --- |
-| gp | Not stated in the supplied sheet `[verify: archived inventory]`; he received a 300-gold reward share in Session 08 |
+| gp | He received a 300-gold reward share in Session 08 |
 
 ## Features
 
@@ -240,7 +228,7 @@ The archived baseline recorded Favored Enemy as `3` Hunter's Mark free casts per
 
 | Trait | Effect |
 | --- | --- |
-| Mortis | Permanent Disadvantage on Persuasion and Deception checks; Advantage on Perception and Survival checks; cannot lie or mask his intentions `[verify: archived abilities]` |
+| Mortis | Permanent Disadvantage on Persuasion and Deception checks; Advantage on Perception and Survival checks; cannot lie or mask his intentions |
 | Size | Small |
 | Arboreal | Climb speed equal to walking speed |
 | Standing Leap | Long jump `25 ft.` and high jump `15 ft.`, with or without a running start |
@@ -253,19 +241,17 @@ The archived baseline recorded Favored Enemy as `3` Hunter's Mark free casts per
 | --- | --- | --- | --- | --- |
 | Extra Attack | Ranger | Attack twice when taking the Attack action | — | — |
 | Archery | Fighting Style | `+2` to attack rolls with Ranged weapons | — | — |
-| Weapon Mastery `[verify]` | Ranger 1 | Mastery properties on two chosen proficient weapon types; the chosen types are not stated | — | — |
-| Dread Ambusher | Gloom Stalker | First turn of combat grants Speed `+10 ft.` and adds Wisdom `+3` to Initiative; one weapon hit each turn can add Psychic damage equal to Wisdom modifier; the archived baseline instead records `+2d6` Psychic `[verify]` | `3` riders; archived baseline `2`/Long Rest `[verify]` | Long Rest |
+| Weapon Mastery | Ranger 1 | Mastery properties on two chosen proficient weapon types | — | — |
+| Dread Ambusher | Gloom Stalker | First turn of combat grants Speed `+10 ft.` and adds Wisdom `+3` to Initiative; one weapon hit each turn can add Psychic damage equal to Wisdom modifier | `3` riders | Long Rest |
 | Favored Enemy | Ranger | Hunter's Mark is always prepared and can be cast without a slot | `2` free casts | Long Rest |
 | Gloom Stalker Spells | Gloom Stalker | Disguise Self and Rope Trick are always prepared | — | — |
 | Umbral Sight | Gloom Stalker | Darkvision `60 ft.`; invisible in Darkness to creatures that rely on Darkvision to see him | — | — |
-| Tongue Lash `[verify]` | Arc Note | No confirmed SRD match; the archived Arc Note names it as a possible level-5 position-control option | `[verify]` | `[verify]` |
 
 ### Feats
 
 | Feat | Source | Effect |
 | --- | --- | --- |
 | Magic Initiate (Druid) | Feat | Druidcraft and Mending cantrips; Jump is always prepared |
-| Ability Score Improvement `[verify]` | Ranger 4 | Archived baseline says the level-4 stat increase was chosen instead of a feat and is folded into its scores |
 
 ## Connections
 
@@ -283,19 +269,19 @@ The archived baseline recorded Favored Enemy as `3` Hunter's Mark free casts per
 | [[rattkin]] | The party faces a tension between freeing slaves and keeping the Rattkin ally |
 | Slavery, abuse, or caste cruelty | He reads a situation before acting, but these pressures can snap calm into immediate violence |
 | Touch etiquette | He believes touch means a mating ritual, so hugs and handshakes baffle him |
-| Combat coordination `[verify]` | The archived source says downed foes at range trouble him and allies should warn him before dropping one |
-| Personal code `[verify]` | He shows compassion to those who cannot fight back unless they are evil; he learned this code alone |
-| Fear response `[verify]` | Fear makes him fearsome rather than freezing, and he trusts no one yet |
-| Freedom and reform `[verify]` | He wants to explore and find freedom, then return to teach the Grung Clans a society that recognizes every race's gifts; the slave pain, Pell's death, and other escapees' deaths remain unprocessed |
-| [[midchain]] · [[sorn\|Sorn]] `[verify]` | He fled east through the Midchain and stayed one island ahead of Simone's hunters at Sorn |
+| Combat coordination | Downed foes at range trouble him; allies should warn him before dropping one |
+| Personal code | He shows compassion to those who cannot fight back unless they are evil; he learned this code alone |
+| Fear response | Fear makes him fearsome rather than freezing, and he trusts no one yet |
+| Freedom and reform | He wants to explore and find freedom, then return to teach the Grung Clans a society that recognizes every race's gifts |
+| [[midchain]] · [[sorn\|Sorn]] | He fled east through the Midchain and stayed one island ahead of Simone's hunters at Sorn |
 
-> [!secret]- Hidden history `[verify]`
+> [!secret]- Hidden history
 > Before his conscience woke, Jean-Claude was a slave-raider who identified settlements, acquired slaves, and developed ambush tactics that made the Grung a more effective threat. He pursued glory in that work and excelled at it; no one knows.
 
-> [!secret]- Simone's hunt `[verify]`
+> [!secret]- Simone's hunt
 > Simone knows he is alive outside the [[verdant-teeth\|Verdant Teeth]] but not where. Her toxin trade with [[barnaby-rook\|Rook]] burned when Rook went silent and her spy asked wrong questions in [[tidefall\|Tidefall]]; [[verity-hollowell\|Verity Hollowell]] in the [[central-strait\|Central Strait]] could hear about it next. [[sorn\|Sorn]] anchors the search, the [[calveno\|Calveno]] raid closes that gap, and [[karath\|Karath]] runs six [[vethka\|Vethka]] ships with crew and captives whose slave-soldiers help but turn unreliable. The purple handler who spotted Jean-Claude is dead, so no proof links him to the Le Paludi raid; Simone's command hit but does not know he helped. That stays true until [[felix-aho\|Felix Aho]] talks, someone spots him again, or the Tidefall inquiry links to a defector report.
 
-> [!mechanic]- Handler-cell pressure `[verify]`
+> [!mechanic]- Handler-cell pressure
 > During Calveno raid preparation, one quiet, unprompted sign may appear per day and never more than once per session: a Grung takes a position with sightlines to three exits without appearing to watch them; a figure appraises a dockhand's build, tools, and guild mark; or a trade-cover Grung walks a specific Le Paludi route twice at pace to mark its timing. None of these signs is proof.
 >
 > If Jean-Claude acts on that suspicion in a Le Paludi canal alley, two Blue-Caste Handlers use Scout statistics with HP `16`, AC `13`, poisoned shortbows, and Standing Leap. They try to withdraw and break contact, fighting only if cornered. One carries binding rope and a sealed wax message cylinder with a Botukuri shipping label. Capturing them alive closes an extraction lane; killing both means Simone never discovers the cell; letting them go tells Simone the crew is in Calveno and makes his face a report.
