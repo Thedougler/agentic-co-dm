@@ -20,11 +20,10 @@ hp_max:
 init_mod:
 pp:
 speed: ""
-status: alive
 ---
 <!-- Copy-start scaffold for a canonical type: pc owner page.
 
-Live owner: wiki/entities/pc/<kebab-slug>.md. Flatten archived sheets, abilities, spells, inventory, combat profiles, galleries, and session logs into these homes; do not create a second live facet page. Preserve source lineage, aliases, links, unknowns, and [verify] markers. Omit an optional section or empty subsection. The player controls this PC. Narration is player-safe; mechanics stay outside it. Escape alias pipes as \| inside Markdown table cells so wikilinks remain valid.
+Live owner: wiki/entities/pc/<kebab-slug>.md. Flatten archived sheets, abilities, spells, inventory, combat profiles, galleries, and session logs into these homes; do not create a second live facet page. Preserve source lineage, aliases, links, and known values. Omit unknown source values, empty subsections, and empty optional sections. Summary is one concise DM-readable sentence, not a prescribed play pattern. The player controls this PC. Narration is player-safe; mechanics stay outside it. Escape alias pipes as \| inside Markdown table cells so wikilinks remain valid.
 
 Portrait + Identity pair: when at least one picture of the character exists, use the col/col-md pair below. Left col-md holds only the portrait embed. Right col-md holds ## Identity. When no art exists, remove the col fences and render ## Identity full-width with no empty portrait column.
 -->
@@ -63,8 +62,8 @@ Portrait + Identity pair: when at least one picture of the character exists, use
 
 List character-specific resources and counters when known.
 
-````col
-```col-md
+`````col
+````col-md
 ## Ability Scores
 
 | Ability | Score | Mod | Save |
@@ -75,13 +74,13 @@ List character-specific resources and counters when known.
 | Intelligence | | | |
 | Wisdom | | | |
 | Charisma | | | |
-```
-```col-md
+````
+````col-md
 ## Skills
 
 List known skill bonuses and proficiencies. Do not duplicate Combat Stats numbers.
-```
 ````
+````col-md
 
 ## Actions
 
@@ -113,7 +112,7 @@ Omit empty subsections. Each populated row states effect, uses, and recovery whe
 
 ## Spells
 
-Include only for a caster or another castable resource. Omit empty subsections and keep multiclass pools distinct.
+Always present. State none when the character has no spells. Omit empty subsections and keep multiclass pools distinct.
 
 ### Spellcasting
 
@@ -186,6 +185,8 @@ Omit empty subsections. Each populated row states effect, uses, and recovery whe
 | Feat | Source | Effect |
 | --- | --- | --- |
 | | | |
+````
+`````
 
 ## Connections
 
@@ -197,7 +198,7 @@ Escape alias pipes as `\|` inside table cells. Omit this section when there are 
 
 ## Stated Goals
 
-Omit when no transcript-supported player-stated goal exists. List only goals the player clearly stated in a game-session transcript, in character or out of character. Cite the session. A session summary may help locate or paraphrase a transcript-supported goal but must not be the sole source. Do not infer from play, connections, or DM thesis. After every session that included that player, refresh: add newly stated goals; remove a goal only if the player said it is done or abandoned.
+Omit when no transcript-supported player-stated goal exists. List only goals the player clearly stated in a game-session transcript, in character or out of character. Cite the session. A session summary may help locate or paraphrase a transcript-supported goal but must not be the sole source. Do not infer from play or connections. After every session that included that player, refresh: add newly stated goals; remove a goal only if the player said it is done or abandoned.
 
 | Goal | Session | Notes |
 | --- | --- | --- |
