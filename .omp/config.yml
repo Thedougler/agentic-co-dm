@@ -36,3 +36,9 @@ lsp:
   diagnosticsDeduplicate: true
 disabledExtensions:
   - context-file:project:CLAUDE.md
+skills:
+  enableClaudeProject: false
+  enableClaudeUser: false
+  enableCodexUser: false
+  ignoredSkills:
+    - speckit-*
