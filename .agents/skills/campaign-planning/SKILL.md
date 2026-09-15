@@ -11,6 +11,8 @@ description: >-
 
 Prep only. Follow `docs/agents/work.md`.
 
+If the DM wants loose riffs before architecture, hand off to `campaign-brainstorming`.
+
 Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
 
 Players see nothing until the DM accepts and presents.

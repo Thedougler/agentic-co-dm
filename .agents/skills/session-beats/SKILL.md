@@ -13,6 +13,8 @@ description: >-
 
 Prep only. Follow `docs/agents/work.md`.
 
+If the DM wants loose next-session riffs before Beat Chart composition, hand off to `campaign-brainstorming`.
+
 ## HARD: entity-before-spoken (Nick 2026-09-14)
 
 **Production session content** (session-prep beats, TotM/`[!narration]`, action cards, spoken text) is **complete or it does not ship**. Vague/non-specific descriptions of unnamed people/things because the entity page is missing = **critical error**.
