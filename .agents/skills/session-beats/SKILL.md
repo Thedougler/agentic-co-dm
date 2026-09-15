@@ -45,6 +45,8 @@ Pairs with entity-before-spoken. Completeness/explicitness gates — do **not** 
 ## Filed session plan
 
 After accept, file one session plan at `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<number>-00-<Title>.md` copied from `wiki/templates/session-plan.md` with `type: session-prep` and `kind: session-plan`. Jobs: compass, Beat Map, Floating Beats, Pressure, PC Touchpoints, and links to typed beat pages. The plan MUST NOT duplicate Scene ends when, Zones, or Be ready for. Live beats are typed pages filled by their type skills.
+When planning includes a player, read that PC's `## Stated Goals` when present. Do not write the PC owner page.
+
 
 `references/session-skeleton.md` is the planning form. The filed page the DM opens is the filled session-plan template, not the planning skeleton.
 

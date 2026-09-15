@@ -31,6 +31,7 @@ type: pc
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
+cssclasses: [pc-sheet]
 status: alive
 player: Chad
 class_levels: "Ranger 5 (Gloom Stalker)"
@@ -47,8 +48,11 @@ foundry_id: kS3wQ76uMq1QgDCw
 > [!narration] Narration
 > Electric-blue skin marked by black patches on a small, scarred, three-foot frame. Ranger gear, a red beret, and a false moustache he calls Corto di Velo. Wary eyes. What you see is what he is.
 
-````col
-```col-md
+`````col
+````col-md
+![[jean-claude-tabarnack-portrait|Jean-Claude Tabarnack portrait]]
+````
+````col-md
 ## Identity
 
 | Field | Value |
@@ -64,8 +68,9 @@ foundry_id: kS3wQ76uMq1QgDCw
 | Proficiency Bonus | `+3` |
 | Foundry actor | `kS3wQ76uMq1QgDCw` (Jean Claude Tabarnack) |
 | Foundry snapshot | Shattered-Sea actor snapshot dated 2026-09-13 |
-```
-```col-md
+````
+`````
+
 ## Combat Stats
 
 | Stat | Value |
@@ -84,8 +89,6 @@ Ranger spell slots are `1st: 4/4` and `2nd: 2/2`, recovering on a Long Rest. Dre
 > [!mechanic] Archived baseline values `[verify]`
 > An earlier theoretical source recorded AC `15`, HP `44`, initiative `+5`, and Passive Perception `12`. The live Foundry snapshot above remains the current page authority; the earlier values are retained only for verification.
 
-```
-````
 
 ````col
 ```col-md
@@ -310,4 +313,3 @@ The archived baseline recorded Favored Enemy as `3` Hunter's Mark free casts per
 ## Art
 
 ![[jean-claude-tabarnack-banner|Jean-Claude Tabarnack banner]]
-![[jean-claude-tabarnack-portrait|Jean-Claude Tabarnack portrait]]

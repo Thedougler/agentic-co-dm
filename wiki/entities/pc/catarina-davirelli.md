@@ -22,6 +22,7 @@ lifecycle_changed: "2026-09-13"
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
+cssclasses: [pc-sheet]
 status: alive
 player: Kaitlin
 class_levels: "Artificer 5 (Artillerist)"
@@ -44,8 +45,11 @@ tier: supporting
 > [!narration] Narration
 > Youthful, white-haired, human. Tools and a breastplate before a blade. The workshop smell rides with her.
 
-````col
-```col-md
+`````col
+````col-md
+![[catarina-davirelli-portrait|Catarina Da'Virelli portrait]]
+````
+````col-md
 ## Identity
 
 | Field | Value |
@@ -60,8 +64,9 @@ tier: supporting
 Catarina is pursuing the first non-magical flying machine and reverse-engineers [[antheri\|Antheri]] work. Her referral-only workshop, [[kats-curios\|Cat's Curios]], is in [[calveno\|Calveno]]. In 1488 DR she found working [[antheri\|Antheri]] parts at [[shelfworks\|the Shelfworks]], rebuilt three working devices, and became the first to do so; the resulting rush became the Shelfworks Goldrush, which she declined to join.
 
 Raiders kidnapped her as a child. Her father made a distraction, and she escaped by jumping from cliffs into the water; his fate is unknown, and she carries his sealed flask. She treats careless magic as exclusionary, wants useful enchanted items to reach ordinary people, refuses unsafe or misused inventions, and is exact about what she can and cannot build. She treats beggars, servants, children, and nobles alike, and never calls a prototype finished when it is not. `[verify]` The archived biography says Mortis gives her `+2` Intelligence.
-```
-```col-md
+````
+`````
+
 ## Combat Stats
 
 | Stat | Value |
@@ -80,8 +85,7 @@ Raiders kidnapped her as a child. Her father made a distraction, and she escaped
 - She cannot be surprised while conscious, and unseen attackers do not gain advantage against her.
 
 Simulation-only figures remain estimates rather than sheet values: sustained DPR `13.91` versus AC `15`; nova DPR `28.0` versus AC `15` at the 95th percentile; routine damage per round `15.94 / 13.91 / 11.95 / 9.89` versus AC `13 / 15 / 17 / 19`; and maximum routine damage `56`. The [[catarina-davirelli-combat-profile|archived combat profile]] records the remaining hit-ladder, encounter, and survivability projections.
-```
-````
+
 
 ````col
 ```col-md
@@ -274,6 +278,5 @@ The sheet itemizes no species traits for her Variant Human heritage beyond the [
 
 ## Art
 
-![[catarina-davirelli-portrait|Catarina Da'Virelli portrait]]
 ![[catarina-davirelli-banner|Catarina Da'Virelli banner]]
 ![[caterina-davirelle-reference|Catarina Da'Virelli likeness reference]]

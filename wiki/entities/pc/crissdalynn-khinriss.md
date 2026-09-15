@@ -26,6 +26,7 @@ type: pc
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
+cssclasses: [pc-sheet]
 status: alive
 player: Courtney
 class_levels: "Monk 5 (Way of the Kensei)"
@@ -42,8 +43,6 @@ foundry_id: Qkd4lEumNtyDVUxD
 > [!narration] Narration
 > Blue-black iridescent feathers, geometric leather armor, a chart satchel, and talons that catch the light. She moves light and irreverent until the fight starts, then the air around her gets serious.
 
-````col
-```col-md
 ## Identity
 
 | Field | Value |
@@ -59,8 +58,7 @@ foundry_id: Qkd4lEumNtyDVUxD
 | Current task | Finish the incomplete [[the-drowned-maw\|Drowned Maw]] map to end exile; she served the [[red-lady-dead-lady\|Red Lady]] for twenty-two months before it sank. |
 | Faith | [[remnis\|Remnis]] is primary, with [[syranita\|Syranita]] and [[aerdrie-faenya\|Aerdrie Faenya]] at the margins; the sheet prints “Great Old Crow” [verify: `wiki/_archive/character-sheets/crissdalynn-khinriss-sheet.md`]. |
 | Foundry identity | Actor `Qkd4lEumNtyDVUxD` from world Shattered-Sea, snapshot 2026-09-13; table display prefers Crissdalyn. |
-```
-```col-md
+
 ## Combat Stats
 
 | Stat | Value |
@@ -74,8 +72,7 @@ foundry_id: Qkd4lEumNtyDVUxD
 | Proficiency / Hit Die | Proficiency bonus +3; hit point die `d8`. |
 | Defenses / constraints | Strength and Dexterity saves are proficient; no damage resistances are recorded. Charisma and Intelligence saves are +0, while low ceilings, wind, and nets can deny flight. |
 | Pressure / synergy | Ranged focus fire and Wisdom pressure on stuns or fear are soft counters; open vertical space supports seize-and-carry, and ally advantage such as [[catarina-davirelli\|Catarina]]'s Faerie Fire helps. |
-```
-````
+
 
 ````col
 ```col-md

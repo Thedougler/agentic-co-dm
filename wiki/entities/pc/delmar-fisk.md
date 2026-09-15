@@ -33,6 +33,7 @@ type: pc
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
+cssclasses: [pc-sheet]
 status: alive
 player: Frederick
 class_levels: "Rogue 5 (Swashbuckler)"
@@ -49,8 +50,6 @@ foundry_id: O68NGfrVI6ibOW9v
 > [!narration] Narration
 > Sandy red hair sits in a messy topknot above a thick beard and a curled moustache greying at the edges. His smile reaches his eyes. The sea wrote the rest of the look; the scarlet admiral coat stays ashore unless the night needs Admiral Fisk.
 
-````col
-```col-md
 ## Identity
 
 | Field | Value |
@@ -60,8 +59,7 @@ foundry_id: O68NGfrVI6ibOW9v
 | Species / Race | Variant Human |
 | Background | Sailor |
 | Home ship / base | [[Uncertainty]] at [[aruhe]] |
-```
-```col-md
+
 ## Combat Stats
 
 Live Foundry snapshot from world Shattered-Sea on 2026-09-13. Actor `O68NGfrVI6ibOW9v` (Admiral Delmar A. Fisk). Proficiency Bonus +3. Hit Point Die d8.
@@ -73,8 +71,7 @@ Live Foundry snapshot from world Shattered-Sea on 2026-09-13. Actor `O68NGfrVI6i
 | Initiative | +7 (Dexterity +5 plus Charisma +2 from Rakish Audacity) |
 | Passive Perception | 14 |
 | Speed | Walk 30 ft. [[flying-boots]] spend a charge for Fly 30 ft. for 1 hour. Cloak of the Manta Ray grants Swim 60 ft. and water breathing while worn. |
-```
-````
+
 
 ````col
 ```col-md
@@ -187,8 +184,6 @@ Acrobatics +8 (proficient), Insight +4 (proficient), Investigation +6 (expertise
 | Lucky | Variant Human | 3 Luck Points per Long Rest; spend on a D20 Test. |
 | Tavern Brawler | — | Unarmed Strike can deal `1d4` plus Strength bludgeoning; reroll 1s on those damage dice. |
 
-````col
-```col-md
 ## Connections
 
 | Tie | Table consequence |
@@ -201,13 +196,10 @@ Acrobatics +8 (proficient), Insight +4 (proficient), Investigation +6 (expertise
 | [[catarina-davirelli]] | Gave him Lamarae's Fang. Enchanted the blunderbuss mid-fight. |
 | [[vashka-doru]] | Has a harbor secret about a ship that once belonged to one of the five souls he carries. |
 | [[flying-boots]] | Attuned on his feet; provenance still contested. |
-```
-```col-md
+
 ## Session Log
 
 | Session / Date | Encounter | Current-play change |
 | --- | --- | --- |
 | 06 | Primary Chamber | One-shot a purple-caste enforcer with a pistol Sneak Attack. Resisted Dominate Person with Jean Claude's help. Catarina enchanted the blunderbuss mid-fight. Leveled to Rogue 5. |
 | 11 | Aruhe inland | Caught catatonic Jean-Claude and swaddled him in the coat. Rifle dropped a Spiguar; it fled. First watch. Heard admire my garden. |
-```
-````

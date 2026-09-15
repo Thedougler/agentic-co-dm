@@ -183,7 +183,7 @@ description: "Task list for the PC Page Redesign feature"
 ### Implementation for User Story 2 follow-through
 
 - [X] T028 [US2] Dispatch the designated writer per `docs/agents/skill-design-dispatch.md` to update `.agents/skills/player-characters/SKILL.md`; instruct the writer to follow `.agents/skills/writing-for-agents`; session agent does not write that file. Outcome: point at `specs/020-pc-page-redesign/contracts/pc-page.md` instead of cloning it; state idle → record ("source supplied for a player-created character") → refresh-goals ("post-session transcript for a player who was in that session") → refuse ("no source, or a request to invent/generate/prescribe, or inventing goals"); featured portrait + Identity when pictures exist; additional pictures MAY sit next to the section they illustrate; leftover pictures only in `## Art`; Stated Goals lists only goals the …
-- [ ] T029 [P] [US2] Update the PC layout row in `wiki/AGENTS.md`: spine is featured portrait + Identity when art exists, Combat Stats full-width, Ability Scores, Skills, Actions, conditional Spells, Inventory, Features, Connections, conditional Stated Goals, Session Log, leftover Art; `cssclasses` must include `pc-sheet`; wiki-kind route remains `player-characters`
+- [X] T029 [P] [US2] Update the PC layout row in `wiki/AGENTS.md`: spine is featured portrait + Identity when art exists, Combat Stats full-width, Ability Scores, Skills, Actions, conditional Spells, Inventory, Features, Connections, conditional Stated Goals, Session Log, leftover Art; `cssclasses` must include `pc-sheet`; wiki-kind route remains `player-characters`
 
 **Checkpoint**: The skill and wiki-kind row describe art placement and transcript-only Stated Goals refresh.
 
@@ -197,11 +197,11 @@ description: "Task list for the PC Page Redesign feature"
 
 ### Implementation for User Story 3 follow-through
 
-- [ ] T030 [P] [US3] Reconform `wiki/entities/pc/jean-claude-tabarnack.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md`: set `cssclasses` ("Must include `pc-sheet` so PC-only CSS tweaks apply. Not a campaign fact."); pair one featured portrait with Identity when pictures exist; leftover pictures only in `## Art`; add `## Stated Goals` only for transcript-supported player statements (in or out of character) citing session; omit Stated Goals and Art when empty; preserve `lifecycle` ("Existing value; structure-only conformance does not change it."), `reveal` ("Existing value; structure-only conformance does not change it."), `campaign` / `visibility`, aliases, sources, player handle ("Player handle only; never real-player PII."), and `status` ("Existing character status; do not infer a change."); do not overwrite numbers
-- [ ] T031 [P] [US3] Reconform `wiki/entities/pc/perrin-black-jaw.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same `cssclasses`, portrait/Art, Stated Goals, preservation, and omission rules as T030
-- [ ] T032 [P] [US3] Reconform `wiki/entities/pc/catarina-davirelli.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same `cssclasses`, portrait/Art, Stated Goals, preservation, and omission rules as T030
-- [ ] T033 [P] [US3] Reconform `wiki/entities/pc/crissdalynn-khinriss.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same `cssclasses`, portrait/Art, Stated Goals, preservation, and omission rules as T030
-- [ ] T034 [P] [US3] Reconform `wiki/entities/pc/delmar-fisk.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same `cssclasses`, portrait/Art, Stated Goals, preservation, and omission rules as T030; keep `Spells` omitted (non-caster)
+- [X] T030 [P] [US3] Reconform `wiki/entities/pc/jean-claude-tabarnack.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md`: set `cssclasses` ("Must include `pc-sheet` so PC-only CSS tweaks apply. Not a campaign fact."); pair one featured portrait with Identity when pictures exist; leftover pictures only in `## Art`; add `## Stated Goals` only for transcript-supported player statements (in or out of character) citing session; omit Stated Goals and Art when empty; preserve `lifecycle` ("Existing value; structure-only conformance does not change it."), `reveal` ("Existing value; structure-only conformance does not change it."), `campaign` / `visibility`, aliases, sources, player handle ("Player handle only; never real-player PII.…
+- [X] T031 [P] [US3] Reconform `wiki/entities/pc/perrin-black-jaw.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same `cssclasses`, portrait/Art, Stated Goals, preservation, and omission rules as T030
+- [X] T032 [P] [US3] Reconform `wiki/entities/pc/catarina-davirelli.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same `cssclasses`, portrait/Art, Stated Goals, preservation, and omission rules as T030
+- [X] T033 [P] [US3] Reconform `wiki/entities/pc/crissdalynn-khinriss.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same `cssclasses`, portrait/Art, Stated Goals, preservation, and omission rules as T030
+- [X] T034 [P] [US3] Reconform `wiki/entities/pc/delmar-fisk.md` to `wiki/templates/pc.md` and `specs/020-pc-page-redesign/contracts/pc-page.md` with the same `cssclasses`, portrait/Art, Stated Goals, preservation, and omission rules as T030; keep `Spells` omitted (non-caster)
 
 **Checkpoint**: All five live owners pass the clarified fixture assertions without canon loss.
 
@@ -215,10 +215,10 @@ description: "Task list for the PC Page Redesign feature"
 
 ### Implementation for User Story 4 follow-through
 
-- [ ] T035 [P] [US4] Update `.agents/skills/obsidian-markdown/references/COLUMNS.md` with the PC-only nested `col`/`col-md` pairs (featured portrait+Identity when art exists, Ability Scores+Skills), Combat Stats full-width, longer parent fence, headings/tables as linear fallback, narration outside fences, prohibition on `[!col]` for those PC pairs, and full-width Connections / Stated Goals / Session Log / Art
-- [ ] T036 [P] [US4] Update `.agents/skills/reconciling-session-evidence/SKILL.md` so post-session Stated Goals refresh for PCs who were in that session routes through `player-characters`; do not invent goals; do not refresh a PC who was not in the session; preserve `lifecycle` / `reveal` / `visibility`
-- [ ] T037 [P] [US4] Update `.agents/skills/session-beats/SKILL.md` so session planning that includes a player MUST read that PC's `## Stated Goals` when present and MUST NOT write the PC owner page
-- [ ] T038 [P] [US4] Update `.agents/skills/run-guide/SKILL.md` so a run guide that includes a player MUST read that PC's `## Stated Goals` when present and MUST NOT write the PC owner page
+- [X] T035 [P] [US4] Update `.agents/skills/obsidian-markdown/references/COLUMNS.md` with the PC-only nested `col`/`col-md` pairs (featured portrait+Identity when art exists, Ability Scores+Skills), Combat Stats full-width, longer parent fence, headings/tables as linear fallback, narration outside fences, prohibition on `[!col]` for those PC pairs, and full-width Connections / Stated Goals / Session Log / Art
+- [X] T036 [P] [US4] Update `.agents/skills/reconciling-session-evidence/SKILL.md` so post-session Stated Goals refresh for PCs who were in that session routes through `player-characters`; do not invent goals; do not refresh a PC who was not in the session; preserve `lifecycle` / `reveal` / `visibility`
+- [X] T037 [P] [US4] Update `.agents/skills/session-beats/SKILL.md` so session planning that includes a player MUST read that PC's `## Stated Goals` when present and MUST NOT write the PC owner page
+- [X] T038 [P] [US4] Update `.agents/skills/run-guide/SKILL.md` so a run guide that includes a player MUST read that PC's `## Stated Goals` when present and MUST NOT write the PC owner page
 
 **Checkpoint**: Columns, reconciliation, and planning converge on the clarified contract.
 
@@ -228,12 +228,12 @@ description: "Task list for the PC Page Redesign feature"
 
 **Purpose**: Re-run quickstart checks for the clarified contract.
 
-- [ ] T039 Run `.venv/bin/python specs/020-pc-page-redesign/fixtures/check.py` against `wiki/templates/pc.md` and `wiki/entities/pc/`; require exit `0`
-- [ ] T040 [P] Run `./scripts/lint-wiki-write --path wiki/entities/pc` against all five owners; require exit `0`
-- [ ] T041 [P] Run `./scripts/lint-obsidian-markdown --strict --path wiki/entities/pc` against all five owners; require exit `0`
-- [ ] T042 Confirm `wiki/.obsidian/snippets/pc-sheet.css` exists and is scoped to `.pc-sheet`, vault snippets `wiki/.obsidian/snippets/ttrpg-styles.css` and `wiki/.obsidian/snippets/wide-note-surface.css` remain, and each live PC has `cssclasses` containing `pc-sheet`
-- [ ] T043 Perform an Obsidian Reading-view review of the five owners: featured portrait beside Identity when art exists, Combat Stats full-width, Ability Scores/Skills paired, vault CSS plus PC scan tweaks without a decorative theme, Stated Goals only when transcript-supported, leftover Art only at the bottom
-- [ ] T044 Confirm the negatives in `.agents/skills/player-characters/SKILL.md`: no source / invent PC / generate stats / write actions / invent goals → refuse; summary-only goal is not filed; a session that did not include the player does not refresh that PC's Stated Goals
+- [X] T039 Run `.venv/bin/python specs/020-pc-page-redesign/fixtures/check.py` against `wiki/templates/pc.md` and `wiki/entities/pc/`; require exit `0`
+- [X] T040 [P] Run `./scripts/lint-wiki-write --path wiki/entities/pc` against all five owners; require exit `0`
+- [X] T041 [P] Run `./scripts/lint-obsidian-markdown --strict --path wiki/entities/pc` against all five owners; require exit `0`
+- [X] T042 Confirm `wiki/.obsidian/snippets/pc-sheet.css` exists and is scoped to `.pc-sheet`, vault snippets `wiki/.obsidian/snippets/ttrpg-styles.css` and `wiki/.obsidian/snippets/wide-note-surface.css` remain, and each live PC has `cssclasses` containing `pc-sheet`
+- [X] T043 Perform an Obsidian Reading-view review of the five owners: featured portrait beside Identity when art exists, Combat Stats full-width, Ability Scores/Skills paired, vault CSS plus PC scan tweaks without a decorative theme, Stated Goals only when transcript-supported, leftover Art only at the bottom
+- [X] T044 Confirm the negatives in `.agents/skills/player-characters/SKILL.md`: no source / invent PC / generate stats / write actions / invent goals → refuse; summary-only goal is not filed; a session that did not include the player does not refresh that PC's Stated Goals
 
 
 ---

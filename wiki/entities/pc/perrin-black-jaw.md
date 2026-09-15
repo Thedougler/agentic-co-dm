@@ -18,6 +18,7 @@ reveal: revealed
 campaign: shattered-sea
 status: alive
 visibility: dm
+cssclasses: [pc-sheet]
 player: Kaden
 class_levels: "Warlock 2 / Bard 3 (College of Lore)"
 level: 5
@@ -33,8 +34,6 @@ foundry_id: J9CeWsMCOahlafjx
 > [!narration] Narration
 > A three-foot fancy-rat Rattkin with a black head, white body, and a long pink tail. Shortest on the crew, he still fills a room with volume, charm, and nerve.
 
-````col
-```col-md
 ## Identity
 
 | Field | Value |
@@ -47,8 +46,7 @@ foundry_id: J9CeWsMCOahlafjx
 | Role | PC |
 | Tier | Supporting |
 | Alignment | Chaotic good [verify] from the archived character sheet |
-```
-```col-md
+
 ## Combat Stats
 
 | Stat | Value |
@@ -66,8 +64,6 @@ foundry_id: J9CeWsMCOahlafjx
 
 The live source is the Foundry Shattered-Sea actor `J9CeWsMCOahlafjx`, snapshot 2026-09-13. The archived level-5 sheet orders the same multiclass as Bard 3 / Warlock 2 and records the former estimate Bard 4 / Warlock 1 [verify].
 
-```
-````
 
 ````col
 ```col-md

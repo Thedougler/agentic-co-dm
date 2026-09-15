@@ -24,17 +24,9 @@ status: alive
 ---
 <!-- Copy-start scaffold for a canonical type: pc owner page.
 
-Live owner: wiki/entities/pc/<kebab-slug>.md. Flatten archived sheets, abilities,
-spells, inventory, combat profiles, galleries, and session logs into these homes;
-do not create a second live facet page. Preserve source lineage, aliases, links,
-unknowns, and [verify] markers. Omit an optional section or empty subsection.
-The player controls this PC. Narration is player-safe; mechanics stay outside it.
-Escape alias pipes as \| inside Markdown table cells so wikilinks remain valid.
+Live owner: wiki/entities/pc/<kebab-slug>.md. Flatten archived sheets, abilities, spells, inventory, combat profiles, galleries, and session logs into these homes; do not create a second live facet page. Preserve source lineage, aliases, links, unknowns, and [verify] markers. Omit an optional section or empty subsection. The player controls this PC. Narration is player-safe; mechanics stay outside it. Escape alias pipes as \| inside Markdown table cells so wikilinks remain valid.
 
-Portrait + Identity pair: when at least one picture of the character exists,
-use the col/col-md pair below. Left col-md holds only the portrait embed.
-Right col-md holds ## Identity. When no art exists, remove the col fences
-and render ## Identity full-width with no empty portrait column.
+Portrait + Identity pair: when at least one picture of the character exists, use the col/col-md pair below. Left col-md holds only the portrait embed. Right col-md holds ## Identity. When no art exists, remove the col fences and render ## Identity full-width with no empty portrait column.
 -->
 
 # {{title}}
