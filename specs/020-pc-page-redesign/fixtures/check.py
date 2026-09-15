@@ -285,7 +285,7 @@ def validate_page(path: Path, errors: list[str], template: bool = False) -> None
         fail(f"{label}: expected exactly one H1", errors)
     if "> [!narration] Narration" not in clean:
         fail(f"{label}: missing player-safe Narration callout", errors)
-    if re.search(r"DM thesis", clean, re.IGNORECASE):
+    if re.search(r"^#{1,6} .*DM thesis", clean, re.IGNORECASE | re.MULTILINE):
         fail(f"{label}: contains required DM thesis", errors)
     if "\\n" in clean:
         fail(f"{label}: contains literal escaped newline", errors)

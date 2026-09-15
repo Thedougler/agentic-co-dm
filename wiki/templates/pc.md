@@ -10,6 +10,7 @@ lifecycle: proposed
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
+cssclasses: [pc-sheet]
 summary: ""
 player: ""
 class_levels: ""
@@ -29,6 +30,11 @@ do not create a second live facet page. Preserve source lineage, aliases, links,
 unknowns, and [verify] markers. Omit an optional section or empty subsection.
 The player controls this PC. Narration is player-safe; mechanics stay outside it.
 Escape alias pipes as \| inside Markdown table cells so wikilinks remain valid.
+
+Portrait + Identity pair: when at least one picture of the character exists,
+use the col/col-md pair below. Left col-md holds only the portrait embed.
+Right col-md holds ## Identity. When no art exists, remove the col fences
+and render ## Identity full-width with no empty portrait column.
 -->
 
 # {{title}}
@@ -36,8 +42,11 @@ Escape alias pipes as \| inside Markdown table cells so wikilinks remain valid.
 > [!narration] Narration
 > Write a complete-sentence, sensory look that is safe to read aloud. Do not include secrets, DCs, or unearned names.
 
-````col
-```col-md
+`````col
+````col-md
+![[portrait-filename.webp]]
+````
+````col-md
 ## Identity
 
 | Field | Value |
@@ -47,8 +56,9 @@ Escape alias pipes as \| inside Markdown table cells so wikilinks remain valid.
 | Species / Race | |
 | Background | |
 | Home ship / base | [[ship-or-base]] |
-```
-```col-md
+````
+`````
+
 ## Combat Stats
 
 | Stat | Value |
@@ -60,8 +70,6 @@ Escape alias pipes as \| inside Markdown table cells so wikilinks remain valid.
 | Speed | |
 
 List character-specific resources and counters when known.
-```
-````
 
 ````col
 ```col-md
@@ -195,6 +203,14 @@ Omit empty subsections. Each populated row states effect, uses, and recovery whe
 
 Escape alias pipes as `\|` inside table cells. Omit this section when there are no named ties.
 
+## Stated Goals
+
+Omit when no transcript-supported player-stated goal exists. List only goals the player clearly stated in a game-session transcript, in character or out of character. Cite the session. A session summary may help locate or paraphrase a transcript-supported goal but must not be the sole source. Do not infer from play, connections, or DM thesis. After every session that included that player, refresh: add newly stated goals; remove a goal only if the player said it is done or abandoned.
+
+| Goal | Session | Notes |
+| --- | --- | --- |
+| | | |
+
 ## Session Log
 
 Omit for a new PC with no current changes. Keep only concise dated or session-numbered changes affecting play.
@@ -205,4 +221,4 @@ Omit for a new PC with no current changes. Keep only concise dated or session-nu
 
 ## Art
 
-Omit when no approved art exists. Preserve existing attachment embeds and repository attachment names when present.
+Omit when no approved art exists beyond the featured portrait. Preserve existing attachment embeds and repository attachment names when present. Additional pictures may appear next to the section they illustrate; this section holds leftover approved embeds only.

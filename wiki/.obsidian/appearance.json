@@ -2,6 +2,7 @@
   "baseFontSize": 16,
   "enabledCssSnippets": [
     "ttrpg-styles",
-    "wide-note-surface"
+    "wide-note-surface",
+    "pc-sheet"
   ]
 }
