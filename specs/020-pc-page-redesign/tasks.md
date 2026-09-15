@@ -41,7 +41,7 @@ description: "Task list for the PC Page Redesign feature"
 
 **Purpose**: Keep the existing argument-free feature checker; no new dependency or database.
 
-- [ ] T001 Keep the argument-free feature checker entrypoint in `specs/020-pc-page-redesign/fixtures/check.py`, using Python 3 with text/JSON-compatible output and a done-vs-failed exit code; do not expand `tools/check_wiki_pages.py` as PC proof
+- [X] T001 Keep the argument-free feature checker entrypoint in `specs/020-pc-page-redesign/fixtures/check.py`, using Python 3 with text/JSON-compatible output and a done-vs-failed exit code; do not expand `tools/check_wiki_pages.py` as PC proof
 
 ---
 
@@ -51,7 +51,7 @@ description: "Task list for the PC Page Redesign feature"
 
 **⚠️ CRITICAL**: No user story work begins until this phase is complete. The checker MUST fail the current two-column Ability Scores+Skills pair, optional `Spells`, and any live `[verify]`.
 
-- [ ] T002 Remorph observable PC contract assertions in `specs/020-pc-page-redesign/fixtures/check.py` for `wiki/templates/pc.md` and the five owners under `wiki/entities/pc/`: required frontmatter including `type` ("Exactly `pc`."), `cssclasses` ("Must include `pc-sheet` so PC-only CSS tweaks apply. Not a campaign fact."), `player` ("Player handle only; never real-player PII.") when live, `summary` ("One concise DM-readable sentence. Not a prescribed play pattern."); one H1; player-safe `> [!narration] Narration`; required H2 spine `Identity`, `Combat Stats`, `Ability Scores`, `Skills`, `Actions`, `Spells`, `Inventory`, `Features` then optional `Connections` / `Stated Goals` / `Session Log` / `Art`; `Spells` present on every page including non-casters and MUST state none when there is no spell access; forbid `Voice`, `At a Glance`, `Sheet`, `Combat Profile`, `Abilities`, required DM thesis, and `[verify]` on live owners and the template; header `col` has two `col-md` children when art exists (left embed only, right `## Identity`); `Identity` full-width when no pictures exist; no empty portrait column; `Combat Stats` full-width after Identity and not inside a column fence; sheet `col` has three `col-md` children (`## Ability Scores` | `## Skills` | `## Actions` / `## Spells` / `## Inventory` / `## Features` stacked); no Identity+Combat Stats pair; no two-child Ability Scores+Skills-only sheet row; parent fence longer than children; no `[!col]` for these PC rows; omit empty campaign extras and empty subsections; headings/tables remain the linear fallback
+- [X] T002 Remorph observable PC contract assertions in `specs/020-pc-page-redesign/fixtures/check.py` for `wiki/templates/pc.md` and the five owners under `wiki/entities/pc/`: required frontmatter including `type` ("Exactly `pc`."), `cssclasses` ("Must include `pc-sheet` so PC-only CSS tweaks apply. Not a campaign fact."), `player` ("Player handle only; never real-player PII.") when live, `summary` ("One concise DM-readable sentence. Not a prescribed play pattern."); one H1; player-safe `> [!narration] Narration`; required H2 spine `Identity`, `Combat Stats`, `Ability Scores`, `Skills`, `Actions`, `Spells`, `Inventory`, `Features` then optional `Connections` / `Stated Goals` / `Session Log` / `Art`; `Spells` present on every page including non-casters and M…
 
 **Checkpoint**: `specs/020-pc-page-redesign/fixtures/check.py` fails clearly on the current two-column sheet, optional `Spells`, and any live `[verify]`, and can pass the remorphed five-page set.
 

@@ -62,6 +62,7 @@ REQUIRED_H2 = (
     "Ability Scores",
     "Skills",
     "Actions",
+    "Spells",
     "Inventory",
     "Features",
 )
@@ -73,6 +74,8 @@ FORBIDDEN_H2 = (
     "Abilities",
 )
 ABILITY_PAIR = ("Ability Scores", "Skills")
+SHEET_RIGHT = ("Actions", "Spells", "Inventory", "Features")
+NONE_SPELLS = re.compile(r"\bno spells?\b", re.I)
 EMBED = re.compile(r"!\[\[[^\]]+\]\]|!\[[^\]]*\]\([^)]+\)")
 ACTION_SUBHEADINGS = ("Attacks", "Actions", "Bonus Actions", "Reactions")
 FEATURE_SUBHEADINGS = ("Traits", "Class Features", "Feats")
@@ -193,35 +196,49 @@ def validate_columns(text: str, label: str, errors: list[str]) -> None:
     if "[!col]" in body:
         fail(f"{label}: uses prohibited [!col] syntax", errors)
     parents = col_parents(body)
-    pair_headings: list[set[str]] = []
     portrait_pair = False
+    has_sheet_row = False
     for parent_ticks, inner in parents:
         children = col_children(inner)
-        if len(children) != 2:
-            fail(f"{label}: parent col fence lacks two nested col-md fences", errors)
-            continue
-        _left_ticks, left_body = children[0]
-        _right_ticks, right_body = children[1]
         for child_ticks, _child_body in children:
             if parent_ticks <= child_ticks:
                 fail(f"{label}: parent col fence is not longer than child col-md fences", errors)
-        left_h2 = child_h2(left_body)
-        right_h2 = child_h2(right_body)
-        names = set(left_h2 + right_h2)
-        pair_headings.append(names)
+        child_h2s = [child_h2(child_body) for _ticks, child_body in children]
+        names = set(heading for group in child_h2s for heading in group)
         if "Identity" in names and "Combat Stats" in names:
             fail(f"{label}: pairs Identity with Combat Stats", errors)
         if "Connections" in names and "Session Log" in names:
             fail(f"{label}: pairs Connections with Session Log", errors)
-        if right_h2 == ["Identity"] and not left_h2:
-            if EMBED.search(left_body):
-                portrait_pair = True
+        if len(children) == 2:
+            left_h2, right_h2 = child_h2s
+            if set(left_h2 + right_h2) == set(ABILITY_PAIR):
+                fail(f"{label}: two-column Ability Scores+Skills pair", errors)
+                continue
+            if right_h2 == ["Identity"] and not left_h2:
+                if EMBED.search(children[0][1]):
+                    portrait_pair = True
+                else:
+                    fail(f"{label}: empty portrait column", errors)
             else:
-                fail(f"{label}: empty portrait column", errors)
-    if set(ABILITY_PAIR) not in pair_headings:
-        fail(f"{label}: missing nested pair {sorted(ABILITY_PAIR)}", errors)
+                fail(f"{label}: parent col fence lacks two nested col-md fences for portrait+Identity or three for the sheet row", errors)
+        elif len(children) == 3:
+            left_h2, mid_h2, right_h2 = child_h2s
+            if left_h2 == ["Ability Scores"] and mid_h2 == ["Skills"] and tuple(right_h2) == SHEET_RIGHT:
+                has_sheet_row = True
+            else:
+                fail(
+                    f"{label}: three-column sheet must be Ability Scores | Skills | Actions/Spells/Inventory/Features stacked",
+                    errors,
+                )
+        else:
+            fail(f"{label}: parent col fence must have two (header) or three (sheet) nested col-md fences", errors)
+    if not has_sheet_row:
+        fail(f"{label}: missing three-column sheet row", errors)
     if heading_in_columns(parents, "Combat Stats"):
         fail(f"{label}: Combat Stats is not full-width", errors)
+    for heading in SHEET_RIGHT:
+        if heading in headings(text, 2) and not heading_in_columns(parents, heading):
+            fail(f"{label}: {heading} is not in the sheet third column", errors)
     if EMBED.search(body):
         if not portrait_pair:
             fail(f"{label}: missing featured portrait + Identity pair", errors)
@@ -245,10 +262,17 @@ def validate_spine(text: str, label: str, errors: list[str], *, title: str, temp
     for name in REQUIRED_H2:
         if name not in h2:
             fail(f"{label}: missing required heading {name}", errors)
-    if title == "Delmar Fisk" and "Spells" in h2:
-        fail(f"{label}: non-caster retains Spells section", errors)
+    if "Spells" in h2:
+        spells_body = section(text, "Spells")
+        has_spell_subs = any(
+            re.search(rf"^### {re.escape(sub)}\s*$", spells_body, re.MULTILINE) for sub in SPELL_SUBHEADINGS
+        )
+        if not has_spell_subs and not NONE_SPELLS.search(spells_body):
+            fail(f"{label}: Spells must state none when there is no spell access", errors)
+        if title == "Delmar Fisk" and not NONE_SPELLS.search(spells_body):
+            fail(f"{label}: non-caster Spells must state none", errors)
     if not template:
-        for name in ("Spells", "Connections", "Stated Goals", "Session Log", "Art"):
+        for name in ("Connections", "Stated Goals", "Session Log", "Art"):
             if name in h2 and not nonempty_body(section(text, name)):
                 fail(f"{label}: empty optional section {name}", errors)
         for heading, subs in (
@@ -287,6 +311,8 @@ def validate_page(path: Path, errors: list[str], template: bool = False) -> None
         fail(f"{label}: missing player-safe Narration callout", errors)
     if re.search(r"^#{1,6} .*DM thesis", clean, re.IGNORECASE | re.MULTILINE):
         fail(f"{label}: contains required DM thesis", errors)
+    if "[verify]" in text:
+        fail(f"{label}: contains [verify]", errors)
     if "\\n" in clean:
         fail(f"{label}: contains literal escaped newline", errors)
     validate_spine(text, label, errors, title=data.get("title", ""), template=template)
