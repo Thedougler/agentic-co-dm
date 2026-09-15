@@ -98,16 +98,38 @@ Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<ses
 
 ## Shared grammar
 
+Title Case for shared headings. Use these names when the job is the same across kinds. Do not invent synonyms (`Related`, `Links`, `Ties`, `Relationships` as Connections).
+
+| Section | When |
+|---|---|
+| Leading `> [!narration]` | Owner pages with a spoken look. Title `Narration` (or the entity name). Player-safe TotM. Empty stub ok on pass 1. |
+| `## At a Glance` | Compact orientation before the long body |
+| `## At the Table` | How to run it tonight — choices, notice, enables, warns. Not a second narration dump. |
+| `## Connections` | Named wikilinked ties that change a ruling or route. Omit when empty. |
+| `## Secrets` | Unearned / hidden truth. Prefer body heading + `[!secret]` when progressive disclosure helps. Omit if empty. |
+| `## Provenance` | Where the facts came from / contested chains. Omit if empty. |
+| `## Art` | Extra embeds beyond a leading identity image. Names: `wiki/attachments/README.md`. Omit if empty. |
+
+Kind-specific job blocks stay after narration / At a Glance and before Connections / Secrets / Provenance when those apply. Omit empty sections. Pass is kind jobs in Layout, not rigid heading-order match.
+
+At-table scan and callouts: `obsidian-markdown`. Session/run/recap spoken is `[!narration]` only. Owner pages may add `[!mechanic]` / `[!secret]`. No callouts in table cells. No new house callout types.
+
+DM-visible labels: Title Case / spaced words (`One thing`, not `one_thing`) in body, table Field columns, callout titles, and section stubs. YAML keys, code fences, wikilink paths, and attachment filenames may stay snake_case. Scaffolds never use snake_case as a copy-start Field label.
+
+Templates: placeholders (`{{title}}`) and instructional comments only.
+
+Image assets: `wiki/attachments/README.md`.
+
 ## Page filenames
 
-Wiki page `.md` **basenames** (not attachment images — those stay kebab `{slug}-{role}`).
+Wiki page `.md` **basenames** (not attachment images — those stay kebab `{slug}-{role}` per `wiki/attachments/README.md`).
 
 **Rule (issue #80; amends #69/#70):** basename is a **space-free kebab slug** derived from the page’s display name. Frontmatter `title` keeps the human Obsidian display string (spaces/apostrophes OK). Filename stem and `title` are related by a deterministic slug function — they are not required to be identical strings.
 
 **Slug function (mint / rename):**
 1. Start from `title` (or the intended display name).
 2. Strip leading legacy place-name prefixes (`Aruhe - `, `Aruhe -`, `Aruhe `) — content about the place stays in body/`title`; the prefix is dump legacy.
-3. Strip leading `00` / `00-` / `00_` filename prefixes (including templates — e.g. `00-shared-grammar` → `shared-grammar`). **Banned** anywhere in the live vault.
+3. Strip leading `00` / `00-` / `00_` filename prefixes (including templates — e.g. `00-hook-beat` → `hook-beat`). **Banned** anywhere in the live vault.
 4. Trim; replace each run of whitespace with a single `-`.
 5. Remove apostrophes (`'` / `’`); keep existing hyphens that separate words.
 6. Strip characters other than letters, digits, and `-` (no `/\:*?"<>|`, commas, etc.).
@@ -116,7 +138,7 @@ Wiki page `.md` **basenames** (not attachment images — those stay kebab `{slug
 
 **Legacy = wrong:** current standards exclusively. Do not preserve spaced names, `Aruhe` place prefixes, or `00`/`00-` prefixes on mint or remorph.
 
-Example: `title: Jean-Claude Tabarnack` → `wiki/entities/pc/jean-claude-tabarnack.md`. Example: `Aruhe - Hungry Isle.md` → `hungry-isle.md`. Example: `00-shared-grammar.md` → `shared-grammar.md`.
+Example: `title: Jean-Claude Tabarnack` → `wiki/entities/pc/jean-claude-tabarnack.md`. Example: `Aruhe - Hungry Isle.md` → `hungry-isle.md`. Example: `00-hook-beat.md` → `hook-beat.md`.
 
 
 **Uniqueness:** vault-wide unique stem (no two live `.md` files share the same basename across folders). Prefer clearer titles/slugs over folder shadowing.
@@ -134,10 +156,6 @@ No separate `recaps/` tree; no flat `wiki/journal/Session-…`.
 **Remorph apply greenlit 2026-09-14** (Nick): kebab (no spaces), strip `Aruhe` place prefixes, strip leading `00`/`00-` — run `./scripts/remorph-page-filename-kebab --dry-run` then `--apply` (GitHub PR diffs preferred). Other destructive consolidates stay gated. No lore invent.
 
 Structural context waste (multi-H1 satellites, Foundry dump-copy beside Sheet, empty sections left in place) is a token bug — see `docs/agents/context-waste-method.md`. Not a prose-quality score.
-
-Cross-kind DM-usability rules for templates and filed pages: frontmatter core, shared Title Case headings (`At a Glance`, `At the Table`, `Connections`, `Secrets`, `Provenance`, `Art`), callout surfaces, omit-empty, and no synonym headings for the same job. Full text: `wiki/templates/shared-grammar.md`. Image assets: flat `wiki/attachments/{subject-slug}-{role}.{ext}` with roles `banner`\|`portrait`\|`token`\|`battlemap`\|`overview`\|`reference`\|`handout`\|`teaser`\|`recording` (see shared grammar Attachment filenames).
-
-When a shared job appears, use the shared heading name. DM-visible labels use Title Case / spaced words — never snake_case in body or table Field columns (`One thing`, not `one_thing`); YAML keys may stay snake_case. Kind-specific job blocks keep their own names. `Relationships` is not a Connections synonym — use `## Connections`. Recap/session/run spoken surfaces use only `[!narration]`; owner pages may add `[!mechanic]` / `[!secret]`.
 
 ## Approval (FR-019)
 

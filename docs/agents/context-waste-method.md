@@ -33,8 +33,8 @@ Prior art (cite, do not reinvent): `scripts/manifest.py`, `hot.md` preference, `
 | Satellite H1 dumps | `Hinewai.md`: 4× `#` (`Hinewai`, `The Death Bloom`, `History`, `Combat`); 43 pages with >1 H1; PC Layout already: single H1, flatten satellites |
 | Foundry dump-copy | PC pages: `## Foundry sheet` ~63–85 lines of live-sheet dump beside Sheet/Combat jobs |
 | Nested process asides | Procedure narrating how the page was built inside the owner body |
-| Triple-tell / synonym sections | Shared grammar: no synonym headings for same job; dup `## At a Glance` on `Hinewai.md` |
-| Empty scaffold left filled-in | Shared grammar + Layout: omit empty; ~10 pages still emptyish `##` → next `##` |
+| Triple-tell / synonym sections | `wiki/AGENTS.md` Shared grammar: no synonym headings for same job; dup `## At a Glance` on `Hinewai.md` |
+| Empty scaffold left filled-in | `wiki/AGENTS.md` Shared grammar + Layout: omit empty; ~10 pages still emptyish `##` → next `##` |
 
 ### D. Packet / chat waste
 | Waste | Prefer |

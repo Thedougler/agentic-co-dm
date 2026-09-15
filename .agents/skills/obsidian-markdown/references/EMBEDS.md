@@ -19,7 +19,7 @@ Wikilink (clickable asset, no inline render):
 [[attachments/shattered-sea/map.png|Campaign map]]
 ```
 
-Campaign subfolders: `attachments/<campaign-slug>/…`. Shared assets may sit at `attachments/` root.
+Filenames: `{subject-slug}-{role}.{ext}` — `wiki/attachments/README.md`. Prefer flat `attachments/`; nested `attachments/<campaign-slug>/` only on multi-campaign collision.
 
 Agents: always write the `attachments/…` path (do not rely on bare filenames).
 

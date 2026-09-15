@@ -28,6 +28,8 @@ Distinguish: `overview` = establishing/layout; `teaser` = cinematic scene still;
 - Embed: `![[attachments/{subject-slug}-{role}.ext]]`
 - Prefer flat `wiki/attachments/`; nested `attachments/shattered-sea/{type}/` is deprecated unless multi-campaign collision forces a campaign prefix
 - One file per subject+role; no parallel copies
-- Full convention: `wiki/templates/shared-grammar.md` → Attachment filenames
+- Embed in a table cell: `![[attachments/{subject-slug}-{role}.ext\|400]]`
+- On rename, update embeds in the same pass
+- Owner pages: `## Art` cites these roles; omit the section when unused
 
 Mass rename + embed rewrite is an ATE follow-on — do not migrate here without a remorph plan.

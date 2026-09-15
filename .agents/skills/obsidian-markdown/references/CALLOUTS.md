@@ -16,6 +16,8 @@
 > Hidden truth / unearned lore on owner pages. Never inside narration.
 ```
 
+House set is `[!narration]`, `[!mechanic]`, `[!secret]`. Headings plus at-table scan cover the rest.
+
 On long-lived owner pages such as NPC, PC, or faction pages, collapse a secret when
 that page benefits from progressive disclosure:
 

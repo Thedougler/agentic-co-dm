@@ -17,7 +17,7 @@ summary: ""
 <!-- Copy-start scaffold. type: item + kind: flora hazard.
      Jobs (wiki/AGENTS.md): Look; start; notice; contact cost; careful passage; honest counterplay.
      Extra mechanical rows only when they change the table. Omit unused sections.
-     Shared grammar: leading [!narration]; Connections / Secrets / Provenance / Art omit-if-empty.
+     wiki/AGENTS.md Shared grammar: leading [!narration]; Connections / Secrets / Provenance / Art omit-if-empty.
      Do not invent synonym headings for the hazard job bullets below.
 -->
 

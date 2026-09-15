@@ -47,9 +47,7 @@ page's image.
 
 ## Branch and persist
 
-**Attach** an existing file under `attachments/<campaign>/` (or the established attachment bucket),
-link with `![[attachments/...]]`, and list it on the owner only when the identity is truly shared
-because the file depicts that exact owner.
+**Attach** an existing file under `wiki/attachments/` named `{subject-slug}-{role}.{ext}` (`wiki/attachments/README.md`). Nested `attachments/<campaign>/` only on multi-campaign collision. Link with `![[attachments/...]]`, and list it on the owner only when the identity is truly shared because the file depicts that exact owner.
 Do not mark player-safe by default. On a location, embed the identity image immediately after the
 title. Battlemaps and other non-identity art go under **Art**.
 

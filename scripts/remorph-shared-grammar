@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Remorph shared-grammar heading Title Case / Connections / Secrets.
+"""Remorph wiki/AGENTS.md Shared grammar heading Title Case / Connections / Secrets.
 
 Heading lines only (H1–H3). No lore/body rewrite. Packet-scoped paths.
 
