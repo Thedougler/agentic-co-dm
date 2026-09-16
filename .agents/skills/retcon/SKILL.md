@@ -1,13 +1,12 @@
 ---
 name: retcon
-disable-model-invocation: true
 description: >
-  User-invoked campaign wiki correction that removes a DM-specified error everywhere in the live vault.
+  Use only when the user explicitly asks to retcon a campaign wiki error; repair that DM-specified error everywhere in the live vault.
 ---
 
 # Retcon
 
-Correct a DM-authorized campaign wiki error in place. The invocation is the authorization: repair the live wiki directly, overriding FR-019, lifecycle gates, and staged-write review for this correction only.
+Correct a campaign wiki error only when the user's current message explicitly asks for a retcon; that request is the authorization to repair the live wiki directly, overriding FR-019, lifecycle gates, and staged-write review for this correction only.
 
 ## Start
 
