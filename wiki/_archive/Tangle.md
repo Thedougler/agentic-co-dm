@@ -7,7 +7,7 @@ tags: [faction, lore]
 ---
 # Tangle
 
-An elder teaching and proposed anchor referenced by the Rattkin Runs. Its full nature and history are unknown; [[Aruhe - Hungry Isle]] is a survey site.
+An elder teaching and proposed anchor referenced by the Rattkin Runs. Its full nature and history are unknown.
 
 ## Linked
 - [[Perrin Black-Jaw]]

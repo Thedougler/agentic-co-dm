@@ -46,4 +46,4 @@ The storm, nothing more. It came up fast and hard enough that a captive riding i
 
 [[Sandro]] and [[Nino]] are still alive as of the wreck's aftermath, sheltering in the broken Vethka's hull on Aruhe's beach and watching the reef gap for sails.
 
-This is likely the "dark hull" [[nona-black-jaw]] has been hunting since Session 04. No one has confirmed her count of the missing four hundred eighty-seven against this specific wreck. That confirmation is a thread for actual play. It also sits directly across the path of [[Perrin's private Aruhe survey commission]]. Whoever eventually lands on that beach to sound the harbour and survey the terraces is the first outsider positioned to find what's left of these survivors.
+This is likely the "dark hull" [[nona-black-jaw|Nona Black-Jaw]] has been hunting since Session 04. No one has confirmed her count of the missing four hundred eighty-seven against this specific wreck. That confirmation is a thread for actual play. The party reached this beach while following the Calveno raid's wreck field; the survivors drew them ashore.

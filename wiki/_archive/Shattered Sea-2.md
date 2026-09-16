@@ -37,7 +37,6 @@ Dormant:
 - [[Soul Incarnate's Watch]] — triggers if Crissdalynn completes the Maw pilgrimage.
 
 Open [[campaigns/shattered-sea/quests/00 Quests|quests]]:
-- [[Bring the Pearl of Souls to Umberlee]] · [[Pursue the Grung raiding fleet]] · [[Survey Aruhe as a Tangle anchor]]
 - [[Complete the Maw map pilgrimage]] · [[Simone's hunters]] · [[Grigori and the Crown hunt]]
 - [[The Red Wake]] · [[Sentinels and Countless]] · [[Pearl signal across the boundary]]
 ## Indexes

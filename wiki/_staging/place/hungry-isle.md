@@ -39,7 +39,7 @@ tier: supporting
 
 ---
 ## At a Glance
-Hungry Isle is the spoken name for [[aruhe]] when crews first see it from the sea — eastern [[Midchain]], roughly five hundred miles end to end and about one hundred fifty miles across at the waist. [[Karath]] sits near one western rim; the heart still lies many days inland. Known landfall is [[western-landing]]. Inland bands run [[old-gardens]], [[the-quiet]], [[grasslands]], [[the-river]], [[the-marshes]], [[the-mangroves]], [[clear-lake]], [[memorial-grove]], and [[lava-tubes]] / [[aruhe-caves]]. Stay offshore to skip the landing; the southern mangrove wall is not a second harbor. [[survey-aruhe-as-a-tangle-anchor]] remains open.
+Hungry Isle is the spoken name for [[aruhe]] when crews first see it from the sea — eastern [[Midchain]], roughly five hundred miles end to end and about one hundred fifty miles across at the waist. [[Karath]] sits near one western rim; the heart still lies many days inland. Known landfall is [[western-landing]]. Inland bands run [[old-gardens]], [[the-quiet]], [[grasslands]], [[the-river]], [[the-marshes]], [[the-mangroves]], [[clear-lake]], [[memorial-grove]], and [[lava-tubes]] / [[aruhe-caves]]. Stay offshore to skip the landing; the southern mangrove wall is not a second harbor.
 
 ---
 ## If the party
@@ -77,5 +77,5 @@ Hungry Isle is the spoken name for [[aruhe]] when crews first see it from the se
 ## Why
 
 - Recover living castaways before the landing fails and fauna claim the wreck.
-- Survey a possible [[tangle]] anchor without treating a living island as property.
+- Follow the Calveno raid's survivor trail inland while the ship remains mobile.
 - Decide what to do about the grief-bound Death Bloom at [[memorial-grove]] — destroy and end the blight, or leave the memorial standing with its killings. Regional ownership of that choice stays on [[aruhe]] and related lore pages.

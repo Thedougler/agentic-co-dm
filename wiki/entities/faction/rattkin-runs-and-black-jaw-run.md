@@ -46,11 +46,11 @@ Preserve the [[Tangle]]'s elder teachings and resist being priced out of every s
 
 ## Current state
 
-Under pressure, the Run moves people first, asks for proof through coded trust, and protects the teaching that makes the route more than transport. [[nona-black-jaw]] is the family face; [[perrin-black-jaw]] is the operative and successor. Perrin's assignment makes the crew part of a family and route decision.
+Under pressure, the Run moves people first, asks for proof through coded trust, and protects the teaching that makes the route more than transport. [[nona-black-jaw]] is the family face; [[perrin-black-jaw]] is the operative and successor. The crew's rescue of raid survivors ties them to the family and route network.
 
 ## Active agenda
 
-[[survey-aruhe-as-a-tangle-anchor]]: Aruhe either extends the Tangle or proves too costly to connect. [[the-taken-314]]: the Run can move people without replacing one authority with another.
+[[the-taken-314]]: the Run can move people without replacing one authority with another.
 
 ## Assets, people, places, relationships
 
@@ -67,4 +67,3 @@ Under pressure, the Run moves people first, asks for proof through coded trust, 
 - [[Tangle]]
 - [[Warren]]
 - [[Vestra]]
-- [[survey-aruhe-as-a-tangle-anchor]]

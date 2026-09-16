@@ -12,7 +12,7 @@ Cold open, next session: the *[[uncertainty|Uncertainty]]* is fresh out of repai
 
 ---
 
-The chase leads to [[aruhe|Aruhe]]. This is a smash-and-grab, no time for a survey: pull [[sandro|Sandro]] and [[nino|Nino]] out of the wrecked *[[vethka|Vethka]]* on the beach, maybe read the harbour and clifftop well enough to answer a couple of [[warren-aruhe-survey|Nona's still-unasked survey questions]] by accident, and get out before dark. [[blight|The Blight]] is CR 19, nowhere near this crew's weight class, so it gets marked and left, a horizon threat the table now knows is out there and can't touch yet, not this season's fight. Nona hasn't handed Perrin the Aruhe commission yet; the Calveno crisis has kept her too occupied. The crew finds the wreck before she ever asks them to look for it.
+The chase leads to [[aruhe|Aruhe]]. This is a smash-and-grab: pull [[sandro|Sandro]] and [[nino|Nino]] out of the wrecked *[[vethka|Vethka]]* on the beach, and get out before dark. [[blight|The Blight]] is CR 19, nowhere near this crew's weight class, so it gets marked and left, a horizon threat the table now knows is out there and cannot touch yet, not this season's fight. The crew finds the wreck before Nona ever asks them to look for it.
 
 ---
 

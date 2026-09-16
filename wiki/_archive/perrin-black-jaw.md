@@ -120,9 +120,8 @@ What destroyed the Vestra is still an open question at the DM level: the [[levia
 
 A surviving Vestra crew member could still walk through a door, and relief would arrive wrapped in guilt. His family does not know about the ship, and he himself does not know what destroyed it beyond that the thing was massive and came from deep below. Dravosi bounties on Rattkin stay a background pressure: real, rarely enforced, always present.
 
-[[nona-black-jaw|Nona]] has privately tasked him with surveying [[aruhe|Aruhe]] as a candidate Tangle anchor site.
+The crew reached Aruhe while following the Calveno raid's survivors.
 
-Full commission detail lives on [[warren|The Warren]] § DM Only. No session file confirms it yet.
 
 The crew's composition guarantees a dial-conflict tent pole: a faction offers to free slaves ([[jean-claude-tabarnack|Jean-Claude]]'s terminal node) in exchange for betraying a Rattkin ally (Perrin's family loyalty), pulling both crewmates toward it from opposite directions.
 

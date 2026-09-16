@@ -28,7 +28,7 @@ flexGrow=2
 | **Home**            | Guarded kitchen safehouse in Calveno                               |
 | **Wants**           | Keep the Passage and Black-Jaw Run alive; recover the taken        |
 | **Fears**           | Colonial pressure prices the network out of reach                  |
-| **Current hook**    | Perrin owes an Aruhe survey while the 314+ missing-persons case stays active |
+| **Current hook**    | The Calveno raid survivor case stays active                         |
 | **Leverage**        | Safehouse, couriers, ships, sending stone, bodyguards, and contacts |
 | **Request posture** | Friendly but **hesitant** about open-ended promises                |
 
@@ -53,7 +53,7 @@ flexGrow=1
 
 Let Nona hear the party's problem before naming hers. Enzo and Ruk hold the door while she decides whether the request has a route, a cost, and a reason to trust it.
 
-**Sample line:** “Bring me a survey I can use, and I can put a route under it.”
+**Sample line:** “Bring me proof they are alive, and I can put a route under it.”
 ```
 
 ```col-md
@@ -61,7 +61,7 @@ flexGrow=1
 ===
 ### When the party helps
 
-Concrete evidence of recovered people, a credible Aruhe survey, or a workable route moves her. She answers with practical access, protection, or a favor; a favor can become a debt.
+Concrete evidence of recovered people or a workable route moves her. She answers with practical access, protection, or a favor; a favor can become a debt.
 
 ### Under pressure
 
@@ -75,7 +75,7 @@ Threats against the network close the door. Family language becomes business ter
 
 Nona turned the [[Mercatura]] crater into a missing-persons desk for more than `314` fighting-age men. She vowed public chase, dispatched two [[Passage]] ships already days behind the raiders, and gave [[Perrin Black-Jaw]] a favor instead of cash.
 
-The crew's [[Survey Aruhe as a Tangle anchor|Aruhe survey]] is still owed. If the party ignores it, Nona sends a short request through the stone and redirects Passage attention to the missing-persons desk; the crew loses priority access while the case continues without their help.
+The party found its own way to [[Aruhe]] while following the Calveno raid's survivors. Nona's attention remains on the missing-persons desk and recovery effort.
 
 ````col
 ```col-md
@@ -103,7 +103,7 @@ Nona protects people through a network whose survival requires transactional pre
 | --- | --- |
 | [[Passage]] | Nona is the route face; the party can accept, reshape, or refuse its obligations. |
 | [[Rattkin Runs and Black-Jaw Run]] | Family network Nona keeps alive through coded trust, couriers, and ships. |
-| [[Perrin Black-Jaw]] | Grandson, surveyor, and favor-debtor; offer an Aruhe lead while his [[Vestra]] / [[Auralis]] chase remains the real spotlight. |
+| [[Perrin Black-Jaw]] | Grandson and favor-debtor; he is part of the crew that reached Aruhe after the raid. |
 | [[Enzo]] · [[Ruk]] | Visible boundary of the safehouse; Ruk has guarded Passage witnesses for Nona. |
 | [[Delmar Fisk]] | Captain-facing talent; ask him to choose which passage is safe. |
 | [[Crissdalynn Khinriss]] | Map-reading asset; invite her to compare Aruhe and Maw routes. |
@@ -116,13 +116,12 @@ Nona protects people through a network whose survival requires transactional pre
 | --- | --- | --- |
 | Session 03 | Heard the [[Vestra]] was lost, called off attacks, asked Perrin for an unspecified favor, and gave him the sending stone. | The favor is owed; Nona can contact Perrin directly. |
 | Session 08 | Turned the crater into a missing-persons desk, vowed chase, and sent two Passage ships. | More than `314` men are missing; the ships are days behind. |
-| Current | Awaits Perrin's Aruhe survey while his [[Auralis]] / Vestra problem remains partly unshared. | Ask for the survey or redirect the network to the missing-persons desk. |
+| Current | The crew reached Aruhe while following the Calveno raid survivors; Nona continues the recovery effort. | Keep the missing-persons desk moving. |
 
 ## Appearances
 
 - [[campaigns/shattered-sea/story/00 Story so far]]
 - [[Pursue the Grung raiding fleet]]
-- [[Survey Aruhe as a Tangle anchor]]
 
 > [!secret]- Provenance
 > This delta compiles the 2026-09-05 PC deep-dive; legacy context: /Users/nick/shattered-sea/wiki/shattered-sea/pc.perrin-black-jaw.md.

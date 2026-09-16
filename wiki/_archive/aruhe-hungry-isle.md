@@ -17,7 +17,7 @@ pressure: "Sandro and Nino remain stranded in the wreck while the only landing r
 if_ignored: "The Vethka breaks down around the castaways, the beach loses its last safe shelter, and Aruhe's corruption keeps driving giant fauna toward the reef and landing ground."
 actors: ["[[sandro]]", "[[nino]]", "[[grung-clans]]", "[[blight|The Blight]]", "[[nona-black-jaw]]"]
 fronts: ["[[grung-clans]]"]
-clues: ["[[aruhe-wreck]]", "[[arc-blight-of-aruhe]]", "[[blight|The Blight]]", "[[warren-aruhe-survey]]"]
+clues: ["[[aruhe-wreck]]", "[[arc-blight-of-aruhe]]", "[[blight|The Blight]]"]
 locations: ["[[aruhe|Aruhe]]", "[[karath|Karath]]", "[[calveno]]"]
 related_events: ["[[aruhe-wreck]]"]
 campaigns: [Shattered Sea]
@@ -42,7 +42,7 @@ This is an expedition situation, not one encounter. The beach and terraces open 
 
 **The island advances without a party.** Corruption keeps pushing giant, aggressive fauna from the interior toward the terraces, beach, and reef. Every delay makes the landing ground less forgiving without making the inner jungle any less worth exploring.
 
-Perrin's [[warren-aruhe-survey|Aruhe survey]] gives the situation a practical entry point. He is assessing a possible Tangle anchor site from an island that blocks any waterline survey. Jean-Claude's knowledge of [[grung|Grung]] raiding and captivity gives the wreck a personal cost beyond salvage.
+The Calveno raid's survivor trail gives the situation its practical entry point. Jean-Claude's knowledge of [[grung|Grung]] raiding and captivity gives the wreck a personal cost beyond salvage.
 
 ## Actors
 
@@ -50,7 +50,7 @@ Perrin's [[warren-aruhe-survey|Aruhe survey]] gives the situation a practical en
 - [[nino|Nino]] wants to leave without crossing the garden line. His silence and repeated caution make the island's taking-rule visible before he can explain it.
 - [[grung-clans|The Grung Clans]] keep patrol boats around Aruhe's reef and refuse to land. Their raiding fleet's loss remains part of a wider pattern of captives moving toward Karath.
 - [[blight|The Blight]] moves toward one aim: keep Aruhe inviolate in the memory of the drowned companion. Its corruption turns that protection into indiscriminate punishment.
-- [[nona-black-jaw|Nona]] wants the survey answered. A usable Tangle anchor would be valuable. An island that cannot be safely entered may make the commission impossible.
+- [[nona-black-jaw|Nona]] keeps the missing-persons desk and recovery effort moving after the Calveno raid.
 
 ## Discoverable / Affectable
 
@@ -60,7 +60,7 @@ Perrin's [[warren-aruhe-survey|Aruhe survey]] gives the situation a practical en
 - **The guardian's motive emerges from three sources.** The survivors show that Aruhe distinguishes between looking and taking. The terraces and ruins show a place shaped as a garden and refuge before the corruption. Black flowers, calmed funeral fauna, and paired graves show mourning inside the predation.
 - At the final grove, fauna gather at the boundary in stillness and watch like mourners. Black flowers mark two unmarked graves beneath the fruit tree. No root crosses either grave. The Death Bloom is the graves, tree, and ritual ground together, not a detachable object.
 - **The moral pressure is permanent.** The Blight began as the captive **Archdruid**'s refuge-protecting ritual. Corruption has made her its physical form. Destroying the Death Bloom ends her permanently. Leaving it preserves the sanctuary and its killings. The choice remains open.
-- **PC gravity:** [[perrin-black-jaw|Perrin]]'s survey can turn the island into a question of whether a useful site is worth entering. Jean-Claude's Grung connection can turn the guardian's inherited hatred into a question of what protection means when it no longer distinguishes the guilty from the living.
+- **PC gravity:** [[perrin-black-jaw|Perrin]]'s crew reached Aruhe while following the Calveno raid's survivors. Jean-Claude's Grung connection can turn the guardian's inherited hatred into a question of what protection means when it no longer distinguishes the guilty from the living.
 
 ## If Ignored
 
@@ -76,7 +76,6 @@ The Blight remains intact and the Death Bloom remains untouched. Nothing in the 
 - [[aruhe|Aruhe]] owns the island's geography, ecology, access, and current condition.
 - [[blight|The Blight]] owns the place-bound Death Bloom, staged resilience, vow, and corrupted guardian.
 - [[arc-blight-of-aruhe|Half a Mile]] owns the **Archdruid**'s escape, companion, graves, and ritual origin.
-- [[warren-aruhe-survey|Warren, Aruhe Survey]] owns Perrin's commission and survey goals.
 - [[grung-clans|Grung Clans]] owns the raiding system, patrol behavior, and the wider captive-taking pressure.
 
 ## Beat Chart
@@ -87,7 +86,7 @@ Can the crew survive Aruhe's escalating corruption long enough to reach the Deat
 
 ### Player Gravity
 
-- [[perrin-black-jaw|Perrin]]: his patron's survey commission. Can the island serve as a Tangle anchor, or does the Blight make it permanently unusable?
+- [[perrin-black-jaw|Perrin]]: his crew reached Aruhe while following the Calveno raid's survivors. Jean-Claude's Grung history makes the island's inherited hatred a question of what protection means when it no longer distinguishes the guilty from the living.
 - [[jean-claude-tabarnack|Jean-Claude]]: Grung history with Aruhe. The island attacks Grung on sight. His people's inherited fear of this place is a question he can answer or confirm.
 - [[delmar-fisk|Delmar]]: the castaways are Calveno crew. Rescue is crew obligation, and the wreck may hold salvage worth the risk.
 - [[catarina-davirelli|Catarina]]: the Blight's corruption is a druidic mechanism. Her engineering mind meets magic that reshapes biology at scale.

@@ -36,6 +36,5 @@ The deepest anchor is [[Warren]]; routes touch [[Calven and Calveno]] and the Mi
 
 ## Clocks
 - [[The taken 314]]: the Passage can move people while the Crown tries to own the rescue.
-- [[Survey Aruhe as a Tangle anchor]]: Aruhe may become a route or a route the Passage must leave alone.
 
 **Provenance:** Dump source staged at [[inbox/archive/FILED-2026-09-05-tessarine-concordat.md]]. Legacy read-only context: `/Users/nick/shattered-sea/wiki/shattered-sea/location-the-warren.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/campaign-plan-shattered-sea.md`.

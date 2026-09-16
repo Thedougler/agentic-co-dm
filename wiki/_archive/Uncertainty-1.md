@@ -83,7 +83,7 @@ The crew’s current vessel; feels like a moving room for unresolved debts and r
 - **Directional:** route board and wake/traffic point toward Sparhold or Aruhe.
 - **Failure cost:** privacy, time, cargo access, or hunter attention; never remove only route.
 ## Pressure clocks
-- **Trail (3):** depart → Sparhold contact → Aruhe survey; delay gives Grung/Crown/hunters time.
+- **Trail (3):** depart → Sparhold contact → Aruhe wreck field; delay gives Grung/Crown/hunters time.
 - **Hunters (3):** suspicion → search/interception → claim or expose vials.
 - **Ship state:** ready → strained → compromised → repaired/changed (**details seed**).
 ## Location moves
@@ -95,7 +95,7 @@ The crew’s current vessel; feels like a moving room for unresolved debts and r
 ## Connections
 - [[Sparhold]] · [[Aruhe - Hungry Isle]] · [[Midchain]] · [[Warren]]
 ## Hooks
-- Season 2 departure; Grung fleet trail; Simone’s hunters; Grigori/Crown pressure; Tangle survey.
+- Season 2 departure; Grung fleet trail; Calveno raid survivors; Simone’s hunters; Grigori/Crown pressure.
 ## Secrets (DM)
 - Ship build, speed, crew jobs, cargo layout, and damage states are **DM seed (unconfirmed)**; use table facts for specifics.
 ## Mechanics and return

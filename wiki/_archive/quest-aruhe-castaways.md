@@ -9,7 +9,7 @@ uid: cc8bcd56-356d-44cd-ba37-bbfbf91f3c43
 
 # Half the Fleet
 
-*Draft fiction, not canon. Canon lives on the wiki. Derived pages: [[sandro|Sandro]], [[nino|Nino]], [[aruhe-wreck|The Aruhe Wreck]], [[aruhe|Aruhe]], [[warren-aruhe-survey|Warren: Aruhe Survey]].*
+*Draft fiction, not canon. Canon lives on the wiki. Derived pages: [[sandro|Sandro]], [[nino|Nino]], [[aruhe-wreck|The Aruhe Wreck]], and [[aruhe|Aruhe]].*
 
 The rope had worn a groove into Sandro's wrist days ago, deep enough that
 he had stopped testing it by the second night out of [[calveno|Calveno]]. The

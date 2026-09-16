@@ -28,8 +28,7 @@ The [[Warren]], [[Vestra]]'s legacy, courier ties, and the family obligations th
 ## Relations
 - Ally: [[Passage]]
 - Complicated: [[Dravosi Crown]]
-- Party: ally; Perrin's assignment makes the crew part of a family and route decision
+- Party: ally; the crew's rescue of raid survivors ties them to the family and route network
 
 ## Clocks
-- [[Survey Aruhe as a Tangle anchor]]: Aruhe either extends the Tangle or proves too costly to connect.
 - [[The taken 314]]: the Run can move people without replacing one authority with another.

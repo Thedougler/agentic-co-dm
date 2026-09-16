@@ -4,7 +4,7 @@ category: entities
 tags: [shattered-sea, faction]
 sources:
   - "Tangle.md"
-summary: "Elder teaching and proposed anchor referenced by the Rattkin Runs; Aruhe is a survey site."
+summary: "Elder teaching and proposed anchor referenced by the Rattkin Runs; its full nature and history are unknown."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -23,17 +23,13 @@ status: unknown
 relationships:
   - target: "[[rattkin-runs-and-black-jaw-run]]"
     type: related_to
-  - target: "[[survey-aruhe-as-a-tangle-anchor]]"
-    type: related_to
 ---
 # Tangle
 
-The [[Tangle]] is an elder teaching and proposed anchor referenced by the [[rattkin-runs-and-black-jaw-run]]. Its full nature and history are unknown. [[aruhe]] is a survey site under [[survey-aruhe-as-a-tangle-anchor]].
+The [[Tangle]] is an elder teaching and proposed anchor referenced by the [[rattkin-runs-and-black-jaw-run]]. Its full nature and history are unknown.
 
 ## Connections
 
 - [[perrin-black-jaw]]
 - [[nona-black-jaw]]
 - [[rattkin-runs-and-black-jaw-run]]
-- [[survey-aruhe-as-a-tangle-anchor]]
-- [[aruhe]]

@@ -41,7 +41,6 @@ VIEW[{reference_image}][image(class(reference-image-view))]
 ## Relationships
 
 - [[nino|Nino]], swam ashore with him onto [[aruhe|Aruhe]] alongside an older man, Tomo. Tomo broke the island's fruit taboo that first night. Something dragged him into the treeline, and only the drag marks remained. Sandro still hasn't explained that death to Nino, and cuts the subject short the moment the treeline comes up.
-- [[perrin-black-jaw|Perrin Black-Jaw]], his private Aruhe survey commission targets the island where she's stranded.
 - [[nona-black-jaw|Nona Black-Jaw]], chasing the raid that took Sandro captive along with roughly five hundred other **[[calveno|Calveno]]** during [[il-gioco-delle-beffe|La Finestra]] (Session 04).
 - [[grung|Grung]], his captors on the raid. He found two of them already dead on the beach after the wreck, and has never told Nino what killed them.
 - [[vethka|Vethka]], the wrecked hull he and Nino now shelter in. One of the fleet's ships, it sailed for [[karath|Karath]] before the storm wrecked it on Aruhe.

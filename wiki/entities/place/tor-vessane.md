@@ -72,5 +72,4 @@ Wild sea-fig grows fleshy fruit clusters along the bramble's edge, sweet enough 
 
 ## Hooks
 
-- [[nona-black-jaw|Nona]]'s Tangle-anchor survey brief names Tor Vessane as the second candidate site after [[aruhe|Aruhe]], full detail on [[warren-aruhe-survey|Warren, Aruhe Survey]] — no crew has taken the commission yet, since every sailor she's approached repeats a different curse story and refuses to go.
 - A captain's log surfaces the same curse phrase in three unrelated hands across three different ships, suggesting more than dockside talk connects the tellings.

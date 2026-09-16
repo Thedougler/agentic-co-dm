@@ -38,8 +38,6 @@ relationships:
     type: related_to
   - target: "[[the-taken-314]]"
     type: related_to
-  - target: "[[survey-aruhe-as-a-tangle-anchor]]"
-    type: related_to
   - target: "[[grung-clans]]"
     type: related_to
 ---
@@ -85,7 +83,7 @@ flexGrow=1
 ## Current State
 
 - **Status quo.** The Passage moves people, cargo, and news off Crown charts through kitchens, family ties, and Tessarine-looking paper that is cover, not a command structure.
-- **Recent change.** [[nona-black-jaw]] turned the Mercatura crater into a missing-persons desk, sent two Passage ships after the raiders, and still waits on the [[survey-aruhe-as-a-tangle-anchor|Aruhe survey]].
+- **Recent change.** [[nona-black-jaw]] turned the Mercatura crater into a missing-persons desk, sent two Passage ships after the raiders, and the party reached [[aruhe]] while following the raid's survivors.
 - **Pressure.** More than `314` fighting-age people are already on the captive pipeline, and the Crown will try to own any rescue it can see.
 - **Strength.** Deepest anchor at [[Warren]]; kitchens and family ties matter as much as ships; routes already touch [[calven-and-calveno]] and the [[Midchain]].
 - **Vulnerability.** Tessarine paper keeps a route off charts only while no inspector asks the next question, and there is no formal Concordat deal to hide behind.
@@ -99,15 +97,15 @@ flexGrow=1
 
 **Clock:** ○ ○ ○ ○ ○ ○
 
-**Next move:** Keep the two ships already days behind the raiders on the captive route, and decide whether [[aruhe]] can be a Passage route or must be left alone.
+**Next move:** Keep the two ships already days behind the raiders on the captive route, and recover people where the route leads.
 
-**Needs:** Trusted kitchens, courier proof, and a survey answer that does not treat living Aruhe as a possession.
+**Needs:** Trusted kitchens, courier proof, and a safe way to move rescued people.
 
 **Opposition:** Crown inspection, Grung raiding routes that the Passage can cross without sharing goals, and any buyer who will pay to move people as property.
 
-**Next signal:** Another kitchen opens or closes, a courier asks for the survey, or Crown paper starts covering a rescue the Passage already started.
+**Next signal:** Another kitchen opens or closes, a courier asks for help recovering people, or Crown paper starts covering a rescue the Passage already started.
 
-**Player opening:** The party can carry the Aruhe survey, help move people, refuse a favor, or keep a rescue off Crown books.
+**Player opening:** The party can help recover people, refuse a favor, or keep a rescue off Crown books.
 
 If the agenda completes, the taken move on Passage terms and the Crown does not get to define the rescue.
 
@@ -134,7 +132,7 @@ If the agenda completes, the taken move on Passage terms and the Crown does not 
 | [[Warren]] | Headquarters / Hidden | Deepest anchor and the network's origin. | Elder teaching still judges new routes. |
 | [[calven-and-calveno]] | Strong | Nona's kitchen and the missing-persons desk. | Crown and Concordat paper both touch the harbour. |
 | [[Midchain]] | Contested | Sea lanes the Passage can use without staying on charts. | Crown cutters can run the main lanes. |
-| [[aruhe]] | Temporary | A possible new route, or a route they must refuse. | The survey is still owed. |
+| [[aruhe]] | Temporary | The crew reached the island while following the Calveno raid's survivors. | Survivors remain inland and the ship stays mobile. |
 
 ## Connections
 
@@ -143,15 +141,15 @@ If the agenda completes, the taken move on Passage terms and the Crown does not 
 | [[dravosi-crown]] | Complicated | To keep movement off inspection books. | A related Crown draft calls the same relationship hostile. ^[ambiguous] |
 | [[tessarine-concordat]] | Cover-only | Paper that waves a boat through. | No formal arrangement. |
 | [[grung-clans]] | Unaligned | Cross their raid routes without sharing their goals. | The taken are already on Grung hulls. |
-| [[nona-black-jaw]] | Leader | The party to carry routes and the Aruhe survey. | Favors can be refused or reshaped. |
+| [[nona-black-jaw]] | Leader | The party to carry routes and help recover people. | Favors can be refused or reshaped. |
 
 ### Party
 
 **Standing:** Allied
 
-**Why:** Beaumont named Perrin a Friend of the Passage, and Nona has already put work and a survey on the crew.
+**Why:** Beaumont named Perrin a Friend of the Passage, and the crew reached Aruhe while following the Calveno raid's survivors.
 
-**They currently want from the party:** The Aruhe survey, and help moving people the Crown must not own.
+**They currently want from the party:** Help moving people the Crown must not own.
 
 **They can currently offer the party:** Kitchens, couriers, ships, and a name that opens other Passage doors.
 
@@ -161,7 +159,7 @@ If the agenda completes, the taken move on Passage terms and the Crown does not 
 
 ### When encountered
 
-Members are moving a person, closing a kitchen to questions, or asking whether a new island can take a route.
+Members are moving a person, closing a kitchen to questions, or routing people away from Crown control.
 
 ### When helped
 
@@ -173,7 +171,7 @@ They reroute the person first, then decide what information can travel. They pro
 
 ### When ignored
 
-The two ships stay on the captive route, Nona redirects attention to the missing-persons desk, and Aruhe is either connected or abandoned without the party.
+The two ships stay on the captive route and Nona redirects attention to the missing-persons desk.
 
 ### When broken
 

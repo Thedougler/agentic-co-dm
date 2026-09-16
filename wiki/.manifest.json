@@ -2,7 +2,7 @@
   "version": 1,
   "stats": {
     "total_sources_ingested": 811,
-    "total_pages": 718,
+    "total_pages": 717,
     "packet_ingest-raw-2026-09-13-gh-2": 515
   },
   "/Users/nick/agentic-co-dm/wiki/_raw/arc-blight-of-aruhe.md": {
@@ -746,7 +746,6 @@
         "entities/Passage.md",
         "entities/Beaumont Sel.md",
         "entities/Warren.md",
-        "entities/Survey Aruhe as a Tangle anchor.md",
         "entities/The taken 314.md"
       ]
     },
@@ -2808,7 +2807,7 @@
     "pages_produced": [
       "entities/Midchain.md",
       "entities/Amberfall.md",
-      "entities/Coeur Brisé.md",
+      "entities/Coeur Bris\u00e9.md",
       "entities/Torvalline.md",
       "entities/Lethys.md",
       "entities/Windrow.md",
@@ -8275,5 +8274,5 @@
     "project": "shattered-sea",
     "packet": "ingest-raw-2026-09-13-gh-2"
   },
-  "last_updated": "2026-09-14T21:34:24Z"
+  "last_updated": "2026-09-16T05:14:45Z"
 }

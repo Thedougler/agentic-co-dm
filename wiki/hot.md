@@ -1,8 +1,9 @@
 ---
-updated: 2026-09-14T23:50:00Z
+updated: 2026-09-15T00:00:00Z
 ---
 ## Recent Activity
 Deleted 476 spaced remorph redirect stubs. Kebab owner pages remain; inbound wikilinks were rewritten in the same pass. Rename no longer leaves a stub at the old basename.
+Recentered Aruhe state on the Calveno raid survivor rescue; the party found its own way there and the ship remains mobile.
 Ingested Session 11 play from the transcript: inland flight from the bloodhawk, Matteo Scola at the otter camp, and Talon Skarn still in Crissdalynn's face.
 Updated [[taking-on-aruhe]] from table witness: fallen fruit is food; picking living fruit draws wolfrabbits.
 Cleaned 638 active pages to canonical campaign/type tags; removed 882 legacy tags and expanded the type vocabulary.

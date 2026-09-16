@@ -30,7 +30,7 @@ After the cold open, if they turn east or follow wreckage. The Sequence already 
 > |---|---|---|---|
 > | Survival | 14 | a rich island | one berry or fish turns the island against the taker |
 > | Perception | 13 | jungle | reef and beach, then terraces, then closed sight lines |
-> | Investigation | 15 | a wreck | [[warren-aruhe-survey]] — [[perrin-black-jaw\|Perrin]]'s Tangle-anchor question |
+> | Investigation | 15 | a wreck | the Calveno raid's survivor trail |
 
 ![[aruhe-hungry-isle#Premise]]
 

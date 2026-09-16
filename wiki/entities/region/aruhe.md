@@ -44,7 +44,7 @@ _The Hungry Isle_
 
 ---
 ## At a Glance
-Aruhe is a vast untamed island in the eastern [[Midchain]]: about 500 miles end to end and about 150 miles across at its waist. No settlement is visible from offshore. [[Karath]] sits close to one western edge, not to the heart hundreds of miles inland. [[Uncertainty]] is at or around the island and remains mobile. Land at [[western-landing|Western Landing]]; inland bands are [[old-gardens|the Old Gardens]], [[the-quiet|the Quiet]], [[grasslands|the Grasslands]], [[the-river|the River]], [[the-marshes|the Marshes]], [[the-mangroves|the Mangroves]], [[clear-lake|Clear Lake]], [[memorial-grove|Memorial Grove]], and [[lava-tubes|the lava tubes]]. Observe from offshore to skip the landing; the southern mangrove wall is not a second approach. The heart still stays many days inland. [[survey-aruhe-as-a-tangle-anchor]] is open.
+Aruhe is a vast untamed island in the eastern [[Midchain]]: about 500 miles end to end and about 150 miles across at its waist. No settlement is visible from offshore. [[Karath]] sits close to one western edge, not to the heart hundreds of miles inland. [[Uncertainty]] is at or around the island and remains mobile. Land at [[western-landing|Western Landing]]; inland bands are [[old-gardens|the Old Gardens]], [[the-quiet|the Quiet]], [[grasslands|the Grasslands]], [[the-river|the River]], [[the-marshes|the Marshes]], [[the-mangroves|the Mangroves]], [[clear-lake|Clear Lake]], [[memorial-grove|Memorial Grove]], and [[lava-tubes|the lava tubes]]. Observe from offshore to skip the landing; the southern mangrove wall is not a second approach. The heart still stays many days inland.
 
 ---
 ## If the party
@@ -99,7 +99,7 @@ The inward pull of Aruhe leads toward [[memorial-grove|Memorial Grove]], approac
 
 The island's excess comes from [[Hinewai|Hinewai]] preserving a grave at [[memorial-grove|Memorial Grove]]. The Death Bloom is not a portable object hidden somewhere on the island. It is the tree, both graves, the black-flower ring, the bound soil, and the relationship holding them together. That grief has made Aruhe's life systems overactive: too much growth, too much repair, too much adaptation, and a violent response to taking.
 
-Right now, Aruhe matters because the Calveno raid broke here. Some survivors are aboard [[Uncertainty]], more remain inland, and the crew can still recover people before the island kills them or absorbs them into its local pressures. The broader campaign handle is to survey a possible [[Tangle]] anchor without treating a living island as property, rescue the living, preserve a route back to the sea, and decide what to do about the grief at the island's heart.
+Right now, Aruhe matters because the Calveno raid broke here. Some survivors are aboard [[Uncertainty]], more remain inland, and the crew can still recover people before the island kills them or absorbs them into its local pressures. The crew found this island while following the raid's wreck field; the ship stays mobile, and the party must decide how far to pursue the survivors and the island's deeper truth.
 
 ## Narration
 
@@ -128,7 +128,7 @@ After the cold open, if they turn east or follow wreckage. The Sequence already 
 > |---|---|---|---|
 > | Survival | 14 | a rich island | one berry or fish turns the island against the taker |
 > | Perception | 13 | jungle | reef and beach, then terraces, then closed sight lines |
-> | Investigation | 15 | a wreck | [[Warren Aruhe Survey]] — [[perrin-black-jaw|Perrin]]'s Tangle-anchor question |
+> | Investigation | 15 | a wreck | the Calveno raid's survivor trail |
 
 ![[aruhe]]
 

@@ -83,7 +83,7 @@ Session 11 left the squid to an adult [[bloodhawk]]. [[jean-claude-tabarnack]] w
 
 The inland four are at [[river-slack-basin]] with [[matteo-scola]], mid-watch, with [[talon-skarn]] in Crissdalynn's face. [[jean-claude-tabarnack]] is catatonic in Delmar's coat. *[[Uncertainty]]* is still offshore. Other inland survivors remain farther up the river.
 
-[[survey-aruhe-as-a-tangle-anchor]] is active, but passage must not become possession. The island's taking-places, dead, and crown squid are immediate pressure.
+The Aruhe thread is the Calveno raid rescue: survivors remain inland, the ship stays mobile, and the island's taking-places, dead, and crown squid are immediate pressure.
 
 [[bring-the-pearl-of-souls-to-umberlee]] remains open. So do [[pursue-the-grung-raiding-fleet]], [[simones-hunters]], and [[grigori-and-the-crown-hunt]].
 
