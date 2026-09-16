@@ -1,6 +1,6 @@
 # Feature Specification: Hybrid Spec-Driven Development
 
-**Feature Branch**: `022-hybrid-sdd-adaptation`
+**Feature Branch**: `021-hybrid-sdd-adaptation`
 
 **Created**: 2026-09-16
 
