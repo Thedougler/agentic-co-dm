@@ -17,6 +17,16 @@
 - Q: Where should normal sitting traces be stored and how long should they be retained? → A: Local gitignored JSONL with redacted metadata and token counts only, retained for 90 days; sanitized evaluation fixtures and pinned baselines may be committed.
 - Q: Which Co-DM quality requirements must be executable hard gates rather than semantic judgments? → A: Hard-gate canon precedence, entity-before-spoken, DM-facing explicitness, reveal/visibility boundaries, accept-before-write, and objective mechanics/schema checks; use blind semantic evaluation for playability, specificity, continuity, agency, and usefulness.
 - Q: What evidence should be required before an optimization is promoted or rolled back? → A: Require pinned paired replay, zero new hard-gate failures, semantic non-inferiority, and material savings; low-risk changes may auto-promote after at least 10 same-kind pairs and a 10% canary, moderate-risk changes require shadow replay and canary review, high-risk changes require human review, and any hard failure or material quality regression triggers rollback.
+- Q: When should a fetched page count as materially useful retrieval? → A: Count it as useful when accepted Work explicitly cites or links it, or an independent evaluator confirms that it supplied a required fact, rule, or safety constraint; fetched-but-unused pages count as unnecessary retrieval.
+- Q: What minimum metric vector must every efficiency report expose? → A: Total trajectory, input/output, source components, retrieval counts/tokens, retries, hard failures, acceptance, revisions, runtime failures, and labeled derived metrics.
+- Q: How should token attribution handle content that belongs to multiple source categories? → A: Assign each measured token occurrence one primary source owner; retain secondary provenance as metadata only and never count the same occurrence twice.
+- Q: Which sitting task classes should the initial efficiency system compare? → A: Compare `prep` and `wrapup`; keep audit and replay as metadata rather than separate comparison classes.
+- Q: Who should own the efficiency policy and its safety thresholds? → A: Maintainers own the versioned `config/efficiency.yaml`; agents may read and propose changes but may not silently weaken thresholds, gates, or autonomy boundaries.
+
+
+
+
+
 
 
 
@@ -139,7 +149,8 @@ These scenarios are the minimum cross-class acceptance set for the adapted syste
 - Targeted retrieval finds conflicting accepted, proposed, legacy, or external material: current accepted repository knowledge outranks lower-authority material; unresolved conflict remains visible for DM or owner resolution.
 - A new entity name resembles an existing alias but describes a distinct entity: report the collision evidence and require an explicit distinction before minting a new owner.
 - A specification repeats a closed vocabulary with different members: identify the authoritative owner and report drift; do not create a second enum to make the spec internally consistent.
-- A creative plan would load the entire wiki or index despite targeted retrieval being sufficient: treat the excess as context waste and narrow the load without reducing required grounding.
+- A fetched page is materially useful only when accepted Work explicitly cites or links it, or an independent evaluator confirms that it supplied a required fact, rule, or safety constraint; fetched-but-unused pages are unnecessary retrieval.
+
 - DM acceptance is required for a campaign fact but not for a deterministic index, manifest, lint, or retrieval refresh: keep the safety gate only on the fact-changing surface.
 - A creative task has no player-dependent outcome: it may state a fixed world anchor or current truth, but must still identify independent-world motion and visibility where relevant.
 - A normal engineering task mentions a domain term that is also used in campaign work: use the repository's authoritative domain owner and do not invent a competing definition.
@@ -188,7 +199,8 @@ These scenarios are the minimum cross-class acceptance set for the adapted syste
 - **FR-026**: Deterministic checks MUST cover applicable objective failures such as invalid type, lifecycle, relationship, filename, schema field, beat kind, required owner, broken link, duplicate identity, or vocabulary drift using existing or appropriately extended repository tooling.
 - **FR-027**: Verification MUST use executable hard gates for canon precedence, entity-before-spoken behavior, DM-facing explicitness, reveal and visibility boundaries, accept-before-write semantics, and objective mechanics or schema checks. Playability, specificity, continuity, player agency, and DM usefulness MUST use blind semantic evaluation independent of the optimization under evaluation and MUST NOT become deterministic lint failures.
 
-- **FR-028**: Context strategy MUST prefer minimum sufficient authoritative retrieval, owner-page retrieval, targeted relationships, current state, invoked rules, progressive disclosure, machine-readable discovery, and environment-derived truth.
+- **FR-028**: Context strategy MUST prefer minimum sufficient authoritative retrieval, owner-page retrieval, targeted relationships, current state, invoked rules, progressive disclosure, machine-readable discovery, and environment-derived truth. A fetched page MUST count as materially useful only when accepted Work explicitly cites or links it, or an independent evaluator confirms that it supplied a required fact, rule, or safety constraint; fetched-but-unused pages MUST count as unnecessary retrieval.
+
 
 - **FR-030**: Any claimed token or context improvement MUST be measured with the selected model family’s native tokenizer as authoritative across the whole useful trajectory from the user request through final Work, including loaded instructions and context, retrieval, tool calls, failed calls, retries, and model input/output; idle time and unrelated activity MUST be excluded. Comparisons MUST remain within the same model/tokenizer family unless a separately specified normalization method exists. Comparisons MUST preserve narrative craft, mechanics, specificity, canon fidelity, playability, agency, and DM usefulness. Normal sitting traces MUST use local gitignored JSONL containing redacted metadata and token counts only, with 90-day retention; sanitized evaluation fixtures and pinned baselines MAY be committed.
 
@@ -199,10 +211,17 @@ These scenarios are the minimum cross-class acceptance set for the adapted syste
 
 - **FR-031**: The adapted Spec Kit layer MUST preserve the normal substantial-feature lifecycle: specify, clarify, plan, checklist, tasks, analyze, implement, and converge.
 - **FR-032**: Existing Spec Kit git and agent-context extensions MUST remain configured and operational unless a concrete incompatibility is named and resolved.
+
 - **FR-033**: Existing wiki schema, entity directories, lifecycle, reveal, visibility, Work acceptance, campaign skills, templates, retrieval primitives, linter, staged writes, designated-writer policy, domain vocabulary, and unattended deterministic maintenance MUST remain compatible.
 - **FR-034**: Completion evidence MUST identify the route taken, authoritative context used and intentionally omitted, affected and resolved owner artifacts, dependency topology, deterministic checks run, creative/agency/continuity review, Work and DM acceptance state where applicable, filing or promotion state, and measured context cost where claimed.
 - **FR-035**: The system MUST distinguish specification approval, plan approval, task completion, creative Work production, DM acceptance or modification, and accepted campaign truth as separate states.
 - **FR-036**: Every optimization candidate MUST be evaluated against a pinned baseline with equivalent inputs and recorded revisions. Promotion MUST require at least 10 same-kind paired cases, at least a 5% median trajectory-token reduction, zero new hard-gate failures, semantic non-inferiority, and no material increase in runtime failures or DM revision rate. Low-risk changes MAY auto-promote only after a 10% canary; moderate-risk changes MUST complete shadow replay and canary review; high-risk changes MUST receive human review. Any hard-gate failure or material quality regression MUST trigger rollback.
+- **FR-037**: Every efficiency report MUST expose total trajectory tokens, input tokens, output tokens, tokens by source component, retrieval query and fetch counts, retrieval tokens, retry amplification, hard-gate failure rate, DM acceptance rate, DM revision rate, runtime or tool failure rate, and derived metrics with explicit denominators. Each value MUST be labeled measured, estimated, or inferred. Every measured token occurrence MUST have one exclusive primary source owner; secondary provenance MAY be retained as metadata but MUST NOT be counted twice.
+- **FR-038**: Each sitting MUST be classified as `prep` or `wrapup` for initial efficiency comparisons. Audit and replay MAY be recorded as metadata but MUST NOT become separate comparison classes. Efficiency comparisons MUST use the same sitting class and same jobs.
+- **FR-039**: Efficiency policy MUST be owned by maintainers in a versioned `config/efficiency.yaml`. The policy MUST define measurement rules, sample requirements, non-inferiority requirements, autonomy classes, canary rules, and rollback thresholds. Agents MAY read and propose policy changes but MUST NOT silently weaken thresholds, quality gates, or autonomy boundaries.
+
+
+
 
 
 ### Named Failure Modes and Scope Boundary
@@ -268,6 +287,11 @@ The following constraints are included because each prevents a named failure:
 - **SC-013**: In a routine-NPC smoke run, 0 full SDD feature directories, plans, or engineering task graphs are generated, and the existing NPC skill/template route remains usable.
 - **SC-014**: In a review of at least five completed creative or agentic workflows, 100% distinguish specification approval, plan approval, task completion, Work production, DM acceptance, and accepted campaign truth as separate states.
 - **SC-015**: In a promotion fixture with low-, moderate-, and high-risk candidates, 100% use pinned paired replay; low-risk promotion requires at least 10 same-kind pairs and a 10% canary, moderate-risk promotion requires shadow replay and canary review, high-risk promotion requires human review, and every hard-gate failure or material quality regression causes rollback.
+- **SC-016**: In a retrieval fixture with cited, evaluator-confirmed, and fetched-but-unused pages, 100% of cited or evaluator-confirmed pages are classified as materially useful and 100% of fetched-but-unused pages are classified as unnecessary retrieval.
+- **SC-017**: In a report fixture containing successful, failed, retried, and retrieved work, 100% expose the required metric vector and label every value as measured, estimated, or inferred with its derived-metric denominator.
+- **SC-018**: In an attribution fixture containing overlapping standing instructions, skill, user, wiki, retrieval, helper, tool, retry, and output content, 100% of measured token occurrences have exactly one primary source owner and component totals do not double-count occurrences.
+- **SC-019**: In a mixed sitting fixture containing prep, wrapup, audit, and replay activity, 100% of prep and wrapup records use those comparison classes, audit and replay remain metadata, and no cross-class efficiency comparison is reported.
+- **SC-020**: In a policy-ownership fixture, 100% of efficiency runs load the versioned maintainer-owned policy, and agent proposals that weaken thresholds, quality gates, or autonomy boundaries are rejected without changing the policy.
 
 ## Assumptions
 
