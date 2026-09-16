@@ -8,6 +8,23 @@
 
 **Input**: User description: Adapt the repository-owned Spec Kit layer into a hybrid Spec-Driven Development system for engineering, agent-system, campaign-architecture, and creative-system work while preserving existing wiki, canon, agency, Work, and engineering workflows.
 
+## Clarifications
+
+### Session 2026-09-16
+
+- Q: What should one sitting’s measured trajectory include? → A: Whole useful trajectory: request, loaded context, retrieval, tools, failures, retries, model input/output, and final Work; exclude idle and unrelated activity.
+- Q: Which token count should be authoritative when local and provider-reported counts differ? → A: Use each model family’s native tokenizer as authoritative; compare token measurements only within the same model/tokenizer family.
+- Q: Where should normal sitting traces be stored and how long should they be retained? → A: Local gitignored JSONL with redacted metadata and token counts only, retained for 90 days; sanitized evaluation fixtures and pinned baselines may be committed.
+- Q: Which Co-DM quality requirements must be executable hard gates rather than semantic judgments? → A: Hard-gate canon precedence, entity-before-spoken, DM-facing explicitness, reveal/visibility boundaries, accept-before-write, and objective mechanics/schema checks; use blind semantic evaluation for playability, specificity, continuity, agency, and usefulness.
+- Q: What evidence should be required before an optimization is promoted or rolled back? → A: Require pinned paired replay, zero new hard-gate failures, semantic non-inferiority, and material savings; low-risk changes may auto-promote after at least 10 same-kind pairs and a 10% canary, moderate-risk changes require shadow replay and canary review, high-risk changes require human review, and any hard failure or material quality regression triggers rollback.
+
+
+
+
+
+
+
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Classify work before governing it (Priority: P1)
@@ -112,9 +129,9 @@ These scenarios are the minimum cross-class acceptance set for the adapted syste
 - **Scenario D — Routine NPC**: One ordinary NPC routes to the existing NPC skill/template process without generating a full SDD feature directory or engineering task graph.
 - **Scenario E — Existing entity collision**: An apparent new entity that matches an existing title, alias, stem, path, wikilink, qmd result, manifest entry, or duplicate candidate reuses the owner page.
 - **Scenario F — Proposed canon**: Future events remain proposals or conditional possibilities through specification, plan, task completion, and review until the existing DM acceptance rules authorize a fact change.
-- **Scenario G — Software feature**: A conventional CLI or Python tooling request receives normal engineering specification, planning, tasks, tests, implementation, and convergence without creative-system requirements being imposed.
 
 ### Edge Cases
+- Normal traces MUST NOT retain raw prompt, wiki, campaign, or model content merely for token telemetry; only redacted metadata, provenance identifiers, and measured counts are retained.
 
 - A request mixes routine campaign content with an agent-system or reusable system change: classify the system-changing slice for SDD and route ordinary content through its existing owner skill; do not force unrelated content into one feature.
 - A request names both a campaign architecture and an individual session beat: the architecture is SDD work; the beat remains with its typed beat skill unless the feature changes the beat system itself.
@@ -169,10 +186,14 @@ These scenarios are the minimum cross-class acceptance set for the adapted syste
 - **FR-024**: Established closed vocabularies, including campaign types, lifecycle values, relationship names, beat kinds, and other enumerated schema values, MUST remain single-source authorities.
 - **FR-025**: The adapted system MUST detect or surface contradictory closed-vocabulary declarations and MUST prefer deterministic validation where the violation is objective.
 - **FR-026**: Deterministic checks MUST cover applicable objective failures such as invalid type, lifecycle, relationship, filename, schema field, beat kind, required owner, broken link, duplicate identity, or vocabulary drift using existing or appropriately extended repository tooling.
-- **FR-027**: Verification MUST NOT make subjective creative quality, emotional effect, prose voice, dramatic interest, or ideal creative process into deterministic lint failures.
+- **FR-027**: Verification MUST use executable hard gates for canon precedence, entity-before-spoken behavior, DM-facing explicitness, reveal and visibility boundaries, accept-before-write semantics, and objective mechanics or schema checks. Playability, specificity, continuity, player agency, and DM usefulness MUST use blind semantic evaluation independent of the optimization under evaluation and MUST NOT become deterministic lint failures.
+
 - **FR-028**: Context strategy MUST prefer minimum sufficient authoritative retrieval, owner-page retrieval, targeted relationships, current state, invoked rules, progressive disclosure, machine-readable discovery, and environment-derived truth.
-- **FR-029**: The adapted system MUST NOT duplicate constitution, AGENTS, wiki, skill, schema, environment, or lifecycle guidance merely to restate it in Spec Kit artifacts.
-- **FR-030**: Any claimed token or context improvement MUST be measured with the repository's objective token method and compared across comparable work while preserving narrative craft, mechanics, specificity, canon fidelity, playability, agency, and DM usefulness.
+
+- **FR-030**: Any claimed token or context improvement MUST be measured with the selected model family’s native tokenizer as authoritative across the whole useful trajectory from the user request through final Work, including loaded instructions and context, retrieval, tool calls, failed calls, retries, and model input/output; idle time and unrelated activity MUST be excluded. Comparisons MUST remain within the same model/tokenizer family unless a separately specified normalization method exists. Comparisons MUST preserve narrative craft, mechanics, specificity, canon fidelity, playability, agency, and DM usefulness. Normal sitting traces MUST use local gitignored JSONL containing redacted metadata and token counts only, with 90-day retention; sanitized evaluation fixtures and pinned baselines MAY be committed.
+
+
+
 
 ### Compatibility and Completion
 
@@ -181,6 +202,8 @@ These scenarios are the minimum cross-class acceptance set for the adapted syste
 - **FR-033**: Existing wiki schema, entity directories, lifecycle, reveal, visibility, Work acceptance, campaign skills, templates, retrieval primitives, linter, staged writes, designated-writer policy, domain vocabulary, and unattended deterministic maintenance MUST remain compatible.
 - **FR-034**: Completion evidence MUST identify the route taken, authoritative context used and intentionally omitted, affected and resolved owner artifacts, dependency topology, deterministic checks run, creative/agency/continuity review, Work and DM acceptance state where applicable, filing or promotion state, and measured context cost where claimed.
 - **FR-035**: The system MUST distinguish specification approval, plan approval, task completion, creative Work production, DM acceptance or modification, and accepted campaign truth as separate states.
+- **FR-036**: Every optimization candidate MUST be evaluated against a pinned baseline with equivalent inputs and recorded revisions. Promotion MUST require at least 10 same-kind paired cases, at least a 5% median trajectory-token reduction, zero new hard-gate failures, semantic non-inferiority, and no material increase in runtime failures or DM revision rate. Low-risk changes MAY auto-promote only after a 10% canary; moderate-risk changes MUST complete shadow replay and canary review; high-risk changes MUST receive human review. Any hard-gate failure or material quality regression MUST trigger rollback.
+
 
 ### Named Failure Modes and Scope Boundary
 
@@ -221,13 +244,16 @@ The following constraints are included because each prevents a named failure:
 - **Work proposal**: DM-addressed, inspectable campaign output that remains mutable until accepted and is distinct from specification, plan, task completion, and canon.
 - **Dependency graph**: The real prerequisite and single-writer relationships among context, owners, systems, situations, presentation, verification, acceptance, filing, and maintenance tasks.
 - **Verification evidence**: Deterministic check results plus explicit agency, continuity, owner, Work, acceptance, and creative-judgment review evidence; lint does not stand in for craft judgment.
-- **Context cost**: Measured context and token use for comparable work, evaluated only alongside preserved quality and completeness.
+- **Context cost**: Measured context and token use across the whole useful trajectory of comparable work, using the selected model family’s native tokenizer as authoritative, from user request through final Work, including loaded context, retrieval, tools, failures, retries, and model input/output, while excluding idle and unrelated activity. Measurements from different model/tokenizer families are not directly comparable. Normal traces are local, gitignored, redacted, and retained for 90 days; committed fixtures and baselines contain no raw sensitive content.
+
+
 
 ## Success Criteria *(mandatory)
 
 ### Measurable Outcomes
 
 - **SC-001**: In a seven-case classification run covering Scenarios A–G, 7/7 requests receive the expected SDD or routine-content route, and each rationale identifies the relevant scope boundary.
+
 - **SC-002**: In a review of at least three specifications for each applicable creative/agentic class, 100% contain objective, user/table value, ground truth, named failure modes, out-of-scope boundaries, and independently testable acceptance scenarios.
 - **SC-003**: In a review of at least three campaign-facing specifications, 100% explicitly state player-owned decisions, independent world motion, an if-nobody-intervenes consequence, and at least one unresolved or conditional possibility; 0% require a player allegiance, scene sequence, or authored ending.
 - **SC-004**: In a proposed-canon test with at least five fictional future events, 0/5 become accepted wiki facts through specification, plan, task completion, or review without the existing DM acceptance path.
@@ -236,11 +262,12 @@ The following constraints are included because each prevents a named failure:
 - **SC-007**: In a deliberate vocabulary-drift fixture, the verification surface reports the conflicting closed-set declarations while preserving the authoritative owner; no new competing vocabulary is added.
 - **SC-008**: In a normal engineering feature smoke run, all supported Spec Kit lifecycle phases remain invocable and at least one conventional technical acceptance scenario completes without campaign-specific requirements being imposed.
 - **SC-009**: Across a compatibility audit of the configured git and agent-context extensions, 100% of existing hooks and lifecycle capabilities remain available, and no second integration or authority surface is introduced.
-- **SC-010**: In a deterministic-check fixture containing invalid type, lifecycle, relationship, filename, link, owner, and schema values, every objective violation is reported; in a paired subjective-quality fixture, 0 subjective judgments are reported as deterministic failures.
+- **SC-010**: In a deterministic-check fixture containing invalid type, lifecycle, relationship, filename, link, owner, schema, canon-precedence, entity-before-spoken, DM-explicitness, reveal, visibility, or accept-before-write violations, every objective violation is reported; in a paired subjective-quality fixture, 0 subjective judgments are reported as deterministic failures.
 - **SC-011**: Across at least three comparable workflow pairs, targeted retrieval loads no unrelated mandatory artifact set and measured context cost is equal to or lower than the current baseline without reducing required grounding or acceptance evidence.
 - **SC-012**: In a completion-evidence audit of at least five feature runs across the four SDD classes, 100% identify route, authoritative context, affected owners, dependencies, verification evidence, and acceptance/canon state; creative runs also identify agency and continuity review.
 - **SC-013**: In a routine-NPC smoke run, 0 full SDD feature directories, plans, or engineering task graphs are generated, and the existing NPC skill/template route remains usable.
 - **SC-014**: In a review of at least five completed creative or agentic workflows, 100% distinguish specification approval, plan approval, task completion, Work production, DM acceptance, and accepted campaign truth as separate states.
+- **SC-015**: In a promotion fixture with low-, moderate-, and high-risk candidates, 100% use pinned paired replay; low-risk promotion requires at least 10 same-kind pairs and a 10% canary, moderate-risk promotion requires shadow replay and canary review, high-risk promotion requires human review, and every hard-gate failure or material quality regression causes rollback.
 
 ## Assumptions
 
@@ -254,6 +281,6 @@ The following constraints are included because each prevents a named failure:
 - Reference patterns adopted selectively are: agency and conditional state from game-narrative work; motivations, relationships, chronology, and continuity from long-form fiction work; scene purpose and readable change from screenwriting; classify-before-write from inventory alignment; drift visibility from canon work; single-owner vocabulary checks; traceable intake and sequencing; provider-neutral roles; lean command composition; explicit dependencies; and command-density techniques.
 - Those references do not authorize Twine, Ink, novel, screenplay, fixed-ending, live-ID, alternate-canon, alternate-lifecycle, second-routing, or redundant-intake assumptions.
 - Safe deterministic maintenance may run unattended. Human judgment remains at the existing DM and creative-quality boundaries.
-- Context/token comparisons use the repository's tiktoken-based measurement method and compare same-kind work; lower cost is not a success when quality or completeness falls.
-- No constitution amendment is required to implement this feature; any governance change discovered later must use a separate tracked amendment.
+- Context/token comparisons use the selected model family’s native tokenizer as the authoritative method and compare same-kind work within that model/tokenizer family; lower cost is not a success when quality or completeness falls.
+- Because this clarification changes the current repository-wide tiktoken authority, implementation MUST first land a separate tracked governance change updating the applicable AGENTS and token-measurement policy; the feature MUST NOT silently override that policy.
 - The feature is complete when the adapted Spec Kit artifacts and downstream behavior can govern both SDD paths without requiring migration of existing campaign content.
