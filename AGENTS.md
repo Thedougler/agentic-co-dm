@@ -393,6 +393,12 @@ Spec Kit artifacts are the handoff protocol. Harness files must not copy feature
 
 ## Validation
 
+- **Spec Kit availability:** Invoke `specify --version` before deciding the CLI
+  is absent. If shell resolution fails, inspect the existing executable at
+  `~/.local/bin/specify` and its resolved target; `uv tool list` is not
+  authoritative for an executable already on disk. Repair a stale uv
+  registration with the documented install command rather than running
+  `specify init` over this already-initialized checkout.
 - Spec Kit status: `specify integration status --json` — must be `ok`, default `omp`, four integrations installed.
 - OMP baseline: `scripts/check-omp-baseline.sh` — exit 0.
 
