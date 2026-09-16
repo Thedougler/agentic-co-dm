@@ -14,7 +14,7 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "A fist-sized fragment of warm red hide from Otar the Foul granting 2d8 HP regeneration per turn (1 minute, once per long rest, suppressed by fire/acid). Attuned by Catarina Da'Virelli."
+summary: "A fist-sized fragment of warm red hide from Otar the Foul granting 2d8 HP regeneration per turn (1 minute, once per long rest, suppressed by fire/acid). Held by Catarina Da'Virelli in Calveno."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -33,8 +33,7 @@ tier: supporting
 | One thing | Once per long rest, invoke the sliver to regenerate a burst of hit points at the start of each of your turns for 1 minute, unless you've taken fire or acid damage since your last turn. |
 | Rarity justification | Comparable to *[[Ring of Regeneration]]*, from the opposite direction. |
 | Attunement reason | A repeatable, high-value healing effect with no other resource cost. The decision tree's "useful in most encounters without consuming a resource" branch requires attunement. |
-| PC connection | [[catarina-davirelli]] is the crew's only [[Artificer]]. She's the only one equipped to actually study a fragment of aberrant regenerative tissue instead of just carrying it, and she was there from the fight's opening round to its end. |
-| Current holder | [[catarina-davirelli]], who identified it after the fight and attuned to it. |
+| Current holder | [[catarina-davirelli]], kept in her Calveno workshop. |
 | Narrative hook | Part of tonight's raid-site loot, offered as a Reward in `vault/episodes/006/s06-run-guide.md` § Rewards. |
 
 Nobody cut this free on purpose. It tore loose at the last moment, as the creature fell. Whether it means anything remains unclear.

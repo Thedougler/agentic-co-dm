@@ -45,7 +45,6 @@ Sold for the last scene of a play nobody in [[calveno|Calveno]] stages any more,
 | `one_thing` | Burst on the floor, it fills twenty feet with drifting flake nothing sees through. |
 | `rarity_justification` | Common: a one-use consumable whose whole effect is a minute of cover. |
 | `attunement_reason` | None. Thrown and spent in one action. |
-| `pc_connection` | Covers the withdrawal [[catarina-davirelli\|Catarina]] and [[perrin-black-jaw\|Perrin]] cannot buy with hit points. |
 | `current_holder` | [[fioravante-selmerin\|Fio]], in a bowl at the counter's near end. |
 | `narrative_hook` | 60 gp a twist, and Fio counts how many leave in one sale. |
 

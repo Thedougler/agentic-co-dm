@@ -14,7 +14,7 @@ tags: [campaign]
 ## Premise
 In 1495 DR, the crew works a roughly 60,000-square-mile archipelago south of Chult, weeks beyond the last charted Faerûn coast. Dravosi naval law, Tessarine debt, independent councils, and Waveservant port infrastructure all claim a piece of the sea. The crew’s choices test the systems they depend on—and the people those systems hide beneath them.
 ## Table
-- Players / PCs: Kaden → [[Perrin Black-Jaw]]; Frederick (tabalicious83) → [[Delmar Fisk]]; Courtney → [[Crissdalynn Khinriss]]; Chad → [[Jean-Claude Tabarnack]]; Kaitlin → [[Catarina Da'Virelli]]
+- Players / PCs: Kaden → [[Perrin Black-Jaw]]; Frederick (tabalicious83) → [[Delmar Fisk]]; Courtney → [[Crissdalynn Khinriss]]; Chad → [[Jean-Claude Tabarnack]]
 - Cadence: unknown
 - Safety / lines: unknown
 - House tone: [[lexicon/House tone]]

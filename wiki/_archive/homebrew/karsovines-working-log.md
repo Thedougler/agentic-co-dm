@@ -35,7 +35,6 @@ uid: 73fbfaad-7ce3-41d1-bf0c-448ef7870565
 | `one_thing` | Real (if incomplete) trial-dive data on hull-pressure tolerance and air-pump endurance, recorded from every dive Branimir has personally run, failures logged, not hidden. |
 | `rarity_justification` | Mundane, a document with no magical properties, same category as [[forged-rig-trial-certificate\|Forged Rig-Trial Certificate]]; its worth is informational, not mechanical, so no magic-item rarity benchmark applies. |
 | `attunement_reason` | None required. A mundane document grants no attack/damage/save/AC bonus and has no distinct powers to attune to. |
-| `pc_connection` | [[catarina-davirelli\|Catarina Da'Virelli]]. Her hook is anything that may one day help her build a non-magical flying machine; real hull-tolerance and air-pump-endurance figures are directly adjacent engineering data to that research, not a general "ties in." |
 | `current_holder` | [[branimir-karsovine\|Branimir Karsovine]], who keeps it on his own person at [[voyvode-works\|Voyvode Works]], never sold, displayed, or lent. |
 | `narrative_hook` | Earned, not bought or found: Branimir shares what's in it only with someone he's decided to trust, tied to Voyvode's "Earn It The Hard Way" Front. |
 

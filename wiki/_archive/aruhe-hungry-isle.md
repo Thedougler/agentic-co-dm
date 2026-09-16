@@ -116,7 +116,7 @@ Can the crew survive Aruhe's escalating corruption long enough to reach the Deat
 **Phase 3, The Heart (CR 15 to 19): [[aruhe-the-hunger|the Hunger]]**
 
 7. **Cliffhanger, The Grove's Teeth.** [[terror-birds|Terror birds]] stalk the approach. [[corpsewood|Corpsewoods]] walk the perimeter. The ground inside the Hunger is the Blight's own body, and it knows the party is there. Pulls on Delmar (the crew he brought here is in the worst of it now).
-8. **Climax, The Death Bloom.** Unmarked graves beneath a fruit tree. Black flowers ring the clearing. No root crosses either grave. The Death Bloom is graves, tree, and ritual ground together. Destroying it ends the Blight permanently. Leaving it preserves the sanctuary and its killings. The choice stays open until someone acts. Pulls on all five PCs (the question is whether protection that kills everything it touches is still protection).
+8. **Climax, The Death Bloom.** Unmarked graves beneath a fruit tree. Black flowers ring the clearing. No root crosses either grave. The Death Bloom is graves, tree, and ritual ground together. Destroying it ends the Blight permanently. Leaving it preserves the sanctuary and its killings. The choice stays open until someone acts. Pulls on all four PCs (the question is whether protection that kills everything it touches is still protection).
 9. **Resolution, What the Island Remembers.** If the Death Bloom falls, the corruption recedes over weeks, fauna lose their aggression, the island becomes usable. If it stands, nothing changes, the memorial endures, and Aruhe stays hungry. Either way, the castaways leave or stay based on the beach, not the grove.
 
 ### Active Beat

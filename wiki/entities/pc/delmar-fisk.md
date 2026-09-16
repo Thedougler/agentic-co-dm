@@ -13,6 +13,7 @@ sources:
   - "wiki/_archive/combat-profile/delmar-fisk-combat-profile.md"
   - "wiki/_archive/va-scripts/delmar-fisk-voice-script.md"
   - "wiki/_archive/interviews/delmar-fisk-interview.md"
+  - "wiki/_archive/delmar-fisk.png"
   - "Session 01 - Recap.md"
   - "Session 04 - Recap.md"
   - "Session 07 - Recap.md"
@@ -28,7 +29,7 @@ lifecycle: canon
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12
-updated: 2026-09-14
+updated: 2026-09-15
 type: pc
 reveal: revealed
 campaign: shattered-sea
@@ -193,3 +194,9 @@ Mobile ranged and melee skirmisher — Sneak Attack (3d6) on the blunderbuss is 
 ## Voice
 
 Charm leads. Admiral Fisk surfaces when the pressure hits. Loyalty to found family is absolute; call the crew backstabbers and the smile stays while the eyes stop following.
+
+## Art
+
+![[attachments/shattered-sea/character-references/delmar-fisk-reference.png|Delmar Fisk character reference sheet]]
+
+The supplied reference sheet fixes Delmar with ginger-red hair tied in a high bun, a full beard and curled moustache, and a weathered face marked by scars. He wears a crimson naval coat with antique-gold epaulettes and trim over an open off-white shirt, deep-navy sash, and charcoal trousers, with a brown leather sword belt and tall boots. His silhouette is broad and athletic, with a sword and scabbard hanging at his hip.

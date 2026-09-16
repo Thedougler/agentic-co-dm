@@ -24,7 +24,7 @@ tier: supporting
 ---
 # Ninka Solvei
 
-**Wants:** establish herself as the indispensable salvage intermediary in [[Sparhold]] while a key [[verdant-teeth]] contact has gone silent, leaving her inventory depleted and [[catarina-davirelli|Catarina]] waiting on rare [[Antheri]] pieces.
+**Wants:** establish herself as the indispensable salvage intermediary in [[Sparhold]] while a key [[verdant-teeth]] contact has gone silent, leaving her inventory depleted and other buyers waiting.
 
 *Ninka*: I don't ask where it came from. I don't ask where it's going. What it costs is what it costs.
 
@@ -37,7 +37,7 @@ Sparhold bureaucrat turned black-market trafficker, trades with the efficiency o
 
 ## Lore Sheet
 
-Ninka runs [[Ninka's Findings]] from a reinforced shop in [[Sparhold|Sparhold's]] fortress-market district, wedged between supply traders and blacksmiths. She buys salvage from [[verdant-teeth]] expeditions and wreck-divers, prices items by rarity and condition alone, and never volunteers buyer names to sellers or seller names to buyers. Three weeks without word from Vrex, her primary Teeth contact. She fills inventory gaps with lower stock while [[catarina-davirelli]] waits on a promised [[Antheri]] component.
+Ninka runs [[Ninka's Findings]] from a reinforced shop in [[Sparhold|Sparhold's]] fortress-market district, wedged between supply traders and blacksmiths. She buys salvage from [[verdant-teeth]] expeditions and wreck-divers, prices items by rarity and condition alone, and never volunteers buyer names to sellers or seller names to buyers. Three weeks without word from Vrex, her primary Teeth contact. She fills inventory gaps with lower stock while other buyers grow impatient.
 
 ## Toy Chest
 
@@ -45,9 +45,9 @@ Ninka runs [[Ninka's Findings]] from a reinforced shop in [[Sparhold|Sparhold's]
 |---|---|
 | Primary goal | Become so entrenched as [[Sparhold|Sparhold's]] salvage intermediary that no one can trace goods flowing through her hands or predict her next buyer. |
 | Consistent method | Prices items using a bone abacus without haggling. Closes each transaction the moment coin changes hands. She tells first-time buyers her three rules: "You ask about provenance, I walk. You ask about destination, I walk. You want credit, I walk." Then she disengages. |
-| Active problem | Vrex, her [[verdant-teeth]] contact, has gone silent for three weeks. The supply line has dried up. [[catarina-davirelli]] is waiting on rare [[Antheri]] pieces Ninka promised. Other buyers are getting impatient. She needs to send someone into the Teeth to find out what happened. |
+| Active problem | Vrex, her [[verdant-teeth]] contact, has gone silent for three weeks. The supply line has dried up. Other buyers are getting impatient. She needs to send someone into the Teeth to find out what happened. |
 | Performance hooks | Bureaucratic efficiency · wraps a mooring rope loosely around her abacus when pausing a transaction (a gesture suggesting dock-work habit). |
-| Link of relevance | Connects to [[catarina-davirelli]] as the sole reliable source for salvaged [[Antheri]] components. She holds a fractured [[Antheri]] wing-frame assembly (segmented alloy, spring-loaded articulation, shattered control crystal still mounted) that Catarina recognized as critical to understanding non-magical flight mechanics. |
+| Link of relevance | [[Antheri]] salvage: the fractured wing-frame assembly on her shelf may be worth more than she knows, and interested buyers must decide what risk they will take. |
 
 ## Voice & Delivery
 
@@ -61,4 +61,3 @@ Ninka's speech is terse and transactional. She quotes prices and recites her rul
 
 ## Connections
 
-[[catarina-davirelli]] (referral-only contact who knows to ask for specific [[Antheri]] salvage; Ninka has learned not to expect her to stop by the shop in person)

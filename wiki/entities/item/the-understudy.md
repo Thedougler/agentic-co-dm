@@ -43,7 +43,6 @@ Sold to nobody yet. It lies in the locked case at the back of the shop, on the s
 | One thing | It unfolds as a double of its owner and takes one attack that would have hit them. |
 | Rarity justification | Rare: negates one hit per day outright, on a reaction, with no roll. |
 | Attunement reason | It copies its owner and answers their reaction, so it needs a bond. |
-| PC connection | The one hit that drops [[catarina-davirelli|Catarina]]'s concentration is the hit this eats. |
 | Current holder | [[fioravante-selmerin|Fio]], in the high case above the ladder. |
 | Narrative hook | 1,800 gp, a full season of salvage, and Fio will not hold it against a deposit. |
 

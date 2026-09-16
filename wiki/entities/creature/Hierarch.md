@@ -109,7 +109,7 @@ A Hierarch does not hunt; it cultivates. It seeds its bloodline into a family or
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
-| Trace a name through a Crown's genealogical archive | The searcher has access to the ledgers — [[catarina-davirelli]]'s binding fleet contract with the [[dravosi-crown]] reaches this deep | Surfaces a living phylactery — and a request that draws Aldric Drave's attention to whoever asked | [[catarina-davirelli]] |
+| Trace a name through a Crown's genealogical archive | The searcher has access to the ledgers and binding contracts | Surfaces a living phylactery — and a request that draws Aldric Drave's attention to whoever asked | [[aldric-drave]] |
 | Kill or convert a bloodline descendant | The descendant is isolated from the Hierarch's notice long enough to act | Permanently severs one phylactery anchor; the Hierarch feels the loss and answers with Blood Sacrifice or Reanimate Family | [[aldric-drave]] |
 | Offer to cure an "incurable" illness in a noble line | The Hierarch has already recruited that family as fresh phylacteries | Exposes the illness as engineered rather than natural, marking the searcher as a threat to the network | [[shepherd-grigori]] |
 

@@ -45,7 +45,7 @@ A roughly 60,000-square-mile archipelago weeks beyond the last charted Faerûn c
 * **Recent change.** Season 2 opened at and around Aruhe after Sparhold.
 * **Pressure.** Active named pressures include the Maw fissure and tribute system, [[the-taken-314]], Long Sight Hunt, Rule of Two, Schism's Third Name, and Countless through the Maw seal. Soul Incarnate's Watch remains dormant until [[crissdalynn-khinriss]] completes a Maw pilgrimage.
 * **Opportunity.** Open table threads include [[pursue-the-grung-raiding-fleet]], [[simones-hunters]], [[bring-the-pearl-of-souls-to-umberlee]], [[complete-the-maw-map-pilgrimage]], [[grigori-and-the-crown-hunt]], [[red-wake]], [[sentinels-and-countless]], and [[pearl-signal-across-the-boundary]].
-* **Table.** Players at this table: Kaden → [[perrin-black-jaw]]; Frederick → [[delmar-fisk]]; Courtney → [[crissdalynn-khinriss]]; Chad → [[jean-claude-tabarnack]]; Kaitlin → [[catarina-davirelli]].
+* **Table.** Players at this table: Kaden → [[perrin-black-jaw]]; Frederick → [[delmar-fisk]]; Courtney → [[crissdalynn-khinriss]]; Chad → [[jean-claude-tabarnack]].
 * **Systems in play.** [[dravosi-crown]] naval law, [[tessarine-concordat]] debt, independent councils, and [[Waveservants]] port infrastructure all claim a piece of the sea.
 
 ## Five-sentence kernel

@@ -43,7 +43,6 @@ Sold for the last scene of a play nobody in [[calven-and-calveno]] stages any mo
 | One thing | Burst on the floor, it fills twenty feet with drifting flake nothing sees through. |
 | Rarity justification | Common: a one-use consumable whose whole effect is a minute of cover. |
 | Attunement reason | None. Thrown and spent in one action. |
-| PC connection | Covers the withdrawal [[catarina-davirelli|Catarina]] and [[perrin-black-jaw|Perrin]] cannot buy with hit points. |
 | Current holder | [[Fio]], in a bowl at the counter's near end. |
 | Narrative hook | 60 gp a twist, and Fio counts how many leave in one sale. |
 

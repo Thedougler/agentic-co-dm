@@ -61,7 +61,7 @@ The Warren operation moved through [[felix-aho]], [[ruma-delacroix]], and [[Bazz
 
 Nona's crater desk recorded 314+ missing, all fighting-age men. Passage hulls pursued while the crew followed the raiding-fleet trail. The Snap page named [[Osset]]; [[Nightmantle]]'s seller, [[lavinia-sordi]], named Osset again. The two traces are linked to the Sentinel schism.
 
-Armless [[Zort]] offered a Midchain reptile contact for a prosthetic; that lead is [[roka-sten]] in [[Sparhold]].
+Armless [[Zort]] received the completed prosthetic from the Calveno workshop; the Midchain reptile contact is no longer an open commission.
 
 ## Season 2 — Midchain to Aruhe
 
@@ -69,7 +69,7 @@ Armless [[Zort]] offered a Midchain reptile contact for a prosthetic; that lead 
 
 The taken are bound toward [[Karath]], but the season's live job is the hurricane wreck field where the raiding fleet split. The bulk of the taken remains south of this chapter.
 
-The crew rescued three sun-blasted Calveno survivors from the storm. The [[hcs-ordinance]], under [[corbin-knighton]], intercepted them; [[aleksander-malone]], the Hound of Tyr, was aboard hunting [[shepherd-grigori]]. Perrin, Ruma, and Jean-Claude were hidden. Ordinance stood off for Calveno after [[catarina-davirelli]]'s Umberlee voice and Delmar's cover held.
+The crew rescued three sun-blasted Calveno survivors from the storm. The [[hcs-ordinance]], under [[corbin-knighton]], intercepted them; [[aleksander-malone]], the Hound of Tyr, was aboard hunting [[shepherd-grigori]]. Perrin, Ruma, and Jean-Claude were hidden. Ordinance stood off for Calveno after Delmar's cover held.
 
 On the night run, Grigori warned that [[talon-vantyrus]] had sent a ship to take Crissdalynn's [[fate-spinner]], also called the dreidel. Grigori tied the hunt to the Osset schism, named Delmar's Umberlee curse, and asked the crew to hurt Corbin without killing or breaking him; nobody accepted that bargain.
 

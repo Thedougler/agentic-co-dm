@@ -11,6 +11,7 @@ sources:
   - "wiki/_archive/session-logs/crissdalynn-khinriss-session-log.md"
   - "wiki/_archive/combat-profile/crissdalynn-khinriss-combat-profile.md"
   - "wiki/_archive/va-scripts/crissdalynn-khinriss-voice-script.md"
+  - "wiki/_archive/cryssdalyn-knhinriss.png"
 summary: Level 5 Kensei Aarakocra holding the Fate Spinner at the otter camp while Talon Skarn is in her face.
 provenance:
   extracted: 1.0
@@ -21,7 +22,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13
-updated: 2026-09-14
+updated: 2026-09-15
 type: pc
 reveal: revealed
 campaign: shattered-sea
@@ -94,7 +95,7 @@ Mobile aerial skirmisher and the party's established grappler · AC 17 · Focus 
 
 - **Hard counters.** AoE Charisma or Intelligence saves; nets, wind, and low ceilings that shut down height.
 - **Soft counters.** Ranged focus fire; Wisdom pressure on stuns and fear.
-- **Amplifies / Depends on.** Open vertical space for seize-and-carry. Ally advantage such as Catarina's Faerie Fire. Observed seize-and-move as signature control, including grappling [[master-kyzil]] on a contested natural 1 in the Session 04 spar.
+- **Amplifies / Depends on.** Open vertical space for seize-and-carry. Ally advantage helps her control line. Observed seize-and-move as signature control, including grappling [[master-kyzil]] on a contested natural 1 in the Session 04 spar.
 
 ## Abilities
 
@@ -206,3 +207,9 @@ Arc threads recovered from the archive session compile (structure only; facts al
 ## Voice
 
 Cartographer first, fighter second — nobody at the table believes that order anymore. Friends, exit, weak point, every time. Irreverent until combat, then fiercely protective of Delmar.
+
+## Art
+
+![[attachments/shattered-sea/character-references/crissdalynn-khinriss-reference.png|Crissdalynn Khinriss character reference sheet]]
+
+The supplied reference sheet fixes Crissdalynn as a tall Aarakocra with layered cobalt-blue feathers, a black hooked beak, bright blue eyes, and dark scaled talons. She wears a light sleeveless shirt and loose gray trousers beneath a brown harness, with a leather satchel carrying scrolls. Long wing and tail feathers define her silhouette; the sheet shows both a settled upright posture and a dynamic flying leap.

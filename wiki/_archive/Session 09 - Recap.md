@@ -19,12 +19,10 @@ tags: [session, recap]
 >
 > Aboard *Uncertainty* again, [[Crissdalynn Khinriss]] flew ahead over wreckage and found three sun-blasted Calveno captives on a shattered hull. An eastern hurricane had cut the raid fleet in half.
 >
-> Two days out, [[HCS Ordinance]] intercepted you: ninety-six guns under [[Dravosi Crown]] colors. [[Corbin Knighton]] crossed first. Behind him [[Aleksander Malone]], the Hound of [[Tyr]], hunted [[Shepherd Grigori]]. You played merchant. You hid [[Perrin Black-Jaw]], [[Ruma Delacroix]], and [[Jean-Claude Tabarnack]]. [[Delmar Fisk]] sent them to Calveno. [[Catarina Da'Virelli]] laughed with [[Umberlee]]'s voice until Corbin reined his hound in, and the warship stood off for the city. You warned Nona by stone about Ordinance and the Hound.
+> Two days out, [[HCS Ordinance]] intercepted you: ninety-six guns under [[Dravosi Crown]] colors. [[Corbin Knighton]] crossed first. Behind him [[Aleksander Malone]], the Hound of [[Tyr]], hunted [[Shepherd Grigori]]. You played merchant. You hid [[Perrin Black-Jaw]], [[Ruma Delacroix]], and [[Jean-Claude Tabarnack]]. [[Delmar Fisk]] sent them to Calveno. The warship stood off for the city. You warned Nona by stone about Ordinance and the Hound.
 >
-> Catarina gave Delmar [[Lamarae's Fang]] for his help finding an axolotl.
 >
 > You set course for Sparhold, three rescued captives aboard. Ordinance and the Hound sailed for Calveno with your story.
 
 ## Highlights
 
-*[[Uncertainty]]* left La Vasca for [[Sparhold]]. [[Crissdalynn Khinriss]] found three [[Calven and Calveno|Calveno]] captives on wreckage after the hurricane split the Grung fleet. [[HCS Ordinance]] boarded under merchant cover. [[Corbin Knighton]] and [[Aleksander Malone|the Hound of Tyr]] sailed for Calveno with your story. [[Catarina Da'Virelli]] gave [[Delmar Fisk]] [[Lamarae's Fang]].

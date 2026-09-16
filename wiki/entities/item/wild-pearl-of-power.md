@@ -38,7 +38,7 @@ The pearl holds 3 charges and regains `1d3` expended charges daily at dawn. As a
 
 ## At a Glance
 
-[[catarina-davirelli]] carries it. Two charges remain. The next spend is a guaranteed surge.
+[[catarina-davirelli]] keeps it in her Calveno workshop. Two charges remain. The next spend is a guaranteed surge.
 
 ## At the Table
 
@@ -46,7 +46,7 @@ She bought a slot back. You roll the d100 in front of the table and live with it
 
 ## Connections
 
-- [[catarina-davirelli]] — Current holder; she bought it to recover slots mid-adventure.
+- [[catarina-davirelli]] — Current holder in Calveno; she bought it to recover slots during the closed Calveno work.
 - [[lavinia-sordi]] — Sold it from the rack at [[la-cenere]].
 
 ## Provenance

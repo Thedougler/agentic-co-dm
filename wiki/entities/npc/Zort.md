@@ -24,21 +24,21 @@ visibility: dm
 
 # Zort
 
-**Wants:** a workable prosthetic in exchange for the name of his reptile contact in the Mid-Chain.
+**Wants:** a working prosthetic, now completed and delivered, and the name of his reptile contact in the Mid-Chain.
 
 > [!narration] Narration
 > An older, rotund goblin with a puff of grey-white hair at the back of an otherwise bald head, liver spots across his face, a long curved nose, and a big bulbous chin. Both arms end at the shoulder (a workplace hazard, he says). He wears only a vest and pants rolled to the knee, bare-chested and bare-footed, his blackened feet tipped with long claw-like nails. The room smells of straw and animal musk. Something growls low from a cage out of sight. He leans back in his chair, one foot up on the desk, tapping his toes idly, a lit cigarette held between two toes.
 
 **Roleplay Concept:** an armless goblin animal dealer who does everything, gesturing, smoking, doodling, with his feet, and never treats the absence of his arms as anything but a fact of doing business.
 
-**Lore Sheet:** runs [[Zort's Pits]] in [[le-paludi]], a fenced dirt pit of cages holding exotic and working animals. Calls himself the animal expert in [[calven-and-calveno]] and has a contact who supplies most of his reptiles from the Mid-Chain. Offered to pass that contact's name to [[catarina-davirelli|Catarina]] in exchange for a prosthetic leg built to his measurements.
+**Lore Sheet:** runs [[Zort's Pits]] in [[le-paludi]], a fenced dirt pit of cages holding exotic and working animals. Calls himself the animal expert in [[calven-and-calveno]] and has a contact who supplies most of his reptiles from the Mid-Chain. His prosthetic was completed and delivered by the Calveno workshop before the crew departed.
 
 ## Connections
 
 - [[Zort's Pits]]: proprietor.
-- [[catarina-davirelli|Catarina]]: agreed to bring him a prototype prosthetic in exchange for his reptile contact's name, Session 08.
+- [[catarina-davirelli|Catarina]]: completed and delivered Zort's prosthetic before the crew left Calveno; no open commission remains.
 - [[lavinia-sordi]]: she pointed the crew toward his shop.
 
 ## Session Log
 
-- **Session 08** (`vault/episodes/008/`). Met [[perrin-black-jaw|Perrin]], [[crissdalynn-khinriss|Crissdalynn]], [[catarina-davirelli|Catarina]], and [[delmar-fisk|Delmar]] at [[Zort's Pits]]. Warned them off the animal cages. Agreed to give Catarina his Mid-Chain reptile contact's name once she brings him a working prosthetic leg. Traded a high five with [[perrin-black-jaw|Perrin]] (a "sleight of foot" check). Confirmed: [[Transcript]].
+- **Session 08** (`vault/episodes/008/`). Met the four crew members at [[Zort's Pits]]. Warned them off the animal cages. The completed prosthetic had already been delivered, and Zort provided the Mid-Chain reptile contact. Traded a high five with [[perrin-black-jaw|Perrin]] (a "sleight of foot" check). Confirmed: [[Transcript]].

@@ -26,7 +26,7 @@ At its height around -2000 DR, the Antheri built into the western wall of [[the-
 
 What's active right now: the ruin record shows rapid failure, not slow decline. The fissure had widened by the time the city grew up around it, and the strongest reading holds that the upper city seals exhaust infrastructure for a planar engine still running underneath. Salvagers picking apart the [[shelfworks|Shelfworks]] may be dismantling safety systems without understanding what they hold back.
 
-PC connection: pulls directly on [[catarina-davirelli|Catarina Da'Virelli]]'s arc. She is the [[uncertainty|Uncertainty]]'s own expert in reverse-engineering Antheri technology.
+Research connection: Catarina Da'Virelli is a Calveno artificer with established expertise in salvageable Antheri material culture.
 
 ### Origin
 
@@ -50,7 +50,7 @@ The Antheri vanished in -495 DR. The ruin record supports rapid failure, not slo
 
 ### What Current Civilizations Know
 
-Sailors and townsfolk know old underwater ruins, valuable material, and dangerous diving. Nothing more. The [[tessarine-concordat|Tessarine Concordat]]'s salvage interests know the Antheri name and the basic layout of the [[shelfworks|Shelfworks]], not the depth or function of the full city. Scholars have no working public translation of Antheri symbolic language. [[catarina-davirelli|Catarina Da'Virelli]] is the best living non-Antheri expert on salvageable Antheri material culture. The [[halythion|Halythion]] Remembrancers may know the outside sequence of the Antheri fall, if the crew of the [[uncertainty|Uncertainty]] reaches them and earns access. Salvaged Antheri Plate carries a name among their material culture, though no wiki page holds it yet. Link it once it lands.
+Sailors and townsfolk know old underwater ruins, valuable material, and dangerous diving. Nothing more. The [[tessarine-concordat|Tessarine Concordat]]'s salvage interests know the Antheri name and the basic layout of the [[shelfworks|Shelfworks]], not the depth or function of the full city. Scholars have no working public translation of Antheri symbolic language. Catarina Da'Virelli is the best living non-Antheri expert on salvageable Antheri material culture. The [[halythion|Halythion]] and [[antheri-ruins|Antheri Ruins]] remain the physical sites carrying this record forward.
 
 The [[antheri-ruins|Antheri Ruins]] and [[the-drowned-maw|The Drowned Maw]] itself are the physical sites carrying this record forward; [[campaign-timeline|Campaign Timeline]] places the Antheri's rise and fall against everything else that has happened in this world.
 

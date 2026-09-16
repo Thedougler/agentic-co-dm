@@ -193,7 +193,7 @@ beyond its physical description (a metal chassis, an Arm Cannon or Arm
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
 | Destroy a construct body the Necromaton currently occupies | It has at least one other maintained body still standing | Its soul relocates there (Soul Transference) instead of ending the fight; only losing every body ends it | |
-| Crack open a downed body and examine its anchor organ | The Necromaton has already lost a construct body in this fight | An Arcana or Investigation check reveals how decayed that anchor is, and lets an artificer's eye, like [[catarina-davirelli]]'s, read the chassis's own engineering choices at a glance | [[catarina-davirelli]] |
+| Crack open a downed body and examine its anchor organ | The Necromaton has already lost a construct body in this fight | An Arcana or Investigation check reveals how decayed that anchor is, letting an artificer read the chassis's engineering choices at a glance | |
 | Track down and destroy every body it maintains | Its hunters have found every construct body it maintains | The Necromaton is permanently destroyed, its only true end | |
 
 ## Prepped Reveals

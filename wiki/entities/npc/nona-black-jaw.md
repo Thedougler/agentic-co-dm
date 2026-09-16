@@ -133,7 +133,6 @@ Nona protects people through a network whose survival requires transactional pre
 | [[delmar-fisk]] | Captain-facing talent; ask him to choose which passage is safe. |
 | [[crissdalynn-khinriss]] | Map-reading asset; invite her to compare Aruhe and Maw routes. |
 | [[jean-claude-tabarnack]] | Grung perspective on the taken; ask what the Warren leads omit. |
-| [[catarina-davirelli]] | Salvage and transport talent; trade Passage access for a workable tool. |
 
 ## Activity log
 

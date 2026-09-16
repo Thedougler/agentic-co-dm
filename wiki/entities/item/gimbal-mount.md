@@ -41,7 +41,6 @@ _Gear (Mount), Common._
 | One thing | A device seated in the cradle stays level and stays aimed while the deck under it moves. |
 | Rarity justification | Non-magical shipwright's fitting, priced between the [[reinforced-specimen-cage]] (60 gp) and the [[chain-brake-winch]] (160 gp). It cancels one situational disadvantage and grants no bonus to any roll. |
 | Attunement reason | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
-| PC connection | [[catarina-davirelli|Catarina]] fights from the deck of the _[[Uncertainty]]_, and everything she plants on a rail has to hold its aim through the swell. |
 | Current holder | [[kettil-ormsson]], on the counter at [[Ormsson's Fittings]], where he uses it to prove the point about the rings. |
 | Narrative hook | Every gun crew in [[Kalowe]] wants one and the yard buys them in pairs, so the shelf stays empty more weeks than not. |
 

@@ -40,7 +40,7 @@ tier: supporting
 | One thing | A cake eaten over a short rest removes one level of [[Exhaustion]]. |
 | Rarity justification | Uncommon, three uses of a condition-clearing consumable, sitting between [[Potion of Healing (Greater)]] (one use, 4d4+4 hit points) and [[Oil of Slipperiness]] (one application, eight hours free of grapples and restraints). |
 | Attunement reason | None. One power, no bonus to attack, damage, saves, or AC. |
-| PC connection | The crew of the [[Uncertainty]] on a Deep crossing, where exhaustion's penalty rides every d20 test at once: [[catarina-davirelli|Catarina]] holds concentration on a flat save, and [[perrin-black-jaw|Perrin]]'s [[Strength]] save is already negative before a crossing takes anything off it. |
+| PC connection | The crew of the [[Uncertainty]] on a Deep crossing, where exhaustion's penalty rides every d20 test at once and [[perrin-black-jaw|Perrin]]'s [[Strength]] save is already negative before a crossing takes anything off it. |
 | Current holder | [[suryo-wibowo]], on the short shelf behind his counter. |
 | Narrative hook | Suryo sells a case to any captain who gives him a crew count and a days-at-sea figure, and tells the ones who come up short so to their faces. |
 

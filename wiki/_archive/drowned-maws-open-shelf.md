@@ -45,7 +45,7 @@ Water warms below forty feet, each returning pulse reaches closer to the surface
 
 - **The heat is not a vent anomaly:** a line burned at eighty feet, the Sentinels' long record, and [[auralis|Auralis]]'s contact with Perrin form three independent vectors toward the breach.
 - The crew can reach the lower workshops, bypass the *[[red-lady|Red Lady]]*, salvage the Pearl, disturb the site, or leave the shelf alone.
-- **PC gravity:** [[catarina-davirelli|Catarina]] can reach engineering that advances her flying machine. [[perrin-black-jaw|Perrin]] can press his patron's command. [[delmar-fisk|Delmar]] can reach the trapped souls. [[crissdalynn-khinriss|Crissdalynn]] can resume her unfinished Maw survey.
+- **PC gravity:** [[perrin-black-jaw|Perrin]] can press his patron's command. [[delmar-fisk|Delmar]] can reach the trapped souls. [[crissdalynn-khinriss|Crissdalynn]] can resume her unfinished Maw survey.
 
 ## If Ignored
 

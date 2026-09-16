@@ -46,7 +46,6 @@ tier: supporting
 **Clock:** 8 segments (filled: 2)
 **Consequence at fill:** Voyvode achieves the first working mid-shelf-viable rig, becomes Fathomrush's dominant and legitimate authority in the trade, and, if Sunkline's forged trial data still hasn't surfaced by then, exposes the fraud outright: one rig demonstrably works, the other never did.
 **Possible outcomes (2-3):** (a) party surfaces Sunkline's fraud early, before Voyvode's clock fills, so Voyvode inherits the trade outright, sooner and with fewer losses; (b) party ignores the rivalry, so the clock fills as written; (c) party sides with Sunkline for its own reasons, so Voyvode's slower, honest track still converges eventually, just against active sabotage.
-**PC connection:** [[catarina-davirelli]]'s hook is anything that may one day help her build a non-magical flying machine. Branimir's real (if incomplete) trial data on hull tolerances and air-pump endurance is exactly the honest engineering problem her research needs. He doesn't trust outsiders with it; earning it, not buying it, is the pull. [[karsovines-working-log]] is the concrete object that data lives in.
 **Per-PC awareness:** no PC yet knows which company's rig failed in the recent trial-dive death, that fact stays inline here, unrevealed, per Fathomrush's own hook.
 **Quest link:** none yet
 **Three-Clue Trail:**

@@ -13,7 +13,7 @@ tags: [session, recap]
 # Session 06 - Recap
 
 > [!narration] Recap
-> Last time on the Shattered Sea, you brought the prize *[[Uncertainty]]* into [[Calven and Calveno|Calveno]]. [[Delmar Fisk]] told you his fleet stole the [[Pearl of Souls]]. At the harbor shrine [[Umberlee]] took [[Umberlee - Branca|Branca]] and named the Pearl as her price. You went into the sewers. [[Catarina Da'Virelli]] joined that raid with [[Ragnetto]]. You reached Room 8 in the middle of a ritual, [[Solange Barret]] still chanting, [[Grung Elite Warrior|Grung Elite Warriors]] still in the way.
+> Last time on the Shattered Sea, you brought the prize *[[Uncertainty]]* into [[Calven and Calveno|Calveno]]. [[Delmar Fisk]] told you his fleet stole the [[Pearl of Souls]]. At the harbor shrine [[Umberlee]] took [[Umberlee - Branca|Branca]] and named the Pearl as her price. You went into the sewers. Local artificer [[Catarina Da'Virelli]] assisted from her Calveno workshop with [[Ragnetto]]. You reached Room 8 in the middle of a ritual, [[Solange Barret]] still chanting, [[Grung Elite Warrior|Grung Elite Warriors]] still in the way.
 >
 > On festival morning, [[Master Kyzil|Kyzil]] would not play the pranks. [[Thunk]] signed a thousand gold of cannon on *Uncertainty*'s credit. [[Nona Black-Jaw]] threw a tomato back.
 >

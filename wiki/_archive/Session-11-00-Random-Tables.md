@@ -18,7 +18,7 @@ The single current-hazards table for [[Session-11-00-Birds-of-a-Feather]]. No Gr
 ## L0 · At a glance
 
 - **Where:** Use this table on a [[Aruhe - Grasslands]] bank, in the gold grass, at a river hole, along a tree line, or at a fruiting margin.
-- **Party band:** Five PCs are level 5 and fight as 6. Use the linked hazard note for its current mechanics and counterplay.
+- **Party band:** Four PCs are level 5 and fight as 5. Use the linked hazard note for its current mechanics and counterplay.
 - **Spine:** The roll adds pressure while the crew follows the survivor prints and smoke. It does not replace the next story beat.
 
 | d8 | Current hazard | Where it fits | Owner |

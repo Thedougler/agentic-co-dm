@@ -1,8 +1,8 @@
 {
   "version": 1,
   "stats": {
-    "total_sources_ingested": 811,
-    "total_pages": 717,
+    "total_sources_ingested": 816,
+    "total_pages": 752,
     "packet_ingest-raw-2026-09-13-gh-2": 515
   },
   "/Users/nick/agentic-co-dm/wiki/_raw/arc-blight-of-aruhe.md": {
@@ -1263,6 +1263,89 @@
       ],
       "source_type": "document",
       "project": "shattered-sea"
+    },
+    "_raw/cryssdalyn-knhinriss.png": {
+      "content_hash": "sha256:15e599bb6a8e18eb07d6fc1aa04f73fb1ecb687c638e30c0a09bf068e21c0c95",
+      "last_ingested": "2026-09-15T23:08:00-07:00",
+      "pages_produced": [
+        "entities/pc/crissdalynn-khinriss.md"
+      ],
+      "source_type": "image",
+      "project": "shattered-sea"
+    },
+    "_raw/delmar-fisk.png": {
+      "content_hash": "sha256:135184e67b8e496cf2389e353853d409af2692acae0f0e8ee38233de32189898",
+      "last_ingested": "2026-09-15T23:12:00-07:00",
+      "pages_produced": [
+        "entities/pc/delmar-fisk.md"
+      ],
+      "source_type": "image",
+      "project": "shattered-sea"
+    },
+    "_raw/jean-claude-tabarnack.png": {
+      "content_hash": "sha256:3e315fcc7ffd0a3659bb84c1f5501490fba63cb8f767bf4c8ed3ba8e4100d280",
+      "last_ingested": "2026-09-15T23:16:00-07:00",
+      "pages_produced": [
+        "entities/pc/jean-claude-tabarnack.md"
+      ],
+      "source_type": "image",
+      "project": "shattered-sea"
+    },
+    "_raw/perrin-black-jaw.png": {
+      "content_hash": "sha256:e3e90b0c960f841754d0337ab3462a2b7ab7e0667b86a29e320652d7a7822baa",
+      "last_ingested": "2026-09-15T23:20:00-07:00",
+      "pages_produced": [
+        "entities/pc/perrin-black-jaw.md"
+      ],
+      "source_type": "image",
+      "project": "shattered-sea"
+    },
+    "/Users/nick/agentic-co-dm/retcon:shattered-sea-catarina-2026-09-16": {
+      "last_ingested": "2026-09-16T00:00:00Z",
+      "mode": "retcon",
+      "status": "complete",
+      "pages_created": [
+        "entities/npc/catarina-davirelli.md"
+      ],
+      "pages_updated": [
+        "index.md",
+        "hot.md",
+        "log.md",
+        "entities/region/shattered-sea.md",
+        "synthesis/party-combat-profile.md",
+        "synthesis/story-so-far.md",
+        "journal/sessions/shattered-sea/05/Session-05-Recap.md",
+        "journal/sessions/shattered-sea/06/Session-06-Recap.md",
+        "journal/sessions/shattered-sea/07/Session-07-Recap.md",
+        "journal/sessions/shattered-sea/09/Session-09-Recap.md",
+        "entities/npc/otar-the-foul.md",
+        "entities/npc/ninka-solvei.md",
+        "entities/npc/marta-kessler.md",
+        "entities/npc/yevgenia-sorrel.md",
+        "entities/npc/Zort.md",
+        "entities/npc/Otho.md",
+        "entities/faction/sunkline-company.md",
+        "entities/faction/voyvode-works.md",
+        "entities/quest/the-hound-of-god.md",
+        "entities/item/a-sliver-of-the-unstable-form.md",
+        "entities/item/gimbal-mount.md",
+        "entities/item/long-passage-biscuit.md",
+        "entities/item/slow-burn.md",
+        "entities/item/the-sleepless.md",
+        "entities/item/karsovines-working-log.md",
+        "entities/item/property-snow.md",
+        "entities/item/the-understudy.md",
+        "entities/item/wild-pearl-of-power.md",
+        "entities/creature/Hierarch.md",
+        "entities/creature/Necromaton.md",
+        "entities/creature/slaad-tadpole.md"
+      ],
+      "pages_produced": [
+        "entities/npc/catarina-davirelli.md",
+        "index.md",
+        "hot.md",
+        "log.md"
+      ]
     }
   },
   "/Users/nick/agentic-co-dm/wiki/_raw/Aruhe - Beach.md": {
@@ -8274,5 +8357,5 @@
     "project": "shattered-sea",
     "packet": "ingest-raw-2026-09-13-gh-2"
   },
-  "last_updated": "2026-09-16T05:14:45Z"
+  "last_updated": "2026-09-16T21:55:57Z"
 }

@@ -35,9 +35,9 @@ Played 2026-08-02. Lists. Osset. Pay.
 >
 > Nona turned the Mercatura crater into a missing-persons desk. The list climbed past three hundred fourteen fighting-age men and kept taking names. Jean-Claude Tabarnack called it slaving. Nona vowed chase in front of the crowd and sent two Passage ships, already days behind the raiders. She gave Perrin Black-Jaw a favor instead of gold. Cobb's refit on Uncertainty would be ready in twelve hours.
 >
-> You took the pay to the shops. At Morsani you bought The Snap. Delmar lifted a torn page that named Osset, a monk who left the Sentinels in a schism. Catarina Da'Virelli named a corpse as Morsani's source, and the shop threw her out the door and twenty feet down the street.
+> You took the pay to the shops. At Morsani you bought The Snap. Delmar lifted a torn page that named Osset, a monk who left the Sentinels in a schism. Catarina Da'Virelli, still in Calveno, named a corpse as Morsani's source, and the shop threw her out the door and twenty feet down the street.
 >
-> Lavinia Sordi sold Crissdalynn Khinriss a cloak. Identify made it Nightmantle. Lavinia had it from a falcon-featured man who also called himself Osset, a name Crissdalynn never heard at the Eyrie. Zort offered a Midchain reptile contact for a prosthetic, and Catarina agreed to build him one.
+> Lavinia Sordi sold Crissdalynn Khinriss a cloak. Identify made it Nightmantle. Lavinia had it from a falcon-featured man who also called himself Osset, a name Crissdalynn never heard at the Eyrie. Zort received the completed prosthetic from Catarina's Calveno workshop, and the Midchain reptile contact is no longer an open commission.
 >
 > The paint is still wet on the Defender writ. Uncertainty sits in the cradle for twelve hours. The list is still growing. The raiders already have a head start. Osset is named in two mouths.
 

@@ -52,7 +52,6 @@ She has run the register since the Goldrush's second year, back when the store w
 | Consistent method | Recites the company greeting word-for-word to strangers. Drops it the moment someone proves useful, then trades favors off the official ledger. |
 | Active problem | A Voyvode clerk arrives within the month to weigh every crate against her ledger. Her under-the-counter trades won't survive the count. |
 | Performance hooks | Call-center brightness stapled to dockworker bluntness. Stamps a receipt twice, hard, when a customer mentions Sunkline. |
-| Link of relevance | [[catarina-davirelli]] receives the rejected pressure-valve housings and bellows-pump components Marta pulls off Voyvode's scrap barge before they're logged, traded for tune-ups on the store's own broken stock scale, parts that feed straight into Catarina's flying-machine pressure research and won't survive the coming crate-count either. |
 
 **Voice & Delivery:**
 
@@ -65,5 +64,4 @@ She has run the register since the Goldrush's second year, back when the store w
 
 - [[voyvode-works]]: her employer. The crate-count landing this month threatens the trades she's been running around its books.
 - [[yevgenia-sorrel]]: Sunkline's shopkeeper, near-identical at a glance across the harbor. Marta despises her, a personal rivalry, not corporate loyalty.
-- [[catarina-davirelli]]: buyer for the rejected Voyvode pressure-rig scrap Marta diverts off the company log, feeding Catarina's flying-machine research directly.
 - [[Fathomrush]]: the company town she's worked the counter of since the Goldrush's second year.

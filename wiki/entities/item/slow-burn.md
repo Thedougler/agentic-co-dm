@@ -43,13 +43,13 @@ Shelf stock at [[La Brace]], and the blend [[rufio-segalla]] sells most of to pe
 | One thing | For 1 hour after lighting, the smoker has advantage on [[Constitution]] saving throws made to maintain [[Concentration]]. |
 | Rarity justification | Well under [[Necklace of Adaptation]] (Rare, outright immunity to the Concentration-breaking effect of damage, permanent, attunement required), and level with [[Cloak of Elvenkind]] (Uncommon, one situational advantage, worn without attunement). |
 | Attunement reason | None. Single use, one power, and the advantage covers one narrow class of save, leaving every other saving throw flat. |
-| PC connection | [[catarina-davirelli|Catarina Davirelli]] holds the crew's only advantage engine and saves flat at +5, with no [[War Caster]] behind it. |
+| PC connection | [[perrin-black-jaw|Perrin]] has no [[War Caster]], so an hour of advantage on [[Constitution]] saves can protect [[Hex]] before a hard crossing or fight. |
 | Current holder | Shelf stock at [[La Brace]], sold across the counter to anyone who walks in. |
 | Narrative hook | Someone in [[le-paludi]] spins the thread, and Rufio will not say who. He answers every other question about his shelf. |
 
 **Rarity:** the Uncommon tier fits. Necklace of Adaptation sits at Rare and removes the problem permanently instead of improving one roll, and it spends an attunement slot doing that. Cloak of Elvenkind sits closer, granting one advantage in one circumstance to anyone who puts it on. An hour of the same shape out of a consumable stays under both.
 
-**PC connection:** two casters carry the crew's Concentration and neither one holds it well. Catarina saves at +5 and [[perrin-black-jaw|Perrin]] at +3, so one focused hit ends [[Faerie Fire]] or [[Hex]] where it stands. An hour bought before a door opens is the cheapest answer either of them has.
+**PC connection:** Perrin carries the crew's active Concentration burden and saves at +3, so one focused hit can end [[Hex]]. An hour bought before a door opens is the cheapest answer he has.
 
 ## Mechanics
 

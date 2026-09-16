@@ -9,10 +9,11 @@ sources:
   - "Foundry VTT Shattered-Sea actor Perrin Black-Jaw 2026-09-13"
   - "wiki/_archive/perrin-black-jaw.md"
   - "wiki/_archive/combat-profile/perrin-black-jaw-combat-profile.md"
+  - "wiki/_archive/perrin-black-jaw.png"
 summary: Warlock 2 / Lore Bard 3 who baited Aruhe hunts with illusions and took Tasha's laughter from a lesser black lotus.
 lifecycle: canon
 created: 2026-09-12
-updated: 2026-09-14
+updated: 2026-09-15
 type: pc
 reveal: revealed
 campaign: shattered-sea
@@ -201,3 +202,9 @@ Charisma. Save DC 16. Attack +8. Bard slots L1 4/4, L2 2/2. Pact Magic 2/2 (Warl
 ## Voice
 
 Leads through charm and volume. Finds the nearest exit first — not to run, only to confirm it exists. Prohibition-era gangster cadence kept from grandfather Vincenzo, decorative and distinct.
+
+## Art
+
+![[attachments/shattered-sea/character-references/perrin-black-jaw-reference.png|Perrin Black-Jaw character reference sheet]]
+
+The supplied reference sheet fixes Perrin as a small black-and-white ratkin with warm brown ears, large dark eyes, and a long pink tail. He wears an olive-green hooded cloak over an off-white tunic and dark trousers, with a brown leather harness, belt, backpack, sword, and round shield marked by a dark central emblem. His compact silhouette is quick and expressive; the sheet shows him talking, inspecting the shield, and moving with it ready.

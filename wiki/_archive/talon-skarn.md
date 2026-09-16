@@ -103,7 +103,7 @@ Skarn only enters a fight once the crew actually travels into or reaches [[midch
 
 He's built at the effective-class-level tier, not a full CR-built monster, still the apprentice proving himself. He tests an opponent with a strike he can walk away from. He never commits to one he can't. The scene plays out as that testing strike, not a fight to the finish.
 
-Calibrated against the crew's real level-5 numbers: [[crissdalynn-khinriss|Crissdalynn]], [[catarina-davirelli|Catarina]], [[delmar-fisk|Delmar]], [[jean-claude-tabarnack|Jean-Claude]], and [[perrin-black-jaw|Perrin]]. His +10 to hit lands often, not automatically.
+Calibrated against the crew's real level-5 numbers: [[crissdalynn-khinriss|Crissdalynn]], [[delmar-fisk|Delmar]], [[jean-claude-tabarnack|Jean-Claude]], and [[perrin-black-jaw|Perrin]]. His +10 to hit lands often, not automatically.
 
 Neither his Skysplitter Daggers (10 average) nor his Stoop (21 average) drop any one of them in a single hit. AC 19 with 97 HP lets him absorb one or two real exchanges without folding.
 

@@ -48,7 +48,7 @@ Named stops the crew may wander into while exploring, beyond [[kalowe|Kalowe]]: 
 
 ---
 
-Scope: level 5 to level 10, 20+ sessions, all five PCs currently at 5. That's D&D tier 2 end to end, and it's roughly four times Season 1's length at a quarter of Season 1's advancement rate. Season 1 ran 1 to 5 across six sessions, a level every 1.2. This one is a level every four or so. This crew will feel that gear change unless every level lands on something they can see coming.
+Scope: level 5 to level 10, 20+ sessions, all four PCs currently at 5. That's D&D tier 2 end to end, and it's roughly four times Season 1's length at a quarter of Season 1's advancement rate. Season 1 ran 1 to 5 across six sessions, a level every 1.2. This one is a level every four or so. This crew will feel that gear change unless every level lands on something they can see coming.
 
 ---
 

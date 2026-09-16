@@ -50,7 +50,6 @@ Both piers watch where each new hull ties up. Sunkline's concealed certificate i
   - The memorial wall carries a fresh name.
   - [[petera-ngata|Petera]] keeps the loss list.
   - A surviving diver knows which rig failed.
-- **PC gravity:** [[catarina-davirelli|Catarina]] can gain real pressure, hull-tolerance, and pump-endurance data for her non-magical flying machine from either company's engineering problem.
 
 ## If Ignored
 

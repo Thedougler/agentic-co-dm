@@ -62,17 +62,17 @@ Two days. That was all the city had. Two days until festival bombs, and the Pear
 
 So they went back into the sewer magazines with the clock already chewing itself to pieces.
 
-[[Catarina Da'Virelli]] joined them for that push on her first descent. She came down with her cannon [[Ragnetto]] and her owl Strix, and both were fighting beside her before she finished giving her name. [[Ruma Delacroix]] gave up Room 6 without a fight. The party accepted the surrender and moved on. Two rooms later they found [[Bazzoth]] at his still. He poured his last good vintage into a bomb that smelled like rot and bad choices, and then he lost. He went into the water with his still and Magazine Beta's barrels, the second powder cache after the boat burned on the coast.
+Calveno artificer [[Catarina Da'Virelli]] helped locally with that push from her workshop. Her cannon [[Ragnetto]] and her owl Strix were fighting beside her before she finished giving her name. [[Ruma Delacroix]] gave up Room 6 without a fight. The party accepted the surrender and moved on. Two rooms later they found [[Bazzoth]] at his still. He poured his last good vintage into a bomb that smelled like rot and bad choices, and then he lost. He went into the water with his still and Magazine Beta's barrels, the second powder cache after the boat burned on the coast.
 
 The primary chamber waited in Room 8.
 
 Room 8 held a live ritual. [[Solange Barret]] chanted over the circle. Four [[Grung Elite Warrior|Grung Elite Warriors]] stood between her and the party, though one was already broken against the wall. On festival morning above them, ordinary life kept trying to happen. Kyzil would not play the pranks. Thunk would sign a thousand gold of cannon on *Uncertainty*'s credit. Nona Black-Jaw would throw a tomato back.
 
-Below, Catarina threw fire and lightning, and Ragnetto fell. Delmar dropped a guard with one pistol shot. Perrin took a strike, called to his patron, and heard the words "Not yet." He stayed on his feet, coughing seawater. Solange said she would not have her princesses stopped.
+Below, Catarina assisted locally with fire and lightning, and Ragnetto fell. Delmar dropped a guard with one pistol shot. Perrin took a strike, called to his patron, and heard the words "Not yet." He stayed on his feet, coughing seawater. Solange said she would not have her princesses stopped.
 
 [[Vashu the Weeping Veil|Vashu]] and [[Ozzeth]] died covering Solange. Crissdalynn took Vashu's hits, dodged the tongue twice, and cracked the throat. Ozzeth reached for Delmar's mind. Jean-Claude put a word in Delmar's ear, and Delmar held on. Then Delmar shot Ozzeth's arm off. Jean-Claude finished him. With his last magic, Ozzeth spent himself on Solange and told her to do it now.
 
-Crissdalynn had Solange in her grip, grappled and poisoned. Solange left that grip as if the rules of flesh had become optional. She appeared beside Catarina. She spoke one word.
+Crissdalynn had Solange in her grip, grappled and poisoned. Solange left that grip as if the rules of flesh had become optional. She appeared beside the local artificer Catarina. She spoke one word.
 
 Agni.
 
@@ -82,7 +82,7 @@ Only it did not simply come down. It opened. The chamber below was suddenly open
 
 The town answered with the Warren's old signal: hide or get ready to fight.
 
-Kyzil took the brood. Catarina was in Otar's mouth when Delmar ended the thing with a chair and a shot through the eye. She came out into daylight. Nobody cheered. Some victories are too wet, too close, too full of other people's missing names. The carcass rotted where it fell. The party took [[Grung - Authority Seal]] and [[A Sliver of the Unstable Form]]. A scrap of paper sat in the rot, unread.
+Kyzil took the brood. Catarina was in Otar's mouth while assisting locally, and Delmar ended the thing with a chair and a shot through the eye. She came out into daylight. Nobody cheered. Some victories are too wet, too close, too full of other people's missing names. The carcass rotted where it fell. The party took [[Grung - Authority Seal]] and [[A Sliver of the Unstable Form]]. A scrap of paper sat in the rot, unread.
 
 [[Fieschi|Iacopo Fieschi]] found them in the plaza and brought them to an office with the smoking crater in the window. There he signed them as Calveno's Defenders on [[Tessarine Concordat|Tessarine]] letterhead, because the Crown had not defended Calveno. Someone in that office had orders from [[Rupert Knighton]], given days before the ceiling opened, to gather what she could and evacuate. Fieschi had received no warning.
 
@@ -92,7 +92,7 @@ Hundreds were missing.
 
 In the aftermath, Calveno did what places do after the impossible tears through them. It made lists. Nona turned the Mercatura crater into a missing-persons desk, and the names climbed past three hundred fourteen fighting-age men. Jean-Claude called it slaving. Nona vowed chase in front of the crowd and sent two Passage ships after raiders who already had days on them. Fieschi paid the Tessarine debt in public with a thousand gold in trade credit, Casa Falier, and a diamond ring. Perrin took a favor instead of gold. [[Cobb]]'s refit on *Uncertainty* would be ready in twelve hours.
 
-The party spent their pay with the urgency of people who knew the road had teeth. At [[Prospero Morsani|Morsani]], they bought [[The Snap]]. Delmar lifted a torn page that named [[Osset]], a monk who had left the [[Sentinels of the Eyrie]] in a schism. Catarina identified a corpse as Morsani's source, and the shop answered by throwing her out the door and twenty feet down the street. [[Lavinia Sordi]] sold Crissdalynn a cloak that magic named [[Nightmantle]]. Lavinia had bought it from a falcon-featured man who also called himself Osset, though Crissdalynn had never heard that name at the Eyrie. [[Zort]] offered Catarina a [[Midchain]] reptile contact in exchange for a prosthetic, and Catarina agreed to build him one.
+The party spent their pay with the urgency of people who knew the road had teeth. At [[Prospero Morsani|Morsani]], they bought [[The Snap]]. Delmar lifted a torn page that named [[Osset]], a monk who had left the [[Sentinels of the Eyrie]] in a schism. Catarina, still in Calveno, identified a corpse as Morsani's source, and the shop answered by throwing her out the door and twenty feet down the street. [[Lavinia Sordi]] sold Crissdalynn a cloak that magic named [[Nightmantle]]. Lavinia had bought it from a falcon-featured man who also called himself Osset, though Crissdalynn had never heard that name at the Eyrie. [[Zort]] received the completed prosthetic from Catarina's Calveno workshop, and the Midchain reptile contact was settled before departure.
 
 The paint on the Defender writ was still wet. The list was still growing. The raiders had their head start. The name Osset had come from two different mouths. In a kinder world, that might have been coincidence.
 
@@ -102,9 +102,8 @@ Back aboard *Uncertainty*, Crissdalynn flew ahead over wreckage and found three 
 
 Then the Crown found them again.
 
-Two days out, [[HCS Ordinance]] intercepted *Uncertainty*: ninety-six guns under Dravosi colors. [[Corbin Knighton]] crossed first. Behind him came [[Aleksander Malone]], the Hound of [[Tyr]], hunting Shepherd Grigori. The party played merchant. They hid Perrin, Ruma, and Jean-Claude. Delmar sent the boarders toward Calveno. Catarina laughed with Umberlee's voice until Corbin reined his hound in, and the great warship stood off for the city. Nona was warned by stone that Ordinance and the Hound were coming.
+Two days out, [[HCS Ordinance]] intercepted *Uncertainty*: ninety-six guns under Dravosi colors. [[Corbin Knighton]] crossed first. Behind him came [[Aleksander Malone]], the Hound of [[Tyr]], hunting Shepherd Grigori. The party played merchant. They hid Perrin, Ruma, and Jean-Claude. Delmar sent the boarders toward Calveno. Nona was warned by stone that Ordinance and the Hound were coming.
 
-Catarina gave Delmar [[Lamarae's Fang]] for his help finding an axolotl, because even in a world of gods, slavers, monsters, and warships, people still make strange little trades that somehow matter.
 
 *Uncertainty* sailed on for Sparhold with three rescued captives aboard, while Ordinance carried the party's story back toward Calveno.
 

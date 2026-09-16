@@ -14,6 +14,7 @@ sources:
   - "wiki/_archive/combat-profile/jean-claude-tabarnack-combat-profile.md"
   - "wiki/_archive/va-scripts/jean-claude-tabarnack-voice-script.md"
   - "wiki/_archive/galleries/jean-claude-tabarnack-gallery.md"
+  - "wiki/_archive/jean-claude-tabarnack.png"
   - "wiki/_raw/Grung clans.md"
   - "Foundry VTT Shattered-Sea actor Jean Claude Tabarnack 2026-09-13"
 summary: Level 5 Gloom Stalker Grung, catatonic after the bloodhawk stoop, carried in Delmar's coat.
@@ -26,7 +27,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12
-updated: 2026-09-14
+updated: 2026-09-15
 type: pc
 reveal: revealed
 campaign: shattered-sea
@@ -215,3 +216,9 @@ Wisdom. Save DC 14. Attack +6. Slots L1 4/4, L2 2/2. DDB dumped the full Ranger 
 ## Voice
 
 Reads first, then acts — unless slavery or abuse is in view, then instinct takes the wheel. Cannot lie or mask intention under the Mortis curse already on the sheet. Birds are a genetic terror; he and Crissdalyn have never once discussed it.
+
+## Art
+
+![[attachments/shattered-sea/character-references/jean-claude-tabarnack-reference.png|Jean-Claude Tabarnack character reference sheet]]
+
+The supplied reference sheet fixes Jean-Claude as a small blue amphibian with dark spots, large gold eyes, a long dark moustache, and a red beret. He wears a layered dark hood and scarf, brown leather harness and pouches, a ragged dark cloak, and a back quiver; a bow and splayed amphibian feet complete the lean, athletic silhouette. The sheet repeatedly depicts a cigarette at the corner of his mouth.

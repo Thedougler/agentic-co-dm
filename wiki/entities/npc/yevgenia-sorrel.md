@@ -34,7 +34,7 @@ visibility: dm
 
 *Yevgenia Sorrel*: Everything here's cut to match what's across the water, down to the apron. Don't tell me hers smiles better.
 
-Company-store customer-service voice, drilled flat, cracking on one word, Marta. Underneath the uniform she's sharper with scavenged [[Antheri]] parts than the job lets her show, patching broken stock with scrap the catalog doesn't cover, and [[catarina-davirelli]] is the one customer who'd actually clock that the fix wasn't off any shelf.
+Company-store customer-service voice, drilled flat, cracking on one word, Marta. Underneath the uniform she is sharper with scavenged [[Antheri]] parts than the job lets her show.
 
 **Runs Sunkline General Store** at Fathomrush's Sunkline pier, stocking [[rope]], tools, rations, and diving sundries repriced daily to match [[marta-kessler]]'s ledger across the harbor, item for item. **Despises Marta personally**, not just professionally: the two shops read as interchangeable from the dock, and that reading is what cracks her company patter.
 
@@ -44,7 +44,7 @@ Company-store customer-service voice, drilled flat, cracking on one word, Marta.
 | Consistent method | Recites the company script until "Voyvode" comes up, then drops it mid-sentence for a real jab. |
 | Active problem | Sunkline just repriced its rope to match Voyvode's again, and she has to restock and reprice with nothing to show for it but another identical aisle. |
 | Performance hooks | The identikit company clerk drilled into cheerful sameness. Straightens the same shelf-row twice while she talks, like the aisle itself needs correcting. |
-| Link of relevance | [[catarina-davirelli]]: Yevgenia jury-rigs broken stock with scavenged Antheri scrap faster and better than the company catalog allows, and Catarina is the one customer sharp enough to notice the fix wasn't off any shelf. |
+| Link of relevance | [[sunkline-company]]: her scavenged-parts repairs expose the gap between the catalog and the actual stock. |
 
 Voice & delivery: clipped, company-trained cadence, every line sized for a transaction.
 
@@ -57,4 +57,3 @@ Voice & delivery: clipped, company-trained cadence, every line sized for a trans
 
 - [[sunkline-company]]: employer; the source of the identical apron, patter, and price sheet.
 - [[marta-kessler]]: rival counterpart at Voyvode General Store, the one person Yevgenia's company sameness can't cover.
-- [[catarina-davirelli]]: the customer sharp enough to notice her scavenged fixes for what they are.

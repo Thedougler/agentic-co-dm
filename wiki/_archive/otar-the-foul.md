@@ -126,7 +126,7 @@ legendary_actions:
 
 **Retuning (canon corrected 2026-07-24).** The statblock is truth. This prose drifted and was re-tuned for Session 07, then again on 2026-07-25 for `combat-sim v6.4.0`. The combat primer shows the adventurers punch 1 to 2 CR above normal; focus fire, save-stacking, and holds have made every fight through Session 04 easy. The original CR 8 build undertuned that.
 
-Session 07 opens Otar alongside 5 [[minor-slaad|Minor Slaad]] companions, tadpoles already fed on Grung dead and further along their molt. The DM wanted action pool, so tuning Otar down offsets that. See the statblock above for AC, HP, attack bonuses, and DC info. This build accounts for [[catarina-davirelli|Catarina]]'s kit being active from round 1, though she comes 2 to 3 turns later.
+Session 07 opens Otar alongside 5 [[minor-slaad|Minor Slaad]] companions, tadpoles already fed on Grung dead and further along their molt. The DM wanted action pool, so tuning Otar down offsets that.
 
 [[otar-the-foul-manifestation|Phase 1]] and [[otar-the-foul-the-rattle-answers|Phase 2]] track this CR 9 build's current tuning as the fight develops.
 
@@ -134,13 +134,13 @@ Session 07 opens Otar alongside 5 [[minor-slaad|Minor Slaad]] companions, tadpol
 
 **Behavioral profile.** Otar opens standing where Solange was, disoriented and newly embodied, and Tongue Lashes the nearest creature to pull it into melee. If 3+ creatures bunch within 20 ft, he opens with Chaos Pulse instead. At 68 HP (half), his Unstable Form starts, though he never retreats, yields, or reasons, just fights until dead. He is a brute hazard, chaotic, more obstacle than opponent. If the fight runs easy, he targets the townsfolk to force movement. Otherwise he lets the adventurers focus-fire and may Tongue Lash a PC into the crater for bad positioning. If the adventurers split early, he pursues the nearest target for 2 rounds before losing focus and attacking the townsfolk through chaos. If the adventurers have [[heroes-feast|Heroes' Feast]] active (skipped the long rest), they have more buffer and [[the-rattle-statblock|the Rattle]] (below) becomes less likely to show.
 
-**Weakness (fire/acid):** stopping regeneration is the key. Fire or acid ends the healing cycle. Without them, the adventurers grind against 135 HP as Otar heals big chunks each round. Otar's Bile Spray deals acid, and a splash near him stops his regeneration (he's too dumb to avoid it). [[catarina-davirelli|Catarina]]'s Wand of Pyrotechnics gives fire when in range. Fire that stops regeneration early keeps the fight to 6 to 8 rounds; without it, the clock nearly doubles.
+**Weakness (fire/acid):** stopping regeneration is the key. Fire or acid ends the healing cycle. Without them, the adventurers grind against 135 HP as Otar heals big chunks each round. Otar's Bile Spray deals acid, and a splash near him stops his regeneration. Fire that stops regeneration early keeps the fight to 6 to 8 rounds; without it, the clock nearly doubles.
 
 **The trapped townsfolk & the clock:** 2d6 injured townsfolk lie trapped in rubble within 30 ft of the crater. Otar attacks them if no PC blocks him, dealing d6 damage per round (1 or 2 hits each). Foul Miasma harms them too. Every round here is one the extraction elsewhere gains, with screams from [[the-bridge|Bridge]] after round 3 and smoke from [[le-paludi|Le Paludi]] after round 5. Adventurers must choose: finish Otar or save people.
 
 **Death:** when Otar dies, all lair actions stop (both his and the Rattle's). He does not dissolve. He falls into the rubble, bleeding fluid, thirty feet of dead outsider cooling in the plaza. The summoning circle stays faintly visible beneath. Someone brought this thing here on purpose and knew its name.
 
-**[[encounter|Encounter]] adaptation (Catarina's kit):** [[catarina-davirelli|Catarina]] joins as a full 5th PC in Session 06, coming before the primary chamber and introduced before Room 8 by default. Fallback: if the adventurers reach Room 8 first, her cannon and owl are on-site and active from round 1 while she arrives 2 to 3 turns later. Her Eldritch Cannon (Ragnetto) and owl (Strix), which appear on her page and never target Jean-Claude, raise Otar's effective CR from turn 1. The CR 9 build prices this in.
+**Encounter adaptation:** The encounter is calibrated for the four-PC party. Do not add a fifth PC or restage the closed Calveno fight.
 
 See [[otar-the-foul-manifestation|Phase 1]] and [[otar-the-foul-the-rattle-answers|Phase 2]] for terrain, DM pacing, and tuning info for this fight.
 
@@ -173,7 +173,6 @@ His worst ability opens in Phase 2.
 - Calveno. The Beffa Grung Raid. The operation the summoning anchors.
 - [[calveno-sewers-grung-magazines|Calveno Sewer Magazines]]. The primary detonation chamber and summoning circle.
 
-- [[catarina-davirelli|Catarina Da'Virelli]]. Introduced at this fight. Her owl and Cannon active from round 1. She comes 2 to 3 turns later.
 - [[jean-claude-tabarnack|Jean-Claude Tabarnack]]. Ragnetto never targets him.
 - [[warren|Warren]]. Floods the plaza with the Rattle if the fight turns to TPK.
 - [[a-sliver-of-the-unstable-form|A Sliver of the Unstable Form]]. A fragment of his healing flesh from the crater.

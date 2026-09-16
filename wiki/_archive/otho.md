@@ -58,7 +58,7 @@ Physical mannerisms: flicks a coin across his knuckles and claps a hand on a sho
 
 ## Stats & Combat
 
-Calibrated against the real crew (`vault/campaigns/shattered-sea/pcs/*.md`): [[catarina-davirelli|Catarina Davirelli]] ([[artificer|Artificer]] 5), [[crissdalynn-khinriss|Crissdalynn Khinriss]] ([[monk|Monk]] 5), [[delmar-fisk|Delmar Fisk]] ([[rogue|Rogue]] 5), [[jean-claude-tabarnack|Jean-Claude Tabarnack]] ([[ranger|Ranger]] 5), and [[perrin-black-jaw|Perrin Black-Jaw]] ([[bard|Bard]] 3/[[warlock|Warlock]] 2), all level 5 as of Season 1.
+Calibrated against the real crew (`vault/campaigns/shattered-sea/pcs/*.md`): [[crissdalynn-khinriss|Crissdalynn Khinriss]] ([[monk|Monk]] 5), [[delmar-fisk|Delmar Fisk]] ([[rogue|Rogue]] 5), [[jean-claude-tabarnack|Jean-Claude Tabarnack]] ([[ranger|Ranger]] 5), and [[perrin-black-jaw|Perrin Black-Jaw]] ([[bard|Bard]] 3/[[warlock|Warlock]] 2), all level 5 as of Season 1.
 
 Otho follows the CR-built path (`vault/refs/vault/npc/references/villains.md`), designed to stay unwinnable by force well past this crew's current level. He's pitched in the spirit of [[shepherd-grigori|Grigori]]'s own CR-19 [[hierarch|Hierarch]] build, one that dominates and de-escalates instead of fighting to the death (`vault/campaigns/shattered-sea/npcs/shepherd-grigori.md` § Stats & Combat), but pitched a full tier above it: roughly CR 23-24, AC 21, 450+ HP.
 

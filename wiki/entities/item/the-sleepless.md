@@ -43,7 +43,7 @@ A batch [[Studio Orsini]] left on the drying racks four days too long, sold unde
 | One thing | For 1 hour after lighting, the smoker rolls [[Wisdom]] saving throws with advantage. |
 | Rarity justification | Under [[Cloak of Protection]] (Uncommon, attunement, a permanent bonus to every saving throw and to AC) and level with [[Dust of Disappearance]] (Uncommon, single use, one guaranteed effect, free of an attunement slot). This covers a single save type for a single hour and then burns out. |
 | Attunement reason | None. Single use, one power, and no bonus to attack rolls, damage rolls, saving throws, or AC. |
-| PC connection | [[delmar-fisk]] and [[catarina-davirelli|Catarina Davirelli]] both roll Wisdom saves at a whisker over nothing, and one area effect aimed at that number takes the crew's back line out of a fight together. |
+| PC connection | [[delmar-fisk]] rolls a weak Wisdom save, so one area effect aimed at that number can take the crew's back line out of a fight. |
 | Current holder | Board stock at [[La Gatta]], stacked loose in the tin at 120 gp under the Seconds discount. |
 | Narrative hook | Nobody buys four of these for a quiet week, so a regular clearing the tin already knows what is coming. |
 

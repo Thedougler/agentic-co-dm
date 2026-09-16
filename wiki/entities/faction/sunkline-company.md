@@ -57,9 +57,7 @@ The [[tessarine-concordat]] backs Sunkline financially. The [[Shelfworks]] feeds
 
 - The crew finds the forged certificate first and chooses to expose it, collapsing Sunkline's funding before Adriana solves the design.
 - The crew finds the certificate and sits on it, or trades it for leverage instead. The forgery keeps aging toward discovery on its own.
-- Sunkline recruits [[catarina-davirelli]] to actually solve the pressure-valve problem before the clock fills, buying the forgery real cover.
 
-**PC connection:** [[catarina-davirelli]]. Her real engineering literacy is exactly what could catch that Sunkline's trial numbers don't add up, and exactly what Sunkline would want to co-opt to solve the design problem legitimately instead of faking it.
 
 **Quest link:** none yet.
 

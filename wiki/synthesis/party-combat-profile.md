@@ -14,7 +14,7 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "Party of 5 level-5 PCs. Closed-form 61.41 combined sustained DPR vs AC 15, 89.08 round-1 nova, 397 effective HP vs a +6 attacker. Effective CR Band unmeasured — the sim is unusable."
+summary: "Party of 4 level-5 PCs. Closed-form 52.61 combined sustained DPR vs AC 15, 65.08 round-1 nova, 328 effective HP vs a +6 attacker. Effective CR Band unmeasured — the sim is unusable."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -26,14 +26,14 @@ tier: supporting
 
 ## Fast Read
 
-Party of 5, all level 5 (tier 2). Combined sustained DPR vs AC 15:
-**61.41** `[calculated]` (Delmar 18.13, Crissdalynn 12.63, Jean-Claude
-11.60, Perrin 10.25, Catarina 8.80) — at-will routines only, no limited
-resources spent. Round-1 nova, everything burning: **89.08**
-`[calculated]`. Total effective HP vs a +6 attacker: **397**
+Party of 4, all level 5 (tier 2). Combined sustained DPR vs AC 15:
+**52.61** `[calculated]` (Delmar 18.13, Crissdalynn 12.63, Jean-Claude
+11.60, Perrin 10.25) — at-will routines only, no limited
+resources spent. Round-1 nova, everything burning: **65.08**
+`[calculated]`. Total effective HP vs a +6 attacker: **328**
 `[calculated]`, before any reaction mitigation. Critical weakness:
-CHA/INT saves are close to unprotected across four of five PCs, and the
-two concentration casters both save flat. **Effective CR Band:
+CHA/INT saves are close to unprotected across all four PCs, and the
+remaining concentration caster saves flat. **Effective CR Band:
 `[unknown]`** — it derives from party-vs-monster sweeps and the
 combat-sim engine is not trusted at this compile; the empirical band
 below carries the load instead.
@@ -51,7 +51,6 @@ light if the sheet is wrong.
 | Crissdalynn | 12.63 (Quarterstaff +7, bonus Unarmed +8) | 19.50 ([[Flurry of Blows]], 1 Focus Point) | 17 / 70 | CHA +0, INT +0 |
 | Jean-Claude | 11.60 (2× +1 Silent Shortbow +9) | 17.20 (+ Dreadful Strike 2d6, 2/long rest) | 16 / 80 | CHA -1, INT +0 |
 | Perrin | 10.25 ([[Green-Flame Blade]] +8) | 10.25 ([[Hex]] costs round 1's bonus action; 12.88 from round 2) | 18 / 109 | STR -1, and disadvantage on STR (Mortis) |
-| Catarina | 8.80 ([[Fire Bolt]] +9) | 24.00 ([[Scorching Ray]] 2nd + Eldritch Cannon Force Ballista) | 16 / 69 | CHA +0, WIS +1 |
 
 `[calculated]` throughout, closed-form against AC 15 for damage and a +6
 attacker for EHP, crits at 5% doubling dice. Reaction mitigation sits
@@ -61,22 +60,20 @@ per round ([[Uncanny Dodge]]), Crissdalynn takes 1d10+9
 1d6 from a roll five times per long rest (Cutting Words). All three
 raise real survivability well above the printed EHP.
 
-Focus-fire potential (round-1 single-target burst, all five, no
-advantage bought): **89.08** `[calculated]` — a solo boss needs more
-than 89 HP to survive round 1 against a clean focus.
+Focus-fire potential (round-1 single-target burst, all four, no
+advantage bought): **65.08** `[calculated]` — a solo boss needs more
+than 65 HP to survive round 1 against a clean focus.
 
 ## Weakness Map
 
-Structural: CHA and INT saves are unprotected — Catarina +0/+8,
-Crissdalynn +0/+0, Jean-Claude -1/+0, Delmar +2/+3; only Perrin's CHA
-+9 resists a charm line, and he alone cannot cover the party. Severity
-high, no counter in the party's current kit. Concentration runs through
-two casters, Perrin +3 and Catarina +5, neither with
-[[War Caster]] — a single focused hit drops
-[[Faerie Fire]] or [[Hex]]. Perrin's STR save is -1 with
+Structural: CHA and INT saves are unprotected — Crissdalynn +0/+0,
+Jean-Claude -1/+0, Delmar +2/+3; only Perrin's CHA +9 resists a charm
+line, and he alone cannot cover the party. Severity high, no counter in
+the party's current kit. Concentration runs through Perrin at +3 — a
+single focused hit drops [[Hex]]. Perrin's STR save is -1 with
 disadvantage on top, so grapples and shoves land on him almost at will.
-Party WIS averages +2.2, so a WIS-save AoE stun chain-disables the back
-line.
+Party WIS averages +2.25, so a WIS-save AoE stun chain-disables the
+back line.
 
 What will TPK this party: a legendary solo with two or more legendary
 actions per round that opens on the casters, or any encounter that
@@ -91,10 +88,7 @@ Inspiration (S04 restrain escape). Jean-Claude's Bardic-Inspiration-
 boosted save resists [[Ozzeth]]'s
 [[Dominate Person]] via Delmar (S06).
 [[Healing Word]] and [[Cure Wounds]] sustain
-the party (S04) `[session-04, session-06]`. Catarina's Faerie Fire is
-the party's advantage engine and costs a real action, concentration,
-and a target save — every nova figure above is computed *without* it,
-so a landed Faerie Fire is upside on top of the table.
+the party (S04) `[session-04, session-06]`.
 
 ## Effective CR Band
 
@@ -115,18 +109,17 @@ measurement.
 
 ## Encounter Design Parameters
 
-Give them: clustered melee targets for focus fire — the party's 89-point
+Give them: clustered melee targets for focus fire — the party's 65-point
 round-1 burst is its best trick and it wants bodies inside Crissdalynn
 and Delmar's reach. A flank to protect activates the lockdown play both
 have shown at the table. Pressure them: CHA- or INT-save effects
-(charm, banishment, psychic domination), a concentration hit on
-Catarina, a grappler on Perrin, and initiative — this party is far more
-fragile to a lost first round than its HP total suggests. Avoid: poison
-leverage on Perrin (resistant), and small squads with no control tools,
-which this party deletes. Tuning knobs: control density and initiative
-order move this party's odds most, not HP or AC — a monster that lands
-one save-or-suck on the back line changes the fight more than one with
-20 more HP.
+(charm, banishment, psychic domination), a grappler on Perrin, and
+initiative — this party is far more fragile to a lost first round than
+its HP total suggests. Avoid: poison leverage on Perrin (resistant), and
+small squads with no control tools, which this party deletes. Tuning
+knobs: control density and initiative order move this party's odds most,
+not HP or AC — a monster that lands one save-or-suck on the back line
+changes the fight more than one with 20 more HP.
 
 **Staleness rule:** stale if any PC profile, combatant block, or party
 loadout file changed after this page's `last_compiled`/`last_simulated`
