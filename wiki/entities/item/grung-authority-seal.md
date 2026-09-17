@@ -14,7 +14,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T07:20:00Z
-updated: 2026-09-13T07:20:00Z
+updated: 2026-09-16
 type: item
 reveal: unrevealed
 campaign: shattered-sea
@@ -25,9 +25,23 @@ relationships:
     type: related_to
   - target: "[[grung-clans]]"
     type: related_to
+invention: true
 ---
 # Grung - Authority Seal
 
 Spent [[grung-authority-seal|Grung Authority Seals]] lie half-buried near old grung bones in [[grasslands]]. Torn gold-script edges still show. They are no longer active.
 
 **Intelligence (Investigation) — `DC 13`** → The seals compelled red-caste or lower grung to go inland through Aruhe and report back their findings.
+
+### Layered order trail
+
+The oldest fragments repeat the existing inland reporting order. Later scraps record replacement parties after earlier groups stopped reporting. The newest readable layer directs a fresh party to identify and destroy two graves beneath a memorial tree. This is accepted Session 12 prep evidence, not table-witnessed history; it does not explain the [[memorial-grove|Death Bloom]], identify [[Hinewai]], or reveal the full reason the graves matter.
+
+The seals are spent and no longer compel anyone. Their evidence still makes the Gold-caste objective visible: keep sending lower-caste Grung inland until someone reaches the graves. See [[two-grave-orders]] for the complete clue progression.
+
+## Connections
+
+- [[grasslands]] — Where spent seals and old Grung bones can be found.
+- [[grung-clans]] — The caste and sealing context behind the authority markings.
+- [[jean-claude-tabarnack]] — Can recognize the authority marks.
+- [[two-grave-orders]] — The layered history these physical clues support.

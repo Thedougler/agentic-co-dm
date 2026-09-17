@@ -1,99 +1,68 @@
 ---
-title: Aruhe - River Slack Basin
+---
+title: Slack Basin
 category: entities
-type: place
-lifecycle: proposed
-reveal: unrevealed
-campaign: shattered-sea
-visibility: dm
 tags: [shattered-sea, aruhe, place]
-sources: ["wiki/_raw/Aruhe - River Slack Basin.md"]
-summary: Claimed backwater where trapped remains, a stranded survivor, and otter ownership make the river road dangerous.
+aliases: [Slack Basin, River Slack Basin, Aruhe - River Slack Basin]
+sources:
+  - "wiki/_archive/Aruhe - River Slack Basin.md"
+summary: Claimed river backwater — still turquoise bowl behind a rock lip, trapped remains, bloody-bank prints toward Cutoff Lip, otter ownership.
 provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.4
-lifecycle_changed: 2026-09-12
+base_confidence: 0.53
+lifecycle: proposed
+lifecycle_changed: "2026-09-13"
 tier: supporting
-created: 2026-09-12T00:00:00Z
-updated: 2026-09-12T00:00:00Z
+created: 2026-09-13
+updated: 2026-09-14
+type: place
+reveal: unrevealed
+campaign: shattered-sea
+visibility: dm
+kind: site
 region: aruhe
-aliases:
-  - Aruhe - River Slack Basin
-  - Slack Basin
-  - Otter Hole
-  - Slack Hole
-  - Holding Pool
-  - Rock-Lip Pool
-  - Pack Pool
-  - Claimed Slack
-relationships:
-  - target: "[[the-river]]"
-    type: related_to
-  - target: "[[river-otter]]"
-    type: related_to
-  - target: "[[cutoff-lip]]"
-    type: related_to
 ---
 # Slack Basin
 ![[aruhe-river-slack-basin.jpg|Slack Basin, still claimed pool behind the rock lip]]
 ## Overview
 > [!narration] Narration
-> The river breaks around a low stone lip here, white water hissing past while a clear turquoise bowl sits almost still beside it. Tall gold-green grass presses close to the wet sand, and jungle roots hang over the quiet side like dark fingers touching the water. A thin cane stands in a dark smear at the shore, with muddy prints climbing from it into the first trees. Out in the slack, a closed wooden pack and a torn maroon sleeve hang in the clear water instead of drifting toward the rapids. The pool smells of cool stone and wet mud, and every sound from the fast river seems to stop at the edge of this basin.
+> The river splits on a low stone lip — white water hissing past while a clear turquoise bowl sits almost still beside it. Tall gold-green grass presses wet sand; jungle roots hang like dark fingers over the quiet side. A thin cane stands in a dark smear at shore; muddy prints climb from it into the first trees. Out in the slack, a closed wooden pack and a torn maroon sleeve hang in clear water instead of drifting to the rapids. Cool stone and wet mud; fast-river sound stops at the basin edge.
 
 ---
 ## At a Glance
-Slack Basin is a claimed backwater of [[the-river]] inside [[grasslands]], just upvalley of [[line-bank|Line Bank]]. The live channel keeps moving over a rock lip. This scooped pool holds still. People already tried the water here and died, or they climbed out and left along the bloody bank into the trees. One inland straggler went back for a pack and is still in the slack. Stay on a ridge or grass edge and the basin can be skipped; drop to the wet sand and it remains slack water, remains that do not wash away, a living person at the hanging roots, and a forest-edge detour onto [[cutoff-lip]]. Downstream returns to Line Bank. [[river-otter|River Otters]] own this cut.
+Claimed backwater of [[the-river]] inside [[grasslands]], just upvalley of [[line-bank]]. Live channel keeps moving over the lip; this scooped pool holds still. People already tried this water — died, or climbed out along the bloody bank into trees toward [[cutoff-lip]]. Entering the slack is participating in the claim.
 
 ---
 ## If the party
 
-- **Follow the blood trail into the trees:** The living prints leave this water and climb onto [[cutoff-lip]].
-- **Walk back downstream:** [[line-bank|Line Bank]].
-- **Stay on a ridge or grass edge and skip the basin:** The slack, the remains, the isolated person, and the bloody-bank detour are lost.
-- **Walk the eight-foot grass:** The grass is Difficult Terrain and heavily obscures beyond 10 feet. Movement leaves a crushed corridor. The otters do not chase far overland.
-- **Search the cane, smear, and prints:** **Intelligence (Investigation) or Wisdom (Perception) — `DC 10`** → The cane is planted in the smear at the waterline, and living prints leave the slack with the blood into the trees. Searching them does not name how many people died or what the pack holds. Failure → The searcher spends time at the smear and learns only that the climb-out is fresh.
-- **Enter the slack, wade to the rock lip, or swim the white water:** Entering this water is participating. What sits in this pool belongs to the family. [[river-otter]]
-- **Pull the pack, the cloth, the dead body, or the isolated person:** That is taking from the river. The family hunts. Do not invent what the pack holds. [[taking-on-aruhe]]
-- **Fish this basin:** Surrounding life converges, hostile. [[taking-on-aruhe]] What comes from the river still belongs to the otters.
-- **Carry flesh out of this basin:** Surrounding life converges, hostile. [[taking-on-aruhe]]
+- **Follow blood trail into trees:** Living prints leave this water onto [[cutoff-lip]].
+- **Walk back downstream:** [[line-bank]].
+- **Skip basin on ridge or grass edge:** Lose slack, remains, isolated person, bloody-bank detour.
+- **Walk eight-foot grass:** Difficult Terrain; heavily obscures beyond 10 feet; crushed corridor.
+- **Search cane, smear, prints:** **Intelligence (Investigation) or Wisdom (Perception) — `DC 10`** → Cane planted in smear; prints climb toward Quiet lip; do not invent what the pack holds beyond visible cloth/pack in water.
+- **Enter slack, wade to lip, or swim white water:** Participating — what sits in this pool belongs to the river family.
+- **Pull pack, cloth, dead body, or isolated person:** Taking from the river; the family hunts. Do not invent contents or identities beyond sourced visible remains.
+- **Fish this basin / carry flesh out:** [[taking-on-aruhe]]; river take still belongs to otters.
 
 ---
 ## Who
 
-- [[river-otter|River Otters]]: This family owns this cut. They watch from the slack, keep the pool gin-clear, and treat anything in it as food or toy. They hold the hole. They do not chase far overland. They will not haul a kill onto [[razer-grass]].
-- One unnamed inland straggler is still in this slack, clinging to hanging roots: split lip, one missing boot, grey salt-stiff shirt. They went back for the pack after the group climbed out. The face-down body, pack, and cloth are what already failed the water. The blood trail is who left.
+- Otter family claim on this backwater.
+- Signs of people who failed the water; possible isolated survivor on bloody bank — resolve without inventing beyond play evidence.
 
 ---
 ## What
 
-- A still turquoise basin sits behind a rock lip while white water keeps moving on the far side. The slack is gin-clear over pale stone.
-- Wet sand and polished stone make a low shelf at the waterline. Jungle roots hang into the quiet side.
-- A thin cane stands in a dark blood smear at that shelf, pointing into the pool. Living prints leave beside the smear and climb into the trees.
-- A closed wooden pack, a maroon sleeve of clothing, and a face-down body in soaked olive cloth hold in the slack. An unnamed inland straggler clings to the hanging roots with hips in the water. The live current beyond the lip does not take them. Do not invent pack contents.
-- Eight-foot gold-green grass stands inland of the path. It hides a standing body and is Difficult Terrain.
-- A jungle wall closes the inland edge. The bloody-bank detour runs that way onto [[cutoff-lip]].
-- A thin column of smoke is visible upvalley in this same cut. It is not on this basin.
+- Rock lip; still turquoise bowl; cane in smear; pack and maroon sleeve in clear water; bloody prints into trees.
 
 ---
 ## Where
 
-- Grasslands river site upvalley of [[line-bank|Line Bank]]
-- Bloody-bank detour inland onto [[cutoff-lip]]
-- The live channel continues upvalley through [[grasslands]] along [[the-river]]
-- Downstream to [[line-bank|Line Bank]], then [[torn-crossing]], then [[landing-bank]]
-- Smoke inland in this same valley, not a place on this basin
+- Upvalley of [[line-bank]] in [[grasslands]] river road; bloody bank climbs to [[cutoff-lip]].
 
 ---
 ## Why
 
-- The river road stops being safe here.
-- Proof that people already died trying this water, that the living left around it, and that a body separated from the moving group becomes prey.
-
----
-## Art
-
-- ![[aruhe-river-slack-basin.jpg|Slack Basin identity image]]
-- ![[session-11-05-otter-hole-base.jpg|Slack Basin battlemap, still pool, rock lip, and bloody-bank trail]]
-- The identity image owns the public first look: still turquoise water behind a rock lip, pack and maroon cloth held in the slack, cane in dark mud, tall grass, hanging roots, and whitewater beyond.
+- Teach river ownership before Quiet — the still pool is not free salvage.

@@ -1,12 +1,15 @@
 ---
+---
 title: Young Bloodhawk
 aliases:
   - Young Bloodhawk
 category: entities
 tags: [shattered-sea, aruhe, creature]
-sources: ["wiki/_raw/Aruhe - Young Bloodhawk.md"]
+sources:
+  - "wiki/_archive/Aruhe - Young Bloodhawk.md"
+  - "wiki/_raw/Aruhe - Young Bloodhawk.md"
 created: 2026-09-12
-updated: 2026-09-12
+updated: 2026-09-14
 type: creature
 lifecycle: proposed
 reveal: unrevealed
@@ -15,12 +18,12 @@ visibility: dm
 region: aruhe
 role: skirmisher
 cr: 2
-summary: CR 2 juvenile Bloodhawk that uses speed and Flush Dive to drive exposed prey into an adult's hunting line.
+summary: Juvenile [[bloodhawk]] skirmisher (CR 2) that Flush-Dives flushed prey into the adult hunting line.
 provenance:
   extracted: 0.95
   inferred: 0.05
   ambiguous: 0.0
-base_confidence: 0.4
+base_confidence: 0.45
 lifecycle_changed: "2026-09-12"
 tier: supporting
 relationships:
@@ -30,7 +33,7 @@ relationships:
 # Young Bloodhawk
 
 > [!narration] Narration
-> Smaller charcoal hawks drop behind the adult in a ragged line, each with four wings, a red crest, and hooked talons too large for its still-narrow body. They do not call. They fold their wings only long enough to drive a flushed body down, then beat back toward the adult's hunting line.
+> Charcoal juveniles trail the adult in a loose file — four wings, a torn red crest, and talons oversized for a still-thin frame. They stay mute. Each stoops only long enough to shove a flushed body down, then claws back into the adult's lane.
 
 ## Statblock
 ![[young-bloodhawk-of-aruhe-flight.jpg|Young Bloodhawk over Aruhe]]
@@ -56,34 +59,34 @@ languages: "—"
 cr: 2
 traits:
   - name: Blood-Red Vigil
-    desc: "The young bloodhawk has Advantage on Wisdom (Perception) checks that rely on sight."
+    desc: "Advantage on Wisdom (Perception) checks that rely on sight."
   - name: Flyby
-    desc: "The young bloodhawk doesn't provoke Opportunity Attacks when it flies out of an enemy's reach."
+    desc: "Does not provoke Opportunity Attacks when it flies out of an enemy's reach."
 actions:
   - name: Multiattack
-    desc: "The young bloodhawk makes two attacks, using Beak and Talon in any combination."
+    desc: "Two attacks using Beak and Talon in any mix."
   - name: Beak
-    desc: "Melee Attack Roll: +6, reach 5 feet, one target. Hit: 8 (1d8 + 4) Piercing damage."
+    desc: "Melee Attack Roll: +6, reach 5 feet. Hit: 8 (1d8 + 4) Piercing."
   - name: Talon
-    desc: "Melee Attack Roll: +6, reach 5 feet, one target. Hit: 7 (1d6 + 4) Slashing damage."
+    desc: "Melee Attack Roll: +6, reach 5 feet. Hit: 7 (1d6 + 4) Slashing."
   - name: Flush Dive (Recharge 5–6)
-    desc: "The young bloodhawk flies up to its Fly Speed in a straight line toward one airborne creature it can see and makes one Beak attack against it. On a hit, the target is driven 30 feet straight down. If the target was already within 30 feet of the ground, terrace woods, or another solid surface, it crashes, takes 7 (2d6) Bludgeoning damage, and has the Prone condition."
+    desc: "Fly up to Fly Speed straight at one airborne creature it can see; one Beak attack. Hit: drive the target 30 feet straight down. If already within 30 feet of ground, terrace woods, or solid surface, the target crashes for 7 (2d6) Bludgeoning and is Prone."
 ```
 
 ## Behavior
 
-- **Habitat.** Young Bloodhawks stay in the open sky above [[aruhe]], following an adult through lake bowls, reef gaps, river openings, canopy breaks, and hard-lit grassland rims. They will not follow a dive into closed canopy or eight-foot grass.
-- **Behavior.** A young Bloodhawk circles behind an adult, waits for the larger bird to break a body out of cover, and then drops after whatever falls into the open.
-- **Diet.** It learns to take flushed fish, birds, and small land animals before it tries to carry its own prey. It follows the adult's hunt rather than contesting a large kill.
-- **Social Structure.** Young Bloodhawks remain with an adult's hunting line until they can hold a sky lane. Several may follow one dive, but each breaks toward a different exposed body rather than forming a coordinated pack.
+- **Habitat.** Open sky over [[aruhe]] / [[hungry-isle]]: lake bowls, reef gaps, river cuts, canopy breaks, sunlit grass rims. Will not chase under closed canopy or into eight-foot grass.
+- **Behavior.** Holds station behind an adult [[bloodhawk]]. When the adult tears prey from cover, the juvenile drops on whatever is left in the open.
+- **Diet.** Flushed fish, birds, and small land animals first; follows the adult rather than fighting over a big kill.
+- **Social Structure.** Stays in the adult line until it can own a sky lane. Several may chase one flush, each peeling toward a different exposed body — not a coordinated pack.
 
 ## Tactics
 
-- **Signs.** Several moving wing-shadows cross the ground behind a larger one, small crimson feathers catch in the canopy, and narrow talon gouges appear beside the adult's larger strikes.
-- **Instincts.** A young Bloodhawk keys on bodies already flushed, loud movement, and anyone flying toward the adult or the other young. It stops pressing when a target vanishes into closed canopy, eight-foot grass, or moving water.
-- **Tactics.** It follows the adult's Terminal Stoop, then uses Flush Dive on a body that remains airborne or has just been driven from cover. It uses Multiattack only when a target cannot reach cover, using Flyby to pass out of reach before it resets its angle, and abandons the line when the adult breaks off.
-- **Weaknesses.** It is pressure around the adult's hunt, not an equal rival. Dropping below the dive line, breaking sight with canopy or tall grass, and forcing it to land remove its Flush Dive advantage. It is slow and exposed on the ground.
-- **Aftermath.** A young Bloodhawk strike leaves small crimson feathers, paired gouges in terrace stone or bark, and a short fall line ending in bruised grass, broken fruit, or a body sprawled **Prone** beneath the adult's larger shadow.
+- **Signs.** Extra wing-shadows behind a larger bird; small crimson feathers in canopy; narrow talon cuts beside adult strikes.
+- **Instincts.** Keys on already-flushed bodies, noise, and flyers closing on the adult or other young. Breaks off when prey vanishes into canopy, tall grass, or moving water.
+- **Tactics.** Mirror the adult Terminal Stoop, then Flush Dive anything still airborne or just driven out. Multiattack only when cover is gone; Flyby to exit reach and reset. Leaves when the adult leaves.
+- **Weaknesses.** Support pressure, not a peer fight. Drop under the dive line, break line of sight with canopy or grass, or force a landing — Flush Dive dies. Grounded, it is slow and open.
+- **Aftermath.** Small crimson feathers, paired gouges in stone or bark, a short fall scar into bruised grass, split fruit, or a Prone body under the adult's shadow.
 
 ## Art
 ![[young-bloodhawk-of-aruhe-token.jpg|Young Bloodhawk FoundryVTT token]]

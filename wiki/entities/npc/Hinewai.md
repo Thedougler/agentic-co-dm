@@ -18,7 +18,7 @@ lifecycle: canon
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T06:23:47Z
-updated: 2026-09-12T00:00:00Z
+updated: 2026-09-16
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -81,6 +81,9 @@ flexGrow=1
 ### First meeting
 
 Hinewai receives visitors as **guests** while they look, listen, map, or pay respect. Play her as calm, proud, old, and courteous. She asks what they want from Aruhe before she explains anything.
+
+Hinewai does not appear to lecture the party about Gold-caste history; she appears when their choices bring them toward [[memorial-grove]], and she answers questions about the graves only as far as the party's respect and pressure require.
+
 
 **Sample line:** “You may look. You may not take.”
 ```
@@ -212,6 +215,9 @@ Hinewai took the old druid bargain past its breaking point. She fused her soul a
 | [[grung-and-the-making-of-aruhe]] | DM history of the crime and aftermath                          |
 | [[clear-lake]]            | Lakeward shelf and beginning of the root direction             |
 | [[the-marshes]]           | Wet country crossed by roots pointing toward the Grove         |
+| [[two-grave-orders]] | The later Grung order fragments point toward the two graves without explaining the Death Bloom. |
+| [[celia-parel]] | A practical survivor who records the dead and will not let an expedition turn them into anonymous scenery. |
+| [[oren-vask]] | A practical survivor who follows Aruhe's rules by choice while remaining wary of Hinewai's hatred of Grung. |
 
 ---
 

@@ -1,35 +1,45 @@
 ---
+---
 title: Black Lotus
 aliases:
+  - Black Lotus
   - Aruhe - Black Lotus
 category: entities
 tags: [shattered-sea, aruhe, item]
-sources: ["Aruhe - Black Lotus.md"]
+sources:
+  - "wiki/_archive/Aruhe - Black Lotus.md"
 created: 2026-09-12
-updated: 2026-09-12
+updated: 2026-09-14
 type: item
 lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 region: aruhe
-summary: Magic-feeding flora hazard that traps creatures, drains spell slots, and can yield a crystallized Black Lotus Heart.
+summary: Table-sized magic-feeding bloom that clamps shut, drains slots (then life), and may yield a [[black-lotus-heart]].
 kind: flora hazard
 ---
+# Black Lotus
+
 ![[aruhe-black-lotus.jpg]]
 
 > [!narration] Narration
-> A flower the size of a low table spreads out of the wet Aruhe growth, its black petals broad enough to cover the ground and curl over the moss at their edges. Rain beads on the slick surfaces, and thin violet veins glow up through them toward a tight crown of dark filaments in the center. Under the lowest petals, old ribs and finger bones show through the greenery beside patches of scorched plants; when nearby magic stirs, the bloom slowly leans toward it.
+> A bloom as wide as a low table has pushed out of wet island growth. Black petals sprawl and cup over moss; rain sits on them in bright beads. Violet threads glow toward a tight knot of dark filaments at the crown. Under the lowest flaps, old ribs and finger bones show through scorched plants. When magic stirs nearby, the whole flower leans that way.
 
-### Hazard
+## Hazard
 
-- **Trigger:** A creature enters within `10 feet`, touches the flower, or casts a spell within `30 feet`.
-- **Notice:** **Wisdom (Perception) or Intelligence (Nature) — `DC 15`** to notice old bones beneath the petals, scorched vegetation nearby, and the flower turning subtly toward magical effects.
-- **Behavior:** Black Lotuses feed on ambient magic as ordinary plants feed on sunlight. Strong magic draws their attention immediately.
-- **Ambush:** The lotus lashes shut around one creature within `10 feet`. The target makes a **Dexterity save — `DC 15`**. On a failure, the creature is **Restrained** inside the flower. On a success, the creature avoids being trapped.
-- **Magic Drain:** At the start of each trapped creature's turn, it loses one unexpended spell slot of the highest level it currently has available. The lotus visibly brightens as the magic disappears into its veins. A creature with no remaining spell slots, or without spellcasting, instead takes `4d6` necrotic damage.
-- **Life Drain:** Once the victim has no spell slots remaining, the damage increases to `6d6` necrotic at the start of each of its turns. The lotus regains hit points equal to the necrotic damage dealt.
-- **Escape:** As an Action, a **Restrained** creature can make a **Strength (Athletics) — `DC 16`** check to force the petals apart and escape. A creature outside the flower can deal `20` slashing or fire damage to the enclosing petals to tear them open.
-- **Magic Reaction:** Whenever a spell of 1st level or higher is cast within `30 feet`, the lotus has **Advantage** on its next Ambush attack or escape contest before the end of its next turn.
-- **Harvest:** A mature Black Lotus contains a dense knot of crystallized magical sap beneath its petals. After the lotus is killed, restrained, or otherwise rendered unable to close, a creature can spend `10 minutes` and make an **Intelligence (Arcana) or Wisdom (Survival) — `DC 16`** check. On a success, recover one **Black Lotus Heart**. On a failure, the stored magic discharges, the harvester takes `4d6` force damage, and the Heart is destroyed.
-- **Counterplay:** Stay outside `10 feet`, avoid casting within `30 feet`, burn or cut the enclosing petals from outside, bait the flower with expendable magic, or harvest only after the flower cannot close.
+- **Trigger:** A creature moves within `10 feet`, touches the flower, or casts a spell within `30 feet`.
+- **Notice:** **Wisdom (Perception) or Intelligence (Nature) — `DC 15`** → Bones under petals, scorched neighbors, and the subtle lean toward magic.
+- **Contact:** The lotus snaps shut on one creature within `10 feet`. **Dexterity — `DC 15`**; failure → **Restrained** inside. Success → slips free. While trapped, at the start of each of its turns it loses its highest remaining spell slot (lotus brightens). No slots / no casting → `4d6` necrotic instead. After slots are gone, damage becomes `6d6` necrotic and the lotus heals equal to that damage. Spells of 1st+ within `30 feet` grant the lotus **Advantage** on its next Ambush or escape contest before the end of its next turn.
+- **Careful Passage:** Stay beyond `10 feet`; do not cast within `30 feet`; bait with expendable magic from outside the clamp radius.
+- **Counterplay:** Action — **Strength (Athletics) — `DC 16`** to force petals open from inside. From outside, `20` slashing or fire damage to the enclosing petals tears them. Harvest only after the bloom cannot close: `10 minutes` + **Intelligence (Arcana) or Wisdom (Survival) — `DC 16`** → one [[black-lotus-heart]]; failure → `4d6` force and the Heart is ruined.
+
+## Connections
+
+- [[black-lotus-heart]] — Crystallized sap recovered from a disabled mature bloom.
+- [[lesser-black-lotus]] — Smaller terrace cousin with a different contact answer.
+- [[memorial-grove]] / wet Aruhe bands — Typical wet-growth placements.
+
+## Provenance
+
+Feeds on ambient magic the way ordinary plants take light; strong casting pulls its attention at once. Grung legend names these blooms among the Hungry Isle's killers.

@@ -1,89 +1,74 @@
 ---
+---
 title: Star Cut
-aliases:
-  - Aruhe - Quiet Forest Star Cut
 category: entities
 tags: [shattered-sea, aruhe, place]
-sources: ["Aruhe - Quiet Forest Star Cut.md"]
-created: 2026-09-12
-updated: 2026-09-12
-type: place
+aliases: [Star Cut, Quiet Forest Star Cut, Aruhe - Quiet Forest Star Cut]
+sources:
+  - "wiki/_archive/Aruhe - Quiet Forest Star Cut.md"
+summary: Night-watch aisle north of Spoke Ring — packed dirt aimed at a canopy star-slit, offset fire, west-wall guavas.
+provenance:
+  extracted: 1.0
+  inferred: 0.0
+  ambiguous: 0.0
+base_confidence: 0.53
 lifecycle: proposed
+lifecycle_changed: "2026-09-13"
+tier: supporting
+created: 2026-09-13
+updated: 2026-09-14
+type: place
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: site
 region: aruhe
-summary: Night-watch aisle north of Spoke Ring, with an offset fire, sleeping rolls, guavas, and a narrow opening to the stars.
 ---
 # Star Cut
 ![[aruhe-star-cut.jpg|Star Cut, night-watch aisle under a slit of stars]]
 ## Overview
 > [!narration] Narration
-> Packed dirt runs straight under the Quiet leaves, an aisle of wet black earth aimed at a narrow split of stars in the canopy. The fire does not sit in the road; it glows off to the east in a low ring of stones, with clay bowls catching ember light beside it. West of the aisle, sleeping rolls press against the jungle wall beneath heavy pink-gold guavas, some still ribbed on the branch and some already down in the leaf litter. The trees stand close enough to touch on both sides, and beyond the west roots a thin river talks under the drip from the leaves.
+> Wet black packed earth runs straight under Quiet leaves, aimed at one narrow split of stars. The fire is not in the road — it glows east in a low stone ring, clay bowls catching ember light. West, bedrolls press the jungle wall under heavy pink-gold [[giants-guava]], some still ribbed on the branch, some already down in litter. Trees touch both sides of the aisle; beyond the west roots a thin river talks under leaf-drip.
 
 ---
 ## At a Glance
-Star Cut is the night-watch aisle north of [[spoke-ring|Spoke Ring]], on the seam of [[the-quiet]], [[grasslands]], and [[the-river]]. Its identity is the straight sightline: packed dirt aimed north at one open strip of sky, a fire offset east of the path, and west-wall bedrolls under [[giants-guava|giant guava]] branches. Unlike Spoke Ring's round hub, center fire, and leaf roof that holds smoke, this site is linear and exposed to stars at the north mouth. Unlike [[cutoff-lip|Cutoff Lip]]'s knee palisade and sleep-shelf, there is no drumroot wall here. Stay under Spoke Ring's roof or turn back on the south aisle and this cut can be skipped. Walk the north spoke for a watch that can see sky, and it remains the aisle, the east fire, the west guavas, and a lane where someone at the coals can look straight into the dark.
+Night-watch aisle north of [[spoke-ring]] on the seam of [[the-quiet]], [[grasslands]], and [[the-river]]. Identity is the straight sightline: packed dirt to a sky slit, fire offset east, west-wall rolls under guava. Unlike Spoke Ring's round hub, smoke can rise here through the cut.
 
 ---
 ## If the party
 
-- **Follow the south aisle:** Packed dirt returns toward [[spoke-ring|Spoke Ring]]. Gold-green grass still shows beyond that hub, not on this aisle.
-- **Follow the north star-cut:** The packed dirt darkens into [[the-quiet]]. Garden talk from Spoke Ring still points that way. This is not [[memorial-grove]].
-- **Stay under Spoke Ring's leaf roof or turn back and skip this cut:** The aisle, the east fire, the west guavas, and the star-cut of sky are lost.
-- **Walk the packed aisle:** The dirt is ordinary ground. The wood beyond either jungle wall is Difficult Terrain and heavily obscures beyond 10 feet. A body in that wood is isolated from anyone who stayed on the aisle.
-- **Stand watch at the east fire, facing the star-cut:** That post is on packed dirt at the fire's north edge. Heat and woodsmoke sit here. The north mouth is a straight lane 40 feet to the coals.
-- **Climb the jungle wall into the star-cut:** **Strength (Athletics) — `DC 10`** → That climber reaches the crown split and the night sky above the aisle. Failure → That climber spends the round in hanging roots and stays on this floor.
-- **Search the fire, bowls, rolls, and fruit:** **Intelligence (Investigation)** or **Wisdom (Perception) — `DC 10`** → Clay bowls sit by the east stone ring. Sleeping rolls lie along both jungle walls, fewer than the people who argued at Spoke Ring. Fallen [[giants-guava]] sits in the west leaf litter. Living guavas still hang. Searching does not name the woman in the woods or how far any garden is. Failure → The searcher spends time at the coals and learns only that people sleep here.
-- **Take fruit at this aisle:** Fallen fruit is receiving. Plucking a living plant makes surrounding life converge, hostile. [[taking-on-aruhe]]
-  - **Intelligence (Nature) — identify**
-    - `DC 10` → Edible, not poison.
-    - `DC 15` or *Identify* → Exact effect: eating a fallen [[giants-guava]] sets a Primary Ability score to 25 for 1 hour.
-  - **Wisdom (Survival) — harvest**
-    - `DC 10` → Fallen ordinary take.
-    - `DC 15` → Ripe useful specimen.
-    - `DC 20` → Prize grade.
-    - Failure → Local fauna contest the take, or the living source is claimed.
-- **Fish, trap, or kill to carry flesh:** Surrounding life converges, hostile. [[taking-on-aruhe]] The west water still belongs to the river. This aisle is not [[river-slack-basin]].
+- **South aisle:** Back toward [[spoke-ring]] (grass still shows beyond that hub, not here).
+- **North star-cut:** Packed dirt darkens into deeper [[the-quiet]]; garden talk from Spoke Ring still points that way — not yet [[memorial-grove]].
+- **Skip this cut:** Lose aisle, east fire, west guavas, sky slit.
+- **Walk packed aisle:** Ordinary ground; wood beyond either wall Difficult Terrain, heavily obscures beyond 10 feet.
+- **Watch at east fire facing the star-cut:** Post on packed dirt at fire's north edge — heat and woodsmoke.
+- **Climb jungle wall into the star-cut:** **Strength (Athletics) — `DC 10`** → Reach crown split and night sky above the aisle.
+- **Search fire, bowls, rolls, fruit:** **Intelligence (Investigation) or Wisdom (Perception) — `DC 10`** → Clay bowls by the ring; rolls pressed west; fallen guava in litter.
+- **Take fruit:** Fallen = receiving. Living = [[taking-on-aruhe]].
+  - **Intelligence (Nature):** `DC 10` edible; `DC 15` or *Identify* → fallen [[giants-guava]] sets a Primary Ability score to 25 for 1 hour.
+  - **Wisdom (Survival) — harvest:** `DC 10` ordinary fallen; `DC 15` ripe useful; `DC 20` prize grade.
+- **Fish/trap/kill for flesh:** [[taking-on-aruhe]]; west water still river-owned.
 
 ---
 ## Who
 
-- Unnamed people from the Calveno wreck sleep along this aisle on the second night, fewer than the mouths that argued at [[spoke-ring|Spoke Ring]]. They came here because the hub's leaf roof hides the sky. Do not invent named survivors.
-- [[Hinewai]] is not standing on this aisle as a named body. Garden talk still points north of the star-cut. Do not name her, the graves, or [[memorial-grove]] at the table.
-- [[Deer-Stalker|Deer-Stalkers]] work the Quiet edge south of here. They will not walk [[razer-grass]]. Do not spawn one on this aisle.
+- Prior watch signs (rolls, bowls, fire) without named living campers on page.
+- Deeper Quiet pressure north; do not invent Grove mourners here.
 
 ---
 ## What
 
-- A packed north-south dirt aisle sits under Quiet leaves, with leaf litter on the floor and jungle walls close enough to touch. The leaf roof splits at the north end. Stars show in that cut.
-- The fire is offset east of the aisle, a live ring of stones with clay bowls beside it. Two sleeping rolls lie in that east light. Three more rolls lie against the west wall.
-- [[giants-guava]] hangs pink-gold and ribbed over the west wall, each fruit broad enough for two hands. Fallen guavas already sit in the leaf litter. Living stems still bow the branches.
-- West of the wall, a thin sheet of [[the-river]] talks through roots. The water is close enough to hear and drink, not open enough to make this a river camp.
-- South of this aisle the packed dirt returns toward [[spoke-ring|Spoke Ring]]. Gold-green grass is behind that hub, not standing on this floor.
-- The Quiet has no insect-saw and no bird chatter past the jungle walls. The star-cut is the only open sky on this stretch.
+- Straight packed aisle; offset east fire; west guavas and rolls; thin river talk beyond west roots.
 
 ---
 ## Where
 
-- **North:** The star-cut opens into deeper [[the-quiet]]. Garden talk points that way. This is the same valley, not a day's travel. This is not [[memorial-grove]].
-- **East:** More [[the-quiet]] follows the jungle wall past the fire. No established next named Quiet site on that wall.
-- **South:** Packed dirt returns onto [[spoke-ring|Spoke Ring]], then [[print-braid|Print Braid]]. Gold-green grass still shows at Spoke Ring's south mouth, not here.
-- **West:** Jungle wall, then a root-talk of [[the-river]]. This aisle is not [[river-slack-basin]].
+- **North:** Deeper [[the-quiet]].
+- **East:** Quiet wall past the fire.
+- **South:** [[spoke-ring]] → [[print-braid]].
+- **West:** Jungle wall, then root-talk of [[the-river]] (not [[river-slack-basin]]).
 
 ---
 ## Why
 
-- Spoke Ring's leaf roof hides the sky. This cut is the watch that can see it.
-- Fallen guavas sit already down on the west wall.
-- The north-south aisle is a straight lane from the star-cut to the east fire.
-
----
-## Art
-
-![[aruhe-star-cut.jpg|Star Cut identity image]]
-![[aruhe-star-cut-battlemap.jpg|Star Cut Foundry battlemap, north-south night aisle, east fire, west rolls and guavas]]
-![[session-11-09-theft-on-the-watch-base.jpg|Session 11-09 watch battlemap, north-south night aisle, east fire, west rolls and guavas, star-cut of sky]]
-- The identity image owns the public first look: a straight wet dirt aisle under Quiet leaves, the narrow star slit at the north mouth, warm coals offset east, west-wall sleeping rolls, pink-gold guavas, close jungle walls, and river sound through the west roots.
-- The Foundry battlemap owns this stretch for table play: top is north, right is east, bottom is south, and left is west. The star-cut is the north mouth. The stone fire sits east of the aisle. West holds sleeping rolls and fallen guavas. South is the packed return toward Spoke Ring. Use `36x64` squares in Foundry, with no baked grid.
+- Night sightline and offset watch — last readable Quiet camp before the wood closes.

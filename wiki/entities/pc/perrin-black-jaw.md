@@ -13,7 +13,7 @@ sources:
 summary: Warlock 2 / Lore Bard 3 who baited Aruhe hunts with illusions and took Tasha's laughter from a lesser black lotus.
 lifecycle: canon
 created: 2026-09-12
-updated: 2026-09-15
+updated: 2026-09-16
 type: pc
 reveal: revealed
 campaign: shattered-sea
@@ -26,6 +26,7 @@ ac: 19
 hp_max: 49
 init_mod: 4
 pp: 13
+senses: "blindsight 5 ft.; passive Perception 13"
 speed: "30 ft.; swim equal to walk"
 foundry_id: J9CeWsMCOahlafjx
 ---
@@ -84,6 +85,10 @@ Spell save DC 16. Spell attack +8. Charisma casting.
 
 Support and control caster with a Pact Blade option — Bardic Inspiration is the party multiplier · AC 19 · HP 49 · Achilles heel is a fragile frame (Strength -2) and focus fire on him or the drum.
 
+For Session 12, this close-range sense is the reliable counter to [[talon-skarn]]'s invisibility: Perrin must stay within 5 feet of [[crissdalynn-khinriss|Crissdalynn]] to detect Skarn before he reaches the [[fate-spinner]].
+
+This is a narrow table rule, not a replacement for Perception at range or a way to see through the island's cover.
+
 ### Counters & Synergy
 
 - **Hard counters.** Wrestling and shove lines against Strength -2; focus fire that removes the Inspiration multiplier.
@@ -100,6 +105,7 @@ Support and control caster with a Pact Blade option — Bardic Inspiration is th
 | Pack Tactics | When a creature he can see within 5 ft is hit by another creature, Reaction one weapon attack, Proficiency Bonus times per Short or Long Rest. |
 | Survivor | Advantage on saves against poisoned and disease; Resistance to Poison. |
 | Boneless | Move through Tiny spaces at half Speed; Advantage to escape Grapple or restrained. |
+| Whisker Blindsense | Perrin has Blindsight out to 5 feet. This sense does not see through Total Cover and cannot perceive beyond 5 feet. It can detect an Invisible creature within that range if there is an unobstructed path between them. |
 | Rattkin Variety (Swimmer) | Swim speed equal to walk. |
 
 ### Features

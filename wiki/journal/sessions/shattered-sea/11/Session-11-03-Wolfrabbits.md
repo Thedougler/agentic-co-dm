@@ -5,7 +5,7 @@ tags: [shattered-sea, session-prep]
 sources:
   - "journal/sessions/shattered-sea/11/Session-11-03-Wolfrabbits.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-15
 type: session-prep
 kind: cliffhanger
 lifecycle: proposed
@@ -16,6 +16,7 @@ session: 11
 status: ready
 date: 2026-09-06
 visibility: dm
+invention: true
 ---
 # Session 11 — Torn Crossing hunt
 
@@ -51,6 +52,12 @@ flexGrow=2
 ## Now
 
 The party starts in the muddy northbound corridor of [[torn-crossing]], facing north. The river lip is 20 feet west and 30 feet south. One [[Wolfrabbit]] crosses west 10 feet north of the party; a second crosses west 20 feet south. Twenty feet east, the [[spiguar]] crouches over a third striped body in the grass. One [[razer-grass]] stand is 15 feet west in the scour; two more are 25 feet east in the grass. Bank-woods begin 40 feet east. Living [[redheart-berry|red berries]] hang at the west wet margin. The upriver prints bend around the white stands and the Spiguar's grass before continuing north. A 30-foot move reaches the south lip and passes the rear runner.
+
+## Session art
+
+![[attachments/shattered-sea/sessions/session-11-03-delmar-carries-jean-claude-spiguar.png|Session 11 — Delmar carries Jean-Claude through the Spiguar hunt]]
+
+This is a session-scoped, comedic illustration of the established Spiguar exchange. It depicts Delmar carrying catatonic Jean-Claude in his coat while firing the blunderbuss; Perrin and Crissdalynn watch in confusion. The cooing, patting, and coat-harness staging are visual invention requested by the DM, not new mechanical or identity canon.
 
 ## Action cards
 

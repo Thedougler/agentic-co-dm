@@ -27,7 +27,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12
-updated: 2026-09-15
+updated: 2026-09-16
 type: pc
 reveal: revealed
 campaign: shattered-sea
@@ -67,6 +67,8 @@ foundry_id: kS3wQ76uMq1QgDCw
 - [[Uncertainty]] — Aboard at [[aruhe]].
 - [[crissdalynn-khinriss]] — Ally; crow Aarakocra who tests his bird phobia most directly.
 - [[perrin-black-jaw]] · [[delmar-fisk]] — Crew allies.
+
+- [[two-grave-orders]] — His carried [[grung-authority-seal]] and Grung upbringing give him the strongest route to recognizing how the old orders changed from reporting to replacing the dead and finally targeting two graves.
 
 ## Sheet
 

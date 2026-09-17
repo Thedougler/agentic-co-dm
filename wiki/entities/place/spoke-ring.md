@@ -1,80 +1,72 @@
 ---
+---
 title: Spoke Ring
-aliases:
-  - Aruhe - Quiet Forest Spoke Ring
 category: entities
 tags: [shattered-sea, aruhe, place]
-sources: ["Aruhe - Quiet Forest Spoke Ring.md"]
-created: 2026-09-12
-updated: 2026-09-12
-type: place
+aliases: [Spoke Ring, Quiet Forest Spoke Ring, Aruhe - Quiet Forest Spoke Ring]
+sources:
+  - "wiki/_archive/Aruhe - Quiet Forest Spoke Ring.md"
+summary: Radial Quiet fire hub — survivor mats, fallen stonepears, and spokes splitting toward grass, river root-cut, and Star Cut.
+provenance:
+  extracted: 1.0
+  inferred: 0.0
+  ambiguous: 0.0
+base_confidence: 0.53
 lifecycle: proposed
+lifecycle_changed: "2026-09-13"
+tier: supporting
+created: 2026-09-13
+updated: 2026-09-14
+type: place
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: site
 region: aruhe
-summary: Radial Quiet Forest fire hub where survivor tracks, fallen stonepears, and spokes divide routes toward grassland, river, and deeper woods.
 ---
 # Spoke Ring
 ![[aruhe-spoke-ring.jpg|Spoke Ring, radial fire hub under Quiet leaves]]
 ## Overview
 > [!narration] Narration
-> Packed dirt holds a round hub under Quiet leaves, wide enough for a fire, with narrow trails cutting away through buttress-root trunks like spokes from a ring of river stones. Stonepears hang above it in grey-green scales, heavy enough to bow the mossed branches; fallen fruit sits beside the coals as if it were placed there. South, one spoke opens onto a hot slice of gold-green grass. West, another drops through hanging roots to a strip of clear water, close enough to hear but not wide enough to make this a river camp. North, the spokes darken under leaves where the smoke cannot rise and every small grassland sound stops at the mouths of the trails.
+> Under Quiet leaves a round packed hub waits, fire-wide, with narrow trails cutting out through buttress trunks like spokes from a river-stone ring. [[stonepear]] hang in grey-green scales, heavy enough to bow mossed limbs; fallen fruit lies by the coals as if set there. One south spoke opens onto a hot gold-green grass slice. A west spoke drops through hanging roots to a strip of clear water — heard, not wide enough for a river camp. North spokes darken under leaf where smoke cannot rise and grassland noise dies at the trail mouths.
 
 ---
 ## At a Glance
-Spoke Ring is the first Quiet hub north of [[print-braid|Print Braid]], where game trails meet on the seam of [[the-quiet]], [[grasslands]], and a small root-cut of [[the-river]]. Unlike Print Braid's grass braid and cobble ring, or [[cutoff-lip|Cutoff Lip]]'s packed sleep-shelf and knee palisade, this site is a radial dirt star under leaf roof: a live stone fire at the center, four mats set at equal remove, heavy stonepears overhead, and exits that offer different kinds of wrong direction. Stay on a grassland ridge or turn back on Print Braid and the hub can be skipped; walk the inland prints into the wood and it remains the fire ring, mats, fallen stonepears, and spokes that do not all want the same night. The inland group stopped here. The smoke the prints followed is this fire.
+First Quiet hub north of [[print-braid]] on the seam of [[the-quiet]], [[grasslands]], and a root-cut of [[the-river]]. Unlike Print Braid's grass braid or [[cutoff-lip]]'s sleep-shelf, identity is the radial fire and spoke choices. Skip the hub and lose ring, mats, fruit, and split.
 
 ---
 ## If the party
 
-- **Follow the south spoke:** Packed prints return through the last gold-green onto [[print-braid|Print Braid]].
-- **Follow a north spoke:** Packed dirt opens onto [[star-cut|Star Cut]]. Garden talk still points past that aisle. This is not [[memorial-grove]].
-- **Stay on a ridge or turn back on Print Braid and skip the hub:** The fire ring, mats, stonepears, and split at this fire are lost.
-- **Walk the packed hub:** The dirt around the fire is ordinary ground. The wood beyond the trail mouths is Difficult Terrain and heavily obscures beyond 10 feet.
-- **Walk a spoke off the ring:** Wet leaf and hanging roots are Difficult Terrain. The wood heavily obscures beyond 10 feet. A body on a spoke is isolated from anyone who stayed at the fire.
-- **Search the fire ring, mats, and fruit:** **Intelligence (Investigation)** or **Wisdom (Perception) — `DC 10`** → Four sleeping mats lie about 10 feet out from a live stone ring, with fewer bedrolls than the crushed prints entering from the south. Fallen [[stonepear]] sits by the coals. Living stonepears still hang. Searching does not name the woman in the woods or how far any garden is. Failure → The searcher spends time at the ring and learns only that people sleep here.
-- **Take fruit at this hub:** Fallen fruit is receiving. Plucking a living plant makes surrounding life converge, hostile. [[taking-on-aruhe]]
-  - **Intelligence (Nature) — identify**
-    - `DC 10` → Edible, not poison.
-    - `DC 15` or *Identify* → Exact effect: eating a fallen [[stonepear]] is a Bonus Action and grants **Resistance to all damage** for 1 minute.
-- **Fish, trap, or kill to carry flesh:** Surrounding life converges, hostile. [[taking-on-aruhe]] The west spoke still belongs to the river. This hub is not [[river-slack-basin]].
+- **South spoke:** Back through last gold-green onto [[print-braid]].
+- **North spoke:** Onto [[star-cut]]; garden talk still points past that aisle — not yet [[memorial-grove]].
+- **Skip hub:** Lose fire ring, mats, stonepears, split.
+- **Walk packed hub:** Ordinary ground at the fire; wood beyond trail mouths is Difficult Terrain, heavily obscures beyond 10 feet.
+- **Walk a spoke:** Wet leaf and hanging roots Difficult Terrain; heavy obscure beyond 10 feet.
+- **Search fire, mats, fruit:** **Intelligence (Investigation) or Wisdom (Perception) — `DC 10`** → Four sleeping mats by the ring; fallen [[stonepear]] placed, not growing; coals cold enough to read prior watch.
+- **Take fruit:** Fallen = receiving. Living plant = [[taking-on-aruhe]].
+  - **Intelligence (Nature):** `DC 10` edible; `DC 15` or *Identify* → fallen [[stonepear]] Bonus Action, **Resistance to all damage** for 1 minute.
+- **Fish/trap/kill for flesh:** [[taking-on-aruhe]]; west spoke water still belongs to the river.
 
 ---
 ## Who
 
-- Unnamed people from the Calveno wreck sit at this fire, fewer than the tracks that led here. They argue in half-voices over a woman in the woods and a garden. They look into the spokes when the branches move. Do not invent named survivors.
-- [[Hinewai]] is not standing at this fire as a named body. She is courteous to guests. She is drawing these people inland toward [[memorial-grove]], which is still far beyond tonight. Do not name her, the graves, or the Grove at the table.
-- [[Deer-Stalker|Deer-Stalkers]] work the Quiet edge south of here. They will not walk [[razer-grass]]. Do not spawn one on this hub.
+- Empty of living campers; mats and fruit placement show prior survivors.
+- Quiet predators may watch from spoke mouths — do not invent named occupants beyond sourced ecology.
 
 ---
 ## What
 
-- A round packed-dirt hub sits under Quiet leaves, with a live fire ring of wet river stones at the center. Smoke pools beneath the leaf roof instead of rising as a column.
-- The spokes are the landmark: narrow packed trails radiate from the fire through buttress-root trunks. The south spoke still holds crushed prints from [[print-braid|Print Braid]]. North spokes open onto [[star-cut|Star Cut]]. The west spoke drops through hanging roots toward a narrow strip of [[the-river]].
-- Four sleeping mats lie about 10 feet from the ring: woven fiber with a rolled blanket, a dark green pad, a rust pillow, and a grey pillow. Their spacing makes the hub feel measured, not accidental.
-- [[stonepear]] hangs from mossed branches directly over the ring. Fallen fruit already down by the coals is receiving. Living stems still hang above the same fire.
-- The west water is close but secondary: enough clear flow for drinking, washing, and listening through roots, not enough open channel to invite otter play as the main scene.
-- Gold-green grass still shows between the last trunks on the south spoke. That is the last grassland light. The Quiet has no insect-saw and no bird chatter past the trail mouths.
+- River-stone fire ring; four mats; hanging and fallen [[stonepear]]; radial spokes to grass, river root-cut, and deeper Quiet.
 
 ---
 ## Where
 
-- **North:** North spokes open onto [[star-cut|Star Cut]]. Garden talk still points past that aisle. This is the same valley, not a day's travel. This is not [[memorial-grove]].
-- **East:** More [[the-quiet]] follows the jungle wall. No established next named Quiet site on that trail yet.
-- **South:** Packed prints return onto [[print-braid|Print Braid]], then [[cutoff-lip|Cutoff Lip]]. Gold-green grass still shows at this south mouth.
-- **West:** A root-cut drops to [[the-river]]. Water talks through those roots. This hub is not [[river-slack-basin]].
+- **North:** [[star-cut]].
+- **East:** More [[the-quiet]] along jungle wall.
+- **South:** [[print-braid]] → [[cutoff-lip]].
+- **West:** Root-cut to [[the-river]] (not [[river-slack-basin]]).
 
 ---
 ## Why
 
-- The smoke the inland prints followed is this fire.
-- Fallen stonepears sit already down by the coals.
-- The radial hub turns the route into a choice: grass behind, root-cut water beside, and several darker Quiet spokes ahead.
-
----
-## Art
-
-- ![[aruhe-spoke-ring-battlemap.jpg|Spoke Ring battlemap, radial fire hub under Quiet leaves]]
-- The battlemap owns this stretch: top is north, right is east, bottom is south, and left is west. The fire ring sits at the hub. South is the grassland mouth back to Print Braid. West is the river root-cut. North is [[star-cut|Star Cut]].
+- First choice-node under Quiet leaves — which spoke, and whether fallen fruit is enough.

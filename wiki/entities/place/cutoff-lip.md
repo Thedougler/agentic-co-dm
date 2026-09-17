@@ -1,79 +1,71 @@
 ---
+---
 title: Cutoff Lip
-aliases:
-  - Aruhe - Quiet Forest Cutoff Lip
 category: entities
 tags: [shattered-sea, aruhe, place]
-sources: ["Aruhe - Quiet Forest Cutoff Lip.md"]
-created: 2026-09-12
-updated: 2026-09-12
-type: place
+aliases: [Cutoff Lip, Quiet Forest Cutoff Lip, Aruhe - Quiet Forest Cutoff Lip]
+sources:
+  - "wiki/_archive/Aruhe - Quiet Forest Cutoff Lip.md"
+summary: Dry packed shelf on the Quiet–grassland seam — knee-root wall, downslope seep, Deer-Stalker signs, and the first silent wood.
+provenance:
+  extracted: 1.0
+  inferred: 0.0
+  ambiguous: 0.0
+base_confidence: 0.53
 lifecycle: proposed
+lifecycle_changed: "2026-09-13"
+tier: supporting
+created: 2026-09-13
+updated: 2026-09-14
+type: place
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: site
 region: aruhe
-summary: Dry packed shelf at the Quiet grassland seam, where knee-roots, a seep, and Deer-Stalker signs mark the first silent forest edge.
 ---
 # Cutoff Lip
 ![[aruhe-cutoff-lip.jpg|Cutoff Lip, hollow knee-roots at the Quiet grassland seam]]
 ## Overview
 > [!narration] Narration
-> Packed dirt holds a shelf wide enough to sleep on between the gold-green grass slope and the first dark Quiet trunks. Hollow knee-roots stand chest-high along the wood in a pale open-mouthed wall, and a trail of crushed prints keeps to that lip instead of dropping back to the water. Downslope, a rock seep threads through the grass and flashes between black stones. Past the knees the small sounds stop, and the only drip is water off leaf onto packed dirt.
+> A sleep-wide packed shelf sits between gold-green grass slope and the first dark Quiet trunks. Hollow knee-roots stand chest-high along the wood like a pale open-mouthed fence. Crushed prints hug that lip instead of falling back to water. Downslope, a rock seep flashes between black stones in the grass. Past the knees, small grassland noise dies; only leaf-drip onto dirt remains.
 
 ---
 ## At a Glance
-Cutoff Lip is the first Quiet, a dry packed print shelf above a downslope seep on the seam of [[the-quiet]], [[grasslands]], and [[the-river]], inland of [[river-slack-basin|Slack Basin]]. Unlike the river cuts, this site is about the narrow shelf: grass and water fall away west, hollow knee-roots wall the east, and the usable path stays between them. Stay on a ridge or drop back to the water and this shelf can be skipped; camp the packed dirt and it remains prints, knee-roots, a root-bowl just inside the wood, and cover that hides a standing body. The bloody-bank detour from Slack Basin climbs onto this lip. The prints keep north along it toward inland smoke.
+First Quiet shelf inland of [[river-slack-basin]]: seam of [[the-quiet]], [[grasslands]], and [[the-river]]. Identity is the narrow lip — grass and water fall west, knee-roots wall east, usable path between. Ridge or river skip loses the shelf; camp the packed dirt and keep prints, knees, seep, and Deer-Stalker sign.
 
 ---
 ## If the party
 
-- **Follow the prints north along this lip:** The trail stays on packed dirt onto [[print-braid]], then [[spoke-ring|Spoke Ring]].
-- **Walk back south:** [[river-slack-basin|Slack Basin]].
-- **Stay on a ridge or drop to the river and skip the shelf:** The knee palisade, the packed camp, and the root-bowl are lost.
-- **Stand watch at the knee palisade:** That post is 15 feet into the wood from the packed shelf. Dim light and foliage. A body there is isolated from camp.
-- **Step through the knee-roots into the Quiet:** The palisade is Difficult Terrain. Past it, the wood heavily obscures beyond 10 feet. The hollow knees boom if a heavy body hits them.
-- **Search the knees, bark, and root-bowl:** **Intelligence (Investigation)** or **Wisdom (Perception) — `DC 12`** → White wood shows at shoulder height on the first trunks, with dark hair and dry velvet caught in the tears. The root-bowl past the palisade holds stained leaf and old blood in the hollow. Searching does not name what hunts here. Failure → The searcher spends time at the knees and learns only that something heavy uses this palisade.
-- **Take flesh from a kill on this lip:** Surrounding life converges, hostile. [[taking-on-aruhe]]
-- **Pluck a living plant under the first trunks:** Surrounding life converges, hostile. [[taking-on-aruhe]]
-- **Fish the downslope river:** Surrounding life converges, hostile. [[taking-on-aruhe]] That water still belongs farther downslope. This lip is not [[river-slack-basin]].
+- **Follow prints north along the lip:** Onto [[print-braid]], then [[spoke-ring]].
+- **Walk back south:** [[river-slack-basin]].
+- **Skip the shelf (ridge or drop to river):** Lose knee palisade, packed camp, root-bowl.
+- **Stand watch at the knee palisade:** Post is 15 feet into the wood from the shelf — dim light, foliage; isolated from the packed camp.
+- **Step through knees into Quiet:** Palisade is Difficult Terrain; wood heavily obscures beyond 10 feet.
+- **Search knees, bark, root-bowl:** **Intelligence (Investigation) or Wisdom (Perception) — `DC 12`** → White wood at shoulder height, scraped bark, a root bowl with old blood and small bone — [[deer-stalker]] sign, not a fresh kill scene inventable beyond sourced marks.
+- **Take flesh / pluck living plant / fish downslope river:** Hostile converge ([[taking-on-aruhe]]). Downslope water still belongs farther down; this lip is not the claim.
 
 ---
 ## Who
 
-- [[Deer-Stalker|Deer-Stalkers]] work this lip. They use the knee palisade and the root-bowl. They will not walk [[razer-grass]]. They retreat from a grouped camp into deeper [[the-quiet]].
-- No one from the inland group is here now. Packed prints and a hard dirt shelf show they slept and kept going toward the smoke.
+- No campers now. Prints climb from Slack Basin's bloody bank.
+- [[deer-stalker]] sign on the knee wall; the Quiet beyond holds silence.
 
 ---
 ## What
 
-- A packed print shelf sits under the first Quiet trunks. It is wide enough for a crew to sleep. The dirt is hard with old tracks. There is no fire ring on this lip.
-- Hollow knee-roots stand chest-high in a palisade along the east edge of the shelf. The wood is thin and dark inside. A heavy body striking them makes a drum boom, then the Quiet takes the sound.
-- Shoulder-height bark on the first trunks is torn to white wood. Dark hair and dry velvet hang in those tears.
-- A root-bowl opens 15 feet past the palisade, a hollow of stained leaf between knees. Interrupted kills collect there.
-- Gold-green grass still stands downslope to the west, thinning toward a rock seep of [[the-river]].
-- Past the knees, the Quiet has no insect-saw and no bird chatter. Sight dies in a few paces.
-- A thin column of smoke stands up-valley along this same lip. It is not on this shelf.
+- Packed sleep-shelf; chest-high hollow knee-roots; downslope rock seep; crushed print trail.
+- First silence line of [[the-quiet]].
 
 ---
 ## Where
 
-- **North:** Packed prints follow this lip onto [[print-braid|Print Braid]], then [[spoke-ring|Spoke Ring]]. This is the same valley, not a day's travel. The hub is not on this lip.
-- **East:** [[the-quiet]] interior past the knee palisade. No established next named site on that trail yet.
-- **South:** The bloody-bank prints return toward [[river-slack-basin|Slack Basin]] and the grassland river, the way the detour climbed.
-- **West:** Downslope [[grasslands]] and [[the-river]] at the rock seep. Slack Basin is the claimed water behind this lip, not this shelf.
+- **North:** [[print-braid]] → [[spoke-ring]] (same valley).
+- **East:** [[the-quiet]] past the palisade.
+- **South:** Bloody-bank return to [[river-slack-basin]].
+- **West:** Downslope [[grasslands]] / [[the-river]] seep; Slack Basin is the claimed water behind this lip, not the shelf.
 
 ---
 ## Why
 
-- First dry ground after the otter hole.
-- The packed prints keep going toward the smoke.
-- The Quiet's silence starts at the knee palisade.
-
----
-## Art
-
-- ![[aruhe-cutoff-lip.jpg|Cutoff Lip identity image]]
-- ![[session-11-06-cutoff-lip-base.jpg|Cutoff Lip battlemap, packed shelf, knee-root palisade, grass slope, seep, and root-bowl]]
-- The identity image owns the public first look: a dry shelf between gold-green grass and the first Quiet trunks, hollow pale knee-roots, crushed prints, torn white bark, a downslope seep, and the silence boundary beyond the knees.
+- Mark the first Quiet edge after the river claim — choose silence wood versus grass/river road.
