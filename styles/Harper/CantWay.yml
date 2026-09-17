@@ -10,7 +10,6 @@ extends: substitution
 message: "Did you mean `wait`?"
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
 swap:

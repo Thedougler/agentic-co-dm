@@ -10,7 +10,6 @@ extends: existence
 message: "Did you mean `at the very least`?"
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

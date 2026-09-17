@@ -10,7 +10,6 @@ extends: substitution
 message: "Use `them` when the pronoun follows a preposition or transitive verb."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
 swap:

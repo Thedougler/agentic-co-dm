@@ -10,7 +10,6 @@ extends: existence
 message: "This word choice looks off for this meaning."
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

@@ -10,7 +10,6 @@ extends: existence
 message: "In the context of tradeoffs, use `at the expense of`. `Expanse` means "
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

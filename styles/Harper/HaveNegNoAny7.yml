@@ -10,8 +10,6 @@ extends: sequence
 message: "This negative form sounds nonstandard; use `any` after the negated auxiliary."
 level: warning
 ignorecase: true
-model: harper
-matchcase: true
 action:
   name: replace
   params:

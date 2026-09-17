@@ -10,7 +10,6 @@ extends: existence
 message: "Avoid redundancy."
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

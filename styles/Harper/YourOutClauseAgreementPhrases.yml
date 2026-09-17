@@ -10,7 +10,6 @@ extends: existence
 message: "Use the contraction for `you are` in this clause."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

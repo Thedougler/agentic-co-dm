@@ -10,7 +10,6 @@ extends: existence
 message: "`Highly-kept` is not standard. To describe secrets, `well-kept` is the most used phrase."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

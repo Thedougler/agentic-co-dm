@@ -8,8 +8,6 @@ extends: sequence
 message: "Did you mean `kit` (a set of items) instead of “kid”?"
 level: warning
 ignorecase: true
-model: harper
-matchcase: true
 action:
   name: replace
   params:

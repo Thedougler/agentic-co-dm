@@ -10,7 +10,6 @@ extends: existence
 message: "In this idiom, `ditch` is a noun and a hyphen is needed."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

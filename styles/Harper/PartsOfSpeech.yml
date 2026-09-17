@@ -10,7 +10,6 @@ extends: existence
 message: "The correct plural is `parts of speech`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

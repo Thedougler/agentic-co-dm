@@ -10,7 +10,6 @@ extends: existence
 message: "A `fact` is something that is true. Did you mean a `claim`, `story`, `allegation`, or etc.?"
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

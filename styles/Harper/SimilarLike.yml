@@ -10,7 +10,6 @@ extends: existence
 message: "Prefer 'similar to' instead of 'similar like'."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

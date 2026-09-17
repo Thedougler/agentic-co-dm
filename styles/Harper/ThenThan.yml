@@ -30,7 +30,6 @@ extends: existence
 message: "Use `than` for comparisons."
 level: warning
 ignorecase: true
-matchcase: true
 nonword: true
 action:
   name: replace

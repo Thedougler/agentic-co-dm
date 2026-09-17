@@ -10,6 +10,8 @@ Creative linting is the repository-owned validation layer for generated wiki and
 - `tools/creative_lint/` owns the finding contract, registry, bundle resolution, adapters, symbolic checks, waivers, shadow telemetry, and repair loop.
 - `scripts/wiki-lint` retains its existing no-subcommand structural mode and lazily loads creative lint only for `task`, `file`, `corpus`, `changed`, `rule`, and `candidate`.
 
+The Vale adapter always passes the repository `.vale.ini` and filters execution to `CoDM.*` rules for creative runs. This keeps corpus lint deterministic and fast while leaving package selection and path scopes owned by `.vale.ini`.
+
 ## Finding and status contract
 
 Every evaluator emits `rule_id`, `result`, `severity`, `location`, `evidence`, `reason`, `repair_target`, and `evaluator`. `result` is `pass`, `fail`, or `abstain`; unavailable semantic services use `abstain` and never silently pass.

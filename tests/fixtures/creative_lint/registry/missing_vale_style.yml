@@ -1,0 +1,10 @@
+rules:
+  - id: TEST001
+    title: Missing style
+    category: agency
+    scope: content
+    severity: WARN
+    evaluator: vale
+    lifecycle: ACTIVE
+    vale_style: CoDM/MISSING999
+    message: Missing style

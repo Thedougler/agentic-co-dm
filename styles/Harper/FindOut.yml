@@ -10,8 +10,6 @@ extends: sequence
 message: "Use `find` instead of `find out` when you mean to discover something directly."
 level: suggestion
 ignorecase: true
-model: harper
-matchcase: true
 action:
   name: replace
   params:

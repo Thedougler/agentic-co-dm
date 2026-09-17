@@ -1,0 +1,9 @@
+rules:
+  - id: TEST001
+    title: Invalid enum
+    category: unknown
+    scope: content
+    severity: WARN
+    evaluator: symbolic
+    lifecycle: ACTIVE
+    message: Invalid enum

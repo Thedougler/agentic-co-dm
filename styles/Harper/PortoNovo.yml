@@ -10,7 +10,6 @@ extends: existence
 message: "The official spelling is hyphenated."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

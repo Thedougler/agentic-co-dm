@@ -11,8 +11,6 @@ extends: sequence
 message: "Did you mean `tale` (story)?"
 level: warning
 ignorecase: true
-model: harper
-matchcase: true
 action:
   name: replace
   params:

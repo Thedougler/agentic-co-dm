@@ -10,7 +10,6 @@ extends: existence
 message: "Consider simplifying to `all the`."
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

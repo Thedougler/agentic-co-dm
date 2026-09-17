@@ -23,7 +23,6 @@ extends: substitution
 message: "Use %s: `scrape` means to extract, `scrap` means to discard."
 level: warning
 ignorecase: true
-matchcase: true
 nonword: true
 action:
   name: replace

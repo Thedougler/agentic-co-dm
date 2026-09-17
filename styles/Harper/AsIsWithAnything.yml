@@ -10,7 +10,6 @@ extends: existence
 message: "The phrase `as is with anything` is ungrammatical. Use `as with anything` or `as is the case with anything`."
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

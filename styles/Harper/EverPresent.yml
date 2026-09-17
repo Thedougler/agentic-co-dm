@@ -10,7 +10,6 @@ extends: existence
 message: "Hyphenate `ever-present` when it functions as a compound adjective."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

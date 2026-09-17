@@ -10,7 +10,6 @@ extends: substitution
 message: "Drop the `h` after these anatomical or wiring descriptors; the structure is a `cord`."
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
 swap:

@@ -1,0 +1,13 @@
+rules:
+  - id: TEST001
+    title: Test rule
+    category: agency
+    scope: content
+    severity: WARN
+    evaluator: symbolic
+    lifecycle: ACTIVE
+    message: Test message
+    repair: Test repair
+    tags: [fixture]
+    conflicts: []
+    depends: []

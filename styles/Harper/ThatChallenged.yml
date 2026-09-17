@@ -10,7 +10,6 @@ extends: existence
 message: "Use `that challenged` for correct relative clause."
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

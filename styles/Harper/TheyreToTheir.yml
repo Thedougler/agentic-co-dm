@@ -10,7 +10,6 @@ extends: substitution
 message: "Did you mean `their`?"
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
 swap:

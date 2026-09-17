@@ -10,7 +10,6 @@ extends: existence
 message: "Prefer the standard phrasing `all of a sudden`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

@@ -49,6 +49,10 @@ __pycache__/
 *.egg-info/
 .venv/
 venv/
+
+# Node / test outputs
+node_modules/
+coverage/
 dist/
 
 # Creative lint shadow telemetry

@@ -10,8 +10,6 @@ extends: sequence
 message: "This collocation usually takes `of` rather than `off`."
 level: warning
 ignorecase: true
-model: harper
-matchcase: true
 action:
   name: replace
   params:

@@ -1,0 +1,17 @@
+rules:
+  - id: TEST001
+    title: First
+    category: agency
+    scope: content
+    severity: WARN
+    evaluator: symbolic
+    lifecycle: ACTIVE
+    message: First
+  - id: TEST001
+    title: Duplicate
+    category: agency
+    scope: content
+    severity: WARN
+    evaluator: symbolic
+    lifecycle: ACTIVE
+    message: Duplicate

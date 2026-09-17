@@ -23,7 +23,6 @@ extends: substitution
 message: "Did you mean the other word?"
 level: warning
 ignorecase: true
-matchcase: true
 nonword: true
 action:
   name: replace

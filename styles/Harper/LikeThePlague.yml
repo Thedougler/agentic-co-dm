@@ -10,7 +10,6 @@ extends: existence
 message: "`Things are avoided `like the plague` not `like a plague`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

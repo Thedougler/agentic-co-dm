@@ -10,7 +10,6 @@ extends: existence
 message: "Use the standard phrase `for a long time` to indicate an extended duration."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

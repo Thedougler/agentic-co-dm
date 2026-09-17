@@ -10,7 +10,6 @@ extends: existence
 message: "Drop the duplicated `out` when it follows `without`."
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

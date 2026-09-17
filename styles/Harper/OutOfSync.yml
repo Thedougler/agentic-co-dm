@@ -10,7 +10,6 @@ extends: existence
 message: "Did you mean `out of sync` or `out of synch`?"
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

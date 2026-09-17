@@ -10,7 +10,6 @@ extends: existence
 message: "`Unless if` is not idiomatic English. `Unless`, `except if`, and `except when` express a condition that is true in all cases except one."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

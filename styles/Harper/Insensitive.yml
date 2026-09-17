@@ -10,7 +10,6 @@ extends: existence
 message: "This word has a more standard, more common synonym."
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

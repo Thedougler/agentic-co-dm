@@ -10,7 +10,6 @@ extends: existence
 message: "Use `control` instead of informal `ctrl`"
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

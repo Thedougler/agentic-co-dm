@@ -10,8 +10,6 @@ extends: sequence
 message: "Use `for` when pointing a departure toward a place."
 level: warning
 ignorecase: true
-model: harper
-matchcase: true
 action:
   name: replace
   params:

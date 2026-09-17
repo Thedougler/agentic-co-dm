@@ -10,7 +10,6 @@ extends: existence
 message: "The correct plural is `lines of code`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

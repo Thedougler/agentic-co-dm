@@ -10,7 +10,6 @@ extends: existence
 message: "Should this be `face-first`?"
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

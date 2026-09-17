@@ -10,7 +10,6 @@ extends: existence
 message: "For things that happen only occasionaly use `every once in a while. For things that persistently happen use `once again`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

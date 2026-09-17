@@ -11,7 +11,6 @@ extends: sequence
 message: "Use the `gerund` of the verb, the form that ends in `-ing`"
 level: warning
 ignorecase: true
-model: harper
 tokens:
   - pattern: 'worth'
   - pattern: 'to'

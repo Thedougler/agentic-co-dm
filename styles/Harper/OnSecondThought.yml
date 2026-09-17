@@ -10,7 +10,6 @@ extends: substitution
 message: "Idiomatic expression: use `on second thought` instead of `on second though`"
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
 swap:

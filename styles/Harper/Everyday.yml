@@ -15,8 +15,6 @@ extends: sequence
 message: "You probably mean the adverb `every day` here."
 level: warning
 ignorecase: true
-model: harper
-matchcase: true
 action:
   name: replace
   params:

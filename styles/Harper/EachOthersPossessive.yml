@@ -29,7 +29,6 @@ extends: substitution
 message: "Use the reciprocal possessive form here."
 level: warning
 ignorecase: true
-matchcase: true
 nonword: true
 action:
   name: replace

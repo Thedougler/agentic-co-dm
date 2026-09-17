@@ -10,7 +10,6 @@ extends: existence
 message: "Use `I've got to` for necessity or obligation."
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

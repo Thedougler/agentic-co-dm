@@ -10,7 +10,6 @@ extends: existence
 message: "Use the correct phrase for receiving what one deserves."
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

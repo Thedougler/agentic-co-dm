@@ -15,7 +15,6 @@ extends: existence
 message: "Did you mean `tack`, as in a sailing heading?"
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

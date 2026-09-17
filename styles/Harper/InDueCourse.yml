@@ -10,7 +10,6 @@ extends: existence
 message: "Use `in due course` instead of `in do course`."
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

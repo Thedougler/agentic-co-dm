@@ -10,7 +10,6 @@ extends: existence
 message: "Use `as follows`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

@@ -10,7 +10,6 @@ extends: existence
 message: "The correct phrase is `like there's no tomorrow`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

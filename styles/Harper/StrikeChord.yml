@@ -10,7 +10,6 @@ extends: existence
 message: "Use the idiom with `chord` when describing a feeling or reaction."
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

@@ -10,7 +10,6 @@ extends: existence
 message: "The correct plural is `points of view`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

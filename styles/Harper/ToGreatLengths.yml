@@ -10,7 +10,6 @@ extends: existence
 message: "The idiom is to go `to great lengths`."
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

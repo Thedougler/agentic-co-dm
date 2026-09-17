@@ -10,7 +10,6 @@ extends: existence
 message: "Use `beware of` when naming the object you want readers to avoid."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

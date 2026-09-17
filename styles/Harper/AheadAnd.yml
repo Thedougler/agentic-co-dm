@@ -10,7 +10,6 @@ extends: existence
 message: "Did you make a typo? Shouldn't it be `and`?"
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

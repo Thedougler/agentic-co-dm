@@ -11,7 +11,6 @@ extends: sequence
 message: "Use `throw away` or `threw away`, depending on the tense you need."
 level: warning
 ignorecase: true
-model: harper
 tokens:
   - pattern: 'through'
   - pattern: 'away'

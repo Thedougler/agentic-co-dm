@@ -11,7 +11,6 @@ extends: sequence
 message: "The verb `to {verb} someone` should not be preceded by the preposition `to`."
 level: warning
 ignorecase: true
-model: harper
 tokens:
   - pattern: 'telling|asking|asked|tells|asks|tell|told|ask'
   - pattern: 'to'

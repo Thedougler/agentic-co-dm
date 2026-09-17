@@ -11,7 +11,6 @@ extends: sequence
 message: "Did you mean `that the` or just `the`?"
 level: warning
 ignorecase: true
-model: harper
 tokens:
   - pattern: 'believe|found|think|fact|said|show|say|so'
   - pattern: 'the'

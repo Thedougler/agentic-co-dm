@@ -10,7 +10,6 @@ extends: substitution
 message: "Use `principal` for the adjective meaning `main` in this phrase."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
 swap:

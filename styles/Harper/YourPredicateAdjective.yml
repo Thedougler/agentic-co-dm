@@ -10,7 +10,6 @@ extends: substitution
 message: "Use the contraction `you're` (you are) before predicate adjectives instead of the possessive `your` or its variants."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
 swap:

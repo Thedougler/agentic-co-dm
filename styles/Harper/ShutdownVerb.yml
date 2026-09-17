@@ -22,7 +22,6 @@ extends: substitution
 message: "Use the verbal phrase `shut down` when an auxiliary pulls it into a predicate."
 level: warning
 ignorecase: true
-matchcase: true
 nonword: true
 action:
   name: replace

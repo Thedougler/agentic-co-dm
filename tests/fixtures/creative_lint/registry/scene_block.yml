@@ -1,0 +1,9 @@
+rules:
+  - id: SCENE999
+    title: Invalid scene block
+    category: scene
+    scope: content
+    severity: BLOCK
+    evaluator: symbolic
+    lifecycle: ACTIVE
+    message: Creative rule above ceiling

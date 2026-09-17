@@ -10,7 +10,6 @@ extends: existence
 message: "This should be `as if` or `as though`."
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

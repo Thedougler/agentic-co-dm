@@ -17,7 +17,6 @@ extends: substitution
 message: "The idiom is `a little known fact`."
 level: warning
 ignorecase: true
-matchcase: true
 nonword: true
 action:
   name: replace

@@ -10,7 +10,6 @@ extends: existence
 message: "The indefinite article `a` is required in `thanks a lot`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

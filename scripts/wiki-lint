@@ -174,30 +174,44 @@ def candidate_main(argv: list[str], registry) -> int:
     parser.add_argument("correction", nargs="+")
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args(argv)
-    query = " ".join(args.correction).casefold()
-    matches = [rule for rule in registry.rules if query in (rule.message + " " + rule.title + " " + " ".join(rule.tags)).casefold()]
+    correction = " ".join(args.correction).strip()
+    query = correction.casefold()
+    query_terms = {term for term in re.findall(r"[a-z0-9]+", query) if len(term) > 2}
+
+    def score(rule) -> int:
+        haystack = " ".join((rule.message, rule.title, *rule.tags)).casefold()
+        return sum(term in haystack for term in query_terms)
+
+    scored = [(score(rule), rule) for rule in registry.rules]
+    matches = [rule for points, rule in scored if points == len(query_terms) and points]
+    if not matches:
+        matches = [rule for points, rule in scored if points >= 2]
     if matches:
-        data = {"matches": [{"rule_id": rule.id, "title": rule.title, "message": rule.message} for rule in matches]}
+        data = {"matches": [{"rule_id": rule.id, "title": rule.title,
+                             "message": rule.message} for rule in matches]}
         if args.json:
             print(json.dumps(data, indent=2))
         else:
             for item in data["matches"]:
                 print(f"{item['rule_id']}: {item['title']} — {item['message']}")
         return 0
+
     slug = re.sub(r"[^a-z0-9]+", "-", query).strip("-")[:48] or "candidate"
     candidate_dir = ROOT / "rules" / "candidates"
     candidate_dir.mkdir(parents=True, exist_ok=True)
     path = candidate_dir / f"{slug}.yml"
-    path.write_text(
-        "id: CANDIDATE001\n"
-        f"title: {json.dumps('Candidate: ' + ' '.join(args.correction))}\n"
-        "category: retrieval\nscope: content\nseverity: WARN\n"
-        "evaluator: human\nlifecycle: SHADOW\n"
-        f"message: {json.dumps('DM correction: ' + ' '.join(args.correction))}\n"
-        "repair: null\ntags: [candidate]\nconflicts: []\ndepends: []\n",
-        encoding="utf-8",
-    )
-    data = {"candidate": str(path.relative_to(ROOT)), "lifecycle": "SHADOW", "promotion": "requires measured precision"}
+    if not path.exists():
+        path.write_text(
+            "id: CANDIDATE001\n"
+            f"title: {json.dumps('Candidate: ' + correction)}\n"
+            "category: retrieval\nscope: content\nseverity: WARN\n"
+            "evaluator: human\nlifecycle: SHADOW\n"
+            f"message: {json.dumps('DM correction: ' + correction)}\n"
+            "repair: null\ntags: [candidate]\nconflicts: []\ndepends: []\n",
+            encoding="utf-8",
+        )
+    data = {"candidate": str(path.relative_to(ROOT)), "lifecycle": "SHADOW",
+            "promotion": "requires measured precision"}
     print(json.dumps(data, indent=2) if args.json else f"Created SHADOW candidate: {data['candidate']}")
     return 0
 

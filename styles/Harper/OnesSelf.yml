@@ -10,7 +10,6 @@ extends: existence
 message: "If you mean the reflexive pronoun for a generic or unspecified person, use `oneself`. Ignore this if you 're referring to an individual's distinct identity or ego."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

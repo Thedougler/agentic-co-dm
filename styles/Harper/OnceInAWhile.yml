@@ -10,7 +10,6 @@ extends: existence
 message: "The correct idiom is `once in a while`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

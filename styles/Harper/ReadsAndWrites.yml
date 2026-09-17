@@ -10,7 +10,6 @@ extends: existence
 message: "Did you mean `reads and writes` or `read and write`? If they are main nouns they should probably both be plural (disk reads and writes). If they describe another noun, they should probably both be singular (read and write permissions)."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

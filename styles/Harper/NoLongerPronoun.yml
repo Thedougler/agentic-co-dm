@@ -15,7 +15,6 @@ extends: substitution
 message: "Put the subject before `no longer`."
 level: warning
 ignorecase: true
-matchcase: true
 nonword: true
 action:
   name: replace

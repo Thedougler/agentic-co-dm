@@ -1,0 +1,9 @@
+rules:
+  - id: BAD
+    title: Invalid ID
+    category: agency
+    scope: content
+    severity: WARN
+    evaluator: symbolic
+    lifecycle: ACTIVE
+    message: Invalid ID

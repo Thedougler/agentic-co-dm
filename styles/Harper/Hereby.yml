@@ -20,7 +20,6 @@ extends: substitution
 message: "Did you mean the closed compound `hereby`?"
 level: warning
 ignorecase: true
-matchcase: true
 nonword: true
 action:
   name: replace

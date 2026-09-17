@@ -10,7 +10,6 @@ extends: substitution
 message: "Keep the metric modifier bonded so the compound explicitly names the analytics signal."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
 swap:

@@ -10,7 +10,6 @@ extends: existence
 message: "The correct word is `difference`, not `different` or `differents`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

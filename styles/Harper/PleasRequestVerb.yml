@@ -10,7 +10,6 @@ extends: substitution
 message: "Use `please` as the request opener."
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
 swap:

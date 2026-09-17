@@ -10,7 +10,6 @@ extends: existence
 message: "Use `each and every one` for referring to a group of people or things."
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

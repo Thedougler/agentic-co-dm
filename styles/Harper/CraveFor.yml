@@ -17,7 +17,6 @@ extends: substitution
 message: "The verb `crave` should not be followed by `for`."
 level: warning
 ignorecase: true
-matchcase: true
 nonword: true
 action:
   name: replace

@@ -10,7 +10,6 @@ extends: existence
 message: "The idiomatic phrase is `last night`."
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

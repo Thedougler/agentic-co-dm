@@ -10,7 +10,6 @@ extends: existence
 message: "The correct idiom is `few and far between`?"
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

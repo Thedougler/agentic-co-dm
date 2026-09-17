@@ -14,7 +14,6 @@ extends: substitution
 message: "Suggests alternatives to `less/least worse/worst` for more standard, clearer comparisons."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
 swap:

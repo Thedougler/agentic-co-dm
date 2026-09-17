@@ -10,7 +10,6 @@ extends: existence
 message: "Use the correct phrase for unrestricted control."
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

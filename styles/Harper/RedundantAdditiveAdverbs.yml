@@ -17,7 +17,6 @@ extends: sequence
 message: "Two additive adverbs together say the same thing twice."
 level: warning
 ignorecase: true
-model: harper
 tokens:
   - pattern: 'also|too'
     target: true

@@ -10,7 +10,6 @@ extends: existence
 message: "The grammatically correct form is `can't` or `cannot`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

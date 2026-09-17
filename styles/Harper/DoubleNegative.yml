@@ -10,7 +10,6 @@ extends: substitution
 message: "With `didn't/did not`, using `no` creates a double negative; replace `no` with `any` to keep a single negation."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
 swap:

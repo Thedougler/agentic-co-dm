@@ -10,7 +10,6 @@ extends: existence
 message: "Prefer `because it is` in this clause."
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

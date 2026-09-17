@@ -10,7 +10,6 @@ extends: substitution
 message: "Keep `look into` together before question words so the verb stays idiomatic."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
 swap:

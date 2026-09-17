@@ -9,8 +9,6 @@ extends: sequence
 message: "Use 'for' instead of 'of' with 'reason' and progressive verbs."
 level: warning
 ignorecase: true
-model: harper
-matchcase: true
 action:
   name: replace
   params:

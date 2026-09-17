@@ -13,7 +13,6 @@
 extends: existence
 message: "Use the full verb or the contraction after this pronoun."
 level: warning
-matchcase: true
 nonword: true
 action:
   name: replace

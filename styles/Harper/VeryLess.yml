@@ -10,7 +10,6 @@ extends: existence
 message: "English doesn't use `very` with `less`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

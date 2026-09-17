@@ -30,7 +30,6 @@ extends: existence
 message: "This expression uses singular `time`"
 level: warning
 ignorecase: true
-matchcase: true
 nonword: true
 action:
   name: replace

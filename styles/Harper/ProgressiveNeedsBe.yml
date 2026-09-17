@@ -13,8 +13,6 @@ extends: sequence
 message: "A progressive verb after `have` needs `been`."
 level: warning
 ignorecase: true
-matchcase: true
-model: harper
 action:
   name: replace
   params:

@@ -8,8 +8,6 @@ extends: sequence
 message: "Prefer `cure for` when describing a treatment target."
 level: warning
 ignorecase: true
-model: harper
-matchcase: true
 action:
   name: replace
   params:

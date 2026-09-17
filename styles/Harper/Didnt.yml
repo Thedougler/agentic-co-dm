@@ -8,8 +8,6 @@ extends: sequence
 message: "Consider using `didn't` here."
 level: warning
 ignorecase: true
-model: harper
-matchcase: true
 action:
   name: replace
   params:

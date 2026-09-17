@@ -10,7 +10,6 @@ extends: existence
 message: "Did you mean the verb `heard` (= past tense of `hear`)?"
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

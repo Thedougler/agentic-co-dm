@@ -10,7 +10,6 @@ extends: existence
 message: "`Kinda` already means `kind of`, so `kinda of` is redundant."
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

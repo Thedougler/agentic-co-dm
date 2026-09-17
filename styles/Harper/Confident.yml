@@ -15,7 +15,6 @@ extends: sequence
 message: "Use the adjective."
 level: warning
 ignorecase: true
-model: harper
 action:
   name: replace
   params:

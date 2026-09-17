@@ -10,7 +10,6 @@ extends: existence
 message: "This epxression requires `as` and not `than`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

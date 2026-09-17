@@ -34,7 +34,6 @@ extends: substitution
 message: "Use the past participle after a form of `have` or `be`."
 level: warning
 ignorecase: true
-matchcase: true
 nonword: true
 action:
   name: replace

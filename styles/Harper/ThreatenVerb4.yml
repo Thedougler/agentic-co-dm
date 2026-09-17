@@ -10,8 +10,6 @@ extends: sequence
 message: "Modal verbs followed by `threat` almost always intend the verb `threaten`."
 level: warning
 ignorecase: true
-model: harper
-matchcase: true
 action:
   name: replace
   params:

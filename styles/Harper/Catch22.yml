@@ -11,7 +11,6 @@ extends: substitution
 message: "This idiom uses 'catch' instead of 'cache' or 'cash'."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
 swap:

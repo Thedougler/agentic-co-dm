@@ -10,7 +10,6 @@ extends: existence
 message: "Have you perhaps confused `a little practice` or `a bit of practice`?"
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

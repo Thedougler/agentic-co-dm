@@ -8,7 +8,6 @@ extends: substitution
 message: "Singular `time` is usually the correct form in this phrase."
 level: warning
 ignorecase: true
-matchcase: true
 nonword: true
 action:
   name: replace

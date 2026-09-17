@@ -20,7 +20,6 @@ extends: substitution
 message: "For a more standard style, consider using %s."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
 swap:

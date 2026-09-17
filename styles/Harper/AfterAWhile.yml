@@ -10,7 +10,6 @@ extends: existence
 message: "When describing a timeframe, use `a while`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

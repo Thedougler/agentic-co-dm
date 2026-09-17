@@ -1,0 +1,10 @@
+rules:
+  - id: TEST001
+    title: Unresolved reference
+    category: agency
+    scope: content
+    severity: WARN
+    evaluator: symbolic
+    lifecycle: ACTIVE
+    message: Unresolved reference
+    depends: MISSING001

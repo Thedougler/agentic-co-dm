@@ -73,7 +73,8 @@ def run_vale(files: list[Path], registry: Registry, *, root: Path | None = None,
     binary = shutil.which(executable)
     if not binary:
         return [], [f"Vale is not installed; skipped {len(files)} file(s)"]
-    command = [binary, "--output=JSON", f"--config={root / '.vale.ini'}",
+    command = [binary, "--output=JSON", '--filter=.Name matches "^CoDM\\\\."',
+               f"--config={root / '.vale.ini'}",
                *[_relative_file(p, root) for p in files]]
     env = os.environ.copy()
     proc = subprocess.run(command, cwd=root, capture_output=True, text=True, env=env)

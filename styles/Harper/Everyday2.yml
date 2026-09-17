@@ -14,8 +14,6 @@ extends: sequence
 message: "You probably mean the adjective `everyday` here."
 level: warning
 ignorecase: true
-model: harper
-matchcase: true
 action:
   name: replace
   params:

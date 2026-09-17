@@ -10,7 +10,6 @@ extends: existence
 message: "Merge `likely hood` into the established noun `likelihood`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

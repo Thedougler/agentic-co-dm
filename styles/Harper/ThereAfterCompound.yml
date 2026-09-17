@@ -10,8 +10,6 @@ extends: sequence
 message: "This two-word form is likely intended as the single adverb."
 level: warning
 ignorecase: true
-model: harper
-matchcase: true
 action:
   name: replace
   params:

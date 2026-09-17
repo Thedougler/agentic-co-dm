@@ -10,7 +10,6 @@ extends: existence
 message: "Consider using `death` for clarity."
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

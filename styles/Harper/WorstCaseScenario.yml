@@ -10,7 +10,6 @@ extends: existence
 message: "Hyphenate `worst-case`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

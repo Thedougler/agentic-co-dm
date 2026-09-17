@@ -10,7 +10,6 @@ extends: existence
 message: "Did you mean `proactive` (taking initiative, acting in advance) or `initially` (at first, in the beginning)?"
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

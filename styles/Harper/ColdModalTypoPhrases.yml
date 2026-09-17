@@ -10,7 +10,6 @@ extends: existence
 message: "This looks like a modal typo."
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

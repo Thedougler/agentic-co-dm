@@ -10,7 +10,6 @@ extends: existence
 message: "This should be written as a single word with a single `l`: `albeit`."
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

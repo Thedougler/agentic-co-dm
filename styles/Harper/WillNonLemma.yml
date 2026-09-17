@@ -16,7 +16,6 @@ extends: sequence
 message: "`Will` and `shall` should be followed by a verb in its base form."
 level: warning
 ignorecase: true
-model: harper
 tokens:
   # `will` is a noun more often than it is this mistake -- "the will was read",
   # "his will stipulates", "free will tools" -- and what marks the noun is the

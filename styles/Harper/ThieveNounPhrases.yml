@@ -10,7 +10,6 @@ extends: existence
 message: "Use `thief` for a single person who steals."
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

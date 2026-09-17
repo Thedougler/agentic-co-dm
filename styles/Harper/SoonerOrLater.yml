@@ -10,7 +10,6 @@ extends: existence
 message: "Did you mean `sooner rather than later` or `sooner or later`?"
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

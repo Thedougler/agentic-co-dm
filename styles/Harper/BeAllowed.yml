@@ -12,7 +12,6 @@ extends: substitution
 message: "Add `be` so this reads `be allowed`."
 level: warning
 ignorecase: true
-matchcase: true
 nonword: true
 action:
   name: replace

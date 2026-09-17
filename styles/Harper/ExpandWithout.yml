@@ -10,7 +10,6 @@ extends: existence
 message: "Use `without` instead of `w/o`"
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

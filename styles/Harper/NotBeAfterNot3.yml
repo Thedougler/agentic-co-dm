@@ -10,8 +10,6 @@ extends: sequence
 message: "When a negative clause already uses `be`, drop the extra `be` that follows `not`."
 level: warning
 ignorecase: true
-model: harper
-matchcase: true
 action:
   name: replace
   params:

@@ -10,7 +10,6 @@ extends: existence
 message: "Did you mean `not to`?"
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

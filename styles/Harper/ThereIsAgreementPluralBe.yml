@@ -58,7 +58,6 @@ extends: sequence
 message: "There is disagreement in number between the verb and the noun."
 level: warning
 ignorecase: true
-model: harper
 tokens:
   - pattern: 'there'
   - pattern: 'are|were'

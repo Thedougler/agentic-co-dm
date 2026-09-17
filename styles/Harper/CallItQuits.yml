@@ -15,7 +15,6 @@ extends: sequence
 message: "This idiom uses the plural 'quits' to mean 'gives up' or 'stops'."
 level: warning
 ignorecase: false
-model: harper
 tokens:
   - pattern: 'calling|called|calls|call'
   - pattern: 'it'

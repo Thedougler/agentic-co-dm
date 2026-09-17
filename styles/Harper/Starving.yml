@@ -10,7 +10,6 @@ extends: existence
 message: "A more vivid adjective would better convey intense hunger."
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

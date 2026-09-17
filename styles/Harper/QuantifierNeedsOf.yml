@@ -14,7 +14,6 @@ extends: sequence
 message: "Add `of` in this quantity phrase."
 level: warning
 ignorecase: true
-model: harper
 tokens:
   - pattern: 'an|a'
   - pattern: 'couple|lot'

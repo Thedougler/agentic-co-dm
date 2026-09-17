@@ -10,7 +10,6 @@ extends: existence
 message: "This phrase likely uses the noun for atmospheric conditions."
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

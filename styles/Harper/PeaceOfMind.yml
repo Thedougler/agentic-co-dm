@@ -10,7 +10,6 @@ extends: existence
 message: "The phrase is `peace of mind`, meaning `calm`. A `piece` is a `part` of something."
 level: error
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

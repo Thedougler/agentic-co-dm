@@ -10,7 +10,6 @@ extends: existence
 message: "The more standard, less colloquial form is `take it personally`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

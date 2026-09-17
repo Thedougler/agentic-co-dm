@@ -10,7 +10,6 @@ extends: existence
 message: "Prefer the single-word adverb `beforehand`."
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

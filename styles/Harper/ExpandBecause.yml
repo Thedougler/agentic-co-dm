@@ -10,7 +10,6 @@ extends: existence
 message: "Use `because` instead of informal `cuz`"
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

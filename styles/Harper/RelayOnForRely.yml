@@ -10,7 +10,6 @@ extends: existence
 message: "Use `rely on` when you mean depend on something."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

@@ -10,7 +10,6 @@ extends: existence
 message: "Use `peek` for the preview phrase."
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

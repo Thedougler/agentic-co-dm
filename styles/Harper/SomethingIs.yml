@@ -12,7 +12,6 @@ extends: substitution
 message: "Prefer the contraction or full `is` rather than pluralizing this pronoun."
 level: warning
 ignorecase: true
-matchcase: true
 nonword: true
 action:
   name: replace

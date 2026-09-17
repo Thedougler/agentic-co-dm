@@ -10,7 +10,6 @@ extends: existence
 message: "Separate `backout` into the verb `back out` after `to`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

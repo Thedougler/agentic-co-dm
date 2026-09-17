@@ -10,7 +10,6 @@ extends: existence
 message: "The correct idiom is `in a hurry`."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

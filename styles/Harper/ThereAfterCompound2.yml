@@ -20,7 +20,6 @@ extends: existence
 message: "This two-word form is likely intended as the single adverb."
 level: warning
 ignorecase: true
-matchcase: true
 nonword: true
 action:
   name: replace

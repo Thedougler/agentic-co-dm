@@ -1,0 +1,19 @@
+{
+  "name": "agentic-co-dm-lint-tools",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "0.23.2"
+  },
+  "scripts": {
+    "lint:wiki": "./scripts/wiki-lint",
+    "lint:vale": "vale --config=.vale.ini",
+    "lint:markdown": "markdownlint-cli2",
+    "maintain": "./scripts/wiki-maintain",
+    "verify": "./scripts/check-omp-baseline.sh",
+    "test": ".venv/bin/python -m pytest"
+  }
+}

@@ -13,7 +13,6 @@ extends: sequence
 message: "The word `to` should not be used with `let` in this way."
 level: warning
 ignorecase: true
-model: harper
 tokens:
   - pattern: 'let''s|lets|let'
   - upos: PRON

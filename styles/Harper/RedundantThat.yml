@@ -10,7 +10,6 @@ extends: existence
 message: "Consider whether the second `that` adds meaning in this context."
 level: suggestion
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

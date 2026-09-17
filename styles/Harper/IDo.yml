@@ -10,7 +10,6 @@ extends: existence
 message: "`I` pairs with the bare verb `do`; the –s inflection `does` is reserved for third-person singular subjects."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

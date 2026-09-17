@@ -10,7 +10,6 @@ extends: existence
 message: "`Everytime` as a single word is proscribed. Use `every time` instead."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

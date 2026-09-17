@@ -10,7 +10,6 @@ extends: existence
 message: "This helper sequence is nonstandard in edited English."
 level: warning
 ignorecase: true
-matchcase: true
 action:
   name: replace
   params:

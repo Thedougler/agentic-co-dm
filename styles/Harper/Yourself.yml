@@ -10,8 +10,6 @@ extends: sequence
 message: "Did you mean the closed compound `yourself`?"
 level: suggestion
 ignorecase: true
-model: harper
-matchcase: true
 action:
   name: replace
   params:
