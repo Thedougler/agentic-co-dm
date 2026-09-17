@@ -44,6 +44,8 @@ A human or agent runs `wiki-lint` from the command line against individual files
 5. **Given** `wiki-lint --severity block,repair` is run, **Then** only findings at BLOCK or REPAIR severity appear in output.
 
 6. **Given** the repository root, **When** an agent inspects `package.json` or runs `npm run`, **Then** the documented common operations are discoverable as thin aliases to the existing repository CLIs; the aliases add no duplicate implementation, preserve delegated exit status and output streams, and do not require Node runtime dependencies beyond npm's script runner.
+7. **Given** the existing `wiki-lint` CLI is run with `--consolidate`, **When** the command evaluates the corpus, **Then** it emits a structured dry-run action list and requires explicit approval before applying safe structural repairs; without that flag, existing report-only behavior remains unchanged.
+
 ---
 
 ### User Story 3 — Rule Registry and Stable IDs (Priority: P1)
@@ -182,6 +184,8 @@ When the DM makes a correction that addresses a recurring agent failure, the sys
 - What happens when the initial rule set is incomplete and a violation type has no rule? The violation goes undetected. The error-ledger convergence (Story 10) provides the path to close the gap.
 - What happens when a repair introduces a new violation? The re-lint loop detects it. The repair loop has a maximum of 3 iterations by default (configurable). If not converged after 3 passes, the agent surfaces remaining findings for DM review rather than continuing.
 - What happens when portfolio-level diversity diagnostics flag a pattern across sessions? The INFO finding surfaces the pattern for the next session's design without requiring retroactive changes to existing content.
+- What happens when `wiki-lint --consolidate` is run without approval? It reports the planned safe structural repairs and exits without modifying repository files.
+
 
 ## Requirements *(mandatory)*
 
@@ -207,6 +211,8 @@ When the DM makes a correction that addresses a recurring agent failure, the sys
 - **FR-018**: All lint tool configurations MUST be agent-readable and agent-writable (YAML/JSON/INI files, not programmatic). Agents MUST be able to inspect and modify rule definitions, bundle configurations, and waivers through standard file operations.
 - **FR-019**: The repository MUST provide a `package.json` with discoverable `scripts` aliases for common linting, maintenance, verification, and test operations; each alias MUST delegate directly to the existing agent-shaped command, preserve its arguments, stdout, stderr, and exit status, and MUST NOT duplicate operation logic in Node code.
 - **FR-020**: Rule deployment lifecycle (`DRAFT`, `SHADOW`, `ACTIVE`) MUST remain independent from finding severity (`BLOCK`, `REPAIR`, `REVIEW`, `WARN`, `INFO`); promotion to `ACTIVE` MUST NOT implicitly change severity.
+- **FR-021**: The `wiki-lint --consolidate` mode MUST preserve report-only behavior by default, emit a structured dry-run plan before writes, and require explicit approval before applying safe structural repairs.
+
 
 ### Key Entities
 
@@ -252,3 +258,4 @@ When the DM makes a correction that addresses a recurring agent failure, the sys
 - Q: Should the package entry point use thin npm aliases rather than new Node wrappers? → A: Add `package.json` scripts that delegate directly to existing repository CLIs; do not move logic into Node or add a second wrapper implementation.
 - Q: Should rule lifecycle and finding severity be separate dimensions? → A: Use lifecycle `DRAFT → SHADOW → ACTIVE`; keep severity independently configured as `BLOCK`, `REPAIR`, `REVIEW`, `WARN`, or `INFO`. Promotion to `ACTIVE` does not imply a severity.
 - Q: Should Vale-backed prose rules use the packages already declared in `.vale.ini` as the authoritative package set, without duplicating or replacing that package list? → A: Treat `.vale.ini` as authoritative; invoke Vale through its configured `ai-tells`, `proselint`, `Readability`, and `Harper` packages without duplicating package configuration.
+- Q: Should the creative-linting feature add a backward-compatible `--consolidate` mode to `scripts/wiki-lint`? → A: Add it to `wiki-lint`; preserve report-only behavior by default, show a dry-run plan, and require explicit approval before safe structural repairs.
