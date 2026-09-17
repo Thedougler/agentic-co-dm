@@ -1,12 +1,11 @@
 <!--
 Sync Impact Report
-- Version change: 1.28.0 → 1.29.0 (MINOR)
+- Version change: 1.29.0 → 1.30.0 (MINOR)
 - Modified principles:
-  - XVIII. Constitutional Layering → XVIII. Constitutional Layering (reader-specific skill routing added)
+  - XIII. Self-Improvement Is Evidence-Driven → XIII. Self-Improvement Is Evidence-Driven (self-reporting SOP added)
 - Added sections: None
 - Removed sections: None
-- Follow-up TODOs:
-  - `writing-for-humans` is referenced by the requested policy but is not present in `.agents/skills/`.
+- Follow-up TODOs: None
 -->
 
 # Agentic Co-DM Constitution
@@ -173,7 +172,14 @@ continuously, but an improvement MUST be demonstrated rather than asserted. Opti
 address an observed failure, measured waste source, or evidenced opportunity and MUST compare
 equivalent work. Uncertain changes MUST remain reversible until evidence supports promotion.
 
-Rationale: optimization without evidence can efficiently make the system worse.
+Self-reporting is the default SOP. When an agent experiences inefficiency, a slowdown, confusion,
+ambiguity, or other operational friction, it MUST record the issue in `errors.md` before
+continuing its task. The entry MUST identify the observed symptom, task context, and affected
+artifact or tool when known. A different agent MUST diagnose and remediate the report in a later
+session; the reporting agent MUST NOT treat continued progress as resolution.
+
+Rationale: optimization without evidence can efficiently make the system worse; prompt reporting
+turns operational friction into actionable work for an independent diagnosis.
 
 ### XIV. Designated Writers Have Bounded Concurrency
 
@@ -343,4 +349,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.29.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 1.30.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
