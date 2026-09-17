@@ -23,7 +23,7 @@ You are ingesting source documents into an Obsidian wiki. Your job is not to sum
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `OBSIDIAN_SOURCES_DIR`, `OBSIDIAN_LINK_FORMAT` (default: `wikilink`), and `WIKI_STAGED_WRITES`. Only read the specific variables you need — do not log, echo, or reference any other values from these files.
 2. **Check `WIKI_STAGED_WRITES`** — if set to `true`, all new and updated category pages go to `_staging/<category>/` instead of their final location. Tell the user at the start of the ingest: "Staged writes mode is enabled — pages will land in `_staging/` for your review. Run `/wiki-stage-commit` when ready to promote."
-3. **Manifest (do not read `.manifest.json` whole — token waste):** use `python3 scripts/manifest.py` against `$OBSIDIAN_VAULT_PATH` — `stats`, `list [--limit]`, `has`/`get`/`delta` for sources, `lookup --page` for reverse page→sources, `upsert` after write. Loading the full ledger into context is a bug.
+3. **Manifest (do not read `.manifest.json` whole — token waste):** use `python3 scripts/manifest.py` against `$OBSIDIAN_VAULT_PATH` — `stats`, `list [--limit]`, `has`/`get`/`delta` for sources, `lookup --page` for reverse page→sources, and `record` after a completed write. `record` is the sole completion writer; do not follow it with `obsidian-wiki cache-update` or another manifest write. Loading the full ledger into context is a bug.
 4. Prefer capped lookup (`qmd` / targeted `rg` / `hot.md`) over reading all of `index.md` or `log.md` unless you truly need the full inventory
 5. Skim recent activity via `hot.md` first; open `log.md` only for a bounded recent slice if needed
 6. **Campaign vault.** Read `$OBSIDIAN_VAULT_PATH/AGENTS.md` (`wiki/AGENTS.md` in this repo). Load craft skills per the Quality pass in Step 5. Campaign pages need `type`, `lifecycle`, and `reveal` from that file in addition to llm-wiki fields. A body written in AI shorthand or telegram stubs is invalid — rewrite as complete sentences before filing. Ingest only sources the DM named and approved (FR-019). Write distilled pages plus thin complete-sentence stubs for names in those sources (including as links). Do not create pages for names the sources do not contain. Invented extra names are a separate Work proposal. Early-dev `wiki/_raw/` samples stay in `_raw/` as illustrations, not a layout source (do not move them to `_archive/`). General ingest still distills. Sample `type: monster` maps to campaign `type: creature`. Wrapup of a legacy page keeps that page's shape; it MUST NOT convert the page into a sample.
@@ -98,10 +98,10 @@ Output: `{"new": [...], "modified": [...], "unchanged": [...], "missing": [...]}
 - `unchanged` → skip entirely — hash matches, content is identical
 - `missing` → in manifest but no longer on disk; skip and optionally clean up
 
-After a file is **complete**, record its hash:
+After a file is **complete**, record its hash and page destinations in one operation:
 
 ```bash
-obsidian-wiki cache-update "$OBSIDIAN_VAULT_PATH" <source> --pages <page1> [page2 ...]
+python3 scripts/manifest.py record "$OBSIDIAN_VAULT_PATH" <source> --pages <page1> [page2 ...]
 ```
 
 Failed files MUST NOT be hashed as success.
@@ -172,7 +172,7 @@ For each remaining file:
 
 1. Mark it `open`. Do not create or change wiki pages or tracking for any later file while this one is `open`.
 2. Run **this file** through Preserve / combatant-drops / Steps 1–7 as it qualifies. Unreadable, empty, or non-source binary: mark `failed` with a reason. Do not hash as success.
-3. Completing a file means: Step 1d ran; every extracted idea has a destination (see Source ideas); required pages filed or stubbed; on `complete`, `cache-update` this file only with those page destinations; write a `log.md` line for this file; mark `complete` or `failed`. Related misses do not by themselves fail the primary. Failure of the primary still requires a reason.
+3. Completing a file means: Step 1d ran; every extracted idea has a destination (see Source ideas); required pages filed or stubbed; on `complete`, call `python3 scripts/manifest.py record` exactly once for this file with those page destinations; write a `log.md` line for this file; mark `complete` or `failed`. Related misses do not by themselves fail the primary. Failure of the primary still requires a reason.
 4. Close the file before the next `open`. A later file may update a page from an earlier file only after the earlier file is `complete` or `failed`.
 
 After the run, report each file in processing order: `complete` or `failed`; related reads (identity, origin `staging` or `legacy`, role); misses; recency conflicts; destinations (pages created/updated, staged, unresolved, proposals); failure reason. If related search returned nothing, say so. Attribute later updates to the later file.
@@ -548,7 +548,7 @@ After writing pages, check that wikilinks work in both directions. If page A lin
 
 ### Step 7: Update Manifest and Special Files
 
-**`.manifest.json`** — Prefer `python3 scripts/manifest.py upsert "$OBSIDIAN_VAULT_PATH" <source> --json '{...}'` (never load/edit the whole file in context). Entry shape:
+**`.manifest.json`** — After the source is complete, run `python3 scripts/manifest.py record "$OBSIDIAN_VAULT_PATH" <source> --pages <page1> [page2 ...]` (never load/edit the whole file in context). The command computes `content_hash` and `last_ingested`, canonicalizes the source key, merges page destinations, and atomically writes the entry once. Use `upsert` only for compatibility with older workflows that need a custom metadata patch; it is not part of normal source completion. Entry shape:
 ```json
 {
   "content_hash": "sha256:<64-char-hex>",
@@ -558,7 +558,7 @@ After writing pages, check that wikilinks work in both directions. If page A lin
   "project": "project-name-or-null"
 }
 ```
-`content_hash`, `last_ingested`, and `pages_produced` are the three fields `cache.py` reads and writes (`cache-check` / `cache-update`) — names must match. `content_hash` is the primary skip signal. `source_type` and `project` are advisory. `upsert` maintains stats; if the ledger is missing, create `version: 1` via the CLI/path the helper uses — still do not dump the file into context.
+`content_hash`, `last_ingested`, and `pages_produced` are the source-completion fields. `content_hash` is the primary skip signal. `source_type` and `project` are advisory. `record` maintains stats; if the ledger is missing, it creates `version: 1` through the helper — still do not dump the file into context.
 
 **`index.md`** — Add entries for any new pages, update summaries for modified pages.
 

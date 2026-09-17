@@ -484,6 +484,13 @@ Reading the vault is the dominant cost of every read-side skill. Use the cheapes
 
 Skills that consume this table: `wiki-query`, `cross-linker`, `wiki-lint`, `wiki-status` (insights mode). Any new skill that reads the vault should cite this section rather than reinvent the pattern. Anti-patterns (full manifest/index/log loads, oversized skill/page dumps) are scanned by `scripts/context-waste-scan.py (S3/S4 = investigation leads, not shorten mandates)` — see `docs/agents/context-waste-method.md`. Do not load those wholesale into chat.
 
+### Exact QMD retrieval
+
+Search the selected collection before retrieval. Pass the exact returned QMD
+`#docid` or `qmd://` source to `qmd get` / `qmd multi-get` verbatim. An empty
+`QMD_WIKI_COLLECTION` selects `wiki`. Never manufacture or URL-encode a
+document path from an Obsidian filename; the search result is the identifier.
+
 ## QMD Index Freshness
 
 QMD is an optional search index layered on top of the vault. The markdown vault is the source of truth. Any skill that writes wiki markdown should refresh QMD after the vault write completes, but only when `QMD_WIKI_COLLECTION` is configured and the local QMD transport is available. If QMD refresh fails, keep the vault changes and report the QMD status separately.

@@ -11,6 +11,7 @@ Usage:
   python3 scripts/manifest.py list <vault> [--project NAME] [--since ISO] [--limit N]
   python3 scripts/manifest.py --format tsv list <vault> --limit 20
   python3 scripts/manifest.py delta <vault> --paths-file <file|->
+  python3 scripts/manifest.py record <vault> <source> --pages <page1> [page2 ...]
   python3 scripts/manifest.py upsert <vault> <source> --json '{...}'
   python3 scripts/manifest.py normalize <vault> [--dry-run]
 """
@@ -295,6 +296,89 @@ def cmd_upsert(args: argparse.Namespace) -> int:
     return 0
 
 
+def source_path(vault: Path, raw: str) -> Path:
+    expanded = Path(os.path.expandvars(os.path.expanduser(raw)))
+    if expanded.is_absolute():
+        return expanded.resolve()
+    cwd_path = expanded.resolve()
+    vault_path = (vault / expanded).resolve()
+    if cwd_path.is_file() or not vault_path.is_file():
+        return cwd_path
+    return vault_path
+
+
+def record_source_matches(vault: Path, key: str, source: Path) -> bool:
+    candidates = [resolve_path(key)]
+    key_path = Path(os.path.expandvars(os.path.expanduser(key)))
+    if not key_path.is_absolute():
+        candidates.append((vault / key_path).resolve())
+    return source in candidates
+
+
+def normalize_page(vault: Path, raw: str) -> str:
+    try:
+        return str(resolve_path(raw).relative_to(vault)).replace("\\", "/")
+    except ValueError:
+        normalized = raw.replace("\\", "/").lstrip("./")
+        prefix = f"{vault.name}/"
+        if normalized.startswith(prefix):
+            normalized = normalized[len(prefix):]
+        return normalized
+
+
+def cmd_record(args: argparse.Namespace) -> int:
+    vault = args.vault.resolve()
+    source = source_path(vault, args.source)
+    if not source.is_file():
+        return fail(f"source file not found: {source}")
+
+    try:
+        current_hash = file_hash(source)
+    except OSError as exc:
+        return fail(f"cannot hash source {source}: {exc}")
+
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    data = load(vault)
+    rows = [
+        row
+        for row in iter_entries(data)
+        if record_source_matches(vault, row[0], source)
+    ]
+
+    entry: dict[str, Any] = {}
+    existing_pages: set[str] = set()
+    for _key, old, _where in rows:
+        entry = merge_entries(entry, old)
+        for field in PAGE_FIELDS:
+            existing_pages.update(str(item) for item in (old.get(field) or []))
+
+    pages = {normalize_page(vault, page) for page in args.pages}
+    entry["content_hash"] = current_hash
+    entry["last_ingested"] = now
+    entry["pages_produced"] = sorted(existing_pages | pages)
+    if args.source_type is not None:
+        entry["source_type"] = args.source_type
+    if args.project is not None:
+        entry["project"] = args.project
+
+    sources = data.get("sources")
+    if not isinstance(sources, dict):
+        sources = {}
+        data["sources"] = sources
+    for key, _old, where in rows:
+        if where == "sources":
+            sources.pop(key, None)
+        else:
+            data.pop(key, None)
+    canonical = str(source)
+    sources[canonical] = entry
+    recount_stats(data)
+    data["last_updated"] = now
+    write(vault, data)
+    emit({"key": canonical, "entry": entry, "rows_merged": len(rows)})
+    return 0
+
+
 def cmd_normalize(args: argparse.Namespace) -> int:
     data = load(args.vault)
     groups: dict[str, list[tuple[str, dict, str]]] = {}
@@ -376,6 +460,14 @@ def build_parser() -> argparse.ArgumentParser:
     upsert.add_argument("source")
     upsert.add_argument("--json", required=True)
     upsert.set_defaults(func=cmd_upsert)
+
+    record = sub.add_parser("record", help="hash and record one completed source atomically")
+    vault_arg(record)
+    record.add_argument("source")
+    record.add_argument("--pages", nargs="+", required=True)
+    record.add_argument("--source-type")
+    record.add_argument("--project")
+    record.set_defaults(func=cmd_record)
 
     normalize = sub.add_parser("normalize", help="merge ~ vs absolute collisions")
     vault_arg(normalize)

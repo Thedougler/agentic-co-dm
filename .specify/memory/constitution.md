@@ -1,4 +1,3 @@
-
 # Agentic Co-DM Constitution
 
 ## Core Principles
@@ -211,6 +210,28 @@ MUST be corrected or the constitution MUST be amended explicitly.
 Rationale: layering keeps standing context short, load-bearing, and resilient to model, tool, and
 retrieval-engine changes.
 
+### XX. The Wiki Is Additive, Self-Sealing, and Self-Healing
+
+The Wiki (the repository's `llm-wiki`) MUST remain the single compiled, citable knowledge layer.
+Raw evidence MUST remain immutable. New evidence, page facts, links, schemas, and maintenance
+records MUST land as traceable additive changes with an authoritative owner and provenance; an
+agent MUST NOT overwrite or delete history, silently merge competing facts, or turn an unaccepted
+proposal into canon. Accepted campaign facts MUST change only through the DM acceptance boundary,
+and incompatible records MUST be quarantined with an observable error rather than guessed or
+rewritten.
+
+Safe deterministic maintenance MUST detect and repair structural, index, link, and validation
+drift without inventing lore, changing accepted facts, collapsing conflicts, or applying a
+judgment-only repair without its required review. Every completed work slice MUST be committed
+to Git. Before starting a new owned work unit, an agent MUST commit all dirty changes it owns and
+verify a clean working tree; it MUST obtain a clean handoff for unrelated dirty changes, MUST NOT
+include work it does not own in its commit, and MUST stop and report when clean isolation is
+impossible.
+
+Rationale: additive history seals accepted knowledge, safe repair keeps the compiled Wiki usable,
+and clean commits let agents recover, audit, and hand off work without clobbering another agent's
+changes.
+
 ## Operating Boundaries
 
 - The Co-DM works in prep and wrapup windows; the DM is the sole runtime at the table.
@@ -260,4 +281,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.18.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-16
+**Version**: 1.19.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-16

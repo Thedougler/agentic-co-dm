@@ -171,6 +171,13 @@ Search is on by default against collection `wiki`. Empty `QMD_WIKI_COLLECTION` s
 
 Load `.agents/skills/qmd` for query/get. Snippets are leads — `qmd get` / `qmd multi-get` before citing facts.
 
+### Exact QMD retrieval
+
+Search the selected collection first, then pass the exact returned `#docid` or
+`qmd://` source to `qmd get` / `qmd multi-get` verbatim. Use collection `wiki`
+when `QMD_WIKI_COLLECTION` is empty. Never construct, URL-encode, or infer a
+QMD document path from an Obsidian filename; the search result is the identifier.
+
 Order (`specs/004-qmd-search-default/contracts/retrieval-precedence.md`): `-c wiki` first; if silence `-c shattered-sea`; if silence `-c legacy-ss`; if still silence, say the wiki is silent.
 
 Wiki hit = current canon. Legacy hit = campaign-of-record context; wiki write only after DM accept. Wiki vs legacy disagreement → cite wiki.
@@ -178,6 +185,20 @@ Wiki hit = current canon. Legacy hit = campaign-of-record context; wiki write on
 
 If `qmd status` fails at session start, run `scripts/qmd-maintain.sh`. After wiki writes, wiki-ingest Step 8 runs that script. Exit 1: report the failure; already-written wiki pages stay.
 `qmd query`, `qmd embed`, and `qmd vsearch` need the local LLM. Agent harnesses set `CI=true`, which makes qmd refuse those calls. Prefix them with `env -u CI`. The maintain script already does this.
+
+### Direct `main` push protocol
+
+When pushing commits directly to `main`, use native Git in this order:
+
+1. Run `git fetch origin main`.
+2. Run `git rebase origin/main` and resolve any conflict before continuing.
+3. Run `git push origin HEAD:main`.
+4. If the push is rejected as non-fast-forward, repeat fetch → rebase → push
+   at most two more times. Stop after three total attempts or immediately on a
+   rebase conflict; leave the branch for manual resolution.
+
+`scripts/git-sync-main` remains the pre-work sync/reset helper and does not
+replace this push protocol or perform pushes.
 
 ## Vault Structure
 
@@ -321,7 +342,7 @@ The main use case: you're working in some other project and want to sync knowled
 2. Scan the current project: README, source structure, git log, package metadata
 3. Distill what's worth remembering (architecture decisions, patterns, trade-offs — not code listings)
 4. Write to `$VAULT/projects/<project-name>.md`, cross-linking to concept/entity pages as needed
-5. Update the ingest ledger via `python3 scripts/manifest.py upsert …` (not a whole-file read), plus `index.md` and `log.md`
+5. Record a completed source once with `python3 scripts/manifest.py record … --pages …` (not a whole-file read), plus `index.md` and `log.md`
 
 On repeat runs, use `scripts/manifest.py` (`has`/`get`/`delta`) for ledger checks — do not load all of `.manifest.json` into context. Project sync may still use `git log <last_commit>..HEAD` when `last_commit_synced` is present on the relevant entry.
 
@@ -359,7 +380,7 @@ See `wiki-query` and `wiki-export` skills for how the filter is applied.
 ## Core Principles
 
 - **Compile, don't retrieve.** The wiki is pre-compiled knowledge. Update existing pages — don't append or duplicate.
-- **Track everything.** After ingest, `python3 scripts/manifest.py upsert` for the source (never whole-file read of `.manifest.json`); update `index.md`, `log.md`, and `hot.md` after writes.
+- **Track everything.** After ingest, `python3 scripts/manifest.py record` the completed source (never whole-file read of `.manifest.json`); update `index.md`, `log.md`, and `hot.md` after writes.
 - **Connect with `[[wikilinks]]`.** Every page should link to related pages. This is what makes it a knowledge graph, not a folder of files.
 - **Frontmatter is required.** Every wiki page needs: `title`, `category`, `tags`, `sources`, `created`, `updated`.
 - **Single source of truth.** Visibility tags shape how content is surfaced — they don't duplicate or separate it.

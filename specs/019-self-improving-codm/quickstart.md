@@ -5,7 +5,7 @@
 From the repository root, after implement lands standing rules, the ledger helper, and the wrapup reflection step:
 
 ```bash
-python --version
+python3 --version
 .venv/bin/python specs/019-self-improving-codm/fixtures/check.py
 ```
 

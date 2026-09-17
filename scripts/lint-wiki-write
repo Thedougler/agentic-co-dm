@@ -6,6 +6,7 @@ Does not git commit, push, or resurrect after-write.
 
 Usage (repo root):
   ./scripts/lint-wiki-write
+  ./scripts/lint-wiki-write wiki/journal/sessions/shattered-sea/11
   ./scripts/lint-wiki-write --path wiki/journal/sessions/shattered-sea/11
   ./scripts/lint-wiki-write --json
 """
@@ -18,6 +19,14 @@ import sys
 from pathlib import Path
 
 SCRIPTS = Path(__file__).resolve().parent
+
+
+def select_scope(path_option: Path | None, positional: Path | None) -> Path | None:
+    if path_option is not None and positional is not None:
+        if path_option.resolve() != positional.resolve():
+            raise ValueError("--path and positional scope name different paths")
+    selected = path_option or positional
+    return selected.resolve() if selected is not None else None
 
 
 def run_one(name: str, extra: list[str], as_json: bool) -> dict:
@@ -44,13 +53,23 @@ def run_one(name: str, extra: list[str], as_json: bool) -> dict:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("scope", nargs="?", type=Path, help="Limit checks to a file or directory")
     parser.add_argument("--path", type=Path, help="Limit literal-newline lint to a file or directory")
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args(argv)
 
+    try:
+        scope = select_scope(args.path, args.scope)
+    except ValueError as exc:
+        print(f"agentic-co-dm: {exc}", file=sys.stderr)
+        return 2
+    if scope is not None and not scope.exists():
+        print(f"agentic-co-dm: path not found: {scope}", file=sys.stderr)
+        return 2
+
     extra: list[str] = []
-    if args.path is not None:
-        extra.extend(["--path", str(args.path)])
+    if scope is not None:
+        extra.extend(["--path", str(scope)])
     results = []
     results.append(run_one("lint-obsidian-markdown", extra, args.json))
     results.append(run_one("lint-literal-newlines", extra, args.json))

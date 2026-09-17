@@ -16,6 +16,7 @@ Skips: .agents/ .git/ .obsidian/ .qmd/ node_modules/ docs/ scripts/ specs/
 
 Usage (repo root):
   ./scripts/lint-obsidian-markdown
+  ./scripts/lint-obsidian-markdown wiki/journal/sessions/shattered-sea/11
   ./scripts/lint-obsidian-markdown --json
   ./scripts/lint-obsidian-markdown --path wiki/journal/sessions/shattered-sea/11
   ./scripts/lint-obsidian-markdown --strict   # also fail title_only (default: warn)
@@ -273,8 +274,17 @@ def check_file(path: Path) -> list[dict]:
     return findings
 
 
-def main() -> int:
+def select_scope(path_option: Path | None, positional: Path | None) -> Path | None:
+    if path_option is not None and positional is not None:
+        if path_option.resolve() != positional.resolve():
+            raise ValueError("--path and positional scope name different paths")
+    selected = path_option or positional
+    return selected.resolve() if selected is not None else None
+
+
+def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("scope", nargs="?", type=Path, help="Limit checks to a file or directory")
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--path", type=Path, help="Limit to a file or directory")
     ap.add_argument(
@@ -282,9 +292,13 @@ def main() -> int:
         action="store_true",
         help="also fail title_only_frontmatter and missing_frontmatter",
     )
-    args = ap.parse_args()
+    args = ap.parse_args(argv)
 
-    scope = args.path.resolve() if args.path else None
+    try:
+        scope = select_scope(args.path, args.scope)
+    except ValueError as exc:
+        print(f"agentic-co-dm: {exc}", file=sys.stderr)
+        return 2
     if scope is not None and not scope.exists():
         print(f"agentic-co-dm: path not found: {scope}", file=sys.stderr)
         return 2

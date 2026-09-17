@@ -5,7 +5,7 @@
 From the repository root:
 
 ```bash
-python --version
+python3 --version
 .venv/bin/python specs/015-wiki-ingest-polish/fixtures/check.py
 ```
 
