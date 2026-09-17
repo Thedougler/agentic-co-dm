@@ -1,11 +1,12 @@
 <!--
 Sync Impact Report
-- Version change: 1.31.1 → 1.32.0 (MINOR)
+- Version change: 1.32.0 → 1.33.0 (MINOR)
 - Modified principles:
-  - XIII. Self-Improvement Is Evidence-Driven → XIII. Self-Improvement Is Evidence-Driven (agent-facing product scope added)
+  - XVIII. Constitutional Layering → XVIII. Constitutional Layering (harness parity and isolation added)
 - Added sections: None
 - Removed sections: None
-- Follow-up TODOs: None
+- Follow-up TODOs:
+  - Create or align dedicated root-level instruction files for OMP, Codex, Claude Code, and Grok Build.
 -->
 # Agentic Co-DM Constitution
 
@@ -243,8 +244,17 @@ MUST read and apply `writing-for-agents`. Before writing text intended for human
 `wiki/`, the agent MUST read and apply `writing-for-humans`. A missing required skill MUST be
 surfaced as an explicit dependency gap; the agent MUST NOT claim that routing was applied.
 
+Harness parity is mandatory. When operating in the Wiki under the OMP harness, agents MUST use
+all relevant Oh My Pi features appropriately. When operating under the Codex, Claude Code, or
+Grok Build harness, agents MUST use the relevant native features of that harness. Each supported
+harness MUST have a dedicated root-level instruction file that is read only by agents running in
+that harness and contains harness-specific instructions. For example, the `omp-harness` skill
+MUST be visible only to agents operating under OMP. Shared policy MUST remain in shared layers;
+harness files MUST NOT become competing sources of truth.
+
 Rationale: layering keeps standing context short, load-bearing, and resilient to model, tool, and
-retrieval-engine changes; reader-specific skills keep each surface predictable.
+retrieval-engine changes; reader-specific skills and harness isolation keep each surface
+predictable.
 
 ### XIX. The Wiki Is Additive, Self-Sealing, and Self-Healing
 
@@ -357,4 +367,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.32.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 1.33.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17

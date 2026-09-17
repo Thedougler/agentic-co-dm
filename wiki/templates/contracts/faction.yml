@@ -1,0 +1,92 @@
+template: faction.md
+type: faction
+sections:
+  - heading: "{{title}}"
+    level: 1
+    required: true
+  - heading: "At a Glance"
+    level: 2
+    required: true
+  - heading: "At the Table"
+    level: 2
+    required: true
+  - heading: "Current State"
+    level: 2
+    required: true
+  - heading: "Active Agenda"
+    level: 2
+    when:
+      active: required
+      accepted: required
+      proposed: optional
+      dormant: omit
+      dissolved: omit
+      default: optional
+  - heading: "Milestones"
+    level: 3
+    parent: "Active Agenda"
+    required: false
+  - heading: "Secondary Agenda"
+    level: 3
+    parent: "Active Agenda"
+    required: false
+  - heading: "Assets"
+    level: 2
+    required: false
+  - heading: "People & Structure"
+    level: 2
+    required: true
+  - heading: "Chain of Action"
+    level: 3
+    parent: "People & Structure"
+    required: false
+  - heading: "Territory & Touchpoints"
+    level: 2
+    required: false
+  - heading: "Connections"
+    level: 2
+    required: false
+  - heading: "Party"
+    level: 3
+    parent: "Connections"
+    required: false
+  - heading: "Signals & Rumors"
+    level: 2
+    required: false
+  - heading: "Running the Faction"
+    level: 2
+    required: true
+  - heading: "Faction Turn"
+    level: 2
+    when:
+      active: optional
+      accepted: optional
+      proposed: optional
+      dormant: omit
+      dissolved: omit
+      default: optional
+  - heading: "Current Turn"
+    level: 3
+    parent: "Faction Turn"
+    when:
+      active: optional
+      accepted: optional
+      proposed: optional
+      dormant: omit
+      dissolved: omit
+      default: optional
+  - heading: "Turn Log"
+    level: 3
+    parent: "Faction Turn"
+    required: false
+  - heading: "History"
+    level: 2
+    required: false
+  - heading: "Hidden Agenda"
+    level: 2
+    required: false
+callouts:
+  allowed: [narration]
+frontmatter:
+  required: [title, category, tags, sources, created, updated, type, lifecycle, reveal]
+  optional: [campaign, visibility, kind, status, scope, region, base, summary, aliases, redirects_to, base_confidence]
