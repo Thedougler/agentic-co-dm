@@ -128,6 +128,9 @@ def validate_record(record: dict[str, Any]) -> dict[str, Any]:
         error("measurement-gap records require measurement_gap_reason")
     if record.get("comparison_sample") is True and record["measurement_status"] != "complete":
         error("measurement-gap cannot be a comparison sample")
+    if str(record["tokenizer_family"]).lower().startswith("native") and not policy()["native_tokenizer_accepted"]:
+        if record["measurement_status"] != "measurement-gap":
+            error("native-tokenizer record requires an explicit governance measurement gap")
     for key, value in walk(record):
         if key.rsplit(".", 1)[-1].split("[", 1)[0].lower() in RAW_KEYS:
             error(f"raw-content field is not allowed: {key}")
@@ -150,6 +153,12 @@ def validate_record(record: dict[str, Any]) -> dict[str, Any]:
             error(f"retrieval.{key} must be a list of strings")
     if retrieval["useful"] + retrieval["unused"] > retrieval["fetches"]:
         error("retrieval useful and unused counts exceed fetches")
+    known_collections = {"wiki": 0, "shattered-sea": 1, "legacy": 2}
+    attempted_known = [known_collections[name] for name in retrieval["attempted_collections"] if name in known_collections]
+    if attempted_known != sorted(attempted_known):
+        error("retrieval collections must preserve wiki -> shattered-sea -> legacy precedence")
+    if retrieval.get("accepted_canon_overridden") is True:
+        error("fallback retrieval cannot override accepted canon")
     components = record["source_components"]
     if not isinstance(components, list) or not components:
         error("source_components must be a non-empty list")
@@ -292,7 +301,7 @@ def parse_args() -> argparse.Namespace:
     report_cmd.add_argument("--trace", type=Path, default=ROOT / ".local/efficiency/traces.jsonl")
     retain = sub.add_parser("retain")
     retain.add_argument("--trace", type=Path, default=ROOT / ".local/efficiency/traces.jsonl")
-    retain.add_argument("--days", type=int, default=90)
+    retain.add_argument("--days", type=int)
     promote = sub.add_parser("promote")
     promote.add_argument("--input", required=True, type=Path)
     promote.add_argument("--risk", required=True, choices=("low", "moderate", "high"))
@@ -324,9 +333,10 @@ def main() -> int:
             records = records_from(read_json(args.input)) if args.input else load_stream(args.trace)
             print(json.dumps(report(records), sort_keys=True))
         elif args.command == "retain":
-            if args.days < 0:
+            retention_days = policy()["retention_days"] if args.days is None else args.days
+            if retention_days < 0:
                 error("retention days must be non-negative")
-            cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=args.days)
+            cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=retention_days)
             kept: list[dict[str, Any]] = []
             removed = 0
             for record in load_stream(args.trace):
@@ -342,7 +352,7 @@ def main() -> int:
                     removed += 1
             args.trace.parent.mkdir(parents=True, exist_ok=True)
             args.trace.write_text("".join(json.dumps(record, sort_keys=True) + "\n" for record in kept), encoding="utf-8")
-            print(json.dumps({"status": "retained", "removed": removed, "days": args.days}))
+            print(json.dumps({"status": "retained", "removed": removed, "days": retention_days}))
         elif args.command == "promote":
             settings = policy()
             records = [validate_record(record) for record in records_from(read_json(args.input))]

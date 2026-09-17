@@ -15,6 +15,7 @@ TRACE = ROOT / "scripts" / "efficiency-trace.py"
 ROUTES = FEATURE / "routes"
 EVIDENCE = FEATURE / "evidence"
 TELEMETRY = FEATURE / "telemetry"
+PRESET = ROOT / ".specify" / "presets" / "creative-llm-wiki"
 
 
 def run(command: list[str], *, expect: int = 0) -> subprocess.CompletedProcess[str]:
@@ -44,6 +45,7 @@ def check_hybrid() -> None:
         run([sys.executable, str(CHECKER), "topology", "--fixtures", str(path)])
     run([sys.executable, str(CHECKER), "plan", "--fixtures", str(EVIDENCE / "engineering-plan.json")])
     run([sys.executable, str(CHECKER), "verify", "--fixtures", str(EVIDENCE / "verification.json")])
+    run([sys.executable, str(CHECKER), "preset", "--package", str(PRESET)])
 
 
 def check_telemetry() -> None:
@@ -61,8 +63,12 @@ def check_telemetry() -> None:
         for record_data in fixture_records(TELEMETRY / "schema-evolution.json"):
             record(record_data, expected=1 if record_data.get("expected_error") else 0)
         report = run([sys.executable, str(TRACE), "report", "--trace", str(trace)])
-        if '"accepted_work_denominator"' not in report.stdout or '"trajectory_tokens"' not in report.stdout:
+        report_data = json.loads(report.stdout)
+        if "accepted_work_denominator" not in report_data or "trajectory_tokens" not in report_data:
             raise RuntimeError("telemetry report omitted required metric vector")
+        for name in ("trajectory_tokens", "input_tokens", "output_tokens", "retry_amplification", "hard_gate_failure_rate", "dm_acceptance_rate", "dm_revision_rate", "runtime_tool_failure_rate", "useful_retrieval", "unnecessary_retrieval"):
+            if report_data[name].get("label") not in {"measured", "estimated", "inferred"}:
+                raise RuntimeError(f"telemetry metric {name} is unlabeled")
         run([sys.executable, str(TRACE), "promote", "--input", str(TELEMETRY / "paired.json"), "--risk", "low", "--canary", "0.10"])
         retention = temp / "retention.jsonl"
         retention.write_text("\n".join(json.dumps(record) for record in fixture_records(TELEMETRY / "retention.json")) + "\n")
@@ -80,7 +86,7 @@ def main() -> int:
     except (OSError, RuntimeError, json.JSONDecodeError) as exc:
         print(f"FAIL: {exc}", file=sys.stderr)
         return 1
-    print("PASS: hybrid SDD route, evidence, telemetry, promotion, retention, and compatibility fixtures")
+    print("PASS: hybrid SDD route, evidence, telemetry, preset, promotion, retention, and compatibility fixtures")
     return 0
 
 

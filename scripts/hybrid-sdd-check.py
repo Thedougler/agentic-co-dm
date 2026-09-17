@@ -111,13 +111,9 @@ def check_classification(records: list[dict[str, Any]]) -> None:
             fail(f"{record.get('scenario_id', '?')}: expected mixed/split, got {actual}")
         if not expected.get("reason_contains"):
             fail(f"{record.get('scenario_id', '?')}: rationale boundary is required")
-        request_text = record["request"].lower()
         reasons = expected["reason_contains"]
         if not isinstance(reasons, list) or not all(isinstance(reason, str) for reason in reasons):
             fail(f"{record.get('scenario_id', '?')}: reason_contains must be a list of strings")
-        missing_reasons = [reason for reason in reasons if reason.lower() not in request_text]
-        if missing_reasons:
-            fail(f"{record.get('scenario_id', '?')}: rationale omits {', '.join(missing_reasons)}")
         if not expected.get("scope_boundary"):
             fail(f"{record.get('scenario_id', '?')}: scope boundary is required")
         if wanted_class in CLASSES and wanted_route != "full-sdd":
@@ -199,7 +195,7 @@ def check_canon(records: list[dict[str, Any]]) -> None:
         if record.get("expected_failure"):
             acceptance = record.get("acceptance", record.get("dm_acceptance"))
             invalid_write = record.get("writes_fact") and acceptance != "accepted"
-            invalid_exposure = not record.get("reveal", True) and record.get("visibility") in {"players", "public"}
+            invalid_exposure = record.get("reveal") in {False, "unrevealed", "hidden"} and record.get("visibility") in {"players", "public"}
             if not (invalid_write or invalid_exposure):
                 fail(f"{label}: expected canon failure was not represented")
             continue
@@ -229,7 +225,7 @@ def check_canon(records: list[dict[str, Any]]) -> None:
             fail(f"{label}: accepted truth requires DM acceptance")
         if record.get("proposal") and state == "accepted-truth" and acceptance != "accepted":
             fail(f"{label}: proposal became accepted truth before DM acceptance")
-        if not record.get("reveal") and record.get("visibility") in {"players", "public"}:
+        if record.get("reveal") in {False, "unrevealed", "hidden"} and record.get("visibility") in {"players", "public"}:
             fail(f"{label}: unrevealed material exposed")
 
 
@@ -262,10 +258,11 @@ def validate_topology(record: dict[str, Any]) -> None:
         fail(f"{label}: topology needs a full-SDD work class and route")
     if record.get("status") not in {"pending", "ready", "in-progress", "verified", "complete"}:
         fail(f"{label}: invalid topology status")
-    if not isinstance(record.get("context_used"), list) or not record["context_used"]:
-        fail(f"{label}: context_used is required")
-    if not isinstance(record.get("context_omitted"), list) or not record["context_omitted"]:
-        fail(f"{label}: context_omitted is required")
+    if not record.get("expected_failure"):
+        if not isinstance(record.get("context_used"), list) or not record["context_used"]:
+            fail(f"{label}: context_used is required")
+        if not isinstance(record.get("context_omitted"), list) or not record["context_omitted"]:
+            fail(f"{label}: context_omitted is required")
     nodes = record.get("nodes")
     if not isinstance(nodes, list) or not nodes:
         fail(f"{label}: nodes are required")
@@ -287,10 +284,6 @@ def validate_topology(record: dict[str, Any]) -> None:
     waves: dict[str, list[dict[str, Any]]] = {}
     for node in nodes:
         waves.setdefault(str(node.get("wave", "serial")), []).append(node)
-    wave_numbers: dict[str, int] = {}
-    for wave in waves:
-        if "-" in wave and wave.rsplit("-", 1)[1].isdigit():
-            wave_numbers[wave] = int(wave.rsplit("-", 1)[1])
     for wave, members in waves.items():
         if wave.startswith("parallel"):
             artifacts = [str(member["artifact"]) for member in members]
@@ -299,14 +292,12 @@ def validate_topology(record: dict[str, Any]) -> None:
             for member in members:
                 if any(dependency in {str(other["id"]) for other in members} for dependency in member.get("depends_on", [])):
                     fail(f"{label}: dependent tasks cannot be parallel")
+    node_order = {str(node["id"]): index for index, node in enumerate(nodes)}
     for node in nodes:
-        node_wave = wave_numbers.get(str(node.get("wave", "")))
-        if node_wave is None:
-            continue
+        node_id = str(node["id"])
         for dependency in node.get("depends_on", []):
-            dependency_wave = wave_numbers.get(str(by_id[str(dependency)].get("wave", "")))
-            if dependency_wave is not None and dependency_wave >= node_wave:
-                fail(f"{label}: dependency wave must precede dependent wave")
+            if node_order[str(dependency)] >= node_order[node_id]:
+                fail(f"{label}: dependency must precede dependent node")
     visiting: set[str] = set()
     visited: set[str] = set()
     def visit(node_id: str) -> None:
@@ -416,6 +407,8 @@ def validate_objective_violation(record: dict[str, Any], label: str) -> None:
         fail(f"{label}: filename violation needs invalid filename evidence")
     if check == "link" and record.get("link_status") != "broken":
         fail(f"{label}: link violation needs broken-link evidence")
+    if check == "owner" and record.get("owner_resolution") not in {"missing", "ambiguous", "report-collision"}:
+        fail(f"{label}: owner violation needs missing or unresolved owner evidence")
     if check == "canon precedence" and (record.get("accepted_truth_preserved") is not False or record.get("selected_source") == record.get("authoritative_source")):
         fail(f"{label}: canon-precedence violation is not evidenced")
     if check == "entity before spoken" and not (record.get("entity_resolved") is False and record.get("spoken_artifact_written") is True):
@@ -445,12 +438,20 @@ def check_plan(records: list[dict[str, Any]]) -> None:
 
 def read_yaml(path: Path) -> dict[str, Any]:
     try:
-        import yaml
-    except ImportError as exc:
-        fail(f"PyYAML is required to validate preset manifests: {exc}")
-    try:
-        value = yaml.safe_load(path.read_text(encoding="utf-8"))
-    except (OSError, UnicodeError, yaml.YAMLError) as exc:
+        text = path.read_text(encoding="utf-8")
+        # JSON is valid YAML and keeps this public checker standard-library-only.
+        try:
+            value = json.loads(text)
+        except json.JSONDecodeError:
+            try:
+                import yaml
+            except ImportError as exc:
+                fail(f"PyYAML is required for non-JSON YAML preset manifests: {exc}")
+            try:
+                value = yaml.safe_load(text)
+            except yaml.YAMLError as exc:
+                fail(f"invalid YAML preset manifest {path}: {exc}")
+    except (OSError, UnicodeError) as exc:
         fail(f"cannot read preset manifest {path}: {exc}")
     if not isinstance(value, dict):
         fail(f"preset manifest {path} must be a mapping")

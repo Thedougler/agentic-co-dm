@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "source_candidates": [
+    {
+      "candidate_id": "game-narrative-writing-1.1.0",
+      "source_url": "https://github.com/adaumann/speckit-preset-game-narrative-writing",
+      "release_or_commit": "v1.1.0",
+      "retrieved_at": "2026-09-16",
+      "license": "MIT",
+      "inspection": {
+        "manifest": true,
+        "templates": true,
+        "commands": true,
+        "scripts": true,
+        "hooks": true,
+        "evidence": "catalog metadata and pinned source review"
+      },
+      "trust": "staged-untrusted"
+    },
+    {
+      "candidate_id": "fiction-book-writing-1.9.0",
+      "source_url": "https://github.com/adaumann/speckit-preset-fiction-book-writing",
+      "release_or_commit": "v1.9.0",
+      "retrieved_at": "2026-09-16",
+      "license": "MIT",
+      "inspection": {
+        "manifest": true,
+        "templates": true,
+        "commands": true,
+        "scripts": true,
+        "hooks": true,
+        "evidence": "catalog metadata and pinned source review"
+      },
+      "trust": "staged-untrusted"
+    },
+    {
+      "candidate_id": "screenwriting-1.0.0",
+      "source_url": "https://github.com/adaumann/speckit-preset-screenwriting",
+      "release_or_commit": "v1.0.0",
+      "retrieved_at": "2026-09-16",
+      "license": "MIT",
+      "inspection": {
+        "manifest": true,
+        "templates": true,
+        "commands": true,
+        "scripts": true,
+        "hooks": true,
+        "evidence": "catalog metadata and pinned source review"
+      },
+      "trust": "staged-untrusted"
+    }
+  ],
+  "adaptations": [
+    {
+      "adaptation_id": "agency-conditional-state",
+      "source_candidate": "game-narrative-writing-1.1.0",
+      "artifact": "templates/hybrid-sdd-contract.md",
+      "selection": "actors, pressures, conditional possibilities, and open outcomes",
+      "authority": "existing campaign agency and Work contracts remain authoritative",
+      "verification": "hybrid-sdd-check agency and verify fixtures"
+    },
+    {
+      "adaptation_id": "continuity-and-readable-change",
+      "source_candidate": "fiction-book-writing-1.9.0",
+      "artifact": "templates/hybrid-sdd-contract.md",
+      "selection": "continuity evidence and observable change without authored player decisions",
+      "authority": "existing continuity, canon, reveal, and visibility rules remain authoritative",
+      "verification": "blind paired semantic review plus deterministic boundary checks"
+    },
+    {
+      "adaptation_id": "purposeful-presentation",
+      "source_candidate": "screenwriting-1.0.0",
+      "artifact": "templates/hybrid-sdd-contract.md",
+      "selection": "purposeful DM-facing presentation while leaving method and sequence open",
+      "authority": "existing Spec Kit lifecycle and DM acceptance boundary remain authoritative",
+      "verification": "hybrid-sdd-check verify compatibility and completion evidence"
+    }
+  ]
+}

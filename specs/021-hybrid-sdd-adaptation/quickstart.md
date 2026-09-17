@@ -38,11 +38,12 @@ The public commands for this feature are:
 
 ```bash
 python3 scripts/hybrid-sdd-check.py --help
+python3 scripts/hybrid-sdd-check.py preset --package .specify/presets/creative-llm-wiki
 python3 scripts/efficiency-trace.py --help
 .venv/bin/python specs/021-hybrid-sdd-adaptation/fixtures/check.py
 ```
 
-`scripts/hybrid-sdd-check.py` is the deterministic route/evidence checker, `scripts/efficiency-trace.py` is the redacted trace record/report checker, and `specs/021-hybrid-sdd-adaptation/fixtures/check.py` is the feature fixture checker with the single `PASS`/failure surface.
+`scripts/hybrid-sdd-check.py` is the deterministic route/evidence/preset checker, `scripts/efficiency-trace.py` is the redacted trace record/report checker, and `specs/021-hybrid-sdd-adaptation/fixtures/check.py` is the feature fixture checker with the single `PASS`/failure surface.
 
 
 ## Public fixture check
@@ -51,7 +52,7 @@ python3 scripts/efficiency-trace.py --help
 .venv/bin/python specs/021-hybrid-sdd-adaptation/fixtures/check.py
 ```
 
-Expected output is a single `PASS` summary. The checker uses temporary directories for trace and helper data and leaves no normal telemetry in the repository.
+Expected output is a single `PASS` summary. The checker validates the inactive repository-owned preset without installing it, uses temporary directories for trace and helper data, and leaves no normal telemetry in the repository.
 
 ## Validation scenarios
 
@@ -113,6 +114,7 @@ Expected: candidate metadata includes source, immutable release or commit, retri
 
 ```bash
 python3 scripts/hybrid-sdd-check.py --help
+python3 scripts/hybrid-sdd-check.py preset --package .specify/presets/creative-llm-wiki
 python3 scripts/efficiency-trace.py --help
 specify integration status --json
 ./scripts/check-omp-baseline.sh
@@ -134,12 +136,13 @@ The feature runner is the single integration surface:
 .venv/bin/python specs/021-hybrid-sdd-adaptation/fixtures/check.py
 ```
 
-It returns one `PASS` summary only after route, evidence, telemetry, retention, promotion, and compatibility fixtures pass. `specify integration status --json` must report `status: ok`, and `./scripts/check-omp-baseline.sh` must exit `0`; either failure remains an actionable repository failure rather than a fixture pass.
+It returns one `PASS` summary only after route, evidence, telemetry, preset, retention, promotion, and compatibility fixtures pass. `specify integration status --json` must report `status: ok`, and `./scripts/check-omp-baseline.sh` must exit `0`; either failure remains an actionable repository failure rather than a fixture pass.
 
 ## Observed validation
 
 On 2026-09-16:
 
-- `.venv/bin/python specs/021-hybrid-sdd-adaptation/fixtures/check.py` → `PASS: hybrid SDD route, evidence, telemetry, promotion, retention, and compatibility fixtures`
+- `python3 scripts/hybrid-sdd-check.py preset --package .specify/presets/creative-llm-wiki` → `PASS preset: creative-llm-wiki package validated`
+- `.venv/bin/python specs/021-hybrid-sdd-adaptation/fixtures/check.py` → `PASS: hybrid SDD route, evidence, telemetry, preset, promotion, retention, and compatibility fixtures`
 - `specify integration status --json` → `status: ok`, default `omp`, four installed integrations, zero missing or modified managed files
 - `./scripts/check-omp-baseline.sh` → `omp-speckit-baseline: pass`

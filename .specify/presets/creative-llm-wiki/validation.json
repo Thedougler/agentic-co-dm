@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "validated",
+  "validated_by": "feature-local fixture checker",
+  "validated_at": "2026-09-16",
+  "existing_authorities_preserved": true,
+  "installed_third_party_presets": false,
+  "third_party_runtime_dependencies": [],
+  "managed_spec_kit_files_modified": false,
+  "registry_activation": "inactive-unregistered-package",
+  "checks": [
+    "manifest-shape",
+    "template-path-safety",
+    "provenance-completeness",
+    "selective-adaptation",
+    "no-third-party-runtime-dependency",
+    "lifecycle-and-authority-preservation"
+  ]
+}

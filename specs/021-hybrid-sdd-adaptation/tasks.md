@@ -17,9 +17,9 @@ description: "Task list for feature implementation"
 
 **Purpose**: Establish maintainer policy, local telemetry boundaries, and the feature fixture contract without editing generated Spec Kit integrations.
 
-- [ ] T001 [P] Create the maintainer-owned efficiency policy with `schema_version`, `retention_days: 90`, `prep`/`wrapup` comparison classes, same-kind pairing, reduction thresholds, risk paths, canaries, shadow review, human review, rollback gates, and the pending native-tokenizer governance measurement gap in `config/efficiency.yaml`
-- [ ] T002 [P] Add gitignore rules for `.local/efficiency/traces.jsonl`, quarantine output, and retention artifacts while leaving committed sanitized fixtures trackable in `.gitignore`
-- [ ] T003 [P] Define sanitized fixture containers, stable scenario identifiers, route/evidence/telemetry record shapes, and the no-raw-content boundary in `specs/021-hybrid-sdd-adaptation/fixtures/README.md`
+- [X] T001 [P] Create the maintainer-owned efficiency policy with `schema_version`, `retention_days: 90`, `prep`/`wrapup` comparison classes, same-kind pairing, reduction thresholds, risk paths, canaries, shadow review, human review, rollback gates, and the pending native-tokenizer governance measurement gap in `config/efficiency.yaml`
+- [X] T002 [P] Add gitignore rules for `.local/efficiency/traces.jsonl`, quarantine output, and retention artifacts while leaving committed sanitized fixtures trackable in `.gitignore`
+- [X] T003 [P] Define sanitized fixture containers, stable scenario identifiers, route/evidence/telemetry record shapes, and the no-raw-content boundary in `specs/021-hybrid-sdd-adaptation/fixtures/README.md`
 
 ---
 
@@ -29,9 +29,9 @@ description: "Task list for feature implementation"
 
 **CRITICAL**: User-story implementation depends on this phase. Do not edit generated `.agents/skills/speckit-*`, `.omp/commands/speckit.*`, `.claude/skills/speckit-*`, `.grok/skills/speckit-*`, or managed `.specify/templates/*`.
 
-- [ ] T004 [P] Replace the compact Spec Kit section outside the managed block with a route pointer that classifies substantial work, preserves routine campaign skill routing, and links to the detailed contract in `AGENTS.md`
-- [ ] T005 [P] Write the progressive-disclosure hybrid SDD procedure covering classification, minimum context, canonical owners, agency, canon/DM acceptance, topology, verification, telemetry, promotion, and Spec Kit compatibility in `docs/agents/hybrid-sdd.md`
-- [ ] T006 Record the generated-file preservation boundary, public command surfaces, and native-tokenizer governance prerequisite in `specs/021-hybrid-sdd-adaptation/quickstart.md`
+- [X] T004 [P] Replace the compact Spec Kit section outside the managed block with a route pointer that classifies substantial work, preserves routine campaign skill routing, and links to the detailed contract in `AGENTS.md`
+- [X] T005 [P] Write the progressive-disclosure hybrid SDD procedure covering classification, minimum context, canonical owners, agency, canon/DM acceptance, topology, verification, telemetry, promotion, and Spec Kit compatibility in `docs/agents/hybrid-sdd.md`
+- [X] T006 Record the generated-file preservation boundary, public command surfaces, and native-tokenizer governance prerequisite in `specs/021-hybrid-sdd-adaptation/quickstart.md`
 
 **Checkpoint**: Route policy, detailed contract, maintainer thresholds, local-trace boundary, and fixture conventions are defined; no story checker can introduce a second authority.
 
@@ -45,10 +45,10 @@ description: "Task list for feature implementation"
 
 ### Implementation for User Story 1
 
-- [ ] T007 [P] [US1] Add agent-system, campaign-architecture, and creative-system route fixtures with `work_class`, `route: full-sdd`, rationale evidence, and scope boundaries in `specs/021-hybrid-sdd-adaptation/fixtures/routes/classification-system.json`
-- [ ] T008 [P] [US1] Add engineering and routine-NPC fixtures proving ordinary engineering SDD and the existing `npc-design` skill route in `specs/021-hybrid-sdd-adaptation/fixtures/routes/classification-routine.json`
-- [ ] T009 [P] [US1] Add entity-collision, proposed-canon, and mixed-request fixtures proving owner-resolution evidence, proposal status, and separate full-SDD/existing-skill slices in `specs/021-hybrid-sdd-adaptation/fixtures/routes/classification-boundaries.json`
-- [ ] T010 [US1] Implement classification CLI parsing and validation for the exact classes `engineering`, `agent-system`, `campaign-architecture`, and `creative-system`, `full-sdd` versus `existing-skill` routes, rationale boundaries, routine content, and mixed-request splitting in `scripts/hybrid-sdd-check.py`
+- [X] T007 [P] [US1] Add agent-system, campaign-architecture, and creative-system route fixtures with `work_class`, `route: full-sdd`, rationale evidence, and scope boundaries in `specs/021-hybrid-sdd-adaptation/fixtures/routes/classification-system.json`
+- [X] T008 [P] [US1] Add engineering and routine-NPC fixtures proving ordinary engineering SDD and the existing `npc-design` skill route in `specs/021-hybrid-sdd-adaptation/fixtures/routes/classification-routine.json`
+- [X] T009 [P] [US1] Add entity-collision, proposed-canon, and mixed-request fixtures proving owner-resolution evidence, proposal status, and separate full-SDD/existing-skill slices in `specs/021-hybrid-sdd-adaptation/fixtures/routes/classification-boundaries.json`
+- [X] T010 [US1] Implement classification CLI parsing and validation for the exact classes `engineering`, `agent-system`, `campaign-architecture`, and `creative-system`, `full-sdd` versus `existing-skill` routes, rationale boundaries, routine content, and mixed-request splitting in `scripts/hybrid-sdd-check.py`
 
 **Checkpoint**: US1 is independently runnable through the classification CLI and does not create a feature directory for routine content.
 
@@ -62,10 +62,10 @@ description: "Task list for feature implementation"
 
 ### Implementation for User Story 2
 
-- [ ] T011 [P] [US2] Add regional-conflict evidence for actors, factions, locations, clocks, relationships, information states, pressures, conditional opportunities, continuity, and open outcomes in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/agency.json`
-- [ ] T012 [P] [US2] Add reputation-system evidence for persistent state, faction behavior changes, information access changes, player-caused changes, and refusal/avoidance/negotiation response surfaces in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/reusable-system.json`
-- [ ] T013 [P] [US2] Add negative agency fixtures for mandatory allegiance, authored player decisions, fixed scene sequence, fixed ending, predetermined route, and missing independent-world motion in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/agency-failures.json`
-- [ ] T014 [US2] Extend the agency verifier to require observable value, actors, pressures, open outcomes, conditional possibilities, independent motion, if-nobody-intervenes consequences, player-owned decisions, and continuity while rejecting screenplay constraints in `scripts/hybrid-sdd-check.py`
+- [X] T011 [P] [US2] Add regional-conflict evidence for actors, factions, locations, clocks, relationships, information states, pressures, conditional opportunities, continuity, and open outcomes in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/agency.json`
+- [X] T012 [P] [US2] Add reputation-system evidence for persistent state, faction behavior changes, information access changes, player-caused changes, and refusal/avoidance/negotiation response surfaces in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/reusable-system.json`
+- [X] T013 [P] [US2] Add negative agency fixtures for mandatory allegiance, authored player decisions, fixed scene sequence, fixed ending, predetermined route, and missing independent-world motion in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/agency-failures.json`
+- [X] T014 [US2] Extend the agency verifier to require observable value, actors, pressures, open outcomes, conditional possibilities, independent motion, if-nobody-intervenes consequences, player-owned decisions, and continuity while rejecting screenplay constraints in `scripts/hybrid-sdd-check.py`
 
 **Checkpoint**: US2 is independently verifiable from sanitized evidence and keeps creative judgment separate from objective agency-boundary checks.
 
@@ -79,10 +79,10 @@ description: "Task list for feature implementation"
 
 ### Implementation for User Story 3
 
-- [ ] T015 [P] [US3] Add title, alias, stem, deterministic-path, wikilink, QMD, manifest, duplicate-candidate, equivalent-owner, and uncertain-collision evidence in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/ownership.json`
-- [ ] T016 [P] [US3] Add current-truth, affected-truth, proposal, provenance, reveal, visibility, DM-acceptance, canon-state, and filing-state evidence in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/canon-boundary.json`
-- [ ] T017 [P] [US3] Add safe deterministic maintenance and invalid accept-before-write evidence, distinguishing `not-required` maintenance from DM-gated fact changes, in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/maintenance-boundary.json`
-- [ ] T018 [US3] Extend canon verification with owner reuse and collision reporting, `unchanged`/`proposal`/`accepted-truth` states, acceptance transitions, reveal/visibility protection, accept-before-write hard gates, and non-fact maintenance handling in `scripts/hybrid-sdd-check.py`
+- [X] T015 [P] [US3] Add title, alias, stem, deterministic-path, wikilink, QMD, manifest, duplicate-candidate, equivalent-owner, and uncertain-collision evidence in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/ownership.json`
+- [X] T016 [P] [US3] Add current-truth, affected-truth, proposal, provenance, reveal, visibility, DM-acceptance, canon-state, and filing-state evidence in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/canon-boundary.json`
+- [X] T017 [P] [US3] Add safe deterministic maintenance and invalid accept-before-write evidence, distinguishing `not-required` maintenance from DM-gated fact changes, in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/maintenance-boundary.json`
+- [X] T018 [US3] Extend canon verification with owner reuse and collision reporting, `unchanged`/`proposal`/`accepted-truth` states, acceptance transitions, reveal/visibility protection, accept-before-write hard gates, and non-fact maintenance handling in `scripts/hybrid-sdd-check.py`
 
 **Checkpoint**: US3 is independently verifiable without writing wiki facts, introducing opaque IDs, or adding a second lifecycle or owner model.
 
@@ -96,10 +96,10 @@ description: "Task list for feature implementation"
 
 ### Implementation for User Story 4
 
-- [ ] T019 [P] [US4] Add a valid dependency graph from grounding/retrieval through owner resolution, missing owners, rules/system/world state, relationships/agendas, playable situations, presentation, continuity verification, Work proposal, DM acceptance, filing/promotion, and deterministic maintenance in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/topology.json`
-- [ ] T020 [P] [US4] Add valid disjoint parallel waves plus invalid shared-writer and dependent-parallel cases with artifact owners and evidence in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/parallel-ownership.json`
-- [ ] T021 [P] [US4] Add engineering-plan evidence for technical context, architecture, storage, testing, platform, performance, constraints, and source structure without campaign-only vocabulary in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/engineering-plan.json`
-- [ ] T022 [US4] Extend topology and plan verification with dependency resolution, cycle detection, wave ordering, disjoint canonical write surfaces, `context_used`/`context_omitted`, and engineering-versus-creative vocabulary checks in `scripts/hybrid-sdd-check.py`
+- [X] T019 [P] [US4] Add a valid dependency graph from grounding/retrieval through owner resolution, missing owners, rules/system/world state, relationships/agendas, playable situations, presentation, continuity verification, Work proposal, DM acceptance, filing/promotion, and deterministic maintenance in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/topology.json`
+- [X] T020 [P] [US4] Add valid disjoint parallel waves plus invalid shared-writer and dependent-parallel cases with artifact owners and evidence in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/parallel-ownership.json`
+- [X] T021 [P] [US4] Add engineering-plan evidence for technical context, architecture, storage, testing, platform, performance, constraints, and source structure without campaign-only vocabulary in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/engineering-plan.json`
+- [X] T022 [US4] Extend topology and plan verification with dependency resolution, cycle detection, wave ordering, disjoint canonical write surfaces, `context_used`/`context_omitted`, and engineering-versus-creative vocabulary checks in `scripts/hybrid-sdd-check.py`
 
 **Checkpoint**: US4 is independently verifiable from topology fixtures and reports only real dependency, context, or ownership constraints.
 
@@ -113,15 +113,15 @@ description: "Task list for feature implementation"
 
 ### Implementation for User Story 5
 
-- [ ] T023 [US5] Extend verification with closed-vocabulary, schema, filename, link, owner, lifecycle, canon-precedence, entity-before-spoken, DM-explicitness, reveal, visibility, accept-before-write, completion-evidence, semantic-boundary, and Spec Kit compatibility checks in `scripts/hybrid-sdd-check.py`
-- [ ] T024 [US5] Implement `record` validation for explicit `schema_version`, `prep`/`wrapup` sitting classes, produced/accepted/failed/incomplete Work, complete/measurement-gap status, model/tokenizer identity, non-negative trajectory and retrieval counts, redacted-only fields, and one exclusive primary source owner per token occurrence in `scripts/efficiency-trace.py`
-- [ ] T025 [US5] Implement labeled report metrics for trajectory/input/output/source-component/retrieval tokens, retries, hard failures, DM acceptance/revisions, runtime failures, useful/unused retrieval, status counts, denominators, and same-kind job groups in `scripts/efficiency-trace.py`
-- [ ] T026 [US5] Implement additive schema compatibility, incompatible-record quarantine without history rewriting, explicit measurement gaps, 90-day retention, same-family comparison rejection, and low/moderate/high-risk promotion gates with pinned pairs, 5% median reduction, canary/shadow/human review, and rollback in `scripts/efficiency-trace.py`
-- [ ] T027 [P] [US5] Add complete, produced/accepted/failed/incomplete, disabled, pre-governance, fallback, attribution, additive-schema, incompatible-schema, paired-promotion, and retention records under `specs/021-hybrid-sdd-adaptation/fixtures/telemetry/`
-- [ ] T028 [P] [US5] Add deterministic hard-gate, independent blind paired semantic-review boundary, completion-evidence, and managed-integration compatibility records in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/verification.json`
-- [ ] T029 [P] [US5] Create the repository-owned `creative-llm-wiki` meta-preset package with manifest, reviewed selective adaptations, source-candidate provenance, validation metadata, and no third-party runtime dependency under `.specify/presets/creative-llm-wiki/`
-- [ ] T030 [US5] Implement the feature-local fixture runner with isolated temporary trace/quarantine paths, route/evidence/telemetry/preset checks, one `PASS` summary, and failure exit status in `specs/021-hybrid-sdd-adaptation/fixtures/check.py`
-- [ ] T031 [US5] Document public CLI commands, fixture expectations, report labels and denominators, promotion paths, preset staging, compatibility checks, and native-tokenizer governance blocking in `specs/021-hybrid-sdd-adaptation/quickstart.md`
+- [X] T023 [US5] Extend verification with closed-vocabulary, schema, filename, link, owner, lifecycle, canon-precedence, entity-before-spoken, DM-explicitness, reveal, visibility, accept-before-write, completion-evidence, semantic-boundary, and Spec Kit compatibility checks in `scripts/hybrid-sdd-check.py`
+- [X] T024 [US5] Implement `record` validation for explicit `schema_version`, `prep`/`wrapup` sitting classes, produced/accepted/failed/incomplete Work, complete/measurement-gap status, model/tokenizer identity, non-negative trajectory and retrieval counts, redacted-only fields, and one exclusive primary source owner per token occurrence in `scripts/efficiency-trace.py`
+- [X] T025 [US5] Implement labeled report metrics for trajectory/input/output/source-component/retrieval tokens, retries, hard failures, DM acceptance/revisions, runtime failures, useful/unused retrieval, status counts, denominators, and same-kind job groups in `scripts/efficiency-trace.py`
+- [X] T026 [US5] Implement additive schema compatibility, incompatible-record quarantine without history rewriting, explicit measurement gaps, 90-day retention, same-family comparison rejection, and low/moderate/high-risk promotion gates with pinned pairs, 5% median reduction, canary/shadow/human review, and rollback in `scripts/efficiency-trace.py`
+- [X] T027 [P] [US5] Add complete, produced/accepted/failed/incomplete, disabled, pre-governance, fallback, attribution, additive-schema, incompatible-schema, paired-promotion, and retention records under `specs/021-hybrid-sdd-adaptation/fixtures/telemetry/`
+- [X] T028 [P] [US5] Add deterministic hard-gate, independent blind paired semantic-review boundary, completion-evidence, and managed-integration compatibility records in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/verification.json`
+- [X] T029 [P] [US5] Create the repository-owned `creative-llm-wiki` meta-preset package with manifest, reviewed selective adaptations, source-candidate provenance, validation metadata, and no third-party runtime dependency under `.specify/presets/creative-llm-wiki/`
+- [X] T030 [US5] Implement the feature-local fixture runner with isolated temporary trace/quarantine paths, route/evidence/telemetry/preset checks, one `PASS` summary, and failure exit status in `specs/021-hybrid-sdd-adaptation/fixtures/check.py`
+- [X] T031 [US5] Document public CLI commands, fixture expectations, report labels and denominators, promotion paths, preset staging, compatibility checks, and native-tokenizer governance blocking in `specs/021-hybrid-sdd-adaptation/quickstart.md`
 
 **Checkpoint**: US5 is independently runnable and preserves specify, clarify, plan, checklist, tasks, analyze, implement, converge, git, and agent-context behavior.
 
@@ -131,10 +131,10 @@ description: "Task list for feature implementation"
 
 **Purpose**: Validate the complete feature without modifying campaign content or managed Spec Kit artifacts.
 
-- [ ] T032 [P] Run `.venv/bin/python specs/021-hybrid-sdd-adaptation/fixtures/check.py` and record the observed route, evidence, telemetry, preset, promotion, retention, and compatibility `PASS` result in `specs/021-hybrid-sdd-adaptation/quickstart.md`
-- [ ] T033 [P] Run `specify integration status --json` and record `status: ok`, default `omp`, four integrations, and zero missing/modified managed files in `specs/021-hybrid-sdd-adaptation/quickstart.md`
-- [ ] T034 [P] Run `./scripts/check-omp-baseline.sh` and record its passing result in `specs/021-hybrid-sdd-adaptation/quickstart.md`
-- [ ] T035 Audit `specs/021-hybrid-sdd-adaptation/` and all feature-owned source paths for generated-file edits, raw-content telemetry, duplicate authorities, missing owner/evidence fields, invalid vocabulary, unlabelled metrics, and missing preset provenance; record corrections in the owning files
+- [X] T032 [P] Run `.venv/bin/python specs/021-hybrid-sdd-adaptation/fixtures/check.py` and record the observed route, evidence, telemetry, preset, promotion, retention, and compatibility `PASS` result in `specs/021-hybrid-sdd-adaptation/quickstart.md`
+- [X] T033 [P] Run `specify integration status --json` and record `status: ok`, default `omp`, four integrations, and zero missing/modified managed files in `specs/021-hybrid-sdd-adaptation/quickstart.md`
+- [X] T034 [P] Run `./scripts/check-omp-baseline.sh` and record its passing result in `specs/021-hybrid-sdd-adaptation/quickstart.md`
+- [X] T035 Audit `specs/021-hybrid-sdd-adaptation/` and all feature-owned source paths for generated-file edits, raw-content telemetry, duplicate authorities, missing owner/evidence fields, invalid vocabulary, unlabelled metrics, and missing preset provenance; record corrections in the owning files
 
 ---
 

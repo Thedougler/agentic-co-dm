@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "preset": {
+    "id": "creative-llm-wiki",
+    "name": "Creative LLM Wiki",
+    "version": "1.0.0",
+    "description": "Repository-owned Spec Kit meta-preset for evidence-grounded creative and wiki workflows.",
+    "author": "repository maintainers",
+    "repository": "repository-owned",
+    "license": "MIT"
+  },
+  "requires": {
+    "speckit_version": ">=1.0.8.dev0"
+  },
+  "provides": {
+    "templates": [
+      {
+        "type": "template",
+        "name": "hybrid-sdd-contract",
+        "file": "templates/hybrid-sdd-contract.md",
+        "description": "Selective hybrid SDD routing and completion evidence contract"
+      }
+    ]
+  },
+  "tags": ["creative", "llm-wiki", "hybrid-sdd", "evidence"],
+  "hybrid_sdd": {
+    "package_role": "meta-preset",
+    "provenance_file": "provenance.json",
+    "validation_file": "validation.json",
+    "third_party_runtime_dependencies": []
+  }
+}

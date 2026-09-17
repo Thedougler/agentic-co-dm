@@ -17,7 +17,7 @@
       "canon_state": "proposal",
       "dm_acceptance": "pending"
     },
-    "request": "Assess a proposed durable campaign entity whose title or alias matches an existing owner; reuse the owner when equivalent, otherwise report the collision before proposing a new owner. Keep any future event as a proposal pending DM acceptance."
+    "request": "Assess a proposed durable campaign structure entity whose title or alias matches an existing owner; reuse the owner when equivalent, otherwise report the collision before proposing a new owner. Keep any future event as a proposal pending DM acceptance."
   },
   {
     "scenario_id": "G-mixed-request",
@@ -56,6 +56,6 @@
         }
       ]
     },
-    "request": "Change agent-facing routing behavior and also prepare one ordinary NPC using the established campaign-content process; separate the system change from the routine NPC slice."
+    "request": "Change agent-facing routing behavior and also prepare one ordinary NPC using the established campaign-content process; separate the system-changing slice from the routine content slice."
   }
 ]

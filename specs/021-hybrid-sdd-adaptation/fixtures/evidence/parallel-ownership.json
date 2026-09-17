@@ -5,6 +5,8 @@
     "work_class": "creative-system",
     "route": "full-sdd",
     "status": "complete",
+    "context_used": ["spec.md", "plan.md", "owner-resolution"],
+    "context_omitted": ["raw-content", "unrelated-work"],
     "nodes": [
       {
         "id": "grounding",
