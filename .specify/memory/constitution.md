@@ -1,11 +1,12 @@
 <!--
 Sync Impact Report
-- Version change: 1.35.0 → 1.36.0 (MINOR)
+- Version change: 1.36.0 → 1.37.0 (MINOR)
 - Modified principles:
-  - XVII. Autonomous Operation → XVII. Autonomous Operation (legacy nonconformance policy added)
+  - IV. Behavioral Tests → IV. Behavioral Tests (agentic behavior acceptance and Luna validation added)
 - Added sections: None
 - Removed sections: None
-- Follow-up TODOs: None
+- Follow-up TODOs:
+  - Luna was unavailable; the Grok-backed reviewer and independent validator both failed on credit limits.
 -->
 # Agentic Co-DM Constitution
 
@@ -47,7 +48,14 @@ where it exists. New system behavior MUST be expressed by a failing test before 
 that passes it, one slice at a time. Tests MUST NOT pin internals, recompute their own expected
 values, or bulk-speculate about imagined behavior.
 
-Rationale: behavior-focused tests protect contracts through refactoring.
+For changes to code, skills, instructions, templates, linting, or any other agent-facing surface,
+resulting agentic behavior is the primary acceptance target. Validation MUST exercise that behavior
+and MUST NOT stop at code correctness, syntax, or file presence. Luna subagents SHOULD perform
+this validation when available; otherwise an equivalent independent agent validator MUST be used
+and the unavailable-Luna gap MUST be recorded.
+
+Rationale: behavior-focused tests protect contracts through refactoring; agent validation confirms
+that the system follows user intent in operation, not merely in source.
 
 ### V. Single Source of Truth
 
@@ -383,4 +391,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.36.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 1.37.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17

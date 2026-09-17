@@ -33,7 +33,7 @@ tier: supporting
 ## Connections
 
 - [[aleksander-malone]] owns the NPC page, statblock, Front clock, and relationships.
-- [[shepherd-grigori]] owns the quarry's own page, CR 19 [[Hierarch]] statblock, and the [[Khlysty]] thread he advances.
+- [[shepherd-grigori]] owns the quarry's own page, CR 19 [[Hierarch]] statblock, and the [[khlysty-the-flock|Khlysty]] thread he advances.
 - [[dravosi-crown]] owns the institutional authority that holds Malone's leash. The leash is long by design: [[sarns-landing]] taught the Crown what happens when the leash is short.
 - [[Blackrule]] owns the chapterhouse Malone returns to between hunts.
 - [[perrin-black-jaw]] carries the dormant heresy thread — "Answer the Next Confirmed Heresy" waits on the Crown confirming his unwitting pact with [[Auralis]].
@@ -67,7 +67,7 @@ What lengths will the Crown go to in pursuit of their goals?
 
 ### Live Branches
 
-Single direction until the Grigori fork forces a choice. The crew sides with the Shepherd or helps kill him. Walking away is also an answer: Malone reaches Grigori alone, and what he does with that is not gentle. The fork arrives through the [[Khlysty]] thread or through Malone's own demand, whichever surfaces first. Either transforms the situation.
+Single direction until the Grigori fork forces a choice. The crew sides with the Shepherd or helps kill him. Walking away is also an answer: Malone reaches Grigori alone, and what he does with that is not gentle. The fork arrives through the [[khlysty-the-flock|Khlysty]] thread or through Malone's own demand, whichever surfaces first. Either transforms the situation.
 
 ### Climax Readiness
 

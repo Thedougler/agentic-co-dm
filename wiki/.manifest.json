@@ -8357,5 +8357,14 @@
     "project": "shattered-sea",
     "packet": "ingest-raw-2026-09-13-gh-2"
   },
-  "last_updated": "2026-09-16T21:55:57Z"
+  "last_updated": "2026-09-17T22:02:13.680684+00:00",
+  "page_identity_transitions": [
+    {
+      "page_path": "entities/faction/Khlysty.md",
+      "transition": "merged_into",
+      "target": "entities/faction/khlysty-the-flock.md",
+      "reason": "Merged duplicate Khlysty faction listing into canonical Khlysty / the Flock page.",
+      "timestamp": "2026-09-17T22:02:13.680684+00:00"
+    }
+  ]
 }

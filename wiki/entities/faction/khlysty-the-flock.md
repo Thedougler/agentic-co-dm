@@ -5,17 +5,18 @@ tags: [shattered-sea, faction]
 aliases: [Khlysty, the Flock, Khlysty - the Flock]
 sources:
   - "Khlysty - the Flock.md"
+  - "campaign-os:khlysty.md"
 summary: Ecstatic Otel Karn tradition that treats flesh as spirit's vehicle and spreads blood anchors through noble houses.
 provenance:
   extracted: 0.85
-  inferred: 0.15
-  ambiguous: 0.0
+  inferred: 0.10
+  ambiguous: 0.05
 base_confidence: 0.38
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T03:04:18Z
-updated: 2026-09-13T03:04:18Z
+updated: 2026-09-17T22:00:08Z
 type: faction
 reveal: unrevealed
 campaign: shattered-sea
@@ -86,14 +87,13 @@ flexGrow=1
 - **Strength.** The Flock can hide its work inside ordinary healing and distribute its investment across multiple noble houses.
 - **Vulnerability.** The tradition's origin is misunderstood by its current leader, and the Dravosi Crown has begun hunting the noble-house pattern.
 - **Opportunity.** A court that accepts a quiet cure can become another anchor before it understands what entered its bloodline.
+- **Doctrine.** The Turning joins dance, song, fasting, confession, and flagellation into a collective practice that seeks visions, healing, and altered states.
 
 ## Active Agenda
 
 **Goal:** Establish an army of blood anchors across the [[dravosi-crown]], [[tessarine-concordat]], and [[chain-council]].
 
 **Why:** A distributed network would make blood-thinning and failing coherence irrelevant.
-
-**Clock:** ○ ○ ○ ○ ○ ○ (progress unknown)
 
 **Next move:** Extend a quiet cure and dormant blood-thread into another noble house. ^[inferred]
 
@@ -105,8 +105,7 @@ flexGrow=1
 
 **Player opening:** The party can expose a cure, protect a targeted house, interrupt access to a patient, or force the Flock to reveal which houses it has already touched.
 
-> [!danger] If completed
-> Multiple noble houses across the three named powers carry blood anchors, leaving no single heir or court as a point of failure.
+**If completed:** Multiple noble houses across the three named powers carry blood anchors, leaving no single heir or court as a point of failure.
 
 ## Assets
 
@@ -122,13 +121,16 @@ flexGrow=1
 | [[shepherd-grigori]] | Korabl | To spread the survival trick and claim its authorship. | He does not know the technique predates him. |
 | [[Otho]] | Source of the old teaching | No known current cult role. | Unaware that centuries have passed. |
 
+### Chain of Action
 **Who decides:** [[shepherd-grigori]] acts as Korabl.
 
 **Who interprets those orders:** The Flock's local adherents; their structure is otherwise unknown.
 
 **Who actually carries them out:** Members who perform the quiet cures and maintain blood-threaded houses.
 
-**If leadership disappears:** The source does not establish whether the tradition would fragment or continue through existing anchors.
+**If leadership disappears:** The sect loses its designed coherence; whether existing anchors persist is unresolved.
+
+No formal roster or hierarchy exists beyond Grigori. There is no second-in-command, and the sect is designed to lose coherence when he falls.
 
 ## Territory & Touchpoints
 
@@ -157,31 +159,21 @@ flexGrow=1
 
 ## Running the Faction
 
-### When encountered
+| Situation | Run it |
+| --- | --- |
+| **When encountered** | Flock members are performing a quiet cure or discussing how a body can preserve what the spirit cannot hold alone. |
+| **When helped** | A successful cure becomes easier to conceal, and the Flock gains another body or house through which to extend its network. |
+| **When opposed** | The Flock protects the pattern of its work first, abandoning a single patient or contact if that keeps the wider network hidden. |
+| **When ignored** | Threads multiply across noble houses, and another court, dying heir, and quiet cure advance Grigori's army while the Crown argues over confirmation. |
+| **When broken** | The source does not establish what survives if the Flock loses Grigori or its access to Otel Karn. |
 
-Flock members are performing a quiet cure or discussing how a body can preserve what the spirit cannot hold alone.
-
-### When helped
-
-A successful cure becomes easier to conceal, and the Flock gains another body or house through which to extend its network.
-
-### When opposed
-
-The Flock protects the pattern of its work first, abandoning a single patient or contact if that keeps the wider network hidden.
-
-### When ignored
-
-Threads multiply across noble houses, and another court, dying heir, and quiet cure advance Grigori's army while the Crown argues over confirmation.
-
-### When broken
-
-The source does not establish what survives if the Flock loses Grigori or its access to Otel Karn.
-
-## Secrets
-
-> [!secret] Hidden truth
-> Grigori did not invent the blood-anchor technique. Otho's careless bargain stopped death from working on Otel Karn generations ago, while Otho remains unaware that centuries have passed. Grigori does not know that Otho still lives or that the technique predates him.
 
 ## History
 
 - **The old teaching on Otel Karn.** [[Otho]] is the archfey source of the teaching that became the Flock's spiritual foundation.
+
+## Hidden Agenda
+
+**Concealed motive:** When Grigori heals someone, he binds his phylactery into that person's life. The patient joins the Flock unaware, and their survival sustains him. Confirmed threads include a Tessarine heir in [[calven-and-calveno]] and a Dravosi merchant-lord's daughter.
+
+**Concealed allegiance:** Grigori believes he authored the blood-anchor technique, but [[Otho]]'s old teaching on [[otel-karn]] predates him. The Turning and healings are genuinely warm; the horror is that Grigori has built an unkillable afterlife from the gratitude of desperate families.

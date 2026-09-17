@@ -42,7 +42,7 @@ relationships:
 
 Grigori is a wandering holy man and healer working the noble courts of [[crown-islands|the Crown Islands]], curing heirs of diseases and wounds past cure. Poison, drowning, and worse have all failed to kill him, and those he heals rarely ask how. He never sleeps. Check on him at any hour and he's awake. He prays at 3 a.m. in a strange tongue, and if caught at it, he finishes calmly and faces whoever's watching. He is currently in [[calven-and-calveno]] on business of his own, expected to take one to two weeks, and hasn't shared with the Surety's crew what he knows about Crown politics or what his magic actually is.
 
-Grigori is in truth an undead sorcerer, shepherd of the [[Khlysty]], a secret mystical flock threaded through Dravosi and Tessarine noble courts. His healing is real and complete, but it also binds the patient as an unwitting phylactery thread, and as long as a bound heir lives, he cannot be permanently destroyed. The binding happens without the patient's knowledge, and his warmth toward them is entirely authentic. CHA 21 is not an act. He sees himself as a benefactor and savior to the people he heals. The binding began by accident, when healing a noble gutted in a duel, he transfused his own blood out of necessity and afterward found he could sense that noble's presence and nudge them. His blood, alive in someone else's body, kept a thread back to him. This is the source of the necrotic, blood-aspected magic that failed [[perrin-black-jaw|Perrin]]'s Arcana check. Each thread dilutes generation to generation unless refreshed with a light-touch renewal (a courtesy visit, a small kindness), well short of the drastic Heir ritual a [[Hierarch]] needs once a line goes cold for centuries, a threshold Grigori has never approached with only two confirmed binds. He believes himself the only being alive who has ever found this trick. Nothing has ever put that belief to the test.
+Grigori is in truth an undead sorcerer, shepherd of the [[khlysty-the-flock|Khlysty]], a secret mystical flock threaded through Dravosi and Tessarine noble courts. His healing is real and complete, but it also binds the patient as an unwitting phylactery thread, and as long as a bound heir lives, he cannot be permanently destroyed. The binding happens without the patient's knowledge, and his warmth toward them is entirely authentic. CHA 21 is not an act. He sees himself as a benefactor and savior to the people he heals. The binding began by accident, when healing a noble gutted in a duel, he transfused his own blood out of necessity and afterward found he could sense that noble's presence and nudge them. His blood, alive in someone else's body, kept a thread back to him. This...
 
 > [!mechanic]
 > **Tradition:** Arcane. **School:** Necromancy. **Spell analogue(s):** *[[Cure Wounds]]* (healing component only).
@@ -97,7 +97,7 @@ Clue 2: the unidentifiable magic that Perrin already failed to identify in Sessi
 > [!check] Arcana — Unidentifiable Magic
 > DC 22 (Perrin's DC 18 already failed in Session 03). **Success:** identifies necrotic energy channelled through the caster's own body as a living focus. **Success by 5+:** the caster's body itself isn't normal.
 
-Clue 3: the Khlysty mark he wears, spotted only by someone who already knows [[Khlysty]] iconography.
+Clue 3: the Khlysty mark he wears, spotted only by someone who already knows [[khlysty-the-flock|Khlysty]] iconography.
 
 > [!check] Religion/History — The Khlysty Mark
 > DC 18, requires having seen Khlysty iconography elsewhere first. **Success:** recognizes the small sect symbol he wears, not displayed but not hidden. **Failure:** reads as generic religious iconography.
@@ -114,7 +114,7 @@ Against a level-4 crew, CR 19 makes a real fight a death scenario. It's one he d
 
 ## Connections
 
-- [[Khlysty]]. Shepherd source of his healing.
+- [[khlysty-the-flock|Khlysty]]. Shepherd source of his healing.
 
 - [[calven-and-calveno]]. Current destination for his business.
 

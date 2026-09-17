@@ -51,7 +51,7 @@ relationships:
 | Link of relevance | A not-yet-played incident where the crew gravely wounds Corvin or his uncle will establish the specific connection. PC and mechanism remain open pending table play. |
 
 > [!spoiler]
-> [[shepherd-grigori]], shepherd of the [[Khlysty]], has identified Corvin, through Grigori's existing Tessarine ties, as his route into House Knighton. Grigori's plan: patiently engineer a circumstance untraceable to him where the crew gravely wounds Rupert or Corvin, then position himself to "rescue" them, binding House Knighton the same way he's bound two other noble threads while deepening the goodwill he already has with the crew. Corvin has no idea any of this is in motion.
+> [[shepherd-grigori]], shepherd of the [[khlysty-the-flock|Khlysty]], has identified Corvin, through Grigori's existing Tessarine ties, as his route into House Knighton. Grigori's plan: patiently engineer a circumstance untraceable to him where the crew gravely wounds Rupert or Corvin, then position himself to "rescue" them, binding House Knighton the same way he's bound two other noble threads while deepening the goodwill he already has with the crew. Corvin has no idea any of this is in motion.
 
 **Voice & Delivery:** precise, formal diction that avoids naval jargon, each word costing something. He favors measured pauses and questions that invite challenge. Sample: *"You'd settle this through committee? How thoroughly… cautious."* (with a faint smile that suggests pity). His worldview is elitist. Mastery and proven skill are the sole legitimate sources of authority, and birth and hierarchy are mere scaffolding for incompetence. Every exchange plays as a test of capability, and what a person *does* matters more than rank or promises. Physically he's controlled and efficient, weight balanced as though ready to draw at any moment, eyes tracking hands and blades in conversation. The blade-sheathing tic runs nearly constant when he's seated or waiting.
 
@@ -66,6 +66,6 @@ relationships:
 
 ## Connections
 
-[[shepherd-grigori]]: unwitting target of Grigori's manipulation via the [[Khlysty]].
+[[shepherd-grigori]]: unwitting target of Grigori's manipulation via the [[khlysty-the-flock|Khlysty]].
 
 [[rupert-knighton]]: uncle. Corvin is his heir.

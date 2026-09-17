@@ -78,7 +78,7 @@ Open combat is the Hardest of his three resolution paths by design (see the Toy 
 
 - [[otel-karn]]. His home in disguise, three generations deep, and the site of the original careless bargain.
 - [[shepherd-grigori]]. His star disciple, the vessel who carried the office of Korabl further than any before him. Otho is obliviously proud of him and has no sense of how many centuries "my boy" has actually survived.
-- [[Khlysty]]. His original ecstatic teaching, carried off the island generations ago, curdled into their doctrine. He's never traced the line from his own old sermon to their sect.
+- [[khlysty-the-flock|Khlysty]]. His original ecstatic teaching, carried off the island generations ago, curdled into their doctrine. He's never traced the line from his own old sermon to their sect.
 - [[perrin-black-jaw]]. Failed the Arcana check identifying Grigori's necrotic magic in Session 03 and has suspected something's wrong ever since without knowing what. Otho is the piece that could finally give that suspicion real shape.
 
 ## Goals & Fronts
@@ -105,4 +105,4 @@ Open combat is the Hardest of his three resolution paths by design (see the Toy 
 Conclusion: "Old Otho" is the archfey behind it all.
 Clue 1: [[otel-karn]] itself, the pattern of duel survivors and unhealed wounds, found by talking to islanders.
 Clue 2: Otho's own tells in conversation, his fey time-blindness slipping through when he mentions "my boy Grigori," found by talking to him directly.
-Clue 3: [[Khlysty]]'s doctrine traced back to an older island teaching, found by cross-referencing the sect's ecstatic-practice lore the crew already has from [[shepherd-grigori|Grigori]]'s own investigation thread.
+Clue 3: [[khlysty-the-flock|Khlysty]]'s doctrine traced back to an older island teaching, found by cross-referencing the sect's ecstatic-practice lore the crew already has from [[shepherd-grigori|Grigori]]'s own investigation thread.
