@@ -43,6 +43,7 @@ A human or agent runs `wiki-lint` from the command line against individual files
 4. **Given** `wiki-lint rule AGENCY001` is run, **Then** the output describes the rule: its ID, title, category, severity, scope, evaluator type, message, and repair guidance.
 5. **Given** `wiki-lint --severity block,repair` is run, **Then** only findings at BLOCK or REPAIR severity appear in output.
 
+6. **Given** the repository root, **When** an agent inspects `package.json` or runs `npm run`, **Then** the documented common operations are discoverable as thin aliases to the existing repository CLIs; the aliases add no duplicate implementation, preserve delegated exit status and output streams, and do not require Node runtime dependencies beyond npm's script runner.
 ---
 
 ### User Story 3 — Rule Registry and Stable IDs (Priority: P1)
@@ -111,17 +112,18 @@ The lint engine dispatches each rule to the cheapest and most deterministic eval
 
 ### User Story 7 — Rule Lifecycle and Shadow Mode (Priority: P3)
 
-New rules progress through a lifecycle: DRAFT → SHADOW → WARN → REPAIR → BLOCK. Not every rule reaches BLOCK. Shadow mode records what would have triggered without affecting agent behavior. Promotion from shadow to active depends on measured precision (false-positive rate, human agreement, repair helpfulness), not confidence in the rule's wording.
+New rules progress through a deployment lifecycle: DRAFT → SHADOW → ACTIVE. Severity is a separate rule attribute with values BLOCK, REPAIR, REVIEW, WARN, or INFO; promotion to ACTIVE does not imply a severity. Shadow mode records what would have triggered without affecting agent behavior. Promotion from shadow to active depends on measured precision (false-positive rate, human agreement, repair helpfulness), not confidence in the rule's wording.
 
 **Why this priority**: Shadow deployment prevents untested rules from disrupting production sessions. Measured promotion prevents rules from accumulating that don't actually help.
 
-**Independent Test**: Create a rule in SHADOW state. Run wiki-lint against content that would trigger it. Verify the finding is recorded in shadow telemetry but does not appear in the active findings returned to the agent. Promote the rule to WARN. Verify it now appears in active findings.
+**Independent Test**: Create a rule in SHADOW state with severity WARN. Run wiki-lint against content that would trigger it. Verify the finding is recorded in shadow telemetry but does not appear in the active findings returned to the agent. Promote the rule to ACTIVE without changing its severity. Verify it now appears in active findings with WARN severity.
 
 **Acceptance Scenarios**:
 
 1. **Given** a rule in SHADOW state, **When** wiki-lint runs, **Then** the rule evaluates and records results but the finding does not appear in the agent-facing output.
-2. **Given** shadow telemetry showing 90%+ human agreement and <10% false positive rate, **When** the rule is promoted to WARN, **Then** it appears in active findings on subsequent runs.
-3. **Given** a creative diagnostic rule, **When** its lifecycle is assessed, **Then** it can reach WARN but never BLOCK (creative diagnostics have a lifecycle ceiling).
+2. **Given** shadow telemetry showing 90%+ human agreement and <10% false positive rate, **When** the rule is promoted to ACTIVE, **Then** it appears in active findings on subsequent runs with its independently configured severity.
+3. **Given** a creative diagnostic rule, **When** its severity is assessed, **Then** it can reach WARN but never BLOCK (creative diagnostics have a severity ceiling).
+
 
 ---
 
@@ -203,10 +205,12 @@ When the DM makes a correction that addresses a recurring agent failure, the sys
 - **FR-016**: BLOCK severity MUST correlate only with truth, safety, agency, schema, or deterministic process — not subjective taste
 - **FR-017**: Static and structural lint rules MUST use off-the-shelf linting tools (Vale for prose patterns, markdownlint-cli2 for markdown structure) rather than custom regex engines. Custom Python evaluators are permitted only for cross-page symbolic checks that no off-the-shelf tool supports.
 - **FR-018**: All lint tool configurations MUST be agent-readable and agent-writable (YAML/JSON/INI files, not programmatic). Agents MUST be able to inspect and modify rule definitions, bundle configurations, and waivers through standard file operations.
+- **FR-019**: The repository MUST provide a `package.json` with discoverable `scripts` aliases for common linting, maintenance, verification, and test operations; each alias MUST delegate directly to the existing agent-shaped command, preserve its arguments, stdout, stderr, and exit status, and MUST NOT duplicate operation logic in Node code.
+- **FR-020**: Rule deployment lifecycle (`DRAFT`, `SHADOW`, `ACTIVE`) MUST remain independent from finding severity (`BLOCK`, `REPAIR`, `REVIEW`, `WARN`, `INFO`); promotion to `ACTIVE` MUST NOT implicitly change severity.
 
 ### Key Entities
 
-- **Rule**: A lint rule with stable ID, category, scope, severity, evaluator type, message, repair guidance, lifecycle state, and optional conflict/dependency declarations
+- **Rule**: A lint rule with stable ID, category, scope, independently configured severity, evaluator type, message, repair guidance, deployment lifecycle state, and optional conflict/dependency declarations
 - **Finding**: A structured result from evaluating a rule against content — includes rule ID, result, severity, location, evidence, reason, and repair target
 - **Bundle**: A named collection of rule categories scoped to a task type, with per-category severity gates (block, review, diagnostics)
 - **Waiver**: A time-boxed, explicit suppression of a specific rule for a specific target, with owner and reason
@@ -245,3 +249,5 @@ When the DM makes a correction that addresses a recurring agent failure, the sys
 - Q: Which additional off-the-shelf linters beyond Vale should we integrate? → A: Install markdownlint-cli2 for structural markdown rules (heading levels, lists, code fences). Vale handles prose patterns. Together they subsume `lint-obsidian-markdown` and `lint-literal-newlines`.
 - Q: Should existing custom Python lint scripts be deprecated once ported to Vale/markdownlint? → A: Port then deprecate. Existing scripts stay until all checks ported with passing fixtures, then removed.
 - Q: Should the repair loop have a maximum iteration limit, and if so, what default? → A: 3 iterations max (configurable). Unconverged findings surface for DM review.
+- Q: Should the package entry point use thin npm aliases rather than new Node wrappers? → A: Add `package.json` scripts that delegate directly to existing repository CLIs; do not move logic into Node or add a second wrapper implementation.
+- Q: Should rule lifecycle and finding severity be separate dimensions? → A: Use lifecycle `DRAFT → SHADOW → ACTIVE`; keep severity independently configured as `BLOCK`, `REPAIR`, `REVIEW`, `WARN`, or `INFO`. Promotion to `ACTIVE` does not imply a severity.
