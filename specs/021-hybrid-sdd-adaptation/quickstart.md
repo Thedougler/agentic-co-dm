@@ -22,10 +22,12 @@ The native-tokenizer comparison path also requires the separate tracked governan
 This feature leaves the managed/generated Spec Kit outputs unchanged. Do not edit:
 
 ```text
-.agents/skills/speckit-*/
-.omp/commands/speckit.*
-.specify/templates/*
-.specify/extensions/*
+.agents/skills/speckit-*              # Codex
+.omp/commands/speckit.*               # OMP
+.claude/skills/speckit-*              # Claude
+.grok/skills/speckit-*                # Grok
+.specify/templates/*                 # shared managed templates
+.specify/extensions/*                # shared managed extensions
 ```
 
 The hybrid route and checks live in the repository-owned files named below; `specify integration status --json` and `./scripts/check-omp-baseline.sh` verify that the managed paths remain clean.
@@ -99,6 +101,13 @@ Expected: additive records remain readable; incompatible records are quarantined
 Run low-, moderate-, and high-risk paired fixtures using the versioned policy.
 
 Expected: at least 10 same-kind pairs and a 5% median reduction are required; low risk needs a 10% canary, moderate risk needs shadow replay and canary review, high risk needs human review, and any hard-gate or semantic regression rolls back.
+
+### 8. Preset staging and meta-preset validation
+
+Run the preset fixture/check surface for a pinned candidate and the repository-owned package.
+
+Expected: candidate metadata includes source, immutable release or commit, retrieval date, license, and inspection evidence; executable surfaces are treated as untrusted; `creative-llm-wiki` contains only reviewed provenance-linked adaptations, validates as a Spec Kit preset, and runs without installing a third-party runtime dependency.
+
 
 ## Repository checks
 

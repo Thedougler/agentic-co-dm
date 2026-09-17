@@ -26,6 +26,19 @@ Every full-SDD specification states:
 
 No specification, plan, task list, or implementation completion may turn conditional fictional material into accepted campaign truth.
 
+## Preset discovery and adaptation
+
+When preset adaptation is in scope:
+
+- stage each candidate with its source URL, release or commit identity, retrieval date, declared license, and inspection evidence;
+- treat the candidate as untrusted until its manifest, templates, commands, scripts, hooks, and other executable surfaces are inspected;
+- selectively adapt useful patterns into repository-owned artifacts with provenance; never install a candidate as a live dependency or copy it wholesale;
+- preserve existing Spec Kit lifecycle, vocabulary, canon, Work acceptance, ownership, and safe-maintenance authorities;
+- validate the repository-owned `creative-llm-wiki` meta-preset package and record that no third-party runtime dependency was installed.
+
+Candidate staging is not a second authority. Rejected or uninspected packages remain staged/quarantined and cannot publish or access credentials.
+
+
 ## Required plan surface
 
 The plan identifies:
@@ -91,4 +104,4 @@ Executable hard gates cover canon precedence, entity-before-spoken, DM-facing ex
 - `specs/<feature>/plan.md` owns technical design.
 - `specs/<feature>/tasks.md` owns implementation topology.
 - Existing `docs/agents/work.md`, campaign skills, wiki schemas, QMD precedence, and constitution remain owners of their current facts.
-- Generated Spec Kit adapters and managed templates remain disposable integration outputs and are not policy owners.
+- Generated Spec Kit adapters for OMP, Codex, Claude, and Grok, plus managed templates and extensions, remain disposable integration outputs and are not policy owners; the route pointer stays outside the managed agent-context block.

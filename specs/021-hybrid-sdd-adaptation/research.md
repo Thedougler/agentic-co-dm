@@ -53,3 +53,21 @@
 **Rationale**: The feature exposes repository-local agent contracts and command-line helpers only. The two contract files document those public seams; no HTTP API, database schema, or external provider integration is introduced.
 
 **Alternatives considered**: Add a hosted telemetry service — rejected as out of scope, privacy-expensive, and unnecessary for one local campaign repository.
+
+## Decision: Keep preset adaptation inside the existing fixture and contract seams
+
+**Rationale**: The 018 and 019 feature checkers validate durable outputs and real CLI behavior with the standard library, temporary directories, and no instruction snapshots. The dispatched research confirms that the two existing contracts are sufficient when the hybrid contract gains a preset trust-boundary section: candidate metadata, executable-surface inspection, selective provenance-linked adaptation, and no live third-party dependency. The repository-owned `creative-llm-wiki` package and sanitized preset fixture matrix must be added to the existing feature runner so Scenario H and FR-044–FR-048 are observable without creating a third contract or test framework.
+
+**Alternatives considered**: Ignore preset packaging — rejected because the specification has a mandatory meta-preset deliverable and SC-026. Add a separate preset service or database — rejected because the existing `.specify/presets` runtime and standard-library fixture seam are adequate. Install or copy community packages wholesale — rejected because staged candidates are untrusted and must remain provenance-bearing review inputs.
+
+## Decision: Preserve the tokenizer governance boundary during implementation
+
+**Rationale**: Dispatched telemetry research confirms that `scripts/error-ledger.py` owns coarse 019 sitting/error state and explicitly does not tokenize, while the repository-wide `docs/agents/token-measurement.md` and `scripts/token-count.py` remain tiktoken authorities. Feature 021 may collect redacted counts and report the explicit native-tokenizer governance measurement gap, but must not activate cross-family comparisons or promotion before the separate governance change.
+
+**Alternatives considered**: Expand the 019 helper into telemetry — rejected because it would merge distinct schemas and ownership. Silently replace tiktoken now — rejected by the clarification and current authority. Treat current integer trace counts as native measurements — rejected because the implementation must fail closed at the comparison/promotion boundary.
+
+## Decision: Preserve all installed harness adapters and register only the repository-owned package
+
+**Rationale**: The integration manifests cover OMP, Codex, Claude, and Grok adapter trees; the route pointer must remain outside the managed Spec Kit context block because the agent-context updater replaces that block. The existing preset resolver uses `.specify/presets/<id>` plus the local registry, so the design keeps candidate packages out of runtime and registers only the repository-owned `creative-llm-wiki` package with its own provenance and validation fixture. The registry remains a runtime registration surface, not a second policy authority.
+
+**Alternatives considered**: Preserve only OMP and Codex paths — rejected because Claude and Grok are installed integrations. Put the route pointer inside the managed block — rejected because agent-context refresh would erase it. Leave the meta-preset unregistered — rejected because the valid empty registry prevents the resolver from selecting it. Register third-party candidates — rejected because staged candidates are untrusted and must not become live dependencies.

@@ -74,7 +74,8 @@ specs/021-hybrid-sdd-adaptation/
 │   ├── check.py
 │   ├── routes/
 │   ├── evidence/
-│   └── telemetry/
+│   ├── telemetry/
+│   └── presets/                    # sanitized candidate/package evidence
 └── tasks.md                         # /speckit.tasks; not created by this command
 ```
 
@@ -85,20 +86,23 @@ AGENTS.md                             # compact route and pointer only
 docs/agents/hybrid-sdd.md             # detailed route, artifact, and evidence contract
 config/efficiency.yaml                # maintainer-owned policy and thresholds
 .gitignore                            # ignore local efficiency traces
-scripts/hybrid-sdd-check.py           # deterministic route/evidence hard-gate seam
+.specify/presets/creative-llm-wiki/  # repository-owned reviewed meta-preset package
+scripts/hybrid-sdd-check.py           # deterministic route/evidence/preset hard-gate seam
 scripts/efficiency-trace.py           # redacted trace append/report/quarantine seam
 ```
 
 Generated Spec Kit files remain unchanged:
 
 ```text
-.agents/skills/speckit-*/
-.omp/commands/speckit.*
-.specify/templates/*
-.specify/extensions/*
+.agents/skills/speckit-*              # Codex
+.omp/commands/speckit.*               # OMP
+.claude/skills/speckit-*              # Claude
+.grok/skills/speckit-*                # Grok
+.specify/templates/*                 # shared managed templates
+.specify/extensions/*                # shared managed extensions
 ```
+**Structure Decision**: Keep the current Spec Kit integration intact and use the existing agent-context injection to make `AGENTS.md` the always-loaded route map. Put detailed hybrid behavior in one progressive-disclosure document, policy in a versioned configuration file, and runtime measurement in two narrowly scoped agent-shaped CLIs. Keep the reviewed `creative-llm-wiki` package under the existing Spec Kit preset runtime, while candidate evidence remains sanitized and feature-local. Extend the existing fixture runner rather than adding a second application test framework or a third contract.
 
-**Structure Decision**: Keep the current Spec Kit integration intact and use the existing agent-context injection to make `AGENTS.md` the always-loaded route map. Put detailed hybrid behavior in one progressive-disclosure document, policy in a versioned configuration file, and runtime measurement in two narrowly scoped agent-shaped CLIs. Feature-local fixtures are the permanent behavioral check; they do not become a second application test framework.
 
 ## Implementation Design
 
@@ -127,19 +131,20 @@ None. The two CLIs have separate owners and public seams: one records/reports te
 
 ## Phase 0: Research
 
-- Confirmed current Spec Kit status is healthy (`status: ok`), OMP remains the default, four integrations are installed, no managed files are missing or modified, and the OMP baseline passes.
+- Confirmed current Spec Kit status is healthy (`status: ok`), OMP remains the default, OMP/Codex/Claude/Grok integrations are installed, no managed files are missing or modified, and the OMP baseline passes.
 - Confirmed existing 012 blind evaluation supplies the cold semantic-evaluation pattern and existing quality authorities; no numeric creative score or new creative-writing rubric is needed.
 - Confirmed existing 019 supplies the sitting/error-ledger vocabulary and fixture-check pattern; new efficiency telemetry must remain a separate owner because it has a different schema, retention, and reporting contract.
 - Confirmed current repository token policy is tiktoken-based. Native-tokenizer comparisons therefore require the separate governance change named by the spec before activation; this feature records the dependency and must not edit that policy silently.
 - Confirmed the lowest-cost routing surface is a compact `AGENTS.md` pointer plus one detailed `docs/agents/hybrid-sdd.md`, rather than editing generated adapters or copying policy into every harness.
+- Confirmed preset adaptation is a trust-boundary concern: candidate metadata and executable-surface inspection belong in the existing hybrid contract and fixture runner; only the provenance-linked repository-owned `creative-llm-wiki` package is registered, while third-party candidates remain staged/quarantined.
 
 **Post-research gate**: all technical unknowns are resolved in [research.md](./research.md); the plan has no unresolved technical decisions.
 
 ## Phase 1: Design
 
-- Model work classification, hybrid artifacts, canon/agency records, dependency ownership, completion evidence, traces, policy, semantic evaluations, promotion candidates, and quarantine states in [data-model.md](./data-model.md).
-- Define agent-facing routing/completion rules in [contracts/hybrid-sdd.md](./contracts/hybrid-sdd.md).
+- Model work classification, hybrid artifacts, canon/agency records, dependency ownership, completion evidence, traces, policy, semantic evaluations, promotion candidates, quarantine states, pinned preset candidates, selective adaptations, and the `creative-llm-wiki` meta-preset in [data-model.md](./data-model.md).
+- Define agent-facing routing/completion rules, including untrusted preset staging and selective adaptation, in [contracts/hybrid-sdd.md](./contracts/hybrid-sdd.md).
 - Define trace, report, schema evolution, retention, and promotion inputs in [contracts/efficiency-telemetry.md](./contracts/efficiency-telemetry.md).
-- Provide runnable fixture validation in [quickstart.md](./quickstart.md) and the feature-local checker.
+- Provide runnable fixture validation for routing, evidence, telemetry, retention, promotion, compatibility, and preset packaging in [quickstart.md](./quickstart.md) and the feature-local checker.
 
 **Post-design gate**: constitution checks still pass; no generated Spec Kit integration or existing campaign authority is replaced; no new human gate is added to safe deterministic maintenance.

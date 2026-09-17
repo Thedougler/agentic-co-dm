@@ -29,6 +29,43 @@ The feature artifact that owns behavior and acceptance.
 | `agency` | Required for campaign-facing/reusable creative work: player-owned decisions, open outcomes, independent world motion, pressures, and conditional possibilities. |
 | `canon_impact` | Current truths, affected truths, proposals, owner pages, contradictions, provenance, reveal, and visibility consequences. |
 | `state` | `draft` → `clarified` → `planned` → `implemented` → `converged`; this does not replace campaign lifecycle or Work acceptance. |
+## Preset Candidate
+
+A pinned third-party Spec Kit package held as untrusted review input.
+
+| Field | Rule |
+|---|---|
+| `source_url` | Original download or repository URL is retained. |
+| `release_or_commit` | Immutable release, tag, or commit identity is required. |
+| `retrieved_at` | Retrieval date is recorded. |
+| `license` | Declared license is recorded when available. |
+| `inspection` | Manifest, templates, commands, scripts, hooks, and other executable surfaces are inspected before adaptation. |
+| `trust` | Staged or quarantined only; never a repository authority or live dependency. |
+
+## Preset Adaptation
+
+A selectively extracted repository-owned pattern derived from a reviewed candidate.
+
+| Field | Rule |
+|---|---|
+| `source_candidate` | Points to the reviewed candidate and its provenance evidence. |
+| `artifact` | Repository-owned skill, template, contract, configuration, or other canonical surface. |
+| `selection` | Names the adopted pattern and excludes wholesale package copying. |
+| `authority` | Existing lifecycle, vocabulary, canon, Work, and safe-maintenance authorities remain dominant. |
+| `verification` | Validates the adapted artifact and its executable surfaces without granting upstream credentials or access. |
+
+## Meta-Preset Package
+
+The repository-owned `creative-llm-wiki` package composing reviewed adaptations.
+
+| Field | Rule |
+|---|---|
+| `name` | Exactly `creative-llm-wiki`. |
+| `adaptations` | Every included pattern is selectively adapted and provenance-linked to a reviewed candidate. |
+| `validation` | Package validates as a Spec Kit preset and its command surfaces run locally. |
+| `dependencies` | No third-party preset is installed as a live runtime dependency. |
+| `state` | `staged` → `inspected` → `adapted` → `validated`; rejected candidates remain staged/quarantined. |
+
 
 ## Canon Impact Record
 
