@@ -1,6 +1,6 @@
 # Codex Companion
 
-Codex-specific guidance for this repository. Load `AGENTS.md` first; use this file only for native Codex behavior, verified Codex gaps, and Codex UI affordances. Shared policy stays in `AGENTS.md`, the constitution, specs, skills, and docs named there.
+Codex-specific guidance for this repository. Load `AGENTS.md` first for project context; use this file only for native Codex behavior, verified Codex gaps, and Codex UI affordances. Shared agent behavior stays in the constitution, specs, skills, and docs named by the project context.
 
 ## Start
 
@@ -23,6 +23,10 @@ Codex-specific guidance for this repository. Load `AGENTS.md` first; use this fi
 ## Subagents And Delegation
 
 The root Codex agent remains lead and accountable for repository changes. When delegation is useful, follow the active Codex multi-agent routing loaded for the workspace: pass scoped context, set the required model and effort explicitly, and review the result before changing files or reporting completion.
+
+## Behavioral Test Subject
+
+For agent-facing surface changes, use a Luna subagent at high reasoning effort as the independent behavioral test subject. Give it cold context, no write permission in the prompt, the relevant task or task slice to perform, and explicit scope and success criteria. Reconcile its output as behavioral evidence before declaring completion.
 
 ## Inline Review
 

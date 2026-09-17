@@ -1,9 +1,11 @@
 <!--
 Sync Impact Report
-Version change: 2.3.0 -> 2.3.1
+Version change: 2.3.1 -> 2.3.2
 Modified principles:
-- IV. Behavioral Tests: clarifies harness-specific independent behavioral test subjects and
-  removes false Luna-unavailability gap wording.
+- IV. Behavioral Tests: moves harness-specific test-subject selection to harness companion
+  files and keeps the constitution on the cross-harness invariant.
+- XVI. Constitutional Layering: clarifies that the constitution owns agent behavior while
+  AGENTS.md owns project operating context.
 Added sections: None
 Removed sections: None
 Follow-up TODOs: None
@@ -53,15 +55,12 @@ values, or bulk-speculate about imagined behavior.
 For changes to code, skills, instructions, templates, linting, or any other agent-facing surface,
 resulting agentic behavior is the primary acceptance target. Validation MUST exercise that
 behavior and MUST NOT stop at code correctness, syntax, or file presence. The default validation
-shape is an independent behavioral test subject: in Codex, the lead agent MUST delegate a Luna
-subagent at high reasoning effort; in OMP, the lead agent MUST delegate the smol-agent equivalent;
-in Grok, where Luna is not available, the lead agent MUST delegate the closest independent
-equivalent and name the harness substitution in completion evidence. The test subject MUST run
-with cold context and no write permission in the prompt, performing the task or task slice that the
-change is meant to improve. The lead MUST provide scope and success criteria, use the subagent
-output as behavioral evidence, and personally reconcile that evidence before declaring completion.
-This subagent is the test subject, not a code reviewer. If independent validation cannot run, the
-completion evidence MUST record the blocker and compensating validation.
+shape is an independent behavioral test subject selected by the active harness companion file.
+The test subject MUST run with cold context and no write permission in the prompt, performing the
+task or task slice that the change is meant to improve. The lead MUST provide scope and success
+criteria, use the subagent output as behavioral evidence, and personally reconcile that evidence
+before declaring completion. This subagent is the test subject, not a code reviewer. If independent
+validation cannot run, the completion evidence MUST record the blocker and compensating validation.
 
 Rationale: behavior-focused tests protect contracts through refactoring; agent validation confirms
 that the system follows user intent in operation, not merely in source.
@@ -70,8 +69,8 @@ that the system follows user intent in operation, not merely in source.
 
 Each fact, term, decision, and acceptance rule MUST have one authoritative owner. Cross-cutting
 domain language belongs in `CONTEXT.md`; resolved architecture belongs in ADRs; feature behavior
-belongs in specs and contracts; task procedures belong in skills; current operating policy
-belongs in `AGENTS.md`.
+belongs in specs and contracts; task procedures belong in skills; current project operating
+context and routing belong in `AGENTS.md`.
 
 Copies of other authoritative artifacts MAY link or summarize their owner, but MUST NOT create
 competing versions. Conflicts MUST remain visible until the authoritative owner resolves them.
@@ -254,8 +253,10 @@ human control over novel canon and explicit safety boundaries.
 
 ### XVI. Constitutional Layering
 
-The constitution defines stable, cross-cutting invariants. `AGENTS.md` defines current runtime
-operating policy. Specs and contracts define feature behavior and acceptance. Skills define
+The constitution defines how agents work in this repository: stable invariants, governance,
+agent-behavior requirements, and cross-cutting acceptance rules. `AGENTS.md` defines the project
+itself: domain context, ownership maps, project routing, sources of truth, and current repository
+operating context. Specs and contracts define feature behavior and acceptance. Skills define
 task-specific procedures. ADRs record resolved architectural decisions. Lower layers MAY
 operationalize these principles, but MUST NOT duplicate them merely for emphasis.
 
@@ -273,9 +274,10 @@ Harness parity is mandatory. When operating under OMP, Codex, Claude Code, or Gr
 MUST use the relevant native features of that harness. Each supported harness MUST have a
 dedicated root-level instruction file containing only harness-specific guidance: `OMP.md`,
 `CODEX.md`, `CLAUDE.md`, and `GROK.md`. Claude Code's `CLAUDE.md` MUST import `AGENTS.md` before
-applying Claude-specific additions; those additions MUST NOT restate shared policy. The shared
-`AGENTS.md` MUST point to each file for agents running in that harness. Shared policy MUST remain
-in shared layers; harness files MUST NOT become competing sources of truth.
+applying Claude-specific additions; those additions MUST NOT restate shared agent behavior.
+`AGENTS.md` MUST point to each harness file as project context for agents running in that harness.
+Shared agent behavior MUST remain in shared governance, specs, skills, and docs; harness files MUST
+NOT become competing sources of truth.
 
 Rationale: layering keeps standing context short, load-bearing, and resilient to model, tool, and
 retrieval-engine changes; reader-specific skills and harness isolation keep each surface
@@ -421,6 +423,7 @@ preservation, safe automation, agency and canon boundaries, and appropriate inst
 Unjustified complexity, duplicate sources of truth, fabricated evidence, and human gates that do
 not prevent a named safety failure MUST be rejected or resolved by an ADR.
 
-Runtime development guidance: `AGENTS.md`.
+Project operating context: `AGENTS.md`. Harness-specific agent behavior: `OMP.md`, `CODEX.md`,
+`CLAUDE.md`, and `GROK.md`.
 
-**Version**: 2.3.1 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 2.3.2 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17

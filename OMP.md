@@ -1,11 +1,11 @@
 # OMP Repository Addendum
 
-This file records OMP runtime behavior and collision traps only. Shared policy remains in `AGENTS.md`; sticky OMP constraints remain in `.omp/RULES.md`; Spec Kit artifacts remain the feature authority.
+This file records OMP runtime behavior and collision traps only. Project context remains in `AGENTS.md`; shared agent behavior remains in the constitution; sticky OMP constraints remain in `.omp/RULES.md`; Spec Kit artifacts remain the feature authority.
 
 ## Start and reload
 
 - The supported primary path is a direct OMP session from the repository root. RPC/ACP can lose project task and isolation settings.
-- `.omp/AGENTS.md` is an import-only shim for `../AGENTS.md`; keep repository policy there, not in the shim.
+- `.omp/AGENTS.md` is an import-only shim for `../AGENTS.md`; keep project context there, not in the shim.
 - After changing an OMP instruction, command, skill, or agent definition, start `/new` (or reload plugins for an in-session skill change). Use `/extensions` to confirm the expected project context is active and not shadowed.
 
 ## OMP-specific traps
@@ -19,6 +19,10 @@ This file records OMP runtime behavior and collision traps only. Shared policy r
 - Read `.omp/config.yml` for current model roles, caps, isolation, and extension settings; do not copy those values into this file.
 - Read `specs/<feature>/` for feature requirements and task state; OMP commands and agents consume those artifacts rather than becoming alternate Spec Kit phases.
 
+## Behavioral test subject
+
+For agent-facing surface changes, use OMP's smol-agent equivalent as the independent behavioral test subject. Give it cold context, no write permission in the prompt, the relevant task or task slice to perform, and explicit scope and success criteria. Reconcile its output as behavioral evidence before declaring completion.
+
 ## Native image generation
 
 When an OMP task needs image generation or editing, use the mounted `generate_image` device by writing one JSON request to `xd://generate_image`. Its contract is the source of truth for the current schema.
@@ -30,4 +34,3 @@ When an OMP task needs image generation or editing, use the mounted `generate_im
 - `provider` selects the backend for one request (`auto` is the default). A provider such as `openai-codex` does not change the OMP call shape.
 
 Keep the visual skills' identity-anchor and scene-direction split. The OMP-specific part is only request construction and input transport; those skills own what the image should depict.
-
