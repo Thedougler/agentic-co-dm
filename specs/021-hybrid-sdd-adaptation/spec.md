@@ -30,7 +30,7 @@
 - Q: Which request should the minimum seven-case classification run use as Scenario G? → A: A mixed request combining routine campaign content with an agent-system or reusable-system change.
 - Q: What evidence should establish semantic non-inferiority when comparing an optimization with its pinned baseline? → A: A blind paired evaluator using a fixed semantic-quality rubric, with no meaningful aggregate quality loss alongside the existing hard gates.
 - Q: What should happen before the separate native-tokenizer governance change is accepted? → A: Collect and report redacted telemetry, but block native-tokenizer comparisons and promotion; affected records carry an explicit measurement-gap reason and are excluded from complete comparison samples.
-- Q: Should the feature download candidate community presets into a pinned, reviewable staging area and selectively adapt useful patterns into repository-owned Spec Kit artifacts, without making third-party packages live dependencies? → A: Download and verify pinned releases for staging; selectively adapt useful patterns into repository-owned artifacts.
+- Q: Should the feature deliver a curated `creative-llm-wiki` meta-preset package, or only the workflow for staging and selectively adapting useful community preset patterns? → A: Deliver a repository-owned `creative-llm-wiki` meta-preset package; third-party presets remain staged-only reviewed sources.
 
 
 
@@ -199,6 +199,7 @@ These scenarios are the minimum cross-class acceptance set for the adapted syste
 - **FR-046**: Useful preset patterns MUST be selectively adapted into repository-owned skills, templates, contracts, configuration, or other canonical artifacts with source provenance; the repository MUST NOT install a third-party preset as a live dependency or copy a complete preset wholesale.
 - **FR-047**: Preset adaptation MUST preserve the repository's existing lifecycle, authorities, ownership, vocabulary, canon, Work acceptance, and safe-maintenance boundaries; upstream package behavior MUST NOT override those authorities merely because it was downloaded or selected.
 
+- **FR-048**: The feature MUST deliver a repository-owned `creative-llm-wiki` meta-preset package that composes reviewed, selectively adapted patterns from candidate presets; candidate community packages MUST remain staging-only and MUST NOT be runtime dependencies.
 ### Canon, Provenance, and Entity Ownership
 
 - **FR-011**: The adapted system MUST preserve the existing lifecycle, provenance, reveal, visibility, owner-page, and Work acceptance systems as the sole campaign-canon authority.
@@ -301,6 +302,7 @@ The following constraints are included because each prevents a named failure:
 - **Verification evidence**: Deterministic check results plus explicit agency, continuity, owner, Work, acceptance, and creative-judgment review evidence; lint does not stand in for craft judgment.
 - **Preset candidate**: A pinned community Spec Kit package held in reviewable staging with source, release, license, retrieval, and inspection metadata; it is not a repository authority or live dependency.
 - **Preset adaptation**: A selectively extracted and repository-owned template, command, contract, configuration, or pattern whose provenance points to a reviewed preset candidate and whose behavior remains subordinate to existing authorities.
+- **Meta-preset package**: The repository-owned `creative-llm-wiki` Spec Kit package that composes reviewed adaptations from staged preset candidates; it is a canonical repository artifact and does not make upstream packages live dependencies.
 - **Context cost**: Measured context and token use across the whole useful trajectory of comparable work, using the selected model family’s native tokenizer as authoritative, from user request through final Work, including loaded context, retrieval, tools, failures, retries, and model input/output, while excluding idle and unrelated activity. Measurements from different model/tokenizer families are not directly comparable. Normal traces are local, gitignored, redacted, and retained for 90 days; committed fixtures and baselines contain no raw sensitive content.
 
 
@@ -335,6 +337,7 @@ The following constraints are included because each prevents a named failure:
 - **SC-023**: In a telemetry-coverage fixture containing enabled, explicitly disabled, and pre-governance sittings, 100% of enabled prep and wrapup sittings produce traces; every disabled sitting records a measurement gap; and every pre-governance sitting may report redacted telemetry but has native-tokenizer comparison and promotion blocked, carries a measurement-gap reason, and is excluded from complete comparison samples.
 - **SC-024**: In a sitting fixture containing produced, accepted, failed, and incomplete Work, 100% classify each state correctly; failed and incomplete traces remain reportable with failure reasons and are excluded from accepted-Work denominators.
 - **SC-025**: In an autonomy-classification fixture containing low-, moderate-, and high-risk candidates, 100% receive the required promotion path; no candidate changes its own evaluation criteria or safety thresholds.
+- **SC-026**: In a meta-preset packaging fixture, the repository-owned `creative-llm-wiki` package contains only reviewed, provenance-linked adaptations, validates as a Spec Kit preset, and runs without installing any third-party preset as a live dependency.
 
 ## Assumptions
 
@@ -345,6 +348,7 @@ The following constraints are included because each prevents a named failure:
 - A request that creates or revises a reusable game or campaign system is substantial; an instance of an established content kind is not substantial unless it changes that system.
 - Existing identity resolution uses deterministic paths, canonical titles, aliases, wikilinks, globally unique stems, qmd/search, manifests, and duplicate detection; opaque IDs are unnecessary by default.
 - The installed Spec Kit CLI and current catalog are discovery sources. Community presets may be downloaded as pinned, reviewable candidates and selectively adapted after inspection, but remain untrusted references rather than live dependencies or authorities.
+- The initial preset-adaptation deliverable is the repository-owned `creative-llm-wiki` meta-preset package; community presets provide reviewed source patterns only and are not installed or copied wholesale.
 - Reference patterns adopted selectively are: agency and conditional state from game-narrative work; motivations, relationships, chronology, and continuity from long-form fiction work; scene purpose and readable change from screenwriting; classify-before-write from inventory alignment; drift visibility from canon work; single-owner vocabulary checks; traceable intake and sequencing; provider-neutral roles; lean command composition; explicit dependencies; and command-density techniques.
 - Those references do not authorize Twine, Ink, novel, screenplay, fixed-ending, live-ID, alternate-canon, alternate-lifecycle, second-routing, or redundant-intake assumptions.
 - Safe deterministic maintenance may run unattended. Human judgment remains at the existing DM and creative-quality boundaries.
