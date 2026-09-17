@@ -251,6 +251,7 @@ Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the 
 |---|---|
 | "run the session" / "start the sitting" / live-play guidance | `run-guide` |
 | "session wrapup" / "post-session" / "session recap" / "what happened last session" / recap for players | `session-recap` (sole narrative skill → `Session-<NN>-Recap.md`; `session-wrapup` retired) |
+| "/plan-session" / "let's plan the next session" / "brainstorm the session" / "what should happen next session" | `plan-session` |
 | "plan the campaign" / "campaign arc" / "what's the long-term plan" | `campaign-planning` |
 | "cold open" / "how should the session start" | `cold-opens` |
 | "prep this encounter" / "build an encounter" / "encounter balance" | `encounter-prep` |
