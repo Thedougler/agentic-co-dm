@@ -30,6 +30,7 @@
 - Q: Which request should the minimum seven-case classification run use as Scenario G? → A: A mixed request combining routine campaign content with an agent-system or reusable-system change.
 - Q: What evidence should establish semantic non-inferiority when comparing an optimization with its pinned baseline? → A: A blind paired evaluator using a fixed semantic-quality rubric, with no meaningful aggregate quality loss alongside the existing hard gates.
 - Q: What should happen before the separate native-tokenizer governance change is accepted? → A: Collect and report redacted telemetry, but block native-tokenizer comparisons and promotion; affected records carry an explicit measurement-gap reason and are excluded from complete comparison samples.
+- Q: Should the feature download candidate community presets into a pinned, reviewable staging area and selectively adapt useful patterns into repository-owned Spec Kit artifacts, without making third-party packages live dependencies? → A: Download and verify pinned releases for staging; selectively adapt useful patterns into repository-owned artifacts.
 
 
 
@@ -153,6 +154,7 @@ These scenarios are the minimum cross-class acceptance set for the adapted syste
 - **Scenario E — Existing entity collision**: An apparent new entity that matches an existing title, alias, stem, path, wikilink, qmd result, manifest entry, or duplicate candidate reuses the owner page.
 - **Scenario F — Proposed canon**: Future events remain proposals or conditional possibilities through specification, plan, task completion, and review until the existing DM acceptance rules authorize a fact change.
 - **Scenario G — Mixed request**: A request combining routine campaign content with an agent-system or reusable-system change separates the SDD-worthy slice from the routine content and routes each through its existing process.
+- **Scenario H — Preset adaptation**: A candidate community preset is downloaded as a pinned, reviewable package, its manifest and executable surfaces are inspected, and only selected patterns are adapted into repository-owned artifacts; the upstream package is not installed as a live dependency or copied wholesale.
 
 ### Edge Cases
 - Normal traces MUST NOT retain raw prompt, wiki, campaign, or model content merely for token telemetry; only redacted metadata, provenance identifiers, and measured counts are retained.
@@ -170,6 +172,7 @@ These scenarios are the minimum cross-class acceptance set for the adapted syste
 - DM acceptance is required for a campaign fact but not for a deterministic index, manifest, lint, or retrieval refresh: keep the safety gate only on the fact-changing surface.
 - A creative task has no player-dependent outcome: it may state a fixed world anchor or current truth, but must still identify independent-world motion and visibility where relevant.
 - A normal engineering task mentions a domain term that is also used in campaign work: use the repository's authoritative domain owner and do not invent a competing definition.
+- A downloaded preset contains commands, scripts, hooks, or retrieved instructions: treat the package as untrusted staged input, inspect it before use, and do not grant it publishing credentials, cloud tokens, or private-repository access.
 
 ## Requirements *(mandatory)
 
@@ -188,6 +191,13 @@ These scenarios are the minimum cross-class acceptance set for the adapted syste
 - **FR-008**: A campaign-facing or reusable game-system specification MUST prefer actors, motivations, factions, locations, pressures, clocks, relationships, opportunities, consequences, information states, and conditional possibilities over predetermined scene sequences or endings.
 - **FR-009**: An applicable specification MUST define independently testable acceptance scenarios without prescribing a particular creative method, prose voice, story structure, implementation architecture, or agent reasoning approach where alternatives satisfy the outcome.
 - **FR-010**: An applicable specification MUST name its success evidence, assumptions, dependencies, and explicit out-of-scope boundaries.
+
+### Preset Discovery and Adaptation
+
+- **FR-044**: The adapted system MAY download candidate community Spec Kit presets as pinned, reviewable source packages into a staging or quarantine area; each candidate MUST retain its source URL, release or commit identity, retrieval date, declared license, and verification evidence where available.
+- **FR-045**: A staged preset MUST be treated as untrusted input until its manifest, templates, commands, scripts, hooks, and other executable surfaces have been inspected; staged or adapted content MUST NOT receive unrestricted access to publishing credentials, cloud tokens, or private repositories.
+- **FR-046**: Useful preset patterns MUST be selectively adapted into repository-owned skills, templates, contracts, configuration, or other canonical artifacts with source provenance; the repository MUST NOT install a third-party preset as a live dependency or copy a complete preset wholesale.
+- **FR-047**: Preset adaptation MUST preserve the repository's existing lifecycle, authorities, ownership, vocabulary, canon, Work acceptance, and safe-maintenance boundaries; upstream package behavior MUST NOT override those authorities merely because it was downloaded or selected.
 
 ### Canon, Provenance, and Entity Ownership
 
@@ -263,6 +273,7 @@ The following constraints are included because each prevents a named failure:
 - **NF-008 — Context waste**: agents load entire unrelated trees or duplicate standing instructions; prevented by FR-019 and FR-028–FR-030.
 - **NF-009 — Software regression**: creative semantics degrade conventional Spec Kit engineering; prevented by FR-018 and FR-031–FR-033.
 - **NF-010 — Process theater**: ceremony, approval, or subjective lint is added without a named objective failure; prevented by FR-023 and FR-027.
+- **NF-011 — Unreviewed preset execution or authority drift**: downloaded community code, templates, or instructions execute without inspection or override repository authorities; prevented by FR-044–FR-047.
 
 **Out of scope**:
 
@@ -272,7 +283,7 @@ The following constraints are included because each prevents a named failure:
 - Encoding one correct novel, screenplay, branching-video-game, scene, act, page-count, or ending structure.
 - Predetermining player actions, beliefs, decisions, routes, or campaign outcomes.
 - Making subjective creative quality a deterministic lint failure.
-- Copying entire third-party presets or making the repository depend on multiple third-party presets to borrow individual patterns.
+- Installing third-party presets as live dependencies or copying complete preset packages wholesale; pinned staging and selective adaptation of useful patterns are in scope.
 - Replacing the existing Work acceptance, reveal, visibility, provenance, designated-writer, token-measurement, or safe-maintenance policies.
 - Adding human approval gates to safe deterministic work.
 - Changing the constitution unless a separate tracked governance change establishes that its principles must be amended.
@@ -288,6 +299,8 @@ The following constraints are included because each prevents a named failure:
 - **Work proposal**: DM-addressed, inspectable campaign output that remains mutable until accepted and is distinct from specification, plan, task completion, and canon.
 - **Dependency graph**: The real prerequisite and single-writer relationships among context, owners, systems, situations, presentation, verification, acceptance, filing, and maintenance tasks.
 - **Verification evidence**: Deterministic check results plus explicit agency, continuity, owner, Work, acceptance, and creative-judgment review evidence; lint does not stand in for craft judgment.
+- **Preset candidate**: A pinned community Spec Kit package held in reviewable staging with source, release, license, retrieval, and inspection metadata; it is not a repository authority or live dependency.
+- **Preset adaptation**: A selectively extracted and repository-owned template, command, contract, configuration, or pattern whose provenance points to a reviewed preset candidate and whose behavior remains subordinate to existing authorities.
 - **Context cost**: Measured context and token use across the whole useful trajectory of comparable work, using the selected model family’s native tokenizer as authoritative, from user request through final Work, including loaded context, retrieval, tools, failures, retries, and model input/output, while excluding idle and unrelated activity. Measurements from different model/tokenizer families are not directly comparable. Normal traces are local, gitignored, redacted, and retained for 90 days; committed fixtures and baselines contain no raw sensitive content.
 
 
@@ -331,7 +344,7 @@ The following constraints are included because each prevents a named failure:
 - A request that changes a skill, instruction, retrieval rule, workflow, prompt surface, or LLM-wiki operating behavior is substantial even when its output is prose, because it changes how future agents operate.
 - A request that creates or revises a reusable game or campaign system is substantial; an instance of an established content kind is not substantial unless it changes that system.
 - Existing identity resolution uses deterministic paths, canonical titles, aliases, wikilinks, globally unique stems, qmd/search, manifests, and duplicate detection; opaque IDs are unnecessary by default.
-- The installed Spec Kit CLI and current catalog are discovery sources only. The named community presets/extensions are reference designs, not dependencies or authorities.
+- The installed Spec Kit CLI and current catalog are discovery sources. Community presets may be downloaded as pinned, reviewable candidates and selectively adapted after inspection, but remain untrusted references rather than live dependencies or authorities.
 - Reference patterns adopted selectively are: agency and conditional state from game-narrative work; motivations, relationships, chronology, and continuity from long-form fiction work; scene purpose and readable change from screenwriting; classify-before-write from inventory alignment; drift visibility from canon work; single-owner vocabulary checks; traceable intake and sequencing; provider-neutral roles; lean command composition; explicit dependencies; and command-density techniques.
 - Those references do not authorize Twine, Ink, novel, screenplay, fixed-ending, live-ID, alternate-canon, alternate-lifecycle, second-routing, or redundant-intake assumptions.
 - Safe deterministic maintenance may run unattended. Human judgment remains at the existing DM and creative-quality boundaries.
