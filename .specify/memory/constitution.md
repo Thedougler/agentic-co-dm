@@ -244,11 +244,13 @@ read and apply `writing-for-agents`. Before writing a wiki note, the agent MUST 
 required skill MUST be surfaced as an explicit dependency gap; the agent MUST NOT claim that
 routing was applied.
 
-Harness parity is mandatory. When operating under OMP, Codex, or Grok Build, agents MUST use the
-relevant native features of that harness. Each supported harness MUST have a dedicated root-level
-instruction file containing only harness-specific guidance: `OMP.md`, `CODEX.md`, and `GROK.md`.
-The shared `AGENTS.md` MUST point to each file for agents running in that harness. Shared policy
-MUST remain in shared layers; harness files MUST NOT become competing sources of truth.
+Harness parity is mandatory. When operating under OMP, Codex, Claude Code, or Grok Build, agents
+MUST use the relevant native features of that harness. Each supported harness MUST have a
+dedicated root-level instruction file containing only harness-specific guidance: `OMP.md`,
+`CODEX.md`, `CLAUDE.md`, and `GROK.md`. Claude Code's `CLAUDE.md` MUST import `AGENTS.md` before
+applying Claude-specific additions; those additions MUST NOT restate shared policy. The shared
+`AGENTS.md` MUST point to each file for agents running in that harness. Shared policy MUST remain
+in shared layers; harness files MUST NOT become competing sources of truth.
 
 Rationale: layering keeps standing context short, load-bearing, and resilient to model, tool, and
 retrieval-engine changes; reader-specific skills and harness isolation keep each surface
@@ -370,4 +372,4 @@ not prevent a named safety failure MUST be rejected or resolved by an ADR.
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 2.0.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 2.1.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
