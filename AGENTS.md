@@ -433,9 +433,7 @@ Human-facing documentation lives in `docs/` — `installation.md`, `agents.md`, 
 The vault format is structurally conformant with the [Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) — markdown files with YAML frontmatter, category subfolders, reserved `index.md`/`log.md`. `wiki-export` (OKF mode) and `wiki-import` are the bridge: they translate between our native frontmatter (`title`/`category`/`tags`/`sources`/`created`/`updated` + `summary`) and OKF (`type`/`title`/`description`/`resource`/`tags`/`timestamp`), making vaults exchangeable with any OKF tool. The OKF round-trip is lossless; the `graph.json` round-trip is not.
 
 <!-- SPECKIT START -->
-## Substantial-work routing
-
-Classify substantial engineering, agent-system, campaign-architecture, and creative-system changes once, then follow the full SDD contract at `docs/agents/hybrid-sdd.md`. Preserve the existing Spec Kit lifecycle and configured extensions.
-
-Routine campaign content (including established NPCs, locations, items, spells, creatures, individual beats, and recaps) stays on its existing skill/template/Work route. Split mixed requests into their system-changing and routine-content slices.
+For additional context about technologies to be used, project structure,
+shell commands, and other important information, read the current plan
+at specs/021-hybrid-sdd-adaptation/plan.md
 <!-- SPECKIT END -->
