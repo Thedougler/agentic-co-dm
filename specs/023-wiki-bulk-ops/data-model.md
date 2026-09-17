@@ -10,7 +10,7 @@ A single bulk action invoked by the agent.
 
 | Field | Type | Description |
 |---|---|---|
-| `command` | `rename` \| `replace` \| `frontmatter` \| `link-repair` \| `tag-normalize` \| `orphan-report` | Which subcommand |
+| `command` | `rename` \| `replace` \| `frontmatter` \| `link-repair` \| `tag-normalize` \| `moc-generate` \| `orphan-report` | Which subcommand |
 | `dry_run` | `bool` | If true, report changes without writing |
 | `vault` | `Path` | Resolved vault directory |
 | `scope` | `Scope` | File filter for this operation |
@@ -71,6 +71,14 @@ When all are `None`, scope is the entire vault (excluding skip dirs: `.obsidian`
 |---|---|---|
 | `taxonomy` | `Path \| None` | Path to taxonomy file (default `_meta/taxonomy.md` in vault) |
 | `remove_unknown` | `bool` | If true, remove tags not in taxonomy (default false — report only) |
+
+### MocGenerateParams
+
+| Field | Type | Default | Description |
+|---|---|---|---|
+| `title_map` | `dict[str, str]` | built-in | Folder name → player-friendly title (e.g. `npc` → "Non-Player Characters") |
+
+No user-supplied parameters beyond global vault. The static title map is internal.
 
 ### OrphanReportParams
 

@@ -186,6 +186,26 @@ scripts/wiki-bulk-ops tag-normalize [--taxonomy FILE] [--remove-unknown] [global
 
 **Exit codes**: 0 success, 1 validation error, 2 partial failure
 
+### `moc-generate`
+
+Generate or regenerate `_index.md` Map of Content files for content subfolders.
+
+```
+scripts/wiki-bulk-ops moc-generate [global opts]
+```
+
+**Behavior**:
+1. Walk content category folders (e.g. `entities/`, `entities/npc/`, `journal/`, `synthesis/`) — skip infrastructure dirs (`_archive/`, `_raw/`, `_staging/`, `_meta/`, `.obsidian/`, `attachments/`, `templates/`)
+2. For each content folder, generate `_index.md` with:
+   - Required llm-wiki frontmatter (`title`, `category`, `tags`, `sources`, `created`, `updated`)
+   - `title:` from static folder-name → player-friendly title map (fallback: title-cased folder name)
+   - Flat alphabetical list of piped wikilinks: `[[kebab-name|Page Title]]` (fallback to filename if no `title:` field)
+   - Wikilinks to child folder `_index.md` MOCs where nested subfolders exist
+3. Update root `index.md` to include wikilinks to all top-level `_index.md` MOC files
+4. Fully idempotent — each run regenerates from current folder contents; manual `_index.md` edits are not preserved
+
+**Exit codes**: 0 success, 1 validation error, 2 partial failure
+
 ### `orphan-report`
 
 List pages with no incoming wikilinks (report-only, no modifications).

@@ -143,7 +143,29 @@ printf 'old-npc-name\tnew-npc-name\nold-place\tnew-place\n' > /tmp/link-mapping.
 # Verify: unknown tags now listed for removal
 ```
 
-### 12. Orphan report
+### 12. MOC generation — create subfolder indexes
+
+```bash
+# Dry run: see what _index.md files would be created/updated
+./scripts/wiki-bulk-ops moc-generate --dry-run --json --vault wiki
+
+# Verify: output lists content folders that would get _index.md
+# Verify: infrastructure folders (_archive, _raw, _staging, _meta, .obsidian, attachments, templates) absent
+# Verify: each MOC has player-friendly title, wikilinks to folder contents
+
+# Apply
+./scripts/wiki-bulk-ops moc-generate --vault wiki
+
+# Verify: _index.md exists in content folders (entities/, entities/npc/, journal/, etc.)
+# Verify: root index.md updated with links to top-level MOCs
+# Verify: frontmatter valid YAML with required fields
+
+# Idempotency
+./scripts/wiki-bulk-ops moc-generate --vault wiki --json
+# Verify: files_modified: 0
+```
+
+### 13. Orphan report
 
 ```bash
 ./scripts/wiki-bulk-ops orphan-report --json --vault wiki
@@ -178,4 +200,6 @@ python3 tests/test_wiki_bulk_ops.py
 | Link repair ambiguous (no mapping) | 0 | 0 (reported only) |
 | Link repair with mapping | 0 | ≥1 |
 | Tag normalize with aliases | 0 | ≥1 |
+| MOC generate (new folders) | 0 | ≥1 |
+| MOC generate idempotent | 0 | 0 |
 | Orphan report | 0 | 0 (report-only) |

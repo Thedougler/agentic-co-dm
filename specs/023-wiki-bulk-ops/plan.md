@@ -74,6 +74,10 @@ tests/
 
 **Structure Decision**: Single script under `scripts/` — matches the existing `remorph-*` pattern exactly. No `src/` tree, no package, no library split. The remorph scripts prove this pattern works for vault-wide file transformations at this scale.
 
+## Constitution Re-Check (Post-Phase 1)
+
+All principles re-checked — no new violations. MOC generation (FR-017–FR-022) added to data model, CLI contract, and quickstart; it is deterministic structural maintenance (XX), agent-shaped (VI), and does not invent lore (VII/X). No complexity justification needed.
+
 ## Complexity Tracking
 
 No violations to justify.
