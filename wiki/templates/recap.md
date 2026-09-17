@@ -15,7 +15,7 @@ summary: ""
 <!-- Copy-start scaffold for post-play session log.
      Filed practice (Sessions 01–10): type: recap, leading cold open, [!narration] Recap, then ## Wiki facts.
      Prefer type: recap over type: session for new post-play logs.
-     Session/run callout rule: only [!narration]. No [!secret] / [!mechanic] on this surface.
+     Callout rule: only [!narration] is permitted on any surface.
      File under wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md (e.g. Session-01-Recap.md; same folder as that session’s plan/beats).
 -->
 

@@ -36,11 +36,10 @@ campaign threads concise enough to review before play.
 
 # {{title}}
 
-> [!summary] Quest
-> **Status:** Offered
-> **Objective:** What can the party accomplish? State the result, not the method.
-> **Why now:** What makes this matter now?
-> **Deadline:** None, or the fictional event after which the situation changes.
+**Status:** Offered
+**Objective:** What can the party accomplish? State the result, not the method.
+**Why now:** What makes this matter now?
+**Deadline:** None, or the fictional event after which the situation changes.
 
 ## At a Glance
 
@@ -93,8 +92,7 @@ Write the DM-facing truth behind the quest. Keep uncertain outcomes unresolved.
 * [ ] **Portent 3.** The situation becomes difficult to reverse.
 * [ ] **End state.** The world changes even if the quest remains unresolved.
 
-> [!warning] Current pressure
-> Record the next consequence that can enter play. Advance this only when fiction, elapsed time, or player action justifies it.
+**Current pressure:** Record the next consequence that can enter play. Advance this only when fiction, elapsed time, or player action justifies it.
 
 ## Leads & routes
 

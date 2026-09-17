@@ -52,8 +52,7 @@ Design basis: city gazetteer + meaningful districts + layered urban activity; si
 | **Opportunity** | Why adventurers can profit, matter, or get into trouble here.   |
 | **Population**  | Scale or useful approximation; precision only when established. |
 
-> [!abstract] DM thesis
-> One sentence explaining what makes {{title}} worth using in play. This is about the city's function in the campaign, not its history.
+**DM thesis:** One sentence explaining what makes {{title}} worth using in play. This is about the city's function in the campaign, not its history.
 
 ## Orientation
 
@@ -218,8 +217,7 @@ Keep faction histories and full agendas on their own pages. This table answers o
 * **Who controls the streets:** [[Faction]]
 * **Who cannot be ignored:** [[NPC or Faction]]
 
-> [!question] Fault line
-> What single disagreement, scarcity, succession, grievance, or incompatible ambition currently prevents the city's powers from settling into equilibrium?
+**Fault line:** What single disagreement, scarcity, succession, grievance, or incompatible ambition currently prevents the city's powers from settling into equilibrium?
 
 ## Connections
 
@@ -244,8 +242,7 @@ Move completed or irrelevant situations to the Change log instead of preserving 
 
 **Involved:** [[Faction]] · [[NPC]] · [[District]]
 
-> [!danger] Situation now
-> Describe the unstable present in 2–4 sentences.
+Describe the unstable present in 2–4 sentences.
 
 * **Visible signs.** What the party can encounter before deliberately investigating.
 * **What they want.** What the active side is trying to accomplish.
@@ -257,8 +254,6 @@ Move completed or irrelevant situations to the Change log instead of preserving 
 ## [[Situation]]
 
 **Involved:**
-
-> [!danger] Situation now
 
 * **Visible signs.**
 * **What they want.**
@@ -313,7 +308,7 @@ Check a rumor when the party hears it; replace stale entries between visits.
 * [ ]
 * [ ]
 
-## Secrets
+## Discoverable facts
 
 <!--
 Facts the party could discover during current play. These are truths or useful clues, not scripted scenes.
@@ -416,8 +411,7 @@ Cities feel embedded in a world when necessities arrive from somewhere and expor
 
 # Current state
 
-> [!warning] At the table
-> Write only the handful of changes the DM must remember **right now** when running {{title}}. This is the city's current delta from its baseline description above.
+Write only the handful of changes the DM must remember **right now** when running {{title}}. This is the city's current delta from its baseline description above.
 
 **Campaign date:**
 **Last party visit:**

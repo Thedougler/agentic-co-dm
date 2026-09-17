@@ -2,58 +2,266 @@
 title: "Fisk's Fleet"
 aliases:
   - Fisk's Fleet
+  - Fisk's Captains
 category: entities
 tags: [shattered-sea, faction]
 sources:
   - "campaign-os:fisks-fleet.md"
-created: 2026-09-13
-updated: 2026-09-13
-type: faction
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
-reveal: unrevealed
-campaign: shattered-sea
-visibility: dm
-summary: "Before there was a fleet, [[delmar-fisk|Delmar Fisk]] and his five future captains were crewmates on another man's vessel. When that crew voted to transport enslaved people for sale, Fisk refused, "
+  - "wiki/entities/faction/chain-council.md"
+  - "inbox/archive/FILED-2026-09-05-tessarine-concordat.md"
+  - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-chain-council.md"
+summary: "Five captains founded a Chain Council-sponsored privateer fleet with Delmar Fisk before its Pearl theft ended in the fleet's destruction."
 provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+lifecycle: proposed
+lifecycle_changed: "2026-09-13"
+created: 2026-09-13
+updated: 2026-09-17
+type: faction
+reveal: unrevealed
+campaign: shattered-sea
+visibility: dm
+kind: fleet
+status: dissolved
+scope: regional
+region: "Midchain"
+base: ""
 ---
 # Fisk's Fleet
 
 ![[fisks-fleet-banner]]
 
-*Five ships, five captains, one commission — all lost to [[Umberlee]]'s wrath in under a minute.*
+> [!narration] Public face
+> Five ships sailed under Rear Admiral [[delmar-fisk|Delmar Fisk]] on a Chain Council commission. The fleet's last known assignment was to steal the [[pearl-of-souls|Pearl of Souls]] from [[vel-orn|Vel Orn]]; all five ships were lost soon afterward.
+**Current pressure:** Delmar carries the five captains while the Pearl and their crews' souls remain under [[Umberlee]]'s claim.
 
-## Members
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-Before there was a fleet, [[delmar-fisk]] and his five future captains were crewmates on another man's vessel. When that crew voted to transport enslaved people for sale, Fisk refused, and the five sided with him. The mutiny left all six with no ship, no patron, and no prospects worth naming — they stayed together anyway, working through every hard vessel and every failure until Fisk had ships of his own to give them. What he built from that refusal was a five-ship privateer fleet, sponsored by the [[chain-council]], with Fisk himself commanding as Rear Admiral.
+| | |
+| --- | --- |
+| **Nature** | Five-ship privateer fleet founded by Delmar Fisk and five allied captains. |
+| **Scope** | Regional; Midchain waters and the Pearl's trail. |
+| **Base** | No surviving base; the fleet was destroyed. |
+| **Leader** | [[delmar-fisk|Delmar Fisk]], Rear Admiral. |
+| **Public purpose** | A Chain Council commission operating under delegated authority. |
+| **Signature method** | Coordinated five-ship operations combining scouting, passage work, distraction, and command. |
+| **Current posture** | Dissolved; the captains' souls remain bound into [[delmar-fisk|Delmar Fisk]]. |
 
-[[rael-corven]] captained the *[[red-lady]]* and was the only one of the five who went into the shrine itself, standing at Fisk's side and finding the [[pearl-of-souls]] with [[Detect Magic]]. That makes his voice the loudest and most trusted of the five now living inside Fisk — commanding and protective, quick to stop performing and start moving people to safety, drawing on Intimidation and History. He surfaces when an [[ally]] drops to 0 hit points within 30 feet, or unbidden at the sight of a woman in a dark red dress, when he goes still and searches her face for someone he's lost.
+> **DM thesis:** Fisk's Fleet is the completed commission whose wreckage still drives the Pearl, Umberlee, and captain-soul consequences around Delmar.
+```
 
-[[Maren]] captained *[[the-narrow]]* and ran the aquatic perimeter survey that found the shrine's sub-surface entry point. Sassy and openly contemptuous of authority, her Navy resentment surfaces the instant she takes hold — sharp, short sentences, an expert's confidence in Perception and Stealth. She surfaces when Delmar is denied entry or a passage is blocked, or at the sight of a Navy vessel or insignia, when her contempt is immediate.
+```col-md
+flexGrow=1
+===
+## At the Table
 
-[[detto-kalash]] captained *[[Heft]]* and used Mold Earth to open the passage from the island's submerged base into the shrine below. Blunt and physical, he states facts with no charm and treats "no" as a complete sentence, backed by Athletics and Survival. He surfaces when Delmar fails a Constitution save or is knocked prone or grappled, or at the sight of a white horse, when he goes still and says nothing at all.
+- **They want:** The fleet's surviving consequence is for Delmar to remain alive long enough to confront the Pearl's trail.
+- **They offer:** A precise account of the five-ship operation, its captains, and the choices that opened the shrine.
+- **They pressure with:** Delmar's captain-soul manifestations and the unresolved cost of the theft.
+- **They will not:** Return as a functioning fleet; its ships and crews are gone.
+- **Their tell:** Delmar's voice and method change when one of the five captains surfaces.
+```
+````
 
-[[sienne-orre]], a [[minotaur]], captained *[[Fernen]]* and ran the second scout team alongside Maren, mapping the reef structure around the shrine. Methodical and careful, she slows Delmar down and wants more information before acting, drawing on Arcana and Investigation; her horns come forward when she concentrates, and the passage-sense she carried in life surfaces in Delmar as a spatial awareness he doesn't otherwise have. She surfaces when Delmar is targeted by a spell of 2nd level or higher or fails an Intelligence save, or at the sight of a green mermaid sign or figurehead, when she quietly recognizes it and asks about the place.
+---
 
-[[bastian-ookage]], a [[lizardfolk]], captained *[[Loud Argument]]* and commanded the distraction team at the shrine's main entrance — sustained bombardment, spell suppression, trap triggering. Theatrical and confrontational, he goes all-in and makes scenes, drawing on Performance and an expert's Deception; years with the crew taught him a warmth he wears openly, the most emotionally expressive of the five voices despite being the only cold-blooded captain among them. He surfaces when an [[enemy]]'s Deception or Persuasion check succeeds against Delmar, or when Delmar witnesses coercion of the powerless, or at the sight of a black jackdaw, when he surfaces warm and expansive and may reach for the bird. Of the five, Rael's forced trigger is the one most likely to create compounding pressure in combat — an ally dropping to 0 hit points is exactly the moment a fight is already going wrong.
+## Current State
 
-The party knows only pieces of this. Delmar confessed that he was a real admiral commanding a five-ship privateer fleet sponsored by the Chain Council, that the fleet stole the Pearl of Souls from a shrine, and that [[the Drowned Maw]] destroyed the fleet hours later — [[crissdalynn-khinriss]] pulled him free from the wreckage, and the Pearl fell into the Maw with it. What the table has never been given are the five captains' names, the ships' names, or the fleet's origin — that's been held back on purpose. Umberlee's own words to Delmar stayed to "what is Mine" and "the souls you stole," and the party was told only that he "carries souls Umberlee claims" and that a Pearl must be retrieved — never the five-captains story. Only Delmar's player knows he carries voices (`vault/episodes/004/transcript-day-2.md:93`). The known survivors of the fleet's destruction are [[delmar-fisk]] and [[crissdalynn-khinriss]].
+* **Status quo.** The fleet is destroyed. The five captains' souls were pressed separately into Delmar, while the [[pearl-of-souls|Pearl of Souls]] holds the souls of the fleet's crews.
+* **Recent change.** [[The Drowned Maw]] destroyed all five ships after the commission took the Pearl; [[crissdalynn-khinriss|Crissdalynn]] rescued Delmar from the wreckage.
+* **Pressure.** [[Umberlee]] claims the Pearl and the souls taken in the theft, while Delmar carries the captains as punishment and leverage.
+* **Strength.** The captains retain complementary command, scouting, passage, and shrine-operation knowledge.
+* **Vulnerability.** The fleet has no ships, crews, or independent base; its remaining influence depends on Delmar's survival.
+* **Opportunity.** The party can question a surfaced captain, use a trigger to call up a specialty, or follow the fleet's operational trail to the Pearl.
 
-What actually happened in the water: fog closed in thick enough that the sea itself went invisible, surrounding all five ships at once, and a rogue trench opened beneath them — all five plunged eighty feet down before the walls closed over them. [[crissdalynn-khinriss|Crissdalynn]] dove from the Red Lady's crow's nest, grabbed Fisk, and flew straight back up; she had risen only fifty feet when the water closed, and momentum and buoyancy carried them both the rest of the way to the surface. The Pearl of Souls, still aboard the Red Lady, activated at the moment of sinking and collected the souls of all five ships' crews. Umberlee pressed the five captains' souls into Fisk separately, as punishment and leverage — Fisk carries the five captains, the Pearl holds the crews. Both wrecks now sit at [[Shelfworks]], the Drowned Maw's eastern edge where the shelf descends toward the trench floor; their exact positions are not public knowledge.
+**Internal fracture:** The five captains disagree in method even when their history is shared. [[rael-corven|Rael]] commands and protects, [[Maren]] rejects authority, [[detto-kalash|Detto]] solves obstacles physically, [[sienne-orre|Sienne]] demands evidence, and [[bastian-ookage|Bastian]] turns pressure into spectacle.
 
-[[delmar-fisk|Delmar]]'s soul-anchor is a brass flagon: the sight or touch of one, while any captain is surfaced, brings him back. It's tied to the night after the mutiny, when the five stranded crewmates passed one flagon around — the moment before the fleet existed, and the thing that anchors him to who he was before any of this happened.
+---
 
-## Goals & Fronts
+## Active Agenda
 
-The [[chain-council]] commission was a mask. The [[tessarine-concordat]] wanted the [[pearl-of-souls]] kept away from [[aldric-drave]], who they believe could use it to expand his abilities beyond his own bloodline — the Concordat used the Chain Council to have Fisk's Fleet steal it before Drave could. The Council itself believed it was protecting [[Midchain]] waters from Umberlee's wrath, and never knew the real reason it was paying for the theft.
+**Goal:** Preserve Delmar long enough for the fleet's consequences to reach the Pearl and the souls taken in the theft.
 
-The fleet's one commission is already complete and the fleet itself destroyed — no ongoing Front lives on this page. The live consequence threads run on [[chain-council]] (Denial, Tessarine Containment, Midchain Anger) and [[Waveservants]] ([[the-red-wake]]), under each page's own Goals & Fronts.
+**Why:** The fleet's commission is complete, but its captains remain bound to Delmar and the Pearl remains under [[Umberlee]]'s claim.
 
-## Session Log
+**Clock:** ○ ○ ○ ○
 
-- vault/episodes/004/transcript.md:27 — Delmar's confession names the fleet directly (five ships, Chain Council sponsorship, Pearl theft, Maw destruction, Crissdalynn's rescue), corroborating this page and landing it at `canon` (pile-table rung 2) despite the source's own `audience: dm` / `publish: false` signal.
+**Next move:** Use whichever captain surfaces under the next trigger to keep Delmar alive and advance the search for the Pearl.
+
+**Needs:** Delmar's survival, a reliable lead to the Pearl, and the captains' memories of the shrine operation.
+
+**Opposition:** [[Umberlee]]'s claim, [[The Drowned Maw]], and Delmar's fragmented control.
+
+**Next signal:** Delmar's voice, posture, and priorities change into one captain's recognizable manner.
+
+**Player opening:** The party can protect Delmar, question a surfaced captain, follow the wreck's trail, or refuse to let the captains dictate the next move.
+
+**If completed:** The Pearl comes within reach, forcing a choice about the captains' souls and the souls held by the Pearl.
+
+### Milestones
+
+* [x] The five captains complete the Chain Council commission.
+* [x] The five ships and their crews are destroyed.
+* [ ] The party identifies the five captains and their roles in the theft.
+* [ ] The Pearl's location or next reliable lead is found.
+* [ ] The captains' punishment and the crews' souls are resolved.
+
+### Secondary Agenda
+
+No independent secondary agenda is established for a dissolved fleet. Current consequences belong on [[chain-council|Chain Council]], [[tessarine-concordat|Tessarine Concordat]], and [[Waveservants]] pages.
+
+---
+
+## Assets
+
+| Asset | Type | Location | What it enables | Condition |
+| --- | --- | --- | --- | --- |
+| Five captain souls | Information / Influence | [[delmar-fisk\|Delmar Fisk]] | Distinct expertise, memories, and reactions | Bound; surfaced by triggers |
+| Brass flagon soul-anchor | Magic / Access | [[delmar-fisk\|Delmar Fisk]] | Brings back a captain who is already surfaced | Present; custody is not recorded here |
+| Shrine-operation knowledge | Information | Shared among the captains | Explains the route, teams, and Pearl theft | Fragmented across five voices |
+
+---
+
+## People & Structure
+
+| Person / group | Role | Wants | Loyalty / fracture |
+| --- | --- | --- | --- |
+| [[delmar-fisk\|Delmar Fisk]] | Rear Admiral and current host | Survive and recover the Pearl | Carries all five captains |
+| [[rael-corven\|Rael Corven]] | Flag captain of the *[[red-lady\|Red Lady]]* | Protect Delmar and act decisively | Loudest and most trusted captain voice |
+| [[Maren]] | Captain of the *[[the-narrow\|Narrow]]* | Reject imposed authority and blocked passage | Quickest to challenge command |
+| [[detto-kalash\|Detto Kalash]] | Captain of the *[[Heft]]* | Solve physical obstacles directly | Blunt and difficult to redirect |
+| [[sienne-orre\|Sienne Orre]] | Captain of the *[[Fernen]]* | Gather enough information before acting | Slows action when evidence is thin |
+| [[bastian-ookage\|Bastian Ookage]] | Captain of the *[[the-loud-argument\|Loud Argument]]* | Turn pressure into movement and spectacle | Most emotionally expressive of the five |
+
+### Chain of Action
+
+**Who decides:** [[delmar-fisk|Delmar Fisk]], unless a surfaced captain takes immediate control.
+
+**Who interprets those orders:** [[rael-corven|Rael Corven]] when command is needed; otherwise the surfaced captain interprets the danger through their specialty.
+
+**Who actually carries them out:** [[delmar-fisk|Delmar Fisk]]'s body, directed by whichever captain is surfaced.
+
+**If leadership disappears:** Delmar remains the host, but the captains lose shared operational direction and surface as separate reactions rather than a coordinated crew.
+
+---
+
+## Territory & Touchpoints
+
+| Place | Presence | What they control or need here | Current pressure |
+| --- | --- | --- | --- |
+| [[delmar-fisk\|Delmar Fisk]] | Headquarters / Mobile | The only current physical host of the captains | Delmar's survival and control |
+| [[vel-orn\|Vel Orn]] | Past operation | The origin point of the Pearl theft | The commission's hidden purpose remains relevant |
+| [[The Drowned Maw]] | Contested wreck | The fleet's wreck and the Pearl's last known fall | [[Umberlee]]'s claim surrounds the site |
+
+---
+
+## Connections
+
+| Faction / person | Stance | What Fisk's Fleet wants from them | Leverage, debt, or friction |
+| --- | --- | --- | --- |
+| [[delmar-fisk\|Delmar Fisk]] | Bound host | Survival and continued movement | His body carries the captains |
+| [[chain-council\|Chain Council]] | Used commission | Recognition of what the commission caused | The Council commissioned the theft |
+| [[tessarine-concordat\|Tessarine Concordat]] | Hidden principal | The truth behind the commission | It used the Council to keep the Pearl from [[aldric-drave\|Aldric Drave]] |
+| [[pearl-of-souls\|Pearl of Souls]] | Target / prison | Recovery of the Pearl and the crews' souls | The Pearl is tied to [[Umberlee]]'s claim |
+| [[The Drowned Maw]] | Destroyer / contested site | Access to the wreck's last evidence | The Maw swallowed the Pearl's trail |
+
+### Party
+
+**Standing:** Unknown
+
+**Why:** The party knows that Delmar commanded a five-ship fleet and stole the Pearl, but the captains' names and origin remain unrevealed.
+
+**They currently want from the party:** Protection for Delmar and help following the Pearl's trail.
+
+**They can currently offer the party:** Specific memories and operational expertise when a captain surfaces.
+
+**What would change their standing:** The party's treatment of Delmar, the Pearl, and the souls claimed by [[Umberlee]].
+
+---
+
+## Signals & Rumors
+
+* **Visible sign.** Delmar's voice, posture, and priorities change abruptly into a captain's recognizable manner.
+* **Rumor.** The admiral who survived the fleet's destruction carries more than one dead captain in his head.
+* **Direct signal.** A brass flagon brings a surfaced captain back when seen or touched.
+* **Quiet clue.** Each captain reacts to a different trigger tied to the fleet, the shrine operation, or the life they lost.
+
+---
+
+## Running the Faction
+
+### When encountered
+
+The fleet is encountered through Delmar or through evidence at the wreck. A trigger can surface a captain whose expertise changes Delmar's immediate response.
+
+### When helped
+
+The surfaced captain provides a useful memory or skill, but the help exposes another piece of the theft and increases the party's obligation to keep Delmar alive.
+
+### When opposed
+
+The surfaced captain protects Delmar first, then responds through command, stealth, physical force, caution, or spectacle.
+
+### When ignored
+
+The fleet does not advance independently. Delmar continues carrying its consequences, and unresolved captain triggers surface at inconvenient moments.
+
+### When broken
+
+The fleet is already broken as a material faction. If Delmar dies or loses the Pearl's trail, resolve whether [[Umberlee]] reclaims the captains, the Pearl releases their crews, or the punishment changes form.
+
+---
+
+## Faction Turn
+
+### Current Turn
+
+* **Want:** No independent fleet action remains; the surviving consequence is Delmar's continued survival.
+* **Move:** A captain surfaces when a trigger meets the next immediate danger.
+* **Mark:** Delmar's next decision is colored by one captain's memory and temperament.
+* **Signal:** The captain's voice and trigger-specific behavior become visible to the party.
+* **Collision:** The consequence intersects with [[Umberlee]]'s claim, the Drowned Maw, and Delmar's need to maintain control.
+* **Player opening:** The party can protect Delmar, exploit the surfaced expertise, or refuse to let the captains dictate the next step.
+
+### Turn Log
+
+| Date / session | Move | Result / changed fact | Ripple | Signal | Cause |
+| --- | --- | --- | --- | --- | --- |
+
+---
+
+## History
+
+* **The mutiny.** Fisk refused to transport enslaved people for sale, and the five future captains sided with him; the six remained together afterward.
+* **The five-ship commission.** The Chain Council sponsored Fisk's fleet to steal the Pearl of Souls from Vel Orn.
+* **The sinking.** The Drowned Maw destroyed all five ships; the Pearl fell into the Maw, and Umberlee pressed the five captains' souls into Delmar.
+
+---
+
+## Hidden Agenda
+
+**Concealed motive:** The Chain Council's commission was a mask. The [[tessarine-concordat|Tessarine Concordat]] wanted the Pearl kept from [[aldric-drave|Aldric Drave]], while the Council believed it was protecting Midchain waters from [[Umberlee]].
+
+**Concealed allegiance:** The five captains are separate souls bound into Delmar as punishment and leverage, while the Pearl holds the souls of their crews.
+
+<!-- Omit when unused. -->
+
+---
+
+## After a Major Change
+
+* [ ] Update **Current State** to the new status quo.
+* [ ] Replace the completed, abandoned, or invalid agenda.
+* [ ] Update assets if Delmar, the brass flagon, or the Pearl changes hands.
+* [ ] Update affected [[delmar-fisk\|Delmar Fisk]], [[pearl-of-souls\|Pearl of Souls]], and [[The Drowned Maw]] pages.
+* [ ] Update relationships altered by the event.
+* [ ] Add the changed fact to the **Faction Turn Log**.
+* [ ] Put at least one consequence or signal where the party can encounter it.

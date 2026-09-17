@@ -43,8 +43,8 @@ summary: ""
 
 ## Shared section patterns
 
-**Casing (accepted):** Title Case for shared headings — `At a Glance`, `At the Table`, `Connections`, `Secrets`, `Provenance`, `Art`.
-Do not use sentence case (`At a glance`) or synonym titles (`Relationships`, `Related`, `Links`, `Ties`) when the job is Connections.
+**Casing (accepted):** Title Case for shared headings — `At a Glance`, `At the Table`, `Connections`, `Provenance`, `Art`.
+Do not use sentence case (`At a glance`) or synonym titles (`Relationships`, `Related`, `Links`, `Ties`, `Secrets`) when the job is Connections.
 
 Use these **heading names** when the job is the same across kinds. Do not invent synonyms (`Related`, `Links`, `Ties`, `Relationships` as a section title when the job is Connections).
 
@@ -54,11 +54,10 @@ Use these **heading names** when the job is the same across kinds. Do not invent
 | `## At a Glance` | Compact orientation a DM can skim before the long body | One short block or table. What it is / why it matters / current pressure. |
 | `## At the Table` | How to run it tonight — choices, notice, enables, warns | Owner pages. Not a second narration dump. |
 | `## Connections` | Named wikilinked ties that change a ruling or route | Bullets or a small table. Omit when empty. |
-| `## Secrets` | Unearned / hidden truth on owner pages | Prefer body heading + `[!secret]` where progressive disclosure helps. **Omit if empty.** |
 | `## Provenance` | Where the facts came from / contested chains | Owner pages when history or ingest ambiguity matters. **Omit if empty.** |
 | `## Art` | Extra embeds beyond a leading identity image | Filenames: `attachments/{slug}-{role}.ext` — see Attachment filenames. **Omit if empty.** |
 
-Kind-specific job blocks (Sheet, Hazard bullets, Effect, Wiki facts, …) stay after narration / At a Glance and before Connections / Secrets / Provenance when those apply.
+Kind-specific job blocks (Sheet, Hazard bullets, Effect, Wiki facts, …) stay after narration / At a Glance and before Connections / Provenance when those apply.
 
 **Omit empty sections.** Pass is kind jobs in AGENTS Layout, not rigid heading-order match — but when a shared job appears, use the shared heading name.
 
@@ -66,13 +65,13 @@ Kind-specific job blocks (Sheet, Hazard bullets, Effect, Wiki facts, …) stay a
 
 | Surface | Allowed callouts |
 |---|---|
-| Session / run / beat / recap spoken | **Only** `[!narration]` |
-| Owner pages (item, vehicle, place, npc, …) | `[!narration]` for spoken look; `[!mechanic]` / `[!secret]` for procedure and hidden truth |
+| All surfaces | **Only** `[!narration]` |
 
-- Live session surfaces: never collapsed `[!…]-`. Collapsed `[!secret]-` only on long-lived owner pages when progressive disclosure helps.
+- The only permitted callout is `[!narration]` — for spoken look / TotM narration.
+- All other information uses headings, bold text, tables, columns, and plain prose.
 - Do **not** put callouts inside table cells.
-- Do **not** proliferate new house callout types (`[!check]`, custom tip stacks, etc.) for jobs already covered by headings + at-table scan marks. Prefer plain headings + the scan table below.
-- Session/run: procedure is a **heading**. The whole card is DM-facing — no `DM truth` section.
+- Do **not** use `[!secret]`, `[!mechanic]`, `[!danger]`, `[!warning]`, `[!tip]`, `[!summary]`, `[!abstract]`, `[!check]`, `[!success]`, `[!failure]`, `[!question]`, `[!note]`, `[!example]`, or any other callout type.
+- All pages are DM-facing — no `Secrets`, `DM only`, or `DM truth` sections. The DM sees everything.
 
 ## At-table scan (one treatment = one meaning)
 

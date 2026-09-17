@@ -18,16 +18,15 @@ summary: ""
 
 # {{title}}
 
-> [!danger] At a Glance — a contest in doubt
-> **Trigger.** What happens that makes action necessary **now**.
->
-> **PC objective.** What concrete result can end this contest besides merely surviving.
->
-> **Opposition objective.** What [[npc]], [[creature]], faction, hazard, or other force is trying to accomplish.
->
-> **Stakes.** What the party can lose, fail to protect, or allow to change.
->
-> **Ends when.** The observable condition that means this beat is over. Keep the Cliffhanger short — resolve and hand off.
+**Trigger.** What happens that makes action necessary **now**.
+
+**PC objective.** What concrete result can end this contest besides merely surviving.
+
+**Opposition objective.** What [[npc]], [[creature]], faction, hazard, or other force is trying to accomplish.
+
+**Stakes.** What the party can lose, fail to protect, or allow to change.
+
+**Ends when.** The observable condition that means this beat is over. Keep the Cliffhanger short — resolve and hand off.
 
 > [!narration] Open on Action
 > In 2–4 complete sentences, establish the immediate danger, essential spatial information, and one striking sensory detail. End on the thing demanding a decision. Do not prescribe the party's response or reveal hidden information.
@@ -61,16 +60,17 @@ flexGrow=1
 ===
 ### Pressure
 
-> [!warning] Escalation Toolkit
-> Use these only when the fiction calls for them or momentum begins to flatten. Skip, reorder, or replace them in response to play.
->
-> **Telegraph.** Show clearly what is about to worsen before it happens.
->
-> **Escalate.** Increase danger, narrow an opportunity, move the objective, introduce a complication, or change the terrain.
->
-> **Breaking point.** Make the central threat immediate enough that someone must act or accept the consequence.
->
-> **Opposition ladder** (optional, scale across the session arc): Grunts (3:1 weaker, first test) → Minions (2:1 slightly weaker) → Henchmen (1:1 equal or stronger) → Villain (substantially stronger + support, Climax only). Save the strongest for last.
+#### Escalation Toolkit
+
+Use these only when the fiction calls for them or momentum begins to flatten. Skip, reorder, or replace them in response to play.
+
+**Telegraph.** Show clearly what is about to worsen before it happens.
+
+**Escalate.** Increase danger, narrow an opportunity, move the objective, introduce a complication, or change the terrain.
+
+**Breaking point.** Make the central threat immediate enough that someone must act or accept the consequence.
+
+**Opposition ladder** (optional, scale across the session arc): Grunts (3:1 weaker, first test) → Minions (2:1 slightly weaker) → Henchmen (1:1 equal or stronger) → Villain (substantially stronger + support, Climax only). Save the strongest for last.
 ```
 ````
 
@@ -91,9 +91,9 @@ flexGrow=1
 
 <!-- Keep information portable. Reveal it through whatever action, foe, object, or consequence makes sense in play rather than requiring one predetermined method. Omit this section when the beat carries no useful information. -->
 
-- **Secret / clue.** One short actionable fact the party can discover.
-- **Secret / clue.** One short actionable fact the party can discover.
-- **Secret / clue.** One short actionable fact the party can discover.
+- **Clue.** One short actionable fact the party can discover.
+- **Clue.** One short actionable fact the party can discover.
+- **Clue.** One short actionable fact the party can discover.
 
 ## Resolution
 
@@ -104,14 +104,13 @@ flexGrow=1
 | **Withdrawal / defeat** | The opposition's objective advances or the situation worsens without stopping play.          |
 | **Unexpected solution** | Follow the established fiction; preserve the consequence of what the party actually changed. |
 
-> [!success] Handoff
-> **Changed state.** What is now true because this contest happened.
->
-> **Immediate question.** What decision, revelation, negotiation, investigation, or other non-action problem is now in front of the party.
->
-> **Next Development.** [[Session-{{session}}-BB-Label]]
->
-> **If the session ends here.** End on one concrete image, consequence, revelation, arrival, or unanswered decision that makes the changed situation unmistakable.
+**Changed state.** What is now true because this contest happened.
+
+**Immediate question.** What decision, revelation, negotiation, investigation, or other non-action problem is now in front of the party.
+
+**Next Development.** [[Session-{{session}}-BB-Label]]
+
+**If the session ends here.** End on one concrete image, consequence, revelation, arrival, or unanswered decision that makes the changed situation unmistakable.
 
 ## References
 

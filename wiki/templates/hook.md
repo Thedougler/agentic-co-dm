@@ -18,11 +18,10 @@ summary: ""
 
 # {{title}}
 
-> [!summary] At the table — reel in the line
-> **Something happens:** What changes right now.
-> **Why it matters:** The immediate threat, opportunity, or personal stake.
-> **Decision:** The meaningful choice now in front of the party.
-> **Hook lands when:** The party is committed and moving — no fumbling for direction.
+**Something happens:** What changes right now.
+**Why it matters:** The immediate threat, opportunity, or personal stake.
+**Decision:** The meaningful choice now in front of the party.
+**Hook lands when:** The party is committed and moving — no fumbling for direction.
 
 > [!narration] Open on
 > Write 2–4 sentences the DM can speak. Start at the first changed thing. Give concrete sensory details, visible actors, and an obvious point of interaction. No secrets, DCs, unearned names, or hidden premise.
@@ -96,9 +95,8 @@ flexGrow=2
 
 ## Handoff
 
-> [!success] Cut to the next beat
-> **Next:** [[Session-{{session}}-BB-Label]] — **Development / Cliffhanger**
->
-> **Carry forward:** The person, clue, object, wound, clock, obligation, or unanswered question that gives the next beat momentum.
->
-> **Continuity change:** What is now true because of the party's choice.
+**Next:** [[Session-{{session}}-BB-Label]] — **Development / Cliffhanger**
+
+**Carry forward:** The person, clue, object, wound, clock, obligation, or unanswered question that gives the next beat momentum.
+
+**Continuity change:** What is now true because of the party's choice.

@@ -1687,7 +1687,7 @@
     "last_ingested": "2026-09-13T19:50:00Z",
     "pages_produced": [
       "entities/Chain Council.md",
-      "entities/Fisk's Captains.md",
+      "entities/faction/fisks-fleet.md",
       "entities/Cosimo Verantio.md",
       "entities/Aldric Drave.md"
     ],
@@ -4461,7 +4461,7 @@
     "content_hash": "sha256:0ae9b4b8078ca2accb646257cbfad6b1ebdbfd87a698b556808e742a455af086",
     "last_ingested": "2026-09-13T20:19:25Z",
     "pages_produced": [
-      "entities/Fisk's Fleet.md"
+      "entities/faction/fisks-fleet.md"
     ],
     "source_type": "document",
     "project": "shattered-sea",

@@ -22,10 +22,11 @@ wiki/AGENTS.md, not heading-order match.
 
 # {{title}}
 
-> [!abstract] At a Glance
-> **Core truth.** State the ruling in one or two sentences.
->
-> **Why it matters.** What choice, risk, or procedure this changes at the table.
+## At a Glance
+
+**Core truth.** State the ruling in one or two sentences.
+
+**Why it matters.** What choice, risk, or procedure this changes at the table.
 
 ## Current Truth
 

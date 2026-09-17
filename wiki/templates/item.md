@@ -25,7 +25,7 @@ summary: ""
      Omit unused identity keys including owner. Pass is consumable jobs in wiki/AGENTS.md Layout.
 
      MAGIC | PLOT | DURABLE: Keep leading narration + classification + runnable effect.
-     Add omit-if-empty sections below in this order: At a Glance, At the Table, Connections, Secrets, Provenance, Art.
+     Add omit-if-empty sections below in this order: At a Glance, At the Table, Connections, Provenance, Art.
      Prefer one shared section order over kind-specific quirks. Numbers live on this owner page.
 
      Distill once — do not triple-tell the same fact across body / At a Glance / Provenance.
@@ -67,15 +67,15 @@ One or two sentences: what this item is now, who holds it when known, and why a 
 
 How the item changes a choice tonight — notice, spend, reveal, or pressure. Playable consequence only. Omit when unused. No design diary or RAW/balance commentary.
 
+## Hidden Properties
+
+Cursed effects, undiscovered attunement benefits, concealed history, or conditional triggers the party has not yet earned. Omit when unused.
+
 ## Connections
 
 - [[page]] — What this tie does at the table.
 
 <!-- Omit Connections when unused. -->
-
-## Secrets
-
-Hidden or unearned truth. Prefer `[!secret]` on long-lived owner pages when progressive disclosure helps. Omit when unused.
 
 ## Provenance
 

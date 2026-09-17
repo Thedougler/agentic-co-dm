@@ -18,20 +18,19 @@ summary: ""
 
 # {{title}}
 
-> [!danger] Run this — the earned convergence
-> **Party goal:** What the characters can accomplish here.
->
-> **Opposition goal:** What the opposition is trying to make true.
->
-> **Stakes:** What changes if the party succeeds, fails, bargains, or walks away.
->
-> **Pressure:** What makes acting *now* necessary.
->
-> **Threads harvested:** Which threads from the middle converge here? The party arrives equipped by Developments and tested by Cliffhangers — the Climax asks whether they can use what the middle taught them.
->
-> **End when:** The irreversible question this beat settles.
->
-> **Next:** [[Session-{{session}}-BB-Resolution]]
+**Party goal:** What the characters can accomplish here.
+
+**Opposition goal:** What the opposition is trying to make true.
+
+**Stakes:** What changes if the party succeeds, fails, bargains, or walks away.
+
+**Pressure:** What makes acting *now* necessary.
+
+**Threads harvested:** Which threads from the middle converge here? The party arrives equipped by Developments and tested by Cliffhangers — the Climax asks whether they can use what the middle taught them.
+
+**End when:** The irreversible question this beat settles.
+
+**Next:** [[Session-{{session}}-BB-Resolution]]
 
 > [!narration] Opening image
 > Put the decisive situation directly in front of the characters. Give them the immediate threat, opportunity, and something they can act on. No hidden information or prescribed response.
@@ -67,8 +66,7 @@ flexGrow=2
 - [ ] **3 — Crisis.** Force a hard choice or make the central threat immediate.
 - [ ] **4 — Consequence.** The opposition's goal occurs or the situation changes irreversibly.
 
-> [!warning] Do not stall
-> When the scene becomes static, advance the opposition, change the environment, expose a truth, or tick the pressure. Escalation changes the situation; it does not dictate a player response.
+**Do not stall.** When the scene becomes static, advance the opposition, change the environment, expose a truth, or tick the pressure. Escalation changes the situation; it does not dictate a player response.
 
 ## Opposition
 
@@ -107,12 +105,11 @@ flexGrow=2
 
 ## Final Battle
 
-> [!danger] Battle objective
-> **Win by:** State the objective beyond simply reducing every enemy to 0 HP.
->
-> **Lose when:** The fictional condition that means the opposition has achieved its objective.
->
-> **Battlefield pressure:** What progresses while everyone is fighting.
+**Win by:** State the objective beyond simply reducing every enemy to 0 HP.
+
+**Lose when:** The fictional condition that means the opposition has achieved its objective.
+
+**Battlefield pressure:** What progresses while everyone is fighting.
 
 ### Forces
 
@@ -127,14 +124,15 @@ flexGrow=2
 3. **Punish:** What behavior or position it is best equipped to exploit.
 4. **Desperation:** What changes when defeat becomes plausible.
 
-> [!danger]- Phase shift
-> **Trigger:** A visible event, objective change, threshold, destroyed asset, completed clock step, or revealed truth.
->
-> **Change:** Alter terrain, objective, available actions, enemy behavior, or stakes.
->
-> **Signal:** What the players see before the new danger matters.
->
-> **New opportunity:** What becomes possible for the characters because the situation changed.
+### Phase shift
+
+**Trigger:** A visible event, objective change, threshold, destroyed asset, completed clock step, or revealed truth.
+
+**Change:** Alter terrain, objective, available actions, enemy behavior, or stakes.
+
+**Signal:** What the players see before the new danger matters.
+
+**New opportunity:** What becomes possible for the characters because the situation changed.
 
 ### Ending the fight
 
@@ -147,8 +145,7 @@ flexGrow=2
 
 ## Final Revelation
 
-> [!question] The decisive question
-> **What must finally be understood:** The mystery, identity, motive, crime, allegiance, or hidden cause this climax resolves.
+**What must finally be understood:** The mystery, identity, motive, crime, allegiance, or hidden cause this climax resolves.
 
 ### Truth
 
@@ -180,14 +177,14 @@ flexGrow=2
 - **[[Item / Ability / Advantage]].** How the characters can exploit what they earned.
 - **[[Threat / Foreshadowing]].** What is finally made concrete.
 
-> [!tip]- Earned reveals
->
-> - **Reveal:** A fact that can surface here if play reaches it.
->   - **Cue:** What can expose it.
->   - **Meaning:** Why knowing it changes a decision.
-> - **Reveal:**
->   - **Cue:**
->   - **Meaning:**
+### Earned reveals
+
+- **Reveal:** A fact that can surface here if play reaches it.
+  - **Cue:** What can expose it.
+  - **Meaning:** Why knowing it changes a decision.
+- **Reveal:**
+  - **Cue:**
+  - **Meaning:**
 
 ## Outcome
 
@@ -197,8 +194,7 @@ flexGrow=2
 - **If the party withdraws or changes the terms:** How the situation resolves without pretending the climax never happened.
 - **Survivors / loose ends:** Who or what remains active afterward.
 
-> [!success] Hand off to Resolution
-> Once the central question is settled, stop escalating. Give the result room to land, record the changed state of the world, and move to [[Session-{{session}}-BB-Resolution]].
+**Hand off to Resolution.** Once the central question is settled, stop escalating. Give the result room to land, record the changed state of the world, and move to [[Session-{{session}}-BB-Resolution]].
 
 ## Live notes
 

@@ -1,9 +1,9 @@
 <!--
 Sync Impact Report
-- Version change: 1.24.0 → 1.25.0 (MINOR)
+- Version change: 1.25.0 → 1.26.0 (MINOR)
 - Modified principles: None
 - Added sections:
-  - XX. Multi-Step Work Uses a Checked Todo List
+  - XXI. Highlighted Production Prose Is a Source Error
 - Removed sections: None
 - Follow-up TODOs: None
 -->
@@ -253,6 +253,22 @@ with the blocking reason, and MUST NOT finish while an actionable step remains u
 Rationale: an explicit, continuously checked work list prevents omitted steps and makes progress
 inspectable across tools, agents, and sessions.
 
+### XXI. Highlighted Production Prose Is a Source Error
+
+In production prose, an unescaped Obsidian Markdown highlight span of the form `==text==` is
+a user-marked quality error, not an authoring style. Agents MUST NOT reproduce such highlights.
+When an agent encounters one, it MUST treat the surrounding prose as unsatisfactory even when
+the user provides no explanation. If a parenthetical explanation follows the highlight, the agent
+MAY use it as diagnostic context, but MUST fix the language regardless.
+
+The agent MUST record the error in the error ledger and trace it to the source that produced it.
+The source MUST be corrected at the applicable skill, instruction, template, workflow, or linting
+system level, including `writing-for-agents` or `copy-writer` when applicable. Removing only the
+highlight marker without correcting the underlying quality error is non-compliant.
+
+Rationale: highlighted production prose is explicit user feedback; recording it and repairing its
+source prevents recurrence across generated work.
+
 ## Operating Boundaries
 
 - The Co-DM works in prep and wrapup windows; the DM is the sole runtime at the table.
@@ -303,4 +319,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.25.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 1.26.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17

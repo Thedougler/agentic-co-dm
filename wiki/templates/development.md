@@ -18,16 +18,15 @@ summary: ""
 
 # {{title}}
 
-> [!abstract] Development — the bump
-> **Purpose.** What this beat needs to change for the party — new direction, new capability, new constraint.
->
-> **Trigger.** What brings this situation on screen.
->
-> **Turn.** The fact, warning, relationship, advantage, or complication that changes the party's understanding.
->
-> **Exit.** The party has a new direction of action they could not have chosen before this beat.
->
-> **Target.** ~30 minutes.
+**Purpose.** What this beat needs to change for the party — new direction, new capability, new constraint.
+
+**Trigger.** What brings this situation on screen.
+
+**Turn.** The fact, warning, relationship, advantage, or complication that changes the party's understanding.
+
+**Exit.** The party has a new direction of action they could not have chosen before this beat.
+
+**Target.** ~30 minutes.
 
 > [!narration] Opening
 > Write 2–4 player-facing sentences establishing only what the characters can immediately perceive. End on something they can respond to.
@@ -62,18 +61,19 @@ flexGrow=2
 
 - [ ] **Core.** The truth that materially changes what the party knows, wants, or can do. → **Leads:** [[Node]]
 - [ ] **Support.** A fact that clarifies motives, stakes, history, or consequences. → **Leads:** [[Node]]
-- [ ] **Optional.** A useful secret, connection, omen, or piece of texture. → **Leads:** [[Node]]
+- [ ] **Optional.** A useful clue, connection, omen, or piece of texture. → **Leads:** [[Node]]
 ```
 ````
 
-> [!tip]- Required conclusion — redundancy
-> Use only when the adventure depends on the party reaching a particular conclusion.
->
-> **Conclusion.** What the players need enough evidence to reasonably conclude.
->
-> - [ ] **Route 1.** An independent clue, witness, observation, document, or consequence.
-> - [ ] **Route 2.** A different source or method pointing to the same conclusion.
-> - [ ] **Route 3.** A third independent route, preferably accessible from another person, place, or beat.
+### Required conclusion — redundancy
+
+Use only when the adventure depends on the party reaching a particular conclusion.
+
+**Conclusion.** What the players need enough evidence to reasonably conclude.
+
+- [ ] **Route 1.** An independent clue, witness, observation, document, or consequence.
+- [ ] **Route 2.** A different source or method pointing to the same conclusion.
+- [ ] **Route 3.** A third independent route, preferably accessible from another person, place, or beat.
 
 ## Actors
 
@@ -107,21 +107,21 @@ flexGrow=2
 | Refuses, delays, or walks away    |                                                                          | [[Session-{{session}}-BB-Label]] |
 | Changes the situation another way | Preserve the established truths; follow the consequence of their action. | [[Open Node]]                    |
 
-> [!warning] If the Beat Stalls
->
-> - Have an actor pursue their immediate want.
-> - Surface the clearest unrevealed fact through something already in the scene.
-> - Advance the pressure and show its consequence.
-> - Restate what has changed and the obvious handles the party can act on; remain open to another approach.
-> - Once the party has an actionable direction, end the beat and move on.
+### If the Beat Stalls
 
-> [!note]- After Play
->
-> - **What actually happened.**
-> - **Revelations learned.**
-> - **Decision made.**
-> - **NPC / faction posture changes.**
-> - **Resources gained or lost.**
-> - **World state changed.**
-> - **Next active node.** [[Beat]]
-> - **Unresolved thread.** [[Thread]]
+- Have an actor pursue their immediate want.
+- Surface the clearest unrevealed fact through something already in the scene.
+- Advance the pressure and show its consequence.
+- Restate what has changed and the obvious handles the party can act on; remain open to another approach.
+- Once the party has an actionable direction, end the beat and move on.
+
+### After Play
+
+- **What actually happened.**
+- **Revelations learned.**
+- **Decision made.**
+- **NPC / faction posture changes.**
+- **Resources gained or lost.**
+- **World state changed.**
+- **Next active node.** [[Beat]]
+- **Unresolved thread.** [[Thread]]

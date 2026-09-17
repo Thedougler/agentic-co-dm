@@ -18,23 +18,23 @@ summary: ""
 
 # {{title}}
 
-> [!summary] Session Compass
-> **Opening situation:** One sentence describing what is already happening when play begins.
->
-> **Immediate pressure:** What demands attention now.
->
-> **Session question:** What consequential question might play answer?
->
-> **If the party does nothing:** What the situation naturally becomes.
->
-> **Now:** [[Session-{{session}}-01-Label]]
->
-> **On deck:** [[Session-{{session}}-02-Label]] · [[Session-{{session}}-03-Label]]
+## Session Compass
+
+**Opening situation:** One sentence describing what is already happening when play begins.
+
+**Immediate pressure:** What demands attention now.
+
+**Session question:** What consequential question might play answer?
+
+**If the party does nothing:** What the situation naturally becomes.
+
+**Now:** [[Session-{{session}}-01-Label]]
+
+**On deck:** [[Session-{{session}}-02-Label]] · [[Session-{{session}}-03-Label]]
 
 ## Beat Map
 
-> [!tip] The chart is a pacing instrument, not a script
-> Alternation controls audience energy: two action beats in a row numb; two introspection beats in a row stall. Chart binds one Hook first, Developments and Cliffhangers only in alternating order, then one Climax followed by one Resolution. Trigger a beat when its situation becomes relevant. After play, skip, reorder, or replace middle beats when player choices change the fiction. Preserve consequences rather than forcing the next planned slot.
+The chart is a pacing instrument, not a script. Alternation controls audience energy: two action beats in a row numb; two introspection beats in a row stall. Chart binds one Hook first, Developments and Cliffhangers only in alternating order, then one Climax followed by one Resolution. Trigger a beat when its situation becomes relevant. After play, skip, reorder, or replace middle beats when player choices change the fiction. Preserve consequences rather than forcing the next planned slot.
 
 |  # | Beat                               | Form                      | Trigger                                                                             | What changes                                                      | Hand-off / options                                      | Budget |
 | -: | ---------------------------------- | ------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------- | -----: |
@@ -101,7 +101,7 @@ flexGrow=2
 ```
 ````
 
-## Floating Secrets & Clues
+## Floating Clues
 
 <!-- Keep these unattached until play tells you where they belong. Reveal them wherever the fiction makes sense. Carry forward only those that remain useful. -->
 
@@ -121,16 +121,17 @@ flexGrow=2
 | **Rewards / objects**          | [[Item]]                   |
 | **Rules / special procedures** | [[Reference]]              |
 
-> [!warning]- If play stalls
-> **Advance pressure.** Let the world act rather than waiting for the party.
->
-> **Surface information.** Reveal an unused clue through something the characters are already examining or interacting with.
->
-> **Offer a consequence, not a command.** Make the available choices and their stakes clearer.
->
-> **Use a floating Beat.** Bring in prepared pressure or opportunity that follows naturally from the current situation.
->
-> **Ask for intent.** Clarify what the characters are trying to accomplish, then adjudicate from there.
+### If play stalls
+
+**Advance pressure.** Let the world act rather than waiting for the party.
+
+**Surface information.** Reveal an unused clue through something the characters are already examining or interacting with.
+
+**Offer a consequence, not a command.** Make the available choices and their stakes clearer.
+
+**Use a floating Beat.** Bring in prepared pressure or opportunity that follows naturally from the current situation.
+
+**Ask for intent.** Clarify what the characters are trying to accomplish, then adjudicate from there.
 
 ## Live Notes
 
@@ -152,28 +153,29 @@ flexGrow=2
 - [ ] [[Session-{{session}}-06-Label]]
 - [ ] [[Session-{{session}}-07-Label]]
 
-> [!check]- Prep Audit
->
-> - [ ] The Hook creates immediate interest, pressure, or a meaningful decision.
-> - [ ] Every Beat has a **trigger** and a clear **change**; none depends on the players choosing a predetermined action.
-> - [ ] Middle Beats alternate Development and Cliffhanger; two of the same type do not sit consecutively on the chart.
-> - [ ] Escalation trends upward toward the Climax.
-> - [ ] Any genuine chokepoint has multiple clues, routes, or solutions.
-> - [ ] Opposition has goals and actions that exist independently of the PCs.
-> - [ ] Important clues are portable enough to surface through more than one reasonable interaction.
-> - [ ] The Climax can be reached through more than one sequence of player choices.
-> - [ ] The Resolution follows the **actual outcome**, not the planned outcome.
-> - [ ] Every linked Beat contains only the information needed to run that Beat at the table.
+### Prep Audit
+
+- [ ] The Hook creates immediate interest, pressure, or a meaningful decision.
+- [ ] Every Beat has a **trigger** and a clear **change**; none depends on the players choosing a predetermined action.
+- [ ] Middle Beats alternate Development and Cliffhanger; two of the same type do not sit consecutively on the chart.
+- [ ] Escalation trends upward toward the Climax.
+- [ ] Any genuine chokepoint has multiple clues, routes, or solutions.
+- [ ] Opposition has goals and actions that exist independently of the PCs.
+- [ ] Important clues are portable enough to surface through more than one reasonable interaction.
+- [ ] The Climax can be reached through more than one sequence of player choices.
+- [ ] The Resolution follows the **actual outcome**, not the planned outcome.
+- [ ] Every linked Beat contains only the information needed to run that Beat at the table.
 
 ## After the Session
 
-> [!note] Carry Forward
-> **Actual ending:** What situation exists now?
->
-> **Unresolved pressure:** What continues moving?
->
-> **Unused but still relevant:** [[Beat]] · clue · NPC · consequence
->
-> **Players intend to:** Their stated next move, in their words when possible.
->
-> **Next opening:** [[Next Session]] — one sentence suggesting where play can resume.
+### Carry Forward
+
+**Actual ending:** What situation exists now?
+
+**Unresolved pressure:** What continues moving?
+
+**Unused but still relevant:** [[Beat]] · clue · NPC · consequence
+
+**Players intend to:** Their stated next move, in their words when possible.
+
+**Next opening:** [[Next Session]] — one sentence suggesting where play can resume.

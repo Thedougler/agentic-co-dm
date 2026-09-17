@@ -62,8 +62,7 @@ Keep persistent geography separate from ephemeral events. Give a detailed site i
 
 ## Current state
 
-> [!summary] Status quo — as of `{{in-world date}}`
-> Describe what is normal here *right now* in 2–4 sentences. This is the state to assume until play or an active power changes it.
+**Status quo — as of `{{in-world date}}`:** Describe what is normal here *right now* in 2–4 sentences. This is the state to assume until play or an active power changes it.
 
 * **Recent change.** What has broken, arrived, vanished, awakened, or shifted.
 * **Pressure.** What is presently getting worse.
@@ -211,7 +210,7 @@ Describe the physical logic of the region: what contains it, divides it, feeds i
 * **Resource.** What is valuable here and who cares about it.
 * **Shelter.** Where safety can be found and what it costs.
 * **Wonder.** A fantastic feature worth seeking for its own sake.
-* **Secret.** A discoverable fact that changes how the region is understood.
+* **Hidden lore.** A discoverable fact that changes how the region is understood.
 * **Shortcut.** A discovery that changes future movement through the region.
 
 ## History still in play
@@ -252,15 +251,15 @@ WHERE region = this.file.name OR region = this.title
 SORT type ASC, file.name ASC
 ```
 
-> [!check]- Between-session maintenance
->
-> * [ ] Rewrite **Current state** if play changed the status quo.
-> * [ ] Record permanent consequences in **Change log**.
-> * [ ] Advance only the active powers or fronts that had reason and opportunity to act.
-> * [ ] Turn those off-screen actions into a visible **signal, rumor, encounter, or changed place**.
-> * [ ] Update routes, encounter ecology, or faction presence when the fiction changed them.
-> * [ ] Promote any newly important site, NPC, creature, faction, or subregion to its own linked note.
-> * [ ] Add detail only along the directions the players are actually pursuing.
+### Between-session maintenance
+
+* [ ] Rewrite **Current state** if play changed the status quo.
+* [ ] Record permanent consequences in **Change log**.
+* [ ] Advance only the active powers or fronts that had reason and opportunity to act.
+* [ ] Turn those off-screen actions into a visible **signal, rumor, encounter, or changed place**.
+* [ ] Update routes, encounter ecology, or faction presence when the fiction changed them.
+* [ ] Promote any newly important site, NPC, creature, faction, or subregion to its own linked note.
+* [ ] Add detail only along the directions the players are actually pursuing.
 
 <!--
 Research basis: region material is organized around persistent keyed geography plus separate encounters and a current campaign-status layer; rumors expose actionable regional information; pointcrawl structures can mix scales and nest fractally; meaningful routes differ by consequential tradeoffs; spiral development expands outward from actual player interest; fronts encode active dangers through goals, portents, and unresolved stakes; large sandboxes benefit from limiting active factions to the few currently relevant movers.

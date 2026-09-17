@@ -17,7 +17,7 @@ summary: ""
 <!-- Copy-start scaffold. type: item + kind: flora hazard.
      Jobs (wiki/AGENTS.md): Look; start; notice; contact cost; careful passage; honest counterplay.
      Extra mechanical rows only when they change the table. Omit unused sections.
-     Shared grammar: leading [!narration]; Connections / Secrets / Provenance / Art omit-if-empty.
+     Shared grammar: leading [!narration]; Connections / Provenance / Art omit-if-empty.
      Do not invent synonym headings for the hazard job bullets below.
 -->
 
@@ -38,15 +38,15 @@ summary: ""
 
 <!-- Extra rows (Repeat Save, Recovery, Placement, …) only when they change a table choice. -->
 
+## Hidden Triggers
+
+Delayed, conditional, or non-obvious effects the party has not yet discovered. Omit when unused.
+
 ## Connections
 
 - [[page]] — What this tie does at the table.
 
 <!-- Omit Connections when unused. -->
-
-## Secrets
-
-Omit when unused.
 
 ## Provenance
 

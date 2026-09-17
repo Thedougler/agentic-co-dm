@@ -17,7 +17,7 @@ summary: ""
 ---
 <!-- Copy-start scaffold. Jobs: Look; sheet; components; crew stations; handling; combat.
      After combat, shared omit-if-empty owner sections in this order (Red Lady / Dead Lady practice):
-     At a Glance → Secrets → Connections → At the Table → Provenance → Art.
+     At a Glance → Connections → At the Table → Provenance → Art.
      Pass is vehicle jobs in wiki/AGENTS.md Layout. Omit unused sections.
 
      Known/Unknown distill: blank sheet/component lines are Unknown — do not repeat "not established" absences.
@@ -63,9 +63,9 @@ Initiative, ramming, boarding, and destruction when the craft fights. Omit when 
 
 One short block: what this craft is now, where it sits, and why a DM opens the page. Omit when Sheet + narration already cover it.
 
-## Secrets
+## Hidden Cargo & History
 
-Hidden or unearned truth (wreck cargo, true flag, who is hunting it). Prefer `[!secret]` when progressive disclosure helps. Omit when unused.
+Concealed cargo, true flag, sealed compartments, or who is hunting this craft. Omit when unused.
 
 ## Connections
 

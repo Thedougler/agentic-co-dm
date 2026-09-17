@@ -18,6 +18,7 @@ base: ""
 summary: ""
 ---
 <!-- Copy-start scaffold. Public face; DM thesis; current state; one active agenda; table-relevant assets, people, places, and relationships; faction-turn log. Omit unused sections. The page passes when the DM can answer: What do they want? What can they do? What will they do next? What changes if they succeed? How can the party notice or interfere? -->
+<!-- Faction pages permit only the [!narration] callout form; keep DM-facing material as ordinary prose. -->
 
 # {{title}}
 
@@ -69,8 +70,7 @@ flexGrow=1
 * **Vulnerability.** The dependency, fracture, exposure, or constraint that can genuinely impede it.
 * **Opportunity.** What the current situation makes possible for someone willing to act.
 
-> [!warning] Internal fracture
-> Name the disagreement, rival interest, succession problem, divided loyalty, or incompatible method that prevents the faction from behaving like a single mind. Omit when none matters in play.
+**Internal fracture:** Name the disagreement, rival interest, succession problem, divided loyalty, or incompatible method that prevents the faction from behaving like a single mind. Omit when none matters in play.
 
 ---
 
@@ -94,8 +94,7 @@ flexGrow=1
 
 **Player opening:** What remains possible for the party to influence, protect, expose, steal, negotiate, sabotage, support, or refuse.
 
-> [!danger] If completed
-> State the concrete new world state if the agenda succeeds. Change ownership, access, safety, law, alliances, resources, leadership, territory, or another fact the campaign can actually feel.
+**If completed:** State the concrete new world state if the agenda succeeds. Change ownership, access, safety, law, alliances, resources, leadership, territory, or another fact the campaign can actually feel.
 
 ### Milestones
 
@@ -255,13 +254,13 @@ What survives if the faction loses its leader, headquarters, key asset, legitima
 
 ---
 
-## Secrets
+## Hidden Agenda
 
-> [!secret] Hidden truth
-> A fact that meaningfully changes how the faction's behavior can be understood or exploited. Record who knows it and what evidence can reveal it.
+**Concealed motive:** A fact that meaningfully changes how the faction's behavior can be understood or exploited. Record who knows it and what evidence can reveal it.
 
-> [!secret] Hidden relationship
-> The patron, infiltrator, dependency, conspiracy, betrayal, or concealed allegiance behind an otherwise visible relationship.
+**Concealed allegiance:** The patron, infiltrator, dependency, conspiracy, betrayal, or hidden relationship behind an otherwise visible front.
+
+<!-- Omit when unused. -->
 
 ---
 

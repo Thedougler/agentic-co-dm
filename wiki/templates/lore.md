@@ -32,12 +32,13 @@ Omit sections that have no job.
 
 # {{title}}
 
-> [!abstract] At a Glance
-> **Core truth.** State the smallest useful version of this lore in one or two sentences.
->
-> **Why it matters.** What decision, danger, opportunity, relationship, or interpretation can change because this is true.
->
-> **Scope.** Name where, when, or for whom this is true when it is not universal.
+## At a Glance
+
+**Core truth.** State the smallest useful version of this lore in one or two sentences.
+
+**Why it matters.** What decision, danger, opportunity, relationship, or interpretation can change because this is true.
+
+**Scope.** Name where, when, or for whom this is true when it is not universal.
 
 ## Current Truth
 
@@ -47,12 +48,13 @@ Keep this authoritative and concise. Separate fact from interpretation. Link eve
 
 Do not predict a required sequence of future events.
 
-> [!warning]- Limits
-> Record exceptions, boundaries, costs, or circumstances under which the statement above stops being true.
->
-> * **Exception.**
-> * **Unknown.**
-> * **Impossible or forbidden.**
+### Limits
+
+Record exceptions, boundaries, costs, or circumstances under which the statement above stops being true.
+
+* **Exception.**
+* **Unknown.**
+* **Impossible or forbidden.**
 
 ---
 
@@ -74,14 +76,15 @@ Do not predict a required sequence of future events.
 | ------------------ | ---------------------------------- | ------------------------- | ---------------------------------------------------------- |
 | [[NPC or Faction]] | What they actually know or believe | knows / suspects / doubts | Witnessed, inherited, researched, taught, fabricated, etc. |
 
-> [!players]- Party Knowledge
-> **Known.** What the characters have actually established.
->
-> **Suspected.** What they currently think may be true.
->
-> **Misunderstood.** Any important conclusion the characters presently have wrong.
->
-> **Last changed.** [[Session]]
+### Party Knowledge
+
+**Known.** What the characters have actually established.
+
+**Suspected.** What they currently think may be true.
+
+**Misunderstood.** Any important conclusion the characters presently have wrong.
+
+**Last changed.** [[Session]]
 
 ---
 
@@ -95,7 +98,6 @@ Do not predict a required sequence of future events.
 
 ### Common telling
 
-> [!quote]
 > A short version of the story, proverb, teaching, warning, rumor, or explanation people inside the world might actually say.
 
 ---
@@ -123,8 +125,7 @@ A clue says what can be found; it does not prescribe how the party must find it.
 * [ ] **[[Source or NPC]].** Independent clue pointing to the same conclusion.
 * [ ] **[[Source, Item, Event, or Place]].** Another independent route to the conclusion.
 
-> [!tip]- Flexible clue
-> A short secret or clue that can surface wherever the characters plausibly investigate, question, research, examine, remember, or experiment.
+**Flexible clue:** A short discoverable fact that can surface wherever the characters plausibly investigate, question, research, examine, remember, or experiment.
 
 ---
 
