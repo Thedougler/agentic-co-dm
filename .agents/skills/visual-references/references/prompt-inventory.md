@@ -1,8 +1,7 @@
 # Prompt inventory template
 
 Assemble this as the agent's fact inventory before rendering into the host prompt field.
-On Grok Build, turn it into natural prose via `imagine`. On other hosts, adapt to the
-prompt style that produces the best results.
+Use the active harness addendum for native invocation and image-input syntax.
 
 The inventory has two halves that serve different purposes:
 

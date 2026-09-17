@@ -56,9 +56,10 @@ title. Battlemaps and other non-identity art go under **Art**.
 **Mint identity** only when a supplied look exists, no identity file is listed, and an authorized
 current task needs one. Keep provisional until DM approval. PC images require player-supplied or
 player-approved material. **Mint illustration** only for an explicitly named session moment; keep
-it session-scoped and out of identity lists. When minting, read
-[.agents/references/image-hosts.md](.agents/references/image-hosts.md) for which tool to call on
-the current host. **Promote/kill** accepted candidates without leaving
+it session-scoped and out of identity lists. For native image requests, read the active harness
+addendum: [OMP](../../../OMP.md), [Codex](../../../CODEX.md), or [Grok Build](../../../GROK.md).
+**Promote/kill** accepted
+candidates without leaving
 competing faces active. **Assemble** only approved player-safe images for entities actually in the
 guide; no gallery backfill. On a run-guide **pass 1** beat card, embed an
 identity image already listed on that exact owner's page (`![[attachments/…]]`)

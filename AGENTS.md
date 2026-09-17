@@ -404,6 +404,8 @@ Each fact has one owner. Do not restate these in harness config, generated adapt
 | Source + tests | Executable truth |
 | Harness runtime files (`.omp/config.yml`, etc.) | That harness's runtime concerns only |
 | Spec Kit generated adapters | Harness invocation of Spec Kit phases (disposable) |
+`OMP.md` is the OMP-only runtime addendum; when operating under OMP, read it for harness-specific edge cases.
+When operating under Codex or Grok Build, read `CODEX.md` or `GROK.md` respectively for image-tool notes.
 
 Orchestrator procedure: `docs/agents/harness-dispatch.md`.
 

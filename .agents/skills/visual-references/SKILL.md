@@ -43,9 +43,9 @@ keeps it alive.
 2. **Collect visual anchors.** Read the sections that carry appearance on each owner page:
    `## Visual reference`, `## Art`, the identity image near the title, `[!narration]` body
    when player-safe, and frontmatter `summary` as a last fallback. Resolve each `![[...]]`
-   embed to its actual file under `attachments/` as an absolute path. Note user-attached chat
-   images as their host token (`[Image #1]` on Grok Build) — those have no vault path.
-   Completion: each owner has a list of source lines plus resolved image paths or chat tokens.
+   embed to its actual file under `attachments/` as an absolute path. Record user-attached
+   chat images using the active host's native image reference; these may have no vault path.
+   Completion: each owner has a list of source lines plus resolved image paths or host references.
 
 3. **Inspect the pixels.** Open each reference image. The pixels are the authority — filename,
    alt text, and prose that contradict what the image actually shows yield to what you see.
@@ -62,13 +62,13 @@ keeps it alive.
    Completion: every attached image depicts an owner actually in the composition, and each
    central subject has its strongest available anchor attached.
 
-5. **Feed the host image tool.** Read [.agents/references/image-hosts.md](.agents/references/image-hosts.md)
-   for generate vs edit and the tool call on the current host. The image-input field must
-   hold the identity files or tokens — a filename in the prompt text is not the input. A
-   previous generated frame is not an identity anchor. Read
-   `references/prompt-inventory.md` for the structured brief template. Completion: when
-   identity anchors exist, the generate call's image-input field contains them; when none exist,
-   the call is text-only.
+5. **Feed the host image tool.** Use the active harness's native request contract:
+   [OMP](../../../OMP.md), [Codex](../../../CODEX.md), or [Grok Build](../../../GROK.md).
+   The input field must hold the identity files or host-supported image tokens — a filename
+   in prompt text is not the input. A previous generated frame is not an identity anchor.
+   Read `references/prompt-inventory.md` for the structured brief template. Completion: when
+   identity anchors exist, the native image-input field contains them; when none exist, the
+   call is text-only.
 
 6. **Stop on missing anchors.** If a known entity has neither appearance prose nor a usable
    reference image, ask for visual guidance or create the missing design through the
