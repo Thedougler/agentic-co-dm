@@ -493,7 +493,7 @@ document path from an Obsidian filename; the search result is the identifier.
 
 ## QMD Index Freshness
 
-QMD is an optional search index layered on top of the vault. The markdown vault is the source of truth. Any skill that writes wiki markdown should refresh QMD after the vault write completes, but only when `QMD_WIKI_COLLECTION` is configured and the local QMD transport is available. If QMD refresh fails, keep the vault changes and report the QMD status separately.
+QMD is an optional search index layered on top of the vault. The markdown vault is the source of truth. Any skill that writes wiki markdown should refresh QMD after the vault write completes when the local QMD transport is available, using the configured collection or `wiki` when `QMD_WIKI_COLLECTION` is empty. If QMD refresh fails, keep the vault changes and report the QMD status separately.
 
 Use the cheapest verification path that proves the new content is visible: run
 `scripts/qmd-maintain.sh` for update/status/probe, then use

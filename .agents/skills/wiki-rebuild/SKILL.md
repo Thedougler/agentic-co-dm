@@ -74,7 +74,7 @@ When the user wants to snapshot the current state without rebuilding.
    ```
    - [TIMESTAMP] ARCHIVE reason="snapshot" pages=87 destination="_archives/2026-04-06T10-30-00Z"
    ```
-5. Optionally refresh QMD if `log.md` is indexed and `QMD_WIKI_COLLECTION` is configured (see "QMD Refresh After Live Wiki Changes").
+5. Optionally refresh QMD if `log.md` is indexed and the local QMD CLI is available (see "QMD Refresh After Live Wiki Changes").
 6. Report: "Archived 87 pages. Current wiki is untouched."
 
 ## Mode 2: Archive + Rebuild
@@ -159,7 +159,7 @@ Refresh QMD after restore (see "QMD Refresh After Live Wiki Changes"), then tell
 
 QMD is a search index, not the source of truth. If QMD refresh fails, do not roll back archive, rebuild, or restore work; report the failure and leave the markdown vault intact.
 
-**GUARD: If `$QMD_WIKI_COLLECTION` is empty or unset, skip this step.**
+Use collection `wiki` when `$QMD_WIKI_COLLECTION` is empty or unset. Skip this step only if the local QMD CLI is unavailable.
 
 When to run:
 
@@ -184,7 +184,7 @@ embedding pass is requested.
 Verify the wiki collection reflects the operation:
 
 ```bash
-${QMD_CLI:-qmd} ls "$QMD_WIKI_COLLECTION"
+${QMD_CLI:-qmd} ls "${QMD_WIKI_COLLECTION:-wiki}"
 ```
 
 For restore, verify one restored page by following the exact QMD retrieval rule
@@ -194,7 +194,6 @@ docid or source verbatim to `qmd get` / `qmd multi-get`.
 Record QMD refresh in the final report as one of:
 - `QMD refreshed: update + verified; embeddings pending: N`
 - `QMD refreshed: update only + verified`
-- `QMD skipped: QMD_WIKI_COLLECTION unset`
 - `QMD skipped: archive-only live content unchanged`
 - `QMD skipped: qmd CLI unavailable`
 - `QMD failed: <short error summary>`

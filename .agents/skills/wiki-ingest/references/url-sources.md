@@ -288,4 +288,4 @@ Misc mode:
 - [ ] In misc mode: `affinity` and `promotion_status` fields present
 - [ ] `.manifest.json`, `index.md`, and `log.md` updated
 - [ ] Stub pages reported to user if fetch failed
-- [ ] QMD refresh per the main SKILL.md (skip if `QMD_WIKI_COLLECTION` unset)
+- [ ] QMD refresh per the main SKILL.md (default collection: `wiki` when `QMD_WIKI_COLLECTION` is unset)
