@@ -59,6 +59,7 @@ def structural_main(argv: list[str]) -> int:
             from tools.wiki_ops.identity import scan_identities
             identities = scan_identities(vault, scope=scope)
         ambiguous_identities = [item.to_dict() for item in identities if item.status == "ambiguous"]
+        extra: list[str] = []
         if not args.all:
             extra.append("--hard-only")
         for value in args.allow_lifecycle:
