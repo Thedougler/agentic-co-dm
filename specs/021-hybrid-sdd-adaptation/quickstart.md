@@ -1,0 +1,86 @@
+# Quickstart: Hybrid Spec-Driven Development
+
+Validate the routing, artifact, evidence, telemetry, and compatibility seams after implementation. This guide checks behavior through files and CLIs; it does not snapshot instruction wording or require a hosted service.
+
+## Prerequisites
+
+From the repository root:
+
+```bash
+python3 --version
+specify --version
+specify integration status --json
+./scripts/check-omp-baseline.sh
+```
+
+Expected baseline: Spec Kit status is `ok`, integrations include `omp`, `codex`, `grok`, and `claude`, no managed files are missing or modified, and the OMP baseline passes. The current checkout name may differ from the resolver's feature branch; do not switch branches as part of this check.
+
+The native-tokenizer comparison path also requires the separate tracked governance change identified in the feature assumptions. Until it lands, do not claim that the native-tokenizer policy is active.
+
+## Public fixture check
+
+```bash
+.venv/bin/python specs/021-hybrid-sdd-adaptation/fixtures/check.py
+```
+
+Expected output is a single `PASS` summary. The checker uses temporary directories for trace and helper data and leaves no normal telemetry in the repository.
+
+## Validation scenarios
+
+### 1. Classification and mixed routing
+
+Run the route fixtures for an agent-system change, campaign architecture, creative system, routine NPC, engineering request, entity collision, proposed canon, and mixed request.
+
+Expected: full SDD receives exactly one class and `route: full-sdd`; routine content uses its existing skill route; mixed work splits the system-changing slice from routine content; no fictional canon is created.
+
+### 2. Specification, plan, and task topology
+
+Inspect the route and dependency fixtures with `scripts/hybrid-sdd-check.py`.
+
+Expected: class, objective, value, authorities, scope, acceptance, failure modes, owner artifacts, intentionally omitted context, agency/canon constraints where applicable, and real dependency edges are present. Parallel fixtures have disjoint canonical write surfaces; no task is parallel merely because it is prose.
+
+### 3. Canon and agency boundary
+
+Run the evidence fixtures containing an existing alias, an uncertain collision, a conditional future event, a player refusal, and a safe deterministic maintenance action.
+
+Expected: existing owners are reused or ambiguity is surfaced; proposals remain proposals; DM acceptance is required only for fact-changing Work; player decisions remain open; deterministic maintenance is not blocked by a needless human gate.
+
+### 4. Deterministic versus semantic verification
+
+Run the hard-gate fixtures for invalid schema/type/lifecycle/owner/link values, canon precedence, entity-before-spoken, DM explicitness, reveal, visibility, and accept-before-write. Run the paired semantic fixture separately.
+
+Expected: objective violations are reported by the deterministic checker; semantic judgments are recorded by the blind paired evaluator and never emitted as deterministic lint failures.
+
+### 5. Trace recording and reporting
+
+Record complete `prep` and `wrapup` fixtures, a disabled measurement-gap fixture, produced/accepted/failed/incomplete Work, useful and unused retrieval, a retry, a fallback, and overlapping provenance.
+
+```bash
+python3 scripts/efficiency-trace.py record --input specs/021-hybrid-sdd-adaptation/fixtures/telemetry/complete.json
+python3 scripts/efficiency-trace.py report --input specs/021-hybrid-sdd-adaptation/fixtures/telemetry/complete.json
+```
+
+Expected: JSONL output contains only redacted metadata and counts; every token occurrence has one primary owner; all required report metrics have labels and denominators; failed/incomplete Work is retained but excluded from accepted-Work denominators; audit/replay is metadata only.
+
+### 6. Schema evolution and retention
+
+Run additive and incompatible trace fixtures, then the retention fixture.
+
+Expected: additive records remain readable; incompatible records are quarantined with an observable error; no historical record is rewritten; normal local traces are retained for 90 days and sanitized fixtures/baselines remain commit-safe.
+
+### 7. Promotion paths
+
+Run low-, moderate-, and high-risk paired fixtures using the versioned policy.
+
+Expected: at least 10 same-kind pairs and a 5% median reduction are required; low risk needs a 10% canary, moderate risk needs shadow replay and canary review, high risk needs human review, and any hard-gate or semantic regression rolls back.
+
+## Repository checks
+
+```bash
+python3 scripts/hybrid-sdd-check.py --help
+python3 scripts/efficiency-trace.py --help
+specify integration status --json
+./scripts/check-omp-baseline.sh
+```
+
+Do not replace these checks with a text snapshot of `AGENTS.md`, generated Spec Kit adapters, or the contract prose. Generated adapters and managed templates must remain clean under Spec Kit status.
