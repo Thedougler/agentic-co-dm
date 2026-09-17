@@ -8,7 +8,7 @@
 - Node.js >=22 and npm
 - Vale 3.13.0 (`vale --version`)
 - Repository `package.json`, `.markdownlint-cli2.jsonc`, and committed `package-lock.json`
-- Repository-owned Vale styles under `styles/`, including the configured Harper package
+- Repository-owned Vale styles under `styles/`
 - Repo root as CWD
 
 ## Setup
@@ -59,7 +59,7 @@ vale --output=JSON --config=.vale.ini tests/fixtures/creative_lint/AGENCY001/fai
 ```
 
 **Expected**: JSON output containing a finding with `Check: "CoDM.AGENCY001"`.
-Fixture scope enables only `CoDM`; wiki pages use the package set declared by `.vale.ini`, including Harper.
+Fixture scope enables only `CoDM`; wiki pages use the package set declared by `.vale.ini`.
 
 ```bash
 # Run Vale against a should-pass fixture

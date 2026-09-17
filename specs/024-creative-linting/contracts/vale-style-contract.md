@@ -13,10 +13,10 @@ The repository `.vale.ini` is the sole Vale package and scope authority. The lin
 ```ini
 StylesPath = styles
 MinAlertLevel = suggestion
-Packages = ai-tells, proselint, Readability, Harper
+Packages = ai-tells, proselint, Readability
 
 [wiki/*.md]
-BasedOnStyles = CoDM, ai-tells, proselint, Readability, Harper
+BasedOnStyles = CoDM, ai-tells, proselint, Readability
 
 [wiki/_raw/*.md]
 BasedOnStyles =

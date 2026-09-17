@@ -244,7 +244,7 @@ For Vale rules, fixtures can also be validated by running `vale --config=... <fi
 
 **Decision**: Add PyYAML to Python project metadata because `tools/creative_lint/registry.py` imports `yaml` and registry/bundle loading is required at runtime. Add a private root `package.json` with a pinned `markdownlint-cli2` development dependency and thin scripts that delegate to existing repository commands; commit the generated npm lockfile for reproducibility. Do not add Node wrappers or duplicate lint logic.
 
-**Decision**: Keep `.vale.ini` as the sole Vale package/style authority. The adapter invokes `vale --output=JSON --config=<repo>/.vale.ini`; the configured package set remains `ai-tells`, `proselint`, `Readability`, and `Harper`. The existing `.markdownlint-cli2.jsonc` owns structural rule configuration and excludes `_raw`, `_staging`, `_archive`, and templates.
+**Decision**: Keep `.vale.ini` as the sole Vale package/style authority. The adapter invokes `vale --output=JSON --config=<repo>/.vale.ini`; the configured package set remains `ai-tells`, `proselint`, and `Readability`. The existing `.markdownlint-cli2.jsonc` owns structural rule configuration and excludes `_raw`, `_staging`, `_archive`, and templates.
 
 **Alternatives considered**:
 - Treating markdownlint-cli2 as an ad hoc global prerequisite: rejected because it is not reproducible and conflicts with FR-019's discoverable operations.

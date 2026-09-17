@@ -378,3 +378,12 @@ T052 can be written against the candidate command contract while T053 implements
 ### Format Validation
 
 Every task line uses `- [ ]`, a sequential `T###` ID, `[P]` only for independently parallel work, `[USn]` on user-story tasks, and an explicit repository file path. Setup, foundational, and polish tasks intentionally omit story labels; every task in a user-story phase carries its phase label.
+
+## Phase 14: Convergence
+
+- [ ] T061 Point `AGENTS.md`, `.agents/skills/wiki-lint/SKILL.md`, and generating Co-DM skills at stable rule IDs and `wiki-lint task <bundle>` instead of duplicated rule prose; align `--consolidate` skill text with the approval-gated dry-run CLI in `scripts/wiki-lint` per FR-012, US1, US2/AC7 (missing)
+- [ ] T062 Pass session identity into `LintEngine.run()` from `scripts/wiki-lint` so `expires: session-N` waivers expire in CLI runs per FR-009, US8/AC2 (partial)
+- [ ] T063 Finish porting `scripts/lint-obsidian-markdown` and `scripts/lint-literal-newlines` checks into Vale or `.markdownlint-cli2.jsonc` with passing fixtures, then update callers (`scripts/lint-wiki-write`, `.agents/skills/session-recap/SKILL.md`) to the replacement surface per FR-017 (partial)
+- [ ] T064 Implement the missing `DIVERSITY001` symbolic evaluator in `tools/creative_lint/evaluators/symbolic.py` so its fail/pass fixtures actually evaluate per FR-014, US9 (partial)
+- [ ] T065 Record `evaluator_unavailable` / `abstain` findings for Vale-backed rules when Vale is absent instead of returning empty findings in `tools/creative_lint/vale_adapter.py` per US6, edge: evaluator unavailable (partial)
+

@@ -18,7 +18,7 @@ The CLI entry point is `scripts/wiki-lint`:
 
 Configuration has one owner per tool:
 
-- `.vale.ini` is the sole Vale package and path-scope authority. The repository carries `ai-tells`, `proselint`, `Readability`, and the legacy Harper package; Vale 3.13 activates the first three because the vendored Harper rules use an incompatible schema. Wiki pages also enable `CoDM`, while creative fixtures intentionally enable only `CoDM`. Raw and archive pages are excluded, staging uses only the configured prose packages, and templates are excluded.
+- `.vale.ini` is the sole Vale package and path-scope authority. The repository carries `ai-tells`, `proselint`, and `Readability`. Wiki pages also enable `CoDM`, while creative fixtures intentionally enable only `CoDM`. Raw and archive pages are excluded, staging uses only the configured prose packages, and templates are excluded.
 - `.markdownlint-cli2.jsonc` owns built-in Markdown structure settings. It excludes `wiki/_raw`, `wiki/_staging`, `wiki/_archive`, `wiki/templates`, `specs`, and `node_modules` from its Markdown globs.
 - `package.json` is private metadata only. Its npm scripts are thin aliases to existing repository commands; no Node wrapper or duplicate lint implementation exists. `markdownlint-cli2` is pinned to `0.23.2`, Node is `>=22`, and `package-lock.json` is committed.
 - `rules/registry.yml` owns rule metadata. `rules/bundles.yml` owns task-to-category routing. Neither duplicates the Vale package list.

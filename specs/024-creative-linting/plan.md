@@ -6,7 +6,7 @@
 
 ## Summary
 
-An executable lint-rule engine for canon, agency, temporal truth, knowledge boundaries, retrieval discipline, and creative heuristics — layered as a cross-cutting validation surface over the existing `wiki-lint` / `wiki-maintain` / `tools/lint_wiki.py` architecture. Rules live in YAML, have stable IDs and a five-level severity model, and run through typed evaluators (static first, semantic later). Vale is invoked through the repository `.vale.ini`, whose configured package set (`ai-tells`, `proselint`, `Readability`, and `Harper`) is authoritative. The engine plugs into the existing `scripts/wiki-lint` CLI, including the approval-gated `--consolidate` structural repair mode, agent prep/wrapup loops, and `scripts/wiki-maintain` Layer A.
+An executable lint-rule engine for canon, agency, temporal truth, knowledge boundaries, retrieval discipline, and creative heuristics — layered as a cross-cutting validation surface over the existing `wiki-lint` / `wiki-maintain` / `tools/lint_wiki.py` architecture. Rules live in YAML, have stable IDs and a five-level severity model, and run through typed evaluators (static first, semantic later). Vale is invoked through the repository `.vale.ini`, whose configured package set (`ai-tells`, `proselint`, and `Readability`) is authoritative. The engine plugs into the existing `scripts/wiki-lint` CLI, including the approval-gated `--consolidate` structural repair mode, agent prep/wrapup loops, and `scripts/wiki-maintain` Layer A.
 
 ## Technical Context
 
