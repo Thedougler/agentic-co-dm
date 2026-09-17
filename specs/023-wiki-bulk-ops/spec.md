@@ -105,6 +105,23 @@ Before any bulk operation commits changes, the agent can preview exactly what wo
 
 ---
 
+### User Story 7 - Subfolder MOC Generation (Priority: P2)
+
+An agent needs to generate or regenerate `_index.md` Map of Content (MOC) files for content subfolders in the wiki vault. Each MOC has a player-friendly `title:` in frontmatter and serves as both a subindex for llm-wiki agent retrieval and a visual table of contents for users browsing in Obsidian or on GitHub. MOCs are scoped to content category folders only — infrastructure folders (`_archive/`, `_raw/`, `_staging/`, `_meta/`, `.obsidian/`, `attachments/`, `templates/`) are excluded.
+
+**Why this priority**: Folder-level MOCs make the vault navigable for human readers in Obsidian and on GitHub, while giving agents a lightweight subindex that avoids loading the full root `index.md`. Currently no subfolder has a `_index.md`; every folder is opaque without opening individual pages.
+
+**Independent Test**: Run MOC generation on a test wiki subset with known pages. Verify each content folder has a `_index.md` with valid frontmatter, a player-friendly title, wikilinks to all contained pages, and no links to pages in other folders. Verify infrastructure folders have no `_index.md`. Verify idempotent re-run produces zero changes.
+
+**Acceptance Scenarios**:
+
+1. **Given** a content folder containing wiki pages, **When** the agent invokes MOC generation, **Then** a `_index.md` is created (or updated) in that folder with valid frontmatter including a player-friendly `title:`, wikilinks to every page in the folder, and standard llm-wiki required frontmatter fields.
+2. **Given** a content folder with nested subfolders (e.g., `entities/` containing `entities/npc/`, `entities/place/`), **When** MOC generation runs, **Then** the parent folder's MOC links to child folder MOCs and the child folder MOCs list their own pages.
+3. **Given** infrastructure folders (`_archive/`, `_raw/`, `_staging/`, `_meta/`, `.obsidian/`, `attachments/`, `templates/`), **When** MOC generation runs, **Then** no `_index.md` is created in those folders.
+4. **Given** an existing `_index.md` that is already up to date, **When** MOC generation runs again, **Then** zero changes are reported (idempotent).
+
+---
+
 ### Edge Cases
 
 - What happens when the wiki vault path is not set or the vault directory does not exist? → The tool exits with a clear error and makes no changes.
@@ -133,12 +150,19 @@ Before any bulk operation commits changes, the agent can preview exactly what wo
 - **FR-014**: The broken-link repair operation MUST NOT auto-resolve ambiguous matches (multiple candidates) unless an explicit mapping is provided; ambiguous cases MUST be reported with candidate suggestions.
 - **FR-015**: The system MUST provide a tag normalization operation that canonicalizes frontmatter tags against a taxonomy file, merges aliases, collapses duplicates, and reports unknown tags without removing them.
 - **FR-016**: The system MUST provide an orphan detection report that lists pages with no incoming wikilinks; this is report-only and MUST NOT auto-delete or auto-link pages.
+- **FR-017**: The system MUST provide a MOC generation operation that creates or regenerates `_index.md` files in content subfolders with a player-friendly `title:` in frontmatter, wikilinks to all contained pages, and links to child folder MOCs where nested subfolders exist. The operation is fully idempotent — each run regenerates the MOC from current folder contents; manual edits to `_index.md` are not preserved.
+- **FR-018**: MOC generation MUST target only content category folders (e.g., `entities/`, `journal/`, `synthesis/`, and type subfolders like `entities/npc/`) and MUST NOT create `_index.md` in infrastructure folders (`_archive/`, `_raw/`, `_staging/`, `_meta/`, `.obsidian/`, `attachments/`, `templates/`).
+- **FR-019**: Generated `_index.md` files MUST include all required llm-wiki frontmatter fields (`title`, `category`, `tags`, `sources`, `created`, `updated`) and MUST be searchable within Obsidian.
+- **FR-020**: The `title:` field in generated MOCs MUST be derived from a static map of known folder names to player-friendly human-readable titles (e.g., `npc` → "Non-Player Characters", `place` → "Places", `entities` → "Entities"). Unmapped folder names MUST fall back to title-cased folder name.
+- **FR-021**: MOC body content MUST list pages as a flat alphabetical list of piped wikilinks using each page's frontmatter `title:` as display text (e.g., `[[kebab-name|Page Title]]`). Pages without a `title:` field MUST fall back to the filename.
+- **FR-022**: MOC generation MUST update the root `index.md` to include wikilinks to all top-level `_index.md` MOC files, integrating subfolder navigation into the master index.
 
 ### Key Entities
 
 - **Operation**: A single bulk action (rename, replace, frontmatter-update, broken-link-repair) with its parameters, scope filter, and dry-run flag.
 - **Scope**: The set of files an operation targets, defined by directory path, glob pattern, or frontmatter filter.
 - **Change Record**: A per-file report of what was or would be modified (file path, line numbers, old text, new text).
+- **MOC (_index.md)**: A Map of Content file in a content subfolder that serves as both an agent subindex and a human-browsable table of contents, with player-friendly title and wikilinks to folder contents.
 
 ## Success Criteria *(mandatory)*
 
@@ -157,6 +181,11 @@ Before any bulk operation commits changes, the agent can preview exactly what wo
 - Q: Should the spec include a dedicated broken-link repair operation that resolves existing broken wikilinks, or are rename and replace sufficient primitives? → A: Add a dedicated broken-link repair operation (auto-resolve stale targets from known renames/fuzzy match + manual mapping fallback).
 - Q: Should SC-003 mean "no new issues introduced" (delta-based) or "zero total findings" (absolute-clean)? → A: Delta-based — operation must not increase wiki-lint finding count in any category (no regressions).
 - Q: Which wiki-lint finding categories beyond broken links should bulk ops address? → A: Broken links + tag normalization as operations; orphan detection as report-only (no auto-fix); index rebuild out of scope (existing tooling).
+- Q: Which wiki subfolders should receive `_index.md` MOC files — content folders only, or also infrastructure folders? → A: Content folders only (entities/, journal/, synthesis/, and their type subfolders). Infrastructure folders (_archive/, _raw/, _staging/, _meta/, .obsidian/, attachments/, templates/) are excluded.
+- Q: Should MOC generation be a re-runnable idempotent operation or a one-time scaffold? → A: Auto-regenerate from folder contents each run (idempotent). No manual edits survive — the MOC is fully derived from current folder state.
+- Q: How should the player-friendly `title:` be derived for each folder's MOC? → A: Static map of known folder names to human-readable titles (e.g., npc → "Non-Player Characters", place → "Places"). No taxonomy lookup dependency.
+- Q: Should the MOC body list pages as a flat alphabetical list or grouped by frontmatter field? → A: Flat alphabetical list using piped wikilinks with the page's `title:` as display text (e.g., `[[kebab-name|Page Title]]`).
+- Q: Should the root `index.md` be updated by MOC generation to link to the new `_index.md` files? → A: Yes. MOC generation also updates root `index.md` to link to top-level `_index.md` MOC files.
 
 ## Assumptions
 
