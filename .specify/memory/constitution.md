@@ -1,8 +1,8 @@
 <!--
 Sync Impact Report
-- Version change: 1.30.0 → 1.31.0 (MINOR)
+- Version change: 1.31.0 → 1.31.1 (PATCH)
 - Modified principles:
-  - XVI. The Simplest Adequate Tool → XVI. The Simplest Adequate Tool (bootstrap and reuse requirements added)
+  - XVI. The Simplest Adequate Tool → XVI. The Simplest Adequate Tool (duplicate rationale removed)
 - Added sections: None
 - Removed sections: None
 - Follow-up TODOs: None
@@ -214,9 +214,6 @@ artifact.
 Rationale: boring tools are easier to inspect, operate, and recover at 3 a.m. Reuse compounds
 proven solutions while reproducible bootstrap keeps agents unblocked without dependency drift.
 
-Rationale: boring tools are easier to inspect, operate, and recover at 3 a.m. New abstractions
-must clear a higher bar than "could exist."
-
 ### XVII. Autonomous Operation
 
 Agents MAY complete routine context, version-control, and repository-maintenance loops without
@@ -357,4 +354,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.31.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 1.31.1 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
