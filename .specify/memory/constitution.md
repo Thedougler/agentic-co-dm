@@ -45,10 +45,27 @@ Rationale: behavior-focused tests protect contracts through refactoring.
 Each fact, term, decision, and acceptance rule MUST have one authoritative owner. Cross-cutting
 domain language belongs in `CONTEXT.md`; resolved architecture belongs in ADRs; feature behavior
 belongs in specs and contracts; task procedures belong in skills; current operating policy
-belongs in `AGENTS.md`. Copies MAY link or summarize an owner, but MUST NOT create competing
-versions. Conflicts MUST remain visible until the authoritative owner resolves them.
+belongs in `AGENTS.md`.
 
-Rationale: findable ownership is safer than synchronized duplicates.
+Repository-owned agent skills MUST have one canonical editable authority at
+`.agents/skills/<name>/SKILL.md`, with co-located support files under that directory. Agents MUST
+edit this canonical tree and MUST NOT edit an alternate harness copy. When another location needs
+to expose a repository-owned skill, it MUST be a symlink to the canonical skill directory or
+file. Alternate regular-file copies, broken symlinks, duplicated skill bodies, or edits made
+outside the canonical tree are deviations; they MUST be detected, reported, and fixed immediately.
+A canonical change MUST propagate through those symlinks without a second synchronization step.
+
+Harness discovery MUST be constrained to the harness's declared default skill location or the
+repository default section at `.agents/skills/`. A harness MUST ignore every other skill copy,
+projection, or unlisted skill directory; it MUST NOT merge, rank, or silently fall back among
+duplicates. If the declared source is missing or invalid, the harness MUST report the failure
+rather than load another copy.
+
+Copies of other authoritative artifacts MAY link or summarize their owner, but MUST NOT create
+competing versions. Conflicts MUST remain visible until the authoritative owner resolves them.
+
+Rationale: one editable skill authority lets every harness receive the same change and prevents
+behavioral drift caused by copied procedures.
 
 ### VI. Software Is Agent-Shaped
 
@@ -285,4 +302,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.20.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-16
+**Version**: 1.21.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-16

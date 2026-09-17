@@ -73,6 +73,15 @@ qmd_ok() {
   fi
 }
 
+read_pending() {
+  docs="$(printf '%s' "$status" | sed -n 's/.*Total:[[:space:]]*\([0-9]*\) files indexed.*/\1/p' | head -1)"
+  vecs="$(printf '%s' "$status" | sed -n 's/.*Vectors:[[:space:]]*\([0-9]*\) embedded.*/\1/p' | head -1)"
+  pending="$(printf '%s' "$status" | sed -n 's/.*Pending:[[:space:]]*\([0-9]*\) need embedding.*/\1/p' | head -1)"
+  if [[ -z "$pending" && "${docs:-0}" =~ ^[0-9]+$ && "${vecs:-0}" =~ ^[0-9]+$ && "$vecs" -lt "$docs" ]]; then
+    pending=$((docs - vecs))
+  fi
+}
+
 [[ -d .qmd ]] || qmd_ok init
 
 qmd_ok collection list
@@ -97,18 +106,13 @@ printf '%s' "$status" | grep -q "wiki (qmd://wiki/)" || fail "required collectio
 printf '%s' "$status" | grep -q "shattered-sea (qmd://shattered-sea/)" || fail "required collection shattered-sea missing after status"
 printf '%s' "$status" | grep -q "legacy-ss (qmd://legacy-ss/)" || fail "required collection legacy-ss missing after status"
 
-docs="$(printf '%s' "$status" | sed -n 's/.*Total:[[:space:]]*\([0-9]*\) files indexed.*/\1/p' | head -1)"
-vecs="$(printf '%s' "$status" | sed -n 's/.*Vectors:[[:space:]]*\([0-9]*\) embedded.*/\1/p' | head -1)"
-pending="$(printf '%s' "$status" | sed -n 's/.*Pending:[[:space:]]*\([0-9]*\) need embedding.*/\1/p' | head -1)"
-if [[ -z "$pending" && "${docs:-0}" =~ ^[0-9]+$ && "${vecs:-0}" =~ ^[0-9]+$ && "$vecs" -lt "$docs" ]]; then
-  pending=$((docs - vecs))
-fi
+read_pending
 
 if [[ "$embed_mode" -eq 1 && "${pending:-0}" -gt 0 ]]; then
   qmd_ok embed -c wiki --max-docs-per-batch "$max_embed_docs" --max-batch-mb "$max_embed_mb"
   qmd_ok status
   status="$(cat "$outf")"
-  pending="$(printf '%s' "$status" | sed -n 's/.*Pending:[[:space:]]*\([0-9]*\) need embedding.*/\1/p' | head -1)"
+  read_pending
 fi
 
 qmd_ok search Hinewai -c wiki --format files
