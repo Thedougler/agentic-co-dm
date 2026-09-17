@@ -1,12 +1,11 @@
 <!--
 Sync Impact Report
-- Version change: 1.32.0 → 1.33.0 (MINOR)
+- Version change: 1.33.0 → 1.34.0 (MINOR)
 - Modified principles:
-  - XVIII. Constitutional Layering → XVIII. Constitutional Layering (harness parity and isolation added)
+  - XIX. The Wiki Is Additive, Self-Sealing, and Self-Healing → XIX. The Wiki Is Additive, Self-Sealing, and Self-Healing (lint completion gate added)
 - Added sections: None
 - Removed sections: None
-- Follow-up TODOs:
-  - Create or align dedicated root-level instruction files for OMP, Codex, Claude Code, and Grok Build.
+- Follow-up TODOs: None
 -->
 # Agentic Co-DM Constitution
 
@@ -277,6 +276,11 @@ wiki location through the applicable review and acceptance workflow. A staging p
 carried into a later session merely because the session ended; any genuine blocker MUST be surfaced
 explicitly with its owner and next action.
 
+Every file entering `wiki/` through `_staging/`, `_raw/`, or any other path MUST be checked by
+the current wiki linter before it is considered complete. Its linting report MUST be clean against
+current standards. A non-clean report means the file remains incomplete; the agent MUST remediate
+the findings or surface an explicit blocker before proceeding.
+
 Rationale: additive history seals accepted knowledge; safe repair keeps the compiled Wiki usable;
 staging limits temporary review state instead of becoming a permanent second wiki.
 
@@ -367,4 +371,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.33.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 1.34.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17

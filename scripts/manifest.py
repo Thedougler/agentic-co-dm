@@ -414,6 +414,19 @@ def cmd_normalize(args: argparse.Namespace) -> int:
     write(args.vault, data)
     emit({"merged": len(plan), "collisions": plan})
     return 0
+def cmd_transition(args: argparse.Namespace) -> int:
+    from tools.wiki_ops.manifest_ops import ManifestTransition, apply_transition
+    data = load(args.vault)
+    transition = ManifestTransition(args.page, args.transition, args.target, args.reason)
+    try:
+        out = apply_transition(data, transition)
+    except ValueError as exc:
+        return fail(str(exc), 2)
+    write(args.vault, out)
+    emit({"status": "applied", "page": args.page, "transition": transition.to_dict()})
+    return 0
+
+
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -469,6 +482,13 @@ def build_parser() -> argparse.ArgumentParser:
     record.add_argument("--project")
     record.set_defaults(func=cmd_record)
 
+    transition = sub.add_parser("transition", help="record a page identity transition")
+    vault_arg(transition)
+    transition.add_argument("--page", required=True)
+    transition.add_argument("--transition", required=True, choices=("merged_into", "renamed_to", "archived"))
+    transition.add_argument("--target")
+    transition.add_argument("--reason")
+    transition.set_defaults(func=cmd_transition)
     normalize = sub.add_parser("normalize", help="merge ~ vs absolute collisions")
     vault_arg(normalize)
     normalize.add_argument("--dry-run", action="store_true")

@@ -28,6 +28,7 @@ WIKI_LINT = ROOT / "scripts" / "wiki-lint"
 CONTEXT_WASTE = ROOT / "scripts" / "context-waste-scan.py"
 TOKEN_COUNT = ROOT / "scripts" / "token-count.py"
 REMORPH_FILENAME = ROOT / "scripts" / "remorph-page-filename-kebab"
+POLICY_CHECK = ROOT / "scripts" / "check-policy-conflicts"
 
 # Ignore inbox placeholders — leftover staging is anything else under _raw/.
 RAW_IGNORE_NAMES = frozenset({".gitkeep", ".gitignore", ".DS_Store"})
@@ -324,9 +325,18 @@ def step_creative_lint(vault: str, cwd: Path) -> dict[str, Any]:
         },
     }
 
+def step_policy_conflicts(cwd: Path) -> dict[str, Any]:
+    """Check single-ownership policy references without mutating files."""
+    if not POLICY_CHECK.is_file():
+        return {"step": "policy", "ok": True, "skipped": True}
+    code, data, err = run_json([sys.executable, str(POLICY_CHECK), "--json"], cwd=cwd)
+    return {"step": "policy", "ok": data is not None and code == 0, "exit_code": code, "conflicts": (data or {}).get("conflicts", []), "error": err if data is None else None}
+
+
 
 def build_report(vault: str, cwd: Path, *, include_creative: bool = False) -> dict[str, Any]:
     creative = step_creative_lint(vault, cwd) if include_creative else None
+    policy = step_policy_conflicts(cwd)
     a1 = step_wiki_lint(vault, cwd)
     a2 = step_context_waste(vault, cwd)
     a3 = step_token_count(vault, cwd)
@@ -391,6 +401,7 @@ def build_report(vault: str, cwd: Path, *, include_creative: bool = False) -> di
             "A3_token_count": a3,
             "A5_raw_empty": a5,
             "A6_dry_run_plans": a6,
+            "policy_conflicts": policy,
             **({"A7_creative_lint": creative} if creative is not None else {}),
         },
     }

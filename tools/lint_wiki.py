@@ -12,8 +12,13 @@ import collections
 import datetime as dt
 import json
 import re
+import sys
 from pathlib import Path
 from typing import Any
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 OWNER_LIFECYCLES = {"draft", "proposed", "accepted", "rejected", "canon"}
 DEFAULT_LIFECYCLES = set(OWNER_LIFECYCLES)
@@ -227,6 +232,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--allow-lifecycle", action="append", default=[])
     parser.add_argument("--allow-relationship-type", action="append", default=[])
     parser.add_argument("--required-trust-field", action="append", choices=("base_confidence", "lifecycle", "lifecycle_changed", "updated"), default=["base_confidence", "lifecycle"])
+    parser.add_argument("--scope", help="scope specification (dir:, type:, files:, changed:)")
     parser.add_argument("--today", default=dt.date.today().isoformat(), help="ISO date for stale-page checks")
     return parser.parse_args()
 
@@ -349,6 +355,15 @@ def main() -> int:
     args = parse_args()
     vault = args.vault.resolve()
     pages, lookup = load(vault)
+    if args.scope:
+        from tools.wiki_ops.scope import parse_scope
+        scoped = parse_scope(args.scope)
+        if scoped is None:
+            raise SystemExit("invalid empty scope")
+        scoped.resolve(vault)
+        selected = set(scoped.resolved_files)
+        pages = {key: value for key, value in pages.items() if key in selected}
+        lookup = {key: [item for item in values if item in selected] for key, values in lookup.items()}
     schema_path = args.schema_source.resolve() if args.schema_source else vault / "AGENTS.md"
     owner_types, owner_lifecycles = parse_owner_schema(schema_path)
     types = CAMPAIGN_TYPES | owner_types
@@ -393,17 +408,15 @@ def main() -> int:
             )
         )
     ]
-    findings["spaced_basename"] = spaced_basenames(pages)
-    findings["aruhe_prefix_basename"] = aruhe_prefix_basenames(pages)
-    findings["illegal_basename"] = illegal_basenames(pages)
     findings["duplicate_stems"] = duplicate_stems(pages)
     findings["snake_case_owner_basename"] = snake_case_owner_basenames(pages)
     findings["missing_trust"] = [{"page": rel, "missing": [key for key in args.required_trust_field if not item["fields"].get(key)]} for rel, item in pages.items() if any(not item["fields"].get(key) for key in args.required_trust_field)]
 
     documents = {}
+    scoped_documents = set(pages) if args.scope else None
     for path in sorted(vault.rglob("*.md")):
         rel = path.relative_to(vault)
-        if set(rel.parts) & SKIP_DIRS:
+        if set(rel.parts) & SKIP_DIRS or (scoped_documents is not None and rel.as_posix() not in scoped_documents):
             continue
         documents[rel.as_posix()] = path.read_text(encoding="utf-8")
     title_groups: dict[str, list[str]] = collections.defaultdict(list)

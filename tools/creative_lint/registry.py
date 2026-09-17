@@ -29,16 +29,16 @@ class RuleDefinition:
     auto_repair: bool = False
     conflicts: list[str] = field(default_factory=list)
     depends: list[str] = field(default_factory=list)
+    applicability: list[str] = field(default_factory=list)
+    structural_scope: list[str] = field(default_factory=list)
+    exemptions: list[str] = field(default_factory=list)
+    repair_class: str = "diagnostic"
+    positive_fixtures: list[str] = field(default_factory=list)
 
     @classmethod
     def from_mapping(cls, value: dict[str, Any]) -> "RuleDefinition":
-        if not isinstance(value, dict):
-            raise ValueError("rule entry must be a mapping")
-        missing = [key for key in _REQUIRED if key not in value]
-        if missing:
-            raise ValueError(f"rule missing required fields: {', '.join(missing)}")
         lists: dict[str, list[str]] = {}
-        for key in ("tags", "conflicts", "depends"):
+        for key in ("tags", "conflicts", "depends", "applicability", "structural_scope", "exemptions", "positive_fixtures"):
             raw = value.get(key, [])
             if raw is None:
                 raw = []
@@ -48,6 +48,9 @@ class RuleDefinition:
         auto_repair = value.get("auto_repair", False)
         if not isinstance(auto_repair, bool):
             raise ValueError(f"rule {value.get('id', '<unknown>')}: auto_repair must be boolean")
+        repair_class = str(value.get("repair_class", "diagnostic"))
+        if repair_class not in {"diagnostic", "human_repair", "deterministic_repair"}:
+            raise ValueError(f"rule {value.get('id', '<unknown>')}: invalid repair_class")
         return cls(
             id=str(value["id"]), title=str(value["title"]), category=str(value["category"]),
             scope=str(value["scope"]), severity=str(value["severity"]),
@@ -55,11 +58,10 @@ class RuleDefinition:
             message=str(value["message"]), vale_style=value.get("vale_style"),
             repair=value.get("repair"), tags=lists["tags"], auto_repair=auto_repair,
             conflicts=lists["conflicts"], depends=lists["depends"],
+            applicability=lists["applicability"], structural_scope=lists["structural_scope"],
+            exemptions=lists["exemptions"], repair_class=repair_class,
+            positive_fixtures=lists["positive_fixtures"],
         )
-
-
-
-class Registry:
     def __init__(self, rules: list[RuleDefinition], *, path: Path | None = None):
         self.rules = list(rules)
         self.path = path

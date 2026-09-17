@@ -37,39 +37,81 @@ def run_lint(vault: Path, extra: list[str]) -> tuple[int, dict]:
 def structural_main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("vault", nargs="?", default="wiki")
+    parser.add_argument("--vault", dest="vault_override")
     parser.add_argument("--json", action="store_true")
-    mode = parser.add_mutually_exclusive_group()
-    mode.add_argument("--hard", action="store_true", default=True, help="fail on HARD findings only (default)")
-    mode.add_argument("--all", action="store_true", help="fail on any finding")
+    parser.add_argument("--scope")
+    parser.add_argument("--template", action="store_true")
+    parser.add_argument("--plan", action="store_true")
+    parser.add_argument("--from", dest="findings_file")
+    parser.add_argument("--hard", action="store_true", default=True)
+    parser.add_argument("--all", action="store_true")
     parser.add_argument("--allow-lifecycle", action="append", default=[])
     parser.add_argument("--allow-relationship-type", action="append", default=[])
     args = parser.parse_args(argv)
-    extra: list[str] = []
-    if not args.all:
-        extra.append("--hard-only")
-    for value in args.allow_lifecycle:
-        extra.extend(["--allow-lifecycle", value])
-    for value in args.allow_relationship_type:
-        extra.extend(["--allow-relationship-type", value])
-    vault = Path(args.vault)
-    if not vault.is_absolute():
-        vault = (Path.cwd() / vault).resolve()
-    code, report = run_lint(vault, extra)
-    counts = report.get("counts", {})
-    hard = list(report.get("schema", {}).get("hard") or ("broken_links", "missing_frontmatter"))
-    fail = bool(report.get("hard_fail")) if not args.all else code == 1
-    if args.all:
-        fail = any(int(counts.get(key, 0) or 0) > 0 for key in counts)
-    if args.json:
-        print(json.dumps(report, indent=2, sort_keys=True))
-    else:
-        pages = report.get("scope", {}).get("pages", "?")
-        print(f"wiki-lint: {pages} pages, hard_fail={str(fail).lower()}")
-        print("hard: " + ", ".join(f"{key}={counts.get(key, 0)}" for key in hard))
-        soft = [f"{k}={v}" for k, v in sorted(counts.items()) if k not in hard and v]
-        if soft:
-            print("soft: " + ", ".join(soft))
-    return 1 if fail else 0
+    vault = Path(args.vault_override or args.vault).expanduser().resolve()
+    try:
+        from tools.wiki_ops.scope import parse_scope
+        scope = parse_scope(args.scope)
+        if scope:
+            scope.resolve(vault)
+        extra: list[str] = []
+        if not args.all:
+            extra.append("--hard-only")
+        for value in args.allow_lifecycle:
+            extra.extend(["--allow-lifecycle", value])
+        for value in args.allow_relationship_type:
+            extra.extend(["--allow-relationship-type", value])
+        if scope:
+            extra.extend(["--scope", args.scope])
+        source = json.loads(Path(args.findings_file).read_text(encoding="utf-8")) if args.findings_file else None
+        if source is None:
+            code, report = run_lint(vault, extra)
+        else:
+            code, report = 0, source
+        if args.template:
+            from tools.wiki_ops.template_contracts import check_conformance, load_contract
+            paths = scope.resolved_files if scope else [p.relative_to(vault).as_posix() for p in vault.rglob("*.md") if p.is_file()]
+            template_findings = []
+            exemptions = 0
+            for relative in paths:
+                page = vault / relative
+                try:
+                    fields = __import__("tools.wiki_ops.mutations", fromlist=["frontmatter_fields"]).frontmatter_fields(page.read_text(encoding="utf-8"))
+                    contract_path = vault / "templates" / "contracts" / f"{fields.get('type', '')}.yml"
+                    if not contract_path.is_file():
+                        contract_path = ROOT / "wiki" / "templates" / "contracts" / f"{fields.get('type', '')}.yml"
+                    if contract_path.is_file():
+                        template_findings.extend(check_conformance(relative, page.read_text(encoding="utf-8"), load_contract(contract_path)))
+                except (OSError, ValueError) as exc:
+                    template_findings.append({"rule_id": "TMPL_error", "file": relative, "severity": "BLOCK", "reason": str(exc)})
+            report.setdefault("findings", {})
+            report["findings"]["template"] = template_findings
+            report.setdefault("counts", {})
+            report["counts"]["template"] = len(template_findings)
+            report["template_used"] = str(contract_path) if 'contract_path' in locals() and contract_path.is_file() else None
+        if args.plan:
+            findings = report.get("findings", {})
+            if isinstance(findings, dict):
+                flat = []
+                for rule, items in findings.items():
+                    if isinstance(items, list):
+                        for item in items:
+                            if isinstance(item, dict) and item.get("repair_class") == "deterministic_repair" and item.get("repair_action"):
+                                flat.append({"finding_rule": rule, "finding_file": item.get("page") or item.get("file"), "finding_line": item.get("line"), "mutation": item["repair_action"]})
+                report = {"scope": report.get("scope", scope.to_dict() if scope else {}), "source_findings": sum(int(v) for v in (report.get("counts") or {}).values() if isinstance(v, int)), "deterministic_actions": len(flat), "human_only": 0, "diagnostic_only": 0, "actions": flat}
+        if scope:
+            report["scope"] = scope.to_dict()
+            report["files_checked"] = len(scope.resolved_files)
+        if args.json:
+            print(json.dumps(report, indent=2, sort_keys=True))
+        else:
+            print(json.dumps(report, indent=2, sort_keys=True))
+        if args.plan:
+            return 2 if report.get("actions") else 0
+        return 1 if (args.all and any((report.get("counts") or {}).values())) or (not args.all and report.get("hard_fail")) else 0
+    except (OSError, ValueError, json.JSONDecodeError) as exc:
+        print(f"wiki-lint: {exc}", file=sys.stderr)
+        return 2
 
 
 def _paths(values: list[str], *, default: Path) -> list[Path]:

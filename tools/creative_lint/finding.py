@@ -16,6 +16,7 @@ class Finding:
     evaluator: str
     repair_target: str | None = None
     waiver: dict[str, Any] | None = None
+    repair_class: str = "diagnostic"
 
     def to_dict(self) -> dict[str, Any]:
         """Return the stable JSON-compatible finding shape."""
@@ -27,6 +28,7 @@ class Finding:
             "evidence": self.evidence,
             "reason": self.reason,
             "repair_target": self.repair_target,
+            "repair_class": self.repair_class,
             "evaluator": self.evaluator,
             "waiver": self.waiver,
         }
@@ -64,13 +66,13 @@ class Finding:
             evaluator=str(value["evaluator"]),
             repair_target=value.get("repair_target"),
             waiver=value.get("waiver"),
+            repair_class=str(value.get("repair_class", "diagnostic")),
         )
 
 
 def finding_from_rule(rule: Any, *, location: dict[str, Any], evidence: str,
                       evaluator: str, severity: str | None = None,
                       result: str = "fail") -> Finding:
-    """Construct a finding from a RuleDefinition-like object."""
     return Finding(
         rule_id=rule.id,
         result=result,
@@ -80,4 +82,5 @@ def finding_from_rule(rule: Any, *, location: dict[str, Any], evidence: str,
         reason=rule.message,
         repair_target=rule.repair,
         evaluator=evaluator,
+        repair_class=getattr(rule, "repair_class", "diagnostic"),
     )

@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+"""Check policy consumers against the single ownership registry."""
+from __future__ import annotations
+
+import argparse
+import json
+import re
+from pathlib import Path
+
+import yaml
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--registry", default=str(ROOT / "docs/agents/policy-owners.yml"))
+    parser.add_argument("--root", default=str(ROOT))
+    parser.add_argument("--json", action="store_true")
+    args = parser.parse_args(argv)
+    try:
+        registry = yaml.safe_load(Path(args.registry).read_text(encoding="utf-8")) or {}
+        policies = registry.get("policies", {})
+        conflicts = []
+        for name, policy in policies.items():
+            owner = Path(args.root) / str(policy.get("owner", ""))
+            owner_text = owner.read_text(encoding="utf-8") if owner.is_file() else ""
+            owner_terms = {term.casefold() for term in re.findall(r"[A-Za-z][A-Za-z-]{3,}", owner_text)}
+            for consumer_name in policy.get("consumers", []) or []:
+                consumer = Path(args.root) / str(consumer_name)
+                if not consumer.is_file():
+                    conflicts.append({"policy": name, "owner": str(policy.get("owner")), "consumer": consumer_name, "reason": "consumer_not_found"})
+                    continue
+                text = consumer.read_text(encoding="utf-8")
+                if name == "acceptance_semantics" and re.search(r"(?:accept|acceptance).*(?:means|is|requires)", text, re.I) and not re.search(r"policy-owners|Work#Decide|owner", text, re.I):
+                    conflicts.append({"policy": name, "owner": str(policy.get("owner")), "consumer": consumer_name, "reason": "acceptance_semantics_restatement"})
+                if name == "template_optionality" and re.search(r"(?:optional|omit).*(?:section|heading)", text, re.I) and not re.search(r"policy-owners|template contract|faction.yml", text, re.I):
+                    conflicts.append({"policy": name, "owner": str(policy.get("owner")), "consumer": consumer_name, "reason": "template_optionality_restatement"})
+                if not owner_text:
+                    conflicts.append({"policy": name, "owner": str(policy.get("owner")), "consumer": consumer_name, "reason": "owner_not_found"})
+        payload = {"status": "conflicts" if conflicts else "clean", "policies": len(policies), "conflicts": conflicts}
+    except (OSError, yaml.YAMLError, AttributeError) as exc:
+        print(json.dumps({"status": "error", "error": str(exc)}))
+        return 2
+    print(json.dumps(payload, indent=2, sort_keys=True) if args.json else json.dumps(payload, indent=2, sort_keys=True))
+    return 1 if conflicts else 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

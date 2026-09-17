@@ -94,6 +94,11 @@ rules:
     message: Section lacks an actionable situation or pressure marker
     repair: Consider naming the pressure, choice, risk, or deadline
     auto_repair: false
+    applicability: [faction, npc, place, quest, encounter]
+    structural_scope: [narrative]
+    exemptions: [redirect, metadata, template, table]
+    repair_class: human_repair
+    positive_fixtures: [tests/fixtures/creative_lint/SCENE001/pass_pressure.md]
     tags: [scene-craft]
     conflicts: []
     depends: []

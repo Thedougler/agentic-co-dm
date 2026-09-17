@@ -156,7 +156,10 @@ Campaign-shaped session-prep and place: file with required treatments. Do not di
 
 **Place:** copy into `wiki/entities/place/` with the source filename (depth-1 type folder; `category: entities`). Keep the open `[!narration]` titled **Narration** (typically under Overview): do not delete it, empty a filled look, or convert it to ordinary prose. A stub place still keeps the titled block even if the body is empty. Spoken look stays theatre of the mind (no secrets, DCs, unearned names). Keep Overview, At a glance, If the party, Who, What, Where, Why, and Art when present; omit unused jobs (no empty headings, no invented occupants). Owner numbers stay linked, not copied. Do not write into `concepts/` or replace the outline with a knowledge-wiki template. Place run jobs stay in `wiki/AGENTS.md` Layout. `_raw/` place evidence stays in `_raw/`; file copies rather than restyling the evidence set.
 
-Re-ingest with no body change: skip rewrite. Unaccepted Work does not publish, except named ingest of approved sources.
+Re-ingest with no body change: skip rewrite. Mutation approval and publication
+semantics are owned by `specs/025-agent-safe-wiki-ops/spec.md`; use the typed
+transaction flow rather than restating them here. Unaccepted Work does not
+publish, except named ingest of approved sources.
 
 Close this file (`complete` or `failed`) before the next file opens.
 

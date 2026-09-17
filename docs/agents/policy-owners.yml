@@ -1,0 +1,31 @@
+policies:
+  acceptance_semantics:
+    owner: docs/agents/work.md
+    consumers:
+      - .agents/skills/faction-design/SKILL.md
+      - .agents/skills/wiki-ingest/SKILL.md
+    reference: "See Work#Decide; do not restate acceptance rules."
+  callout_vocabulary:
+    owner: wiki/templates/faction.md
+    consumers:
+      - tools/wiki_ops/template_contracts.py
+      - .agents/skills/faction-design/SKILL.md
+    reference: "Use the co-located template contract for allowed callouts."
+  template_optionality:
+    owner: wiki/templates/contracts/faction.yml
+    consumers:
+      - tools/wiki_ops/template_contracts.py
+      - .agents/skills/faction-design/SKILL.md
+    reference: "Contract sections own required, optional, and lifecycle semantics."
+  repair_safety:
+    owner: specs/025-agent-safe-wiki-ops/contracts/mutation-contract.md
+    consumers:
+      - .agents/skills/wiki-ingest/SKILL.md
+      - docs/agents/work.md
+    reference: "Use typed mutations and preconditions; do not compose line patches."
+  mutation_approval:
+    owner: specs/025-agent-safe-wiki-ops/spec.md
+    consumers:
+      - docs/agents/work.md
+      - .agents/skills/wiki-ingest/SKILL.md
+    reference: "Judgment-only and canon-changing mutations require acceptance."

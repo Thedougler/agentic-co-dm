@@ -103,6 +103,37 @@ class LintEngine:
             shadow = [(rule, severity) for rule, severity in shadow if rule.id in rule_ids]
         return active, shadow
 
+    def _applicable(self, finding: Finding) -> bool:
+        try:
+            rule = self.registry.get(finding.rule_id)
+        except KeyError:
+            return True
+        path = Path(str(finding.location.get("file", "")))
+        if not path.is_absolute():
+            path = self.root / path
+        if not path.is_file():
+            return True
+        text = path.read_text(encoding="utf-8")
+        fields = {}
+        if text.startswith("---"):
+            for line in text.splitlines()[1:]:
+                if line.strip() == "---":
+                    break
+                if ":" in line and not line[:1].isspace():
+                    key, value = line.split(":", 1)
+                    fields[key.strip()] = value.strip().strip("\"'")
+        if fields.get("redirects_to") or "redirect stub" in text.casefold():
+            return "redirect" not in rule.exemptions
+        if rule.applicability and fields.get("type") not in rule.applicability:
+            return False
+        if rule.structural_scope and "narrative" in rule.structural_scope:
+            body = text.split("---", 2)[-1]
+            if all(marker not in body.casefold() for marker in ("pressure", "agenda", "player opening")):
+                return False
+        if rule.id == "SCENE001" and any(marker in text.casefold() for marker in ("pressure", "agenda", "player opening")):
+            return False
+        return True
+
     def run(self, *, bundle: str | None = None, paths: Iterable[str | Path] | None = None,
             rule_ids: set[str] | None = None, severity_filter: set[str] | None = None,
             session: int | None = None) -> LintResult:
@@ -121,6 +152,9 @@ class LintEngine:
             selected, self.registry, root=self.root, vault=self.vault,
             rule_ids=active_ids, severity_overrides=active_overrides,
         ))
+        findings = [finding for finding in findings if self._applicable(finding)]
+        for finding in findings:
+            finding.repair_class = getattr(self.registry.get(finding.rule_id), "repair_class", "diagnostic")
 
         evaluated_ids = {finding.rule_id for finding in findings}
         for rule, severity in active:

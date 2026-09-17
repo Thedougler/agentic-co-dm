@@ -63,8 +63,9 @@ retrieving or ask for the missing premise before drafting the page.
 
 ### 2. Start From The Template
 
-Copy `wiki/templates/faction.md`. Keep its frontmatter and headings unless an
-unused template section says it may be omitted. Fill these frontmatter fields:
+Copy `wiki/templates/faction.md`. The co-located
+`wiki/templates/contracts/faction.yml` owns required, optional, and lifecycle
+section semantics; do not restate those rules here. Fill these frontmatter fields:
 
 ```yaml
 type: faction
@@ -178,17 +179,11 @@ The page is done when:
 
 - It lives in `wiki/<campaign>/factions/` with `type: faction`.
 - It fills `wiki/templates/faction.md` without adding another template.
-- Public face is `[!narration]` and contains only informed observable knowledge.
 - DM thesis is one sentence of campaign pressure.
 - Current state states status quo, recent change, pressure, strength,
   vulnerability, and opportunity.
-- One active agenda has goal, why, next move, need, opposition, signal, player
-  opening, and completion consequence; add a clock when the agenda is active
-  and trackable.
-- Dormant or dissolved factions omit the agenda clock when no active agenda
-  exists.
+- Follow the template contract for agenda, clock, Current Turn, Turn Log, and
+  lifecycle-dependent sections.
 - Assets, people, places, and relationships include only entries that currently
   change play.
-- Active factions with independent off-screen movement have a Current Turn and
-  Turn Log; dormant or dissolved factions omit that section.
 - Invention is labeled, cited, and proposed for DM acceptance.
