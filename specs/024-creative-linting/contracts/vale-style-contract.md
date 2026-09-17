@@ -8,27 +8,33 @@ Custom Vale style for the agentic-co-dm creative linter. Each rule is one YAML f
 
 ### Configuration (`.vale.ini`)
 
+The repository `.vale.ini` is the sole Vale package and scope authority. The linter MUST pass this file to Vale and MUST NOT duplicate its package list in `rules/registry.yml`, `package.json`, or Python code.
+
 ```ini
 StylesPath = styles
 MinAlertLevel = suggestion
+Packages = ai-tells, proselint, Readability, Harper
 
 [wiki/*.md]
-BasedOnStyles = CoDM
+BasedOnStyles = CoDM, ai-tells, proselint, Readability, Harper
 
 [wiki/_raw/*.md]
 BasedOnStyles =
 
 [wiki/_staging/*.md]
-BasedOnStyles =
+BasedOnStyles = ai-tells, proselint
 
 [wiki/_archive/*.md]
 BasedOnStyles =
+
+[tests/fixtures/creative_lint/**/*.md]
+BasedOnStyles = CoDM
 
 [wiki/templates/*.md]
 BasedOnStyles =
 ```
 
-Scope exclusions match existing `lint_wiki.py` SKIP_DIRS. Templates, raw, staging, and archive are excluded.
+The `wiki/` scope inherits the installed packages plus the custom `CoDM` style. Raw and archive pages are excluded; staging intentionally keeps only the configured prose packages; creative fixtures run the custom rule style without applying unrelated prose packages. Scope exclusions match existing `lint_wiki.py` `SKIP_DIRS` where applicable.
 
 ### Rule File Convention
 

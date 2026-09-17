@@ -224,3 +224,32 @@ No-subcommand mode remains unchanged — calls `lint_wiki.py`.
 - `ambiguous_*.md` — recorded, doesn't fail suite
 
 For Vale rules, fixtures can also be validated by running `vale --config=... <fixture>` directly. The pytest harness wraps both Vale and symbolic evaluator fixtures.
+
+## R12: Repository Integration and Dependency Boundaries
+
+**Decision**: Preserve the existing `scripts/wiki-lint` split: no-subcommand mode remains a subprocess facade over `tools/lint_wiki.py`; creative subcommands load the registry, bundles, waivers, and `LintEngine`, which merges Vale and symbolic findings. `scripts/wiki-maintain` keeps its existing A1 path and exposes creative lint only through its optional A7 report.
+
+**Evidence**: `scripts/wiki-lint` defines `structural_main`, `creative_main`, and `_exit_for`; `tools/creative_lint/engine.py` invokes `run_vale` and symbolic evaluators; `scripts/wiki-maintain` calls `scripts/wiki-lint` for A1 and `task corpus` for A7. No `package.json` or npm lockfile currently exists, so FR-019 remains an implementation task rather than an existing capability.
+
+**Decision**: Add PyYAML to Python project metadata because `tools/creative_lint/registry.py` imports `yaml` and registry/bundle loading is required at runtime. Add a private root `package.json` with a pinned `markdownlint-cli2` development dependency and thin scripts that delegate to existing repository commands; commit the generated npm lockfile for reproducibility. Do not add Node wrappers or duplicate lint logic.
+
+**Decision**: Keep `.vale.ini` as the sole Vale package/style authority. The adapter invokes `vale --output=JSON --config=<repo>/.vale.ini`; the configured package set remains `ai-tells`, `proselint`, `Readability`, and `Harper`. The existing `.markdownlint-cli2.jsonc` owns structural rule configuration and excludes `_raw`, `_staging`, `_archive`, and templates.
+
+**Alternatives considered**:
+- Treating markdownlint-cli2 as an ad hoc global prerequisite: rejected because it is not reproducible and conflicts with FR-019's discoverable operations.
+- Copying Vale's package list into the registry: rejected because it creates a second source of truth and violates the accepted clarification.
+- Replacing `tools/lint_wiki.py` with the new engine: rejected because existing structural HARD behavior must remain compatible.
+
+**Risks**: The legacy Markdown scripts contain project-specific checks beyond markdownlint-cli2 built-ins; porting is complete only after equivalent fixtures pass. Existing creative CLI tests do not cover every new subcommand or severity-filter/error path, so those remain explicit implementation/test tasks.
+
+## R13: Markdownlint Version and Node Floor
+
+**Decision**: Pin `markdownlint-cli2` to `0.23.2` in a private root `package.json`, declare `engines.node: ">=22"`, and commit the generated `package-lock.json`. This is the current official package metadata and keeps the structural lint command reproducible through the local npm binary.
+
+**Rationale**: A global-only tool or unpinned `npx` invocation depends on workstation state. A local npm development dependency gives `npm run` direct binary resolution and preserves arguments, streams, and exit status without a wrapper. The Node floor is explicit rather than hidden in a generic “Node.js” prerequisite.
+
+**Alternatives considered**:
+- Pin an older markdownlint-cli2 release to retain an unspecified or older Node floor: deferred because the repository has no declared Node compatibility target and the current release is the simplest supported choice.
+- Add JavaScript custom rules to reproduce every legacy checker: rejected for this phase because it violates the no-duplicate-implementation constraint and the legacy checks require fixture-backed migration before removal.
+
+**Validation boundary**: markdownlint-cli2 covers configured built-in Markdown structure only. It does not automatically replace project-specific checks for Obsidian links, frontmatter semantics, forbidden trees, image existence, literal backslash-n, or narration callouts. Those legacy scripts remain until equivalent fixtures pass.

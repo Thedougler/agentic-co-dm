@@ -4,24 +4,28 @@
 
 ## Prerequisites
 
-- Python 3.14 (`.venv`)
+- Python 3.14 (`.venv`) with project dependencies installed from `pyproject.toml`, including PyYAML 6.x
+- Node.js >=22 and npm
 - Vale 3.13.0 (`vale --version`)
-- PyYAML 6.x installed in `.venv` (`.venv/bin/pip install pyyaml`)
-- markdownlint-cli2 installed when running the structural Markdown migration (`markdownlint-cli2 --version`)
+- Repository `package.json` and committed `package-lock.json`
 - Repo root as CWD
 
 ## Setup
 
 ```bash
-# Install PyYAML
-.venv/bin/pip install pyyaml
+# Install declared Python project dependencies
+.venv/bin/python -m pip install -e .
 
-# Verify Vale
+# Install the pinned local markdownlint-cli2 dependency
+npm ci
+
+# Verify the external and local lint tools
 vale --version
-# → vale version 3.13.0
+npm exec -- markdownlint-cli2 --version
+# → markdownlint-cli2 0.23.2
 
-# Verify markdownlint-cli2 when available for migration work
-markdownlint-cli2 --version
+# Verify the configured Vale package authority is used by the repository alias
+npm run lint:vale -- --help
 
 # Verify existing lint still works
 ./scripts/wiki-lint --json wiki | python3 -c "import sys,json; d=json.load(sys.stdin); print(f'pages={d[\"scope\"][\"pages\"]}')"
