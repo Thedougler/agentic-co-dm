@@ -1,5 +1,5 @@
 ---
-updated: 2026-09-17T10:20:33Z
+updated: 2026-09-17T20:47:32Z
 ---
 ## Recent Activity
 Retconned Catarina Da'Virelli to her Calveno NPC owner page; completed workshop work remains with Delmar, Crissdalynn, and Zort.

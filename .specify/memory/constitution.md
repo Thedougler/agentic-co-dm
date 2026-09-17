@@ -1,9 +1,9 @@
 <!--
 Sync Impact Report
-- Version change: 1.25.0 → 1.26.0 (MINOR)
-- Modified principles: None
-- Added sections:
-  - XXI. Highlighted Production Prose Is a Source Error
+- Version change: 1.26.0 → 1.27.0 (MINOR)
+- Modified principles:
+  - XXI. Highlighted Production Prose Is a Source Error → XXI. User Corrections Become Durable Source Fixes
+- Added sections: None
 - Removed sections: None
 - Follow-up TODOs: None
 -->
@@ -253,21 +253,31 @@ with the blocking reason, and MUST NOT finish while an actionable step remains u
 Rationale: an explicit, continuously checked work list prevents omitted steps and makes progress
 inspectable across tools, agents, and sessions.
 
-### XXI. Highlighted Production Prose Is a Source Error
+### XXI. User Corrections Become Durable Source Fixes
 
-In production prose, an unescaped Obsidian Markdown highlight span of the form `==text==` is
-a user-marked quality error, not an authoring style. Agents MUST NOT reproduce such highlights.
+User corrections are authoritative feedback. A correction to prose, facts, behavior, structure, or
+instructions MUST be applied at its authoritative source, not merely acknowledged in chat. When a
+correction concerns Wiki knowledge, the agent MUST update the relevant Wiki page durably in the
+same sitting, subject to the DM acceptance boundary for campaign canon.
+
+Every correction that identifies an error MUST be recorded in the error ledger with the corrected
+artifact and its producing source. When the correction reveals a recurring or detectable error,
+the agent MUST also update every relevant skill, instruction, template, workflow, or linting
+system so the error is prevented at its source. The agent MUST NOT claim the correction is fixed
+while leaving only a chat-session change or an unaddressed relevant source.
+
+In production prose, an unescaped Obsidian Markdown highlight span of the form `==text==` is a
+user-marked quality error, not an authoring style. Agents MUST NOT reproduce such highlights.
 When an agent encounters one, it MUST treat the surrounding prose as unsatisfactory even when
 the user provides no explanation. If a parenthetical explanation follows the highlight, the agent
 MAY use it as diagnostic context, but MUST fix the language regardless.
 
-The agent MUST record the error in the error ledger and trace it to the source that produced it.
 The source MUST be corrected at the applicable skill, instruction, template, workflow, or linting
 system level, including `writing-for-agents` or `copy-writer` when applicable. Removing only the
 highlight marker without correcting the underlying quality error is non-compliant.
 
-Rationale: highlighted production prose is explicit user feedback; recording it and repairing its
-source prevents recurrence across generated work.
+Rationale: user feedback becomes durable knowledge and a source-level repair, preventing the same
+error from recurring across generated work.
 
 ## Operating Boundaries
 
@@ -319,4 +329,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.26.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 1.27.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
