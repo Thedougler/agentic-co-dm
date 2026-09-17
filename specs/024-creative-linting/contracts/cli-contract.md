@@ -134,6 +134,66 @@ Generate a safe structural repair plan from the existing lint findings.
 - `1`: underlying lint findings prevent a valid plan.
 - `2`: invalid arguments, stale plan, unsafe action, or approval failure.
 
+### `wiki-lint queue [--json]`
+
+Emit the bulk dirty-file queue: wiki pages with remaining safe automatic findings, ordered smallest-first by byte size.
+
+**Input**: No required arguments. Scans the full vault.
+
+**Output** (JSON, `--json`):
+```json
+{
+  "queue": [
+    {"file": "entities/npc/example.md", "size": 1234, "safe_findings": 3},
+    {"file": "entities/place/bigger.md", "size": 5678, "safe_findings": 1}
+  ],
+  "excluded_judgment_only": 4,
+  "total_dirty": 6
+}
+```
+
+**Output** (human-readable, no `--json`):
+```
+wiki-lint queue: 2 pages with safe automatic findings (4 judgment-only excluded)
+
+  1. entities/npc/example.md          1,234 bytes   3 safe findings
+  2. entities/place/bigger.md         5,678 bytes   1 safe finding
+```
+
+**Queue inclusion**: A page appears when it has at least one finding whose rule has `auto_repair: true` in the registry and a non-null `repair_target`. Pages with only judgment-required findings are excluded.
+
+**Agent workflow**: Take `queue[0]`, apply safe automatic repairs, re-lint that single file to confirm zero safe findings remain, then re-request the queue. Stopping with remaining dirty files is not a failure.
+
+**Exit codes**: 0 = queue emitted (even if non-empty). 2 = invalid arguments or registry error.
+
+### `wiki-lint template <path> [--json]`
+
+Run template-conformance lint against a single page. Resolves the applicable template from the page's `type` and `kind` frontmatter, derives a generic profile, and reports structural/formatting mismatches.
+
+**Input**: File path (relative or absolute).
+
+**Output** (JSON):
+```json
+{
+  "template": "wiki/templates/npc.md",
+  "page": "entities/npc/example.md",
+  "findings": [
+    {
+      "rule_id": "TMPL001",
+      "result": "fail",
+      "severity": "REPAIR",
+      "location": {"file": "entities/npc/example.md", "line": 1},
+      "evidence": "Missing required section: '## At a Glance'",
+      "reason": "Page is missing a section required by template wiki/templates/npc.md",
+      "repair_target": "Insert '## At a Glance' section stub after the title heading",
+      "evaluator": "symbolic"
+    }
+  ]
+}
+```
+
+**Exit codes**: 0 = clean or only INFO findings. 1 = REPAIR findings. 2 = no template resolved or invalid arguments.
+
 ## Error Handling
 
 | Condition | Behavior |

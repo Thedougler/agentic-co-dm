@@ -164,6 +164,45 @@ print('severity filter OK')
 - The second command revalidates the findings before writing and reports `status: "applied"` or a clear blocked error.
 - Running `./scripts/wiki-lint --json wiki` without `--consolidate` retains report-only behavior.
 
+### V10: Bulk Dirty-File Queue
+
+```bash
+# Request the smallest-first dirty-file queue
+./scripts/wiki-lint queue --json | .venv/bin/python -c "
+import sys, json
+data = json.load(sys.stdin)
+q = data['queue']
+if len(q) >= 2:
+    assert q[0]['size'] <= q[1]['size'], 'queue not smallest-first'
+for entry in q:
+    assert 'file' in entry
+    assert 'size' in entry
+    assert 'safe_findings' in entry
+    assert entry['safe_findings'] > 0
+print(f'queue={len(q)} excluded_judgment={data[\"excluded_judgment_only\"]} total={data[\"total_dirty\"]}')
+"
+```
+
+**Expected**: Queue entries ordered by ascending `size`, each with at least one safe finding. Judgment-only pages excluded from `queue`.
+
+### V11: Template-Conformance Lint
+
+```bash
+# Run template conformance against a page with a known template mapping
+./scripts/wiki-lint template wiki/entities/npc/example-npc.md --json 2>/dev/null | .venv/bin/python -c "
+import sys, json
+data = json.load(sys.stdin)
+assert 'template' in data, 'missing template field'
+assert 'findings' in data, 'missing findings field'
+for f in data.get('findings', []):
+    assert f['rule_id'].startswith('TMPL'), f'unexpected rule: {f[\"rule_id\"]}'
+    assert f['evaluator'] == 'symbolic'
+print(f'template={data[\"template\"]} findings={len(data[\"findings\"])}')
+" || echo "No NPC page available for template conformance test — create one to validate"
+```
+
+**Expected**: Template resolved from page's `type`/`kind` frontmatter. Findings use `TMPL*` rule IDs with `symbolic` evaluator. Profile changes when the template changes.
+
 ## Test Suite
 
 ```bash

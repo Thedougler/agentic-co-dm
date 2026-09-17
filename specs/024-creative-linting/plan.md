@@ -6,7 +6,7 @@
 
 ## Summary
 
-An executable lint-rule engine for canon, agency, temporal truth, knowledge boundaries, retrieval discipline, and creative heuristics — layered as a cross-cutting validation surface over the existing `wiki-lint` / `wiki-maintain` / `tools/lint_wiki.py` architecture. Rules live in YAML, have stable IDs and a five-level severity model, and run through typed evaluators (static first, semantic later). Vale is invoked through the repository `.vale.ini`, whose configured package set (`ai-tells`, `proselint`, and `Readability`) is authoritative. The engine plugs into the existing `scripts/wiki-lint` CLI, including the approval-gated `--consolidate` structural repair mode, agent prep/wrapup loops, and `scripts/wiki-maintain` Layer A.
+An executable lint-rule engine for canon, agency, temporal truth, knowledge boundaries, retrieval discipline, and creative heuristics — layered as a cross-cutting validation surface over the existing `wiki-lint` / `wiki-maintain` / `tools/lint_wiki.py` architecture. Rules live in YAML, have stable IDs and a five-level severity model, and run through typed evaluators (static first, semantic later). Vale is invoked through the repository `.vale.ini`, whose configured package set (`ai-tells`, `proselint`, and `Readability`) is authoritative. The engine plugs into the existing `scripts/wiki-lint` CLI, including the approval-gated `--consolidate` structural repair mode, a stateless smallest-first bulk dirty-file queue, template-derived conformance lint, agent prep/wrapup loops, and `scripts/wiki-maintain` Layer A.
 
 ## Technical Context
 
@@ -98,6 +98,7 @@ tools/
 │   ├── bundles.py            # Bundle resolution: task → rule set with severity gates
 │   ├── severity.py           # Five-level severity model + status computation
 │   ├── vale_adapter.py       # Invoke Vale through .vale.ini, parse JSON, map to finding schema
+│   ├── template_profile.py   # Template profile derivation and conformance comparison
 │   ├── waivers.py            # Waiver loading, matching, expiry (Phase 2+)
 │   └── shadow.py             # Shadow-mode recording (Phase 2+)
 
@@ -116,7 +117,7 @@ tests/
 scripts/
 ├── wiki-lint                 # Extended: new subcommands, severity filter, and --consolidate
 
-**Structure Decision**: Three-layer composition. Vale (`styles/CoDM/`) handles static prose-pattern matching and inherits all configured packages/scopes from `.vale.ini`. markdownlint-cli2 handles built-in structural Markdown rules through `.markdownlint-cli2.jsonc`. `tools/creative_lint/` Python package handles symbolic evaluators, orchestration, bundle routing, and the unified finding schema. `tools/lint_wiki.py` continues owning structural HARD checks unchanged. `scripts/wiki-lint` and thin npm aliases expose the existing command surfaces without duplicating operation logic. Consolidation is a CLI orchestration path over the existing structural findings: it produces a deterministic action plan, requires explicit `--approve`, and applies only safe structural repairs.
+**Structure Decision**: Three-layer composition. Vale (`styles/CoDM/`) handles static prose-pattern matching and inherits all configured packages/scopes from `.vale.ini`. markdownlint-cli2 handles built-in structural Markdown rules through `.markdownlint-cli2.jsonc`. `tools/creative_lint/` Python package handles symbolic evaluators (including template-conformance via `template_profile.py`), orchestration, bundle routing, the unified finding schema, and the stateless dirty-file queue. `tools/lint_wiki.py` continues owning structural HARD checks unchanged. `scripts/wiki-lint` and thin npm aliases expose the existing command surfaces — including `queue` and `template` subcommands — without duplicating operation logic. Consolidation is a CLI orchestration path over the existing structural findings: it produces a deterministic action plan, requires explicit `--approve`, and applies only safe structural repairs.
 
 ## Post-Design Constitution Check
 
@@ -129,7 +130,7 @@ scripts/
 | XVI. The Simplest Adequate Tool | PASS | Vale and markdownlint-cli2 handle supported static checks; Python remains only for cross-page symbolic checks and orchestration. |
 | XVIII. Constitutional Layering | PASS | Feature behavior remains in the spec/contracts; implementation details are in this plan and future tasks; no constitution duplication is required. |
 
-**Post-design gate**: PASS. The Node >=22 floor, PyYAML dependency, package lockfile, `.vale.ini` authority, and approval-gated consolidation contract are explicit; no `NEEDS CLARIFICATION` remains in Technical Context.
+**Post-design gate**: PASS. The Node >=22 floor, PyYAML dependency, package lockfile, `.vale.ini` authority, approval-gated consolidation contract, stateless dirty-file queue (FR-022/US11), and runtime template-derived conformance (FR-023/US12) are explicit; no `NEEDS CLARIFICATION` remains in Technical Context.
 
 ## Complexity Tracking
 

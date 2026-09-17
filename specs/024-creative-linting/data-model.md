@@ -20,6 +20,7 @@ vale_style: "CoDM/AGENCY001"  # Vale style reference (evaluator: vale only)
 message: "Narration authors a player-character decision"
 repair: "Rewrite to describe the situation without prescribing the PC's response"
 tags: [player-agency, narration]
+auto_repair: false             # true for safe automatic repairs (queue inclusion)
 conflicts: []                  # Rule IDs this may conflict with
 depends: []                    # Rule IDs that must pass first
 ```
@@ -40,6 +41,7 @@ depends: []                    # Rule IDs that must pass first
 | `tags` | list[string] | no | Classification tags |
 | `conflicts` | list[string] | no | IDs of rules that may conflict |
 | `depends` | list[string] | no | IDs of prerequisite rules |
+| `auto_repair` | bool | no | `true` when the rule's repair is safe automatic (structural/format-only, no fact invention). Default `false`. Determines dirty-file queue inclusion. |
 
 **Validation rules**:
 - `id` must be unique across the entire registry
@@ -200,6 +202,73 @@ A deterministic, reviewable set of safe structural repair actions derived from o
 - No action may invent canon, merge pages, or rewrite judgment-only content.
 
 
+### DirtyFileQueue
+
+Stateless, smallest-first ranked list of wiki pages with remaining safe automatic findings. Computed fresh each invocation by `wiki-lint queue`.
+
+```json
+{
+  "queue": [
+    {"file": "entities/npc/example.md", "size": 1234, "safe_findings": 3},
+    {"file": "entities/place/bigger.md", "size": 5678, "safe_findings": 1}
+  ],
+  "excluded_judgment_only": 4,
+  "total_dirty": 6
+}
+```
+
+**Fields**:
+| Field | Type | Required | Description |
+|---|---|---|---|
+| `queue` | list[object] | yes | Pages with safe automatic findings, ordered smallest-first by byte size |
+| `queue[].file` | string | yes | Path relative to vault root |
+| `queue[].size` | int | yes | File size in bytes (sort key) |
+| `queue[].safe_findings` | int | yes | Count of safe automatic findings on this page |
+| `excluded_judgment_only` | int | yes | Pages with findings but none that are safe automatic |
+| `total_dirty` | int | yes | Total pages with any findings (queue + excluded) |
+
+**Inclusion criteria**: A page appears in `queue` when it has at least one finding whose rule has `auto_repair: true` in the registry and a non-null `repair_target`. Pages whose only findings require judgment are counted in `excluded_judgment_only` but omitted from `queue`.
+
+### TemplateProfile
+
+A generic, runtime-derived structural model extracted from a `wiki/templates/*.md` file. Used by template-conformance lint to compare pages against their current template without hardcoded per-template rules.
+
+```json
+{
+  "template_file": "wiki/templates/npc.md",
+  "frontmatter_shape": {
+    "title": {"type": "string", "required": true},
+    "type": {"type": "string", "required": true},
+    "lifecycle": {"type": "string", "required": true},
+    "status": {"type": "string", "required": false}
+  },
+  "heading_tree": [
+    {"level": 1, "text": "{{title}}", "optional": false},
+    {"level": 2, "text": "At a Glance", "optional": false},
+    {"level": 2, "text": "Combat", "optional": true}
+  ],
+  "callout_forms": [
+    {"type": "narration", "section": "At a Glance", "optional": true}
+  ],
+  "table_headers": {
+    "At a Glance": ["Role"]
+  },
+  "formatting_markers": ["col", "col-md"]
+}
+```
+
+**Fields**:
+| Field | Type | Required | Description |
+|---|---|---|---|
+| `template_file` | string | yes | Path to the source template |
+| `frontmatter_shape` | dict | yes | Expected YAML keys with type and required/optional status |
+| `heading_tree` | list[object] | yes | Ordered headings with level, text, and optional flag |
+| `callout_forms` | list[object] | no | Expected callout types and their section context |
+| `table_headers` | dict | no | Expected table column headers per section |
+| `formatting_markers` | list[string] | no | Structural constructs (column layouts, code fence types) |
+
+**Derivation**: Parsed at runtime from the template file. The profile changes when the template changes — no code update required. Sections marked "omit-if-empty" or "omit unused" in template scaffold comments are flagged `optional: true`.
+
 ## State Transitions
 
 ### Rule Lifecycle
@@ -225,9 +294,11 @@ Waivers are active between `granted` and `expires` dates/sessions. Expired waive
 ## Relationships
 
 ```
-Rule  1 ──── * Finding       (a rule produces zero or more findings per run)
-Rule  * ──── * Bundle         (rules belong to bundles via category membership)
-Rule  1 ──── 0..1 Vale YAML   (static rules have a Vale style file)
-Finding 1 ──── 0..1 Waiver    (a finding may be suppressed by a waiver)
-Bundle 1 ──── * Rule          (a bundle includes rules from its listed categories)
+Rule  1 ──── * Finding            (a rule produces zero or more findings per run)
+Rule  * ──── * Bundle              (rules belong to bundles via category membership)
+Rule  1 ──── 0..1 Vale YAML        (static rules have a Vale style file)
+Finding 1 ──── 0..1 Waiver         (a finding may be suppressed by a waiver)
+Bundle 1 ──── * Rule               (a bundle includes rules from its listed categories)
+TemplateProfile 1 ──── * Finding   (template conformance produces TMPL findings)
+DirtyFileQueue ──── * Finding      (queue inclusion determined by safe automatic findings)
 ```

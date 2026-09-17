@@ -264,3 +264,67 @@ For Vale rules, fixtures can also be validated by running `vale --config=... <fi
 - Add JavaScript custom rules to reproduce every legacy checker: rejected for this phase because it violates the no-duplicate-implementation constraint and the legacy checks require fixture-backed migration before removal.
 
 **Validation boundary**: markdownlint-cli2 covers configured built-in Markdown structure only. It does not automatically replace project-specific checks for Obsidian links, frontmatter semantics, forbidden trees, image existence, literal backslash-n, or narration callouts. Those legacy scripts remain until equivalent fixtures pass.
+
+## R14: Bulk Dirty-File Queue Design
+
+**Decision**: Add `wiki-lint queue [--json]` as a CLI subcommand that emits a smallest-first list of wiki pages with remaining safe automatic findings. The queue is computed fresh each invocation (stateless — no persistent queue file). Agents take the head, apply safe automatic repairs, re-lint, and repeat. Judgment-only pages are excluded.
+
+**Rationale**: Corpus reports leave agents inventing traversal order and stopping rules. A deterministic, stateless queue makes bulk cleanup an objective, repeatable procedure. Smallest-first minimizes context per file and maximizes throughput. Stateless recomputation means the queue reflects current state after each repair — no stale-queue coordination.
+
+**Queue inclusion criteria** (FR-022, Clarification):
+- Page has at least one finding whose `repair_target` is non-null AND whose rule's `auto_repair` flag is `true` in the registry (safe automatic).
+- Safe automatic = structural/format-only repairs that cannot invent facts or rewrite prose: template-conformance repairs, literal-newline normalization, unique broken-link retargets, markdownlint auto-fixes.
+- Pages whose only remaining findings require judgment (missing metadata, canon state, agency, prose rewrites) are excluded from the default queue.
+
+**Queue output schema**:
+```json
+{
+  "queue": [
+    {"file": "entities/npc/example.md", "size": 1234, "safe_findings": 3},
+    {"file": "entities/place/bigger.md", "size": 5678, "safe_findings": 1}
+  ],
+  "excluded_judgment_only": 4,
+  "total_dirty": 6
+}
+```
+
+**Agent loop**: Take `queue[0]`, apply its safe automatic repairs, re-lint that file, confirm zero safe automatic findings remain, then re-request the queue. Stop at any point — incompleteness is not failure (SC-009).
+
+**Alternatives considered**:
+- Persistent queue file updated by each repair: rejected because stale state and coordination overhead outweigh the cost of a stateless re-scan (~200 pages, <2s).
+- Agent-side sorting over corpus report: rejected because it pushes ordering logic into every consumer and violates FR-022's requirement that `wiki-lint` emits the queue.
+
+## R15: Template-Derived Conformance
+
+**Decision**: Add a `template_conformance` symbolic evaluator in `tools/creative_lint/evaluators/symbolic.py` that derives a generic structural profile from the currently selected `wiki/templates/*.md` file and compares wiki pages against it. No per-template hardcoded rules.
+
+**Rationale**: Template drift is a major quality source. The existing `wiki/AGENTS.md` maps `type` (and `kind` for session-prep beats) to specific template files. A runtime-derived profile follows the live template — when the template changes, the comparison baseline changes automatically (FR-023, SC-010).
+
+**Template selection** (from `wiki/AGENTS.md` mapping):
+1. Read page frontmatter `type` and `kind`.
+2. Resolve to template file via the established mapping: `type: npc` → `wiki/templates/npc.md`, `type: session-prep` + `kind: hook` → `wiki/templates/hook.md`, `type: place` + `kind: city` → `wiki/templates/city.md`, etc.
+3. If no template resolves, skip template conformance for that page (no finding, not an error).
+
+**Profile derivation** (generic, from any template file):
+1. **Frontmatter shape**: Extract the set of YAML keys and their value types (string, list, enum set). Compare presence and type, not values.
+2. **Heading tree**: Extract ordered list of `##`/`###` headings. Compare heading text and nesting depth.
+3. **Section order**: Headings define section order; report out-of-order sections.
+4. **Callout forms**: Extract `[!callout-type]` patterns and their positions relative to sections.
+5. **Table structure**: Extract table headers per section.
+6. **Formatting markers**: Extract code fence languages, column layout markers (`````col`), and other structural constructs.
+
+**Omission convention**: Template sections that are documented as "omit-if-empty" or "omit unused" (per the template's scaffold comment) are optional. The profile marks these as optional and does not report their absence as a mismatch.
+
+**Finding rules**:
+- `TMPL001`: Missing required section (heading present in template, absent in page). Severity: REPAIR. Auto-repair: insert heading stub.
+- `TMPL002`: Extra section not in template. Severity: INFO. No auto-repair.
+- `TMPL003`: Section order mismatch. Severity: REPAIR. Auto-repair: reorder sections.
+- `TMPL004`: Frontmatter shape mismatch (missing key, wrong type). Severity: REPAIR. Auto-repair: add missing key with default.
+- `TMPL005`: Formatting construct mismatch (wrong callout type, missing table, etc.). Severity: REPAIR. Auto-repair: insert expected construct.
+
+All TMPL findings are safe automatic repairs per the spec clarification and belong in the default bulk queue.
+
+**Alternatives considered**:
+- Per-template hardcoded checklist in Python: rejected because it duplicates template definitions and requires code changes when templates change.
+- markdownlint custom rules per template: rejected because markdownlint doesn't have cross-file template awareness.
+- LLM-based template comparison: rejected for Phase 1 — deterministic profile derivation is cheaper and more reliable for structural checks.

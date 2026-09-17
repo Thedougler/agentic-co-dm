@@ -44,6 +44,7 @@ class RuleDefinition:
     vale_style: str | None
     repair: str | None
     tags: list[str]
+    auto_repair: bool          # true for safe automatic repairs (dirty-file queue inclusion)
     conflicts: list[str]
     depends: list[str]
 
