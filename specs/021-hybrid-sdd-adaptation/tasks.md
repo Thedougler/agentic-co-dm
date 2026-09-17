@@ -234,3 +234,9 @@ Task T029: Create the reviewed creative-llm-wiki package under .specify/presets/
 - Do not store raw prompt, wiki, campaign, model, or provider content in normal traces.
 - Do not activate native-tokenizer comparisons or promotion before the separate governance change; record `measurement-gap` with reason `native-tokenizer-governance-pending` instead.
 - Treat community preset packages as pinned, inspected, untrusted staging inputs; adapt selected patterns with provenance and never install or copy a complete package wholesale.
+
+---
+
+## Phase 9: Convergence
+
+- [ ] T036 [US3] Add kind-filter to `check_canon` so it skips records whose `kind` is not canon-relevant (`ownership`, `canon-boundary`, `maintenance`), allowing the documented US3 independent test `python3 scripts/hybrid-sdd-check.py canon --fixtures specs/021-hybrid-sdd-adaptation/fixtures/evidence/` to pass when the directory contains non-canon fixture files per FR-026 (partial)
