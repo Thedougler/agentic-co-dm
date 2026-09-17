@@ -495,7 +495,10 @@ document path from an Obsidian filename; the search result is the identifier.
 
 QMD is an optional search index layered on top of the vault. The markdown vault is the source of truth. Any skill that writes wiki markdown should refresh QMD after the vault write completes, but only when `QMD_WIKI_COLLECTION` is configured and the local QMD transport is available. If QMD refresh fails, keep the vault changes and report the QMD status separately.
 
-Use the cheapest verification path that proves the new content is visible: `qmd update`, `qmd embed` only if vectors are stale or missing, then a targeted `qmd get` or `qmd ls` check for one written page or the collection root. Read-only skills should not refresh QMD.
+Use the cheapest verification path that proves the new content is visible: run
+`scripts/qmd-maintain.sh` for update/status/probe, then use
+`scripts/qmd-maintain.sh --embed` only for an explicit foreground embedding
+pass. Read-only skills should not refresh QMD.
 
 ## Core Principles
 

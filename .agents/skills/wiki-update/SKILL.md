@@ -222,41 +222,32 @@ Read `$OBSIDIAN_VAULT_PATH/hot.md` (create from the template in `wiki-ingest` if
 
 Write conceptually: "Synced obsidian-wiki — added wiki-capture and wiki-research skills, core new capabilities are autonomous web research and conversation capture."
 
-## Step 7: Refresh QMD Wiki Index (optional — requires `QMD_WIKI_COLLECTION`)
+## Step 7: Refresh QMD Wiki Index
 
-**GUARD: If `$QMD_WIKI_COLLECTION` is empty or unset, skip this step.** The markdown vault is the source of truth; QMD is only a search index.
+The markdown vault is the source of truth; QMD is only a search index. An empty
+`QMD_WIKI_COLLECTION` selects `wiki`.
 
 Run this step only after pages, `.manifest.json`, `index.md`, `log.md`, and `hot.md` have been written. If Step 2 found no meaningful changes and the sync stopped early, do not refresh QMD.
 
-This refresh currently requires the local QMD CLI. Use `$QMD_CLI` if set; otherwise use `qmd`. If the CLI is unavailable or returns an error, do not roll back the wiki update; report that the wiki was updated but QMD refresh was skipped or failed.
-
-For CLI refresh:
+Run the repository maintenance command:
 
 ```bash
-${QMD_CLI:-qmd} update
+scripts/qmd-maintain.sh
 ```
 
-If the output says new hashes need vectors, or if pages were created/updated and embeddings may be stale, run:
+Pending vectors are a reported backlog, not a routine failure. Use the
+explicit embedding mode only when requested:
 
 ```bash
-${QMD_CLI:-qmd} embed
+scripts/qmd-maintain.sh --embed
 ```
 
-Verify at least one created or materially updated page is visible in the wiki collection:
-
-```bash
-${QMD_CLI:-qmd} get "qmd://$QMD_WIKI_COLLECTION/projects/<project-name>/<page>.md" -l 5
-```
-
-If the exact `qmd://` path is uncertain, use:
-
-```bash
-${QMD_CLI:-qmd} ls "$QMD_WIKI_COLLECTION" | rg "<project-name>"
-```
+Verify a created or materially updated page by following the exact QMD
+retrieval rule in `.agents/skills/llm-wiki/SKILL.md`: search first, then pass
+the returned docid or source verbatim to `qmd get` / `qmd multi-get`.
 
 Record QMD refresh in the final report as one of:
-- `QMD refreshed: update + embed + verified`
-- `QMD skipped: QMD_WIKI_COLLECTION unset`
+- `QMD refreshed: update + verified; embeddings pending: N`
 - `QMD skipped: qmd CLI unavailable`
 - `QMD failed: <short error summary>`
 

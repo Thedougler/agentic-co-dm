@@ -239,6 +239,10 @@ changes.
   appropriate play surface; drafts and unrevealed information remain protected.
 - Runtime procedures, provider and model details, exact commands, retrieval ordering, telemetry
   schemas, thresholds, and evaluation fixtures belong in lower-level operating documents.
+- Codex is the default harness for Spec Kit commands in this repository. Lower-level Spec Kit
+  metadata and instructions MUST treat Codex as the default and MUST identify other harnesses as
+  explicit alternatives. Exact invocation, provider, model, and harness-specific procedures
+  remain owned by lower-level operating documents.
 - Campaign facts remain DM-gated even when agents own routine structure, measurement, or
   maintenance work.
 
@@ -281,4 +285,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.19.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-16
+**Version**: 1.20.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-16

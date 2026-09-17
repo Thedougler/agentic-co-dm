@@ -632,7 +632,7 @@ After ingesting, verify:
 - [ ] Every new/updated page has a `summary:` frontmatter field (1–2 sentences, ≤200 chars)
 - [ ] `relationships:` block is present on pages where source text made typed connections clear; all entries use an allowed type from `llm-wiki/SKILL.md`
 - [ ] If `QMD_WIKI_COLLECTION` is set and the QMD CLI is available, `qmd update` has run after writing pages
-- [ ] If QMD reports missing vectors or embeddings may be stale, `qmd embed` has run
+- [ ] If QMD reports missing vectors, the normal maintenance run records the pending backlog; `scripts/qmd-maintain.sh --embed` is used only for an explicitly requested foreground embedding pass
 - [ ] QMD refresh status is included in the final report
 
 ## Reference

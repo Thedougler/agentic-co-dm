@@ -7,6 +7,8 @@ kind: session-plan
 lifecycle: proposed
 campaign: shattered-sea
 visibility: dm
+reveal: unrevealed
+sources: []
 summary: Drop map for Session 11 summary, transcript, and recording.
 created: 2026-09-14
 updated: 2026-09-14

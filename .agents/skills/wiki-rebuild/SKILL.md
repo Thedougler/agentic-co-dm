@@ -177,11 +177,9 @@ For CLI refresh:
 ${QMD_CLI:-qmd} update
 ```
 
-If the output says new hashes need vectors, or if restore replaced live pages and embeddings may be stale, run:
-
-```bash
-${QMD_CLI:-qmd} embed
-```
+If the output reports pending vectors, routine maintenance is still complete.
+Use `scripts/qmd-maintain.sh --embed` only when an explicit foreground
+embedding pass is requested.
 
 Verify the wiki collection reflects the operation:
 
@@ -189,14 +187,12 @@ Verify the wiki collection reflects the operation:
 ${QMD_CLI:-qmd} ls "$QMD_WIKI_COLLECTION"
 ```
 
-For restore, also verify one restored page if the archive has a known page path:
-
-```bash
-${QMD_CLI:-qmd} get "qmd://$QMD_WIKI_COLLECTION/<restored-page>.md" -l 5
-```
+For restore, verify one restored page by following the exact QMD retrieval rule
+in `.agents/skills/llm-wiki/SKILL.md`: search first, then pass the returned
+docid or source verbatim to `qmd get` / `qmd multi-get`.
 
 Record QMD refresh in the final report as one of:
-- `QMD refreshed: update + embed + verified`
+- `QMD refreshed: update + verified; embeddings pending: N`
 - `QMD refreshed: update only + verified`
 - `QMD skipped: QMD_WIKI_COLLECTION unset`
 - `QMD skipped: archive-only live content unchanged`

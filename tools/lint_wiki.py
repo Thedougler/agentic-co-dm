@@ -42,8 +42,8 @@ HARD_KEYS = (
 )
 PC_ROLE = re.compile(r"^(pc|player character|player)$", re.I)
 TOKEN = re.compile(r"`([^`]+)`")
-RESERVED_FILES = {"AGENTS.md", "index.md", "log.md", "hot.md"}
-SKIP_DIRS = {".obsidian", "_archive", "_archives", "_raw", "_readouts", "_meta", "templates"}
+RESERVED_FILES = {"AGENTS.md", "README.md", "index.md", "log.md", "hot.md"}
+SKIP_DIRS = {".obsidian", "_archive", "_archives", "_raw", "_readouts", "_staging", "_meta", "templates"}
 # Closed set: common ability/stat wikilinks are not HARD broken_links (no auto-pages).
 MECHANIC_LINK_ALLOWLIST = {
     "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma",

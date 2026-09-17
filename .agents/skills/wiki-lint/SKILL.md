@@ -34,7 +34,7 @@ Schema precedence is CLI flags > resolved environment/config values > framework 
 
 Run these checks in order. Report findings as you go.
 
-**Scope:** skip `_archives/`, `_raw/`, `_readouts/`, and `.obsidian/` in every check. These hold frozen snapshots, unprocessed staging drafts, and derived readouts (saved by `wiki-narrate`) — they are not knowledge-graph pages, so orphan, frontmatter, and link checks don't apply to them.
+**Scope:** skip `_archives/`, `_raw/`, `_staging/`, `_readouts/`, and `.obsidian/` in every check. These hold frozen snapshots, unprocessed review drafts, and derived readouts (saved by `wiki-narrate`) — they are not live knowledge-graph pages, so orphan, frontmatter, and link checks don't apply to them. Reserved `README.md`, `AGENTS.md`, `index.md`, `log.md`, and `hot.md` files are operational documents, not content pages.
 
 ### 1. Orphaned Pages
 
@@ -604,11 +604,9 @@ Use `$QMD_CLI` if set; otherwise use `qmd`.
 ${QMD_CLI:-qmd} update
 ```
 
-If the output says vectors are needed or embeddings may be stale, run:
-
-```bash
-${QMD_CLI:-qmd} embed
-```
+If the output reports pending vectors, routine maintenance is still complete.
+Use `scripts/qmd-maintain.sh --embed` only when an explicit foreground
+embedding pass is requested.
 
 Verify the collection with either:
 
@@ -616,14 +614,12 @@ Verify the collection with either:
 ${QMD_CLI:-qmd} ls "$QMD_WIKI_COLLECTION"
 ```
 
-or, when a specific page path is known:
-
-```bash
-${QMD_CLI:-qmd} get "qmd://$QMD_WIKI_COLLECTION/<page>.md" -l 5
-```
+For a specific page, follow the exact QMD retrieval rule in
+`.agents/skills/llm-wiki/SKILL.md`: search first, then pass the returned docid
+or source verbatim to `qmd get` / `qmd multi-get`.
 
 Record one of:
-- `QMD refreshed: update + embed + verified`
+- `QMD refreshed: update + verified; embeddings pending: N`
 - `QMD refreshed: update only + verified`
 - `QMD skipped: QMD_WIKI_COLLECTION unset`
 - `QMD skipped: qmd CLI unavailable`
