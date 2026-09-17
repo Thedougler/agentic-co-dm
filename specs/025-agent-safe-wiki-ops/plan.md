@@ -99,6 +99,20 @@ tests/
 
 **Structure Decision**: New mutation/transaction logic goes in `tools/wiki_ops/` as a library consumed by CLI scripts. CLI surfaces extend existing `scripts/wiki-bulk-ops` and `scripts/wiki-lint` with new subcommands, plus one new `scripts/wiki-identity` for identity resolution. Template contracts are YAML files under `wiki/templates/contracts/`. This preserves the existing pattern: library code in `tools/`, CLI entry points in `scripts/`, tests in `tests/`.
 
+## Post-Design Constitution Check
+
+| Principle | Status | Evidence |
+|---|---|---|
+| V. Single Source of Truth | PASS | Template contracts own section semantics. Identity signals come from existing frontmatter/manifest. Mutation operations are the single owner of wiki state transitions. Policy ownership registry prevents restated rules. |
+| VI. Software Is Agent-Shaped | PASS | All new surfaces are CLI: args in, JSON out, exit status. `wiki-identity`, `wiki-bulk-ops mutate`, `wiki-lint --scope`, `wiki-bulk-ops transact` follow the existing `scripts/` pattern. |
+| VIII. Safe Automation Runs Unattended | PASS | Mutations verify preconditions atomically. Transactions roll back on failure. Ambiguous identity blocks automatic mutation. Deterministic repairs are structural-only. |
+| IX. Measured, Quality-Bounded Efficiency | PASS | Scoped lint eliminates full-vault scans. Batched finalization eliminates redundant QMD refreshes. Compact JSON output stays under 1000 tokens for agent consumption. |
+| XIV. Designated Writers Have Bounded Concurrency | PASS | Content-hash preconditions enforce single-writer semantics per section. Transaction validation rejects overlapping mutations. |
+| XVI. The Simplest Adequate Tool | PASS | Reuses `wiki-bulk-ops` frontmatter parsing, link rewriting, atomic writes. stdlib hashlib for preconditions. stdlib difflib for content overlap. No new dependencies. |
+| XIX. Wiki Is Additive, Self-Sealing | PASS | Merges record `merged_into` transitions. Redirects preserved. Index and manifest updated atomically. No silent deletion. |
+
+**Post-design gate**: PASS. No `NEEDS CLARIFICATION` remains. All four layers (identity, mutation, scope, transaction) compose through existing CLI patterns. Template contracts are YAML co-located with templates. Error regression tests cover all 12 open errors.
+
 ## Complexity Tracking
 
 No constitution violations to justify.

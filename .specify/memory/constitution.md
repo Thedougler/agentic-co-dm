@@ -1,11 +1,12 @@
 <!--
 Sync Impact Report
-- Version change: 1.27.0 → 1.28.0 (MINOR)
+- Version change: 1.28.0 → 1.29.0 (MINOR)
 - Modified principles:
-  - XIX. The Wiki Is Additive, Self-Sealing, and Self-Healing → XIX. The Wiki Is Additive, Self-Sealing, and Self-Healing (staging lifecycle clarified)
+  - XVIII. Constitutional Layering → XVIII. Constitutional Layering (reader-specific skill routing added)
 - Added sections: None
 - Removed sections: None
-- Follow-up TODOs: None
+- Follow-up TODOs:
+  - `writing-for-humans` is referenced by the requested policy but is not present in `.agents/skills/`.
 -->
 
 # Agentic Co-DM Constitution
@@ -223,8 +224,13 @@ Volatile implementation details MUST remain below the constitution unless changi
 change a project invariant. When a lower layer conflicts with this constitution, the lower layer
 MUST be corrected or the constitution MUST be amended explicitly.
 
+Reader-specific skill routing is mandatory. Before writing text an agent will consume, the agent
+MUST read and apply `writing-for-agents`. Before writing text intended for human readers in
+`wiki/`, the agent MUST read and apply `writing-for-humans`. A missing required skill MUST be
+surfaced as an explicit dependency gap; the agent MUST NOT claim that routing was applied.
+
 Rationale: layering keeps standing context short, load-bearing, and resilient to model, tool, and
-retrieval-engine changes.
+retrieval-engine changes; reader-specific skills keep each surface predictable.
 
 ### XIX. The Wiki Is Additive, Self-Sealing, and Self-Healing
 
@@ -337,4 +343,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.28.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 1.29.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
