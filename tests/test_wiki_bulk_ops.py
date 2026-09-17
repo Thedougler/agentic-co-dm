@@ -5,6 +5,7 @@ import os
 import subprocess
 import tempfile
 import unittest
+import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -12,9 +13,12 @@ SCRIPT = ROOT / "scripts" / "wiki-bulk-ops"
 PYTHON = os.environ.get("PYTHON", "python3")
 
 
-def run_cli(*args: str, vault: Path | None = None) -> subprocess.CompletedProcess[str]:
+def run_cli(*args: str, vault: Path | None = None, extra_env: dict[str, str] | None = None) -> subprocess.CompletedProcess[str]:
     command = [PYTHON, str(SCRIPT), *args]
-    return subprocess.run(command, cwd=ROOT, capture_output=True, text=True, env=os.environ | ({"OBSIDIAN_VAULT_PATH": str(vault)} if vault else {}))
+    environment = os.environ | (extra_env or {})
+    if vault:
+        environment["OBSIDIAN_VAULT_PATH"] = str(vault)
+    return subprocess.run(command, cwd=ROOT, capture_output=True, text=True, env=environment)
 
 
 class VaultFixture(unittest.TestCase):
@@ -320,5 +324,69 @@ class OrphanReportTests(VaultFixture):
         self.assertEqual(report_preview["total_changes"], report_live["total_changes"])
         self.assertEqual(source.read_text(), "[[target]]\n")
 
+class MocGenerationTests(VaultFixture):
+    def setUp(self) -> None:
+        super().setUp()
+        self.page("entities/npc/zara.md", "---\ntitle: Zara Vale\n---\nnpc\n")
+        self.page("entities/npc/alpha.md", "---\ntitle: Alpha\n---\npc\n")
+        self.page("entities/place/harbor.md", "---\ntitle: Harbor\n---\nplace\n")
+        self.page("_raw/ignored.md", "raw\n")
+        self.page("_meta/ignored.md", "meta\n")
+        self.page("attachments/ignored.md", "attachment\n")
+
+    def test_moc_generation_orders_links_excludes_infrastructure_and_is_idempotent(self) -> None:
+        preview = run_cli("moc-generate", "--dry-run", "--json", "--vault", str(self.vault))
+        self.assertEqual(preview.returncode, 0, preview.stderr)
+        self.assertFalse((self.vault / "entities/_index.md").exists())
+        self.assertFalse((self.vault / "_raw/_index.md").exists())
+        data = json.loads(preview.stdout)
+        self.assertGreaterEqual(data["files_modified"], 3)
+
+        applied = run_cli("moc-generate", "--json", "--vault", str(self.vault))
+        self.assertEqual(applied.returncode, 0, applied.stderr)
+        entities = (self.vault / "entities/_index.md").read_text()
+        npc = (self.vault / "entities/npc/_index.md").read_text()
+        self.assertIn("title: Entities", entities)
+        self.assertIn("- [[entities/npc/_index|Non-Player Characters]]", entities)
+        self.assertIn("- [[entities/npc/alpha|Alpha]]", npc)
+        self.assertLess(npc.index("Alpha"), npc.index("Zara Vale"))
+        root = (self.vault / "index.md").read_text()
+        self.assertIn("- [[entities/_index|Entities]]", root)
+        self.assertFalse((self.vault / "_meta/_index.md").exists())
+        self.assertFalse((self.vault / "_raw/_index.md").exists())
+        repeat = run_cli("moc-generate", "--json", "--vault", str(self.vault))
+        self.assertEqual(repeat.returncode, 0, repeat.stderr)
+        self.assertEqual(json.loads(repeat.stdout)["files_modified"], 0)
+
+    def test_moc_generation_stages_new_mocs_but_updates_root_index(self) -> None:
+        result = run_cli(
+            "moc-generate", "--json", "--vault", str(self.vault),
+            extra_env={"WIKI_STAGED_WRITES": "true"},
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertFalse((self.vault / "entities/_index.md").exists())
+        self.assertTrue((self.vault / "_staging/entities/_index.md").exists())
+        self.assertTrue((self.vault / "_staging/entities/npc/_index.md").exists())
+        self.assertIn("entities/_index", (self.vault / "index.md").read_text())
+        repeat = run_cli(
+            "moc-generate", "--json", "--vault", str(self.vault),
+            extra_env={"WIKI_STAGED_WRITES": "true"},
+        )
+        self.assertEqual(json.loads(repeat.stdout)["files_modified"], 0)
+
+
+class PerformanceSmokeTests(VaultFixture):
+    def test_rename_scans_1565_files_under_five_seconds(self) -> None:
+        for number in range(782):
+            self.page(f"pages/page-{number}.md", f"page {number}\n")
+        self.page("old.md", "---\ntitle: Old\n---\n")
+        for number in range(782):
+            self.page(f"refs/ref-{number}.md", "[[old]]\n")
+        started = time.perf_counter()
+        result = run_cli("rename", "--old", "old", "--new", "new", "--json", "--vault", str(self.vault))
+        elapsed = time.perf_counter() - started
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertLess(elapsed, 5.0)
+        self.assertEqual(json.loads(result.stdout)["files_scanned"], 1565)
 if __name__ == "__main__":
     unittest.main()

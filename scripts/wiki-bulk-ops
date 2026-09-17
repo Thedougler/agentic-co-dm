@@ -832,6 +832,177 @@ def orphan_report(args: argparse.Namespace) -> tuple[OperationResult, str]:
     records = skipped_records + [ChangeRecord(path, []) for path in orphan_paths]
     result = result_for("orphan-report", args.dry_run, len(all_paths), records, {"orphans": orphan_paths})
     return result, "orphan-report"
+MOC_SKIP_DIRS = {
+    ".obsidian",
+    "_archive",
+    "_raw",
+    "_readouts",
+    "_staging",
+    "_meta",
+    "attachments",
+    "templates",
+}
+
+MOC_TITLE_MAP = {
+    "concepts": "Concepts",
+    "entities": "Entities",
+    "journal": "Journal",
+    "projects": "Projects",
+    "references": "References",
+    "skills": "Skills",
+    "synthesis": "Synthesis",
+    "npc": "Non-Player Characters",
+    "pc": "Player Characters",
+    "place": "Places",
+    "faction": "Factions",
+    "item": "Items",
+    "creature": "Creatures",
+    "vehicle": "Vehicles",
+    "spell": "Spells",
+    "lore": "Lore",
+    "quest": "Quests",
+    "region": "Regions",
+    "sessions": "Sessions",
+}
+
+
+def moc_folder_title(name: str) -> str:
+    return MOC_TITLE_MAP.get(name.casefold(), name.replace("-", " ").replace("_", " ").title())
+
+
+def moc_folder_allowed(relative: Path) -> bool:
+    return not any(part in MOC_SKIP_DIRS for part in relative.parts)
+
+
+def moc_content_folders(vault: Path) -> list[Path]:
+    folders: set[Path] = set()
+    for path in vault.rglob("*.md"):
+        relative = path.relative_to(vault)
+        if not path.is_file() or path.parent == vault or not moc_folder_allowed(relative) or path.name == "_index.md":
+            continue
+        folders.add(path.parent)
+    for path in vault.rglob("*"):
+        if path.is_dir() and path != vault:
+            relative = path.relative_to(vault)
+            if moc_folder_allowed(relative) and any(child.is_dir() for child in path.iterdir()):
+                folders.add(path)
+    return sorted(folders, key=lambda item: item.relative_to(vault).as_posix())
+
+
+def existing_title(text: str, fallback: str) -> str:
+    value = parse_fields(text).get("title")
+    return clean_scalar(value) if value else fallback
+
+
+def moc_metadata(target: Path, vault: Path, title: str) -> tuple[str, str, str, str, str, str]:
+    created = updated = "2026-09-17"
+    if target.is_file():
+        fields = parse_fields(target.read_text(encoding="utf-8"))
+        created = clean_scalar(fields.get("created", created)) or created
+        updated = clean_scalar(fields.get("updated", updated)) or updated
+    relative = target.relative_to(vault)
+    category = relative.parts[0] if relative.parts else ""
+    return title, category, "[]", "[]", created, updated
+
+
+def moc_destination(target: Path, vault: Path, staged: bool) -> Path:
+    if not staged:
+        return target
+    relative = target.relative_to(vault)
+    stage = vault / "_staging" / relative
+    if target.exists():
+        stage = stage.with_suffix(".patch.md")
+    return stage
+
+
+def moc_generated_text(folder: Path, vault: Path, existing: Path | None, content_folders: set[Path]) -> str:
+    title = moc_folder_title(folder.name)
+    metadata_target = existing or folder / "_index.md"
+    title, category, tags, sources, created, updated = moc_metadata(metadata_target, vault, title)
+    lines = [
+        "---\n",
+        f"title: {title}\n",
+        f"category: {category}\n",
+        f"tags: {tags}\n",
+        f"sources: {sources}\n",
+        f"created: {created}\n",
+        f"updated: {updated}\n",
+        "---\n",
+        "\n",
+    ]
+    entries: list[tuple[str, str]] = []
+    for page in sorted(folder.glob("*.md"), key=lambda item: item.name.casefold()):
+        if page.name == "_index.md":
+            continue
+        text, skipped = read_utf8(page, vault)
+        display = page.stem
+        if not skipped and text is not None:
+            display = existing_title(text, display)
+        target = page.relative_to(vault).with_suffix("").as_posix()
+        entries.append((display.casefold(), f"- [[{target}|{display}]]\n"))
+    for child in sorted(folder.iterdir(), key=lambda item: item.name.casefold()):
+        if not child.is_dir() or child not in content_folders:
+            continue
+        child_target = child.relative_to(vault).joinpath("_index").as_posix()
+        child_title = moc_folder_title(child.name)
+        entries.append((child_title.casefold(), f"- [[{child_target}|{child_title}]]\n"))
+    for _sort_key, link in sorted(entries):
+        lines.append(link)
+    return "".join(lines)
+
+
+def root_moc_links(vault: Path, folders: list[Path]) -> str:
+    links = []
+    for folder in folders:
+        if len(folder.relative_to(vault).parts) != 1:
+            continue
+        title = moc_folder_title(folder.name)
+        target = folder.relative_to(vault).joinpath("_index").as_posix()
+        links.append((title.casefold(), f"- [[{target}|{title}]]\n"))
+    return "".join(link for _key, link in sorted(links))
+
+
+def moc_root_text(vault: Path, folders: list[Path]) -> str:
+    root = vault / "index.md"
+    original = root.read_text(encoding="utf-8") if root.exists() else ""
+    marker = "## Folder Indexes\n"
+    block = marker + root_moc_links(vault, folders)
+    if marker in original:
+        prefix = original.split(marker, 1)[0]
+        return prefix + block
+    separator = "\n" if original and not original.endswith("\n") else ""
+    return original + separator + ("\n" if original else "") + block
+
+
+def moc_generate(args: argparse.Namespace) -> tuple[OperationResult, str]:
+    vault = resolve_vault(args.vault)
+    folders = moc_content_folders(vault)
+    content_folders = set(folders)
+    staged = os.environ.get("WIKI_STAGED_WRITES", "").casefold() == "true"
+    records: list[ChangeRecord] = []
+    plans: dict[Path, str] = {}
+    for folder in folders:
+        target = folder / "_index.md"
+        staged_target = moc_destination(target, vault, staged)
+        existing = staged_target if staged_target.exists() else target if target.exists() else None
+        try:
+            old_text = existing.read_text(encoding="utf-8") if existing else ""
+        except (OSError, UnicodeDecodeError) as exc:
+            records.append(ChangeRecord(staged_target.relative_to(vault).as_posix(), [], True, f"read error: {exc}"))
+            continue
+        new_text = moc_generated_text(folder, vault, existing if existing and existing == target else target if target.exists() else None, content_folders)
+        if new_text != old_text:
+            changes = [Change(1, old_text, new_text, "body")]
+            records.append(ChangeRecord(staged_target.relative_to(vault).as_posix(), changes))
+            plans[staged_target] = new_text
+    root = vault / "index.md"
+    root_text = moc_root_text(vault, folders)
+    if root_text != (root.read_text(encoding="utf-8") if root.exists() else ""):
+        records.append(ChangeRecord("index.md", [Change(1, root.read_text(encoding="utf-8") if root.exists() else "", root_text, "body")]))
+        plans[root] = root_text
+    result = result_for("moc-generate", args.dry_run, sum(1 for _ in iter_markdown(vault, args.glob, args.directory)), records)
+    apply_content_plans(plans, args.dry_run)
+    return result, "moc-generate"
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -881,9 +1052,13 @@ def build_parser() -> argparse.ArgumentParser:
     add_common(tag_parser, suppress_defaults=True)
     tag_parser.add_argument("--taxonomy")
     tag_parser.add_argument("--remove-unknown", action="store_true")
+    moc_parser = subparsers.add_parser("moc-generate")
+    add_common(moc_parser, suppress_defaults=True)
     orphan_parser = subparsers.add_parser("orphan-report")
     add_common(orphan_parser, suppress_defaults=True)
     return parser
+
+
 def main(argv: list[str] | None = None) -> int:
     try:
         args = build_parser().parse_args(argv)
@@ -897,6 +1072,8 @@ def main(argv: list[str] | None = None) -> int:
             result, description = link_repair(args)
         elif args.command == "tag-normalize":
             result, description = tag_normalize(args)
+        elif args.command == "moc-generate":
+            result, description = moc_generate(args)
         else:
             result, description = orphan_report(args)
         emit(result, args.json, description)
@@ -923,6 +1100,18 @@ def self_check() -> None:
     assert renamed == "[[new|display]] ![[x/new#p]] old-kin"
     assert len(link_changes) == 2
     assert parse_fields("---\ntype: npc\n---\n") == {"type": "npc"}
+    with tempfile.TemporaryDirectory(prefix="wiki-bulk-self-check-rename-") as raw:
+        vault = Path(raw)
+        (vault / "old.md").write_text("---\ntitle: Old\n---\nold\n", encoding="utf-8")
+        (vault / "source.md").write_text("[[old|display]]\n", encoding="utf-8")
+        assert main(["rename", "--old", "old", "--new", "new", "--vault", str(vault)]) == 0
+        assert (vault / "new.md").is_file() and not (vault / "old.md").exists()
+        assert "[[new|display]]" in (vault / "source.md").read_text(encoding="utf-8")
+        assert main(["frontmatter", "--action", "set", "--field", "reviewed", "--value", "true", "--vault", str(vault)]) == 0
+        (vault / "entities").mkdir()
+        (vault / "entities" / "entry.md").write_text("---\ntitle: Entry\n---\n", encoding="utf-8")
+        assert main(["moc-generate", "--vault", str(vault)]) == 0
+        assert (vault / "entities" / "_index.md").is_file()
     with tempfile.TemporaryDirectory(prefix="wiki-bulk-self-check-") as raw:
         vault = Path(raw)
         (vault / "target.md").write_text("target\n", encoding="utf-8")
