@@ -115,7 +115,7 @@ Fill `## Active Agenda` on the faction page:
 
 - **Goal:** a concrete world change.
 - **Why:** why it matters now.
-- **Clock:** a 4- or 6-segment agenda clock on this faction page.
+- **Clock:** a 4- or 6-segment agenda clock when this faction has an active, trackable agenda; omit for dormant or dissolved factions.
 - **Next move:** what they are preparing or attempting next.
 - **Needs:** the enabling person, place, object, permission, resource, or event.
 - **Opposition:** who or what stands in the way.
@@ -125,8 +125,8 @@ Fill `## Active Agenda` on the faction page:
   negotiate, sabotage, support, or refuse.
 - **If completed:** the concrete new world state if the agenda succeeds.
 
-`hot.md` may point at this agenda, but the clock lives only on the faction page.
-Do not store a second clock in `hot.md`.
+When the agenda is active, `hot.md` may point at it, but the clock lives only
+on the faction page. Do not store a second clock in `hot.md`.
 
 ### 5. Add Only Table-Relevant Structure
 
@@ -151,20 +151,16 @@ defaults.
 
 ### 6. Prepare The Faction Turn
 
-Fill `## Faction Turn > ### Current Turn` at creation. Name the current turn
-state with no roll:
+For a faction that can affect current play, fill `## Faction Turn > ### Current Turn` at creation. Omit the entire section for dormant or dissolved factions, or when the faction has no independent effect on current play. Name the current turn state with no roll:
 
 - **Want:** the specific result before the next meaningful campaign interval.
 - **Move:** the plausible attempt using current resources.
 - **Mark:** the fact that changes if the move proceeds.
 - **Signal:** how the party can learn about the change.
-- **Collision:** what other faction, person, place, resource, or deadline it
-  intersects.
+- **Collision:** what other faction, person, place, resource, or deadline it intersects.
 - **Player opening:** what remains unresolved and actionable.
 
-Do not roll the Current Turn at create. `world-tick` later resolves turns and
-appends `### Turn Log` rows. The turn log records changed canon, newest first;
-this skill creates the log table but does not invent resolved future rows.
+Do not roll the Current Turn at create. `world-tick` later resolves turns and appends `### Turn Log` rows for active factions. The turn log records changed canon, newest first; this skill creates the log table but does not invent resolved future rows.
 
 ## Craft Basis
 
@@ -186,11 +182,13 @@ The page is done when:
 - DM thesis is one sentence of campaign pressure.
 - Current state states status quo, recent change, pressure, strength,
   vulnerability, and opportunity.
-- One active agenda has goal, why, clock, next move, need, opposition, signal,
-  player opening, and completion consequence.
-- The agenda clock lives on the faction page; `hot.md` has no duplicate clock.
+- One active agenda has goal, why, next move, need, opposition, signal, player
+  opening, and completion consequence; add a clock when the agenda is active
+  and trackable.
+- Dormant or dissolved factions omit the agenda clock when no active agenda
+  exists.
 - Assets, people, places, and relationships include only entries that currently
   change play.
-- Current Turn is filled with no roll or resolved future result.
-- Turn Log exists for `world-tick` to append later.
+- Active factions with independent off-screen movement have a Current Turn and
+  Turn Log; dormant or dissolved factions omit that section.
 - Invention is labeled, cited, and proposed for DM acceptance.

@@ -88,23 +88,14 @@ flexGrow=1
 
 ## Active Agenda
 
-**Goal:** Preserve Delmar long enough for the fleet's consequences to reach the Pearl and the souls taken in the theft.
-
-**Why:** The fleet's commission is complete, but its captains remain bound to Delmar and the Pearl remains under [[Umberlee]]'s claim.
-
-**Clock:** ○ ○ ○ ○
-
-**Next move:** Use whichever captain surfaces under the next trigger to keep Delmar alive and advance the search for the Pearl.
-
-**Needs:** Delmar's survival, a reliable lead to the Pearl, and the captains' memories of the shrine operation.
-
-**Opposition:** [[Umberlee]]'s claim, [[The Drowned Maw]], and Delmar's fragmented control.
-
-**Next signal:** Delmar's voice, posture, and priorities change into one captain's recognizable manner.
-
-**Player opening:** The party can protect Delmar, question a surfaced captain, follow the wreck's trail, or refuse to let the captains dictate the next move.
-
-**If completed:** The Pearl comes within reach, forcing a choice about the captains' souls and the souls held by the Pearl.
+- **Goal:** Preserve Delmar long enough for the fleet's consequences to reach the Pearl and the souls taken in the theft.
+- **Why:** The fleet's commission is complete, but its captains remain bound to Delmar and the Pearl remains under [[Umberlee]]'s claim.
+- **Next move:** Use whichever captain surfaces under the next trigger to keep Delmar alive and advance the search for the Pearl.
+- **Needs:** Delmar's survival, a reliable lead to the Pearl, and the captains' memories of the shrine operation.
+- **Opposition:** [[Umberlee]]'s claim, [[The Drowned Maw]], and Delmar's fragmented control.
+- **Next signal:** Delmar's voice, posture, and priorities change into one captain's recognizable manner.
+- **Player opening:** The party can protect Delmar, question a surfaced captain, follow the wreck's trail, or refuse to let the captains dictate the next move.
+- **If completed:** The Pearl comes within reach, forcing a choice about the captains' souls and the souls held by the Pearl.
 
 ### Milestones
 
@@ -143,13 +134,10 @@ No independent secondary agenda is established for a dissolved fleet. Current co
 
 ### Chain of Action
 
-**Who decides:** [[delmar-fisk|Delmar Fisk]], unless a surfaced captain takes immediate control.
-
-**Who interprets those orders:** [[rael-corven|Rael Corven]] when command is needed; otherwise the surfaced captain interprets the danger through their specialty.
-
-**Who actually carries them out:** [[delmar-fisk|Delmar Fisk]]'s body, directed by whichever captain is surfaced.
-
-**If leadership disappears:** Delmar remains the host, but the captains lose shared operational direction and surface as separate reactions rather than a coordinated crew.
+- **Who decides:** [[delmar-fisk|Delmar Fisk]], unless a surfaced captain takes immediate control.
+- **Who interprets those orders:** [[rael-corven|Rael Corven]] when command is needed; otherwise the surfaced captain interprets the danger through their specialty.
+- **Who actually carries them out:** [[delmar-fisk|Delmar Fisk]]'s body, directed by whichever captain is surfaced.
+- **If leadership disappears:** Delmar remains the host, but the captains lose shared operational direction and surface as separate reactions rather than a coordinated crew.
 
 ---
 
@@ -175,15 +163,11 @@ No independent secondary agenda is established for a dissolved fleet. Current co
 
 ### Party
 
-**Standing:** Unknown
-
-**Why:** The party knows that Delmar commanded a five-ship fleet and stole the Pearl, but the captains' names and origin remain unrevealed.
-
-**They currently want from the party:** Protection for Delmar and help following the Pearl's trail.
-
-**They can currently offer the party:** Specific memories and operational expertise when a captain surfaces.
-
-**What would change their standing:** The party's treatment of Delmar, the Pearl, and the souls claimed by [[Umberlee]].
+- **Standing:** Unknown.
+- **Why:** The party knows that Delmar commanded a five-ship fleet and stole the Pearl, but the captains' names and origin remain unrevealed.
+- **They currently want from the party:** Protection for Delmar and help following the Pearl's trail.
+- **They can currently offer the party:** Specific memories and operational expertise when a captain surfaces.
+- **What would change their standing:** The party's treatment of Delmar, the Pearl, and the souls claimed by [[Umberlee]].
 
 ---
 
@@ -198,45 +182,16 @@ No independent secondary agenda is established for a dissolved fleet. Current co
 
 ## Running the Faction
 
-### When encountered
-
-The fleet is encountered through Delmar or through evidence at the wreck. A trigger can surface a captain whose expertise changes Delmar's immediate response.
-
-### When helped
-
-The surfaced captain provides a useful memory or skill, but the help exposes another piece of the theft and increases the party's obligation to keep Delmar alive.
-
-### When opposed
-
-The surfaced captain protects Delmar first, then responds through command, stealth, physical force, caution, or spectacle.
-
-### When ignored
-
-The fleet does not advance independently. Delmar continues carrying its consequences, and unresolved captain triggers surface at inconvenient moments.
-
-### When broken
-
-The fleet is already broken as a material faction. If Delmar dies or loses the Pearl's trail, resolve whether [[Umberlee]] reclaims the captains, the Pearl releases their crews, or the punishment changes form.
+| Situation | Run it |
+| --- | --- |
+| **When encountered** | Encounter the fleet through Delmar or evidence at the wreck. A trigger can surface a captain whose expertise changes Delmar's immediate response. |
+| **When helped** | Let the surfaced captain provide a useful memory or skill, while exposing another piece of the theft and increasing the party's obligation to keep Delmar alive. |
+| **When opposed** | Have the surfaced captain protect Delmar first, then respond through command, stealth, physical force, caution, or spectacle. |
+| **When ignored** | Keep the fleet from advancing independently; unresolved captain triggers surface through Delmar at inconvenient moments. |
+| **When broken** | The fleet is already broken materially. If Delmar dies or loses the Pearl's trail, resolve whether [[Umberlee]] reclaims the captains, the Pearl releases their crews, or the punishment changes form. |
 
 ---
 
-## Faction Turn
-
-### Current Turn
-
-* **Want:** No independent fleet action remains; the surviving consequence is Delmar's continued survival.
-* **Move:** A captain surfaces when a trigger meets the next immediate danger.
-* **Mark:** Delmar's next decision is colored by one captain's memory and temperament.
-* **Signal:** The captain's voice and trigger-specific behavior become visible to the party.
-* **Collision:** The consequence intersects with [[Umberlee]]'s claim, the Drowned Maw, and Delmar's need to maintain control.
-* **Player opening:** The party can protect Delmar, exploit the surfaced expertise, or refuse to let the captains dictate the next step.
-
-### Turn Log
-
-| Date / session | Move | Result / changed fact | Ripple | Signal | Cause |
-| --- | --- | --- | --- | --- | --- |
-
----
 
 ## History
 
@@ -252,16 +207,3 @@ The fleet is already broken as a material faction. If Delmar dies or loses the P
 
 **Concealed allegiance:** The five captains are separate souls bound into Delmar as punishment and leverage, while the Pearl holds the souls of their crews.
 
-<!-- Omit when unused. -->
-
----
-
-## After a Major Change
-
-* [ ] Update **Current State** to the new status quo.
-* [ ] Replace the completed, abandoned, or invalid agenda.
-* [ ] Update assets if Delmar, the brass flagon, or the Pearl changes hands.
-* [ ] Update affected [[delmar-fisk\|Delmar Fisk]], [[pearl-of-souls\|Pearl of Souls]], and [[The Drowned Maw]] pages.
-* [ ] Update relationships altered by the event.
-* [ ] Add the changed fact to the **Faction Turn Log**.
-* [ ] Put at least one consequence or signal where the party can encounter it.

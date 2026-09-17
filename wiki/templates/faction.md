@@ -82,7 +82,7 @@ flexGrow=1
 
 **Why:** Why this result matters to them now.
 
-**Clock:** ○ ○ ○ ○ ○ ○
+<!-- Add a filled 4- or 6-segment clock only for an active, trackable agenda; omit for dormant or dissolved factions. -->
 
 **Next move:** The specific thing they are preparing or attempting next.
 
@@ -199,33 +199,22 @@ flexGrow=1
 
 ## Running the Faction
 
-### When encountered
-
-Describe what members are doing **right now** in pursuit of a recognizable interest.
-
-### When helped
-
-What becomes easier for the faction, what they offer in return, and what obligation or expectation follows.
-
-### When opposed
-
-What resource they protect first, who responds, and whether they retaliate, negotiate, retreat, conceal, or redirect the agenda.
-
-### When ignored
-
-Advance the fiction only as far as the faction's capabilities, circumstances, and elapsed time support. Show the resulting change through a signal.
-
-### When broken
-
-What survives if the faction loses its leader, headquarters, key asset, legitimacy, or primary goal. Decide whether it collapses, fragments, retreats, reforms, or creates successor factions.
+| Situation | Run it |
+| --- | --- |
+| **When encountered** | What members are doing right now in pursuit of a recognizable interest. |
+| **When helped** | What becomes easier, what they offer in return, and what obligation follows. |
+| **When opposed** | What resource they protect first and whether they retaliate, negotiate, retreat, conceal, or redirect. |
+| **When ignored** | How the faction advances within its capabilities and how the resulting change reaches play. |
+| **When broken** | What survives if the faction loses its leader, base, key asset, legitimacy, or primary goal. |
 
 ---
 
 ## Faction Turn
 
-<!-- Run turns only while this faction can affect current play. Resolve the next situation, not a predetermined story: identify what it wants now, choose one plausible move, determine what actually changes, surface a signal, and preserve an opening for player action. Update linked NPCs, places, assets, and rival factions when the result changes their status quo. -->
+<!-- Omit this entire section for dormant or dissolved factions, or when the faction has no independent effect on current play. -->
 
 ### Current Turn
+<!-- Omit Current Turn with the parent section when the faction is dormant, dissolved, or has no independent effect on current play. -->
 
 * **Want:** The specific result they want before the next meaningful campaign interval.
 * **Move:** What they attempt with the resources currently available.
@@ -264,17 +253,5 @@ What survives if the faction loses its leader, headquarters, key asset, legitima
 
 ---
 
-## After a Major Change
-
-<!-- Use this as a maintenance checklist, then clear it. -->
-
-* [ ] Update **Current State** to the new status quo.
-* [ ] Replace completed, abandoned, or invalid agendas.
-* [ ] Update assets that moved, changed hands, were spent, or were destroyed.
-* [ ] Update affected [[npc]] and [[place]] pages.
-* [ ] Update relationships altered by the event.
-* [ ] Add the changed fact to the **Faction Turn Log**.
-* [ ] Put at least one consequence or signal where the party can encounter it.
-* [ ] Archive dead detail instead of carrying obsolete plans forward.
 
 <!-- Research basis: evolving-campaign status documents emphasize recording changed state rather than repeatedly rewriting original material. Faction/front techniques emphasize concrete motives, advancing threats, visible portents, and consequences if unchecked. Faction clocks track long-term goals while allowing PC actions to accelerate, interfere with, or redirect them. Sandbox faction turns use goals, relevant assets, actions, and changed world state to create off-screen motion. Vault structure follows the established entity metadata, DM visibility, wikilinking, narration, and omit-if-unused conventions. -->
