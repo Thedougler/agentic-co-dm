@@ -178,7 +178,7 @@ When the DM makes a correction that addresses a recurring agent failure, the sys
 - What happens when two rules conflict (e.g., STYLE012 "be concise" vs. SCENE008 "establish environmental context")? The engine detects the conflict and surfaces it as LINT-CONFLICT with precedence guidance; the agent chooses based on scene purpose.
 - What happens when a rule's evaluator is unavailable (e.g., LLM judge during CI without API access)? The rule is skipped with a recorded `evaluator_unavailable` status; it does not silently pass.
 - What happens when the initial rule set is incomplete and a violation type has no rule? The violation goes undetected. The error-ledger convergence (Story 10) provides the path to close the gap.
-- What happens when a repair introduces a new violation? The re-lint loop detects it. The repair loop has a configurable maximum iteration count to prevent infinite repair cycles.
+- What happens when a repair introduces a new violation? The re-lint loop detects it. The repair loop has a maximum of 3 iterations by default (configurable). If not converged after 3 passes, the agent surfaces remaining findings for DM review rather than continuing.
 - What happens when portfolio-level diversity diagnostics flag a pattern across sessions? The INFO finding surfaces the pattern for the next session's design without requiring retroactive changes to existing content.
 
 ## Requirements *(mandatory)*
@@ -201,6 +201,8 @@ When the DM makes a correction that addresses a recurring agent failure, the sys
 - **FR-014**: The initial rule set MUST cover six families: wiki/structural, canon/world-state, temporal/knowledge, player agency, retrieval/context, and creative diagnostics
 - **FR-015**: The linter MUST integrate with `wiki-maintain` as a corpus-level consumer using the same rule implementations as live agent operation
 - **FR-016**: BLOCK severity MUST correlate only with truth, safety, agency, schema, or deterministic process — not subjective taste
+- **FR-017**: Static and structural lint rules MUST use off-the-shelf linting tools (Vale for prose patterns, markdownlint-cli2 for markdown structure) rather than custom regex engines. Custom Python evaluators are permitted only for cross-page symbolic checks that no off-the-shelf tool supports.
+- **FR-018**: All lint tool configurations MUST be agent-readable and agent-writable (YAML/JSON/INI files, not programmatic). Agents MUST be able to inspect and modify rule definitions, bundle configurations, and waivers through standard file operations.
 
 ### Key Entities
 
@@ -233,3 +235,13 @@ When the DM makes a correction that addresses a recurring agent failure, the sys
 - Rule definitions live in repository-owned YAML files, not in agent prompts or skill instructions
 - The DM remains the authority over canon and taste — the linter surfaces findings but does not autonomously redefine either
 - Portfolio-level diversity diagnostics (DIVERSITY*) operate at INFO severity and inform future design without requiring retroactive changes
+- Off-the-shelf linting tools are preferred over custom implementations wherever feasible. Vale handles prose-pattern rules; markdownlint-cli2 handles structural markdown rules. Together they subsume the custom Python lint scripts (`lint-obsidian-markdown`, `lint-literal-newlines`). Custom Python evaluators are reserved for cross-page symbolic checks that no off-the-shelf tool supports.
+- Existing custom lint scripts (`scripts/lint-obsidian-markdown`, `scripts/lint-literal-newlines`, `scripts/lint-wiki-write`) are ported to Vale/markdownlint rules with passing fixtures, then deprecated and removed. They remain functional until the port is complete.
+
+## Clarifications
+
+### Session 2026-09-17
+
+- Q: Which additional off-the-shelf linters beyond Vale should we integrate? → A: Install markdownlint-cli2 for structural markdown rules (heading levels, lists, code fences). Vale handles prose patterns. Together they subsume `lint-obsidian-markdown` and `lint-literal-newlines`.
+- Q: Should existing custom Python lint scripts be deprecated once ported to Vale/markdownlint? → A: Port then deprecate. Existing scripts stay until all checks ported with passing fixtures, then removed.
+- Q: Should the repair loop have a maximum iteration limit, and if so, what default? → A: 3 iterations max (configurable). Unconverged findings surface for DM review.
