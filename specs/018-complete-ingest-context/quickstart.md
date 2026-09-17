@@ -5,7 +5,7 @@
 From the repository root, after implement lands the skill change and fixture check:
 
 ```bash
-python --version
+python3 --version
 .venv/bin/python specs/018-complete-ingest-context/fixtures/check.py
 ```
 

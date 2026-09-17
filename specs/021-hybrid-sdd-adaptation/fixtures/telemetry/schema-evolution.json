@@ -1,0 +1,14 @@
+[
+  {
+    "schema_version": 1, "trace_id": "trace-additive-001", "policy_version": "1.0", "job": "route-check", "sitting_class": "prep", "work_status": "produced", "measurement_status": "complete", "model_family": "model-a", "tokenizer_family": "native-a", "encoding": "encoding-a", "additive_note": "reader-defaults-allowed",
+    "trajectory": {"request": 1, "loaded_context": 1, "retrieval": 0, "tools": 0, "failures": 0, "retries": 0, "model_input": 2, "model_output": 1, "final_work": 1}, "retrieval": {"queries": 0, "fetches": 0, "tokens": 0, "attempted_collections": [], "fallbacks": [], "useful": 0, "unused": 0}, "source_components": [{"owner": "user-request", "tokens": 1, "secondary_provenance": []}], "quality": {"hard_gate_failures": 0, "semantic_non_inferior": true, "dm_acceptance": "not-required", "dm_revisions": 0, "runtime_failures": 0}
+  },
+  {
+    "schema_version": 99, "trace_id": "trace-incompatible-001", "policy_version": "1.0", "job": "route-check", "sitting_class": "prep", "work_status": "produced", "measurement_status": "complete", "model_family": "model-a", "tokenizer_family": "native-a", "encoding": "encoding-a", "expected_error": "incompatible schema_version", "expected_quarantine": true,
+    "trajectory": {"request": 1, "loaded_context": 1, "retrieval": 0, "tools": 0, "failures": 0, "retries": 0, "model_input": 2, "model_output": 1, "final_work": 1}, "retrieval": {"queries": 0, "fetches": 0, "tokens": 0, "attempted_collections": [], "fallbacks": [], "useful": 0, "unused": 0}, "source_components": [{"owner": "user-request", "tokens": 1, "secondary_provenance": []}], "quality": {"hard_gate_failures": 0, "semantic_non_inferior": true, "dm_acceptance": "not-required", "dm_revisions": 0, "runtime_failures": 0}
+  },
+  {
+    "schema_version": 1, "trace_id": "trace-duplicate-owner-001", "policy_version": "1.0", "job": "route-check", "sitting_class": "prep", "work_status": "produced", "measurement_status": "complete", "model_family": "model-a", "tokenizer_family": "native-a", "encoding": "encoding-a", "expected_error": "duplicate primary source owner",
+    "trajectory": {"request": 1, "loaded_context": 1, "retrieval": 0, "tools": 0, "failures": 0, "retries": 0, "model_input": 2, "model_output": 1, "final_work": 1}, "retrieval": {"queries": 0, "fetches": 0, "tokens": 0, "attempted_collections": [], "fallbacks": [], "useful": 0, "unused": 0}, "source_components": [{"owner": "user-request", "tokens": 1, "secondary_provenance": []}, {"owner": "user-request", "tokens": 1, "secondary_provenance": []}], "quality": {"hard_gate_failures": 0, "semantic_non_inferior": true, "dm_acceptance": "not-required", "dm_revisions": 0, "runtime_failures": 0}
+  }
+]

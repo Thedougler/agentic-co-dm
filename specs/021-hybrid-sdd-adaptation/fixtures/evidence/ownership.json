@@ -1,0 +1,228 @@
+[
+  {
+    "evidence_id": "ownership-existing-title",
+    "kind": "ownership",
+    "status": "complete",
+    "mechanism": "existing-title",
+    "identity_mechanism": "existing-title",
+    "candidate": {
+      "kind": "faction",
+      "title": "Owner Alpha"
+    },
+    "owner_artifact": {
+      "kind": "faction",
+      "title": "Owner Alpha",
+      "path": "wiki/factions/owner-alpha.md",
+      "wikilink": "[[Owner Alpha]]"
+    },
+    "evidence": {
+      "path": "wiki/factions/owner-alpha.md",
+      "result": "exact title match"
+    },
+    "evidence_path": "wiki/factions/owner-alpha.md",
+    "evidence_result": "exact title match",
+    "equivalent": true,
+    "owner_resolution": "reuse",
+    "opaque_ids_used": false
+  },
+  {
+    "evidence_id": "ownership-alias",
+    "kind": "ownership",
+    "status": "complete",
+    "mechanism": "alias",
+    "identity_mechanism": "alias",
+    "candidate": {
+      "kind": "faction",
+      "alias": "Alpha"
+    },
+    "owner_artifact": {
+      "kind": "faction",
+      "title": "Owner Alpha",
+      "path": "wiki/factions/owner-alpha.md",
+      "wikilink": "[[Owner Alpha]]"
+    },
+    "evidence": {
+      "path": "wiki/factions/owner-alpha.md",
+      "result": "frontmatter alias Alpha resolves to Owner Alpha"
+    },
+    "evidence_path": "wiki/factions/owner-alpha.md",
+    "evidence_result": "frontmatter alias Alpha resolves to Owner Alpha",
+    "equivalent": true,
+    "owner_resolution": "reuse",
+    "opaque_ids_used": false
+  },
+  {
+    "evidence_id": "ownership-stem",
+    "kind": "ownership",
+    "status": "complete",
+    "mechanism": "stem",
+    "identity_mechanism": "stem",
+    "candidate": {
+      "kind": "faction",
+      "stem": "owner-alpha"
+    },
+    "owner_artifact": {
+      "kind": "faction",
+      "title": "Owner Alpha",
+      "path": "wiki/factions/owner-alpha.md",
+      "wikilink": "[[Owner Alpha]]"
+    },
+    "evidence": {
+      "path": "wiki/factions/owner-alpha.md",
+      "result": "normalized filename stem owner-alpha resolves to Owner Alpha"
+    },
+    "evidence_path": "wiki/factions/owner-alpha.md",
+    "evidence_result": "normalized filename stem owner-alpha resolves to Owner Alpha",
+    "equivalent": true,
+    "owner_resolution": "reuse",
+    "opaque_ids_used": false
+  },
+  {
+    "evidence_id": "ownership-deterministic-path",
+    "kind": "ownership",
+    "status": "complete",
+    "mechanism": "deterministic-path",
+    "identity_mechanism": "deterministic-path",
+    "candidate": {
+      "kind": "faction",
+      "path": "wiki/factions/owner-alpha.md"
+    },
+    "owner_artifact": {
+      "kind": "faction",
+      "title": "Owner Alpha",
+      "path": "wiki/factions/owner-alpha.md",
+      "wikilink": "[[Owner Alpha]]"
+    },
+    "evidence": {
+      "path": "wiki/factions/owner-alpha.md",
+      "result": "repository kind and deterministic path match"
+    },
+    "evidence_path": "wiki/factions/owner-alpha.md",
+    "evidence_result": "repository kind and deterministic path match",
+    "equivalent": true,
+    "owner_resolution": "reuse",
+    "opaque_ids_used": false
+  },
+  {
+    "evidence_id": "ownership-wikilink",
+    "kind": "ownership",
+    "status": "complete",
+    "mechanism": "wikilink",
+    "identity_mechanism": "wikilink",
+    "candidate": {
+      "kind": "faction",
+      "wikilink": "[[Owner Alpha]]"
+    },
+    "owner_artifact": {
+      "kind": "faction",
+      "title": "Owner Alpha",
+      "path": "wiki/factions/owner-alpha.md",
+      "wikilink": "[[Owner Alpha]]"
+    },
+    "evidence": {
+      "path": "wiki/factions/owner-alpha.md",
+      "result": "wikilink target resolves to Owner Alpha"
+    },
+    "evidence_path": "wiki/factions/owner-alpha.md",
+    "evidence_result": "wikilink target resolves to Owner Alpha",
+    "equivalent": true,
+    "owner_resolution": "reuse",
+    "opaque_ids_used": false
+  },
+  {
+    "evidence_id": "ownership-manifest",
+    "kind": "ownership",
+    "status": "complete",
+    "mechanism": "manifest",
+    "identity_mechanism": "manifest",
+    "candidate": {
+      "kind": "faction",
+      "title": "Owner Alpha"
+    },
+    "owner_artifact": {
+      "kind": "faction",
+      "title": "Owner Alpha",
+      "path": "wiki/factions/owner-alpha.md",
+      "wikilink": "[[Owner Alpha]]"
+    },
+    "evidence": {
+      "path": ".manifest.json",
+      "result": "manifest entry points to wiki/factions/owner-alpha.md"
+    },
+    "evidence_path": ".manifest.json",
+    "evidence_result": "manifest entry points to wiki/factions/owner-alpha.md",
+    "equivalent": true,
+    "owner_resolution": "reuse",
+    "opaque_ids_used": false
+  },
+  {
+    "evidence_id": "ownership-qmd-result",
+    "kind": "ownership",
+    "status": "complete",
+    "mechanism": "qmd-result",
+    "identity_mechanism": "qmd-result",
+    "candidate": {
+      "kind": "faction",
+      "query": "Owner Alpha"
+    },
+    "owner_artifact": {
+      "kind": "faction",
+      "title": "Owner Alpha",
+      "path": "wiki/factions/owner-alpha.md",
+      "wikilink": "[[Owner Alpha]]"
+    },
+    "evidence": {
+      "path": "qmd://wiki",
+      "result": "search result source wiki/factions/owner-alpha.md"
+    },
+    "evidence_path": "qmd://wiki",
+    "evidence_result": "search result source wiki/factions/owner-alpha.md",
+    "equivalent": true,
+    "owner_resolution": "reuse",
+    "opaque_ids_used": false
+  },
+  {
+    "evidence_id": "ownership-uncertain-collision",
+    "kind": "ownership",
+    "status": "complete",
+    "mechanism": "uncertain-collision",
+    "identity_mechanism": "uncertain-collision",
+    "candidate": {
+      "kind": "faction",
+      "title": "Owner Alpha"
+    },
+    "owner_candidates": [
+      {
+        "kind": "faction",
+        "title": "Owner Alpha",
+        "path": "wiki/factions/owner-alpha.md"
+      },
+      {
+        "kind": "faction",
+        "title": "Owner Alpha Legacy",
+        "path": "wiki/factions/owner-alpha-legacy.md"
+      }
+    ],
+    "evidence": [
+      {
+        "path": "wiki/factions/owner-alpha.md",
+        "result": "title and stem candidate"
+      },
+      {
+        "path": "wiki/factions/owner-alpha-legacy.md",
+        "result": "alias candidate; equivalence unresolved"
+      }
+    ],
+    "evidence_path": [
+      "wiki/factions/owner-alpha.md",
+      "wiki/factions/owner-alpha-legacy.md"
+    ],
+    "evidence_result": "multiple owner candidates require explicit distinction",
+    "equivalent": false,
+    "uncertain_collision": true,
+    "owner_resolution": "report-collision",
+    "collision_reported": true,
+    "new_owner_allowed": false,
+    "opaque_ids_used": false
+  }
+]

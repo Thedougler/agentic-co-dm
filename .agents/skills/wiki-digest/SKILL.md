@@ -206,7 +206,7 @@ Either way, append to `log.md`:
 
 ## QMD Refresh After Vault Writes
 
-QMD is a search index, not the source of truth. If `$QMD_WIKI_COLLECTION` is empty or unset, skip this step. Run it only after this skill has written or rewritten vault markdown. If QMD refresh fails, do not roll back the vault changes; report the QMD status separately.
+QMD is a search index, not the source of truth. The default collection is `wiki` when `$QMD_WIKI_COLLECTION` is empty or unset. Run it only after this skill has written or rewritten vault markdown. If QMD refresh fails, do not roll back the vault changes; report the QMD status separately.
 
 Use `$QMD_CLI` if set; otherwise use `qmd`.
 
@@ -214,27 +214,22 @@ Use `$QMD_CLI` if set; otherwise use `qmd`.
 ${QMD_CLI:-qmd} update
 ```
 
-If the output says vectors are needed or embeddings may be stale, run:
-
-```bash
-${QMD_CLI:-qmd} embed
-```
+If the output reports pending vectors, routine maintenance is still complete.
+Use `scripts/qmd-maintain.sh --embed` only when an explicit foreground
+embedding pass is requested.
 
 Verify the collection with either:
 
 ```bash
-${QMD_CLI:-qmd} ls "$QMD_WIKI_COLLECTION"
+${QMD_CLI:-qmd} ls "${QMD_WIKI_COLLECTION:-wiki}"
 ```
 
-or, when a specific page path is known:
-
-```bash
-${QMD_CLI:-qmd} get "qmd://$QMD_WIKI_COLLECTION/<page>.md" -l 5
-```
+For a specific page, follow the exact QMD retrieval rule in
+`.agents/skills/llm-wiki/SKILL.md`: search first, then pass the returned docid
+or source verbatim to `qmd get` / `qmd multi-get`.
 
 Record one of:
-- `QMD refreshed: update + embed + verified`
+- `QMD refreshed: update + verified; embeddings pending: N`
 - `QMD refreshed: update only + verified`
-- `QMD skipped: QMD_WIKI_COLLECTION unset`
 - `QMD skipped: qmd CLI unavailable`
 - `QMD failed: <short error summary>`

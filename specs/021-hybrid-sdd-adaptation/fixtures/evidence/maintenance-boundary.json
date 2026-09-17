@@ -1,0 +1,294 @@
+[
+  {
+    "evidence_id": "maintenance-lint",
+    "kind": "maintenance",
+    "work_class": "engineering",
+    "route": "full-sdd",
+    "status": "complete",
+    "maintenance_action": "lint",
+    "action": "lint",
+    "deterministic": true,
+    "risk_class": "low",
+    "approval": "unattended",
+    "owner_resolution": "reuse",
+    "owner_artifacts": [
+      {
+        "kind": "repository-check",
+        "path": "scripts/hybrid-sdd-check.py",
+        "role": "maintenance-owner"
+      }
+    ],
+    "provenance": [
+      {
+        "source_kind": "repository-check",
+        "path": "scripts/hybrid-sdd-check.py",
+        "authority": "repository",
+        "status": "current"
+      }
+    ],
+    "current_truth": [],
+    "affected_truth": [],
+    "proposal": [],
+    "reveal": "revealed",
+    "visibility": "dm",
+    "acceptance": "not-required",
+    "dm_acceptance": "not-required",
+    "canon_state": "unchanged",
+    "writes_fact": false,
+    "filing": "not-filed"
+  },
+  {
+    "evidence_id": "maintenance-manifest-update",
+    "kind": "maintenance",
+    "work_class": "engineering",
+    "route": "full-sdd",
+    "status": "complete",
+    "maintenance_action": "manifest-update",
+    "action": "manifest-update",
+    "deterministic": true,
+    "risk_class": "low",
+    "approval": "unattended",
+    "owner_resolution": "reuse",
+    "owner_artifacts": [
+      {
+        "kind": "manifest",
+        "path": "wiki/.manifest.json",
+        "role": "maintenance-owner"
+      }
+    ],
+    "provenance": [
+      {
+        "source_kind": "manifest",
+        "path": "wiki/.manifest.json",
+        "authority": "repository",
+        "status": "current"
+      }
+    ],
+    "current_truth": [],
+    "affected_truth": [],
+    "proposal": [],
+    "reveal": "revealed",
+    "visibility": "dm",
+    "acceptance": "not-required",
+    "dm_acceptance": "not-required",
+    "canon_state": "unchanged",
+    "writes_fact": false,
+    "filing": "not-filed"
+  },
+  {
+    "evidence_id": "maintenance-retrieval-refresh",
+    "kind": "maintenance",
+    "work_class": "engineering",
+    "route": "full-sdd",
+    "status": "complete",
+    "maintenance_action": "retrieval-refresh",
+    "action": "retrieval-refresh",
+    "deterministic": true,
+    "risk_class": "low",
+    "approval": "unattended",
+    "owner_resolution": "reuse",
+    "owner_artifacts": [
+      {
+        "kind": "retrieval-index",
+        "path": "wiki/.qmd/index",
+        "role": "maintenance-owner"
+      }
+    ],
+    "provenance": [
+      {
+        "source_kind": "retrieval-index",
+        "path": "wiki/.qmd/index",
+        "authority": "repository",
+        "status": "current"
+      }
+    ],
+    "current_truth": [],
+    "affected_truth": [],
+    "proposal": [],
+    "reveal": "revealed",
+    "visibility": "dm",
+    "acceptance": "not-required",
+    "dm_acceptance": "not-required",
+    "canon_state": "unchanged",
+    "writes_fact": false,
+    "filing": "not-filed"
+  },
+  {
+    "evidence_id": "maintenance-link-repair",
+    "kind": "maintenance",
+    "work_class": "engineering",
+    "route": "full-sdd",
+    "status": "complete",
+    "maintenance_action": "link-repair",
+    "action": "link-repair",
+    "deterministic": true,
+    "risk_class": "low",
+    "approval": "unattended",
+    "owner_resolution": "reuse",
+    "owner_artifacts": [
+      {
+        "kind": "link-index",
+        "path": "wiki/",
+        "role": "maintenance-owner"
+      }
+    ],
+    "provenance": [
+      {
+        "source_kind": "link-check",
+        "path": "wiki/",
+        "authority": "repository",
+        "status": "current"
+      }
+    ],
+    "current_truth": [],
+    "affected_truth": [],
+    "proposal": [],
+    "reveal": "revealed",
+    "visibility": "dm",
+    "acceptance": "not-required",
+    "dm_acceptance": "not-required",
+    "canon_state": "unchanged",
+    "writes_fact": false,
+    "filing": "not-filed"
+  },
+  {
+    "evidence_id": "maintenance-fact-change-pending",
+    "kind": "maintenance",
+    "work_class": "campaign-architecture",
+    "route": "full-sdd",
+    "status": "complete",
+    "maintenance_action": "fact-change-proposal",
+    "action": "fact-change-proposal",
+    "deterministic": true,
+    "risk_class": "high",
+    "approval": "dm-required",
+    "owner_resolution": "reuse",
+    "owner_artifacts": [
+      {
+        "kind": "work-record",
+        "path": "work/pending-maintenance-change.md",
+        "role": "dm-review-surface"
+      }
+    ],
+    "provenance": [
+      {
+        "source_kind": "work-record",
+        "path": "work/pending-maintenance-change.md",
+        "authority": "proposed",
+        "status": "under-review"
+      }
+    ],
+    "current_truth": [],
+    "affected_truth": [
+      {
+        "fact": "campaign-state",
+        "status": "potential-change",
+        "source": "work-record"
+      }
+    ],
+    "proposal": {
+      "kind": "fact-change",
+      "status": "proposal",
+      "condition": "dm_acceptance_pending"
+    },
+    "reveal": "unrevealed",
+    "visibility": "dm",
+    "acceptance": "pending",
+    "dm_acceptance": "pending",
+    "canon_state": "proposal",
+    "writes_fact": false,
+    "filing": "staged"
+  },
+  {
+    "evidence_id": "maintenance-fact-change-rejected",
+    "kind": "maintenance",
+    "work_class": "campaign-architecture",
+    "route": "full-sdd",
+    "status": "complete",
+    "maintenance_action": "fact-change-proposal",
+    "action": "fact-change-proposal",
+    "deterministic": true,
+    "risk_class": "high",
+    "approval": "dm-required",
+    "owner_resolution": "reuse",
+    "owner_artifacts": [
+      {
+        "kind": "work-record",
+        "path": "work/rejected-maintenance-change.md",
+        "role": "dm-review-surface"
+      }
+    ],
+    "provenance": [
+      {
+        "source_kind": "work-record",
+        "path": "work/rejected-maintenance-change.md",
+        "authority": "proposed",
+        "status": "rejected"
+      }
+    ],
+    "current_truth": [],
+    "affected_truth": [],
+    "proposal": {
+      "kind": "fact-change",
+      "status": "rejected",
+      "condition": "dm_rejection"
+    },
+    "reveal": "unrevealed",
+    "visibility": "dm",
+    "acceptance": "rejected",
+    "dm_acceptance": "rejected",
+    "canon_state": "proposal",
+    "writes_fact": false,
+    "filing": "not-filed"
+  },
+  {
+    "evidence_id": "maintenance-accept-before-write",
+    "kind": "maintenance",
+    "work_class": "campaign-architecture",
+    "route": "full-sdd",
+    "status": "complete",
+    "maintenance_action": "fact-change-write",
+    "action": "fact-change-write",
+    "deterministic": true,
+    "risk_class": "high",
+    "approval": "dm-required",
+    "owner_resolution": "reuse",
+    "owner_artifacts": [
+      {
+        "kind": "owner-page",
+        "path": "wiki/entities/owner.md",
+        "role": "canonical-owner"
+      }
+    ],
+    "provenance": [
+      {
+        "source_kind": "owner-page",
+        "path": "wiki/entities/owner.md",
+        "authority": "accepted",
+        "status": "current"
+      }
+    ],
+    "current_truth": [],
+    "affected_truth": [
+      {
+        "fact": "accepted-state",
+        "status": "would-change",
+        "source": "unaccepted-work"
+      }
+    ],
+    "proposal": {
+      "kind": "fact-change",
+      "status": "proposal",
+      "condition": "dm_acceptance_pending"
+    },
+    "reveal": "unrevealed",
+    "visibility": "dm",
+    "acceptance": "pending",
+    "dm_acceptance": "pending",
+    "canon_state": "proposal",
+    "writes_fact": true,
+    "filing": "staged",
+    "expected_failure": true,
+    "expected_error": "accept-before-write violation"
+  }
+]

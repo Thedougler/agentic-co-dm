@@ -33,7 +33,7 @@ If the user's message contains a new finding, an action request ("save this", "b
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). For cross-project queries without `@name`, prefer `~/.obsidian-wiki/config` when present, even if it is a symlink to the vault `.env`. This gives `OBSIDIAN_VAULT_PATH` and any QMD variables. Works from any project directory.
-2. **Load QMD settings from the resolved config** before deciding retrieval strategy. If `QMD_WIKI_COLLECTION` is set, treat QMD as available subject only to transport/tool checks below. If it is empty or unset, say briefly why QMD is being skipped before using grep/page reads.
+2. **Load QMD settings from the resolved config** before deciding retrieval strategy. Use `wiki` when `QMD_WIKI_COLLECTION` is empty or unset, and treat QMD as available subject to the transport/tool checks below.
 3. If `$OBSIDIAN_VAULT_PATH/hot.md` exists, read it first — it gives you instant context on recent activity. If the user's question is about something ingested recently, hot.md may answer it before you even open `index.md`.
 4. Read `$OBSIDIAN_VAULT_PATH/index.md` to understand the wiki's scope and structure
 
@@ -114,13 +114,13 @@ Build a candidate set *without opening any page bodies*:
 
 If you're in **index-only mode**, stop here. Answer from `summary:` fields, titles, and `index.md` descriptions only. Label the answer clearly: **"(index-only answer — page bodies not read; facts below are from page summaries and may miss nuance)"**. Then skip to Step 5.
 
-### Step 2b: QMD Semantic Pass (optional — requires `QMD_WIKI_COLLECTION` in resolved config)
+### Step 2b: QMD Semantic Pass (optional — defaults to `wiki`)
 
-**GUARD: If `$QMD_WIKI_COLLECTION` is empty or unset after config resolution, skip this entire step and proceed to Step 3. Mention the missing variable in your working update.**
+Use collection `wiki` when `$QMD_WIKI_COLLECTION` is empty or unset after config resolution. Skip this step only when the selected QMD transport or CLI is unavailable, then proceed to Step 3.
 
 > **No QMD?** Skip to Step 3 and use `Grep` directly on the vault. QMD is faster and concept-aware but the grep path is fully functional. See `.env.example` for setup.
 
-If `QMD_WIKI_COLLECTION` is set, run QMD before reaching for `Grep` unless the question is already fully answered by `hot.md` or `index.md` metadata. QMD is especially preferred when the question is semantic, project-specific, asks for related context, or uses terms that may not appear verbatim in titles/frontmatter.
+Run QMD before reaching for `Grep` unless the question is already fully answered by `hot.md` or `index.md` metadata. QMD is especially preferred when the question is semantic, project-specific, asks for related context, or uses terms that may not appear verbatim in titles/frontmatter.
 
 Choose the QMD transport from `$QMD_TRANSPORT`:
 
@@ -136,7 +136,7 @@ For MCP transport:
 
 ```
 mcp__qmd__query:
-  collection: <QMD_WIKI_COLLECTION>   # e.g. "knowledge-base-wiki"
+  collection: <QMD_WIKI_COLLECTION or wiki>   # e.g. "knowledge-base-wiki"
   intent: <the user's question>
   searches:
     - type: lex    # keyword match — good for exact names, file paths, error messages
@@ -151,15 +151,15 @@ Keep operator-like or punctuation-heavy tokens such as `no-sudo`, `ansible_becom
 
 - `quality` (default): best relevance; slower on CPU.
   ```bash
-  ${QMD_CLI:-qmd} query $'lex: <key terms>\nvec: <question rephrased as a description>' -c "$QMD_WIKI_COLLECTION" -n 8 --files
+  ${QMD_CLI:-qmd} query $'lex: <key terms>\nvec: <question rephrased as a description>' -c "${QMD_WIKI_COLLECTION:-wiki}" -n 8 --files
   ```
 - `balanced`: hybrid search without LLM reranking; use when `quality` is too slow.
   ```bash
-  ${QMD_CLI:-qmd} query $'lex: <key terms>\nvec: <question rephrased as a description>' -c "$QMD_WIKI_COLLECTION" -n 8 --no-rerank --files
+  ${QMD_CLI:-qmd} query $'lex: <key terms>\nvec: <question rephrased as a description>' -c "${QMD_WIKI_COLLECTION:-wiki}" -n 8 --no-rerank --files
   ```
 - `fast`: semantic-only recall, or `search` instead when exact names, file paths, or error messages matter.
   ```bash
-  ${QMD_CLI:-qmd} vsearch "<question rephrased as a description>" -c "$QMD_WIKI_COLLECTION" -n 8 --files
+  ${QMD_CLI:-qmd} vsearch "<question rephrased as a description>" -c "${QMD_WIKI_COLLECTION:-wiki}" -n 8 --files
   ```
 
 Use `${QMD_CLI:-qmd} get "#docid"` to retrieve a ranked document by docid when CLI output provides one.

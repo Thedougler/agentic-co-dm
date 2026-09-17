@@ -1,0 +1,145 @@
+[
+  {
+    "evidence_id": "topology-parallel-disjoint",
+    "kind": "topology",
+    "work_class": "creative-system",
+    "route": "full-sdd",
+    "status": "complete",
+    "nodes": [
+      {
+        "id": "grounding",
+        "artifact": "specs/021-hybrid-sdd-adaptation/context.md",
+        "owner": "context-writer",
+        "depends_on": [],
+        "wave": "serial",
+        "evidence": "authoritative context recorded"
+      },
+      {
+        "id": "owner-resolution",
+        "artifact": "specs/021-hybrid-sdd-adaptation/owners.md",
+        "owner": "ownership-writer",
+        "depends_on": ["grounding"],
+        "wave": "serial",
+        "evidence": "canonical owners resolved"
+      },
+      {
+        "id": "rules-system",
+        "artifact": "specs/021-hybrid-sdd-adaptation/rules.md",
+        "owner": "rules-writer",
+        "depends_on": ["owner-resolution"],
+        "wave": "parallel-1",
+        "evidence": "system rules verified"
+      },
+      {
+        "id": "relationships-agendas",
+        "artifact": "specs/021-hybrid-sdd-adaptation/relationships.md",
+        "owner": "relationships-writer",
+        "depends_on": ["owner-resolution"],
+        "wave": "parallel-1",
+        "evidence": "relationships and agendas verified"
+      },
+      {
+        "id": "playable-situations",
+        "artifact": "specs/021-hybrid-sdd-adaptation/situations.md",
+        "owner": "situations-writer",
+        "depends_on": ["rules-system", "relationships-agendas"],
+        "wave": "serial",
+        "evidence": "playable situations verified"
+      },
+      {
+        "id": "dm-presentation",
+        "artifact": "specs/021-hybrid-sdd-adaptation/presentation.md",
+        "owner": "presentation-writer",
+        "depends_on": ["playable-situations"],
+        "wave": "parallel-2",
+        "evidence": "DM presentation verified"
+      },
+      {
+        "id": "continuity-review",
+        "artifact": "specs/021-hybrid-sdd-adaptation/continuity.md",
+        "owner": "continuity-writer",
+        "depends_on": ["playable-situations"],
+        "wave": "parallel-2",
+        "evidence": "continuity constraints verified"
+      },
+      {
+        "id": "work-proposal",
+        "artifact": "specs/021-hybrid-sdd-adaptation/work-proposal.md",
+        "owner": "work-writer",
+        "depends_on": ["dm-presentation", "continuity-review"],
+        "wave": "serial",
+        "evidence": "DM-addressed Work proposal produced"
+      }
+    ]
+  },
+  {
+    "evidence_id": "topology-parallel-shared-writer",
+    "kind": "topology",
+    "work_class": "agent-system",
+    "route": "full-sdd",
+    "status": "complete",
+    "expected_failure": true,
+    "expected_error": "parallel wave shares canonical artifact",
+    "nodes": [
+      {
+        "id": "grounding",
+        "artifact": "specs/021-hybrid-sdd-adaptation/context.md",
+        "owner": "context-writer",
+        "depends_on": [],
+        "wave": "serial",
+        "evidence": "authoritative context recorded"
+      },
+      {
+        "id": "rules-system",
+        "artifact": "specs/021-hybrid-sdd-adaptation/rules.md",
+        "owner": "rules-writer",
+        "depends_on": ["grounding"],
+        "wave": "parallel-1",
+        "evidence": "system rules verified"
+      },
+      {
+        "id": "rules-review",
+        "artifact": "specs/021-hybrid-sdd-adaptation/rules.md",
+        "owner": "review-writer",
+        "depends_on": ["grounding"],
+        "wave": "parallel-1",
+        "evidence": "system rules review recorded"
+      }
+    ]
+  },
+  {
+    "evidence_id": "topology-parallel-dependent",
+    "kind": "topology",
+    "work_class": "campaign-architecture",
+    "route": "full-sdd",
+    "status": "complete",
+    "expected_failure": true,
+    "expected_error": "dependent tasks cannot be parallel",
+    "nodes": [
+      {
+        "id": "grounding",
+        "artifact": "specs/021-hybrid-sdd-adaptation/context.md",
+        "owner": "context-writer",
+        "depends_on": [],
+        "wave": "serial",
+        "evidence": "authoritative context recorded"
+      },
+      {
+        "id": "rules-system",
+        "artifact": "specs/021-hybrid-sdd-adaptation/rules.md",
+        "owner": "rules-writer",
+        "depends_on": ["grounding"],
+        "wave": "parallel-1",
+        "evidence": "system rules verified"
+      },
+      {
+        "id": "playable-situations",
+        "artifact": "specs/021-hybrid-sdd-adaptation/situations.md",
+        "owner": "situations-writer",
+        "depends_on": ["rules-system"],
+        "wave": "parallel-1",
+        "evidence": "playable situations verified"
+      }
+    ]
+  }
+]

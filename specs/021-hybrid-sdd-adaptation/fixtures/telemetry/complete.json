@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "trace_id": "trace-complete-prep-001",
+  "policy_version": "1.0",
+  "job": "route-check",
+  "sitting_class": "prep",
+  "work_status": "accepted",
+  "measurement_status": "complete",
+  "model_family": "model-a",
+  "tokenizer_family": "native-a",
+  "encoding": "encoding-a",
+  "trajectory": {"request": 12, "loaded_context": 20, "retrieval": 8, "tools": 4, "failures": 0, "retries": 0, "model_input": 30, "model_output": 18, "final_work": 18},
+  "retrieval": {"queries": 1, "fetches": 2, "tokens": 8, "attempted_collections": ["wiki"], "fallbacks": [], "useful": 2, "unused": 0},
+  "source_components": [{"owner": "user-request", "tokens": 12, "secondary_provenance": []}, {"owner": "repository-context", "tokens": 20, "secondary_provenance": []}],
+  "tokens": {"input": 30, "output": 18, "total": 48},
+  "quality": {"hard_gate_failures": 0, "semantic_non_inferior": true, "dm_acceptance": "accepted", "dm_revisions": 0, "runtime_failures": 0},
+  "timestamps": {"started_at": "2026-09-16T10:00:00+00:00"}
+}

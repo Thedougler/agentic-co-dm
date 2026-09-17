@@ -1,396 +1,305 @@
-<!--
-Sync Impact Report
-- Version change: 1.16.0 → 1.17.0
-- Modified principles: X (wiki canon lands on main; agent instructions use a feature branch)
-- Added sections: none
-- Removed sections: none
-- Other modified sections:
-  - Agent Operating Constraints (push per X)
-- Follow-up TODOs: none
--->
-
 # Agentic Co-DM Constitution
 
 ## Core Principles
 
 ### I. Domain Language Is Binding
 
-Issue titles, specs, tests, and code names MUST use terms as defined in
-`CONTEXT.md`. Terms listed under `_Avoid_` MUST NOT be used as synonyms.
-A missing glossary term is a domain-modeling gap: MUST NOT invent language
-in those artifacts. Work that contradicts an existing ADR MUST name the
-conflict and MUST NOT silently override the decision.
+Issues, specifications, tests, code, skills, and campaign Work MUST use terms defined by
+`CONTEXT.md` and the applicable domain owner. Terms marked as avoided MUST NOT be used as
+synonyms. A missing term is a modeling gap, not permission to invent one. Work that conflicts
+with an ADR or accepted campaign knowledge MUST name the conflict rather than silently override
+it.
 
-Rationale: one vocabulary across agents and humans is what keeps specs and
-code from drifting.
+Rationale: one vocabulary prevents drift between the human table, the wiki, and agents.
 
 ### II. Issues Are the Work Surface
 
-All tracked work MUST live as GitHub issues, operated through `gh`.
-Triage labels MUST use these exact strings: `needs-triage`, `needs-info`,
-`ready-for-agent`, `ready-for-human`, `wontfix`. External pull requests
-MUST NOT be treated as a feature-request surface. An agent MAY implement
-only issues labelled `ready-for-agent`.
+Tracked project work MUST have an issue as its accountable work surface. An agent MUST NOT
+begin implementation from an untracked request when the repository's issue workflow applies.
+External review artifacts MAY land work, but MUST NOT replace the issue as its source of scope,
+acceptance, and ownership.
 
-Rationale: labels and `gh` are the contract between humans, AFK agents,
-and triage skills.
+Rationale: issues make work inspectable by humans and agents across sessions.
 
-### III. Spec Before Code
+### III. Spec Before System Change
 
-A feature MUST have a Spec Kit specification with independently testable
-acceptance scenarios before implementation starts. The Full SDD Cycle is
-specify → plan → tasks → implement; spec and plan review gates MUST be
-honored when that workflow is used. `ready-for-agent` means the spec is
-complete enough to implement without further human clarification.
-Acceptance scenarios MUST name outcomes. They MUST NOT prescribe a
-creative method, voice, or implementation when more than one approach
-meets those outcomes (see VII).
+A software, tooling, instruction, or other system change MUST have a specification with
+independently testable acceptance before implementation. The specification MUST describe
+outcomes and constraints, not prescribe a creative method or implementation when alternatives
+satisfy the outcome. Campaign Work follows its owner skill and remains subject to the canon and
+agency principles here.
 
-Rationale: underspecified work produces agent drift; overspecified work
-suffocates the creative product.
+Rationale: explicit outcomes prevent both agent drift and needless process constraints.
 
-### IV. Tests Specify Behavior
+### IV. Behavioral Tests
 
-Permanent tests MUST assert observable behavior at public seams, never
-internals. New behavior MUST be expressed as a failing test before the
-code that passes it (red → green, one slice). Tests MUST NOT couple to
-implementation, recompute their own expected values, or be written as a
-bulk suite of imagined behavior. Test names MUST use `CONTEXT.md` terms
-when those terms exist.
+Permanent tests MUST assert observable behavior at a public seam and MUST use domain language
+where it exists. New system behavior MUST be expressed by a failing test before the implementation
+that passes it, one slice at a time. Tests MUST NOT pin internals, recompute their own expected
+values, or bulk-speculate about imagined behavior.
 
-Rationale: tests that survive refactors are the only tests worth keeping.
+Rationale: behavior-focused tests protect contracts through refactoring.
 
-### V. Single Context, Documented Decisions
+### V. Single Source of Truth
 
-This repository is single-context. Domain language lives in root
-`CONTEXT.md`; decisions live in `docs/adr/`. A second bounded context
-MUST NOT be added without a root `CONTEXT-MAP.md`. ADRs MUST record
-resolved decisions, not speculative architecture. Missing `CONTEXT.md`
-or ADRs is not a defect; they MUST be created when a term or decision
-is actually resolved, not up front.
+Each fact, term, decision, and acceptance rule MUST have one authoritative owner. Cross-cutting
+domain language belongs in `CONTEXT.md`; resolved architecture belongs in ADRs; feature behavior
+belongs in specs and contracts; task procedures belong in skills; current operating policy
+belongs in `AGENTS.md`.
 
-Rationale: one context until the map proves otherwise keeps the glossary
-and ADRs findable.
+Repository-owned agent skills MUST have one canonical editable authority at
+`.agents/skills/<name>/SKILL.md`, with co-located support files under that directory. Agents MUST
+edit this canonical tree and MUST NOT edit an alternate harness copy. When another location needs
+to expose a repository-owned skill, it MUST be a symlink to the canonical skill directory or
+file. Alternate regular-file copies, broken symlinks, duplicated skill bodies, or edits made
+outside the canonical tree are deviations; they MUST be detected, reported, and fixed immediately.
+A canonical change MUST propagate through those symlinks without a second synchronization step.
+
+Harness discovery MUST be constrained to the harness's declared default skill location or the
+repository default section at `.agents/skills/`. A harness MUST ignore every other skill copy,
+projection, or unlisted skill directory; it MUST NOT merge, rank, or silently fall back among
+duplicates. If the declared source is missing or invalid, the harness MUST report the failure
+rather than load another copy.
+
+Copies of other authoritative artifacts MAY link or summarize their owner, but MUST NOT create
+competing versions. Conflicts MUST remain visible until the authoritative owner resolves them.
+
+Rationale: one editable skill authority lets every harness receive the same change and prevents
+behavioral drift caused by copied procedures.
 
 ### VI. Software Is Agent-Shaped
 
-This is an agentic project in early development. Ship. Every script, tool,
-util, and other software in this repository MUST be agent-shaped and
-usable by an agent as the primary operator:
+Every script, tool, utility, and other software in this repository MUST be usable by an agent
+as its primary operator: arguments or structured input in, text or JSON out, errors on stderr,
+and an exit status distinguishing success from failure. Agent-facing documents MUST state
+positive instructions, completion criteria, and named failure modes while using progressive
+disclosure. Human-facing wrappers MUST NOT replace an agent-capable surface when the agent can
+perform the same operation directly.
 
-- An agent MUST be able to invoke it without a GUI: arguments in, text or
-  JSON out, errors on stderr, an exit code that distinguishes done from
-  failed.
-- Agent-facing documents (skills, `AGENTS.md`, context pointers, CLIs
-  agents follow) MUST follow `.agents/skills/writing-for-agents`:
-  completion criteria on every step, leading words, progressive
-  disclosure, one source of truth, the environment as truth (not a stale
-  doc cache), positive instruction, prune no-ops and sediment.
-- Regardless of the agent utilized for a skill change, that agent MUST
-  receive an instruction, in addition to all original Spec Kit requirements
-  and the task-specific prompt, to use `.agents/skills/writing-for-agents`
-  for that work.
-- MUST NOT add a human-only wrapper when an agent can run the same command.
-- MUST ship the agent-shaped tool first. Human chrome waits until a human
-  must operate it.
+Rationale: an agent cannot depend on a surface it cannot invoke or inspect reliably.
 
-Rationale: a tool the agent cannot run does not exist. Early speed is
-small, invocable tools, not delayed product surface.
+### VII. Creative Judgment Is Protected
 
-### VII. Do Not Suffocate Agents
+Specs, skills, templates, checklists, and reviews MUST constrain only acceptance, safety, domain
+language, and named failure modes. They MUST NOT prescribe one creative method, voice, structure,
+or implementation when multiple valid approaches exist. Narrative craft, mechanics, specificity,
+canon fidelity, playability, player agency, and DM usefulness MUST NOT be traded away to satisfy a
+process metric.
 
-Overspecificity is a defect in creative work and in the agentic design of
-creative software and infrastructure. Specs, skills, templates, checklists,
-and reviews MUST constrain only independently testable acceptance, safety,
-domain language, and named failure modes. They MUST NOT prescribe a single
-creative method, voice, structure, or implementation when more than one
-valid approach meets those constraints. A required step, gate, or checklist
-item that does not prevent a named failure MUST NOT be added. Agents
-working in this repository MUST retain judgment on creative Work.
-
-Rationale: this product exists to produce playable creative Work. Process
-that smothers judgment produces worse Work, not safer Work.
+Rationale: the Co-DM exists to produce playable Work, not procedural compliance theater.
 
 ### VIII. Safe Automation Runs Unattended
 
-Easy, safe, idempotent automation MUST run without an agent choosing to
-invoke it or sequencing it in a skill. Formatters, index refresh,
-hook-driven repository init, and equivalent post-write maintenance MUST be
-automatic, idempotent, and safe to re-run. Agents MUST assume those steps
-already ran and MUST NOT spend tokens considering them. Automation that is
-not easy, not safe, or not idempotent MUST stay explicit. It MUST NOT be
-hidden in a hook.
+Easy, safe, idempotent maintenance MUST run without an agent choosing its order or a human
+performing a needless chore. Automation that is unsafe, non-idempotent, or requires judgment
+MUST remain explicit and MUST NOT be hidden behind a hook. Automation MUST preserve data and
+surface failures rather than masking them.
 
-Rationale: chores that need no judgment are not agent work.
+Rationale: unattended chores reduce interruption without removing necessary judgment.
 
-### IX. Design Trends Toward Token Efficiency
+### IX. Measured, Quality-Bounded Efficiency
 
-Agent-consumed surfaces (skills, `AGENTS.md`, constitutions, CLIs, errors)
-MUST trend toward fewer tokens for the same outcome. Standing context MUST
-be load-bearing. Skills MUST use progressive disclosure; the environment
-is truth. A change that increases tokens an agent must read or emit to
-complete the same task MUST be justified by a named failure it prevents.
-Duplicating guidance that already lives in one source of truth is a defect.
+Efficiency means reducing avoidable context, retrieval, tool, and output cost for the same
+successful outcome. Any claim labeled as a token improvement MUST use objective token measurement
+and compare comparable work. Lower usage counts as an improvement only when quality is preserved.
+Narrative craft, mechanics, specificity, canon fidelity, playability, player agency, and DM
+usefulness are protected quality constraints.
 
-Rationale: extra tokens are latency, cost, and noise that drown the signal.
+Standing context MUST be load-bearing. Agents MUST retrieve only the authoritative context needed
+for the current decision, expanding it when unresolved need requires it. Duplicate instructions,
+irrelevant retrieval, redundant tool output, retries, and unnecessary context are waste. No
+standing context may remain without a named function.
 
-### X. Agents Act Autonomously By Default
+Rationale: cost is useful only when the Work remains equally correct, playable, and useful.
 
-Agents MUST complete the git and context loop without waiting to be asked.
-Waiting for a human to say "commit", "push", "make a branch", or "update
-from main" is a defect unless a named safety failure applies.
+### X. DM Owns Canon
 
-Git by default:
+The DM is the authority over campaign truth. The Co-DM MAY retrieve, infer, design, propose,
+identify contradictions, and recommend changes. It MUST NOT silently convert invention into canon,
+represent proposed material as established fact, fabricate evidence or citations, or silently
+reconcile conflicting canon. Canon-changing Work MUST remain inspectable until the DM accepts it;
+rejected proposals MUST NOT become canon.
 
-- Agents MUST commit completed work on the current task as they go.
-- Wiki canon MUST commit on `main` and MUST push `origin/main`.
-- Agent-instruction work MUST use a feature branch, MUST push that branch,
-  and MUST land on `main` by the repository's normal PR path when checks
-  pass.
-- Mixed sittings MUST split: wiki commit on `main`, instruction commit on
-  the feature branch.
-- Agents MUST fetch from `origin/main` before starting substantial work
-  and before reporting done.
-- Agents MUST NOT wait for a human to merge a ready instruction branch or
-  to push ready wiki canon.
-- Agents MUST NOT force-push `main` or rewrite published default-branch
-  history. They MUST NOT commit secrets, credentials, or unrelated dirty
-  files. They MUST NOT skip required checks to land on `main`.
+The system MUST preserve boundaries between DM truth, player-visible information, and unrevealed
+information. A presentation surface MUST NOT expose information outside its intended boundary.
 
-Agent context by default:
+Rationale: the DM's accepted decisions, not agent fluency, determine the campaign world.
 
-- Spec Kit agent-context MUST be used. Live feature context MUST live in
-  the configured agent context file, not in chat paste.
-- After specify, plan, or equivalent artifact changes, agents MUST refresh
-  that context file rather than telling the next session to "remember"
-  the plan.
+### XI. Players Choose; The World Acts
 
-Agentic development defaults otherwise follow this constitution and
-established agentic practice: spec before code, small slices, evidence
-before done, one writer per canonical artifact, no duplicate sources of
-truth. A skill or sticky rule that requires a human prompt for commit,
-push, branch, or agent-context refresh is informal practice and loses
-(see Governance).
+Agents MUST NOT author player-character decisions, intentions, beliefs, emotions, conclusions,
+mandatory actions, or predetermined routes through prepared content. Preparation MUST support
+materially different responses where the fiction permits, including engagement, negotiation,
+investigation, avoidance, redirection, failure, refusal, and unexpected approaches.
 
-Rationale: an agent that stops for git ceremony is not autonomous. The
-repository and its context files are the memory; the default branch must
-not lag completed work.
+NPCs, factions, threats, opportunities, clocks, and consequences MAY move independently according
+to established motives and circumstances. Agents prepare pressures, situations, and consequences;
+they MUST NOT treat a predetermined player outcome as the only successful route.
 
-### XI. Designated Writer Work Has Bounded Concurrency
+Rationale: player choice and independent world motion are the defining agencies of play.
 
-Agents MAY run up to two concurrent Claude Code designated-writer
-instances. An agent MAY use a second Claude Code instance only when the
-agents involved have no other task to complete. Agents MUST NOT run more
-than one concurrent Codex designated-writer instance, and Codex MUST NOT
-overlap with Claude Code designated-writer instances. Multiple tasks that
-modify the same canonical artifact MUST remain single-writer and MUST NOT
-overlap. Independent non-writer work MAY continue concurrently unless
-another governance rule forbids it. Deferred designated-writer tasks MUST
-remain incomplete on the feature `tasks.md` with a retry time. Completing
-other or new work during a usage-limit wait MUST NOT drop, close, or omit
-those tasks; they MUST be carried over and retried only after the recorded
-time, except where the Codex fallback or session-agent usage-limit
-fallback below applies. When both Claude Code and Codex are unavailable
-due to usage limits, the session agent MAY write the deferred
-design-impact change. The session agent MUST NOT write design-impact work
-while either designated writer is usable.
+### XII. Evidence Precedes Invention
 
-Rationale: bounded Claude Code concurrency uses available capacity without
-allowing competing edits to the same artifact. Codex remains serialized
-and isolated from Claude Code. Carry-over keeps deferred work findable on
-the Spec Kit task list when other work lands. Session-agent write is last
-resort when both designated writers are usage-limited.
+When authoritative project knowledge may answer a question, the agent MUST retrieve it before
+inventing. Current accepted campaign knowledge outranks legacy, historical, proposed, and
+external context. Search snippets, summaries, and indexes are discovery aids rather than factual
+evidence when source precision matters.
 
-### XII. Prompt Other Agents With Objectives
+Silence in authoritative sources MAY permit invention when invention is appropriate, but invented
+material MUST remain distinguishable from retrieved fact. Evidence, citations, and canon MUST
+never be fabricated.
 
-When a session agent prompts another coding agent (Claude Code, Codex, or
-equivalent), that prompt MUST trust the target to operate itself and its
-environment, to follow the spec, and to use Spec Kit. It MUST state the
-objective. It MUST completely communicate independently testable acceptance
-criteria and deliverables for this task. It MUST use the most
-token-efficient, cost-effective wording that still does those things.
+Rationale: retrieval grounds decisions while leaving deliberate creative space where the record
+is silent.
 
-The prompt MUST NOT include tool tutorials, harness walkthroughs, or
-environment operating manuals the target already has. MUST NOT prompt the
-target about Spec Kit, spec-before-code, or other standing process the
-target already loads. MUST NOT pad with restated standing procedure, git
-ceremony, skill internals, or any other detail irrelevant to the task that
-subagent must complete. Extra tokens are a defect unless they prevent a
-named failure or carry missing acceptance or deliverable facts. Required
-instructions from this constitution (including VI's writing-for-agents
-instruction) remain in the prompt; they are named-failure prevention,
-not padding.
+### XIII. Self-Improvement Is Evidence-Driven
 
-Rationale: the other agent already knows its tools, environment, and Spec
-Kit. Tokens spent teaching that, or restating process, are cost without
-signal. Incomplete acceptance criteria is the actual failure.
+Agent behavior, retrieval strategy, instruction design, context strategy, and tooling MAY improve
+continuously, but an improvement MUST be demonstrated rather than asserted. Optimization MUST
+address an observed failure, measured waste source, or evidenced opportunity and MUST compare
+equivalent or sufficiently comparable work.
 
-### XIII. Wiki Media Filenames Distinguish Kind
+Experiments MUST preserve constitutional quality constraints. Uncertain changes MUST remain
+reversible until evidence supports promotion. Agents MUST NOT weaken evaluation criteria in the
+same experiment used to justify an optimization. Cheaper, shorter, or faster behavior is not
+automatically better behavior.
 
-Wiki media assets MUST encode their kind in the filename so an agent can
-classify the file from the name alone, without opening it or guessing from
-nearby notes. Distinct kinds include at least battlemap, portrait, token,
-and scene. New media kinds MUST also encode kind in the filename. Two
-assets of different kinds MUST NOT be distinguishable only by directory,
-extension, or surrounding prose. A filename that is silent on kind is a
-defect.
+Rationale: optimization without evidence can efficiently make the system worse.
 
-MUST NOT treat folder placement as the only kind signal. Agents MUST NOT
-guess kind from pixels or adjacent wiki text when the filename does not
-name it.
+### XIV. Designated Writers Have Bounded Concurrency
 
-Wiki media filenames MUST NOT contain spaces. New files MUST use `-`
-where a space would have been. Existing filenames that contain spaces
-MUST be renamed by replacing each space with `-`. References to those
-files MUST be updated in the same change.
+Each canonical artifact MUST have at most one active writer. Concurrent writing is permitted only
+across independent write surfaces, MUST remain bounded, and MUST NOT create races, conflicting
+edits, or ambiguous ownership. A designated-writer policy MAY choose providers or schedules, but
+those volatile operating details MUST NOT change this invariant.
 
-Rationale: opening every image to learn whether it is a token or a
-battlemap wastes tokens and produces wrong attachments. Spaces force
-quoting and make agents guess separators.
+Rationale: bounded parallelism preserves throughput without sacrificing artifact integrity.
 
-### XIV. Use The Simplest Tool
+### XV. Artifacts Expose Machine-Readable Identity
 
-Agents MUST use the simplest tool that completes the job. When a CLI exists
-for the work, agents MUST run that CLI as the command. Codex work uses
-`codex exec` on the command line. Claude Code work uses `claude -p` on the
-command line. MUST NOT wrap a CLI in Python, an eval cell, a hub process,
-or another launcher when the command can be run directly.
+Agent-consumed artifacts MUST expose sufficient machine-readable identity or metadata for agents
+to classify and route them without unnecessary expensive inspection where practical. Naming,
+frontmatter, schemas, and directory placement MAY provide that identity, but a lower-level policy
+MUST name the required convention for each artifact kind.
 
-Rationale: wrappers hide stdin, timeouts, and errors. The CLI is the tool.
+Rationale: explicit identity reduces guessing, retrieval waste, and misrouting without freezing
+implementation-specific filenames into the constitution.
 
-## Agent Operating Constraints
+### XVI. Prompt Other Agents With Objectives
 
-- Runtime guidance for agents is `AGENTS.md`. Skills MUST follow
-  `docs/agents/issue-tracker.md`, `docs/agents/triage-labels.md`, and
-  `docs/agents/domain.md`.
-- Skills, `AGENTS.md`, and other agent-consumed docs MUST follow
-  `.agents/skills/writing-for-agents` and MUST stay as short as the
-  named failure they prevent.
-- If `CONTEXT.md` or `docs/adr/` is absent, agents MUST proceed without
-  flagging the absence or proposing those files as a prerequisite.
-- Wayfinder maps (issue labelled `wayfinder:map`) and child tickets are
-  the exploration surface when that workflow is in use. Blocking MUST use
-  GitHub issue dependencies when available.
-- PRs-as-request-surface is **no**. PRs remain a landing path for X.
-- Agents MUST NOT re-run or document easy, safe, idempotent automation
-  that already runs unattended.
-- Agents MUST auto-commit and auto-push per X, and refresh agent-context.
-  They MUST NOT ask permission for those steps.
-- Prompts to Claude Code, Codex, or equivalent MUST follow XII: objective,
-  complete acceptance and deliverables, no Spec Kit lecture, no
-  task-irrelevant padding.
-- Wiki media assets MUST follow XIII: kind in the filename, no spaces,
-  no guessing.
-- Agents MUST follow XIV: run the simplest tool; CLIs as CLIs, not wrappers.
-- Designated writer, when used: Claude Code at `claude-opus-4-6`
-  `--effort medium`. MUST NOT use the `opus` alias or default Opus.
-  Default Opus output is worthless for language work (issue #3). Up to
-  two Claude Code instances MAY run concurrently only when the agents
-  involved have no other task to complete; they MUST NOT modify the same
-  canonical artifact concurrently. Use that writer only for novel skill
-  design, skill redesign, or a major skill-file change (issue #4). Session
-  agents complete smaller edits to established files, Spec Kit pattern
-  tweaks, and `AGENTS.md`. A Claude Code usage limit defers only that
-  Claude-dependent task on the feature `tasks.md` with a retry time;
-  remaining independent work continues. Completing other or new work while
-  waiting MUST carry those deferred tasks forward still incomplete; they
-  MUST NOT be dropped, closed, or omitted. If every remaining open task is
-  blocked by that usage limit, no other work can be done, and the retry time
-  on the blocked task is more than one hour away, the session agent MAY
-  invoke the Codex CLI at ChatGPT 5.5 medium with the same tightly scoped
-  skill-writing prompt, by running `codex exec` on the command line.
-  Codex MUST NOT run concurrently with Claude Code.
-  If that Codex invocation is itself unavailable due to a usage limit, and
-  Claude Code remains unavailable due to a usage limit, the session agent
-  MAY write the design-impact change itself. Otherwise the session agent
-  MUST NOT write the design-impact change itself. Before each remaining
-  blocked skill job, the session agent MUST re-check those gates and MUST
-  prefer Claude Code if it is usable again, then Codex if Claude Code is
-  still usage-limited. Retry after the recorded time unless that Codex
-  fallback or session-agent fallback applied.
+A prompt to another coding agent MUST state the objective, independently testable acceptance
+criteria, and deliverables. It MUST omit tool tutorials, harness manuals, standing process, and
+other task-irrelevant detail already available to the target. Its wording MUST be no longer than
+needed to communicate those facts and any named failure prevention.
+
+Rationale: complete objectives preserve autonomy; padding consumes context without improving work.
+
+### XVII. The Simplest Adequate Tool
+
+Agents MUST use the simplest tool that completes the job. Existing tools and native platform
+features take precedence over new abstractions or wrappers. A command-capable interface MUST be
+used directly when it is sufficient; wrappers MUST NOT obscure input, output, errors, or exit
+status without a demonstrated need.
+
+Rationale: boring tools are easier to inspect, operate, and recover at 3 a.m.
+
+### XVIII. Autonomous Operation
+
+Agents MAY complete routine context, version-control, and repository-maintenance loops without
+waiting for a human. They MUST not bypass review, acceptance, secret protection, branch safety,
+required checks, or other explicit safeguards. Human approval remains required wherever this
+constitution or an applicable lower-level policy makes it the safety boundary.
+
+Rationale: autonomy keeps completed work and context current while preserving human control over
+risk and canon.
+
+### XIX. Constitutional Layering
+
+The constitution defines stable, cross-cutting invariants. `AGENTS.md` defines current runtime
+operating policy. Specs and contracts define feature behavior and acceptance. Skills define
+task-specific procedures. ADRs record resolved architectural decisions. Lower layers MAY
+operationalize these principles, but MUST NOT duplicate them merely for emphasis.
+
+Volatile implementation details MUST remain below the constitution unless changing them would
+change a project invariant. When a lower layer conflicts with this constitution, the lower layer
+MUST be corrected or the constitution MUST be amended explicitly.
+
+Rationale: layering keeps standing context short, load-bearing, and resilient to model, tool, and
+retrieval-engine changes.
+
+### XX. The Wiki Is Additive, Self-Sealing, and Self-Healing
+
+The Wiki (the repository's `llm-wiki`) MUST remain the single compiled, citable knowledge layer.
+Raw evidence MUST remain immutable. New evidence, page facts, links, schemas, and maintenance
+records MUST land as traceable additive changes with an authoritative owner and provenance; an
+agent MUST NOT overwrite or delete history, silently merge competing facts, or turn an unaccepted
+proposal into canon. Accepted campaign facts MUST change only through the DM acceptance boundary,
+and incompatible records MUST be quarantined with an observable error rather than guessed or
+rewritten.
+
+Safe deterministic maintenance MUST detect and repair structural, index, link, and validation
+drift without inventing lore, changing accepted facts, collapsing conflicts, or applying a
+judgment-only repair without its required review. Every completed work slice MUST be committed
+to Git. Before starting a new owned work unit, an agent MUST commit all dirty changes it owns and
+verify a clean working tree; it MUST obtain a clean handoff for unrelated dirty changes, MUST NOT
+include work it does not own in its commit, and MUST stop and report when clean isolation is
+impossible.
+
+Rationale: additive history seals accepted knowledge, safe repair keeps the compiled Wiki usable,
+and clean commits let agents recover, audit, and hand off work without clobbering another agent's
+changes.
+
+## Operating Boundaries
+
+- The Co-DM works in prep and wrapup windows; the DM is the sole runtime at the table.
+- Work is mutable until the DM accepts it. Accepted Work may become player-visible through the
+  appropriate play surface; drafts and unrevealed information remain protected.
+- Runtime procedures, provider and model details, exact commands, retrieval ordering, telemetry
+  schemas, thresholds, and evaluation fixtures belong in lower-level operating documents.
+- Codex is the default harness for Spec Kit commands in this repository. Lower-level Spec Kit
+  metadata and instructions MUST treat Codex as the default and MUST identify other harnesses as
+  explicit alternatives. Exact invocation, provider, model, and harness-specific procedures
+  remain owned by lower-level operating documents.
+- Campaign facts remain DM-gated even when agents own routine structure, measurement, or
+  maintenance work.
 
 ## Development Workflow
 
-1. Triage: an issue is not implementable until it carries `ready-for-agent`
-   or `ready-for-human`.
-2. Specify: write the spec (`/speckit.specify`) with prioritized,
-   independently testable user stories. Stop at acceptance. Do not encode
-   a creative method. Refresh agent-context. Commit and push.
-3. Plan and tasks: `/speckit.plan` then `/speckit.tasks` after spec approval.
-   Plans MUST NOT add steps an unattended hook already performs. Refresh
-   agent-context. Commit and push. Keep the branch current with `main`.
-4. Implement: TDD at agreed seams; one red → green slice at a time.
-   Refactoring belongs to review, not the implementation loop. Prefer a
-   small agent-shaped tool over waiting for a human-facing one. Commit per
-   slice, push, and land on `main` when the slice is done and checks pass.
-5. Review: code review MUST check constitution compliance, ADR conflicts,
-   that tests observe behavior rather than internals, that new software is
-   agent-shaped, that process is not overspecific, that easy safe idempotent
-   automation is unattended, that standing agent context did not grow
-   without a named failure, that prompts to other agents carry objectives
-   and complete acceptance rather than operating manuals, Spec Kit
-   lectures, or other task-irrelevant padding, that wiki media filenames
-   distinguish kind, contain no spaces, and do not require guessing, that
-   git/context autonomy was not reintroduced as a human gate, and that
-   CLIs were run as CLIs rather than wrapped in Python, eval, hub, or
-   another launcher.
+1. Triage: establish an accountable issue and clear ownership before system work begins.
+2. Specify: define prioritized, independently testable outcomes without prescribing creative
+   method; resolve domain and ADR conflicts explicitly.
+3. Plan and task: derive an implementation plan and dependency-ordered tasks from the accepted
+   specification; do not duplicate unattended hook work.
+4. Implement: deliver one behavioral slice at a time, using the simplest adequate agent-shaped
+   surface and permanent tests where the contract warrants them.
+5. Review: check this constitution, source ownership, behavioral evidence, safety boundaries,
+   quality preservation, and unresolved contradictions before adoption.
 
 ## Governance
 
-This constitution supersedes informal practice, skill defaults, and
-unwritten habit. Where a skill conflicts with this document, this
-document wins.
+This constitution supersedes informal practice, skill defaults, and unwritten habit. Where a
+lower-level document conflicts with it, this document wins until an explicit amendment changes
+that rule.
 
-Amendments:
+Amendments MUST be proposed through tracked work, state their intended governance effect, and
+update this file in the same adopting change. Every amendment MUST include a Sync Impact Report
+for review before that report is removed from the committed file.
 
-- Propose the change in a GitHub issue.
-- Update `.specify/memory/constitution.md` in the same change that adopts
-  the amendment.
-- Bump **Version** using:
-  - MAJOR: remove or redefine a principle incompatibly.
-  - MINOR: add or materially expand a principle or section.
-  - PATCH: clarification, wording, or typo with no semantic change.
-- Set **Last Amended** to the amendment date (ISO `YYYY-MM-DD`).
-- **Ratified** does not change after first adoption.
+Versioning follows semantic rules:
 
-Compliance:
+- MAJOR: remove or incompatibly redefine a principle.
+- MINOR: add a principle or section, or materially expand governance.
+- PATCH: clarify wording, correct a typo, or make a non-semantic refinement.
 
-- Reviews and `/speckit.analyze` MUST check proposed work against these
-  principles before merge or implementation.
-- Reviews MUST verify that every skill-change assignment preserves all
-  original Spec Kit requirements and includes the writing-for-agents
-  instruction, regardless of the agent utilized.
-- Unjustified complexity (new context, new abstraction, new tracker
-  surface) MUST be rejected or recorded as an ADR.
-- A new script, tool, or util that is not agent-shaped MUST be rejected.
-- A required creative procedure, extra standing context, or agent-facing
-  chore that does not prevent a named failure MUST be rejected.
-- Easy, safe, idempotent work left as a manual agent step MUST be
-  rejected in favor of unattended automation.
-- A required human prompt to commit, push, branch, update from `main`,
-  or refresh agent-context MUST be rejected unless it prevents a named
-  safety failure (secrets, force-push of `main`, skipping checks).
-- A prompt to another coding agent that includes an operating manual,
-  Spec Kit tutorial, or other detail irrelevant to the task, omits
-  acceptance criteria or deliverables, or is longer than needed to state
-  those facts MUST be rejected.
-- A wiki media filename that does not encode kind, contains a space, or
-  that requires opening the file or guessing from nearby notes to
-  classify it, MUST be rejected.
-- A CLI wrapped in Python, an eval cell, a hub process, or another
-  launcher when that CLI could be run as a command MUST be rejected.
-- Reviews MUST verify that no more than two Claude Code designated-writer
-  instances run concurrently, that a second is used only when the agents
-  involved have no other task to complete, and that no canonical artifact
-  is modified by concurrent writers. Reviews MUST verify that Codex remains
-  single-instance and does not overlap with Claude Code. Usage-limited tasks
-  MUST remain on the feature `tasks.md` with a retry time when other work
-  completed during the wait, and Codex fallback may run only when every
-  remaining open task was blocked, no other work could be done, and the
-  retry time was more than one hour away. Session-agent write of a
-  design-impact change is allowed only when both Claude Code and Codex
-  were unavailable due to usage limits under those same gates.
+`Ratified` records the original adoption date and MUST NOT change. `Last Amended` records the
+adoption date of the latest amendment in ISO `YYYY-MM-DD` format.
+
+Compliance reviews and Spec Kit analysis MUST check proposed work against this constitution before
+implementation or merge. Reviews MUST verify behavioral evidence, single ownership, quality
+preservation, safe automation, agency and canon boundaries, and appropriate instruction layering.
+Unjustified complexity, duplicate sources of truth, unbounded concurrency, fabricated evidence,
+and human gates that do not prevent a named safety failure MUST be rejected or resolved by an ADR.
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.17.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-14
+**Version**: 1.21.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-16

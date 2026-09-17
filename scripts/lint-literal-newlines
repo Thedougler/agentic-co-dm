@@ -14,6 +14,7 @@ Skips / leaves alone:
 
 Usage (repo root):
   ./scripts/lint-literal-newlines
+  ./scripts/lint-literal-newlines wiki/journal/sessions/shattered-sea/11
   ./scripts/lint-literal-newlines --json
   ./scripts/lint-literal-newlines --path wiki/journal/sessions/shattered-sea/11
 """
@@ -101,13 +102,26 @@ def lint_file(path: Path) -> list[dict]:
     return hits
 
 
-def main() -> int:
+def select_scope(path_option: Path | None, positional: Path | None) -> Path | None:
+    if path_option is not None and positional is not None:
+        if path_option.resolve() != positional.resolve():
+            raise ValueError("--path and positional scope name different paths")
+    selected = path_option or positional
+    return selected.resolve() if selected is not None else None
+
+
+def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("scope", nargs="?", type=Path, help="Limit to a file or directory")
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--path", type=Path, help="Limit to a file or directory")
-    args = ap.parse_args()
+    args = ap.parse_args(argv)
 
-    scope = args.path.resolve() if args.path else None
+    try:
+        scope = select_scope(args.path, args.scope)
+    except ValueError as exc:
+        print(f"agentic-co-dm: {exc}", file=sys.stderr)
+        return 2
     if scope is not None and not scope.exists():
         print(f"agentic-co-dm: path not found: {scope}", file=sys.stderr)
         return 2

@@ -18,9 +18,9 @@ summary: ""
 
 # {{title}}
 
-> [!abstract] Resolution
+> [!abstract] Resolution — the tag line
 > **Follows:** [[Session-{{session}}-BB-Climax]]
-> **Purpose:** Show what the climax changed, fulfill the adventure's promise, give the characters room to react, and leave on one strong final image.
+> **Purpose:** A tiny afterscene — show what the climax changed, fulfill the adventure's promise, give the characters room to react, and leave on one strong final image. Keep it brief and proportional to the Climax.
 >
 > **Outcome:** One sentence describing what is true now because of what the party did.
 

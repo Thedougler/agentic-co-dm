@@ -171,6 +171,13 @@ Search is on by default against collection `wiki`. Empty `QMD_WIKI_COLLECTION` s
 
 Load `.agents/skills/qmd` for query/get. Snippets are leads — `qmd get` / `qmd multi-get` before citing facts.
 
+### Exact QMD retrieval
+
+Search the selected collection first, then pass the exact returned `#docid` or
+`qmd://` source to `qmd get` / `qmd multi-get` verbatim. Use collection `wiki`
+when `QMD_WIKI_COLLECTION` is empty. Never construct, URL-encode, or infer a
+QMD document path from an Obsidian filename; the search result is the identifier.
+
 Order (`specs/004-qmd-search-default/contracts/retrieval-precedence.md`): `-c wiki` first; if silence `-c shattered-sea`; if silence `-c legacy-ss`; if still silence, say the wiki is silent.
 
 Wiki hit = current canon. Legacy hit = campaign-of-record context; wiki write only after DM accept. Wiki vs legacy disagreement → cite wiki.
@@ -178,6 +185,20 @@ Wiki hit = current canon. Legacy hit = campaign-of-record context; wiki write on
 
 If `qmd status` fails at session start, run `scripts/qmd-maintain.sh`. After wiki writes, wiki-ingest Step 8 runs that script. Exit 1: report the failure; already-written wiki pages stay.
 `qmd query`, `qmd embed`, and `qmd vsearch` need the local LLM. Agent harnesses set `CI=true`, which makes qmd refuse those calls. Prefix them with `env -u CI`. The maintain script already does this.
+
+### Direct `main` push protocol
+
+When pushing commits directly to `main`, use native Git in this order:
+
+1. Run `git fetch origin main`.
+2. Run `git rebase origin/main` and resolve any conflict before continuing.
+3. Run `git push origin HEAD:main`.
+4. If the push is rejected as non-fast-forward, repeat fetch → rebase → push
+   at most two more times. Stop after three total attempts or immediately on a
+   rebase conflict; leave the branch for manual resolution.
+
+`scripts/git-sync-main` remains the pre-work sync/reset helper and does not
+replace this push protocol or perform pushes.
 
 ## Vault Structure
 
@@ -251,6 +272,7 @@ Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the 
 |---|---|
 | "run the session" / "start the sitting" / live-play guidance | `run-guide` |
 | "session wrapup" / "post-session" / "session recap" / "what happened last session" / recap for players | `session-recap` (sole narrative skill → `Session-<NN>-Recap.md`; `session-wrapup` retired) |
+| "/plan-session" / "let's plan the next session" / "brainstorm the session" / "what should happen next session" | `plan-session` |
 | "plan the campaign" / "campaign arc" / "what's the long-term plan" | `campaign-planning` |
 | "cold open" / "how should the session start" | `cold-opens` |
 | "prep this encounter" / "build an encounter" / "encounter balance" | `encounter-prep` |
@@ -320,7 +342,7 @@ The main use case: you're working in some other project and want to sync knowled
 2. Scan the current project: README, source structure, git log, package metadata
 3. Distill what's worth remembering (architecture decisions, patterns, trade-offs — not code listings)
 4. Write to `$VAULT/projects/<project-name>.md`, cross-linking to concept/entity pages as needed
-5. Update the ingest ledger via `python3 scripts/manifest.py upsert …` (not a whole-file read), plus `index.md` and `log.md`
+5. Record a completed source once with `python3 scripts/manifest.py record … --pages …` (not a whole-file read), plus `index.md` and `log.md`
 
 On repeat runs, use `scripts/manifest.py` (`has`/`get`/`delta`) for ledger checks — do not load all of `.manifest.json` into context. Project sync may still use `git log <last_commit>..HEAD` when `last_commit_synced` is present on the relevant entry.
 
@@ -358,7 +380,7 @@ See `wiki-query` and `wiki-export` skills for how the filter is applied.
 ## Core Principles
 
 - **Compile, don't retrieve.** The wiki is pre-compiled knowledge. Update existing pages — don't append or duplicate.
-- **Track everything.** After ingest, `python3 scripts/manifest.py upsert` for the source (never whole-file read of `.manifest.json`); update `index.md`, `log.md`, and `hot.md` after writes.
+- **Track everything.** After ingest, `python3 scripts/manifest.py record` the completed source (never whole-file read of `.manifest.json`); update `index.md`, `log.md`, and `hot.md` after writes.
 - **Connect with `[[wikilinks]]`.** Every page should link to related pages. This is what makes it a knowledge graph, not a folder of files.
 - **Frontmatter is required.** Every wiki page needs: `title`, `category`, `tags`, `sources`, `created`, `updated`.
 - **Single source of truth.** Visibility tags shape how content is surfaced — they don't duplicate or separate it.
@@ -393,6 +415,12 @@ Spec Kit artifacts are the handoff protocol. Harness files must not copy feature
 
 ## Validation
 
+- **Spec Kit availability:** Invoke `specify --version` before deciding the CLI
+  is absent. If shell resolution fails, inspect the existing executable at
+  `~/.local/bin/specify` and its resolved target; `uv tool list` is not
+  authoritative for an executable already on disk. Repair a stale uv
+  registration with the documented install command rather than running
+  `specify init` over this already-initialized checkout.
 - Spec Kit status: `specify integration status --json` — must be `ok`, default `omp`, four integrations installed.
 - OMP baseline: `scripts/check-omp-baseline.sh` — exit 0.
 
@@ -405,7 +433,9 @@ Human-facing documentation lives in `docs/` — `installation.md`, `agents.md`, 
 The vault format is structurally conformant with the [Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) — markdown files with YAML frontmatter, category subfolders, reserved `index.md`/`log.md`. `wiki-export` (OKF mode) and `wiki-import` are the bridge: they translate between our native frontmatter (`title`/`category`/`tags`/`sources`/`created`/`updated` + `summary`) and OKF (`type`/`title`/`description`/`resource`/`tags`/`timestamp`), making vaults exchangeable with any OKF tool. The OKF round-trip is lossless; the `graph.json` round-trip is not.
 
 <!-- SPECKIT START -->
-For additional context about technologies to be used, project structure,
-shell commands, and other important information, read the current plan
-at specs/019-self-improving-codm/plan.md
+## Substantial-work routing
+
+Classify substantial engineering, agent-system, campaign-architecture, and creative-system changes once, then follow the full SDD contract at `docs/agents/hybrid-sdd.md`. Preserve the existing Spec Kit lifecycle and configured extensions.
+
+Routine campaign content (including established NPCs, locations, items, spells, creatures, individual beats, and recaps) stays on its existing skill/template/Work route. Split mixed requests into their system-changing and routine-content slices.
 <!-- SPECKIT END -->

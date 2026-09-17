@@ -1,0 +1,44 @@
+[
+  {
+    "scenario_id": "A-agent-system",
+    "request_kind": "agent-system",
+    "expected": {
+      "work_class": "agent-system",
+      "route": "full-sdd",
+      "reason_contains": [
+        "future agent behavior",
+        "agent-facing skill"
+      ],
+      "scope_boundary": "system-change"
+    },
+    "request": "Change an agent-facing skill and its wiki operating behavior so future runs apply a new routing rule."
+  },
+  {
+    "scenario_id": "B-campaign-architecture",
+    "request_kind": "campaign-architecture",
+    "expected": {
+      "work_class": "campaign-architecture",
+      "route": "full-sdd",
+      "reason_contains": [
+        "campaign structure",
+        "player-owned outcomes"
+      ],
+      "scope_boundary": "campaign-structure"
+    },
+    "request": "Define a durable multi-session campaign structure with independent actors, persistent pressures, and open player outcomes."
+  },
+  {
+    "scenario_id": "C-creative-system",
+    "request_kind": "creative-system",
+    "expected": {
+      "work_class": "creative-system",
+      "route": "full-sdd",
+      "reason_contains": [
+        "observable play behavior",
+        "reusable game system"
+      ],
+      "scope_boundary": "reusable-system"
+    },
+    "request": "Define a reusable game system whose persistent state changes faction behavior and information access during play."
+  }
+]

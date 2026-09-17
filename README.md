@@ -48,7 +48,7 @@ Most repository scripts use the Python standard library. Spec Kit’s agent-cont
    ```bash
    uv venv --python 3.12
    source .venv/bin/activate
-   python -m pip install pyyaml
+   python3 -m pip install pyyaml
    ```
 
 7. Install QMD:
@@ -71,7 +71,7 @@ Most repository scripts use the Python standard library. Spec Kit’s agent-cont
 Run these checks from the repository root:
 
 ```bash
-python tools/check_wiki_pages.py
+python3 tools/check_wiki_pages.py
 specify --version
 qmd status
 ./scripts/wiki-maintain --report --summary-only
@@ -88,7 +88,7 @@ If QMD is not initialized or its collections are stale, run `./scripts/qmd-maint
 - Treat `wiki/` as the **compiled** campaign knowledge layer. `wiki/_raw/` is an ingest inbox only — file then archive; never leave sources parked there; never overwrite `_raw/` as live canon.
 - Prefer thin CLIs over dumping whole files into agent context (`scripts/manifest.py`, Retrieval Primitives in `llm-wiki`).
 - Run `./scripts/qmd-maintain.sh` after wiki changes when QMD search is enabled.
-- Wiki canon commits on `main`. Agent-instruction work uses a feature branch; sync local `main` with `./scripts/git-sync-main` (ff-only to `origin/main`).
+- Wiki canon commits on `main`. Agent-instruction work uses a feature branch; sync local `main` with `./scripts/git-sync-main` before work. For a direct `main` push, fetch `origin/main`, rebase local commits onto it, then push; if push is rejected as non-fast-forward, repeat fetch → rebase → push up to three times and stop on conflict.
 - Spec Kit workflows live under `specs/` and the configured agent integration.
 
 ## Wiki health (operators)

@@ -1,0 +1,337 @@
+[
+  {
+    "evidence_id": "canon-unchanged-current-truth",
+    "kind": "canon-boundary",
+    "work_class": "campaign-architecture",
+    "route": "full-sdd",
+    "status": "complete",
+    "owner_resolution": "reuse",
+    "equivalent": true,
+    "owner_artifacts": [
+      {
+        "kind": "owner-page",
+        "path": "wiki/entities/faction/existing-owner.md",
+        "role": "canonical-owner"
+      }
+    ],
+    "provenance": [
+      {
+        "source_kind": "owner-page",
+        "path": "wiki/entities/faction/existing-owner.md",
+        "authority": "accepted",
+        "status": "current"
+      }
+    ],
+    "current_truth": [
+      {
+        "fact": "owner_identity",
+        "status": "accepted",
+        "source": "owner-page"
+      },
+      {
+        "fact": "existing_state",
+        "status": "accepted",
+        "source": "owner-page"
+      }
+    ],
+    "affected_truth": [],
+    "proposal": [],
+    "reveal": "revealed",
+    "visibility": "dm",
+    "acceptance": "not-required",
+    "dm_acceptance": "not-required",
+    "canon_state": "unchanged",
+    "writes_fact": false,
+    "filing": "not-filed"
+  },
+  {
+    "evidence_id": "canon-affected-truth",
+    "kind": "canon-boundary",
+    "work_class": "campaign-architecture",
+    "route": "full-sdd",
+    "status": "complete",
+    "owner_resolution": "reuse",
+    "owner_artifacts": [
+      {
+        "kind": "owner-page",
+        "path": "wiki/entities/faction/existing-owner.md",
+        "role": "canonical-owner"
+      },
+      {
+        "kind": "work-record",
+        "path": "work/canon-review.md",
+        "role": "dm-review-surface"
+      }
+    ],
+    "provenance": [
+      {
+        "source_kind": "owner-page",
+        "path": "wiki/entities/faction/existing-owner.md",
+        "authority": "accepted",
+        "status": "current"
+      },
+      {
+        "source_kind": "work-record",
+        "path": "work/canon-review.md",
+        "authority": "proposed",
+        "status": "under-review"
+      }
+    ],
+    "current_truth": [
+      {
+        "fact": "owner_identity",
+        "status": "accepted",
+        "source": "owner-page"
+      }
+    ],
+    "affected_truth": [
+      {
+        "fact": "accepted_state_under-review",
+        "status": "accepted",
+        "contradiction": "visible",
+        "source": "owner-page"
+      }
+    ],
+    "proposal": [],
+    "reveal": "revealed",
+    "visibility": "dm",
+    "acceptance": "pending",
+    "dm_acceptance": "pending",
+    "canon_state": "unchanged",
+    "writes_fact": false,
+    "filing": "staged"
+  },
+  {
+    "evidence_id": "canon-conditional-proposal",
+    "kind": "canon-boundary",
+    "work_class": "campaign-architecture",
+    "route": "full-sdd",
+    "status": "complete",
+    "owner_resolution": "reuse",
+    "owner_artifacts": [
+      {
+        "kind": "owner-page",
+        "path": "wiki/entities/faction/existing-owner.md",
+        "role": "canonical-owner"
+      },
+      {
+        "kind": "work-record",
+        "path": "work/conditional-event.md",
+        "role": "proposal"
+      }
+    ],
+    "provenance": [
+      {
+        "source_kind": "owner-page",
+        "path": "wiki/entities/faction/existing-owner.md",
+        "authority": "accepted",
+        "status": "current"
+      },
+      {
+        "source_kind": "work-record",
+        "path": "work/conditional-event.md",
+        "authority": "proposed",
+        "status": "unaccepted"
+      }
+    ],
+    "current_truth": [
+      {
+        "fact": "owner_identity",
+        "status": "accepted",
+        "source": "owner-page"
+      }
+    ],
+    "affected_truth": [
+      {
+        "fact": "future-state",
+        "status": "not-yet-true",
+        "source": "work-record"
+      }
+    ],
+    "proposal": {
+      "kind": "conditional-future-event",
+      "status": "proposal",
+      "condition": "trigger_unresolved",
+      "outcome": "state_change_if_triggered",
+      "player_owned": true
+    },
+    "reveal": "unrevealed",
+    "visibility": "dm",
+    "acceptance": "pending",
+    "dm_acceptance": "pending",
+    "canon_state": "proposal",
+    "writes_fact": false,
+    "filing": "not-filed"
+  },
+  {
+    "evidence_id": "canon-proposal-reveal-boundary",
+    "kind": "canon-boundary",
+    "work_class": "creative-system",
+    "route": "full-sdd",
+    "status": "complete",
+    "owner_resolution": "reuse",
+    "owner_artifacts": [
+      {
+        "kind": "work-record",
+        "path": "work/conditional-event.md",
+        "role": "proposal"
+      }
+    ],
+    "provenance": [
+      {
+        "source_kind": "work-record",
+        "path": "work/conditional-event.md",
+        "authority": "proposed",
+        "status": "unaccepted"
+      }
+    ],
+    "current_truth": [],
+    "affected_truth": [],
+    "proposal": {
+      "kind": "conditional-future-event",
+      "status": "proposal",
+      "condition": "player_choice_or_world_trigger",
+      "outcome": "open"
+    },
+    "reveal": "unrevealed",
+    "visibility": "dm",
+    "acceptance": "pending",
+    "dm_acceptance": "pending",
+    "canon_state": "proposal",
+    "writes_fact": false,
+    "filing": "staged"
+  },
+  {
+    "evidence_id": "canon-dm-accepted-truth",
+    "kind": "canon-boundary",
+    "work_class": "campaign-architecture",
+    "route": "full-sdd",
+    "status": "complete",
+    "owner_resolution": "reuse",
+    "owner_artifacts": [
+      {
+        "kind": "owner-page",
+        "path": "wiki/entities/faction/existing-owner.md",
+        "role": "canonical-owner"
+      },
+      {
+        "kind": "work-record",
+        "path": "work/accepted-change.md",
+        "role": "accepted-work"
+      }
+    ],
+    "provenance": [
+      {
+        "source_kind": "work-record",
+        "path": "work/accepted-change.md",
+        "authority": "dm-accepted",
+        "status": "accepted"
+      },
+      {
+        "source_kind": "owner-page",
+        "path": "wiki/entities/faction/existing-owner.md",
+        "authority": "accepted",
+        "status": "filed"
+      }
+    ],
+    "current_truth": [
+      {
+        "fact": "accepted_state",
+        "status": "accepted",
+        "source": "owner-page"
+      }
+    ],
+    "affected_truth": [
+      {
+        "fact": "accepted_state_under-review",
+        "status": "accepted",
+        "source": "work-record"
+      }
+    ],
+    "proposal": null,
+    "reveal": "revealed",
+    "visibility": "dm",
+    "acceptance": "accepted",
+    "dm_acceptance": "accepted",
+    "canon_state": "accepted-truth",
+    "writes_fact": true,
+    "filing": "promoted"
+  },
+  {
+    "evidence_id": "canon-filing-staged",
+    "kind": "canon-boundary",
+    "work_class": "creative-system",
+    "route": "full-sdd",
+    "status": "complete",
+    "owner_resolution": "reuse",
+    "owner_artifacts": [
+      {
+        "kind": "work-record",
+        "path": "work/pending-change.md",
+        "role": "dm-review-surface"
+      }
+    ],
+    "provenance": [
+      {
+        "source_kind": "work-record",
+        "path": "work/pending-change.md",
+        "authority": "proposed",
+        "status": "unaccepted"
+      }
+    ],
+    "current_truth": [],
+    "affected_truth": [],
+    "proposal": {
+      "kind": "conditional-future-event",
+      "status": "proposal",
+      "condition": "dm_acceptance_pending",
+      "outcome": "not-canon"
+    },
+    "reveal": "unrevealed",
+    "visibility": "dm",
+    "acceptance": "pending",
+    "dm_acceptance": "pending",
+    "canon_state": "proposal",
+    "writes_fact": false,
+    "filing": "staged"
+  },
+  {
+    "evidence_id": "canon-filing-filed",
+    "kind": "canon-boundary",
+    "work_class": "campaign-architecture",
+    "route": "full-sdd",
+    "status": "complete",
+    "owner_resolution": "reuse",
+    "owner_artifacts": [
+      {
+        "kind": "owner-page",
+        "path": "wiki/entities/faction/existing-owner.md",
+        "role": "canonical-owner"
+      }
+    ],
+    "provenance": [
+      {
+        "source_kind": "owner-page",
+        "path": "wiki/entities/faction/existing-owner.md",
+        "authority": "accepted",
+        "status": "filed"
+      }
+    ],
+    "current_truth": [
+      {
+        "fact": "accepted_state",
+        "status": "accepted",
+        "source": "owner-page"
+      }
+    ],
+    "affected_truth": [],
+    "proposal": null,
+    "reveal": "revealed",
+    "visibility": "dm",
+    "acceptance": "accepted",
+    "dm_acceptance": "accepted",
+    "canon_state": "accepted-truth",
+    "writes_fact": true,
+    "filing": "filed"
+  }
+]

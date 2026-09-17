@@ -1,0 +1,151 @@
+# Maintainer-owned efficiency policy for useful-trajectory comparisons.
+schema_version: 1
+policy_version: "1.0"
+owner:
+  role: maintainers
+  path: config/efficiency.yaml
+  agents_may: [read, propose]
+  maintainer_approval_required: true
+  silent_threshold_changes: forbidden
+  silent_gate_changes: forbidden
+  silent_autonomy_changes: forbidden
+
+retention_days: 90
+retention:
+  days: 90
+  normal_trace_storage: .local/efficiency/traces.jsonl
+  normal_traces: local-gitignored
+  records: redacted-metadata-and-token-counts-only
+  sanitized_fixtures_and_pinned_baselines: may-commit
+
+comparison_classes:
+  - prep
+  - wrapup
+metadata_only_classes:
+  - audit
+  - replay
+same_kind_comparisons: required
+
+measurement:
+  collection: every-prep-and-wrapup-sitting
+  explicit_disablement: measurement-gap
+  whole_useful_trajectory: required
+  included_components:
+    - request
+    - loaded-context
+    - retrieval
+    - tools
+    - failures
+    - retries
+    - model-input
+    - model-output
+    - final-work
+  excluded_components:
+    - idle
+    - unrelated-activity
+  primary_token_owner: exclusive
+  secondary_provenance: metadata-only
+  failed_or_incomplete_work: retain-trace-exclude-from-accepted-denominator
+
+promotion:
+  pinned_baseline: required
+  equivalent_inputs: required
+  paired_replay: required
+  minimum_pairs: 10
+  minimum_median_reduction: 0.05
+  reduction_metric: trajectory-tokens
+  reduction_comparison: median
+  same_kind_pairs: required
+  zero_new_hard_gate_failures: required
+  semantic_non_inferiority:
+    required: true
+    evaluator: blind-paired
+    rubric: fixed-versioned
+  no_material_runtime_failure_increase: required
+  no_material_dm_revision_increase: required
+
+risk_classes:
+  low:
+    changes:
+      - deterministic-cleanup
+    autonomy: auto-promote
+    required_replay: pinned-paired
+    canary_required: true
+    canary_fraction: 0.10
+    shadow_replay_required: false
+    canary_review_required: false
+    human_review_required: false
+  moderate:
+    changes:
+      - retrieval
+      - routing
+      - context-budgets
+      - tool-exposure
+    autonomy: shadow-and-canary-review
+    required_replay: pinned-paired
+    canary_required: true
+    canary_fraction: 0.10
+    shadow_replay_required: true
+    canary_review_required: true
+    human_review_required: false
+  high:
+    changes:
+      - semantic-compression
+      - model-changes
+      - canon-changes
+      - schema-changes
+      - instruction-redesign
+      - policy-changes
+      - threshold-changes
+    autonomy: human-review
+    required_replay: pinned-paired
+    canary_required: false
+    shadow_replay_required: false
+    canary_review_required: false
+    human_review_required: true
+
+canary:
+  low:
+    required: true
+    fraction: 0.10
+  moderate:
+    required: true
+    fraction: 0.10
+    review_required: true
+  high:
+    required: false
+shadow:
+  low: false
+  moderate: true
+  high: false
+human_review:
+  low: false
+  moderate: false
+  high: true
+
+rollback:
+  hard_gate_failures: 0
+  semantic_regression: material
+  runtime_failure_regression: material
+  dm_revision_regression: material
+  trigger: any-hard-gate-failure-or-material-quality-regression
+  quality_regression_components:
+    - semantic
+    - runtime
+    - dm-revision
+
+native_tokenizer_governance:
+  required_change: separate-tracked-governance-change
+  accepted: false
+  authoritative_measurement: model-family-native-tokenizer
+  comparisons: blocked-until-governance-accepted
+  promotion: blocked-until-governance-accepted
+  measurement_gap:
+    reason: native-tokenizer-governance-pending
+    required: true
+    record_status: measurement-gap
+    exclude_from_complete_comparison_samples: true
+  compatibility:
+    same_model_family: required
+    same_tokenizer_family: required
+    same_encoding: required

@@ -18,14 +18,14 @@ summary: ""
 
 # {{title}}
 
-> [!abstract] Development
-> **Purpose.** What this beat needs to change for the party.
+> [!abstract] Development — the bump
+> **Purpose.** What this beat needs to change for the party — new direction, new capability, new constraint.
 >
 > **Trigger.** What brings this situation on screen.
 >
 > **Turn.** The fact, warning, relationship, advantage, or complication that changes the party's understanding.
 >
-> **Exit.** The decision, actionable lead, or changed situation that means the beat has done its job.
+> **Exit.** The party has a new direction of action they could not have chosen before this beat.
 >
 > **Target.** ~30 minutes.
 
@@ -36,8 +36,8 @@ summary: ""
 
 1. **Present the situation.** What wants the party's attention right now?
 2. **Let them engage.** What can they question, inspect, negotiate with, test, or refuse?
-3. **Make the turn.** Surface the information or change that makes this beat matter.
-4. **Hand back the choice.** State the changed situation clearly and ask what they do.
+3. **Make the turn.** Surface the information or change that makes this beat matter — the bump that sets a new direction.
+4. **Hand back the choice.** State the changed situation and the new direction clearly; ask what they do.
 
 ````col
 ```col-md

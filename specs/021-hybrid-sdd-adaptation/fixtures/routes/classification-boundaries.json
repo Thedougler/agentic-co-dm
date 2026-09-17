@@ -1,0 +1,61 @@
+[
+  {
+    "scenario_id": "F-entity-collision",
+    "request_kind": "entity-collision",
+    "expected": {
+      "work_class": "campaign-architecture",
+      "route": "full-sdd",
+      "reason_contains": [
+        "campaign structure",
+        "existing owner"
+      ],
+      "scope_boundary": "campaign-structure",
+      "owner_resolution": {
+        "equivalent": "reuse-existing-owner",
+        "uncertain": "report-collision-before-new-owner"
+      },
+      "canon_state": "proposal",
+      "dm_acceptance": "pending"
+    },
+    "request": "Assess a proposed durable campaign entity whose title or alias matches an existing owner; reuse the owner when equivalent, otherwise report the collision before proposing a new owner. Keep any future event as a proposal pending DM acceptance."
+  },
+  {
+    "scenario_id": "G-mixed-request",
+    "request_kind": "mixed",
+    "expected": {
+      "reason_contains": [
+        "system-changing slice",
+        "routine content"
+      ],
+      "scope_boundary": "mixed-request",
+      "slices": [
+        {
+          "slice_id": "system-change",
+          "request_kind": "agent-system",
+          "expected": {
+            "work_class": "agent-system",
+            "route": "full-sdd",
+            "reason_contains": [
+              "future agent behavior"
+            ],
+            "scope_boundary": "system-change"
+          }
+        },
+        {
+          "slice_id": "routine-content",
+          "request_kind": "routine-npc",
+          "expected": {
+            "work_class": "routine-content",
+            "route": "existing-skill",
+            "skill_route": "npc-design",
+            "reason_contains": [
+              "routine content"
+            ],
+            "scope_boundary": "routine-content"
+          }
+        }
+      ]
+    },
+    "request": "Change agent-facing routing behavior and also prepare one ordinary NPC using the established campaign-content process; separate the system change from the routine NPC slice."
+  }
+]
