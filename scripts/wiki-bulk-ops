@@ -6,9 +6,10 @@ import argparse
 import json
 import os
 import re
+import subprocess
 import sys
 import tempfile
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Callable, Iterable
 
@@ -45,6 +46,8 @@ class ChangeRecord:
     changes: list[Change]
     skipped: bool = False
     skip_reason: str | None = None
+    resolution: str | None = None
+    candidates: list[str] | None = None
 
 
 @dataclass
@@ -56,10 +59,10 @@ class OperationResult:
     files_skipped: int
     total_changes: int
     records: list[ChangeRecord]
+    details: dict[str, object] = field(default_factory=dict)
 
     def jsonable(self) -> dict:
         return asdict(self)
-
 
 @dataclass(frozen=True)
 class Frontmatter:
@@ -176,11 +179,17 @@ def line_number(text: str, offset: int) -> int:
     return text.count("\n", 0, offset) + 1
 
 
-def result_for(command: str, dry_run: bool, scanned: int, records: list[ChangeRecord]) -> OperationResult:
+def result_for(
+    command: str,
+    dry_run: bool,
+    scanned: int,
+    records: list[ChangeRecord],
+    details: dict[str, object] | None = None,
+) -> OperationResult:
     modified = sum(1 for record in records if record.changes and not record.skipped)
     skipped = sum(1 for record in records if record.skipped)
     changes = sum(len(record.changes) for record in records)
-    return OperationResult(command, dry_run, scanned, modified, skipped, changes, records)
+    return OperationResult(command, dry_run, scanned, modified, skipped, changes, records, details or {})
 
 
 def emit(result: OperationResult, json_mode: bool, description: str) -> None:
@@ -254,6 +263,203 @@ def title_rewrite(text: str, old_title: str | None, new_title: str) -> tuple[str
             lines[index] = new_line
         break
     return "".join(lines), changes
+
+def link_stem(target: str) -> str:
+    normalized = target[:-3] if target.endswith(".md") else target
+    return normalized.rsplit("/", 1)[-1]
+
+
+def parse_aliases(text: str) -> list[str]:
+    fm = parse_frontmatter(text)
+    if fm is None:
+        return []
+    aliases: list[str] = []
+    lines = fm.lines
+    for index in range(fm.body_start, fm.body_end):
+        match = FM_LINE_RE.match(lines[index])
+        if not match or match.group(1) != "aliases" or lines[index].startswith((" ", "\t")):
+            continue
+        raw = match.group(3).strip()
+        if raw.startswith("[") and raw.endswith("]"):
+            aliases.extend(clean_scalar(item.strip()) for item in raw[1:-1].split(",") if item.strip())
+        elif not raw:
+            next_index = index + 1
+            while next_index < fm.body_end and re.match(r"^[ \t]+-\s*", lines[next_index]):
+                aliases.append(clean_scalar(re.sub(r"^[ \t]+-\s*", "", lines[next_index]).strip()))
+                next_index += 1
+        break
+    return [alias for alias in aliases if alias]
+
+
+def existing_stems(vault: Path) -> set[str]:
+    return {path.stem for path in iter_markdown(vault, None, None)}
+
+
+def parse_mapping_file(raw_path: str, vault: Path) -> dict[str, str]:
+    path = Path(raw_path).expanduser()
+    if not path.is_absolute() and not path.exists():
+        path = vault / path
+    if not path.exists() or not path.is_file():
+        raise CLIError(f"mapping file does not exist: {path}")
+    mapping: dict[str, str] = {}
+    try:
+        lines = path.read_text(encoding="utf-8").splitlines()
+    except (OSError, UnicodeDecodeError) as exc:
+        raise CLIError(f"cannot read mapping file {path}: {exc}") from exc
+    for number, line in enumerate(lines, 1):
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        columns = line.split("\t")
+        if len(columns) != 2 or not all(column.strip() for column in columns):
+            print(f"warning: skipping malformed mapping line {path}:{number}", file=sys.stderr)
+            continue
+        old, new = (column.strip() for column in columns)
+        mapping[link_stem(old).casefold()] = link_stem(new)
+    return mapping
+
+
+def git_rename_mapping(vault: Path, stems: set[str]) -> dict[str, str]:
+    try:
+        completed = subprocess.run(
+            ["git", "log", "--all", "--diff-filter=R", "--summary", "--name-status"],
+            cwd=vault,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+    except OSError:
+        return {}
+    if completed.returncode != 0:
+        return {}
+    mapping: dict[str, str] = {}
+    pending_old: str | None = None
+    for line in completed.stdout.splitlines():
+        stripped = line.strip()
+        match = re.match(r"^R\d*\s+(.+?)\s+(.+?)$", stripped)
+        if match:
+            old, new = Path(match.group(1)).stem, Path(match.group(2)).stem
+            if new in stems:
+                mapping[old.casefold()] = new
+            continue
+        match = re.match(r"^rename from (.+)$", stripped)
+        if match:
+            pending_old = Path(match.group(1)).stem
+            continue
+        match = re.match(r"^rename to (.+)$", stripped)
+        if match and pending_old is not None:
+            new = Path(match.group(1)).stem
+            if new in stems:
+                mapping[pending_old.casefold()] = new
+            pending_old = None
+    return mapping
+
+
+def alias_mapping(vault: Path, stems: set[str]) -> dict[str, str]:
+    mapping: dict[str, str] = {}
+    for path in iter_markdown(vault, None, None):
+        text, skipped = read_utf8(path, vault)
+        if skipped or text is None:
+            continue
+        for alias in parse_aliases(text):
+            mapping[link_stem(alias).casefold()] = path.stem
+    return {old: new for old, new in mapping.items() if new in stems}
+
+
+def levenshtein(left: str, right: str) -> int:
+    previous = list(range(len(right) + 1))
+    for row, left_char in enumerate(left, 1):
+        current = [row]
+        for column, right_char in enumerate(right, 1):
+            current.append(min(current[-1] + 1, previous[column] + 1, previous[column - 1] + (left_char != right_char)))
+        previous = current
+    return previous[-1]
+
+
+def resolve_link(
+    old: str,
+    stems: set[str],
+    mappings: list[tuple[str, dict[str, str]]],
+    fuzzy: bool,
+    threshold: int,
+) -> tuple[str | None, str, list[str]]:
+    key = old.casefold()
+    for source, mapping in mappings:
+        candidate = mapping.get(key)
+        if candidate and candidate in stems:
+            return candidate, source, []
+    if fuzzy:
+        candidates = sorted(stem for stem in stems if levenshtein(old.casefold(), stem.casefold()) <= threshold)
+        if len(candidates) == 1:
+            return candidates[0], "fuzzy", []
+        if candidates:
+            return None, "ambiguous", candidates
+    return None, "unresolved", []
+
+
+def link_repair(args: argparse.Namespace) -> tuple[OperationResult, str]:
+    vault = resolve_vault(args.vault)
+    if not 1 <= args.fuzzy_threshold <= 5:
+        raise CLIError("--fuzzy-threshold must be between 1 and 5")
+    stems = existing_stems(vault)
+    mappings: list[tuple[str, dict[str, str]]] = []
+    if args.mapping:
+        mappings.append(("mapping", parse_mapping_file(args.mapping, vault)))
+    if not args.no_git:
+        mappings.append(("git", git_rename_mapping(vault, stems)))
+    if not args.no_aliases:
+        mappings.append(("alias", alias_mapping(vault, stems)))
+    paths = list(iter_markdown(vault, args.glob, args.directory))
+    records: list[ChangeRecord] = []
+    plans: dict[Path, str] = {}
+    ambiguous: list[str] = []
+    unresolved: list[str] = []
+    resolutions: list[dict[str, str]] = []
+    for path in paths:
+        text, skipped = read_utf8(path, vault)
+        if skipped:
+            records.append(skipped)
+            continue
+        assert text is not None
+        targets = {link_stem(match.group(2)) for match in LINK_RE.finditer(text)}
+        broken = sorted(target for target in targets if target not in stems)
+        rewritten = text
+        changes: list[Change] = []
+        sources: set[str] = set()
+        candidates: set[str] = set()
+        for old in broken:
+            new, source, suggestions = resolve_link(old, stems, mappings, not args.no_fuzzy, args.fuzzy_threshold)
+            sources.add(source)
+            if source == "ambiguous":
+                ambiguous.append(old)
+                candidates.update(suggestions)
+                continue
+            if source == "unresolved":
+                unresolved.append(old)
+                continue
+            assert new is not None
+            rewritten, link_changes = rewrite_links(rewritten, old, new)
+            changes.extend(link_changes)
+            resolutions.append({"file": path.relative_to(vault).as_posix(), "target": old, "new": new, "source": source})
+        if changes:
+            plans[path] = rewritten
+        if changes or sources:
+            records.append(
+                ChangeRecord(
+                    path.relative_to(vault).as_posix(),
+                    changes,
+                    resolution=",".join(sorted(sources)),
+                    candidates=sorted(candidates) or None,
+                )
+            )
+    result = result_for(
+        "link-repair",
+        args.dry_run,
+        len(paths),
+        records,
+        {"resolutions": resolutions, "ambiguous": sorted(set(ambiguous)), "unresolved": sorted(set(unresolved))},
+    )
+    apply_content_plans(plans, args.dry_run)
+    return result, "link-repair"
 
 
 def rename(args: argparse.Namespace) -> tuple[OperationResult, str]:
@@ -460,6 +666,173 @@ def frontmatter(args: argparse.Namespace) -> tuple[OperationResult, str]:
     apply_content_plans(plans, args.dry_run)
     return result, f"frontmatter: {args.action} {args.field}"
 
+def clean_tag(raw: str) -> str:
+    return clean_scalar(raw.strip().strip("`")).lstrip("#").strip()
+
+
+def parse_taxonomy(text: str) -> tuple[set[str], dict[str, str]]:
+    canonical: set[str] = set()
+    aliases: dict[str, str] = {}
+    section = ""
+    for line in text.splitlines():
+        heading = re.match(r"^#+\s+(.+?)\s*$", line)
+        if heading:
+            section = heading.group(1).casefold()
+            continue
+        cells = [clean_tag(cell) for cell in line.strip().strip("|").split("|")]
+        if len(cells) >= 2 and cells[0].casefold() not in {"tag", "alias", "---"} and not all(set(cell) <= {"-", ":"} for cell in cells):
+            first, second = cells[0], cells[1]
+            if first and second and "alias" in section:
+                target_match = re.search(r"(?:say|use)\s+([A-Za-z0-9_/-]+)", second, re.I)
+                target = target_match.group(1) if target_match else second
+                if target.casefold() not in {"use", "canonical"} and not target.startswith("("):
+                    aliases[first.casefold()] = target
+                    canonical.add(target)
+            elif first and first.casefold() not in {"tag", "alias"}:
+                canonical.add(first)
+            continue
+        bullet = re.match(r"^\s*[-*]\s+(.+?)\s*$", line)
+        if bullet:
+            value = bullet.group(1)
+            if "alias" in section:
+                arrow = re.split(r"\s+(?:->|=>|→)\s+|\s*:\s*", value, maxsplit=1)
+            else:
+                arrow = re.split(r"\s+(?:->|=>|→)\s+", value, maxsplit=1)
+            if len(arrow) == 2:
+                old, new = (clean_tag(item) for item in arrow)
+                if old and new:
+                    aliases[old.casefold()] = new
+                    canonical.add(new)
+            elif "alias" in section:
+                value = clean_tag(value)
+                if value:
+                    aliases.setdefault(value.casefold(), value)
+            else:
+                value = clean_tag(value)
+                if value:
+                    canonical.add(value)
+    return canonical, aliases
+
+
+def taxonomy_path(raw_path: str | None, vault: Path) -> Path:
+    path = Path(raw_path) if raw_path else vault / "_meta" / "taxonomy.md"
+    if not path.is_absolute():
+        candidate = vault / path
+        path = candidate if candidate.exists() else path
+    if not path.exists() or not path.is_file():
+        raise CLIError(f"taxonomy file does not exist: {path}")
+    try:
+        path.read_text(encoding="utf-8")
+    except (OSError, UnicodeDecodeError) as exc:
+        raise CLIError(f"cannot read taxonomy file {path}: {exc}") from exc
+    return path
+
+
+def tag_values(lines: list[str], fm: Frontmatter) -> tuple[str, int, int, list[str], str] | None:
+    for index in range(fm.body_start, fm.body_end):
+        match = FM_LINE_RE.match(lines[index])
+        if not match or match.group(1) != "tags" or lines[index].startswith((" ", "\t")):
+            continue
+        raw = match.group(3).strip()
+        if raw.startswith("[") and raw.endswith("]"):
+            values = [clean_tag(item) for item in raw[1:-1].split(",") if item.strip()]
+            return "inline", index, index + 1, values, match.group(2)
+        if not raw:
+            end = index + 1
+            values: list[str] = []
+            indent = "  "
+            while end < fm.body_end:
+                item = re.match(r"^([ \t]+)-\s*(.*?)\r?\n?$", lines[end])
+                if not item:
+                    break
+                indent = item.group(1)
+                values.append(clean_tag(item.group(2)))
+                end += 1
+            return "block", index, end, values, indent
+    return None
+
+
+def tag_normalize(args: argparse.Namespace) -> tuple[OperationResult, str]:
+    vault = resolve_vault(args.vault)
+    taxonomy = taxonomy_path(args.taxonomy, vault)
+    canonical, aliases = parse_taxonomy(taxonomy.read_text(encoding="utf-8"))
+    known = {tag.casefold() for tag in canonical} | set(aliases)
+    paths = list(iter_markdown(vault, args.glob, args.directory))
+    records: list[ChangeRecord] = []
+    plans: dict[Path, str] = {}
+    unknown: set[str] = set()
+    for path in paths:
+        text, skipped = read_utf8(path, vault)
+        if skipped:
+            records.append(skipped)
+            continue
+        assert text is not None
+        fm = parse_frontmatter(text)
+        if fm is None:
+            continue
+        lines = list(fm.lines)
+        parsed = tag_values(lines, fm)
+        if parsed is None:
+            continue
+        mode, start, end, values, spacing = parsed
+        normalized: list[str] = []
+        seen: set[str] = set()
+        for value in values:
+            key = value.casefold()
+            if key in aliases:
+                value = aliases[key]
+            elif key in known:
+                value = next((tag for tag in canonical if tag.casefold() == key), value)
+            else:
+                unknown.add(value)
+                if args.remove_unknown:
+                    continue
+            if value.casefold() not in seen:
+                seen.add(value.casefold())
+                normalized.append(value)
+        if mode == "inline":
+            original = lines[start]
+            newline = "\r\n" if original.endswith("\r\n") else "\n" if original.endswith("\n") else ""
+            match = FM_LINE_RE.match(original)
+            assert match is not None
+            replacement = f"tags:{spacing}[{', '.join(normalized)}]{newline}"
+            if replacement != original:
+                lines[start] = replacement
+        else:
+            original = "".join(lines[start:end])
+            newline = "\r\n" if lines[start].endswith("\r\n") else "\n"
+            replacement_lines = [lines[start]] + [f"{spacing}- {value}{newline}" for value in normalized]
+            lines[start:end] = replacement_lines
+            replacement = "".join(replacement_lines)
+        rewritten = "".join(lines)
+        if rewritten != text:
+            changes = [Change(start + 1, original.rstrip("\r\n"), replacement.rstrip("\r\n"), "frontmatter")]
+            records.append(ChangeRecord(path.relative_to(vault).as_posix(), changes))
+            plans[path] = rewritten
+    result = result_for("tag-normalize", args.dry_run, len(paths), records, {"unknown_tags": sorted(unknown)})
+    apply_content_plans(plans, args.dry_run)
+    return result, "tag-normalize"
+
+
+def orphan_report(args: argparse.Namespace) -> tuple[OperationResult, str]:
+    vault = resolve_vault(args.vault)
+    all_paths = list(iter_markdown(vault, None, None))
+    candidates = list(iter_markdown(vault, args.glob, args.directory))
+    incoming: set[str] = set()
+    skipped_records: list[ChangeRecord] = []
+    for path in all_paths:
+        text, skipped = read_utf8(path, vault)
+        if skipped:
+            skipped_records.append(skipped)
+            continue
+        assert text is not None
+        incoming.update(link_stem(match.group(2)) for match in LINK_RE.finditer(text))
+    reserved = {"index.md", "log.md", "hot.md"}
+    orphan_paths = [path.relative_to(vault).as_posix() for path in candidates if path.name not in reserved and path.stem not in incoming]
+    records = skipped_records + [ChangeRecord(path, []) for path in orphan_paths]
+    result = result_for("orphan-report", args.dry_run, len(all_paths), records, {"orphans": orphan_paths})
+    return result, "orphan-report"
+
 
 def build_parser() -> argparse.ArgumentParser:
     class Parser(argparse.ArgumentParser):
@@ -497,9 +870,20 @@ def build_parser() -> argparse.ArgumentParser:
     fm_parser.add_argument("--value")
     fm_parser.add_argument("--new-field")
     fm_parser.add_argument("--filter", action="append", default=[])
+    repair_parser = subparsers.add_parser("link-repair")
+    add_common(repair_parser, suppress_defaults=True)
+    repair_parser.add_argument("--mapping")
+    repair_parser.add_argument("--no-git", action="store_true")
+    repair_parser.add_argument("--no-aliases", action="store_true")
+    repair_parser.add_argument("--no-fuzzy", action="store_true")
+    repair_parser.add_argument("--fuzzy-threshold", type=int, default=2)
+    tag_parser = subparsers.add_parser("tag-normalize")
+    add_common(tag_parser, suppress_defaults=True)
+    tag_parser.add_argument("--taxonomy")
+    tag_parser.add_argument("--remove-unknown", action="store_true")
+    orphan_parser = subparsers.add_parser("orphan-report")
+    add_common(orphan_parser, suppress_defaults=True)
     return parser
-
-
 def main(argv: list[str] | None = None) -> int:
     try:
         args = build_parser().parse_args(argv)
@@ -507,9 +891,17 @@ def main(argv: list[str] | None = None) -> int:
             result, description = rename(args)
         elif args.command == "replace":
             result, description = replace(args)
-        else:
+        elif args.command == "frontmatter":
             result, description = frontmatter(args)
+        elif args.command == "link-repair":
+            result, description = link_repair(args)
+        elif args.command == "tag-normalize":
+            result, description = tag_normalize(args)
+        else:
+            result, description = orphan_report(args)
         emit(result, args.json, description)
+        if args.command == "orphan-report":
+            return 0
         return 2 if result.files_skipped else 0
     except CLIError as exc:
         print(f"error: {exc}", file=sys.stderr)
@@ -517,6 +909,8 @@ def main(argv: list[str] | None = None) -> int:
     except OSError as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 2
+
+
 
 
 def self_check() -> None:
@@ -529,6 +923,20 @@ def self_check() -> None:
     assert renamed == "[[new|display]] ![[x/new#p]] old-kin"
     assert len(link_changes) == 2
     assert parse_fields("---\ntype: npc\n---\n") == {"type": "npc"}
+    with tempfile.TemporaryDirectory(prefix="wiki-bulk-self-check-") as raw:
+        vault = Path(raw)
+        (vault / "target.md").write_text("target\n", encoding="utf-8")
+        (vault / "source.md").write_text("[[old-target]]\n", encoding="utf-8")
+        mapping = vault / "mapping.tsv"
+        mapping.write_text("old-target\ttarget\n", encoding="utf-8")
+        assert main(["link-repair", "--mapping", str(mapping), "--no-git", "--no-fuzzy", "--vault", str(vault)]) == 0
+        assert (vault / "source.md").read_text(encoding="utf-8") == "[[target]]\n"
+        taxonomy = vault / "taxonomy.md"
+        taxonomy.write_text("# Tags\n- npc\n## Aliases\n- person -> npc\n", encoding="utf-8")
+        (vault / "tagged.md").write_text("---\ntags: [person, npc]\n---\nbody\n", encoding="utf-8")
+        assert main(["tag-normalize", "--taxonomy", str(taxonomy), "--vault", str(vault)]) == 0
+        assert "tags: [npc]" in (vault / "tagged.md").read_text(encoding="utf-8")
+        assert main(["orphan-report", "--vault", str(vault)]) == 0
 
 
 if __name__ == "__main__":

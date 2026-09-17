@@ -93,20 +93,20 @@
 
 > Write these behavioral tests first and confirm they fail before the implementation tasks.
 
-- [ ] T026 [US4] Add failing link-repair tests for: explicit TSV mapping resolves broken links; git-detected renames resolve links; frontmatter `aliases` field resolves links; single-candidate fuzzy match (Levenshtein ≤ threshold) resolves; multi-candidate fuzzy match reports candidates without resolving; unresolvable links reported unchanged — all in `tests/test_wiki_bulk_ops.py`
-- [ ] T027 [US4] Add failing link-repair safety tests for: `--no-git`/`--no-aliases`/`--no-fuzzy` flags disable respective tiers; `--fuzzy-threshold` value 1-5 controls match distance (reject outside range with exit 1); malformed TSV lines skipped with warning; piped wikilink targets `[[broken|display]]` updated while display preserved; idempotent re-run produces `files_modified: 0` — in `tests/test_wiki_bulk_ops.py`
+- [x] T026 [US4] Add failing link-repair tests for: explicit TSV mapping resolves broken links; git-detected renames resolve links; frontmatter `aliases` field resolves links; single-candidate fuzzy match (Levenshtein ≤ threshold) resolves; multi-candidate fuzzy match reports candidates without resolving; unresolvable links reported unchanged — all in `tests/test_wiki_bulk_ops.py`
+- [x] T027 [US4] Add failing link-repair safety tests for: `--no-git`/`--no-aliases`/`--no-fuzzy` flags disable respective tiers; `--fuzzy-threshold` value 1-5 controls match distance (reject outside range with exit 1); malformed TSV lines skipped with warning; piped wikilink targets `[[broken|display]]` updated while display preserved; idempotent re-run produces `files_modified: 0` — in `tests/test_wiki_bulk_ops.py`
 
 ### Implementation for User Story 4
 
-- [ ] T028 [US4] Add `link-repair` subparser to argparse with `--mapping FILE`, `--no-git`, `--no-aliases`, `--no-fuzzy`, `--fuzzy-threshold N` (default 2, validate 1-5) and wire to handler in `scripts/wiki-bulk-ops`
-- [ ] T029 [US4] Implement broken link detection: scan all scoped `.md` files for wikilink targets via existing `LINK_RE`; build set of existing page stems from vault; identify links where target stem has no matching `.md` file in `scripts/wiki-bulk-ops`
-- [ ] T030 [US4] Implement resolution tier 1 — explicit mapping: parse TSV file (`old_stem<tab>new_stem`, `#` comment lines, skip lines with wrong column count with stderr warning) per research.md Decision 10 in `scripts/wiki-bulk-ops`
-- [ ] T031 [US4] Implement resolution tier 2 — git rename history: run `git log --all --diff-filter=R --summary --name-status` in vault directory; parse renamed `.md` file paths; build old_stem→new_stem mapping (only for stems that currently exist) in `scripts/wiki-bulk-ops`
-- [ ] T032 [US4] Implement resolution tier 3 — frontmatter aliases: scan all vault pages for `aliases:` frontmatter field (inline YAML list); build alias_stem→canonical_stem mapping in `scripts/wiki-bulk-ops`
-- [ ] T033 [US4] Implement resolution tier 4 — fuzzy stem matching: Levenshtein edit distance function (stdlib-only, ~20 lines); for each unresolved broken link, find existing stems within `--fuzzy-threshold` edits; single-candidate → auto-resolve; multi-candidate → report with candidates list, do not resolve per FR-014 in `scripts/wiki-bulk-ops`
-- [ ] T034 [US4] Implement resolution application: for each resolved broken link, rewrite wikilink target using existing `LINK_RE` patterns (reuse rename rewrite logic from T015); preserve anchors, display text, embeds; produce zone-labeled `Change` records in `scripts/wiki-bulk-ops`
-- [ ] T035 [US4] Wire link-repair into dry-run/atomic-apply pipeline, JSON/text output with resolution source annotation (mapping/git/alias/fuzzy/ambiguous/unresolved), and idempotent re-run behavior in `scripts/wiki-bulk-ops`
-- [ ] T036 [US4] Add link-repair CLI acceptance tests for dry-run parity, `--json` output shape, glob/directory scoping, and partial-failure on bad-encoding files in `tests/test_wiki_bulk_ops.py`
+- [x] T028 [US4] Add `link-repair` subparser to argparse with `--mapping FILE`, `--no-git`, `--no-aliases`, `--no-fuzzy`, `--fuzzy-threshold N` (default 2, validate 1-5) and wire to handler in `scripts/wiki-bulk-ops`
+- [x] T029 [US4] Implement broken link detection: scan all scoped `.md` files for wikilink targets via existing `LINK_RE`; build set of existing page stems from vault; identify links where target stem has no matching `.md` file in `scripts/wiki-bulk-ops`
+- [x] T030 [US4] Implement resolution tier 1 — explicit mapping: parse TSV file (`old_stem<tab>new_stem`, `#` comment lines, skip lines with wrong column count with stderr warning) per research.md Decision 10 in `scripts/wiki-bulk-ops`
+- [x] T031 [US4] Implement resolution tier 2 — git rename history: run `git log --all --diff-filter=R --summary --name-status` in vault directory; parse renamed `.md` file paths; build old_stem→new_stem mapping (only for stems that currently exist) in `scripts/wiki-bulk-ops`
+- [x] T032 [US4] Implement resolution tier 3 — frontmatter aliases: scan all vault pages for `aliases:` frontmatter field (inline YAML list); build alias_stem→canonical_stem mapping in `scripts/wiki-bulk-ops`
+- [x] T033 [US4] Implement resolution tier 4 — fuzzy stem matching: Levenshtein edit distance function (stdlib-only, ~20 lines); for each unresolved broken link, find existing stems within `--fuzzy-threshold` edits; single-candidate → auto-resolve; multi-candidate → report with candidates list, do not resolve per FR-014 in `scripts/wiki-bulk-ops`
+- [x] T034 [US4] Implement resolution application: for each resolved broken link, rewrite wikilink target using existing `LINK_RE` patterns (reuse rename rewrite logic from T015); preserve anchors, display text, embeds; produce zone-labeled `Change` records in `scripts/wiki-bulk-ops`
+- [x] T035 [US4] Wire link-repair into dry-run/atomic-apply pipeline, JSON/text output with resolution source annotation (mapping/git/alias/fuzzy/ambiguous/unresolved), and idempotent re-run behavior in `scripts/wiki-bulk-ops`
+- [x] T036 [US4] Add link-repair CLI acceptance tests for dry-run parity, `--json` output shape, glob/directory scoping, and partial-failure on bad-encoding files in `tests/test_wiki_bulk_ops.py`
 
 **Checkpoint**: `scripts/wiki-bulk-ops link-repair --vault wiki` detects and repairs broken links through all four resolution tiers with dry-run, JSON output, and idempotency.
 
@@ -145,16 +145,16 @@
 
 > Write these behavioral tests first and confirm they fail before the implementation tasks.
 
-- [ ] T044 [US5] Add failing tag-normalize tests for: alias tags replaced with canonical form; duplicate tags collapsed after normalization; unknown tags reported but NOT removed; body content unchanged; YAML remains valid — in `tests/test_wiki_bulk_ops.py`
-- [ ] T045 [US5] Add failing tag-normalize safety tests for: `--remove-unknown` flag removes unknown tags; `--taxonomy FILE` overrides default `_meta/taxonomy.md` path; taxonomy file must exist (exit 1 if missing); idempotent re-run produces `files_modified: 0`; glob/directory scoping — in `tests/test_wiki_bulk_ops.py`
+- [x] T044 [US5] Add failing tag-normalize tests for: alias tags replaced with canonical form; duplicate tags collapsed after normalization; unknown tags reported but NOT removed; body content unchanged; YAML remains valid — in `tests/test_wiki_bulk_ops.py`
+- [x] T045 [US5] Add failing tag-normalize safety tests for: `--remove-unknown` flag removes unknown tags; `--taxonomy FILE` overrides default `_meta/taxonomy.md` path; taxonomy file must exist (exit 1 if missing); idempotent re-run produces `files_modified: 0`; glob/directory scoping — in `tests/test_wiki_bulk_ops.py`
 
 ### Implementation for User Story 5
 
-- [ ] T046 [US5] Add `tag-normalize` subparser to argparse with `--taxonomy FILE` (default `_meta/taxonomy.md` in vault) and `--remove-unknown` flag; validate taxonomy file exists (exit 1 if not) in `scripts/wiki-bulk-ops`
-- [ ] T047 [US5] Implement taxonomy parser: read taxonomy file; extract canonical tags and aliases from heading/list-item format per research.md Decision 11; build bidirectional alias→canonical mapping in `scripts/wiki-bulk-ops`
-- [ ] T048 [US5] Implement tag normalization logic: for each scoped file, parse frontmatter `tags:` field (inline YAML list `[a, b]` or block list `- a\n- b`); replace alias tags with canonical form; collapse duplicates; collect unknown tags; remove unknowns only if `--remove-unknown` per FR-015 in `scripts/wiki-bulk-ops`
-- [ ] T049 [US5] Wire tag-normalize into dry-run/atomic-apply pipeline with `Change` records (zone `frontmatter`), summary reporting unknown tags separately, and idempotent re-run behavior in `scripts/wiki-bulk-ops`
-- [ ] T050 [US5] Add tag-normalize CLI acceptance tests for dry-run parity, `--json` output shape, and partial-failure on bad-encoding files in `tests/test_wiki_bulk_ops.py`
+- [x] T046 [US5] Add `tag-normalize` subparser to argparse with `--taxonomy FILE` (default `_meta/taxonomy.md` in vault) and `--remove-unknown` flag; validate taxonomy file exists (exit 1 if not) in `scripts/wiki-bulk-ops`
+- [x] T047 [US5] Implement taxonomy parser: read taxonomy file; extract canonical tags and aliases from heading/list-item format per research.md Decision 11; build bidirectional alias→canonical mapping in `scripts/wiki-bulk-ops`
+- [x] T048 [US5] Implement tag normalization logic: for each scoped file, parse frontmatter `tags:` field (inline YAML list `[a, b]` or block list `- a\n- b`); replace alias tags with canonical form; collapse duplicates; collect unknown tags; remove unknowns only if `--remove-unknown` per FR-015 in `scripts/wiki-bulk-ops`
+- [x] T049 [US5] Wire tag-normalize into dry-run/atomic-apply pipeline with `Change` records (zone `frontmatter`), summary reporting unknown tags separately, and idempotent re-run behavior in `scripts/wiki-bulk-ops`
+- [x] T050 [US5] Add tag-normalize CLI acceptance tests for dry-run parity, `--json` output shape, and partial-failure on bad-encoding files in `tests/test_wiki_bulk_ops.py`
 
 **Checkpoint**: `scripts/wiki-bulk-ops tag-normalize --vault wiki` canonicalizes tags with dry-run, JSON output, and idempotency.
 
@@ -170,14 +170,14 @@
 
 > Write these behavioral tests first and confirm they fail before the implementation tasks.
 
-- [ ] T051 [US6] Add failing orphan-report tests for: pages with zero incoming wikilinks are listed; pages with incoming links excluded; `index.md`, `log.md`, `hot.md` excluded; skip dirs excluded; exit code 0 always; `files_modified: 0`; no files changed on disk — in `tests/test_wiki_bulk_ops.py`
-- [ ] T052 [US6] Add failing cross-operation dry-run parity tests comparing preview and apply modified-file/change counts for link-repair, tag-normalize, and orphan-report, and verifying repeated live runs return zero changes in `tests/test_wiki_bulk_ops.py`
+- [x] T051 [US6] Add failing orphan-report tests for: pages with zero incoming wikilinks are listed; pages with incoming links excluded; `index.md`, `log.md`, `hot.md` excluded; skip dirs excluded; exit code 0 always; `files_modified: 0`; no files changed on disk — in `tests/test_wiki_bulk_ops.py`
+- [x] T052 [US6] Add failing cross-operation dry-run parity tests comparing preview and apply modified-file/change counts for link-repair, tag-normalize, and orphan-report, and verifying repeated live runs return zero changes in `tests/test_wiki_bulk_ops.py`
 
 ### Implementation for User Story 6
 
-- [ ] T053 [US6] Add `orphan-report` subparser to argparse (no operation-specific flags beyond global opts) and wire to handler in `scripts/wiki-bulk-ops`
-- [ ] T054 [US6] Implement orphan detection: build incoming-link index by scanning all vault `.md` files for wikilink targets; identify pages with zero incoming wikilinks; exclude special pages (`index.md`, `log.md`, `hot.md`) and skip dirs; report as `OperationResult` with `files_modified: 0` and records listing orphan paths per FR-016 in `scripts/wiki-bulk-ops`
-- [ ] T055 [US6] Wire orphan-report into JSON/text output pipeline; always exit 0 (report-only); verify dry-run and non-dry-run produce identical output (no writes in either mode) in `scripts/wiki-bulk-ops`
+- [x] T053 [US6] Add `orphan-report` subparser to argparse (no operation-specific flags beyond global opts) and wire to handler in `scripts/wiki-bulk-ops`
+- [x] T054 [US6] Implement orphan detection: build incoming-link index by scanning all vault `.md` files for wikilink targets; identify pages with zero incoming wikilinks; exclude special pages (`index.md`, `log.md`, `hot.md`) and skip dirs; report as `OperationResult` with `files_modified: 0` and records listing orphan paths per FR-016 in `scripts/wiki-bulk-ops`
+- [x] T055 [US6] Wire orphan-report into JSON/text output pipeline; always exit 0 (report-only); verify dry-run and non-dry-run produce identical output (no writes in either mode) in `scripts/wiki-bulk-ops`
 
 **Checkpoint**: All six subcommands support `--dry-run` and `--json` with consistent output format.
 
@@ -188,11 +188,11 @@
 **Purpose**: Final verification of the complete public seam.
 
 - [x] T056 [P] Confirm executable permission and Python 3.14 stdlib-only shebang/import contract for `scripts/wiki-bulk-ops`
-- [ ] T057 Update `__main__` assert-based self-check at bottom of `scripts/wiki-bulk-ops` to cover link-repair, tag-normalize, and orphan-report round-trips in addition to existing rename/replace/frontmatter checks
-- [ ] T058 Run `python3 tests/test_wiki_bulk_ops.py` and the script self-check; fix only failures attributable to this feature
-- [ ] T059 Run quickstart scenarios 9-12 from `specs/023-wiki-bulk-ops/quickstart.md` (link-repair, tag-normalize, orphan-report) against temporary vault fixtures
-- [ ] T060 Run `wiki-lint` validation after representative link-repair and tag-normalize operations and record any feature-caused finding in the error ledger
-- [ ] T061 Review all six subcommand outputs, stderr, exit codes, idempotency, atomicity, and `WIKI_STAGED_WRITES` behavior against `specs/023-wiki-bulk-ops/contracts/cli-contract.md` and `specs/023-wiki-bulk-ops/spec.md`
+- [x] T057 Update `__main__` assert-based self-check at bottom of `scripts/wiki-bulk-ops` to cover link-repair, tag-normalize, and orphan-report round-trips in addition to existing rename/replace/frontmatter checks
+- [x] T058 Run `python3 tests/test_wiki_bulk_ops.py` and the script self-check; fix only failures attributable to this feature
+- [x] T059 Run quickstart scenarios 9-12 from `specs/023-wiki-bulk-ops/quickstart.md` (link-repair, tag-normalize, orphan-report) against temporary vault fixtures
+- [x] T060 Run `wiki-lint` validation after representative link-repair and tag-normalize operations and record any feature-caused finding in the error ledger
+- [x] T061 Review all six subcommand outputs, stderr, exit codes, idempotency, atomicity, and `WIKI_STAGED_WRITES` behavior against `specs/023-wiki-bulk-ops/contracts/cli-contract.md` and `specs/023-wiki-bulk-ops/spec.md`
 
 ---
 

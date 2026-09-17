@@ -198,5 +198,127 @@ class DryRunParityTests(VaultFixture):
         self.assertTrue(source.exists())
         self.assertFalse((self.vault / "new.md").exists())
 
+class LinkRepairTests(VaultFixture):
+    def test_link_repair_resolves_mapping_alias_and_fuzzy_and_reports_ambiguity(self) -> None:
+        self.page("current.md", "---\naliases: [old-page]\n---\ncurrent\n")
+        self.page("new-page.md", "new\n")
+        self.page("read.md", "read\n")
+        self.page("cot.md", "cot\n")
+        self.page("cut.md", "cut\n")
+        source = self.page("source.md", "[[old-page|alias]] [[mapped-page]] [[red]] [[cat]] [[zzzz]]\n")
+        mapping = self.page("mapping.tsv", "mapped-page\tnew-page\n")
+        preview = run_cli("link-repair", "--mapping", str(mapping), "--fuzzy-threshold", "1", "--dry-run", "--json", "--vault", str(self.vault))
+        self.assertEqual(preview.returncode, 0, preview.stderr)
+        data = json.loads(preview.stdout)
+        self.assertEqual(data["files_modified"], 1)
+        self.assertIn("resolution", data["records"][0])
+        self.assertIn("cat", data["details"]["ambiguous"])
+        self.assertIn("zzzz", data["details"]["unresolved"])
+        self.assertEqual(source.read_text(), "[[old-page|alias]] [[mapped-page]] [[red]] [[cat]] [[zzzz]]\n")
+        applied = run_cli("link-repair", "--mapping", str(mapping), "--fuzzy-threshold", "1", "--vault", str(self.vault))
+        self.assertEqual(applied.returncode, 0, applied.stderr)
+        self.assertEqual(source.read_text(), "[[current|alias]] [[new-page]] [[read]] [[cat]] [[zzzz]]\n")
+        repeat = run_cli("link-repair", "--mapping", str(mapping), "--fuzzy-threshold", "1", "--json", "--vault", str(self.vault))
+        self.assertEqual(repeat.returncode, 0, repeat.stderr)
+        self.assertEqual(json.loads(repeat.stdout)["files_modified"], 0)
+
+    def test_link_repair_flags_and_mapping_warnings(self) -> None:
+        self.page("current.md", "---\naliases: [old-page]\n---\n")
+        source = self.page("source.md", "[[old-page]] [[newp]]\n")
+        mapping = self.page("mapping.tsv", "bad-line\nnewp\tcurrent\textra\n")
+        disabled = run_cli("link-repair", "--mapping", str(mapping), "--no-aliases", "--no-fuzzy", "--no-git", "--json", "--vault", str(self.vault))
+        self.assertEqual(disabled.returncode, 0, disabled.stderr)
+        self.assertEqual(source.read_text(), "[[old-page]] [[newp]]\n")
+        self.assertIn("mapping", disabled.stderr.lower())
+        invalid = run_cli("link-repair", "--fuzzy-threshold", "6", "--vault", str(self.vault))
+        self.assertEqual(invalid.returncode, 1)
+
+    def test_link_repair_uses_git_renames_and_reports_bad_encoding(self) -> None:
+        self.page("old.md", "old\n")
+        source = self.page("nested/source.md", "[[old]]\n")
+        self.page("bad.md", b"\x80\x81")
+        subprocess.run(["git", "init", "-q"], cwd=self.vault, check=True)
+        subprocess.run(["git", "config", "user.email", "test@example.com"], cwd=self.vault, check=True)
+        subprocess.run(["git", "config", "user.name", "Test"], cwd=self.vault, check=True)
+        subprocess.run(["git", "add", "."], cwd=self.vault, check=True)
+        subprocess.run(["git", "commit", "-qm", "old"], cwd=self.vault, check=True)
+        subprocess.run(["git", "mv", "old.md", "new.md"], cwd=self.vault, check=True)
+        subprocess.run(["git", "commit", "-qm", "rename"], cwd=self.vault, check=True)
+        scoped = run_cli("link-repair", "--directory", "nested", "--json", "--vault", str(self.vault))
+        self.assertEqual(scoped.returncode, 0, scoped.stderr)
+        self.assertEqual(source.read_text(), "[[new]]\n")
+        result = run_cli("link-repair", "--json", "--vault", str(self.vault))
+        self.assertEqual(result.returncode, 2, result.stderr)
+        data = json.loads(result.stdout)
+        self.assertEqual(data["files_skipped"], 1)
+
+
+class TagNormalizeTests(VaultFixture):
+    def setUp(self) -> None:
+        super().setUp()
+        self.taxonomy = self.page("taxonomy.md", "# Taxonomy\n## Canonical\n- npc\n- creature\n## Aliases\n- monster -> creature\n")
+
+    def test_tag_normalize_aliases_duplicates_unknowns_and_body(self) -> None:
+        page = self.page("a.md", "---\ntags: [monster, npc, npc, unknown]\n---\nbody\n")
+        preview = run_cli("tag-normalize", "--taxonomy", str(self.taxonomy), "--dry-run", "--json", "--vault", str(self.vault))
+        self.assertEqual(preview.returncode, 0, preview.stderr)
+        self.assertEqual(page.read_text(), "---\ntags: [monster, npc, npc, unknown]\n---\nbody\n")
+        data = json.loads(preview.stdout)
+        self.assertEqual(data["files_modified"], 1)
+        self.assertEqual(data["details"]["unknown_tags"], ["unknown"])
+        applied = run_cli("tag-normalize", "--taxonomy", str(self.taxonomy), "--vault", str(self.vault))
+        self.assertEqual(applied.returncode, 0, applied.stderr)
+        self.assertEqual(page.read_text(), "---\ntags: [creature, npc, unknown]\n---\nbody\n")
+        removed = run_cli("tag-normalize", "--taxonomy", str(self.taxonomy), "--remove-unknown", "--vault", str(self.vault))
+        self.assertEqual(removed.returncode, 0, removed.stderr)
+        self.assertEqual(page.read_text(), "---\ntags: [creature, npc]\n---\nbody\n")
+        repeat = run_cli("tag-normalize", "--taxonomy", str(self.taxonomy), "--remove-unknown", "--json", "--vault", str(self.vault))
+        self.assertEqual(json.loads(repeat.stdout)["files_modified"], 0)
+
+    def test_tag_normalize_block_tags_and_missing_taxonomy(self) -> None:
+        page = self.page("nested/a.md", "---\ntags:\n  - monster\n  - npc\n---\nbody\n")
+        result = run_cli("tag-normalize", "--taxonomy", str(self.taxonomy), "--directory", "nested", "--vault", str(self.vault))
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(page.read_text(), "---\ntags:\n  - creature\n  - npc\n---\nbody\n")
+        self.page("bad.md", b"\x80\x81")
+        partial = run_cli("tag-normalize", "--taxonomy", str(self.taxonomy), "--json", "--vault", str(self.vault))
+        self.assertEqual(partial.returncode, 2, partial.stderr)
+        self.assertEqual(json.loads(partial.stdout)["files_skipped"], 1)
+        missing = run_cli("tag-normalize", "--taxonomy", str(self.vault / "missing.md"), "--vault", str(self.vault))
+        self.assertEqual(missing.returncode, 1)
+
+
+class OrphanReportTests(VaultFixture):
+    def test_orphan_report_lists_only_unlinked_pages_without_writing(self) -> None:
+        self.page("index.md", "[[linked]]\n")
+        self.page("log.md", "log\n")
+        self.page("hot.md", "hot\n")
+        linked = self.page("linked.md", "linked\n")
+        orphan = self.page("orphan.md", "orphan\n")
+        before = {path: path.read_bytes() for path in (linked, orphan)}
+        result = run_cli("orphan-report", "--json", "--vault", str(self.vault))
+        self.assertEqual(result.returncode, 0, result.stderr)
+        data = json.loads(result.stdout)
+        self.assertEqual(data["files_modified"], 0)
+        self.assertIn("orphan.md", data["details"]["orphans"])
+        self.assertNotIn("linked.md", data["details"]["orphans"])
+        self.assertFalse(any(name in data["details"]["orphans"] for name in ("index.md", "log.md", "hot.md")))
+        self.assertEqual({path: path.read_bytes() for path in (linked, orphan)}, before)
+
+    def test_dry_run_parity_for_report_and_repair(self) -> None:
+        self.page("target.md", "target\n")
+        source = self.page("source.md", "[[old-target]]\n")
+        mapping = self.page("mapping.tsv", "old-target\ttarget\n")
+        preview = json.loads(run_cli("link-repair", "--mapping", str(mapping), "--dry-run", "--json", "--vault", str(self.vault)).stdout)
+        applied_result = run_cli("link-repair", "--mapping", str(mapping), "--json", "--vault", str(self.vault))
+        applied = json.loads(applied_result.stdout)
+        self.assertEqual((preview["files_modified"], preview["total_changes"]), (applied["files_modified"], applied["total_changes"]))
+        report_preview = json.loads(run_cli("orphan-report", "--dry-run", "--json", "--vault", str(self.vault)).stdout)
+        report_live = json.loads(run_cli("orphan-report", "--json", "--vault", str(self.vault)).stdout)
+        self.assertEqual(report_preview["details"], report_live["details"])
+        self.assertEqual(report_preview["files_modified"], report_live["files_modified"])
+        self.assertEqual(report_preview["total_changes"], report_live["total_changes"])
+        self.assertEqual(source.read_text(), "[[target]]\n")
+
 if __name__ == "__main__":
     unittest.main()
