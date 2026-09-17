@@ -1,9 +1,19 @@
 <!--
 Sync Impact Report
-- Version change: 1.22.0 -> 1.23.0
-- Modified principles: VI. Software Is Agent-Shaped (added automatic fixed-error ledger cleanup)
+- Version change: 1.23.0 → 1.24.0 (MINOR)
+- Modified principles:
+  - V. Single Source of Truth — removed symlink/harness enforcement detail (pushed to lower-level policy)
+  - VI. Software Is Agent-Shaped — removed error-ledger procedure detail; merged old XV (Machine-Readable Identity) as one paragraph
+  - VIII. Safe Automation Runs Unattended — added deterministic-helper-first rule for repeatable operations
+  - IX. Measured, Quality-Bounded Efficiency — added context-cost gate for all repo tooling; added token-efficiency and deterministic-helper language
+  - XIII. Self-Improvement Is Evidence-Driven — trimmed paragraph restating VII and IX
+  - XIV. Designated Writers Have Bounded Concurrency — trimmed volatile detail
+  - XVI. The Simplest Adequate Tool (was XVII) — strengthened against unnecessary new tooling
+  - XIX. The Wiki Is Additive, Self-Sealing, and Self-Healing (was XX) — removed git-commit procedure detail
+- Removed sections:
+  - XV. Artifacts Expose Machine-Readable Identity — merged into VI
+- Renumbered: old XVI→XV, XVII→XVI, XVIII→XVII, XIX→XVIII, XX→XIX
 - Added sections: None
-- Removed sections: None
 - Follow-up TODOs: None
 -->
 
@@ -56,25 +66,12 @@ domain language belongs in `CONTEXT.md`; resolved architecture belongs in ADRs; 
 belongs in specs and contracts; task procedures belong in skills; current operating policy
 belongs in `AGENTS.md`.
 
-Repository-owned agent skills MUST have one canonical editable authority at
-`.agents/skills/<name>/SKILL.md`, with co-located support files under that directory. Agents MUST
-edit this canonical tree and MUST NOT edit an alternate harness copy. When another location needs
-to expose a repository-owned skill, it MUST be a symlink to the canonical skill directory or
-file. Alternate regular-file copies, broken symlinks, duplicated skill bodies, or edits made
-outside the canonical tree are deviations; they MUST be detected, reported, and fixed immediately.
-A canonical change MUST propagate through those symlinks without a second synchronization step.
-
-Harness discovery MUST be constrained to the harness's declared default skill location or the
-repository default section at `.agents/skills/`. A harness MUST ignore every other skill copy,
-projection, or unlisted skill directory; it MUST NOT merge, rank, or silently fall back among
-duplicates. If the declared source is missing or invalid, the harness MUST report the failure
-rather than load another copy.
-
 Copies of other authoritative artifacts MAY link or summarize their owner, but MUST NOT create
 competing versions. Conflicts MUST remain visible until the authoritative owner resolves them.
+Lower-level policies define enforcement mechanisms for each artifact kind.
 
-Rationale: one editable skill authority lets every harness receive the same change and prevents
-behavioral drift caused by copied procedures.
+Rationale: one authoritative owner per fact prevents drift, conflicting edits, and wasted
+reconciliation.
 
 ### VI. Software Is Agent-Shaped
 
@@ -85,20 +82,16 @@ positive instructions, completion criteria, and named failure modes while using 
 disclosure. Human-facing wrappers MUST NOT replace an agent-capable surface when the agent can
 perform the same operation directly.
 
-Any agent-shaped software built for this wiki that inhibits wiki-content quality or slows agent
-operations is a critical defect. The owning agent MUST log the defect immediately in the error
-ledger, stop treating the software as acceptable, and fix or remove the root cause immediately.
-The fix MUST be verified at the affected public seam before dependent work continues. A temporary
-workaround MAY protect data during repair but MUST NOT substitute for the fix.
+Agent-consumed artifacts MUST expose sufficient machine-readable identity or metadata for agents
+to classify and route them without expensive inspection. Naming, frontmatter, schemas, and
+directory placement MAY provide that identity; lower-level policy names the required convention
+for each artifact kind.
 
-After a logged error is fixed and verified, the owning agent MUST automatically clean and condense
-the corresponding error-ledger entry through its supported ledger operation. Cleanup MUST retain
-concise cause, fix, and verification evidence, MUST remove duplicate or stale detail, and MUST NOT
-erase unresolved history or conceal recurrence.
+Any agent-shaped software that inhibits wiki-content quality or slows agent operations is a
+defect. The owning agent MUST log it, stop treating the software as acceptable, and fix or
+remove the root cause before dependent work continues.
 
-Rationale: an agent cannot depend on a surface it cannot invoke or inspect reliably, and a
-known harmful surface must not remain in service while its failure is undocumented. Automatic
-ledger cleanup keeps resolved failures actionable without allowing the record to become noise.
+Rationale: an agent cannot depend on a surface it cannot invoke, inspect, or classify reliably.
 
 ### VII. Creative Judgment Is Protected
 
@@ -113,26 +106,33 @@ Rationale: the Co-DM exists to produce playable Work, not procedural compliance 
 ### VIII. Safe Automation Runs Unattended
 
 Easy, safe, idempotent maintenance MUST run without an agent choosing its order or a human
-performing a needless chore. Automation that is unsafe, non-idempotent, or requires judgment
-MUST remain explicit and MUST NOT be hidden behind a hook. Automation MUST preserve data and
-surface failures rather than masking them.
+performing a needless chore. Repeatable operations MUST be encoded as deterministic helper scripts
+rather than re-derived by agents each session; a script that runs the same way every time is
+cheaper and more reliable than an agent re-reasoning the procedure. Automation that is unsafe,
+non-idempotent, or requires judgment MUST remain explicit and MUST NOT be hidden behind a hook.
+Automation MUST preserve data and surface failures rather than masking them.
 
-Rationale: unattended chores reduce interruption without removing necessary judgment.
+Rationale: deterministic scripts turn token-expensive repeated reasoning into fixed-cost
+operations; unattended chores reduce interruption without removing necessary judgment.
 
 ### IX. Measured, Quality-Bounded Efficiency
 
 Efficiency means reducing avoidable context, retrieval, tool, and output cost for the same
-successful outcome. Any claim labeled as a token improvement MUST use objective token measurement
-and compare comparable work. Lower usage counts as an improvement only when quality is preserved.
-Narrative craft, mechanics, specificity, canon fidelity, playability, player agency, and DM
-usefulness are protected quality constraints.
+successful outcome. Agent token efficiency is a first-class concern: fewer tokens for the same
+quality is always better. Any claim labeled as a token improvement MUST use objective token
+measurement and compare comparable work. Lower usage counts as an improvement only when quality
+is preserved. Narrative craft, mechanics, specificity, canon fidelity, playability, player
+agency, and DM usefulness are protected quality constraints.
 
-Standing context MUST be load-bearing. Agents MUST retrieve only the authoritative context needed
-for the current decision, expanding it when unresolved need requires it. Duplicate instructions,
-irrelevant retrieval, redundant tool output, retries, and unnecessary context are waste. No
-standing context may remain without a named function.
+Every script, skill, tool, utility, and standing instruction in this repository MUST earn its
+context cost by accelerating development or improving quality. Deterministic helpers that
+eliminate repeated agent reasoning are high-value. Over-specific guardrails, unused scripts,
+wrappers that add friction without preventing a named failure, and instructions that delay work
+without improving it are waste and MUST be removed or consolidated. Standing context MUST be
+load-bearing; duplicate instructions, irrelevant retrieval, and unnecessary context are waste.
 
-Rationale: cost is useful only when the Work remains equally correct, playable, and useful.
+Rationale: tooling exists to make agents faster and better, not to demonstrate process. Cost is
+useful only when the Work remains equally correct, playable, and useful.
 
 ### X. DM Owns Canon
 
@@ -179,12 +179,7 @@ is silent.
 Agent behavior, retrieval strategy, instruction design, context strategy, and tooling MAY improve
 continuously, but an improvement MUST be demonstrated rather than asserted. Optimization MUST
 address an observed failure, measured waste source, or evidenced opportunity and MUST compare
-equivalent or sufficiently comparable work.
-
-Experiments MUST preserve constitutional quality constraints. Uncertain changes MUST remain
-reversible until evidence supports promotion. Agents MUST NOT weaken evaluation criteria in the
-same experiment used to justify an optimization. Cheaper, shorter, or faster behavior is not
-automatically better behavior.
+equivalent work. Uncertain changes MUST remain reversible until evidence supports promotion.
 
 Rationale: optimization without evidence can efficiently make the system worse.
 
@@ -192,22 +187,11 @@ Rationale: optimization without evidence can efficiently make the system worse.
 
 Each canonical artifact MUST have at most one active writer. Concurrent writing is permitted only
 across independent write surfaces, MUST remain bounded, and MUST NOT create races, conflicting
-edits, or ambiguous ownership. A designated-writer policy MAY choose providers or schedules, but
-those volatile operating details MUST NOT change this invariant.
+edits, or ambiguous ownership.
 
 Rationale: bounded parallelism preserves throughput without sacrificing artifact integrity.
 
-### XV. Artifacts Expose Machine-Readable Identity
-
-Agent-consumed artifacts MUST expose sufficient machine-readable identity or metadata for agents
-to classify and route them without unnecessary expensive inspection where practical. Naming,
-frontmatter, schemas, and directory placement MAY provide that identity, but a lower-level policy
-MUST name the required convention for each artifact kind.
-
-Rationale: explicit identity reduces guessing, retrieval waste, and misrouting without freezing
-implementation-specific filenames into the constitution.
-
-### XVI. Prompt Other Agents With Objectives
+### XV. Prompt Other Agents With Objectives
 
 A prompt to another coding agent MUST state the objective, independently testable acceptance
 criteria, and deliverables. It MUST omit tool tutorials, harness manuals, standing process, and
@@ -216,16 +200,18 @@ needed to communicate those facts and any named failure prevention.
 
 Rationale: complete objectives preserve autonomy; padding consumes context without improving work.
 
-### XVII. The Simplest Adequate Tool
+### XVI. The Simplest Adequate Tool
 
-Agents MUST use the simplest tool that completes the job. Existing tools and native platform
-features take precedence over new abstractions or wrappers. A command-capable interface MUST be
-used directly when it is sufficient; wrappers MUST NOT obscure input, output, errors, or exit
-status without a demonstrated need.
+Agents MUST use the simplest tool that completes the job. Existing tools, stdlib functions, and
+native platform features MUST be used before adding new abstractions, wrappers, or dependencies.
+A command-capable interface MUST be used directly when sufficient; wrappers MUST NOT obscure
+input, output, errors, or exit status. New tooling MUST NOT be introduced when existing tooling
+covers the need.
 
-Rationale: boring tools are easier to inspect, operate, and recover at 3 a.m.
+Rationale: boring tools are easier to inspect, operate, and recover at 3 a.m. New abstractions
+must clear a higher bar than "could exist."
 
-### XVIII. Autonomous Operation
+### XVII. Autonomous Operation
 
 Agents MAY complete routine context, version-control, and repository-maintenance loops without
 waiting for a human. They MUST not bypass review, acceptance, secret protection, branch safety,
@@ -235,7 +221,7 @@ constitution or an applicable lower-level policy makes it the safety boundary.
 Rationale: autonomy keeps completed work and context current while preserving human control over
 risk and canon.
 
-### XIX. Constitutional Layering
+### XVIII. Constitutional Layering
 
 The constitution defines stable, cross-cutting invariants. `AGENTS.md` defines current runtime
 operating policy. Specs and contracts define feature behavior and acceptance. Skills define
@@ -249,7 +235,7 @@ MUST be corrected or the constitution MUST be amended explicitly.
 Rationale: layering keeps standing context short, load-bearing, and resilient to model, tool, and
 retrieval-engine changes.
 
-### XX. The Wiki Is Additive, Self-Sealing, and Self-Healing
+### XIX. The Wiki Is Additive, Self-Sealing, and Self-Healing
 
 The Wiki (the repository's `llm-wiki`) MUST remain the single compiled, citable knowledge layer.
 Raw evidence MUST remain immutable. New evidence, page facts, links, schemas, and maintenance
@@ -260,16 +246,10 @@ and incompatible records MUST be quarantined with an observable error rather tha
 rewritten.
 
 Safe deterministic maintenance MUST detect and repair structural, index, link, and validation
-drift without inventing lore, changing accepted facts, collapsing conflicts, or applying a
-judgment-only repair without its required review. Every completed work slice MUST be committed
-to Git. Before starting a new owned work unit, an agent MUST commit all dirty changes it owns and
-verify a clean working tree; it MUST obtain a clean handoff for unrelated dirty changes, MUST NOT
-include work it does not own in its commit, and MUST stop and report when clean isolation is
-impossible.
+drift without inventing lore, changing accepted facts, or applying a judgment-only repair without
+its required review.
 
-Rationale: additive history seals accepted knowledge, safe repair keeps the compiled Wiki usable,
-and clean commits let agents recover, audit, and hand off work without clobbering another agent's
-changes.
+Rationale: additive history seals accepted knowledge; safe repair keeps the compiled Wiki usable.
 
 ## Operating Boundaries
 
@@ -278,10 +258,7 @@ changes.
   appropriate play surface; drafts and unrevealed information remain protected.
 - Runtime procedures, provider and model details, exact commands, retrieval ordering, telemetry
   schemas, thresholds, and evaluation fixtures belong in lower-level operating documents.
-- Codex is the default harness for Spec Kit commands in this repository. Lower-level Spec Kit
-  metadata and instructions MUST treat Codex as the default and MUST identify other harnesses as
-  explicit alternatives. Exact invocation, provider, model, and harness-specific procedures
-  remain owned by lower-level operating documents.
+- Codex is the default harness for Spec Kit commands in this repository.
 - Campaign facts remain DM-gated even when agents own routine structure, measurement, or
   maintenance work.
 
@@ -324,4 +301,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.23.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-16
+**Version**: 1.24.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
