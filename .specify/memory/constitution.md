@@ -1,3 +1,12 @@
+<!--
+Sync Impact Report
+- Version change: 1.21.0 -> 1.22.0
+- Modified principles: VI. Software Is Agent-Shaped (expanded critical-defect response)
+- Added sections: None
+- Removed sections: None
+- Follow-up TODOs: None
+-->
+
 # Agentic Co-DM Constitution
 
 ## Core Principles
@@ -76,7 +85,14 @@ positive instructions, completion criteria, and named failure modes while using 
 disclosure. Human-facing wrappers MUST NOT replace an agent-capable surface when the agent can
 perform the same operation directly.
 
-Rationale: an agent cannot depend on a surface it cannot invoke or inspect reliably.
+Any agent-shaped software built for this wiki that inhibits wiki-content quality or slows agent
+operations is a critical defect. The owning agent MUST log the defect immediately in the error
+ledger, stop treating the software as acceptable, and fix or remove the root cause immediately.
+The fix MUST be verified at the affected public seam before dependent work continues. A temporary
+workaround MAY protect data during repair but MUST NOT substitute for the fix.
+
+Rationale: an agent cannot depend on a surface it cannot invoke or inspect reliably, and a
+known harmful surface must not remain in service while its failure is undocumented.
 
 ### VII. Creative Judgment Is Protected
 
@@ -302,4 +318,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.21.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-16
+**Version**: 1.22.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-16

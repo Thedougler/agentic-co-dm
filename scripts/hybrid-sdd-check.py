@@ -4,18 +4,27 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 from typing import Any, NoReturn
 
 CLASSES = {"engineering", "agent-system", "campaign-architecture", "creative-system"}
 ROUTES = {"full-sdd", "existing-skill"}
+ROUTINE_SKILLS = {"npc-design", "place-design", "dnd-5e-magic-item-design", "spell-design", "homebrew-monsters-5e"}
 FORBIDDEN_AGENCY = {
     "mandatory_allegiance", "authored_player_decision", "fixed_scene_sequence",
     "fixed_ending", "predetermined_route", "required_player_choice",
 }
 CANON_STATES = {"unchanged", "proposal", "accepted-truth"}
 ACCEPTANCE = {"not-required", "pending", "accepted", "modified", "rejected"}
+FILING_STATES = {"not-filed", "staged", "filed", "promoted"}
+OWNER_RESOLUTIONS = {"reuse", "ambiguous", "report-collision", "missing"}
+VERIFICATION_CHECKS = {
+    "schema", "type", "lifecycle", "relationship", "beat-kind", "filename",
+    "owner", "link", "canon-precedence", "entity-before-spoken", "dm-explicitness",
+    "reveal", "visibility", "accept-before-write", "closed-vocabulary",
+}
 
 
 def fail(message: str) -> NoReturn:
@@ -87,6 +96,8 @@ def check_classification(records: list[dict[str, Any]]) -> None:
     if not records:
         fail("classification fixture is empty")
     for record in records:
+        if not isinstance(record.get("request"), str) or not record["request"].strip():
+            fail(f"{record.get('scenario_id', '?')}: sanitized request is required")
         expected = record.get("expected")
         if not isinstance(expected, dict):
             fail(f"{record.get('scenario_id', '?')}: expected route is required")
@@ -100,6 +111,13 @@ def check_classification(records: list[dict[str, Any]]) -> None:
             fail(f"{record.get('scenario_id', '?')}: expected mixed/split, got {actual}")
         if not expected.get("reason_contains"):
             fail(f"{record.get('scenario_id', '?')}: rationale boundary is required")
+        request_text = record["request"].lower()
+        reasons = expected["reason_contains"]
+        if not isinstance(reasons, list) or not all(isinstance(reason, str) for reason in reasons):
+            fail(f"{record.get('scenario_id', '?')}: reason_contains must be a list of strings")
+        missing_reasons = [reason for reason in reasons if reason.lower() not in request_text]
+        if missing_reasons:
+            fail(f"{record.get('scenario_id', '?')}: rationale omits {', '.join(missing_reasons)}")
         if not expected.get("scope_boundary"):
             fail(f"{record.get('scenario_id', '?')}: scope boundary is required")
         if wanted_class in CLASSES and wanted_route != "full-sdd":
@@ -116,6 +134,21 @@ def check_classification(records: list[dict[str, Any]]) -> None:
             }
             if routes != {"full-sdd", "existing-skill"}:
                 fail(f"{record.get('scenario_id', '?')}: mixed slices need both routes")
+            for item in slices:
+                if not isinstance(item, dict):
+                    fail(f"{record.get('scenario_id', '?')}: mixed slice must be an object")
+                slice_expected = item.get("expected", item)
+                slice_class = slice_expected.get("work_class")
+                slice_route = slice_expected.get("route")
+                if slice_route not in ROUTES:
+                    fail(f"{record.get('scenario_id', '?')}: invalid mixed slice route {slice_route}")
+                if slice_route == "full-sdd" and slice_class not in CLASSES:
+                    fail(f"{record.get('scenario_id', '?')}: full-SDD slice needs a valid work class")
+                if slice_route == "existing-skill":
+                    if slice_class != "routine-content" or slice_expected.get("skill_route") not in ROUTINE_SKILLS:
+                        fail(f"{record.get('scenario_id', '?')}: routine slice needs an existing skill route")
+        if wanted_class == "routine-content" and expected.get("skill_route") not in ROUTINE_SKILLS:
+            fail(f"{record.get('scenario_id', '?')}: routine content needs an existing skill route")
 
 
 def require(record: dict[str, Any], fields: tuple[str, ...], label: str) -> None:
@@ -126,7 +159,10 @@ def require(record: dict[str, Any], fields: tuple[str, ...], label: str) -> None
 
 def agency_errors(record: dict[str, Any]) -> list[str]:
     errors: list[str] = []
-    require_fields = ("value", "actors", "pressures", "open_outcomes", "conditional_possibilities", "independent_motion", "if_nobody_intervenes")
+    require_fields = (
+        "value", "actors", "pressures", "open_outcomes", "conditional_possibilities",
+        "independent_motion", "if_nobody_intervenes", "player_owned_decisions", "continuity",
+    )
     for field in require_fields:
         if not record.get(field):
             errors.append(f"missing {field}")
@@ -157,8 +193,12 @@ def check_agency(records: list[dict[str, Any]]) -> None:
 def check_canon(records: list[dict[str, Any]]) -> None:
     for record in records:
         label = str(record.get("evidence_id", "canon"))
+        if record.get("kind") == "ownership":
+            check_ownership(record)
+            continue
         if record.get("expected_failure"):
-            invalid_write = record.get("writes_fact") and record.get("acceptance") != "accepted"
+            acceptance = record.get("acceptance", record.get("dm_acceptance"))
+            invalid_write = record.get("writes_fact") and acceptance != "accepted"
             invalid_exposure = not record.get("reveal", True) and record.get("visibility") in {"players", "public"}
             if not (invalid_write or invalid_exposure):
                 fail(f"{label}: expected canon failure was not represented")
@@ -169,27 +209,70 @@ def check_canon(records: list[dict[str, Any]]) -> None:
         acceptance = record.get("acceptance", record.get("dm_acceptance"))
         if acceptance is not None and acceptance not in ACCEPTANCE:
             fail(f"{label}: invalid acceptance state {acceptance}")
+        if "owner_artifacts" in record and (not isinstance(record["owner_artifacts"], list) or not record["owner_artifacts"]):
+            fail(f"{label}: owner_artifacts must identify a canonical owner")
+        if "provenance" in record and (not isinstance(record["provenance"], list) or not record["provenance"]):
+            fail(f"{label}: provenance must be recorded")
+        if "filing" in record and record["filing"] not in FILING_STATES:
+            fail(f"{label}: invalid filing state {record['filing']}")
+        if "owner_resolution" in record and record["owner_resolution"] not in OWNER_RESOLUTIONS:
+            fail(f"{label}: invalid owner resolution {record['owner_resolution']}")
         if record.get("equivalent") and record.get("owner_resolution") != "reuse":
             fail(f"{label}: equivalent entity must reuse owner")
         if record.get("uncertain_collision") and record.get("owner_resolution") not in {"ambiguous", "report-collision"}:
             fail(f"{label}: uncertain collision must remain visible")
         if record.get("writes_fact") and acceptance != "accepted":
             fail(f"{label}: accept-before-write violation")
+        if record.get("writes_fact") and record.get("dm_acceptance", acceptance) != "accepted":
+            fail(f"{label}: DM acceptance must precede fact write")
+        if state == "accepted-truth" and acceptance != "accepted":
+            fail(f"{label}: accepted truth requires DM acceptance")
         if record.get("proposal") and state == "accepted-truth" and acceptance != "accepted":
             fail(f"{label}: proposal became accepted truth before DM acceptance")
         if not record.get("reveal") and record.get("visibility") in {"players", "public"}:
             fail(f"{label}: unrevealed material exposed")
 
 
+def check_ownership(record: dict[str, Any]) -> None:
+    label = str(record.get("evidence_id", "ownership"))
+    required = ("mechanism", "identity_mechanism", "evidence_path", "evidence_result", "owner_resolution")
+    missing = [field for field in required if not record.get(field)]
+    if missing:
+        fail(f"{label}: missing {', '.join(missing)}")
+    if record.get("owner_resolution") not in OWNER_RESOLUTIONS:
+        fail(f"{label}: invalid owner resolution {record.get('owner_resolution')}")
+    if record.get("opaque_ids_used") is not False:
+        fail(f"{label}: opaque IDs are not an identity mechanism")
+    if record.get("equivalent") and record.get("owner_resolution") != "reuse":
+        fail(f"{label}: equivalent candidate must reuse its owner")
+    if record.get("uncertain_collision"):
+        if record.get("owner_resolution") not in {"ambiguous", "report-collision"}:
+            fail(f"{label}: uncertain collision must remain visible")
+        if record.get("collision_reported") is not True or record.get("new_owner_allowed") is not False:
+            fail(f"{label}: uncertain collision needs a blocking collision report")
+        if not isinstance(record.get("owner_candidates"), list) or len(record["owner_candidates"]) < 2:
+            fail(f"{label}: uncertain collision needs multiple owner candidates")
+    elif record.get("owner_resolution") == "reuse" and not record.get("owner_artifact"):
+        fail(f"{label}: reused owner artifact is required")
+
+
 def validate_topology(record: dict[str, Any]) -> None:
     label = str(record.get("evidence_id", "topology"))
+    if record.get("work_class") not in CLASSES or record.get("route") != "full-sdd":
+        fail(f"{label}: topology needs a full-SDD work class and route")
+    if record.get("status") not in {"pending", "ready", "in-progress", "verified", "complete"}:
+        fail(f"{label}: invalid topology status")
+    if not isinstance(record.get("context_used"), list) or not record["context_used"]:
+        fail(f"{label}: context_used is required")
+    if not isinstance(record.get("context_omitted"), list) or not record["context_omitted"]:
+        fail(f"{label}: context_omitted is required")
     nodes = record.get("nodes")
     if not isinstance(nodes, list) or not nodes:
         fail(f"{label}: nodes are required")
     by_id: dict[str, dict[str, Any]] = {}
     for node in nodes:
-        if not isinstance(node, dict) or not node.get("id") or not node.get("artifact") or not node.get("owner"):
-            fail(f"{label}: each node needs id, artifact, and owner")
+        if not isinstance(node, dict) or not node.get("id") or not node.get("artifact") or not node.get("owner") or not node.get("evidence"):
+            fail(f"{label}: each node needs id, artifact, owner, and evidence")
         node_id = str(node["id"])
         if node_id in by_id:
             fail(f"{label}: duplicate node {node_id}")
@@ -204,6 +287,10 @@ def validate_topology(record: dict[str, Any]) -> None:
     waves: dict[str, list[dict[str, Any]]] = {}
     for node in nodes:
         waves.setdefault(str(node.get("wave", "serial")), []).append(node)
+    wave_numbers: dict[str, int] = {}
+    for wave in waves:
+        if "-" in wave and wave.rsplit("-", 1)[1].isdigit():
+            wave_numbers[wave] = int(wave.rsplit("-", 1)[1])
     for wave, members in waves.items():
         if wave.startswith("parallel"):
             artifacts = [str(member["artifact"]) for member in members]
@@ -212,6 +299,14 @@ def validate_topology(record: dict[str, Any]) -> None:
             for member in members:
                 if any(dependency in {str(other["id"]) for other in members} for dependency in member.get("depends_on", [])):
                     fail(f"{label}: dependent tasks cannot be parallel")
+    for node in nodes:
+        node_wave = wave_numbers.get(str(node.get("wave", "")))
+        if node_wave is None:
+            continue
+        for dependency in node.get("depends_on", []):
+            dependency_wave = wave_numbers.get(str(by_id[str(dependency)].get("wave", "")))
+            if dependency_wave is not None and dependency_wave >= node_wave:
+                fail(f"{label}: dependency wave must precede dependent wave")
     visiting: set[str] = set()
     visited: set[str] = set()
     def visit(node_id: str) -> None:
@@ -253,6 +348,11 @@ def check_verification(records: list[dict[str, Any]]) -> None:
                 fail(f"{label}: semantic review cannot be deterministic lint")
             if record.get("axis") not in semantic_axes or record.get("evaluator") != "independent-blind-paired":
                 fail(f"{label}: semantic review needs independent fixed-axis evidence")
+            if record.get("rubric_version") or record.get("contamination") is not None:
+                if not record.get("rubric_version") or record.get("contamination") is not False or record.get("judgment_only") is not True:
+                    fail(f"{label}: semantic review needs a fixed uncontaminated judgment record")
+            if not isinstance(record.get("non_inferior"), bool):
+                fail(f"{label}: semantic review must record non-inferiority")
             continue
         if kind not in hard:
             if record.get("expected_failure"):
@@ -265,22 +365,67 @@ def check_verification(records: list[dict[str, Any]]) -> None:
             evidence = f"{check} {violation} {record.get('field', '')}".lower()
             if not expected or expected not in evidence:
                 fail(f"{label}: expected objective failure lacks matching evidence")
+            validate_objective_violation(record, label)
             continue
+        if record.get("record_type") == "hard_gate_matrix":
+            checks = record.get("checks")
+            if not record.get("deterministic") or record.get("deterministic_failure") or record.get("result") != "pass":
+                fail(f"{label}: hard-gate matrix must pass deterministically")
+            if not isinstance(checks, list) or not checks or not set(checks).issubset(VERIFICATION_CHECKS):
+                fail(f"{label}: hard-gate matrix contains an unknown check")
         if record.get("record_type") == "completion_evidence":
-            required = ("route", "context_used", "context_omitted", "work_status", "dm_acceptance", "canon_state", "filing", "measurement")
+            required = (
+                "route", "context_used", "context_omitted", "owners_affected", "owners_resolved",
+                "dependencies", "deterministic_checks", "quality_review", "work_status",
+                "dm_acceptance", "canon_state", "filing", "measurement",
+            )
             missing = [field for field in required if field not in record]
             if missing:
                 fail(f"{label}: completion evidence missing {', '.join(missing)}")
+            if record.get("route") not in ROUTES or record.get("work_status") not in {"produced", "accepted", "failed", "incomplete"}:
+                fail(f"{label}: completion evidence has invalid route or Work state")
+            if record.get("dm_acceptance") not in ACCEPTANCE or record.get("canon_state") not in CANON_STATES:
+                fail(f"{label}: completion evidence has invalid acceptance or canon state")
             if record["work_status"] == "accepted" and record["dm_acceptance"] != "accepted":
                 fail(f"{label}: accepted Work requires DM acceptance")
             if record["canon_state"] == "accepted-truth" and record["dm_acceptance"] != "accepted":
                 fail(f"{label}: accepted truth requires acceptance")
+            if not isinstance(record.get("state_separation"), dict):
+                fail(f"{label}: completion evidence must separate lifecycle and Work states")
         if record.get("record_type") == "compatibility":
             required_phases = {"specify", "clarify", "plan", "checklist", "tasks", "analyze", "implement", "converge"}
             if not required_phases.issubset(set(record.get("lifecycle_phases", []))):
                 fail(f"{label}: Spec Kit lifecycle is incomplete")
             if record.get("managed_files_unchanged") is not True:
                 fail(f"{label}: managed files must remain unchanged")
+            if record.get("existing_routes_preserved") is not True or record.get("second_integration") is not False:
+                fail(f"{label}: existing integrations and routes must be preserved")
+
+
+def validate_objective_violation(record: dict[str, Any], label: str) -> None:
+    """Confirm that a negative fixture contains the objective evidence it claims."""
+    check = str(record.get("check", "")).lower().replace("-", " ")
+    violation = str(record.get("violation", "")).lower().replace("-", " ")
+    if check == "type" and record.get("value") in record.get("allowed_values", []):
+        fail(f"{label}: invalid type fixture uses an allowed value")
+    if check == "lifecycle" and record.get("value") in record.get("allowed_values", []):
+        fail(f"{label}: invalid lifecycle fixture uses an allowed value")
+    if "relationship" in violation and not record.get("value"):
+        fail(f"{label}: relationship violation needs a value")
+    if "filename" in violation and record.get("filename_status") != "invalid":
+        fail(f"{label}: filename violation needs invalid filename evidence")
+    if check == "link" and record.get("link_status") != "broken":
+        fail(f"{label}: link violation needs broken-link evidence")
+    if check == "canon precedence" and (record.get("accepted_truth_preserved") is not False or record.get("selected_source") == record.get("authoritative_source")):
+        fail(f"{label}: canon-precedence violation is not evidenced")
+    if check == "entity before spoken" and not (record.get("entity_resolved") is False and record.get("spoken_artifact_written") is True):
+        fail(f"{label}: entity-before-spoken violation is not evidenced")
+    if check == "dm explicitness" and not (record.get("dm_addressed") is False or record.get("dm_explicit") is False):
+        fail(f"{label}: DM explicitness violation is not evidenced")
+    if check in {"reveal", "visibility"} and record.get("visibility") not in {"players", "public"}:
+        fail(f"{label}: exposure violation needs a player/public visibility")
+    if check == "accept before write" and not (record.get("writes_fact") is True and record.get("dm_acceptance") != "accepted"):
+        fail(f"{label}: accept-before-write violation is not evidenced")
 
 
 def check_plan(records: list[dict[str, Any]]) -> None:
@@ -288,12 +433,111 @@ def check_plan(records: list[dict[str, Any]]) -> None:
         label = str(record.get("evidence_id", "plan"))
         if record.get("work_class") == "engineering":
             require(record, ("technical_context", "architecture", "storage", "testing", "platform", "performance", "constraints", "source_structure"), label)
-            if any(key in record for key in ("agency", "canon_impact", "player_owned_decisions")):
+            if any(key in record for key in ("agency", "canon_impact", "player_owned_decisions", "factions", "open_outcomes")):
                 fail(f"{label}: engineering plan contains campaign-only vocabulary")
         elif record.get("work_class") in {"agent-system", "campaign-architecture", "creative-system"}:
             require(record, ("context_used", "context_omitted"), label)
+            if record.get("route") != "full-sdd":
+                fail(f"{label}: substantial plan must use full-sdd")
         else:
             fail(f"{label}: invalid plan work_class")
+
+
+def read_yaml(path: Path) -> dict[str, Any]:
+    try:
+        import yaml
+    except ImportError as exc:
+        fail(f"PyYAML is required to validate preset manifests: {exc}")
+    try:
+        value = yaml.safe_load(path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, yaml.YAMLError) as exc:
+        fail(f"cannot read preset manifest {path}: {exc}")
+    if not isinstance(value, dict):
+        fail(f"preset manifest {path} must be a mapping")
+    return value
+
+
+def check_preset(package: Path) -> None:
+    """Validate the repository-owned preset without installing it."""
+    if not package.is_dir() or package.name != "creative-llm-wiki":
+        fail("preset package must be the creative-llm-wiki directory")
+    manifest_path = package / "preset.yml"
+    manifest = read_yaml(manifest_path)
+    if manifest.get("schema_version") != "1.0":
+        fail("preset manifest must use schema_version 1.0")
+    preset = manifest.get("preset")
+    if not isinstance(preset, dict) or preset.get("id") != "creative-llm-wiki":
+        fail("preset manifest must identify creative-llm-wiki")
+    for field in ("name", "version", "description", "author"):
+        if not isinstance(preset.get(field), str) or not preset[field].strip():
+            fail(f"preset metadata requires {field}")
+    if not re.fullmatch(r"\d+\.\d+\.\d+", preset["version"]):
+        fail("preset version must be semantic x.y.z")
+    requires = manifest.get("requires")
+    if not isinstance(requires, dict) or not isinstance(requires.get("speckit_version"), str):
+        fail("preset requires a Spec Kit version constraint")
+    provides = manifest.get("provides")
+    templates = provides.get("templates") if isinstance(provides, dict) else None
+    if not isinstance(templates, list) or not templates:
+        fail("preset must provide at least one template")
+    seen: set[tuple[str, str]] = set()
+    for entry in templates:
+        if not isinstance(entry, dict) or not all(isinstance(entry.get(field), str) for field in ("type", "name", "file")):
+            fail("each preset template needs string type, name, and file")
+        pair = (entry["type"], entry["name"])
+        if pair in seen:
+            fail(f"duplicate preset template {entry['name']}")
+        seen.add(pair)
+        if entry["type"] not in {"template", "command", "script"}:
+            fail(f"invalid preset template type {entry['type']}")
+        relative = Path(entry["file"])
+        if relative.is_absolute() or ".." in relative.parts:
+            fail(f"preset template path escapes package: {entry['file']}")
+        if not (package / relative).is_file():
+            fail(f"preset template file is missing: {entry['file']}")
+
+    metadata = manifest.get("hybrid_sdd")
+    if not isinstance(metadata, dict) or metadata.get("package_role") != "meta-preset":
+        fail("preset must declare its hybrid SDD meta-preset role")
+    provenance_path = package / "provenance.json"
+    validation_path = package / "validation.json"
+    try:
+        provenance = json.loads(provenance_path.read_text(encoding="utf-8"))
+        validation = json.loads(validation_path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        fail(f"preset metadata is unreadable: {exc}")
+    candidates = provenance.get("source_candidates") if isinstance(provenance, dict) else None
+    adaptations = provenance.get("adaptations") if isinstance(provenance, dict) else None
+    if not isinstance(candidates, list) or not candidates:
+        fail("preset provenance must include a pinned source candidate")
+    for candidate in candidates:
+        required = ("source_url", "release_or_commit", "retrieved_at", "license", "inspection", "trust")
+        if not isinstance(candidate, dict) or any(not candidate.get(field) for field in required):
+            fail("each preset candidate needs source, pin, retrieval, license, inspection, and trust evidence")
+        if candidate.get("trust") not in {"staged-untrusted", "quarantined"}:
+            fail("preset candidates must remain untrusted staging inputs")
+        inspection = candidate.get("inspection")
+        if not isinstance(inspection, dict) or any(inspection.get(surface) is not True for surface in ("manifest", "templates", "commands", "scripts", "hooks")):
+            fail("preset candidate executable surfaces must be inspected")
+    if not isinstance(adaptations, list) or not adaptations:
+        fail("preset must contain selective provenance-linked adaptations")
+    candidate_ids = {candidate.get("candidate_id") for candidate in candidates}
+    for adaptation in adaptations:
+        required = ("adaptation_id", "source_candidate", "artifact", "selection", "authority", "verification")
+        if not isinstance(adaptation, dict) or any(not adaptation.get(field) for field in required):
+            fail("each preset adaptation needs selection, artifact, authority, and verification")
+        if adaptation["source_candidate"] not in candidate_ids:
+            fail("preset adaptation references an unknown source candidate")
+        if adaptation.get("selection") in {"wholesale", "copy-complete-package"}:
+            fail("preset adaptations must be selective")
+    if not isinstance(validation, dict) or validation.get("status") != "validated":
+        fail("preset validation metadata must be validated")
+    if validation.get("third_party_runtime_dependencies") != []:
+        fail("preset must not declare third-party runtime dependencies")
+    if validation.get("existing_authorities_preserved") is not True:
+        fail("preset must preserve existing authorities")
+    if validation.get("installed_third_party_presets") is not False:
+        fail("preset must not install third-party presets")
 
 
 def main() -> int:
@@ -302,8 +546,14 @@ def main() -> int:
     for name in ("classify", "agency", "canon", "topology", "plan", "verify"):
         command = sub.add_parser(name)
         command.add_argument("--fixtures", required=True, type=Path)
+    preset = sub.add_parser("preset")
+    preset.add_argument("--package", required=True, type=Path)
     args = parser.parse_args()
     try:
+        if args.command == "preset":
+            check_preset(args.package)
+            print("PASS preset: creative-llm-wiki package validated")
+            return 0
         records = load(args.fixtures)
         if args.command == "classify":
             check_classification(records)

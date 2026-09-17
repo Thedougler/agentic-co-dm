@@ -9,6 +9,10 @@ A **skill-based framework** for building and maintaining an Obsidian knowledge b
 
 Spec Kit auto-commit is enabled for the configured before/after hooks. The commit style is fixed (`commit_style: fixed`); use the configured `[Spec Kit] ...` messages rather than generating Conventional Commit messages. `.specify/extensions/git/git-config.yml` is the source of truth.
 
+## Hybrid SDD routing
+
+Before writing substantial engineering, agent-system, campaign-architecture, or creative-system work, classify it once and follow the full route in [`docs/agents/hybrid-sdd.md`](docs/agents/hybrid-sdd.md). Routine established campaign content stays on its existing skill, template, lifecycle, and Work route; split mixed requests into their system-changing and routine-content slices. Keep the managed Spec Kit block below disposable.
+
 ## Configuration
 
 Resolve config using the Config Resolution Protocol in `llm-wiki/SKILL.md`:
