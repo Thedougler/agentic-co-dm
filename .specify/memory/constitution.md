@@ -1,9 +1,9 @@
 <!--
 Sync Impact Report
-Version change: 2.2.0 -> 2.3.0
+Version change: 2.3.0 -> 2.3.1
 Modified principles:
-- IV. Behavioral Tests: makes a Luna high cold-context behavioral test subject the default
-  validation shape for agent-facing surface changes.
+- IV. Behavioral Tests: clarifies harness-specific independent behavioral test subjects and
+  removes false Luna-unavailability gap wording.
 Added sections: None
 Removed sections: None
 Follow-up TODOs: None
@@ -53,14 +53,15 @@ values, or bulk-speculate about imagined behavior.
 For changes to code, skills, instructions, templates, linting, or any other agent-facing surface,
 resulting agentic behavior is the primary acceptance target. Validation MUST exercise that
 behavior and MUST NOT stop at code correctness, syntax, or file presence. The default validation
-shape is an independent behavioral test subject: the lead agent MUST delegate a Luna subagent at
-high reasoning effort, with cold context and no write permission in the prompt, to perform the
-task or task slice that the change is meant to improve. The lead MUST provide scope and success
-criteria, use the subagent output as behavioral evidence, and personally reconcile that evidence
-before declaring completion. This subagent is the test subject, not a code reviewer. If Luna is
-unavailable, an equivalent independent agent test subject MUST be used and the completion
-evidence MUST record Luna's unavailability. If independent validation cannot run, the completion
-evidence MUST record the blocker and compensating validation.
+shape is an independent behavioral test subject: in Codex, the lead agent MUST delegate a Luna
+subagent at high reasoning effort; in OMP, the lead agent MUST delegate the smol-agent equivalent;
+in Grok, where Luna is not available, the lead agent MUST delegate the closest independent
+equivalent and name the harness substitution in completion evidence. The test subject MUST run
+with cold context and no write permission in the prompt, performing the task or task slice that the
+change is meant to improve. The lead MUST provide scope and success criteria, use the subagent
+output as behavioral evidence, and personally reconcile that evidence before declaring completion.
+This subagent is the test subject, not a code reviewer. If independent validation cannot run, the
+completion evidence MUST record the blocker and compensating validation.
 
 Rationale: behavior-focused tests protect contracts through refactoring; agent validation confirms
 that the system follows user intent in operation, not merely in source.
@@ -422,4 +423,4 @@ not prevent a named safety failure MUST be rejected or resolved by an ADR.
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 2.3.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 2.3.1 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
