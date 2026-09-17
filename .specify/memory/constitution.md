@@ -1,13 +1,12 @@
 <!--
 Sync Impact Report
-- Version change: 1.29.0 → 1.30.0 (MINOR)
+- Version change: 1.30.0 → 1.31.0 (MINOR)
 - Modified principles:
-  - XIII. Self-Improvement Is Evidence-Driven → XIII. Self-Improvement Is Evidence-Driven (self-reporting SOP added)
+  - XVI. The Simplest Adequate Tool → XVI. The Simplest Adequate Tool (bootstrap and reuse requirements added)
 - Added sections: None
 - Removed sections: None
 - Follow-up TODOs: None
 -->
-
 # Agentic Co-DM Constitution
 
 ## Core Principles
@@ -203,8 +202,17 @@ Rationale: complete objectives preserve autonomy; padding consumes context witho
 Agents MUST use the simplest tool that completes the job. Existing tools, stdlib functions, and
 native platform features MUST be used before adding new abstractions, wrappers, or dependencies.
 A command-capable interface MUST be used directly when sufficient; wrappers MUST NOT obscure
-input, output, errors, or exit status. New tooling MUST NOT be introduced when existing tooling
-covers the need.
+input, output, errors, or exit status.
+
+When a task requires a missing tool or dependency, agents MUST self-bootstrap it from the
+project-declared environment before implementation. Agents MUST reuse suitable existing software,
+solutions, documented patterns, and trusted published approaches—including web sources—before
+inventing new ones. A new dependency or implementation is permitted only when existing options
+do not satisfy the task; its rationale and provenance MUST be recorded in the applicable work
+artifact.
+
+Rationale: boring tools are easier to inspect, operate, and recover at 3 a.m. Reuse compounds
+proven solutions while reproducible bootstrap keeps agents unblocked without dependency drift.
 
 Rationale: boring tools are easier to inspect, operate, and recover at 3 a.m. New abstractions
 must clear a higher bar than "could exist."
@@ -349,4 +357,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.30.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 1.31.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
