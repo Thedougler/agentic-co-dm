@@ -85,19 +85,28 @@ class LintEngine:
                     if category in categories:
                         raise ValueError(f"bundle {bundle} places category {category} more than once")
                     categories[category] = GATES[gate]
-            active = [
-                (rule, _cap(rule.severity, categories[rule.category]))
-                for rule in self.registry.rules
-                if rule.lifecycle == "ACTIVE" and rule.category in categories
-            ]
-            shadow = [
-                (rule, _cap(rule.severity, categories[rule.category]))
-                for rule in self.registry.rules
-                if rule.lifecycle == "SHADOW" and rule.category in categories
-            ]
-        else:
-            active = [(rule, rule.severity) for rule in self.registry.rules if rule.lifecycle == "ACTIVE"]
+        if bundle:
+            try:
+                resolved = self.bundles.get(bundle).resolve(self.registry)
+            except KeyError as exc:
+                raise ValueError(f"unknown bundle {bundle!r}") from exc
+            active = []
+            for rule, severity in resolved:
+                if rule.category in {"scene", "diversity"} and not rule.positive_fixtures:
+                    severity = "WARN" if SEVERITY_ORDER.get(severity, 0) > SEVERITY_ORDER["WARN"] else severity
+                active.append((rule, severity))
             shadow = [(rule, rule.severity) for rule in self.registry.rules if rule.lifecycle == "SHADOW"]
+        else:
+            active = []
+            shadow = []
+            for rule in self.registry.rules:
+                if rule.lifecycle == "ACTIVE":
+                    severity = rule.severity
+                    if rule.category in {"scene", "diversity"} and not rule.positive_fixtures:
+                        severity = "WARN" if SEVERITY_ORDER.get(severity, 0) > SEVERITY_ORDER["WARN"] else severity
+                    active.append((rule, severity))
+                elif rule.lifecycle == "SHADOW":
+                    shadow.append((rule, rule.severity))
         if rule_ids is not None:
             active = [(rule, severity) for rule, severity in active if rule.id in rule_ids]
             shadow = [(rule, severity) for rule, severity in shadow if rule.id in rule_ids]
@@ -124,9 +133,9 @@ class LintEngine:
                     fields[key.strip()] = value.strip().strip("\"'")
         if fields.get("redirects_to") or "redirect stub" in text.casefold():
             return "redirect" not in rule.exemptions
-        if rule.applicability and fields.get("type") not in rule.applicability:
+        if fields and rule.applicability and fields.get("type") not in rule.applicability:
             return False
-        if rule.structural_scope and "narrative" in rule.structural_scope:
+        if fields and rule.structural_scope and "narrative" in rule.structural_scope:
             body = text.split("---", 2)[-1]
             if all(marker not in body.casefold() for marker in ("pressure", "agenda", "player opening")):
                 return False
@@ -156,14 +165,6 @@ class LintEngine:
         for finding in findings:
             finding.repair_class = getattr(self.registry.get(finding.rule_id), "repair_class", "diagnostic")
 
-        evaluated_ids = {finding.rule_id for finding in findings}
-        for rule, severity in active:
-            if rule.evaluator in {"semantic", "human"} and rule.id not in evaluated_ids:
-                findings.append(Finding(
-                    rule_id=rule.id, result="abstain", severity=severity,
-                    location={"file": "", "line": 1}, evidence="evaluator_unavailable",
-                    reason=rule.message, repair_target=rule.repair, evaluator=rule.evaluator,
-                ))
 
         active_by_id = {rule.id: rule for rule, _ in active}
         conflict_pairs: set[tuple[str, str]] = set()

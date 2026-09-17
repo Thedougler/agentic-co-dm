@@ -12,6 +12,9 @@ import tempfile
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Callable, Iterable
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 SKIP_DIRS = {
     ".obsidian",
@@ -1012,7 +1015,7 @@ def typed_mutation(args: argparse.Namespace) -> dict[str, object]:
     if args.kind in {"replace_section", "delete_section"}:
         selector = {"heading_path": args.heading_path, "content_hash": args.content_hash}
         if args.kind == "replace_section":
-            payload["content"] = Path(args.content_file).read_text(encoding="utf-8")
+            payload["content"] = Path(args.content_file).read_text(encoding="utf-8") if args.content_file else args.content
     elif args.kind == "insert_section":
         selector = {"after_heading_path": args.after_heading, "before_heading_path": args.before_heading}
         payload = {"heading": args.heading, "level": args.level, "content": Path(args.content_file).read_text(encoding="utf-8") if args.content_file else args.content}
@@ -1024,12 +1027,10 @@ def typed_mutation(args: argparse.Namespace) -> dict[str, object]:
     elif args.kind in {"replace_index_entry", "remove_index_entry"}:
         selector = {"slug": args.slug}
         payload = {"new_entry": args.new_entry}
-    elif args.kind == "insert_index_entry":
-        payload = {"entry": args.entry}
+    elif args.kind == "rename_page":
+        payload = {"new_target": args.target}
     elif args.kind == "update_manifest_identity":
         payload = {"page_path": args.page, "transition": args.transition, "target": args.target}
-    elif args.kind == "rename_page":
-        raise CLIError("rename_page requires the transaction merge surface and is not a text-only mutation")
     op = MutationOp(args.kind, args.file, selector, payload)
     result = apply_mutation(args.vault, op, dry_run=args.dry_run)
     if result.get("status") == "rejected":

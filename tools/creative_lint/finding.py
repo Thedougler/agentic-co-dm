@@ -1,7 +1,7 @@
 """Universal finding contract shared by every creative-lint evaluator."""
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Any
 
 
@@ -17,6 +17,9 @@ class Finding:
     repair_target: str | None = None
     waiver: dict[str, Any] | None = None
     repair_class: str = "diagnostic"
+    applicability: list[str] = field(default_factory=list)
+    structural_scope: list[str] = field(default_factory=list)
+    exemptions: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:
         """Return the stable JSON-compatible finding shape."""
@@ -29,6 +32,9 @@ class Finding:
             "reason": self.reason,
             "repair_target": self.repair_target,
             "repair_class": self.repair_class,
+            "applicability": list(self.applicability),
+            "structural_scope": list(self.structural_scope),
+            "exemptions": list(self.exemptions),
             "evaluator": self.evaluator,
             "waiver": self.waiver,
         }
@@ -67,6 +73,9 @@ class Finding:
             repair_target=value.get("repair_target"),
             waiver=value.get("waiver"),
             repair_class=str(value.get("repair_class", "diagnostic")),
+            applicability=list(value.get("applicability", [])),
+            structural_scope=list(value.get("structural_scope", [])),
+            exemptions=list(value.get("exemptions", [])),
         )
 
 
@@ -81,6 +90,8 @@ def finding_from_rule(rule: Any, *, location: dict[str, Any], evidence: str,
         evidence=evidence,
         reason=rule.message,
         repair_target=rule.repair,
-        evaluator=evaluator,
         repair_class=getattr(rule, "repair_class", "diagnostic"),
+        applicability=list(getattr(rule, "applicability", [])),
+        structural_scope=list(getattr(rule, "structural_scope", [])),
+        exemptions=list(getattr(rule, "exemptions", [])),
     )

@@ -62,6 +62,7 @@ class RuleDefinition:
             exemptions=lists["exemptions"], repair_class=repair_class,
             positive_fixtures=lists["positive_fixtures"],
         )
+class Registry:
     def __init__(self, rules: list[RuleDefinition], *, path: Path | None = None):
         self.rules = list(rules)
         self.path = path

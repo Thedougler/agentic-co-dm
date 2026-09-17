@@ -76,6 +76,8 @@ class SectionSet(list[Section]):
     def find(self, heading_path: list[str] | tuple[str, ...]) -> Section:
         wanted = tuple(heading_path)
         matches = [section for section in self if section.heading_path == wanted]
+        if not matches and wanted:
+            matches = [section for section in self if section.heading_path[-len(wanted):] == wanted]
         if not matches:
             raise ValueError("selector_not_found")
         if len(matches) > 1:
@@ -84,7 +86,12 @@ class SectionSet(list[Section]):
 
 
 def parse_sections(source: str | Path) -> SectionSet:
-    text = Path(source).read_text(encoding="utf-8") if isinstance(source, (str, Path)) and Path(source).is_file() else str(source)
+    if isinstance(source, Path):
+        text = source.read_text(encoding="utf-8")
+    elif isinstance(source, str) and "\n" not in source and Path(source).is_file():
+        text = Path(source).read_text(encoding="utf-8")
+    else:
+        text = str(source)
     lines = text.splitlines(keepends=True)
     headings: list[tuple[int, str, int]] = []
     for index, line in enumerate(lines):
@@ -268,6 +275,8 @@ def resolve_mutation(vault: str | Path, op: MutationOp, text: str | None = None)
         result = remove_index_entry(current, str(op.selector.get("slug")))
     elif kind == "insert_index_entry":
         result = insert_index_entry(current, str(op.payload.get("entry", "")))
+    elif kind == "update_manifest_identity":
+        result = current
     else:
         raise ValueError(f"unsupported mutation kind: {kind}")
     diff = "".join(difflib.unified_diff(current.splitlines(True), result.splitlines(True), fromfile=op.target, tofile=op.target))
@@ -280,13 +289,21 @@ def apply_mutation(vault: str | Path, op: MutationOp, *, dry_run: bool = False) 
         path = _target(root, op.target)
         if not path.is_file():
             raise ValueError("file_not_found")
+        if op.kind == "rename_page":
+            destination = _target(root, str(op.payload.get("new_target", "")))
+            if destination.exists():
+                raise ValueError("target_exists")
+            if dry_run:
+                return {"status": "dry_run", "kind": op.kind, "target": op.target, "new_target": str(op.payload.get("new_target")), "dry_run": True}
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            os.replace(path, destination)
+            return {"status": "applied", "kind": op.kind, "target": op.target, "new_target": str(op.payload.get("new_target")), "dry_run": False}
         result, diff = resolve_mutation(root, op)
         if not dry_run:
             atomic_write(path, result)
         return {"status": "dry_run" if dry_run else "applied", "kind": op.kind, "target": op.target, "diff": diff, "dry_run": dry_run}
     except (OSError, ValueError) as exc:
         return {"status": "rejected", "kind": op.kind, "target": op.target, "error": str(exc), "dry_run": dry_run}
-
 
 def validate_non_overlapping(ops: list[MutationOp]) -> list[str]:
     ranges: dict[str, list[tuple[int, int]]] = {}

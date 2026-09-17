@@ -1,8 +1,8 @@
 <!--
 Sync Impact Report
-- Version change: 1.33.0 → 1.34.0 (MINOR)
+- Version change: 1.34.0 → 1.35.0 (MINOR)
 - Modified principles:
-  - XIX. The Wiki Is Additive, Self-Sealing, and Self-Healing → XIX. The Wiki Is Additive, Self-Sealing, and Self-Healing (lint completion gate added)
+  - VI. Software Is Agent-Shaped → VI. Software Is Agent-Shaped (documentation quality gate added)
 - Added sections: None
 - Removed sections: None
 - Follow-up TODOs: None
@@ -76,6 +76,10 @@ Agent-consumed artifacts MUST expose sufficient machine-readable identity or met
 to classify and route them without expensive inspection. Naming, frontmatter, schemas, and
 directory placement MAY provide that identity; lower-level policy names the required convention
 for each artifact kind.
+
+Repository documentation under `docs/` MUST remain current, accurate, concise, clear, and
+focused. Every `docs/` change MUST follow `writing-for-agents`; documentation MUST describe
+current behavior and point to authoritative sources instead of preserving stale duplication.
 
 Any agent-shaped software that inhibits wiki-content quality or slows agent operations is a
 defect. The owning agent MUST log it, stop treating the software as acceptable, and fix or
@@ -371,4 +375,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.34.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 1.35.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
