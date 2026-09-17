@@ -8,23 +8,13 @@ description: >-
 
 # Hook beats
 
-## Work gate
+## Gates
 
-Prep only. Follow `docs/agents/work.md`.
-
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims.
-
-## HARD: entity-before-spoken
-
-Follow AGENTS.md **HARD: entity-before-spoken** (Nick 2026-09-14). Mint/file required owner pages (kebab + templates; stage when `WIKI_STAGED_WRITES=true`) **before** filling this beat's spoken/`[!narration]`/action-card text. Vague stand-ins for missing entities = critical error — do not ship.
-
-## HARD: dm-facing-explicit
-
-Follow AGENTS.md **HARD: dm-facing-explicit** (Nick 2026-09-14) together with **entity-before-spoken**. DM layers (action cards, Be ready for, secrets, situation facts) state who/what/where/why concretely — no coy placeholders. Player `[!narration]` may withhold from players but stays grounded in named owners.
+Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
 
 ## Copy-start
 
-Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: hook`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a Session 11 cockpit.
+Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: hook`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a session-plan cockpit.
 
 ## Purpose
 
@@ -34,8 +24,7 @@ threat, discovery, or opening. Prefer an opening that connects to the previous
 session's ending or an active PC goal. Only this first beat may recap the
 previous session.
 
-One Hook per session. A session with two Hooks has a pacing problem, not an
-energy surplus.
+One Hook per session.
 
 ## Completion test
 
@@ -45,62 +34,33 @@ what changed and what the next beat's trigger is.
 ## How to fill a Hook
 
 1. **Choose the pressure.** Read [references/hook-cards.md](references/hook-cards.md)
-   and pick the card whose trigger best matches the current fiction. A card is
-   chosen because the fiction calls for it — not to fill a slot.
+   and pick the card whose trigger best matches the current fiction.
 
 2. **Set the key.** An action Hook (pursuit, fight, crisis, ambush) opens a
    physical key — the middle explores a dangerous situation. A cerebral Hook
    (discovery, offer, revelation) opens an informational key — the middle
-   decides what to do with knowledge. The Climax resolves the question the Hook
-   opened, transformed by the middle's costs and revelations.
+   decides what to do with knowledge.
 
 3. **Write the opening pressure.** Name the trigger, actors, stakes, visible
    information, and at least two viable player responses. Theatre of the mind
-   owns `[!narration]` for spoken text. The Hook lands in one spoken delivery;
-   it does not open with travel or logistics.
+   owns `[!narration]` for spoken text. The Hook lands in one spoken delivery.
 
-4. **Prepare the polarity handoff.** If the Hook is action-heavy, the next beat
-   is a Development so the party can process what happened. If the Hook is
-   cerebral or conversational, the next beat is a Cliffhanger to raise physical
-   stakes. Do not write the next beat — hand off.
+4. **Prepare the polarity handoff.** Action Hook → next Development. Cerebral
+   Hook → next Cliffhanger. Do not write the next beat — hand off.
 
 5. **Name what happens if they ignore it, fail, or redirect.** The world
-   updates; the slot does not replay. Consequences are visible.
-
-Done when: the party has committed to a response. They can name what they are
-doing about the opening pressure. The DM can state what changed and what the
-next beat's trigger is.
-
-## Card fields
-
-Every card in [references/hook-cards.md](references/hook-cards.md) carries:
-
-| Field | Rule |
-|---|---|
-| Type | Hook |
-| Trigger | When fiction calls for it — not to fill a slot |
-| Stakes | Visible |
-| Player options | At least two viable responses |
-| Agency note | Ignoring, failing, or redirecting updates the world |
+   updates; the slot does not replay.
 
 ## Named seams
 
-Load a second skill only when a named seam fires:
-
-- **Chart question** — chart position, polarity, threads, or transition is
-  unclear → load `session-beats` for that question, not as primary for writing
-  this beat.
+- **Chart question** → load `session-beats` for position, polarity, threads,
+  or transition only.
 - **Play a Cliffhanger as Hook** → load `cliffhanger-beats` for the opening
   shape only. The beat remains the session's one Hook.
 - **Play a Development as Hook** → load `development-beats` for the opening
   shape only. The beat remains the session's one Hook.
 
-Opening another type-card catalog for any other reason is a defect.
-
-## What this skill does not own
-Beat Chart assembly, polarity rules, time budget, thread planting, escalation,
-recompute, and the session plan belong to `session-beats`. Do not absorb
-Session 11 cockpit job order. Spoken player text belongs to theatre of the mind.
-Encounter, trap, place, and monster crafts keep their owners. A named vehicle,
-spell, faction, lore note, quest, city, or region hands off to that wiki-kind
-owner without absorbing the page job.
+Opening another type-card catalog for any other reason is a defect. Chart
+assembly, polarity rules, time budget, thread planting, escalation, recompute,
+and the session plan belong to `session-beats`. Spoken player text belongs to
+theatre of the mind. Wiki kind pages keep their owners.

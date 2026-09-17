@@ -9,24 +9,13 @@ description: >-
 
 # Development beats
 
-## Work gate
+## Gates
 
-Prep only. Follow `docs/agents/work.md`.
-
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims.
-
-## HARD: entity-before-spoken
-
-Follow AGENTS.md **HARD: entity-before-spoken** (Nick 2026-09-14). Mint/file required owner pages (kebab + templates; stage when `WIKI_STAGED_WRITES=true`) **before** filling this beat's spoken/`[!narration]`/action-card text. Vague stand-ins for missing entities = critical error — do not ship.
-
-## HARD: dm-facing-explicit
-
-Follow AGENTS.md **HARD: dm-facing-explicit** (Nick 2026-09-14) together with **entity-before-spoken**. DM layers (action cards, Be ready for, secrets, situation facts) state who/what/where/why concretely — no coy placeholders. Player `[!narration]` may withhold from players but stays grounded in named owners.
+Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
 
 ## Copy-start
 
-Copy `wiki/templates/development.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: development`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a Session 11 cockpit.
-
+Copy `wiki/templates/development.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: development`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a session-plan cockpit.
 
 ## Purpose
 
@@ -41,9 +30,6 @@ leads to discovering the ally — each building capability toward the Climax.
 When they chain, break them with Cliffhangers so knowledge is tested under
 cost before the next piece arrives.
 
-Secret Meeting and Foreshadowing pair naturally before a Clue, Revelation, or
-Alliance. A Retreat usually follows a Cliffhanger the party lost.
-
 ## Completion test
 
 Players can name what they now know or can decide that they could not before.
@@ -51,56 +37,31 @@ Players can name what they now know or can decide that they could not before.
 ## How to fill a Development
 
 1. **Choose the card.** Read [references/development-cards.md](references/development-cards.md)
-   and pick the card whose trigger best matches the current fiction. A card is
-   chosen because the fiction calls for it — not to fill a slot.
+   and pick the card whose trigger best matches the current fiction.
 
 2. **Advance a thread.** Name which live thread this Development reveals a new
-   facet of — a mystery, a faction clock, a PC goal, a relationship, a
-   depleting resource. A Development advancing no live thread is filler; a
-   Development advancing an abandoned thread is a railroad.
+   facet of. A Development advancing no live thread is filler; one advancing an
+   abandoned thread is a railroad.
 
 3. **Write the situation.** Name the trigger, actors, stakes, visible
    information, and at least two viable player responses. Theatre of the mind
    owns `[!narration]` for spoken text.
 
-4. **Prepare the polarity handoff.** The next beat after a Development is a
-   Cliffhanger — action that tests what was just learned under cost. Do not
-   write the next beat — hand off.
+4. **Prepare the polarity handoff.** Next beat is a Cliffhanger — action that
+   tests what was just learned under cost. Do not write the next beat — hand
+   off.
 
 5. **Name what happens if they ignore it, fail, or redirect.** The world
-   updates; the slot does not replay. Consequences are visible.
-
-Done when: players can name what they now know or can decide that they could
-not before. The DM can state what changed and what the next beat's trigger is.
-
-## Card fields
-
-Every card in [references/development-cards.md](references/development-cards.md) carries:
-
-| Field | Rule |
-|---|---|
-| Type | Development |
-| Trigger | When fiction calls for it — not to fill a slot |
-| Stakes | Visible |
-| Player options | At least two viable responses |
-| Agency note | Ignoring, failing, or redirecting updates the world |
+   updates; the slot does not replay.
 
 ## Named seams
 
-Load a second skill only when a named seam fires:
-
-- **Chart question** — chart position, polarity, threads, or transition is
-  unclear → load `session-beats` for that question, not as primary for writing
-  this beat.
+- **Chart question** → load `session-beats` for position, polarity, threads,
+  or transition only.
 - **How the Scene Resolves names a type** → load that type skill for the
   handoff only. Do not absorb the next beat's fill.
 
-Opening another type-card catalog for any other reason is a defect.
-
-## What this skill does not own
-
-Beat Chart assembly, polarity rules, time budget, thread planting, escalation,
-recompute, and the session plan belong to `session-beats`. Do not absorb
-Session 11 cockpit job order. Spoken player text belongs to theatre of the mind.
-Encounter, trap, place, and monster crafts keep their owners. Wiki kind pages
-(vehicle, spell, faction, lore, quest, city, region, place) keep their owners.
+Opening another type-card catalog for any other reason is a defect. Chart
+assembly, polarity rules, time budget, thread planting, escalation, recompute,
+and the session plan belong to `session-beats`. Spoken player text belongs to
+theatre of the mind. Wiki kind pages keep their owners.

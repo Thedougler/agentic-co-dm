@@ -9,22 +9,13 @@ description: >-
 
 # Resolution beats
 
-## Work gate
+## Gates
 
-Prep only. Follow `docs/agents/work.md`. Chat proposal first; wiki page only
-after DM accept.
-
-## HARD: entity-before-spoken
-
-Follow AGENTS.md **HARD: entity-before-spoken** (Nick 2026-09-14). Mint/file required owner pages (kebab + templates; stage when `WIKI_STAGED_WRITES=true`) **before** filling this beat's spoken/`[!narration]`/action-card text. Vague stand-ins for missing entities = critical error — do not ship.
-
-## HARD: dm-facing-explicit
-
-Follow AGENTS.md **HARD: dm-facing-explicit** (Nick 2026-09-14) together with **entity-before-spoken**. DM layers (action cards, Be ready for, secrets, situation facts) state who/what/where/why concretely — no coy placeholders. Player `[!narration]` may withhold from players but stays grounded in named owners.
+Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
 
 ## Copy-start
 
-Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: resolution`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a Session 11 cockpit.
+Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: resolution`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a session-plan cockpit.
 
 ## Purpose
 
@@ -44,56 +35,35 @@ Players can name what is different and what they want next.
 
 ## How to fill a Resolution
 
-### 1. Choose the card
+1. **Choose the card.** Read [references/resolution-cards.md](references/resolution-cards.md).
+   Pick by fiction trigger.
 
-Read `references/resolution-cards.md`. Pick by fiction trigger — not to fill a
-slot.
+2. **Echo the arc.** Name the Hook pressure, middle costs, Climax result, and
+   live threads this Resolution answers. Answering no live thread is epilogue
+   filler; erasing prior cost is a retcon.
 
-### 2. Echo the arc
+3. **Write the changed world.** Name trigger, actors, stakes, visible
+   information, and at least two viable player responses. Theatre of the mind
+   owns `[!narration]` for spoken text.
 
-Name the Hook pressure, middle costs, Climax result, and live threads this
-Resolution answers. A Resolution answering no live thread is epilogue filler.
-A Resolution erasing prior cost is a retcon.
+4. **Name what happens next.** State the changed situation, remaining pressure,
+   and at least two viable next interests. If How the Scene Resolves names a
+   next beat type, load that type skill for the handoff only.
 
-### 3. Write the changed world
-
-| Field | Content |
-|---|---|
-| **Type** | Resolution |
-| **Trigger** | When fiction calls for it — not to fill a slot |
-| **Stakes** | Visible |
-| **Player options** | At least two viable responses |
-| **Agency note** | Ignoring, failing, or redirecting updates the world |
-
-### 4. Name what happens next
-
-State the changed situation, the remaining pressure, and at least two viable
-next interests the players can choose between. If **How the Scene Resolves**
-names a next beat type, load that type skill for the handoff only. Do not
-write the next beat.
-
-### 5. Preserve agency
-
-Ignoring the aftermath leaves consequences to mature. Failing changes who
-benefits, who pays, or what remains possible. Redirecting creates the new
-fiction the DM resolves honestly.
+5. **Preserve agency.** Ignoring the aftermath lets consequences mature.
+   Failing changes who benefits or what remains possible. Redirecting creates
+   new fiction.
 
 ## Named seams
 
-Load another skill only at these seams:
-
-- **Chart question** → load `session-beats` for chart position, polarity,
-  threads, or transition only.
+- **Chart question** → load `session-beats` for position, polarity, threads,
+  or transition only.
 - **How the Scene Resolves names a type** → load that type skill for the
-  handoff only. Do not absorb the next beat's fill.
-- **A named vehicle, spell, faction, lore note, quest, city, or region** →
-  hand off to the wiki-kind owner. Do not absorb the page job.
+  handoff only.
+- **A named entity (vehicle, spell, faction, lore, quest, city, region)** →
+  hand off to wiki-kind owner.
 
-Any other extra type-card catalog is a defect.
-
-## What this skill does not own
-
-Beat Chart assembly, polarity rules, time budget, thread planting, escalation,
-recompute, session plan, spoken text, encounter/trap/place/monster crafting
-pages, wiki kind pages (vehicle, spell, faction, lore, quest, city, region,
-place). Do not absorb Session 11 cockpit job order.
+Opening another type-card catalog for any other reason is a defect. Chart
+assembly, polarity rules, time budget, thread planting, escalation, recompute,
+and the session plan belong to `session-beats`. Spoken player text belongs to
+theatre of the mind.

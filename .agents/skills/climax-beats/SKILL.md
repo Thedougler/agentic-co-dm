@@ -8,22 +8,13 @@ description: >-
 
 # Climax beats
 
-## Work gate
+## Gates
 
-Prep only. Follow `docs/agents/work.md`. Chat proposal first; wiki page only
-after DM accept.
-
-## HARD: entity-before-spoken
-
-Follow AGENTS.md **HARD: entity-before-spoken** (Nick 2026-09-14). Mint/file required owner pages (kebab + templates; stage when `WIKI_STAGED_WRITES=true`) **before** filling this beat's spoken/`[!narration]`/action-card text. Vague stand-ins for missing entities = critical error — do not ship.
-
-## HARD: dm-facing-explicit
-
-Follow AGENTS.md **HARD: dm-facing-explicit** (Nick 2026-09-14) together with **entity-before-spoken**. DM layers (action cards, Be ready for, secrets, situation facts) state who/what/where/why concretely — no coy placeholders. Player `[!narration]` may withhold from players but stays grounded in named owners.
+Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
 
 ## Copy-start
 
-Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: climax`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a Session 11 cockpit.
+Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: climax`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a session-plan cockpit.
 
 ## Purpose
 
@@ -34,65 +25,44 @@ carries the session's central cost.
 
 A final battle is one shape among many. The Climax may be a revelation,
 sacrifice, desperate gambit, reckoning, siege, negotiation, catastrophe, trial,
-betrayal, or other confrontation the party's choices earned. Call it when
-players commit, not when the chart says it is due.
+or betrayal cascade. Call it when players commit, not when the chart says so.
 
 ## Completion test
 
-Highest-stakes confrontation the middle made inevitable; threads harvested.
+Highest-stakes confrontation resolved; threads harvested.
 
 ## How to fill a Climax
 
-### 1. Choose the card
+1. **Choose the card.** Read [references/climax-cards.md](references/climax-cards.md).
+   Pick by fiction trigger.
 
-Read `references/climax-cards.md`. Pick by fiction trigger — not to fill a
-slot.
+2. **Harvest threads.** Name the live threads this Climax harvests. Harvesting
+   no middle threads is spectacle without payoff; harvesting an abandoned
+   thread is a railroad.
 
-### 2. Harvest threads
+3. **Write the situation.** Name trigger, actors, stakes, visible information,
+   and at least two viable player responses. Theatre of the mind owns
+   `[!narration]` for spoken text.
 
-Name the live threads this Climax harvests. A Climax harvesting no middle
-threads is spectacle without payoff. A Climax harvesting an abandoned thread is
-a railroad.
+4. **Prepare the resolution handoff.** Only a Resolution follows a Climax.
+   Name what changed, what it cost, and the scope the Resolution must echo.
+   Do not write the Resolution.
 
-### 3. Write the situation
-
-| Field | Content |
-|---|---|
-| **Type** | Climax |
-| **Trigger** | When fiction calls for it — not to fill a slot |
-| **Stakes** | Visible |
-| **Player options** | At least two viable responses |
-| **Agency note** | Ignoring, failing, or redirecting updates the world |
-
-### 4. Prepare the resolution handoff
-
-Only a Resolution follows a Climax. Name what changed, what it cost, and what
-scope the Resolution must echo. Do not write the Resolution — name the trigger
-and type only.
-
-### 5. Name what happens if they ignore, fail, or redirect
-
-The world updates. Ignoring a Climax lets the highest-stakes pressure land
-without them. Failing resolves the confrontation against the party or at a
-visible cost. Redirecting creates the new highest-stakes confrontation the DM
-resolves honestly.
+5. **Name what happens if they ignore, fail, or redirect.** Ignoring lets
+   the highest-stakes pressure land without them. Failing resolves the
+   confrontation against the party. Redirecting creates the new highest-stakes
+   confrontation.
 
 ## Named seams
 
-Load another skill only at these seams:
-
-- **Chart question** → load `session-beats` for chart position, polarity,
-  threads, or transition only.
+- **Chart question** → load `session-beats` for position, polarity, threads,
+  or transition only.
 - **How the Scene Resolves names a type** → load that type skill for the
-  handoff only. Do not absorb the next beat's fill.
-- **A named vehicle, spell, faction, lore note, quest, city, or region** →
-  hand off to the wiki-kind owner. Do not absorb the page job.
+  handoff only.
+- **A named entity (vehicle, spell, faction, lore, quest, city, region)** →
+  hand off to wiki-kind owner.
 
-Any other extra type-card catalog is a defect.
-
-## What this skill does not own
-
-Beat Chart assembly, polarity rules, time budget, thread planting, escalation,
-recompute, session plan, spoken text, encounter/trap/place/monster crafting
-pages, wiki kind pages (vehicle, spell, faction, lore, quest, city, region,
-place). Do not absorb Session 11 cockpit job order.
+Opening another type-card catalog for any other reason is a defect. Chart
+assembly, polarity rules, time budget, thread planting, escalation, recompute,
+and the session plan belong to `session-beats`. Spoken player text belongs to
+theatre of the mind.
