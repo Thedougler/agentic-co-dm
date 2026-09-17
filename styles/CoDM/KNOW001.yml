@@ -1,0 +1,6 @@
+extends: existence
+message: "KNOW001: unsupported certainty or shared knowledge claim"
+level: warning
+scope: text
+tokens:
+  - "(?i)\\b(obviously|everyone knows|clearly)\\b"

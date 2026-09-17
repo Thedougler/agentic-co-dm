@@ -1,25 +1,24 @@
 #!/usr/bin/env python3
-"""Schedulable wiki health lint. Wraps tools/lint_wiki.py. Adds no checks.
+"""Structural wiki lint plus the creative-lint rule engine.
 
-Default: tools/lint_wiki.py --hard-only (owner-schema HARD).
---all: fail on any finding.
-
-Usage (repo root):
-  ./scripts/wiki-lint
-  ./scripts/wiki-lint --json
-  ./scripts/wiki-lint --all
-  ./scripts/wiki-lint wiki
+Existing invocations without a creative subcommand delegate unchanged to
+``tools/lint_wiki.py``.  Creative commands are ``task``, ``file``, ``corpus``,
+``changed``, ``rule``, and ``candidate``.
 """
 from __future__ import annotations
 
 import argparse
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 LINT = ROOT / "tools" / "lint_wiki.py"
+CREATIVE_COMMANDS = {"task", "file", "corpus", "changed", "rule", "candidate"}
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 
 def run_lint(vault: Path, extra: list[str]) -> tuple[int, dict]:
@@ -33,7 +32,7 @@ def run_lint(vault: Path, extra: list[str]) -> tuple[int, dict]:
     return proc.returncode, json.loads(proc.stdout)
 
 
-def main(argv: list[str] | None = None) -> int:
+def structural_main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("vault", nargs="?", default="wiki")
     parser.add_argument("--json", action="store_true")
@@ -43,7 +42,6 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--allow-lifecycle", action="append", default=[])
     parser.add_argument("--allow-relationship-type", action="append", default=[])
     args = parser.parse_args(argv)
-
     extra: list[str] = []
     if not args.all:
         extra.append("--hard-only")
@@ -51,7 +49,6 @@ def main(argv: list[str] | None = None) -> int:
         extra.extend(["--allow-lifecycle", value])
     for value in args.allow_relationship_type:
         extra.extend(["--allow-relationship-type", value])
-
     vault = Path(args.vault)
     if not vault.is_absolute():
         vault = (Path.cwd() / vault).resolve()
@@ -61,7 +58,6 @@ def main(argv: list[str] | None = None) -> int:
     fail = bool(report.get("hard_fail")) if not args.all else code == 1
     if args.all:
         fail = any(int(counts.get(key, 0) or 0) > 0 for key in counts)
-
     if args.json:
         print(json.dumps(report, indent=2, sort_keys=True))
     else:
@@ -72,6 +68,144 @@ def main(argv: list[str] | None = None) -> int:
         if soft:
             print("soft: " + ", ".join(soft))
     return 1 if fail else 0
+
+
+def _paths(values: list[str], *, default: Path) -> list[Path]:
+    return [Path(value) for value in values] if values else [default]
+
+
+def _severity(value: str | None) -> set[str] | None:
+    if not value:
+        return None
+    allowed = {"BLOCK", "REPAIR", "REVIEW", "WARN", "INFO"}
+    result = {item.strip().upper() for item in value.split(",") if item.strip()}
+    invalid = result - allowed
+    if invalid:
+        raise ValueError(f"unknown severity: {', '.join(sorted(invalid))}")
+    return result
+
+
+def _load_engine():
+    from tools.creative_lint.bundles import BundleRegistry
+    from tools.creative_lint.engine import LintEngine
+    from tools.creative_lint.registry import Registry
+    from tools.creative_lint.waivers import WaiverRegistry
+    registry = Registry.load(ROOT / "rules" / "registry.yml")
+    bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
+    waivers = WaiverRegistry.load(ROOT / "rules" / "waivers.json")
+    return LintEngine(registry, bundles, root=ROOT, vault=ROOT / "wiki", waivers=waivers), registry, bundles
+
+
+def _exit_for(result) -> int:
+    return {"repair_required": 1, "review_needed": 2, "clean": 0}[result.status]
+
+
+def creative_main(argv: list[str]) -> int:
+    from tools.creative_lint.cli_output import render_human
+    command = argv[0]
+    try:
+        engine, registry, bundles = _load_engine()
+    except (OSError, ValueError, KeyError) as exc:
+        print(f"wiki-lint: {exc}", file=sys.stderr)
+        return 2
+    if command == "rule":
+        parser = argparse.ArgumentParser(prog="wiki-lint rule")
+        parser.add_argument("rule_id")
+        args = parser.parse_args(argv[1:])
+        try:
+            rule = registry.get(args.rule_id)
+        except KeyError:
+            print(f"Unknown rule ID: {args.rule_id}", file=sys.stderr)
+            return 2
+        print(f"{rule.id}: {rule.title}")
+        print(f"Category:  {rule.category}")
+        print(f"Severity:  {rule.severity}")
+        print(f"Evaluator: {rule.evaluator}")
+        print(f"Lifecycle: {rule.lifecycle}")
+        print(f"Scope:     {rule.scope}")
+        print(f"Message:   {rule.message}")
+        print(f"Repair:    {rule.repair or 'none'}")
+        print(f"Tags:      {', '.join(rule.tags) or 'none'}")
+        memberships = []
+        for name in bundles.available():
+            bundle = bundles.get(name)
+            for gate in ("block", "review", "diagnostics"):
+                if rule.category in (getattr(bundle, gate) or []):
+                    memberships.append(f"{name} ({gate})")
+        print(f"Bundles:   {', '.join(memberships) or 'none'}")
+        return 0
+    if command == "candidate":
+        return candidate_main(argv[1:], registry)
+    parser = argparse.ArgumentParser(prog=f"wiki-lint {command}")
+    if command == "task":
+        parser.add_argument("bundle")
+        parser.add_argument("paths", nargs="*")
+    elif command == "file":
+        parser.add_argument("path")
+    elif command in {"corpus", "changed"}:
+        parser.add_argument("paths", nargs="*")
+    parser.add_argument("--json", action="store_true")
+    parser.add_argument("--severity")
+    args = parser.parse_args(argv[1:])
+    try:
+        severity = _severity(args.severity)
+        if command == "task":
+            result = engine.run(bundle=args.bundle, paths=_paths(args.paths, default=ROOT / "wiki"), severity_filter=severity)
+        elif command == "file":
+            result = engine.run(paths=[args.path], severity_filter=severity)
+        elif command == "corpus":
+            result = engine.run(bundle="corpus", paths=_paths(args.paths, default=ROOT / "wiki"), severity_filter=severity)
+        else:
+            changed = subprocess.run(["git", "diff", "--name-only", "HEAD"], cwd=ROOT, capture_output=True, text=True, check=False)
+            files = [ROOT / line.strip() for line in changed.stdout.splitlines() if line.strip().endswith(".md")]
+            result = engine.run(bundle="corpus", paths=files, severity_filter=severity)
+    except (ValueError, KeyError) as exc:
+        print(f"wiki-lint: {exc}", file=sys.stderr)
+        return 2
+    if args.json:
+        print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
+    else:
+        print(render_human(result, command=command))
+    return _exit_for(result)
+
+
+def candidate_main(argv: list[str], registry) -> int:
+    parser = argparse.ArgumentParser(prog="wiki-lint candidate")
+    parser.add_argument("correction", nargs="+")
+    parser.add_argument("--json", action="store_true")
+    args = parser.parse_args(argv)
+    query = " ".join(args.correction).casefold()
+    matches = [rule for rule in registry.rules if query in (rule.message + " " + rule.title + " " + " ".join(rule.tags)).casefold()]
+    if matches:
+        data = {"matches": [{"rule_id": rule.id, "title": rule.title, "message": rule.message} for rule in matches]}
+        if args.json:
+            print(json.dumps(data, indent=2))
+        else:
+            for item in data["matches"]:
+                print(f"{item['rule_id']}: {item['title']} — {item['message']}")
+        return 0
+    slug = re.sub(r"[^a-z0-9]+", "-", query).strip("-")[:48] or "candidate"
+    candidate_dir = ROOT / "rules" / "candidates"
+    candidate_dir.mkdir(parents=True, exist_ok=True)
+    path = candidate_dir / f"{slug}.yml"
+    path.write_text(
+        "id: CANDIDATE001\n"
+        f"title: {json.dumps('Candidate: ' + ' '.join(args.correction))}\n"
+        "category: retrieval\nscope: content\nseverity: WARN\n"
+        "evaluator: human\nlifecycle: SHADOW\n"
+        f"message: {json.dumps('DM correction: ' + ' '.join(args.correction))}\n"
+        "repair: null\ntags: [candidate]\nconflicts: []\ndepends: []\n",
+        encoding="utf-8",
+    )
+    data = {"candidate": str(path.relative_to(ROOT)), "lifecycle": "SHADOW", "promotion": "requires measured precision"}
+    print(json.dumps(data, indent=2) if args.json else f"Created SHADOW candidate: {data['candidate']}")
+    return 0
+
+
+def main(argv: list[str] | None = None) -> int:
+    argv = list(sys.argv[1:] if argv is None else argv)
+    first_positional = next((item for item in argv if not item.startswith("-")), None)
+    return creative_main(argv) if first_positional in CREATIVE_COMMANDS else structural_main(argv)
 
 
 if __name__ == "__main__":

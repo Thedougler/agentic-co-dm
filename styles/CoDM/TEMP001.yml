@@ -1,0 +1,6 @@
+extends: existence
+message: "TEMP001: narration leaks knowledge of a future event"
+level: warning
+scope: text
+tokens:
+  - "(?i)\\b(as you will discover|next session|in the future you)\\b"

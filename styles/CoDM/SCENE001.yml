@@ -1,0 +1,6 @@
+extends: occurrence
+message: "SCENE001: section lacks an actionable situation or pressure marker"
+level: suggestion
+scope: paragraph
+min: 1
+token: "(?i)\\b(pressure|threat|can|must|clock|risk|choice|deadline)\\b"

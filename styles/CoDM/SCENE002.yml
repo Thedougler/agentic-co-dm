@@ -1,0 +1,6 @@
+extends: existence
+message: "SCENE002: vague placeholder weakens the playable situation"
+level: suggestion
+scope: text
+tokens:
+  - "(?i)\\b(something happens|stuff occurs|things go)\\b"

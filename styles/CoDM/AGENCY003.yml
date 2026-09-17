@@ -1,0 +1,6 @@
+extends: existence
+message: "AGENCY003: narration assigns an involuntary player-character response"
+level: warning
+scope: text
+tokens:
+  - "(?i)\\byou\\s+(suddenly|involuntarily|can't help but)\\b"

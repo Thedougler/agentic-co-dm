@@ -301,7 +301,32 @@ def _rel(cwd: Path, path: Path) -> str:
         return str(path)
 
 
-def build_report(vault: str, cwd: Path) -> dict[str, Any]:
+def step_creative_lint(vault: str, cwd: Path) -> dict[str, Any]:
+    """Optional A7: corpus creative-lint report using the live engine."""
+    code, data, err = run_json(
+        [sys.executable, str(WIKI_LINT), "task", "corpus", vault, "--json"], cwd=cwd
+    )
+    if data is None:
+        return {"step": "A7", "tool": "scripts/wiki-lint task corpus", "ok": False,
+                "exit_code": code, "error": err}
+    summary = data.get("summary") or {}
+    return {
+        "step": "A7",
+        "tool": "scripts/wiki-lint task corpus",
+        "ok": True,
+        "exit_code": code,
+        "status": data.get("status"),
+        "metric": {
+            "files_checked": data.get("files_checked"),
+            "rules_evaluated": data.get("rules_evaluated"),
+            "findings": len(data.get("findings") or []),
+            "blocking": int(summary.get("BLOCK", 0) or 0) + int(summary.get("REPAIR", 0) or 0),
+        },
+    }
+
+
+def build_report(vault: str, cwd: Path, *, include_creative: bool = False) -> dict[str, Any]:
+    creative = step_creative_lint(vault, cwd) if include_creative else None
     a1 = step_wiki_lint(vault, cwd)
     a2 = step_context_waste(vault, cwd)
     a3 = step_token_count(vault, cwd)
@@ -348,6 +373,10 @@ def build_report(vault: str, cwd: Path) -> dict[str, Any]:
         "a6_plan_count": a6_plan_count,
         "quiet": quiet,
     }
+    if creative is not None:
+        summary["a7_creative_status"] = creative.get("status")
+        summary["a7_creative_findings"] = (creative.get("metric") or {}).get("findings")
+        summary["a7_creative_blocking"] = (creative.get("metric") or {}).get("blocking")
 
     return {
         "version": VERSION,
@@ -362,6 +391,7 @@ def build_report(vault: str, cwd: Path) -> dict[str, Any]:
             "A3_token_count": a3,
             "A5_raw_empty": a5,
             "A6_dry_run_plans": a6,
+            **({"A7_creative_lint": creative} if creative is not None else {}),
         },
     }
 
@@ -387,6 +417,11 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="print only the top-level summary object (counts)",
     )
+    parser.add_argument(
+        "--creative-lint",
+        action="store_true",
+        help="include an optional corpus creative-lint report (A7)",
+    )
     args = parser.parse_args(argv)
 
     cwd = ROOT
@@ -397,7 +432,7 @@ def main(argv: list[str] | None = None) -> int:
         print("scripts/context-waste-scan.py missing", file=sys.stderr)
         return 2
 
-    report = build_report(args.vault, cwd)
+    report = build_report(args.vault, cwd, include_creative=args.creative_lint)
     if args.summary_only:
         print(json.dumps(report["summary"], indent=2, sort_keys=True))
     else:

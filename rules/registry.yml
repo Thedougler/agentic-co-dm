@@ -1,0 +1,177 @@
+rules:
+  - id: AGENCY001
+    title: Authored PC decision
+    category: agency
+    scope: content
+    severity: BLOCK
+    evaluator: vale
+    lifecycle: ACTIVE
+    vale_style: CoDM/AGENCY001
+    message: Narration authors a player-character decision
+    repair: Rewrite to describe the situation without prescribing the PC's response
+    tags: [player-agency, narration]
+    conflicts: []
+    depends: []
+  - id: AGENCY002
+    title: Prescribed PC action
+    category: agency
+    scope: content
+    severity: BLOCK
+    evaluator: vale
+    lifecycle: ACTIVE
+    vale_style: CoDM/AGENCY002
+    message: Narration prescribes a player-character action
+    repair: Present the pressure and available affordances without requiring one action
+    tags: [player-agency, narration]
+    conflicts: []
+    depends: []
+  - id: AGENCY003
+    title: Involuntary PC response
+    category: agency
+    scope: content
+    severity: REVIEW
+    evaluator: vale
+    lifecycle: ACTIVE
+    vale_style: CoDM/AGENCY003
+    message: Narration assigns an involuntary player-character response
+    repair: Recast the response as an observable external pressure
+    tags: [player-agency]
+    conflicts: []
+    depends: []
+  - id: KNOW001
+    title: Unsupported certainty claim
+    category: retrieval
+    scope: content
+    severity: REVIEW
+    evaluator: vale
+    lifecycle: ACTIVE
+    vale_style: CoDM/KNOW001
+    message: DM-facing knowledge claim lacks an explicit evidence handle
+    repair: Add a source or state the claim as uncertain
+    tags: [knowledge-boundary, evidence]
+    conflicts: []
+    depends: []
+  - id: KNOW002
+    title: NPC meta-knowledge leak
+    category: retrieval
+    scope: content
+    severity: REPAIR
+    evaluator: vale
+    lifecycle: ACTIVE
+    vale_style: CoDM/KNOW002
+    message: NPC uses a meta-knowledge phrase outside the fiction
+    repair: Replace the meta phrase with what the NPC could know in-world
+    tags: [knowledge-boundary, npc]
+    conflicts: []
+    depends: []
+  - id: TEMP001
+    title: Future-event knowledge leak
+    category: temporal
+    scope: content
+    severity: REVIEW
+    evaluator: vale
+    lifecycle: ACTIVE
+    vale_style: CoDM/TEMP001
+    message: Text reveals knowledge of a future event
+    repair: Reframe the future event as a possibility, omen, or unresolved pressure
+    tags: [temporal-truth]
+    conflicts: []
+    depends: []
+  - id: SCENE001
+    title: Missing situation marker
+    category: scene
+    scope: content
+    severity: WARN
+    evaluator: vale
+    lifecycle: ACTIVE
+    vale_style: CoDM/SCENE001
+    message: Section lacks an actionable situation or pressure marker
+    repair: Consider naming the pressure, choice, risk, or deadline
+    tags: [scene-craft]
+    conflicts: []
+    depends: []
+  - id: SCENE002
+    title: Vague situation placeholder
+    category: scene
+    scope: content
+    severity: WARN
+    evaluator: vale
+    lifecycle: ACTIVE
+    vale_style: CoDM/SCENE002
+    message: Vague placeholder weakens the playable situation
+    repair: Replace the placeholder with a concrete named pressure or consequence
+    tags: [scene-craft, specificity]
+    conflicts: []
+    depends: []
+  - id: CANON001
+    title: Rejected entity presented as present
+    category: canon
+    scope: corpus
+    severity: REPAIR
+    evaluator: symbolic
+    lifecycle: ACTIVE
+    message: A rejected or dead canonical entity is referenced as present
+    repair: Update the reference to match the canonical lifecycle or route it through a flashback
+    tags: [canon, world-state]
+    conflicts: []
+    depends: []
+  - id: CANON002
+    title: Stale entity state
+    category: canon
+    scope: corpus
+    severity: REPAIR
+    evaluator: symbolic
+    lifecycle: ACTIVE
+    message: Session preparation references an entity whose canonical state is stale
+    repair: Re-check the canonical owner page and update the reference before DM review
+    tags: [canon, world-state]
+    conflicts: []
+    depends: []
+  - id: WIKI001
+    title: Missing required frontmatter
+    category: wiki
+    scope: frontmatter
+    severity: BLOCK
+    evaluator: symbolic
+    lifecycle: ACTIVE
+    message: Wiki page is missing required frontmatter
+    repair: Add the missing owner-schema fields before linting the page again
+    tags: [schema, wiki]
+    conflicts: []
+    depends: []
+  - id: WIKI002
+    title: Invalid owner field
+    category: wiki
+    scope: frontmatter
+    severity: BLOCK
+    evaluator: symbolic
+    lifecycle: ACTIVE
+    message: Wiki page contains an invalid type or lifecycle value
+    repair: Use a type and lifecycle from the owner schema
+    tags: [schema, wiki]
+    conflicts: []
+    depends: []
+  - id: DIVERSITY001
+    title: Repeated vocabulary pattern
+    category: diversity
+    scope: corpus
+    severity: INFO
+    evaluator: symbolic
+    lifecycle: ACTIVE
+    message: Corpus vocabulary pattern is unusually repetitive
+    repair: Consider varied language during future design; do not rewrite accepted canon retroactively
+    tags: [diversity, diagnostic]
+    conflicts: []
+    depends: []
+  - id: RETRIEVAL001
+    title: Broken canonical link
+    category: retrieval
+    scope: corpus
+    severity: BLOCK
+    evaluator: symbolic
+    lifecycle: ACTIVE
+    message: Content contains a wikilink that does not resolve
+    repair: Resolve the target against the wiki or remove the unsupported reference
+    tags: [retrieval, links]
+    conflicts: []
+    depends: []

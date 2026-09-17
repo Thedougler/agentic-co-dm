@@ -1,0 +1,26 @@
+bundles:
+  session-prep:
+    description: Rules for session preparation output
+    block: [agency, canon, wiki]
+    review: [retrieval, temporal]
+    diagnostics: [scene, diversity]
+  wiki-ingest:
+    description: Rules for imported wiki material
+    block: [wiki]
+    review: [canon]
+    diagnostics: [retrieval]
+  worldbuilding:
+    description: Rules for new worldbuilding proposals
+    block: [canon, wiki]
+    review: [retrieval]
+    diagnostics: [scene]
+  live-codm:
+    description: Rules for live table Co-DM output
+    block: [agency]
+    review: []
+    diagnostics: [scene]
+  corpus:
+    description: Full corpus validation bundle
+    block: [wiki, canon]
+    review: [retrieval, temporal, agency]
+    diagnostics: [scene, diversity]

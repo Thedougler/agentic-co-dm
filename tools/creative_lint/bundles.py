@@ -1,0 +1,106 @@
+"""Task-specific rule bundle loading and severity gates."""
+from __future__ import annotations
+
+from dataclasses import dataclass
+from pathlib import Path
+
+import yaml
+
+from .registry import Registry, RuleDefinition
+from .severity import min_severity
+
+GATES = {"block": "BLOCK", "review": "REVIEW", "diagnostics": "WARN"}
+
+
+@dataclass(frozen=True, slots=True)
+class BundleDefinition:
+    name: str
+    description: str = ""
+    block: list[str] | None = None
+    review: list[str] | None = None
+    diagnostics: list[str] | None = None
+
+    def __post_init__(self) -> None:
+        for field_name in ("block", "review", "diagnostics"):
+            if getattr(self, field_name) is None:
+                object.__setattr__(self, field_name, [])
+
+    def resolve(self, registry: Registry) -> list[tuple[RuleDefinition, str]]:
+        categories: dict[str, str] = {}
+        for gate, category_names in (("block", self.block), ("review", self.review), ("diagnostics", self.diagnostics)):
+            for category in category_names or []:
+                if category in categories:
+                    raise ValueError(f"bundle {self.name} places category {category} more than once")
+                categories[category] = GATES[gate]
+        resolved: list[tuple[RuleDefinition, str]] = []
+        for rule in registry.rules:
+            if rule.lifecycle != "ACTIVE" or rule.category not in categories:
+                continue
+            resolved.append((rule, min_severity(rule.severity, categories[rule.category])))
+        return resolved
+
+    def categories(self) -> set[str]:
+        return set(self.block or []) | set(self.review or []) | set(self.diagnostics or [])
+
+
+class BundleRegistry:
+    def __init__(self, bundles: list[BundleDefinition], *, path: Path | None = None):
+        self.bundles = {bundle.name: bundle for bundle in bundles}
+        self.path = path
+
+    @classmethod
+    def load(cls, path: str | Path) -> "BundleRegistry":
+        path = Path(path)
+        try:
+            raw = yaml.safe_load(path.read_text(encoding="utf-8"))
+        except (OSError, yaml.YAMLError) as exc:
+            raise ValueError(f"could not load bundles {path}: {exc}") from exc
+        raw = raw or {}
+        entries = raw.get("bundles", raw) if isinstance(raw, dict) else raw
+        if isinstance(entries, list):
+            entries = {item["name"]: item for item in entries}
+        if not isinstance(entries, dict):
+            raise ValueError("bundle registry must contain a mapping under 'bundles'")
+        bundles = []
+        for name, value in entries.items():
+            if not isinstance(value, dict):
+                raise ValueError(f"bundle {name} must be a mapping")
+            bundles.append(BundleDefinition(
+                name=str(name), description=str(value.get("description", "")),
+                block=[str(x) for x in value.get("block", []) or []],
+                review=[str(x) for x in value.get("review", []) or []],
+                diagnostics=[str(x) for x in value.get("diagnostics", []) or []],
+            ))
+        registry = cls(bundles, path=path)
+        registry.validate()
+        return registry
+
+    def get(self, name: str) -> BundleDefinition:
+        try:
+            return self.bundles[name]
+        except KeyError as exc:
+            raise KeyError(f"unknown bundle {name}; available: {', '.join(self.available())}") from exc
+
+    def available(self) -> list[str]:
+        return sorted(self.bundles)
+
+    def memberships(self, rule_id: str) -> list[tuple[str, str]]:
+        # Rule membership is category-based; callers pass a RuleDefinition ID only
+        # when they already have the category available. This method is retained as
+        # a lightweight report surface and returns bundle gate entries.
+        return [(name, gate) for name, bundle in self.bundles.items()
+                for gate in ("block", "review", "diagnostics")
+                if rule_id in (getattr(bundle, gate) or [])]
+
+    def validate(self) -> list[str]:
+        errors: list[str] = []
+        for bundle in self.bundles.values():
+            locations: dict[str, str] = {}
+            for gate in ("block", "review", "diagnostics"):
+                for category in getattr(bundle, gate) or []:
+                    if category in locations:
+                        errors.append(f"bundle {bundle.name}: category {category} appears in {locations[category]} and {gate}")
+                    locations[category] = gate
+        if errors:
+            raise ValueError("invalid bundle registry:\n" + "\n".join(errors))
+        return errors

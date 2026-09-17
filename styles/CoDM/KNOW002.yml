@@ -1,0 +1,6 @@
+extends: existence
+message: "KNOW002: NPC uses a meta-knowledge phrase"
+level: error
+scope: text
+tokens:
+  - "(?i)\\b(as you may recall|the player)\\b"

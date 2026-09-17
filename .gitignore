@@ -8,7 +8,6 @@ Thumbs.db
 .vscode/
 .idea/
 
-
 # Secrets / machine paths
 .env
 .env.*
@@ -51,6 +50,9 @@ __pycache__/
 .venv/
 venv/
 dist/
+
+# Creative lint shadow telemetry
+rules/shadow/*.jsonl
 
 # Archived legacy content stays local and is neither tracked nor indexed.
 legacy/
