@@ -1,7 +1,7 @@
 <!--
 Sync Impact Report
-- Version change: 1.21.0 -> 1.22.0
-- Modified principles: VI. Software Is Agent-Shaped (expanded critical-defect response)
+- Version change: 1.22.0 -> 1.23.0
+- Modified principles: VI. Software Is Agent-Shaped (added automatic fixed-error ledger cleanup)
 - Added sections: None
 - Removed sections: None
 - Follow-up TODOs: None
@@ -91,8 +91,14 @@ ledger, stop treating the software as acceptable, and fix or remove the root cau
 The fix MUST be verified at the affected public seam before dependent work continues. A temporary
 workaround MAY protect data during repair but MUST NOT substitute for the fix.
 
+After a logged error is fixed and verified, the owning agent MUST automatically clean and condense
+the corresponding error-ledger entry through its supported ledger operation. Cleanup MUST retain
+concise cause, fix, and verification evidence, MUST remove duplicate or stale detail, and MUST NOT
+erase unresolved history or conceal recurrence.
+
 Rationale: an agent cannot depend on a surface it cannot invoke or inspect reliably, and a
-known harmful surface must not remain in service while its failure is undocumented.
+known harmful surface must not remain in service while its failure is undocumented. Automatic
+ledger cleanup keeps resolved failures actionable without allowing the record to become noise.
 
 ### VII. Creative Judgment Is Protected
 
@@ -318,4 +324,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.22.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-16
+**Version**: 1.23.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-16

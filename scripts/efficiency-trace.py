@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import statistics
 import sys
 from pathlib import Path
 from typing import Any, Iterable, NoReturn
@@ -17,6 +18,8 @@ WORK_STATUSES = {"produced", "accepted", "failed", "incomplete"}
 MEASUREMENT_STATUSES = {"complete", "measurement-gap"}
 DM_ACCEPTANCE = {"not-required", "pending", "accepted", "modified", "rejected"}
 RAW_KEYS = {"prompt", "raw_prompt", "raw_content", "campaign_content", "wiki_content", "model_content", "provider_content"}
+TRAJECTORY_FIELDS = ("request", "loaded_context", "retrieval", "tools", "failures", "retries", "model_input", "model_output", "final_work")
+RETRIEVAL_FIELDS = ("queries", "fetches", "tokens", "useful", "unused")
 
 
 def error(message: str) -> NoReturn:
@@ -28,6 +31,54 @@ def read_json(path: Path) -> Any:
         return json.loads(path.read_text())
     except (OSError, json.JSONDecodeError) as exc:
         error(f"cannot read JSON input {path}: {exc}")
+
+
+def _scalar(text: str, key: str) -> str | None:
+    for line in text.splitlines():
+        stripped = line.strip()
+        if stripped.startswith(f"{key}:"):
+            value = stripped.split(":", 1)[1].strip().split(" #", 1)[0].strip()
+            return value.strip("\"'")
+    return None
+
+
+def policy() -> dict[str, Any]:
+    """Read the policy scalars needed by the CLI without adding a YAML dependency."""
+    try:
+        text = POLICY_PATH.read_text(encoding="utf-8")
+    except OSError as exc:
+        error(f"cannot read efficiency policy {POLICY_PATH}: {exc}")
+    values = {
+        "schema_version": _scalar(text, "schema_version"),
+        "policy_version": _scalar(text, "policy_version"),
+        "retention_days": _scalar(text, "retention_days"),
+        "minimum_pairs": _scalar(text, "minimum_pairs"),
+        "minimum_median_reduction": _scalar(text, "minimum_median_reduction"),
+        "native_tokenizer_accepted": None,
+    }
+    in_native = False
+    for line in text.splitlines():
+        stripped = line.strip()
+        if stripped == "native_tokenizer_governance:":
+            in_native = True
+            continue
+        if in_native and stripped and not line.startswith((" ", "\t")):
+            in_native = False
+        if in_native and stripped.startswith("accepted:"):
+            values["native_tokenizer_accepted"] = _scalar(stripped, "accepted") == "true"
+    if values["schema_version"] != "1" or not values["policy_version"]:
+        error("efficiency policy is missing a supported schema_version or policy_version")
+    try:
+        values["retention_days"] = int(values["retention_days"] or 0)
+        values["minimum_pairs"] = int(values["minimum_pairs"] or 0)
+        values["minimum_median_reduction"] = float(values["minimum_median_reduction"] or 0)
+    except ValueError as exc:
+        error(f"efficiency policy has invalid numeric thresholds: {exc}")
+    if values["retention_days"] <= 0 or values["minimum_pairs"] <= 0:
+        error("efficiency policy thresholds must be positive")
+    if values["native_tokenizer_accepted"] is None:
+        error("efficiency policy must declare native tokenizer governance acceptance")
+    return values
 
 
 def records_from(value: Any) -> list[dict[str, Any]]:
@@ -64,34 +115,41 @@ def validate_record(record: dict[str, Any]) -> dict[str, Any]:
         error(f"missing required fields: {', '.join(missing)}")
     if record["schema_version"] != SUPPORTED_SCHEMA:
         error(f"incompatible schema_version {record['schema_version']}; supported {SUPPORTED_SCHEMA}")
-    if not isinstance(record["trace_id"], str) or not record["trace_id"]:
-        error("trace_id must be a non-empty string")
+    for key in ("trace_id", "policy_version", "model_family", "tokenizer_family", "encoding"):
+        if not isinstance(record[key], str) or not record[key].strip():
+            error(f"{key} must be a non-empty string")
     if record["sitting_class"] not in SITTING_CLASSES:
         error(f"invalid sitting_class {record['sitting_class']}")
     if record["work_status"] not in WORK_STATUSES:
         error(f"invalid work_status {record['work_status']}")
     if record["measurement_status"] not in MEASUREMENT_STATUSES:
         error(f"invalid measurement_status {record['measurement_status']}")
+    if record["measurement_status"] == "measurement-gap" and not isinstance(record.get("measurement_gap_reason"), str):
+        error("measurement-gap records require measurement_gap_reason")
+    if record.get("comparison_sample") is True and record["measurement_status"] != "complete":
+        error("measurement-gap cannot be a comparison sample")
     for key, value in walk(record):
         if key.rsplit(".", 1)[-1].split("[", 1)[0].lower() in RAW_KEYS:
             error(f"raw-content field is not allowed: {key}")
     trajectory = record["trajectory"]
     if not isinstance(trajectory, dict):
         error("trajectory must be an object")
-    for key in ("request", "loaded_context", "retrieval", "tools", "failures", "retries", "model_input", "model_output", "final_work"):
+    for key in TRAJECTORY_FIELDS:
         if key not in trajectory:
             error(f"trajectory.{key} is required")
         validate_count(trajectory[key], f"trajectory.{key}")
     retrieval = record["retrieval"]
     if not isinstance(retrieval, dict):
         error("retrieval must be an object")
-    for key in ("queries", "fetches", "tokens", "useful", "unused"):
+    for key in RETRIEVAL_FIELDS:
         if key not in retrieval:
             error(f"retrieval.{key} is required")
         validate_count(retrieval[key], f"retrieval.{key}")
     for key in ("attempted_collections", "fallbacks"):
         if not isinstance(retrieval.get(key), list) or not all(isinstance(item, str) for item in retrieval[key]):
             error(f"retrieval.{key} must be a list of strings")
+    if retrieval["useful"] + retrieval["unused"] > retrieval["fetches"]:
+        error("retrieval useful and unused counts exceed fetches")
     components = record["source_components"]
     if not isinstance(components, list) or not components:
         error("source_components must be a non-empty list")
@@ -130,8 +188,9 @@ def validate_record(record: dict[str, Any]) -> dict[str, Any]:
         error(f"invalid quality.dm_acceptance {quality.get('dm_acceptance')}")
     if record["work_status"] == "accepted" and quality["dm_acceptance"] != "accepted":
         error("accepted Work requires explicit DM acceptance")
-    if record["measurement_status"] == "measurement-gap" and record.get("comparison_sample") is True:
-        error("measurement-gap cannot be a comparison sample")
+    if record["work_status"] in {"failed", "incomplete"}:
+        if not isinstance(record.get("failure_reason"), str) or not record["failure_reason"].strip():
+            error(f"{record['work_status']} Work requires failure_reason")
     return record
 
 
@@ -213,10 +272,11 @@ def report(records: list[dict[str, Any]]) -> dict[str, Any]:
         "runtime_tool_failure_rate": metric(runtime / max(1, len(valid)), len(valid)),
         "useful_retrieval": metric(sum(r["retrieval"]["useful"] for r in valid), retrieval_fetches),
         "unnecessary_retrieval": metric(sum(r["retrieval"]["unused"] for r in valid), retrieval_fetches),
-        "work_status_counts": {status: sum(r["work_status"] == status for r in valid) for status in sorted(WORK_STATUSES)},
-        "measurement_status_counts": {status: sum(r["measurement_status"] == status for r in valid) for status in sorted(MEASUREMENT_STATUSES)},
+        "work_status_counts": {status: metric(sum(r["work_status"] == status for r in valid), len(valid)) for status in sorted(WORK_STATUSES)},
+        "measurement_status_counts": {status: metric(sum(r["measurement_status"] == status for r in valid), len(valid)) for status in sorted(MEASUREMENT_STATUSES)},
         "accepted_work_denominator": len(comparable),
         "same_kind_comparison_groups": comparison_groups,
+        "policy": {"policy_version": policy()["policy_version"], "label": "measured"},
     }
 
 
@@ -264,6 +324,8 @@ def main() -> int:
             records = records_from(read_json(args.input)) if args.input else load_stream(args.trace)
             print(json.dumps(report(records), sort_keys=True))
         elif args.command == "retain":
+            if args.days < 0:
+                error("retention days must be non-negative")
             cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=args.days)
             kept: list[dict[str, Any]] = []
             removed = 0
@@ -278,36 +340,51 @@ def main() -> int:
                     kept.append(record)
                 else:
                     removed += 1
-            args.trace.write_text("".join(json.dumps(record, sort_keys=True) + "\n" for record in kept))
+            args.trace.parent.mkdir(parents=True, exist_ok=True)
+            args.trace.write_text("".join(json.dumps(record, sort_keys=True) + "\n" for record in kept), encoding="utf-8")
             print(json.dumps({"status": "retained", "removed": removed, "days": args.days}))
         elif args.command == "promote":
+            settings = policy()
             records = [validate_record(record) for record in records_from(read_json(args.input))]
             complete = [r for r in records if r["measurement_status"] == "complete" and r["work_status"] == "accepted"]
             classes = {r["sitting_class"] for r in complete}
             jobs = {r.get("job") for r in complete}
             identities = {(r["model_family"], r["tokenizer_family"], r["encoding"]) for r in complete}
-            if len(complete) < 10 or len(classes) != 1 or len(jobs) != 1:
-                error("promotion requires at least 10 same-kind accepted complete records")
+            if len(complete) < settings["minimum_pairs"] or len(classes) != 1 or len(jobs) != 1:
+                error(f"promotion requires at least {settings['minimum_pairs']} same-kind accepted complete records")
             if len(identities) != 1:
-                error("promotion requires one model/tokenizer family and encoding")
+                error("promotion rejected: model/tokenizer families and encodings are not comparable")
+            if any(str(r["tokenizer_family"]).lower().startswith("native") for r in complete) and not settings["native_tokenizer_accepted"]:
+                error("promotion blocked: native-tokenizer governance is pending")
             if any(r["quality"]["hard_gate_failures"] for r in complete) or not all(r["quality"]["semantic_non_inferior"] for r in complete):
-                error("promotion blocked by hard-gate or semantic regression")
-            reductions = []
+                error("promotion blocked by hard-gate or semantic regression; rollback required")
+            reductions: list[float] = []
             for record in complete:
                 baseline = record.get("baseline_trajectory_tokens")
-                if baseline is not None:
-                    validate_count(baseline, "baseline_trajectory_tokens")
-                    current = sum(record["trajectory"].values())
-                    reductions.append((baseline - current) / max(1, baseline))
-            if reductions and (len(reductions) != len(complete) or sorted(reductions)[len(reductions) // 2] < 0.05):
-                error("promotion requires at least a 5% median trajectory-token reduction")
+                if baseline is None:
+                    error("promotion requires a pinned baseline trajectory for every pair")
+                validate_count(baseline, "baseline_trajectory_tokens")
+                current = sum(record["trajectory"].values())
+                reductions.append((baseline - current) / max(1, baseline))
+                baseline_quality = record.get("baseline_quality")
+                if isinstance(baseline_quality, dict):
+                    for field in ("runtime_failures", "dm_revisions"):
+                        if field in baseline_quality:
+                            validate_count(baseline_quality[field], f"baseline_quality.{field}")
+                            if record["quality"][field] > baseline_quality[field]:
+                                error(f"promotion blocked by material {field} regression; rollback required")
+            median_reduction = statistics.median(reductions)
+            if median_reduction < settings["minimum_median_reduction"]:
+                error(f"promotion requires at least a {settings['minimum_median_reduction']:.0%} median trajectory-token reduction")
+            if not 0 <= args.canary <= 1:
+                error("canary must be a fraction between 0 and 1")
             if args.risk == "low" and args.canary < 0.10:
                 error("low-risk promotion requires a 10% canary")
             if args.risk == "moderate" and (not args.shadow or args.canary < 0.10):
                 error("moderate-risk promotion requires shadow replay and canary review")
             if args.risk == "high" and not args.human_review:
                 error("high-risk promotion requires human review")
-            print(json.dumps({"status": "promotable", "risk": args.risk, "pairs": len(complete)}))
+            print(json.dumps({"status": "promotable", "risk": args.risk, "pairs": len(complete), "median_reduction": median_reduction, "policy_version": settings["policy_version"]}))
         return 0
     except (ValueError, OSError) as exc:
         print(f"FAIL {args.command}: {exc}", file=sys.stderr)
