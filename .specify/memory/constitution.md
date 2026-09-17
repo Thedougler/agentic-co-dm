@@ -1,8 +1,8 @@
 <!--
 Sync Impact Report
-- Version change: 1.26.0 → 1.27.0 (MINOR)
+- Version change: 1.27.0 → 1.28.0 (MINOR)
 - Modified principles:
-  - XXI. Highlighted Production Prose Is a Source Error → XXI. User Corrections Become Durable Source Fixes
+  - XIX. The Wiki Is Additive, Self-Sealing, and Self-Healing → XIX. The Wiki Is Additive, Self-Sealing, and Self-Healing (staging lifecycle clarified)
 - Added sections: None
 - Removed sections: None
 - Follow-up TODOs: None
@@ -240,7 +240,15 @@ Safe deterministic maintenance MUST detect and repair structural, index, link, a
 drift without inventing lore, changing accepted facts, or applying a judgment-only repair without
 its required review.
 
-Rationale: additive history seals accepted knowledge; safe repair keeps the compiled Wiki usable.
+The wiki staging area MUST be temporary. At the beginning of each session, the agent MUST inspect
+and integrate every page already in `_staging/` before beginning new wiki work. Before the session
+ends, the agent MUST integrate every page it created or updated in `_staging/` into its canonical
+wiki location through the applicable review and acceptance workflow. A staging page MUST NOT be
+carried into a later session merely because the session ended; any genuine blocker MUST be surfaced
+explicitly with its owner and next action.
+
+Rationale: additive history seals accepted knowledge; safe repair keeps the compiled Wiki usable;
+staging limits temporary review state instead of becoming a permanent second wiki.
 
 ### XX. Multi-Step Work Uses a Checked Todo List
 
@@ -329,4 +337,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.27.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 1.28.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
