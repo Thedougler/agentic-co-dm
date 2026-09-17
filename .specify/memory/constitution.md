@@ -1,11 +1,3 @@
-<!--
-Sync Impact Report
-- Version change: 2.1.0 → 2.2.0
-- Modified principles: XV. Autonomous Operation (expanded); no titles renamed
-- Added sections: XX. Lean Agent-Facing Documents
-- Removed sections: none
-- Follow-up TODOs: none
--->
 
 # Agentic Co-DM Constitution
 <!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
