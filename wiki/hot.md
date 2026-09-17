@@ -1,8 +1,9 @@
 ---
-updated: 2026-09-16T00:00:00Z
+updated: 2026-09-17T10:20:33Z
 ---
 ## Recent Activity
 Retconned Catarina Da'Virelli to her Calveno NPC owner page; completed workshop work remains with Delmar, Crissdalynn, and Zort.
+Linted 726 live pages: 1,051 unresolved links dominate the backlog; 30 index omissions, 29 trust-field gaps, and five orphans remain.
 Corrected the campaign roster and encounter calibrations to Delmar, Crissdalynn, Jean-Claude, and Perrin.
 Removed an obsolete closed plot artifact and its archived narration source.
 ## Active Threads
