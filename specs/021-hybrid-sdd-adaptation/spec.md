@@ -22,6 +22,16 @@
 - Q: How should token attribution handle content that belongs to multiple source categories? → A: Assign each measured token occurrence one primary source owner; retain secondary provenance as metadata only and never count the same occurrence twice.
 - Q: Which sitting task classes should the initial efficiency system compare? → A: Compare `prep` and `wrapup`; keep audit and replay as metadata rather than separate comparison classes.
 - Q: Who should own the efficiency policy and its safety thresholds? → A: Maintainers own the versioned `config/efficiency.yaml`; agents may read and propose changes but may not silently weaken thresholds, gates, or autonomy boundaries.
+- Q: How should QMD fallback behavior be recorded when a higher-precedence collection is silent or fails? → A: Log every attempted collection and fallback, preserve wiki → shattered-sea → legacy precedence, and never let fallback material override current accepted canon.
+- Q: How should the trace schema evolve without breaking historical reports? → A: Version every trace, support additive evolution, and quarantine incompatible records rather than guessing or rewriting history.
+- Q: Should trajectory telemetry be always-on or sampled for normal `prep` and `wrapup` sittings? → A: Collect redacted telemetry for every `prep` and `wrapup` sitting; explicit disablement records a measurement gap.
+- Q: What should count as successful Work when efficiency metrics use a denominator? → A: Track produced, accepted, failed, and incomplete separately; exclude failed or incomplete sittings from accepted-Work denominators while retaining their traces and failure reasons.
+- Q: Which changes may be autonomous, and which require shadow evaluation or human review? → A: Auto-promote only deterministic low-risk cleanup; require shadow replay and canaries for retrieval, routing, budgets, and tool exposure; require human review for semantic compression, model changes, canon changes, schema changes, instruction redesign, and policy or threshold changes.
+
+
+
+
+
 
 
 
@@ -199,7 +209,8 @@ These scenarios are the minimum cross-class acceptance set for the adapted syste
 - **FR-026**: Deterministic checks MUST cover applicable objective failures such as invalid type, lifecycle, relationship, filename, schema field, beat kind, required owner, broken link, duplicate identity, or vocabulary drift using existing or appropriately extended repository tooling.
 - **FR-027**: Verification MUST use executable hard gates for canon precedence, entity-before-spoken behavior, DM-facing explicitness, reveal and visibility boundaries, accept-before-write semantics, and objective mechanics or schema checks. Playability, specificity, continuity, player agency, and DM usefulness MUST use blind semantic evaluation independent of the optimization under evaluation and MUST NOT become deterministic lint failures.
 
-- **FR-028**: Context strategy MUST prefer minimum sufficient authoritative retrieval, owner-page retrieval, targeted relationships, current state, invoked rules, progressive disclosure, machine-readable discovery, and environment-derived truth. A fetched page MUST count as materially useful only when accepted Work explicitly cites or links it, or an independent evaluator confirms that it supplied a required fact, rule, or safety constraint; fetched-but-unused pages MUST count as unnecessary retrieval.
+- **FR-028**: Context strategy MUST prefer minimum sufficient authoritative retrieval, owner-page retrieval, targeted relationships, current state, invoked rules, progressive disclosure, machine-readable discovery, and environment-derived truth. A fetched page MUST count as materially useful only when accepted Work explicitly cites or links it, or an independent evaluator confirms that it supplied a required fact, rule, or safety constraint; fetched-but-unused pages MUST count as unnecessary retrieval. QMD MUST record every attempted collection and fallback while preserving wiki → shattered-sea → legacy precedence; fallback material MUST NOT override current accepted canon.
+
 
 
 - **FR-030**: Any claimed token or context improvement MUST be measured with the selected model family’s native tokenizer as authoritative across the whole useful trajectory from the user request through final Work, including loaded instructions and context, retrieval, tool calls, failed calls, retries, and model input/output; idle time and unrelated activity MUST be excluded. Comparisons MUST remain within the same model/tokenizer family unless a separately specified normalization method exists. Comparisons MUST preserve narrative craft, mechanics, specificity, canon fidelity, playability, agency, and DM usefulness. Normal sitting traces MUST use local gitignored JSONL containing redacted metadata and token counts only, with 90-day retention; sanitized evaluation fixtures and pinned baselines MAY be committed.
@@ -216,9 +227,17 @@ These scenarios are the minimum cross-class acceptance set for the adapted syste
 - **FR-034**: Completion evidence MUST identify the route taken, authoritative context used and intentionally omitted, affected and resolved owner artifacts, dependency topology, deterministic checks run, creative/agency/continuity review, Work and DM acceptance state where applicable, filing or promotion state, and measured context cost where claimed.
 - **FR-035**: The system MUST distinguish specification approval, plan approval, task completion, creative Work production, DM acceptance or modification, and accepted campaign truth as separate states.
 - **FR-036**: Every optimization candidate MUST be evaluated against a pinned baseline with equivalent inputs and recorded revisions. Promotion MUST require at least 10 same-kind paired cases, at least a 5% median trajectory-token reduction, zero new hard-gate failures, semantic non-inferiority, and no material increase in runtime failures or DM revision rate. Low-risk changes MAY auto-promote only after a 10% canary; moderate-risk changes MUST complete shadow replay and canary review; high-risk changes MUST receive human review. Any hard-gate failure or material quality regression MUST trigger rollback.
+
 - **FR-037**: Every efficiency report MUST expose total trajectory tokens, input tokens, output tokens, tokens by source component, retrieval query and fetch counts, retrieval tokens, retry amplification, hard-gate failure rate, DM acceptance rate, DM revision rate, runtime or tool failure rate, and derived metrics with explicit denominators. Each value MUST be labeled measured, estimated, or inferred. Every measured token occurrence MUST have one exclusive primary source owner; secondary provenance MAY be retained as metadata but MUST NOT be counted twice.
 - **FR-038**: Each sitting MUST be classified as `prep` or `wrapup` for initial efficiency comparisons. Audit and replay MAY be recorded as metadata but MUST NOT become separate comparison classes. Efficiency comparisons MUST use the same sitting class and same jobs.
 - **FR-039**: Efficiency policy MUST be owned by maintainers in a versioned `config/efficiency.yaml`. The policy MUST define measurement rules, sample requirements, non-inferiority requirements, autonomy classes, canary rules, and rollback thresholds. Agents MAY read and propose policy changes but MUST NOT silently weaken thresholds, quality gates, or autonomy boundaries.
+- **FR-040**: Every trace record MUST carry an explicit schema version. Readers MUST support additive schema evolution and MUST quarantine incompatible records with an observable error; they MUST NOT guess missing meanings or rewrite historical records.
+- **FR-041**: Redacted trajectory telemetry MUST be collected for every `prep` and `wrapup` sitting by default. An explicit configuration MAY disable collection, but the resulting sitting MUST record an observable measurement gap and MUST NOT be treated as a complete comparison sample.
+- **FR-042**: Sittings MUST distinguish produced, accepted, failed, and incomplete Work. Failed and incomplete sittings MUST retain traces and failure reasons but MUST be excluded from accepted-Work efficiency denominators. Accepted Work MUST require explicit DM acceptance.
+- **FR-043**: Autonomy classes MUST map as follows: deterministic low-risk cleanup MAY auto-promote after the required replay and canary; retrieval, routing, context budgets, and tool exposure MUST require shadow replay and canary review; semantic compression, model changes, canon or schema changes, instruction redesign, and policy or threshold changes MUST require human review. No candidate MAY alter its own evaluation criteria or safety thresholds.
+
+
+
 
 
 
@@ -292,6 +311,11 @@ The following constraints are included because each prevents a named failure:
 - **SC-018**: In an attribution fixture containing overlapping standing instructions, skill, user, wiki, retrieval, helper, tool, retry, and output content, 100% of measured token occurrences have exactly one primary source owner and component totals do not double-count occurrences.
 - **SC-019**: In a mixed sitting fixture containing prep, wrapup, audit, and replay activity, 100% of prep and wrapup records use those comparison classes, audit and replay remain metadata, and no cross-class efficiency comparison is reported.
 - **SC-020**: In a policy-ownership fixture, 100% of efficiency runs load the versioned maintainer-owned policy, and agent proposals that weaken thresholds, quality gates, or autonomy boundaries are rejected without changing the policy.
+- **SC-021**: In a QMD fallback fixture with silent and failed higher-precedence collections, 100% record every attempted collection and fallback, preserve wiki → shattered-sea → legacy precedence, and prevent fallback material from overriding accepted canon.
+- **SC-022**: In a trace-schema fixture containing additive and incompatible revisions, 100% of additive records remain readable, incompatible records are quarantined with an observable error, and no historical record is rewritten.
+- **SC-023**: In a telemetry-coverage fixture containing enabled and explicitly disabled sittings, 100% of enabled prep and wrapup sittings produce traces, and every disabled sitting records a measurement gap and is excluded from complete comparison samples.
+- **SC-024**: In a sitting fixture containing produced, accepted, failed, and incomplete Work, 100% classify each state correctly; failed and incomplete traces remain reportable with failure reasons and are excluded from accepted-Work denominators.
+- **SC-025**: In an autonomy-classification fixture containing low-, moderate-, and high-risk candidates, 100% receive the required promotion path; no candidate changes its own evaluation criteria or safety thresholds.
 
 ## Assumptions
 
