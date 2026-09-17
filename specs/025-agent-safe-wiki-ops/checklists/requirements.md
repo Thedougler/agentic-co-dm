@@ -33,4 +33,5 @@
 
 - FR-008 mentions specific operation names (replace_section, etc.) as examples of the typed interface, not as prescribed implementation. The plan phase will determine the exact API surface.
 - The Assumptions section notes that Python CLI commands are the expected form factor — this is consistent with existing repository conventions (scripts/) and is a project-level assumption, not an implementation prescription in the requirements.
-- All 8 user stories trace to specific open errors in errors.md, ensuring coverage of every known systemic failure class.
+- All 8 user stories trace to specific open errors in errors.md, ensuring coverage of every known systemic failure class. Post-clarification, SC-007 covers e-10, e-12 through e-38 (Khlysty errors folded into existing stories).
+- FR-001 and Assumptions name QMD as the content-similarity backend. QMD is an existing project dependency, not an implementation prescription — same treatment as Python CLI above.

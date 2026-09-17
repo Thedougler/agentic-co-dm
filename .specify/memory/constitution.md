@@ -1,13 +1,3 @@
-<!--
-Sync Impact Report
-- Version change: 1.36.0 → 1.37.0 (MINOR)
-- Modified principles:
-  - IV. Behavioral Tests → IV. Behavioral Tests (agentic behavior acceptance and Luna validation added)
-- Added sections: None
-- Removed sections: None
-- Follow-up TODOs:
-  - Luna was unavailable; the Grok-backed reviewer and independent validator both failed on credit limits.
--->
 # Agentic Co-DM Constitution
 
 ## Core Principles
@@ -71,14 +61,19 @@ Lower-level policies define enforcement mechanisms for each artifact kind.
 Rationale: one authoritative owner per fact prevents drift, conflicting edits, and wasted
 reconciliation.
 
-### VI. Software Is Agent-Shaped
+### VI. Software and Instructions Are Agent-Shaped
 
 Every script, tool, utility, and other software in this repository MUST be usable by an agent
 as its primary operator: arguments or structured input in, text or JSON out, errors on stderr,
 and an exit status distinguishing success from failure. Agent-facing documents MUST state
-positive instructions, completion criteria, and named failure modes while using progressive
-disclosure. Human-facing wrappers MUST NOT replace an agent-capable surface when the agent can
-perform the same operation directly.
+positive instructions, completion criteria, and named failure modes.
+
+Agent-facing documents MUST put ordered steps before reference material. Every step MUST end with
+a checkable completion criterion. Branch-specific reference MUST be disclosed behind a context
+pointer that states what it contains and when to read it. Always-loaded guidance MUST remain
+load-bearing; one meaning MUST have one source, and repeated policy MUST become a link or pointer
+to its authoritative owner rather than a second copy. Definitions, rules, and caveats for one
+concept MUST remain co-located.
 
 Agent-consumed artifacts MUST expose sufficient machine-readable identity or metadata for agents
 to classify and route them without expensive inspection. Naming, frontmatter, schemas, and
@@ -93,7 +88,9 @@ Any agent-shaped software that inhibits wiki-content quality or slows agent oper
 defect. The owning agent MUST log it, stop treating the software as acceptable, and fix or
 remove the root cause before dependent work continues.
 
-Rationale: an agent cannot depend on a surface it cannot invoke, inspect, or classify reliably.
+Rationale: an agent needs a predictable execution path, a small always-loaded index, and one
+answer for each rule; progressive disclosure preserves attention without hiding branch-critical
+guidance.
 
 ### VII. Creative Judgment Is Protected
 
@@ -195,24 +192,7 @@ Rationale: optimization without evidence can efficiently make the system worse; 
 agent-facing surfaces as the primary product turns operational friction into actionable,
 independently diagnosed source repairs.
 
-### XIV. Designated Writers Have Bounded Concurrency
-
-Each canonical artifact MUST have at most one active writer. Concurrent writing is permitted only
-across independent write surfaces, MUST remain bounded, and MUST NOT create races, conflicting
-edits, or ambiguous ownership.
-
-Rationale: bounded parallelism preserves throughput without sacrificing artifact integrity.
-
-### XV. Prompt Other Agents With Objectives
-
-A prompt to another coding agent MUST state the objective, independently testable acceptance
-criteria, and deliverables. It MUST omit tool tutorials, harness manuals, standing process, and
-other task-irrelevant detail already available to the target. Its wording MUST be no longer than
-needed to communicate those facts and any named failure prevention.
-
-Rationale: complete objectives preserve autonomy; padding consumes context without improving work.
-
-### XVI. The Simplest Adequate Tool
+### XIV. The Simplest Adequate Tool
 
 Agents MUST use the simplest tool that completes the job. Existing tools, stdlib functions, and
 native platform features MUST be used before adding new abstractions, wrappers, or dependencies.
@@ -229,7 +209,7 @@ artifact.
 Rationale: boring tools are easier to inspect, operate, and recover at 3 a.m. Reuse compounds
 proven solutions while reproducible bootstrap keeps agents unblocked without dependency drift.
 
-### XVII. Autonomous Operation
+### XV. Autonomous Operation
 
 Agents MAY complete routine context, version-control, and repository-maintenance loops without
 waiting for a human. They MUST not bypass review, acceptance, secret protection, branch safety,
@@ -247,7 +227,7 @@ retaining the former approach.
 Rationale: autonomy keeps completed work and context current while preserving human control over
 risk and canon; refusing legacy drift keeps improvement cumulative.
 
-### XVIII. Constitutional Layering
+### XVI. Constitutional Layering
 
 The constitution defines stable, cross-cutting invariants. `AGENTS.md` defines current runtime
 operating policy. Specs and contracts define feature behavior and acceptance. Skills define
@@ -258,24 +238,23 @@ Volatile implementation details MUST remain below the constitution unless changi
 change a project invariant. When a lower layer conflicts with this constitution, the lower layer
 MUST be corrected or the constitution MUST be amended explicitly.
 
-Reader-specific skill routing is mandatory. Before writing text an agent will consume, the agent
-MUST read and apply `writing-for-agents`. Before writing text intended for human readers in
-`wiki/`, the agent MUST read and apply `writing-for-humans`. A missing required skill MUST be
-surfaced as an explicit dependency gap; the agent MUST NOT claim that routing was applied.
+Reader-specific routing is mandatory. Before writing text an agent will consume, the agent MUST
+read and apply `writing-for-agents`. Before writing a wiki note, the agent MUST apply
+`obsidian-markdown` and the applicable player-facing or DM-facing writing authority. A missing
+required skill MUST be surfaced as an explicit dependency gap; the agent MUST NOT claim that
+routing was applied.
 
-Harness parity is mandatory. When operating in the Wiki under the OMP harness, agents MUST use
-all relevant Oh My Pi features appropriately. When operating under the Codex, Claude Code, or
-Grok Build harness, agents MUST use the relevant native features of that harness. Each supported
-harness MUST have a dedicated root-level instruction file that is read only by agents running in
-that harness and contains harness-specific instructions. For example, the `omp-harness` skill
-MUST be visible only to agents operating under OMP. Shared policy MUST remain in shared layers;
-harness files MUST NOT become competing sources of truth.
+Harness parity is mandatory. When operating under OMP, Codex, or Grok Build, agents MUST use the
+relevant native features of that harness. Each supported harness MUST have a dedicated root-level
+instruction file containing only harness-specific guidance: `OMP.md`, `CODEX.md`, and `GROK.md`.
+The shared `AGENTS.md` MUST point to each file for agents running in that harness. Shared policy
+MUST remain in shared layers; harness files MUST NOT become competing sources of truth.
 
 Rationale: layering keeps standing context short, load-bearing, and resilient to model, tool, and
 retrieval-engine changes; reader-specific skills and harness isolation keep each surface
 predictable.
 
-### XIX. The Wiki Is Additive, Self-Sealing, and Self-Healing
+### XVII. The Wiki Is Additive, Self-Sealing, and Self-Healing
 
 The Wiki (the repository's `llm-wiki`) MUST remain the single compiled, citable knowledge layer.
 Raw evidence MUST remain immutable. New evidence, page facts, links, schemas, and maintenance
@@ -304,7 +283,7 @@ the findings or surface an explicit blocker before proceeding.
 Rationale: additive history seals accepted knowledge; safe repair keeps the compiled Wiki usable;
 staging limits temporary review state instead of becoming a permanent second wiki.
 
-### XX. Multi-Step Work Uses a Checked Todo List
+### XVIII. Multi-Step Work Uses a Checked Todo List
 
 For any task requiring two or more distinct actions, checks, or artifacts, the agent MUST create
 and maintain an agent todo list before performing the first step. The list MUST name every known
@@ -315,7 +294,7 @@ with the blocking reason, and MUST NOT finish while an actionable step remains u
 Rationale: an explicit, continuously checked work list prevents omitted steps and makes progress
 inspectable across tools, agents, and sessions.
 
-### XXI. User Corrections Become Durable Source Fixes
+### XIX. User Corrections Become Durable Source Fixes
 
 User corrections are authoritative feedback. A correction to prose, facts, behavior, structure, or
 instructions MUST be applied at its authoritative source, not merely acknowledged in chat. When a
@@ -330,9 +309,9 @@ while leaving only a chat-session change or an unaddressed relevant source.
 
 In production prose, an unescaped Obsidian Markdown highlight span of the form `==text==` is a
 user-marked quality error, not an authoring style. Agents MUST NOT reproduce such highlights.
-When an agent encounters one, it MUST treat the surrounding prose as unsatisfactory even when
-the user provides no explanation. If a parenthetical explanation follows the highlight, the agent
-MAY use it as diagnostic context, but MUST fix the language regardless.
+When an agent encounters one, it MUST treat the surrounding prose as unsatisfactory even when the
+user provides no explanation. If a parenthetical explanation follows the highlight, the agent MAY
+use it as diagnostic context, but MUST fix the language regardless.
 
 The source MUST be corrected at the applicable skill, instruction, template, workflow, or linting
 system level, including `writing-for-agents` or `copy-writer` when applicable. Removing only the
@@ -386,9 +365,9 @@ adoption date of the latest amendment in ISO `YYYY-MM-DD` format.
 Compliance reviews and Spec Kit analysis MUST check proposed work against this constitution before
 implementation or merge. Reviews MUST verify behavioral evidence, single ownership, quality
 preservation, safe automation, agency and canon boundaries, and appropriate instruction layering.
-Unjustified complexity, duplicate sources of truth, unbounded concurrency, fabricated evidence,
-and human gates that do not prevent a named safety failure MUST be rejected or resolved by an ADR.
+Unjustified complexity, duplicate sources of truth, fabricated evidence, and human gates that do
+not prevent a named safety failure MUST be rejected or resolved by an ADR.
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.37.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 2.0.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
