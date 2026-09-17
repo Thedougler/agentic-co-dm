@@ -1,0 +1,343 @@
+[
+  {
+    "evidence_id": "agency-reputation-system",
+    "kind": "agency",
+    "work_class": "creative-system",
+    "route": "full-sdd",
+    "status": "complete",
+    "objective": "track persistent faction reputation and its observable effects on behavior and information access",
+    "value": "DM and players can see how actions alter faction relationships, available knowledge, and future response surfaces without prescribing a story route",
+    "authoritative_context": [
+      "existing-faction-owner-pages",
+      "campaign-lifecycle",
+      "work-acceptance",
+      "reveal-and-visibility-rules"
+    ],
+    "context_omitted": [
+      "unrelated-faction-details",
+      "implementation-specific-storage",
+      "authored-story-sequence"
+    ],
+    "persistent_state": {
+      "state_id": "faction_standing",
+      "subject": "player_faction_relationship",
+      "bands": ["hostile", "wary", "neutral", "trusted"],
+      "observable_fields": ["standing_band", "response_posture", "access_level"],
+      "persistent": true,
+      "carries_between_sessions": true,
+      "changes_when": [
+        "player_action_affects_faction_interests",
+        "player_action_is_witnessed_or_verified",
+        "faction_agenda_changes independently"
+      ]
+    },
+    "actors": [
+      {
+        "actor_id": "guild_representative",
+        "faction_id": "river_trade_guild",
+        "motivation": "protect_trade_routes_and_members",
+        "independent": true
+      },
+      {
+        "actor_id": "border_warden",
+        "faction_id": "border_wardens",
+        "motivation": "maintain_secure_crossings",
+        "independent": true
+      },
+      {
+        "actor_id": "community_organizer",
+        "faction_id": "market_coalition",
+        "motivation": "preserve_local_access_and_voice",
+        "independent": true
+      }
+    ],
+    "factions": [
+      {
+        "faction_id": "river_trade_guild",
+        "agenda": "keep_commercial_routes_open",
+        "resources": ["permits", "merchant_contacts"],
+        "independent_motion": true
+      },
+      {
+        "faction_id": "border_wardens",
+        "agenda": "limit_crossing_risk",
+        "resources": ["checkpoints", "patrols"],
+        "independent_motion": true
+      },
+      {
+        "faction_id": "market_coalition",
+        "agenda": "retain_fair_local_exchange",
+        "resources": ["local_witnesses", "market_access"],
+        "independent_motion": true
+      }
+    ],
+    "faction_behavior_changes": [
+      {
+        "faction_id": "river_trade_guild",
+        "reputation_band": "trusted",
+        "behavior_changes": ["shares route rumors", "offers favorable terms", "requests discreet assistance"],
+        "observable": true,
+        "persists": true
+      },
+      {
+        "faction_id": "river_trade_guild",
+        "reputation_band": "hostile",
+        "behavior_changes": ["withholds permits", "warns members against cooperation", "redirects trade elsewhere"],
+        "observable": true,
+        "persists": true
+      },
+      {
+        "faction_id": "border_wardens",
+        "reputation_band": "trusted",
+        "behavior_changes": ["explains checkpoint requirements", "provides escorted passage when available"],
+        "observable": true,
+        "persists": true
+      },
+      {
+        "faction_id": "border_wardens",
+        "reputation_band": "wary",
+        "behavior_changes": ["adds scrutiny", "limits unscheduled access", "seeks corroborating witnesses"],
+        "observable": true,
+        "persists": true
+      },
+      {
+        "faction_id": "market_coalition",
+        "reputation_band": "neutral",
+        "behavior_changes": ["offers public information", "keeps private concerns undisclosed until trust changes"],
+        "observable": true,
+        "persists": true
+      }
+    ],
+    "information_access_changes": [
+      {
+        "access_id": "route_conditions",
+        "provider": "river_trade_guild",
+        "changes_with": "standing_band",
+        "access_levels": ["public_route_notice", "member_rumors", "verified_route_warning"],
+        "visibility": "faction-dependent",
+        "persists": true
+      },
+      {
+        "access_id": "checkpoint_requirements",
+        "provider": "border_wardens",
+        "changes_with": "standing_band",
+        "access_levels": ["posted_requirements", "explained_requirements", "advance_notice"],
+        "visibility": "role-dependent",
+        "persists": true
+      },
+      {
+        "access_id": "market_witness_accounts",
+        "provider": "market_coalition",
+        "changes_with": "standing_band_and_recent_conduct",
+        "access_levels": ["public_account", "private_account", "corroborated_lead"],
+        "visibility": "witness-consent",
+        "persists": true
+      }
+    ],
+    "pressures": [
+      {
+        "pressure_id": "route_disruption",
+        "source": "border_crossing_risk",
+        "target": ["river_trade_guild", "border_wardens"],
+        "persistent": true,
+        "trigger": "unsafe_or_uncorroborated_crossings",
+        "effect_class": "access_restriction"
+      },
+      {
+        "pressure_id": "local_trust",
+        "source": "market_witnesses",
+        "target": ["market_coalition", "river_trade_guild"],
+        "persistent": true,
+        "trigger": "public_harm_or_reliable_aid",
+        "effect_class": "standing_shift"
+      },
+      {
+        "pressure_id": "conflicting_interests",
+        "source": "trade_and_security_priorities",
+        "target": ["river_trade_guild", "border_wardens", "market_coalition"],
+        "persistent": true,
+        "trigger": "resource_or_information_request",
+        "effect_class": "negotiation_cost"
+      }
+    ],
+    "player_owned_decisions": [
+      {
+        "decision_id": "relationship_response",
+        "owner": "players",
+        "decision_scope": "whether_and_how_to engage with a faction",
+        "required": false,
+        "options_open": true,
+        "response_classes": ["refusal", "avoidance", "negotiation", "investigation", "engagement", "unexpected_approach"]
+      },
+      {
+        "decision_id": "reputation_tradeoff",
+        "owner": "players",
+        "decision_scope": "which interests or relationships to prioritize when they conflict",
+        "required": false,
+        "options_open": true,
+        "response_classes": ["direct_action", "indirect_action", "information_exchange", "non_intervention"]
+      }
+    ],
+    "response_surfaces": [
+      {
+        "response": "refusal",
+        "playable_result": "the faction records the refusal and may seek another partner while its existing agenda continues",
+        "state_effect": "standing may remain unchanged or shift based on the reason and witnesses",
+        "next_options_open": true
+      },
+      {
+        "response": "avoidance",
+        "playable_result": "the party keeps distance while access and faction agendas continue to evolve",
+        "state_effect": "unaddressed pressure can alter standing or close one information channel",
+        "next_options_open": true
+      },
+      {
+        "response": "negotiation",
+        "playable_result": "terms can be proposed, accepted, rejected, or revised according to faction interests",
+        "state_effect": "standing and access may change when a term is honored, contested, or witnessed",
+        "next_options_open": true
+      },
+      {
+        "response": "investigation",
+        "playable_result": "the party can test competing accounts and uncover information without guaranteeing agreement",
+        "state_effect": "verified evidence may change standing or unlock a different access level",
+        "next_options_open": true
+      }
+    ],
+    "open_outcomes": [
+      {
+        "outcome_id": "relationship_configuration",
+        "owner": "players_and_world",
+        "state": "open",
+        "possible_state_classes": ["mutual_trust", "selective_cooperation", "strained_access", "active_opposition", "pragmatic_neutrality"]
+      },
+      {
+        "outcome_id": "information_distribution",
+        "owner": "players_and_world",
+        "state": "open",
+        "possible_state_classes": ["shared_information", "faction-limited_information", "contested_accounts", "withheld_information"]
+      },
+      {
+        "outcome_id": "regional_access",
+        "owner": "players_and_world",
+        "state": "open",
+        "possible_state_classes": ["broad_access", "escorted_access", "conditional_access", "rerouted_access"]
+      }
+    ],
+    "conditional_possibilities": [
+      {
+        "possibility_id": "trusted_contact_offer",
+        "condition": "standing_reaches_trusted_and_a_relevant_need_arises",
+        "may_change": ["information_access", "available_terms", "faction_request"],
+        "status": "conditional",
+        "required": false
+      },
+      {
+        "possibility_id": "access_restriction",
+        "condition": "route_disruption_persists_or_standing_reaches_hostile",
+        "may_change": ["permit_access", "checkpoint_scrutiny", "travel_cost"],
+        "status": "conditional",
+        "required": false
+      },
+      {
+        "possibility_id": "cross_faction_reconciliation",
+        "condition": "credible_evidence_and_mutual_interest_align",
+        "may_change": ["relationship_configuration", "shared_information", "available_cooperation"],
+        "status": "conditional",
+        "required": false
+      }
+    ],
+    "continuity": [
+      {
+        "constraint_id": "standing_persists",
+        "requirement": "accepted_reputation_changes_carry_between_sessions",
+        "preserve": true
+      },
+      {
+        "constraint_id": "behavior_follows_state",
+        "requirement": "faction_response_posture_reflects_current_standing_and_agenda",
+        "preserve": true
+      },
+      {
+        "constraint_id": "information_visibility_persists",
+        "requirement": "restricted_information_remains_restricted_until_a_reveal_or_consent_event",
+        "preserve": true
+      }
+    ],
+    "independent_motion": [
+      {
+        "motion_id": "guild_route_adjustment",
+        "actor": "river_trade_guild",
+        "trigger": "route_disruption_or_member_loss_persists",
+        "action_class": "reroute_trade_or_seek_new_partners",
+        "requires_player_action": false
+      },
+      {
+        "motion_id": "warden_scrutiny_change",
+        "actor": "border_wardens",
+        "trigger": "crossing_risk_or_new_evidence_changes",
+        "action_class": "alter_checkpoint_scrutiny_and_patrols",
+        "requires_player_action": false
+      },
+      {
+        "motion_id": "coalition_witness_network",
+        "actor": "market_coalition",
+        "trigger": "local_harm_or_reliable_aid_is_observed",
+        "action_class": "share_or_withhold_witness_accounts",
+        "requires_player_action": false
+      }
+    ],
+    "player_caused_changes": [
+      {
+        "change_id": "standing_change",
+        "trigger_class": "player_action",
+        "observable_effects": ["standing_band_change", "response_posture_change", "relationship_state_change"],
+        "persists": true
+      },
+      {
+        "change_id": "access_change",
+        "trigger_class": "player_action",
+        "observable_effects": ["information_access_change", "permit_change", "witness_availability_change"],
+        "persists": true
+      },
+      {
+        "change_id": "faction_alignment_change",
+        "trigger_class": "player_action_or_verified_evidence",
+        "observable_effects": ["cooperation_offer", "withheld_support", "changed_faction_priority"],
+        "persists": true
+      }
+    ],
+    "if_nobody_intervenes": {
+      "condition": "route_disruption_and_conflicting_interests_persist",
+      "consequence_classes": ["guild_reroutes_trade", "wardens_increase_scrutiny", "coalition_withholds_private_accounts", "conditional_access_narrows"],
+      "world_motion": true,
+      "status": "conditional",
+      "not_only_route_to_success": true
+    },
+    "agency_guards": {
+      "player_decision_open": true,
+      "outcomes_open": true,
+      "world_motion_independent": true,
+      "conditional_state_present": true,
+      "response_surfaces_include_refusal_avoidance_negotiation_investigation": true
+    },
+    "acceptance": {
+      "observable_checks": [
+        "reputation_state_is_persistent_and_observable",
+        "faction_behavior_changes_follow_reputation_state",
+        "information_access_changes_follow_reputation_state",
+        "player_caused_changes_are_persistent",
+        "refusal_response_remains_playable",
+        "avoidance_response_remains_playable",
+        "negotiation_response_remains_playable",
+        "investigation_response_remains_playable",
+        "player_decisions_are_open",
+        "outcomes_have_multiple_states",
+        "conditional_possibilities_are_optional",
+        "world_motion_does_not_require_players",
+        "if_nobody_intervenes_motion_is_defined"
+      ],
+      "semantic_review_required": true
+    }
+  }
+]

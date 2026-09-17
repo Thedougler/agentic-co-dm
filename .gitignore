@@ -54,3 +54,7 @@ dist/
 
 # Archived legacy content stays local and is neither tracked nor indexed.
 legacy/
+# Local efficiency telemetry (sanitized fixtures remain trackable under specs/)
+.local/efficiency/traces.jsonl
+.local/efficiency/quarantine/
+.local/efficiency/retention/

@@ -1,0 +1,318 @@
+#!/usr/bin/env python3
+"""Record, report, retain, and promote redacted efficiency traces."""
+from __future__ import annotations
+
+import argparse
+import datetime as dt
+import json
+import sys
+from pathlib import Path
+from typing import Any, Iterable, NoReturn
+
+ROOT = Path(__file__).resolve().parents[1]
+POLICY_PATH = ROOT / "config" / "efficiency.yaml"
+SUPPORTED_SCHEMA = 1
+SITTING_CLASSES = {"prep", "wrapup"}
+WORK_STATUSES = {"produced", "accepted", "failed", "incomplete"}
+MEASUREMENT_STATUSES = {"complete", "measurement-gap"}
+DM_ACCEPTANCE = {"not-required", "pending", "accepted", "modified", "rejected"}
+RAW_KEYS = {"prompt", "raw_prompt", "raw_content", "campaign_content", "wiki_content", "model_content", "provider_content"}
+
+
+def error(message: str) -> NoReturn:
+    raise ValueError(message)
+
+
+def read_json(path: Path) -> Any:
+    try:
+        return json.loads(path.read_text())
+    except (OSError, json.JSONDecodeError) as exc:
+        error(f"cannot read JSON input {path}: {exc}")
+
+
+def records_from(value: Any) -> list[dict[str, Any]]:
+    if isinstance(value, list):
+        raw_records: Any = value
+    elif isinstance(value, dict):
+        raw_records = value.get("records", [value])
+    else:
+        error("input must be a JSON object or array of objects")
+    if not isinstance(raw_records, list) or not all(isinstance(item, dict) for item in raw_records):
+        error("input must be a JSON object or array of objects")
+    return [item for item in raw_records]
+
+
+def walk(value: Any, path: str = "") -> Iterable[tuple[str, Any]]:
+    yield path, value
+    if isinstance(value, dict):
+        for key, child in value.items():
+            yield from walk(child, f"{path}.{key}" if path else key)
+    elif isinstance(value, list):
+        for index, child in enumerate(value):
+            yield from walk(child, f"{path}[{index}]")
+
+
+def validate_count(value: Any, label: str) -> None:
+    if not isinstance(value, int) or isinstance(value, bool) or value < 0:
+        error(f"{label} must be a non-negative integer")
+
+
+def validate_record(record: dict[str, Any]) -> dict[str, Any]:
+    required = ("schema_version", "trace_id", "policy_version", "sitting_class", "work_status", "measurement_status", "model_family", "tokenizer_family", "encoding", "trajectory", "retrieval", "source_components", "quality")
+    missing = [key for key in required if key not in record]
+    if missing:
+        error(f"missing required fields: {', '.join(missing)}")
+    if record["schema_version"] != SUPPORTED_SCHEMA:
+        error(f"incompatible schema_version {record['schema_version']}; supported {SUPPORTED_SCHEMA}")
+    if not isinstance(record["trace_id"], str) or not record["trace_id"]:
+        error("trace_id must be a non-empty string")
+    if record["sitting_class"] not in SITTING_CLASSES:
+        error(f"invalid sitting_class {record['sitting_class']}")
+    if record["work_status"] not in WORK_STATUSES:
+        error(f"invalid work_status {record['work_status']}")
+    if record["measurement_status"] not in MEASUREMENT_STATUSES:
+        error(f"invalid measurement_status {record['measurement_status']}")
+    for key, value in walk(record):
+        if key.rsplit(".", 1)[-1].split("[", 1)[0].lower() in RAW_KEYS:
+            error(f"raw-content field is not allowed: {key}")
+    trajectory = record["trajectory"]
+    if not isinstance(trajectory, dict):
+        error("trajectory must be an object")
+    for key in ("request", "loaded_context", "retrieval", "tools", "failures", "retries", "model_input", "model_output", "final_work"):
+        if key not in trajectory:
+            error(f"trajectory.{key} is required")
+        validate_count(trajectory[key], f"trajectory.{key}")
+    retrieval = record["retrieval"]
+    if not isinstance(retrieval, dict):
+        error("retrieval must be an object")
+    for key in ("queries", "fetches", "tokens", "useful", "unused"):
+        if key not in retrieval:
+            error(f"retrieval.{key} is required")
+        validate_count(retrieval[key], f"retrieval.{key}")
+    for key in ("attempted_collections", "fallbacks"):
+        if not isinstance(retrieval.get(key), list) or not all(isinstance(item, str) for item in retrieval[key]):
+            error(f"retrieval.{key} must be a list of strings")
+    components = record["source_components"]
+    if not isinstance(components, list) or not components:
+        error("source_components must be a non-empty list")
+    source_total = 0
+    owners: set[str] = set()
+    for component in components:
+        if not isinstance(component, dict) or not isinstance(component.get("owner"), str) or not component["owner"]:
+            error("each source component needs an owner")
+        if component["owner"] in owners:
+            error(f"duplicate primary source owner {component['owner']}")
+        owners.add(component["owner"])
+        validate_count(component.get("tokens"), f"source_components[{component['owner']}].tokens")
+        source_total += component["tokens"]
+        if not isinstance(component.get("secondary_provenance", []), list):
+            error(f"secondary_provenance for {component['owner']} must be a list")
+    tokens = record.get("tokens")
+    if tokens is not None:
+        if not isinstance(tokens, dict):
+            error("tokens must be an object")
+        for key, value in tokens.items():
+            if key not in {"input", "output", "total", "source_components"}:
+                continue
+            if key != "source_components":
+                validate_count(value, f"tokens.{key}")
+        total = tokens.get("total")
+        if total is not None and source_total > total:
+            error("primary source component tokens exceed total tokens")
+    quality = record["quality"]
+    if not isinstance(quality, dict):
+        error("quality must be an object")
+    for key in ("hard_gate_failures", "dm_revisions", "runtime_failures"):
+        validate_count(quality.get(key), f"quality.{key}")
+    if quality.get("semantic_non_inferior") not in {True, False}:
+        error("quality.semantic_non_inferior must be boolean")
+    if quality.get("dm_acceptance") not in DM_ACCEPTANCE:
+        error(f"invalid quality.dm_acceptance {quality.get('dm_acceptance')}")
+    if record["work_status"] == "accepted" and quality["dm_acceptance"] != "accepted":
+        error("accepted Work requires explicit DM acceptance")
+    if record["measurement_status"] == "measurement-gap" and record.get("comparison_sample") is True:
+        error("measurement-gap cannot be a comparison sample")
+    return record
+
+
+def quarantine(record: dict[str, Any], reason: str, path: Path) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    payload = {"quarantined_at": dt.datetime.now(dt.timezone.utc).isoformat(), "reason": reason, "record": record}
+    with path.open("a") as stream:
+        stream.write(json.dumps(payload, sort_keys=True) + "\n")
+
+
+def append_records(records: list[dict[str, Any]], path: Path) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a") as stream:
+        for record in records:
+            stream.write(json.dumps(record, sort_keys=True) + "\n")
+
+
+def load_stream(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    records: list[dict[str, Any]] = []
+    for line_number, line in enumerate(path.read_text().splitlines(), 1):
+        if not line.strip():
+            continue
+        try:
+            value: Any = json.loads(line)
+        except json.JSONDecodeError as exc:
+            error(f"invalid JSONL at line {line_number}: {exc}")
+        if not isinstance(value, dict):
+            error(f"JSONL line {line_number} is not an object")
+        records.append(value)
+    return records
+
+
+def metric(value: int | float, denominator: int | None = None) -> dict[str, Any]:
+    result: dict[str, Any] = {"value": value, "label": "measured"}
+    if denominator is not None:
+        result["denominator"] = denominator
+    return result
+
+
+def report(records: list[dict[str, Any]]) -> dict[str, Any]:
+    valid = [validate_record(record) for record in records]
+    trajectory_total = sum(sum(record["trajectory"].values()) for record in valid)
+    input_total = sum(record["trajectory"]["model_input"] for record in valid)
+    output_total = sum(record["trajectory"]["model_output"] for record in valid)
+    accepted = sum(record["work_status"] == "accepted" for record in valid)
+    comparable = [record for record in valid if record["measurement_status"] == "complete" and record["work_status"] == "accepted"]
+    comparison_groups: dict[str, int] = {}
+    for record in comparable:
+        key = f"{record['sitting_class']}:{record.get('job', 'unspecified')}"
+        comparison_groups[key] = comparison_groups.get(key, 0) + 1
+    retries = sum(record["trajectory"]["retries"] for record in valid)
+    attempts = sum(sum(record["trajectory"].values()) for record in valid)
+    hard_failures = sum(record["quality"]["hard_gate_failures"] for record in valid)
+    revisions = sum(record["quality"]["dm_revisions"] for record in valid)
+    runtime = sum(record["quality"]["runtime_failures"] for record in valid)
+    retrieval_queries = sum(record["retrieval"]["queries"] for record in valid)
+    retrieval_fetches = sum(record["retrieval"]["fetches"] for record in valid)
+    retrieval_tokens = sum(record["retrieval"]["tokens"] for record in valid)
+    component_totals: dict[str, int] = {}
+    for record in valid:
+        for component in record["source_components"]:
+            owner = component["owner"]
+            component_totals[owner] = component_totals.get(owner, 0) + component["tokens"]
+    return {
+        "records": len(valid),
+        "sitting_classes": sorted({record["sitting_class"] for record in valid}),
+        "jobs": sorted({record.get("job", "unspecified") for record in valid}),
+        "trajectory_tokens": metric(trajectory_total),
+        "input_tokens": metric(input_total),
+        "output_tokens": metric(output_total),
+        "source_components": {owner: metric(tokens) for owner, tokens in sorted(component_totals.items())},
+        "retrieval": {"queries": metric(retrieval_queries), "fetches": metric(retrieval_fetches), "tokens": metric(retrieval_tokens)},
+        "retry_amplification": metric(retries / max(1, attempts), len(valid)),
+        "hard_gate_failure_rate": metric(hard_failures / max(1, len(valid)), len(valid)),
+        "dm_acceptance_rate": metric(accepted / max(1, len(valid)), len(valid)),
+        "dm_revision_rate": metric(revisions / max(1, accepted), accepted),
+        "runtime_tool_failure_rate": metric(runtime / max(1, len(valid)), len(valid)),
+        "useful_retrieval": metric(sum(r["retrieval"]["useful"] for r in valid), retrieval_fetches),
+        "unnecessary_retrieval": metric(sum(r["retrieval"]["unused"] for r in valid), retrieval_fetches),
+        "work_status_counts": {status: sum(r["work_status"] == status for r in valid) for status in sorted(WORK_STATUSES)},
+        "measurement_status_counts": {status: sum(r["measurement_status"] == status for r in valid) for status in sorted(MEASUREMENT_STATUSES)},
+        "accepted_work_denominator": len(comparable),
+        "same_kind_comparison_groups": comparison_groups,
+    }
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    sub = parser.add_subparsers(dest="command", required=True)
+    record = sub.add_parser("record")
+    record.add_argument("--input", required=True, type=Path)
+    record.add_argument("--trace", type=Path, default=ROOT / ".local/efficiency/traces.jsonl")
+    record.add_argument("--quarantine", type=Path, default=ROOT / ".local/efficiency/quarantine/rejected.jsonl")
+    report_cmd = sub.add_parser("report")
+    report_cmd.add_argument("--input", type=Path)
+    report_cmd.add_argument("--trace", type=Path, default=ROOT / ".local/efficiency/traces.jsonl")
+    retain = sub.add_parser("retain")
+    retain.add_argument("--trace", type=Path, default=ROOT / ".local/efficiency/traces.jsonl")
+    retain.add_argument("--days", type=int, default=90)
+    promote = sub.add_parser("promote")
+    promote.add_argument("--input", required=True, type=Path)
+    promote.add_argument("--risk", required=True, choices=("low", "moderate", "high"))
+    promote.add_argument("--canary", type=float, default=0.0)
+    promote.add_argument("--shadow", action="store_true")
+    promote.add_argument("--human-review", action="store_true")
+    return parser.parse_args()
+
+
+def main() -> int:
+    args = parse_args()
+    try:
+        if args.command == "record":
+            records = records_from(read_json(args.input))
+            accepted: list[dict[str, Any]] = []
+            failures: list[str] = []
+            for record in records:
+                try:
+                    accepted.append(validate_record(record))
+                except ValueError as exc:
+                    reason = str(exc)
+                    quarantine(record, reason, args.quarantine)
+                    failures.append(reason)
+            append_records(accepted, args.trace)
+            if failures:
+                error(f"{len(failures)} record(s) quarantined: {'; '.join(failures)}")
+            print(json.dumps({"status": "recorded", "count": len(accepted), "trace": str(args.trace)}))
+        elif args.command == "report":
+            records = records_from(read_json(args.input)) if args.input else load_stream(args.trace)
+            print(json.dumps(report(records), sort_keys=True))
+        elif args.command == "retain":
+            cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=args.days)
+            kept: list[dict[str, Any]] = []
+            removed = 0
+            for record in load_stream(args.trace):
+                stamp = record.get("timestamps", {}).get("started_at") or record.get("timestamp")
+                try:
+                    when = dt.datetime.fromisoformat(str(stamp).replace("Z", "+00:00"))
+                except (TypeError, ValueError):
+                    kept.append(record)
+                    continue
+                if when >= cutoff:
+                    kept.append(record)
+                else:
+                    removed += 1
+            args.trace.write_text("".join(json.dumps(record, sort_keys=True) + "\n" for record in kept))
+            print(json.dumps({"status": "retained", "removed": removed, "days": args.days}))
+        elif args.command == "promote":
+            records = [validate_record(record) for record in records_from(read_json(args.input))]
+            complete = [r for r in records if r["measurement_status"] == "complete" and r["work_status"] == "accepted"]
+            classes = {r["sitting_class"] for r in complete}
+            jobs = {r.get("job") for r in complete}
+            identities = {(r["model_family"], r["tokenizer_family"], r["encoding"]) for r in complete}
+            if len(complete) < 10 or len(classes) != 1 or len(jobs) != 1:
+                error("promotion requires at least 10 same-kind accepted complete records")
+            if len(identities) != 1:
+                error("promotion requires one model/tokenizer family and encoding")
+            if any(r["quality"]["hard_gate_failures"] for r in complete) or not all(r["quality"]["semantic_non_inferior"] for r in complete):
+                error("promotion blocked by hard-gate or semantic regression")
+            reductions = []
+            for record in complete:
+                baseline = record.get("baseline_trajectory_tokens")
+                if baseline is not None:
+                    validate_count(baseline, "baseline_trajectory_tokens")
+                    current = sum(record["trajectory"].values())
+                    reductions.append((baseline - current) / max(1, baseline))
+            if reductions and (len(reductions) != len(complete) or sorted(reductions)[len(reductions) // 2] < 0.05):
+                error("promotion requires at least a 5% median trajectory-token reduction")
+            if args.risk == "low" and args.canary < 0.10:
+                error("low-risk promotion requires a 10% canary")
+            if args.risk == "moderate" and (not args.shadow or args.canary < 0.10):
+                error("moderate-risk promotion requires shadow replay and canary review")
+            if args.risk == "high" and not args.human_review:
+                error("high-risk promotion requires human review")
+            print(json.dumps({"status": "promotable", "risk": args.risk, "pairs": len(complete)}))
+        return 0
+    except (ValueError, OSError) as exc:
+        print(f"FAIL {args.command}: {exc}", file=sys.stderr)
+        return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

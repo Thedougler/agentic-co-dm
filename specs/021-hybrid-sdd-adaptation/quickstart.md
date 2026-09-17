@@ -17,6 +17,32 @@ Expected baseline: Spec Kit status is `ok`, integrations include `omp`, `codex`,
 
 The native-tokenizer comparison path also requires the separate tracked governance change identified in the feature assumptions. Until it lands, do not claim that the native-tokenizer policy is active.
 
+## Generated-file preservation boundary
+
+This feature leaves the managed/generated Spec Kit outputs unchanged. Do not edit:
+
+```text
+.agents/skills/speckit-*/
+.omp/commands/speckit.*
+.specify/templates/*
+.specify/extensions/*
+```
+
+The hybrid route and checks live in the repository-owned files named below; `specify integration status --json` and `./scripts/check-omp-baseline.sh` verify that the managed paths remain clean.
+
+## Public command surfaces
+
+The public commands for this feature are:
+
+```bash
+python3 scripts/hybrid-sdd-check.py --help
+python3 scripts/efficiency-trace.py --help
+.venv/bin/python specs/021-hybrid-sdd-adaptation/fixtures/check.py
+```
+
+`scripts/hybrid-sdd-check.py` is the deterministic route/evidence checker, `scripts/efficiency-trace.py` is the redacted trace record/report checker, and `specs/021-hybrid-sdd-adaptation/fixtures/check.py` is the feature fixture checker with the single `PASS`/failure surface.
+
+
 ## Public fixture check
 
 ```bash
@@ -84,3 +110,27 @@ specify integration status --json
 ```
 
 Do not replace these checks with a text snapshot of `AGENTS.md`, generated Spec Kit adapters, or the contract prose. Generated adapters and managed templates must remain clean under Spec Kit status.
+
+## Expected command outcomes
+
+The route checker returns `PASS classify: 7 fixture record(s)` for the seven route scenarios. The evidence subcommands return `PASS` after validating agency, canon, topology, plan, and verification records; an objective violation returns `FAIL` on stderr and exit status `1`.
+
+The trace CLI returns JSON for `record`, `report`, `retain`, and `promote`. `record` appends only redacted records to `.local/efficiency/traces.jsonl`; incompatible schemas are copied to quarantine and return `FAIL`. Reports label each metric `measured`, `estimated`, or `inferred` and include denominators.
+
+Before the separate native-tokenizer governance change lands, records may be collected with `measurement_status: measurement-gap` and reason `native-tokenizer-governance-pending`, but cross-family comparison and promotion return `FAIL` and exclude those records from complete comparison samples. Do not activate or claim native-tokenizer comparisons from this feature alone.
+
+The feature runner is the single integration surface:
+
+```bash
+.venv/bin/python specs/021-hybrid-sdd-adaptation/fixtures/check.py
+```
+
+It returns one `PASS` summary only after route, evidence, telemetry, retention, promotion, and compatibility fixtures pass. `specify integration status --json` must report `status: ok`, and `./scripts/check-omp-baseline.sh` must exit `0`; either failure remains an actionable repository failure rather than a fixture pass.
+
+## Observed validation
+
+On 2026-09-16:
+
+- `.venv/bin/python specs/021-hybrid-sdd-adaptation/fixtures/check.py` → `PASS: hybrid SDD route, evidence, telemetry, promotion, retention, and compatibility fixtures`
+- `specify integration status --json` → `status: ok`, default `omp`, four installed integrations, zero missing or modified managed files
+- `./scripts/check-omp-baseline.sh` → `omp-speckit-baseline: pass`

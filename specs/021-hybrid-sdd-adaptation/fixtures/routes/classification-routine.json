@@ -1,0 +1,31 @@
+[
+  {
+    "scenario_id": "D-routine-npc",
+    "request_kind": "routine-content",
+    "expected": {
+      "work_class": "routine-content",
+      "route": "existing-skill",
+      "skill_route": "npc-design",
+      "reason_contains": [
+        "ordinary established NPC",
+        "existing NPC skill"
+      ],
+      "scope_boundary": "routine-content"
+    },
+    "request": "Design one ordinary established NPC using the existing NPC skill and template route; do not change a reusable system."
+  },
+  {
+    "scenario_id": "E-engineering",
+    "request_kind": "engineering",
+    "expected": {
+      "work_class": "engineering",
+      "route": "full-sdd",
+      "reason_contains": [
+        "normal engineering SDD",
+        "technical planning"
+      ],
+      "scope_boundary": "system-change"
+    },
+    "request": "Implement a normal CLI or Python tooling change with ordinary requirements, technical planning, tests, and verification."
+  }
+]

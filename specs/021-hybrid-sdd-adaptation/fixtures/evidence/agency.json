@@ -1,0 +1,358 @@
+[
+  {
+    "evidence_id": "agency-regional-conflict",
+    "kind": "agency",
+    "work_class": "campaign-architecture",
+    "route": "full-sdd",
+    "status": "complete",
+    "objective": "track observable regional-conflict state changes across five-to-ten sessions",
+    "value": "DM and players can observe faction state, pressure, and player-caused change across multiple routes",
+    "session_span": {
+      "minimum": 5,
+      "maximum": 10,
+      "unit": "sessions"
+    },
+    "authoritative_context": [
+      "campaign-lifecycle",
+      "existing-faction-owner-pages",
+      "existing-location-owner-pages",
+      "work-acceptance"
+    ],
+    "context_omitted": [
+      "non-authoritative-details",
+      "unbounded-context",
+      "implementation-specific-prose"
+    ],
+    "actors": [
+      {
+        "actor_id": "council_envoy",
+        "faction_id": "river_council",
+        "motivation": "trade_access",
+        "independent": true
+      },
+      {
+        "actor_id": "ridge_captain",
+        "faction_id": "ridge_compact",
+        "motivation": "water_security",
+        "independent": true
+      },
+      {
+        "actor_id": "caravan_spokesperson",
+        "faction_id": "free_caravan_league",
+        "motivation": "route_safety",
+        "independent": true
+      },
+      {
+        "actor_id": "regional_mediator",
+        "faction_id": "neutral_mediators",
+        "motivation": "ceasefire_stability",
+        "independent": true
+      }
+    ],
+    "factions": [
+      {
+        "faction_id": "river_council",
+        "agenda": "control_trade_crossings",
+        "resources": ["permits", "river_patrols"],
+        "independent_motion": true
+      },
+      {
+        "faction_id": "ridge_compact",
+        "agenda": "secure_upstream_water",
+        "resources": ["reservoir_access", "militia"],
+        "independent_motion": true
+      },
+      {
+        "faction_id": "free_caravan_league",
+        "agenda": "keep_routes_open",
+        "resources": ["transport", "route_information"],
+        "independent_motion": true
+      },
+      {
+        "faction_id": "neutral_mediators",
+        "agenda": "maintain_negotiation_channel",
+        "resources": ["safe_conduct", "witnesses"],
+        "independent_motion": true
+      }
+    ],
+    "locations": [
+      {
+        "location_id": "river_crossing",
+        "function": "trade_chokepoint",
+        "contested": true
+      },
+      {
+        "location_id": "ridge_reservoir",
+        "function": "water_source",
+        "contested": true
+      },
+      {
+        "location_id": "neutral_market",
+        "function": "negotiation_hub",
+        "contested": false
+      },
+      {
+        "location_id": "caravan_road",
+        "function": "regional_route",
+        "contested": true
+      }
+    ],
+    "clocks": [
+      {
+        "clock_id": "water_shortage",
+        "owner": "ridge_compact",
+        "current": 1,
+        "threshold": 4,
+        "advances_when": "reservoir_access_restricted",
+        "consequence_class": "rationing"
+      },
+      {
+        "clock_id": "crossing_lockdown",
+        "owner": "river_council",
+        "current": 1,
+        "threshold": 4,
+        "advances_when": "trade_incident_unresolved",
+        "consequence_class": "route_closure"
+      },
+      {
+        "clock_id": "mediation_window",
+        "owner": "neutral_mediators",
+        "current": 2,
+        "threshold": 5,
+        "advances_when": "witnesses_or_safe_conduct_lost",
+        "consequence_class": "negotiation_cost"
+      }
+    ],
+    "relationships": [
+      {
+        "from": "river_council",
+        "to": "ridge_compact",
+        "type": "resource_rivalry",
+        "state": "strained",
+        "changes_when": "trade_or_water_access_changes"
+      },
+      {
+        "from": "free_caravan_league",
+        "to": "river_council",
+        "type": "economic_dependency",
+        "state": "conditional",
+        "changes_when": "crossing_access_changes"
+      },
+      {
+        "from": "free_caravan_league",
+        "to": "ridge_compact",
+        "type": "route_dependency",
+        "state": "conditional",
+        "changes_when": "water_or_road_security_changes"
+      },
+      {
+        "from": "neutral_mediators",
+        "to": "river_council",
+        "type": "negotiation_channel",
+        "state": "available",
+        "changes_when": "safe_conduct_changes"
+      }
+    ],
+    "information_states": [
+      {
+        "information_id": "reservoir_capacity",
+        "known_by": ["ridge_compact", "neutral_mediators"],
+        "unknown_to": ["river_council", "free_caravan_league"],
+        "visibility": "restricted",
+        "changes_when": "investigation_or_disclosure_occurs"
+      },
+      {
+        "information_id": "crossing_patrol_schedule",
+        "known_by": ["river_council", "free_caravan_league"],
+        "unknown_to": ["ridge_compact"],
+        "visibility": "faction-limited",
+        "changes_when": "surveillance_or_exchange_occurs"
+      },
+      {
+        "information_id": "mediation_window_status",
+        "known_by": ["neutral_mediators"],
+        "unknown_to": ["all_other_factions"],
+        "visibility": "private",
+        "changes_when": "mediator_clock_advances"
+      }
+    ],
+    "pressures": [
+      {
+        "pressure_id": "water_access",
+        "source": "ridge_reservoir",
+        "target": ["river_council", "free_caravan_league"],
+        "persistent": true,
+        "trigger": "dry-season-demand",
+        "effect_class": "resource_scarcity"
+      },
+      {
+        "pressure_id": "trade_access",
+        "source": "river_crossing",
+        "target": ["ridge_compact", "free_caravan_league"],
+        "persistent": true,
+        "trigger": "patrol_or_permit_change",
+        "effect_class": "route_disruption"
+      },
+      {
+        "pressure_id": "legitimacy",
+        "source": "neutral_market",
+        "target": ["river_council", "ridge_compact"],
+        "persistent": true,
+        "trigger": "public_breach_or_witness_loss",
+        "effect_class": "support_shift"
+      }
+    ],
+    "player_owned_decisions": [
+      {
+        "decision_id": "alignment_surface",
+        "owner": "players",
+        "decision_scope": "which_interests_to_support_or_balance",
+        "required": false,
+        "options_open": true,
+        "response_classes": ["engagement", "negotiation", "investigation", "avoidance", "redirection", "refusal", "unexpected_approach"]
+      },
+      {
+        "decision_id": "pressure_response_surface",
+        "owner": "players",
+        "decision_scope": "whether_and_how_to_change_a_live_pressure",
+        "required": false,
+        "options_open": true,
+        "response_classes": ["direct_action", "indirect_action", "information_exchange", "non_intervention"]
+      }
+    ],
+    "open_outcomes": [
+      {
+        "outcome_id": "regional_control",
+        "owner": "players_and_world",
+        "state": "open",
+        "possible_state_classes": ["shared_access", "council_control", "compact_control", "route_fragmentation", "negotiated_stability"]
+      },
+      {
+        "outcome_id": "faction_relationships",
+        "owner": "players_and_world",
+        "state": "open",
+        "possible_state_classes": ["alliance", "rivalry", "conditional_cooperation", "withdrawal"]
+      }
+    ],
+    "conditional_possibilities": [
+      {
+        "possibility_id": "lockdown_escalation",
+        "condition": "crossing_lockdown_reaches_threshold",
+        "may_change": ["route_access", "faction_relationships", "information_visibility"],
+        "status": "conditional",
+        "required": false
+      },
+      {
+        "possibility_id": "mediation_opening",
+        "condition": "safe_conduct_and_witnesses_remain_available",
+        "may_change": ["relationship_state", "clock_progress"],
+        "status": "conditional",
+        "required": false
+      },
+      {
+        "possibility_id": "resource_exchange",
+        "condition": "a_faction_exposes_usable_information_or_access",
+        "may_change": ["water_access", "trade_access", "support_shift"],
+        "status": "conditional",
+        "required": false
+      }
+    ],
+    "continuity": [
+      {
+        "constraint_id": "clock_state_persists",
+        "requirement": "clock_values_carry_between_sessions",
+        "preserve": true
+      },
+      {
+        "constraint_id": "faction_motives_persist",
+        "requirement": "faction_agendas_remain_actor_driven_until_changed_in_play",
+        "preserve": true
+      },
+      {
+        "constraint_id": "information_visibility_persists",
+        "requirement": "restricted_information_does_not_become_public_without_a_reveal_event",
+        "preserve": true
+      },
+      {
+        "constraint_id": "player_changes_persist",
+        "requirement": "accepted_player_caused_state_changes_remain_observable",
+        "preserve": true
+      }
+    ],
+    "independent_motion": [
+      {
+        "motion_id": "council_patrol_change",
+        "actor": "river_council",
+        "trigger": "crossing_lockdown_advances",
+        "action_class": "alter_patrols_or_permits",
+        "requires_player_action": false
+      },
+      {
+        "motion_id": "compact_rationing",
+        "actor": "ridge_compact",
+        "trigger": "water_shortage_advances",
+        "action_class": "alter_water_distribution",
+        "requires_player_action": false
+      },
+      {
+        "motion_id": "caravan_route_shift",
+        "actor": "free_caravan_league",
+        "trigger": "route_disruption_persists",
+        "action_class": "reroute_or_suspend_travel",
+        "requires_player_action": false
+      },
+      {
+        "motion_id": "mediator_outreach",
+        "actor": "neutral_mediators",
+        "trigger": "mediation_window_remains_open",
+        "action_class": "offer_or_withdraw_safe_conduct",
+        "requires_player_action": false
+      }
+    ],
+    "player_caused_changes": [
+      {
+        "change_id": "access_state_change",
+        "trigger_class": "player_action",
+        "observable_effects": ["clock_progression", "relationship_state_change", "information_visibility_change"],
+        "persists": true
+      },
+      {
+        "change_id": "resource_state_change",
+        "trigger_class": "player_action",
+        "observable_effects": ["water_access_change", "trade_access_change", "support_shift"],
+        "persists": true
+      }
+    ],
+    "if_nobody_intervenes": {
+      "condition": "water_access_and_trade_access_pressures_persist",
+      "consequence_classes": ["water_rationing", "crossing_lockdown", "route_fragmentation", "mediation_window_closes"],
+      "world_motion": true,
+      "status": "conditional",
+      "not_only_route_to_success": true
+    },
+    "agency_guards": {
+      "player_decision_open": true,
+      "outcomes_open": true,
+      "world_motion_independent": true,
+      "conditional_state_present": true
+    },
+    "acceptance": {
+      "observable_checks": [
+        "actors_have_motivations",
+        "factions_have_independent_agendas",
+        "locations_have_state_relevance",
+        "clocks_have_triggers_and_consequences",
+        "relationships_have_change_conditions",
+        "information_states_have_visibility",
+        "pressures_are_persistent",
+        "player_decisions_are_open",
+        "outcomes_have_multiple_states",
+        "conditional_possibilities_are_optional",
+        "continuity_constraints_are_persistent",
+        "world_motion_does_not_require_players",
+        "if_nobody_intervenes_motion_is_defined"
+      ],
+      "semantic_review_required": true
+    }
+  }
+]

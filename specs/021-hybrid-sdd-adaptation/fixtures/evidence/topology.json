@@ -1,0 +1,136 @@
+[
+  {
+    "evidence_id": "topology-valid",
+    "kind": "topology",
+    "work_class": "campaign-architecture",
+    "route": "full-sdd",
+    "status": "complete",
+    "context_used": [
+      "spec.md",
+      "data-model.md",
+      "contracts/hybrid-sdd.md",
+      "owner-pages",
+      "current-canon",
+      "targeted-retrieval"
+    ],
+    "context_omitted": [
+      "unrelated-campaign-pages",
+      "raw-session-transcripts",
+      "provider-metadata"
+    ],
+    "nodes": [
+      {
+        "id": "grounding",
+        "artifact": "context/grounding-record",
+        "owner": "route-owner",
+        "depends_on": [],
+        "wave": "serial-1",
+        "evidence": "authoritative-context-identified"
+      },
+      {
+        "id": "retrieval",
+        "artifact": "context/targeted-retrieval",
+        "owner": "retrieval-owner",
+        "depends_on": ["grounding"],
+        "wave": "serial-2",
+        "evidence": "required-collections-recorded"
+      },
+      {
+        "id": "owner-resolution",
+        "artifact": "identity/owner-resolution",
+        "owner": "identity-owner",
+        "depends_on": ["retrieval"],
+        "wave": "serial-3",
+        "evidence": "existing-owners-resolved"
+      },
+      {
+        "id": "rules-system",
+        "artifact": "systems/rules-state",
+        "owner": "systems-owner",
+        "depends_on": ["owner-resolution"],
+        "wave": "parallel-1",
+        "evidence": "invoked-rules-recorded"
+      },
+      {
+        "id": "world-state",
+        "artifact": "world/current-state",
+        "owner": "world-state-owner",
+        "depends_on": ["owner-resolution"],
+        "wave": "parallel-1",
+        "evidence": "current-state-and-provenance-recorded"
+      },
+      {
+        "id": "relationships-agendas",
+        "artifact": "relationships/active-agendas",
+        "owner": "relationship-owner",
+        "depends_on": ["rules-system", "world-state"],
+        "wave": "serial-5",
+        "evidence": "relationships-and-independent-agendas-linked"
+      },
+      {
+        "id": "situations",
+        "artifact": "situations/playable-situations",
+        "owner": "situation-owner",
+        "depends_on": ["relationships-agendas"],
+        "wave": "serial-6",
+        "evidence": "pressures-and-open-decisions-recorded"
+      },
+      {
+        "id": "presentation",
+        "artifact": "presentation/dm-session",
+        "owner": "presentation-owner",
+        "depends_on": ["situations"],
+        "wave": "serial-7",
+        "evidence": "dm-facing-handles-and-procedure-recorded"
+      },
+      {
+        "id": "deterministic-verification",
+        "artifact": "verification/deterministic-checks",
+        "owner": "verification-owner",
+        "depends_on": ["presentation"],
+        "wave": "parallel-2",
+        "evidence": "schema-owner-canon-and-acceptance-gates-pass"
+      },
+      {
+        "id": "semantic-verification",
+        "artifact": "verification/semantic-review",
+        "owner": "evaluator-owner",
+        "depends_on": ["presentation"],
+        "wave": "parallel-2",
+        "evidence": "blind-agency-continuity-and-usefulness-review-recorded"
+      },
+      {
+        "id": "work-proposal",
+        "artifact": "work/dm-proposal",
+        "owner": "work-owner",
+        "depends_on": ["deterministic-verification", "semantic-verification"],
+        "wave": "serial-9",
+        "evidence": "inspectable-proposal-addressed-to-dm"
+      },
+      {
+        "id": "dm-acceptance",
+        "artifact": "work/dm-acceptance",
+        "owner": "dm-owner",
+        "depends_on": ["work-proposal"],
+        "wave": "serial-10",
+        "evidence": "acceptance-recorded-before-fact-write"
+      },
+      {
+        "id": "filing-promotion",
+        "artifact": "canon/filing-promotion",
+        "owner": "filing-owner",
+        "depends_on": ["dm-acceptance"],
+        "wave": "serial-11",
+        "evidence": "accepted-work-filed-or-promoted"
+      },
+      {
+        "id": "deterministic-maintenance",
+        "artifact": "maintenance/index-retrieval-refresh",
+        "owner": "maintenance-owner",
+        "depends_on": ["filing-promotion"],
+        "wave": "serial-12",
+        "evidence": "safe-maintenance-and-retrieval-refresh-completed"
+      }
+    ]
+  }
+]

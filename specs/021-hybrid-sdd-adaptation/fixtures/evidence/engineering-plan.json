@@ -1,0 +1,123 @@
+[
+  {
+    "evidence_id": "engineering-plan-standard",
+    "kind": "engineering-plan",
+    "work_class": "engineering",
+    "route": "full-sdd",
+    "status": "complete",
+    "objective": "provide a maintainable, deterministic route and evidence check for ordinary engineering work",
+    "value": "engineering changes retain explicit technical planning and reproducible verification",
+    "authoritative_context": [
+      "repository-plan",
+      "python-runtime-contract",
+      "standard-library-cli-conventions",
+      "existing-spec-kit-integration"
+    ],
+    "context_omitted": [
+      "unrelated-feature-trees",
+      "raw-conversation-content",
+      "provider-specific-content"
+    ],
+    "technical_context": {
+      "language": "Python >=3.12",
+      "dependencies": [
+        "existing Spec Kit runtime",
+        "Python standard library"
+      ],
+      "project_type": "agent-facing operating policy and small CLI helpers"
+    },
+    "architecture": {
+      "components": [
+        "route and evidence checker",
+        "redacted trace helper",
+        "feature-local fixture runner"
+      ],
+      "interfaces": [
+        "JSON fixture input",
+        "CLI subcommands",
+        "structured text and JSON results"
+      ],
+      "flow": [
+        "load validated record",
+        "apply deterministic checks",
+        "emit pass or error result"
+      ],
+      "design_constraints": [
+        "separate telemetry and evidence responsibilities",
+        "reuse existing integration surfaces"
+      ]
+    },
+    "storage": {
+      "policy": "config/efficiency.yaml",
+      "local_trace_stream": ".local/efficiency/traces.jsonl",
+      "durable_feature_artifacts": "specs/021-hybrid-sdd-adaptation/",
+      "database": false,
+      "retention_days": 90
+    },
+    "testing": {
+      "strategy": "standard-library fixture checks at a public CLI seam",
+      "commands": [
+        "python3 specs/021-hybrid-sdd-adaptation/fixtures/check.py",
+        "specify integration status --json",
+        "./scripts/check-omp-baseline.sh"
+      ],
+      "coverage": [
+        "valid JSON schema",
+        "deterministic acceptance checks",
+        "error reporting",
+        "managed-file preservation"
+      ],
+      "test_framework": "none"
+    },
+    "platform": {
+      "development": [
+        "macOS workstation",
+        "coding-agent host"
+      ],
+      "ci": "GitHub CI-compatible command surfaces",
+      "runtime": "local process"
+    },
+    "performance": {
+      "context_strategy": "load only route-required context",
+      "comparison_scope": "same sitting class and job",
+      "minimum_paired_cases": 10,
+      "minimum_median_trajectory_reduction": 0.05,
+      "regression_guards": [
+        "zero new hard-gate failures",
+        "no material runtime regression"
+      ]
+    },
+    "constraints": [
+      "preserve the existing Spec Kit lifecycle and hooks",
+      "do not edit generated Spec Kit adapters",
+      "do not edit managed templates",
+      "do not add a database or third-party dependency",
+      "keep raw prompt and model content out of normal traces",
+      "do not silently change tokenizer governance"
+    ],
+    "source_structure": {
+      "feature_contracts": [
+        "specs/021-hybrid-sdd-adaptation/spec.md",
+        "specs/021-hybrid-sdd-adaptation/plan.md",
+        "specs/021-hybrid-sdd-adaptation/contracts/"
+      ],
+      "fixture_surfaces": [
+        "specs/021-hybrid-sdd-adaptation/fixtures/routes/",
+        "specs/021-hybrid-sdd-adaptation/fixtures/evidence/",
+        "specs/021-hybrid-sdd-adaptation/fixtures/telemetry/"
+      ],
+      "source_changes": [
+        "AGENTS.md",
+        "docs/agents/hybrid-sdd.md",
+        "config/efficiency.yaml",
+        "scripts/hybrid-sdd-check.py",
+        "scripts/efficiency-trace.py"
+      ],
+      "generated_unchanged": [
+        ".agents/skills/speckit-*",
+        ".omp/commands/speckit.*",
+        ".specify/templates/*"
+      ]
+    }
+  }
+]

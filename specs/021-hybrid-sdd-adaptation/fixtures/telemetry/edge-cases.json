@@ -1,0 +1,26 @@
+[
+  {
+    "schema_version": 1, "trace_id": "trace-failed-001", "policy_version": "1.0", "job": "route-check", "sitting_class": "prep", "work_status": "failed", "measurement_status": "complete", "model_family": "model-a", "tokenizer_family": "native-a", "encoding": "encoding-a",
+    "trajectory": {"request": 3, "loaded_context": 2, "retrieval": 0, "tools": 1, "failures": 1, "retries": 1, "model_input": 5, "model_output": 0, "final_work": 0},
+    "retrieval": {"queries": 0, "fetches": 0, "tokens": 0, "attempted_collections": [], "fallbacks": [], "useful": 0, "unused": 0},
+    "source_components": [{"owner": "user-request", "tokens": 3, "secondary_provenance": []}], "quality": {"hard_gate_failures": 1, "semantic_non_inferior": true, "dm_acceptance": "not-required", "dm_revisions": 0, "runtime_failures": 1}
+  },
+  {
+    "schema_version": 1, "trace_id": "trace-incomplete-001", "policy_version": "1.0", "job": "route-check", "sitting_class": "wrapup", "work_status": "incomplete", "measurement_status": "measurement-gap", "measurement_gap_reason": "telemetry-disabled", "model_family": "model-a", "tokenizer_family": "native-a", "encoding": "encoding-a",
+    "trajectory": {"request": 3, "loaded_context": 0, "retrieval": 0, "tools": 0, "failures": 0, "retries": 0, "model_input": 0, "model_output": 0, "final_work": 0},
+    "retrieval": {"queries": 0, "fetches": 0, "tokens": 0, "attempted_collections": [], "fallbacks": [], "useful": 0, "unused": 0},
+    "source_components": [{"owner": "user-request", "tokens": 3, "secondary_provenance": []}], "quality": {"hard_gate_failures": 0, "semantic_non_inferior": true, "dm_acceptance": "not-required", "dm_revisions": 0, "runtime_failures": 0}
+  },
+  {
+    "schema_version": 1, "trace_id": "trace-pre-governance-001", "policy_version": "1.0", "job": "native-comparison", "sitting_class": "prep", "work_status": "accepted", "measurement_status": "measurement-gap", "measurement_gap_reason": "native-tokenizer-governance-pending", "model_family": "model-b", "tokenizer_family": "native-b", "encoding": "encoding-b", "comparison_sample": false,
+    "trajectory": {"request": 4, "loaded_context": 4, "retrieval": 1, "tools": 1, "failures": 0, "retries": 0, "model_input": 8, "model_output": 5, "final_work": 5},
+    "retrieval": {"queries": 1, "fetches": 1, "tokens": 1, "attempted_collections": ["wiki"], "fallbacks": [], "useful": 1, "unused": 0},
+    "source_components": [{"owner": "user-request", "tokens": 4, "secondary_provenance": []}, {"owner": "repository-context", "tokens": 4, "secondary_provenance": []}], "quality": {"hard_gate_failures": 0, "semantic_non_inferior": true, "dm_acceptance": "accepted", "dm_revisions": 0, "runtime_failures": 0}
+  },
+  {
+    "schema_version": 1, "trace_id": "trace-fallback-001", "policy_version": "1.0", "job": "route-check", "sitting_class": "prep", "work_status": "accepted", "measurement_status": "complete", "model_family": "model-a", "tokenizer_family": "native-a", "encoding": "encoding-a",
+    "trajectory": {"request": 5, "loaded_context": 5, "retrieval": 3, "tools": 1, "failures": 0, "retries": 1, "model_input": 10, "model_output": 6, "final_work": 6},
+    "retrieval": {"queries": 2, "fetches": 2, "tokens": 3, "attempted_collections": ["wiki", "shattered-sea", "legacy"], "fallbacks": ["wiki->shattered-sea"], "useful": 1, "unused": 1},
+    "source_components": [{"owner": "user-request", "tokens": 5, "secondary_provenance": []}, {"owner": "repository-context", "tokens": 5, "secondary_provenance": ["qmd:shattered-sea"]}], "quality": {"hard_gate_failures": 0, "semantic_non_inferior": true, "dm_acceptance": "accepted", "dm_revisions": 0, "runtime_failures": 0}
+  }
+]
