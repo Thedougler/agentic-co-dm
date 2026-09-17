@@ -1,4 +1,14 @@
+<!--
+Sync Impact Report
+- Version change: 2.1.0 → 2.2.0
+- Modified principles: XV. Autonomous Operation (expanded); no titles renamed
+- Added sections: XX. Lean Agent-Facing Documents
+- Removed sections: none
+- Follow-up TODOs: none
+-->
+
 # Agentic Co-DM Constitution
+<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
 
 ## Core Principles
 
@@ -39,10 +49,10 @@ that passes it, one slice at a time. Tests MUST NOT pin internals, recompute the
 values, or bulk-speculate about imagined behavior.
 
 For changes to code, skills, instructions, templates, linting, or any other agent-facing surface,
-resulting agentic behavior is the primary acceptance target. Validation MUST exercise that behavior
-and MUST NOT stop at code correctness, syntax, or file presence. Luna subagents SHOULD perform
-this validation when available; otherwise an equivalent independent agent validator MUST be used
-and the unavailable-Luna gap MUST be recorded.
+resulting agentic behavior is the primary acceptance target. Validation MUST exercise that
+behavior and MUST NOT stop at code correctness, syntax, or file presence. Luna subagents SHOULD
+perform this validation when available; otherwise an equivalent independent agent validator MUST
+be used and the unavailable-Luna gap MUST be recorded.
 
 Rationale: behavior-focused tests protect contracts through refactoring; agent validation confirms
 that the system follows user intent in operation, not merely in source.
@@ -97,8 +107,8 @@ guidance.
 Specs, skills, templates, checklists, and reviews MUST constrain only acceptance, safety, domain
 language, and named failure modes. They MUST NOT prescribe one creative method, voice, structure,
 or implementation when multiple valid approaches exist. Narrative craft, mechanics, specificity,
-canon fidelity, playability, player agency, and DM usefulness MUST NOT be traded away to satisfy a
-process metric.
+canon fidelity, playability, player agency, and DM usefulness MUST NOT be traded away to satisfy
+a process metric.
 
 Rationale: the Co-DM exists to produce playable Work, not procedural compliance theater.
 
@@ -211,9 +221,15 @@ proven solutions while reproducible bootstrap keeps agents unblocked without dep
 
 ### XV. Autonomous Operation
 
-Agents MAY complete routine context, version-control, and repository-maintenance loops without
-waiting for a human. They MUST not bypass review, acceptance, secret protection, branch safety,
-required checks, or other explicit safeguards. Human approval remains required wherever this
+Agents MUST proactively complete routine context, version-control, repository-maintenance, and
+wiki-maintenance operations without waiting for human approval when the operation is deterministic,
+safe, idempotent, and governed by current standards. Updating existing Wiki content to meet current
+formatting, linting, ingesting, indexing, linking, or provenance standards is routine maintenance;
+it requires agent judgment, not DM approval.
+
+Novel campaign content creation is the DM approval boundary. Agents MUST NOT bypass review,
+acceptance, secret protection, branch safety, required checks, or other explicit safeguards when
+an operation introduces or changes accepted canon. Human approval remains required wherever this
 constitution or an applicable lower-level policy makes it the safety boundary.
 
 Current repository standards and documented best practices are the only maintained baseline.
@@ -224,8 +240,8 @@ migrate affected callers or dependents, and remove obsolete behavior when safe. 
 better-supported approach supersedes the former approach; historical precedent MUST NOT justify
 retaining the former approach.
 
-Rationale: autonomy keeps completed work and context current while preserving human control over
-risk and canon; refusing legacy drift keeps improvement cumulative.
+Rationale: automation keeps routine work current without needless human gates while preserving
+human control over novel canon and explicit safety boundaries.
 
 ### XVI. Constitutional Layering
 
@@ -277,8 +293,8 @@ wiki location through the applicable review and acceptance workflow. A staging p
 carried into a later session merely because the session ended; any genuine blocker MUST be surfaced
 explicitly with its owner and next action.
 
-Every file entering `wiki/` through `_staging/`, `_raw/`, or any other path MUST be checked by
-the current wiki linter before it is considered complete. Its linting report MUST be clean against
+Every file entering `wiki/` through `_staging/`, `_raw/`, or any other path MUST be checked by the
+current wiki linter before it is considered complete. Its linting report MUST be clean against
 current standards. A non-clean report means the file remains incomplete; the agent MUST remediate
 the findings or surface an explicit blocker before proceeding.
 
@@ -321,6 +337,32 @@ highlight marker without correcting the underlying quality error is non-complian
 
 Rationale: user feedback becomes durable knowledge and a source-level repair, preventing the same
 error from recurring across generated work.
+
+### XX. Lean Agent-Facing Documents
+
+Text intended exclusively for agent consumption MUST contain only the words, examples, structure,
+and repetition necessary for correct execution and reasoning. Lean is the sole default for
+`AGENTS.md`, `CLAUDE.md`, `GROK.md`, `OMP.md`, agent skills, agent-facing `docs/`, and this
+constitution. Every sentence MUST earn its context cost.
+
+Agents MUST actively compress tool-call token load. Tool commands and descriptions MUST be short
+and clear; agents MUST prefer concise native commands over long, cobbled-together DIY commands
+when behavior and safety are equivalent. Tool inputs MUST contain only required context and
+arguments, and tool outputs MUST be concise or structured when the interface supports it without
+hiding errors.
+
+Agents MUST proactively identify repeatable deterministic work that does not require reasoning and
+encode it in a reusable helper or workflow, so future work does not repeatedly re-derive it.
+Helpers MUST accept explicit inputs, report success and failure distinctly, preserve safety and
+idempotence, and remain simpler than the repeated manual reasoning they replace.
+
+Authors MUST remove redundant explanation, decorative prose, speculative guidance, and duplicated
+policy while retaining rules, rationale needed to apply them, completion criteria, failure modes,
+safety boundaries, and information required for human comprehension, accessibility, or compliance.
+This principle MUST NOT be used to delete necessary safeguards or quality-critical domain detail.
+
+Rationale: agent attention and tool-call budgets are finite; lean context and deterministic helpers
+leave more capacity for reasoning about the wiki while preserving safe, correct work.
 
 ## Operating Boundaries
 
@@ -372,4 +414,4 @@ not prevent a named safety failure MUST be rejected or resolved by an ADR.
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 2.1.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 2.2.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
