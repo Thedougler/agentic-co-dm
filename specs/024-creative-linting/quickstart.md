@@ -1,0 +1,152 @@
+# Quickstart: Creative Linting Validation
+
+**Branch**: `024-creative-linting` | **Date**: 2026-09-17
+
+## Prerequisites
+
+- Python 3.14 (`.venv`)
+- Vale 3.13.0 (`vale --version`)
+- PyYAML installed in `.venv` (`pip install pyyaml`)
+- Repo root as CWD
+
+## Setup
+
+```bash
+# Install PyYAML
+.venv/bin/pip install pyyaml
+
+# Verify Vale
+vale --version
+# → vale version 3.13.0
+
+# Verify existing lint still works
+./scripts/wiki-lint --json wiki | python3 -c "import sys,json; d=json.load(sys.stdin); print(f'pages={d[\"scope\"][\"pages\"]}')"
+```
+
+## Validation Scenarios
+
+### V1: Rule Registry Loads and Validates
+
+```bash
+# Load registry and print rule count
+.venv/bin/python -c "
+from tools.creative_lint.registry import Registry
+r = Registry.load('rules/registry.yml')
+errors = r.validate()
+print(f'rules={len(r.all_ids())} errors={len(errors)}')
+for e in errors: print(f'  {e}')
+"
+```
+
+**Expected**: `rules=~15 errors=0`
+
+### V2: Vale Runs CoDM Style Against a Fixture
+
+```bash
+# Run Vale against a should-fail fixture
+vale --output=JSON --config=.vale.ini tests/fixtures/creative_lint/AGENCY001/fail_authored_decision.md
+```
+
+**Expected**: JSON output containing a finding with `Check: "CoDM.AGENCY001"`.
+
+```bash
+# Run Vale against a should-pass fixture
+vale --output=JSON --config=.vale.ini tests/fixtures/creative_lint/AGENCY001/pass_situation_description.md
+```
+
+**Expected**: Empty findings array for this rule.
+
+### V3: wiki-lint task Subcommand
+
+```bash
+# Run session-prep bundle against a test file
+./scripts/wiki-lint task session-prep tests/fixtures/creative_lint/AGENCY001/fail_authored_decision.md --json
+```
+
+**Expected**: JSON with `status: "repair_required"`, at least one AGENCY001 finding at BLOCK severity.
+
+### V4: wiki-lint rule Subcommand
+
+```bash
+./scripts/wiki-lint rule AGENCY001
+```
+
+**Expected**: Prints rule definition — ID, title, category, severity, evaluator, message, repair guidance, bundle memberships.
+
+### V5: Bundle Resolution
+
+```bash
+.venv/bin/python -c "
+from tools.creative_lint.registry import Registry
+from tools.creative_lint.bundles import BundleRegistry
+reg = Registry.load('rules/registry.yml')
+bun = BundleRegistry.load('rules/bundles.yml')
+b = bun.get('session-prep')
+for rule, sev in b.resolve(reg):
+    print(f'{rule.id:12s} {sev:8s} (inherent={rule.severity})')
+"
+```
+
+**Expected**: Rules from agency/canon/wiki categories at their inherent severity. Retrieval/temporal at max REVIEW. Scene/diversity at max WARN.
+
+### V6: Existing wiki-lint Unchanged
+
+```bash
+# Existing default mode still works identically
+./scripts/wiki-lint --json wiki | python3 -c "
+import sys,json
+d = json.load(sys.stdin)
+assert 'counts' in d
+assert 'hard_fail' in d
+print('existing mode OK')
+"
+```
+
+**Expected**: `existing mode OK` — no regression.
+
+### V7: Finding Schema Conformance
+
+```bash
+# All findings from a task run match the schema
+./scripts/wiki-lint task corpus wiki --json | .venv/bin/python -c "
+import sys, json
+data = json.load(sys.stdin)
+for f in data.get('findings', []):
+    assert 'rule_id' in f
+    assert 'result' in f
+    assert 'severity' in f
+    assert 'location' in f
+    assert 'evidence' in f
+    assert 'reason' in f
+    assert 'evaluator' in f
+    print(f'{f[\"rule_id\"]:12s} {f[\"severity\"]:8s} {f[\"location\"][\"file\"]}')
+print(f'findings={len(data.get(\"findings\",[]))} schema=valid')
+"
+```
+
+### V8: Severity Filter
+
+```bash
+./scripts/wiki-lint task session-prep wiki --json --severity block,repair | .venv/bin/python -c "
+import sys, json
+data = json.load(sys.stdin)
+for f in data.get('findings', []):
+    assert f['severity'] in ('BLOCK', 'REPAIR'), f'unexpected severity {f[\"severity\"]}'
+print('severity filter OK')
+"
+```
+
+## Test Suite
+
+```bash
+.venv/bin/python -m pytest tests/test_creative_lint.py -v
+```
+
+**Expected**: All tests pass. Covers:
+- Registry loading and validation
+- Duplicate ID rejection
+- Severity ceiling enforcement
+- Bundle resolution with gate logic
+- Vale adapter JSON mapping
+- Symbolic evaluator basics
+- Fixture harness (should-fail/pass/ambiguous per rule)
