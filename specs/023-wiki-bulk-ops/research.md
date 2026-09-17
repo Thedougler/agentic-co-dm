@@ -79,3 +79,43 @@
 
 **Alternatives considered**:
 - Config file lookup (unnecessary indirection; env var is already resolved by the agent framework)
+
+## Decision 9: Broken-link repair — resolution strategy
+
+**Decision**: Three-tier resolution: (1) explicit old→new mapping file, (2) git log rename detection, (3) fuzzy matching on file stems. Ambiguous fuzzy matches (multiple candidates) are reported, not auto-resolved.
+
+**Rationale**: Per FR-013/FR-014. The explicit mapping is the highest-confidence source (agent or DM provides it). Git log `--diff-filter=R` detects renames at the filesystem level — proven reliable. Fuzzy matching (case-insensitive stem comparison, Levenshtein on stems ≤2 edits) catches kebab-case/title-case drift. Multi-candidate fuzzy matches are unsafe to auto-resolve per FR-014; they're reported with candidates for the agent to supply a mapping.
+
+**Alternatives considered**:
+- Frontmatter `aliases` only (misses renames that didn't set aliases — git history is more complete)
+- Auto-resolve even ambiguous matches with confidence scoring (too risky for wiki canon; false resolution creates new broken links)
+
+## Decision 10: Broken-link repair — mapping file format
+
+**Decision**: Simple TSV file, one `old_stem<tab>new_stem` per line. Lines starting with `#` are comments.
+
+**Rationale**: Agents generate this trivially. No YAML/JSON parsing needed. Matches the "simplest tool" principle.
+
+**Alternatives considered**:
+- JSON mapping (more parsing code for no benefit)
+- YAML (dependency risk or regex-YAML already in use — TSV is simpler)
+
+## Decision 11: Tag normalization — taxonomy source
+
+**Decision**: Read `_meta/taxonomy.md` for canonical tags and aliases. Format: each canonical tag is a heading or list item, aliases listed beneath it. Unknown tags are reported, not removed.
+
+**Rationale**: Per FR-015. The taxonomy file already exists in the vault. Parsing it avoids a separate config file. The wiki-lint and tag-taxonomy skills already reference this file.
+
+**Alternatives considered**:
+- Separate JSON/YAML taxonomy file (adds a new artifact; the markdown taxonomy already exists)
+- Inline alias definitions in frontmatter (scattered across files; not a single source of truth)
+
+## Decision 12: Orphan detection — scope and output
+
+**Decision**: Report-only. Scan all pages, build incoming-link index, report pages with zero incoming wikilinks. Exclude index pages (`index.md`, `log.md`, `hot.md`) and special dirs from orphan candidacy. Output is the same JSON/text format as other commands.
+
+**Rationale**: Per FR-016. No auto-fix, no auto-delete, no auto-link. Pure diagnostic. The agent or DM decides what to do with orphans.
+
+**Alternatives considered**:
+- Auto-link orphans to index (violates report-only requirement; could create wrong links)
+- Exclude pages with certain tags from orphan report (over-engineering; the report is enough)

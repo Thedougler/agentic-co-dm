@@ -6,7 +6,7 @@
 
 ## Summary
 
-Provide a single Python CLI script (`scripts/wiki-bulk-ops`) that agents invoke for token-efficient, idempotent bulk operations on the Obsidian wiki vault: entity rename (with wikilink rewrite), find-and-replace (with markdown safety zones), and frontmatter mutation. Every operation supports `--dry-run` and produces machine-readable JSON output. The design generalizes the existing `remorph-*` script patterns into one composable tool.
+Provide a single Python CLI script (`scripts/wiki-bulk-ops`) that agents invoke for token-efficient, idempotent bulk operations on the Obsidian wiki vault: entity rename (with wikilink rewrite), find-and-replace (with markdown safety zones), frontmatter mutation, broken-link repair (auto-resolve via git history/aliases/fuzzy matching + explicit mapping), tag normalization (against taxonomy), and orphan detection (report-only). Every operation supports `--dry-run` and produces machine-readable JSON output. The design generalizes the existing `remorph-*` script patterns into one composable tool.
 
 ## Technical Context
 

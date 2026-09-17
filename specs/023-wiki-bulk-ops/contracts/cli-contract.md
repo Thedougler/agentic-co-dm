@@ -139,6 +139,69 @@ rename: korvash → korveth
 }
 ```
 
+### `link-repair`
+
+Detect and repair broken wikilinks across the vault.
+
+```
+scripts/wiki-bulk-ops link-repair [--mapping FILE] [--no-git] [--no-aliases] [--no-fuzzy] [--fuzzy-threshold N] [global opts]
+```
+
+| Argument | Required | Description |
+|---|---|---|
+| `--mapping` | no | TSV file with `old_stem<tab>new_stem` explicit overrides |
+| `--no-git` | no | Skip git rename history lookup |
+| `--no-aliases` | no | Skip frontmatter `aliases` lookup |
+| `--no-fuzzy` | no | Skip fuzzy stem matching |
+| `--fuzzy-threshold` | no | Max Levenshtein edit distance (default 2) |
+
+**Behavior**:
+1. Scan all `.md` files for wikilinks; build set of link targets
+2. Identify broken links (target has no matching `.md` file)
+3. For each broken link, attempt resolution in priority order: explicit mapping → git rename history → frontmatter aliases → fuzzy stem match
+4. Single-candidate resolutions are applied; multi-candidate (ambiguous) are reported with candidates
+5. Unresolvable links are reported and left unchanged
+
+**Exit codes**: 0 success, 1 validation error, 2 partial failure
+
+### `tag-normalize`
+
+Normalize frontmatter tags against the taxonomy.
+
+```
+scripts/wiki-bulk-ops tag-normalize [--taxonomy FILE] [--remove-unknown] [global opts]
+```
+
+| Argument | Required | Description |
+|---|---|---|
+| `--taxonomy` | no | Path to taxonomy file (default `_meta/taxonomy.md` in vault) |
+| `--remove-unknown` | no | Remove tags not in taxonomy (default: report only) |
+
+**Behavior**:
+1. Parse taxonomy file for canonical tags and their aliases
+2. Scan frontmatter `tags:` on all files in scope
+3. Replace alias tags with canonical form
+4. Collapse duplicates (two aliases mapped to same canonical)
+5. Report unknown tags (not in taxonomy) — remove only if `--remove-unknown`
+
+**Exit codes**: 0 success, 1 validation error, 2 partial failure
+
+### `orphan-report`
+
+List pages with no incoming wikilinks (report-only, no modifications).
+
+```
+scripts/wiki-bulk-ops orphan-report [global opts]
+```
+
+**Behavior**:
+1. Build incoming-link index across all vault `.md` files
+2. Identify pages with zero incoming wikilinks
+3. Exclude special pages (`index.md`, `log.md`, `hot.md`) and special dirs
+4. Report orphan list — no auto-fix, no file modifications
+
+**Exit codes**: 0 always (report-only)
+
 ## Idempotency
 
-Every command is idempotent. A second invocation with the same arguments after a successful first run produces `files_modified: 0` and exit code 0.
+Every command is idempotent. A second invocation with the same arguments after a successful first run produces `files_modified: 0` and exit code 0. `orphan-report` is inherently idempotent (read-only).

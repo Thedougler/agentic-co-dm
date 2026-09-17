@@ -101,6 +101,59 @@ printf '\x80\x81\x82' > /tmp/test-vault/bad.md
 # Verify: only files matching the glob are scanned
 ```
 
+### 9. Broken-link repair — auto-resolve via git history
+
+```bash
+# Dry run: see what broken links exist and how they'd be resolved
+./scripts/wiki-bulk-ops link-repair --dry-run --json --vault wiki
+
+# Verify: output lists broken links with resolution source (git/alias/fuzzy)
+# Verify: ambiguous matches listed with candidates, not auto-resolved
+# Verify: unresolvable links listed as unresolved
+
+# Apply
+./scripts/wiki-bulk-ops link-repair --vault wiki
+
+# Idempotency
+./scripts/wiki-bulk-ops link-repair --vault wiki --json
+# Verify: files_modified: 0
+```
+
+### 10. Broken-link repair — explicit mapping override
+
+```bash
+# Create mapping file
+printf 'old-npc-name\tnew-npc-name\nold-place\tnew-place\n' > /tmp/link-mapping.tsv
+
+./scripts/wiki-bulk-ops link-repair --mapping /tmp/link-mapping.tsv --dry-run --json --vault wiki
+# Verify: mapped links resolved per mapping, unmapped broken links reported separately
+```
+
+### 11. Tag normalization — canonicalize aliases
+
+```bash
+./scripts/wiki-bulk-ops tag-normalize --dry-run --json --vault wiki
+
+# Verify: alias tags replaced with canonical form
+# Verify: duplicate tags collapsed
+# Verify: unknown tags reported but NOT removed
+
+# With removal of unknown tags
+./scripts/wiki-bulk-ops tag-normalize --remove-unknown --dry-run --json --vault wiki
+# Verify: unknown tags now listed for removal
+```
+
+### 12. Orphan report
+
+```bash
+./scripts/wiki-bulk-ops orphan-report --json --vault wiki
+
+# Verify: lists pages with zero incoming wikilinks
+# Verify: index.md, log.md, hot.md excluded
+# Verify: exit code 0 (report-only, no modifications)
+# Verify: no files changed on disk
+```
+
 ## Running Tests
 
 ```bash
@@ -121,3 +174,8 @@ python3 tests/test_wiki_bulk_ops.py
 | Replace no matches | 0 | 0 |
 | Idempotent re-run | 0 | 0 |
 | File with bad encoding | 2 | ≥0 (others succeed) |
+| Link repair with resolvable links | 0 | ≥1 |
+| Link repair ambiguous (no mapping) | 0 | 0 (reported only) |
+| Link repair with mapping | 0 | ≥1 |
+| Tag normalize with aliases | 0 | ≥1 |
+| Orphan report | 0 | 0 (report-only) |
