@@ -5,146 +5,135 @@ description: "Task list for Hybrid Spec-Driven Development"
 
 # Tasks: Hybrid Spec-Driven Development
 
-**Input**: Design documents from `/Users/nick/agentic-co-dm/specs/021-hybrid-sdd-adaptation/`
+**Input**: Design documents from `/specs/021-hybrid-sdd-adaptation/`
 
-**Prerequisites**: [plan.md](./plan.md), [spec.md](./spec.md), [research.md](./research.md), [data-model.md](./data-model.md), [contracts/](./contracts/), and [quickstart.md](./quickstart.md)
+**Prerequisites**: `plan.md`, `spec.md`, `research.md`, `data-model.md`, `contracts/`, and `quickstart.md`
 
-**Tests**: The feature specification requires independently testable scenarios and measurable outcomes. Tests use the existing standard-library fixture-check pattern; no pytest suite or instruction-prose snapshots are added.
+**Tests**: No separate TDD tasks are included. The specification requires public fixture/CLI checks; those checks are implementation and verification surfaces below.
 
-**Organization**: Tasks are grouped by user story. Foundational tasks create the shared route, policy, helper, and checker seams; story tasks add fixtures and behavior checks in dependency order.
+**Organization**: Tasks are grouped by user story. Each task names its canonical write surface and preserves the single-writer boundary.
 
 ## Phase 1: Setup (Shared Infrastructure)
 
-**Purpose**: Establish the local storage boundary and committed fixture surfaces without touching generated Spec Kit files.
+**Purpose**: Establish maintainer policy, local trace storage, and sanitized feature fixtures without changing generated Spec Kit files.
 
-- [ ] T001 [P] Add `.local/efficiency/traces.jsonl` and `.local/efficiency/quarantine/` ignore rules to `.gitignore`, preserving all existing ignore entries.
-- [ ] T002 [P] Create the initial route schema and base class cases in `specs/021-hybrid-sdd-adaptation/fixtures/routes/classification.json`; leave the Scenario A–G edge cases for US1.
-- [ ] T003 [P] Create sanitized telemetry fixtures at `specs/021-hybrid-sdd-adaptation/fixtures/telemetry/complete-prep.json` and `specs/021-hybrid-sdd-adaptation/fixtures/telemetry/measurement-gap.json` containing counts and provenance identifiers only.
+- [ ] T001 [P] Create maintainer-owned efficiency policy with 90-day retention, `prep`/`wrapup` comparison classes, pair/reduction thresholds, risk paths, canaries, and rollback gates in `config/efficiency.yaml`
+- [ ] T002 [P] Ignore normal local efficiency traces, quarantine output, and retention artifacts in `.gitignore`
+- [ ] T003 [P] Create the sanitized route, evidence, and telemetry fixture directories with README-free placeholder-free structure in `specs/021-hybrid-sdd-adaptation/fixtures/`
+- [ ] T004 [P] Record the feature's generated-file preservation boundary and public command surfaces in `specs/021-hybrid-sdd-adaptation/quickstart.md`
 
 ---
 
 ## Phase 2: Foundational (Blocking Prerequisites)
 
-**Purpose**: Establish the shared policy, route contract, agent-shaped CLIs, and fixture runner. No user-story task starts before this phase passes.
+**Purpose**: Install the progressive-disclosure route and shared artifact vocabulary before story-specific behavior is implemented.
 
-- [ ] T004 Create maintainer-owned `config/efficiency.yaml` with policy schema version, 90-day retention, `prep`/`wrapup` comparison classes, 10 paired cases, 5% median reduction, risk paths, canary rules, non-inferiority rule, and rollback thresholds from `contracts/efficiency-telemetry.md`.
-- [ ] T005 Write the detailed routing, artifact, dependency, canon, agency, and completion-evidence procedure in `docs/agents/hybrid-sdd.md`, pointing to existing `docs/agents/work.md`, campaign skills, QMD precedence, and 012 blind evaluation instead of copying them.
-- [ ] T006 Add a compact hybrid-SDD route pointer to `AGENTS.md` that loads `docs/agents/hybrid-sdd.md` for substantial work and explicitly preserves routine campaign-content routing.
-- [ ] T007 [P] Implement schema-validated append, redaction checks, retention, and incompatible-record quarantine in `scripts/efficiency-trace.py`; accept structured input, emit JSON/text, write errors to stderr, and return non-zero on invalid or cross-tokenizer data.
-- [ ] T008 [P] Implement the objective route, evidence, state-transition, source-attribution, denominator, and hard-gate checks in `scripts/hybrid-sdd-check.py` without duplicating wiki, link, or QMD implementations.
-- [ ] T009 Create the standard-library public fixture runner in `specs/021-hybrid-sdd-adaptation/fixtures/check.py`, invoking the two CLIs in temporary directories and reporting one PASS/FAIL result without snapshotting instruction prose.
+**CRITICAL**: User-story implementation depends on this phase. Generated `.agents/skills/speckit-*`, `.omp/commands/speckit.*`, and `.specify/templates/*` remain unchanged.
 
-**Checkpoint**: `config/efficiency.yaml`, `docs/agents/hybrid-sdd.md`, `AGENTS.md`, both CLIs, and the fixture runner exist; generated `.agents/skills/speckit-*`, `.omp/commands/speckit.*`, `.specify/templates/*`, and `.specify/extensions/*` remain untouched.
+- [ ] T005 Replace the compact Spec Kit routing section with a pointer that classifies substantial work and preserves existing routine campaign routes in `AGENTS.md`
+- [ ] T006 Write the detailed hybrid routing, artifact, ownership, agency, completion-evidence, and verification procedure in `docs/agents/hybrid-sdd.md`
+- [ ] T007 Define the fixture record shapes and stable scenario identifiers used by the checker in `specs/021-hybrid-sdd-adaptation/fixtures/README.md`
+
+**Checkpoint**: Route policy, detailed contract, policy thresholds, local-trace boundary, and fixture conventions are defined; no story checker can silently invent a second authority.
 
 ---
 
-## Phase 3: User Story 1 — Classify work before governing it (Priority: P1) 🎯 MVP
+## Phase 3: User Story 1 - Classify work before governing it (Priority: P1) 🎯 MVP
 
-**Goal**: Classify substantial work exactly once, route routine content through its existing process, and split mixed requests without creating fictional canon.
+**Goal**: Classify each substantial request as exactly one SDD work class, route routine campaign content through its existing skill, and split mixed requests without fictional canon creation.
 
-**Independent Test**: Run the route fixture through `scripts/hybrid-sdd-check.py` and `specs/021-hybrid-sdd-adaptation/fixtures/check.py`; every representative request receives the expected class/route/reason and the routine case creates no feature directory.
-
-### Tests for User Story 1
-
-- [ ] T010 [US1] Complete `specs/021-hybrid-sdd-adaptation/fixtures/routes/classification.json` with the Scenario A–G full-SDD, routine-content, existing-entity, proposed-canon, and mixed-request cases, including exact `work_class`, `route`, and rationale fields.
-- [ ] T011 [US1] Add route assertions to `specs/021-hybrid-sdd-adaptation/fixtures/check.py` for Scenarios A–G, including one class only, `full-sdd` for substantial work, existing skill routing for routine content, and separated slices for mixed work.
+**Independent Test**: Run `python3 scripts/hybrid-sdd-check.py classify --fixtures specs/021-hybrid-sdd-adaptation/fixtures/routes/`; all seven representative scenarios, including the mixed request, receive the expected route and rationale.
 
 ### Implementation for User Story 1
 
-- [ ] T012 [US1] Extend `scripts/hybrid-sdd-check.py` to reject missing/unknown `work_class`, invalid `route`, missing classification rationale, duplicate class assignments, and mixed requests that collapse routine content into full SDD.
+- [ ] T008 [P] [US1] Add agent-system, campaign-architecture, and creative-system classification cases with expected class, `full-sdd` route, rationale, and scope boundary in `specs/021-hybrid-sdd-adaptation/fixtures/routes/classification-system.json`
+- [ ] T009 [P] [US1] Add engineering and routine-content cases proving ordinary engineering SDD and established NPC skill routing in `specs/021-hybrid-sdd-adaptation/fixtures/routes/classification-routine.json`
+- [ ] T010 [P] [US1] Add entity-collision, proposed-canon, and mixed-request route cases in `specs/021-hybrid-sdd-adaptation/fixtures/routes/classification-boundaries.json`
+- [ ] T011 [US1] Implement CLI parsing, exact work-class/route validation, rationale checks, routine-content handling, and mixed-request splitting in `scripts/hybrid-sdd-check.py`
 
-**Checkpoint**: User Story 1 passes independently and validates SC-001, SC-013, and the routing parts of SC-008.
+**Checkpoint**: US1 is independently runnable through the classification CLI and covers Scenarios A–G without creating a feature directory for routine content.
 
 ---
 
-## Phase 4: User Story 2 — Specify playable outcomes without closing play (Priority: P1)
+## Phase 4: User Story 2 - Specify playable outcomes without closing play (Priority: P1)
 
-**Goal**: Require agency, independent world motion, conditional possibilities, and observable system behavior without authoring player decisions or fixed endings.
+**Goal**: Validate campaign-facing and reusable-system specifications for independent actors, pressures, open player decisions, conditional outcomes, continuity, and if-nobody-intervenes motion without screenplay requirements.
 
-**Independent Test**: Run the regional-conflict and reputation-system fixtures; required agency fields pass and fixed player routes/endings fail.
-
-### Tests for User Story 2
-
-- [ ] T013 [P] [US2] Add a five-to-ten-session regional-conflict specification fixture at `specs/021-hybrid-sdd-adaptation/fixtures/evidence/regional-conflict.md` with actors, pressures, clocks, relationships, information states, if-nobody-intervenes motion, and open player decisions.
-- [ ] T014 [P] [US2] Add a reusable reputation-system fixture at `specs/021-hybrid-sdd-adaptation/fixtures/evidence/reputation-system.md` with persistent state, faction behavior changes, information access changes, and conditional outcomes without selecting player actions.
-- [ ] T015 [US2] Add fixture assertions to `specs/021-hybrid-sdd-adaptation/fixtures/check.py` for open outcomes, independent world motion, refusal/avoidance/negotiation/failure response surfaces, and rejection of mandatory allegiance, scene order, or ending.
+**Independent Test**: Run `python3 scripts/hybrid-sdd-check.py agency --fixtures specs/021-hybrid-sdd-adaptation/fixtures/evidence/agency.json`; valid regional-conflict and reputation records pass, while authored player choices, fixed scene order, and fixed endings fail objectively.
 
 ### Implementation for User Story 2
 
-- [ ] T016 [US2] Extend `scripts/hybrid-sdd-check.py` to validate the required agency fields from `data-model.md` and report predetermined player decisions or fixed campaign endings as objective contract violations.
+- [ ] T012 [P] [US2] Add regional-conflict specification evidence for actors, factions, locations, clocks, relationships, information states, pressures, conditional opportunities, and open endings in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/agency.json`
+- [ ] T013 [P] [US2] Add reputation-system evidence for persistent state, faction behavior, information access, player-caused changes, and refusal/avoidance/negotiation responses in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/reusable-system.json`
+- [ ] T014 [P] [US2] Add negative agency fixtures for mandatory allegiance, authored player decisions, fixed scene sequence, fixed ending, and missing independent-world motion in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/agency-failures.json`
+- [ ] T015 [US2] Extend the agency verifier to require observable value, actors, pressures, open outcomes, conditional possibilities, independent motion, and if-nobody-intervenes consequences while rejecting screenplay constraints in `scripts/hybrid-sdd-check.py`
 
-**Checkpoint**: User Story 2 passes independently and validates SC-003 plus FR-007–FR-009.
+**Checkpoint**: US2 is independently verifiable from sanitized evidence and does not turn playability judgment into a prose snapshot or authored route.
 
 ---
 
-## Phase 5: User Story 3 — Preserve truth ownership and the canon boundary (Priority: P1)
+## Phase 5: User Story 3 - Preserve truth ownership and the canon boundary (Priority: P1)
 
-**Goal**: Resolve existing owners, preserve provenance and visibility, and keep proposed material outside accepted campaign truth until the existing DM acceptance path completes.
+**Goal**: Reuse existing owners, preserve provenance/reveal/visibility, keep proposals distinct from accepted truth, and permit safe deterministic maintenance without needless DM approval.
 
-**Independent Test**: Run alias, uncertain-collision, conditional-event, and deterministic-maintenance fixtures; owner reuse/ambiguity, proposal state, visibility, and acceptance gates are observable.
-
-### Tests for User Story 3
-
-- [ ] T017 [P] [US3] Add an alias and uncertain-identity fixture at `specs/021-hybrid-sdd-adaptation/fixtures/evidence/entity-collision.md` showing owner reuse, collision evidence, and explicit distinction before a new owner.
-- [ ] T018 [P] [US3] Add a canon-boundary fixture at `specs/021-hybrid-sdd-adaptation/fixtures/evidence/canon-boundary.md` showing current truth, affected truth, proposal, reveal/visibility, DM acceptance, and safe deterministic maintenance states.
-- [ ] T019 [US3] Add fixture assertions to `specs/021-hybrid-sdd-adaptation/fixtures/check.py` that reject opaque IDs/second owners, silent canonization, lost provenance/visibility, and needless DM gates on deterministic maintenance.
+**Independent Test**: Run `python3 scripts/hybrid-sdd-check.py canon --fixtures specs/021-hybrid-sdd-adaptation/fixtures/evidence/`; aliases resolve or surface ambiguity, proposed events remain proposals, and deterministic maintenance is not blocked.
 
 ### Implementation for User Story 3
 
-- [ ] T020 [US3] Extend `scripts/hybrid-sdd-check.py` to validate canonical-owner reuse/ambiguity evidence, proposal versus accepted-truth transitions, reveal/visibility boundaries, and accept-before-write evidence using the existing vocabulary.
+- [ ] T016 [P] [US3] Add existing-title, alias, stem, wikilink, manifest, QMD, and uncertain-collision evidence with owner-resolution outcomes in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/ownership.json`
+- [ ] T017 [P] [US3] Add accepted-truth, affected-truth, proposal, reveal, visibility, DM-acceptance, and filing-state evidence in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/canon-boundary.json`
+- [ ] T018 [P] [US3] Add safe deterministic maintenance and invalid accept-before-write cases in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/maintenance-boundary.json`
+- [ ] T019 [US3] Extend the checker with owner reuse/collision reporting, canon-state transitions, reveal/visibility checks, accept-before-write hard gates, and non-fact maintenance handling in `scripts/hybrid-sdd-check.py`
 
-**Checkpoint**: User Story 3 passes independently and validates SC-004, SC-005, SC-014, and the canon/provenance failure modes NF-003–NF-005.
+**Checkpoint**: US3 is independently verifiable without writing wiki facts, introducing opaque IDs, or adding a second lifecycle/owner model.
 
 ---
 
-## Phase 6: User Story 4 — Plan and task real artifact dependencies (Priority: P2)
+## Phase 6: User Story 4 - Plan and task real artifact dependencies (Priority: P2)
 
-**Goal**: Make plans and task lists express authoritative context, ownership, agency/canon constraints, real dependency edges, and bounded parallelism without process theater.
+**Goal**: Represent minimum sufficient context, canonical owners, real dependency edges, serial/parallel waves, agency/continuity constraints, and single-writer ownership in plans and tasks.
 
-**Independent Test**: Run the topology fixture; every dependency has a reason, parallel nodes have disjoint write ownership, and no task is parallel solely because it is prose.
-
-### Tests for User Story 4
-
-- [ ] T021 [P] [US4] Add serial/parallel dependency fixtures at `specs/021-hybrid-sdd-adaptation/fixtures/evidence/dependency-topology.json` covering grounding, owner resolution, missing owners, system state, relationships, situations, presentation, verification, Work, acceptance, filing, and maintenance where applicable.
-- [ ] T022 [US4] Add topology assertions to `specs/021-hybrid-sdd-adaptation/fixtures/check.py` for dependency reasons, canonical owner identity, one active writer, disjoint parallel surfaces, and omission of ceremony without a real edge.
+**Independent Test**: Run `python3 scripts/hybrid-sdd-check.py topology --fixtures specs/021-hybrid-sdd-adaptation/fixtures/evidence/topology.json`; real prerequisite edges pass, and a parallel wave sharing a canonical artifact fails.
 
 ### Implementation for User Story 4
 
-- [ ] T023 [US4] Extend `scripts/hybrid-sdd-check.py` to validate plan/task context-used and context-omitted fields, dependency ordering, owner/writer uniqueness, serial versus parallel waves, and class-appropriate engineering versus creative planning fields.
+- [ ] T020 [P] [US4] Add a valid creative/agentic dependency graph from grounding and retrieval through owner resolution, systems, situations, presentation, verification, Work, acceptance, filing, and maintenance in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/topology.json`
+- [ ] T021 [P] [US4] Add valid disjoint parallel waves and invalid shared-writer/dependent-parallel cases in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/parallel-ownership.json`
+- [ ] T022 [P] [US4] Add engineering-plan evidence showing technical architecture, storage, testing, platform, performance, and constraints without campaign-only requirements in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/engineering-plan.json`
+- [ ] T023 [US4] Extend the checker with dependency resolution, wave ordering, disjoint-write validation, context-used/omitted checks, and engineering-versus-creative plan vocabulary checks in `scripts/hybrid-sdd-check.py`
 
-**Checkpoint**: User Story 4 passes independently and validates SC-006, SC-011, and NF-007–NF-008.
+**Checkpoint**: US4 is independently verifiable from topology fixtures and reports only real dependency or ownership constraints rather than decorative DAG ceremony.
 
 ---
 
-## Phase 7: User Story 5 — Verify the right things and keep both SDD paths compatible (Priority: P2)
+## Phase 7: User Story 5 - Verify the right things and keep both SDD paths compatible (Priority: P2)
 
-**Goal**: Enforce objective hybrid gates, record efficiency evidence, preserve the normal Spec Kit lifecycle, and keep semantic judgment separate from deterministic lint.
+**Goal**: Provide deterministic hard gates, redacted efficiency telemetry, promotion evidence, and lifecycle compatibility without treating creative judgment as lint.
 
-**Independent Test**: Run hard-gate, telemetry, schema-evolution, promotion, and compatibility fixtures plus the live Spec Kit/OMP checks; objective failures are reported, semantic failures stay in blind evaluation, and integrations remain healthy.
-
-### Tests for User Story 5
-
-- [ ] T024 [P] [US5] Add the remaining failed, incomplete, additive-schema, incompatible-schema, retrieval-fallback, and tokenizer-mismatch inputs under `specs/021-hybrid-sdd-adaptation/fixtures/telemetry/`, alongside the seeded complete and measurement-gap records, with no raw prompt, wiki, campaign, or model content.
-- [ ] T025 [P] [US5] Add hard-gate and semantic-separation fixtures at `specs/021-hybrid-sdd-adaptation/fixtures/evidence/verification-boundary.md`, covering canon precedence, entity-before-spoken, DM explicitness, reveal, visibility, accept-before-write, objective schema checks, and blind semantic review.
-- [ ] T026 [US5] Add trace, report, quarantine, denominator, promotion, and compatibility assertions to `specs/021-hybrid-sdd-adaptation/fixtures/check.py`, including 90-day retention, measurement gaps, exclusive source ownership, and audit/replay metadata-only treatment.
+**Independent Test**: Run `.venv/bin/python specs/021-hybrid-sdd-adaptation/fixtures/check.py`; it must emit one `PASS` summary after exercising route, evidence, telemetry, schema, retention, promotion, and compatibility fixtures.
 
 ### Implementation for User Story 5
 
-- [ ] T027 [US5] Complete report and promotion input handling in `scripts/efficiency-trace.py` for the required metric vector, measured/estimated/inferred labels, same-kind paired replay, semantic non-inferiority, risk paths, canaries, and rollback results from `config/efficiency.yaml`.
-- [ ] T028 [US5] Extend `scripts/hybrid-sdd-check.py` to record objective hard-gate results, reject subjective-quality lint claims, validate compatibility evidence, and fail closed on schema/tokenizer mismatches.
+- [ ] T024 [US5] Extend the checker with closed-vocabulary/schema/link/owner checks, deterministic-versus-semantic verification boundaries, completion-evidence validation, and Spec Kit compatibility checks in `scripts/hybrid-sdd-check.py`
+- [ ] T025 [US5] Implement redacted JSONL record validation, exclusive token attribution, retrieval/fallback recording, measurement-gap handling, additive schema support, quarantine, and explicit errors in `scripts/efficiency-trace.py`
+- [ ] T026 [US5] Implement labeled metric-vector reporting, accepted-Work denominators, same-kind comparison filtering, 90-day retention, and low/moderate/high-risk promotion gates in `scripts/efficiency-trace.py`
+- [ ] T027 [P] [US5] Add complete, failed, incomplete, disabled, pre-governance, fallback, attribution, additive-schema, incompatible-schema, and retention telemetry fixtures in `specs/021-hybrid-sdd-adaptation/fixtures/telemetry/`
+- [ ] T028 [P] [US5] Add deterministic hard-gate, semantic-review-boundary, compatibility, and completion-evidence fixtures in `specs/021-hybrid-sdd-adaptation/fixtures/evidence/verification.json`
+- [ ] T029 [US5] Implement the feature-local public fixture runner with isolated temporary trace paths and a single `PASS`/failure exit surface in `specs/021-hybrid-sdd-adaptation/fixtures/check.py`
+- [ ] T030 [US5] Complete quickstart commands and expected outputs for both CLIs, Spec Kit integration status, OMP baseline, fixture validation, and native-tokenizer governance blocking in `specs/021-hybrid-sdd-adaptation/quickstart.md`
 
-**Checkpoint**: User Story 5 passes independently and validates SC-007–SC-010 and SC-015–SC-025 without modifying generated Spec Kit integration files.
+**Checkpoint**: US5 is independently runnable and preserves specify, clarify, plan, checklist, tasks, analyze, implement, converge, git, and agent-context integration behavior.
 
 ---
 
 ## Phase 8: Polish & Cross-Cutting Concerns
 
-**Purpose**: Verify the complete route, preserve ownership boundaries, and leave a runnable handoff.
+**Purpose**: Validate the complete feature without modifying campaign content or managed Spec Kit artifacts.
 
-- [ ] T029 [P] Align `specs/021-hybrid-sdd-adaptation/quickstart.md` with the implemented CLI flags, fixture names, expected outputs, and native-tokenizer governance prerequisite.
-- [ ] T030 Run `.venv/bin/python specs/021-hybrid-sdd-adaptation/fixtures/check.py`, `specify integration status --json`, and `./scripts/check-omp-baseline.sh`; record failures in `errors.md` and fix them before completion.
-- [ ] T031 Verify `AGENTS.md`, `docs/agents/hybrid-sdd.md`, `config/efficiency.yaml`, `scripts/hybrid-sdd-check.py`, and `scripts/efficiency-trace.py` do not duplicate constitution, Work, QMD, token-measurement, or existing rubric ownership; keep generated `.agents/skills/speckit-*`, `.omp/commands/speckit.*`, and `.specify/templates/*` clean.
-- [ ] T032 Run focused `git diff --check` and Markdown/literal-newline checks for `AGENTS.md`, `docs/agents/hybrid-sdd.md`, `config/efficiency.yaml`, `scripts/hybrid-sdd-check.py`, `scripts/efficiency-trace.py`, and `specs/021-hybrid-sdd-adaptation/` before handoff.
+- [ ] T031 [P] Run the complete fixture suite and record the observed `PASS` result against `specs/021-hybrid-sdd-adaptation/quickstart.md`
+- [ ] T032 [P] Run `specify integration status --json` and confirm managed Spec Kit files remain clean in `specs/021-hybrid-sdd-adaptation/quickstart.md`
+- [ ] T033 [P] Run `./scripts/check-omp-baseline.sh` and record the result in `specs/021-hybrid-sdd-adaptation/quickstart.md`
+- [ ] T034 Audit all feature artifacts for generated-file edits, raw-content telemetry, duplicate authorities, missing file paths, and unlabelled measurement values in `specs/021-hybrid-sdd-adaptation/`
 
 ---
 
@@ -152,48 +141,94 @@ description: "Task list for Hybrid Spec-Driven Development"
 
 ### Phase Dependencies
 
-- **Setup (Phase 1)**: T001–T003 can run in parallel; they establish ignored local storage and sanitized fixture inputs.
-- **Foundational (Phase 2)**: T004–T009 depend on Setup. T007 and T008 can run in parallel after T004; T009 depends on both CLIs.
-- **User Stories (Phases 3–7)**: All depend on T004–T009. Stories 1–3 are P1 and should complete before the first campaign-facing rollout. Story 4 depends on the route/ownership behavior from Stories 1 and 3. Story 5 depends on all prior contract surfaces and closes the compatibility/efficiency gate.
-- **Polish (Phase 8)**: T029–T032 depend on the desired user stories; T030 and T032 are final validation gates.
+- **Setup (Phase 1)**: No feature-task dependencies; T001–T004 can run in parallel because they own disjoint files.
+- **Foundational (Phase 2)**: T005–T007 depend on the setup policy/fixture boundary and block all user stories.
+- **User Story 1 (Phase 3)**: T008–T010 can run in parallel; T011 follows those fixtures and owns the checker baseline.
+- **User Story 2 (Phase 4)**: T012–T014 can run in parallel; T015 follows US1's checker baseline and is the sole checker writer in this phase.
+- **User Story 3 (Phase 5)**: T016–T018 can run in parallel; T019 follows T015 and extends the same checker serially.
+- **User Story 4 (Phase 6)**: T020–T022 can run in parallel; T023 follows T019 and extends the same checker serially.
+- **User Story 5 (Phase 7)**: T024 follows T023; T025–T026 are serial because they share `scripts/efficiency-trace.py`; T027–T028 can run in parallel with each other after their schemas are defined; T029 follows T024–T028; T030 follows the public surfaces.
+- **Polish (Phase 8)**: T031–T033 can run in parallel after US5; T034 follows all validation and audits the complete feature.
 
 ### User Story Dependencies
 
-- **US1 (P1)**: Starts after Foundational; no story dependency.
-- **US2 (P1)**: Starts after Foundational; consumes US1's class/route identity but remains independently testable.
-- **US3 (P1)**: Starts after Foundational; consumes US1's route identity and protects all campaign-facing routes.
-- **US4 (P2)**: Depends on US1 and US3 for class/owner identity; independently tests topology after those contracts exist.
-- **US5 (P2)**: Depends on US1–US4 for route, agency, canon, and topology evidence; compatibility checks also depend on the unchanged Spec Kit baseline.
-
-### External Prerequisite
-
-The separate tracked governance change that updates the repository-wide tokenizer authority must land before native-tokenizer comparisons are activated. No task in this feature may silently edit `AGENTS.md` token policy or `docs/agents/token-measurement.md` to bypass that prerequisite.
+- **US1 (P1)**: Depends only on Foundational; MVP route classification is independently usable.
+- **US2 (P1)**: Depends on US1's checker CLI and route identity, then adds agency validation.
+- **US3 (P1)**: Depends on US2's evidence model and checker, then adds owner/canon hard gates.
+- **US4 (P2)**: Depends on US3's owner/canon state vocabulary, then adds dependency and single-writer topology.
+- **US5 (P2)**: Depends on US4's completion/topology evidence; adds telemetry and compatibility as separate public seams.
 
 ### Parallel Opportunities
 
-- Setup fixtures T002–T003 can run in parallel with the `.gitignore` change T001.
-- Foundational CLIs T007–T008 can run in parallel after policy T004; they have disjoint files.
-- US2 fixture files T013–T014, US3 fixture files T017–T018, and US5 fixture files T024–T025 can each run in parallel within their story before shared checker assertions.
-- No tasks that edit `fixtures/check.py`, `scripts/hybrid-sdd-check.py`, or `scripts/efficiency-trace.py` may run in parallel with another task editing the same file.
+- Setup policy, ignore rules, fixture directories, and quickstart preservation notes are disjoint and parallelizable.
+- Within US1, classification fixture groups are disjoint and parallelizable.
+- Within US2–US4, evidence fixture files are disjoint and parallelizable; checker extensions are serial due to one canonical writer.
+- Within US5, telemetry fixture generation and verification fixture generation are disjoint; post-US5 repository checks are parallelizable.
+
+---
+
+## Parallel Example: User Story 1
+
+```text
+Task T008: Add system-class classification fixtures in specs/021-hybrid-sdd-adaptation/fixtures/routes/classification-system.json
+Task T009: Add engineering/routine classification fixtures in specs/021-hybrid-sdd-adaptation/fixtures/routes/classification-routine.json
+Task T010: Add boundary and mixed-request fixtures in specs/021-hybrid-sdd-adaptation/fixtures/routes/classification-boundaries.json
+```
+
+## Parallel Example: User Story 2
+
+```text
+Task T012: Add regional-conflict evidence in specs/021-hybrid-sdd-adaptation/fixtures/evidence/agency.json
+Task T013: Add reusable-system evidence in specs/021-hybrid-sdd-adaptation/fixtures/evidence/reusable-system.json
+Task T014: Add negative agency fixtures in specs/021-hybrid-sdd-adaptation/fixtures/evidence/agency-failures.json
+```
+
+## Parallel Example: User Story 3
+
+```text
+Task T016: Add owner-resolution evidence in specs/021-hybrid-sdd-adaptation/fixtures/evidence/ownership.json
+Task T017: Add canon-boundary evidence in specs/021-hybrid-sdd-adaptation/fixtures/evidence/canon-boundary.json
+Task T018: Add maintenance-boundary evidence in specs/021-hybrid-sdd-adaptation/fixtures/evidence/maintenance-boundary.json
+```
+
+## Parallel Example: User Story 4
+
+```text
+Task T020: Add valid topology evidence in specs/021-hybrid-sdd-adaptation/fixtures/evidence/topology.json
+Task T021: Add parallel ownership evidence in specs/021-hybrid-sdd-adaptation/fixtures/evidence/parallel-ownership.json
+Task T022: Add engineering-plan evidence in specs/021-hybrid-sdd-adaptation/fixtures/evidence/engineering-plan.json
+```
+
+## Parallel Example: User Story 5
+
+```text
+Task T027: Add telemetry fixtures in specs/021-hybrid-sdd-adaptation/fixtures/telemetry/
+Task T028: Add verification-boundary fixtures in specs/021-hybrid-sdd-adaptation/fixtures/evidence/verification.json
+```
+
+---
 
 ## Implementation Strategy
 
-### MVP First
+### MVP First (User Story 1 Only)
 
 1. Complete Setup and Foundational phases.
-2. Complete US1 and validate the seven-case route independently.
-3. Complete US3 before exposing campaign-facing use, because routing without the canon boundary is unsafe.
-4. Stop at the US1 + US3 checkpoint for the first reviewable MVP; do not activate native-tokenizer comparisons until the external governance prerequisite lands.
+2. Complete US1 route fixtures and `scripts/hybrid-sdd-check.py` classification behavior.
+3. Run the US1 classification command independently.
+4. Stop at the US1 checkpoint for an independently usable route decision.
 
 ### Incremental Delivery
 
-1. Deliver the route map and classifier fixture (US1).
-2. Add agency/open-outcome protection (US2).
-3. Add canon/provenance/acceptance protection (US3).
-4. Add dependency topology and bounded parallelism checks (US4).
-5. Add verification, telemetry, promotion, and compatibility evidence (US5).
-6. Run the full quickstart and cross-cutting checks.
+1. Add US2 agency/open-outcome checks without changing routine content routing.
+2. Add US3 owner/canon hard gates without writing campaign facts.
+3. Add US4 real dependency topology and single-writer validation.
+4. Add US5 telemetry, promotion, deterministic/semantic boundaries, and compatibility checks.
+5. Run the full fixture and repository checks only after the final story is complete.
 
-### Completion Evidence
+### Safety Boundaries
 
-Every completed task group reports the route, context used/omitted, affected owners, dependency state, deterministic checks, semantic/agency/continuity review where applicable, Work/DM acceptance state, filing state, and measurement status using [contracts/hybrid-sdd.md](./contracts/hybrid-sdd.md) and [contracts/efficiency-telemetry.md](./contracts/efficiency-telemetry.md).
+- Do not edit `.agents/skills/speckit-*`, `.omp/commands/speckit.*`, or `.specify/templates/*`.
+- Do not create a second canon, lifecycle, owner model, retrieval system, or database.
+- Do not write accepted campaign truth from specifications, plans, tasks, or telemetry.
+- Do not store raw prompt, wiki, campaign, model, or provider content in normal traces.
+- Do not activate native-tokenizer comparisons or promotion before the separate governance change; record the explicit measurement gap instead.
