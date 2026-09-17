@@ -1,113 +1,79 @@
-# Implementation Plan: [FEATURE]
+# Implementation Plan: Wiki Bulk Operations
 
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
+**Branch**: `023-wiki-bulk-ops` | **Date**: 2026-09-17 | **Spec**: [spec.md](spec.md)
 
-**Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
-
-**Note**: This template is filled in by the `/speckit.plan` command; its definition describes the execution workflow.
+**Input**: Feature specification from `/specs/023-wiki-bulk-ops/spec.md`
 
 ## Summary
 
-[Extract from feature spec: primary requirement + technical approach from research]
+Provide a single Python CLI script (`scripts/wiki-bulk-ops`) that agents invoke for token-efficient, idempotent bulk operations on the Obsidian wiki vault: entity rename (with wikilink rewrite), find-and-replace (with markdown safety zones), and frontmatter mutation. Every operation supports `--dry-run` and produces machine-readable JSON output. The design generalizes the existing `remorph-*` script patterns into one composable tool.
 
 ## Technical Context
 
-<!--
-  ACTION REQUIRED: Replace the content in this section with the technical details
-  for the project. The structure here is presented in advisory capacity to guide
-  the iteration process.
--->
+**Language/Version**: Python 3.14 (matches project `.venv`; stdlib only — no new dependencies)
 
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]
+**Primary Dependencies**: None beyond stdlib (`argparse`, `re`, `json`, `pathlib`, `dataclasses`, `sys`, `shutil`, `tempfile`)
 
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]
+**Storage**: Filesystem — markdown files under `OBSIDIAN_VAULT_PATH` (default `wiki/`)
 
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]
+**Testing**: Assert-based `__main__` self-check in the script + one `tests/test_wiki_bulk_ops.py` using stdlib `unittest` (matches project pattern)
 
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]
+**Target Platform**: macOS / Linux (Darwin 25.x primary)
 
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
+**Project Type**: CLI script (agent-shaped: args in, JSON/text out, exit codes)
 
-**Project Type**: [e.g., library/cli/web-service/mobile-app/compiler/desktop-app or NEEDS CLARIFICATION]
+**Performance Goals**: Full-vault rename across 1565 files in <5s wall clock
 
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]
+**Constraints**: Zero external dependencies; must preserve Obsidian markdown syntax; must be idempotent; must respect `WIKI_STAGED_WRITES`
 
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]
-
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Scale/Scope**: ~1565 markdown files, ~44k total lines, single vault
 
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+| Principle | Status | Notes |
+|---|---|---|
+| I. Domain Language | PASS | Uses existing wiki vocabulary (wikilink, frontmatter, entity, vault) |
+| III. Spec Before System Change | PASS | `spec.md` written and accepted |
+| IV. Behavioral Tests | PASS | Will add behavioral test at public seam (CLI in/out) |
+| V. Single Source of Truth | PASS | One script, one authority; generalizes remorph pattern |
+| VI. Agent-Shaped | PASS | Args in, JSON/text out, stderr errors, exit codes |
+| VII. Creative Judgment | N/A | Deterministic structural tool, no creative output |
+| VIII. Safe Automation | PASS | Dry-run default; idempotent; preserves data |
+| IX. Measured Efficiency | PASS | Replaces ~100+ tool calls with one invocation |
+| XVII. Simplest Tool | PASS | Single Python script, stdlib only, no framework |
+| XX. Additive Wiki | PASS | Deterministic maintenance; no lore invention |
+
+No violations. No complexity justification needed.
 
 ## Project Structure
 
 ### Documentation (this feature)
 
 ```text
-specs/[###-feature]/
-├── plan.md              # This file (/speckit.plan command output)
-├── research.md          # Phase 0 output (/speckit.plan command)
-├── data-model.md        # Phase 1 output (/speckit.plan command)
-├── quickstart.md        # Phase 1 output (/speckit.plan command)
-├── contracts/           # Phase 1 output (/speckit.plan command)
-└── tasks.md             # Phase 2 output (/speckit.tasks command - NOT created by /speckit.plan)
+specs/023-wiki-bulk-ops/
+├── plan.md              # This file
+├── research.md          # Phase 0 output
+├── data-model.md        # Phase 1 output
+├── quickstart.md        # Phase 1 output
+├── contracts/           # Phase 1 output
+│   └── cli-contract.md
+└── tasks.md             # Phase 2 output (speckit-tasks)
 ```
 
 ### Source Code (repository root)
-<!--
-  ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
-  for this feature. Delete unused options and expand the chosen structure with
-  real paths (e.g., apps/admin, packages/something). The delivered plan must
-  not include Option labels.
--->
 
 ```text
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
-src/
-├── models/
-├── services/
-├── cli/
-└── lib/
+scripts/
+└── wiki-bulk-ops        # Single executable Python script (chmod +x, shebang)
 
 tests/
-├── contract/
-├── integration/
-└── unit/
-
-# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
-backend/
-├── src/
-│   ├── models/
-│   ├── services/
-│   └── api/
-└── tests/
-
-frontend/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── services/
-└── tests/
-
-# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
-api/
-└── [same as backend above]
-
-ios/ or android/
-└── [platform-specific structure: feature modules, UI flows, platform tests]
+└── test_wiki_bulk_ops.py  # Behavioral tests at CLI seam
 ```
 
-**Structure Decision**: [Document the selected structure and reference the real
-directories captured above]
+**Structure Decision**: Single script under `scripts/` — matches the existing `remorph-*` pattern exactly. No `src/` tree, no package, no library split. The remorph scripts prove this pattern works for vault-wide file transformations at this scale.
 
 ## Complexity Tracking
 
-> **Fill ONLY if Constitution Check has violations that must be justified**
-
-| Violation | Why Needed | Simpler Alternative Rejected Because |
-|-----------|------------|-------------------------------------|
-| [e.g., 4th project] | [current need] | [why 3 projects insufficient] |
-| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient] |
+No violations to justify.
