@@ -18,7 +18,7 @@ summary: ""
 
 # {{title}}
 
-> [!danger] Run this
+> [!danger] Run this — the earned convergence
 > **Party goal:** What the characters can accomplish here.
 >
 > **Opposition goal:** What the opposition is trying to make true.
@@ -26,6 +26,8 @@ summary: ""
 > **Stakes:** What changes if the party succeeds, fails, bargains, or walks away.
 >
 > **Pressure:** What makes acting *now* necessary.
+>
+> **Threads harvested:** Which threads from the middle converge here? The party arrives equipped by Developments and tested by Cliffhangers — the Climax asks whether they can use what the middle taught them.
 >
 > **End when:** The irreversible question this beat settles.
 >
@@ -42,7 +44,7 @@ flexGrow=2
 
 - **What is true now.** The state of the scene when the characters arrive.
 - **If nobody interferes.** What the opposition accomplishes and how quickly.
-- **What changed to make this the climax.** The payoff, escalation, or point of no return created by earlier beats.
+- **What changed to make this the climax.** The payoff, escalation, or point of no return created by earlier beats. Name the Developments that built capability and the Cliffhangers that tested it.
 - **What the characters know.** Only established information they can reasonably act on now.
 - **What remains uncertain.** The meaningful questions play will answer.
 ```

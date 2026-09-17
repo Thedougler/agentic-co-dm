@@ -19,15 +19,16 @@ Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions
 
 ## Purpose
 
-A Resolution is the **aftermath** and the arc's echo. Show the changed world:
-threads planted in the Hook and middle at their final state, costs paid across
-the session visible, and PC goals with a clear new status. Match scope to the
-Climax.
+A Resolution is the **tag line** — a tiny afterscene that shows the arc's
+echo. Show the changed world: threads planted in the Hook and middle at their
+final state, costs paid across the session visible, and PC goals with a clear
+new status. Match scope to the Climax. Keep it brief and punchy — the
+Resolution earns its weight from what it echoes, not from new complexity.
 
 A Resolution can reveal something that changes the meaning of everything
-before it, but that reframing must follow from established fiction, not GM
-convenience. Stop when players can name what is different and what they want
-next.
+before it — the villain escapes, a greater threat emerges — but that
+reframing must follow from established fiction, not GM convenience. Stop when
+players can name what is different and what they want next.
 
 ## Completion test
 

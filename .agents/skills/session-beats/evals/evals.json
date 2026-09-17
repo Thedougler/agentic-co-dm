@@ -100,6 +100,36 @@
         "Does not rewind, secretly convert failure to success, or replay the same scene by default.",
         "Recomputes candidates and allows a different route, consequence, or Climax based on the changed state."
       ]
+    },
+    {
+      "id": 11,
+      "prompt": "Write a Development beat where the party learns that the villain's army is large. They already knew the villain had an army. The beat should just add detail about how large it is, then move on to the next Cliffhanger.",
+      "expected_output": "The response ensures the Development sets a new direction — the bump — not just adds detail. The party should end the beat able to decide or reach something they could not before.",
+      "expectations": [
+        "Reframes the information so it changes the decision space, not just the detail level of known facts.",
+        "States what new direction, option, urgency, or constraint the revelation creates.",
+        "Confirms the completion test: players can name what they now know or can decide that they could not before."
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "Write a two-hour Resolution with three new combat encounters, four new NPC introductions, and a world-spanning prophecy reveal, following a personal-stakes Climax where the party saved one friend from a burning building.",
+      "expected_output": "The response keeps the Resolution proportional to the Climax — a tiny afterscene that matches the personal scale — and resists inflating it into a new adventure.",
+      "expectations": [
+        "Matches the Resolution's scope to the Climax's personal scale rather than escalating to world-spanning content.",
+        "Keeps the Resolution brief — an afterscene, not a new arc.",
+        "Shows the changed world, costs, and what players can now pursue without introducing combat encounters or major new threats."
+      ]
+    },
+    {
+      "id": 13,
+      "prompt": "Plan a Climax using a dragon, a volcanic fortress, and a cursed crown. None of these appeared in any Hook, Development, or Cliffhanger during the session.",
+      "expected_output": "The response requires the Climax to harvest threads the middle planted — it refuses or restructures to use elements the middle established rather than introducing unearned spectacle.",
+      "expectations": [
+        "Identifies that the dragon, fortress, and crown were not planted or tested in the middle beats.",
+        "Requires the Climax to harvest threads Developments revealed and Cliffhangers tested.",
+        "Restructures to use elements the party encountered, or adds middle beats that plant and test these elements first."
+      ]
     }
   ]
 }

@@ -18,10 +18,12 @@ Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<ca
 
 ## Purpose
 
-A Climax is the highest-stakes confrontation the middle made inevitable. It
-**harvests** live threads: Developments revealed them, Cliffhangers tested
-them, and player choices narrowed the remaining paths until one confrontation
-carries the session's central cost.
+A Climax is the highest-stakes confrontation the middle made inevitable — the
+**earned convergence**. It **harvests** live threads: Developments built
+capability, Cliffhangers tested it under cost, and player choices narrowed the
+remaining paths until one confrontation carries the session's central cost. The
+party arrives equipped by what the middle taught them; the Climax asks whether
+they can use it.
 
 A final battle is one shape among many. The Climax may be a revelation,
 sacrifice, desperate gambit, reckoning, siege, negotiation, catastrophe, trial,

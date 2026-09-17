@@ -18,7 +18,7 @@ summary: ""
 
 # {{title}}
 
-> [!danger] At a Glance
+> [!danger] At a Glance — a contest in doubt
 > **Trigger.** What happens that makes action necessary **now**.
 >
 > **PC objective.** What concrete result can end this contest besides merely surviving.
@@ -27,7 +27,7 @@ summary: ""
 >
 > **Stakes.** What the party can lose, fail to protect, or allow to change.
 >
-> **Ends when.** The observable condition that means this beat is over.
+> **Ends when.** The observable condition that means this beat is over. Keep the Cliffhanger short — resolve and hand off.
 
 > [!narration] Open on Action
 > In 2–4 complete sentences, establish the immediate danger, essential spatial information, and one striking sensory detail. End on the thing demanding a decision. Do not prescribe the party's response or reveal hidden information.
@@ -69,6 +69,8 @@ flexGrow=1
 > **Escalate.** Increase danger, narrow an opportunity, move the objective, introduce a complication, or change the terrain.
 >
 > **Breaking point.** Make the central threat immediate enough that someone must act or accept the consequence.
+>
+> **Opposition ladder** (optional, scale across the session arc): Grunts (3:1 weaker, first test) → Minions (2:1 slightly weaker) → Henchmen (1:1 equal or stronger) → Villain (substantially stronger + support, Climax only). Save the strongest for last.
 ```
 ````
 

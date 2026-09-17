@@ -1,8 +1,9 @@
 # Agency and recomputation
 
-A Beat Chart is a timing instrument and a palette of pressures, not a sequence
-of required scenes. Prepare what can happen and why actors might act; never
-prepare the players' answer.
+A Beat Chart is a **pacing instrument** and a palette of pressures, not a
+sequence of required scenes. Alternation controls audience energy: two action
+beats in a row numb; two introspection beats in a row stall. Prepare what can
+happen and why actors might act; never prepare the players' answer.
 
 Chart rules: one Hook to start; Developments and Cliffhangers only in alternating order; one Climax followed by one Resolution; Action Hook → next Development; cerebral Hook → next Cliffhanger; Action Climax preceded by Development; cerebral Climax preceded by Cliffhanger; about thirty minutes per beat; Hook + Climax + Resolution about ninety minutes; every prepared beat advances a live thread; at least two viable player responses; recompute rather than force the next slot. Situations not required outcomes; recompute; chart may shrink/branch/pause/end early.
 

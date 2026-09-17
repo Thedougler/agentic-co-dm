@@ -20,12 +20,13 @@ Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/session
 ## Purpose
 
 A Cliffhanger changes the **physical situation** — position, resources, safety,
-time. It is a contest whose outcome stays in doubt up to the end. Cliffhangers
-test what Developments revealed: a Chase tests the escape route a clue
-identified, a Battle tests the alliance a negotiation built. Front-load the
-threat: put the danger visible from the start, keep the Cliffhanger short, and
-let it resolve. Cliffhanger after Cliffhanger dulls danger faster than it
-builds excitement.
+time. It is a **contest whose outcome stays in doubt** up to the end.
+Cliffhangers test what Developments revealed: a Chase tests the escape route
+a clue identified, a Battle tests the alliance a negotiation built. Keep them
+short, front-load the threat, and let them resolve. Save the strongest for the
+Climax — early Cliffhangers send weaker foes that teach strengths and
+weaknesses; later ones raise stakes as both sides invest more. Cliffhanger
+after Cliffhanger dulls danger faster than it builds excitement.
 
 ## Completion test
 

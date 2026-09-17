@@ -33,8 +33,8 @@ summary: ""
 
 ## Beat Map
 
-> [!tip] Run the situation, not the order
-> Chart binds one Hook first, Developments and Cliffhangers only in alternating order, then one Climax followed by one Resolution. Trigger a beat when its situation becomes relevant. After play, skip, reorder, or replace middle beats when player choices change the fiction. Preserve consequences rather than forcing the next planned slot.
+> [!tip] The chart is a pacing instrument, not a script
+> Alternation controls audience energy: two action beats in a row numb; two introspection beats in a row stall. Chart binds one Hook first, Developments and Cliffhangers only in alternating order, then one Climax followed by one Resolution. Trigger a beat when its situation becomes relevant. After play, skip, reorder, or replace middle beats when player choices change the fiction. Preserve consequences rather than forcing the next planned slot.
 
 |  # | Beat                               | Form                      | Trigger                                                                             | What changes                                                      | Hand-off / options                                      | Budget |
 | -: | ---------------------------------- | ------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------- | -----: |

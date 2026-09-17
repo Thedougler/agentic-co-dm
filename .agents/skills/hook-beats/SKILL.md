@@ -18,11 +18,12 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
 
 ## Purpose
 
-A Hook is the session's **strong start**: the first situation demanding a
-response, landing in one spoken delivery. Present an actionable problem, offer,
-threat, discovery, or opening. Prefer an opening that connects to the previous
-session's ending or an active PC goal. Only this first beat may recap the
-previous session.
+A Hook is the session's **strong start** — **reel in the line**. Its sole job
+is to start the action rolling and get players committed fast. Present an
+actionable problem, offer, threat, discovery, or opening that demands a
+response, landing in one spoken delivery. Skip fumbling for direction; hook
+them and reel in the line. Prefer an opening that connects to the previous
+session's ending or an active PC goal. Only this first beat may recap.
 
 One Hook per session.
 

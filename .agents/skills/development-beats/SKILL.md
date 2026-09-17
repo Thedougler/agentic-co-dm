@@ -19,11 +19,11 @@ Copy `wiki/templates/development.md`. File after accept to `wiki/journal/session
 
 ## Purpose
 
-A Development changes the **decision space** — what players know, can reach,
-or choose between — and **sets the direction** of action until the next
-Development changes it again. Developments reveal new facets of active
-threads: a clue advances a mystery, an alliance shifts a faction clock, a
-warning makes an approaching Cliffhanger legible.
+A Development is the **bump** — it changes the **decision space** (what players
+know, can reach, or choose between) and **sets the direction** of action until
+the next Development changes it again. It reorients the party's trajectory:
+a clue advances a mystery, an alliance shifts a faction clock, a warning makes
+an approaching Cliffhanger legible.
 
 Developments can chain — meeting the mentor leads to learning the weakness
 leads to discovering the ally — each building capability toward the Climax.

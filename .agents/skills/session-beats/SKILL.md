@@ -40,6 +40,11 @@ and every response costs something.
 
 ## Composition
 
+A Beat Chart is a **pacing instrument**: alternation controls audience energy.
+Two action beats in a row numb; two introspection beats in a row stall. Each
+Development makes the next Cliffhanger's stakes legible; each Cliffhanger makes
+the next Development's information urgent. The rhythm is the point.
+
 The five beat types compose a session when they advance shared **threads** — a
 faction clock, a PC goal, a mystery, a relationship under pressure, a depleting
 resource. Plant threads in early beats. Let Developments reveal new facets. Let
@@ -47,24 +52,29 @@ Cliffhangers test them under cost. Let the Climax **harvest** what the middle
 planted. A beat advancing no live thread is filler; a beat advancing an
 abandoned thread is a railroad.
 
-**Developments set direction; Cliffhangers test it.** Each Development
-reorients the party's trajectory — setting the direction of action until the
-next Development changes it again. Cliffhangers are contests whose outcome
-stays in doubt; they test the direction and produce the changed state the next
-Development must interpret. Developments can chain (meet the mentor → learn
-the weakness → discover the ally); break chains with Cliffhangers so knowledge
-is tested under cost before the next piece arrives.
+**Hook — reel in the line.** Its sole job is to start the action rolling and
+get players committed. Skip fumbling for direction. An action Hook opens a
+physical key; a cerebral Hook opens an informational key. The Climax resolves
+the question the Hook opened, transformed by the middle's costs and
+revelations.
 
-**The Hook sets the session's key.** An action Hook opens a physical key; a
-cerebral Hook opens an informational key. The Climax resolves the question the
-Hook opened, transformed by the middle's costs and revelations.
+**Developments set direction; Cliffhangers test it.** Each Development is the
+**bump** — it reorients the party's trajectory, setting the direction of action
+until the next Development changes it. Cliffhangers are contests whose outcome
+stays in doubt; they test direction under cost and produce the changed state
+the next Development must interpret. Developments can chain (meet the mentor →
+learn the weakness → discover the ally); break chains with Cliffhangers so
+knowledge is tested before the next piece arrives.
 
 **How the Scene Resolves is the next beat's Trigger.** Prepare transitions, not
 just beats. A transition that teleports past a live option is a railroad.
 
 **Stakes escalate across the arc.** Early pairs explore at lower cost; later
-pairs narrow the field and raise the price. The Climax arrives where threads
-converge and the remaining choice carries the session's highest cost.
+pairs narrow the field and raise the price. Scale opposition across the arc:
+early weaker foes teach strengths and weaknesses; later confrontations raise
+stakes as both sides invest more. Save the strongest pressure for the Climax.
+The Climax arrives where threads converge and the remaining choice carries the
+session's highest cost.
 
 ## Run the chart
 
@@ -103,17 +113,14 @@ converge and the remaining choice carries the session's highest cost.
    [references/agency.md](references/agency.md). Drop obsolete candidates,
    promote emergent situations, re-label or re-order as the new state demands.
    Treat a failed beat as a real world change, not a cue to replay it.
-7. **Build fair obstacles.** Enough clues in current or earlier fiction for
-   traps and puzzles to be solvable. Multiple approaches where possible.
-   Contests: transparent skill/choices/rolls, never GM fiat. Betrayal and
-   Sabotage: give players a chance to notice before irreversible. Keep Second
-   Chance, Back from Dead, and Heroes Escape rare, costly, and unable to erase
-   meaningful consequences.
+7. **Build fair obstacles.** Traps and puzzles: enough prior clues for a
+   solution. Contests: transparent rolls, never GM fiat. Betrayal and Sabotage:
+   detectable before irreversible. Second Chance, Back from Dead, and Heroes
+   Escape: rare, costly, never erasing meaningful consequences.
 8. **Escalate pressure without stacking fights.** Advance visible clocks when
-   players delay; do not turn an undisclosed trigger into hidden punishment.
-   Scale opposition across the arc: early weaker/avoidable, later tougher as
-   both sides invest more. Keep Cliffhangers short, save strongest pressure for
-   Climax, interleave social/investigative/travel/recovery beats.
+   players delay; never turn an undisclosed trigger into hidden punishment.
+   Keep Cliffhangers short and interleave social, investigative, travel, and
+   recovery beats between them.
 9. **Earn the Climax.** Threads Developments revealed and Cliffhangers tested
    converge into the highest-stakes confrontation players' choices made
    inevitable. Before an action Climax: end preceding beat with Development;
@@ -192,13 +199,7 @@ procedure benefits. If an optional recording exists, route through
 
 ## Table-craft gates
 
-Practice **silence discipline**: state the actionable situation, ask what the
-players do, and wait. Do not panic-fill a quiet table; players learn that play
-advances when they act. If they choose not to act, show the visible consequence
-of inaction and return the decision.
-
-Before play, audit: spotlight players, pause when they should drive, build rails
-from stated PC backstory and public stakes, honor the agreed tone, frame one
-striking image with visible energy, and ensure every choice or silence has an
-echo in the fiction. Cinematic framing never moves secrets or DCs into
-`[!narration]`.
+Before filing, audit: every PC has a limelight moment; rails grow from stated
+backstory and public stakes; agreed tone is honored; one striking image carries
+visible energy; every choice or silence echoes in the fiction. `[!narration]`
+carries sensory detail only — never secrets or DCs.

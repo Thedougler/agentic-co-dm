@@ -18,11 +18,11 @@ summary: ""
 
 # {{title}}
 
-> [!summary] At the table
+> [!summary] At the table — reel in the line
 > **Something happens:** What changes right now.
 > **Why it matters:** The immediate threat, opportunity, or personal stake.
 > **Decision:** The meaningful choice now in front of the party.
-> **Hook lands when:** The party has made a meaningful choice and has a concrete direction, objective, or problem to pursue.
+> **Hook lands when:** The party is committed and moving — no fumbling for direction.
 
 > [!narration] Open on
 > Write 2–4 sentences the DM can speak. Start at the first changed thing. Give concrete sensory details, visible actors, and an obvious point of interaction. No secrets, DCs, unearned names, or hidden premise.
