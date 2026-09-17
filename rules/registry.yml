@@ -9,6 +9,7 @@ rules:
     vale_style: CoDM/AGENCY001
     message: Narration authors a player-character decision
     repair: Rewrite to describe the situation without prescribing the PC's response
+    auto_repair: false
     tags: [player-agency, narration]
     conflicts: []
     depends: []
@@ -22,6 +23,7 @@ rules:
     vale_style: CoDM/AGENCY002
     message: Narration prescribes a player-character action
     repair: Present the pressure and available affordances without requiring one action
+    auto_repair: false
     tags: [player-agency, narration]
     conflicts: []
     depends: []
@@ -35,6 +37,7 @@ rules:
     vale_style: CoDM/AGENCY003
     message: Narration assigns an involuntary player-character response
     repair: Recast the response as an observable external pressure
+    auto_repair: false
     tags: [player-agency]
     conflicts: []
     depends: []
@@ -48,6 +51,7 @@ rules:
     vale_style: CoDM/KNOW001
     message: DM-facing knowledge claim lacks an explicit evidence handle
     repair: Add a source or state the claim as uncertain
+    auto_repair: false
     tags: [knowledge-boundary, evidence]
     conflicts: []
     depends: []
@@ -61,6 +65,7 @@ rules:
     vale_style: CoDM/KNOW002
     message: NPC uses a meta-knowledge phrase outside the fiction
     repair: Replace the meta phrase with what the NPC could know in-world
+    auto_repair: false
     tags: [knowledge-boundary, npc]
     conflicts: []
     depends: []
@@ -74,6 +79,7 @@ rules:
     vale_style: CoDM/TEMP001
     message: Text reveals knowledge of a future event
     repair: Reframe the future event as a possibility, omen, or unresolved pressure
+    auto_repair: false
     tags: [temporal-truth]
     conflicts: []
     depends: []
@@ -87,6 +93,7 @@ rules:
     vale_style: CoDM/SCENE001
     message: Section lacks an actionable situation or pressure marker
     repair: Consider naming the pressure, choice, risk, or deadline
+    auto_repair: false
     tags: [scene-craft]
     conflicts: []
     depends: []
@@ -100,6 +107,7 @@ rules:
     vale_style: CoDM/SCENE002
     message: Vague placeholder weakens the playable situation
     repair: Replace the placeholder with a concrete named pressure or consequence
+    auto_repair: false
     tags: [scene-craft, specificity]
     conflicts: []
     depends: []
@@ -112,6 +120,7 @@ rules:
     lifecycle: ACTIVE
     message: A rejected or dead canonical entity is referenced as present
     repair: Update the reference to match the canonical lifecycle or route it through a flashback
+    auto_repair: false
     tags: [canon, world-state]
     conflicts: []
     depends: []
@@ -124,6 +133,7 @@ rules:
     lifecycle: ACTIVE
     message: Session preparation references an entity whose canonical state is stale
     repair: Re-check the canonical owner page and update the reference before DM review
+    auto_repair: false
     tags: [canon, world-state]
     conflicts: []
     depends: []
@@ -136,6 +146,7 @@ rules:
     lifecycle: ACTIVE
     message: Wiki page is missing required frontmatter
     repair: Add the missing owner-schema fields before linting the page again
+    auto_repair: false
     tags: [schema, wiki]
     conflicts: []
     depends: []
@@ -148,6 +159,7 @@ rules:
     lifecycle: ACTIVE
     message: Wiki page contains an invalid type or lifecycle value
     repair: Use a type and lifecycle from the owner schema
+    auto_repair: false
     tags: [schema, wiki]
     conflicts: []
     depends: []
@@ -160,6 +172,7 @@ rules:
     lifecycle: ACTIVE
     message: Corpus vocabulary pattern is unusually repetitive
     repair: Consider varied language during future design; do not rewrite accepted canon retroactively
+    auto_repair: false
     tags: [diversity, diagnostic]
     conflicts: []
     depends: []
@@ -172,6 +185,7 @@ rules:
     lifecycle: ACTIVE
     message: Content contains a wikilink that does not resolve
     repair: Resolve the target against the wiki or remove the unsupported reference
+    auto_repair: true
     tags: [retrieval, links]
     conflicts: []
     depends: []

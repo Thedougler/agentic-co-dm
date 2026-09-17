@@ -29,3 +29,15 @@ def render_human(result: LintResult, *, command: str = "task") -> str:
     if result.warnings:
         lines.append("Warnings: " + "; ".join(result.warnings))
     return "\n".join(lines)
+
+
+def render_queue(data: dict) -> str:
+    queue = data.get("queue", [])
+    excluded = data.get("excluded_judgment_only", 0)
+    lines = [f"wiki-lint queue: {len(queue)} pages with safe automatic findings "
+             f"({excluded} judgment-only excluded)", ""]
+    for index, entry in enumerate(queue, 1):
+        count = int(entry["safe_findings"])
+        suffix = "finding" if count == 1 else "findings"
+        lines.append(f"  {index}. {entry['file']:<36} {int(entry['size']):,} bytes   {count} safe {suffix}")
+    return "\n".join(lines)

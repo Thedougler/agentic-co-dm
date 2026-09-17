@@ -26,6 +26,7 @@ class RuleDefinition:
     vale_style: str | None = None
     repair: str | None = None
     tags: list[str] = field(default_factory=list)
+    auto_repair: bool = False
     conflicts: list[str] = field(default_factory=list)
     depends: list[str] = field(default_factory=list)
 
@@ -44,14 +45,18 @@ class RuleDefinition:
             if not isinstance(raw, list):
                 raise ValueError(f"rule {value.get('id', '<unknown>')}: {key} must be a list")
             lists[key] = [str(item) for item in raw]
+        auto_repair = value.get("auto_repair", False)
+        if not isinstance(auto_repair, bool):
+            raise ValueError(f"rule {value.get('id', '<unknown>')}: auto_repair must be boolean")
         return cls(
             id=str(value["id"]), title=str(value["title"]), category=str(value["category"]),
             scope=str(value["scope"]), severity=str(value["severity"]),
             evaluator=str(value["evaluator"]), lifecycle=str(value["lifecycle"]),
             message=str(value["message"]), vale_style=value.get("vale_style"),
-            repair=value.get("repair"), tags=lists["tags"],
+            repair=value.get("repair"), tags=lists["tags"], auto_repair=auto_repair,
             conflicts=lists["conflicts"], depends=lists["depends"],
         )
+
 
 
 class Registry:

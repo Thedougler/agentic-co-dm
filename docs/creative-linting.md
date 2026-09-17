@@ -13,8 +13,8 @@ The implementation has three cooperating layers:
 The CLI entry point is `scripts/wiki-lint`:
 
 - No-subcommand invocations retain the existing structural behavior and delegate to `tools/lint_wiki.py`.
-- `task`, `file`, `corpus`, `changed`, `rule`, and `candidate` load creative lint lazily and return the unified finding contract.
-- `scripts/wiki-maintain --report` is unchanged. `--creative-lint` adds an optional A7 corpus report using the same engine as live linting.
+- `queue` emits a stateless smallest-first list of pages with safe findings; `template` derives and compares the mapped runtime template.
+- Template comparison is detection-only. It never writes templates or pages; an agent manually applies and reviews any structural correction.
 
 Configuration has one owner per tool:
 
@@ -63,10 +63,16 @@ Aggregate status is `repair_required` when any unwaived `BLOCK` or `REPAIR` find
 ./scripts/wiki-lint corpus wiki --json
 ./scripts/wiki-lint changed --json
 ./scripts/wiki-lint rule AGENCY001
+./scripts/wiki-lint queue --json
+./scripts/wiki-lint template wiki/journal/sessions/campaign/01/Session-01.md --json
 ./scripts/wiki-lint candidate "Stop having NPCs know things they could not know" --json
 ```
 
 Task runs resolve one named bundle and accept optional paths. File runs evaluate active rules at inherent severity. Corpus runs use the corpus bundle; `changed` selects Markdown files from `git diff --name-only HEAD`. `--severity block,repair` filters rendered findings without changing evaluation or status computation.
+
+`queue` is stateless: only findings with a non-null repair target and `auto_repair: true` are listed, sorted by byte size. Judgment-only dirty pages remain in `total_dirty` and are counted in `excluded_judgment_only`; a non-empty queue exits successfully. Queue output is a worklist, not permission to rewrite canon.
+
+`template` resolves the template from page `type`/`kind`, derives its frontmatter, headings, callouts, tables, and formatting markers, and reports `TMPL001`–`TMPL005`. It is detection-only. Agents manually fix a nonconformant page after reviewing the finding; no command mutates templates or page prose.
 
 The existing structural mode remains compatible:
 
@@ -96,9 +102,7 @@ The initial static rules are AGENCY001-003, KNOW001-002, TEMP001, and SCENE001-0
 
 A correction should first search existing titles, messages, and tags with `wiki-lint candidate`. A match routes the correction to the existing rule and its fixtures. A no-match candidate is written under `rules/candidates/` with lifecycle `SHADOW`; it must accumulate fixtures and telemetry before promotion. Promotion requires greater than 90% human agreement and less than 10% false positives, followed by a deliberate `SHADOW` → `ACTIVE` lifecycle change. Creative diagnostics can reach `WARN`, never `BLOCK`.
 
-## Repair loop
-
-`LintEngine.repair_loop()` passes exact findings, including rule ID and location, to a repair callback, then re-lints the changed surface. It stops after three iterations by default (configurable). If blocking findings do not converge, the remaining findings stay visible for DM review; changed text alone never counts as a successful repair.
+`LintEngine.repair_loop()` passes exact findings, including rule ID and location, to a repair callback, then re-lints the changed surface. It stops after three iterations by default (configurable). If blocking findings do not converge, the remaining findings stay visible for DM review; changed text alone never counts as a successful repair. Template findings are reported for the same loop contract but are manually applied by the agent; this tool does not perform template conformance repairs.
 
 ## Lifecycle and shadow mode
 
@@ -120,9 +124,17 @@ Vale and symbolic fixture families define the acceptable region:
 
 - `tests/fixtures/creative_lint/AGENCY001/` through `SCENE002/` contain static Vale fail/pass/ambiguous cases.
 - `CANON001/`, `CANON002/`, `WIKI001/`, `WIKI002/`, `RETRIEVAL001/`, and `DIVERSITY001/` contain symbolic fail/pass/ambiguous cases and counterexamples.
+- `template/` contains a mapped page, a baseline template, and a changed-template mutation for profile comparison. Template drift is manually corrected; fixtures never authorize unattended edits.
 - `integration/session_prep_violations.md` combines an authored PC decision with a stale/dead canonical reference for the agent-loop scenario.
 - `registry/` contains valid, duplicate, malformed, missing-style, unresolved-reference, invalid-enum, and severity-ceiling metadata fixtures.
 - `symbolic/` keeps focused context fixtures for dead/stale references, frontmatter/schema errors, broken links, and indeterminate state.
+
+Queue workflow:
+
+1. Run `scripts/wiki-lint queue --json`.
+2. Take the smallest listed page.
+3. Manually apply and review the exact safe finding.
+4. Re-run the queue; judgment-only pages may remain.
 
 Run the normal structural maintenance report as before. Add creative lint only when desired:
 

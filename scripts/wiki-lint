@@ -18,7 +18,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 LINT = ROOT / "tools" / "lint_wiki.py"
-CREATIVE_COMMANDS = {"task", "file", "corpus", "changed", "rule", "candidate"}
+CREATIVE_COMMANDS = {"task", "file", "corpus", "changed", "rule", "candidate", "queue", "template"}
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
@@ -150,8 +150,10 @@ def consolidate_main(argv: list[str]) -> int:
 
 
 def creative_main(argv: list[str]) -> int:
-    from tools.creative_lint.cli_output import render_human
-    command = argv[0]
+    from tools.creative_lint.cli_output import render_human, render_queue
+    from tools.creative_lint.template_profile import template_conformance
+    from tools.creative_lint.engine import LintResult
+    command = argv[0] if argv else ""
     try:
         engine, registry, bundles = _load_engine()
     except (OSError, ValueError, KeyError) as exc:
@@ -185,6 +187,49 @@ def creative_main(argv: list[str]) -> int:
         return 0
     if command == "candidate":
         return candidate_main(argv[1:], registry)
+    if command == "queue":
+        parser = argparse.ArgumentParser(prog="wiki-lint queue")
+        parser.add_argument("--json", action="store_true")
+        args = parser.parse_args(argv[1:])
+        try:
+            data = engine.dirty_queue()
+        except (ValueError, KeyError) as exc:
+            print(f"wiki-lint: {exc}", file=sys.stderr)
+            return 2
+        print(json.dumps(data, indent=2, sort_keys=True) if args.json else render_queue(data))
+        return 0
+    if command == "template":
+        parser = argparse.ArgumentParser(prog="wiki-lint template")
+        parser.add_argument("path")
+        parser.add_argument("--json", action="store_true")
+        args = parser.parse_args(argv[1:])
+        page = Path(args.path)
+        if not page.is_absolute():
+            page = (ROOT / page).resolve()
+        if not page.is_file():
+            print(f"wiki-lint: page not found: {page}", file=sys.stderr)
+            return 2
+        try:
+            selected, findings = template_conformance(page, root=ROOT)
+        except (OSError, ValueError) as exc:
+            print(f"wiki-lint: {exc}", file=sys.stderr)
+            return 2
+        if selected is None:
+            print(f"wiki-lint: no template resolved for {page}", file=sys.stderr)
+            return 2
+        def display_path(path: Path) -> str:
+            try:
+                return str(path.relative_to(ROOT))
+            except ValueError:
+                return str(path)
+        payload = {"template": display_path(selected), "page": display_path(page),
+                   "findings": [finding.to_dict() for finding in findings]}
+        if args.json:
+            print(json.dumps(payload, indent=2, sort_keys=True))
+        else:
+            print(render_human(LintResult("repair_required" if findings else "clean", None, 1, 5, findings,
+                                          {"REPAIR": len(findings)}, []), command="template"))
+        return 1 if findings else 0
     parser = argparse.ArgumentParser(prog=f"wiki-lint {command}")
     if command == "task":
         parser.add_argument("bundle")

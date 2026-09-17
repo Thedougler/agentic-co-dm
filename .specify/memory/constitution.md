@@ -1,19 +1,10 @@
 <!--
 Sync Impact Report
-- Version change: 1.23.0 → 1.24.0 (MINOR)
-- Modified principles:
-  - V. Single Source of Truth — removed symlink/harness enforcement detail (pushed to lower-level policy)
-  - VI. Software Is Agent-Shaped — removed error-ledger procedure detail; merged old XV (Machine-Readable Identity) as one paragraph
-  - VIII. Safe Automation Runs Unattended — added deterministic-helper-first rule for repeatable operations
-  - IX. Measured, Quality-Bounded Efficiency — added context-cost gate for all repo tooling; added token-efficiency and deterministic-helper language
-  - XIII. Self-Improvement Is Evidence-Driven — trimmed paragraph restating VII and IX
-  - XIV. Designated Writers Have Bounded Concurrency — trimmed volatile detail
-  - XVI. The Simplest Adequate Tool (was XVII) — strengthened against unnecessary new tooling
-  - XIX. The Wiki Is Additive, Self-Sealing, and Self-Healing (was XX) — removed git-commit procedure detail
-- Removed sections:
-  - XV. Artifacts Expose Machine-Readable Identity — merged into VI
-- Renumbered: old XVI→XV, XVII→XVI, XVIII→XVII, XIX→XVIII, XX→XIX
-- Added sections: None
+- Version change: 1.24.0 → 1.25.0 (MINOR)
+- Modified principles: None
+- Added sections:
+  - XX. Multi-Step Work Uses a Checked Todo List
+- Removed sections: None
 - Follow-up TODOs: None
 -->
 
@@ -106,9 +97,9 @@ Rationale: the Co-DM exists to produce playable Work, not procedural compliance 
 ### VIII. Safe Automation Runs Unattended
 
 Easy, safe, idempotent maintenance MUST run without an agent choosing its order or a human
-performing a needless chore. Repeatable operations MUST be encoded as deterministic helper scripts
-rather than re-derived by agents each session; a script that runs the same way every time is
-cheaper and more reliable than an agent re-reasoning the procedure. Automation that is unsafe,
+performing a needless chore. Repeatable operations MUST be encoded as deterministic helper
+scripts rather than re-derived by agents each session; a script that runs the same way every time
+is cheaper and more reliable than an agent re-reasoning the procedure. Automation that is unsafe,
 non-idempotent, or requires judgment MUST remain explicit and MUST NOT be hidden behind a hook.
 Automation MUST preserve data and surface failures rather than masking them.
 
@@ -251,6 +242,17 @@ its required review.
 
 Rationale: additive history seals accepted knowledge; safe repair keeps the compiled Wiki usable.
 
+### XX. Multi-Step Work Uses a Checked Todo List
+
+For any task requiring two or more distinct actions, checks, or artifacts, the agent MUST create
+and maintain an agent todo list before performing the first step. The list MUST name every known
+step, identify the active step, and add newly discovered actionable steps before performing them.
+The agent MUST mark each step complete immediately after that step succeeds, mark blocked steps
+with the blocking reason, and MUST NOT finish while an actionable step remains unchecked.
+
+Rationale: an explicit, continuously checked work list prevents omitted steps and makes progress
+inspectable across tools, agents, and sessions.
+
 ## Operating Boundaries
 
 - The Co-DM works in prep and wrapup windows; the DM is the sole runtime at the table.
@@ -272,7 +274,7 @@ Rationale: additive history seals accepted knowledge; safe repair keeps the comp
 4. Implement: deliver one behavioral slice at a time, using the simplest adequate agent-shaped
    surface and permanent tests where the contract warrants them.
 5. Review: check this constitution, source ownership, behavioral evidence, safety boundaries,
-   quality preservation, and unresolved contradictions before adoption.
+   quality preservation, agency and canon boundaries, and unresolved contradictions before adoption.
 
 ## Governance
 
@@ -301,4 +303,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.24.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 1.25.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17

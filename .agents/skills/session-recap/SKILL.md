@@ -35,7 +35,7 @@ File (after accept):
 - No `[!secret]` / `[!mechanic]` on this surface
 - No spaces in basename; no `Aruhe` / `00` prefixes
 
-Align with `wiki/AGENTS.md` session-folder + page-filename rules. Load `obsidian-markdown` for prose standards. After any write, run `./scripts/lint-obsidian-markdown` on the recap.
+Align with `wiki/AGENTS.md` session-folder + page-filename rules. Load `obsidian-markdown` for formatting and Markdown standards. Use `writing-for-humans` and/or `copy-writer` for prose standards. After any write, run `./scripts/wiki-lint file <recap-path> --json` on the recap; use the legacy lint scripts only when diagnosing a migration mismatch.
 
 ## Procedure
 

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Run the current wiki write checks. Not a commit helper.
+"""Run the repository lint surface after a wiki write.
 
-Runs lint-obsidian-markdown and lint-literal-newlines.
+The creative-lint file command is the replacement surface; legacy checks remain
+as compatibility diagnostics until their literal-newline rules are ported.
 Does not git commit, push, or resurrect after-write.
 
 Usage (repo root):
@@ -71,6 +72,10 @@ def main(argv: list[str] | None = None) -> int:
     if scope is not None:
         extra.extend(["--path", str(scope)])
     results = []
+    creative_extra = ["file"]
+    if scope is not None:
+        creative_extra.append(str(scope))
+    results.append(run_one("wiki-lint", creative_extra, args.json))
     results.append(run_one("lint-obsidian-markdown", extra, args.json))
     results.append(run_one("lint-literal-newlines", extra, args.json))
 

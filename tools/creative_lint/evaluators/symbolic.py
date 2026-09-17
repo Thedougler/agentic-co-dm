@@ -1,7 +1,7 @@
 """Cross-page symbolic checks built on the existing wiki lint loader."""
 from __future__ import annotations
-
 import datetime as dt
+import difflib
 import re
 from pathlib import Path
 from typing import Iterable
@@ -133,12 +133,21 @@ def evaluate_symbolic(paths: Iterable[Path], registry: Registry, *, root: Path,
             raw = match.group(1).split("|", 1)[0].strip()
             targets = lint_wiki.resolve(raw, pages, lookup)
             line = body[:match.start()].count("\n") + 1
+            normalized = lint_wiki.normalize(raw)
             if not targets and enabled("RETRIEVAL001"):
                 rule = _rule(registry, "RETRIEVAL001")
                 if rule:
-                    findings.append(_make(rule, path=source, root=root, line=line, text=match.group(0),
-                                          evidence=f"Unresolved wikilink: [[{raw}]]",
-                                          evaluator="lint_wiki"))
+                    candidates = sorted({candidate for key, values in lookup.items()
+                                         if normalized and len(key) >= 4
+                                         and difflib.SequenceMatcher(None, normalized, key).ratio() >= 0.9
+                                         for candidate in values})
+                    repair = (f"Retarget [[{raw}]] to [[{candidates[0]}]]"
+                              if len(candidates) == 1 else None)
+                    findings.append(Finding(rule_id=rule.id, result="fail", severity=rule.severity,
+                                            location=_location(source, root, line, match.group(0)),
+                                            evidence=f"Unresolved wikilink: [[{raw}]]",
+                                            reason=rule.message, repair_target=repair,
+                                            evaluator="lint_wiki"))
                 continue
             target = pages[targets[0]]
             target_path = Path(target["path"])
@@ -161,4 +170,17 @@ def evaluate_symbolic(paths: Iterable[Path], registry: Registry, *, root: Path,
                 if rule:
                     findings.append(_make(rule, path=source, root=root, line=line, text=match.group(0),
                                           evidence=f"{raw} canonical page updated {updated} ({age} days stale)"))
+    return findings
+
+
+def evaluate_templates(paths: Iterable[Path], *, root: Path,
+                       rule_ids: set[str] | None = None) -> list[Finding]:
+    """Evaluate template drift using the profile derived from the mapped template."""
+    from ..template_profile import template_conformance
+
+    findings: list[Finding] = []
+    for path in _selected(paths, root / "wiki", root):
+        _, page_findings = template_conformance(path, root=root)
+        findings.extend(finding for finding in page_findings
+                        if rule_ids is None or finding.rule_id in rule_ids)
     return findings

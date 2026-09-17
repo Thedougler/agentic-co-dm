@@ -169,6 +169,10 @@ class LintEngine:
                         "reason": waiver.reason, "expires": waiver.expires,
                     }
                     waived += 1
+        unfiltered_findings = findings
+        actionable = [finding for finding in unfiltered_findings
+                      if finding.result == "fail" and finding.waiver is None]
+        status = status_from_findings(actionable)
         if severity_filter:
             findings = [finding for finding in findings if finding.severity in severity_filter]
         summary = Counter({severity: 0 for severity in ("BLOCK", "REPAIR", "REVIEW", "WARN", "INFO")})
@@ -176,12 +180,48 @@ class LintEngine:
             if finding.result == "fail" and finding.severity in summary:
                 summary[finding.severity] += 1
         summary["waived"] = waived
-        actionable = [finding for finding in findings if finding.result == "fail" and finding.waiver is None]
         return LintResult(
-            status=status_from_findings(actionable), bundle=bundle,
+            status=status, bundle=bundle,
             files_checked=len(selected), rules_evaluated=len(active), findings=findings,
             summary=dict(summary), shadow=shadow_findings, warnings=warnings,
         )
+
+    def dirty_queue(self) -> dict[str, Any]:
+        """Return safe automatic findings in deterministic smallest-first order."""
+        result = self.run(bundle="corpus" if self.bundles else None)
+        grouped: dict[str, list[Finding]] = {}
+        for finding in result.findings:
+            filename = str(finding.location.get("file", ""))
+            if filename:
+                grouped.setdefault(filename, []).append(finding)
+        queue: list[dict[str, int | str]] = []
+        excluded = 0
+        for filename, findings in grouped.items():
+            safe = []
+            for finding in findings:
+                if finding.result != "fail" or finding.waiver is not None or finding.repair_target is None:
+                    continue
+                if finding.rule_id.startswith("TMPL"):
+                    safe.append(finding)
+                    continue
+                try:
+                    auto_repair = self.registry.get(finding.rule_id).auto_repair
+                except KeyError:
+                    auto_repair = False
+                if auto_repair:
+                    safe.append(finding)
+            if safe:
+                path = self.root / filename
+                try:
+                    size = path.stat().st_size
+                except OSError:
+                    size = 0
+                queue.append({"file": filename, "size": size, "safe_findings": len(safe)})
+            else:
+                excluded += 1
+        queue.sort(key=lambda item: (int(item["size"]), str(item["file"])))
+        return {"queue": queue, "excluded_judgment_only": excluded,
+                "total_dirty": len(grouped)}
 
     def repair_loop(self, *, bundle: str, paths: Iterable[str | Path],
                     repair_callback: Callable[[list[Finding]], Iterable[str | Path] | bool | None],
