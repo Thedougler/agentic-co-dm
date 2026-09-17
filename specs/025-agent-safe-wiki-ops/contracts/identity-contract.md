@@ -21,13 +21,11 @@ Resolve the identity of a single page or entity.
   "title": "Fisk's Fleet",
   "type": "faction",
   "aliases": ["Fisk's Captains"],
-  "redirects_from": ["entities/faction/fisks-captains.md"],
   "signals": {
     "title_match": true,
     "alias_match": true,
-    "redirect_match": true,
     "manifest_provenance": true,
-    "content_overlap": 0.85
+    "qmd_content_similarity": 0.85
   }
 }
 ```
@@ -70,19 +68,19 @@ Scan a scope for identity ambiguities.
 |---|---|---|---|
 | `title_match` | frontmatter `title` | high | Exact or near-exact title match (case-insensitive, punctuation-normalized) |
 | `alias_match` | frontmatter `aliases` | high | One page's title appears in another's aliases |
-| `redirect_match` | frontmatter `redirects_to` | definitive | Explicit redirect relationship |
 | `manifest_provenance` | `.manifest.json` | medium | Same source produced both pages |
 | `type_kind_match` | frontmatter `type`, `kind` | medium | Same entity type and kind |
 | `stem_similarity` | filename | low | Levenshtein or SequenceMatcher on kebab-case stems |
-| `content_overlap` | body text | medium | SequenceMatcher ratio on body content (excluding frontmatter) |
+| `qmd_content_similarity` | QMD content index | medium | Content similarity from the existing QMD collection |
 
 ## Classification Rules
 
-1. If `redirect_match`: source page → `resolved` (redirect to canonical). Canonical page → `resolved`.
-2. If `title_match` or `alias_match` AND same `type`: → `ambiguous` (both are candidates).
-3. If `content_overlap` > 0.6 AND same `type`: → `ambiguous`.
-4. If `manifest_provenance` (same source) AND `stem_similarity` > 0.7: → `ambiguous`.
-5. Otherwise: → `distinct`.
+1. If `title_match` or `alias_match` AND same `type`: → `ambiguous` (both are candidates).
+2. If `qmd_content_similarity` > 0.6 AND same `type`: → `ambiguous`.
+3. If `manifest_provenance` (same source) AND `stem_similarity` > 0.7: → `ambiguous`.
+4. Otherwise: → `distinct`.
+
+Pages with legacy `redirects_to` frontmatter are excluded from valid identity routing and reported by lint as redirect-stub errors.
 
 Ambiguous results block automatic mutation. The agent must report candidates and wait for human designation of the canonical page.
 

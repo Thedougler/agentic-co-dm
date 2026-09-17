@@ -4,17 +4,19 @@
 
 ## Identity Resolution
 
-### Decision: Use existing frontmatter, manifest, filenames, redirects, and wikilinks as identity signals — no new external services or embeddings.
+### Decision: Use existing frontmatter, manifest, filenames, wikilinks, and QMD-backed content similarity as identity signals — no new dependency or redirect routing.
 
-**Rationale**: Every identity signal needed already exists in the repository. Frontmatter has `title`, `type`, `lifecycle`, `aliases`; manifest has source provenance and `pages_produced`; redirects use `redirects_to` in frontmatter (see `fisks-captains.md`); wikilinks provide backlink graph; filenames provide stem-based matching. The duplicate_stems check in `tools/lint_wiki.py:317` already detects basename collisions but doesn't classify ambiguity. Content overlap (title similarity, shared source provenance) is cheap to compute with stdlib difflib.
+**Rationale**: Every identity signal needed already exists in the repository. Frontmatter has `title`, `type`, `lifecycle`, `aliases`; manifest has source provenance and `pages_produced`; wikilinks provide backlink graph; filenames provide stem-based matching; QMD is already installed and provides content similarity without adding a dependency. Legacy `redirects_to` pages are not valid routing; they are lint errors that must be removed during repair. The duplicate_stems check in `tools/lint_wiki.py` already detects basename collisions but doesn't classify ambiguity. QMD similarity plus discrete signals classifies same-entity candidates before agents order work by filename or file size.
 
 **Alternatives considered**:
-- Embedding-based similarity: Requires LLM, blocked in CI (`CI=true`), overkill for ~200 pages.
+- New embedding service: Adds dependency and CI friction; QMD already covers this repository.
+- Stdlib-only body similarity: Useful as a test seam/fallback, but insufficient for the spec's QMD-backed overlap requirement.
 - Manual identity registry: Extra maintenance burden, drifts from actual files.
+- Redirect stubs: Rejected by clarification; the vault policy is zero redirect files.
 
 ### Decision: Three-state classification — `resolved`, `ambiguous`, `distinct`.
 
-**Rationale**: Matches spec FR-001. `resolved` = one canonical page, proceed. `ambiguous` = multiple candidates for same entity, blocks mutation (FR-002). `distinct` = different entities sharing a stem or partial name, safe to ignore. The Fisk incident (e-12) was caused by skipping this step entirely and ordering by file size.
+**Rationale**: Matches spec FR-001. `resolved` = one canonical page, proceed. `ambiguous` = multiple candidates for same entity, blocks mutation (FR-002). `distinct` = different entities sharing a stem or partial name, safe to ignore. A legacy redirect stub is not a resolved identity; lint reports it as an error and deterministic repair removes it after inbound links are rewritten. The Fisk incident (e-12) was caused by skipping this step entirely and ordering by file size.
 
 **Alternatives considered**:
 - Binary match/no-match: Too coarse — can't distinguish "same entity, different pages" from "different entities, similar names."

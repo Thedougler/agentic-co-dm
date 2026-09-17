@@ -16,15 +16,13 @@ The resolved identity of a wiki page, produced by the identity resolution layer.
   "type": "faction",
   "lifecycle": "proposed",
   "aliases": ["Fisk's Fleet", "Fisk's Captains"],
-  "redirects_from": ["entities/faction/fisks-captains.md"],
   "status": "resolved",
   "candidates": [],
   "signals": {
     "title_match": true,
     "alias_match": true,
-    "redirect_match": true,
     "manifest_provenance": true,
-    "content_overlap": 0.85
+    "qmd_content_similarity": 0.85
   }
 }
 ```
@@ -38,20 +36,19 @@ The resolved identity of a wiki page, produced by the identity resolution layer.
 | `type` | string | no | Frontmatter `type` value |
 | `lifecycle` | string | no | Frontmatter `lifecycle` value |
 | `aliases` | list[string] | no | Frontmatter `aliases` + title variations |
-| `redirects_from` | list[string] | no | Pages with `redirects_to` pointing here |
 | `status` | enum | yes | `resolved` \| `ambiguous` \| `distinct` |
 | `candidates` | list[object] | conditional | Other pages that may represent the same entity (required when `ambiguous`) |
 | `signals` | object | yes | Identity signals that contributed to classification |
 
 **Status semantics**:
-- `resolved`: Unambiguous — one canonical page, zero or more redirects. Safe for automatic mutation.
+- `resolved`: Unambiguous — one canonical page. Safe for automatic mutation.
 - `ambiguous`: Multiple pages may represent the same entity. Blocks automatic mutation. Reports candidates for human decision.
 - `distinct`: Page has no identity overlap with any other page. No action needed.
 
 **Validation**:
 - `status: ambiguous` requires non-empty `candidates`
 - `candidates[].path` must reference existing vault files
-- `signals.content_overlap` is 0.0–1.0 (SequenceMatcher ratio on body text)
+- `signals.qmd_content_similarity` is 0.0–1.0 from QMD content similarity
 
 ### Scope
 
@@ -177,7 +174,7 @@ callouts:
   note: "Faction pages permit only the [!narration] callout form"
 frontmatter:
   required: [title, category, tags, sources, created, updated, type, lifecycle, reveal]
-  optional: [campaign, visibility, kind, status, scope, region, base, summary, aliases, redirects_to, base_confidence]
+  optional: [campaign, visibility, kind, status, scope, region, base, summary, aliases, base_confidence]
 ```
 
 **Fields**:
@@ -245,7 +242,7 @@ A typed semantic edit operation with preconditions and atomic application semant
 | `remove_index_entry` | `slug` | — | Remove an entry from wiki/index.md |
 | `insert_index_entry` | — | `entry` | Insert a new entry (sorted) into wiki/index.md |
 | `update_manifest_identity` | `page_path` | `transition` | Record a page identity transition in manifest |
-| `rename_page` | — | `new_path`, `redirect` (bool), `rewrite_backlinks` (bool) | Rename a page, optionally creating a redirect and rewriting backlinks |
+| `rename_or_merge_page` | — | `canonical_path`, `obsolete_path`, `rewrite_backlinks` (bool) | Merge or rename a page by updating the canonical page, rewriting backlinks, updating index/manifest, and removing the obsolete page without creating a redirect |
 
 **Selector fields**:
 | Field | Type | Description |

@@ -5,7 +5,7 @@
 ## Prerequisites
 
 - Python 3.14+ (matches `.venv`)
-- PyYAML (installed by 024-creative-linting)
+- PyYAML already present from 024-creative-linting
 - Existing vault at `wiki/` with `.manifest.json`
 - Existing scripts: `scripts/wiki-bulk-ops`, `scripts/wiki-lint`, `scripts/manifest.py`
 - QMD: `scripts/qmd-maintain.sh` operational
@@ -17,15 +17,15 @@
 **Purpose**: Verify identity resolution detects ambiguity before any repair.
 
 ```bash
-# Setup: ensure fisks-captains.md (redirect) and fisks-fleet.md exist
-python3 scripts/wiki-identity resolve fisks-fleet --vault wiki --json
-# Expected: status=resolved, redirects_from includes fisks-captains.md
+# Setup: use a fixture or temp vault with two non-redirect faction pages about the same entity
+python3 scripts/wiki-identity scan --scope type:faction --vault <fixture-vault> --json
+# Expected: exit 2, status=ambiguous, candidates include both faction pages
 
-python3 scripts/wiki-identity scan --scope type:faction --vault wiki --json
-# Expected: exit 0 (no ambiguities — fisks-captains is a redirect, not ambiguous)
+python3 scripts/wiki-identity resolve entities/faction/fisks-fleet.md --vault wiki --json
+# Expected for a clean canonical page: exit 0, status=resolved
 ```
 
-**Verify**: Exit 0, status `resolved`, redirect relationship detected.
+**Verify**: Ambiguous duplicates block automatic mutation; a clean canonical page resolves without redirect stubs.
 
 ### Scenario 2: Scoped Lint
 
@@ -126,7 +126,18 @@ python3 scripts/wiki-bulk-ops mutate replace_index_entry \
 
 **Verify**: Entry found by slug, replaced without touching other entries.
 
-### Scenario 7: Batched Finalization Count
+### Scenario 7: Legacy Redirect Stub Detection
+
+**Purpose**: Verify pages with `redirects_to` frontmatter are lint errors, not valid identity routing.
+
+```bash
+python3 scripts/wiki-lint --scope files:entities/faction/fisks-captains.md --vault wiki --json
+# Expected: finding for legacy redirect stub with deterministic repair to delete the stub and rewrite inbound links
+```
+
+**Verify**: Lint reports the redirect stub as an error. No command creates a redirect file.
+
+### Scenario 8: Batched Finalization Count
 
 **Purpose**: Verify QMD refreshes exactly once, not per-file.
 

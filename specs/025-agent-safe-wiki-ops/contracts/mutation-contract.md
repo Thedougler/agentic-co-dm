@@ -64,14 +64,16 @@ wiki-bulk-ops mutate remove_frontmatter \
 
 ### Page Operations
 
-**rename_page**:
+**rename_or_merge_page**:
 ```bash
-wiki-bulk-ops mutate rename_page \
-  --file entities/faction/fisks-captains.md \
-  --new-path entities/faction/fisks-fleet.md \
-  --redirect --rewrite-backlinks \
+wiki-bulk-ops mutate rename_or_merge_page \
+  --obsolete-path entities/faction/fisks-captains.md \
+  --canonical-path entities/faction/fisks-fleet.md \
+  --rewrite-backlinks \
   --vault wiki --json
 ```
+
+This operation removes the obsolete file after updating the canonical page, backlinks, index, and manifest. It never creates a redirect stub.
 
 ### Index Operations
 
