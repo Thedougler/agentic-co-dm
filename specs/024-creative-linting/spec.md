@@ -175,16 +175,42 @@ When the DM makes a correction that addresses a recurring agent failure, the sys
 2. **Given** a recurring DM correction with no existing rule, **When** a candidate rule is drafted, **Then** it enters SHADOW state with fixtures and begins accumulating telemetry.
 3. **Given** a candidate rule with insufficient precision in shadow mode, **When** promotion is considered, **Then** it remains in SHADOW until thresholds are met — it is not promoted on confidence alone.
 
+
+### User Story 11 — Bulk Wiki Cleanup Queue (Priority: P1)
+
+An agent faces a bulk wiki-lint sitting. It does not re-derive an order. It asks `wiki-lint` for the dirty-file queue, which lists pages that still have **safe automatic** findings, smallest-first. Default bulk work is unattended: apply only those safe automatic repairs, re-lint the file, then take the next. Completing the whole corpus is not required. Judgment-only or creative repairs are out of the default loop.
+
+**Why this priority**: Corpus reports alone leave agents inventing order and stopping rules. Bulk cleanup is a primary consumer of the linter and must be an objective, repeatable, autonomous procedure for safe fixes.
+
+**Independent Test**: Seed two pages of different byte sizes that each have one safe automatic finding. Run the bulk queue command. Verify the smaller file is first. Apply the safe repair, re-run the queue, and verify that file is absent and the larger dirty file is now first. Verify a page whose only findings need judgment is not treated as default-queue dirty. Verify the command does not fail solely because other dirty files remain.
+
+**Acceptance Scenarios**:
+
+1. **Given** two pages with safe automatic findings and different sizes, **When** the agent requests the bulk dirty-file queue, **Then** `wiki-lint` returns those paths ordered smallest-first as structured output.
+2. **Given** the agent has applied safe automatic repairs so the current head-of-queue file has none left, **When** it requests the queue again, **Then** that file is absent and the next smallest default-dirty file is first.
+3. **Given** default-dirty files remain after a sitting, **When** the agent stops, **Then** remaining files stay in the queue for a later sitting and the sitting is not a failure solely for incompleteness.
+4. **Given** a page whose remaining findings all require judgment, **When** the default bulk queue is requested, **Then** that page is omitted from the default queue.
+
 ---
 
-### Edge Cases
+### User Story 12 — Template-Derived Conformance (Priority: P1)
 
-- What happens when two rules conflict (e.g., STYLE012 "be concise" vs. SCENE008 "establish environmental context")? The engine detects the conflict and surfaces it as LINT-CONFLICT with precedence guidance; the agent chooses based on scene purpose.
-- What happens when a rule's evaluator is unavailable (e.g., LLM judge during CI without API access)? The rule is skipped with a recorded `evaluator_unavailable` status; it does not silently pass.
-- What happens when the initial rule set is incomplete and a violation type has no rule? The violation goes undetected. The error-ledger convergence (Story 10) provides the path to close the gap.
-- What happens when a repair introduces a new violation? The re-lint loop detects it. The repair loop has a maximum of 3 iterations by default (configurable). If not converged after 3 passes, the agent surfaces remaining findings for DM review rather than continuing.
-- What happens when portfolio-level diversity diagnostics flag a pattern across sessions? The INFO finding surfaces the pattern for the next session's design without requiring retroactive changes to existing content.
-- What happens when `wiki-lint --consolidate` is run without approval? It reports the planned safe structural repairs and exits without modifying repository files.
+The linter detects wiki pages that drift from their current template without maintaining a second hardcoded checklist for each template. It selects the applicable template from the page’s current `type` and `kind` mapping, derives a generic template profile from the template file, and compares the page against that profile. The profile covers the template’s current frontmatter shape, heading/layout tree, section order, callout forms, table structure, and formatting markers. Template changes automatically change the comparison baseline.
+
+**Why this priority**: Template drift is a major source of wiki quality degradation. The linter must follow the live templates rather than fossilizing their requirements in implementation code.
+
+**Independent Test**: Create a page mapped to a template with a deliberately missing section and a mismatched formatting construct. Run template conformance lint and verify structured findings identify the template, page location, and mismatch. Change the template by adding a section, re-run without changing the detector, and verify the new mismatch is reported. Verify no per-template hardcoded rule is required.
+
+**Acceptance Scenarios**:
+
+1. **Given** a wiki page with a resolvable `type`/`kind` template mapping, **When** template conformance lint runs, **Then** it compares the page with the current template-derived profile and reports structural or formatting mismatches with locations.
+2. **Given** the selected template’s headings or formatting markers change, **When** lint runs again, **Then** the expected profile changes with the template and the page is evaluated against the new layout without code changes.
+3. **Given** a page has intentionally omitted an optional or empty template section, **When** conformance lint runs, **Then** it does not report that omission as a mismatch when the template’s current omission convention permits it.
+4. **Given** a page has a template-conformance mismatch, **When** default bulk lint runs, **Then** the linter applies the generic template-derived structural or formatting repair automatically and re-lints the page.
+
+---
+
+
 
 
 ## Requirements *(mandatory)*
@@ -203,7 +229,6 @@ When the DM makes a correction that addresses a recurring agent failure, the sys
 - **FR-010**: Rules MUST support shadow deployment (evaluate and record without affecting agent output)
 - **FR-011**: The `wiki-lint` CLI MUST produce structured JSON output for agents and human-readable output for terminals
 - **FR-012**: Rule definitions MUST be the single source of truth — skills and `AGENTS.md` MUST reference rules by ID, not duplicate rule prose
-- **FR-013**: Rule conflicts MUST be detectable and surfaced when two rules in the same bundle pull in opposing directions
 - **FR-014**: The initial rule set MUST cover six families: wiki/structural, canon/world-state, temporal/knowledge, player agency, retrieval/context, and creative diagnostics
 - **FR-015**: The linter MUST integrate with `wiki-maintain` as a corpus-level consumer using the same rule implementations as live agent operation
 - **FR-016**: BLOCK severity MUST correlate only with truth, safety, agency, schema, or deterministic process — not subjective taste
@@ -212,6 +237,8 @@ When the DM makes a correction that addresses a recurring agent failure, the sys
 - **FR-019**: The repository MUST provide a `package.json` with discoverable `scripts` aliases for common linting, maintenance, verification, and test operations; each alias MUST delegate directly to the existing agent-shaped command, preserve its arguments, stdout, stderr, and exit status, and MUST NOT duplicate operation logic in Node code.
 - **FR-020**: Rule deployment lifecycle (`DRAFT`, `SHADOW`, `ACTIVE`) MUST remain independent from finding severity (`BLOCK`, `REPAIR`, `REVIEW`, `WARN`, `INFO`); promotion to `ACTIVE` MUST NOT implicitly change severity.
 - **FR-021**: The `wiki-lint --consolidate` mode MUST preserve report-only behavior by default, emit a structured dry-run plan before writes, and require explicit approval before applying safe structural repairs.
+- **FR-022**: The `wiki-lint` CLI MUST emit a bulk dirty-file queue of wiki pages that still have safe automatic findings, ordered smallest-first, as structured output. Default bulk work MUST apply only those safe automatic repairs, unattended. Agents MUST take one file at a time from the head of that queue, leave that file free of remaining safe automatic findings before taking the next, and MUST NOT be required to empty the queue in one sitting. Judgment-only repairs MUST NOT be part of the default bulk loop. Template-conformance repairs derived from the current template profile are safe automatic repairs.
+- **FR-023**: Template-conformance lint MUST derive a generic comparison profile from the currently selected `wiki/templates/*.md` file using the page's `type` and `kind` mapping. It MUST compare current template frontmatter shape, heading/layout tree, section order, callout forms, table structure, and formatting markers against the wiki page, report mismatches with locations and the selected template, and MUST NOT encode per-template requirements or duplicate template rules in code. A changed template MUST change the comparison baseline without a detector code change. Every repair produced from that comparison MUST be safe to apply automatically.
 
 
 ### Key Entities
@@ -222,6 +249,8 @@ When the DM makes a correction that addresses a recurring agent failure, the sys
 - **Waiver**: A time-boxed, explicit suppression of a specific rule for a specific target, with owner and reason
 - **Evaluator**: A typed execution strategy for a rule (static, symbolic, retrieval, semantic/LLM, human)
 - **Fixture**: A test case for a rule — should-fail, should-pass, or ambiguous — used for regression and precision measurement
+- **Dirty-file queue**: Ranked list of wiki pages that still have safe automatic findings, ordered smallest-first, produced by `wiki-lint` rather than by the agent
+- **Template profile**: Generic, runtime-derived structural and formatting model extracted from the currently selected template file; it is not a second per-template ruleset
 
 ## Success Criteria *(mandatory)*
 
@@ -235,6 +264,8 @@ When the DM makes a correction that addresses a recurring agent failure, the sys
 - **SC-006**: False-positive rate for promoted rules stays below 15% as measured by DM agreement in shadow telemetry
 - **SC-007**: Total linter token overhead (lint + repair calls) is attributable and does not exceed 20% of the generation cost it validates
 - **SC-008**: 100% of active BLOCK rules have passing fixture suites with both should-fail and should-pass cases
+- **SC-009**: A bulk sitting can obtain a smallest-first default dirty-file queue, apply only safe automatic repairs to one or more files from the head of that queue, and stop with remaining default-dirty files still listed — without treating incompleteness as failure
+- **SC-010**: When a template changes its layout or formatting markers, template-conformance lint reports the resulting mismatch on a page mapped to that template without any detector-code or per-template-rule change.
 
 ## Assumptions
 
@@ -253,9 +284,14 @@ When the DM makes a correction that addresses a recurring agent failure, the sys
 ### Session 2026-09-17
 
 - Q: Which additional off-the-shelf linters beyond Vale should we integrate? → A: Install markdownlint-cli2 for structural markdown rules (heading levels, lists, code fences). Vale handles prose patterns. Together they subsume `lint-obsidian-markdown` and `lint-literal-newlines`.
+- **Q: Which repairs count as safe automatic for the default bulk queue?** → **A:** Structural and format-only repairs that cannot invent facts or rewrite narrative prose, including template-conformance repairs derived from the current template profile, literal-newline normalization, unique broken-link retargets, and markdownlint auto-fixes. Missing metadata, canon state, agency, and prose rewrites remain judgment work.
+- Q: How should template conformance remain flexible as templates evolve? → A: Derive a generic comparison profile at runtime from the current template selected by `type` and `kind`; do not maintain separate hardcoded requirements for individual templates.
 - Q: Should existing custom Python lint scripts be deprecated once ported to Vale/markdownlint? → A: Port then deprecate. Existing scripts stay until all checks ported with passing fixtures, then removed.
 - Q: Should the repair loop have a maximum iteration limit, and if so, what default? → A: 3 iterations max (configurable). Unconverged findings surface for DM review.
 - Q: Should the package entry point use thin npm aliases rather than new Node wrappers? → A: Add `package.json` scripts that delegate directly to existing repository CLIs; do not move logic into Node or add a second wrapper implementation.
 - Q: Should rule lifecycle and finding severity be separate dimensions? → A: Use lifecycle `DRAFT → SHADOW → ACTIVE`; keep severity independently configured as `BLOCK`, `REPAIR`, `REVIEW`, `WARN`, or `INFO`. Promotion to `ACTIVE` does not imply a severity.
 - Q: Should Vale-backed prose rules use the packages already declared in `.vale.ini` as the authoritative package set, without duplicating or replacing that package list? → A: Treat `.vale.ini` as authoritative; invoke Vale through its configured `ai-tells`, `proselint`, and `Readability` packages without duplicating package configuration.
 - Q: Should the creative-linting feature add a backward-compatible `--consolidate` mode to `scripts/wiki-lint`? → A: Add it to `wiki-lint`; preserve report-only behavior by default, show a dry-run plan, and require explicit approval before safe structural repairs.
+- Q: Should bulk wiki cleanup get a CLI that lists dirty files smallest-first, or only a written agent procedure over the existing corpus report? → A: `wiki-lint` emits dirty files smallest-first as a queue; the agent cleans one file, then takes the next until a quality stop. Completing the corpus in one sitting is not required.
+- Q: Which findings put a wiki page on the smallest-first dirty queue, and when may the agent leave that page and take the next? → A: Default bulk work is safe automatic fixes only and may run unattended. A page is default-dirty if it has remaining safe automatic findings; it leaves the default queue when a re-lint of that file has none. Judgment-only findings are not a default bulk mandate.
+- Q: Should template-conformance findings be excluded from autonomous bulk cleanup because they require review? → A: No. All template-conformance mismatches are safe automatic repairs and belong in the default smallest-first autonomous queue.
