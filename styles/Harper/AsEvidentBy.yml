@@ -10,6 +10,7 @@ extends: substitution
 message: "Did you mean `evidenced`? The correct phrase uses the past participle of the verb `evidence`."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
 swap:

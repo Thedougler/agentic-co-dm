@@ -30,6 +30,7 @@ extends: substitution
 message: "If this is counterfactual or hypothetical, use `had` after `if` rather than `would have` or `had have`."
 level: warning
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

@@ -12,6 +12,7 @@ extends: substitution
 message: "Use the base form of the verb `compare`."
 level: warning
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

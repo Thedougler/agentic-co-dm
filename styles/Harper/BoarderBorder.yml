@@ -10,6 +10,7 @@ extends: substitution
 message: "Did you mean `border`?"
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
 swap:

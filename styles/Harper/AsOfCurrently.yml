@@ -10,6 +10,7 @@ extends: existence
 message: "Standard equivalents are `currently` or `as of now`."
 level: suggestion
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

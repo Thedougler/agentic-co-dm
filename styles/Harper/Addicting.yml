@@ -16,6 +16,7 @@ extends: existence
 message: "When used as an adjective, `addictive` is the traditional and more f form."
 level: warning
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

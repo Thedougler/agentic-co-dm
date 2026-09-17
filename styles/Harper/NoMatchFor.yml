@@ -17,6 +17,7 @@ extends: substitution
 message: "If you mean the idiom, it's `no match for`."
 level: warning
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

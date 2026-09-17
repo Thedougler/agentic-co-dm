@@ -19,6 +19,8 @@ extends: sequence
 message: "Did you mean `ought to be`?"
 level: warning
 ignorecase: true
+model: harper
+matchcase: true
 action:
   name: replace
   params:

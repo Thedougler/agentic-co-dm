@@ -10,6 +10,7 @@ extends: substitution
 message: "This clause usually needs a linking verb after `there`."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
 swap:

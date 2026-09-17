@@ -25,6 +25,8 @@ extends: sequence
 message: "Use `already` before adjectives instead of the two-word phrase."
 level: warning
 ignorecase: true
+model: harper
+matchcase: true
 action:
   name: replace
   params:

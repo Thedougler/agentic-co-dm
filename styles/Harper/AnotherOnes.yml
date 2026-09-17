@@ -10,6 +10,7 @@ extends: existence
 message: "`another` is singular but `ones` is plural. Or maybe you meant the possessive `one's`."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

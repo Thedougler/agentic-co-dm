@@ -10,6 +10,7 @@ extends: existence
 message: "In this idiom, blood `courses` (flows) through veins, not `curses`."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

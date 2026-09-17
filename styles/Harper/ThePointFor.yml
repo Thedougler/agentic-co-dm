@@ -15,6 +15,7 @@ extends: substitution
 message: "Did you mean `the point of`?"
 level: warning
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

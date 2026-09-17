@@ -10,6 +10,7 @@ extends: existence
 message: "Use `now known as` instead of `now know as`."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

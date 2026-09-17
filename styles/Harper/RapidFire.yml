@@ -10,6 +10,7 @@ extends: existence
 message: "It is more idiomatic to hypenate `rapid-fire`."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

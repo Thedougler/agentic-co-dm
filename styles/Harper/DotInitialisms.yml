@@ -13,6 +13,7 @@ extends: substitution
 message: "Initialisms should have dot-separated letters."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
 swap:

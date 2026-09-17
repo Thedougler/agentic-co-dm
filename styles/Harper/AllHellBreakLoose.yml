@@ -8,6 +8,8 @@ extends: sequence
 message: "The correct idiom is `all hell breaks loose`."
 level: warning
 ignorecase: true
+model: harper
+matchcase: true
 action:
   name: replace
   params:

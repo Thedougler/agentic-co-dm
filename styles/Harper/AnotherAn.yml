@@ -10,6 +10,7 @@ extends: existence
 message: "Use `another` on its own."
 level: suggestion
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

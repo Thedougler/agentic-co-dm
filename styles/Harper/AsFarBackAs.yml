@@ -10,6 +10,7 @@ extends: existence
 message: "Use `as far back as` for referring to a time in the past."
 level: suggestion
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

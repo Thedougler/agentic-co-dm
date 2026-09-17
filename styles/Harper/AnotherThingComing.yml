@@ -8,6 +8,8 @@ extends: sequence
 message: "Corrects `another think coming` to `another thing coming`"
 level: warning
 ignorecase: true
+model: harper
+matchcase: true
 action:
   name: replace
   params:

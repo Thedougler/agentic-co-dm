@@ -10,6 +10,7 @@ extends: existence
 message: "Use `inspired by` instead of `inspired from` when citing a source of inspiration."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

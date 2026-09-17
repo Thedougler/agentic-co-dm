@@ -10,6 +10,7 @@ extends: existence
 message: "Corrects `max exodues` to `mass exodus`."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

@@ -10,6 +10,7 @@ extends: existence
 message: "Use `simple grammatical` for correct adjective usage."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

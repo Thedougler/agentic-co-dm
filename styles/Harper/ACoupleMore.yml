@@ -10,6 +10,7 @@ extends: existence
 message: "The correct wording is `a couple more`, without the `of`."
 level: suggestion
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

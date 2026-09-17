@@ -18,6 +18,7 @@ extends: sequence
 message: "Did you mean `a while`?"
 level: warning
 ignorecase: true
+model: harper
 action:
   name: replace
   params:

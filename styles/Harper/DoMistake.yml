@@ -24,6 +24,7 @@ extends: sequence
 message: "Use `make` with `mistake`, not `do`."
 level: warning
 ignorecase: true
+model: harper
 tokens:
   - pattern: '\S+'
   - pattern: 'do|did|does|doing|done'

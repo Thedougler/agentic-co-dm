@@ -10,6 +10,7 @@ extends: existence
 message: "Use the insect's correct name."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

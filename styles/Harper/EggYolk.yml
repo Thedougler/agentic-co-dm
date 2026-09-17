@@ -10,6 +10,7 @@ extends: existence
 message: "Use `egg yolk` when you mean the yellow portion of an egg."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

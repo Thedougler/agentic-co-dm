@@ -10,6 +10,7 @@ extends: existence
 message: "Use the hyphenated form for `case-sensitive`."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

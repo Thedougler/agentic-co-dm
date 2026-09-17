@@ -10,6 +10,7 @@ extends: existence
 message: "A `decent amount` is a `fair bit`. `Fare` is the price of a ticket."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

@@ -10,6 +10,7 @@ extends: existence
 message: "Avoid `comprises of`; let `comprises` stand on its own or choose `consists of`."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

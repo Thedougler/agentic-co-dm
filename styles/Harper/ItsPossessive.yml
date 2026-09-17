@@ -20,6 +20,7 @@ extends: sequence
 message: "Use the possessive `its` here."
 level: warning
 ignorecase: true
+model: harper
 action:
   name: replace
   params:

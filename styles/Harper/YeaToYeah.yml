@@ -10,6 +10,7 @@ extends: existence
 message: "If you mean the informal word for `yes` and not the biblical or legalistic `yea`, the standard spelling is `yeah`."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

@@ -10,6 +10,7 @@ extends: existence
 message: "The correct spelling is `per se` (with no hyphen)"
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

@@ -10,6 +10,7 @@ extends: existence
 message: "Use `human beings` to refer to people collectively."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

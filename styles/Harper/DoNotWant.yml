@@ -10,6 +10,7 @@ extends: existence
 message: "Use the full verb `want` after negation: `don't want` or `do not want.`"
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

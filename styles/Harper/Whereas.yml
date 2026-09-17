@@ -12,6 +12,8 @@ extends: sequence
 message: "`Whereas` is commonly mistaken for `where as`."
 level: warning
 ignorecase: true
+model: harper
+matchcase: true
 action:
   name: replace
   params:

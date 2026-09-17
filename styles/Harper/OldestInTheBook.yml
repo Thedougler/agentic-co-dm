@@ -18,6 +18,7 @@ extends: existence
 message: "Did you mean `in the book`?"
 level: warning
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

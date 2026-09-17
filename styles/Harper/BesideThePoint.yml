@@ -10,6 +10,7 @@ extends: existence
 message: "Use `beside` in the idiom `beside the point`."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

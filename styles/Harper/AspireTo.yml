@@ -12,6 +12,8 @@ extends: sequence
 message: "Use `aspire to` instead of `aspire for`."
 level: warning
 ignorecase: false
+model: harper
+matchcase: true
 action:
   name: replace
   params:

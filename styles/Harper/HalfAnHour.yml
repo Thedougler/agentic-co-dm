@@ -10,6 +10,7 @@ extends: existence
 message: "Remember the silent 'h' when writing `hour`: `half an hour`."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

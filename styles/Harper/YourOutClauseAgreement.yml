@@ -10,6 +10,8 @@ extends: sequence
 message: "Use the contraction for `you are` in this clause."
 level: warning
 ignorecase: true
+model: harper
+matchcase: true
 action:
   name: replace
   params:

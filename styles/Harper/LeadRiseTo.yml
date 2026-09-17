@@ -11,6 +11,7 @@ extends: sequence
 message: "The correct idiom is `give rise to`."
 level: warning
 ignorecase: true
+model: harper
 tokens:
   - pattern: 'leading|leads|lead|led'
   - pattern: 'rise'

@@ -10,6 +10,7 @@ extends: existence
 message: "`As long` is two words and the last word should be `as`."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

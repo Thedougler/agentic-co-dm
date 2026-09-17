@@ -16,6 +16,7 @@ extends: substitution
 message: "Use `about` instead of `of` with `passionate`"
 level: warning
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

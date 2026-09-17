@@ -10,6 +10,7 @@ extends: existence
 message: "`another` is singular but `things` is plural."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

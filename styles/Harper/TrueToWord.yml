@@ -10,6 +10,7 @@ extends: substitution
 message: "Replace the plural `words` with the idiomatic singular form when someone stays true to a promise."
 level: suggestion
 ignorecase: true
+matchcase: true
 action:
   name: replace
 swap:

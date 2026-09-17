@@ -10,6 +10,8 @@ extends: sequence
 message: "This word choice looks off for this meaning."
 level: error
 ignorecase: true
+model: harper
+matchcase: true
 action:
   name: replace
   params:

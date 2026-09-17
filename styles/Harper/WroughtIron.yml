@@ -10,6 +10,7 @@ extends: existence
 message: "Prefer the standard term `wrought iron`."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

@@ -19,6 +19,7 @@ extends: sequence
 message: "Did you mean the noun `complaint`?"
 level: warning
 ignorecase: true
+model: harper
 action:
   name: replace
   params:

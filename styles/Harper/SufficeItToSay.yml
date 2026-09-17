@@ -10,6 +10,7 @@ extends: existence
 message: "`Suffice it to say` is the more standard and more common variant."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

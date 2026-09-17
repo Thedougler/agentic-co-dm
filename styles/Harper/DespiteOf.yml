@@ -14,6 +14,7 @@ extends: sequence
 message: "The phrase “despite of” is incorrect. Please use either “despite” or “in spite of” instead."
 level: warning
 ignorecase: true
+model: harper
 tokens:
   - pattern: 'despite'
   - pattern: 'of'

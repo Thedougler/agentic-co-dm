@@ -10,6 +10,7 @@ extends: existence
 message: "`at face value` is more idiomatic and more common."
 level: suggestion
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

@@ -10,6 +10,8 @@ extends: sequence
 message: "This looks like a modal typo."
 level: error
 ignorecase: true
+model: harper
+matchcase: true
 action:
   name: replace
   params:

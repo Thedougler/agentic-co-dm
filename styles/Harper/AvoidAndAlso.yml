@@ -10,6 +10,7 @@ extends: existence
 message: "Consider using just `and`."
 level: suggestion
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

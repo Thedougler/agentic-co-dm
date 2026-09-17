@@ -8,6 +8,8 @@ extends: sequence
 message: "The correct preposition is `of`."
 level: warning
 ignorecase: true
+model: harper
+matchcase: true
 action:
   name: replace
   params:

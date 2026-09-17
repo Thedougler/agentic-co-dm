@@ -10,6 +10,7 @@ extends: existence
 message: "Use `thru` instead of `through`"
 level: suggestion
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

@@ -10,6 +10,7 @@ extends: existence
 message: "Use `in hindsight` when reflecting on past events with the benefit of current knowledge."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

@@ -10,6 +10,7 @@ extends: existence
 message: "The correct preposition after `impressed` is `by` or `with`."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

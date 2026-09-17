@@ -10,6 +10,7 @@ extends: existence
 message: "Use `haphazard` for randomness or lack of organization."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

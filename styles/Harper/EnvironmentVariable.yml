@@ -10,6 +10,7 @@ extends: substitution
 message: "Did you mean %[1]s?"
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
 swap:

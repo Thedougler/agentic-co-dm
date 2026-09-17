@@ -11,6 +11,7 @@ extends: substitution
 message: "The idiom is `have a hard time`."
 level: warning
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

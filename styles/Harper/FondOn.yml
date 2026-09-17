@@ -10,6 +10,7 @@ extends: existence
 message: "Use `found on` or `fond of` instead of `fond on`."
 level: suggestion
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

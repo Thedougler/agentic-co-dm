@@ -10,6 +10,7 @@ extends: existence
 message: "Use `the entirety of` instead of `the entire of`."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

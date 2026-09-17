@@ -11,6 +11,7 @@ extends: sequence
 message: "`Try out` is a different idiom than `try one's luck`"
 level: warning
 ignorecase: true
+model: harper
 tokens:
   - pattern: 'trying|tried|tries|try'
   - pattern: 'out'

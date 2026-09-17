@@ -10,6 +10,7 @@ extends: existence
 message: "A more vivid adjective would better capture extreme cold."
 level: suggestion
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

@@ -17,6 +17,7 @@ extends: substitution
 message: "The acronym's last letter already stands for the last word. Use just the acronym or the full phrase."
 level: warning
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

@@ -9,6 +9,7 @@ extends: substitution
 message: "This idiom requires the word `a`."
 level: warning
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

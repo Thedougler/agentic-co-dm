@@ -10,6 +10,7 @@ extends: substitution
 message: "This looks like a misspelled verb in this phrase."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
 swap:

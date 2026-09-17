@@ -8,6 +8,7 @@ extends: substitution
 message: "`Most` is not standard before a count."
 level: warning
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

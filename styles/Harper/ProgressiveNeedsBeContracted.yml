@@ -12,6 +12,7 @@ extends: sequence
 message: "A progressive verb after `have` needs `been`."
 level: warning
 ignorecase: true
+model: harper
 tokens:
   - pattern: "i've|we've|you've|they've|ive|weve|youve|theyve"
   - tag: 'VBG'

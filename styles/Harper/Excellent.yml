@@ -10,6 +10,7 @@ extends: existence
 message: "Vocabulary enhancement: use `excellent` instead of `very good`"
 level: suggestion
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

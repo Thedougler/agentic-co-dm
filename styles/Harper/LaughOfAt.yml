@@ -15,6 +15,8 @@ extends: sequence
 message: "Use `laugh at ...` instead of `laugh of ...` when pointing at someone."
 level: warning
 ignorecase: true
+model: harper
+matchcase: true
 action:
   name: replace
   params:

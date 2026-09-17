@@ -10,6 +10,7 @@ extends: existence
 message: "Use `for the most part` instead of `for most part`."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

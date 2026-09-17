@@ -12,6 +12,7 @@ extends: substitution
 message: "Perhaps you meant the word for an award."
 level: warning
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

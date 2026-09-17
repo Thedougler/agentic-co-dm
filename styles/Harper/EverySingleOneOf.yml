@@ -10,6 +10,7 @@ extends: existence
 message: "This phrase is missing the word `one`."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

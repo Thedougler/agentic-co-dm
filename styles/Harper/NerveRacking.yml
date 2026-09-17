@@ -10,6 +10,7 @@ extends: existence
 message: "Use `nerve-racking` for something that causes anxiety or tension."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

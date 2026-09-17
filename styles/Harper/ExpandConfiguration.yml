@@ -14,6 +14,7 @@ extends: substitution
 message: "Prose usually spells this out."
 level: suggestion
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

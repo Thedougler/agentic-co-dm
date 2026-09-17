@@ -18,6 +18,7 @@ extends: sequence
 message: "For writing code, the preposition should be `in` rather than `on`."
 level: warning
 ignorecase: true
+model: harper
 tokens:
   - pattern: 'programming|programmed|program|written|coding|writes|coded|codes|write|wrote'
   - pattern: 'on'

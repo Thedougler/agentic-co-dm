@@ -18,6 +18,7 @@ extends: substitution
 message: "Use `free` here to show that something costs nothing."
 level: warning
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

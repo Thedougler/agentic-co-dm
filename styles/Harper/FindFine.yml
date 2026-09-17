@@ -12,6 +12,8 @@ extends: sequence
 message: "Did you mean `fine`?"
 level: warning
 ignorecase: true
+model: harper
+matchcase: true
 action:
   name: replace
   params:

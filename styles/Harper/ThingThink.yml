@@ -13,6 +13,7 @@ extends: existence
 message: "Did you mean `think`?"
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

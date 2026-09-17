@@ -10,6 +10,7 @@ extends: existence
 message: "The standard form is `low-hanging fruit` with a hyphen and singular form."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

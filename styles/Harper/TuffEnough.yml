@@ -10,6 +10,7 @@ extends: substitution
 message: "Swap `tuff` for `tough` when it describes strength or difficulty followed by 'enough' or 'like'."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
 swap:

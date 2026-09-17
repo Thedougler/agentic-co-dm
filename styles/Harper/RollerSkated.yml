@@ -17,6 +17,7 @@ extends: sequence
 message: "Hyphenate this verb as `roller-skated`."
 level: warning
 ignorecase: true
+model: harper
 action:
   name: replace
   params:

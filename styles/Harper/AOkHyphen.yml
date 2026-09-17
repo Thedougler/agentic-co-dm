@@ -10,6 +10,7 @@ extends: existence
 message: "Use `A-OK` when stating that something is acceptable or ready."
 level: suggestion
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

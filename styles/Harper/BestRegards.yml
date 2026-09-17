@@ -10,6 +10,7 @@ extends: existence
 message: "Use `best regards` to convey sincere well wishes in a closing."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

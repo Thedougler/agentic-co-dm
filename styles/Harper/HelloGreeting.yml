@@ -18,6 +18,7 @@ extends: existence
 message: "Prefer `hello` as a greeting; `halo` refers to the optical effect."
 level: warning
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

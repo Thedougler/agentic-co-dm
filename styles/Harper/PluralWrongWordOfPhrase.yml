@@ -12,6 +12,7 @@ extends: substitution
 message: "This phrase is pluralized on the main noun, not on the last noun."
 level: warning
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

@@ -10,6 +10,7 @@ extends: existence
 message: "Did you mean `formative years`? Use `formative` to describe a period of growth or influence. `Formidable` is typically used for something intimidating."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

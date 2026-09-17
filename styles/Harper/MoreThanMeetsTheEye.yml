@@ -10,6 +10,7 @@ extends: existence
 message: "For something that has hidden complexity or depth, `more than meets the eye` is the most idiomatic and most standard."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

@@ -10,6 +10,7 @@ extends: existence
 message: "Use `ticking time bomb` for disastrous consequences, otherwise avoid redundancy with just `ticking clock`."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

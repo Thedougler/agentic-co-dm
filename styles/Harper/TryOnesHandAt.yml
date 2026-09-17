@@ -8,6 +8,8 @@ extends: sequence
 message: "This idiom uses the singular `hand`."
 level: warning
 ignorecase: true
+model: harper
+matchcase: true
 action:
   name: replace
   params:

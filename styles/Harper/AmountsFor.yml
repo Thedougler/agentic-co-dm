@@ -13,6 +13,7 @@ extends: substitution
 message: "`amounts for` is not idiomatic English. You probably meant `amounts to` or `accounts for`."
 level: warning
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

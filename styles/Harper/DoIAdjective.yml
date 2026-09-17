@@ -10,6 +10,7 @@ extends: substitution
 message: "When describing how you feel, `I` pairs with `am`, not `do`."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
 swap:

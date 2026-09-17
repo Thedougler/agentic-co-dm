@@ -10,6 +10,7 @@ extends: existence
 message: "Did you mean `state of the art`?"
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

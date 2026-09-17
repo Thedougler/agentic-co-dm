@@ -19,6 +19,7 @@ extends: sequence
 message: "Use only either `for free` or `free of charge`"
 level: warning
 ignorecase: true
+model: harper
 tokens:
   - pattern: 'for'
     target: true

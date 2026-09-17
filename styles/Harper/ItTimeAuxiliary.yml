@@ -10,6 +10,7 @@ extends: substitution
 message: "This phrase usually needs the contraction `it's` before `time` in this construction."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
 swap:

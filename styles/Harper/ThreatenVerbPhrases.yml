@@ -10,6 +10,7 @@ extends: existence
 message: "Modal verbs followed by `threat` almost always intend the verb `threaten`."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

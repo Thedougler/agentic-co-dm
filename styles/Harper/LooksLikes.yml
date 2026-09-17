@@ -21,6 +21,7 @@ extends: substitution
 message: "Drop the extra `s` in `likes` when it immediately follows a form of `look`."
 level: error
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

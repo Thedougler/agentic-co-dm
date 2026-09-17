@@ -15,6 +15,7 @@ extends: substitution
 message: "`By one's own` is not idiomatic. Consider either `on one's own` or `by oneself`."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
 swap:

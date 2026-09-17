@@ -10,6 +10,7 @@ extends: existence
 message: "Use `towards` without the preceding `to`."
 level: suggestion
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

@@ -10,6 +10,7 @@ extends: existence
 message: "Treat color-based deny/allow lists as single words like `blacklist` or `whitelist`."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

@@ -10,6 +10,7 @@ extends: existence
 message: "If this phrase should function as a noun it should be `due diligence`. If it should function as a verb it should be `do due diligence"
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

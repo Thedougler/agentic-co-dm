@@ -10,6 +10,7 @@ extends: existence
 message: "Use `in itself` (more common) or `in and of itself` (more formal) to mean 'intrinsically'."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

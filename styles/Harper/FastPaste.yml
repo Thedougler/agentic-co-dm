@@ -10,6 +10,7 @@ extends: existence
 message: "Did you mean `fast-paced`?"
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

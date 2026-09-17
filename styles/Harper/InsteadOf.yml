@@ -10,6 +10,7 @@ extends: existence
 message: "Use the modern single word `instead of` to indicate a replacement."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

@@ -10,6 +10,7 @@ extends: existence
 message: "`Case in point` is the correct form of the phrase."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

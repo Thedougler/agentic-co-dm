@@ -10,6 +10,7 @@ extends: substitution
 message: "Use `at first glance` instead of `on first glance` when describing an immediate impression."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
 swap:

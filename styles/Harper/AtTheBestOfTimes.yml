@@ -10,6 +10,7 @@ extends: existence
 message: "Did you mean `at the best of times`?"
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

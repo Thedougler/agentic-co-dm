@@ -17,6 +17,7 @@ extends: existence
 message: "Did you mean the idiom `by the book`?"
 level: warning
 ignorecase: true
+matchcase: true
 nonword: true
 action:
   name: replace

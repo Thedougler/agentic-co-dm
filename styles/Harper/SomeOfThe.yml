@@ -10,6 +10,7 @@ extends: existence
 message: "Add `of` to form the partitive phrase: `some of the`."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

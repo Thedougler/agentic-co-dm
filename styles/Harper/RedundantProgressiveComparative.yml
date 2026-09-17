@@ -15,6 +15,7 @@ extends: sequence
 message: "This phrasing is redundant; use a direct comparative like `more and more`."
 level: warning
 ignorecase: true
+model: harper
 action:
   name: replace
   params:

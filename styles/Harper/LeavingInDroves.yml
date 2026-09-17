@@ -8,6 +8,8 @@ extends: sequence
 message: "`Drones` is an eggcorn. The correct word is `droves`."
 level: warning
 ignorecase: true
+model: harper
+matchcase: true
 action:
   name: replace
   params:

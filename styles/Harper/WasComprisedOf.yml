@@ -10,6 +10,7 @@ extends: existence
 message: "Many style guides treat this wording as nonstandard; consider a clearer construction."
 level: suggestion
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

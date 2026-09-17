@@ -10,6 +10,7 @@ extends: existence
 message: "Standard equivalents are `lately` or `as of late`."
 level: suggestion
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

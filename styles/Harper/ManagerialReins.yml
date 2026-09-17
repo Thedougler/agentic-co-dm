@@ -10,6 +10,7 @@ extends: existence
 message: "Swap in `reins` when talking about control of a team or project."
 level: error
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

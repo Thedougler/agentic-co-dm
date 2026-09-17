@@ -10,6 +10,7 @@ extends: existence
 message: "Use `of` with `imitate` when naming the source you copy."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
   params:

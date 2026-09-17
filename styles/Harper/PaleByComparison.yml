@@ -11,6 +11,7 @@ extends: substitution
 message: "In this idiom, the word `pale` is correctly a verb, not an adjective."
 level: warning
 ignorecase: true
+matchcase: true
 action:
   name: replace
 swap:
