@@ -1,8 +1,8 @@
 <!--
 Sync Impact Report
-- Version change: 1.31.0 → 1.31.1 (PATCH)
+- Version change: 1.31.1 → 1.32.0 (MINOR)
 - Modified principles:
-  - XVI. The Simplest Adequate Tool → XVI. The Simplest Adequate Tool (duplicate rationale removed)
+  - XIII. Self-Improvement Is Evidence-Driven → XIII. Self-Improvement Is Evidence-Driven (agent-facing product scope added)
 - Added sections: None
 - Removed sections: None
 - Follow-up TODOs: None
@@ -171,14 +171,17 @@ continuously, but an improvement MUST be demonstrated rather than asserted. Opti
 address an observed failure, measured waste source, or evidenced opportunity and MUST compare
 equivalent work. Uncertain changes MUST remain reversible until evidence supports promotion.
 
-Self-reporting is the default SOP. When an agent experiences inefficiency, a slowdown, confusion,
-ambiguity, or other operational friction, it MUST record the issue in `errors.md` before
-continuing its task. The entry MUST identify the observed symptom, task context, and affected
-artifact or tool when known. A different agent MUST diagnose and remediate the report in a later
-session; the reporting agent MUST NOT treat continued progress as resolution.
+Self-reporting is the default SOP for all agent-facing product surfaces. When an agent experiences
+inefficiency, a slowdown, confusion, ambiguity, or other operational friction while using or
+changing a skill, template, linting rule, instruction, schema, script, command, workflow, or
+similar surface, it MUST record the issue in `errors.md` before continuing its task. These
+surfaces are the repository's primary product. Every error discovered in them MUST be recorded,
+diagnosed by a different agent in a later session, and remediated at its authoritative source;
+the reporting agent MUST NOT treat continued progress as resolution.
 
-Rationale: optimization without evidence can efficiently make the system worse; prompt reporting
-turns operational friction into actionable work for an independent diagnosis.
+Rationale: optimization without evidence can efficiently make the system worse; treating
+agent-facing surfaces as the primary product turns operational friction into actionable,
+independently diagnosed source repairs.
 
 ### XIV. Designated Writers Have Bounded Concurrency
 
@@ -354,4 +357,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.31.1 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 1.32.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
