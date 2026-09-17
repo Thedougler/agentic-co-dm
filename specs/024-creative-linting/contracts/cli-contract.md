@@ -99,6 +99,41 @@ Tags:      player-agency, narration
 Bundles:   session-prep (block), live-codm (block), corpus (review)
 ```
 
+### `wiki-lint --consolidate [vault] [--json] [--approve]`
+
+Generate a safe structural repair plan from the existing lint findings.
+
+**Default behavior** (without `--approve`):
+- Re-run the deterministic structural checks.
+- Emit a `ConsolidationPlan` containing ordered actions, affected files, and the required approval state.
+- Perform no writes.
+- Exit 0 when the plan is valid, even when repair actions are available.
+
+**Approved behavior** (`--approve`):
+- Re-run the checks before writing.
+- Abort with exit 2 if the plan changed since the dry run or contains an unsafe action.
+- Apply only safe structural repairs, then emit the applied action list.
+- Preserve existing report-only behavior for invocations without `--consolidate`.
+
+**JSON output**:
+```json
+{
+  "status": "dry_run|applied|blocked",
+  "plan": {
+    "vault": "wiki",
+    "snapshot": "sha256:…",
+    "actions": [],
+    "requires_approval": true,
+    "approved": false
+  }
+}
+```
+
+**Exit codes**:
+- `0`: dry-run plan emitted or approved repairs applied.
+- `1`: underlying lint findings prevent a valid plan.
+- `2`: invalid arguments, stale plan, unsafe action, or approval failure.
+
 ## Error Handling
 
 | Condition | Behavior |
@@ -109,3 +144,4 @@ Bundles:   session-prep (block), live-codm (block), corpus (review)
 | Evaluator unavailable (e.g., no LLM in CI) | Skip rule, record `evaluator_unavailable` status in findings |
 | Invalid registry YAML | Exit 2 with parse error |
 | Duplicate rule ID in registry | Exit 2 with error identifying the duplicate |
+

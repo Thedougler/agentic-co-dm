@@ -144,10 +144,25 @@ print('severity filter OK')
 "
 ```
 
+### V9: Consolidation Dry Run and Explicit Approval
+
+```bash
+# Dry run: emits a structured plan and performs no writes.
+./scripts/wiki-lint --consolidate wiki --json
+
+# Apply only after reviewing the plan.
+./scripts/wiki-lint --consolidate wiki --json --approve
+```
+
+**Expected**:
+- The first command reports `status: "dry_run"`, includes ordered safe actions, and leaves the fixture vault unchanged.
+- The second command revalidates the findings before writing and reports `status: "applied"` or a clear blocked error.
+- Running `./scripts/wiki-lint --json wiki` without `--consolidate` retains report-only behavior.
+
 ## Test Suite
 
 ```bash
-.venv/bin/python -m pytest tests/test_creative_lint.py -v
+.venv/bin/python -m pytest tests/test_creative_lint.py tests/test_creative_lint_cli.py -v
 ```
 
 **Expected**: All tests pass. Covers:

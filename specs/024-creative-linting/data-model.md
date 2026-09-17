@@ -170,6 +170,36 @@ Aggregate result from a lint run. Wraps all findings and computes status.
 - `review_needed`: any REVIEW finding and no BLOCK/REPAIR
 - `clean`: only WARN/INFO findings (or no findings)
 
+### ConsolidationPlan
+
+
+A deterministic, reviewable set of safe structural repair actions derived from one lint snapshot. It is emitted by `wiki-lint --consolidate` before any write.
+
+```json
+{
+  "vault": "wiki",
+  "snapshot": "sha256:…",
+  "actions": [
+    {
+      "kind": "fix_broken_link",
+      "file": "entities/example.md",
+      "line": 12,
+      "before": "[[OldTarget]]",
+      "after": "[[new-target]]"
+    }
+  ],
+  "requires_approval": true,
+  "approved": false
+}
+```
+
+**Validation rules**:
+- `actions` must be deterministic for an unchanged lint snapshot.
+- `requires_approval` is always `true` for a write-capable plan.
+- `approved: true` is valid only when the command received explicit `--approve` and the current lint snapshot still matches.
+- No action may invent canon, merge pages, or rewrite judgment-only content.
+
+
 ## State Transitions
 
 ### Rule Lifecycle

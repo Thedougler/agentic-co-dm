@@ -6,13 +6,13 @@
 
 ## Summary
 
-An executable lint-rule engine for canon, agency, temporal truth, knowledge boundaries, retrieval discipline, and creative heuristics — layered as a cross-cutting validation surface over the existing `wiki-lint` / `wiki-maintain` / `tools/lint_wiki.py` architecture. Rules live in YAML, have stable IDs and a five-level severity model, and run through typed evaluators (static first, semantic later). Vale is invoked through the repository `.vale.ini`, whose configured package set (`ai-tells`, `proselint`, `Readability`, and `Harper`) is authoritative. The engine plugs into the existing `scripts/wiki-lint` CLI, agent prep/wrapup loops, and `scripts/wiki-maintain` Layer A.
+An executable lint-rule engine for canon, agency, temporal truth, knowledge boundaries, retrieval discipline, and creative heuristics — layered as a cross-cutting validation surface over the existing `wiki-lint` / `wiki-maintain` / `tools/lint_wiki.py` architecture. Rules live in YAML, have stable IDs and a five-level severity model, and run through typed evaluators (static first, semantic later). Vale is invoked through the repository `.vale.ini`, whose configured package set (`ai-tells`, `proselint`, `Readability`, and `Harper`) is authoritative. The engine plugs into the existing `scripts/wiki-lint` CLI, including the approval-gated `--consolidate` structural repair mode, agent prep/wrapup loops, and `scripts/wiki-maintain` Layer A.
 
 ## Technical Context
 
 **Language/Version**: Python 3.14 (matches `.venv`)
 
-**Primary Dependencies**: Vale v3.13.0 (already installed at `~/.local/bin/vale`) with `.vale.ini` as the sole package/style authority; markdownlint-cli2 0.23.2 as a private npm development dependency for structural Markdown rules, with Node.js >=22; PyYAML 6.x for repository-owned registry and bundle YAML. Existing stack: `tools/lint_wiki.py` (deterministic lint engine, 546 LOC), `scripts/wiki-lint` (CLI wrapper), `scripts/wiki-maintain` (Layer A facade), `scripts/lint-obsidian-markdown`, `scripts/lint-literal-newlines`, `scripts/lint-wiki-write`. No Node implementation dependencies or custom Node wrappers.
+**Primary Dependencies**: Vale v3.13.0 (already installed at `~/.local/bin/vale`) with `.vale.ini` as the sole package/style authority; markdownlint-cli2 0.23.2 as a private npm development dependency for structural Markdown rules, with Node.js >=22; PyYAML 6.x for repository-owned registry and bundle YAML. Existing stack: `tools/lint_wiki.py` (deterministic lint engine, 546 LOC), `scripts/wiki-lint` (CLI wrapper), `scripts/wiki-maintain` (Layer A facade), `scripts/lint-obsidian-markdown`, `scripts/lint-literal-newlines`, `scripts/lint-wiki-write`. No Node implementation dependencies or custom Node wrappers. The CLI also retains a backward-compatible `--consolidate` mode with dry-run-by-default structural repairs.
 
 **Storage**: Filesystem — YAML rule definitions, JSON findings, JSON waiver/shadow telemetry files. No database.
 
@@ -24,7 +24,7 @@ An executable lint-rule engine for canon, agency, temporal truth, knowledge boun
 
 **Performance Goals**: <10s for deterministic rules on the full corpus (~200 pages). Static evaluators: <1s per page. Semantic evaluators: bounded by LLM call latency (out of scope for Phase 1).
 
-**Constraints**: Dependencies are declared rather than installed ad hoc: PyYAML belongs in Python project metadata; markdownlint-cli2 0.23.2 belongs in a private root `package.json` with `engines.node >=22` and a committed npm lockfile. Vale is already installed and MUST be invoked through `.vale.ini`; the linter MUST compose with existing `tools/lint_wiki.py` findings (not replace them). Thin npm scripts MUST preserve delegated arguments, stdout, stderr, and exit status and MUST NOT contain Node implementation logic. Token overhead for lint+repair ≤20% of generation cost.
+**Constraints**: Dependencies are declared rather than installed ad hoc: PyYAML belongs in Python project metadata; markdownlint-cli2 0.23.2 belongs in a private root `package.json` with `engines.node >=22` and a committed npm lockfile. Vale is already installed and MUST be invoked through `.vale.ini`; the linter MUST compose with existing `tools/lint_wiki.py` findings (not replace them). Thin npm scripts MUST preserve delegated arguments, stdout, stderr, and exit status and MUST NOT contain Node implementation logic. Token overhead for lint+repair ≤20% of generation cost. `wiki-lint --consolidate` MUST remain report-only unless an explicit approval flag is supplied, and approved repairs MUST revalidate the plan before writing.
 
 **Scale/Scope**: ~15 initial rules across 6 families. ~200 wiki pages in the vault. 5-8 task bundles.
 
@@ -114,22 +114,22 @@ tests/
 
 # CLI
 scripts/
-├── wiki-lint                 # Extended: new subcommands (task, rule, --severity filter)
+├── wiki-lint                 # Extended: new subcommands, severity filter, and --consolidate
 
-**Structure Decision**: Three-layer composition. Vale (`styles/CoDM/`) handles static prose-pattern matching and inherits all configured packages/scopes from `.vale.ini`. markdownlint-cli2 handles built-in structural Markdown rules through `.markdownlint-cli2.jsonc`. `tools/creative_lint/` Python package handles symbolic evaluators, orchestration, bundle routing, and the unified finding schema. `tools/lint_wiki.py` continues owning structural HARD checks unchanged. `scripts/wiki-lint` and thin npm aliases expose the existing command surfaces without duplicating operation logic.
+**Structure Decision**: Three-layer composition. Vale (`styles/CoDM/`) handles static prose-pattern matching and inherits all configured packages/scopes from `.vale.ini`. markdownlint-cli2 handles built-in structural Markdown rules through `.markdownlint-cli2.jsonc`. `tools/creative_lint/` Python package handles symbolic evaluators, orchestration, bundle routing, and the unified finding schema. `tools/lint_wiki.py` continues owning structural HARD checks unchanged. `scripts/wiki-lint` and thin npm aliases expose the existing command surfaces without duplicating operation logic. Consolidation is a CLI orchestration path over the existing structural findings: it produces a deterministic action plan, requires explicit `--approve`, and applies only safe structural repairs.
 
 ## Post-Design Constitution Check
 
 | Principle | Status | Evidence |
 |---|---|---|
-| V. Single Source of Truth | PASS | `.vale.ini` owns Vale packages/scopes; `rules/registry.yml` owns rule metadata; `.markdownlint-cli2.jsonc` owns structural Markdown settings. |
-| VI. Software Is Agent-Shaped | PASS | CLI and npm aliases expose structured output, direct arguments, delegated streams, and exit status without Node wrappers. |
-| VIII. Safe Automation Runs Unattended | PASS | Local pinned dependencies and deterministic aliases remove machine-global ordering assumptions; legacy checks remain until fixture-backed migration. |
+| V. Single Source of Truth | PASS | `.vale.ini` owns Vale packages/scopes; `rules/registry.yml` owns rule metadata; `.markdownlint-cli2.jsonc` owns structural Markdown settings; consolidation actions derive from lint findings. |
+| VI. Software Is Agent-Shaped | PASS | CLI and npm aliases expose structured findings/plans, direct arguments, explicit approval, delegated streams, and exit status without Node wrappers. |
+| VIII. Safe Automation Runs Unattended | PASS | Local pinned dependencies and deterministic aliases remove machine-global ordering assumptions; consolidation is non-writing unless explicitly approved. |
 | IX. Measured, Quality-Bounded Efficiency | PASS | Bundle scoping, deterministic-first evaluation, and the ≤20% lint/repair overhead target bound cost without removing creative diagnostics. |
 | XVI. The Simplest Adequate Tool | PASS | Vale and markdownlint-cli2 handle supported static checks; Python remains only for cross-page symbolic checks and orchestration. |
 | XVIII. Constitutional Layering | PASS | Feature behavior remains in the spec/contracts; implementation details are in this plan and future tasks; no constitution duplication is required. |
 
-**Post-design gate**: PASS. The Node >=22 floor, PyYAML dependency, package lockfile, and `.vale.ini` authority are explicit; no `NEEDS CLARIFICATION` remains in Technical Context.
+**Post-design gate**: PASS. The Node >=22 floor, PyYAML dependency, package lockfile, `.vale.ini` authority, and approval-gated consolidation contract are explicit; no `NEEDS CLARIFICATION` remains in Technical Context.
 
 ## Complexity Tracking
 

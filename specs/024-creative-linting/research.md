@@ -211,9 +211,20 @@ wiki-lint corpus                    # Corpus-level rules
 wiki-lint changed                   # Changed files since last commit
 wiki-lint rule <ID>                 # Describe a rule
 wiki-lint --severity block,repair   # Filter by severity
+wiki-lint --consolidate <vault>  # Dry-run structural repair plan
+
 ```
 
 No-subcommand mode remains unchanged — calls `lint_wiki.py`.
+### R10.1: Safe Consolidation Mode
+
+**Decision**: Add `wiki-lint --consolidate [vault] [--json] [--approve]` as a compatibility-preserving structural-repair path. Without `--approve`, the command emits a deterministic dry-run plan and performs no writes. With `--approve`, it re-runs the finding pass, verifies that the plan still matches the current files, and then applies only safe structural repairs.
+
+**Rationale**: The repository skill already defines a consolidation workflow, while the installed CLI currently rejects the flag. Making the behavior explicit in the same agent-shaped CLI closes that contract gap without changing the default report-only mode or granting automatic authority over canon.
+
+**Alternatives considered**:
+- Separate `wiki-maintain` command: rejected because users already discover consolidation through `wiki-lint` and a second surface would split the repair contract.
+- Interactive-only approval: rejected because agents need a deterministic, non-interactive `--approve` path with preserved exit status.
 
 ## R11: Fixture Testing Approach
 
