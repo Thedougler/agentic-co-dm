@@ -17,15 +17,15 @@ description: "Task list for feature implementation"
 
 **Purpose**: Establish repository-owned configuration, package metadata, directories, and fixture surfaces.
 
-- [ ] T001 Create `tools/creative_lint/__init__.py` and `tools/creative_lint/evaluators/__init__.py` package entry points.
-- [ ] T002 [P] Add `PyYAML>=6,<7` to the `dependencies` list in `pyproject.toml` without removing existing dependencies.
-- [ ] T003 [P] Create root `package.json` with `private: true`, `engines.node: ">=22"`, and thin `npm run` aliases that delegate directly to existing lint, maintenance, verification, and test commands.
-- [ ] T004 Generate and commit the pinned `package-lock.json` for `markdownlint-cli2` version `0.23.2` from `package.json` using npm, with no Node implementation wrapper.
-- [ ] T005 [P] Create `.vale.ini` with `StylesPath = styles`, `MinAlertLevel = suggestion`, authoritative packages `ai-tells`, `proselint`, `Readability`, and `Harper`, and the documented wiki, staging, raw, archive, fixture, and template scopes.
-- [ ] T006 [P] Create `.markdownlint-cli2.jsonc` with repository structural rules and exclusions for `wiki/_raw`, `wiki/_staging`, `wiki/_archive`, and `wiki/templates`.
-- [ ] T007 [P] Create `styles/CoDM/`, `rules/shadow/`, and `rules/candidates/` directory surfaces with tracked placeholders where empty directories cannot be versioned.
-- [ ] T008 [P] Create `tests/fixtures/creative_lint/` subdirectories for rule fixtures, integration fixtures, registry fixtures, and symbolic evaluator fixtures.
-- [ ] T009 [P] Align prerequisites and commands in `specs/024-creative-linting/quickstart.md` with Python 3.14, PyYAML 6.x, Node.js >=22, Vale 3.13.0, npm, and the committed lockfile.
+- [X] T001 Create `tools/creative_lint/__init__.py` and `tools/creative_lint/evaluators/__init__.py` package entry points.
+- [X] T002 [P] Add `PyYAML>=6,<7` to the `dependencies` list in `pyproject.toml` without removing existing dependencies.
+- [X] T003 [P] Create root `package.json` with `private: true`, `engines.node: ">=22"`, and thin `npm run` aliases that delegate directly to existing lint, maintenance, verification, and test commands.
+- [X] T004 Generate and commit the pinned `package-lock.json` for `markdownlint-cli2` version `0.23.2` from `package.json` using npm, with no Node implementation wrapper.
+- [X] T005 [P] Create `.vale.ini` with `StylesPath = styles`, `MinAlertLevel = suggestion`, authoritative packages `ai-tells`, `proselint`, `Readability`, and `Harper`, and the documented wiki, staging, raw, archive, fixture, and template scopes.
+- [X] T006 [P] Create `.markdownlint-cli2.jsonc` with repository structural rules and exclusions for `wiki/_raw`, `wiki/_staging`, `wiki/_archive`, and `wiki/templates`.
+- [X] T007 [P] Create `styles/CoDM/`, `rules/shadow/`, and `rules/candidates/` directory surfaces with tracked placeholders where empty directories cannot be versioned.
+- [X] T008 [P] Create `tests/fixtures/creative_lint/` subdirectories for rule fixtures, integration fixtures, registry fixtures, and symbolic evaluator fixtures.
+- [X] T009 Align prerequisites and commands in `specs/024-creative-linting/quickstart.md` with Python 3.14, PyYAML 6.x, Node.js >=22, Vale 3.13.0, npm, and the committed lockfile.
 
 ---
 
@@ -35,8 +35,8 @@ description: "Task list for feature implementation"
 
 **Checkpoint**: Finding construction, serialization, and validation constants are stable before story-specific implementation begins.
 
-- [ ] T010 [P] Implement the universal `Finding` dataclass and `to_dict()` serialization in `tools/creative_lint/finding.py` from `contracts/finding-schema.md`, including required `rule_id`, `result`, `severity`, `location.file`, `evidence`, `reason`, and `evaluator` fields plus optional `repair_target` and `waiver`.
-- [ ] T011 [P] Define shared allowed values, rule-ID validation, severity ordering, category names, evaluator names, lifecycle names, and result names in `tools/creative_lint/constants.py`.
+- [X] T010 [P] Implement the universal `Finding` dataclass and `to_dict()` serialization in `tools/creative_lint/finding.py` from `contracts/finding-schema.md`, including required `rule_id`, `result`, `severity`, `location.file`, `evidence`, `reason`, and `evaluator` fields plus optional `repair_target` and `waiver`.
+- [X] T011 [P] Define shared allowed values, rule-ID validation, severity ordering, category names, evaluator names, lifecycle names, and result names in `tools/creative_lint/constants.py`.
 
 ---
 
@@ -52,14 +52,14 @@ description: "Task list for feature implementation"
 
 ### Tests for User Story 3
 
-- [ ] T012 [US3] Add registry behavior tests in `tests/test_creative_lint.py` for YAML loading, `get()`, category/evaluator queries, active/shadow filtering, duplicate IDs, malformed IDs, invalid enums, missing required fields, invalid Vale paths, and unresolved references.
+- [X] T012 [US3] Add registry behavior tests in `tests/test_creative_lint.py` for YAML loading, `get()`, category/evaluator queries, active/shadow filtering, duplicate IDs, malformed IDs, invalid enums, missing required fields, invalid Vale paths, and unresolved references.
 
 ### Implementation for User Story 3
 
-- [ ] T013 [US3] Implement `RuleDefinition` and `Registry` in `tools/creative_lint/registry.py` with the APIs in `contracts/registry-contract.md`: `load`, `get`, `by_category`, `by_evaluator`, `active`, `shadow`, `all_ids`, and `validate`.
-- [ ] T014 [US3] Add registry validation in `tools/creative_lint/registry.py` for required fields, unique IDs, `^[A-Z]+\\d{3}$` format, category/scope/severity/evaluator/lifecycle enums, existing Vale styles, reference warnings, and the `scene`/`diversity` severity ceiling of `WARN`.
-- [ ] T015 [US3] Populate `rules/registry.yml` with the initial rule set from `research.md` R7: AGENCY001-003, CANON001-002, KNOW001-002, TEMP001, SCENE001-002, WIKI001-002, DIVERSITY001, and RETRIEVAL001, including metadata, lifecycle, repairs, tags, conflicts, dependencies, and Vale style references.
-- [ ] T016 [US3] Add registry metadata fixtures under `tests/fixtures/creative_lint/registry/` covering a valid rule, duplicate ID, invalid ID, missing Vale style, invalid enum, unresolved reference, and a scene rule above the `WARN` ceiling.
+- [X] T013 [US3] Implement `RuleDefinition` and `Registry` in `tools/creative_lint/registry.py` with the APIs in `contracts/registry-contract.md`: `load`, `get`, `by_category`, `by_evaluator`, `active`, `shadow`, `all_ids`, and `validate`.
+- [X] T014 [US3] Add registry validation in `tools/creative_lint/registry.py` for required fields, unique IDs, `^[A-Z]+\\d{3}$` format, category/scope/severity/evaluator/lifecycle enums, existing Vale styles, reference warnings, and the `scene`/`diversity` severity ceiling of `WARN`.
+- [X] T015 [US3] Populate `rules/registry.yml` with the initial rule set from `research.md` R7: AGENCY001-003, CANON001-002, KNOW001-002, TEMP001, SCENE001-002, WIKI001-002, DIVERSITY001, and RETRIEVAL001, including metadata, lifecycle, repairs, tags, conflicts, dependencies, and Vale style references.
+- [X] T016 [US3] Add registry metadata fixtures under `tests/fixtures/creative_lint/registry/` covering a valid rule, duplicate ID, invalid ID, missing Vale style, invalid enum, unresolved reference, and a scene rule above the `WARN` ceiling.
 
 **Checkpoint**: Rule definitions are the single metadata source and are independently queryable and validated.
 
@@ -73,11 +73,11 @@ description: "Task list for feature implementation"
 
 ### Tests for User Story 4
 
-- [ ] T017 [US4] Add severity behavior tests in `tests/test_creative_lint.py` for ordering, severity capping, `repair_required` for BLOCK/REPAIR, `review_needed` for REVIEW-only results, `clean` for WARN/INFO-only results, and the creative category ceiling.
+- [X] T017 [US4] Add severity behavior tests in `tests/test_creative_lint.py` for ordering, severity capping, `repair_required` for BLOCK/REPAIR, `review_needed` for REVIEW-only results, `clean` for WARN/INFO-only results, and the creative category ceiling.
 
 ### Implementation for User Story 4
 
-- [ ] T018 [US4] Implement `SEVERITY_ORDER`, `min_severity()`, status computation, and category ceilings in `tools/creative_lint/severity.py`, preserving the independent lifecycle/severity dimensions and the FR-005, FR-006, and FR-016 action semantics.
+- [X] T018 [US4] Implement `SEVERITY_ORDER`, `min_severity()`, status computation, and category ceilings in `tools/creative_lint/severity.py`, preserving the independent lifecycle/severity dimensions and the FR-005, FR-006, and FR-016 action semantics.
 
 **Checkpoint**: Severity decisions are deterministic, observable, and independent of evaluator implementation.
 
@@ -91,16 +91,16 @@ description: "Task list for feature implementation"
 
 ### Tests for User Story 6
 
-- [ ] T019 [US6] Add evaluator and schema tests in `tests/test_creative_lint.py` for Vale mapping, symbolic mapping, `pass|fail|abstain`, unavailable evaluator records, location fields, registry-derived severity, and all required finding-schema fields.
+- [X] T019 [US6] Add evaluator and schema tests in `tests/test_creative_lint.py` for Vale mapping, symbolic mapping, `pass|fail|abstain`, unavailable evaluator records, location fields, registry-derived severity, and all required finding-schema fields.
 
 ### Implementation for User Story 6
 
-- [ ] T020 [P] [US6] Create Vale rule files `styles/CoDM/AGENCY001.yml`, `AGENCY002.yml`, `AGENCY003.yml`, `KNOW001.yml`, `KNOW002.yml`, `TEMP001.yml`, `SCENE001.yml`, and `SCENE002.yml` using the required extension points, scopes, severity mappings, and ID-bearing messages from `contracts/vale-style-contract.md`.
-- [ ] T021 [P] [US6] Implement Vale invocation and JSON mapping in `tools/creative_lint/vale_adapter.py`, passing the repository `.vale.ini`, stripping the `CoDM.` check prefix, mapping line/span/match fields, resolving registry metadata, and warning gracefully when Vale is absent.
-- [ ] T022 [P] [US6] Implement symbolic evaluators in `tools/creative_lint/evaluators/symbolic.py` for CANON001, CANON002, WIKI001, WIKI002, and RETRIEVAL001 by wrapping existing `tools/lint_wiki.py` findings without modifying that engine.
-- [ ] T023 [P] [US6] Add evaluator fixtures under `tests/fixtures/creative_lint/symbolic/` for dead and stale canon references, valid references, missing frontmatter, invalid lifecycle/type, broken wikilinks, and indeterminate evaluation.
-- [ ] T024 [US6] Implement `LintResult` and evaluator orchestration in `tools/creative_lint/engine.py`, merging Vale and symbolic findings, supporting semantic/human unavailable states, applying metadata, computing summary counts, and deriving status.
-- [ ] T025 [US6] Add conflict detection to `tools/creative_lint/engine.py` for opposing active rules in one run, emitting `LINT-CONFLICT` with precedence guidance without silently choosing a creative outcome.
+- [X] T020 [P] [US6] Create Vale rule files `styles/CoDM/AGENCY001.yml`, `AGENCY002.yml`, `AGENCY003.yml`, `KNOW001.yml`, `KNOW002.yml`, `TEMP001.yml`, `SCENE001.yml`, and `SCENE002.yml` using the required extension points, scopes, severity mappings, and ID-bearing messages from `contracts/vale-style-contract.md`.
+- [X] T021 [P] [US6] Implement Vale invocation and JSON mapping in `tools/creative_lint/vale_adapter.py`, passing the repository `.vale.ini`, stripping the `CoDM.` check prefix, mapping line/span/match fields, resolving registry metadata, and warning gracefully when Vale is absent.
+- [X] T022 [P] [US6] Implement symbolic evaluators in `tools/creative_lint/evaluators/symbolic.py` for CANON001, CANON002, WIKI001, WIKI002, and RETRIEVAL001 by wrapping existing `tools/lint_wiki.py` findings without modifying that engine.
+- [X] T023 [P] [US6] Add evaluator fixtures under `tests/fixtures/creative_lint/symbolic/` for dead and stale canon references, valid references, missing frontmatter, invalid lifecycle/type, broken wikilinks, and indeterminate evaluation.
+- [X] T024 [US6] Implement `LintResult` and evaluator orchestration in `tools/creative_lint/engine.py`, merging Vale and symbolic findings, supporting semantic/human unavailable states, applying metadata, computing summary counts, and deriving status.
+- [X] T025 [US6] Add conflict detection to `tools/creative_lint/engine.py` for opposing active rules in one run, emitting `LINT-CONFLICT` with precedence guidance without silently choosing a creative outcome.
 
 **Checkpoint**: Static and symbolic evaluators run through the universal finding contract.
 
@@ -114,13 +114,13 @@ description: "Task list for feature implementation"
 
 ### Tests for User Story 5
 
-- [ ] T026 [US5] Add bundle-resolution tests in `tests/test_creative_lint.py` for all initial bundles, category exclusion, BLOCK/REVIEW/WARN gate capping, duplicate category placement, active-only resolution, and unknown bundle errors.
+- [X] T026 [US5] Add bundle-resolution tests in `tests/test_creative_lint.py` for all initial bundles, category exclusion, BLOCK/REVIEW/WARN gate capping, duplicate category placement, active-only resolution, and unknown bundle errors.
 
 ### Implementation for User Story 5
 
-- [ ] T027 [P] [US5] Implement `BundleDefinition` and `BundleRegistry` in `tools/creative_lint/bundles.py` with YAML loading, `get()`, available-name reporting, and `resolve(registry)` returning `(RuleDefinition, effective_severity)` pairs.
-- [ ] T028 [P] [US5] Populate `rules/bundles.yml` with `session-prep`, `wiki-ingest`, `worldbuilding`, `live-codm`, and `corpus` definitions from `research.md` R8, including descriptions and block/review/diagnostics category gates.
-- [ ] T029 [US5] Integrate bundle resolution into `tools/creative_lint/engine.py` so only configured categories execute, diagnostics cap at WARN, rule severity remains authoritative within the gate, and SHADOW rules are returned separately.
+- [X] T027 [P] [US5] Implement `BundleDefinition` and `BundleRegistry` in `tools/creative_lint/bundles.py` with YAML loading, `get()`, available-name reporting, and `resolve(registry)` returning `(RuleDefinition, effective_severity)` pairs.
+- [X] T028 [P] [US5] Populate `rules/bundles.yml` with `session-prep`, `wiki-ingest`, `worldbuilding`, `live-codm`, and `corpus` definitions from `research.md` R8, including descriptions and block/review/diagnostics category gates.
+- [X] T029 [P] [US5] Integrate bundle resolution into `tools/creative_lint/engine.py` so only configured categories execute, diagnostics cap at WARN, rule severity remains authoritative within the gate, and SHADOW rules are returned separately.
 
 **Checkpoint**: Task bundles control rule scope and action severity.
 
@@ -134,16 +134,13 @@ description: "Task list for feature implementation"
 
 ### Tests for User Story 2
 
-- [ ] T030 [US2] Add subprocess tests in `tests/test_creative_lint_cli.py` for `task`, `file`, `corpus`, `changed`, `rule`, and `--consolidate`, including JSON schema, human rendering, severity filtering, dry-run/approval behavior, unknown bundle/rule errors, and exit codes.
-- [ ] T031 [US2] Add a no-subcommand regression test in `tests/test_creative_lint_cli.py` proving `scripts/wiki-lint --json wiki` retains the existing structural report shape and exit behavior.
-
-### Implementation for User Story 2
-
-- [ ] T032 [US2] Refactor `scripts/wiki-lint` to dispatch only when the first positional argument is `task`, `file`, `corpus`, `changed`, or `rule`, importing `tools.creative_lint` lazily so legacy startup and delegation remain unchanged.
-- [ ] T033 [US2] Implement `task` and `file` handlers in `scripts/wiki-lint` with bundle/inherent severity execution, path resolution, `--json`, `--severity`, and the contract exit codes.
-- [ ] T034 [US2] Implement `corpus` and `changed` handlers in `scripts/wiki-lint`, respecting the existing wiki skip directories and selecting changed Markdown files from `git diff --name-only HEAD`.
-- [ ] T035 [US2] Implement `rule` output in `scripts/wiki-lint` with registry metadata and bundle memberships, plus exit-2 messages for unknown IDs and invalid registry YAML.
-- [ ] T036 [US2] Implement human-readable rendering, severity filtering, and `--consolidate` dry-run/explicit-approval orchestration in `tools/creative_lint/cli_output.py` and `scripts/wiki-lint`, preserving report-only behavior and stale-plan rejection from `contracts/cli-contract.md`.
+- [X] T030 [US2] Add subprocess tests in `tests/test_creative_lint_cli.py` for `task`, `file`, `corpus`, `changed`, `rule`, and `--consolidate`, including JSON schema, human rendering, severity filtering, dry-run/approval behavior, unknown bundle/rule errors, and exit codes.
+- [X] T031 [US2] Add a no-subcommand regression test in `tests/test_creative_lint_cli.py` proving `scripts/wiki-lint --json wiki` retains the existing structural report shape and exit behavior.
+- [X] T032 [US2] Refactor `scripts/wiki-lint` to dispatch only when the first positional argument is `task`, `file`, `corpus`, `changed`, or `rule`, importing `tools.creative_lint` lazily so legacy startup and delegation remain unchanged.
+- [X] T033 [US2] Implement `task` and `file` handlers in `scripts/wiki-lint` with bundle/inherent severity execution, path resolution, `--json`, `--severity`, and the contract exit codes.
+- [X] T034 [US2] Implement `corpus` and `changed` handlers in `scripts/wiki-lint`, respecting the existing wiki skip directories and selecting changed Markdown files from `git diff --name-only HEAD`.
+- [X] T035 [US2] Implement `rule` output in `scripts/wiki-lint` with registry metadata and bundle memberships, plus exit-2 messages for unknown IDs and invalid registry YAML.
+- [X] T036 [US2] Implement human-readable rendering, severity filtering, and `--consolidate` dry-run/explicit-approval orchestration in `tools/creative_lint/cli_output.py` and `scripts/wiki-lint`, preserving report-only behavior and stale-plan rejection from `contracts/cli-contract.md`.
 
 **Checkpoint**: Agents and humans can invoke every specified lint surface without regressing structural mode.
 
@@ -157,13 +154,13 @@ description: "Task list for feature implementation"
 
 ### Tests for User Story 1
 
-- [ ] T037 [US1] Add end-to-end agent-loop tests in `tests/test_creative_lint.py` for AGENCY001 and CANON002 findings, repair traceability by rule ID/location, WARN/INFO non-mandate behavior, REVIEW surfacing, changed-surface re-linting, and clean convergence.
+- [X] T037 [US1] Add end-to-end agent-loop tests in `tests/test_creative_lint.py` for AGENCY001 and CANON002 findings, repair traceability by rule ID/location, WARN/INFO non-mandate behavior, REVIEW surfacing, changed-surface re-linting, and clean convergence.
 
 ### Implementation for User Story 1
 
-- [ ] T038 [US1] Implement `repair_loop()` in `tools/creative_lint/engine.py` with configurable maximum `3` iterations, repair callbacks receiving exact findings, changed-surface re-linting, and escalation of unconverged findings for DM review.
-- [ ] T039 [P] [US1] Add `tests/fixtures/creative_lint/integration/session_prep_violations.md` containing an authored PC decision and a stale/dead canonical entity reference for the independent acceptance scenario.
-- [ ] T040 [US1] Document the agent invocation and repair contract in `docs/creative-linting.md`, stating that BLOCK/REPAIR must be repaired, REVIEW must be surfaced, and WARN/INFO must not be mechanically optimized away.
+- [X] T038 [US1] Implement `repair_loop()` in `tools/creative_lint/engine.py` with configurable maximum `3` iterations, repair callbacks receiving exact findings, changed-surface re-linting, and escalation of unconverged findings for DM review.
+- [X] T039 [P] [US1] Add `tests/fixtures/creative_lint/integration/session_prep_violations.md` containing an authored PC decision and a stale/dead canonical entity reference for the independent acceptance scenario.
+- [X] T040 [US1] Document the agent invocation and repair contract in `docs/creative-linting.md`, stating that BLOCK/REPAIR must be repaired, REVIEW must be surfaced, and WARN/INFO must not be mechanically optimized away.
 
 **Checkpoint**: The MVP agent loop produces actionable findings and converges or escalates after three repair passes.
 
@@ -177,13 +174,13 @@ description: "Task list for feature implementation"
 
 ### Tests for User Story 7
 
-- [ ] T041 [US7] Add lifecycle and shadow tests in `tests/test_creative_lint.py` for DRAFT skipping, SHADOW telemetry, ACTIVE output, promotion evidence, severity independence, and creative diagnostic ceilings.
+- [X] T041 [US7] Add lifecycle and shadow tests in `tests/test_creative_lint.py` for DRAFT skipping, SHADOW telemetry, ACTIVE output, promotion evidence, severity independence, and creative diagnostic ceilings.
 
 ### Implementation for User Story 7
 
-- [ ] T042 [US7] Implement append-only shadow telemetry in `tools/creative_lint/shadow.py`, writing per-rule JSONL under `rules/shadow/` and exposing agreement, false-positive, and repair-helpfulness measurements.
-- [ ] T043 [US7] Wire lifecycle filtering and shadow recording into `tools/creative_lint/engine.py`, excluding SHADOW findings from agent output/status while exposing them in `LintResult.shadow`.
-- [ ] T044 [US7] Add `rules/shadow/` telemetry files to `.gitignore` and document DRAFT → SHADOW → ACTIVE promotion evidence in `docs/creative-linting.md`.
+- [X] T042 [US7] Implement append-only shadow telemetry in `tools/creative_lint/shadow.py`, writing per-rule JSONL under `rules/shadow/` and exposing agreement, false-positive, and repair-helpfulness measurements.
+- [X] T043 [US7] Wire lifecycle filtering and shadow recording into `tools/creative_lint/engine.py`, excluding SHADOW findings from agent output/status while exposing them in `LintResult.shadow`.
+- [X] T044 [US7] Add `rules/shadow/` telemetry files to `.gitignore` and document DRAFT → SHADOW → ACTIVE promotion evidence in `docs/creative-linting.md`.
 
 **Checkpoint**: New rules can be measured safely before activation.
 
@@ -197,13 +194,13 @@ description: "Task list for feature implementation"
 
 ### Tests for User Story 8
 
-- [ ] T045 [US8] Add waiver behavior tests in `tests/test_creative_lint.py` for required fields, exact rule matching, `file:`, `npc:`, `session:`, and `*` targets, active/expired waivers, suppression metadata, and missing expiry rejection.
+- [X] T045 [US8] Add waiver behavior tests in `tests/test_creative_lint.py` for required fields, exact rule matching, `file:`, `npc:`, `session:`, and `*` targets, active/expired waivers, suppression metadata, and missing expiry rejection.
 
 ### Implementation for User Story 8
 
-- [ ] T046 [US8] Implement `Waiver` and `WaiverRegistry` in `tools/creative_lint/waivers.py` with required rule ID, target, reason, owner, granted, and expires fields plus expiry checks.
-- [ ] T047 [US8] Integrate waiver matching into `tools/creative_lint/engine.py`, attaching waiver metadata, excluding matched findings from repair status, and counting waived findings without deleting audit records.
-- [ ] T048 [US8] Validate the repository-owned `rules/waivers.json` shape and document DM approval, target matching, and expiry workflow in `docs/creative-linting.md`.
+- [X] T046 [US8] Implement `Waiver` and `WaiverRegistry` in `tools/creative_lint/waivers.py` with required rule ID, target, reason, owner, granted, and expires fields plus expiry checks.
+- [X] T047 [US8] Integrate waiver matching into `tools/creative_lint/engine.py`, attaching waiver metadata, excluding matched findings from repair status, and counting waived findings without deleting audit records.
+- [X] T048 [US8] Validate the repository-owned `rules/waivers.json` shape and document DM approval, target matching, and expiry workflow in `docs/creative-linting.md`.
 
 **Checkpoint**: Contextual exceptions are explicit, auditable, and temporary.
 
@@ -217,9 +214,9 @@ description: "Task list for feature implementation"
 
 ### Tests and Implementation for User Story 9
 
-- [ ] T049 [P] [US9] Create Vale fixtures under `tests/fixtures/creative_lint/AGENCY001/`, `AGENCY002/`, `AGENCY003/`, `KNOW001/`, `KNOW002/`, `TEMP001/`, `SCENE001/`, and `SCENE002/` using `fail_*.md`, `pass_*.md`, and `ambiguous_*.md` names.
-- [ ] T050 [P] [US9] Create symbolic fixtures under `tests/fixtures/creative_lint/CANON001/`, `CANON002/`, `WIKI001/`, `WIKI002/`, and `RETRIEVAL001/`, including valid counterexamples and the required frontmatter/state context.
-- [ ] T051 [US9] Implement fixture discovery and assertions in `tests/test_creative_lint.py`, requiring should-fail and should-pass coverage for every active BLOCK rule and recording ambiguous outcomes without failing the suite.
+- [X] T049 [P] [US9] Create Vale fixtures under `tests/fixtures/creative_lint/AGENCY001/`, `AGENCY002/`, `AGENCY003/`, `KNOW001/`, `KNOW002/`, `TEMP001/`, `SCENE001/`, and `SCENE002/` using `fail_*.md`, `pass_*.md`, and `ambiguous_*.md` names.
+- [X] T050 [P] [US9] Create symbolic fixtures under `tests/fixtures/creative_lint/CANON001/`, `CANON002/`, `WIKI001/`, `WIKI002/`, and `RETRIEVAL001/`, including valid counterexamples and the required frontmatter/state context.
+- [X] T051 [US9] Implement fixture discovery and assertions in `tests/test_creative_lint.py`, requiring should-fail and should-pass coverage for every active BLOCK rule and recording ambiguous outcomes without failing the suite.
 
 **Checkpoint**: Fixture coverage protects the acceptable region and satisfies the active BLOCK-rule regression requirement.
 
@@ -233,12 +230,12 @@ description: "Task list for feature implementation"
 
 ### Tests for User Story 10
 
-- [ ] T052 [US10] Add correction-classification tests in `tests/test_creative_lint_cli.py` for existing-rule matches, no-match candidate output, SHADOW lifecycle defaults, duplicate avoidance, and insufficient-precision non-promotion.
+- [X] T052 [US10] Add correction-classification tests in `tests/test_creative_lint_cli.py` for existing-rule matches, no-match candidate output, SHADOW lifecycle defaults, duplicate avoidance, and insufficient-precision non-promotion.
 
 ### Implementation for User Story 10
 
-- [ ] T053 [US10] Implement the `candidate` command in `scripts/wiki-lint` to match correction text against registry titles/messages/tags and emit a repository-owned SHADOW candidate template under `rules/candidates/` when no existing rule matches.
-- [ ] T054 [US10] Document correction routing, fixture requirements, telemetry thresholds of greater than 90% human agreement and less than 10% false positives, and promotion review in `docs/creative-linting.md`.
+- [X] T053 [US10] Implement the `candidate` command in `scripts/wiki-lint` to match correction text against registry titles/messages/tags and emit a repository-owned SHADOW candidate template under `rules/candidates/` when no existing rule matches.
+- [X] T054 [US10] Document correction routing, fixture requirements, telemetry thresholds of greater than 90% human agreement and less than 10% false positives, and promotion review in `docs/creative-linting.md`.
 
 **Checkpoint**: A DM correction becomes an inspectable rule-improvement path rather than duplicated prompt prose.
 
@@ -248,12 +245,12 @@ description: "Task list for feature implementation"
 
 **Purpose**: Integrate corpus maintenance, complete off-the-shelf Markdown migration, finish documentation, and prove the full contract.
 
-- [ ] T055 [P] Integrate the `corpus` bundle into `scripts/wiki-maintain` as an optional Layer A report step using the same `tools/creative_lint/engine.py` implementation and compact JSON output.
-- [ ] T056 [P] Port checks from `scripts/lint-obsidian-markdown` and `scripts/lint-literal-newlines` into `.markdownlint-cli2.jsonc` and corresponding fixture cases under `tests/fixtures/creative_lint/`, retaining the legacy scripts until equivalent coverage passes.
-- [ ] T057 Remove or deprecate `scripts/lint-obsidian-markdown` and `scripts/lint-literal-newlines` only after their checks have passing markdownlint-cli2 fixtures, and update every caller to the replacement surface.
-- [ ] T058 [P] Complete `docs/creative-linting.md` with architecture, rule authoring, bundle configuration, CLI examples, finding schema, lifecycle, waivers, fixtures, and maintenance integration.
-- [ ] T059 Run validation scenarios V1–V8 from `specs/024-creative-linting/quickstart.md` and record only required command corrections in that file.
-- [ ] T060 Run `.venv/bin/python -m pytest tests/test_creative_lint.py tests/test_creative_lint_cli.py -v` and the existing structural regression command from `specs/024-creative-linting/quickstart.md`; resolve failures without changing accepted behavior.
+- [X] T055 [P] Integrate the `corpus` bundle into `scripts/wiki-maintain` as an optional Layer A report step using the same `tools/creative_lint/engine.py` implementation and compact JSON output.
+- [X] T056 [P] Port checks from `scripts/lint-obsidian-markdown` and `scripts/lint-literal-newlines` into `.markdownlint-cli2.jsonc` and corresponding fixture cases under `tests/fixtures/creative_lint/`, retaining the legacy scripts until equivalent coverage passes.
+- [X] T057 Remove or deprecate `scripts/lint-obsidian-markdown` and `scripts/lint-literal-newlines` only after their checks have passing markdownlint-cli2 fixtures, and update every caller to the replacement surface.
+- [X] T058 [P] Complete `docs/creative-linting.md` with architecture, rule authoring, bundle configuration, CLI examples, finding schema, lifecycle, waivers, fixtures, and maintenance integration.
+- [X] T059 Run validation scenarios V1–V8 from `specs/024-creative-linting/quickstart.md` and record only required command corrections in that file.
+- [X] T060 Run `.venv/bin/python -m pytest tests/test_creative_lint.py tests/test_creative_lint_cli.py -v` and the existing structural regression command from `specs/024-creative-linting/quickstart.md`; resolve failures without changing accepted behavior.
 
 ---
 

@@ -12,10 +12,10 @@ from ..finding import Finding
 from ..registry import Registry
 
 
-def _selected(paths: Iterable[Path], vault: Path) -> list[Path]:
+def _selected(paths: Iterable[Path], vault: Path, root: Path) -> list[Path]:
     selected: list[Path] = []
     for raw in paths:
-        path = raw if raw.is_absolute() else (Path.cwd() / raw)
+        path = raw if raw.is_absolute() else (root / raw)
         path = path.resolve()
         if path.is_dir():
             selected.extend(sorted(p for p in path.rglob("*.md") if p.is_file()))
@@ -43,18 +43,20 @@ def _location(path: Path, root: Path, line: int = 1, text: str | None = None) ->
 
 
 def _make(rule, *, path: Path, root: Path, evidence: str, line: int = 1,
-          text: str | None = None, severity: str | None = None) -> Finding:
+          text: str | None = None, severity: str | None = None,
+          evaluator: str = "symbolic") -> Finding:
     return Finding(rule_id=rule.id, result="fail", severity=severity or rule.severity,
                    location=_location(path, root, line, text), evidence=evidence,
-                   reason=rule.message, repair_target=rule.repair, evaluator="symbolic")
+                   reason=rule.message, repair_target=rule.repair, evaluator=evaluator)
 
 
 def evaluate_symbolic(paths: Iterable[Path], registry: Registry, *, root: Path,
                        vault: Path | None = None, rule_ids: set[str] | None = None,
                        severity_overrides: dict[str, str] | None = None) -> list[Finding]:
     """Evaluate deterministic cross-page rules for selected Markdown files."""
+    root = root.resolve()
     vault = (vault or root / "wiki").resolve()
-    selected = _selected(paths, vault)
+    selected = _selected(paths, vault, root)
     selected_set = {p.resolve() for p in selected}
     findings: list[Finding] = []
     pages, lookup = lint_wiki.load(vault) if vault.is_dir() else ({}, {})
@@ -79,7 +81,8 @@ def evaluate_symbolic(paths: Iterable[Path], registry: Registry, *, root: Path,
             rule = _rule(registry, "WIKI001")
             if rule:
                 findings.append(_make(rule, path=path, root=root,
-                                      evidence=f"Missing required frontmatter: {', '.join(missing)}"))
+                                      evidence=f"Missing required frontmatter: {', '.join(missing)}",
+                                      evaluator="lint_wiki"))
         bad = []
         if fields.get("type") and fields["type"].strip("\"'") not in lint_wiki.CAMPAIGN_TYPES:
             bad.append(f"type={fields['type']}")
@@ -89,7 +92,8 @@ def evaluate_symbolic(paths: Iterable[Path], registry: Registry, *, root: Path,
             rule = _rule(registry, "WIKI002")
             if rule:
                 findings.append(_make(rule, path=path, root=root,
-                                      evidence="Invalid owner field: " + ", ".join(bad)))
+                                      evidence="Invalid owner field: " + ", ".join(bad),
+                                      evaluator="lint_wiki"))
 
     for path in selected:
         try:
@@ -105,7 +109,8 @@ def evaluate_symbolic(paths: Iterable[Path], registry: Registry, *, root: Path,
             rule = _rule(registry, "WIKI001")
             if rule:
                 findings.append(_make(rule, path=path, root=root,
-                                      evidence=f"Missing required frontmatter: {', '.join(missing)}"))
+                                      evidence=f"Missing required frontmatter: {', '.join(missing)}",
+                                      evaluator="lint_wiki"))
         bad = []
         if fields.get("type") and fields["type"].strip("\"'") not in lint_wiki.CAMPAIGN_TYPES:
             bad.append(f"type={fields['type']}")
@@ -115,7 +120,8 @@ def evaluate_symbolic(paths: Iterable[Path], registry: Registry, *, root: Path,
             rule = _rule(registry, "WIKI002")
             if rule:
                 findings.append(_make(rule, path=path, root=root,
-                                      evidence="Invalid owner field: " + ", ".join(bad)))
+                                      evidence="Invalid owner field: " + ", ".join(bad),
+                                      evaluator="lint_wiki"))
 
     # Cross-page links are evaluated only for selected source files.
     for rel, page in pages.items():
@@ -131,7 +137,8 @@ def evaluate_symbolic(paths: Iterable[Path], registry: Registry, *, root: Path,
                 rule = _rule(registry, "RETRIEVAL001")
                 if rule:
                     findings.append(_make(rule, path=source, root=root, line=line, text=match.group(0),
-                                          evidence=f"Unresolved wikilink: [[{raw}]]"))
+                                          evidence=f"Unresolved wikilink: [[{raw}]]",
+                                          evaluator="lint_wiki"))
                 continue
             target = pages[targets[0]]
             target_path = Path(target["path"])

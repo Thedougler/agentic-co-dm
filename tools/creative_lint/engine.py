@@ -16,6 +16,7 @@ from .waivers import WaiverRegistry
 from .evaluators.symbolic import evaluate_symbolic
 
 ROOT = Path(__file__).resolve().parents[2]
+_SKIP_DIRS = frozenset({"_archive", "_archives", "_raw", "_readouts", "_staging", "_meta", "templates", ".obsidian"})
 
 
 @dataclass(slots=True)
@@ -38,7 +39,7 @@ class LintResult:
             "findings": [finding.to_dict() for finding in self.findings],
             "summary": dict(self.summary),
             "shadow": [finding.to_dict() for finding in self.shadow],
-            **({"warnings": self.warnings} if self.warnings else {}),
+            **({"warnings": list(self.warnings)} if self.warnings else {}),
         }
 
 
@@ -51,26 +52,29 @@ class LintEngine:
         self.root = (root or ROOT).resolve()
         self.vault = (vault or self.root / "wiki").resolve()
         self.waivers = waivers
-        self.shadow_recorder = shadow_recorder
+        self.shadow_recorder = shadow_recorder or ShadowRecorder(self.root / "rules" / "shadow")
 
     def _expand_paths(self, paths: Iterable[str | Path] | None) -> list[Path]:
         raw_paths = list(paths or [self.vault])
         selected: list[Path] = []
-        skip_dirs = {"_archive", "_archives", "_raw", "_readouts", "_staging", "_meta", "templates", ".obsidian"}
         for raw in raw_paths:
             path = Path(raw)
             if not path.is_absolute():
-                path = (Path.cwd() / path).resolve()
+                path = (self.root / path).resolve()
+            else:
+                path = path.resolve()
             if path.is_dir():
-                selected.extend(sorted(
-                    p for p in path.rglob("*.md")
-                    if p.is_file() and not set(p.relative_to(path).parts) & skip_dirs
-                ))
+                for candidate in path.rglob("*.md"):
+                    if not candidate.is_file():
+                        continue
+                    if _SKIP_DIRS.intersection(candidate.relative_to(path).parts):
+                        continue
+                    selected.append(candidate)
             elif path.is_file() and path.suffix.lower() == ".md":
                 selected.append(path)
         return sorted(set(selected))
 
-    def _rules_for(self, bundle: str | None, rule_ids: set[str] | None) -> tuple[list[tuple[RuleDefinition, str]], list[RuleDefinition]]:
+    def _rules_for(self, bundle: str | None, rule_ids: set[str] | None) -> tuple[list[tuple[RuleDefinition, str]], list[tuple[RuleDefinition, str]]]:
         if bundle:
             if self.bundles is None:
                 raise ValueError("bundle registry is not configured")
@@ -81,16 +85,22 @@ class LintEngine:
                     if category in categories:
                         raise ValueError(f"bundle {bundle} places category {category} more than once")
                     categories[category] = GATES[gate]
-            active = [(rule, _cap(rule.severity, categories[rule.category]))
-                      for rule in self.registry.rules
-                      if rule.lifecycle == "ACTIVE" and rule.category in categories]
-            shadow = [rule for rule in self.registry.rules if rule.lifecycle == "SHADOW" and rule.category in categories]
+            active = [
+                (rule, _cap(rule.severity, categories[rule.category]))
+                for rule in self.registry.rules
+                if rule.lifecycle == "ACTIVE" and rule.category in categories
+            ]
+            shadow = [
+                (rule, _cap(rule.severity, categories[rule.category]))
+                for rule in self.registry.rules
+                if rule.lifecycle == "SHADOW" and rule.category in categories
+            ]
         else:
             active = [(rule, rule.severity) for rule in self.registry.rules if rule.lifecycle == "ACTIVE"]
-            shadow = [rule for rule in self.registry.rules if rule.lifecycle == "SHADOW"]
+            shadow = [(rule, rule.severity) for rule in self.registry.rules if rule.lifecycle == "SHADOW"]
         if rule_ids is not None:
             active = [(rule, severity) for rule, severity in active if rule.id in rule_ids]
-            shadow = [rule for rule in shadow if rule.id in rule_ids]
+            shadow = [(rule, severity) for rule, severity in shadow if rule.id in rule_ids]
         return active, shadow
 
     def run(self, *, bundle: str | None = None, paths: Iterable[str | Path] | None = None,
@@ -99,66 +109,79 @@ class LintEngine:
         selected = self._expand_paths(paths)
         active, shadow_rules = self._rules_for(bundle, rule_ids)
         active_ids = {rule.id for rule, _ in active}
-        severity_overrides = {rule.id: severity for rule, severity in active}
+        active_overrides = {rule.id: severity for rule, severity in active}
         warnings: list[str] = []
+
         vale_findings, vale_warnings = run_vale(
-            [path for path in selected if path.suffix.lower() == ".md"], self.registry,
-            root=self.root, severity_overrides=severity_overrides)
+            selected, self.registry, root=self.root, severity_overrides=active_overrides
+        )
         warnings.extend(vale_warnings)
         findings = [finding for finding in vale_findings if finding.rule_id in active_ids]
-        symbolic_findings = evaluate_symbolic(selected, self.registry, root=self.root, vault=self.vault,
-                                              rule_ids=active_ids, severity_overrides=severity_overrides)
-        for finding in symbolic_findings:
-            finding.severity = severity_overrides.get(finding.rule_id, finding.severity)
-        findings.extend(symbolic_findings)
-        # Rules requiring unavailable semantic/human services abstain explicitly.
+        findings.extend(evaluate_symbolic(
+            selected, self.registry, root=self.root, vault=self.vault,
+            rule_ids=active_ids, severity_overrides=active_overrides,
+        ))
+
         evaluated_ids = {finding.rule_id for finding in findings}
         for rule, severity in active:
-            if rule.evaluator in {"semantic", "human", "retrieval"} and rule.id not in evaluated_ids:
-                findings.append(Finding(rule_id=rule.id, result="abstain", severity=severity,
-                                        location={"file": "", "line": 1}, evidence="evaluator_unavailable",
-                                        reason=rule.message, repair_target=rule.repair, evaluator=rule.evaluator))
-        # Conflicts are surfaced instead of selecting a creative winner.
+            if rule.evaluator in {"semantic", "human"} and rule.id not in evaluated_ids:
+                findings.append(Finding(
+                    rule_id=rule.id, result="abstain", severity=severity,
+                    location={"file": "", "line": 1}, evidence="evaluator_unavailable",
+                    reason=rule.message, repair_target=rule.repair, evaluator=rule.evaluator,
+                ))
+
         active_by_id = {rule.id: rule for rule, _ in active}
-        conflict_pairs = set()
+        conflict_pairs: set[tuple[str, str]] = set()
         for rule in active_by_id.values():
             for other in rule.conflicts:
                 if other in active_by_id:
-                    conflict_pairs.add(tuple(sorted((rule.id, other))))
+                    conflict_pairs.add((min(rule.id, other), max(rule.id, other)))
         for left, right in sorted(conflict_pairs):
-            findings.append(Finding("LINT-CONFLICT", "fail", "REVIEW", {"file": "", "line": 1},
-                                    f"Rules {left} and {right} conflict in bundle {bundle or 'all'}",
-                                    "Conflicting rules require DM or agent precedence guidance",
-                                    evaluator="symbolic"))
-        # SHADOW findings are evaluated and recorded but never enter active output.
+            findings.append(Finding(
+                "LINT-CONFLICT", "fail", "REVIEW", {"file": "", "line": 1},
+                f"Rules {left} and {right} conflict in bundle {bundle or 'all'}",
+                "Conflicting rules require DM or agent precedence guidance",
+                evaluator="symbolic",
+            ))
+
         shadow_findings: list[Finding] = []
         if shadow_rules:
-            shadow_ids = {rule.id for rule in shadow_rules}
-            shadow_findings = [finding for finding in vale_findings if finding.rule_id in shadow_ids]
-            symbolic_shadow = evaluate_symbolic(selected, self.registry, root=self.root, vault=self.vault,
-                                                rule_ids=shadow_ids)
-            shadow_findings.extend(symbolic_shadow)
+            shadow_ids = {rule.id for rule, _ in shadow_rules}
+            shadow_overrides = {rule.id: severity for rule, severity in shadow_rules}
+            shadow_findings.extend(finding for finding in vale_findings if finding.rule_id in shadow_ids)
+            shadow_findings.extend(evaluate_symbolic(
+                selected, self.registry, root=self.root, vault=self.vault,
+                rule_ids=shadow_ids, severity_overrides=shadow_overrides,
+            ))
+            for finding in shadow_findings:
+                finding.severity = shadow_overrides.get(finding.rule_id, finding.severity)
             if self.shadow_recorder:
                 self.shadow_recorder.record(shadow_findings)
+
         waived = 0
         for finding in findings:
             if self.waivers:
                 waiver = self.waivers.match(finding, session=session)
                 if waiver:
-                    finding.waiver = {"rule_id": waiver.rule_id, "target": waiver.target,
-                                      "reason": waiver.reason, "expires": waiver.expires}
+                    finding.waiver = {
+                        "rule_id": waiver.rule_id, "target": waiver.target,
+                        "reason": waiver.reason, "expires": waiver.expires,
+                    }
                     waived += 1
         if severity_filter:
             findings = [finding for finding in findings if finding.severity in severity_filter]
         summary = Counter({severity: 0 for severity in ("BLOCK", "REPAIR", "REVIEW", "WARN", "INFO")})
         for finding in findings:
-            if finding.result == "fail":
+            if finding.result == "fail" and finding.severity in summary:
                 summary[finding.severity] += 1
         summary["waived"] = waived
         actionable = [finding for finding in findings if finding.result == "fail" and finding.waiver is None]
-        return LintResult(status=status_from_findings(actionable), bundle=bundle,
-                          files_checked=len(selected), rules_evaluated=len(active), findings=findings,
-                          summary=dict(summary), shadow=shadow_findings, warnings=warnings)
+        return LintResult(
+            status=status_from_findings(actionable), bundle=bundle,
+            files_checked=len(selected), rules_evaluated=len(active), findings=findings,
+            summary=dict(summary), shadow=shadow_findings, warnings=warnings,
+        )
 
     def repair_loop(self, *, bundle: str, paths: Iterable[str | Path],
                     repair_callback: Callable[[list[Finding]], Iterable[str | Path] | bool | None],
@@ -166,9 +189,11 @@ class LintEngine:
         current_paths = list(paths)
         result = self.run(bundle=bundle, paths=current_paths)
         for _ in range(max(0, max_iterations)):
-            blocking = [finding for finding in result.findings
-                        if finding.result == "fail" and finding.severity in {"BLOCK", "REPAIR"}
-                        and finding.waiver is None]
+            blocking = [
+                finding for finding in result.findings
+                if finding.result == "fail" and finding.severity in {"BLOCK", "REPAIR"}
+                and finding.waiver is None
+            ]
             if not blocking:
                 return result
             changed = repair_callback(blocking)
@@ -181,4 +206,6 @@ class LintEngine:
 
 
 def _cap(severity: str, ceiling: str) -> str:
+    if severity not in SEVERITY_ORDER or ceiling not in SEVERITY_ORDER:
+        raise ValueError(f"unknown severity {severity!r} or ceiling {ceiling!r}")
     return severity if SEVERITY_ORDER[severity] <= SEVERITY_ORDER[ceiling] else ceiling

@@ -33,15 +33,32 @@ class Finding:
 
     @classmethod
     def from_dict(cls, value: dict[str, Any]) -> "Finding":
+        if not isinstance(value, dict):
+            raise ValueError("finding must be an object")
         required = ("rule_id", "result", "severity", "location", "evidence", "reason", "evaluator")
         missing = [key for key in required if key not in value]
         if missing:
             raise ValueError(f"finding missing required fields: {', '.join(missing)}")
+        from .constants import EVALUATORS, RESULTS, SEVERITIES, is_rule_id
+        if not is_rule_id(str(value["rule_id"])):
+            raise ValueError(f"invalid finding rule ID: {value['rule_id']!r}")
+        if value["result"] not in RESULTS:
+            raise ValueError(f"invalid finding result: {value['result']!r}")
+        if value["severity"] not in SEVERITIES:
+            raise ValueError(f"invalid finding severity: {value['severity']!r}")
+        if value["evaluator"] not in EVALUATORS:
+            raise ValueError(f"invalid finding evaluator: {value['evaluator']!r}")
+        location = value["location"]
+        if not isinstance(location, dict) or not isinstance(location.get("file"), str):
+            raise ValueError("finding location.file must be a string")
+        for key in ("line", "col", "end_line", "end_col"):
+            if key in location and (not isinstance(location[key], int) or location[key] < 1):
+                raise ValueError(f"finding location.{key} must be a positive integer")
         return cls(
             rule_id=str(value["rule_id"]),
             result=str(value["result"]),
             severity=str(value["severity"]),
-            location=dict(value["location"]),
+            location=dict(location),
             evidence=str(value["evidence"]),
             reason=str(value["reason"]),
             evaluator=str(value["evaluator"]),

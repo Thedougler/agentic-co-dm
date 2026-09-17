@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-"""Fail on literal backslash-n (\\n) in session/beat markdown *bodies*.
+"""Deprecated compatibility checker for literal newline tokens.
 
+The repository's Markdown structure is linted by markdownlint-cli2; this
+project-specific body check remains until equivalent coverage is complete.
 Wiki-UI / Obsidian readability: accidental ``\\n`` in prose shows as text, not a break.
 
 Scopes (default):

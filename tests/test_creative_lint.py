@@ -8,7 +8,7 @@ import pytest
 from tools.creative_lint.bundles import BundleRegistry
 from tools.creative_lint.engine import LintEngine
 from tools.creative_lint.finding import Finding
-from tools.creative_lint.registry import Registry
+from tools.creative_lint.registry import Registry, RuleDefinition
 from tools.creative_lint.severity import min_severity, status_from_findings
 from tools.creative_lint.shadow import ShadowRecorder
 from tools.creative_lint.vale_adapter import map_vale_output
@@ -123,3 +123,96 @@ def test_repair_loop_retests_changed_surface(tmp_path):
 
     result = engine.repair_loop(bundle="session-prep", paths=[path], repair_callback=repair)
     assert result.status == "clean"
+
+
+def test_finding_from_dict_validates_contract():
+    finding = Finding.from_dict({
+        "rule_id": "AGENCY001", "result": "fail", "severity": "BLOCK",
+        "location": {"file": "x.md", "line": 2}, "evidence": "match",
+        "reason": "reason", "evaluator": "vale",
+    })
+    assert finding.to_dict()["location"]["line"] == 2
+    with pytest.raises(ValueError, match="invalid finding severity"):
+        Finding.from_dict({**finding.to_dict(), "severity": "CRITICAL"})
+
+
+def test_registry_warns_on_unresolved_references(tmp_path):
+    path = tmp_path / "registry.yml"
+    path.write_text(
+        "rules:\n"
+        "  - id: TEST001\n    title: test\n    category: agency\n"
+        "    scope: content\n    severity: BLOCK\n    evaluator: symbolic\n"
+        "    lifecycle: ACTIVE\n    message: test\n    depends: [NOPE001]\n",
+        encoding="utf-8",
+    )
+    registry = Registry.load(path)
+    assert any("warning:" in error and "NOPE001" in error for error in registry.validate())
+
+
+def test_bundle_validation_rejects_duplicate_categories(tmp_path):
+    path = tmp_path / "bundles.yml"
+    path.write_text(
+        "bundles:\n  demo:\n    block: [agency]\n    review: [agency]\n",
+        encoding="utf-8",
+    )
+    with pytest.raises(ValueError, match="appears"):
+        BundleRegistry.load(path)
+
+
+def test_symbolic_rules_detect_dead_and_stale_entities(tmp_path):
+    vault = tmp_path / "wiki"
+    (vault / "entities").mkdir(parents=True)
+    (vault / "journal").mkdir()
+    owner = "---\ntitle: Dead NPC\ncategory: npc\ntags: []\nsources: []\ncreated: 2026-01-01\nupdated: 2026-01-01\ntype: npc\nlifecycle: rejected\nreveal: dm\n---\n"
+    (vault / "entities" / "dead-npc.md").write_text(owner, encoding="utf-8")
+    source = "---\ntitle: Prep\ncategory: session\ntags: []\nsources: []\ncreated: 2026-01-01\nupdated: 2026-01-01\ntype: session-prep\nlifecycle: draft\nreveal: dm\n---\n[[dead-npc]]\n"
+    source_path = vault / "journal" / "prep.md"
+    source_path.write_text(source, encoding="utf-8")
+    registry = Registry.load(ROOT / "rules" / "registry.yml")
+    bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
+    result = LintEngine(registry, bundles, root=tmp_path, vault=vault).run(
+        bundle="session-prep", paths=[source_path]
+    )
+    assert any(f.rule_id == "CANON001" and f.evaluator == "symbolic" for f in result.findings)
+
+
+def test_shadow_rules_are_excluded_from_active_result(tmp_path):
+    vault = tmp_path / "wiki"
+    vault.mkdir()
+    page = vault / "page.md"
+    page.write_text("plain output\n", encoding="utf-8")
+    rule = RuleDefinition(
+        id="WIKI001", title="Missing", category="wiki", scope="frontmatter",
+        severity="BLOCK", evaluator="symbolic", lifecycle="SHADOW",
+        message="missing", repair="add fields",
+    )
+    registry = Registry([rule])
+    result = LintEngine(registry, root=tmp_path, vault=vault).run(paths=[page])
+    assert result.findings == []
+    assert result.shadow and result.shadow[0].rule_id == "WIKI001"
+    assert (tmp_path / "rules" / "shadow" / "WIKI001.jsonl").is_file()
+
+
+def test_expired_waiver_does_not_suppress_finding(tmp_path):
+    waiver_path = tmp_path / "waivers.json"
+    waiver_path.write_text(json.dumps([{
+        "rule_id": "AGENCY001", "target": "*", "reason": "temporary",
+        "owner": "DM", "granted": "2020-01-01", "expires": "2020-01-02",
+    }]), encoding="utf-8")
+    registry = Registry.load(ROOT / "rules" / "registry.yml")
+    bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
+    result = LintEngine(
+        registry, bundles, root=ROOT, vault=ROOT / "wiki",
+        waivers=WaiverRegistry.load(waiver_path),
+    ).run(bundle="session-prep", paths=[FIXTURES / "AGENCY001" / "fail_authored_decision.md"])
+    finding = next(f for f in result.findings if f.rule_id == "AGENCY001")
+    assert finding.waiver is None and result.status == "repair_required"
+
+
+def test_fixture_families_have_fail_and_pass_cases():
+    registry = Registry.load(ROOT / "rules" / "registry.yml")
+    for rule in registry.active():
+        if rule.id.startswith(("DIVERSITY", "CANON", "WIKI", "RETRIEVAL")):
+            directory = FIXTURES / rule.id
+            assert list(directory.glob("fail_*.md")), rule.id
+            assert list(directory.glob("pass_*.md")), rule.id

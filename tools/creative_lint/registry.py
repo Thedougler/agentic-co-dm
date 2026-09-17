@@ -31,17 +31,26 @@ class RuleDefinition:
 
     @classmethod
     def from_mapping(cls, value: dict[str, Any]) -> "RuleDefinition":
+        if not isinstance(value, dict):
+            raise ValueError("rule entry must be a mapping")
         missing = [key for key in _REQUIRED if key not in value]
         if missing:
             raise ValueError(f"rule missing required fields: {', '.join(missing)}")
+        lists: dict[str, list[str]] = {}
+        for key in ("tags", "conflicts", "depends"):
+            raw = value.get(key, [])
+            if raw is None:
+                raw = []
+            if not isinstance(raw, list):
+                raise ValueError(f"rule {value.get('id', '<unknown>')}: {key} must be a list")
+            lists[key] = [str(item) for item in raw]
         return cls(
             id=str(value["id"]), title=str(value["title"]), category=str(value["category"]),
             scope=str(value["scope"]), severity=str(value["severity"]),
             evaluator=str(value["evaluator"]), lifecycle=str(value["lifecycle"]),
             message=str(value["message"]), vale_style=value.get("vale_style"),
-            repair=value.get("repair"), tags=[str(x) for x in value.get("tags", []) or []],
-            conflicts=[str(x) for x in value.get("conflicts", []) or []],
-            depends=[str(x) for x in value.get("depends", []) or []],
+            repair=value.get("repair"), tags=lists["tags"],
+            conflicts=lists["conflicts"], depends=lists["depends"],
         )
 
 
@@ -123,7 +132,10 @@ class Registry:
                     style = str(rule.vale_style)
                     if not style.endswith(".yml"):
                         style += ".yml"
-                    root = self.path.parent.parent if self.path else Path.cwd()
+                    if self.path:
+                        root = self.path.parent.parent if self.path.parent.name == "rules" else self.path.parent
+                    else:
+                        root = Path.cwd()
                     if not (root / "styles" / style).is_file():
                         errors.append(f"{rule.id}: Vale style does not exist: {rule.vale_style}")
             taste_error = validate_category_severity(rule.category, rule.severity)

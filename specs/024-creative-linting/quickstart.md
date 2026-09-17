@@ -7,7 +7,8 @@
 - Python 3.14 (`.venv`) with project dependencies installed from `pyproject.toml`, including PyYAML 6.x
 - Node.js >=22 and npm
 - Vale 3.13.0 (`vale --version`)
-- Repository `package.json` and committed `package-lock.json`
+- Repository `package.json`, `.markdownlint-cli2.jsonc`, and committed `package-lock.json`
+- Repository-owned Vale styles under `styles/`, including the configured Harper package
 - Repo root as CWD
 
 ## Setup
@@ -24,8 +25,10 @@ vale --version
 npm exec -- markdownlint-cli2 --version
 # → markdownlint-cli2 0.23.2
 
-# Verify the configured Vale package authority is used by the repository alias
+# Thin aliases delegate directly to the repository commands.
+# `.vale.ini` remains the sole Vale package and path-scope authority.
 npm run lint:vale -- --help
+npm run lint:markdown -- --help
 
 # Verify existing lint still works
 ./scripts/wiki-lint --json wiki | python3 -c "import sys,json; d=json.load(sys.stdin); print(f'pages={d[\"scope\"][\"pages\"]}')"
@@ -46,7 +49,7 @@ for e in errors: print(f'  {e}')
 "
 ```
 
-**Expected**: `rules=~15 errors=0`
+**Expected**: `rules=14 errors=0`
 
 ### V2: Vale Runs CoDM Style Against a Fixture
 
@@ -56,13 +59,14 @@ vale --output=JSON --config=.vale.ini tests/fixtures/creative_lint/AGENCY001/fai
 ```
 
 **Expected**: JSON output containing a finding with `Check: "CoDM.AGENCY001"`.
+Fixture scope enables only `CoDM`; wiki pages use the package set declared by `.vale.ini`, including Harper.
 
 ```bash
 # Run Vale against a should-pass fixture
 vale --output=JSON --config=.vale.ini tests/fixtures/creative_lint/AGENCY001/pass_situation_description.md
 ```
 
-**Expected**: Empty findings array for this rule.
+**Expected**: JSON output with no `CoDM.AGENCY001` findings (normally an empty object for this file).
 
 ### V3: wiki-lint task Subcommand
 
@@ -95,7 +99,7 @@ for rule, sev in b.resolve(reg):
 "
 ```
 
-**Expected**: Rules from agency/canon/wiki categories at their inherent severity. Retrieval/temporal at max REVIEW. Scene/diversity at max WARN.
+**Expected**: Rules from agency/canon/wiki categories at their inherent severity. Retrieval/temporal are capped at REVIEW. Scene/diversity are capped at WARN.
 
 ### V6: Existing wiki-lint Unchanged
 
@@ -155,6 +159,7 @@ print('severity filter OK')
 ```
 
 **Expected**:
+
 - The first command reports `status: "dry_run"`, includes ordered safe actions, and leaves the fixture vault unchanged.
 - The second command revalidates the findings before writing and reports `status: "applied"` or a clear blocked error.
 - Running `./scripts/wiki-lint --json wiki` without `--consolidate` retains report-only behavior.
@@ -166,10 +171,10 @@ print('severity filter OK')
 ```
 
 **Expected**: All tests pass. Covers:
+
 - Registry loading and validation
 - Duplicate ID rejection
-- Severity ceiling enforcement
-- Bundle resolution with gate logic
+- Severity gates
 - Vale adapter JSON mapping
 - Symbolic evaluator basics
-- Fixture harness (should-fail/pass/ambiguous per rule)
+- Fixture harness with `fail_*.md`, `pass_*.md`, and `ambiguous_*.md` cases for static and symbolic rule families

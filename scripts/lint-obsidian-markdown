@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-"""Lint vault notes against obsidian-markdown hard rules.
+"""Deprecated compatibility checker for Obsidian Markdown.
 
+New structural Markdown checks belong to markdownlint-cli2; this command
+remains available for project-specific checks until their migration is complete.
 Checks (FAIL unless noted):
   md_internal_link     — [text](….md) / relative .md path instead of [[wikilink]]
   title_only_frontmatter — frontmatter has title/date but no AGENTS `type` (entity dirs)

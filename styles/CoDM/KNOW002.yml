@@ -1,5 +1,5 @@
 extends: existence
-message: "KNOW002: NPC uses a meta-knowledge phrase"
+message: "KNOW002: NPC uses a meta-knowledge phrase outside the fiction"
 level: error
 scope: text
 tokens:

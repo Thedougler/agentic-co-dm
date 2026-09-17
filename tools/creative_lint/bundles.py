@@ -3,9 +3,11 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Any
 
 import yaml
 
+from .constants import CATEGORIES
 from .registry import Registry, RuleDefinition
 from .severity import min_severity
 
@@ -31,13 +33,14 @@ class BundleDefinition:
             for category in category_names or []:
                 if category in categories:
                     raise ValueError(f"bundle {self.name} places category {category} more than once")
+                if category not in CATEGORIES:
+                    raise ValueError(f"bundle {self.name} contains unknown category {category}")
                 categories[category] = GATES[gate]
-        resolved: list[tuple[RuleDefinition, str]] = []
-        for rule in registry.rules:
-            if rule.lifecycle != "ACTIVE" or rule.category not in categories:
-                continue
-            resolved.append((rule, min_severity(rule.severity, categories[rule.category])))
-        return resolved
+        return [
+            (rule, min_severity(rule.severity, categories[rule.category]))
+            for rule in registry.rules
+            if rule.lifecycle == "ACTIVE" and rule.category in categories
+        ]
 
     def categories(self) -> set[str]:
         return set(self.block or []) | set(self.review or []) | set(self.diagnostics or [])
@@ -58,10 +61,20 @@ class BundleRegistry:
         raw = raw or {}
         entries = raw.get("bundles", raw) if isinstance(raw, dict) else raw
         if isinstance(entries, list):
-            entries = {item["name"]: item for item in entries}
+            names: set[str] = set()
+            mapped: dict[str, Any] = {}
+            for item in entries:
+                if not isinstance(item, dict) or not item.get("name"):
+                    raise ValueError("each bundle entry must contain a name")
+                name = str(item["name"])
+                if name in names:
+                    raise ValueError(f"duplicate bundle name {name}")
+                names.add(name)
+                mapped[name] = item
+            entries = mapped
         if not isinstance(entries, dict):
             raise ValueError("bundle registry must contain a mapping under 'bundles'")
-        bundles = []
+        bundles: list[BundleDefinition] = []
         for name, value in entries.items():
             if not isinstance(value, dict):
                 raise ValueError(f"bundle {name} must be a mapping")
@@ -72,7 +85,9 @@ class BundleRegistry:
                 diagnostics=[str(x) for x in value.get("diagnostics", []) or []],
             ))
         registry = cls(bundles, path=path)
-        registry.validate()
+        errors = registry.validate()
+        if errors:
+            raise ValueError("invalid bundle registry:\n" + "\n".join(errors))
         return registry
 
     def get(self, name: str) -> BundleDefinition:
@@ -84,13 +99,13 @@ class BundleRegistry:
     def available(self) -> list[str]:
         return sorted(self.bundles)
 
-    def memberships(self, rule_id: str) -> list[tuple[str, str]]:
-        # Rule membership is category-based; callers pass a RuleDefinition ID only
-        # when they already have the category available. This method is retained as
-        # a lightweight report surface and returns bundle gate entries.
-        return [(name, gate) for name, bundle in self.bundles.items()
-                for gate in ("block", "review", "diagnostics")
-                if rule_id in (getattr(bundle, gate) or [])]
+    def memberships(self, category: str) -> list[tuple[str, str]]:
+        return [
+            (name, gate)
+            for name, bundle in self.bundles.items()
+            for gate in ("block", "review", "diagnostics")
+            if category in (getattr(bundle, gate) or [])
+        ]
 
     def validate(self) -> list[str]:
         errors: list[str] = []
@@ -98,9 +113,12 @@ class BundleRegistry:
             locations: dict[str, str] = {}
             for gate in ("block", "review", "diagnostics"):
                 for category in getattr(bundle, gate) or []:
+                    if category not in CATEGORIES:
+                        errors.append(f"bundle {bundle.name}: invalid category {category!r}")
                     if category in locations:
-                        errors.append(f"bundle {bundle.name}: category {category} appears in {locations[category]} and {gate}")
+                        errors.append(
+                            f"bundle {bundle.name}: category {category} appears in "
+                            f"{locations[category]} and {gate}"
+                        )
                     locations[category] = gate
-        if errors:
-            raise ValueError("invalid bundle registry:\n" + "\n".join(errors))
         return errors

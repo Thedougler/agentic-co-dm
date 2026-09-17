@@ -67,25 +67,32 @@ def map_vale_output(payload: dict[str, Any], registry: Registry, *, root: Path |
 def run_vale(files: list[Path], registry: Registry, *, root: Path | None = None,
              severity_overrides: dict[str, str] | None = None,
              executable: str = "vale") -> tuple[list[Finding], list[str]]:
-    root = root or ROOT
+    root = (root or ROOT).resolve()
     if not files:
         return [], []
     binary = shutil.which(executable)
     if not binary:
         return [], [f"Vale is not installed; skipped {len(files)} file(s)"]
-    command = [binary, "--output=JSON", '--filter=.Name matches "^CoDM\\\\."',
-               f"--config={root / '.vale.ini'}",
-               *[_relative_file(p, root) for p in files]]
-    env = os.environ.copy()
-    proc = subprocess.run(command, cwd=root, capture_output=True, text=True, env=env)
-    warnings = [proc.stderr.strip()] if proc.stderr.strip() else []
+    command = [
+        binary, "--output=JSON", '--filter=.Name matches "^CoDM\\\\."',
+        f"--config={root / '.vale.ini'}",
+        *[_relative_file(p, root) for p in files],
+    ]
+    proc = subprocess.run(command, cwd=root, capture_output=True, text=True, env=os.environ.copy())
+    warnings: list[str] = []
+    if proc.stderr.strip():
+        warnings.append(proc.stderr.strip())
     if proc.returncode not in (0, 1):
         warnings.append(f"Vale exited {proc.returncode}")
+        return [], warnings
     if not proc.stdout.strip():
         return [], warnings
     try:
         payload = json.loads(proc.stdout)
     except json.JSONDecodeError as exc:
         warnings.append(f"Vale returned invalid JSON: {exc}")
+        return [], warnings
+    if not isinstance(payload, dict):
+        warnings.append("Vale returned a non-object JSON payload")
         return [], warnings
     return map_vale_output(payload, registry, root=root, severity_overrides=severity_overrides), warnings
