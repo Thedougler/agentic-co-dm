@@ -57,7 +57,40 @@ An agent needs to add, rename, or update a frontmatter field across many wiki pa
 
 ---
 
-### User Story 4 - Dry Run and Diff Preview (Priority: P2)
+### User Story 4 - Broken Link Repair (Priority: P1)
+
+An agent needs to resolve existing broken wikilinks across the vault — links pointing to pages that were renamed, moved, or deleted without updating references. The operation auto-resolves targets using known rename history (git log, frontmatter aliases) and fuzzy matching, and accepts an explicit old→new mapping for ambiguous cases. Unresolvable links are reported, not silently dropped.
+
+**Why this priority**: Agents report 1,000+ broken links as existing baseline issues. This is the primary motivating problem for bulk ops — the vault's structural integrity depends on link resolution, and fixing these one-at-a-time is prohibitively expensive.
+
+**Independent Test**: Introduce known broken links in a test wiki subset. Run the repair operation. Verify resolved links point to existing pages, unresolvable links are reported, no valid links are altered, and frontmatter/markdown structure is preserved.
+
+**Acceptance Scenarios**:
+
+1. **Given** broken wikilinks where the target page was renamed (detectable via git history or frontmatter aliases), **When** the agent invokes broken-link repair, **Then** links are updated to the current page name and a summary reports each resolution.
+2. **Given** broken wikilinks with multiple candidate targets (fuzzy match ambiguity), **When** the operation runs without an explicit mapping, **Then** ambiguous links are reported with candidate suggestions but not auto-resolved.
+3. **Given** an explicit old→new mapping file, **When** the agent invokes broken-link repair with the mapping, **Then** mapped links are resolved per the mapping and unmapped broken links are reported separately.
+4. **Given** broken links where the target page no longer exists and no candidate is found, **When** the repair runs, **Then** those links are reported as unresolvable and left unchanged.
+
+---
+
+### User Story 5 - Bulk Tag Normalization (Priority: P2)
+
+An agent needs to normalize tags across the vault — renaming tags to match the controlled vocabulary in `_meta/taxonomy.md`, removing invalid/deprecated tags, and merging variant spellings (e.g., `dnd-5e` vs `dnd5e` vs `D&D-5e`). The operation works through frontmatter `tags:` fields and must not alter body content.
+
+**Why this priority**: Tag inconsistency is a top wiki-lint finding category. Tags are frontmatter fields, so this is a specialized case of bulk frontmatter update with taxonomy awareness.
+
+**Independent Test**: Introduce variant tag spellings in a test subset. Run tag normalization against a taxonomy file. Verify all tags match the canonical vocabulary, no body content changes, and frontmatter remains valid YAML.
+
+**Acceptance Scenarios**:
+
+1. **Given** a taxonomy file defining canonical tags and their aliases, **When** the agent invokes tag normalization, **Then** all alias tags in frontmatter are replaced with their canonical form and a summary reports changes per file.
+2. **Given** tags not present in the taxonomy (unknown tags), **When** the operation runs, **Then** unknown tags are reported but not removed unless explicitly flagged for removal.
+3. **Given** duplicate tags on a page after normalization (two aliases mapped to the same canonical tag), **When** the operation runs, **Then** duplicates are collapsed to a single instance.
+
+---
+
+### User Story 6 - Dry Run and Diff Preview (Priority: P2)
 
 Before any bulk operation commits changes, the agent can preview exactly what would change. The preview is a machine-readable diff or summary that the agent (or DM) can inspect before applying.
 
@@ -96,10 +129,14 @@ Before any bulk operation commits changes, the agent can preview exactly what wo
 - **FR-010**: Operations MUST be agent-shaped: arguments in, text or JSON out, errors on stderr, per constitution principle VI.
 - **FR-011**: The system MUST support file-path filtering (glob patterns or directory scope) so operations can target subsets of the vault.
 - **FR-012**: The system MUST handle piped wikilinks (`[[target|display]]`) correctly during renames — updating the target while preserving the display text.
+- **FR-013**: The system MUST provide a broken-link repair operation that detects broken wikilinks, auto-resolves targets using known rename history (git log, frontmatter aliases) and fuzzy matching, accepts an explicit old→new mapping for overrides, and reports unresolvable links without altering them.
+- **FR-014**: The broken-link repair operation MUST NOT auto-resolve ambiguous matches (multiple candidates) unless an explicit mapping is provided; ambiguous cases MUST be reported with candidate suggestions.
+- **FR-015**: The system MUST provide a tag normalization operation that canonicalizes frontmatter tags against a taxonomy file, merges aliases, collapses duplicates, and reports unknown tags without removing them.
+- **FR-016**: The system MUST provide an orphan detection report that lists pages with no incoming wikilinks; this is report-only and MUST NOT auto-delete or auto-link pages.
 
 ### Key Entities
 
-- **Operation**: A single bulk action (rename, replace, frontmatter-update) with its parameters, scope filter, and dry-run flag.
+- **Operation**: A single bulk action (rename, replace, frontmatter-update, broken-link-repair) with its parameters, scope filter, and dry-run flag.
 - **Scope**: The set of files an operation targets, defined by directory path, glob pattern, or frontmatter filter.
 - **Change Record**: A per-file report of what was or would be modified (file path, line numbers, old text, new text).
 
@@ -109,9 +146,17 @@ Before any bulk operation commits changes, the agent can preview exactly what wo
 
 - **SC-001**: A full-vault entity rename (touching 50+ files) completes in a single agent tool call instead of 100+ Read/Edit calls.
 - **SC-002**: All bulk operations are idempotent — a second run on already-transformed files produces zero changes and reports "no changes needed."
-- **SC-003**: No bulk operation produces invalid YAML frontmatter, broken wikilinks, or corrupted Obsidian markdown syntax, verified by `wiki-lint` passing after every operation.
+- **SC-003**: No bulk operation increases wiki-lint finding counts in any category — verified by comparing `wiki-lint` results before and after every operation (delta-based, no regressions).
 - **SC-004**: Dry-run output matches actual changes — when a dry run is followed by a live run, the set of modified files and change counts are identical.
 - **SC-005**: Agent token cost for a vault-wide rename drops by 90% or more compared to the current per-file Read/Edit approach.
+
+## Clarifications
+
+### Session 2026-09-17
+
+- Q: Should the spec include a dedicated broken-link repair operation that resolves existing broken wikilinks, or are rename and replace sufficient primitives? → A: Add a dedicated broken-link repair operation (auto-resolve stale targets from known renames/fuzzy match + manual mapping fallback).
+- Q: Should SC-003 mean "no new issues introduced" (delta-based) or "zero total findings" (absolute-clean)? → A: Delta-based — operation must not increase wiki-lint finding count in any category (no regressions).
+- Q: Which wiki-lint finding categories beyond broken links should bulk ops address? → A: Broken links + tag normalization as operations; orphan detection as report-only (no auto-fix); index rebuild out of scope (existing tooling).
 
 ## Assumptions
 
