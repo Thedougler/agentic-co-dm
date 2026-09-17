@@ -17,9 +17,9 @@ description: "Task list for Wiki Bulk Operations"
 
 **Purpose**: Establish the executable script and behavioral-test locations required by the implementation plan.
 
-- [ ] T001 Create the executable CLI entrypoint with Python 3.14 shebang and stdlib-only imports in `scripts/wiki-bulk-ops`
-- [ ] T002 [P] Create the unittest module scaffold in `tests/test_wiki_bulk_ops.py`
-- [ ] T003 Add reusable temporary-vault fixture helpers for CLI behavior tests in `tests/test_wiki_bulk_ops.py`
+- [X] T001 Create the executable CLI entrypoint with Python 3.14 shebang and stdlib-only imports in `scripts/wiki-bulk-ops`
+- [X] T002 [P] Create the unittest module scaffold in `tests/test_wiki_bulk_ops.py`
+- [X] T003 Add reusable temporary-vault fixture helpers for CLI behavior tests in `tests/test_wiki_bulk_ops.py`
 ---
 
 ## Phase 2: Foundational (Blocking Prerequisites)
@@ -28,14 +28,14 @@ description: "Task list for Wiki Bulk Operations"
 
 **CRITICAL**: No user story implementation begins until this phase is complete.
 
-- [ ] T004 Implement vault resolution from `--vault`, then `OBSIDIAN_VAULT_PATH`, then `wiki/`, and reject a missing or non-directory vault with stderr diagnostics and exit code 1 in `scripts/wiki-bulk-ops`
-- [ ] T005 Implement shared scope traversal for `--glob`, `--directory`, and whole-vault defaults, excluding `.obsidian`, `_archive`, `_raw`, `_readouts`, `_meta`, `templates`, and `attachments`, in `scripts/wiki-bulk-ops`
-- [ ] T006 Implement UTF-8 reading with per-file skip records for decode failures, relative-path reporting, and partial-failure exit code 2 in `scripts/wiki-bulk-ops`
-- [ ] T007 Implement frontmatter fence extraction, flat top-level scalar parsing, YAML-key validation (`alphanumeric + underscore + hyphen`), and preservation of the `---` delimiters in `scripts/wiki-bulk-ops`
-- [ ] T008 Implement `Change`/`ChangeRecord`/`OperationResult` dataclasses and text/JSON summaries containing `files_scanned`, `files_modified`, `files_skipped`, `total_changes`, and per-file records in `scripts/wiki-bulk-ops`
-- [ ] T009 Implement per-file atomic writes through a same-directory temporary file followed by `os.replace`, honoring `--dry-run` so no file or rename is committed in `scripts/wiki-bulk-ops`
-- [ ] T010 Implement common argparse global options (`--vault`, `--dry-run`, `--json`, `--glob`, `--directory`) and distinct exit statuses 0, 1, and 2 in `scripts/wiki-bulk-ops`
-- [ ] T011 [P] Add foundational CLI invocation and output-shape tests for missing vaults, dry-run no-write behavior, JSON summaries, and partial UTF-8 failure handling in `tests/test_wiki_bulk_ops.py`
+- [X] T004 Implement vault resolution from `--vault`, then `OBSIDIAN_VAULT_PATH`, then `wiki/`, and reject a missing or non-directory vault with stderr diagnostics and exit code 1 in `scripts/wiki-bulk-ops`
+- [X] T005 Implement shared scope traversal for `--glob`, `--directory`, and whole-vault defaults, excluding `.obsidian`, `_archive`, `_raw`, `_readouts`, `_meta`, `templates`, and `attachments`, in `scripts/wiki-bulk-ops`
+- [X] T006 Implement UTF-8 reading with per-file skip records for decode failures, relative-path reporting, and partial-failure exit code 2 in `scripts/wiki-bulk-ops`
+- [X] T007 Implement frontmatter fence extraction, flat top-level scalar parsing, YAML-key validation (`alphanumeric + underscore + hyphen`), and preservation of the `---` delimiters in `scripts/wiki-bulk-ops`
+- [X] T008 Implement `Change`/`ChangeRecord`/`OperationResult` dataclasses and text/JSON summaries containing `files_scanned`, `files_modified`, `files_skipped`, `total_changes`, and per-file records in `scripts/wiki-bulk-ops`
+- [X] T009 Implement per-file atomic writes through a same-directory temporary file followed by `os.replace`, honoring `--dry-run` so no file or rename is committed in `scripts/wiki-bulk-ops`
+- [X] T010 Implement common argparse global options (`--vault`, `--dry-run`, `--json`, `--glob`, `--directory`) and distinct exit statuses 0, 1, and 2 in `scripts/wiki-bulk-ops`
+- [X] T011 [P] Add foundational CLI invocation and output-shape tests for missing vaults, dry-run no-write behavior, JSON summaries, and partial UTF-8 failure handling in `tests/test_wiki_bulk_ops.py`
 
 **Checkpoint**: Shared traversal, validation, atomicity, dry-run, and reporting are ready; user-story work can proceed in priority order.
 
@@ -51,16 +51,16 @@ description: "Task list for Wiki Bulk Operations"
 
 > Write these behavioral tests first and confirm they fail before the implementation tasks.
 
-- [ ] T012 [US1] Add failing rename behavior tests for source filename/title updates and exact `[[target]]`, `[[target|display]]`, `![[target]]`, and path-qualified rewrites in `tests/test_wiki_bulk_ops.py`
-- [ ] T013 [US1] Add failing rename safety tests for existing-destination collisions, zero-change-on-validation-error, exact matching that preserves `old-name-kin`, and body prose preservation in `tests/test_wiki_bulk_ops.py`
+- [X] T012 [US1] Add failing rename behavior tests for source filename/title updates and exact `[[target]]`, `[[target|display]]`, `![[target]]`, and path-qualified rewrites in `tests/test_wiki_bulk_ops.py`
+- [X] T013 [US1] Add failing rename safety tests for existing-destination collisions, zero-change-on-validation-error, exact matching that preserves `old-name-kin`, and body prose preservation in `tests/test_wiki_bulk_ops.py`
 
 ### Implementation for User Story 1
 
-- [ ] T014 [US1] Implement `rename` argument validation requiring exactly one existing `OLD_STEM.md`, rejecting an existing `NEW_STEM.md`, and reporting validation errors on stderr in `scripts/wiki-bulk-ops`
-- [ ] T015 [US1] Implement exact wikilink and embed target rewriting that preserves anchors, piped display text, and path prefixes while excluding body-text title mentions in `scripts/wiki-bulk-ops`
-- [ ] T016 [US1] Implement source-page frontmatter title mutation using `--old-title`/`--new-title` or the title-cased `--new` default, plus the source filename change record, in `scripts/wiki-bulk-ops`
-- [ ] T017 [US1] Integrate rename planning across all scoped markdown files with preflight collision validation, atomic apply, dry-run records, and zero writes on any validation error in `scripts/wiki-bulk-ops`
-- [ ] T018 [US1] Add rename idempotency and CLI acceptance coverage for repeated invocation, JSON line records, and exit code behavior in `tests/test_wiki_bulk_ops.py`
+- [X] T014 [US1] Implement `rename` argument validation requiring exactly one existing `OLD_STEM.md`, rejecting an existing `NEW_STEM.md`, and reporting validation errors on stderr in `scripts/wiki-bulk-ops`
+- [X] T015 [US1] Implement exact wikilink and embed target rewriting that preserves anchors, piped display text, and path prefixes while excluding body-text title mentions in `scripts/wiki-bulk-ops`
+- [X] T016 [US1] Implement source-page frontmatter title mutation using `--old-title`/`--new-title` or the title-cased `--new` default, plus the source filename change record, in `scripts/wiki-bulk-ops`
+- [X] T017 [US1] Integrate rename planning across all scoped markdown files with preflight collision validation, atomic apply, dry-run records, and zero writes on any validation error in `scripts/wiki-bulk-ops`
+- [X] T018 [US1] Add rename idempotency and CLI acceptance coverage for repeated invocation, JSON line records, and exit code behavior in `tests/test_wiki_bulk_ops.py`
 
 **Checkpoint**: User Story 1 is independently runnable and delivers the MVP entity-rename workflow.
 
@@ -76,16 +76,16 @@ description: "Task list for Wiki Bulk Operations"
 
 > Write these behavioral tests first and confirm they fail before the implementation tasks.
 
-- [ ] T019 [US2] Add failing replace tests for literal body-only substitution, occurrence/file summaries, preserved YAML and callout syntax, and unchanged wikilink targets in `tests/test_wiki_bulk_ops.py`
-- [ ] T020 [US2] Add failing replace safety tests for `--include-frontmatter`, `--include-links`, regex mode, empty-wikilink refusal, idempotency, and line-numbered change records in `tests/test_wiki_bulk_ops.py`
+- [X] T019 [US2] Add failing replace tests for literal body-only substitution, occurrence/file summaries, preserved YAML and callout syntax, and unchanged wikilink targets in `tests/test_wiki_bulk_ops.py`
+- [X] T020 [US2] Add failing replace safety tests for `--include-frontmatter`, `--include-links`, regex mode, empty-wikilink refusal, idempotency, and line-numbered change records in `tests/test_wiki_bulk_ops.py`
 
 ### Implementation for User Story 2
 
-- [ ] T021 [US2] Implement `replace` argument validation requiring non-empty search text and safe literal or Python-regex compilation in `scripts/wiki-bulk-ops`
-- [ ] T022 [US2] Implement frontmatter, wikilink-target, and body safety-zone splitting so replacements default to body text and require explicit `--include-frontmatter` or `--include-links` for protected zones in `scripts/wiki-bulk-ops`
-- [ ] T023 [US2] Implement replacement application with line-numbered `Change` records, preservation of Obsidian callouts/embeds/YAML delimiters, and refusal when any result would contain `[[]]` in `scripts/wiki-bulk-ops`
-- [ ] T024 [US2] Integrate replace scope traversal, dry-run/atomic apply, summary output, and idempotent no-change success in `scripts/wiki-bulk-ops`
-- [ ] T025 [US2] Add replace CLI acceptance coverage for glob/directory filtering and partial-failure reporting in `tests/test_wiki_bulk_ops.py`
+- [X] T021 [US2] Implement `replace` argument validation requiring non-empty search text and safe literal or Python-regex compilation in `scripts/wiki-bulk-ops`
+- [X] T022 [US2] Implement frontmatter, wikilink-target, and body safety-zone splitting so replacements default to body text and require explicit `--include-frontmatter` or `--include-links` for protected zones in `scripts/wiki-bulk-ops`
+- [X] T023 [US2] Implement replacement application with line-numbered `Change` records, preservation of Obsidian callouts/embeds/YAML delimiters, and refusal when any result would contain `[[]]` in `scripts/wiki-bulk-ops`
+- [X] T024 [US2] Integrate replace scope traversal, dry-run/atomic apply, summary output, and idempotent no-change success in `scripts/wiki-bulk-ops`
+- [X] T025 [US2] Add replace CLI acceptance coverage for glob/directory filtering and partial-failure reporting in `tests/test_wiki_bulk_ops.py`
 
 **Checkpoint**: User Stories 1 and 2 independently support safe structural and body-text bulk operations.
 
@@ -101,16 +101,16 @@ description: "Task list for Wiki Bulk Operations"
 
 > Write these behavioral tests first and confirm they fail before the implementation tasks.
 
-- [ ] T026 [US3] Add failing frontmatter tests for filtered `set`, idempotent existing-value handling, non-matching-page preservation, and body-byte preservation in `tests/test_wiki_bulk_ops.py`
-- [ ] T027 [US3] Add failing frontmatter tests for `rename`, `remove`, repeated filters, invalid keys, missing action parameters, and YAML-preserving change records in `tests/test_wiki_bulk_ops.py`
+- [X] T026 [US3] Add failing frontmatter tests for filtered `set`, idempotent existing-value handling, non-matching-page preservation, and body-byte preservation in `tests/test_wiki_bulk_ops.py`
+- [X] T027 [US3] Add failing frontmatter tests for `rename`, `remove`, repeated filters, invalid keys, missing action parameters, and YAML-preserving change records in `tests/test_wiki_bulk_ops.py`
 
 ### Implementation for User Story 3
 
-- [ ] T028 [US3] Implement `frontmatter` argument validation for `set`, `rename`, and `remove`, including required `--value`/`--new-field` parameters and valid YAML key names, in `scripts/wiki-bulk-ops`
-- [ ] T029 [US3] Implement frontmatter filter parsing for repeated `--filter KEY=VAL` predicates and matching against flat top-level values in `scripts/wiki-bulk-ops`
-- [ ] T030 [US3] Implement line-level frontmatter set/update, rename-with-value-preservation, and remove mutations without reformatting unrelated keys or body content in `scripts/wiki-bulk-ops`
-- [ ] T031 [US3] Integrate frontmatter validation, dry-run/atomic apply, idempotent no-op handling, and per-line `frontmatter` change records in `scripts/wiki-bulk-ops`
-- [ ] T032 [US3] Add frontmatter CLI acceptance coverage for directory/glob scope, JSON output, and partial UTF-8 failures in `tests/test_wiki_bulk_ops.py`
+- [X] T028 [US3] Implement `frontmatter` argument validation for `set`, `rename`, and `remove`, including required `--value`/`--new-field` parameters and valid YAML key names, in `scripts/wiki-bulk-ops`
+- [X] T029 [US3] Implement frontmatter filter parsing for repeated `--filter KEY=VAL` predicates and matching against flat top-level values in `scripts/wiki-bulk-ops`
+- [X] T030 [US3] Implement line-level frontmatter set/update, rename-with-value-preservation, and remove mutations without reformatting unrelated keys or body content in `scripts/wiki-bulk-ops`
+- [X] T031 [US3] Integrate frontmatter validation, dry-run/atomic apply, idempotent no-op handling, and per-line `frontmatter` change records in `scripts/wiki-bulk-ops`
+- [X] T032 [US3] Add frontmatter CLI acceptance coverage for directory/glob scope, JSON output, and partial UTF-8 failures in `tests/test_wiki_bulk_ops.py`
 
 **Checkpoint**: User Story 3 independently performs filtered schema-level updates while preserving page bodies.
 
@@ -125,15 +125,14 @@ description: "Task list for Wiki Bulk Operations"
 ### Tests for User Story 4
 
 > Write these behavioral tests first and confirm they fail before the implementation tasks.
-
-- [ ] T033 [US4] Add failing cross-operation dry-run tests proving rename, replace, and frontmatter emit detailed JSON records and leave file bytes and filenames unchanged in `tests/test_wiki_bulk_ops.py`
-- [ ] T034 [US4] Add failing dry-run parity tests comparing preview and apply modified-file/change counts and verifying repeated live runs return zero changes in `tests/test_wiki_bulk_ops.py`
+- [X] T033 [US4] Add failing cross-operation dry-run tests proving rename, replace, and frontmatter emit detailed JSON records and leave file bytes and filenames unchanged in `tests/test_wiki_bulk_ops.py`
+- [X] T034 [US4] Add failing dry-run parity tests comparing preview and apply modified-file/change counts and verifying repeated live runs return zero changes in `tests/test_wiki_bulk_ops.py`
 
 ### Implementation for User Story 4
 
-- [ ] T035 [US4] Complete shared dry-run planning so rename filename changes and all content changes are represented with exact relative file paths, 1-indexed lines (filename line 0), old text, new text, and zones in `scripts/wiki-bulk-ops`
-- [ ] T036 [US4] Ensure all commands perform full validation and conflict detection before any write or rename, including staged-writes-compatible in-place maintenance and no creation outside the resolved vault in `scripts/wiki-bulk-ops`
-- [ ] T037 [US4] Add the script `__main__` assert-based self-check covering parser, safety-zone, idempotency, and dry-run invariants in `scripts/wiki-bulk-ops`
+- [X] T035 [US4] Complete shared dry-run planning so rename filename changes and all content changes are represented with exact relative file paths, 1-indexed lines (filename line 0), old text, new text, and zones in `scripts/wiki-bulk-ops`
+- [X] T036 [US4] Ensure all commands perform full validation and conflict detection before any write or rename, including staged-writes-compatible in-place maintenance and no creation outside the resolved vault in `scripts/wiki-bulk-ops`
+- [X] T037 [US4] Add the script `__main__` assert-based self-check covering parser, safety-zone, idempotency, and dry-run invariants in `scripts/wiki-bulk-ops`
 
 **Checkpoint**: Every operation has a reviewable, exact dry-run contract and parity with live execution.
 
@@ -143,11 +142,11 @@ description: "Task list for Wiki Bulk Operations"
 
 **Purpose**: Verify the complete public seam and document the finished operational contract without adding new behavior.
 
-- [ ] T038 [P] Add executable permission and confirm the Python 3.14 stdlib-only shebang/import contract for `scripts/wiki-bulk-ops`
-- [ ] T039 [P] Run `python3 tests/test_wiki_bulk_ops.py` and the script self-check from `scripts/wiki-bulk-ops`; fix only failures attributable to this feature
-- [ ] T040 Run the quickstart scenarios from `specs/023-wiki-bulk-ops/quickstart.md` against temporary vault fixtures, including the bad-encoding partial-failure case
-- [ ] T041 Run `wiki-lint` validation after representative rename, replace, and frontmatter operations and record any feature-caused repair in the prescribed error ledger path
-- [ ] T042 Review `scripts/wiki-bulk-ops` output, stderr, exit codes, idempotency, atomicity, and `WIKI_STAGED_WRITES` behavior against `specs/023-wiki-bulk-ops/contracts/cli-contract.md` and `specs/023-wiki-bulk-ops/spec.md`
+- [X] T038 [P] Add executable permission and confirm the Python 3.14 stdlib-only shebang/import contract for `scripts/wiki-bulk-ops`
+- [X] T039 [P] Run `python3 tests/test_wiki_bulk_ops.py` and the script self-check from `scripts/wiki-bulk-ops`; fix only failures attributable to this feature
+- [X] T040 Run the quickstart scenarios from `specs/023-wiki-bulk-ops/quickstart.md` against temporary vault fixtures, including the bad-encoding partial-failure case
+- [X] T041 Run `wiki-lint` validation after representative rename, replace, and frontmatter operations and record any feature-caused repair in the prescribed error ledger path
+- [X] T042 Review `scripts/wiki-bulk-ops` output, stderr, exit codes, idempotency, atomicity, and `WIKI_STAGED_WRITES` behavior against `specs/023-wiki-bulk-ops/contracts/cli-contract.md` and `specs/023-wiki-bulk-ops/spec.md`
 
 ---
 

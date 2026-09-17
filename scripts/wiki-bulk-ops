@@ -1,0 +1,538 @@
+#!/usr/bin/env python3
+"""Safe, idempotent bulk operations for an Obsidian wiki vault."""
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import re
+import sys
+import tempfile
+from dataclasses import asdict, dataclass
+from pathlib import Path
+from typing import Callable, Iterable
+
+SKIP_DIRS = {
+    ".obsidian",
+    "_archive",
+    "_raw",
+    "_readouts",
+    "_meta",
+    "templates",
+    "attachments",
+}
+KEY_RE = re.compile(r"^[A-Za-z0-9_-]+$")
+FM_LINE_RE = re.compile(r"^([A-Za-z0-9_-]+):([ \t]*)(.*?)(\r?\n)?$")
+LINK_RE = re.compile(r"(!?\[\[([^\]|#]*)(#[^\]|]*)?(?:\|([^\]]*))?\]\])")
+EMPTY_LINK_RE = re.compile(r"!?(?:\[\[)(?:[ \t]*(?:\]|\||#))")
+
+
+class CLIError(Exception):
+    """A user-facing validation error that should exit with status 1."""
+
+
+@dataclass
+class Change:
+    line: int
+    old: str
+    new: str
+    zone: str
+
+
+@dataclass
+class ChangeRecord:
+    file: str
+    changes: list[Change]
+    skipped: bool = False
+    skip_reason: str | None = None
+
+
+@dataclass
+class OperationResult:
+    command: str
+    dry_run: bool
+    files_scanned: int
+    files_modified: int
+    files_skipped: int
+    total_changes: int
+    records: list[ChangeRecord]
+
+    def jsonable(self) -> dict:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class Frontmatter:
+    start: int
+    end: int
+    body_start: int
+    body_end: int
+    lines: tuple[str, ...]
+
+
+def parse_frontmatter(text: str) -> Frontmatter | None:
+    """Return line indexes for a top-level ``---`` fenced block."""
+    lines = tuple(text.splitlines(keepends=True))
+    if not lines or lines[0].rstrip("\r\n") != "---":
+        return None
+    for index in range(1, len(lines)):
+        if lines[index].rstrip("\r\n") == "---":
+            return Frontmatter(0, index, 1, index, lines)
+    return None
+
+
+def parse_fields(text: str, fm: Frontmatter | None = None) -> dict[str, str]:
+    fm = fm or parse_frontmatter(text)
+    if fm is None:
+        return {}
+    fields: dict[str, str] = {}
+    for line in fm.lines[fm.body_start : fm.body_end]:
+        match = FM_LINE_RE.match(line)
+        if match and not line.startswith((" ", "\t", "-")):
+            fields[match.group(1)] = match.group(3).strip()
+    return fields
+
+
+def clean_scalar(value: str) -> str:
+    value = value.strip()
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in "\"'":
+        return value[1:-1]
+    return value
+
+
+def validate_key(key: str) -> None:
+    if not KEY_RE.fullmatch(key):
+        raise CLIError(f"invalid frontmatter key: {key!r}")
+
+
+def resolve_vault(raw: str | None) -> Path:
+    candidate = raw or os.environ.get("OBSIDIAN_VAULT_PATH") or "wiki"
+    vault = Path(candidate).expanduser().resolve()
+    if not vault.exists():
+        raise CLIError(f"vault does not exist: {vault}")
+    if not vault.is_dir():
+        raise CLIError(f"vault is not a directory: {vault}")
+    return vault
+
+
+def is_skipped_path(relative: Path) -> bool:
+    return bool(set(relative.parts) & SKIP_DIRS)
+
+
+def iter_markdown(vault: Path, glob: str | None, directory: str | None) -> Iterable[Path]:
+    if glob and directory:
+        raise CLIError("--glob and --directory cannot be used together")
+    if directory:
+        root = (vault / directory).resolve()
+        try:
+            root.relative_to(vault)
+        except ValueError as exc:
+            raise CLIError("--directory must stay inside the vault") from exc
+        if not root.exists():
+            raise CLIError(f"directory does not exist: {directory}")
+        if not root.is_dir():
+            raise CLIError(f"directory is not a directory: {directory}")
+    else:
+        root = vault
+    for path in sorted(root.rglob("*.md")):
+        if not path.is_file():
+            continue
+        relative = path.relative_to(vault)
+        if is_skipped_path(relative):
+            continue
+        if glob and not relative.match(glob):
+            continue
+        yield path
+
+
+def read_utf8(path: Path, vault: Path) -> tuple[str | None, ChangeRecord | None]:
+    relative = path.relative_to(vault).as_posix()
+    try:
+        return path.read_text(encoding="utf-8"), None
+    except UnicodeDecodeError as exc:
+        return None, ChangeRecord(relative, [], True, f"encoding error: {exc}")
+    except OSError as exc:
+        return None, ChangeRecord(relative, [], True, f"read error: {exc}")
+
+
+def atomic_write(path: Path, text: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fd, raw_name = tempfile.mkstemp(prefix=f".{path.name}.", suffix=".tmp", dir=path.parent)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8", newline="") as handle:
+            handle.write(text)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(raw_name, path)
+    except BaseException:
+        try:
+            os.unlink(raw_name)
+        except FileNotFoundError:
+            pass
+        raise
+
+
+def line_number(text: str, offset: int) -> int:
+    return text.count("\n", 0, offset) + 1
+
+
+def result_for(command: str, dry_run: bool, scanned: int, records: list[ChangeRecord]) -> OperationResult:
+    modified = sum(1 for record in records if record.changes and not record.skipped)
+    skipped = sum(1 for record in records if record.skipped)
+    changes = sum(len(record.changes) for record in records)
+    return OperationResult(command, dry_run, scanned, modified, skipped, changes, records)
+
+
+def emit(result: OperationResult, json_mode: bool, description: str) -> None:
+    if json_mode:
+        print(json.dumps(result.jsonable(), indent=2, sort_keys=True))
+        return
+    print(description)
+    for record in result.records:
+        if record.skipped:
+            print(f"  {record.file} (skipped: {record.skip_reason})")
+            continue
+        for change in record.changes:
+            print(f"  {record.file}:{change.line}  {change.old} → {change.new} [{change.zone}]")
+    print(
+        f"{result.files_scanned} files scanned, {result.files_modified} files modified, "
+        f"{result.files_skipped} skipped, {result.total_changes} changes"
+    )
+
+
+def apply_content_plans(plans: dict[Path, str], dry_run: bool) -> None:
+    if dry_run:
+        return
+    for path, text in plans.items():
+        atomic_write(path, text)
+
+
+def link_target_matches(target: str, old: str) -> bool:
+    normalized = target[:-3] if target.endswith(".md") else target
+    return normalized.rsplit("/", 1)[-1] == old
+
+
+def rewrite_links(text: str, old: str, new: str) -> tuple[str, list[Change]]:
+    changes: list[Change] = []
+
+    def replace(match: re.Match[str]) -> str:
+        whole, target, anchor, display = match.group(1), match.group(2), match.group(3) or "", match.group(4)
+        if not link_target_matches(target, old):
+            return whole
+        suffix = ".md" if target.endswith(".md") else ""
+        prefix = target.rsplit("/", 1)[0] + "/" if "/" in target else ""
+        replacement_target = f"{prefix}{new}{suffix}"
+        replacement = f"[[{replacement_target}{anchor}"
+        if display is not None:
+            replacement += f"|{display}"
+        replacement += "]]"
+        if whole.startswith("!"):
+            replacement = "!" + replacement
+        changes.append(Change(line_number(text, match.start()), whole, replacement, "wikilink"))
+        return replacement
+
+    return LINK_RE.sub(replace, text), changes
+
+
+def title_rewrite(text: str, old_title: str | None, new_title: str) -> tuple[str, list[Change]]:
+    fm = parse_frontmatter(text)
+    if fm is None:
+        return text, []
+    lines = list(fm.lines)
+    changes: list[Change] = []
+    for index in range(fm.body_start, fm.body_end):
+        match = FM_LINE_RE.match(lines[index])
+        if not match or match.group(1) != "title" or lines[index].startswith((" ", "\t")):
+            continue
+        current = clean_scalar(match.group(3))
+        if old_title is not None and current != old_title:
+            return text, []
+        newline = "\r\n" if lines[index].endswith("\r\n") else "\n" if lines[index].endswith("\n") else ""
+        new_line = f"title:{match.group(2)}{new_title}{newline}"
+        if new_line != lines[index]:
+            changes.append(Change(index + 1, lines[index].rstrip("\r\n"), new_line.rstrip("\r\n"), "frontmatter"))
+            lines[index] = new_line
+        break
+    return "".join(lines), changes
+
+
+def rename(args: argparse.Namespace) -> tuple[OperationResult, str]:
+    vault = resolve_vault(args.vault)
+    old, new = args.old, args.new
+    if not old or not new or "/" in old or "/" in new or old == new:
+        raise CLIError("rename names must be distinct non-empty file stems")
+    paths = list(iter_markdown(vault, args.glob, args.directory))
+    sources = [path for path in paths if path.stem == old]
+    if len(sources) == 0:
+        raise CLIError(f"old page not found: {old}.md")
+    if len(sources) > 1:
+        names = ", ".join(path.relative_to(vault).as_posix() for path in sources)
+        raise CLIError(f"old page is ambiguous ({len(sources)} matches): {names}")
+    source = sources[0]
+    existing_destinations = [path for path in iter_markdown(vault, None, None) if path.stem == new]
+    if existing_destinations:
+        names = ", ".join(path.relative_to(vault).as_posix() for path in existing_destinations)
+        raise CLIError(f"rename collision: destination stem already exists: {names}")
+    destination = source.with_name(f"{new}.md")
+    scanned = 0
+    records_by_path: dict[Path, ChangeRecord] = {}
+    plans: dict[Path, str] = {}
+    for path in paths:
+        scanned += 1
+        text, skipped = read_utf8(path, vault)
+        if skipped:
+            records_by_path[path] = skipped
+            continue
+        assert text is not None
+        rewritten, changes = rewrite_links(text, old, new)
+        if path == source:
+            target_title = args.new_title or new.replace("-", " ").title()
+            rewritten, title_changes = title_rewrite(rewritten, args.old_title, target_title)
+            changes += title_changes
+        if changes:
+            records_by_path[path] = ChangeRecord(path.relative_to(vault).as_posix(), changes)
+            plans[path] = rewritten
+    source_record = records_by_path.get(source)
+    source_changes = source_record.changes if source_record else []
+    source_changes.insert(0, Change(0, source.relative_to(vault).as_posix(), destination.relative_to(vault).as_posix(), "filename"))
+    records_by_path[source] = ChangeRecord(destination.relative_to(vault).as_posix(), source_changes)
+    if not args.dry_run:
+        apply_content_plans(plans, False)
+        os.replace(source, destination)
+    records = [records_by_path[path] for path in paths if path in records_by_path]
+    result = result_for("rename", args.dry_run, scanned, records)
+    return result, f"rename: {old} → {new}"
+
+
+def zone_spans(text: str) -> tuple[tuple[int, int], list[tuple[int, int]]]:
+    fm = parse_frontmatter(text)
+    frontmatter = (0, 0)
+    if fm is not None:
+        frontmatter = (0, sum(len(line) for line in fm.lines[: fm.end + 1]))
+    links = [(match.start(2), match.end(2)) for match in LINK_RE.finditer(text)]
+    return frontmatter, links
+
+
+def replace_text(text: str, pattern: re.Pattern[str], replacement: str, include_frontmatter: bool, include_links: bool) -> tuple[str, list[Change]]:
+    frontmatter, links = zone_spans(text)
+    changes: list[Change] = []
+    replacements: list[tuple[int, int, str, str]] = []
+
+    def zone_for(start: int, end: int) -> str | None:
+        if not include_frontmatter and frontmatter[1] and start < frontmatter[1] and end > frontmatter[0]:
+            return None
+        if not include_links and any(start < link_end and end > link_start for link_start, link_end in links):
+            return None
+        if frontmatter[0] <= start < frontmatter[1]:
+            return "frontmatter"
+        if any(link_start <= start < link_end for link_start, link_end in links):
+            return "wikilink"
+        return "body"
+
+    for match in pattern.finditer(text):
+        zone = zone_for(match.start(), match.end())
+        if zone is None:
+            continue
+        old = match.group(0)
+        new = match.expand(replacement) if pattern.groups else replacement
+        if old == new:
+            continue
+        replacements.append((match.start(), match.end(), old, new))
+        changes.append(Change(line_number(text, match.start()), old, new, zone))
+    result = text
+    for start, end, _old, new in reversed(replacements):
+        result = result[:start] + new + result[end:]
+    return result, changes
+
+
+def replace(args: argparse.Namespace) -> tuple[OperationResult, str]:
+    vault = resolve_vault(args.vault)
+    if args.search == "":
+        raise CLIError("--search must not be empty")
+    try:
+        pattern = re.compile(args.search if args.regex else re.escape(args.search))
+    except re.error as exc:
+        raise CLIError(f"invalid regular expression: {exc}") from exc
+    records: list[ChangeRecord] = []
+    plans: dict[Path, str] = {}
+    paths = list(iter_markdown(vault, args.glob, args.directory))
+    for path in paths:
+        text, skipped = read_utf8(path, vault)
+        if skipped:
+            records.append(skipped)
+            continue
+        assert text is not None
+        rewritten, changes = replace_text(text, pattern, args.replacement, args.include_frontmatter, args.include_links)
+        if rewritten != text:
+            empty = EMPTY_LINK_RE.search(rewritten)
+            if empty:
+                raise CLIError(f"replacement would create an empty wikilink in {path.relative_to(vault)}:{line_number(rewritten, empty.start())}")
+            records.append(ChangeRecord(path.relative_to(vault).as_posix(), changes))
+            plans[path] = rewritten
+    result = result_for("replace", args.dry_run, len(paths), records)
+    apply_content_plans(plans, args.dry_run)
+    return result, f"replace: {args.search} → {args.replacement}"
+
+
+def parse_filters(raw_filters: list[str]) -> dict[str, str]:
+    parsed: dict[str, str] = {}
+    for raw in raw_filters:
+        if "=" not in raw:
+            raise CLIError(f"filter must be KEY=VALUE: {raw!r}")
+        key, value = raw.split("=", 1)
+        validate_key(key)
+        parsed[key] = value
+    return parsed
+
+
+def frontmatter_text_mutation(text: str, args: argparse.Namespace, filters: dict[str, str]) -> tuple[str, list[Change]]:
+    fm = parse_frontmatter(text)
+    if fm is None:
+        return text, []
+    fields = parse_fields(text, fm)
+    if any(key not in fields or clean_scalar(fields[key]) != clean_scalar(value) for key, value in filters.items()):
+        return text, []
+    lines = list(fm.lines)
+    changes: list[Change] = []
+    indexes: dict[str, int] = {}
+    for index in range(fm.body_start, fm.body_end):
+        match = FM_LINE_RE.match(lines[index])
+        if match and not lines[index].startswith((" ", "\t", "-")):
+            indexes[match.group(1)] = index
+    if args.action == "set":
+        index = indexes.get(args.field)
+        if index is None:
+            newline = "\r\n" if lines[fm.end].endswith("\r\n") else "\n"
+            new_line = f"{args.field}: {args.value}{newline}"
+            insert_at = fm.end
+            lines.insert(insert_at, new_line)
+            changes.append(Change(insert_at + 1, "", new_line.rstrip("\r\n"), "frontmatter"))
+        else:
+            match = FM_LINE_RE.match(lines[index])
+            assert match is not None
+            newline = "\r\n" if lines[index].endswith("\r\n") else "\n" if lines[index].endswith("\n") else ""
+            new_line = f"{args.field}:{match.group(2)}{args.value}{newline}"
+            if new_line != lines[index]:
+                changes.append(Change(index + 1, lines[index].rstrip("\r\n"), new_line.rstrip("\r\n"), "frontmatter"))
+                lines[index] = new_line
+    elif args.action == "rename":
+        index = indexes.get(args.field)
+        if index is not None:
+            if args.new_field in indexes and args.new_field != args.field:
+                raise CLIError(f"frontmatter rename collision: {args.new_field}")
+            match = FM_LINE_RE.match(lines[index])
+            assert match is not None
+            new_line = f"{args.new_field}:{match.group(2)}{match.group(3)}{match.group(4) or ''}"
+            changes.append(Change(index + 1, lines[index].rstrip("\r\n"), new_line.rstrip("\r\n"), "frontmatter"))
+            lines[index] = new_line
+    else:
+        index = indexes.get(args.field)
+        if index is not None:
+            changes.append(Change(index + 1, lines[index].rstrip("\r\n"), "", "frontmatter"))
+            del lines[index]
+    return "".join(lines), changes
+
+
+def frontmatter(args: argparse.Namespace) -> tuple[OperationResult, str]:
+    vault = resolve_vault(args.vault)
+    validate_key(args.field)
+    if args.action == "set" and args.value is None:
+        raise CLIError("frontmatter set requires --value")
+    if args.action == "rename":
+        if not args.new_field:
+            raise CLIError("frontmatter rename requires --new-field")
+        validate_key(args.new_field)
+    filters = parse_filters(args.filter)
+    records: list[ChangeRecord] = []
+    plans: dict[Path, str] = {}
+    paths = list(iter_markdown(vault, args.glob, args.directory))
+    for path in paths:
+        text, skipped = read_utf8(path, vault)
+        if skipped:
+            records.append(skipped)
+            continue
+        assert text is not None
+        rewritten, changes = frontmatter_text_mutation(text, args, filters)
+        if changes:
+            records.append(ChangeRecord(path.relative_to(vault).as_posix(), changes))
+            plans[path] = rewritten
+    result = result_for("frontmatter", args.dry_run, len(paths), records)
+    apply_content_plans(plans, args.dry_run)
+    return result, f"frontmatter: {args.action} {args.field}"
+
+
+def build_parser() -> argparse.ArgumentParser:
+    class Parser(argparse.ArgumentParser):
+        def error(self, message: str) -> None:
+            raise CLIError(message)
+
+    def add_common(parser: argparse.ArgumentParser, *, suppress_defaults: bool = False) -> None:
+        default = argparse.SUPPRESS if suppress_defaults else None
+        parser.add_argument("--vault", default=default)
+        parser.add_argument("--dry-run", action="store_true", default=argparse.SUPPRESS if suppress_defaults else False)
+        parser.add_argument("--json", action="store_true", default=argparse.SUPPRESS if suppress_defaults else False)
+        parser.add_argument("--glob", default=default)
+        parser.add_argument("--directory", default=default)
+
+    parser = Parser(description=__doc__)
+    add_common(parser)
+    subparsers = parser.add_subparsers(dest="command", required=True, parser_class=Parser)
+    rename_parser = subparsers.add_parser("rename")
+    add_common(rename_parser, suppress_defaults=True)
+    rename_parser.add_argument("--old", required=True)
+    rename_parser.add_argument("--new", required=True)
+    rename_parser.add_argument("--old-title")
+    rename_parser.add_argument("--new-title")
+    replace_parser = subparsers.add_parser("replace")
+    add_common(replace_parser, suppress_defaults=True)
+    replace_parser.add_argument("--search", required=True)
+    replace_parser.add_argument("--replacement", required=True)
+    replace_parser.add_argument("--regex", action="store_true")
+    replace_parser.add_argument("--include-frontmatter", action="store_true")
+    replace_parser.add_argument("--include-links", action="store_true")
+    fm_parser = subparsers.add_parser("frontmatter")
+    add_common(fm_parser, suppress_defaults=True)
+    fm_parser.add_argument("--action", choices=("set", "rename", "remove"), required=True)
+    fm_parser.add_argument("--field", required=True)
+    fm_parser.add_argument("--value")
+    fm_parser.add_argument("--new-field")
+    fm_parser.add_argument("--filter", action="append", default=[])
+    return parser
+
+
+def main(argv: list[str] | None = None) -> int:
+    try:
+        args = build_parser().parse_args(argv)
+        if args.command == "rename":
+            result, description = rename(args)
+        elif args.command == "replace":
+            result, description = replace(args)
+        else:
+            result, description = frontmatter(args)
+        emit(result, args.json, description)
+        return 2 if result.files_skipped else 0
+    except CLIError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 1
+    except OSError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
+
+
+def self_check() -> None:
+    pattern = re.compile(re.escape("old"))
+    text = "---\ntitle: old\n---\n[[old]] old\n"
+    changed, changes = replace_text(text, pattern, "new", False, False)
+    assert changed == "---\ntitle: old\n---\n[[old]] new\n"
+    assert len(changes) == 1 and changes[0].zone == "body"
+    renamed, link_changes = rewrite_links("[[old|display]] ![[x/old#p]] old-kin", "old", "new")
+    assert renamed == "[[new|display]] ![[x/new#p]] old-kin"
+    assert len(link_changes) == 2
+    assert parse_fields("---\ntype: npc\n---\n") == {"type": "npc"}
+
+
+if __name__ == "__main__":
+    if len(sys.argv) == 1:
+        self_check()
+    else:
+        raise SystemExit(main())
