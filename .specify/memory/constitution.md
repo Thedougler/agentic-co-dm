@@ -1,8 +1,8 @@
 <!--
 Sync Impact Report
-- Version change: 1.34.0 → 1.35.0 (MINOR)
+- Version change: 1.35.0 → 1.36.0 (MINOR)
 - Modified principles:
-  - VI. Software Is Agent-Shaped → VI. Software Is Agent-Shaped (documentation quality gate added)
+  - XVII. Autonomous Operation → XVII. Autonomous Operation (legacy nonconformance policy added)
 - Added sections: None
 - Removed sections: None
 - Follow-up TODOs: None
@@ -228,8 +228,16 @@ waiting for a human. They MUST not bypass review, acceptance, secret protection,
 required checks, or other explicit safeguards. Human approval remains required wherever this
 constitution or an applicable lower-level policy makes it the safety boundary.
 
+Current repository standards and documented best practices are the only maintained baseline.
+Legacy behavior, convention, or artifact has no grandfathered status. The repository MUST NOT
+preserve known nonconformance merely because it is historical. When an agent discovers
+nonconformance in a maintained surface, it MUST proactively correct the authoritative source,
+migrate affected callers or dependents, and remove obsolete behavior when safe. An adopted,
+better-supported approach supersedes the former approach; historical precedent MUST NOT justify
+retaining the former approach.
+
 Rationale: autonomy keeps completed work and context current while preserving human control over
-risk and canon.
+risk and canon; refusing legacy drift keeps improvement cumulative.
 
 ### XVIII. Constitutional Layering
 
@@ -375,4 +383,4 @@ and human gates that do not prevent a named safety failure MUST be rejected or r
 
 Runtime development guidance: `AGENTS.md`.
 
-**Version**: 1.35.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 1.36.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
