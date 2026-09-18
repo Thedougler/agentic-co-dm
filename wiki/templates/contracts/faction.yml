@@ -1,3 +1,4 @@
+version: 1
 template: faction.md
 type: faction
 sections:
@@ -90,3 +91,4 @@ callouts:
 frontmatter:
   required: [title, category, tags, sources, created, updated, type, lifecycle, reveal]
   optional: [campaign, visibility, kind, status, scope, region, base, summary, aliases, redirects_to, base_confidence]
+repeatable: []

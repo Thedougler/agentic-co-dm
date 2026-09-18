@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import pytest
 import re
 import subprocess
 import tempfile
@@ -12,6 +13,7 @@ from tools.wiki_ops.index_ops import insert_index_entry, remove_index_entry, rep
 from tools.wiki_ops.identity import resolve_identity, scan_identities
 from tools.wiki_ops.manifest_ops import ManifestTransition, apply_transition
 from tools.wiki_ops.mutations import MutationOp, apply_mutation, parse_sections, section_hash
+from tools.wiki_ops.repair_plans import build_plan
 from tools.wiki_ops.template_contracts import check_conformance, load_contract
 from tools.wiki_ops.scope import parse_scope
 from tools.wiki_ops.transactions import Transaction
@@ -123,6 +125,15 @@ def test_scope_and_semantic_sections():
     section = parse_sections(page).find(["Overview"])
     assert section_hash(section.content) == section.hash
 
+
+def test_index_and_manifest_corruption_are_rejected_without_partial_state(tmp_path: Path):
+    with pytest.raises(ValueError):
+        from tools.wiki_ops.index_ops import parse_index
+        parse_index("- [[same]]\n- [[same]]\n")
+    transition = ManifestTransition("page.md", "merged_into", "canonical.md")
+    assert apply_transition({"sources": {}, "page_identity_transitions": []}, transition)["page_identity_transitions"]
+    with pytest.raises(ValueError):
+        ManifestTransition("../escape.md", "archived").validate()
 def test_scoped_lint_uses_full_vault_for_backlinks_and_index(tmp_path: Path):
     # Build fixture from the vault template so it stays in sync with the contract
     template = (ROOT / "wiki" / "templates" / "faction.md").read_text(encoding="utf-8")
@@ -141,11 +152,53 @@ def test_scoped_lint_uses_full_vault_for_backlinks_and_index(tmp_path: Path):
             "files:entities/faction/target-faction.md",
             "--vault",
             tmp_path,
-        )
+        ),
+        returncode=1,
     )
     assert report["findings"]["orphan_pages"] == []
     assert report["findings"]["index_issues"]["missing_from_index"] == []
 
+
+def test_scoped_lint_keeps_default_vale_in_acceptance_gate(tmp_path: Path):
+    page = tmp_path / "page.md"
+    page.write_text(
+        "---\n"
+        "title: Vale gate fixture\n"
+        "category: test\n"
+        "tags: []\n"
+        "sources: []\n"
+        "created: 2026-09-01\n"
+        "updated: 2026-09-16\n"
+        "type: session-prep\n"
+        "lifecycle: draft\n"
+        "reveal: dm\n"
+        "---\n\n"
+        "You decide the risk is worth it.\n",
+        encoding="utf-8",
+    )
+    default = run_cli(
+        "scripts/wiki-lint",
+        "--json",
+        "--scope",
+        "files:page.md",
+        "--vault",
+        tmp_path,
+    )
+    default_report = assert_json(default, returncode=1)
+    assert default_report["hard_fail"] is True
+    assert any(rule.startswith("VALE_") for rule in default_report["counts"])
+
+    structural_only = run_cli(
+        "scripts/wiki-lint",
+        "--json",
+        "--no-vale",
+        "--scope",
+        "files:page.md",
+        "--vault",
+        tmp_path,
+    )
+    structural_report = assert_json(structural_only, returncode=0)
+    assert structural_report["hard_fail"] is False
 
 def test_mutation_hash_and_dry_run():
     page = (FIXTURE / "fisks-fleet.md").read_text()
@@ -177,6 +230,21 @@ def test_transaction_rejects_overlapping_mutations():
     tx.add(MutationOp("replace_section", "fisks-fleet.md", {"heading_path": ["Overview"], "content_hash": section.hash}, {"content": "b"}))
     assert tx.commit()["status"] == "rejected"
 
+def test_transaction_finalizes_once_and_retains_committed_files_on_qmd_failure(tmp_path: Path):
+    page = tmp_path / "page.md"
+    page.write_text("---\ntitle: Page\n---\n# Page\n\nOld\n", encoding="utf-8")
+    calls = []
+    tx = Transaction(tmp_path, qmd_runner=lambda: calls.append("qmd") or 7)
+    content_hash = section_hash(parse_sections(page.read_text(encoding="utf-8")).find(["Page"]).content)
+    tx.add(MutationOp("replace_section", "page.md", {"heading_path": ["Page"], "content_hash": content_hash}, {"content": "New"}))
+    assert tx.commit()["status"] == "committed"
+    first = tx.finalize()
+    second = tx.finalize()
+    assert first["error"] == "finalization_failed"
+    assert second["status"] == "committed"
+    assert calls == ["qmd"]
+    assert "New" in page.read_text(encoding="utf-8")
+
 
 def test_identity_fixture_is_deterministic():
     results = scan_identities(FIXTURE)
@@ -202,6 +270,47 @@ def test_identity_redirect_resolves_without_candidates(tmp_path: Path):
     assert resolved.status == "resolved"
     assert resolved.signals["redirect_match"] is True
 
+def test_typed_frontmatter_tag_and_link_mutations_preserve_document_shape(tmp_path: Path):
+    page = tmp_path / "page.md"
+    page.write_text(
+        "---\ntitle: Page\ntags: [old]\n---\n# Page\n\nSee [[old-page]] and ![[old-page.png]].\n",
+        encoding="utf-8",
+    )
+    assert apply_mutation(tmp_path, MutationOp("add_tag", "page.md", payload={"tag": "new"}))["accepted"]
+    assert apply_mutation(
+        tmp_path,
+        MutationOp("set_frontmatter", "page.md", selector={"field": "lifecycle"}, payload={"value": "active"}),
+    )["accepted"]
+    result = apply_mutation(
+        tmp_path,
+        MutationOp(
+            "repair_links",
+            "page.md",
+            payload={
+                "mapping": [
+                    {"old_target": "old-page", "new_target": "new-page"},
+                    {"old_target": "old-page.png", "new_target": "new-page.png"},
+                ]
+            },
+        ),
+    )
+    text = page.read_text(encoding="utf-8")
+    assert "tags: [old, new]" in text
+    assert "lifecycle: active" in text
+    assert "[[new-page]]" in text and "![[new-page.png]]" in text
+
+
+def test_typed_mutation_rejects_invalid_selector_without_writing(tmp_path: Path):
+    page = tmp_path / "page.md"
+    original = "---\ntitle: Page\n---\n# Page\n"
+    page.write_text(original, encoding="utf-8")
+    result = apply_mutation(
+        tmp_path,
+        MutationOp("replace_section", "page.md", selector={"heading_path": ["Missing"]}, payload={"content": "x"}),
+    )
+    assert result["status"] == "rejected"
+    assert page.read_text(encoding="utf-8") == original
+
 
 def test_template_contract_reports_required_sections():
     contract = load_contract(Path(__file__).parents[1] / "wiki/templates/contracts/faction.yml")
@@ -209,11 +318,49 @@ def test_template_contract_reports_required_sections():
     findings = check_conformance("test.md", page, contract)
     assert any(item["rule_id"] == "TMPL_missing_required" for item in findings)
 
+def test_template_contract_respects_lifecycle_and_redirect_stubs():
+    contract = load_contract(Path(__file__).parents[1] / "wiki/templates/contracts/faction.yml")
+    page = (
+        "---\ntitle: Dormant\ntype: faction\nlifecycle: dormant\nredirects_to: canonical\n"
+        "category: faction\ntags: []\nsources: []\ncreated: 2026-09-01\nupdated: 2026-09-01\n---\n"
+        "# Dormant\n"
+    )
+    findings = check_conformance("dormant.md", page, contract)
+    assert any(item["rule_id"] == "TMPL_redirect_stub" for item in findings)
+    assert not any(item["section"] == "Active Agenda" for item in findings if "section" in item)
+
+
+def test_scope_and_cli_pipeline_resolve_typed_surface(tmp_path: Path):
+    (tmp_path / "entities").mkdir()
+    page = tmp_path / "entities" / "guard.md"
+    page.write_text("---\ntitle: Guard\ntype: npc\n---\n# Guard\n", encoding="utf-8")
+    directory = parse_scope("dir:entities").resolve(tmp_path)
+    assert directory.resolved_files == ["entities/guard.md"]
+    typed = parse_scope("type:npc").resolve(tmp_path)
+    assert typed.resolved_files == ["entities/guard.md"]
+    result = run_cli("wiki-identity", "resolve", "entities/guard.md", vault=tmp_path)
+    payload = assert_json(result)
+    assert payload["status"] == "resolved"
+
 def _fake_qmd(path: Path, body: str) -> Path:
     script = path / "qmd"
     script.write_text("#!/bin/sh\nset -eu\n" + body, encoding="utf-8")
     script.chmod(0o755)
     return script
+
+
+def test_repair_plan_contains_only_allowlisted_deterministic_actions(tmp_path: Path):
+    page = tmp_path / "old.md"
+    page.write_text("---\ntitle: Old\nredirects_to: new\n---\n# Old\n", encoding="utf-8")
+    plan = build_plan(
+        tmp_path,
+        {"findings": {"templates": [
+            {"file": "old.md", "repair_class": "deterministic_repair", "repair_action": "delete_redirect_stub", "target": "new"},
+            {"file": "old.md", "repair_class": "human_repair", "repair_action": "invent_canon"},
+        ]}},
+    )
+    assert [item["action"] for item in plan["actions"]] == ["delete_redirect_stub"]
+    assert plan["requires_approval"] is True
 
 
 def _run_qmd_hook(temp: Path, *, body: str, extra_env: dict[str, str] | None = None) -> subprocess.CompletedProcess[str]:
@@ -326,3 +473,38 @@ def test_qmd_hook_reports_one_actionable_error(tmp_path: Path):
     assert result.stdout == ""
     assert "qmd embed" in result.stderr
     assert "skipped" in result.stderr
+
+def test_identity_uses_manifest_and_content_signals(tmp_path: Path):
+    (tmp_path / "a.md").write_text(
+        "---\ntitle: Harbor Guard\ntype: faction\n---\n# Harbor Guard\n\nShared report.\n",
+        encoding="utf-8",
+    )
+    (tmp_path / "b.md").write_text(
+        "---\ntitle: Harbor Guard Auxiliary\ntype: faction\n---\n# Harbor Guard\n\nShared report.\n",
+        encoding="utf-8",
+    )
+    (tmp_path / ".manifest.json").write_text(
+        json.dumps({"sources": {"source.md": {"pages_produced": ["a.md", "b.md"]}}}),
+        encoding="utf-8",
+    )
+    result = resolve_identity(tmp_path, "a.md")
+    assert result.status == "ambiguous"
+    assert result.signals["manifest_provenance"] is True
+    assert 0 <= result.signals["qmd_content_similarity"] <= 1
+
+
+def test_identity_raw_drop_is_distinct_and_redirect_is_not_candidate(tmp_path: Path):
+    raw = tmp_path / "_raw" / "drop.md"
+    raw.parent.mkdir()
+    raw.write_text("# Raw drop\n", encoding="utf-8")
+    (tmp_path / "canonical.md").write_text(
+        "---\ntitle: Canonical\ntype: faction\n---\n# Canonical\n",
+        encoding="utf-8",
+    )
+    (tmp_path / "redirect.md").write_text(
+        "---\ntitle: Old Name\ntype: faction\nredirects_to: canonical\n---\n# Old Name\n",
+        encoding="utf-8",
+    )
+    assert resolve_identity(tmp_path, "_raw/drop.md").status == "distinct"
+    result = resolve_identity(tmp_path, "canonical.md")
+    assert all(item["path"] != "redirect.md" for item in result.candidates)

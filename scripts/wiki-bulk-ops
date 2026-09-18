@@ -15,6 +15,8 @@ from typing import Callable, Iterable
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
+from tools.wiki_ops.cli import resolve_vault as _resolve_shared_vault
+
 
 SKIP_DIRS = {
     ".obsidian",
@@ -110,15 +112,11 @@ def validate_key(key: str) -> None:
     if not KEY_RE.fullmatch(key):
         raise CLIError(f"invalid frontmatter key: {key!r}")
 
-
 def resolve_vault(raw: str | None) -> Path:
-    candidate = raw or os.environ.get("OBSIDIAN_VAULT_PATH") or "wiki"
-    vault = Path(candidate).expanduser().resolve()
-    if not vault.exists():
-        raise CLIError(f"vault does not exist: {vault}")
-    if not vault.is_dir():
-        raise CLIError(f"vault is not a directory: {vault}")
-    return vault
+    try:
+        return _resolve_shared_vault(raw)
+    except ValueError as exc:
+        raise CLIError(str(exc)) from exc
 
 
 def is_skipped_path(relative: Path) -> bool:
@@ -1056,6 +1054,8 @@ def typed_mutation(args: argparse.Namespace) -> dict[str, object]:
                 "canonical_hash": args.canonical_hash,
                 "canonical_content": content if args.content_file or args.content else None,
             }
+            if args.identity_resolution:
+                payload["identity_resolution"] = json.loads(args.identity_resolution)
             if args.rewrite_backlinks is not None:
                 payload["rewrite_backlinks"] = args.rewrite_backlinks
         elif args.kind == "update_manifest_identity":
@@ -1080,12 +1080,25 @@ def typed_mutation(args: argparse.Namespace) -> dict[str, object]:
 
 
 def typed_transaction(args: argparse.Namespace) -> tuple[dict[str, object], int]:
+    from tools.wiki_ops.repair_plans import snapshot
     from tools.wiki_ops.transactions import Transaction
+    vault = resolve_vault(args.vault)
     data = json.loads(Path(args.plan_file).read_text(encoding="utf-8"))
     actions = data.get("actions", [])
-    tx = Transaction(args.vault)
+    if not isinstance(actions, list):
+        return {"status": "rejected", "error": "malformed_plan"}, 2
+    targets = [str(item.get("target", "")) for item in actions if isinstance(item, dict) and item.get("target")]
+    expected_snapshot = data.get("snapshot")
+    if expected_snapshot and expected_snapshot != snapshot(vault, targets):
+        return {"status": "rejected", "error": "plan_snapshot_mismatch"}, 2
+    tx = Transaction(vault)
     for item in actions:
-        tx.add(item.get("mutation", item))
+        if not isinstance(item, dict):
+            return {"status": "rejected", "error": "malformed_plan"}, 2
+        if item.get("action") == "delete_redirect_stub":
+            tx.add({"kind": "delete_file", "target": item["target"]})
+        else:
+            tx.add(item.get("mutation", item))
     if not args.approve:
         result = tx.preview()
         return result, 2 if result.get("status") == "rejected" else 0
@@ -1100,7 +1113,7 @@ def typed_transaction(args: argparse.Namespace) -> tuple[dict[str, object], int]
 def typed_parser(subparsers: argparse._SubParsersAction) -> None:
     mutate = subparsers.add_parser("mutate", help="apply a typed semantic mutation")
     mutate.add_argument("kind", choices=("replace_section", "delete_section", "insert_section", "set_frontmatter", "remove_frontmatter", "add_tag", "remove_tag", "repair_links", "rewrite_links", "replace_index_entry", "remove_index_entry", "insert_index_entry", "update_manifest_identity", "rename_page", "merge_page", "rename_or_merge_page"))
-    mutate.add_argument("--vault", default="wiki")
+    mutate.add_argument("--vault", default=None)
     mutate.add_argument("--dry-run", action="store_true")
     mutate.add_argument("--json", action="store_true")
     mutate.add_argument("--file", default="index.md")
@@ -1128,11 +1141,12 @@ def typed_parser(subparsers: argparse._SubParsersAction) -> None:
     mutate.add_argument("--obsolete-path")
     mutate.add_argument("--canonical-path")
     mutate.add_argument("--canonical-hash")
+    mutate.add_argument("--identity-resolution")
     mutate.add_argument("--rewrite-backlinks", action=argparse.BooleanOptionalAction, default=None)
     transact = subparsers.add_parser("transact", help="preview or apply a repair plan atomically")
     transact.add_argument("--plan-file", required=True)
     transact.add_argument("--approve", action="store_true")
-    transact.add_argument("--vault", default="wiki")
+    transact.add_argument("--vault", default=None)
     transact.add_argument("--json", action="store_true")
 
 

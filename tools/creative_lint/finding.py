@@ -17,6 +17,7 @@ class Finding:
     repair_target: str | None = None
     waiver: dict[str, Any] | None = None
     repair_class: str = "diagnostic"
+    repair_action: dict[str, Any] | None = None
     applicability: list[str] = field(default_factory=list)
     structural_scope: list[str] = field(default_factory=list)
     exemptions: list[str] = field(default_factory=list)
@@ -32,6 +33,7 @@ class Finding:
             "reason": self.reason,
             "repair_target": self.repair_target,
             "repair_class": self.repair_class,
+            "repair_action": dict(self.repair_action) if self.repair_action else None,
             "applicability": list(self.applicability),
             "structural_scope": list(self.structural_scope),
             "exemptions": list(self.exemptions),
@@ -73,9 +75,9 @@ class Finding:
             repair_target=value.get("repair_target"),
             waiver=value.get("waiver"),
             repair_class=str(value.get("repair_class", "diagnostic")),
+            repair_action=dict(value["repair_action"]) if isinstance(value.get("repair_action"), dict) else None,
             applicability=list(value.get("applicability", [])),
             structural_scope=list(value.get("structural_scope", [])),
-            exemptions=list(value.get("exemptions", [])),
         )
 
 

@@ -9,10 +9,19 @@ ENTRY_RE = re.compile(r"^-\s+\[\[([^\]|#]+)(?:\|[^\]]+)?\]\].*$")
 
 def parse_index(text: str) -> list[tuple[str, str]]:
     rows: list[tuple[str, str]] = []
+    seen: set[str] = set()
     for line in text.splitlines(keepends=True):
-        match = ENTRY_RE.match(line.rstrip("\r\n"))
+        stripped = line.rstrip("\r\n")
+        match = ENTRY_RE.match(stripped)
         if match:
-            rows.append((match.group(1).rsplit("/", 1)[-1], line))
+            slug = match.group(1).rsplit("/", 1)[-1]
+            if slug.casefold() in seen:
+                raise ValueError(f"malformed index: duplicate entry {slug}")
+            seen.add(slug.casefold())
+            rows.append((slug, line))
+            continue
+        if stripped.lstrip().startswith("-") and ("[[" in stripped or "[" in stripped):
+            raise ValueError(f"malformed index entry: {stripped}")
     if text.strip() and not rows and "[[" in text:
         raise ValueError("malformed index: no parseable entries")
     return rows

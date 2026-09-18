@@ -14,3 +14,19 @@ def test_policy_registry_is_clean():
     data = json.loads(proc.stdout)
     assert data["status"] == "clean"
     assert data["policies"] >= 5
+
+
+def test_policy_checker_reports_missing_consumer(tmp_path: Path):
+    registry = tmp_path / "policy.yml"
+    registry.write_text(
+        "policies:\n  demo:\n    owner: docs/owner.md\n    consumers: [docs/missing.md]\n",
+        encoding="utf-8",
+    )
+    (tmp_path / "docs").mkdir()
+    (tmp_path / "docs" / "owner.md").write_text("demo owner\n", encoding="utf-8")
+    proc = subprocess.run(
+        [sys.executable, str(ROOT / "scripts/check-policy-conflicts"), "--registry", str(registry), "--root", str(tmp_path), "--json"],
+        cwd=ROOT, capture_output=True, text=True,
+    )
+    assert proc.returncode == 1
+    assert json.loads(proc.stdout)["conflicts"][0]["reason"] == "consumer_not_found"

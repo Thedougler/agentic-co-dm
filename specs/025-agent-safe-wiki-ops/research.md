@@ -136,6 +136,35 @@ QMD refresh is the most expensive step. Deferring it to transaction end means on
 **Alternatives considered**:
 - Binary auto/manual: Loses the diagnostic-only case (findings that are pure information, like INFO-level creative lint).
 
+## Vale Prose and Deprecated Pattern Layer
+
+### Decision: Vale as the detection engine for deprecated patterns, AI tells, and prose quality — findings feed into the unified Python lint finding schema via an adapter.
+
+**Rationale**: Vale is a purpose-built prose linter with an ecosystem of community packages (write-good, proselint, AI-tells detection). Custom Vale rules for deprecated patterns (e.g., `DM Thesis` heading detection) use Vale's native YAML rule format with `extends: existence` or `extends: heading`. A Python adapter (`tools/wiki_ops/vale_adapter.py`) runs Vale with `--output=JSON`, parses the structured output, and converts each Vale finding into a `LintFinding` with `repair_class: deterministic_repair` and a guidance message. This feeds into the same finding schema as structural and template conformance findings (FR-004, FR-011), so deprecated-pattern findings participate in dry-run plans, typed mutations, and batched finalization.
+
+All Vale findings are deterministic agent repair. Deprecated patterns like `DM Thesis` get `delete_section` repair actions. Prose quality findings (weasel words, passive voice, AI tells) are flagged for agent rewrite. No human gate on any Vale finding.
+
+**Alternatives considered**:
+- Custom Python regex scanner: Reinvents what Vale already does; no community package ecosystem.
+- markdownlint: Structural/formatting only — no prose quality or content pattern detection.
+- Standalone Vale with separate output: Agents would need to handle two finding formats; unified pipeline is simpler.
+
+### Decision: Custom deprecated-pattern rules use Vale's `extends: existence` with `message` field carrying agent guidance.
+
+**Rationale**: Each deprecated pattern rule is a YAML file in `styles/Deprecated/`. The `message` field carries the agent-facing guidance (e.g., "Delete this section — it is not part of any template and has no canonical purpose"). The Python adapter extracts this message and maps it to the repair action. First banned pattern: `DM Thesis` — a heading that agents hallucinate into faction and NPC pages. The rule matches `## DM Thesis` or any heading containing "DM Thesis".
+
+**Alternatives considered**:
+- Guidance in a separate registry: Extra indirection; Vale's `message` field already carries it.
+- Per-page ignore lists: Defeats the purpose — deprecated patterns should never appear.
+
+### Decision: Community Vale packages (write-good, proselint, AI-tells) installed via `vale sync` and configured in `.vale.ini`.
+
+**Rationale**: `vale sync` manages package installation from Vale's package registry. `.vale.ini` at repo root scopes Vale to `wiki/` and configures which packages are active. Community packages are well-maintained and cover common LLM prose artifacts (hedging, weasel words, clichés, passive voice). These supplement the custom `Deprecated` styles.
+
+**Alternatives considered**:
+- Vendoring community rules: Extra maintenance; `vale sync` keeps them current.
+- Writing all rules from scratch: Reinvents hundreds of existing patterns.
+
 ## Policy Single-Ownership
 
 ### Decision: Document policy ownership in a YAML registry at `docs/agents/policy-owners.yml`.

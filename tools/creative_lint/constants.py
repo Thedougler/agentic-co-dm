@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import re
 
-RULE_ID_RE = re.compile(r"^[A-Z]+\d{3}$")
+RULE_ID_RE = re.compile(r"^(?:[A-Z]+\d{3}|VALE_[A-Za-z0-9_.-]+)$")
 CATEGORIES = frozenset({"wiki", "canon", "temporal", "agency", "retrieval", "scene", "diversity"})
 SCOPES = frozenset({"content", "frontmatter", "corpus", "file"})
 SEVERITIES = frozenset({"BLOCK", "REPAIR", "REVIEW", "WARN", "INFO"})

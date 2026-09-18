@@ -288,6 +288,33 @@ def _hash_value(value: str) -> str:
         _fail("malformed_hash", "content hash must be a SHA-256 hexadecimal digest")
     return value.lower()
 
+def _identity_gate(root: Path, op: MutationOp) -> None:
+    if op.kind not in {"rename_page", "merge_page", "rename_or_merge_page"}:
+        return
+    from .identity import resolve_identity
+
+    try:
+        identity = resolve_identity(root, op.target)
+    except (OSError, ValueError):
+        return
+    if identity.signals.get("redirect_match") or identity.signals.get("canonical_path"):
+        _fail("identity_redirect", f"redirect stubs are not canonical mutation targets: {op.target}")
+    if identity.status != "ambiguous":
+        return
+    metadata = op.payload.get("identity_resolution", op.selector.get("identity_resolution"))
+    accepted = False
+    selected = None
+    if isinstance(metadata, dict):
+        accepted = metadata.get("status") in {"accepted", "resolved"} or bool(metadata.get("accepted"))
+        selected = metadata.get("candidate") or metadata.get("canonical_path") or metadata.get("path")
+    elif isinstance(metadata, str):
+        accepted = bool(metadata.strip())
+        selected = metadata
+    if not accepted:
+        _fail("identity_ambiguous", f"explicit identity_resolution is required for {op.target}")
+    if selected and str(selected) not in {candidate["path"] for candidate in identity.candidates}:
+        _fail("identity_candidate_mismatch", f"identity_resolution does not select a known candidate for {op.target}")
+
 
 def _expected_hash(op: MutationOp) -> str | None:
     for container in (op.selector, op.payload):
@@ -684,8 +711,9 @@ def resolve_mutation(vault: str | Path, op: MutationOp, text: str | None = None)
         result = remove_index_entry(current, str(op.selector.get("slug", "")))
     elif kind == "insert_index_entry":
         result = insert_index_entry(current, str(op.payload.get("entry", "")))
-    elif kind == "update_manifest_identity":
-        result = _update_manifest_identity(current, op)
+    elif kind == "delete_file":
+        _verify_hash(op, current, [], required=False)
+        result = ""
     elif kind in {"rename_page", "merge_page", "rename_or_merge_page"}:
         _fail("unsupported_context", f"{kind} requires apply_mutation for multi-file semantics")
     else:
@@ -916,37 +944,74 @@ def apply_mutation(vault: str | Path, op: MutationOp | dict[str, Any], *, dry_ru
         try:
             op = MutationOp.from_dict(raw)
         except MutationError as exc:
-            return {"status": "rejected", "kind": str(raw.get("kind", "")), "target": str(raw.get("target", "")), "dry_run": dry_run, "accepted": False, "error": exc.code, "detail": exc.detail}
+            return {
+                "status": "rejected",
+                "kind": str(raw.get("kind", "")),
+                "target": str(raw.get("target", "")),
+                "dry_run": dry_run,
+                "accepted": False,
+                "error": exc.code,
+                "detail": exc.detail,
+            }
     try:
-        if op.kind in {"rename_page"}:
+        _identity_gate(root, op)
+        if op.kind == "rename_page":
             changes, deletes, originals, destination = _rename_changes(root, op)
-            diff = "".join(_diff_for(path, root, originals.get(path) or "", value) for path, value in sorted(changes.items(), key=lambda item: str(item[0])))
-            diff += "".join(_diff_for(path, root, originals.get(path) or "", "") for path in sorted(deletes, key=lambda item: str(item)))
+            diff = "".join(
+                _diff_for(path, root, originals.get(path) or "", value)
+                for path, value in sorted(changes.items(), key=lambda item: str(item[0]))
+            )
+            diff += "".join(
+                _diff_for(path, root, originals.get(path) or "", "")
+                for path in sorted(deletes, key=lambda item: str(item))
+            )
             if changes or deletes:
                 if not dry_run:
                     _atomic_commit(changes, deletes, originals)
-                return _accepted(op, dry_run=dry_run, changed=True, diff=diff, new_target=destination, changed_files=sorted({_relative(root, path) for path in set(changes) | deletes}))
+                return _accepted(
+                    op, dry_run=dry_run, changed=True, diff=diff,
+                    new_target=destination,
+                    changed_files=sorted({_relative(root, path) for path in set(changes) | deletes}),
+                )
             return _accepted(op, dry_run=dry_run, changed=False, diff="", detail="no_op", new_target=destination, changed_files=[])
         if op.kind in {"merge_page", "rename_or_merge_page"}:
             changes, deletes, originals, source, canonical = _merge_changes(root, op)
-            diff = "".join(_diff_for(path, root, originals.get(path) or "", value) for path, value in sorted(changes.items(), key=lambda item: str(item[0])))
-            diff += "".join(_diff_for(path, root, originals.get(path) or "", "") for path in sorted(deletes, key=lambda item: str(item)))
+            diff = "".join(
+                _diff_for(path, root, originals.get(path) or "", value)
+                for path, value in sorted(changes.items(), key=lambda item: str(item[0]))
+            )
+            diff += "".join(
+                _diff_for(path, root, originals.get(path) or "", "")
+                for path in sorted(deletes, key=lambda item: str(item))
+            )
             if changes or deletes:
                 if not dry_run:
                     _atomic_commit(changes, deletes, originals)
-                return _accepted(op, dry_run=dry_run, changed=True, diff=diff, obsolete_path=source, canonical_path=canonical, changed_files=sorted({_relative(root, path) for path in set(changes) | deletes}))
+                return _accepted(
+                    op, dry_run=dry_run, changed=True, diff=diff,
+                    obsolete_path=source, canonical_path=canonical,
+                    changed_files=sorted({_relative(root, path) for path in set(changes) | deletes}),
+                )
             return _accepted(op, dry_run=dry_run, changed=False, diff="", detail="no_op", obsolete_path=source, canonical_path=canonical, changed_files=[])
         path = _target(root, op.target)
+        if op.kind == "delete_file":
+            if not path.is_file():
+                _fail("file_not_found", f"target file not found: {op.target}")
+            current = _read_text(path)
+            _verify_hash(op, current, [])
+            if not dry_run:
+                _atomic_commit({}, {path}, {path: current})
+            diff = _diff_for(path, root, current, "")
+            return _accepted(op, dry_run=dry_run, changed=True, diff=diff, changed_files=[op.target])
         if not path.is_file():
             _fail("file_not_found", f"target file not found: {op.target}")
         current = _read_text(path)
         result, diff = resolve_mutation(root, op, current)
         if result == current:
             return _accepted(op, dry_run=dry_run, changed=False, diff="", detail="no_op", changed_files=[])
-        originals: dict[Path, str | None] = {path: current}
-        changes = {path: result}
+        originals = {path: current}
         if not dry_run:
-            _atomic_commit(changes, set(), originals)
+            _atomic_commit({path: result}, set(), originals)
         return _accepted(op, dry_run=dry_run, changed=True, diff=diff, changed_files=[op.target])
     except MutationError as exc:
         return _rejected(op, dry_run=dry_run, error=exc.code, detail=exc.detail)

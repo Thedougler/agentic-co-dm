@@ -16,7 +16,10 @@ class ManifestTransition:
     timestamp: str | None = None
 
     def validate(self) -> None:
-        if not self.page_path or Path(self.page_path).is_absolute():
+        raw_path = Path(self.page_path)
+        if not self.page_path or raw_path.is_absolute() or ".." in raw_path.parts:
+            raise ValueError("page_path must be vault-relative")
+        if not self.page_path.strip():
             raise ValueError("page_path must be vault-relative")
         if self.transition not in {"merged_into", "renamed_to", "archived"}:
             raise ValueError(f"invalid identity transition: {self.transition}")
@@ -34,6 +37,9 @@ def apply_transition(data: dict[str, Any], transition: ManifestTransition) -> di
     if not isinstance(rows, list):
         raise ValueError("manifest page_identity_transitions must be a list")
     item = transition.to_dict()
+    for row in rows:
+        if not isinstance(row, dict):
+            raise ValueError("manifest page_identity_transitions entries must be objects")
     existing = next((row for row in rows if all(row.get(key) == value for key, value in item.items() if key != "timestamp")), None)
     if existing is not None:
         return out

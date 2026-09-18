@@ -1,0 +1,5 @@
+extends: existence
+message: "Prefer concrete active prose when it does not hide agency."
+level: warning
+tokens:
+  - "(?i)\\b(?:was|were|is|are) [a-z]+ed\\b"

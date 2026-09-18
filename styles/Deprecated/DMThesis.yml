@@ -1,0 +1,5 @@
+extends: existence
+message: "DM Thesis is deprecated; move actionable facts into the owning sections."
+level: error
+tokens:
+  - "DM Thesis"

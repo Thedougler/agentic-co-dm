@@ -9,9 +9,9 @@ tokens:
   - a variety of
   - an abundance of
   - a multitude of
-  - countless
-  - numerous
-  - innumerable
+  # Match canonical slug tokens as one unit so the Vale vocabulary can exempt
+  # known proper-name links without weakening lowercase prose coverage.
+  - '(?:[A-Za-z0-9]+-)*(?:countless|numerous|innumerable)(?:-[A-Za-z0-9]+)*'
   - in order to
   - for the purpose of
   - with the aim of

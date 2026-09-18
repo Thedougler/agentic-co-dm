@@ -260,6 +260,43 @@ A typed semantic edit operation with preconditions and atomic application semant
 4. For overlapping mutations in a transaction: reject before any write.
 5. For `expected_value`: must match current value.
 
+### ValeAdapterFinding
+
+An intermediate representation of a Vale JSON output entry before conversion to a LintFinding.
+
+```json
+{
+  "Check": "Deprecated.DMThesis",
+  "Description": "",
+  "Line": 15,
+  "Link": "",
+  "Message": "Delete this section — it is not part of any template and has no canonical purpose.",
+  "Severity": "error",
+  "Span": [1, 12],
+  "Match": "## DM Thesis"
+}
+```
+
+**Adapter conversion**: The Vale adapter (`tools/wiki_ops/vale_adapter.py`) maps each Vale finding to a `LintFinding`:
+
+| Vale field | LintFinding field | Conversion |
+|---|---|---|
+| `Check` | `rule_id` | Prefix with `VALE_` (e.g., `VALE_Deprecated.DMThesis`) |
+| `Severity` | `severity` | `error` → `REPAIR`; `warning` → `REPAIR`; `suggestion` → `REPAIR` (all deterministic) |
+| `Line` | `location.line` | Direct |
+| `Match` | `location.text` | Direct |
+| `Message` | `evidence` + `repair_action` guidance | Message carries the agent guidance for the repair |
+
+**Repair action mapping by Check prefix**:
+| Check prefix | Repair action kind | Notes |
+|---|---|---|
+| `Deprecated.*` | `delete_section` | Section containing the deprecated pattern is deleted |
+| `write-good.*` | `replace_section` | Agent rewrites the flagged prose |
+| `proselint.*` | `replace_section` | Agent rewrites the flagged prose |
+| `AITells.*` | `replace_section` | Agent rewrites to remove AI-generated prose artifacts |
+
+All Vale findings have `repair_class: deterministic_repair`. No `diagnostic` or `human_repair` Vale findings.
+
 ### LintFinding (extended)
 
 Extension to 024's Finding schema adding `repair_class` and `repair_action`.

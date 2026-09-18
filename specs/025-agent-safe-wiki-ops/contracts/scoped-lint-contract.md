@@ -4,9 +4,9 @@
 
 ## CLI Surface
 
-### `wiki-lint --scope <spec> [--no-template] [--plan] [--from <findings.json>] [--vault <vault>] [--json]`
+### `wiki-lint --scope <spec> [--no-template] [--no-vale] [--plan] [--from <findings.json>] [--vault <vault>] [--json]`
 
-Run lint with explicit scope and optional repair plan generation. Template conformance runs by default.
+Run lint with explicit scope and optional repair plan generation. Template conformance and Vale prose checks run by default.
 
 **Scope specification**:
 - `dir:entities/faction` — directory scope
@@ -17,6 +17,7 @@ Run lint with explicit scope and optional repair plan generation. Template confo
 
 **Flags**:
 - `--no-template`: Disable template conformance (default: enabled; see template-contract.md)
+- `--no-vale`: Disable Vale prose/pattern checks (default: enabled; Vale is a project dependency, always installed)
 - `--plan`: Generate a repair plan from deterministic findings instead of raw findings
 - `--from <file>`: Build a plan from previously saved lint output (avoids re-running lint)
 - `--vault`: Vault root
@@ -83,9 +84,12 @@ The existing `tools/lint_wiki.py` `load()` function returns all pages. Scoped li
 1. If scope is provided: filter the returned pages dict to only matching paths.
 2. Run existing HARD checks on the filtered set.
 3. Run template conformance on filtered set (unless `--no-template`).
-4. Merge findings, classify repair classes, format output.
+4. Run Vale pass on filtered set (unless `--no-vale`): invoke `vale --output=JSON` on scoped files, convert via `tools/wiki_ops/vale_adapter.py` to LintFindings.
+5. Merge findings from all passes, classify repair classes, format output.
 
 The existing no-scope behavior is unchanged — `wiki-lint` without `--scope` works exactly as before.
+
+**Vale pass details**: The adapter runs `vale --config .vale.ini --output=JSON <files>` and converts each finding to the standard LintFinding schema. All Vale findings get `repair_class: deterministic_repair`. Vale is a project dependency — always installed and available. Missing Vale is an error, not a graceful skip.
 
 ## Repair Class Assignment
 
@@ -104,3 +108,12 @@ Each existing HARD key maps to a repair class:
 | `aruhe_prefix_basename` | `deterministic_repair` | Remove prefix |
 | `typed_relationships` | `diagnostic` | Informational |
 | `pc_identity_mismatch` | `human_repair` | Needs correct identity |
+
+**Vale-sourced findings** (all `deterministic_repair`):
+
+| VALE Key prefix | Repair Class | Repair Action | Notes |
+|---|---|---|---|
+| `VALE_Deprecated.*` | `deterministic_repair` | `delete_section` | Deprecated pattern — delete entire section |
+| `VALE_write-good.*` | `deterministic_repair` | `replace_section` | Agent rewrites flagged prose |
+| `VALE_proselint.*` | `deterministic_repair` | `replace_section` | Agent rewrites flagged prose |
+| `VALE_AITells.*` | `deterministic_repair` | `replace_section` | Agent rewrites to remove AI artifacts |

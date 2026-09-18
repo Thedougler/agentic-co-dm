@@ -17,6 +17,10 @@ This file records OMP-only runtime behavior, collision traps, and mounted-device
 
 For any agent-facing surface change, use the configured `smol` role as an independent behavioral test subject. Give it cold context, no write permission, the relevant task or slice, and explicit scope and success criteria. Reconcile its output as evidence before declaring completion; if it cannot run, record the blocker and compensating validation. Done when the subject demonstrates the requested behavior without out-of-scope work.
 
+## Wiki-write finalization
+
+`tools/wiki_ops/Transaction` runs `scripts/qmd-hook.sh` exactly once after a successful write set. Direct OMP-managed wiki writes invoke the standalone hook once after committing; never turn it into a git hook or run it once per file.
+
 ## Native image generation
 
 When an OMP task needs image generation or editing, read the mounted `generate_image` contract and send one JSON request to `xd://generate_image`.

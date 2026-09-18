@@ -1,0 +1,10 @@
+version: 1
+template: work.md
+type: work
+sections: []
+repeatable: []
+callouts:
+  allowed: [narration]
+frontmatter:
+  required: [title, category, tags, sources, created, updated, type, lifecycle, reveal]
+  optional: [grounded_in, summary]

@@ -1,4 +1,3 @@
-
 # Agentic Co-DM Constitution
 <!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
 
@@ -86,6 +85,12 @@ as its primary operator: arguments or structured input in, text or JSON out, err
 and an exit status distinguishing success from failure. Agent-facing documents MUST state
 positive instructions, completion criteria, and named failure modes.
 
+Agent-facing documents MUST use direct, imperative language for required actions. They MUST NOT
+hedge a required action with "maybe", "perhaps", "if available", "consider", or "optional".
+`MUST`, `MUST NOT`, and `SHOULD` MUST express actual normative force; `SHOULD` MUST include a
+reason and the condition that permits deviation. A dependency required by a documented path MUST
+be named as required, not optional.
+
 Agent-facing documents MUST put ordered steps before reference material. Every step MUST end with
 a checkable completion criterion. Branch-specific reference MUST be disclosed behind a context
 pointer that states what it contains and when to read it. Always-loaded guidance MUST remain
@@ -107,8 +112,8 @@ defect. The owning agent MUST log it, stop treating the software as acceptable, 
 remove the root cause before dependent work continues.
 
 Rationale: an agent needs a predictable execution path, a small always-loaded index, and one
-answer for each rule; progressive disclosure preserves attention without hiding branch-critical
-guidance.
+answer for each rule; direct language and explicit dependency status prevent hesitation and
+false assumptions.
 
 ### VII. Creative Judgment Is Protected
 
@@ -220,15 +225,21 @@ native platform features MUST be used before adding new abstractions, wrappers, 
 A command-capable interface MUST be used directly when sufficient; wrappers MUST NOT obscure
 input, output, errors, or exit status.
 
-When a task requires a missing tool or dependency, agents MUST self-bootstrap it from the
-project-declared environment before implementation. Agents MUST reuse suitable existing software,
-solutions, documented patterns, and trusted published approaches—including web sources—before
-inventing new ones. A new dependency or implementation is permitted only when existing options
-do not satisfy the task; its rationale and provenance MUST be recorded in the applicable work
-artifact.
+Project-declared dependencies are mandatory once a task reaches a path that requires them. Agents
+MUST check the project-local environment and use an available dependency immediately. If it is
+missing, agents MUST install it from the project-declared environment immediately, without asking
+for confirmation or presenting installation as a conditional choice. Agents MUST NOT re-install a
+dependency already available locally, describe a required dependency as optional, or proceed as
+though a missing dependency exists. A dependency MAY be optional only when the project explicitly
+scopes the feature as optional and the default path remains complete without it.
 
-Rationale: boring tools are easier to inspect, operate, and recover at 3 a.m. Reuse compounds
-proven solutions while reproducible bootstrap keeps agents unblocked without dependency drift.
+Agents MUST reuse suitable existing software, solutions, documented patterns, and trusted published
+approaches—including web sources—before inventing new ones. A new dependency or implementation is
+permitted only when existing options do not satisfy the task; its rationale and provenance MUST be
+recorded in the applicable work artifact.
+
+Rationale: local availability removes needless setup; immediate installation keeps required work
+moving without hedged instructions or avoidable dependency drift.
 
 ### XV. Autonomous Operation
 
@@ -367,6 +378,11 @@ and repetition necessary for correct execution and reasoning. Lean is the sole d
 `AGENTS.md`, `CLAUDE.md`, `GROK.md`, `OMP.md`, agent skills, agent-facing `docs/`, and this
 constitution. Every sentence MUST earn its context cost.
 
+Agent-facing instructions MUST state required actions and completion criteria directly. They MUST
+NOT use "maybe", "perhaps", "consider", "if you want", or "optional" to hedge a required step.
+Use `MAY` only for a real choice. Use `SHOULD` only with a named reason and a valid condition for
+deviation.
+
 Agents MUST actively compress tool-call token load. Tool commands and descriptions MUST be short
 and clear; agents MUST prefer concise native commands over long, cobbled-together DIY commands
 when behavior and safety are equivalent. Tool inputs MUST contain only required context and
@@ -383,8 +399,82 @@ policy while retaining rules, rationale needed to apply them, completion criteri
 safety boundaries, and information required for human comprehension, accessibility, or compliance.
 This principle MUST NOT be used to delete necessary safeguards or quality-critical domain detail.
 
-Rationale: agent attention and tool-call budgets are finite; lean context and deterministic helpers
-leave more capacity for reasoning about the wiki while preserving safe, correct work.
+Rationale: agent attention and tool-call budgets are finite; lean context, direct instructions, and
+deterministic helpers leave more capacity for reasoning about the wiki while preserving safe,
+correct work.
+
+### XXI. Linter Findings Require Root-Cause Repair
+
+Agents MUST treat every linter finding as evidence of a defect in the underlying content,
+structure, process, or authoritative source. They MUST repair the cause and rerun the relevant
+linter. They MUST NOT evade a finding by rewording without changing the underlying defect,
+weakening or suppressing a rule, narrowing scope, renaming content to avoid a pattern, adding an
+exclusion, or otherwise optimizing for a clean report while leaving the defect intact. Rewording
+is a repair only when it corrects the defect the finding identifies.
+
+A finding MAY be rejected only when the linter is demonstrably wrong for the repository's current
+standards. The rejection MUST be documented at the authoritative rule or policy owner and MUST
+preserve detection of the real defect. When a finding reveals a recurring cause, the agent MUST
+fix the authoritative template, skill, instruction, workflow, or linting rule in addition to the
+affected artifact.
+
+Rationale: linter output is quality feedback, not an obstacle; root-cause repair improves the Wiki
+and prevents the same defect from recurring.
+
+### XXII. Appropriate Delegation
+
+Agents SHOULD delegate bounded, independent, or specialized work to task subagents when doing so
+reduces context load, shortens wall-clock time, improves independent verification, or matches
+available expertise. The delegating agent MUST provide scoped inputs, exact acceptance criteria,
+shared contracts, and ownership boundaries. The delegating agent MUST retain responsibility for
+integration and final correctness.
+
+Agents MUST NOT delegate when round-trip overhead, shared mutable state, or missing context makes
+direct execution safer or cheaper. Delegation MUST NOT replace understanding, review, or required
+evidence, and MUST NOT be used to evade source-of-truth, safety, quality, or user-approval
+requirements. Subagents MUST receive only the context necessary to complete their bounded task.
+
+Rationale: bounded delegation scales reasoning and parallelizes independent work without
+transferring accountability.
+
+### XXIII. Wiki-Grounded Validation
+
+Agents MUST NOT validate Wiki-affecting work in a vacuum. Validation MUST exercise the current
+authoritative Wiki and the real repository surfaces that agents are meant to change. Fixture-only
+tests, synthetic copies, isolated examples, and source inspection MUST NOT be the sole evidence for
+work that affects Wiki retrieval, identity, mutation, linting, indexing, provenance, staging, or
+presentation.
+
+The agent MUST select a representative live-Wiki or temporary-vault scenario that uses current
+schemas, links, manifest and index state, and applicable owner pages. When a safe isolated test
+vault is required, it MUST be derived from and checked against current Wiki structure, and the
+completion evidence MUST state the Wiki check. Validation MUST distinguish fixture defects from
+defects in current Wiki content and MUST repair the authoritative source when the Wiki exposes a
+failure.
+
+If Wiki-grounded validation cannot run, the agent MUST record the blocker and compensating evidence
+before completion. It MUST NOT claim that fixtures prove repository behavior.
+
+Rationale: fixtures catch regressions in modeled cases; current Wiki validation reveals schema drift,
+identity collisions, stale links, provenance gaps, and content-shape failures that fixtures omit.
+
+### XXIV. Synchronized Content Systems Are Actively Maintained
+
+The three content-production systems are the compiled Wiki, authoring guidance, and validation
+rules. Authoring guidance includes templates and skills; validation rules include Vale styles.
+When an edit to Wiki content, a template, a skill, or a Vale style rule changes the contract,
+quality bar, or output of D&D content, the agent MUST inspect every affected system and update
+each relevant counterpart in the same change before declaring the work complete. An unchanged
+counterpart MUST have its irrelevance recorded in the applicable work artifact.
+
+Agents MUST NOT treat any of these systems as perfect, sacred, or exempt from correction. Agents
+MUST proactively maintain and continuously improve all three systems using observed failures,
+user corrections, linter findings, and other evidence. Improvements MUST preserve authoritative
+ownership, remain behaviorally verifiable, and MUST NOT optimize one system by leaving a relevant
+counterpart stale.
+
+Rationale: synchronized authoring, content, and validation surfaces prevent drift from degrading
+the quality of D&D content while continuous maintenance keeps every surface useful and current.
 
 ## Operating Boundaries
 
@@ -438,4 +528,4 @@ not prevent a named safety failure MUST be rejected or resolved by an ADR.
 Project operating context: `AGENTS.md`. Harness-specific agent behavior: `OMP.md`, `CODEX.md`,
 `CLAUDE.md`, and `GROK.md`.
 
-**Version**: 2.5.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 2.10.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17

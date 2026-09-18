@@ -447,7 +447,7 @@
 - [[sem-holst]] — Sawdust in dark hair, pitch-stained canvas, ink-marked fingers always tracing timber. ( #shattered-sea #npc)
 - [[sending-stone-nonas]] — A paired sending stone given to Perrin by Nona Black-Jaw to collect an unrevealed favor ( #shattered-sea #item)
 - [[sentinels-and-countless]] — Open quest tracking the Sentinel schism pressure and Countless interest in the seal. ( #shattered-sea #quest)
-- [[sentinels-of-the-eyrie]] — Aarakocra monks at High Eyrie who watch the Drowned Maw and record without conclusion; schism birthed Countless. ( #shattered-sea #faction)
+- [[sentinels-of-the-eyrie]] — Aarakocra monks at High Eyrie watch and record the Drowned Maw. Their schism created a breakaway order. ( #shattered-sea #faction)
 - [[sera-maddock]] — Dying privateer with a treasure map tattooed on her arm, seeking passage out of Kalowe. ( #shattered-sea #npc)
 - [[serafina-windfall-fisk]] — An Aasimar fortune-teller compelled by precognition to wander the Verdant Scatter. ( #shattered-sea #npc)
 - [[serena-cottle]] — Halfling co-owner of Il Preludio who finishes her business partner's sentences a fourth higher, then lands them flat as inventory talk. She actually runs the shop. ( #shattered-sea #npc)

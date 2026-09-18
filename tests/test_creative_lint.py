@@ -61,6 +61,20 @@ def test_vale_mapping_uses_registry_metadata():
     assert findings[0].location == {"file": "wiki/example.md", "line": 4, "col": 2, "end_col": 8, "text": "You decide"}
 
 
+def test_vale_deprecated_output_gets_typed_repair():
+    registry = Registry.load(ROOT / "rules" / "registry.yml")
+    findings = map_vale_output(
+        {"wiki/example.md": [{"Check": "Deprecated.DMThesis", "Line": 15,
+                              "Span": [1, 12], "Match": "## DM Thesis",
+                              "Message": "delete the deprecated section"}]},
+        registry,
+        root=ROOT,
+    )
+    assert findings[0].rule_id == "VALE_Deprecated.DMThesis"
+    assert findings[0].severity == "REPAIR"
+    assert findings[0].repair_class == "deterministic_repair"
+    assert findings[0].repair_action["kind"] == "delete_section"
+
 def test_engine_finds_and_filters_agency_rule():
     registry = Registry.load(ROOT / "rules" / "registry.yml")
     bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
@@ -230,3 +244,17 @@ def test_scene_applicability_exempts_redirects_and_explicit_pressure(monkeypatch
          for path in files], []))
     result = LintEngine(registry, bundles, root=ROOT, vault=FIXTURES).run(rule_ids={"SCENE001"}, paths=files)
     assert [Path(item.location["file"]).name for item in result.findings] == ["fail_missing_pressure.md"]
+
+
+def test_state_overrides_applicability_and_lifecycle(monkeypatch, tmp_path):
+    page = tmp_path / "page.md"
+    page.write_text("---\ntype: faction\nlifecycle: accepted\n---\n## Narrative\nNo pressure.\n", encoding="utf-8")
+    registry = Registry.load(ROOT / "rules" / "registry.yml")
+    bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
+    monkeypatch.setattr(
+        "tools.creative_lint.engine.run_vale",
+        lambda *args, **kwargs: ([Finding("SCENE001", "fail", "WARN", {"file": str(page), "line": 1}, "match", "reason", "vale")], []),
+    )
+    engine = LintEngine(registry, bundles, root=ROOT, vault=tmp_path)
+    assert engine.run(paths=[page], rule_ids={"SCENE001"}).findings
+    assert not engine.run(paths=[page], rule_ids={"SCENE001"}, state={"type": "item"}).findings

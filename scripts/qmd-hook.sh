@@ -47,14 +47,30 @@ fi
 
 
 qmd_run() {
-  local errf msg fatal="${QMD_HOOK_FATAL:-1}"
+  local errf msg fatal="${QMD_HOOK_FATAL:-1}" pid status deadline
   if [[ "${1:-}" == "--warn-only" ]]; then
     fatal=0; shift
   fi
   if ! errf="$(mktemp 2>/dev/null)"; then
     fail "cannot create temporary error file"
   fi
-  if ! timeout "$cmd_timeout" env -u CI qmd "$@" >/dev/null 2>"$errf"; then
+  (env -u CI qmd "$@" >/dev/null 2>"$errf") &
+  pid=$!
+  deadline=$((SECONDS + cmd_timeout))
+  while kill -0 "$pid" 2>/dev/null; do
+    if (( SECONDS >= deadline )); then
+      kill "$pid" 2>/dev/null || :
+      wait "$pid" 2>/dev/null || :
+      status=124
+      break
+    fi
+    sleep 0.1 || :
+  done
+  if [[ -z "${status:-}" ]]; then
+    wait "$pid" || status=$?
+    status="${status:-0}"
+  fi
+  if (( status != 0 )); then
     msg="$(tr '\n' ' ' <"$errf" | sed 's/[[:space:]][[:space:]]*/ /g')"
     rm -f "$errf" 2>/dev/null || :
     if (( fatal )); then

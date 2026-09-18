@@ -1,0 +1,10 @@
+version: 1
+template: lore.md
+type: lore
+sections: []
+repeatable: []
+callouts:
+  allowed: [narration]
+frontmatter:
+  required: [title, category, tags, sources, created, updated, type, lifecycle, reveal]
+  optional: [campaign, visibility, kind, truth, scope, region, summary]

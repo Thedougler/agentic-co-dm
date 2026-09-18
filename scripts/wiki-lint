@@ -15,12 +15,12 @@ import subprocess
 import sys
 from pathlib import Path
 from typing import Any
-
 ROOT = Path(__file__).resolve().parents[1]
 LINT = ROOT / "tools" / "lint_wiki.py"
 CREATIVE_COMMANDS = {"task", "file", "corpus", "changed", "rule", "candidate", "queue", "template"}
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
+from tools.wiki_ops.cli import resolve_vault
 
 
 def run_lint(vault: Path, extra: list[str]) -> tuple[int, dict]:
@@ -36,10 +36,11 @@ def run_lint(vault: Path, extra: list[str]) -> tuple[int, dict]:
 
 def structural_main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("vault", nargs="?", default="wiki")
-    parser.add_argument("--vault", dest="vault_override")
+    parser.add_argument("vault", nargs="?", default=None)
     parser.add_argument("--json", action="store_true")
+    parser.add_argument("--vault", dest="vault_override")
     parser.add_argument("--scope")
+    parser.add_argument("--no-vale", dest="vale", action="store_false", default=True)
     parser.add_argument("--no-template", dest="template", action="store_false", default=True)
     parser.add_argument("--plan", action="store_true")
     parser.add_argument("--from", dest="findings_file")
@@ -48,8 +49,8 @@ def structural_main(argv: list[str]) -> int:
     parser.add_argument("--allow-lifecycle", action="append", default=[])
     parser.add_argument("--allow-relationship-type", action="append", default=[])
     args = parser.parse_args(argv)
-    vault = Path(args.vault_override or args.vault).expanduser().resolve()
     try:
+        vault = resolve_vault(args.vault_override or args.vault)
         from tools.wiki_ops.scope import parse_scope
         scope = parse_scope(args.scope)
         if scope:
@@ -77,19 +78,21 @@ def structural_main(argv: list[str]) -> int:
         if ambiguous_identities:
             report["identity_ambiguous"] = True
         if args.template:
-            from tools.wiki_ops.template_contracts import check_conformance, load_contract
-            paths = scope.resolved_files if scope else [p.relative_to(vault).as_posix() for p in vault.rglob("*.md") if p.is_file()]
+            from tools.wiki_ops.template_contracts import check_conformance, contract_for_type
+            paths = scope.resolved_files if scope else [
+                p.relative_to(vault).as_posix()
+                for p in vault.rglob("*.md")
+                if p.is_file() and not {"_archive", "_archives", "_raw", "_readouts", "_staging", "_meta", "templates", ".obsidian"}.intersection(p.relative_to(vault).parts)
+            ]
             template_findings = []
             exemptions = 0
             for relative in paths:
                 page = vault / relative
                 try:
                     fields = __import__("tools.wiki_ops.mutations", fromlist=["frontmatter_fields"]).frontmatter_fields(page.read_text(encoding="utf-8"))
-                    contract_path = vault / "templates" / "contracts" / f"{fields.get('type', '')}.yml"
-                    if not contract_path.is_file():
-                        contract_path = ROOT / "wiki" / "templates" / "contracts" / f"{fields.get('type', '')}.yml"
-                    if contract_path.is_file():
-                        template_findings.extend(check_conformance(relative, page.read_text(encoding="utf-8"), load_contract(contract_path)))
+                    contract = contract_for_type(vault, fields.get("type", "")) or contract_for_type(ROOT / "wiki", fields.get("type", ""))
+                    if contract:
+                        template_findings.extend(check_conformance(relative, page.read_text(encoding="utf-8"), contract))
                 except (OSError, ValueError) as exc:
                     template_findings.append({"rule_id": "TMPL_error", "file": relative, "severity": "BLOCK", "reason": str(exc)})
             source_paths = [ROOT / "wiki" / "templates" / "faction.md", ROOT / ".agents" / "skills" / "faction-design" / "SKILL.md"]
@@ -116,21 +119,50 @@ def structural_main(argv: list[str]) -> int:
                 report.setdefault("findings", {})["template_conformance"] = template_findings
                 report.setdefault("counts", {})["template_conformance"] = len(template_findings)
                 report["hard_fail"] = True
+        if args.vale and scope:
+            from tools.creative_lint.bundles import BundleRegistry
+            from tools.creative_lint.engine import LintEngine
+            from tools.creative_lint.registry import Registry
+            from tools.creative_lint.waivers import WaiverRegistry
+            creative_paths = [vault / relative for relative in scope.resolved_files] if scope else [vault]
+            creative = LintEngine(
+                Registry.load(ROOT / "rules" / "registry.yml"),
+                BundleRegistry.load(ROOT / "rules" / "bundles.yml"),
+                root=ROOT,
+                vault=vault,
+                waivers=WaiverRegistry.load(ROOT / "rules" / "waivers.json"),
+            ).run(paths=creative_paths)
+            vale_findings = [
+                finding.to_dict() for finding in creative.findings
+                if finding.rule_id.startswith("VALE_")
+            ]
+            if vale_findings:
+                findings = report.setdefault("findings", {})
+                for finding in vale_findings:
+                    rule_id = str(finding["rule_id"])
+                    item = dict(finding)
+                    item["file"] = item.pop("location", {}).get("file", "")
+                    findings.setdefault(rule_id, []).append(item)
+                    report.setdefault("counts", {})[rule_id] = len(findings[rule_id])
+                report["hard_fail"] = True
         if args.plan:
-            findings = report.get("findings", {})
-            if isinstance(findings, dict):
-                flat = []
-                for rule, items in findings.items():
-                    if isinstance(items, list):
-                        for item in items:
-                            if isinstance(item, dict) and item.get("repair_class") == "deterministic_repair" and item.get("repair_action"):
-                                flat.append({"finding_rule": rule, "finding_file": item.get("page") or item.get("file"), "finding_line": item.get("line"), "mutation": item["repair_action"]})
-                report = {"scope": report.get("scope", scope.to_dict() if scope else {}), "source_findings": sum(int(v) for v in (report.get("counts") or {}).values() if isinstance(v, int)), "deterministic_actions": len(flat), "human_only": 0, "diagnostic_only": 0, "actions": flat}
+            from tools.wiki_ops.repair_plans import build_plan
+            report = build_plan(vault, report, scope=scope.to_dict() if scope else None)
         if scope:
             report["scope"] = scope.to_dict()
             report["files_checked"] = len(scope.resolved_files)
+        grouped: dict[str, list[dict[str, Any]]] = {}
+        for rule, items in (report.get("findings") or {}).items():
+            if not isinstance(items, list):
+                continue
+            for item in items:
+                if isinstance(item, dict):
+                    filename = str(item.get("file") or item.get("page") or "")
+                    if filename:
+                        grouped.setdefault(filename, []).append({"rule": rule, **item})
+        report["findings_by_file"] = {key: grouped[key] for key in sorted(grouped)}
         if args.json:
-            print(json.dumps(report, indent=2, sort_keys=True))
+            print(json.dumps(report, sort_keys=True, separators=(",", ":")))
         else:
             print(json.dumps(report, indent=2, sort_keys=True))
         if ambiguous_identities:
@@ -309,21 +341,23 @@ def creative_main(argv: list[str]) -> int:
         parser.add_argument("path")
     elif command in {"corpus", "changed"}:
         parser.add_argument("paths", nargs="*")
+    parser.add_argument("--state-file")
     parser.add_argument("--json", action="store_true")
     parser.add_argument("--severity")
     args = parser.parse_args(argv[1:])
+    state = json.loads(Path(args.state_file).read_text(encoding="utf-8")) if args.state_file else None
     try:
         severity = _severity(args.severity)
         if command == "task":
-            result = engine.run(bundle=args.bundle, paths=_paths(args.paths, default=ROOT / "wiki"), severity_filter=severity)
+            result = engine.run(bundle=args.bundle, paths=_paths(args.paths, default=ROOT / "wiki"), severity_filter=severity, state=state)
         elif command == "file":
-            result = engine.run(paths=[args.path], severity_filter=severity)
+            result = engine.run(paths=[args.path], severity_filter=severity, state=state)
         elif command == "corpus":
-            result = engine.run(bundle="corpus", paths=_paths(args.paths, default=ROOT / "wiki"), severity_filter=severity)
+            result = engine.run(bundle="corpus", paths=_paths(args.paths, default=ROOT / "wiki"), severity_filter=severity, state=state)
         else:
             changed = subprocess.run(["git", "diff", "--name-only", "HEAD"], cwd=ROOT, capture_output=True, text=True, check=False)
             files = [ROOT / line.strip() for line in changed.stdout.splitlines() if line.strip().endswith(".md")]
-            result = engine.run(bundle="corpus", paths=files, severity_filter=severity)
+            result = engine.run(bundle="corpus", paths=files, severity_filter=severity, state=state)
     except (ValueError, KeyError) as exc:
         print(f"wiki-lint: {exc}", file=sys.stderr)
         return 2
