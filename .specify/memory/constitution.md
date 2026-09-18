@@ -1,16 +1,3 @@
-<!--
-Sync Impact Report
-Version change: 2.3.2 -> 2.4.0
-Modified principles:
-- III. Spec Before System Change: every system change must connect its acceptance to the
-  repository's D&D-session product rather than treating software as the product.
-- VII. Creative Judgment Is Protected: makes runnable D&D Work for the DM, at a professional
-  quality bar comparable to WotC's official D&D material, the primary acceptance target.
-Added sections:
-- Product Invariant statement under Core Principles.
-Removed sections: None
-Follow-up TODOs: None
--->
 
 # Agentic Co-DM Constitution
 <!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
