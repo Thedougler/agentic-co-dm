@@ -39,7 +39,7 @@ Design basis: city gazetteer + meaningful districts + layered urban activity; si
 <!-- Add identity art when available. -->
 
 > [!narration] Arrival
-> Write what the party can perceive as they enter or first overlook the city. Establish scale, silhouette, movement, sound, smell, and one unmistakable landmark. Use only information immediately available to them; no secrets, hidden history, or unearned names.
+> Write a high-quality cold portrait of the city as the party enters or first overlooks it. Cover scale, silhouette, movement, sound, smell, and one unmistakable landmark. No secrets, hidden history, or unearned names.
 
 ## At a Glance
 
@@ -50,9 +50,9 @@ Design basis: city gazetteer + meaningful districts + layered urban activity; si
 | **Power**       | Who visibly holds authority here.                               |
 | **Pressure**    | The problem making the city unstable **right now**.             |
 | **Opportunity** | Why adventurers can profit, matter, or get into trouble here.   |
-| **Population**  | Scale or useful approximation; precision only when established. |
+| **Population**  | Scale or useful approximation. Precision only when established. |
 
-**DM thesis:** One sentence explaining what makes {{title}} worth using in play. This is about the city's function in the campaign, not its history.
+**DM thesis:** one sentence explaining what makes {{title}} useful in play. This is about the city's function in the campaign, not its history.
 
 ## Orientation
 
@@ -82,8 +82,8 @@ Use districts inhabitants of the city actually recognize. Split a district into 
 
 * **Cross-city travel.** How long ordinary movement takes and what changes that estimate.
 * **After dark.** What changes when night falls.
-* **Restricted movement.** Gates, bridges, walls, checkpoints, tides, lifts, permits, curfews, or other meaningful constraints.
-* **Useful shortcuts.** Known routes, canals, tunnels, ferries, rooftops, portals, or passages worth learning.
+* **Restricted movement.** Gates, bridges, walls, checkpoints, tides, lifts, permits, curfews, or other real constraints.
+* **Useful shortcuts.** Known routes, canals, tunnels, ferries, rooftops, portals, or passages that save time.
 
 ---
 
@@ -137,10 +137,10 @@ Keep detailed interiors and encounters on their own notes.
 
 # Life in {{title}}
 
-## What everyone knows
+## Common knowledge
 
-* A fact any resident could tell a newcomer.
-* A custom visitors are expected to understand quickly.
+* A fact that any resident tells newcomers.
+* A custom that visitors must understand quickly.
 * A recent public event people are still discussing.
 * A danger locals routinely account for.
 * A belief about the city that may or may not be true.
@@ -182,8 +182,8 @@ Keep detailed interiors and encounters on their own notes.
 
 * **Common greeting:**
 * **Common insult:**
-* **Local term:** Meaning.
-* **Proverb:** What it reveals about the city.
+* **Local term:** meaning.
+* **Proverb.** State what it reveals about the city.
 
 ### Food & drink
 
@@ -217,7 +217,7 @@ Keep faction histories and full agendas on their own pages. This table answers o
 * **Who controls the streets:** [[Faction]]
 * **Who cannot be ignored:** [[NPC or Faction]]
 
-**Fault line:** What single disagreement, scarcity, succession, grievance, or incompatible ambition currently prevents the city's powers from settling into equilibrium?
+**Fault line.** State the one disagreement, scarcity, succession, grievance, or incompatible ambition that currently prevents the city's powers from settling into equilibrium.
 
 ## Connections
 
@@ -242,12 +242,12 @@ Move completed or irrelevant situations to the Change log instead of preserving 
 
 **Involved:** [[Faction]] · [[NPC]] · [[District]]
 
-Describe the unstable present in 2–4 sentences.
+Describe the unstable present in two to four sentences.
 
 * **Visible signs.** What the party can encounter before deliberately investigating.
-* **What they want.** What the active side is trying to accomplish.
+* **What they want.** Describe what the active side is trying to accomplish.
 * **What opposes them.** Person, faction, circumstance, scarcity, or contradiction.
-* **If nobody intervenes.** The next meaningful change that follows naturally.
+* **If nobody intervenes.** The next concrete change that follows naturally.
 * **Trigger / date.** When that change occurs, if time matters.
 * **After interference.** Do not pre-script a branch. Record the new situation here after the party acts.
 
@@ -277,7 +277,7 @@ Two or three active layers are usually enough.
 | **Opportunities**    | Ask around for work, patrons, trouble, or profit.         | Jobs, patrons, rivals, expeditions, schemes.         | [[District]], [[District]] |
 | **Faction activity** | Investigate what [[Faction]] is doing.                    | Agents, operations, fronts, territory, hidden nodes. |                            |
 | **Underworld**       | Seek illicit goods, contacts, crime, or forbidden access. | Fences, gangs, smugglers, dens, targets.             |                            |
-| **Custom layer**     | Define the player-facing investigative action.            | Define the category of discoveries.                  |                            |
+| **Custom layer**     | State the character-facing investigative action.          | State the category of discoveries.                   |                            |
 
 ### Hidden nodes
 
@@ -388,7 +388,7 @@ For incidental locations that do not deserve permanent notes unless play makes t
 
 | Destination | Route                             | Travel time | What makes the route matter                          |
 | ----------- | --------------------------------- | ----------- | ---------------------------------------------------- |
-| [[Place]]   | road / river / sea / gate / trail |             | Cost, hazard, seasonality, control, or notable stop. |
+| [[Place]]   | road / river / sea / gate / trail |             | Cost, hazard, seasonality, control, or key stop.     |
 | [[Place]]   |                                   |             |                                                      |
 | [[Place]]   |                                   |             |                                                      |
 
@@ -411,15 +411,15 @@ Cities feel embedded in a world when necessities arrive from somewhere and expor
 
 # Current state
 
-Write only the handful of changes the DM must remember **right now** when running {{title}}. This is the city's current delta from its baseline description above.
+Write only the few changes the DM must remember **right now** when running {{title}}. This is the city's current delta from its baseline description above.
 
-**Campaign date:**
-**Last party visit:**
+**Campaign date.**
+**Last party visit.**
 **Last state update:**
 
 ## Since the party last saw it
 
-* **Changed:** What is visibly different.
+* **Changed.** State what is visibly different.
 * **Changed:**
 * **Changed:**
 
@@ -431,7 +431,7 @@ Background events make the city feel active even when they are unrelated to the 
 
 * **Headline.** What everyone currently knows.
 
-  * **Dig deeper:** Additional detail available if investigated.
+  * **Dig deeper:** additional detail available if investigated.
 * **Headline.**
 * **Headline.**
 
@@ -443,7 +443,7 @@ Use only for situations whose escalation benefits from explicit tracking. Advanc
 
 | Clock                        | Progress | Advances when | At completion                      |
 | ---------------------------- | :------: | ------------- | ---------------------------------- |
-| **Situation / faction goal** |   0 / 4  |               | The city reaches a new status quo. |
+| **Situation / faction goal** |   0 / 4  |               | The city settles into a new status quo. |
 | **Situation / faction goal** |   0 / 6  |               |                                    |
 | **Situation / faction goal** |   0 / 4  |               |                                    |
 
@@ -472,7 +472,7 @@ When a change becomes the durable new normal, fold it into the relevant baseline
 
 | Date       | Change             | Cause                            | Affected notes     |
 | ---------- | ------------------ | -------------------------------- | ------------------ |
-| YYYY-MM-DD | What became canon. | PCs / faction / background event | [[Page]], [[Page]] |
+| YYYY-MM-DD | What became canon. | PC, faction, or background event | [[Page]], [[Page]] |
 |            |                    |                                  |                    |
 
 ---

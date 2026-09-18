@@ -474,7 +474,7 @@ run card is a DM glance; it does not replace the spoken look. Open those
 and ask.
 
 **Session-beat spoken fill is pass 3.** Pass 1 (`run-guide`) leaves empty prose
-slots, and pass 2 (`copy-writer`) edits DM-facing copy first. Load this skill
+slots, and pass 2 (`writing-for-humans`) edits DM-facing copy first. Load this skill
 only when pass 3 begins, then fill every spoken slot. The DM may skip a block
 at the table; the writer fills all of them.
 

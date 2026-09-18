@@ -18,22 +18,22 @@ summary: ""
 
 # {{title}}
 
-**Party goal:** What the characters can accomplish here.
+**Party goal.** Describe what the characters can accomplish here.
 
-**Opposition goal:** What the opposition is trying to make true.
+**Opposition goal.** Describe what the opposition is trying to make true.
 
-**Stakes:** What changes if the party succeeds, fails, bargains, or walks away.
+**Stakes.** Describe what changes if the party succeeds, fails, bargains, or walks away.
 
-**Pressure:** What makes acting *now* necessary.
+**Pressure.** Explain what makes acting now necessary.
 
-**Threads harvested:** Which threads from the middle converge here? The party arrives equipped by Developments and tested by Cliffhangers — the Climax asks whether they can use what the middle taught them.
+**Threads harvested.** Identify the threads from the middle that converge here. Developments equip the party, and Cliffhangers test them. The Climax tests how the party uses those lessons.
 
-**End when:** The irreversible question this beat settles.
+**End when.** State the irreversible question this beat settles.
 
 **Next:** [[Session-{{session}}-BB-Resolution]]
 
 > [!narration] Opening image
-> Put the decisive situation directly in front of the characters. Give them the immediate threat, opportunity, and something they can act on. No hidden information or prescribed response.
+> Write high-quality theatre of the mind. Address the players as "you" and describe the decisive situation directly in front of the characters. Include a visible threat, relative position, cover or routes, drawable appearance, and at least one non-sight sense. End on the reaction point. No hidden information or prescribed response.
 
 ````col
 ```col-md
@@ -59,27 +59,27 @@ flexGrow=2
 
 ## Pressure
 
-**Tick when:** What advances the situation: time passing, failed actions, ignored threats, enemy progress, or a clear fictional trigger.
+**Tick when.** Advance the situation when time passes, an action fails, a threat is ignored, an enemy progresses, or fiction supplies a trigger.
 
-- [ ] **1 — Warning.** Show the consequence approaching.
-- [ ] **2 — Escalation.** Remove safety, spend a resource, or strengthen the opposition.
-- [ ] **3 — Crisis.** Force a hard choice or make the central threat immediate.
-- [ ] **4 — Consequence.** The opposition's goal occurs or the situation changes irreversibly.
+- [ ] **1. Warning.** Show the consequence approaching.
+- [ ] **2. Escalation.** Remove safety, spend a resource, or strengthen the opposition.
+- [ ] **3. Crisis.** Force a hard choice or make the central threat immediate.
+- [ ] **4. Consequence.** The opposition's goal occurs or the situation changes irreversibly.
 
-**Do not stall.** When the scene becomes static, advance the opposition, change the environment, expose a truth, or tick the pressure. Escalation changes the situation; it does not dictate a player response.
+**Do not stall.** When the scene becomes static, advance the opposition, change the environment, expose a truth, or tick the pressure. Escalation changes the situation. It does not dictate a player response.
 
 ## Opposition
 
 ### [[Primary Opposition]]
 
-- **Wants:** The outcome they are actively pursuing.
-- **Why now:** Why they cannot simply wait.
-- **Leverage:** Hostages, position, authority, information, artifacts, allies, terrain, or other advantages.
-- **Opening move:** What they do if the characters hesitate.
-- **Response:** How they adapt once the characters interfere.
-- **Desperation:** What they risk or sacrifice when losing.
-- **Line they will not cross:** A limit the characters can discover or exploit.
-- **Morale / exit:** When they surrender, flee, bargain, transform, or fight to the end.
+- **Wants.** Describe the outcome they are actively pursuing.
+- **Why now.** Explain why they cannot simply wait.
+- **Leverage.** List hostages, position, authority, information, artifacts, allies, terrain, or other advantages.
+- **Their opening move.** State what they do when the characters hesitate.
+- **Response.** Describe how they adapt once the characters interfere.
+- **Desperation.** Describe what they risk or sacrifice when losing.
+- **Line they will not cross.** State a limit the characters can discover or exploit.
+- **Morale / exit.** State when they surrender, flee, bargain, transform, or fight to the end.
 
 ### Assets
 
@@ -97,59 +97,59 @@ flexGrow=2
 | **[[Feature]]** |                                                                      |                          |
 | **[[Feature]]** |                                                                      |                          |
 
-**Movement / zones:** The few spatial facts needed to make positioning meaningful.
+**Movement / zones.** List the few spatial facts needed to make positioning important.
 
-**Collateral stakes:** People, structures, evidence, resources, or relationships endangered by the climax.
+**Collateral stakes.** List the people, structures, evidence, resources, or relationships endangered by the climax.
 
 <!-- Keep Battle when physical conflict is a major part of the climax. -->
 
 ## Final Battle
 
-**Win by:** State the objective beyond simply reducing every enemy to 0 HP.
+**Win by.** State the objective beyond simply reducing every enemy to 0 HP.
 
-**Lose when:** The fictional condition that means the opposition has achieved its objective.
+**Lose when.** State the fictional condition that means the opposition has achieved its objective.
 
-**Battlefield pressure:** What progresses while everyone is fighting.
+**Battlefield pressure.** State what progresses while everyone is fighting.
 
 ### Forces
 
-- **Boss:** [[Creature / NPC]] — combat role and signature threat.
-- **Support:** [[Creature / NPC]] × # — what keeps the boss effective.
-- **Other pressure:** Hazard, ritual, civilians, reinforcements, pursuit, collapsing terrain, or competing objective.
+- **Boss.** [[Creature / NPC]]. State the combat role and signature threat.
+- **Support.** [[Creature / NPC]] × #. State what keeps the boss effective.
+- **Other pressure.** List the hazard, ritual, civilians, reinforcements, pursuit, collapsing terrain, or competing objective.
 
 ### Tactics
 
-1. **Opening:** How the opposition establishes its advantage.
-2. **Control:** What it does to separate, delay, pin, deceive, or pressure the party.
-3. **Punish:** What behavior or position it is best equipped to exploit.
-4. **Desperation:** What changes when defeat becomes plausible.
+1. **Opening.** Describe how the opposition establishes its advantage.
+2. **Control.** Describe how it separates, delays, pins, deceives, or pressures the party.
+3. **Punish.** Describe what behavior or position it is best equipped to exploit.
+4. **Desperation.** Describe what changes when defeat becomes plausible.
 
 ### Phase shift
 
-**Trigger:** A visible event, objective change, threshold, destroyed asset, completed clock step, or revealed truth.
+**Trigger.** State the event or threshold that starts the shift. It may involve a destroyed asset or a completed clock step. A revealed truth can serve the same role.
 
-**Change:** Alter terrain, objective, available actions, enemy behavior, or stakes.
+**Change.** Alter the terrain, objective, available actions, enemy behavior, or stakes.
 
-**Signal:** What the players see before the new danger matters.
+**Signal.** State what the players see before the new danger matters.
 
-**New opportunity:** What becomes possible for the characters because the situation changed.
+**New opportunity.** State what becomes possible for the characters because the situation changed.
 
 ### Ending the fight
 
-- **Objective achieved:** What happens immediately.
-- **Opposition broken:** Who flees, surrenders, defects, or becomes irrelevant.
-- **Objective lost:** What consequence occurs without requiring every character to die.
-- **Escape / pursuit:** Where surviving opposition can actually go, if escape is possible.
+- **Objective achieved.** State what happens immediately.
+- **Opposition broken.** State who flees, surrenders, defects, or becomes irrelevant.
+- **Objective lost.** State the consequence without requiring total-party death.
+- **Escape / pursuit.** State where surviving opposition can go, if escape is possible.
 
 <!-- Keep Final Revelation when the climax is about establishing, exposing, or confronting the truth. -->
 
 ## Final Revelation
 
-**What must finally be understood:** The mystery, identity, motive, crime, allegiance, or hidden cause this climax resolves.
+**What must finally be understood.** State the mystery, identity, motive, crime, allegiance, or hidden cause this climax resolves.
 
 ### Truth
 
-**The full truth:** What actually happened. Keep this factual and independent of how the players discover or explain it.
+**The full truth.** State what actually happened. Keep this factual and independent of how the players discover or explain it.
 
 ### Proof on the table
 
@@ -160,41 +160,41 @@ flexGrow=2
 ### Resistance
 
 - **Who contests the truth:** [[NPC / Faction]]
-- **What they claim:** Their strongest alternative explanation, lie, or defense.
-- **What they want now:** What they gain by keeping the truth buried.
-- **What can break their position:** Evidence, testimony, contradiction, leverage, confession, or player reasoning.
+- **What they claim.** State their strongest alternative explanation, lie, or defense.
+- **What they want now.** State what they gain by keeping the truth buried.
+- **What can break their position.** List evidence, testimony, contradiction, leverage, confession, or player reasoning.
 
-### When the truth lands
+### Revealing the truth
 
-- **Immediate reaction:** What the people present do.
-- **Power shift:** Who gains or loses authority, loyalty, safety, or leverage.
-- **Unanswered question:** Leave only what genuinely belongs beyond this adventure.
+- **Immediate reaction.** State what the people present do.
+- **Change in power.** State who gains or loses authority, loyalty, safety, or leverage.
+- **Unanswered question.** Leave only questions that belong beyond this adventure.
 
 ## Payoffs
 
 - **[[Earlier Beat / Choice]].** How it matters now.
 - **[[Relationship / Promise / Failure]].** What comes due.
-- **[[Item / Ability / Advantage]].** How the characters can exploit what they earned.
-- **[[Threat / Foreshadowing]].** What is finally made concrete.
+- **[[Item / Ability / Advantage]].** Describe how the characters can use what they gained.
+- **[[Threat / Foreshadowing]].** State what is finally made concrete.
 
-### Earned reveals
+### Reveals that play has established
 
-- **Reveal:** A fact that can surface here if play reaches it.
-  - **Cue:** What can expose it.
-  - **Meaning:** Why knowing it changes a decision.
+- **Reveal.** A fact that can appear here if play reaches it.
+  - **Cue.** State what can expose it.
+  - **Meaning.** Explain why knowing it changes a decision.
 - **Reveal:**
   - **Cue:**
   - **Meaning:**
 
 ## Outcome
 
-- **If the party achieves its goal:** What becomes true.
-- **If success costs something:** What is saved and what is lost.
-- **If the opposition achieves its goal:** What becomes true and what remains playable.
-- **If the party withdraws or changes the terms:** How the situation resolves without pretending the climax never happened.
-- **Survivors / loose ends:** Who or what remains active afterward.
+- **If the party achieves its goal.** State what becomes true.
+- **If success costs something.** State what is saved and what is lost.
+- **If the opposition achieves its goal.** State what becomes true and what remains playable.
+- **If the party withdraws or changes the terms.** State how the situation resolves while preserving what happened.
+- **Survivors / loose ends.** State who or what remains active afterward.
 
-**Hand off to Resolution.** Once the central question is settled, stop escalating. Give the result room to land, record the changed state of the world, and move to [[Session-{{session}}-BB-Resolution]].
+**Hand off to Resolution.** When the central question has an answer, stop escalating. Give the result room to land, record the changed state of the world, and move to [[Session-{{session}}-BB-Resolution]].
 
 ## Live notes
 

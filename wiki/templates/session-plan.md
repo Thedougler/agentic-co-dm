@@ -20,13 +20,13 @@ summary: ""
 
 ## Session Compass
 
-**Opening situation:** One sentence describing what is already happening when play begins.
+**Opening situation.** One sentence describing what is already happening when play begins.
 
-**Immediate pressure:** What demands attention now.
+**Immediate pressure.** State what needs attention now.
 
-**Session question:** What consequential question might play answer?
+**Session question.** State what consequential question play might answer.
 
-**If the party does nothing:** What the situation naturally becomes.
+**If the party does nothing.** State what the situation naturally becomes.
 
 **Now:** [[Session-{{session}}-01-Label]]
 
@@ -34,11 +34,11 @@ summary: ""
 
 ## Beat Map
 
-The chart is a pacing instrument, not a script. Alternation controls audience energy: two action beats in a row numb; two introspection beats in a row stall. Chart binds one Hook first, Developments and Cliffhangers only in alternating order, then one Climax followed by one Resolution. Trigger a beat when its situation becomes relevant. After play, skip, reorder, or replace middle beats when player choices change the fiction. Preserve consequences rather than forcing the next planned slot.
+Use the chart to pace play. Do not treat it as a script. Alternate action and introspection beats because repeated action can numb attention and repeated introspection can stall. Place one Hook first, alternate Developments and Cliffhangers, then use one Climax followed by one Resolution. Trigger a beat when its situation becomes relevant. After play, skip, reorder, or replace middle beats when player choices change the fiction. Preserve consequences rather than forcing the next planned slot.
 
 |  # | Beat                               | Form                      | Trigger                                                                             | What changes                                                      | Hand-off / options                                      | Budget |
 | -: | ---------------------------------- | ------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------- | -----: |
-| 01 | [[Session-{{session}}-01-Label]]   | **Hook**                  | Play begins                                                                         | What immediately becomes true, urgent, or actionable?             | [[Session-{{session}}-02-Label]]                        |        |
+| 01 | [[Session-{{session}}-01-Label]]   | **Hook**                  | Play begins                                                                         | What immediately becomes true, urgent, or usable?                  | [[Session-{{session}}-02-Label]]                        |        |
 | 02 | [[Session-{{session}}-02-Label]]   | Development / Cliffhanger | What choice, location, discovery, or pressure brings this into play?                | Information, position, stakes, relationship, or resources change. | [[Session-{{session}}-03-Label]]                        |        |
 | 03 | [[Session-{{session}}-03-Label]]   | Cliffhanger / Development |                                                                                     |                                                                   |                                                         |        |
 | 04 | [[Session-{{session}}-04-Label]]   | Development / Cliffhanger |                                                                                     |                                                                   |                                                         |        |
@@ -62,7 +62,7 @@ The chart is a pacing instrument, not a script. Alternation controls audience en
 | From     | If the party…                             | Then surface…       | Consequence                                        |
 | -------- | ----------------------------------------- | ------------------- | -------------------------------------------------- |
 | [[Beat]] | Makes a consequential choice              | [[Beat]] / [[Beat]] | What changes because they chose this route?        |
-| [[Beat]] | Bypasses or defeats the expected obstacle | [[Beat]]            | Preserve their success; what becomes possible now? |
+| [[Beat]] | Bypasses or defeats the expected obstacle | [[Beat]]            | Preserve their success. State what becomes possible now. |
 
 ## Critical Routes
 
@@ -70,7 +70,7 @@ The chart is a pacing instrument, not a script. Alternation controls audience en
 
 | They need to reach / learn…            | Route or clue 1          | Route or clue 2          | Route or clue 3          |
 | -------------------------------------- | ------------------------ | ------------------------ | ------------------------ |
-| [[Beat, place, person, or conclusion]] | [[Beat]] — clue or route | [[Beat]] — clue or route | [[Beat]] — clue or route |
+| [[Beat, place, person, or conclusion]] | [[Beat]]: clue or route | [[Beat]]: clue or route | [[Beat]]: clue or route |
 
 ````col
 ```col-md
@@ -105,10 +105,10 @@ flexGrow=2
 
 <!-- Keep these unattached until play tells you where they belong. Reveal them wherever the fiction makes sense. Carry forward only those that remain useful. -->
 
-- [ ] A short, actionable fact the characters can discover.
+- [ ] A short, usable fact the characters can discover.
 - [ ] A fact that changes how the party understands the situation.
 - [ ] A fact about an NPC, faction, threat, or location.
-- [ ] A clue pointing toward a meaningful option.
+- [ ] A clue pointing toward an important option.
 - [ ] A fact that foreshadows later trouble.
 
 ## Session Toolkit
@@ -127,9 +127,9 @@ flexGrow=2
 
 **Surface information.** Reveal an unused clue through something the characters are already examining or interacting with.
 
-**Offer a consequence, not a command.** Make the available choices and their stakes clearer.
+**Offer a consequence.** Clarify the available choices and their stakes.
 
-**Use a floating Beat.** Bring in prepared pressure or opportunity that follows naturally from the current situation.
+**Use a floating Beat.** Bring in prepared pressure or opportunity that arises from the current situation.
 
 **Ask for intent.** Clarify what the characters are trying to accomplish, then adjudicate from there.
 
@@ -155,27 +155,27 @@ flexGrow=2
 
 ### Prep Audit
 
-- [ ] The Hook creates immediate interest, pressure, or a meaningful decision.
-- [ ] Every Beat has a **trigger** and a clear **change**; none depends on the players choosing a predetermined action.
-- [ ] Middle Beats alternate Development and Cliffhanger; two of the same type do not sit consecutively on the chart.
+- [ ] The Hook creates immediate interest, pressure, or an important decision.
+- [ ] A Beat has a **trigger** and a clear **change**. Keep the player response open.
+- [ ] Middle Beats alternate Development and Cliffhanger. Do not place two of the same type consecutively on the chart.
 - [ ] Escalation trends upward toward the Climax.
-- [ ] Any genuine chokepoint has multiple clues, routes, or solutions.
+- [ ] Any real chokepoint has multiple clues, routes, or solutions.
 - [ ] Opposition has goals and actions that exist independently of the PCs.
-- [ ] Important clues are portable enough to surface through more than one reasonable interaction.
+- [ ] Important clues are portable enough to appear through more than one reasonable interaction.
 - [ ] The Climax can be reached through more than one sequence of player choices.
 - [ ] The Resolution follows the **actual outcome**, not the planned outcome.
-- [ ] Every linked Beat contains only the information needed to run that Beat at the table.
+- [ ] Each linked Beat contains only the information needed to run that Beat at the table.
 
 ## After the Session
 
 ### Carry Forward
 
-**Actual ending:** What situation exists now?
+**Actual ending.** State what situation exists now?
 
-**Unresolved pressure:** What continues moving?
+**Unresolved pressure.** State what continues moving?
 
-**Unused but still relevant:** [[Beat]] · clue · NPC · consequence
+**Unused but still relevant.** [[Beat]] · clue · NPC · consequence
 
-**Players intend to:** Their stated next move, in their words when possible.
+**Players intend to.** State their next move in their words when possible.
 
-**Next opening:** [[Next Session]] — one sentence suggesting where play can resume.
+**Next opening.** [[Next Session]]. State one sentence suggesting where play can resume.

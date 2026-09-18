@@ -18,13 +18,13 @@ summary: ""
 
 # {{title}}
 
-**Something happens:** What changes right now.
-**Why it matters:** The immediate threat, opportunity, or personal stake.
-**Decision:** The meaningful choice now in front of the party.
-**Hook lands when:** The party is committed and moving — no fumbling for direction.
+**Something happens.** State what changes right now.
+**Why it matters.** State the immediate threat, opportunity, or personal stake.
+**Decision.** Describe the important choice now in front of the party.
+**Hook lands when.** State when the party is committed and moving. Give them clear direction.
 
 > [!narration] Open on
-> Write 2–4 sentences the DM can speak. Start at the first changed thing. Give concrete sensory details, visible actors, and an obvious point of interaction. No secrets, DCs, unearned names, or hidden premise.
+> Write high-quality theatre of the mind in two to four sentences the DM can speak. Address the players as "you" and start at the first changed thing. Include the visible threat, relative position, concrete sensory details, at least one non-sight sense, and an obvious point of interaction. End on the reaction point. No secrets, DCs, unearned names, or hidden premise.
 
 ````col
 ```col-md
@@ -87,7 +87,7 @@ flexGrow=2
 
 <!-- Keep only when the Hook opens with physical conflict or peril. -->
 
-- **Objective.** What each side is trying to accomplish besides merely defeating the other.
+- **Objective.** Describe each side's goal besides defeating the other.
 - **Opposition.** [[Creature]] × # / [[NPC]].
 - **Terrain.** One or two features that materially change choices.
 - **Escalation.** What enters, breaks, moves, catches fire, escapes, or otherwise changes the field.
@@ -95,8 +95,8 @@ flexGrow=2
 
 ## Handoff
 
-**Next:** [[Session-{{session}}-BB-Label]] — **Development / Cliffhanger**
+**Next.** [[Session-{{session}}-BB-Label]]. **Development / Cliffhanger**
 
-**Carry forward:** The person, clue, object, wound, clock, obligation, or unanswered question that gives the next beat momentum.
+**Carry forward.** State the person, clue, object, wound, clock, obligation, or unanswered question that gives the next beat momentum.
 
-**Continuity change:** What is now true because of the party's choice.
+**Continuity change.** State what is now true because of the party's choice.

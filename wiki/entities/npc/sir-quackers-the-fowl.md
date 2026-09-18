@@ -90,9 +90,9 @@ He does not understand the [[fate-spinner]] dreidel reaction or the [[soul-incar
 | [[fate-spinner]] | Its dreidel reaction marks him without explaining itself. |
 | [[soul-incarnate]] | The Fate Spinner reaction exposes a Soul Incarnate signature he does not comprehend. |
 
-The familiar's former wizard is named only as RTLB. RTLB set Quackers free and is now gone. The relationship stays unresolved backstory.
+Quackers identifies his former wizard only as RTLB. RTLB set Quackers free and is now gone. No page resolves their relationship.
 
 ## Narration
 
 > [!narration]
-> A duck built like nothing that should stand upright, white-feathered and corded with muscle under gilded pauldrons, a longsword resting easy in one hand and a bow taller than a person slung across his back. He doesn't blink. His eyes track movement with an intensity that belongs to nothing that eats bread crumbs. Somewhere behind him, water keeps dripping in a slow, wrong rhythm, like it hasn't decided yet whether to fall—and where the drops land, the marsh grass doesn't ripple. His free hand taps twice against the flat of his blade, waiting on an answer nobody's given yet, and the sound carries farther than it should.
+> A duck built like nothing that should stand upright, white-feathered and corded with muscle under gilded pauldrons, a longsword resting easy in one hand and a bow taller than a person slung across his back. He doesn't blink. His eyes track movement with an intensity that belongs to nothing that eats bread crumbs. Somewhere behind him, water keeps dripping in a slow, wrong rhythm, like it hasn't decided yet whether to fall. Where the drops land, the marsh grass doesn't ripple. His free hand taps twice against the flat of his blade, waiting on an answer nobody's given yet, and the sound carries farther than it should.

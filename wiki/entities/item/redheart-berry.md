@@ -34,7 +34,7 @@ relationships:
 ![[attachments/shattered-sea/items/aruhe-redheart-berry.jpg|Redheart berry]]
 
 > [!narration] Narration
-> A glossy red berry hangs heavy on a short, thick stem, its round body pulled into deep ridges beneath curled leaves. Clear water beads across the tight skin, and the firm fruit holds its shape until dark juice breaks loose.
+> A glossy red berry hangs heavy on a short, thick stem, its round body pulled into deep ridges beneath curled leaves. Clear water beads across the tight skin. Dark juice bursts out when the fruit splits.
 
 Consumable, Rare.
 

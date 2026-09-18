@@ -12,10 +12,10 @@ tags: [exploration, mystery]
 tier: supporting
 lifecycle: discoverable
 pressure: "Maw weather is closing the southern stair while the Sentinels' records, Kyzil, and Crissdalynn's unfinished pilgrimage remain above it."
-if_ignored: "Breaking water cuts off the southern stair to non-fliers, the Sentinels keep recording without intervening, and Osset gains more time to study Crissdalynn away from Kyzil."
-actors: ["[[sentinels-of-the-eyrie]]", "[[master-kyzil]]", "[[osset]]"]
+if_ignored: "Breaking water cuts off the southern stair to non-fliers, the Sentinels keep recording without intervening, and Talon Vantyrus gains more time to study Crissdalynn away from Kyzil."
+actors: ["[[sentinels-of-the-eyrie]]", "[[master-kyzil]]", "[[talon-vantyrus]]"]
 fronts: ["[[sentinels-of-the-eyrie]]"]
-clues: ["[[osset]]", "[[fate-spinner]]"]
+clues: ["[[talon-vantyrus|Osset]]", "[[fate-spinner]]"]
 locations: ["[[high-eyrie|The High Eyrie]]", "[[the-drowned-maw|The Drowned Maw]]"]
 related_events: []
 campaigns: [Shattered Sea]
@@ -32,13 +32,13 @@ Maw weather drives breaking water around [[high-eyrie|the High Eyrie]]. [[aarako
 
 ## Pressure
 
-The wind shifts east, swells build against the stack, and spray reaches the lowest stair. Above, [[sentinels-of-the-eyrie|the Sentinels]] hold the Maw's unmatched record while [[osset|Osset]] waits beyond [[master-kyzil|Kyzil]]'s reach for a cleaner read on Crissdalynn.
+The wind shifts east, swells build against the stack, and spray reaches the lowest stair. Above, [[sentinels-of-the-eyrie|the Sentinels]] hold the Maw's unmatched record while [[talon-vantyrus|Talon Vantyrus]] waits beyond [[master-kyzil|Kyzil]]'s reach for a cleaner read on Crissdalynn.
 
 ## Actors
 
 - **[[sentinels-of-the-eyrie|The Sentinels]]:** preserve the Maw record without becoming anyone's instrument. They control access to the terraces and ledgers.
 - **[[master-kyzil|Master Kyzil]]:** warns Crissdalynn without completing her pilgrimage for her. He waits inside the order's doctrine.
-- **[[osset|Osset]]:** learns what Kyzil withheld about Crissdalynn's Long Sight. He stays away while Kyzil is near.
+- **[[talon-vantyrus|Talon Vantyrus]]:** learns what Kyzil withheld about Crissdalynn's Long Sight. He stays away while Kyzil is near.
 
 ## Discoverable / Affectable
 
@@ -48,7 +48,7 @@ The wind shifts east, swells build against the stack, and spray reaches the lowe
 
 ## If Ignored
 
-The lowest stair disappears under white water and non-flying access closes until the weather breaks. The Sentinels add the storm and the ship below to their record. Away from Kyzil, Osset continues learning Crissdalynn's shipboard habits.
+The lowest stair disappears under white water and non-flying access closes until the weather breaks. The Sentinels add the storm and the ship below to their record. Away from Kyzil, Talon Vantyrus continues learning Crissdalynn's shipboard habits.
 
 ![[high-eyries-storm-door-narration-condition]]
 

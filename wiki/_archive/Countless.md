@@ -30,7 +30,7 @@ Hired blades, paid contacts, covert routes, taken names, and the ability to avoi
 Names go missing, and agents use the shared title **Talon**. A hired blade or paid contact can finish one job without learning who ordered it.
 
 ## Leadership
-- Founder and leader: [[Talon Vantyrus]] (also the Osset guise)
+- Founder and leader: [[Talon Vantyrus]], originally named Osset
 - Apprentice: [[Talon Skarn]]
 
 ## Immediate objective

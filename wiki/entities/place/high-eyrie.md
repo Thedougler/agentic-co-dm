@@ -25,13 +25,13 @@ region: "Crown Islands"
 ---
 # High Eyrie
 > [!narration] Narration
-> A basalt stack stands beyond the eastern island chain, high over discoloured water. Wind shears the rock face, and the stack holds a clear view of the approaches below.
+> A basalt stack stands beyond the eastern island chain, high over discoloured water. Wind shears the rock face, and the stack overlooks the approaches below.
 
 ## At a Glance
-A basalt stack beyond the eastern Crown chain, held by the [[sentinels-of-the-eyrie]] for two hundred years and overlooking the [[drowned-maw]].
+A basalt stack beyond the eastern Crown chain. The [[sentinels-of-the-eyrie]] have held it for two hundred years, and it overlooks the [[drowned-maw]].
 
 ## Sentinel refusal
-The [[dravosi-crown]] has offered the Sentinels three deals. They have refused all three. The offers' exact terms remain unnamed; the refusal is established, not a license to invent their contents.
+Each offer has no stated terms. The Sentinels refused all of them, and the refusal does not establish what the Crown offered.
 
 ## Who is here
 [[sentinels-of-the-eyrie]], [[master-kyzil]], apprentices, record-keepers, and the Maw observation ledgers.
@@ -42,4 +42,4 @@ The [[dravosi-crown]] has offered the Sentinels three deals. They have refused a
 ## Secrets
 The seal and founding records remain tied to the existing Sentinel material. The Crown's three refusals are a political pressure, not proof that the Sentinels understand the Crown's hidden founder.
 
-**Provenance:** Dump source 2026-09-05; legacy `/Users/nick/shattered-sea/wiki/shattered-sea/schism-of-the-eyrie/location-high-eyrie.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/schism-of-the-eyrie/faction-sentinels-of-the-eyrie.md`.
+**Provenance.** Dump source 2026-09-05; legacy `/Users/nick/shattered-sea/wiki/shattered-sea/schism-of-the-eyrie/location-high-eyrie.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/schism-of-the-eyrie/faction-sentinels-of-the-eyrie.md`.

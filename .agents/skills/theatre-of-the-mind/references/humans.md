@@ -48,8 +48,8 @@ Fail closed if the read-aloud sounds like a catalog or rules gloss.
 Layering: Appearance ≠ Identified ≠ Fiction/Secret. Keep procedure only.
 
 For a standalone item portrait, use the cold player-appearance layer by
-default. **Coverage + length floor:** about three connected sentences that
-cover (1) silhouette/scale/whole type, (2) material, parts, and visible wear,
+default. **Coverage floor:** a full paragraph of connected prose covering
+(1) silhouette/scale/whole type, (2) material, parts, and visible wear,
 (3) one stable sensory or ordinary physical behavior — in concrete nouns and
 verbs (cloudy quartz, dulled corners on four faces, cool to the touch, spins
 true then settles with a short wobble). Include all supplied state variants,

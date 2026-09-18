@@ -20,7 +20,7 @@ No fixed route after that. Season 2 is an open [[midchain|Midchain]] sandbox: th
 
 ---
 
-[[sentinels-of-the-eyrie|The Schism's Third Name]] (active [[front|Front]], 5-segment clock) is this season's confirmed deep-dive. [[osset|Osset]] relocating his cursed-item stock every time a description of him circulates is a built-in island generator: wherever he resurfaces next can be wherever the next stop needs to be. It pressures [[crissdalynn-khinriss|Crissdalynn]] directly: the Eyrie kept a name from her even before her own exile.
+[[sentinels-of-the-eyrie|The Schism's Third Name]] (active [[front|Front]], 5-segment clock) is this season's confirmed deep-dive. [[talon-vantyrus|Talon Vantyrus]], once known as Osset, relocates his cursed-item stock every time a description of him circulates. That movement is a built-in island generator: wherever he resurfaces next can be wherever the next stop needs to be. It pressures [[crissdalynn-khinriss|Crissdalynn]] directly because the Eyrie kept his original name from her even before her own exile.
 
 ---
 
@@ -75,7 +75,7 @@ Levels come from won fights, not from milestones reached. Five victories, and on
 | Rung | The victory | Gated on |
 |---|---|---|
 | 1 | A rescue taken by force. Prepped instance: the beach at [[aruhe\|Aruhe]]. | Nothing. Not required either: sail elsewhere first and rung 1 becomes whatever won fight ends with someone walking out alive who wouldn't have. |
-| 2 | A master beaten. Cornering [[osset\|Osset]], a Kensei who was a master before [[master-kyzil\|Kyzil]] and who can fly. | Nothing, the clock is live from the start. |
+| 2 | A master beaten. Cornering [[talon-vantyrus|Talon Vantyrus]], a Kensei who was a master before [[master-kyzil|Kyzil]] and who can fly. | Nothing, the clock is live from the start. |
 | 3 | [[talon-skarn\|Skarn]] beaten. Dropped in his own stoop, or hunted to his ground afterward and the dreidel taken back. | Nothing. Likely lands first. |
 | 4 | The door taken. The standing that opens [[high-eyrie\|High Eyrie]], bought with something only privateers can deliver, with [[the-countless\|the Countless]] moving for the same door. | Rung 2 or 3. They need a reason to want inside. |
 | 5 | [[talon-vantyrus\|Vantyrus]]. The man or his operation, broken. | Rung 3. The Countless have to have declared. |
@@ -122,7 +122,7 @@ Prep rule instead of twenty loot tables: every island stop carries at least one 
 
 ---
 
-Exploration, ship combat, and privateering each get a standing generator instead of a schedule. One is always live. Whichever mode the table wants tonight, it's ready. Exploration is how you find Osset, since he relocates every time a description circulates and any island is a live candidate. Ship combat is how the hunters press back: [[talon-vantyrus|Vantyrus]]'s watchers need hulls, and [[simone-tabarnack|Simone]] is independently hunting [[jean-claude-tabarnack|Jean-Claude]]. With hunters converging from both sides, fights find the crew without the crew seeking them out. Privateering is the economy, because Fathomrush's company prices, Catarina's materials, and eventually the price of the Eyrie's door are all money the crew doesn't have.
+Exploration, ship combat, and privateering each get a standing generator instead of a schedule. One is always live. Whichever mode the table wants tonight, it's ready. Exploration is how you find Talon Vantyrus through the old name Osset, since he relocates every time a description circulates and any island is a live candidate. Ship combat is how the hunters press back: [[talon-vantyrus|Vantyrus]]'s watchers need hulls, and [[simone-tabarnack|Simone]] is independently hunting [[jean-claude-tabarnack|Jean-Claude]]. With hunters converging from both sides, fights find the crew without the crew seeking them out. Privateering is the economy, because Fathomrush's company prices, Catarina's materials, and eventually the price of the Eyrie's door are all money the crew doesn't have.
 
 ---
 

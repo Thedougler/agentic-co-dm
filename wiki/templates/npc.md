@@ -40,7 +40,7 @@ flexGrow=2
 flexGrow=1
 ===
 > [!narration] {{title}}
-> Write the spoken look in complete sentences. No secrets, DCs, unearned names, or DM thesis.
+> Write a high-quality cold portrait in flowing prose — as long as the person requires. Cover face, body, posture, clothing, and at least one non-sight detail. No secrets, DCs, unearned names, or DM thesis.
 ```
 ````
 

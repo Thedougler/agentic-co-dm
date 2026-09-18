@@ -31,5 +31,5 @@ tags: [story, recap]
 - The crew is at/around [[Aruhe - Hungry Isle]] aboard mobile [[Uncertainty]]. Three storm survivors and two Aruhe survivors are aboard; inland people remain in the terraces.
 - The Aruhe thread is the Calveno raid rescue: survivors remain inland, the ship stays mobile, and the island's taking-places, dead, and crown squid are immediate pressure.
 - [[Bring the Pearl of Souls to Umberlee]] remains open. So do [[Pursue the Grung raiding fleet]], [[Simone's hunters]], and [[Grigori and the Crown hunt]].
-- [[Osset]] is [[Talon Vantyrus]]'s alias. Vantyrus wants the Fate Spinner; Countless and the Sentinel schism remain live through [[Long Sight Hunt]], [[Rule of Two]], and [[Countless through the Maw seal]].
+- [[Osset]] was Talon Vantyrus's original name; he now leads the Countless under that alias. Vantyrus wants the Fate Spinner, and the Sentinel schism remains live through [[Long Sight Hunt]], [[Rule of Two]], and [[Countless through the Maw seal]].
 - [[Nona Black-Jaw]]'s unspecified favor, the unread Otar scrap, the unscratched chair, the Red Wake, and the Karath captive pipeline remain unresolved.

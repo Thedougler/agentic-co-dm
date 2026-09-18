@@ -221,9 +221,9 @@ def parse_scope(raw: str | None) -> Scope | None:
     if raw is None or not raw.strip():
         return None
     if ":" not in raw:
-        # ponytail: bare .md path → files:path shorthand (e-45)
-        if raw.strip().endswith(".md"):
-            return Scope("files", [raw.strip()])
+        parts = [p.strip() for p in raw.split(",")]
+        if all(p.endswith(".md") for p in parts):
+            return Scope("files", parts)
         raise ValueError("scope must use kind:value syntax (for example, dir:entities, or a bare .md path)")
     kind, value = (part.strip() for part in raw.split(":", 1))
     if not kind:

@@ -30,7 +30,7 @@ Active [[campaigns/shattered-sea/fronts/00 Fronts|fronts]]:
 - [[The taken 314]] — the Grung fleet’s 314+ taken people, the Aruhe dead, and the Crown’s response.
 - [[Long Sight Hunt]] — Countless watchers and Vantyrus pursue Fate Spinner carriers.
 - [[Rule of Two]] — Skarn and Vantyrus turn the schism inward, with Crissdalynn in the crossfire.
-- [[Schism's Third Name]] — Kyzil mistakes Osset for a third actor; Osset = Vantyrus.
+- [[Schism's Third Name]] — Kyzil mistakes Osset, Vantyrus's original name, for a third actor.
 - [[Countless through the Maw seal]] — Vantyrus seeks the Soul Incarnate transformation technique.
 
 Dormant:

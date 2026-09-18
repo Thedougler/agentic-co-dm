@@ -19,7 +19,7 @@ Address this page to the DM. State what is proposed and why it matters at the ta
 
 ## Grounding
 
-Name the wiki pages and/or D&D 5e rules this invention rests on. Use complete sentences.
+List the wiki pages and/or D&D 5e rules that ground this invention. Use complete sentences.
 
 ## Proposal
 

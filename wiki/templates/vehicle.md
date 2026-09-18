@@ -10,7 +10,7 @@ lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-kind: ship
+kind: vessel
 region: ""
 berth: ""
 summary: ""
@@ -29,7 +29,7 @@ summary: ""
 # {{title}}
 
 > [!narration] Narration
-> Write the spoken look in complete sentences. Silhouette, scale, and what a body can reach from the supplied viewpoint. No secrets, DCs, or unearned names.
+> Write a high-quality cold portrait in flowing prose for as long as the craft requires. Cover silhouette, scale, material, and usable features. No secrets, DCs, or unearned names.
 
 ## Sheet
 
@@ -45,7 +45,7 @@ summary: ""
 - **Hull.** AC, HP, damage threshold.
 - **Helm.**
 - **Movement.**
-- **Weapons.** Armed craft only; omit when unarmed.
+- **Weapons.** Armed craft only. Omit when unarmed.
 
 ## Crew stations
 
@@ -61,7 +61,7 @@ Initiative, ramming, boarding, and destruction when the craft fights. Omit when 
 
 ## At a Glance
 
-One short block: what this craft is now, where it sits, and why a DM opens the page. Omit when Sheet + narration already cover it.
+Write a short block about the craft's current role, location, and table use. Omit when Sheet and narration already cover it.
 
 ## Hidden Cargo & History
 
@@ -69,17 +69,17 @@ Concealed cargo, true flag, sealed compartments, or who is hunting this craft. O
 
 ## Connections
 
-- [[page]] — What this tie does at the table.
+- [[page]]. State what this tie does at the table.
 
 <!-- Omit Connections when unused. -->
 
 ## At the Table
 
-How to run the craft tonight — approach, berth, pursuit, boarding choice. Omit when unused. Do not duplicate Handling.
+Explain how to run the craft tonight. Cover approach, berth, pursuit, or boarding choice. Omit when unused. Do not duplicate Handling.
 
 ## Provenance
 
-Chassis source, rename history, contested ownership. Facts only — no ingest/process meta. Omit when unused.
+State the chassis source, rename history, and contested ownership. Facts only. Do not include ingest or process meta. Omit when unused.
 
 ## Art
 

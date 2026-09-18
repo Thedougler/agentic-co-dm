@@ -31,7 +31,7 @@ tier: supporting
 > [!narration]
 > *The *[[Uncertainty]]* floats off [[La Vasca]]'s cradle with her paint still tacky. One unbroken blue-black from cap rail to copper. Gun muzzles come out along the side, a long pair and a squat pair. At the bow a hardwood woman walks forward with nothing written on her face. Nobody has named her.*
 >
-> *Below, the four berths stand filled and unused, including a cargo hold that still waits for a claim. The chart archive has no hand. The provisions store holds [[Cobb]]'s sealed ration chest. Aft, a long table and a bulkhead bench occupy the space that used to be a captain's cabin. The crew bolted the [[fleet commander's chair]] at the head of it.*
+> *Below, the four berths stand filled and unused, including an empty cargo hold. The chart archive has no hand. The provisions store holds [[Cobb]]'s sealed ration chest. Aft, a long table and a bulkhead bench occupy the space that used to be a captain's cabin. The crew bolted the [[fleet-commanders-chair|fleet commander's chair]] at the head of it.*
 >
 > *The galley has not been lit. The cook, navigator, and surgeon posts have no names on them.*
 
@@ -43,38 +43,38 @@ tier: supporting
 
 Open while the hull is still at [[La Vasca]]. Return to the opening stretch when the lines go slack.
 
-## 1 — Arrive
+## 1. Arrive
 
 ![[uncertainty-refit-tour-narration-condition]]
 
-> [!check] Uncertainty's Refit Tour
+> **Uncertainty's Refit Tour.**
 >
 > | Check | DC | Failure | Pass |
 > |---|---|---|---|
-> | Investigation | 14 | new timber | [[uncertainty-deck-layouts]] — which deck still hides old habit |
+| Investigation | 14 | new timber | [[uncertainty-deck-layouts]] reveals which deck still hides old habit |
 > | Perception | 13 | a clean ship | unused galley, open cook and surgeon berths |
 > | Sleight of Hand | 15 | seen at the lockers | personal gear or contraband given a deliberate home |
 
 ![[uncertainty-refit-tour#Premise]]
 
-## 2 — What's live
+## 2. What's live
 
 ![[uncertainty-refit-tour#Pressure]]
 
 ![[uncertainty-refit-tour#Actors]]
 
-> [!check] Actors
+> **Actors.**
 >
 > | Check | DC | Failure | Pass |
 > |---|---|---|---|
 > | Insight | 13 | they are proud of the work | [[sem-holst]] knows which fittings take abuse |
 > | Persuasion | 12 | a shrug | [[geoffrey-draves]], Sem, or [[Thunk]] names what changed |
-> | Investigation | 15 | a chair | [[fleet-commanders-chair]] — [[barnaby-rook]]'s log and letters |
+| Investigation | 15 | a chair | [[fleet-commanders-chair]] with [[barnaby-rook]]'s log and letters |
 
-## 3 — If they dig
+## 3. If they dig
 
 ![[uncertainty-refit-tour#Discoverable / Affectable]]
 
 ## Exit
 
-- the mooring lines go slack → [[The Open Strait]] beat 3
+- the mooring lines go slack → The Open Strait beat 3

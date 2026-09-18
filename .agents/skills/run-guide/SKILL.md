@@ -6,7 +6,7 @@ description: >-
   and only as sectioned as play requires. Use for "run tonight", "build a run
   guide", or a session-prep document that is hard to scan. Four passes, each
   loading only its skills: pass 1 (dnd5e-mechanics) writes the mechanical card
-  plus empty [!narration] stubs; pass 2 (copy-writer) edits DM-facing copy;
+  plus empty [!narration] stubs; pass 2 (writing-for-humans) edits DM-facing copy;
   pass 3 (theatre-of-the-mind) fills every spoken stub; pass 4 checks Reading
   view. Do not load a later pass's skill early. Not beat composition, canon
   invention, or session reconciliation.
@@ -31,7 +31,7 @@ Owners stay canon. Full statblocks **embed** at the bottom (the DM scrolls).
 Scene *procedure*, zones, tells, action cards, and how the scene resolves are written here.
 A missing owner is a diagnostic, not permission to invent canon or math.
 
-**Four passes, each loading only its skills.** Pass 1 (`dnd5e-mechanics`) writes the mechanical card and **empty titled `[!narration]` stubs** — no prose skills loaded. Pass 2 (`copy-writer`) edits DM-facing copy for usability, readability, and table usefulness — stubs stay empty. Pass 3 (`theatre-of-the-mind`; TUI **copy-writer**, Grok Bots **Visualizer**) fills every spoken stub — loaded only after DM copy is clean. Pass 4 checks Reading view. Do not load a later pass's skill early.
+**Four passes, each loading only its skills.** Pass 1 (`dnd5e-mechanics`) writes the mechanical card and **empty titled `[!narration]` stubs** — no prose skills loaded. Pass 2 (`writing-for-humans`) edits DM-facing copy for usability, readability, and table usefulness — stubs stay empty. Pass 3 (`theatre-of-the-mind`; TUI **writing-for-humans**, Grok Bots **Visualizer**) fills every spoken stub — loaded only after DM copy is clean. Pass 4 checks Reading view. Do not load a later pass's skill early.
 
 **Sole-authority:** a tired DM at minute 90 can roll and speak this slice
 without opening another note. Every default-mode *ruling* lives on the card.
@@ -76,7 +76,7 @@ field needs decoding, replace it with the ordinary thing and visible action.
 ## Workflow — four passes
 
 Each pass loads only the skills it needs. Do not load a later pass's skill
-early — loading `copy-writer` during mechanics writing pulls attention toward
+early — loading `writing-for-humans` during mechanics writing pulls attention toward
 prose polish before the structure exists; loading `theatre-of-the-mind` before
 DM copy is clean fills spoken slots over broken scaffolding. The pass boundary
 is a skill-load boundary.
@@ -117,7 +117,7 @@ is a skill-load boundary.
 
 **Load:** `dnd5e-mechanics`. Also `session-beats` when the chart is missing; the
 matching type skill when a live beat of that type is missing; `encounter-prep`
-when encounter stock is missing. Do **not** load `copy-writer` or `theatre-of-the-mind` on this pass.
+when encounter stock is missing. Do **not** load `writing-for-humans` or `theatre-of-the-mind` on this pass.
 
 This pass builds the runnable structure: every section, table, ruling, DC,
 action card, clock, zone, and procedure the DM will use, plus the empty prose
@@ -141,17 +141,17 @@ slots that later passes fill. Player-facing prose is not written here.
 
 ### Pass 2: DM copy
 
-**Load:** `copy-writer`. Do **not** load `theatre-of-the-mind` on this pass.
+**Load:** `writing-for-humans`. Do **not** load `theatre-of-the-mind` on this pass.
 
 This pass edits the DM-facing text that pass 1 wrote — Scene ends when, Glance,
 Now, Procedure, Be ready for, clocks, action cards, How the Scene Resolves — for
 usability, readability, and signal density. The `[!narration]` stubs stay empty.
-`copy-writer` owns the prose quality bar; this skill owns the cockpit structure.
+`writing-for-humans` owns the prose quality bar; this skill owns the cockpit structure.
 If a structural gap surfaces (missing section, wrong field order), fix it before
 polishing copy.
 
 5. **Edit DM copy.** Read the mechanical cockpit end-to-end, then edit every
-   DM-facing heading and body for table usefulness. Apply the `copy-writer`
+   DM-facing heading and body for table usefulness. Apply the `writing-for-humans`
    earn-it test: remove a line; if no choice, ruling, risk, resource, route,
    clock, NPC response, or spoken picture changes, cut it. Completion: Scene
    ends when, Glance, Now, Procedure, Be ready for, clocks, and How the Scene
@@ -422,8 +422,8 @@ Completion — all of these hold, or the draft is not done:
 - No `DM truth` section. Hidden intent, opposition wants, and canon constraints live inline where the DM uses them.
 - No coy placeholders, mystery hedges, or "do not reveal this" notes in DM-facing text. Name the DM fact plainly or omit it.
 - No naked checks. Every check says what success reveals or changes, what failure changes, and why the result matters now.
-- Pass 1: `dnd5e-mechanics` loaded; `copy-writer` and `theatre-of-the-mind` not loaded. Empty callout stubs and empty Narration-column cells at the TotM slots this beat can actually use; no player-facing prose in those bodies. How the Scene Resolves is one unconditional stub plus an options table, not a stack of variant callouts. Each option hands off to a beat on the skeleton, not off-scene.
-- Pass 2: `copy-writer` loaded after pass 1 completes; `theatre-of-the-mind` not loaded. DM-facing copy is usable, readable, useful, complete, and signal-only before spoken prose is filled. Every `[!narration]` body and Narration column cell is still empty.
+- Pass 1: `dnd5e-mechanics` loaded; `writing-for-humans` and `theatre-of-the-mind` not loaded. Empty callout stubs and empty Narration-column cells at the TotM slots this beat can actually use; no player-facing prose in those bodies. How the Scene Resolves is one unconditional stub plus an options table, not a stack of variant callouts. Each option hands off to a beat on the skeleton, not off-scene.
+- Pass 2: `writing-for-humans` loaded after pass 1 completes; `theatre-of-the-mind` not loaded. DM-facing copy is usable, readable, useful, complete, and signal-only before spoken prose is filled. Every `[!narration]` body and Narration column cell is still empty.
 - Pass 3: `theatre-of-the-mind` loaded after pass 2 completes. Initial Narration is the Layer 1 immediate frame — a stable shared picture and something live to respond to. Salient features and deeper facts are separate reveal blocks or zone/tick Narration cells (Layers 2–3). Every stub is filled. Every Narration cell that is spoken is `==_italic_==`.
 - Pass 4: Reading view was checked top to bottom; no `[!narration]` body or Narration table cell that should be spoken is empty.
 - Action cards sit near the procedure or ruling they support. Bloodied, cover-reached, and scene dials sit beside the Threat clock table when a Threat clock exists.
@@ -451,8 +451,8 @@ hunting. Do not add a second card schema or prep-management menu.
 
 `session-beats` owns missing beat charts and *cut line* pacing. A missing live
 beat of a type → that type skill. `encounter-prep` owns reusable encounter stock
-that fits this cockpit. This skill owns pass 1 (mechanical card + empty stubs). `copy-writer` owns pass 2 DM copy.
-`theatre-of-the-mind` owns pass 3 spoken fill (TUI copy-writer; Grok Bots Visualizer).
+that fits this cockpit. This skill owns pass 1 (mechanical card + empty stubs). `writing-for-humans` owns pass 2 DM copy.
+`theatre-of-the-mind` owns pass 3 spoken fill (TUI writing-for-humans; Grok Bots Visualizer).
 Pass 4 is the ready check. `visual-aids` assembles an already-listed
 owner image onto the card. Monster math → `homebrew-monsters-5e`. Check, save,
 DC, and player-interaction mechanics → `dnd5e-mechanics`. Do not invent canon,

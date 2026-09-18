@@ -2,5 +2,7 @@ extends: existence
 message: "Remove '%s'."
 ignorecase: true
 level: error
+nonword: true
 tokens:
-  - very
+  # D&D rarity ("Very Rare") is a mechanical term, not an intensifier.
+  - '\bvery\b(?!\s+rare\b)'

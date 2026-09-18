@@ -40,7 +40,7 @@ summary: ""
 # {{title}}
 
 > [!narration] Narration
-> Write the spoken look in complete sentences. Player-safe TotM. No secrets, DCs, unearned names, or DM thesis.
+> Write a high-quality cold portrait in flowing prose for as long as the character requires. Cover face, body, clothing, posture, and at least one non-sight detail. Player-safe. No secrets, DCs, unearned names, or DM thesis.
 
 ## At a Glance
 
@@ -48,15 +48,15 @@ summary: ""
 | ---------------- | -- |
 | **Class / Level** | {{class_levels}} (level {{level}}) |
 | **Player**       |  |
-| **Home ship**    | [[ship]] |
+| **Home vessel**   | [[vehicle]] |
 
-> **DM thesis:** One sentence on how this PC plays at the table (lane, pressure, party role) — not NPC wants.
+> **DM thesis.** Write one sentence on how this PC plays at the table. Describe the lane, pressure, and party role. Do not describe NPC wants.
 
 ## Connections
 
-- [[party member]] — What this tie does at the table.
-- [[ship]] — Berth / station.
-- [[faction]] — Obligation or lean that changes a ruling.
+- [[party member]]. State what this tie does at the table.
+- [[vehicle]]. State the berth or station.
+- [[faction]]. State the obligation or lean that changes a ruling.
 
 <!-- Shared heading Connections — NOT `# Relationships`. Omit when unused. -->
 
@@ -102,13 +102,13 @@ stats: [10, 10, 10, 10, 10, 10]
 
 ### Fast Read
 
-One line: lane · key numbers · Achilles heel · toughest matchup when known.
+Write one line covering the lane, key numbers, Achilles heel, and toughest matchup when known.
 
-### Counters & Synergy
+### Counters and Support
 
 - **Hard counters.** What shuts them down.
 - **Soft counters.** What pressures them.
-- **Amplifies / Depends on.** Party synergy that changes a ruling.
+- **Amplifies / Depends on.** Party support that changes a ruling.
 
 ## Abilities
 

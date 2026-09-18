@@ -30,13 +30,13 @@ wiki/AGENTS.md, not heading-order match.
 
 ## Current Truth
 
-Write the ruling that is true now in complete sentences. Link owner pages. Summarize procedure; do not paste proprietary rules text.
+Write the ruling that is true now in complete sentences. Link owner pages. Summarize the procedure. Do not paste proprietary rules text.
 
 ## At the Table
 
-* **Players notice:** The observable sign that this ruling is in play.
-* **This enables:** A choice or procedure that becomes available.
-* **This warns of:** A cost or limit the ruling lets the table anticipate.
+* **Players notice.** Describe the observable sign that this ruling is in play.
+* **This enables.** Describe a choice or procedure that becomes available.
+* **This warns of.** Describe a cost or limit the ruling lets the table anticipate.
 
 <!--
 Design basis: a rule note is living canon for one table procedure, not an

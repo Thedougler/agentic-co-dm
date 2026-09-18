@@ -20,7 +20,7 @@ summary: ""
 # {{title}}
 
 > [!narration] Narration
-> Write what a bystander sees, hears, and feels at the casting, in complete sentences. No secrets, DCs, or unearned names.
+> Write a high-quality cold portrait of the casting in flowing prose for as long as the spell requires. Cover what a bystander sees, hears, and feels. No secrets, DCs, or unearned names.
 
 Level, School (Ritual when it is a ritual)
 

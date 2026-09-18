@@ -62,7 +62,7 @@ foundry_id: kS3wQ76uMq1QgDCw
 ## Connections
 
 - [[Simone]] — Sister who still hunts him from the Sorn garrison.
-- [[Botukuri]] · [[grung-clans]] · [[Twiceborn]] — Origin, blue caste signals, and censure read through the red beret.
+- [[Botukuri]] · [[grung-clans]] · [[grung-color-and-the-sealing-rite|Twiceborn]] — Origin, blue caste signals, and censure read through the red beret.
 - [[grung-authority-seal]] — One spent seal is on his sheet.
 - [[Uncertainty]] — Aboard at [[aruhe]].
 - [[crissdalynn-khinriss]] — Ally; crow Aarakocra who tests his bird phobia most directly.

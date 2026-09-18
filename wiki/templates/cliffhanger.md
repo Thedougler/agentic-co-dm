@@ -26,21 +26,21 @@ summary: ""
 
 **Stakes.** What the party can lose, fail to protect, or allow to change.
 
-**Ends when.** The observable condition that means this beat is over. Keep the Cliffhanger short — resolve and hand off.
+**Ends when.** The observable condition that means this beat is over. Make the Cliffhanger brief, then resolve and hand off.
 
 > [!narration] Open on Action
-> In 2–4 complete sentences, establish the immediate danger, essential spatial information, and one striking sensory detail. End on the thing demanding a decision. Do not prescribe the party's response or reveal hidden information.
+> Write high-quality theatre of the mind in two to four sentences. Address the players as "you" and include immediate danger, relative position, cover or routes, drawable appearance, and at least one non-sight sense. End on the reaction point. Do not prescribe the party's response or reveal hidden information.
 
 ## Run the Beat
 
 | Need at the table  | Prep                                                                                                                                         |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Opposition**     | [[opposition]] — what they want and how they pursue it.                                                                                      |
+| **Opposition**     | [[opposition]], including what they want and how they pursue it.                                                                       |
 | **Default motion** | What happens if the party does nothing.                                                                                                      |
 | **Pressure**       | Timer, pursuit, collapsing position, hostage, advancing force, spreading hazard, or other urgency.                                           |
-| **Leverage**       | 2–4 visible features the party or opposition can exploit: cover, height, machinery, exits, crowds, unstable terrain, vehicles, magic, etc.   |
-| **Danger**         | What makes defeat credible; include the important mechanic only when needed to run it.                                                       |
-| **Ways out**       | Visible opportunities to fight, flee, bargain, bypass, rescue, seize the objective, or change the situation. These are examples, not a menu. |
+| **Leverage**       | List visible features the party or opposition can exploit. Examples include cover, height, machinery, exits, crowds, unstable terrain, vehicles, magic, etc.   |
+| **Danger**         | What makes defeat credible. Include the important mechanic only when needed to run it.                                                       |
+| **Ways out**       | Visible opportunities to fight, flee, bargain, bypass, rescue, seize the objective, or change the situation. List the actual opportunities available here. |
 
 ````col
 ```col-md
@@ -79,9 +79,9 @@ Use these only when the fiction calls for them or momentum begins to flatten. Sk
 - **Space.** The few distances, zones, routes, or boundaries that matter.
 - **Hazard.** What is dangerous here and when it acts.
 - **Interactive features.**
-  - **Feature:** What a character can obviously do with it and what changes.
-  - **Feature:** What a character can obviously do with it and what changes.
-  - **Feature:** What a character can obviously do with it and what changes.
+  - **Feature.** Describe what a character can obviously do with it and what changes.
+  - **Feature.** Describe what a character can obviously do with it and what changes.
+  - **Feature.** Describe what a character can obviously do with it and what changes.
 - **Change.** One believable way the environment can evolve during the beat.
 - **Map.** Add a battlemap when available.
 
@@ -91,18 +91,18 @@ Use these only when the fiction calls for them or momentum begins to flatten. Sk
 
 <!-- Keep information portable. Reveal it through whatever action, foe, object, or consequence makes sense in play rather than requiring one predetermined method. Omit this section when the beat carries no useful information. -->
 
-- **Clue.** One short actionable fact the party can discover.
-- **Clue.** One short actionable fact the party can discover.
-- **Clue.** One short actionable fact the party can discover.
+- **Clue.** One short usable fact the party can discover.
+- **Clue.** One short usable fact the party can discover.
+- **Clue.** One short usable fact the party can discover.
 
 ## Resolution
 
 | Outcome                 | What changes                                                                                 |
 | ----------------------- | -------------------------------------------------------------------------------------------- |
-| **Objective gained**    | The concrete benefit, changed situation, or advantage the party earns.                       |
-| **Costly success**      | What they gain and the meaningful price, complication, or loss that remains.                 |
+| **Objective gained**    | The concrete benefit, changed situation, or advantage the party gains.                       |
+| **Costly success**      | What they gain and the important price, complication, or loss that remains.                 |
 | **Withdrawal / defeat** | The opposition's objective advances or the situation worsens without stopping play.          |
-| **Unexpected solution** | Follow the established fiction; preserve the consequence of what the party actually changed. |
+| **Unexpected solution** | Follow the established fiction. Preserve the consequence of what the party actually changed. |
 
 **Changed state.** What is now true because this contest happened.
 
@@ -114,9 +114,9 @@ Use these only when the fiction calls for them or momentum begins to flatten. Sk
 
 ## References
 
-- [[place]] — only the location details needed to adjudicate this beat.
-- [[npc]] — motive, posture, or dialogue needed here.
-- [[creature]] — tactics or statblock.
-- [[item]] — objective, leverage, or reward.
-- [[vehicle]] — movement or combat rules.
-- [[spell]] — effect that materially changes the situation.
+- [[place]]. Include only the location details needed to adjudicate this beat.
+- [[npc]]. Include the motive, posture, or dialogue needed here.
+- [[creature]]. Include tactics or the statblock.
+- [[item]]. Include the objective, leverage, or reward.
+- [[vehicle]]. Include movement or combat rules.
+- [[spell]]. Include the effect that materially changes the situation.

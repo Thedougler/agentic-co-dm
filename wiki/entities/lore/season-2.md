@@ -15,7 +15,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T21:50:00Z
-updated: 2026-09-13T21:50:00Z
+updated: 2026-09-18
 type: lore
 reveal: unrevealed
 campaign: shattered-sea
@@ -36,7 +36,7 @@ truth: partial
 
 The pitch starts the *[[Uncertainty]]* fresh out of repair in [[calven-and-calveno]]. [[nona-black-jaw]]'s Passage ships radio a storm and wrecked Grung hulls. The chase can lead to [[aruhe]] as a smash-and-grab for [[Sandro]] and [[Nino]], not a full survey. [[Hinewai]] as the Blight is named CR 19 and left as a horizon threat.
 
-Confirmed deep-dive: the Schism's Third Name clock on the [[sentinels-of-the-eyrie]]. [[Osset]] relocating cursed-item stock is an island generator. Rumors of the [[red-lady-dead-lady]] start at [[Kalowe]]. The 290 captives at [[Karath]] stay background pressure. [[talon-vantyrus]] can meet the crew by chance and send [[talon-skarn]] if he notices the [[fate-spinner]].
+The confirmed deep-dive is the Schism's Third Name clock on the [[sentinels-of-the-eyrie]]. [[talon-vantyrus|Talon Vantyrus]], once known as Osset, relocates cursed-item stock as an island generator. Rumors of the [[red-lady-dead-lady]] start at [[Kalowe]]. The 290 captives at [[Karath]] stay background pressure. He can meet the crew by chance and send [[talon-skarn]] if he notices the [[fate-spinner]].
 
 Named optional stops include [[Sparhold]], [[Fathomrush]], and [[Halythion]]. [[penance-bar]] stays optional. Two draft directions for its ride remain unreconciled in older notes; the later siege note is the one filed on [[penance-bar-siege]].
 

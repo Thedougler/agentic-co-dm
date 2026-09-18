@@ -2,13 +2,14 @@
 title: The Gold-Caste Serene
 aliases:
   - The Gold-Caste Serene
+  - Gold Caste Serene
 category: entities
 tags: [shattered-sea, creature]
 sources:
   - "campaign-os:gold-caste-serene.md"
   - "wiki/_raw/Grung clans.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/the-grung-clans/creature.the-gold-caste-serene.md"
-summary: "CR 30 unlookable gold Grung presence with Certainty Ward; encounter sheet now lives on this creature page."
+summary: "CR 30 unlookable gold Grung presence with Certainty Ward. This creature page defines the encounter sheet."
 provenance:
   extracted: 0.95
   inferred: 0.05
@@ -18,15 +19,13 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T00:00:00Z
-updated: 2026-09-13
+updated: 2026-09-18
 type: creature
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 relationships:
   - target: "[[grung-clans]]"
-    type: related_to
-  - target: "[[gold-caste-serene]]"
     type: related_to
   - target: "[[Auralis]]"
     type: related_to
@@ -124,15 +123,14 @@ lair_actions:
 
 ## Life
 
-Associated with [[grung-clans]] gold authority and the public [[Auralis]] / [[gold-caste-serene]] fiction layer. Habitat: [[verdant-teeth]]. Habits, diet, and social detail beyond the unlookable gold presence: Source is silent on this sheet.
+Associated with the [[grung-clans]]' gold authority, **Gold Caste Serene** names the fiction-layer presence through which the clans frame their decrees, while the sheet leaves its identity relative to [[Auralis]] unsettled. Its habitat is [[verdant-teeth]]. The sheet gives no habits, diet, or social detail beyond the unlookable gold presence.
 
 ## Hunt
 
-Signs: radiance no one can look at directly; jungle lair responses in the Verdant Teeth. Instincts: decree and wish-scale magic rather than melee. Opening: area exclusion and dominate on contact. Shut-down: Source is silent beyond the listed immunities. Aftermath: restrained, blinded, or teleported-denied survivors.
+Signs include radiance no one can look at directly and jungle lair responses in the Verdant Teeth. The creature's instincts favor decree and wish-scale magic over melee. It opens with area exclusion and dominate on contact. The source gives no further shutdown detail beyond the listed immunities. Survivors may remain restrained, blinded, or unable to teleport.
 
 ## Connections
 
 - [[grung-clans]]
-- [[gold-caste-serene]]
 - [[Auralis]]
 - [[verdant-teeth]]

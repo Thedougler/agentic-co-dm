@@ -7276,7 +7276,7 @@
     "project": "shattered-sea",
     "source_type": "document"
   },
-  "last_updated": "2026-09-18T02:24:41.335503+00:00",
+  "last_updated": "2026-09-18T07:38:36Z",
   "page_identity_transitions": [
     {
       "page_path": "entities/faction/Khlysty.md",
@@ -7284,6 +7284,34 @@
       "target": "entities/faction/khlysty-the-flock.md",
       "timestamp": "2026-09-17T22:02:13.680684+00:00",
       "transition": "merged_into"
+    },
+    {
+      "page_path": "entities/creature/Thornbacks.md",
+      "transition": "merged_into",
+      "target": "entities/creature/thornback.md",
+      "reason": "Duplicate creature page merged into canonical kebab-case owner.",
+      "timestamp": "2026-09-18T06:53:18.153865+00:00"
+    },
+    {
+      "page_path": "entities/creature/Terror-Birds.md",
+      "transition": "merged_into",
+      "target": "entities/creature/terror-bird.md",
+      "reason": "Merged duplicate terror-birds owner into canonical terror-bird page",
+      "timestamp": "2026-09-18T07:01:23.637682+00:00"
+    },
+    {
+      "page_path": "entities/lore/gold-caste-serene.md",
+      "transition": "merged_into",
+      "target": "entities/creature/the-gold-caste-serene.md",
+      "reason": "Redundant lore stub consolidated into the canonical Gold-Caste Serene creature owner.",
+      "timestamp": "2026-09-18T07:33:32Z"
+    },
+    {
+      "page_path": "entities/lore/Twiceborn.md",
+      "transition": "merged_into",
+      "target": "entities/lore/grung-color-and-the-sealing-rite.md",
+      "reason": "Twiceborn censure lore consolidated into the canonical Grung color and sealing-rite owner.",
+      "timestamp": "2026-09-18T07:33:32Z"
     }
   ],
   "sources": {
@@ -8359,12 +8387,21 @@
       ],
       "project": "shattered-sea",
       "source_type": "image"
+    },
+    "/Users/nick/agentic-co-dm/wiki/_archive/arc-blight-of-aruhe.md": {
+      "content_hash": "sha256:df40626cb59fcde17c3d5cd4d9079e7c57335a0e5e10334af00d40f3efe05598",
+      "last_ingested": "2026-09-18T07:38:36Z",
+      "pages_produced": [
+        "entities/lore/grung-and-the-making-of-aruhe.md",
+        "entities/npc/Hinewai.md",
+        "entities/npc/the-unnamed-companion.md"
+      ]
     }
   },
   "stats": {
     "packet_ingest-raw-2026-09-13-gh-2": 515,
-    "total_pages": 752,
-    "total_sources_ingested": 816
+    "total_pages": 754,
+    "total_sources_ingested": 817
   },
   "version": 1
 }

@@ -19,9 +19,9 @@ summary: ""
 # {{title}}
 
 **Follows:** [[Session-{{session}}-BB-Climax]]
-**Purpose:** A tiny afterscene — show what the climax changed, fulfill the adventure's promise, give the characters room to react, and leave on one strong final image. Keep it brief and proportional to the Climax.
+**Purpose.** This short afterscene shows what the climax changed. Fulfill the adventure's promise, give the characters room to react, and end on one strong final image. Keep it brief and proportional to the Climax.
 
-**Outcome:** One sentence describing what is true now because of what the party did.
+**Outcome.** State in one sentence what is true now because of what the party did.
 
 ## Run the Beat
 
@@ -29,10 +29,10 @@ summary: ""
 2. **Show the consequence.** Put one visible change in front of them now.
 3. **Pay off the stakes.** Deliver the promised reward, reunion, recognition, loss, answer, or other reason this mattered.
 4. **Let them react.** Give the characters space for brief choices, conversations, or epilogue moments.
-5. **End on an image.** Close once the consequence has landed. Use a stinger only when it grows naturally from play.
+5. **End on an image.** Close when the consequence is clear. Use a stinger only when it grows naturally from play.
 
 > [!narration] Closing image
-> Write 2–4 sentences the DM can speak. Show the new status quo through something the characters can see, hear, or experience. Do not narrate a PC's feelings, decisions, or future.
+> Write high-quality theatre of the mind in two to four sentences the DM can speak. Address the players as "you". Show the new status quo through something the characters can see, hear, or experience, including at least one non-sight sense. Do not narrate a PC's feelings, decisions, or future.
 
 ````col
 ```col-md
@@ -81,16 +81,16 @@ flexGrow=1
 | **Reward:**            | Coin, item, information, favor, title, advancement, access, etc. |
 | **Relationship:**      | Which important NPC gets a final beat?                           |
 
-**Pay the emotional bill.** If the adventure began because someone needed saving, justice, proof, payment, revenge, freedom, or an answer, show what accomplishing—or failing to accomplish—that goal means before moving on.
+**Pay the emotional bill.** If the adventure began because someone needed saving, justice, proof, payment, revenge, freedom, or an answer, show what achieving or failing to achieve that goal means before moving on.
 
 ## Character Epilogues
 
-Use only as many as the table wants. Ask; do not prescribe.
+Use only as many as the table needs. Ask rather than prescribe.
 
 | Character | Prompt                                                   | What becomes true |
 | --------- | -------------------------------------------------------- | ----------------- |
 | [[PC]]    | What do we see you do before we leave this story behind? |                   |
-| [[PC]]    | Who do you seek out—or deliberately avoid—afterward?     |                   |
+| [[PC]]    | Who do you seek out or deliberately avoid afterward?     |                   |
 | [[PC]]    | What tells us this victory or loss mattered to you?      |                   |
 
 ### Extra prompts
@@ -110,7 +110,7 @@ Use only as many as the table wants. Ask; do not prescribe.
 | [[NPC or Faction]]    |                           |        |
 | [[Mystery or Threat]] |                           |        |
 
-**Close** what has genuinely been resolved. **Carry** what remains active because of play. **Transform** a thread only when the outcome logically changed its nature.
+**Close** what is resolved. **Carry** what remains active because of play. **Transform** a thread only when the outcome changes its nature.
 
 ## Rewards & Accounting
 
@@ -125,11 +125,11 @@ Use only as many as the table wants. Ask; do not prescribe.
 
 Use only if the ending needs one. A stinger should **open a door, not erase the ending**.
 
-**Reveal:** One concrete new fact, arrival, image, message, consequence, or threat.
+**Reveal.** State one concrete new fact, arrival, image, message, consequence, or threat.
 
-**Why now:** How the completed adventure caused or exposed it.
+**Why now.** Explain how the completed adventure caused or exposed it.
 
-**Player-facing evidence:** What the characters actually perceive.
+**Player-facing evidence.** State what the characters actually perceive.
 
 **Next vector:** [[Person]], [[Place]], [[Faction]], or question the players could pursue if they choose.
 
@@ -142,5 +142,5 @@ Stop after the reveal.
 - Introducing consequences that do not follow from anything established in play.
 - Turning the resolution into another full adventure.
 - Explaining every unanswered mystery.
-- Dumping several competing hooks when one clear future vector—or simple closure—is stronger.
+- Dumping several competing hooks when one clear future vector or simple closure is stronger.
 - Skipping the reunion, reward, consequence, or other payoff the adventure promised.

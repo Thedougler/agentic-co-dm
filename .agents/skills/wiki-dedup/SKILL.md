@@ -27,9 +27,10 @@ You are finding and merging wiki pages that cover the same concept under differe
 |---|---|---|
 | **Audit** | *(default)* | Report candidates only — no writes |
 | **Merge** | `--merge` | Show each confirmed pair, ask for confirmation before merging |
-| **Auto-merge** | `--auto` | Merge all high-confidence pairs (`score ≥ 0.90`) non-interactively |
 
 If the user doesn't specify, run in **Audit** mode and present findings before asking whether to proceed.
+
+**Manual merges only.** Read both files, decide what to keep, edit the canonical page through Edit/Write tools. No scripts, no automated merge tools, no batch text-processing commands.
 
 ## Step 1: Build the Page Registry
 
@@ -109,7 +110,7 @@ Attach a short reason to each verdict (one sentence). This appears in the report
 
 ## Step 4: Audit Report
 
-Always produce this report, even in merge/auto-merge mode (so the user sees what will happen):
+Always produce this report, even in merge mode (so the user sees what will happen):
 
 ```markdown
 ## Wiki Dedup Report
@@ -141,7 +142,7 @@ Always produce this report, even in merge/auto-merge mode (so the user sees what
 - Needs review: Z
 ```
 
-In **Audit mode**, stop here and ask: "Run `--merge` to interactively merge the recommended pairs, or `--auto` to merge all high-confidence ones automatically?"
+In **Audit mode**, stop here and ask: "Run `--merge` to interactively merge the recommended pairs?"
 
 ## Step 5: Merge
 
@@ -180,11 +181,9 @@ git -C "$OBSIDIAN_VAULT_PATH" reset --hard "$SNAPSHOT_SHA"
 git -C "$OBSIDIAN_VAULT_PATH" clean -fd
 ```
 
-For each `merge` verdict pair (in merge or auto-merge mode):
+For each `merge` verdict pair:
 
-In **merge mode**: show the pair and verdict, then ask: "Merge `[Page A]` into `[Page B]`? (yes/skip/review)". Skip on anything other than yes.
-
-In **auto-merge mode**: only process HIGH-confidence (`score ≥ 0.90`) merges without prompting.
+Show the pair and verdict, then ask: "Merge `[Page A]` into `[Page B]`? (yes/skip/review)". Skip on anything other than yes.
 
 ### 5a: Pick the canonical page
 
@@ -212,23 +211,9 @@ Read both pages. Update the canonical page:
 - **Body content** — merge unique sections and bullets from the secondary page. Do not blindly append — integrate the content. Avoid duplicating claims already present in the canonical page. Use `^[inferred]` markers where synthesis is needed.
 - **`provenance:`** — recompute after merging
 
-### 5c: Write a redirect stub at the secondary page path
+### 5c: Delete the secondary page
 
-```markdown
----
-title: <secondary page title>
-redirects_to: "[[<canonical node_id>]]"
-aliases: [<secondary aliases>]
-category: <secondary category>
-tags: []
-created: <secondary original created>
-updated: <ISO timestamp now>
----
-
-This page has been merged into [[<canonical page title>]].
-```
-
-The `redirects_to:` field tells any skill reading this page to follow the redirect rather than treat it as content.
+No redirect stubs — the canonical page's aliases absorb the old name. Delete the secondary file.
 
 ### 5d: Rewrite wikilinks vault-wide
 
@@ -240,7 +225,6 @@ Grep the entire vault for any link pointing at the secondary slug:
 
 **Safety rules:**
 - Never rewrite inside code blocks (``` fences or `inline code`)
-- Never rewrite inside the redirect stub itself (that's the one place the old slug should remain legible)
 - Never use `rm` or destructive shell ops — only Edit/Write tools
 - Rewrite one file at a time, verifying each before moving on
 - If a file has zero occurrences, skip it
@@ -255,13 +239,13 @@ Grep the entire vault for any link pointing at the secondary slug:
 
 ### 5f: Final check
 
-After all merges, grep the vault for any remaining `[[secondary-slug]]` references (in non-stub files). If any survive, report them — the rewrite step may have missed a non-standard link format.
+After all merges, grep the vault for any remaining `[[secondary-slug]]` references. If any survive, report them — the rewrite step may have missed a non-standard link format.
 
 ## Step 6: Log
 
 Append to `log.md`:
 ```
-- [TIMESTAMP] DEDUP mode=audit|merge|auto-merge pages_scanned=N pairs_found=M merged=X kept_separate=Y needs_review=Z wikilinks_rewritten=W
+- [TIMESTAMP] DEDUP mode=audit|merge pages_scanned=N pairs_found=M merged=X kept_separate=Y needs_review=Z wikilinks_rewritten=W
 ```
 
 ## Redirect Stub Handling
@@ -275,7 +259,7 @@ Other skills should handle redirect stubs as follows:
 
 ## Tips
 
-- **Audit first, always.** Even in auto-merge mode, the audit report is shown. Read it before trusting the results.
+- **Audit first, always.** Even in merge mode, the audit report is shown. Read it before trusting the results.
 - **Check `needs-review` last.** These are the hard cases — don't batch them with obvious merges.
 - **Abbreviations are the most common case.** "GPT" / "GPT-4" / "GPT4", "RSC" / "React Server Components", "LLM" / "Large Language Models" — these score high on substring containment and are almost always safe to merge.
 - **Different versions are not duplicates.** "GPT-3" and "GPT-4" are related but distinct. "fine-tuning" and "fine-tuning-llms" may be distinct (technique vs. specific application).

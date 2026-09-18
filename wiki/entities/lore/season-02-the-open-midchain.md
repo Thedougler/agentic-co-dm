@@ -18,7 +18,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-14"
 tier: supporting
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-18
 type: lore
 reveal: unrevealed
 campaign: shattered-sea
@@ -55,13 +55,13 @@ Nobody has done this sum. The pieces of it sit in four different ledgers on thre
 
 ---
 
-[[osset|Osset]] has thirty-one items left and a description of himself circulating that is close enough to be a problem.
+[[talon-vantyrus|Talon Vantyrus]], still traceable in the trade network under his original name Osset, has thirty-one items left and a description of himself circulating that is close enough to be a problem.
 
 Falcon-featured, they say, which is the word that will do it, because six thousand [[aarakocra|Aarakocra]] live between here and the [[crown-islands|Crown Islands]] and perhaps eleven of them would draw that word out of anyone who had looked properly. He has kept careful for years now, long past being frightened of it, and the carefulness has calcified into habit: he never uses the same fence twice, and he never lets a buyer's face become one he would know again. The provenance he offers is always true and never finished, a harder discipline than lying, one that leaves nothing to remember wrong.
 
 He sold a cloak to a woman in [[le-paludi|Le Paludi]] who sells cheerfully and asks nothing, and he watched her not ask, and he knew as he walked out that the not-asking would be what fixed him in her memory. That is the arithmetic of it. Every transaction is one more person who could describe him; he has thirty-one transactions left and about eleven descriptions of margin, the two numbers converging on a date he has not written down.
 
-What Osset sells is not the point. The point is what he does after the last of it disappears, when nothing remains in the [[Midchain|Midchain]] with his hand on it. He can go wherever a man goes, because the order he left behind has never once in two hundred years written down that he existed. He has thought about this for a long time. The thinking has become the thing he does instead of the going.
+What Vantyrus sells is not the point. The point is what he does after the last of it disappears, when nothing remains in the [[Midchain|Midchain]] with his hand on it. He can go wherever a man goes, because the order he left behind has never once in two hundred years written down that he existed. He has thought about this for a long time. The thinking has become the thing he does instead of the going.
 
 He has never once considered that anyone would come looking, because the order itself does not look. That is the order's entire character, and he built his whole life after it on that single fact.
 

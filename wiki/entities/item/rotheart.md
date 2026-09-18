@@ -6,7 +6,7 @@ category: entities
 tags: [shattered-sea, aruhe, item]
 sources:
   - "/workspace/midchain-ingest/group-a/items/Aruhe - Rotheart.md"
-summary: "Very rare black-hearted Rot fruit that clears exhaustion, poison, and disease, then maximizes Hit Dice healing for a day."
+summary: "Black-hearted Rot fruit (very rare) that clears exhaustion, poison, and disease, then lets Hit Dice restore their maximum for a day."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -34,12 +34,12 @@ relationships:
 # Aruhe - Rotheart
 
 > [!narration] Narration
-> Black-hearted fruit hangs on the sickest trees of the Rot, warm and faintly pulsing in the hand. The pulp is the colour of old blood. Heat and a faint pulse sit under the dark skin.
+> Black-hearted fruit hangs on the sickest trees of the Rot, warm and faintly pulsing in the hand. The pulp is the colour of old blood. Heat and a faint pulse move beneath the dark skin.
 
 Consumable, Very Rare
 
-**Fruit (consumable).** As a Bonus Action, eat one fruit. You remove all levels of Exhaustion, neutralize poison currently affecting you, and cure diseases currently affecting you. For 24 hours, Hit Dice you spend heal their maximum value.
+**Fruit (consumable).** As a Bonus Action, eat one fruit. You remove all levels of Exhaustion. Any poison or disease affecting you ends. For 24 hours, Hit Dice you spend heal their maximum value.
 
-One fruit is one use. Only the inner Rot produces it, and it is not a routine harvest. The fruit is genuinely beneficial; it is not a secret poison. Plucking living fruit from [[Aruhe]] draws notice from local life (DM adjudicates; not a hive mind and not a timed island system). Passage, watching, and spring water stay quiet.
+One fruit is one use. Only the inner Rot produces it, and it is not a routine harvest. The fruit is beneficial, not a secret poison. Plucking living fruit from [[Aruhe]] draws notice from local life (DM adjudicates). Local life is not a hive mind, and the island does not run on a timer. Passing through, watching, or drinking spring water does not trigger another response from local life.
 
 A DC 13 Intelligence (Nature) or Wisdom (Medicine) check over one minute identifies that the fruit purges and restores. A DC 15 check or *identify* reveals the exact effect.

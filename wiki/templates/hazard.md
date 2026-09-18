@@ -26,15 +26,15 @@ summary: ""
 <!-- Add hazard art when available. -->
 
 > [!narration] Narration
-> Write the spoken look of the hazard in complete sentences. No unearned names.
+> Write a high-quality cold portrait of the hazard in flowing prose. Cover appearance, scale, and at least one non-sight sense. No secrets, DCs, or unearned names.
 
 ## Hazard
 
-- **Trigger:** What starts it.
-- **Notice:** The check to recognize it, and what success shows. Use at-table scan: **Ability (Skill) — `DC n`**.
-- **Contact:** Damage, terrain, or condition on ordinary contact.
-- **Careful Passage:** How to pass without the full cost.
-- **Counterplay:** Go around, cover, reach, or other honest answers.
+- **Trigger.** State what starts it.
+- **Notice.** State the check to recognize it and what success shows. Use the at-table scan. Write **Ability (Skill), `DC n`**.
+- **Contact.** State the damage, terrain, or condition on ordinary contact.
+- **Careful Passage.** Describe how to pass without the full cost.
+- **Counterplay.** List ways around it, including cover, reach, or other honest answers.
 
 <!-- Extra rows (Repeat Save, Recovery, Placement, …) only when they change a table choice. -->
 
@@ -44,7 +44,7 @@ Delayed, conditional, or non-obvious effects the party has not yet discovered. O
 
 ## Connections
 
-- [[page]] — What this tie does at the table.
+- [[page]]. State what this tie does at the table.
 
 <!-- Omit Connections when unused. -->
 

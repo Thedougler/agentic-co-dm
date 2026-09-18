@@ -12,7 +12,7 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "Water Genasi captain of The Narrow, Fisk's Fleet scout vessel, now deceased; her soul inhabits Delmar Fisk."
+summary: "Deceased Water Genasi captain of The Narrow, Fisk's Fleet scout vessel. Her soul is inside Delmar Fisk."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -25,9 +25,9 @@ tier: supporting
 ![[maren-banner-alt]]
 ![[maren-banner]]
 
-Water Genasi captain of the *[[Narrow]]*, [[fisks-fleet]] scout vessel. Deceased. Her soul is inside [[delmar-fisk]]. Pronounced MARE-EN; she will correct you if you get it wrong, and she always will.
+Water Genasi captain of the *[[the-narrow|Narrow]]*, [[fisks-fleet]] scout vessel. Deceased. Her soul is inside [[delmar-fisk]]. Pronounced MARE-EN; she will correct you if you get it wrong, and she always will.
 
-Maren captained The *Narrow*, the fleet's scout vessel. She was fast in the water and could breathe beneath the surface. She could read a reef by feel alone. She and the scouts who worked the air above made the fleet's scouting without peer. No approach they surveyed surprised them twice.
+Maren captained The *Narrow*, the fleet's scout vessel. She was fast in the water and could breathe underwater. She could read a reef by feel alone. She and the scouts who worked the air above made the fleet's scouting without peer. No approach they surveyed surprised them twice.
 
 She was outside the cave when the fleet sank. She drowned in the Maw when [[Umberlee]] closed the water over all five ships. Her soul merged into Delmar at the moment of sinking.
 
@@ -39,11 +39,9 @@ She was already a skilled swimmer and fisher when she joined her first crew. Bre
 
 She has strong opinions about the Navy. The sea belongs to everyone. Two decades of watching Navy ships enforce arbitrary passage rights has made her angrier, not less.
 
-> [!mechanic]
-> **Maren's Mortis Trigger.** Surfaces when Delmar faces denied passage, a sealed entrance, or naval authority. Forced trigger: entry/passage physically blocked (locked door, sentry refusing, sealed gate). Environmental trigger: navy vessel/insignia in view or a navy officer identified within earshot (contempt immediate, short sentences). When active, she gains Perception ([[Expertise]] +7) and Stealth (Expertise +7). Her personality trades Delmar's smoothness and charm for directness and sass. Performance falters noticeably; opinions pour out unfiltered, she demands the correct pronunciation of her name, and she automatically scans each space for escape routes.
+**Maren's Mortis Trigger.** Mortis takes control when Delmar faces denied passage, a sealed entrance, or naval authority. Forced trigger. Delmar cannot pass a locked door or a sealed gate, or a sentry refuses him entry. Environmental trigger. A navy vessel or insignia enters view, or a navy officer comes within earshot. She responds with contempt and short sentences. When active, she gains Perception (expertise +7) and Stealth (expertise +7). Her personality trades Delmar's smoothness and charm for directness and sass. Performance falters noticeably; opinions pour out unfiltered, she demands the correct pronunciation of her name, and she automatically scans each space for escape routes.
 
-> [!spoiler]
-> **Halythion lead:** Maren learned of [[Halythion]] from a [[sea-elf]] friend who shared details in pieces over months: a place south of the [[Midchain]] near [[Tail|the Tail]], a natural bay guarded by reefs where ships don't return. She never pushed for more and doesn't know if the friend survives. This is a personal lead, not tavern rumor, and surfaces through the Mortis mechanic.
+After months of partial conversations, a [[sea-elf]] friend told Maren about [[Halythion]], a place south of the [[Midchain]] near [[Tail|the Tail]], a natural bay guarded by reefs where ships do not return. She left the matter unexplored and has no answer about her friend's fate. This is a personal lead, not tavern rumor, and appears through the Mortis mechanic.
 
 ## Stats & Combat
 

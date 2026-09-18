@@ -36,10 +36,10 @@ campaign threads concise enough to review before play.
 
 # {{title}}
 
-**Status:** Offered
-**Objective:** What can the party accomplish? State the result, not the method.
-**Why now:** What makes this matter now?
-**Deadline:** None, or the fictional event after which the situation changes.
+**Status.** Offered
+**Objective.** State what the party can accomplish. State the result, not the method.
+**Why now.** Explain what makes this matter now.
+**Deadline.** State None, or the fictional event after which the situation changes.
 
 ## At a Glance
 
@@ -59,7 +59,7 @@ Write the minimum facts needed to understand the quest **as it exists now**. Des
 ### What the party knows
 
 > [!narration] Player-facing brief
-> State the hook, request, rumor, evidence, or visible problem using only information the characters currently possess.
+> Write a high-quality cold portrait of the hook, request, rumor, evidence, or visible problem using only information the characters currently possess.
 
 ### What is really happening
 
@@ -67,11 +67,11 @@ Write the DM-facing truth behind the quest. Keep uncertain outcomes unresolved.
 
 ## Stakes
 
-* **If the party succeeds:** What materially changes in the world?
-* **If the party fails:** What materially changes instead?
-* **If the party walks away:** What continues without them?
-* **Question:** What important outcome should play decide?
-* **Question:** Who or what might change sides, survive, fall, or gain power?
+* **If the party succeeds.** State what materially changes in the world.
+* **If the party fails.** State what materially changes instead.
+* **If the party walks away.** State what continues without them.
+* **Question.** State what important outcome play should decide.
+* **Question.** State who or what might change sides, survive, fall, or gain power.
 
 <!-- Stakes are questions to play to find out, not answers you have already decided. -->
 
@@ -92,7 +92,7 @@ Write the DM-facing truth behind the quest. Keep uncertain outcomes unresolved.
 * [ ] **Portent 3.** The situation becomes difficult to reverse.
 * [ ] **End state.** The world changes even if the quest remains unresolved.
 
-**Current pressure:** Record the next consequence that can enter play. Advance this only when fiction, elapsed time, or player action justifies it.
+**Current pressure.** Record the next consequence that can enter play. Advance this only when fiction, elapsed time, or player action justifies it.
 
 ## Leads & routes
 
@@ -131,10 +131,10 @@ independent clues or leads rather than relying on one chokepoint.
 
 ## Complications
 
-* **Pressure:** A problem that can appear without dictating how the party responds.
-* **Tradeoff:** Something valuable that cannot be protected without cost.
-* **Reaction:** How an involved force changes tactics when the party interferes.
-* **Reversal:** A fact that can reframe the situation if discovered.
+* **Pressure.** A problem that can appear without dictating how the party responds.
+* **Tradeoff.** Something valuable that cannot be protected without cost.
+* **Reaction.** Describe how an involved force changes tactics when the party interferes.
+* **Reversal.** A fact that can reframe the situation if discovered.
 
 <!-- Omit unused complications. Prefer reusable pressures over scripted scenes. -->
 
@@ -176,15 +176,15 @@ After meaningful play or campaign downtime:
 
 <!-- Fill when the quest reaches a stable outcome. Omit while unresolved. -->
 
-**Outcome:** Resolved / Failed / Expired / Transformed
+**Outcome.** Resolved / Failed / Expired / Transformed
 
 Write what actually happened without rewriting it into the outcome that had originally been expected.
 
 ### World changes
 
-* [[page]] — Lasting change caused by the resolution.
-* [[page]] — Lasting change caused by the resolution.
+* [[page]]. State the lasting change caused by the resolution.
+* [[page]]. State the lasting change caused by the resolution.
 
 ### Loose threads
 
-* [[quest-or-entity]] — What remains unresolved, escalates, or becomes newly possible.
+* [[quest-or-entity]]. State what remains unresolved, escalates, or becomes newly possible.

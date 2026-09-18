@@ -62,11 +62,11 @@ Record exceptions, boundaries, costs, or circumstances under which the statement
 
 <!-- Lore should help the DM run play, not merely explain the setting. Omit entries that do not matter. -->
 
-* **Players notice:** The observable sign, behavior, phrase, symbol, consequence, or environmental detail that can surface without an exposition dump.
-* **This explains:** [[page]], event, mystery, practice, or condition the players may otherwise misread.
-* **This enables:** A choice or course of action that becomes possible once the characters understand the lore.
-* **This warns of:** A danger or consequence the lore lets attentive characters anticipate.
-* **Relevant now:** Why this truth matters to the current campaign, if it does.
+* **Players notice.** State the observable sign, behavior, phrase, symbol, consequence, or environmental detail that can appear without an exposition dump.
+* **This explains.** [[page]], event, mystery, practice, or condition the players may otherwise misread.
+* **This enables.** State a choice or course of action that becomes possible once the characters understand the lore.
+* **This warns of.** State a danger or consequence the lore lets attentive characters anticipate.
+* **Relevant now.** Explain why this truth matters to the current campaign, if it does.
 
 ---
 
@@ -113,11 +113,12 @@ Background/color revelations can be lighter.
 A clue says what can be found; it does not prescribe how the party must find it.
 -->
 
-### Revelation — The characters can learn that...
+### Revelation
+The characters can learn that…
 
 **Conclusion.** State the useful conclusion in one sentence.
 
-**Importance.** structural / actionable / background
+**Importance.** structural / usable / background
 
 **Status.** unrevealed / hinted / suspected / understood
 
@@ -125,7 +126,7 @@ A clue says what can be found; it does not prescribe how the party must find it.
 * [ ] **[[Source or NPC]].** Independent clue pointing to the same conclusion.
 * [ ] **[[Source, Item, Event, or Place]].** Another independent route to the conclusion.
 
-**Flexible clue:** A short discoverable fact that can surface wherever the characters plausibly investigate, question, research, examine, remember, or experiment.
+**Flexible clue.** A short discoverable fact can appear wherever the characters plausibly investigate, question, research, examine, remember, or experiment.
 
 ---
 
@@ -145,7 +146,7 @@ A clue says what can be found; it does not prescribe how the party must find it.
 
 * **Current pressure.** What force is destabilizing the present state.
 * **Actors.** [[NPCs]], [[Factions]], or other forces currently affecting it.
-* **Their aims.** What those actors are trying to accomplish.
+* **Their aims.** Describe what those actors are trying to accomplish.
 * **Without interference.** The next natural development if nobody meaningfully changes the situation.
 * **Visible sign.** What would tell the characters that the situation has advanced.
 
@@ -155,11 +156,11 @@ A clue says what can be found; it does not prescribe how the party must find it.
 
 <!-- Record causal relationships that help improvise when players interact with the lore. -->
 
-* **Because this is true,** ...
-* **If exposed,** ...
-* **If disproved,** ...
-* **If changed,** [[page]] would ...
-* **If exploited,** ...
+* **Because this is true,** …
+* **If exposed,** …
+* **If disproved,** …
+* **If changed,** [[page]] would …
+* **If exploited,** …
 
 ---
 
@@ -175,9 +176,9 @@ A clue says what can be found; it does not prescribe how the party must find it.
 
 <!-- Preserve uncertainty instead of inventing answers before they matter. -->
 
-* [ ] **Unknown:** Question the setting has not answered yet.
-* [ ] **Contradiction:** Two established sources or observations that do not currently agree.
-* [ ] **Decide when needed:** Detail whose answer can safely remain fluid until play makes it relevant.
+* [ ] **Unknown.** Record a question the setting has not answered yet.
+* [ ] **Contradiction.** Record a disagreement between established sources or observations.
+* [ ] **Decide when needed.** Record detail whose answer can safely remain fluid until play makes it relevant.
 
 ---
 
@@ -200,8 +201,8 @@ Reserve "retcon" for an actual continuity correction.
 
 <!-- Cite the actual origin of established canon when useful: session, sourcebook and page, adventure, ruling, imported setting material, or another authoritative note. -->
 
-* [[Session]] — What was established in play.
-* Source — Page or section and what it establishes.
+* [[Session]]. State what was established in play.
+* Source. Record the page or section and what it establishes.
 
 <!--
 Design basis: large evolving campaigns benefit from maintaining current canon as a living change/status layer instead of forcing the GM to reconstruct changes from scattered scenario notes.

@@ -21,9 +21,8 @@ You are ingesting source documents into an Obsidian wiki. Your job is not to sum
 
 ## Before You Start
 
-1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `OBSIDIAN_SOURCES_DIR`, `OBSIDIAN_LINK_FORMAT` (default: `wikilink`), and `WIKI_STAGED_WRITES`. Only read the specific variables you need — do not log, echo, or reference any other values from these files.
-2. **Check `WIKI_STAGED_WRITES`** — if set to `true`, all new and updated category pages go to `_staging/<category>/` instead of their final location. Tell the user at the start of the ingest: "Staged writes mode is enabled — pages will land in `_staging/` for your review. Run `/wiki-stage-commit` when ready to promote."
-3. **Manifest (do not read `.manifest.json` whole — token waste):** use `python3 scripts/manifest.py` against `$OBSIDIAN_VAULT_PATH` — `stats`, `list [--limit]`, `has`/`get`/`delta` for sources, `lookup --page` for reverse page→sources, and `record` after a completed write. `record` is the sole completion writer; do not follow it with `obsidian-wiki cache-update` or another manifest write. Loading the full ledger into context is a bug.
+1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `OBSIDIAN_SOURCES_DIR`, and `OBSIDIAN_LINK_FORMAT` (default: `wikilink`). Only read the specific variables you need — do not log, echo, or reference any other values from these files.
+2. **Manifest (do not read `.manifest.json` whole — token waste):** use `python3 scripts/manifest.py` against `$OBSIDIAN_VAULT_PATH` — `stats`, `list [--limit]`, `has`/`get`/`delta` for sources, `lookup --page` for reverse page→sources, and `record` after a completed write. `record` is the sole completion writer; do not follow it with `obsidian-wiki cache-update` or another manifest write. Loading the full ledger into context is a bug.
 4. Prefer capped lookup (`qmd` / targeted `rg` / `hot.md`) over reading all of `index.md` or `log.md` unless you truly need the full inventory
 5. Skim recent activity via `hot.md` first; open `log.md` only for a bounded recent slice if needed
 6. **Campaign vault.** Read `$OBSIDIAN_VAULT_PATH/AGENTS.md` (`wiki/AGENTS.md` in this repo). Load craft skills per the Quality pass in Step 5. Campaign pages need `type`, `lifecycle`, and `reveal` from that file in addition to llm-wiki fields. A body written in AI shorthand or telegram stubs is invalid — rewrite as complete sentences before filing. Ingest only sources the DM named and approved (FR-019). Write distilled pages plus thin complete-sentence stubs for names in those sources (including as links). Do not create pages for names the sources do not contain. Invented extra names are a separate Work proposal. Early-dev `wiki/_raw/` samples stay in `_raw/` as illustrations, not a layout source (do not move them to `_archive/`). General ingest still distills. Sample `type: monster` maps to campaign `type: creature`. Wrapup of a legacy page keeps that page's shape; it MUST NOT convert the page into a sample.
@@ -454,41 +453,13 @@ Pages without a `tier:` field are treated as `supporting`. When in doubt, err to
 For each page in your plan:
 
 **Quality pass** by destination surface (load the skill; do not restate it):
-- DM-facing prose → `copy-writer` (complete-sentence, signal-dense; rewrite agent shorthand, fragments, and telegram stubs)
+- DM-facing prose → `writing-for-humans` (complete-sentence, signal-dense; rewrite agent shorthand, fragments, and telegram stubs)
 - Vault Markdown, frontmatter, links, scan grammar → `obsidian-markdown`
 - Player-facing / `[!narration]` → `theatre-of-the-mind` (no secrets, DCs, unearned names in spoken text)
 - Checks, saves, DCs → `dnd5e-mechanics` (complete test grammar and consequences; do not invent unsupported mechanics)
 
 Keep DM-only, player-facing, mechanical, and spoken content on their surfaces. Keep `reveal` accurate. Preserve existing page layout; do not replace a campaign kind with a knowledge-wiki outline.
 
-
-**If `WIKI_STAGED_WRITES=true`, apply the staging rules below before writing anything:**
-
-- **New pages** go to `_staging/<category>/page.md` instead of `<category>/page.md`. The page content is identical to what it would be in the live wiki — only the location differs.
-- **Updates to existing pages** go to `_staging/<category>/page.patch.md`. The patch file format:
-  ```markdown
-  ---
-  title: <same as target page>
-  patch_target: <category>/page.md
-  ingested_at: <ISO timestamp>
-  source: <source path>
-  ---
-  # Proposed Update: <page title>
-
-  ## Additions
-  <new paragraphs/bullets to merge into the page>
-
-  ## Deletions
-  <lines to remove, verbatim from current page>
-
-  ## Updated Fields
-  updated: <new ISO timestamp>
-  sources: [<new source added>]
-  ```
-- `index.md` and `log.md` are always updated immediately (low-risk tracking files). `hot.md` notes that staged writes are pending.
-- When writing staged pages, use the path `_staging/<category>/` — create the directory if it doesn't exist.
-
-**If `WIKI_STAGED_WRITES` is not `true` (unset/`false` — unusual here; this vault defaults `true` in `.env.example`):**
 
 **If creating a new page:**
 - Only when Source ideas allows a justified new page
@@ -614,14 +585,14 @@ Step 0 is the loop. Later files may strengthen or contradict earlier ones — up
 After ingesting, verify:
 - [ ] Every extracted idea has a destination in the per-file report (updated page, justified new page, staged/unresolved, or proposal)
 - [ ] Step 1d ran before the primary was marked `complete`: each related candidate is `read`, `missed`, or `unreadable`
-- [ ] Staging (`_raw/`) and legacy collections were both searched, or the miss is in the ingest record
+- [ ] `_raw/` and legacy collections were both searched, or the miss is in the ingest record
 - [ ] Newest decisions were kept; uncontradicted older detail was available; older contradictions are proposals/`^[ambiguous]`, not silent preference for the older wording
 - [ ] The ingest record lists the primary, related reads (origin `staging` or `legacy`), misses, recency conflicts, and empty related search when nothing was found
 - [ ] The source was not filed as an unedited competing wiki note
 - [ ] Insufficient or fragmentary ideas stayed staged or unresolved with a reason; no invented filler
 - [ ] Conflicts are proposals/`^[ambiguous]`, not silent canon overwrites
 - [ ] DM-only, player-facing, mechanical, and spoken content stayed on their surfaces
-- [ ] Craft skills ran for the destination surface (`copy-writer`, `obsidian-markdown`, `theatre-of-the-mind`, `dnd5e-mechanics` as applicable)
+- [ ] Craft skills ran for the destination surface (`writing-for-humans`, `obsidian-markdown`, `theatre-of-the-mind`, `dnd5e-mechanics` as applicable)
 - [ ] Every new page has frontmatter with title, category, tags, sources
 - [ ] Campaign pages also have `type`, `lifecycle`, `reveal`; body is complete-sentence prose (FR-018)
 - [ ] Filed campaign pages match Layout kinds and jobs in `$OBSIDIAN_VAULT_PATH/AGENTS.md` (pointer; do not copy the job table here)

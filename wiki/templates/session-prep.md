@@ -15,7 +15,7 @@ status: ready
 summary: ""
 ---
 <!-- Copy-start scaffold. Omit unused sections. Pass is Session 11 cockpit jobs in run-guide, not heading-list match. File to wiki/journal/sessions/<campaign-slug>/<session-number>/ as Session-<N>-<BB>-<Label>.md. -->
-# Session {{session}} — {{title}}
+# Session {{session}}: {{title}}
 
 ````col
 ```col-md
@@ -56,7 +56,7 @@ Who starts where, in feet and compass directions. What a move vs Dash reaches.
 ````
 
 > [!narration] Initial Narration
->
+> Write high-quality theatre of the mind. "You" address, visible threat, relative position, cover/routes, drawable appearance, and at least one non-sight sense. End on the reaction point.
 
 ````col
 ```col-md
@@ -109,7 +109,7 @@ flexGrow=3
 Next state. Hand to the next beat on this session’s skeleton.
 
 > [!narration] How the Scene Resolves
->
+> Write high-quality theatre of the mind: the changed situation in "you" address, at least one non-sight sense.
 
 | If | Next | Narration |
 | --- | --- | --- |

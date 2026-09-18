@@ -1,12 +1,13 @@
 ---
 name: wiki-lint
 description: >
-  Find and repair structural issues in the Obsidian wiki. Default is lint-and-repair: fix every page-scoped
-  finding (broken links, missing frontmatter, bad wikilinks). Triggers on "lint", "lint <page>", "clean up
-  the wiki", "fix broken links", "what needs fixing", "audit my notes", "wiki health check". Page-scoped:
-  pass a vault-relative .md path to lint and repair one page. Pass --check for report-only (no writes).
-  Pass --consolidate for the vault-wide dream cycle with dry-run preview and user confirmation before
-  bulk writes.
+  Find and repair structural issues in the Obsidian wiki — including duplicate-page detection (dedup).
+  Default is lint-and-repair: fix every page-scoped finding (broken links, missing frontmatter, bad
+  wikilinks) and surface duplicate-page candidates. Triggers on "lint", "lint <page>", "clean up the
+  wiki", "fix broken links", "what needs fixing", "audit my notes", "wiki health check", "dedup",
+  "find duplicates". Page-scoped: pass a vault-relative .md path to lint and repair one page.
+  Pass --check for report-only (no writes). Pass --consolidate for the vault-wide dream cycle with
+  dry-run preview and user confirmation before bulk writes.
 ---
 
 # Wiki Lint — Health Audit
@@ -27,12 +28,14 @@ You are performing a health check on an Obsidian wiki. Your goal is to find and 
 6. **Duplicate identity check:** before selecting or editing a page, verify no other page covers the same entity (matching title, aliases, or `redirects_to` target). When two pages cover one identity, surface the conflict before editing either — size-first selection without identity check causes wrong-page edits.
 7. **Redirect stubs:** pages with `redirects_to` in frontmatter are pointers, not content pages. Skip them in orphan checks, scene detection, frontmatter validation (they omit campaign required fields), and creative lint. Do not create redirect stubs unless the user explicitly requests one — vault clutter.
 
-Pass the effective schema to deterministic checks explicitly. For example, add each owner extension with `--allow-lifecycle` / `--allow-relationship-type`, replace trust requiredness with repeatable `--required-trust-field`, and identify the authority with `--schema-source "$OBSIDIAN_VAULT_PATH/AGENTS.md"`. The JSON report's `schema` block must match the schema you formed before findings are accepted.
+Pass the effective schema to deterministic checks explicitly. Add each owner extension with `--allow-lifecycle` / `--allow-relationship-type`. The JSON report's `schema` block must match the schema you formed before findings are accepted.
 
 Schema precedence is CLI flags > resolved environment/config values > framework defaults; lifecycle and relationship extensions remain additive. Strip every override before use. An explicitly configured empty or whitespace-only value—and any empty comma-separated list entry—fails closed; never treat it as a valid lifecycle, relationship type, required field, or authority locator. Remove the variable instead when defaults are intended.
 **Vale is part of the acceptance gate:** the page-scoped command above runs the default Vale pass. Treat every `VALE_*` finding as a lint finding and repair it when the finding declares a deterministic repair. A genuine false positive requires correcting the Vale rule/config or adding a narrowly scoped exemption with a regression fixture, then rerunning the default command. `--no-vale` is an isolation diagnostic only; never use it for final verification or report a page as clean while the default run remains non-zero or reports `hard_fail: true`.
 
 Overall-clean means the default page-scoped JSON report has no fixable findings, `hard_fail: false`, and exit code `0`; structural-clean with Vale disabled is not overall-clean.
+
+**Vale repairs surface follow-on findings.** Fixing one Vale issue can expose another (e.g. rewriting a sentence to remove a word introduces a new style violation). Rerun the page-scoped lint after each repair pass until the report is clean. Budget up to three passes per page — if findings persist after three, surface them as a manual review item rather than looping.
 
 
 ## Page-Scoped Repair
@@ -54,7 +57,7 @@ Pass `--check` to report findings without repairing them. The full vault flow be
 
 When vault-wide lint finds fixable issues across multiple files and `--check` is not set, repair them **one file at a time** from the findings backlog. Other files may be read for corroborating context (link targets, cross-references), but only **one file is written at a time**.
 
-1. Run all lint checks (deterministic pass + checks 1–13). Collect the full findings list — this is the **backlog**.
+1. Run all lint checks (deterministic pass + checks 1–14). Collect the full findings list — this is the **backlog**.
 2. Group findings by file. Order: files with the most HARD findings first.
 3. For each file in the backlog:
    a. Read the file. Read related files for context as needed (link targets, cross-references) — but write only this file.
@@ -376,6 +379,58 @@ Append to the `LINT` log entry:
 ... relationship_issues=N
 ```
 
+### 14. Duplicate Pages — Resolve to One Canonical Authority
+
+Every fact in the wiki has one owner page. This check finds pages that duplicate or fragment a single concept's authority — same concept under different names, or a page whose facts already live on other canonical pages — and resolves them.
+
+**Completion criterion:** every flagged pair ends with one canonical page properly placed in the wiki, or a `needs-review` finding listed for the user. No duplicate authority survives.
+
+**How to check:**
+- From the page registry (all live `.md` files, excluding `_archives/`, `_raw/`, `_staging/`, redirect stubs), extract each page's `title`, `aliases`, `tags`, and `summary` from frontmatter
+- For every pair, compute similarity using title token overlap, edit distance, substring containment, and alias cross-match (same signals as `wiki-dedup` Step 2a–2b — frontmatter only, no full page reads at this stage)
+- Flag pairs scoring ≥ 0.75 as candidates; label ≥ 0.90 HIGH, 0.75–0.89 MEDIUM
+- Skip pairs already linked by `redirects_to` (already merged)
+- The deterministic `duplicate_stems` key catches filename-level collisions; this check catches semantic duplicates that share no stem
+
+**How to fix — two resolution paths:**
+
+For each candidate pair, read both pages in full and assign a verdict:
+
+| Verdict | Condition | Resolution |
+|---|---|---|
+| `merge` | Same concept, different name/spelling/abbreviation | Merge into canonical page |
+| `digest` | Page contains facts that belong on existing canonical pages | Distribute facts to canonical homes, delete the page |
+| `needs-review` | Ambiguous — substantial overlap but meaningful differences | Surface for user; do not resolve |
+
+**Manual merges only.** Read both files, decide what to keep, edit the canonical page through Edit/Write tools. No scripts, no automated merge tools, no batch text-processing commands.
+
+#### Path A — Merge (same concept → one canonical page)
+
+1. **Pick the canonical page** using tiebreakers in order: more incoming wikilinks → richer content → more sources → longer title → alphabetical
+2. **Read both pages in full.** Merge into canonical by editing it: aliases (add secondary's title + aliases), tags (deduplicate, cap at 5 domain + system), sources (deduplicate), relationships (deduplicate by target), summary (rewrite if secondary adds ground), body (integrate unique sections — do not append blindly; mark synthesis with `^[inferred]`), `updated` → now
+3. **Delete the secondary page.** No redirect stubs — the canonical page's aliases absorb the old name.
+4. **Rewrite wikilinks vault-wide:** `[[secondary-slug]]` → `[[canonical-slug]]` (preserve display text). Never rewrite inside code blocks. One file at a time.
+5. **Update tracking:** remove secondary from `index.md`, update canonical's entry; update `.manifest.json` (add `merged_into` on secondary's entries, merge `pages_created`/`pages_updated` into canonical); update `hot.md`
+
+#### Path B — Digest (facts belong elsewhere)
+
+When a page's content is already covered across other canonical pages — it restates facts that have proper homes — digest it:
+
+1. **Identify canonical homes** for each fact on the page (the existing pages that already own those facts)
+2. **Merge any new facts** from the page into their canonical homes (same merge mechanics as Path A step 2, scoped to the facts that page adds)
+3. **Delete the digested page.** No redirect stubs.
+4. **Rewrite wikilinks** pointing at the digested page to their canonical targets
+
+#### Staged writes
+
+When `WIKI_STAGED_WRITES=true`, merged/digested canonical pages land under `wiki/_staging/` per the staging protocol. Wikilink rewrites and secondary deletions still go live (they are structural, not content).
+
+#### Scope in repair flows
+
+- **Page-scoped repair:** check whether the named page duplicates or is duplicated by another page. Resolve if found.
+- **Bulk repair:** run the full candidate scan. Resolve each pair one at a time, committing between pairs. Degradation stop applies.
+- **`--check` mode:** report candidates with verdicts but do not resolve.
+
 ### 11. Synthesis Gaps
 
 Identify high-value synthesis opportunities the wiki is missing — concept pairs that co-occur across many pages but have no `synthesis/` page connecting them.
@@ -449,6 +504,15 @@ Pages in misc/ that have ≥ 3 connections to a single project and are ready to 
 - `concepts/foo.md` — relationships[1]: type "contradication" is not an allowed type
 - `concepts/bar.md` — relationships[0]: target "[[skills/nonexistent]]" resolves to no page
 
+### Duplicate Pages (N found)
+Pages covering the same concept resolved to one canonical authority:
+
+| Verdict | Canonical | Removed | Reason |
+|---|---|---|---|
+| merge | `concepts/react-server-components.md` | `concepts/rsc.md` | abbreviation variant — aliases absorbed, links rewritten |
+| digest | `concepts/caching.md`, `concepts/redis.md` | `concepts/cache-notes.md` | facts distributed to canonical homes |
+| needs-review | `concepts/agents.md` ↔ `concepts/autonomous-agents.md` | — | substantial overlap but "agents" may be intentionally broader |
+
 ### Synthesis Gaps (N found)
 Concept pairs that co-occur frequently but have no synthesis page:
 
@@ -462,7 +526,7 @@ Concept pairs that co-occur frequently but have no synthesis page:
 
 Append to `log.md`:
 ```
-- [TIMESTAMP] LINT issues_found=N orphans=X broken_links=Y stale=Z contradictions=W prov_issues=P missing_summary=S fragmented_clusters=F visibility_issues=V promotion_candidates=C synthesis_gaps=G relationship_issues=R
+- [TIMESTAMP] LINT issues_found=N orphans=X broken_links=Y stale=Z contradictions=W prov_issues=P missing_summary=S fragmented_clusters=F visibility_issues=V promotion_candidates=C duplicate_pages=D synthesis_gaps=G relationship_issues=R
 ```
 
 Offer to fix issues automatically or let the user decide which to address.
@@ -481,7 +545,7 @@ Triggered by `wiki-lint --consolidate`. Switches from report-only to **act-and-r
 2. Print the planned consolidation actions as a structured list (see Dry-Run Output below).
 3. Ask the user: `"Apply these N changes? [yes / no / select]"`.
 4. Only proceed with writes after explicit confirmation. If the user selects individual actions, apply only those.
-5. Never merge pages — use `wiki-dedup` for that. Only link, promote, demote, and flag.
+5. Duplicate pages are resolved (Check 14) — merge into canonical or digest facts to canonical homes. Also link, promote, demote, and flag.
 
 ### Consolidation actions (in order, after confirmation)
 

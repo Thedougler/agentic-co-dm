@@ -58,7 +58,7 @@ Four sentences, zero table value. Nothing the DM can improv from, no hook, no da
 
 ## F3 — Thin owner
 
-**What it looks like:** The portrait covers fewer than three connected sentences, or misses one or more coverage dimensions: material, wear, scale-vs-body, or a non-sight sense for items; silhouette, body parts, and stable behavior for creatures.
+**What it looks like:** The portrait misses one or more coverage dimensions (material, wear, scale-vs-body, or a non-sight sense for items; silhouette, body parts, and stable behavior for creatures) or stops before the entity's in-world story is told.
 
 **Why it fails:** A player asks "what does it look like?" and the DM has one generic sentence. No material to name, no weight to convey, no distinguishing mark.
 
@@ -66,7 +66,7 @@ Four sentences, zero table value. Nothing the DM can improv from, no hook, no da
 
 Missing: material (what metal? what hilt?), wear (new? battered? polished?), non-sight sense (weight? cold? balance?). "A long slender blade" could describe any rapier.
 
-**Fix direction:** Cover the four dimensions. Type + scale vs body + material + wear + one non-sight sense or ordinary physical behavior, joined into about three connected sentences.
+**Fix direction:** Cover every dimension the entity needs. Type + scale vs body + material + wear + one non-sight sense or ordinary physical behavior, joined into flowing prose that runs as long as the coverage requires.
 
 **Exemplar:** [[Fate Spinner]] — "A thumb-sized four-sided top sits small enough to pinch between two fingers. Quartz fills each face; the corners have dulled and the edges worn smooth from handling. It stays cool in the palm, and spun on a flat surface it turns on its point with a short even wobble before it settles." Concrete noun, scale vs body (thumb-sized, pinch between two fingers), material (quartz), wear (dulled corners, worn edges), non-sight sense (cool in the palm), ordinary physical behavior (wobble before it settles).
 

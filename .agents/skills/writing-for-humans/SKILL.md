@@ -1,15 +1,16 @@
 ---
-name: copy-writer
+name: writing-for-humans
 description: >
-  Write prose the DM will read: Work, wiki, chat proposals. Reader `DM` →
-  copy-writer. Unknown reader → `DM`. Does not own agent-consumed documents
-  or player-facing passages.
+  Write prose a human will read: Work, wiki, chat proposals, DM procedure,
+  owner pages. Reader `DM` → writing-for-humans. Unknown reader → `DM`.
+  Does not own agent-consumed documents or player-facing passages.
 ---
 
-# Copy-writer
+# Writing for humans
 
-You are the wiki copywriter for a human dungeon master. The host is a launcher. This skill is the job. Point at `docs/agents/work.md`: this skill writes prose; it never writes silent canon.
-**Signal-density** is the primary quality bar. Every word costs DM attention at the table and player attention at the session. A word that doesn't change a choice, ruling, risk, or spoken picture is stealing from the words that do.
+The prose authority for all human-consumed text in the Co-DM. The host is a launcher. This skill is the job. Point at `docs/agents/work.md`: this skill writes prose; it never writes silent canon.
+
+**Signal-density** is the quality bar. Every word costs DM attention at the table and player attention at the session. A word that does not change a choice, ruling, risk, or spoken picture steals from the words that do.
 
 Write a **recipe** Nick can use at the table — signal-dense prose where every fact changes play and nothing else survives. Not a finished story. Not telegram fragments. Completeness means no essential fact is missing, not that every available fact is present.
 
@@ -17,30 +18,13 @@ Write a **recipe** Nick can use at the table — signal-dense prose where every 
 
 **Surgical scope.** Rewrite copy; preserve structure. Image embeds, wikilink paths, frontmatter fields, and file extensions stay untouched unless that exact element is broken and verified. A copy pass edits words, not plumbing.
 
-Theatre of the mind owns spoken look. Copy-writer owns DM-facing headings, body copy, and wiki/owner facts.
+Theatre of the mind owns spoken look. Writing-for-humans owns DM-facing headings, body copy, and wiki/owner facts.
 
-**Headings:** copy `wiki/templates/` as a scaffold. Session beats still use `## At a Glance` / run-guide cockpit. Sample place, item, hazard, creature, and person notes pass on jobs in `wiki/AGENTS.md` Layout; omit empty sections and unused identity keys. Named `_raw/` files illustrate quality; they are not clone targets. Spoken look is theatre of the mind: no secrets, DCs, unearned names, author thesis.
-
-**Session beats are four passes, each loading only its skills.** Pass 1 (`run-guide` + `dnd5e-mechanics`) leaves empty titled stubs — `copy-writer` is not loaded. You own pass 2: load this skill after pass 1 completes, then edit DM-facing copy for usability, readability, and table usefulness while the `[!narration]` stubs stay empty. Do not load `theatre-of-the-mind` on this pass. Pass 3 loads `theatre-of-the-mind` after pass 2 completes and fills **every** spoken stub. Pass 4 checks Reading view. The DM may skip a block at the table; construction may not leave one empty or useless. `Initial Narration` is the long *scene-setting* block (typically two to four short spoken paragraphs). Address the party as **you**: **you see**, **you hear**, **you feel** (physical), **you smell**. Weave drawable appearance and at least one non-sight sense into those sentences. Smaller stubs (zone, tick, How the Scene Resolves, creature-in-this-scene) are one to three sentences and do not restage the Open.
-
-**Callouts:** `[!narration]` is the only callout. Use it when the block is spoken to the players (`Initial Narration`, `{Place}`, `Tick n`, one `How the Scene Resolves`, `{Creature}`, `Exit`, boxed read-aloud). Conditional spoken (zone, tick, most-likely option) goes in the table cell as `==_italic_==` (`obsidian-markdown`). Procedure, clocks, rulings, and other DM-facing facts are headings plus body copy, tables, and bold labels. They are not `[!secret]`, `[!mechanic]`, `[!note]`, `[!warning]`, or any other callout. Do not add a `DM truth` section on session/run cards — the whole card is DM-facing. Do not put callouts inside table cells. Session layout uses `col` / `col-md` **codeblock** fences, not `[!col]`. Completion: the only `> [!` on the note is `[!narration]`.
-
-**Open once.** Spoken `Initial Narration` is the start of the beat. Do not also restage that beginning in Scene ends when, Glance, or Now. Smaller TotM stubs cover later camera moves, ticks, and how the scene resolves — they do not replay the Open. Pick up from the previous beat’s **How the Scene Resolves**; do not recap how the crew first arrived in the valley.
-
-- **Scene ends when** is the end condition, time budget, and cut lines only.
-- **Glance** is stakes, danger, Silence, and magnets. It is not positions.
-- **Now** is leftover conditions, who is apart, and speeds or reaches that matter this slice. It is not a second opening paragraph.
-- **Initial Narration** is the table’s first look. That is the beginning. Weave look and sound into it. An owner identity image on the card is a DM glance; it does not replace the spoken look.
-
-Completion: a DM reading downward does not meet the same setup three times before the question.
-
-## Prose principles
-
-Owner-page **At the Table** (and similar run-tonight blocks): playable consequence only — cut design diary, RAW comparison, and balance commentary.
+## Prose gates
 
 Three gates in priority order. **Earn it** dominates — a line that sounds beautiful but changes nothing at the table is worse than a plain line that carries signal. A line that fails any gate gets rewritten.
 
-**Earn it.** The removal test: take the line out. If no choice, ruling, risk, resource, route, clock, NPC response, or spoken picture changes, the line is dead weight. Cut it. Dead weight takes common forms:
+**Earn it.** The removal test: take the line out. If no choice, ruling, risk, resource, route, clock, NPC response, or spoken picture changes, the line is **dead weight**. Cut it. Dead weight takes common forms:
 - **Default conditions** — weather, water, food, light, safety, permission stated as though notable. State these only when unsafe, costly, scarce, magical, claimed, time-bound, or a visible clue.
 - **Category descriptions** — what something IS (a coastal settlement, a martial faction) instead of what makes it THIS one.
 - **Atmosphere without consequence** — mood, tone, "a sense of" that changes no choice or improv handle.
@@ -71,30 +55,6 @@ Named anti-patterns. A line that matches any pattern gets rewritten in the same 
 | **Scenic filler** | Atmosphere that changes no choice, ruling, risk, or improv handle | Remove the line — does anything change at the table? |
 | **Register drift** | Wrong voice for the surface (recap voice on an owner page, reference voice on a session beat) | Who reads this surface, when, and what do they need to do with it? |
 | **Stale placeholder** | "ingest pending," empty stubs, legacy fences left on a page the agent is touching | Is every block on this page filled or routed to a craft skill? |
-
-## Hosts
-
-Same skill. Thin spawn files only:
-
-| Host | Wake |
-|---|---|
-| Grok Build | spawn `copy-writer` (`.grok/agents/`) or this skill |
-| Grok Bot | roster **Visualizer** — TotM / `[!narration]` pass 2; this skill plus `theatre-of-the-mind` |
-| Codex | this skill; optional `.codex/agents/copy-writer.toml` |
-| omp | `task` agent `.omp/agents/copy-writer.md` or this skill |
-| wiki-ingest | this skill on every distilled DM-facing page |
-
-Grok Bot packets that name **Visualizer** stay TotM-scoped unless the packet asks for other bands.
-
-### Ingest
-
-`wiki-ingest` already chose the destination. Polish that page. Do not re-route ideas, file the source as a wiki note, or invent filler for a fragment.
-
-Named ingest is DM approval for those sources (`docs/agents/work.md`). Write the destination. Conflicts stay a **proposal** / `^[ambiguous]`.
-
-Polish expression and **signal-density**. Keep settled facts, intent, and stated mechanics. Telegram stubs and agent shorthand are bad copy — rewrite them as complete sentences. Bad *wording* gets rewritten; settled *meaning* stays.
-
-**Complete when:** the destination reads as newly authored copy for its band, meaning unchanged, and the source is not a competing page.
 
 ## Workflow
 
@@ -131,9 +91,30 @@ Match the note's template as a scaffold. Delete unused sections. Sample pages pa
 | **At the table** | Session-beat / NPC procedure | Complete grammatical sentences. Scannable bold heads. Run cards use the **cockpit** in `run-guide`. |
 | **Wiki facts** | NPC supporting facts when that template uses the heading | Usable facts. Not a biography. |
 | **Location** | Place jobs in `wiki/AGENTS.md` Layout | Spoken look; situation; consequential moves; presence-or-absence; table objects; connections; purpose. `wiki/_raw/Old Gardens.md` and `wiki/_raw/River Line Bank.md` illustrate. |
-| **`[!narration]` / boxed** | Seen-in-a-glance; player-safe | TotM: flowing spoken block. Item/creature cold portraits ~three connected sentences. Session-beat `Initial Narration`: two to four short spoken paragraphs. Situational beat stubs: one to three sentences, one job. |
+| **`[!narration]` / boxed** | Seen-in-a-glance; player-safe | TotM: flowing spoken block. Owner-page cold portraits: a full paragraph covering every coverage dimension the entity requires — no sentence-count ceiling. Session-beat `Initial Narration`: two to four short spoken paragraphs. Situational beat stubs: one to three sentences, one job. |
 
 Session/run surfaces: complete grammatical sentences (vault rule). Private scratch shorthand stays off this wiki.
+
+## Session beats
+
+**Session beats are four passes, each loading only its skills.** Pass 1 (`run-guide` + `dnd5e-mechanics`) leaves empty titled stubs — `writing-for-humans` is not loaded. You own pass 2: load this skill after pass 1 completes, then edit DM-facing copy for usability, readability, and table usefulness while the `[!narration]` stubs stay empty. Do not load `theatre-of-the-mind` on this pass. Pass 3 loads `theatre-of-the-mind` after pass 2 completes and fills **every** spoken stub. Pass 4 checks Reading view. The DM may skip a block at the table; construction may not leave one empty or useless. `Initial Narration` is the long *scene-setting* block (typically two to four short spoken paragraphs). Address the party as **you**: **you see**, **you hear**, **you feel** (physical), **you smell**. Weave drawable appearance and at least one non-sight sense into those sentences. Smaller stubs (zone, tick, How the Scene Resolves, creature-in-this-scene) are one to three sentences and do not restage the Open.
+
+**Headings:** copy `wiki/templates/` as a scaffold. Session beats still use `## At a Glance` / run-guide cockpit. Sample place, item, hazard, creature, and person notes pass on jobs in `wiki/AGENTS.md` Layout; omit empty sections and unused identity keys. Named `_raw/` files illustrate quality; they are not clone targets. Spoken look is theatre of the mind: no secrets, DCs, unearned names, author thesis.
+
+## Callouts
+
+`[!narration]` is the only callout on session/run cards. Use it when the block is spoken to the players (`Initial Narration`, `{Place}`, `Tick n`, one `How the Scene Resolves`, `{Creature}`, `Exit`, boxed read-aloud). Conditional spoken (zone, tick, most-likely option) goes in the table cell as `==_italic_==` (`obsidian-markdown`). Procedure, clocks, rulings, and other DM-facing facts are headings plus body copy, tables, and bold labels. They are not `[!secret]`, `[!mechanic]`, `[!note]`, `[!warning]`, or any other callout. Do not add a `DM truth` section on session/run cards — the whole card is DM-facing. Do not put callouts inside table cells. Session layout uses `col` / `col-md` **codeblock** fences, not `[!col]`. Completion: the only `> [!` on the note is `[!narration]`.
+
+## Open once
+
+Spoken `Initial Narration` is the start of the beat. Do not also restage that beginning in Scene ends when, Glance, or Now. Smaller TotM stubs cover later camera moves, ticks, and how the scene resolves — they do not replay the Open. Pick up from the previous beat's **How the Scene Resolves**; do not recap how the crew first arrived in the valley.
+
+- **Scene ends when** is the end condition, time budget, and cut lines only.
+- **Glance** is stakes, danger, Silence, and magnets. It is not positions.
+- **Now** is leftover conditions, who is apart, and speeds or reaches that matter this slice. It is not a second opening paragraph.
+- **Initial Narration** is the table's first look. That is the beginning. Weave look and sound into it. An owner identity image on the card is a DM glance; it does not replace the spoken look.
+
+Completion: a DM reading downward does not meet the same setup three times before the question.
 
 ## Sequencing
 
@@ -184,13 +165,41 @@ Match the voice to the surface. A DM uses each surface differently; the wrong vo
 
 **Register drift** is a failure mode: see the table above.
 
+## Ingest
+
+`wiki-ingest` already chose the destination. Polish that page. Do not re-route ideas, file the source as a wiki note, or invent filler for a fragment.
+
+Named ingest is DM approval for those sources (`docs/agents/work.md`). Write the destination. Conflicts stay a **proposal** / `^[ambiguous]`.
+
+Polish expression and **signal-density**. Keep settled facts, intent, and stated mechanics. Telegram stubs and agent shorthand are bad copy — rewrite them as complete sentences. Bad *wording* gets rewritten; settled *meaning* stays.
+
+**Complete when:** the destination reads as newly authored copy for its band, meaning unchanged, and the source is not a competing page.
+
+## Hosts
+
+Same skill. Thin spawn files only:
+
+| Host | Wake |
+|---|---|
+| Grok Build | spawn `writing-for-humans` (`.grok/agents/`) or this skill |
+| Grok Bot | roster **Visualizer** — TotM / `[!narration]` pass 2; this skill plus `theatre-of-the-mind` |
+| Codex | this skill; optional `.codex/agents/writing-for-humans.toml` |
+| omp | `task` agent `.omp/agents/writing-for-humans.md` or this skill |
+| wiki-ingest | this skill on every distilled DM-facing page |
+
+Grok Bot packets that name **Visualizer** stay TotM-scoped unless the packet asks for other bands.
+
+### Owner-page `At the Table`
+
+Owner-page **At the Table** (and similar run-tonight blocks): playable consequence only — cut design diary, RAW comparison, and balance commentary.
+
 ## Handoffs
 
 - Missing or contradictory **facts** → Co-DM / ask Nick. During ingest, conflicts are a proposal (`wiki-ingest`); do not overwrite.
 - Idea routing, staging, manifest → `wiki-ingest`
 - **Monster / item math** → Monster-Brewer / Item-Brewer / Homebrewer.
 - **MOCs, indexes, hot structure** → Organizer.
-- **Run-guide cockpit** → Session-Planner owns pass 1 schema (`run-guide`); you own pass 2 DM-facing copy, then fill every empty `[!narration]` stub only on the TotM pass. TotM titles stay `[!narration]`. *Rulings* follow that skill’s Ruling section.
+- **Run-guide cockpit** → Session-Planner owns pass 1 schema (`run-guide`); you own pass 2 DM-facing copy, then fill every empty `[!narration]` stub only on the TotM pass. TotM titles stay `[!narration]`. *Rulings* follow that skill's Ruling section.
 - TotM fail loop: [[GROK-BOTS]] (Writing-Evaluator → Skill-Creator → Visualizer / this skill).
 
 ## Attribution

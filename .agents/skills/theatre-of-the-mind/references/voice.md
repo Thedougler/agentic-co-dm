@@ -134,7 +134,7 @@ identifying clauses.
 | --- | --- |
 | Hit, reveal, dialogue turn, micro-update | One tight line |
 | `[!narration]` portrait (place, NPC, creature, item, vehicle, business) | Short paragraph of connected prose; drawable whole after one hearing |
-| Item/creature page cold `[!narration]` | ~three connected sentences: silhouette/scale, material/parts/wear, sensory or ordinary physical behavior — expand thin drafts with visual nouns, not purple |
+| Item/creature page cold `[!narration]` | Full paragraph covering every coverage dimension (silhouette/scale, material/parts/wear, sensory or ordinary physical behavior) — run as long as the entity requires; expand thin drafts with visual nouns, not purple |
 | Loaded spatial first look | One complete spoken block of the relevant visible state |
 | Recap | Past-tense paragraph of play-made truths + tonight's handle |
 | Handout | Scannable diegetic layout, not spoken-block geometry |

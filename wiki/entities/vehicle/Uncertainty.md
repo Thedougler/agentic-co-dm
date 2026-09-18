@@ -9,7 +9,7 @@ sources:
   - "Session 09 - Recap.md"
   - "Session 10 - Recap.md"
   - "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea/vehicles/Uncertainty.md"
-summary: Prize cutter taken from the Crown and renamed Uncertainty; her legacy chassis is Gargantuan with AC 11 and 130 hit points.
+summary: Prize cutter taken from the Crown and renamed Uncertainty. Her legacy chassis is Gargantuan with AC 11 and 130 hit points.
 provenance:
   extracted: 0.95
   inferred: 0.05
@@ -44,28 +44,28 @@ relationships:
 - **Size.** Gargantuan.
 - **Type.** Ship; formerly the HCS Surety, a Crown prize cutter.
 - **Speed.** The supplied vehicle drop does not establish a movement rate.
-- **Crew (min).** The minimum complement is not established. The named prize crew are Geoffrey Draves, Sem Holst, Alys Kuiper, Old Faas, Thunk, and Noor.
-- **Passengers.** Safe capacity is not established. Two Aruhe survivors and three Calveno captives are currently aboard.
+- **Crew (min).** The minimum complement is not established. The roster names Geoffrey Draves and Sem Holst. It also names Alys Kuiper, Old Faas, Thunk, and Noor.
+- **Passengers.** Safe capacity is not established. Current passengers are two Aruhe survivors and three Calveno captives.
 - **Cargo.** Capacity is not established. Thunk has placed a thousand gold pieces of cannon on the ship's credit.
 
 ## Components
 
-- **Hull.** AC `11`; `130` hit points. The supplied chassis does not establish a damage threshold.
+- **Hull.** The supplied chassis establishes AC `11` and `130` hit points but does not establish a damage threshold.
 - **Helm.** The AC, hit points, and disabled-control consequence are not established.
 - **Movement.** The AC, hit points, and disabled-speed consequence are not established.
 - **Weapons.** The supplied vehicle drop does not establish weapon entries.
 
 ## Crew stations
 
-The current named complement is Geoffrey Draves, Sem Holst, Alys Kuiper, Old Faas, Thunk, and Noor. The sources do not establish station assignments, minimum staffing by station, or the consequence of leaving a station empty. Thunk is the ship's gunner and field smith, and his unresolved cannon debt remains a crew pressure.
+The current named complement is Geoffrey Draves, Sem Holst, Alys Kuiper, Old Faas, Thunk, and Noor, while the sources do not establish station assignments, minimum staffing by station, or the consequence of leaving a station empty. Thunk is the ship's gunner and field smith, and his unresolved cannon debt remains a crew pressure.
 
 ## Handling
 
-Keep the ship moving off [[aruhe]] instead of anchoring close. The refit cradle at [[calven-and-calveno]] is an established maintenance berth, but leaving it exposes the ship to pursuit and interception. The crew has already used merchant cover to survive a Crown approach, so route choice and visible identity matter.
+Keep the ship moving off [[aruhe]] instead of anchoring close. The refit cradle at [[calven-and-calveno]] is an established maintenance berth, but leaving it exposes the ship to pursuit and interception. The crew has already used merchant cover during a Crown approach, so route choice and visible identity matter.
 
 ## Combat
 
-The ship can be boarded or intercepted; [[hcs-ordinance]] crossed the crew under merchant cover before revealing Crown authority. The supplied vehicle chassis does not establish initiative, ramming, weapon attacks, component targeting, sinking, or destruction procedures. The current combat state is therefore the Gargantuan hull at AC `11` and `130` hit points, with the remaining combat figures unresolved.
+The ship can be boarded or intercepted, as [[hcs-ordinance]] demonstrated when it crossed the crew under merchant cover before revealing Crown authority. The supplied vehicle chassis leaves initiative, ramming, weapon attacks, component targeting, sinking, and destruction procedures unresolved. The combat state remains the Gargantuan hull at AC `11` and `130` hit points.
 
 ## At the Table
 

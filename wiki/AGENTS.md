@@ -89,8 +89,6 @@ Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<ses
 **Session evidence (post-play):** in the same session-number folder — `Session-<NN>-Recap.md` (summary), `Session-<NN>-Transcript.md` (text companion). Audio/video recording files use flat `wiki/attachments/session-<NN>-recording.{ext}` (role `recording`; kebab). Do not park transcripts/recordings under a parallel `recaps/` tree or repo-root folders. Raw dumps may stage in `wiki/_raw/` then promote; archive evidence into `wiki/_archive/` after ingest.
 
 
-## Shared grammar
-
 ## Page filenames
 
 Wiki page `.md` **basenames** (not attachment images — those stay kebab `{slug}-{role}`).
@@ -100,7 +98,7 @@ Wiki page `.md` **basenames** (not attachment images — those stay kebab `{slug
 **Slug function (mint / rename):**
 1. Start from `title` (or the intended display name).
 2. Strip leading legacy place-name prefixes (`Aruhe - `, `Aruhe -`, `Aruhe `) — content about the place stays in body/`title`; the prefix is dump legacy.
-3. Strip leading `00` / `00-` / `00_` filename prefixes (including templates — e.g. `00-shared-grammar` → `shared-grammar`). **Banned** anywhere in the live vault.
+3. Strip leading `00` / `00-` / `00_` filename prefixes (including templates — e.g. `00-template` → `template`). **Banned** anywhere in the live vault.
 4. Trim; replace each run of whitespace with a single `-`.
 5. Remove apostrophes (`'` / `’`); keep existing hyphens that separate words.
 6. Strip characters other than letters, digits, and `-` (no `/\:*?"<>|`, commas, etc.).
@@ -109,7 +107,7 @@ Wiki page `.md` **basenames** (not attachment images — those stay kebab `{slug
 
 **Legacy = wrong:** current standards exclusively. Do not preserve spaced names, `Aruhe` place prefixes, or `00`/`00-` prefixes on mint or remorph.
 
-Example: `title: Jean-Claude Tabarnack` → `wiki/entities/pc/jean-claude-tabarnack.md`. Example: `Aruhe - Hungry Isle.md` → `hungry-isle.md`. Example: `00-shared-grammar.md` → `shared-grammar.md`.
+Example: `title: Jean-Claude Tabarnack` → `wiki/entities/pc/jean-claude-tabarnack.md`. Example: `Aruhe - Hungry Isle.md` → `hungry-isle.md`. Example: `00-template.md` → `template.md`.
 
 
 **Uniqueness:** vault-wide unique stem (no two live `.md` files share the same basename across folders). Prefer clearer titles/slugs over folder shadowing.
@@ -128,7 +126,7 @@ No separate `recaps/` tree; no flat `wiki/journal/Session-…`.
 
 Structural context waste (multi-H1 satellites, Foundry dump-copy beside Sheet, empty sections left in place) is a token bug — see `docs/agents/context-waste-method.md`. Not a prose-quality score.
 
-Cross-kind DM-usability rules for templates and filed pages: frontmatter core, shared Title Case headings (`At a Glance`, `At the Table`, `Connections`, `Secrets`, `Provenance`, `Art`), callout surfaces, omit-empty, and no synonym headings for the same job. Full text: `wiki/templates/shared-grammar.md`. Image assets: flat `wiki/attachments/{subject-slug}-{role}.{ext}` with roles `banner`\|`portrait`\|`token`\|`battlemap`\|`overview`\|`reference`\|`handout`\|`teaser`\|`recording` (see shared grammar Attachment filenames).
+Cross-kind DM-usability rules for templates and filed pages: use the frontmatter core, shared Title Case headings (`At a Glance`, `At the Table`, `Connections`, `Secrets`, `Provenance`, `Art`), correct callout surfaces, omit-empty sections, and no synonym headings for the same job. Image assets use flat `wiki/attachments/{subject-slug}-{role}.{ext}` paths with roles `banner`\|`portrait`\|`token`\|`battlemap`\|`overview`\|`reference`\|`handout`\|`teaser`\|`recording`; see `wiki/attachments/README.md`.
 
 When a shared job appears, use the shared heading name. DM-visible labels use Title Case / spaced words — never snake_case in body or table Field columns (`One thing`, not `one_thing`); YAML keys may stay snake_case. Kind-specific job blocks keep their own names. `Relationships` is not a Connections synonym — use `## Connections`. Recap/session/run spoken surfaces use only `[!narration]`; owner pages may add `[!mechanic]` / `[!secret]`.
 

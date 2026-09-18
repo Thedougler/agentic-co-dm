@@ -18,7 +18,7 @@ summary: ""
 
 # {{title}}
 
-**Purpose.** What this beat needs to change for the party — new direction, new capability, new constraint.
+**Purpose.** This beat needs to change for the party: a new direction, capability, or constraint.
 
 **Trigger.** What brings this situation on screen.
 
@@ -29,14 +29,14 @@ summary: ""
 **Target.** ~30 minutes.
 
 > [!narration] Opening
-> Write 2–4 player-facing sentences establishing only what the characters can immediately perceive. End on something they can respond to.
+> Write high-quality theatre of the mind in two to four player-facing sentences. Address the players as "you". Establish only what the characters can immediately perceive. Include a visible situation, a relative position, and a non-sight sense. End on the reaction point.
 
 ## Run the Beat
 
 1. **Present the situation.** What wants the party's attention right now?
 2. **Let them engage.** What can they question, inspect, negotiate with, test, or refuse?
-3. **Make the turn.** Surface the information or change that makes this beat matter — the bump that sets a new direction.
-4. **Hand back the choice.** State the changed situation and the new direction clearly; ask what they do.
+3. **Make the turn.** Surface the information or change that makes this beat matter. This is the bump that sets a new direction.
+4. **Hand back the choice.** State the changed situation and the new direction clearly. Ask what they do.
 
 ````col
 ```col-md
@@ -65,9 +65,9 @@ flexGrow=2
 ```
 ````
 
-### Required conclusion — redundancy
+### Required conclusion (use sparingly)
 
-Use only when the adventure depends on the party reaching a particular conclusion.
+Use this only when the adventure depends on the party drawing one conclusion.
 
 **Conclusion.** What the players need enough evidence to reasonably conclude.
 
@@ -89,8 +89,8 @@ Use only when the adventure depends on the party reaching a particular conclusio
 <!-- Omit when nothing meaningful is uncertain. Essential progress should never depend on a single failed check. -->
 
 - **Automatic.** What the characters learn or accomplish simply by taking the sensible action.
-- **Action — DC __.** **Success:** what improves, opens, or becomes certain. **Failure:** a cost, delay, exposure, complication, or incomplete answer that still leaves play moving.
-- **Action — DC __.** **Success:** . **Failure:** .
+- **Action.** Use `DC __`. **Success:** what improves, opens, or becomes certain. **Failure:** a cost, delay, exposure, complication, or incomplete answer that still leaves play moving.
+- **Action.** Use `DC __`. **Success:** . **Failure:** .
 
 ## Player Levers
 
@@ -105,15 +105,15 @@ Use only when the adventure depends on the party reaching a particular conclusio
 | --------------------------------- | ------------------------------------------------------------------------ | -------------------------------- |
 | Pursues the clearest lead         |                                                                          | [[Session-{{session}}-BB-Label]] |
 | Refuses, delays, or walks away    |                                                                          | [[Session-{{session}}-BB-Label]] |
-| Changes the situation another way | Preserve the established truths; follow the consequence of their action. | [[Open Node]]                    |
+| Changes the situation another way | Preserve the established truths. Follow the consequence of their action. | [[Open Node]]                    |
 
 ### If the Beat Stalls
 
-- Have an actor pursue their immediate want.
+- An actor pursues a current goal.
 - Surface the clearest unrevealed fact through something already in the scene.
 - Advance the pressure and show its consequence.
-- Restate what has changed and the obvious handles the party can act on; remain open to another approach.
-- Once the party has an actionable direction, end the beat and move on.
+- Restate what has changed and the obvious handles the party can act on. Remain open to another approach.
+- Once the party has a usable direction, end the beat and move on.
 
 ### After Play
 

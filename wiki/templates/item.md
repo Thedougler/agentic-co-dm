@@ -43,7 +43,7 @@ summary: ""
 <!-- Add item art when available. Omit Art section when unused. -->
 
 > [!narration] Narration
-> Write a cold object portrait in complete sentences. No secrets, DCs, or unearned names.
+> Write a high-quality cold portrait in flowing prose for as long as needed to show the object's appearance and wear. Cover type, scale vs body, material, wear, and at least one non-sight sense. No secrets, DCs, or unearned names.
 
 <!-- Classification line: kind + rarity (+ attunement when required). Examples:
      Consumable, Rare
@@ -61,25 +61,25 @@ Write the runnable effect in 2024 rules language. One short block. Owner of numb
 
 ## At a Glance
 
-One or two sentences: what this item is now, who holds it when known, and why a DM opens the page at the table. Omit when the classification + effect already cover that.
+In one or two sentences, describe the item's current role, known holder, and reason a DM opens the page at the table. Omit this section when the classification and effect already cover that.
 
 ## At the Table
 
-How the item changes a choice tonight — notice, spend, reveal, or pressure. Playable consequence only. Omit when unused. No design diary or RAW/balance commentary.
+Explain how the item changes a choice tonight. Cover notice, spend, reveal, or pressure. Include only playable consequences. Omit when unused. No design diary or RAW/balance commentary.
 
 ## Hidden Properties
 
-Cursed effects, undiscovered attunement benefits, concealed history, or conditional triggers the party has not yet earned. Omit when unused.
+Describe any hidden property the party does not yet know. Examples include a curse, an attunement benefit, concealed history, or a conditional trigger. Omit when unused.
 
 ## Connections
 
-- [[page]] — What this tie does at the table.
+- [[page]]. State what this tie does at the table.
 
 <!-- Omit Connections when unused. -->
 
 ## Provenance
 
-Where it came from, contested ownership chains, and open questions. Facts only — not ingest meta or process notes. Omit when unused; do not restate At a Glance.
+Describe where it came from, contested ownership chains, and open questions. State facts only. Do not include ingest meta or process notes. Omit when unused. Do not restate At a Glance.
 
 ## Art
 

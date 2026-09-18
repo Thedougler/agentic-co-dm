@@ -7,7 +7,7 @@ tags: [shattered-sea, lore]
 sources:
   - "/workspace/midchain-ingest/group-a/npcs/Sir Quackers the Fowl.md"
   - "campaign-os:soul-incarnate.md"
-summary: "A signature the Fate Spinner can expose; Sir Quackers carries it without understanding what it means."
+summary: "A signature the Fate Spinner can expose. Sir Quackers carries it without understanding what it means."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -34,14 +34,14 @@ scope: "Linked to ley-line phenomena at Yssenmoor"
 
 | State | Trigger | Behavior |
 |---|---|---|
-| **Observing** | Default, no Front trigger has fired | Never initiates contact, and does not act, respond, or reveal itself even under direct threat to anything but its own sealed body. It only records |
-| **Engaged** | Something breaches its seal, or the [[Front]]'s trigger condition on [[sentinels-of-the-eyrie]] fires | Breaks two centuries of pure observation and fights without restraint, using its full combat suite |
+| **Observing** | Default, no trigger condition has fired | Never initiates contact, and does not act, respond, or reveal itself even under direct threat to anything but its own sealed body. It only records |
+| **Engaged** | Something breaches its seal, or the trigger condition on [[soul-incarnates-watch|Soul Incarnate's Watch]] fires | Breaks two centuries of pure observation and fights without restraint, using its full combat suite |
 
 **Wants:** to keep [[drowned-maw]]'s unbroken, uninterpreted record running past its own death. The current escalation breaks that pattern entirely.
 **Morale:** it never flees. Bound to the sealed body beneath [[high-eyrie|the High Eyrie]], it simply stops fighting and returns to observation the moment the threat that forced it to act ends, dead intruder or resolved crisis alike.
 
 > [!narration] Narration
-> A figure hangs a foot off the stone where a body should stand, meridian lines burning faint gold along limbs that don't end cleanly at the skin, already facing you before you finish turning, patient as the two centuries it has spent this way. The stone floor holds only the dust of your own steps, and the seal keeps the air still enough to taste. Somewhere beneath your boots, wrapped and stone-dry, the body it left still lies where the order sealed it two hundred years ago. It has always only watched. What you do next is the first thing in a long while it hasn't already seen coming.
+> A figure hangs a foot off the stone where a body should stand, meridian lines burning faint gold along limbs that don't end cleanly at the skin, already facing you before you finish turning, patient as the two centuries it has spent this way. The stone floor contains only the dust of your own steps, and the seal keeps the air still enough to taste. Somewhere beneath your boots, wrapped and stone-dry, the body it left still lies where the order sealed it two hundred years ago. It has always only watched. Your next action is the first thing in a long while it hasn't already seen coming.
 
 
 ```statblock
@@ -96,7 +96,7 @@ legendary_actions:
 
 ## Description
 
-A monk who reached lichdom through years of meditation and then ritual desiccation, drinking a mummifying preparation while sealed underground in perfect stillness until the line between life and death gave out. The physical body mummifies and becomes the phylactery. What rises off it takes the shape of a ki-form, a hovering figure traced in glowing meridian lines, incorporeal and unbound by ordinary physical limits. The Soul Incarnate has led [[sentinels-of-the-eyrie|the Sentinels of the Eyrie]] in secret for two centuries, guiding the order from beneath [[high-eyrie|the High Eyrie]] without ever once appearing before it.
+A monk attained lichdom through years of meditation and ritual desiccation, drinking a mummifying preparation while sealed underground in perfect stillness until the line between life and death gave out. The physical body mummifies and becomes the phylactery. The form that rises from it is a ki-form, a hovering figure traced in glowing meridian lines, incorporeal and unbound by ordinary physical limits. The Soul Incarnate has led [[sentinels-of-the-eyrie|the Sentinels of the Eyrie]] in secret for two centuries, guiding the order from beneath [[high-eyrie|the High Eyrie]] without ever once appearing before it.
 
 ## Ecology
 
@@ -112,9 +112,9 @@ The Soul Incarnate's body has not moved since the seal closed over it two centur
 
 ## Prepped Reveals
 
-The founding ledgers [[master-kyzil]] calls "very old" have a conscious author who is still recording. The Soul Incarnate wrote the order's earliest entries itself and has kept the hand consistent across two centuries of copyists since.
+The founding ledgers [[master-kyzil]] calls "old" have a conscious author who is still recording. The Soul Incarnate wrote the order's earliest entries itself and has kept the hand consistent across two centuries of copyists since.
 
-> [!check] Investigation or Religion — Reading the Ledger Hand
-> DC 20; anyone with access to the archive at [[high-eyrie|the High Eyrie]] may roll.
-> **Success:** one hand never changes across two centuries of otherwise-shifting script, an anomaly no living scribe can explain.
-> **Failure:** the archive reads as exactly what the order believes it to be, a long unbroken tradition with no single author.
+**Investigation or Religion. Reading the Ledger Hand.**
+**DC 20.** Anyone with access to the archive at [[high-eyrie|the High Eyrie]] may roll.
+**Success.** One hand never changes across two centuries of otherwise-shifting script, an anomaly no living scribe can explain.
+**Failure.** The archive reads as exactly what the order believes it to be, a long unbroken tradition with an author no living scribe can identify.

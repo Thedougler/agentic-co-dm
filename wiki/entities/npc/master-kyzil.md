@@ -37,15 +37,15 @@ visibility: dm
 
 Senior master of the [[sentinels-of-the-eyrie]], an [[Aarakocra]] built and coloured like a barn owl, stationed out of [[high-eyrie]] and currently in [[calven-and-calveno]] since Day 2 of Session 03. A disciplined guardian who masks his anxiety beneath perfect composure: he asks questions instead of giving orders, and channels worry into action instead of words.
 
-He gave [[crissdalynn-khinriss|Crissdalynn]] her pilgrimage himself: map [[drowned-maw]] from inside a storm, the hardest assignment on record, staking his own reputation on her readiness. When the [[red-lady]] went down, he tracked her by current and weather, predicted where she'd wash ashore, and went to [[calders-tooth-and-port-tidefall]] to wait, then learned the ship had sunk. He searched east into the [[Midchain]] first, then west, after a maritime contact spotted an Aarakocra monk aboard a captured Crown patrol cutter.
+He assigned [[crissdalynn-khinriss|Crissdalynn]] the pilgrimage himself. She must map [[drowned-maw]] from inside a storm, the hardest assignment on record. Her readiness carries his reputation.
 
-Before any of that, Kyzil had his own master at High Eyrie, a teacher who came to see the order's "record without conclusion" doctrine as people dying in front of an order that only ever wrote it down, broke from the Sentinels over it, and asked Kyzil to break with him too, though Kyzil refused, and neither has stopped believing he was right since. The old master never actually died, though, and he's now [[talon-vantyrus]], master of [[the Countless]], a fact Kyzil doesn't know.
+Before any of that, Kyzil had his own master at High Eyrie. That teacher saw the order's "record without conclusion" doctrine as an account of deaths the order only recorded. He broke from the Sentinels and asked Kyzil to join him. Kyzil refused, and neither has stopped believing he was right since. The old master never actually died, though, and he's now [[talon-vantyrus]], master of [[the Countless]], a fact Kyzil doesn't know.
 
 In Calveno, he's taking his meal on the Waveservant Shrine steps, gaze fixed on something distant across the square, the step beside him left conspicuously empty. He doesn't speak first, and waits for Crissdalynn to break the silence, if she will.
 
 With Crissdalynn specifically, he's told her the pilgrimage isn't over. He won't say how. In Calveno he asks about the course of her pilgrimage instead of a confession, wanting two things: what she saw and recorded, and what the Maw did to test her. The storm shifted winds and tides beyond her prediction, breaking the currents she tried to follow. It bent her compass and demanded courage she had to find. Why he was close enough to hear of the wreck, and what business of his own he has in the region, stay unknown, though his assignment for her is on record and his motives for tracking her personally are not.
 
-He asks questions instead of making statements, even while teaching, and agrees when he wants to apply pressure, letting a student's self-criticism sit as a flat "Yes" and nothing more. He stops before the emotional word: "I corrected course." "Three times." That's all he gives. Wind and tide are his vocabulary for relationships, and when his composure threatens to crack, he smooths his robes, refolds his wings right over left, then adjusts his hood, a tell those who know him catch once, one he doesn't know shows.
+He asks questions instead of making statements, even while teaching, and agrees when he wants to apply pressure. He lets a student's self-criticism sit as a flat "Yes" and nothing more. He stops before the emotional word: "I corrected course." "Three times." That's all he gives. Wind and tide are his vocabulary for relationships, and when his composure threatens to crack, he smooths his robes, refolds his wings right over left, then adjusts his hood, a tell those who know him catch once, one he doesn't know shows.
 
 | Field | Value |
 |---|---|
@@ -55,7 +55,7 @@ He asks questions instead of making statements, even while teaching, and agrees 
 | Performance hooks | Composed sentinel master vibe. Smooths his robes, refolds his wings right over left, then adjusts his hood when his composure threatens to crack. |
 | Link of relevance | Assigned [[crissdalynn-khinriss|Crissdalynn]] The Drowned Maw pilgrimage. Staked his own reputation on her readiness. |
 
-The "foul wind from the south" he named when the ship went down was right: Talon Vantyrus and [[talon-skarn]] of [[the Countless]] were operating in the Midchain at the time, a thread to introduce once the crew of the [[Uncertainty]] actually travels into or reaches the Midchain, not before. His own outstanding business: determine what the Eyrie needs to know about current Maw conditions, and whatever brought him to Calveno beyond Crissdalynn, which he hasn't said. Does he know about the [[soul-incarnate]]? No: per Sentinels of the Eyrie doctrine, he doesn't know the [[soul-incarnate]] exists as a conscious entity, only that the order's founding documents are ancient.
+The "foul wind from the south" he named when the ship went down was right. Talon Vantyrus and [[talon-skarn]] of [[the Countless]] operated in the Midchain at the time. Introduce that thread only once the crew of the [[Uncertainty]] travels into or reaches the Midchain. His outstanding business is to determine what the Eyrie needs to know about current Maw conditions. He has not disclosed what brought him to Calveno beyond Crissdalynn. Does he know about the [[soul-incarnate]]? No. Under the Sentinels of the Eyrie doctrine, he does not know that [[soul-incarnate]] exists as a conscious entity. He knows only that the order's founding documents are ancient.
 
 ## Stats & Combat
 
@@ -128,14 +128,14 @@ legendary_actions:
 ## Connections
 
 - [[crissdalynn-khinriss]]: student/mentee (calls her Priscilla); gifted her the [[fate-spinner]], her crystal dreidel, before her pilgrimage
-- [[talon-vantyrus]]: his old master at [[high-eyrie]]. Kyzil believes he departed the order decades ago. He has no idea Vantyrus is alive, active, or leading [[the Countless]] now.
+- [[talon-vantyrus]]: his old master at [[high-eyrie]]. Kyzil believes he departed the order decades ago. Vantyrus's survival and leadership remain unknown to Kyzil.
 - [[sentinels-of-the-eyrie]]: the order he leads as senior master, based at High Eyrie
 - Crissdalynn's Pilgrimage: the task he assigned her
 - [[calven-and-calveno]]: present location
 - [[jean-claude-tabarnack]]: dismissed as “no threat”; tension established
 - [[delmar-fisk]]: bear-hugged Kyzil on meeting; joined the spar uninvited
 - [[perrin-black-jaw]]: drum identified as tactical threat during the spar
-- [[Ponte Bassa]]: spar location
+- [[oleandro-fuschi|Ponte Bassa]]: spar location
 
 ## Session Log
 
@@ -147,10 +147,10 @@ legendary_actions:
 
 **Session 04** (`vault/episodes/004/`): told Crissdalynn he gave her the hardest pilgrimage in Eyrie history because he knew she could do it. Maw has been unruly and dangerous since the wreck. Weather odd. Sentinels saw the wreck. Senses something foul from the south.
 
-Challenged them to a nonlethal four-on-one spar on the [[Ponte Bassa]] rooftop: he turned edges, caught falls on the wind, and dropped a student cleanly instead of maiming them. Crissdalynn wrestled him R1 (natural 1 on the contest). Downburst legendary action broke the hold. First attempt stopped by bardic inspiration, second knocked her off the roof. He panicked and flew down to catch her.
+Challenged them to a nonlethal four-on-one spar on the [[oleandro-fuschi|Ponte Bassa]] rooftop. He turned edges and caught falls on the wind. He dropped a student cleanly instead of maiming them. Crissdalynn wrestled him R1 (natural 1 on the contest). Downburst legendary action broke the hold. First attempt stopped by bardic inspiration, second knocked her off the roof. He panicked and flew down to catch her.
 
-Pinned Jean-Claude's shirt to a chair with a returning dagger as a dominance display (Jean-Claude wasn't participating). Delmar landed a sneak attack through Empty Wing Parry via bardic inspiration for 17 damage. He held as designed for three rounds. Kyzil ended standing.
+Pinned Jean-Claude's shirt to a chair as a dominance display (Jean-Claude wasn't participating). Delmar's sneak attack passed through Empty Wing Parry via bardic inspiration for 17 damage. Kyzil held as designed for three rounds and ended standing.
 
 Staying in Calveno through the festival. Afterward, investigated his “foul wind” instinct overnight. Heard fragments about small cloaked figures near storm drains and acidic smells underground. Instinct confirmed: something is moving beneath Calveno. He's primed to snap into tactical assessment once they share their intel.
 
-- **Spar tactics:** opening: “I'd like to show you something. Please try to hit me.” Routine: Multiattack (4 attacks, pulling edges) → Patient Defense → Empty Wing Parry on incoming hits. Round 3: updraft step to elevated position, full pressure. Cutting Gale used when two or more PCs stood in a line (“He exhales” was the warning). Win condition offered: force his Legendary [[Resistance]] or trigger his Empty Wing Parry; land a hit after baiting movement or shield an ally as a gale fires; disarm him or use terrain to block his approach. Kyzil still ends standing. Ending: Kyzil stops, not them. He catches a weapon or fist mid-swing, holds it one beat before saying “There.” When cutting Gale fired down the line with Crissdalynn in it, she proved herself: she moved. “You moved. Good.” was all he said.
+- **Spar tactics.** Opening. “I'd like to show you something. Please try to hit me.” Routine. Multiattack (4 attacks, pulling edges) → Patient Defense → Empty Wing Parry on incoming hits. Round 3. Updraft step to an elevated position and apply full pressure. Use Cutting Gale when two or more PCs stand in a line (“He exhales” is the warning). Win condition. Force his Legendary [[talon-skarn#Statblock|Resistance]] or trigger his Empty Wing Parry. A successful approach can land a hit after baiting movement. It can also protect an ally as a gale fires or use terrain to block the approach. Disarm him if possible. Kyzil still ends standing. Ending. Kyzil stops, not them. He catches a weapon or fist mid-swing, holding it for one beat before saying “There.” When Cutting Gale fires at a line containing Crissdalynn, she moves. “You moved. Good.” is all he says.

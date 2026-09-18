@@ -30,7 +30,7 @@ Every student undertakes a pilgrimage. Students work Maw-perimeter circuits, doc
 
 A [[soul-incarnate|Soul Incarnate]] lies beneath the Eyrie. This body-phylactery lich is neutral and sealed, preserving two centuries of records as the order's true head. Kyzil doesn't know it exists as a conscious entity; he thinks the founding documents are simply "very old." The current Maw escalation exceeds anything in the ledger's history, and it has begun engaging actively instead of passively. Surface observation finds no trace of [[auralis|Auralis]] across two centuries, yet both watch from opposite sides, unaware of each other.
 
-A schism split the order. [[osset|Osset]], a former master, left and vanished. In Session 08, Delmar found a torn scrap naming him at [[cabinet-of-morsani|the Cabinet of Morsani]], and Osset resurfaced the same session in [[le-paludi|Le Paludi]], where he sold a cursed cloak. Crissdalynn has never heard his name from anyone at the Eyrie. His reappearance and current whereabouts remain unknown to the order.
+A schism split the order. [[talon-vantyrus|Talon Vantyrus]], originally named Osset, was a former master who left and vanished under his new name. In Session 08, Delmar found a torn scrap naming Osset at [[cabinet-of-morsani|the Cabinet of Morsani]], and Osset resurfaced the same session in [[le-paludi|Le Paludi]], where he sold a cursed cloak. Crissdalynn has never heard his original name from anyone at the Eyrie. His reappearance and current whereabouts remain unknown to the order.
 
 ## Goals & Fronts
 
@@ -71,20 +71,20 @@ No Front clock governs this faction. The order's core unrevealed tension (gestur
 
 **Approach:** works the one part no disposable hire can. A master of his own time, he reads a Sentinel from the inside, trading on shared training and old [[high-eyrie|High Eyrie]] names to get near the people he needs to judge. Items and favours are how he arrives somewhere, never why.
 
-He will not approach Crissdalynn while Kyzil is close enough to notice. They were masters at the [[high-eyrie|High Eyrie]] in the same years and Kyzil would know his face, so Osset waits out any stretch that puts them in the same port and moves only once she is beyond her own master's reach.
+He will not approach Crissdalynn while Kyzil is close enough to notice. They were masters at the [[high-eyrie|High Eyrie]] in the same years and Kyzil would know his face, so Vantyrus waits out any stretch that puts them in the same port and moves only once she is beyond her own master's reach.
 
 **Off-screen move if unopposed:** moves closer to Crissdalynn's circle through grey-market and pilgrim traffic, gathering what the order recorded about her pilgrimage and what it chose not to.
 
 **Trigger conditions:**
 
-- Each time Osset learns something about Crissdalynn's Long Sight or her pilgrimage that Kyzil withheld from her, a segment fills.
-- A segment fills if the crew takes him as a source on the order without knowing whose errand he runs.
+- Each time Vantyrus learns something about Crissdalynn's Long Sight or her pilgrimage that Kyzil withheld from her, a segment fills.
+- A segment fills if the crew takes him as a source without knowing that Osset is his original name and Vantyrus is his current Countless alias.
 
 **Clock:** 5 segments (moderate pace), filled: 0
 
-**Consequence at fill:** Osset hands Vantyrus the finished read, and [[talon-skarn|Skarn]]'s strike stops depending on luck. Whatever Osset knows about why he left during the schism goes back into the Countless' structure with him, reachable only through the pair themselves.
+**Consequence at fill:** Vantyrus completes the read, and [[talon-skarn|Skarn]]'s strike stops depending on luck. Whatever Vantyrus knows about why he left during the schism goes back into the Countless' structure with him.
 
-**Possible outcomes (2-3):** the crew reaches Osset before the clock fills and learns firsthand why he left, and whose errand he has been running since. The clock could instead fill unseen if the crew treats a helpful former master as an ordinary source. Or Crissdalynn recognizes the doctrine in how he speaks before he finishes, and the read breaks off half-made.
+**Possible outcomes (2-3):** the crew reaches Vantyrus before the clock fills and learns firsthand why he left, why he adopted the Vantyrus name, and what he has been doing under it. The clock could instead fill unseen if the crew treats a helpful former master as an ordinary source. Or Crissdalynn recognizes the doctrine in how he speaks before he finishes, and the read breaks off half-made.
 
 **PC connection:** pressures Crissdalynn directly. She trained fully under the Sentinels and spent years under Kyzil's instruction without ever hearing Osset's name. Her exile runs on the promise that finishing her pilgrimage earns her the order's complete trust and its complete record. Osset proves the order already kept at least one name from her before she ever left for the Maw, whether by his own omission or a gap in what even reached him.
 
@@ -93,7 +93,7 @@ He will not approach Crissdalynn while Kyzil is close enough to notice. They wer
 **Quest link:** none yet.
 
 **Three-Clue Trail:**
-Conclusion: who Osset really is, why he left the Sentinels during the schism, and that he has been running Vantyrus' errand ever since, reading Crissdalynn for a master she has never heard of.
+Conclusion: who Osset really is, why he left the Sentinels during the schism, and why he adopted the Vantyrus name to lead the Countless while reading Crissdalynn for the transformation technique.
 Clue 1: [[la-cenere|La Cenere]], [[lavinia-sordi|Lavinia Sordi]] herself, questioned directly about the falcon-featured man's manner, what he said, and any detail she didn't think to mention the first time, reached through Persuasion, Insight, or simple trade goodwill, with no combat required.
 Clue 2: the questions he asks. Anyone he has spoken to in the [[midchain|Midchain]] remembers a courteous man who wanted to know about pilgrims, patrol routes, and one young Sentinel, and who paid for the conversation without buying anything, reached through Investigation or by asking after him in a port he has already worked, with no combat required.
 Clue 3: the Sentinels' own record at [[high-eyrie|High Eyrie]], formally requesting or earning access to what the order recorded, or chose not to record, about who left during the schism. Reachable through standing and trust with Kyzil or the archive itself, not combat.

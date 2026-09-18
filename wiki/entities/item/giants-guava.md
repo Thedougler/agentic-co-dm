@@ -36,7 +36,7 @@ relationships:
 ![[attachments/shattered-sea/items/aruhe-giants-guava.jpg|Giant's guava]]
 
 > [!narration] Narration
-> A giant guava hangs from a thick branch in deep pink and gold ribs, broad enough that two hands are necessary to catch one. Its glossy, puckered skin is speckled, and the branch bows under its weight. Up close it smells sweet with a musky edge.
+> A giant guava hangs from a thick branch in deep pink and gold ribs. It takes both hands to catch. Its glossy, puckered skin shows fine speckles, and the branch bows under its weight. Up close it smells sweet with a musky edge.
 
 Consumable, Rare.
 

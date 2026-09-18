@@ -9,7 +9,7 @@ sources:
   - "campaign-os:high-eyries-storm-door-run-guide.md"
   - "campaign-os:high-eyries-storm-door-narration-condition.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-18
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
@@ -73,7 +73,7 @@ West bearing. Maw weather, one stair, the order decides who comes farther.
 > |---|---|---|---|
 > | Insight | 14 | the order is closed | [[master-kyzil]] will warn [[crissdalynn-khinriss]] without finishing her pilgrimage |
 > | Persuasion | 16 | no invitation | a Sentinel lets them onto a terrace |
-> | Investigation | 15 | public ledgers | Maw patterns without interpretation — [[Osset]] wants the read Kyzil withholds |
+> | Investigation | 15 | public ledgers | Maw patterns without interpretation, and [[talon-vantyrus|Talon Vantyrus]] wants the read Kyzil withholds |
 
 ## 3 — If they dig
 

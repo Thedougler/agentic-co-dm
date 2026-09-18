@@ -43,4 +43,4 @@ Consumable, Rare.
 
 When you eat this fruit, you have the **Invisible** condition for **1 hour**.
 
-Session 11. [[matteo-scola]] ate one in front of the party and vanished. Duration talk at the table mixed one hour with ten minutes; this page keeps one hour until a later ruling replaces it. ^[ambiguous]
+Session 11. [[matteo-scola]] ate one in front of the party and vanished. The table discussed both one hour and ten minutes for the duration. This page keeps one hour until a later ruling replaces it. ^[ambiguous]

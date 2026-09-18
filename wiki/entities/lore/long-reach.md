@@ -7,7 +7,7 @@ tags: [shattered-sea, lore]
 sources:
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-sentinels-of-the-eyrie.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/location-high-eyrie.md"
-summary: "Martial technique every Sentinel apprentice earns; not a full mechanical homebrew here."
+summary: "Martial technique every Sentinel apprentice learns, with no full mechanical homebrew defined here."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -25,7 +25,7 @@ visibility: dm
 ---
 # Long Reach
 
-[[long-reach]] is a martial technique every [[sentinels-of-the-eyrie]] apprentice earns. This source does not supply full mechanical homebrew.
+[[long-reach]] is a martial technique every [[sentinels-of-the-eyrie]] apprentice learns, with no full mechanical homebrew defined here.
 
 ## Connections
 

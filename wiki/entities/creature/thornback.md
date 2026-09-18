@@ -2,21 +2,23 @@
 title: "Aruhe - Thornback"
 aliases:
   - Aruhe - Thornback
+  - Thornbacks
 category: entities
 tags: [shattered-sea, aruhe, creature]
 sources:
   - "/workspace/midchain-ingest/group-a/monsters/Thornback.md"
-summary: "CR 7 thorned bruiser from living-stock ecology."
+  - "campaign-os:thornbacks.md"
+summary: "CR 7 blight-corrupted thorned bruiser that roots the Quiet floor and drives off other beasts."
 provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.42
+base_confidence: 0.55
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T20:00:00Z
-updated: 2026-09-13T20:00:00Z
+updated: 2026-09-18T06:52:43Z
 type: creature
 reveal: unrevealed
 campaign: shattered-sea
@@ -75,15 +77,15 @@ actions:
 
 ## Behavior
 
-- **Habitat.** [[the-quiet]] floor. Solitary — two fight each other first.
-- **Behavior.** Roots and shoves trails other animals later use; quills shed and regrow in hours.
-- **Diet.** Rooting Quiet floor forage and whatever the charge catches.
-- **Social Structure.** Solitary; two in one stretch fight each other first.
+- **Habitat.** [[the-quiet]] floor. It avoids other thornbacks because two in one stretch fight each other first.
+- **Behavior.** The Blight fused boar aggression with a porcupine's defensive arsenal and removed the off switch. It roots through the jungle floor and shoves trails open. Shed quills regrow within hours.
+- **Diet.** Rooting-floor forage and whatever the charge catches.
+- **Social Structure.** Solitary. Two in one stretch fight each other first.
 
 ## Tactics
 
 - **Signs.** Javelin quills, tusks through skull, spent spines on trails.
-- **Instincts.** Charge, gore, and quill; claim a stretch alone.
-- **Tactics.** Charge into Gore; Quill Lash; Spine Volley when clustered prey allows.
-- **Weaknesses.** Reach and formation answers; do not stand in the cone.
+- **Instincts.** Charge, gore, and quill. It claims a stretch alone.
+- **Tactics.** It opens with a charge into Gore, then follows with Quill Lash. It uses Spine Volley when prey clusters.
+- **Weaknesses.** Reach and formation counter it. Do not stand in the cone.
 - **Aftermath.** Trails shoved open and littered with spent spines.

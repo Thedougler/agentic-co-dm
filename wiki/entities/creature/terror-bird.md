@@ -2,21 +2,23 @@
 title: Aruhe - Terror-Bird
 aliases:
   - Aruhe - Terror-Bird
+  - Terror-Birds
 category: entities
 tags: [shattered-sea, aruhe, creature]
 sources:
   - "house (wiki creature.terror-bird; living-stock 2026-09-05)"
-summary: CR 13 solitary bruiser that announces its charge through the ground, grapples prey with its beak, and swallows isolated targets.
+  - "campaign-os:terror-birds.md"
+summary: CR 13 Blight-corrupted axebeak apex predator on Aruhe whose ground-shaking charge ends in a beak clamp and swallow.
 provenance:
-  extracted: 0.95
-  inferred: 0.05
-  ambiguous: 0.0
-base_confidence: 0.4
+  extracted: 0.90
+  inferred: 0.08
+  ambiguous: 0.02
+base_confidence: 0.53
 lifecycle: canon
 lifecycle_changed: 2026-09-12
 tier: supporting
 created: 2026-09-12T05:40:07Z
-updated: 2026-09-12T10:20:00Z
+updated: 2026-09-18T06:59:22Z
 type: creature
 reveal: unrevealed
 campaign: shattered-sea
@@ -35,7 +37,7 @@ relationships:
 # Aruhe - Terror-Bird
 
 > [!narration] Narration
-> Taller than a horse, a black Terror-Bird tears through the jungle with ragged wings spread for balance. Moss clings to its feathers, but a yellow eye, serrated beak, and hooked talons make the shape unmistakable. Dust jumps beneath each stride as it bears down the path; the ground shakes before it reaches you.
+> Taller than a horse, a black Terror-Bird tears through the jungle with ragged wings spread for balance. Moss clings to its feathers. A yellow eye, serrated beak, hooked talons, and teeth inside that beak identify the predator. Each talon is as long as a forearm. Dust jumps beneath each stride as it bears down the path. The ground shakes before it reaches you.
 
 ## Statblock
 ```statblock
@@ -76,15 +78,16 @@ actions:
 
 ## Behavior
 
-- **Habitat.** Terror-Birds hold the shaded rims, grass cuts, and hard-running lanes around [[grasslands|the Grasslands]] and [[the-river|the River]]. Each adult claims about a quarter-mile of edge territory where open ground gives it room for one committed charge.
-- **Behavior.** A still Terror-Bird reads as a mossed trunk with one yellow eye until it chooses to move. It does not fly; its ragged wings are for balance, threat display, and body language around the charge.
-- **Diet.** It runs down exposed prey, swallows smaller bodies whole, and leaves flattened digest-circles, bone, and sour bolus where it has fed. Its hunger remains animal rather than commanded by the Blight gardens. ^[inferred]
-- **Social Structure.** It is solitary. Each bird holds a claim and avoids other oversized Aruhe predators by instinct; [[bear-elk|Bear-Elk]] routes get room, while [[crown-squid|crown squid]] and [[bloodhawk|bloodhawks]] take a Terror-Bird only when terrain gives them a cleaner angle.
+- **Habitat.** Terror-Birds occupy shaded rims, grass cuts, and hard-running lanes around [[grasslands|the Grasslands]] and [[the-river|the River]]. Each adult claims about a quarter-mile of edge territory where open ground gives it room for one committed charge. It ranges from the Rot toward the Hunger in the deep interior and appears on the approach to the central grove.
+- **Behavior.** A still Terror-Bird reads as a mossed trunk with one yellow eye until it chooses to move. It does not fly. Its ragged wings provide balance and threat display around the charge.
+- **Diet.** It runs down exposed prey and swallows smaller bodies whole. Feeding leaves flattened digest-circles, bone, and sour bolus. Its hunger remains animal rather than commanded by the Blight gardens. ^[inferred]
+- **Social Structure.** It is solitary. Each bird claims a quarter-mile territory and avoids other large Aruhe predators by instinct. [[bear-elk|Bear-Elk]] routes get room, while [[crown-squid|crown squid]] and [[bloodhawk|bloodhawks]] take a Terror-Bird only when terrain gives them a cleaner angle.
+- **Blight Growth.** Moss and vegetation have grown through its feathers for decades. The island is reclaiming the bird as it reclaimed the terraces, and the bird does not notice or resist it. ^[inferred]
 
 ## Tactics
 
 - **Signs.** A yellow eye inside mossed black feathers, trunk-like stillness at a shaded rim, dust hopping on the path, tremors underfoot, talon prints deeper than a person's hand, and a sour feeding circle pressed flat in the grass.
-- **Instincts.** It waits as cover, lets the ground-shake announce the danger, and commits to one straight rush when prey breaks into the open. Eight-foot grass, deep water, or a white [[razer-grass|razer-grass]] stand ends the hunt.
-- **Tactics.** It opens with a visible charge, closes fast, clamps with Serrated Beak, rakes anything nearby, and Swallows a Medium or smaller grappled target when it can isolate one body from the group.
+- **Instincts.** It waits as cover. When prey breaks into the open, the ground-shake gives away its charge. It commits to one straight rush. Eight-foot grass, deep water, or a white [[razer-grass|razer-grass]] stand ends the hunt.
+- **Tactics.** It opens with a visible charge and closes fast. It clamps with Serrated Beak and rakes anything nearby. When it isolates one body, it uses Swallow on a Medium or smaller grappled target.
 - **Weaknesses.** Its strength is commitment, not turning. It is bad at sharp changes of direction, dense grass, deep water, razer-grass barriers, and prey that refuses the open lane it wants.
-- **Aftermath.** An encounter leaves torn moss, claw furrows, churned dust, crushed grass, sour bolus, bone scraps, and a lane through the jungle where smaller creatures went silent after the charge passed.
+- **Aftermath.** An encounter leaves torn moss, claw furrows, churned dust, crushed grass, sour bolus, bone scraps, and a lane through the jungle where smaller creatures no longer approach.

@@ -52,43 +52,43 @@ relationships:
 | **Signature method** | Observation ledgers that record conditions without interpretation. |
 | **Current posture** | Watching. |
 
-> **DM thesis:** The Sentinels preserve the only continuous account of the Maw, but their refusal to interpret or intervene turns doctrine into vulnerability.
+> **DM thesis.** The Sentinels preserve the only continuous account of the Maw, but their refusal to interpret or intervene turns doctrine into vulnerability.
 
 ## At the Table
 
-- **They want:** They want the watch to continue and the ledgers to remain unbroken.
-- **They offer:** They offer disciplined observations when their rules permit access to the ledgers.
-- **They pressure with:** They control access to High Eyrie and refuse to interpret or intervene.
-- **They will not:** They will not dive, act on an interpretation, or record why an event occurred.
-- **Their tell:** They describe time, weather, position, water, and occurrence with exacting precision.
+- **They want.** They want the watch to continue and the ledgers to remain unbroken.
+- **They offer.** They offer disciplined observations when their rules permit access to the ledgers.
+- **They pressure with.** They control access to High Eyrie and refuse to interpret or intervene.
+- **They will not.** They will not dive or act on an interpretation, and they do not record why an event occurred.
+- **Their tell.** They describe time, weather, position, water, and occurrence with exacting precision.
 
 ## Current State
 
 - **Status quo.** The Sentinels record time, weather, position, water, and what occurs at the Maw. The ledger begins in 1295 DR and continues through heat pulses, weather, vessel position, water, and occurrence. They refuse to dive.
 - **Recent change.** Pressure from [[long-sight-hunt]], [[rule-of-two]], [[schisms-third-name]], and [[soul-incarnates-watch]] now touches the order's watch.
 - **Pressure.** The order must preserve the ledger while the Maw remains dangerous and outsiders seek access to its records and seal.
-- **Strength.** High Eyrie, continuous ledgers, monastic training, and exact movement in peak wind let the order preserve observations others cannot.
+- **Strength.** High Eyrie, its continuous ledgers, monastic training, and exact movement in peak wind allow the order to preserve observations that others cannot.
 - **Vulnerability.** Their non-intervention doctrine prevents them from acting on what they observe, and access depends on stairs, spray, invitation, harnesses, magic, or a watched climb.
 - **Opportunity.** The founding documents beneath the summit may clarify the seal's connection to the Soul Incarnate.
 - **Internal fracture.** [[talon-vantyrus]] argued that non-intervention was cowardice and left after [[master-kyzil]] refused to break with him. Younger members, including [[crissdalynn-khinriss]], were not told the schism occurred.
 
 ## Active Agenda
 
-**Goal:** Hold the watch and keep the Maw ledgers continuous.
+**Goal.** Hold the watch and keep the Maw ledgers continuous.
 
-**Why:** The order's doctrine depends on an uninterrupted record of what the Maw does.
+**Why.** The order's doctrine depends on an uninterrupted record of what the Maw does.
 
-**Next move:** Continue recording the Maw's conditions and restrict access to the watch and founding documents.
+**Next action.** Continue recording the Maw's conditions and restrict access to the watch and founding documents.
 
-**Needs:** High Eyrie, trained apprentices, record-keepers, and safe access to the observation ledgers.
+**Needs.** High Eyrie, trained apprentices, record-keepers, and safe access to the observation ledgers.
 
-**Opposition:** The Maw's dangers, outside pressure, and the breakaway order founded by [[talon-vantyrus]].
+**Opposition.** The Maw's dangers and outside pressure oppose the breakaway order founded by [[talon-vantyrus]].
 
-**Next signal:** New ledger entries record another heat pulse, weather change, vessel position, water change, or occurrence at the Maw.
+**Next signal.** New ledger entries record another heat pulse or a change in weather, vessel position, water, or occurrence at the Maw.
 
-**Player opening:** The party can seek access, protect the ledgers, expose the schism, or force a choice between observation and intervention.
+**Player opening.** The party can seek access or protect the ledgers. Exposing the schism can force a choice between observation and intervention.
 
-**If completed:** The Sentinels preserve an unbroken record and keep control of access to the High Eyrie watch.
+**If completed.** The Sentinels preserve an unbroken record and keep control of access to the High Eyrie watch.
 
 ## Assets
 
@@ -104,7 +104,7 @@ relationships:
 - **Senior master:** [[master-kyzil]] leads the order and refused Vantyrus's invitation to break with it.
 - **Former master and founder of the breakaway order:** [[talon-vantyrus]] was a snowy-owl senior master who argued that non-intervention was cowardice.
 - **Pilgrim:** [[crissdalynn-khinriss]] belongs among the younger members who were not told that the schism occurred.
-- **Apprentices and record-keepers:** Apprentices train on cantilevered terraces open on three sides. Record-keepers maintain the Maw ledgers under the order's doctrine.
+- **Apprentices and record-keepers.** Apprentices train on cantilevered terraces open on three sides. Record-keepers maintain the Maw ledgers under the order's doctrine.
 
 ## Territory & Touchpoints
 
@@ -131,4 +131,4 @@ relationships:
 | **When helped** | The watch continues, and the Sentinels may permit a careful approach to the ledgers or the High Eyrie. |
 | **When opposed** | The Sentinels close access, preserve the records, and refuse to act on interpretation. |
 | **When ignored** | They continue recording while heat pulses, weather, water, and vessel positions change around the Maw. |
-| **When broken** | Losing High Eyrie threatens the watch and ledger continuity. The current sources do not establish what happens to the seal or founding documents afterward. |
+| **When broken** | Losing High Eyrie threatens the watch and ledger continuity, but the current sources do not establish what happens to the seal or founding documents afterward. |

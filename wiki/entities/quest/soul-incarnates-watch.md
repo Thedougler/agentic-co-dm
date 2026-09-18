@@ -25,7 +25,7 @@ visibility: dm
 ---
 # Soul Incarnate's Watch
 
-[[soul-incarnates-watch]] is dormant until [[crissdalynn-khinriss]] completes the Maw pilgrimage. Founding documents under [[high-eyrie]] concern Soul Incarnate; current leadership does not know they describe a conscious being.
+[[soul-incarnates-watch]] is dormant until [[crissdalynn-khinriss]] completes the Maw pilgrimage. Founding documents under [[high-eyrie]] concern Soul Incarnate, but current leadership does not know they describe a conscious being.
 
 ## Connections
 

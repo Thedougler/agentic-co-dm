@@ -29,7 +29,7 @@ lifecycle: canon
 lifecycle_changed: "2026-09-12"
 tier: core
 created: 2026-09-12T04:56:01Z
-updated: 2026-09-13T19:35:00Z
+updated: 2026-09-18
 type: recap
 reveal: revealed
 relationships:
@@ -87,7 +87,7 @@ The Aruhe thread is the Calveno raid rescue: survivors remain inland, the ship s
 
 [[bring-the-pearl-of-souls-to-umberlee]] remains open. So do [[pursue-the-grung-raiding-fleet]], [[simones-hunters]], and [[grigori-and-the-crown-hunt]].
 
-[[Osset]] is [[talon-vantyrus]]'s alias. Vantyrus wants the Fate Spinner; [[Countless]] and the Sentinel schism remain live through [[long-sight-hunt]], [[rule-of-two]], and [[countless-through-the-maw-seal]].
+[[Osset]] is [[talon-vantyrus|Talon Vantyrus]]'s original name. He now uses Vantyrus as his alias while leading [[Countless]]. Vantyrus wants the Fate Spinner, and the Sentinel schism remains live through [[long-sight-hunt]], [[rule-of-two]], and [[countless-through-the-maw-seal]].
 
 [[nona-black-jaw]]'s unspecified favor, the unread Otar scrap, the unscratched chair, [[red-wake]], and the Karath captive pipeline remain unresolved.
 

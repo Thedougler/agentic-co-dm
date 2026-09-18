@@ -25,7 +25,7 @@ summary: ""
 <!-- Add faction art when available. -->
 
 > [!narration] Public face
-> Write what an informed person in the setting can observe or reasonably know about this faction: symbols, reputation, customs, territory, visible activities, and public purpose. No secret motives, hidden leaders, or unrevealed plans.
+> Write a high-quality cold portrait of the faction's public face: symbols, reputation, customs, territory, visible activities, and public purpose. No secret motives, hidden leaders, or unrevealed plans.
 
 ````col
 ```col-md
@@ -67,10 +67,10 @@ flexGrow=1
 * **Recent change.** The newest fact that altered this faction's situation.
 * **Pressure.** Why the faction must act now rather than remain comfortable.
 * **Strength.** The capability that lets it shape events.
-* **Vulnerability.** The dependency, fracture, exposure, or constraint that can genuinely impede it.
+* **Vulnerability.** The dependency, fracture, exposure, or constraint that can actually impede it.
 * **Opportunity.** What the current situation makes possible for someone willing to act.
 
-**Internal fracture:** Name the disagreement, rival interest, succession problem, divided loyalty, or incompatible method that prevents the faction from behaving like a single mind. Omit when none matters in play.
+**Internal fracture.** Describe the internal conflict that prevents the faction from behaving as one mind. Include a rival interest or divided loyalty when relevant. Omit when none matters in play.
 
 ---
 
@@ -78,27 +78,27 @@ flexGrow=1
 
 <!-- Keep one primary agenda whenever possible. Use a second only when independent projects genuinely matter. -->
 
-**Goal:** A concrete change this faction is trying to make in the world.
+**Goal.** Describe the concrete change this faction is trying to make in the world.
 
-**Why:** Why this result matters to them now.
+**Why.** Explain why this result matters to them now.
 
-**Next move:** The specific thing they are preparing or attempting next.
+**Planned action.** Describe the specific thing they are preparing or attempting next.
 
-**Needs:** What person, place, object, permission, resource, or event enables the move.
+**Needs.** List the person, place, object, permission, resource, or event that enables the move.
 
-**Opposition:** Who or what currently stands in the way.
+**Opposition.** Identify who or what currently blocks the move.
 
-**Next signal:** What the party can see, hear, suffer, discover, or hear rumored as this agenda advances.
+**Next signal.** Describe what the party can see, hear, suffer, discover, or hear rumored as this agenda advances.
 
-**Player opening:** What remains possible for the party to influence, protect, expose, steal, negotiate, sabotage, support, or refuse.
+**Player opening.** State what remains possible for the party to influence, protect, expose, steal, negotiate, sabotage, support, or refuse.
 
-**If completed:** State the concrete new world state if the agenda succeeds. Change ownership, access, safety, law, alliances, resources, leadership, territory, or another fact the campaign can actually feel.
+**If completed.** State the concrete new world state if the agenda succeeds. Change ownership, access, safety, law, alliances, resources, leadership, territory, or another fact the campaign can actually feel.
 
 ### Milestones
 
 <!-- Replace abstract segments with concrete milestones when knowing the intermediate actions will help you improvise. Leave blanks when discovery during play is better. -->
 
-* [ ] First meaningful change.
+* [ ] First important change.
 * [ ] Escalation or acquisition.
 * [ ] Opposition is displaced, compromised, or forced to react.
 * [ ] The faction commits resources it cannot easily recover.
@@ -109,9 +109,9 @@ flexGrow=1
 
 <!-- Omit unless the faction can genuinely sustain an independent second project. -->
 
-**Goal:**
-**Next move:**
-**Next signal:**
+**Goal.**
+**Planned action and visible signal.** State the next action and what the party can observe.
+**If completed.**
 **If completed:**
 
 ---
@@ -144,7 +144,7 @@ flexGrow=1
 
 **Who actually carries them out:** [[npc]], [[group]], or [[creature]]
 
-**If leadership disappears:** Who takes control, which blocs split away, or what stops functioning.
+**If leadership disappears.** State who takes control. Note which blocs split away and what stops functioning.
 
 ---
 
@@ -171,9 +171,9 @@ flexGrow=1
 
 ### Party
 
-**Standing:** Allied / Friendly / Neutral / Distrusted / Hostile / Unknown
+**Standing.** Allied / Friendly / Neutral / Distrusted / Hostile / Unknown
 
-**Why:** The choices, promises, injuries, debts, or misunderstandings that created the current standing.
+**Why.** Explain the choices, promises, injuries, debts, or misunderstandings that created the current standing.
 
 **They currently want from the party:**
 
@@ -188,7 +188,7 @@ flexGrow=1
 <!-- Important off-screen motion must eventually reach play. Signals can inform without becoming mandatory quests. -->
 
 * **Visible sign.** A physical or social change caused by the faction.
-* **Rumor.** What people are saying; it may be incomplete or distorted.
+* **Rumor.** What people are saying. It may be incomplete or distorted.
 * **Direct signal.** A messenger, demand, invitation, threat, reward, disappearance, checkpoint, shortage, proclamation, or attack.
 * **Quiet clue.** Evidence available to characters who investigate.
 
@@ -201,7 +201,7 @@ flexGrow=1
 | **When encountered** | What members are doing right now in pursuit of a recognizable interest. |
 | **When helped** | What becomes easier, what they offer in return, and what obligation follows. |
 | **When opposed** | What resource they protect first and whether they retaliate, negotiate, retreat, conceal, or redirect. |
-| **When ignored** | How the faction advances within its capabilities and how the resulting change reaches play. |
+| **When ignored** | How the faction advances within its capabilities and how the resulting change affects play. |
 | **When broken** | What survives if the faction loses its leader, base, key asset, legitimacy, or primary goal. |
 
 ---
@@ -213,12 +213,12 @@ flexGrow=1
 ### Current Turn
 <!-- Omit Current Turn with the parent section when the faction is dormant, dissolved, or has no independent effect on current play. -->
 
-* **Want:** The specific result they want before the next meaningful campaign interval.
-* **Move:** What they attempt with the resources currently available.
-* **Mark:** What fact changes if the move proceeds.
-* **Signal:** How that change can reach the party.
-* **Collision:** Which other faction, person, place, resource, or deadline this move intersects.
-* **Player opening:** What remains unresolved and actionable.
+* **Want.** The specific result they want before the next important campaign interval.
+* **Move.** What they attempt with the resources currently available.
+* **Mark.** What fact changes if the move proceeds.
+* **Signal.** How that change can affect the party.
+* **Collision.** Which other faction, person, place, resource, or deadline this move intersects.
+* **Player opening.** What remains unresolved and usable.
 
 ### Turn Log
 
@@ -242,9 +242,9 @@ flexGrow=1
 
 ## Hidden Agenda
 
-**Concealed motive:** A fact that meaningfully changes how the faction's behavior can be understood or exploited. Record who knows it and what evidence can reveal it.
+**Concealed motive.** A fact that changes how the faction's behavior can be understood or exploited. Record who knows it and what evidence can reveal it.
 
-**Concealed allegiance:** The patron, infiltrator, dependency, conspiracy, betrayal, or hidden relationship behind an otherwise visible front.
+**Concealed allegiance.** The patron, infiltrator, dependency, conspiracy, betrayal, or hidden relationship behind an otherwise visible front.
 
 <!-- Omit when unused. -->
 

@@ -28,7 +28,7 @@ Player interests, combat patterns, review queues, or other observations about ho
 
 ## Grounding
 
-Name the sessions or wiki pages this analysis rests on.
+List the sessions or wiki pages that ground this analysis.
 
 ## Decision
 

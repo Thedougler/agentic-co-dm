@@ -1,16 +1,18 @@
 ---
 title: Talon Vantyrus
 aliases:
-  - Talon Vantyrus
+  - Osset
 category: entities
 tags: [shattered-sea, npc]
 sources:
   - "Talon Skarn"
   - "campaign-os:talon-vantyrus.md"
-summary: Countless master [[talon-skarn]] is trying to kill under the Rule of Two.
+  - "campaign-os:osset.md"
+summary: "Countless master and former Sentinel who now uses Talon Vantyrus as an alias; his original name is Osset, and his apprentice [[talon-skarn]] is trying to kill him under the Rule of Two."
+base_confidence: 0.50
 lifecycle: canon
 created: 2026-09-12T06:23:47Z
-updated: 2026-09-13
+updated: 2026-09-18
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -23,6 +25,8 @@ visibility: dm
 # Talon Vantyrus
 
 **Wants:** [[soul-incarnate|the Soul Incarnate]]'s transformation technique, and the crack he means to use is [[crissdalynn-khinriss]]'s own unexplained gift.
+
+**Identity.** Osset is his original name. He now goes by Talon Vantyrus as leader of [[Countless|the Countless]].
 
 > [!narration] Narration
 > Feathers the color of old snow cover him shoulder to talon, bled past white by age and altitude both. Cold air off the heights clings to him, carrying a faint tang of frost. He watches without blinking. When he finally moves, it costs him nothing, one wing folding tighter to his back, the only warning a lesser argument gets before he ends it.
@@ -101,19 +105,19 @@ legendary_actions:
     desc: "Vantyrus steps through a lattice of frost and reappears up to 30 feet away in an unoccupied space he can see. Each creature within 10 feet of the space he left must succeed on a DC 19 Strength saving throw or take 9 (2d8) cold damage and have its speed reduced to 0 until the end of its next turn."
 ```
 
-CR 14. The build is Master Kyzil's own Kensei technique reskinned colder and more controlled, the same lineage Vantyrus taught Kyzil before their break.
+CR 14. The build adapts Master Kyzil's Kensei technique into a colder, more controlled form. Vantyrus and Kyzil share that lineage from before their break.
 
 ## Connections
 
-- [[master-kyzil]]: his own student at [[high-eyrie]], taught Kensei technique alongside a generation of other Sentinels, his most gifted by far. Vantyrus broke from the order over a doctrine that only ever recorded deaths it never prevented and asked Kyzil to break with him; Kyzil refused. Neither has stopped believing he was right. Now the Sentinels' senior master, and Vantyrus's real obstacle.
-- [[talon-skarn]]: his apprentice, bound with him under the Countless's Rule of Two, an open contest for his life that neither has called off.
+- [[master-kyzil]]. Kyzil was Vantyrus's student at [[high-eyrie]]. He learned Kensei technique while serving with other Sentinels and became Vantyrus's most gifted student. Vantyrus broke from the order because he believed its doctrine recorded deaths without preventing them. He asked Kyzil to leave with him. Kyzil refused. Neither has stopped believing he was right.
+- [[talon-skarn]]. His apprentice follows the Countless's Rule of Two. Their contest for Vantyrus's life remains open, and neither has called it off.
 - [[crissdalynn-khinriss]]: unaware target. The gift Kyzil never fully explained to her is the one crack in the Sentinels' seal, and his whole plan runs through it.
 - [[sentinels-of-the-eyrie]]: the order he broke from over that old rift with Kyzil. He works against it now.
 - [[The Countless]]: the order he leads now, built on the Sentinels' own reach with none of its restraint.
 
 ## Goals & Fronts
 
-Composed and unhurried, every word weighed before it's spent, he reads like a tenure-committee chair delivering a verdict, crossed with a heretic running his own splinter monastery, and he never raises his voice or repeats a demand twice. The second time, he has already decided the answer. A plea that stops harm now can move him, though an appeal to patience or to doctrine over action only closes the topic. His worldview reads as certainty, colder than Kyzil's own warmth, never anger. He fears one thing: that Skarn is right to come for him, since surviving your own student is the only proof of worth [[the Countless]] recognizes. The verdict lands the day he can't.
+Composed and unhurried, every word weighed before it is spent, he reads like a tenure-committee chair delivering a verdict crossed with a heretic running his own splinter monastery. He never raises his voice or repeats a demand twice. The second time, he has already decided the answer. A plea that stops harm now can move him, though an appeal to patience or doctrine over action closes the topic. His worldview is certain and colder than Kyzil's warmth, never angry. He fears one thing. Skarn may be right to come for him. Surviving his own student is the only proof of rank that [[the Countless]] recognizes. The verdict arrives when he cannot avoid the contest.
 
 ### Front: The Rule of Two
 
@@ -121,20 +125,20 @@ Composed and unhurried, every word weighed before it's spent, he reads like a te
 
 **Aim:** stay ahead of [[talon-skarn]]'s open contest to kill him long enough to pry [[soul-incarnate|the Soul Incarnate]]'s transformation technique loose from the order that raised him, whatever it costs the people still inside it.
 
-**Approach:** teaches Skarn everything and treats the lesson itself as a live weapon aimed back at him, never announcing the test. Every other task runs through hired blades and paid contacts, disposable hands who learn one job each and never who gave the order.
+**Approach.** He gives Skarn access to every technique and treats each lesson as a live weapon aimed back at him. He never announces the test. Every other task runs through hired blades and paid contacts, disposable hands who learn one job each and never who gave the order.
 
 **Off-screen move if unopposed:** keeps testing Skarn's reach while advancing the Countless's hunt for that gift. See the Countless's own front, The Long Sight Hunt, for the shared operation.
 
 **Trigger conditions:**
 
-- Skarn's own move against him becomes the more pressing threat than any single fight.
+- Skarn's own move against him becomes the more pressing threat than one fight.
 - Kyzil realizing what Crissdalynn is holding closes the one crack Vantyrus is counting on.
 
 **Clock:** 4 segments (fast-moving once Skarn commits). Filled: 0
 
-**Consequence at fill:** the contest resolves. Vantyrus falls to his own apprentice, or breaks him decisively enough to leave the Rule of Two unchallenged for a generation.
+**Consequence at fill.** The contest resolves. Vantyrus falls to his own apprentice, or he breaks Skarn decisively and preserves the Rule of Two for a generation.
 
-**Possible outcomes (2-3):** Skarn strikes and loses, proving Vantyrus's doctrine again. Skarn strikes and wins, and the Countless answers to a new master. Or the fight turns against Vantyrus directly and, reduced below half HP, he escapes through Frostwake Retreat, leaving a hired hand or Skarn to cover the gap while the contest continues another day.
+**Possible outcomes (2-3).** Skarn strikes and loses, proving Vantyrus's doctrine again. Skarn strikes and wins. The Countless gains a new master. Or the fight turns against Vantyrus directly. Reduced below half HP, he escapes through Frostwake Retreat and leaves a hired hand or Skarn to cover the gap while the contest continues another day.
 
 **PC connection:** runs through [[crissdalynn-khinriss]] directly. Vantyrus's whole plan is to read what she's carrying about [[the Soul Incarnate]]'s technique before Kyzil or the order ever realize what she's holding.
 

@@ -79,14 +79,21 @@ Cut wasted context without waiting. A change MUST NOT count as an improvement if
 
 **Context waste:** max tokens on content + reasoning, not plumbing. Prefer `hot.md`, `scripts/manifest.py`, and Retrieval Primitives over whole `index.md` / `log.md` / `.manifest.json`. **Highest priority:** reconcile conflicting/redundant skill+AGENTS instructions only when surviving text keeps (or improves) agent output quality; do not thin narrative, mechanics, or craft that raises outputs. Byte-count is not a success metric. Method: `docs/agents/context-waste-method.md` (issue #71). Run `python3 scripts/context-waste-scan.py` for path+metric leads (size flags are investigation leads, not delete mandates). No prose-quality scoring.
 
-#
 ## Staged wiki writes
 
 When `WIKI_STAGED_WRITES=true` (default for this vault), agents MUST land new/updated category pages under `wiki/_staging/<category>/` (patches as `*.patch.md`) — not directly into the live tree. Promote only via `wiki-stage-commit` after Nick reviews. `_raw/` remains the ingest inbox; `_archive/` holds promoted sources; `_staging/` is the LLM review queue. See `.agents/skills/wiki-stage-commit/SKILL.md` and `wiki/_staging/README.md`.
 
+At session start, inspect `_staging/` and integrate every page already there before beginning new wiki work. A staging page MUST NOT carry into a later session merely because the previous session ended; surface any genuine blocker with its owner and next action.
+
+Every file entering `wiki/` through `_staging/`, `_raw/`, or any other path MUST pass the current wiki linter before it is considered complete. A non-clean report means the file remains incomplete.
+
 ## Edit discipline
 
 Re-read the target file before a multi-hunk edit. Stale line numbers produce overlapping hunks that the edit tool rejects wholesale. When replacing a large section, use one replacement covering the full range rather than multiple adjacent hunks that share boundary lines. Deletions are standalone operations — do not prefix deletion directives with replacement-body syntax.
+
+**Manual merges only.** When merging wiki pages (dedup, digest, consolidation), agents MUST read both files and edit the canonical page by hand — no scripts, no automated merge tools, no batch text-processing commands. The agent reads, decides what to keep, and writes the result through the Edit/Write tools.
+
+**Inline extraction over shell one-liners.** When extracting or transforming tool output (lint JSON, manifest records, search results), use Python with `json.loads` in a script file or a clean `python3 -c` invocation. Nested shell-in-Python-in-shell quoting (backticks inside `$()` inside single quotes) breaks silently or raises parse errors. Write a short script to the scratchpad directory when the extraction has more than one step.
 
 ## Helpers
 
@@ -120,7 +127,7 @@ Reader is `agent` | `DM` | `players`. Unknown reader → `DM`. Vault is `true` i
 | Classifier | Authority |
 |---|---|
 | An agent will follow the text | writing-for-agents |
-| The DM will read the text | copy-writer |
+| The DM will read the text | writing-for-humans |
 | Players will hear or see the text | theatre of the mind |
 | Destination is a wiki vault note | obsidian-markdown |
 | Working with visual references for a depiction | visual-references |
@@ -197,6 +204,33 @@ QMD document path from an Obsidian filename; the search result is the identifier
 paths — not `qmd://` URIs, not percent-encoded strings. If `multi-get` rejects
 an identifier, fall back to serial `qmd get`.
 
+**`qmd get` line-range syntax:** the range goes on the path, not `--format`.
+
+```bash
+# CORRECT — line range on the path argument
+qmd get "qmd://entities/faction/the-passage.md:1:20" --format md
+
+# WRONG — line range in --format (CLI rejects md:1:20)
+qmd get "qmd://entities/faction/the-passage.md" --format md:1:20
+```
+
+**`multi-get` accepts `#docid` values or path globs, not search-result URIs:**
+
+```bash
+# CORRECT — comma-separated #docid values from search results
+qmd multi-get "#abc123,#def456" --format md
+
+# CORRECT — brace-expanded paths
+qmd multi-get 'entities/faction/{the-passage.md,antheri.md}' --format md
+
+# WRONG — qmd:// URIs (rejected with "File not found")
+qmd multi-get "qmd://entities/faction/the-passage.md,qmd://entities/faction/antheri.md"
+```
+
+When `multi-get` rejects an identifier, do not retry with a different format — fall back to serial `qmd get` immediately.
+
+**`qmd skill show` may time out** (~30s). If it does, skip it and use `qmd query` / `qmd get` directly — the bootstrap skill in `.agents/skills/qmd/SKILL.md` is sufficient.
+
 Order (`specs/004-qmd-search-default/contracts/retrieval-precedence.md`): `-c wiki` first; if silence `-c shattered-sea`; if silence `-c legacy-ss`; if still silence, say the wiki is silent.
 
 Wiki hit = current canon. Legacy hit = campaign-of-record context; wiki write only after DM accept. Wiki vs legacy disagreement → cite wiki.
@@ -261,8 +295,8 @@ Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the 
 | "what do I know about X" / "find info on Y" / any question | `wiki-query` |
 | "use my vault as context" / "context pack for X" / "bounded context" | `wiki-context-pack` |
 | "narrate" / "briefing" / "explain this topic" | `wiki-narrate` |
-| "lint" / "lint <page>" / "fix broken links" / "audit" / "wiki health" | `wiki-lint` (default is repair; --check for report-only) |
-| "dedup my wiki" / "find duplicate pages" / "merge duplicates" | `wiki-dedup` |
+| "lint" / "lint <page>" / "fix broken links" / "audit" / "wiki health" / "dedup" / "find duplicates" | `wiki-lint` (default is repair; --check for report-only; dedup resolved to one canonical authority per fact) |
+| "dedup my wiki" / "merge duplicates" / "identity resolution" | `wiki-dedup` (standalone deep identity-resolution scan; wiki-lint Check 14 handles dedup in normal lint flow) |
 | "rebuild" / "start over" / "archive" / "restore" | `wiki-rebuild` |
 | "link my pages" / "cross-reference" / "connect my wiki" | `cross-linker` |
 | "fix my tags" / "normalize tags" / "tag audit" | `tag-taxonomy` |
@@ -302,8 +336,8 @@ Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the 
 | User says something like… | Skill |
 |---|---|
 | "design a dungeon" / "dungeon layout" / "map this dungeon" | `dungeon-design` |
-| "homebrew monster" / "build a creature" / "stat block" | `homebrew-monsters-5e` |
-| "design a magic item" / "homebrew item" | `dnd-5e-magic-item-design` |
+| "homebrew monster" / "build a creature" / "stat block" | `homebrew-monsters-5e` + mandatory `dnd5e-mechanics` pass |
+| "design a magic item" / "homebrew item" | `dnd-5e-magic-item-design` + mandatory `dnd5e-mechanics` pass |
 | "design an NPC" / "build an NPC" / "NPC stat block" | `npc-design` |
 | "design a trap" / "trial" / "puzzle" / "hazard" | `traps-trials` |
 | "travel event" / "random encounter" / "journey event" | `travel-events` |
@@ -317,7 +351,7 @@ Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the 
 | User says something like… | Skill |
 |---|---|
 | "theatre of the mind" / "narrate this scene" / TotM description | `theatre-of-the-mind` |
-| "polish this prose" / "rewrite for the DM" / DM-facing copy | `copy-writer` |
+| "polish this prose" / "rewrite for the DM" / DM-facing copy | `writing-for-humans` |
 | visual reference for a depiction | `visual-references` |
 | produce / attach / place a visual aid | `visual-aids` |
 | "Foundry battlemap" / "build a map in Foundry" | `foundry-battlemap` |
@@ -426,16 +460,11 @@ Orchestrator procedure: `docs/agents/harness-dispatch.md`.
 
 ## Workflow
 
-Spec Kit artifacts are the handoff protocol. Harness files must not copy feature requirements.
-
-- **Read, don't re-specify.** When a feature already has `specs/<feature>/{spec,plan,tasks}.md`, consume those artifacts. Do not reconstruct the feature from the original prompt.
-- **Spec-first changes.** When intended behavior must change, update the specification first, then reconcile plan and tasks, then implement. Do not silently redefine requirements in `tasks.md` or code.
-- **One writer per artifact.** At any moment each canonical artifact (spec, plan, tasks, writable workspace) has at most one writer. Others may inspect, review, test, or propose.
-- **Separate workspaces for parallel work.** Multiple write-capable harnesses must not share one writable workspace.
-- **Handoff is repository state.** Changing harness passes paths, commits, artifacts, expected phase, and only constraints absent from the repo — not pasted copies of canonical documents.
+Spec Kit artifacts are the handoff protocol. When `specs/<feature>/{spec,plan,tasks}.md` exist, consume them — do not reconstruct. Behavior changes update the spec first, then plan/tasks, then code. One writer per artifact at a time. Changing harness passes repo state (paths, commits, phase), not pasted copies.
 
 ## Validation
 
+- **Python runtime:** use `.venv/bin/python` for pytest and repository tooling — system `python3` may lack project dependencies. `python3 scripts/*.py` works because those scripts import only stdlib and local modules; test runs and library imports require the venv.
 - **Spec Kit availability:** Invoke `specify --version` before deciding the CLI
   is absent. If shell resolution fails, inspect the existing executable at
   `~/.local/bin/specify` and its resolved target; `uv tool list` is not

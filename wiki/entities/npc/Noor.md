@@ -37,13 +37,13 @@ tier: supporting
 
 Fifteen, maybe. They hid during the fight. They came out with a sailing manual ready.
 
-They know every sailing manual by heart. They have sailed on almost none of them. They want to close the gap between what the manuals teach and real sailing. Any new ship is a better classroom than [[calders-tooth-and-port-tidefall]].
+They know every sailing manual by heart. They have sailed on almost none of them. They want practical sailing to match the manuals. Any new ship is a better classroom than [[calders-tooth-and-port-tidefall]].
 
 [[shepherd-grigori]] calls them useful in the galley. They learned by watching. That's how they learn.
 
 **Aboard ship**, they're easy to direct and quick to ask questions. They handle the galley and ship's provisions well. They help with any other work and always check the manual for new problems. When the manual has no answer, they see the gap as proof the book needs updating.
 
-**Recruitment.** They haven't decided where to go yet, but they want a ship headed somewhere interesting. Name a new destination and they'll check the manual; if it's not in the book, they nod yes and ask nothing else. Noor won't leave unless sent back to Port Tidefall forever, but any journey forward keeps them happy, since they're fifteen and want to see new places.
+**Recruitment.** They haven't decided where to go yet, but they want a ship headed somewhere interesting. Give them a new destination and they'll check the manual. If it is not in the book, they nod yes and ask nothing else. Noor won't leave unless sent back to Port Tidefall forever, but they welcome any journey forward, since they're fifteen and want to see new places.
 
 ## Stats & Combat
 
@@ -59,4 +59,4 @@ No stats given in source.
 
 Noor hasn't appeared in play yet beyond the crew assembly. This page got its canon status from the session record, not from the original source notes.
 
-`vault/episodes/002/transcript.raw.md:63` lists them among the crew assembled aboard ship with [[geoffrey-draves]], [[sem-holst]] the shipwright, [[alys-kuiper]] the surgeon, [[old-faas]] for the rigging, and [[Thunk]]. They are a new NPC, youngest of the group, on thin single-mention evidence.
+`vault/episodes/002/transcript.raw.md:63` lists them among the crew assembled aboard ship with [[geoffrey-draves]], [[sem-holst]] the shipwright, [[alys-kuiper]] the surgeon, [[old-faas]] for the rigging, and [[Thunk]]. They are a new NPC, the youngest of the group. The canon rests on a thin mention.

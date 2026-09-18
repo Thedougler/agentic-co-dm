@@ -20,7 +20,7 @@ summary: ""
 # {{title}}
 
 > [!narration] Narration
-> Write the spoken look in complete sentences. No secrets, DCs, or unearned names.
+> Write a high-quality cold portrait in flowing prose for as long as the creature requires. Cover silhouette, scale, body parts or material, and at least one stable sensory behavior. No secrets, DCs, or unearned names.
 
 ## Statblock
 <!-- Add a creature reference image when available. -->

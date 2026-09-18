@@ -9,7 +9,7 @@ modelRoles:
   smol: opencode-go/gpt-5.6-luna:xhigh
   advisor: opencode-go/grok-4.6:medium
   slow: github-copilot/gpt-6-astra:medium
-  copy-writer: null
+  writing-for-humans: null
 task:
   batch: true
   maxConcurrency: 4

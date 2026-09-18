@@ -14,7 +14,7 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "Deceased Minotaur druid captain of the Fernen who could not rest without understanding mysteries; her methodical soul manifests through Delmar Fisk."
+summary: "Deceased Minotaur druid captain of the Fernen. Her methodical soul manifests through Delmar Fisk."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -26,7 +26,7 @@ tier: supporting
 
 ![[sienne-orre-banner.webp]]
 
-A [[Minotaur]] druid and captain of the *[[Fernen]]*. She led [[fisks-fleet]]'s fourth vessel. She died; her soul lives in [[delmar-fisk]].
+A [[Minotaur]] druid and captain of the *[[Fernen]]*. She led [[fisks-fleet]]'s fourth vessel. She died, and her soul is inside [[delmar-fisk]].
 
 Sienne could wild shape into aquatic forms. She co-led an underwater scout team with [[Maren]]. They mapped the reef during the perimeter survey of [[Umberlee]]'s shrine island. She was outside the cave when the fleet sank. Her soul pressed into Delmar at that moment, along with four other captains.
 
@@ -41,12 +41,11 @@ Sienne could wild shape into aquatic forms. She co-led an underwater scout team 
 
 She went to sea because it held mysteries. She couldn't rest without understanding how things worked.
 
-**[[She Manifests as Mortis]]:** Sienne surfaces when magic targets Delmar directly; when she does, investigation replaces action. She manifests in two ways. Forced triggers: when a 2nd-level+ spell targets Delmar, or if he fails an Int save. Environmental triggers: green mermaid signs, figureheads, or carvings that stir memory and curiosity. When active, she is methodical and careful. She gathers information before acting. She's like Velma: methodical and professorial, yet always missing the answer. She manifests arcana and investigation.
+**When Mortis controls Sienne.** Sienne takes control when magic targets Delmar directly. Investigation replaces action. Forced triggers include a 2nd-level or higher spell targeting Delmar or a failed Intelligence save. Environmental triggers include Green Mermaid signs, figureheads, or carvings that stir memory and curiosity. When active, she is methodical and careful. She gathers information before acting. She is methodical and professorial, yet always missing the answer. She manifests Arcana and Investigation.
 
-> [!mechanic]
-> **Tradition:** Primal.
-> **[[Detect Magic]]:** Primal — no reading; the transformation leaves no arcane or divine trace a spell-sensitive instrument can find.
-> **[[Counterspell]]:** no — druid Wild Shape is a nature-granted ability, not a spell.
+**Tradition.** Primal.
+**Detect Magic.** [[magic-in-the-shattered-sea|The spell]] returns no reading. The transformation leaves no arcane or divine trace that a spell-sensitive instrument can find.
+**Counterspell.** [[magic-in-the-shattered-sea|The spell]] cannot affect druid Wild Shape because the ability comes from nature rather than spellcasting.
 
 ## Stats & Combat
 

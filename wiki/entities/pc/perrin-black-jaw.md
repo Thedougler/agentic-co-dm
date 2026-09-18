@@ -47,7 +47,7 @@ foundry_id: J9CeWsMCOahlafjx
 
 ## Connections
 
-- [[nona-black-jaw]] — Grandmother, sending-stone contact, owed [[survey-aruhe-as-a-tangle-anchor]].
+- [[nona-black-jaw]] — Grandmother, sending-stone contact, owed a survey of Aruhe as a tangle anchor.
 - [[rattkin-runs-and-black-jaw-run]] · [[Passage]] — Family and rescue network.
 - [[Vestra]] — Unshared chase; family heirloom ship lost deep below.
 - [[Uncertainty]] — Aboard at [[aruhe]].

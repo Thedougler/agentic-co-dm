@@ -73,6 +73,7 @@ Aruhe
 Aruhe - Beach
 Aruhe - Bear-Elk
 Aruhe - Black Lotus
+Aruhe - Bloodhawk
 Aruhe - Clear Lake
 Aruhe - Crown Squid
 Aruhe - Grasslands
@@ -742,7 +743,6 @@ Goggles
 Gold
 Gold Caste Serene
 Gold-Caste
-gold-caste-serene
 Gorgeous
 Gost
 Governor

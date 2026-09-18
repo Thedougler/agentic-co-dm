@@ -61,7 +61,7 @@ Read while recording: [[voice-profile script]]
 
 **Quote:**
 
-*Cobb*: Everything Nona's account touches looks the same: done right, or not at all.
+*Cobb said,* "Everything Nona's account touches looks the same: done right, or not at all."
 
 > [!narration] Narration
 > Young Rattkin, late teens, with grey-brown fur blackening to the wrist from pitch and paint across both paws, caulking-hardened calluses mapping a week of labor on his palms. Dockworker's coat hangs soft at the shoulders, a rag draped over one shoulder. Turpentine and hot pitch hang heavy in the air. A kettle steams behind the cradle. He waits halfway down the cradle ladder, gripping a rung in his free hand since the tide turned.
@@ -70,7 +70,7 @@ Read while recording: [[voice-profile script]]
 
 **Opening move:** halfway down the cradle ladder with his hands blackened, a rag over his shoulder · Cobb speaks first ·
 
-*Cobb*: You wanted to see what a week bought?
+*Cobb said,* "You wanted to see what a week bought?"
 
 **Lore Sheet:** runs the Basin dock operations for **Nona Black-Jaw** under the Warren's account. Childhood contact of **Perrin** predating the campaign and bridge between crew and family. Won't hide Perrin from the family, won't volunteer beyond what he's directly told.
 
@@ -79,7 +79,7 @@ Read while recording: [[voice-profile script]]
 | Field | Value |
 |---|---|
 | Primary goal | Hand off the ship with the paint properly hardened in three days. Nothing the crew offers will rush it. |
-| Consistent method | Shows the work step-by-step, answers questions straight, won't rush the paint-hardening no matter what's offered. |
+| Consistent method | Shows the work step-by-step, responds directly, and won't rush the paint-hardening no matter what's offered. |
 | Active problem | The paint is still tacky and won't be ready for three days. The crew has just arrived wanting to set sail immediately. |
 | Performance hooks | Young Black-Jaw runner vibe. Wraps the rag tighter around his shoulder when uncertain, then forces focus back to the work. |
 | Link of relevance | [[perrin-black-jaw|Perrin]]'s childhood contact. The crew's trust in the refit depends on Cobb's pride in his work. |
@@ -88,9 +88,9 @@ Read while recording: [[voice-profile script]]
 
 *Cobb*: *(quick, proud)* Three weeks of it. You can put a thumb to the strake and it still gives.
 
-*Cobb*: The stone's live. She'd not have sent it if it wasn't.
+*Cobb said,* "The stone's live. She'd not have sent it if it wasn't."
 
-*Cobb*: Come up to the Warren when you're done here. She'd want to know you came.
+*Cobb said,* "Come up to the Warren when you're done here. She'd want to know you came."
 
 ## Stats & Combat
 
@@ -103,11 +103,11 @@ No combat stats in source.
 - [[nona-black-jaw]], reports to her as a runner; carries
   her messages to Perrin.
 - [[Nona's sending stone]], references it directly: "not decorative."
-- [[the-passage]], affiliated; La Vasca is Black-Jaw colors.
+- [[the-passage]], affiliated. La Vasca is Black-Jaw colors.
 
 ## Session Log
 
-- **Session 08** (`vault/episodes/008/`): per [[nona-black-jaw|Nona]]'s report, had the *[[Uncertainty]]* drying at [[La Vasca]] and ready in 12 hours; wanted to add more guns first, but Nona told him to stop his own side projects and finish it. Confirmed: [[Transcript]].
+- **Session 08** (`vault/episodes/008/`): [[nona-black-jaw|Nona]] reported that Cobb had the *[[Uncertainty]]* drying at [[La Vasca]] and ready in 12 hours. He wanted to add more guns first, but Nona told him to stop his own side projects and finish it. Confirmed: [[Transcript]].
 - **Session 06** (`vault/episodes/006/`): gave the crew of the Uncertainty a tour aboard the ship. [[Thunk]]'s captain's-cabin-to-break-room conversion is underway. Cobb mentioned he'd picked up a proper armchair for it "next to nothing." Negotiated a future discount with the crew.
 
 - **Session 03**: first appearance. Greets the crew of the Uncertainty at the water's edge as their ship reaches [[La Vasca]]. `vault/episodes/003/transcript.md:112`.

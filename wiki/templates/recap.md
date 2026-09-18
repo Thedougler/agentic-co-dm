@@ -24,10 +24,10 @@ summary: ""
 <!-- Optional one-line cold open: place / pressure / clock. Complete sentence(s). -->
 
 > [!narration] Recap
-> Write the player-safe session story in complete sentences, past tense, "you" address.
+> Write the player-safe account of the session in complete sentences, past tense, and "you" address.
 > Open from the prior cliff when useful ("Last time on …"). Cover only what play supported.
-> No secrets the table did not earn; no DCs; no agent process notes.
+> Include no secrets the table has not established, DCs, or agent process notes.
 
 ## Wiki facts
 
-Bullet or short prose of canon deltas for the vault: named pages as `[[wikilinks]]`, clocks moved, next handles. Point to [[Story So Far]] or the next recap when useful.
+Record canon deltas in bullets or short prose. Link named pages, note moved clocks, and point to next handles. Point to [[Story So Far]] or the next recap when useful.

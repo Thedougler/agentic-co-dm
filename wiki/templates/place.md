@@ -19,7 +19,7 @@ summary: ""
 <!-- Add identity art when available. -->
 ## Overview
 > [!narration] Narration
-> Write the spoken look of this place in complete sentences. Routes, senses, and what a body can use. No secrets, DCs, or unearned names.
+> Write a high-quality cold portrait in flowing prose for as long as the place requires. Cover body-scale geography, routes, senses, and at least one usable affordance. No secrets, DCs, or unearned names.
 
 ---
 ## At a Glance
@@ -28,12 +28,12 @@ Write what this place is now, which linked places it sits between, and which edg
 ---
 ## If the party
 
-- **Named player verb:** What changes, which page it leads to, and the check only when the outcome is uncertain. Omit default-safe actions.
+- **Named player verb.** Describe the changed situation and linked page. Add a check only when the outcome is uncertain. Omit default-safe actions.
 
 ---
 ## Who
 
-- Who is here, in what numbers, and what they do; or the sign of absence. Wikilink creatures and people. Do not invent occupants.
+- State who is here, in what numbers, and what they do. If nobody is here, record the sign of absence. Wikilink creatures and people. Do not invent occupants.
 
 ---
 ## What
@@ -43,7 +43,7 @@ Write what this place is now, which linked places it sits between, and which edg
 ---
 ## Where
 
-- Linked neighbors and how this place connects. Name a canon gap when a direction is unknown.
+- Linked neighbors and how this place connects. Record an unresolved canon gap when a direction is unknown.
 
 ---
 ## Why

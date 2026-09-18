@@ -96,13 +96,13 @@ If someone asks him to judge a cannon, powder, or explosive, let his correct ins
 
 ## Shipboard use
 
-- **Gunner's cadence:** When Thunk mans a cannon or other ship weapon, count him as two crew for staffing that weapon.
-- **Smith's hand:** With materials and time, Thunk can maintain, repair, or modify metal equipment in the field.
-- **Powder sense:** Give him advantage on checks involving cannon maintenance, powder handling, or explosive materials. He cannot explain the reasoning, but he is correct.
+- **Gunner's cadence.** When Thunk mans a cannon or other ship weapon, count him as two crew for staffing that weapon.
+- **Smith's hand.** With materials and time, Thunk can maintain, repair, or modify metal equipment in the field.
+- **Powder sense.** Thunk has advantage on checks for cannon maintenance and powder handling. The advantage also applies to explosive materials. He cannot explain the reasoning, but he is correct.
 
 ## Current pressure
 
-In [[calven-and-calveno|Calveno]], blackout-drunk Thunk ordered `1,000 gp` of new cannons on *[[Uncertainty]]*'s credit. He signed twice — once upright and once upside down — then vomited on the order.
+In [[calven-and-calveno|Calveno]], blackout-drunk Thunk ordered `1,000 gp` of new cannons on *[[Uncertainty]]*'s credit. He signed twice, once upright and once upside down, then vomited on the order.
 
 The creditor, terms, and purpose remain open. Use the debt as generosity, leverage, or a future bill depending on who comes asking.
 
@@ -110,15 +110,15 @@ The creditor, terms, and purpose remain open. Use the debt as generosity, levera
 
 | Relationship                              | Meaning                                                        |
 | ----------------------------------------- | -------------------------------------------------------------- |
-| [[Uncertainty]]                           | Current ship; Thunk keeps its guns and mobility working.       |
+| [[Uncertainty]]                           | Thunk maintains the current ship's guns and mobility.        |
 | [[Calven and Calveno\|Calveno]]           | Where the `1,000 gp` cannon order created the open debt.       |
-| [[aruhe]]                   | Current danger zone; Thunk helps keep the ship ready to leave. |
+| [[aruhe]]                   | Thunk helps the ship leave the current danger zone.            |
 
 ---
 
 # Combat
 
-CR 1/4 Medium orc. Relentless Endurance, Gunner's Cadence, Smith's Hand, Powder Sense, and warhammer. The fight sheet lives on this NPC page.
+CR 1/4 Medium orc. Relentless Endurance, Gunner's Cadence, Smith's Hand, Powder Sense, and warhammer. The fight sheet is on this NPC page.
 
 ```statblock
 layout: Basic 5e Layout

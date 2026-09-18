@@ -25,7 +25,7 @@ Omit empty sections. Pass is the jobs in wiki/AGENTS.md, not heading-order match
 What problem is already in motion, who is involved, and why it is live now.
 
 > [!narration] Initial Narration
->
+> Write high-quality theatre of the mind. "You" address, visible threat, relative position, and at least one non-sight sense. End on the reaction point.
 
 ## Opening pressure
 
@@ -33,7 +33,7 @@ The visible fuse or first threat the table can act on.
 
 ## Opposition
 
-What the other side wants, how it fights or bargains, and when it breaks or leaves.
+Describe the other side's goal, how it fights or bargains, and when it breaks or leaves.
 
 ## Choice surface
 
@@ -45,7 +45,7 @@ What the opposition or world does if the party never engages.
 
 ## Handoff
 
-Next state and the page or beat that follows.
+The next state and the next page or beat.
 
 <!--
 Design basis: prep a situation with an active problem, not a plotted sequence of

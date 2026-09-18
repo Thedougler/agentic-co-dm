@@ -7,8 +7,8 @@ sources:
   - "house (Monster-Brewer; legacy Fantasy Statblock import; Hinewai/Death Bloom ingest 2026-09-05)"
   - "legacy/campaign-os-v02/vault/stories/arc-blight-of-aruhe.md"
   - "arc-blight-of-aruhe.md"
-  - "wiki/_archive/aruhe-blight-hinewa.md"
-summary: Elf druid lich fused to Aruhe after escaping Karath; her grief became the island's law and her woman-in-the-woods form guards its living systems.
+  - "wiki/_archive/arc-blight-of-aruhe.md"
+summary: Elf druid lich fused to Aruhe after escaping Karath. Her grief became the island's law, and her woman-in-the-woods form guards its living systems.
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -18,7 +18,7 @@ lifecycle: canon
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T06:23:47Z
-updated: 2026-09-16
+updated: 2026-09-18
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -165,11 +165,11 @@ See [[memorial-grove#Destruction timeline]].
 
 If Hinewai's walking body reaches **0 hit points** while the Death Bloom still holds:
 
-1. The walking body is destroyed.
+1. The walking body falls.
 2. Hinewai reforms at the tree in `1d10 days`.
 3. She returns using the combat stage corresponding to the memorial's current condition.
 
-**Body-only victory buys time.** If the Death Bloom is ruined before the walking body is destroyed, destruction of that body becomes permanent.
+**Body-only victory delays the return.** Destroying the Death Bloom before the walking body falls makes that destruction permanent.
 
 ---
 
@@ -186,7 +186,7 @@ Luminous roots run from the shelf above [[clear-lake]] through [[the-marshes]], 
 
 ## Origin
 
-Hinewai was an elf from a small, private island village and an immensely powerful druid — an archdruid whose word could make a hillside listen. She understood land as **kin, not property**. [[Karath]] captured her and forced her to work in its hatcheries, where dosed captive spellcasters enlarge ordinary vermin into giant toads, snakes, and spiders. Almost all autobiographical memory eventually rotted away. What survived:
+Hinewai was an elf from a small, private island village and an immensely powerful druid. She considered the land kin, not property. [[Karath]] captured her and forced her to work in its hatcheries, where dosed captive spellcasters enlarge ordinary vermin into giant toads, snakes, and spiders. Almost all autobiographical memory eventually rotted away. What survived:
 
 * hatred of the Grung;
 * hatred of those who take;
@@ -223,11 +223,11 @@ Hinewai took the old druid bargain past its breaking point. She fused her soul a
 
 # Combat
 
-> **Encounter rule:** Choose Hinewai's statblock from the current condition of the Death Bloom. Damage to the walking body alone never changes stages.
+> **Encounter rule:** choose Hinewai's statblock from the current condition of the Death Bloom. Damage to the walking body alone never changes stages.
 
 ## Death Bloom Whole
 
-**Use when:** The memorial remains substantially intact.
+**Use when:** the memorial remains substantially intact.
 
 ```statblock
 layout: Basic 5e Layout
@@ -288,7 +288,7 @@ legendary_actions:
 
 ## Death Bloom Wounded
 
-**Use when:** The memorial has suffered meaningful damage but still strongly holds Hinewai to the land.
+**Use when:** the memorial has suffered serious damage but still strongly holds Hinewai to the land.
 
 ```statblock
 layout: Basic 5e Layout
@@ -344,7 +344,7 @@ legendary_actions:
 
 ## Death Bloom Near Ruin
 
-**Use when:** The memorial barely holds together and Hinewai is close to permanent death.
+**Use when:** the memorial barely holds together and Hinewai is close to permanent death.
 
 ```statblock
 layout: Basic 5e Layout

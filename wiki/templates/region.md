@@ -44,7 +44,7 @@ Keep persistent geography separate from ephemeral events. Give a detailed site i
 <!-- Add region art when available. -->
 
 > [!narration] Narration
-> Describe the region as a traveler first experiences it: horizon, terrain, weather, movement, sound, and one unmistakable feature. Complete sentences. No secrets, DCs, or unearned names.
+> Write a high-quality cold portrait of the region as a traveler first experiences it. Cover horizon, terrain, weather, movement, sound, and one unmistakable feature. No secrets, DCs, or unearned names.
 
 ## At a Glance
 
@@ -58,11 +58,11 @@ Keep persistent geography separate from ephemeral events. Give a detailed site i
 | **Feared for**    |                                                                |
 | **Parent region** | [[region]]                                                     |
 
-> **DM thesis:** One sentence stating what this region is *for at the table*: the choices, pressures, or kind of adventure it creates.
+> **DM thesis.** State what this region is for at the table. Describe the choices, pressures, or kind of adventure it creates.
 
 ## Current state
 
-**Status quo — as of `{{in-world date}}`:** Describe what is normal here *right now* in 2–4 sentences. This is the state to assume until play or an active power changes it.
+**Status quo.** Record what is normal here as of `{{in-world date}}` in two to four sentences. This is the state to assume until play or an active power changes it.
 
 * **Recent change.** What has broken, arrived, vanished, awakened, or shifted.
 * **Pressure.** What is presently getting worse.
@@ -83,7 +83,7 @@ Keep persistent geography separate from ephemeral events. Give a detailed site i
 
 ### Shape and boundaries
 
-Describe the physical logic of the region: what contains it, divides it, feeds it, or makes its edges recognizable.
+Describe the physical logic of the region. Note its boundaries, internal divisions, and sources of movement.
 
 | Edge | Neighbor   | Crossing / boundary | What changes across it |
 | ---- | ---------- | ------------------- | ---------------------- |
@@ -101,20 +101,20 @@ Describe the physical logic of the region: what contains it, divides it, feeds i
 
 <!-- Visible, navigational, culturally dominant, or otherwise reusable landmarks. Detailed locations belong on their own pages. -->
 
-* **[[place]].** What travelers can use it to recognize, navigate, or decide.
+* **[[place]].** Describe this landmark and its role in travel.
 
 ## Travel
 
 ### Structure
 
-* **Map:** Add a region map when available.
-* **Travel structure:** Hexcrawl / pointcrawl / known routes / abstract
-* **Scale:** One hex, leg, or travel turn represents …
-* **Procedure:** [[travel procedure]]
-* **Navigation:** What makes staying on course easy, difficult, or unnecessary.
-* **Weather / season:** What routinely alters travel.
-* **Rest / supply:** Where travelers can reliably recover or resupply.
-* **Regional rule:** One exceptional rule worth remembering at the table; omit when none exists.
+* **Map.** Add a region map when available.
+* **Travel structure.** Hexcrawl / pointcrawl / known routes / abstract
+* **Scale.** One hex, leg, or travel turn represents …
+* **Procedure.** [[travel procedure]]
+* **Navigation.** State what makes staying on course easy, difficult, or unnecessary.
+* **Weather / season.** State what routinely alters travel.
+* **Rest / supply.** State where travelers can reliably recover or resupply.
+* **Regional rule.** State one unusual rule important at the table. Omit when none exists.
 
 ### Routes and connections
 
@@ -128,7 +128,7 @@ Describe the physical logic of the region: what contains it, divides it, feeds i
 
 <!-- Secret trails, seasonal passes, teleport circles, washed-out bridges, blockades, newly opened roads, and other connections whose discovery changes the map. -->
 
-* **Connection.** [[place]] ↔ [[place]] — condition for discovering or restoring it.
+* **Connection.** [[place]] ↔ [[place]]. State the condition for discovering or restoring it.
 
 ## Key places
 
@@ -160,7 +160,7 @@ Describe the physical logic of the region: what contains it, divides it, feeds i
 
 * **Signals.** What the characters can actually see, hear, discover, or hear rumored.
 
-* [ ] **Portent 1.** First meaningful change.
+* [ ] **Portent 1.** First important change.
 
 * [ ] **Portent 2.** Escalation that alters choices.
 
@@ -209,7 +209,7 @@ Describe the physical logic of the region: what contains it, divides it, feeds i
 
 * **Resource.** What is valuable here and who cares about it.
 * **Shelter.** Where safety can be found and what it costs.
-* **Wonder.** A fantastic feature worth seeking for its own sake.
+* **Wonder.** A fantastic feature characters may seek for its own sake.
 * **Hidden lore.** A discoverable fact that changes how the region is understood.
 * **Shortcut.** A discovery that changes future movement through the region.
 

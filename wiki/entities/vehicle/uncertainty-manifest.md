@@ -14,7 +14,7 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "Everything aboard the Uncertainty space by space: ordnance and powder, stores, medical, charts, the expanded cargo hold, and the cargo still worth selling."
+summary: "Everything aboard the Uncertainty space by space: ordnance and powder, stores, medical, charts, the expanded cargo hold, and the remaining cargo for sale."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -25,11 +25,11 @@ tier: supporting
 # Uncertainty - Manifest
 
 > [!narration] Narration
-> Down past the companionway the air changes — tallow smoke, bilge salt, cold iron off the boarding axes stacked in an open crate. Lantern light swings with the hull and catches crate after crate lashed along the bulkheads: sealed powder kegs chalked with tally marks, water casks, the folding cots pushed under a bunk since the surgeon's alcove became a workbench. The seized-goods crate stands cracked open again, oilcloth peeled back from a jewellery box nobody's forced and a pendant nobody's sold — *For Mira, from the sea*. One crate further aft stays closed, its lid marked only with a chart of the Galewall anchorage nobody has agreed to open.
+> Down past the companionway the air changes. Tallow smoke, bilge salt, and cold iron rise from the boarding axes stacked in an open crate. Lantern light swings with the hull and catches sealed powder kegs chalked with tally marks and water casks lashed along the bulkheads. Folding cots sit under a bunk where the surgeon's alcove became a workbench. The seized-goods crate stands open again. Oilcloth peels back from a jewellery box nobody's forced and a pendant nobody's sold, *For Mira, from the sea*. One crate further aft remains closed. Its lid bears only a chart of the Galewall anchorage nobody has agreed to open.
 
 *Patrol cutter · Tier 1 · [[La Vasca]].*
 
-What she carries, and where. Spaces and their tactical use live on [[uncertainty-deck-layouts|Deck Layouts]]. This page holds the stock in them. Every Crown-issue item went ashore, into a sale, or into a replacement.
+What she carries, and where. Spaces and their tactical use live on [[uncertainty-deck-layouts|Deck Layouts]]. This page lists that stock. Every Crown-issue item went ashore, into a sale, or into a replacement.
 
 ## Stats & Combat
 
@@ -69,7 +69,7 @@ Hull numbers are on [[Uncertainty|the ship's page]]. This is the ordnance and ev
 ## Crew
 
 - Captain: [[delmar-fisk]].
-- Notable crew: [[Cobb]], [[sem-holst]], [[jean-claude-tabarnack]] — each keeps something aboard outside the common stores, listed below.
+- Notable crew: [[Cobb]], [[sem-holst]], and [[jean-claude-tabarnack]]. Each keeps something aboard outside the common stores, listed below.
 
 Not everything aboard belongs to the ship. [[sem-holst]]'s carpenter's kit is his own and travels with him. [[Cobb]] holds the seal on the emergency ration chest, which opens at [[nona-black-jaw]]'s word and nobody else's. [[jean-claude-tabarnack|Jean-Claude]] keeps the [[Grung]] poison tincture under his own hand. The rest is common stores, and the roster that spends them is on [[Uncertainty|the ship's page]].
 
@@ -82,7 +82,7 @@ Not everything aboard belongs to the ship. [[sem-holst]]'s carpenter's kit is hi
 | Water cask | 4 | |
 | Small beer barrel | 2 | |
 | Emergency ration chest, sealed | 1 | Seven days for ten. Cobb's seal |
-| [[Mending]] Resin | 2 | Carpenter's locker. Restores 2d8 hull over eight hours, no roll |
+| Mending Resin | 2 | Carpenter's locker. Restores 2d8 hull over eight hours, no roll |
 
 ### Galley
 
@@ -122,7 +122,7 @@ Not everything aboard belongs to the ship. [[sem-holst]]'s carpenter's kit is hi
 | Cards and dominoes | 1 set | Turned up in a tool chest and stayed, without comment |
 | Folding cot | 2 | Carried out of the old surgeon's alcove when it became the workshop |
 | Suture kit, splints, fever treatments | n/a | Carried out with the cots, stowed under a bunk now |
-| [[Potion of Healing]] | 3 | No chandlery on the Chain stocks these |
+| Potion of Healing | 3 | No chandlery on the Chain stocks these |
 
 ### General Cargo
 
@@ -131,7 +131,7 @@ Not everything aboard belongs to the ship. [[sem-holst]]'s carpenter's kit is hi
 | Seized goods crate | 1 | About 97 gp of silver candelabras, brandy, [[calven-and-calveno]] silk, a locked jewellery box, and a pendant cut *For Mira, from the sea* |
 | Confiscation crate | 1 | Spare flintlocks, and twenty vials of concentrated [[Grung]] poison tincture |
 | Opened cargo crate | 1 | Emptied. Held a chart marked *[[Galewall]] anchorage* |
-| Boarding axe | 8 | Replaced the Crown cutlasses. No rack anymore — dug out of a crate now |
+| Boarding axe | 8 | Replaced the Crown cutlasses. No rack remains. The crew dug these out of a crate |
 | Crossbow | 4 | Twenty bolts each |
 | Grapnel line | 6 | |
 | Smoke grenade | 3 | |
@@ -145,12 +145,12 @@ Nobody aboard has worked out what waits at the Galewall anchorage, and the chart
 ## Connections
 
 - [[Uncertainty]]. Hull, armament, crew, history.
-- [[uncertainty-deck-layouts|Deck Layouts]]. The spaces this stock sits in.
-- [[Ship Operations]]. Weekly facility orders that spend and replenish it.
-- [[Cobb]]. Stocked the refit, and holds the ration seal.
+- [[uncertainty-deck-layouts|Deck Layouts]]. The spaces that contain this stock.
+- Ship Operations. Weekly facility orders that spend and replenish it.
+- [[Cobb]]. Stocked the refit and controls the ration seal.
 - [[nona-black-jaw]]. Paid for it, and decides when the chest opens.
 
 ## Session Log
 
-- [[Session 2]]. The crew stripped the cabin and hold of coin, garnets, the blunderbuss, and Rook's letters.
+- [[Session-02-Recap|Session 2]]. The crew removed coin, garnets, the blunderbuss, and Rook's letters from the cabin and cargo space.
 - Session 8. The batteries, powder, and full stores landed aboard in the cradle.

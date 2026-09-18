@@ -8,7 +8,7 @@ sources:
   - "campaign-os:talon-skarn.md"
   - "wiki/_archive/Talon Skarn.md"
   - "Talon Skarn"
-summary: Countless peregrine apprentice caught mid-theft on Aruhe; he has spent one Legendary Resistance and is still in Crissdalynn's face.
+summary: "Talon Skarn is a Countless peregrine apprentice caught mid-theft on Aruhe. He has spent one Legendary Resistance and remains in Crissdalynn's face."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -35,7 +35,7 @@ relationships:
 
 ## Now
 
-Session 11. He stooped on [[crissdalynn-khinriss]] during last watch at [[river-slack-basin]]. The stunning strike missed. He reached for the pack that might hold the [[fate-spinner]]. She stunned him; he spent one Legendary Resistance and stayed up. Play stopped there. The job is still the object, not a duel to 0 hit points.
+Session 11. He stooped on [[crissdalynn-khinriss]] during last watch at [[river-slack-basin]]. The stunning strike missed. He reached for the pack that might hold the [[fate-spinner]]. She stunned him. He spent one Legendary Resistance and stayed up. Play stopped there. The job is still the object, not a duel to 0 hit points.
 
 ![[talon-skarn-reference-sheet.jpg|Talon Skarn character reference sheet]]
 
@@ -120,7 +120,7 @@ Use **Kusarigama Tempest** when two or more creatures are inside its `20-foot` E
 
 # Combat
 
-> **Encounter rule:** Use this block whenever [[talon-skarn]] fights. His win condition is the current job, not a duel to 0 hit points. On [[Session-11-09-Theft-on-the-Watch]], that job is the [[fate-spinner]] and a break down the star-cut.
+> **Encounter rule.** Use this block whenever [[talon-skarn]] fights. His win condition is the current job, not a duel to 0 hit points. On [[Session-11-09-Theft-on-the-Watch]], that job is the [[fate-spinner]] and a break down the star-cut.
 
 ## Statblock
 

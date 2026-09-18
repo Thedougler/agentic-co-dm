@@ -187,7 +187,7 @@ See also the lake Weak/Strong pair in [places.md](places.md).
 
 > A thumb-sized quartz top with four worn faces stays cool to the touch. Spun on a flat surface, it turns on its point with a short even wobble before it settles.
 
-**Strong — ~three sentences visual + behavior**
+**Strong — full coverage, flowing prose**
 
 > A thumb-sized four-sided quartz top, cloudy and faintly milk-white, sits easily between finger and thumb. Its faces are worn smooth, corners dulled from handling, and the stone stays cool. Spun on a flat surface it turns on its point with a short even wobble before it settles.
 
