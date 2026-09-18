@@ -16,7 +16,7 @@ You are helping the user browse and compare their Obsidian wiki knowledge filter
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`.
-2. Provenance lives in the ingest ledger — query via `python3 scripts/manifest.py` (`stats` / `list [--project|--since|--limit]` / `get` / `lookup`); do **not** load whole `.manifest.json` into context.
+2. Provenance lives in the ingest ledger — query via `python3 scripts/manifest.py` (`stats` / `tool-pages [--tool|--limit]` / `list --limit` / `get` / `lookup`); do **not** load whole `.manifest.json` into context (S1).
 3. Read `$OBSIDIAN_VAULT_PATH/index.md` for page titles and one-line descriptions.
 
 ## Commands
@@ -35,24 +35,22 @@ Recognized tool names: `claude`, `codex`, `hermes`, `openclaw`, `copilot`, `pi`,
 
 ## Step 1: Build the Source Map
 
-Do not load whole `.manifest.json` into context. Prefer `stats`, then `list --limit N` (tsv/json) for compact rows; use `get`/`lookup` for specifics. For each entry you intentionally fetch, extract:
-- `source_type` — maps to tool name:
-  - `claude_conversation`, `claude_memory`, `claude_audit_log`, `claude_desktop_session` → `claude`
-  - `codex_rollout`, `codex_index`, `codex_history` → `codex`
-  - `hermes_memory`, `hermes_session` → `hermes`
-  - `openclaw_memory`, `openclaw_daily_note`, `openclaw_session`, `openclaw_dreams` → `openclaw`
-  - `copilot_session`, `copilot_checkpoint`, `copilot_transcript`, `copilot_memory_artifact` → `copilot`
-  - `pi_session` → `pi`
-  - `document` → `ingest`
-  - anything else → `manual`
-- `pages_created` and `pages_updated` — the wiki pages that came out of this source
+**HARD (context-waste S1):** Never Read, open, or paste whole `.manifest.json` into agent context. Full-file ledger ingest is a bug. The CLI may open the file on disk; you only consume capped command output.
 
-Build a map:
+1. `python3 scripts/manifest.py stats "$OBSIDIAN_VAULT_PATH"` — counts only.
+2. Build the tool→page map with the thin projector (preferred):
+   ```bash
+   python3 scripts/manifest.py --format tsv tool-pages "$OBSIDIAN_VAULT_PATH" [--tool <name>] [--limit N]
+   ```
+   Output is `tool\tpage` only (tools already mapped from `source_type`). Cap with `--limit` when browsing; raise the cap only if the mode needs it, still never dump the raw ledger.
+3. Fallback for one source key: `get` / `lookup --page` — still one entry, not the whole file. `list --limit N` may include `source_type` but does **not** expand page paths; prefer `tool-pages` for this skill.
+
+Build:
 
 ```
 tool_pages = {
-  "claude": set(pages created/updated by claude sources),
-  "codex":  set(pages created/updated by codex sources),
+  "claude": set(pages from tool-pages rows),
+  "codex":  set(...),
   ...
 }
 ```
@@ -122,7 +120,7 @@ Both tools have contributed to these pages.
 
 ### Map Mode
 
-Build a matrix showing every page and which tools have touched it. Cap at 50 rows; sort by number of contributing tools descending (most cross-tool pages first — these are the richest nodes).
+Build a matrix from `tool-pages` rows (not a raw ledger dump). Cap at 50 rows; sort by number of contributing tools descending (most cross-tool pages first — these are the richest nodes).
 
 ```
 | Page | claude | codex | hermes | copilot | pi |
@@ -140,8 +138,8 @@ impl-validator check:
   goal: "Browse/diff wiki knowledge by source tool and surface cross-tool blind spots"
   artifacts: [the output you just generated]
   checks:
-    - Did you correctly parse source_type from .manifest.json?
-    - Are page counts plausible (not 0 unless vault is empty)?
+    - Did tool→page rows come from `manifest.py tool-pages` (or capped `list`/`get`) — never a full `.manifest.json` load into context?
+    - Are page counts plausible (not 0 unless vault is empty / stats say empty)?
     - Is the diff symmetric (a−b and b−a are disjoint)?
     - Did you avoid reading full page bodies when not needed?
 ```
@@ -160,4 +158,4 @@ Append to `$OBSIDIAN_VAULT_PATH/log.md`:
 - Always show page counts so the user can calibrate how much knowledge is in each tool's silo.
 - Use `[[wikilinks]]` for page references (or standard Markdown links if `OBSIDIAN_LINK_FORMAT=markdown` is set).
 - In diff mode, call out the most *surprising* asymmetry explicitly — that's the insight the user came for.
-- If `.manifest.json` is empty or missing, say so clearly and suggest running `/wiki-history-ingest` first.
+- If `manifest.py stats` shows empty/missing ledger, say so clearly and suggest running `/wiki-history-ingest` first. Do not open `.manifest.json` to check.
