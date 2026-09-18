@@ -2,7 +2,7 @@ modelRoleStorage: project
 modelRoles:
   default: opencode-go/grok-4.6:medium
   plan: opencode-go/grok-4.6:high
-  task: opencode-go/gpt-5.6-luna:medium
+  task: opencode-go/gpt-5.6-luna:xhigh
   review: opencode-go/grok-4.6:high
   smol: opencode-go/gpt-5.6-luna:high
   advisor: opencode-go/grok-4.6:medium
@@ -11,8 +11,17 @@ task:
   maxConcurrency: 4
   maxRecursionDepth: 1
   enableEffort: true
+  enableLsp: true
+  maxRuntimeMs: 1200000
+  agentIdleTtlMs: 180000
+  softRequestBudget: 120
+  softRequestBudgetNotice: true
   isolation:
     enabled: true
+    apply: true
+    merge: patch
+isolation:
+  backend: auto
 async:
   enabled: true
 compaction:
@@ -29,10 +38,20 @@ autolearn:
   enabled: false
 tools:
   approvalMode: yolo
+  format: auto
+  intentTracing: true
+  artifactSpillThreshold: 50
+  artifactHeadBytes: 20
+  artifactTailBytes: 20
+  artifactTailLines: 500
+  outputMaxColumns: 768
 lsp:
   enabled: true
   lazy: true
+  shared: true
   diagnosticsOnWrite: true
+  diagnosticsOnEdit: false
   diagnosticsDeduplicate: true
+  formatOnWrite: false
 disabledExtensions:
   - context-file:project:CLAUDE.md
