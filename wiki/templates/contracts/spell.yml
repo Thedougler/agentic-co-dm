@@ -1,0 +1,10 @@
+version: 1
+template: spell.md
+type: spell
+sections: []
+repeatable: []
+callouts:
+  allowed: [narration]
+frontmatter:
+  required: [title, category, tags, sources, created, updated, type, lifecycle, reveal]
+  optional: [campaign, visibility, level, school, summary]

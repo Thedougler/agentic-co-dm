@@ -77,19 +77,21 @@ def structural_main(argv: list[str]) -> int:
         if ambiguous_identities:
             report["identity_ambiguous"] = True
         if args.template:
-            from tools.wiki_ops.template_contracts import check_conformance, load_contract
-            paths = scope.resolved_files if scope else [p.relative_to(vault).as_posix() for p in vault.rglob("*.md") if p.is_file()]
+            from tools.wiki_ops.template_contracts import check_conformance, contract_for_type
+            paths = scope.resolved_files if scope else [
+                p.relative_to(vault).as_posix()
+                for p in vault.rglob("*.md")
+                if p.is_file() and not {"_archive", "_archives", "_raw", "_readouts", "_staging", "_meta", "templates", ".obsidian"}.intersection(p.relative_to(vault).parts)
+            ]
             template_findings = []
             exemptions = 0
             for relative in paths:
                 page = vault / relative
                 try:
                     fields = __import__("tools.wiki_ops.mutations", fromlist=["frontmatter_fields"]).frontmatter_fields(page.read_text(encoding="utf-8"))
-                    contract_path = vault / "templates" / "contracts" / f"{fields.get('type', '')}.yml"
-                    if not contract_path.is_file():
-                        contract_path = ROOT / "wiki" / "templates" / "contracts" / f"{fields.get('type', '')}.yml"
-                    if contract_path.is_file():
-                        template_findings.extend(check_conformance(relative, page.read_text(encoding="utf-8"), load_contract(contract_path)))
+                    contract = contract_for_type(vault, fields.get("type", "")) or contract_for_type(ROOT / "wiki", fields.get("type", ""))
+                    if contract:
+                        template_findings.extend(check_conformance(relative, page.read_text(encoding="utf-8"), contract))
                 except (OSError, ValueError) as exc:
                     template_findings.append({"rule_id": "TMPL_error", "file": relative, "severity": "BLOCK", "reason": str(exc)})
             source_paths = [ROOT / "wiki" / "templates" / "faction.md", ROOT / ".agents" / "skills" / "faction-design" / "SKILL.md"]

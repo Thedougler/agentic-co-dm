@@ -70,7 +70,7 @@ mnemopi:
 autolearn:
   enabled: true
   autoContinue: true
-  minToolCalls: 40
+  minToolCalls: 20
 tools:
   approvalMode: yolo
   format: auto

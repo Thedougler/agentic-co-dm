@@ -5,3 +5,4 @@
 {"cause": "README translation sync checker is absent from tools/", "cause_fixed": false, "id": "e-42", "sitting": "README setup update", "status": "open"}
 {"cause": "QMD multi-get rejected search-result docids when passed as a comma-separated list; qmd:// paths were required for batch retrieval.", "cause_fixed": false, "id": "e-43", "sitting": "lint: Countless faction", "status": "open"}
 {"cause": "QMD multi-get rejected search-result docids during source retrieval; serial qmd:// get succeeded.", "cause_fixed": false, "id": "e-44", "sitting": "wiki-lint: The Black-Jaw Run faction", "status": "open"}
+{"cause": "System python3 lacks pytest; repository validation must use .venv/bin/python", "cause_fixed": false, "id": "e-45", "sitting": "implement: agent-safe wiki operations", "status": "open"}

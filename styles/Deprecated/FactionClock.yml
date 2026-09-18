@@ -1,0 +1,5 @@
+extends: existence
+message: "Deprecated faction-clock guidance remains in an authoritative page."
+level: error
+tokens:
+  - "(?i)\\b(?:faction|agenda) clock\\b"

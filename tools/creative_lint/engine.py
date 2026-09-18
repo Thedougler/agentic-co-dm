@@ -113,7 +113,7 @@ class LintEngine:
             shadow = [(rule, severity) for rule, severity in shadow if rule.id in rule_ids]
         return active, shadow
 
-    def _applicable(self, finding: Finding) -> bool:
+    def _applicable(self, finding: Finding, state: dict[str, Any] | None = None) -> bool:
         try:
             rule = self.registry.get(finding.rule_id)
         except KeyError:
@@ -121,29 +121,42 @@ class LintEngine:
         path = Path(str(finding.location.get("file", "")))
         if not path.is_absolute():
             path = self.root / path
-        if not path.is_file():
-            return True
-        text = path.read_text(encoding="utf-8")
-        fields = {}
-        if text.startswith("---"):
-            for line in text.splitlines()[1:]:
-                if line.strip() == "---":
-                    break
-                if ":" in line and not line[:1].isspace():
-                    key, value = line.split(":", 1)
-                    fields[key.strip()] = value.strip().strip("\"'")
+        fields: dict[str, str] = {}
+        text = ""
+        if path.is_file():
+            text = path.read_text(encoding="utf-8")
+            if text.startswith("---"):
+                for line in text.splitlines()[1:]:
+                    if line.strip() == "---":
+                        break
+                    if ":" in line and not line[:1].isspace():
+                        key, value = line.split(":", 1)
+                        fields[key.strip()] = value.strip().strip("\"'")
+        state = state or {}
+        fields.update({str(key): str(value) for key, value in state.items() if value is not None})
+        lifecycle = fields.get("lifecycle", fields.get("status", "")).casefold()
         if fields.get("redirects_to") or "redirect stub" in text.casefold():
             return "redirect" not in rule.exemptions
         if fields and rule.applicability and fields.get("type") not in rule.applicability:
             return False
+        if any(item.casefold() in {lifecycle, f"lifecycle:{lifecycle}"} for item in rule.exemptions if lifecycle):
+            return False
+        if "metadata" in rule.exemptions and not text:
+            return False
+        if "table" in rule.exemptions and "|" in text:
+            return False
         body = text.split("---", 2)[-1]
+        if "narrative" in rule.structural_scope and text.startswith("---") and not re.search(r"(?mi)^#{1,6}\s+narrative\s*$", text):
+            return False
+        if rule.id == "SCENE001" and not fields and re.search(r"\b(?:pressure|threat|can|must|clock|risk|choice|deadline)\b", body, re.I):
+            return False
         if rule.id == "SCENE001" and re.search(r"\b(?:pressure\s+is|agenda\s+is|player\s+opening\s+is)\b", body, re.I):
             return False
-        return True
 
+        return True
     def run(self, *, bundle: str | None = None, paths: Iterable[str | Path] | None = None,
             rule_ids: set[str] | None = None, severity_filter: set[str] | None = None,
-            session: int | None = None) -> LintResult:
+            session: int | None = None, state: dict[str, Any] | None = None) -> LintResult:
         selected = self._expand_paths(paths)
         active, shadow_rules = self._rules_for(bundle, rule_ids)
         active_ids = {rule.id for rule, _ in active}
@@ -159,7 +172,7 @@ class LintEngine:
             selected, self.registry, root=self.root, vault=self.vault,
             rule_ids=active_ids, severity_overrides=active_overrides,
         ))
-        findings = [finding for finding in findings if self._applicable(finding)]
+        findings = [finding for finding in findings if self._applicable(finding, state)]
         for finding in findings:
             finding.repair_class = getattr(self.registry.get(finding.rule_id), "repair_class", "diagnostic")
 
@@ -261,6 +274,7 @@ class LintEngine:
                     max_iterations: int = 3) -> LintResult:
         current_paths = list(paths)
         result = self.run(bundle=bundle, paths=current_paths)
+        initial_rule_ids = {finding.rule_id for finding in result.findings}
         for _ in range(max(0, max_iterations)):
             blocking = [
                 finding for finding in result.findings
@@ -274,7 +288,7 @@ class LintEngine:
                 break
             if changed is not True:
                 current_paths = list(changed)
-            result = self.run(bundle=bundle, paths=current_paths)
+            result = self.run(bundle=bundle, paths=current_paths, rule_ids=initial_rule_ids)
         return result
 
 

@@ -1,0 +1,10 @@
+version: 1
+template: session-prep.md
+type: session-prep
+sections: []
+repeatable: []
+callouts:
+  allowed: [narration]
+frontmatter:
+  required: [title, category, tags, sources, created, updated, type, lifecycle, reveal]
+  optional: [campaign, visibility, kind, session, summary]

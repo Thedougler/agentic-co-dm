@@ -1,0 +1,3 @@
+# Index
+
+This line contains [[an-unparseable entry without the required dash structure.

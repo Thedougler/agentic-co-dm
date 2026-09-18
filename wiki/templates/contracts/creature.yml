@@ -1,0 +1,10 @@
+version: 1
+template: creature.md
+type: creature
+sections: []
+repeatable: []
+callouts:
+  allowed: [narration]
+frontmatter:
+  required: [title, category, tags, sources, created, updated, type, lifecycle, reveal]
+  optional: [campaign, visibility, kind, aliases, summary]

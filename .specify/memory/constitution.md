@@ -1,3 +1,4 @@
+
 # Agentic Co-DM Constitution
 <!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
 
@@ -403,6 +404,24 @@ Rationale: agent attention and tool-call budgets are finite; lean context, direc
 deterministic helpers leave more capacity for reasoning about the wiki while preserving safe,
 correct work.
 
+### XXI. Linter Findings Require Root-Cause Repair
+
+Agents MUST treat every linter finding as evidence of a defect in the underlying content,
+structure, process, or authoritative source. They MUST repair the cause and rerun the relevant
+linter. They MUST NOT evade a finding by rewording without changing the underlying defect,
+weakening or suppressing a rule, narrowing scope, renaming content to avoid a pattern, adding an
+exclusion, or otherwise optimizing for a clean report while leaving the defect intact. Rewording
+is a repair only when it corrects the defect the finding identifies.
+
+A finding MAY be rejected only when the linter is demonstrably wrong for the repository's current
+standards. The rejection MUST be documented at the authoritative rule or policy owner and MUST
+preserve detection of the real defect. When a finding reveals a recurring cause, the agent MUST
+fix the authoritative template, skill, instruction, workflow, or linting rule in addition to the
+affected artifact.
+
+Rationale: linter output is quality feedback, not an obstacle; root-cause repair improves the Wiki
+and prevents the same defect from recurring.
+
 ## Operating Boundaries
 
 - The Co-DM works in prep and wrapup windows; the DM is the sole runtime at the table.
@@ -455,4 +474,4 @@ not prevent a named safety failure MUST be rejected or resolved by an ADR.
 Project operating context: `AGENTS.md`. Harness-specific agent behavior: `OMP.md`, `CODEX.md`,
 `CLAUDE.md`, and `GROK.md`.
 
-**Version**: 2.6.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 2.7.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17

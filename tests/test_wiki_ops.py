@@ -202,12 +202,64 @@ def test_identity_redirect_resolves_without_candidates(tmp_path: Path):
     assert resolved.status == "resolved"
     assert resolved.signals["redirect_match"] is True
 
+def test_typed_frontmatter_tag_and_link_mutations_preserve_document_shape(tmp_path: Path):
+    page = tmp_path / "page.md"
+    page.write_text(
+        "---\ntitle: Page\ntags: [old]\n---\n# Page\n\nSee [[old-page]] and ![[old-page.png]].\n",
+        encoding="utf-8",
+    )
+    assert apply_mutation(tmp_path, MutationOp("add_tag", "page.md", payload={"tag": "new"}))["accepted"]
+    assert apply_mutation(
+        tmp_path,
+        MutationOp("set_frontmatter", "page.md", selector={"field": "lifecycle"}, payload={"value": "active"}),
+    )["accepted"]
+    result = apply_mutation(
+        tmp_path,
+        MutationOp(
+            "repair_links",
+            "page.md",
+            payload={
+                "mapping": [
+                    {"old_target": "old-page", "new_target": "new-page"},
+                    {"old_target": "old-page.png", "new_target": "new-page.png"},
+                ]
+            },
+        ),
+    )
+    text = page.read_text(encoding="utf-8")
+    assert "tags: [old, new]" in text
+    assert "lifecycle: active" in text
+    assert "[[new-page]]" in text and "![[new-page.png]]" in text
+
+
+def test_typed_mutation_rejects_invalid_selector_without_writing(tmp_path: Path):
+    page = tmp_path / "page.md"
+    original = "---\ntitle: Page\n---\n# Page\n"
+    page.write_text(original, encoding="utf-8")
+    result = apply_mutation(
+        tmp_path,
+        MutationOp("replace_section", "page.md", selector={"heading_path": ["Missing"]}, payload={"content": "x"}),
+    )
+    assert result["status"] == "rejected"
+    assert page.read_text(encoding="utf-8") == original
+
 
 def test_template_contract_reports_required_sections():
     contract = load_contract(Path(__file__).parents[1] / "wiki/templates/contracts/faction.yml")
     page = "---\ntitle: Test\ntype: faction\nlifecycle: active\n---\n# Test\n"
     findings = check_conformance("test.md", page, contract)
     assert any(item["rule_id"] == "TMPL_missing_required" for item in findings)
+
+def test_template_contract_respects_lifecycle_and_redirect_stubs():
+    contract = load_contract(Path(__file__).parents[1] / "wiki/templates/contracts/faction.yml")
+    page = (
+        "---\ntitle: Dormant\ntype: faction\nlifecycle: dormant\nredirects_to: canonical\n"
+        "category: faction\ntags: []\nsources: []\ncreated: 2026-09-01\nupdated: 2026-09-01\n---\n"
+        "# Dormant\n"
+    )
+    findings = check_conformance("dormant.md", page, contract)
+    assert any(item["rule_id"] == "TMPL_redirect_stub" for item in findings)
+    assert not any(item["section"] == "Active Agenda" for item in findings if "section" in item)
 
 def _fake_qmd(path: Path, body: str) -> Path:
     script = path / "qmd"
@@ -326,3 +378,38 @@ def test_qmd_hook_reports_one_actionable_error(tmp_path: Path):
     assert result.stdout == ""
     assert "qmd embed" in result.stderr
     assert "skipped" in result.stderr
+
+def test_identity_uses_manifest_and_content_signals(tmp_path: Path):
+    (tmp_path / "a.md").write_text(
+        "---\ntitle: Harbor Guard\ntype: faction\n---\n# Harbor Guard\n\nShared report.\n",
+        encoding="utf-8",
+    )
+    (tmp_path / "b.md").write_text(
+        "---\ntitle: Harbor Guard Auxiliary\ntype: faction\n---\n# Harbor Guard\n\nShared report.\n",
+        encoding="utf-8",
+    )
+    (tmp_path / ".manifest.json").write_text(
+        json.dumps({"sources": {"source.md": {"pages_produced": ["a.md", "b.md"]}}}),
+        encoding="utf-8",
+    )
+    result = resolve_identity(tmp_path, "a.md")
+    assert result.status == "ambiguous"
+    assert result.signals["manifest_provenance"] is True
+    assert 0 <= result.signals["qmd_content_similarity"] <= 1
+
+
+def test_identity_raw_drop_is_distinct_and_redirect_is_not_candidate(tmp_path: Path):
+    raw = tmp_path / "_raw" / "drop.md"
+    raw.parent.mkdir()
+    raw.write_text("# Raw drop\n", encoding="utf-8")
+    (tmp_path / "canonical.md").write_text(
+        "---\ntitle: Canonical\ntype: faction\n---\n# Canonical\n",
+        encoding="utf-8",
+    )
+    (tmp_path / "redirect.md").write_text(
+        "---\ntitle: Old Name\ntype: faction\nredirects_to: canonical\n---\n# Old Name\n",
+        encoding="utf-8",
+    )
+    assert resolve_identity(tmp_path, "_raw/drop.md").status == "distinct"
+    result = resolve_identity(tmp_path, "canonical.md")
+    assert all(item["path"] != "redirect.md" for item in result.candidates)

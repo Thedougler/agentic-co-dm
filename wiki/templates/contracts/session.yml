@@ -1,0 +1,10 @@
+version: 1
+template: session.md
+type: session
+sections: []
+repeatable: []
+callouts:
+  allowed: [narration]
+frontmatter:
+  required: [title, category, tags, sources, created, updated, type, lifecycle, reveal]
+  optional: [campaign, visibility, session, summary]

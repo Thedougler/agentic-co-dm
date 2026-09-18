@@ -11,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
+from tools.wiki_ops.cli import emit_json, resolve_vault
 from tools.wiki_ops.identity import resolve_identity, scan_identities
 from tools.wiki_ops.scope import parse_scope
 
@@ -20,15 +21,15 @@ def main(argv: list[str] | None = None) -> int:
     sub = parser.add_subparsers(dest="command", required=True)
     resolve = sub.add_parser("resolve")
     resolve.add_argument("path_or_slug")
-    resolve.add_argument("--vault", default=os.environ.get("OBSIDIAN_VAULT_PATH", "wiki"))
+    resolve.add_argument("--vault")
     resolve.add_argument("--json", action="store_true")
     scan = sub.add_parser("scan")
     scan.add_argument("--scope")
-    scan.add_argument("--vault", default=os.environ.get("OBSIDIAN_VAULT_PATH", "wiki"))
+    scan.add_argument("--vault")
     scan.add_argument("--json", action="store_true")
     args = parser.parse_args(argv)
-    vault = Path(args.vault).expanduser().resolve()
     try:
+        vault = resolve_vault(args.vault)
         if args.command == "resolve":
             result = resolve_identity(vault, args.path_or_slug)
             payload = result.to_dict()
@@ -39,12 +40,18 @@ def main(argv: list[str] | None = None) -> int:
                 scope.resolve(vault)
             results = scan_identities(vault, scope=scope)
             ambiguities = [item.to_dict() for item in results if item.status == "ambiguous"]
-            payload = {"scanned": len(results), "resolved": sum(item.status == "resolved" for item in results), "ambiguous": len(ambiguities), "distinct": sum(item.status == "distinct" for item in results), "ambiguities": ambiguities}
+            payload = {
+                "scanned": len(results),
+                "resolved": sum(item.status == "resolved" for item in results),
+                "ambiguous": len(ambiguities),
+                "distinct": sum(item.status == "distinct" for item in results),
+                "ambiguities": ambiguities,
+            }
             code = 2 if ambiguities else 0
     except (OSError, ValueError) as exc:
-        print(json.dumps({"status": "error", "error": str(exc)}) if args.json else f"error: {exc}", file=sys.stderr)
+        print(json.dumps({"status": "error", "error": str(exc)}, separators=(",", ":")), file=sys.stderr)
         return 1
-    print(json.dumps(payload, indent=2, sort_keys=True) if args.json else json.dumps(payload, indent=2, sort_keys=True))
+    emit_json(payload)
     return code
 
 
