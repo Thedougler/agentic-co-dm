@@ -266,8 +266,9 @@ After US7 + US4 + US2:
 
 1. Complete Phase 1 and Phase 2.
 2. Complete the P1 enablement slices US7, US4, and US2 in dependency order or parallel by file ownership.
-3. Complete US1's identity → scoped lint → typed plan → atomic consolidation path.
-4. Run US1's independent fixture workflow and stop at the MVP checkpoint.
+3. Complete the US5 structured-state and US6 transaction-finalization seams required by the end-to-end workflow.
+4. Complete US1's identity → scoped lint → typed plan → atomic consolidation path.
+5. Run US1's independent fixture workflow and stop at the MVP checkpoint.
 
 ### Incremental Delivery
 
