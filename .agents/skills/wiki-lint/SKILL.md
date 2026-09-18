@@ -1,34 +1,50 @@
 ---
 name: wiki-lint
 description: >
-  Audit and maintain the health of the Obsidian wiki. Use this skill when the user wants to check their
-  wiki for issues, find orphaned pages, detect contradictions, identify stale content, fix broken wikilinks,
-  or perform general maintenance on their knowledge base. Also triggers on "clean up the wiki",
-  "what needs fixing", "audit my notes", or "wiki health check". Add --consolidate to switch from
-  report-only to act-and-report mode (the "dream cycle"): fixes broken links, adds missing cross-references
-  for orphans, corrects lifecycle states, demotes stale peripheral pages, normalizes tag aliases, and adds
-  contradiction callouts — all with a dry-run preview and explicit user confirmation before any writes.
+  Find and repair structural issues in the Obsidian wiki. Default is lint-and-repair: fix every page-scoped
+  finding (broken links, missing frontmatter, bad wikilinks). Triggers on "lint", "lint <page>", "clean up
+  the wiki", "fix broken links", "what needs fixing", "audit my notes", "wiki health check". Page-scoped:
+  pass a vault-relative .md path to lint and repair one page. Pass --check for report-only (no writes).
+  Pass --consolidate for the vault-wide dream cycle with dry-run preview and user confirmation before
+  bulk writes.
 ---
 
 # Wiki Lint — Health Audit
 
 You are performing a health check on an Obsidian wiki. Your goal is to find and fix structural issues that degrade the wiki's value over time.
 
-**Before scanning anything:** follow the Retrieval Primitives table in `llm-wiki/SKILL.md`. Prefer frontmatter-scoped greps and section-anchored reads over full-page reads. On a large vault, blindly reading every page to lint it is exactly what this framework is built to avoid.
+**Retrieval order:** QMD search-then-get first; grep only for targeted evidence QMD cannot answer (exact line numbers, regex patterns). Follow the Retrieval Primitives table in `llm-wiki/SKILL.md` — cheapest primitive that answers the question, escalate only when it cannot. On a large vault, blindly reading every page to lint it is exactly what this framework is built to avoid.
 
 ## Before You Start
 
-**Deterministic pass:** from repo root run `./scripts/wiki-lint --json` first (vault `wiki/`). HARD fail keys: `broken_links`, `missing_frontmatter`, `bad_type`, `bad_lifecycle`, `typed_relationships`, `pc_identity_mismatch`, `spaced_basename`, `aruhe_prefix_basename`, `illegal_basename`, `duplicate_stems` (redirect stubs with `redirects_to` are omitted from `missing_frontmatter`, `spaced_basename`, and `aruhe_prefix_basename`; reserved files and mechanic allowlist links are omitted from `broken_links`; `_archive`/`_raw`/templates/`_meta` skipped as usual — live pages only for filename HARD keys). Use that report. Soft keys: `snake_case_labels` (DM-visible snake_case table/list labels `{page,line,token,kind}`); `pc_tag_on_npc` (npc tagged pc without role/player signal); `snake_case_owner_basename` (snake_case owner basenames under `entities/{type}/`, `{page,stem,kind}` — kebab preferred, not HARD). Not HARD. Do not grep the vault for orphans or broken links unless a HARD finding is unclear.
+**Deterministic pass:** from repo root run `./scripts/wiki-lint --json wiki/` (full vault) or `./scripts/wiki-lint --json --scope <path> wiki/` (page-scoped — accepts bare `.md` paths or `files:<path>`). When a page path is given, use the page-scoped form and follow the Page-Scoped Repair flow below. HARD fail keys: `broken_links`, `missing_frontmatter`, `bad_type`, `bad_lifecycle`, `typed_relationships`, `pc_identity_mismatch`, `spaced_basename`, `aruhe_prefix_basename`, `illegal_basename`, `duplicate_stems` (redirect stubs with `redirects_to` are omitted from `missing_frontmatter`, `spaced_basename`, and `aruhe_prefix_basename`; reserved files and mechanic allowlist links are omitted from `broken_links`; `_archive`/`_raw`/templates/`_meta` skipped as usual — live pages only for filename HARD keys). Use that report. Soft keys: `snake_case_labels` (DM-visible snake_case table/list labels `{page,line,token,kind}`); `pc_tag_on_npc` (npc tagged pc without role/player signal); `snake_case_owner_basename` (snake_case owner basenames under `entities/{type}/`, `{page,stem,kind}` — kebab preferred, not HARD). Not HARD. Do not grep the vault for orphans or broken links unless a HARD finding is unclear.
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` plus any `OBSIDIAN_ALLOWED_LIFECYCLES`, `OBSIDIAN_ALLOWED_RELATIONSHIP_TYPES`, `OBSIDIAN_REQUIRED_TRUST_FIELDS`, and `OBSIDIAN_SCHEMA_SOURCE` values.
 2. **Read owner rules** — if `$OBSIDIAN_VAULT_PATH/AGENTS.md` exists, read it before interpreting any schema. Owner rules override framework defaults.
 3. **Form the effective schema** — record the schema source locator plus effective required/optional frontmatter, lifecycle values, relationship types, and provenance markers. Framework values are defaults; preserve owner extensions and relaxed requiredness exactly. Never coerce an owner type to a framework type.
-4. Prefer `hot.md` + capped `qmd`/`rg` for inventory; full `index.md` only if that fails — whole-file preload is token waste
-5. Prefer `hot.md` for recent activity; open a bounded slice of `log.md` only if needed — do not preload all of `log.md`
+4. Prefer `$OBSIDIAN_VAULT_PATH/hot.md` + capped `qmd`/`rg` for inventory; full `index.md` only if that fails — whole-file preload is token waste. Read `hot.md` from the resolved vault path, not the repo root.
+5. Prefer `$OBSIDIAN_VAULT_PATH/hot.md` for recent activity; open a bounded slice of `log.md` only if needed — do not preload all of `log.md`
+6. **Duplicate identity check:** before selecting or editing a page, verify no other page covers the same entity (matching title, aliases, or `redirects_to` target). When two pages cover one identity, surface the conflict before editing either — size-first selection without identity check causes wrong-page edits.
+7. **Redirect stubs:** pages with `redirects_to` in frontmatter are pointers, not content pages. Skip them in orphan checks, scene detection, frontmatter validation (they omit campaign required fields), and creative lint. Do not create redirect stubs unless the user explicitly requests one — vault clutter.
 
 Pass the effective schema to deterministic checks explicitly. For example, add each owner extension with `--allow-lifecycle` / `--allow-relationship-type`, replace trust requiredness with repeatable `--required-trust-field`, and identify the authority with `--schema-source "$OBSIDIAN_VAULT_PATH/AGENTS.md"`. The JSON report's `schema` block must match the schema you formed before findings are accepted.
 
 Schema precedence is CLI flags > resolved environment/config values > framework defaults; lifecycle and relationship extensions remain additive. Strip every override before use. An explicitly configured empty or whitespace-only value—and any empty comma-separated list entry—fails closed; never treat it as a valid lifecycle, relationship type, required field, or authority locator. Remove the variable instead when defaults are intended.
+
+## Page-Scoped Repair
+
+When a page path is given ("lint entities/faction/the-passage.md"), repair that page. This is the default — a full vault scan is not required.
+
+1. **Scope the deterministic pass.** Run `./scripts/wiki-lint --json --scope <path> wiki/` where `<path>` is the vault-relative `.md` path (bare paths accepted: `entities/faction/the-passage.md`). The script also accepts `files:<path>` syntax.
+2. **Read the page** via QMD search-then-get when available. Fall back to direct file read.
+3. **Repair every fixable finding** on that page: broken wikilinks (correct or remove), missing required frontmatter (add with defaults), invalid lifecycle/type values (correct to nearest valid), snake_case or spaced basenames (rename to kebab when remorph is greenlit).
+4. **Report** what was fixed inline. List unfixable findings (human judgment) separately. Keep output bounded to the scoped page — no vault-wide report.
+5. **Skip rule 12e** (trust-check) when `_meta/trust-ledger.json` does not exist. Trust review is not a lint gate for vaults that do not use it.
+6. **QMD refresh** — if QMD is available and the page was modified, run `${QMD_CLI:-qmd} update`.
+
+Done when: every fixable finding on the named page is repaired. Unfixable findings are listed with reasons. No vault-wide scan was performed.
+
+Pass `--check` to report findings without repairing them. The full vault flow below runs when no page path is given.
 
 ## Lint Checks
 
@@ -42,6 +58,7 @@ Find pages with zero incoming wikilinks. These are knowledge islands that nothin
 
 **How to check:**
 - Glob all `.md` files in the vault
+- **Skip redirect stubs** (pages with `redirects_to` in frontmatter) — they are pointers, not knowledge pages
 - For each page, Grep the rest of the vault for `[[page-name]]` references
 - Pages with zero incoming links (except `index.md` and `log.md`) are orphans
 
@@ -56,7 +73,7 @@ Find `[[wikilinks]]` that point to pages that don't exist.
 **How to check:**
 - Grep for `\[\[.*?\]\]` across all pages
 - Extract the link targets
-- Check if a corresponding `.md` file exists
+- Check if a corresponding `.md` file exists **in the vault** (not just in scope). When running page-scoped lint, a link to a page outside the scope is not broken — resolve link targets against the full vault.
 
 **How to fix:**
 - If the target was renamed, update the link
@@ -222,7 +239,9 @@ Staleness is never stored — it is computed at read time: `is_stale = (today �
 
 #### Rule 12e — Confidence review integrity
 
-**How to check:** Run the deterministic ledger validator first:
+**How to check:** First verify `_meta/trust-ledger.json` exists. If absent, skip this entire rule — trust review is not a lint gate for vaults that do not use it. Canon authority for campaign vaults is: DM-provided canon first, session transcripts second, latest version of a fact third.
+
+When the ledger exists, run the deterministic validator:
 
 ```bash
 obsidian-wiki trust-check "$OBSIDIAN_VAULT_PATH" --strict --json --pretty
@@ -596,7 +615,7 @@ Apply these 6 changes? [yes / no / select by number]
 
 ## QMD Refresh After Vault Writes
 
-QMD is a search index, not the source of truth. The default collection is `wiki` when `$QMD_WIKI_COLLECTION` is empty or unset. Run it only after this skill has written or rewritten vault markdown. If QMD refresh fails, do not roll back the vault changes; report the QMD status separately.
+QMD is a search index, not the source of truth. The default collection is `wiki` when `$QMD_WIKI_COLLECTION` is empty or unset. **Batch all QMD refreshes to the end** — run one `update` after all vault writes are complete, not after each individual write. Multiple mid-merge refreshes waste time reindexing and produce noisy pending-embeddings output. If QMD refresh fails, do not roll back the vault changes; report the QMD status separately.
 
 Use `$QMD_CLI` if set; otherwise use `qmd`.
 
@@ -608,15 +627,9 @@ If the output reports pending vectors, routine maintenance is still complete.
 Use `scripts/qmd-maintain.sh --embed` only when an explicit foreground
 embedding pass is requested.
 
-Verify the collection with either:
+**Bounded verification** — do not run `qmd ls` for the whole collection (output is thousands of lines and will truncate). For a specific page, search-then-get: search QMD for the page title, then pass the returned docid verbatim to `qmd get`. For collection-level health, `${QMD_CLI:-qmd} status` is sufficient.
 
-```bash
-${QMD_CLI:-qmd} ls "${QMD_WIKI_COLLECTION:-wiki}"
-```
-
-For a specific page, follow the exact QMD retrieval rule in
-`.agents/skills/llm-wiki/SKILL.md`: search first, then pass the returned docid
-or source verbatim to `qmd get` / `qmd multi-get`.
+**Serial QMD access** — run QMD queries one at a time. Concurrent invocations collide on SQLite initialization (`trigger documents_ad already exists`). If a QMD call fails with a SQLite error, retry once after the previous call completes.
 
 Record one of:
 - `QMD refreshed: update + verified; embeddings pending: N`

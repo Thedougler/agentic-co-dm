@@ -356,6 +356,8 @@ def main() -> int:
     args = parse_args()
     vault = args.vault.resolve()
     pages, lookup = load(vault)
+    # ponytail: full registry for link resolution; scope filters finding emission only (e-28/e-39)
+    resolve_pages, resolve_lookup = pages, lookup
     if args.scope:
         from tools.wiki_ops.scope import parse_scope
         scoped = parse_scope(args.scope)
@@ -454,7 +456,7 @@ def main() -> int:
         for raw in links(body):
             if normalize(raw) in MECHANIC_LINK_ALLOWLIST:
                 continue
-            targets = resolve(raw, pages, lookup)
+            targets = resolve(raw, resolve_pages, resolve_lookup)
             if len(targets) == 1:
                 incoming[targets[0]] += 1
                 edges.append((rel, targets[0]))
@@ -465,7 +467,7 @@ def main() -> int:
     findings["orphan_pages"] = [rel for rel in pages if incoming[rel] == 0]
     index_targets = set()
     for raw in links(documents.get("index.md", "")):
-        targets = resolve(raw, pages, lookup)
+        targets = resolve(raw, resolve_pages, resolve_lookup)
         if len(targets) == 1:
             index_targets.add(targets[0])
     findings["index_issues"] = {
@@ -477,7 +479,7 @@ def main() -> int:
     for rel, item in pages.items():
         entries = re.findall(r"^\s*-\s*target:\s*[\"']?\[\[([^\]|]+)(?:\|[^\]]+)?\]\][\"']?\s*\n\s*type:\s*([^\s#]+)", item["block"], re.M)
         for index, (target, kind) in enumerate(entries):
-            targets = resolve(target, pages, lookup)
+            targets = resolve(target, resolve_pages, resolve_lookup)
             if kind not in relationships:
                 relationship_findings.append({"page": rel, "index": index, "issue": "invalid_type", "value": kind})
             if not targets:

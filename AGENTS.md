@@ -84,6 +84,10 @@ Cut wasted context without waiting. A change MUST NOT count as an improvement if
 
 When `WIKI_STAGED_WRITES=true` (default for this vault), agents MUST land new/updated category pages under `wiki/_staging/<category>/` (patches as `*.patch.md`) — not directly into the live tree. Promote only via `wiki-stage-commit` after Nick reviews. `_raw/` remains the ingest inbox; `_archive/` holds promoted sources; `_staging/` is the LLM review queue. See `.agents/skills/wiki-stage-commit/SKILL.md` and `wiki/_staging/README.md`.
 
+## Edit discipline
+
+Re-read the target file before a multi-hunk edit. Stale line numbers produce overlapping hunks that the edit tool rejects wholesale. When replacing a large section, use one replacement covering the full range rather than multiple adjacent hunks that share boundary lines. Deletions are standalone operations — do not prefix deletion directives with replacement-body syntax.
+
 ## Helpers
 
 **Wiki maintenance loop:** weekday Layer A scans + fleet routing — `docs/agents/wiki-maintenance-loop.md` (issue #90). Quiet when clean. Never auto lore invent, mass kebab rename, dedup merge, or craft cuts.
@@ -169,7 +173,15 @@ Out-of-scope: constitution; feature specs; generated Spec Kit adapters; campaign
 
 Design-impact work: `docs/agents/skill-design-dispatch.md`.
 
+## Subagent discipline
+
+A subagent receives only bounded task inputs — the specific page paths, the scoped findings, the concrete question. Expose the task, not the feature scope. Full specs, design docs, and surrounding context stay with the parent; the subagent gets what it needs to act and nothing more.
+
+Let a scoped subagent finish. Repeated "wrap up" or "finish now" interrupts while the task is still progressing degrade output quality. If the task is taking longer than expected, wait for the scoped completion criterion. Interrupt only on a confirmed wrong direction or a hard time constraint — state which.
+
 ## Vault retrieval
+
+**QMD before grep.** Search QMD first for wiki content; use grep only for targeted evidence QMD cannot answer (exact line numbers, regex matches, file existence checks). Grep-first for wiki content violates retrieval precedence and produces lower-quality results.
 
 Search is on by default against collection `wiki`. Empty `QMD_WIKI_COLLECTION` still means `wiki`.
 
@@ -246,7 +258,7 @@ Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the 
 | "what do I know about X" / "find info on Y" / any question | `wiki-query` |
 | "use my vault as context" / "context pack for X" / "bounded context" | `wiki-context-pack` |
 | "narrate" / "briefing" / "explain this topic" | `wiki-narrate` |
-| "audit" / "lint" / "find broken links" / "wiki health" | `wiki-lint` |
+| "lint" / "lint <page>" / "fix broken links" / "audit" / "wiki health" | `wiki-lint` (default is repair; --check for report-only) |
 | "dedup my wiki" / "find duplicate pages" / "merge duplicates" | `wiki-dedup` |
 | "rebuild" / "start over" / "archive" / "restore" | `wiki-rebuild` |
 | "link my pages" / "cross-reference" / "connect my wiki" | `cross-linker` |

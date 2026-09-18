@@ -22,7 +22,7 @@ Never present invention as a wiki fact. Never mint a fake wiki citation.
 
 The DM accepts (optionally after edit) or rejects.
 
-- A direct imperative to write, update, apply, or file a named existing wiki page is acceptance for that named destination. File it directly.
+- A direct imperative to write, update, apply, repair, merge, or file a named existing wiki page is acceptance for that named destination. File it directly. An explicit repair or merge instruction satisfies the gate unless the requested change invents canon.
 - A request for ideas, drafting, review, or suggested changes without authorization to write is not acceptance. Propose in chat first.
 - Accept → then file a wiki page (`lifecycle: accepted`, or `proposed` if the DM asked to park it). Eligible for the table, and for canon if the DM says so.
 - Reject → no wiki page. Not presentable. Not canon.

@@ -2,7 +2,9 @@
   "strictLineBreaks": false,
   "showFrontmatter": false,
   "defaultViewMode": "preview",
-  "livePreview": true,
+  "livePreview": false,
   "alwaysUpdateLinks": true,
-  "promptDelete": false
+  "promptDelete": true,
+  "propertiesInDocument": "hidden",
+  "showInlineTitle": false
 }

@@ -105,10 +105,10 @@ tests/
 |---|---|---|
 | V. Single Source of Truth | PASS | Template contracts own section semantics. Identity signals come from existing frontmatter/manifest. Mutation operations are the single owner of wiki state transitions. Policy ownership registry prevents restated rules. |
 | VI. Software Is Agent-Shaped | PASS | All new surfaces are CLI: args in, JSON out, exit status. `wiki-identity`, `wiki-bulk-ops mutate`, `wiki-lint --scope`, `wiki-bulk-ops transact` follow the existing `scripts/` pattern. |
-| VIII. Safe Automation Runs Unattended | PASS | Mutations verify preconditions atomically. Transactions roll back on failure. Ambiguous identity blocks automatic mutation. Deterministic repairs are structural-only. |
+| VIII. Safe Automation Runs Unattended | PASS | Mutations verify preconditions atomically. Transactions roll back on failure. Ambiguous identity blocks automatic mutation and derived maintenance is deferred. Deterministic repairs are structural-only. |
 | IX. Measured, Quality-Bounded Efficiency | PASS | Scoped lint eliminates full-vault scans. Batched finalization eliminates redundant QMD refreshes. Compact JSON output stays under 1000 tokens for agent consumption. |
 | XIV. Designated Writers Have Bounded Concurrency | PASS | Content-hash preconditions enforce single-writer semantics per section. Transaction validation rejects overlapping mutations. |
-| XVI. The Simplest Adequate Tool | PASS | Reuses `wiki-bulk-ops` frontmatter parsing, link rewriting, atomic writes. stdlib hashlib for preconditions. Existing QMD provides content similarity. No new dependencies. |
+| XVI. The Simplest Adequate Tool | PASS | Reuses `wiki-bulk-ops` frontmatter parsing, link rewriting, and atomic writes. stdlib hashlib for preconditions. Existing QMD provides content similarity. No new frameworks or dependencies. |
 | XIX. Wiki Is Additive, Self-Sealing | PASS | Merges record `merged_into` transitions. Obsolete pages are removed without redirect stubs. Index and manifest updated atomically. No silent deletion of provenance. |
 
 **Post-design gate**: PASS. No `NEEDS CLARIFICATION` remains. All four layers (identity, mutation, scope, transaction) compose through existing CLI patterns. Template contracts are YAML co-located with templates. Error regression tests cover all 28 open errors in SC-007.

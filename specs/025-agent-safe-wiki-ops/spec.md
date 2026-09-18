@@ -16,8 +16,8 @@
 - Q: When scoped lint finds a link to a page outside the scope, should it silently skip, report info notices, or emit a summary? → A: Silent skip. Cross-scope links produce no output during scoped runs.
 - Q: Should template contracts flag deprecated patterns in the template source, in downstream pages, or both? → A: Both — template/skill source flagged as critical error (root cause), downstream pages containing inherited deprecated output flagged as error (symptom).
 - Q: When a merge creates a redirect stub, what triggers its removal? → A: No redirect stubs. Merges update the canonical page or do not write. Zero redirect files in the vault.
-- Q: Should identity resolution use quantitative content overlap (embeddings/cosine) or only discrete signals? → A: Full content similarity via QMD alongside discrete signals. QMD is already installed and used elsewhere — not a new dependency.
-- (User correction) Broken image/embed links (e.g., `![[fisks-fleet-banner]]` referencing a nonexistent asset) and pre-existing redirect stubs (e.g., `fisks-captains.md` with `redirects_to` frontmatter) are live vault errors the linter must detect so agents can fix them.
+- (User request 2026-09-17) QMD maintenance is an agent hook, not an agent reporting task: successful live wiki writes MUST trigger one serialized maintenance run that updates the index and attempts the configured embedding pass. Routine success is silent; only actionable failures are surfaced. A backlog after a successful bounded pass is derived state, not a repair instruction.
+- (Concurrency) Concurrent QMD hooks MUST serialize or return a deterministic `busy` result without starting a second QMD process; this prevents SQLite initialization races.
 
 ## User Scenarios & Testing
 
@@ -185,6 +185,9 @@ Policy rules (like acceptance semantics, callout vocabulary, template optionalit
 - **FR-019**: Lint MUST detect pre-existing redirect stubs (pages with the legacy `redirects_to` frontmatter key) as errors requiring deletion. The `redirects_to` key is deprecated — new tooling MUST NOT create pages using it or recognize it as a valid routing mechanism.
 - **FR-016**: Repeated agent operations MUST have one canonical command surface with consistent arguments, --help, JSON mode, explicit exit meanings, and actionable error messages. Commands MUST self-discover repository and vault paths from the environment (config resolution, git root, vault AGENTS.md) rather than requiring the agent to supply infrastructure paths.
 - **FR-017**: Template conformance findings MUST distinguish root-cause severity (deprecated pattern in the template/skill source = critical error) from symptom severity (inherited deprecated output in a downstream page = error).
+- **FR-020**: Every successful live wiki write boundary MUST invoke the repository QMD hook exactly once after the write set commits; the hook MUST run `qmd update` and attempt one configured embedding pass without requiring an agent to remember a maintenance command.
+- **FR-021**: The QMD hook MUST serialize concurrent invocations, suppress routine success output, emit one compact machine-readable result when requested, and return a non-zero status with one actionable error line when maintenance cannot complete.
+- **FR-022**: A QMD embedding backlog after a successful hook MUST remain a derived status field; it MUST NOT cause a successful hook or mutation to emit a verbose remediation narrative.
 
 ### Key Entities
 

@@ -4,8 +4,8 @@ description: >-
   Write, edit, or create named faction pages for the campaign wiki. Use when a
   faction, organization, order, guild, cult, polity, crew, movement, or cell
   needs a persistent page, missing named faction note, public face, DM thesis,
-  current state, active agenda, agenda clock, faction-turn log, assets, people,
-  places, or relationships. Fill wiki/templates/faction.md.
+  current state, active agenda, faction-turn log, assets, people, places, or
+  relationships. Fill wiki/templates/faction.md.
 ---
 
 # Faction Design
@@ -50,7 +50,7 @@ consequence.
 Read the brief, `wiki/templates/faction.md`, and relevant NPC, place, quest,
 city, region, vehicle, item, spell, prior faction, and session notes. Preserve
 established names, aliases, symbols, leaders, territory, resources, public
-claims, secret motives, relationships, standing with the party, clocks, and
+claims, secret motives, relationships, standing with the party, and
 open questions.
 
 Write one identity sentence before the page:
@@ -65,7 +65,13 @@ retrieving or ask for the missing premise before drafting the page.
 
 Copy `wiki/templates/faction.md`. The co-located
 `wiki/templates/contracts/faction.yml` owns required, optional, and lifecycle
-section semantics; do not restate those rules here. Fill these frontmatter fields:
+section semantics; do not restate those rules here. Sections marked
+`required: false` or lifecycle-gated `omit` may be omitted — only sections
+marked `required: true` must appear. The contract also sets
+`callouts: allowed: [narration]` — faction pages use only `[!narration]`;
+keep DM-facing material as ordinary prose, not warning/danger/secret callouts.
+
+Fill these frontmatter fields:
 
 ```yaml
 type: faction
@@ -116,7 +122,6 @@ Fill `## Active Agenda` on the faction page:
 
 - **Goal:** a concrete world change.
 - **Why:** why it matters now.
-- **Clock:** a 4- or 6-segment agenda clock when this faction has an active, trackable agenda; omit for dormant or dissolved factions.
 - **Next move:** what they are preparing or attempting next.
 - **Needs:** the enabling person, place, object, permission, resource, or event.
 - **Opposition:** who or what stands in the way.
@@ -126,8 +131,7 @@ Fill `## Active Agenda` on the faction page:
   negotiate, sabotage, support, or refuse.
 - **If completed:** the concrete new world state if the agenda succeeds.
 
-When the agenda is active, `hot.md` may point at it, but the clock lives only
-on the faction page. Do not store a second clock in `hot.md`.
+When the agenda is active, `hot.md` may reference it.
 
 ### 5. Add Only Table-Relevant Structure
 
@@ -167,11 +171,10 @@ Do not roll the Current Turn at create. `world-tick` later resolves turns and ap
 
 Use faction/front craft for concrete motives, visible portents, and consequences
 if unchecked; campaign-status practice for changed state over repeated rewrite;
-progress clocks for uncertain long-term change; and sandbox faction turns for
-goals, assets, moves, and changed world state. Practical inputs: Dungeon World
-fronts by Sage LaTorra and Adam Koebel, Justin Alexander's campaign status
-documents, Kevin Crawford's faction turns in Stars Without Number, progress
-clocks from Blades in the Dark, and Mike Shea's faction-list advice.
+and sandbox faction turns for goals, assets, moves, and changed world state.
+Practical inputs: Dungeon World fronts by Sage LaTorra and Adam Koebel, Justin
+Alexander's campaign status documents, Kevin Crawford's faction turns in Stars
+Without Number, and Mike Shea's faction-list advice.
 
 ## Done
 
@@ -182,7 +185,7 @@ The page is done when:
 - DM thesis is one sentence of campaign pressure.
 - Current state states status quo, recent change, pressure, strength,
   vulnerability, and opportunity.
-- Follow the template contract for agenda, clock, Current Turn, Turn Log, and
+- Follow the template contract for agenda, Current Turn, Turn Log, and
   lifecycle-dependent sections.
 - Assets, people, places, and relationships include only entries that currently
   change play.

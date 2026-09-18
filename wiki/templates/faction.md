@@ -76,13 +76,11 @@ flexGrow=1
 
 ## Active Agenda
 
-<!-- Keep one primary agenda whenever possible. Use a second only when independent projects genuinely matter. A clock records fictional progress; it does not force progress merely because time passed. -->
+<!-- Keep one primary agenda whenever possible. Use a second only when independent projects genuinely matter. -->
 
 **Goal:** A concrete change this faction is trying to make in the world.
 
 **Why:** Why this result matters to them now.
-
-<!-- Add a filled 4- or 6-segment clock only for an active, trackable agenda; omit for dormant or dissolved factions. -->
 
 **Next move:** The specific thing they are preparing or attempting next.
 
@@ -112,7 +110,6 @@ flexGrow=1
 <!-- Omit unless the faction can genuinely sustain an independent second project. -->
 
 **Goal:**
-**Clock:** ○ ○ ○ ○
 **Next move:**
 **Next signal:**
 **If completed:**
@@ -254,4 +251,4 @@ flexGrow=1
 ---
 
 
-<!-- Research basis: evolving-campaign status documents emphasize recording changed state rather than repeatedly rewriting original material. Faction/front techniques emphasize concrete motives, advancing threats, visible portents, and consequences if unchecked. Faction clocks track long-term goals while allowing PC actions to accelerate, interfere with, or redirect them. Sandbox faction turns use goals, relevant assets, actions, and changed world state to create off-screen motion. Vault structure follows the established entity metadata, DM visibility, wikilinking, narration, and omit-if-unused conventions. -->
+<!-- Research basis: evolving-campaign status documents emphasize recording changed state rather than repeatedly rewriting original material. Faction/front techniques emphasize concrete motives, advancing threats, visible portents, and consequences if unchecked. Sandbox faction turns use goals, relevant assets, actions, and changed world state to create off-screen motion. Vault structure follows the established entity metadata, DM visibility, wikilinking, narration, and omit-if-unused conventions. -->

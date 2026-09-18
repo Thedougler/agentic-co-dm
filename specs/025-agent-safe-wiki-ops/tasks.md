@@ -218,8 +218,6 @@ description: "Task list for Agent-Safe Wiki Operations"
 - [X] T053 Run every validation scenario in `specs/025-agent-safe-wiki-ops/quickstart.md` and record command-contract corrections in `tests/test_wiki_ops.py`
 - [X] T054 Run the focused suites from `specs/025-agent-safe-wiki-ops/quickstart.md`, then verify `python3 scripts/check-policy-conflicts --json` and `python3 scripts/wiki-lint --scope dir:entities/faction --json --vault wiki`
 
----
-
 ## Dependencies & Execution Order
 
 ### Phase Dependencies
