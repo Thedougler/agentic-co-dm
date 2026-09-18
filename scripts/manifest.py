@@ -14,6 +14,7 @@ Usage:
   python3 scripts/manifest.py record <vault> <source> --pages <page1> [page2 ...]
   python3 scripts/manifest.py upsert <vault> <source> --json '{...}'
   python3 scripts/manifest.py normalize <vault> [--dry-run]
+  python3 scripts/manifest.py tool-pages <vault> [--tool NAME] [--limit N]
 """
 from __future__ import annotations
 
@@ -149,9 +150,9 @@ def emit(data: Any) -> None:
 
 def emit_fmt(fmt: str, rows: list[dict[str, Any]]) -> None:
     if fmt == "tsv":
-        print("path\tlast_ingested\tpages")
+        print("path\tlast_ingested\tpages\tsource_type")
         for row in rows:
-            print(f"{row['path']}\t{row['last_ingested']}\t{row['pages']}")
+            print(f"{row['path']}\t{row['last_ingested']}\t{row['pages']}\t{row.get('source_type') or ''}")
         return
     emit(rows)
 
@@ -226,7 +227,7 @@ def cmd_list(args: argparse.Namespace) -> int:
         stamp = ingested_stamp(entry)
         if args.since and stamp < args.since:
             continue
-        rows.append({"path": key, "last_ingested": stamp, "pages": page_count(entry)})
+        rows.append({"path": key, "last_ingested": stamp, "pages": page_count(entry), "source_type": str(entry.get("source_type") or "")})
     rows.sort(key=lambda row: row["path"])
     if args.limit is not None:
         rows = rows[: args.limit]
@@ -432,6 +433,62 @@ def cmd_transition(args: argparse.Namespace) -> int:
 
 
 
+TOOL_TYPE_MAP = {
+    "claude_conversation": "claude",
+    "claude_memory": "claude",
+    "claude_audit_log": "claude",
+    "claude_desktop_session": "claude",
+    "codex_rollout": "codex",
+    "codex_index": "codex",
+    "codex_history": "codex",
+    "hermes_memory": "hermes",
+    "hermes_session": "hermes",
+    "openclaw_memory": "openclaw",
+    "openclaw_daily_note": "openclaw",
+    "openclaw_session": "openclaw",
+    "openclaw_dreams": "openclaw",
+    "copilot_session": "copilot",
+    "copilot_checkpoint": "copilot",
+    "copilot_transcript": "copilot",
+    "copilot_memory_artifact": "copilot",
+    "pi_session": "pi",
+    "document": "ingest",
+}
+
+
+def source_tool(source_type: str) -> str:
+    return TOOL_TYPE_MAP.get(source_type, "manual")
+
+
+def cmd_tool_pages(args: argparse.Namespace) -> int:
+    """Compact tool\tpage rows for memory-bridge. CLI loads the ledger; agent sees only this TSV/JSON."""
+    rows_out: list[tuple[str, str]] = []
+    seen: set[tuple[str, str]] = set()
+    for _key, entry, _where in iter_entries(load(args.vault)):
+        tool = source_tool(str(entry.get("source_type") or ""))
+        if args.tool and tool != args.tool:
+            continue
+        pages: set[str] = set()
+        for field in PAGE_FIELDS:
+            pages.update(str(item) for item in (entry.get(field) or []))
+        for page in sorted(pages):
+            pair = (tool, page)
+            if pair in seen:
+                continue
+            seen.add(pair)
+            rows_out.append(pair)
+    rows_out.sort(key=lambda row: (row[0], row[1]))
+    if args.limit is not None:
+        rows_out = rows_out[: args.limit]
+    if args.format == "tsv":
+        print("tool\tpage")
+        for tool, page in rows_out:
+            print(f"{tool}\t{page}")
+    else:
+        emit([{"tool": tool, "page": page} for tool, page in rows_out])
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--format", choices=("json", "tsv"), default="json")
@@ -496,6 +553,12 @@ def build_parser() -> argparse.ArgumentParser:
     vault_arg(normalize)
     normalize.add_argument("--dry-run", action="store_true")
     normalize.set_defaults(func=cmd_normalize)
+
+    tool_pages = sub.add_parser("tool-pages", help="compact tool\tpage rows for memory-bridge")
+    tool_pages.add_argument("vault", type=Path)
+    tool_pages.add_argument("--tool", default=None, help="filter to one tool (claude, codex, ...)")
+    tool_pages.add_argument("--limit", type=int, default=None)
+    tool_pages.set_defaults(func=cmd_tool_pages)
     return parser
 
 
