@@ -159,6 +159,47 @@ def test_scoped_lint_uses_full_vault_for_backlinks_and_index(tmp_path: Path):
     assert report["findings"]["index_issues"]["missing_from_index"] == []
 
 
+def test_scoped_lint_keeps_default_vale_in_acceptance_gate(tmp_path: Path):
+    page = tmp_path / "page.md"
+    page.write_text(
+        "---\n"
+        "title: Vale gate fixture\n"
+        "category: test\n"
+        "tags: []\n"
+        "sources: []\n"
+        "created: 2026-09-01\n"
+        "updated: 2026-09-16\n"
+        "type: session-prep\n"
+        "lifecycle: draft\n"
+        "reveal: dm\n"
+        "---\n\n"
+        "You decide the risk is worth it.\n",
+        encoding="utf-8",
+    )
+    default = run_cli(
+        "scripts/wiki-lint",
+        "--json",
+        "--scope",
+        "files:page.md",
+        "--vault",
+        tmp_path,
+    )
+    default_report = assert_json(default, returncode=1)
+    assert default_report["hard_fail"] is True
+    assert any(rule.startswith("VALE_") for rule in default_report["counts"])
+
+    structural_only = run_cli(
+        "scripts/wiki-lint",
+        "--json",
+        "--no-vale",
+        "--scope",
+        "files:page.md",
+        "--vault",
+        tmp_path,
+    )
+    structural_report = assert_json(structural_only, returncode=0)
+    assert structural_report["hard_fail"] is False
+
 def test_mutation_hash_and_dry_run():
     page = (FIXTURE / "fisks-fleet.md").read_text()
     section = parse_sections(page).find(["Overview"])

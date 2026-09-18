@@ -30,6 +30,10 @@ You are performing a health check on an Obsidian wiki. Your goal is to find and 
 Pass the effective schema to deterministic checks explicitly. For example, add each owner extension with `--allow-lifecycle` / `--allow-relationship-type`, replace trust requiredness with repeatable `--required-trust-field`, and identify the authority with `--schema-source "$OBSIDIAN_VAULT_PATH/AGENTS.md"`. The JSON report's `schema` block must match the schema you formed before findings are accepted.
 
 Schema precedence is CLI flags > resolved environment/config values > framework defaults; lifecycle and relationship extensions remain additive. Strip every override before use. An explicitly configured empty or whitespace-only value—and any empty comma-separated list entry—fails closed; never treat it as a valid lifecycle, relationship type, required field, or authority locator. Remove the variable instead when defaults are intended.
+**Vale is part of the acceptance gate:** the page-scoped command above runs the default Vale pass. Treat every `VALE_*` finding as a lint finding and repair it when the finding declares a deterministic repair. A genuine false positive requires correcting the Vale rule/config or adding a narrowly scoped exemption with a regression fixture, then rerunning the default command. `--no-vale` is an isolation diagnostic only; never use it for final verification or report a page as clean while the default run remains non-zero or reports `hard_fail: true`.
+
+Overall-clean means the default page-scoped JSON report has no fixable findings, `hard_fail: false`, and exit code `0`; structural-clean with Vale disabled is not overall-clean.
+
 
 ## Page-Scoped Repair
 
@@ -42,7 +46,7 @@ When a page path is given ("lint entities/faction/the-passage.md"), repair that 
 5. **Skip rule 12e** (trust-check) when `_meta/trust-ledger.json` does not exist. Trust review is not a lint gate for vaults that do not use it.
 6. **QMD refresh** — if QMD is available and the page was modified, run `${QMD_CLI:-qmd} update`.
 
-Done when: every fixable finding on the named page is repaired. Unfixable findings are listed with reasons. No vault-wide scan was performed.
+Done when: every fixable finding on the named page is repaired, the default page-scoped command exits `0` with `hard_fail: false`, and any unfixable findings are listed with reasons. No vault-wide scan was performed.
 
 Pass `--check` to report findings without repairing them. The full vault flow below runs when no page path is given.
 
@@ -59,7 +63,7 @@ When vault-wide lint finds fixable issues across multiple files and `--check` is
    d. Commit this file's changes before opening the next.
 4. **Degradation stop.** After each file completes, assess output quality and remaining context. If quality has degraded (wrong fixes, missed findings, shallow repairs) or context is filling, stop. Report files completed so far, list the remaining backlog, and recommend delegating the rest to a fresh agent.
 
-Done when: every file in the backlog is repaired and verified clean, or the degradation stop fired with a delegation recommendation.
+Done when: every file in the backlog is repaired and each file's default page-scoped verification exits `0` with `hard_fail: false`, or the degradation stop fired with a delegation recommendation.
 
 ## Lint Checks
 

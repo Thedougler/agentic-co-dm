@@ -1,3 +1,4 @@
+
 # Agentic Co-DM Constitution
 <!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
 
@@ -437,6 +438,27 @@ requirements. Subagents MUST receive only the context necessary to complete thei
 Rationale: bounded delegation scales reasoning and parallelizes independent work without
 transferring accountability.
 
+### XXIII. Wiki-Grounded Validation
+
+Agents MUST NOT validate Wiki-affecting work in a vacuum. Validation MUST exercise the current
+authoritative Wiki and the real repository surfaces that agents are meant to change. Fixture-only
+tests, synthetic copies, isolated examples, and source inspection MUST NOT be the sole evidence for
+work that affects Wiki retrieval, identity, mutation, linting, indexing, provenance, staging, or
+presentation.
+
+The agent MUST select a representative live-Wiki or temporary-vault scenario that uses current
+schemas, links, manifest and index state, and applicable owner pages. When a safe isolated test
+vault is required, it MUST be derived from and checked against current Wiki structure, and the
+completion evidence MUST state the Wiki check. Validation MUST distinguish fixture defects from
+defects in current Wiki content and MUST repair the authoritative source when the Wiki exposes a
+failure.
+
+If Wiki-grounded validation cannot run, the agent MUST record the blocker and compensating evidence
+before completion. It MUST NOT claim that fixtures prove repository behavior.
+
+Rationale: fixtures catch regressions in modeled cases; current Wiki validation reveals schema drift,
+identity collisions, stale links, provenance gaps, and content-shape failures that fixtures omit.
+
 ## Operating Boundaries
 
 - The Co-DM works in prep and wrapup windows; the DM is the sole runtime at the table.
@@ -489,4 +511,4 @@ not prevent a named safety failure MUST be rejected or resolved by an ADR.
 Project operating context: `AGENTS.md`. Harness-specific agent behavior: `OMP.md`, `CODEX.md`,
 `CLAUDE.md`, and `GROK.md`.
 
-**Version**: 2.8.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 2.9.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17

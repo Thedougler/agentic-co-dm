@@ -76,35 +76,68 @@ def map_vale_output(payload: dict[str, Any], registry: Registry, *, root: Path |
     return findings
 
 
+def _resolve_vale(root: Path, executable: str) -> str | None:
+    requested = Path(executable)
+    if requested.is_absolute() or requested.parent != Path("."):
+        return str(requested) if requested.is_file() and os.access(requested, os.X_OK) else None
+    project_binary = root / ".venv" / "bin" / executable
+    return str(project_binary) if project_binary.is_file() and os.access(project_binary, os.X_OK) else None
+
+
+def _runtime_failure(files: list[Path], root: Path, reason: str) -> Finding:
+    filename = _relative_file(files[0], root) if files else ""
+    return Finding(
+        rule_id="VALE_RUNTIME",
+        result="fail",
+        severity="BLOCK",
+        location={"file": filename, "line": 1},
+        evidence=reason,
+        reason=reason,
+        evaluator="vale",
+    )
+
+
 def run_vale(files: list[Path], registry: Registry, *, root: Path | None = None,
-             severity_overrides: dict[str, str] | None = None,
+             vault: Path | None = None, severity_overrides: dict[str, str] | None = None,
              executable: str = "vale") -> tuple[list[Finding], list[str]]:
     root = (root or ROOT).resolve()
     if not files:
         return [], []
-    binary = shutil.which(executable)
+    warnings: list[str] = []
+    try:
+        from .vale_vocab import refresh_vocab
+        refresh_vocab(root, (vault or root / "wiki").resolve())
+    except (OSError, ValueError) as exc:
+        reason = f"Vale proper-noun vocabulary refresh failed: {exc}"
+        return [_runtime_failure(files, root, reason)], [reason]
+    binary = _resolve_vale(root, executable)
     if not binary:
-        return [], [f"Vale is not installed; skipped {len(files)} file(s)"]
+        reason = f"Project-local Vale is not installed at {root / '.venv' / 'bin' / executable}; run uv sync"
+        return [_runtime_failure(files, root, reason)], [reason]
     command = [
         binary, "--output=JSON",
         f"--config={root / '.vale.ini'}",
         *[_relative_file(p, root) for p in files],
     ]
     proc = subprocess.run(command, cwd=root, capture_output=True, text=True, env=os.environ.copy())
-    warnings: list[str] = []
     if proc.stderr.strip():
         warnings.append(proc.stderr.strip())
     if proc.returncode not in (0, 1):
-        warnings.append(f"Vale exited {proc.returncode}")
-        return [], warnings
+        reason = f"Vale exited {proc.returncode}"
+        warnings.append(reason)
+        return [_runtime_failure(files, root, reason)], warnings
     if not proc.stdout.strip():
-        return [], warnings
+        reason = "Vale returned no JSON output"
+        warnings.append(reason)
+        return [_runtime_failure(files, root, reason)], warnings
     try:
         payload = json.loads(proc.stdout)
     except json.JSONDecodeError as exc:
-        warnings.append(f"Vale returned invalid JSON: {exc}")
-        return [], warnings
+        reason = f"Vale returned invalid JSON: {exc}"
+        warnings.append(reason)
+        return [_runtime_failure(files, root, reason)], warnings
     if not isinstance(payload, dict):
-        warnings.append("Vale returned a non-object JSON payload")
-        return [], warnings
+        reason = "Vale returned a non-object JSON payload"
+        warnings.append(reason)
+        return [_runtime_failure(files, root, reason)], warnings
     return map_vale_output(payload, registry, root=root, severity_overrides=severity_overrides), warnings

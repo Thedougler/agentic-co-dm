@@ -164,7 +164,7 @@ class LintEngine:
         warnings: list[str] = []
 
         vale_findings, vale_warnings = run_vale(
-            selected, self.registry, root=self.root, severity_overrides=active_overrides
+            selected, self.registry, root=self.root, vault=self.vault, severity_overrides=active_overrides
         )
         warnings.extend(vale_warnings)
         findings = [finding for finding in vale_findings
