@@ -7276,7 +7276,7 @@
     "project": "shattered-sea",
     "source_type": "document"
   },
-  "last_updated": "2026-09-18T07:38:36Z",
+  "last_updated": "2026-09-18T16:24:17Z",
   "page_identity_transitions": [
     {
       "page_path": "entities/faction/Khlysty.md",
@@ -8350,7 +8350,7 @@
     },
     "_raw/session-11-summary.md": {
       "content_hash": "sha256:5b818e023af61a0e501284d8bfb8d7ddd9fa3f1106b962724346147d4bfcf335",
-      "last_ingested": "2026-09-14T22:31:00Z",
+      "last_ingested": "2026-09-18T16:23:57Z",
       "pages_produced": [
         "journal/sessions/shattered-sea/11/Session-11-Recap.md"
       ],
@@ -8359,7 +8359,7 @@
     },
     "_raw/session-11-transcript.md": {
       "content_hash": "sha256:ebaab304136e0feef351bfc9a0def3f7a3a6b4e607220f60223b3523371e1c26",
-      "last_ingested": "2026-09-14T22:30:00Z",
+      "last_ingested": "2026-09-18T16:23:57Z",
       "pages_produced": [
         "journal/sessions/shattered-sea/11/Session-11-Recap.md",
         "entities/npc/matteo-scola.md",
@@ -8374,7 +8374,8 @@
         "entities/item/Ghost Plum.md",
         "entities/item/Aruhe - Stonepear.md",
         "entities/item/Redheart Berry.md",
-        "entities/item/Aruhe - Lesser Black Lotus.md"
+        "entities/item/Aruhe - Lesser Black Lotus.md",
+        "journal/sessions/shattered-sea/11/Session-11-Transcript.md"
       ],
       "project": "shattered-sea",
       "source_type": "document"
@@ -8396,12 +8397,29 @@
         "entities/npc/Hinewai.md",
         "entities/npc/the-unnamed-companion.md"
       ]
+    },
+    "/home/box/agentic-co-dm/wiki/_archive/session-11-summary.md": {
+      "content_hash": "sha256:5b818e023af61a0e501284d8bfb8d7ddd9fa3f1106b962724346147d4bfcf335",
+      "last_ingested": "2026-09-18T16:23:57Z",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-Recap.md"
+      ]
+    },
+    "/home/box/agentic-co-dm/wiki/_archive/session-11-transcript.md": {
+      "content_hash": "sha256:ebaab304136e0feef351bfc9a0def3f7a3a6b4e607220f60223b3523371e1c26",
+      "last_ingested": "2026-09-18T16:24:17Z",
+      "pages_produced": [
+        "journal/sessions/shattered-sea/11/Session-11-Recap.md",
+        "journal/sessions/shattered-sea/11/Session-11-Transcript.md"
+      ],
+      "source_type": "document",
+      "project": "shattered-sea"
     }
   },
   "stats": {
     "packet_ingest-raw-2026-09-13-gh-2": 515,
-    "total_pages": 754,
-    "total_sources_ingested": 817
+    "total_pages": 755,
+    "total_sources_ingested": 819
   },
   "version": 1
 }
