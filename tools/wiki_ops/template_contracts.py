@@ -121,3 +121,4 @@ def check_conformance(page_path: str | Path, page_text: str, contract: TemplateC
             "target": fields["redirects_to"],
             "reason": "redirects_to pages are legacy stubs, not canonical entities",
         })
+    return findings

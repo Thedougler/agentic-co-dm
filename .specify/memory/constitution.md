@@ -421,6 +421,22 @@ affected artifact.
 Rationale: linter output is quality feedback, not an obstacle; root-cause repair improves the Wiki
 and prevents the same defect from recurring.
 
+### XXII. Appropriate Delegation
+
+Agents SHOULD delegate bounded, independent, or specialized work to task subagents when doing so
+reduces context load, shortens wall-clock time, improves independent verification, or matches
+available expertise. The delegating agent MUST provide scoped inputs, exact acceptance criteria,
+shared contracts, and ownership boundaries. The delegating agent MUST retain responsibility for
+integration and final correctness.
+
+Agents MUST NOT delegate when round-trip overhead, shared mutable state, or missing context makes
+direct execution safer or cheaper. Delegation MUST NOT replace understanding, review, or required
+evidence, and MUST NOT be used to evade source-of-truth, safety, quality, or user-approval
+requirements. Subagents MUST receive only the context necessary to complete their bounded task.
+
+Rationale: bounded delegation scales reasoning and parallelizes independent work without
+transferring accountability.
+
 ## Operating Boundaries
 
 - The Co-DM works in prep and wrapup windows; the DM is the sole runtime at the table.
@@ -473,4 +489,4 @@ not prevent a named safety failure MUST be rejected or resolved by an ADR.
 Project operating context: `AGENTS.md`. Harness-specific agent behavior: `OMP.md`, `CODEX.md`,
 `CLAUDE.md`, and `GROK.md`.
 
-**Version**: 2.7.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 2.8.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17

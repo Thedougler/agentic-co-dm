@@ -12,7 +12,7 @@ from tools.wiki_ops.index_ops import insert_index_entry, remove_index_entry, rep
 from tools.wiki_ops.identity import resolve_identity, scan_identities
 from tools.wiki_ops.manifest_ops import ManifestTransition, apply_transition
 from tools.wiki_ops.mutations import MutationOp, apply_mutation, parse_sections, section_hash
-from tools.wiki_ops.template_contracts import check_conformance, load_contract
+from tools.wiki_ops.repair_plans import build_plan
 from tools.wiki_ops.scope import parse_scope
 from tools.wiki_ops.transactions import Transaction
 
@@ -261,11 +261,38 @@ def test_template_contract_respects_lifecycle_and_redirect_stubs():
     assert any(item["rule_id"] == "TMPL_redirect_stub" for item in findings)
     assert not any(item["section"] == "Active Agenda" for item in findings if "section" in item)
 
+
+def test_scope_and_cli_pipeline_resolve_typed_surface(tmp_path: Path):
+    (tmp_path / "entities").mkdir()
+    page = tmp_path / "entities" / "guard.md"
+    page.write_text("---\ntitle: Guard\ntype: npc\n---\n# Guard\n", encoding="utf-8")
+    directory = parse_scope("dir:entities").resolve(tmp_path)
+    assert directory.resolved_files == ["entities/guard.md"]
+    typed = parse_scope("type:npc").resolve(tmp_path)
+    assert typed.resolved_files == ["entities/guard.md"]
+    result = run_cli("wiki-identity", "resolve", "entities/guard.md", vault=tmp_path)
+    payload = assert_json(result)
+    assert payload["status"] == "resolved"
+
 def _fake_qmd(path: Path, body: str) -> Path:
     script = path / "qmd"
     script.write_text("#!/bin/sh\nset -eu\n" + body, encoding="utf-8")
     script.chmod(0o755)
     return script
+
+
+def test_repair_plan_contains_only_allowlisted_deterministic_actions(tmp_path: Path):
+    page = tmp_path / "old.md"
+    page.write_text("---\ntitle: Old\nredirects_to: new\n---\n# Old\n", encoding="utf-8")
+    plan = build_plan(
+        tmp_path,
+        {"findings": {"templates": [
+            {"file": "old.md", "repair_class": "deterministic_repair", "repair_action": "delete_redirect_stub", "target": "new"},
+            {"file": "old.md", "repair_class": "human_repair", "repair_action": "invent_canon"},
+        ]}},
+    )
+    assert [item["action"] for item in plan["actions"]] == ["delete_redirect_stub"]
+    assert plan["requires_approval"] is True
 
 
 def _run_qmd_hook(temp: Path, *, body: str, extra_env: dict[str, str] | None = None) -> subprocess.CompletedProcess[str]:
