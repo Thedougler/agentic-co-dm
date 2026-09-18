@@ -209,6 +209,8 @@ description: "Implementation tasks for agent-safe wiki lint, repair, and consoli
 - [X] T044 Run every validation scenario in `specs/025-agent-safe-wiki-ops/quickstart.md`, including `tests/test_wiki_ops.py`, `tests/test_creative_lint.py`, `tests/test_policy_conflicts.py`, Vale JSON output, malformed-index rejection, and the full causal regression set for e-10 and e-12 through e-38.
 - [X] T045 Run the repository's targeted baseline checks after the feature scenarios, including `scripts/check-omp-baseline.sh` and `python3 tools/check_readme_sync.py`, and record any actionable runtime failure in `errors.md` before completion.
 
+- [X] T046 Add 1-based source line numbers to default structural, template, and Vale lint findings, preserve them in `findings_by_file`, emit only actual findings or `status: "clean"`, add `--verbose` for the full zero-count matrix, and add CLI regression coverage.
+
 ---
 
 ## Dependencies & Execution Order

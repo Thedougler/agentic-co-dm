@@ -4,7 +4,7 @@
 
 ## Overview
 
-`scripts/wiki-lint` is extended with subcommands for creative linting. Existing no-subcommand behavior is unchanged.
+`scripts/wiki-lint` is extended with subcommands for creative linting. Existing no-subcommand delegation remains; structural output is sparse by default (actual findings or `status: "clean"`), and `--verbose` restores the full zero-count report.
 
 ## Commands
 

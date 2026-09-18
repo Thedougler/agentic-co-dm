@@ -34,10 +34,66 @@ def run_lint(vault: Path, extra: list[str]) -> tuple[int, dict]:
     return proc.returncode, json.loads(proc.stdout)
 
 
+def _line_for_finding(vault: Path, item: dict[str, Any]) -> int:
+    """Return an existing or best-effort 1-based source line for a finding."""
+    existing = item.get("line")
+    if isinstance(existing, int) and existing > 0:
+        return existing
+    location = item.get("location")
+    if isinstance(location, dict):
+        existing = location.get("line")
+        if isinstance(existing, int) and existing > 0:
+            return existing
+    raw_path = item.get("file") or item.get("page") or item.get("path")
+    if not raw_path:
+        return 1
+    path = Path(str(raw_path))
+    candidates = [path] if path.is_absolute() else [vault / path, ROOT / path]
+    source = next((candidate for candidate in candidates if candidate.is_file()), None)
+    if source is None:
+        return 1
+    try:
+        text = source.read_text(encoding="utf-8")
+    except OSError:
+        return 1
+    needles: list[str] = []
+    for key in ("text", "target", "token", "callout", "value"):
+        value = item.get(key)
+        if isinstance(value, str) and value:
+            needles.append(value)
+            if key == "target":
+                needles.append(f"[[{value}]]")
+    section = item.get("section")
+    if isinstance(section, str) and section:
+        needles.append(section)
+    for needle in needles:
+        offset = text.find(needle)
+        if offset >= 0:
+            return text.count("\n", 0, offset) + 1
+    return 1
+
+
+def _add_line_number(vault: Path, item: dict[str, Any]) -> dict[str, Any]:
+    result = dict(item)
+    result["line"] = _line_for_finding(vault, result)
+    return result
+
+
+def _iter_grouped_findings(rule: str, value: Any):
+    if isinstance(value, list):
+        for item in value:
+            if isinstance(item, dict):
+                yield rule, item
+    elif isinstance(value, dict):
+        for child_rule, child_value in value.items():
+            yield from _iter_grouped_findings(f"{rule}.{child_rule}", child_value)
+
+
 def structural_main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("vault", nargs="?", default=None)
     parser.add_argument("--json", action="store_true")
+    parser.add_argument("--verbose", action="store_true", help="include clean checks and zero counts")
     parser.add_argument("--vault", dest="vault_override")
     parser.add_argument("--scope")
     parser.add_argument("--no-vale", dest="vale", action="store_false", default=True)
@@ -65,6 +121,8 @@ def structural_main(argv: list[str]) -> int:
             extra.append("--hard-only")
         for value in args.allow_lifecycle:
             extra.extend(["--allow-lifecycle", value])
+        if args.verbose:
+            extra.append("--verbose")
         for value in args.allow_relationship_type:
             extra.extend(["--allow-relationship-type", value])
         if scope:
@@ -119,6 +177,7 @@ def structural_main(argv: list[str]) -> int:
                 report.setdefault("findings", {})["template_conformance"] = template_findings
                 report.setdefault("counts", {})["template_conformance"] = len(template_findings)
                 report["hard_fail"] = True
+                report["status"] = "findings"
         if args.vale and scope:
             from tools.creative_lint.bundles import BundleRegistry
             from tools.creative_lint.engine import LintEngine
@@ -141,25 +200,42 @@ def structural_main(argv: list[str]) -> int:
                 for finding in vale_findings:
                     rule_id = str(finding["rule_id"])
                     item = dict(finding)
-                    item["file"] = item.pop("location", {}).get("file", "")
+                    location = item.pop("location", {})
+                    item["file"] = location.get("file", "")
+                    item["line"] = location.get("line", 1)
                     findings.setdefault(rule_id, []).append(item)
                     report.setdefault("counts", {})[rule_id] = len(findings[rule_id])
-                report["hard_fail"] = True
+                report["status"] = "findings"
+        if not args.verbose:
+            counts = report.get("counts") or {}
+            report["findings"] = {
+                rule: items
+                for rule, items in (report.get("findings") or {}).items()
+                if counts.get(rule)
+            }
+            report["counts"] = {rule: value for rule, value in counts.items() if value}
+            report["status"] = "findings" if report["counts"] else "clean"
+
         if args.plan:
             from tools.wiki_ops.repair_plans import build_plan
             report = build_plan(vault, report, scope=scope.to_dict() if scope else None)
         if scope:
             report["scope"] = scope.to_dict()
             report["files_checked"] = len(scope.resolved_files)
-        grouped: dict[str, list[dict[str, Any]]] = {}
         for rule, items in (report.get("findings") or {}).items():
             if not isinstance(items, list):
                 continue
-            for item in items:
-                if isinstance(item, dict):
-                    filename = str(item.get("file") or item.get("page") or "")
-                    if filename:
-                        grouped.setdefault(filename, []).append({"rule": rule, **item})
+            report["findings"][rule] = [
+                _add_line_number(vault, item) if isinstance(item, dict) else item
+                for item in items
+            ]
+        grouped: dict[str, list[dict[str, Any]]] = {}
+        for rule, items in (report.get("findings") or {}).items():
+            for grouped_rule, item in _iter_grouped_findings(rule, items):
+                item = _add_line_number(vault, item)
+                filename = str(item.get("file") or item.get("page") or "")
+                if filename:
+                    grouped.setdefault(filename, []).append({"rule": grouped_rule, **item})
         report["findings_by_file"] = {key: grouped[key] for key in sorted(grouped)}
         if args.json:
             print(json.dumps(report, sort_keys=True, separators=(",", ":")))

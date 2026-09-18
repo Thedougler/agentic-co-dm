@@ -155,8 +155,94 @@ def test_scoped_lint_uses_full_vault_for_backlinks_and_index(tmp_path: Path):
         ),
         returncode=1,
     )
-    assert report["findings"]["orphan_pages"] == []
-    assert report["findings"]["index_issues"]["missing_from_index"] == []
+    assert report["findings"].get("orphan_pages", []) == []
+    assert report["findings"].get("index_issues", {}).get("missing_from_index", []) == []
+
+def test_default_lint_output_includes_source_line_numbers(tmp_path: Path):
+    page = tmp_path / "page.md"
+    page.write_text(
+        "---\n"
+        "title: Line fixture\n"
+        "category: test\n"
+        "tags: []\n"
+        "sources: []\n"
+        "created: 2026-09-01\n"
+        "updated: 2026-09-17\n"
+        "type: session-prep\n"
+        "lifecycle: draft\n"
+        "reveal: dm\n"
+        "---\n\n"
+        "# Line fixture\n\n"
+        "A broken edge: [[missing-owner]].\n",
+        encoding="utf-8",
+    )
+    result = run_cli(
+        "scripts/wiki-lint",
+        "--no-vale",
+        "--no-template",
+        "--all",
+        "--scope",
+        "files:page.md",
+        "--vault",
+        tmp_path,
+    )
+    report = assert_json(result, returncode=1)
+    broken = report["findings"]["broken_links"][0]
+    assert broken["page"] == "page.md"
+    assert broken["line"] == 15
+    grouped = report["findings_by_file"]["page.md"]
+    assert any(item["rule"] == "broken_links" and item["line"] == 15 for item in grouped)
+    assert report["status"] == "findings"
+    assert "orphan_pages" not in report["findings"]
+
+    verbose = run_cli(
+        "scripts/wiki-lint",
+        "--verbose",
+        "--no-vale",
+        "--no-template",
+        "--all",
+        "--scope",
+        "files:page.md",
+        "--vault",
+        tmp_path,
+    )
+    verbose_report = assert_json(verbose, returncode=1)
+    assert verbose_report["findings"]["orphan_pages"] == []
+    assert verbose_report["counts"]["orphan_pages"] == 0
+    clean = tmp_path / "clean.md"
+    clean.write_text(
+        "---\n"
+        "title: Clean fixture\n"
+        "category: test\n"
+        "tags: []\n"
+        "sources: []\n"
+        "summary: Clean fixture.\n"
+        "created: 2026-09-17\n"
+        "updated: 2026-09-17\n"
+        "type: session-prep\n"
+        "lifecycle: draft\n"
+        "reveal: dm\n"
+        "base_confidence: 0.8\n"
+        "---\n\n"
+        "# Clean fixture\n",
+        encoding="utf-8",
+    )
+    (tmp_path / "index.md").write_text("- [[clean]]\n", encoding="utf-8")
+    clean_result = run_cli(
+        "scripts/wiki-lint",
+        "--no-vale",
+        "--no-template",
+        "--all",
+        "--scope",
+        "files:clean.md",
+        "--vault",
+        tmp_path,
+    )
+    clean_report = assert_json(clean_result, returncode=0)
+    assert clean_report["status"] == "clean"
+    assert clean_report["findings"] == {}
+    assert clean_report["counts"] == {}
+
 
 
 def test_scoped_lint_keeps_default_vale_in_acceptance_gate(tmp_path: Path):
@@ -187,6 +273,13 @@ def test_scoped_lint_keeps_default_vale_in_acceptance_gate(tmp_path: Path):
     default_report = assert_json(default, returncode=1)
     assert default_report["hard_fail"] is True
     assert any(rule.startswith("VALE_") for rule in default_report["counts"])
+    vale_items = [
+        item
+        for rule, items in default_report["findings"].items()
+        if rule.startswith("VALE_")
+        for item in items
+    ]
+    assert vale_items and all(item["line"] >= 1 for item in vale_items)
 
     structural_only = run_cli(
         "scripts/wiki-lint",

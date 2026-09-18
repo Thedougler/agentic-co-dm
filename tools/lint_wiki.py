@@ -76,6 +76,30 @@ def body_after_frontmatter(text: str) -> tuple[int, str]:
     body_offset = 4 + after
     start_line = text[:body_offset].count("\n") + 1
     return start_line, text[body_offset:]
+def line_number(text: str, *needles: str, default: int = 1) -> int:
+    """Return the 1-based line containing the first matching needle."""
+    for needle in needles:
+        if not needle:
+            continue
+        offset = text.find(needle)
+        if offset >= 0:
+            return text.count("\n", 0, offset) + 1
+    return default
+
+
+def field_line(text: str, field: str) -> int:
+    """Return the 1-based line for a frontmatter field, or line 1 if absent."""
+    match = re.search(rf"(?m)^{re.escape(field)}\s*:", text)
+    if match:
+        return text.count("\n", 0, match.start()) + 1
+    return 1
+
+
+def page_line(item: dict[str, Any], field: str | None = None, *needles: str) -> int:
+    text = str(item.get("text", ""))
+    if field:
+        return field_line(text, field)
+    return line_number(text, *needles)
 
 
 def classify_table_cell(cell: str) -> tuple[str, str] | None:
@@ -219,17 +243,25 @@ def resolve(raw: str, pages: dict[str, dict], lookup: dict[str, list[str]]) -> l
     return []
 
 
-def links(text: str) -> list[str]:
-    # Ignore wikilinks that appear only inside inline code spans.
+def link_occurrences(text: str) -> list[tuple[str, int]]:
+    """Return wikilink targets with their 1-based source lines."""
     scrubbed = TOKEN.sub(lambda m: " " * len(m.group(0)), text)
-    return [m.group(1).split("|", 1)[0].strip() for m in re.finditer(r"(?<!!)\[\[([^\]]+)\]\]", scrubbed)]
+    return [
+        (m.group(1).split("|", 1)[0].strip(), text.count("\n", 0, m.start()) + 1)
+        for m in re.finditer(r"(?<!!)\[\[([^\]]+)\]\]", scrubbed)
+    ]
+
+
+def links(text: str) -> list[str]:
+    return [target for target, _line in link_occurrences(text)]
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("vault", type=Path, nargs="?", default=Path("wiki"))
     parser.add_argument("--json", action="store_true", help="emit JSON")
-    parser.add_argument("--hard-only", action="store_true", help="exit nonzero only on HARD findings")
+    parser.add_argument("--verbose", action="store_true", help="include clean checks and zero counts")
+    parser.add_argument("--hard-only", action="store_true", help=argparse.SUPPRESS)
     parser.add_argument("--schema-source", type=Path, help="Owner AGENTS.md (default: <vault>/AGENTS.md)")
     parser.add_argument("--allow-lifecycle", action="append", default=[])
     parser.add_argument("--allow-relationship-type", action="append", default=[])
@@ -261,6 +293,7 @@ def pc_identity_mismatches(pages: dict[str, dict]) -> list[dict[str, object]]:
                 "role": role or None,
                 "has_player": has_player,
                 "path": rel,
+                "line": page_line(item, "type") if typ else page_line(item, "role"),
             })
     return out
 
@@ -268,6 +301,7 @@ def pc_identity_mismatches(pages: dict[str, dict]) -> list[dict[str, object]]:
 ILLEGAL_BASENAME_CHARS = re.compile(r'[/\\:*?"<>|\x00-\x1f]')
 ARUHE_PREFIX = re.compile(r"^Aruhe\s*-\s*", re.I)
 SNAKE_OWNER_STEM = re.compile(r"^[a-z0-9]+(_[a-z0-9]+)+$")
+
 
 def illegal_basename_issues(stem: str) -> list[str]:
     """Forbidden basename stem characters/shape (spaces reported separately)."""
@@ -291,7 +325,7 @@ def spaced_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
             continue
         stem = Path(rel).stem
         if any(ch.isspace() for ch in stem):
-            out.append({"page": rel, "stem": stem})
+            out.append({"page": rel, "stem": stem, "line": 1})
     return out
 
 
@@ -305,7 +339,7 @@ def aruhe_prefix_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
             continue
         stem = Path(rel).stem
         if ARUHE_PREFIX.match(stem):
-            out.append({"page": rel, "stem": stem})
+            out.append({"page": rel, "stem": stem, "line": 1})
     return out
 
 
@@ -318,7 +352,7 @@ def illegal_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
         stem = Path(rel).stem
         reasons = illegal_basename_issues(stem)
         if reasons:
-            out.append({"page": rel, "stem": stem, "reasons": reasons})
+            out.append({"page": rel, "stem": stem, "reasons": reasons, "line": 1})
     return out
 
 
@@ -331,7 +365,7 @@ def duplicate_stems(pages: dict[str, dict]) -> list[dict[str, object]]:
         stem = Path(rel).stem
         groups[stem.casefold()].append(rel)
     return [
-        {"stem": Path(members[0]).stem, "pages": sorted(members)}
+        {"stem": Path(members[0]).stem, "pages": sorted(members), "lines": [1 for _ in members]}
         for _key, members in sorted(groups.items())
         if len(members) > 1
     ]
@@ -348,10 +382,8 @@ def snake_case_owner_basenames(pages: dict[str, dict]) -> list[dict[str, object]
             continue
         stem = Path(rel).stem
         if SNAKE_OWNER_STEM.fullmatch(stem):
-            out.append({"page": rel, "stem": stem, "kind": "snake"})
+            out.append({"page": rel, "stem": stem, "kind": "snake", "line": 1})
     return out
-
-
 
 def main() -> int:
     args = parse_args()
@@ -389,14 +421,15 @@ def main() -> int:
 
     missing = {rel: [key for key in REQUIRED + CAMPAIGN_REQUIRED if key not in item["fields"]]
                for rel, item in pages.items()}
-    findings["missing_frontmatter"] = {
-        rel: fields
+    findings["missing_frontmatter"] = [
+        {"page": rel, "missing": fields, "line": 1}
         for rel, fields in missing.items()
         if fields and not pages[rel]["fields"].get("redirects_to")
-    }
+    ]
     findings["redirect_stubs"] = [
         {
             "page": rel,
+            "line": field_line(item["text"], "redirects_to"),
             "target": item["fields"].get("redirects_to", "").strip("\"'"),
             "severity": "REPAIR",
             "repair_class": "deterministic_repair",
@@ -410,13 +443,30 @@ def main() -> int:
         for rel, item in pages.items()
         if item["fields"].get("redirects_to")
     ]
-    findings["missing_summary"] = [rel for rel, item in pages.items() if not item["fields"].get("summary")]
-    findings["long_summary"] = [{"page": rel, "chars": len(item["fields"]["summary"])} for rel, item in pages.items() if len(item["fields"].get("summary", "")) > 200]
-    findings["bad_lifecycle"] = [{"page": rel, "value": item["fields"].get("lifecycle")} for rel, item in pages.items() if item["fields"].get("lifecycle") and item["fields"]["lifecycle"].strip("\"'") not in lifecycles]
-    findings["bad_type"] = [{"page": rel, "value": item["fields"].get("type")} for rel, item in pages.items() if item["fields"].get("type") and item["fields"]["type"].strip("\"'") not in types]
+    findings["missing_summary"] = [{"page": rel, "line": 1} for rel, item in pages.items() if not item["fields"].get("summary")]
+    findings["long_summary"] = [
+        {"page": rel, "line": field_line(item["text"], "summary"), "chars": len(item["fields"]["summary"])}
+        for rel, item in pages.items()
+        if len(item["fields"].get("summary", "")) > 200
+    ]
+    findings["bad_lifecycle"] = [
+        {"page": rel, "line": field_line(item["text"], "lifecycle"), "value": item["fields"].get("lifecycle")}
+        for rel, item in pages.items()
+        if item["fields"].get("lifecycle") and item["fields"]["lifecycle"].strip("\"'") not in lifecycles
+    ]
+    findings["bad_type"] = [
+        {"page": rel, "line": field_line(item["text"], "type"), "value": item["fields"].get("type")}
+        for rel, item in pages.items()
+        if item["fields"].get("type") and item["fields"]["type"].strip("\"'") not in types
+    ]
     findings["pc_identity_mismatch"] = pc_identity_mismatches(pages)
     findings["pc_tag_on_npc"] = [
-        {"page": rel, "type": (item["fields"].get("type") or "").strip("\"'") or None, "path": rel}
+        {
+            "page": rel,
+            "line": field_line(item["text"], "tags"),
+            "type": (item["fields"].get("type") or "").strip("\"'") or None,
+            "path": rel,
+        }
         for rel, item in pages.items()
         if (item["fields"].get("type") or "").strip("\"'") == "npc"
         and "pc" in {t.casefold() for t in scalar_list(item["block"], "tags")}
@@ -430,7 +480,17 @@ def main() -> int:
     ]
     findings["duplicate_stems"] = duplicate_stems(pages)
     findings["snake_case_owner_basename"] = snake_case_owner_basenames(pages)
-    findings["missing_trust"] = [{"page": rel, "missing": [key for key in args.required_trust_field if not item["fields"].get(key)]} for rel, item in pages.items() if any(not item["fields"].get(key) for key in args.required_trust_field)]
+    findings["missing_trust"] = [
+        {
+            "page": rel,
+            "line": field_line(item["text"], next(
+                (key for key in args.required_trust_field if not item["fields"].get(key)), ""
+            )),
+            "missing": [key for key in args.required_trust_field if not item["fields"].get(key)],
+        }
+        for rel, item in pages.items()
+        if any(not item["fields"].get(key) for key in args.required_trust_field)
+    ]
 
     documents = {}
     for path in sorted(vault.rglob("*.md")):
@@ -444,7 +504,11 @@ def main() -> int:
         if title:
             title_groups[title].append(rel)
     findings["duplicate_titles"] = [
-        {"title": title, "pages": sorted(members)}
+        {
+            "title": title,
+            "pages": sorted(members),
+            "lines": [field_line(pages[member]["text"], "title") for member in sorted(members)],
+        }
         for title, members in sorted(title_groups.items()) if len(members) > 1
     ]
 
@@ -455,7 +519,7 @@ def main() -> int:
     for rel, body in documents.items():
         reserved_page = Path(rel).name in RESERVED_FILES
         emit_findings = scoped_documents is None or rel in scoped_documents
-        for raw in links(body):
+        for raw, line in link_occurrences(body):
             if normalize(raw) in MECHANIC_LINK_ALLOWLIST:
                 continue
             targets = resolve(raw, resolve_pages, resolve_lookup)
@@ -464,32 +528,39 @@ def main() -> int:
                 edges.append((rel, targets[0]))
             elif not targets and emit_findings and not reserved_page:
                 # Skip HARD broken_links from reserved non-content (AGENTS/index/log/hot).
-                broken.append({"page": rel, "target": raw})
+                broken.append({"page": rel, "target": raw, "line": line})
     findings["broken_links"] = broken
-    findings["orphan_pages"] = [rel for rel in pages if incoming[rel] == 0]
+    findings["orphan_pages"] = [{"page": rel, "line": 1} for rel in pages if incoming[rel] == 0]
     index_targets = set()
     for raw in links(documents.get("index.md", "")):
         targets = resolve(raw, resolve_pages, resolve_lookup)
         if len(targets) == 1:
             index_targets.add(targets[0])
     findings["index_issues"] = {
-        "missing_from_index": sorted(set(pages) - index_targets),
+        "missing_from_index": [{"page": rel, "line": 1} for rel in sorted(set(pages) - index_targets)],
         "broken_links": [item for item in broken if item["page"] == "index.md"],
     }
 
     relationship_findings: list[dict[str, object]] = []
+    relationship_pattern = re.compile(
+        r"^\s*-\s*target:\s*[\"']?\[\[([^\]|]+)(?:\|[^\]]+)?\]\][\"']?\s*\n"
+        r"\s*type:\s*([^\s#]+)",
+        re.M,
+    )
     for rel, item in pages.items():
-        entries = re.findall(r"^\s*-\s*target:\s*[\"']?\[\[([^\]|]+)(?:\|[^\]]+)?\]\][\"']?\s*\n\s*type:\s*([^\s#]+)", item["block"], re.M)
-        for index, (target, kind) in enumerate(entries):
+        entries = relationship_pattern.finditer(item["text"])
+        for index, match in enumerate(entries):
+            target, kind = match.groups()
+            line = item["text"].count("\n", 0, match.start()) + 1
             targets = resolve(target, resolve_pages, resolve_lookup)
             if kind not in relationships:
-                relationship_findings.append({"page": rel, "index": index, "issue": "invalid_type", "value": kind})
+                relationship_findings.append({"page": rel, "index": index, "issue": "invalid_type", "value": kind, "line": line})
             if not targets:
-                relationship_findings.append({"page": rel, "index": index, "issue": "broken_target", "target": target})
+                relationship_findings.append({"page": rel, "index": index, "issue": "broken_target", "target": target, "line": line})
             elif len(targets) > 1:
-                relationship_findings.append({"page": rel, "index": index, "issue": "ambiguous_target", "target": target, "matches": targets})
+                relationship_findings.append({"page": rel, "index": index, "issue": "ambiguous_target", "target": target, "matches": targets, "line": line})
             if rel in targets:
-                relationship_findings.append({"page": rel, "index": index, "issue": "self_reference", "target": target})
+                relationship_findings.append({"page": rel, "index": index, "issue": "self_reference", "target": target, "line": line})
     findings["typed_relationships"] = relationship_findings
 
     snake_case_labels: list[dict[str, object]] = []
@@ -514,7 +585,13 @@ def main() -> int:
         if inferred > 0.40 and not item["fields"].get("sources"):
             issues.append("unsourced_synthesis")
         if issues:
-            provenance.append({"page": rel, "inferred": round(inferred, 3), "ambiguous": round(ambiguous, 3), "issues": issues})
+            provenance.append({
+                "page": rel,
+                "line": line_number(item["text"], "^[inferred]", "^[ambiguous]"),
+                "inferred": round(inferred, 3),
+                "ambiguous": round(ambiguous, 3),
+                "issues": issues,
+            })
     findings["provenance"] = provenance
 
     by_tag: dict[str, set[str]] = collections.defaultdict(set)
@@ -530,7 +607,13 @@ def main() -> int:
         actual = sum(1 for edge in edge_set if set(edge) <= members)
         cohesion = actual / possible if possible else 0
         if cohesion < 0.15:
-            fragmented.append({"tag": tag, "pages": len(members), "links": actual, "cohesion": round(cohesion, 3)})
+            fragmented.append({
+                "tag": tag,
+                "pages": len(members),
+                "links": actual,
+                "cohesion": round(cohesion, 3),
+                "lines": [field_line(pages[member]["text"], "tags") for member in sorted(members)],
+            })
     findings["fragmented_tags"] = fragmented
 
     try:
@@ -545,7 +628,13 @@ def main() -> int:
         except ValueError:
             continue
         if age > 90:
-            stale.append({"page": rel, "updated": value, "days": age, "lifecycle": item["fields"].get("lifecycle", "")})
+            stale.append({
+                "page": rel,
+                "line": field_line(item["text"], "updated"),
+                "updated": value,
+                "days": age,
+                "lifecycle": item["fields"].get("lifecycle", ""),
+            })
     findings["stale_pages"] = stale
 
     def count(key: str, value: Any) -> int:
@@ -555,25 +644,39 @@ def main() -> int:
             return sum(len(item) if isinstance(item, list) else 1 for item in value.values())
         return len(value)
 
-    counts = {key: count(key, value) for key, value in findings.items()}
+    all_counts = {key: count(key, value) for key, value in findings.items()}
+    has_findings = any(all_counts.values())
+    result["status"] = "findings" if has_findings else "clean"
+    result["hard_fail"] = any(int(all_counts.get(key, 0) or 0) > 0 for key in HARD_KEYS)
+    if args.verbose:
+        counts = all_counts
+    else:
+        findings = {
+            key: value
+            for key, value in findings.items()
+            if all_counts.get(key, 0)
+        }
+        counts = {key: value for key, value in all_counts.items() if value}
+        result["findings"] = findings
     result["counts"] = counts
-    hard_fail = any(int(counts.get(key, 0) or 0) > 0 for key in HARD_KEYS)
-    result["hard_fail"] = hard_fail
     if args.json:
         print(json.dumps(result, indent=2, sort_keys=True))
     else:
-        print(f"Wiki lint scope: {len(pages)} pages ({vault})")
-        for key, value in counts.items():
-            print(f"{key}: {value}")
-        for key in ("missing_frontmatter", "missing_trust", "broken_links", "orphan_pages", "typed_relationships", "stale_pages"):
-            items = findings[key]
-            if items:
-                print(f"\n{key}")
-                for item in items if isinstance(items, list) else items.values():
-                    print(f"- {item}")
+        if not has_findings:
+            print("clean")
+        else:
+            print(f"Wiki lint scope: {len(pages)} pages ({vault})")
+            for key, value in counts.items():
+                print(f"{key}: {value}")
+            for key in ("missing_frontmatter", "missing_trust", "broken_links", "orphan_pages", "typed_relationships", "stale_pages"):
+                items = findings.get(key, [])
+                if items:
+                    print(f"\n{key}")
+                    for item in items if isinstance(items, list) else items.values():
+                        print(f"- {item}")
     if args.hard_only:
-        return 1 if hard_fail else 0
-    return 1 if any(counts.values()) else 0
+        return 1 if result["hard_fail"] else 0
+    return 1 if has_findings else 0
 
 
 if __name__ == "__main__":

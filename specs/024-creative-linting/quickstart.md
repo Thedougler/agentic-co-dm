@@ -101,20 +101,26 @@ for rule, sev in b.resolve(reg):
 
 **Expected**: Rules from agency/canon/wiki categories at their inherent severity. Retrieval/temporal are capped at REVIEW. Scene/diversity are capped at WARN.
 
-### V6: Existing wiki-lint Unchanged
+### V6: Sparse structural wiki-lint output
 
 ```bash
-# Existing default mode still works identically
 ./scripts/wiki-lint --json wiki | python3 -c "
 import sys,json
 d = json.load(sys.stdin)
+assert 'status' in d
 assert 'counts' in d
 assert 'hard_fail' in d
-print('existing mode OK')
+print('structural mode OK')
+"
+./scripts/wiki-lint --verbose --json wiki | python3 -c "
+import sys,json
+d = json.load(sys.stdin)
+assert 'orphan_pages' in d['findings']
+print('verbose structural mode OK')
 "
 ```
 
-**Expected**: `existing mode OK` — no regression.
+**Expected**: Both commands succeed; default output contains only non-empty findings, while `--verbose` includes zero-count checks.
 
 ### V7: Finding Schema Conformance
 

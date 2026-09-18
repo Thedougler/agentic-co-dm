@@ -28,6 +28,8 @@ Four reusable layers — QMD-backed identity resolution, typed semantic mutation
 
 **Scale/Scope**: ~200 wiki pages. ~28 templates. 28 open errors to regress (e-10, e-12 through e-38). 5 layers (identity, mutation, scope, transaction, Vale prose/pattern), ~7 task phases.
 
+**Output Contract**: Default `scripts/wiki-lint` reports carry positive 1-based `line` fields for structural, template, and Vale findings; `findings_by_file` preserves those locations for direct agent navigation. Default reports include only non-empty findings and return `status: "clean"` with empty findings/counts when clean. `--verbose` restores the full zero-count check matrix. File-level findings use line `1`.
+
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*

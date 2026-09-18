@@ -12,7 +12,7 @@ The implementation has three cooperating layers:
 
 The CLI entry point is `scripts/wiki-lint`:
 
-- No-subcommand invocations retain the existing structural behavior and delegate to `tools/lint_wiki.py`.
+- No-subcommand invocations delegate structural checks to `tools/lint_wiki.py`; default output is sparse (actual findings or `status: "clean"`), and `--verbose` restores the full zero-count matrix.
 - `queue` emits a stateless smallest-first list of pages with safe findings; `template` derives and compares the mapped runtime template.
 - Template comparison is detection-only. It never writes templates or pages; an agent manually applies and reviews any structural correction.
 

@@ -3,6 +3,8 @@ updated: 2026-09-18T09:12:44Z
 ---
 ## Recent Activity
 Committed 34 staged pages: 15 new pages and 19 updates, including Session 12 preparation and Aruhe entity updates.
+- Scoped lint repair for [[simone-tabarnack]]: resolved five broken links, one disallowed callout, and 25 Vale findings; the page now passes structural, template, and Vale checks.
+- Scoped lint repair for [[fisks-fleet]] and its five captain pages: all six pages now pass structural, template, and Vale checks; operational index summaries are synchronized.
 - Retconned [[Osset]] as Talon Vantyrus's original name; Talon Vantyrus is the alias he now uses as leader of [[Countless]].
 - Scoped lint repair for [[sentinels-of-the-eyrie]], [[Countless]], [[soul-incarnate]], [[fate-spinner]], and [[talon-skarn]]: 13 of 15 changed support pages now pass; eight owner links remain unresolved, and session pages were excluded.
 - Linted Uncertainty and its named crew scope: all 11 pages now pass structural, narration-only callout, and Vale checks; broader PC pages remain outside this sitting.
