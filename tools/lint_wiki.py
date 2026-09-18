@@ -44,6 +44,7 @@ HARD_KEYS = (
     "aruhe_prefix_basename",
     "illegal_basename",
     "duplicate_stems",
+    "redirect_stubs",
 )
 PC_ROLE = re.compile(r"^(pc|player character|player)$", re.I)
 TOKEN = re.compile(r"`([^`]+)`")
@@ -390,6 +391,22 @@ def main() -> int:
         for rel, fields in missing.items()
         if fields and not pages[rel]["fields"].get("redirects_to")
     }
+    findings["redirect_stubs"] = [
+        {
+            "page": rel,
+            "target": item["fields"].get("redirects_to", "").strip("\"'"),
+            "severity": "REPAIR",
+            "repair_class": "deterministic_repair",
+            "repair_action": {
+                "kind": "rename_or_merge_page",
+                "obsolete_path": rel,
+                "canonical_path": item["fields"].get("redirects_to", "").strip("\"'"),
+                "rewrite_backlinks": True,
+            },
+        }
+        for rel, item in pages.items()
+        if item["fields"].get("redirects_to")
+    ]
     findings["missing_summary"] = [rel for rel, item in pages.items() if not item["fields"].get("summary")]
     findings["long_summary"] = [{"page": rel, "chars": len(item["fields"]["summary"])} for rel, item in pages.items() if len(item["fields"].get("summary", "")) > 200]
     findings["bad_lifecycle"] = [{"page": rel, "value": item["fields"].get("lifecycle")} for rel, item in pages.items() if item["fields"].get("lifecycle") and item["fields"]["lifecycle"].strip("\"'") not in lifecycles]

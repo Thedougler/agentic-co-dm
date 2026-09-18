@@ -216,3 +216,17 @@ def test_fixture_families_have_fail_and_pass_cases():
             directory = FIXTURES / rule.id
             assert list(directory.glob("fail_*.md")), rule.id
             assert list(directory.glob("pass_*.md")), rule.id
+
+def test_scene_applicability_exempts_redirects_and_explicit_pressure(monkeypatch):
+    registry = Registry.load(ROOT / "rules" / "registry.yml")
+    bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
+    files = [
+        FIXTURES / "SCENE001" / "redirect_stub.md",
+        FIXTURES / "SCENE001" / "pass_explicit_pressure.md",
+        FIXTURES / "SCENE001" / "fail_missing_pressure.md",
+    ]
+    monkeypatch.setattr("tools.creative_lint.engine.run_vale", lambda *args, **kwargs: (
+        [Finding("SCENE001", "fail", "WARN", {"file": str(path), "line": 1}, "match", "reason", "vale")
+         for path in files], []))
+    result = LintEngine(registry, bundles, root=ROOT, vault=FIXTURES).run(rule_ids={"SCENE001"}, paths=files)
+    assert [Path(item.location["file"]).name for item in result.findings] == ["fail_missing_pressure.md"]

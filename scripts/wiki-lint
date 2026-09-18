@@ -92,11 +92,26 @@ def structural_main(argv: list[str]) -> int:
                         template_findings.extend(check_conformance(relative, page.read_text(encoding="utf-8"), load_contract(contract_path)))
                 except (OSError, ValueError) as exc:
                     template_findings.append({"rule_id": "TMPL_error", "file": relative, "severity": "BLOCK", "reason": str(exc)})
-            report.setdefault("findings", {})
-            report["findings"]["template"] = template_findings
-            report.setdefault("counts", {})
-            report["counts"]["template"] = len(template_findings)
-            report["template_used"] = str(contract_path) if 'contract_path' in locals() and contract_path.is_file() else None
+            source_paths = [ROOT / "wiki" / "templates" / "faction.md", ROOT / ".agents" / "skills" / "faction-design" / "SKILL.md"]
+            for source_path in source_paths:
+                if source_path.is_file() and re.search(r"\bfaction\s+clock\b|\bagenda\s+clock\b", source_path.read_text(encoding="utf-8"), re.I):
+                    template_findings.append({
+                        "rule_id": "TMPL_deprecated_guidance",
+                        "file": str(source_path.relative_to(ROOT)),
+                        "severity": "BLOCK",
+                        "repair_class": "human_repair",
+                        "reason": "Deprecated faction-clock guidance remains in an authoritative source",
+                    })
+            for relative in paths:
+                page = vault / relative
+                if page.is_file() and re.search(r"\bfaction\s+clock\b|\bagenda\s+clock\b", page.read_text(encoding="utf-8"), re.I):
+                    template_findings.append({
+                        "rule_id": "TMPL_inherited_deprecated_guidance",
+                        "file": relative,
+                        "severity": "REPAIR",
+                        "repair_class": "human_repair",
+                        "reason": "Page contains deprecated faction-clock output inherited from source guidance",
+                    })
         if args.plan:
             findings = report.get("findings", {})
             if isinstance(findings, dict):

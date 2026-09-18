@@ -34,9 +34,11 @@ def apply_transition(data: dict[str, Any], transition: ManifestTransition) -> di
     if not isinstance(rows, list):
         raise ValueError("manifest page_identity_transitions must be a list")
     item = transition.to_dict()
+    existing = next((row for row in rows if all(row.get(key) == value for key, value in item.items() if key != "timestamp")), None)
+    if existing is not None:
+        return out
     item.setdefault("timestamp", dt.datetime.now(dt.timezone.utc).isoformat())
-    if item not in rows:
-        rows.append(item)
+    rows.append(item)
     out["last_updated"] = item["timestamp"]
     return out
 

@@ -1010,31 +1010,72 @@ def moc_generate(args: argparse.Namespace) -> tuple[OperationResult, str]:
 
 def typed_mutation(args: argparse.Namespace) -> dict[str, object]:
     from tools.wiki_ops.mutations import MutationOp, apply_mutation
+
     selector: dict[str, object] = {}
     payload: dict[str, object] = {}
-    if args.kind in {"replace_section", "delete_section"}:
-        selector = {"heading_path": args.heading_path, "content_hash": args.content_hash}
-        if args.kind == "replace_section":
-            payload["content"] = Path(args.content_file).read_text(encoding="utf-8") if args.content_file else args.content
-    elif args.kind == "insert_section":
-        selector = {"after_heading_path": args.after_heading, "before_heading_path": args.before_heading}
-        payload = {"heading": args.heading, "level": args.level, "content": Path(args.content_file).read_text(encoding="utf-8") if args.content_file else args.content}
-    elif args.kind in {"set_frontmatter", "remove_frontmatter"}:
-        selector = {"field": args.field, "expected_value": args.expected_value}
-        payload = {"value": args.value}
-    elif args.kind == "rewrite_links":
-        payload = {"old_target": args.old_target, "new_target": args.new_target}
-    elif args.kind in {"replace_index_entry", "remove_index_entry"}:
-        selector = {"slug": args.slug}
-        payload = {"new_entry": args.new_entry}
-    elif args.kind == "rename_page":
-        payload = {"new_target": args.target}
-    elif args.kind == "update_manifest_identity":
-        payload = {"page_path": args.page, "transition": args.transition, "target": args.target}
-    op = MutationOp(args.kind, args.file, selector, payload)
-    result = apply_mutation(args.vault, op, dry_run=args.dry_run)
-    if result.get("status") == "rejected":
+    try:
+        content = Path(args.content_file).read_text(encoding="utf-8") if args.content_file else args.content
+        if args.kind in {"replace_section", "delete_section"}:
+            selector = {"heading_path": args.heading_path, "content_hash": args.content_hash}
+            if args.kind == "replace_section":
+                payload["content"] = content
+        elif args.kind == "insert_section":
+            selector = {"after_heading_path": args.after_heading, "before_heading_path": args.before_heading}
+            payload = {"heading": args.heading, "level": args.level, "content": content}
+        elif args.kind in {"set_frontmatter", "remove_frontmatter"}:
+            selector = {"field": args.field, "expected_value": args.expected_value, "content_hash": args.content_hash}
+            if args.kind == "set_frontmatter":
+                payload["value"] = args.value
+        elif args.kind in {"add_tag", "remove_tag"}:
+            selector = {"content_hash": args.content_hash}
+            payload = {"tag": args.tag if args.tag is not None else args.value}
+        elif args.kind in {"repair_links", "rewrite_links"}:
+            selector = {"content_hash": args.content_hash}
+            mapping: object = args.mapping
+            if mapping:
+                try:
+                    mapping = json.loads(mapping)
+                except json.JSONDecodeError:
+                    mapping = json.loads(Path(mapping).read_text(encoding="utf-8"))
+            payload = {"mapping": mapping, "old_target": args.old_target, "new_target": args.new_target}
+        elif args.kind in {"replace_index_entry", "remove_index_entry"}:
+            selector = {"slug": args.slug, "content_hash": args.content_hash}
+            if args.kind == "replace_index_entry":
+                payload["new_entry"] = args.new_entry
+        elif args.kind == "insert_index_entry":
+            selector = {"content_hash": args.content_hash}
+            payload["entry"] = args.entry if args.entry is not None else content
+        elif args.kind == "rename_page":
+            selector = {"content_hash": args.content_hash}
+            payload["new_target"] = args.target
+        elif args.kind in {"merge_page", "rename_or_merge_page"}:
+            selector = {"content_hash": args.content_hash, "canonical_path": args.canonical_path}
+            payload = {
+                "obsolete_path": args.obsolete_path,
+                "canonical_path": args.canonical_path or args.target,
+                "canonical_hash": args.canonical_hash,
+                "canonical_content": content if args.content_file or args.content else None,
+            }
+            if args.rewrite_backlinks is not None:
+                payload["rewrite_backlinks"] = args.rewrite_backlinks
+        elif args.kind == "update_manifest_identity":
+            payload = {"page_path": args.page, "transition": args.transition, "target": args.target}
+        target = args.obsolete_path if args.kind in {"merge_page", "rename_or_merge_page"} and args.obsolete_path else args.file
+        if args.kind == "update_manifest_identity" and args.file == "index.md":
+            target = ".manifest.json"
+        op = MutationOp(args.kind, target, selector, payload)
+        result = apply_mutation(args.vault, op, dry_run=args.dry_run)
+    except (OSError, UnicodeError, ValueError) as exc:
+        result = {"status": "rejected", "kind": args.kind, "target": args.file, "dry_run": args.dry_run, "accepted": False, "error": "io_error", "detail": str(exc)}
+    if result.get("accepted") is True:
+        args._exit_code = 0
+    elif result.get("error") in {
+        "hash_mismatch", "hash_required", "selector_not_found", "selector_ambiguous", "value_mismatch",
+        "overlap", "file_not_found", "identity_ambiguous", "target_exists",
+    }:
         args._exit_code = 2
+    else:
+        args._exit_code = 1
     return result
 
 
@@ -1058,13 +1099,13 @@ def typed_transaction(args: argparse.Namespace) -> tuple[dict[str, object], int]
 
 def typed_parser(subparsers: argparse._SubParsersAction) -> None:
     mutate = subparsers.add_parser("mutate", help="apply a typed semantic mutation")
-    mutate.add_argument("kind", choices=("replace_section", "delete_section", "insert_section", "set_frontmatter", "remove_frontmatter", "rewrite_links", "replace_index_entry", "remove_index_entry", "insert_index_entry", "update_manifest_identity", "rename_page"))
+    mutate.add_argument("kind", choices=("replace_section", "delete_section", "insert_section", "set_frontmatter", "remove_frontmatter", "add_tag", "remove_tag", "repair_links", "rewrite_links", "replace_index_entry", "remove_index_entry", "insert_index_entry", "update_manifest_identity", "rename_page", "merge_page", "rename_or_merge_page"))
     mutate.add_argument("--vault", default="wiki")
     mutate.add_argument("--dry-run", action="store_true")
     mutate.add_argument("--json", action="store_true")
     mutate.add_argument("--file", default="index.md")
     mutate.add_argument("--heading-path", nargs="+", default=[])
-    mutate.add_argument("--content-hash")
+    mutate.add_argument("--content-hash", "--hash", dest="content_hash")
     mutate.add_argument("--content-file")
     mutate.add_argument("--after-heading", nargs="+")
     mutate.add_argument("--before-heading", nargs="+")
@@ -1073,15 +1114,21 @@ def typed_parser(subparsers: argparse._SubParsersAction) -> None:
     mutate.add_argument("--content", default="")
     mutate.add_argument("--field")
     mutate.add_argument("--value")
+    mutate.add_argument("--tag")
     mutate.add_argument("--expected-value")
     mutate.add_argument("--old-target")
     mutate.add_argument("--new-target")
+    mutate.add_argument("--mapping")
     mutate.add_argument("--slug")
     mutate.add_argument("--new-entry")
     mutate.add_argument("--entry")
     mutate.add_argument("--page")
     mutate.add_argument("--transition")
     mutate.add_argument("--target")
+    mutate.add_argument("--obsolete-path")
+    mutate.add_argument("--canonical-path")
+    mutate.add_argument("--canonical-hash")
+    mutate.add_argument("--rewrite-backlinks", action=argparse.BooleanOptionalAction, default=None)
     transact = subparsers.add_parser("transact", help="preview or apply a repair plan atomically")
     transact.add_argument("--plan-file", required=True)
     transact.add_argument("--approve", action="store_true")

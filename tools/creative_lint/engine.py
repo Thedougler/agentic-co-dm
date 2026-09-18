@@ -4,6 +4,7 @@ from __future__ import annotations
 from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
+import re
 from typing import Any, Callable, Iterable
 
 from .bundles import BundleRegistry, GATES
@@ -135,11 +136,8 @@ class LintEngine:
             return "redirect" not in rule.exemptions
         if fields and rule.applicability and fields.get("type") not in rule.applicability:
             return False
-        if fields and rule.structural_scope and "narrative" in rule.structural_scope:
-            body = text.split("---", 2)[-1]
-            if all(marker not in body.casefold() for marker in ("pressure", "agenda", "player opening")):
-                return False
-        if rule.id == "SCENE001" and any(marker in text.casefold() for marker in ("pressure", "agenda", "player opening")):
+        body = text.split("---", 2)[-1]
+        if rule.id == "SCENE001" and re.search(r"\b(?:pressure\s+is|agenda\s+is|player\s+opening\s+is)\b", body, re.I):
             return False
         return True
 

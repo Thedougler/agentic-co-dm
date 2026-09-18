@@ -9,6 +9,8 @@ from typing import Any
 
 from .scope import Scope, SKIP_DIRS, _frontmatter
 
+RESERVED_PAGES = {"index.md", "log.md", "hot.md"}
+
 
 def _aliases(fields: dict[str, str]) -> list[str]:
     raw = fields.get("aliases", "")
@@ -27,10 +29,12 @@ def _norm(value: str) -> str:
 
 def _path_for(vault: Path, raw: str) -> Path:
     candidate = (vault / raw).resolve()
+    if vault not in candidate.parents and candidate != vault:
+        raise ValueError(f"path escapes vault: {raw}")
     if candidate.is_file():
         return candidate
     stem = Path(raw).stem.casefold()
-    matches = [p for p in vault.rglob("*.md") if p.is_file() and not SKIP_DIRS.intersection(p.relative_to(vault).parts) and p.stem.casefold() == stem]
+    matches = [p for p in vault.rglob("*.md") if p.is_file() and p.name.casefold() not in RESERVED_PAGES and not SKIP_DIRS.intersection(p.relative_to(vault).parts) and p.stem.casefold() == stem]
     if len(matches) != 1:
         raise ValueError(f"page not found or ambiguous: {raw}")
     return matches[0]
@@ -57,11 +61,11 @@ def _pages(vault: Path) -> list[dict[str, Any]]:
     rows = []
     for path in sorted(vault.rglob("*.md")):
         rel = path.relative_to(vault)
-        if not path.is_file() or SKIP_DIRS.intersection(rel.parts):
+        if not path.is_file() or path.name.casefold() in RESERVED_PAGES or SKIP_DIRS.intersection(rel.parts):
             continue
         text = path.read_text(encoding="utf-8")
         fields = _frontmatter(text)
-        rows.append({"path": rel.as_posix(), "stem": path.stem, "title": fields.get("title", path.stem), "type": fields.get("type"), "lifecycle": fields.get("lifecycle"), "aliases": _aliases(fields), "redirects_to": fields.get("redirects_to", ""), "body": _body(text), "fields": fields})
+        rows.append({"path": rel.as_posix(), "stem": path.stem, "title": fields.get("title", path.stem), "type": fields.get("type") or fields.get("kind"), "lifecycle": fields.get("lifecycle") or fields.get("status"), "aliases": _aliases(fields), "redirects_to": fields.get("redirects_to", ""), "body": _body(text), "fields": fields})
     return rows
 
 

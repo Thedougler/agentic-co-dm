@@ -1,11 +1,13 @@
 modelRoleStorage: project
 modelRoles:
   default: opencode-go/grok-4.6:medium
-  plan: opencode-go/grok-4.6:high
+  plan: github-copilot/gpt-6-astra:low
   task: opencode-go/gpt-5.6-luna:xhigh
   review: opencode-go/grok-4.6:high
-  smol: opencode-go/gpt-5.6-luna:high
+  smol: opencode-go/gpt-5.6-luna:xhigh
   advisor: opencode-go/grok-4.6:medium
+  slow: github-copilot/gpt-6-astra:medium
+  copy-writer: null
 task:
   batch: true
   maxConcurrency: 4

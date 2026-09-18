@@ -134,20 +134,21 @@ def evaluate_symbolic(paths: Iterable[Path], registry: Registry, *, root: Path,
             targets = lint_wiki.resolve(raw, pages, lookup)
             line = body[:match.start()].count("\n") + 1
             normalized = lint_wiki.normalize(raw)
-            if not targets and enabled("RETRIEVAL001"):
-                rule = _rule(registry, "RETRIEVAL001")
-                if rule:
-                    candidates = sorted({candidate for key, values in lookup.items()
-                                         if normalized and len(key) >= 4
-                                         and difflib.SequenceMatcher(None, normalized, key).ratio() >= 0.9
-                                         for candidate in values})
-                    repair = (f"Retarget [[{raw}]] to [[{candidates[0]}]]"
-                              if len(candidates) == 1 else None)
-                    findings.append(Finding(rule_id=rule.id, result="fail", severity=rule.severity,
-                                            location=_location(source, root, line, match.group(0)),
-                                            evidence=f"Unresolved wikilink: [[{raw}]]",
-                                            reason=rule.message, repair_target=repair,
-                                            evaluator="lint_wiki"))
+            if not targets:
+                if enabled("RETRIEVAL001"):
+                    rule = _rule(registry, "RETRIEVAL001")
+                    if rule:
+                        candidates = sorted({candidate for key, values in lookup.items()
+                                             if normalized and len(key) >= 4
+                                             and difflib.SequenceMatcher(None, normalized, key).ratio() >= 0.9
+                                             for candidate in values})
+                        repair = (f"Retarget [[{raw}]] to [[{candidates[0]}]]"
+                                  if len(candidates) == 1 else None)
+                        findings.append(Finding(rule_id=rule.id, result="fail", severity=rule.severity,
+                                                location=_location(source, root, line, match.group(0)),
+                                                evidence=f"Unresolved wikilink: [[{raw}]]",
+                                                reason=rule.message, repair_target=repair,
+                                                evaluator="lint_wiki"))
                 continue
             target = pages[targets[0]]
             target_path = Path(target["path"])

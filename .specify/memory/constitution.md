@@ -1,15 +1,58 @@
 <!--
 Sync Impact Report
-Version change: 2.3.1 -> 2.3.2
+Version change: 2.3.2 -> 2.4.0
 Modified principles:
-- IV. Behavioral Tests: moves harness-specific test-subject selection to harness companion
-  files and keeps the constitution on the cross-harness invariant.
-- XVI. Constitutional Layering: clarifies that the constitution owns agent behavior while
-  AGENTS.md owns project operating context.
-Added sections: None
+- III. Spec Before System Change: every system change must connect its acceptance to the
+  repository's D&D-session product rather than treating software as the product.
+- VII. Creative Judgment Is Protected: makes runnable, high-quality D&D Work the primary
+  acceptance target and subordinates process metrics to that outcome.
+Added sections:
+- Product Invariant statement under Core Principles.
 Removed sections: None
 Follow-up TODOs: None
 -->
+
+# Agentic Co-DM Constitution
+<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+
+## Core Principles
+
+Product Invariant: This repository is not primarily a software product. Its product is
+professional-quality, runnable D&D sessions that a DM can run for their players, with a quality
+bar comparable to WotC's official D&D material. Work MUST be coherent, specific, polished,
+mechanically sound, playable, and useful at the table. Software, agent instructions, skills,
+linting, templates, file structure, wiki operations, and every other system surface are means in
+service of that product. Every change MUST identify an observable improvement to preparation,
+playability, player agency, canon fidelity, or wrapup without sacrificing those qualities.
+
+Rationale: keeping the product and its professional quality bar explicit prevents the supporting
+system from becoming its own goal.
+PUT 77.=81:
+Any software, tooling, instruction, skill, template, wiki-structure, or other system change
+MUST have a specification with independently testable acceptance before implementation. The
+specification MUST connect the change to an observable improvement in D&D session preparation,
+playability, player agency, canon fidelity, or wrapup. It MUST describe outcomes and constraints,
+not prescribe a creative method or implementation when alternatives satisfy the outcome. Campaign
+Work follows its owner skill and remains subject to the canon and agency principles here.
+PUT 150.=158:
+### VII. Creative Judgment Is Protected
+
+Specs, skills, templates, checklists, and reviews MUST constrain only acceptance, safety, domain
+language, and named failure modes. They MUST NOT prescribe one creative method, voice, structure,
+or implementation when multiple valid approaches exist. Runnable D&D Work for the DM is the
+primary acceptance target and MUST meet the professional quality bar defined in the Product
+Invariant. Narrative craft, mechanics, specificity, canon fidelity, playability, player agency,
+and DM usefulness MUST NOT be traded away to satisfy a process metric or optimize the supporting
+software system.
+
+Rationale: the Co-DM exists to produce professional, playable Work, not procedural compliance
+theater or a software product detached from the table.
+PUT 466.=466:
+**Version**: 2.4.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+
+Rationale: keeping the product explicit prevents the supporting system from becoming its own
+goal.
+
 
 # Agentic Co-DM Constitution
 <!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->

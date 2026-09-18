@@ -1,8 +1,12 @@
 {
   "sources": {
     "fixture.md": {
-      "pages_produced": ["fisks-fleet.md"],
+      "pages_produced": [
+        "fisks-captains.md",
+        "fisks-fleet.md"
+      ],
       "ingested_at": "2026-09-17T00:00:00Z"
     }
-  }
+  },
+  "page_identity_transitions": []
 }
