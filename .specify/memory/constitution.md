@@ -1,4 +1,3 @@
-
 # Agentic Co-DM Constitution
 <!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
 
@@ -86,6 +85,12 @@ as its primary operator: arguments or structured input in, text or JSON out, err
 and an exit status distinguishing success from failure. Agent-facing documents MUST state
 positive instructions, completion criteria, and named failure modes.
 
+Agent-facing documents MUST use direct, imperative language for required actions. They MUST NOT
+hedge a required action with "maybe", "perhaps", "if available", "consider", or "optional".
+`MUST`, `MUST NOT`, and `SHOULD` MUST express actual normative force; `SHOULD` MUST include a
+reason and the condition that permits deviation. A dependency required by a documented path MUST
+be named as required, not optional.
+
 Agent-facing documents MUST put ordered steps before reference material. Every step MUST end with
 a checkable completion criterion. Branch-specific reference MUST be disclosed behind a context
 pointer that states what it contains and when to read it. Always-loaded guidance MUST remain
@@ -107,8 +112,8 @@ defect. The owning agent MUST log it, stop treating the software as acceptable, 
 remove the root cause before dependent work continues.
 
 Rationale: an agent needs a predictable execution path, a small always-loaded index, and one
-answer for each rule; progressive disclosure preserves attention without hiding branch-critical
-guidance.
+answer for each rule; direct language and explicit dependency status prevent hesitation and
+false assumptions.
 
 ### VII. Creative Judgment Is Protected
 
@@ -220,15 +225,21 @@ native platform features MUST be used before adding new abstractions, wrappers, 
 A command-capable interface MUST be used directly when sufficient; wrappers MUST NOT obscure
 input, output, errors, or exit status.
 
-When a task requires a missing tool or dependency, agents MUST self-bootstrap it from the
-project-declared environment before implementation. Agents MUST reuse suitable existing software,
-solutions, documented patterns, and trusted published approaches—including web sources—before
-inventing new ones. A new dependency or implementation is permitted only when existing options
-do not satisfy the task; its rationale and provenance MUST be recorded in the applicable work
-artifact.
+Project-declared dependencies are mandatory once a task reaches a path that requires them. Agents
+MUST check the project-local environment and use an available dependency immediately. If it is
+missing, agents MUST install it from the project-declared environment immediately, without asking
+for confirmation or presenting installation as a conditional choice. Agents MUST NOT re-install a
+dependency already available locally, describe a required dependency as optional, or proceed as
+though a missing dependency exists. A dependency MAY be optional only when the project explicitly
+scopes the feature as optional and the default path remains complete without it.
 
-Rationale: boring tools are easier to inspect, operate, and recover at 3 a.m. Reuse compounds
-proven solutions while reproducible bootstrap keeps agents unblocked without dependency drift.
+Agents MUST reuse suitable existing software, solutions, documented patterns, and trusted published
+approaches—including web sources—before inventing new ones. A new dependency or implementation is
+permitted only when existing options do not satisfy the task; its rationale and provenance MUST be
+recorded in the applicable work artifact.
+
+Rationale: local availability removes needless setup; immediate installation keeps required work
+moving without hedged instructions or avoidable dependency drift.
 
 ### XV. Autonomous Operation
 
@@ -367,6 +378,11 @@ and repetition necessary for correct execution and reasoning. Lean is the sole d
 `AGENTS.md`, `CLAUDE.md`, `GROK.md`, `OMP.md`, agent skills, agent-facing `docs/`, and this
 constitution. Every sentence MUST earn its context cost.
 
+Agent-facing instructions MUST state required actions and completion criteria directly. They MUST
+NOT use "maybe", "perhaps", "consider", "if you want", or "optional" to hedge a required step.
+Use `MAY` only for a real choice. Use `SHOULD` only with a named reason and a valid condition for
+deviation.
+
 Agents MUST actively compress tool-call token load. Tool commands and descriptions MUST be short
 and clear; agents MUST prefer concise native commands over long, cobbled-together DIY commands
 when behavior and safety are equivalent. Tool inputs MUST contain only required context and
@@ -383,8 +399,9 @@ policy while retaining rules, rationale needed to apply them, completion criteri
 safety boundaries, and information required for human comprehension, accessibility, or compliance.
 This principle MUST NOT be used to delete necessary safeguards or quality-critical domain detail.
 
-Rationale: agent attention and tool-call budgets are finite; lean context and deterministic helpers
-leave more capacity for reasoning about the wiki while preserving safe, correct work.
+Rationale: agent attention and tool-call budgets are finite; lean context, direct instructions, and
+deterministic helpers leave more capacity for reasoning about the wiki while preserving safe,
+correct work.
 
 ## Operating Boundaries
 
@@ -438,4 +455,4 @@ not prevent a named safety failure MUST be rejected or resolved by an ADR.
 Project operating context: `AGENTS.md`. Harness-specific agent behavior: `OMP.md`, `CODEX.md`,
 `CLAUDE.md`, and `GROK.md`.
 
-**Version**: 2.5.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 2.6.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
