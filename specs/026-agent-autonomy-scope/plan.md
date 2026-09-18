@@ -11,8 +11,7 @@ reason: reusable AGENTS.md rule for autonomous wiki ops vs DM-gated campaign-fac
 ```
 
 ## Summary
-
-Operationalize Constitution XV/X as one binary table in `AGENTS.md`. Agents execute FR-002 maintenance without a Work prompt. Campaign-fact work still uses `docs/agents/work.md`. Align a short project-identity sentence so instruction changes are reviewed on cold-context behavior. No new code.
+Operationalize Constitution XV/X as one binary table in `AGENTS.md`. Agents execute FR-002 without a Work prompt and emit a short done-summary. Wait only when the user asked to make something new, or the op invents canon / reconciles contradiction. Mixed: autonomous first + done-summary, then Work in the same turn. Instruction changes reviewed with existing `skill-creator` evals. No new code, checklist, PR template, or review skill.
 
 ## Technical Context
 
@@ -22,7 +21,7 @@ Operationalize Constitution XV/X as one binary table in `AGENTS.md`. Agents exec
 
 **Storage**: Vault markdown + YAML frontmatter. Classification is not stored.
 
-**Testing**: Cold-context behavioral validation ([quickstart.md](quickstart.md)). No new test framework.
+**Testing**: Cold-context behavioral validation ([quickstart.md](quickstart.md) V-001–V-008). Skill/instruction diffs use existing `skill-creator` evals. No new test framework.
 
 **Target Platform**: Agent instruction surface (OMP, Codex, Claude Code)
 
@@ -30,7 +29,7 @@ Operationalize Constitution XV/X as one binary table in `AGENTS.md`. Agents exec
 
 **Performance Goals**: N/A
 
-**Constraints**: Must not weaken Work for canon. Must not use avoided term "autonomous GM". Must not add a third classification. Staged writes stay orthogonal. Dedup merge stays Nick-gated.
+**Constraints**: Must not weaken Work for FR-003. Must not use avoided term "autonomous GM". Must not add a third classification. Staged writes stay orthogonal. Dedup merge stays Nick-gated. MUST NOT add a review checklist, PR template, or review skill (FR-007).
 
 **Scale/Scope**: Six instruction files. Spec artifacts only under `specs/026-agent-autonomy-scope/`.
 
@@ -43,7 +42,7 @@ Operationalize Constitution XV/X as one binary table in `AGENTS.md`. Agents exec
 | I. Domain Language Is Binding | PASS | Campaign-fact / Work / DM. Avoid "autonomous GM". |
 | II. Issues Are the Work Surface | PASS | Feature branch `026-agent-autonomy-scope` is the Spec Kit surface. |
 | III. Spec Before System Change | PASS | [spec.md](spec.md) has testable FR/SC. |
-| IV. Behavioral Tests | PASS | Quickstart V-001–V-007; SC-005 two-agent classify. |
+| IV. Behavioral Tests | PASS | Quickstart V-001–V-008; SC-005 two-agent classify. |
 | V. Single Source of Truth | PASS | Table lives only in `AGENTS.md`. |
 | VI. Agent-Shaped | PASS | Positive table + named fail modes in contract. |
 | VII. Creative Judgment Is Protected | PASS | No creative-method constraint. |
@@ -96,14 +95,15 @@ docs/agents/wiki-maintenance-loop.md           # Layer A may apply FR-002
 | Principle | Status | Evidence |
 |-----------|--------|----------|
 | V. Single Source of Truth | PASS | [contracts/autonomy-boundary.md](contracts/autonomy-boundary.md) names `AGENTS.md` as the only table. |
-| X. DM Owns Canon | PASS | Closed dm-gated list matches FR-003; invent-to-fill is gated. |
-| XIV. Simplest Adequate Tool | PASS | No classifier binary; markdown table. |
-| XV. Autonomous Operation | PASS | FR-002 closed list; kebab remorph aligned with 2026-09-14 greenlight. |
+| X. DM Owns Canon | PASS | Wait rule matches FR-003; invent/reconcile/new-owner stay Work-gated; no stubs. |
+| XIV. Simplest Adequate Tool | PASS | No classifier binary; markdown table. Reuse `skill-creator` evals. |
+| XV. Autonomous Operation | PASS | FR-002 closed list; kebab remorph aligned with 2026-09-14 greenlight; done-summary not a pause. |
 | XVI. Layering | PASS | Constitution unchanged. |
-| XX. Lean | PASS | Skills get pointer-level deltas, not copied tables. |
+| XX. Lean | PASS | Skills get pointer-level deltas, not copied tables. No extra review skill. |
 | VII. Creative Judgment | PASS | No voice/method rules. |
+| IV. Behavioral Tests | PASS | Quickstart V-001–V-008; SC-005 two-agent classify; skill-eval for instruction diffs. |
 
-**Post-design gate**: PASS. No `NEEDS CLARIFICATION`. Dedup merge deliberately excluded from autonomous (research R-002 vs earlier overreach).
+**Post-design gate**: PASS. No `NEEDS CLARIFICATION`. Session 2026-09-18 clarifications absorbed (done-summary, same-turn mixed, wait-only-for-new, skill-eval reuse). Dedup merge deliberately excluded from autonomous (research R-002).
 
 ## Complexity Tracking
 
