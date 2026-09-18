@@ -1,4 +1,3 @@
-
 # Agentic Co-DM Constitution
 <!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
 
