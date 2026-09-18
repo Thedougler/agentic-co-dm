@@ -61,7 +61,7 @@ Apply a repair plan as an atomic transaction with deferred finalization.
 ### Phase 3: Finalize
 1. Index: If any mutation touched index entries, rebuild/update `wiki/index.md`.
 2. Manifest: If any mutation recorded identity transitions, update `.manifest.json`.
-3. QMD: Run `scripts/qmd-maintain.sh` once.
+3. QMD: Run `scripts/qmd-hook.sh` once — standalone shell script, count-bounded embedding (at most N pages), zero output on success, silent no-op (exit 0) when QMD is not installed.
 4. Report compact summary.
 
 ### Failure Modes

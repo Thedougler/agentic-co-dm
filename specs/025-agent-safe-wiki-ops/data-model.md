@@ -380,7 +380,7 @@ A bounded set of mutations that apply atomically with deferred finalization.
 **Finalization** runs once per transaction:
 - Index update: Only if any mutation targets index entries.
 - Manifest update: Only if any mutation records identity transitions.
-- QMD refresh: Always runs after commit (single invocation of `scripts/qmd-maintain.sh`).
+- QMD refresh: Always runs after commit (single invocation of `scripts/qmd-hook.sh` — standalone, count-bounded embedding, zero output on success, silent no-op when QMD absent).
 
 ### ManifestTransition
 

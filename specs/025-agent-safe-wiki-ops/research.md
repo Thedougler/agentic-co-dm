@@ -115,6 +115,18 @@ QMD refresh is the most expensive step. Deferring it to transaction end means on
 - Per-file write with deferred refresh only: Doesn't catch overlapping mutations across files.
 - Database-style WAL: Overkill for filesystem operations on ~200 files.
 
+## QMD Hook Design
+
+### Decision: Standalone shell script (`scripts/qmd-hook.sh`) callable by any harness after wiki writes. Count-bounded embedding pass. Zero output on success. Silent no-op when QMD is absent.
+
+**Rationale**: The hook must work across Claude Code, Codex, OMP, and Grok Build without depending on harness-specific configuration or git hooks. A standalone script is the simplest harness-agnostic surface (Constitution XIV). Count-bounded embedding (at most N pages per invocation) prevents long-running passes from blocking agents; the backlog drains naturally across successive wiki writes. Zero stdout/stderr on success keeps agent context clean (FR-021). When QMD is not installed (CI, Codex sandboxes), exit 0 with zero output — agents should not need to guard against missing QMD (FR-021). Agents that need situational awareness query `qmd status` separately (FR-022).
+
+**Alternatives considered**:
+- Git post-commit hook: Ties to git, not all harnesses commit wiki writes the same way.
+- Harness-specific hooks (OMP hooks.yml, Claude Code hooks): Duplicates configuration per harness; a single script each harness calls is simpler.
+- Unbounded embedding pass: Could block agents for minutes on a large backlog; count-bounded keeps invocation time predictable.
+- Verbose success output: Agents would need to parse or discard it; truly silent success is cheaper.
+
 ## Repair Classes
 
 ### Decision: Three repair classes on lint findings — `diagnostic`, `human_repair`, `deterministic_repair`.

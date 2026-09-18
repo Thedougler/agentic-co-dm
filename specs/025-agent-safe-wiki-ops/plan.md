@@ -24,7 +24,7 @@ Four reusable layers — QMD-backed identity resolution, typed semantic mutation
 
 **Performance Goals**: Identity resolution <2s for full vault (~200 pages). Mutation operations <1s per file. Transaction finalization (index + manifest + QMD) <10s total.
 
-**Constraints**: No new dependencies. Compose with existing `scripts/wiki-bulk-ops` utilities (frontmatter parsing, link rewriting, atomic writes), QMD similarity, `tools/lint_wiki.py`, and `scripts/wiki-lint`. Mutations must be atomic — fail cleanly with original untouched. Single-writer per artifact (Constitution XIV). Template contracts are YAML files co-located with templates, not changes to the markdown templates themselves. Merge operations remove obsolete pages and MUST NOT create redirect stubs.
+**Constraints**: No new dependencies. Compose with existing `scripts/wiki-bulk-ops` utilities (frontmatter parsing, link rewriting, atomic writes), QMD similarity, `tools/lint_wiki.py`, and `scripts/wiki-lint`. Mutations must be atomic — fail cleanly with original untouched. Single-writer per artifact (Constitution XIV). Template contracts are YAML files co-located with templates, not changes to the markdown templates themselves. Merge operations remove obsolete pages and MUST NOT create redirect stubs. The QMD hook is a standalone shell script (not a git hook) callable by any harness; it runs a count-bounded embedding pass (at most N pages per invocation), produces zero output on success, and exits 0 silently when QMD is not installed.
 
 **Scale/Scope**: ~200 wiki pages. ~28 templates. 28 open errors to regress (e-10, e-12 through e-38). 4 layers, ~6 task phases.
 
@@ -72,7 +72,8 @@ scripts/
 ├── wiki-bulk-ops         # Existing (extended: new mutation subcommands)
 ├── wiki-lint             # Existing (extended: scoped lint, template conformance)
 ├── manifest.py           # Existing (extended: identity transitions)
-└── wiki-identity         # New: identity resolution CLI
+├── wiki-identity         # New: identity resolution CLI
+└── qmd-hook.sh           # New: standalone QMD hook (count-bounded, silent no-op)
 
 tools/
 ├── lint_wiki.py          # Existing (extended: scope filtering, template contracts)
@@ -98,6 +99,10 @@ tests/
 ```
 
 **Structure Decision**: New mutation/transaction logic goes in `tools/wiki_ops/` as a library consumed by CLI scripts. CLI surfaces extend existing `scripts/wiki-bulk-ops` and `scripts/wiki-lint` with new subcommands, plus one new `scripts/wiki-identity` for identity resolution. Template contracts are YAML files under `wiki/templates/contracts/`. This preserves the existing pattern: library code in `tools/`, CLI entry points in `scripts/`, tests in `tests/`.
+
+### Harness Integration (final implementation phase)
+
+Wire `scripts/qmd-hook.sh` into the OMP harness so wiki-write boundaries invoke the hook automatically. OMP currently has no wiki-write hook infrastructure (`.omp/config.yml` has no hooks section; `.omp/RULES.md` has no wiki-write trigger). Implementation adds the call site so OMP agents get the same post-write QMD maintenance that Claude Code agents get through their existing `scripts/qmd-maintain.sh` call. The hook is harness-agnostic by design — OMP wiring is configuration/instruction, not a hook redesign.
 
 ## Post-Design Constitution Check
 

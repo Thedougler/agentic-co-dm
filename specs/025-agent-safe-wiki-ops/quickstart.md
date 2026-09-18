@@ -143,12 +143,32 @@ python3 scripts/wiki-lint --scope files:entities/faction/fisks-captains.md --vau
 
 ```bash
 # Create a 3-mutation transaction and count QMD invocations
-# (Test harness wraps qmd-maintain.sh with a counter)
+# (Test harness wraps qmd-hook.sh with a counter)
 python3 -m pytest tests/test_wiki_ops.py::test_batched_finalization -v
 # Expected: qmd_refresh_count == 1
 ```
 
 **Verify**: Single QMD refresh regardless of mutation count.
+
+### Scenario 9: QMD Hook Standalone Behavior
+
+**Purpose**: Verify the QMD hook is a standalone script with correct silent/no-op semantics.
+
+```bash
+# Success case: zero output
+scripts/qmd-hook.sh
+# Expected: exit 0, zero stdout, zero stderr
+
+# QMD not installed (simulated by removing qmd from PATH)
+PATH=/usr/bin:/bin scripts/qmd-hook.sh
+# Expected: exit 0, zero stdout, zero stderr (silent no-op)
+
+# Count-bounded: only N pages embedded per invocation
+# (Test harness verifies embed count ≤ N after a large write set)
+python3 -m pytest tests/test_wiki_ops.py::test_qmd_hook_bounded -v
+```
+
+**Verify**: Zero output on success. Silent no-op when QMD absent. Embedding count bounded per invocation.
 
 ## Running Tests
 
