@@ -4,8 +4,8 @@ Version change: 2.3.2 -> 2.4.0
 Modified principles:
 - III. Spec Before System Change: every system change must connect its acceptance to the
   repository's D&D-session product rather than treating software as the product.
-- VII. Creative Judgment Is Protected: makes runnable, high-quality D&D Work the primary
-  acceptance target and subordinates process metrics to that outcome.
+- VII. Creative Judgment Is Protected: makes runnable D&D Work for the DM, at a professional
+  quality bar comparable to WotC's official D&D material, the primary acceptance target.
 Added sections:
 - Product Invariant statement under Core Principles.
 Removed sections: None
@@ -27,37 +27,6 @@ playability, player agency, canon fidelity, or wrapup without sacrificing those 
 
 Rationale: keeping the product and its professional quality bar explicit prevents the supporting
 system from becoming its own goal.
-PUT 77.=81:
-Any software, tooling, instruction, skill, template, wiki-structure, or other system change
-MUST have a specification with independently testable acceptance before implementation. The
-specification MUST connect the change to an observable improvement in D&D session preparation,
-playability, player agency, canon fidelity, or wrapup. It MUST describe outcomes and constraints,
-not prescribe a creative method or implementation when alternatives satisfy the outcome. Campaign
-Work follows its owner skill and remains subject to the canon and agency principles here.
-PUT 150.=158:
-### VII. Creative Judgment Is Protected
-
-Specs, skills, templates, checklists, and reviews MUST constrain only acceptance, safety, domain
-language, and named failure modes. They MUST NOT prescribe one creative method, voice, structure,
-or implementation when multiple valid approaches exist. Runnable D&D Work for the DM is the
-primary acceptance target and MUST meet the professional quality bar defined in the Product
-Invariant. Narrative craft, mechanics, specificity, canon fidelity, playability, player agency,
-and DM usefulness MUST NOT be traded away to satisfy a process metric or optimize the supporting
-software system.
-
-Rationale: the Co-DM exists to produce professional, playable Work, not procedural compliance
-theater or a software product detached from the table.
-PUT 466.=466:
-**Version**: 2.4.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
-
-Rationale: keeping the product explicit prevents the supporting system from becoming its own
-goal.
-
-
-# Agentic Co-DM Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
-
-## Core Principles
 
 ### I. Domain Language Is Binding
 
@@ -80,11 +49,12 @@ Rationale: issues make work inspectable by humans and agents across sessions.
 
 ### III. Spec Before System Change
 
-A software, tooling, instruction, or other system change MUST have a specification with
-independently testable acceptance before implementation. The specification MUST describe
-outcomes and constraints, not prescribe a creative method or implementation when alternatives
-satisfy the outcome. Campaign Work follows its owner skill and remains subject to the canon and
-agency principles here.
+Any software, tooling, instruction, skill, template, wiki-structure, or other system change
+MUST have a specification with independently testable acceptance before implementation. The
+specification MUST connect the change to an observable improvement in D&D session preparation,
+playability, player agency, canon fidelity, or wrapup. It MUST describe outcomes and constraints,
+not prescribe a creative method or implementation when alternatives satisfy the outcome. Campaign
+Work follows its owner skill and remains subject to the canon and agency principles here.
 
 Rationale: explicit outcomes prevent both agent drift and needless process constraints.
 
@@ -157,11 +127,14 @@ guidance.
 
 Specs, skills, templates, checklists, and reviews MUST constrain only acceptance, safety, domain
 language, and named failure modes. They MUST NOT prescribe one creative method, voice, structure,
-or implementation when multiple valid approaches exist. Narrative craft, mechanics, specificity,
-canon fidelity, playability, player agency, and DM usefulness MUST NOT be traded away to satisfy
-a process metric.
+or implementation when multiple valid approaches exist. Runnable D&D Work for the DM is the
+primary acceptance target and MUST meet the professional quality bar defined in the Product
+Invariant. Narrative craft, mechanics, specificity, canon fidelity, playability, player agency,
+and DM usefulness MUST NOT be traded away to satisfy a process metric or optimize the supporting
+software system.
 
-Rationale: the Co-DM exists to produce playable Work, not procedural compliance theater.
+Rationale: the Co-DM exists to produce professional, playable Work, not procedural compliance
+theater or a software product detached from the table.
 
 ### VIII. Safe Automation Runs Unattended
 
@@ -319,8 +292,8 @@ dedicated root-level instruction file containing only harness-specific guidance:
 `CODEX.md`, `CLAUDE.md`, and `GROK.md`. Claude Code's `CLAUDE.md` MUST import `AGENTS.md` before
 applying Claude-specific additions; those additions MUST NOT restate shared agent behavior.
 `AGENTS.md` MUST point to each harness file as project context for agents running in that harness.
-Shared agent behavior MUST remain in shared governance, specs, skills, and docs; harness files MUST
-NOT become competing sources of truth.
+Shared agent behavior MUST remain in shared governance, specs, skills, and docs; harness files
+MUST NOT become competing sources of truth.
 
 Rationale: layering keeps standing context short, load-bearing, and resilient to model, tool, and
 retrieval-engine changes; reader-specific skills and harness isolation keep each surface
@@ -469,4 +442,4 @@ not prevent a named safety failure MUST be rejected or resolved by an ADR.
 Project operating context: `AGENTS.md`. Harness-specific agent behavior: `OMP.md`, `CODEX.md`,
 `CLAUDE.md`, and `GROK.md`.
 
-**Version**: 2.3.2 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 2.4.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
