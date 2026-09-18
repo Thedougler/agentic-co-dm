@@ -10,7 +10,7 @@
   },
   "scripts": {
     "lint:wiki": "./scripts/wiki-lint",
-    "lint:vale": "vale --config=.vale.ini",
+    "lint:vale": ".venv/bin/python scripts/vale-vocab && .venv/bin/vale --config=.vale.ini",
     "lint:markdown": "markdownlint-cli2",
     "maintain": "./scripts/wiki-maintain",
     "verify": "./scripts/check-omp-baseline.sh",

@@ -183,8 +183,9 @@ python3 scripts/wiki-lint --scope files:/tmp/test-page.md --no-vale --vault wiki
 **Purpose**: Verify community Vale packages flag LLM prose artifacts.
 
 ```bash
-# Run Vale directly to see raw findings
-vale --config .vale.ini --output=JSON /tmp/test-page.md
+# Refresh wiki-derived Vale proper-noun exemptions, then run the project-local binary.
+.venv/bin/python scripts/vale-vocab
+.venv/bin/vale --config .vale.ini --output=JSON /tmp/test-page.md
 # Expected: JSON array of findings from write-good, proselint, AITells packages
 
 # Run through the lint pipeline

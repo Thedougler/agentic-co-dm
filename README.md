@@ -35,7 +35,7 @@ Python dependencies are declared in `pyproject.toml`; Node development tools are
    source .venv/bin/activate
    ```
 
-   `uv sync` creates the project environment and installs `PyYAML` and `tiktoken`.
+   `uv sync` creates the project environment and installs PyYAML, tiktoken, and the pinned Vale CLI.
 
 4. Install the Node development tools:
 

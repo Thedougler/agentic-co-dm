@@ -459,6 +459,24 @@ before completion. It MUST NOT claim that fixtures prove repository behavior.
 Rationale: fixtures catch regressions in modeled cases; current Wiki validation reveals schema drift,
 identity collisions, stale links, provenance gaps, and content-shape failures that fixtures omit.
 
+### XXIV. Synchronized Content Systems Are Actively Maintained
+
+The three content-production systems are the compiled Wiki, authoring guidance, and validation
+rules. Authoring guidance includes templates and skills; validation rules include Vale styles.
+When an edit to Wiki content, a template, a skill, or a Vale style rule changes the contract,
+quality bar, or output of D&D content, the agent MUST inspect every affected system and update
+each relevant counterpart in the same change before declaring the work complete. An unchanged
+counterpart MUST have its irrelevance recorded in the applicable work artifact.
+
+Agents MUST NOT treat any of these systems as perfect, sacred, or exempt from correction. Agents
+MUST proactively maintain and continuously improve all three systems using observed failures,
+user corrections, linter findings, and other evidence. Improvements MUST preserve authoritative
+ownership, remain behaviorally verifiable, and MUST NOT optimize one system by leaving a relevant
+counterpart stale.
+
+Rationale: synchronized authoring, content, and validation surfaces prevent drift from degrading
+the quality of D&D content while continuous maintenance keeps every surface useful and current.
+
 ## Operating Boundaries
 
 - The Co-DM works in prep and wrapup windows; the DM is the sole runtime at the table.
@@ -511,4 +529,4 @@ not prevent a named safety failure MUST be rejected or resolved by an ADR.
 Project operating context: `AGENTS.md`. Harness-specific agent behavior: `OMP.md`, `CODEX.md`,
 `CLAUDE.md`, and `GROK.md`.
 
-**Version**: 2.9.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 2.10.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17

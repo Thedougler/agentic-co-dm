@@ -5,7 +5,7 @@ tags: [shattered-sea, faction]
 sources:
   - "the-countless.md"
   - "Countless.md"
-summary: "Breakaway Sentinel order that erases names from ledgers; Talons hunt Fate Spinner carriers under Vantyrus."
+summary: "Breakaway Sentinel order that erases names from ledgers. Talons hunt Fate Spinner carriers under Vantyrus."
 provenance:
   extracted: 0.95
   inferred: 0.05
@@ -35,7 +35,7 @@ relationships:
 # Countless
 
 > [!narration] Narration
-> Countless are breakaways from the Sentinels, present more as missing names than as any posted roll. Hired blades and paid contacts take one job each and never learn who ordered it. Along pilgrim routes, grey markets, and Sentinel waystations, the work leaves empty places where a name used to sit. Agents answer to the shared title Talon. Talon is the name people hear before they meet anyone who claims it.
+> Countless broke away from the Sentinels. Missing names mark its work. Hired blades and paid contacts take one job each. They never learn who ordered it. Along pilgrim routes, grey markets, and Sentinel waystations, the work leaves an empty place where a name used to sit. Agents use the shared title Talon. People hear Talon before they meet anyone who claims it.
 
 ## At a Glance
 
@@ -49,49 +49,49 @@ relationships:
 | **Signature method** | One-job hired blades and paid contacts, taken names, and absent ledgers |
 | **Current posture** | Acting and fractured |
 
-> **DM thesis:** Countless bends fate for itself and ensures nothing is counted against it, hunting [[fate-spinner]] carriers while the [[rule-of-two]] turns the schism inward.
+> **DM thesis.** Countless bends fate for itself. It keeps its losses out of the record. It targets [[fate-spinner]] carriers while the [[rule-of-two]] turns the schism inward.
 
 ## At the Table
 
-- **They want:** Countless wants to locate [[crissdalynn-khinriss]] or another Fate Spinner carrier and seize the gift connected to the Soul Incarnate transformation technique.
-- **They offer:** Countless offers paid work to hired blades and contacts without requiring them to know the patron.
-- **They pressure with:** Countless uses taken names, covert routes, blank ledgers, and agents who know only one job.
-- **They will not:** Countless will not expose its order chain or allow a single contact to learn who ordered the work.
-- **Their tell:** Agents answer to the shared title Talon, while the work leaves an empty place where a name used to sit.
+- **They want.** Countless seeks [[crissdalynn-khinriss]] or another Fate Spinner carrier. It wants the gift tied to the Soul Incarnate transformation technique.
+- **They offer.** Countless pays hired blades and contacts, and those workers do not need to know the patron.
+- **They pressure with.** Countless uses taken names and blank ledgers. Covert routes and agents who know one job support the pressure.
+- **They will not.** Countless will not expose its order chain. It gives each contact only the information needed for the current job.
+- **Their tell.** Agents use the shared title Talon. Work leaves an empty place where a name used to sit.
 
 ## Current State
 
 - **Status quo.** [[talon-vantyrus]] leads Countless through covert routes, hired blades, paid contacts, and the absence of reliable records.
 - **Recent change.** [[talon-skarn]] openly schemes to overthrow Vantyrus, and Vantyrus treats the attempt as a standing threat rather than a secret.
-- **Pressure.** The [[long-sight-hunt]] must locate [[crissdalynn-khinriss]], or any Sentinel who recently visited [[Yssenmoor]], once [[Uncertainty]] enters Midchain waters.
-- **Strength.** Countless can reach pilgrim routes, grey markets, and Sentinel waystations without exposing a central ledger or a single ordering hand.
-- **Vulnerability.** One-job contacts know little beyond their assignments, and the Rule of Two makes Countless's leadership depend on who survives the contest.
-- **Opportunity.** The open contest between Vantyrus and Skarn can redirect Countless's reach if either Talon is isolated or defeated.
+- **Pressure.** The [[long-sight-hunt]] is searching for [[crissdalynn-khinriss]]. It will also track any Sentinel who recently visited [[Yssenmoor]] after [[Uncertainty]] enters Midchain waters.
+- **Strength.** Countless can reach pilgrim routes and grey markets. It can also reach Sentinel waystations without exposing a central ledger or ordering hand.
+- **Vulnerability.** One-job contacts know little beyond their assignments. Countless's leadership rests on the Rule of Two. The winner of the contest takes control.
+- **Opportunity.** Events can cut either Talon off or defeat them, which would redirect Countless's network.
 
 ## Active Agenda
 
-**Goal:** Locate [[crissdalynn-khinriss]], or any Sentinel who recently visited [[Yssenmoor]], once [[Uncertainty]] enters Midchain waters.
+**Goal.** Find [[crissdalynn-khinriss]]. Track any Sentinel who recently visited [[Yssenmoor]] after [[Uncertainty]] enters Midchain waters.
 
-**Why:** Countless is hunting Fate Spinner carriers, and Vantyrus's plan runs through the gift connected to the Soul Incarnate transformation technique.
+**Why.** Countless targets Fate Spinner carriers. Vantyrus's plan uses the gift tied to the Soul Incarnate transformation technique.
 
-**Next move:** Countless will sweep pilgrim routes, grey markets, and Sentinel waystations through one-job contacts.
+**Next action.** Countless will sweep pilgrim routes and grey markets. It will also search Sentinel waystations through one-job contacts.
 
-**Needs:** The hunt needs covert routes, paid contacts, and enough information to identify a Fate Spinner carrier without creating a usable ledger.
+**Needs.** The hunt needs covert routes and paid contacts. It also needs enough information to identify a Fate Spinner carrier without creating a usable ledger.
 
-**Opposition:** [[sentinels-of-the-eyrie]], [[crissdalynn-khinriss]], and the internal contest named by the [[rule-of-two]] stand in its way.
+**Opposition.** [[sentinels-of-the-eyrie]], [[crissdalynn-khinriss]], and the internal contest named by the [[rule-of-two]] stand in its way.
 
-**Next signal:** Missing names, blank ledger entries, and Talon jobs appearing around Yssenmoor signal that the hunt has advanced.
+**Next signal.** The hunt has advanced when names disappear, ledger entries remain blank, or Talon jobs appear around Yssenmoor.
 
-**Player opening:** The party can protect the target, expose the order chain, or exploit the contest between Vantyrus and Skarn.
+**Player opening.** The party can protect the target. It can expose the order chain. It can exploit the contest between Vantyrus and Skarn.
 
-**If completed:** Countless reaches the carrier and gives Vantyrus a path toward the Soul Incarnate transformation technique.
+**If completed.** Countless reaches the carrier and gives Vantyrus a path toward the Soul Incarnate transformation technique.
 
 ## Assets
 
 | Asset | Type | Location | What it enables | Condition |
 | --- | --- | --- | --- | --- |
 | Hired blades and paid contacts | Force | Pilgrim routes and grey markets | Sweeps routes and waystations without exposing the order chain | Active |
-| Covert routes and taken names | Access | Midchain | Avoids ledgers and leaves no reliable roster | Active |
+| Covert routes and taken names | Access | Midchain | Avoids ledgers and does not create a reliable roster | Active |
 
 ## People & Structure
 
@@ -103,9 +103,9 @@ relationships:
 
 ## Territory & Touchpoints
 
-- **Pilgrim routes:** Countless uses them to move work and search for Fate Spinner carriers.
-- **Grey markets:** Countless uses them as contact points for hired blades and paid agents.
-- **Sentinel waystations:** Countless searches them for carriers and recent visitors to Yssenmoor.
+- **Pilgrim routes.** Countless uses them to move work and search for Fate Spinner carriers.
+- **Grey markets.** Countless uses them as contact points for hired blades and paid agents.
+- **Sentinel waystations.** Countless searches them for carriers and recent visitors to Yssenmoor.
 
 ## Connections
 
@@ -120,12 +120,13 @@ relationships:
 
 | Situation | Run it |
 | --- | --- |
-| **When encountered** | A Countless agent answers to Talon and carries only one assignment, leaving the party to decide whether to follow the job or the missing name behind it. |
+| **When encountered** | A Countless agent uses the title Talon. The agent accepts one assignment. The party chooses whether to follow the job or investigate the missing name behind it. |
 | **When helped** | Countless uses the opening to continue the hunt while keeping the helper's knowledge limited to the immediate job. |
 | **When opposed** | Countless protects its routes and taken names first, then redirects pressure through another one-job contact. |
 | **When ignored** | The Long Sight hunt continues through pilgrim routes, grey markets, and Sentinel waystations until another name disappears. |
-| **When broken** | If Vantyrus or the route network falls, the Rule of Two determines who controls the remaining reach while the missing records survive. |
+| **When broken** | If Vantyrus or the route network falls, control passes to whichever Talon wins the Rule of Two contest. The missing records stay in place. |
 
 ## History
 
-The name The Uncounted is retired. Long Reach is the common Eldritch Claw Tattoo every Sentinel apprentice earns, while Long Sight is rare and withheld. [[crissdalynn-khinriss]] has early partial access because the [[fate-spinner]] unlocked it and [[master-kyzil]] never explained how far it reaches. Taken names replace Eyrie names. Power is proven by surviving your own student.
+Countless retired the name The Uncounted. Long Reach is the common Eldritch Claw Tattoo that every Sentinel apprentice receives, while Long Sight is rare and withheld. [[crissdalynn-khinriss]] has early partial access because the [[fate-spinner]] unlocked it and [[master-kyzil]] never explained how far it reaches. Taken names replace Eyrie names. Power belongs to the student or master who outlasts the other.
+
