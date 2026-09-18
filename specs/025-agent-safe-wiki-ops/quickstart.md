@@ -6,6 +6,7 @@
 
 - Python 3.14+ (matches `.venv`)
 - PyYAML already present from 024-creative-linting
+- **Vale** installed and available on PATH (project dependency — `vale sync` to install community packages)
 - Existing vault at `wiki/` with `.manifest.json`
 - Existing scripts: `scripts/wiki-bulk-ops`, `scripts/wiki-lint`, `scripts/manifest.py`
 - QMD: `scripts/qmd-maintain.sh` operational
@@ -137,7 +138,63 @@ python3 scripts/wiki-lint --scope files:entities/faction/fisks-captains.md --vau
 
 **Verify**: Lint reports the redirect stub as an error. No command creates a redirect file.
 
-### Scenario 8: Batched Finalization Count
+### Scenario 8: Vale Deprecated Pattern Detection
+
+**Purpose**: Verify Vale detects deprecated patterns and feeds findings into the unified pipeline.
+
+```bash
+# Create a test page with a DM Thesis section (deprecated pattern)
+cat > /tmp/test-page.md << 'EOF'
+---
+title: Test NPC
+type: npc
+category: entities
+tags: [test]
+sources: [manual]
+created: 2026-09-17
+updated: 2026-09-17
+---
+
+# Test NPC
+
+## At a Glance
+
+A test NPC.
+
+## DM Thesis
+
+This is a junk section that agents hallucinate.
+EOF
+
+# Run scoped lint including Vale
+python3 scripts/wiki-lint --scope files:/tmp/test-page.md --vault wiki --json
+# Expected: finding with rule_id VALE_Deprecated.DMThesis, repair_class deterministic_repair,
+#           repair_action kind delete_section, message contains deletion guidance
+
+# Run with --no-vale to verify it's suppressible
+python3 scripts/wiki-lint --scope files:/tmp/test-page.md --no-vale --vault wiki --json
+# Expected: no VALE_ findings
+```
+
+**Verify**: Deprecated pattern detected. Finding feeds into standard schema. `--no-vale` suppresses.
+
+### Scenario 9: Vale AI Tells and Prose Quality
+
+**Purpose**: Verify community Vale packages flag LLM prose artifacts.
+
+```bash
+# Run Vale directly to see raw findings
+vale --config .vale.ini --output=JSON /tmp/test-page.md
+# Expected: JSON array of findings from write-good, proselint, AITells packages
+
+# Run through the lint pipeline
+python3 scripts/wiki-lint --scope files:/tmp/test-page.md --vault wiki --json
+# Expected: VALE_ prefixed findings with repair_class deterministic_repair
+```
+
+**Verify**: Community package findings appear with correct repair class in unified output.
+
+### Scenario 10: Batched Finalization Count
 
 **Purpose**: Verify QMD refreshes exactly once, not per-file.
 
@@ -150,7 +207,7 @@ python3 -m pytest tests/test_wiki_ops.py::test_batched_finalization -v
 
 **Verify**: Single QMD refresh regardless of mutation count.
 
-### Scenario 9: QMD Hook Standalone Behavior
+### Scenario 11: QMD Hook Standalone Behavior
 
 **Purpose**: Verify the QMD hook is a standalone script with correct silent/no-op semantics.
 

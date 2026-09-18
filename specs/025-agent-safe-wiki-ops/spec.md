@@ -222,7 +222,7 @@ Policy rules (like acceptance semantics, callout vocabulary, template optionalit
 
 ## Assumptions
 
-- The existing wiki-lint infrastructure (Python scripts, finding schema) is extended rather than replaced. The new layers compose around existing tools.
+- The existing wiki-lint infrastructure (Python scripts, finding schema) is extended rather than replaced. The new layers compose around existing tools. Vale is a new project dependency (always installed and available) for the prose and deprecated-pattern quality layer.
 - The mutation layer is implemented as Python CLI commands consistent with the existing scripts/ directory pattern (agent-shaped: args in, JSON/text out, exit status).
 - Template contracts are expressed as YAML or JSON schema files co-located with templates, not as changes to the markdown templates themselves.
 - Identity resolution uses signals already present in the repository (frontmatter, filenames, manifest, wikilinks) plus QMD content similarity for overlap detection. QMD is an existing dependency, not a new addition. No redirect stubs exist in the vault; merge history is tracked in the manifest.
