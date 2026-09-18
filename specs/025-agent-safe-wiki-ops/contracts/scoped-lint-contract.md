@@ -4,9 +4,9 @@
 
 ## CLI Surface
 
-### `wiki-lint --scope <spec> [--template] [--plan] [--from <findings.json>] [--vault <vault>] [--json]`
+### `wiki-lint --scope <spec> [--no-template] [--plan] [--from <findings.json>] [--vault <vault>] [--json]`
 
-Run lint with explicit scope and optional repair plan generation.
+Run lint with explicit scope and optional repair plan generation. Template conformance runs by default.
 
 **Scope specification**:
 - `dir:entities/faction` — directory scope
@@ -16,7 +16,7 @@ Run lint with explicit scope and optional repair plan generation.
 - Omit for full vault (existing behavior)
 
 **Flags**:
-- `--template`: Enable template conformance (see template-contract.md)
+- `--no-template`: Disable template conformance (default: enabled; see template-contract.md)
 - `--plan`: Generate a repair plan from deterministic findings instead of raw findings
 - `--from <file>`: Build a plan from previously saved lint output (avoids re-running lint)
 - `--vault`: Vault root
@@ -82,7 +82,7 @@ The existing `tools/lint_wiki.py` `load()` function returns all pages. Scoped li
 
 1. If scope is provided: filter the returned pages dict to only matching paths.
 2. Run existing HARD checks on the filtered set.
-3. If `--template`: run template conformance on filtered set.
+3. Run template conformance on filtered set (unless `--no-template`).
 4. Merge findings, classify repair classes, format output.
 
 The existing no-scope behavior is unchanged — `wiki-lint` without `--scope` works exactly as before.

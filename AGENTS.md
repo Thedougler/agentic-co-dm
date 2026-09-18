@@ -193,6 +193,9 @@ Search the selected collection first, then pass the exact returned `#docid` or
 `qmd://` source to `qmd get` / `qmd multi-get` verbatim. Use collection `wiki`
 when `QMD_WIKI_COLLECTION` is empty. Never construct, URL-encode, or infer a
 QMD document path from an Obsidian filename; the search result is the identifier.
+`multi-get` takes comma-separated `#docid` values (`"#a,#b"`) or brace-expanded
+paths — not `qmd://` URIs, not percent-encoded strings. If `multi-get` rejects
+an identifier, fall back to serial `qmd get`.
 
 Order (`specs/004-qmd-search-default/contracts/retrieval-precedence.md`): `-c wiki` first; if silence `-c shattered-sea`; if silence `-c legacy-ss`; if still silence, say the wiki is silent.
 

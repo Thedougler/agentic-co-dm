@@ -103,8 +103,7 @@ flexGrow=1
 
 **Player opening:** The party can intercept a shipment, protect captives, expose Crown toxin purchases, or force a choice between a beach bargain and an interior breach.
 
-> [!danger] If completed
-> The clans regain enough water reach to raid and export toxin without sacrificing their remaining safe retreats, making the closed interior harder to challenge.
+**If completed.** The clans regain enough water reach to raid and export toxin without sacrificing their remaining safe retreats, making the closed interior harder to challenge.
 
 ## Assets
 
@@ -196,13 +195,11 @@ The source does not establish whether the clans collapse or fragment. Their isla
 - **The making of Aruhe.** The clans captured and tortured a druid from a far Midchain island, killed her companion after their escape toward Aruhe, and left the grief that became [[Hinewai]]'s law. The full confession belongs in [[grung-and-the-making-of-aruhe]].
 - **The Calveno raid.** The clans took fighting-age people from festival ports and routed them through the captive pipeline toward [[Karath]].
 
-## Secrets
+## Hidden Agenda
 
-> [!secret] Hidden truth
-> The public story of protection conceals a caste-and-rite system under strain. Raids, the fighting-age levy, toxin exports, and the captive pipeline are one attempt to keep the clans sharp while their maritime position deteriorates.
+**Hidden truth.** The public story of protection conceals a caste-and-rite system under strain. Raids, the fighting-age levy, toxin exports, and the captive pipeline are one attempt to keep the clans sharp while their maritime position deteriorates.
 
-> [!secret] Gold presence
-> The exact nature of the presence associated with [[Auralis]] is unknown. It may be a god, construct, conduit, creature, or story made effective by congregation; this source does not decide among them.
+**Gold presence.** The exact nature of the presence associated with [[Auralis]] is unknown. It may be a god, construct, conduit, creature, or story made effective by congregation; this source does not decide among them.
 
 ## Unknowns
 

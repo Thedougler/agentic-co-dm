@@ -40,7 +40,7 @@ def structural_main(argv: list[str]) -> int:
     parser.add_argument("--vault", dest="vault_override")
     parser.add_argument("--json", action="store_true")
     parser.add_argument("--scope")
-    parser.add_argument("--template", action="store_true")
+    parser.add_argument("--no-template", dest="template", action="store_false", default=True)
     parser.add_argument("--plan", action="store_true")
     parser.add_argument("--from", dest="findings_file")
     parser.add_argument("--hard", action="store_true", default=True)
@@ -112,6 +112,10 @@ def structural_main(argv: list[str]) -> int:
                         "repair_class": "human_repair",
                         "reason": "Page contains deprecated faction-clock output inherited from source guidance",
                     })
+            if template_findings:
+                report.setdefault("findings", {})["template_conformance"] = template_findings
+                report.setdefault("counts", {})["template_conformance"] = len(template_findings)
+                report["hard_fail"] = True
         if args.plan:
             findings = report.get("findings", {})
             if isinstance(findings, dict):

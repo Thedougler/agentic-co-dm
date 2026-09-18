@@ -10,13 +10,13 @@ One YAML file per entity type. Derived from the corresponding template but adds 
 
 ## CLI Surface
 
-### `wiki-lint --scope <scope> --template [--vault <vault>] [--json]`
+### `wiki-lint --scope <scope> [--no-template] [--vault <vault>] [--json]`
 
-Run template conformance lint against pages in scope.
+Run template conformance lint against pages in scope. Template conformance runs by default.
 
 **Input**:
 - `--scope`: Scope specification
-- `--template`: Enable template conformance checking (uses `type` frontmatter to select contract)
+- `--no-template`: Disable template conformance checking (default: enabled; uses `type` frontmatter to select contract)
 - `--vault`: Vault root
 - `--json`: Structured JSON output
 

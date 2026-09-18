@@ -5,13 +5,13 @@ Agentic Co-DM is a skill-based toolkit for preparing and wrapping up tabletop RP
 ## Requirements
 
 - Python 3.12 or newer
-- Node.js and npm
-- `uv` (used to install Spec Kit and manage Python tooling)
+- Node.js 22 or newer and npm
+- `uv` (used to install Python dependencies and Spec Kit)
 - An Obsidian vault for campaign knowledge
 
-Most repository scripts use the Python standard library. Spec Kit’s agent-context extension needs `PyYAML`. Objective token counts use `tiktoken` via `scripts/token-count.py` (pinned in `pyproject.toml`) — see `docs/agents/token-measurement.md`.
+Python dependencies are declared in `pyproject.toml`; Node development tools are declared in `package.json`. QMD is installed globally because the maintenance scripts invoke its `qmd` executable.
 
-## Setup
+## Installation and setup
 
 1. Clone the repository:
 
@@ -28,28 +28,41 @@ Most repository scripts use the Python standard library. Spec Kit’s agent-cont
 
    Restart the shell or add `~/.local/bin` to `PATH` if the installer requests it.
 
-3. Install Spec Kit. This repository is already initialized for the `omp` integration; do not run `specify init` over the checkout.
+3. Install the Python dependencies:
+
+   ```bash
+   uv sync
+   source .venv/bin/activate
+   ```
+
+   `uv sync` creates the project environment and installs `PyYAML` and `tiktoken`.
+
+4. Install the Node development tools:
+
+   ```bash
+   npm install
+   ```
+
+5. Install Spec Kit. This repository is already initialized for the `omp` integration; do not run `specify init` over the checkout.
 
    ```bash
    uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
    specify --version
    ```
 
-4. Create the local environment file:
+6. Create the local environment file:
 
    ```bash
    cp .env.example .env
    ```
 
-5. Set `OBSIDIAN_VAULT_PATH` in `.env` to the path of your Obsidian vault. Keep the QMD defaults from `.env.example` unless you use a different index configuration.
+   Add the path to your Obsidian vault:
 
-6. Create the Python environment and install the Python tooling used by the Spec Kit agent-context extension:
-
-   ```bash
-   uv venv --python 3.12
-   source .venv/bin/activate
-   python3 -m pip install pyyaml
+   ```dotenv
+   OBSIDIAN_VAULT_PATH=/absolute/path/to/your/vault
    ```
+
+   Keep the QMD defaults from `.env.example` unless you use a different index configuration. `.env` is ignored by Git.
 
 7. Install QMD:
 
@@ -68,12 +81,13 @@ Most repository scripts use the Python standard library. Spec Kit’s agent-cont
 
 ## Verify the checkout
 
-Run these checks from the repository root:
+Run these checks from the repository root after activating `.venv`:
 
 ```bash
 python3 tools/check_wiki_pages.py
 specify --version
 qmd status
+npm run lint:markdown -- --no-globs README.md
 ./scripts/wiki-maintain --report --summary-only
 ```
 

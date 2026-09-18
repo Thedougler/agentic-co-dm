@@ -45,6 +45,7 @@ HARD_KEYS = (
     "illegal_basename",
     "duplicate_stems",
     "redirect_stubs",
+    "template_conformance",
 )
 PC_ROLE = re.compile(r"^(pc|player character|player)$", re.I)
 TOKEN = re.compile(r"`([^`]+)`")

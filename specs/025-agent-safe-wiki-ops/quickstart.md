@@ -48,8 +48,8 @@ python3 scripts/wiki-lint --vault wiki --json
 **Purpose**: Verify optional sections don't produce false findings.
 
 ```bash
-# Lint a faction page against the faction template contract
-python3 scripts/wiki-lint --scope files:entities/faction/fisks-fleet.md --template --vault wiki --json
+# Lint a faction page (template conformance runs by default)
+python3 scripts/wiki-lint --scope files:entities/faction/fisks-fleet.md --vault wiki --json
 # Expected: no TMPL_missing_required for optional sections
 # Expected: no findings for lifecycle-exempt sections on non-active factions
 ```

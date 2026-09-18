@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import subprocess
 import tempfile
 import unittest
@@ -123,20 +124,10 @@ def test_scope_and_semantic_sections():
     assert section_hash(section.content) == section.hash
 
 def test_scoped_lint_uses_full_vault_for_backlinks_and_index(tmp_path: Path):
-    target = (
-        "---\n"
-        "title: Target Faction\n"
-        "category: entities\n"
-        "tags: [faction]\n"
-        "sources: []\n"
-        "created: 2026-09-17\n"
-        "updated: 2026-09-17\n"
-        "type: faction\n"
-        "lifecycle: proposed\n"
-        "reveal: unrevealed\n"
-        "---\n"
-        "# Target Faction\n"
-    )
+    # Build fixture from the vault template so it stays in sync with the contract
+    template = (ROOT / "wiki" / "templates" / "faction.md").read_text(encoding="utf-8")
+    target = template.replace("{{title}}", "Target Faction")
+    target = re.sub(r"\[\[([^\]]+)\]\]", r"\1", target)  # strip placeholder wikilinks
     (tmp_path / "entities/faction").mkdir(parents=True)
     (tmp_path / "entities/faction/target-faction.md").write_text(target, encoding="utf-8")
     (tmp_path / "index.md").write_text("- [[target-faction]]\n", encoding="utf-8")
