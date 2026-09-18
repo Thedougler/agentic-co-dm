@@ -184,3 +184,99 @@ def test_template_contract_reports_required_sections():
     page = "---\ntitle: Test\ntype: faction\nlifecycle: active\n---\n# Test\n"
     findings = check_conformance("test.md", page, contract)
     assert any(item["rule_id"] == "TMPL_missing_required" for item in findings)
+
+def _fake_qmd(path: Path, body: str) -> Path:
+    script = path / "qmd"
+    script.write_text("#!/bin/sh\nset -eu\n" + body, encoding="utf-8")
+    script.chmod(0o755)
+    return script
+
+
+def _run_qmd_hook(temp: Path, *, body: str, extra_env: dict[str, str] | None = None) -> subprocess.CompletedProcess[str]:
+    _fake_qmd(temp, body)
+    env = os.environ | {
+        "PATH": f"{temp}:{os.environ['PATH']}",
+        "QMD_HOOK_LOCK_DIR": str(temp / "lock"),
+    } | (extra_env or {})
+    return subprocess.run(
+        [str(ROOT / "scripts/qmd-hook.sh")],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        env=env,
+    )
+
+
+def test_qmd_hook_is_silent_and_count_bounded(tmp_path: Path):
+    log = tmp_path / "calls.log"
+    result = _run_qmd_hook(
+        tmp_path,
+        body='printf "%s\\n" "$*" >> "$QMD_TEST_LOG"\n',
+        extra_env={
+            "QMD_TEST_LOG": str(log),
+            "QMD_HOOK_MAX_DOCS": "3",
+            "QMD_HOOK_MAX_MB": "2",
+        },
+    )
+    assert result.returncode == 0, result.stderr
+    assert result.stdout == ""
+    assert result.stderr == ""
+    assert log.read_text(encoding="utf-8").splitlines() == [
+        "update",
+        "embed -c wiki --max-docs-per-batch 3 --max-batch-mb 2",
+    ]
+
+def test_qmd_hook_is_silent_noop_without_qmd(tmp_path: Path):
+    for command in ("bash", "dirname", "pwd"):
+        (tmp_path / command).symlink_to(Path("/bin" if command in {"bash", "pwd"} else "/usr/bin") / command)
+    env = os.environ | {"PATH": str(tmp_path), "QMD_HOOK_LOCK_DIR": str(tmp_path / "lock")}
+    result = subprocess.run(
+        [str(ROOT / "scripts/qmd-hook.sh")],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        env=env,
+    )
+    assert (result.returncode, result.stdout, result.stderr) == (0, "", "")
+
+
+def test_qmd_hook_serializes_concurrent_invocations(tmp_path: Path):
+    active = tmp_path / "active"
+    overlap = tmp_path / "overlap"
+    log = tmp_path / "calls.log"
+    body = (
+        'printf "%s\\n" "$*" >> "$QMD_TEST_LOG"\n'
+        'if [ "$1" = embed ]; then\n'
+        '  if ! mkdir "$QMD_ACTIVE" 2>/dev/null; then touch "$QMD_OVERLAP"; exit 9; fi\n'
+        '  sleep 0.1\n'
+        '  rmdir "$QMD_ACTIVE"\n'
+        'fi\n'
+    )
+    _fake_qmd(tmp_path, body)
+    env = os.environ | {
+        "PATH": f"{tmp_path}:{os.environ['PATH']}",
+        "QMD_HOOK_LOCK_DIR": str(tmp_path / "lock"),
+        "QMD_TEST_LOG": str(log),
+        "QMD_ACTIVE": str(active),
+        "QMD_OVERLAP": str(overlap),
+    }
+    first = subprocess.Popen([str(ROOT / "scripts/qmd-hook.sh")], cwd=ROOT, env=env, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    second = subprocess.Popen([str(ROOT / "scripts/qmd-hook.sh")], cwd=ROOT, env=env, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    first_out, first_err = first.communicate(timeout=5)
+    second_out, second_err = second.communicate(timeout=5)
+    assert (first.returncode, first_out, first_err) == (0, "", "")
+    assert (second.returncode, second_out, second_err) == (0, "", "")
+    assert not overlap.exists()
+    assert log.read_text(encoding="utf-8").splitlines().count("embed -c wiki --max-docs-per-batch 128 --max-batch-mb 16") == 2
+
+
+def test_qmd_hook_reports_one_actionable_error(tmp_path: Path):
+    result = _run_qmd_hook(
+        tmp_path,
+        body='if [ "$1" = embed ]; then printf "backend failed\\n" >&2; exit 7; fi\n',
+    )
+    assert result.returncode != 0
+    assert result.stdout == ""
+    assert result.stderr.count("\n") == 1
+    assert "qmd embed" in result.stderr
+    assert "backend failed" in result.stderr

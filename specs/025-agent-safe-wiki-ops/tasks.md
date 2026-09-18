@@ -161,9 +161,9 @@ description: "Task list for Agent-Safe Wiki Operations"
 - [X] T037 [US6] Implement pending/committed/failed/finalized lifecycle states and deferred index, manifest, and single QMD finalization in `tools/wiki_ops/transactions.py`
 - [X] T038 [US6] Implement `scripts/wiki-bulk-ops transact --plan-file --approve --vault --json` with preview output, validation exit 2, write/finalization exit 1, and compact summary fields in `scripts/wiki-bulk-ops`
 - [X] T039 [US6] Connect `tools/wiki_ops/index_ops.py` and `tools/wiki_ops/manifest_ops.py` to transaction finalization without intermediate refreshes
-- [ ] T055 [US6] Create standalone `scripts/qmd-hook.sh` with count-bounded embedding (at most N pages per invocation), serialized concurrent invocations (lock or deterministic `busy` result), zero stdout/stderr on success, non-zero exit with one actionable error line on stderr on failure, and silent no-op (exit 0, zero output) when QMD is not installed
-- [ ] T056 [US6] Add failing behavioral tests for `scripts/qmd-hook.sh`: zero output on success, silent no-op when QMD absent, count-bounded embedding (verify embed count ≤ N after large write set), serialization under concurrent invocation, and non-zero exit with stderr on maintenance failure in `tests/test_wiki_ops.py`
-- [ ] T057 [US6] Wire `scripts/qmd-hook.sh` into transaction finalization in `tools/wiki_ops/transactions.py` replacing the `qmd-maintain.sh` call
+- [X] T055 [US6] Create standalone `scripts/qmd-hook.sh` with count-bounded embedding (at most N pages per invocation), serialized concurrent invocations (lock or deterministic `busy` result), zero stdout/stderr on success, non-zero exit with one actionable error line on stderr on failure, and silent no-op (exit 0, zero output) when QMD is not installed
+- [X] T056 [US6] Add failing behavioral tests for `scripts/qmd-hook.sh`: zero output on success, silent no-op when QMD absent, count-bounded embedding (verify embed count ≤ N after large write set), serialization under concurrent invocation, and non-zero exit with stderr on maintenance failure in `tests/test_wiki_ops.py`
+- [X] T057 [US6] Wire `scripts/qmd-hook.sh` into transaction finalization in `tools/wiki_ops/transactions.py` replacing the `qmd-maintain.sh` call
 
 **Checkpoint**: Multi-file repairs commit once and finalize derived maintenance once. The QMD hook is a standalone harness-agnostic script.
 
@@ -220,7 +220,7 @@ description: "Task list for Agent-Safe Wiki Operations"
 - [X] T052 [P] Document identity, scope, template, mutation, repair-plan, transaction, and policy commands plus architecture boundaries in `docs/cli.md` and `docs/architecture.md`
 - [X] T053 Run every validation scenario in `specs/025-agent-safe-wiki-ops/quickstart.md` and record command-contract corrections in `tests/test_wiki_ops.py`
 - [X] T054 Run the focused suites from `specs/025-agent-safe-wiki-ops/quickstart.md`, then verify `python3 scripts/check-policy-conflicts --json` and `python3 scripts/wiki-lint --scope dir:entities/faction --json --vault wiki`
-- [ ] T058 Wire `scripts/qmd-hook.sh` into the OMP harness so wiki-write boundaries invoke the hook automatically — add the call site to `.omp/` configuration or agent instructions so OMP agents get the same post-write QMD maintenance as Claude Code agents
+- [X] T058 Wire `scripts/qmd-hook.sh` into the OMP harness so wiki-write boundaries invoke the hook automatically — add the call site to `.omp/` configuration or agent instructions so OMP agents get the same post-write QMD maintenance as Claude Code agents
 
 ## Dependencies & Execution Order
 

@@ -85,7 +85,7 @@ class Transaction:
                     finalization["manifest_updated"] = True
             runner = self.qmd_runner
             if runner is None:
-                script = self.vault.parent / "scripts" / "qmd-maintain.sh"
+                script = self.vault.parent / "scripts" / "qmd-hook.sh"
                 if script.is_file():
                     runner = lambda: subprocess.run([str(script)], cwd=self.vault.parent, check=False).returncode
             if runner is not None:
