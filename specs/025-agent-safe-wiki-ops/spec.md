@@ -18,6 +18,10 @@
 - Q: When a merge creates a redirect stub, what triggers its removal? → A: No redirect stubs. Merges update the canonical page or do not write. Zero redirect files in the vault.
 - (User request 2026-09-17) QMD maintenance is an agent hook, not an agent reporting task: successful live wiki writes MUST trigger one serialized maintenance run that updates the index and attempts the configured embedding pass. Routine success is silent; only actionable failures are surfaced. A backlog after a successful bounded pass is derived state, not a repair instruction.
 - (Concurrency) Concurrent QMD hooks MUST serialize or return a deterministic `busy` result without starting a second QMD process; this prevents SQLite initialization races.
+- Q: How should the QMD hook be triggered across harnesses? → A: Standalone shell script. Each harness calls it after wiki writes. Not a git hook — the hook is harness-agnostic infrastructure that any harness invokes, not a git-level trigger.
+- Q: Should the embedding pass be bounded or unbounded per invocation? → A: Count-bounded (at most N pages per invocation). The backlog drains naturally across successive wiki writes without blocking agents.
+- Q: In CI/Codex where QMD or its LLM is unavailable, what should the hook do? → A: Silent no-op. If QMD is not installed, exit 0 with zero output — no error, no notice.
+- Q: Should the hook produce output on success? → A: Zero output on success. Truly silent. Agents query `qmd status` separately if they need situational awareness.
 
 ## User Scenarios & Testing
 
@@ -185,9 +189,9 @@ Policy rules (like acceptance semantics, callout vocabulary, template optionalit
 - **FR-019**: Lint MUST detect pre-existing redirect stubs (pages with the legacy `redirects_to` frontmatter key) as errors requiring deletion. The `redirects_to` key is deprecated — new tooling MUST NOT create pages using it or recognize it as a valid routing mechanism.
 - **FR-016**: Repeated agent operations MUST have one canonical command surface with consistent arguments, --help, JSON mode, explicit exit meanings, and actionable error messages. Commands MUST self-discover repository and vault paths from the environment (config resolution, git root, vault AGENTS.md) rather than requiring the agent to supply infrastructure paths.
 - **FR-017**: Template conformance findings MUST distinguish root-cause severity (deprecated pattern in the template/skill source = critical error) from symptom severity (inherited deprecated output in a downstream page = error).
-- **FR-020**: Every successful live wiki write boundary MUST invoke the repository QMD hook exactly once after the write set commits; the hook MUST run `qmd update` and attempt one configured embedding pass without requiring an agent to remember a maintenance command.
-- **FR-021**: The QMD hook MUST serialize concurrent invocations, suppress routine success output, emit one compact machine-readable result when requested, and return a non-zero status with one actionable error line when maintenance cannot complete.
-- **FR-022**: A QMD embedding backlog after a successful hook MUST remain a derived status field; it MUST NOT cause a successful hook or mutation to emit a verbose remediation narrative.
+- **FR-020**: Every successful live wiki write boundary MUST invoke the repository QMD hook exactly once after the write set commits; the hook MUST run `qmd update` and attempt one count-bounded embedding pass (at most N pages) without requiring an agent to remember a maintenance command. The hook is a standalone shell script (not a git hook) that each harness calls — harness-agnostic by design.
+- **FR-021**: The QMD hook MUST serialize concurrent invocations, produce zero output on success, and return a non-zero status with one actionable error line on stderr when maintenance cannot complete. If QMD is not installed, the hook MUST exit 0 silently (no output, no error).
+- **FR-022**: A QMD embedding backlog after a successful hook MUST remain a derived status field; it MUST NOT cause a successful hook or mutation to emit a verbose remediation narrative. The backlog drains naturally across successive wiki writes; agents query `qmd status` for situational awareness when needed.
 
 ### Key Entities
 
@@ -218,4 +222,5 @@ Policy rules (like acceptance semantics, callout vocabulary, template optionalit
 - Template contracts are expressed as YAML or JSON schema files co-located with templates, not as changes to the markdown templates themselves.
 - Identity resolution uses signals already present in the repository (frontmatter, filenames, manifest, wikilinks) plus QMD content similarity for overlap detection. QMD is an existing dependency, not a new addition. No redirect stubs exist in the vault; merge history is tracked in the manifest.
 - QMD refresh is the most expensive derived-maintenance step and is the primary target for batched finalization.
+- The QMD hook is a standalone shell script callable by any harness (Claude Code, Codex, OMP, Grok Build). It does not depend on git hooks, harness-specific configuration, or a running LLM. When QMD is not installed, the hook is a silent no-op.
 - The mutation layer does not need to handle concurrent writers across different processes — bounded concurrency (Constitution XIV) means at most one writer per artifact.
