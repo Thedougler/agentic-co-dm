@@ -432,10 +432,9 @@ def main() -> int:
     findings["missing_trust"] = [{"page": rel, "missing": [key for key in args.required_trust_field if not item["fields"].get(key)]} for rel, item in pages.items() if any(not item["fields"].get(key) for key in args.required_trust_field)]
 
     documents = {}
-    scoped_documents = set(pages) if args.scope else None
     for path in sorted(vault.rglob("*.md")):
         rel = path.relative_to(vault)
-        if set(rel.parts) & SKIP_DIRS or (scoped_documents is not None and rel.as_posix() not in scoped_documents):
+        if set(rel.parts) & SKIP_DIRS:
             continue
         documents[rel.as_posix()] = path.read_text(encoding="utf-8")
     title_groups: dict[str, list[str]] = collections.defaultdict(list)
@@ -451,8 +450,10 @@ def main() -> int:
     broken: list[dict[str, object]] = []
     incoming = collections.Counter()
     edges: list[tuple[str, str]] = []
+    scoped_documents = set(pages) if args.scope else None
     for rel, body in documents.items():
         reserved_page = Path(rel).name in RESERVED_FILES
+        emit_findings = scoped_documents is None or rel in scoped_documents
         for raw in links(body):
             if normalize(raw) in MECHANIC_LINK_ALLOWLIST:
                 continue
@@ -460,7 +461,7 @@ def main() -> int:
             if len(targets) == 1:
                 incoming[targets[0]] += 1
                 edges.append((rel, targets[0]))
-            elif not targets and not reserved_page:
+            elif not targets and emit_findings and not reserved_page:
                 # Skip HARD broken_links from reserved non-content (AGENTS/index/log/hot).
                 broken.append({"page": rel, "target": raw})
     findings["broken_links"] = broken

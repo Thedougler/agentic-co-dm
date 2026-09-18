@@ -46,6 +46,21 @@ Done when: every fixable finding on the named page is repaired. Unfixable findin
 
 Pass `--check` to report findings without repairing them. The full vault flow below runs when no page path is given.
 
+## Bulk Repair
+
+When vault-wide lint finds fixable issues across multiple files and `--check` is not set, repair them **one file at a time** from the findings backlog. Other files may be read for corroborating context (link targets, cross-references), but only **one file is written at a time**.
+
+1. Run all lint checks (deterministic pass + checks 1–13). Collect the full findings list — this is the **backlog**.
+2. Group findings by file. Order: files with the most HARD findings first.
+3. For each file in the backlog:
+   a. Read the file. Read related files for context as needed (link targets, cross-references) — but write only this file.
+   b. Fix every fixable finding on this file (same repairs as Page-Scoped Repair step 3).
+   c. Re-run page-scoped lint (`./scripts/wiki-lint --json --scope <path> wiki/`) and fix until clean.
+   d. Commit this file's changes before opening the next.
+4. **Degradation stop.** After each file completes, assess output quality and remaining context. If quality has degraded (wrong fixes, missed findings, shallow repairs) or context is filling, stop. Report files completed so far, list the remaining backlog, and recommend delegating the rest to a fresh agent.
+
+Done when: every file in the backlog is repaired and verified clean, or the degradation stop fired with a delegation recommendation.
+
 ## Lint Checks
 
 Run these checks in order. Report findings as you go.

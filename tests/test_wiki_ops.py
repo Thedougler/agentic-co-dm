@@ -122,6 +122,39 @@ def test_scope_and_semantic_sections():
     section = parse_sections(page).find(["Overview"])
     assert section_hash(section.content) == section.hash
 
+def test_scoped_lint_uses_full_vault_for_backlinks_and_index(tmp_path: Path):
+    target = (
+        "---\n"
+        "title: Target Faction\n"
+        "category: entities\n"
+        "tags: [faction]\n"
+        "sources: []\n"
+        "created: 2026-09-17\n"
+        "updated: 2026-09-17\n"
+        "type: faction\n"
+        "lifecycle: proposed\n"
+        "reveal: unrevealed\n"
+        "---\n"
+        "# Target Faction\n"
+    )
+    (tmp_path / "entities/faction").mkdir(parents=True)
+    (tmp_path / "entities/faction/target-faction.md").write_text(target, encoding="utf-8")
+    (tmp_path / "index.md").write_text("- [[target-faction]]\n", encoding="utf-8")
+    (tmp_path / "source.md").write_text("[[target-faction]]\n", encoding="utf-8")
+
+    report = assert_json(
+        run_cli(
+            "scripts/wiki-lint",
+            "--json",
+            "--scope",
+            "files:entities/faction/target-faction.md",
+            "--vault",
+            tmp_path,
+        )
+    )
+    assert report["findings"]["orphan_pages"] == []
+    assert report["findings"]["index_issues"]["missing_from_index"] == []
+
 
 def test_mutation_hash_and_dry_run():
     page = (FIXTURE / "fisks-fleet.md").read_text()
@@ -269,6 +302,28 @@ def test_qmd_hook_serializes_concurrent_invocations(tmp_path: Path):
     assert not overlap.exists()
     assert log.read_text(encoding="utf-8").splitlines().count("embed -c wiki --max-docs-per-batch 128 --max-batch-mb 16") == 2
 
+
+def test_qmd_hook_reports_lock_timeout(tmp_path: Path):
+    _fake_qmd(tmp_path, "")
+    lock = tmp_path / "lock"
+    lock.mkdir()
+    env = os.environ | {
+        "PATH": f"{tmp_path}:{os.environ['PATH']}",
+        "QMD_HOOK_LOCK_DIR": str(lock),
+        "QMD_HOOK_LOCK_WAIT": "1",
+    }
+    result = subprocess.run(
+        [str(ROOT / "scripts/qmd-hook.sh")],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        env=env,
+        timeout=5,
+    )
+    assert result.returncode != 0
+    assert result.stdout == ""
+    assert result.stderr.count("\n") == 1
+    assert "lock busy" in result.stderr
 
 def test_qmd_hook_reports_one_actionable_error(tmp_path: Path):
     result = _run_qmd_hook(

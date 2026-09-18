@@ -175,8 +175,9 @@ For each remaining file:
 
 1. Mark it `open`. Do not create or change wiki pages or tracking for any later file while this one is `open`.
 2. Run **this file** through Preserve / combatant-drops / Steps 1–7 as it qualifies. Unreadable, empty, or non-source binary: mark `failed` with a reason. Do not hash as success.
-3. Completing a file means: Step 1d ran; every extracted idea has a destination (see Source ideas); required pages filed or stubbed; on `complete`, call `python3 scripts/manifest.py record` exactly once for this file with those page destinations; write a `log.md` line for this file; mark `complete` or `failed`. Related misses do not by themselves fail the primary. Failure of the primary still requires a reason.
+3. Completing a file means: Step 1d ran; every extracted idea has a destination (see Source ideas); required pages filed or stubbed; on `complete`, call `python3 scripts/manifest.py record` exactly once for this file with those page destinations; write a `log.md` line for this file; run page-scoped `./scripts/wiki-lint --json --scope <page> wiki/` on each produced page and fix until clean; commit all changes for this file; mark `complete` or `failed`. Related misses do not by themselves fail the primary. Failure of the primary still requires a reason.
 4. Close the file before the next `open`. A later file may update a page from an earlier file only after the earlier file is `complete` or `failed`.
+5. **Degradation stop.** After each file completes, assess output quality and remaining context. If quality has visibly degraded (weaker summaries, missed cross-links, shallow extraction) or context is filling, stop. Report completed files, list the remaining backlog, and recommend delegating the rest to a fresh agent.
 
 After the run, report each file in processing order: `complete` or `failed`; related reads (identity, origin `staging` or `legacy`, role); misses; recency conflicts; destinations (pages created/updated, staged, unresolved, proposals); failure reason. If related search returned nothing, say so. Attribute later updates to the later file.
 
