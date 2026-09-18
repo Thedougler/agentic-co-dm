@@ -1,11 +1,3 @@
-<!--
-Sync Impact Report
-- Version change: 2.4.0 → 2.5.0
-- Modified principles: XV. Autonomous Operation → XV. Autonomous Operation
-- Added sections: none
-- Removed sections: none
-- Follow-up TODOs: none
--->
 
 # Agentic Co-DM Constitution
 <!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
