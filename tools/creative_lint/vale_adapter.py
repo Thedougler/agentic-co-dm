@@ -35,10 +35,15 @@ def map_vale_output(payload: dict[str, Any], registry: Registry, *, root: Path |
             if not isinstance(alert, dict):
                 continue
             check = str(alert.get("Check", ""))
-            rule_id = check.removeprefix("CoDM.").split(".")[-1]
+            if not check:
+                continue
+            is_custom = not check.startswith("CoDM.")
+            lookup_id = check.removeprefix("CoDM.").split(".")[-1]
             try:
-                rule = registry.get(rule_id)
+                rule = registry.get(lookup_id)
             except KeyError:
+                rule = None
+            if rule is None and not is_custom:
                 continue
             span = alert.get("Span") or []
             location: dict[str, Any] = {
@@ -51,15 +56,22 @@ def map_vale_output(payload: dict[str, Any], registry: Registry, *, root: Path |
                 location["end_col"] = max(1, int(span[1]))
             if alert.get("Match") is not None:
                 location["text"] = str(alert["Match"])
+            message = str(alert.get("Message") or alert.get("Match") or (rule.message if rule else check))
+            action_kind = "delete_section" if check.casefold().startswith("deprecated.") else "replace_section"
             findings.append(Finding(
-                rule_id=rule.id,
+                rule_id=f"VALE_{check}" if is_custom else lookup_id,
                 result="fail",
-                severity=(severity_overrides or {}).get(rule.id, rule.severity),
+                severity=(severity_overrides or {}).get(lookup_id, "REPAIR" if is_custom else rule.severity),
                 location=location,
-                evidence=str(alert.get("Message") or alert.get("Match") or rule.message),
-                reason=rule.message,
-                repair_target=rule.repair,
+                evidence=message,
+                reason=rule.message if rule else message,
+                repair_target=rule.repair if rule else message,
                 evaluator="vale",
+                repair_class="deterministic_repair" if is_custom else getattr(rule, "repair_class", "diagnostic"),
+                repair_action=(
+                    {"kind": action_kind, "target": location["file"], "selector": {"line": location["line"]}}
+                    if is_custom else None
+                ),
             ))
     return findings
 
@@ -74,7 +86,7 @@ def run_vale(files: list[Path], registry: Registry, *, root: Path | None = None,
     if not binary:
         return [], [f"Vale is not installed; skipped {len(files)} file(s)"]
     command = [
-        binary, "--output=JSON", '--filter=.Name matches "^CoDM\\\\."',
+        binary, "--output=JSON",
         f"--config={root / '.vale.ini'}",
         *[_relative_file(p, root) for p in files],
     ]

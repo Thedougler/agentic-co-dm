@@ -167,15 +167,17 @@ class LintEngine:
             selected, self.registry, root=self.root, severity_overrides=active_overrides
         )
         warnings.extend(vale_warnings)
-        findings = [finding for finding in vale_findings if finding.rule_id in active_ids]
+        findings = [finding for finding in vale_findings
+                    if finding.rule_id in active_ids or (not bundle and finding.rule_id.startswith("VALE_"))]
         findings.extend(evaluate_symbolic(
             selected, self.registry, root=self.root, vault=self.vault,
             rule_ids=active_ids, severity_overrides=active_overrides,
         ))
         findings = [finding for finding in findings if self._applicable(finding, state)]
         for finding in findings:
+            if finding.rule_id.startswith("VALE_"):
+                continue
             finding.repair_class = getattr(self.registry.get(finding.rule_id), "repair_class", "diagnostic")
-
 
         active_by_id = {rule.id: rule for rule, _ in active}
         conflict_pairs: set[tuple[str, str]] = set()

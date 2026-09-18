@@ -1080,12 +1080,25 @@ def typed_mutation(args: argparse.Namespace) -> dict[str, object]:
 
 
 def typed_transaction(args: argparse.Namespace) -> tuple[dict[str, object], int]:
+    from tools.wiki_ops.repair_plans import snapshot
     from tools.wiki_ops.transactions import Transaction
+    vault = resolve_vault(args.vault)
     data = json.loads(Path(args.plan_file).read_text(encoding="utf-8"))
     actions = data.get("actions", [])
-    tx = Transaction(args.vault)
+    if not isinstance(actions, list):
+        return {"status": "rejected", "error": "malformed_plan"}, 2
+    targets = [str(item.get("target", "")) for item in actions if isinstance(item, dict) and item.get("target")]
+    expected_snapshot = data.get("snapshot")
+    if expected_snapshot and expected_snapshot != snapshot(vault, targets):
+        return {"status": "rejected", "error": "plan_snapshot_mismatch"}, 2
+    tx = Transaction(vault)
     for item in actions:
-        tx.add(item.get("mutation", item))
+        if not isinstance(item, dict):
+            return {"status": "rejected", "error": "malformed_plan"}, 2
+        if item.get("action") == "delete_redirect_stub":
+            tx.add({"kind": "delete_file", "target": item["target"]})
+        else:
+            tx.add(item.get("mutation", item))
     if not args.approve:
         result = tx.preview()
         return result, 2 if result.get("status") == "rejected" else 0

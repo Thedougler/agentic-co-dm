@@ -17,9 +17,9 @@ description: "Implementation tasks for agent-safe wiki lint, repair, and consoli
 
 **Purpose**: Establish the project dependency, quality-tool configuration, and isolated fixtures used by every story.
 
-- [ ] T001 [P] Add the required Vale project dependency and supported Python metadata in `pyproject.toml`, preserving the existing `PyYAML` and Python `>=3.12` constraints.
-- [ ] T002 [P] Configure Vale scopes and active community packages in `.vale.ini`, including the repository's `styles/Deprecated/`, `styles/ai-tells/`, `styles/proselint/`, and `styles/write-good/` paths.
-- [ ] T003 [P] Add isolated wiki-operation fixture pages, malformed-index cases, redirect stubs, duplicate identities, and backlink/index/manifest fixtures under `tests/fixtures/wiki_ops/`.
+- [X] T001 [P] Add the required Vale project dependency and supported Python metadata in `pyproject.toml`, preserving the existing `PyYAML` and Python `>=3.12` constraints.
+- [X] T002 [P] Configure Vale scopes and active community packages in `.vale.ini`, including the repository's `styles/Deprecated/`, `styles/ai-tells/`, `styles/proselint/`, and `styles/write-good/` paths.
+- [X] T003 [P] Add isolated wiki-operation fixture pages, malformed-index cases, redirect stubs, duplicate identities, and backlink/index/manifest fixtures under `tests/fixtures/wiki_ops/`.
 
 ---
 
@@ -29,9 +29,9 @@ description: "Implementation tasks for agent-safe wiki lint, repair, and consoli
 
 **CRITICAL**: User-story implementation depends on this phase's stable JSON, exit-code, and path-discovery conventions.
 
-- [ ] T004 Define shared environment/config discovery, compact JSON serialization, and exit-code conventions for `scripts/wiki-identity`, `scripts/wiki-lint`, and `scripts/wiki-bulk-ops`, using repository and vault defaults instead of requiring infrastructure paths from agents.
-- [ ] T005 [P] Export the shared wiki-operation library surface from `tools/wiki_ops/__init__.py` and preserve the existing `tools/wiki_ops/` module boundaries for identity, scope, mutations, transactions, index, manifest, and template contracts.
-- [ ] T006 Extend the isolated-vault subprocess helpers and observable-file assertions in `tests/test_wiki_ops.py` so every CLI story can assert JSON output, exit status, atomic file state, and silent maintenance behavior without touching the live vault.
+- [X] T004 Define shared environment/config discovery, compact JSON serialization, and exit-code conventions for `scripts/wiki-identity`, `scripts/wiki-lint`, and `scripts/wiki-bulk-ops`, using repository and vault defaults instead of requiring infrastructure paths from agents.
+- [X] T005 [P] Export the shared wiki-operation library surface from `tools/wiki_ops/__init__.py` and preserve the existing `tools/wiki_ops/` module boundaries for identity, scope, mutations, transactions, index, manifest, and template contracts.
+- [X] T006 Extend the isolated-vault subprocess helpers and observable-file assertions in `tests/test_wiki_ops.py` so every CLI story can assert JSON output, exit status, atomic file state, and silent maintenance behavior without touching the live vault.
 
 **Checkpoint**: Shared command conventions and fixture seams are ready; user stories can proceed according to the dependency graph below.
 
@@ -45,14 +45,14 @@ description: "Implementation tasks for agent-safe wiki lint, repair, and consoli
 
 ### Tests for User Story 7
 
-- [ ] T007 [US7] Add failing identity-resolution and regression tests in `tests/test_wiki_ops.py` for title/alias/type matching, shared manifest provenance, QMD similarity, deterministic ordering, no-frontmatter `distinct`, `resolved` canonical pages, ambiguous candidate reporting, and causal coverage for identity-ordering errors e-10 and e-12.
+- [X] T007 [US7] Add failing identity-resolution and regression tests in `tests/test_wiki_ops.py` for title/alias/type matching, shared manifest provenance, QMD similarity, deterministic ordering, no-frontmatter `distinct`, `resolved` canonical pages, ambiguous candidate reporting, and causal coverage for identity-ordering errors e-10 and e-12.
 
 ### Implementation for User Story 7
 
-- [ ] T008 [P] [US7] Populate duplicate, distinct, and raw-drop identity fixtures under `tests/fixtures/wiki_ops/` with same-type candidates, different-type near matches, aliases, merge history, and manifest provenance.
-- [ ] T009 [US7] Implement `PageIdentity`, signal extraction, QMD similarity integration, and `resolved`/`ambiguous`/`distinct` classification in `tools/wiki_ops/identity.py`; enforce that `status: ambiguous` requires non-empty `candidates`, every `candidates[].path` references an existing vault file, and `signals.qmd_content_similarity` stays in `0.0–1.0`.
-- [ ] T010 [US7] Implement `resolve` and `scan` JSON CLI commands, scope handling, and exit codes in `scripts/wiki-identity` using the identity contract's `0 = resolved/no ambiguities`, `1 = error`, and `2 = ambiguous` meanings.
-- [ ] T011 [US7] Gate automatic repair and consolidation queueing on identity status in `tools/wiki_ops/identity.py`, `tools/wiki_ops/mutations.py`, and `tools/wiki_ops/transactions.py`; exclude legacy `redirects_to` pages from valid identity routing and return an actionable `identity_ambiguous` rejection.
+- [X] T008 [P] [US7] Populate duplicate, distinct, and raw-drop identity fixtures under `tests/fixtures/wiki_ops/` with same-type candidates, different-type near matches, aliases, merge history, and manifest provenance.
+- [X] T009 [US7] Implement `PageIdentity`, signal extraction, QMD similarity integration, and `resolved`/`ambiguous`/`distinct` classification in `tools/wiki_ops/identity.py`; enforce that `status: ambiguous` requires non-empty `candidates`, every `candidates[].path` references an existing vault file, and `signals.qmd_content_similarity` stays in `0.0–1.0`.
+- [X] T010 [US7] Implement `resolve` and `scan` JSON CLI commands, scope handling, and exit codes in `scripts/wiki-identity` using the identity contract's `0 = resolved/no ambiguities`, `1 = error`, and `2 = ambiguous` meanings.
+- [X] T011 [US7] Gate automatic repair and consolidation queueing on identity status in `tools/wiki_ops/identity.py`, `tools/wiki_ops/mutations.py`, and `tools/wiki_ops/transactions.py`; exclude legacy `redirects_to` pages from valid identity routing and return an actionable `identity_ambiguous` rejection.
 
 **Checkpoint**: Identity is resolved before ordering or mutation, and ambiguity is an explicit safe stop.
 
@@ -66,14 +66,14 @@ description: "Implementation tasks for agent-safe wiki lint, repair, and consoli
 
 ### Tests for User Story 4
 
-- [ ] T012 [US4] Add failing mutation tests in `tests/test_wiki_ops.py` for every required operation kind (`replace_section`, `delete_section`, `insert_section`, `set_frontmatter`, `remove_frontmatter`, `rename_or_merge_page`, `replace_index_entry`, `update_manifest_identity`, and `rewrite_links`), semantic selector errors, stale hashes, invalid invariants, overlap rejection, atomic rollback, and causal coverage for e-21 and e-23.
+- [X] T012 [US4] Add failing mutation tests in `tests/test_wiki_ops.py` for every required operation kind (`replace_section`, `delete_section`, `insert_section`, `set_frontmatter`, `remove_frontmatter`, `rename_or_merge_page`, `replace_index_entry`, `update_manifest_identity`, and `rewrite_links`), semantic selector errors, stale hashes, invalid invariants, overlap rejection, atomic rollback, and causal coverage for e-21 and e-23.
 
 ### Implementation for User Story 4
 
-- [ ] T013 [US4] Implement `MutationOp`, heading-path section parsing, SHA-256 `section_hash`, selector resolution, precondition validation, invariant checks, and atomic application in `tools/wiki_ops/mutations.py`; leave the original file untouched for every rejection.
-- [ ] T014 [US4] Add `mutate` subcommands, `--dry-run`, compact JSON output, actionable error fields, and exit codes to `scripts/wiki-bulk-ops` according to `contracts/mutation-contract.md`.
-- [ ] T015 [P] [US4] Implement structured index and manifest mutation primitives in `tools/wiki_ops/index_ops.py` and `tools/wiki_ops/manifest_ops.py`, including malformed-index detection, sorted entry operations, and page-level `merged_into`, `renamed_to`, and `archived` transitions without overwriting source provenance.
-- [ ] T016 [US4] Implement `rename_or_merge_page` in `tools/wiki_ops/mutations.py` to update the canonical page, deterministic backlinks, index, and manifest in one operation, remove the obsolete page, and never create a `redirects_to` redirect stub.
+- [X] T013 [US4] Implement `MutationOp`, heading-path section parsing, SHA-256 `section_hash`, selector resolution, precondition validation, invariant checks, and atomic application in `tools/wiki_ops/mutations.py`; leave the original file untouched for every rejection.
+- [X] T014 [US4] Add `mutate` subcommands, `--dry-run`, compact JSON output, actionable error fields, and exit codes to `scripts/wiki-bulk-ops` according to `contracts/mutation-contract.md`.
+- [X] T015 [P] [US4] Implement structured index and manifest mutation primitives in `tools/wiki_ops/index_ops.py` and `tools/wiki_ops/manifest_ops.py`, including malformed-index detection, sorted entry operations, and page-level `merged_into`, `renamed_to`, and `archived` transitions without overwriting source provenance.
+- [X] T016 [US4] Implement `rename_or_merge_page` in `tools/wiki_ops/mutations.py` to update the canonical page, deterministic backlinks, index, and manifest in one operation, remove the obsolete page, and never create a `redirects_to` redirect stub.
 
 **Checkpoint**: Typed mutations provide semantic selectors, safe preconditions, atomic writes, dry runs, and no redirect-stub creation.
 
@@ -87,13 +87,13 @@ description: "Implementation tasks for agent-safe wiki lint, repair, and consoli
 
 ### Tests for User Story 2
 
-- [ ] T017 [US2] Add failing template-conformance tests in `tests/test_wiki_ops.py` for optional omission, lifecycle `active`/`dormant`/`dissolved` behavior, required frontmatter, allowed callouts, root-cause versus downstream deprecated-pattern severity, redirect-stub detection, and causal coverage for e-13, e-14, e-20, and e-24 through e-38 template instances.
+- [X] T017 [US2] Add failing template-conformance tests in `tests/test_wiki_ops.py` for optional omission, lifecycle `active`/`dormant`/`dissolved` behavior, required frontmatter, allowed callouts, root-cause versus downstream deprecated-pattern severity, redirect-stub detection, and causal coverage for e-13, e-14, e-20, and e-24 through e-38 template instances.
 
 ### Implementation for User Story 2
 
-- [ ] T018 [P] [US2] Add machine-readable YAML contracts under `wiki/templates/contracts/`, one per existing `wiki/templates/*.md` type, with explicit `required`, `optional`, `repeatable`, `when`, `parent`, allowed-callout, and required/optional-frontmatter semantics; include the faction contract's lifecycle rules from `data-model.md`.
-- [ ] T019 [US2] Implement contract loading, lifecycle requirement resolution, section/callout/frontmatter conformance, and contract-version handling in `tools/wiki_ops/template_contracts.py`; fall back to the existing template profile when no explicit contract exists.
-- [ ] T020 [US2] Extend `tools/lint_wiki.py` and `scripts/wiki-lint` to run template conformance by default, emit `TMPL_*` findings, classify `redirects_to` pages as deterministic deletion repairs, and distinguish critical source guidance from downstream inherited output.
+- [X] T018 [P] [US2] Add machine-readable YAML contracts under `wiki/templates/contracts/`, one per existing `wiki/templates/*.md` type, with explicit `required`, `optional`, `repeatable`, `when`, `parent`, allowed-callout, and required/optional-frontmatter semantics; include the faction contract's lifecycle rules from `data-model.md`.
+- [X] T019 [US2] Implement contract loading, lifecycle requirement resolution, section/callout/frontmatter conformance, and contract-version handling in `tools/wiki_ops/template_contracts.py`; fall back to the existing template profile when no explicit contract exists.
+- [X] T020 [US2] Extend `tools/lint_wiki.py` and `scripts/wiki-lint` to run template conformance by default, emit `TMPL_*` findings, classify `redirects_to` pages as deterministic deletion repairs, and distinguish critical source guidance from downstream inherited output.
 
 **Checkpoint**: Template lint reports only real violations, not optional or lifecycle-exempt omissions, and redirect stubs are errors rather than routing mechanisms.
 
@@ -107,14 +107,14 @@ description: "Implementation tasks for agent-safe wiki lint, repair, and consoli
 
 ### Tests for User Story 1
 
-- [ ] T021 [US1] Add failing end-to-end workflow tests in `tests/test_wiki_ops.py` for ambiguous identity blocking, directory/type/file scopes, compact grouped output, silent cross-scope link skipping, broken embed/image findings, deterministic plan generation and hashing, two-page consolidation, and causal coverage for e-12 through e-19 and e-22.
+- [X] T021 [US1] Add failing end-to-end workflow tests in `tests/test_wiki_ops.py` for ambiguous identity blocking, directory/type/file scopes, compact grouped output, silent cross-scope link skipping, broken embed/image findings, deterministic plan generation and hashing, two-page consolidation, and causal coverage for e-12 through e-19 and e-22.
 
 ### Implementation for User Story 1
 
-- [ ] T022 [US1] Implement the typed `Scope` object and resolution for `files`, `directory`, `entity_type`, `identity_set`, `changed`, and `bundle` in `tools/wiki_ops/scope.py`, including `resolved_files` materialization and SKIP_DIRS behavior.
-- [ ] T023 [US1] Extend `tools/lint_wiki.py` and `scripts/wiki-lint` with `--scope`, `--no-template`, `--no-vale`, `--plan`, and `--from`, filtering before checks and returning compact scope/files/counts/findings-by-file JSON while treating out-of-scope links as valid during scoped runs.
-- [ ] T024 [US1] Add broken embed/image detection, repair-class assignment, deterministic typed action factories, and `RepairPlan` serialization/hash validation in `tools/lint_wiki.py` and `tools/wiki_ops/mutations.py`; include only deterministic repairs in plans and preserve diagnostic/human-only findings.
-- [ ] T025 [US1] Wire `scripts/wiki-identity`, `scripts/wiki-lint`, and `scripts/wiki-bulk-ops` into the documented end-to-end pipeline from `contracts/transaction-contract.md`, including canonical environment discovery, explicit exit meanings, and actionable ambiguity/precondition errors.
+- [X] T022 [US1] Implement the typed `Scope` object and resolution for `files`, `directory`, `entity_type`, `identity_set`, `changed`, and `bundle` in `tools/wiki_ops/scope.py`, including `resolved_files` materialization and SKIP_DIRS behavior.
+- [X] T023 [US1] Extend `tools/lint_wiki.py` and `scripts/wiki-lint` with `--scope`, `--no-template`, `--no-vale`, `--plan`, and `--from`, filtering before checks and returning compact scope/files/counts/findings-by-file JSON while treating out-of-scope links as valid during scoped runs.
+- [X] T024 [US1] Add broken embed/image detection, repair-class assignment, deterministic typed action factories, and `RepairPlan` serialization/hash validation in `tools/lint_wiki.py` and `tools/wiki_ops/mutations.py`; include only deterministic repairs in plans and preserve diagnostic/human-only findings.
+- [X] T025 [US1] Wire `scripts/wiki-identity`, `scripts/wiki-lint`, and `scripts/wiki-bulk-ops` into the documented end-to-end pipeline from `contracts/transaction-contract.md`, including canonical environment discovery, explicit exit meanings, and actionable ambiguity/precondition errors.
 
 **Checkpoint**: The P1 acceptance workflow is runnable with repository commands only and does not require line patches, regex index edits, or manual manifest rewrites.
 
@@ -128,14 +128,14 @@ description: "Implementation tasks for agent-safe wiki lint, repair, and consoli
 
 ### Tests for User Story 3
 
-- [ ] T026 [US3] Add failing applicability and precision tests in `tests/test_creative_lint.py` and `tests/test_wiki_ops.py` for redirects, explicit pressure, narrative-only surfaces, metadata/scaffold/table exemptions, transient transaction state, positive/negative fixtures, and causal coverage for e-15 and its e-24 through e-38 creative-lint instances.
+- [X] T026 [US3] Add failing applicability and precision tests in `tests/test_creative_lint.py` and `tests/test_wiki_ops.py` for redirects, explicit pressure, narrative-only surfaces, metadata/scaffold/table exemptions, transient transaction state, positive/negative fixtures, and causal coverage for e-15 and its e-24 through e-38 creative-lint instances.
 
 ### Implementation for User Story 3
 
-- [ ] T027 [P] [US3] Extend rule applicability, structural scopes, exemptions, fixture metadata, and severity promotion rules in `tools/creative_lint/registry.py`, `tools/creative_lint/engine.py`, `tools/creative_lint/findings.py`, and `tools/creative_lint/template_profile.py`.
-- [ ] T028 [US3] Update `rules/registry.yml`, `rules/bundles.yml`, and applicable `rules/{candidates,shadow}/` entries so SCENE001 and other creative rules declare applicability and cannot emit ERROR/WARN without positive fixtures.
-- [ ] T029 [US3] Implement `tools/wiki_ops/vale_adapter.py` to parse Vale JSON, prefix rule IDs with `VALE_`, map severity and guidance into the unified finding schema, and create `delete_section` or `replace_section` typed repair actions for every Vale finding.
-- [ ] T030 [US3] Make `tools/lint_wiki.py` and `scripts/wiki-lint` pass page state and structural applicability into the creative engine without classifying transient pages as orphan/index omissions.
+- [X] T027 [P] [US3] Extend rule applicability, structural scopes, exemptions, fixture metadata, and severity promotion rules in `tools/creative_lint/registry.py`, `tools/creative_lint/engine.py`, `tools/creative_lint/findings.py`, and `tools/creative_lint/template_profile.py`.
+- [X] T028 [US3] Update `rules/registry.yml`, `rules/bundles.yml`, and applicable `rules/{candidates,shadow}/` entries so SCENE001 and other creative rules declare applicability and cannot emit ERROR/WARN without positive fixtures.
+- [X] T029 [US3] Implement `tools/wiki_ops/vale_adapter.py` to parse Vale JSON, prefix rule IDs with `VALE_`, map severity and guidance into the unified finding schema, and create `delete_section` or `replace_section` typed repair actions for every Vale finding.
+- [X] T030 [US3] Make `tools/lint_wiki.py` and `scripts/wiki-lint` pass page state and structural applicability into the creative engine without classifying transient pages as orphan/index omissions.
 
 **Checkpoint**: Creative lint is applicability-aware, fixture-gated, and quiet on known false-positive surfaces.
 
@@ -149,12 +149,12 @@ description: "Implementation tasks for agent-safe wiki lint, repair, and consoli
 
 ### Tests for User Story 5
 
-- [ ] T031 [US5] Add failing structured-state tests in `tests/test_wiki_ops.py` for replace/remove/insert-by-slug index operations, malformed-index rejection, atomic writes, manifest transition records, preserved `pages_produced`, and causal coverage for e-16 and e-17.
+- [X] T031 [US5] Add failing structured-state tests in `tests/test_wiki_ops.py` for replace/remove/insert-by-slug index operations, malformed-index rejection, atomic writes, manifest transition records, preserved `pages_produced`, and causal coverage for e-16 and e-17.
 
 ### Implementation for User Story 5
 
-- [ ] T032 [US5] Complete `tools/wiki_ops/index_ops.py` as the sole structured parser/writer for `wiki/index.md`, operating on `- [[slug]] — description` entries and refusing malformed input instead of appending or regex-editing the 107KB document.
-- [ ] T033 [US5] Extend `scripts/manifest.py` and `tools/wiki_ops/manifest_ops.py` with page-level identity transition CRUD, JSON validation, and `merged_into`/`renamed_to`/`archived` serialization that leaves source-ingest provenance intact.
+- [X] T032 [US5] Complete `tools/wiki_ops/index_ops.py` as the sole structured parser/writer for `wiki/index.md`, operating on `- [[slug]] — description` entries and refusing malformed input instead of appending or regex-editing the 107KB document.
+- [X] T033 [US5] Extend `scripts/manifest.py` and `tools/wiki_ops/manifest_ops.py` with page-level identity transition CRUD, JSON validation, and `merged_into`/`renamed_to`/`archived` serialization that leaves source-ingest provenance intact.
 
 **Checkpoint**: Index and manifest state can only be changed through typed operations with atomic failure behavior.
 
@@ -168,13 +168,13 @@ description: "Implementation tasks for agent-safe wiki lint, repair, and consoli
 
 ### Tests for User Story 6
 
-- [ ] T034 [US6] Add failing transaction tests in `tests/test_wiki_ops.py` for validate/commit/finalize lifecycle states, overlap and stale-plan rejection, rollback after write failure, one QMD invocation for three mutations, compact finalization output, silent success/no-op behavior, and causal coverage for e-19.
+- [X] T034 [US6] Add failing transaction tests in `tests/test_wiki_ops.py` for validate/commit/finalize lifecycle states, overlap and stale-plan rejection, rollback after write failure, one QMD invocation for three mutations, compact finalization output, silent success/no-op behavior, and causal coverage for e-19.
 
 ### Implementation for User Story 6
 
-- [ ] T035 [US6] Implement validation, in-memory resolution, overlap detection, backup/restore, commit status, and single-pass finalization in `tools/wiki_ops/transactions.py`, preserving `pending` → `committed` → `finalized` and failure states from `data-model.md`.
-- [ ] T036 [US6] Add `transact --plan-file [--approve]` to `scripts/wiki-bulk-ops`, including preview diffs, plan-hash and mutation-precondition checks, compact `files_changed`/`mutations`/`finalization` JSON, and exit codes `0`, `1`, and `2` from `contracts/transaction-contract.md`.
-- [ ] T037 [US6] Complete standalone serialized QMD maintenance in `scripts/qmd-hook.sh`: run `qmd update` plus one count-bounded embedding pass, emit zero output on success, return one actionable stderr line on failure, return silent success when QMD is absent, and return deterministic `busy` behavior for concurrent callers.
+- [X] T035 [US6] Implement validation, in-memory resolution, overlap detection, backup/restore, commit status, and single-pass finalization in `tools/wiki_ops/transactions.py`, preserving `pending` → `committed` → `finalized` and failure states from `data-model.md`.
+- [X] T036 [US6] Add `transact --plan-file [--approve]` to `scripts/wiki-bulk-ops`, including preview diffs, plan-hash and mutation-precondition checks, compact `files_changed`/`mutations`/`finalization` JSON, and exit codes `0`, `1`, and `2` from `contracts/transaction-contract.md`.
+- [X] T037 [US6] Complete standalone serialized QMD maintenance in `scripts/qmd-hook.sh`: run `qmd update` plus one count-bounded embedding pass, emit zero output on success, return one actionable stderr line on failure, return silent success when QMD is absent, and return deterministic `busy` behavior for concurrent callers.
 
 **Checkpoint**: A transaction is the only finalization boundary; derived maintenance is deferred and never repeated per intermediate file.
 
@@ -188,12 +188,12 @@ description: "Implementation tasks for agent-safe wiki lint, repair, and consoli
 
 ### Tests for User Story 8
 
-- [ ] T038 [US8] Add failing ownership and contradiction tests in `tests/test_policy_conflicts.py` for acceptance semantics, callout vocabulary, template optionality, owner/consumer reporting, and causal coverage for e-20.
+- [X] T038 [US8] Add failing ownership and contradiction tests in `tests/test_policy_conflicts.py` for acceptance semantics, callout vocabulary, template optionality, owner/consumer reporting, and causal coverage for e-20.
 
 ### Implementation for User Story 8
 
-- [ ] T039 [US8] Create `docs/agents/policy-owners.yml` with one owner, governed decision, and consumer list for each cross-cutting policy, including acceptance semantics owned by `docs/agents/work.md`.
-- [ ] T040 [US8] Extend `scripts/check-policy-conflicts` and update `.agents/skills/faction-design/SKILL.md`, `.agents/skills/wiki-ingest/SKILL.md`, and related consumer guidance to reference `docs/agents/policy-owners.yml` instead of restating policy semantics.
+- [X] T039 [US8] Create `docs/agents/policy-owners.yml` with one owner, governed decision, and consumer list for each cross-cutting policy, including acceptance semantics owned by `docs/agents/work.md`.
+- [X] T040 [US8] Extend `scripts/check-policy-conflicts` and update `.agents/skills/faction-design/SKILL.md`, `.agents/skills/wiki-ingest/SKILL.md`, and related consumer guidance to reference `docs/agents/policy-owners.yml` instead of restating policy semantics.
 
 **Checkpoint**: Conflicting policy text is surfaced with both paths, and lower-level skills point to one authority.
 
@@ -203,11 +203,11 @@ description: "Implementation tasks for agent-safe wiki lint, repair, and consoli
 
 **Purpose**: Complete Vale rules, harness integration, documentation, and full feature verification without changing story semantics.
 
-- [ ] T041 [P] Add the deprecated `DM Thesis` Vale rule and agent-facing guidance in `styles/Deprecated/DMThesis.yml`, plus the configured AI-tells, write-good, and proselint package declarations needed by `.vale.ini`.
-- [ ] T042 [P] Wire `scripts/qmd-hook.sh` into every successful OMP wiki-write boundary in `.omp/config.yml`, `.omp/RULES.md`, and `OMP.md`, keeping the hook standalone rather than turning it into a git hook.
-- [ ] T043 [P] Update `docs/cli.md`, `docs/architecture.md`, and relevant feature contracts with the final command surfaces, scope syntax, mutation/transaction exit codes, QMD silent-success behavior, and canonical policy ownership links.
-- [ ] T044 Run every validation scenario in `specs/025-agent-safe-wiki-ops/quickstart.md`, including `tests/test_wiki_ops.py`, `tests/test_creative_lint.py`, `tests/test_policy_conflicts.py`, Vale JSON output, malformed-index rejection, and the full causal regression set for e-10 and e-12 through e-38.
-- [ ] T045 Run the repository's targeted baseline checks after the feature scenarios, including `scripts/check-omp-baseline.sh` and `python3 tools/check_readme_sync.py`, and record any actionable runtime failure in `errors.md` before completion.
+- [X] T041 [P] Add the deprecated `DM Thesis` Vale rule and agent-facing guidance in `styles/Deprecated/DMThesis.yml`, plus the configured AI-tells, write-good, and proselint package declarations needed by `.vale.ini`.
+- [X] T042 [P] Wire `scripts/qmd-hook.sh` into every successful OMP wiki-write boundary in `.omp/config.yml`, `.omp/RULES.md`, and `OMP.md`, keeping the hook standalone rather than turning it into a git hook.
+- [X] T043 [P] Update `docs/cli.md`, `docs/architecture.md`, and relevant feature contracts with the final command surfaces, scope syntax, mutation/transaction exit codes, QMD silent-success behavior, and canonical policy ownership links.
+- [X] T044 Run every validation scenario in `specs/025-agent-safe-wiki-ops/quickstart.md`, including `tests/test_wiki_ops.py`, `tests/test_creative_lint.py`, `tests/test_policy_conflicts.py`, Vale JSON output, malformed-index rejection, and the full causal regression set for e-10 and e-12 through e-38.
+- [X] T045 Run the repository's targeted baseline checks after the feature scenarios, including `scripts/check-omp-baseline.sh` and `python3 tools/check_readme_sync.py`, and record any actionable runtime failure in `errors.md` before completion.
 
 ---
 

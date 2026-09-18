@@ -1,3 +1,5 @@
+# Wiki-write finalization is owned by tools/wiki_ops/Transaction; direct OMP-managed
+# writes invoke scripts/qmd-hook.sh exactly once after the write set commits.
 modelRoleStorage: project
 modelRoles:
   default: opencode-go/grok-4.6:medium
@@ -35,7 +37,7 @@ compaction:
 advisor:
   enabled: false
 memory:
-  backend: mnemopi
+  backend: off
 
 mnemopi:
   # Project memories stay project-local.
@@ -68,7 +70,7 @@ mnemopi:
 
   debug: false
 autolearn:
-  enabled: true
+  enabled: false
   autoContinue: true
   minToolCalls: 20
 tools:

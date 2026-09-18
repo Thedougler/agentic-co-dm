@@ -40,6 +40,7 @@ def structural_main(argv: list[str]) -> int:
     parser.add_argument("--json", action="store_true")
     parser.add_argument("--vault", dest="vault_override")
     parser.add_argument("--scope")
+    parser.add_argument("--no-vale", dest="vale", action="store_false", default=True)
     parser.add_argument("--no-template", dest="template", action="store_false", default=True)
     parser.add_argument("--plan", action="store_true")
     parser.add_argument("--from", dest="findings_file")
@@ -117,6 +118,32 @@ def structural_main(argv: list[str]) -> int:
             if template_findings:
                 report.setdefault("findings", {})["template_conformance"] = template_findings
                 report.setdefault("counts", {})["template_conformance"] = len(template_findings)
+                report["hard_fail"] = True
+        if args.vale and scope:
+            from tools.creative_lint.bundles import BundleRegistry
+            from tools.creative_lint.engine import LintEngine
+            from tools.creative_lint.registry import Registry
+            from tools.creative_lint.waivers import WaiverRegistry
+            creative_paths = [vault / relative for relative in scope.resolved_files] if scope else [vault]
+            creative = LintEngine(
+                Registry.load(ROOT / "rules" / "registry.yml"),
+                BundleRegistry.load(ROOT / "rules" / "bundles.yml"),
+                root=ROOT,
+                vault=vault,
+                waivers=WaiverRegistry.load(ROOT / "rules" / "waivers.json"),
+            ).run(paths=creative_paths)
+            vale_findings = [
+                finding.to_dict() for finding in creative.findings
+                if finding.rule_id.startswith("VALE_")
+            ]
+            if vale_findings:
+                findings = report.setdefault("findings", {})
+                for finding in vale_findings:
+                    rule_id = str(finding["rule_id"])
+                    item = dict(finding)
+                    item["file"] = item.pop("location", {}).get("file", "")
+                    findings.setdefault(rule_id, []).append(item)
+                    report.setdefault("counts", {})[rule_id] = len(findings[rule_id])
                 report["hard_fail"] = True
         if args.plan:
             from tools.wiki_ops.repair_plans import build_plan
@@ -314,21 +341,23 @@ def creative_main(argv: list[str]) -> int:
         parser.add_argument("path")
     elif command in {"corpus", "changed"}:
         parser.add_argument("paths", nargs="*")
+    parser.add_argument("--state-file")
     parser.add_argument("--json", action="store_true")
     parser.add_argument("--severity")
     args = parser.parse_args(argv[1:])
+    state = json.loads(Path(args.state_file).read_text(encoding="utf-8")) if args.state_file else None
     try:
         severity = _severity(args.severity)
         if command == "task":
-            result = engine.run(bundle=args.bundle, paths=_paths(args.paths, default=ROOT / "wiki"), severity_filter=severity)
+            result = engine.run(bundle=args.bundle, paths=_paths(args.paths, default=ROOT / "wiki"), severity_filter=severity, state=state)
         elif command == "file":
-            result = engine.run(paths=[args.path], severity_filter=severity)
+            result = engine.run(paths=[args.path], severity_filter=severity, state=state)
         elif command == "corpus":
-            result = engine.run(bundle="corpus", paths=_paths(args.paths, default=ROOT / "wiki"), severity_filter=severity)
+            result = engine.run(bundle="corpus", paths=_paths(args.paths, default=ROOT / "wiki"), severity_filter=severity, state=state)
         else:
             changed = subprocess.run(["git", "diff", "--name-only", "HEAD"], cwd=ROOT, capture_output=True, text=True, check=False)
             files = [ROOT / line.strip() for line in changed.stdout.splitlines() if line.strip().endswith(".md")]
-            result = engine.run(bundle="corpus", paths=files, severity_filter=severity)
+            result = engine.run(bundle="corpus", paths=files, severity_filter=severity, state=state)
     except (ValueError, KeyError) as exc:
         print(f"wiki-lint: {exc}", file=sys.stderr)
         return 2

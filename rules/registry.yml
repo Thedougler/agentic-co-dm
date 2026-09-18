@@ -96,7 +96,7 @@ rules:
     auto_repair: false
     applicability: [faction, npc, place, quest, encounter]
     structural_scope: [narrative]
-    exemptions: [redirect, metadata, template, table]
+    exemptions: [redirect, metadata, template, table, dormant]
     repair_class: human_repair
     positive_fixtures: [tests/fixtures/creative_lint/SCENE001/pass_pressure.md]
     tags: [scene-craft]
@@ -115,7 +115,7 @@ rules:
     auto_repair: false
     tags: [scene-craft, specificity]
     conflicts: []
-    depends: []
+    exemptions: [redirect, metadata, template, table]
   - id: CANON001
     title: Rejected entity presented as present
     category: canon

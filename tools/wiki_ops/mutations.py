@@ -711,8 +711,9 @@ def resolve_mutation(vault: str | Path, op: MutationOp, text: str | None = None)
         result = remove_index_entry(current, str(op.selector.get("slug", "")))
     elif kind == "insert_index_entry":
         result = insert_index_entry(current, str(op.payload.get("entry", "")))
-    elif kind == "update_manifest_identity":
-        result = _update_manifest_identity(current, op)
+    elif kind == "delete_file":
+        _verify_hash(op, current, [], required=False)
+        result = ""
     elif kind in {"rename_page", "merge_page", "rename_or_merge_page"}:
         _fail("unsupported_context", f"{kind} requires apply_mutation for multi-file semantics")
     else:
@@ -993,6 +994,15 @@ def apply_mutation(vault: str | Path, op: MutationOp | dict[str, Any], *, dry_ru
                 )
             return _accepted(op, dry_run=dry_run, changed=False, diff="", detail="no_op", obsolete_path=source, canonical_path=canonical, changed_files=[])
         path = _target(root, op.target)
+        if op.kind == "delete_file":
+            if not path.is_file():
+                _fail("file_not_found", f"target file not found: {op.target}")
+            current = _read_text(path)
+            _verify_hash(op, current, [])
+            if not dry_run:
+                _atomic_commit({}, {path}, {path: current})
+            diff = _diff_for(path, root, current, "")
+            return _accepted(op, dry_run=dry_run, changed=True, diff=diff, changed_files=[op.target])
         if not path.is_file():
             _fail("file_not_found", f"target file not found: {op.target}")
         current = _read_text(path)

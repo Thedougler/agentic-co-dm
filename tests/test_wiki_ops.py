@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import pytest
 import re
 import subprocess
 import tempfile
@@ -13,6 +14,7 @@ from tools.wiki_ops.identity import resolve_identity, scan_identities
 from tools.wiki_ops.manifest_ops import ManifestTransition, apply_transition
 from tools.wiki_ops.mutations import MutationOp, apply_mutation, parse_sections, section_hash
 from tools.wiki_ops.repair_plans import build_plan
+from tools.wiki_ops.template_contracts import check_conformance, load_contract
 from tools.wiki_ops.scope import parse_scope
 from tools.wiki_ops.transactions import Transaction
 
@@ -123,6 +125,15 @@ def test_scope_and_semantic_sections():
     section = parse_sections(page).find(["Overview"])
     assert section_hash(section.content) == section.hash
 
+
+def test_index_and_manifest_corruption_are_rejected_without_partial_state(tmp_path: Path):
+    with pytest.raises(ValueError):
+        from tools.wiki_ops.index_ops import parse_index
+        parse_index("- [[same]]\n- [[same]]\n")
+    transition = ManifestTransition("page.md", "merged_into", "canonical.md")
+    assert apply_transition({"sources": {}, "page_identity_transitions": []}, transition)["page_identity_transitions"]
+    with pytest.raises(ValueError):
+        ManifestTransition("../escape.md", "archived").validate()
 def test_scoped_lint_uses_full_vault_for_backlinks_and_index(tmp_path: Path):
     # Build fixture from the vault template so it stays in sync with the contract
     template = (ROOT / "wiki" / "templates" / "faction.md").read_text(encoding="utf-8")
@@ -141,7 +152,8 @@ def test_scoped_lint_uses_full_vault_for_backlinks_and_index(tmp_path: Path):
             "files:entities/faction/target-faction.md",
             "--vault",
             tmp_path,
-        )
+        ),
+        returncode=1,
     )
     assert report["findings"]["orphan_pages"] == []
     assert report["findings"]["index_issues"]["missing_from_index"] == []
@@ -176,6 +188,21 @@ def test_transaction_rejects_overlapping_mutations():
     tx.add(MutationOp("replace_section", "fisks-fleet.md", {"heading_path": ["Overview"], "content_hash": section.hash}, {"content": "a"}))
     tx.add(MutationOp("replace_section", "fisks-fleet.md", {"heading_path": ["Overview"], "content_hash": section.hash}, {"content": "b"}))
     assert tx.commit()["status"] == "rejected"
+
+def test_transaction_finalizes_once_and_retains_committed_files_on_qmd_failure(tmp_path: Path):
+    page = tmp_path / "page.md"
+    page.write_text("---\ntitle: Page\n---\n# Page\n\nOld\n", encoding="utf-8")
+    calls = []
+    tx = Transaction(tmp_path, qmd_runner=lambda: calls.append("qmd") or 7)
+    content_hash = section_hash(parse_sections(page.read_text(encoding="utf-8")).find(["Page"]).content)
+    tx.add(MutationOp("replace_section", "page.md", {"heading_path": ["Page"], "content_hash": content_hash}, {"content": "New"}))
+    assert tx.commit()["status"] == "committed"
+    first = tx.finalize()
+    second = tx.finalize()
+    assert first["error"] == "finalization_failed"
+    assert second["status"] == "committed"
+    assert calls == ["qmd"]
+    assert "New" in page.read_text(encoding="utf-8")
 
 
 def test_identity_fixture_is_deterministic():
