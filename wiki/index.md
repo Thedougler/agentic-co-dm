@@ -2,6 +2,7 @@
 
 *No pages yet.*
 
+- [[the-passage]] — A Rattkin network that moves people, cargo, and secrets past colonial eyes. ( #shattered-sea #faction)
 - [[young-bloodhawk]] — Juvenile Bloodhawk skirmisher (CR 2) that Flush-Dives flushed prey into the adult hunting line. ( #shattered-sea #aruhe #creature)- [[young-snakewood]] — CR 4 terrace clonal vine ambusher with one short-range bundle grab. ( #shattered-sea #aruhe #creature)- [[ysolde-cass]] — Mirela Cass's sister, mends nets on Penance Bar's tideline. ( #shattered-sea #npc)- [[ysolde-sallow]] — The exasperated tavern-keeper of The Long Toast on Otel Karn, grand-niece to the island's oldest duelist, who has run out of patience for the horror everyone else refuses to name aloud. ( #shattered-sea #npc)- [[Yssenmoor]] — A place over a hidden ley line that reacts to [[fate-spinner]]; feels like an unresolved point of contact between old power and a watchful relic. ( #shattered-sea #place)- [[yssenmoors-ancient-challenge]] — A fog-bound demigod challenges every visitor to his marsh and none have answered in years. The ley line beneath his island pulls on an artifact the party carries. ( #shattered-sea #quest)- [[Zort]] — Armless contact who offered a Midchain reptile lead for a prosthetic. ( #shattered-sea #npc)- [[zorts-toe-claws]] — Iron-capped handling sandals cut to Zort's own pattern, giving a wearer footing enough to shrug off a grapple or a shove. ( #shattered-sea #item)
 ## References
 

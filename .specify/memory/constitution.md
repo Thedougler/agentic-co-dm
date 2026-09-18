@@ -1,3 +1,11 @@
+<!--
+Sync Impact Report
+- Version change: 2.4.0 → 2.5.0
+- Modified principles: XV. Autonomous Operation → XV. Autonomous Operation
+- Added sections: none
+- Removed sections: none
+- Follow-up TODOs: none
+-->
 
 # Agentic Co-DM Constitution
 <!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
@@ -238,6 +246,14 @@ safe, idempotent, and governed by current standards. Updating existing Wiki cont
 formatting, linting, ingesting, indexing, linking, or provenance standards is routine maintenance;
 it requires agent judgment, not DM approval.
 
+By default, every completed change to content under `wiki/` MUST be committed and proactively
+merged into `main` as part of the same operation, after any required DM acceptance, review, or
+staging gate. Agents MUST NOT leave routine wiki changes waiting for a separate merge request.
+When the user explicitly directs work on a feature branch, that request overrides this default for
+the requested work: the work MUST remain on that branch, and agents MUST NOT reset, rebase,
+switch, merge, or otherwise change it out from under another agent working there. The branch owner
+or user MUST explicitly authorize the later merge of those wiki changes into `main`.
+
 Novel campaign content creation is the DM approval boundary. Agents MUST NOT bypass review,
 acceptance, secret protection, branch safety, required checks, or other explicit safeguards when
 an operation introduces or changes accepted canon. Human approval remains required wherever this
@@ -252,7 +268,7 @@ better-supported approach supersedes the former approach; historical precedent M
 retaining the former approach.
 
 Rationale: automation keeps routine work current without needless human gates while preserving
-human control over novel canon and explicit safety boundaries.
+human control over novel canon and explicit feature-branch ownership.
 
 ### XVI. Constitutional Layering
 
@@ -388,6 +404,7 @@ leave more capacity for reasoning about the wiki while preserving safe, correct 
 - Codex is the default harness for Spec Kit commands in this repository.
 - Campaign facts remain DM-gated even when agents own routine structure, measurement, or
   maintenance work.
+- Wiki branch and merge ownership is governed by Principle XV.
 
 ## Development Workflow
 
@@ -429,4 +446,4 @@ not prevent a named safety failure MUST be rejected or resolved by an ADR.
 Project operating context: `AGENTS.md`. Harness-specific agent behavior: `OMP.md`, `CODEX.md`,
 `CLAUDE.md`, and `GROK.md`.
 
-**Version**: 2.4.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 2.5.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
