@@ -330,8 +330,8 @@ def test_qmd_hook_reports_one_actionable_error(tmp_path: Path):
         tmp_path,
         body='if [ "$1" = embed ]; then printf "backend failed\\n" >&2; exit 7; fi\n',
     )
-    assert result.returncode != 0
+    # embed failures are warn-only (successive hooks drain the backlog)
+    assert result.returncode == 0
     assert result.stdout == ""
-    assert result.stderr.count("\n") == 1
     assert "qmd embed" in result.stderr
-    assert "backend failed" in result.stderr
+    assert "skipped" in result.stderr

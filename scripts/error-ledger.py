@@ -175,7 +175,7 @@ def build_parser() -> argparse.ArgumentParser:
     error = sub.add_parser("error", help="Fill or drain errors.md")
     error_sub = error.add_subparsers(dest="action", required=True)
 
-    append = error_sub.add_parser("append", help="Append an open error entry")
+    append = error_sub.add_parser("append", help="Append an open error entry (use 'drain' to close)")
     append.add_argument("--id", help="Stable id (generated if omitted)")
     append.add_argument("--cause", required=True)
     append.add_argument("--sitting", required=True)

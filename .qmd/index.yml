@@ -4,6 +4,7 @@ collections:
     pattern: "**/*.md"
     ignore:
       - "_raw/**"
+      - "_archive/**"
       - "log.md"
     context:
       "": "Compiled campaign wiki in this repo. Current canon. Prefer -c wiki for lookups."

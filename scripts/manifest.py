@@ -415,6 +415,9 @@ def cmd_normalize(args: argparse.Namespace) -> int:
     emit({"merged": len(plan), "collisions": plan})
     return 0
 def cmd_transition(args: argparse.Namespace) -> int:
+    repo_root = str(Path(__file__).resolve().parent.parent)
+    if repo_root not in sys.path:
+        sys.path.insert(0, repo_root)
     from tools.wiki_ops.manifest_ops import ManifestTransition, apply_transition
     data = load(args.vault)
     transition = ManifestTransition(args.page, args.transition, args.target, args.reason)

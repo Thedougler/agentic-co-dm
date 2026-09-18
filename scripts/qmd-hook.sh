@@ -9,11 +9,16 @@ max_embed_docs="${QMD_HOOK_MAX_DOCS:-128}"
 max_embed_mb="${QMD_HOOK_MAX_MB:-16}"
 lock_wait="${QMD_HOOK_LOCK_WAIT:-30}"
 lock_dir="${QMD_HOOK_LOCK_DIR:-$ROOT/.qmd/qmd-hook.lock}"
+cmd_timeout="${QMD_HOOK_TIMEOUT:-15}"
 
 
 fail() {
   printf 'qmd-hook: %s\n' "$1" >&2
   exit 1
+}
+
+warn() {
+  printf 'qmd-hook: %s\n' "$1" >&2
 }
 
 # CI environments may have no QMD installation; that is a silent no-op.
@@ -42,17 +47,26 @@ fi
 
 
 qmd_run() {
-  local errf msg
+  local errf msg fatal="${QMD_HOOK_FATAL:-1}"
+  if [[ "${1:-}" == "--warn-only" ]]; then
+    fatal=0; shift
+  fi
   if ! errf="$(mktemp 2>/dev/null)"; then
     fail "cannot create temporary error file"
   fi
-  if ! env -u CI qmd "$@" >/dev/null 2>"$errf"; then
+  if ! timeout "$cmd_timeout" env -u CI qmd "$@" >/dev/null 2>"$errf"; then
     msg="$(tr '\n' ' ' <"$errf" | sed 's/[[:space:]][[:space:]]*/ /g')"
     rm -f "$errf" 2>/dev/null || :
-    fail "qmd $* failed: ${msg:-unknown error}"
+    if (( fatal )); then
+      fail "qmd $* failed: ${msg:-timed out after ${cmd_timeout}s}"
+    else
+      warn "qmd $* skipped: ${msg:-timed out after ${cmd_timeout}s}"
+      return 0
+    fi
   fi
   rm -f "$errf" 2>/dev/null || :
 }
 
 qmd_run update
-qmd_run embed -c wiki --max-docs-per-batch "$max_embed_docs" --max-batch-mb "$max_embed_mb"
+# Embed is best-effort; successive hooks drain the backlog.
+qmd_run --warn-only embed -c wiki --max-docs-per-batch "$max_embed_docs" --max-batch-mb "$max_embed_mb"
