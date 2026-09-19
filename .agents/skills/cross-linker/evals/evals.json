@@ -1,0 +1,93 @@
+{
+  "skill_name": "cross-linker",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "In a labeled temp vault, run cross-linker after a fixture ingest left unlinked mentions of knowledge-graphs and Jane Doe on projects/demo/demo.md.",
+      "expected_output": "Registry from frontmatter; EXTRACTED/INFERRED links applied inline or Related; AMBIGUOUS skipped; Cross-Link Report produced; log/hot updated.",
+      "assertions": [
+        {
+          "text": "Builds the page registry from frontmatter fields (title, aliases, tags, summary) — not full-body preload for every page",
+          "type": "process"
+        },
+        {
+          "text": "Applies only EXTRACTED (score ≥6) and INFERRED (score 3–5) candidates; skips AMBIGUOUS (score 1–2) unless the user asked to connect loose pages",
+          "type": "content"
+        },
+        {
+          "text": "Wraps the first natural body mention in [[wikilinks]]; does not link inside code fences or YAML frontmatter; no self-links or double-links",
+          "type": "structure"
+        },
+        {
+          "text": "Produces a Cross-Link Report with Links Added table (confidence, placement, relationship types), orphans remaining, and pages skipped",
+          "type": "structure"
+        },
+        {
+          "text": "Appends a CROSS_LINK line to log.md and updates hot.md Recent Activity after writes",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Temp vault is a standalone Git repository with uncommitted changes. Run cross-linker and attempt to add links.",
+      "expected_output": "Pre-write snapshot via git add/commit; if snapshot fails, abort with zero vault writes. On success, include SNAPSHOT_SHA in the report.",
+      "assertions": [
+        {
+          "text": "Checks whether OBSIDIAN_VAULT_PATH is the Git toplevel (standalone vault repo) before the first write",
+          "type": "process"
+        },
+        {
+          "text": "Takes a pre-write snapshot (commit or record HEAD) when the vault is a standalone Git repo",
+          "type": "process"
+        },
+        {
+          "text": "Aborts the skill without writing any vault files if git add or git commit for the snapshot fails",
+          "type": "guardrail"
+        },
+        {
+          "text": "Includes SNAPSHOT_SHA in the final report when a snapshot was taken and writes occurred",
+          "type": "structure"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Fixture vault contains a redirect stub entities/old-jane.md with redirects_to: pointing at entities/jane-doe.md. Body text on another page mentions 'Jane Doe' and 'old-jane'.",
+      "expected_output": "New links target the canonical page only; never add [[wikilinks]] pointing at redirect stubs.",
+      "assertions": [
+        {
+          "text": "Treats pages with redirects_to: as non-targets — never inserts a new wikilink pointing at a redirect stub",
+          "type": "guardrail"
+        },
+        {
+          "text": "Links the natural mention to the canonical jane-doe page instead of the stub",
+          "type": "content"
+        },
+        {
+          "text": "Uses diacritic-insensitive / case-insensitive matching when comparing registry names to body text",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "User asks for a report-only dry run: 'find missing links but don't edit any pages yet'.",
+      "expected_output": "Score and list EXTRACTED/INFERRED candidates in Cross-Link Report form without modifying pages, index, or hot (log append optional only if skill allows; prefer zero writes).",
+      "assertions": [
+        {
+          "text": "Does not modify page bodies, relationships frontmatter, index.md, or hot.md when the user requested report-only / no edits",
+          "type": "guardrail"
+        },
+        {
+          "text": "Still scores candidates with EXTRACTED/INFERRED/AMBIGUOUS labels so the user can review before applying",
+          "type": "structure"
+        },
+        {
+          "text": "Skips _archives/ and _readouts/ from both scanning and linking targets",
+          "type": "content"
+        }
+      ]
+    }
+  ]
+}

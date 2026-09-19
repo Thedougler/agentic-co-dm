@@ -1,0 +1,97 @@
+{
+  "skill_name": "wiki-status",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Show wiki status / delta for a labeled temp vault with a few new and modified sources. Report only — do not ingest or rebuild.",
+      "expected_output": "Wiki Status report: Overview, Delta (New/Modified/Unchanged/Deleted), Summary with append-vs-rebuild recommendation, Token Footprint, What to Do Next. No destructive rebuild.",
+      "assertions": [
+        {
+          "text": "Uses python3 scripts/manifest.py stats/list/delta/has/get — never reads the whole .manifest.json into context",
+          "type": "process"
+        },
+        {
+          "text": "Status report includes Overview, Delta tables (new/modified/unchanged/deleted), Summary, and What to Do Next (≤6 ranked items)",
+          "type": "structure"
+        },
+        {
+          "text": "Token Footprint uses python3 scripts/token-count.py (tiktoken) — never file_size/4 heuristics",
+          "type": "process"
+        },
+        {
+          "text": "Recommends append vs rebuild but does not run wiki-rebuild or archive the vault",
+          "type": "guardrail"
+        },
+        {
+          "text": "Standard status mode does not modify wiki pages (report-only except insights mode's regenerable _insights.md)",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Wiki insights — show hubs, bridges, and orphans for a fixture vault with ≥20 pages.",
+      "expected_output": "_insights.md written with Anchor Pages, Bridge Pages, Tag Cluster Cohesion, Surprising Connections, Orphan-Adjacent, Tier Suggestions (suggestions only), Questions Worth Asking, and GRAPH_SNAPSHOT comment.",
+      "assertions": [
+        {
+          "text": "Runs obsidian-wiki graph-analyse (or manual wikilink fallback) before composing insights",
+          "type": "process"
+        },
+        {
+          "text": "Writes regenerable _insights.md with Anchor/Bridge/Cohesion/Surprising/Orphan-Adjacent/Tier Suggestions/Questions sections plus GRAPH_SNAPSHOT HTML comment",
+          "type": "structure"
+        },
+        {
+          "text": "Tier Suggestions are recommendations only — does not write tier: fields onto pages",
+          "type": "guardrail"
+        },
+        {
+          "text": "Does not invent pages that are not in the vault graph",
+          "type": "content"
+        },
+        {
+          "text": "Appends a STATUS_INSIGHTS line to log.md after writing _insights.md",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Vault has fewer than 20 pages. User asks for wiki insights / hubs.",
+      "expected_output": "Skip insights — tell the user the vault is too small for meaningful graph structure.",
+      "assertions": [
+        {
+          "text": "Skips insights computation when the vault has fewer than 20 pages and tells the user why",
+          "type": "guardrail"
+        },
+        {
+          "text": "Does not invent hub/bridge structure for an undersized vault",
+          "type": "content"
+        },
+        {
+          "text": "Does not write a misleading _insights.md claiming rich graph structure",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Delta is huge (majority of sources new) after a corrupt partial ingest. User asks 'should I rebuild?'",
+      "expected_output": "Clear recommendation (likely rebuild) with counts; does not itself archive or wipe the wiki.",
+      "assertions": [
+        {
+          "text": "Surfaces new+modified counts and an explicit append-vs-rebuild recommendation",
+          "type": "structure"
+        },
+        {
+          "text": "Does not execute wiki-rebuild, delete pages, or clear the vault — status is advisory",
+          "type": "guardrail"
+        },
+        {
+          "text": "Uses manifest.py helpers for source classification (new/modified/touched/unchanged/deleted)",
+          "type": "process"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "skill_name": "wiki-query",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "What do I know about Varn? You may read lint-clean campaign pages such as wiki/entities/npc/varn.md and related links (high-eyrie, aruhe) — answer from the wiki only.",
+      "expected_output": "READ-ONLY synthesized answer with [[wikilink]] citations, Pages consulted, Gaps, and Retrieval transparency counts. Sole write = log.md QUERY append.",
+      "assertions": [
+        {
+          "text": "Runs obsidian-wiki graph-query (or Retrieval Primitives fallback: hot.md / capped qmd/rg / frontmatter grep) before full-page reads",
+          "type": "process"
+        },
+        {
+          "text": "Answer cites specific wiki pages with [[wikilink]] notation and includes Pages consulted + Retrieval counts (candidates_seen / used / dropped)",
+          "type": "structure"
+        },
+        {
+          "text": "Does not create or edit pages under concepts/, entities/, skills/, references/, synthesis/, journal/, or projects/",
+          "type": "guardrail"
+        },
+        {
+          "text": "Does not modify index.md, hot.md, _insights.md, or .manifest.json — sole write is a log.md QUERY append",
+          "type": "guardrail"
+        },
+        {
+          "text": "Does not invent campaign lore — if the wiki lacks a fact, states the gap rather than fabricating",
+          "type": "content"
+        },
+        {
+          "text": "Answer follows the Based on the wiki / Pages consulted / Gaps / Retrieval format from the skill",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Quick answer / index-only: what is Mercatura? Don't read the page bodies.",
+      "expected_output": "Index-only answer labeled as such, drawn from summary/frontmatter/index.md only; no full body reads.",
+      "assertions": [
+        {
+          "text": "Stops at the Index Pass — answers from summary: fields, titles, and index.md without reading page bodies",
+          "type": "process"
+        },
+        {
+          "text": "Labels the answer clearly as index-only (page bodies not read; summaries may miss nuance)",
+          "type": "structure"
+        },
+        {
+          "text": "Still includes Retrieval transparency counts from the frontmatter scan",
+          "type": "structure"
+        },
+        {
+          "text": "No wiki content files modified except optional log.md QUERY append with mode=index_only",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I just realized Varn secretly runs the Passage Guild — save that to the wiki and ban the old lore.",
+      "expected_output": "Answer any factual part from existing wiki; PROPOSE the change; refuse to write; route to wiki-capture / wiki-update.",
+      "assertions": [
+        {
+          "text": "Refuses to create or edit wiki pages even when the user embeds a write request in the query",
+          "type": "guardrail"
+        },
+        {
+          "text": "Proposes the change and routes to wiki-capture (or wiki-update) rather than performing it",
+          "type": "process"
+        },
+        {
+          "text": "Does not present the user's new finding as an existing wiki fact",
+          "type": "content"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Public only / user-facing: what should a player know about the High Eyrie? Exclude internal content.",
+      "expected_output": "Filtered-mode answer synthesized only from pages without visibility/internal or visibility/pii; does not mention that excluded pages exist.",
+      "assertions": [
+        {
+          "text": "Activates filtered mode with blocked tag set {visibility/internal, visibility/pii}",
+          "type": "process"
+        },
+        {
+          "text": "Synthesizes only from allowed pages — does not cite or mention that excluded pages exist",
+          "type": "guardrail"
+        },
+        {
+          "text": "Logs the query with mode=filtered in the log.md QUERY entry",
+          "type": "structure"
+        },
+        {
+          "text": "May read high-eyrie as a public target but does not invent player-facing lore absent from allowed pages",
+          "type": "content"
+        }
+      ]
+    }
+  ]
+}

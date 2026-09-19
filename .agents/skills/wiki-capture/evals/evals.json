@@ -1,0 +1,97 @@
+{
+  "skill_name": "wiki-capture",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Quick capture (--quick): session found a non-obvious Next.js hydration mismatch workaround. Stage it. Temp vault OK.",
+      "expected_output": "KEEP gate → write _raw/<date>-<slug>.md only; confirm staged paths; no manifest/index/log/hot/QMD writes.",
+      "assertions": [
+        {
+          "text": "Writes only under OBSIDIAN_RAW_DIR as <ISO-date>-<slug>.md following references/raw-format.md",
+          "type": "structure"
+        },
+        {
+          "text": "Does not write .manifest.json, index.md, log.md, hot.md, or refresh QMD in quick mode",
+          "type": "guardrail"
+        },
+        {
+          "text": "Confirms staged paths and tells the user to run /wiki-ingest to promote",
+          "type": "process"
+        },
+        {
+          "text": "Stops after quick mode — does not run full-mode Steps 1–7",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Stop-hook auto-invokes /wiki-capture --quick on a purely conversational planning chat with no bugs, fixes, or surprising findings.",
+      "expected_output": "SKIP with 'Nothing worth capturing in this session.' — no _raw/ files written.",
+      "assertions": [
+        {
+          "text": "When invoked via Stop hook, errs toward SKIP unless there is clear capture evidence",
+          "type": "guardrail"
+        },
+        {
+          "text": "Exits with a nothing-worth-capturing message and writes no _raw/ files",
+          "type": "content"
+        },
+        {
+          "text": "Does not create empty or pleasantry-only staging notes",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Full mode: capture this conversation's architecture decision (prefer Y over Z because of latency) into the temp vault as a finished wiki note.",
+      "expected_output": "Declarative knowledge page in synthesis/ (or projects/.../synthesis/), not a chat transcript; ≥2 wikilinks; index/log/hot updated.",
+      "assertions": [
+        {
+          "text": "Rewrites as declarative present-tense knowledge — not a chat transcript ('The user asked…')",
+          "type": "content"
+        },
+        {
+          "text": "Places the note in the correct category folder (decision → synthesis/) with complete frontmatter including summary and provenance",
+          "type": "structure"
+        },
+        {
+          "text": "Includes at least 2 wikilinks to existing wiki pages",
+          "type": "structure"
+        },
+        {
+          "text": "Updates index.md, log.md (CAPTURE line), and hot.md after the write",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Correction mode (--correction): a tool_result claimed feature X is enabled; user corrects that X is null/disabled. Immutable source file must stay byte-identical.",
+      "expected_output": "One atomic claim pair on a derived page; source_pre_sha256 == source_post_sha256 == source_text_sha256; no raw excerpts; abort on immutability violation.",
+      "assertions": [
+        {
+          "text": "Records exactly one atomic original_claim / corrected_claim pair with required correction frontmatter fields",
+          "type": "structure"
+        },
+        {
+          "text": "Computes source_pre_sha256 and source_post_sha256 from the immutable source and aborts unless both equal source_text_sha256",
+          "type": "guardrail"
+        },
+        {
+          "text": "Never edits, rewrites, or copies the immutable conversation/source file",
+          "type": "guardrail"
+        },
+        {
+          "text": "Keeps secrets and raw transcript excerpts out of the correction record",
+          "type": "content"
+        },
+        {
+          "text": "Propagates consumer_propagation statuses independently — does not collapse mixed results into one aggregate",
+          "type": "quality"
+        }
+      ]
+    }
+  ]
+}

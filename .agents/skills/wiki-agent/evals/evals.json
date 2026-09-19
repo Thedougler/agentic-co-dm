@@ -1,0 +1,97 @@
+{
+  "skill_name": "wiki-agent",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "/wiki-codex \"rust ownership patterns\" — pull targeted sessions into a temp vault and answer.",
+      "expected_output": "Route to Codex history root; cheap session_index score; extract top 3–5 blobs; distill + immediate synthesized answer; manifest upsert for ingested sessions only.",
+      "assertions": [
+        {
+          "text": "Routes /wiki-codex to CODEX_HISTORY_PATH / ~/.codex and uses session_index.jsonl as the cheap inventory before opening rollouts",
+          "type": "process"
+        },
+        {
+          "text": "Scores sessions (name/title, cwd, recency decay) and opens only the top 3–5 — not every session file",
+          "type": "process"
+        },
+        {
+          "text": "Returns the synthesized answer structure: Found in / Key insights / Wiki pages updated / Sessions ingested / Gaps",
+          "type": "structure"
+        },
+        {
+          "text": "Records ingested sessions via python3 scripts/manifest.py upsert — does not load whole .manifest.json",
+          "type": "process"
+        },
+        {
+          "text": "Distills durable knowledge only — does not invent beyond session evidence",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "/wiki-hermes \"memory architecture\" but HERMES_HOME / ~/.hermes does not exist on this machine.",
+      "expected_output": "Stop cleanly: No hermes history found at <path>; mention HERMES_HOME override. No wiki writes.",
+      "assertions": [
+        {
+          "text": "Stops when the agent history root is missing and tells the user the path plus the config override variable",
+          "type": "guardrail"
+        },
+        {
+          "text": "Does not invent session content or wiki pages when history is absent",
+          "type": "content"
+        },
+        {
+          "text": "Does not fall through into bulk wiki-history-ingest behavior",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "/wiki-claude with no query — catch me up on recent Claude work.",
+      "expected_output": "Recent-sessions mode: last 5 unprocessed sessions only; summary of what was found; not a full history bulk ingest.",
+      "assertions": [
+        {
+          "text": "With no query, selects the 5 most recent unprocessed sessions (recent sessions mode)",
+          "type": "process"
+        },
+        {
+          "text": "Is not bulk wiki-history-ingest — does not process the entire Claude history tree",
+          "type": "guardrail"
+        },
+        {
+          "text": "Updates hot.md with a one-line summary and appends a WIKI-AGENT log.md line",
+          "type": "structure"
+        },
+        {
+          "text": "Uses cheap project/session directory listing before opening full JSONL blobs",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "/wiki-pi \"auth module refactor\" — sessions mention the topic but wiki already has a covering skills/ page.",
+      "expected_output": "Update the existing page rather than duplicating; still return synthesized answer; flag covered sessions in results.",
+      "assertions": [
+        {
+          "text": "Checks index.md / frontmatter for an existing covering page and merges updates instead of creating a duplicate",
+          "type": "process"
+        },
+        {
+          "text": "Sources frontmatter uses the agent:// session path prefix",
+          "type": "structure"
+        },
+        {
+          "text": "Does not invent techniques or decisions that are not evidenced in the extracted session blobs",
+          "type": "guardrail"
+        },
+        {
+          "text": "If no relevant sessions match the query, says so explicitly and lists topics from recent sessions",
+          "type": "quality"
+        }
+      ]
+    }
+  ]
+}

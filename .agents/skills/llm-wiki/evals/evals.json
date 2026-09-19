@@ -1,0 +1,101 @@
+{
+  "skill_name": "llm-wiki",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Resolve config for a companion skill invocation: user said '@work wiki-status'. CWD has an unrelated .env; ~/.obsidian-wiki/config.work exists.",
+      "expected_output": "Honor @work → ~/.obsidian-wiki/config.work for this invocation only; strip @work from the instruction; do not ln -sf or leak unrelated secrets from other config files.",
+      "assertions": [
+        {
+          "text": "Resolves @name to ~/.obsidian-wiki/config.<name> before CWD .env walk-up or the active symlink",
+          "type": "process"
+        },
+        {
+          "text": "Treats @name as a per-invocation override only — does not run ln -sf or change the persistent default vault",
+          "type": "guardrail"
+        },
+        {
+          "text": "Strips the @name token before treating the remainder as the actual instruction",
+          "type": "process"
+        },
+        {
+          "text": "Reads only the Obsidian/wiki variables needed — does not log, echo, or leak unrelated secrets from config files",
+          "type": "guardrail"
+        },
+        {
+          "text": "If config.<name> is missing, lists available vaults and stops — no silent fallback to default",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Explain the three-layer contract and where a quick-capture file in _raw/ sits. User wonders if ingest should edit the original PDF in OBSIDIAN_SOURCES_DIR.",
+      "expected_output": "Layer 1 raw sources immutable; Layer 2 wiki LLM-maintained; Layer 3 schema. _raw/ is staging (not Layer 1). Never modify original sources.",
+      "assertions": [
+        {
+          "text": "States Layer 1 raw sources are immutable — ingest must not modify files under OBSIDIAN_SOURCES_DIR",
+          "type": "guardrail"
+        },
+        {
+          "text": "Distinguishes in-vault _raw/ staging (promotable scratch) from Layer 1 immutable sources",
+          "type": "content"
+        },
+        {
+          "text": "Describes Layer 2 as LLM-maintained interconnected markdown and Layer 3 as schema/templates/conventions",
+          "type": "structure"
+        },
+        {
+          "text": "Does not invent a fourth persistence layer or relocate sources into the wiki as unedited competing notes",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Campaign vault has wiki/AGENTS.md. Where should a new NPC page for an existing name file, and what filename rules apply? Cite taking-on-aruhe / varn only as READ examples of shape — do not invent lore.",
+      "expected_output": "category: entities top-level; type depth-1 folder entities/npc/<kebab>.md; kebab from title; no invented types; no spaced basenames.",
+      "assertions": [
+        {
+          "text": "Uses category as the top-level folder (entities/) and type as depth-1 subfolder (entities/npc/) — does not set category to the type",
+          "type": "structure"
+        },
+        {
+          "text": "Filenames are space-free kebab slugs from title; does not invent campaign types absent from wiki/AGENTS.md",
+          "type": "guardrail"
+        },
+        {
+          "text": "May cite lint-clean pages (e.g. varn, high-eyrie) as READ targets for path shape only — does not invent lore about them",
+          "type": "content"
+        },
+        {
+          "text": "Project overviews are named <project-name>.md — never _project.md",
+          "type": "structure"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "A companion skill is about to check whether a source was ingested and then preview two pages. What Retrieval Primitives and manifest rules apply?",
+      "expected_output": "manifest keys are absolute-path canonical; use scripts/manifest.py — no whole-.manifest.json preload; escalate retrieval cheapest→expensive; context-waste anti-patterns apply.",
+      "assertions": [
+        {
+          "text": "Manifest source keys must be canonical absolute paths (~ and env expanded) — mixed ~/ and absolute forms are a bug",
+          "type": "content"
+        },
+        {
+          "text": "Forbids loading the whole .manifest.json into context — use python3 scripts/manifest.py stats/list/has/get/delta/lookup/record",
+          "type": "guardrail"
+        },
+        {
+          "text": "Retrieval escalates cheapest-first: capped qmd/rg / frontmatter → summary: → section grep → full Read last",
+          "type": "process"
+        },
+        {
+          "text": "Mentions scripts/context-waste-scan.py / docs/agents/context-waste-method.md as the anti-pattern scanner for whole-file preloads",
+          "type": "quality"
+        }
+      ]
+    }
+  ]
+}
