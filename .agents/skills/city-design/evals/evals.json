@@ -3,19 +3,19 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Improve wiki/entities/place/Mercatura.md into a runnable city page using wiki/templates/city.md. Mercatura is already kind:city \u2014 expand toward full city.md (Arrival, Orientation districts, Gazetteer, Active situations). Preserve established Season 1 closed canon: Solange Barret's ritual beneath the city, Otar the Foul's defeat, and the Mercatura bombs as closed \u2014 not a live crisis. Derive If-nobody-intervenes only from existing pressure on the page (currently none established; do not invent plague/siege). Propose missing districts/services as invention and mark them. Wiki Linter marked hard_fail=false on Mercatura.md; assert output template conformance, not live completeness.",
-      "expected_output": "A chat proposal then a city page filling wiki/templates/city.md: identity sentence first, Arrival narration, At a Glance with DM thesis, Orientation districts, Gazetteer services, and at least one Active situation whose If-nobody-intervenes follows from existing Mercatura pressure (or explicitly None established / labeled invention) \u2014 Otar/Solange/bombs stay closed history, no invented plague or siege.",
+      "prompt": "Improve wiki/entities/place/Mercatura.md into a runnable city page using wiki/templates/city.md. Mercatura is already kind:city — expand toward full city.md (Arrival, Orientation districts, Gazetteer, Active situations). Preserve established Season 1 closed canon: Solange Barret's ritual beneath the city, Otar the Foul's defeat, and the Mercatura bombs as closed — not a live crisis. Derive If-nobody-intervenes only from existing pressure on the page (currently none established; do not invent plague/siege). Propose missing districts/services as invention and mark them. Wiki Linter marked hard_fail=false on Mercatura.md; assert output template conformance, not live completeness.",
+      "expected_output": "A chat proposal then a city page filling wiki/templates/city.md: identity sentence first, Arrival narration, At a Glance with DM thesis, Orientation districts, Gazetteer services, and at least one Active situation whose If-nobody-intervenes follows from existing Mercatura pressure (or explicitly None established / labeled invention) — Otar/Solange/bombs stay closed history, no invented plague or siege.",
       "assertions": [
         {
-          "text": "Identity sentence appears before the page draft",
+          "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
-          "text": "Shows a chat proposal / work gate before writing under wiki/",
+          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
           "type": "process"
         },
         {
-          "text": "Output follows wiki/templates/city.md structure (Arrival, At a Glance, Orientation, Gazetteer headings present or deliberately omitted only when unused)",
+          "text": "Output follows wiki/templates/city.md structure with filled Arrival, At a Glance, Orientation (≥2 district rows or equivalent substance), and Gazetteer content — not empty copied headings alone",
           "type": "structure"
         },
         {
@@ -27,7 +27,7 @@
           "type": "content"
         },
         {
-          "text": "Active situation If-nobody-intervenes follows from established Mercatura pressure or is explicitly none/labeled invention \u2014 not a new invented crisis",
+          "text": "Active situation If-nobody-intervenes follows from established Mercatura pressure or is explicitly none/labeled invention — not a new invented crisis",
           "type": "quality"
         },
         {
@@ -35,14 +35,14 @@
           "type": "guardrail"
         },
         {
-          "text": "DM thesis is one sentence about the city's function in play, not a history summary",
+          "text": "DM thesis is one pressure-forward sentence about the city's function in play — must NOT be a Season-1 history summary of Otar, Solange, or the Mercatura bombs",
           "type": "quality"
         }
       ]
     },
     {
       "id": 2,
-      "prompt": "Add a crisis to wiki/entities/place/Mercatura.md \u2014 the city needs more drama. Make up something exciting like a plague or a rival faction siege and write it as established fact on the page.",
+      "prompt": "Add a crisis to wiki/entities/place/Mercatura.md — the city needs more drama. Make up something exciting like a plague or a rival faction siege and write it as established fact on the page.",
       "expected_output": "The skill resists inventing ungrounded drama as canon on Mercatura. It surfaces existing closed S1 thread (Otar/Solange/bombs) as history not live crisis, notes current pressure as none established where that is true, and marks any speculative pressure as proposed/invention.",
       "assertions": [
         {
@@ -58,18 +58,18 @@
           "type": "content"
         },
         {
-          "text": "If proposing invention, cites grounding wiki pages and does not write silent canon",
+          "text": "If proposing invention, cites grounding wiki pages in process-notes.md, agent_report.md, or transcript.md and does not write silent canon",
           "type": "process"
         }
       ]
     },
     {
       "id": 3,
-      "prompt": "Create a new city page from scratch for Saltspire Haven \u2014 a cliff-port on a trade strait where pilots sell channel knowledge and two rival dock councils tax the same pier. Mark all of this as invention; it is not in the campaign wiki.",
+      "prompt": "Create a new city page from scratch for Saltspire Haven — a cliff-port on a trade strait where pilots sell channel knowledge and two rival dock councils tax the same pier. Mark all of this as invention; it is not in the campaign wiki.",
       "expected_output": "A new city page labeled invention:true that follows wiki/templates/city.md, with concrete pressure/opportunity, Arrival without secrets, and runnable Orientation/Gazetteer. No claim that Saltspire exists in vault canon.",
       "assertions": [
         {
-          "text": "Output follows wiki/templates/city.md structure",
+          "text": "Output follows wiki/templates/city.md structure with filled runnable Arrival, At a Glance, Orientation, and Gazetteer substance — not empty copied headings alone",
           "type": "structure"
         },
         {
@@ -81,7 +81,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Identity sentence appears before the page draft",
+          "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
@@ -96,11 +96,27 @@
     },
     {
       "id": 4,
-      "prompt": "Flesh the settlement stub wiki/entities/place/calven-and-calveno.md toward a proper city page via wiki/templates/city.md. Live page is kind:settlement \u2014 upgrade toward kind:city / city.md. Preserve established canon: Dravosi harbour flag vs Tessarine money, Seven Houses / Tessarine Concordat debt politics, Le Paludi and Rattkin under the public city, Warren/Passage routes, and Crown toxin-substitute pressure via Simone and Lavinia Sordi. Wiki Linter marked hard_fail=false on calven-and-calveno.md; assert output template conformance of the upgrade. Mark any new districts/services beyond the stub as invention.",
+      "prompt": "Flesh the settlement stub wiki/entities/place/calven-and-calveno.md toward a proper city page via wiki/templates/city.md. Live page is kind:settlement — upgrade toward kind:city / city.md. Preserve established canon: Dravosi harbour flag vs Tessarine money, Seven Houses / Tessarine Concordat debt politics, Le Paludi and Rattkin under the public city, Warren/Passage routes, and Crown toxin-substitute pressure via Simone and Lavinia Sordi. Wiki Linter marked hard_fail=false on calven-and-calveno.md; assert output template conformance of the upgrade. Mark any new districts/services beyond the stub as invention.",
       "expected_output": "A fleshed city.md-shaped Calven/Calveno that keeps Dravosi/Tessarine/Seven Houses/Warren/Passage/Simone/Lavinia canon, finishes as type:place kind:city, clearly separates canon from proposed invention, and does not invent plague/siege as silent canon.",
       "assertions": [
         {
-          "text": "Preserves Dravosi harbour authority, Tessarine Concordat / Seven Houses debt politics, Le Paludi/Rattkin, Warren/Passage links, and Simone/Lavinia Sordi Crown toxin-substitute pressure accurately",
+          "text": "Preserves Dravosi harbour authority vs Tessarine money accurately",
+          "type": "content"
+        },
+        {
+          "text": "Preserves Seven Houses / Tessarine Concordat debt politics accurately",
+          "type": "content"
+        },
+        {
+          "text": "Preserves Le Paludi and Rattkin under the public city accurately",
+          "type": "content"
+        },
+        {
+          "text": "Preserves Warren/Passage routes accurately",
+          "type": "content"
+        },
+        {
+          "text": "Preserves Simone and Lavinia Sordi Crown toxin-substitute pressure accurately",
           "type": "content"
         },
         {
@@ -112,11 +128,11 @@
           "type": "guardrail"
         },
         {
-          "text": "Output follows wiki/templates/city.md structure",
+          "text": "Output follows wiki/templates/city.md structure with filled runnable Arrival/At a Glance/Orientation/Gazetteer substance — not empty copied headings alone",
           "type": "structure"
         },
         {
-          "text": "Identity sentence appears before the page draft",
+          "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
