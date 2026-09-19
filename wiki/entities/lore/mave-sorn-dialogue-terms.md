@@ -24,7 +24,6 @@ tier: supporting
 ---
 # Mave Sorn Dialogue Terms
 
-> [!dialogue]
-> **[[mave-sorn]]**: I have your vessel name, your last port of call, and the exact language of the Crown's dispatch authorising your detention.
->
-> **[[mave-sorn]]**: My terms are inside. I will take questions after.
+**[[mave-sorn]]**: I have your vessel name, your last port of call, and the exact language of the Crown's dispatch authorising your detention.
+
+**[[mave-sorn]]**: My terms are inside. I will take questions after.

@@ -1,5 +1,4 @@
 ---
----
 title: Star Cut
 category: entities
 tags: [shattered-sea, aruhe, place]

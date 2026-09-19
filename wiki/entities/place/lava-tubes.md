@@ -1,5 +1,4 @@
 ---
----
 title: Lava Tubes
 category: entities
 tags: [shattered-sea, aruhe, place]

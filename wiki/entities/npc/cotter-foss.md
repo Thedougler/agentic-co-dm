@@ -1,5 +1,4 @@
 ---
----
 title: "Cotter Foss"
 aliases:
   - Cotter Foss

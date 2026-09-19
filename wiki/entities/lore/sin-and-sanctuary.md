@@ -25,12 +25,13 @@ truth: partial
 ---
 # Sin and Sanctuary
 
-> [!abstract] At a Glance
-> **Core truth.** Sin has mass and gravity. Hallowed ground is a live, revocable patron claim.
->
-> **Why it matters.** This is the law behind the [[penance-bar-siege]] and [[corvin-ashe]]'s empty Tyr box.
->
-> **Scope.** Patron dogma, not a universal sin checklist.
+## At a Glance
+
+**Core truth.** Sin has mass and gravity. Hallowed ground is a live, revocable patron claim.
+
+**Why it matters.** This is the law behind the [[penance-bar-siege]] and [[corvin-ashe]]'s empty Tyr box.
+
+**Scope.** Patron dogma, not a universal sin checklist.
 
 ## Current Truth
 

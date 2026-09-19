@@ -1,5 +1,4 @@
 ---
----
 title: Clear Lake
 category: entities
 tags: [shattered-sea, aruhe, place]

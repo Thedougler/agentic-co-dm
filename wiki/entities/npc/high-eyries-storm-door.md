@@ -47,13 +47,14 @@ West bearing. Maw weather, one stair, the order decides who comes farther.
 
 ![[high-eyries-storm-door-narration-condition]]
 
-> [!check] High Eyrie's Storm Door
->
-> | Check | DC | Failure | Pass |
-> |---|---|---|---|
-> | Athletics | 15 | spray and no purchase | a watched climb from the southern stair — [[high-eyrie]] |
-> | Perception | 14 | weather | the lowest stair is already taking water |
-> | History | 13 | a monastery in a storm | [[sentinels-of-the-eyrie]] keep a Maw record, not a rescue |
+**High Eyrie's Storm Door**
+
+
+| Check | DC | Failure | Pass |
+|---|---|---|---|
+| Athletics | 15 | spray and no purchase | a watched climb from the southern stair — [[high-eyrie]] |
+| Perception | 14 | weather | the lowest stair is already taking water |
+| History | 13 | a monastery in a storm | [[sentinels-of-the-eyrie]] keep a Maw record, not a rescue |
 
 ![[high-eyries-storm-door#Premise]]
 
@@ -67,13 +68,14 @@ West bearing. Maw weather, one stair, the order decides who comes farther.
 
 ![[high-eyries-storm-door#Actors]]
 
-> [!check] Actors
->
-> | Check | DC | Failure | Pass |
-> |---|---|---|---|
-> | Insight | 14 | the order is closed | [[master-kyzil]] will warn [[crissdalynn-khinriss]] without finishing her pilgrimage |
-> | Persuasion | 16 | no invitation | a Sentinel lets them onto a terrace |
-> | Investigation | 15 | public ledgers | Maw patterns without interpretation, and [[talon-vantyrus|Talon Vantyrus]] wants the read Kyzil withholds |
+**Actors**
+
+
+| Check | DC | Failure | Pass |
+|---|---|---|---|
+| Insight | 14 | the order is closed | [[master-kyzil]] will warn [[crissdalynn-khinriss]] without finishing her pilgrimage |
+| Persuasion | 16 | no invitation | a Sentinel lets them onto a terrace |
+| Investigation | 15 | public ledgers | Maw patterns without interpretation, and [[talon-vantyrus|Talon Vantyrus]] wants the read Kyzil withholds |
 
 ## 3 — If they dig
 

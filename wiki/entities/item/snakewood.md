@@ -51,5 +51,6 @@ relationships:
 - **Placement.** Adult colonies dominate sections of [[the-quiet|the Quiet]] and [[the-marshes|the Marshes]], especially above game trails and waterways. Younger Snakewood appears in [[old-gardens|the Old Gardens]], and dense colonies hunt above [[the-mangroves|Mangrove channels]].
 - **Counterplay.** Keep another object moving elsewhere, bait the strike before passing, cut a captured creature free, stay beneath solid overhead cover, or avoid the connected canopy entirely.
 
-> [!warning] Canon conflict
-> A campaign monster drop also supplies a CR 6 Snakewood creature sheet. Live hazard facts are kept. See [[work-snakewood-creature-vs-hazard]].^[ambiguous]
+**Canon conflict**
+
+A campaign monster drop also supplies a CR 6 Snakewood creature sheet. Live hazard facts are kept. See [[work-snakewood-creature-vs-hazard]].^[ambiguous]

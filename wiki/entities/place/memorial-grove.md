@@ -1,5 +1,4 @@
 ---
----
 title: Memorial Grove
 category: entities
 tags: [shattered-sea, aruhe, place]

@@ -43,10 +43,11 @@ The stern bunk hides an undocumented cavity behind a false panel, large enough f
 
 **Acquisition** requires a legal release through [[Harbourmaster's Office]] that costs 374 gp and clears both ship and paperwork. The impound clerk accepts full payment, an Admiral's commission, or a Harbourmaster's writ. Partial payment, barter, charm, or corruption will not suffice.
 
-> [!check] Thieves' Tools — Night Acquisition
-> DC 18. You pick the single chain padlock after hours.
-> **Success:** the padlock opens. The clerk is the only witness if awake.
-> **Failure:** the lock holds.
+**Thieves' Tools — Night Acquisition**
+
+DC 18. You pick the single chain padlock after hours.
+**Success:** the padlock opens. The clerk is the only witness if awake.
+**Failure:** the lock holds.
 
 ## Stats & Combat
 

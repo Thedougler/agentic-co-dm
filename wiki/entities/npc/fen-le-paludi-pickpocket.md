@@ -26,7 +26,7 @@ tier: supporting
 
 *Don't confuse this Fen with [[Fen]], the young [[Saltwright]] sailor, a different character with the same name.*
 
-> [!read-aloud]
+> [!narration]
 > A hand lifts clean from a coat pocket and disappears into the crowd. A small shape, already three bodies deep, weaves deeper and doesn't slow.
 
 A teenage halfling, fast and small, working the [[calven-and-calveno]] festival crowds for three days during [[il-gioco-delle-beffe]]. Not violent, not part of any operation. Use Spy stats, +5 Stealth, +5 Acrobatics.

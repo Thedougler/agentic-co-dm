@@ -49,8 +49,9 @@ relationships:
 
 ## Current state
 
-> [!summary] Status quo
-> Aldenmere is a quiet Crown island of farms, hedges, and fishing. The mere shallows in summer and deepens in spring.
+**Status quo**
+
+Aldenmere is a quiet Crown island of farms, hedges, and fishing. The mere shallows in summer and deepens in spring.
 
 * **Recent change.** None established.
 * **Pressure.** None established yet.

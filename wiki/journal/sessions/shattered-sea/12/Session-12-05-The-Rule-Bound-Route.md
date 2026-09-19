@@ -23,10 +23,11 @@ summary: "A survivor-led route toward the memorial turns Aruhe's rules into a ph
 ---
 # Session 12 — The Rule-Bound Route
 
-> [!abstract] At a Glance
-> **Stakes.** Reach the memorial line without making a living claim, losing Jean-Claude, or giving Skarn a clean opening.
-> **Contest.** The party must travel under rules it did not write while deciding whether those rules preserve judgment or replace it.
-> **Change.** The group reaches the memorial approach together, loses time or resources, changes its formation, or abandons the route.
+## At a Glance
+
+**Stakes.** Reach the memorial line without making a living claim, losing Jean-Claude, or giving Skarn a clean opening.
+**Contest.** The party must travel under rules it did not write while deciding whether those rules preserve judgment or replace it.
+**Change.** The group reaches the memorial approach together, loses time or resources, changes its formation, or abandons the route.
 
 > [!narration] Initial Narration
 > Oren's route is not a road. It is a chain of small decisions through living green: a fallen branch used as a marker, a strip of bare earth between roots, and fruit left where it dropped instead of pulled from a stem. The party can see the darker forest beyond the last rise, but the easiest-looking path crosses a living tangle that bends toward every hand that comes near it.
@@ -64,9 +65,10 @@ The opposition is Aruhe's response to living claims, the party's urgency, and [[
 
 ## Handoff
 
-> [!success] Cut to the next beat
-> **Next:** [[Session-12-06-What-Is-Chosen]] — **Development**
->
-> **Carry forward:** Any claim the party made, the route's remaining time pressure, whether Oren still leads, and how close Perrin stays to Crissdalynn.
->
-> **Continuity change:** The party has lived under Aruhe's law long enough to distinguish chosen survival practice from imposed authority, even if it does not agree with the law.
+**Cut to the next beat**
+
+**Next:** [[Session-12-06-What-Is-Chosen]] — **Development**
+
+**Carry forward:** Any claim the party made, the route's remaining time pressure, whether Oren still leads, and how close Perrin stays to Crissdalynn.
+
+**Continuity change:** The party has lived under Aruhe's law long enough to distinguish chosen survival practice from imposed authority, even if it does not agree with the law.

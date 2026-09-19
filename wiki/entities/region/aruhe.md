@@ -122,13 +122,14 @@ After the cold open, if they turn east or follow wreckage. The Sequence already 
 
 ![[Aruhe Hungry Isle Narration Condition]]
 
-> [!check] Aruhe's Hungry Isle
->
-> | Check | DC | Failure | Pass |
-> |---|---|---|---|
-> | Survival | 14 | a rich island | one berry or fish turns the island against the taker |
-> | Perception | 13 | jungle | reef and beach, then terraces, then closed sight lines |
-> | Investigation | 15 | a wreck | the Calveno raid's survivor trail |
+**Aruhe's Hungry Isle**
+
+
+| Check | DC | Failure | Pass |
+|---|---|---|---|
+| Survival | 14 | a rich island | one berry or fish turns the island against the taker |
+| Perception | 13 | jungle | reef and beach, then terraces, then closed sight lines |
+| Investigation | 15 | a wreck | the Calveno raid's survivor trail |
 
 ![[aruhe]]
 
@@ -138,13 +139,14 @@ After the cold open, if they turn east or follow wreckage. The Sequence already 
 
 ![[aruhe]]
 
-> [!check] Actors
->
-> | Check | DC | Failure | Pass |
-> |---|---|---|---|
-> | Insight | 12 | two castaways | [[Sandro]] will risk the shore; [[Nino]] will not cross the garden line |
-> | Persuasion | 13 | they stay put | testimony: Tomo, the fruit, the wreck |
-> | Nature | 14 | the garden | [[Blight]] is what the protection became |
+**Actors**
+
+
+| Check | DC | Failure | Pass |
+|---|---|---|---|
+| Insight | 12 | two castaways | [[Sandro]] will risk the shore; [[Nino]] will not cross the garden line |
+| Persuasion | 13 | they stay put | testimony: Tomo, the fruit, the wreck |
+| Nature | 14 | the garden | [[Blight]] is what the protection became |
 
 ## 3 — If they dig
 

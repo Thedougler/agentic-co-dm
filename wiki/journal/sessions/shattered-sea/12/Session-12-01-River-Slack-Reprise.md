@@ -21,11 +21,12 @@ summary: "The session resumes mid-fight as Talon Skarn burns through his Stunned
 ---
 # Session 12 — River Slack Reprise
 
-> [!summary] At the table — reel in the line
-> **Something happens:** [[talon-skarn]] burns through his Stunned opening and makes one last close attempt to take the [[fate-spinner]] from [[crissdalynn-khinriss|Crissdalynn]].
-> **Why it matters:** The party must protect the Spinner, choose whether to pursue, and account for any [[ghost-plum]] Skarn can steal from their visible packs.
-> **Decision:** Protect Crissdalynn, force Skarn away, pursue him, or let the object and the chase define the next route.
-> **Hook lands when:** The party commits to a response and the fight's immediate state has changed.
+**At the table — reel in the line**
+
+**Something happens:** [[talon-skarn]] burns through his Stunned opening and makes one last close attempt to take the [[fate-spinner]] from [[crissdalynn-khinriss|Crissdalynn]].
+**Why it matters:** The party must protect the Spinner, choose whether to pursue, and account for any [[ghost-plum]] Skarn can steal from their visible packs.
+**Decision:** Protect Crissdalynn, force Skarn away, pursue him, or let the object and the chase define the next route.
+**Hook lands when:** The party commits to a response and the fight's immediate state has changed.
 
 > [!narration] Initial Narration
 > The river has gone loud around the stones, but the fight is close enough that every movement is visible. Talon Skarn is still within Crissdalynn's reach, one hand reaching toward the Fate Spinner while his other hand keeps the party from closing cleanly. The chain between his gauntlet and hook is drawn tight over the wet ground, and Jean-Claude's motionless body remains caught in Delmar's coat behind the line of danger. Skarn's eyes flick once toward the party's packs before returning to the Spinner.
@@ -73,9 +74,10 @@ summary: "The session resumes mid-fight as Talon Skarn burns through his Stunned
 
 ## Handoff
 
-> [!success] Cut to the next beat
-> **Next:** [[Session-12-02-The-Dead-Keep-Orders]] — **Development**
->
-> **Carry forward:** Whether Skarn touched or stole the Spinner, whether a Ghost Plum is missing, Jean-Claude's condition, and which party member chose pursuit or protection.
->
-> **Continuity change:** The party is no longer deciding whether to enter Aruhe; they are deciding what the island's dead and Skarn's pursuit mean for going farther inland.
+**Cut to the next beat**
+
+**Next:** [[Session-12-02-The-Dead-Keep-Orders]] — **Development**
+
+**Carry forward:** Whether Skarn touched or stole the Spinner, whether a Ghost Plum is missing, Jean-Claude's condition, and which party member chose pursuit or protection.
+
+**Continuity change:** The party is no longer deciding whether to enter Aruhe; they are deciding what the island's dead and Skarn's pursuit mean for going farther inland.

@@ -89,18 +89,21 @@ Conclusion: an undead Hierarch. Grigori binds heirs across the Crown Islands int
 
 Clue 1: the cold handshake, felt directly by [[delmar-fisk|Delmar]].
 
-> [!check] Medicine/Nature — The Cold Handshake
-> DC 15, advantage for Delmar, who felt it directly. **Success:** confirms the hand isn't living body temperature. **Success by 5+:** it felt like meat that had sat in a cellar.
+**Medicine/Nature — The Cold Handshake**
+
+DC 15, advantage for Delmar, who felt it directly. **Success:** confirms the hand isn't living body temperature. **Success by 5+:** it felt like meat that had sat in a cellar.
 
 Clue 2: the unidentifiable magic that Perrin already failed to identify in Session 03.
 
-> [!check] Arcana — Unidentifiable Magic
-> DC 22 (Perrin's DC 18 already failed in Session 03). **Success:** identifies necrotic energy channelled through the caster's own body as a living focus. **Success by 5+:** the caster's body itself isn't normal.
+**Arcana — Unidentifiable Magic**
+
+DC 22 (Perrin's DC 18 already failed in Session 03). **Success:** identifies necrotic energy channelled through the caster's own body as a living focus. **Success by 5+:** the caster's body itself isn't normal.
 
 Clue 3: the Khlysty mark he wears, spotted only by someone who already knows [[khlysty-the-flock|Khlysty]] iconography.
 
-> [!check] Religion/History — The Khlysty Mark
-> DC 18, requires having seen Khlysty iconography elsewhere first. **Success:** recognizes the small sect symbol he wears, not displayed but not hidden. **Failure:** reads as generic religious iconography.
+**Religion/History — The Khlysty Mark**
+
+DC 18, requires having seen Khlysty iconography elsewhere first. **Success:** recognizes the small sect symbol he wears, not displayed but not hidden. **Failure:** reads as generic religious iconography.
 
 Let this thread sleep unless the Surety's crew pulls on it. Seed miraculous recoveries into the noble courts they visit without ever labeling them Khlysty until the crew connects the pattern themselves, and play Grigori's absence as unremarkable if nobody asks. Household servants do talk within a day of a cure. Someone came after dark and spent twenty minutes with the patient, wine-scented and singing quietly, asking for nothing, and the family doesn't publicize the visit. But the heir stays unavailable to visitors and Grigori leaves no forwarding address. If the crew notices his tells directly, he answers with "What do you do?" and warm, partial non-answers, then moves the scene on.
 

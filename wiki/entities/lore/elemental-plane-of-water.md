@@ -33,12 +33,13 @@ relationships:
 ---
 # Elemental Plane of Water
 
-> [!abstract] At a Glance
-> **Core truth.** The Elemental Plane of Water is the water cosmology [[Istishia]] can point toward in Maw discussions.
->
-> **Why it matters.** Maw fissures and Umberlee's claim-boundary talk need a named plane without inventing a new cosmology here.
->
-> **Scope.** Thin stub from the Istishia source; place detail stays on [[drowned-maw]] and related pages.
+## At a Glance
+
+**Core truth.** The Elemental Plane of Water is the water cosmology [[Istishia]] can point toward in Maw discussions.
+
+**Why it matters.** Maw fissures and Umberlee's claim-boundary talk need a named plane without inventing a new cosmology here.
+
+**Scope.** Thin stub from the Istishia source; place detail stays on [[drowned-maw]] and related pages.
 
 ## Current Truth
 

@@ -24,12 +24,11 @@ tier: supporting
 ---
 # Greyteeth Runner
 
-> [!quote]
-> A lean single-masted sloop rides low and light in the water, shallow-drafted
-> and flat-bottomed for reef work. The hull is plain, patched at the port bow,
-> with bare wood where paint wore through, and no official registry. A
-> swivel gun sits on each side, four sweep oars rest inside the hull, and
-> nothing aboard suggests comfort or prestige.
+A lean single-masted sloop rides low and light in the water, shallow-drafted
+and flat-bottomed for reef work. The hull is plain, patched at the port bow,
+with bare wood where paint wore through, and no official registry. A
+swivel gun sits on each side, four sweep oars rest inside the hull, and
+nothing aboard suggests comfort or prestige.
 
 The *Greyteeth Runner* is a Tier 1 reef runner for sale in [[calders-tooth-and-port-tidefall]] harbour. Built by the Island Council for [[Midchain]] work, she trades guns and comfort for speed and nimble handling.
 

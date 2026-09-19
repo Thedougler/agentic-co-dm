@@ -21,23 +21,25 @@ summary: "Five-hour inland hunt that follows survivor tracks to a night camp, th
 
 # Session 11 — Birds of a Feather
 
-> [!summary] Session Compass
-> **Opening situation:** The party is still airborne above [[old-gardens]], fleeing the [[crown-squid]], when an adult [[bloodhawk]] stoops on it.
->
-> **Immediate pressure:** Leave the open hunting line, then follow fresh survivor tracks and smoke upriver before the sign cools.
->
-> **Session question:** Can the party reach the farthest inland Calveno survivors, understand the garden invitation, and keep the [[fate-spinner]] on [[crissdalynn-khinriss]] when [[talon-skarn]] makes his attempt?
->
-> **If the party does nothing:** The bloodhawk keeps selecting exposed bodies, the survivor trail goes cold, isolated people disappear into Quiet, and Skarn reaches the carrier on a thin or messy watch.
->
-> **Now:** [[Session-11-01-Angry-Birds]]
->
-> **On deck:** [[Session-11-02-Landing-Sign]] · [[Session-11-03-Wolfrabbits]]
+**Session Compass**
+
+**Opening situation:** The party is still airborne above [[old-gardens]], fleeing the [[crown-squid]], when an adult [[bloodhawk]] stoops on it.
+
+**Immediate pressure:** Leave the open hunting line, then follow fresh survivor tracks and smoke upriver before the sign cools.
+
+**Session question:** Can the party reach the farthest inland Calveno survivors, understand the garden invitation, and keep the [[fate-spinner]] on [[crissdalynn-khinriss]] when [[talon-skarn]] makes his attempt?
+
+**If the party does nothing:** The bloodhawk keeps selecting exposed bodies, the survivor trail goes cold, isolated people disappear into Quiet, and Skarn reaches the carrier on a thin or messy watch.
+
+**Now:** [[Session-11-01-Angry-Birds]]
+
+**On deck:** [[Session-11-02-Landing-Sign]] · [[Session-11-03-Wolfrabbits]]
 
 ## Beat Map
 
-> [!tip] Run the situation, not the order
-> Fire the Hook first, then use the alternating Development and Cliffhanger middle as a pacing palette. Recompute after every beat. Skip, reorder, or replace middle beats when player choices change the fiction; preserve the resulting consequences instead of forcing a planned slot.
+**Run the situation, not the order**
+
+Fire the Hook first, then use the alternating Development and Cliffhanger middle as a pacing palette. Recompute after every beat. Skip, reorder, or replace middle beats when player choices change the fiction; preserve the resulting consequences instead of forcing a planned slot.
 
 | # | Beat | Form | Trigger | What changes | Hand-off / options | Budget |
 | -: | --- | --- | --- | --- | --- | ---: |

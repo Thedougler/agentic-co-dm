@@ -22,10 +22,11 @@ summary: "An invisible disturbance follows the party inland, turning missing fru
 ---
 # Session 12 — Grass Without Wind
 
-> [!abstract] At a Glance
-> **Stakes.** The party must decide whether the route, the packs, or the invisible movement deserves immediate attention.
-> **Contest.** [[talon-skarn]] is shadowing the party after the first theft attempt and is looking for a second opening rather than a fair fight.
-> **Change.** By the end, Skarn is driven off, exposed, kept at a distance, or still close enough to threaten the next travel beat.
+## At a Glance
+
+**Stakes.** The party must decide whether the route, the packs, or the invisible movement deserves immediate attention.
+**Contest.** [[talon-skarn]] is shadowing the party after the first theft attempt and is looking for a second opening rather than a fair fight.
+**Change.** By the end, Skarn is driven off, exposed, kept at a distance, or still close enough to threaten the next travel beat.
 
 > [!narration] Initial Narration
 > The grass is high enough to hide a hand, but not high enough to hide what moves through it. A pack strap lies open where it was tied. A bitten purple skin rests on the mud, and a line of blades bends toward the party before lifting again one stalk at a time. There is no wind on the route, yet something keeps changing the shape of the grass.
@@ -62,9 +63,10 @@ The party is traveling from the death trail toward the valley mass grave. If Ska
 
 ## Handoff
 
-> [!success] Cut to the next beat
-> **Next:** [[Session-12-04-Two-Grave-Orders]] — **Development**
->
-> **Carry forward:** Whether a Ghost Plum is missing, whether Skarn knows the party's formation, and whether the party arrives at the valley together or divided.
->
-> **Continuity change:** Travel is no longer recovery between fights. The party has an active pursuer, a compromised pack state, or a deliberate formation that must be tested against the evidence in the mass grave.
+**Cut to the next beat**
+
+**Next:** [[Session-12-04-Two-Grave-Orders]] — **Development**
+
+**Carry forward:** Whether a Ghost Plum is missing, whether Skarn knows the party's formation, and whether the party arrives at the valley together or divided.
+
+**Continuity change:** Travel is no longer recovery between fights. The party has an active pursuer, a compromised pack state, or a deliberate formation that must be tested against the evidence in the mass grave.

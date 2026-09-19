@@ -23,16 +23,17 @@ summary: "A trail of Grung dead and spent Authority Seals changes the party's un
 ---
 # Session 12 — The Dead Keep Orders
 
-> [!abstract] Development — the bump
-> **Purpose.** Turn the pursuit's route into a history the party can inspect and use.
->
-> **Trigger.** The party follows the inland trail from [[river-slack-basin]], whether after chasing [[talon-skarn]] or after securing the Spinner and choosing to move.
->
-> **Turn.** Different ages of bodies, seal fragments, and scraps show that Gold-caste authority kept sending lower-caste Grung inland after earlier groups disappeared.
->
-> **Exit.** The party has a reason to examine the dead trail, follow it toward the mass grave, or question the survivors instead of treating the bodies as ordinary Aruhe danger.
->
-> **Target.** About thirty minutes.
+**Development — the bump**
+
+**Purpose.** Turn the pursuit's route into a history the party can inspect and use.
+
+**Trigger.** The party follows the inland trail from [[river-slack-basin]], whether after chasing [[talon-skarn]] or after securing the Spinner and choosing to move.
+
+**Turn.** Different ages of bodies, seal fragments, and scraps show that Gold-caste authority kept sending lower-caste Grung inland after earlier groups disappeared.
+
+**Exit.** The party has a reason to examine the dead trail, follow it toward the mass grave, or question the survivors instead of treating the bodies as ordinary Aruhe danger.
+
+**Target.** About thirty minutes.
 
 > [!narration] Initial Narration
 > The grass closes over a narrow line of bones and rust-dark metal. Some bodies have sunk almost completely into the soil; others still wear belts, shell plates, or torn packs. A dull gold mark repeats beside them at different heights, and wet paper clings to one broken seal as if the island has tried to read it and stopped.
@@ -98,6 +99,7 @@ flexGrow=2
 | Refuses to inspect the dead | Celia and Oren carry only partial evidence, while Skarn remains harder to place. | [[Session-12-03-Grass-Without-Wind]] |
 | Changes the situation another way | Preserve the party's decision and carry the most visible seal or scrap forward. | [[Session-12-03-Grass-Without-Wind]] |
 
-> [!warning] If the Beat Stalls
->
-> Have Celia place three scraps beside three generations of bones and ask whether the party sees one expedition or three. If the party still leaves, Oren points toward the valley where the dead are newest and most densely packed.
+**If the Beat Stalls**
+
+
+Have Celia place three scraps beside three generations of bones and ask whether the party sees one expedition or three. If the party still leaves, Oren points toward the valley where the dead are newest and most densely packed.

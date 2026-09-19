@@ -61,8 +61,7 @@ relationships:
 - **Put a ship into the cradle:** Hull caulking, timber and fittings from rotating stock, and registry-plate removal (no prior markings kept) are the established services.
 - **Ask Cobb not to tell [[nona-black-jaw|Nona]]:** He declines. Using the Basin is a known event reported up the chain; arrivals reach the [[Warren]] within an hour.
 
-> [!dm]
-> **Access password:** *garden*. Not confirmed spoken on-screen in the Session 3 Recap (Cobb had the cradle ready before the crew arrived, implying prior arrangement through [[perrin-black-jaw|Perrin]]).
+**Access password:** *garden*. Not confirmed spoken on-screen in the Session 3 Recap (Cobb had the cradle ready before the crew arrived, implying prior arrangement through [[perrin-black-jaw|Perrin]]).
 
 ---
 

@@ -47,10 +47,11 @@ tier: supporting
 >
 > **Limitations:** the drinker cannot choose or reroll the random effect, and cannot suppress the hour of compulsive talking once it starts. The potion doesn't scale with the drinker's level. Nothing about this potion reads as anything other than a plain healing draught before it's drunk.
 
-> [!check] Constitution Save — The Second Effect
-> DC 11. The drinker rolls immediately after drinking.
-> **Success:** the drinker gets the healing and the talking, nothing else.
-> **Failure:** roll a d6 and apply the matching potion effect in full, exactly as written on that potion's own page (table below).
+**Constitution Save — The Second Effect**
+
+DC 11. The drinker rolls immediately after drinking.
+**Success:** the drinker gets the healing and the talking, nothing else.
+**Failure:** roll a d6 and apply the matching potion effect in full, exactly as written on that potion's own page (table below).
 
 1. Potion of Climbing
 2. Potion of Animal Friendship

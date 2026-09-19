@@ -25,8 +25,9 @@ summary: "Invisible Talon Skarn makes his second close theft attempt while Perri
 ---
 # Session 12 — The Guava and the Spinner
 
-> [!abstract] Run this
-> Call this Climax when the party commits to protecting, abandoning, or exploiting the Spinner near the memorial route and Skarn has a credible close approach. This confrontation harvests the session's threads: imposed Gold orders, chosen survivor rules, Perrin's narrow whisker sense, Auralis's unasked-for bond, and Skarn's pursuit.
+**Run this**
+
+Call this Climax when the party commits to protecting, abandoning, or exploiting the Spinner near the memorial route and Skarn has a credible close approach. This confrontation harvests the session's threads: imposed Gold orders, chosen survivor rules, Perrin's narrow whisker sense, Auralis's unasked-for bond, and Skarn's pursuit.
 
 ## Opening Image
 
@@ -75,9 +76,10 @@ Use the existing [[talon-skarn]] owner page for Skarn's numbers and abilities. H
 
 ## Handoff
 
-> [!success] Cut to the next beat
-> **Next:** [[Session-12-08-Toward-the-Memorial]] — **Resolution**
->
-> **Carry forward:** Spinner Held or Stolen, Skarn's status and route, Perrin's answer to Auralis, any Aruhe claim, Jean-Claude's condition, and whether the followers remain willing to guide.
->
-> **Continuity change:** The party's response to an imposed command and a living island has become an observable fact that can shape its approach to the memorial.
+**Cut to the next beat**
+
+**Next:** [[Session-12-08-Toward-the-Memorial]] — **Resolution**
+
+**Carry forward:** Spinner Held or Stolen, Skarn's status and route, Perrin's answer to Auralis, any Aruhe claim, Jean-Claude's condition, and whether the followers remain willing to guide.
+
+**Continuity change:** The party's response to an imposed command and a living island has become an observable fact that can shape its approach to the memorial.

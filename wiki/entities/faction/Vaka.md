@@ -34,8 +34,7 @@ The Vaka is deliberately low-profile. Félix's approach is to make the peaceful 
 
 The Vaka makes [[jean-claude-tabarnack]]'s exile feel less singular and more politically useful. Félix knows the Gold castes fracture between islands — information JC doesn't have. This intelligence is actionable if the party ever needs leverage against [[verdant-teeth]] Gold or [[dravosi-crown]] interests in the region.
 
-> [!dm]
-> This faction rests on the prep-profile identity of [[felix-aho|Félix Aho]], which his own page's DM Only section flags as an OPEN contradiction against the session-canon captive Felix Aho (Session 04).
+This faction rests on the prep-profile identity of [[felix-aho|Félix Aho]], which his own page's DM Only section flags as an OPEN contradiction against the session-canon captive Felix Aho (Session 04).
 
 ## Members
 

@@ -40,5 +40,6 @@ Tavern and dock talk at [[Kalowe]], with no single source: fishers, dockhands, a
 
 ## Investigating It
 
-> [!check] Investigation — Read the Derelict's Story
-> DC 14. **Success:** the details that actually circulate don't add up for ordinary raiders. Nothing about the hatches or the hull shows a boarding fight, and the missing cargo has never turned up fenced or resold anywhere in port. Something took what it wanted and put the rest over the side instead of carrying it off. **Failure:** the story stays a pirate rumour. Dangerous water, best avoided, and there's nothing more to learn here.
+**Investigation — Read the Derelict's Story**
+
+DC 14. **Success:** the details that actually circulate don't add up for ordinary raiders. Nothing about the hatches or the hull shows a boarding fight, and the missing cargo has never turned up fenced or resold anywhere in port. Something took what it wanted and put the rest over the side instead of carrying it off. **Failure:** the story stays a pirate rumour. Dangerous water, best avoided, and there's nothing more to learn here.

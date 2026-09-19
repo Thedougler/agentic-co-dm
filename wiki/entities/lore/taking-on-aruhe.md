@@ -29,12 +29,13 @@ relationships:
 ---
 # Taking on Aruhe
 
-> [!abstract] At a Glance
-> **Core truth.** On [[aruhe]], taking a living plant, animal, or other living claim draws surrounding life into hostility. Fruit already on the ground is not that claim.
->
-> **Why it matters.** Harvest choices decide whether the next minute is food or a hunt.
->
-> **Scope.** Witnessed inland along the river in Session 11, and already used at [[western-landing|Western Landing]].
+## At a Glance
+
+**Core truth.** On [[aruhe]], taking a living plant, animal, or other living claim draws surrounding life into hostility. Fruit already on the ground is not that claim.
+
+**Why it matters.** Harvest choices decide whether the next minute is food or a hunt.
+
+**Scope.** Witnessed inland along the river in Session 11, and already used at [[western-landing|Western Landing]].
 
 ## Current Truth
 
@@ -42,10 +43,11 @@ A loose stone or shed shell can mark a route. Taking a living plant, animal, or 
 
 Session 11 confirmed the split at the table. [[crissdalynn-khinriss]] ate a fallen [[redheart-berry]] with no hunt. When she pulled fruit from a living stem, [[wolfrabbit]]s broke the grass. [[matteo-scola]] had already watched people die for picking, and he will only eat what the ground already holds.
 
-> [!warning]- Limits
-> * **Exception.** Fallen fruit, fish taken from water, and other unclaimed leavings have not drawn that hostility in play.
-> * **Unknown.** Whether shaking a living tree counts as a claim has not been tested.
-> * **Impossible or forbidden.** Matteo treats picking living fruit as a death rule, not a maybe.
+**- Limits**
+
+* **Exception.** Fallen fruit, fish taken from water, and other unclaimed leavings have not drawn that hostility in play.
+* **Unknown.** Whether shaking a living tree counts as a claim has not been tested.
+* **Impossible or forbidden.** Matteo treats picking living fruit as a death rule, not a maybe.
 
 ## At the Table
 

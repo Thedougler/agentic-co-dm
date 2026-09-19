@@ -23,12 +23,13 @@ summary: "The party pushes deeper into Aruhe, reads the Gold orders layered amon
 ---
 # Session 12 — The Weight of Obedience
 
-> [!abstract] Compass
-> **Promise.** The party pushes deeper into [[aruhe]] and learns that obedience can be imposed, inherited, chosen, or refused while [[talon-skarn]] turns that confusion into a second theft attempt.
->
-> **Starting situation.** Play resumes at [[river-slack-basin]] with Skarn in the middle of his first attempt to take the [[fate-spinner]] from [[crissdalynn-khinriss|Crissdalynn]]. One Legendary Resistance is already spent, [[jean-claude-tabarnack|Jean-Claude]] remains catatonic, and the party has not reached [[memorial-grove]].
->
-> **Central question.** When an order, a rule, a patron, or a living place demands obedience, what does the party choose to carry forward?
+**Compass**
+
+**Promise.** The party pushes deeper into [[aruhe]] and learns that obedience can be imposed, inherited, chosen, or refused while [[talon-skarn]] turns that confusion into a second theft attempt.
+
+**Starting situation.** Play resumes at [[river-slack-basin]] with Skarn in the middle of his first attempt to take the [[fate-spinner]] from [[crissdalynn-khinriss|Crissdalynn]]. One Legendary Resistance is already spent, [[jean-claude-tabarnack|Jean-Claude]] remains catatonic, and the party has not reached [[memorial-grove]].
+
+**Central question.** When an order, a rule, a patron, or a living place demands obedience, what does the party choose to carry forward?
 
 ## Beat Map
 
@@ -118,13 +119,14 @@ summary: "The party pushes deeper into Aruhe, reads the Gold orders layered amon
 - [ ] [[Session-12-07-The-Guava-and-the-Spinner]]
 - [ ] [[Session-12-08-Toward-the-Memorial]]
 
-> [!note]- After the Session
-> **Actual ending:** What situation exists now?
->
-> **Unresolved pressure:** What continues moving?
->
-> **Unused but still relevant:** Which beat, clue, NPC, or consequence remains live?
->
-> **Players intend to:** Their stated next move, in their words when possible.
->
-> **Next opening:** Which route or pressure can open the next session?
+**- After the Session**
+
+**Actual ending:** What situation exists now?
+
+**Unresolved pressure:** What continues moving?
+
+**Unused but still relevant:** Which beat, clue, NPC, or consequence remains live?
+
+**Players intend to:** Their stated next move, in their words when possible.
+
+**Next opening:** Which route or pressure can open the next session?

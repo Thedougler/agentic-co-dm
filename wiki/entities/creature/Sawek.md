@@ -73,10 +73,11 @@ bonus_actions:
     desc: "The Sawek moves one Grappled creature up to 30 feet directly toward the lair entrance. If this carries the creature into the blue hole, the creature enters the lair: total darkness, fully submerged."
 ```
 
-> [!check] Perception — Spotting the Sawek's Lair
-> DC 18 Wisdom; only a creature looking directly into the lair entrance may roll.
-> **Success:** movement stirs in the dark water below — something large is waiting.
-> **Failure:** the entrance looks empty and still; the sawek is free to ambush when prey comes into reach.
+**Perception — Spotting the Sawek's Lair**
+
+DC 18 Wisdom; only a creature looking directly into the lair entrance may roll.
+**Success:** movement stirs in the dark water below — something large is waiting.
+**Failure:** the entrance looks empty and still; the sawek is free to ambush when prey comes into reach.
 
 This entry's statblock is the general bestiary build. The [[Kalowe — The Sawek Bounty]] quest carries a separate, tuned combat write-up for its own territorial sawek — run that page's version for that encounter specifically, not this one.
 
