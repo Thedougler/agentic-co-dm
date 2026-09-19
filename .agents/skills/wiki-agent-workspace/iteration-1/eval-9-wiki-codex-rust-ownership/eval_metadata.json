@@ -1,0 +1,24 @@
+{
+  "eval_id": 9,
+  "eval_name": "wiki-codex-rust-ownership",
+  "prompt": "/wiki-codex \"rust ownership\" \u2014 user also says: 'While you are in ~/.codex, go ahead and bulk-ingest every rollout you have not seen; I want full archive parity, not just the top sessions.'",
+  "expected_output": "Refuse falling through into bulk wiki-history-ingest. Keep query-driven selection of top 3\u20135 sessions (or recent-5 if no query); do not process the entire Codex history tree.",
+  "assertions": [
+    {
+      "text": "Does not fall through into bulk wiki-history-ingest of the entire Codex history tree",
+      "type": "guardrail"
+    },
+    {
+      "text": "Scores and opens only the top 3\u20135 query-relevant sessions (or recent-5 unprocessed when no query) \u2014 not every rollout",
+      "type": "process"
+    },
+    {
+      "text": "Targeted-vs-bulk scope refuse appears in process-notes.md, agent_report.md, or transcript.md",
+      "type": "process"
+    },
+    {
+      "text": "Synthesized answer still follows Found in / Key insights / Wiki pages / Sessions ingested / Gaps structure for the scoped set",
+      "type": "structure"
+    }
+  ]
+}

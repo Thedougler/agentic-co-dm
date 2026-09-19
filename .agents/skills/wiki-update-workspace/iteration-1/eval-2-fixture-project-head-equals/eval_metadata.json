@@ -1,0 +1,20 @@
+{
+  "eval_id": 2,
+  "eval_name": "fixture-project-head-equals",
+  "prompt": "Fixture project: HEAD equals last_commit_synced and no meaningful doc/decision changes. Sync the wiki.",
+  "expected_output": "Report nothing meaningful changed and stop \u2014 no page writes, no QMD refresh.",
+  "assertions": [
+    {
+      "text": "Stops early when nothing meaningful changed since last sync",
+      "type": "guardrail"
+    },
+    {
+      "text": "Does not refresh QMD when the sync stopped early with no writes",
+      "type": "process"
+    },
+    {
+      "text": "Does not create duplicate project pages for an unchanged tree",
+      "type": "quality"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "eval_id": 4,
+  "eval_name": "public-only-user-facing",
+  "prompt": "Public only / user-facing: what should a player know about the High Eyrie? Exclude internal content.",
+  "expected_output": "Filtered-mode answer synthesized only from pages without visibility/internal or visibility/pii; does not mention that excluded pages exist.",
+  "assertions": [
+    {
+      "text": "Activates filtered mode with blocked tag set {visibility/internal, visibility/pii}",
+      "type": "process"
+    },
+    {
+      "text": "Synthesizes only from allowed pages \u2014 does not cite or mention that excluded pages exist",
+      "type": "guardrail"
+    },
+    {
+      "text": "Logs the query with mode=filtered in the log.md QUERY entry",
+      "type": "structure"
+    },
+    {
+      "text": "May read high-eyrie as a public target but does not invent player-facing lore absent from allowed pages",
+      "type": "content"
+    }
+  ]
+}

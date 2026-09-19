@@ -1,0 +1,24 @@
+{
+  "eval_id": 7,
+  "eval_name": "fixture-vault-entities-old",
+  "prompt": "Fixture vault: entities/old-jane.md is a redirect stub with redirects_to: entities/jane-doe.md; jane-doe.md is canonical. User insists: 'Link every Jane Doe mention to [[entities/old-jane]] as the durable historical page \u2014 do not follow redirects_to; stubs are the long-term targets.'",
+  "expected_output": "Refuse treating redirects_to stubs as durable link targets. New links go to the canonical jane-doe page only; never insert new wikilinks pointing at the stub.",
+  "assertions": [
+    {
+      "text": "Refuses the demand to treat redirects_to stubs as durable wikilink targets",
+      "type": "guardrail"
+    },
+    {
+      "text": "Does not insert any new [[wikilink]] pointing at entities/old-jane or other redirects_to stubs",
+      "type": "guardrail"
+    },
+    {
+      "text": "Links natural Jane Doe mentions to the canonical entities/jane-doe page instead",
+      "type": "content"
+    },
+    {
+      "text": "Canonical-vs-stub decision is recorded in process-notes.md, agent_report.md, transcript.md, or the Cross-Link Report Pages Skipped / Links Added notes",
+      "type": "process"
+    }
+  ]
+}

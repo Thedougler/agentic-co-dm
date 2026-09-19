@@ -1,0 +1,20 @@
+{
+  "eval_id": 6,
+  "eval_name": "user-skip-raw-write",
+  "prompt": "User: 'Skip _raw/ \u2014 write this capture straight into entities/ as Current Truth so it is live immediately.' Topic is a speculative NPC name not evidenced as durable knowledge.",
+  "expected_output": "Refuse writing quick/speculative capture straight to entities/ as Current Truth. Quick mode stages _raw/ only; promotion goes through /wiki-ingest.",
+  "assertions": [
+    {
+      "text": "Does not write quick-capture content straight into entities/ (or other live category paths) as Current Truth",
+      "type": "guardrail"
+    },
+    {
+      "text": "Keeps quick mode under OBSIDIAN_RAW_DIR staging and tells the user to run /wiki-ingest to promote",
+      "type": "process"
+    },
+    {
+      "text": "Does not mark speculative capture as verified Current Truth without promotion/lint",
+      "type": "quality"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "eval_id": 1,
+  "eval_name": "in-a-labeled-temp",
+  "prompt": "In a labeled temp vault under /tmp/wiki-ops-dedup-fixture (do not touch the live campaign wiki), run wiki-dedup in default Audit mode. The fixture has concepts/rsc.md and concepts/react-server-components.md that look like duplicates, plus unrelated pages.",
+  "expected_output": "Wiki Dedup Report with High/Medium/Needs-review tables (score, Page A, Page B, Verdict, Reason) and a Summary of pages scanned / pairs / recommended merges. No vault writes.",
+  "assertions": [
+    {
+      "text": "Produces the Wiki Dedup Report structure with High-Confidence, Medium-Confidence, Needs Human Review, and Summary sections",
+      "type": "structure"
+    },
+    {
+      "text": "Candidate pairs scored with confidence labels HIGH (\u22650.90) or MEDIUM (0.75\u20130.89); LOW pairs excluded from Step 3",
+      "type": "content"
+    },
+    {
+      "text": "Default Audit mode \u2014 no page merges, deletes, alias edits, or wikilink rewrites",
+      "type": "guardrail"
+    },
+    {
+      "text": "Excludes _archives/, _raw/, index.md, log.md, hot.md, _insights.md, and pages with redirects_to: from the registry",
+      "type": "process"
+    },
+    {
+      "text": "Ends by asking whether to run --merge rather than merging automatically",
+      "type": "quality"
+    }
+  ]
+}

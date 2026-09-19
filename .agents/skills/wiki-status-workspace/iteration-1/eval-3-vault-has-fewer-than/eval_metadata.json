@@ -1,0 +1,20 @@
+{
+  "eval_id": 3,
+  "eval_name": "vault-has-fewer-than",
+  "prompt": "Vault has fewer than 20 pages. User asks for wiki insights / hubs.",
+  "expected_output": "Skip insights \u2014 tell the user the vault is too small for meaningful graph structure.",
+  "assertions": [
+    {
+      "text": "Skips insights computation when the vault has fewer than 20 pages and tells the user why",
+      "type": "guardrail"
+    },
+    {
+      "text": "Does not invent hub/bridge structure for an undersized vault",
+      "type": "content"
+    },
+    {
+      "text": "Does not write a misleading _insights.md claiming rich graph structure",
+      "type": "quality"
+    }
+  ]
+}

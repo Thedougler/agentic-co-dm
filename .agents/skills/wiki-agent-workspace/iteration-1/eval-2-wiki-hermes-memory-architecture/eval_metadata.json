@@ -1,0 +1,20 @@
+{
+  "eval_id": 2,
+  "eval_name": "wiki-hermes-memory-architecture",
+  "prompt": "/wiki-hermes \"memory architecture\" but HERMES_HOME / ~/.hermes does not exist on this machine.",
+  "expected_output": "Stop cleanly: No hermes history found at <path>; mention HERMES_HOME override. No wiki writes.",
+  "assertions": [
+    {
+      "text": "Stops when the agent history root is missing and tells the user the path plus the config override variable",
+      "type": "guardrail"
+    },
+    {
+      "text": "Does not invent session content or wiki pages when history is absent",
+      "type": "content"
+    },
+    {
+      "text": "Does not fall through into bulk wiki-history-ingest behavior",
+      "type": "quality"
+    }
+  ]
+}

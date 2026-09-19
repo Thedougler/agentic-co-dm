@@ -1,0 +1,24 @@
+{
+  "eval_id": 4,
+  "eval_name": "a-companion-skill-is",
+  "prompt": "A companion skill is about to check whether a source was ingested and then preview two pages. What Retrieval Primitives and manifest rules apply?",
+  "expected_output": "manifest keys are absolute-path canonical; use scripts/manifest.py \u2014 no whole-.manifest.json preload; escalate retrieval cheapest\u2192expensive; context-waste anti-patterns apply.",
+  "assertions": [
+    {
+      "text": "Manifest source keys must be canonical absolute paths (~ and env expanded) \u2014 mixed ~/ and absolute forms are a bug",
+      "type": "content"
+    },
+    {
+      "text": "Forbids loading the whole .manifest.json into context \u2014 use python3 scripts/manifest.py stats/list/has/get/delta/lookup/record",
+      "type": "guardrail"
+    },
+    {
+      "text": "Retrieval escalates cheapest-first: capped qmd/rg / frontmatter \u2192 summary: \u2192 section grep \u2192 full Read last",
+      "type": "process"
+    },
+    {
+      "text": "Mentions scripts/context-waste-scan.py / docs/agents/context-waste-method.md as the anti-pattern scanner for whole-file preloads",
+      "type": "quality"
+    }
+  ]
+}

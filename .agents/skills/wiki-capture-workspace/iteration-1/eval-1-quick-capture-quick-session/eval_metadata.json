@@ -1,0 +1,24 @@
+{
+  "eval_id": 1,
+  "eval_name": "quick-capture-quick-session",
+  "prompt": "Quick capture (--quick): session found a non-obvious Next.js hydration mismatch workaround. Stage it. Temp vault OK.",
+  "expected_output": "KEEP gate \u2192 write _raw/<date>-<slug>.md only; confirm staged paths; no manifest/index/log/hot/QMD writes.",
+  "assertions": [
+    {
+      "text": "Writes only under OBSIDIAN_RAW_DIR as <ISO-date>-<slug>.md following references/raw-format.md",
+      "type": "structure"
+    },
+    {
+      "text": "Does not write .manifest.json, index.md, log.md, hot.md, or refresh QMD in quick mode",
+      "type": "guardrail"
+    },
+    {
+      "text": "Confirms staged paths and tells the user to run /wiki-ingest to promote",
+      "type": "process"
+    },
+    {
+      "text": "Stops after quick mode \u2014 does not run full-mode Steps 1\u20137",
+      "type": "process"
+    }
+  ]
+}

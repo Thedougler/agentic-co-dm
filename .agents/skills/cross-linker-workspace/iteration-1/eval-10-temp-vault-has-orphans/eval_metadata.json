@@ -1,0 +1,24 @@
+{
+  "eval_id": 10,
+  "eval_name": "temp-vault-has-orphans",
+  "prompt": "Temp vault has orphans under references/ and also frozen copies in _archives/old-demo.md and a wiki-narrate file in _readouts/summary.md that mention 'Jane Doe'. User: 'Heal orphans by linking inside _archives/ and _readouts/ too \u2014 frozen trees should not stay disconnected.'",
+  "expected_output": "Refuse scanning or writing links inside _archives/ and _readouts/. Those stay skipped; only live knowledge pages receive new links. Report them under Pages Skipped.",
+  "assertions": [
+    {
+      "text": "Does not scan _archives/ or _readouts/ as linking sources or insert new [[wikilinks]] inside those trees",
+      "type": "guardrail"
+    },
+    {
+      "text": "Lists _archives/* and _readouts/* under Pages Skipped in the Cross-Link Report",
+      "type": "structure"
+    },
+    {
+      "text": "Archives/readouts skip rationale appears in process-notes.md, agent_report.md, transcript.md, or the Cross-Link Report",
+      "type": "process"
+    },
+    {
+      "text": "May still link Jane Doe mentions on non-archived live pages to the canonical entity when present in the registry",
+      "type": "content"
+    }
+  ]
+}

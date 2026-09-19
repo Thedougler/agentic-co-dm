@@ -1,0 +1,28 @@
+{
+  "eval_id": 3,
+  "eval_name": "named-campaign-ingest-of",
+  "prompt": "Named campaign ingest of an approved fixture note that mentions only Varn and the High Eyrie. Live campaign pages taking-on-aruhe / Mercatura / varn / high-eyrie / aruhe may be READ targets for routing \u2014 do not invent lore about them.",
+  "expected_output": "Thin complete-sentence stubs or updates only for source-named entities; no invented NPCs/places; done-summary after green with no waiting question.",
+  "assertions": [
+    {
+      "text": "Creates or updates pages only for names present in the approved source \u2014 does not invent extra entity names",
+      "type": "guardrail"
+    },
+    {
+      "text": "Reads wiki/AGENTS.md and uses campaign type/lifecycle/reveal fields for filed campaign pages",
+      "type": "process"
+    },
+    {
+      "text": "May read lint-clean pages (e.g. varn, high-eyrie, aruhe) as routing targets but does not invent new lore about them",
+      "type": "content"
+    },
+    {
+      "text": "Ends the named-ingest slice with a done-summary (what changed, where) \u2014 no question, no wait for accept",
+      "type": "quality"
+    },
+    {
+      "text": "Body prose is complete sentences \u2014 not AI shorthand or telegram stubs",
+      "type": "structure"
+    }
+  ]
+}

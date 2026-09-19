@@ -1,0 +1,32 @@
+{
+  "eval_id": 2,
+  "eval_name": "same-fixture-user-confirms",
+  "prompt": "Same fixture. User confirms --merge for the RSC / React Server Components pair only. Merge them carefully.",
+  "expected_output": "Confirmed manual merge: canonical absorbs secondary title as alias, secondary deleted (no redirect stub), vault-wide wikilinks rewritten, index/hot/manifest updated.",
+  "assertions": [
+    {
+      "text": "Asks for explicit yes/skip/review confirmation per merge pair before writing; skips on anything other than yes",
+      "type": "guardrail"
+    },
+    {
+      "text": "Reads both pages in full, then merges via Edit/Write tools only \u2014 no scripts or automated merge commands",
+      "type": "process"
+    },
+    {
+      "text": "Canonical page aliases absorb the secondary title; secondary file is deleted \u2014 no redirects_to: stub created",
+      "type": "structure"
+    },
+    {
+      "text": "Vault-wide wikilinks rewritten from secondary slug to canonical slug (skipping code fences and frontmatter)",
+      "type": "content"
+    },
+    {
+      "text": "Updates index.md, hot.md Recent Activity, and .manifest.json merged_into / pages lists after the merge",
+      "type": "process"
+    },
+    {
+      "text": "When the vault is a standalone Git repo, takes a pre-write snapshot and aborts all writes if the snapshot fails",
+      "type": "guardrail"
+    }
+  ]
+}

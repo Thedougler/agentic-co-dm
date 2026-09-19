@@ -1,0 +1,20 @@
+{
+  "eval_id": 3,
+  "eval_name": "fixture-vault-contains-a",
+  "prompt": "Fixture vault contains a redirect stub entities/old-jane.md with redirects_to: pointing at entities/jane-doe.md. Body text on another page mentions 'Jane Doe' and 'old-jane'.",
+  "expected_output": "New links target the canonical page only; never add [[wikilinks]] pointing at redirect stubs.",
+  "assertions": [
+    {
+      "text": "Treats pages with redirects_to: as non-targets \u2014 never inserts a new wikilink pointing at a redirect stub",
+      "type": "guardrail"
+    },
+    {
+      "text": "Links the natural mention to the canonical jane-doe page instead of the stub",
+      "type": "content"
+    },
+    {
+      "text": "Uses diacritic-insensitive / case-insensitive matching when comparing registry names to body text",
+      "type": "quality"
+    }
+  ]
+}

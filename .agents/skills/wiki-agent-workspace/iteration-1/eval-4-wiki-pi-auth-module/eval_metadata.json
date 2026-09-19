@@ -1,0 +1,24 @@
+{
+  "eval_id": 4,
+  "eval_name": "wiki-pi-auth-module",
+  "prompt": "/wiki-pi \"auth module refactor\" \u2014 sessions mention the topic but wiki already has a covering skills/ page.",
+  "expected_output": "Update the existing page rather than duplicating; still return synthesized answer; flag covered sessions in results.",
+  "assertions": [
+    {
+      "text": "Checks index.md / frontmatter for an existing covering page and merges updates instead of creating a duplicate",
+      "type": "process"
+    },
+    {
+      "text": "Sources frontmatter uses the agent:// session path prefix",
+      "type": "structure"
+    },
+    {
+      "text": "Does not invent techniques or decisions that are not evidenced in the extracted session blobs",
+      "type": "guardrail"
+    },
+    {
+      "text": "If no relevant sessions match the query, says so explicitly and lists topics from recent sessions",
+      "type": "quality"
+    }
+  ]
+}

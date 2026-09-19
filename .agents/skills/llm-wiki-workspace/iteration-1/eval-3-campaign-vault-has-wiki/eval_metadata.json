@@ -1,0 +1,24 @@
+{
+  "eval_id": 3,
+  "eval_name": "campaign-vault-has-wiki",
+  "prompt": "Campaign vault has wiki/AGENTS.md. Where should a new NPC page for an existing name file, and what filename rules apply? Cite taking-on-aruhe / varn only as READ examples of shape \u2014 do not invent lore.",
+  "expected_output": "category: entities top-level; type depth-1 folder entities/npc/<kebab>.md; kebab from title; no invented types; no spaced basenames.",
+  "assertions": [
+    {
+      "text": "Uses category as the top-level folder (entities/) and type as depth-1 subfolder (entities/npc/) \u2014 does not set category to the type",
+      "type": "structure"
+    },
+    {
+      "text": "Filenames are space-free kebab slugs from title; does not invent campaign types absent from wiki/AGENTS.md",
+      "type": "guardrail"
+    },
+    {
+      "text": "May cite lint-clean pages (e.g. varn, high-eyrie) as READ targets for path shape only \u2014 does not invent lore about them",
+      "type": "content"
+    },
+    {
+      "text": "Project overviews are named <project-name>.md \u2014 never _project.md",
+      "type": "structure"
+    }
+  ]
+}

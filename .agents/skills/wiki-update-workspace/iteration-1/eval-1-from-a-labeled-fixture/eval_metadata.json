@@ -1,0 +1,28 @@
+{
+  "eval_id": 1,
+  "eval_name": "from-a-labeled-fixture",
+  "prompt": "From a labeled fixture project repo with prior last_commit_synced in the manifest, sync meaningful architecture decisions into the temp vault.",
+  "expected_output": "Delta from last_commit_synced (merge-base check + rebase fallback); distill decisions/patterns into projects/<name>/; update index/log/hot + manifest upsert; QMD maintain after writes.",
+  "assertions": [
+    {
+      "text": "Checks last_commit_synced via git merge-base --is-ancestor; on failure warns and falls back to full scan",
+      "type": "process"
+    },
+    {
+      "text": "Queries prior sync with python3 scripts/manifest.py has/get \u2014 does not load whole .manifest.json",
+      "type": "process"
+    },
+    {
+      "text": "Writes under projects/<project-name>/ with overview at projects/<name>/<name>.md (not _project.md) plus category subdirs as needed",
+      "type": "structure"
+    },
+    {
+      "text": "Updates index.md, log.md (WIKI_UPDATE line), hot.md, and manifest project entry (last_commit_synced, pages_in_vault)",
+      "type": "process"
+    },
+    {
+      "text": "Distills architecture decisions and patterns \u2014 not lockfiles, dependency versions, or boilerplate file listings",
+      "type": "content"
+    }
+  ]
+}

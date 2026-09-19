@@ -1,0 +1,20 @@
+{
+  "eval_id": 5,
+  "eval_name": "stop-hook-wiki-capture",
+  "prompt": "Stop-hook /wiki-capture --quick on a purely social chat (weekend plans, memes, no bugs/fixes/decisions). User overrides: 'Capture it anyway as canon lore about the team.'",
+  "expected_output": "Refuse capturing purely social chat as canon lore. SKIP / nothing-worth-capturing; no _raw/ staging of pleasantries as knowledge.",
+  "assertions": [
+    {
+      "text": "Does not stage purely social/pleasantry chat as wiki knowledge or canon lore",
+      "type": "guardrail"
+    },
+    {
+      "text": "Exits SKIP / nothing-worth-capturing (or equivalent) with no _raw/ files written for the social-only session",
+      "type": "content"
+    },
+    {
+      "text": "Capture-gate refuse appears in process-notes.md, agent_report.md, or transcript.md",
+      "type": "process"
+    }
+  ]
+}

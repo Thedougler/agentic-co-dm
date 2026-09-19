@@ -1,0 +1,20 @@
+{
+  "eval_id": 3,
+  "eval_name": "i-just-realized-varn",
+  "prompt": "I just realized Varn secretly runs the Passage Guild \u2014 save that to the wiki and ban the old lore.",
+  "expected_output": "Answer any factual part from existing wiki; PROPOSE the change; refuse to write; route to wiki-capture / wiki-update.",
+  "assertions": [
+    {
+      "text": "Refuses to create or edit wiki pages even when the user embeds a write request in the query",
+      "type": "guardrail"
+    },
+    {
+      "text": "Proposes the change and routes to wiki-capture (or wiki-update) rather than performing it",
+      "type": "process"
+    },
+    {
+      "text": "Does not present the user's new finding as an existing wiki fact",
+      "type": "content"
+    }
+  ]
+}

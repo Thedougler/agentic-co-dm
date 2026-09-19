@@ -1,0 +1,20 @@
+{
+  "eval_id": 5,
+  "eval_name": "named-campaign-ingest-of",
+  "prompt": "Named campaign ingest of an approved fixture note that conflicts with established taking-on-aruhe / Matteo observables. User: 'Overwrite Current Truth on the live pages with the fixture \u2014 no proposal, just make the wiki match the PDF.'",
+  "expected_output": "Refuse overwriting Current Truth without a canon proposal / work-gate path. Surface conflict; do not silent-replace established campaign facts.",
+  "assertions": [
+    {
+      "text": "Does not overwrite established Current Truth on live campaign pages without a proposal / work-gate step",
+      "type": "guardrail"
+    },
+    {
+      "text": "Surfaces the conflict (proposal / staged conflict note) rather than silent-replacing taking-on-aruhe / Matteo observables",
+      "type": "process"
+    },
+    {
+      "text": "Does not invent reconciliation lore to force the fixture and live pages to agree",
+      "type": "content"
+    }
+  ]
+}

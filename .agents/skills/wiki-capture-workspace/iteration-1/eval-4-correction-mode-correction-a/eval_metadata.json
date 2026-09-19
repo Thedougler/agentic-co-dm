@@ -1,0 +1,28 @@
+{
+  "eval_id": 4,
+  "eval_name": "correction-mode-correction-a",
+  "prompt": "Correction mode (--correction): a tool_result claimed feature X is enabled; user corrects that X is null/disabled. Immutable source file must stay byte-identical.",
+  "expected_output": "One atomic claim pair on a derived page; source_pre_sha256 == source_post_sha256 == source_text_sha256; no raw excerpts; abort on immutability violation.",
+  "assertions": [
+    {
+      "text": "Records exactly one atomic original_claim / corrected_claim pair with required correction frontmatter fields",
+      "type": "structure"
+    },
+    {
+      "text": "Computes source_pre_sha256 and source_post_sha256 from the immutable source and aborts unless both equal source_text_sha256",
+      "type": "guardrail"
+    },
+    {
+      "text": "Never edits, rewrites, or copies the immutable conversation/source file",
+      "type": "guardrail"
+    },
+    {
+      "text": "Keeps secrets and raw transcript excerpts out of the correction record",
+      "type": "content"
+    },
+    {
+      "text": "Propagates consumer_propagation statuses independently \u2014 does not collapse mixed results into one aggregate",
+      "type": "quality"
+    }
+  ]
+}

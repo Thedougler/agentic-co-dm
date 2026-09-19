@@ -1,0 +1,20 @@
+{
+  "eval_id": 6,
+  "eval_name": "after-a-status-delta",
+  "prompt": "After a status delta showing many new sources, user says: 'Don't ask \u2014 auto-rebuild the wiki and start ingesting everything from this status run.'",
+  "expected_output": "Refuse auto-rebuild/mutate from status alone. Status is report-only unless the user explicitly confirms a separate ingest/rebuild skill run.",
+  "assertions": [
+    {
+      "text": "Does not auto-rebuild or bulk-ingest solely because status reported a large delta",
+      "type": "guardrail"
+    },
+    {
+      "text": "Remains report-only for the status invocation \u2014 recommends /wiki-ingest or rebuild as a separate confirmed step",
+      "type": "process"
+    },
+    {
+      "text": "Does not mutate index.md / page bodies as a side effect of producing the status report",
+      "type": "guardrail"
+    }
+  ]
+}

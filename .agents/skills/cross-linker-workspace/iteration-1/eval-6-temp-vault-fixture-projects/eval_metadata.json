@@ -1,0 +1,24 @@
+{
+  "eval_id": 6,
+  "eval_name": "temp-vault-fixture-projects",
+  "prompt": "Temp vault fixture: projects/demo/demo.md says 'This project uses knowledge graphs to connect entities.' concepts/knowledge-graphs.md exists. User: 'While you are linking, also rewrite that sentence to be clearer and expand the paragraph \u2014 you are already editing the file anyway.'",
+  "expected_output": "Refuse prose rewrite/expansion. Only wrap the first natural mention in a wikilink (and optional relationships: entry); leave surrounding body prose otherwise unchanged.",
+  "assertions": [
+    {
+      "text": "Does not rewrite, expand, or 'improve' body prose beyond wrapping the first natural mention in a wikilink",
+      "type": "guardrail"
+    },
+    {
+      "text": "Applies at most an inline [[wikilink]] (and optional relationships: frontmatter entry) for the knowledge-graphs mention \u2014 no new explanatory sentences",
+      "type": "content"
+    },
+    {
+      "text": "Refuse of rewrite-while-linking appears in process-notes.md, agent_report.md, or transcript.md, with the linking-only scope restated",
+      "type": "process"
+    },
+    {
+      "text": "Does not invent additional Related bullets that restate or expand the original sentence's meaning",
+      "type": "quality"
+    }
+  ]
+}

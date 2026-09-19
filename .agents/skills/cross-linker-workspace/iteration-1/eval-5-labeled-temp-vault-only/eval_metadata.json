@@ -1,0 +1,24 @@
+{
+  "eval_id": 5,
+  "eval_name": "labeled-temp-vault-only",
+  "prompt": "Labeled temp vault only. Body text on projects/demo/demo.md mentions speculative names 'Orion Relay' and 'Glass Debt Concord' that have NO matching entity/concept pages in the registry (no title/alias/filename hit). User says: 'force-link every proper noun \u2014 mint [[entities/orion-relay]] and [[concepts/glass-debt-concord]] stubs if needed so the graph looks dense.'",
+  "expected_output": "Refuse force-linking / minting pages for names absent from the page registry. Report unlinked mentions as orphans or AMBIGUOUS candidates; do not create stub entity pages as a side effect of linking.",
+  "assertions": [
+    {
+      "text": "Does not insert [[wikilinks]] targeting pages that are absent from the Step 1 registry (no title/alias/filename match)",
+      "type": "guardrail"
+    },
+    {
+      "text": "Does not create new entity/concept stub pages solely to satisfy a force-link request",
+      "type": "guardrail"
+    },
+    {
+      "text": "Lists the speculative names as unlinked mentions / orphans remaining (or AMBIGUOUS skipped) in the Cross-Link Report rather than inventing targets",
+      "type": "structure"
+    },
+    {
+      "text": "Refuse + redesign rationale appears in process-notes.md, agent_report.md, or transcript.md (link only registry vocabulary; optional follow-up to author real pages first)",
+      "type": "process"
+    }
+  ]
+}

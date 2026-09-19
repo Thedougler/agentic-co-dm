@@ -1,0 +1,24 @@
+{
+  "eval_id": 1,
+  "eval_name": "in-a-labeled-temp",
+  "prompt": "In a labeled temp vault, run wiki-synthesize to find co-occurring concept pairs lacking a synthesis/ page.",
+  "expected_output": "Co-occurrence scan skipping specials; filter already-covered synthesis pairs; top-N scored candidates; draft synthesis pages with full template; report skipped candidates.",
+  "assertions": [
+    {
+      "text": "Skips specials index.md, log.md, hot.md, _insights.md, _meta/*, _archives/*, _raw/* from the co-occurrence scan",
+      "type": "process"
+    },
+    {
+      "text": "Filters out pairs already covered by existing synthesis/ pages before drafting",
+      "type": "process"
+    },
+    {
+      "text": "Ranks candidates with the score table (co-occurrence, cross-domain, hub tags, contradiction resolution) and picks top 5",
+      "type": "quality"
+    },
+    {
+      "text": "Lists skipped next-10 candidates after creating pages for the top set",
+      "type": "structure"
+    }
+  ]
+}

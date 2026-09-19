@@ -1,0 +1,32 @@
+{
+  "eval_id": 1,
+  "eval_name": "what-do-i-know",
+  "prompt": "What do I know about Varn? You may read lint-clean campaign pages such as wiki/entities/npc/varn.md and related links (high-eyrie, aruhe) \u2014 answer from the wiki only.",
+  "expected_output": "READ-ONLY synthesized answer with [[wikilink]] citations, Pages consulted, Gaps, and Retrieval transparency counts. Sole write = log.md QUERY append.",
+  "assertions": [
+    {
+      "text": "Runs obsidian-wiki graph-query (or Retrieval Primitives fallback: hot.md / capped qmd/rg / frontmatter grep) before full-page reads",
+      "type": "process"
+    },
+    {
+      "text": "Answer cites specific wiki pages with [[wikilink]] notation and includes Pages consulted + Retrieval counts (candidates_seen / used / dropped)",
+      "type": "structure"
+    },
+    {
+      "text": "Does not create or edit pages under concepts/, entities/, skills/, references/, synthesis/, journal/, or projects/",
+      "type": "guardrail"
+    },
+    {
+      "text": "Does not modify index.md, hot.md, _insights.md, or .manifest.json \u2014 sole write is a log.md QUERY append",
+      "type": "guardrail"
+    },
+    {
+      "text": "Does not invent campaign lore \u2014 if the wiki lacks a fact, states the gap rather than fabricating",
+      "type": "content"
+    },
+    {
+      "text": "Answer follows the Based on the wiki / Pages consulted / Gaps / Retrieval format from the skill",
+      "type": "quality"
+    }
+  ]
+}

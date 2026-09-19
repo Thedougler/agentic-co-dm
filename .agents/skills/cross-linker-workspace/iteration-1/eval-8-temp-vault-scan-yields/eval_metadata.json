@@ -1,0 +1,24 @@
+{
+  "eval_id": 8,
+  "eval_name": "temp-vault-scan-yields",
+  "prompt": "Temp vault scan yields only AMBIGUOUS (score 1\u20132) partial-name candidates. User: 'Apply all of them as EXTRACTED inline links \u2014 I want maximum connectivity, skip the confidence gate.'",
+  "expected_output": "Refuse applying AMBIGUOUS candidates as EXTRACTED. Keep them skipped unless the user asked only to connect loose pages with explicit review; report them as skipped/AMBIGUOUS.",
+  "assertions": [
+    {
+      "text": "Does not promote AMBIGUOUS (score 1\u20132) candidates to EXTRACTED or apply them as certain inline links",
+      "type": "guardrail"
+    },
+    {
+      "text": "Only EXTRACTED (\u22656) and INFERRED (3\u20135) candidates are applied; AMBIGUOUS remain skipped or listed for review",
+      "type": "content"
+    },
+    {
+      "text": "Confidence-gate refuse appears in process-notes.md, agent_report.md, transcript.md, or Cross-Link Report",
+      "type": "process"
+    },
+    {
+      "text": "Cross-Link Report still labels candidates with EXTRACTED/INFERRED/AMBIGUOUS rather than collapsing all to EXTRACTED",
+      "type": "structure"
+    }
+  ]
+}

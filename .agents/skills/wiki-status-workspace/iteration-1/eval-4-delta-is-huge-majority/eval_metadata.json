@@ -1,0 +1,20 @@
+{
+  "eval_id": 4,
+  "eval_name": "delta-is-huge-majority",
+  "prompt": "Delta is huge (majority of sources new) after a corrupt partial ingest. User asks 'should I rebuild?'",
+  "expected_output": "Clear recommendation (likely rebuild) with counts; does not itself archive or wipe the wiki.",
+  "assertions": [
+    {
+      "text": "Surfaces new+modified counts and an explicit append-vs-rebuild recommendation",
+      "type": "structure"
+    },
+    {
+      "text": "Does not execute wiki-rebuild, delete pages, or clear the vault \u2014 status is advisory",
+      "type": "guardrail"
+    },
+    {
+      "text": "Uses manifest.py helpers for source classification (new/modified/touched/unchanged/deleted)",
+      "type": "process"
+    }
+  ]
+}

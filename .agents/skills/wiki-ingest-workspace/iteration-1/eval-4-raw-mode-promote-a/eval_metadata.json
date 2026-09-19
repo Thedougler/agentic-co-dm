@@ -1,0 +1,28 @@
+{
+  "eval_id": 4,
+  "eval_name": "raw-mode-promote-a",
+  "prompt": "Raw mode: promote a non-sample draft from a fixture _raw/2026-09-01-passage-notes.md into the correct kind template. Early-dev samples must stay in _raw/.",
+  "expected_output": "Promote into kind template without copying the foreign outline as page shape; move promoted draft to wiki/_archive/ (not delete); leave early-dev samples in _raw/; wiki-lint the filed page.",
+  "assertions": [
+    {
+      "text": "Maps ideas into the matching kind template from wiki/templates/ \u2014 does not copy the foreign _raw outline as the live page shape",
+      "type": "structure"
+    },
+    {
+      "text": "Moves the promoted draft into wiki/_archive/ (preserving relative path) rather than deleting it; never uses wildcards or rm -rf",
+      "type": "process"
+    },
+    {
+      "text": "Leaves early-dev wiki/_raw/ sample evidence files in _raw/ \u2014 does not archive or restyle them as the filed page",
+      "type": "guardrail"
+    },
+    {
+      "text": "Derives sources: from the _raw file's capture_source/sources frontmatter \u2014 never uses the _raw/ path as the source value",
+      "type": "content"
+    },
+    {
+      "text": "Runs page-scoped wiki-lint on the filed page before marking complete",
+      "type": "quality"
+    }
+  ]
+}

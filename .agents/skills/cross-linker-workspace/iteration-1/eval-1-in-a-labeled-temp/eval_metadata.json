@@ -1,0 +1,28 @@
+{
+  "eval_id": 1,
+  "eval_name": "in-a-labeled-temp",
+  "prompt": "In a labeled temp vault, run cross-linker after a fixture ingest left unlinked mentions of knowledge-graphs and Jane Doe on projects/demo/demo.md.",
+  "expected_output": "Registry from frontmatter; EXTRACTED/INFERRED links applied inline or Related; AMBIGUOUS skipped; Cross-Link Report produced; log/hot updated.",
+  "assertions": [
+    {
+      "text": "Builds the page registry from frontmatter fields (title, aliases, tags, summary) \u2014 not full-body preload for every page",
+      "type": "process"
+    },
+    {
+      "text": "Applies only EXTRACTED (score \u22656) and INFERRED (score 3\u20135) candidates; skips AMBIGUOUS (score 1\u20132) unless the user asked to connect loose pages",
+      "type": "content"
+    },
+    {
+      "text": "Wraps the first natural body mention in [[wikilinks]]; does not link inside code fences or YAML frontmatter; no self-links or double-links",
+      "type": "structure"
+    },
+    {
+      "text": "Produces a Cross-Link Report with Links Added table (confidence, placement, relationship types), orphans remaining, and pages skipped",
+      "type": "structure"
+    },
+    {
+      "text": "Appends a CROSS_LINK line to log.md and updates hot.md Recent Activity after writes",
+      "type": "process"
+    }
+  ]
+}

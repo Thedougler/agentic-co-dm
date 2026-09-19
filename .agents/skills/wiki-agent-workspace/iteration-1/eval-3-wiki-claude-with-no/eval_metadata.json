@@ -1,0 +1,24 @@
+{
+  "eval_id": 3,
+  "eval_name": "wiki-claude-with-no",
+  "prompt": "/wiki-claude with no query \u2014 catch me up on recent Claude work.",
+  "expected_output": "Recent-sessions mode: last 5 unprocessed sessions only; summary of what was found; not a full history bulk ingest.",
+  "assertions": [
+    {
+      "text": "With no query, selects the 5 most recent unprocessed sessions (recent sessions mode)",
+      "type": "process"
+    },
+    {
+      "text": "Is not bulk wiki-history-ingest \u2014 does not process the entire Claude history tree",
+      "type": "guardrail"
+    },
+    {
+      "text": "Updates hot.md with a one-line summary and appends a WIKI-AGENT log.md line",
+      "type": "structure"
+    },
+    {
+      "text": "Uses cheap project/session directory listing before opening full JSONL blobs",
+      "type": "process"
+    }
+  ]
+}

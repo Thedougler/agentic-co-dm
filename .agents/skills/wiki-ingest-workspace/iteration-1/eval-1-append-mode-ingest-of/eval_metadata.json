@@ -1,0 +1,28 @@
+{
+  "eval_id": 1,
+  "eval_name": "append-mode-ingest-of",
+  "prompt": "Append-mode ingest of a labeled fixture source /tmp/wiki-ops-ingest-fixture/notes/architecture-decision.md into a temp vault. Source is new since last ingest.",
+  "expected_output": "cache-check or manifest.py delta \u2192 idea\u2192destination map \u2192 distill pages \u2192 manifest.py record once after complete \u2192 page-scoped wiki-lint until clean \u2192 done-summary.",
+  "assertions": [
+    {
+      "text": "Runs obsidian-wiki cache-check (or python3 scripts/manifest.py delta fallback) before writing pages",
+      "type": "process"
+    },
+    {
+      "text": "Builds an idea\u2192destination map for the source before filing pages",
+      "type": "process"
+    },
+    {
+      "text": "Calls python3 scripts/manifest.py record exactly once after the source is complete \u2014 never hashes a failed file as success",
+      "type": "process"
+    },
+    {
+      "text": "Runs page-scoped ./scripts/wiki-lint --json --scope <page> on each produced page and fixes until clean",
+      "type": "quality"
+    },
+    {
+      "text": "Does not load the whole .manifest.json into context \u2014 uses scripts/manifest.py helpers only",
+      "type": "guardrail"
+    }
+  ]
+}

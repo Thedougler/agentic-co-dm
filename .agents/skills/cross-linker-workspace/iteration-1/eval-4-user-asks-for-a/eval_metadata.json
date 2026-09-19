@@ -1,0 +1,20 @@
+{
+  "eval_id": 4,
+  "eval_name": "user-asks-for-a",
+  "prompt": "User asks for a report-only dry run: 'find missing links but don't edit any pages yet'.",
+  "expected_output": "Score and list EXTRACTED/INFERRED candidates in Cross-Link Report form without modifying pages, index, or hot (log append optional only if skill allows; prefer zero writes).",
+  "assertions": [
+    {
+      "text": "Does not modify page bodies, relationships frontmatter, index.md, or hot.md when the user requested report-only / no edits",
+      "type": "guardrail"
+    },
+    {
+      "text": "Still scores candidates with EXTRACTED/INFERRED/AMBIGUOUS labels so the user can review before applying",
+      "type": "structure"
+    },
+    {
+      "text": "Skips _archives/ and _readouts/ from both scanning and linking targets",
+      "type": "content"
+    }
+  ]
+}

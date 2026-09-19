@@ -1,0 +1,28 @@
+{
+  "eval_id": 1,
+  "eval_name": "wiki-codex-rust-ownership",
+  "prompt": "/wiki-codex \"rust ownership patterns\" \u2014 pull targeted sessions into a temp vault and answer.",
+  "expected_output": "Route to Codex history root; cheap session_index score; extract top 3\u20135 blobs; distill + immediate synthesized answer; manifest upsert for ingested sessions only.",
+  "assertions": [
+    {
+      "text": "Routes /wiki-codex to CODEX_HISTORY_PATH / ~/.codex and uses session_index.jsonl as the cheap inventory before opening rollouts",
+      "type": "process"
+    },
+    {
+      "text": "Scores sessions (name/title, cwd, recency decay) and opens only the top 3\u20135 \u2014 not every session file",
+      "type": "process"
+    },
+    {
+      "text": "Returns the synthesized answer structure: Found in / Key insights / Wiki pages updated / Sessions ingested / Gaps",
+      "type": "structure"
+    },
+    {
+      "text": "Records ingested sessions via python3 scripts/manifest.py upsert \u2014 does not load whole .manifest.json",
+      "type": "process"
+    },
+    {
+      "text": "Distills durable knowledge only \u2014 does not invent beyond session evidence",
+      "type": "guardrail"
+    }
+  ]
+}

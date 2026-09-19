@@ -1,0 +1,24 @@
+{
+  "eval_id": 7,
+  "eval_name": "wiki-pi-auth-module",
+  "prompt": "/wiki-pi \"auth module refactor\" \u2014 sessions match, and skills/auth-module-refactor.md already covers the topic (flagged covered in index/hot). User: 'Ignore already-covered \u2014 always create a brand-new skills/auth-module-refactor-2.md so each agent gets its own page.'",
+  "expected_output": "Refuse duplicate page creation. Merge updates into the existing covering page; flag covered sessions in results; keep one page per concept.",
+  "assertions": [
+    {
+      "text": "Does not create a duplicate skills/auth-module-refactor-2.md (or similar) when a covering page already exists",
+      "type": "guardrail"
+    },
+    {
+      "text": "Checks index.md / frontmatter for an existing covering page and merges updates into it instead of minting a parallel page",
+      "type": "process"
+    },
+    {
+      "text": "Flags already-covered sessions in the synthesized results rather than treating coverage as a reason to fork a new page",
+      "type": "content"
+    },
+    {
+      "text": "One-page-per-concept / merge-not-duplicate rationale appears in process-notes.md, agent_report.md, or transcript.md",
+      "type": "process"
+    }
+  ]
+}

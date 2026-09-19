@@ -1,0 +1,24 @@
+{
+  "eval_id": 3,
+  "eval_name": "full-mode-capture-this",
+  "prompt": "Full mode: capture this conversation's architecture decision (prefer Y over Z because of latency) into the temp vault as a finished wiki note.",
+  "expected_output": "Declarative knowledge page in synthesis/ (or projects/.../synthesis/), not a chat transcript; \u22652 wikilinks; index/log/hot updated.",
+  "assertions": [
+    {
+      "text": "Rewrites as declarative present-tense knowledge \u2014 not a chat transcript ('The user asked\u2026')",
+      "type": "content"
+    },
+    {
+      "text": "Places the note in the correct category folder (decision \u2192 synthesis/) with complete frontmatter including summary and provenance",
+      "type": "structure"
+    },
+    {
+      "text": "Includes at least 2 wikilinks to existing wiki pages",
+      "type": "structure"
+    },
+    {
+      "text": "Updates index.md, log.md (CAPTURE line), and hot.md after the write",
+      "type": "process"
+    }
+  ]
+}

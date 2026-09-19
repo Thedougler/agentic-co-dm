@@ -1,0 +1,24 @@
+{
+  "eval_id": 4,
+  "eval_name": "after-creating-2-synthesis",
+  "prompt": "After creating 2 synthesis pages in the temp vault, finish tracking.",
+  "expected_output": "index.md entries, WIKI_SYNTHESIZE log line, hot.md Recent Activity update; QMD refresh after writes.",
+  "assertions": [
+    {
+      "text": "Updates index.md with entries for all new synthesis pages",
+      "type": "process"
+    },
+    {
+      "text": "Appends log.md line: WIKI_SYNTHESIZE pages_scanned=N synthesis_created=M candidates_skipped=K",
+      "type": "structure"
+    },
+    {
+      "text": "Updates hot.md Recent Activity with what was synthesized",
+      "type": "process"
+    },
+    {
+      "text": "Every new synthesis page has summary: \u2264200 chars and links back to its source concepts",
+      "type": "structure"
+    }
+  ]
+}

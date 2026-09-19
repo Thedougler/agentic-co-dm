@@ -1,0 +1,24 @@
+{
+  "eval_id": 2,
+  "eval_name": "temp-vault-is-a",
+  "prompt": "Temp vault is a standalone Git repository with uncommitted changes. Run cross-linker and attempt to add links.",
+  "expected_output": "Pre-write snapshot via git add/commit; if snapshot fails, abort with zero vault writes. On success, include SNAPSHOT_SHA in the report.",
+  "assertions": [
+    {
+      "text": "Checks whether OBSIDIAN_VAULT_PATH is the Git toplevel (standalone vault repo) before the first write",
+      "type": "process"
+    },
+    {
+      "text": "Takes a pre-write snapshot (commit or record HEAD) when the vault is a standalone Git repo",
+      "type": "process"
+    },
+    {
+      "text": "Aborts the skill without writing any vault files if git add or git commit for the snapshot fails",
+      "type": "guardrail"
+    },
+    {
+      "text": "Includes SNAPSHOT_SHA in the final report when a snapshot was taken and writes occurred",
+      "type": "structure"
+    }
+  ]
+}

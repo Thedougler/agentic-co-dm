@@ -1,0 +1,28 @@
+{
+  "eval_id": 2,
+  "eval_name": "draft-a-synthesis-page",
+  "prompt": "Draft a synthesis page for fixture pair Caching \u00d7 Consistency that co-occurs in 6 pages across concepts/ and skills/.",
+  "expected_output": "synthesis/ page titled A \u00d7 B with Connection, Co-occur, Insight, Tensions, Strongest Objection (+ testable query), Open Questions, Related; mostly ^[inferred]; back-links from source concepts.",
+  "assertions": [
+    {
+      "text": "Uses the synthesis template sections: The Connection, Where They Co-occur, Cross-cutting Insight, Tensions and Trade-offs, Strongest Objection, Open Questions, Related",
+      "type": "structure"
+    },
+    {
+      "text": "Title format is Concept A \u00d7 Concept B",
+      "type": "structure"
+    },
+    {
+      "text": "Strongest Objection names a skeptical counter and follows with a testable search query \u2014 not an invented citation",
+      "type": "guardrail"
+    },
+    {
+      "text": "Frontmatter provenance skews inferred-high; cross-cutting conclusions marked ^[inferred]",
+      "type": "content"
+    },
+    {
+      "text": "Back-links the synthesis from both source concept pages' Related sections",
+      "type": "process"
+    }
+  ]
+}

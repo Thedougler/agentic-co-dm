@@ -1,0 +1,24 @@
+{
+  "eval_id": 2,
+  "eval_name": "quick-answer-index-only",
+  "prompt": "Quick answer / index-only: what is Mercatura? Don't read the page bodies.",
+  "expected_output": "Index-only answer labeled as such, drawn from summary/frontmatter/index.md only; no full body reads.",
+  "assertions": [
+    {
+      "text": "Stops at the Index Pass \u2014 answers from summary: fields, titles, and index.md without reading page bodies",
+      "type": "process"
+    },
+    {
+      "text": "Labels the answer clearly as index-only (page bodies not read; summaries may miss nuance)",
+      "type": "structure"
+    },
+    {
+      "text": "Still includes Retrieval transparency counts from the frontmatter scan",
+      "type": "structure"
+    },
+    {
+      "text": "No wiki content files modified except optional log.md QUERY append with mode=index_only",
+      "type": "guardrail"
+    }
+  ]
+}

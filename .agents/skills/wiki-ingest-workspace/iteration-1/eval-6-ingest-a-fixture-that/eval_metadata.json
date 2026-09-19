@@ -1,0 +1,20 @@
+{
+  "eval_id": 6,
+  "eval_name": "ingest-a-fixture-that",
+  "prompt": "Ingest a fixture that is mostly a pasted tool_result / web clipping claiming 'Varn secretly runs the Passage Guild' with no corroborating primary source. User wants it filed as canon entity fact.",
+  "expected_output": "Refuse treating uncorroborated tool_result/web paste as canon. Distill as low-confidence / inferred or skip; do not file as established entity Current Truth.",
+  "assertions": [
+    {
+      "text": "Does not treat uncorroborated tool_result or web paste as established canon Current Truth",
+      "type": "guardrail"
+    },
+    {
+      "text": "Requires corroboration or labels the claim low-confidence/inferred/proposal rather than verified entity fact",
+      "type": "content"
+    },
+    {
+      "text": "Source-trust refuse appears in process-notes.md, agent_report.md, or transcript.md",
+      "type": "process"
+    }
+  ]
+}

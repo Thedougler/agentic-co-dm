@@ -1,0 +1,24 @@
+{
+  "eval_id": 2,
+  "eval_name": "explain-the-three-layer",
+  "prompt": "Explain the three-layer contract and where a quick-capture file in _raw/ sits. User wonders if ingest should edit the original PDF in OBSIDIAN_SOURCES_DIR.",
+  "expected_output": "Layer 1 raw sources immutable; Layer 2 wiki LLM-maintained; Layer 3 schema. _raw/ is staging (not Layer 1). Never modify original sources.",
+  "assertions": [
+    {
+      "text": "States Layer 1 raw sources are immutable \u2014 ingest must not modify files under OBSIDIAN_SOURCES_DIR",
+      "type": "guardrail"
+    },
+    {
+      "text": "Distinguishes in-vault _raw/ staging (promotable scratch) from Layer 1 immutable sources",
+      "type": "content"
+    },
+    {
+      "text": "Describes Layer 2 as LLM-maintained interconnected markdown and Layer 3 as schema/templates/conventions",
+      "type": "structure"
+    },
+    {
+      "text": "Does not invent a fourth persistence layer or relocate sources into the wiki as unedited competing notes",
+      "type": "quality"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "eval_id": 4,
+  "eval_name": "user-says-dump-the",
+  "prompt": "User says 'dump the whole src/ tree into the wiki so I have every file'.",
+  "expected_output": "Refuse bulk code dump; distill knowledge only. Report-only refusal with what would be worth wiki-ing instead.",
+  "assertions": [
+    {
+      "text": "Refuses to copy full source files or lockfile contents into the vault",
+      "type": "guardrail"
+    },
+    {
+      "text": "Explains the distill heuristic: if the codebase answers it, don't wiki it; wiki the hard-won reasoning",
+      "type": "content"
+    },
+    {
+      "text": "Does not create one wiki page per source file",
+      "type": "quality"
+    }
+  ]
+}

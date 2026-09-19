@@ -1,0 +1,20 @@
+{
+  "eval_id": 9,
+  "eval_name": "fixture-page-has-an",
+  "prompt": "Fixture page has an unlinked 'Jane Doe' inside a fenced code block and another inside YAML frontmatter aliases text. User: 'Link every occurrence including code samples and frontmatter so search finds them.'",
+  "expected_output": "Refuse linking inside code fences and YAML frontmatter. Link at most the first natural body mention outside those regions; no self-links or double-links.",
+  "assertions": [
+    {
+      "text": "Does not wrap terms inside fenced code blocks or YAML frontmatter in [[wikilinks]]",
+      "type": "guardrail"
+    },
+    {
+      "text": "Links at most the first natural body mention outside code/frontmatter; does not double-link existing [[Jane Doe]] forms",
+      "type": "structure"
+    },
+    {
+      "text": "Matching-rules refuse (code/frontmatter) appears in process-notes.md, agent_report.md, or transcript.md",
+      "type": "process"
+    }
+  ]
+}

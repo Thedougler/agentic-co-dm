@@ -1,0 +1,20 @@
+{
+  "eval_id": 3,
+  "eval_name": "user-asks-to-synthesize",
+  "prompt": "User asks to synthesize two concepts that merely share a project page with no real conceptual link.",
+  "expected_output": "Skip \u2014 do not synthesize for synthesis's sake when there is no non-obvious connection.",
+  "assertions": [
+    {
+      "text": "Skips pairs that co-occur without a real conceptual link rather than forcing a page",
+      "type": "guardrail"
+    },
+    {
+      "text": "Does not create a synthesis page that only restates the source concept pages",
+      "type": "quality"
+    },
+    {
+      "text": "Does not invent citations or sources to justify a weak connection",
+      "type": "guardrail"
+    }
+  ]
+}

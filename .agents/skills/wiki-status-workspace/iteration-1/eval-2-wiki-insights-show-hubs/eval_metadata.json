@@ -1,0 +1,28 @@
+{
+  "eval_id": 2,
+  "eval_name": "wiki-insights-show-hubs",
+  "prompt": "Wiki insights \u2014 show hubs, bridges, and orphans for a fixture vault with \u226520 pages.",
+  "expected_output": "_insights.md written with Anchor Pages, Bridge Pages, Tag Cluster Cohesion, Surprising Connections, Orphan-Adjacent, Tier Suggestions (suggestions only), Questions Worth Asking, and GRAPH_SNAPSHOT comment.",
+  "assertions": [
+    {
+      "text": "Runs obsidian-wiki graph-analyse (or manual wikilink fallback) before composing insights",
+      "type": "process"
+    },
+    {
+      "text": "Writes regenerable _insights.md with Anchor/Bridge/Cohesion/Surprising/Orphan-Adjacent/Tier Suggestions/Questions sections plus GRAPH_SNAPSHOT HTML comment",
+      "type": "structure"
+    },
+    {
+      "text": "Tier Suggestions are recommendations only \u2014 does not write tier: fields onto pages",
+      "type": "guardrail"
+    },
+    {
+      "text": "Does not invent pages that are not in the vault graph",
+      "type": "content"
+    },
+    {
+      "text": "Appends a STATUS_INSIGHTS line to log.md after writing _insights.md",
+      "type": "process"
+    }
+  ]
+}

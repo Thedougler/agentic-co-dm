@@ -1,0 +1,20 @@
+{
+  "eval_id": 2,
+  "eval_name": "stop-hook-auto-invokes",
+  "prompt": "Stop-hook auto-invokes /wiki-capture --quick on a purely conversational planning chat with no bugs, fixes, or surprising findings.",
+  "expected_output": "SKIP with 'Nothing worth capturing in this session.' \u2014 no _raw/ files written.",
+  "assertions": [
+    {
+      "text": "When invoked via Stop hook, errs toward SKIP unless there is clear capture evidence",
+      "type": "guardrail"
+    },
+    {
+      "text": "Exits with a nothing-worth-capturing message and writes no _raw/ files",
+      "type": "content"
+    },
+    {
+      "text": "Does not create empty or pleasantry-only staging notes",
+      "type": "quality"
+    }
+  ]
+}

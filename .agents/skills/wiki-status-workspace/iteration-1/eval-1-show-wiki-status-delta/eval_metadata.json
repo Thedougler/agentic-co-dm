@@ -1,0 +1,28 @@
+{
+  "eval_id": 1,
+  "eval_name": "show-wiki-status-delta",
+  "prompt": "Show wiki status / delta for a labeled temp vault with a few new and modified sources. Report only \u2014 do not ingest or rebuild.",
+  "expected_output": "Wiki Status report: Overview, Delta (New/Modified/Unchanged/Deleted), Summary with append-vs-rebuild recommendation, Token Footprint, What to Do Next. No destructive rebuild.",
+  "assertions": [
+    {
+      "text": "Uses python3 scripts/manifest.py stats/list/delta/has/get \u2014 never reads the whole .manifest.json into context",
+      "type": "process"
+    },
+    {
+      "text": "Status report includes Overview, Delta tables (new/modified/unchanged/deleted), Summary, and What to Do Next (\u22646 ranked items)",
+      "type": "structure"
+    },
+    {
+      "text": "Token Footprint uses python3 scripts/token-count.py (tiktoken) \u2014 never file_size/4 heuristics",
+      "type": "process"
+    },
+    {
+      "text": "Recommends append vs rebuild but does not run wiki-rebuild or archive the vault",
+      "type": "guardrail"
+    },
+    {
+      "text": "Standard status mode does not modify wiki pages (report-only except insights mode's regenerable _insights.md)",
+      "type": "guardrail"
+    }
+  ]
+}
