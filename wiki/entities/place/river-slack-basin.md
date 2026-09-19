@@ -1,5 +1,4 @@
 ---
----
 title: Slack Basin
 category: entities
 tags: [shattered-sea, aruhe, place]
