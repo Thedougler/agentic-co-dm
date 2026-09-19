@@ -3,7 +3,7 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Improve wiki/entities/region/aruhe.md into a runnable region page using wiki/templates/region.md (and contracts/region.yml field expectations). Use linked places wiki/entities/place/river-slack-basin.md, wiki/entities/place/cutoff-lip.md, and wiki/entities/place/print-braid.md plus established taking-on-aruhe / razer-grass facts. The live Aruhe page is content-rich but place-kernel shaped — upgrade toward region.md headings. Do not treat vault lint (e.g. double --- on slack-basin/cutoff-lip) as skill failure; assert template conformance of the output.",
+      "prompt": "Improve wiki/entities/region/aruhe.md into a runnable region page using wiki/templates/region.md (and contracts/region.yml field expectations). Use linked places wiki/entities/place/river-slack-basin.md, wiki/entities/place/cutoff-lip.md, and wiki/entities/place/print-braid.md plus established taking-on-aruhe / razer-grass facts. Wiki Linter marked hard_fail=false on aruhe.md; the live page is still place-kernel shaped \u2014 upgrade toward region.md headings. Assert output template conformance of the result, not live lint-clean status or current body shape.",
       "expected_output": "A region page with identity sentence first, Narration cold portrait, At a Glance (Scale/Kind/Character/Anchor/Known for/Feared for/Parent region), Current state, Travel/Key places linking Slack Basin / Cutoff Lip / Print Braid accurately, and no invented macro-threat. Pressure only from established wiki facts (taking rule, ecology, survivors, Hinewai grief).",
       "assertions": [
         {
@@ -23,7 +23,7 @@
           "type": "structure"
         },
         {
-          "text": "Slack Basin, Cutoff Lip, and Print Braid appear with roles matching their wiki pages (claimed backwater; Quiet–grassland seam; print strands toward Spoke Ring)",
+          "text": "Slack Basin, Cutoff Lip, and Print Braid appear with roles matching their wiki pages (claimed backwater; Quiet\u2013grassland seam; print strands toward Spoke Ring)",
           "type": "content"
         },
         {
@@ -65,7 +65,7 @@
     },
     {
       "id": 3,
-      "prompt": "Create a new region page from scratch for the Brine Ladder — a stepped reef frontier of three channels where local pilots tax passage and storm seasons close the middle stair. This entity is invention; it is not in the campaign wiki. Label it accordingly.",
+      "prompt": "Create a new region page from scratch for the Brine Ladder \u2014 a stepped reef frontier of three channels where local pilots tax passage and storm seasons close the middle stair. This entity is invention; it is not in the campaign wiki. Label it accordingly.",
       "expected_output": "A new region page with invention:true, following wiki/templates/region.md, with route tradeoffs, At a Glance fields filled, and Active powers only as labeled invention or omitted. No claim Brine Ladder is vault canon.",
       "assertions": [
         {
@@ -96,7 +96,7 @@
     },
     {
       "id": 4,
-      "prompt": "Flesh wiki/entities/region/Midchain.md toward wiki/templates/region.md. Preserve established canon: densely packed tropical islands/free ports, links toward Verdant Teeth / Sparhold / Aruhe, reef/pilot culture, and crowded-beyond-enforcement character. The page is kernel-shaped today — restructure to region.md. Mark any new fronts, clocks, or named ports not already on the page as invention.",
+      "prompt": "Flesh wiki/entities/region/Midchain.md toward wiki/templates/region.md. Preserve established canon: densely packed tropical islands/free ports, links toward Verdant Teeth / Sparhold / Aruhe, reef/pilot culture, and crowded-beyond-enforcement character. The page is kernel-shaped today \u2014 restructure to region.md. Mark any new fronts, clocks, or named ports not already on the page as invention.",
       "expected_output": "A region.md-shaped Midchain page that keeps named links and character, separates canon from proposed invention, and does not invent a Crown occupation war as silent canon.",
       "assertions": [
         {

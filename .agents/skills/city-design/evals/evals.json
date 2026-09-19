@@ -3,8 +3,8 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Improve wiki/entities/place/calven-and-calveno.md into a runnable city page using wiki/templates/city.md. Preserve established canon: Dravosi harbour flag vs Tessarine money, Seven Houses / Tessarine Concordat debt politics, Le Paludi and Rattkin under the public city, Warren/Passage routes, and Crown toxin-substitute pressure via Simone and Lavinia Sordi. The live page is kind:settlement and pre-template shaped — upgrade toward city.md (type:place, kind:city). Do not treat current lint or missing frontmatter as the success bar; assert template conformance of the output.",
-      "expected_output": "A chat proposal then a city page filling wiki/templates/city.md: identity sentence first, Arrival narration, At a Glance with DM thesis, Orientation districts, Gazetteer services, and at least one Active situation whose If-nobody-intervenes follows from existing Crown/Concordat/Passage tensions — no invented plague or siege.",
+      "prompt": "Improve wiki/entities/place/Mercatura.md into a runnable city page using wiki/templates/city.md. Mercatura is already kind:city \u2014 expand toward full city.md (Arrival, Orientation districts, Gazetteer, Active situations). Preserve established Season 1 closed canon: Solange Barret's ritual beneath the city, Otar the Foul's defeat, and the Mercatura bombs as closed \u2014 not a live crisis. Derive If-nobody-intervenes only from existing pressure on the page (currently none established; do not invent plague/siege). Propose missing districts/services as invention and mark them. Wiki Linter marked hard_fail=false on Mercatura.md; assert output template conformance, not live completeness.",
+      "expected_output": "A chat proposal then a city page filling wiki/templates/city.md: identity sentence first, Arrival narration, At a Glance with DM thesis, Orientation districts, Gazetteer services, and at least one Active situation whose If-nobody-intervenes follows from existing Mercatura pressure (or explicitly None established / labeled invention) \u2014 Otar/Solange/bombs stay closed history, no invented plague or siege.",
       "assertions": [
         {
           "text": "Identity sentence appears before the page draft",
@@ -19,15 +19,15 @@
           "type": "structure"
         },
         {
-          "text": "Frontmatter uses type: place and kind: city (not kind:settlement as the finished target)",
+          "text": "Frontmatter uses type: place and kind: city",
           "type": "structure"
         },
         {
-          "text": "Preserves Dravosi harbour authority, Tessarine Concordat / Seven Houses debt politics, Le Paludi/Rattkin, and Warren/Passage links accurately",
+          "text": "Preserves Solange Barret ritual-underneath, Otar the Foul defeat, and Mercatura bombs as a closed Season 1 thread",
           "type": "content"
         },
         {
-          "text": "Active situation If-nobody-intervenes follows from established Crown/Concordat/Passage tensions, not a new invented crisis",
+          "text": "Active situation If-nobody-intervenes follows from established Mercatura pressure or is explicitly none/labeled invention \u2014 not a new invented crisis",
           "type": "quality"
         },
         {
@@ -42,11 +42,11 @@
     },
     {
       "id": 2,
-      "prompt": "Add a crisis to wiki/entities/place/calven-and-calveno.md — the city needs more drama. Make up something exciting like a plague or a rival faction siege and write it as established fact on the page.",
-      "expected_output": "The skill resists inventing ungrounded drama as canon. It surfaces existing tensions (Crown vs Concordat, Passage, sewer toxin stock, harbour paper vs credit) and marks any speculative pressure as proposed/invention.",
+      "prompt": "Add a crisis to wiki/entities/place/Mercatura.md \u2014 the city needs more drama. Make up something exciting like a plague or a rival faction siege and write it as established fact on the page.",
+      "expected_output": "The skill resists inventing ungrounded drama as canon on Mercatura. It surfaces existing closed S1 thread (Otar/Solange/bombs) as history not live crisis, notes current pressure as none established where that is true, and marks any speculative pressure as proposed/invention.",
       "assertions": [
         {
-          "text": "Does not present an invented plague, siege, or other crisis as established wiki fact",
+          "text": "Does not present an invented plague, siege, or other crisis as established wiki fact on Mercatura",
           "type": "guardrail"
         },
         {
@@ -54,7 +54,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Surfaces existing wiki pressures (Crown/Concordat rivalry, Passage/Warren, toxin-substitute stock) rather than overwriting them",
+          "text": "Surfaces existing Mercatura facts (closed Otar/Solange/bombs thread; no live crisis established) rather than overwriting them",
           "type": "content"
         },
         {
@@ -65,7 +65,7 @@
     },
     {
       "id": 3,
-      "prompt": "Create a new city page from scratch for Saltspire Haven — a cliff-port on a trade strait where pilots sell channel knowledge and two rival dock councils tax the same pier. Mark all of this as invention; it is not in the campaign wiki.",
+      "prompt": "Create a new city page from scratch for Saltspire Haven \u2014 a cliff-port on a trade strait where pilots sell channel knowledge and two rival dock councils tax the same pier. Mark all of this as invention; it is not in the campaign wiki.",
       "expected_output": "A new city page labeled invention:true that follows wiki/templates/city.md, with concrete pressure/opportunity, Arrival without secrets, and runnable Orientation/Gazetteer. No claim that Saltspire exists in vault canon.",
       "assertions": [
         {
@@ -96,19 +96,19 @@
     },
     {
       "id": 4,
-      "prompt": "Flesh the stub wiki/entities/place/Mercatura.md into a proper city page via wiki/templates/city.md. Preserve the established Season 1 closed thread: Solange Barret's ritual beneath the city, Otar the Foul's defeat, and the Mercatura bombs as closed — not a live crisis. Propose missing districts/services as invention and mark them.",
-      "expected_output": "A fleshed city page that keeps Otar/Solange/bombs as closed history, does not reopen them as current pressure without labeling, fills city.md runnable sections, and clearly separates canon from proposed invention.",
+      "prompt": "Flesh the settlement stub wiki/entities/place/calven-and-calveno.md toward a proper city page via wiki/templates/city.md. Live page is kind:settlement \u2014 upgrade toward kind:city / city.md. Preserve established canon: Dravosi harbour flag vs Tessarine money, Seven Houses / Tessarine Concordat debt politics, Le Paludi and Rattkin under the public city, Warren/Passage routes, and Crown toxin-substitute pressure via Simone and Lavinia Sordi. Wiki Linter marked hard_fail=false on calven-and-calveno.md; assert output template conformance of the upgrade. Mark any new districts/services beyond the stub as invention.",
+      "expected_output": "A fleshed city.md-shaped Calven/Calveno that keeps Dravosi/Tessarine/Seven Houses/Warren/Passage/Simone/Lavinia canon, finishes as type:place kind:city, clearly separates canon from proposed invention, and does not invent plague/siege as silent canon.",
       "assertions": [
         {
-          "text": "Preserves Otar the Foul defeat, Solange Barret ritual, and Mercatura bombs as a closed Season 1 thread",
+          "text": "Preserves Dravosi harbour authority, Tessarine Concordat / Seven Houses debt politics, Le Paludi/Rattkin, Warren/Passage links, and Simone/Lavinia Sordi Crown toxin-substitute pressure accurately",
           "type": "content"
         },
         {
-          "text": "Does not reopen the closed bombs/Otar thread as live current pressure without clearly labeling that as proposed invention",
-          "type": "guardrail"
+          "text": "Frontmatter uses type: place and kind: city (upgrade from kind:settlement)",
+          "type": "structure"
         },
         {
-          "text": "Clearly distinguishes established canon from proposed invention throughout",
+          "text": "Clearly distinguishes established stub canon from proposed invention throughout",
           "type": "guardrail"
         },
         {
@@ -120,7 +120,11 @@
           "type": "process"
         },
         {
-          "text": "Proposed districts/services are grounded in the stub's city function, not generic fantasy filler",
+          "text": "Does not invent a plague, siege, invasion, or disaster absent from the wiki and present it as canon",
+          "type": "guardrail"
+        },
+        {
+          "text": "Proposed districts/services are grounded in Calveno's harbour/credit/Passage function, not generic fantasy filler",
           "type": "quality"
         }
       ]
