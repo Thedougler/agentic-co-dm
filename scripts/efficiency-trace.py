@@ -109,6 +109,19 @@ def validate_count(value: Any, label: str) -> None:
 
 
 def validate_record(record: dict[str, Any]) -> dict[str, Any]:
+    if record.get("record_kind") == "command":
+        if record.get("schema_version") != SUPPORTED_SCHEMA:
+            error(f"incompatible schema_version {record.get('schema_version')}; supported {SUPPORTED_SCHEMA}")
+        if record.get("command") not in {"lint", "query", "health"}:
+            error(f"invalid command {record.get('command')}")
+        validate_count(record.get("duration_ms"), "duration_ms")
+        for key in ("cache_hits", "cache_misses", "vale_skipped"):
+            validate_count(record.get(key), key)
+        if record.get("exit") not in {0, 1, 2}:
+            error(f"invalid exit {record.get('exit')}")
+        if not isinstance(record.get("timestamp"), str) or not record["timestamp"].strip():
+            error("timestamp must be a non-empty string")
+        return record
     required = ("schema_version", "trace_id", "policy_version", "sitting_class", "work_status", "measurement_status", "model_family", "tokenizer_family", "encoding", "trajectory", "retrieval", "source_components", "quality")
     missing = [key for key in required if key not in record]
     if missing:
@@ -242,7 +255,7 @@ def metric(value: int | float, denominator: int | None = None) -> dict[str, Any]
 
 
 def report(records: list[dict[str, Any]]) -> dict[str, Any]:
-    valid = [validate_record(record) for record in records]
+    valid = [validate_record(record) for record in records if record.get("record_kind") != "command"]
     trajectory_total = sum(sum(record["trajectory"].values()) for record in valid)
     input_total = sum(record["trajectory"]["model_input"] for record in valid)
     output_total = sum(record["trajectory"]["model_output"] for record in valid)
@@ -355,8 +368,7 @@ def main() -> int:
             print(json.dumps({"status": "retained", "removed": removed, "days": retention_days}))
         elif args.command == "promote":
             settings = policy()
-            records = [validate_record(record) for record in records_from(read_json(args.input))]
-            complete = [r for r in records if r["measurement_status"] == "complete" and r["work_status"] == "accepted"]
+            records = [validate_record(record) for record in records_from(read_json(args.input)) if record.get("record_kind") != "command"]
             classes = {r["sitting_class"] for r in complete}
             jobs = {r.get("job") for r in complete}
             identities = {(r["model_family"], r["tokenizer_family"], r["encoding"]) for r in complete}

@@ -345,7 +345,7 @@ scripts/wiki query "<phrase>"
 scripts/wiki health
 ```
 
-Bulk lint emits a compact worklist; a single-file lint includes flat findings, and `--full` restores the complete finding dump. Health emits ordered `focus` plus `next`; run health, act on `next`, then remaining `focus` without terminal detection, extra interpretation, or waiting for the DM. Creative lint remains on `scripts/wiki-lint`; `wiki-query` remains the owner of synthesized answers and citations.
+Default lint dumps every finding grouped by file; `--full` does not change that dump. Run `scripts/wiki health`, then act on `next` (then remaining `focus`) without terminal detection, extra interpretation, or waiting for the DM. Creative lint remains on `scripts/wiki-lint`; `wiki-query` remains the owner of synthesized answers and citations.
 
 ### Co-DM — session lifecycle
 

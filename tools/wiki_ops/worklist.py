@@ -152,12 +152,15 @@ def build_worklist(
     full: bool = False,
     vault: str | Path | None = None,
     page_bytes: Mapping[Any, Any] | None = None,
+    file_order: Iterable[str] | None = None,
 ) -> dict[str, Any]:
     """Build the deterministic public lint worklist from flat or grouped findings."""
     flat = list(_records(findings, vault=vault))
     counts: dict[str, int] = {}
     targets: dict[str, set[str]] = {}
     pages: dict[str, int] = {}
+    grouped: dict[str, list[dict[str, Any]]] = {}
+    first_seen: list[str] = []
     for item in flat:
         rule = item["rule"]
         if not rule:
@@ -167,6 +170,12 @@ def build_worklist(
         page = item["file"]
         if page:
             pages[page] = pages.get(page, 0) + 1
+            if page not in grouped:
+                grouped[page] = []
+                first_seen.append(page)
+            grouped[page].append(
+                {key: item[key] for key in ("rule", "file", "line", "severity", "message")}
+            )
 
     counts = {key: counts[key] for key in sorted(counts) if counts[key]}
     unique = {
@@ -180,6 +189,12 @@ def build_worklist(
     ]
     backlog.sort(key=lambda item: (item["bytes"], item["page"]))
     hard = set(hard_keys) if hard_keys is not None else DEFAULT_HARD_KEYS
+    order = list(file_order) if file_order is not None else []
+    ordered_files: list[str] = []
+    for page in order + first_seen:
+        page = _path(page, vault)
+        if page in grouped and page not in ordered_files:
+            ordered_files.append(page)
     result: dict[str, Any] = {
         "status": "findings" if counts else "clean",
         "counts": counts,
@@ -190,12 +205,8 @@ def build_worklist(
         "cache": _cache(cache),
         "files_checked": max(0, int(files_checked or 0)),
         "scope": _scope(scope, vault),
+        "files": [{"file": page, "findings": grouped[page]} for page in ordered_files],
     }
-    if include_findings or full:
-        result["findings"] = [
-            {key: item[key] for key in ("rule", "file", "line", "severity", "message")}
-            for item in flat
-        ]
     return result
 
 

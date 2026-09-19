@@ -39,17 +39,15 @@ template field is preserved.
 
 Run the structural command from repo root before any agent repair:
 
-- **Full vault (default compact worklist):** `scripts/wiki lint`
-- **Single-file scope (findings included):** `scripts/wiki lint <path>`
-- **Full findings:** `scripts/wiki lint --full` (also add `--full` to a directory scope)
+- **Vault or path:** `scripts/wiki lint [path ...]`
+- `--full` is accepted and does not change the dump
 
-The default bulk output is compact worklist JSON: counts, `backlog`, and
-`next_page`, without per-finding details. A single-file scope includes
-findings; `--full` includes findings for bulk scopes.
+Default stdout is summary fields plus every finding grouped by `files`.
+Use `counts`, `unique`, `backlog`, `next_page`, and each file's `findings`
+(`rule`, `file`, 1-based `line`, `severity`, `message`).
 
-Pass owner extensions: `--allow-lifecycle` / `--allow-relationship-type`.
-The JSON `schema` block must match your effective schema before accepting
-findings.
+Pass owner extensions through `scripts/wiki-lint` when a checker needs
+`--allow-lifecycle` / `--allow-relationship-type`.
 
 **HARD fail keys:** `broken_links`, `missing_frontmatter`, `bad_type`,
 `bad_lifecycle`, `typed_relationships`, `pc_identity_mismatch`,
@@ -121,12 +119,10 @@ unfixable findings listed; one done-summary names what changed and where.
 
 When vault-wide lint finds fixable issues and `--check` is not set:
 
-1. Run `scripts/wiki lint` for the default compact worklist.
-2. Take `next_page` — the first page in `backlog`, sorted by file byte size
-   then path.
-3. Process one backlog page: read, repair, page-scoped verify, commit.
+1. Run `scripts/wiki lint` and take `next_page` (first `backlog` page).
+2. Process that page: read, repair, page-scoped verify, commit.
    Re-run `scripts/wiki lint` and take the new `next_page`.
-4. Stop only when `backlog` is empty, the user stops the run, or a concrete
+3. Stop only when `backlog` is empty, the user stops the run, or a concrete
    unrecoverable blocker occurs.
 
 **Done when:** backlog empty or a concrete blocker named; one done-summary.

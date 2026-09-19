@@ -28,8 +28,8 @@ Repo root: `scripts/wiki`, `tools/wiki_ops/`, `tests/test_wiki_cli.py`
 
 **Purpose**: Empty helper modules and test file listed in plan.md
 
-- [ ] T001 Create empty `tools/wiki_ops/worklist.py`, `tools/wiki_ops/lint_cache.py`, `tools/wiki_ops/health.py`, `tools/wiki_ops/timing.py`, `tools/wiki_ops/pretty.py`, and executable `scripts/wiki` (shebang `.venv`/repo python; docstring only)
-- [ ] T002 Create `tests/test_wiki_cli.py` with a temp-vault helper matching `tests/test_wiki_ops.py` (no cases yet)
+- [X] T001 Create empty `tools/wiki_ops/worklist.py`, `tools/wiki_ops/lint_cache.py`, `tools/wiki_ops/health.py`, `tools/wiki_ops/timing.py`, `tools/wiki_ops/pretty.py`, and executable `scripts/wiki` (shebang `.venv`/repo python; docstring only)
+- [X] T002 Create `tests/test_wiki_cli.py` with a temp-vault helper matching `tests/test_wiki_ops.py` (no cases yet)
 
 ---
 
@@ -39,9 +39,9 @@ Repo root: `scripts/wiki`, `tools/wiki_ops/`, `tests/test_wiki_cli.py`
 
 **⚠️ CRITICAL**: No user story work until this phase is complete
 
-- [ ] T003 Implement vault-relative path resolve in `scripts/wiki`: zero args = whole vault; several args = union; unknown or out-of-vault path → stdout `{"error":"<message>","status":"error"}` exit 2, no scan, no fuzzy match (`tools/wiki_ops/cli.py` `configured_vault` / `emit_error`)
-- [ ] T004 [P] Extend `scripts/efficiency-trace.py` `validate_record` to accept `record_kind: command` with fields `schema_version`, `command` (`lint` \| `query` \| `health`), `duration_ms`, `cache_hits`, `cache_misses`, `vale_skipped`, `exit`, `timestamp`; sitting `report`/`promote` ignore command rows; implement append + stdout `timing` (`command`, `duration_ms`, `cache` when lint/health) in `tools/wiki_ops/timing.py` (append failure must not change wiki exit code)
-- [ ] T005 Add argparse in `scripts/wiki` for `lint|query|health`, flags `--pretty --json --full --hard --all --no-vale --no-template`, `--collection`/`-n` on query; `--json` ignored; default stdout one compact JSON object via `emit_json` (`sort_keys=True`, no indent); exit 0/1/2 per `specs/027-wiki-agent-cli/contracts/wiki-cli.md`
+- [X] T003 Implement vault-relative path resolve in `scripts/wiki`: zero args = whole vault; several args = union; unknown or out-of-vault path → stdout `{"error":"<message>","status":"error"}` exit 2, no scan, no fuzzy match (`tools/wiki_ops/cli.py` `configured_vault` / `emit_error`)
+- [X] T004 [P] Extend `scripts/efficiency-trace.py` `validate_record` to accept `record_kind: command` with fields `schema_version`, `command` (`lint` \| `query` \| `health`), `duration_ms`, `cache_hits`, `cache_misses`, `vale_skipped`, `exit`, `timestamp`; sitting `report`/`promote` ignore command rows; implement append + stdout `timing` (`command`, `duration_ms`, `cache` when lint/health) in `tools/wiki_ops/timing.py` (append failure must not change wiki exit code)
+- [X] T005 Add argparse in `scripts/wiki` for `lint|query|health`, flags `--pretty --json --full --hard --all --no-vale --no-template`, `--collection`/`-n` on query; `--json` ignored; default stdout one compact JSON object via `emit_json` (`sort_keys=True`, no indent); exit 0/1/2 per `specs/027-wiki-agent-cli/contracts/wiki-cli.md`
 
 **Checkpoint**: `scripts/wiki lint nosuch` exits 2 with `status=error`. Timing helper exists.
 
@@ -55,9 +55,9 @@ Repo root: `scripts/wiki`, `tools/wiki_ops/`, `tests/test_wiki_cli.py`
 
 ### Implementation for User Story 1
 
-- [ ] T006 [US1] Implement lint summary + dump in `tools/wiki_ops/worklist.py`: required keys `status` (`clean` \| `findings` \| `error`), `counts`, `hard_fail`, `unique` (already-deduped targets per rule), `backlog` (`page`, `findings`, `bytes`; sort bytes then path), `next_page` (`backlog[0].page` or null), `cache`, `files_checked`, `scope` (`paths`; `[]` = whole vault), `files` (array of `{file, findings}` in argument/path order; omit zero-finding groups); each finding `{rule, file, line, severity, message}` with 1-based `line`; MUST NOT contain nested per-rule finding maps; compose existing `tools/lint_wiki.py` (Vale included unless `--no-vale`)
-- [ ] T007 [US1] Wire `lint` in `scripts/wiki` to `worklist.py` + `timing.py`: `--full` accepted and MUST NOT add or remove keys; `--hard` default; two named files → two `files` entries when both have findings
-- [ ] T008 [US1] Add pytest in `tests/test_wiki_cli.py` for prefix dump, two-file `files` blocks, `--full` no-op, unknown path <1s exit 2, no nested per-rule maps, `timing.command == "lint"`
+- [X] T006 [US1] Implement lint summary + dump in `tools/wiki_ops/worklist.py`: required keys `status` (`clean` \| `findings` \| `error`), `counts`, `hard_fail`, `unique` (already-deduped targets per rule), `backlog` (`page`, `findings`, `bytes`; sort bytes then path), `next_page` (`backlog[0].page` or null), `cache`, `files_checked`, `scope` (`paths`; `[]` = whole vault), `files` (array of `{file, findings}` in argument/path order; omit zero-finding groups); each finding `{rule, file, line, severity, message}` with 1-based `line`; MUST NOT contain nested per-rule finding maps; compose existing `tools/lint_wiki.py` (Vale included unless `--no-vale`)
+- [X] T007 [US1] Wire `lint` in `scripts/wiki` to `worklist.py` + `timing.py`: `--full` accepted and MUST NOT add or remove keys; `--hard` default; two named files → two `files` entries when both have findings
+- [X] T008 [US1] Add pytest in `tests/test_wiki_cli.py` for prefix dump, two-file `files` blocks, `--full` no-op, unknown path <1s exit 2, no nested per-rule maps, `timing.command == "lint"`
 
 **Checkpoint**: `scripts/wiki lint entities/npc` dumps per-file findings. MVP.
 
@@ -71,9 +71,9 @@ Repo root: `scripts/wiki`, `tools/wiki_ops/`, `tests/test_wiki_cli.py`
 
 ### Implementation for User Story 2
 
-- [ ] T009 [US2] Implement `$VAULT/_meta/lint-cache.json` in `tools/wiki_ops/lint_cache.py`: key = content sha256 of file bytes + `config_digest`; hit reuses `extracts` and `results`; miss on hash change, config change, or new path; drop deleted paths; rebuild corpus facts from current path set + extracts
-- [ ] T010 [US2] Wire cache into `tools/wiki_ops/worklist.py` and `scripts/wiki` lint; populate `cache.hits`, `cache.misses`, `cache.vale_skipped`
-- [ ] T011 [US2] Add pytest in `tests/test_wiki_cli.py` for second-run hits, byte-change miss, config-digest miss
+- [X] T009 [US2] Implement `$VAULT/_meta/lint-cache.json` in `tools/wiki_ops/lint_cache.py`: key = content sha256 of file bytes + `config_digest`; hit reuses `extracts` and `results`; miss on hash change, config change, or new path; drop deleted paths; rebuild corpus facts from current path set + extracts
+- [X] T010 [US2] Wire cache into `tools/wiki_ops/worklist.py` and `scripts/wiki` lint; populate `cache.hits`, `cache.misses`, `cache.vale_skipped`
+- [X] T011 [US2] Add pytest in `tests/test_wiki_cli.py` for second-run hits, byte-change miss, config-digest miss
 
 **Checkpoint**: Second identical lint skips Vale on cached pages.
 
@@ -87,8 +87,8 @@ Repo root: `scripts/wiki`, `tools/wiki_ops/`, `tests/test_wiki_cli.py`
 
 ### Implementation for User Story 3
 
-- [ ] T012 [US3] Implement `query` in `scripts/wiki`: run `env -u CI qmd query <phrase> -c <collection> -n <cap> --format json`; default collection `wiki`, cap 10; stdout `{status, collection, hits, timing}` where `hits` is `{title, path, id}[]` (no snippets); backend missing/failing → `status=error` exit 2, no invented hits
-- [ ] T013 [US3] Add pytest in `tests/test_wiki_cli.py` for compact hits (mocked qmd) and backend-failure exit 2
+- [X] T012 [US3] Implement `query` in `scripts/wiki`: run `env -u CI qmd query <phrase> -c <collection> -n <cap> --format json`; default collection `wiki`, cap 10; stdout `{status, collection, hits, timing}` where `hits` is `{title, path, id}[]` (no snippets); backend missing/failing → `status=error` exit 2, no invented hits
+- [X] T013 [US3] Add pytest in `tests/test_wiki_cli.py` for compact hits (mocked qmd) and backend-failure exit 2
 
 **Checkpoint**: Query works with `CI=true`. Independent of lint dump.
 
@@ -102,9 +102,9 @@ Repo root: `scripts/wiki`, `tools/wiki_ops/`, `tests/test_wiki_cli.py`
 
 ### Implementation for User Story 4
 
-- [ ] T014 [US4] Implement snapshot in `tools/wiki_ops/health.py`: live lint **summary** (same cache, **no `files` dump**); `pages`, `bytes`, `tokens` (tiktoken via `scripts/token-count.py`); Layer A `waste` (`hits`, `hard_hits`), `staging.leftover_count`, `remorph` (`plan_count`, `skip_count`, `error_count`), `policy` (`ok`, `conflict_count`); `trends.sittings`, `trends.skills` (usage names cap 5, not evals), `trends.errors` (open only, causes cap 3), `trends.efficiency` sitting subset, `trends.slowest_commands` cap 3 from `record_kind=command`, `trends.token_heaviest` cap 3 (`tokens` = sum of trajectory fields); `focus` ordered cap 5 (`path`, `reason`, `source` `lint` \| `remorph` \| `layout` \| `tracker`); `next` is `focus[0]` or null; MUST NOT include skill-eval pass/fail, missing-skill inventories, raw traces, or per-step essays; missing trackers → zero/empty trends, not exit 2
-- [ ] T015 [US4] Wire `health` in `scripts/wiki` and make `scripts/wiki-maintain --report` emit the identical snapshot; path args scope `pages`/`bytes`/`tokens`/`lint`/`focus`; `trends` always whole-tracker
-- [ ] T016 [US4] Add pytest in `tests/test_wiki_cli.py` for alias equality, no `files` dump, empty-tracker zeros, `len(focus) <= 5`, `next is focus[0] or None`, slowest-command rank after two timed runs, token-heaviest from a sitting fixture, no skill-eval keys
+- [X] T014 [US4] Implement snapshot in `tools/wiki_ops/health.py`: live lint **summary** (same cache, **no `files` dump**); `pages`, `bytes`, `tokens` (tiktoken via `scripts/token-count.py`); Layer A `waste` (`hits`, `hard_hits`), `staging.leftover_count`, `remorph` (`plan_count`, `skip_count`, `error_count`), `policy` (`ok`, `conflict_count`); `trends.sittings`, `trends.skills` (usage names cap 5, not evals), `trends.errors` (open only, causes cap 3), `trends.efficiency` sitting subset, `trends.slowest_commands` cap 3 from `record_kind=command`, `trends.token_heaviest` cap 3 (`tokens` = sum of trajectory fields); `focus` ordered cap 5 (`path`, `reason`, `source` `lint` \| `remorph` \| `layout` \| `tracker`); `next` is `focus[0]` or null; MUST NOT include skill-eval pass/fail, missing-skill inventories, raw traces, or per-step essays; missing trackers → zero/empty trends, not exit 2
+- [X] T015 [US4] Wire `health` in `scripts/wiki` and make `scripts/wiki-maintain --report` emit the identical snapshot; path args scope `pages`/`bytes`/`tokens`/`lint`/`focus`; `trends` always whole-tracker
+- [X] T016 [US4] Add pytest in `tests/test_wiki_cli.py` for alias equality, no `files` dump, empty-tracker zeros, `len(focus) <= 5`, `next is focus[0] or None`, slowest-command rank after two timed runs, token-heaviest from a sitting fixture, no skill-eval keys
 
 **Checkpoint**: Health is compact and actionable via `next`.
 
@@ -118,8 +118,8 @@ Repo root: `scripts/wiki`, `tools/wiki_ops/`, `tests/test_wiki_cli.py`
 
 ### Implementation for User Story 5
 
-- [ ] T017 [US5] Implement `--pretty` in `tools/wiki_ops/pretty.py` and `scripts/wiki`: lint scoreboard plus `file:line  RULE  message` grouped by file; query one line `path  title  id`; health scoreboard (pages, bytes, tokens, lint hard total, slowest command, token-heaviest sitting) then `next.path` and `focus` as `path  source  reason`; `--pretty --full` is the same human findings list; pretty usage errors one line on stderr exit 2; no `isatty()`
-- [ ] T018 [US5] Add pytest in `tests/test_wiki_cli.py` for default JSON vs `--pretty` text, `--pretty --full` same list, pretty error on stderr
+- [X] T017 [US5] Implement `--pretty` in `tools/wiki_ops/pretty.py` and `scripts/wiki`: lint scoreboard plus `file:line  RULE  message` grouped by file; query one line `path  title  id`; health scoreboard (pages, bytes, tokens, lint hard total, slowest command, token-heaviest sitting) then `next.path` and `focus` as `path  source  reason`; `--pretty --full` is the same human findings list; pretty usage errors one line on stderr exit 2; no `isatty()`
+- [X] T018 [US5] Add pytest in `tests/test_wiki_cli.py` for default JSON vs `--pretty` text, `--pretty --full` same list, pretty error on stderr
 
 **Checkpoint**: Default stays machine JSON.
 
@@ -129,10 +129,10 @@ Repo root: `scripts/wiki`, `tools/wiki_ops/`, `tests/test_wiki_cli.py`
 
 **Purpose**: FR-018 instruction retarget; quickstart; agent standards
 
-- [ ] T019 Replace structural lint/query/health examples with `scripts/wiki` in `.agents/skills/wiki-lint/SKILL.md`, `.agents/skills/wiki-lint/evals/evals.json`, `.agents/skills/wiki-query/SKILL.md` (synthesis stays; retrieval examples → `wiki query`), `.agents/skills/wiki-status/SKILL.md` if present, and standing examples in `AGENTS.md` / `.omp/AGENTS.md`: run `scripts/wiki health`, then act on `next` (then remaining `focus`) without a DM wait
-- [ ] T020 Run `.venv/bin/python scripts/check-agent-standards.py` until AGENT001–003 are green
-- [ ] T021 Run cold-context smol subject for SC-008 (names a finding line + `next_page`) and SC-009 (names `next.path`) per `specs/027-wiki-agent-cli/quickstart.md` V-008/V-009
-- [ ] T022 Run `.venv/bin/python -m pytest tests/test_wiki_cli.py -q` and the runnable quickstart V-001–V-007, V-010 checks
+- [X] T019 Replace structural lint/query/health examples with `scripts/wiki` in `.agents/skills/wiki-lint/SKILL.md`, `.agents/skills/wiki-lint/evals/evals.json`, `.agents/skills/wiki-query/SKILL.md` (synthesis stays; retrieval examples → `wiki query`), `.agents/skills/wiki-status/SKILL.md` if present, and standing examples in `AGENTS.md` / `.omp/AGENTS.md`: run `scripts/wiki health`, then act on `next` (then remaining `focus`) without a DM wait
+- [X] T020 Run `.venv/bin/python scripts/check-agent-standards.py` until AGENT001–003 are green
+- [X] T021 Run cold-context smol subject for SC-008 (names a finding line + `next_page`) and SC-009 (names `next.path`) per `specs/027-wiki-agent-cli/quickstart.md` V-008/V-009
+- [X] T022 Run `.venv/bin/python -m pytest tests/test_wiki_cli.py -q` and the runnable quickstart V-001–V-007, V-010 checks
 
 ---
 

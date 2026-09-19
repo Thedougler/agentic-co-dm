@@ -3,10 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import contextlib
-import importlib.machinery
-import importlib.util
-import io
 import json
 import os
 import subprocess
@@ -22,17 +18,28 @@ from tools.wiki_ops.cli import configured_vault, emit_json, resolve_vault
 from tools.wiki_ops.health import build_focus, build_health_snapshot, build_trends
 from tools.wiki_ops.lint_cache import digest_config, file_sha256, load_cache, save_cache
 from tools.wiki_ops.pretty import render_health, render_lint, render_query, render_usage_error
+from tools.wiki_ops.timing import append_command_record, elapsed_ms, now_ms, timing_payload
 from tools.wiki_ops.worklist import DEFAULT_HARD_KEYS, build_worklist
 
 SKIP_DIRS = frozenset({".obsidian", "_archive", "_archives", "_raw", "_readouts", "_meta", "templates", "attachments"})
 HARD_SEVERITIES = frozenset({"BLOCK", "REPAIR", "ERROR", "HARD"})
 
 
+def _trace_path() -> Path | None:
+    raw = os.environ.get("WIKI_EFFICIENCY_TRACE")
+    return Path(raw) if raw else None
+
+
+def _tracker_root() -> Path:
+    raw = os.environ.get("WIKI_TRACKER_ROOT")
+    return Path(raw) if raw else ROOT
+
+
 def _machine_error(message: str, *, pretty: bool = False) -> int:
     if pretty:
         print(render_usage_error(message), file=sys.stderr)
     else:
-        emit_json({"status": "error", "error": message})
+        emit_json({"error": message, "status": "error"})
     return 2
 
 
@@ -46,7 +53,8 @@ def _live_files(vault: Path) -> list[Path]:
 def _resolve_paths(vault: Path, values: list[str]) -> list[str]:
     if not values:
         return [path.relative_to(vault).as_posix() for path in _live_files(vault)]
-    selected: set[str] = set()
+    ordered: list[str] = []
+    seen: set[str] = set()
     root = vault.resolve()
     for raw in values:
         candidate_input = Path(raw)
@@ -64,16 +72,22 @@ def _resolve_paths(vault: Path, values: list[str]) -> list[str]:
         if candidate.is_file():
             if candidate.suffix.casefold() != ".md":
                 raise ValueError(f"path must be a Markdown file: {raw!r}")
-            selected.add(candidate.relative_to(root).as_posix())
+            relative = candidate.relative_to(root).as_posix()
+            if relative not in seen:
+                seen.add(relative)
+                ordered.append(relative)
         elif candidate.is_dir():
-            selected.update(
-                path.relative_to(root).as_posix()
-                for path in candidate.rglob("*.md")
-                if path.is_file() and not SKIP_DIRS.intersection(path.relative_to(root).parts)
-            )
+            for path in sorted(
+                child for child in candidate.rglob("*.md")
+                if child.is_file() and not SKIP_DIRS.intersection(child.relative_to(root).parts)
+            ):
+                relative = path.relative_to(root).as_posix()
+                if relative not in seen:
+                    seen.add(relative)
+                    ordered.append(relative)
         else:
             raise ValueError(f"path is not a file or directory: {raw!r}")
-    return sorted(selected)
+    return ordered
 
 
 def _finding(rule: str, item: Any, vault: Path) -> dict[str, Any] | None:
@@ -91,17 +105,17 @@ def _finding(rule: str, item: Any, vault: Path) -> dict[str, Any] | None:
             raw_file = path.as_posix()
     else:
         raw_file = path.as_posix()
-    line = item.get("line") or location.get("line") or 1
     try:
-        line = max(1, int(line))
+        line = max(1, int(item.get("line") or location.get("line") or 1))
     except (TypeError, ValueError):
         line = 1
-    severity = str(item.get("severity") or item.get("level") or "WARN")
-    message = str(item.get("message") or item.get("reason") or item.get("text") or "")
-    result = {"rule": str(rule), "file": raw_file, "line": line, "severity": severity, "message": message}
-    if "hard_fail" in item:
-        result["hard_fail"] = bool(item["hard_fail"])
-    return result
+    return {
+        "rule": str(rule),
+        "file": raw_file,
+        "line": line,
+        "severity": str(item.get("severity") or item.get("level") or "WARN"),
+        "message": str(item.get("message") or item.get("reason") or item.get("text") or ""),
+    }
 
 
 def _flatten(report: dict[str, Any], vault: Path) -> list[dict[str, Any]]:
@@ -126,17 +140,14 @@ def _flatten(report: dict[str, Any], vault: Path) -> list[dict[str, Any]]:
     return flattened
 
 
-def _run_structural(
-    vault: Path, relative: str | list[str], args: argparse.Namespace
-) -> dict[str, Any]:
-    selected = relative if isinstance(relative, str) else ",".join(relative)
+def _run_structural(vault: Path, relative: list[str], args: argparse.Namespace) -> dict[str, Any]:
     command = [
         sys.executable,
         str(ROOT / "scripts/wiki-lint"),
         "--json",
         str(vault),
         "--scope",
-        f"files:{selected}",
+        "files:" + ",".join(relative),
     ]
     if args.all:
         command.append("--all")
@@ -146,13 +157,14 @@ def _run_structural(
         command.append("--no-template")
     proc = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
     if proc.returncode not in (0, 1, 2):
-        detail = proc.stderr.strip() or f"lint checker exited {proc.returncode}"
-        raise RuntimeError(detail)
+        raise RuntimeError(proc.stderr.strip() or f"lint checker exited {proc.returncode}")
     try:
         return json.loads(proc.stdout)
     except json.JSONDecodeError as exc:
         detail = proc.stderr.strip() or f"lint checker exited {proc.returncode}"
         raise RuntimeError(f"{detail}: {exc}") from exc
+
+
 def _group_findings(findings: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
     grouped: dict[str, list[dict[str, Any]]] = {}
     for finding in findings:
@@ -174,11 +186,21 @@ def _cached_findings(value: Any) -> list[dict[str, Any]]:
     return []
 
 
+def _config_digest(vault: Path, args: argparse.Namespace) -> str:
+    files: dict[str, str] = {}
+    for path in (ROOT / ".vale.ini", ROOT / ".vale.yaml", vault / "AGENTS.md"):
+        if path.is_file():
+            files[str(path)] = file_sha256(path)
+    contracts = ROOT / "wiki" / "templates" / "contracts"
+    if contracts.is_dir():
+        for child in sorted(contracts.glob("*.yml")):
+            files[child.as_posix()] = file_sha256(child)
+    return digest_config({"all": args.all, "vale": args.vale, "template": args.template, "files": files})
 
-def _lint(args: argparse.Namespace, vault: Path) -> int:
+
+def _compute_lint(args: argparse.Namespace, vault: Path) -> tuple[dict[str, Any], int]:
     paths = _resolve_paths(vault, args.paths)
-    digest_input = {"all": args.all, "vale": args.vale, "template": args.template}
-    digest = digest_config(digest_input)
+    digest = _config_digest(vault, args)
     cache = load_cache(vault)
     entries = cache.get("entries") if isinstance(cache.get("entries"), dict) else {}
     findings: list[dict[str, Any]] = []
@@ -193,8 +215,7 @@ def _lint(args: argparse.Namespace, vault: Path) -> int:
             and cached.get("content_sha256") == digest_value
             and cached.get("config_digest") == digest
         ):
-            cached_results = _cached_findings(cached.get("results"))
-            findings.extend(cached_results)
+            findings.extend(_cached_findings(cached.get("results")))
             hits += 1
             if args.vale:
                 vale_skipped += 1
@@ -221,79 +242,119 @@ def _lint(args: argparse.Namespace, vault: Path) -> int:
             misses += 1
 
     current_set = set(paths)
-    entries = {
-        key: value
-        for key, value in entries.items()
-        if key in current_set and isinstance(value, dict)
-    }
+    entries = {key: value for key, value in entries.items() if key in current_set and isinstance(value, dict)}
     save_cache(vault, {"config_digest": digest, "entries": entries})
-    include_findings = args.full or (
-        len(args.paths) == 1 and (vault / args.paths[0]).is_file()
-    )
     hard_rule_set = hard_keys or set(DEFAULT_HARD_KEYS)
     visible = findings if args.all else [
         item
         for item in findings
-        if item.get("rule") in hard_rule_set
-        or str(item.get("severity", "")).upper() in HARD_SEVERITIES
+        if item.get("rule") in hard_rule_set or str(item.get("severity", "")).upper() in HARD_SEVERITIES
     ]
+    page_bytes = {relative: (vault / relative).stat().st_size for relative in paths if (vault / relative).is_file()}
     result = build_worklist(
         visible,
         files_checked=len(paths),
         scope={"paths": list(args.paths)},
         cache={"hits": hits, "misses": misses, "vale_skipped": vale_skipped},
         hard_keys=hard_rule_set,
-        include_findings=False,
         vault=vault,
+        page_bytes=page_bytes,
+        file_order=paths,
     )
-    if include_findings:
-        result["findings"] = findings
-    if args.pretty:
-        print(render_lint(result))
+    code = 1 if (bool(result.get("counts")) if args.all else bool(result.get("hard_fail"))) else 0
+    return result, code
+
+
+def _finish(
+    command: str,
+    start: float,
+    code: int,
+    result: dict[str, Any],
+    *,
+    pretty: bool,
+    renderer,
+    cache: dict[str, Any] | None = None,
+) -> int:
+    duration = max(0, elapsed_ms(start))
+    if result.get("status") != "error":
+        result["timing"] = timing_payload(command, duration, cache)
+    append_command_record(command, duration, code, cache, trace_path=_trace_path())
+    if pretty:
+        print(renderer(result))
     else:
         emit_json(result)
-    return 1 if (bool(result.get("counts")) if args.all else bool(result.get("hard_fail"))) else 0
+    return code
 
 
-def _query(args: argparse.Namespace) -> int:
+def _lint(args: argparse.Namespace, vault: Path, start: float) -> int:
+    result, code = _compute_lint(args, vault)
+    return _finish("lint", start, code, result, pretty=args.pretty, renderer=render_lint, cache=result.get("cache"))
+
+
+def _query(args: argparse.Namespace, start: float) -> int:
     environment = os.environ.copy()
     environment.pop("CI", None)
     command = ["qmd", "query", args.phrase, "-c", args.collection, "-n", str(args.count), "--format", "json"]
     proc = subprocess.run(command, cwd=ROOT, env=environment, capture_output=True, text=True)
     if proc.returncode:
-        return _machine_error(proc.stderr.strip() or "qmd query failed", pretty=args.pretty)
+        code = _machine_error(proc.stderr.strip() or "qmd query failed", pretty=args.pretty)
+        append_command_record("query", max(0, elapsed_ms(start)), code, trace_path=_trace_path())
+        return code
     try:
         raw = json.loads(proc.stdout or "[]")
     except json.JSONDecodeError as exc:
-        return _machine_error(f"qmd returned invalid JSON: {exc}", pretty=args.pretty)
+        code = _machine_error(f"qmd returned invalid JSON: {exc}", pretty=args.pretty)
+        append_command_record("query", max(0, elapsed_ms(start)), code, trace_path=_trace_path())
+        return code
     rows = raw.get("results", raw.get("hits", raw)) if isinstance(raw, dict) else raw
     hits = []
     for item in rows if isinstance(rows, list) else []:
         if not isinstance(item, dict):
             continue
-        path = item.get("path") or item.get("filepath") or item.get("file") or item.get("url") or ""
-        path = str(path)
+        path = str(item.get("path") or item.get("filepath") or item.get("file") or item.get("url") or "")
         if path.startswith("qmd://"):
             path = path.split("qmd://", 1)[1]
-        hits.append({"title": str(item.get("title") or Path(path).stem), "path": path, "id": str(item.get("id") or item.get("docid") or item.get("source") or "")})
+        hits.append({
+            "title": str(item.get("title") or Path(path).stem),
+            "path": path,
+            "id": str(item.get("id") or item.get("docid") or item.get("source") or ""),
+        })
     result = {"status": "ok", "collection": args.collection, "hits": hits[: args.count]}
-    if args.pretty:
-        print(render_query(result))
-    else:
-        emit_json(result)
-    return 0
+    return _finish("query", start, 0, result, pretty=args.pretty, renderer=render_query)
 
 
-def _run_json(command: list[str], vault: Path) -> dict[str, Any]:
-    proc = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
+def _run_json(command: list[str], cwd: Path) -> Any:
+    proc = subprocess.run(command, cwd=cwd, capture_output=True, text=True)
     try:
-        value = json.loads(proc.stdout or "{}")
+        return json.loads(proc.stdout or "null")
     except json.JSONDecodeError:
-        value = {}
-    return value if isinstance(value, dict) else {}
+        return None
+
+
+def _load_jsonl(path: Path) -> list[dict[str, Any]]:
+    if not path.is_file():
+        return []
+    rows: list[dict[str, Any]] = []
+    try:
+        lines = path.read_text(encoding="utf-8").splitlines()
+    except OSError:
+        return []
+    for line in lines:
+        if not line.strip():
+            continue
+        try:
+            value = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if isinstance(value, dict):
+            rows.append(value)
+    return rows
 
 
 def _load_maintenance_module():
+    import importlib.machinery
+    import importlib.util
+
     path = str(ROOT / "scripts/wiki-maintain")
     loader = importlib.machinery.SourceFileLoader("wiki_maintain", path)
     spec = importlib.util.spec_from_loader(loader.name, loader)
@@ -304,68 +365,69 @@ def _load_maintenance_module():
     return module
 
 
-def _health(args: argparse.Namespace, vault: Path) -> int:
-    paths = _resolve_paths(vault, args.paths)
+def _tokens(vault: Path, paths: list[str], args: argparse.Namespace) -> int | None:
+    command = [sys.executable, str(ROOT / "scripts/token-count.py")]
+    if not args.paths:
+        command.extend(["--sum", str(vault)])
+    else:
+        command.extend(str(vault / relative) if not Path(relative).is_absolute() else relative for relative in args.paths)
+    payload = _run_json(command, ROOT)
+    if not isinstance(payload, dict):
+        return None
+    if payload.get("total_tokens") is not None:
+        try:
+            return int(payload["total_tokens"])
+        except (TypeError, ValueError):
+            return None
+    files = payload.get("files")
+    if isinstance(files, list):
+        return sum(int(item.get("tokens") or 0) for item in files if isinstance(item, dict))
+    return None
+
+
+def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
     lint_args = argparse.Namespace(
         paths=args.paths, all=False, vale=True, template=True, hard=True, pretty=False, full=False
     )
-    output = io.StringIO()
-    with contextlib.redirect_stdout(output):
-        lint_code = _lint(lint_args, vault)
-    try:
-        lint = json.loads(output.getvalue())
-    except json.JSONDecodeError as exc:
-        raise RuntimeError(f"lint produced invalid JSON: {exc}") from exc
-
+    lint, lint_code = _compute_lint(lint_args, vault)
+    paths = _resolve_paths(vault, args.paths)
+    pages = [vault / relative for relative in paths]
+    bytes_total = sum(path.stat().st_size for path in pages if path.is_file())
     maintenance = _load_maintenance_module()
     a2 = maintenance.step_context_waste(str(vault), ROOT)
     a5 = maintenance.step_raw_empty(str(vault), ROOT)
     a6 = maintenance.step_a6_dry_run_plans(str(vault), ROOT)
     policy = maintenance.step_policy_conflicts(ROOT)
-    waste = a2.get("metric") or {"hits": 0, "hard_hits": 0}
-    staging = a5.get("metric") or {"leftover_count": 0}
-    remorph = a6.get("metric") or {"plan_count": 0, "skip_count": 0, "error_count": 0}
-    policy_data = {
-        "ok": bool(policy.get("ok", True)),
-        "conflict_count": len(policy.get("conflicts") or []),
-    }
+    tracker = _tracker_root()
     sittings = _run_json(
-        [sys.executable, str(ROOT / "scripts/error-ledger.py"), "--root", str(ROOT), "--format", "json", "sitting", "list"],
-        ROOT,
+        [sys.executable, str(ROOT / "scripts/error-ledger.py"), "--root", str(tracker), "--format", "json", "sitting", "list"],
+        tracker if tracker.exists() else ROOT,
     )
     errors = _run_json(
-        [sys.executable, str(ROOT / "scripts/error-ledger.py"), "--root", str(ROOT), "--format", "json", "error", "list"],
-        ROOT,
+        [sys.executable, str(ROOT / "scripts/error-ledger.py"), "--root", str(tracker), "--format", "json", "error", "list"],
+        tracker if tracker.exists() else ROOT,
     )
-    efficiency = _run_json(
-        [sys.executable, str(ROOT / "scripts/efficiency-trace.py"), "report"], ROOT
-    )
-    trends = build_trends(sittings, errors, efficiency)
-    focus = build_focus(lint, cap=5)
-    pages = [vault / relative for relative in paths]
-    bytes_total = sum(path.stat().st_size for path in pages if path.is_file())
-    token_result = _run_json([sys.executable, str(ROOT / "scripts/token-count.py"), "--sum", str(vault)], ROOT)
-    tokens = token_result.get("total_tokens")
-    if tokens is None and isinstance(token_result.get("files"), list):
-        tokens = sum(int(item.get("tokens") or 0) for item in token_result["files"] if isinstance(item, dict))
+    traces = _load_jsonl(_trace_path() or (ROOT / ".local/efficiency/traces.jsonl"))
+    trends = build_trends(sittings if sittings is not None else [], errors if errors is not None else [], traces)
+    focus = build_focus(lint, remorph=a6, open_errors=errors, cap=5)
     result = build_health_snapshot(
         status="findings" if lint.get("status") == "findings" else "clean",
         pages=len(pages),
         bytes=bytes_total,
-        tokens=tokens,
+        tokens=_tokens(vault, paths, args),
         lint=lint,
-        waste=waste,
-        staging=staging,
-        remorph=remorph,
-        policy=policy_data,
+        waste=a2.get("metric") if isinstance(a2, dict) else a2,
+        staging=a5.get("metric") if isinstance(a5, dict) else a5,
+        remorph=a6.get("metric") if isinstance(a6, dict) else a6,
+        policy={
+            "ok": bool(policy.get("ok", True)) if isinstance(policy, dict) else True,
+            "conflict_count": len((policy or {}).get("conflicts") or []) if isinstance(policy, dict) else 0,
+        },
         trends=trends,
         focus=focus,
     )
-    if args.pretty:
-        print(render_health(result))
-    else:
-        emit_json(result)
-    return 1 if lint_code else 0
+    cache = result.get("lint", {}).get("cache") if isinstance(result.get("lint"), dict) else lint.get("cache")
+    return _finish("health", start, 1 if lint_code else 0, result, pretty=args.pretty, renderer=render_health, cache=cache)
 
 
 def parser() -> argparse.ArgumentParser:
@@ -395,15 +457,18 @@ def parser() -> argparse.ArgumentParser:
 
 def main(argv: list[str] | None = None) -> int:
     args = parser().parse_args(argv)
+    start = now_ms()
     try:
+        if args.command == "query":
+            return _query(args, start)
         vault = resolve_vault(configured_vault())
         if args.command == "lint":
-            return _lint(args, vault)
-        if args.command == "query":
-            return _query(args)
-        return _health(args, vault)
+            return _lint(args, vault, start)
+        return _health(args, vault, start)
     except (OSError, ValueError, RuntimeError) as exc:
-        return _machine_error(str(exc), pretty=getattr(args, "pretty", False))
+        code = _machine_error(str(exc), pretty=getattr(args, "pretty", False))
+        append_command_record(getattr(args, "command", "lint"), max(0, elapsed_ms(start)), code, trace_path=_trace_path())
+        return code
 
 
 if __name__ == "__main__":

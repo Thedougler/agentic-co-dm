@@ -17,19 +17,26 @@ def render_lint(result: Mapping[str, Any]) -> str:
     lines = [
         "Lint: " + str(_value(result, "status", "unknown")),
         "Counts: " + (" ".join(f"{k}={counts[k]}" for k in sorted(counts)) or "none"),
-        f"Hard fail: {bool(_value(result, 'hard_fail', False))}",
         f"Next page: {_value(result, 'next_page', None) or 'none'}",
-        "Cache: " + " ".join(f"{k}={cache[k]}" for k in ("hits", "misses", "vale_skipped") if k in cache),
+        "Cache: " + " ".join(
+            f"{key}={_value(cache, key, 0)}" for key in ("hits", "misses", "vale_skipped")
+        ),
     ]
-    findings = _value(result, "findings", ())
-    if findings:
-        lines.append("")
-        for finding in findings:
-            file = str(_value(finding, "file", ""))
+    groups = _value(result, "files", ())
+    if not groups:
+        groups = ({"file": _value(finding, "file", ""), "findings": (finding,)} for finding in _value(result, "findings", ()))
+    findings = []
+    for group in groups:
+        group_file = str(_value(group, "file", ""))
+        for finding in _value(group, "findings", ()):
+            file = str(_value(finding, "file", group_file))
             line = _value(finding, "line", "")
             rule = str(_value(finding, "rule", ""))
             message = str(_value(finding, "message", ""))
-            lines.append(f"{file}:{line}  {rule}  {message}")
+            findings.append(f"{file}:{line}  {rule}  {message}")
+    if findings:
+        lines.append("")
+        lines.extend(findings)
     return "\n".join(lines)
 
 
@@ -44,16 +51,22 @@ def render_query(result: Mapping[str, Any]) -> str:
 def render_health(result: Mapping[str, Any]) -> str:
     """Render the short health scoreboard and ordered focus queue."""
     lint = _value(result, "lint", {})
+    lint_counts = _value(lint, "counts", {})
+    hard = sum(v for k, v in lint_counts.items() if str(k).lower() in {"hard", "error"})
+    if not hard:
+        hard_value = _value(lint, "hard_fail", 0)
+        hard = sum(hard_value.values()) if isinstance(hard_value, Mapping) else int(hard_value or 0)
+    trends = _value(result, "trends", {})
+    slowest = _value(trends, "slowest_commands", ())
+    heaviest = _value(trends, "token_heaviest", ())
     lines = [
         "Health: " + str(_value(result, "status", "unknown")),
         "Metrics: " + " ".join(
             f"{key}={_value(result, key, 'n/a')}" for key in ("pages", "bytes", "tokens")
-        ) + f" lint_hard={sum(_value(lint, 'counts', {}).get(k, 0) for k in ('hard', 'HARD', 'error', 'ERROR'))}",
+        ) + f" lint_hard={hard}",
+        f"Slowest: {slowest[0] if slowest else 'none'}",
+        f"Token-heaviest: {heaviest[0] if heaviest else 'none'}",
     ]
-    for section, label in (("waste", "waste"), ("staging", "staging"), ("remorph", "remorph"), ("policy", "policy")):
-        values = _value(result, section, {})
-        if values:
-            lines.append(label + ": " + " ".join(f"{k}={values[k]}" for k in sorted(values)))
     nxt = _value(result, "next", None)
     lines.append("Next: " + (str(_value(nxt, "path", "")) if isinstance(nxt, Mapping) else (str(nxt) if nxt else "none")))
     focus = _value(result, "focus", ())
@@ -61,6 +74,8 @@ def render_health(result: Mapping[str, Any]) -> str:
         lines.append("Focus:")
         lines.extend(f"{_value(item, 'path', '')}  {_value(item, 'source', '')}  {_value(item, 'reason', '')}" for item in focus)
     return "\n".join(lines)
+
+
 
 
 def render_usage_error(message: str) -> str:

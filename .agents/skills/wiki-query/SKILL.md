@@ -120,7 +120,8 @@ Use collection `wiki` when `$QMD_WIKI_COLLECTION` is empty or unset after config
 
 > **No QMD?** Skip to Step 3 and use `Grep` directly on the vault. QMD is faster and concept-aware but the grep path is fully functional. See `.env.example` for setup.
 
-Run QMD before reaching for `Grep` unless the question is already fully answered by `hot.md` or `index.md` metadata. QMD is especially preferred when the question is semantic, project-specific, asks for related context, or uses terms that may not appear verbatim in titles/frontmatter.
+Public retrieval CLI: `scripts/wiki query "<phrase>"` returns compact `title` / `path` / `id` hits. Synthesis in this skill still uses the transport below.
+
 
 Choose the QMD transport from `$QMD_TRANSPORT`:
 

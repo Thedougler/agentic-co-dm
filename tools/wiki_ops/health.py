@@ -264,14 +264,62 @@ def _efficiency_trends(efficiency: TrackerInput) -> dict[str, Any]:
     }
 
 
+def _efficiency_detail(efficiency: TrackerInput) -> tuple[list[Mapping[str, Any]], list[Mapping[str, Any]]]:
+    """Return command and sitting rows, excluding aggregate report summaries."""
+    if isinstance(efficiency, Mapping):
+        if isinstance(efficiency.get("records"), int):
+            return [], []
+        rows = _rows(efficiency, ("records", "traces", "items"))
+    else:
+        rows = _rows(efficiency, ("records", "traces", "items"))
+    commands: list[Mapping[str, Any]] = []
+    sittings: list[Mapping[str, Any]] = []
+    known_commands = {"lint", "query", "health"}
+    for row in rows:
+        command = row.get("command")
+        if row.get("record_kind") == "command" or (
+            command in known_commands and "sitting_class" not in row
+        ):
+            commands.append(row)
+        elif row.get("record_kind") == "sitting" or "sitting_class" in row or "kind" in row:
+            sittings.append(row)
+    return commands, sittings
+
+
 def build_trends(sittings: TrackerInput, errors: TrackerInput, efficiency: TrackerInput) -> dict[str, Any]:
     """Aggregate retained sitting, error, and efficiency tracker records."""
     sitting, skills = _sitting_trends(sittings)
+    commands, efficiency_sittings = _efficiency_detail(efficiency)
+    command_groups: dict[str, list[int]] = {}
+    for row in commands:
+        command = row.get("command")
+        if isinstance(command, str) and command:
+            command_groups.setdefault(command, []).append(_int(row.get("duration_ms")))
+    slowest = [
+        {"command": command, "duration_ms": max(durations), "n": len(durations)}
+        for command, durations in command_groups.items()
+    ]
+    slowest.sort(key=lambda row: row["duration_ms"], reverse=True)
+    token_groups: dict[tuple[str, str], int] = {}
+    for row in efficiency_sittings:
+        sitting_class = row.get("sitting_class", row.get("kind", "unspecified"))
+        job = row.get("job", "unspecified")
+        key = (str(sitting_class), str(job))
+        token_groups[key] = token_groups.get(key, 0) + _trajectory_tokens(row)
+    token_heaviest = [
+        {"sitting_class": sitting_class, "job": job, "tokens": tokens}
+        for (sitting_class, job), tokens in token_groups.items()
+    ]
+    token_heaviest.sort(key=lambda row: row["tokens"], reverse=True)
     return {
         "sittings": sitting,
         "skills": skills,
         "errors": _error_trends(errors),
-        "efficiency": _efficiency_trends(efficiency),
+        "efficiency": _efficiency_trends(
+            efficiency if isinstance(efficiency, Mapping) and isinstance(efficiency.get("records"), int) else efficiency_sittings
+        ),
+        "slowest_commands": slowest[:3],
+        "token_heaviest": token_heaviest[:3],
     }
 
 
@@ -384,13 +432,11 @@ def build_focus(
     plans = _plan_items(remorph)
     for plan in plans:
         if not isinstance(plan, Mapping):
+            add(plan, None, "remorph", "remorph plan")
             continue
         add(plan.get("src"), plan.get("reason"), "remorph", "remorph plan")
-        nested = []
+        nested: list[Any] = []
         for key in (
-            "prefix",
-            "layout_prefix",
-            "remorph_prefix",
             "prefixes",
             "layout_prefixes",
             "remorph_prefixes",
@@ -435,10 +481,8 @@ def _compact_lint(lint: Any) -> dict[str, Any]:
     return {
         key: _clone(value)
         for key, value in lint.items()
-        if key not in {"findings", "findings_by_file", "cache"}
+        if key not in {"findings", "findings_by_file", "files"}
     }
-
-
 def _layer_object(value: Any, fields: Sequence[str]) -> dict[str, Any]:
     source: Mapping[str, Any] = value if isinstance(value, Mapping) else {}
     raw_metric = source.get("metric")
