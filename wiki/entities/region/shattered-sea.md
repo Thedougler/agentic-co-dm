@@ -89,6 +89,7 @@ A roughly 60,000-square-mile archipelago weeks beyond the last charted Faerûn c
 ## Who is here
 - [[dravosi-crown]], [[tessarine-concordat]], [[Passage]], [[grung-clans]], [[Waveservants]], [[sentinels-of-the-eyrie]], [[Countless]], Umberlee, and the crew.
 ## Connections
+- Campaign State hub: [[shattered-sea-overview]]
 - [[crown-islands]] · [[Midchain]] · [[central-strait]] · [[Galewall]] · [[drowned-maw]]
 ## Hooks
 - Follow the Grung trail from [[Uncertainty]] to [[Sparhold]] and [[aruhe]].
