@@ -1,0 +1,33 @@
+{
+  "eval_id": 11,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not make trusted-NPC betrayal the default",
+      "passed": false,
+      "evidence": "Every trusted NPC is a traitor by default."
+    },
+    {
+      "text": "Requires earlier facts players could notice or investigate",
+      "passed": false,
+      "evidence": "No prior tells required."
+    },
+    {
+      "text": "Gives characters meaningful responses after discovery",
+      "passed": false,
+      "evidence": "No meaningful response design."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 40000,
+    "total_duration_seconds": 40.0
+  },
+  "verify_note": "Post-#155 thin verify; with_skill followed SKILL.md + loaded references when instructed"
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 8,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Keeps the ally supportive, limited, and player-directed",
+      "passed": true,
+      "evidence": "Supportive, limited, player-directed."
+    },
+    {
+      "text": "Does not let the ally solve the central problem or monopolize decisions",
+      "passed": true,
+      "evidence": "Will not solve central problem / monopolize."
+    },
+    {
+      "text": "Gives the ally a want and cost rather than free competence",
+      "passed": true,
+      "evidence": "Want + cost stated."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 74000,
+    "total_duration_seconds": 74.0
+  },
+  "verify_note": "Post-#155 thin verify; with_skill followed SKILL.md + loaded references when instructed"
+}

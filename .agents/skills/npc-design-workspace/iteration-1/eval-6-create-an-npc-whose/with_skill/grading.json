@@ -1,0 +1,33 @@
+{
+  "eval_id": 6,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Gives the NPC an immediate want and interactive leverage/need",
+      "passed": true,
+      "evidence": "Want + interactive leverage/need."
+    },
+    {
+      "text": "Breaks information into answers, opinions, evidence, and choices rather than one speech",
+      "passed": true,
+      "evidence": "Answers/opinions/evidence/choices structure."
+    },
+    {
+      "text": "Does not make the players a captive audience for unbroken exposition",
+      "passed": true,
+      "evidence": "Explicitly not captive unbroken exposition."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 75000,
+    "total_duration_seconds": 75.0
+  },
+  "verify_note": "Post-#155 thin verify; with_skill followed SKILL.md + loaded references when instructed"
+}

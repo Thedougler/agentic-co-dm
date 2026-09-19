@@ -1,0 +1,53 @@
+{
+  "eval_id": 1,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Function and identity role (rival|patron|contact) framing appears in process-notes.md, agent_report.md, or transcript.md before or as part of drafting; craft job is not left as YAML role",
+      "passed": true,
+      "evidence": "process-notes.md: craft=inner lock keeper; role=contact before draft."
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+      "passed": true,
+      "evidence": "process-notes.md work gate: awaiting DM; workspace only."
+    },
+    {
+      "text": "Output follows wiki/templates/npc.md structure with filled At a Glance, narration portrait, Running, and Connections substance \u2014 not empty copied headings alone",
+      "passed": true,
+      "evidence": "varn.md fills At a Glance, narration, Running, Connections with substance."
+    },
+    {
+      "text": "Frontmatter role is corrected to exactly one of rival, patron, or contact (contact preferred for Varn); does not leave role as \"Inner lock keeper\"",
+      "passed": true,
+      "evidence": "Frontmatter role: contact (not Inner lock keeper)."
+    },
+    {
+      "text": "Preserves specific Varn canon signals in Nature/body: salt-stiff coat (or lock-gear hands), the line \"This gate is mine,\" AND ends welcome if treated as a mere dock runner or if someone tries to take the lock \u2014 plus correct role enum (rival|patron|contact) with craft \"inner lock keeper\" job in Nature/body not YAML role",
+      "passed": true,
+      "evidence": "salt-stiff coat, 'This gate is mine,' posture change, craft in Nature, role=contact."
+    },
+    {
+      "text": "Immediate want, explicitly labeled leverage AND need, and a clear limit/request posture are concrete and present-tense in the output",
+      "passed": true,
+      "evidence": "Design notes label Immediate want, Leverage, Need, Limit present-tense."
+    },
+    {
+      "text": "Does not invent a Crown betrayal, double-agent biography, or rich unused life story as established wiki fact",
+      "passed": true,
+      "evidence": "No Crown betrayal / unused biography as wiki fact."
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 105000,
+    "total_duration_seconds": 105.0
+  },
+  "verify_note": "Post-#155 thin verify; with_skill followed SKILL.md + loaded references when instructed"
+}

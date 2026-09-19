@@ -1,0 +1,33 @@
+{
+  "eval_id": 12,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Gives a concrete goal, method, and active plan steps",
+      "passed": false,
+      "evidence": "No active plan."
+    },
+    {
+      "text": "Includes visible signs and player interference points",
+      "passed": false,
+      "evidence": "No signs/interference."
+    },
+    {
+      "text": "Does not leave the villain idle until a scripted boss fight",
+      "passed": false,
+      "evidence": "Idle in final room."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 45000,
+    "total_duration_seconds": 45.0
+  },
+  "verify_note": "Post-#155 thin verify; with_skill followed SKILL.md + loaded references when instructed"
+}

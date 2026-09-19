@@ -1,0 +1,48 @@
+{
+  "eval_id": 3,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/npc.md structure with filled At a Glance, Running, and Connections substance \u2014 not empty copied headings alone",
+      "passed": false,
+      "evidence": "Missing template substance (Connections/Running thin)."
+    },
+    {
+      "text": "Frontmatter includes type: npc and role set to exactly rival, patron, or contact",
+      "passed": false,
+      "evidence": "role: ferry clerk \u2014 not rival|patron|contact."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon",
+      "passed": false,
+      "evidence": "lifecycle accepted; no invention label."
+    },
+    {
+      "text": "Includes an immediate present-tense want plus leverage and need",
+      "passed": false,
+      "evidence": "Want weak; leverage/need absent."
+    },
+    {
+      "text": "Includes at least one visual anchor, one repeatable behavior, and one sample line (portrayal signals)",
+      "passed": false,
+      "evidence": "No portrayal signal trio."
+    },
+    {
+      "text": "Function and role framing appear in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": false,
+      "evidence": "No prior function/role framing in process locus."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 6,
+    "total": 6,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 52000,
+    "total_duration_seconds": 52.0
+  },
+  "verify_note": "Post-#155 thin verify; with_skill followed SKILL.md + loaded references when instructed"
+}

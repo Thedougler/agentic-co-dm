@@ -1,0 +1,33 @@
+{
+  "eval_id": 13,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Rejects a full PC sheet for ordinary enemies",
+      "passed": true,
+      "evidence": "Rejects full PC sheet."
+    },
+    {
+      "text": "Uses a concise monster-style block with signature features",
+      "passed": true,
+      "evidence": "Concise monster-style block with signature."
+    },
+    {
+      "text": "Hands detailed math to homebrew-monsters-5e rather than bloating the NPC page with player-mastery features",
+      "passed": true,
+      "evidence": "Handoff to homebrew-monsters-5e stated."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 85000,
+    "total_duration_seconds": 85.0
+  },
+  "verify_note": "Post-#155 thin verify; with_skill followed SKILL.md + loaded references when instructed"
+}

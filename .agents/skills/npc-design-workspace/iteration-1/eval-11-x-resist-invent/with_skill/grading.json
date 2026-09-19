@@ -1,0 +1,33 @@
+{
+  "eval_id": 11,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not make trusted-NPC betrayal the default",
+      "passed": true,
+      "evidence": "Betrayal not default."
+    },
+    {
+      "text": "Requires earlier facts players could notice or investigate",
+      "passed": true,
+      "evidence": "Requires foreshadowable earlier facts."
+    },
+    {
+      "text": "Gives characters meaningful responses after discovery",
+      "passed": true,
+      "evidence": "Meaningful responses after discovery."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 76000,
+    "total_duration_seconds": 76.0
+  },
+  "verify_note": "Post-#155 thin verify; with_skill followed SKILL.md + loaded references when instructed"
+}

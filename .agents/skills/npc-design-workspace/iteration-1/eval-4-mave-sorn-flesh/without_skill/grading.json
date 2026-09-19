@@ -1,0 +1,48 @@
+{
+  "eval_id": 4,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Preserves specific Velvet Noose canon: clean captain of The Velvet Noose, sealed case, information broker who confirms whether a Crown irregularity is supernatural, files intelligence to sell later, and will ledger Perrin's pact if named in parley \u2014 vague 'broker' text alone fails",
+      "passed": false,
+      "evidence": "Vague broker + ship mention; missing full specific canon compound."
+    },
+    {
+      "text": "Frontmatter role is exactly rival, patron, or contact",
+      "passed": false,
+      "evidence": "role: captain \u2014 invalid enum."
+    },
+    {
+      "text": "Clearly distinguishes established stub canon from proposed invention",
+      "passed": false,
+      "evidence": "Long biography presented as established without split."
+    },
+    {
+      "text": "Output follows wiki/templates/npc.md structure with filled At a Glance, Running, and Connections substance \u2014 not empty copied headings alone",
+      "passed": false,
+      "evidence": "Missing Running/Connections template substance."
+    },
+    {
+      "text": "Does not invent a long unused biography as silent canon",
+      "passed": false,
+      "evidence": "Long unused biography as silent canon."
+    },
+    {
+      "text": "Immediate want and leverage/need are playable in the next scene",
+      "passed": false,
+      "evidence": "Want/leverage not playably labeled for next scene."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 6,
+    "total": 6,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 58000,
+    "total_duration_seconds": 58.0
+  },
+  "verify_note": "Post-#155 thin verify; with_skill followed SKILL.md + loaded references when instructed"
+}

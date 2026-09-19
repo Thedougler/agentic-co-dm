@@ -1,0 +1,48 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/npc.md structure with filled At a Glance, Running, and Connections substance \u2014 not empty copied headings alone",
+      "passed": true,
+      "evidence": "kell-drift.md fills At a Glance, Running, Connections."
+    },
+    {
+      "text": "Frontmatter includes type: npc and role set to exactly rival, patron, or contact",
+      "passed": true,
+      "evidence": "type: npc; role: contact."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon",
+      "passed": true,
+      "evidence": "invention: true + proposed banner."
+    },
+    {
+      "text": "Includes an immediate present-tense want plus leverage and need",
+      "passed": true,
+      "evidence": "Immediate want + leverage + need present-tense."
+    },
+    {
+      "text": "Includes at least one visual anchor, one repeatable behavior, and one sample line (portrayal signals)",
+      "passed": true,
+      "evidence": "Visual, behavior, sample line present."
+    },
+    {
+      "text": "Function and role framing appear in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": true,
+      "evidence": "process-notes function+role before draft."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 98000,
+    "total_duration_seconds": 98.0
+  },
+  "verify_note": "Post-#155 thin verify; with_skill followed SKILL.md + loaded references when instructed"
+}

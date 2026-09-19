@@ -1,0 +1,33 @@
+{
+  "eval_id": 10,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not invent new immunity after players act",
+      "passed": false,
+      "evidence": "Invented immunity until final session."
+    },
+    {
+      "text": "Uses genuine fictional protection or accepts interruptible outcomes",
+      "passed": false,
+      "evidence": "No genuine protection framing; immunity after act."
+    },
+    {
+      "text": "Keeps the villain's presence consequential without erasing player agency",
+      "passed": false,
+      "evidence": "Erases player agency."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 44000,
+    "total_duration_seconds": 44.0
+  },
+  "verify_note": "Post-#155 thin verify; with_skill followed SKILL.md + loaded references when instructed"
+}

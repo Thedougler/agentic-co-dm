@@ -1,0 +1,33 @@
+{
+  "eval_id": 5,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Matches incidental prep scale rather than a full recurring card",
+      "passed": true,
+      "evidence": "Incidental 30-second card scale."
+    },
+    {
+      "text": "Includes an immediate present-tense want and at least one present-tense scene signal (visual, behavior, or sample line usable in the stew scene) \u2014 backstory flavor alone fails",
+      "passed": true,
+      "evidence": "Present-tense want + scene signal (ladle/steam)."
+    },
+    {
+      "text": "Omits unused long-term history that does not affect the scene",
+      "passed": true,
+      "evidence": "Omits long-term history."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 70000,
+    "total_duration_seconds": 70.0
+  },
+  "verify_note": "Post-#155 thin verify; with_skill followed SKILL.md + loaded references when instructed"
+}

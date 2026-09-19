@@ -1,0 +1,53 @@
+{
+  "eval_id": 1,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Function and identity role (rival|patron|contact) framing appears in process-notes.md, agent_report.md, or transcript.md before or as part of drafting; craft job is not left as YAML role",
+      "passed": false,
+      "evidence": "process-notes leave craft as YAML role; no rival|patron|contact framing."
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+      "passed": false,
+      "evidence": "No work gate before wiki-shaped write; drafts directly."
+    },
+    {
+      "text": "Output follows wiki/templates/npc.md structure with filled At a Glance, narration portrait, Running, and Connections substance \u2014 not empty copied headings alone",
+      "passed": false,
+      "evidence": "Headings thin; Connections missing substance."
+    },
+    {
+      "text": "Frontmatter role is corrected to exactly one of rival, patron, or contact (contact preferred for Varn); does not leave role as \"Inner lock keeper\"",
+      "passed": false,
+      "evidence": "role still 'Inner lock keeper'."
+    },
+    {
+      "text": "Preserves specific Varn canon signals in Nature/body: salt-stiff coat (or lock-gear hands), the line \"This gate is mine,\" AND ends welcome if treated as a mere dock runner or if someone tries to take the lock \u2014 plus correct role enum (rival|patron|contact) with craft \"inner lock keeper\" job in Nature/body not YAML role",
+      "passed": false,
+      "evidence": "Partial signals but role enum wrong; craft left in YAML."
+    },
+    {
+      "text": "Immediate want, explicitly labeled leverage AND need, and a clear limit/request posture are concrete and present-tense in the output",
+      "passed": false,
+      "evidence": "Want present; leverage AND need not explicitly labeled."
+    },
+    {
+      "text": "Does not invent a Crown betrayal, double-agent biography, or rich unused life story as established wiki fact",
+      "passed": true,
+      "evidence": "No Crown betrayal invented in this baseline improve run."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 6,
+    "total": 7,
+    "pass_rate": 0.1429
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 55000,
+    "total_duration_seconds": 55.0
+  },
+  "verify_note": "Post-#155 thin verify; with_skill followed SKILL.md + loaded references when instructed"
+}

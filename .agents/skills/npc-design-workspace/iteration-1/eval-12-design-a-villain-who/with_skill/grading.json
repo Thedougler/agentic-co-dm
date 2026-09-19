@@ -1,0 +1,33 @@
+{
+  "eval_id": 12,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Gives a concrete goal, method, and active plan steps",
+      "passed": true,
+      "evidence": "Goal, method, active plan steps."
+    },
+    {
+      "text": "Includes visible signs and player interference points",
+      "passed": true,
+      "evidence": "Visible signs + interference points."
+    },
+    {
+      "text": "Does not leave the villain idle until a scripted boss fight",
+      "passed": true,
+      "evidence": "Not idle until boss fight."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 82000,
+    "total_duration_seconds": 82.0
+  },
+  "verify_note": "Post-#155 thin verify; with_skill followed SKILL.md + loaded references when instructed"
+}

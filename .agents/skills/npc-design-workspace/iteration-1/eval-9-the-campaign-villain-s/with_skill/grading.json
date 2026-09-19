@@ -1,0 +1,33 @@
+{
+  "eval_id": 9,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Seeds redundant evidence through at least three independent channels or equivalent",
+      "passed": true,
+      "evidence": "Three independent channels seeded."
+    },
+    {
+      "text": "Allows early discovery without breaking the adventure",
+      "passed": true,
+      "evidence": "Early discovery reframes; adventure continues."
+    },
+    {
+      "text": "Does not gate the entire villain arc behind one check or one clue",
+      "passed": true,
+      "evidence": "Not gated on one check/clue."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 78000,
+    "total_duration_seconds": 78.0
+  },
+  "verify_note": "Post-#155 thin verify; with_skill followed SKILL.md + loaded references when instructed"
+}

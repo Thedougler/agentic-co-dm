@@ -1,0 +1,33 @@
+{
+  "eval_id": 7,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Determines Willing/Unwilling/Hesitant from fiction before treating the roll as absolute",
+      "passed": true,
+      "evidence": "Unwilling set from fiction before roll treated absolute."
+    },
+    {
+      "text": "Preserves the NPC's limit/oath or requires a meaningful change in stakes",
+      "passed": true,
+      "evidence": "Oath preserved; lesser concessions only."
+    },
+    {
+      "text": "Does not treat Persuasion as mind control that erases characterization",
+      "passed": true,
+      "evidence": "Rejects Persuasion as mind control."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 72000,
+    "total_duration_seconds": 72.0
+  },
+  "verify_note": "Post-#155 thin verify; with_skill followed SKILL.md + loaded references when instructed"
+}
