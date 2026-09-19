@@ -1,0 +1,234 @@
+{
+  "skill_name": "dnd-5e-magic-item-design",
+  "iteration": 1,
+  "configurations": [
+    {
+      "name": "with_skill",
+      "evals": [
+        {
+          "eval_name": "fate-spinner-improve",
+          "assertions_passed": 8,
+          "assertions_total": 8,
+          "pass_rate": 1.0,
+          "tokens": 46200,
+          "duration_seconds": 110
+        },
+        {
+          "eval_name": "fate-spinner-resist-invent",
+          "assertions_passed": 6,
+          "assertions_total": 6,
+          "pass_rate": 1.0,
+          "tokens": 31500,
+          "duration_seconds": 75
+        },
+        {
+          "eval_name": "tideglass-compass-from-scratch",
+          "assertions_passed": 7,
+          "assertions_total": 7,
+          "pass_rate": 1.0,
+          "tokens": 39900,
+          "duration_seconds": 95
+        },
+        {
+          "eval_name": "black-lotus-heart-flesh",
+          "assertions_passed": 7,
+          "assertions_total": 7,
+          "pass_rate": 1.0,
+          "tokens": 42000,
+          "duration_seconds": 100
+        },
+        {
+          "eval_name": "create-a-rare-lantern",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": 35700,
+          "duration_seconds": 85
+        },
+        {
+          "eval_name": "design-a-2024-rare",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": 50400,
+          "duration_seconds": 120
+        },
+        {
+          "eval_name": "make-a-very-rare",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": 37800,
+          "duration_seconds": 90
+        },
+        {
+          "eval_name": "write-a-sword-that",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": 33600,
+          "duration_seconds": 80
+        },
+        {
+          "eval_name": "create-an-amulet-that",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": 36960,
+          "duration_seconds": 88
+        },
+        {
+          "eval_name": "item-resist-invent",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": 29400,
+          "duration_seconds": 70
+        },
+        {
+          "eval_name": "design-boots-that-make",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 30240,
+          "duration_seconds": 72
+        },
+        {
+          "eval_name": "combine-the-strongest-features",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 32760,
+          "duration_seconds": 78
+        }
+      ],
+      "aggregate": {
+        "mean_pass_rate": 1.0,
+        "stddev_pass_rate": 0.0,
+        "mean_tokens": 37205,
+        "mean_duration_seconds": 88.6
+      }
+    },
+    {
+      "name": "without_skill",
+      "evals": [
+        {
+          "eval_name": "fate-spinner-improve",
+          "assertions_passed": 2,
+          "assertions_total": 8,
+          "pass_rate": 0.25,
+          "tokens": 23100,
+          "duration_seconds": 55
+        },
+        {
+          "eval_name": "fate-spinner-resist-invent",
+          "assertions_passed": 0,
+          "assertions_total": 6,
+          "pass_rate": 0.0,
+          "tokens": 16800,
+          "duration_seconds": 40
+        },
+        {
+          "eval_name": "tideglass-compass-from-scratch",
+          "assertions_passed": 0,
+          "assertions_total": 7,
+          "pass_rate": 0.0,
+          "tokens": 21000,
+          "duration_seconds": 50
+        },
+        {
+          "eval_name": "black-lotus-heart-flesh",
+          "assertions_passed": 0,
+          "assertions_total": 7,
+          "pass_rate": 0.0,
+          "tokens": 21840,
+          "duration_seconds": 52
+        },
+        {
+          "eval_name": "create-a-rare-lantern",
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": 17640,
+          "duration_seconds": 42
+        },
+        {
+          "eval_name": "design-a-2024-rare",
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": 20160,
+          "duration_seconds": 48
+        },
+        {
+          "eval_name": "make-a-very-rare",
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": 18900,
+          "duration_seconds": 45
+        },
+        {
+          "eval_name": "write-a-sword-that",
+          "assertions_passed": 1,
+          "assertions_total": 4,
+          "pass_rate": 0.25,
+          "tokens": 16800,
+          "duration_seconds": 40
+        },
+        {
+          "eval_name": "create-an-amulet-that",
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": 18480,
+          "duration_seconds": 44
+        },
+        {
+          "eval_name": "item-resist-invent",
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": 15960,
+          "duration_seconds": 38
+        },
+        {
+          "eval_name": "design-boots-that-make",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 15120,
+          "duration_seconds": 36
+        },
+        {
+          "eval_name": "combine-the-strongest-features",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 16800,
+          "duration_seconds": 40
+        }
+      ],
+      "aggregate": {
+        "mean_pass_rate": 0.042,
+        "stddev_pass_rate": 0.093,
+        "mean_tokens": 18550,
+        "mean_duration_seconds": 44.2
+      }
+    }
+  ],
+  "delta": {
+    "pass_rate": "+95.8%",
+    "tokens": "+100.6%",
+    "duration": "+100.5%"
+  },
+  "analyst_observations": [
+    "With-skill passes 58/58 assertions (mean pass_rate 1.0). Baseline 3/58 (mean 0.042).",
+    "Largest deltas on resist-invent (eval-2) and craft anti-pattern evals 5\u201312: baseline complies with stacked/unbounded/secret-agency prompts; skill refuses and redesigns.",
+    "Template evals 1/3/4: process (Signature/pitch, work gate) and structure/frontmatter discriminate; eval-1 baseline still preserves core Fate Spinner canon (1 content pass) while inventing stacked power.",
+    "Eval-8 without_skill can pass 'states exact trigger\u2026' while failing once-per-turn guardrail \u2014 content assertion is weaker alone; keep paired with guardrail.",
+    "Eval-1 omit-if-empty At the Table: baseline passed by omission; consider requiring presence when improving a complex magic item, or mark N/A explicitly.",
+    "With-skill costs more time/tokens (~duration delta); value is guardrail + process + craft refusal, not page length.",
+    "Timing/token figures are inline-executor estimates (total_tokens null in timing.json; benchmark tokens from duration\u00d7420 heuristic for schema parity with Batch A)."
+  ]
+}
