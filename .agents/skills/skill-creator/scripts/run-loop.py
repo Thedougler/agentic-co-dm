@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Run the eval + improve loop until all pass or max iterations reached.
 
-Combines run_eval.py and improve_description.py in a loop, tracking history
+Combines run-eval.py and improve-description.py in a loop, tracking history
 and returning the best description found. Supports train/test split to prevent
 overfitting.
 """
 
 import argparse
+import importlib.util
 import json
 import random
 import sys
@@ -15,10 +16,16 @@ import time
 import webbrowser
 from pathlib import Path
 
-from scripts.generate_report import generate_html
-from scripts.improve_description import improve_description
-from scripts.run_eval import find_project_root, run_eval
-from scripts.utils import parse_skill_md
+_spec = importlib.util.spec_from_file_location("skill_creator_utils", Path(__file__).parent / "utils.py")
+_utils = importlib.util.module_from_spec(_spec)
+sys.modules["skill_creator_utils"] = _utils
+_spec.loader.exec_module(_utils)
+parse_skill_md = _utils.parse_skill_md
+generate_html = _utils.load("generate-report.py").generate_html
+improve_description = _utils.load("improve-description.py").improve_description
+_run_eval = _utils.load("run-eval.py")
+find_project_root = _run_eval.find_project_root
+run_eval = _run_eval.run_eval
 
 
 def split_eval_set(eval_set: list[dict], holdout: float, seed: int = 42) -> tuple[list[dict], list[dict]]:

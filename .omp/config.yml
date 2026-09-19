@@ -1,12 +1,10 @@
-# Wiki-write finalization is owned by tools/wiki_ops/Transaction; direct OMP-managed
-# writes invoke scripts/qmd-hook.sh exactly once after the write set commits.
 modelRoleStorage: project
 modelRoles:
   default: opencode-go/grok-4.6:medium
   plan: github-copilot/gpt-6-astra:low
-  task: opencode-go/gpt-5.6-luna:xhigh
+  task: xai-oauth/grok-4.6:medium
   review: opencode-go/grok-4.6:high
-  smol: opencode-go/gpt-5.6-luna:xhigh
+  smol: opencode-go/gpt-5.6-luna:medium
   advisor: opencode-go/grok-4.6:medium
   slow: github-copilot/gpt-6-astra:medium
   writing-for-humans: null
@@ -30,44 +28,43 @@ async:
   enabled: true
 compaction:
   enabled: true
-  asyncEnabled: true
+  experimentalContextManagement: true
+  thresholdPercent: 60
+  thresholdTokens: -1
   midTurnEnabled: true
-  keepRecentTokens: 20000
+  keepRecentTokens: 12000
+  asyncEnabled: true
   autoContinue: true
+  methodOrder:
+    - shake
+    - remote
+    - snapcompact
+    - handoff
+    - soft
+  supersedeReads: true
+  dropUseless: true
+  idleEnabled: true
+  idleThresholdTokens: 80000
+  idleTimeoutSeconds: 180
 advisor:
   enabled: false
 memory:
-  backend: off
-
+  backend: "off"
 mnemopi:
-  # Project memories stay project-local.
-  # Global memories can also be recalled when you deliberately create them.
   scoping: per-project-tagged
-
   autoRecall: true
   autoRetain: true
-
-  # Don't retain every few exchanges. Let a meaningful chunk of work form.
   retainEveryNTurns: 6
-
-  # Keep automatic memory injection tight.
   recallLimit: 6
   recallContextTurns: 3
   recallMaxQueryChars: 3000
   injectionTokenLimit: 2000
-
-  # Use normal semantic + full-text retrieval.
   noEmbeddings: false
   embeddingVariant: en
-
-  # Memory extraction/consolidation uses your online tiny/smol routing.
   llmMode: smol
-
-  # I'd leave the more elaborate retrieval machinery off initially.
   polyphonicRecall: false
   enhancedRecall: true
   proactiveLinking: false
-
   debug: false
 autolearn:
   enabled: false
@@ -77,11 +74,11 @@ tools:
   approvalMode: yolo
   format: auto
   intentTracing: true
-  artifactSpillThreshold: 50
-  artifactHeadBytes: 20
-  artifactTailBytes: 20
-  artifactTailLines: 500
-  outputMaxColumns: 768
+  artifactSpillThreshold: 10
+  artifactHeadBytes: 2.5
+  artifactTailBytes: 5
+  artifactTailLines: 100
+  outputMaxColumns: 512
 lsp:
   enabled: true
   lazy: true
@@ -90,5 +87,30 @@ lsp:
   diagnosticsOnEdit: false
   diagnosticsDeduplicate: true
   formatOnWrite: false
+skills:
+  enableClaudeUser: false
+  enableClaudeProject: false
+  enableCodexUser: false
+  enablePiUser: true
+  enablePiProject: true
+  enableAgentsUser: true
+  enableAgentsProject: true
+commands:
+  enableClaudeUser: false
+  enableClaudeProject: false
+  enableOpencodeUser: false
+  enableOpencodeProject: false
+disabledProviders:
+  - claude-plugins
+  - opencode
+  - claude
+  - claude-md
+  - agents-md
+  - github
+  - gemini
+  - cursor
+  - windsurf
+  - cline
 disabledExtensions:
   - context-file:project:CLAUDE.md
+  - context-file:project:copilot-instructions.md

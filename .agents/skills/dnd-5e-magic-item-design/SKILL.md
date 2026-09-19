@@ -5,16 +5,7 @@ description: Design, revise, or audit engaging and mechanically sound homebrew m
 
 # D&D 5e magic-item design
 
-## Work gate
-
-Prep only. Follow `docs/agents/work.md`.
-
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
-
-Players see nothing until the DM accepts and presents.
-
-Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagged, grounding named.
-
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Success criteria
 - The item promises a specific experience, has a readable decision loop, and earns its place in the campaign.

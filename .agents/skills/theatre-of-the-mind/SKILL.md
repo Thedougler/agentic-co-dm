@@ -16,9 +16,7 @@ description: >-
 ---
 
 # Theatre of the mind
-## Work gate
-
-Prep only. Follow `docs/agents/work.md`.
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## HARD: entity-before-spoken (Nick 2026-09-14)
 

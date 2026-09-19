@@ -194,3 +194,42 @@ rules:
     tags: [retrieval, links]
     conflicts: []
     depends: []
+  - id: AGENT001
+    title: Work-gate procedure language
+    category: instruction
+    scope: instruction
+    severity: BLOCK
+    evaluator: symbolic
+    lifecycle: ACTIVE
+    message: Agent-facing instruction still describes a Work gate, DM-approval wait, or extra canon workflow
+    repair: Delete the wait procedure; file what constitution X makes canon; iterate until green
+    auto_repair: false
+    tags: [agent-facing, autonomy]
+    conflicts: []
+    depends: []
+  - id: AGENT002
+    title: Unpredictable agent-facing path
+    category: instruction
+    scope: instruction
+    severity: BLOCK
+    evaluator: symbolic
+    lifecycle: ACTIVE
+    message: Agent-facing file path or name is ad-hoc
+    repair: Remorph to kebab at the predicted path and update references
+    auto_repair: false
+    tags: [agent-facing, placement]
+    conflicts: []
+    depends: []
+  - id: AGENT003
+    title: Agent-facing FR missing registry id
+    category: instruction
+    scope: instruction
+    severity: BLOCK
+    evaluator: symbolic
+    lifecycle: ACTIVE
+    message: A spec Functional Requirement containing agent-facing cites no rules/registry.yml id
+    repair: Cite at least one registry id on that FR
+    auto_repair: false
+    tags: [agent-facing, spec]
+    conflicts: []
+    depends: []

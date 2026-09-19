@@ -3,18 +3,24 @@
 Skill Packager - Creates a distributable .skill file of a skill folder
 
 Usage:
-    python utils/package_skill.py <path/to/skill-folder> [output-directory]
+    python utils/package-skill.py <path/to/skill-folder> [output-directory]
 
 Example:
-    python utils/package_skill.py skills/public/my-skill
-    python utils/package_skill.py skills/public/my-skill ./dist
+    python utils/package-skill.py skills/public/my-skill
+    python utils/package-skill.py skills/public/my-skill ./dist
 """
 
 import fnmatch
+import importlib.util
 import sys
 import zipfile
 from pathlib import Path
-from scripts.quick_validate import validate_skill
+
+_spec = importlib.util.spec_from_file_location("skill_creator_utils", Path(__file__).parent / "utils.py")
+_utils = importlib.util.module_from_spec(_spec)
+sys.modules["skill_creator_utils"] = _utils
+_spec.loader.exec_module(_utils)
+validate_skill = _utils.load("quick-validate.py").validate_skill
 
 # Patterns to exclude when packaging skills.
 EXCLUDE_DIRS = {"__pycache__", "node_modules"}
@@ -110,10 +116,10 @@ def package_skill(skill_path, output_dir=None):
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python utils/package_skill.py <path/to/skill-folder> [output-directory]")
+        print("Usage: python utils/package-skill.py <path/to/skill-folder> [output-directory]")
         print("\nExample:")
-        print("  python utils/package_skill.py skills/public/my-skill")
-        print("  python utils/package_skill.py skills/public/my-skill ./dist")
+        print("  python utils/package-skill.py skills/public/my-skill")
+        print("  python utils/package-skill.py skills/public/my-skill ./dist")
         sys.exit(1)
 
     skill_path = sys.argv[1]

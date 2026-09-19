@@ -4,16 +4,7 @@ description: Post-session world advancement ritual — walks through active fact
 ---
 
 # World Tick
-## Work gate
-
-Wrapup. Follow `docs/agents/work.md`.
-
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Off-screen movement is proposed Work grounded in wiki pages and/or D&D 5e rules; cite `[[pages]]`, surface contradictions to the DM, and never present invention as wiki fact. Outcomes remain proposed until accept, then make surgical owner-page updates. Unused prep is not canon.
-
-
-The world didn't pause while the party played. Now you find out what happened offscreen.
-
-This is a collaborative ritual — efficient, methodical, one thread at a time. You read the situation, propose what that faction or NPC was trying to do, the DM confirms or redirects, the dice decide the outcome, and you stage a reviewed ledger proposal before any write. No gaps, no deferred updates, no vague notes.
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Canon Discipline
 

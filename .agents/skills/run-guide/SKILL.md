@@ -13,65 +13,7 @@ description: >-
 ---
 
 # Run Guide
-## Work gate
-
-Prep only. Follow `docs/agents/work.md`.
-
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
-
-Players see nothing until the DM accepts and presents.
-
-Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagged, grounding named.
-
-Remap durable session-prep to `wiki/journal/sessions/<campaign-slug>/<session-number>/`. Owners stay under `wiki/`. Templates live in `wiki/templates/`. Replace knowledge-bank terminology with wiki terminology, but do not change geographic river-bank language. Point at `docs/agents/work.md` rather than restating the glossary.
-
-
-Build one **cockpit** the DM can run from Reading view without hunting the vault.
-Owners stay canon. Full statblocks **embed** at the bottom (the DM scrolls).
-Scene *procedure*, zones, tells, action cards, and how the scene resolves are written here.
-A missing owner is a diagnostic, not permission to invent canon or math.
-
-**Four passes, each loading only its skills.** Pass 1 (`dnd5e-mechanics`) writes the mechanical card and **empty titled `[!narration]` stubs** — no prose skills loaded. Pass 2 (`writing-for-humans`) edits DM-facing copy for usability, readability, and table usefulness — stubs stay empty. Pass 3 (`theatre-of-the-mind`; TUI **writing-for-humans**, Grok Bots **Visualizer**) fills every spoken stub — loaded only after DM copy is clean. Pass 4 checks Reading view. Do not load a later pass's skill early.
-
-**Sole-authority:** a tired DM at minute 90 can roll and speak this slice
-without opening another note. Every default-mode *ruling* lives on the card.
-Combat-mode owners are heading-embedded below. A bare `[[Monster]]` with no
-embed and no action-card numbers fails.
-
-One opposition want, said once. One *procedure*, named. Nothing restated later
-as a second framework.
-
-**Typed beats stay typed.** Live-beat assembly MUST NOT rewrite a typed beat into a Session 11 cockpit. Pass is that type's draft jobs plus readable scan. Session 11 files (`wiki/_raw/Session-11-01-Angry-Birds.md` through `wiki/_raw/Session-11-10-Aftermath.md`, and `wiki/_raw/Session-11-00-Birds-of-a-Feather.md`) are scan-quality evidence only — columns, omit unused, sole-authority — not a heading spine to copy.
-**Image anchors.** If the beat has an overview or identity image, keep it near
-the top of the file as the visual first look. If the beat has battlemap art,
-keep it fixed at the bottom of the file after the runnable card. These anchors
-are placement rules for existing art, not permission to add unused sections.
-
-**Concrete measure.** Spatial and travel notes use concrete units: north,
-south, east, west, feet for tactical 5.5e distances, and days, hours, or
-minutes for travel time. Do not use distance bands, range bands, or abstract
-labels such as near, far, close, inner, outer, nearby, or distant as the
-measurement. A label may name a place only when the concrete direction,
-distance, or travel time is also present.
-
-**Recap boundary.** Only the first beat of a session may recap the previous
-session. Every later beat starts from the immediate current situation and does
-not summarize earlier beats, prior-session events, or how the party got here.
-
-**No coy DM text.** The card is for the DM. If the DM needs to know who or what
-is present, name it plainly in DM-facing text. If the players have not earned
-that knowledge, keep it out of `[!narration]`; do not write vague placeholders
-such as "a figure may be there" or instructions such as "do not call that out."
-
-A DM-facing line stays only if Nick will use it this slice to **place** someone,
-**roll** something, **speak**, or decide a changed risk, route, clock, resource,
-or NPC response. Distances, speeds, named *rulings*, the opposition want, and
-the spoken block earn their keep. Default safety, ordinary permission, Partial
-rules, 5e defaults, schema commentary, and notes to the writer stay out.
-Negative facts earn space only when they change a current choice or ruling.
-Use descriptive, specific, plain language on the DM card too. Use common,
-normal human words unless the common word would be inaccurate. If a name or
-field needs decoding, replace it with the ordinary thing and visible action.
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Workflow — four passes
 
@@ -208,7 +150,7 @@ At a Glance scans as stakes, goal or exit, danger, silence, situation magnets. S
 
 **Columns.** Session cards use obsidian-columns **codeblock** syntax
 (`col` / `col-md`) so `[!narration]` stays a real callout. Syntax:
-`obsidian-markdown` [references/COLUMNS.md](../obsidian-markdown/references/COLUMNS.md).
+`obsidian-markdown` [references/columns.md](../obsidian-markdown/references/columns.md).
 Each row appears only when both sides exist. The right side of Mode and
 Clock rows may be a short paragraph, not a heading.
 

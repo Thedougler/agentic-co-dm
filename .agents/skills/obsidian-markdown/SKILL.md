@@ -30,7 +30,7 @@ Every wiki write must preserve vault wikilinks, `[!narration]` for spoken text, 
 - **At-table scan:** each Markdown treatment has exactly one meaning (table under Syntax). `DC 15` is inline code. Private DM notes are headings on session/run surfaces, and `[!secret]` / `[!mechanic]` on owner pages.
 - **Creatures:** Fantasy Statblocks fence (```` ```statblock ````) immediately after frontmatter, or after a single `## Statblock` heading so run cards can `![[Name#Statblock]]`. See `wiki/templates/creature.md`. Never a prose AC/HP table instead of the fence. No WotC book paste. The fence keeps 5e YAML phrasing (`DC 15 Constitution saving throw`); at-table scan is for wiki body, not the fence. Column density is allowed. Pass is creature jobs in `wiki/AGENTS.md` Layout, not heading-order match.
 - **Run-card roster:** embed the owner heading (`![[Bloodhawk#Statblock]]`) at the bottom. Put default-mode compact numbers on the action cards (`run-guide`). Do not retype the owner's full Multiattack/HP table into the card body. Do not embed the whole monster essay.
-- **Paths:** scratch → `inbox/`; **images/media** under `attachments/` (campaign subfolders ok). Embed with `![[attachments/…]]`; wikilink with `[[attachments/…]]`. See [[attachments/00 Attachments]] + [references/EMBEDS.md](references/EMBEDS.md). No parallel `wiki/` · `concepts/` · `sources/` tree.
+- **Paths:** scratch → `inbox/`; **images/media** under `attachments/` (campaign subfolders ok). Embed with `![[attachments/…]]`; wikilink with `[[attachments/…]]`. See [[attachments/00 Attachments]] + [references/embeds.md](references/embeds.md). No parallel `wiki/` · `concepts/` · `sources/` tree.
 - **Surgical edits only:** Edit the elements in scope for the current pass. Preserve existing image embeds, wikilink paths, frontmatter fields, and structure unless that exact element is broken and verified broken. A copy pass edits copy; it does not rewrite embeds or paths.
 - **Lint:** Run `./scripts/lint-wiki-write` (obsidian-markdown plus literal-newlines on session/beat bodies). The literal-newline check skips YAML frontmatter and fenced code/statblocks.
 
@@ -82,7 +82,7 @@ Block id on a paragraph: `text ^block-id`. For lists/quotes, put `^id` on its ow
 ![[Item#Charges / limits]]                          Run-card item limits, only if this slice spends them
 ```
 
-More: [references/EMBEDS.md](references/EMBEDS.md) · hub [[attachments/00 Attachments]].
+More: [references/embeds.md](references/embeds.md) · hub [[attachments/00 Attachments]].
 
 ### Callouts
 
@@ -94,9 +94,9 @@ More: [references/EMBEDS.md](references/EMBEDS.md) · hub [[attachments/00 Attac
 > Owner-page player-facing prose (or leave empty).
 ```
 
-Session/run: only `[!narration]`. Owner pages may still use `[!mechanic]` and `[!secret]` — [references/CALLOUTS.md](references/CALLOUTS.md).
+Session/run: only `[!narration]`. Owner pages may still use `[!mechanic]` and `[!secret]` — [references/callouts.md](references/callouts.md).
 
-Other types (`note`, `tip`, `warning`, …): [references/CALLOUTS.md](references/CALLOUTS.md).
+Other types (`note`, `tip`, `warning`, …): [references/callouts.md](references/callouts.md).
 
 ### At-table scan
 
@@ -193,7 +193,7 @@ updated: 2026-09-11
 ---
 ```
 
-Types and tags: [references/PROPERTIES.md](references/PROPERTIES.md).
+Types and tags: [references/properties.md](references/properties.md).
 
 ### Columns (obsidian-columns plugin)
 
@@ -225,7 +225,7 @@ flexGrow=2
 
 Parent fences need more backticks than children. `flexGrow` sets relative width. Headings may sit inside `col-md` so the title stays with its body in Reading view. Monster roster rows are two `![[Name#Statblock]]` columns max; extra monsters wrap to the next row. Other cockpit pairs are unaffected.
 
-Owner pages may still use callout `[!col]` when no `[!narration]` sits in the same row. Full pairing catalog: [references/COLUMNS.md](references/COLUMNS.md).
+Owner pages may still use callout `[!col]` when no `[!narration]` sits in the same row. Full pairing catalog: [references/columns.md](references/columns.md).
 
 ### Also supported (use when needed)
 

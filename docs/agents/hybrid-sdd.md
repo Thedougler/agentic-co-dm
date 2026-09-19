@@ -1,6 +1,6 @@
 # Hybrid Spec-Driven Development
 
-This is the detailed operating contract for substantial work. It extends the existing Spec Kit lifecycle; it does not replace the constitution, wiki, Work acceptance, campaign lifecycle, reveal/visibility rules, QMD precedence, or content skills.
+This is the detailed operating contract for substantial work. It extends the existing Spec Kit lifecycle; it does not replace the constitution, wiki, campaign lifecycle, reveal/visibility rules, QMD precedence, or content skills.
 
 ## 1. Classify before writing
 
@@ -29,7 +29,7 @@ The specification records:
 - independently testable acceptance scenarios;
 - for campaign-facing or reusable game-system work: actors, motivations, factions, locations, pressures, clocks, relationships, information states, conditional opportunities, continuity, player-owned decisions, open outcomes, independent world motion, and if-nobody-intervenes consequences;
 - for engineering work: ordinary technical requirements, architecture, storage, testing, platform, performance, and constraints without campaign-only requirements;
-- canon impact: current truth, affected truth, proposals, contradictions, provenance, reveal, visibility, and the existing DM acceptance boundary.
+- canon impact: current truth, affected truth, proposals, contradictions, provenance, reveal, visibility; DM acceptance is not required when constitution X already makes the fact canon.
 
 Describe observable behavior. Leave creative method, prose voice, screenplay order, authored player choices, and fixed endings open when alternatives can satisfy the outcome. Conditional fictional events stay proposals, never accepted truth.
 
@@ -44,10 +44,9 @@ Use an edge only for a real prerequisite. When applicable, preserve this order:
 ```text
 grounding/retrieval → owner/entity resolution → missing owner creation
 → rules/system/world state → relationships/agendas → playable situations
-→ DM/session presentation → continuity verification → Work proposal
-→ DM acceptance → filing/promotion → deterministic maintenance/retrieval refresh
+→ DM/session presentation → continuity verification → file what is canon
+→ deterministic maintenance/retrieval refresh
 ```
-
 Parallel work is limited to disjoint canonical write surfaces. Tasks with an actual dependency remain serial even when both are prose. Safe deterministic maintenance (lint, manifest update, retrieval refresh, or link repair) uses its existing unattended path and does not acquire a needless DM gate.
 
 Completion criterion: every task has an owner, artifact, evidence, state, and real predecessors; no parallel wave shares a canonical write surface.
@@ -56,15 +55,15 @@ Completion criterion: every task has an owner, artifact, evidence, state, and re
 
 Reuse an equivalent existing owner. If identity remains uncertain, report the collision evidence and require an explicit distinction before minting a new owner. Use repository kind and path conventions; never introduce opaque IDs, a parallel canon database, or a second lifecycle or owner model.
 
-Keep accepted current truth, affected truth, proposal/conditional material, and player-owned outcomes distinguishable. Preserve provenance, reveal, and visibility boundaries. Campaign-facing Work is inspectable and addressed to the DM until accepted; only the existing Work acceptance path can produce accepted campaign truth. Specification, plan, task completion, and implementation do not themselves canonize fictional events.
+Keep accepted current truth, affected truth, proposal/conditional material, and player-owned outcomes distinguishable. Preserve provenance, reveal, and visibility boundaries. Campaign-facing Work is inspectable. User-said canon files immediately. Specification, plan, and tasks still do not invent unsaid events.
 
 Preparation exposes materially different response surfaces: engagement, negotiation, investigation, avoidance, redirection, failure, refusal, and unexpected approaches where the fiction permits them. NPCs, factions, threats, opportunities, clocks, and consequences can move independently according to established motives and circumstances.
 
-Completion criterion: owner resolution, canon state, reveal/visibility, agency, and DM acceptance state are explicit in the evidence; no fact-changing write precedes acceptance.
+Completion criterion: owner resolution, canon state, and reveal/visibility are explicit in the evidence; user-said canon files under constitution X without a separate acceptance wait.
 
 ## 5. Verify at the correct boundary
 
-Use deterministic checks for objective class, route, schema, closed vocabulary, filename, link, owner, lifecycle, canon precedence, entity-before-spoken, DM-facing explicitness, reveal/visibility, accept-before-write, dependency, attribution, and compatibility failures. Existing wiki, link, schema, token, QMD, OMP, and Spec Kit checks remain their own authorities.
+Use deterministic checks for objective class, route, schema, closed vocabulary, filename, link, owner, lifecycle, canon precedence, entity-before-spoken, DM-facing explicitness, reveal/visibility, file-under-constitution-X, dependency, attribution, and compatibility failures. Existing wiki, link, schema, token, QMD, OMP, and Spec Kit checks remain their own authorities.
 
 Use an independent blind paired evaluator with a fixed rubric for playability, specificity, continuity, player agency, and DM usefulness. Do not turn creative judgment or prose preference into deterministic lint. Record semantic review separately from hard-gate results.
 
@@ -80,13 +79,13 @@ dependencies
 deterministic_checks
 quality_review
 work_status: produced | accepted | failed | incomplete
-dm_acceptance: not-required | pending | accepted | modified | rejected
+dm_acceptance: not-required
 canon_state: unchanged | proposal | accepted-truth
 filing
 measurement
 ```
 
-`accepted-truth` requires completed existing DM acceptance. Failed or incomplete Work remains reportable and does not become canon.
+`accepted-truth` follows constitution X, not a chat accept step. Failed or incomplete Work remains reportable and does not become canon.
 
 ## 6. Measure and promote safely
 

@@ -81,4 +81,4 @@ inside a statblock fence); elsewhere, a literal `\n` is a FAIL.
 
 ## Plugin callout types
 
-`[!col]` · `[!col-md]` / `[!col-md-N]` — obsidian-columns layout. See [COLUMNS.md](COLUMNS.md).
+`[!col]` · `[!col-md]` / `[!col-md-N]` — obsidian-columns layout. See [columns.md](columns.md).

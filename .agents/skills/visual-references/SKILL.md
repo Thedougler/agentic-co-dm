@@ -10,29 +10,7 @@ description: >-
 
 # Visual References
 
-## Work gate
-
-Prep art is Work, not auto-canon. Follow `docs/agents/work.md`.
-
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
-
-Players see nothing until the DM accepts and presents.
-
-Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagged, grounding named.
-
-Remap durable output paths from `campaigns/<slug>/` to `wiki/`; use `wiki/templates/`. Replace knowledge-bank wording with wiki wording. Keep the craft procedure.
-
-Generated art preserves the vault's established look when the generation call receives the
-owner's **visual anchors**: reference sheets, portraits, tokens, and appearance prose already
-on that owner's page. Feed those pixels into the host tool's image-input field. Fall back to
-text-only generation only when no usable image exists for the depicted owner.
-
-Anchors lock **identity** — what faces, gear, colours, and silhouettes look like. They do not
-constrain composition, camera angle, mood, or cinematic framing. The generation prompt should
-carry both: anchored identity facts *and* expressive direction for how the scene is shot.
-A flat, clinical prompt produces flat art; a prompt that names a dramatic angle, depth,
-atmosphere, and movement produces cinematic art. The anchors keep it accurate; the direction
-keeps it alive.
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Workflow
 
@@ -63,7 +41,7 @@ keeps it alive.
    central subject has its strongest available anchor attached.
 
 5. **Feed the host image tool.** Use the active harness's native request contract:
-   [OMP](../../../OMP.md), [Codex](../../../CODEX.md), or [Grok Build](../../../GROK.md).
+   [Codex](../../../CODEX.md) or [Grok Build](../../../GROK.md).
    The input field must hold the identity files or host-supported image tokens — a filename
    in prompt text is not the input. A previous generated frame is not an identity anchor.
    Read `references/prompt-inventory.md` for the structured brief template. Completion: when

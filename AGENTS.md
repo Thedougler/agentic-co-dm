@@ -13,6 +13,31 @@ Spec Kit auto-commit is enabled for the configured before/after hooks. The commi
 
 Before writing substantial engineering, agent-system, campaign-architecture, or creative-system work, classify it once and follow the full route in [`docs/agents/hybrid-sdd.md`](docs/agents/hybrid-sdd.md). Routine established campaign content stays on its existing skill, template, lifecycle, and Work route; split mixed requests into their system-changing and routine-content slices. Keep the managed Spec Kit block below disposable.
 
+## Carve-outs
+
+Constitution XXV. Apply the rule to the whole named set. Add an except/exclude/grandfather only after that rule has already failed in this repo; name the failure on the carve-out.
+
+**Done when:** the written rule has no proactive exclude list.
+
+## Canon and done-summary
+
+Canon owner: constitution principle X. File what it makes canon. Unsaid invention is not canon (XII).
+
+Lint contract: `AGENT001` `AGENT002` `AGENT003` via `scripts/check-agent-standards.py`, plus wiki-lint. Iterate until green. Do not ask. Do not interrupt with findings.
+
+After green, one short done-summary: what changed, where. No question. No wait.
+
+Mixed request: do every requested slice, then one done-summary after green.
+
+FR-002 structural repair, template conformance of existing content, named ingest, and bookkeeping run unattended. Dedup merge without a user ask still confirms (destructive, not a Work wait). User-asked merge files.
+
+**Done when:** requested work is filed; applicable checkable rules are green; one done-summary was emitted.
+
+## Project identity
+
+Primary deliverables are skills, agent instructions, and guidance documents. Scripts and tooling support those. Review of skill or instruction changes uses the existing `skill-creator` eval loop (held-out prompts, with-skill vs without-skill, graded assertions). MUST NOT add a checklist, PR template, or review skill. Coverage and type-safety MUST NOT be the primary bar.
+
+
 ## Configuration
 
 Resolve config using the Config Resolution Protocol in `llm-wiki/SKILL.md`:
@@ -36,7 +61,7 @@ You can maintain multiple vaults (each a `~/.obsidian-wiki/config.<name>` file m
 ## Campaign Co-DM
 
 Load `wiki/AGENTS.md` before any write to `wiki/` (campaign `type`, `lifecycle`, `reveal`, complete-sentence prose).
-Load `docs/agents/work.md` before Co-DM prep or wrapup output (Work gate: chat proposal; wiki write after DM accept).
+Load `docs/agents/work.md` before Co-DM prep or wrapup output (table aim and reflection; file what constitution X makes canon).
 
 The 019 loop lives in this file plus `docs/agents/work.md`. Reflection is offered after a session sitting outside `session-recap` (that skill is narrative recap only). No new skill.
 
@@ -48,7 +73,7 @@ If table aim is `missing`, ask the DM to name the players (at least one; tests u
 
 **Production session content** (session-prep beats, TotM/`[!narration]`, action cards, spoken text) is **complete or it does not ship**. Vague/non-specific descriptions of unnamed people/things because the entity page is missing = **critical error**.
 
-**Dependency order (recursive):** If a beat/scene names or requires an NPC, item, creature, place, faction, vehicle, spell, quest, or other entity — **mint/file that owner page first** (kebab basename, matching `wiki/templates/`, `wiki/_staging/` when `WIKI_STAGED_WRITES=true`), **then** write/update the session/TotM text that depends on it. Even when Nick asks for a session that introduces new names — create the entities first. The DM cannot describe what does not exist.
+**Dependency order (recursive):** If a beat/scene names or requires an NPC, item, creature, place, faction, vehicle, spell, quest, or other entity — **mint/file that owner page first** (kebab basename, matching `wiki/templates/`, `wiki/_staging/` when `WIKI_STAGED_WRITES=true`), **then** write/update the session/TotM text that depends on it. A new named owner the user asked to introduce is filed first; spoken that depends on it follows. Existing wiki content MUST NOT wait. The DM cannot describe what does not exist.
 
 Agents MUST complete **all** recursive dependency steps to finish the goal — not only top-level, intermediary, or initial steps — in dependency order. Applies to `session-beats`, typed beat skills, `theatre-of-the-mind`, `cold-opens`, `session-recap`, and Session Architect orchestration. Completeness gate — do **not** thin narrative craft.
 
@@ -97,7 +122,7 @@ Re-read the target file before a multi-hunk edit. Stale line numbers produce ove
 
 ## Helpers
 
-**Wiki maintenance loop:** weekday Layer A scans + fleet routing — `docs/agents/wiki-maintenance-loop.md` (issue #90). Quiet when clean. Never auto lore invent, mass kebab rename, dedup merge, or craft cuts.
+**Wiki maintenance loop:** weekday Layer A scans + fleet routing — `docs/agents/wiki-maintenance-loop.md` (issue #90). Quiet when clean. Never auto lore invent or craft cuts. Filename kebab / Aruhe / `00` remorph runs unattended. Dedup merge without a user ask still confirms.
 
 Wiki canon (`wiki/` campaign pages, ingest, recap, `hot.md`/`index.md`/`log.md`): commit on `main` and push `main`. Agent instructions (skills, `AGENTS.md`, `docs/agents`, harness, agent-facing scripts): feature branch and PR. Mixed sitting: split those two commits. After merges, `./scripts/git-sync-main` from a feature branch (`--force-clean` only for stranded dirt).
 
@@ -105,7 +130,7 @@ If a job will repeat and no existing command does it, create an agent-shaped hel
 
 ### Error ledger
 
-On runtime failure, append to `errors.md` before the sitting is complete. Drain matching entries when a wiki improvement or other landed fix actually removes the cause. Leftover entries for already-fixed causes are wasted context. The DM MUST NOT fill, review, or drain the ledger. A wiki fact write that is the fix still waits on accept; drain after that write lands.
+On runtime failure, append to `errors.md` before the sitting is complete. Drain matching entries when a wiki improvement or other landed fix actually removes the cause. Leftover entries for already-fixed causes are wasted context. The DM MUST NOT fill, review, or drain the ledger. Drain after the fixing write lands.
 
 Examples:
 - `python3 scripts/error-ledger.py error append --cause "…" --sitting "prep: …"`
@@ -118,7 +143,7 @@ As agent-facing files and the wiki (llm-wiki) grow mixed, regroup so one job or 
 
 Wiki layout kinds: Encounters, Rules, Campaign State, DM Intelligence. Agent-facing layout kinds: System, Source Material. MUST NOT duplicate an existing `type`. Do not add `type: encounter` or `type: rules`. No layout-kind frontmatter.
 
-Wiki layout moves have `facts_changed` false, `type_changed` false, and `links_resolve` true after the move. Source Material is `wiki/_raw/` staging. System is skills/`AGENTS.md`/`docs/agents`. System and Source Material MUST NOT be treated as wiki canon. Copying table aim onto DM Intelligence is not a layout move. Wiki fact changes still wait on accept.
+Wiki layout moves have `facts_changed` false, `type_changed` false, and `links_resolve` true after the move. Source Material is `wiki/_raw/` staging. System is skills/`AGENTS.md`/`docs/agents`. System and Source Material MUST NOT be treated as wiki canon. Copying table aim onto DM Intelligence is not a layout move. Wiki fact changes file under constitution X.
 
 ## Writing and visual authorities
 
@@ -233,7 +258,7 @@ When `multi-get` rejects an identifier, do not retry with a different format —
 
 Order (`specs/004-qmd-search-default/contracts/retrieval-precedence.md`): `-c wiki` first; if silence `-c shattered-sea`; if silence `-c legacy-ss`; if still silence, say the wiki is silent.
 
-Wiki hit = current canon. Legacy hit = campaign-of-record context; wiki write only after DM accept. Wiki vs legacy disagreement → cite wiki.
+Wiki hit = current canon. Legacy hit = campaign-of-record context. File user-said canon immediately. Wiki vs legacy disagreement → cite wiki.
 
 
 If `qmd status` fails at session start, run `scripts/qmd-maintain.sh`. After wiki writes, wiki-ingest Step 8 runs that script. Exit 1: report the failure; already-written wiki pages stay.
@@ -453,7 +478,7 @@ Each fact has one owner. Do not restate these in harness config, generated adapt
 | Source + tests | Executable truth |
 | Harness runtime files (`.omp/config.yml`, etc.) | That harness's runtime concerns only |
 | Spec Kit generated adapters | Harness invocation of Spec Kit phases (disposable) |
-`OMP.md` is the OMP-only runtime addendum; when operating under OMP, read it for harness-specific edge cases.
+`.omp/AGENTS.md` is the OMP-only runtime addendum; when operating under OMP, read it for harness-specific edge cases.
 When operating under Codex or Grok Build, read `CODEX.md` or `GROK.md` respectively for harness-specific companion guidance.
 
 Orchestrator procedure: `docs/agents/harness-dispatch.md`.
@@ -485,5 +510,5 @@ The vault format is structurally conformant with the [Open Knowledge Format (OKF
 <!-- SPECKIT START -->
 For additional context about technologies to be used, project structure,
 shell commands, and other important information, read the current plan
-at specs/025-agent-safe-wiki-ops/plan.md
+at specs/026-agent-autonomy-scope/plan.md
 <!-- SPECKIT END -->

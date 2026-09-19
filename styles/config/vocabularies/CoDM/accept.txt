@@ -12,7 +12,6 @@
 10
 11
 12
-\[Vel-Orn
 A Sliver of the Unstable Form
 a-sliver-of-the-unstable-form
 Aarakocra
@@ -133,6 +132,7 @@ Ashwalls
 Ault
 Auralis
 Authority
+Autonomy
 Bad
 Bala
 Bala Tane
@@ -1042,6 +1042,9 @@ Lore
 Lost
 Lotus
 Loud
+Low
+Low Lamp
+low-lamp
 Lupo
 Macaw
 Maddock
@@ -1349,6 +1352,7 @@ preserved-eel
 Print
 Print Braid
 print-braid
+Probe
 Profile
 Prompter's
 Property
@@ -1949,6 +1953,7 @@ The Lava Tubes
 The Ledger Isle
 The Long Wager
 The Loud Argument
+the Low Lamp
 The Mangroves
 The Marrow
 The Marshes
@@ -2059,7 +2064,6 @@ Timeline
 Tin
 Tithe
 Tithe of the Bitch Queen
-tithe-of-the-bitch-queen
 Toa
 Toa Kailani
 Toa Kiri
@@ -2120,9 +2124,11 @@ unsaid-macaw
 Unstable
 Ussa
 Ussamet
+V001
+V001 Autonomy Probe
+v001-autonomy-probe
 Vaelspire
 Vafnar
-Vafnar\]
 Vaka
 Valkur
 Vance

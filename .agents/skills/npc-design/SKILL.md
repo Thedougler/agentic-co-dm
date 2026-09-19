@@ -10,17 +10,7 @@ description: >-
 ---
 
 # NPC design
-## Work gate
-
-Prep only. Follow `docs/agents/work.md`.
-
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). New NPCs are Work: chat first, `type: npc` page only after accept. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. `type: npc` becomes `lifecycle: canon` only after DM accept.
-
-Players see nothing until the DM accepts and presents.
-
-Done when: the DM has a chat proposal they can accept or reject; after accept, the filed `type: npc` page is inspectable Work.
-
-File durable output under `wiki/` (entities/journal as appropriate). Copy `wiki/templates/npc.md` as a scaffold. Pass on person jobs in `wiki/AGENTS.md` Layout. Add optional extra depth from `specs/003-npc-page-standard/contracts/npc-page.md` only when those facts exist.
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Central principle
 

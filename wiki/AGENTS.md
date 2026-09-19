@@ -31,7 +31,7 @@ Do not invent `type` values. Category is the top-level llm-wiki folder (`entitie
 
 Redirect stubs with `redirects_to` omit campaign required fields (`sources`/`type`/`lifecycle`/`reveal`) from wiki-lint HARD `missing_frontmatter`.
 Map early sample labels on file: `location`→`place`, `monster`→`creature`. Player characters use `type: pc` under `wiki/entities/pc/` — never `type: npc` / `entities/npc/`. PC identity signals: `role: PC` (any casing) or a `player:` frontmatter key. Do not file PCs as NPCs with a `pc` tag. World-truth notes use `type: lore`. Actual items stay `item`. Campaign situation pages use `type: quest`.
-`lifecycle` defaults to `proposed` until the DM accepts. `visibility` defaults to `dm` and is distinct from `reveal`. `summary` is one sentence a DM can read in a list. Omit unused identity keys.
+`lifecycle` defaults to `accepted` when the user said the fact; use `proposed` only when the user asked to park it. `visibility` defaults to `dm` and is distinct from `reveal`. `summary` is one sentence a DM can read in a list. Omit unused identity keys.
 
 
 Work pages also set `grounded_in` and `invention` — see `docs/agents/work.md`.
@@ -132,8 +132,8 @@ When a shared job appears, use the shared heading name. DM-visible labels use Ti
 
 ## Approval (FR-019)
 
-Wiki facts change only after the DM accepts. Named ingest of approved sources, and thin complete-sentence stubs for names those sources contain (including as links), may file without a second accept. Invented names not in the source are Work — chat proposal first. Rejected proposals leave no page.
+Wiki facts the user said file immediately (staging if `WIKI_STAGED_WRITES` is on). Named ingest of those sources, and thin complete-sentence stubs for names those sources contain (including as links), file without a second chat step. Unsaid invented names are not canon. HARD entity-before-spoken files the owner page, then spoken.
 
 Layout moves and structure-only template rewrites that keep facts and `type` unchanged proceed without waiting.
 
-Done when: fact writes waited on accept; layout and structure-only rewrites did not.
+Done when: user-said facts are filed; layout and structure-only rewrites did not wait.

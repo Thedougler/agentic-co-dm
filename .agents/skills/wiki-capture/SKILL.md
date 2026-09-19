@@ -43,7 +43,7 @@ Trigger when invoked as `/wiki-capture --quick`, by "quick capture" / "capture t
 
 5. **Infer project context** from repo names, file paths, framework mentions, error messages. Use the most specific name you can reliably infer; else `null`.
 
-6. **Write raw files** — for each cluster, write `$OBSIDIAN_RAW_DIR/<ISO-date>-<slug>.md`. Read `references/RAW-FORMAT.md` for the full frontmatter spec, finding-block body structure, and provenance/confidence calibration. Per-cluster fields that vary: `title`, `tags` (2–4 from taxonomy), `summary` (≤200 chars), `project` (inferred or `null`), `base_confidence` (0.6 discussed → 0.75 fix applied → 0.9 test confirmed), `provenance.extracted`/`provenance.inferred` (sum to 1.0), `lifecycle_changed` (today), `sources` (`"<project> session (<YYYY-MM-DD>)"`).
+6. **Write raw files** — for each cluster, write `$OBSIDIAN_RAW_DIR/<ISO-date>-<slug>.md`. Read `references/raw-format.md` for the full frontmatter spec, finding-block body structure, and provenance/confidence calibration. Per-cluster fields that vary: `title`, `tags` (2–4 from taxonomy), `summary` (≤200 chars), `project` (inferred or `null`), `base_confidence` (0.6 discussed → 0.75 fix applied → 0.9 test confirmed), `provenance.extracted`/`provenance.inferred` (sum to 1.0), `lifecycle_changed` (today), `sources` (`"<project> session (<YYYY-MM-DD>)"`).
 
 7. **Confirm** — list staged files and tell the user to run `/wiki-ingest` to promote them:
    ```

@@ -8,24 +8,7 @@ description: >-
 ---
 
 # Traps & Trials
-## Work gate
-
-Prep only. Follow `docs/agents/work.md`.
-
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Ground invention in wiki pages and/or D&D 5e rules; set `invention: true`, cite `[[pages]]`, and show the DM contradictions. Never present invention as wiki fact or write silent canon. Players see nothing until DM acceptance.
-
-Output durable pages under `wiki/`; templates live in `wiki/templates/`. Point at `docs/agents/work.md`; keep the craft procedure.
-
----
-
-
-Author runnable challenge content for an LLM-maintained campaign wiki
-that doubles as a fast-reference Obsidian vault for the human DM.
-
-This skill owns the **challenge itself**: what exists in the fiction,
-what characters can perceive, how it works, what can be done about it,
-and how the world changes when characters interact with it.
-Session-planning systems own placement and orchestration.
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Operating words
 

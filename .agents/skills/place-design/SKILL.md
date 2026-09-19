@@ -11,23 +11,7 @@ description: >-
 ---
 
 # Place design
-## Work gate
-
-Prep only. Follow `docs/agents/work.md`.
-
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
-
-Players see nothing until the DM accepts and presents.
-
-Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagged, grounding named.
-
-File durable output under `wiki/` (entities/journal as appropriate); templates live in `wiki/templates/`. Replace knowledge-bank language with wiki language, and point at `docs/agents/work.md` rather than restating its glossary. Keep craft procedure.
-
-
-A place is **identity + topology + affordances + inhabitants + information +
-pressure + consequences**. It is not a backdrop or a list of rooms. Design the
-playable situation first, then write only details that change a choice, route,
-risk, resource, clue, pressure, or response.
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Build the place in this order
 
