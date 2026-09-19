@@ -86,10 +86,11 @@ lair_actions:
 | **Adhesive Ground** | Anyone stands on the interior (past the treeline, at the stream's source, or up the slope for fruit) | Automatically Grapples everyone standing there at once (escape roll below) and narrows the 240-foot gap by 20 feet a round via its Heads Close lair action; taking fire damage frees every Grappled creature within 30 feet of the source |
 | **Wounded Resolve** | Reduced to **62 HP** or fewer | Heads Close narrows the gap 40 feet a round instead of 20; at 0 HP it releases every Grappled creature and goes dormant to drift off and heal |
 
-> [!check] Athletics or Acrobatics — Escaping Adhesive Ground
-> DC 17; either skill, disadvantage on the check. Any creature Grappled by the island's Adhesive Ground may attempt this on its own turn.
-> **Success:** the creature pulls free of the ground, ending the Grappled condition on itself.
-> **Failure:** the ground holds. The creature stays Grappled.
+**Athletics or Acrobatics — Escaping Adhesive Ground**
+
+DC 17; either skill, disadvantage on the check. Any creature Grappled by the island's Adhesive Ground may attempt this on its own turn.
+**Success:** the creature pulls free of the ground, ending the Grappled condition on itself.
+**Failure:** the ground holds. The creature stays Grappled.
 
 **Wants:** crews should choose it as shelter, not search it as treasure. It feeds on whoever a full day inland lures in, but a wreck jams its own throat, so it can only bait, never simply close.
 **Morale:** it never breaks, and nothing this crew carries can kill it. Hurt, it stops being patient. A burned grove or a broken headland speeds the bay shut, and it stops waiting for stragglers.

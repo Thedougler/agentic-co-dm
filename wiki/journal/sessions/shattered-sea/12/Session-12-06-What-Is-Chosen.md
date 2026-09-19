@@ -24,16 +24,17 @@ summary: "The survivors state what they choose to obey and point the party towar
 ---
 # Session 12 — What Is Chosen
 
-> [!abstract] Development — the bump
-> **Purpose.** Give the party an explicit choice about the memorial route before the second theft forces a closer one.
->
-> **Trigger.** The party reaches the inland line of the rule-bound route or refuses the followers' path and pauses to decide its own approach.
->
-> **Turn.** Celia and Oren explain that they follow Aruhe's rules by choice because those rules have kept them alive; they do not worship [[Hinewai]] or accept Gold-caste orders as rightful. A living [[giants-guava]] is close enough to become either a temptation or a danger.
->
-> **Exit.** The party commits to approaching the memorial, bypassing it, or using the route as a defensive position while Skarn closes.
->
-> **Target.** About thirty minutes.
+**Development — the bump**
+
+**Purpose.** Give the party an explicit choice about the memorial route before the second theft forces a closer one.
+
+**Trigger.** The party reaches the inland line of the rule-bound route or refuses the followers' path and pauses to decide its own approach.
+
+**Turn.** Celia and Oren explain that they follow Aruhe's rules by choice because those rules have kept them alive; they do not worship [[Hinewai]] or accept Gold-caste orders as rightful. A living [[giants-guava]] is close enough to become either a temptation or a danger.
+
+**Exit.** The party commits to approaching the memorial, bypassing it, or using the route as a defensive position while Skarn closes.
+
+**Target.** About thirty minutes.
 
 > [!narration] Initial Narration
 > The forest thins without becoming open. Ahead, a line of darker trunks stands around a patch of still air, and the grass between you and that line is marked by fallen twigs that Oren placed one at a time. A living guava hangs low enough for a hand to reach, while another fruit lies split and browning beneath it. Beyond the green, something has made a space that the rest of the island does not enter.
@@ -83,6 +84,7 @@ summary: "The survivors state what they choose to obey and point the party towar
 | Bypasses the memorial | The party keeps Aruhe's boundary intact but loses the stillness as a defensive anchor. | [[Session-12-07-The-Guava-and-the-Spinner]] |
 | Turns back | The party has refused the route for now; Skarn can make the second attempt during the retreat. | [[Session-12-07-The-Guava-and-the-Spinner]] |
 
-> [!warning] If the Beat Stalls
->
-> Have Oren name the three rules once, Celia name why she follows them, and the grass show one impossible bend near Crissdalynn. Then ask the party what it is protecting before resolving any further movement.
+**If the Beat Stalls**
+
+
+Have Oren name the three rules once, Celia name why she follows them, and the grass show one impossible bend near Crissdalynn. Then ask the party what it is protecting before resolving any further movement.

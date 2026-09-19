@@ -32,8 +32,7 @@ They take contracts through [[the Flat Water]] and through factors who know to a
 
 **Blood Feeding:** A bloodless job still owes blood; experienced clients build a feeding clause into contract terms before signing. Each member carries 2-3 sealed clay keeps of preserved blood, treated with stinger anticoagulant to keep for 2-3 days.
 
-> [!dm]
-> [[barnaby-rook|Rook]]'s curiosity about Moucherons, prompted by the Five Blades' existence, is what led him to take a Moucheron captive as a specimen — that capture and its fallout are told in full on [[Ket]] and on Rook's own page. The company's side: it was Rook's personal investigation, not a Five Blades action, and the company has no stated awareness of it.
+[[barnaby-rook|Rook]]'s curiosity about Moucherons, prompted by the Five Blades' existence, is what led him to take a Moucheron captive as a specimen — that capture and its fallout are told in full on [[Ket]] and on Rook's own page. The company's side: it was Rook's personal investigation, not a Five Blades action, and the company has no stated awareness of it.
 
 ## Members
 

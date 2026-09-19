@@ -22,8 +22,9 @@ summary: "After Skarn's second theft attempt, the party sees the changed route a
 ---
 # Session 12 — Toward the Memorial
 
-> [!abstract] Resolution — the tag line
-> The session closes when the party can name what Skarn gained or lost, what Perrin chose when Auralis spoke, and whether the party approaches the memorial as guests, investigators, pursuers, or takers.
+**Resolution — the tag line**
+
+The session closes when the party can name what Skarn gained or lost, what Perrin chose when Auralis spoke, and whether the party approaches the memorial as guests, investigators, pursuers, or takers.
 
 ## Run the Beat
 
@@ -71,7 +72,8 @@ Use the branch that matches the actual outcome:
 | Understand the orders | Preserve the scraps, question Jean-Claude when the fiction permits, and compare the evidence with the Gold-caste authority system. |
 | Protect the survivors | Return to [[Session-11-06-Farthest-Camp]] or send Celia and Oren back while the party chooses another approach. |
 
-> [!success] Session close
-> **Different now:** The party has seen imposed authority, inherited expectation, chosen survival, and personal refusal collide in one route.
->
-> **Want next:** Ask the players which of the memorial, the stolen object, the surviving people, or the unanswered patron voice they want to pursue.
+**Session close**
+
+**Different now:** The party has seen imposed authority, inherited expectation, chosen survival, and personal refusal collide in one route.
+
+**Want next:** Ask the players which of the memorial, the stolen object, the surviving people, or the unanswered patron voice they want to pursue.

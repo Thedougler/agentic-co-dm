@@ -1,5 +1,4 @@
 ---
----
 title: Landing Bank
 category: entities
 tags: [shattered-sea, aruhe, place]

@@ -4,7 +4,7 @@ type: work
 sections: []
 repeatable: []
 callouts:
-  allowed: [narration]
+  allowed: [narration, mechanic, secret]
 frontmatter:
   required: [title, category, tags, sources, created, updated, type, lifecycle, reveal]
   optional: [grounded_in, summary]

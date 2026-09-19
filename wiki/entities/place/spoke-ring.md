@@ -1,5 +1,4 @@
 ---
----
 title: Spoke Ring
 category: entities
 tags: [shattered-sea, aruhe, place]

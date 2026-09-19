@@ -25,12 +25,13 @@ truth: partial
 ---
 # Season 2
 
-> [!abstract] At a Glance
-> **Core truth.** Season 2 is an open [[Midchain]] sandbox. The crew can sail to any island. Hooks reach them there.
->
-> **Why it matters.** No sanctioned employer sends them. Ship combat, privateering, and exploration all get regular table time.
->
-> **Scope.** Level 5 to 10 across twenty or more sessions.
+## At a Glance
+
+**Core truth.** Season 2 is an open [[Midchain]] sandbox. The crew can sail to any island. Hooks reach them there.
+
+**Why it matters.** No sanctioned employer sends them. Ship combat, privateering, and exploration all get regular table time.
+
+**Scope.** Level 5 to 10 across twenty or more sessions.
 
 ## Current Truth
 

@@ -45,13 +45,14 @@ Southwest bearing. Seven days on the Crown's search water. Delmar's return.
 
 ![[kalowes-frozen-council-narration-condition]]
 
-> [!check] Kalowe's Frozen Council
->
-> | Check | DC | Failure | Pass |
-> |---|---|---|---|
-> | History | 14 | a port | [[delmar-fisk]]'s old commission can become blame or leverage |
-> | Perception | 13 | a shrine | [[Kalowe Waveservant Shrine]] takes tribute from every arriving hull |
-> | Investigation | 15 | council talk | [[detto-kalash]]'s mail route, or the [[fleet-commanders-chair]]'s old debts |
+**Kalowe's Frozen Council**
+
+
+| Check | DC | Failure | Pass |
+|---|---|---|---|
+| History | 14 | a port | [[delmar-fisk]]'s old commission can become blame or leverage |
+| Perception | 13 | a shrine | [[Kalowe Waveservant Shrine]] takes tribute from every arriving hull |
+| Investigation | 15 | council talk | [[detto-kalash]]'s mail route, or the [[fleet-commanders-chair]]'s old debts |
 
 ![[kalowes-frozen-council#Premise]]
 
@@ -63,13 +64,14 @@ The leg is [[central-strait-crossing]].
 
 ![[kalowes-frozen-council#Actors]]
 
-> [!check] Actors
->
-> | Check | DC | Failure | Pass |
-> |---|---|---|---|
-> | Insight | 14 | four fronts | which Council voice is buying time |
-> | Persuasion | 16 | the room holds | a vote, a re-term, or [[delmar-fisk]] named in public |
-> | Religion | 13 | a shrine fee | [[Waveservants]] want the sea's due before the meeting |
+**Actors**
+
+
+| Check | DC | Failure | Pass |
+|---|---|---|---|
+| Insight | 14 | four fronts | which Council voice is buying time |
+| Persuasion | 16 | the room holds | a vote, a re-term, or [[delmar-fisk]] named in public |
+| Religion | 13 | a shrine fee | [[Waveservants]] want the sea's due before the meeting |
 
 ## 3 — If they dig
 

@@ -1,5 +1,4 @@
 ---
----
 title: The Mangroves
 category: entities
 tags: [shattered-sea, aruhe, region]

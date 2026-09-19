@@ -39,8 +39,9 @@ region: "south of Chult"
 A roughly 60,000-square-mile archipelago weeks beyond the last charted Faerûn coast; two island arcs and a shipping corridor make every crossing a negotiation. Feels remote, exposed, and politically unfinished.
 ## Current state
 
-> [!summary] Status quo — as of 1495 DR (Season 2)
-> The crew works from mobile [[Uncertainty]] after the first chosen stop at [[Sparhold]]. Immediate pressure is the wreck field, [[aruhe]] survivors, taking-places, and the crown squid around Aruhe.
+**Status quo — as of 1495 DR (Season 2)**
+
+The crew works from mobile [[Uncertainty]] after the first chosen stop at [[Sparhold]]. Immediate pressure is the wreck field, [[aruhe]] survivors, taking-places, and the crown squid around Aruhe.
 
 * **Recent change.** Season 2 opened at and around Aruhe after Sparhold.
 * **Pressure.** Active named pressures include the Maw fissure and tribute system, [[the-taken-314]], Long Sight Hunt, Rule of Two, Schism's Third Name, and Countless through the Maw seal. Soul Incarnate's Watch remains dormant until [[crissdalynn-khinriss]] completes a Maw pilgrimage.

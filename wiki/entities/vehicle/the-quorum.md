@@ -24,8 +24,7 @@ tier: supporting
 ---
 # The Quorum
 
-> [!quote]
-> A single-masted cutter sits low at the Kalowe dock, hull tarred black with copper-sheathed waterline. She bears only her name, stenciled on the transom. She looks like a working boat with good rope.
+A single-masted cutter sits low at the Kalowe dock, hull tarred black with copper-sheathed waterline. She bears only her name, stenciled on the transom. She looks like a working boat with good rope.
 
 A single-masted cutter, 48 feet on the waterline, built at the [[Kalowe]] dry dock and kept by the [[chain-council]] as a dispatch vessel. Bare of flag and figurehead, she bears only *Quorum* stenciled in small letters on the transom. Hull tarred black with a copper-sheathed waterline.
 

@@ -44,8 +44,7 @@ She does not sail on patrol but is the Crown's court on the water. She listens t
 
 Decks, bow to stern: weather deck (quarterdeck aft with wheel, compass, signals, Admiral's walk; Admiralty Court aft deckhouse; open gun positions amidships); upper gun deck (14 guns per side, officers' quarters aft including the Admiral's cabin with private chart room); main gun deck (14 guns per side, Registry Vault aft, crew berths and mess forward); lower gun deck (14 guns per side, operating at the waterline, ports open only in fair weather, Gunner's Magazine directly below); orlop deck (no guns: carpenter's stores, chain locker, bosun's stores, sailcloth, junior officer berths); hold (ballast, water casks, provisions, spare timber, 160 tons cargo, typically impound cargo in transit).
 
-> [!dm]
-> Source's own callout: superseded by [[hcs-sovereign]] as the definitive Tier 4 Crown flagship. The *Ordinance* may still exist as a secondary vessel or may have been refit/renamed. Confirm with DM intent before seating her in a scene.
+Source's own callout: superseded by [[hcs-sovereign]] as the definitive Tier 4 Crown flagship. The *Ordinance* may still exist as a secondary vessel or may have been refit/renamed. Confirm with DM intent before seating her in a scene.
 
 **Facilities** (source's own Bastion mapping):
 

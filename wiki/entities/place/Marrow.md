@@ -43,8 +43,7 @@ Gives no other name and is not asked for one. He has operated from his alcove in
 
 Cargo broker and document transporter at [[Marrow's]] in the Warren. Moves things that need to stay invisible. Reaching him requires a Kin introduction.
 
-> [!dm]
-> Currently holding the crate that courier Dren was transporting when [[serin-haut]] killed him. The crate contains the Vretek/Brol letter, silver, and a signet ring. See [[Warren, Marrow's Crate]].
+Currently holding the crate that courier Dren was transporting when [[serin-haut]] killed him. The crate contains the Vretek/Brol letter, silver, and a signet ring. See [[Warren, Marrow's Crate]].
 
 ## Stats & Combat
 

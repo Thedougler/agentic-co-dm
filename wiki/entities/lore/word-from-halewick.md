@@ -40,5 +40,6 @@ Tavern and dock talk at [[Kalowe]] and other [[Midchain]] ports along the shippi
 
 ## Investigating It
 
-> [!check] Investigation — Separate Legend From Coastline
-> DC 14. **Success:** the pirate-crew accounts, stripped of their embellishment, agree on real specifics: an island called Halewick, a child fully in charge, and real, undisputed danger in earshot of him. The newest versions' second voice and buried plea line up with something happening right now, not old history, worth chasing before the story gets any older. **Failure:** the story stays a ghost tale about a boy god who kills with a word. A wrong island gets named as confidently as the right one, and running it down first costs a real day's sailing for nothing.
+**Investigation — Separate Legend From Coastline**
+
+DC 14. **Success:** the pirate-crew accounts, stripped of their embellishment, agree on real specifics: an island called Halewick, a child fully in charge, and real, undisputed danger in earshot of him. The newest versions' second voice and buried plea line up with something happening right now, not old history, worth chasing before the story gets any older. **Failure:** the story stays a ghost tale about a boy god who kills with a word. A wrong island gets named as confidently as the right one, and running it down first costs a real day's sailing for nothing.

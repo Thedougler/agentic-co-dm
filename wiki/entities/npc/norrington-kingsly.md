@@ -38,8 +38,7 @@ A large man, round and red-faced. He fills a chair. He wore the Dravosi uniform 
 
 He ran [[Midchain|the Midchain]] patrol route for over a decade and knew every captain through trust built over drinks and checked manifests. Before Session 01, someone rotated him off and quietly retired him. He now keeps a table at a tavern in [[calders-tooth-and-port-tidefall]], eats well, and talks often, though he never mentions the route.
 
-> [!dm]
-> He doesn't press the matter of why they retired him. They pushed him out to make room for [[barnaby-rook|Rook]]'s shakedown operation. Surfacing what he knows would expose eleven years of his own complicity. What came next was corrupt, unpredictable, and lethal.
+He doesn't press the matter of why they retired him. They pushed him out to make room for [[barnaby-rook|Rook]]'s shakedown operation. Surfacing what he knows would expose eleven years of his own complicity. What came next was corrupt, unpredictable, and lethal.
 
 ## Connections
 

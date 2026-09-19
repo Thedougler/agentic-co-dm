@@ -45,13 +45,14 @@ Far-east bearing. Two pressure-rig companies watch which dock receives the *[[Un
 
 ![[fathomrushs-split-harbor-narration-condition]]
 
-> [!check] Fathomrush's Split Harbor
->
-> | Check | DC | Failure | Pass |
-> |---|---|---|---|
-> | Perception | 13 | two docks | which compound watches the *[[Uncertainty]]* |
-> | Investigation | 15 | a clean trial | [[Fathomrush Last Berth False Log]] — Sunkline's forged valve |
-> | Insight | 14 | a memorial | a fresh name on Voyvode's wall — [[petera-ngata]] |
+**Fathomrush's Split Harbor**
+
+
+| Check | DC | Failure | Pass |
+|---|---|---|---|
+| Perception | 13 | two docks | which compound watches the *[[Uncertainty]]* |
+| Investigation | 15 | a clean trial | [[Fathomrush Last Berth False Log]] — Sunkline's forged valve |
+| Insight | 14 | a memorial | a fresh name on Voyvode's wall — [[petera-ngata]] |
 
 ![[fathomrushs-split-harbor#Premise]]
 
@@ -61,13 +62,14 @@ Far-east bearing. Two pressure-rig companies watch which dock receives the *[[Un
 
 ![[fathomrushs-split-harbor#Actors]]
 
-> [!check] Actors
->
-> | Check | DC | Failure | Pass |
-> |---|---|---|---|
-> | Persuasion | 14 | company talk | [[branimir-karsovine]] or Adriana names the real failure |
-> | Insight | 13 | grief | [[petera-ngata]] will not let the dead become property |
-> | Investigation | 16 | no public record | the claimed trial never happened |
+**Actors**
+
+
+| Check | DC | Failure | Pass |
+|---|---|---|---|
+| Persuasion | 14 | company talk | [[branimir-karsovine]] or Adriana names the real failure |
+| Insight | 13 | grief | [[petera-ngata]] will not let the dead become property |
+| Investigation | 16 | no public record | the claimed trial never happened |
 
 ## 3 — If they dig
 

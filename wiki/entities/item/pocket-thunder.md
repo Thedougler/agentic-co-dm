@@ -61,10 +61,11 @@ Comparable to Dust of Sneezing and Choking (Uncommon, thrown, area effect, Const
 >
 > **Limitations:** deals no damage and breaks no concentration. A creature already immune to blinded or deafened feels nothing. Smoking it does nothing at all.
 
-> [!check] Constitution Save — The Detonation
-> DC 13; every creature within 10 feet of the landing point rolls, wielder included.
-> **Success:** no effect.
-> **Failure:** the blast blinds and deafens the creature until the end of its next turn.
+**Constitution Save — The Detonation**
+
+DC 13; every creature within 10 feet of the landing point rolls, wielder included.
+**Success:** no effect.
+**Failure:** the blast blinds and deafens the creature until the end of its next turn.
 
 ## Provenance
 

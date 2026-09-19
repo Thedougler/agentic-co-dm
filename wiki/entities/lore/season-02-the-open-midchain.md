@@ -28,8 +28,9 @@ region: "Midchain"
 ---
 # Season 02: The Open Midchain
 
-> [!warning] Draft fiction
-> Draft fiction, not canon. Canon lives on the wiki. Restored from archive for S2 pressure reference; do not treat as established fact.
+**Draft fiction**
+
+Draft fiction, not canon. Canon lives on the wiki. Restored from archive for S2 pressure reference; do not treat as established fact.
 
 *Draft fiction, not canon. Canon lives on the wiki. Derived pages: (none yet).*
 

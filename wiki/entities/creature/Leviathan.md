@@ -64,10 +64,11 @@ This convergence (the Pearl of Souls, Perrin's Leviathan encounter, and [[crissd
 
 ## Prepped Reveals
 
-> [!check] Nature or Arcana — Recognizing the Displaced Kind
-> DC 15. Anyone who gets a good look at the hide may roll.
-> **Success:** the flat-black, eyeless hide and blindsight match two smaller predators sailors have separately reported, Ridgeback and Krakling, confirming more than one Elemental Plane of Water entity has already crossed through The Drowned Maw's breach.
-> **Failure:** nothing beyond what's already obvious, that this thing doesn't behave like any known sea predator.
+**Nature or Arcana — Recognizing the Displaced Kind**
+
+DC 15. Anyone who gets a good look at the hide may roll.
+**Success:** the flat-black, eyeless hide and blindsight match two smaller predators sailors have separately reported, Ridgeback and Krakling, confirming more than one Elemental Plane of Water entity has already crossed through The Drowned Maw's breach.
+**Failure:** nothing beyond what's already obvious, that this thing doesn't behave like any known sea predator.
 
 ## Stats & Combat
 

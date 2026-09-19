@@ -72,13 +72,14 @@ East bearing. Lying compasses, warm water, [[shelfworks|the Shelfworks]].
 
 ![[drowned-maws-open-shelf-narration-condition]]
 
-> [!check] The Drowned Maw's Open Shelf
->
-> | Check | DC | Failure | Pass |
-> |---|---|---|---|
-> | Survival | 14 | warm water | a heat line burned at eighty feet |
-> | Survival | 15 | the compass lies | the shelf, not the chart, is true |
-> | Perception | 13 | wrecks | lower workshops still reachable — [[shelfworks]] |
+**The Drowned Maw's Open Shelf**
+
+
+| Check | DC | Failure | Pass |
+|---|---|---|---|
+| Survival | 14 | warm water | a heat line burned at eighty feet |
+| Survival | 15 | the compass lies | the shelf, not the chart, is true |
+| Perception | 13 | wrecks | lower workshops still reachable — [[shelfworks]] |
 
 ![[drowned-maws-open-shelf#Premise]]
 
@@ -92,13 +93,14 @@ East bearing. Lying compasses, warm water, [[shelfworks|the Shelfworks]].
 
 ![[drowned-maws-open-shelf#Actors]]
 
-> [!check] Actors
->
-> | Check | DC | Failure | Pass |
-> |---|---|---|---|
-> | Arcana | 15 | heat | [[auralis]]'s failing containment, not a vent |
-> | Insight | 14 | a patron's order | [[perrin-black-jaw]] is being driven, not hired |
-> | Investigation | 16 | salvage | the Pearl and the souls inside it — [[umberlee]] |
+**Actors**
+
+
+| Check | DC | Failure | Pass |
+|---|---|---|---|
+| Arcana | 15 | heat | [[auralis]]'s failing containment, not a vent |
+| Insight | 14 | a patron's order | [[perrin-black-jaw]] is being driven, not hired |
+| Investigation | 16 | salvage | the Pearl and the souls inside it — [[umberlee]] |
 
 ![[moment-13-the-shelfworks-narration-open]]
 

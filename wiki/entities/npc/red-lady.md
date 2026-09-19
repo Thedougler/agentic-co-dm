@@ -37,10 +37,11 @@ The wreck sits at [[Shelfworks|the Shelfworks]]' eastern edge, below [[Umberlee]
 
 A salvage group is gathering in [[calven-and-calveno]] to raise the wreck. Strange money has caught the eye of [[savia-brentino]] and [[The Tangle]]. [[batta-zusto]] serves as their broker, knowing the group but not who funds it. The team runs 8 to 10 crew members with two or more trained to dive deep. Their mid-size cargo ship carries sealed maps, diving gear, air bags, and rope for the 10 to 14 day trip.
 
-> [!check] Investigation — Canal District Gossip on the Commission
-> DC 12 to gather two of the three details below from [[le-paludi]] tavern talk, ferry workers, and dock crews. (DC 8 if [[delmar-fisk|Delmar]] asks specifically about Maw salvage equipment.)
-> **Success:** two of three details. A rental of three pieces of diving apparatus (unusual for Calveno), a quantity of compressed-air bladders moving out of two factoring houses toward an outer basin anchorage, and a sealed chart package a courier refused to let anyone else carry.
-> **Failure:** only vague talk of unusual money moving toward an outer basin anchorage.
+**Investigation — Canal District Gossip on the Commission**
+
+DC 12 to gather two of the three details below from [[le-paludi]] tavern talk, ferry workers, and dock crews. (DC 8 if [[delmar-fisk|Delmar]] asks specifically about Maw salvage equipment.)
+**Success:** two of three details. A rental of three pieces of diving apparatus (unusual for Calveno), a quantity of compressed-air bladders moving out of two factoring houses toward an outer basin anchorage, and a sealed chart package a courier refused to let anyone else carry.
+**Failure:** only vague talk of unusual money moving toward an outer basin anchorage.
 
 > [!mechanic]
 > **Commission assembly clock.** 8 to 10 days to departure from Calveno when the party arrives. It ticks on each day that passes or each Maw-relevant decision the party delays. Visible tick: [[batta-zusto|Zusto]] mentions the supply chain closing, or [[Savia]] sees a lugger taking on unusual cargo at the outer anchorage. **Consequence at fill:** the commission launches fully equipped and heads for the Maw. The party may arrive ahead of it, behind it, or alongside it depending on their pace. If ignored outright, it reaches the wreck first and the *Red Lady* is not empty when the party gets there.

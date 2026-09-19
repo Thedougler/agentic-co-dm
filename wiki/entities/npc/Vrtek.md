@@ -29,11 +29,9 @@ tier: supporting
 
 Small Rattkin dockhand, coat with more pockets than any coat has a right to. Currently between ships and passing through [[calders-tooth-and-port-tidefall]], seen at the [[Anchor and Line]]. Neutral disposition. Leaving port tomorrow unless something interesting happens.
 
-> [!dm]
-> He found a crumpled note in his coat pocket (pulled from a Crown officer's coat during a crowd or close deal, he's unclear). He can't read the script. He doesn't know it's a treasure map: the note holds [[detto-kalash]]'s buried cache directions (location, tide window, and DCs on [[Inspection Pier]]). The same coat also held four coins, a brass button, a candle stub, a carved fish, and a Dravosi rating stamp.
+He found a crumpled note in his coat pocket (pulled from a Crown officer's coat during a crowd or close deal, he's unclear). He can't read the script. He doesn't know it's a treasure map: the note holds [[detto-kalash]]'s buried cache directions (location, tide window, and DCs on [[Inspection Pier]]). The same coat also held four coins, a brass button, a candle stub, a carved fish, and a Dravosi rating stamp.
 
-> [!dm]
-> Sosse, a regular at the [[Anchor and Line]], tells [[perrin-black-jaw|Perrin]] after the third drink that Vrtek has something official that does not belong to him.
+Sosse, a regular at the [[Anchor and Line]], tells [[perrin-black-jaw|Perrin]] after the third drink that Vrtek has something official that does not belong to him.
 
 ## Connections
 

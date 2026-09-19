@@ -23,16 +23,17 @@ summary: "A valley mass grave proves that Gold kept sending replacements after A
 ---
 # Session 12 — Two-Grave Orders
 
-> [!abstract] Development — the bump
-> **Purpose.** Make the history of obedience concrete without revealing the full Death Bloom.
->
-> **Trigger.** The party reaches the valley where the death trail becomes a mass grave.
->
-> **Turn.** Bodies, seals, and order scraps prove that Gold knew expeditions were dying and kept sending replacements; the latest fragments move from “go inland and report” toward “find and destroy two graves.”
->
-> **Exit.** The party can choose to follow the route toward [[memorial-grove]], return with the survivors, or reject the order's objective while carrying its evidence.
->
-> **Target.** About forty-five minutes.
+**Development — the bump**
+
+**Purpose.** Make the history of obedience concrete without revealing the full Death Bloom.
+
+**Trigger.** The party reaches the valley where the death trail becomes a mass grave.
+
+**Turn.** Bodies, seals, and order scraps prove that Gold knew expeditions were dying and kept sending replacements; the latest fragments move from “go inland and report” toward “find and destroy two graves.”
+
+**Exit.** The party can choose to follow the route toward [[memorial-grove]], return with the survivors, or reject the order's objective while carrying its evidence.
+
+**Target.** About forty-five minutes.
 
 > [!narration] Initial Narration
 > The grass drops into a shallow valley where the soil has been turned over many times. Bones lie in layers instead of a single burial, some wrapped in rotted cloth and some still wearing the marks of Grung rank. Broken seals glint between ribs and roots. At the far end, the bodies stop at a clean line of living green that leads inland toward darker forest.
@@ -98,6 +99,7 @@ flexGrow=2
 | Turns back | Celia and Oren can carry the evidence, and Skarn can become the next immediate problem. | [[Session-12-05-The-Rule-Bound-Route]] |
 | Presses directly toward the memorial | Oren gives the party only the minimum safe route and warns that Hinewai may appear. | [[Session-12-05-The-Rule-Bound-Route]] |
 
-> [!warning] If the Beat Stalls
->
-> Celia places one scrap beside each burial layer and reads only the verbs she can confirm: report, replace, find, destroy. The party does not need a complete translation to choose what it will not do.
+**If the Beat Stalls**
+
+
+Celia places one scrap beside each burial layer and reads only the verbs she can confirm: report, replace, find, destroy. The party does not need a complete translation to choose what it will not do.

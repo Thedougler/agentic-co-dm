@@ -30,12 +30,13 @@ relationships:
 ---
 # Istishia
 
-> [!abstract] At a Glance
-> **Core truth.** Istishia is a name that can point at the [[elemental-plane-of-water]] and its cosmology in Maw discussions.
->
-> **Why it matters.** The name stays available for cosmological explanation without becoming a committed plot engine.
->
-> **Scope.** Cosmology pointer only.
+## At a Glance
+
+**Core truth.** Istishia is a name that can point at the [[elemental-plane-of-water]] and its cosmology in Maw discussions.
+
+**Why it matters.** The name stays available for cosmological explanation without becoming a committed plot engine.
+
+**Scope.** Cosmology pointer only.
 
 ## Current Truth
 

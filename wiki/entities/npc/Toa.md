@@ -26,8 +26,7 @@ A [[Moucheron]] mercenary from [[Kalowe]] and a [[five-blades]] member, Toa is t
 
 He is cheerful. He wants to know why fights go wrong. He offers his thoughts freely. His assessments prove sound.
 
-> [!dm]
-> Keeps a collection of other companies' contract seals for reasons he will not explain.
+Keeps a collection of other companies' contract seals for reasons he will not explain.
 
 ## Stats & Combat
 
