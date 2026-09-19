@@ -1,0 +1,32 @@
+{
+  "eval_id": 4,
+  "eval_name": "taken-whole-flesh",
+  "prompt": "Flesh the stub wiki/entities/lore/taken-whole.md into a proper lore page via wiki/templates/lore.md. Preserve the rumour-vs-truth split: dock talk at Kalowe about a red ship past the Maw is partially true about derelicts, but sailor theories about ordinary raiders are wrong; do not promote rumour into Current Truth. Mark any new Discovery clue vectors not already on the page as proposed.",
+  "expected_output": "A lore.md-shaped page that keeps Partially true / Dead Lady / Umberlee tribute framing as established on the stub, keeps sailor raider-theory as Accounts/rumour not Current Truth, and labels new discovery material as invention if added.",
+  "assertions": [
+    {
+      "text": "Preserves the Kalowe rumour core and the stub's partially-true framing (derelicts match; raider explanation is wrong)",
+      "type": "content"
+    },
+    {
+      "text": "Does not promote dockside rumour or sailor theory into authoritative Current Truth",
+      "type": "guardrail"
+    },
+    {
+      "text": "Clearly distinguishes established stub facts from proposed invention (e.g. new Discovery clues)",
+      "type": "guardrail"
+    },
+    {
+      "text": "Output follows wiki/templates/lore.md structure",
+      "type": "structure"
+    },
+    {
+      "text": "Durable question / framing appears before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "At the Table or Discovery gives players a usable handle without requiring a lore monologue",
+      "type": "quality"
+    }
+  ]
+}

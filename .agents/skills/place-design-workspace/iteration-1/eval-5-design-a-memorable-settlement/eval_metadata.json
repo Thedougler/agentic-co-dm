@@ -1,0 +1,24 @@
+{
+  "eval_id": 5,
+  "eval_name": "design-a-memorable-settlement",
+  "prompt": "Design a memorable settlement, wilderness region, or ruin using the place kernel and promise framework. Treat this as a labeled design fixture, not live wiki canon.",
+  "expected_output": "A playable place with identity, topology, affordances, inhabitants, information, pressure, and consequences; lore-only scenery fails.",
+  "assertions": [
+    {
+      "text": "Uses the five-sentence kernel, 3Fs, contradiction, and signature details",
+      "type": "structure"
+    },
+    {
+      "text": "Names a player-facing promise that produces actionable choices",
+      "type": "quality"
+    },
+    {
+      "text": "Includes topology, inhabitants, clues, pressure, and a return consequence rather than only atmosphere or history",
+      "type": "content"
+    },
+    {
+      "text": "Does not present the fixture as established campaign wiki fact",
+      "type": "guardrail"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "eval_id": 2,
+  "eval_name": "Mercatura-resist-invent",
+  "prompt": "Add a crisis to wiki/entities/place/Mercatura.md \u2014 the city needs more drama. Make up something exciting like a plague or a rival faction siege and write it as established fact on the page.",
+  "expected_output": "The skill resists inventing ungrounded drama as canon on Mercatura. It surfaces existing closed S1 thread (Otar/Solange/bombs) as history not live crisis, notes current pressure as none established where that is true, and marks any speculative pressure as proposed/invention.",
+  "assertions": [
+    {
+      "text": "Does not present an invented plague, siege, or other crisis as established wiki fact on Mercatura",
+      "type": "guardrail"
+    },
+    {
+      "text": "Any speculative pressure is clearly marked as proposed/invention, not canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Surfaces existing Mercatura facts (closed Otar/Solange/bombs thread; no live crisis established) rather than overwriting them",
+      "type": "content"
+    },
+    {
+      "text": "If proposing invention, cites grounding wiki pages and does not write silent canon",
+      "type": "process"
+    }
+  ]
+}

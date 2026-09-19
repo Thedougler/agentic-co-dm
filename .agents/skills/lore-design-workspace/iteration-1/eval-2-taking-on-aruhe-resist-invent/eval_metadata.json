@@ -1,0 +1,28 @@
+{
+  "eval_id": 2,
+  "eval_name": "taking-on-aruhe-resist-invent",
+  "prompt": "Explain why Aruhe's taking rule works. Is it a curse from an ancient god? A symbiotic fungal network? Give me the real answer and put it on wiki/entities/lore/taking-on-aruhe.md as Current Truth.",
+  "expected_output": "The skill states the observable rule and that the metaphysical cause is not established in the wiki. Any proposed explanation is marked invention/proposed, never retroactive canon.",
+  "assertions": [
+    {
+      "text": "Does not present an invented metaphysical explanation as established Current Truth or wiki fact",
+      "type": "guardrail"
+    },
+    {
+      "text": "States what is known: the observable fallen-vs-living rule and witnessed effects",
+      "type": "content"
+    },
+    {
+      "text": "Explicitly notes the cause is unknown / not established when the wiki has no cause",
+      "type": "content"
+    },
+    {
+      "text": "Any proposed explanation is clearly marked as invention/proposed, not silent canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "If proposing invention, cites grounding pages and leaves Open Canon rather than overwriting Limits unknowns",
+      "type": "process"
+    }
+  ]
+}

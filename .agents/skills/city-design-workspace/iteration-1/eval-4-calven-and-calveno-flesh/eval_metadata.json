@@ -1,0 +1,36 @@
+{
+  "eval_id": 4,
+  "eval_name": "calven-and-calveno-flesh",
+  "prompt": "Flesh the settlement stub wiki/entities/place/calven-and-calveno.md toward a proper city page via wiki/templates/city.md. Live page is kind:settlement \u2014 upgrade toward kind:city / city.md. Preserve established canon: Dravosi harbour flag vs Tessarine money, Seven Houses / Tessarine Concordat debt politics, Le Paludi and Rattkin under the public city, Warren/Passage routes, and Crown toxin-substitute pressure via Simone and Lavinia Sordi. Wiki Linter marked hard_fail=false on calven-and-calveno.md; assert output template conformance of the upgrade. Mark any new districts/services beyond the stub as invention.",
+  "expected_output": "A fleshed city.md-shaped Calven/Calveno that keeps Dravosi/Tessarine/Seven Houses/Warren/Passage/Simone/Lavinia canon, finishes as type:place kind:city, clearly separates canon from proposed invention, and does not invent plague/siege as silent canon.",
+  "assertions": [
+    {
+      "text": "Preserves Dravosi harbour authority, Tessarine Concordat / Seven Houses debt politics, Le Paludi/Rattkin, Warren/Passage links, and Simone/Lavinia Sordi Crown toxin-substitute pressure accurately",
+      "type": "content"
+    },
+    {
+      "text": "Frontmatter uses type: place and kind: city (upgrade from kind:settlement)",
+      "type": "structure"
+    },
+    {
+      "text": "Clearly distinguishes established stub canon from proposed invention throughout",
+      "type": "guardrail"
+    },
+    {
+      "text": "Output follows wiki/templates/city.md structure",
+      "type": "structure"
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "Does not invent a plague, siege, invasion, or disaster absent from the wiki and present it as canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Proposed districts/services are grounded in Calveno's harbour/credit/Passage function, not generic fantasy filler",
+      "type": "quality"
+    }
+  ]
+}

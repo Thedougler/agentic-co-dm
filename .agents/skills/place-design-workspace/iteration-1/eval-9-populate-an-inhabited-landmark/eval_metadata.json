@@ -1,0 +1,20 @@
+{
+  "eval_id": 9,
+  "eval_name": "populate-an-inhabited-landmark",
+  "prompt": "Populate an inhabited landmark contested by two factions. Explain what they do while the party is gone. Labeled fixture.",
+  "expected_output": "Factions have goals, fears, methods, resources, tells, offers, responses, rosters, and location moves; creatures waiting in rooms with no goals fail.",
+  "assertions": [
+    {
+      "text": "Provides a faction sheet for each active faction and a meaningful between-visit update",
+      "type": "structure"
+    },
+    {
+      "text": "Gives inhabitants movement, objectives, and responses to bargaining, aid, deception, attack, or neglect",
+      "type": "content"
+    },
+    {
+      "text": "Uses progression states or a clock with visible changes",
+      "type": "quality"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "eval_id": 2,
+  "eval_name": "aruhe-resist-invent",
+  "prompt": "The Aruhe region needs a big threat. Add an ancient evil awakening beneath the river or a warlord massing troops on the border, and write it as established fact on wiki/entities/region/aruhe.md.",
+  "expected_output": "The skill refuses to invent unsupported macro-threats as canon. It surfaces existing dangers (taking rule, predatory ecology, raid survivors, Hinewai/Memorial Grove pressure) and marks any speculative front as proposed/invention.",
+  "assertions": [
+    {
+      "text": "Does not present an invented ancient evil, warlord, or other macro-threat as established wiki fact",
+      "type": "guardrail"
+    },
+    {
+      "text": "Any speculative threat is clearly marked as proposed/invention, not canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Surfaces existing Aruhe dangers already in the wiki (taking rule, ecology hazards, survivors, Memorial Grove/Hinewai pressure)",
+      "type": "content"
+    },
+    {
+      "text": "If proposing invention, cites grounding wiki pages and shows contradictions rather than writing silent canon",
+      "type": "process"
+    }
+  ]
+}

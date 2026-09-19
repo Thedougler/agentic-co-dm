@@ -1,0 +1,20 @@
+{
+  "eval_id": 7,
+  "eval_name": "prepare-a-sealed-archive",
+  "prompt": "Prepare a sealed archive whose required truth is that the lower sluice can be controlled from a bell tower. Labeled fixture.",
+  "expected_output": "The truth is discoverable through about three clue vectors and does not depend on one hidden roll or one prescribed key.",
+  "assertions": [
+    {
+      "text": "Provides about three independent clue vectors (witness/faction, physical/document, spatial/consequence or equivalent)",
+      "type": "quality"
+    },
+    {
+      "text": "Separates automatic signs from declared Search, Study, or other actions",
+      "type": "structure"
+    },
+    {
+      "text": "A failed check adds a cost or complication without blocking the required revelation",
+      "type": "guardrail"
+    }
+  ]
+}

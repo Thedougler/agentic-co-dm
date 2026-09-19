@@ -1,0 +1,20 @@
+{
+  "eval_id": 6,
+  "eval_name": "map-the-significant-nodes",
+  "prompt": "Map the significant nodes and routes of a ruin with several approaches to its central objective. Labeled fixture \u2014 not vault canon.",
+  "expected_output": "A decision graph with loops, bypasses, retreats, and route tradeoffs; no-topology or purely linear maps fail.",
+  "assertions": [
+    {
+      "text": "Presents nodes and edges before room or landmark prose",
+      "type": "structure"
+    },
+    {
+      "text": "Includes at least one meaningful loop, bypass, and retreat or safe return where plausible",
+      "type": "content"
+    },
+    {
+      "text": "Explains cost, information, danger, or consequence of important edges",
+      "type": "quality"
+    }
+  ]
+}

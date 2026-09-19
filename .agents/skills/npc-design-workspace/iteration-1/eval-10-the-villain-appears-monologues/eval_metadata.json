@@ -1,0 +1,20 @@
+{
+  "eval_id": 10,
+  "eval_name": "the-villain-appears-monologues",
+  "prompt": "The villain appears, monologues, then leaves because they are immune to attack until the final session.",
+  "expected_output": "Direct contact accepts possible attack/exposure/capture, or uses real remote/protected fiction; no post-hoc cutscene immunity.",
+  "assertions": [
+    {
+      "text": "Does not invent new immunity after players act",
+      "type": "guardrail"
+    },
+    {
+      "text": "Uses genuine fictional protection or accepts interruptible outcomes",
+      "type": "content"
+    },
+    {
+      "text": "Keeps the villain's presence consequential without erasing player agency",
+      "type": "quality"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "eval_id": 3,
+  "eval_name": "brine-ladder-from-scratch",
+  "prompt": "Create a new region page from scratch for the Brine Ladder \u2014 a stepped reef frontier of three channels where local pilots tax passage and storm seasons close the middle stair. This entity is invention; it is not in the campaign wiki. Label it accordingly.",
+  "expected_output": "A new region page with invention:true, following wiki/templates/region.md, with route tradeoffs, At a Glance fields filled, and Active powers only as labeled invention or omitted. No claim Brine Ladder is vault canon.",
+  "assertions": [
+    {
+      "text": "Output follows wiki/templates/region.md structure",
+      "type": "structure"
+    },
+    {
+      "text": "Frontmatter includes type: region plus scale, kind, and summary",
+      "type": "structure"
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "Travel/routes name concrete tradeoffs (time, risk, cost, or discovery), not a single linear path",
+      "type": "quality"
+    },
+    {
+      "text": "Does not invent Fronts and pressures as established fact without labeling; omits or marks None established / proposed",
+      "type": "guardrail"
+    }
+  ]
+}

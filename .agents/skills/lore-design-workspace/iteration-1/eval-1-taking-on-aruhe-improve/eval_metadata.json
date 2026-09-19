@@ -1,0 +1,40 @@
+{
+  "eval_id": 1,
+  "eval_name": "taking-on-aruhe-improve",
+  "prompt": "Turn wiki/entities/lore/taking-on-aruhe.md into a clean lore page using wiki/templates/lore.md. The established rule is that fallen fruit is safe but taking living fruit (or other living claims) triggers predators. Ground everything in what the wiki already says \u2014 Session 11 confirmation, Matteo's death-rule stance, Western Landing usage. Do not invent a metaphysical cause. Wiki Linter marked hard_fail=false on taking-on-aruhe.md; still assert output template conformance (At a Glance / Current Truth / Limits / At the Table) even if the live page is pre-template shaped.",
+  "expected_output": "A lore page answering one durable question, with At a Glance (Core truth / Why it matters / Scope), Current Truth, Limits (Exception/Unknown/Impossible), and At the Table handles \u2014 preserving the fallen-vs-living split without inventing divine or fungal origins.",
+  "assertions": [
+    {
+      "text": "States the durable question or identity framing before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "type": "process"
+    },
+    {
+      "text": "Output follows wiki/templates/lore.md structure (At a Glance, Current Truth, Limits, At the Table)",
+      "type": "structure"
+    },
+    {
+      "text": "Frontmatter includes type: lore and kind/truth/summary fields",
+      "type": "structure"
+    },
+    {
+      "text": "Core truth preserves fallen fruit safe vs taking living fruit/claims draws hostility",
+      "type": "content"
+    },
+    {
+      "text": "Does not invent a metaphysical reason, divine curse, or fungal network as established Current Truth",
+      "type": "guardrail"
+    },
+    {
+      "text": "At the Table includes Players notice / This enables / This warns of handles that change a harvest choice",
+      "type": "quality"
+    },
+    {
+      "text": "Limits section records Exception/Unknown (e.g. shaking a living tree untested) without filling unknowns as fact",
+      "type": "quality"
+    }
+  ]
+}

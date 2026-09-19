@@ -1,0 +1,36 @@
+{
+  "eval_id": 1,
+  "eval_name": "high-eyrie-improve",
+  "prompt": "Improve wiki/entities/place/high-eyrie.md toward a fully runnable site page using wiki/templates/place.md. Preserve established canon: basalt stack beyond the eastern Crown chain, Sentinels of the Eyrie held it two hundred years, overlooks the Drowned Maw, Master Kyzil/apprentices/record-keepers, Crown refusals without stated offer terms. Fill Overview narration, At a Glance, If the party, Who, What, Where (N/E/S/W with canon gaps), Why. Write a five-sentence kernel before drafting. No invented occupants beyond the established Sentinels roster. Wiki Linter marked hard_fail=false on high-eyrie.md; assert output template conformance.",
+  "expected_output": "A place.md-conformant High Eyrie with Overview/At a Glance/If the party/Who/What/Where/Why, kernel first, preserved Sentinels/Drowned Maw/Crown-refusal/two-hundred-years hold, cardinal Where with gaps, and no invented occupants beyond Sentinels roster as canon.",
+  "assertions": [
+    {
+      "text": "Five-sentence kernel (function, fantastic, conflict, promise, trajectory) appears before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "type": "process"
+    },
+    {
+      "text": "Output follows wiki/templates/place.md structure (Overview, At a Glance, If the party, Who, What, Where, Why)",
+      "type": "structure"
+    },
+    {
+      "text": "Preserves High Eyrie as Sentinel-held basalt stack overlooking the Drowned Maw for two hundred years, including Crown refusal without inventing offer terms",
+      "type": "content"
+    },
+    {
+      "text": "Where section keeps north/east/south/west (or equivalent cardinal) neighbors with canon gaps where unknown",
+      "type": "structure"
+    },
+    {
+      "text": "Does not invent named occupants beyond the established Sentinels roster (Master Kyzil, apprentices, record-keepers) as established wiki fact",
+      "type": "guardrail"
+    },
+    {
+      "text": "If the party entries use named player verbs that change the situation",
+      "type": "quality"
+    }
+  ]
+}

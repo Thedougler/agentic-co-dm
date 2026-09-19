@@ -1,0 +1,32 @@
+{
+  "eval_id": 4,
+  "eval_name": "river-slack-basin-flesh",
+  "prompt": "Flesh wiki/entities/place/river-slack-basin.md toward a full place.md page. Preserve established canon: claimed river backwater / still turquoise bowl behind rock lip, trapped remains, bloody-bank prints toward Cutoff Lip, otter ownership claim, taking-on-aruhe river take, If-the-party verbs already on the page. Fill any missing place.md sections (Overview narration, At a Glance, If the party, Who, What, Where with NESW+gaps, Why) without inventing pack contents or named occupants beyond sourced signs. Wiki Linter marked hard_fail=false on river-slack-basin.md as an alt clean exemplar; assert output template conformance. Mark any new topology or occupants not on the page as invention.",
+  "expected_output": "A place.md-shaped Slack Basin that keeps basin/cutoff-lip/otter-claim/taking-rule canon, has cardinal Where with gaps where needed, and labels new structure as invention.",
+  "assertions": [
+    {
+      "text": "Preserves Slack Basin as claimed backwater behind the rock lip with bloody-bank prints toward Cutoff Lip and otter ownership / taking-on-aruhe river take",
+      "type": "content"
+    },
+    {
+      "text": "Where section includes cardinal directions with wikilinks where known and explicit canon gaps where unknown",
+      "type": "structure"
+    },
+    {
+      "text": "Clearly distinguishes established page canon from proposed invention (new interiors, new named occupants, new neighbors)",
+      "type": "guardrail"
+    },
+    {
+      "text": "Output follows wiki/templates/place.md structure",
+      "type": "structure"
+    },
+    {
+      "text": "Does not invent pack contents, secret occupants, or a named neighbor across a gap as silent canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Kernel or identity framing appears before the page draft",
+      "type": "process"
+    }
+  ]
+}
