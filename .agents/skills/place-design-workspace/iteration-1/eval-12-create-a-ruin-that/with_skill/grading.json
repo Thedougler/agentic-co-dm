@@ -1,0 +1,33 @@
+{
+  "eval_id": 12,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Includes meaningful non-combat verbs and affordances",
+      "passed": true,
+      "evidence": "Study/Re-align/Bargain/Harvest/Consecrate/Map \u2014 meaningful non-combat verbs. [thin-#156 verify]"
+    },
+    {
+      "text": "Includes a payoff or consequence tied to the place's promise",
+      "passed": true,
+      "evidence": "Lexicon rewrite payoff tied to Discovery+Transformation promise. [thin-#156 verify]"
+    },
+    {
+      "text": "Does not rely on an encounter quota to make nodes worth visiting",
+      "passed": true,
+      "evidence": "Explicit enemies-vanished test; nodes worth visiting without encounters. [thin-#156 verify]"
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 55000,
+    "total_duration_seconds": 55.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

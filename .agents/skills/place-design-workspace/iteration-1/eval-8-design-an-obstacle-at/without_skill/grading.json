@@ -1,0 +1,33 @@
+{
+  "eval_id": 8,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Telegraphs the trigger and consequence in the fiction",
+      "passed": false,
+      "evidence": "No fiction telegraph of trigger/consequence."
+    },
+    {
+      "text": "Includes at least one counterplay and one distinct bypass",
+      "passed": false,
+      "evidence": "No counterplay or bypass."
+    },
+    {
+      "text": "Does not require one prescribed method as the only solution",
+      "passed": false,
+      "evidence": "Requires Knock as only solution."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 30000,
+    "total_duration_seconds": 30.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

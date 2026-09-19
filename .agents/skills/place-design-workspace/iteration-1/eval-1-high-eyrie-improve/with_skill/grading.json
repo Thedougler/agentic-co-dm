@@ -1,0 +1,53 @@
+{
+  "eval_id": 1,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Five-sentence kernel (function, fantastic, conflict, promise, trajectory) appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": true,
+      "evidence": "process-notes.md records five-sentence kernel (Function/Fantastic/Conflict/Promise/Trajectory) before page draft. [thin-#156 verify]"
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+      "passed": true,
+      "evidence": "process-notes.md Work gate proposes workspace-only expansion and awaits DM acceptance before wiki/ write. [thin-#156 verify]"
+    },
+    {
+      "text": "Output follows wiki/templates/place.md structure with filled Overview, At a Glance, If the party, Who, What, Where, and Why substance \u2014 not empty copied headings alone",
+      "passed": true,
+      "evidence": "high-eyrie.md has filled Overview, At a Glance, If the party, Who, What, Where, Why with substance. [thin-#156 verify]"
+    },
+    {
+      "text": "Preserves High Eyrie as Sentinel-held basalt stack overlooking the Drowned Maw for two hundred years, including Crown refusal without inventing offer terms",
+      "passed": true,
+      "evidence": "Preserves Sentinel-held basalt stack, Drowned Maw, two hundred years, Crown refusal without inventing offer terms. [thin-#156 verify]"
+    },
+    {
+      "text": "Where section keeps north/east/south/west (or equivalent cardinal) neighbors with canon gaps where unknown",
+      "passed": true,
+      "evidence": "Where has North/East/South/West with south as explicit canon gap. [thin-#156 verify]"
+    },
+    {
+      "text": "Does not invent named occupants beyond the established Sentinels roster (Master Kyzil, apprentices, record-keepers) as established wiki fact",
+      "passed": true,
+      "evidence": "Who lists only Sentinels/Master Kyzil/apprentices/record-keepers; no invented named occupants as canon. [thin-#156 verify]"
+    },
+    {
+      "text": "If the party entries use named player verbs that change the situation",
+      "passed": true,
+      "evidence": "If the party uses Climb, Ask, Offer, Leave \u2014 named verbs that change the situation. [thin-#156 verify]"
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 95000,
+    "total_duration_seconds": 95.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

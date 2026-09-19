@@ -1,0 +1,33 @@
+{
+  "eval_id": 11,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States what flight and teleportation can accomplish",
+      "passed": false,
+      "evidence": "Does not state what flight/teleport can accomplish \u2014 only that they fail."
+    },
+    {
+      "text": "Uses fiction-based constraints (visibility, anchors, weather, exposure, incomplete information) only where justified",
+      "passed": false,
+      "evidence": "No fiction-based justified constraints; fiat antimagic."
+    },
+    {
+      "text": "Does not make every route a fake wall or declare abilities invalid without a setting reason",
+      "passed": false,
+      "evidence": "Declares abilities invalid / one corridor fake-wall."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 30000,
+    "total_duration_seconds": 30.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 10,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Moves are triggered by party action, faction action, pressure, rest, or another stated cause",
+      "passed": true,
+      "evidence": "Triggers: party action, faction action, pressure, rest \u2014 all stated. [thin-#156 verify]"
+    },
+    {
+      "text": "Each move states the five-part shape positively (actor, trigger, visible result, new opportunity, lasting consequence) \u2014 negation-only mentions of routes/relationships/resources fail",
+      "passed": true,
+      "evidence": "Each of 4 moves positively states actor, trigger, visible result, new opportunity, lasting consequence. [thin-#156 verify]"
+    },
+    {
+      "text": "The return state preserves history instead of resetting the market",
+      "passed": true,
+      "evidence": "Return state keeps seals/chains/hooks/footprint; explicitly no reset. [thin-#156 verify]"
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 55000,
+    "total_duration_seconds": 55.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

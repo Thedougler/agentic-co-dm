@@ -1,0 +1,33 @@
+{
+  "eval_id": 8,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Telegraphs the trigger and consequence in the fiction",
+      "passed": true,
+      "evidence": "Score-marks, ash, relief, brightening flag telegraph trigger/consequence. [thin-#156 verify]"
+    },
+    {
+      "text": "Includes at least one counterplay and one distinct bypass",
+      "passed": true,
+      "evidence": "Counterplay (jam/mute) and distinct ledge bypass. [thin-#156 verify]"
+    },
+    {
+      "text": "Does not require one prescribed method as the only solution",
+      "passed": true,
+      "evidence": "Multiple valid methods listed; no sole prescribed solution. [thin-#156 verify]"
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 50000,
+    "total_duration_seconds": 50.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

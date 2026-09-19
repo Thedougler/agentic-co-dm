@@ -1,6 +1,6 @@
 {
   "eval_id": 14,
-  "eval_name": "high-eyrie-resist-invent",
+  "eval_name": "file-a-wilderness-location",
   "prompt": "File a wilderness location into wiki/templates/place.md. Public canon establishes a lake two days north, a mangrove wall one day east, no established southern neighbor, and an old road three days west. Labeled filing fixture \u2014 do not invent the southern neighbor as canon. (Cardinal Where pattern also applies when improving wiki/entities/place/high-eyrie.md or wiki/entities/place/river-slack-basin.md.)",
   "expected_output": "The filed location uses the place template and its Where section includes natural-language north, east, south, and west entries with wikilinked neighbors where known, approximate days of travel, and an explicit canon gap for the south.",
   "assertions": [

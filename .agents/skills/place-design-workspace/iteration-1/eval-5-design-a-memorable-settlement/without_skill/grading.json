@@ -1,0 +1,38 @@
+{
+  "eval_id": 5,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Uses the five-sentence kernel, 3Fs, contradiction, and signature details",
+      "passed": false,
+      "evidence": "No kernel, 3Fs, contradiction, or actionable signatures."
+    },
+    {
+      "text": "Names a player-facing promise that produces actionable choices",
+      "passed": false,
+      "evidence": "No named player-facing promise."
+    },
+    {
+      "text": "Includes topology, inhabitants, clues, pressure, and a return consequence rather than only atmosphere or history",
+      "passed": false,
+      "evidence": "Atmosphere/history only \u2014 no topology, clues, pressure, return."
+    },
+    {
+      "text": "Does not present the fixture as established campaign wiki fact",
+      "passed": false,
+      "evidence": "Presents Ash Harbor as if real setting fact; no fixture label."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 4,
+    "total": 4,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 40000,
+    "total_duration_seconds": 40.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

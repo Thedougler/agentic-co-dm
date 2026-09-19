@@ -1,0 +1,48 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/place.md structure with filled Overview/At a Glance/If the party/Who/What/Where/Why substance \u2014 not empty copied headings alone",
+      "passed": true,
+      "evidence": "All place.md sections filled with substance. [thin-#156 verify]"
+    },
+    {
+      "text": "Frontmatter includes type: place, kind, region or blank, and summary",
+      "passed": true,
+      "evidence": "Frontmatter has type: place, kind: site, region: \"\", summary. [thin-#156 verify]"
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon",
+      "passed": true,
+      "evidence": "invention: true and labeled invention / not vault canon. [thin-#156 verify]"
+    },
+    {
+      "text": "Five-sentence kernel or equivalent identity framing appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": true,
+      "evidence": "Five-sentence kernel in process-notes.md before draft. [thin-#156 verify]"
+    },
+    {
+      "text": "Names a player-facing promise that produces actionable choices",
+      "passed": true,
+      "evidence": "Promise Intrigue + Danger with actionable choices named in At a Glance. [thin-#156 verify]"
+    },
+    {
+      "text": "If the party includes at least two named verbs that change the situation",
+      "passed": true,
+      "evidence": "Bargain, Sabotage, Follow \u2014 \u22652 named verbs that change the situation. [thin-#156 verify]"
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 80000,
+    "total_duration_seconds": 80.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

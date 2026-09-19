@@ -1,0 +1,33 @@
+{
+  "eval_id": 9,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Provides a faction sheet for each active faction and a meaningful between-visit update",
+      "passed": true,
+      "evidence": "Full faction sheets for Compact and Choir; between-visit update stated. [thin-#156 verify]"
+    },
+    {
+      "text": "Gives inhabitants movement, objectives, and responses to bargaining, aid, deception, attack, or neglect",
+      "passed": true,
+      "evidence": "Movement/objectives; responses to bargain/aid/deception/attack/neglect. [thin-#156 verify]"
+    },
+    {
+      "text": "Uses progression states or a clock with visible changes",
+      "passed": true,
+      "evidence": "Quiet\u2192Alert\u2192Contested\u2192Transformed with visible signs. [thin-#156 verify]"
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 60000,
+    "total_duration_seconds": 60.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

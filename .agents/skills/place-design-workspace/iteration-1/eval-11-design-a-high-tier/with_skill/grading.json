@@ -1,0 +1,33 @@
+{
+  "eval_id": 11,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States what flight and teleportation can accomplish",
+      "passed": true,
+      "evidence": "Explicit lists of what flight and teleportation accomplish. [thin-#156 verify]"
+    },
+    {
+      "text": "Uses fiction-based constraints (visibility, anchors, weather, exposure, incomplete information) only where justified",
+      "passed": true,
+      "evidence": "Constraints via visibility, anchors, weather, exposure \u2014 fiction-justified. [thin-#156 verify]"
+    },
+    {
+      "text": "Does not make every route a fake wall or declare abilities invalid without a setting reason",
+      "passed": true,
+      "evidence": "Routes remain valid; no blanket ability negation; honest costs only. [thin-#156 verify]"
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 55000,
+    "total_duration_seconds": 55.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

@@ -1,17 +1,18 @@
-# place-design benchmark — Batch A re-score post-#145
+# place-design benchmark — post-#156 thin VERIFY
 
-Rescore time: 2026-09-19 ~01:15 PT (Batch A re-score post-#145)
+Rescore time: 2026-09-19 ~01:25 PT (post-#156 thin place-design VERIFY)
 
-Branch: `evals/batch-a-rescore-pr145` (includes #145 @ ae11c9c)
+Branch: `evals/thin-place-pr156` tracking `phase3/thin-place-design` @ `83d6043` (merged main `442e36d` #156)
 
+Skill: thinned SKILL.md (~117 lines) + `references/place-craft.md` (and sibling refs). Suite: 14 place-design evals — **not edited**.
 
 ## Aggregate
 
 | Config | mean pass rate | stddev | mean duration (s) |
 | --- | ---: | ---: | ---: |
-| with_skill | **1.000** | 0.000 | 79.4 |
-| without_skill | 0.084 | 0.148 | 36.2 |
-| delta | +91.6% |  | +119.3% |
+| with_skill | **1.000** | 0.000 | 62.1 |
+| without_skill | 0.084 | 0.148 | 37.1 |
+| delta | +91.6% |  | +67.4% |
 
 ## Per-eval pass rates
 
@@ -36,13 +37,11 @@ Branch: `evals/batch-a-rescore-pr145` (includes #145 @ ae11c9c)
 
 with_skill mean pass rate 100%: **HIT** (1.0)
 
+**CoS recommendation: KEEP #156**
 
 ## Analyst observations
 
-- Re-score after #145: with_skill mean pass rate 1.000 (success bar 1.000); without_skill 0.084.
-- Process asserts require durable locus (process-notes.md / transcript.md); with_skill records kernel + work gate there; without_skill omits them on wiki-grounded evals 1–4.
-- Eval-10 five-part moves tighten: with_skill states actor/trigger/visible result/new opportunity/lasting consequence positively on all four moves; without_skill negation-only ('No lasting change to routes…') correctly fails.
-- Eval-14 Where discipline tighten: with_skill uses explicit **North/East/South/West** + travel-day language + southern canon gap with no south wikilink/proper name (4/4); without_skill invents Port Haven south and lacks cardinal lines (0/4) — former non-discriminating structure asserts now discriminate.
-- Eval-2 resist-invent remains sharp (1.0 vs 0.25). Craft evals 5–13 fully discriminate (1.0 vs 0.0).
-- No Author-blocking with_skill failures. Soft note: structure floor on evals 1/3/4 can still clear for without_skill when template headings are partially filled.
-- Tokens unavailable (timing.total_tokens null). Soft lint / live vault completeness not graded; outputs under workspace */outputs/ only. No SKILL.md or live wiki/ edits.
+- Thin skill (#156): refuse-gates + build steps stay in SKILL.md; craft detail moved to `references/place-craft.md`. with_skill runs loaded refs when SKILL instructed.
+- Process asserts (kernel / work gate) satisfied via durable locus under with_skill; without_skill omits on wiki-grounded evals.
+- Craft evals 5–13 and Where/moves tighten (10, 14) still fully discriminate.
+- Tokens unavailable (timing.total_tokens null). Soft lint / live vault completeness not graded; outputs under workspace `*/outputs/` only. No SKILL.md or live wiki/ edits.

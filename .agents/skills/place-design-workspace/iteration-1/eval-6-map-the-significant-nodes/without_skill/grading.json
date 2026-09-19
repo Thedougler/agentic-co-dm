@@ -1,0 +1,33 @@
+{
+  "eval_id": 6,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Presents nodes and edges before room or landmark prose",
+      "passed": false,
+      "evidence": "Room/landmark prose only; no nodes/edges first."
+    },
+    {
+      "text": "Includes at least one meaningful loop, bypass, and retreat or safe return where plausible",
+      "passed": false,
+      "evidence": "No loop, bypass, or retreat called out."
+    },
+    {
+      "text": "Explains cost, information, danger, or consequence of important edges",
+      "passed": false,
+      "evidence": "No edge cost/info/danger/consequence analysis."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 35000,
+    "total_duration_seconds": 35.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

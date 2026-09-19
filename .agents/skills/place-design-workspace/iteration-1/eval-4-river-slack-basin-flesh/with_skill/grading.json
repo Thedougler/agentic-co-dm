@@ -1,0 +1,48 @@
+{
+  "eval_id": 4,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Preserves Slack Basin as claimed backwater behind the rock lip with bloody-bank prints toward Cutoff Lip and otter ownership / taking-on-aruhe river take",
+      "passed": true,
+      "evidence": "Preserves backwater/rock lip, bloody-bank\u2192Cutoff Lip, otter ownership, taking-on-aruhe. [thin-#156 verify]"
+    },
+    {
+      "text": "Where section includes cardinal directions with wikilinks where known and explicit canon gaps where unknown",
+      "passed": true,
+      "evidence": "Where has N/E/S/W with wikilinks where known and canon gaps where silent. [thin-#156 verify]"
+    },
+    {
+      "text": "Clearly distinguishes established page canon from proposed invention (new interiors, new named occupants, new neighbors)",
+      "passed": true,
+      "evidence": "Invention notes section distinguishes proposed invention from page canon. [thin-#156 verify]"
+    },
+    {
+      "text": "Output follows wiki/templates/place.md structure with filled Overview/At a Glance/If the party/Who/What/Where/Why substance \u2014 not empty copied headings alone",
+      "passed": true,
+      "evidence": "All place.md sections filled with substance. [thin-#156 verify]"
+    },
+    {
+      "text": "Does not invent pack contents, secret occupants, or a named neighbor across a gap as silent canon",
+      "passed": true,
+      "evidence": "Explicitly refuses inventing pack contents, secret occupants, named gap-neighbors as silent canon. [thin-#156 verify]"
+    },
+    {
+      "text": "Kernel or identity framing appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": true,
+      "evidence": "Kernel/identity framing in process-notes.md before draft. [thin-#156 verify]"
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 85000,
+    "total_duration_seconds": 85.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

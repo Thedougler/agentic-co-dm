@@ -1,0 +1,48 @@
+{
+  "eval_id": 3,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/place.md structure with filled Overview/At a Glance/If the party/Who/What/Where/Why substance \u2014 not empty copied headings alone",
+      "passed": true,
+      "evidence": "Headings present with some fill \u2014 structure floor clears."
+    },
+    {
+      "text": "Frontmatter includes type: place, kind, region or blank, and summary",
+      "passed": false,
+      "evidence": "Frontmatter missing kind, region, summary."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon",
+      "passed": false,
+      "evidence": "No invention: true / proposed labeling; reads as vault fact."
+    },
+    {
+      "text": "Five-sentence kernel or equivalent identity framing appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": false,
+      "evidence": "No kernel in process-notes/transcript."
+    },
+    {
+      "text": "Names a player-facing promise that produces actionable choices",
+      "passed": false,
+      "evidence": "No named player-facing promise producing choices."
+    },
+    {
+      "text": "If the party includes at least two named verbs that change the situation",
+      "passed": false,
+      "evidence": "Only one weak verb (Cross carefully); does not change situation."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 5,
+    "total": 6,
+    "pass_rate": 0.1667
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 50000,
+    "total_duration_seconds": 50.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

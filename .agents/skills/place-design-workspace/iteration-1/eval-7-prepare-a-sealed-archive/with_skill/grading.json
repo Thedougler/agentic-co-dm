@@ -1,0 +1,33 @@
+{
+  "eval_id": 7,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Provides about three independent clue vectors (witness/faction, physical/document, spatial/consequence or equivalent)",
+      "passed": true,
+      "evidence": "Witness, physical/document, spatial/consequence vectors present. [thin-#156 verify]"
+    },
+    {
+      "text": "Separates automatic signs from declared Search, Study, or other actions",
+      "passed": true,
+      "evidence": "Automatic signs separated from declared Search/Study/Influence. [thin-#156 verify]"
+    },
+    {
+      "text": "A failed check adds a cost or complication without blocking the required revelation",
+      "passed": true,
+      "evidence": "Failed Study costs time/attention; other vectors still deliver truth. [thin-#156 verify]"
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 50000,
+    "total_duration_seconds": 50.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

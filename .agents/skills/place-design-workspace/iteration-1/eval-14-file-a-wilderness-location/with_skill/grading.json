@@ -1,0 +1,38 @@
+{
+  "eval_id": 14,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Where section has explicit **North:** / **East:** / **South:** / **West:** entries each with ~N days of travel language (or equivalent travel-day distances)",
+      "passed": true,
+      "evidence": "Explicit **North/East/South/West** lines each with ~N days / travel-day language. [thin-#156 verify]"
+    },
+    {
+      "text": "Only the three known neighbors (lake north, mangrove wall east, old road west) are wikilinked with approximate travel-day distances; south has neither a wikilink nor a proper name",
+      "passed": true,
+      "evidence": "Only lake, mangrove-wall, old-road wikilinked; south has neither wikilink nor proper name. [thin-#156 verify]"
+    },
+    {
+      "text": "Marks the missing southern direction with explicit canon-gap wording (not inventing a named southern place as fact)",
+      "passed": true,
+      "evidence": "South marked explicit canon gap; no invented named southern place. [thin-#156 verify]"
+    },
+    {
+      "text": "Output follows wiki/templates/place.md Where conventions: explicit cardinal lines with travel-day distances AND an explicit canon gap for any missing direction \u2014 a bare ## Where heading alone fails",
+      "passed": true,
+      "evidence": "Where conventions met: cardinal lines + travel days + canon gap \u2014 not bare heading. [thin-#156 verify]"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 60000,
+    "total_duration_seconds": 60.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

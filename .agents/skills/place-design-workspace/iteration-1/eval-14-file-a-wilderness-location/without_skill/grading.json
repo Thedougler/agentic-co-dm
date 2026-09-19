@@ -1,0 +1,38 @@
+{
+  "eval_id": 14,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Where section has explicit **North:** / **East:** / **South:** / **West:** entries each with ~N days of travel language (or equivalent travel-day distances)",
+      "passed": false,
+      "evidence": "No explicit **North:**/**East:**/**South:**/**West:** entries with ~N days language."
+    },
+    {
+      "text": "Only the three known neighbors (lake north, mangrove wall east, old road west) are wikilinked with approximate travel-day distances; south has neither a wikilink nor a proper name",
+      "passed": false,
+      "evidence": "South wikilinks [[port-haven]] with proper name Port Haven; violates three-known-neighbors-only."
+    },
+    {
+      "text": "Marks the missing southern direction with explicit canon-gap wording (not inventing a named southern place as fact)",
+      "passed": false,
+      "evidence": "Invented Port Haven as named southern place; no canon-gap wording."
+    },
+    {
+      "text": "Output follows wiki/templates/place.md Where conventions: explicit cardinal lines with travel-day distances AND an explicit canon gap for any missing direction \u2014 a bare ## Where heading alone fails",
+      "passed": false,
+      "evidence": "Bare/loose Where prose without cardinal lines + gap discipline."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 4,
+    "total": 4,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 35000,
+    "total_duration_seconds": 35.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

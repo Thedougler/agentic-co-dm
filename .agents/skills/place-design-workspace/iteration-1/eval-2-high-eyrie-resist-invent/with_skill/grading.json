@@ -1,0 +1,38 @@
+{
+  "eval_id": 2,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not present invented southern dungeon/neighbor as established wiki fact",
+      "passed": true,
+      "evidence": "Response refuses to file southern dungeon/neighbor as established wiki fact. [thin-#156 verify]"
+    },
+    {
+      "text": "Marks the missing southern named site as an explicit canon gap, or labels any proposal as invention",
+      "passed": true,
+      "evidence": "South marked explicit canon gap; any speculative site labeled invention. [thin-#156 verify]"
+    },
+    {
+      "text": "Preserves High Eyrie's established links (Sentinels, Drowned Maw, Crown chain / Crown Islands context)",
+      "passed": true,
+      "evidence": "Preserves Sentinels, Drowned Maw, Crown Islands/chain links. [thin-#156 verify]"
+    },
+    {
+      "text": "If proposing invention, cites grounding pages in process-notes.md, agent_report.md, or transcript.md and does not write silent canon",
+      "passed": true,
+      "evidence": "process-notes.md cites high-eyrie.md, place.md template, SKILL.md; no silent canon write. [thin-#156 verify]"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 45000,
+    "total_duration_seconds": 45.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

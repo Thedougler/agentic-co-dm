@@ -1,0 +1,53 @@
+{
+  "eval_id": 1,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Five-sentence kernel (function, fantastic, conflict, promise, trajectory) appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": false,
+      "evidence": "No five-sentence kernel in process-notes.md / transcript.md."
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+      "passed": false,
+      "evidence": "No chat proposal / work gate before drafting; no wiki-path gate recorded."
+    },
+    {
+      "text": "Output follows wiki/templates/place.md structure with filled Overview, At a Glance, If the party, Who, What, Where, and Why substance \u2014 not empty copied headings alone",
+      "passed": true,
+      "evidence": "Headings Overview/At a Glance/If the party/Who/What/Where/Why present with some fill \u2014 structure floor clears."
+    },
+    {
+      "text": "Preserves High Eyrie as Sentinel-held basalt stack overlooking the Drowned Maw for two hundred years, including Crown refusal without inventing offer terms",
+      "passed": true,
+      "evidence": "Still mentions Sentinel hold, Drowned Maw, two hundred years, Crown refusal."
+    },
+    {
+      "text": "Where section keeps north/east/south/west (or equivalent cardinal) neighbors with canon gaps where unknown",
+      "passed": false,
+      "evidence": "Where invents south as established Black Sump/Port Hollow; north/east incomplete; not cardinal gaps."
+    },
+    {
+      "text": "Does not invent named occupants beyond the established Sentinels roster (Master Kyzil, apprentices, record-keepers) as established wiki fact",
+      "passed": false,
+      "evidence": "Invented Captain Vex as established occupant beyond Sentinels roster."
+    },
+    {
+      "text": "If the party entries use named player verbs that change the situation",
+      "passed": true,
+      "evidence": "If the party has Go south / Talk \u2014 named verbs that change situation."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 4,
+    "total": 7,
+    "pass_rate": 0.4286
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 55000,
+    "total_duration_seconds": 55.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

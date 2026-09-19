@@ -1,0 +1,38 @@
+{
+  "eval_id": 5,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Uses the five-sentence kernel, 3Fs, contradiction, and signature details",
+      "passed": true,
+      "evidence": "Kernel, 3Fs, contradiction, three signature details present. [thin-#156 verify]"
+    },
+    {
+      "text": "Names a player-facing promise that produces actionable choices",
+      "passed": true,
+      "evidence": "Promise Exploitation + Intrigue with actionable choices. [thin-#156 verify]"
+    },
+    {
+      "text": "Includes topology, inhabitants, clues, pressure, and a return consequence rather than only atmosphere or history",
+      "passed": true,
+      "evidence": "Topology, inhabitants, clues, pressure clock, return consequence included. [thin-#156 verify]"
+    },
+    {
+      "text": "Does not present the fixture as established campaign wiki fact",
+      "passed": true,
+      "evidence": "Explicitly labeled invention / not vault canon. [thin-#156 verify]"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 70000,
+    "total_duration_seconds": 70.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

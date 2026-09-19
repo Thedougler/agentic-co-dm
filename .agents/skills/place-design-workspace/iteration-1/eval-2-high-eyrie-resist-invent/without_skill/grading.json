@@ -1,0 +1,38 @@
+{
+  "eval_id": 2,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not present invented southern dungeon/neighbor as established wiki fact",
+      "passed": false,
+      "evidence": "Black Sump and Port Hollow written as established southern neighbors."
+    },
+    {
+      "text": "Marks the missing southern named site as an explicit canon gap, or labels any proposal as invention",
+      "passed": false,
+      "evidence": "No canon-gap wording; no invention label."
+    },
+    {
+      "text": "Preserves High Eyrie's established links (Sentinels, Drowned Maw, Crown chain / Crown Islands context)",
+      "passed": true,
+      "evidence": "Still mentions Sentinels hold and Drowned Maw / Crown Islands."
+    },
+    {
+      "text": "If proposing invention, cites grounding pages in process-notes.md, agent_report.md, or transcript.md and does not write silent canon",
+      "passed": false,
+      "evidence": "No grounding page citations; silent canon written."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 3,
+    "total": 4,
+    "pass_rate": 0.25
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 35000,
+    "total_duration_seconds": 35.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

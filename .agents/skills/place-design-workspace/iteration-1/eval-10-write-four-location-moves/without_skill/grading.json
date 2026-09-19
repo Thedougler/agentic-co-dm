@@ -1,0 +1,33 @@
+{
+  "eval_id": 10,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Moves are triggered by party action, faction action, pressure, rest, or another stated cause",
+      "passed": false,
+      "evidence": "No concrete triggered moves with stated causes that change the market."
+    },
+    {
+      "text": "Each move states the five-part shape positively (actor, trigger, visible result, new opportunity, lasting consequence) \u2014 negation-only mentions of routes/relationships/resources fail",
+      "passed": false,
+      "evidence": "Negation-only mention of routes/relationships/resources ('No lasting change\u2026'); fails positive five-part shape."
+    },
+    {
+      "text": "The return state preserves history instead of resetting the market",
+      "passed": false,
+      "evidence": "Explicitly resets each morning; history not preserved."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 30000,
+    "total_duration_seconds": 30.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

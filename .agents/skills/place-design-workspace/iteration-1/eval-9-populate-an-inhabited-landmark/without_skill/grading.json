@@ -1,0 +1,33 @@
+{
+  "eval_id": 9,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Provides a faction sheet for each active faction and a meaningful between-visit update",
+      "passed": false,
+      "evidence": "No faction sheets; between-visit = nothing changes."
+    },
+    {
+      "text": "Gives inhabitants movement, objectives, and responses to bargaining, aid, deception, attack, or neglect",
+      "passed": false,
+      "evidence": "No movement/objectives/response matrix."
+    },
+    {
+      "text": "Uses progression states or a clock with visible changes",
+      "passed": false,
+      "evidence": "No progression states or clock."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 35000,
+    "total_duration_seconds": 35.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}

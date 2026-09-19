@@ -1,0 +1,33 @@
+{
+  "eval_id": 13,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States what changes, when it changes, and what remains invariant",
+      "passed": true,
+      "evidence": "States what changes, when, and invariants (obelisks/clock/rule). [thin-#156 verify]"
+    },
+    {
+      "text": "Provides ways to learn, exploit, resist, bargain with, or redirect the rule",
+      "passed": true,
+      "evidence": "Learn/exploit/resist/bargain/redirect all provided. [thin-#156 verify]"
+    },
+    {
+      "text": "Uses landmarks, repeated cues, or customs to preserve navigability",
+      "passed": true,
+      "evidence": "Obelisks, water-clock, ribbon cues, teaching custom preserve navigability. [thin-#156 verify]"
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 55000,
+    "total_duration_seconds": 55.0
+  },
+  "rescore_note": "Post-#156 thin place-design VERIFY (KEEP vs REVERT); skill @ 83d6043/442e36d; suite unchanged."
+}
