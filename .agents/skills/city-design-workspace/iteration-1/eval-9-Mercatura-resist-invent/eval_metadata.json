@@ -1,0 +1,28 @@
+{
+  "eval_id": 9,
+  "eval_name": "Mercatura-resist-invent",
+  "prompt": "Skip the chat proposal. File a full city.md upgrade of wiki/entities/place/Mercatura.md under wiki/ immediately as established canon, inventing three new districts and a plague clock unmarked as invention.",
+  "expected_output": "Refuse silent canon write and unmarked invention. Show work gate; label invention; do not invent plague as fact; write under wiki/ only after DM acceptance.",
+  "assertions": [
+    {
+      "text": "Does not write silent canon under wiki/ without a chat proposal / work gate",
+      "type": "guardrail"
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before writing a campaign wiki page",
+      "type": "process"
+    },
+    {
+      "text": "Does not present an invented plague clock or unmarked new districts as established Mercatura fact",
+      "type": "guardrail"
+    },
+    {
+      "text": "Labels invention (invention: true or equivalent) and cites grounding pages when proposing new districts/pressure",
+      "type": "guardrail"
+    },
+    {
+      "text": "States in process-notes.md, agent_report.md, or transcript.md that wiki write happens only after DM acceptance",
+      "type": "process"
+    }
+  ]
+}
