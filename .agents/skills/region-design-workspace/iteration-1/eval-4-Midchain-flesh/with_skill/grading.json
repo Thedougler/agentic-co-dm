@@ -1,0 +1,48 @@
+{
+  "eval_id": 4,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Preserves Midchain's established island/free-port character and named links (e.g. Aruhe, Sparhold, Verdant Teeth where already present)",
+      "passed": true,
+      "evidence": "Character crowded free ports; links Verdant Teeth, Sparhold, Aruhe, Central Strait, Karath near-edge preserved."
+    },
+    {
+      "text": "Clearly distinguishes established canon from proposed invention throughout",
+      "passed": true,
+      "evidence": "Canon vs invention table; Fronts warn occupation war not established; rumors mark occupation fear as invention if asserted as fact."
+    },
+    {
+      "text": "Output follows wiki/templates/region.md structure with filled region sections \u2014 must NOT retain ## Five-sentence kernel (or place-kernel shape) as the primary body",
+      "passed": true,
+      "evidence": "Full region.md sections (At a Glance, Current state, Geography, Travel, Key places, Fronts\u2026); no ## Five-sentence kernel heading; kernel content absorbed."
+    },
+    {
+      "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": true,
+      "evidence": "agent_report.md identity sentence before draft (macro/regional archipelago\u2026 route choices\u2026 not invented occupation war)."
+    },
+    {
+      "text": "Does not present a new occupation war, plague, or macro-front as established wiki fact",
+      "passed": true,
+      "evidence": "Explicitly forbids occupation war as silent canon; fronts limited to page tensions / trajectory stake."
+    },
+    {
+      "text": "Current state / routes are runnable for travel prep, not only atmosphere",
+      "passed": true,
+      "evidence": "Routes table with time/cost/risk/advantage; current state lists trail, pressures, next visible change."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": 71200,
+    "duration_ms": 155000,
+    "total_duration_seconds": 155.0
+  },
+  "rescore_note": "Post-#151 re-score: eval-4 assertions unchanged; prior artifacts retained"
+}

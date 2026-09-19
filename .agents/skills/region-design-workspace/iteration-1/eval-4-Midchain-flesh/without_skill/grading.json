@@ -1,0 +1,48 @@
+{
+  "eval_id": 4,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Preserves Midchain's established island/free-port character and named links (e.g. Aruhe, Sparhold, Verdant Teeth where already present)",
+      "passed": true,
+      "evidence": "Still mentions free ports and links to Verdant Teeth, Sparhold, Aruhe."
+    },
+    {
+      "text": "Clearly distinguishes established canon from proposed invention throughout",
+      "passed": false,
+      "evidence": "Presents Crown occupation and southern plague as current fact with no invention labeling."
+    },
+    {
+      "text": "Output follows wiki/templates/region.md structure with filled region sections \u2014 must NOT retain ## Five-sentence kernel (or place-kernel shape) as the primary body",
+      "passed": false,
+      "evidence": "Retains '## Five-sentence kernel (retained)' as a primary section; incomplete region.md reshape."
+    },
+    {
+      "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": false,
+      "evidence": "No identity sentence process artifact (no process-notes/agent_report/transcript)."
+    },
+    {
+      "text": "Does not present a new occupation war, plague, or macro-front as established wiki fact",
+      "passed": false,
+      "evidence": "DM thesis and Fronts present Crown Occupation War and Southern Plague as established."
+    },
+    {
+      "text": "Current state / routes are runnable for travel prep, not only atmosphere",
+      "passed": true,
+      "evidence": "Routes table lists marked lane / reef / open water / jungle-water with actionable notes."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 4,
+    "total": 6,
+    "pass_rate": 0.3333333333333333
+  },
+  "timing": {
+    "total_tokens": 35600,
+    "duration_ms": 67000,
+    "total_duration_seconds": 67.0
+  },
+  "rescore_note": "Post-#151 re-score: eval-4 assertions unchanged; prior artifacts retained"
+}

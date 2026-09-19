@@ -1,0 +1,43 @@
+{
+  "eval_id": 5,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not collapse Aruhe travel into a single mandatory ordered route with no forks or alternate approaches",
+      "passed": true,
+      "evidence": "response.md Refusal: will not rewrite into mandatory ordered corridor; no-forks fail-the-region map rejected."
+    },
+    {
+      "text": "Travel/routes retain concrete tradeoffs (time, risk, cost, or discovery) across \u22652 viable approaches rather than one linear path",
+      "passed": true,
+      "evidence": "response.md tradeoff table: Land Western Landing (Quiet vs Grasslands) vs observe-from-offshore skip (\u22652 viable); mangrove noted as trap not harbor."
+    },
+    {
+      "text": "Preserves established Western Landing entry and the observe-from-offshore skip / mangrove-wall-not-a-second-approach character from the wiki",
+      "passed": true,
+      "evidence": "response.md Keep: Western Landing entry; offshore skip; mangroves not a second landing."
+    },
+    {
+      "text": "Does not erase Slack Basin / Cutoff Lip / Print Braid (or equivalent keyed places) into a single corridor checklist",
+      "passed": true,
+      "evidence": "response.md Keyed places stay distinct roles (Slack Basin/Cutoff Lip/Print Braid) \u2014 not corridor mile markers."
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+      "passed": true,
+      "evidence": "agent_report.md Work gate: refuse collapse; workspace-only; no live wiki/ write until DM acceptance."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": 41200,
+    "duration_ms": 78000,
+    "total_duration_seconds": 78.0
+  },
+  "rescore_note": "Re-scored post-#151 (city/region/lore adversarial uplift)"
+}

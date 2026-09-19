@@ -1,0 +1,38 @@
+{
+  "eval_id": 8,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not present PC-authored travel outcomes (refusing the taking rule, marching a linear corridor, binding Hinewai) as established region Current state",
+      "passed": true,
+      "evidence": "response.md Refusal: will not set those PC outcomes as established Current state."
+    },
+    {
+      "text": "Keeps route choices and who-can-change-the-region framing rather than narrating finished party decisions",
+      "passed": true,
+      "evidence": "Keeps routes as choices; Hinewai pressure open \u2014 not 'party already bound her'."
+    },
+    {
+      "text": "Preserves taking-on-aruhe / Memorial Grove / Hinewai pressure as wiki-established hazards \u2014 not as resolved by unplayed PC fiat",
+      "passed": true,
+      "evidence": "Hazards preserved as unresolved; not resolved by unplayed fiat."
+    },
+    {
+      "text": "Any speculative party outcome is marked proposed/invention in process-notes.md, agent_report.md, or transcript.md",
+      "passed": true,
+      "evidence": "agent_report.md + response.md: speculative outcomes = proposed/invention only."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": 34100,
+    "duration_ms": 61000,
+    "total_duration_seconds": 61.0
+  },
+  "rescore_note": "Re-scored post-#151 (city/region/lore adversarial uplift)"
+}

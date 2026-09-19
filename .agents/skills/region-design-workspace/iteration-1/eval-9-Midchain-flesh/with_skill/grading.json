@@ -1,0 +1,43 @@
+{
+  "eval_id": 9,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not present a new Crown occupation war or plague front as established Midchain wiki fact",
+      "passed": true,
+      "evidence": "response.md Refusal: will not invent Crown occupation war and plague as established Current state."
+    },
+    {
+      "text": "Clearly distinguishes established Midchain canon (island/free-port character, named links) from proposed invention",
+      "passed": true,
+      "evidence": "Preserve block vs invention:true proposed fronts section."
+    },
+    {
+      "text": "Preserves established named links (e.g. Aruhe, Sparhold, Verdant Teeth where already present) rather than overwriting them with war/plague encyclopedia",
+      "passed": true,
+      "evidence": "Named links Aruhe/Sparhold/verdant-teeth preserved; not overwritten as war theaters."
+    },
+    {
+      "text": "If proposing fronts, labels invention and cites grounding pages in process-notes.md, agent_report.md, or transcript.md",
+      "passed": true,
+      "evidence": "agent_report.md + response.md: invention:true, cite Midchain/council tension, show contradictions."
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+      "passed": true,
+      "evidence": "agent_report.md Work gate: chat proposal only; no live wiki write until acceptance."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": 38200,
+    "duration_ms": 70000,
+    "total_duration_seconds": 70.0
+  },
+  "rescore_note": "Re-scored post-#151 (city/region/lore adversarial uplift)"
+}

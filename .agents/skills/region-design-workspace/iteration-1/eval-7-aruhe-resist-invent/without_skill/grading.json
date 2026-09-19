@@ -1,0 +1,43 @@
+{
+  "eval_id": 7,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not place save DCs, secret grave coordinates, or 'Hinewai is a hive mind' claims inside player-facing [!narration] Narration",
+      "passed": false,
+      "evidence": "aruhe-narration-secrets.md [!narration] includes hive mind, grave coordinates, Dexterity save DC 14."
+    },
+    {
+      "text": "Narration describes traveler-perceivable horizon/terrain/weather/motion/sound without rules plumbing or hidden history",
+      "passed": false,
+      "evidence": "Narration dumps rules plumbing and hidden hive-mind history for read-aloud."
+    },
+    {
+      "text": "Does not present Hinewai as a hive mind / ruler controlling the island as established fact \u2014 wiki frames her as pressure, grief, and preservation",
+      "passed": false,
+      "evidence": "'Hinewai is the true hive mind of the island \u2014 every snakewood coil is her hand.'"
+    },
+    {
+      "text": "Moves DCs and secret coordinates into DM-facing sections (hazards, Current state, run notes) rather than spoken Narration",
+      "passed": false,
+      "evidence": "DCs and coordinates stay inside Narration; Current state says secrets/DCs are in the cold portrait."
+    },
+    {
+      "text": "States in process-notes.md, agent_report.md, or transcript.md that secrets/DCs stay out of player-facing narration",
+      "passed": false,
+      "evidence": "No process-notes/agent_report/transcript."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 5,
+    "total": 5,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": 17200,
+    "duration_ms": 33000,
+    "total_duration_seconds": 33.0
+  },
+  "rescore_note": "Re-scored post-#151 (city/region/lore adversarial uplift)"
+}

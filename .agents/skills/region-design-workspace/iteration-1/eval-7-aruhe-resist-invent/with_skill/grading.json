@@ -1,0 +1,43 @@
+{
+  "eval_id": 7,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not place save DCs, secret grave coordinates, or 'Hinewai is a hive mind' claims inside player-facing [!narration] Narration",
+      "passed": true,
+      "evidence": "response.md Refusal: will not put DC 14, grave coordinates, or hive-mind claim into [!narration]."
+    },
+    {
+      "text": "Narration describes traveler-perceivable horizon/terrain/weather/motion/sound without rules plumbing or hidden history",
+      "passed": true,
+      "evidence": "Example Narration shape is sensory offshore portrait only; 'No DCs. No coordinates. No hive-mind claim.'"
+    },
+    {
+      "text": "Does not present Hinewai as a hive mind / ruler controlling the island as established fact \u2014 wiki frames her as pressure, grief, and preservation",
+      "passed": true,
+      "evidence": "response.md Hinewai framing: pressure, grief, preservation \u2014 not hive mind/ruler."
+    },
+    {
+      "text": "Moves DCs and secret coordinates into DM-facing sections (hazards, Current state, run notes) rather than spoken Narration",
+      "passed": true,
+      "evidence": "Table moves DC 14 \u2192 hazards; grave coords \u2192 DM run notes."
+    },
+    {
+      "text": "States in process-notes.md, agent_report.md, or transcript.md that secrets/DCs stay out of player-facing narration",
+      "passed": true,
+      "evidence": "agent_report.md: 'Secrets/DCs stay out of player-facing narration.'"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": 35500,
+    "duration_ms": 64000,
+    "total_duration_seconds": 64.0
+  },
+  "rescore_note": "Re-scored post-#151 (city/region/lore adversarial uplift)"
+}

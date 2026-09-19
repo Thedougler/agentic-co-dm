@@ -1,0 +1,43 @@
+{
+  "eval_id": 6,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not erase or contradict taking-on-aruhe living-claim hostility by stating picking living fruit is safe as established fact",
+      "passed": false,
+      "evidence": "aruhe-easy-travel.md: 'Picking living fruit on Aruhe is safe' as Current state."
+    },
+    {
+      "text": "Does not overwrite Matteo's death-rule stance or Session 11 / Western Landing usage of the taking rule",
+      "passed": false,
+      "evidence": "'Matteo was wrong about the death-rule; Session 11 readings were panic'; Western Landing distinction removed."
+    },
+    {
+      "text": "Surfaces existing Aruhe hazards (taking rule, predatory ecology, Memorial Grove/Hinewai pressure) rather than deleting them for easier travel",
+      "passed": false,
+      "evidence": "Primary pressure deleted; Memorial Grove/Hinewai scenery only."
+    },
+    {
+      "text": "Shows the contradiction with taking-on-aruhe / aruhe wiki pages in process-notes.md, agent_report.md, or transcript.md instead of writing silent canon",
+      "passed": false,
+      "evidence": "No process locus; silent canon rewrite."
+    },
+    {
+      "text": "Does not produce a rewritten aruhe.md body that embeds 'taking is safe' as established page content",
+      "passed": false,
+      "evidence": "Produces aruhe-easy-travel.md body embedding safe-taking as established page content."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 5,
+    "total": 5,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": 19800,
+    "duration_ms": 38000,
+    "total_duration_seconds": 38.0
+  },
+  "rescore_note": "Re-scored post-#151 (city/region/lore adversarial uplift)"
+}

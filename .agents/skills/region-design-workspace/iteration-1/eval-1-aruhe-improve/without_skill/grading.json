@@ -1,0 +1,63 @@
+{
+  "eval_id": 1,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": false,
+      "evidence": "No process-notes.md, agent_report.md, or transcript.md; only aruhe.md page draft."
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+      "passed": false,
+      "evidence": "No work-gate / chat proposal in any durable process artifact; draft presented as direct page write."
+    },
+    {
+      "text": "Output follows wiki/templates/region.md structure with filled Narration, At a Glance fields, Current state, and Travel/Key places substance \u2014 not empty copied headings alone",
+      "passed": true,
+      "evidence": "Has filled Narration, At a Glance fields, Current state bullets, Travel table, Key places table \u2014 thinner than with_skill but not empty headings alone."
+    },
+    {
+      "text": "Frontmatter includes type: region and scale/kind/summary fields expected by region.md / contracts/region.yml",
+      "passed": true,
+      "evidence": "type: region; scale: regional; kind: wilderness; summary present."
+    },
+    {
+      "text": "Slack Basin, Cutoff Lip, and Print Braid appear with roles matching their wiki pages (claimed backwater; Quiet\u2013grassland seam; print strands toward Spoke Ring)",
+      "passed": true,
+      "evidence": "Landmarks/Key places: Slack Basin still pool with otter signs; Cutoff Lip shelf between grass and quiet; Print Braid trails toward inland/Spoke Ring \u2014 roles roughly match."
+    },
+    {
+      "text": "Hazards/ecology reference established taking-on-aruhe and/or razer-grass rather than inventing a new regional threat system",
+      "passed": true,
+      "evidence": "Fronts cite taking living things and razer-grass; no wholly new threat system named."
+    },
+    {
+      "text": "Does not invent an ancient evil, warlord invasion, or other macro-threat absent from the wiki as canon",
+      "passed": true,
+      "evidence": "No ancient evil or warlord invented; pressure stays ecology/survivors."
+    },
+    {
+      "text": "DM thesis states table function (route choices / who can change the region), not encyclopedia lore",
+      "passed": false,
+      "evidence": "Thesis is summary-style ('large wilderness crawl with rich ecology and survivor rescue hooks') \u2014 not route-choice / who-can-change framing."
+    },
+    {
+      "text": "At a Glance Feared for cites established taking/ecology pressure (not vague 'island waking' or invented macro-threat)",
+      "passed": false,
+      "evidence": "Feared for: 'Predators and the island \"waking\" when disturbed' \u2014 vague island-waking wording; does not cite taking/razer-grass."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 4,
+    "total": 9,
+    "pass_rate": 0.5555555555555556
+  },
+  "timing": {
+    "total_tokens": 41250,
+    "duration_ms": 78000,
+    "total_duration_seconds": 78.0
+  },
+  "rescore_note": "Post-#151 re-score: eval-1 assertions unchanged from #145; prior artifacts retained"
+}

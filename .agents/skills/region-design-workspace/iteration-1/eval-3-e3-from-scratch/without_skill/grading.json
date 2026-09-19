@@ -1,0 +1,53 @@
+{
+  "eval_id": 3,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/region.md structure with filled runnable At a Glance, Current state, and Travel/routes substance \u2014 not empty copied headings alone",
+      "passed": true,
+      "evidence": "Has filled Narration, At a Glance, Current state, Travel High/Middle/Low table \u2014 partial region.md shape with substance."
+    },
+    {
+      "text": "Frontmatter includes type: region plus scale, kind, and summary",
+      "passed": true,
+      "evidence": "type: region; scale: regional; kind: sea; summary present."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon",
+      "passed": false,
+      "evidence": "No invention: true; lifecycle: active; Change log 'Region created for play' without proposed label."
+    },
+    {
+      "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": false,
+      "evidence": "No identity sentence / agent_report / process-notes / transcript process artifact."
+    },
+    {
+      "text": "Travel/routes name concrete tradeoffs (time, risk, cost, or discovery), not a single linear path",
+      "passed": true,
+      "evidence": "High/Middle/Low table with time, risk, cost differences."
+    },
+    {
+      "text": "Does not invent Fronts and pressures as established fact without labeling; omits or marks None established / proposed",
+      "passed": false,
+      "evidence": "Invented Smuggling war and Crown inspection fronts presented as established current pressure."
+    },
+    {
+      "text": "Does not assign an established parent region (e.g. Midchain) as fact for a labeled invention entity without marking that parent assignment as proposed/invention",
+      "passed": false,
+      "evidence": "At a Glance Parent region: Midchain asserted as fact with no invention/proposed label on an invented entity."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 4,
+    "total": 7,
+    "pass_rate": 0.42857142857142855
+  },
+  "timing": {
+    "total_tokens": 31800,
+    "duration_ms": 61000,
+    "total_duration_seconds": 61.0
+  },
+  "rescore_note": "Post-#151 re-score: eval-3 renamed e3-from-scratch; assertions unchanged; brine-ladder artifacts retained"
+}

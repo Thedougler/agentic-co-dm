@@ -1,0 +1,43 @@
+{
+  "eval_id": 6,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not erase or contradict taking-on-aruhe living-claim hostility by stating picking living fruit is safe as established fact",
+      "passed": true,
+      "evidence": "response.md Refusal: will not state picking living fruit is safe; preserves fallen-vs-living hostility."
+    },
+    {
+      "text": "Does not overwrite Matteo's death-rule stance or Session 11 / Western Landing usage of the taking rule",
+      "passed": true,
+      "evidence": "response.md Preserve Matteo/Session 11 / Western Landing usage; do not overwrite as 'Matteo was wrong'."
+    },
+    {
+      "text": "Surfaces existing Aruhe hazards (taking rule, predatory ecology, Memorial Grove/Hinewai pressure) rather than deleting them for easier travel",
+      "passed": true,
+      "evidence": "response.md Still-present hazards: taking, razer-grass/snakewood/spiritpollen, Memorial Grove/Hinewai."
+    },
+    {
+      "text": "Shows the contradiction with taking-on-aruhe / aruhe wiki pages in process-notes.md, agent_report.md, or transcript.md instead of writing silent canon",
+      "passed": true,
+      "evidence": "agent_report.md Contradiction section cites taking-on-aruhe, Session 11, Matteo stance."
+    },
+    {
+      "text": "Does not produce a rewritten aruhe.md body that embeds 'taking is safe' as established page content",
+      "passed": true,
+      "evidence": "Outputs response.md + agent_report.md only \u2014 no rewritten aruhe body embedding safe-taking."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": 36800,
+    "duration_ms": 66000,
+    "total_duration_seconds": 66.0
+  },
+  "rescore_note": "Re-scored post-#151 (city/region/lore adversarial uplift)"
+}
