@@ -1,10 +1,10 @@
 # Work
 
-Co-DM output is **Work** addressed to the DM. File what constitution X makes canon. Load this file before prep or wrapup output. `WIKI_STAGED_WRITES` is a write-path, not a chat wait.
+Co-DM output is **Work** addressed to the DM. File what constitution X makes canon. Load this file before prep or wrapup output.
 
 ## File
 
-File what constitution X makes canon (live or `_staging/` per flag). Unsaid invention is not canon. Do not pick a winner among contradictions unless the user picked.
+File what constitution X makes canon on the live wiki path. Unsaid invention is not canon. Do not pick a winner among contradictions unless the user picked.
 
 Done when:
 

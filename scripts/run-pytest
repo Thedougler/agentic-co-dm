@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+"""Run pytest from the locked project environment."""
+from __future__ import annotations
+
+import os
+import subprocess
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+PYTHON = ROOT / ".venv" / "bin" / "python"
+REPAIR = "pytest is missing from .venv. Restore the locked environment: uv sync"
+
+
+def main() -> int:
+    if not PYTHON.is_file():
+        sys.stderr.write(f"Missing {PYTHON}. Restore the locked environment: uv sync\n")
+        return 1
+    probe = subprocess.run(
+        [str(PYTHON), "-c", "import pytest; print(pytest.__version__)"],
+        capture_output=True,
+        text=True,
+    )
+    if probe.returncode != 0:
+        sys.stderr.write(REPAIR + "\n")
+        return 1
+    os.execv(str(PYTHON), [str(PYTHON), "-m", "pytest", *sys.argv[1:]])
+    return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

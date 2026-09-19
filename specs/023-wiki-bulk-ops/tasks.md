@@ -42,11 +42,11 @@ Every implementation task uses `- [ ] T###`, an optional `[P]` marker only for i
 - [x] T007 Implement flat frontmatter fence extraction and line-level key/value parsing in `scripts/wiki-bulk-ops`, preserving `---` delimiters and validating keys as `alphanumeric + underscore + hyphen`
 - [x] T008 Implement shared Obsidian wikilink/embedded-link parsing in `scripts/wiki-bulk-ops` for bare, piped, path-qualified, anchored, and embedded targets without altering display text or anchors
 - [x] T009 Implement `Change`, `ChangeRecord`, and `OperationResult` reporting in `scripts/wiki-bulk-ops`, including text and JSON output fields `files_scanned`, `files_modified`, `files_skipped`, `total_changes`, and per-file records
-- [x] T010 Implement same-directory tempfile plus `os.replace` atomic writes in `scripts/wiki-bulk-ops`, honoring `--dry-run` so preview mode performs no writes and respecting `WIKI_STAGED_WRITES` for newly generated pages
+- [x] T010 Implement same-directory tempfile plus `os.replace` atomic writes in `scripts/wiki-bulk-ops`, honoring `--dry-run` so preview mode performs no writes
 - [x] T011 Implement shared argparse global options and exit-status handling in `scripts/wiki-bulk-ops` for `--vault`, `--dry-run`, `--json`, `--glob`, and `--directory`, distinguishing success/no-op (0), validation errors (1), and partial failures (2)
 - [x] T012 [P] Add foundational CLI tests for missing vaults, JSON output shape, dry-run no-write behavior, atomic no-partial-write behavior, scope filters, and partial UTF-8 failure handling in `tests/test_wiki_bulk_ops.py`
 
-**Checkpoint**: Shared traversal, parsing, output, dry-run, atomicity, staged-write, and exit-code behavior is ready for all stories.
+**Checkpoint**: Shared traversal, parsing, output, dry-run, atomicity, and exit-code behavior is ready for all stories.
 
 ---
 
@@ -183,12 +183,12 @@ Every implementation task uses `- [ ] T###`, an optional `[P]` marker only for i
 ### Tests for User Story 7
 
 - [x] T059 [US7] Add failing MOC tests for content-folder `_index.md` creation, required frontmatter, static/fallback folder titles, alphabetical piped page links using page titles or filenames, and nested child-MOC links in `tests/test_wiki_bulk_ops.py`
-- [x] T060 [US7] Add failing MOC safety tests for infrastructure-folder exclusion, root `index.md` integration, manual-content regeneration semantics, `WIKI_STAGED_WRITES`, dry-run parity, and idempotent re-run in `tests/test_wiki_bulk_ops.py`
-- [x] T061 [US7] Add the `moc-generate` subparser and content-folder discovery in `scripts/wiki-bulk-ops`, excluding `_archive`, `_raw`, `_staging`, `_meta`, `.obsidian`, `attachments`, and `templates`
+- [x] T060 [US7] Add failing MOC safety tests for infrastructure-folder exclusion, root `index.md` integration, manual-content regeneration semantics, dry-run parity, and idempotent re-run in `tests/test_wiki_bulk_ops.py`
+- [x] T061 [US7] Add the `moc-generate` subparser and content-folder discovery in `scripts/wiki-bulk-ops`, excluding `_archive`, `_raw`, `_meta`, `.obsidian`, `attachments`, and `templates`
 - [x] T062 [US7] Implement static folder-name title mapping with title-cased fallback in `scripts/wiki-bulk-ops` for generated MOC frontmatter `title:` values
 - [x] T063 [US7] Implement deterministic MOC rendering in `scripts/wiki-bulk-ops` with required `title`, `category`, `tags`, `sources`, `created`, and `updated` fields; flat alphabetical piped wikilinks; and nested child `_index.md` links
 - [x] T064 [US7] Implement root `index.md` regeneration in `scripts/wiki-bulk-ops` to include links to every top-level content-folder `_index.md` while preserving the specified derived-file semantics
-- [x] T065 [US7] Integrate MOC generation with dry-run/atomic writes, staged-write routing for new pages, change records, JSON/text output, and idempotent regeneration in `scripts/wiki-bulk-ops`
+- [x] T065 [US7] Integrate MOC generation with dry-run/atomic live writes, change records, JSON/text output, and idempotent regeneration in `scripts/wiki-bulk-ops`
 - [x] T066 [US7] Add MOC CLI acceptance coverage for generated frontmatter, link ordering, infrastructure exclusions, root integration, dry-run/live parity, and idempotency in `tests/test_wiki_bulk_ops.py`
 
 **Checkpoint**: Content-folder navigation is generated from current vault state and remains safe to rerun.
@@ -204,7 +204,7 @@ Every implementation task uses `- [ ] T###`, an optional `[P]` marker only for i
 - [x] T069 Run the documented quickstart scenarios for rename, replace, frontmatter, link repair, tag normalization, MOC generation, and orphan reporting from `specs/023-wiki-bulk-ops/quickstart.md`
 - [x] T070 Run `python3 tests/test_wiki_bulk_ops.py` and the `scripts/wiki-bulk-ops` self-check; fix failures in `scripts/wiki-bulk-ops` or `tests/test_wiki_bulk_ops.py` only when attributable to this feature
 - [x] T071 Compare representative pre/post `wiki-lint` findings for each mutating operation and record any feature-caused regression in `errors.md` using `scripts/error-ledger.py`
-- [x] T072 Review executable permission, stdlib-only imports, stderr/error behavior, exit codes, idempotency, atomicity, markdown preservation, and `WIKI_STAGED_WRITES` against `specs/023-wiki-bulk-ops/spec.md` and `specs/023-wiki-bulk-ops/contracts/cli-contract.md`
+- [x] T072 Review executable permission, stdlib-only imports, stderr/error behavior, exit codes, idempotency, atomicity, and markdown preservation against `specs/023-wiki-bulk-ops/spec.md` and `specs/023-wiki-bulk-ops/contracts/cli-contract.md`
 
 ---
 
@@ -226,7 +226,7 @@ Every implementation task uses `- [ ] T###`, an optional `[P]` marker only for i
 4. **US3 (P2)** — frontmatter mutation.
 5. **US5 (P2)** — taxonomy-aware tags; consumes shared frontmatter logic.
 6. **US6 (P2)** — dry-run parity and orphan report; audits all operation plans.
-7. **US7 (P2)** — MOC generation; consumes shared scope, frontmatter, output, atomicity, and staged-write handling.
+7. **US7 (P2)** — MOC generation; consumes shared scope, frontmatter, output, and atomicity.
 
 ### Within Each User Story
 
@@ -325,4 +325,4 @@ The feature has one executable source and one test module. Parallelize planning/
 - `[P]` appears only when work can proceed independently without an incomplete prerequisite.
 - `[US#]` labels map every story-phase task to the corresponding prioritized story in `spec.md`.
 - Data-model constraints are preserved in the task descriptions: exact-one rename source, collision refusal, non-empty search, valid YAML keys, UTF-8 skip behavior, two-column TSV, fuzzy threshold 1–5, and readable taxonomy.
-- All mutating operations remain stdlib-only, agent-shaped, markdown-safe, atomic per file, idempotent, and compatible with `WIKI_STAGED_WRITES=true`.
+- All mutating operations remain stdlib-only, agent-shaped, markdown-safe, atomic per file, and idempotent.

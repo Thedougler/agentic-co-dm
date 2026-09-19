@@ -14,6 +14,6 @@
     "lint:markdown": "markdownlint-cli2",
     "maintain": "./scripts/wiki-maintain",
     "verify": "./scripts/check-omp-baseline.sh",
-    "test": ".venv/bin/python -m pytest"
+    "test": "./scripts/run-pytest"
   }
 }

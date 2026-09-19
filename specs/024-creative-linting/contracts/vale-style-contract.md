@@ -21,9 +21,6 @@ BasedOnStyles = CoDM, ai-tells, proselint, Readability
 [wiki/_raw/*.md]
 BasedOnStyles =
 
-[wiki/_staging/*.md]
-BasedOnStyles = ai-tells, proselint
-
 [wiki/_archive/*.md]
 BasedOnStyles =
 
@@ -34,7 +31,7 @@ BasedOnStyles = CoDM
 BasedOnStyles =
 ```
 
-The `wiki/` scope inherits the installed packages plus the custom `CoDM` style. Raw and archive pages are excluded; staging intentionally keeps only the configured prose packages; creative fixtures run the custom rule style without applying unrelated prose packages. Scope exclusions match existing `lint_wiki.py` `SKIP_DIRS` where applicable.
+The `wiki/` scope inherits the installed packages plus the custom `CoDM` style. Raw and archive pages are excluded; creative fixtures run the custom rule style without applying unrelated prose packages. Scope exclusions match existing `lint_wiki.py` `SKIP_DIRS` where applicable.
 
 ### Rule File Convention
 

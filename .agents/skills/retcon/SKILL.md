@@ -6,7 +6,7 @@ description: >
 
 # Retcon
 
-Correct a campaign wiki error only when the user's current message explicitly asks for a retcon; that request is the authorization to repair the live wiki directly, overriding FR-019, lifecycle gates, and staged-write review for this correction only.
+Correct a campaign wiki error only when the user's current message explicitly asks for a retcon; that request is the authorization to repair the live wiki directly, overriding FR-019 and lifecycle gates for this correction only.
 
 ## Start
 
@@ -30,7 +30,7 @@ Search the resolved vault, not the repo unless they are the same path.
    - YAML `title`, `aliases`, `summary`, `sources`, relationships, and tags
    - slug and kebab forms used in filenames or links
 3. Search filenames and directory names under the vault for the same forms.
-4. Include live pages, owner pages, `journal/`, recaps, `index.md`, `hot.md`, `log.md`, `_staging/`, `_raw/`, and archive-like wiki folders unless the DM explicitly excludes them.
+4. Include live pages, owner pages, `journal/`, recaps, `index.md`, `hot.md`, `log.md`, `_raw/`, and archive-like wiki folders unless the DM explicitly excludes them.
 
 Done: every hit is inventoried by path and kind: content hit, link hit, frontmatter hit, filename hit, or page whose existence is the error.
 
@@ -40,11 +40,11 @@ Choose the smallest repair that makes the wiki unable to repeat the falsehood.
 
 - **Replacement:** when the page remains valid and the truth is a direct substitute.
 - **Removal:** when the sentence, bullet, alias, source, relationship, or link only exists to carry the error.
-- **Whole-file deletion:** when the file itself is a false owner, duplicate owner, false recap, or staged artifact and cannot be made true without preserving the error.
+- **Whole-file deletion:** when the file itself is a false owner, duplicate owner, or false recap and cannot be made true without preserving the error.
 
 Rules:
 
-- Edit live wiki files in place. Do not create `_staging/*.patch.md` for a retcon.
+- Edit live wiki files in place.
 - Do not leave "formerly X", "previously X", parenthetical explanations, aliases, backlinks, or redirects containing the original error.
 - If deleting or renaming a page, repair inbound links, `index.md`, `hot.md`, `log.md`, and any manifest or dashboard entry that names it.
 - Preserve unrelated page facts and local formatting.

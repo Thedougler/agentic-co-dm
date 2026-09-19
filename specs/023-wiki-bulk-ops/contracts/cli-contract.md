@@ -195,7 +195,7 @@ scripts/wiki-bulk-ops moc-generate [global opts]
 ```
 
 **Behavior**:
-1. Walk content category folders (e.g. `entities/`, `entities/npc/`, `journal/`, `synthesis/`) — skip infrastructure dirs (`_archive/`, `_raw/`, `_staging/`, `_meta/`, `.obsidian/`, `attachments/`, `templates/`)
+1. Walk content category folders (e.g. `entities/`, `entities/npc/`, `journal/`, `synthesis/`) — skip infrastructure dirs (`_archive/`, `_raw/`, `_meta/`, `.obsidian/`, `attachments/`, `templates/`)
 2. For each content folder, generate `_index.md` with:
    - Required llm-wiki frontmatter (`title`, `category`, `tags`, `sources`, `created`, `updated`)
    - `title:` from static folder-name → player-friendly title map (fallback: title-cased folder name)

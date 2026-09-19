@@ -8,7 +8,6 @@
   "globs": [
     "**/*.md",
     "!wiki/_raw/**/*.md",
-    "!wiki/_staging/**/*.md",
     "!wiki/_archive/**/*.md",
     "!wiki/templates/**/*.md",
     "!node_modules/**/*.md",

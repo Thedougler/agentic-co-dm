@@ -50,7 +50,7 @@ HARD_KEYS = (
 PC_ROLE = re.compile(r"^(pc|player character|player)$", re.I)
 TOKEN = re.compile(r"`([^`]+)`")
 RESERVED_FILES = {"AGENTS.md", "README.md", "index.md", "log.md", "hot.md"}
-SKIP_DIRS = {".obsidian", "_archive", "_archives", "_raw", "_readouts", "_staging", "_meta", "templates"}
+SKIP_DIRS = {".obsidian", "_archive", "_archives", "_raw", "_readouts", "_meta", "templates"}
 # Closed set: common ability/stat wikilinks are not HARD broken_links (no auto-pages).
 MECHANIC_LINK_ALLOWLIST = {
     "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma",
@@ -217,30 +217,78 @@ def load(vault: Path) -> tuple[dict[str, dict], dict[str, list[str]]]:
         aliases = scalar_list(block or "", "aliases")
         rel_key = rel.as_posix()
         pages[rel_key] = {"path": path, "text": text, "block": block or "", "fields": fields, "title": title, "aliases": aliases}
-        keys = {normalize(path.stem), normalize(title), *(normalize(a) for a in aliases)}
+        keys = {normalize(path.stem), normalize(title), normalize(rel_key), normalize(Path(rel_key).with_suffix("").as_posix())}
         for key in keys:
-            if key:
+            if key and rel_key not in lookup[key]:
                 lookup[key].append(rel_key)
     return pages, lookup
 
 
-def resolve(raw: str, pages: dict[str, dict], lookup: dict[str, list[str]]) -> list[str]:
-    def candidates_for(value: str) -> list[str]:
-        key = normalize(value)
-        found = list(lookup.get(key, []))
-        if "/" in key:
-            found.extend(lookup.get(Path(key).name, []))
-            found.extend(rel for rel in pages if normalize(rel) == key)
-        return sorted(set(found))
+def _unique(items: list[str]) -> list[str]:
+    return sorted(set(items))
 
-    candidates = candidates_for(raw)
-    if candidates:
-        return candidates
-    # Exact miss: retry once after stripping a leading English article.
+
+def classify_link(raw: str, pages: dict[str, dict], lookup: dict[str, list[str]]) -> dict[str, object]:
+    """Ranked wikilink hit: path, then stem/title, then aliases, then article strip."""
+
+    def aliases_for(key: str) -> list[str]:
+        return _unique([
+            rel for rel, item in pages.items()
+            if key in {normalize(alias) for alias in item.get("aliases") or [] if alias}
+        ])
+
+    def ranked(value: str) -> dict[str, object]:
+        key = normalize(value)
+        if not key:
+            return {"kind": "missing", "targets": [], "evidence": "empty"}
+        if "/" in key or key.endswith(".md"):
+            path_key = key.removesuffix(".md")
+            path_hits = _unique([
+                rel for rel in pages
+                if normalize(rel) == key or normalize(rel).removesuffix(".md") == path_key
+            ])
+            if len(path_hits) == 1:
+                return {"kind": "canonical", "targets": path_hits, "evidence": "path"}
+            if len(path_hits) > 1:
+                return {"kind": "ambiguous", "targets": path_hits, "evidence": "path"}
+        owner_key = key.removesuffix(".md") if key.endswith(".md") else key
+        owner_hits = _unique(list(lookup.get(key, [])) + (list(lookup.get(owner_key, [])) if owner_key != key else []))
+        if len(owner_hits) == 1:
+            return {"kind": "canonical", "targets": owner_hits, "evidence": "stem_or_title"}
+        if len(owner_hits) > 1:
+            return {"kind": "ambiguous", "targets": owner_hits, "evidence": "stem_or_title"}
+        alias_hits = aliases_for(owner_key)
+        if len(alias_hits) == 1:
+            return {"kind": "alias", "targets": alias_hits, "evidence": "alias"}
+        if len(alias_hits) > 1:
+            return {"kind": "ambiguous", "targets": alias_hits, "evidence": "alias"}
+        return {"kind": "missing", "targets": [], "evidence": "unresolved"}
+
+    hit = ranked(raw)
+    if hit["kind"] != "missing":
+        return hit
     stripped = re.sub(r"^(the|a|an)\s+", "", raw.strip(), count=1, flags=re.I)
     if stripped and stripped != raw.strip():
-        return candidates_for(stripped)
-    return []
+        return ranked(stripped)
+    return hit
+
+
+def named_missing_owner(raw: str) -> bool:
+    """True when a missing wikilink is a named owner, not junk or a mechanic token."""
+    text = raw.split("|", 1)[0].strip()
+    if not text or "{{" in text or "}}" in text:
+        return False
+    if normalize(text) in MECHANIC_LINK_ALLOWLIST:
+        return False
+    if not re.search(r"[A-Za-z]", text):
+        return False
+    if re.fullmatch(r"[a-z0-9_./]+", text) and "_" in text:
+        return False
+    return True
+
+
+def resolve(raw: str, pages: dict[str, dict], lookup: dict[str, list[str]]) -> list[str]:
+    return list(classify_link(raw, pages, lookup)["targets"])
 
 
 def link_occurrences(text: str) -> list[tuple[str, int]]:
@@ -513,23 +561,38 @@ def main() -> int:
     ]
 
     broken: list[dict[str, object]] = []
+    missing_owners: list[dict[str, object]] = []
     incoming = collections.Counter()
     edges: list[tuple[str, str]] = []
     scoped_documents = set(pages) if args.scope else None
     for rel, body in documents.items():
         reserved_page = Path(rel).name in RESERVED_FILES
         emit_findings = scoped_documents is None or rel in scoped_documents
+        lines = body.splitlines()
         for raw, line in link_occurrences(body):
             if normalize(raw) in MECHANIC_LINK_ALLOWLIST:
                 continue
-            targets = resolve(raw, resolve_pages, resolve_lookup)
-            if len(targets) == 1:
+            hit = classify_link(raw, resolve_pages, resolve_lookup)
+            targets = list(hit["targets"])
+            if hit["kind"] in {"canonical", "alias"} and len(targets) == 1:
                 incoming[targets[0]] += 1
                 edges.append((rel, targets[0]))
-            elif not targets and emit_findings and not reserved_page:
-                # Skip HARD broken_links from reserved non-content (AGENTS/index/log/hot).
-                broken.append({"page": rel, "target": raw, "line": line})
+            elif hit["kind"] == "missing" and emit_findings and not reserved_page:
+                evidence = lines[line - 1].strip() if 0 < line <= len(lines) else ""
+                named = named_missing_owner(raw)
+                item = {
+                    "page": rel,
+                    "target": raw,
+                    "line": line,
+                    "class": "missing_owner" if named else "junk",
+                    "repair": "mint_owner" if named else "remove",
+                    "evidence": evidence,
+                }
+                broken.append(item)
+                if named:
+                    missing_owners.append(item)
     findings["broken_links"] = broken
+    findings["missing_owner"] = missing_owners
     findings["orphan_pages"] = [{"page": rel, "line": 1} for rel in pages if incoming[rel] == 0]
     index_targets = set()
     for raw in links(documents.get("index.md", "")):

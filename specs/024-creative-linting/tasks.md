@@ -20,8 +20,8 @@ description: "Task list for feature implementation"
 - [X] T001 [P] Add `PyYAML>=6,<7` to `pyproject.toml` while preserving the existing project dependencies and Python requirement.
 - [X] T002 [P] Create root `package.json` with `private: true`, `engines.node: ">=22"`, pinned `markdownlint-cli2` `0.23.2`, and thin scripts delegating directly to `scripts/wiki-lint`, `scripts/wiki-maintain`, `scripts/check-omp-baseline.sh`, and pytest.
 - [X] T003 Generate `package-lock.json` from `package.json` with npm so the `markdownlint-cli2` dependency is reproducible and no Node implementation wrapper is introduced.
-- [X] T004 [P] Create `.vale.ini` with `StylesPath = styles`, `MinAlertLevel = suggestion`, packages `ai-tells`, `proselint`, and `Readability`, plus the documented wiki, raw, staging, archive, fixture, and template scopes from `contracts/vale-style-contract.md`.
-- [X] T005 [P] Create `.markdownlint-cli2.jsonc` with the repository Markdown rules and exclusions for `wiki/_raw`, `wiki/_staging`, `wiki/_archive`, and `wiki/templates`.
+- [X] T004 [P] Create `.vale.ini` with `StylesPath = styles`, `MinAlertLevel = suggestion`, packages `ai-tells`, `proselint`, and `Readability`, plus the documented wiki, raw, archive, fixture, and template scopes from `contracts/vale-style-contract.md`.
+- [X] T005 [P] Create `.markdownlint-cli2.jsonc` with the repository Markdown rules and exclusions for `wiki/_raw`, `wiki/_archive`, and `wiki/templates`.
 - [X] T006 [P] Create tracked `styles/CoDM/`, `rules/shadow/`, `rules/candidates/`, and `tests/fixtures/creative_lint/` directory surfaces, including fixture subdirectories for registry, symbolic, and integration cases.
 - [X] T007 [P] Create repository-owned `rules/registry.yml`, `rules/bundles.yml`, and `rules/waivers.json` configuration files with valid empty or initial-document shapes consumed by later tasks.
 

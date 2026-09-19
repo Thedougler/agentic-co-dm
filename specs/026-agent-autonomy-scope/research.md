@@ -122,9 +122,9 @@ Skill-design class: `not` (established-file strips + AGENTS.md). No designated-w
 
 **Alternatives considered**: Leave Work-gate headers as pointers to work.md (rejected: AGENT001 and FR-005). New skill (rejected: XIV, FR-007).
 
-## R-008: Staged writes stay a write-path, not a wait
+## R-008: Wiki writes go live
 
-**Decision**: `WIKI_STAGED_WRITES=true` still lands category pages under `wiki/_staging/`. That is not a conversation pause. “Create NPC Varn” → write the page (staging if flag on), lint green, done-summary. `wiki-stage-commit` remains Nick file-review of the staging queue, not Work.
+**Decision**: Category pages land on live vault paths. “Create NPC Varn” → write the page, lint green, done-summary.
 
 **Rationale**: Spec Assumptions.
 

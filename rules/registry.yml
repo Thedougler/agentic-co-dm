@@ -189,7 +189,7 @@ rules:
     evaluator: symbolic
     lifecycle: ACTIVE
     message: Content contains a wikilink that does not resolve
-    repair: Resolve the target against the wiki or remove the unsupported reference
+    repair: Resolve the target to an existing owner or mint a grounded owner from established mentions. Do not delete a named live-wiki reference to go green. Removal is only for malformed links, mechanic-allowlist tokens, or accidental junk.
     auto_repair: true
     tags: [retrieval, links]
     conflicts: []

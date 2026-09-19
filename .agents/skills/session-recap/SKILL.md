@@ -39,8 +39,8 @@ Align with `wiki/AGENTS.md` session-folder + page-filename rules. Load `obsidian
 
 1. **Orient.** Confirm campaign slug and session number (ask rather than guess). Prefer `hot.md` + that session folder over full index/log. If the source is a raw transcript, hand cleanup to `session-transcript-ingest` first and consume its bounded packet (or a bounded packet from `reconciling-session-evidence`).
 2. **Write the recap.** Player-safe story of what play supported. No unearned secrets, DCs, or agent-process notes. Optional short Wiki facts list for the vault (names as wikilinks, clocks moved, next handles).
-3. **File.** When `WIKI_STAGED_WRITES=true` (vault default), land the same content under `wiki/_staging/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md`; otherwise write the live path above. Never skip staging while the flag is true. Then one done-summary.
-4. **Stop.** Return the (staged or live) recap path. Do not cascade other skills from this skill.
+3. **File.** Write the live path `wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md`. Then one done-summary.
+4. **Stop.** Return the recap path. Do not cascade other skills from this skill.
 
 ## MUST NOT (conflicts resolved)
 

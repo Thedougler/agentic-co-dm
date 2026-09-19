@@ -73,9 +73,6 @@ Remove Propose / Decide acceptance waits. File what the Canon section makes cano
 
 Delete `## Work gate` sections. Point at `AGENTS.md` only if a pointer is required; do not copy canon.
 
-## Staged writes
-
-`WIKI_STAGED_WRITES` does not change the loop. Writes may land in `_staging/`. That is not a wait.
 
 ## Invariants
 

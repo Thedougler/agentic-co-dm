@@ -28,14 +28,15 @@ Python dependencies are declared in `pyproject.toml`; Node development tools are
 
    Restart the shell or add `~/.local/bin` to `PATH` if the installer requests it.
 
-3. Install the Python dependencies:
+3. Install the Python dependencies, including the `dev` group that provides pytest:
 
    ```bash
    uv sync
    source .venv/bin/activate
+   .venv/bin/python -m pytest --version
    ```
 
-   `uv sync` creates the project environment and installs PyYAML, tiktoken, and the pinned Vale CLI.
+   `uv sync` creates the locked project environment. If pytest is missing, run `uv sync` again before `npm test`.
 
 4. Install the Node development tools:
 
@@ -87,6 +88,7 @@ Run these checks from the repository root after activating `.venv`:
 python3 tools/check_wiki_pages.py
 specify --version
 qmd status
+npm test
 npm run lint:markdown -- --no-globs README.md
 ./scripts/wiki-maintain --report --summary-only
 ```

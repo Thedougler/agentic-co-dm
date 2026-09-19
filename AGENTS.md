@@ -35,7 +35,7 @@ FR-002 structural repair, template conformance of existing content, named ingest
 
 ## Project identity
 
-Primary deliverables are skills, agent instructions, and guidance documents. Scripts and tooling support those. Review of skill or instruction changes uses the existing `skill-creator` eval loop (held-out prompts, with-skill vs without-skill, graded assertions). MUST NOT add a checklist, PR template, or review skill. Coverage and type-safety MUST NOT be the primary bar.
+Primary deliverables are skills, agent instructions, and guidance documents. Scripts and tooling support those. Review of skill or instruction changes uses the existing `skill-creator` eval loop (held-out prompts, with-skill vs without-skill, graded assertions grounded in live wiki content — not vacuum scenarios). MUST NOT add a checklist, PR template, or review skill. Coverage and type-safety MUST NOT be the primary bar.
 
 
 ## Configuration
@@ -73,7 +73,7 @@ If table aim is `missing`, ask the DM to name the players (at least one; tests u
 
 **Production session content** (session-prep beats, TotM/`[!narration]`, action cards, spoken text) is **complete or it does not ship**. Vague/non-specific descriptions of unnamed people/things because the entity page is missing = **critical error**.
 
-**Dependency order (recursive):** If a beat/scene names or requires an NPC, item, creature, place, faction, vehicle, spell, quest, or other entity — **mint/file that owner page first** (kebab basename, matching `wiki/templates/`, `wiki/_staging/` when `WIKI_STAGED_WRITES=true`), **then** write/update the session/TotM text that depends on it. A new named owner the user asked to introduce is filed first; spoken that depends on it follows. Existing wiki content MUST NOT wait. The DM cannot describe what does not exist.
+**Dependency order (recursive):** If a beat/scene names or requires an NPC, item, creature, place, faction, vehicle, spell, quest, or other entity — **mint/file that owner page first** (kebab basename, matching `wiki/templates/`, live vault path), **then** write/update the session/TotM text that depends on it. A new named owner the user asked to introduce is filed first; spoken that depends on it follows. Existing wiki content MUST NOT wait. The DM cannot describe what does not exist.
 
 Agents MUST complete **all** recursive dependency steps to finish the goal — not only top-level, intermediary, or initial steps — in dependency order. Applies to `session-beats`, typed beat skills, `theatre-of-the-mind`, `cold-opens`, `session-recap`, and Session Architect orchestration. Completeness gate — do **not** thin narrative craft.
 
@@ -104,13 +104,9 @@ Cut wasted context without waiting. A change MUST NOT count as an improvement if
 
 **Context waste:** max tokens on content + reasoning, not plumbing. Prefer `hot.md`, `scripts/manifest.py`, and Retrieval Primitives over whole `index.md` / `log.md` / `.manifest.json`. **Highest priority:** reconcile conflicting/redundant skill+AGENTS instructions only when surviving text keeps (or improves) agent output quality; do not thin narrative, mechanics, or craft that raises outputs. Byte-count is not a success metric. Method: `docs/agents/context-waste-method.md` (issue #71). Run `python3 scripts/context-waste-scan.py` for path+metric leads (size flags are investigation leads, not delete mandates). No prose-quality scoring.
 
-## Staged wiki writes
+## Wiki writes
 
-When `WIKI_STAGED_WRITES=true` (default for this vault), agents MUST land new/updated category pages under `wiki/_staging/<category>/` (patches as `*.patch.md`) — not directly into the live tree. Promote only via `wiki-stage-commit` after Nick reviews. `_raw/` remains the ingest inbox; `_archive/` holds promoted sources; `_staging/` is the LLM review queue. See `.agents/skills/wiki-stage-commit/SKILL.md` and `wiki/_staging/README.md`.
-
-At session start, inspect `_staging/` and integrate every page already there before beginning new wiki work. A staging page MUST NOT carry into a later session merely because the previous session ended; surface any genuine blocker with its owner and next action.
-
-Every file entering `wiki/` through `_staging/`, `_raw/`, or any other path MUST pass the current wiki linter before it is considered complete. A non-clean report means the file remains incomplete.
+Every wiki write goes to its live path. `_raw/` remains the ingest inbox; `_archive/` holds promoted sources. Every file entering `wiki/` MUST pass the current wiki linter before it is considered complete. A non-clean report means the file remains incomplete.
 
 ## Edit discipline
 
@@ -341,7 +337,6 @@ Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the 
 | "/daily-update" / "morning sync" / "refresh the wiki index" | `daily-update` |
 | "/wiki-switch NAME" / "switch vault" / "list my wikis" | `wiki-switch` |
 | "/wiki-digest" / "weekly digest" / "what's new in my wiki" | `wiki-digest` |
-| "/wiki-stage-commit" / "review staged pages" / "commit staged writes" | `wiki-stage-commit` |
 | "restyle Obsidian" / "CSS snippet" / "tune tabs/sidebars/graph panes" | `obsidian-layout-adjustment` |
 
 ### Co-DM — session lifecycle

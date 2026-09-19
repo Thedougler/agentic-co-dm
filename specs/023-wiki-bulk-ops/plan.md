@@ -24,7 +24,7 @@ Provide a single Python CLI script (`scripts/wiki-bulk-ops`) that agents invoke 
 
 **Performance Goals**: Full-vault rename across 1565 files in <5s wall clock
 
-**Constraints**: Zero external dependencies; must preserve Obsidian markdown syntax; must be idempotent; must respect `WIKI_STAGED_WRITES`
+**Constraints**: Zero external dependencies; must preserve Obsidian markdown syntax; must be idempotent; writes go to live vault paths
 
 **Scale/Scope**: ~1565 markdown files, ~44k total lines, single vault
 

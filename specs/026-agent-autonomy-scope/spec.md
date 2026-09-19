@@ -42,7 +42,7 @@ An agent performing wiki maintenance — linting, template conformance, ingest p
 **Acceptance Scenarios**:
 
 1. **Given** a wiki page with broken wikilinks and missing frontmatter fields, **When** an agent lints and repairs it, **Then** the page is fixed, checkable rules are green, and the agent reports a short done-summary
-2. **Given** a batch of raw ingest sources in `_raw/`, **When** an agent ingests them, **Then** pages are created under `_staging/` (per staged-writes policy), index/log/hot updated, and manifest recorded — then a short done-summary
+2. **Given** a batch of raw ingest sources in `_raw/`, **When** an agent ingests them, **Then** pages are created on live wiki paths, index/log/hot updated, and manifest recorded — then a short done-summary
 3. **Given** a wiki page using an outdated template structure, **When** an agent conforms it to the current template, **Then** the page is updated, checkable rules are green, and the agent reports a short done-summary
 
 
@@ -173,7 +173,7 @@ Agent-facing files use predictable paths and consistent searchable names. That p
 ## Assumptions
 
 - Constitution XV ("Autonomous Operation"): do the work. User speech is canon.
-- Staged writes (`WIKI_STAGED_WRITES=true`) remain a write-path safety net, not a conversation step
+- Wiki writes go to live vault paths
 - `AGENTS.md` explains why and examples; the checkable rule is the contract
 - Helper scripts and tooling continue to follow Constitution VI ("Software and Instructions Are Agent-Shaped")
 - Skill evaluation for instruction changes reuses the existing `skill-creator` eval loop

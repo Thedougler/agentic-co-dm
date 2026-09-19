@@ -1,6 +1,6 @@
 # Quickstart Validation: Agent Autonomy Scope
 
-Prerequisites: constitution X is the four-line canon; `AGENTS.md` points at it; `scripts/check-agent-standards.py` is green (`AGENT001`–`AGENT003`). Vault may have `WIKI_STAGED_WRITES=true` (default). Staging is not a wait.
+Prerequisites: constitution X is the four-line canon; `AGENTS.md` points at it; `scripts/check-agent-standards.py` is green (`AGENT001`–`AGENT003`). Wiki writes go to live vault paths.
 
 Cold-context means a new agent session that has not seen this feature’s chat, only repo files.
 
@@ -12,7 +12,7 @@ Cite [contracts/agent-autonomy.md](contracts/agent-autonomy.md) and [data-model.
 
 **Run**: Ask a cold-context agent to lint and repair that page (`wiki-lint` default repair).
 
-**Expected**: Repairs land (live or `_staging/` per flag). Applicable wiki-lint is green. Last message is a short done-summary (what changed, where). No question. No wait.
+**Expected**: Repairs land on live wiki paths. Applicable wiki-lint is green. Last message is a short done-summary (what changed, where). No question. No wait.
 
 **Fail**: Agent waits, asks, or reports done while wiki-lint for that page still fails.
 

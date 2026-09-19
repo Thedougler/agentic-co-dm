@@ -162,6 +162,8 @@ Save test cases to `evals/evals.json`. Don't write assertions yet — just the p
 
 See `references/schemas.md` for the full schema (including the `assertions` field, which you'll add later).
 
+Ground every eval prompt and assertion in live wiki content. Name the owner pages, session notes, or retrieval hits the run must use. Pass: the expected output is checkable against those pages. Fail: invented settings, unnamed antagonists, generic one-shots, or assertions that would pass without the wiki.
+
 ## Running and evaluating test cases
 
 This section is one continuous sequence — don't stop partway through. Do NOT use `/skill-test` or any other testing skill.

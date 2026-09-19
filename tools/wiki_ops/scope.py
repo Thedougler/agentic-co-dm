@@ -7,7 +7,7 @@ from pathlib import Path
 from typing import Any, Literal
 
 SKIP_DIRS = frozenset(
-    {".obsidian", "_archive", "_archives", "_raw", "_readouts", "_staging", "_meta", "templates", "attachments"}
+    {".obsidian", "_archive", "_archives", "_raw", "_readouts", "_meta", "templates", "attachments"}
 )
 ScopeKind = Literal["files", "directory", "entity_type", "identity_set", "changed", "bundle"]
 _ALIASES = {"dir": "directory", "type": "entity_type"}

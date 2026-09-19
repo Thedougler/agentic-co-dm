@@ -366,22 +366,6 @@ class MocGenerationTests(VaultFixture):
         self.assertEqual(repeat.returncode, 0, repeat.stderr)
         self.assertEqual(json.loads(repeat.stdout)["files_modified"], 0)
 
-    def test_moc_generation_stages_new_mocs_but_updates_root_index(self) -> None:
-        result = run_cli(
-            "moc-generate", "--json", "--vault", str(self.vault),
-            extra_env={"WIKI_STAGED_WRITES": "true"},
-        )
-        self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertFalse((self.vault / "entities/_index.md").exists())
-        self.assertFalse((self.vault / "entities/entities-index.md").exists())
-        self.assertTrue((self.vault / "_staging/entities/entities-index.md").exists())
-        self.assertTrue((self.vault / "_staging/entities/npc/npc-index.md").exists())
-        self.assertIn("entities/entities-index", (self.vault / "index.md").read_text())
-        repeat = run_cli(
-            "moc-generate", "--json", "--vault", str(self.vault),
-            extra_env={"WIKI_STAGED_WRITES": "true"},
-        )
-        self.assertEqual(json.loads(repeat.stdout)["files_modified"], 0)
 
 
 class PerformanceSmokeTests(VaultFixture):

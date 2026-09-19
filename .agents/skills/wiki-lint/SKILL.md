@@ -42,10 +42,9 @@ When a page path is given (the hot path):
 1. Run page-scoped deterministic pass.
 2. Read the page via QMD search-then-get; fall back to direct file read.
 3. **Identity.** When `identity.status` is `ambiguous`, read every candidate body. Complete Check 14 (`merge`, `digest`, or `differentiate`) until identity is `resolved`. Then edit.
-4. **Repair every fixable finding** (autonomous FR-002; no Work prompt; kebab remorph needs no extra greenlight): broken wikilinks (correct or remove), missing required frontmatter (add with defaults), invalid lifecycle/type (correct to nearest valid), snake_case/spaced/Aruhe/`00` basenames (rename to kebab). **Template ceiling:** when a contract exists for the page's `type`, add/correct/remove only sections, frontmatter, and callouts defined in that contract — relocate existing content only; MUST NOT invent missing field body. Content with no template field is preserved and flagged. **Source before filling:** when adding a missing required section, `wiki-query` the page's linked entities and source material before writing — ground in wiki content, not generation. Canon contradiction: append `errors.md` and MUST NOT pick a winner.
+4. **Repair every fixable finding** (autonomous FR-002; no Work prompt; kebab remorph needs no extra greenlight): broken wikilinks (resolve to an existing owner; if the target is a named missing owner, mint the thinnest valid owner from its template using only established mentions — do not delete a named live-wiki reference to go green), missing required frontmatter (add with defaults), invalid lifecycle/type (correct to nearest valid), snake_case/spaced/Aruhe/`00` basenames (rename to kebab). Removal is valid only for malformed links, mechanic-allowlist tokens, or accidental junk. **Template ceiling:** when a contract exists for the page's `type`, add/correct/remove only sections, frontmatter, and callouts defined in that contract — relocate existing content only; MUST NOT invent missing field body. Content with no template field is preserved and flagged. **Source before filling:** when adding a missing required section, `wiki-query` the page's linked entities and source material before writing — ground in wiki content, not generation. Canon contradiction: append `errors.md` and MUST NOT pick a winner.
 5. Report fixes inline. List unfixable findings separately with reasons.
-6. Skip Rule 12e when `_meta/trust-ledger.json` absent.
-7. **QMD refresh** — if page modified and QMD available, `${QMD_CLI:-qmd} update`.
+6. **QMD refresh** — if page modified and QMD available, `${QMD_CLI:-qmd} update`.
 
 **Done when:** identity is `resolved`; every fixable finding repaired; page-scoped command has `hard_fail: false` and empty findings; remaining unfixable findings listed; one done-summary names what changed and where (no question, no wait).
 
@@ -55,16 +54,12 @@ When a page path is given (the hot path):
 
 When vault-wide lint finds fixable issues across files and `--check` is not set:
 
-1. Run deterministic pass + checks 1–14 (see [checks.md](checks.md)). Collect the full **backlog**.
-2. Group by file. Order: most HARD findings first.
-3. Per file:
-   a. Read file + related context files. Write only this file.
-   b. Fix every fixable finding (same repairs as Page-Scoped step 4).
-   c. Re-run page-scoped lint until clean.
-   d. Commit before opening next file.
-4. **Degradation stop:** after each file, assess output quality and remaining context. If degraded — stop, report completed files, list remaining backlog, recommend fresh agent delegation.
+1. Run `./scripts/wiki-lint --json wiki/` (bare = every live page). `--scope X` never escapes X.
+2. Use JSON `backlog`: live pages with findings, sorted by file byte size then path. `next_page` is the first item.
+3. Process one backlog page: read, repair, page-scoped verify, commit. Re-run lint and take the new `next_page`.
+4. Stop only when `backlog` is empty, the user stops the run, or a concrete unrecoverable blocker occurs.
 
-**Done when:** every backlog file repaired and verified, or degradation stop fired; then one done-summary (what changed, where; no question; no wait).
+**Done when:** the applicable backlog is empty, or a concrete unrecoverable blocker is named; then one done-summary (what changed, where; no question; no wait).
 
 ## Full Vault Checks
 

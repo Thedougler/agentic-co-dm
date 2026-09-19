@@ -30,7 +30,7 @@ Replace Work gates with the four-line canon rule. File what those lines make can
 
 **Performance Goals**: N/A
 
-**Constraints**: MUST NOT add Work gates or extra canon steps. MUST NOT use avoided term "autonomous GM". MUST NOT add a review checklist, PR template, or review skill (FR-007). MUST bulk-rename existing agent-facing files to AGENT002. MUST update every old instruction file to the new checkable standards. Staged writes stay a write-path, not a chat pause.
+**Constraints**: MUST NOT add Work gates or extra canon steps. MUST NOT use avoided term "autonomous GM". MUST NOT add a review checklist, PR template, or review skill (FR-007). MUST bulk-rename existing agent-facing files to AGENT002. MUST update every old instruction file to the new checkable standards. Wiki writes go to live vault paths.
 
 **Scale/Scope**: Constitution MAJOR `3.0.0`; `AGENTS.md` / `wiki/AGENTS.md` / `docs/agents/*` / skill strips + kebab remorph of non-conforming agent-facing paths; three registry rules + one script + one test.
 

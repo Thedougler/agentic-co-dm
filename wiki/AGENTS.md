@@ -6,7 +6,7 @@ Owner conventions for this vault. Load before every write to `wiki/`. Overrides 
 
 Write **complete-sentence human prose**. A DM reads this without decoding agent shorthand. Telegram stubs, slash-stacks, and AI note-speak are invalid (FR-018).
 
-**HARD (Nick 2026-09-14):** Production session-prep / TotM / spoken text that names or requires an entity MUST have that owner page filed first (kebab + template; stage when `WIKI_STAGED_WRITES=true`). Vague stand-ins for missing entities do not ship — see root `AGENTS.md` entity-before-spoken. **DM-facing layers** (action cards, Be ready for, secrets, Wiki facts, owner pages): no coy/vague placeholders — see root `AGENTS.md` dm-facing-explicit.
+**HARD (Nick 2026-09-14):** Production session-prep / TotM / spoken text that names or requires an entity MUST have that owner page filed first (kebab + template, live path). Vague stand-ins for missing entities do not ship — see root `AGENTS.md` entity-before-spoken. **DM-facing layers** (action cards, Be ready for, secrets, Wiki facts, owner pages): no coy/vague placeholders — see root `AGENTS.md` dm-facing-explicit.
 
 Classify each write against the stack table in `AGENTS.md`. Vault is `true` on wiki vault notes. Mixed documents classify per passage, then apply vault format to the whole note.
 
@@ -84,9 +84,9 @@ Legacy pages are out of scope. Wrapup MUST NOT convert a legacy page into a samp
 
 Done when: the kind's jobs are answered, empty sections are omitted, spoken look is player-safe.
 
-Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<session-number>/` (Session 11 → `wiki/journal/sessions/shattered-sea/11/`; Session 01 → `…/01/`). Session plan `Session-<n>-00-<Title>.md`, numbered live beats `Session-<n>-<BB>-<Label>.md`, **post-play recaps**, and that night’s companion notes all live in the **same** session-number folder. Recap path: `wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md` (`type: recap`, copy `wiki/templates/recap.md`). Do **not** park recaps at flat `wiki/journal/…`, spaced `Session NN - Recap.md`, or a parallel `recaps/` folder. Owner pages stay outside. `_raw/` is the ingest inbox (not LLM review staging). LLM review queue is `wiki/_staging/` when `WIKI_STAGED_WRITES=true` — promote via `wiki-stage-commit`. Two campaigns do not share a session-number folder. `wiki/templates/session.md` is deprecated as copy-start; `type: session` remains legacy in the enum. Do not file `{{title}} - B01 - Strong Start` names.
+Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<session-number>/` (Session 11 → `wiki/journal/sessions/shattered-sea/11/`; Session 01 → `…/01/`). Session plan `Session-<n>-00-<Title>.md`, numbered live beats `Session-<n>-<BB>-<Label>.md`, **post-play recaps**, and that night’s companion notes all live in the **same** session-number folder. Recap path: `wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md` (`type: recap`, copy `wiki/templates/recap.md`). Do **not** park recaps at flat `wiki/journal/…`, spaced `Session NN - Recap.md`, or a parallel `recaps/` folder. Owner pages stay outside. `_raw/` is the ingest inbox. Two campaigns do not share a session-number folder. `wiki/templates/session.md` is deprecated as copy-start; `type: session` remains legacy in the enum. Do not file `{{title}} - B01 - Strong Start` names.
 
-**Session evidence (post-play):** in the same session-number folder — `Session-<NN>-Recap.md` (summary), `Session-<NN>-Transcript.md` (text companion). Audio/video recording files use flat `wiki/attachments/session-<NN>-recording.{ext}` (role `recording`; kebab). Do not park transcripts/recordings under a parallel `recaps/` tree or repo-root folders. Raw dumps may stage in `wiki/_raw/` then promote; archive evidence into `wiki/_archive/` after ingest.
+**Session evidence (post-play):** in the same session-number folder — `Session-<NN>-Recap.md` (summary), `Session-<NN>-Transcript.md` (text companion). Audio/video recording files use flat `wiki/attachments/session-<NN>-recording.{ext}` (role `recording`; kebab). Do not park transcripts/recordings under a parallel `recaps/` tree or repo-root folders. Raw dumps may land in `wiki/_raw/` then promote; archive evidence into `wiki/_archive/` after ingest.
 
 
 ## Page filenames
@@ -132,7 +132,7 @@ When a shared job appears, use the shared heading name. DM-visible labels use Ti
 
 ## Approval (FR-019)
 
-Wiki facts the user said file immediately (staging if `WIKI_STAGED_WRITES` is on). Named ingest of those sources, and thin complete-sentence stubs for names those sources contain (including as links), file without a second chat step. Unsaid invented names are not canon. HARD entity-before-spoken files the owner page, then spoken.
+Wiki facts the user said file immediately on the live path. Named ingest of those sources, and thin complete-sentence stubs for names those sources contain (including as links), file without a second chat step. Unsaid invented names are not canon. HARD entity-before-spoken files the owner page, then spoken.
 
 Layout moves and structure-only template rewrites that keep facts and `type` unchanged proceed without waiting.
 

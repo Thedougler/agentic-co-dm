@@ -2,7 +2,7 @@
 
 Reference for checks 1–14, run during full-vault lint and bulk repair. The deterministic script handles detection for HARD/soft keys; checks below add what it cannot detect. Run in order, report findings as you go.
 
-**Scope:** skip `_archives/`, `_raw/`, `_staging/`, `_readouts/`, `.obsidian/`. Redirect stubs (`redirects_to`) skipped in orphan, frontmatter, and creative checks. Reserved `README.md`, `AGENTS.md`, `index.md`, `log.md`, `hot.md` are operational, not content pages.
+**Scope:** skip `_archives/`, `_raw/`, `_readouts/`, `.obsidian/`. Redirect stubs (`redirects_to`) skipped in orphan, frontmatter, and creative checks. Reserved `README.md`, `AGENTS.md`, `index.md`, `log.md`, `hot.md` are operational, not content pages.
 
 ### 1. Orphaned Pages
 
@@ -92,30 +92,9 @@ Computed at read time: `is_stale = (today − updated) > 90 days`. Report stale+
 
 For pages with `superseded_by`: verify target exists, target not archived, no cycles. Warn if `lifecycle != archived` while `superseded_by` set. Fix: human.
 
-#### 12e — Confidence review integrity
-
-**Gate:** skip entirely when `_meta/trust-ledger.json` absent.
-
-Run: `obsidian-wiki trust-check "$OBSIDIAN_VAULT_PATH" --strict --json --pretty`
-
-`--strict`: stale, unreviewed, or missing-page warnings return nonzero. Without `--strict`, nonzero only for hard ledger errors or score mismatches.
-
-| Result | Action |
-|---|---|
-| `reviewed` | Do not recompute |
-| `stale` | Manual lineage + coverage review |
-| `unreviewed` | Manual review required |
-| `score_mismatches` / `errors` | Fail lint |
-
-**Record after approved review:** `obsidian-wiki trust-record "$OBSIDIAN_VAULT_PATH" --page "path.md" --reviewed-at "<ISO>" --approved --json --pretty` (or `--all` after full-vault review). Never run merely to silence warnings.
-
-**Stale/unreviewed recomputation:** decompose claims → map to independent evidence lineages → score per `llm-wiki` buckets → classify `raise`/`keep`/`lower`/`repair first` → require approval before changing `base_confidence`.
-
-No automatic confidence fix. `--consolidate` never rewrites `base_confidence`.
-
 #### Enforcement
 
-Non-reserved content pages must contain finite `base_confidence` in `[0.0, 1.0]` and documented lifecycle value (owner schema may relax). Missing/malformed trust fields and ledger data are hard errors. New valid pages without ledger entry = `unreviewed`; material changes to approved pages = `stale`.
+Non-reserved content pages must contain finite `base_confidence` in `[0.0, 1.0]` and documented lifecycle value (owner schema may relax). Missing/malformed trust fields are hard errors.
 
 ### 13. Typed Relationships
 
@@ -127,7 +106,7 @@ Every fact has one owner page. Find pages that duplicate or fragment a concept's
 
 **Completion criterion:** every flagged pair ends as one canonical page, or as distinct situations with `identity.status` `"resolved"`.
 
-**Detect:** from live pages (excluding `_archives/`, `_raw/`, `_staging/`, redirects), extract `title`, `aliases`, `tags`, `summary`. Compute similarity (title overlap, edit distance, substring containment, alias cross-match — same signals as `wiki-dedup` Step 2a–2b, frontmatter only, no full reads). Flag ≥ 0.75 (HIGH ≥ 0.90, MEDIUM 0.75–0.89). Skip pairs linked by `redirects_to`. Script's `duplicate_stems` catches filename collisions; this check catches semantic duplicates.
+**Detect:** from live pages (excluding `_archives/`, `_raw/`, `_readouts/`, redirects), extract `title`, `aliases`, `tags`, `summary`. Compute similarity (title overlap, edit distance, substring containment, alias cross-match — same signals as `wiki-dedup` Step 2a–2b, frontmatter only, no full reads). Flag ≥ 0.75 (HIGH ≥ 0.90, MEDIUM 0.75–0.89). Skip pairs linked by `redirects_to`. Script's `duplicate_stems` catches filename collisions; this check catches semantic duplicates.
 
 **Verdicts:** `merge` (same concept, different name) | `digest` (facts belong on existing canonicals) | `differentiate` (scanner collision, different table jobs).
 
@@ -152,14 +131,10 @@ Read both bodies and their linked owners. Rewrite each page from those facts unt
 3. Delete digested page. No redirect stubs.
 4. Rewrite wikilinks to canonical targets.
 
-#### Staged writes
-
-When `WIKI_STAGED_WRITES=true`, merged/digested canonicals land under `wiki/_staging/`. Wikilink rewrites and deletions go live (structural, not content).
-
 #### Scope in repair flows
 
 - **Page-scoped:** check if named page duplicates or is duplicated by another. Resolve if found.
-- **Bulk:** full scan, resolve one at a time, commit between. Degradation stop applies.
+- **Bulk:** full scan, resolve one at a time, commit between. Use JSON `backlog` smallest-file-first.
 - **`--check`:** report with verdicts, do not resolve.
 
 ## Report Format

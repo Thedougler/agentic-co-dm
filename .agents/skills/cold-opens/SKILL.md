@@ -14,7 +14,7 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## HARD: entity-before-spoken
 
-Follow AGENTS.md **HARD: entity-before-spoken** (Nick 2026-09-14). Mint/file required owner pages (kebab + templates; stage when `WIKI_STAGED_WRITES=true`) **before** filling this beat's spoken/`[!narration]`/action-card text. Vague stand-ins for missing entities = critical error — do not ship.
+Follow AGENTS.md **HARD: entity-before-spoken** (Nick 2026-09-14). Mint/file required owner pages (kebab + templates) **before** filling this beat's spoken/`[!narration]`/action-card text. Vague stand-ins for missing entities = critical error — do not ship.
 
 ## HARD: dm-facing-explicit
 

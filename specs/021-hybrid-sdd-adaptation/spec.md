@@ -241,7 +241,7 @@ These scenarios are the minimum cross-class acceptance set for the adapted syste
 - **FR-031**: The adapted Spec Kit layer MUST preserve the normal substantial-feature lifecycle: specify, clarify, plan, checklist, tasks, analyze, implement, and converge.
 - **FR-032**: Existing Spec Kit git and agent-context extensions MUST remain configured and operational unless a concrete incompatibility is named and resolved.
 
-- **FR-033**: Existing wiki schema, entity directories, lifecycle, reveal, visibility, Work acceptance, campaign skills, templates, retrieval primitives, linter, staged writes, designated-writer policy, domain vocabulary, and unattended deterministic maintenance MUST remain compatible.
+- **FR-033**: Existing wiki schema, entity directories, lifecycle, reveal, visibility, Work acceptance, campaign skills, templates, retrieval primitives, linter, designated-writer policy, domain vocabulary, and unattended deterministic maintenance MUST remain compatible.
 - **FR-034**: Completion evidence MUST identify the route taken, authoritative context used and intentionally omitted, affected and resolved owner artifacts, dependency topology, deterministic checks run, creative/agency/continuity review, Work and DM acceptance state where applicable, filing or promotion state, and measured context cost where claimed.
 - **FR-035**: The system MUST distinguish specification approval, plan approval, task completion, creative Work production, DM acceptance or modification, and accepted campaign truth as separate states.
 - **FR-036**: Every optimization candidate MUST be evaluated against a pinned baseline with equivalent inputs and recorded revisions. Promotion MUST require at least 10 same-kind paired cases, at least a 5% median trajectory-token reduction, zero new hard-gate failures, semantic non-inferiority established by the blind paired evaluator and fixed rubric in FR-027, and no material increase in runtime failures or DM revision rate. Low-risk changes MAY auto-promote only after a 10% canary; moderate-risk changes MUST complete shadow replay and canary review; high-risk changes MUST receive human review. Any hard-gate failure or material quality regression MUST trigger rollback.
@@ -342,7 +342,7 @@ The following constraints are included because each prevents a named failure:
 
 ## Assumptions
 
-- The current constitution, AGENTS files, wiki schemas, skills, templates, Work protocol, retrieval primitives, linter, staged-write behavior, and configured environment are authoritative and are loaded progressively rather than copied into this feature.
+- The current constitution, AGENTS files, wiki schemas, skills, templates, Work protocol, retrieval primitives, linter, and configured environment are authoritative and are loaded progressively rather than copied into this feature.
 - The repository's existing campaign lifecycle, provenance, reveal, visibility, owner-page, and DM acceptance mechanisms are sufficient; this feature adapts Spec Kit to them rather than adding a canon model.
 - `engineering` retains ordinary Spec Kit technical semantics; the other three classes add only the contract needed to prevent their named failures.
 - A request that changes a skill, instruction, retrieval rule, workflow, prompt surface, or LLM-wiki operating behavior is substantial even when its output is prose, because it changes how future agents operate.

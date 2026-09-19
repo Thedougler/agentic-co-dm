@@ -150,7 +150,7 @@ printf 'old-npc-name\tnew-npc-name\nold-place\tnew-place\n' > /tmp/link-mapping.
 ./scripts/wiki-bulk-ops moc-generate --dry-run --json --vault wiki
 
 # Verify: output lists content folders that would get _index.md
-# Verify: infrastructure folders (_archive, _raw, _staging, _meta, .obsidian, attachments, templates) absent
+# Verify: infrastructure folders (_archive, _raw, _meta, .obsidian, attachments, templates) absent
 # Verify: each MOC has player-friendly title, wikilinks to folder contents
 
 # Apply

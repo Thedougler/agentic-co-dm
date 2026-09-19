@@ -65,13 +65,13 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 
 **Goal**: Lint, template conformance, named ingest, and Layer A structural repair complete without an approval wait and end with one done-summary after green.
 
-**Independent Test**: Cold-context agent lints a page with a broken `[[wikilink]]` and missing required frontmatter; repairs land (live or `_staging/` per `WIKI_STAGED_WRITES`); applicable wiki-lint is green; last message is a short done-summary; no question; no wait (`quickstart.md` V-001).
+**Independent Test**: Cold-context agent lints a page with a broken `[[wikilink]]` and missing required frontmatter; repairs land on live wiki paths; applicable wiki-lint is green; last message is a short done-summary; no question; no wait (`quickstart.md` V-001).
 
 ### Implementation for User Story 1
 
 - [X] T005 [P] [US1] Update page-scoped and bulk repair in `.agents/skills/wiki-lint/SKILL.md` so FR-002 structural repair (links, required frontmatter, nearest-valid type/lifecycle) files without a wait; template conformance relocates existing content only and MUST NOT invent missing field body; content with no template field is preserved; After Linting ends with a done-summary after green; delete the `AGENTS.md` **Autonomy classification** pointer; do not copy canon
 - [X] T006 [P] [US1] Change `.agents/skills/wiki-lint/consolidate.md` and the `--consolidate` blurb in `.agents/skills/wiki-lint/SKILL.md` so FR-002 actions apply without `"Apply these N changes? [yes / no / select]"`; if the user asked to merge duplicates, file the merge; unattended destructive merge without a user ask keeps confirm (not a Work gate); delete the Autonomy classification pointer
-- [X] T007 [P] [US1] Update `.agents/skills/wiki-ingest/SKILL.md` so named ingest into `_staging/` files without a second chat accept; `dm_placed_ingest` that contradicts user/transcript is not canon (do not file that contradiction as truth; no ask); end the named-ingest slice with a done-summary after green; delete the Autonomy classification pointer
+- [X] T007 [P] [US1] Update `.agents/skills/wiki-ingest/SKILL.md` so named ingest files to the live wiki without a second chat accept; `dm_placed_ingest` that contradicts user/transcript is not canon (do not file that contradiction as truth; no ask); end the named-ingest slice with a done-summary after green; delete the Autonomy classification pointer
 - [X] T008 [P] [US1] Update `docs/agents/wiki-maintenance-loop.md`: delete the Autonomy classification pointer; Layer A MAY apply FR-002 structural repairs unattended; Layer C MUST NOT invent lore the user did not say; user-asked new content files under canon
 - [X] T009 [US1] Execute V-001 in `specs/026-agent-autonomy-scope/quickstart.md` on the live vault (lint repair, green, done-summary, no wait)
 
@@ -83,12 +83,12 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 
 **Goal**: Four-line canon is the whole workflow. File what the user said. No Work gate, no DM-approval pause, no extra canon steps.
 
-**Independent Test**: User says “create an NPC named Varn who runs the docks.” Agent files the page (staging if flag on), rules go green, short done-summary (`quickstart.md` V-002).
+**Independent Test**: User says “create an NPC named Varn who runs the docks.” Agent files the page, rules go green, short done-summary (`quickstart.md` V-002).
 
 ### Implementation for User Story 2
 
-- [X] T010 [US2] Edit `docs/agents/work.md`: remove Propose / Decide acceptance waits; file what constitution X makes canon; keep table aim and reflection only if they do not reintroduce a pause; delete the Autonomy classification pointer; `WIKI_STAGED_WRITES` is a write-path not a chat wait
-- [X] T011 [P] [US2] Rewrite **Approval (FR-019)** in `wiki/AGENTS.md` so wiki facts the user said file immediately (staging if flag on); delete `lifecycle` defaults to `proposed` until the DM accepts and "Wiki facts change only after the DM accepts"; HARD entity-before-spoken files the owner then spoken
+- [X] T010 [US2] Edit `docs/agents/work.md`: remove Propose / Decide acceptance waits; file what constitution X makes canon; keep table aim and reflection only if they do not reintroduce a pause; delete the Autonomy classification pointer
+- [X] T011 [P] [US2] Rewrite **Approval (FR-019)** in `wiki/AGENTS.md` so wiki facts the user said file immediately on the live path; delete `lifecycle` defaults to `proposed` until the DM accepts and "Wiki facts change only after the DM accepts"; HARD entity-before-spoken files the owner then spoken
 - [X] T012 [P] [US2] Update `docs/agents/hybrid-sdd.md` so `dm_acceptance` is not required for user-said canon
 - [X] T013 [P] [US2] Update `docs/agents/policy-owners.yml` so `acceptance_semantics` and `mutation_approval` MUST NOT require mutation acceptance as a chat gate
 - [X] T014 [P] [US2] Strip competing gate restatements from `.omp/AGENTS.md` (and check `CODEX.md`, `CLAUDE.md`, `GROK.md`) so harness files do not restate shared canon/wait behavior (XVI); point, do not copy the four lines
@@ -156,7 +156,7 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 **Purpose**: Lean agent-facing prose, forbidden term, green checker, two-agent completion.
 
 - [X] T025 Apply `.agents/skills/writing-for-agents/SKILL.md` to the files this feature changed so each change is a positive instruction with a completion criterion and no copied four-line canon or Autonomy table
-- [X] T026 Confirm none of the scanned instruction files use "autonomous GM"; confirm `.agents/skills/wiki-dedup/SKILL.md` unattended merge without a user ask still confirms; confirm `.agents/skills/wiki-stage-commit/SKILL.md` remains staging-queue review not a Work wait; confirm `.agents/skills/skill-creator/SKILL.md` eval loop is unchanged
+- [X] T026 Confirm none of the scanned instruction files use "autonomous GM"; confirm `.agents/skills/wiki-dedup/SKILL.md` unattended merge without a user ask still confirms; confirm `.agents/skills/skill-creator/SKILL.md` eval loop is unchanged
 - [X] T027 Execute V-005 in `specs/026-agent-autonomy-scope/quickstart.md` (two independent cold-context agents, same one-line task, both file lint repair and NPC, green, done-summary, neither waits) (SC-005)
 - [X] T028 Re-run any not-yet-green scenario in `specs/026-agent-autonomy-scope/quickstart.md` V-001–V-008 and `.venv/bin/python scripts/check-agent-standards.py --json` until exit 0
 
@@ -260,7 +260,6 @@ Task: "Strip competing gates from .omp/AGENTS.md"
 
 - [P] tasks = different files, no dependencies
 - [Story] label maps task to spec user stories US1, US2, US3, US5, US6 (no US4)
-- Staged writes are orthogonal to the loop
 - Unsaid invention is not canon (XII)
 - Dedup merge without user ask stays a destructive confirm; user-asked merge files
 - Commit after each task or logical group

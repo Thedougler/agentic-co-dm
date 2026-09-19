@@ -34,7 +34,7 @@ conversation into a page; the factory turns a body of pages into a reusable skil
    `OBSIDIAN_WIKI_REPO`, `OBSIDIAN_LINK_FORMAT`, the QMD vars, and:
    - `SKILL_FACTORY_OUTPUT_DIR` — where generated skills land. Default:
      `$OBSIDIAN_VAULT_PATH/_generated-skills` (a vault-level, underscore-prefixed *excluded* dir —
-     like `_raw`/`_staging`/`_sources`, NOT the `skills/` knowledge category). This co-locates
+     like `_raw`/`_sources`, NOT the `skills/` knowledge category). This co-locates
      generated skills with the vault they were distilled from. Create it if missing.
      Note: `_generated-skills/` holds runtime Agent-Skill bundles (`name` + `description` frontmatter),
      **not** wiki pages — never write them into `skills/` (that category is for knowledge pages and

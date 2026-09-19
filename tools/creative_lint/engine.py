@@ -17,7 +17,7 @@ from .waivers import WaiverRegistry
 from .evaluators.symbolic import evaluate_symbolic
 
 ROOT = Path(__file__).resolve().parents[2]
-_SKIP_DIRS = frozenset({"_archive", "_archives", "_raw", "_readouts", "_staging", "_meta", "templates", ".obsidian"})
+_SKIP_DIRS = frozenset({"_archive", "_archives", "_raw", "_readouts", "_meta", "templates", ".obsidian"})
 
 
 @dataclass(slots=True)

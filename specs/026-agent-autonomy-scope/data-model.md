@@ -35,9 +35,9 @@ Machine-checkable rules that encode new agent-facing standards from this feature
 
 Wiki HARD lint (links, frontmatter, templates, Vale on wiki) already exists. This feature does not duplicate it. Green-before-done (FR-012) means: every checkable rule that applies to the work just done is exit 0 before the done-summary.
 
-### Staging write
+### Wiki writes
 
-Orthogonal. `WIKI_STAGED_WRITES=true` → category pages under `wiki/_staging/`. Not a conversation step. Promotion is `wiki-stage-commit`.
+Category pages land on live vault paths. Not a conversation step.
 
 ## Operations (FR-002)
 

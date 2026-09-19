@@ -19,7 +19,7 @@ description: >
 
 You are ingesting source documents into an Obsidian wiki. Your job is not to summarize — it is to **distill and integrate** knowledge across the entire wiki.
 
-Named ingest into `_staging/` files without a second chat accept. `dm_placed_ingest` that contradicts user/transcript is not canon — do not file that contradiction as truth; no ask. Unsaid invention is not canon. End the named-ingest slice with a done-summary after green (what changed, where; no question; no wait).
+Named ingest files to the live wiki without a second chat accept. `dm_placed_ingest` that contradicts user/transcript is not canon — do not file that contradiction as truth; no ask. Unsaid invention is not canon. End the named-ingest slice with a done-summary after green (what changed, where; no question; no wait).
 
 ## Before You Start
 
@@ -180,7 +180,7 @@ For each remaining file:
 4. Close the file before the next `open`. A later file may update a page from an earlier file only after the earlier file is `complete` or `failed`.
 5. **Degradation stop.** After each file completes, assess output quality and remaining context. If quality has visibly degraded (weaker summaries, missed cross-links, shallow extraction) or context is filling, stop. Report completed files, list the remaining backlog, and recommend delegating the rest to a fresh agent.
 
-After the run, report each file in processing order: `complete` or `failed`; related reads (identity, origin `staging` or `legacy`, role); misses; recency conflicts; destinations (pages created/updated, staged, unresolved, proposals); failure reason. If related search returned nothing, say so. Attribute later updates to the later file.
+After the run, report each file in processing order: `complete` or `failed`; related reads (identity, origin `legacy`, role); misses; recency conflicts; destinations (pages created/updated, unresolved, proposals); failure reason. If related search returned nothing, say so. Attribute later updates to the later file.
 
 **Done when:** every file is `complete` or `failed`, at most one was `open` at a time, every idea has a destination or the file is `failed` with a reason, Step 1d recorded related reads or an empty search, and the named-ingest slice has a done-summary (what changed, where; no question; no wait). Invented names not in the source remain Work, not filed facts.
 

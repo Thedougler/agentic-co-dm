@@ -22,6 +22,9 @@ task:
     enabled: true
     apply: true
     merge: patch
+retry:
+  modelFallback: true
+  fallbackRevertPolicy: cooldown-expiry
 isolation:
   backend: auto
 async:

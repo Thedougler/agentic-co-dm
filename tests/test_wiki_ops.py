@@ -193,7 +193,7 @@ def test_default_lint_output_includes_source_line_numbers(tmp_path: Path):
     grouped = report["findings_by_file"]["page.md"]
     assert any(item["rule"] == "broken_links" and item["line"] == 15 for item in grouped)
     assert report["status"] == "findings"
-    assert "orphan_pages" not in report["findings"]
+    assert report["findings"]["orphan_pages"] == [{"page": "page.md", "line": 1}]
 
     verbose = run_cli(
         "scripts/wiki-lint",
@@ -207,8 +207,8 @@ def test_default_lint_output_includes_source_line_numbers(tmp_path: Path):
         tmp_path,
     )
     verbose_report = assert_json(verbose, returncode=1)
-    assert verbose_report["findings"]["orphan_pages"] == []
-    assert verbose_report["counts"]["orphan_pages"] == 0
+    assert verbose_report["findings"]["orphan_pages"] == [{"page": "page.md", "line": 1}]
+    assert verbose_report["counts"]["orphan_pages"] == 1
     clean = tmp_path / "clean.md"
     clean.write_text(
         "---\n"
@@ -601,3 +601,85 @@ def test_identity_raw_drop_is_distinct_and_redirect_is_not_candidate(tmp_path: P
     assert resolve_identity(tmp_path, "_raw/drop.md").status == "distinct"
     result = resolve_identity(tmp_path, "canonical.md")
     assert all(item["path"] != "redirect.md" for item in result.candidates)
+
+
+def test_osset_owner_wins_over_alias(tmp_path: Path):
+    npc = tmp_path / "entities" / "npc"
+    npc.mkdir(parents=True)
+    front = (
+        "category: entities\n"
+        "tags: []\n"
+        "sources: []\n"
+        "created: 2026-09-18\n"
+        "updated: 2026-09-18\n"
+        "type: npc\n"
+        "lifecycle: accepted\n"
+        "reveal: dm\n"
+        "summary: Fixture.\n"
+    )
+    (npc / "Osset.md").write_text(
+        f"---\ntitle: Osset\n{front}---\n\n# Osset\n",
+        encoding="utf-8",
+    )
+    (npc / "talon-vantyrus.md").write_text(
+        f"---\ntitle: Talon Vantyrus\naliases: [Osset]\n{front}---\n\n# Talon Vantyrus\n",
+        encoding="utf-8",
+    )
+    (tmp_path / "source.md").write_text("See [[Osset]] and [[talon-vantyrus|Osset]].\n", encoding="utf-8")
+    (tmp_path / "index.md").write_text("- [[Osset]]\n- [[talon-vantyrus]]\n- [[source]]\n", encoding="utf-8")
+    report = assert_json(
+        run_cli("scripts/wiki-lint", "--json", "--no-vale", "--no-template", "--all", "--vault", tmp_path),
+        returncode=1,
+    )
+    orphans = {item["page"] for item in report["findings"].get("orphan_pages", [])}
+    missing = {item["page"] for item in report["findings"].get("index_issues", {}).get("missing_from_index", [])}
+    assert "entities/npc/Osset.md" not in orphans
+    assert "entities/npc/Osset.md" not in missing
+    assert "entities/npc/talon-vantyrus.md" not in orphans
+
+
+def test_named_missing_owner_cannot_be_removed(tmp_path: Path):
+    (tmp_path / "page.md").write_text(
+        "---\n"
+        "title: Page\n"
+        "category: test\n"
+        "tags: []\n"
+        "sources: []\n"
+        "created: 2026-09-18\n"
+        "updated: 2026-09-18\n"
+        "type: lore\n"
+        "lifecycle: draft\n"
+        "reveal: dm\n"
+        "summary: Fixture.\n"
+        "---\n\n"
+        "Travel to [[Named Place]]. Ignore [[foo_bar]].\n",
+        encoding="utf-8",
+    )
+    report = assert_json(
+        run_cli(
+            "scripts/wiki-lint",
+            "--json",
+            "--no-vale",
+            "--no-template",
+            "--all",
+            "--scope",
+            "files:page.md",
+            "--vault",
+            tmp_path,
+        ),
+        returncode=1,
+    )
+    by_target = {item["target"]: item for item in report["findings"]["broken_links"]}
+    assert by_target["Named Place"]["repair"] == "mint_owner"
+    assert by_target["Named Place"]["class"] == "missing_owner"
+    assert by_target["foo_bar"]["repair"] == "remove"
+    owners = {item["target"] for item in report["findings"]["missing_owner"]}
+    assert "Named Place" in owners
+    assert "foo_bar" not in owners
+    assert report["next_page"] == "page.md"
+
+
+def test_run_pytest_wrapper_reports_version():
+    result = subprocess.run([PYTHON, str(ROOT / "scripts" / "run-pytest"), "--version"], cwd=ROOT, capture_output=True, text=True)
+    assert result.returncode == 0, result.stderr
+    assert "pytest" in result.stdout.casefold()

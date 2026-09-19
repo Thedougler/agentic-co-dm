@@ -140,7 +140,7 @@ def structural_main(argv: list[str]) -> int:
             paths = scope.resolved_files if scope else [
                 p.relative_to(vault).as_posix()
                 for p in vault.rglob("*.md")
-                if p.is_file() and not {"_archive", "_archives", "_raw", "_readouts", "_staging", "_meta", "templates", ".obsidian"}.intersection(p.relative_to(vault).parts)
+                if p.is_file() and not {"_archive", "_archives", "_raw", "_readouts", "_meta", "templates", ".obsidian"}.intersection(p.relative_to(vault).parts)
             ]
             template_findings = []
             exemptions = 0
@@ -235,8 +235,25 @@ def structural_main(argv: list[str]) -> int:
                 item = _add_line_number(vault, item)
                 filename = str(item.get("file") or item.get("page") or "")
                 if filename:
+                    path = Path(filename)
+                    if path.is_absolute():
+                        try:
+                            filename = path.resolve().relative_to(vault.resolve()).as_posix()
+                        except ValueError:
+                            filename = path.as_posix()
                     grouped.setdefault(filename, []).append({"rule": grouped_rule, **item})
         report["findings_by_file"] = {key: grouped[key] for key in sorted(grouped)}
+        backlog = []
+        for filename, items in grouped.items():
+            path = vault / filename
+            try:
+                size = path.stat().st_size
+            except OSError:
+                size = 0
+            backlog.append({"page": filename, "bytes": size, "findings": len(items)})
+        backlog.sort(key=lambda item: (item["bytes"], item["page"]))
+        report["backlog"] = backlog
+        report["next_page"] = backlog[0]["page"] if backlog else None
         if args.json:
             print(json.dumps(report, sort_keys=True, separators=(",", ":")))
         else:
@@ -286,7 +303,7 @@ def _snapshot(vault: Path, report: dict[str, Any]) -> str:
     digest.update(json.dumps(report, sort_keys=True, separators=(",", ":")).encode())
     if vault.is_dir():
         for path in sorted(vault.rglob("*.md")):
-            if any(part in {".obsidian", "_archive", "_archives", "_raw", "_readouts", "_staging", "_meta", "templates"} for part in path.relative_to(vault).parts):
+            if any(part in {".obsidian", "_archive", "_archives", "_raw", "_readouts", "_meta", "templates"} for part in path.relative_to(vault).parts):
                 continue
             digest.update(path.relative_to(vault).as_posix().encode())
             digest.update(path.read_bytes())

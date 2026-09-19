@@ -40,7 +40,7 @@ grounded in what actually happened, not generic prompts.
    - Active PC goals and unresolved backstory threads
    - Faction clocks and NPC agendas in motion
    - Dangling clues, promises, or consequences from recent sessions
-   - Any prep the DM already started (staged pages, notes)
+   - Any prep the DM already started (notes)
 
 Summarize what you found in 5–10 lines before starting the grill. The DM
 should see that you know where the campaign stands.
@@ -148,7 +148,7 @@ it into `session-beats` when they're ready to file.
 
 ## Boundaries
 
-- This skill is **conversation only**. No wiki writes, no staged pages, no
+- This skill is **conversation only**. No wiki writes, no
   filed plans.
 - `session-beats` owns formal Beat Chart assembly and filing.
 - `campaign-planning` owns arc-level and season-level planning.

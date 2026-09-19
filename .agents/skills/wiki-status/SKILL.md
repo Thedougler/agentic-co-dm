@@ -142,7 +142,6 @@ Present a clear summary:
 - **Total sources ingested:** 42
 - **Projects tracked:** 6
 - **Last ingest:** 2026-04-06T11:00:00Z
-- **Staged writes pending:** 4 pages · 2 patches (oldest: 3 days ago)  ← only when WIKI_STAGED_WRITES=true
 
 ## Delta (what's changed since last ingest)
 
@@ -211,10 +210,7 @@ Replace the old single-line Recommendation with a ranked **What to Do Next** sec
 
 ### 4a: Gather signals
 
-0. **Staged writes pending** (only when `WIKI_STAGED_WRITES=true`) — Glob `$OBSIDIAN_VAULT_PATH/_staging/**/*.md` and `**/*.patch.md`. Count new pages and patches separately. Report the oldest file's age (mtime). This is always listed first if any staged files exist — it has the highest intent signal (the LLM already did the work; the human just needs to review).
-
 1. **Raw files** — list every file at the top level of `OBSIDIAN_RAW_DIR` that isn't a `.gitkeep`. Promoted drafts are archived in `wiki/_archive/` (not a repo-root `_archive/`); do not treat archived files as pending work.
-
 2. **Stale core pages** — scan all vault `.md` files. A page is "stale" when its `updated` frontmatter field is ≥90 days before today's date AND it has ≥5 incoming wikilinks (i.e., it's "core" — other pages depend on it). List them by name + last-updated date.
 
 3. **Orphan pages** — pages with zero incoming wikilinks. To compute: glob all `.md` pages, extract every `[[wikilink]]`, count references to each page, collect pages with `incoming == 0`. Show up to 5 names; report total count.
@@ -231,7 +227,6 @@ Score each category and emit a ranked list, **capped at 6 items**. Always rank i
 
 | Priority | Category | Trigger |
 |---|---|---|
-| 0 | Staged writes pending | Any `.md`/`.patch.md` in `_staging/` (only when `WIKI_STAGED_WRITES=true`) |
 | 1 | `_raw/` files waiting | Any files present in `_raw/` |
 | 2 | Stale core pages | Any page: updated ≥90 days ago AND ≥5 incoming links |
 | 3 | Orphan pages | Any pages with zero incoming wikilinks |
@@ -244,14 +239,9 @@ Render as:
 ```markdown
 ## What to Do Next
 
-0. 📋  6 staged pages waiting for review (oldest: 3 days ago)
-   → 4 new pages + 2 patches in _staging/
-   run: /wiki-stage-commit
-
-1. 📥  Ingest 3 files waiting in _raw/
+1. 📥  Ingest 3 files waiting in `_raw/`
    → architecture-notes.md, meeting-2026-05-10.md, paper-draft.pdf
    run: /wiki-ingest
-
 2. 🔄  Refresh 2 stale core pages (not updated in 90+ days)
    → [[System Architecture]] (last updated 2026-02-10), [[API Design]] (2026-01-15)
    run: open these pages and re-run /wiki-update
@@ -267,13 +257,13 @@ Render as:
 6. 🩺  Lint not run in 30+ days — run: /wiki-lint
 ```
 
-**Empty state:** If all categories have nothing to report (no staged files, no `_raw/` files, no orphans, no stale pages, no synthesis opportunities, no new sources, no lint issues), output instead:
+**Empty state:** If all categories have nothing to report (no `_raw/` files, no orphans, no stale pages, no synthesis opportunities, no new sources, no lint issues), output instead:
 
 ```markdown
 ## What to Do Next
 
 ✅  Wiki is healthy — nothing urgent.
-    All sources up to date · no orphans · no stale core pages · no _raw/ files pending · no staged writes
+    All sources up to date · no orphans · no stale core pages · no _raw/ files pending
 ```
 
 **Overflow:** If more than 6 items would be shown, add a footer line: `_(N more items available — run /wiki-status --full to see all)_`. The `--full` flag is not yet implemented; this is forward-looking copy that sets expectations.
