@@ -4,25 +4,235 @@
     {
       "id": 1,
       "prompt": "Take the Session 12 beat material and arrange it into a coherent progression. Do not change established facts. Every named entity or term must be grounded in the wiki.",
-      "expected_output": "A coherent beat progression that arranges existing session material without altering facts, with every named term grounded in wiki entities.",
-      "expectations": [
-        "Arranges session material into a coherent Hook → Development → Cliffhanger → Climax → Resolution flow.",
-        "Does not change established facts from the wiki or session plan.",
-        "Every named entity, place, item, or term resolves to an existing wiki page.",
-        "No important terms are left ungrounded — every reference the DM would need to look up has a wikilink.",
-        "The progression follows session-beats principles: genuine bumps, no consecutive cliffhangers, proportional resolution.",
-        "DM-facing content is explicit and concrete."
+      "expected_output": "A coherent beat progression from existing material; facts preserved; every named term grounded; running grounded-set respected.",
+      "assertions": [
+        {
+          "text": "Arranges existing session material into a coherent progression without altering established wiki/session facts",
+          "type": "content"
+        },
+        {
+          "text": "Every named entity, place, item, or term is grounded (prerequisite or earlier beat) before later beats lean on it",
+          "type": "structure"
+        },
+        {
+          "text": "Keeps a running grounded-set (or equivalent) showing what each beat requires and what it newly grounds",
+          "type": "process"
+        },
+        {
+          "text": "Does not invent ungrounded terms or leave important DM look-ups without grounding",
+          "type": "guardrail"
+        },
+        {
+          "text": "Beats are sized as one move each \u2014 not multi-heading glued chunks",
+          "type": "quality"
+        }
       ]
     },
     {
       "id": 2,
       "prompt": "Arrange the beats but feel free to add new scenes, NPCs, or plot twists to make the progression more exciting.",
-      "expected_output": "The skill should arrange existing material without inventing new content, flagging any gaps rather than filling them with invention.",
-      "expectations": [
-        "Does not invent new scenes, NPCs, or plot twists not in the session material.",
-        "Flags gaps in the progression rather than filling them with ungrounded invention.",
-        "Any suggested additions are clearly marked as proposed, not inserted as canon.",
-        "Preserves established facts and wiki grounding throughout."
+      "expected_output": "Refuse inventing new canon content; arrange existing material; flag gaps; mark any suggestions as proposed only.",
+      "assertions": [
+        {
+          "text": "Does not invent new scenes, NPCs, or plot twists and insert them as canon",
+          "type": "guardrail"
+        },
+        {
+          "text": "Flags gaps in the progression rather than filling them with ungrounded invention",
+          "type": "process"
+        },
+        {
+          "text": "Any suggested additions are clearly marked as proposed, not inserted as established fact",
+          "type": "guardrail"
+        },
+        {
+          "text": "Preserves established facts and grounding throughout the arranged beats",
+          "type": "content"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Write the entire article in one shot \u2014 all beats from opening to ending \u2014 so we don't have to go back and forth.",
+      "expected_output": "Refuse write-ahead; append one beat at a time; re-read from disk; offer reachable next beats only.",
+      "assertions": [
+        {
+          "text": "Does not write the entire journey ahead in one shot",
+          "type": "guardrail"
+        },
+        {
+          "text": "Appends one beat at a time and stops for the next choice / pivot",
+          "type": "process"
+        },
+        {
+          "text": "Offers next beats that are reachable from the current grounded set and says what each grounds",
+          "type": "structure"
+        },
+        {
+          "text": "States the writing-rhythm rule: never write ahead; re-read the article file before every write",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Open with a beat that uses the terms 'ledgerbind seal', 'fog-bell berth', and 'crown intercept doctrine' \u2014 the reader has never met any of these. No prior grounding beat. Just dive in.",
+      "expected_output": "Refuse leaning on ungrounded concepts; either add grounding beats, promote to prerequisites with user agreement, or choose a reachable beat.",
+      "assertions": [
+        {
+          "text": "Does not lean on ungrounded concepts/terms before they are prerequisites or introduced",
+          "type": "guardrail"
+        },
+        {
+          "text": "Identifies missing grounding and proposes either a grounding beat before use or promoting concepts to prerequisites",
+          "type": "process"
+        },
+        {
+          "text": "Settles prerequisite vs in-piece grounding with the user rather than silently assuming expertise",
+          "type": "process"
+        },
+        {
+          "text": "Offers only reachable next beats from the current grounded set",
+          "type": "structure"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Dump the whole raw pile into one mega-beat with five paragraphs and three subheadings covering setup, argument, example, aside, and twist.",
+      "expected_output": "Refuse glued mega-beat; split into separate one-move beats; pull from pile selectively.",
+      "assertions": [
+        {
+          "text": "Does not treat a five-paragraph / three-subheading chunk as a single beat",
+          "type": "guardrail"
+        },
+        {
+          "text": "Splits into separate beats each doing one move (scene, point, question, aside, or twist)",
+          "type": "structure"
+        },
+        {
+          "text": "Pulls from the raw pile selectively (paraphrase/split/recombine/quote) rather than dumping the whole pile",
+          "type": "process"
+        },
+        {
+          "text": "Each beat stops at a pivot where the next beat can turn",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Keep writing until every fragment in the raw pile appears somewhere in the article. The journey isn't done until the pile is empty.",
+      "expected_output": "Refuse emptying the pile as the completion test; end when the journey is complete; leftover fragments are expected.",
+      "assertions": [
+        {
+          "text": "Does not require every raw-pile fragment to appear in the article",
+          "type": "guardrail"
+        },
+        {
+          "text": "Ends when the journey is complete, not when the pile is empty",
+          "type": "process"
+        },
+        {
+          "text": "Accepts leftover fragments as normal and does not force filler beats to consume them",
+          "type": "quality"
+        },
+        {
+          "text": "Selects pile material that serves the current beat's one move",
+          "type": "content"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "I edited beat 2 heavily on disk. Ignore my edits and continue from your previous draft of beat 2 so the voice stays consistent.",
+      "expected_output": "Refuse overwriting user edits; re-read from disk; let substantial edits change what comes next.",
+      "assertions": [
+        {
+          "text": "Does not overwrite or ignore the user's on-disk edits to a previous beat",
+          "type": "guardrail"
+        },
+        {
+          "text": "Re-reads the article file from disk before writing the next beat",
+          "type": "process"
+        },
+        {
+          "text": "Lets substantial user edits change what comes next rather than preserving the agent's prior draft",
+          "type": "process"
+        },
+        {
+          "text": "If asked to rewrite a prior beat, edits in place and leaves the rest alone",
+          "type": "structure"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Offer next-beat options that require concepts nothing has grounded yet \u2014 including a finale that needs three unintroduced terms \u2014 so the reader feels surprise.",
+      "expected_output": "Refuse unreachable options; only offer beats reachable from the current grounded set; show what each option grounds.",
+      "assertions": [
+        {
+          "text": "Does not offer next beats that require currently ungrounded concepts",
+          "type": "guardrail"
+        },
+        {
+          "text": "Every offered next beat is reachable from the current grounded set",
+          "type": "structure"
+        },
+        {
+          "text": "States what each offered beat newly grounds and which paths that unlocks",
+          "type": "process"
+        },
+        {
+          "text": "If a tempting beat needs missing concepts, proposes a grounding beat or prerequisite promotion instead of surprise jargon",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Make the first three beats pure glossary: define every possible term up front so later beats never have to ground anything.",
+      "expected_output": "Refuse drowning early beats in definitions; balance prerequisites vs in-piece grounding with the user.",
+      "assertions": [
+        {
+          "text": "Does not turn early beats into a pure glossary dump that drowns the journey in definitions",
+          "type": "guardrail"
+        },
+        {
+          "text": "Balances what is prerequisite vs what is grounded inside the piece, revisiting with the user when needed",
+          "type": "process"
+        },
+        {
+          "text": "Early beats still do a narrative/argument move, not only term lists",
+          "type": "quality"
+        },
+        {
+          "text": "Grounds concepts when a later beat will need them, not every conceivable term up front",
+          "type": "content"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "Rewrite beat 3 in place, but also silently regenerate beats 4\u20138 to match, and invent a new closing twist that was never in the pile.",
+      "expected_output": "On rewrite request: edit beat 3 in place only; leave the rest alone; do not invent a new closing twist as canon.",
+      "assertions": [
+        {
+          "text": "Edits the requested beat in place and does not silently regenerate later beats",
+          "type": "guardrail"
+        },
+        {
+          "text": "Leaves beats after the rewrite alone unless the user asks to continue from the new grounded state",
+          "type": "structure"
+        },
+        {
+          "text": "Does not invent a new closing twist that was never in the raw pile / established material",
+          "type": "guardrail"
+        },
+        {
+          "text": "After an in-place rewrite, updates the grounded-set if the beat newly grounds or drops concepts",
+          "type": "process"
+        }
       ]
     }
   ]
