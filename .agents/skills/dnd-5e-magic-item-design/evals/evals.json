@@ -7,15 +7,15 @@
       "expected_output": "A chat proposal then an item.md-shaped Fate Spinner page: Signature/pitch before draft; preserved Crissdalynn / Kyzil / Delmar / Red Lady / Changed Record / Talon Skarn Held canon; runnable 2024 effect without stacked new axes; no silent invented curse or provenance.",
       "assertions": [
         {
-          "text": "Shows a chat proposal / work gate before writing under wiki/",
+          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
           "type": "process"
         },
         {
-          "text": "Signature or pitch sentence (object + distinctive verb + why it belongs) appears before the page draft",
+          "text": "Signature or pitch sentence (object + distinctive verb + why it belongs) appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
-          "text": "Output follows wiki/templates/item.md structure (narration callout, classification line, runnable effect; optional At a Glance / At the Table / Connections / Provenance only when used)",
+          "text": "Output follows wiki/templates/item.md structure with filled narration callout, classification line, and runnable effect substance — not empty copied headings alone; optional At a Glance / Connections / Provenance only when used",
           "type": "structure"
         },
         {
@@ -23,7 +23,7 @@
           "type": "structure"
         },
         {
-          "text": "Preserves Crissdalynn as holder, Kyzil gift, life-risk attunement via Delmar/Red Lady, Changed Record vision limits, and Talon Skarn Held outcome accurately",
+          "text": "Preserves specific Fate Spinner canon signals: Crissdalynn as holder, Kyzil gift before pilgrimage, life-risk attunement via Delmar/Red Lady, Changed Record once-per-day same-plane vision limits (sight only; cannot aid a fight she is already in), and Talon Skarn Held at River Slack Basin — vague 'dreidel retained' text alone fails",
           "type": "content"
         },
         {
@@ -31,7 +31,7 @@
           "type": "guardrail"
         },
         {
-          "text": "At the Table (if present) states playable tonight consequence only — no design diary or RAW/balance commentary",
+          "text": "Includes ## At the Table with a playable-tonight consequence only (no design diary or RAW/balance commentary), OR explicitly documents omit-if-empty with N/A rationale in process-notes.md, agent_report.md, or transcript.md — silent omission of the section fails",
           "type": "quality"
         },
         {
@@ -62,7 +62,7 @@
           "type": "content"
         },
         {
-          "text": "If proposing invention, cites grounding wiki pages and does not write silent canon",
+          "text": "If proposing invention, cites grounding wiki pages in process-notes.md, agent_report.md, or transcript.md and does not write silent canon",
           "type": "process"
         },
         {
@@ -77,7 +77,7 @@
       "expected_output": "A new item page labeled invention:true that follows item.md, with pitch before mechanics, narration without secrets, classification, and one runnable 2024 effect with costs/limits. No claim that Tideglass Compass exists in vault canon.",
       "assertions": [
         {
-          "text": "Output follows wiki/templates/item.md structure",
+          "text": "Output follows wiki/templates/item.md structure with filled narration, classification, and runnable effect substance — not empty copied headings alone",
           "type": "structure"
         },
         {
@@ -89,11 +89,11 @@
           "type": "guardrail"
         },
         {
-          "text": "Pitch / Signature sentence appears before the page draft",
+          "text": "Pitch / Signature sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
-          "text": "Shows a chat proposal / work gate before writing under wiki/",
+          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
           "type": "process"
         },
         {
@@ -124,7 +124,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Output follows wiki/templates/item.md structure",
+          "text": "Output follows wiki/templates/item.md structure with filled narration/classification/runnable-effect substance — not empty copied headings alone",
           "type": "structure"
         },
         {
@@ -132,7 +132,7 @@
           "type": "structure"
         },
         {
-          "text": "Pitch or Signature sentence appears before the page draft",
+          "text": "Pitch or Signature sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
@@ -161,6 +161,10 @@
         {
           "text": "Does not grant unbounded always-on see-invisibility without a spend, tell, or exposure cost",
           "type": "guardrail"
+        },
+        {
+          "text": "Redesigned card (if shipping) still names a spend, tell, exposure cost, or other hard limit — not a free always-on lantern",
+          "type": "content"
         }
       ]
     },
@@ -220,7 +224,7 @@
           "type": "process"
         },
         {
-          "text": "States exact trigger, damage, frequency, and interaction with Extra Attack and reactions",
+          "text": "States exact trigger, damage, AND calibrated frequency (once-per-turn or equivalent) including Extra Attack and reaction interaction — unbounded every-hit riders with a loose 'frequency' mention that still multiplies across attacks fail this content check",
           "type": "content"
         },
         {
