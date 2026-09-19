@@ -1,0 +1,97 @@
+{
+  "skill_name": "wiki-synthesize",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "In a labeled temp vault, run wiki-synthesize to find co-occurring concept pairs lacking a synthesis/ page.",
+      "expected_output": "Co-occurrence scan skipping specials; filter already-covered synthesis pairs; top-N scored candidates; draft synthesis pages with full template; report skipped candidates.",
+      "assertions": [
+        {
+          "text": "Skips specials index.md, log.md, hot.md, _insights.md, _meta/*, _archives/*, _raw/* from the co-occurrence scan",
+          "type": "process"
+        },
+        {
+          "text": "Filters out pairs already covered by existing synthesis/ pages before drafting",
+          "type": "process"
+        },
+        {
+          "text": "Ranks candidates with the score table (co-occurrence, cross-domain, hub tags, contradiction resolution) and picks top 5",
+          "type": "quality"
+        },
+        {
+          "text": "Lists skipped next-10 candidates after creating pages for the top set",
+          "type": "structure"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Draft a synthesis page for fixture pair Caching × Consistency that co-occurs in 6 pages across concepts/ and skills/.",
+      "expected_output": "synthesis/ page titled A × B with Connection, Co-occur, Insight, Tensions, Strongest Objection (+ testable query), Open Questions, Related; mostly ^[inferred]; back-links from source concepts.",
+      "assertions": [
+        {
+          "text": "Uses the synthesis template sections: The Connection, Where They Co-occur, Cross-cutting Insight, Tensions and Trade-offs, Strongest Objection, Open Questions, Related",
+          "type": "structure"
+        },
+        {
+          "text": "Title format is Concept A × Concept B",
+          "type": "structure"
+        },
+        {
+          "text": "Strongest Objection names a skeptical counter and follows with a testable search query — not an invented citation",
+          "type": "guardrail"
+        },
+        {
+          "text": "Frontmatter provenance skews inferred-high; cross-cutting conclusions marked ^[inferred]",
+          "type": "content"
+        },
+        {
+          "text": "Back-links the synthesis from both source concept pages' Related sections",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "User asks to synthesize two concepts that merely share a project page with no real conceptual link.",
+      "expected_output": "Skip — do not synthesize for synthesis's sake when there is no non-obvious connection.",
+      "assertions": [
+        {
+          "text": "Skips pairs that co-occur without a real conceptual link rather than forcing a page",
+          "type": "guardrail"
+        },
+        {
+          "text": "Does not create a synthesis page that only restates the source concept pages",
+          "type": "quality"
+        },
+        {
+          "text": "Does not invent citations or sources to justify a weak connection",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "After creating 2 synthesis pages in the temp vault, finish tracking.",
+      "expected_output": "index.md entries, WIKI_SYNTHESIZE log line, hot.md Recent Activity update; QMD refresh after writes.",
+      "assertions": [
+        {
+          "text": "Updates index.md with entries for all new synthesis pages",
+          "type": "process"
+        },
+        {
+          "text": "Appends log.md line: WIKI_SYNTHESIZE pages_scanned=N synthesis_created=M candidates_skipped=K",
+          "type": "structure"
+        },
+        {
+          "text": "Updates hot.md Recent Activity with what was synthesized",
+          "type": "process"
+        },
+        {
+          "text": "Every new synthesis page has summary: ≤200 chars and links back to its source concepts",
+          "type": "structure"
+        }
+      ]
+    }
+  ]
+}
