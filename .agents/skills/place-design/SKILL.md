@@ -11,173 +11,107 @@ description: >-
 ---
 
 # Place design
+
 File what constitution X makes canon. Follow `docs/agents/work.md`.
 
-## Build the place in this order
+## Refuse gates
 
-1. **Kernel.** Write the five sentences below. State what is true now, not a
-   history essay. Derive architecture, routes, people, clues, and consequences
-   from the same premise.
-2. **References.** Choose 2–4 recognizable references, then record what the
-   place inherits, transforms, or rejects from each. References are design
-   handles.
-3. **Promise.** Tell players what kinds of decisions and experiences the place
-   offers. Make the promise actionable, not just an adjective.
-4. **Structure.** Draw nodes and edges before room prose. Mark loops, bypasses,
-   retreats, vertical or strange connections, route tradeoffs, and the
-   north/east/south/west neighbors with approximate days of travel.
-5. **Life and information.** Give inhabitants goals, movement, and reactions;
-   distribute essential knowledge over several clue vectors.
-6. **Pressure and consequences.** Decide what changes while the party acts,
-   rests, leaves, or returns. Then key only significant nodes.
+- **Work gate.** Show a chat proposal before writing under `wiki/`. Write only
+  after DM acceptance.
+- **Invention.** Never present invention as wiki fact. Set `invention: true` (or
+  mark proposed), cite `[[pages]]`, show contradictions, and propose for
+  acceptance. No silent canon — including invented neighbors, occupants, pack
+  contents, or secret dungeons across a gap.
+- **Canon gaps.** Missing cardinal neighbors stay explicit gaps. Do not invent a
+  named site to fill a direction and write it as established fact.
+- **Template lock.** Copy `wiki/templates/place.md` only. Fill Overview, At a
+  Glance, If the party, Who, What, Where, Why with substance — not empty headings.
+- **Narration.** Overview spoken look is `[!narration]` — immediately perceivable
+  only. No secrets, DCs, hidden history, or unearned names.
+- **Kernel before draft.** Write the five-sentence kernel (and identity framing)
+  before the page body.
+- **No single-lever trap.** Essential truths need ~three independent clue
+  vectors. Obstacles get sign, trigger, effect, counterplay, bypass, and
+  leverage — not one prescribed method or one check.
+- **Respect capabilities.** Do not arbitrarily negate flight, teleportation,
+  burrowing, darkvision, or social authority; give honest costs, exposure,
+  limits, or opportunities.
+- **Enemies-vanished.** The place must stay interesting without an encounter
+  quota — exploration, clues, routes, resources, factions, hazards, or change.
+- **No reset.** On return, preserve durable history; update what is alive.
+- **Hub deferral.** For `kind: city`, load `city-design` as primary. For a region
+  job, load `region-design` as primary.
 
-## Five-sentence location kernel
+## Central principle
 
-1. **Function:** What was or is this place used for?
-2. **Fantastic element:** What makes it impossible to mistake for an ordinary place?
-3. **Present conflict:** Who or what currently wants incompatible things here?
-4. **Player promise:** What compelling experience does the place offer?
-5. **Trajectory:** What happens if nobody intervenes?
+A place is a **situation with topology**, not a lore essay or predetermined
+scene sequence. Prepare circumstances and actors; let players determine what
+happens. Spend prep on decisions the table will face.
 
-This is a situation, not a predetermined scene sequence. Prepare circumstances
-and actors; let players determine what happens.
+## Build the place
 
-### Player-facing promise
+1. **Kernel.** Five sentences — **Function**, **Fantastic element**, **Present
+   conflict**, **Player promise**, **Trajectory** (what if nobody intervenes).
+2. **References.** 2–4 recognizable handles; record inherit / transform / reject.
+3. **Promise.** One or two dominant player promises that decide what deserves
+   prep (discovery, danger, intrigue, exploitation, wonder, refuge,
+   transformation, mastery). Make them actionable.
+4. **3Fs + signatures.** Fantastic / Familiar / Functional; one productive
+   contradiction; three concrete actionable signature details.
+5. **Structure.** Nodes and edges before room prose. Cardinal NESW neighbors with
+   `~ days of travel` or explicit canon gaps. Prefer ≥2 approaches, a loop, a
+   bypass, a retreat, a route tradeoff, and reconnection after branches.
+6. **Affordances.** Verb test: each significant node invites a useful verb.
+   Prepare materials, relationships, constraints — not prescribed solutions.
+7. **Life, clues, pressure.** Faction sheets (Want/Fear/Method/Resources/Tell/
+   Offer/Response); ~three clue vectors per required secret; 2–4 location moves
+   with actor, trigger, visible result, new opportunity, lasting consequence.
 
-| Promise | Players expect to… |
-|---|---|
-| Discovery | Uncover secrets, history, routes, or strange phenomena |
-| Danger | Survive threats, manage exposure, or judge risk |
-| Intrigue | Identify alliances, motives, lies, and leverage |
-| Exploitation | Turn environmental features against a problem |
-| Wonder | Encounter something unfamiliar and consequential |
-| Refuge | Recover, form relationships, invest, and belong |
-| Transformation | Change ownership, function, culture, or physical form |
-| Mastery | Learn the place well enough to navigate or manipulate it efficiently |
+## File the wiki note
 
-Use one or two dominant promises. The promise decides which details deserve prep.
-
-## Fast identity test: 3Fs, contradiction, signatures
-
-Write the **3Fs**: **Fantastic** (what could exist only here), **Familiar** (what
-lets players understand it quickly), and **Functional** (how inhabitants actually
-use it). Add one productive contradiction that generates questions. Give three
-concrete signature details that imply actions—not decorative scenery. Prefer
-details players can climb, rotate, bargain with, break, follow, or exploit.
-
-## Navigable structure
-
-Represent the place as `node --edge--> node`. A node is a significant situation,
-landmark, resource, threshold, or decision; an edge records route, cost,
-information, danger, and consequence. Good topology usually includes:
-
-- north, east, south, and west neighboring locations, each with a wikilink or
-  explicit canon gap and an approximate `~ days of travel` distance where known;
-- at least two approaches when fiction permits;
-- one loop, one bypass, and one retreat or safe return route;
-- a meaningful vertical, environmental, social, or reality-bending connection;
-- a route tradeoff: fast/safe, hidden/exposed, costly/informative, or
-  reversible/committing;
-- reconnection after branches, unless isolation is the intentional pressure;
-- a clear answer to “what changes if they use this edge?”
-
-Do not make every fork a corridor fork. A bridge toll, faction invitation,
-weather window, reputation gate, river, rooftop, or remembered shortcut can be an
-edge. See [node-key-and-affordances](references/node-key-and-affordances.md).
-
-## Significant nodes and affordances
-
-Apply the **verb test**: each significant node should invite at least one useful
-verb such as cross, bargain, hide, study, steal, reroute, rescue, harvest,
-climb, consecrate, sabotage, or wait. Name what is actionable and what changes
-when acted upon. Prepare affordances, not prescribed solutions: describe
-materials, relationships, constraints, and observable responses so players can
-invent methods. Every obstacle gets a sign, trigger, effect, counterplay,
-bypass, and leverage; do not hide the only correct answer.
-
-## Information economy
-
-Classify clues as **operational** (how it works), **historical** (what happened),
-or **directional** (where to go / whom to ask / what follows). For each required
-secret, prepare about three independent clue vectors: witness or faction, physical
-trace, document or symbol, spatial pattern, and/or consequence. Passive noticing
-reveals the obvious sign; a declared Search, Study, Influence, or other action
-can deepen it. A failed roll should cost time, safety, position, trust, or
-resources—not erase a required revelation.
-
-## Living place
-
-Give each active faction a sheet: **Want, Fear, Method, Resources, Tell, Offer,
-Response**, plus territory, red line, current move, and what changes between
-visits. Give important creatures or groups a job and a reason to move. Keep a
-roster for arrivals, absences, wounded, prisoners, and depleted resources.
-Progression states can be quiet → alert → contested → transformed; define the
-trigger and visible sign for each. A place should do something while the party
-is elsewhere.
-
-## Location moves and consequences
-
-Prepare 2–4 moves a place or faction can make when a trigger occurs: close a
-route, recruit help, relocate a resource, reveal a cost, make an offer, change
-the terrain, escalate a ritual, or exploit a party choice. State trigger, actor,
-visible result, new opportunity, and lasting consequence. On return, preserve
-what is durable and update what is alive; do not reset rooms by default. Use
-[life-info-pressure](references/life-info-pressure.md).
-
-## Rules, capability, and type
-
-Integrate 2024/SRD 5.2.1 mechanics briefly: use the rules vocabulary, a fair DC,
-cover, Difficult Terrain, Search/Study/Influence/Utilize, and hazards with
-telegraph, trigger, effect, and counterplay. Use
-[references/rules-and-place-types.md](references/rules-and-place-types.md) for the
-palette, tiers, and settlement/wilderness/dungeon/landmark/planar adjusters.
-Do not negate flight, teleportation, burrowing, darkvision, social authority, or
-other party capabilities arbitrarily; make them useful with honest costs,
-exposure, limits, or consequences.
-
-## Presentation and handoffs
-
-Hub for all places. Write site places from `wiki/templates/place.md`. For `kind: city`, load `city-design` as primary for that page. For a region job, load `region-design` as primary for that page.
-
-Design with the [location skeleton](references/location-skeleton.md) and [node-key-and-affordances](references/node-key-and-affordances.md). File **facts** into `wiki/templates/place.md` as a scaffold. Pass is place jobs in `wiki/AGENTS.md` Layout, not heading-order match. `wiki/_raw/Old Gardens.md` and `wiki/_raw/River Line Bank.md` illustrate; do not require matching their headings.
+Copy `wiki/templates/place.md`. Pass place jobs in `wiki/AGENTS.md` Layout — not
+heading-order match. Design with
+[location-skeleton](references/location-skeleton.md) and
+[node-key-and-affordances](references/node-key-and-affordances.md); file **facts**
+into the template. Kernel, 3Fs, promise lists, topology audit, and quality
+checklist stay in this skill (or process notes) — do not dump the skeleton onto
+the wiki page.
 
 | Design work | Place jobs |
 |---|---|
 | Identity image | After the title when art exists (`visual-aids`) |
 | Spoken look | Theatre of the mind `[!narration]` |
-| Situation now | What this place is, which linked places it sits between |
-| Consequential moves | Player verbs that change the scene; omit no-op moves |
-| Presence or sign of absence | Who is here, or the sign they are not |
-| Table objects | Features, flora, fauna, objects; wikilink owner pages |
-| Connections | Neighbors and how this place connects; name a canon gap when unknown |
+| Situation now | What this place is; linked places it sits between |
+| Consequential moves | Player verbs that change the scene |
+| Presence / absence | Who is here, or the sign they are not |
+| Table objects | Features, flora, fauna, objects; wikilink owners |
+| Connections | Neighbors + how connected; name canon gaps |
 | Purpose | Why a party comes, stays, or cares |
-| Extra art | Battlemaps; omit when unused |
 
-Kernel, 3Fs, promise, player-verb lists, topology audit, references, and the
-quality checklist stay in this skill. A climactic or anchor location
-(`Memorial Grove`) may carry kernel, topology, player verbs, hooks, secrets,
-and provenance directly when those facts serve the DM at the table — but the
-scaffold stays clean.
+**Where:** explicit **North:** / **East:** / **South:** / **West:** lines with
+wikilinks + travel-day distances where known, and explicit canon-gap wording
+where unknown.
 
-**Complete when:** the filed note answers place jobs in `wiki/AGENTS.md` Layout, empty sections are omitted, connections name neighbors or canon gaps, and the skeleton is not on the wiki page.
+Rules vocabulary and type adjusters:
+[rules-and-place-types](references/rules-and-place-types.md). Living systems and
+pressure: [life-info-pressure](references/life-info-pressure.md).
 
-Run the audit: identity and promise are clear; topology has choices; nodes pass
-the verb test; clues are robust; factions have goals and moves; pressure changes
-play; the place works without combat; consequences persist; and the **final
-enemies-vanished test** still leaves an interesting place to explore, bargain
-with, alter, or understand.
+Read `references/place-craft.md` for promise detail, topology/clue/pressure
+craft, audit questions, and failure modes.
 
-Handoff deep dungeon or megadungeon graphs to `dungeon-design`; player-facing
-prose to `theatre-of-the-mind`; session pacing to `session-beats`; and vault
-canon retrieval to `qmd-retrieval`. Do not invent setting canon when the vault is
-silent—mark a stub.
+## Handoffs
 
-## World-bible and prep gates
+Deep dungeon graphs → `dungeon-design`; narration → `theatre-of-the-mind`;
+pacing → `session-beats`; cities → `city-design`; regions → `region-design`;
+factions → `faction-design`; vault lookup → `.agents/skills/qmd`. Do not invent
+setting canon when the vault is silent — mark a stub or gap.
 
-Keep location notes modular and table-findable in under 30 seconds. File **facts**
-into `wiki/templates/place.md` as a scaffold. Secrets remain DM truth and never enter
-`[!narration]`; they live as facts that answer the jobs. A location
-earns depth from responsive systems: inhabitants move, factions react, routes
-change, and clocks advance — not from a larger lore block. Prepare only the
-topology, affordances, clues, and pressure the DM will not improvise, then link
-the atomic note to the nearest MOC or hub rather than creating parallel structure.
+## Done
+
+- Fills `wiki/templates/place.md`; empty sections omitted; skeleton not on-page.
+- Kernel + promise clear; topology has real choices; nodes pass the verb test.
+- Clues robust (~3 vectors); factions have goals and moves; pressure changes play.
+- Where has NESW + travel days or explicit canon gaps; invention labeled/cited/
+  proposed; wiki write only after accept.
+- Enemies-vanished test passes; consequences persist on return.
+- DM recovers actionable facts in under 30 seconds.
