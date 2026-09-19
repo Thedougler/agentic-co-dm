@@ -1,0 +1,36 @@
+{
+  "eval_id": 3,
+  "eval_name": "tideglass-compass-from-scratch",
+  "prompt": "Create a new magic item page from scratch for Tideglass Compass \u2014 an uncommon wondrous item that points toward the nearest safe berth the bearer has previously docked at, but fogs when Crown warships are within a day's sail. Mark all of this as invention; it is not in the campaign wiki. Use wiki/templates/item.md. Show a chat proposal / work gate before writing under wiki/.",
+  "expected_output": "A new item page labeled invention:true that follows item.md, with pitch before mechanics, narration without secrets, classification, and one runnable 2024 effect with costs/limits. No claim that Tideglass Compass exists in vault canon.",
+  "assertions": [
+    {
+      "text": "Output follows wiki/templates/item.md structure",
+      "type": "structure"
+    },
+    {
+      "text": "Frontmatter includes type: item, kind, rarity, attunement, and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+      "type": "structure"
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not presented as vault canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Pitch / Signature sentence appears before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "type": "process"
+    },
+    {
+      "text": "Narration is a cold portrait without secrets, DCs, or unearned names",
+      "type": "quality"
+    },
+    {
+      "text": "Runnable effect specifies trigger, action cost, frequency/limits, and counterplay or failure mode \u2014 not an unbounded always-on oracle",
+      "type": "quality"
+    }
+  ]
+}

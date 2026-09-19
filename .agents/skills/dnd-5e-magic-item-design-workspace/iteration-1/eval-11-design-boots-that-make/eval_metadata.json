@@ -1,0 +1,20 @@
+{
+  "eval_id": 11,
+  "eval_name": "design-boots-that-make",
+  "prompt": "Design boots that make the party impossible to track, automatically navigate, and teleport anywhere in the world every day.",
+  "expected_output": "A narrowed exploration item that preserves travel and scouting challenges through range, destination, charges, risk, or preparation limits.",
+  "assertions": [
+    {
+      "text": "Rejects trivializing travel forever and identifies which campaign loops disappear",
+      "type": "guardrail"
+    },
+    {
+      "text": "Preserves a useful exploration identity with explicit limits and counterplay",
+      "type": "quality"
+    },
+    {
+      "text": "Checks party niches such as ranger, rogue, scout, and spellcaster rather than replacing them",
+      "type": "content"
+    }
+  ]
+}

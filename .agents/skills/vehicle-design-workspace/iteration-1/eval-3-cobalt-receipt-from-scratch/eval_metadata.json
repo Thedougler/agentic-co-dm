@@ -1,0 +1,40 @@
+{
+  "eval_id": 3,
+  "eval_name": "cobalt-receipt-from-scratch",
+  "prompt": "Create a new vehicle page from scratch for Cobalt Receipt \u2014 a small Tessarine courier boat that runs sealed ledgers between factor houses, recognized by a blue-painted stern board and a bell that only rings in fog. Mark all of this as invention; it is not in the campaign wiki. Use wiki/templates/vehicle.md including Sheet and Components minima. Show a chat proposal / work gate before writing under wiki/.",
+  "expected_output": "A new vehicle page labeled invention:true that follows vehicle.md, with identity sentence, narration (silhouette/scale/access), filled Sheet and Hull/Helm/Movement components, crew stations, and handling. No claim Cobalt Receipt exists in vault canon.",
+  "assertions": [
+    {
+      "text": "Output follows wiki/templates/vehicle.md structure",
+      "type": "structure"
+    },
+    {
+      "text": "Frontmatter includes type: vehicle, kind (ship|boat|other), and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+      "type": "structure"
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not presented as vault canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "type": "process"
+    },
+    {
+      "text": "Sheet fills Size, Type, Speed, Crew (min), Passengers, Cargo so the craft can enter play",
+      "type": "content"
+    },
+    {
+      "text": "Hull has AC, HP, and damage threshold; Helm and Movement have AC/HP and a disabled consequence",
+      "type": "content"
+    },
+    {
+      "text": "Narration gives silhouette, scale, and body-scale access without secrets, DCs, or unearned names",
+      "type": "quality"
+    }
+  ]
+}

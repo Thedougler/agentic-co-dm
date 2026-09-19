@@ -1,0 +1,36 @@
+{
+  "eval_id": 4,
+  "eval_name": "glass-debt-flesh",
+  "prompt": "Flesh the stub wiki/entities/vehicle/glass-debt.md toward a proper vehicle page via wiki/templates/vehicle.md. Preserve established canon only: named hull sighted near the [[central-strait]]; Crown captains break from usual patrol lines when it or [[velvet-noose]] is seen; no other sheet is established. Propose Sheet/Components/crew as invention and mark them. Do not invent secret armament or a full Crown conspiracy as silent canon. (Alt acceptable stub: velvet-noose.md with the same Strait/Crown-sighting canon.) Show a chat proposal / work gate before writing under wiki/.",
+  "expected_output": "A fleshed vehicle.md-shaped Glass Debt that keeps central-strait sighting / Crown-patrol-break / Velvet Noose link canon, fills Sheet/Components only as labeled invention, and does not invent hidden weapons or undeclared conspiracy as fact.",
+  "assertions": [
+    {
+      "text": "Preserves central-strait sighting, Crown captains breaking patrol lines, and velvet-noose linkage from the stub",
+      "type": "content"
+    },
+    {
+      "text": "Clearly distinguishes established stub canon from proposed invention throughout",
+      "type": "guardrail"
+    },
+    {
+      "text": "Does not invent hidden weapons, enchanted gear, or a full Crown conspiracy and present it as wiki fact",
+      "type": "guardrail"
+    },
+    {
+      "text": "Output follows wiki/templates/vehicle.md structure",
+      "type": "structure"
+    },
+    {
+      "text": "Frontmatter uses type: vehicle and a valid kind",
+      "type": "structure"
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "Proposed sheet numbers are grounded in a sighted-hull / patrol-pressure role, not a generic ship-of-the-line reskin presented as canon",
+      "type": "quality"
+    }
+  ]
+}

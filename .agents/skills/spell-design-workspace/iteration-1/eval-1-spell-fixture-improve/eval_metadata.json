@@ -1,0 +1,44 @@
+{
+  "eval_id": 1,
+  "eval_name": "spell-fixture-improve",
+  "prompt": "IMPROVE FIXTURE (labeled work draft \u2014 not vault canon; there is no wiki/entities/spell/ folder and no live type: spell pages). Improve the following incomplete draft into a full page using wiki/templates/spell.md. Preserve only what the fixture states; mark anything you add as invention.\n\n---\ntitle: Saltwake Veil\ntype: spell\nlifecycle: proposed\nreveal: unrevealed\ncampaign: shattered-sea\nvisibility: dm\nlevel: \"2\"\nschool: illusion\nritual: false\nsummary: \"Brief coastal mirage that hides a small craft's silhouette from distant watchers.\"\n---\n# Saltwake Veil\n\nLevel 2 illusion. Hides a boat somehow. Need full 2024 block and casting look.\n\nDo not file this as silent campaign canon. Show a chat proposal / work gate. Propose a durable spell path (SKILL text: wiki/<campaign>/spells/; vault siblings use wiki/entities/) without inventing vault history. Do NOT cite wiki/entities/item/spell-scroll-*.md as spell pages.",
+  "expected_output": "A spell.md-shaped Saltwake Veil page from the labeled fixture: identity sentence first, work gate, narration without secrets, full Casting Time/Range/Components/Duration, runnable 2024 effect with peer anchoring, invention labeled for material adds \u2014 not presented as existing vault spell canon; no spell-scroll items treated as spell exemplars.",
+  "assertions": [
+    {
+      "text": "Identity sentence (level/school + table effect + casting signature + player choice/pressure) appears before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "type": "process"
+    },
+    {
+      "text": "Output follows wiki/templates/spell.md structure (narration, Level/School line, Casting Time, Range, Components, Duration, effect block)",
+      "type": "structure"
+    },
+    {
+      "text": "Frontmatter includes type: spell and required identity fields (lifecycle, reveal, campaign, visibility, level, school, ritual, summary)",
+      "type": "structure"
+    },
+    {
+      "text": "Preserves fixture premise: 2nd-level illusion that hides a small craft's silhouette from distant watchers",
+      "type": "content"
+    },
+    {
+      "text": "Material additions beyond the fixture are labeled invention/proposed \u2014 not silent vault canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Does not cite or treat wiki/entities/item/spell-scroll-*.md pages as type: spell exemplars",
+      "type": "guardrail"
+    },
+    {
+      "text": "Narration describes what a bystander sees/hears/feels without secrets, DCs, or unearned names",
+      "type": "quality"
+    },
+    {
+      "text": "Effect block is runnable in 2024 terms (saves/attacks, targets/area, duration end, scaling when applicable) and peer-anchored",
+      "type": "quality"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "eval_id": 1,
+  "eval_name": "uncertainty-improve",
+  "prompt": "Improve wiki/entities/vehicle/Uncertainty.md into a runnable vehicle page using wiki/templates/vehicle.md. Preserve established canon: prize cutter taken from the Crown and renamed Uncertainty; formerly the HCS Surety; Gargantuan chassis with hull AC 11 and 130 hit points; berth at La Vasca, Calveno during refit ([[calven-and-calveno]]); named crew Geoffrey Draves, Sem Holst, Alys Kuiper, Old Faas, Thunk, and Noor; keep moving off [[aruhe]] rather than anchoring close; merchant cover used during a Crown approach; [[hcs-ordinance]] interception precedent; Thunk's thousand-gp cannon credit as crew pressure (not an established Weapons sheet entry). Speed, passengers, cargo capacity, damage threshold, helm/movement component numbers, and Weapons remain not established \u2014 leave Unknown or propose only as labeled invention. Do not invent hidden weapons as canon. Show a chat proposal / work gate before writing under wiki/.",
+  "expected_output": "A chat proposal then a vehicle.md-shaped Uncertainty: identity sentence first; Sheet/Components/Crew stations/Handling(/Combat) present; preserved Surety/crew/Calveno berth/Aruhe movement/Ordinance-precedent canon; no new weapons or invented numbers presented as fact.",
+  "assertions": [
+    {
+      "text": "Identity sentence (ship/boat/other + role + silhouette/signature + player choice/pressure) appears before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "type": "process"
+    },
+    {
+      "text": "Output follows wiki/templates/vehicle.md structure (narration, Sheet, Components, Crew stations, Handling; Combat when attackable)",
+      "type": "structure"
+    },
+    {
+      "text": "Frontmatter includes type: vehicle, kind: ship (or valid kind), and required identity fields (lifecycle, reveal, campaign, visibility, summary; region/berth when known)",
+      "type": "structure"
+    },
+    {
+      "text": "Preserves former HCS Surety identity, Gargantuan AC 11 / 130 HP hull, named crew (Draves/Holst/Kuiper/Faas/Thunk/Noor), Calveno/La Vasca refit berth, Aruhe movement pressure, and HCS Ordinance interception precedent",
+      "type": "content"
+    },
+    {
+      "text": "Does not invent weapons, speed, helm/movement AC/HP, or damage threshold and present them as established wiki fact",
+      "type": "guardrail"
+    },
+    {
+      "text": "Blank Unknown sheet/component lines are left Unknown or filled only as labeled invention \u2014 not silent canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Handling states route/identity choices (keep moving, merchant cover, Crown approach) without duplicating the same loop under At the Table",
+      "type": "quality"
+    }
+  ]
+}

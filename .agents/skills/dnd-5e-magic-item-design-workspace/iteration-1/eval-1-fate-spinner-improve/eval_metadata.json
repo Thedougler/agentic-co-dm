@@ -1,0 +1,40 @@
+{
+  "eval_id": 1,
+  "eval_name": "fate-spinner-improve",
+  "prompt": "Improve wiki/entities/item/fate-spinner.md into a runnable item page using wiki/templates/item.md. Preserve established canon: also called the dreidel; [[crissdalynn-khinriss]] holds it; [[master-kyzil]] gave it before her pilgrimage; attunement requires knowingly risking one's own life to save another (satisfied when she pulled [[delmar-fisk|Delmar]] through solid water as the [[red-lady]] went down); The Changed Record \u2014 once per day, same-plane vision on a personally known creature, donate advantage via parallel rolls, sight only, cannot aid a fight she is already in; Session 11 [[talon-skarn]] theft attempt at [[river-slack-basin]] left it Held on her. Fill narration, classification, runnable 2024 effect, and omit-if-empty At a Glance / At the Table / Connections / Provenance as needed. Do not invent a new curse, maker myth, or power not on the page. Mark any proposed fills as invention. Show a chat proposal / work gate before writing under wiki/.",
+  "expected_output": "A chat proposal then an item.md-shaped Fate Spinner page: Signature/pitch before draft; preserved Crissdalynn / Kyzil / Delmar / Red Lady / Changed Record / Talon Skarn Held canon; runnable 2024 effect without stacked new axes; no silent invented curse or provenance.",
+  "assertions": [
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "type": "process"
+    },
+    {
+      "text": "Signature or pitch sentence (object + distinctive verb + why it belongs) appears before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "Output follows wiki/templates/item.md structure (narration callout, classification line, runnable effect; optional At a Glance / At the Table / Connections / Provenance only when used)",
+      "type": "structure"
+    },
+    {
+      "text": "Frontmatter includes type: item and identity fields (lifecycle, reveal, campaign, visibility, kind, rarity/attunement as applicable, summary)",
+      "type": "structure"
+    },
+    {
+      "text": "Preserves Crissdalynn as holder, Kyzil gift, life-risk attunement via Delmar/Red Lady, Changed Record vision limits, and Talon Skarn Held outcome accurately",
+      "type": "content"
+    },
+    {
+      "text": "Does not invent a new curse, ancient-maker myth, extra daily power, or stacked envelope and present it as established wiki fact",
+      "type": "guardrail"
+    },
+    {
+      "text": "At the Table (if present) states playable tonight consequence only \u2014 no design diary or RAW/balance commentary",
+      "type": "quality"
+    },
+    {
+      "text": "Runnable effect states trigger, frequency/limits, and what the holder cannot do (same-plane, personal acquaintance, no self-fight aid)",
+      "type": "quality"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "eval_id": 2,
+  "eval_name": "spell-craft-anti-pattern",
+  "prompt": "Create a spell that was used by the ancient Aruhe druids to create the taking rule. It should be canonical lore about how the taking rule was established \u2014 write it as Current Truth / established wiki fact tied to wiki/entities/lore/taking-on-aruhe.md.",
+  "expected_output": "The skill may draft spell mechanics but must not present ancient-druid / taking-rule origin as established canon. Ground resistance in taking-on-aruhe observable rule (fallen fruit safe; taking living fruit/claims draws hostility; Session 11 / Matteo / Western Landing). Any provenance story is marked invention/proposed. Do not invent ancient-druids-taking-spell as vault canon.",
+  "assertions": [
+    {
+      "text": "Does not present invented ancient-druid / taking-rule-creation provenance as established wiki fact or Current Truth",
+      "type": "guardrail"
+    },
+    {
+      "text": "Any speculative origin story is clearly marked as proposed/invention, not canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Surfaces established taking-on-aruhe facts (fallen fruit safe vs taking living fruit/claims draws hostility; Session 11 confirmation; Matteo death-rule stance; Western Landing usage) rather than contradicting them",
+      "type": "content"
+    },
+    {
+      "text": "Does not invent ancient-druids-taking-spell (or equivalent named canon spell) as vault fact",
+      "type": "guardrail"
+    },
+    {
+      "text": "If proposing a spell page anyway, shows work gate and labels invention; cites grounding wiki pages",
+      "type": "process"
+    }
+  ]
+}

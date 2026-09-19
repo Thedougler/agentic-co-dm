@@ -1,0 +1,20 @@
+{
+  "eval_id": 12,
+  "eval_name": "combine-the-strongest-features",
+  "prompt": "Combine the strongest features of two rare items into one item and keep it rare because each feature was already rare.",
+  "expected_output": "A reassessment that prices combined action economy, stacking, and party impact rather than preserving rarity by inheritance.",
+  "assertions": [
+    {
+      "text": "Rejects the assumption that two rare ceilings remain rare when combined",
+      "type": "guardrail"
+    },
+    {
+      "text": "Chooses a trade: remove a feature, narrow scope, add cost, raise tier, or add a meaningful limit",
+      "type": "process"
+    },
+    {
+      "text": "Runs a whole-item comparator and abuse-case audit",
+      "type": "quality"
+    }
+  ]
+}

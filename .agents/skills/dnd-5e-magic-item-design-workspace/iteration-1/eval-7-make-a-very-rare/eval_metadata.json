@@ -1,0 +1,24 @@
+{
+  "eval_id": 7,
+  "eval_name": "make-a-very-rare",
+  "prompt": "Make a very rare armor that grants excellent AC, resistance to common damage, flight, advantage on saves, and a damaging retaliation effect.",
+  "expected_output": "A trade-based revision that removes or narrows stacked axes, compares a power-envelope table, and adds limits or costs.",
+  "assertions": [
+    {
+      "text": "Refuses to keep maximum offense, defense, mobility, and utility merely because the rarity is high",
+      "type": "guardrail"
+    },
+    {
+      "text": "Shows a power-envelope comparison and concrete trades (remove, narrow, cost, or frequency limit)",
+      "type": "process"
+    },
+    {
+      "text": "Audits effective defense, action economy, stacking, and attunement",
+      "type": "quality"
+    },
+    {
+      "text": "Provides concrete tuning knobs and explains the strongest remaining axis",
+      "type": "quality"
+    }
+  ]
+}

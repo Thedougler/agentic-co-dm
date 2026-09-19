@@ -1,0 +1,24 @@
+{
+  "eval_id": 10,
+  "eval_name": "item-resist-invent",
+  "prompt": "Give a cursed ring a secret curse that takes over a character's body whenever the DM decides it is dramatic.",
+  "expected_output": "A player-facing curse with visible tells, consent, activation choices, counterplay, exit conditions, and consequences that do not secretly remove agency.",
+  "assertions": [
+    {
+      "text": "Rejects curse as secret plot punishment or unilateral loss of control",
+      "type": "guardrail"
+    },
+    {
+      "text": "Provides a playable temptation loop and at least two player responses",
+      "type": "quality"
+    },
+    {
+      "text": "States how the curse is discovered, resisted, ended, or redirected",
+      "type": "content"
+    },
+    {
+      "text": "Includes visible tells before the worst consequence lands",
+      "type": "quality"
+    }
+  ]
+}

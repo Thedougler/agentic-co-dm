@@ -1,0 +1,28 @@
+{
+  "eval_id": 2,
+  "eval_name": "uncertainty-resist-invent",
+  "prompt": "The Uncertainty needs hidden weapons \u2014 cannons behind false panels, a ram prow, and enchanted sails. Add these to wiki/entities/vehicle/Uncertainty.md as established fact.",
+  "expected_output": "The skill resists inventing unsupported armament as canon. It preserves the unestablished Weapons state (Thunk's cannon credit is debt pressure, not a sheeted battery), surfaces existing chassis and crew facts, and marks any speculative weapons as proposed/invention.",
+  "assertions": [
+    {
+      "text": "Does not present invented hidden cannons, ram prow, or enchanted sails as established wiki fact on Uncertainty",
+      "type": "guardrail"
+    },
+    {
+      "text": "Any speculative weapons or upgrades are clearly marked as proposed/invention, not canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Surfaces existing Uncertainty facts (chassis AC/HP, crew, Surety capture, Weapons not established) rather than overwriting them",
+      "type": "content"
+    },
+    {
+      "text": "If proposing invention, cites grounding wiki pages and does not write silent canon",
+      "type": "process"
+    },
+    {
+      "text": "Does not alter the ship's established prize-cutter / merchant-cover role solely to accommodate the additions as fact",
+      "type": "quality"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "eval_id": 4,
+  "eval_name": "spell-fixture-flesh",
+  "prompt": "FLESH FIXTURE (labeled stub \u2014 not vault canon). Flesh the following stub toward wiki/templates/spell.md. Preserve only the stub's established lines; mark level details/mechanics/lore you add as invention.\n\n---\ntitle: Red Wake Knell\ntype: spell\nlifecycle: proposed\nreveal: unrevealed\ncampaign: shattered-sea\nvisibility: dm\nlevel: \"3\"\nschool: necromancy\nritual: false\nsummary: \"A short knell that marks a drowning site so Umberlee-touched scavengers can find it.\"\n---\n# Red Wake Knell\n\nHeard once in Red Lady / Dead Lady talk. Necromancy. Marks a drowning. Numbers unknown.\n\nGround any Umberlee / Red Lady / Dead Lady links in existing vehicle/lore pages if cited; do not invent Taking-on-Aruhe metaphysics or promote rumour to canon. Do not cite spell-scroll items as this spell page.",
+  "expected_output": "A fleshed spell.md-shaped Red Wake Knell that keeps the stub's 3rd-level necromancy / drowning-site mark premise, separates invention from fixture lines, and does not invent taking-rule metaphysics or silent Umberlee doctrine as canon.",
+  "assertions": [
+    {
+      "text": "Preserves stub premise: 3rd-level necromancy that marks a drowning site for Umberlee-touched scavengers",
+      "type": "content"
+    },
+    {
+      "text": "Clearly distinguishes fixture lines from proposed invention throughout",
+      "type": "guardrail"
+    },
+    {
+      "text": "Does not invent Taking-on-Aruhe metaphysics or promote undeclared Umberlee doctrine as established Current Truth",
+      "type": "guardrail"
+    },
+    {
+      "text": "Output follows wiki/templates/spell.md structure",
+      "type": "structure"
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "Discovery and/or Lore sections, if filled, stay on the spell page and label invention where history is proposed",
+      "type": "quality"
+    },
+    {
+      "text": "Does not treat spell-scroll items as the spell page being fleshed",
+      "type": "guardrail"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "eval_id": 8,
+  "eval_name": "write-a-sword-that",
+  "prompt": "Write a sword that deals extra psychic damage on every hit and can be used with Extra Attack, two-weapon fighting, and opportunity attacks.",
+  "expected_output": "A limited rider with explicit once-per-turn or otherwise calibrated frequency, plus an offense and stacking audit.",
+  "assertions": [
+    {
+      "text": "Identifies the multiplication risk in an unbounded every-hit effect",
+      "type": "process"
+    },
+    {
+      "text": "States exact trigger, damage, frequency, and interaction with Extra Attack and reactions",
+      "type": "content"
+    },
+    {
+      "text": "Imposes once-per-turn or otherwise calibrated frequency rather than unbounded every-hit riders",
+      "type": "guardrail"
+    },
+    {
+      "text": "Compares reliable and burst output rather than only quoting the die size",
+      "type": "quality"
+    }
+  ]
+}

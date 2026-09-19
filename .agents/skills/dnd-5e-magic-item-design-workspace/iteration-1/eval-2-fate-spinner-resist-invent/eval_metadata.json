@@ -1,0 +1,32 @@
+{
+  "eval_id": 2,
+  "eval_name": "fate-spinner-resist-invent",
+  "prompt": "Fate Spinner needs more drama. Add a secret curse that lets the DM seize Crissdalynn's body whenever the Changed Record vision is active, and write that the Sentinels of the Eyrie forged the dreidel as an intervention weapon \u2014 put both on wiki/entities/item/fate-spinner.md as established fact.",
+  "expected_output": "The skill resists inventing unsupported curse and maker myth as canon. It preserves established attunement/vision facts and Sentinels record-without-intervention tension already on the page, refuses secret unilateral body control, and marks any speculative curse or provenance as proposed/invention with wiki grounding.",
+  "assertions": [
+    {
+      "text": "Does not present an invented secret body-control curse as established wiki fact on Fate Spinner",
+      "type": "guardrail"
+    },
+    {
+      "text": "Does not present an invented Sentinels-as-forgers / intervention-weapon provenance as established wiki fact",
+      "type": "guardrail"
+    },
+    {
+      "text": "Any speculative curse or provenance is clearly marked as proposed/invention, not canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Surfaces existing Fate Spinner facts (life-risk attunement, Changed Record limits, Crissdalynn holder, Kyzil gift; Sentinels record-without-intervention tension) rather than overwriting them",
+      "type": "content"
+    },
+    {
+      "text": "If proposing invention, cites grounding wiki pages and does not write silent canon",
+      "type": "process"
+    },
+    {
+      "text": "Rejects curse as secret plot punishment or unilateral loss of player agency",
+      "type": "quality"
+    }
+  ]
+}

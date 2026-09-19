@@ -1,0 +1,24 @@
+{
+  "eval_id": 5,
+  "eval_name": "create-a-rare-lantern",
+  "prompt": "Create a rare lantern that reveals invisible creatures but also tempts its bearer to expose allies.",
+  "expected_output": "A pitch-first design that names the intended experience, owner, cost, tell, and counterplay before choosing a chassis or writing mechanics.",
+  "assertions": [
+    {
+      "text": "States a one-sentence promise and intended experience before numbers",
+      "type": "process"
+    },
+    {
+      "text": "Includes a readable engagement loop (Tell \u2192 Choice \u2192 Cost \u2192 Payoff \u2192 Counterplay) with a meaningful cost or risk",
+      "type": "quality"
+    },
+    {
+      "text": "Uses a familiar chassis or explains why a bespoke chassis is necessary",
+      "type": "quality"
+    },
+    {
+      "text": "Does not grant unbounded always-on see-invisibility without a spend, tell, or exposure cost",
+      "type": "guardrail"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "eval_id": 9,
+  "eval_name": "create-an-amulet-that",
+  "prompt": "Create an amulet that lets the wearer cast several powerful control spells from the item without concentration.",
+  "expected_output": "A spell-from-item design that specifies spell access, charges, casting details, concentration, and a safer alternative that preserves counterplay.",
+  "assertions": [
+    {
+      "text": "Does not silently remove concentration or create hidden spell slots",
+      "type": "guardrail"
+    },
+    {
+      "text": "Records casting time, range, targets, duration, save/DC, charges, and recovery",
+      "type": "content"
+    },
+    {
+      "text": "Audits action economy, control duration, and repeatability against comparators",
+      "type": "quality"
+    },
+    {
+      "text": "Offers a safer alternative that preserves counterplay if the brief demands no-concentration control",
+      "type": "process"
+    }
+  ]
+}

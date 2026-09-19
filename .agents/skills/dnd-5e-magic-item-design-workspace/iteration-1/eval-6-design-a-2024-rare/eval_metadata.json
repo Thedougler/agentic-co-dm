@@ -1,0 +1,24 @@
+{
+  "eval_id": 6,
+  "eval_name": "design-a-2024-rare",
+  "prompt": "Design a 2024 rare weapon that rewards changing targets without dominating every martial character.",
+  "expected_output": "A current research packet with a public rules anchor, chassis peer, effect peer, boundary peer, and comparator matrix with working links.",
+  "assertions": [
+    {
+      "text": "Requires current web grounding and a public 2024/5.5e rules anchor before final numbers",
+      "type": "process"
+    },
+    {
+      "text": "Includes at least three comparator roles (chassis, effect/role, boundary) with actionable observations and working links",
+      "type": "structure"
+    },
+    {
+      "text": "Records action cost, frequency, target limits, stacking, and party role in the matrix",
+      "type": "content"
+    },
+    {
+      "text": "Does not substitute votes, ratings, or a single anecdote for balance evidence",
+      "type": "guardrail"
+    }
+  ]
+}

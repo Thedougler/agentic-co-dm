@@ -1,0 +1,40 @@
+{
+  "eval_id": 3,
+  "eval_name": "ledgerbind-from-scratch",
+  "prompt": "Create a new named spell page from scratch for Ledgerbind \u2014 a 1st-level abjuration that briefly seals a written contract or ship's log against tampering, with a visible ink-frost tell. Mark all of this as invention; it is not in the campaign wiki. Use wiki/templates/spell.md. Do not treat spell-scroll item pages as spell pages. Show a chat proposal / work gate before writing under wiki/.",
+  "expected_output": "A new spell page labeled invention:true that follows spell.md, with identity sentence, narration, full 2024 block, and runnable effect. No claim Ledgerbind exists in vault canon; no spell-scroll item cited as a spell exemplar.",
+  "assertions": [
+    {
+      "text": "Output follows wiki/templates/spell.md structure",
+      "type": "structure"
+    },
+    {
+      "text": "Frontmatter includes type: spell, level, school, ritual, and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+      "type": "structure"
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not presented as vault canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "type": "process"
+    },
+    {
+      "text": "Does not cite spell-scroll item pages as type: spell pages",
+      "type": "guardrail"
+    },
+    {
+      "text": "Casting Time, Range, Components, and Duration are filled in 2024 terms",
+      "type": "content"
+    },
+    {
+      "text": "Runnable effect states what sealing does, how long, how it fails/ends, and any save or check \u2014 not vague 'protects the document'",
+      "type": "quality"
+    }
+  ]
+}
