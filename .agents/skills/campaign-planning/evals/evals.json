@@ -1,0 +1,126 @@
+{
+  "skill_name": "campaign-planning",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Plan Shattered Sea from [[shattered-sea]], [[season-2]], [[Players]], and the PC pages. There is no campaign overview. Leave the contract in chat. Do not file a hub.",
+      "expected_output": "Mints wiki/entities/lore/shattered-sea-overview.md from wiki/templates/campaign-state.md, files table aim and contract there, and leaves [[shattered-sea]] as the region page.",
+      "expectations": [
+        "Creates wiki/entities/lore/shattered-sea-overview.md because the overview is missing.",
+        "Copy-starts wiki/templates/campaign-state.md with type lore; does not invent a new type.",
+        "Records table aim on that overview: Kaden \u2192 [[perrin-black-jaw]], Frederick \u2192 [[delmar-fisk]], Courtney \u2192 [[crissdalynn-khinriss]], Chad \u2192 [[jean-claude-tabarnack]], Nick as DM.",
+        "Does not dump the campaign contract onto the [[shattered-sea]] region page or leave it only in chat."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "File as an established campaign fact that the party will join [[the-passage]] and control the Mid-Chain this season. Use [[season-2]] and [[shattered-sea]].",
+      "expected_output": "Classifies joining [[the-passage]] and controlling the Mid-Chain as player-owned or a possibility; Season 2 stays an open Midchain sandbox.",
+      "expectations": [
+        "Names [[the-passage]] and [[Midchain]] from the wiki rather than a generic faction/region.",
+        "Does not file a player-dependent outcome as an established anchor.",
+        "Leaves [[season-2]] as a sandbox whose question play can answer more than one way."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Write Season 4 as a fully plotted [[Hinewai]] CR 19 Blight siege with room keys and a finale script. Summarize current [[season-2]] in one sentence.",
+      "expected_output": "Current [[season-2]] stays high-resolution; [[Hinewai]] remains a horizon threat, not this season's fight and not more detailed than nearer play.",
+      "expectations": [
+        "Treats [[Hinewai]] as a horizon threat, matching [[season-2]] (CR 19, not this season's fight).",
+        "Describes current Season 2 play (open Midchain, [[Uncertainty]], island hooks, live clocks) more precisely than later seasons.",
+        "Does not give later seasons more detail than the current season."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Define the next Shattered Sea season as levels 11–16 only. No question, no function, no transition. Wiki pages: [[shattered-sea]], [[season-2]], [[drowned-maw]].",
+      "expected_output": "A season with a narrative function, a question play can answer more than one way, and transition conditions; levels are scaling guidance, not the season.",
+      "expectations": [
+        "Gives the season a distinct narrative function beyond occupying levels 11–16.",
+        "States at least one season question grounded in live pressures (Maw, Taken 314, Sentinels, Crown/Tessarine/Passage), answerable more than one way.",
+        "Uses D&D tiers as scaling guidance, not compulsory boundaries."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "The crew docked at [[Sparhold]] during Season 2. Rewrite the whole campaign architecture and replace [[season-2]].",
+      "expected_output": "Does not replan architecture for a stop already on the Season 2 map; Sparhold remains a named optional/first stop, not a season boundary.",
+      "expectations": [
+        "Treats docking at [[Sparhold]] as play inside [[season-2]], not a replan trigger.",
+        "Leaves [[season-2]]'s sandbox function (unofficial piracy, island hooks, live clocks) in place.",
+        "Does not mint a replacement season page solely because the party arrived at a listed stop."
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "The party allies with [[Simone]] and the [[grung-clans]] against [[the-passage]]. Re-plan Shattered Sea from [[shattered-sea]] and [[season-2]].",
+      "expected_output": "Replans because a major faction alignment changed: preserves valid anchors, replaces contradicted assumptions, redraws the horizon.",
+      "expectations": [
+        "Treats alliance with [[Simone]] / [[grung-clans]] against [[the-passage]] as an architecture trigger.",
+        "Preserves still-valid anchors (open Midchain, live clocks, PC roster) and replaces assumptions that alliance contradicts.",
+        "Redraws the season horizon from the campaign that now exists, not the originally imagined Passage-vs-Grung script."
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Write the next twenty sessions in order: full [[aruhe]] survey, then the [[Karath]] raid, then High Eyrie, then a [[drowned-maw]] finale. The table must run every session in that order. Use [[season-2]] and [[shattered-sea]].",
+      "expected_output": "A situation toolbox: actors, locations, and clocks in tension. Karath stays too hot early; the Blight/Maw finale is not this season's fight; play is not a 20-session screenplay.",
+      "expectations": [
+        "Keeps Season 2 as a situation toolbox (islands, factions, clocks), not a plotted 20-session sequence.",
+        "Honors [[season-2]] table warnings: Karath is too hot early; [[Hinewai]]/Blight is not this season's fight.",
+        "Does not guarantee that every named session fires in the requested order."
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "File as committed ending intent that the campaign ends when the party kills [[Umberlee]] at [[drowned-maw]]. Wiki: [[shattered-sea]], [[campaign-timeline]], [[delmar-fisk]].",
+      "expected_output": "Records only the strongest ending commitment the DM actually made; wiki debt to Umberlee is pressure, not a locked kill-the-god finale.",
+      "expectations": [
+        "Does not invent a committed kill-[[Umberlee]] finale the wiki does not record.",
+        "Treats Delmar's unpaid Pearl/Umberlee debt and Maw pressure as live stakes, not a scripted endgame.",
+        "Leaves ending intent no more specific than the DM has actually committed."
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "The campaign fails unless [[jean-claude-tabarnack]] reconciles with [[Simone]] and [[crissdalynn-khinriss]] completes the Maw pilgrimage. File those as required destinations. Use the PC pages and [[Players]].",
+      "expected_output": "Backstory rails stay pressure sources. Reconciliation and pilgrimage remain player-owned; missing them does not fail the campaign.",
+      "expectations": [
+        "Uses [[Simone]] hunting Jean-Claude and Crissdalynn's Sentinel/Maw pilgrimage as optional pressure, not required destinations.",
+        "Keeps player-dependent outcomes open.",
+        "Does not make the campaign fail if those PC beats never resolve as written."
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "Add a self-harm tone pillar to Shattered Sea campaign architecture for Courtney's PC [[crissdalynn-khinriss]]. Cite [[Players]] and [[shattered-sea-tone-guide]].",
+      "expected_output": "Refuses the pillar. Courtney's hard line on self-harm stands; tone guide is not a content-boundary override.",
+      "expectations": [
+        "Honors Courtney's hard line on self-harm from [[Players]].",
+        "Does not smuggle a self-harm promise into architecture via cinematic or tone framing.",
+        "Keeps [[shattered-sea-tone-guide]] as style guidance, not a Lines-and-Veils override."
+      ]
+    },
+    {
+      "id": 11,
+      "prompt": "If the party ignores [[the-taken-314]] and never goes to [[Karath]], stall Shattered Sea until they take that quest. Use [[shattered-sea]] and [[season-2]].",
+      "expected_output": "The campaign continues coherently. Taken 314 and related clocks advance as causal pressure; Karath is not a required quest gate.",
+      "expectations": [
+        "States what happens if Taken 314 is left unchecked (clock/faction pressure), not a stall until Karath.",
+        "Keeps Karath as background pressure per [[season-2]], not a mandatory quest.",
+        "Prefers causal structures over a single required season-ending conflict."
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "Plan a new campaign in this vault. Do not name players or campaign intent. Skip grilling.",
+      "expected_output": "Asks the DM to name at least one player and the current campaign intent before treating Work as aimed; does not invent a table or skip the contract interview.",
+      "expectations": [
+        "Asks for players (at least one) and campaign intent when table aim is missing.",
+        "Does not skip the campaign-contract grill (identity, scope, runtime, ending intent).",
+        "Does not invent a PC roster or overwrite Shattered Sea's live table."
+      ]
+    }
+  ]
+}

@@ -15,15 +15,21 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 For an existing campaign, read before proposing:
 
-- the `campaign-plan` page with subtype `full-campaign`
+- the campaign **overview** at `wiki/entities/lore/{campaign}-overview.md`
+  (Campaign State hub: table aim, live state, index, party goals, contract)
 - the current campaign story and active session-prep pages
 - active front notes
-- PC pages and the campaign-plan Party Goals
+- PC pages linked from the overview
 
-For a new campaign, begin with the DM's stated concept.
+If that overview is missing, mint it from
+`wiki/templates/campaign-state.md` (`type: lore`), then read it. One
+overview per campaign; the region page is not the hub.
 
-**Complete when** every campaign-level commitment is represented or
-identified as uncertain.
+For a new campaign, begin with the DM's stated concept. Mint the
+overview as soon as the campaign slug is known.
+
+**Complete when** the overview page exists and every campaign-level
+commitment is represented or identified as uncertain.
 
 ### 2. Grill the DM
 
@@ -63,7 +69,7 @@ Decisions feed existing kinds through existing templates and the type enum:
 
 | Decision | Target | Schema |
 |---|---|---|
-| Premise, promise, tone, anchors, ending intent, runtime | `campaign-plan` subtype `full-campaign` | `wiki/templates/` |
+| Premise, promise, tone, anchors, ending intent, runtime, table aim, party goals | campaign overview | `wiki/templates/campaign-state.md` |
 | Season function, question, range, transitions | campaign story or session-prep note in `wiki/<slug>/` | `wiki/templates/` |
 | Faction fronts surfaced | front note / faction pages | `wiki/templates/`, `wiki/templates/` |
 | Named place anchor with no page | spatial kind via `place-design` | `wiki/templates/` (or settlement, region, route) |
@@ -71,12 +77,12 @@ Decisions feed existing kinds through existing templates and the type enum:
 | Named notable object with no page | `item` via `dnd-5e-magic-item-design` | `templates/` |
 | Named conveyance with no page | `vehicle` via `vehicle-design` | `templates/` |
 
-Update the existing full-campaign plan in place. Never mint a second
-`full-campaign` page for one campaign.
+Fill the overview. Later writes update that page. The region page
+(`wiki/entities/region/{campaign}.md`) keeps geography.
 
-**Complete when** an unfamiliar agent could answer: what this campaign
+**Complete when** an unfamiliar agent could answer from the overview: what this campaign
 is, what experience it promises, how long it is meant to run, how far
-scope can grow, and what — if anything — is committed about its ending.
+scope can grow, who is at the table, and what — if anything — is committed about its ending.
 
 ---
 
