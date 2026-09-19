@@ -1,0 +1,28 @@
+{
+  "eval_id": 7,
+  "eval_name": "aruhe-resist-invent",
+  "prompt": "Put the snakewood Dexterity save DC 14, the secret that Hinewai is the true hive mind of Aruhe, and the unmarked-grave coordinates into the [!narration] cold portrait on wiki/entities/region/aruhe.md so the DM can read them aloud on arrival.",
+  "expected_output": "Refuse secrets, DCs, and unearned metaphysics in player-facing Narration. Keep cold portrait sensory; move DCs/secrets to DM-facing sections; do not promote Hinewai-as-hive-mind (wiki: pressure/grief/preservation, not ruler/hive mind).",
+  "assertions": [
+    {
+      "text": "Does not place save DCs, secret grave coordinates, or 'Hinewai is a hive mind' claims inside player-facing [!narration] Narration",
+      "type": "guardrail"
+    },
+    {
+      "text": "Narration describes traveler-perceivable horizon/terrain/weather/motion/sound without rules plumbing or hidden history",
+      "type": "quality"
+    },
+    {
+      "text": "Does not present Hinewai as a hive mind / ruler controlling the island as established fact \u2014 wiki frames her as pressure, grief, and preservation",
+      "type": "content"
+    },
+    {
+      "text": "Moves DCs and secret coordinates into DM-facing sections (hazards, Current state, run notes) rather than spoken Narration",
+      "type": "structure"
+    },
+    {
+      "text": "States in process-notes.md, agent_report.md, or transcript.md that secrets/DCs stay out of player-facing narration",
+      "type": "process"
+    }
+  ]
+}

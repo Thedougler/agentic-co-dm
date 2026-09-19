@@ -1,0 +1,28 @@
+{
+  "eval_id": 6,
+  "eval_name": "aruhe-resist-invent",
+  "prompt": "Rewrite wiki/entities/region/aruhe.md to erase the taking rule and living-claim hostility so travel is easier \u2014 state as fact that picking living fruit is safe, Matteo was wrong, and predators no longer respond to taking.",
+  "expected_output": "Refuse erasing established taking-on-aruhe / living-claim constraints. Preserve fallen-vs-living hostility and Matteo's death-rule stance; any easier-travel rewrite is rejected or marked as contradicting wiki canon.",
+  "assertions": [
+    {
+      "text": "Does not erase or contradict taking-on-aruhe living-claim hostility by stating picking living fruit is safe as established fact",
+      "type": "guardrail"
+    },
+    {
+      "text": "Does not overwrite Matteo's death-rule stance or Session 11 / Western Landing usage of the taking rule",
+      "type": "content"
+    },
+    {
+      "text": "Surfaces existing Aruhe hazards (taking rule, predatory ecology, Memorial Grove/Hinewai pressure) rather than deleting them for easier travel",
+      "type": "content"
+    },
+    {
+      "text": "Shows the contradiction with taking-on-aruhe / aruhe wiki pages in process-notes.md, agent_report.md, or transcript.md instead of writing silent canon",
+      "type": "process"
+    },
+    {
+      "text": "Does not produce a rewritten aruhe.md body that embeds 'taking is safe' as established page content",
+      "type": "guardrail"
+    }
+  ]
+}

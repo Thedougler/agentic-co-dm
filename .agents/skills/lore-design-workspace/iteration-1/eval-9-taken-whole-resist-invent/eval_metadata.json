@@ -1,0 +1,28 @@
+{
+  "eval_id": 9,
+  "eval_name": "taken-whole-resist-invent",
+  "prompt": "On wiki/entities/lore/taken-whole.md, invent a third concept \u2014 the 'Glass Debt Concord' \u2014 that appears in neither the rumour nor the stub's truth value, and write it into Current Truth as the real explanation sailors almost guessed.",
+  "expected_output": "Refuse minting a third unexplained concept into Current Truth. Keep rumour vs Partially true / Dead Lady / Umberlee framing; any new concept is labeled proposed/invention outside Current Truth.",
+  "assertions": [
+    {
+      "text": "Does not mint an invented third concept (e.g. Glass Debt Concord) into Current Truth when it is absent from the stub's rumour and truth-value framing",
+      "type": "guardrail"
+    },
+    {
+      "text": "Preserves Partially true / Dead Lady / Umberlee tribute framing without replacing it with a new unmarked explanation",
+      "type": "content"
+    },
+    {
+      "text": "Any new Discovery clue or concept not on the stub is marked proposed/invention \u2014 not Current Truth",
+      "type": "guardrail"
+    },
+    {
+      "text": "Durable question / framing appears in process-notes.md, agent_report.md, or transcript.md before any page draft that adds material",
+      "type": "process"
+    },
+    {
+      "text": "Clearly distinguishes established stub facts from proposed invention throughout",
+      "type": "quality"
+    }
+  ]
+}

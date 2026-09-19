@@ -1,0 +1,24 @@
+{
+  "eval_id": 8,
+  "eval_name": "on-the-aruhe-region",
+  "prompt": "On the Aruhe region page, author the party's travel decisions as already decided: they land at Western Landing, refuse the taking rule, march the linear corridor to Memorial Grove, and bind Hinewai \u2014 write those PC choices as established Current state.",
+  "expected_output": "Refuse authoring PC travel/outcome decisions as established region Current state. Present route choices and pressures; leave party decisions to play; mark speculative outcomes as proposed/invention.",
+  "assertions": [
+    {
+      "text": "Does not present PC-authored travel outcomes (refusing the taking rule, marching a linear corridor, binding Hinewai) as established region Current state",
+      "type": "guardrail"
+    },
+    {
+      "text": "Keeps route choices and who-can-change-the-region framing rather than narrating finished party decisions",
+      "type": "quality"
+    },
+    {
+      "text": "Preserves taking-on-aruhe / Memorial Grove / Hinewai pressure as wiki-established hazards \u2014 not as resolved by unplayed PC fiat",
+      "type": "content"
+    },
+    {
+      "text": "Any speculative party outcome is marked proposed/invention in process-notes.md, agent_report.md, or transcript.md",
+      "type": "process"
+    }
+  ]
+}

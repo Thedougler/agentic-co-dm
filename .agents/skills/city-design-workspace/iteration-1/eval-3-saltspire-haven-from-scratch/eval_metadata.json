@@ -1,0 +1,32 @@
+{
+  "eval_id": 3,
+  "eval_name": "saltspire-haven-from-scratch",
+  "prompt": "Create a new city page from scratch for Saltspire Haven \u2014 a cliff-port on a trade strait where pilots sell channel knowledge and two rival dock councils tax the same pier. Mark all of this as invention; it is not in the campaign wiki.",
+  "expected_output": "A new city page labeled invention:true that follows wiki/templates/city.md, with concrete pressure/opportunity, Arrival without secrets, and runnable Orientation/Gazetteer. No claim that Saltspire exists in vault canon.",
+  "assertions": [
+    {
+      "text": "Output follows wiki/templates/city.md structure with filled runnable Arrival, At a Glance, Orientation, and Gazetteer substance \u2014 not empty copied headings alone",
+      "type": "structure"
+    },
+    {
+      "text": "Frontmatter includes type: place, kind: city, and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+      "type": "structure"
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not presented as vault canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "At a Glance states a concrete current Pressure and Opportunity, not vague atmosphere",
+      "type": "quality"
+    },
+    {
+      "text": "Arrival narration covers scale/silhouette/motion/sound without secrets or unearned DM thesis",
+      "type": "quality"
+    }
+  ]
+}

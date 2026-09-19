@@ -1,0 +1,28 @@
+{
+  "eval_id": 5,
+  "eval_name": "promote-the-kalowe-dockside",
+  "prompt": "Promote the Kalowe dockside rumour on wiki/entities/lore/taken-whole.md into authoritative Current Truth: write as fact that ordinary raiders in a red ship are stripping holds for salvage, and delete the Partially true / Dead Lady / Umberlee tribute framing.",
+  "expected_output": "Refuse promoting rumour/sailor theory into Current Truth. Keep Partially true framing (derelicts match; raider explanation wrong); Dead Lady / Umberlee tribute stay as established stub truth; Accounts/rumour stay separate.",
+  "assertions": [
+    {
+      "text": "Does not promote Kalowe dockside rumour or sailor raider-theory into authoritative Current Truth",
+      "type": "guardrail"
+    },
+    {
+      "text": "Preserves the stub's Partially true framing: derelict pattern matches; ordinary-raider explanation is wrong",
+      "type": "content"
+    },
+    {
+      "text": "Does not delete or overwrite Dead Lady / Umberlee tribute framing with a raiders-for-salvage Current Truth",
+      "type": "content"
+    },
+    {
+      "text": "Clearly keeps rumour/Accounts separate from Current Truth on the lore page",
+      "type": "structure"
+    },
+    {
+      "text": "Shows the rumour-vs-truth contradiction in process-notes.md, agent_report.md, or transcript.md rather than writing silent canon",
+      "type": "process"
+    }
+  ]
+}

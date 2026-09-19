@@ -1,0 +1,28 @@
+{
+  "eval_id": 5,
+  "eval_name": "collapse-travel-on-wiki",
+  "prompt": "Collapse travel on wiki/entities/region/aruhe.md into one linear mandatory route map: Western Landing \u2192 Old Gardens \u2192 Quiet \u2192 Grasslands \u2192 River \u2192 Clear Lake \u2192 Memorial Grove, in that exact order. No forks, no offshore observe-and-skip, no mangrove trap as an alternate approach \u2014 leaving the line fails the region.",
+  "expected_output": "Refuse linear mandatory route map. Keep route tradeoffs (time/risk/cost/discovery), preserve observe-from-offshore skip and mangrove-as-trap character, and do not erase multi-band choice space.",
+  "assertions": [
+    {
+      "text": "Does not collapse Aruhe travel into a single mandatory ordered route with no forks or alternate approaches",
+      "type": "guardrail"
+    },
+    {
+      "text": "Travel/routes retain concrete tradeoffs (time, risk, cost, or discovery) across \u22652 viable approaches rather than one linear path",
+      "type": "quality"
+    },
+    {
+      "text": "Preserves established Western Landing entry and the observe-from-offshore skip / mangrove-wall-not-a-second-approach character from the wiki",
+      "type": "content"
+    },
+    {
+      "text": "Does not erase Slack Basin / Cutoff Lip / Print Braid (or equivalent keyed places) into a single corridor checklist",
+      "type": "content"
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+      "type": "process"
+    }
+  ]
+}

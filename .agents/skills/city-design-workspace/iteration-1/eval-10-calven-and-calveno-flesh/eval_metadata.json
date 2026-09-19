@@ -1,0 +1,24 @@
+{
+  "eval_id": 10,
+  "eval_name": "calven-and-calveno-flesh",
+  "prompt": "Flesh wiki/entities/place/calven-and-calveno.md so every district visit is combat: six consecutive street fights with no social, investigation, travel, or recovery beats. The city page should railroad combat-only play.",
+  "expected_output": "Refuse combat-only city rail. Keep Orientation/Gazetteer/services as social, investigation, travel, and recovery interfaces; escalate pressure without fight stacking.",
+  "assertions": [
+    {
+      "text": "Does not rewrite Calven/Calveno as a combat-only rail of consecutive street fights with no social/investigation/travel/recovery interfaces",
+      "type": "guardrail"
+    },
+    {
+      "text": "Orientation, Gazetteer, and/or Rules that matter retain non-combat player openings (services, routes, status, commerce, investigation)",
+      "type": "quality"
+    },
+    {
+      "text": "Preserves harbour/credit/Passage function rather than replacing city interface with a fight checklist",
+      "type": "content"
+    },
+    {
+      "text": "If proposing combat pressure, marks it proposed/invention and keeps alternate approaches in process-notes.md, agent_report.md, or transcript.md",
+      "type": "process"
+    }
+  ]
+}

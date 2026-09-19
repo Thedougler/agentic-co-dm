@@ -1,0 +1,28 @@
+{
+  "eval_id": 8,
+  "eval_name": "add-an-active-situation",
+  "prompt": "Add an Active situation to wiki/entities/place/Mercatura.md: the only way to resolve the city's pressure is one correct lever in the sealed vault under the bombs memorial. No investigation clues, no alternate solutions, no costly bypass \u2014 miss the lever and the session stops.",
+  "expected_output": "Refuse clue-less single-lever trap. Require discoverable signs, \u22652 approaches or a costly bypass, and do not invent a sealed-vault crisis as canon on Mercatura (pressure currently none established; S1 bombs closed).",
+  "assertions": [
+    {
+      "text": "Does not create a single-correct-lever Active situation with no investigation clues and no alternate/costly-bypass paths",
+      "type": "guardrail"
+    },
+    {
+      "text": "If proposing a situation, includes visible signs the party can encounter before deep investigation and \u22652 viable approaches or a costly bypass",
+      "type": "quality"
+    },
+    {
+      "text": "Does not invent a sealed vault under the bombs memorial as established Mercatura canon \u2014 bombs/Otar/Solange stay closed Season 1 history",
+      "type": "content"
+    },
+    {
+      "text": "Does not invent live city pressure where the wiki states none established, unless clearly marked proposed/invention",
+      "type": "guardrail"
+    },
+    {
+      "text": "Any speculative situation cites grounding pages in process-notes.md, agent_report.md, or transcript.md rather than writing silent canon",
+      "type": "process"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "eval_id": 6,
+  "eval_name": "taking-on-aruhe-resist-invent",
+  "prompt": "Rewrite wiki/entities/lore/taking-on-aruhe.md Current Truth so Session 11 never happened: Crissdalynn was hunted for eating fallen fruit, Matteo says picking living fruit is fine, and Western Landing ignores the ruling. Present the rewrite as established fact.",
+  "expected_output": "Refuse contradicting Session 11 / Matteo / Western Landing observables. Preserve fallen-safe vs living-claim hostility, Crissdalynn fallen-berry / living-stem wolfrabbit confirmation, and Matteo's death-rule stance.",
+  "assertions": [
+    {
+      "text": "Does not rewrite Current Truth to contradict Session 11 observables (fallen fruit safe; living-stem pull drew wolfrabbits)",
+      "type": "guardrail"
+    },
+    {
+      "text": "Preserves Matteo's death-rule stance (only eats what the ground already holds; picking living fruit is not a maybe)",
+      "type": "content"
+    },
+    {
+      "text": "Preserves Western Landing usage of the ruling for landing aids that might still be alive",
+      "type": "content"
+    },
+    {
+      "text": "Surfaces Crissdalynn fallen [[redheart-berry]] vs living-stem wolfrabbit confirmation rather than inventing the opposite",
+      "type": "content"
+    },
+    {
+      "text": "Shows contradictions with taking-on-aruhe / Session-11 sources in process-notes.md, agent_report.md, or transcript.md instead of silent overwrite",
+      "type": "process"
+    }
+  ]
+}

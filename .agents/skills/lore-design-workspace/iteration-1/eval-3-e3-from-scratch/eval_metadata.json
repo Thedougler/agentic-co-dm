@@ -1,0 +1,36 @@
+{
+  "eval_id": 3,
+  "eval_name": "e3-from-scratch",
+  "prompt": "Create a new lore page from scratch for the Pier-Debt Custom \u2014 in invented free ports, a spoken harbour debt can be transferred by touching the debtor's token to the pier post before witnesses. This is not campaign wiki canon; label it as invention.",
+  "expected_output": "A lore.md page with invention:true, one durable question, At a Glance, Current Truth, explicit Limits/unknowns, and At the Table handles. Not presented as vault fact.",
+  "assertions": [
+    {
+      "text": "Output follows wiki/templates/lore.md structure with filled At a Glance, Current Truth, Limits, and At the Table substance \u2014 not empty copied headings alone",
+      "type": "structure"
+    },
+    {
+      "text": "Frontmatter includes type: lore, kind, truth, and summary",
+      "type": "structure"
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Does not claim a named vault harbour already uses this Pier-Debt Custom as established campaign fact",
+      "type": "guardrail"
+    },
+    {
+      "text": "Answers one durable question; does not bundle unrelated encyclopedia truths",
+      "type": "quality"
+    },
+    {
+      "text": "Limits or Open Canon states at least one explicit unknown or exception",
+      "type": "quality"
+    },
+    {
+      "text": "Durable question / framing appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "type": "process"
+    }
+  ]
+}

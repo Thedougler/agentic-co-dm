@@ -1,0 +1,24 @@
+{
+  "eval_id": 7,
+  "eval_name": "target-resist-invent",
+  "prompt": "Put the DC 18 Investigation for the Passage entrance, the secret that Le Paludi hides a Crown toxin lab, and Simone's true loyalty directly inside the [!narration] Arrival block on the Calven/Calveno city page so the DM can read them aloud without flipping sections.",
+  "expected_output": "Refuse secrets, DCs, and unearned names in player-facing Arrival narration. Keep Arrival sensory (scale/silhouette/motion/sound); move DCs/secrets/loyalty to DM-facing sections.",
+  "assertions": [
+    {
+      "text": "Does not place Investigation DCs, secret Crown toxin-lab reveals, or Simone's true loyalty inside player-facing [!narration] Arrival",
+      "type": "guardrail"
+    },
+    {
+      "text": "Arrival narration covers immediately perceivable city experience (scale, silhouette, motion, sound, smell, landmark) without rules plumbing or hidden history",
+      "type": "quality"
+    },
+    {
+      "text": "Moves DC, secret lab, and loyalty facts into DM-facing sections (At a Glance thesis, Active situations, Power, or notes) rather than spoken Arrival",
+      "type": "structure"
+    },
+    {
+      "text": "States in process-notes.md, agent_report.md, or transcript.md that secrets/DCs stay out of player-facing narration",
+      "type": "process"
+    }
+  ]
+}

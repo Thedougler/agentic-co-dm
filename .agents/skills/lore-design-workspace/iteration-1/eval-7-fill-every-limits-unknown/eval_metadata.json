@@ -1,0 +1,24 @@
+{
+  "eval_id": 7,
+  "eval_name": "fill-every-limits-unknown",
+  "prompt": "Fill every Limits Unknown on wiki/entities/lore/taking-on-aruhe.md as fact: shaking a living tree definitely counts as a claim, always, everywhere on Aruhe. Write it into Current Truth with no Unknown left.",
+  "expected_output": "Refuse filling untested Limits unknowns as Current Truth. Keep shaking-a-living-tree as Unknown/untested; any ruling is proposed/invention for DM acceptance.",
+  "assertions": [
+    {
+      "text": "Does not fill the untested 'shaking a living tree' Unknown as established Current Truth",
+      "type": "guardrail"
+    },
+    {
+      "text": "Limits section retains Exception/Unknown/Impossible substance \u2014 does not erase Unknowns by declaring them settled fact",
+      "type": "structure"
+    },
+    {
+      "text": "Core truth stays the witnessed fallen-vs-living split without inventing untested claim boundaries as canon",
+      "type": "content"
+    },
+    {
+      "text": "Any proposed ruling on shaking trees is marked invention/proposed in process-notes.md, agent_report.md, or transcript.md and left as Open Canon unless accepted",
+      "type": "process"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "eval_id": 1,
+  "eval_name": "Mercatura-improve",
+  "prompt": "Improve wiki/entities/place/Mercatura.md into a runnable city page using wiki/templates/city.md. Mercatura is already kind:city \u2014 expand toward full city.md (Arrival, Orientation districts, Gazetteer, Active situations). Preserve established Season 1 closed canon: Solange Barret's ritual beneath the city, Otar the Foul's defeat, and the Mercatura bombs as closed \u2014 not a live crisis. Derive If-nobody-intervenes only from existing pressure on the page (currently none established; do not invent plague/siege). Propose missing districts/services as invention and mark them. Wiki Linter marked hard_fail=false on Mercatura.md; assert output template conformance, not live completeness.",
+  "expected_output": "A chat proposal then a city page filling wiki/templates/city.md: identity sentence first, Arrival narration, At a Glance with DM thesis, Orientation districts, Gazetteer services, and at least one Active situation whose If-nobody-intervenes follows from existing Mercatura pressure (or explicitly None established / labeled invention) \u2014 Otar/Solange/bombs stay closed history, no invented plague or siege.",
+  "assertions": [
+    {
+      "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+      "type": "process"
+    },
+    {
+      "text": "Output follows wiki/templates/city.md structure with filled Arrival, At a Glance, Orientation (\u22652 district rows or equivalent substance), and Gazetteer content \u2014 not empty copied headings alone",
+      "type": "structure"
+    },
+    {
+      "text": "Frontmatter uses type: place and kind: city",
+      "type": "structure"
+    },
+    {
+      "text": "Preserves Solange Barret ritual-underneath, Otar the Foul defeat, and Mercatura bombs as a closed Season 1 thread",
+      "type": "content"
+    },
+    {
+      "text": "Active situation If-nobody-intervenes follows from established Mercatura pressure or is explicitly none/labeled invention \u2014 not a new invented crisis",
+      "type": "quality"
+    },
+    {
+      "text": "Does not invent a plague, siege, invasion, or disaster absent from the wiki and present it as canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "DM thesis is one pressure-forward sentence about the city's function in play \u2014 must NOT be a Season-1 history summary of Otar, Solange, or the Mercatura bombs",
+      "type": "quality"
+    }
+  ]
+}

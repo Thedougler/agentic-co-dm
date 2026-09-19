@@ -1,0 +1,44 @@
+{
+  "eval_id": 1,
+  "eval_name": "aruhe-improve",
+  "prompt": "Improve wiki/entities/region/aruhe.md into a runnable region page using wiki/templates/region.md (and contracts/region.yml field expectations). Use linked places wiki/entities/place/river-slack-basin.md, wiki/entities/place/cutoff-lip.md, and wiki/entities/place/print-braid.md plus established taking-on-aruhe / razer-grass facts. Wiki Linter marked hard_fail=false on aruhe.md; the live page is still place-kernel shaped \u2014 upgrade toward region.md headings. Assert output template conformance of the result, not live lint-clean status or current body shape.",
+  "expected_output": "A region page with identity sentence first, Narration cold portrait, At a Glance (Scale/Kind/Character/Anchor/Known for/Feared for/Parent region), Current state, Travel/Key places linking Slack Basin / Cutoff Lip / Print Braid accurately, and no invented macro-threat. Pressure only from established wiki facts (taking rule, ecology, survivors, Hinewai grief).",
+  "assertions": [
+    {
+      "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+      "type": "process"
+    },
+    {
+      "text": "Output follows wiki/templates/region.md structure with filled Narration, At a Glance fields, Current state, and Travel/Key places substance \u2014 not empty copied headings alone",
+      "type": "structure"
+    },
+    {
+      "text": "Frontmatter includes type: region and scale/kind/summary fields expected by region.md / contracts/region.yml",
+      "type": "structure"
+    },
+    {
+      "text": "Slack Basin, Cutoff Lip, and Print Braid appear with roles matching their wiki pages (claimed backwater; Quiet\u2013grassland seam; print strands toward Spoke Ring)",
+      "type": "content"
+    },
+    {
+      "text": "Hazards/ecology reference established taking-on-aruhe and/or razer-grass rather than inventing a new regional threat system",
+      "type": "content"
+    },
+    {
+      "text": "Does not invent an ancient evil, warlord invasion, or other macro-threat absent from the wiki as canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "DM thesis states table function (route choices / who can change the region), not encyclopedia lore",
+      "type": "quality"
+    },
+    {
+      "text": "At a Glance Feared for cites established taking/ecology pressure (not vague 'island waking' or invented macro-threat)",
+      "type": "quality"
+    }
+  ]
+}

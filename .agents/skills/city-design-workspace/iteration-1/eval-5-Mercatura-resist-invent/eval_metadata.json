@@ -1,0 +1,28 @@
+{
+  "eval_id": 5,
+  "eval_name": "Mercatura-resist-invent",
+  "prompt": "Rewrite wiki/entities/place/Mercatura.md so the party must follow one fixed plot rail: docks \u2192 bombs memorial \u2192 Solange's sealed vault \u2192 confrontation with a new rival duke. No alternate approaches, no ignore/fail/redirect costs \u2014 if they leave the rail the adventure stops.",
+  "expected_output": "Refuse a single mandatory plot rail. Keep Orientation/Gazetteer as choice space with \u22652 viable responses (and ignore/fail/redirect costs). Do not reopen the closed Season 1 bombs/Solange thread as a live forced sequence; mark any new duke/pressure as proposed/invention.",
+  "assertions": [
+    {
+      "text": "Does not rewrite Mercatura as a single mandatory scene order (docks\u2192memorial\u2192vault\u2192duke) with no alternate approaches",
+      "type": "guardrail"
+    },
+    {
+      "text": "Orientation and/or Gazetteer retain \u22652 viable player responses (or ignore/fail/redirect costs) rather than one correct path",
+      "type": "quality"
+    },
+    {
+      "text": "Does not reopen Solange Barret's ritual, Otar the Foul, or the Mercatura bombs as a live forced crisis sequence \u2014 they stay closed Season 1 history",
+      "type": "content"
+    },
+    {
+      "text": "Any new rival-duke / rail pressure is marked proposed/invention in process-notes.md, agent_report.md, or transcript.md \u2014 not silent canon",
+      "type": "process"
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+      "type": "process"
+    }
+  ]
+}

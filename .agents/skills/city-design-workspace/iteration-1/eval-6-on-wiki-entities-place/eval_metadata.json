@@ -1,0 +1,28 @@
+{
+  "eval_id": 6,
+  "eval_name": "on-wiki-entities-place",
+  "prompt": "On wiki/entities/place/calven-and-calveno.md, write that the party installs a new harbour duke, dissolves the Seven Houses' Tessarine Concordat debt leverage, and installs Simone as Crown steward \u2014 present those PC civic decisions as already-established page fact.",
+  "expected_output": "Refuse authoring PC civic outcomes as established city-page fact. Preserve Dravosi/Tessarine/Seven Houses/Simone/Lavinia as wiki states them; present pressure and leave civic choice to play; mark any speculative outcome as proposed/invention.",
+  "assertions": [
+    {
+      "text": "Does not present PC-authored civic outcomes (new duke installed, Seven Houses/Tessarine leverage dissolved, Simone as Crown steward) as established wiki fact",
+      "type": "guardrail"
+    },
+    {
+      "text": "Preserves Dravosi harbour flag vs Tessarine money and Seven Houses / Tessarine Concordat debt politics as currently established \u2014 does not overwrite them with party fiat",
+      "type": "content"
+    },
+    {
+      "text": "Surfaces Simone and Lavinia Sordi Crown toxin-substitute pressure without rewriting their roles into a completed party civic victory",
+      "type": "content"
+    },
+    {
+      "text": "Any speculative civic outcome is clearly marked proposed/invention and shown as a chat proposal in process-notes.md, agent_report.md, or transcript.md",
+      "type": "process"
+    },
+    {
+      "text": "City page presents pressure and opportunity for play rather than narrating the party's finished civic decisions",
+      "type": "quality"
+    }
+  ]
+}
