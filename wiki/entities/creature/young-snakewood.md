@@ -6,7 +6,7 @@ category: entities
 tags: [shattered-sea, aruhe, creature]
 sources:
   - "/workspace/midchain-ingest/group-a/monsters/Young Snakewood.md"
-summary: "CR 4 terrace clonal vine ambusher; one short-range bundle grab into the low canopy, distinct from Vine Lash and adult Snakewood."
+summary: "CR 4 terrace clonal vine ambusher. One short-range bundle grab carries prey into the low canopy, distinct from Vine Lash and adult Snakewood."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -88,12 +88,12 @@ actions:
 - **Habitat.** First terraces and orchard edges such as [[old-gardens]], where connected low branches provide the skeleton. Adults live farther in.
 - **Behavior.** At rest it is ordinary vines. When it strikes, stems braid into a wedge, clap shut, and lift prey into the low canopy.
 - **Diet.** Terrace prey plentiful enough to practice the adult feeding loop.
-- **Social Structure.** Clonal juvenile of the same liana as adult Snakewood; keep [[vine-lash]] on narrow trail lanes and young Snakewood on wider canopy lanes.
+- **Social Structure.** Clonal juvenile of the same liana as adult Snakewood. Keep [[vine-lash]] on narrow trail lanes and young Snakewood on wider canopy lanes.
 
 ## Tactics
 
-- **Signs.** Five or six stems tighten; tiny flowers appear inside the closing jaw; low canopy shakes.
-- **Instincts.** One target; practice grab-and-lift where vegetation connects.
-- **Tactics.** Round 1 Snatching Jaws; round 2 Constrict or Reel if the grapple holds.
-- **Weaknesses.** Attack the bundle (AC 14, 10 HP); escape DC 14; leave the 30-foot vegetation lane; burn the stems; it cannot chase.
-- **Aftermath.** Cut bundles leave sweet flowers and pale resin; severed stems remain viable if replanted near connected terrace trees.
+- **Signs.** Five or six stems tighten. Tiny flowers appear inside the closing jaw. Low canopy shakes.
+- **Instincts.** One target. Practice grab-and-lift where vegetation connects.
+- **Tactics.** Round 1 Snatching Jaws. Round 2 Constrict or Reel if the grab holds.
+- **Weaknesses.** Attack the bundle (AC 14, 10 HP). Escape DC 14. Leave the 30-foot vegetation lane. Burn the stems. It cannot chase.
+- **Aftermath.** Cut bundles leave sweet flowers and pale resin. Severed stems remain viable if replanted near connected terrace trees.

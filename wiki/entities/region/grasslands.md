@@ -1,7 +1,7 @@
 ---
 title: Grasslands
 category: entities
-tags: [shattered-sea, aruhe, place]
+tags: [shattered-sea, aruhe, region]
 aliases: [Grasslands, Aruhe Grasslands, Aruhe - Grasslands]
 sources: ["[[aruhe]]", "Aruhe - Grasslands.md"]
 summary: Hot river-cut valleys of eight-foot gold-green grass where water, cover, and predators force exposed choices.
@@ -15,11 +15,11 @@ lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T00:00:00Z
 updated: 2026-09-13T07:20:00Z
-type: place
+type: region
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-kind: region
+kind: wilderness
 region: aruhe
 relationships:
   - target: "[[aruhe]]"

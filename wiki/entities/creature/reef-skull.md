@@ -58,7 +58,7 @@ actions:
 
 ## Description
 
-A hermit crab the size of a large dog, wearing a Human skull or a chunk of ship hull as its shell. Anyone who has seen one recognizes the silhouette afterward: a skull moving sideways through ankle-deep water, propelled by crab legs underneath. The lateral gait is smooth, unhurried, practiced. They hunt [[Aruhe]]'s reef shallows in groups of three to five at low tide, burying themselves in the shingle with only the top of their shell visible, indistinguishable from the beach debris and hull planking that litter [[the Teeth]].
+The reef skulls hunt [[Aruhe]]'s shallow reefs in groups of three to five at low tide. They bury themselves in the shingle with only the top of each shell visible, blending with the beach debris and hull planking that litter [[the Teeth]].
 
 ## Ecology
 
@@ -66,4 +66,4 @@ Hermit crabs don't grow past their shell supply. On most islands, that caps them
 
 **The result is a medium-sized predatory crab wearing a Human skull or a chunk of ship hull as armor.** It moves through ankle-deep water with the lateral gait of something that stopped being clumsy about this a long time ago. The coordination in groups is instinctive, not intelligent, the way army ants swarm without a plan. When something walks within reach, the nearest reef skull erupts from the sand and clamps. The others converge toward the waterline, dragging the prey where the undertow does half their work.
 
-The pilot who found a goat-sized scorpion under his dinghy found the wrong animal. The reef skulls had already been living in the dinghy's shadow.
+The pilot who found a goat-sized scorpion under his dinghy found the wrong animal. The reef skulls had already occupied the dinghy's shadow.

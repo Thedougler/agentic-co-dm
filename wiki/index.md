@@ -199,7 +199,7 @@
 - [[Gost]] — Half-orc berserker, a loose hiring hook in the Warren with no fixed loyalty. ( #shattered-sea #npc)
 - [[governor-voss]] — Crown governor whose orders never covered the Fort Crestwall detachments. ( #shattered-sea #npc)
 - [[grandfathers-course]] — A water-warped navigation journal, spine stamped with fading gold leaf, pawned six months ago in desperation after a ship sank. ( #shattered-sea #item)
-- [[grasslands]] — Hot river-cut valleys of tall grass where water, cover, and predators force exposed choices. ( #shattered-sea #aruhe #place)
+- [[grasslands]] — Hot river-cut valleys of tall grass where water, cover, and predators force exposed choices. ( #shattered-sea #aruhe #region)
 - [[Greyteeth]] — Long pale reef ridges breaking the surface between the Crown Islands; three generations of charts have failed to make them ordinary water. ( #shattered-sea #region)
 - [[greyteeth-runner]] — A lean, patched sloop built for speed and shallow reefs, currently for sale in Port Tidefall. ( #shattered-sea #vehicle)
 - [[grigori-and-the-crown-hunt]] — Open quest covering Shepherd Grigori and the Crown hunt pressure around Flock infiltration. ( #shattered-sea #quest)
@@ -303,7 +303,7 @@
 - [[Maret]] — Named Tessarine face, craft, or house from the Concordat dump. ( #shattered-sea #npc)
 - [[margaret-maggie-porcelain-pots]] — Dragonborn potter whose family fired ceramics for three generations. Delmar Fisk's first love, and the one who gave him a week-long shiner. ( #shattered-sea #npc)
 - [[Marlstrand]] — Oracles read accurate futures in the pattern of stranded jellyfish. ( #shattered-sea #place)
-- [[Marrow]] — Foggy north-south interior ridge of Calder's Tooth, porous with sinkholes and collapsed caves. ( #shattered-sea #place)
+- [[The Marrow]] — Foggy north-south interior ridge of Calder's Tooth, porous with sinkholes and collapsed caves. ( #shattered-sea #place)
 - [[marsh-strider]] — A long-legged wading mount sold at Zort's Pits, broke to canal mud and open road, that carries a rider clear of anything grabbing at ground level. ( #shattered-sea #item)
 - [[marta-anvez]] — The impossibly old shopkeeper of Anvez's Provisions in Stillmere, who quietly ledgers what the island won't let stay dead. ( #shattered-sea #npc)
 - [[marta-kessler]] — Named Voyvode face. ( #shattered-sea #faction)
@@ -555,6 +555,7 @@
 - [[Tangle]] — Elder teaching and proposed anchor referenced by the Rattkin Runs; Aruhe is a survey site. ( #shattered-sea #faction)
 - [[tattletale-goggles]] — Goggles that grant darkvision, but make everyone nearby, friend or foe, feel an inexplicable certainty that someone is at the wearer's location. ( #shattered-sea #item)
 - [[taufa-fifita]] — Lizardfolk patriarch of the Fifita chandlery family on Kalowe. Unhurried and forgettable by design, he knows every ship that's bought rope from him. ( #shattered-sea #npc)
+- [[the-teeth]] — Exposed reef teeth and shingle debris at Aruhe's western approach. ( #shattered-sea #aruhe #place)
 - [[terror-bird]] — CR 13 Blight-corrupted axebeak apex predator on Aruhe whose ground-shaking charge ends in a beak clamp and swallow. ( #shattered-sea #aruhe #creature)
 - [[tessarine-concordat]] — Eastern mercantile colonial power that holds the Scatter with paper, debt, and courtesy that is always a contract. ( #shattered-sea #faction)
 - [[tessarine-courier-silkvane]] — Fast Tessarine Concordat dispatch sloop for courier service, armed with two cannon. ( #shattered-sea #vehicle)
@@ -753,6 +754,13 @@
 
 [Artifact storage: ~/.omp/agent/sessions/-agentic-co-dm/2026-09-16T21-35-49-408Z_01a0ac25-bca0-75b5-8c19-55d8b9643423/9.read.log (108.6KB). Use artifact://9:N-M to page, artifact://9:raw:N-M for verbatim chunks, and the artifact file path for search/copy workflows.]
 
+- [[Al Fondale]] — A tavern in Le Paludi run by Bice Riva and Aldo Riva. ( #shattered-sea #place)
+- [[Casa Lupo]] — A general-goods shop in Calveno's Le Paludi district, run by Ettore Lupo. ( #shattered-sea #place)
+- [[marrow]] — Rattkin cargo broker and document transporter operating from an alcove in the Warren. ( #shattered-sea #npc)
+- [[Marrow's]] — Marrow's alcove and place of business in the Warren, where invisible cargo and documents change hands. ( #shattered-sea #place)
+- [[Studio Orsini]] — An unmarked alchemy shop on a canal in Le Paludi, run by Marta Orsini. ( #shattered-sea #place)
+- [[Tallow Row]] — A card den in Calveno where Thassos, Grukan, and other regulars spend most nights. ( #shattered-sea #place)
+- [[Warren, Marrow's Crate]] — A crate held by Marrow contains the Vretek/Brol letter, silver, and a signet ring after courier Dren's death. ( #shattered-sea #quest)
 ## Folder Indexes
 - [[entities/creature/creature-index|Creatures]]
 - [[entities/entities-index|Entities]]

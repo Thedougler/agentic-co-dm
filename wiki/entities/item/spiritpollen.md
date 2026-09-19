@@ -33,11 +33,11 @@ kind: flora hazard
 
 ## Hazard
 
-- **Trigger:** The plant releases a pale pollen cloud in a 15-foot radius when touched, struck, cut, shaken, burned, or otherwise disturbed.
-- **Notice:** Wisdom (Perception) or Intelligence (Nature) — `DC 15`. Success notices the swollen pollen sacs and old claw marks, weapon cuts, and scorch marks around otherwise untouched plants.
-- **Contact:** Each breathing creature in the cloud makes a DC 15 Wisdom saving throw. On a failure, it becomes Spirit-Haunted. Creatures that do not breathe are immune. Affected creatures hallucinate swarms of spectral insects and grasping spirits overwhelming their companions. On its turn, a Spirit-Haunted creature must spend its Action using an attack, spell, or ability it can use and believes will destroy the greatest number of hallucinated threats. It treats affected companions as valid targets when necessary.
-- **Careful Passage:** Hold your breath or cover your mouth and nose before disturbing the plant, stay out of the cloud, or let the cloud settle before entering.
-- **Counterplay:** Disturb it from beyond 15 feet, use strong wind to disperse the pollen, or destroy it from outside the cloud.
-- **Repeat Save:** At the end of each turn, a Spirit-Haunted creature repeats the DC 15 Wisdom saving throw, ending the effect on a success.
-- **Recovery:** A creature that succeeds on any Spiritpollen Wisdom save becomes immune to Spiritpollen for 1 hour. Avoiding exposure by holding its breath, covering its mouth and nose, staying out of the cloud, or not breathing does not grant this immunity.
-- **Placement:** Spiritpollen belongs in old Aruhe growth where clawed animals and travelers have learned to leave pale plants untouched. It works best as a crossing or touch-choice hazard rather than hidden unavoidable punishment.
+- **Trigger.** Touching, striking, cutting, shaking, burning, or otherwise disturbing the plant releases a pale pollen cloud in a `15-foot` radius.
+- **Notice.** Make **Wisdom (Perception) — `DC 15`** or **Intelligence (Nature) — `DC 15`**. Success notices the swollen pollen sacs and old claw marks, weapon cuts, and scorch marks around otherwise untouched plants.
+- **Contact.** Each breathing creature in the cloud makes a DC 15 Wisdom saving throw. On a failed save, it becomes Spirit-Haunted. Creatures without breath are immune. A Spirit-Haunted creature hallucinates swarms of spectral insects and grasping spirits that overwhelm its companions. On its turn, it must spend its Action using an attack, spell, or ability it can use and believes will destroy the greatest number of hallucinated threats. It treats affected companions as valid targets when necessary.
+- **Careful Passage.** Cover the mouth and nose before disturbing the plant. A creature can also stay out of the cloud or wait for it to settle before entering.
+- **Counterplay.** Disturb the plant from beyond `15 feet` or use strong wind to disperse the pollen. Destroying it from outside the cloud also works.
+- **Repeat Save.** At the end of each turn, a Spirit-Haunted creature makes a DC 15 Wisdom saving throw. A success ends the effect.
+- **Recovery.** A successful Spiritpollen Wisdom save grants immunity to Spiritpollen for 1 hour, whereas avoiding exposure grants none.
+- **Placement.** Spiritpollen belongs in old Aruhe growth where clawed animals and travelers have learned to leave pale plants untouched. It works best as a crossing or touch-choice hazard rather than hidden unavoidable punishment.

@@ -72,14 +72,14 @@ bonus_actions:
 
 ## Behavior
 
-- **Habitat.** The Bear-Elk holds the wet floor where [[the-quiet|the Quiet]] gives way to [[the-marshes|the Marshes]]. It favors vine-choked game trails, soft black earth, and narrow tree gaps where its antlers scrape the canopy and its weight can break a path that smaller creatures only slip through.
-- **Behavior.** It follows the same scored circuit day after day, shouldering through brush, rubbing sap-wet antlers against trunks, and roaring when another large body refuses to move. [[terror-bird|Terror-birds]] give its route room. [[crown-squid|Crown squid]] and [[bloodhawk|bloodhawks]] take it only when canopy, open sky, or bad footing gives them the better angle.
-- **Diet.** It seldom needs a normal meal, but it will tear into carrion, soft marsh plants, fruiting growth, and anything broken on its path. The current Aruhe frame is pressure from the Blight gardens, not possession, so its hunger stays animal and territorial rather than commanded.
-- **Social Structure.** Solitary. Each Bear-Elk owns a route, not a herd, and two adults meeting on the same trail turn the understory into a wrecked wall of snapped trunks and torn vines.
+- **Habitat.** The Bear-Elk holds the wet floor where [[the-quiet|the Quiet]] gives way to [[the-marshes|the Marshes]]. It favors vine-choked game trails, soft black earth, and narrow tree gaps where its antlers scrape the canopy and its weight can break a path that smaller creatures only move through.
+- **Behavior.** It follows the same scored circuit day after day. It shoulders through brush and rubs sap-wet antlers against trunks. It roars when another large body refuses to move. [[terror-bird|Terror-birds]] give its route room. [[crown-squid|Crown squid]] and [[bloodhawk|bloodhawks]] take it only when canopy, open sky, or bad footing gives them the better angle.
+- **Diet.** It seldom needs a normal meal, but it will eat carrion and soft marsh plants. It also takes fruiting growth and anything broken on its path. The current Aruhe frame is pressure from the Blight gardens, not possession. Its hunger remains animal and territorial rather than commanded.
+- **Social Structure.** Solitary. Each Bear-Elk patrols a route rather than a herd range. When adult Bear-Elks meet on the same trail, the understory becomes a wrecked wall of snapped trunks and torn vines.
 
 ## Tactics
 
-- **Signs.** Scored trees, peeled bark, snapped vines, black hoof-and-claw tracks, churned marsh edge, antler gouges above head height, white sap strings, blood smears on leaves, and paths crushed wide enough for a cart.
+- **Signs.** Scored trees and peeled bark mark the route. Snapped vines, black hoof-and-claw tracks, churned marsh edge, antler gouges above head height, white sap strings, blood smears on leaves, and paths crushed wide enough for a cart complete the trail.
 - **Instincts.** It protects its circuit, its carcasses, and any narrow passage where it has already forced a trail. Loud movement, fresh blood, antler-scraping on trees, or a creature standing firm in its path reliably draws its attention.
 - **Tactics.** It lowers the broad antlers and commits to a straight rush, using mud, vines, and tight trails to trap prey in front of its weight. If the first sweep drops something, the Bear-Elk stamps down with its foreclaws and keeps its head low enough to hook anything trying to crawl away.
 - **Weaknesses.** Its patrol is predictable, and the same size that makes it terrifying also makes it bad at sharp turns, low tangles, deep water, and places where the antlers snag. Careful trackers can read its circuit from tree damage and choose when to avoid, bait, or brace for the charge.

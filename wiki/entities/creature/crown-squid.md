@@ -7,7 +7,7 @@ tags: [shattered-sea, aruhe, creature]
 sources:
   - "house (wiki creature.aruhe-crown-squid; CR 11 simplification)"
   - "wiki/_archive/aruhe-crown-squid.md"
-summary: Gargantuan canopy predator that selects isolated prey, reels it above the forest floor, and pursues through connected crowns.
+summary: Gargantuan canopy predator that targets isolated prey and reels it above the forest floor before pursuing it through connected crowns.
 provenance:
   extracted: 0.82
   inferred: 0.18
@@ -38,7 +38,7 @@ relationships:
 ![[attachments/shattered-sea/creatures/great-crown-squid-of-aruhe-01.jpg|Great Crown Squid of Aruhe]]
 
 > [!narration] Narration
-> The Great Crown Squid hangs between mature trees, its broad translucent mantle held above eight muscular arms. Hooked suckers line the arms, while finer tendrils hang toward the ground and sway with the damp air. Its body stays nearly still as its eyes track movement through the leaves.
+> The Great Crown Squid hangs between mature trees, its broad translucent mantle held above eight muscular arms. Hooked suckers line the arms, while finer tendrils hang toward the ground and sway with the damp air. Its body remains nearly still as its eyes track movement through the leaves.
 
 ## Statblock
 
@@ -109,7 +109,7 @@ legendary_actions:
 
 - **Habitat.** Adults hold connected mature canopy in [[the-quiet|the Quiet]], [[the-marshes|the Marshes]], and the roof of [[the-mangroves|the Mangroves]]. The interrupted trees of [[old-gardens|the Old Gardens]] support juveniles but usually not adults.
 - **Habits.** The squid braces several arms against separate trunks and watches before committing. Its gas-filled mantle makes its weight seem wrong on the branches, allowing it to cross canopy gaps with little movement below.
-- **Diet.** It eats large animals, travelers, and anything it can lift into the canopy. Terror-Birds are dangerous prey, Bear-Elk are very dangerous prey, and Wolfrabbits are easy meals.
+- **Diet.** It eats large animals, travelers, and anything it can lift into the canopy. Terror-Birds are dangerous prey. Bear-Elk are especially dangerous prey, and Wolfrabbits are easy meals.
 - **Social structure.** Each adult is solitary and treats other large predators as boundaries rather than allies. It avoids broad grassland, open shoreline, and river water occupied by otter families.
 
 ## Hunt

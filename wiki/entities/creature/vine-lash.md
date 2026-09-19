@@ -7,7 +7,7 @@ tags: [shattered-sea, aruhe, creature]
 sources:
   - "campaign-os:vine-lash.md"
   - "/workspace/midchain-ingest/group-a/monsters/Vine Lash.md"
-summary: "CR 3 trail-controller vine that hangs as rope, whips, wraps, and squeezes; fire and breakable bundles are the answers."
+summary: "CR 3 trail-controller vine that hangs as rope, whips, wraps, and squeezes. Fire and breakable bundles are the answers."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -80,15 +80,15 @@ actions:
 
 ## Behavior
 
-- **Habitat.** First terraces of [[Aruhe]]. Keep these on narrow trail lanes; [[young-snakewood]] keeps wider canopy lanes.
+- **Habitat.** First terraces of [[Aruhe]]. Keep these on narrow trail lanes. [[young-snakewood]] keeps wider canopy lanes.
 - **Behavior.** Hang as ordinary rope, then whip, wrap, and squeeze, drinking through roots.
-- **Diet.** Prey held under the canopy long enough to feed.
+- **Diet.** Prey kept under the canopy long enough to feed.
 - **Social Structure.** Trail ambush plants; place a second vine on a separate lane, not the same target.
 
 ## Tactics
 
-- **Signs.** Shoulder-thick leafless hangers; tendrils twitch after something enters the lane.
-- **Instincts.** Establish grapple, then squeeze or grab another.
-- **Tactics.** Two Tendrils opening; Tendril plus Constrict while a grab holds.
-- **Weaknesses.** Escape DC 12; attack the bundle (AC 12, 8 HP); fire vulnerability; leave the trail lane.
-- **Aftermath.** Burned bundles leave sweet-smelling ash and tough wet cord; do not harvest while twitching.
+- **Signs.** Shoulder-thick leafless hangers. Tendrils twitch after something enters the lane.
+- **Instincts.** Establish a hold, then squeeze or seize another.
+- **Tactics.** Open with two Tendrils. Use Tendril plus Constrict while a grab holds.
+- **Weaknesses.** Escape DC 12. Attack the bundle (AC 12, 8 HP). Fire vulnerability. Leave the trail lane.
+- **Aftermath.** Burned bundles leave sweet-smelling ash and tough wet cord. Do not harvest while twitching.

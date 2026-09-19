@@ -7,7 +7,7 @@ tags: [shattered-sea, aruhe, creature]
 sources:
   - "house (rough draft and image concept 2026-09-08)"
   - "wiki/attachments/spiguar-reference.png (visual reference sheet, 2026-09-14)"
-summary: CR 11 solitary grassland ambusher that pounces isolated prey, drags it into cover, and loses its edge in open terrain.
+summary: CR 11 solitary grassland ambusher that uses cover for a pounce and drag but loses its edge in open terrain.
 provenance:
   extracted: 0.87
   inferred: 0.13
@@ -86,22 +86,22 @@ bonus_actions:
 
 ## Visual reference
 
-The reference sheet depicts a heavy, leopard-like cat with a broad head, long tail, large paws, and long ivory saber teeth. Its fur is golden brown with dark rosettes; amber-gold eyes and a dark nose and muzzle are its strongest facial marks. A dense camouflage mantle of fresh leaves, dry grass, vines, and plant fibers covers its back and shoulders, breaking up the silhouette while leaving the spotted face, legs, paws, and banded tail visible. The palette is muted jungle green, dry grass brown, golden fur, dark shadow accents, and ivory fangs and claws. The sheet shows the same body held low in relaxed, prowling, walking, stalking, and scenting poses; its default silhouette is powerful and close to the ground. ^[inferred]
+Heavy spotted cat with a broad head, long tail, large paws, and long ivory saber teeth. Golden-brown fur carries dark rosettes. Amber-gold eyes, a dark nose, and a dark muzzle mark the face. Fresh leaves, dry grass, vines, and plant fibers form a camouflage mantle over the back and shoulders. The mantle breaks up the outline and exposes the spotted face, legs, paws, and banded tail. The palette uses muted jungle green, dry grass brown, golden fur, and dark rosette markings.
 
 ## Behavior
 
-- **Habitat.** Spiguars dominate the hottest open cuts of [[grasslands]], especially long channels where shaded banks and eight-foot grass force travelers to choose between cover and clear sight. They favor low rises, game trails, river bends, and the line where grass gives way to the darker jungle rim.
-- **Behavior.** A Spiguar hunts from stillness. It lies beneath its living mantle until wind, insects, and birds accept the shape as another grass clump, then explodes through the lane in one crushing rush. It does not spend itself on long pursuit into deep water, bare stone, or broken ground.
+- **Habitat.** Spiguars dominate the hottest open cuts of [[grasslands]], especially long channels where shaded banks and eight-foot grass force travelers to choose between cover and clear sight. They favor low rises and game trails. River bends and the line where grass gives way to the darker jungle rim also suit them.
+- **Behavior.** A Spiguar takes prey from stillness. It lies beneath its living mantle until wind, insects, and birds treat it as another grass clump, then explodes through the lane in one crushing rush. It does not spend itself on long pursuit into deep water, bare stone, or broken ground.
 - **Diet.** It takes whatever stops too long in open lanes: [[Deer-Stalker|Deer-Stalkers]], [[Wolfrabbit|Wolfrabbits]], straying grung, riverbank foragers, and wounded prey flushed by larger claims. It defends a kill fiercely and drags meat into cover before feeding.
-- **Social Structure.** It is solitary. A mature Spiguar owns a hunting range of channels, bends, and grass corridors. Two adults meeting in the same stretch usually means one drives the other off after a brief, violent clash.
+- **Social Structure.** It is solitary. A mature Spiguar patrols a hunting range of channels, bends, and grass corridors. Adult Spiguars separate after a brief, violent clash when they meet in the same stretch.
 
 ## Tactics
 
-- **Signs.** Sudden silence in noisy grass, heavy prints that appear and vanish, low drag furrows leading into cover, flattened feeding circles, bones with paired fang punctures, clumps of spotted fur, and mats of reeds or creepers snagged on thorn or branch.
+- **Signs.** Sudden silence in noisy grass, heavy prints that appear and vanish, low drag furrows leading into cover, flattened feeding circles, and bones with paired fang punctures. Clumps of spotted fur and mats of reeds or creepers snag on thorn or branch.
 - **Instincts.** It keys on movement through lanes, prey that stops to drink, and anything noisy enough to betray its line through the grass. It prefers the first strike from concealment and commits hardest when it can knock prey down or seize one body before the rest can react.
-- **Tactics.** It stays low, closes under cover, and launches into a pounce to bowl a target over. Once something is down, it bites deep, gets a hold, and drags the prey back into grass where sightlines collapse. If several enemies press it, it uses grass to break line of sight and circles for another ambush instead of standing in the open.
-- **Weaknesses.** Deep water, wide bare ground, fire, and clean overhead sightlines blunt its advantage. It will not willingly rush through [[razer-grass|razer-grass]], and it loses much of its edge on open stone, in the river, or under a view from above.
-- **Aftermath.** A kill site shows a brief struggle in the open and a worse one in the grass beyond: a pounced lane, blood on seed heads, a drag trail vanishing under bent reeds, and a hidden feeding hollow whose smell arrives before it is seen.
+- **Tactics.** It keeps low and closes under cover before launching into a pounce that bowls a target over. Once something is down, it bites deep and drags the prey back into grass where sightlines collapse. If several enemies press it, it uses grass to break line of sight and circles for another ambush instead of standing in the open.
+- **Weaknesses.** Deep water and wide bare ground blunt its advantage. Fire and clean overhead sightlines do the same. It will not willingly rush through [[razer-grass|razer-grass]], and open stone or the river costs it much of its edge.
+- **Aftermath.** A kill site shows a brief struggle in the open and a worse one in the grass beyond. A pounced lane, blood on seed heads, and a drag trail vanish under bent reeds. A hidden feeding hollow gives off its smell before anyone sees it.
 
 ## Art
 ![[attachments/shattered-sea/creatures/spiguar-of-aruhe.jpg|Spiguar of Aruhe]]

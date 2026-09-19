@@ -77,11 +77,11 @@ actions:
 
 ## Behavior
 
-- **Habitat.** Deep Rot, always near the tree line. It follows a seasonal beat and does not leave the forest. Silence moths, thornbacks, or ordinary Rot terrain can create movement problems, but the corpsewood should remain the obvious durable target rather than gain a pile of immunities.
-- **Behavior.** A dead tree walks: forty feet of split bark and dragging roots. It patrols deep The Rot on a seasonal beat and never leaves the tree line. Fire is the one thing that stops it knitting itself back together. The wood died years ago; what moves it did not.
+- **Habitat.** Deep Rot, always near the tree line. It follows a seasonal beat and does not leave the forest. Silence moths, thornbacks, or ordinary Rot terrain can create movement problems, but the corpsewood should remain the obvious durable target rather than gain many immunities.
+- **Behavior.** It is a dead tree that moves: forty feet of split bark and dragging roots. It patrols deep The Rot on a seasonal beat and never leaves the tree line. Fire is the one thing that stops it knitting itself back together. The wood stopped living years ago. The animating force did not.
 - **Diet.** Source is silent unless named above.
 - **Social Structure.** Source is silent unless named above.
 
 ## Tactics
 
-**Tactic:** patrol the deep Rot like a dead tree that refuses to stay broken; drag roots through the line, slam anything that blocks the beat, and uproot the ground when surrounded. **Tell:** split bark knits visibly until fire blackens the seams.
+**Tactic:** patrol the deep Rot as a moving dead tree. The roots drag through the line. The corpsewood slams anything that blocks the beat and uproots the ground when surrounded. **Tell:** split bark knits visibly until fire blackens the wood along its breaks.

@@ -7,7 +7,7 @@ tags: [shattered-sea, aruhe, item]
 sources:
   - "house (user-supplied hazard capture; 2026-09-08)"
   - "/workspace/midchain-ingest/group-a/monsters/Snakewood.md"
-summary: A canopy vine colony that attacks movement from above, grapples travelers, and steadily increases acid damage until they escape.
+summary: A canopy vine colony attacks movers from above and grips travelers. Its acid damage increases while they remain caught.
 provenance:
   extracted: 0.98
   inferred: 0.02
@@ -43,7 +43,7 @@ relationships:
 
 - **Trigger.** A Small or larger creature moving beneath an active colony section triggers an instinctive attack from above.
 - **Notice.** A DC 14 Wisdom (Perception) or Wisdom (Survival) check spots stripped carcasses hanging in the canopy, unnatural coils among the branches, and vines slowly repositioning overhead.
-- **Ambush.** The target makes a DC 14 Dexterity saving throw. On a failure, it takes 1d6 bludgeoning damage, becomes Grappled, and is pulled up to 15 feet toward the canopy. On a success, the vine lashes past and recoils.
+- **Ambush.** The target makes a DC 14 Dexterity saving throw. On a failure, the vines deal 1d6 bludgeoning damage, Grapple the target, and pull it up to 15 feet toward the canopy. On a success, the vine lashes past and recoils.
 - **Consumption.** At the start of each Grappled creature's turn, feeding roots spread across exposed flesh and deal 2d6 acid damage. Each consecutive round it remains Grappled increases the damage by 1d6, to a maximum of 4d6.
 - **Escape.** As an Action, a Grappled creature can make a DC 14 Strength (Athletics) or Dexterity (Acrobatics) check to tear or slip free.
 - **Sever the Vine.** The grasping section has AC 13 and 15 HP and is immune to psychic damage. Destroying it releases the creature, which falls normally if suspended above the ground.

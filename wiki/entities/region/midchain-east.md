@@ -61,7 +61,7 @@ These are the oldest waters in the chain and the ones charts agree on least. Sta
 |---|---|
 | [[aruhe|Aruhe]] | Deserted inner-edge island near the Verdant Teeth; [[grung|Grung]] patrol the reefs but refuse to land. |
 | [[amberfall|Amberfall]] | Amber-mining island whose petrified specimens preserve small creatures mid-motion. Some swear they're still moving. |
-| [[coeur-brise|Coeur Brisé]] | Site of a centuries-old broken marriage pact between two feuding families, still technically unresolved. |
+| [[coeur-bris|Coeur Brisé]] | Site of a centuries-old broken marriage pact between two feuding families, still technically unresolved. |
 | [[torvalline|Torvalline]] | Shipbreaker's yard stripping wrecks for parts; half the Midchain's "used" rigging traces back here. |
 | [[lethys|Lethys]] | A colony of feral griffons, generations wild since a dead aristocrat's menagerie got loose. |
 | [[windrow|Windrow]] | Disputes, courtships, and trade deals settled by competitive kite-flying. |

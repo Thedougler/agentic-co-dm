@@ -35,13 +35,13 @@ Spent [[grung-authority-seal|Grung Authority Seals]] lie half-buried near old gr
 
 ### Layered order trail
 
-The oldest fragments repeat the existing inland reporting order. Later scraps record replacement parties after earlier groups stopped reporting. The newest readable layer directs a fresh party to identify and destroy two graves beneath a memorial tree. This is accepted Session 12 prep evidence, not table-witnessed history; it does not explain the [[memorial-grove|Death Bloom]], identify [[Hinewai]], or reveal the full reason the graves matter.
+The oldest fragments repeat the existing inland reporting order. Later scraps record replacement parties after earlier groups stopped reporting. The newest readable layer directs a fresh party to identify and destroy two graves beneath a memorial tree. Session 12 prep accepts this as evidence, not table-witnessed history. It does not explain the [[memorial-grove|Death Bloom]], identify [[Hinewai]], or reveal the full reason the graves matter.
 
-The seals are spent and no longer compel anyone. Their evidence still makes the Gold-caste objective visible: keep sending lower-caste Grung inland until someone reaches the graves. See [[two-grave-orders]] for the complete clue progression.
+The seals no longer compel anyone. Their evidence still makes the Gold-caste objective visible: keep sending lower-caste Grung inland until someone reaches the graves. See [[two-grave-orders]] for the complete clue progression.
 
 ## Connections
 
-- [[grasslands]] — Where spent seals and old Grung bones can be found.
-- [[grung-clans]] — The caste and sealing context behind the authority markings.
-- [[jean-claude-tabarnack]] — Can recognize the authority marks.
-- [[two-grave-orders]] — The layered history these physical clues support.
+- [[grasslands]]. Where spent seals and old Grung bones can be found.
+- [[grung-clans]]. The caste and sealing context behind the authority markings.
+- [[jean-claude-tabarnack]]. Can recognize the authority marks.
+- [[two-grave-orders]]. The layered history these physical clues support.

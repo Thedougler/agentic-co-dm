@@ -39,7 +39,7 @@ relationships:
 ## Overview
 
 > [!narration] Narration
-> The living blue-green of the [[verdant-scatter|Verdant Scatter]] ends along a line a person could walk. Beyond it the water is flat and current-less. No swell. A hull sits the way a hull sits in a dock.
+> The living blue-green of the [[verdant-scatter|Verdant Scatter]] ends along a line a person could walk. Beyond it the water is flat and current-less. A hull rests in the still water as if docked.
 >
 > Sixty feet of clear water over the western shelf of [[drowned-maw|Drowned Maw]]. Ruin-tops show as straight grey shadows forty feet down, walls that meet at angles the reef never makes. At eighty feet the [[Shelfworks]] workshops still stand with their floors intact. A bucket drawn from here comes up warm as bathwater and smells of dead fish and hot iron.
 
@@ -49,12 +49,12 @@ The richest reachable Antheri workshops lie inside water that grows hotter each 
 
 ## Pressure
 
-Water warms below forty feet, each returning pulse reaches closer to the surface, and salvage traffic keeps removing Antheri structure from the shelf. The workshop prize, the *Red Lady*, and the widening breach occupy the same water.
+Water warms below forty feet. Each returning pulse brings the vibration closer to the waterline, and salvage traffic keeps removing Antheri structure from the shelf. The workshop prize, the *Red Lady*, and the widening breach occupy the same water.
 
 ## Who
 
 - **Pearl of Souls:** gathers drowned souls and calls across the breach without pause.
-- **Auralis:** holds the planar boundary; failing containment reaches Perrin through heat and command.
+- **Auralis:** holds the planar boundary. Failing containment reaches Perrin through heat and command.
 - **Umberlee:** recovers her Pearl and the souls inside it.
 - **Sentinels of the Eyrie:** record the Maw without interpreting or entering it.
 
@@ -68,7 +68,7 @@ The upper Shelfworks flood, the gold rush ends, and the Pearl's signal draws a l
 
 East bearing. Lying compasses, warm water, [[shelfworks|the Shelfworks]].
 
-## 1 — Arrive
+## 1. Arrive
 
 ![[drowned-maws-open-shelf-narration-condition]]
 
@@ -79,7 +79,7 @@ East bearing. Lying compasses, warm water, [[shelfworks|the Shelfworks]].
 |---|---|---|---|
 | Survival | 14 | warm water | a heat line burned at eighty feet |
 | Survival | 15 | the compass lies | the shelf, not the chart, is true |
-| Perception | 13 | wrecks | lower workshops still reachable — [[shelfworks]] |
+| Perception | 13 | wrecks | lower workshops still reachable in [[shelfworks]] |
 
 ![[drowned-maws-open-shelf#Premise]]
 
@@ -87,7 +87,7 @@ East bearing. Lying compasses, warm water, [[shelfworks|the Shelfworks]].
 
 ![[moment-14-vestra-water#What Happens]]
 
-## 2 — What's live
+## 2. What's live
 
 ![[drowned-maws-open-shelf#Pressure]]
 
@@ -100,17 +100,17 @@ East bearing. Lying compasses, warm water, [[shelfworks|the Shelfworks]].
 |---|---|---|---|
 | Arcana | 15 | heat | [[auralis]]'s failing containment, not a vent |
 | Insight | 14 | a patron's order | [[perrin-black-jaw]] is being driven, not hired |
-| Investigation | 16 | salvage | the Pearl and the souls inside it — [[umberlee]] |
+| Investigation | 16 | salvage | [[umberlee]] claims the Pearl and the souls inside it |
 
 ![[moment-13-the-shelfworks-narration-open]]
 
 ![[moment-13-the-shelfworks#What Happens]]
 
-## 3 — If they dig
+## 3. If they dig
 
 ![[drowned-maws-open-shelf#Discoverable / Affectable]]
 
 ## Exit
 
-- they refuse the shelf or turn off → [[e09-run-guide-open-strait|The Open Strait]]
+- they refuse the shelf or turn off → [[central-strait-crossing|The Open Strait]]
 - they leave for another named port → that destination's run-guide

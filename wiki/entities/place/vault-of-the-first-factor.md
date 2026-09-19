@@ -5,7 +5,7 @@ aliases:
 category: entities
 tags: [shattered-sea, place]
 sources: ["Vault of the First Factor.md"]
-summary: "An uncharted limestone spire in the Midchain jungle, said to hold collateral that outlived the debtors who left it. The place is unconfirmed and unmapped."
+summary: "The source describes an uncharted limestone spire in the Midchain jungle and says debtors left collateral there. No chart confirms its location."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -28,7 +28,7 @@ region: "Midchain"
 > Pale limestone rises above jungle canopy, a spire whose water routes do not match public charts.
 
 ## At a Glance
-An uncharted limestone spire in the Midchain jungle, said to hold collateral that outlived the debtors who left it. The place is unconfirmed and unmapped.
+The source describes an uncharted limestone spire in the Midchain jungle and says debtors left collateral there. No chart confirms its location.
 
 ## Aspects
 `uncharted spire, compounded obligation, magical silence`
@@ -39,8 +39,8 @@ An uncharted limestone spire in the Midchain jungle, said to hold collateral tha
 - Stories of magical defences and credentials that matter more than weapons.
 
 ## Who is here
-- **Rumoured:** the [[tessarine-concordat]], its factors, and the First Factor's old collateral.
-- **Unconfirmed:** no sitting official confirms the vault exists; nobody without Tessarine credentials is said to have returned.
+- **Rumoured.** The [[tessarine-concordat]] and its factors may have left old collateral here, along with collateral gathered by the First Factor.
+- **Unconfirmed.** No sitting official confirms the vault exists. Nobody without Tessarine credentials is said to have returned.
 
 ## Connections
 - → [[Midchain]] · [[tessarine-concordat]] · [[calven-and-calveno]]
@@ -51,6 +51,6 @@ An uncharted limestone spire in the Midchain jungle, said to hold collateral tha
 - Decide whether a credential opens the vault or merely identifies the next debtor.
 
 ## Secrets
-The vault is the closest physical analogue to Cosimo's hoard in the source, but its existence, exact location, defences, and contents are not confirmed. Do not place it on a map until play earns that fact.
+The vault is the closest physical analogue to Cosimo's hoard in the source, but its existence, exact location, defences, and contents are not confirmed. Do not place it on a map until play establishes that fact.
 
-**Provenance:** Dump source staged at [[inbox/archive/FILED-2026-09-05-tessarine-concordat.md]]. Legacy read-only context: `/Users/nick/shattered-sea/wiki/shattered-sea/_archive/the-vault-of-the-first-factor.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/faction-tessarine-concordat.md`.
+**Provenance.** Dump source staged at `inbox/archive/FILED-2026-09-05-tessarine-concordat.md`. Legacy read-only context: `/Users/nick/shattered-sea/wiki/shattered-sea/_archive/the-vault-of-the-first-factor.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/faction-tessarine-concordat.md`.

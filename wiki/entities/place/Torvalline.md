@@ -3,7 +3,7 @@ title: "Torvalline"
 category: entities
 tags: [shattered-sea, place]
 sources: ["midchain-east.md"]
-summary: "Shipbreaker's yard stripping wrecks for parts; half the Midchain's "used" rigging traces back here"
+summary: "Shipbreaker's yard stripping wrecks for parts; half the Midchain's \"used\" rigging traces back here"
 provenance:
   extracted: 1.0
   inferred: 0.0

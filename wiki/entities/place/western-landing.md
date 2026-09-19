@@ -2,9 +2,9 @@
 title: Western Landing
 category: entities
 tags: [shattered-sea, aruhe, place]
-aliases: [Western Landing, Aruhe Beach, Aruhe - Beach]
+aliases: [Western Landing]
 sources: ["[[aruhe]]", "Aruhe - Beach.md"]
-summary: Aruhe's known sea approach: a reef gap, a short shingle beach, and a retreat that depends on tide and surf.
+summary: "Aruhe's known sea approach: a reef gap, a short shingle beach, and a retreat that depends on tide and surf."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -14,7 +14,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T00:00:00Z
-updated: 2026-09-13T06:41:34Z
+updated: 2026-09-19T00:00:00Z
 type: place
 reveal: unrevealed
 campaign: shattered-sea

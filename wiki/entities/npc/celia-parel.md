@@ -20,7 +20,7 @@ location: "[[aruhe]]"
 faction: none
 visibility: dm
 invention: true
-summary: "Calveno wreck survivor who preserves the names and orders of Aruhe's dead, even when the living want only a route home."
+summary: Calveno wreck survivor who preserves the names and orders of Aruhe's dead while survivors seek only a route home.
 ---
 # Celia Parel
 
@@ -75,7 +75,7 @@ Celia remains cooperative while the party studies, maps, or pays respect. If any
 | [[crissdalynn-khinriss]] | She trusts Crissdalynn to keep the [[fate-spinner]] visible while Celia handles evidence, but will not treat the Spinner as a reason to disturb the graves. |
 | [[jean-claude-tabarnack]] | She needs Jean-Claude's reading of Grung authority marks and gives him the choice to translate rather than assuming his heritage makes him responsible. |
 | [[perrin-black-jaw]] | She values Perrin's ability to inspect a collapsed pack without crossing the grave line and asks him for careful eyes, not obedience. |
-| [[oren-vask]] | Oren knows the route; Celia knows what the route has already cost. They disagree about when a record is complete. |
+| [[oren-vask]] | Oren knows the route. Celia knows what the route has already cost. They disagree about when a record is complete. |
 | [[two-grave-orders]] | Her scraps are one independent route to the layered orders that moved from reporting toward the two graves. |
 | [[grung-authority-seal]] | She can group the spent seals by order layer but cannot read every Gold-caste phrase without Jean-Claude. |
 | [[memorial-grove]] | She will approach the memorial only as a guest and refuses to make the graves part of a salvage plan. |

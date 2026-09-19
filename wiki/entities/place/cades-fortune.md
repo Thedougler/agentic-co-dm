@@ -5,7 +5,7 @@ aliases:
 category: entities
 tags: [shattered-sea, place]
 sources: ["midchain-west.md"]
-summary: "A dozen expeditions have surveyed this "treasure island;" each certain the map was almost right"
+summary: "A dozen expeditions have surveyed this \"treasure island\"; each thought the map was almost right"
 provenance:
   extracted: 1.0
   inferred: 0.0

@@ -4,7 +4,7 @@ category: entities
 tags: []
 sources: []
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-09-19
 type: lore
 lifecycle: proposed
 reveal: unrevealed
@@ -13,6 +13,7 @@ base_confidence: 0.55
 ---
 
 - [[entities/place/adwe|Adwe]]
+- [[entities/place/al-fondale|Al Fondale]]
 - [[entities/place/Amberfall|Amberfall]]
 - [[entities/place/aruhe-beach|Aruhe Beach]]
 - [[entities/place/aruhe-caves|Aruhe Caves]]
@@ -27,6 +28,7 @@ base_confidence: 0.55
 - [[entities/place/calders-tooth-and-port-tidefall|Calder's Tooth and Port Tidefall]]
 - [[entities/place/calders-verge|Calder's Verge]]
 - [[entities/place/calven-and-calveno|Calven and Calveno]]
+- [[entities/place/casa-lupo|Casa Lupo]]
 - [[entities/place/cambreys-fold|Cambrey's Fold]]
 - [[entities/place/Candlemere|Candlemere]]
 - [[entities/place/cape-solitude|Cape Solitude]]
@@ -58,7 +60,7 @@ base_confidence: 0.55
 - [[entities/place/fort-crestwall|Fort Crestwall]]
 - [[entities/place/Gallowmere|Gallowmere]]
 - [[entities/place/ghal-idrissa|Ghal Idrissa]]
-- [[entities/place/grasslands|Grasslands]]
+- [[entities/region/grasslands|Grasslands]]
 - [[entities/place/gullmoth-reach|Gullmoth Reach]]
 - [[entities/place/Halewick|Halewick]]
 - [[entities/place/Halythion|Halythion]]
@@ -82,7 +84,8 @@ base_confidence: 0.55
 - [[entities/place/low-lamp|Low Lamp]]
 - [[entities/place/Marenui|Marenui]]
 - [[entities/place/Marlstrand|Marlstrand]]
-- [[entities/place/Marrow|Marrow]]
+- [[entities/place/marrows|Marrow's]]
+- [[the-marrow|The Marrow]]
 - [[entities/place/memorial-grove|memorial-grove]]
 - [[entities/place/Mercatura|Mercatura]]
 - [[entities/place/Meth-Var|Meth-Var]]
@@ -128,9 +131,11 @@ base_confidence: 0.55
 - [[entities/place/sparhold-isle|Sparhold Isle]]
 - [[entities/place/spoke-ring|spoke-ring]]
 - [[entities/place/star-cut|star-cut]]
+- [[entities/place/studio-orsini|Studio Orsini]]
 - [[entities/place/Stillmere|Stillmere]]
 - [[entities/place/sump-cradle|Sump Cradle]]
 - [[entities/place/tessarine-trade-house|Tessarine Trade House]]
+- [[entities/place/tallow-row|Tallow Row]]
 - [[entities/place/the-anchorless|The Anchorless]]
 - [[entities/place/the-foundling-shoals|The Foundling Shoals]]
 - [[entities/place/the-gilded-cage|The Gilded Cage]]

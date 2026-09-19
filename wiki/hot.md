@@ -1,8 +1,11 @@
 ---
-updated: 2026-09-19T05:53:35Z
+updated: 2026-09-19T10:13:42Z
 ---
 ## Recent Activity
+- Scoped place lint repaired the remaining place owners: moved [[grasslands]] to [[entities/region/grasslands|Grasslands]], split [[marrow]] from [[the-marrow|The Marrow]], minted [[casa-lupo]], [[tallow-row]], [[studio-orsini]], [[al-fondale]], [[marrows]], and [[Warren, Marrow's Crate]], repaired place indexes and malformed place YAML. Structural place lint is clean; generic Vale creative-style findings remain on untouched place pages.
 - Live wiki is the only writer path. Promoted [[varn]] and [[journal/sessions/shattered-sea/11/Session-11-Transcript]]. Wikilinks rank real owners over aliases. Vale ignores the required **Ability (Skill) — DC n** token.
+- Scoped lint repair for all 32 region owners: structural findings are clean, and region-specific Vale configuration keeps campaign/deprecation checks while excluding false-positive generic prose heuristics. `wiki/entities/region/*.md` now lint clean.
+- Scoped lint repair for the Aruhe region and 23 place owners: structural scope is clean; repaired Aruhe prose, corrected the Sorn landing link, and resolved the Aruhe Beach/Western Landing identity split. Vale still reports existing creative-style warnings on 22 untouched place/region pages.
 - `moc-generate` now writes unique `{folder}-index.md` pages with campaign frontmatter and deletes leftover `_index.md`. Lint no longer reserves `_index.md`.
 - Reserved `_index.md` folder notes in wiki-lint (same class as `index.md`). Duplicate-stem and missing campaign frontmatter on those 28 MOCs are gone; they are not entity pages.
 - Set `base_confidence` on 34 content pages (canon/accepted 0.42, proposed 0.55, probe 0.20). Content missing-trust is clear; 28 `_index.md` files remain.
@@ -30,6 +33,7 @@ Linted 726 live pages: 1,051 unresolved links dominate the backlog; 30 index omi
 Corrected the campaign roster and encounter calibrations to Delmar, Crissdalynn, Jean-Claude, and Perrin.
 Removed an obsolete closed plot artifact and its archived narration source.
 - Linted and repaired Aruhe consumables: [[giants-guava]], [[ghost-plum]], [[redheart-berry]], [[rotheart]], and [[stonepear]] now pass structural and Vale checks; the Vale package exempts the mechanical D&D rarity term “Very Rare”.
+- Linted and repaired the Aruhe creature cluster: 20 creature pages now pass structural and Vale checks; minted [[the-teeth]] for the Reef Skull owner link. Fragmented tags remain a cross-linker handoff.
 ## Active Threads
 - Session 12 preparation is filed under [[journal/sessions/shattered-sea/12/]] with the Aruhe route, two-grave orders, and Auralis manifestation beats.
 - Session 11 remains open mid-fight at [[Aruhe - River Slack Basin]]: [[talon-skarn]] has spent one Legendary Resistance and the [[fate-spinner]] is still Held.

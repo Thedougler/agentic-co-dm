@@ -4,7 +4,7 @@ category: entities
 tags: [shattered-sea, aruhe, creature]
 sources:
   - "/workspace/midchain-ingest/group-a/monsters/Blackrail.md"
-summary: "CR 9 huge cave centipede that telegraphs with tremors, rushes main tubes, and pins prey with venomous segments."
+summary: "CR 9 huge cave centipede that telegraphs with tremors before rushing main tubes and pinning prey with venomous segments."
 provenance:
   extracted: 0.95
   inferred: 0.05
@@ -84,14 +84,14 @@ actions:
 ## Behavior
 
 - **Habitat.** Main cave tubes and the Great Bore under [[Aruhe]], especially [[lava-tubes]]. It cannot enter spaces narrower than 5 feet.
-- **Behavior.** It listens first: vibration, dust rings, then the leg-rattle. One adult owns miles of main tube. Juveniles mean the adult is elsewhere; adults eat unrelated young.
+- **Behavior.** It listens first: vibration, dust rings, then the leg-rattle. One adult controls miles of main tube. Juveniles mean the adult is elsewhere. Adults eat unrelated young.
 - **Diet.** [[cave-bats]] and fallen surface animals. Venom is meant for deer-sized prey.
-- **Social Structure.** Solitary adult ownership of tube roads; juveniles separate from the adult's beat.
+- **Social Structure.** Solitary adult ownership of tube roads. Juveniles separate from the adult's beat.
 
 ## Tactics
 
 - **Signs.** Rhythmic tremors about thirty seconds out, dust jumping in rings, leg-rattle around the bend.
-- **Instincts.** Hunt by stone contact and tremorsense; haul quiet prey somewhere still.
-- **Tactics.** Telegraph, then Tunnel Rush down the tube; Pin with body segments and venom; haul prey away.
-- **Weaknesses.** Side crawlways and alcoves; break contact with stone; silence; water; Ready actions before it rounds the bend; spaces under 5 feet.
+- **Instincts.** Hunt by stone contact and tremorsense. Haul quiet prey somewhere still.
+- **Tactics.** Telegraph, then use Tunnel Rush down the tube. Pin with body segments and venom. Haul prey away.
+- **Weaknesses.** Side crawlways and alcoves. Break contact with stone, use silence or water, and Ready actions before it rounds the bend. Spaces under 5 feet also work.
 - **Aftermath.** Quiet tube, dragged trail, and pinned carcasses carried off the main road.

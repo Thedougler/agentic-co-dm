@@ -79,11 +79,11 @@ actions:
 
 ## Behavior
 
-- **Habitat.** Single figs grow on game trails already squeezed through stone. The tree does not walk and does not need to. A trail bend, a low ceiling, or a harmless-looking root curtain is enough; leave at least one route that can be cleared or abandoned.
-- **Behavior.** Single strangler figs grow on game trails already squeezed through stone. Aerial roots hang in curtains and reach; the trunk is hollow, with old kills showing as bones in the bark. The tree does not walk and does not need to.
+- **Habitat.** Single figs grow on game trails already squeezed through stone. The tree remains rooted. A trail bend, a low ceiling, or a harmless-looking root curtain is enough. Leave at least one route that can be cleared or abandoned.
+- **Behavior.** Single strangler figs grow on game trails already squeezed through stone. Aerial roots hang in curtains and reach toward the trail. The trunk is hollow, with old kills showing as bones in the bark. The tree remains rooted.
 - **Diet.** Source is silent unless named above.
 - **Social Structure.** Source is silent unless named above.
 
 ## Tactics
 
-**Tactic:** let a trail pinch itself → aerial roots reach from the curtain → one victim disappears into the hollow trunk. **Tell:** curtains of roots hang across a game trail already squeezed through stone; old bones show in the bark.
+**Tactic:** let a trail pinch itself. Aerial roots reach from the curtain, and one victim disappears into the hollow trunk. **Tell:** curtains of roots hang across a game trail already squeezed through stone. Old bones show in the bark.

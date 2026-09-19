@@ -20,7 +20,7 @@ location: "[[aruhe]]"
 faction: none
 visibility: dm
 invention: true
-summary: "Calveno wreck deckhand who has learned a rule-bound route toward the memorial and wants every survivor to return by it."
+summary: Calveno wreck deckhand who has learned a rule-bound route toward the memorial and seeks a way for every survivor to return by it.
 ---
 # Oren Vask
 
@@ -72,9 +72,9 @@ Oren guides patiently while the party watches for fallen food, avoids living cla
 | Connection | Meaning |
 | ---------- | ------- |
 | [[delmar-fisk]] | Oren asks Delmar to keep the group together when the route narrows and the grass becomes a moral boundary rather than a physical one. |
-| [[crissdalynn-khinriss]] | He wants Crissdalynn to choose whether carrying the [[fate-spinner]] is worth making the party a visible target. |
+| [[crissdalynn-khinriss]] | He asks Crissdalynn whether carrying the [[fate-spinner]] will make the party a visible target. |
 | [[jean-claude-tabarnack]] | Jean-Claude's presence makes Oren wary because the old orders came through Grung authority, but Oren offers him the same route and rules as everyone else. |
 | [[perrin-black-jaw]] | Oren keeps Perrin close to Crissdalynn during the approach because Perrin can notice a nearby invisible intruder that the others cannot. |
-| [[celia-parel]] | Celia wants the dead accounted for; Oren wants the living moving. Their argument makes the choice visible without making either one foolish. |
+| [[celia-parel]] | Celia wants the dead accounted for. Oren wants the living moving. Their argument makes the choice visible without making either one foolish. |
 | [[taking-on-aruhe]] | Oren has survived by treating fallen food as available and living things as claims that demand a cost. |
 | [[memorial-grove]] | He knows a rule-bound approach that reaches the Grove without making the party's first contact with [[Hinewai]] an act of trespass. |

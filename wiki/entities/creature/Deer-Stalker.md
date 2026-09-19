@@ -5,7 +5,7 @@ tags: [shattered-sea, aruhe, creature]
 sources:
   - "campaign-os:deer-stalkers.md"
   - "house (wiki creature.deer-stalker, upgraded)"
-summary: CR 8 solitary Aruhe ambusher that isolates prey, drags it from the group, and retreats when allies close in.
+summary: CR 8 solitary Aruhe ambusher that isolates prey and drags it from the group before retreating when allies close in.
 provenance:
   extracted: 0.98
   inferred: 0.02
@@ -34,7 +34,7 @@ relationships:
 # Deer-Stalker
 
 > [!narration] Narration
-> The Deer-Stalker stands roughly eight feet tall on long, cloven-hoofed hind legs, its shaggy brown coat broken by pale patches across the shoulders and back. A long white deer face and broad branching antlers rise above its front-heavy body, while overlong forelimbs hang past its knees and end in black, fingered claws stained dark with blood. Pale eyes stay fixed over a wet black muzzle, where blood and spit thread from its teeth into the leaf rot.
+> The Deer-Stalker stands roughly eight feet tall on long, cloven-hoofed hind legs, its shaggy brown coat broken by pale patches across the shoulders and back. A long white deer face and broad branching antlers rise above its front-heavy body, while overlong forelimbs hang past its knees and end in black, fingered claws stained dark with blood. Pale eyes remain fixed over a wet black muzzle, where blood and spit thread from its teeth into the leaf rot.
 
 ## Statblock
 ![[attachments/shattered-sea/creatures/deer-stalker-of-aruhe-token.png|Deer-Stalker of Aruhe Foundry VTT token]]
@@ -88,17 +88,17 @@ The supplied character reference sheet establishes the Deer-Stalker at roughly e
 ## Behavior
 
 - **Habitat.** Deer-Stalkers keep to the dim edges of [[the-quiet|the Quiet]] and [[the-marshes|the Marshes]], using game trails, wet paths, root shadows, and grassland margins where a sick deer shape can stand half-hidden. They avoid [[razer-grass]].
-- **Behavior.** A Deer-Stalker stands over a carcass like a sick deer. If disturbed, it crashes away too loudly, circles back through the dim, and repeats a voice it heard until one person follows.
+- **Behavior.** A Deer-Stalker stands over a carcass like a sick deer. If disturbed, it crashes away too loudly. It circles back through the dim and repeats a voice it heard until one person follows.
 - **Diet.** It eats fresh kills and interrupted carcasses, tearing soft meat first and leaving sweet rot around the site. Its hunger is animal and territorial, not a separate controlling force.
 - **Social Structure.** It is solitary. Two Deer-Stalkers ignore one another, and neither contests a [[bear-elk|Bear-Elk]] or [[terror-bird|terror-bird]].
 
 ## Tactics
 
 - **Signs.** Deer tracks become handlike claw marks, with blood on low leaves, dragged carcasses, torn bark at shoulder height, long pauses in ordinary forest sound, sweet rot, and a familiar voice repeated wetly from the wrong place.
-- **Instincts.** It wants the one person who answers a sound or touches its meal alone. It does not use the voice to control anyone; it uses the sound to make separation feel safe.
+- **Instincts.** It wants the one person who answers a sound or touches its meal alone. It does not use the voice to control anyone. It uses the sound to make separation feel safe.
 - **Tactics.** It opens with Multiattack against the isolated target while Assassinate applies. It uses Lunge and Drag to cross the gap and carry that target away, or Cunning Action to reposition. When two or more enemies close, it uses Break Contact and resets the hunt.
 - **Weaknesses.** Keep allies within 10 feet, force it into bright or open ground, and refuse to follow a voice without the group. It will not walk through [[razer-grass]].
-- **Aftermath.** An encounter leaves an interrupted kill site, blood threads on leaves and roots, clawed drag marks, hoofprints that stop making sense, and a lingering stink of sweet rot. There is usually nothing worth keeping.
+- **Aftermath.** An encounter leaves an interrupted kill site, blood threads on leaves and roots, clawed drag marks, hoofprints that stop making sense, and a lingering stink of sweet rot. Nothing useful remains at the site.
 
 ## Art
 ![[attachments/shattered-sea/creatures/deer-stalker-of-aruhe-01.jpg|Deer-Stalker of Aruhe]]

@@ -6,7 +6,7 @@ category: entities
 tags: [shattered-sea, aruhe, creature]
 sources:
   - "house (wiki creature.aruhe-river-otter; living-stock 2026-09-05; individual chassis provisional)"
-summary: CR 4 controller that shifts from playful gear-tugging to coordinated underwater grapples; pale chest marks identify family members.
+summary: CR 4 controller that shifts from playful gear-tugging to coordinated underwater holds. Pale chest marks identify family members.
 provenance:
   extracted: 0.97
   inferred: 0.03
@@ -35,7 +35,7 @@ relationships:
 # Aruhe - River Otter
 
 > [!narration] Narration
-> Twelve-foot chocolate-black river otters work the Long Reach and clear lake in blood-kin families, their pale throat marks as distinct as fingerprints. They roll through the shallows with rope, oars, ankles, or a dead Deer-Stalker's head as if every loose thing in the water has joined their game. The water stays glass-clear around them, and the whole family goes still when play becomes a hunt.
+> Twelve-foot chocolate-black river otters work the river and clear lake in blood-kin families, their pale throat marks as distinct as fingerprints. They roll through the shallows with rope, oars, ankles, or a dead Deer-Stalker's head as if every loose thing in the water has joined their game. Clear water surrounds them, and the whole family goes still when play becomes a hunt.
 
 ## Statblock
 ![[attachments/shattered-sea/creatures/aruhe-river-otter-token.png|Aruhe River Otter Foundry VTT token]]
@@ -84,18 +84,17 @@ Aruhe River Otters are twelve-foot, stocky, wet-furred animals with dark chocola
 
 ## Behavior
 
-- **Habitat.** Families hold [[the-river|the Long Reach]] and [[clear-lake|the clear lake]], especially open cuts where bank, shallows, and deep water let them watch both land and current.
-- **Behavior.** They play first. Rope, oars, ankles, trailing packs, and a [[Deer-Stalker|Deer-Stalker's]] antlered head can become tug toys in the shallows. Entering the water is treated as joining the game; responding to play teaches the family a new game.
-- **Diet.** They eat river animals, bank grazers, careless predators, and Deer-Stalkers they kill for sport as much as food. They avoid hauling kills onto [[razer-grass|razer-grass]].
-- **Social Structure.** Families hold four to six adults plus pups. Play is blood kin only; harming an adult, touching a pup, or overstaying in claimed water shifts the whole family from game to military silence.
+- **Habitat.** Families hold [[the-river|the river]] and [[clear-lake|the clear lake]], especially open cuts where bank, shallows, and deep water let them watch both land and current.
+- **Behavior.** They play first. Rope, oars, ankles, trailing packs, and a [[Deer-Stalker|Deer-Stalker's]] antlered head can become tug toys in the shallows. The family treats an entry into the water as joining the game. Responding to play gives the family a new game.
+- **Diet.** They eat river animals and bank grazers. They also take careless predators and Deer-Stalkers for sport as much as food. They avoid hauling kills onto [[razer-grass|razer-grass]].
+- **Social Structure.** Families hold four to six adults plus pups. Play is blood kin only. Harm to an adult or contact with a pup shifts the whole family from game to military silence. Overstaying in claimed water has the same result.
 
 ## Tactics
 
-- **Signs.** Glass-clear water, polished slides in mud, pale throat flashes below the surface, ropes drawn tight from under a boat, oars tugged from hands, and a recently killed Deer-Stalker head bobbing where no current should hold it.
-- **Instincts.** The family watches first, steals gear second, tests reactions third, dunks and releases fourth, and fully hunts only once the line is crossed. What comes from the river belongs to the family.
-- **Tactics.** In play mode, one family uses a shared initiative and avoids damage. In hunt mode, adults coordinate Watery Ambush, grapples, and Dunk to split one target from the group while the others see only wakes.
-- **Weaknesses.** They dominate occupied water but are less willing to fight on dry land or any haul-out that traps their bodies away from the current. Fire, ropes, and repeated tricks are remembered by the family, letting a clever party bait, redirect, or avoid them.
-- **Aftermath.** An encounter leaves scrubbed banks, disturbed mud slides, missing gear, chewed rope, drowned carcass scraps, and briefly cloudy water. Against [[crown-squid|crown squid]], the otters form an ecological boundary: a grabber trailing into occupied water can meet six enormous bodies pulling the other direction.
+- **Signs.** Glass-clear water, polished slides in mud, pale throat flashes below the waterline, and ropes drawn tight from under a boat. Oars tugged from hands and a recently killed Deer-Stalker head can bob where no current should hold them.
+- **Instincts.** The family watches first, then steals gear. It tests reactions before dunking and releasing a trespasser. It commits fully only after a trespasser crosses the line. What comes from the river belongs to the family.
+- **Tactics.** In play mode, the family shares initiative and avoids damage. In hunt mode, adults use Watery Ambush and Dunk to split one target from the group. The adults apply the Grappled condition while the others show only wakes.
+- **Weaknesses.** They dominate occupied water but are less willing to fight on dry land or any haul-out that traps their bodies away from the current. The family remembers fire, ropes, and repeated tricks. A clever party can bait, redirect, or avoid them.
 
 ## Art
 ![[attachments/shattered-sea/creatures/aruhe-river-otter-reference-sheet.jpg|Aruhe River Otter character reference sheet]]

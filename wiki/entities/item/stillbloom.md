@@ -6,7 +6,7 @@ category: entities
 tags: [shattered-sea, aruhe, item]
 sources:
   - "wiki/_raw/Aruhe - Stillbloom.md"
-summary: A vibration-triggered Aruhe plant that fires venomous spines at fast-moving grounded creatures and rewards careful passage.
+summary: A vibration-triggered Aruhe plant that launches venomous spines at fast-moving grounded creatures and rewards careful passage.
 provenance:
   extracted: 0.97
   inferred: 0.03
@@ -29,7 +29,7 @@ kind: flora hazard
 ![[attachments/shattered-sea/hazards/aruhe-stillbloom.jpg|Stillbloom of Aruhe]]
 
 > [!narration] Narration
-> A patch of dull waxy stalks rises from the ground where the green leaves first blacken at the edges. Each plant stands about four feet high, with pale hollow bracts cupped around a crown of long dark needles. Some older stalks lift a single enormous cream-white flower above the smaller spearheads, faintly green at the center. Around the patch, punctured carcasses and narrow scavenger trails mark the shallow root mat, while the plants themselves stand still among the slow-moving feeders.
+> A patch of dull waxy stalks rises from the ground where the green leaves first blacken at the edges. Each plant stands about four feet high, with pale hollow bracts cupped around a crown of long dark needles. Some older stalks lift an enormous cream-white flower above the smaller spearheads, faintly green at the center. Around the patch, punctured carcasses and narrow scavenger trails mark the shallow root mat, while the plants themselves stand still among the slow-moving feeders.
 
 ## Hazard
 
@@ -41,7 +41,7 @@ kind: flora hazard
 - **Reload.** After firing, a stalk cannot fire again for 1 minute. Its pressure sacs visibly swell during this window.
 - **Cover.** Half Cover and Three-Quarters Cover grant their usual bonuses to the Dexterity save. Total Cover blocks the volley.
 - **Venom.** The first embedded hit requires a DC 12 Constitution saving throw. Each additional Exposure increases that save DC by 1. On a success, local numbness lasts 10 minutes after the last exposure: a struck arm cannot use that hand for somatic components or two-handed use, and a struck leg reduces Speed by 10 feet and prevents Dashing. If both legs are struck, Speed becomes 5 feet.
-- **Paralytic Spread.** On a failed venom save, advance one step: Local leaves the affected limb numb; Systemic applies the Poisoned condition; Motor Failure applies Poisoned and Restrained; Paralysis applies Paralyzed.
+- **Paralytic Spread.** On a failed venom save, advance one step. Local leaves the affected limb numb. Systemic applies the Poisoned condition. Motor Failure applies Poisoned and Restrained. Paralysis applies Paralyzed.
 - **Recovery.** At the end of each turn at Motor Failure or Paralysis, repeat the current Constitution save. On a success, reduce the spread by 1. After 1 minute without another hit, reduce the spread by 1 more. After 10 minutes, Exposure becomes 0 and local numbness ends. Effects that clear poison also clear the venom. Poison Immunity blocks the venom but not the piercing damage.
 - **Careful Passage.** Move no more than 10 feet per turn, fly without touching the root mat, spread out, or wait through the reload window after triggering the volley with a thrown object or *mage hand*.
-- **Counterplay.** Use cover, stay outside the trigger range, draw fire with an object, apply poison-clearing effects, or weaponize the patch against pursuers. Stillbloom grows along quiet-to-Rot transition trails and sunbreaks rather than in open valleys.
+- **Counterplay.** Use cover, stay outside the trigger range, lure the volley with an object, apply poison-clearing effects, or weaponize the patch against pursuers. Stillbloom grows along quiet-to-Rot transition trails and sunbreaks rather than in open valleys.

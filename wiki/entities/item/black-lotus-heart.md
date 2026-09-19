@@ -25,4 +25,4 @@ region: aruhe
 ---
 # Black Lotus Heart
 
-A Black Lotus Heart is the dense knot of crystallized magical sap found beneath a mature flower's petals. A harvester can recover one after the lotus is rendered unable to close.
+A Black Lotus Heart forms as a dense knot of crystallized magical sap beneath a mature flower's petals. A harvester can recover one after the lotus can no longer close.

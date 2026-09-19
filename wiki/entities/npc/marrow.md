@@ -1,9 +1,9 @@
 ---
 title: "Marrow"
 category: entities
-tags: [shattered-sea, place]
+tags: [shattered-sea, npc]
 sources: ["calders-tooth.md"]
-summary: "Foggy north-south interior ridge of Calder's Tooth, porous with sinkholes and collapsed caves."
+summary: "Rattkin cargo broker and document transporter operating from an alcove in the Warren."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -13,21 +13,19 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T20:45:00Z
-updated: 2026-09-13
-type: place
+updated: 2026-09-19
+type: npc
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-kind: site
-region: "Calder's Tooth"
-aliases: ["The Marrow"]
+role: cargo broker
+location: "[[Warren]]"
 relationships:
-  - target: "[[calders-tooth-and-port-tidefall]]"
+  - target: "[[Warren]]"
     type: related_to
-  - target: "[[overland-track]]"
+  - target: "[[serin-haut]]"
     type: related_to
 ---
-
 # Marrow
 
 ![[marrow-banner]]

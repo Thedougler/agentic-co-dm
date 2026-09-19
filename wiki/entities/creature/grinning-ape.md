@@ -82,12 +82,12 @@ actions:
 - **Habitat.** [[old-gardens]] terraces. Groups of three to five.
 - **Behavior.** Silent canopy sitters; stones first, then a group drop.
 - **Diet.** Whatever moved below the terrace canopy.
-- **Social Structure.** Groups of three to five; no grooming or calls.
+- **Social Structure.** Groups of three to five. No grooming or calls.
 
 ## Tactics
 
-- **Signs.** Rictus grins that never change; no calls; stones from above.
+- **Signs.** Rictus grins never change. Stones fall from above without a warning call.
 - **Instincts.** Ambush from canopy as a group.
-- **Tactics.** Rock from canopy, then drop together; Pack Ambush on creatures that have not acted.
+- **Tactics.** Rock from canopy, then drop together. Use Pack Ambush on creatures that have not acted.
 - **Weaknesses.** Source is silent beyond ordinary combat answers.
 - **Aftermath.** Disturbed terrace canopy and scattered stones.

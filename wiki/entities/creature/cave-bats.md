@@ -6,7 +6,7 @@ category: entities
 tags: [shattered-sea, aruhe, creature]
 sources:
   - "/workspace/midchain-ingest/group-a/monsters/Cave Bats.md"
-summary: "Three- to four-foot-winged cave bats that leave skylights at dusk; guano feeds the caves and mass flight warns of Blackrail country."
+summary: "Three- to four-foot-winged cave bats that leave skylights at dusk. Guano feeds the caves, and mass flight warns of Blackrail country."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -37,19 +37,19 @@ relationships:
 
 ## Statblock
 
-Source is silent on a finished combat sheet. Run as ecology and warning until a accepted sheet lands.
+Source is silent on a finished combat sheet. Run as ecology and warning until an accepted sheet arrives.
 
 ## Behavior
 
 - **Habitat.** Skylights, wells, and [[lava-tubes]].
-- **Behavior.** Leave at dusk; feed over the canopy; mass flight is a warning.
-- **Diet.** Canopy feeding; their guano is what the cave eats.
+- **Behavior.** Leave at dusk. Feed over the canopy. Mass flight is a warning.
+- **Diet.** Canopy feeding. Their guano is what the cave eats.
 - **Social Structure.** Colony.
 
 ## Tactics
 
-- **Signs.** Guano; dusk exits; sudden whole-colony flight.
-- **Instincts.** Feed outside; flee inward danger by emptying the roost.
+- **Signs.** Guano, dusk exits, and sudden whole-colony flight.
+- **Instincts.** Feed outside. Flee inward danger by emptying the roost.
 - **Tactics.** Swarm out, feed, return. Not a primary combat encounter in this source.
 - **Weaknesses.** Source is silent.
-- **Aftermath.** Empty roost and disturbed guano when something deeper moved — often [[Blackrail]] country.
+- **Aftermath.** Empty roost and disturbed guano when something deeper moved, often [[Blackrail]] country.

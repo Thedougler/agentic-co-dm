@@ -7,7 +7,7 @@ tags: [shattered-sea, aruhe, creature]
 sources:
   - "campaign-os:silence-moths.md"
   - "/workspace/midchain-ingest/group-a/monsters/Silence Moths.md"
-summary: "CR 8 silent moth swarm that muffles sound and fills mouths; fire drives it off the trees."
+summary: "CR 8 silent moth swarm that muffles sound and fills mouths. Fire drives it off the trees."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -74,15 +74,15 @@ actions:
 
 ## Behavior
 
-- **Habitat.** Rot and Grove approaches at dusk and dawn. Fire drives them off; they will not leave the trees.
+- **Habitat.** Rot and Grove approaches at dusk and dawn. Fire drives them off. They will not leave the trees.
 - **Behavior.** Cloud advances with silence ahead, then fills mouths.
 - **Diet.** Source is silent beyond smothering living prey in the swarm.
 - **Social Structure.** Swarm.
 
 ## Tactics
 
-- **Signs.** Jungle goes quiet; sail-sized colorless cloud.
-- **Instincts.** Fill a mouth; stay among trees.
-- **Tactics.** Advance under Silence Aura; Engulf creatures in the swarm's space; Suffocating Cloud on those who start turns inside.
-- **Weaknesses.** Fire drives them off; they will not follow anyone out of the trees.
+- **Signs.** Jungle sound cuts out. A sail-sized colorless cloud follows.
+- **Instincts.** Fill a mouth. Keep to the trees.
+- **Tactics.** Advance under Silence Aura. Engulf creatures in the swarm's space. Use Suffocating Cloud on those that start turns inside.
+- **Weaknesses.** Fire drives them off. They will not follow anyone out of the trees.
 - **Aftermath.** Quiet resumes as the cloud breaks or burns away.

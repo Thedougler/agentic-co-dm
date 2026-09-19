@@ -32,7 +32,7 @@ relationships:
 # Young Bloodhawk
 
 > [!narration] Narration
-> Charcoal juveniles trail the adult in a loose file — four wings, a torn red crest, and talons oversized for a still-thin frame. They stay mute. Each stoops only long enough to shove a flushed body down, then claws back into the adult's lane.
+> Charcoal juveniles trail the adult in a loose file. Four wings, a torn red crest, and oversize talons mark a still-thin frame. They make no calls. Each stoops only long enough to shove a flushed body down, then claws back into the adult's lane.
 
 ## Statblock
 ![[young-bloodhawk-of-aruhe-flight.jpg|Young Bloodhawk over Aruhe]]
@@ -74,17 +74,17 @@ actions:
 
 ## Behavior
 
-- **Habitat.** Open sky over [[aruhe]] / [[hungry-isle]]: lake bowls, reef gaps, river cuts, canopy breaks, sunlit grass rims. Will not chase under closed canopy or into eight-foot grass.
-- **Behavior.** Holds station behind an adult [[bloodhawk]]. When the adult tears prey from cover, the juvenile drops on whatever is left in the open.
-- **Diet.** Flushed fish, birds, and small land animals first; follows the adult rather than fighting over a big kill.
-- **Social Structure.** Stays in the adult line until it can own a sky lane. Several may chase one flush, each peeling toward a different exposed body — not a coordinated pack.
+- **Habitat.** Open sky over [[aruhe]] / [[hungry-isle]]. It favors open water bowls, reef gaps, river cuts, canopy breaks, and sunlit grass rims. It will not chase under closed canopy or into eight-foot grass.
+- **Behavior.** It holds station behind an adult [[bloodhawk]]. When the adult tears prey from cover, the juvenile drops on whatever is left in the open.
+- **Diet.** Flushed fish, birds, and small land animals first. It follows the adult rather than fighting over a big kill.
+- **Social Structure.** It stays in the adult line until it can own a sky lane. Several may chase one flush, each peeling toward a different exposed body. They do not form a coordinated pack.
 
 ## Tactics
 
-- **Signs.** Extra wing-shadows behind a larger bird; small crimson feathers in canopy; narrow talon cuts beside adult strikes.
-- **Instincts.** Keys on already-flushed bodies, noise, and flyers closing on the adult or other young. Breaks off when prey vanishes into canopy, tall grass, or moving water.
-- **Tactics.** Mirror the adult Terminal Stoop, then Flush Dive anything still airborne or just driven out. Multiattack only when cover is gone; Flyby to exit reach and reset. Leaves when the adult leaves.
-- **Weaknesses.** Support pressure, not a peer fight. Drop under the dive line, break line of sight with canopy or grass, or force a landing — Flush Dive dies. Grounded, it is slow and open.
+- **Signs.** Extra wing-shadows behind a larger bird, small crimson feathers in canopy, and narrow talon cuts beside adult strikes.
+- **Instincts.** It keys on already-flushed bodies, noise, and flyers closing on the adult or other young. It breaks off when prey vanishes into canopy, tall grass, or moving water.
+- **Tactics.** Mirror the adult Terminal Stoop, then use Flush Dive on anything still airborne or just driven out. Multiattack only when cover is gone. Use Flyby to exit reach and reset. Leave when the adult leaves.
+- **Weaknesses.** Support pressure, not a peer fight. Drop under the dive line, break line of sight with canopy or grass, or force a landing. A forced landing ends Flush Dive. Grounded, it is slow and open.
 - **Aftermath.** Small crimson feathers, paired gouges in stone or bark, a short fall scar into bruised grass, split fruit, or a Prone body under the adult's shadow.
 
 ## Art

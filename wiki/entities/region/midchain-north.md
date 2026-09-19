@@ -102,7 +102,7 @@ Passage runs on consent. A village that does not know a hull lets it through onc
 
 A ship that cannot reverse risks the narrow channels, and reefs close the sheltered side at low water. Lookouts report before they challenge.
 
-[[grung-npc|Grung]] raiders come up from the south in the dark. Light finds the channel empty again. Crown cutters work the northern edge and board any hull that leaves the strip. The real hazard sits in the middle, where both threats meet and the channels run narrowest.
+[[Grung]] raiders come up from the south in the dark. Light finds the channel empty again. Crown cutters work the northern edge and board any hull that leaves the strip. The real hazard sits in the middle, where both threats meet and the channels run narrowest.
 
 ## Hooks
 

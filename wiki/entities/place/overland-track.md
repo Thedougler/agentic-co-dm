@@ -25,7 +25,7 @@ region: "Calder's Tooth"
 relationships:
   - target: "[[calders-tooth-and-port-tidefall]]"
     type: related_to
-  - target: "[[Marrow]]"
+  - target: "[[the-marrow]]"
     type: related_to
 ---
 # Overland Track
@@ -37,6 +37,6 @@ relationships:
 
 ## At a Glance
 
-The [[overland-track]] is the muddy southern road over the [[Marrow]] on [[calders-tooth-and-port-tidefall]]. It is the overland way between the west-cliff port and [[south-harbour]]. Giant axe beaks pace wagons on the track.
+The [[overland-track]] is the muddy southern road over the [[the-marrow|Marrow]] on [[calders-tooth-and-port-tidefall]]. It is the overland way between the west-cliff port and [[south-harbour]]. Giant axe beaks pace wagons on the track.
 
 The Crown collects tolls at both ends and counts bodies, cargo, and coin. The crossing takes a day and a half on foot or by mount in good weather. Corduroy logs bridge the worst mud. Drainage culverts shelter giant wolf spiders. [[the-passage]] runs a hidden dry-route through limestone caves beneath the road. North of the track lies [[high-line]].
