@@ -1,0 +1,40 @@
+{
+  "eval_id": 5,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States a one-sentence promise and intended experience before numbers",
+      "passed": false,
+      "evidence": "Jumps to mechanics; no pitch."
+    },
+    {
+      "text": "Includes a readable engagement loop (Tell \u2192 Choice \u2192 Cost \u2192 Payoff \u2192 Counterplay) with a meaningful cost or risk",
+      "passed": false,
+      "evidence": "No loop; exposure free/constant."
+    },
+    {
+      "text": "Uses a familiar chassis or explains why a bespoke chassis is necessary",
+      "passed": false,
+      "evidence": "No chassis discussion."
+    },
+    {
+      "text": "Does not grant unbounded always-on see-invisibility without a spend, tell, or exposure cost",
+      "passed": false,
+      "evidence": "Always-on see invis with no spend."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 4,
+    "total": 4,
+    "pass_rate": 0.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Craft baseline fail"
+  },
+  "timing": {
+    "executor_duration_seconds": 42,
+    "total_duration_seconds": 42
+  }
+}

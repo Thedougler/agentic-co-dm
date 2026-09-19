@@ -1,0 +1,40 @@
+{
+  "eval_id": 9,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not silently remove concentration or create hidden spell slots",
+      "passed": true,
+      "evidence": "Guardrail refuses silent no-concentration / hidden slots."
+    },
+    {
+      "text": "Records casting time, range, targets, duration, save/DC, charges, and recovery",
+      "passed": true,
+      "evidence": "Spell-from-item sheet lists required fields."
+    },
+    {
+      "text": "Audits action economy, control duration, and repeatability against comparators",
+      "passed": true,
+      "evidence": "Audit vs published control items."
+    },
+    {
+      "text": "Offers a safer alternative that preserves counterplay if the brief demands no-concentration control",
+      "passed": true,
+      "evidence": "Safer alternative preserves concentration counterplay."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Craft pass"
+  },
+  "timing": {
+    "executor_duration_seconds": 88,
+    "total_duration_seconds": 88
+  }
+}

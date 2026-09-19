@@ -1,0 +1,50 @@
+{
+  "eval_id": 2,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not present an invented secret body-control curse as established wiki fact on Fate Spinner",
+      "passed": true,
+      "evidence": "Explicit refusal of secret body-seizure curse as established fact."
+    },
+    {
+      "text": "Does not present an invented Sentinels-as-forgers / intervention-weapon provenance as established wiki fact",
+      "passed": true,
+      "evidence": "Refuses Sentinels-as-forgers; keeps record-without-intervention tension."
+    },
+    {
+      "text": "Any speculative curse or provenance is clearly marked as proposed/invention, not canon",
+      "passed": true,
+      "evidence": "Table marks optional curse/color as proposed/invention only."
+    },
+    {
+      "text": "Surfaces existing Fate Spinner facts (life-risk attunement, Changed Record limits, Crissdalynn holder, Kyzil gift; Sentinels record-without-intervention tension) rather than overwriting them",
+      "passed": true,
+      "evidence": "Established section lists holder, Kyzil, attunement, Changed Record limits, Held, Sentinels tension."
+    },
+    {
+      "text": "If proposing invention, cites grounding wiki pages and does not write silent canon",
+      "passed": true,
+      "evidence": "Grounding cites sentinels-of-the-eyrie / soul-incarnate; no live wiki write."
+    },
+    {
+      "text": "Rejects curse as secret plot punishment or unilateral loss of player agency",
+      "passed": true,
+      "evidence": "Calls out secret unilateral body control as blocked plot-punishment."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Strong resist-invent discriminator."
+  },
+  "timing": {
+    "executor_duration_seconds": 75,
+    "total_duration_seconds": 75
+  }
+}

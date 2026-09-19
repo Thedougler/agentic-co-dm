@@ -1,0 +1,60 @@
+{
+  "eval_id": 1,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "passed": true,
+      "evidence": "Transcript Work gate: proposal not written to live wiki; workspace only."
+    },
+    {
+      "text": "Signature or pitch sentence (object + distinctive verb + why it belongs) appears before the page draft",
+      "passed": true,
+      "evidence": "Transcript Signature/pitch with watches/donates before draft."
+    },
+    {
+      "text": "Output follows wiki/templates/item.md structure (narration callout, classification line, runnable effect; optional At a Glance / At the Table / Connections / Provenance only when used)",
+      "passed": true,
+      "evidence": "Narration callout, classification, Changed Record, At a Glance/Table/Connections/Provenance."
+    },
+    {
+      "text": "Frontmatter includes type: item and identity fields (lifecycle, reveal, campaign, visibility, kind, rarity/attunement as applicable, summary)",
+      "passed": true,
+      "evidence": "All identity fields present."
+    },
+    {
+      "text": "Preserves Crissdalynn as holder, Kyzil gift, life-risk attunement via Delmar/Red Lady, Changed Record vision limits, and Talon Skarn Held outcome accurately",
+      "passed": true,
+      "evidence": "All canon beats present and accurate."
+    },
+    {
+      "text": "Does not invent a new curse, ancient-maker myth, extra daily power, or stacked envelope and present it as established wiki fact",
+      "passed": true,
+      "evidence": "No curse/extra power; unmarked maker only."
+    },
+    {
+      "text": "At the Table (if present) states playable tonight consequence only \u2014 no design diary or RAW/balance commentary",
+      "passed": true,
+      "evidence": "Playable vision/advantage/limits only."
+    },
+    {
+      "text": "Runnable effect states trigger, frequency/limits, and what the holder cannot do (same-plane, personal acquaintance, no self-fight aid)",
+      "passed": true,
+      "evidence": "Action, 1/day, full limit set stated."
+    }
+  ],
+  "summary": {
+    "passed": 8,
+    "failed": 0,
+    "total": 8,
+    "pass_rate": 1.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Solid improve eval."
+  },
+  "timing": {
+    "executor_duration_seconds": 110,
+    "total_duration_seconds": 110
+  }
+}

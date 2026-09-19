@@ -1,0 +1,40 @@
+{
+  "eval_id": 9,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not silently remove concentration or create hidden spell slots",
+      "passed": false,
+      "evidence": "Removes concentration; free daily casts."
+    },
+    {
+      "text": "Records casting time, range, targets, duration, save/DC, charges, and recovery",
+      "passed": false,
+      "evidence": "No full casting sheet."
+    },
+    {
+      "text": "Audits action economy, control duration, and repeatability against comparators",
+      "passed": false,
+      "evidence": "No audit."
+    },
+    {
+      "text": "Offers a safer alternative that preserves counterplay if the brief demands no-concentration control",
+      "passed": false,
+      "evidence": "No safer alternative."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 4,
+    "total": 4,
+    "pass_rate": 0.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Craft baseline fail"
+  },
+  "timing": {
+    "executor_duration_seconds": 44,
+    "total_duration_seconds": 44
+  }
+}

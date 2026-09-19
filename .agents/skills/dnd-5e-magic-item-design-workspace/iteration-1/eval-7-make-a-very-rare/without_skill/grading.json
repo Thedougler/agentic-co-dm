@@ -1,0 +1,40 @@
+{
+  "eval_id": 7,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Refuses to keep maximum offense, defense, mobility, and utility merely because the rarity is high",
+      "passed": false,
+      "evidence": "Keeps full stack because very rare."
+    },
+    {
+      "text": "Shows a power-envelope comparison and concrete trades (remove, narrow, cost, or frequency limit)",
+      "passed": false,
+      "evidence": "No envelope table."
+    },
+    {
+      "text": "Audits effective defense, action economy, stacking, and attunement",
+      "passed": false,
+      "evidence": "No audit."
+    },
+    {
+      "text": "Provides concrete tuning knobs and explains the strongest remaining axis",
+      "passed": false,
+      "evidence": "No tuning knobs."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 4,
+    "total": 4,
+    "pass_rate": 0.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Craft baseline fail"
+  },
+  "timing": {
+    "executor_duration_seconds": 45,
+    "total_duration_seconds": 45
+  }
+}

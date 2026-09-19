@@ -1,0 +1,40 @@
+{
+  "eval_id": 8,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies the multiplication risk in an unbounded every-hit effect",
+      "passed": true,
+      "evidence": "Names Extra Attack/TWF/OA multiplication."
+    },
+    {
+      "text": "States exact trigger, damage, frequency, and interaction with Extra Attack and reactions",
+      "passed": true,
+      "evidence": "Once/turn +1d8 with EA/OA clarification."
+    },
+    {
+      "text": "Imposes once-per-turn or otherwise calibrated frequency rather than unbounded every-hit riders",
+      "passed": true,
+      "evidence": "Once per turn imposed."
+    },
+    {
+      "text": "Compares reliable and burst output rather than only quoting the die size",
+      "passed": true,
+      "evidence": "Reliable vs burst paragraph."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Craft pass"
+  },
+  "timing": {
+    "executor_duration_seconds": 80,
+    "total_duration_seconds": 80
+  }
+}

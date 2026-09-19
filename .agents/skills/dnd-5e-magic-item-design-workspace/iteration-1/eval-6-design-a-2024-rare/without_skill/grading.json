@@ -1,0 +1,40 @@
+{
+  "eval_id": 6,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Requires current web grounding and a public 2024/5.5e rules anchor before final numbers",
+      "passed": false,
+      "evidence": "No rules anchor."
+    },
+    {
+      "text": "Includes at least three comparator roles (chassis, effect/role, boundary) with actionable observations and working links",
+      "passed": false,
+      "evidence": "No comparator matrix."
+    },
+    {
+      "text": "Records action cost, frequency, target limits, stacking, and party role in the matrix",
+      "passed": false,
+      "evidence": "No matrix fields."
+    },
+    {
+      "text": "Does not substitute votes, ratings, or a single anecdote for balance evidence",
+      "passed": false,
+      "evidence": "Uses Reddit 9/10 as evidence."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 4,
+    "total": 4,
+    "pass_rate": 0.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Craft baseline fail"
+  },
+  "timing": {
+    "executor_duration_seconds": 48,
+    "total_duration_seconds": 48
+  }
+}

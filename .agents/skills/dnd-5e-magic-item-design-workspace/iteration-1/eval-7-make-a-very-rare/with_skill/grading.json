@@ -1,0 +1,40 @@
+{
+  "eval_id": 7,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Refuses to keep maximum offense, defense, mobility, and utility merely because the rarity is high",
+      "passed": true,
+      "evidence": "Explicit refuse + trades remove stacked axes."
+    },
+    {
+      "text": "Shows a power-envelope comparison and concrete trades (remove, narrow, cost, or frequency limit)",
+      "passed": true,
+      "evidence": "Table of axes with concrete trades."
+    },
+    {
+      "text": "Audits effective defense, action economy, stacking, and attunement",
+      "passed": true,
+      "evidence": "Audit covers those four."
+    },
+    {
+      "text": "Provides concrete tuning knobs and explains the strongest remaining axis",
+      "passed": true,
+      "evidence": "Tuning knobs; strongest axis stated."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Craft pass"
+  },
+  "timing": {
+    "executor_duration_seconds": 90,
+    "total_duration_seconds": 90
+  }
+}

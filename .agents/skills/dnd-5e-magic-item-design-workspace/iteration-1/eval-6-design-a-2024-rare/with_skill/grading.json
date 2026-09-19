@@ -1,0 +1,40 @@
+{
+  "eval_id": 6,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Requires current web grounding and a public 2024/5.5e rules anchor before final numbers",
+      "passed": true,
+      "evidence": "Rules anchor + Free Rules link before design."
+    },
+    {
+      "text": "Includes at least three comparator roles (chassis, effect/role, boundary) with actionable observations and working links",
+      "passed": true,
+      "evidence": "Matrix has three roles with obs and links."
+    },
+    {
+      "text": "Records action cost, frequency, target limits, stacking, and party role in the matrix",
+      "passed": true,
+      "evidence": "Matrix fields section records all five."
+    },
+    {
+      "text": "Does not substitute votes, ratings, or a single anecdote for balance evidence",
+      "passed": true,
+      "evidence": "Avoids votes/ratings; uses published peers."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Craft pass"
+  },
+  "timing": {
+    "executor_duration_seconds": 120,
+    "total_duration_seconds": 120
+  }
+}

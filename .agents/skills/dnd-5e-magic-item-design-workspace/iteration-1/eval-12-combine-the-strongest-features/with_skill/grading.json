@@ -1,0 +1,35 @@
+{
+  "eval_id": 12,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Rejects the assumption that two rare ceilings remain rare when combined",
+      "passed": true,
+      "evidence": "Explicitly rejects inheritance rarity."
+    },
+    {
+      "text": "Chooses a trade: remove a feature, narrow scope, add cost, raise tier, or add a meaningful limit",
+      "passed": true,
+      "evidence": "Chooses raise-to-VR or cut an axis."
+    },
+    {
+      "text": "Runs a whole-item comparator and abuse-case audit",
+      "passed": true,
+      "evidence": "Comparator + abuse-case paragraph."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Craft pass"
+  },
+  "timing": {
+    "executor_duration_seconds": 78,
+    "total_duration_seconds": 78
+  }
+}

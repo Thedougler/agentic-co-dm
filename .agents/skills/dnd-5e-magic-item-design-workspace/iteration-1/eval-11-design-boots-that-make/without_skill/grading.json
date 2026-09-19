@@ -1,0 +1,35 @@
+{
+  "eval_id": 11,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Rejects trivializing travel forever and identifies which campaign loops disappear",
+      "passed": false,
+      "evidence": "Celebrates solving travel forever."
+    },
+    {
+      "text": "Preserves a useful exploration identity with explicit limits and counterplay",
+      "passed": false,
+      "evidence": "No limits; full auto-nav + world teleport."
+    },
+    {
+      "text": "Checks party niches such as ranger, rogue, scout, and spellcaster rather than replacing them",
+      "passed": false,
+      "evidence": "No party-niche check."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Craft baseline fail"
+  },
+  "timing": {
+    "executor_duration_seconds": 36,
+    "total_duration_seconds": 36
+  }
+}

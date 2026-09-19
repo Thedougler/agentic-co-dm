@@ -1,0 +1,55 @@
+{
+  "eval_id": 4,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Preserves the crystallized magical sap / mature Black Lotus / recover-after-unable-to-close canon from the stub",
+      "passed": false,
+      "evidence": "Replaces recovery canon with blood-fed ecology rewrite."
+    },
+    {
+      "text": "Clearly distinguishes established stub canon from proposed invention throughout",
+      "passed": false,
+      "evidence": "No invention labels."
+    },
+    {
+      "text": "Does not invent a full Black Lotus ecology, secret curse, or undeclared campaign plot and present it as wiki fact",
+      "passed": false,
+      "evidence": "Full ecology + secret curse as fact."
+    },
+    {
+      "text": "Output follows wiki/templates/item.md structure",
+      "passed": false,
+      "evidence": "No narration callout or classification."
+    },
+    {
+      "text": "Frontmatter uses type: item (kind/rarity/attunement filled or deliberately scoped for the consumable/magic path chosen)",
+      "passed": false,
+      "evidence": "Missing kind/rarity/attunement."
+    },
+    {
+      "text": "Pitch or Signature sentence appears before the page draft",
+      "passed": false,
+      "evidence": "No pitch step."
+    },
+    {
+      "text": "Proposed runnable effect is grounded in Black Lotus / Aruhe harvest pressure, not generic potion filler",
+      "passed": false,
+      "evidence": "Permanent +2 INT is generic power fantasy."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 7,
+    "total": 7,
+    "pass_rate": 0.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Baseline invents ecology and curse as canon."
+  },
+  "timing": {
+    "executor_duration_seconds": 52,
+    "total_duration_seconds": 52
+  }
+}

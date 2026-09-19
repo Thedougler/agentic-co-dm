@@ -1,0 +1,40 @@
+{
+  "eval_id": 5,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States a one-sentence promise and intended experience before numbers",
+      "passed": true,
+      "evidence": "Pitch sentence and intended experience before mechanics."
+    },
+    {
+      "text": "Includes a readable engagement loop (Tell \u2192 Choice \u2192 Cost \u2192 Payoff \u2192 Counterplay) with a meaningful cost or risk",
+      "passed": true,
+      "evidence": "Explicit loop with silhouette/exposure cost."
+    },
+    {
+      "text": "Uses a familiar chassis or explains why a bespoke chassis is necessary",
+      "passed": true,
+      "evidence": "Reskin of lantern + limited see-invisibility pulse."
+    },
+    {
+      "text": "Does not grant unbounded always-on see-invisibility without a spend, tell, or exposure cost",
+      "passed": true,
+      "evidence": "Charges + cone + silhouette cost."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Craft pass"
+  },
+  "timing": {
+    "executor_duration_seconds": 85,
+    "total_duration_seconds": 85
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "eval_id": 10,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Rejects curse as secret plot punishment or unilateral loss of control",
+      "passed": true,
+      "evidence": "Explicit refusal."
+    },
+    {
+      "text": "Provides a playable temptation loop and at least two player responses",
+      "passed": true,
+      "evidence": "Temptation loop + three responses."
+    },
+    {
+      "text": "States how the curse is discovered, resisted, ended, or redirected",
+      "passed": true,
+      "evidence": "Discovery/resist/end/redirect paragraph."
+    },
+    {
+      "text": "Includes visible tells before the worst consequence lands",
+      "passed": true,
+      "evidence": "Frost, echo, glance before takeover fantasy."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Craft pass"
+  },
+  "timing": {
+    "executor_duration_seconds": 70,
+    "total_duration_seconds": 70
+  }
+}

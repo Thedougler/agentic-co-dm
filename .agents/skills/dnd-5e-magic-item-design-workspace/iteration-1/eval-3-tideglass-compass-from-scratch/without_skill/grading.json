@@ -1,0 +1,55 @@
+{
+  "eval_id": 3,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/item.md structure",
+      "passed": false,
+      "evidence": "No narration callout or classification line."
+    },
+    {
+      "text": "Frontmatter includes type: item, kind, rarity, attunement, and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+      "passed": false,
+      "evidence": "Missing kind, rarity, attunement, lifecycle, reveal, visibility."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not presented as vault canon",
+      "passed": false,
+      "evidence": "Presented as known relic with secret as established."
+    },
+    {
+      "text": "Pitch / Signature sentence appears before the page draft",
+      "passed": false,
+      "evidence": "No pitch process step."
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "passed": false,
+      "evidence": "No work gate."
+    },
+    {
+      "text": "Narration is a cold portrait without secrets, DCs, or unearned names",
+      "passed": false,
+      "evidence": "Includes DC and Secret block."
+    },
+    {
+      "text": "Runnable effect specifies trigger, action cost, frequency/limits, and counterplay or failure mode \u2014 not an unbounded always-on oracle",
+      "passed": false,
+      "evidence": "Always-on bearing; no action/charges."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 7,
+    "total": 7,
+    "pass_rate": 0.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Baseline treats fixture as canon and unbounded."
+  },
+  "timing": {
+    "executor_duration_seconds": 50,
+    "total_duration_seconds": 50
+  }
+}

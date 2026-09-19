@@ -1,0 +1,55 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/item.md structure",
+      "passed": true,
+      "evidence": "Narration callout, classification, runnable effect, At the Table."
+    },
+    {
+      "text": "Frontmatter includes type: item, kind, rarity, attunement, and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+      "passed": true,
+      "evidence": "All required identity fields present."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not presented as vault canon",
+      "passed": true,
+      "evidence": "invention: true; work gate says not vault canon."
+    },
+    {
+      "text": "Pitch / Signature sentence appears before the page draft",
+      "passed": true,
+      "evidence": "Transcript Pitch before draft."
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "passed": true,
+      "evidence": "Work gate: labeled invention; workspace only."
+    },
+    {
+      "text": "Narration is a cold portrait without secrets, DCs, or unearned names",
+      "passed": true,
+      "evidence": "Sensory narration only."
+    },
+    {
+      "text": "Runnable effect specifies trigger, action cost, frequency/limits, and counterplay or failure mode \u2014 not an unbounded always-on oracle",
+      "passed": true,
+      "evidence": "Action, charges, invalid-target spin, Crown Fog failure."
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Good from-scratch invention labeling."
+  },
+  "timing": {
+    "executor_duration_seconds": 95,
+    "total_duration_seconds": 95
+  }
+}

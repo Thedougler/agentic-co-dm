@@ -1,0 +1,40 @@
+{
+  "eval_id": 10,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Rejects curse as secret plot punishment or unilateral loss of control",
+      "passed": false,
+      "evidence": "Secret DM body takeover."
+    },
+    {
+      "text": "Provides a playable temptation loop and at least two player responses",
+      "passed": false,
+      "evidence": "No loop or responses."
+    },
+    {
+      "text": "States how the curse is discovered, resisted, ended, or redirected",
+      "passed": false,
+      "evidence": "Secret with no exit."
+    },
+    {
+      "text": "Includes visible tells before the worst consequence lands",
+      "passed": false,
+      "evidence": "Explicitly no tells."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 4,
+    "total": 4,
+    "pass_rate": 0.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Craft baseline fail"
+  },
+  "timing": {
+    "executor_duration_seconds": 38,
+    "total_duration_seconds": 38
+  }
+}

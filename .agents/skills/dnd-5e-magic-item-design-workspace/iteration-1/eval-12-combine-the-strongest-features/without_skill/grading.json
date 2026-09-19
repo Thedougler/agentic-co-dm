@@ -1,0 +1,35 @@
+{
+  "eval_id": 12,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Rejects the assumption that two rare ceilings remain rare when combined",
+      "passed": false,
+      "evidence": "Keeps rare by inheritance."
+    },
+    {
+      "text": "Chooses a trade: remove a feature, narrow scope, add cost, raise tier, or add a meaningful limit",
+      "passed": false,
+      "evidence": "No trade."
+    },
+    {
+      "text": "Runs a whole-item comparator and abuse-case audit",
+      "passed": false,
+      "evidence": "No comparator or abuse audit."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Craft baseline fail"
+  },
+  "timing": {
+    "executor_duration_seconds": 40,
+    "total_duration_seconds": 40
+  }
+}

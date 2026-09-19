@@ -1,0 +1,35 @@
+{
+  "eval_id": 11,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Rejects trivializing travel forever and identifies which campaign loops disappear",
+      "passed": true,
+      "evidence": "Names travel/tracking/scouting loops deleted."
+    },
+    {
+      "text": "Preserves a useful exploration identity with explicit limits and counterplay",
+      "passed": true,
+      "evidence": "Limited duration, known-landmark, misty step 1/LR."
+    },
+    {
+      "text": "Checks party niches such as ranger, rogue, scout, and spellcaster rather than replacing them",
+      "passed": true,
+      "evidence": "Explicit niche-preservation paragraph."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Craft pass"
+  },
+  "timing": {
+    "executor_duration_seconds": 72,
+    "total_duration_seconds": 72
+  }
+}

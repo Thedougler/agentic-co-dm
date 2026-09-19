@@ -1,0 +1,62 @@
+{
+  "eval_id": 1,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "passed": false,
+      "evidence": "No chat proposal; drafted directly."
+    },
+    {
+      "text": "Signature or pitch sentence (object + distinctive verb + why it belongs) appears before the page draft",
+      "passed": false,
+      "evidence": "No Signature/pitch process step."
+    },
+    {
+      "text": "Output follows wiki/templates/item.md structure (narration callout, classification line, runnable effect; optional At a Glance / At the Table / Connections / Provenance only when used)",
+      "passed": false,
+      "evidence": "Missing narration callout and classification line."
+    },
+    {
+      "text": "Frontmatter includes type: item and identity fields (lifecycle, reveal, campaign, visibility, kind, rarity/attunement as applicable, summary)",
+      "passed": false,
+      "evidence": "Missing lifecycle, reveal, visibility, kind, rarity, attunement."
+    },
+    {
+      "text": "Preserves Crissdalynn as holder, Kyzil gift, life-risk attunement via Delmar/Red Lady, Changed Record vision limits, and Talon Skarn Held outcome accurately",
+      "passed": true,
+      "evidence": "Core holder/Kyzil/Delmar/Changed Record/Talon facts retained."
+    },
+    {
+      "text": "Does not invent a new curse, ancient-maker myth, extra daily power, or stacked envelope and present it as established wiki fact",
+      "passed": false,
+      "evidence": "Adds rest reroll and pre-Sentinel forge as established fact."
+    },
+    {
+      "text": "At the Table (if present) states playable tonight consequence only \u2014 no design diary or RAW/balance commentary",
+      "passed": true,
+      "evidence": "No At the Table section (omit-if-empty)."
+    },
+    {
+      "text": "Runnable effect states trigger, frequency/limits, and what the holder cannot do (same-plane, personal acquaintance, no self-fight aid)",
+      "passed": false,
+      "evidence": "Changed Record lacks full limit set."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 6,
+    "total": 8,
+    "pass_rate": 0.25
+  },
+  "eval_feedback": {
+    "suggestions": [
+      "Clarify omit-if-empty At the Table pass vs N/A."
+    ],
+    "overall": "Baseline skips process and invents stacked power."
+  },
+  "timing": {
+    "executor_duration_seconds": 55,
+    "total_duration_seconds": 55
+  }
+}
