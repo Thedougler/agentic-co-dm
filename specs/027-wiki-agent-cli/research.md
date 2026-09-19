@@ -4,123 +4,124 @@
 work_class: engineering
 route: full-sdd
 reason: new public wiki command and default result contract; FR-018 instruction updates (including health → next) ship in the same change
-context_used: specs/027-wiki-agent-cli/spec.md, constitution, tools/wiki_ops/cli.py, scripts/wiki-lint, scripts/wiki-maintain, tools/lint_wiki.py, tools/wiki_ops/scope.py, qmd query --help, scripts/error-ledger.py, scripts/efficiency-trace.py, config/efficiency.yaml, sittings.jsonl schema, docs/agents/wiki-maintenance-loop.md, .agents/skills/wiki-lint/SKILL.md, .agents/skills/wiki-query/SKILL.md, tests/test_wiki_ops.py
-context_omitted: creative-lint hydra internals, identity-resolution intelligence, Foundry, campaign wiki pages, efficiency promote/canary path
+context_used: specs/027-wiki-agent-cli/spec.md, constitution, tools/wiki_ops/cli.py, scripts/wiki-lint, scripts/wiki-maintain, tools/lint_wiki.py, scripts/efficiency-trace.py, config/efficiency.yaml, docs/agents/wiki-maintenance-loop.md
+context_omitted: creative-lint hydra internals, identity-resolution intelligence, Foundry, campaign wiki pages, efficiency promote/canary path, skill-creator evals
 ```
 
 ## 1. One `wiki` dispatcher
 
-**Decision:** Add `scripts/wiki` with subcommands `lint`, `query`, and `health`. No setuptools console script. Creative hydra stays on `scripts/wiki-lint`.
+**Decision:** Add `scripts/wiki` with subcommands `lint`, `query`, and `health`. No setuptools console script. No npm/package.json wrappers. Creative hydra stays on `scripts/wiki-lint`.
 
-**Rationale:** Existing agent tools are `scripts/*` with args in and JSON out (`tools/wiki_ops/cli.py`). Spec FR-001/FR-017. `pyproject.toml` has no scripts table; do not add one.
+**Rationale:** Existing agent tools are `scripts/*` with args in and JSON out (`tools/wiki_ops/cli.py`). Spec FR-001/FR-017. Clarify: npm wrappers are out; `wiki` is the command.
 
-**Alternatives considered:** Three new binaries (`wiki-lint2`, `wiki-query`, `wiki-health`) — violates one-command rule. Replace `scripts/wiki-lint` entirely — breaks creative subcommands and `tests/test_wiki_ops.py`.
+**Alternatives considered:** Three new binaries — violates one-command rule. Replace `scripts/wiki-lint` entirely — breaks creative subcommands. package.json scripts — user declined.
 
 ## 2. Vault and paths
 
 **Decision:** Reuse `configured_vault` / `resolve_vault`. Path args are vault-relative files or prefixes. Zero args = whole live wiki. Unknown or out-of-vault path → exit 2, structured error, no scan. No fuzzy match, no `--scope` dialect on the new command.
 
-**Rationale:** Spec FR-002/FR-003/SC-007. Current `wiki-lint` takes a vault positional plus `--scope dir:|files:|type:`. Agents fail `entities/npcs` vs `entities/npc` today because they invent owners; fail closed instead.
+**Rationale:** Spec FR-002/FR-003/SC-007.
 
 **Alternatives considered:** Keep `--scope` as the public path language — extra dialect. Treat CWD as vault — spec forbids.
 
 ## 3. Default result contract
 
-**Decision:** Default stdout is one compact JSON object (`emit_json`: sorted keys, no indent). `--json` accepted and ignored. `--pretty` is the only human text. No TTY detection.
+**Decision:** Default stdout is one compact JSON object (`emit_json`: sorted keys, no indent) plus compact `timing`. `--json` accepted and ignored. `--pretty` is the only human text. No TTY detection.
 
-**Rationale:** Spec FR-004/FR-016/SC-006. Today `wiki-lint` indents unless `--json`; `wiki-maintain --report` always indents and dumps `steps`.
+**Rationale:** Spec FR-004/FR-016/SC-006.
 
-**Alternatives considered:** `isatty()` pretty-print — spec out of scope. Keep indented JSON as “human” — agents still parse it; `--pretty` is text.
+**Alternatives considered:** `isatty()` pretty-print — spec out of scope.
 
-## 4. Worklist vs findings dump
+## 4. Lint dump grouped by file
 
-**Decision:** Default lint object is a worklist (FR-009). Nested `findings` / `findings_by_file` omitted. Exactly one existing file arg adds flat `findings[]` (FR-010). `--full` adds the complete dump and keeps worklist fields.
+**Decision:** Default `wiki lint` always includes summary fields **and** complete Vale-included findings grouped by file. Shape: `files` is an array of `{file, findings}` in argument / path order. Each finding is `{rule, file, line, severity, message}` with 1-based `line`. Omit file groups with zero findings. Nested per-rule maps are forbidden. `--full` is accepted and does not change output.
 
-**Rationale:** Current `structural_main` already builds `backlog` and `next_page` but still embeds per-rule finding arrays. SC-001/SC-002 fail because of that blob.
+Two named files → two `files` entries. A prefix → one entry per file that has findings.
 
-**Unique targets:** For each rule with findings, `unique.<rule>` is the sorted unique target strings (missing-link target, broken path, page id — whatever the finding already names). Do not guess owners (FR-012).
+Health live lint **does not** copy this dump (FR-014).
 
-**Alternatives considered:** Always include findings and document “ignore them” — still burns tokens. Separate `wiki lint --worklist` flag — default would remain the blob.
+**Rationale:** Clarify 2026-09-19 (always dump, grouped by file). SC-002 no longer caps stdout at 8 KB.
+
+**Alternatives considered:** Worklist-only bulk default — rejected in clarify. Always-nested `findings_by_file` map — harder for agents than ordered blocks. `--full` as the only dump — rejected.
 
 ## 5. Checker cache
 
-**Decision:** Per-file cache at `$VAULT/_meta/lint-cache.json` (lint already skips `_meta`). Key = content sha256 + checker-config digest (structural rule set, Vale styles/config, template contracts). Hit → reuse that file’s checker results and extracts. Miss → run checkers, write entry. Add/delete/rename: recompute corpus facts (links, missing owners, orphans) from cached extracts plus the current file set. Checker-config change invalidates those checkers’ entries.
+**Decision:** Per-file cache at `$VAULT/_meta/lint-cache.json` (lint already skips `_meta`). Key = content sha256 of file bytes + checker-config digest (structural rules, Vale styles/config, template contracts). Hit → reuse that file’s checker results and extracts. Miss (hash change, config change, new path) → run checkers, write entry. Add/delete/rename: recompute corpus facts from cached extracts plus the current file set.
 
-**Rationale:** Spec FR-008/SC-003. No cache exists today (`tools/` has no cache). Vale currently runs only when `--scope` is set — FR-007 requires Vale on every `wiki lint` unless `--no-vale`. Caching Vale is the point of SC-003.
+**Rationale:** Spec FR-008/SC-003. User asked hash identity; config digest still required so Vale style edits are not stale.
 
-**Alternatives considered:** Repo `.cache/` — splits from vault. Content-hash only — stale after Vale style edits. Re-run Vale always — fails SC-003.
+**Alternatives considered:** Repo `.cache/` — splits from vault. Hash-only without config digest — stale after Vale edits. mtime — misses identical-byte rewrites and false-misses on touch.
 
 ## 6. Query
 
-**Decision:** `wiki query <phrase>` runs `env -u CI qmd query <phrase> -c <collection> -n <cap> --format json`. Defaults: collection `wiki` (empty `QMD_WIKI_COLLECTION` still `wiki`), cap 10. Compact hits: `title`, `path` (vault-relative), retrieval id (`#docid` / qmd id from JSON). Backend missing or failing → structured error, exit 2, no invented hits.
+**Decision:** `wiki query <phrase>` runs `env -u CI qmd query <phrase> -c <collection> -n <cap> --format json`. Defaults: collection `wiki`, cap 10. Compact hits: `title`, `path`, retrieval id. Backend missing or failing → structured error, exit 2.
 
-**Rationale:** Spec FR-013/SC-004. `qmd query` default `-n` is 5 (20 for json); user-facing default is 10. Harnesses set `CI=true`, which makes qmd refuse query. This is a retrieval wrapper, not a rewrite of wiki-query synthesis.
+**Rationale:** Spec FR-013/SC-004. Harnesses set `CI=true`.
 
-**Alternatives considered:** Call wiki-query skill steps (graph-query, grep, multi-hop) — out of scope. `qmd search` (BM25, no LLM) — spec says retrieval, which is `query`.
+**Alternatives considered:** `qmd search` (BM25) — spec says retrieval (`query`).
 
 ## 7. Health snapshot (compose, no second counter)
 
-**Decision:** `wiki health` is one snapshot: live lint worklist (same cache, no findings dump) plus inventory (`pages`, `bytes`, `tokens`) plus Layer A stats already computed in `scripts/wiki-maintain` (waste, `_raw` leftovers, remorph plan counts, policy) plus compact `trends` from existing trackers plus ordered `focus` and `next`. `scripts/wiki-maintain --report` becomes an alias of that snapshot (same object, not a second counter). Exit 0/1/2 per FR-006 (today `--report` exits 0 whenever JSON is produced).
+**Decision:** `wiki health` is one snapshot: live lint **summary** (same cache, no `files` dump) plus inventory plus Layer A stats plus compact `trends` (sitting/efficiency/skill/error, **slowest wiki commands**, **token-heaviest sittings**) plus ordered `focus` and `next`. `scripts/wiki-maintain --report` aliases that snapshot. Skill-eval pass/fail is out.
 
-**Rationale:** Spec FR-014/FR-015/FR-019/SC-005. Current report is a per-step essay (`steps.A1`…`A6`). Promote numbers; drop essays from the default object.
+**Rationale:** Spec FR-014/FR-015/FR-019/FR-021/SC-005.
 
-**Alternatives considered:** Keep full `steps` tree and add a summary — still essays. New health counter beside `--report` — spec forbids. Dump raw sittings/traces — spec forbids.
+**Alternatives considered:** Full findings dump on health — spec forbids. Second health counter — spec forbids. Skill-eval dashboard — clarify out.
 
 ## 8. Exit codes and errors
 
 **Decision:** 0 clean/success, 1 findings present (lint/health not clean), 2 bad invocation or precondition. Machine errors: `{"error":"…","status":"error"}` on stdout, exit 2. `--pretty` errors: one line on stderr, exit 2.
 
-**Rationale:** Spec FR-005/FR-006. Constitution VI says errors on stderr; spec Assumptions already name the stdout machine-error split as the existing wiki-ops convention (`emit_error`). Do not change `tools/wiki_ops.cli.EXIT_*` globally this sitting; the new command uses 0/1/2.
+**Rationale:** Spec FR-005/FR-006. Named VI split in Assumptions.
 
-**Alternatives considered:** Force all errors to stderr — agents must splice two streams. Change every wiki-ops script’s exit map — extra blast radius.
+**Alternatives considered:** Force all errors to stderr — agents splice two streams.
 
 ## 9. Agent instructions
 
-**Decision:** Update documented lint/query/health invocations to `scripts/wiki` and the worklist/health contract: `.agents/skills/wiki-lint/SKILL.md` (+ evals that pin `./scripts/wiki-lint --json`), wiki-status/wiki-lint standing examples in `AGENTS.md` / `.omp/AGENTS.md`. Health instructions: run `scripts/wiki health`, then act on `next` (then remaining `focus`) without waiting for the DM. wiki-query skill keeps synthesis; retrieval default examples that are “run this CLI” point at `wiki query`. Creative hydra docs stay on `scripts/wiki-lint`.
+**Decision:** Update lint/query/health invocations to `scripts/wiki`. Lint examples show the per-file dump. Health: run `scripts/wiki health`, then act on `next` (then remaining `focus`) without a DM wait. wiki-query keeps synthesis; CLI retrieval examples point at `wiki query`. Creative hydra stays on `scripts/wiki-lint`.
 
-**Rationale:** FR-018/SC-009. Small agents (Luna/Haiku class) must not need extra interpretation.
+**Rationale:** FR-018/SC-008/SC-009.
 
-**Alternatives considered:** Leave skills and hope agents discover `--help` — SC-008/SC-009 fail.
+**Alternatives considered:** Leave skills pointing at `./scripts/wiki-lint --json wiki/` — SC-008 fails.
 
 ## 10. Tests
 
-**Decision:** pytest against temp vaults (existing `test_wiki_ops.py` pattern) for path fail-closed, worklist keys, single-file findings, `--full`, cache hits, `--pretty` vs default, health alias equality, empty-tracker trends, `focus`/`next` ordering, no invented layout paths. One live-wiki size check for SC-002 (~100-page prefix < 8 KB). Cold-context smol subject for SC-008 and SC-009. Do not rewrite creative-lint tests.
+**Decision:** pytest temp vaults for fail-closed paths, two-file `files` blocks, prefix dump, `--full` no-op, cache hits, `--pretty` vs default, health alias equality, empty-tracker trends, `focus`/`next`, command `timing` on stdout, slowest-command ranks, token-heaviest sittings, no skill-eval keys. Drop the live 8 KB size check. Cold-context smol for SC-008 (names a finding line + `next_page`) and SC-009.
 
-**Rationale:** Constitution IV/XXIII. `scripts/wiki-lint` tests remain the old surface.
+**Rationale:** Constitution IV/XXIII. SC-002 is now two-file groups, not 8 KB.
 
-**Alternatives considered:** Fixture-only Vale cache tests without a second run — cannot prove SC-003.
+**Alternatives considered:** Keep 8 KB assertion — contradicts clarified SC-002.
 
 ## 11. Health trends (existing trackers)
 
-**Decision:** Compose compact aggregates; do not add a health-only window or a new telemetry store.
+**Decision:** Compose compact aggregates; no health-only window; no new telemetry **file**.
 
-Sources (read-only):
+Sources:
 
-- `sittings.jsonl` via `scripts/error-ledger.py sitting list` (repo root)
-- `errors.md` via `error list` (open entries only)
-- `.local/efficiency/traces.jsonl` via `scripts/efficiency-trace.py report` (retention already 90 days in `config/efficiency.yaml`)
+- `sittings.jsonl` via existing sitting list (repo root)
+- `errors.md` via error list (open entries only)
+- `.local/efficiency/traces.jsonl` via `efficiency-trace` load (90-day retention already)
 
-Compact `trends` keys (see data-model): sitting counts by kind; top skills by sitting count (cap 5); open error count + top causes (cap 3); efficiency `records`, `trajectory_tokens.value`, `retrieval.queries.value`, `hard_gate_failure_rate.value`, `dm_acceptance_rate.value`. Missing files → empty/zero aggregates, health still succeeds.
+`trends` keys: sitting counts by kind; top skills by sitting count (cap 5, usage names only); open error count + top causes (cap 3); efficiency sitting subset (`records`, `trajectory_tokens`, `retrieval_queries`, `hard_gate_failure_rate`, `dm_acceptance_rate`); `slowest_commands` (FR-020); `token_heaviest` sittings (FR-021). Missing files → empty/zero. Path args do not scope `trends`.
 
-Path args scope live lint, inventory, and `focus`. Trends stay whole-tracker.
+**Rationale:** Clarify sessions. Skill **usage** on sittings stays; skill **evals** do not.
 
-**Rationale:** Clarify session 2026-09-19. Trackers already exist; health is the agent surface.
-
-**Alternatives considered:** Last-7-days window — new policy. Full efficiency report object — too large for small agents. Fail health when traces missing — invents a precondition the trackers do not require.
+**Alternatives considered:** Last-7-days window — new policy. Full efficiency report — too large.
 
 ## 12. Focus and next
 
-**Decision:** `focus` is a bounded ordered array (cap 5). Each item: `path`, `reason` (one line, existing rule/plan/tracker name), `source` (`lint` | `remorph` | `layout` | `tracker`). `next` is `focus[0]` or null.
+**Decision:** `focus` ordered array, cap 5. Each item: `path`, `reason`, `source` (`lint` | `remorph` | `layout` | `tracker`). `next` is `focus[0]` or null.
 
-Fill order (skip a source if empty):
+Fill order (skip empty): lint `next_page`; first remorph plan `src`; first remaining layout/remorph prefix already in that plan; first open-error sitting path that is vault-relative. Never invent trees.
 
-1. `lint` — worklist `next_page` / first backlog page
-2. `remorph` — first existing remorph plan `src` from Layer A A6 (filename kebab / greenlit remorph only)
-3. `layout` — first remaining remorph/layout plan path that is a directory-prefix or layout-kind move already in that plan (not a new tree)
-4. `tracker` — first open error `sitting` path if it names a vault-relative file; else omit
+**Rationale:** FR-019/SC-009. Cap 5 is the plan bound.
 
-Do not invent folder trees. No remorph/layout plan → those sources absent. `--pretty` prints `next` then the `focus` list.
+**Alternatives considered:** Free-prose advice — forbidden.
 
-**Rationale:** FR-019/SC-009. Cap 5 is the plan bound (clarify left the number open; `next` is the one action).
+## 13. Command timings on the existing efficiency stream
 
-**Alternatives considered:** Free-prose advice — spec forbids. Pretty-only focus — small agents load default JSON. Command pointers with no paths — SC-009 fails.
+**Decision:** Discriminated records in the **same** `.local/efficiency/traces.jsonl`. Sitting records unchanged (`sitting_class` prep/wrapup, full schema). Command records: `record_kind: command` plus `command`, `duration_ms`, cache ints when applicable, `exit`, `timestamp`. Extend `efficiency-trace.validate_record` / `record` to accept that kind and skip it in sitting `report`/`promote`. `scripts/wiki` appends one command record per lint/query/health via the existing append helper. Health ranks `slowest_commands` from command records (max duration per command name, plus count). Timing failure must not fail the wiki command (best-effort append; stdout `timing` still present).
+
+**Rationale:** FR-020 forbids a second ledger. Fake `prep` sittings would poison promotion (`SITTING_CLASSES` is only prep/wrapup; trajectory is tokens not milliseconds).
+
+**Alternatives considered:** New `commands.jsonl` — second ledger. Stuffing wiki lint as `sitting_class: prep` — breaks same-kind promotion. Stdout-only timing — SC-010 fails.

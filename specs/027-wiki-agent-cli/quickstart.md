@@ -17,27 +17,27 @@ chmod +x scripts/wiki
 
 No extra packages. Vale and tiktoken are already project dependencies.
 
-## V-001 Worklist, not a findings blob (SC-001, SC-002)
+## V-001 Prefix dump grouped by file (SC-001, SC-002)
 
 ```bash
 .venv/bin/python scripts/wiki lint entities/npc
 ```
 
-Expect: compact JSON; keys in the worklist contract; no `findings` / `findings_by_file`; `unique` already deduped; stdout size under 8 KB on a ~100-page prefix. Exit 0 or 1, never 2.
+Expect: compact JSON; summary keys plus `files` (one group per file that has findings); each finding has 1-based `line`; no nested per-rule maps; `timing.command` is `lint`. Exit 0 or 1, never 2.
 
 ```bash
 .venv/bin/python scripts/wiki lint entities/npc --full
 ```
 
-Expect: worklist keys plus finding dump; may exceed 8 KB.
+Expect: same object shape as without `--full`.
 
-## V-002 Single file includes lines (FR-010)
+## V-002 Named files are separate blocks (SC-002, FR-010)
 
 ```bash
-.venv/bin/python scripts/wiki lint entities/npc/<existing-page>.md
+.venv/bin/python scripts/wiki lint entities/npc/<page-a>.md entities/npc/<page-b>.md
 ```
 
-Expect: `findings[]` with `rule`, `file`, `line` (int ≥ 1), `severity`, `message`.
+Expect: `files` has two entries (if both have findings), each a complete Vale-included breakdown with 1-based `line`.
 
 ## V-003 Unknown path fails closed (SC-007)
 
@@ -62,16 +62,18 @@ Second run: `cache.hits` > 0 for previously checked pages; Vale not re-executed 
 CI=true .venv/bin/python scripts/wiki query "<a known in-wiki title>"
 ```
 
-Expect: exit 0; at least one hit with `title`, `path`, `id`. Backend down: exit 2, structured error, no fake hits.
+Expect: exit 0; at least one hit with `title`, `path`, `id`; `timing.command` is `query`. Backend down: exit 2, structured error, no fake hits.
 
-## V-006 Health alias, trends, focus (SC-005, FR-019)
+## V-006 Health alias, trends, focus (SC-005, FR-019, SC-010, SC-011)
 
 ```bash
 .venv/bin/python scripts/wiki health
 .venv/bin/python scripts/wiki-maintain --report
 ```
 
-Expect: identical snapshot; keys `pages`, `bytes`, `tokens`, lint hard total, `trends`, `focus`, `next`; no findings dump; no `steps` essays; no raw sitting/trace rows. `next` is `focus[0]` or null. `len(focus) <= 5`.
+Expect: identical snapshot; keys `pages`, `bytes`, `tokens`, lint hard total, `trends` (including `slowest_commands` and `token_heaviest` when records exist), `focus`, `next`, `timing`; no `files` dump; no `steps` essays; no raw sitting/trace rows; no skill-eval keys. `next` is `focus[0]` or null. `len(focus) <= 5`.
+
+After two prior `wiki lint` or `wiki query` runs, `trends.slowest_commands` names the slower command.
 
 ## V-007 Pretty vs default (SC-006)
 
@@ -80,11 +82,11 @@ Expect: identical snapshot; keys `pages`, `bytes`, `tokens`, lint hard total, `t
 .venv/bin/python scripts/wiki lint entities/npc --pretty
 ```
 
-On an interactive terminal, the first is still compact JSON. The second is text (scoreboard). `--json` does not change the first.
+On an interactive terminal, the first is still compact JSON. The second is text (scoreboard plus `file:line  RULE  message` grouped by file). `--json` does not change the first.
 
 ## V-008 Cold agent (SC-008)
 
-Independent subject, cold context: this spec’s command examples only. Task: lint one file and name `next_page` from the worklist. Pass if it does not parse nested finding maps.
+Independent subject, cold context: this spec’s command examples only. Task: lint one file, name at least one finding line, and name `next_page`. Pass if it does not parse nested per-rule maps.
 
 ## V-009 Health next for a small agent (SC-009)
 
@@ -100,7 +102,7 @@ Temp vault with no `sittings.jsonl`, `errors.md`, or traces. `wiki health` still
 .venv/bin/python -m pytest tests/test_wiki_cli.py -q
 ```
 
-Temp-vault tests cover V-001–V-007 and V-010 seams. V-002/V-004/V-006 may use fixtures; V-001 size and V-005 need the live wiki / qmd when available.
+Temp-vault tests cover V-001–V-004, V-006–V-007, and V-010 seams. V-005 needs the live wiki / qmd when available.
 
 ## Instruction check
 

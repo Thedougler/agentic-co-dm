@@ -2,9 +2,19 @@
 
 Entities are result objects and cache records, not wiki pages.
 
-## Worklist
+## Timing
 
-Default `wiki lint` object. No nested finding arrays unless Single-file or Full dump applies.
+Present on every successful or findings `wiki` stdout object.
+
+| Field | Type | Notes |
+|---|---|---|
+| `command` | `lint` \| `query` \| `health` | |
+| `duration_ms` | int | Wall clock, ≥ 0 |
+| `cache` | `{hits, misses, vale_skipped}` \| omitted | Lint/health only |
+
+## Worklist (lint summary + dump)
+
+Default `wiki lint` object. Always includes grouped findings.
 
 | Field | Type | Required | Notes |
 |---|---|---|---|
@@ -17,10 +27,18 @@ Default `wiki lint` object. No nested finding arrays unless Single-file or Full 
 | `cache` | `{hits, misses, vale_skipped}` | yes | Ints |
 | `files_checked` | int | yes | |
 | `scope` | `{paths: string[]}` | yes | Vault-relative args; `[]` means whole vault |
-| `findings` | Finding record[] | single-file or `--full` | Absent on bulk default |
+| `files` | File group[] | yes | One block per file that has findings, argument/path order |
+| `timing` | Timing | yes | |
 | `error` | string | status=error | |
 
-Validation: bulk default MUST NOT contain `findings` or `findings_by_file`. `unique` MUST NOT invent owners.
+Validation: MUST NOT contain nested per-rule finding maps. `unique` MUST NOT invent owners. `--full` does not add or remove keys.
+
+### File group
+
+| Field | Type | Notes |
+|---|---|---|
+| `file` | string | Vault-relative |
+| `findings` | Finding record[] | Non-empty |
 
 ## Finding record
 
@@ -39,6 +57,7 @@ Validation: bulk default MUST NOT contain `findings` or `findings_by_file`. `uni
 | `status` | `ok` \| `error` | |
 | `collection` | string | Default `wiki` |
 | `hits` | Query hit[] | Cap default 10 |
+| `timing` | Timing | |
 | `error` | string | On failure |
 
 ## Query hit
@@ -59,7 +78,7 @@ No snippets in the default object.
 | `pages` | int | Live markdown page count (path-scoped) |
 | `bytes` | int | Live page bytes (path-scoped) |
 | `tokens` | int \| null | tiktoken via existing token-count helper |
-| `lint` | Worklist without `findings` | Same cache as `wiki lint`; path-scoped |
+| `lint` | Worklist without `files` | Same cache as `wiki lint`; path-scoped; **no finding dump** |
 | `waste` | object | Layer A A2 metrics (hits, hard_hits) |
 | `staging` | `{leftover_count}` | `_raw` leftovers |
 | `remorph` | `{plan_count, skip_count, error_count}` | A6 dry-run counts |
@@ -68,8 +87,9 @@ No snippets in the default object.
 | `trends` | Trends | Whole-tracker; empty/zero if files missing |
 | `focus` | Focus item[] | Ordered, cap 5; present even if empty |
 | `next` | Focus item \| null | `focus[0]` or null |
+| `timing` | Timing | |
 
-MUST NOT include per-step essays, a full findings dump, raw sittings, or raw traces.
+MUST NOT include per-step essays, a full findings dump, raw sittings, raw traces, skill-eval pass/fail, or missing-skill inventories.
 
 `scripts/wiki-maintain --report` emits this same object.
 
@@ -80,9 +100,11 @@ Path arguments scope `pages` / `bytes` / `tokens` / `lint` / `focus`. `trends` i
 | Field | Type | Notes |
 |---|---|---|
 | `sittings` | `{count, by_kind}` | `by_kind` counts `prep` / `wrapup`; missing file → `count` 0 |
-| `skills` | `{name, sittings}[]` | Top 5 skill names from sitting `skills_loaded`; empty list if none |
+| `skills` | `{name, sittings}[]` | Top 5 skill **usage** names from sitting `skills_loaded`; empty if none. Not eval results |
 | `errors` | `{open_count, causes}` | Open ledger only; `causes` is `{cause, count}[]` cap 3 |
-| `efficiency` | object | Subset of `efficiency-trace report`: `records`, `trajectory_tokens` (int), `retrieval_queries` (int), `hard_gate_failure_rate` (number), `dm_acceptance_rate` (number). Missing traces → `records` 0 and the rest 0 |
+| `efficiency` | object | Sitting subset of `efficiency-trace report`: `records`, `trajectory_tokens` (int), `retrieval_queries` (int), `hard_gate_failure_rate` (number), `dm_acceptance_rate` (number). Missing traces → `records` 0 and the rest 0 |
+| `slowest_commands` | `{command, duration_ms, n}[]` | From `record_kind=command` rows; cap 3; highest `duration_ms` first |
+| `token_heaviest` | `{sitting_class, job, tokens}[]` | From sitting records; `tokens` = sum of trajectory fields; cap 3; highest first |
 
 Do not embed the full efficiency report or sitting rows.
 
@@ -114,7 +136,25 @@ File: `$VAULT/_meta/lint-cache.json`.
 | `extracts` | object | Links and named targets needed for corpus refresh |
 | `results` | object | Per-checker findings for this file |
 
-Invalidation: content change, config_digest change, path add/delete/rename (missing path dropped; new path is a miss). Corpus facts always rebuilt from current path set + extracts.
+Invalidation: content sha256 change, config_digest change, path add/delete/rename (missing path dropped; new path is a miss). Corpus facts always rebuilt from current path set + extracts.
+
+## Command timing record
+
+Appended to `.local/efficiency/traces.jsonl` (same stream as sitting traces).
+
+| Field | Type | Notes |
+|---|---|---|
+| `record_kind` | `command` | Discriminator; sitting records omit this or are not `command` |
+| `schema_version` | 1 | |
+| `command` | `lint` \| `query` \| `health` | |
+| `duration_ms` | int | |
+| `cache_hits` | int | 0 when N/A |
+| `cache_misses` | int | 0 when N/A |
+| `vale_skipped` | int | 0 when N/A |
+| `exit` | int | 0, 1, or 2 |
+| `timestamp` | string | ISO-8601 |
+
+Sitting records keep the existing efficiency schema. `promote` / sitting `report` ignore `record_kind=command`.
 
 ## Error object
 
@@ -126,15 +166,17 @@ Invalidation: content change, config_digest change, path add/delete/rename (miss
 lint:
   invoke → resolve vault → resolve paths (fail closed)
         → load cache → run/reuse checkers → rebuild corpus
-        → worklist → emit → exit 0|1|2
+        → summary + files dump → emit + append command record → exit 0|1|2
 
 health:
   invoke → resolve vault → resolve paths (fail closed)
-        → same lint path (no findings dump)
+        → same lint path (drop files dump)
         → Layer A numbers (no steps essays)
         → read sittings/errors/traces (empty ok)
-        → trends + focus + next → emit → exit 0|1|2
+        → trends (incl. slowest_commands, token_heaviest) + focus + next
+        → emit + append command record → exit 0|1|2
 
 query:
-  invoke → unset CI → qmd query → compact hits → emit → exit 0|2
+  invoke → unset CI → qmd query → compact hits
+        → emit + append command record → exit 0|2
 ```
