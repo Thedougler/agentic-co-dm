@@ -11,170 +11,92 @@ description: >-
 
 # City Design
 
-## Work Gate
-
 Prep only. Follow `docs/agents/work.md`.
 
-Show a chat proposal before writing a campaign wiki page. Write under `wiki/`
-only after DM acceptance. If a needed named city is missing, that city page is
-work to do now: propose it instead of treating the missing note as out of
-scope. Ground invention in wiki pages and/or D&D urban-play patterns; set
-`invention: true`, cite `[[pages]]`, and show contradictions. Never present
-invention as wiki fact or write silent canon.
+## Refuse gates
 
-## City Job
+- **Work gate.** Show a chat proposal before writing under `wiki/`. Write only
+  after DM acceptance. A missing named city is work to propose now — not out of
+  scope.
+- **Invention.** Never present invention as wiki fact. Set `invention: true`,
+  cite `[[pages]]`, show contradictions, and propose for acceptance. No silent
+  canon.
+- **No invented crisis.** Do not invent plague, siege, invasion, or disaster as
+  established pressure. Derive **If-nobody-intervenes** only from established
+  pressure — or state none / labeled invention.
+- **Closed canon stays history.** Preserve closed Season threads as history, not
+  live crisis. Do not reopen them as forced sequences.
+- **Template lock.** Copy `wiki/templates/city.md` only. Keep `type: place` and
+  `kind: city`. No second template; do not retarget to region, faction, lore, or
+  quest.
+- **Arrival.** `> [!narration] Arrival` is immediately perceivable only
+  (scale, silhouette, motion, sound, smell, landmark). No secrets, DCs, hidden
+  history, or unearned names.
+- **Faction agendas/clocks** stay on faction pages. City `# Power` is local
+  posture only (public position, local objective, leverage, current move here).
+- **Hub deferral.** `place-design` defers `kind: city` page work here.
 
-A city page makes a named city runnable: how the party arrives, how the DM
-orients them, where deliberate travel can take them, which local rules change
-choices, what pressure is active now, and what changes if nobody intervenes.
+Also refuse: single mandatory plot rails; authoring PC civic outcomes as page
+fact; clue-less single-lever situations; combat-only district rails. Keep
+Orientation/Gazetteer as choice space (≥2 viable responses or ignore/fail/
+redirect costs).
 
-Create or edit a named city page when the place has districts, public authority,
-services, factions, routes, laws, or ongoing urban pressure broad enough that a
-site-place page cannot hold it cleanly. Store the note under the campaign wiki
-folder that owns cities and places.
+## City job
 
-`place-design` is the hub for places. It defers `kind: city` page work to this
-skill. This skill writes the city page.
+A city page makes a named city runnable: arrival, orientation, deliberate
+travel, local rules that change choices, active pressure, and what changes if
+nobody intervenes. Use when districts, public authority, services, factions,
+routes, laws, or urban pressure exceed a site-place page.
 
-## Procedure
+## Build the city
 
-### 1. Retrieve The City
+1. **Retrieve.** Read the brief, `wiki/templates/city.md`, and relevant region,
+   route, district, landmark, faction, NPC, quest, lore, session, and prior city
+   notes. Preserve established names, aliases, districts, routes, laws,
+   pressure, rumors, party history, and open questions.
+2. **Identity sentence** before drafting:
 
-Read the brief, `wiki/templates/city.md`, and relevant region, route, district,
-landmark, faction, NPC, quest, lore, session, and prior city notes. Preserve
-established names, aliases, ruler, controlling faction, public laws, districts,
-routes, landmarks, services, pressure, rumors, party history, and open
-questions.
+   > This is a [kind/scope] city known for [public identity], pressured by
+   > [current instability], and it gives players [choice or opportunity].
 
-Write one identity sentence before the page:
+   If there is no current pressure or player opening, keep retrieving or ask.
+3. **Scaffold.** Copy `wiki/templates/city.md`. Fill frontmatter: `type: place`,
+   `kind: city`, lifecycle/reveal/campaign/visibility, region, status,
+   population, government, ruler, controlling_faction, summary.
+4. **Runnable fill.** Arrival (perceivable); At a glance (character, known-for,
+   visible power, **current pressure**, opportunity, population, one-sentence DM
+   thesis of play function — not closed-history summary); Orientation
+   (districts + getting around); Gazetteer (arrive/leave, stay, buy/sell,
+   services); Rules that matter (only choice-changing local realities); Power
+   (city-local posture only).
+5. **Active situations.** At least one when pressure exists: actors, visible
+   signs, want, opposition, **If nobody intervenes**, trigger/date. Link quest
+   pages for pursuable objectives; propose missing quests — do not bury full
+   quests here. If no established pressure, say so; do not invent crisis.
+6. **Current state + change log.** Live deltas only on the city page; fold
+   normalized deltas into baseline and archive in `# Change log`.
 
-> This is a [kind/scope] city known for [public identity], pressured by [current
-> instability], and it gives players [choice or opportunity].
+Read `references/city-craft.md` for craft basis, section fill detail, audit
+questions, and failure modes.
 
-If that sentence has no current pressure or player opening, keep retrieving or
-ask for the missing premise before drafting the page.
+## Handoffs
 
-### 2. Start From The Template
-
-Copy `wiki/templates/city.md`. Keep its frontmatter and headings unless an
-unused template section says it may be omitted. Fill these frontmatter fields:
-
-```yaml
-type: place
-lifecycle: proposed
-reveal: unrevealed
-campaign: <campaign slug>
-visibility: dm
-kind: city
-region: "<known region or blank>"
-status: active
-population: "<scale or useful approximation>"
-government: "<public form of rule or blank>"
-ruler: "<linked ruler or blank>"
-controlling_faction: "<linked faction or blank>"
-summary: "<one runnable sentence>"
-```
-
-Do not add a second city template. Do not change the page to `type: region`,
-`type: faction`, `type: lore`, or `type: quest`.
-
-### 3. Fill The Runnable City
-
-Fill `> [!narration] Arrival` through theatre of the mind. It says what the
-party can perceive when entering or overlooking the city: scale, silhouette,
-motion, sound, smell, and one unmistakable landmark. Keep secrets, hidden
-history, and unearned names out of player-facing prose.
-
-Fill `## At a glance` with character, known-for, visible power, current
-pressure, opportunity, and population. The pressure is what makes the city
-unstable right now. Fill the DM thesis with one sentence about the city's
-function in play.
-
-Fill `## Orientation` so the DM can answer where the party goes next:
-
-- Districts residents actually recognize, each with a street-level read, known
-  draw, and current pressure.
-- Landmarks that help orientation.
-- Getting around: cross-city travel, after-dark changes, restricted movement,
-  and useful shortcuts.
-
-Fill `# Gazetteer` so players can intentionally seek a place without the DM
-inventing the basic city interface at the table. Include arrive/leave, stay,
-buy/sell/commission, and services when they matter. Link durable places, NPCs,
-districts, and routes; leave incidental entries unlinked until play makes them
-durable.
-
-Fill `## Rules that matter at the table` with only local realities that can
-change a choice: law, weapons, magic, violence, status, commerce, rest, death,
-or other city-specific constraints. Omit generic laws no one will act on.
-
-Fill `# Power` with city-local posture only. Faction histories, full agendas,
-and clocks stay on faction pages. The city page records each faction's public
-position, local objective, leverage, and current move in this city now.
-
-### 4. Write Active Situations And Motion
-
-Create at least one `# Active situations` entry. A situation is active when a
-named actor wants a concrete change, visible signs can surface it, opposition
-exists, and the city changes if the party never interferes.
-
-Each active situation includes:
-
-- involved factions, NPCs, districts, or places;
-- visible signs the party can encounter before investigation;
-- what the active side wants;
-- what opposes them;
-- **If nobody intervenes:** the next meaningful change;
-- trigger or date when timing matters.
-
-If a situation is pursuable as an objective, link a quest page. If the quest page
-is missing, propose that quest page; do not bury a full quest in the city note.
-
-Use exploration layers, hidden nodes, rumors, secrets, street encounters, routes,
-dependencies, pressure clocks, upcoming events, and local faction moves only
-when they help run current play. Omit unused sections.
-
-### 5. Maintain Current State And Change Log
-
-Use `# Current state` for the handful of deltas the DM must remember now:
-campaign date, last party visit, visible changes, headlines, pressure clocks,
-upcoming events, and local faction moves.
-
-Keep the city change log on the city page under this skill. Record deltas
-instead of rewriting the whole city after every visit. When a delta becomes the
-new normal, fold it into the relevant baseline section and archive the old
-delta in `# Change log`.
-
-## Craft Basis
-
-Use city prep as a table interface, not an encyclopedia: arrival image,
-recognized districts, deliberate-travel gazetteer, meaningful local rules,
-visible pressure, and changed-state logs. Practical inputs: Justin Alexander's
-urbancrawl layers and situation-based prep, Mike Shea's monuments and secrets
-for city play, Kevin Crawford's sandbox faction pressure, progress clocks from
-Blades in the Dark, and campaign-status practice that tracks current deltas
-instead of rewriting the whole setting.
+Narration → `theatre-of-the-mind`; places → `place-design` (non-city);
+factions → `faction-design`; NPCs → `npc-design`; quests → quest skill;
+off-screen → `world-tick`; vault lookup → `.agents/skills/qmd`.
 
 ## Done
 
-The page is done when:
-
-- It fills `wiki/templates/city.md` without adding another template.
-- It has `type: place` and `kind: city`.
-- Arrival is `[!narration]` and contains only immediately perceivable city
-  experience.
-- At a glance includes current pressure and opportunity.
-- Orientation includes districts and getting around.
-- The gazetteer lets the party intentionally seek at least one relevant place,
-  route, service, or source without blind exploration.
-- Rules that matter at the table name local realities that can change a player
-  choice.
-- At least one active situation names actors, visible signs, want, opposition,
-  and if-nobody-intervenes.
-- Every pursuable situation links a quest page or proposes the missing quest.
-- Faction full agendas and clocks stay on faction pages.
-- Current state records only live deltas the DM must remember now.
-- Change log stays on the city page and records deltas.
-- The DM can arrive, find a district, seek a place, name a local rule, and say
-  what happens if nobody intervenes.
-- Invention is labeled, cited, and proposed for DM acceptance.
+- Fills `wiki/templates/city.md`; `type: place` + `kind: city`; no second
+  template / no retarget.
+- Arrival is `[!narration]` and perceivable-only.
+- At a glance has current pressure + opportunity; DM thesis is play-function.
+- Orientation has districts + getting around; gazetteer supports intentional
+  seek; rules name choice-changing local realities.
+- ≥1 active situation with actors, signs, want, opposition, if-nobody-intervenes
+  from established pressure (or none / labeled invention).
+- Faction full agendas/clocks stay on faction pages.
+- Current state = live deltas; change log on the city page.
+- Invention labeled, cited, proposed; wiki write only after accept.
+- DM can arrive, find a district, seek a place, name a local rule, and say what
+  happens if nobody intervenes — without a single mandatory rail.
