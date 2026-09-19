@@ -40,7 +40,7 @@ Leave unchanged: `wiki-dedup` merge confirm, `wiki-stage-commit` promotion, crea
 
 **Purpose**: Bound the implement surface. No new packages, classifier, or docs.
 
-- [ ] T001 Confirm the six implement files in `specs/026-agent-autonomy-scope/plan.md` exist (`AGENTS.md`, `docs/agents/work.md`, `docs/agents/wiki-maintenance-loop.md`, `.agents/skills/wiki-lint/SKILL.md`, `.agents/skills/wiki-lint/CONSOLIDATE.md`, `.agents/skills/wiki-ingest/SKILL.md`) and do not create `docs/agents/autonomy.md`, a classifier script, a review checklist, a GitHub PR template, or a new review skill
+- [X] T001 Confirm the six implement files in `specs/026-agent-autonomy-scope/plan.md` exist (`AGENTS.md`, `docs/agents/work.md`, `docs/agents/wiki-maintenance-loop.md`, `.agents/skills/wiki-lint/SKILL.md`, `.agents/skills/wiki-lint/CONSOLIDATE.md`, `.agents/skills/wiki-ingest/SKILL.md`) and do not create `docs/agents/autonomy.md`, a classifier script, a review checklist, a GitHub PR template, or a new review skill
 
 ---
 
@@ -50,10 +50,10 @@ Leave unchanged: `wiki-dedup` merge confirm, `wiki-stage-commit` promotion, crea
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete. T002–T005 are sequential on `AGENTS.md`.
 
-- [ ] T002 Insert heading **Autonomy classification** in `AGENTS.md` by copying the table from `specs/026-agent-autonomy-scope/contracts/autonomy-boundary.md`; `classification` is `autonomous` | `dm-gated` only (`Derived; no third value`); unlisted operations use the decision rule; no `maybe`; do not use the avoided term "autonomous GM"; `AGENTS.md` is the only table
-- [ ] T003 Add the wait/decision rule under **Autonomy classification** in `AGENTS.md`: wait only if `user_asked_to_make_something_new` (`Explicit create/invent request (including new creative content on an existing page)`) OR `invents_canon_or_reconciles_contradiction` (`No-source invention, or pick-a-winner among conflicting facts`) → `dm-gated`; else `autonomous`; quote `Operations on existing wiki content that neither invent nor reconcile do not wait`
-- [ ] T004 Add the done-summary rule under **Autonomy classification** in `AGENTS.md`: after autonomous work, one short done-summary naming what changed and where; the summary MUST NOT ask a question or wait for a reply (FR-009)
-- [ ] T005 Replace the Helpers wiki-maintenance-loop sentence in `AGENTS.md` (`Never auto lore invent, mass kebab rename, dedup merge, or craft cuts`) so lore invent, dedup merge, and craft cuts stay gated while filename kebab / Aruhe / `00` remorph is autonomous (greenlit 2026-09-14)
+- [X] T002 Insert heading **Autonomy classification** in `AGENTS.md` by copying the table from `specs/026-agent-autonomy-scope/contracts/autonomy-boundary.md`; `classification` is `autonomous` | `dm-gated` only (`Derived; no third value`); unlisted operations use the decision rule; no `maybe`; do not use the avoided term "autonomous GM"; `AGENTS.md` is the only table
+- [X] T003 Add the wait/decision rule under **Autonomy classification** in `AGENTS.md`: wait only if `user_asked_to_make_something_new` (`Explicit create/invent request (including new creative content on an existing page)`) OR `invents_canon_or_reconciles_contradiction` (`No-source invention, or pick-a-winner among conflicting facts`) → `dm-gated`; else `autonomous`; quote `Operations on existing wiki content that neither invent nor reconcile do not wait`
+- [X] T004 Add the done-summary rule under **Autonomy classification** in `AGENTS.md`: after autonomous work, one short done-summary naming what changed and where; the summary MUST NOT ask a question or wait for a reply (FR-009)
+- [X] T005 Replace the Helpers wiki-maintenance-loop sentence in `AGENTS.md` (`Never auto lore invent, mass kebab rename, dedup merge, or craft cuts`) so lore invent, dedup merge, and craft cuts stay gated while filename kebab / Aruhe / `00` remorph is autonomous (greenlit 2026-09-14)
 
 **Checkpoint**: Foundation ready — `AGENTS.md` classifies any wiki op as `autonomous` or `dm-gated`
 
@@ -67,11 +67,11 @@ Leave unchanged: `wiki-dedup` merge confirm, `wiki-stage-commit` promotion, crea
 
 ### Implementation for User Story 1
 
-- [ ] T006 [P] [US1] Update page-scoped and bulk repair in `.agents/skills/wiki-lint/SKILL.md` so FR-002 structural repair is autonomous (links, required frontmatter, nearest-valid type/lifecycle, kebab remorph with no extra greenlight); template conformance relocates existing content only and MUST NOT invent missing field body; content with no template field is preserved and flagged; canon contradiction writes `errors.md` and MUST NOT pick a winner (FR-008); After Linting ends with a done-summary; defer to `AGENTS.md` **Autonomy classification** without copying the table
-- [ ] T007 [P] [US1] Change `.agents/skills/wiki-lint/CONSOLIDATE.md` and the `--consolidate` blurb in `.agents/skills/wiki-lint/SKILL.md` so FR-002 actions apply without `"Apply these N changes? [yes / no / select]"`; keep confirm for merge, tier demotion, and other non-FR-002 actions
-- [ ] T008 [P] [US1] Update `.agents/skills/wiki-ingest/SKILL.md` so named ingest into `_staging/` does not wait for a second chat accept; invented names not in the source stay Work; ingest vs live canon conflict stages with a visible conflict marker (autonomous) and MUST NOT silently overwrite; end the named-ingest slice with a done-summary; defer to `AGENTS.md` without copying the table
-- [ ] T009 [P] [US1] Update Layer A in `docs/agents/wiki-maintenance-loop.md` so it MAY apply FR-002 structural repairs unattended; leave Layer C unchanged for lore invent, dedup merge, and contradiction resolution; defer to `AGENTS.md` without copying the table
-- [ ] T010 [US1] Execute V-001 in `specs/026-agent-autonomy-scope/quickstart.md` on the live vault (lint repair, done-summary, no wait)
+- [X] T006 [P] [US1] Update page-scoped and bulk repair in `.agents/skills/wiki-lint/SKILL.md` so FR-002 structural repair is autonomous (links, required frontmatter, nearest-valid type/lifecycle, kebab remorph with no extra greenlight); template conformance relocates existing content only and MUST NOT invent missing field body; content with no template field is preserved and flagged; canon contradiction writes `errors.md` and MUST NOT pick a winner (FR-008); After Linting ends with a done-summary; defer to `AGENTS.md` **Autonomy classification** without copying the table
+- [X] T007 [P] [US1] Change `.agents/skills/wiki-lint/CONSOLIDATE.md` and the `--consolidate` blurb in `.agents/skills/wiki-lint/SKILL.md` so FR-002 actions apply without `"Apply these N changes? [yes / no / select]"`; keep confirm for merge, tier demotion, and other non-FR-002 actions
+- [X] T008 [P] [US1] Update `.agents/skills/wiki-ingest/SKILL.md` so named ingest into `_staging/` does not wait for a second chat accept; invented names not in the source stay Work; ingest vs live canon conflict stages with a visible conflict marker (autonomous) and MUST NOT silently overwrite; end the named-ingest slice with a done-summary; defer to `AGENTS.md` without copying the table
+- [X] T009 [P] [US1] Update Layer A in `docs/agents/wiki-maintenance-loop.md` so it MAY apply FR-002 structural repairs unattended; leave Layer C unchanged for lore invent, dedup merge, and contradiction resolution; defer to `AGENTS.md` without copying the table
+- [X] T010 [US1] Execute V-001 in `specs/026-agent-autonomy-scope/quickstart.md` on the live vault (lint repair, done-summary, no wait)
 - [ ] T011 [US1] Execute V-007 in `specs/026-agent-autonomy-scope/quickstart.md` (named ingest, no second ask)
 - [ ] T012 [US1] Execute V-004 in `specs/026-agent-autonomy-scope/quickstart.md` (contradiction flagged in `errors.md`, neither fact rewritten to win)
 
@@ -87,10 +87,10 @@ Leave unchanged: `wiki-dedup` merge confirm, `wiki-stage-commit` promotion, crea
 
 ### Implementation for User Story 2
 
-- [ ] T013 [US2] Edit the load sentence in `docs/agents/work.md` so Work loads before prep/wrapup **and** before any FR-003 wait; FR-002 operations MUST NOT enter Propose; keep the Decide bullet that a direct imperative to repair/merge a named existing page is acceptance unless the change invents canon
-- [ ] T014 [US2] Add one sentence in `docs/agents/work.md` that creative pages still require Work accept before `_staging/` or live write, while FR-002 writes MAY land in `_staging/` without chat propose (`WIKI_STAGED_WRITES` does not change class)
-- [ ] T015 [US2] Add the mixed-request rule under **Autonomy classification** in `AGENTS.md`: complete the autonomous portion and its done-summary first, then present the Work proposal in the same turn, without waiting for a reply between them (FR-010)
-- [ ] T016 [US2] Update HARD: entity-before-spoken in `AGENTS.md` so a new named owner with no page that the user asked to introduce is Work-proposed as the whole owner; file nothing until accept (no stub); spoken text that depends on that owner waits; existing wiki content MUST NOT wait
+- [X] T013 [US2] Edit the load sentence in `docs/agents/work.md` so Work loads before prep/wrapup **and** before any FR-003 wait; FR-002 operations MUST NOT enter Propose; keep the Decide bullet that a direct imperative to repair/merge a named existing page is acceptance unless the change invents canon
+- [X] T014 [US2] Add one sentence in `docs/agents/work.md` that creative pages still require Work accept before `_staging/` or live write, while FR-002 writes MAY land in `_staging/` without chat propose (`WIKI_STAGED_WRITES` does not change class)
+- [X] T015 [US2] Add the mixed-request rule under **Autonomy classification** in `AGENTS.md`: complete the autonomous portion and its done-summary first, then present the Work proposal in the same turn, without waiting for a reply between them (FR-010)
+- [X] T016 [US2] Update HARD: entity-before-spoken in `AGENTS.md` so a new named owner with no page that the user asked to introduce is Work-proposed as the whole owner; file nothing until accept (no stub); spoken text that depends on that owner waits; existing wiki content MUST NOT wait
 - [ ] T017 [US2] Execute V-002 in `specs/026-agent-autonomy-scope/quickstart.md` (creative NPC stays Work-gated)
 - [ ] T018 [US2] Execute V-003 in `specs/026-agent-autonomy-scope/quickstart.md` (mixed Bloodhawk cleanup + quest hook, same turn)
 - [ ] T019 [US2] Execute V-008 in `specs/026-agent-autonomy-scope/quickstart.md` (new owner, nothing filed until accept)
@@ -107,7 +107,7 @@ Leave unchanged: `wiki-dedup` merge confirm, `wiki-stage-commit` promotion, crea
 
 ### Implementation for User Story 3
 
-- [ ] T020 [US3] Add heading **Project identity** in `AGENTS.md`: primary deliverables are skills, agent instructions, and guidance documents; scripts and tooling support those; review of skill/instruction changes uses the existing `skill-creator` eval loop (held-out prompts, with-skill vs without-skill, graded assertions); MUST NOT add a checklist, PR template, or review skill; coverage/type-safety MUST NOT be the primary bar (FR-006, FR-007)
+- [X] T020 [US3] Add heading **Project identity** in `AGENTS.md`: primary deliverables are skills, agent instructions, and guidance documents; scripts and tooling support those; review of skill/instruction changes uses the existing `skill-creator` eval loop (held-out prompts, with-skill vs without-skill, graded assertions); MUST NOT add a checklist, PR template, or review skill; coverage/type-safety MUST NOT be the primary bar (FR-006, FR-007)
 - [ ] T021 [US3] Execute V-006 in `specs/026-agent-autonomy-scope/quickstart.md` against a `SKILL.md`-only diff using `.agents/skills/skill-creator/SKILL.md` evals
 
 **Checkpoint**: Instruction-change review cites skill-eval outcomes as the primary bar (SC-004)
@@ -122,7 +122,7 @@ Leave unchanged: `wiki-dedup` merge confirm, `wiki-stage-commit` promotion, crea
 
 ### Implementation for User Story 4
 
-- [ ] T022 [US4] Strip any competing autonomy list from `docs/agents/work.md`, `docs/agents/wiki-maintenance-loop.md`, `.agents/skills/wiki-lint/SKILL.md`, `.agents/skills/wiki-lint/CONSOLIDATE.md`, and `.agents/skills/wiki-ingest/SKILL.md` so each file defers to `AGENTS.md` **Autonomy classification** (pointer only; invariant 2)
+- [X] T022 [US4] Strip any competing autonomy list from `docs/agents/work.md`, `docs/agents/wiki-maintenance-loop.md`, `.agents/skills/wiki-lint/SKILL.md`, `.agents/skills/wiki-lint/CONSOLIDATE.md`, and `.agents/skills/wiki-ingest/SKILL.md` so each file defers to `AGENTS.md` **Autonomy classification** (pointer only; invariant 2)
 - [ ] T023 [US4] Execute V-005 in `specs/026-agent-autonomy-scope/quickstart.md` (ten one-line tasks covering both classes plus one unlisted operation; two cold-context agents; identical classes)
 
 **Checkpoint**: Any wiki task classifies as exactly one of `autonomous` | `dm-gated` with no judgment call (SC-005)
@@ -133,9 +133,9 @@ Leave unchanged: `wiki-dedup` merge confirm, `wiki-stage-commit` promotion, crea
 
 **Purpose**: Lean agent-facing prose, forbidden term, leave-alone surfaces, full quickstart.
 
-- [ ] T024 Apply `.agents/skills/writing-for-agents/SKILL.md` to the six implement files so each change is a positive instruction with a completion criterion and no competing copy of the table
-- [ ] T025 Confirm `.agents/skills/wiki-dedup/SKILL.md` merge confirm, `.agents/skills/wiki-stage-commit/SKILL.md` promotion review, creative-skill Work headers, and `.agents/skills/skill-creator/SKILL.md` eval loop are unchanged
-- [ ] T026 Confirm `.specify/memory/constitution.md` is unchanged and none of the six implement files use "autonomous GM"
+- [X] T024 Apply `.agents/skills/writing-for-agents/SKILL.md` to the six implement files so each change is a positive instruction with a completion criterion and no competing copy of the table
+- [X] T025 Confirm `.agents/skills/wiki-dedup/SKILL.md` merge confirm, `.agents/skills/wiki-stage-commit/SKILL.md` promotion review, creative-skill Work headers, and `.agents/skills/skill-creator/SKILL.md` eval loop are unchanged
+- [X] T026 Confirm `.specify/memory/constitution.md` is unchanged and none of the six implement files use "autonomous GM"
 - [ ] T027 Re-run any not-yet-green scenario in `specs/026-agent-autonomy-scope/quickstart.md` V-001–V-008 on the live vault
 
 ---

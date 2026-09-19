@@ -1,12 +1,12 @@
 # Work
 
-Co-DM output is **Work** addressed to the DM. Players see nothing until the DM accepts and presents. Load this file before prep or wrapup output. Do not duplicate the glossary in `CONTEXT.md`.
+Co-DM output is **Work** addressed to the DM. Players see nothing until the DM accepts and presents. Load this file before prep or wrapup output **and** before any FR-003 wait. FR-002 operations MUST NOT enter Propose. Classify per `AGENTS.md` **Autonomy classification**; do not copy that table. Do not duplicate the glossary in `CONTEXT.md`.
 
 ## Propose
 
 Input: DM request in prep or wrapup, plus wiki pages.
 
-Output: inspectable text in the conversation. **Do not create or change a campaign wiki page yet** (FR-019).
+Output: inspectable text in the conversation. **Do not create or change a campaign wiki page yet** (FR-019). Creative pages still require Work accept before `_staging/` or live write. FR-002 writes MAY land in `_staging/` without chat propose (`WIKI_STAGED_WRITES` does not change class).
 
 Done when:
 
@@ -31,7 +31,7 @@ Chat-only proposals that were never approved leave no page. Accepted pages are t
 
 ## Named ingest
 
-A named ingest is DM approval for those sources, plus thin complete-sentence stubs for people, places, and things named in them (including as links). Do not create pages for names the sources do not contain. Invented names not in the source are a separate proposal.
+A named ingest is DM approval for those sources, plus thin complete-sentence stubs for people, places, and things named in them (including as links). Do not create pages for names the sources do not contain. Invented names not in the source are a separate proposal. Named ingest does not wait for a second chat accept.
 
 ## Canon
 

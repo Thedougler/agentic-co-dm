@@ -13,6 +13,41 @@ Spec Kit auto-commit is enabled for the configured before/after hooks. The commi
 
 Before writing substantial engineering, agent-system, campaign-architecture, or creative-system work, classify it once and follow the full route in [`docs/agents/hybrid-sdd.md`](docs/agents/hybrid-sdd.md). Routine established campaign content stays on its existing skill, template, lifecycle, and Work route; split mixed requests into their system-changing and routine-content slices. Keep the managed Spec Kit block below disposable.
 
+## Autonomy classification
+
+Classify each wiki or Co-DM operation as `autonomous` or `dm-gated` only. Derived; no third value. No `maybe`. This heading is the only table. Skills MUST NOT copy it. Do not say "autonomous GM".
+
+Wait only if `user_asked_to_make_something_new` (`Explicit create/invent request (including new creative content on an existing page)`) OR `invents_canon_or_reconciles_contradiction` (`No-source invention, or pick-a-winner among conflicting facts`) → `dm-gated`; else `autonomous`. Operations on existing wiki content that neither invent nor reconcile do not wait. Unlisted operations use this rule.
+
+After autonomous work, emit one short done-summary naming what changed and where. The summary MUST NOT ask a question or wait for a reply.
+
+Mixed request: complete the autonomous portion and its done-summary first, then present the Work proposal in the same turn, without waiting for a reply between them.
+
+**Done when:** the operation has exactly one class; autonomous work ended with a done-summary; mixed requests finished both slices in one turn.
+
+| Operation | Class | Notes |
+|-----------|-------|-------|
+| Lint repair (links, required frontmatter, nearest-valid type/lifecycle) | autonomous | Default wiki-lint page-scoped/bulk; then done-summary |
+| Template conformance of existing content | autonomous | Do not invent missing field body |
+| Index / log.md / hot.md / manifest | autonomous | Bookkeeping |
+| Named ingest into `_staging/` | autonomous | Sources the DM already named |
+| Staging / `_raw/` file management | autonomous | Not canon |
+| Layout move (`facts_changed: false`) | autonomous | AGENTS.md Layout |
+| Error ledger, QMD refresh | autonomous | DM does not drain the ledger |
+| Filename kebab / Aruhe / `00` remorph | autonomous | Greenlit 2026-09-14 |
+| New lore / NPC / faction / quest / encounter / narrative the user asked to create | dm-gated | Work gate; includes new creative content on an existing page |
+| Invented canon facts (no source) | dm-gated | Work gate |
+| Contradictory-canon resolution | dm-gated | Flag during autonomous work; do not pick |
+| Invented template-field body | dm-gated | Preserve + flag if no source |
+| New named owner with no page (user asked to introduce) | dm-gated | Work-propose the whole owner; file nothing until accept; spoken waits |
+| Dedup merge | dm-gated | Nick confirm; not FR-002 |
+| wiki-stage-commit promotion | n/a | Staging review; not Work; not this table |
+
+## Project identity
+
+Primary deliverables are skills, agent instructions, and guidance documents. Scripts and tooling support those. Review of skill or instruction changes uses the existing `skill-creator` eval loop (held-out prompts, with-skill vs without-skill, graded assertions). MUST NOT add a checklist, PR template, or review skill. Coverage and type-safety MUST NOT be the primary bar.
+
+
 ## Configuration
 
 Resolve config using the Config Resolution Protocol in `llm-wiki/SKILL.md`:
@@ -48,7 +83,7 @@ If table aim is `missing`, ask the DM to name the players (at least one; tests u
 
 **Production session content** (session-prep beats, TotM/`[!narration]`, action cards, spoken text) is **complete or it does not ship**. Vague/non-specific descriptions of unnamed people/things because the entity page is missing = **critical error**.
 
-**Dependency order (recursive):** If a beat/scene names or requires an NPC, item, creature, place, faction, vehicle, spell, quest, or other entity — **mint/file that owner page first** (kebab basename, matching `wiki/templates/`, `wiki/_staging/` when `WIKI_STAGED_WRITES=true`), **then** write/update the session/TotM text that depends on it. Even when Nick asks for a session that introduces new names — create the entities first. The DM cannot describe what does not exist.
+**Dependency order (recursive):** If a beat/scene names or requires an NPC, item, creature, place, faction, vehicle, spell, quest, or other entity — **mint/file that owner page first** (kebab basename, matching `wiki/templates/`, `wiki/_staging/` when `WIKI_STAGED_WRITES=true`), **then** write/update the session/TotM text that depends on it. A new named owner with no page that the user asked to introduce is Work-proposed as the whole owner; file nothing until accept (no stub). Spoken text that depends on that owner waits. Existing wiki content MUST NOT wait. The DM cannot describe what does not exist.
 
 Agents MUST complete **all** recursive dependency steps to finish the goal — not only top-level, intermediary, or initial steps — in dependency order. Applies to `session-beats`, typed beat skills, `theatre-of-the-mind`, `cold-opens`, `session-recap`, and Session Architect orchestration. Completeness gate — do **not** thin narrative craft.
 
@@ -97,7 +132,7 @@ Re-read the target file before a multi-hunk edit. Stale line numbers produce ove
 
 ## Helpers
 
-**Wiki maintenance loop:** weekday Layer A scans + fleet routing — `docs/agents/wiki-maintenance-loop.md` (issue #90). Quiet when clean. Never auto lore invent, mass kebab rename, dedup merge, or craft cuts.
+**Wiki maintenance loop:** weekday Layer A scans + fleet routing — `docs/agents/wiki-maintenance-loop.md` (issue #90). Quiet when clean. Never auto lore invent, dedup merge, or craft cuts. Filename kebab / Aruhe / `00` remorph is autonomous (greenlit 2026-09-14).
 
 Wiki canon (`wiki/` campaign pages, ingest, recap, `hot.md`/`index.md`/`log.md`): commit on `main` and push `main`. Agent instructions (skills, `AGENTS.md`, `docs/agents`, harness, agent-facing scripts): feature branch and PR. Mixed sitting: split those two commits. After merges, `./scripts/git-sync-main` from a feature branch (`--force-clean` only for stranded dirt).
 

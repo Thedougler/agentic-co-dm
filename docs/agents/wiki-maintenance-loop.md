@@ -6,6 +6,8 @@
 
 **Standing constraints:** conflict/redundancy first; no craft/narrative/mechanics thinning; equal-or-better agent output quality on dedupe (#71/#84/#87); scripts ≠ prose (CD); demotion freeze during migration; legacy filename remorph (kebab / Aruhe / `00` strips) **greenlit 2026-09-14**; other mass consolidates still gated; GitHub SoT; objective tokens via tiktoken when labeled (#86).
 
+Classify operations per `AGENTS.md` **Autonomy classification**. Do not copy that table.
+
 ---
 
 ## Architecture
@@ -23,7 +25,7 @@ Run without fleet chat when clean. Emit compact JSON path+metric (no body dumps)
 | A5 | Empty `_raw/` check | Ingest inbox must clear; report leftover staging files — never overwrite `_raw/` as live canon |
 | A6 | Dry-run / plan reports | Dedup audit + structural remorph plans — report first; **filename legacy remorph apply is greenlit**; other applies stay Nick-gated |
 
-Layer A is **read-only scan + format/structure lint + dry-run plans**. Classify broken links (near-miss vs planned) as report-never-edit unless a deterministic safe fix exists. Lint-green ≠ fidelity (CD/Nick craft gate).
+Layer A MAY apply FR-002 structural repairs unattended (links, required frontmatter, nearest-valid type/lifecycle, kebab remorph). Classify broken links (near-miss vs planned) as report-never-edit unless a deterministic safe FR-002 fix exists. Lint-green ≠ fidelity (CD/Nick craft gate).
 
 **Quiet rule:** if A1 HARD count = 0 and A5 clear and no P0 waste leads, stay silent (no Nick ping).
 
@@ -67,7 +69,7 @@ When cleaning or remorphing: prune **template fluff, duplicate section jobs, and
 ## Cadence (CoS routines)
 
 1. **On-save / write-path** — format + structural write lint when filing; not a Nick ping.
-2. **Weekday ~09:00 keep-ahead** — Layer A full report (scan + dry-run plans). Quiet if clean. Else ranked digest + Layer B packets.
+2. **Weekday ~09:00 keep-ahead** — Layer A scan; apply FR-002 structural repairs unattended; dry-run non-FR-002. Quiet if clean. Else ranked digest + Layer B packets.
 3. **Optional midweek** — ASE context-waste / conflict triage from A2 leads (not byte slim).
 4. **Weekly** — `wiki-digest` knowledge summary to Nick (content), separate from tooling status.
 5. **Post-session (~15m)** — status/stubs append/diff (CE/Ingest); do not smooth-rewrite history.
@@ -133,4 +135,4 @@ Cite: docs/agents/wiki-maintenance-loop.md
 
 ## Expert-practice grounding
 
-Researcher brief (#90): Layer A = read-only scan + format lint + dry-run plans; mutate/rename/merge/demote/conflict resolution stays Nick-gated. Practices mapped from Karpathy llm-wiki, Ranjan fidelity risks, Vault Inspector / vault-cli / Vault Link Check patterns, World Anvil one-write entities, Forte archive≠delete, Matuschak orphan triage, Sly Flourish simplicity ceiling — fleet Researcher packet 2026-09-14.
+Researcher brief (#90): Layer A = scan + format lint + unattended FR-002 structural repair; lore invent, dedup merge, and contradiction resolution stay Nick-gated (Layer C). Practices mapped from Karpathy llm-wiki, Ranjan fidelity risks, Vault Inspector / vault-cli / Vault Link Check patterns, World Anvil one-write entities, Forte archive≠delete, Matuschak orphan triage, Sly Flourish simplicity ceiling — fleet Researcher packet 2026-09-14.

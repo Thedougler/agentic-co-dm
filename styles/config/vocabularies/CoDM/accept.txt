@@ -2,6 +2,8 @@
 # Do not hand-edit; wiki-lint refreshes this Vale vocabulary.
 01
 02
+026 Autonomy Lint Probe
+026-autonomy-lint-probe
 03
 04
 05
@@ -133,6 +135,7 @@ Ashwalls
 Ault
 Auralis
 Authority
+Autonomy
 Bad
 Bala
 Bala Tane
@@ -1017,6 +1020,7 @@ Lighter
 Line
 Line Bank
 line-bank
+Lint
 Lip
 Living
 Lizardfolk
@@ -1349,6 +1353,7 @@ preserved-eel
 Print
 Print Braid
 print-braid
+Probe
 Profile
 Prompter's
 Property

@@ -19,6 +19,8 @@ description: >
 
 You are ingesting source documents into an Obsidian wiki. Your job is not to summarize — it is to **distill and integrate** knowledge across the entire wiki.
 
+Classify operations per `AGENTS.md` **Autonomy classification**. Do not copy that table. Named ingest of sources the DM already named lands in `_staging/` without a second chat accept. Invented names not in the source stay Work. End the named-ingest slice with a done-summary (what changed, where; no question; no wait).
+
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `OBSIDIAN_SOURCES_DIR`, and `OBSIDIAN_LINK_FORMAT` (default: `wikilink`). Only read the specific variables you need — do not log, echo, or reference any other values from these files.
@@ -180,7 +182,7 @@ For each remaining file:
 
 After the run, report each file in processing order: `complete` or `failed`; related reads (identity, origin `staging` or `legacy`, role); misses; recency conflicts; destinations (pages created/updated, staged, unresolved, proposals); failure reason. If related search returned nothing, say so. Attribute later updates to the later file.
 
-**Done when:** every file is `complete` or `failed`, at most one was `open` at a time, every idea has a destination or the file is `failed` with a reason, Step 1d recorded related reads or an empty search, and the DM has the per-file report.
+**Done when:** every file is `complete` or `failed`, at most one was `open` at a time, every idea has a destination or the file is `failed` with a reason, Step 1d recorded related reads or an empty search, and the named-ingest slice has a done-summary (what changed, where; no question; no wait). Invented names not in the source remain Work, not filed facts.
 
 ### Ingesting Git Repositories
 
@@ -391,7 +393,7 @@ Required on the distill path. Preserve and combatant-drops skip this step. Speed
 2. **Search staging.** Look in `_raw/` for each candidate. Read each relevant hit. Origin: `staging`. Status: `read`, `missed`, or `unreadable`.
 3. **Search legacy.** Search legacy collections with `qmd` for the same subject and clearly related subjects. Fetch full sources (`qmd get` / `qmd multi-get`). Origin: `legacy`. A staging hit does not skip this search; a legacy hit does not skip staging. Ingest-time corroboration does not use query-time short-circuit (004).
 4. **Rank recency.** Newest files among the primary and related sources are the latest decisions. Older versions are supporting context. Recency is which file is newer unless the content dates the decision more clearly.
-5. **Apply.** Keep the newest decision. Keep uncontradicted older detail. When an older source contradicts a newer decision, keep the newer decision and surface a proposal or unresolved item. Compiled wiki remains current canon against a legacy hit (004). Named ingest of an approved primary still follows 015. Do not file a legacy hit as a wiki page without DM accept.
+5. **Apply.** Keep the newest decision. Keep uncontradicted older detail. When an older source contradicts a newer decision, keep the newer decision and surface a proposal or unresolved item. Compiled wiki remains current canon against a legacy hit (004). Named ingest of an approved primary still follows 015. Do not file a legacy hit as a wiki page without DM accept. Ingest vs live canon conflict: stage with a visible conflict marker (autonomous); MUST NOT silently overwrite.
 
 A miss, unreadable file, or unreachable collection is recorded. It does not fail the primary by itself. A primary with no related hits still completes; record that search returned nothing.
 

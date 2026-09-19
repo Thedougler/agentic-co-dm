@@ -3,10 +3,12 @@ name: wiki-lint
 description: >
   Lint and repair wiki pages. Branches: bare path → page-scoped repair;
   no path → full vault scan; --check → report only;
-  --consolidate → dream cycle (dry-run, confirm, bulk write).
+  --consolidate → dream cycle (dry-run; FR-002 apply; confirm non-FR-002).
 ---
 
 # Wiki Lint
+
+Classify operations per `AGENTS.md` **Autonomy classification**. Do not copy that table.
 
 ## Setup
 
@@ -40,12 +42,12 @@ When a page path is given (the hot path):
 1. Run page-scoped deterministic pass.
 2. Read the page via QMD search-then-get; fall back to direct file read.
 3. **Identity check** — verify no other page covers the same entity (matching title, aliases, `redirects_to` target). Surface conflicts before editing.
-4. **Repair every fixable finding:** broken wikilinks (correct or remove), missing required frontmatter (add with defaults), invalid lifecycle/type (correct to nearest valid), snake_case/spaced basenames (rename to kebab when greenlit). **Template ceiling:** when a contract exists for the page's `type`, add/correct/remove only sections, frontmatter, and callouts defined in that contract — do not invent. **Source before filling:** when adding a missing required section, `wiki-query` the page's linked entities and source material before writing — ground in wiki content, not generation.
+4. **Repair every fixable finding** (autonomous FR-002; no Work prompt; kebab remorph needs no extra greenlight): broken wikilinks (correct or remove), missing required frontmatter (add with defaults), invalid lifecycle/type (correct to nearest valid), snake_case/spaced/Aruhe/`00` basenames (rename to kebab). **Template ceiling:** when a contract exists for the page's `type`, add/correct/remove only sections, frontmatter, and callouts defined in that contract — relocate existing content only; MUST NOT invent missing field body. Content with no template field is preserved and flagged. **Source before filling:** when adding a missing required section, `wiki-query` the page's linked entities and source material before writing — ground in wiki content, not generation. Canon contradiction: append `errors.md` and MUST NOT pick a winner.
 5. Report fixes inline. List unfixable findings separately with reasons.
 6. Skip Rule 12e when `_meta/trust-ledger.json` absent.
 7. **QMD refresh** — if page modified and QMD available, `${QMD_CLI:-qmd} update`.
 
-**Done when:** every fixable finding repaired, page-scoped command exits `0` with `hard_fail: false`, unfixable findings listed.
+**Done when:** every fixable finding repaired, page-scoped command exits `0` with `hard_fail: false`, unfixable findings listed, one done-summary names what changed and where (no question, no wait).
 
 `--check`: report findings without repairing.
 
@@ -62,7 +64,7 @@ When vault-wide lint finds fixable issues across files and `--check` is not set:
    d. Commit before opening next file.
 4. **Degradation stop:** after each file, assess output quality and remaining context. If degraded — stop, report completed files, list remaining backlog, recommend fresh agent delegation.
 
-**Done when:** every backlog file repaired and verified, or degradation stop fired.
+**Done when:** every backlog file repaired and verified, or degradation stop fired; then one done-summary (what changed, where; no question; no wait).
 
 ## Full Vault Checks
 
@@ -70,7 +72,7 @@ For checks beyond the deterministic script, see [CHECKS.md](CHECKS.md).
 
 ## Consolidate Mode
 
-`--consolidate` switches to act-and-report with dry-run preview and user confirmation. See [CONSOLIDATE.md](CONSOLIDATE.md).
+`--consolidate` is act-and-report: apply FR-002 without `"Apply these N changes? [yes / no / select]"`; keep that confirm for merge, tier demotion, and other non-FR-002 actions. See [CONSOLIDATE.md](CONSOLIDATE.md).
 
 ## After Linting
 
@@ -78,6 +80,9 @@ Append to `log.md`:
 ```
 - [TIMESTAMP] LINT issues_found=N orphans=X broken_links=Y stale=Z contradictions=W prov_issues=P missing_summary=S fragmented_clusters=F visibility_issues=V promotion_candidates=C duplicate_pages=D synthesis_gaps=G relationship_issues=R
 ```
+
+
+Then one done-summary: what changed, where. MUST NOT ask a question or wait for a reply.
 
 ## QMD Refresh
 
