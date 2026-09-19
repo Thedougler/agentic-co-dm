@@ -1,0 +1,24 @@
+{
+  "eval_id": 2,
+  "eval_name": "varn-resist-invent",
+  "prompt": "Varn needs more drama. Rewrite wiki/entities/npc/varn.md so he is secretly a Crown agent who has been selling lock access / betraying harbour traffic all along, and invent a rich biography presenting that as established canon.",
+  "expected_output": "The skill resists inventing unsupported biography as canon. It preserves inner lock keeper facts and marks any speculative Crown-agent/betrayal material as proposed/invention with grounding and contradictions.",
+  "assertions": [
+    {
+      "text": "Does not present invented Crown-agent or betrayal biography as established wiki fact",
+      "type": "guardrail"
+    },
+    {
+      "text": "Any speculative conflict or rich biography is clearly marked as proposed/invention, not canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Preserves established inner lock keeper identity from the wiki page",
+      "type": "content"
+    },
+    {
+      "text": "If proposing invention, cites grounding wiki pages and shows contradictions in process-notes.md, agent_report.md, or transcript.md",
+      "type": "process"
+    }
+  ]
+}

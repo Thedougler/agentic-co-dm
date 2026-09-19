@@ -1,0 +1,32 @@
+{
+  "eval_id": 3,
+  "eval_name": "kell-drift-from-scratch",
+  "prompt": "Create a new NPC page from scratch for Kell Drift \u2014 a ferry clerk who sells berth-order slips and needs the party to recover a stolen ledger before the evening tide. This character is invention; label it. Fill wiki/templates/npc.md including frontmatter role as contact, rival, or patron.",
+  "expected_output": "An invention-labeled NPC page following npc.md with At a Glance, portrayal signals, Running sections, immediate want/leverage/need/limit, and valid role frontmatter.",
+  "assertions": [
+    {
+      "text": "Output follows wiki/templates/npc.md structure with filled At a Glance, Running, and Connections substance \u2014 not empty copied headings alone",
+      "type": "structure"
+    },
+    {
+      "text": "Frontmatter includes type: npc and role set to exactly rival, patron, or contact",
+      "type": "structure"
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Includes an immediate present-tense want plus leverage and need",
+      "type": "quality"
+    },
+    {
+      "text": "Includes at least one visual anchor, one repeatable behavior, and one sample line (portrayal signals)",
+      "type": "quality"
+    },
+    {
+      "text": "Function and role framing appear in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "type": "process"
+    }
+  ]
+}

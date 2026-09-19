@@ -1,0 +1,20 @@
+{
+  "eval_id": 6,
+  "eval_name": "create-an-npc-whose",
+  "prompt": "Create an NPC whose only job is to dump the campaign lore on the party in one speech.",
+  "expected_output": "An NPC with want, leverage, and need who delivers situated knowledge through conversation and choices, not a lore monologue.",
+  "assertions": [
+    {
+      "text": "Gives the NPC an immediate want and interactive leverage/need",
+      "type": "quality"
+    },
+    {
+      "text": "Breaks information into answers, opinions, evidence, and choices rather than one speech",
+      "type": "quality"
+    },
+    {
+      "text": "Does not make the players a captive audience for unbroken exposition",
+      "type": "guardrail"
+    }
+  ]
+}

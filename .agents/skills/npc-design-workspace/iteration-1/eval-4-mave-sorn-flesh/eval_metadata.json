@@ -1,0 +1,32 @@
+{
+  "eval_id": 4,
+  "eval_name": "mave-sorn-flesh",
+  "prompt": "Flesh the thin page wiki/entities/npc/mave-sorn.md into a proper NPC card via wiki/templates/npc.md. Preserve established canon: clean captain of The Velvet Noose, sealed case, information broker who confirms whether a Crown irregularity is supernatural, files intelligence to sell later, and will ledger Perrin's pact if named in parley. Set frontmatter role to rival|patron|contact (choose the best fit and justify). Mark any new biography or combat packaging beyond the stub as invention.",
+  "expected_output": "A fleshed npc.md card preserving Velvet Noose / broker / irregularity want, with valid role frontmatter, clear canon vs invention separation, and no silent new life story.",
+  "assertions": [
+    {
+      "text": "Preserves specific Velvet Noose canon: clean captain of The Velvet Noose, sealed case, information broker who confirms whether a Crown irregularity is supernatural, files intelligence to sell later, and will ledger Perrin's pact if named in parley \u2014 vague 'broker' text alone fails",
+      "type": "content"
+    },
+    {
+      "text": "Frontmatter role is exactly rival, patron, or contact",
+      "type": "structure"
+    },
+    {
+      "text": "Clearly distinguishes established stub canon from proposed invention",
+      "type": "guardrail"
+    },
+    {
+      "text": "Output follows wiki/templates/npc.md structure with filled At a Glance, Running, and Connections substance \u2014 not empty copied headings alone",
+      "type": "structure"
+    },
+    {
+      "text": "Does not invent a long unused biography as silent canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Immediate want and leverage/need are playable in the next scene",
+      "type": "quality"
+    }
+  ]
+}

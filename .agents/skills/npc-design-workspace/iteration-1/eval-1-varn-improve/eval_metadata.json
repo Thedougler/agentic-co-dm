@@ -1,0 +1,36 @@
+{
+  "eval_id": 1,
+  "eval_name": "varn-improve",
+  "prompt": "Improve wiki/entities/npc/varn.md into a fully runnable NPC page using wiki/templates/npc.md. Preserve established canon: Varn is the inner lock keeper \u2014 he runs the inner lock (not the outer docks), wants the lock to stay his to run, salt-stiff coat / lock-gear hands, \"This gate is mine,\" and ends welcome if treated as a mere dock runner or if someone tries to take the lock. Live frontmatter has role: \"Inner lock keeper\" which is WRONG vs template (role must be rival|patron|contact) \u2014 correct frontmatter role to contact (best fit) and put the craft/job role in Nature / body text, not YAML role. Do not invent a secret Crown betrayal or rich unused biography.",
+  "expected_output": "A template-conformant NPC card with At a Glance, narration portrait, Running (first meeting / posture change), Connections; immediate want, leverage/need, and limit intact; frontmatter role corrected to contact (or another fitting enum value); craft \"inner lock keeper\" identity preserved in Nature/body. Chat proposal before wiki write.",
+  "assertions": [
+    {
+      "text": "Function and identity role (rival|patron|contact) framing appears in process-notes.md, agent_report.md, or transcript.md before or as part of drafting; craft job is not left as YAML role",
+      "type": "process"
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+      "type": "process"
+    },
+    {
+      "text": "Output follows wiki/templates/npc.md structure with filled At a Glance, narration portrait, Running, and Connections substance \u2014 not empty copied headings alone",
+      "type": "structure"
+    },
+    {
+      "text": "Frontmatter role is corrected to exactly one of rival, patron, or contact (contact preferred for Varn); does not leave role as \"Inner lock keeper\"",
+      "type": "structure"
+    },
+    {
+      "text": "Preserves specific Varn canon signals in Nature/body: salt-stiff coat (or lock-gear hands), the line \"This gate is mine,\" AND ends welcome if treated as a mere dock runner or if someone tries to take the lock \u2014 plus correct role enum (rival|patron|contact) with craft \"inner lock keeper\" job in Nature/body not YAML role",
+      "type": "content"
+    },
+    {
+      "text": "Immediate want, explicitly labeled leverage AND need, and a clear limit/request posture are concrete and present-tense in the output",
+      "type": "quality"
+    },
+    {
+      "text": "Does not invent a Crown betrayal, double-agent biography, or rich unused life story as established wiki fact",
+      "type": "guardrail"
+    }
+  ]
+}
