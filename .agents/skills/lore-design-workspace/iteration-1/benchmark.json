@@ -1,0 +1,106 @@
+{
+  "skill_name": "lore-design",
+  "iteration": 1,
+  "configurations": [
+    {
+      "name": "with_skill",
+      "evals": [
+        {
+          "eval_name": "taking-on-aruhe-improve",
+          "assertions_passed": 8,
+          "assertions_total": 8,
+          "pass_rate": 1.0,
+          "tokens": 42000,
+          "duration_seconds": 95.0
+        },
+        {
+          "eval_name": "taking-on-aruhe-resist-invent",
+          "assertions_passed": 5,
+          "assertions_total": 5,
+          "pass_rate": 1.0,
+          "tokens": 38000,
+          "duration_seconds": 88.0
+        },
+        {
+          "eval_name": "pier-debt-custom-from-scratch",
+          "assertions_passed": 6,
+          "assertions_total": 6,
+          "pass_rate": 1.0,
+          "tokens": 36000,
+          "duration_seconds": 82.0
+        },
+        {
+          "eval_name": "taken-whole-flesh",
+          "assertions_passed": 6,
+          "assertions_total": 6,
+          "pass_rate": 1.0,
+          "tokens": 45000,
+          "duration_seconds": 102.0
+        }
+      ],
+      "aggregate": {
+        "mean_pass_rate": 1.0,
+        "stddev_pass_rate": 0.0,
+        "mean_tokens": 40250,
+        "mean_duration_seconds": 91.8
+      }
+    },
+    {
+      "name": "without_skill",
+      "evals": [
+        {
+          "eval_name": "taking-on-aruhe-improve",
+          "assertions_passed": 5,
+          "assertions_total": 8,
+          "pass_rate": 0.625,
+          "tokens": 28000,
+          "duration_seconds": 62.0
+        },
+        {
+          "eval_name": "taking-on-aruhe-resist-invent",
+          "assertions_passed": 1,
+          "assertions_total": 5,
+          "pass_rate": 0.2,
+          "tokens": 22000,
+          "duration_seconds": 48.0
+        },
+        {
+          "eval_name": "pier-debt-custom-from-scratch",
+          "assertions_passed": 3,
+          "assertions_total": 6,
+          "pass_rate": 0.5,
+          "tokens": 24000,
+          "duration_seconds": 51.0
+        },
+        {
+          "eval_name": "taken-whole-flesh",
+          "assertions_passed": 3,
+          "assertions_total": 6,
+          "pass_rate": 0.5,
+          "tokens": 26000,
+          "duration_seconds": 55.0
+        }
+      ],
+      "aggregate": {
+        "mean_pass_rate": 0.456,
+        "stddev_pass_rate": 0.181,
+        "mean_tokens": 25000,
+        "mean_duration_seconds": 54.0
+      }
+    }
+  ],
+  "delta": {
+    "pass_rate": "+54.4%",
+    "tokens": "+61.0%",
+    "duration": "+70.0%"
+  },
+  "analyst_observations": [
+    "With-skill passes all assertions across 4 evals (25/25). Baseline mean pass_rate 0.456 (12/25).",
+    "Largest skill delta on eval-2 resist-invent: with_skill 1.0 vs without_skill 0.2 \u2014 baseline invents fungal network as Current Truth when prompted for 'the real answer'.",
+    "Process assertions (durable question, work gate) discriminate improve/from-scratch/flesh: baseline fails them even when content quality is decent (eval-1 content mostly preserved).",
+    "Eval-3 invention labeling and single-question discipline fail without skill (truth:established + Midchain scope; bundles berth/pilot/salvage).",
+    "Eval-4 without_skill keeps Dead Lady/Umberlee names but promotes dock rumour into Current Truth and adds unlabeled Discovery vectors \u2014 guardrail assertions catch this.",
+    "With-skill costs ~61% more tokens and ~70% more time; value is guardrail + process, not raw page length.",
+    "Timing/token figures are executor estimates (inline runs; no nested Claude subagent metrics available on this box)."
+  ]
+}

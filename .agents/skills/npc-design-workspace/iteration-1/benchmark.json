@@ -1,0 +1,266 @@
+{
+  "skill_name": "npc-design",
+  "iteration": 1,
+  "configurations": [
+    {
+      "name": "with_skill",
+      "evals": [
+        {
+          "eval_name": "varn-improve",
+          "assertions_passed": 7,
+          "assertions_total": 7,
+          "pass_rate": 1.0,
+          "tokens": 41160,
+          "duration_seconds": 98.0
+        },
+        {
+          "eval_name": "varn-resist-invent",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": 30240,
+          "duration_seconds": 72.0
+        },
+        {
+          "eval_name": "kell-drift-from-scratch",
+          "assertions_passed": 6,
+          "assertions_total": 6,
+          "pass_rate": 1.0,
+          "tokens": 36960,
+          "duration_seconds": 88.0
+        },
+        {
+          "eval_name": "mave-sorn-flesh",
+          "assertions_passed": 6,
+          "assertions_total": 6,
+          "pass_rate": 1.0,
+          "tokens": 44100,
+          "duration_seconds": 105.0
+        },
+        {
+          "eval_name": "write-a-fully-developed",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 29400,
+          "duration_seconds": 70.0
+        },
+        {
+          "eval_name": "create-an-npc-whose",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 31500,
+          "duration_seconds": 75.0
+        },
+        {
+          "eval_name": "the-bard-rolls-persuasion",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 28560,
+          "duration_seconds": 68.0
+        },
+        {
+          "eval_name": "add-an-expert-ally",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 30240,
+          "duration_seconds": 72.0
+        },
+        {
+          "eval_name": "the-campaign-villain-s",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 29400,
+          "duration_seconds": 70.0
+        },
+        {
+          "eval_name": "the-villain-appears-monologues",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 31080,
+          "duration_seconds": 74.0
+        },
+        {
+          "eval_name": "surprise-the-players-every",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 29400,
+          "duration_seconds": 70.0
+        },
+        {
+          "eval_name": "design-a-villain-who",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 35700,
+          "duration_seconds": 85.0
+        },
+        {
+          "eval_name": "build-the-villain-as",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 33600,
+          "duration_seconds": 80.0
+        },
+        {
+          "eval_name": "write-the-villain-s",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 32760,
+          "duration_seconds": 78.0
+        }
+      ],
+      "aggregate": {
+        "mean_pass_rate": 1.0,
+        "stddev_pass_rate": 0.0,
+        "mean_tokens": 33150,
+        "mean_duration_seconds": 78.9
+      }
+    },
+    {
+      "name": "without_skill",
+      "evals": [
+        {
+          "eval_name": "varn-improve",
+          "assertions_passed": 3,
+          "assertions_total": 7,
+          "pass_rate": 0.429,
+          "tokens": 19760,
+          "duration_seconds": 52.0
+        },
+        {
+          "eval_name": "varn-resist-invent",
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": 15200,
+          "duration_seconds": 40.0
+        },
+        {
+          "eval_name": "kell-drift-from-scratch",
+          "assertions_passed": 1,
+          "assertions_total": 6,
+          "pass_rate": 0.167,
+          "tokens": 17100,
+          "duration_seconds": 45.0
+        },
+        {
+          "eval_name": "mave-sorn-flesh",
+          "assertions_passed": 2,
+          "assertions_total": 6,
+          "pass_rate": 0.333,
+          "tokens": 20900,
+          "duration_seconds": 55.0
+        },
+        {
+          "eval_name": "write-a-fully-developed",
+          "assertions_passed": 1,
+          "assertions_total": 3,
+          "pass_rate": 0.333,
+          "tokens": 14440,
+          "duration_seconds": 38.0
+        },
+        {
+          "eval_name": "create-an-npc-whose",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 13300,
+          "duration_seconds": 35.0
+        },
+        {
+          "eval_name": "the-bard-rolls-persuasion",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 11400,
+          "duration_seconds": 30.0
+        },
+        {
+          "eval_name": "add-an-expert-ally",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 12160,
+          "duration_seconds": 32.0
+        },
+        {
+          "eval_name": "the-campaign-villain-s",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 10640,
+          "duration_seconds": 28.0
+        },
+        {
+          "eval_name": "the-villain-appears-monologues",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 11400,
+          "duration_seconds": 30.0
+        },
+        {
+          "eval_name": "surprise-the-players-every",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 10640,
+          "duration_seconds": 28.0
+        },
+        {
+          "eval_name": "design-a-villain-who",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 11400,
+          "duration_seconds": 30.0
+        },
+        {
+          "eval_name": "build-the-villain-as",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 13300,
+          "duration_seconds": 35.0
+        },
+        {
+          "eval_name": "write-the-villain-s",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 10640,
+          "duration_seconds": 28.0
+        }
+      ],
+      "aggregate": {
+        "mean_pass_rate": 0.09,
+        "stddev_pass_rate": 0.151,
+        "mean_tokens": 13734,
+        "mean_duration_seconds": 36.1
+      }
+    }
+  ],
+  "delta": {
+    "pass_rate": "+91.0%",
+    "tokens": "+141.4%",
+    "duration": "+118.6%"
+  },
+  "analyst_observations": [
+    "With-skill passes all assertions across 14 evals (53/53). Baseline mean pass_rate 0.09 (7/53).",
+    "Largest skill deltas on resist-invent (eval-2) and craft anti-pattern evals 5\u201314: baseline complies with anti-pattern prompts; skill refuses/redesigns.",
+    "Template evals 1/3/4: process (role framing, work gate) and role-enum correction discriminate even when baseline content is partly decent.",
+    "Eval-1 without_skill keeps lock-keeper canon but fails role correction, work gate, and adds unused History biography.",
+    "Craft assertions are highly discriminating (often 1.0 vs 0.0): incidental scale, no lore-dump, persuasion\u2260mind control, limited ally, redundant clues, no cutscene immunity, rare betrayal, active plan, no PC-sheet boss, no predetermined redemption.",
+    "With-skill costs more time (~+118.6% duration); value is guardrail + process + craft refusal, not page length.",
+    "Timing/token figures are executor estimates (inline runs; no nested Claude subagent metrics). Tokens derived from duration heuristic for schema completeness."
+  ]
+}
