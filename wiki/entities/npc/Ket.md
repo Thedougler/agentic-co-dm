@@ -5,7 +5,8 @@ tags: ["shattered-sea", "npc"]
 sources:
   - "story-so-far.md"
   - "campaign-os:ket.md"
-summary: "Freed by the crew to fly home toward Murrat after the Surety boarding."
+  - "campaign-os:murrats-shroud-kets-warning.md"
+summary: "Freed by the crew to fly home toward Murrat after the Surety boarding; he can delay its Moucheron greeting party for one turn."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -15,7 +16,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T19:35:00Z
-updated: 2026-09-13
+updated: 2026-09-19
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -43,6 +44,22 @@ He is free, flying toward Murrat.
 
 > [!mechanic]
 > Owes the crew in the way a freed prisoner owes people. It's complicated and not guaranteed. Open question: why was he this far from Murrat, and what does he know about the [[five-blades]] connection Rook was curious about? If the crew reaches Murrat, [[Varet]] will recognize him as Murrat-born immediately.
+
+## Return to Murrat
+
+![[murrats-shroud-kets-warning-narration-open]]
+
+When the [[Uncertainty]] closes on [[Murrat]], Ket detaches from the cloud with three to five hungry [[Moucheron]]. He recognizes the ship and shouts for the crew to leave immediately, but he flies with the greeting party rather than leading it.
+
+**Want.** Ket wants the crew to leave before Murrat kills them.
+
+**Leverage.** His history with [[jean-claude-tabarnack|Jean-Claude]] and [[crissdalynn-khinriss|Crissdalynn]] buys the crew one turn of hesitation.
+
+**Limit.** The other Moucheron attack the nearest warm-blooded creature at once. After one turn, Ket joins them whether the crew listened, negotiated, or hesitated.
+
+**If the crew flees.** The greeting party loses interest once the ship gains a few hundred feet of distance, and Ket returns to Murrat.
+
+**If the crew stays.** Ket attacks alongside the first wave. More Moucheron detach from the cloud within rounds, and landing only brings the island's scouts into the response.
 
 ## Stats & Combat
 

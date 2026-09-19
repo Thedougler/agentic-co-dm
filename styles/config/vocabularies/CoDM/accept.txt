@@ -1063,14 +1063,11 @@ Kessen
 Kessler
 Ket
 Ket Solane
-Ket's
-Ket's Warning
 ket-solane
 Keth
 Keth Naar
 keth-naar
 Kets
-kets-warning
 Kettil
 Kettil Ormsson
 kettil-ormsson
@@ -2157,7 +2154,6 @@ The Cast
 The Cave
 The Chained Lighter
 The Chimney
-The Cloud Resolves
 The Deaf Ear
 the Depot
 The Drawn Curtain
@@ -2240,7 +2236,6 @@ the-captains-map
 the-cast
 the-chained-lighter
 the-chimney
-the-cloud-resolves
 the-deaf-ear
 the-drawn-curtain
 the-encore-bell

@@ -2,8 +2,12 @@
 title: "Murrat"
 category: entities
 tags: [shattered-sea, place]
-sources: ["Murrat.md"]
-summary: "A mile-and-a-half limestone reef that looks empty until canopy closes twenty feet inland; feels hunted before the first rope bridge."
+sources:
+  - "Murrat.md"
+  - "campaign-os:murrats-shroud-the-cloud-resolves.md"
+  - "campaign-os:murrats-shroud-the-cloud-resolves-narration-open.md"
+  - "campaign-os:murrats-shroud-kets-warning.md"
+summary: "A mile-and-a-half limestone reef whose dark Moucheron cloud resolves into wings over the canopy; the island feels hunted before the first rope bridge."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -13,7 +17,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T07:30:00Z
-updated: 2026-09-13T07:30:00Z
+updated: 2026-09-19
 type: place
 reveal: unrevealed
 campaign: shattered-sea
@@ -38,6 +42,12 @@ A mile-and-a-half limestone reef that looks empty until canopy closes twenty fee
 - Tide pulling east and movement above.
 - Limestone, wet rope, and leaf mould.
 
+## What
+
+- A dark mass hangs over the island without moving with the weather.
+- The buzzing becomes audible from open water before the cloud resolves into millions of individual Moucheron.
+- A reef ring surrounds the island, and no marked safe passage leads through it.
+
 ## Who is here
 - Dozens of Moucheron kin-villages.
 - Outsiders are hunted.
@@ -48,6 +58,13 @@ A mile-and-a-half limestone reef that looks empty until canopy closes twenty fee
 ## Hooks
 - Land only with a reason that survives local blood custom.
 - Find the eastern reef's true length before the tide pulls a boat onto two existing wrecks.
+
+## Approach pressure
+
+- **Observe from a distance.** Spyglasses show tiny winged shapes circling in the millions without provoking the island.
+- **Close further.** The buzzing becomes physical through the hull, shapes detach from the cloud, and the greeting party flies toward the ship.
+- **Turn away.** The cloud stays over Murrat, but the island does not pursue a ship that leaves.
+- **Land.** The canopy's cliff villages spot the landing before the keel reaches sand, and scouts answer the intrusion.
 
 ## Secrets
 The kin-villages' internal law and the reason for the two wrecks remain open.

@@ -4187,12 +4187,13 @@
     "source_type": "document"
   },
   "/home/box/agentic-co-dm/wiki/_raw/murrats-shroud-kets-warning.md": {
+    "pages_produced": [
+      "entities/npc/Ket.md",
+      "entities/Ket's Warning.md"
+    ],
     "content_hash": "sha256:efc035a7c3b546203e7c691cdd76f7b5f83c4f5377e8a80f123ac8682e4c656c",
     "last_ingested": "2026-09-13T20:20:43Z",
     "packet": "ingest-raw-2026-09-13-gh-2",
-    "pages_produced": [
-      "entities/Ket's Warning.md"
-    ],
     "project": "shattered-sea",
     "source_type": "document"
   },
@@ -7276,7 +7277,7 @@
     "project": "shattered-sea",
     "source_type": "document"
   },
-  "last_updated": "2026-09-18T16:24:17Z",
+  "last_updated": "2026-09-19T22:47:40Z",
   "page_identity_transitions": [
     {
       "page_path": "entities/faction/Khlysty.md",
@@ -7312,6 +7313,20 @@
       "target": "entities/lore/grung-color-and-the-sealing-rite.md",
       "reason": "Twiceborn censure lore consolidated into the canonical Grung color and sealing-rite owner.",
       "timestamp": "2026-09-18T07:33:32Z"
+    },
+    {
+      "page_path": "entities/Ket's Warning.md",
+      "transition": "merged_into",
+      "target": "entities/npc/Ket.md",
+      "reason": "Integrated into Ket owner page",
+      "timestamp": "2026-09-19T22:46:56.923808+00:00"
+    },
+    {
+      "page_path": "entities/The Cloud Resolves.md",
+      "transition": "merged_into",
+      "target": "entities/place/Murrat.md",
+      "reason": "Integrated into Murrat place page",
+      "timestamp": "2026-09-19T22:46:56.993253+00:00"
     }
   ],
   "sources": {
@@ -8418,7 +8433,7 @@
   },
   "stats": {
     "packet_ingest-raw-2026-09-13-gh-2": 515,
-    "total_pages": 755,
+    "total_pages": 756,
     "total_sources_ingested": 819
   },
   "version": 1

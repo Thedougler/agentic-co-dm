@@ -58,18 +58,13 @@ Will curiosity cost the crew of the Uncertainty blood, or do they read the warni
 - Murrat's cloud is visible from open water: a dark mass that looks like weather until the buzzing resolves it.
 - Ket returned home after Session 02.
 
-### Active Beat
+## Murrat approach
 
-[[the-cloud-resolves]]
+The approach belongs to [[Murrat]]. From open water, the cloud reads as weather until its buzzing resolves into millions of wings. Closing distance detaches a greeting party; [[Ket]] recognizes the [[Uncertainty]] and gives the crew one turn to flee before the Moucheron attack.
 
-### Beat Spine
+## Live Branches
 
-- [[the-cloud-resolves]] — the Uncertainty closes on Murrat and the buzzing names the cloud
-- [[kets-warning]] — Moucheron fly out to greet the ship; Ket recognizes the crew and warns them to go
-
-### Live Branches
-
-The situation escalates in one direction: approach, warning, attack, flee or die.
+The situation escalates in one direction: observe, approach, warning, attack, flee or die. The crew can turn away at any point, but landing exposes them to the island's cliff-village scouts.
 
 ### Climax Readiness
 
