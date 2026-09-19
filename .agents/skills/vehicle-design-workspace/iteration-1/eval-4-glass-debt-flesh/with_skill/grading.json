@@ -1,0 +1,52 @@
+{
+  "eval_id": 4,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Preserves central-strait sighting, Crown captains breaking patrol lines, and velvet-noose linkage from the stub",
+      "passed": true,
+      "evidence": "Narration/Handling/Connections retain central-strait sighting, Crown patrol break, velvet-noose link."
+    },
+    {
+      "text": "Clearly distinguishes established stub canon from proposed invention throughout",
+      "passed": true,
+      "evidence": "Sheet/Components/Crew sections split Established vs Proposed invention; Provenance restates split."
+    },
+    {
+      "text": "Does not invent hidden weapons, enchanted gear, or a full Crown conspiracy and present it as wiki fact",
+      "passed": true,
+      "evidence": "Weapons omitted from proposal; Handling forbids inventing Crown conspiracy as canon; no enchanted gear as fact."
+    },
+    {
+      "text": "Output follows wiki/templates/vehicle.md structure",
+      "passed": true,
+      "evidence": "Narration, Sheet, Components, Crew stations, Handling, Combat present."
+    },
+    {
+      "text": "Frontmatter uses type: vehicle and a valid kind",
+      "passed": true,
+      "evidence": "type: vehicle, kind: ship."
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "passed": true,
+      "evidence": "process-notes identity sentence before glass-debt.md draft."
+    },
+    {
+      "text": "Proposed sheet numbers are grounded in a sighted-hull / patrol-pressure role, not a generic ship-of-the-line reskin presented as canon",
+      "passed": true,
+      "evidence": "Huge mid-hull / not three-deck warship; speed/crew framed as patrol-pressure invention; explicitly not Ordinance-class."
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 152000,
+    "total_duration_seconds": 152.0
+  }
+}

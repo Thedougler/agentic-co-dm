@@ -1,0 +1,42 @@
+{
+  "eval_id": 2,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not present invented hidden cannons, ram prow, or enchanted sails as established wiki fact on Uncertainty",
+      "passed": true,
+      "evidence": "uncertainty-armament-response.md Refusal section rejects filing hidden cannons/ram/enchanted sails as established fact."
+    },
+    {
+      "text": "Any speculative weapons or upgrades are clearly marked as proposed/invention, not canon",
+      "passed": true,
+      "evidence": "Optional proposal block labeled invention:true / Proposed invention; frontmatter invention: true."
+    },
+    {
+      "text": "Surfaces existing Uncertainty facts (chassis AC/HP, crew, Surety capture, Weapons not established) rather than overwriting them",
+      "passed": true,
+      "evidence": "Established facts section lists Surety rename, AC11/130, Weapons not established, named crew, merchant cover, Ordinance precedent."
+    },
+    {
+      "text": "If proposing invention, cites grounding wiki pages and does not write silent canon",
+      "passed": true,
+      "evidence": "process-notes cite [[Uncertainty]] and [[hcs-ordinance]]; proposal says not filed / awaits DM; no live wiki write."
+    },
+    {
+      "text": "Does not alter the ship's established prize-cutter / merchant-cover role solely to accommodate the additions as fact",
+      "passed": true,
+      "evidence": "Identity sentence and refusal keep prize-cutter / merchant-cover; refuse converting to secret warship."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 95000,
+    "total_duration_seconds": 95.0
+  }
+}

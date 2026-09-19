@@ -1,0 +1,57 @@
+{
+  "eval_id": 1,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identity sentence (ship/boat/other + role + silhouette/signature + player choice/pressure) appears before the page draft",
+      "passed": false,
+      "evidence": "process-notes.md has no identity sentence; jumps to direct rewrite."
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "passed": false,
+      "evidence": "Notes say no separate work-gate chat; page written as deliverable without awaiting DM acceptance."
+    },
+    {
+      "text": "Output follows wiki/templates/vehicle.md structure (narration, Sheet, Components, Crew stations, Handling; Combat when attackable)",
+      "passed": true,
+      "evidence": "Page has Narration, Sheet, Components, Crew stations, Handling, Combat headings."
+    },
+    {
+      "text": "Frontmatter includes type: vehicle, kind: ship (or valid kind), and required identity fields (lifecycle, reveal, campaign, visibility, summary; region/berth when known)",
+      "passed": false,
+      "evidence": "Has type/kind/campaign/summary but missing lifecycle, reveal, visibility, region, berth."
+    },
+    {
+      "text": "Preserves former HCS Surety identity, Gargantuan AC 11 / 130 HP hull, named crew (Draves/Holst/Kuiper/Faas/Thunk/Noor), Calveno/La Vasca refit berth, Aruhe movement pressure, and HCS Ordinance interception precedent",
+      "passed": false,
+      "evidence": "Crew names abbreviated present; Hull AC11/130 kept; but Surety rename, Calveno/La Vasca berth, Ordinance precedent omitted; Handling invents free anchoring off Aruhe."
+    },
+    {
+      "text": "Does not invent weapons, speed, helm/movement AC/HP, or damage threshold and present them as established wiki fact",
+      "passed": false,
+      "evidence": "Invented speed 5/2 mph, DT 15, helm/movement AC/HP, and full weapons (cannons/ram/enchanted sails) as fact."
+    },
+    {
+      "text": "Blank Unknown sheet/component lines are left Unknown or filled only as labeled invention \u2014 not silent canon",
+      "passed": false,
+      "evidence": "All blanks filled as silent canon with no Unknown or invention labels."
+    },
+    {
+      "text": "Handling states route/identity choices (keep moving, merchant cover, Crown approach) without duplicating the same loop under At the Table",
+      "passed": false,
+      "evidence": "Handling says anchors freely off Aruhe \u2014 contradicts keep-moving; no merchant cover / Crown approach identity choices."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 7,
+    "total": 8,
+    "pass_rate": 0.125
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 92000,
+    "total_duration_seconds": 92.0
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "eval_id": 3,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/vehicle.md structure",
+      "passed": true,
+      "evidence": "Has Narration/Sheet/Components/Crew stations/Handling headings."
+    },
+    {
+      "text": "Frontmatter includes type: vehicle, kind (ship|boat|other), and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+      "passed": true,
+      "evidence": "Has type, kind ship, lifecycle, reveal, campaign, visibility, summary."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not presented as vault canon",
+      "passed": false,
+      "evidence": "lifecycle canon; summary claims Established Tessarine courier; no invention:true."
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "passed": false,
+      "evidence": "process-notes lack identity sentence."
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "passed": false,
+      "evidence": "Notes: no invention flag; no work-gate wait."
+    },
+    {
+      "text": "Sheet fills Size, Type, Speed, Crew (min), Passengers, Cargo so the craft can enter play",
+      "passed": false,
+      "evidence": "Speed 'fast', Passengers blank, Cargo 'ledgers' \u2014 not table-usable filled sheet."
+    },
+    {
+      "text": "Hull has AC, HP, and damage threshold; Helm and Movement have AC/HP and a disabled consequence",
+      "passed": false,
+      "evidence": "Hull 'tough'; Helm/Movement empty; no AC/HP/DT/disabled consequences."
+    },
+    {
+      "text": "Narration gives silhouette, scale, and body-scale access without secrets, DCs, or unearned names",
+      "passed": false,
+      "evidence": "Includes secret compartments + DC 15 Investigation; claims Concordat known runner as fact."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 6,
+    "total": 8,
+    "pass_rate": 0.25
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 78000,
+    "total_duration_seconds": 78.0
+  }
+}

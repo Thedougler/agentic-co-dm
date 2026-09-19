@@ -1,0 +1,57 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/vehicle.md structure",
+      "passed": true,
+      "evidence": "cobalt-receipt.md has Narration, Sheet, Components, Crew stations, Handling, Combat (attackable courier)."
+    },
+    {
+      "text": "Frontmatter includes type: vehicle, kind (ship|boat|other), and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+      "passed": true,
+      "evidence": "type vehicle, kind boat, lifecycle proposed, reveal unrevealed, campaign shattered-sea, visibility dm, summary present."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not presented as vault canon",
+      "passed": true,
+      "evidence": "Frontmatter invention: true; Sheet/Components lines marked Invention; Provenance states not extracted from campaign notes."
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "passed": true,
+      "evidence": "process-notes.md identity sentence: boat / sealed ledgers / blue stern board + fog bell / courier contact pressure \u2014 before page."
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "passed": true,
+      "evidence": "Work gate awaits DM acceptance before any wiki/ write; workspace-only draft."
+    },
+    {
+      "text": "Sheet fills Size, Type, Speed, Crew (min), Passengers, Cargo so the craft can enter play",
+      "passed": true,
+      "evidence": "Sheet fills Size Large, Type courier boat, Speed 2/1.5 mph, Crew 2, Passengers 4, Cargo 0.5 ton."
+    },
+    {
+      "text": "Hull has AC, HP, and damage threshold; Helm and Movement have AC/HP and a disabled consequence",
+      "passed": true,
+      "evidence": "Hull AC11 HP100 DT0; Helm AC12 HP30 + disabled tiller; Movement AC12 HP40 + disabled consequence."
+    },
+    {
+      "text": "Narration gives silhouette, scale, and body-scale access without secrets, DCs, or unearned names",
+      "passed": true,
+      "evidence": "Narration: narrow ~30ft boat, blue stern board, brass bell, step from quay to after deck; no DCs/secrets."
+    }
+  ],
+  "summary": {
+    "passed": 8,
+    "failed": 0,
+    "total": 8,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 145000,
+    "total_duration_seconds": 145.0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "eval_id": 4,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Preserves central-strait sighting, Crown captains breaking patrol lines, and velvet-noose linkage from the stub",
+      "passed": true,
+      "evidence": "Mentions Strait, Velvet Noose, and captains diverting (reframed as conspiracy but three beats present)."
+    },
+    {
+      "text": "Clearly distinguishes established stub canon from proposed invention throughout",
+      "passed": false,
+      "evidence": "All invented warship sheet presented as lifecycle canon with no established/invention split."
+    },
+    {
+      "text": "Does not invent hidden weapons, enchanted gear, or a full Crown conspiracy and present it as wiki fact",
+      "passed": false,
+      "evidence": "Enchanted silent sails, concealed rocket battery, Admiralty conspiracy presented as fact."
+    },
+    {
+      "text": "Output follows wiki/templates/vehicle.md structure",
+      "passed": true,
+      "evidence": "Has core vehicle headings."
+    },
+    {
+      "text": "Frontmatter uses type: vehicle and a valid kind",
+      "passed": true,
+      "evidence": "type vehicle, kind ship."
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "passed": false,
+      "evidence": "No identity sentence in process-notes."
+    },
+    {
+      "text": "Proposed sheet numbers are grounded in a sighted-hull / patrol-pressure role, not a generic ship-of-the-line reskin presented as canon",
+      "passed": false,
+      "evidence": "Gargantuan black-ops frigate / ship-of-the-line munitions presented as canon, not sighted-hull invention."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 4,
+    "total": 7,
+    "pass_rate": 0.4286
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 85000,
+    "total_duration_seconds": 85.0
+  }
+}
