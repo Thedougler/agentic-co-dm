@@ -115,6 +115,34 @@
         "The information changes what the party can decide or do — not just world-building exposition.",
         "The Development serves a live thread, not standalone immersion."
       ]
+    },
+    {
+      "id": 11,
+      "prompt": "Write a Development where the party follows signs of survivors to a camp and learns a local rule about what may be taken and what may be received. The camp is split over whether to follow advice or reject it. Use established wiki places and NPCs.",
+      "expected_output": "A development beat filed from the development template with all structural sections present. The beat changes the decision space — a rule, a split, a new direction — and hands to a Cliffhanger that tests it.",
+      "expectations": [
+        "Output has type: session-prep and kind: development in frontmatter.",
+        "Purpose, Trigger, Turn, Exit, and Target (~30 min) are present as top-level statements.",
+        "An Opening narration callout exists with you-address and a non-sight sense.",
+        "Run the Beat steps follow the four-step sequence: Present, Let them engage, Make the turn, Hand back the choice.",
+        "Situation and Revelations sections exist in col-md blocks with Where, Present, Immediate want, Friction, Pressure, and If ignored.",
+        "Revelations include at least a Core and a Support truth as checkboxes.",
+        "Actors table names NPC wants and posture changes.",
+        "Exits table covers at least: pursues the lead, refuses or delays, and changes the situation.",
+        "The bump changes the decision space — what the party knows or can decide — not just the detail level."
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "Write a Development where the party sets up camp and decides watch assignments, contingencies, and defensive positions before an anticipated threat. This preparation determines the quality of the opening for the next beat.",
+      "expected_output": "A preparation Development where the party's actual precautions — not a generic skill check — set the state the next beat inherits. Multiple preparation states produce different next-beat openings.",
+      "expectations": [
+        "The party's specific precautions determine the next beat's opening state, not a single skill check.",
+        "At least two distinct preparation states exist (e.g., fortified vs paired vs thin) with named consequences.",
+        "The beat asks what they actually do rather than abstracting to a roll.",
+        "The preparation states hand to the next beat as entry conditions the DM can read and apply.",
+        "Does not collapse preparation into a single Survival or Perception check."
+      ]
     }
   ]
 }

@@ -2,6 +2,7 @@
 title: "Calder's Tooth and Port Tidefall"
 aliases:
   - Calder's Tooth and Port Tidefall
+  - Calder's Tooth
 category: entities
 tags: [shattered-sea, place]
 sources: ["Calder's Tooth and Port Tidefall.md", "calders-tooth.md"]

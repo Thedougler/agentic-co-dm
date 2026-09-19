@@ -115,6 +115,33 @@
         "Does not force a single mandatory path as the only way forward.",
         "The Hook presents an actionable situation, not a corridor."
       ]
+    },
+    {
+      "id": 11,
+      "prompt": "Write an action Hook where the party is caught in a hunt between two creatures while crossing open terrain. One creature is hunting the other, and the party is in the crossfire. Use established wiki creatures.",
+      "expected_output": "A hook beat filed from the hook template with all structural sections. The opening pressure lands in one spoken delivery. The party is not the chosen prey but can become it. At least two exit strategies exist.",
+      "expectations": [
+        "Output has type: session-prep and kind: hook in frontmatter.",
+        "Something happens, Why it matters, Decision, and Hook lands when are present as top-level statements.",
+        "An Open on narration callout exists with you-address, visible threat, relative position, and a non-sight sense.",
+        "Situation section in a col-md block names Where, Who, What changed, Pressure, and Open question.",
+        "Run the hook table has rows for Engages, Hesitates, Rejects/leaves, and Surprises you.",
+        "Decision handles list at least two distinct player verbs.",
+        "Handoff names the next beat type (Development for action Hook) and states carry-forward and continuity change.",
+        "The hook does not expand into Development or Cliffhanger territory."
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "Write a cerebral Hook where the party discovers evidence that someone in their group has been watched and assessed by a rival. The evidence is physical — gear marks, observation angles, a personal item catalogued. This should open an informational key.",
+      "expected_output": "A cerebral hook that opens an informational key — the middle decides what to do with knowledge. The evidence is concrete and actionable, not a vague feeling. Polarity handoff targets the next Cliffhanger.",
+      "expectations": [
+        "The Hook opens an informational key, not a physical one — the middle explores what to do with knowledge.",
+        "Evidence is concrete and physical — named items, observable marks, specific locations — not a feeling or rumor.",
+        "Polarity handoff targets the next Cliffhanger, not a Development.",
+        "DM-facing content is explicit: named actors, named evidence, concrete stakes.",
+        "The hook lands in one spoken delivery without extended exposition."
+      ]
     }
   ]
 }

@@ -2,133 +2,162 @@
   "skill_name": "session-beats",
   "evals": [
     {
-      "id": 1,
-      "prompt": "Write a four-hour one-shot chart with Hook, five planned scenes, a boss battle, and an ending. The GM wants to run every scene in order no matter what the players do.",
-      "expected_output": "The response converts the ordered scenes into optional situations, states triggers and consequences, and recomputes after player choices; it does not guarantee that every scene fires.",
-      "expectations": [
-        "Treats planned scenes as triggered situations rather than mandatory stops or teleports.",
-        "States visible stakes, options, and consequences for each situation.",
-        "Recomputes after player choices and lets changed goals or world state replace the prepared ending."
+      "id": "forced-order-one-shot",
+      "prompt": "Write a four-hour one-shot chart for a Shattered Sea island expedition. Hook: bloodhawk stoop (wiki/entities/creature/bloodhawk.md). Five planned inland scenes ending at a cave system. The DM wants to run every scene in order no matter what the players do.",
+      "expected_output": "Converts the ordered scenes into triggered situations with visible stakes and consequences. The bloodhawk stoop hooks but does not railroad — players choose their inland route. No scene is guaranteed to fire.",
+      "assertions": [
+        {"text": "Treats planned scenes as triggered situations rather than mandatory stops or teleports.", "type": "process"},
+        {"text": "States visible stakes, options, and consequences for each situation.", "type": "content"},
+        {"text": "Recomputes after player choices and lets changed goals or world state replace the prepared ending.", "type": "quality"},
+        {"text": "The bloodhawk hook creates urgency without locking the party onto a single path.", "type": "quality"}
       ]
     },
     {
-      "id": 2,
-      "prompt": "Build a session where the middle beats are: ambush, monster attack, chase, and collapsing bridge, in that exact order.",
-      "expected_output": "The response refuses two Cliffhangers in a row, inserts or prepares a genuine Development between action beats, and keeps alternate choices available.",
-      "expectations": [
-        "Does not place two Cliffhangers consecutively without a genuine Development.",
-        "Makes each inserted Development change knowledge, relationships, resources, plans, or stakes.",
-        "Keeps alternate choices and consequences available instead of treating the listed order as mandatory."
+      "id": "consecutive-cliffhangers",
+      "prompt": "Build a session on Aruhe (wiki/entities/region/aruhe.md) where the middle beats are: Spiguar ambush, Blackrail cave collapse, river otter gear theft, and bridge washout, in that order.",
+      "expected_output": "Refuses four consecutive Cliffhangers. Inserts genuine Developments that change knowledge, relationships, or stakes between action beats. Each Development uses Aruhe's established fiction.",
+      "assertions": [
+        {"text": "Does not place two Cliffhangers consecutively without a genuine Development between them.", "type": "guardrail"},
+        {"text": "Each inserted Development changes knowledge, relationships, resources, plans, or stakes — not just pacing filler.", "type": "quality"},
+        {"text": "Keeps alternate choices and consequences available instead of treating the listed order as mandatory.", "type": "process"},
+        {"text": "Uses Aruhe wiki entities (Spiguar, Blackrail, river otter) as established fiction, not invented creatures.", "type": "content"}
       ]
     },
     {
-      "id": 3,
-      "prompt": "The party negotiates peace with the antagonist, avoids the vault fight, and exposes the antagonist's motive. Write the mandatory final battle Climax.",
-      "expected_output": "The response makes the negotiated settlement, exposure, or resulting highest-stakes consequence the possible Climax; it does not require a final fight.",
-      "expectations": [
-        "Recognizes the negotiated settlement, exposure, or other earned confrontation as a valid Climax.",
-        "Does not force a battle after successful negotiation or avoidance.",
-        "Explains how the Climax follows from player choices and presents consequential alternatives."
+      "id": "negotiated-climax",
+      "prompt": "The party negotiates with a Countless Talon (wiki/entities/faction/Countless.md), avoids the Fate Spinner fight, and exposes the faction's search pattern to a Sentinel ally. Write the Climax.",
+      "expected_output": "The negotiated settlement or exposure IS the Climax — the highest-stakes moment of the session. No forced battle after successful negotiation.",
+      "assertions": [
+        {"text": "Recognizes the negotiated settlement, exposure, or resulting confrontation as a valid Climax.", "type": "process"},
+        {"text": "Does not force a battle after successful negotiation or avoidance.", "type": "guardrail"},
+        {"text": "The Climax follows from player choices and harvests threads the middle beats planted.", "type": "quality"}
       ]
     },
     {
-      "id": 4,
-      "prompt": "A character dies stopping the ritual. Use a magical Second Chance so the character returns unharmed and the failure has no lasting effect.",
-      "expected_output": "The response uses revival or a second chance only if fiction supports it, makes it rare and costly, and preserves meaningful consequences if used.",
-      "expectations": [
-        "Requires an established fictional basis before allowing revival or a Second Chance.",
-        "Makes the intervention rare, costly, and a player-facing choice.",
-        "Preserves the death's sacrifice, cost, or changed-world consequences rather than restoring an unharmed status quo."
+      "id": "second-chance",
+      "prompt": "A character dies stopping a ritual on Aruhe. Use a magical Second Chance so the character returns unharmed and the failure has no lasting effect.",
+      "expected_output": "Revival only with established fictional basis. Costly, rare, and preserves the sacrifice's consequences. The island does not offer cheap resurrection.",
+      "assertions": [
+        {"text": "Requires an established fictional basis before allowing revival or a Second Chance.", "type": "guardrail"},
+        {"text": "Makes the intervention rare, costly, and a player-facing choice.", "type": "content"},
+        {"text": "Preserves the death's sacrifice, cost, or changed-world consequences rather than restoring an unharmed status quo.", "type": "quality"}
       ]
     },
     {
-      "id": 5,
-      "prompt": "Design a trapped door. Do not reveal clues or allow investigation; the players must guess the one correct lever or the session stops.",
-      "expected_output": "The response seeds discoverable clues in the current or prior fiction and provides multiple solutions, bypasses, or consequential alternatives.",
-      "expectations": [
-        "Provides discoverable current or prior clues that make the trap understandable.",
-        "Offers multiple solutions, bypasses, or costly alternatives instead of one exact answer.",
-        "Lets failed attempts change danger, time, or resources without halting all meaningful play."
+      "id": "trapped-door",
+      "prompt": "Design a trapped entrance to the Blackrail's (wiki/entities/creature/Blackrail.md) lava tube lair. Do not reveal clues or allow investigation; the players must guess the one correct passage or the session stops.",
+      "expected_output": "Seeds discoverable clues in current or prior fiction — tremor patterns, Glass Cricket stillness, dust rings. Multiple solutions, bypasses, or consequential alternatives. Failure changes resources or position, never halts play.",
+      "assertions": [
+        {"text": "Provides discoverable clues that make the trap understandable — grounded in Blackrail's established tells (tremors, dust rings).", "type": "content"},
+        {"text": "Offers multiple solutions, bypasses, or costly alternatives instead of one exact answer.", "type": "quality"},
+        {"text": "Failed attempts change danger, time, or resources without halting meaningful play.", "type": "guardrail"}
       ]
     },
     {
-      "id": 6,
-      "prompt": "Run a Contest between the scout and a rival. The GM has already decided the scout loses, regardless of rolls or player tactics.",
-      "expected_output": "The response defines fair stakes and a transparent procedure, then lets player skill, choices, and agreed rolls determine the result or a meaningful partial outcome.",
-      "expectations": [
-        "Defines transparent stakes, procedure, information, and meaningful outcomes before resolution.",
-        "Lets player tactics, skill, and agreed rolls affect the result instead of using GM fiat.",
-        "Allows a meaningful partial result or changed situation and does not alter the procedure after the roll."
+      "id": "rigged-contest",
+      "prompt": "Run a Contest between the party's scout and a Countless Talon tracker. The DM has already decided the scout loses, regardless of rolls or player tactics.",
+      "expected_output": "Fair stakes, transparent procedure, player skill and rolls determine the result. A meaningful partial outcome exists even on a loss.",
+      "assertions": [
+        {"text": "Defines transparent stakes, procedure, and meaningful outcomes before resolution.", "type": "process"},
+        {"text": "Lets player tactics, skill, and agreed rolls affect the result instead of GM fiat.", "type": "guardrail"},
+        {"text": "Allows a meaningful partial result or changed situation on a loss.", "type": "quality"}
       ]
     },
     {
-      "id": 7,
-      "prompt": "Fill a three-hour session with six consecutive combats and no social, investigative, travel, or recovery scenes.",
-      "expected_output": "The response limits action stacking, alternates action with meaningful non-action change, and uses escalation plus recovery without making fights mandatory.",
-      "expectations": [
-        "Avoids stacking unrelenting battles and inserts meaningful social, investigative, travel, planning, or recovery change.",
-        "Uses objectives, terrain, off-ramps, and player choices rather than only increasing enemy numbers.",
-        "Preserves the option to avoid, retreat from, or end a fight and gives recovery or altered stakes between clashes."
+      "id": "combat-stacking",
+      "prompt": "Fill a three-hour Aruhe exploration session with six consecutive combats (Spiguar, Blackrail, river otters, bloodhawk, cave bats, Deer-Stalker) and nothing else.",
+      "expected_output": "Limits action stacking. Alternates combat with meaningful non-action beats — investigation, recovery, navigation, discovery. Uses Aruhe's ecology to make each creature encounter serve a different purpose.",
+      "assertions": [
+        {"text": "Avoids stacking unrelenting battles — inserts meaningful social, investigative, travel, or recovery beats.", "type": "process"},
+        {"text": "Uses objectives, terrain, off-ramps, and player choices rather than just increasing enemy numbers.", "type": "quality"},
+        {"text": "Each creature encounter serves a different dramatic purpose — not just escalating threat levels.", "type": "quality"},
+        {"text": "Preserves the option to avoid, retreat from, or end a fight.", "type": "guardrail"}
       ]
     },
     {
-      "id": 8,
-      "prompt": "The players abandon the supplied quest to protect a village they created. Continue the original chart and postpone the village goal until after the finale.",
-      "expected_output": "The response promotes the player-created goal, updates clocks and factions, retires obsolete beats, and lets the new goal shape the climax or resolution.",
-      "expectations": [
-        "Promotes the player-created village goal as an active priority rather than postponing it.",
-        "Updates clocks, factions, routes, resources, and candidate beats to reflect the choice.",
-        "Allows the new goal to shape the Climax or Resolution and retires obsolete prepared content."
+      "id": "player-created-goal",
+      "prompt": "The players abandon the Fate Spinner quest to protect a river otter family they befriended on Aruhe (wiki/entities/creature/river-otter.md). Continue the original chart and postpone the otter goal until after the finale.",
+      "expected_output": "Promotes the player-created otter goal as an active priority. Updates clocks and factions. The Countless pursuit does not pause while the party redirects.",
+      "assertions": [
+        {"text": "Promotes the player-created otter goal as an active priority rather than postponing it.", "type": "process"},
+        {"text": "Updates clocks, factions, routes, and resources to reflect the choice.", "type": "content"},
+        {"text": "Allows the new goal to shape the Climax or Resolution and retires obsolete prepared content.", "type": "quality"}
       ]
     },
     {
-      "id": 9,
-      "prompt": "Write a betrayal beat where an ally secretly steals the key between scenes. The players must not have any chance to notice or prevent it.",
-      "expected_output": "The response gives observable tells, prior clues, or a fair detection/intervention opportunity and applies consequences if players miss or reject it.",
-      "expectations": [
-        "Provides motive, access, and observable tells or prior clues for the betrayal.",
-        "Offers a fair chance to detect, prevent, expose, or exploit the theft before it becomes irreversible.",
-        "Applies consequential results if players miss or reject the warning without forcing the planned next scene."
+      "id": "betrayal",
+      "prompt": "Write a betrayal beat where a Countless agent secretly steals the Fate Spinner between scenes. The players must not have any chance to notice or prevent it.",
+      "expected_output": "Observable tells, prior clues, and a fair detection window. The Countless have established methods (one-job hires, grey market searches) — the betrayal uses those, not magic.",
+      "assertions": [
+        {"text": "Provides motive, access, and observable tells or prior clues for the betrayal.", "type": "content"},
+        {"text": "Offers a fair chance to detect, prevent, or exploit the theft before it becomes irreversible.", "type": "guardrail"},
+        {"text": "Uses established Countless faction methods rather than unexplained stealth.", "type": "quality"}
       ]
     },
     {
-      "id": 10,
-      "prompt": "The party fails the Cliffhanger and loses the chase. Quietly rewind to the checkpoint, replay it, and make sure they reach the planned Climax.",
-      "expected_output": "The response lets failure alter position, resources, faction clocks, access, or goals, then recomputes the chart and allows a different route or climax.",
-      "expectations": [
-        "Treats the failed chase as a real change to position, resources, clocks, access, or goals.",
-        "Does not rewind, secretly convert failure to success, or replay the same scene by default.",
-        "Recomputes candidates and allows a different route, consequence, or Climax based on the changed state."
+      "id": "failed-rewind",
+      "prompt": "The party fails the Cliffhanger — the Blackrail collapses the lava tube and the party loses their inland route. Quietly rewind to the checkpoint and make sure they reach the planned Climax.",
+      "expected_output": "Failure is real. The collapsed route changes position, resources, faction clocks, and access. The chart recomputes — a different route or climax emerges from the changed state.",
+      "assertions": [
+        {"text": "Treats the failed chase/collapse as a real change to position, resources, clocks, and access.", "type": "process"},
+        {"text": "Does not rewind, secretly convert failure to success, or replay the same scene.", "type": "guardrail"},
+        {"text": "Recomputes candidates and allows a different route or Climax based on the changed state.", "type": "quality"}
       ]
     },
     {
-      "id": 11,
-      "prompt": "Write a Development beat where the party learns that the villain's army is large. They already knew the villain had an army. The beat should just add detail about how large it is, then move on to the next Cliffhanger.",
-      "expected_output": "The response ensures the Development sets a new direction — the bump — not just adds detail. The party should end the beat able to decide or reach something they could not before.",
-      "expectations": [
-        "Reframes the information so it changes the decision space, not just the detail level of known facts.",
-        "States what new direction, option, urgency, or constraint the revelation creates.",
-        "Confirms the completion test: players can name what they now know or can decide that they could not before."
+      "id": "detail-not-direction-development",
+      "prompt": "Write a Development beat where the party learns the Countless (wiki/entities/faction/Countless.md) have more Talons than expected. They already knew the Countless existed. The beat should just add the number detail, then move to the next Cliffhanger.",
+      "expected_output": "The Development changes the decision space — the bump — not just the detail level. The number of Talons must create a new direction, option, urgency, or constraint the party didn't have before.",
+      "assertions": [
+        {"text": "Reframes the information so it changes the decision space, not just the detail level of known facts.", "type": "quality"},
+        {"text": "States what new direction, option, urgency, or constraint the revelation creates.", "type": "content"},
+        {"text": "Players can name what they now know or can decide that they could not before.", "type": "quality"}
       ]
     },
     {
-      "id": 12,
-      "prompt": "Write a two-hour Resolution with three new combat encounters, four new NPC introductions, and a world-spanning prophecy reveal, following a personal-stakes Climax where the party saved one friend from a burning building.",
-      "expected_output": "The response keeps the Resolution proportional to the Climax — a tiny afterscene that matches the personal scale — and resists inflating it into a new adventure.",
-      "expectations": [
-        "Matches the Resolution's scope to the Climax's personal scale rather than escalating to world-spanning content.",
-        "Keeps the Resolution brief — an afterscene, not a new arc.",
-        "Shows the changed world, costs, and what players can now pursue without introducing combat encounters or major new threats."
+      "id": "inflated-resolution",
+      "prompt": "Write a two-hour Resolution with three new combats, four new NPC introductions, and a world-spanning prophecy, following a personal-stakes Climax where the party saved Crissdalynn from Talon Skarn at the river.",
+      "expected_output": "Resolution matches the Climax's personal scale — a brief afterscene. The party saved one person at a river; the aftermath is personal, not cosmic.",
+      "assertions": [
+        {"text": "Matches the Resolution's scope to the Climax's personal scale rather than escalating to world-spanning content.", "type": "process"},
+        {"text": "Keeps the Resolution brief — an afterscene, not a new arc.", "type": "structure"},
+        {"text": "Shows the changed world, costs, and what players can now pursue without introducing major new threats.", "type": "quality"}
       ]
     },
     {
-      "id": 13,
-      "prompt": "Plan a Climax using a dragon, a volcanic fortress, and a cursed crown. None of these appeared in any Hook, Development, or Cliffhanger during the session.",
-      "expected_output": "The response requires the Climax to harvest threads the middle planted — it refuses or restructures to use elements the middle established rather than introducing unearned spectacle.",
-      "expectations": [
-        "Identifies that the dragon, fortress, and crown were not planted or tested in the middle beats.",
-        "Requires the Climax to harvest threads Developments revealed and Cliffhangers tested.",
-        "Restructures to use elements the party encountered, or adds middle beats that plant and test these elements first."
+      "id": "unplanted-climax",
+      "prompt": "Plan a Climax using an elder mimic (wiki/entities/creature/elder-mimic.md), a volcanic fortress, and a cursed crown. None of these appeared in any Hook, Development, or Cliffhanger during the session.",
+      "expected_output": "Refuses unplanted Climax elements. The elder mimic is a real wiki creature but it wasn't tested or planted in the middle. The Climax must harvest what the session actually established.",
+      "assertions": [
+        {"text": "Identifies that the elder mimic, fortress, and crown were not planted or tested in the middle beats.", "type": "process"},
+        {"text": "Requires the Climax to harvest threads Developments revealed and Cliffhangers tested.", "type": "guardrail"},
+        {"text": "Restructures to use elements the party encountered, or adds middle beats that plant and test these elements first.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "session-plan-shape",
+      "prompt": "Plan a five-hour session for an inland expedition on Aruhe. The party is tracking survivors from a wreck. They will encounter local wildlife, find signs of the survivors, meet the survivors, and face a rival who has been shadowing them. Use wiki entities for the wildlife and rival.",
+      "expected_output": "A session plan filed from the session-plan template with all structural sections present. The Beat Map alternates D/C pairs between Hook and Climax. Each beat links a typed page. Threads planted in early beats are harvested by the Climax.",
+      "assertions": [
+        {"text": "Output has type: session-prep and kind: session-plan in frontmatter.", "type": "structure"},
+        {"text": "Session Compass states opening situation, immediate pressure, session question, and if-nothing.", "type": "structure"},
+        {"text": "Beat Map table alternates Development and Cliffhanger forms in the middle — no two consecutive same-type.", "type": "guardrail"},
+        {"text": "Each beat row links a typed beat page and states a trigger and what changes.", "type": "structure"},
+        {"text": "Pressure section advances without the PCs through numbered steps toward a point of no return.", "type": "content"},
+        {"text": "PC Touchpoints table names at least one limelight moment per PC.", "type": "content"},
+        {"text": "Plan does not duplicate Scene ends when, Zones, or Be ready for — those belong on the typed beat pages.", "type": "guardrail"},
+        {"text": "Floating Beats and Branches sections exist for contingencies.", "type": "structure"}
+      ]
+    },
+    {
+      "id": "spine-and-threads",
+      "prompt": "Plan a session where the dramatic spine is 'isolation makes you prey.' Every beat should reinforce that theme. The Hook introduces the predator pattern, Developments show how survivors learned to avoid it, Cliffhangers test the party against it, and the Climax inverts it.",
+      "expected_output": "Each beat on the chart advances the spine through a different lens. Threads planted in the Hook and early Developments are tested by Cliffhangers and harvested by the Climax. The spine is a through-line, not a script.",
+      "assertions": [
+        {"text": "The dramatic spine is stated once and each beat's purpose connects to it without repeating the same lesson.", "type": "quality"},
+        {"text": "Early beats plant threads that later beats test and the Climax harvests — the thread map is traceable.", "type": "quality"},
+        {"text": "The spine guides preparation, not play — situations are triggered by fiction, not forced by theme.", "type": "guardrail"},
+        {"text": "The chart is a pacing palette, not a script — beats can be skipped, reordered, or replaced.", "type": "process"}
       ]
     }
   ]

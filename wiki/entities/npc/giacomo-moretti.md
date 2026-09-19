@@ -2,6 +2,7 @@
 title: "Giacomo Moretti"
 aliases:
   - Giacomo Moretti
+  - Moretti
 category: entities
 tags: [shattered-sea, npc]
 sources:

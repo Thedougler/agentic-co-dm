@@ -2,6 +2,7 @@
 title: "Tam Slim-Nail"
 aliases:
   - Tam Slim-Nail
+  - Tam
 category: entities
 tags: [shattered-sea, npc]
 sources:

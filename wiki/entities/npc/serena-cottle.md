@@ -2,6 +2,7 @@
 title: "Serena Cottle"
 aliases:
   - Serena Cottle
+  - Serena
 category: entities
 tags: [shattered-sea, npc]
 sources:

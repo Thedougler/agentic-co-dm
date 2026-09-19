@@ -40,25 +40,25 @@ The pressure is not a waiting monster attack. It moves as a social and spiritual
 - [[sula-marn]] wants the village held together. Her leverage is civil trust at the causeway. Her current move is slowing violence without yet having proof strong enough to break Ashe.
 - [[penance-bar]] wants a culprit it can touch. Its leverage is the mob. Its current move is turning fear into a march.
 - [[Sorrowbell]] exposes the truth when tested. If a fiend walks through its door, Tyr is no longer holding the shrine.
-- [[sin-and-sanctuary]] governs why Ashe's sin draws fiends, why hallowed ground can fail, and why the kiss marks a soul already lost.
+- [[sin-and-sanctuary]] explains why Ashe's sin draws fiends, why hallowed ground can fail, and why the kiss marks a soul already lost.
 
 ## Discoverable / Affectable
 
 - **Approach vector.** Ashe can ask for help. A townsfolk plea can blame the coven. A [[Midchain]] stop at Penance Bar can put the crew inside the fear before anyone knows where it points.
-- **Social proof:** Sula Marn can show that the village's panic has outpaced evidence, even if she cannot name Ashe's full crime yet.
-- **Physical proof:** Sorrowbell's tally, ash marks, bell timing, and failed sanctuary can show that the shrine's story and the village's story do not match.
-- **Human proof:** the coven's ordinary work, herb trade, children, and hallowed grove contradict Ashe's accusation without making the crew fight anyone.
-- **Affectable material:** proof can reach the mob early, late, or not at all. The crew can expose Ashe or shield the grove. They can confront the marchers or leave the village to choose its scapegoat.
+- **Social proof.** Sula Marn can show that the village's panic has outpaced evidence, even if she cannot name Ashe's full crime yet.
+- **Physical proof.** Sorrowbell's tally, ash marks, bell timing, and failed sanctuary can show that the shrine's story and the village's story do not match.
+- **Human proof.** The coven's ordinary work, herb trade, children, and hallowed grove contradict Ashe's accusation without making the crew fight anyone.
+- **Affectable material.** The proof can get to the mob early, late, or not at all. The crew can expose Ashe or shield the grove. They can confront the marchers or leave the village to choose its scapegoat.
 - **Hidden conclusion.** Ashe's lies and incitement are the summoning force. Clues point through Sorrowbell's failed protection, the coven's mundane life, and the way the mob's fear intensifies the fiend pressure.
 
 ## If Ignored
 
-The mob reaches the grove and burns it. The village loses the one ground still clean enough to resist the fiends. The mob kills or scatters the coven. Sorrowbell's emptiness becomes undeniable only after a fiend kisses and changes Ashe. Penance Bar survives the night with its scapegoat story intact, which leaves the same fear ready to choose another target.
+The mob arrives at the grove and burns it. The village loses the one ground still clean enough to resist the fiends. The mob kills or scatters the coven. Sorrowbell's emptiness becomes undeniable only after a fiend kisses and changes Ashe. After the night, Penance Bar has its scapegoat explanation intact, which leaves the same fear ready to choose another target.
 
 ## Connections
 
-- [[penance-bar]] owns the settlement, public penance imagery, and entry hooks.
-- [[Sorrowbell]] owns the shrine, tally, and failed-sanctuary location.
-- [[corvin-ashe]] and [[sula-marn]] own the priestly and civil actors.
-- [[sin-and-sanctuary]] owns the cosmological law behind fear, hallowed ground, and the fiend's kiss.
-- [[penance-bar-siege|Penance Bar Siege]] and [[The Shrine's Ledger]] hold the wider siege shape and draft fiction.
+- [[penance-bar]] supplies the settlement, public penance imagery, and entry hooks.
+- [[Sorrowbell]] covers the shrine, tally, and failed-sanctuary location.
+- [[corvin-ashe]] and [[sula-marn]] define the priestly and civil actors.
+- [[sin-and-sanctuary]] defines the cosmological law behind fear, hallowed ground, and the fiend's kiss.
+- [[penance-bar-siege|Penance Bar Siege]] holds the wider siege shape and the "Shrine's Ledger" draft fiction.

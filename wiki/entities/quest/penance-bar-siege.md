@@ -5,7 +5,7 @@ aliases:
 category: entities
 tags: [shattered-sea, quest]
 sources: ["penance-bar-siege.md", "quest-penance-bar.md"]
-summary: "Ashe's fearmongering draws demons; the party must get the truth to the mob before the grove burns."
+summary: "Ashe's fearmongering draws demons, and the party must get the truth to the mob before the grove burns."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -33,11 +33,11 @@ Ashe has whipped the town against a woods coven. Demons come because of his lies
 
 ## Stakes
 
-If the party walks away, the grove burns and the island loses its last hallowed ground. If the truth lands in time, the mob breaks and a devil-touched priest remains.
+If the mob accepts the truth in time, it breaks and a devil-touched priest remains.
 
 ## World in motion
 
-Without interruption the mob reaches the grove. The next move is fire.
+Without interruption the mob arrives at the grove. The next move is fire.
 
 ## Leads
 

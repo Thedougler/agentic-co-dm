@@ -143,8 +143,8 @@
     },
     {
       "id": 5,
-      "prompt": "Create a rare lantern that reveals invisible creatures but also tempts its bearer to expose allies.",
-      "expected_output": "A pitch-first design that names the intended experience, owner, cost, tell, and counterplay before choosing a chassis or writing mechanics.",
+      "prompt": "Design a rare Sentinel lantern (Shattered Sea setting) that reveals Countless Talon agents hiding in a crowd — the Sentinels of the Eyrie (wiki/entities/faction/sentinels-of-the-eyrie.md) want to detect Countless (wiki/entities/faction/Countless.md) one-job hires in port. The lantern also tempts its bearer to expose allies by revealing them too. Mark as invention; use wiki/templates/item.md.",
+      "expected_output": "A pitch-first design grounded in Sentinel-vs-Countless fiction that names the intended experience, owner, cost, tell, and counterplay before choosing a chassis or writing mechanics.",
       "assertions": [
         {
           "text": "States a one-sentence promise and intended experience before numbers",
@@ -159,7 +159,7 @@
           "type": "quality"
         },
         {
-          "text": "Does not grant unbounded always-on see-invisibility without a spend, tell, or exposure cost",
+          "text": "Does not grant unbounded always-on detection without a spend, tell, or exposure cost",
           "type": "guardrail"
         },
         {
@@ -170,8 +170,8 @@
     },
     {
       "id": 6,
-      "prompt": "Design a 2024 rare weapon that rewards changing targets without dominating every martial character.",
-      "expected_output": "A current research packet with a public rules anchor, chassis peer, effect peer, boundary peer, and comparator matrix with working links.",
+      "prompt": "Design a 2024 rare harpoon for a Shattered Sea whaler that rewards switching targets mid-combat — context is bloodhawk stoop (wiki/entities/creature/bloodhawk.md) dive-and-scatter encounters where multiple threats arrive in sequence. Do not dominate every martial character. Mark as invention.",
+      "expected_output": "A current research packet with a public rules anchor, chassis peer, effect peer, boundary peer, and comparator matrix with working links, grounded in the multi-target bloodhawk encounter pattern.",
       "assertions": [
         {
           "text": "Requires current web grounding and a public 2024/5.5e rules anchor before final numbers",
@@ -193,8 +193,8 @@
     },
     {
       "id": 7,
-      "prompt": "Make a very rare armor that grants excellent AC, resistance to common damage, flight, advantage on saves, and a damaging retaliation effect.",
-      "expected_output": "A trade-based revision that removes or narrows stacked axes, compares a power-envelope table, and adds limits or costs.",
+      "prompt": "Make a very rare Shattered Sea captain's coat that grants excellent AC, resistance to common damage, flight (crow's nest leap), advantage on saves, and a retaliatory thunder effect when struck. The captain sails Aruhe (wiki/entities/region/aruhe.md) waters against Countless raiders.",
+      "expected_output": "A trade-based revision that removes or narrows stacked axes, compares a power-envelope table, and adds limits or costs — grounded in Shattered Sea naval fiction.",
       "assertions": [
         {
           "text": "Refuses to keep maximum offense, defense, mobility, and utility merely because the rarity is high",
@@ -216,8 +216,8 @@
     },
     {
       "id": 8,
-      "prompt": "Write a sword that deals extra psychic damage on every hit and can be used with Extra Attack, two-weapon fighting, and opportunity attacks.",
-      "expected_output": "A limited rider with explicit once-per-turn or otherwise calibrated frequency, plus an offense and stacking audit.",
+      "prompt": "Write a Shattered Sea blade recovered from a Countless Talon (wiki/entities/faction/Countless.md) — deals extra psychic damage on every hit, and can be used with Extra Attack, two-weapon fighting, and opportunity attacks. The Countless use one-job hires and grey market contacts; the blade's psychic edge reflects their information-broker methods.",
+      "expected_output": "A limited rider with explicit once-per-turn or otherwise calibrated frequency, plus an offense and stacking audit grounded in Countless fiction.",
       "assertions": [
         {
           "text": "Identifies the multiplication risk in an unbounded every-hit effect",
@@ -239,8 +239,8 @@
     },
     {
       "id": 9,
-      "prompt": "Create an amulet that lets the wearer cast several powerful control spells from the item without concentration.",
-      "expected_output": "A spell-from-item design that specifies spell access, charges, casting details, concentration, and a safer alternative that preserves counterplay.",
+      "prompt": "Create a Shattered Sea amulet carved from Aruhe coral (wiki/entities/region/aruhe.md) that lets the wearer cast Hold Person, Slow, and Banishment from the item without concentration. The party is exploring Aruhe's interior where Spiguar (wiki/entities/creature/spiguar.md) and Blackrail (wiki/entities/creature/Blackrail.md) threaten — the amulet would trivialize both encounters if unchecked.",
+      "expected_output": "A spell-from-item design that specifies spell access, charges, casting details, concentration, and a safer alternative that preserves counterplay against Aruhe creatures.",
       "assertions": [
         {
           "text": "Does not silently remove concentration or create hidden spell slots",
@@ -262,8 +262,8 @@
     },
     {
       "id": 10,
-      "prompt": "Give a cursed ring a secret curse that takes over a character's body whenever the DM decides it is dramatic.",
-      "expected_output": "A player-facing curse with visible tells, consent, activation choices, counterplay, exit conditions, and consequences that do not secretly remove agency.",
+      "prompt": "A Countless Talon (wiki/entities/faction/Countless.md) drops a ring after a fight at River Slack Basin (wiki/entities/place/river-slack-basin.md). Give it a secret curse that takes over the wearer's body whenever the DM decides it is dramatic — the Countless planted it to compromise the party.",
+      "expected_output": "A player-facing curse with visible tells, consent, activation choices, counterplay, exit conditions, and consequences that do not secretly remove agency — grounded in Countless faction methods.",
       "assertions": [
         {
           "text": "Rejects curse as secret plot punishment or unilateral loss of control",
@@ -285,11 +285,11 @@
     },
     {
       "id": 11,
-      "prompt": "Design boots that make the party impossible to track, automatically navigate, and teleport anywhere in the world every day.",
-      "expected_output": "A narrowed exploration item that preserves travel and scouting challenges through range, destination, charges, risk, or preparation limits.",
+      "prompt": "Design boots for a Shattered Sea navigator that make the party impossible to track across islands, automatically navigate Aruhe (wiki/entities/region/aruhe.md) interior, and teleport to any known port every day. The campaign relies on sea travel, island exploration, and scouting as core loops.",
+      "expected_output": "A narrowed exploration item that preserves Shattered Sea travel and scouting challenges through range, destination, charges, risk, or preparation limits.",
       "assertions": [
         {
-          "text": "Rejects trivializing travel forever and identifies which campaign loops disappear",
+          "text": "Rejects trivializing travel forever and identifies which Shattered Sea campaign loops (sea travel, island exploration, scouting) disappear",
           "type": "guardrail"
         },
         {
@@ -304,8 +304,8 @@
     },
     {
       "id": 12,
-      "prompt": "Combine the strongest features of two rare items into one item and keep it rare because each feature was already rare.",
-      "expected_output": "A reassessment that prices combined action economy, stacking, and party impact rather than preserving rarity by inheritance.",
+      "prompt": "Combine the Changed Record vision from the Fate Spinner (wiki/entities/item/fate-spinner.md) — rare, once-per-day same-plane scry with donated advantage — with a rare Sentinel spyglass that grants truesight to 120 ft for one minute. Keep the combined item rare because each source was already rare.",
+      "expected_output": "A reassessment that prices combined action economy, stacking, and party impact rather than preserving rarity by inheritance — grounded in the specific Fate Spinner and Sentinel spyglass features.",
       "assertions": [
         {
           "text": "Rejects the assumption that two rare ceilings remain rare when combined",

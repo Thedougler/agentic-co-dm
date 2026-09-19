@@ -123,8 +123,8 @@
     },
     {
       "id": 5,
-      "prompt": "Design a memorable settlement, wilderness region, or ruin using the place kernel and promise framework. Treat this as a labeled design fixture, not live wiki canon.",
-      "expected_output": "A playable place with identity, topology, affordances, inhabitants, information, pressure, and consequences; lore-only scenery fails.",
+      "prompt": "Design a Shattered Sea coastal outpost on the Aruhe (wiki/entities/region/aruhe.md) shoreline — a resupply point where inland expedition parties meet returning boats. Use the place kernel and promise framework. Mark as invention, not live wiki canon.",
+      "expected_output": "A playable Aruhe coastal outpost with identity, topology, affordances, inhabitants, information, pressure, and consequences; lore-only scenery fails.",
       "assertions": [
         {
           "text": "Uses the five-sentence kernel, 3Fs, contradiction, and signature details",
@@ -146,8 +146,8 @@
     },
     {
       "id": 6,
-      "prompt": "Map the significant nodes and routes of a ruin with several approaches to its central objective. Labeled fixture — not vault canon.",
-      "expected_output": "A decision graph with loops, bypasses, retreats, and route tradeoffs; no-topology or purely linear maps fail.",
+      "prompt": "Map the significant nodes and routes of a Blackrail (wiki/entities/creature/Blackrail.md) lava tube system on Aruhe (wiki/entities/region/aruhe.md) — tremor-telegraphed passages, glass cricket stillness zones, and multiple approaches to a central chamber. Labeled fixture — not vault canon.",
+      "expected_output": "A decision graph with loops, bypasses, retreats, and route tradeoffs using Blackrail-established fiction (tremor tells, dust rings, wet-black-iron segments); no-topology or purely linear maps fail.",
       "assertions": [
         {
           "text": "Presents nodes and edges before room or landmark prose",
@@ -165,8 +165,8 @@
     },
     {
       "id": 7,
-      "prompt": "Prepare a sealed archive whose required truth is that the lower sluice can be controlled from a bell tower. Labeled fixture.",
-      "expected_output": "The truth is discoverable through about three clue vectors and does not depend on one hidden roll or one prescribed key.",
+      "prompt": "Prepare a sealed Sentinel archive on the High Eyrie (wiki/entities/place/high-eyrie.md) whose required truth is that the Sentinels' record vault can be accessed from a signal tower on the eastern cliff. The Countless (wiki/entities/faction/Countless.md) want this information. Labeled fixture.",
+      "expected_output": "The truth is discoverable through about three clue vectors and does not depend on one hidden roll or one prescribed key — grounded in Sentinel/Countless tension.",
       "assertions": [
         {
           "text": "Provides about three independent clue vectors (witness/faction, physical/document, spatial/consequence or equivalent)",
@@ -184,11 +184,11 @@
     },
     {
       "id": 8,
-      "prompt": "Design an obstacle at an ancient gate and give players several ways to overcome it. Labeled fixture.",
-      "expected_output": "The obstacle has sign, trigger, effect, counterplay, bypass, and leverage, not a single correct solution.",
+      "prompt": "Design an obstacle at the entrance to a Blackrail (wiki/entities/creature/Blackrail.md) lair on Aruhe — the tremor-telegraphed passage has a collapse trap. Give players several ways to overcome it using Blackrail's established tells. Labeled fixture.",
+      "expected_output": "The obstacle has sign, trigger, effect, counterplay, bypass, and leverage grounded in Blackrail fiction (tremor patterns, dust rings, glass cricket stillness) — not a single correct solution.",
       "assertions": [
         {
-          "text": "Telegraphs the trigger and consequence in the fiction",
+          "text": "Telegraphs the trigger and consequence in the fiction using Blackrail's established environmental tells",
           "type": "content"
         },
         {
@@ -203,8 +203,8 @@
     },
     {
       "id": 9,
-      "prompt": "Populate an inhabited landmark contested by two factions. Explain what they do while the party is gone. Labeled fixture.",
-      "expected_output": "Factions have goals, fears, methods, resources, tells, offers, responses, rosters, and location moves; creatures waiting in rooms with no goals fail.",
+      "prompt": "Populate a contested river crossing on Aruhe (wiki/entities/region/aruhe.md) where the Sentinels of the Eyrie (wiki/entities/faction/sentinels-of-the-eyrie.md) and the Countless (wiki/entities/faction/Countless.md) both claim the crossing as a supply route. Explain what they do while the party is gone. Labeled fixture.",
+      "expected_output": "Factions have goals, fears, methods, resources, tells, offers, responses, rosters, and location moves grounded in Sentinel record-keeping vs Countless search methods; creatures waiting in rooms with no goals fail.",
       "assertions": [
         {
           "text": "Provides a faction sheet for each active faction and a meaningful between-visit update",
@@ -222,8 +222,8 @@
     },
     {
       "id": 10,
-      "prompt": "Write four location moves for a market that becomes politically unstable as the party investigates a theft. Labeled fixture.",
-      "expected_output": "Each move has actor, trigger, visible result, new opportunity, and lasting consequence; a place with no moves fails.",
+      "prompt": "Write four location moves for a Port Tidefall (wiki/entities/place/calders-tooth-and-port-tidefall.md) market that becomes politically unstable as the party investigates a Countless (wiki/entities/faction/Countless.md) theft of harbour records. Labeled fixture.",
+      "expected_output": "Each move has actor, trigger, visible result, new opportunity, and lasting consequence grounded in Port Tidefall/Countless fiction; a place with no moves fails.",
       "assertions": [
         {
           "text": "Moves are triggered by party action, faction action, pressure, rest, or another stated cause",
@@ -241,30 +241,30 @@
     },
     {
       "id": 11,
-      "prompt": "Design a high-tier wilderness site for a party with flight and teleportation. Labeled fixture.",
-      "expected_output": "The design respects party capabilities and gives honest costs, exposure, limits, or new opportunities rather than arbitrarily negating them.",
+      "prompt": "Design a high-tier Aruhe (wiki/entities/region/aruhe.md) inland site for a party with flight and teleportation — the canopy, thermals, and volcanic terrain of Aruhe are established. Labeled fixture.",
+      "expected_output": "The design respects party capabilities in the Aruhe environment and gives honest costs, exposure, limits, or new opportunities rather than arbitrarily negating them.",
       "assertions": [
         {
-          "text": "States what flight and teleportation can accomplish",
+          "text": "States what flight and teleportation can accomplish in the Aruhe environment",
           "type": "content"
         },
         {
-          "text": "Uses fiction-based constraints (visibility, anchors, weather, exposure, incomplete information) only where justified",
+          "text": "Uses fiction-based constraints (canopy cover, volcanic thermals, Spiguar Grass Mantle zones, incomplete information) only where justified",
           "type": "quality"
         },
         {
-          "text": "Does not make every route a fake wall or declare abilities invalid without a setting reason",
+          "text": "Does not make every route a fake wall or declare abilities invalid without an Aruhe-grounded reason",
           "type": "guardrail"
         }
       ]
     },
     {
       "id": 12,
-      "prompt": "Create a ruin that remains engaging after all hostile creatures leave or are defeated. Labeled fixture.",
-      "expected_output": "The final enemies-vanished test passes through exploration, clues, routes, resources, factions, hazards, or changes.",
+      "prompt": "Create an Aruhe cave system (wiki/entities/region/aruhe.md) that remains engaging after the Blackrail (wiki/entities/creature/Blackrail.md) is defeated and all hostile creatures leave. Labeled fixture.",
+      "expected_output": "The final enemies-vanished test passes through exploration, clues, routes, resources, factions, hazards, or changes in the Blackrail's former lair.",
       "assertions": [
         {
-          "text": "Includes meaningful non-combat verbs and affordances",
+          "text": "Includes meaningful non-combat verbs and affordances in the cleared lair",
           "type": "quality"
         },
         {
@@ -279,8 +279,8 @@
     },
     {
       "id": 13,
-      "prompt": "Design a planar bazaar where the rule of strangeness is that spoken promises become physical routes. Labeled fixture.",
-      "expected_output": "The surreal place has a reliable testable rule, limit or price, stable cues, and player agency; random unreliability fails.",
+      "prompt": "Design a Shattered Sea planar market where the rule of strangeness is that spoken debts become physical cargo — say 'I owe you' and a crate appears on your vessel. The Countless (wiki/entities/faction/Countless.md) exploit this for smuggling. Labeled fixture.",
+      "expected_output": "The surreal place has a reliable testable rule, limit or price, stable cues, and player agency; random unreliability fails. Countless exploitation is grounded in their grey market methods.",
       "assertions": [
         {
           "text": "States what changes, when it changes, and what remains invariant",
@@ -298,15 +298,15 @@
     },
     {
       "id": 14,
-      "prompt": "File a wilderness location into wiki/templates/place.md. Public canon establishes a lake two days north, a mangrove wall one day east, no established southern neighbor, and an old road three days west. Labeled filing fixture — do not invent the southern neighbor as canon. (Cardinal Where pattern also applies when improving wiki/entities/place/high-eyrie.md or wiki/entities/place/river-slack-basin.md.)",
-      "expected_output": "The filed location uses the place template and its Where section includes natural-language north, east, south, and west entries with wikilinked neighbors where known, approximate days of travel, and an explicit canon gap for the south.",
+      "prompt": "File an Aruhe (wiki/entities/region/aruhe.md) wilderness location into wiki/templates/place.md. Public canon establishes River Slack Basin (wiki/entities/place/river-slack-basin.md) two days north, a volcanic ridge one day east, no established southern neighbor, and Port Tidefall (wiki/entities/place/calders-tooth-and-port-tidefall.md) three days west by river. Labeled filing fixture — do not invent the southern neighbor as canon.",
+      "expected_output": "The filed location uses the place template and its Where section includes natural-language north, east, south, and west entries with wikilinked Shattered Sea neighbors where known, approximate days of travel, and an explicit canon gap for the south.",
       "assertions": [
         {
           "text": "Where section has explicit **North:** / **East:** / **South:** / **West:** entries each with ~N days of travel language (or equivalent travel-day distances)",
           "type": "structure"
         },
         {
-          "text": "Only the three known neighbors (lake north, mangrove wall east, old road west) are wikilinked with approximate travel-day distances; south has neither a wikilink nor a proper name",
+          "text": "Only the three known neighbors (River Slack Basin north, volcanic ridge east, Port Tidefall west) are wikilinked with approximate travel-day distances; south has neither a wikilink nor a proper name",
           "type": "content"
         },
         {

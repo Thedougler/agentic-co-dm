@@ -65,3 +65,5 @@ base_confidence: 0.55
 - [[entities/creature/Wolfrabbit|Wolfrabbit]]
 - [[entities/creature/young-snakewood|Young Snakewood]]
 - [[entities/creature/young-bloodhawk|young-bloodhawk]]
+- [[entities/creature/water-weird|Water Weird]]
+- [[entities/creature/whip-shark|Whip Shark]]

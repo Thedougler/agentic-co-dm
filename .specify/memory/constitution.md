@@ -25,6 +25,8 @@ MAY land work but MUST NOT replace the issue as source of scope and ownership.
 System changes MUST have a specification with independently testable acceptance before
 implementation, connecting the change to an observable D&D improvement. Specs describe outcomes
 and constraints, not creative method. Campaign Work follows its owner skill.
+Filing a new named campaign page is Campaign Work: load and complete the
+owner skill for that kind before the page is filed.
 
 ### IV. Behavioral Tests
 
@@ -195,6 +197,8 @@ when adding the carve-out. MUST NOT add one because a change might break later.
 
 Sync Impact Report (2026-09-18): MAJOR 3.0.0. Redefined X, XV, XVII and Operating Boundaries: four-line canon; file what those lines make canon; no approval wait; done-summary after green. `AGENTS.md` points. Skills lose Work-gate headers. `AGENT001`–`AGENT003` encode the contract. Wiki, Vale, and templates unchanged except wait language.
 
+Sync Impact Report (2026-09-19): PATCH 3.0.1. Clarified III: filing a new named campaign page is Campaign Work and MUST complete that kind's owner skill before the page is filed. Routing tables stay in `AGENTS.md`. No principle added or renamed. Wiki, Vale, and templates unchanged.
+
 ## Operating Boundaries
 
 - The Co-DM works in prep and wrapup; the DM is sole runtime at the table.
@@ -222,4 +226,4 @@ Versioning: MAJOR (remove/redefine principle), MINOR (add principle/section), PA
 Compliance reviews check proposed work against this constitution before merge. Project context:
 `AGENTS.md`. Harness behavior: `.omp/AGENTS.md`, `CODEX.md`, `CLAUDE.md`, `GROK.md`.
 
-**Version**: 3.0.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-18
+**Version**: 3.0.1 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-19

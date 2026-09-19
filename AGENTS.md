@@ -73,7 +73,7 @@ If table aim is `missing`, ask the DM to name the players (at least one; tests u
 
 **Production session content** (session-prep beats, TotM/`[!narration]`, action cards, spoken text) is **complete or it does not ship**. Vague/non-specific descriptions of unnamed people/things because the entity page is missing = **critical error**.
 
-**Dependency order (recursive):** If a beat/scene names or requires an NPC, item, creature, place, faction, vehicle, spell, quest, or other entity — **mint/file that owner page first** (kebab basename, matching `wiki/templates/`, live vault path), **then** write/update the session/TotM text that depends on it. A new named owner the user asked to introduce is filed first; spoken that depends on it follows. Existing wiki content MUST NOT wait. The DM cannot describe what does not exist.
+**Dependency order (recursive):** If a beat/scene names or requires an NPC, item, creature, place, faction, vehicle, spell, quest, or other entity — load that kind's **owner skill** (Wiki kind routing, Beat skill routing, or Skill Routing), **mint/file that owner page first** (kebab basename, matching `wiki/templates/`, live vault path), **then** write/update the session/TotM text that depends on it. A new named owner the user asked to introduce is filed first; spoken that depends on it follows. Existing wiki content MUST NOT wait. The DM cannot describe what does not exist.
 
 Agents MUST complete **all** recursive dependency steps to finish the goal — not only top-level, intermediary, or initial steps — in dependency order. Applies to `session-beats`, typed beat skills, `theatre-of-the-mind`, `cold-opens`, `session-recap`, and Session Architect orchestration. Completeness gate — do **not** thin narrative craft.
 
@@ -165,7 +165,7 @@ Reader is `agent` | `DM` | `players`. Unknown reader → `DM`. Vault is `true` i
 | Write, edit, or create content for a Climax | `climax-beats` |
 | Write, edit, or create content for a Resolution | `resolution-beats` |
 
-Unknown typed-beat job → classify the type first; do not default to `session-beats` for filling a beat. Named seams: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`. Before filling any typed beat or TotM spoken block, satisfy **HARD: entity-before-spoken** (mint required owners first) and **HARD: dm-facing-explicit** (DM layers concrete; no coy placeholders).
+Unknown typed-beat job → classify the type first; do not default to `session-beats` for filling a beat. Named seams: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`. Before filling any typed beat or TotM spoken block, satisfy **HARD: entity-before-spoken** (mint required owners first via the **owner skill**) and **HARD: dm-facing-explicit** (DM layers concrete; no coy placeholders).
 
 ## Wiki kind routing
 
@@ -180,7 +180,7 @@ Unknown typed-beat job → classify the type first; do not default to `session-b
 | Write, edit, or create a named region page | `region-design` |
 | Write, edit, or create a site place | `place-design` |
 
-`place-design` is the hub for all places. It defers to `city-design` for `kind: city` and to `region-design` for region jobs.
+`place-design` is the hub for all places. It defers to `city-design` for `kind: city` and to `region-design` for region jobs. Unknown kind → Skill Routing.
 
 ## Skill design dispatch
 
@@ -302,7 +302,7 @@ Every wiki page has required frontmatter: `title`, `category`, `tags`, `sources`
 
 ## Skill Routing
 
-Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the right skill. Beat-type routing and wiki-kind routing have their own tables above — this table covers everything else.
+Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the right skill. Beat-type routing and wiki-kind routing have their own tables above — this table covers everything else. Minting a named campaign page loads that kind's **owner skill** first.
 
 ### Wiki
 

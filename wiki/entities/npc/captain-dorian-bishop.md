@@ -2,6 +2,7 @@
 title: "Captain Dorian Bishop"
 aliases:
   - Captain Dorian Bishop
+  - Dorian Bishop
 category: entities
 tags: [shattered-sea, npc]
 sources:

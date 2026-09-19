@@ -2,6 +2,7 @@
 title: "Tidehex Captain"
 aliases:
   - Tidehex Captain
+  - tidehex captains
 category: entities
 tags: [shattered-sea, creature]
 sources:

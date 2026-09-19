@@ -1,0 +1,16 @@
+{
+  "eval_id": 5,
+  "eval_name": "sole-authority",
+  "prompt": "Render one 30-minute opening beat as the sole-authority run card. A monster owner exists. A second pressure creature will attack in default mode but has no owner yet. Ordinary movement (flight, swim, mounts) is how the party already travels, not a plot item. The next beat is not on the run file. Independent quality bar: a tired DM can run this slice without opening another note for anything they will roll or say.",
+  "assertions": [
+    "Scene ends when is the first ## heading with a time budget and cut lines.",
+    "![[Monster#Statblock]] embed under Roster; owner's full stat table is not retyped above it.",
+    "One named procedure (escape mode or equivalent); Be ready for failures do not also tick the clock.",
+    "Initial Narration includes three independent tells and visible cover/routes before the question.",
+    "Exit narration is absent (next beat not on file).",
+    "Ordinary movement (flight, swim, mounts) does not appear in Roster or as a plot reminder.",
+    "Every Be ready for and clock consequence is a 5.5e ruling or named vault-homebrew feature; no minted action types.",
+    "The missing owner for the second creature is flagged rather than its math invented.",
+    "Pass boundary: dnd5e-mechanics loaded on pass 1; writing-for-humans loaded only on pass 2; theatre-of-the-mind loaded only on pass 3."
+  ]
+}

@@ -15,6 +15,7 @@ location: inner lock
 faction: none
 visibility: dm
 summary: Varn runs the inner lock.
+base_confidence: 0.55
 ---
 
 # Varn

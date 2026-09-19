@@ -24,6 +24,8 @@
 - [[ashen-roost]] — Nesting grounds for firebirds that scorch and regrow the island in patches. The ash sells for a fortune. ( #shattered-sea #place)
 - [[Ashglass]] — Dead volcanic island in the eastern Midchain whose crater holds a young red dragon and a slag hoard. ( #shattered-sea #place)
 - [[Ashkevet]] — Named Dravosi prison the Lavinia note refuses to treat as her workplace. ( #shattered-sea #place)
+- [[ashwall-islands]] — Volcanic islands whose highlands and slopes form part of the Giant Owl's range. ( #shattered-sea #region)
+
 - [[Ashwalls]] — Cold-water volcanic spires: last solid ground heading west and first safe lee returning east; feels hot, sulfurous, and opportunistic. ( #shattered-sea #region)
 - [[ASSETS]] — Drop map for Session 11 summary, transcript, and recording. ( #shattered-sea #session)
 - [[Auralis]] — Public Grung mandate and name associated with a serene gold presence whose exact nature remains unknown. ( #shattered-sea #lore)
@@ -191,6 +193,7 @@
 - [[Giacinto]] — Gnome craftsman in Calveno's Velo Quarter who sells beret-and-moustache performer kits and recognizes his own handiwork on sight; a key beat for Jean-Claude's Calveno cover. ( #shattered-sea #npc)
 - [[giacomo-moretti]] — A middle-aged halfling ship chandler in Calveno, proprietor of Moretti and Sons; never pranked despite a disputed cargo. ( #shattered-sea #npc)
 - [[giant-owl]] — A CR 1/4 celestial owl haunting the Crown and Ashwall Islands' highlands, with keen darkvision and quiet detection magic. ( #shattered-sea #creature)
+- [[gust]] — A wind spell used to redirect a toxin cloud or disperse fog. ( #shattered-sea #spell)
 - [[giants-guava]] — Rare Aruhe fruit that sets the eater's Primary Ability score to 25 for one hour. ( #shattered-sea #aruhe #item)
 - [[gimbal-mount]] — A rail-bolted iron yoke on brass rings that keeps whatever sits in its cradle level and trained through a rolling deck. ( #shattered-sea #item)
 - [[glass-debt]] — Named hull whose sighting near the Strait pulls Crown captains off their usual patrol lines. ( #shattered-sea #vehicle)
@@ -259,6 +262,7 @@
 - [[Istishia]] — Cosmology pointer toward the Elemental Plane of Water in Maw talk. ( #shattered-sea #lore)
 - [[jean-claude-tabarnack]] — Level 5 Gloom Stalker Grung at 51/51 HP whose red beret marks censure and whose sister Simone still hunts him. ( #shattered-sea #pc)
 - [[Kalowe]] — Three reef-linked islets joined by stone bridges, ringed by reef with one navigable gap; feels crowded, practical, and deliberately unpapered. ( #shattered-sea #place)
+- [[kalowe-the-sawek-bounty]] — A local bounty concerning a territorial Sawek near Kalowe's blue holes. ( #shattered-sea #quest)
 - [[kalowes-frozen-council]] — Kalowe's closed council chamber and reef-gap shrine wait on the same arrival: nine seats, sealed mail, and a tribute basin. ( #shattered-sea #npc)
 - [[Karath]] — Raid and hatchery island where captives, tannin rivers, and hidden gold reagent farms support the Grung interior. ( #shattered-sea #aruhe #region)
 - [[karsovines-working-log]] — Branimir Karsovine's own trial-dive notebook, real hull-pressure and air-pump endurance data from every dive he's personally run, failures included. ( #shattered-sea #item)
@@ -719,6 +723,31 @@
 - [[yssenmoors-ancient-challenge]] — A fog-bound demigod challenges every visitor to his marsh and none have answered in years. The ley line beneath his island pulls on an artifact the party carries. ( #shattered-sea #quest)
 - [[Zort]] — Armless contact who offered a Midchain reptile lead for a prosthetic. ( #shattered-sea #npc)
 - [[zorts-toe-claws]] — Iron-capped handling sandals cut to Zort's own pattern, giving a wearer footing enough to shrug off a grapple or a shove. ( #shattered-sea #item)
+- [[takowan]] — Harbour crew member named in Grimaldi’s waking-salts item record. ( #shattered-sea #npc)
+- [[anvezs-provisions]] — General provisions shop named in the item record for Anvez’s Provisions. ( #shattered-sea #place)
+- [[arsenal]] — Calveno site named in the item record for Arsenal. ( #shattered-sea #place)
+- [[bridge]] — Named bridge site referenced by item records as the Bridge. ( #shattered-sea #place)
+- [[cabinet-of-morsani]] — Calveno site named in the item record for the Cabinet of Morsani. ( #shattered-sea #place)
+- [[calveno-sewer-magazines]] — Calveno sewer location named in item records. ( #shattered-sea #place)
+- [[carpenters-slip]] — Calveno waterfront site named in the item record for Carpenters’ Slip. ( #shattered-sea #place)
+- [[il-preludio]] — Calveno site named in the item record for Il Preludio. ( #shattered-sea #place)
+- [[kats-curios]] — Calveno shop named in the item record for Kat’s Curios. ( #shattered-sea #place)
+- [[la-brace]] — Calveno site named in the item record for La Brace. ( #shattered-sea #place)
+- [[la-gatta]] — Calveno site named in the item record for La Gatta. ( #shattered-sea #place)
+- [[moretti-and-sons]] — Calveno chandlery named in item records as Moretti & Sons. ( #shattered-sea #place)
+- [[ninkas-findings]] — Calveno shop named in the item record for Ninka’s Findings. ( #shattered-sea #place)
+- [[ormssons-fittings]] — Calveno shop named in the item record for Ormsson’s Fittings. ( #shattered-sea #place)
+- [[ponte-bassa]] — Calveno bridge site named in the item record for the Ponte Bassa. ( #shattered-sea #place)
+- [[shelf-instrument-dealer]] — Calveno dealer named in the item record for the Shelf Instrument Dealer. ( #shattered-sea #place)
+- [[the-live-hold]] — Place named in the item record for the Live Hold. ( #shattered-sea #place)
+- [[the-long-toast]] — Otel Karn tavern named in the item record for The Long Toast. ( #shattered-sea #place)
+- [[tidefall-chandlery]] — Port Tidefall chandlery named in the item record for Tidefall Chandlery. ( #shattered-sea #place)
+- [[velo-quarter]] — Calveno quarter named in item records as Velo Quarter. ( #shattered-sea #place)
+- [[wibowos-provisions]] — General provisions shop named in the item record for Wibowo’s Provisions. ( #shattered-sea #place)
+- [[zorts-pits]] — Calveno site named in the item record for Zort’s Pits. ( #shattered-sea #place)
+- [[black-pennants]] — Quest pressure named in the Magistrate’s Warding Chip item record. ( #shattered-sea #quest)
+- [[velvet-noose-intercept]] — Encounter named in the Magistrate’s Warding Chip item record. ( #shattered-sea #quest)
+- [[salted-margin]] — Vehicle named in the Plumb Eye item record as the Salted Margin. ( #shattered-sea #vehicle)
 ## References
 
 *No pages yet.*
@@ -761,6 +790,33 @@
 - [[Studio Orsini]] — An unmarked alchemy shop on a canal in Le Paludi, run by Marta Orsini. ( #shattered-sea #place)
 - [[Tallow Row]] — A card den in Calveno where Thassos, Grukan, and other regulars spend most nights. ( #shattered-sea #place)
 - [[Warren, Marrow's Crate]] — A crate held by Marrow contains the Vretek/Brol letter, silver, and a signet ring after courier Dren's death. ( #shattered-sea #quest)
+- [[entities/npc/mirela-cass|Mirela Cass]] — Named sister of Ysolde Cass, whose name Reeve Sula Marn keeps strangers away from. ( #shattered-sea #npc)
+- [[entities/place/the-splint|The Splint]] — Warren healing room run by Colla.
+- [[entities/place/the-flat-water|The Flat Water]] — Warren's underground waterway.
+- [[entities/place/anchor-and-line|Anchor and Line]] — Kalowe dockside tavern.
+- [[entities/place/inspection-pier|Inspection Pier]] — Kalowe inspection landing.
+- [[entities/place/harbourmasters-office|Harbourmaster's Office]] — Kalowe harbourmaster's workplace.
+- [[entities/place/drave-vaults|Drave Vaults]] — Kalowe vault complex.
+- [[entities/place/the-mud-pits|The Mud Pits]] — Kalowe smuggling site.
+- [[entities/place/acqua-nera|Acqua Nera]] — Kalowe dockside location.
+- [[entities/place/umberlees-shrine|Umberlee's Shrine]] — Kalowe shrine.
+- [[entities/place/fare-ia|Fare-Ia]] — Kalowe dockside location.
+- [[entities/place/hook-and-ledger|Hook and Ledger]] — Kalowe dockside business.
+- [[entities/place/grimaldis-dispensary|Grimaldi's Dispensary]] — Kalowe dispensary.
+- [[entities/place/waveservant-shrine|Waveservant Shrine]] — Kalowe shrine.
+- [[entities/place/fifitas-slip|Fifita's Slip]] — Kalowe dockside location.
+- [[entities/place/spar-and-snare-outfitters|Spar and Snare Outfitters]] — Kalowe outfitter.
+- [[entities/quest/warren-bela-silt-paw|Warren, Bela Silt-Paw]] — Rescue from a flooded Warren chamber.
+- [[entities/quest/kalowe-merrows-prize|Kalowe, Merrow's Prize]] — A Kalowe lead involving Merrow's Prize.
+- [[entities/quest/warren-grung-in-the-sewers|Warren, Grung in the Sewers]] — Warren sewer lead.
+- [[entities/quest/warren-ferrin-locke|Warren, Ferrin Locke]] — Warren lead involving Ferrin Locke.
+- [[entities/quest/the-captains-map|The Captain's Map]] — A map held by Captain Dorian Bishop.
+- [[entities/quest/kalowe-bad-receipt-cache|Kalowe, Bad Receipt Cache]] — A hidden cache tied to a bad receipt.
+- [[entities/creature/whip-shark|Whip Shark]] — A creature named in Kalowe records.
+- [[entities/creature/water-weird|Water Weird]] — A creature holding a flooded Warren chamber.
+- [[entities/item/flask-of-endless-water|Flask of Endless Water]] — An item named in Warren evidence.
+- [[entities/item/room-6-key|Room 6 Key]] — A key named in Kalowe evidence.
+- [[entities/item/fathomrush-last-berth-false-log|Fathomrush Last Berth False Log]] — A false log named in Kalowe evidence.
 ## Folder Indexes
 - [[entities/creature/creature-index|Creatures]]
 - [[entities/entities-index|Entities]]

@@ -2,53 +2,63 @@
   "skill_name": "dnd5e-mechanics",
   "evals": [
     {
-      "id": "grapple-leftover",
-      "prompt": "Write a run-card ruling: a CR 5 ogre with Strength 19 tries to grab the fighter. Use an Athletics contest DC 14.",
-      "expected_output": "Unarmed Strike Grapple: the fighter makes a Strength or Dexterity saving throw (its choice) against DC 15 (8 + 4 Strength + 3 PB). Escape is Strength (Athletics) or Dexterity (Acrobatics) against that same DC. Not a contest.",
-      "expectations": [
-        "Classifies the attempt as a saving throw, not an Athletics contest.",
-        "Uses DC 8 + Strength modifier + Proficiency Bonus (15 for Str 19 at CR 5).",
-        "Names Strength or Dexterity (target's choice) and an Athletics or Acrobatics escape check against that DC."
+      "id": "grapple-spiguar-saber-bite",
+      "prompt": "Write a run-card ruling for the Spiguar (wiki/entities/creature/spiguar.md). Its Saber Bite says 'the target has the Grappled condition (escape DC 18).' A player asks: 'Can I use Athletics to contest the grapple?' Resolve using 2024 rules.",
+      "expected_output": "Escape is a Strength (Athletics) or Dexterity (Acrobatics) check against the listed DC 18 — not a contested Athletics roll. The grapple was applied by a hit, not a contest. Pounce's Prone uses a Strength saving throw DC 18, not a contest either.",
+      "assertions": [
+        {"text": "Classifies the escape as a check against a fixed DC, not a contested Athletics roll.", "type": "content"},
+        {"text": "Identifies the correct escape DC as 18 from the Spiguar's Saber Bite.", "type": "content"},
+        {"text": "Names both Strength (Athletics) and Dexterity (Acrobatics) as escape options.", "type": "content"},
+        {"text": "Does not introduce an Athletics contest between creature and player.", "type": "guardrail"},
+        {"text": "Distinguishes Pounce's Strength saving throw from the grapple escape check.", "type": "quality"}
       ]
     },
     {
-      "id": "notice-vs-deduce",
-      "prompt": "Prep a hallway: a hidden tripwire, and a pit whose lid is flush with the floor. Give DCs for noticing each and for understanding how the pit is built.",
-      "expected_output": "Search Wisdom (Perception) for the tripwire and for noticing the pit if looking; Study Intelligence (Investigation) to deduce the lid construction. Typical-band DCs (10/15/20), not Investigation-to-notice.",
-      "expectations": [
-        "Uses Search / Wisdom (Perception) to notice concealed wire or lid.",
-        "Uses Study / Intelligence (Investigation) to deduce how the pit works.",
-        "Sets DCs on the 5/10/15/20/25/30 band."
+      "id": "search-vs-study-grass-mantle",
+      "prompt": "The party is crossing Aruhe grassland where a Spiguar (wiki/entities/creature/spiguar.md) is hidden using Grass Mantle. One player says 'I look around for danger' and another says 'I examine the crushed grass pattern to figure out what made it.' Write the DCs and resolution for each.",
+      "expected_output": "Search / Wisdom (Perception) to spot the hidden Spiguar — against its Stealth (passive or rolled with advantage from Grass Mantle). Study / Intelligence (Investigation) or Wisdom (Survival) to deduce the predator type from tracks. The first is noticing; the second is reasoning from evidence.",
+      "assertions": [
+        {"text": "Uses Search / Wisdom (Perception) for the player looking for danger.", "type": "content"},
+        {"text": "Uses Study / Intelligence (Investigation) or Wisdom (Survival) for the player examining tracks.", "type": "content"},
+        {"text": "References Grass Mantle's advantage on Stealth and disadvantage on Perception beyond 10 ft.", "type": "content"},
+        {"text": "Sets DCs on the typical band (10/15/20/25) or derived from the Spiguar's Stealth +12.", "type": "process"},
+        {"text": "Does not use Investigation to notice hidden creatures.", "type": "guardrail"}
       ]
     },
     {
-      "id": "influence-hostile",
-      "prompt": "The rogue wants to talk a Hostile city guard into handing over a cell key during a quiet watch.",
-      "expected_output": "If the guard is hesitant: Influence, Charisma (Persuasion) or (Deception), Disadvantage because Hostile, DC 15 or the guard's Intelligence, whichever is higher. If willing or unwilling: fiction only, no DC parenthetical.",
-      "expectations": [
-        "Writes an Influence DC only for a hesitant guard.",
-        "Applies Disadvantage when the attitude is Hostile and a check is written.",
-        "Leaves willing compliance and unwilling refusal as fiction without a no-check annotation."
+      "id": "influence-countless-talon",
+      "prompt": "During Session 11, Talon Skarn (a Countless faction agent, Hostile attitude) confronts the party at the river slack basin. A player wants to convince Skarn to leave the Fate Spinner alone. Write the Influence resolution. The Countless (wiki/entities/faction/Countless.md) are sentinel breakaways whose Talons hunt Fate Spinner carriers.",
+      "expected_output": "Skarn is Hostile — Influence applies Disadvantage. His mission to recover the Fate Spinner for the Countless means willing compliance is fiction-blocked (the Spinner is his objective). A hesitant middle ground (delay, partial withdrawal) gets a DC. Outright 'leave the Spinner' with no leverage is unwilling refusal — no roll.",
+      "assertions": [
+        {"text": "Applies Disadvantage because Skarn's attitude is Hostile.", "type": "content"},
+        {"text": "Distinguishes fiction-blocked refusal (abandon his mission) from a hesitant middle ground (temporary delay).", "type": "content"},
+        {"text": "Writes an Influence DC only for outcomes the fiction makes hesitant, not for impossible demands.", "type": "process"},
+        {"text": "Does not write a DC that lets Persuasion override Skarn's core faction mission.", "type": "guardrail"},
+        {"text": "References the Countless faction context as motivation for Skarn's refusal.", "type": "quality"}
       ]
     },
     {
-      "id": "poison-save-not-check",
-      "prompt": "A swamp cloud: anyone who breathes it makes a Constitution check DC 18 or is poisoned.",
-      "expected_output": "Constitution saving throw, not a check. DC from the typical band or 8+PB+mod of the source, not 18-by-habit.",
-      "expectations": [
-        "Calls a Constitution saving throw, not a Constitution check.",
-        "Does not keep DC 18 unless a named formula produces it; prefers 15/20 or 8+PB+mod.",
-        "Does not treat a natural 20 as an automatic success on the save."
+      "id": "save-not-check-blackrail-venom",
+      "prompt": "The Blackrail (wiki/entities/creature/Blackrail.md) is a CR 9 cave centipede. Write a ruling for its venomous bite: 'anyone bitten makes a Constitution check DC 16 or is poisoned for 1 minute.' Correct any 2024 rules errors.",
+      "expected_output": "Constitution saving throw, not a Constitution check. DC should follow 8 + PB + Con mod or use the typical band — DC 16 is plausible for CR 9 (PB +4, Con +3 = DC 15, or typical-band DC 15). Poisoned condition ends on a successful save at end of turn or after 1 minute.",
+      "assertions": [
+        {"text": "Corrects 'Constitution check' to 'Constitution saving throw.'", "type": "content"},
+        {"text": "Validates or recalculates the DC using 8 + PB + ability mod or the typical band.", "type": "process"},
+        {"text": "Does not keep DC 16 without verifying it against a formula or band.", "type": "guardrail"},
+        {"text": "Specifies repeat save timing or duration end for the Poisoned condition.", "type": "content"},
+        {"text": "Does not treat natural 20 as automatic success on the saving throw.", "type": "guardrail"}
       ]
     },
     {
-      "id": "certain-outcome-silent",
-      "prompt": "On a location bullet 'Splash and be noisy: otters notice and start playing,' add the appropriate checks and saves. Entering the water always starts play.",
-      "expected_output": "Player-activity tests live under If the party, marked **Wisdom (Animal Handling) — `DC 15`** and **Strength or Dexterity save — `DC 14`**. Splash starting play stays unmarked fiction. A creature-imposed macaw Confess may sit on What as **Wisdom save — `DC 12`**. No '(no check)'. No checks table. Ability/skill bold; `DC n` inline code.",
-      "expectations": [
-        "Puts player-activity tests on If the party using **Ability (Skill) — `DC n`** (or **Ability save — `DC n`**).",
-        "Leaves play-start unmarked; no no-check annotation.",
-        "Any extra section test is optional, secret, or non-obvious (creature-imposed), still the same grammar."
+      "id": "certain-outcome-river-otter",
+      "prompt": "The River Otter page (wiki/entities/creature/river-otter.md) describes otters that 'roll through the shallows with rope, oars, ankles as if every loose thing in the water has joined their game.' Write a location bullet: 'Splash into the shallows: the otters notice and start tugging gear.' Add appropriate checks for player interactions — the otters always notice splashing.",
+      "expected_output": "Otter noticing stays unmarked fiction — a certain outcome with no roll. Player-activity tests (calming, retrieving gear, avoiding the tug) go under If the party with bold ability/skill and inline-code DC. No '(no check)' annotation on the certain outcome.",
+      "assertions": [
+        {"text": "Leaves 'otters notice and start tugging' as unmarked fiction with no roll.", "type": "content"},
+        {"text": "Does not add a '(no check)' or similar annotation to the certain outcome.", "type": "guardrail"},
+        {"text": "Puts player-activity tests under If the party using **Ability (Skill) — `DC n`** format.", "type": "structure"},
+        {"text": "Uses Wisdom (Animal Handling) or similar for calming/redirecting the otters.", "type": "content"},
+        {"text": "DCs sit on the typical band (10/15/20).", "type": "process"}
       ]
     }
   ]

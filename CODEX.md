@@ -26,7 +26,7 @@ The root Codex agent remains lead and accountable for repository changes. When d
 
 ## Behavioral Test Subject
 
-For agent-facing surface changes, use a Luna subagent at high reasoning effort as the independent behavioral test subject. Give it cold context, no write permission in the prompt, the relevant task or task slice to perform, and explicit scope and success criteria. Reconcile its output as behavioral evidence before declaring completion.
+For agent-facing surface changes, use a Luna subagent at high reasoning effort as the independent behavioral test subject. Give it cold context (the changed instruction excerpt, the task or slice, scope, and success criteria — not the producing conversation) and no write permission in the prompt. Reconcile its output as behavioral evidence before declaring completion.
 
 ## Inline Review
 

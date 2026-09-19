@@ -1,5 +1,7 @@
 ---
 title: Session 08
+aliases:
+  - Session 08, Moment 13
 category: journal
 tags: []
 sources: []

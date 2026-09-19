@@ -1,5 +1,8 @@
 ---
 title: Session 02
+aliases:
+  - Session 02, Conflict is a Surety
+  - Session 02: conflict is a Surety
 category: journal
 tags: []
 sources: []

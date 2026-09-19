@@ -1,0 +1,14 @@
+{
+  "eval_id": 1,
+  "eval_name": "full-session",
+  "prompt": "Turn an existing four-hour session prep with a strong start, two routes, three encounter owners, a visible faction clock, and an off-map fallback into a DM-only run guide. Do not invent canon.",
+  "assertions": [
+    "Scene ends when is the first ## heading in each cockpit, with an end condition on its first line and a time budget.",
+    "At a Glance contains bullets for stakes, goal or exit, danger, and situation magnets.",
+    "Each live card is one cockpit — no dual Now/Run-now pair, no Scene menu, no separate Ask callout.",
+    "One named procedure per beat; Be ready for failures do not also advance the threat clock.",
+    "Pass 1 leaves every [!narration] body empty; pass 3 fills them. No spoken prose appears before pass 3.",
+    "dnd5e-mechanics is loaded before any check, save, DC, or player action mapped to a roll.",
+    "writing-for-humans and theatre-of-the-mind are not loaded during pass 1."
+  ]
+}

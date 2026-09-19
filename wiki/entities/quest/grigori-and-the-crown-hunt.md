@@ -36,4 +36,4 @@ Open quest covering Shepherd Grigori and the Crown hunt pressure around Flock in
 
 ## Situation
 
-[[aleksander-malone]]'s hunt is already live from Grigori's earlier house pattern, not from any Knighton wound. The source asks the party to choose whether to protect the healer who saved a crewmate or hand him to Malone.
+The situation gives the party a choice. They can protect the healer who saved a crewmate or hand him to Malone.

@@ -149,3 +149,6 @@ base_confidence: 0.55
 - [[entities/item/widows-toast|Widow's Toast]]
 - [[entities/item/wild-pearl-of-power|Wild Pearl of Power]]
 - [[entities/item/zorts-toe-claws|Zort's Toe-Claws]]
+- [[entities/item/fathomrush-last-berth-false-log|Fathomrush Last Berth False Log]]
+- [[entities/item/flask-of-endless-water|Flask of Endless Water]]
+- [[entities/item/room-6-key|Room 6 Key]]

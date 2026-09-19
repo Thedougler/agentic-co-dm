@@ -196,3 +196,4 @@ base_confidence: 0.55
 - [[entities/npc/ysolde-cass|Ysolde Cass]]
 - [[entities/npc/ysolde-sallow|Ysolde Sallow]]
 - [[entities/npc/Zort|Zort]]
+- [[entities/npc/mirela-cass|Mirela Cass]]

@@ -1,6 +1,9 @@
 ---
 title: "Warren, Marrow's Crate"
-category: campaign
+category: entities
+aliases:
+  - Warren - Marrow's Crate
+  - Warren (Marrow's Crate)
 tags: [shattered-sea, quest]
 sources: ["[[marrow]]"]
 summary: "A crate held by Marrow contains the Vretek/Brol letter, silver, and a signet ring after courier Dren's death."

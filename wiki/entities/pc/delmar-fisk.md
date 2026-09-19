@@ -2,6 +2,7 @@
 title: Delmar Fisk
 aliases:
   - Delmar Fisk
+  - Admiral Fisk
 category: entities
 tags: [shattered-sea, pc]
 sources:

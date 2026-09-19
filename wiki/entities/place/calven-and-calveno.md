@@ -5,6 +5,7 @@ aliases:
   - Calven
   - Calveno
   - calveno
+  - Calveno (Districts & Running the City)
 category: entities
 tags: [shattered-sea, calveno, place]
 sources: ["Calven and Calveno.md", "Session 03 - Recap.md", "Session 07 - Recap.md", "Session 08 - Recap.md", "Session 09 - Recap.md"]

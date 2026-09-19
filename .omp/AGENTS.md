@@ -8,5 +8,5 @@ Read `.omp/config.yml` for model roles, caps, isolation, and discovery settings.
 
 ## Behavioral validation
 
-For any agent-facing surface change, use the configured `smol` role as an independent behavioral test subject. Give it cold context, no write permission, the relevant task or slice, and explicit scope and success criteria. Reconcile its output as evidence before declaring completion; if it cannot run, record the blocker and compensating validation. Done when the subject demonstrates the requested behavior without out-of-scope work.
+For any agent-facing surface change, use the configured `smol` role as an independent behavioral test subject. Give it cold context (the changed instruction excerpt, the task or slice, scope, and success criteria — not the producing conversation) and no write permission. Reconcile its output as evidence before declaring completion; if it cannot run, record the blocker and compensating validation. Done when the subject demonstrates the requested behavior without out-of-scope work.
 

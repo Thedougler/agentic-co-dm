@@ -2,6 +2,7 @@
 title: "Grandfather's Course"
 aliases:
   - Grandfather's Course
+  - a navigation journal
 category: entities
 tags: [shattered-sea, item]
 sources:

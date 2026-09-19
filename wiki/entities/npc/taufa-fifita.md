@@ -2,6 +2,7 @@
 title: "Taufa Fifita"
 aliases:
   - Taufa Fifita
+  - Taufa Fifita & Sons
 category: entities
 tags: [shattered-sea, npc]
 sources:

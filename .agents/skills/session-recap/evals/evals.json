@@ -2,33 +2,35 @@
   "skill_name": "session-recap",
   "evals": [
     {
-      "id": 1,
-      "prompt": "The transcript is raw and noisy. Recap the session for players and file the wiki page now.",
-      "expected_output": "Hands raw transcript cleanup to session-transcript-ingest, then proposes a narrative recap in chat; files Session-<NN>-Recap.md only after DM accept.",
-      "expectations": [
-        "Does not pass or reproduce the full transcript.",
-        "Uses wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md and wiki/templates/recap.md.",
-        "Uses type: recap with [!narration]; does not write type: session / session.md durable log."
+      "id": "raw-transcript-handling",
+      "prompt": "The transcript from Session 11 (Shattered Sea, Aruhe inland expedition) is raw and noisy — crosstalk, mechanical chatter, table jokes. Recap the session for players and file the wiki page now.",
+      "expected_output": "Hands transcript cleanup to session-transcript-ingest. Proposes a narrative recap in chat using past-tense 'you' address and [!narration] callouts. Files Session-11-Recap.md only after DM accept.",
+      "assertions": [
+        {"text": "Does not pass or reproduce the full raw transcript in the recap.", "type": "guardrail"},
+        {"text": "Uses wiki/journal/sessions/shattered-sea/11/Session-11-Recap.md path and wiki/templates/recap.md layout.", "type": "structure"},
+        {"text": "Uses type: recap with [!narration]; does not write type: session or session.md durable log.", "type": "structure"},
+        {"text": "Waits for DM accept before filing the page.", "type": "process"}
       ]
     },
     {
-      "id": 2,
-      "prompt": "Create a page in wiki/pages/raw for the session recap because that is where the vendor workflow stores it.",
-      "expected_output": "Rejects legacy paths and proposes Session-<NN>-Recap.md under the numbered session folder.",
-      "expectations": [
-        "Never creates campaigns/<slug>/, pages/, or raw/.",
-        "Uses the wiki/templates/recap.md layout.",
-        "No spaces in the basename."
+      "id": "legacy-path-rejection",
+      "prompt": "Create a page in wiki/pages/raw for the Session 11 recap because that is where the vendor workflow stores it.",
+      "expected_output": "Rejects legacy paths. Proposes Session-11-Recap.md under wiki/journal/sessions/shattered-sea/11/.",
+      "assertions": [
+        {"text": "Never creates campaigns/<slug>/, pages/, or raw/ paths.", "type": "guardrail"},
+        {"text": "Uses the wiki/templates/recap.md layout.", "type": "structure"},
+        {"text": "No spaces in the basename — uses Session-11-Recap.md format.", "type": "structure"}
       ]
     },
     {
-      "id": 3,
-      "prompt": "The prep planned a harbor magistrate encounter, but play notes do not mention it. Add it to the final recap and update the magistrate canon page.",
-      "expected_output": "Keeps unused prep out of the narrative recap and does not perform owner-page canon surgery.",
-      "expectations": [
-        "Does not promote unused prep into narration or Wiki facts.",
-        "Does not invent or surgically update an entity page from silence.",
-        "Flags missing evidence or leaves canon to Campaign Editor / reconcile."
+      "id": "unused-prep-exclusion",
+      "prompt": "Session 11 prep planned a Spiguar (wiki/entities/creature/spiguar.md) ambush in the grasslands, but play notes show the party took a river route and never entered Spiguar territory. Add the Spiguar encounter to the recap and update the Spiguar canon page with combat results.",
+      "expected_output": "Keeps the unused Spiguar encounter out of the narrative recap. Does not perform owner-page canon surgery from unplayed prep. Flags the gap for Campaign Editor or reconcile.",
+      "assertions": [
+        {"text": "Does not promote unused prep into narration or Wiki facts.", "type": "guardrail"},
+        {"text": "Does not invent or update an entity page from silence — the Spiguar was never fought.", "type": "guardrail"},
+        {"text": "Flags missing evidence or leaves canon to Campaign Editor / reconcile.", "type": "process"},
+        {"text": "The recap contains only what actually happened at the table.", "type": "quality"}
       ]
     }
   ]

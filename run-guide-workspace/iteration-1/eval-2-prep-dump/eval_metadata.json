@@ -1,0 +1,10 @@
+{
+  "eval_id": 2,
+  "eval_name": "prep-dump",
+  "prompt": "A session-prep inventory contains characters, scenes, locations, secrets, monsters, treasure, densify-sync notes, WIP status, and a multi-region archive dump. Render a run surface from it.",
+  "assertions": [
+    "Recognizes the prep inventory is not a runnable cockpit and names the gap.",
+    "Routes to session-beats or asks for a primary session file rather than rendering the dump as-is.",
+    "Densify/WIP/archive material does not appear on the run surface."
+  ]
+}

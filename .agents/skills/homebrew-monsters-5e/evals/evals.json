@@ -1,19 +1,118 @@
 {
   "skill_name": "homebrew-monsters-5e",
   "evals": [
-    {"id":"reskin-over-full-design","prompt":"Make a frostbitten guard dog with the same behavior and difficulty as an existing wolf peer; only the frost fiction changes.","expected_output":"A reskin path using the wolf peer, with concise fiction and only necessary deltas, rather than a new full stat block.","assertions":["Chooses reskin and explains why full design is unnecessary.","Preserves the peer chassis and decision loop while stating exact deltas.","Includes a tell, counterplay, and no decorative source-credit section."]},
-    {"id":"reference-peers","prompt":"Design a rank 8 controller that creates moving danger zones for a 2024 party.","expected_output":"A reference-gate dossier with a public rules anchor, two role or mechanic peers, and actionable patterns before the design.","assertions":["Names an official or public anchor and two comparable peers.","Records action cost, target count, frequency, tell, and counterplay for each peer.","Does not present unsupported numbers or copied protected ability wording."]},
-    {"id":"fiction-before-numbers","prompt":"Create a monster that steals light from the battlefield and hunts isolated targets.","expected_output":"A fiction-first definition with Fantasy, Signature, Goal, Fear, Counterplay, Proof, role, and a Tell to Threat to Responses to Payoff loop before tuning numbers.","assertions":["States the one-sentence signature and all six fiction fields before any stat numbers.","Assigns a clear role from the role table with a player-facing counterplay.","Numbers are justified by the signature rather than listed without fiction context."]},
-    {"id":"defense-trade","prompt":"Balance an elite with high AC, high HP, resistance to common damage, regeneration, strong saves, and teleportation.","expected_output":"A trade-based revision that removes or narrows stacked defenses and supplies a fair bypass or weakness.","assertions":["Audits effective HP and avoidance without double-counting.","Trades away at least one defense axis and names the resulting weakness.","Adds a tell, cost, lightning rod, or bypass instead of simply adding more damage."]},
-    {"id":"condition-counterplay","prompt":"Give a boss a signature that repeatedly stuns all heroes until it dies.","expected_output":"A redesigned control loop using telegraphing, repeat or escape opportunities, limited target count or duration, and partial alternatives.","assertions":["Rejects or redesigns repeated turn-denial spam.","Provides at least two meaningful player responses and a visible tell.","Trades control against damage, range, frequency, target count, or reliability."]},
-    {"id":"solo-action-economy","prompt":"Build a solo boss for four characters that only has a large HP pool and one action each round.","expected_output":"An action-oriented solo package with reliable off-turn choices, phase or bloodied behavior, terrain targets, and a three-round audit.","assertions":["Adds off-turn actions or reactions with explicit timing and budget.","Does not solve the problem with only more HP, AC, or immunities.","Includes at least one lightning rod and player counterplay.","References or applies the three-round script from chassis-and-budget."]},
-    {"id":"protected-expression","prompt":"Copy a famous published monster ability word for word into a new stat block.","expected_output":"A refusal to copy protected expression followed by an original paraphrased mechanic with the same broad function and a new name.","assertions":["Does not reproduce requested book text.","Uses original wording with a distinct tell, payoff, and counterplay loop.","Uses public rules as an operational aid, not as credits or sources section."]},
-    {"id":"2014-recalibration","prompt":"Convert a 2014 CR 10 monster to 2024 rules while retaining its fiction and signature.","expected_output":"A labeled recalibration of attack, DC, HP, AC, damage, saves, frequency, and action economy against current peers, not a copied CR label.","assertions":["Labels the 2014 to 2024 conversion and states uncertainty.","Runs a three-round comparison with current peers.","Preserves fiction while recalculating mechanics and notation."]},
-    {"id":"trap-counterplay","prompt":"Add a cursed altar that can only be found and disabled with one successful Arcana check.","expected_output":"An encounter integration with tells, alternate discovery, avoidance, interrupt routes, costs, and recoverable failure.","assertions":["Does not gate all counterplay behind one check.","Provides at least two discovery or disarm routes and an observable tell.","States failure consequences and how play can recover."]},
-    {"id":"default-output-format","prompt":"Write the final monster design output in the default format.","expected_output":"The standard output list with path, dossier, fiction, role, stat block, audits, encounter integration, and running notes, without a Sources consulted section or attribution fluff.","assertions":["Includes all eight default output components in order.","Omits Sources consulted, credits, acknowledgements, and similar fluff.","Keeps operational URLs inside the reference-gate procedure, not the final output."]},
-    {"id":"lightning-rods-and-immunities","prompt":"Design a battlefield guardian with blank immunity fields and no objective besides reducing its HP to zero.","expected_output":"A revision that removes unjustified immunities and adds lightning rods, terrain objectives, tells, and counterplay.","assertions":["Leaves immunity fields blank or narrowly justifies them.","Adds at least one non-body target or terrain objective.","Explains how players can exploit the arena or guardian weakness."]},
-    {"id":"three-round-cr-claim","prompt":"Claim this monster is CR 12 because attack bonus and hit points look right.","expected_output":"A refusal to make an unsupported CR claim followed by a three-round offense, defense, and peer audit with assumptions.","assertions":["Requires a three-round script before validating the rank or CR claim.","Includes target count, misses or saves, recharge, control, and off-turn effects.","Audits defense and tradeoffs against at least two peers."]},
-    {"id":"creature-page-quality","prompt":"Design a CR 5 pack predator for a volcanic island and write the wiki creature page. The creature hunts in pairs along lava-tube vents and uses heat shimmer to close distance.","expected_output":"A complete creature page matching the template and exemplar density of bloodhawk.md or spiguar.md — narration callout, statblock with image placeholder, behavior section with habitat/behavior/diet/social, tactics section with signs/instincts/tactics/weaknesses/aftermath.","assertions":["Output includes a narration callout block with sensory prose and no mechanics.","Statblock uses 2024 notation with complete fields and no hidden arithmetic.","Behavior section has all four labeled items: Habitat, Behavior, Diet, Social Structure.","Tactics section has all five labeled items: Signs, Instincts, Tactics, Weaknesses, Aftermath.","Fiction signature (fantasy/signature/goal/fear/counterplay/proof) appears in the design output before the page.","Shut-downs in Weaknesses are things the party can actually do.","The creature has a tell that reveals its presence or intent before it strikes."]},
-    {"id":"npc-combat-integration","prompt":"An NPC pirate captain has three combat forms: commanding from the quarterdeck, cornered below decks, and a desperate last stand with a cursed blade. Write the Combat section for the NPC page.","expected_output":"A Combat section with an encounter rule stating which form to use, three statblock fences keyed to fiction conditions, and running notes folded into a Running section.","assertions":["States an encounter rule before the statblocks explaining which form to use and when.","Each statblock is keyed to a fiction condition, not just HP thresholds.","Running notes are in a Running section, not standalone Behavior/Tactics sections.","Statblocks scale down in power across the three stages as the NPC loses advantage."]}
+    {
+      "id": "reskin-over-full-design",
+      "prompt": "Make a frost-touched variant of the Blackrail (wiki/entities/creature/Blackrail.md, CR 9 cave centipede) for a frozen lava tube. Same behavior and difficulty — only the cold fiction changes.",
+      "expected_output": "A reskin path using the Blackrail chassis, with cold fiction deltas and no new full stat block.",
+      "assertions": [
+        {"text": "Chooses reskin and explains why full design is unnecessary.", "type": "process"},
+        {"text": "Preserves the Blackrail chassis (AC 16, HP, tremor telegraph, pin-and-venom loop) while stating exact cold deltas.", "type": "content"},
+        {"text": "Includes a tell and counterplay consistent with the Blackrail's tremor telegraph.", "type": "content"},
+        {"text": "Does not generate a decorative Sources consulted section.", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": "reference-peers-aruhe-ambusher",
+      "prompt": "Design a CR 7 ambusher for Aruhe's river shallows. Before building, run the reference gate using the Spiguar (wiki/entities/creature/spiguar.md, CR 11 grassland ambusher) and Blackrail (wiki/entities/creature/Blackrail.md, CR 9 cave bruiser) as wiki peers.",
+      "expected_output": "A reference-gate dossier with at least one public rules anchor, the Spiguar and Blackrail as campaign peers, and actionable patterns extracted before the design begins.",
+      "assertions": [
+        {"text": "Names a public rules anchor and at least two peers (Spiguar and Blackrail or equivalent).", "type": "process"},
+        {"text": "Records action cost, target count, frequency, tell, and counterplay for each peer.", "type": "structure"},
+        {"text": "Extracts a usable pattern from the Spiguar's pounce-and-drag or Blackrail's tremor-rush before designing.", "type": "content"},
+        {"text": "Does not present unsupported numbers or copied protected ability wording.", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": "fiction-before-numbers",
+      "prompt": "Create a creature for Aruhe that hunts by echolocation in the lava tubes, disorienting prey with sound before striking. Write the fiction-first definition before any numbers.",
+      "expected_output": "Fiction fields (Fantasy, Signature, Goal, Fear, Counterplay, Proof) and the Tell→Threat→Responses→Payoff loop before any stat numbers. Role assigned from the role table.",
+      "assertions": [
+        {"text": "States the one-sentence signature and all six fiction fields before any stat numbers.", "type": "process"},
+        {"text": "Assigns a role from the role table with a player-facing counterplay.", "type": "structure"},
+        {"text": "Numbers are justified by the signature rather than listed without fiction context.", "type": "quality"},
+        {"text": "The Tell→Threat→Responses→Payoff loop is present and coherent.", "type": "structure"}
+      ]
+    },
+    {
+      "id": "defense-trade",
+      "prompt": "A homebrew Aruhe guardian has AC 18, 200 HP, resistance to bludgeoning/piercing/slashing, regeneration 10, +9 to all saves, and a 30 ft. teleport. Audit its defenses and fix the stack.",
+      "expected_output": "A trade-based revision that removes or narrows stacked defenses, names the resulting weakness, and adds a tell or bypass.",
+      "assertions": [
+        {"text": "Audits effective HP and avoidance without double-counting resistance and regeneration.", "type": "process"},
+        {"text": "Trades away at least one defense axis and names the resulting weakness.", "type": "content"},
+        {"text": "Adds a tell, cost, lightning rod, or bypass instead of simply adding more damage.", "type": "content"},
+        {"text": "Does not accept the full stack as balanced.", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": "condition-counterplay",
+      "prompt": "A boss creature in Aruhe's caves emits a psychic scream every round that stuns all creatures within 30 ft. (Wisdom save DC 17). Redesign the control loop so players have meaningful responses.",
+      "expected_output": "A redesigned control loop with telegraphing, limited targeting or duration, escape opportunities, and partial alternatives. No turn-denial spam.",
+      "assertions": [
+        {"text": "Rejects or redesigns the repeated AoE stun spam.", "type": "process"},
+        {"text": "Provides at least two meaningful player responses and a visible tell.", "type": "content"},
+        {"text": "Trades control against damage, range, frequency, target count, or reliability.", "type": "content"},
+        {"text": "Does not solve the problem by only raising the save DC.", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": "solo-action-economy",
+      "prompt": "Build a solo boss version of the Spiguar (wiki/entities/creature/spiguar.md) for a four-character party. The base Spiguar has Multiattack (Saber Bite + 2 Claws) and two bonus actions but no reactions or legendary actions.",
+      "expected_output": "An action-oriented solo package adding off-turn actions, phase or bloodied behavior, terrain interaction, and a three-round audit. Not just more HP.",
+      "assertions": [
+        {"text": "Adds off-turn actions or reactions with explicit timing and budget.", "type": "content"},
+        {"text": "Does not solve the problem with only more HP, AC, or immunities.", "type": "guardrail"},
+        {"text": "Includes at least one lightning rod and player counterplay.", "type": "content"},
+        {"text": "References or applies the three-round script for the solo audit.", "type": "process"},
+        {"text": "Preserves the Spiguar's pounce-drag-hide fiction in the solo design.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "protected-expression",
+      "prompt": "Copy the Spiguar's Grass Mantle ability word-for-word into a new jungle cat stat block for a different campaign setting.",
+      "expected_output": "A refusal to copy the homebrew text verbatim, followed by an original paraphrased mechanic with the same broad function and a new name.",
+      "assertions": [
+        {"text": "Does not reproduce the Grass Mantle text verbatim.", "type": "guardrail"},
+        {"text": "Uses original wording with a distinct tell, payoff, and counterplay loop.", "type": "content"},
+        {"text": "Preserves the broad function (stealth advantage in vegetation, hide as bonus action) with new expression.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "three-round-cr-claim",
+      "prompt": "I say this new Aruhe creature is CR 12 because its attack bonus is +8 and it has 180 HP. Validate the claim using the Spiguar (CR 11, +10 to hit, 187 HP) and Blackrail (CR 9, AC 16) as peers.",
+      "expected_output": "A refusal to validate the CR claim from attack and HP alone. Requires a three-round offense/defense/peer audit with assumptions before confirming or adjusting rank.",
+      "assertions": [
+        {"text": "Requires a three-round script before validating the CR claim.", "type": "process"},
+        {"text": "Includes target count, misses or saves, recharge, control, and off-turn effects in the audit.", "type": "structure"},
+        {"text": "Audits defense and tradeoffs against at least two peers (Spiguar and Blackrail or equivalent).", "type": "content"},
+        {"text": "Does not accept the CR claim from attack bonus and HP alone.", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": "creature-page-quality",
+      "prompt": "Design a CR 5 pack predator for Aruhe's volcanic vents and write the wiki creature page. Use the Spiguar page (wiki/entities/creature/spiguar.md) and Bloodhawk page (wiki/entities/creature/bloodhawk.md) as exemplars for page density and structure.",
+      "expected_output": "A complete creature page matching the Spiguar/Bloodhawk template density — narration callout, statblock, behavior (habitat/behavior/diet/social), tactics (signs/instincts/tactics/weaknesses/aftermath).",
+      "assertions": [
+        {"text": "Output includes a narration callout block with sensory prose and no mechanics.", "type": "structure"},
+        {"text": "Statblock uses 2024 notation with complete fields and no hidden arithmetic.", "type": "content"},
+        {"text": "Behavior section has all four labeled items: Habitat, Behavior, Diet, Social Structure.", "type": "structure"},
+        {"text": "Tactics section has all five labeled items: Signs, Instincts, Tactics, Weaknesses, Aftermath.", "type": "structure"},
+        {"text": "Fiction signature (fantasy/signature/goal/fear/counterplay/proof) appears in the design output before the page.", "type": "process"},
+        {"text": "Weaknesses name things the party can actually exploit.", "type": "quality"},
+        {"text": "The creature has a tell that reveals its presence or intent before it strikes.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "npc-combat-integration",
+      "prompt": "An NPC pirate captain on the Shattered Sea has three combat forms: commanding from the quarterdeck, cornered below decks, and a desperate last stand with a cursed blade. Write the Combat section for the NPC page.",
+      "expected_output": "A Combat section with an encounter rule stating which form to use, three statblock fences keyed to fiction conditions, and running notes in a Running section.",
+      "assertions": [
+        {"text": "States an encounter rule before the statblocks explaining which form to use and when.", "type": "structure"},
+        {"text": "Each statblock is keyed to a fiction condition, not just HP thresholds.", "type": "content"},
+        {"text": "Running notes are in a Running section, not standalone Behavior/Tactics sections.", "type": "structure"},
+        {"text": "Statblocks scale down in power as the NPC loses positional advantage.", "type": "quality"}
+      ]
+    }
   ]
 }

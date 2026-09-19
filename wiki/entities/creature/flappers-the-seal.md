@@ -2,6 +2,7 @@
 title: "Flappers the Seal"
 aliases:
   - Flappers the Seal
+  - Flappers
 category: entities
 tags: [shattered-sea, creature]
 sources:

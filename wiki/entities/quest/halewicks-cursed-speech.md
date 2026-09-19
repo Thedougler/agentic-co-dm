@@ -28,11 +28,11 @@ tier: supporting
 
 ## Premise
 
-[[Halewick]] is still a normal fishing island under the pageantry, but [[Toby]]'s word has made him its beloved emperor in fact and memory. [[Frankie]] carries the same untrained cursed speech, and their ordinary childhood grievance now lands as reality-warping decree.
+[[Halewick]] is still a normal fishing island under the pageantry, but [[Toby]]'s word has made him its beloved emperor in fact and memory. [[Frankie]] carries the same untrained cursed speech, and their ordinary childhood grievance now becomes a reality-warping decree.
 
 ## Pressure
 
-[[Billy]] has already sent compelled villagers outward with a fixed summons for help. The visible signal is the same line repeated word for word by people who cannot explain it: "We will destroy everything if this is not stopped and it leaves our island." Delay costs Halewick another scar. The next one can break the dock or foul the well. A stray decree can also mark a visitor's body if the wrong sentence reaches them.
+[[Billy]] issued a fixed summons that compelled villagers to travel outward for help. Villagers repeat the same line word for word as the visible signal, though they cannot explain it: "We will destroy everything unless someone stops this before it leaves our island." Delay costs Halewick another scar. The next one can break the dock or foul the well. A stray decree can also mark a visitor's body if someone delivers the wrong sentence to them.
 
 ## Actors
 
@@ -43,7 +43,7 @@ tier: supporting
 
 ## Discoverable / Affectable
 
-- **Approach vector:** [[word-from-halewick]] can surface as dock talk, pirate-story residue, or a garbled report from any [[Midchain]] crew.
+- **Approach vector:** [[word-from-halewick]] can appear as dock talk, pirate-story residue, or a garbled report from any [[Midchain]] crew.
 - **Direct hook:** one of Billy's compelled villagers can appear in a port or at sea aboard another ship, repeating his line exactly.
 - **Safe channel:** deaf Halewick villagers can communicate the island's original state through writing or sign without carrying a cursed utterance.
 - **Physical proof:** old collision scars show that the power is not obedience or spellcasting. Reality has already been rewritten in visible patches.
@@ -56,8 +56,8 @@ Toby and Frankie collide again over a fresh slight. A public place on Halewick c
 
 ## Connections
 
-- [[Halewick]] owns the island, hazards, safe channels, and geography.
-- [[Toby]], [[Frankie]], and [[Billy]] own the active child-actors and their fronts.
-- [[word-from-halewick]] owns the rumour version that can draw outside attention.
-- [[The Isle of Cursed Speech]] holds the wider island premise and unresolved cause.
+- [[Halewick]] holds the island's hazards, safe channels, and geography.
+- [[Toby]], [[Frankie]], and [[Billy]] define the active child-actors and their fronts.
+- [[word-from-halewick]] carries the rumour version that can draw outside attention.
+- [[Halewick|The Isle of Cursed Speech]] holds the wider island premise and unresolved cause.
 - [[delmar-fisk]], [[pearl-of-souls]], and [[drowned-maw]] connect the island to Delmar's unresolved Pearl pressure.

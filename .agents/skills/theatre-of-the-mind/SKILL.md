@@ -188,107 +188,24 @@ beat, or a located change.
 Before surface routing, decide whether the request is a **situated moment** or a
 **standalone portrait**:
 
-**Hard mode gate for creature/monster owning-page `[!narration]`:** if the
-request is filling or rewriting `[!narration]` on a creature or monster note
-and no party position, initiative, declared action, or other current table
-state is supplied, the mode is **standalone cold portrait** (body, scale,
-parts, ordinary stable behavior). Signature moves, tactics, Hookline/Reel,
-Stoop steal, Grubnade burst, ambush scripts, time-skip tactics ("minutes
-later"), and "open with…" running notes stay in `[!mechanic]` / `[!secret]-` /
-At the table / DM sections. They must not become a resolved attack film or
-encounter cutscene inside the callout. "Ordinary observable behavior" is
-idle/species habit (chews a flower, stands over a carcass), not playing the
-tactic script to completion and not inventing a disturb stimulus ("When the
-branch moves…") when no table state supplies it. Inventing a trailing PC,
-ankle/boot contact, completed haul, completed item tear, or full detonation is
-a fail. Do not end cold portraits in **telegram stubs** — fragment sentences
-that isolate a minor fact (`Chin drips.` / `Antlers.`) or stare; fold chin,
-blood, eyes, claws onto the body in flowing prose.
+**Cold portrait gate:** when no party, encounter, or table state is supplied,
+the mode is **standalone cold portrait**. Read
+[references/cold-portraits.md](references/cold-portraits.md) for the contract
+matching the subject type:
 
-**Hard mode gate for location/site `[!narration]`:** if the request is filling
-or rewriting `[!narration]` on a location note and no party position or other
-current table state is supplied, the mode is **standalone cold place portrait**
-of **stable public geography**. Choose an organizing spine independently.
-Require body-scale size and at least one usable affordance cue as nouns/verbs
-(wet stone underfoot, followable channel, climbable ledge). Ban place-design
-kernel fields and schema voice: Function, Fantastic, Conflict, Promise,
-Trajectory, Aspects, Player verbs, Hunger / possession metaphysics, and
-rule-talk like `unclaimed` / `claim`. Ban invented mystery closers and staged
-located-change drama unless current table state supplies that motion. Creature
-signs and encounter pressure belong to a **situated** first look. Design
-kernels stay upstream (`place-design`); TotM renders geography. Respect the
-owning note’s `Where` ledger; do not invent north/east/south/west neighbors or
-travel-day distances.
+| Subject | Contract | Covers | Excludes |
+|---|---|---|---|
+| Creature / monster | Body + idle behavior | Silhouette, scale, parts, ordinary habit | Tactics, resolved attacks, time-skip scripts |
+| Location / site | Public geography | Body-scale size, spine, affordance | Kernel fields, Aspects, mystery closers |
+| Hazard | Hazard body | Form, material, one warning | Contact film, valley camera, aftermath |
+| Faction | Public mask | Method footprint, shared title, Tell signs | Secret agenda, hunt clocks, DM pressure |
+| Technique | Training tells | Breath, stance, form-in-use | Venue, mysticism, resolved hit |
+| Object / weapon | Drawable object | Noun, scale, material, one sense/behavior | Lore closers, rarity, DCs, catalog gloss |
 
-Do not close on a thesis, leak Aspects/secrets, or use opaque caste/jargon
-nouns. Staged hostility requires current table state unless the parent
-explicitly establishes stable public ecology without encounter film. A
-dual-title note must publicly render both halves or be retitled. Keep vehicle
-access kitchen-table (lines, rail, hold), never boarding interface in player
-prose. Keep lore miracles in Secrets/DM. The cold spine is body-scale geography
-and a drawable affordance, stopping on stable geography.
-
-**Hard mode gate for hazard notes (`[!narration]` on a hazard page):** if no
-current table state is supplied, write a **standalone cold hazard portrait**.
-The hazard body or patch is the grammatical and attentional subject. Do not
-route it through the creature contract (no Hookline/Reel-style contact film)
-or the place contract (no invented valley camera and no lake/terrain spine).
-Coverage: form and scale, positive material or construction, and one positive
-sensory or physical warning. Prefer kitchen-table words: plain spoken nouns and concrete
-verbs over ecology or workshop compounds. For Razer-Grass, keep the positive
-glass and cut danger telegraph, but describe it in player-ready terms rather
-than relying on `colonies`, `opaline`, or `cut-ready`; a thin glass sound and
-fixed sparkle are concrete signals when the parent supports them.
-
-Hazard cold narration must not use frost-mystery or absent-flash riddles (such
-as `no frost` or `rather than glitter`), an em dash, an italic underscore
-wrapper, or a sweeping landscape camera. A supported plain hardness contrast,
-such as sparkles staying fixed instead of swaying like soft grass, is allowed;
-do not treat every negative construction as a ban. Stop at the visible hazard
-and its player-facing affordance or danger. Do not narrate resolved contact,
-Shatter, Glass Bloom, or a scripted aftermath; those belong to the table state
-or mechanic layer.
-
-
-**Hard mode gate for faction/organization notes (`[!narration]` on a faction or organization page):** when no current table state is supplied, use a standalone **cold faction portrait**. Coverage dimensions (not a rigid sentence order): public mask, one concrete kitchen-table method footprint, one environmental Tell a bystander could notice, and a shared title or face cue when the parent supplies one. These must join into drawable prose rather than an abstract organization gloss. In the player-facing block, these are craft labels, not words to say: never use `mask`, `footprint`, `Tell`, or `face cue` in faction `[!narration]`; render the concrete signs directly.
-
-Keep secret agenda, Rule of Two, hunt clocks, and other DM-only pressure out of faction Appearance. Ban workshop abstractions such as `martial reach`, `dropped the ledgers`, or ledger language. Do not invent a plot, venue, encounter, or hidden motive. Stop once those public facts are shown.
-
-
-**Hard mode gate for technique notes (`kind: technique` or technique tags):** if
-the request is filling or rewriting `[!narration]` on a technique note and no
-current table fight state is supplied, use a **non-object tell contract** — not
-the Fate Spinner object silhouette/material/wear bar. Cold `[!narration]` states
-immediately perceivable training tells as **stable facts**: breath, stance, wing
-set, and how the form looks when used (e.g. a strike past ordinary wingspan) —
-without inventing a current venue, terrace duel, gust-peak scene, or held gear.
-Fail object-silhouette forced onto techniques; fail invented venue ("On a
-wind-open terrace…"); fail mysticism/theme ("the blow answers that measure",
-"answers" as magic tone); fail meta closers ("the tell ends before…"); fail resolved hit film. Training location and order
-lore stay in Fiction / Training. Mechanical package stays Mechanics.
-
-**Hard mode gate for object/weapon cold Appearance (Fate Spinner bar +):** cold
-item `[!narration]` must read aloud as a drawable object, not a catalog gloss.
-Coverage (flowing prose — dimensions, not a checklist dump):
-1. **Concrete noun** (musket, long gun, carbine, blade) — not inventory jargon as
-   the whole sentence.
-2. **Scale vs body** (shoulder stock, barrel past the forearm).
-3. **Material + wear** (dark wood, blued steel, brass bright at the trigger).
-4. **One non-sight sense or ordinary physical behavior** (weight forward, lever
-   clicks, cool in the palm) — not magic tone.
-Fail closed: `carries as`, `ordinary X for Y`, naming lore/biography closers
-("He named it for…") unless a **visible mark** on the object (engraved plate),
-rarity/attunement/DCs, technique-as-abstract-strike. Layering: Appearance ≠
-Identified Properties ≠ Fiction/Secret. Owner dedication stays Story hooks.
-
-
-**Hard ban — craft/process words in player prose:** `[!narration]` and any
-player-facing spoken block must never contain workshop vocabulary. Banned in
-output (non-exhaustive): `telegraph`, `the tell ends`, `tell ends`, `reaction
-point`, `Appearance`, `cold portrait`, `standalone portrait`, `hookline` as a
-label, `at the table` as meta. Stop by **omission** — the last image is the
-windup — never by naming the stop ("and the telegraph ends there"). Keep those
-words in skill/reference/DM notes only.
+**Workshop vocabulary stays out of player prose.** `[!narration]` and spoken
+blocks use plain language — never `telegraph`, `tell ends`, `reaction point`,
+`cold portrait`, `hookline` as a label, or `at the table` as meta. Stop by
+omission (the last image is the windup), never by naming the stop.
 
 - **Situated moment:** write from the supplied table state and viewpoint. Route
   by surface below, preserve the current environment and motion, and stop at

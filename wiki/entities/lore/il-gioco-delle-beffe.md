@@ -2,6 +2,7 @@
 title: "Il Gioco delle Beffe"
 aliases:
   - Il Gioco delle Beffe
+  - Beffa
 category: entities
 tags: [shattered-sea, lore]
 sources:

@@ -1,5 +1,7 @@
 ---
 title: Session 06
+aliases:
+  - Session 06, Scene 4
 category: journal
 tags: []
 sources: []

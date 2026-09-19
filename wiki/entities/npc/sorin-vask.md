@@ -2,6 +2,7 @@
 title: "Sorin Vask"
 aliases:
   - Sorin Vask
+  - Vask's Reclaimed Goods
 category: entities
 tags: [shattered-sea, npc]
 sources:
@@ -33,7 +34,7 @@ tier: supporting
 
 **Roleplay Concept:** dockside salvage foreman + the one honest fence in an outlaw port.
 
-**Lore Sheet:** runs [[the shop he keeps]] on Kalowe's docks, trading in magic items pulled from wrecks, prize ships, and unclaimed cargo passing through. He asks no questions about where goods came from, standard practice here, but prices by real recovery risk and rarity, which keeps every dock boss unable to accuse him of cheating, only of being annoyingly honest about what a thing is worth. He keeps no ledger of who sold him what, protecting his sellers and himself in the same move. One of the dock bosses has started asking pointed questions about his latest haul.
+**Lore Sheet:** runs the shop he keeps on Kalowe's docks, trading in magic items pulled from wrecks, prize ships, and unclaimed cargo passing through. He asks no questions about where goods came from, standard practice here, but prices by real recovery risk and rarity, which keeps every dock boss unable to accuse him of cheating, only of being annoyingly honest about what a thing is worth. He keeps no ledger of who sold him what, protecting his sellers and himself in the same move. One of the dock bosses has started asking pointed questions about his latest haul.
 
 **Toy Chest**
 
@@ -54,5 +55,5 @@ tier: supporting
 
 ## Connections
 
-- [[The shop he runs]] on Kalowe's docks
+- The shop he runs on Kalowe's docks
 - [[Kalowe]], the free port where he trades, watched by the Island Council's dock bosses

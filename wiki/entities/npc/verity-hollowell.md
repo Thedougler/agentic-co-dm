@@ -2,6 +2,7 @@
 title: "Verity Hollowell"
 aliases:
   - Verity Hollowell
+  - Verity
 category: entities
 tags: [shattered-sea, npc]
 sources:

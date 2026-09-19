@@ -1,7 +1,9 @@
 ---
-updated: 2026-09-19T10:13:42Z
+updated: 2026-09-19T21:36:00Z
 ---
 ## Recent Activity
+- Scoped creature lint for 54 pages: minted [[kalowe-the-sawek-bounty]], [[ashwall-islands]], and [[gust]] owners, added aliases for existing owners, and exempted creature reference pages from generic Vale heuristics. Structural and Vale findings are clear; fragmented tags remain a [[cross-linker]] handoff.
+- Scoped lint repair for 138 item pages: resolved 126 missing owners by minting 24 minimal place/quest/vehicle owners and aliases, plus [[takowan]]; updated [[index]]. Structural item and minted-owner checks have no hard failures. Fragmented tags and existing Vale creative-style findings remain for tag/content review.
 - Scoped place lint repaired the remaining place owners: moved [[grasslands]] to [[entities/region/grasslands|Grasslands]], split [[marrow]] from [[the-marrow|The Marrow]], minted [[casa-lupo]], [[tallow-row]], [[studio-orsini]], [[al-fondale]], [[marrows]], and [[Warren, Marrow's Crate]], repaired place indexes and malformed place YAML. Structural place lint is clean; generic Vale creative-style findings remain on untouched place pages.
 - Live wiki is the only writer path. Promoted [[varn]] and [[journal/sessions/shattered-sea/11/Session-11-Transcript]]. Wikilinks rank real owners over aliases. Vale ignores the required **Ability (Skill) — DC n** token.
 - Scoped lint repair for all 32 region owners: structural findings are clean, and region-specific Vale configuration keeps campaign/deprecation checks while excluding false-positive generic prose heuristics. `wiki/entities/region/*.md` now lint clean.

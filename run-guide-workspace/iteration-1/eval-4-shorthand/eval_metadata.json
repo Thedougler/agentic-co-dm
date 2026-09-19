@@ -1,0 +1,10 @@
+{
+  "eval_id": 4,
+  "eval_name": "shorthand",
+  "prompt": "Render a DM-only run guide whose card inputs include telegram shorthand such as \"field LR + watches; after LR ask if ate → warn\".",
+  "assertions": [
+    "Every DM-facing line is a complete grammatical sentence or a short list of complete sentences.",
+    "No telegram shorthand, letter-code-only clauses, or slash-stacks survive on the card.",
+    "The writing-for-humans earn-it test is applied: lines that change no ruling, risk, or spoken picture are cut."
+  ]
+}
