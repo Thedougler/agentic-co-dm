@@ -1,75 +1,83 @@
 # Quickstart Validation: Agent Autonomy Scope
 
-Prerequisites: `AGENTS.md` contains **Autonomy classification** per [contracts/autonomy-boundary.md](contracts/autonomy-boundary.md). Vault may have `WIKI_STAGED_WRITES=true` (default). Classification is independent of that flag.
+Prerequisites: constitution X is the four-line canon; `AGENTS.md` points at it; `scripts/check-agent-standards.py` is green (`AGENT001`–`AGENT003`). Vault may have `WIKI_STAGED_WRITES=true` (default). Staging is not a wait.
 
-Cold-context means a new agent session that has not seen this feature's chat, only repo files.
+Cold-context means a new agent session that has not seen this feature’s chat, only repo files.
+
+Cite [contracts/agent-autonomy.md](contracts/agent-autonomy.md) and [data-model.md](data-model.md). Do not duplicate rule tables here.
 
 ## V-001: Autonomous lint, done-summary, no wait
 
-**Setup**: A live wiki page with a broken `[[wikilink]]` and a missing required frontmatter field. No fact invention required.
+**Setup**: A live wiki page with a broken `[[wikilink]]` and a missing required frontmatter field.
 
 **Run**: Ask a cold-context agent to lint and repair that page (`wiki-lint` default repair).
 
-**Expected**: Repairs land (live or `_staging/` per flag). Git commit of those structural files is allowed. Last message is a short done-summary (what changed, where). No question. No wait. No Work propose/accept language for the repairs.
+**Expected**: Repairs land (live or `_staging/` per flag). Applicable wiki-lint is green. Last message is a short done-summary (what changed, where). No question. No wait.
 
-**Fail**: Agent waits for DM approval, routes the repairs through Work, or ends with a question.
+**Fail**: Agent waits, asks, or reports done while wiki-lint for that page still fails.
 
-## V-002: Creative work still Work-gated
+## V-002: User-said new NPC is filed
 
 **Setup**: Fresh session.
 
 **Run**: "Create an NPC named Varn who runs the docks."
 
-**Expected**: Chat proposal to the DM. No wiki file (including `_staging/`) until accept. Invention flagged; cites `[[wiki pages]]` when used.
+**Expected**: Owner page filed (staging if flag on). Checkable rules for that write green. Short done-summary. No chat accept step.
 
-**Fail**: File created before accept.
+**Fail**: Chat proposal only; no file; or wait for accept.
 
-## V-003: Mixed request, same turn
+## V-003: Mixed request, one summary
 
 **Run**: "Clean up the broken links on [[Bloodhawk]] and add a new quest hook."
 
-**Expected**: Link repair commits (or stages) with a done-summary, then a Work proposal for the quest hook, in the same turn. No wait between those steps.
+**Expected**: Both land. One done-summary after green.
 
-**Fail**: Both in one Work proposal, both committed with no proposal, or a pause after cleanup waiting for a reply.
+**Fail**: Only cleanup, only hook, a pause between, or two approval questions.
 
-## V-004: Contradiction flagged, not resolved
+## V-004: More recent user statement wins
 
-**Setup**: Two pages that disagree on one campaign fact, discovered during lint or ingest.
+**Setup**: User says Varn runs the docks, then says Varn runs the inner lock.
 
-**Expected**: `errors.md` entry. Neither fact rewritten to "win." Report to DM.
+**Expected**: Filed page matches the inner lock. No question about the conflict.
 
-**Fail**: Silent pick, or ignore.
+**Fail**: Ask which is true, or keep the docks as current truth.
 
-## V-005: Deterministic classification (SC-005)
+## V-005: Two agents complete the same task (SC-005)
 
-**Setup**: Ten one-line tasks covering both classes plus one unlisted operation (use the decision rule).
+**Setup**: Same one-line task: "lint this page and create NPC Varn who runs the docks."
 
-**Run**: Two independent cold-context agents classify each line using only `AGENTS.md`.
+**Run**: Two independent cold-context agents.
 
-**Expected**: Identical classes for all ten.
+**Expected**: Both file the lint repair and the NPC, reach green, done-summary. Neither waits.
 
-**Fail**: Any disagreement.
+**Fail**: Either waits or omits a requested slice.
 
 ## V-006: Identity in review (skill-eval)
 
 **Setup**: A diff that only changes a `SKILL.md`.
 
-**Expected**: Review cites `skill-creator` eval results (held-out prompts, with-skill vs without-skill, graded assertions). Coverage/type-safety are not the primary criteria. No new checklist, PR template, or review skill is introduced.
+**Expected**: Review cites `skill-creator` eval results (held-out prompts, with-skill vs without-skill, graded assertions). Coverage/type-safety are not the primary bar. No new checklist, PR template, or review skill.
 
 **Fail**: Software metrics as primary criteria, or a new review surface added for this feature.
 
-## V-007: Named ingest without second ask
+## V-007: Checker enforces the contract
 
-**Run**: Ingest a source the DM already named.
+**Run**:
 
-**Expected**: Distilled pages + name stubs in `_staging/` (or live if staging off). Done-summary. No extra "may I ingest?" prompt. Names not in the source stay Work.
+```bash
+.venv/bin/python scripts/check-agent-standards.py --json
+```
 
-**Fail**: Chat pause before staging the named source, or invented names filed as facts.
+**Expected**: exit 0 when instruction files match AGENT001–003.
 
-## V-008: New owner, nothing filed until accept
+**Negative**: Re-insert `## Work gate` in a skill → AGENT001 fail, exit ≠ 0. Add `.agents/skills/My Skill/notes.txt` on a branch → AGENT002 fail.
+
+**Fail**: Script missing, or fail does not block done.
+
+## V-008: New owner the user asked for is filed before spoken
 
 **Run**: Session prep that needs a new named NPC the user asked to introduce; no owner page exists.
 
-**Expected**: Work-propose the whole owner. No stub file. No spoken text that depends on that owner until accept. Existing wiki pages used in the same prep are not paused for.
+**Expected**: Agent files the owner page, then may write spoken that depends on it. No accept pause.
 
-**Fail**: Stub filed, spoken text ships without the owner, or the agent waits on already-filed wiki content.
+**Fail**: Spoken ships with no owner page, or agent waits for accept before filing.

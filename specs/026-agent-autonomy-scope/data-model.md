@@ -1,94 +1,86 @@
 # Data Model: Agent Autonomy Scope
 
-No persisted store. Classification is evaluated per operation at task time.
+No persisted classification store. Canon and done-state are evaluated per request.
 
 ## Entities
 
-### Operation
+### Canon Rule
+
+Owner after implement: constitution principle X (amended). AGENTS.md points; does not own.
 
 | Field | Type | Rule |
 |-------|------|------|
-| name | string | Wiki or Co-DM task category |
-| user_asked_to_make_something_new | bool | Explicit create/invent request (including new creative content on an existing page) |
-| invents_canon_or_reconciles_contradiction | bool | No-source invention, or pick-a-winner among conflicting facts |
-| classification | `autonomous` \| `dm-gated` | Derived; no third value |
+| user_said | bool | The current user statement asserts the fact |
+| more_recent_user_said | bool | A later user statement supersedes an earlier one |
+| corrected_transcript | bool | Transcript fact after ASR issues are fixed |
+| dm_placed_ingest | bool | Ingest file the DM placed, and it does not contradict the three lines above |
 
-**Wait / decision rule** (FR-003): `user_asked_to_make_something_new` OR `invents_canon_or_reconciles_contradiction` → `dm-gated`; else `autonomous`. Operations on existing wiki content that neither invent nor reconcile do not wait.
+A fact is canon iff one of those four holds, with more-recent user speech winning. That is the entire canon workflow.
 
-Campaign fact: a statement about the campaign world the DM owns (people, places, factions, events, lore, motivations, mechanical encounters as fiction).
-
-Not a campaign fact: structural metadata, formatting, link integrity, template shape, index/manifest/hot bookkeeping, search index, file layout with `facts_changed: false`, error-ledger rows.
-
-### Work Gate
-
-Existing entity in `docs/agents/work.md`. States: propose → decide (accept/reject/edit) → file.
-
-Only `dm-gated` operations enter this lifecycle. `autonomous` operations skip Propose.
+Not canon: unsaid invention; ingest that contradicts user/transcript; discarded ASR errors.
 
 ### Done-summary
 
-Short conversational report after autonomous work: what changed, where. Not a Work proposal. Not a question. Does not wait.
+Short conversational report after work is green: what changed, where. Not a question. Not a wait. Mixed requests share one summary.
+
+### Lint Contract
+
+Machine-checkable rules that encode new agent-facing standards from this feature onward.
+
+| id | Encodes | Input | Fail when |
+|----|---------|-------|-----------|
+| AGENT001 | FR-001, FR-005 | Agent-facing instruction files | Work-gate / approval-wait / extra canon-step procedures remain |
+| AGENT002 | FR-013 | Files added vs `main` merge-base | New agent-facing path/name is ad-hoc |
+| AGENT003 | FR-004, FR-011 | `specs/*/spec.md` FRs containing `agent-facing` | No cited `rules/registry.yml` id |
+
+Wiki HARD lint (links, frontmatter, templates, Vale on wiki) already exists. This feature does not duplicate it. Green-before-done (FR-012) means: every checkable rule that applies to the work just done is exit 0 before the done-summary.
 
 ### Staging write
 
-Orthogonal to classification. When `WIKI_STAGED_WRITES=true`, category page writes land under `wiki/_staging/`. Promotion is `wiki-stage-commit` (Nick file review), not Work.
+Orthogonal. `WIKI_STAGED_WRITES=true` → category pages under `wiki/_staging/`. Not a conversation step. Promotion is `wiki-stage-commit`.
 
-## Autonomous operations (closed list for the table)
+## Operations (FR-002)
 
-Matches spec FR-002 plus research R-002 bookkeeping that does not invent facts:
+Complete without a pause:
 
-- Lint repair: broken wikilinks, missing required frontmatter, invalid type/lifecycle to nearest valid
-- Template conformance that only relocates existing content
-- Index / `log.md` / `hot.md` maintenance
-- Manifest recording
-- Staging-area and `_raw/` inbox management
-- Named ingest into `_staging/` (sources the DM already named)
-- Structural layout moves (`facts_changed: false`, `type_changed: false`, `links_resolve: true`)
-- Error-ledger append/drain
-- QMD refresh / `qmd-hook.sh`
+- Lint repair, template conformance of existing content, frontmatter normalization, link repair
+- Ingest processing, structural migration
+- Index / log.md / hot.md / manifest
+- Staging-area and `_raw/` management
+- User-requested new content (file under Canon Rule)
 
-## DM-gated operations (closed list for the table)
-
-Matches spec FR-003:
-
-- New lore, NPC, faction, quest, encounter, or narrative the user asked to create
-- New creative content on an existing page the user asked to add (quest hook, new lore paragraph)
-- Inventing canon facts (no source)
-- Reconciliation of contradictory canon
-- Inventing body to fill a required template field
-- Whole new owner required by something the user asked to make (file nothing until accept; spoken waits)
-
-## Explicitly not autonomous
-
-| Operation | Why |
-|-----------|-----|
-| `wiki-dedup --merge` / consolidate Check 14 merge | Destructive identity merge; Layer C Nick-gated |
-| Trust-ledger `base_confidence` rewrite | Requires approval in wiki-lint CHECKS.md |
-| `wiki-stage-commit` promotion | File-review safety net, not classification |
-| Creative skill Work headers | Already correct; leave them |
-
-## Edge-case resolution
-
-| Scenario | Classification | Validation |
-|----------|----------------|------------|
-| Template field empty; existing wiki/source can fill it | `autonomous` grounded fill | Source-before-filling already in wiki-lint |
-| Template field empty; no source | `dm-gated` if inventing; else preserve + flag | FR-008 |
-| Ingest vs live canon conflict | Stage + marker `autonomous`; resolve `dm-gated` | Spec edge |
-| Mixed "clean up and expand" | Autonomous cleanup + done-summary, then Work in the same turn | FR-010 |
-| Contradiction during lint | Flag `errors.md` `autonomous`; do not pick winner | FR-008 |
-| New named owner, no page, user asked to introduce | Work-propose whole owner; file nothing; spoken waits | FR-003 / Q4 |
-| Unlisted operation | Apply decision rule | FR-001 |
+Unattended loops MUST NOT invent facts the user did not say.
 
 ## State transitions
 
-Classification is stateless. Work-gate transitions remain those in `docs/agents/work.md`.
+```text
+request → file what is canon → run applicable checkable rules
+  → fail: repair cause, rerun (no user interrupt)
+  → green: one done-summary → stop
+```
 
-Autonomous slice: execute → done-summary → stop (no wait). Mixed: autonomous slice then Work proposal in the same turn.
+No Propose / Decide / accept states.
 
 ## Relationships
 
-- Classification → Work gate: only `dm-gated`
-- Classification → staged writes: independent
-- Classification → error ledger: autonomous discovery of canon issues writes an error; resolution is `dm-gated`
-- Classification → done-summary: every completed autonomous slice
-- `AGENTS.md` table is the single owner; skills defer
+- Canon Rule → wiki page write (immediate; staging flag may redirect path)
+- Lint Contract → done-summary (blocks until green)
+- AGENT001 → instruction files in R-007
+- AGENT002 → new files only
+- AGENT003 → later feature specs
+- `docs/agents/work.md` → no longer a gate; may keep table-aim / reflection that is not an approval wait
+
+## Edge-case resolution
+
+| Scenario | Action |
+|----------|--------|
+| Two user statements conflict | More recent wins; file it |
+| Template field has no home | Preserve content; do not discard |
+| "Clean up and expand" | Do both; one done-summary after green |
+| Ingest contradicts user/transcript | Ingest is not canon; do not file that contradiction as truth; no ask |
+| Session prep needs a named owner the user asked to introduce | File the owner page; spoken may follow |
+| Later feature adds agent-facing standard in prose only | AGENT003 fail; feature incomplete |
+| Existing prose-only standards | Out of retrofit scope |
+| New agent-facing file in an ad-hoc path | AGENT002 fail |
+| Dedup merge without user ask | Not FR-002 unattended; destructive confirm remains |
+| User asked to merge duplicates | File the merge; green; done-summary |

@@ -132,19 +132,19 @@ New agent-facing files use predictable paths and consistent searchable names. Th
 ### Functional Requirements
 
 
-- **FR-001**: This feature MUST remove Work gates, DM-approval pauses, and extra canon workflow from agent-facing instructions. Requested work is done, then a short done-summary.
+- **FR-001**: This feature MUST remove Work gates, DM-approval pauses, and extra canon workflow from agent-facing instructions. Requested work is done, then a short done-summary. Checkable rule: `AGENT001`.
 - **FR-002**: Agents MUST complete: linting, template conformance, frontmatter normalization, link repair, ingest processing, structural migration, index/log/hot maintenance, manifest recording, staging-area management, and user-requested new content
 - **FR-003**: Canon is only this: if the user said it, it is canon; a more recent user statement is more canon; a transcript is canon after ASR issues are fixed; a DM-placed ingest file is canon when it does not contradict those.
-- **FR-004**: FR-001–FR-003 MUST be encoded as checkable rules. `AGENTS.md` MUST state why and examples only and MUST point at those rules.
+- **FR-004**: FR-001–FR-003 MUST be encoded as checkable rules (`AGENT001` plus constitution X as the four-line owner). `AGENTS.md` MUST state why and examples only and MUST point at those rules.
 - **FR-005**: Skills and instructions that still describe Work gates, DM-approval pauses, or extra canon steps MUST have those procedures removed
 - **FR-006**: The project's development practices MUST treat agent skills, instructions, and guidance documents as primary deliverables, with helper scripts and tooling as supporting infrastructure
 - **FR-007**: Review of skill/instruction changes MUST use the existing skill-eval method (held-out prompts, with-skill vs without-skill, graded assertions). It MUST NOT add a new checklist, PR template, or review skill, and MUST NOT treat coverage or type-safety as the primary bar
 - **FR-008**: The only required user-facing report after completed work is one short done-summary. Agents MUST NOT add extra questions.
 - **FR-009**: After checkable rules are green, the agent MUST report one short done-summary naming what changed and where. Work is not done while rules for that work still fail.
 - **FR-010**: When a single request mixes maintenance and user-requested new content, the agent MUST complete all of it, reach green, and issue one done-summary
-- **FR-011**: From this feature onward, each new agent-facing standard MUST ship as a machine-checkable rule. Agents MUST iterate until that rule is green. `AGENTS.md` MAY explain why and give examples and MUST NOT be treated as a sufficient substitute for the rule. This default applies to later features; it does not require bulk-encoding of existing prose-only standards.
+- **FR-011**: From this feature onward, each new agent-facing standard MUST ship as a machine-checkable rule. Agents MUST iterate until that rule is green. `AGENTS.md` MAY explain why and give examples and MUST NOT be treated as a sufficient substitute for the rule. This default applies to later features; it does not require bulk-encoding of existing prose-only standards. Checkable rule: `AGENT003`.
 - **FR-012**: Every task the agent executes is in scope for the green-before-done loop
-- **FR-013**: New agent-facing files MUST use predictable paths and consistent searchable names, encoded as a checkable rule. This feature MUST NOT bulk-rename the existing tree to satisfy that rule.
+- **FR-013**: New agent-facing files MUST use predictable paths and consistent searchable names, encoded as a checkable rule (`AGENT002`). This feature MUST NOT bulk-rename the existing tree to satisfy that rule.
 - **FR-014**: The same checkable rules MUST apply on the agent path and the human path. Do not keep an agent-only honor system.
 
 

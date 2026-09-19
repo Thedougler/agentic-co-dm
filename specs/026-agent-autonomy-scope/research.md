@@ -1,150 +1,153 @@
 # Research: Agent Autonomy Scope
 
-## Hybrid SDD
-
 ```text
 work_class: agent-system
 route: full-sdd
-reason: reusable operating rule for when agents may write wiki/system files without DM chat approval
+reason: reusable operating rules for canon, lint-as-contract, and no approval wait
 ```
 
-`context_used`: constitution XV/X/VIII/XVI/XX, `specs/026-agent-autonomy-scope/spec.md` (including Session 2026-09-18 clarifications), `AGENTS.md`, `docs/agents/work.md`, `docs/agents/wiki-maintenance-loop.md`, `.agents/skills/wiki-lint/{SKILL.md,CONSOLIDATE.md}`, `.agents/skills/wiki-ingest/SKILL.md`, `.agents/skills/skill-creator/SKILL.md` eval loop, `CONTEXT.md` glossary.
+`context_used`: constitution X/XII/XV/XVI/XVII/XX/XXI/XXIV and Operating Boundaries; `specs/026-agent-autonomy-scope/spec.md` (Session 2026-09-18 clarifications); `AGENTS.md` Autonomy classification (now stale vs spec); `docs/agents/work.md`; `docs/agents/wiki-maintenance-loop.md`; `docs/agents/hybrid-sdd.md`; `docs/agents/policy-owners.yml`; `wiki/AGENTS.md`; `.agents/skills/**/SKILL.md` Work-gate headers; `rules/registry.yml`; `tools/creative_lint/evaluators/symbolic.py`; `.vale.ini`; `.agents/skills/skill-creator/SKILL.md` eval loop; `scripts/check-policy-conflicts`.
 
-`context_omitted`: Foundry/beat skill bodies (already Work-gated), `tools/wiki_ops` internals (025 owns mutations), Vale rule text.
+`context_omitted`: Foundry MCP, beat-card catalogs, `tools/wiki_ops` mutation internals (025), Vale prose-quality styles.
 
-## R-001: Where does the boundary live today?
+Subagent redeploy (`scout`, then `task`) failed with OpenCode billing 401. Parent completed this research.
 
-**Decision**: No single classification table. Agents infer from three overlapping sources that disagree on apply-vs-ask.
+## R-001: Spec vs current instructions
 
-**Rationale**:
+**Decision**: Treat Session 2026-09-18 clarifications as the spec. Existing `plan.md` / `autonomy-boundary.md` / `AGENTS.md` table (`autonomous` vs `dm-gated`, Work wait on new content) are stale and must be replaced.
 
-- Constitution XV: routine deterministic safe idempotent maintenance without approval; novel campaign content is the DM boundary.
-- `docs/agents/work.md`: Work is chat proposal then accept. Repair/merge of a named existing page is acceptance unless the change invents canon.
-- `AGENTS.md` Helpers: "Never auto lore invent, mass kebab rename, dedup merge, or craft cuts." Filename kebab remorph is already greenlit in `docs/agents/wiki-maintenance-loop.md` (2026-09-14); AGENTS.md is stale on kebab.
-- Maintenance loop Layer A is scan/dry-run; Layer C forbids auto lore, auto-dedup merge, auto-resolve contradictions.
-- Default `wiki-lint` page-scoped repair already applies structural fixes without a Work prompt. `--consolidate` always asks `"Apply these N changes?"` even for broken-link rewrites.
+**Rationale**: Clarifications Q3–Q4, Q7, Q9: user speech is canon; file it; no Work gates; no approval wait; mixed requests do both then one done-summary after green.
 
-**Alternatives considered**: Leave inference as-is (rejected: SC-005 fails). Per-skill copies of the boundary (rejected: Constitution V).
+**Alternatives considered**: Keep the binary classification table (rejected: contradicts FR-001/FR-003/FR-005).
 
-## R-002: Autonomous set (FR-002 only)
+## R-002: Constitution must amend in this feature
 
-**Decision**: Autonomous iff the operation does not invent canon, reconcile contradiction, or create something the user asked to make new. Exhaustive list for the AGENTS.md table:
+**Decision**: MAJOR constitution amendment in the same change. Principles X, XV, XVII and Operating Boundaries currently require DM acceptance before campaign-fact writes. Implementing FR-001 in `AGENTS.md` without amending them violates XVI (lower layers must not contradict).
 
-| Operation | Evidence it is already or should be unattended |
-|-----------|-----------------------------------------------|
-| Lint repair (broken links, required frontmatter, invalid type/lifecycle nearest-valid) | `wiki-lint` page-scoped steps 1–5; no Work prompt today |
-| Template conformance of existing content into contract sections | wiki-lint "Template ceiling"; do not invent missing section body |
-| Index / `log.md` / `hot.md` maintenance | ingest and lint already write these without accept |
-| Manifest recording | `scripts/manifest.py record` |
-| Staging-area management (`_staging/` writes, `_raw/` inbox) | `WIKI_STAGED_WRITES` policy |
-| Named ingest processing into `_staging/` | work.md "Named ingest is DM approval for those sources" |
-| Structural layout moves with `facts_changed: false` | AGENTS.md Layout |
-| Error-ledger append/drain | DM MUST NOT fill or drain |
-| QMD index/hook refresh | post-write hook |
+| Current | Replacement |
+|---------|-------------|
+| X DM Owns Canon — invent/reconcile wait; Work inspectable until accept | Four-line canon (FR-003). Co-DM files what those lines make canon. Do not invent what the user did not say. Do not pick a winner among contradictions unless the user picked. |
+| XV — novel campaign content is the DM approval boundary | Agents complete requested work and unattended maintenance. No approval wait. Done-summary after green. |
+| XVII — accepted facts only through DM acceptance | Wiki stays additive and sourced. User/transcript/non-contradicting ingest file immediately. |
+| Operating Boundaries — campaign facts remain DM-gated | Delete that sentence. |
 
-**Not autonomous** (research overreach in earlier draft): `wiki-dedup --merge`, consolidate Check 14 merges, trust-ledger confidence rewrites, inventing content to fill empty template fields.
+Version: `2.11.0` → `3.0.0` (redefine principles). Governance: this feature branch is the tracked work; Sync Impact Report lives in the constitution amendment notes.
 
-**Rationale**: Spec FR-002. Dedup merge is destructive and Layer C / AGENTS.md still Nick-gated. Spec does not list it.
+Keep XII (evidence before invention; invented distinguishable). That is not a wait gate.
 
-**Alternatives considered**: Treat "obvious" canon typos as autonomous (rejected: Constitution X). Auto-merge clear duplicates (rejected: FR-002 omission + Layer C).
+**Rationale**: Spec Q9 + XVI. Papering over the conflict would ship competing SoTs.
 
-## R-003: When to wait (FR-003, Session 2026-09-18)
+**Alternatives considered**: Complexity-track an unjustified X/XV/XVII violation (rejected: ERROR gate). Leave constitution and only edit AGENTS.md (rejected: XVI).
 
-**Decision**: The agent waits only when the user explicitly asked to make something new, or the operation would invent canon facts or reconcile contradictory canon. Operations on existing wiki content do not wait.
+## R-003: Four-line canon is the whole workflow
 
-DM-gated (Work propose → accept → file):
+**Decision**: Encode exactly:
 
-- New lore, NPC, faction, quest, encounter, or narrative the user asked to create (including new creative content on an existing page, e.g. "add a quest hook to Bloodhawk")
-- Inventing canon facts (no source)
-- Reconciling contradictory canon
+1. If the user said it, it is canon.
+2. If the user said it more recently, that is more canon.
+3. If a transcript says it, after ASR issues are fixed, it is canon.
+4. DM-placed ingest files are canon as long as they do not contradict 1–3.
 
-Reuse the existing Work gate. No new approval mechanism.
+No extra steps. File the work. Self-heal checkable rules to green. One short done-summary. No question. No wait. MUST NOT interrupt with findings, contradiction alerts, or extra questions (Q6).
 
-**Rationale**: Clarification Q4 + FR-003. Earlier draft gated every campaign-fact edit on an existing page; that over-asks and violates "existing wiki content does not wait."
+Conflict handling without a pause: more recent user statement wins; contradicting ingest is not canon; do not ask.
 
-**Alternatives considered**: Gate every fact-touching edit (rejected: clarification). Auto-accept "obvious" corrections that invent (rejected: Constitution X). Third classification value (rejected: SC-005).
+**Rationale**: FR-003, Q7, Q9.
 
-## R-004: Gray zone — mechanical tiebreakers
+**Alternatives considered**: Keep Work propose/accept for “collaborative creative work” (rejected: Q9). Flag contradictions to the user (rejected: Q6).
 
-**Decision**: One question: would this invent canon, reconcile contradiction, or create something the user asked to make new? Yes → `dm-gated`. No → `autonomous`. Mixed requests split in one turn (R-011).
+## R-004: Lint is the contract
 
-| Scenario | Split |
-|----------|--------|
-| Template conformance needs invented field body | Structure move `autonomous`; invented sentences `dm-gated` |
-| Ingest contradicts live canon | Stage + conflict marker `autonomous`; pick-a-winner `dm-gated` |
-| "Clean up and expand" | Cleanup `autonomous` + done-summary; expansion Work in the same turn |
-| Lint finds two facts that disagree | Flag to `errors.md` `autonomous`; resolution `dm-gated` |
-| Content has no template field | Preserve + flag `autonomous`; discard would lose facts |
-| `--consolidate` mix | FR-002 actions apply without confirm; merge/demote/lifecycle-judgment keep confirm |
-| Session prep needs a new named owner with no page | Work-propose the whole owner; file nothing; spoken waits (R-012) |
+**Decision**: Each new agent-facing standard in this feature ships as a machine-checkable rule. Agents iterate until green, then done-summary. `AGENTS.md` is why/examples plus a pointer. Same rules on the agent path and the human path (FR-014).
 
-**Alternatives considered**: `flag-and-proceed` as a third class (rejected: the flag is an error-ledger write during autonomous work).
+Do not retrofit existing prose-only standards (FR-011 last sentence).
 
-## R-005: Expression
+**Rationale**: FR-004, FR-011, FR-012, FR-014, Q5, Q6, Constitution XXI.
 
-**Decision**: One heading in `AGENTS.md`: **Autonomy classification**. Binary table + the one-sentence wait rule. Skills and `work.md` point at it; they MUST NOT restate a competing list.
+**Alternatives considered**: Prose-only AGENTS.md table (rejected: Q5). New review skill/checklist (rejected: FR-007).
 
-**Rationale**: Constitution V + XVI + XX. `AGENTS.md` is already the operating manual. A separate `docs/agents/autonomy.md` would fragment SoT.
+## R-005: Where the checks live
 
-**Alternatives considered**: Flowchart (harder in markdown). Per-skill tables (N copies).
+**Decision**: Smallest existing surface, not a new lint framework.
 
-## R-006: Project identity (FR-006, FR-007)
+| Rule | Encodes | Evaluator | Why this surface |
+|------|---------|-----------|------------------|
+| AGENT001 | FR-001, FR-005 | New `scripts/check-agent-standards.py` + `rules/registry.yml` | Vale `[*]` would false-positive wiki mentions of Work; `creative_lint` symbolic.py is wiki-loader scoped |
+| AGENT002 | FR-013 | Same script | Filename/path is not a Vale token check |
+| AGENT003 | FR-004, FR-011 | Same script | Later `specs/*/spec.md` agent-facing FRs must cite a `rules/registry.yml` id |
 
-**Decision**: Short **Project identity** block in `AGENTS.md`: primary deliverables are skills, agent instructions, and guidance documents; scripts/tooling support those. Review of skill/instruction changes uses the existing `skill-creator` eval loop: held-out prompts, with-skill vs without-skill (or old-skill snapshot), graded assertions. Do not add a review checklist, GitHub PR template, or new review skill. Coverage/type-safety are not the primary bar.
+Copy pattern: `scripts/check-policy-conflicts` (args in, JSON out, exit 0/1) + `tests/test_policy_conflicts.py`. Register ids in `rules/registry.yml` (`evaluator: symbolic`, `scope: instruction`, `severity: BLOCK`). One pytest runs the script. No new CI job; existing pytest catches it.
 
-**Rationale**: Spec Story 3 + clarification Q2. Eval method already lives in `.agents/skills/skill-creator/SKILL.md` ("Running and evaluating test cases"). A second harness would violate FR-007 and Constitution XIV.
+Green-before-done for wiki pages remains existing `wiki-lint` / Vale / template HARD keys (already checkable). This feature does not re-encode those.
 
-**Alternatives considered**: New PR template / review skill (rejected: FR-007). Constitution amendment (rejected: XVI — operating rule, not a new principle). Separate identity doc (rejected: SoT).
+**Alternatives considered**: Extend `evaluate_symbolic` (rejected: wiki loader). Vale existence on `## Work gate` (rejected: path scoping + wiki false positives). New Vale package (rejected: XIV).
 
-## R-007: Skills that over-ask (FR-005)
+## R-006: AGENT001 / AGENT002 / AGENT003 mechanics
 
-**Decision**: Edit only surfaces that currently pause or contradict FR-002.
+**AGENT001**: Fail if agent-facing instruction files still describe Work-gate / DM-approval-wait / extra canon workflow. Scan: `AGENTS.md`, `wiki/AGENTS.md`, `docs/agents/**/*.md`, `.agents/skills/**/*.md` (exclude generated `.agents/skills/speckit-*`). Forbidden procedure language after this feature: `## Work gate`, `dm-gated`, `file nothing until accept`, `wiki write after DM accept`, `Work-propose`, `wait for accept`. `docs/agents/work.md` may remain as a filename; its body must not reintroduce those procedures.
 
-| File | Change |
-|------|--------|
-| `AGENTS.md` | Add table + identity + wait rule + done-summary; align kebab sentence with greenlit remorph |
-| `docs/agents/work.md` | Work gate applies when FR-003 wait conditions hold; FR-002 ops do not enter Propose |
-| `docs/agents/wiki-maintenance-loop.md` | Layer A may apply FR-002 structural repairs unattended; Layer C unchanged for lore/dedup/contradiction |
-| `.agents/skills/wiki-lint/SKILL.md` | Page-scoped/bulk structural repair is autonomous + done-summary; kebab remorph already greenlit |
-| `.agents/skills/wiki-lint/CONSOLIDATE.md` | Do not confirm FR-002 actions; keep confirm for merge/demote/non-FR-002 |
-| `.agents/skills/wiki-ingest/SKILL.md` | Named ingest → `_staging/` without a second chat approval; invented names still Work |
+**AGENT002**: For files **added** after merge-base with `main` (not the existing tree): agent-facing paths must match:
 
-**Leave unchanged**: `wiki-dedup` merge confirm, `wiki-stage-commit` promotion review (orthogonal safety net, not Work), creative skills' existing Work-gate headers, `skill-creator` eval loop (reused, not extended).
+- `.agents/skills/<kebab>/SKILL.md`
+- `.agents/skills/<kebab>/<kebab>.md` or documented companion names already used (`CHECKS.md`, `CONSOLIDATE.md` grandfathered as existing)
+- `docs/agents/<kebab>.md` or `docs/agents/<kebab>.yml`
+- root/wiki/`.omp` `AGENTS.md` (fixed names)
 
-**Rationale**: Shortest diff that removes over-ask without weakening canon gates.
+New files outside those patterns fail. No bulk rename of the current tree (FR-013).
 
-## R-008: Staged writes vs Work
+**AGENT003**: A `specs/*/spec.md` Functional Requirement that uses `agent-facing` must cite at least one `rules/registry.yml` `id`. This feature’s spec.md is in scope and must cite AGENT001–AGENT003 (implement updates spec or the check exempts 026 until those ids exist — prefer add ids first). Existing specs without that phrase are out of retrofit scope.
 
-**Decision**: Orthogonal. Classification answers "ask in chat?" Staging answers "live tree or `_staging/`?" Autonomous ops still honor `WIKI_STAGED_WRITES`. Promotion via `wiki-stage-commit` is Nick review of staged files, not a Work proposal.
+**Alternatives considered**: Frozen grandfather file of every current path (rejected: merge-base diff is enough). Require kebab for `CHECKS.md` (rejected: bulk rename).
 
-**Rationale**: Spec Assumptions. Quickstart must not treat `_staging/` writes as Work-gate violations for FR-002, nor as a license to skip Work for FR-003 (creative pages in `_staging/` still require prior chat accept).
+## R-007: Instruction files to strip
 
-## R-009: Domain language
+**Decision**: Remove Work-gate / accept-before-write procedures from every instruction this feature’s lint will scan. Positive replacement: four-line canon, file it, green, done-summary.
 
-**Decision**: Use Constitution/spec terms: autonomous operation, Work gate, campaign fact, done-summary. Do not use CONTEXT.md avoided term "autonomous GM". Do not add glossary entries to `CONTEXT.md` (operating rule, not campaign glossary).
+Hottest surfaces:
 
-## R-010: Done-summary (FR-009)
+| File | Current wait sentence |
+|------|------------------------|
+| `AGENTS.md` | Autonomy table; `Load docs/agents/work.md` Work gate; new owner “file nothing until accept” |
+| `docs/agents/work.md` | Propose: do not create wiki page yet; Decide accept/reject |
+| `wiki/AGENTS.md` | `lifecycle` defaults to `proposed` until DM accepts; “Wiki facts change only after the DM accepts” |
+| `docs/agents/wiki-maintenance-loop.md` | Classify via Autonomy table; Layer C lore invent Nick-gated even when the user asked |
+| `docs/agents/hybrid-sdd.md` | `dm_acceptance` / Work acceptance produces accepted truth |
+| `docs/agents/policy-owners.yml` | `acceptance_semantics` owner `work.md`; `mutation_approval` requires acceptance |
+| Creative `SKILL.md` `## Work gate` | campaign-planning, cold-opens, dnd-5e-magic-item-design, dnd5e-mechanics, dungeon-design, encounter-prep, homebrew-monsters-5e, npc-design, pc-interview, place-design, reconciling-session-evidence, run-guide, sandbox-narrative, session-recap, theatre-of-the-mind, traps-trials, travel-events, visual-aids, visual-references, world-tick, writing-beats (plus any remaining `## Work gate` hit) |
+| `wiki-lint` / `wiki-ingest` | Align with file-it + green + done-summary; named ingest already files without a second ask |
 
-**Decision**: After autonomous work, the agent’s last message for that slice is one short done-summary: what changed, where. Not a question. Not a wait. Not a Work proposal.
+Skill-design class: `not` (established-file strips + AGENTS.md). No designated-writer dispatch.
 
-**Rationale**: Clarification Q1. Current agents often end maintenance with "want me to commit?" / "look ok?" which is the over-ask this feature removes.
+**Rationale**: FR-005. AGENT001 will fail until these are gone.
 
-**Alternatives considered**: Silent completion (rejected: DM still needs to know what moved). Full Work-shaped proposal for maintenance (rejected: Q1).
+**Alternatives considered**: Leave Work-gate headers as pointers to work.md (rejected: AGENT001 and FR-005). New skill (rejected: XIV, FR-007).
 
-## R-011: Mixed request, same turn (FR-010)
+## R-008: Staged writes stay a write-path, not a wait
 
-**Decision**: Cleanup now → done-summary → Work-propose the creative part in the same turn. No wait between those steps.
+**Decision**: `WIKI_STAGED_WRITES=true` still lands category pages under `wiki/_staging/`. That is not a conversation pause. “Create NPC Varn” → write the page (staging if flag on), lint green, done-summary. `wiki-stage-commit` remains Nick file-review of the staging queue, not Work.
 
-**Rationale**: Clarification Q3. Two treatments, one message (or one turn with both). Waiting for DM accept on the cleanup would reintroduce the P1 pause.
+**Rationale**: Spec Assumptions.
 
-**Alternatives considered**: Wait after cleanup (rejected: Q3). Bundle both into one Work proposal (rejected: autonomous work must not wait).
+**Alternatives considered**: Bypass staging for user-requested canon (rejected: orthogonal safety net). Chat-wait for stage-commit (rejected: FR-001).
 
-## R-012: Missing owner for something new (FR-003, entity-before-spoken)
+## R-009: Project identity
 
-**Decision**: If the user asked to make something new and a required named owner has no page, Work-propose the whole owner. File nothing until accept. Spoken text that depends on that owner waits. Do not file a stub. Do not pause for existing wiki content that is already filed.
+**Decision**: Keep the short **Project identity** block already in `AGENTS.md`. Review of skill/instruction diffs uses existing `skill-creator` eval loop (held-out prompts, with-skill vs without-skill, graded assertions). MUST NOT add checklist, PR template, or review skill.
 
-**Rationale**: Clarification Q4. HARD entity-before-spoken stays; the wait is the Work gate on the new owner, not a pause to invent a stub.
+**Rationale**: FR-006, FR-007, Q2.
 
-**Alternatives considered**: File a stub then narrate (rejected: Q4). Skip the owner page (rejected: entity-before-spoken).
+## R-010: Done-summary and mixed requests
+
+**Decision**: After green, one short done-summary: what changed, where. Not a question. Mixed maintenance + new content: do both, one summary (FR-010, Q3).
+
+**Rationale**: FR-008, FR-009, Q1.
+
+**Alternatives considered**: Autonomous-then-Work same-turn split (rejected: Q3/Q9). Silent completion (rejected: Q1).
+
+## R-011: Unattended maintenance vs user-asked invent
+
+**Decision**: FR-002 list still runs unattended (lint, conform, ingest, bookkeeping). User-asked new content files under FR-003. Unattended Layer C still MUST NOT invent lore the user did not say (XII + four-line rule: unsaid is not canon). Dedup merge stays a destructive confirm (not a canon Work gate); if the user said merge, file the merge.
+
+**Rationale**: FR-002 + XII + Q9.
 
 **Unresolved**: none. No `NEEDS CLARIFICATION`.
