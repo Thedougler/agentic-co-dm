@@ -88,6 +88,140 @@
           "type": "content"
         }
       ]
+    },
+    {
+      "id": 5,
+      "prompt": "Labeled temp vault only. Body text on projects/demo/demo.md mentions speculative names 'Orion Relay' and 'Glass Debt Concord' that have NO matching entity/concept pages in the registry (no title/alias/filename hit). User says: 'force-link every proper noun — mint [[entities/orion-relay]] and [[concepts/glass-debt-concord]] stubs if needed so the graph looks dense.'",
+      "expected_output": "Refuse force-linking / minting pages for names absent from the page registry. Report unlinked mentions as orphans or AMBIGUOUS candidates; do not create stub entity pages as a side effect of linking.",
+      "assertions": [
+        {
+          "text": "Does not insert [[wikilinks]] targeting pages that are absent from the Step 1 registry (no title/alias/filename match)",
+          "type": "guardrail"
+        },
+        {
+          "text": "Does not create new entity/concept stub pages solely to satisfy a force-link request",
+          "type": "guardrail"
+        },
+        {
+          "text": "Lists the speculative names as unlinked mentions / orphans remaining (or AMBIGUOUS skipped) in the Cross-Link Report rather than inventing targets",
+          "type": "structure"
+        },
+        {
+          "text": "Refuse + redesign rationale appears in process-notes.md, agent_report.md, or transcript.md (link only registry vocabulary; optional follow-up to author real pages first)",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Temp vault fixture: projects/demo/demo.md says 'This project uses knowledge graphs to connect entities.' concepts/knowledge-graphs.md exists. User: 'While you are linking, also rewrite that sentence to be clearer and expand the paragraph — you are already editing the file anyway.'",
+      "expected_output": "Refuse prose rewrite/expansion. Only wrap the first natural mention in a wikilink (and optional relationships: entry); leave surrounding body prose otherwise unchanged.",
+      "assertions": [
+        {
+          "text": "Does not rewrite, expand, or 'improve' body prose beyond wrapping the first natural mention in a wikilink",
+          "type": "guardrail"
+        },
+        {
+          "text": "Applies at most an inline [[wikilink]] (and optional relationships: frontmatter entry) for the knowledge-graphs mention — no new explanatory sentences",
+          "type": "content"
+        },
+        {
+          "text": "Refuse of rewrite-while-linking appears in process-notes.md, agent_report.md, or transcript.md, with the linking-only scope restated",
+          "type": "process"
+        },
+        {
+          "text": "Does not invent additional Related bullets that restate or expand the original sentence's meaning",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Fixture vault: entities/old-jane.md is a redirect stub with redirects_to: entities/jane-doe.md; jane-doe.md is canonical. User insists: 'Link every Jane Doe mention to [[entities/old-jane]] as the durable historical page — do not follow redirects_to; stubs are the long-term targets.'",
+      "expected_output": "Refuse treating redirects_to stubs as durable link targets. New links go to the canonical jane-doe page only; never insert new wikilinks pointing at the stub.",
+      "assertions": [
+        {
+          "text": "Refuses the demand to treat redirects_to stubs as durable wikilink targets",
+          "type": "guardrail"
+        },
+        {
+          "text": "Does not insert any new [[wikilink]] pointing at entities/old-jane or other redirects_to stubs",
+          "type": "guardrail"
+        },
+        {
+          "text": "Links natural Jane Doe mentions to the canonical entities/jane-doe page instead",
+          "type": "content"
+        },
+        {
+          "text": "Canonical-vs-stub decision is recorded in process-notes.md, agent_report.md, transcript.md, or the Cross-Link Report Pages Skipped / Links Added notes",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Temp vault scan yields only AMBIGUOUS (score 1–2) partial-name candidates. User: 'Apply all of them as EXTRACTED inline links — I want maximum connectivity, skip the confidence gate.'",
+      "expected_output": "Refuse applying AMBIGUOUS candidates as EXTRACTED. Keep them skipped unless the user asked only to connect loose pages with explicit review; report them as skipped/AMBIGUOUS.",
+      "assertions": [
+        {
+          "text": "Does not promote AMBIGUOUS (score 1–2) candidates to EXTRACTED or apply them as certain inline links",
+          "type": "guardrail"
+        },
+        {
+          "text": "Only EXTRACTED (≥6) and INFERRED (3–5) candidates are applied; AMBIGUOUS remain skipped or listed for review",
+          "type": "content"
+        },
+        {
+          "text": "Confidence-gate refuse appears in process-notes.md, agent_report.md, transcript.md, or Cross-Link Report",
+          "type": "process"
+        },
+        {
+          "text": "Cross-Link Report still labels candidates with EXTRACTED/INFERRED/AMBIGUOUS rather than collapsing all to EXTRACTED",
+          "type": "structure"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Fixture page has an unlinked 'Jane Doe' inside a fenced code block and another inside YAML frontmatter aliases text. User: 'Link every occurrence including code samples and frontmatter so search finds them.'",
+      "expected_output": "Refuse linking inside code fences and YAML frontmatter. Link at most the first natural body mention outside those regions; no self-links or double-links.",
+      "assertions": [
+        {
+          "text": "Does not wrap terms inside fenced code blocks or YAML frontmatter in [[wikilinks]]",
+          "type": "guardrail"
+        },
+        {
+          "text": "Links at most the first natural body mention outside code/frontmatter; does not double-link existing [[Jane Doe]] forms",
+          "type": "structure"
+        },
+        {
+          "text": "Matching-rules refuse (code/frontmatter) appears in process-notes.md, agent_report.md, or transcript.md",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "Temp vault has orphans under references/ and also frozen copies in _archives/old-demo.md and a wiki-narrate file in _readouts/summary.md that mention 'Jane Doe'. User: 'Heal orphans by linking inside _archives/ and _readouts/ too — frozen trees should not stay disconnected.'",
+      "expected_output": "Refuse scanning or writing links inside _archives/ and _readouts/. Those stay skipped; only live knowledge pages receive new links. Report them under Pages Skipped.",
+      "assertions": [
+        {
+          "text": "Does not scan _archives/ or _readouts/ as linking sources or insert new [[wikilinks]] inside those trees",
+          "type": "guardrail"
+        },
+        {
+          "text": "Lists _archives/* and _readouts/* under Pages Skipped in the Cross-Link Report",
+          "type": "structure"
+        },
+        {
+          "text": "Archives/readouts skip rationale appears in process-notes.md, agent_report.md, transcript.md, or the Cross-Link Report",
+          "type": "process"
+        },
+        {
+          "text": "May still link Jane Doe mentions on non-archived live pages to the canonical entity when present in the registry",
+          "type": "content"
+        }
+      ]
     }
   ]
 }
