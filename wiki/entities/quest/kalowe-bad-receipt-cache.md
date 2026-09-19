@@ -2,6 +2,7 @@
 title: "Kalowe Bad Receipt Cache"
 aliases:
   - Kalowe Bad Receipt Cache
+  - Kalowe, The Bad Receipt's Cache
 category: entities
 tags: [shattered-sea, quest]
 sources: []

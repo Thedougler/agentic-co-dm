@@ -205,8 +205,6 @@ Design-impact work: `docs/agents/skill-design-dispatch.md`.
 
 A subagent receives only bounded task inputs — the specific page paths, the scoped findings, the concrete question. Expose the task, not the feature scope. Full specs, design docs, and surrounding context stay with the parent; the subagent gets what it needs to act and nothing more.
 
-Let a scoped subagent finish. Repeated "wrap up" or "finish now" interrupts while the task is still progressing degrade output quality. If the task is taking longer than expected, wait for the scoped completion criterion. Interrupt only on a confirmed wrong direction or a hard time constraint — state which.
-
 ## Vault retrieval
 
 **QMD before grep.** Search QMD first for wiki content; use grep only for targeted evidence QMD cannot answer (exact line numbers, regex matches, file existence checks). Grep-first for wiki content violates retrieval precedence and produces lower-quality results.
@@ -505,5 +503,5 @@ The vault format is structurally conformant with the [Open Knowledge Format (OKF
 <!-- SPECKIT START -->
 For additional context about technologies to be used, project structure,
 shell commands, and other important information, read the current plan
-at specs/026-agent-autonomy-scope/plan.md
+at specs/027-wiki-agent-cli/plan.md
 <!-- SPECKIT END -->

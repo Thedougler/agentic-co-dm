@@ -34,7 +34,7 @@ relationships:
 # HCS Sovereign
 
 > [!narration] Narration
-> A copper-sheathed first-rate ship of the line fills the horizon, its upper works carrying the weight of more than a hundred guns. It does not need to chase you to control the water; the flag, the waiting hull, and the open guns make its arrival an event in every harbour.
+> A copper-sheathed first-rate ship of the line fills the horizon, its upper works carrying more than a hundred guns. It does not need to chase you to control the water. Its flag and waiting hull establish authority in every harbour, while its open guns make its arrival an event.
 
 ## Sheet
 
@@ -47,14 +47,14 @@ relationships:
 
 ## Components
 
-- **Hull.** AC `15`; `700` hit points. The supplied source does not establish a damage threshold.
+- **Hull.** AC `15`, `700` hit points. The supplied source does not establish a damage threshold.
 - **Helm.** The AC, hit points, and disabled-control consequence are not established.
 - **Movement.** The AC, hit points, and disabled-speed consequence are not established.
-- **Weapons.** The ship carries more than one hundred guns. Individual weapon AC, hit points, attacks, ranges, hit effects, crew requirements, and reload limits are not established.
+- **Weapons.** More than one hundred guns arm the ship. Individual weapon AC, hit points, attacks, ranges, hit effects, crew requirements, and reload limits are not established.
 
 ## Crew stations
 
-Crown fleet officers, ratings, and Admiralty authority are present, but the source does not establish named officers, station assignments, or minimum staffing. The ship's command structure is therefore an unresolved table fact.
+Crew command structure remains unresolved at the table because the source does not establish named officers, station assignments, or minimum staffing.
 
 ## Handling
 
@@ -62,7 +62,7 @@ The Sovereign does not patrol or escort. News of its arrival travels weeks ahead
 
 ## Combat
 
-The Sovereign can present overwhelming gun power, but the supplied source does not establish initiative, movement, ramming, boarding, component targeting, sinking, or destruction procedures. Use only the Gargantuan chassis and hull figures until those figures are authored.
+The supplied source gives no initiative, movement, ramming, boarding, component-targeting, sinking, or destruction procedures. Use only the Gargantuan chassis and hull figures until those figures are authored.
 
 ## At a Glance
 

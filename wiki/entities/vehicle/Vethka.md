@@ -57,6 +57,7 @@ In reef country, nothing with a keel can catch a *Vethka*. [[Grung]] Standing Le
 - Captain: none fixed. Command runs through the caste hierarchy, purple-caste leading each raid.
 - Notable crew: blue-caste handles navigation and piloting.
 - Notable crew: purple-caste runs raiding and assault, and is the sole caste permitted to work the poison bench.
++ Notable crew: purple-caste runs raiding and assault, and is the only caste permitted to work the poison bench.
 - Notable crew: green-caste covers construction and upkeep.
 - Notable crew: red-caste designed the poison bench, a narrow work surface sealed with flat resin forward of amidships, but never crews it.
 
@@ -65,6 +66,7 @@ In reef country, nothing with a keel can catch a *Vethka*. [[Grung]] Standing Le
 - [[grung-clans|Grung Clans]]: builders and operators of the *Vethka* class.
 - [[verdant-teeth]]: source of the iron-pillar hardwood used in the hull.
 - [[Karath]]: home island, its no-harbour shoreline built for exactly this hull's low, unmoored profile. Karath alone crews six of the class.
++ [[Karath]]: home island. Its harbourless shoreline suits this hull's low, unmoored profile. Karath alone crews six of the class.
 - [[jean-claude-tabarnack]]: tracks Karath's *Vethka* fleet, which runs crew and captives for the operation holding his family.
 
 ## Session Log

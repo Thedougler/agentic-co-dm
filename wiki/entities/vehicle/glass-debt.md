@@ -28,5 +28,5 @@ relationships:
 ---
 # Glass Debt
 
-[[glass-debt]] is named as a hull sighted near the [[central-strait]]. Crown captains break from their usual patrol lines when it or [[velvet-noose]] is seen. No other sheet is established.
+The Plumb Eye item record references this vessel as the item's former holder. No other sheet is established.
 

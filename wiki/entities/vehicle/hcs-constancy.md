@@ -43,7 +43,7 @@ The ship inspects vessels in Crown waters. It checks hull records, cargo lists, 
 
 **Below decks**: brig and holding cells alongside surgeon's quarters and supplies.
 
-**Hold**: ammunition and shot. Also carries 75 tons of cargo.
+**Hold**: ammunition and shot. The ship also carries 75 tons of cargo.
 
 ## Stats & Combat
 
@@ -73,11 +73,11 @@ The ship inspects vessels in Crown waters. It checks hull records, cargo lists, 
 | Facility | Space | Hireling | Effect |
 |---|---|---|---|
 | Inspection Office | 2 | Rating Officer (specialist) | *Active:* once/Bastion Turn, formally inspects a named vessel or individual, producing a valid Crown-certified rating in Crown proceedings. *Passive*: flagged Crown vessels in the same harbour count as inspected for the week. Non-Crown captains formally rated make Deception checks at disadvantage against Crown officials with registry access. |
-| Brig and Holding Deck | 2 | Marine Sergeant (double-role: bosun) | *Active:* once/Bastion Turn, processes one prisoner per holding compartment (deposition, extraction, transfer). *Passive:* holds and transports persons under Crown warrant at no extra cost. Escape attempts are at disadvantage due to cells below waterline. The ship holds up to twelve prisoners in four compartments. |
+| Brig and Holding Deck | 2 | Marine Sergeant (double-role: bosun) | *Active:* once/Bastion Turn, processes one prisoner per holding compartment (deposition, extraction, transfer). *Passive:* holds and transports persons under Crown warrant at no extra cost. Escape attempts are at disadvantage due to cells below waterline. The brig accommodates up to twelve prisoners in four compartments. |
 
 ## Crew
 
-The source names no captain or crew. The facility hirelings include a Rating Officer (Inspection Office) and a Marine Sergeant (Brig and Holding Deck, who doubles as bosun).
+The source provides no captain or crew. The facility hirelings include a Rating Officer (Inspection Office) and a Marine Sergeant (Brig and Holding Deck). The Marine Sergeant also serves as bosun.
 
 ## Connections
 

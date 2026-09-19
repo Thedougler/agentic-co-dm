@@ -50,9 +50,9 @@ Source's own callout: superseded by [[hcs-sovereign]] as the definitive Tier 4 C
 
 | Facility | Space | Hireling | Effect |
 |---|---|---|---|
-| Admiralty Court | 2 | Judge-Advocate (ship's legal officer) | *Active:* once/Bastion Turn, issues one Crown legal instrument: commission, revocation, warrant, impound order, or [[letters-of-marque]]. Full Admiralty authority, enforceable in all Crown-held ports. *Passive:* Crown officers gain advantage on Intimidation checks against parties subject to Crown law. |
-| Registry Vault | 2 | Ship's Registrar (not a crew role) | *Active:* once/Bastion Turn, produces certified document copies or forges Crown certificates and locates named Crown registrations. *Passive:* generates legal paper trails recording ports visited, vessels inspected, and orders issued. |
-| Gunner's Magazine | 2 | Gunner-Warden (double-role: gunner on crew roster) | *Active:* once/Bastion Turn, prepares a specialist shot order (grapeshot, chain shot, or alchemical incendiary), applying in the next combat encounter. *Passive:* cannon attacks deal full damage on a confirmed critical hit. The magazine has never misfired. |
+| Admiralty Court | 2 | Judge-Advocate (ship's legal officer) | *Active:* once/Bastion Turn, issues one Crown legal instrument, such as a commission, revocation, warrant, impound order, or [[letters-of-marque]]. Full Admiralty authority is enforceable in all Crown-held ports. *Passive:* Crown officers gain advantage on Intimidation checks against parties subject to Crown law. |
+| Registry Vault | 2 | Ship's Registrar (not a crew role) | *Active:* once/Bastion Turn, produces certified document copies or forges Crown certificates and locates named Crown registrations. *Passive:* the vault generates legal paper trails for visited ports, inspected vessels, and issued orders. |
+| Gunner's Magazine | 2 | Gunner-Warden (double-role: gunner on crew roster) | *Active:* once/Bastion Turn, prepares a specialist shot order (grapeshot, chain shot, or alchemical incendiary), applying in the next combat encounter. *Passive:* cannon attacks deal full damage on a confirmed critical hit. The magazine has fired every time. |
 
 > [!mechanic]
 > **Registry Vault forgery detection.** A forged Crown certificate produced by the Registrar requires DC 18 Investigation to detect as fraudulent. On a failed check, the forgery passes as authentic Crown registration. Observers accept it at face value until some other event exposes it.
@@ -82,7 +82,7 @@ Installed: 6 units of 24 (Tier 4 limit). 3 special facility slots, all filled.
 
 ## Crew
 
-The source does not name a captain or crew member. The ship carries an Admiral's staff and signals complement (roles, not individuals).
+The source provides no captain or crew member. The ship carries an Admiral's staff and signals complement, which are roles rather than individuals.
 
 ## Connections
 

@@ -36,7 +36,7 @@ More heavily armed than [[Uncertainty|HCS Surety]]. The source provides no furth
 
 ## Crew
 
-The source names no captain or crew.
+The source provides no captain or crew member.
 
 ## Connections
 

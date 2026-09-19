@@ -2,6 +2,7 @@
 title: "Tessarine Courier Silkvane"
 aliases:
   - Tessarine Courier Silkvane
+  - Tessarine Silkvane
 category: entities
 tags: [shattered-sea, vehicle]
 sources:

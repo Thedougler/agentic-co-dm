@@ -5,7 +5,7 @@ tags: [shattered-sea, vehicle]
 sources:
   - "campaign-os:nimmik-vollask.md"
   - "/workspace/midchain-ingest/group-a/vehicles/Nimmik Vollask.md"
-summary: "Gnome-crewed orange cargo brig (the Depot) on the Central Strait; Cotter Foss sells from the rail and nobody Medium boards."
+summary: "Gnome-crewed orange cargo brig (the Depot) on the Central Strait. Cotter Foss sells from the rail, and nobody Medium boards."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -39,30 +39,30 @@ relationships:
 
 - **Size.** Cargo brig, Tier 2.
 - **Type.** Cargo brig (alias: the Depot).
-- **Speed.** 55 miles/day in good wind; 25 in poor wind; none in calm.
-- **Crew (min).** 8 minimum; about 62 full; 70 max.
+- **Speed.** 55 miles/day in good wind, 25 in poor wind, and none in calm.
+- **Crew (min).** 8 minimum, about 62 full, and 70 max.
 - **Passengers.** Medium-or-larger customers do not board.
 - **Cargo.** 90 tons.
 - **Hull points.** `190`.
 - **Hull AC.** `11`.
-- **Maneuverability.** Poor; high profile.
+- **Maneuverability.** Poor. High profile.
 - **Weapons.** Four swivel-gun mounts.
 - **Upkeep.** About 110 gp/week.
 
 ## Components
 
-- **Hull.** Boxy proportions with a questionable centre of gravity; orange paint over older colors. AC `11`; `190` hit points.
-- **Helm.** Gnomish rotating consensus via shift leads below decks; [[cotter-foss]] is the public interface.
-- **Movement.** Sail; rocks and sways in any wind.
+- **Hull.** Boxy proportions with a questionable centre of gravity. Orange paint covers older colors. AC `11`, `190` hit points.
+- **Helm.** Gnomish rotating consensus operates through shift leads below decks. [[cotter-foss]] is the public interface.
+- **Movement.** Sail. The hull rocks and sways in any wind.
 - **Weapons.** Swivel guns only.
 
 ## Crew stations
 
-Sixty gnomes live and work aboard. Passages and hatches are cut Small-or-smaller; a Medium or larger creature cannot fit below at any posture. Weather deck has hatches, rope staging, two cargo cranes, and the main hatch. Between-decks is a 4.5-foot working floor. The lower hold is deep cargo space behind the same undersized passages.
+Sixty gnomes live and work aboard. Passages and hatches are cut Small-or-smaller. A Medium or larger creature cannot fit below at any posture. The weather deck has hatches, rope staging, two cargo cranes, and the main hatch. Between-decks is a 4.5-foot working floor. The lower hold is deep cargo space behind the same undersized passages.
 
 ## Handling
 
-Service model: pull up and flag [[cotter-foss]] at the rail, name the cargo, pay the fee. Free coffee and gnomish meatballs come with the deal. Orders leave by crane-and-hatch handoff across open water; nobody Medium boards. Stock includes rope, canvas, food, fresh water, tar, pitch, oakum, block and tackle, tools, lanterns, oil, candles, healer's kits, antitoxin, and alchemist's fire by request, plus gnomish workshop goods sold through Cotter.
+Service model: pull up and flag [[cotter-foss]] at the rail. State the cargo and pay the fee. Free coffee and gnomish meatballs come with the deal. Orders leave by crane-and-hatch handoff across open water. Nobody Medium boards. Stock includes rope, canvas, food, fresh water, tar, pitch, oakum, block and tackle, tools, lanterns, oil, candles, healer's kits, antitoxin, and alchemist's fire by request. Cotter also sells gnomish workshop goods.
 
 ## Combat
 
@@ -70,13 +70,13 @@ Armed for defense with swivel guns. Primary play is resupply on the [[central-st
 
 ## At a Glance
 
-Gnome-crewed orange cargo brig (alias: the Depot) on the [[central-strait]]. [[cotter-foss]] sells from the starboard rail; Medium-or-larger customers do not board.
+Gnome-crewed orange cargo brig (alias: the Depot) on the [[central-strait]]. [[cotter-foss]] sells from the starboard rail. Medium-or-larger customers do not board.
 
 ## Connections
 
-- [[central-strait]] — Four-year resupply circuit; primary play is trade, not offense.
-- [[cotter-foss]] — Public interface at the rail; ledger, coffee, and crane-and-hatch handoffs.
+- [[central-strait]]: Four-year resupply circuit. Primary play is trade, not offense.
+- [[cotter-foss]]: Public interface at the rail. He manages the ledger, coffee, and crane-and-hatch handoffs.
 
 ## At the Table
 
-When the crew needs stores mid-strait, run the rail buy — flag Cotter, settle the list and fee, take the crane handoff. Do not stage a boarding scene; passages below are Small-or-smaller, and Medium characters stay on their own deck.
+When the crew needs stores mid-strait, run the rail buy. Flag Cotter at the rail. Settle the list and fee. Take the crane handoff. Do not stage a boarding scene. Passages below are Small-or-smaller, and Medium characters stay on their own deck.

@@ -26,9 +26,9 @@ A heavy brig, the largest ship in [[fisks-fleet]] after the [[red-lady]]. Broad 
 
 *Heavy brig · Third of Fisk's Fleet.*
 
-Not revealed to players. Delmar's confession established the fleet's existence (see [[session 04 transcript]]), but the DM deliberately withheld the individual ship names (`vault/campaigns/shattered-sea/factions/fisks-fleet.md`).
+Not revealed to players. Delmar's confession established the fleet's existence (see [[Session 04 - Recap]]), but the DM deliberately withheld the individual ship names (`vault/campaigns/shattered-sea/factions/fisks-fleet.md`).
 
-Below decks, a magazine sat below the waterline alongside a surgeon's berth and crew quarters for a full complement. The hold ran deep and wide, built to take punishment and hold position. She perished simultaneously with the rest of [[fisks-fleet]] when [[Umberlee]] opened [[drowned-maw]] beneath them. All hands lost.
+Below decks, a magazine was below the waterline alongside a surgeon's berth and crew quarters for a full complement. The hold ran deep and wide, built to take punishment and hold position. She perished simultaneously with the rest of [[fisks-fleet]] when [[Umberlee]] opened [[drowned-maw]] beneath them. All hands lost.
 
 ## Stats & Combat
 

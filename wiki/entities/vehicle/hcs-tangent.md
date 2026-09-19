@@ -26,11 +26,11 @@ tier: supporting
 
 A warship built for war, armed with heavy guns and staffed with a full crew. Not a patrol cutter. When it arrives at your port, something has failed. When it comes for you, you are the problem.
 
-This is the Crown's next move after [[hcs-warrant]]. Call it when inspections fail. The *Tangent* does not inspect. It acts.
+This is the Crown's next move after [[hcs-warrant]]. Use the *Tangent* after an inspection failure. It responds with force rather than inspection.
 
 Deploy the *Tangent* when Crown enforcement shifts from authority to force.
 
-Commanded by [[captain-dorian-bishop|Dorian Bishop]], Crown Captain and twice the fighter [[barnaby-rook]] is. Dorian is odd and lateral. Dorian positions wide, making you react, then strikes when you overextend.
+Commanded by [[captain-dorian-bishop|Dorian Bishop]], Crown Captain and twice the fighter [[barnaby-rook]] is. Dorian is odd and lateral. Dorian positions wide and forces a reaction before striking an overextended target.
 
 ## Stats & Combat
 

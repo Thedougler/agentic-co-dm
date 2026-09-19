@@ -3,6 +3,7 @@ title: "Carpenters' Slip"
 aliases:
   - Carpenters' Slip
   - Carpenter's Slip
+  - Carpenter's Shop
 category: entities
 tags: [shattered-sea, place]
 sources: []
