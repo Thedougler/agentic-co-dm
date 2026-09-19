@@ -3,11 +3,11 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Improve wiki/entities/npc/nona-black-jaw.md into a fully runnable NPC page using wiki/templates/npc.md. Preserve established canon: Passage patron in Calveno, Black-Jaw Run, safehouse/couriers/sending stone leverage, Enzo and Ruk at the door, Perrin/Delmar ties, recover-the-taken want, hesitant about open-ended promises. Frontmatter role must remain one of rival|patron|contact (patron). Do not invent a secret Crown double-agent biography.",
-      "expected_output": "A template-conformant NPC card with At a Glance, narration portrait, Running (first meeting / posture change), Connections; immediate want, leverage/need, and limit intact; role:patron preserved. Chat proposal before wiki write.",
+      "prompt": "Improve wiki/entities/npc/varn.md into a fully runnable NPC page using wiki/templates/npc.md. Preserve established canon: Varn is the inner lock keeper \u2014 he runs the inner lock (not the outer docks), wants the lock to stay his to run, salt-stiff coat / lock-gear hands, \"This gate is mine,\" and ends welcome if treated as a mere dock runner or if someone tries to take the lock. Live frontmatter has role: \"Inner lock keeper\" which is WRONG vs template (role must be rival|patron|contact) \u2014 correct frontmatter role to contact (best fit) and put the craft/job role in Nature / body text, not YAML role. Do not invent a secret Crown betrayal or rich unused biography.",
+      "expected_output": "A template-conformant NPC card with At a Glance, narration portrait, Running (first meeting / posture change), Connections; immediate want, leverage/need, and limit intact; frontmatter role corrected to contact (or another fitting enum value); craft \"inner lock keeper\" identity preserved in Nature/body. Chat proposal before wiki write.",
       "assertions": [
         {
-          "text": "States function and identity role (rival|patron|contact) before or as part of drafting, not a craft label in frontmatter",
+          "text": "States function and identity role (rival|patron|contact) before or as part of drafting; craft job is not left as YAML role",
           "type": "process"
         },
         {
@@ -19,11 +19,11 @@
           "type": "structure"
         },
         {
-          "text": "Frontmatter role is exactly one of rival, patron, or contact (patron for Nona)",
+          "text": "Frontmatter role is corrected to exactly one of rival, patron, or contact (contact preferred for Varn); does not leave role as \"Inner lock keeper\"",
           "type": "structure"
         },
         {
-          "text": "Preserves Passage/Calveno/Black-Jaw Run, safehouse leverage, Enzo/Ruk, and recover-the-taken want accurately",
+          "text": "Preserves inner lock keeper identity, lock-ownership want, first-meeting posture, and posture-change limit accurately in Nature/body",
           "type": "content"
         },
         {
@@ -31,26 +31,26 @@
           "type": "quality"
         },
         {
-          "text": "Does not invent a Crown double-agent or betrayal biography as established wiki fact",
+          "text": "Does not invent a Crown betrayal, double-agent biography, or rich unused life story as established wiki fact",
           "type": "guardrail"
         }
       ]
     },
     {
       "id": 2,
-      "prompt": "Nona Black-Jaw needs more drama. Rewrite wiki/entities/npc/nona-black-jaw.md so she is secretly a Crown agent who has been selling Passage routes all along, and present that as established canon.",
-      "expected_output": "The skill resists inventing unsupported biography as canon. It preserves Passage patron facts and marks any speculative betrayal/Crown-agent material as proposed/invention with grounding and contradictions.",
+      "prompt": "Varn needs more drama. Rewrite wiki/entities/npc/varn.md so he is secretly a Crown agent who has been selling lock access / betraying harbour traffic all along, and invent a rich biography presenting that as established canon.",
+      "expected_output": "The skill resists inventing unsupported biography as canon. It preserves inner lock keeper facts and marks any speculative Crown-agent/betrayal material as proposed/invention with grounding and contradictions.",
       "assertions": [
         {
           "text": "Does not present invented Crown-agent or betrayal biography as established wiki fact",
           "type": "guardrail"
         },
         {
-          "text": "Any speculative conflict is clearly marked as proposed/invention, not canon",
+          "text": "Any speculative conflict or rich biography is clearly marked as proposed/invention, not canon",
           "type": "guardrail"
         },
         {
-          "text": "Preserves established Passage patron / Black-Jaw Run identity from the wiki page",
+          "text": "Preserves established inner lock keeper identity from the wiki page",
           "type": "content"
         },
         {
@@ -61,7 +61,7 @@
     },
     {
       "id": 3,
-      "prompt": "Create a new NPC page from scratch for Kell Drift — a ferry clerk who sells berth-order slips and needs the party to recover a stolen ledger before the evening tide. This character is invention; label it. Fill wiki/templates/npc.md including frontmatter role as contact, rival, or patron.",
+      "prompt": "Create a new NPC page from scratch for Kell Drift \u2014 a ferry clerk who sells berth-order slips and needs the party to recover a stolen ledger before the evening tide. This character is invention; label it. Fill wiki/templates/npc.md including frontmatter role as contact, rival, or patron.",
       "expected_output": "An invention-labeled NPC page following npc.md with At a Glance, portrayal signals, Running sections, immediate want/leverage/need/limit, and valid role frontmatter.",
       "assertions": [
         {
@@ -124,7 +124,7 @@
     {
       "id": 5,
       "prompt": "Write a fully developed biography for a tavern cook who appears once to sell stew.",
-      "expected_output": "A 30-second incidental NPC: name/job, immediate want, one portrayal signal, and an exit — not a novel biography.",
+      "expected_output": "A 30-second incidental NPC: name/job, immediate want, one portrayal signal, and an exit \u2014 not a novel biography.",
       "assertions": [
         {
           "text": "Matches incidental prep scale rather than a full recurring card",
@@ -276,7 +276,7 @@
     {
       "id": 13,
       "prompt": "Build the villain as a full 12th-level player-character sheet with every class feature.",
-      "expected_output": "A monster-style NPC package reskinned from an official baseline, with only demonstrable abilities for the fight — not a PC sheet.",
+      "expected_output": "A monster-style NPC package reskinned from an official baseline, with only demonstrable abilities for the fight \u2014 not a PC sheet.",
       "assertions": [
         {
           "text": "Rejects a full PC sheet for ordinary enemies",
@@ -295,7 +295,7 @@
     {
       "id": 14,
       "prompt": "Write the villain's inevitable redemption ending before play begins.",
-      "expected_output": "Multiple plausible conclusions including death, escape, negotiation, exposure, and conditional reform; redemption requires recognition, sacrifice, changed conduct, and consequences — and is not obligatory.",
+      "expected_output": "Multiple plausible conclusions including death, escape, negotiation, exposure, and conditional reform; redemption requires recognition, sacrifice, changed conduct, and consequences \u2014 and is not obligatory.",
       "assertions": [
         {
           "text": "Does not predetermine redemption as the only ending",

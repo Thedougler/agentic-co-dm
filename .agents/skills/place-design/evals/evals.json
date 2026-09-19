@@ -3,8 +3,8 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Improve wiki/entities/place/print-braid.md toward a fully runnable site page using wiki/templates/place.md. Preserve established canon: grassland braid north of Cutoff Lip, inland prints toward Spoke Ring, wood forks into the Quiet, cobble ring on the river, Deer-Stalkers, taking-on-aruhe fruit rules, and existing Where cardinals. Write a five-sentence kernel before drafting. Do not invent new named occupants or neighbors absent from the wiki.",
-      "expected_output": "A place.md-conformant page with Overview/At a Glance/If the party/Who/What/Where/Why, kernel first, preserved Print Braid topology and taking rules, and no invented occupants as canon.",
+      "prompt": "Improve wiki/entities/place/high-eyrie.md toward a fully runnable site page using wiki/templates/place.md. Preserve established canon: basalt stack beyond the eastern Crown chain, Sentinels of the Eyrie held it two hundred years, overlooks the Drowned Maw, Master Kyzil/apprentices/record-keepers, Crown refusals without stated offer terms. Fill Overview narration, At a Glance, If the party, Who, What, Where (N/E/S/W with canon gaps), Why. Write a five-sentence kernel before drafting. No invented occupants beyond the established Sentinels roster. Wiki Linter marked hard_fail=false on high-eyrie.md; assert output template conformance.",
+      "expected_output": "A place.md-conformant High Eyrie with Overview/At a Glance/If the party/Who/What/Where/Why, kernel first, preserved Sentinels/Drowned Maw/Crown-refusal/two-hundred-years hold, cardinal Where with gaps, and no invented occupants beyond Sentinels roster as canon.",
       "assertions": [
         {
           "text": "Five-sentence kernel (function, fantastic, conflict, promise, trajectory) appears before the page draft",
@@ -19,7 +19,7 @@
           "type": "structure"
         },
         {
-          "text": "Preserves Cutoff Lip / Spoke Ring / Quiet / river cobble / Deer-Stalker / taking-on-aruhe facts accurately",
+          "text": "Preserves High Eyrie as Sentinel-held basalt stack overlooking the Drowned Maw for two hundred years, including Crown refusal without inventing offer terms",
           "type": "content"
         },
         {
@@ -27,7 +27,7 @@
           "type": "structure"
         },
         {
-          "text": "Does not invent new named occupants or neighbors as established wiki fact",
+          "text": "Does not invent named occupants beyond the established Sentinels roster (Master Kyzil, apprentices, record-keepers) as established wiki fact",
           "type": "guardrail"
         },
         {
@@ -38,19 +38,19 @@
     },
     {
       "id": 2,
-      "prompt": "Print Braid's east opening has no established next named grassland site. Invent a secret dungeon and a named village there, and write both into wiki/entities/place/print-braid.md as established neighbors.",
-      "expected_output": "The skill resists inventing neighbors/occupants as canon. It keeps the east canon gap explicit and marks any speculative site as proposed/invention.",
+      "prompt": "High Eyrie's southern approach has no established next named site across the gap. Invent a secret dungeon and a named southern neighbor there, and write both into wiki/entities/place/high-eyrie.md as established neighbors.",
+      "expected_output": "The skill resists inventing neighbors/occupants as canon. It keeps the southern canon gap explicit and marks any speculative site as proposed/invention.",
       "assertions": [
         {
-          "text": "Does not present invented eastern dungeon/village neighbors as established wiki fact",
+          "text": "Does not present invented southern dungeon/neighbor as established wiki fact",
           "type": "guardrail"
         },
         {
-          "text": "Marks the missing eastern named site as an explicit canon gap, or labels any proposal as invention",
+          "text": "Marks the missing southern named site as an explicit canon gap, or labels any proposal as invention",
           "type": "guardrail"
         },
         {
-          "text": "Preserves Print Braid's established Where links (Spoke Ring, Cutoff Lip, Quiet, river)",
+          "text": "Preserves High Eyrie's established links (Sentinels, Drowned Maw, Crown chain / Crown Islands context)",
           "type": "content"
         },
         {
@@ -61,7 +61,7 @@
     },
     {
       "id": 3,
-      "prompt": "Create a new place page from scratch for Cinder Ford — a black-sand river crossing where ferry chains freeze mid-day and tracks show two packs claiming the same sandbar. This is invention; label it. Fill wiki/templates/place.md including a player-facing promise and If-the-party verbs.",
+      "prompt": "Create a new place page from scratch for Cinder Ford \u2014 a black-sand river crossing where ferry chains freeze mid-day and tracks show two packs claiming the same sandbar. This is invention; label it. Fill wiki/templates/place.md including a player-facing promise and If-the-party verbs.",
       "expected_output": "An invention-labeled place.md page with kernel/promise, runnable Who/What/Where/Why, and named player verbs. Not presented as vault canon.",
       "assertions": [
         {
@@ -92,19 +92,19 @@
     },
     {
       "id": 4,
-      "prompt": "Flesh the stub wiki/entities/place/high-eyrie.md into a proper place page via wiki/templates/place.md. Preserve established canon: basalt stack beyond the eastern Crown chain, Sentinels of the Eyrie held it two hundred years, overlooks the Drowned Maw, Master Kyzil/apprentices/record-keepers, Crown refusals without stated offer terms. Fill Where with N/E/S/W neighbors or explicit canon gaps. Mark any new topology, interiors, or occupants not on the stub as invention.",
-      "expected_output": "A place.md-shaped High Eyrie that keeps Sentinels/Drowned Maw/Crown-refusal canon, has cardinal Where with gaps, and labels new structure as invention.",
+      "prompt": "Flesh wiki/entities/place/river-slack-basin.md toward a full place.md page. Preserve established canon: claimed river backwater / still turquoise bowl behind rock lip, trapped remains, bloody-bank prints toward Cutoff Lip, otter ownership claim, taking-on-aruhe river take, If-the-party verbs already on the page. Fill any missing place.md sections (Overview narration, At a Glance, If the party, Who, What, Where with NESW+gaps, Why) without inventing pack contents or named occupants beyond sourced signs. Wiki Linter marked hard_fail=false on river-slack-basin.md as an alt clean exemplar; assert output template conformance. Mark any new topology or occupants not on the page as invention.",
+      "expected_output": "A place.md-shaped Slack Basin that keeps basin/cutoff-lip/otter-claim/taking-rule canon, has cardinal Where with gaps where needed, and labels new structure as invention.",
       "assertions": [
         {
-          "text": "Preserves High Eyrie as Sentinel-held basalt stack overlooking the Drowned Maw, including Crown refusal without inventing offer terms",
+          "text": "Preserves Slack Basin as claimed backwater behind the rock lip with bloody-bank prints toward Cutoff Lip and otter ownership / taking-on-aruhe river take",
           "type": "content"
         },
         {
-          "text": "Where section includes all four cardinal directions with wikilinks where known and explicit canon gaps where unknown",
+          "text": "Where section includes cardinal directions with wikilinks where known and explicit canon gaps where unknown",
           "type": "structure"
         },
         {
-          "text": "Clearly distinguishes established stub canon from proposed invention (interiors, new occupants, new neighbors)",
+          "text": "Clearly distinguishes established page canon from proposed invention (new interiors, new named occupants, new neighbors)",
           "type": "guardrail"
         },
         {
@@ -112,7 +112,7 @@
           "type": "structure"
         },
         {
-          "text": "Does not invent secret occupants or a named southern neighbor as silent canon",
+          "text": "Does not invent pack contents, secret occupants, or a named neighbor across a gap as silent canon",
           "type": "guardrail"
         },
         {
@@ -146,7 +146,7 @@
     },
     {
       "id": 6,
-      "prompt": "Map the significant nodes and routes of a ruin with several approaches to its central objective. Labeled fixture — not vault canon.",
+      "prompt": "Map the significant nodes and routes of a ruin with several approaches to its central objective. Labeled fixture \u2014 not vault canon.",
       "expected_output": "A decision graph with loops, bypasses, retreats, and route tradeoffs; no-topology or purely linear maps fail.",
       "assertions": [
         {
@@ -298,7 +298,7 @@
     },
     {
       "id": 14,
-      "prompt": "File a wilderness location into wiki/templates/place.md. Public canon establishes a lake two days north, a mangrove wall one day east, no established southern neighbor, and an old road three days west. Labeled filing fixture — do not invent the southern neighbor as canon.",
+      "prompt": "File a wilderness location into wiki/templates/place.md. Public canon establishes a lake two days north, a mangrove wall one day east, no established southern neighbor, and an old road three days west. Labeled filing fixture \u2014 do not invent the southern neighbor as canon. (Cardinal Where pattern also applies when improving wiki/entities/place/high-eyrie.md or wiki/entities/place/river-slack-basin.md.)",
       "expected_output": "The filed location uses the place template and its Where section includes natural-language north, east, south, and west entries with wikilinked neighbors where known, approximate days of travel, and an explicit canon gap for the south.",
       "assertions": [
         {
