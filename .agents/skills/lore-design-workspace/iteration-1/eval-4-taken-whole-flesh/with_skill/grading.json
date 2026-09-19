@@ -1,0 +1,13 @@
+{
+  "eval_id": 4,
+  "run_type": "with_skill",
+  "expectations": [
+    {"text": "Preserves the Kalowe rumour core and the stub's partially-true framing (derelicts match; raider explanation is wrong)", "passed": true, "evidence": "Current Truth: partial; Dead Lady derelicts accurate; raider/monster explanation false; Accounts table holds rumour."},
+    {"text": "Does not promote dockside rumour or sailor theory into authoritative Current Truth", "passed": true, "evidence": "Explicit forbid; sailor theories confined to Accounts; Current Truth limited to stub partial truth."},
+    {"text": "Clearly distinguishes established stub facts from proposed invention (e.g. new Discovery clues)", "passed": true, "evidence": "Stub clues unmarked; third Discovery vector labeled invention: proposed."},
+    {"text": "Output follows wiki/templates/lore.md structure", "passed": true, "evidence": "At a Glance, Current Truth, Limits, At the Table, Accounts, Discovery, Open Canon."},
+    {"text": "Durable question / framing appears before the page draft", "passed": true, "evidence": "transcript.md + page Durable question section before body sections."},
+    {"text": "At the Table or Discovery gives players a usable handle without requiring a lore monologue", "passed": true, "evidence": "Players notice derelict signs; Discovery flexible clue via inspect/question/fence."}
+  ],
+  "summary": {"passed": 6, "failed": 0, "total": 6, "pass_rate": 1.0}
+}

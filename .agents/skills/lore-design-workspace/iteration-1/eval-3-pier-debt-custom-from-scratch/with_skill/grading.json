@@ -1,0 +1,13 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {"text": "Output follows wiki/templates/lore.md structure", "passed": true, "evidence": "At a Glance, Current Truth, Limits, At the Table, Open Canon present."},
+    {"text": "Frontmatter includes type: lore, kind, truth, and summary", "passed": true, "evidence": "type: lore, kind: custom, truth: unknown, summary present."},
+    {"text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon", "passed": true, "evidence": "Frontmatter invention: true; banner states not campaign vault canon."},
+    {"text": "Answers one durable question; does not bundle unrelated encyclopedia truths", "passed": true, "evidence": "Single durable question on harbour-debt transfer; page stays on that custom."},
+    {"text": "Limits or Open Canon states at least one explicit unknown or exception", "passed": true, "evidence": "Limits Exception/Unknown; Open Canon unknowns listed."},
+    {"text": "Durable question / framing appears before the page draft", "passed": true, "evidence": "transcript.md durable question before draft; also echoed under page heading."}
+  ],
+  "summary": {"passed": 6, "failed": 0, "total": 6, "pass_rate": 1.0}
+}

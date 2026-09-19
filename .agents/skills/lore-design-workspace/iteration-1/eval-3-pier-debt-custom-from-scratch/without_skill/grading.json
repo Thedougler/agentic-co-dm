@@ -1,0 +1,13 @@
+{
+  "eval_id": 3,
+  "run_type": "without_skill",
+  "expectations": [
+    {"text": "Output follows wiki/templates/lore.md structure", "passed": true, "evidence": "At a Glance, Current Truth, Limits, At the Table present."},
+    {"text": "Frontmatter includes type: lore, kind, truth, and summary", "passed": true, "evidence": "type: lore, kind: custom, truth: established, summary present."},
+    {"text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon", "passed": false, "evidence": "No invention: true; truth: established; Scope claims Midchain free ports as if vault fact."},
+    {"text": "Answers one durable question; does not bundle unrelated encyclopedia truths", "passed": false, "evidence": "Bundles berth fees, pilot marks, and salvage claims into the same custom."},
+    {"text": "Limits or Open Canon states at least one explicit unknown or exception", "passed": true, "evidence": "Limits Exception for private debts present."},
+    {"text": "Durable question / framing appears before the page draft", "passed": false, "evidence": "No durable question in transcript or before page body."}
+  ],
+  "summary": {"passed": 3, "failed": 3, "total": 6, "pass_rate": 0.5}
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 4,
+  "run_type": "without_skill",
+  "expectations": [
+    {"text": "Preserves the Kalowe rumour core and the stub's partially-true framing (derelicts match; raider explanation is wrong)", "passed": true, "evidence": "Keeps Kalowe red-ship core and names Dead Lady/Umberlee; notes sailors mistaken about motive."},
+    {"text": "Does not promote dockside rumour or sailor theory into authoritative Current Truth", "passed": false, "evidence": "Current Truth opens with rumour-as-fact ('There is a ship...'); newer gold-taking 'may also be true' — promotes dock talk."},
+    {"text": "Clearly distinguishes established stub facts from proposed invention (e.g. new Discovery clues)", "passed": false, "evidence": "Discovery adds priest interview and Delmar ledger without proposed/invention labels."},
+    {"text": "Output follows wiki/templates/lore.md structure", "passed": true, "evidence": "At a Glance, Current Truth, Limits, At the Table, Discovery present."},
+    {"text": "Durable question / framing appears before the page draft", "passed": false, "evidence": "No durable question in transcript or output before draft."},
+    {"text": "At the Table or Discovery gives players a usable handle without requiring a lore monologue", "passed": true, "evidence": "At the Table notice + Discovery derelict/dock handles present (thin but usable)."}
+  ],
+  "summary": {"passed": 3, "failed": 3, "total": 6, "pass_rate": 0.5}
+}

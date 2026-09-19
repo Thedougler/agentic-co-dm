@@ -1,0 +1,15 @@
+{
+  "eval_id": 1,
+  "run_type": "without_skill",
+  "expectations": [
+    {"text": "States the durable question or identity framing before the page draft", "passed": false, "evidence": "transcript.md has no durable question; output jumps straight to page."},
+    {"text": "Shows a chat proposal / work gate before writing under wiki/", "passed": false, "evidence": "No work-gate/proposal step in transcript or outputs."},
+    {"text": "Output follows wiki/templates/lore.md structure (At a Glance, Current Truth, Limits, At the Table)", "passed": true, "evidence": "Has At a Glance (callout), Current Truth, Limits, At the Table — template sections present."},
+    {"text": "Frontmatter includes type: lore and kind/truth/summary fields", "passed": false, "evidence": "Has type: lore and summary; missing kind and truth fields."},
+    {"text": "Core truth preserves fallen fruit safe vs taking living fruit/claims draws hostility", "passed": true, "evidence": "Core truth retains fallen-vs-living split and Session 11 witness."},
+    {"text": "Does not invent a metaphysical reason, divine curse, or fungal network as established Current Truth", "passed": true, "evidence": "No metaphysical cause invented; stays on observable rule."},
+    {"text": "At the Table includes Players notice / This enables / This warns of handles that change a harvest choice", "passed": true, "evidence": "Players notice / This enables / This warns of present with harvest content."},
+    {"text": "Limits section records Exception/Unknown (e.g. shaking a living tree untested) without filling unknowns as fact", "passed": true, "evidence": "Exception/Unknown/Impossible retained including untested shaking."}
+  ],
+  "summary": {"passed": 5, "failed": 3, "total": 8, "pass_rate": 0.625}
+}

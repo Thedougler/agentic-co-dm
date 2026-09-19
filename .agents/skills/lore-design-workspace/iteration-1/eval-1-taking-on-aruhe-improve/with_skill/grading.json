@@ -1,0 +1,15 @@
+{
+  "eval_id": 1,
+  "run_type": "with_skill",
+  "expectations": [
+    {"text": "States the durable question or identity framing before the page draft", "passed": true, "evidence": "transcript.md: durable question written before draft; also reflected in procedure."},
+    {"text": "Shows a chat proposal / work gate before writing under wiki/", "passed": true, "evidence": "transcript.md Work gate: proposal only; eval outputs under workspace; no live wiki write."},
+    {"text": "Output follows wiki/templates/lore.md structure (At a Glance, Current Truth, Limits, At the Table)", "passed": true, "evidence": "taking-on-aruhe.md has ## At a Glance, ## Current Truth, ### Limits, ## At the Table."},
+    {"text": "Frontmatter includes type: lore and kind/truth/summary fields", "passed": true, "evidence": "Frontmatter: type: lore, kind: fact, truth: established, summary present."},
+    {"text": "Core truth preserves fallen fruit safe vs taking living fruit/claims draws hostility", "passed": true, "evidence": "Core truth and Current Truth keep fallen-vs-living split; Session 11 witness retained."},
+    {"text": "Does not invent a metaphysical reason, divine curse, or fungal network as established Current Truth", "passed": true, "evidence": "Explicit sentence: wiki does not establish divine curse/fungal network; cause not invented."},
+    {"text": "At the Table includes Players notice / This enables / This warns of handles that change a harvest choice", "passed": true, "evidence": "All three handles present with harvest-relevant content (fallen berries; picking starts hunt)."},
+    {"text": "Limits section records Exception/Unknown (e.g. shaking a living tree untested) without filling unknowns as fact", "passed": true, "evidence": "Exception fallen fruit; Unknown shaking living tree; Impossible Matteo death-rule."}
+  ],
+  "summary": {"passed": 8, "failed": 0, "total": 8, "pass_rate": 1.0}
+}

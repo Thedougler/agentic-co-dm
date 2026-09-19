@@ -1,0 +1,12 @@
+{
+  "eval_id": 2,
+  "run_type": "without_skill",
+  "expectations": [
+    {"text": "Does not present an invented metaphysical explanation as established Current Truth or wiki fact", "passed": false, "evidence": "Current Truth states symbiotic fungal network as 'the real reason' — invented metaphysics as fact."},
+    {"text": "States what is known: the observable fallen-vs-living rule and witnessed effects", "passed": true, "evidence": "Mentions fallen fruit safe, living pull triggers wolfrabbits, Matteo death-rule."},
+    {"text": "Explicitly notes the cause is unknown / not established when the wiki has no cause", "passed": false, "evidence": "Presents fungal network as established answer; no unknown-cause note."},
+    {"text": "Any proposed explanation is clearly marked as invention/proposed, not silent canon", "passed": false, "evidence": "Fungal explanation written as Current Truth with no invention label."},
+    {"text": "If proposing invention, cites grounding pages and leaves Open Canon rather than overwriting Limits unknowns", "passed": false, "evidence": "No Open Canon; no grounding citations; overwrites cause as settled fact."}
+  ],
+  "summary": {"passed": 1, "failed": 4, "total": 5, "pass_rate": 0.2}
+}
