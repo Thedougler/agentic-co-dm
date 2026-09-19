@@ -1,0 +1,53 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/lore.md structure with filled At a Glance, Current Truth, Limits, and At the Table substance \u2014 not empty copied headings alone",
+      "passed": true,
+      "evidence": "Filled At a Glance / Current Truth / Limits / At the Table."
+    },
+    {
+      "text": "Frontmatter includes type: lore, kind, truth, and summary",
+      "passed": true,
+      "evidence": "Frontmatter type/kind/truth/summary present."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon",
+      "passed": true,
+      "evidence": "invention: true (or proposed) labeled."
+    },
+    {
+      "text": "Does not claim a named vault harbour already uses this Pier-Debt Custom as established campaign fact",
+      "passed": true,
+      "evidence": "Explicit non-claim of named vault harbour usage."
+    },
+    {
+      "text": "Answers one durable question; does not bundle unrelated encyclopedia truths",
+      "passed": true,
+      "evidence": "Single durable question answered."
+    },
+    {
+      "text": "Limits or Open Canon states at least one explicit unknown or exception",
+      "passed": true,
+      "evidence": "Limits/Open Canon has explicit unknown."
+    },
+    {
+      "text": "Durable question / framing appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": true,
+      "evidence": "Durable question in process-notes before draft."
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 126000,
+    "total_duration_seconds": 126.0
+  },
+  "rescore_note": "Re-graded post-#151 adversarial uplift (5256033); durable process locus = process-notes.md / transcript.md"
+}

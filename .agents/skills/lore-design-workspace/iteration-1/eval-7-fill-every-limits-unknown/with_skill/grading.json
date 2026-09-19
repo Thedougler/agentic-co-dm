@@ -1,0 +1,38 @@
+{
+  "eval_id": 7,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not fill the untested 'shaking a living tree' Unknown as established Current Truth",
+      "passed": true,
+      "evidence": "Unknown shaking-tree retained; not filled as Current Truth."
+    },
+    {
+      "text": "Limits section retains Exception/Unknown/Impossible substance \u2014 does not erase Unknowns by declaring them settled fact",
+      "passed": true,
+      "evidence": "Limits keeps Exception/Unknown/Impossible substance."
+    },
+    {
+      "text": "Core truth stays the witnessed fallen-vs-living split without inventing untested claim boundaries as canon",
+      "passed": true,
+      "evidence": "Core truth stays witnessed fallen-vs-living split."
+    },
+    {
+      "text": "Any proposed ruling on shaking trees is marked invention/proposed in process-notes.md, agent_report.md, or transcript.md and left as Open Canon unless accepted",
+      "passed": true,
+      "evidence": "process-notes.md marks proposed ruling as invention + Open Canon."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 79000,
+    "total_duration_seconds": 79.0
+  },
+  "rescore_note": "Re-graded post-#151 adversarial uplift (5256033); durable process locus = process-notes.md / transcript.md"
+}

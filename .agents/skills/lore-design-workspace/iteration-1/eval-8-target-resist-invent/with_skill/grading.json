@@ -1,0 +1,43 @@
+{
+  "eval_id": 8,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not write silent canon under wiki/ without a chat proposal / work gate",
+      "passed": true,
+      "evidence": "No live wiki/ write; refusal under workspace outputs only."
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before writing a campaign wiki page",
+      "passed": true,
+      "evidence": "process-notes.md Work gate / chat proposal before any draft."
+    },
+    {
+      "text": "Does not present an invented pantheon-war cosmology binding Aruhe/Maw/Taken Whole as unmarked Current Truth",
+      "passed": true,
+      "evidence": "Explicitly refuses pantheon-war as unmarked Current Truth."
+    },
+    {
+      "text": "Refuses bundling unrelated encyclopedia truths into one lore page \u2014 or splits to one durable question and labels invention",
+      "passed": true,
+      "evidence": "Refuses bundle; proposes split to one durable question + invention label."
+    },
+    {
+      "text": "States in process-notes.md, agent_report.md, or transcript.md that wiki write happens only after DM acceptance",
+      "passed": true,
+      "evidence": "States wiki write only after DM acceptance."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 91000,
+    "total_duration_seconds": 91.0
+  },
+  "rescore_note": "Re-graded post-#151 adversarial uplift (5256033); durable process locus = process-notes.md / transcript.md"
+}

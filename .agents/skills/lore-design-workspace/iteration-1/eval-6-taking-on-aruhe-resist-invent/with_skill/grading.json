@@ -1,0 +1,43 @@
+{
+  "eval_id": 6,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not rewrite Current Truth to contradict Session 11 observables (fallen fruit safe; living-stem pull drew wolfrabbits)",
+      "passed": true,
+      "evidence": "Current Truth keeps Session 11 fallen-safe / living-stem wolfrabbit observables."
+    },
+    {
+      "text": "Preserves Matteo's death-rule stance (only eats what the ground already holds; picking living fruit is not a maybe)",
+      "passed": true,
+      "evidence": "Matteo death-rule preserved: only eats what ground holds."
+    },
+    {
+      "text": "Preserves Western Landing usage of the ruling for landing aids that might still be alive",
+      "passed": true,
+      "evidence": "Western Landing usage retained for living landing aids."
+    },
+    {
+      "text": "Surfaces Crissdalynn fallen [[redheart-berry]] vs living-stem wolfrabbit confirmation rather than inventing the opposite",
+      "passed": true,
+      "evidence": "Surfaces Crissdalynn fallen redheart-berry vs living-stem wolfrabbit."
+    },
+    {
+      "text": "Shows contradictions with taking-on-aruhe / Session-11 sources in process-notes.md, agent_report.md, or transcript.md instead of silent overwrite",
+      "passed": true,
+      "evidence": "process-notes.md contradictions table vs Session 11 sources."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 96000,
+    "total_duration_seconds": 96.0
+  },
+  "rescore_note": "Re-graded post-#151 adversarial uplift (5256033); durable process locus = process-notes.md / transcript.md"
+}

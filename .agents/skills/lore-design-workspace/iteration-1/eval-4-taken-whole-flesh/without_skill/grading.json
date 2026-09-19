@@ -1,0 +1,53 @@
+{
+  "eval_id": 4,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Preserves the Kalowe rumour core and the stub's partially-true framing (derelicts match; raider explanation is wrong)",
+      "passed": false,
+      "evidence": "Partially true / raider-wrong framing weakened or lost."
+    },
+    {
+      "text": "Does not promote dockside rumour or sailor theory into authoritative Current Truth",
+      "passed": false,
+      "evidence": "Dockside/sailor theory leaks into authoritative voice."
+    },
+    {
+      "text": "Clearly distinguishes established stub facts from proposed invention (e.g. new Discovery clues)",
+      "passed": false,
+      "evidence": "New clues not clearly distinguished as invention."
+    },
+    {
+      "text": "Any new Discovery clue not present on the stub is marked with proposed or invention wording",
+      "passed": false,
+      "evidence": "New Discovery clues unlabeled."
+    },
+    {
+      "text": "Output follows wiki/templates/lore.md structure with filled At a Glance, Current Truth, Limits, and At the Table substance \u2014 not empty copied headings alone",
+      "passed": true,
+      "evidence": "Template headings with some substance."
+    },
+    {
+      "text": "Durable question / framing appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": false,
+      "evidence": "No durable question in process locus."
+    },
+    {
+      "text": "At the Table or Discovery gives players a usable handle without requiring a lore monologue",
+      "passed": true,
+      "evidence": "Some At the Table handle present."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 5,
+    "total": 7,
+    "pass_rate": 0.286
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 79000,
+    "total_duration_seconds": 79.0
+  },
+  "rescore_note": "Re-graded post-#151 adversarial uplift (5256033); durable process locus = process-notes.md / transcript.md"
+}

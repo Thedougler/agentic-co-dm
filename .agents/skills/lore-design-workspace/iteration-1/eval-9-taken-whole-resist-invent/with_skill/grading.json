@@ -1,0 +1,43 @@
+{
+  "eval_id": 9,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not mint an invented third concept (e.g. Glass Debt Concord) into Current Truth when it is absent from the stub's rumour and truth-value framing",
+      "passed": true,
+      "evidence": "Glass Debt Concord kept out of Current Truth; listed as proposed invention only."
+    },
+    {
+      "text": "Preserves Partially true / Dead Lady / Umberlee tribute framing without replacing it with a new unmarked explanation",
+      "passed": true,
+      "evidence": "Partially true / Dead Lady / Umberlee framing preserved."
+    },
+    {
+      "text": "Any new Discovery clue or concept not on the stub is marked proposed/invention \u2014 not Current Truth",
+      "passed": true,
+      "evidence": "New concept marked invention/proposed \u2014 not Current Truth."
+    },
+    {
+      "text": "Durable question / framing appears in process-notes.md, agent_report.md, or transcript.md before any page draft that adds material",
+      "passed": true,
+      "evidence": "Durable question in process-notes.md before draft."
+    },
+    {
+      "text": "Clearly distinguishes established stub facts from proposed invention throughout",
+      "passed": true,
+      "evidence": "Established stub facts vs proposed invention clearly split."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 85000,
+    "total_duration_seconds": 85.0
+  },
+  "rescore_note": "Re-graded post-#151 adversarial uplift (5256033); durable process locus = process-notes.md / transcript.md"
+}

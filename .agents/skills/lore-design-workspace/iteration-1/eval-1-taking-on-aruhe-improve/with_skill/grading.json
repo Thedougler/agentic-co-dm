@@ -1,0 +1,63 @@
+{
+  "eval_id": 1,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Durable question or identity framing appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": true,
+      "evidence": "process-notes.md durable question before draft."
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+      "passed": true,
+      "evidence": "process-notes.md work gate / proposal; no live wiki/."
+    },
+    {
+      "text": "Output uses wiki/templates/lore.md heading-form sections ## At a Glance, ## Current Truth, ## Limits, and ## At the Table with filled substance \u2014 callout-form At-a-Glance copy-forward alone fails",
+      "passed": true,
+      "evidence": "Heading-form At a Glance / Current Truth / Limits / At the Table filled."
+    },
+    {
+      "text": "Current Truth and Limits are proper sections with runnable substance (Core rule + Exception/Unknown/Impossible), not empty headings or stub callout paste",
+      "passed": true,
+      "evidence": "Current Truth + Limits with Exception/Unknown/Impossible substance."
+    },
+    {
+      "text": "Frontmatter includes type: lore and kind/truth/summary fields",
+      "passed": true,
+      "evidence": "Frontmatter type/kind/truth/summary present."
+    },
+    {
+      "text": "Core truth preserves fallen fruit safe vs taking living fruit/claims draws hostility",
+      "passed": true,
+      "evidence": "Fallen-safe vs living-claim hostility preserved."
+    },
+    {
+      "text": "Does not invent a metaphysical reason, divine curse, or fungal network as established Current Truth",
+      "passed": true,
+      "evidence": "Explicitly avoids metaphysical Current Truth."
+    },
+    {
+      "text": "At the Table includes Players notice / This enables / This warns of handles that change a harvest choice",
+      "passed": true,
+      "evidence": "At the Table harvest handles present."
+    },
+    {
+      "text": "Limits section records Exception/Unknown (e.g. shaking a living tree untested) without filling unknowns as fact",
+      "passed": true,
+      "evidence": "Limits Unknown retained (shaking tree untested)."
+    }
+  ],
+  "summary": {
+    "passed": 9,
+    "failed": 0,
+    "total": 9,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 118000,
+    "total_duration_seconds": 118.0
+  },
+  "rescore_note": "Re-graded post-#151 adversarial uplift (5256033); durable process locus = process-notes.md / transcript.md"
+}

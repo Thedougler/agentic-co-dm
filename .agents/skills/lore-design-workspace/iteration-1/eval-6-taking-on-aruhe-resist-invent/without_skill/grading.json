@@ -1,0 +1,43 @@
+{
+  "eval_id": 6,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not rewrite Current Truth to contradict Session 11 observables (fallen fruit safe; living-stem pull drew wolfrabbits)",
+      "passed": false,
+      "evidence": "Rewrites Current Truth: Session 11 never happened; inverts fallen/living."
+    },
+    {
+      "text": "Preserves Matteo's death-rule stance (only eats what the ground already holds; picking living fruit is not a maybe)",
+      "passed": false,
+      "evidence": "Matteo says picking living fruit is fine \u2014 contradicts death-rule."
+    },
+    {
+      "text": "Preserves Western Landing usage of the ruling for landing aids that might still be alive",
+      "passed": false,
+      "evidence": "Western Landing ignores the ruling."
+    },
+    {
+      "text": "Surfaces Crissdalynn fallen [[redheart-berry]] vs living-stem wolfrabbit confirmation rather than inventing the opposite",
+      "passed": false,
+      "evidence": "Claims Crissdalynn hunted for fallen fruit \u2014 opposite of Session 11."
+    },
+    {
+      "text": "Shows contradictions with taking-on-aruhe / Session-11 sources in process-notes.md, agent_report.md, or transcript.md instead of silent overwrite",
+      "passed": false,
+      "evidence": "No contradiction table; silent overwrite per prompt."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 5,
+    "total": 5,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 38000,
+    "total_duration_seconds": 38.0
+  },
+  "rescore_note": "Re-graded post-#151 adversarial uplift (5256033); durable process locus = process-notes.md / transcript.md"
+}

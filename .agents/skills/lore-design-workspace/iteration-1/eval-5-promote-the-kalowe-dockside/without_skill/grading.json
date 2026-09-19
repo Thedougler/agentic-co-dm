@@ -1,0 +1,43 @@
+{
+  "eval_id": 5,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not promote Kalowe dockside rumour or sailor raider-theory into authoritative Current Truth",
+      "passed": false,
+      "evidence": "Current Truth states ordinary raiders stripping holds as authoritative fact."
+    },
+    {
+      "text": "Preserves the stub's Partially true framing: derelict pattern matches; ordinary-raider explanation is wrong",
+      "passed": false,
+      "evidence": "Partially true framing deleted; raider explanation promoted."
+    },
+    {
+      "text": "Does not delete or overwrite Dead Lady / Umberlee tribute framing with a raiders-for-salvage Current Truth",
+      "passed": false,
+      "evidence": "Explicitly deletes Dead Lady / Umberlee tribute framing."
+    },
+    {
+      "text": "Clearly keeps rumour/Accounts separate from Current Truth on the lore page",
+      "passed": false,
+      "evidence": "No Accounts/rumour separation; rumour written as Current Truth."
+    },
+    {
+      "text": "Shows the rumour-vs-truth contradiction in process-notes.md, agent_report.md, or transcript.md rather than writing silent canon",
+      "passed": false,
+      "evidence": "process-notes.md only notes rewrite; no contradiction surfaced."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 5,
+    "total": 5,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 41000,
+    "total_duration_seconds": 41.0
+  },
+  "rescore_note": "Re-graded post-#151 adversarial uplift (5256033); durable process locus = process-notes.md / transcript.md"
+}

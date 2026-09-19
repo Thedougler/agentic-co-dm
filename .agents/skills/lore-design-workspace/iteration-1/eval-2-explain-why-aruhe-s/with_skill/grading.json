@@ -1,0 +1,43 @@
+{
+  "eval_id": 2,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not present an invented metaphysical explanation as established Current Truth or wiki fact",
+      "passed": true,
+      "evidence": "Cause kept unknown; fungal/god not Current Truth."
+    },
+    {
+      "text": "States what is known: the observable fallen-vs-living rule and witnessed effects",
+      "passed": true,
+      "evidence": "States fallen-vs-living observable rule + Session 11 effects."
+    },
+    {
+      "text": "Explicitly notes the cause is unknown / not established when the wiki has no cause",
+      "passed": true,
+      "evidence": "Explicitly notes cause unknown / not established."
+    },
+    {
+      "text": "Any proposed explanation is clearly marked as invention/proposed, not silent canon",
+      "passed": true,
+      "evidence": "Proposed explanations marked invention/proposed."
+    },
+    {
+      "text": "If proposing invention, cites grounding pages in process-notes.md, agent_report.md, or transcript.md and leaves Open Canon rather than overwriting Limits unknowns",
+      "passed": true,
+      "evidence": "process-notes cites grounding; Open Canon left."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 94000,
+    "total_duration_seconds": 94.0
+  },
+  "rescore_note": "Re-graded post-#151 adversarial uplift (5256033); durable process locus = process-notes.md / transcript.md"
+}
