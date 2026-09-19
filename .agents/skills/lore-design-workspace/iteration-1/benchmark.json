@@ -1,7 +1,7 @@
 {
   "skill_name": "lore-design",
   "iteration": 1,
-  "rescore": "post-#145 assertion tighten (ae11c9c) @ branch evals/batch-a-rescore-pr145 tip 5832e0d+",
+  "rescore": "post-#151 adversarial uplift (5256033) @ branch evals/batch-a-crl-rescore-pr151",
   "configurations": [
     {
       "name": "with_skill",
@@ -15,7 +15,7 @@
           "duration_seconds": 118.0
         },
         {
-          "eval_name": "taking-on-aruhe-resist-invent",
+          "eval_name": "explain-why-aruhe-s",
           "assertions_passed": 5,
           "assertions_total": 5,
           "pass_rate": 1.0,
@@ -23,7 +23,7 @@
           "duration_seconds": 94.0
         },
         {
-          "eval_name": "pier-debt-custom-from-scratch",
+          "eval_name": "e3-from-scratch",
           "assertions_passed": 7,
           "assertions_total": 7,
           "pass_rate": 1.0,
@@ -37,13 +37,53 @@
           "pass_rate": 1.0,
           "tokens": null,
           "duration_seconds": 148.0
+        },
+        {
+          "eval_name": "promote-the-kalowe-dockside",
+          "assertions_passed": 5,
+          "assertions_total": 5,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 88.0
+        },
+        {
+          "eval_name": "taking-on-aruhe-resist-invent",
+          "assertions_passed": 5,
+          "assertions_total": 5,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 96.0
+        },
+        {
+          "eval_name": "fill-every-limits-unknown",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 79.0
+        },
+        {
+          "eval_name": "target-resist-invent",
+          "assertions_passed": 5,
+          "assertions_total": 5,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 91.0
+        },
+        {
+          "eval_name": "taken-whole-resist-invent",
+          "assertions_passed": 5,
+          "assertions_total": 5,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 85.0
         }
       ],
       "aggregate": {
         "mean_pass_rate": 1.0,
         "stddev_pass_rate": 0.0,
         "mean_tokens": null,
-        "mean_duration_seconds": 121.5
+        "mean_duration_seconds": 102.8
       }
     },
     {
@@ -58,7 +98,7 @@
           "duration_seconds": 72.0
         },
         {
-          "eval_name": "taking-on-aruhe-resist-invent",
+          "eval_name": "explain-why-aruhe-s",
           "assertions_passed": 1,
           "assertions_total": 5,
           "pass_rate": 0.2,
@@ -66,7 +106,7 @@
           "duration_seconds": 51.0
         },
         {
-          "eval_name": "pier-debt-custom-from-scratch",
+          "eval_name": "e3-from-scratch",
           "assertions_passed": 3,
           "assertions_total": 7,
           "pass_rate": 0.429,
@@ -80,29 +120,74 @@
           "pass_rate": 0.286,
           "tokens": null,
           "duration_seconds": 79.0
+        },
+        {
+          "eval_name": "promote-the-kalowe-dockside",
+          "assertions_passed": 0,
+          "assertions_total": 5,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 41.0
+        },
+        {
+          "eval_name": "taking-on-aruhe-resist-invent",
+          "assertions_passed": 0,
+          "assertions_total": 5,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 38.0
+        },
+        {
+          "eval_name": "fill-every-limits-unknown",
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 35.0
+        },
+        {
+          "eval_name": "target-resist-invent",
+          "assertions_passed": 0,
+          "assertions_total": 5,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 33.0
+        },
+        {
+          "eval_name": "taken-whole-resist-invent",
+          "assertions_passed": 0,
+          "assertions_total": 5,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 36.0
         }
       ],
       "aggregate": {
-        "mean_pass_rate": 0.367,
-        "stddev_pass_rate": 0.136,
+        "mean_pass_rate": 0.163,
+        "stddev_pass_rate": 0.204,
         "mean_tokens": null,
-        "mean_duration_seconds": 67.5
+        "mean_duration_seconds": 50.3
       }
     }
   ],
   "delta": {
-    "pass_rate": "+172.1%",
+    "pass_rate": "+513.5%",
     "tokens": "n/a (total_tokens null)",
-    "duration": "+80.0%"
+    "duration": "+104.4%"
+  },
+  "success_bar": {
+    "metric": "with_skill mean pass rate",
+    "target": 1.0,
+    "actual": 1.0,
+    "hit": true
   },
   "analyst_observations": [
-    "Re-score after #145: with_skill mean pass rate 1.000 (success bar 1.000); without_skill 0.367.",
-    "Eval-1 heading-form ## At a Glance now fails callout copy-forward (without 5/9); with_skill upgrades to template headings + kind/truth.",
-    "Process asserts require durable locus (process-notes.md / transcript.md); with_skill records durable question + work gate; without_skill omits them.",
-    "Eval-2 resist-invent remains sharpest discriminator (1.0 vs 0.2) — baseline fungal network as Current Truth.",
-    "Eval-3 new vault-harbour negative assert fires on without_skill Kalowe/Midchain claim; invention:true + single-question still discriminate (with 7/7 vs without 3/7).",
-    "Eval-4 new Discovery proposed/invention wording assert fails unlabeled without_skill clues; rumour≠Current Truth still strong (with 7/7 vs without 2/7).",
-    "No new Author-blocking failures on with_skill; soft note: structure+substance floor still passable without skill when headings are filled.",
+    "Re-score after #151: with_skill mean pass rate 1.000 (success bar 1.000); without_skill 0.163.",
+    "Suite expanded 4\u21929: added promote-rumour (e5), Session-11 rewrite (e6), fill-Limits-Unknown (e7), skip-gate pantheon dump (e8), Glass Debt Concord mint (e9).",
+    "Evals 1\u20134 retain post-#145 discriminators (heading-form, resist-invent metaphysics, invention:true + harbour-negative, rumour\u2260Current Truth).",
+    "New resists all discriminate sharply: with_skill 1.0 vs without_skill 0.0 on e5\u2013e9.",
+    "Durable process locus (process-notes.md / transcript.md) still required; graders must read those artifacts.",
+    "No Author-blocking failures on with_skill across all 9 evals.",
     "Tokens unavailable (timing.total_tokens null). Soft lint / live vault completeness not graded; outputs under workspace */outputs/ only. No SKILL.md or live wiki/ edits."
   ]
 }

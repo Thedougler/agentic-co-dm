@@ -1,13 +1,13 @@
 {
   "skill_name": "city-design",
   "iteration": 1,
-  "rescore": "post-#145 assertion tighten (ae11c9c) @ branch evals/batch-a-rescore-pr145 tip d4e03b9+",
+  "rescore": "post-#151 session-beats adversarial uplift (5256033) @ branch evals/batch-a-crl-rescore-pr151 tip 103bc9d",
   "configurations": [
     {
       "name": "with_skill",
       "evals": [
         {
-          "eval_name": "Mercatura-improve",
+          "eval_name": "eval-1-Mercatura-improve",
           "assertions_passed": 8,
           "assertions_total": 8,
           "pass_rate": 1.0,
@@ -15,7 +15,7 @@
           "duration_seconds": 142.0
         },
         {
-          "eval_name": "Mercatura-resist-invent",
+          "eval_name": "eval-2-Mercatura-resist-invent",
           "assertions_passed": 4,
           "assertions_total": 4,
           "pass_rate": 1.0,
@@ -23,7 +23,7 @@
           "duration_seconds": 87.0
         },
         {
-          "eval_name": "saltspire-haven-from-scratch",
+          "eval_name": "eval-3-saltspire-haven-from-scratch",
           "assertions_passed": 6,
           "assertions_total": 6,
           "pass_rate": 1.0,
@@ -31,26 +31,74 @@
           "duration_seconds": 156.0
         },
         {
-          "eval_name": "calven-and-calveno-flesh",
+          "eval_name": "eval-4-calven-and-calveno-flesh",
           "assertions_passed": 11,
           "assertions_total": 11,
           "pass_rate": 1.0,
           "tokens": null,
           "duration_seconds": 178.0
+        },
+        {
+          "eval_name": "eval-5-Mercatura-resist-invent",
+          "assertions_passed": 5,
+          "assertions_total": 5,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 95.0
+        },
+        {
+          "eval_name": "eval-6-on-wiki-entities-place",
+          "assertions_passed": 5,
+          "assertions_total": 5,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 102.0
+        },
+        {
+          "eval_name": "eval-7-target-resist-invent",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 88.0
+        },
+        {
+          "eval_name": "eval-8-add-an-active-situation",
+          "assertions_passed": 5,
+          "assertions_total": 5,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 91.0
+        },
+        {
+          "eval_name": "eval-9-Mercatura-resist-invent",
+          "assertions_passed": 5,
+          "assertions_total": 5,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 84.0
+        },
+        {
+          "eval_name": "eval-10-calven-and-calveno-flesh",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 97.0
         }
       ],
       "aggregate": {
         "mean_pass_rate": 1.0,
         "stddev_pass_rate": 0.0,
         "mean_tokens": null,
-        "mean_duration_seconds": 140.8
+        "mean_duration_seconds": 112.0
       }
     },
     {
       "name": "without_skill",
       "evals": [
         {
-          "eval_name": "Mercatura-improve",
+          "eval_name": "eval-1-Mercatura-improve",
           "assertions_passed": 2,
           "assertions_total": 8,
           "pass_rate": 0.25,
@@ -58,7 +106,7 @@
           "duration_seconds": 98.0
         },
         {
-          "eval_name": "Mercatura-resist-invent",
+          "eval_name": "eval-2-Mercatura-resist-invent",
           "assertions_passed": 0,
           "assertions_total": 4,
           "pass_rate": 0.0,
@@ -66,7 +114,7 @@
           "duration_seconds": 72.0
         },
         {
-          "eval_name": "saltspire-haven-from-scratch",
+          "eval_name": "eval-3-saltspire-haven-from-scratch",
           "assertions_passed": 2,
           "assertions_total": 6,
           "pass_rate": 0.333,
@@ -74,35 +122,83 @@
           "duration_seconds": 81.0
         },
         {
-          "eval_name": "calven-and-calveno-flesh",
+          "eval_name": "eval-4-calven-and-calveno-flesh",
           "assertions_passed": 1,
           "assertions_total": 11,
           "pass_rate": 0.091,
           "tokens": null,
           "duration_seconds": 94.0
+        },
+        {
+          "eval_name": "eval-5-Mercatura-resist-invent",
+          "assertions_passed": 0,
+          "assertions_total": 5,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 68.0
+        },
+        {
+          "eval_name": "eval-6-on-wiki-entities-place",
+          "assertions_passed": 0,
+          "assertions_total": 5,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 71.0
+        },
+        {
+          "eval_name": "eval-7-target-resist-invent",
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 55.0
+        },
+        {
+          "eval_name": "eval-8-add-an-active-situation",
+          "assertions_passed": 0,
+          "assertions_total": 5,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 60.0
+        },
+        {
+          "eval_name": "eval-9-Mercatura-resist-invent",
+          "assertions_passed": 0,
+          "assertions_total": 5,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 48.0
+        },
+        {
+          "eval_name": "eval-10-calven-and-calveno-flesh",
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 58.0
         }
       ],
       "aggregate": {
-        "mean_pass_rate": 0.169,
-        "stddev_pass_rate": 0.13,
+        "mean_pass_rate": 0.067,
+        "stddev_pass_rate": 0.117,
         "mean_tokens": null,
-        "mean_duration_seconds": 86.2
+        "mean_duration_seconds": 70.5
       }
     }
   ],
   "delta": {
-    "pass_rate": "+83.1%",
+    "pass_rate": "+93.3%",
     "tokens": "n/a (total_tokens null)",
-    "duration": "+63.3%"
+    "duration": "+58.9%"
   },
   "analyst_observations": [
-    "Re-score after #145: with_skill mean pass rate 1.000 (success bar 1.000); without_skill 0.169.",
-    "Process asserts now require durable locus (process-notes.md / transcript.md); with_skill records identity sentence + work gate there; without_skill still omits them.",
-    "Structure+substance companions: with_skill fills Orientation \u22652 districts and Gazetteer; without_skill often still clears the floor (headings+some fill) \u2014 discrimination remains in process/guardrail/content.",
-    "Eval-2 resist-invent still sharpest discriminator (1.0 vs 0.0).",
-    "Eval-1 DM-thesis negative (must NOT be S1 Otar/Solange/bombs history) fails without_skill plague-arc thesis; with_skill pressure-forward function thesis passes.",
-    "Eval-4 split content asserts (5): with_skill 5/5; without_skill 0/5 \u2014 splitting removes all-or-nothing compound and still fully discriminates.",
-    "No new Author-blocking failures on with_skill; soft note: bare structure floor remains weak discriminator alone (both configs can pass).",
-    "Tokens unavailable (timing.total_tokens null). Soft lint / live vault completeness not graded; outputs under workspace */outputs/ only."
+    "Re-score after #151 (5256033): with_skill mean pass rate 1.000 (success bar 1.000); without_skill 0.067.",
+    "Suite expanded 4\u219210 evals with session-beats adversarial catalog (forced rail, PC civic fiat, secrets-in-Arrival, single-lever, skip-gate, combat-only).",
+    "Evals 1\u20134 craft/resist assertions unchanged from #145 \u2014 outputs carried forward and re-confirmed; all with_skill 1.0.",
+    "New evals 5\u201310: with_skill all 1.0 (refuse-shaped); without_skill all 0.0 \u2014 perfect adversarial discrimination.",
+    "Eval-2 + eval-5/8/9 Mercatura resists remain strongest city discriminators alongside Calven eval-6/7/10.",
+    "No new Author-blocking failures on with_skill across 10/10 evals.",
+    "Tokens unavailable (timing.total_tokens null). Soft lint / live vault completeness not graded; outputs under workspace */outputs/ only.",
+    "Bounds held: no SKILL.md edits; no live wiki/ writes; did not touch Batch B / main."
   ]
 }

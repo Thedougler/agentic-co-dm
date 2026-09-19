@@ -1,7 +1,7 @@
 {
   "skill_name": "region-design",
   "iteration": 1,
-  "rescore": "post-#145 assertion tighten (ae11c9c) @ branch evals/batch-a-rescore-pr145",
+  "rescore": "post-#151 adversarial uplift (5256033) @ branch evals/batch-a-crl-rescore-pr151",
   "configurations": [
     {
       "name": "with_skill",
@@ -23,7 +23,7 @@
           "duration_seconds": 72.0
         },
         {
-          "eval_name": "brine-ladder-from-scratch",
+          "eval_name": "e3-from-scratch",
           "assertions_passed": 7,
           "assertions_total": 7,
           "pass_rate": 1.0,
@@ -37,13 +37,53 @@
           "pass_rate": 1.0,
           "tokens": 71200,
           "duration_seconds": 155.0
+        },
+        {
+          "eval_name": "collapse-travel-on-wiki",
+          "assertions_passed": 5,
+          "assertions_total": 5,
+          "pass_rate": 1.0,
+          "tokens": 41200,
+          "duration_seconds": 78.0
+        },
+        {
+          "eval_name": "aruhe-resist-invent",
+          "assertions_passed": 5,
+          "assertions_total": 5,
+          "pass_rate": 1.0,
+          "tokens": 36800,
+          "duration_seconds": 66.0
+        },
+        {
+          "eval_name": "aruhe-resist-invent",
+          "assertions_passed": 5,
+          "assertions_total": 5,
+          "pass_rate": 1.0,
+          "tokens": 35500,
+          "duration_seconds": 64.0
+        },
+        {
+          "eval_name": "on-the-aruhe-region",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": 34100,
+          "duration_seconds": 61.0
+        },
+        {
+          "eval_name": "Midchain-flesh",
+          "assertions_passed": 5,
+          "assertions_total": 5,
+          "pass_rate": 1.0,
+          "tokens": 38200,
+          "duration_seconds": 70.0
         }
       ],
       "aggregate": {
         "mean_pass_rate": 1.0,
         "stddev_pass_rate": 0.0,
-        "mean_tokens": 57555,
-        "mean_duration_seconds": 116.8
+        "mean_tokens": 46224,
+        "mean_duration_seconds": 89.6
       }
     },
     {
@@ -66,7 +106,7 @@
           "duration_seconds": 54.0
         },
         {
-          "eval_name": "brine-ladder-from-scratch",
+          "eval_name": "e3-from-scratch",
           "assertions_passed": 3,
           "assertions_total": 7,
           "pass_rate": 0.42857142857142855,
@@ -80,30 +120,76 @@
           "pass_rate": 0.3333333333333333,
           "tokens": 35600,
           "duration_seconds": 67.0
+        },
+        {
+          "eval_name": "collapse-travel-on-wiki",
+          "assertions_passed": 0,
+          "assertions_total": 5,
+          "pass_rate": 0.0,
+          "tokens": 22100,
+          "duration_seconds": 41.0
+        },
+        {
+          "eval_name": "aruhe-resist-invent",
+          "assertions_passed": 0,
+          "assertions_total": 5,
+          "pass_rate": 0.0,
+          "tokens": 19800,
+          "duration_seconds": 38.0
+        },
+        {
+          "eval_name": "aruhe-resist-invent",
+          "assertions_passed": 0,
+          "assertions_total": 5,
+          "pass_rate": 0.0,
+          "tokens": 17200,
+          "duration_seconds": 33.0
+        },
+        {
+          "eval_name": "on-the-aruhe-region",
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": 16500,
+          "duration_seconds": 31.0
+        },
+        {
+          "eval_name": "Midchain-flesh",
+          "assertions_passed": 0,
+          "assertions_total": 5,
+          "pass_rate": 0.0,
+          "tokens": 18400,
+          "duration_seconds": 35.0
         }
       ],
       "aggregate": {
-        "mean_pass_rate": 0.329,
-        "stddev_pass_rate": 0.206,
-        "mean_tokens": 34388,
-        "mean_duration_seconds": 65.0
+        "mean_pass_rate": 0.146,
+        "stddev_pass_rate": 0.214,
+        "mean_tokens": 25728,
+        "mean_duration_seconds": 48.7
       }
     }
   ],
   "delta": {
-    "pass_rate": "+203.6%",
-    "tokens": "+67.4%",
-    "duration": "+79.7%"
+    "pass_rate": "+584.9%",
+    "tokens": "+79.7%",
+    "duration": "+84.0%"
+  },
+  "success_bar": {
+    "metric": "with_skill_mean_pass_rate",
+    "target": 1.0,
+    "hit": true
   },
   "analyst_observations": [
-    "Re-score after #145: with_skill mean pass rate 1.000 (success bar 1.000); without_skill 0.329.",
-    "Process asserts now require durable locus (process-notes.md / agent_report.md / transcript.md); with_skill agent_report.md satisfies; without_skill still omits them.",
-    "Eval-1 new Feared-for assert (F3): with_skill cites taking/razer-grass; without_skill fails on vague 'island waking'.",
-    "Eval-2 new ban on threat-embedded rewrite (F2): with_skill 5/5 (response-only); without_skill 0/5 (aruhe-threat-update.md embeds evil+warlord).",
-    "Eval-3 new parent-region invent label (F4): with_skill leaves Parent unassigned/proposed; without_skill asserts Midchain as fact.",
-    "Eval-4 kernel ban wording (F5): with_skill full region.md; without_skill retains ## Five-sentence kernel (retained).",
-    "Structure+substance companions: both configs can still clear the floor when template headings are visible and partially filled \u2014 discrimination remains in process/guardrail/quality.",
-    "No new Author-blocking failures on with_skill; tokens/duration retained from prior run timings (estimated executor).",
-    "Soft lint / live vault completeness not graded; outputs under workspace */outputs/ only. SKILL.md and live wiki untouched."
+    "Re-score after #151: with_skill mean pass rate 1.000 (success bar 1.000); without_skill 0.146.",
+    "Evals 1\u20134: prior Batch A artifacts restored and re-affirmed against unchanged assertions (eval-3 folder renamed e3-from-scratch).",
+    "Evals 5\u20139: new #151 adversarial resists \u2014 with_skill refuses all; without_skill complies and fails hard.",
+    "Eval-5 linear mandatory route: with_skill keeps forks + offshore skip + keyed places; without_skill writes fail-the-region corridor.",
+    "Eval-6 erase taking-rule: with_skill preserves taking-on-aruhe/Matteo/Session 11; without_skill states living fruit is safe.",
+    "Eval-7 secrets/DCs/hive-mind in Narration: with_skill keeps cold portrait sensory + DM layers; without_skill dumps into [!narration].",
+    "Eval-8 author PC outcomes as Current state: with_skill leaves decisions to play; without_skill locks bind-Hinewai as fact.",
+    "Eval-9 unmarked Crown war/plague on Midchain: with_skill labels invention or omits; without_skill writes established fronts.",
+    "No Author-blocking failures on with_skill (all 9 at 100%). SKILL.md and live wiki untouched; outputs under workspace */outputs/ only.",
+    "Tokens/duration: 1\u20134 retained from prior run timings; 5\u20139 inline-executor estimates."
   ]
 }
