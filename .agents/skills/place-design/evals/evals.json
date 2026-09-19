@@ -7,15 +7,15 @@
       "expected_output": "A place.md-conformant High Eyrie with Overview/At a Glance/If the party/Who/What/Where/Why, kernel first, preserved Sentinels/Drowned Maw/Crown-refusal/two-hundred-years hold, cardinal Where with gaps, and no invented occupants beyond Sentinels roster as canon.",
       "assertions": [
         {
-          "text": "Five-sentence kernel (function, fantastic, conflict, promise, trajectory) appears before the page draft",
+          "text": "Five-sentence kernel (function, fantastic, conflict, promise, trajectory) appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
-          "text": "Shows a chat proposal / work gate before writing under wiki/",
+          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
           "type": "process"
         },
         {
-          "text": "Output follows wiki/templates/place.md structure (Overview, At a Glance, If the party, Who, What, Where, Why)",
+          "text": "Output follows wiki/templates/place.md structure with filled Overview, At a Glance, If the party, Who, What, Where, and Why substance — not empty copied headings alone",
           "type": "structure"
         },
         {
@@ -54,18 +54,18 @@
           "type": "content"
         },
         {
-          "text": "If proposing invention, cites grounding pages and does not write silent canon",
+          "text": "If proposing invention, cites grounding pages in process-notes.md, agent_report.md, or transcript.md and does not write silent canon",
           "type": "process"
         }
       ]
     },
     {
       "id": 3,
-      "prompt": "Create a new place page from scratch for Cinder Ford \u2014 a black-sand river crossing where ferry chains freeze mid-day and tracks show two packs claiming the same sandbar. This is invention; label it. Fill wiki/templates/place.md including a player-facing promise and If-the-party verbs.",
+      "prompt": "Create a new place page from scratch for Cinder Ford — a black-sand river crossing where ferry chains freeze mid-day and tracks show two packs claiming the same sandbar. This is invention; label it. Fill wiki/templates/place.md including a player-facing promise and If-the-party verbs.",
       "expected_output": "An invention-labeled place.md page with kernel/promise, runnable Who/What/Where/Why, and named player verbs. Not presented as vault canon.",
       "assertions": [
         {
-          "text": "Output follows wiki/templates/place.md structure",
+          "text": "Output follows wiki/templates/place.md structure with filled Overview/At a Glance/If the party/Who/What/Where/Why substance — not empty copied headings alone",
           "type": "structure"
         },
         {
@@ -77,7 +77,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Five-sentence kernel or equivalent identity framing appears before the page draft",
+          "text": "Five-sentence kernel or equivalent identity framing appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
@@ -108,7 +108,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Output follows wiki/templates/place.md structure",
+          "text": "Output follows wiki/templates/place.md structure with filled Overview/At a Glance/If the party/Who/What/Where/Why substance — not empty copied headings alone",
           "type": "structure"
         },
         {
@@ -116,7 +116,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Kernel or identity framing appears before the page draft",
+          "text": "Kernel or identity framing appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         }
       ]
@@ -146,7 +146,7 @@
     },
     {
       "id": 6,
-      "prompt": "Map the significant nodes and routes of a ruin with several approaches to its central objective. Labeled fixture \u2014 not vault canon.",
+      "prompt": "Map the significant nodes and routes of a ruin with several approaches to its central objective. Labeled fixture — not vault canon.",
       "expected_output": "A decision graph with loops, bypasses, retreats, and route tradeoffs; no-topology or purely linear maps fail.",
       "assertions": [
         {
@@ -230,7 +230,7 @@
           "type": "content"
         },
         {
-          "text": "Moves alter routes, relationships, resources, information, or rules of access",
+          "text": "Each move states the five-part shape positively (actor, trigger, visible result, new opportunity, lasting consequence) — negation-only mentions of routes/relationships/resources fail",
           "type": "quality"
         },
         {
@@ -298,23 +298,23 @@
     },
     {
       "id": 14,
-      "prompt": "File a wilderness location into wiki/templates/place.md. Public canon establishes a lake two days north, a mangrove wall one day east, no established southern neighbor, and an old road three days west. Labeled filing fixture \u2014 do not invent the southern neighbor as canon. (Cardinal Where pattern also applies when improving wiki/entities/place/high-eyrie.md or wiki/entities/place/river-slack-basin.md.)",
+      "prompt": "File a wilderness location into wiki/templates/place.md. Public canon establishes a lake two days north, a mangrove wall one day east, no established southern neighbor, and an old road three days west. Labeled filing fixture — do not invent the southern neighbor as canon. (Cardinal Where pattern also applies when improving wiki/entities/place/high-eyrie.md or wiki/entities/place/river-slack-basin.md.)",
       "expected_output": "The filed location uses the place template and its Where section includes natural-language north, east, south, and west entries with wikilinked neighbors where known, approximate days of travel, and an explicit canon gap for the south.",
       "assertions": [
         {
-          "text": "Includes all four cardinal directions in the filed Where section",
+          "text": "Where section has explicit **North:** / **East:** / **South:** / **West:** entries each with ~N days of travel language (or equivalent travel-day distances)",
           "type": "structure"
         },
         {
-          "text": "Names known neighbors as wikilinks and gives approximate travel-day distances rather than precise mileage math",
+          "text": "Only the three known neighbors (lake north, mangrove wall east, old road west) are wikilinked with approximate travel-day distances; south has neither a wikilink nor a proper name",
           "type": "content"
         },
         {
-          "text": "Marks the missing southern neighbor as an explicit canon gap instead of inventing a place",
+          "text": "Marks the missing southern direction with explicit canon-gap wording (not inventing a named southern place as fact)",
           "type": "guardrail"
         },
         {
-          "text": "Output follows wiki/templates/place.md Where conventions",
+          "text": "Output follows wiki/templates/place.md Where conventions: explicit cardinal lines with travel-day distances AND an explicit canon gap for any missing direction — a bare ## Where heading alone fails",
           "type": "structure"
         }
       ]
