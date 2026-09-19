@@ -4189,6 +4189,7 @@
   "/home/box/agentic-co-dm/wiki/_raw/murrats-shroud-kets-warning.md": {
     "pages_produced": [
       "entities/npc/Ket.md",
+      "entities/place/Murrat.md",
       "entities/Ket's Warning.md"
     ],
     "content_hash": "sha256:efc035a7c3b546203e7c691cdd76f7b5f83c4f5377e8a80f123ac8682e4c656c",
@@ -4208,12 +4209,13 @@
     "source_type": "document"
   },
   "/home/box/agentic-co-dm/wiki/_raw/murrats-shroud-the-cloud-resolves.md": {
+    "pages_produced": [
+      "entities/place/Murrat.md",
+      "entities/The Cloud Resolves.md"
+    ],
     "content_hash": "sha256:fd64013d76ceac80b823febe9442c5b791b43ac588b468a6af0977e72bbd7fe8",
     "last_ingested": "2026-09-13T20:20:43Z",
     "packet": "ingest-raw-2026-09-13-gh-2",
-    "pages_produced": [
-      "entities/The Cloud Resolves.md"
-    ],
     "project": "shattered-sea",
     "source_type": "document"
   },
@@ -7277,7 +7279,7 @@
     "project": "shattered-sea",
     "source_type": "document"
   },
-  "last_updated": "2026-09-19T22:47:40Z",
+  "last_updated": "2026-09-19T22:52:27Z",
   "page_identity_transitions": [
     {
       "page_path": "entities/faction/Khlysty.md",
@@ -8433,7 +8435,7 @@
   },
   "stats": {
     "packet_ingest-raw-2026-09-13-gh-2": 515,
-    "total_pages": 756,
+    "total_pages": 757,
     "total_sources_ingested": 819
   },
   "version": 1

@@ -56,19 +56,45 @@ No snippets in the default object.
 | Field | Type | Notes |
 |---|---|---|
 | `status` | `clean` \| `findings` \| `error` | Align with lint when live lint is not clean |
-| `pages` | int | Live markdown page count |
-| `bytes` | int | Live page bytes |
+| `pages` | int | Live markdown page count (path-scoped) |
+| `bytes` | int | Live page bytes (path-scoped) |
 | `tokens` | int \| null | tiktoken via existing token-count helper |
-| `lint` | Worklist without `findings` | Same cache as `wiki lint` |
+| `lint` | Worklist without `findings` | Same cache as `wiki lint`; path-scoped |
 | `waste` | object | Layer A A2 metrics (hits, hard_hits) |
 | `staging` | `{leftover_count}` | `_raw` leftovers |
 | `remorph` | `{plan_count, skip_count, error_count}` | A6 dry-run counts |
 | `policy` | `{ok, conflict_count}` | Existing policy check |
 | `cache` | same as worklist.cache | May live on `lint.cache` only; top-level allowed if identical |
+| `trends` | Trends | Whole-tracker; empty/zero if files missing |
+| `focus` | Focus item[] | Ordered, cap 5; present even if empty |
+| `next` | Focus item \| null | `focus[0]` or null |
 
-MUST NOT include per-step essays or a full findings dump.
+MUST NOT include per-step essays, a full findings dump, raw sittings, or raw traces.
 
 `scripts/wiki-maintain --report` emits this same object.
+
+Path arguments scope `pages` / `bytes` / `tokens` / `lint` / `focus`. `trends` is always whole-tracker.
+
+## Trends
+
+| Field | Type | Notes |
+|---|---|---|
+| `sittings` | `{count, by_kind}` | `by_kind` counts `prep` / `wrapup`; missing file → `count` 0 |
+| `skills` | `{name, sittings}[]` | Top 5 skill names from sitting `skills_loaded`; empty list if none |
+| `errors` | `{open_count, causes}` | Open ledger only; `causes` is `{cause, count}[]` cap 3 |
+| `efficiency` | object | Subset of `efficiency-trace report`: `records`, `trajectory_tokens` (int), `retrieval_queries` (int), `hard_gate_failure_rate` (number), `dm_acceptance_rate` (number). Missing traces → `records` 0 and the rest 0 |
+
+Do not embed the full efficiency report or sitting rows.
+
+## Focus item
+
+| Field | Type | Notes |
+|---|---|---|
+| `path` | string | Vault-relative file or prefix |
+| `reason` | string | One objective line; existing rule, remorph/layout plan reason, or tracker name |
+| `source` | `lint` \| `remorph` \| `layout` \| `tracker` | |
+
+Fill order (skip empty sources): lint `next_page`, first remorph plan `src`, first remaining layout/remorph prefix already in that plan, first open-error sitting path that is vault-relative. Never invent trees.
 
 ## Checker cache
 
@@ -97,10 +123,17 @@ Invalidation: content change, config_digest change, path add/delete/rename (miss
 ## State transitions
 
 ```text
-lint/health:
+lint:
   invoke → resolve vault → resolve paths (fail closed)
         → load cache → run/reuse checkers → rebuild corpus
         → worklist → emit → exit 0|1|2
+
+health:
+  invoke → resolve vault → resolve paths (fail closed)
+        → same lint path (no findings dump)
+        → Layer A numbers (no steps essays)
+        → read sittings/errors/traces (empty ok)
+        → trends + focus + next → emit → exit 0|1|2
 
 query:
   invoke → unset CI → qmd query → compact hits → emit → exit 0|2

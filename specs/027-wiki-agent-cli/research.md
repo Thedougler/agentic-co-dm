@@ -3,9 +3,9 @@
 ```text
 work_class: engineering
 route: full-sdd
-reason: new public wiki command and default result contract; FR-018 instruction updates ship in the same change
-context_used: specs/027-wiki-agent-cli/spec.md, constitution, tools/wiki_ops/cli.py, scripts/wiki-lint, scripts/wiki-maintain, tools/lint_wiki.py, tools/wiki_ops/scope.py, qmd query --help, .agents/skills/wiki-lint/SKILL.md, .agents/skills/wiki-query/SKILL.md, tests/test_wiki_ops.py
-context_omitted: creative-lint hydra internals, identity-resolution intelligence, Foundry, campaign wiki pages
+reason: new public wiki command and default result contract; FR-018 instruction updates (including health → next) ship in the same change
+context_used: specs/027-wiki-agent-cli/spec.md, constitution, tools/wiki_ops/cli.py, scripts/wiki-lint, scripts/wiki-maintain, tools/lint_wiki.py, tools/wiki_ops/scope.py, qmd query --help, scripts/error-ledger.py, scripts/efficiency-trace.py, config/efficiency.yaml, sittings.jsonl schema, docs/agents/wiki-maintenance-loop.md, .agents/skills/wiki-lint/SKILL.md, .agents/skills/wiki-query/SKILL.md, tests/test_wiki_ops.py
+context_omitted: creative-lint hydra internals, identity-resolution intelligence, Foundry, campaign wiki pages, efficiency promote/canary path
 ```
 
 ## 1. One `wiki` dispatcher
@@ -58,13 +58,13 @@ context_omitted: creative-lint hydra internals, identity-resolution intelligence
 
 **Alternatives considered:** Call wiki-query skill steps (graph-query, grep, multi-hop) — out of scope. `qmd search` (BM25, no LLM) — spec says retrieval, which is `query`.
 
-## 7. Health and alias
+## 7. Health snapshot (compose, no second counter)
 
-**Decision:** `wiki health` is one snapshot: live lint worklist (same cache, no findings dump) plus inventory (`pages`, `bytes`, `tokens`) plus Layer A stats already computed in `scripts/wiki-maintain` (waste, `_raw` leftovers, remorph plan counts, policy). `scripts/wiki-maintain --report` becomes an alias of that snapshot (same object, not a second counter). Exit 0/1/2 per FR-006 (today `--report` exits 0 whenever JSON is produced).
+**Decision:** `wiki health` is one snapshot: live lint worklist (same cache, no findings dump) plus inventory (`pages`, `bytes`, `tokens`) plus Layer A stats already computed in `scripts/wiki-maintain` (waste, `_raw` leftovers, remorph plan counts, policy) plus compact `trends` from existing trackers plus ordered `focus` and `next`. `scripts/wiki-maintain --report` becomes an alias of that snapshot (same object, not a second counter). Exit 0/1/2 per FR-006 (today `--report` exits 0 whenever JSON is produced).
 
-**Rationale:** Spec FR-014/FR-015/SC-005. Current report is a per-step essay (`steps.A1`…`A6`). Promote numbers; drop essays from the default object.
+**Rationale:** Spec FR-014/FR-015/FR-019/SC-005. Current report is a per-step essay (`steps.A1`…`A6`). Promote numbers; drop essays from the default object.
 
-**Alternatives considered:** Keep full `steps` tree and add a summary — still essays. New health counter beside `--report` — spec forbids.
+**Alternatives considered:** Keep full `steps` tree and add a summary — still essays. New health counter beside `--report` — spec forbids. Dump raw sittings/traces — spec forbids.
 
 ## 8. Exit codes and errors
 
@@ -76,16 +76,51 @@ context_omitted: creative-lint hydra internals, identity-resolution intelligence
 
 ## 9. Agent instructions
 
-**Decision:** Update documented lint/query/health invocations to `scripts/wiki` and the worklist contract: `.agents/skills/wiki-lint/SKILL.md` (+ evals that pin `./scripts/wiki-lint --json`), standing examples in `AGENTS.md` / `.omp/AGENTS.md` that tell agents to run wiki-lint or qmd query for lint/health. wiki-query skill keeps synthesis; retrieval default examples that are “run this CLI” point at `wiki query`. Creative hydra docs stay on `scripts/wiki-lint`.
+**Decision:** Update documented lint/query/health invocations to `scripts/wiki` and the worklist/health contract: `.agents/skills/wiki-lint/SKILL.md` (+ evals that pin `./scripts/wiki-lint --json`), wiki-status/wiki-lint standing examples in `AGENTS.md` / `.omp/AGENTS.md`. Health instructions: run `scripts/wiki health`, then act on `next` (then remaining `focus`) without waiting for the DM. wiki-query skill keeps synthesis; retrieval default examples that are “run this CLI” point at `wiki query`. Creative hydra docs stay on `scripts/wiki-lint`.
 
-**Rationale:** FR-018. Duplicate old command strings are waste (IX).
+**Rationale:** FR-018/SC-009. Small agents (Luna/Haiku class) must not need extra interpretation.
 
-**Alternatives considered:** Leave skills and hope agents discover `--help` — SC-008 fails.
+**Alternatives considered:** Leave skills and hope agents discover `--help` — SC-008/SC-009 fail.
 
 ## 10. Tests
 
-**Decision:** pytest against temp vaults (existing `test_wiki_ops.py` pattern) for path fail-closed, worklist keys, single-file findings, `--full`, cache hits, `--pretty` vs default, health alias equality. One live-wiki size check for SC-002 (~100-page prefix < 8 KB). Cold-context smol subject for SC-008. Do not rewrite creative-lint tests.
+**Decision:** pytest against temp vaults (existing `test_wiki_ops.py` pattern) for path fail-closed, worklist keys, single-file findings, `--full`, cache hits, `--pretty` vs default, health alias equality, empty-tracker trends, `focus`/`next` ordering, no invented layout paths. One live-wiki size check for SC-002 (~100-page prefix < 8 KB). Cold-context smol subject for SC-008 and SC-009. Do not rewrite creative-lint tests.
 
 **Rationale:** Constitution IV/XXIII. `scripts/wiki-lint` tests remain the old surface.
 
 **Alternatives considered:** Fixture-only Vale cache tests without a second run — cannot prove SC-003.
+
+## 11. Health trends (existing trackers)
+
+**Decision:** Compose compact aggregates; do not add a health-only window or a new telemetry store.
+
+Sources (read-only):
+
+- `sittings.jsonl` via `scripts/error-ledger.py sitting list` (repo root)
+- `errors.md` via `error list` (open entries only)
+- `.local/efficiency/traces.jsonl` via `scripts/efficiency-trace.py report` (retention already 90 days in `config/efficiency.yaml`)
+
+Compact `trends` keys (see data-model): sitting counts by kind; top skills by sitting count (cap 5); open error count + top causes (cap 3); efficiency `records`, `trajectory_tokens.value`, `retrieval.queries.value`, `hard_gate_failure_rate.value`, `dm_acceptance_rate.value`. Missing files → empty/zero aggregates, health still succeeds.
+
+Path args scope live lint, inventory, and `focus`. Trends stay whole-tracker.
+
+**Rationale:** Clarify session 2026-09-19. Trackers already exist; health is the agent surface.
+
+**Alternatives considered:** Last-7-days window — new policy. Full efficiency report object — too large for small agents. Fail health when traces missing — invents a precondition the trackers do not require.
+
+## 12. Focus and next
+
+**Decision:** `focus` is a bounded ordered array (cap 5). Each item: `path`, `reason` (one line, existing rule/plan/tracker name), `source` (`lint` | `remorph` | `layout` | `tracker`). `next` is `focus[0]` or null.
+
+Fill order (skip a source if empty):
+
+1. `lint` — worklist `next_page` / first backlog page
+2. `remorph` — first existing remorph plan `src` from Layer A A6 (filename kebab / greenlit remorph only)
+3. `layout` — first remaining remorph/layout plan path that is a directory-prefix or layout-kind move already in that plan (not a new tree)
+4. `tracker` — first open error `sitting` path if it names a vault-relative file; else omit
+
+Do not invent folder trees. No remorph/layout plan → those sources absent. `--pretty` prints `next` then the `focus` list.
+
+**Rationale:** FR-019/SC-009. Cap 5 is the plan bound (clarify left the number open; `next` is the one action).
+
+**Alternatives considered:** Free-prose advice — spec forbids. Pretty-only focus — small agents load default JSON. Command pointers with no paths — SC-009 fails.

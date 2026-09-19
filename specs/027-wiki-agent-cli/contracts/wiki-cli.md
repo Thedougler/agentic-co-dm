@@ -50,7 +50,9 @@ Exactly one existing file argument: add `findings` as a flat list of `{rule, fil
 
 ### Health
 
-One snapshot: `pages`, `bytes`, `tokens`, live lint worklist (no findings dump), waste / staging / remorph / policy metrics. See [data-model.md](../data-model.md).
+One snapshot: `pages`, `bytes`, `tokens`, live lint worklist (no findings dump), waste / staging / remorph / policy, `trends`, ordered `focus` (cap 5), `next`. See [data-model.md](../data-model.md).
+
+Missing sittings/errors/traces → zero/empty `trends`, still exit 0 or 1 from lint/Layer A — not exit 2.
 
 ## `--pretty`
 
@@ -59,7 +61,7 @@ One snapshot: `pages`, `bytes`, `tokens`, live lint worklist (no findings dump),
 | lint | Scoreboard of counts / next_page / cache. Findings in scope: `file:line  RULE  message` |
 | lint `--pretty --full` | Human findings list, not indented JSON |
 | query | One hit per line: `path  title  id` |
-| health | Short scoreboard (pages, bytes, tokens, lint hard total, quiet-relevant counts) |
+| health | Short scoreboard (pages, bytes, tokens, lint hard total, quiet-relevant counts) then `next.path` and the `focus` list (`path  source  reason`) |
 
 Pretty usage errors: one line on stderr, exit 2.
 
@@ -68,5 +70,4 @@ Pretty usage errors: one line on stderr, exit 2.
 Stdout: `{"error":"<message>","status":"error"}` exit 2.
 
 ## Non-goals this sitting
-
-TTY format forks. Identity-resolution intelligence inside lint. Migrating the creative hydra. A second health counter.
+TTY format forks. Identity-resolution intelligence inside lint. Migrating the creative hydra. A second health counter. Inventing vault folder trees.
