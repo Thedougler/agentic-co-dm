@@ -15,7 +15,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T07:50:00Z
-updated: 2026-09-13
+updated: 2026-09-18
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -30,9 +30,9 @@ relationships:
 
 *(This is a different character from [[Enzo]], despite the name similarity. W17 flag resolved, canon-review 2026-07-14.)*
 
-[[nona-black-jaw|Nona]]'s late husband. He built the [[Vestra]] and captained her across the [[Midchain]] for decades before he died, leaving the ship to the family. It passed to [[perrin-black-jaw]].
+[[nona-black-jaw|Nona]]'s late husband. He built the [[Vestra]] and captained her across the [[Midchain]] for decades before he died. The ship then passed to the family, and later to [[perrin-black-jaw]].
 
-Nona speaks of him constantly. His chair at family meals stays empty. Nobody sits in it.
+Nona speaks of him constantly. His chair at family meals is empty. Nobody sits in it.
 
 **Quote:** *"My Vincenzo was a beautiful idiot. We fought and loved with equal fury, constantly. I smashed four frying pans on that stubborn old fool. Four of them! But he was my Vincenzo. Gods rest his soul."*
 

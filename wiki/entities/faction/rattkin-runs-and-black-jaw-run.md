@@ -6,7 +6,7 @@ category: entities
 tags: [shattered-sea, faction]
 sources:
   - "Rattkin Runs and Black-Jaw Run.md"
-summary: "Rattkin family Runs that move people by coded trust; Nona and Perrin Black-Jaw are the visible faces."
+summary: "Rattkin family Runs that move people by coded trust. Nona and Perrin Black-Jaw are the visible faces."
 provenance:
   extracted: 0.95
   inferred: 0.05
@@ -16,7 +16,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T20:15:00Z
-updated: 2026-09-13T20:15:00Z
+updated: 2026-09-18
 type: faction
 reveal: unrevealed
 campaign: shattered-sea
@@ -36,28 +36,42 @@ relationships:
 > [!narration] Narration
 > The Rattkin Runs and Black-Jaw Run keep Rattkin families connected and alive. Family Runs, couriers, ships, and community obligations carry people through routes governed by coded trust.
 
-## Public face
+## At a Glance
 
-Keep Rattkin families connected and alive through family Runs, couriers, ships, and community obligations.
+This page is the wider network of Rattkin family Runs. [[the-black-jaw-run]] is the Calveno family that currently shows that network to the party.
 
-## DM thesis
+Public work is keeping Rattkin families connected and alive through family Runs, couriers, ships, and community obligations.
 
-Preserve the [[Tangle]]'s elder teachings and resist being priced out of every system, even when that means refusing a route that would help in the short term.
+**DM thesis.** Preserve the [[Tangle]]'s elder teachings and resist being priced out of every system, even when that means refusing a route that would help in the short term.
 
-## Current state
+## At the Table
 
-Under pressure, the Run moves people first, asks for proof through coded trust, and protects the teaching that makes the route more than transport. [[nona-black-jaw]] is the family face; [[perrin-black-jaw]] is the operative and successor. The crew's rescue of raid survivors ties them to the family and route network.
+They want the Tangle's elder teachings intact, and they refuse to be priced out of the routes that make those teachings usable.
 
-## Active agenda
+They offer family Runs, couriers, ships, and community obligations that carry people by coded trust.
+
+They will not replace one authority with another. [[the-taken-314]] is the live case of that limit.
+
+The party is an ally through Perrin's assignment.
+
+## Current State
+
+Under pressure, the Run moves people first. It asks for proof through coded trust. It also protects the elder lessons that make the route more than transport. [[nona-black-jaw]] is the family face. [[perrin-black-jaw]] is the operative and successor. The crew's rescue of raid survivors ties them to the family and route network.
+
+## Active Agenda
 
 [[the-taken-314]]: the Run can move people without replacing one authority with another.
 
-## Assets, people, places, relationships
+## Assets
 
-- Resources: the [[Warren]], [[Vestra]]'s legacy, courier ties, and family obligations that keep the Runs legible to one another.
+Resources include the [[Warren]], [[Vestra]]'s legacy, courier ties, and family obligations that make the Runs readable to one another.
+
+## People & Structure
+
+- [[nona-black-jaw]] is the family face.
+- [[perrin-black-jaw]] is the operative and successor.
 - Ally: [[Passage]]
 - Complicated: [[dravosi-crown]]
-- Party: ally through Perrin's assignment
 
 ## Connections
 
@@ -67,3 +81,12 @@ Under pressure, the Run moves people first, asks for proof through coded trust, 
 - [[Tangle]]
 - [[Warren]]
 - [[Vestra]]
+- [[the-black-jaw-run]]
+
+## Running the Faction
+
+When the Run is under pressure, it moves people first and asks for proof through coded trust before it opens a route.
+
+When the party helps, family obligations and courier ties make the next Run readable.
+
+When opposed, it refuses a route that would help in the short term if that route prices the network out of the Tangle's lessons.

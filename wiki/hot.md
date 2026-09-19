@@ -1,8 +1,10 @@
 ---
-updated: 2026-09-18T09:12:44Z
+updated: 2026-09-19T02:53:49Z
 ---
 ## Recent Activity
+- Scoped lint repair for [[Rattkin]] and supporting files: [[rattkin-culture]], [[rattkin-runs-and-black-jaw-run]], [[the-black-jaw-run]], [[Warren]], [[nona-black-jaw]], [[vincenzo-black-jaw]], [[essa-two-tooth]], and minted [[low-lamp]]. Identity resolved. Cluster lint is clean.
 Committed 34 staged pages: 15 new pages and 19 updates, including Session 12 preparation and Aruhe entity updates.
+- Scoped lint repair for the Umberlee cluster: identity resolved. [[bring-the-pearl-of-souls-to-umberlee]] and [[pearl-signal-across-the-boundary]] are distinct quests. Tithe item digested into [[the-tithe-of-the-bitch-queen]]. Cluster lint is clean.
 - Scoped lint repair for [[simone-tabarnack]]: resolved five broken links, one disallowed callout, and 25 Vale findings; the page now passes structural, template, and Vale checks.
 - Scoped lint repair for [[fisks-fleet]] and its five captain pages: all six pages now pass structural, template, and Vale checks; operational index summaries are synchronized.
 - Retconned [[Osset]] as Talon Vantyrus's original name; Talon Vantyrus is the alias he now uses as leader of [[Countless]].

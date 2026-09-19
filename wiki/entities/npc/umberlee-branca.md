@@ -21,7 +21,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T20:50:00Z
-updated: 2026-09-13T20:50:00Z
+updated: 2026-09-18
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -29,7 +29,7 @@ visibility: dm
 ---
 # Umberlee - Branca
 
-[[umberlee-branca]] is a senior Calveno [[Waveservants|Waveservant]] and appointment-keeper. Through her, [[Umberlee]] commanded: Bring me the pearl. Then we will talk about the commissioners.
+[[umberlee-branca]] is a senior Calveno [[Waveservants|Waveservant]] and appointment-keeper. Through her, [[Umberlee]] commanded her to bring the pearl. Then they would talk about the commissioners.
 
 ## Connections
 

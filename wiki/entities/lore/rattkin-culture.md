@@ -7,7 +7,7 @@ tags: [shattered-sea, lore]
 sources:
   - "campaign-os:rattkin-culture.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-18
 type: lore
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
@@ -28,7 +28,7 @@ tier: supporting
 
 ## The Culture
 
-Small humanoids calibrated for getting into places they are not supposed to be. A locked cargo hold is a delay, and a drainage pipe is simply a road; give a Rattkin crew a ship's bilge and it becomes a neighborhood.
+Small humanoids calibrated for getting into places they are not supposed to be. A locked cargo hold is a delay, and a drainage pipe is simply a road. Give a Rattkin crew a ship's bilge and it becomes a neighborhood.
 
 [[Rattkin]] are the oldest continuous presence in every major [[shattered-sea]] port. Their fixed origin point is [[Warren|the Warren]], and their living network is [[the-passage]]. [[perrin-black-jaw]] is a fancy-rat Rattkin PC from the [[calven-and-calveno]] Run.
 

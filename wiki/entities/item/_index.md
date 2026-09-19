@@ -131,7 +131,6 @@ updated: 2026-09-17
 - [[entities/item/the-snap|The Snap]]
 - [[entities/item/the-struck-match|The Struck Match]]
 - [[entities/item/the-understudy|The Understudy]]
-- [[entities/item/tithe-of-the-bitch-queen|Tithe of the Bitch Queen]]
 - [[entities/item/unclaimed-delicacy-tin|Unclaimed Delicacy Tin]]
 - [[entities/item/venom-cut-poultice|Venom-Cut Poultice]]
 - [[entities/item/vial-of-predator-musk|Vial of Predator Musk]]

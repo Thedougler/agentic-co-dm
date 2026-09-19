@@ -20,7 +20,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T21:00:00Z
-updated: 2026-09-13
+updated: 2026-09-18
 type: faction
 reveal: unrevealed
 campaign: shattered-sea
@@ -39,33 +39,56 @@ relationships:
 ---
 # Waveservants
 
-> [!narration] Narration
-> Salt-bleached grey clothing, a basin by the quay, wind-defying candles, and a little booklet make the ritual ordinary. A blessing is a receipt, not a promise of safe return.
+> [!narration] Public face
+> Salt-bleached grey clothing, a basin by the quay, wind-defying candles, and a little booklet make the ritual ordinary. A blessing is a receipt. It records payment.
 
-## Public face
+## At a Glance
 
-The Waveservants collect the respect owed to [[Umberlee]] at working harbours. Same rate for merchant, pirate, navy, smuggler, and pilgrim. Coin is easiest; rope, fish bones, buttons, compass needle, carved token, or spoken promise will do. A person with a booklet would rather write a name and debt than preach. Neutrality is not a creed: taking sides would stop collection from half the harbour, so neutrality is how the work stays possible.
+| | |
+| --- | --- |
+| **Nature** | Harbour clergy of [[Umberlee]] |
+| **Scope** | Regional, at working harbours |
+| **Base** | Quay basins and ledgers. Hidden shrine at [[vel-orn]] |
+| **Leader** | Harbour seniors. Calveno face [[umberlee-branca]] |
+| **Public purpose** | Collect the same tribute rate from every flag |
+| **Signature method** | Basin, booklet, and a written name or debt |
+| **Current posture** | Acting |
 
-## DM thesis
+> **DM thesis.** Harbour furniture that turns skipped tribute into a public default, and can deliver Umberlee's appointments politely before worse arrives.
 
-Harbour furniture that turns skipped tribute into a public, actionable default, and can deliver Umberlee's appointments politely before worse arrives.
+## At the Table
 
-## Current state
+- **They want.** Respect owed to [[Umberlee]], paid at the same rate by merchant, pirate, navy, smuggler, and pilgrim.
+- **They offer.** A written blessing as a receipt of payment. Coin is easiest. Rope, fish bones, buttons, a compass needle, a carved token, or a spoken promise will do.
+- **They pressure with.** A public default on the ledger, then an appointment delivered before worse arrives.
+- **They will not.** Take sides. Taking sides would stop collection from half the harbour, so neutrality is how the work continues.
+- **Their tell.** Grey clothing, a basin by the quay, wind-defying candles, and a person who would rather write a name and debt than preach.
 
-Harbour seniors, juniors, basins, ledgers, and port infrastructure form a sea-wide ritual network. The hidden [[vel-orn]] shrine is older and quieter, aimed at drowned names and water-debt rather than working-quay traffic. The [[pearl-of-souls]] is one of seven Umberlee instruments; the Waveservants guarded it at Vel Orn until the [[chain-council]] commission stole it. Tribute may be the procedural system holding the [[drowned-maw]] fissure shut. The *[[red-lady-dead-lady]]* is collection by hull while the Pearl remains out of reach.
+## Current State
 
-## Active agenda
+- **Status quo.** Harbour seniors, juniors, basins, ledgers, and port infrastructure form a sea-wide ritual network.
+- **Recent change.** The [[pearl-of-souls]] is one of seven Umberlee instruments. The Waveservants guarded it at [[vel-orn]] until the [[chain-council]] commission stole it.
+- **Pressure.** Tribute may be the procedural system holding the [[drowned-maw]] fissure shut. The *[[red-lady-dead-lady]]* collects by hull while the Pearl remains where they cannot recover it.
+- **Strength.** Every working harbour still pays through the same basin-and-booklet procedure.
+- **Vulnerability.** The hidden [[vel-orn]] shrine is older and quieter, aimed at drowned names and water-debt rather than working-quay traffic.
+- **Opportunity.** Skipped tribute becomes a public default that other powers can see and use.
 
-Under pressure they change form or rate. The [[chain-council]]'s effort to raise [[Kalowe]]'s tribute to buy silence only teaches them who else belongs on the ledger.
+## Active Agenda
 
-## Assets, people, places, relationships
+Under pressure they change form or rate. The [[chain-council]]'s effort to raise [[Kalowe]]'s tribute to buy silence names who else belongs on the ledger.
 
-- Face: [[umberlee-branca]] — senior Calveno Waveservant and appointment-keeper.
-- [[Kalowe]]: stone niche in the causeway wall at the reef-gap; every hull passes the basin.
-- [[calven-and-calveno]] / [[Mercatura]]: pale stone arch on the canal with tribute terms posted toward the water.
-- [[calders-tooth-and-port-tidefall]]: low cut into the cliff at the south end of the Dockfront.
-- Political powers that use, evade, or manipulate the ledger: [[dravosi-crown]], [[tessarine-concordat]], [[chain-council]].
-- Monastic counter: [[sentinels-of-the-eyrie]].
+## People & Structure
+
+[[umberlee-branca]] is the senior Calveno Waveservant and appointment-keeper. Harbour seniors and juniors keep basins and ledgers at working quays. [[sentinels-of-the-eyrie]] stand as the monastic counter.
+
+## Territory & Touchpoints
+
+| Place | Presence | What they control or need here | Current pressure |
+| --- | --- | --- | --- |
+| [[Kalowe]] | Stone niche in the causeway wall at the reef-gap | Hulls using the reef-gap pass the basin | Chain Council effort to raise the rate |
+| [[calven-and-calveno]] / [[Mercatura]] | Pale stone arch on the canal | Tribute terms posted toward the water | Appointment-keeping through Branca |
+| [[calders-tooth-and-port-tidefall]] | Low cut into the cliff at the south end of the Dockfront | A working-quay basin | Ordinary collection |
+| [[vel-orn]] | Hidden older shrine | Drowned names and water-debt | Pearl stolen from the shrine |
 
 ## Connections
 
@@ -77,3 +100,14 @@ Under pressure they change form or rate. The [[chain-council]]'s effort to raise
 - [[Mercatura]]
 - [[red-lady-dead-lady]]
 - [[maw-fissure-and-the-tribute-system]]
+- [[dravosi-crown]], [[tessarine-concordat]], and [[chain-council]] use, evade, or manipulate the ledger.
+
+## Running the Faction
+
+| Situation | Run it |
+| --- | --- |
+| **When encountered** | A person in grey at a basin writes a name or debt and treats the blessing as a receipt. |
+| **When helped** | Payment clears the default. An appointment can be delivered politely. |
+| **When opposed** | Skipped tribute becomes public on the ledger, then an appointment arrives before worse does. |
+| **When ignored** | Collection continues at every working harbour. The Dead Lady collects by hull while the Pearl remains unrecovered. |
+| **When broken** | Taking sides stops collection from half the harbour. The ledger fails as sea-wide infrastructure. |
