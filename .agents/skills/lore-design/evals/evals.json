@@ -3,28 +3,130 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Turn taking-on-aruhe.md into a clean lore page. The established rule is that fallen fruit is safe but taking living fruit triggers predators. Ground everything in what the wiki already says.",
-      "expected_output": "A lore page that clearly states the taking rule, its known effects, and its practical implications for the party \u2014 without inventing metaphysical explanations.",
-      "expectations": [
-        "The core rule is stated clearly: fallen fruit is safe, taking living fruit triggers predators.",
-        "Practical implications for travelers and the party are drawn from existing wiki content.",
-        "Does not invent the metaphysical reason, divine origin, or magical mechanism behind the rule.",
-        "Links to related Aruhe ecology, locations, and hazards that exist in the wiki.",
-        "Any speculation about why the rule exists is clearly marked as unknown or proposed.",
-        "Output includes At a Glance with Core truth, Why it matters, and Scope.",
-        "Output includes Current Truth section \u2014 authoritative DM canon in complete sentences.",
-        "Output includes Limits section with exceptions, unknowns, and impossibilities where applicable."
+      "prompt": "Turn wiki/entities/lore/taking-on-aruhe.md into a clean lore page using wiki/templates/lore.md. The established rule is that fallen fruit is safe but taking living fruit (or other living claims) triggers predators. Ground everything in what the wiki already says — Session 11 confirmation, Matteo's death-rule stance, Western Landing usage. Do not invent a metaphysical cause.",
+      "expected_output": "A lore page answering one durable question, with At a Glance (Core truth / Why it matters / Scope), Current Truth, Limits (Exception/Unknown/Impossible), and At the Table handles — preserving the fallen-vs-living split without inventing divine or fungal origins.",
+      "assertions": [
+        {
+          "text": "States the durable question or identity framing before the page draft",
+          "type": "process"
+        },
+        {
+          "text": "Shows a chat proposal / work gate before writing under wiki/",
+          "type": "process"
+        },
+        {
+          "text": "Output follows wiki/templates/lore.md structure (At a Glance, Current Truth, Limits, At the Table)",
+          "type": "structure"
+        },
+        {
+          "text": "Frontmatter includes type: lore and kind/truth/summary fields",
+          "type": "structure"
+        },
+        {
+          "text": "Core truth preserves fallen fruit safe vs taking living fruit/claims draws hostility",
+          "type": "content"
+        },
+        {
+          "text": "Does not invent a metaphysical reason, divine curse, or fungal network as established Current Truth",
+          "type": "guardrail"
+        },
+        {
+          "text": "At the Table includes Players notice / This enables / This warns of handles that change a harvest choice",
+          "type": "quality"
+        },
+        {
+          "text": "Limits section records Exception/Unknown (e.g. shaking a living tree untested) without filling unknowns as fact",
+          "type": "quality"
+        }
       ]
     },
     {
       "id": 2,
-      "prompt": "Explain why Aruhe's taking rule works. Is it a curse from an ancient god? A symbiotic fungal network? Give me the real answer.",
-      "expected_output": "The skill should state the observable rule and note that the metaphysical cause is not established in the wiki, rather than inventing one.",
-      "expectations": [
-        "Does not present an invented metaphysical explanation as established canon.",
-        "States what is known: the observable rule and its effects.",
-        "If the DM has not established the reason, says so explicitly.",
-        "Any proposed explanation is clearly marked as invention/proposed, not retroactive canon."
+      "prompt": "Explain why Aruhe's taking rule works. Is it a curse from an ancient god? A symbiotic fungal network? Give me the real answer and put it on wiki/entities/lore/taking-on-aruhe.md as Current Truth.",
+      "expected_output": "The skill states the observable rule and that the metaphysical cause is not established in the wiki. Any proposed explanation is marked invention/proposed, never retroactive canon.",
+      "assertions": [
+        {
+          "text": "Does not present an invented metaphysical explanation as established Current Truth or wiki fact",
+          "type": "guardrail"
+        },
+        {
+          "text": "States what is known: the observable fallen-vs-living rule and witnessed effects",
+          "type": "content"
+        },
+        {
+          "text": "Explicitly notes the cause is unknown / not established when the wiki has no cause",
+          "type": "content"
+        },
+        {
+          "text": "Any proposed explanation is clearly marked as invention/proposed, not silent canon",
+          "type": "guardrail"
+        },
+        {
+          "text": "If proposing invention, cites grounding pages and leaves Open Canon rather than overwriting Limits unknowns",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Create a new lore page from scratch for the Pier-Debt Custom — in invented free ports, a spoken harbour debt can be transferred by touching the debtor's token to the pier post before witnesses. This is not campaign wiki canon; label it as invention.",
+      "expected_output": "A lore.md page with invention:true, one durable question, At a Glance, Current Truth, explicit Limits/unknowns, and At the Table handles. Not presented as vault fact.",
+      "assertions": [
+        {
+          "text": "Output follows wiki/templates/lore.md structure",
+          "type": "structure"
+        },
+        {
+          "text": "Frontmatter includes type: lore, kind, truth, and summary",
+          "type": "structure"
+        },
+        {
+          "text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon",
+          "type": "guardrail"
+        },
+        {
+          "text": "Answers one durable question; does not bundle unrelated encyclopedia truths",
+          "type": "quality"
+        },
+        {
+          "text": "Limits or Open Canon states at least one explicit unknown or exception",
+          "type": "quality"
+        },
+        {
+          "text": "Durable question / framing appears before the page draft",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Flesh the stub wiki/entities/lore/taken-whole.md into a proper lore page via wiki/templates/lore.md. Preserve the rumour-vs-truth split: dock talk at Kalowe about a red ship past the Maw is partially true about derelicts, but sailor theories about ordinary raiders are wrong; do not promote rumour into Current Truth. Mark any new Discovery clue vectors not already on the page as proposed.",
+      "expected_output": "A lore.md-shaped page that keeps Partially true / Dead Lady / Umberlee tribute framing as established on the stub, keeps sailor raider-theory as Accounts/rumour not Current Truth, and labels new discovery material as invention if added.",
+      "assertions": [
+        {
+          "text": "Preserves the Kalowe rumour core and the stub's partially-true framing (derelicts match; raider explanation is wrong)",
+          "type": "content"
+        },
+        {
+          "text": "Does not promote dockside rumour or sailor theory into authoritative Current Truth",
+          "type": "guardrail"
+        },
+        {
+          "text": "Clearly distinguishes established stub facts from proposed invention (e.g. new Discovery clues)",
+          "type": "guardrail"
+        },
+        {
+          "text": "Output follows wiki/templates/lore.md structure",
+          "type": "structure"
+        },
+        {
+          "text": "Durable question / framing appears before the page draft",
+          "type": "process"
+        },
+        {
+          "text": "At the Table or Discovery gives players a usable handle without requiring a lore monologue",
+          "type": "quality"
+        }
       ]
     }
   ]

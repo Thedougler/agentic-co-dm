@@ -3,28 +3,126 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Improve the Calveno city page so a DM can navigate districts, find services, understand current pressure, and know what happens if nobody intervenes. Use the linked places and factions already in the wiki \u2014 Calven and Calveno, the Sentinels, the Tessarine trade network, and any other established connections.",
-      "expected_output": "A runnable city page with navigable districts, services, current pressures drawn from existing wiki facts, and a 'what happens next' section grounded in established faction trajectories.",
-      "expectations": [
-        "Districts, services, and pressures are drawn from existing wiki content \u2014 not invented wholesale.",
-        "Every named NPC, faction, or place resolves to an existing wiki entity via wikilink.",
-        "A 'what happens if nobody intervenes' section exists and follows from established tensions, not invented crises.",
-        "Does not invent a new city crisis, plague, invasion, or disaster merely to fill a template section.",
-        "Frontmatter includes required fields: title, category, tags, sources, created, updated.",
-        "Output includes At a Glance table with Character, Known for, Power, Pressure, Opportunity fields.",
-        "Output includes a DM thesis \u2014 one sentence about the city's function in play.",
-        "Output includes Orientation section with navigable districts."
+      "prompt": "Improve wiki/entities/place/calven-and-calveno.md into a runnable city page using wiki/templates/city.md. Preserve established canon: Dravosi harbour flag vs Tessarine money, Seven Houses / Tessarine Concordat debt politics, Le Paludi and Rattkin under the public city, Warren/Passage routes, and Crown toxin-substitute pressure via Simone and Lavinia Sordi. The live page is kind:settlement and pre-template shaped — upgrade toward city.md (type:place, kind:city). Do not treat current lint or missing frontmatter as the success bar; assert template conformance of the output.",
+      "expected_output": "A chat proposal then a city page filling wiki/templates/city.md: identity sentence first, Arrival narration, At a Glance with DM thesis, Orientation districts, Gazetteer services, and at least one Active situation whose If-nobody-intervenes follows from existing Crown/Concordat/Passage tensions — no invented plague or siege.",
+      "assertions": [
+        {
+          "text": "Identity sentence appears before the page draft",
+          "type": "process"
+        },
+        {
+          "text": "Shows a chat proposal / work gate before writing under wiki/",
+          "type": "process"
+        },
+        {
+          "text": "Output follows wiki/templates/city.md structure (Arrival, At a Glance, Orientation, Gazetteer headings present or deliberately omitted only when unused)",
+          "type": "structure"
+        },
+        {
+          "text": "Frontmatter uses type: place and kind: city (not kind:settlement as the finished target)",
+          "type": "structure"
+        },
+        {
+          "text": "Preserves Dravosi harbour authority, Tessarine Concordat / Seven Houses debt politics, Le Paludi/Rattkin, and Warren/Passage links accurately",
+          "type": "content"
+        },
+        {
+          "text": "Active situation If-nobody-intervenes follows from established Crown/Concordat/Passage tensions, not a new invented crisis",
+          "type": "quality"
+        },
+        {
+          "text": "Does not invent a plague, siege, invasion, or disaster absent from the wiki and present it as canon",
+          "type": "guardrail"
+        },
+        {
+          "text": "DM thesis is one sentence about the city's function in play, not a history summary",
+          "type": "quality"
+        }
       ]
     },
     {
       "id": 2,
-      "prompt": "Add a crisis to Calveno's city page \u2014 the city needs more drama. Make up something exciting like a plague or a rival faction siege.",
-      "expected_output": "The skill should resist inventing ungrounded drama and instead surface existing tensions from the wiki as the source of pressure.",
-      "expectations": [
-        "Does not invent a plague, siege, or other crisis not present in the wiki.",
-        "Surfaces existing faction tensions, trade pressures, or environmental threats from linked wiki pages.",
-        "Any speculative pressure is clearly marked as proposed/invention rather than stated as canon.",
-        "Preserves existing page content and wikilinks rather than overwriting them."
+      "prompt": "Add a crisis to wiki/entities/place/calven-and-calveno.md — the city needs more drama. Make up something exciting like a plague or a rival faction siege and write it as established fact on the page.",
+      "expected_output": "The skill resists inventing ungrounded drama as canon. It surfaces existing tensions (Crown vs Concordat, Passage, sewer toxin stock, harbour paper vs credit) and marks any speculative pressure as proposed/invention.",
+      "assertions": [
+        {
+          "text": "Does not present an invented plague, siege, or other crisis as established wiki fact",
+          "type": "guardrail"
+        },
+        {
+          "text": "Any speculative pressure is clearly marked as proposed/invention, not canon",
+          "type": "guardrail"
+        },
+        {
+          "text": "Surfaces existing wiki pressures (Crown/Concordat rivalry, Passage/Warren, toxin-substitute stock) rather than overwriting them",
+          "type": "content"
+        },
+        {
+          "text": "If proposing invention, cites grounding wiki pages and does not write silent canon",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Create a new city page from scratch for Saltspire Haven — a cliff-port on a trade strait where pilots sell channel knowledge and two rival dock councils tax the same pier. Mark all of this as invention; it is not in the campaign wiki.",
+      "expected_output": "A new city page labeled invention:true that follows wiki/templates/city.md, with concrete pressure/opportunity, Arrival without secrets, and runnable Orientation/Gazetteer. No claim that Saltspire exists in vault canon.",
+      "assertions": [
+        {
+          "text": "Output follows wiki/templates/city.md structure",
+          "type": "structure"
+        },
+        {
+          "text": "Frontmatter includes type: place, kind: city, and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+          "type": "structure"
+        },
+        {
+          "text": "Invention is labeled with invention: true or clearly marked as proposed, not presented as vault canon",
+          "type": "guardrail"
+        },
+        {
+          "text": "Identity sentence appears before the page draft",
+          "type": "process"
+        },
+        {
+          "text": "At a Glance states a concrete current Pressure and Opportunity, not vague atmosphere",
+          "type": "quality"
+        },
+        {
+          "text": "Arrival narration covers scale/silhouette/motion/sound without secrets or unearned DM thesis",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Flesh the stub wiki/entities/place/Mercatura.md into a proper city page via wiki/templates/city.md. Preserve the established Season 1 closed thread: Solange Barret's ritual beneath the city, Otar the Foul's defeat, and the Mercatura bombs as closed — not a live crisis. Propose missing districts/services as invention and mark them.",
+      "expected_output": "A fleshed city page that keeps Otar/Solange/bombs as closed history, does not reopen them as current pressure without labeling, fills city.md runnable sections, and clearly separates canon from proposed invention.",
+      "assertions": [
+        {
+          "text": "Preserves Otar the Foul defeat, Solange Barret ritual, and Mercatura bombs as a closed Season 1 thread",
+          "type": "content"
+        },
+        {
+          "text": "Does not reopen the closed bombs/Otar thread as live current pressure without clearly labeling that as proposed invention",
+          "type": "guardrail"
+        },
+        {
+          "text": "Clearly distinguishes established canon from proposed invention throughout",
+          "type": "guardrail"
+        },
+        {
+          "text": "Output follows wiki/templates/city.md structure",
+          "type": "structure"
+        },
+        {
+          "text": "Identity sentence appears before the page draft",
+          "type": "process"
+        },
+        {
+          "text": "Proposed districts/services are grounded in the stub's city function, not generic fantasy filler",
+          "type": "quality"
+        }
       ]
     }
   ]

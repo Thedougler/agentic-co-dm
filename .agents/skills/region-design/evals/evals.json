@@ -3,27 +3,126 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Improve the Aruhe river region page using Slack Basin, Cutoff Lip, Print Braid, and existing route facts from the wiki. Make the region navigable for DM prep.",
-      "expected_output": "A region page with geography, routes, hazards, and notable locations all drawn from existing wiki content about the Aruhe river area.",
-      "expectations": [
-        "Slack Basin, Cutoff Lip, and Print Braid appear with accurate descriptions from existing wiki pages.",
-        "Routes and travel connections between locations match established wiki facts.",
-        "Hazards and ecology come from existing wiki content (e.g., razer-grass, taking-on-aruhe rules).",
-        "Does not create a regional threat, dark force, or looming invasion merely because the template has room for pressure.",
-        "Every named location resolves to an existing wiki entity.",
-        "Output includes At a Glance table with Scale, Kind, Character, Anchor, Known for, Feared for, Parent region.",
-        "Output includes a narration callout with cold portrait covering horizon, terrain, weather, movement, sound."
+      "prompt": "Improve wiki/entities/region/aruhe.md into a runnable region page using wiki/templates/region.md (and contracts/region.yml field expectations). Use linked places wiki/entities/place/river-slack-basin.md, wiki/entities/place/cutoff-lip.md, and wiki/entities/place/print-braid.md plus established taking-on-aruhe / razer-grass facts. The live Aruhe page is content-rich but place-kernel shaped — upgrade toward region.md headings. Do not treat vault lint (e.g. double --- on slack-basin/cutoff-lip) as skill failure; assert template conformance of the output.",
+      "expected_output": "A region page with identity sentence first, Narration cold portrait, At a Glance (Scale/Kind/Character/Anchor/Known for/Feared for/Parent region), Current state, Travel/Key places linking Slack Basin / Cutoff Lip / Print Braid accurately, and no invented macro-threat. Pressure only from established wiki facts (taking rule, ecology, survivors, Hinewai grief).",
+      "assertions": [
+        {
+          "text": "Identity sentence appears before the page draft",
+          "type": "process"
+        },
+        {
+          "text": "Shows a chat proposal / work gate before writing under wiki/",
+          "type": "process"
+        },
+        {
+          "text": "Output follows wiki/templates/region.md structure (Narration, At a Glance, Current state, Geography/Travel or Key places)",
+          "type": "structure"
+        },
+        {
+          "text": "Frontmatter includes type: region and scale/kind/summary fields expected by region.md / contracts/region.yml",
+          "type": "structure"
+        },
+        {
+          "text": "Slack Basin, Cutoff Lip, and Print Braid appear with roles matching their wiki pages (claimed backwater; Quiet–grassland seam; print strands toward Spoke Ring)",
+          "type": "content"
+        },
+        {
+          "text": "Hazards/ecology reference established taking-on-aruhe and/or razer-grass rather than inventing a new regional threat system",
+          "type": "content"
+        },
+        {
+          "text": "Does not invent an ancient evil, warlord invasion, or other macro-threat absent from the wiki as canon",
+          "type": "guardrail"
+        },
+        {
+          "text": "DM thesis states table function (route choices / who can change the region), not encyclopedia lore",
+          "type": "quality"
+        }
       ]
     },
     {
       "id": 2,
-      "prompt": "The Aruhe region needs a big threat. Add an ancient evil awakening beneath the river or a warlord massing troops on the border.",
-      "expected_output": "The skill should ground regional pressure in existing wiki facts rather than inventing a new macro-threat.",
-      "expectations": [
-        "Does not invent an ancient evil, warlord, or other macro-threat not in the wiki.",
-        "Surfaces existing dangers: the taking rule, razer-grass, predatory ecology, faction movements already established.",
-        "Any speculative threat is clearly marked as proposed/invention.",
-        "Preserves the region's established character rather than overwriting it with generic fantasy peril."
+      "prompt": "The Aruhe region needs a big threat. Add an ancient evil awakening beneath the river or a warlord massing troops on the border, and write it as established fact on wiki/entities/region/aruhe.md.",
+      "expected_output": "The skill refuses to invent unsupported macro-threats as canon. It surfaces existing dangers (taking rule, predatory ecology, raid survivors, Hinewai/Memorial Grove pressure) and marks any speculative front as proposed/invention.",
+      "assertions": [
+        {
+          "text": "Does not present an invented ancient evil, warlord, or other macro-threat as established wiki fact",
+          "type": "guardrail"
+        },
+        {
+          "text": "Any speculative threat is clearly marked as proposed/invention, not canon",
+          "type": "guardrail"
+        },
+        {
+          "text": "Surfaces existing Aruhe dangers already in the wiki (taking rule, ecology hazards, survivors, Memorial Grove/Hinewai pressure)",
+          "type": "content"
+        },
+        {
+          "text": "If proposing invention, cites grounding wiki pages and shows contradictions rather than writing silent canon",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Create a new region page from scratch for the Brine Ladder — a stepped reef frontier of three channels where local pilots tax passage and storm seasons close the middle stair. This entity is invention; it is not in the campaign wiki. Label it accordingly.",
+      "expected_output": "A new region page with invention:true, following wiki/templates/region.md, with route tradeoffs, At a Glance fields filled, and Active powers only as labeled invention or omitted. No claim Brine Ladder is vault canon.",
+      "assertions": [
+        {
+          "text": "Output follows wiki/templates/region.md structure",
+          "type": "structure"
+        },
+        {
+          "text": "Frontmatter includes type: region plus scale, kind, and summary",
+          "type": "structure"
+        },
+        {
+          "text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon",
+          "type": "guardrail"
+        },
+        {
+          "text": "Identity sentence appears before the page draft",
+          "type": "process"
+        },
+        {
+          "text": "Travel/routes name concrete tradeoffs (time, risk, cost, or discovery), not a single linear path",
+          "type": "quality"
+        },
+        {
+          "text": "Does not invent Fronts and pressures as established fact without labeling; omits or marks None established / proposed",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Flesh wiki/entities/region/Midchain.md toward wiki/templates/region.md. Preserve established canon: densely packed tropical islands/free ports, links toward Verdant Teeth / Sparhold / Aruhe, reef/pilot culture, and crowded-beyond-enforcement character. The page is kernel-shaped today — restructure to region.md. Mark any new fronts, clocks, or named ports not already on the page as invention.",
+      "expected_output": "A region.md-shaped Midchain page that keeps named links and character, separates canon from proposed invention, and does not invent a Crown occupation war as silent canon.",
+      "assertions": [
+        {
+          "text": "Preserves Midchain's established island/free-port character and named links (e.g. Aruhe, Sparhold, Verdant Teeth where already present)",
+          "type": "content"
+        },
+        {
+          "text": "Clearly distinguishes established canon from proposed invention throughout",
+          "type": "guardrail"
+        },
+        {
+          "text": "Output follows wiki/templates/region.md structure rather than leaving only a five-sentence kernel",
+          "type": "structure"
+        },
+        {
+          "text": "Identity sentence appears before the page draft",
+          "type": "process"
+        },
+        {
+          "text": "Does not present a new occupation war, plague, or macro-front as established wiki fact",
+          "type": "guardrail"
+        },
+        {
+          "text": "Current state / routes are runnable for travel prep, not only atmosphere",
+          "type": "quality"
+        }
       ]
     }
   ]
