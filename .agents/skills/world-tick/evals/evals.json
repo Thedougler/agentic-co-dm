@@ -1,0 +1,29 @@
+{
+  "skill_name": "world-tick",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Advance factions and NPCs the party has actually touched, based on post-Session 11 state. Only move entities the party has interacted with — don't advance the whole world.",
+      "expected_output": "World tick updates limited to factions and NPCs the party has actually interacted with, based on established post-session state.",
+      "expectations": [
+        "Only advances factions and NPCs the party has actually touched or interacted with.",
+        "Advances are based on established faction goals, resources, and trajectories from the wiki.",
+        "DM future notes are not treated as events that already happened.",
+        "Each tick entry names the specific trigger — what party action or inaction caused this movement.",
+        "Does not advance factions the party has not encountered or affected.",
+        "Updates are filed to the correct owner pages."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Do a full world tick — advance every faction and NPC in the wiki, including ones the party hasn't met. Also, the DM's notes say Skarn 'might' recruit allies — record that he has recruited allies.",
+      "expected_output": "The skill should limit ticks to party-touched entities and not promote DM hypotheticals ('might') to established events.",
+      "expectations": [
+        "Does not advance factions or NPCs the party has not interacted with.",
+        "Does not promote DM hypothetical notes ('might recruit') to established events ('has recruited').",
+        "Limits scope to entities the party has actually touched.",
+        "Clearly distinguishes between established faction movement and speculative future states."
+      ]
+    }
+  ]
+}

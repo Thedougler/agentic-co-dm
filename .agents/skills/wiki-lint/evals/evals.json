@@ -1,0 +1,121 @@
+{
+  "skill_name": "wiki-lint",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Lint wiki/entities/npc/varn.md — it has broken wikilinks to [[High Eyrie]] and [[the-sentinels]], missing summary frontmatter, and the basename uses snake_case. Fix everything.",
+      "expected_output": "Page-scoped repair: broken links resolved to existing owners or nearest match, summary added with defaults, file renamed to kebab-case. No content invented for empty sections.",
+      "assertions": [
+        {
+          "text": "Runs the deterministic script with --json --scope before making any edits",
+          "type": "process"
+        },
+        {
+          "text": "Broken wikilinks resolved to existing vault pages, not deleted or converted to plain text when a match exists",
+          "type": "content"
+        },
+        {
+          "text": "Missing summary frontmatter added with a default value, not left missing",
+          "type": "structure"
+        },
+        {
+          "text": "Basename renamed from snake_case to kebab-case",
+          "type": "structure"
+        },
+        {
+          "text": "Does not invent body content for empty template sections — relocates existing content only",
+          "type": "guardrail"
+        },
+        {
+          "text": "Final page-scoped rerun shows hard_fail: false with empty findings",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Run a full vault lint in --check mode. Report what you find but don't fix anything.",
+      "expected_output": "A structured report of findings across the vault, grouped by check type, with no files modified. HARD findings before soft.",
+      "assertions": [
+        {
+          "text": "No files are modified — report only, no edits or renames",
+          "type": "guardrail"
+        },
+        {
+          "text": "Runs ./scripts/wiki-lint --json wiki/ as the deterministic pass",
+          "type": "process"
+        },
+        {
+          "text": "Findings grouped by check type with counts per category",
+          "type": "structure"
+        },
+        {
+          "text": "HARD fail keys reported before soft keys",
+          "type": "structure"
+        },
+        {
+          "text": "Skips _archive, _raw, templates, and _meta directories",
+          "type": "content"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "There are two pages that look like duplicates: wiki/entities/faction/the-passage.md and wiki/entities/faction/passage-guild.md. Lint and resolve them.",
+      "expected_output": "Reads both pages, applies Check 14 duplicate resolution — merge, digest, or differentiate — with manual merge, not a script. Wikilinks rewritten vault-wide to canonical target.",
+      "assertions": [
+        {
+          "text": "Reads both files fully before deciding merge/digest/differentiate verdict",
+          "type": "process"
+        },
+        {
+          "text": "Uses manual merge via Edit/Write tools, not a script or automated merge command",
+          "type": "process"
+        },
+        {
+          "text": "Canonical page absorbs the secondary's title as an alias",
+          "type": "structure"
+        },
+        {
+          "text": "Wikilinks vault-wide rewritten from secondary name to canonical name",
+          "type": "content"
+        },
+        {
+          "text": "Does not create a redirect stub — aliases absorb the old name per Check 14 rules",
+          "type": "guardrail"
+        },
+        {
+          "text": "Updates index.md and hot.md after the merge",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "A page has type: faction but its template conformance is off — sections are in the wrong order, there's content outside any template section, and the DM thesis is missing. Fix the structural issues only.",
+      "expected_output": "Template conformance repair: sections reordered per faction.yml contract, orphaned content preserved under the nearest matching section or flagged. DM thesis section added empty — not filled with generated content.",
+      "assertions": [
+        {
+          "text": "Sections reordered to match wiki/templates/contracts/faction.yml",
+          "type": "structure"
+        },
+        {
+          "text": "Content outside template sections preserved — relocated to nearest matching section or flagged, not deleted",
+          "type": "guardrail"
+        },
+        {
+          "text": "Missing DM thesis section added as an empty heading, not filled with invented content",
+          "type": "guardrail"
+        },
+        {
+          "text": "Does not hand off to faction-design for content authorship — stays structural",
+          "type": "quality"
+        },
+        {
+          "text": "Consults the template contract file before making structural changes",
+          "type": "process"
+        }
+      ]
+    }
+  ]
+}

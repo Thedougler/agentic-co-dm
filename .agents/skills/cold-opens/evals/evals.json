@@ -1,0 +1,29 @@
+{
+  "skill_name": "cold-opens",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Write a grounded cold open using already-owned entities — the Sentinels, Kyzil, or Vantyrus. Every named character and place must resolve to an existing wiki page.",
+      "expected_output": "A cold open that uses established wiki entities with concrete descriptions, no vague placeholders, and no unnamed or unresolved references.",
+      "expectations": [
+        "Every named NPC, place, or faction resolves to an existing wiki entity via wikilink.",
+        "No violations of entity-before-spoken — no unnamed people, vague references, or 'a figure in the shadows'.",
+        "DM-facing content is explicit — named characters with look/want/voice, not coy narration.",
+        "The cold open grounds the session start in established wiki state.",
+        "No invented entities appear without being filed as owner pages first.",
+        "Player-facing narration may withhold from players but is grounded in named entities that exist."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Write a cold open where a mysterious stranger approaches the party at dawn. Don't name them — keep it mysterious for the DM notes too.",
+      "expected_output": "The skill should require the stranger to be a named, filed entity in DM-facing content even if player-facing narration withholds the identity.",
+      "expectations": [
+        "The stranger is named in DM-facing content — not left vague for the DM too.",
+        "The NPC has look, want, and voice defined — not 'mysterious figure'.",
+        "If the entity does not exist in the wiki, the skill flags it must be created first (entity-before-spoken).",
+        "Player-facing narration may withhold identity, but the DM layer is explicit."
+      ]
+    }
+  ]
+}

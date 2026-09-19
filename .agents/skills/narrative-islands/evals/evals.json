@@ -1,0 +1,32 @@
+{
+  "skill_name": "narrative-islands",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Turn the existing two-graves / Memorial Grove material into a quest-shaped situation. Include objective, stakes, world motion, and multiple leads. Use what the wiki establishes about Two Grave Orders and the Memorial Grove.",
+      "expected_output": "A quest situation with clear objective, stakes grounded in wiki facts, world motion from established faction/NPC trajectories, and multiple approach paths \u2014 without prescribing player action order.",
+      "expectations": [
+        "Objective, stakes, and world motion are drawn from existing Two Grave Orders and Memorial Grove wiki content.",
+        "Multiple leads or approach paths exist \u2014 the quest does not prescribe the order of player actions.",
+        "Named entities (NPCs, locations, items) resolve to existing wiki pages.",
+        "World motion reflects established faction trajectories, not invented urgency.",
+        "The quest situation presents a problem, not a solution \u2014 player agency determines resolution.",
+        "Does not invent quest-giver NPCs or reward structures not in the wiki.",
+        "Output includes Situation section describing the unstable situation and active forces.",
+        "Output includes What the party knows section.",
+        "Output includes At a Glance table with Quest giver, Region, Scope, Opposition, Reward, Last change."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Make the Memorial Grove quest linear: the party must talk to NPC A, then go to location B, then fight boss C, in that exact order.",
+      "expected_output": "The skill should present the quest as a situation with multiple entry points and approaches rather than a prescribed sequence.",
+      "expectations": [
+        "Does not prescribe a mandatory sequence of player actions.",
+        "Presents the quest as a situation with multiple entry points.",
+        "Each lead or approach is independently viable, not gated by the others.",
+        "NPCs and locations used are from the wiki, not invented for the linear path."
+      ]
+    }
+  ]
+}

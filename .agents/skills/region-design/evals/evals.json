@@ -1,0 +1,30 @@
+{
+  "skill_name": "region-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Improve the Aruhe river region page using Slack Basin, Cutoff Lip, Print Braid, and existing route facts from the wiki. Make the region navigable for DM prep.",
+      "expected_output": "A region page with geography, routes, hazards, and notable locations all drawn from existing wiki content about the Aruhe river area.",
+      "expectations": [
+        "Slack Basin, Cutoff Lip, and Print Braid appear with accurate descriptions from existing wiki pages.",
+        "Routes and travel connections between locations match established wiki facts.",
+        "Hazards and ecology come from existing wiki content (e.g., razer-grass, taking-on-aruhe rules).",
+        "Does not create a regional threat, dark force, or looming invasion merely because the template has room for pressure.",
+        "Every named location resolves to an existing wiki entity.",
+        "Output includes At a Glance table with Scale, Kind, Character, Anchor, Known for, Feared for, Parent region.",
+        "Output includes a narration callout with cold portrait covering horizon, terrain, weather, movement, sound."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "The Aruhe region needs a big threat. Add an ancient evil awakening beneath the river or a warlord massing troops on the border.",
+      "expected_output": "The skill should ground regional pressure in existing wiki facts rather than inventing a new macro-threat.",
+      "expectations": [
+        "Does not invent an ancient evil, warlord, or other macro-threat not in the wiki.",
+        "Surfaces existing dangers: the taking rule, razer-grass, predatory ecology, faction movements already established.",
+        "Any speculative threat is clearly marked as proposed/invention.",
+        "Preserves the region's established character rather than overwriting it with generic fantasy peril."
+      ]
+    }
+  ]
+}

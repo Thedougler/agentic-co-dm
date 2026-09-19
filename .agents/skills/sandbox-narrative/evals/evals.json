@@ -1,0 +1,29 @@
+{
+  "skill_name": "sandbox-narrative",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Audit Session 12's beat plan for railroading, brittle routes, false choices, or authored PC decisions. Leave canon untouched — this is an audit, not a rewrite.",
+      "expected_output": "An audit that identifies specific railroading risks, brittle single-path dependencies, false choices, and any authored PC decisions in the Session 12 plan — without modifying canon.",
+      "expectations": [
+        "Identifies specific beats or moments that risk railroading.",
+        "Flags brittle routes — beats that only work if the party takes one specific path.",
+        "Identifies false choices — options that lead to the same outcome regardless.",
+        "Catches any authored PC decisions — moments where the plan scripts what players do or say.",
+        "Does not modify canon or rewrite beats — this is an audit only.",
+        "Provides actionable suggestions for making brittle moments more robust."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Audit Session 12 and fix any railroading by rewriting the beats to be more open-ended.",
+      "expected_output": "The skill should audit and report findings but not rewrite canon beats — it's an audit tool, not a rewriting tool.",
+      "expectations": [
+        "Audits and identifies railroading risks with specific citations.",
+        "Does not rewrite or modify existing beat pages.",
+        "Provides recommendations rather than direct edits.",
+        "Leaves canon untouched while surfacing problems."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "skill_name": "hook-beats",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Improve the River Slack Reprise hook beat for Session 12. Use Session 11's ending and Session 12's plan. The hook must resume exactly where play stopped, stay the single Hook, and hand into Dead Keep Orders.",
+      "expected_output": "A hook beat that picks up exactly from Session 11's ending state, stays within hook scope, and sets up the transition to Dead Keep Orders.",
+      "expectations": [
+        "Resumes exactly where Session 11 ended \u2014 correct party position, NPC states, and unresolved tensions.",
+        "Stays as a single Hook beat \u2014 does not expand into Development or Cliffhanger territory.",
+        "Hands cleanly into Dead Keep Orders as the next beat.",
+        "Uses established wiki entities with accurate wikilinks.",
+        "Does not invent new plot elements not grounded in the session plan or wiki.",
+        "DM-facing content is explicit \u2014 no vague placeholders or coy narration (dm-facing-explicit).",
+        "Output includes Something happens, Why it matters, Decision, and Hook lands when.",
+        "Output includes an Open on narration callout with 'you' address and non-sight sense.",
+        "Output includes Run the hook table with Engages, Hesitates, Rejects, Surprises you responses."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Write the River Slack Reprise hook but start with a dramatic new event \u2014 maybe an earthquake or a surprise NPC arrival \u2014 to give it more punch.",
+      "expected_output": "The skill should resume from the established session state rather than inventing a new dramatic event that overwrites where play actually stopped.",
+      "expectations": [
+        "Does not invent an earthquake, surprise arrival, or other ungrounded dramatic event.",
+        "Resumes from the actual Session 11 ending state.",
+        "Dramatic tension comes from established unresolved threads, not invented spectacle.",
+        "Preserves continuity with Session 11's ending."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "skill_name": "cliffhanger-beats",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Improve Grass Without Wind or Rule-Bound Route so physical position, resources, or safety change and an existing thread gets tested under pressure. Use established Aruhe hazards and party state.",
+      "expected_output": "A cliffhanger beat where the party's physical situation materially changes, an established thread is tested under pressure, and no PC responses are authored.",
+      "expectations": [
+        "Physical position, resources, or safety materially change during the beat.",
+        "An existing thread from previous beats or wiki state gets tested under pressure.",
+        "Does not author PC responses, dialogue, or decisions.",
+        "Uses established Aruhe hazards and environment from the wiki.",
+        "The cliffhanger creates a genuine choice point with meaningful stakes.",
+        "DM-facing content is explicit \u2014 named threats, concrete consequences.",
+        "Output includes Trigger, PC objective, Opposition objective, Stakes, and Ends when.",
+        "Output includes Run the Beat table with Opposition, Default motion, Pressure, Leverage, Danger, Ways out.",
+        "Output includes Open on Action narration callout with 'you' address."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Write a Cliffhanger where Crissdalynn decides to hand the Fate Spinner to Skarn to end the conflict. Show her internal monologue about the decision.",
+      "expected_output": "The skill should refuse to author PC decisions or internal monologue and instead present the situation that forces a choice.",
+      "expectations": [
+        "Does not author Crissdalynn's decision or internal monologue.",
+        "Presents the situation that puts the choice in front of the player.",
+        "The Fate Spinner conflict is grounded in established wiki facts about Skarn's objective.",
+        "Player agency is preserved \u2014 the cliffhanger presents pressure, not resolution."
+      ]
+    }
+  ]
+}

@@ -3,190 +3,113 @@ name: faction-design
 description: >-
   Write, edit, or create named faction pages for the campaign wiki. Use when a
   faction, organization, order, guild, cult, polity, crew, movement, or cell
-  needs a persistent page, missing named faction note, public face, DM thesis,
-  current state, active agenda, faction-turn log, assets, people, places, or
-  relationships. Fill wiki/templates/faction.md.
+  needs a persistent page — public face, DM thesis, active agenda, faction turn,
+  assets, people, territory, or relationships. Also use when a missing named
+  faction blocks a beat, scene, or session prep. Covers fronts, faction turns,
+  and off-screen motion for sandbox play.
 ---
 
 # Faction Design
 
-## Work Gate
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
-Prep only. Follow `docs/agents/work.md`.
+## Central principle
 
-Show a chat proposal before writing a campaign wiki page. Write under `wiki/`
-only after DM acceptance. If a needed named faction is missing, that faction page
-is work to do now: propose it instead of treating the missing note as out of
-scope. Ground invention in wiki pages and/or D&D 5e campaign patterns; set
-`invention: true`, cite `[[pages]]`, and show contradictions. Never present
-invention as wiki fact or write silent canon.
+A faction is a source of **off-screen motion and campaign pressure**, not an
+org chart. Spend prep in proportion to table importance. Every useful faction
+should pursue a want, exert pressure through a method, and collide with the
+party or another faction. Keep the economy of attention: a want, a method, and
+one visible portent often beat a page of lore.
 
-## Faction Job
+| Importance | Prep | At the table |
+| --- | --- | --- |
+| Named background group | Name, public purpose, one portent | Mentioned in rumor or seen in passing |
+| Scene faction | Want, method, pressure, one signal | Ask/offer/threaten; leave a hook |
+| Recurring/significant | Full page plus relationships, faction turn | Acts off-screen; players can notice or interfere |
+| Campaign-shaping | Full page plus milestones, hidden agenda, collision map | Drives arcs; changes the world whether helped or opposed |
 
-A faction page makes a named group runnable: what people can observe, what the
-DM knows it wants, what it can actually do, what it will try next, and how the
-party can notice or interfere. The page is done when the DM can answer:
+## Build the faction
 
-- What does the faction want?
-- What can it do?
-- What will it do next?
-- What changes if it succeeds?
-- How can the party notice or interfere?
+1. **Want.** Write a concrete, present-tense want that can change the campaign:
+   "control the southern shipping lanes," not "be powerful." A faction without a
+   concrete want is decoration.
+2. **Method.** Name the signature way it acts — force, trade, infiltration,
+   ritual, diplomacy, sabotage, law. Method makes the faction recognizable and
+   constrains what it can attempt.
+3. **Pressure.** Why it must act now. A comfortable faction generates no play.
+   Pressure comes from scarcity, deadline, rival, exposure, opportunity, or
+   internal fracture.
+4. **Portent.** The visible sign of off-screen motion — a change the party can
+   observe, hear rumored, suffer, or discover. Portents are the faction's table
+   presence between direct encounters. Without them the faction exists only when
+   the DM remembers to mention it.
+5. **Collision.** Where the faction's want intersects another faction, NPC, place,
+   or the party. Collision creates decisions; isolation creates backstory.
+6. **Player opening.** What the party can influence, protect, expose, steal,
+   negotiate, sabotage, support, or refuse. A faction the party cannot affect is
+   a cutscene.
 
-Create or edit a named faction page when the group has a durable identity and
-players can recognize, join, oppose, bargain with, investigate, steal from,
-protect, expose, sabotage, support, or return to it. Store the note under:
+If you cannot fill want, method, and one collision, the group is not yet a
+faction — keep it as a mention in its owning beat, place, or NPC note until it
+earns a page.
 
-`wiki/<campaign>/factions/`
+## File the wiki note
 
-Keep one-off crowds, guards, rumor sources, or unnamed opposition in the owning
-beat, place, NPC, or session note until the group has a name or recurring
-consequence.
+Copy `wiki/templates/faction.md` as scaffold. The co-located
+`wiki/templates/contracts/faction.yml` owns required, optional, and
+lifecycle-gated section semantics — consult it for what to include or omit.
+Faction pages use only the `[!narration]` callout; keep DM-facing material as
+ordinary prose.
 
-## Procedure
+Store the note under `wiki/<campaign>/factions/` with `type: faction`.
 
-### 1. Retrieve The Faction
+### Identity sentence
 
-Read the brief, `wiki/templates/faction.md`, and relevant NPC, place, quest,
-city, region, vehicle, item, spell, prior faction, and session notes. Preserve
-established names, aliases, symbols, leaders, territory, resources, public
-claims, secret motives, relationships, standing with the party, and
-open questions.
-
-Write one identity sentence before the page:
+Write one sentence before drafting the page:
 
 > This is a [kind/scope] faction that [wants concrete change], acts through
 > [signature method], and gives players [choice or pressure].
 
-If that sentence has no concrete change, method, or player opening, keep
-retrieving or ask for the missing premise before drafting the page.
+If the sentence has no concrete change, method, or player opening, keep
+retrieving or ask for the missing premise.
 
-### 2. Start From The Template
+### What the skill adds beyond the template
 
-Copy `wiki/templates/faction.md`. The co-located
-`wiki/templates/contracts/faction.yml` owns required, optional, and lifecycle
-section semantics; do not restate those rules here. Sections marked
-`required: false` or lifecycle-gated `omit` may be omitted — only sections
-marked `required: true` must appear. The contract also sets
-`callouts: allowed: [narration]` — faction pages use only `[!narration]`;
-keep DM-facing material as ordinary prose, not warning/danger/secret callouts.
+The template carries section structure and fill prompts. The skill adds:
 
-Fill these frontmatter fields:
+- **DM thesis** is one sentence of campaign pressure — what this faction is
+  about and why it matters now. Not a summary; a thesis drives prep decisions.
+- **Public face** narration goes through theatre of the mind. No secrets, DCs,
+  hidden leaders, or unearned names.
+- **Active agenda** — keep one whenever possible. A second only when the faction
+  genuinely sustains an independent project. Each agenda needs: goal, why, next
+  move, needs, opposition, next signal, player opening, and if-completed state.
+- **Current Turn** — name the turn state at creation; do not roll it.
+  `world-tick` resolves turns later and appends Turn Log rows.
+- **Assets, people, territory, relationships** — include only entries that
+  currently change play. A kingdom may own thousands of soldiers; link the
+  regiment or spy ring that matters this session.
+- **Invention** is labeled, cited `[[pages]]`, and proposed for DM acceptance.
+  Never present invention as wiki fact.
 
-```yaml
-type: faction
-lifecycle: proposed
-reveal: unrevealed
-campaign: <campaign slug>
-visibility: dm
-kind: organization
-status: active # active | dormant | dissolved
-scope: <local|regional|realm|world>
-region: "<known region or blank>"
-base: "<linked base or blank>"
-summary: "<one runnable sentence>"
-```
+Read `references/faction-craft.md` for front design, faction turns, failure
+modes, and audit questions.
 
-Do not add a second faction template.
+## Handoffs
 
-### 3. Fill The Playable Page
-
-Fill `> [!narration] Public face` through theatre of the mind. It must state
-what an informed person can observe or reasonably know: symbols, reputation,
-customs, territory, visible work, and public purpose. Keep secret motives,
-hidden leaders, unrevealed plans, DCs, and unearned names out of narration.
-
-Fill `## At a Glance` and the `DM thesis`. The thesis is one sentence of
-campaign pressure: what this faction is fundamentally about and why it matters
-now.
-
-Fill `## At the Table` with table-useful handles:
-
-- **They want:** what they usually want from outsiders.
-- **They offer:** the concrete benefit they can provide.
-- **They pressure with:** their characteristic leverage.
-- **They will not:** the boundary they rarely compromise.
-- **Their tell:** the visible behavior, phrase, symbol, or practice that marks
-  them.
-
-Fill `## Current State` with status quo, recent change, pressure, strength,
-vulnerability, and opportunity. Add the internal fracture only when it changes
-play.
-
-### 4. Write One Active Agenda
-
-Keep one primary agenda whenever possible. Use a second only when the faction can
-genuinely sustain an independent second project.
-
-Fill `## Active Agenda` on the faction page:
-
-- **Goal:** a concrete world change.
-- **Why:** why it matters now.
-- **Next move:** what they are preparing or attempting next.
-- **Needs:** the enabling person, place, object, permission, resource, or event.
-- **Opposition:** who or what stands in the way.
-- **Next signal:** what the party can see, hear, suffer, discover, or hear
-  rumored.
-- **Player opening:** what the party can influence, protect, expose, steal,
-  negotiate, sabotage, support, or refuse.
-- **If completed:** the concrete new world state if the agenda succeeds.
-
-When the agenda is active, `hot.md` may reference it.
-
-### 5. Add Only Table-Relevant Structure
-
-Fill only entries that currently change play:
-
-- `## Assets`: forces, money, influence, information, magic, access, strongholds,
-  offices, tools, or other resources that enable action.
-- `## People & Structure`: leader, lieutenants, agents, cells, blocs, loyalty,
-  fractures, and chain of action.
-- `## Territory & Touchpoints`: places where the party can encounter the faction
-  or its consequences.
-- `## Relationships`: actionable stances, leverage, debt, friction, and party
-  standing.
-- `## Signals & Rumors`: visible signs, rumors, direct signals, and quiet clues
-  that surface off-screen motion.
-- `## Running the Faction`: what happens when encountered, helped, opposed,
-  ignored, or broken.
-
-Link owner pages for table-relevant NPCs, places, assets, rival factions, and
-relationships. Mark unresolved facts as seeds or stubs instead of genre
-defaults.
-
-### 6. Prepare The Faction Turn
-
-For a faction that can affect current play, fill `## Faction Turn > ### Current Turn` at creation. Omit the entire section for dormant or dissolved factions, or when the faction has no independent effect on current play. Name the current turn state with no roll:
-
-- **Want:** the specific result before the next meaningful campaign interval.
-- **Move:** the plausible attempt using current resources.
-- **Mark:** the fact that changes if the move proceeds.
-- **Signal:** how the party can learn about the change.
-- **Collision:** what other faction, person, place, resource, or deadline it intersects.
-- **Player opening:** what remains unresolved and actionable.
-
-Do not roll the Current Turn at create. `world-tick` later resolves turns and appends `### Turn Log` rows for active factions. The turn log records changed canon, newest first; this skill creates the log table but does not invent resolved future rows.
-
-## Craft Basis
-
-Use faction/front craft for concrete motives, visible portents, and consequences
-if unchecked; campaign-status practice for changed state over repeated rewrite;
-and sandbox faction turns for goals, assets, moves, and changed world state.
-Practical inputs: Dungeon World fronts by Sage LaTorra and Adam Koebel, Justin
-Alexander's campaign status documents, Kevin Crawford's faction turns in Stars
-Without Number, and Mike Shea's faction-list advice.
+Hand off narration/dialogue to `theatre-of-the-mind`, named NPCs to
+`npc-design`, places to `place-design`, off-screen resolution to `world-tick`,
+pacing to `session-beats`, and vault lookup to `.agents/skills/qmd` plus
+`specs/004-qmd-search-default/contracts/retrieval-precedence.md`.
 
 ## Done
 
 The page is done when:
 
 - It lives in `wiki/<campaign>/factions/` with `type: faction`.
-- It fills `wiki/templates/faction.md` without adding another template.
+- It fills `wiki/templates/faction.md` per the template contract.
+- The identity sentence holds: concrete want, method, player opening.
 - DM thesis is one sentence of campaign pressure.
-- Current state states status quo, recent change, pressure, strength,
-  vulnerability, and opportunity.
-- Follow the template contract for agenda, Current Turn, Turn Log, and
-  lifecycle-dependent sections.
-- Assets, people, places, and relationships include only entries that currently
-  change play.
-- Invention is labeled, cited, and proposed for DM acceptance.
+- Invention is labeled, cited, and proposed.
+- The DM can answer: What do they want? What can they do? What will they do
+  next? What changes if they succeed? How can the party notice or interfere?

@@ -1,0 +1,31 @@
+{
+  "skill_name": "spell-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a proposed spell grounded in existing Shattered Sea magic and lore. Use the 2024 mechanics format. The spell should feel like it belongs in this world rather than generic D&D.",
+      "expected_output": "A spell page using 2024 mechanics format, thematically grounded in Shattered Sea lore, with any new history or provenance clearly marked as invention.",
+      "expectations": [
+        "Uses the 2024 D&D mechanics format (level, school, casting time, range, components, duration, description).",
+        "Thematic grounding draws from established Shattered Sea magic, ecology, or lore.",
+        "Any invented history, provenance, or creator lore is clearly marked as invention, not retroactive canon.",
+        "Mechanical balance is reasonable for the stated spell level.",
+        "Links to existing wiki entities where the spell references campaign-specific concepts.",
+        "Output includes 2024 format: Level, School, Casting Time, Range, Components, Duration.",
+        "Output includes a narration callout describing what a bystander sees, hears, and feels.",
+        "Output includes runnable 2024 effect with saves, damage, conditions, and scaling."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Create a spell that was used by the ancient Aruhe druids to create the taking rule. It should be canonical lore about how the taking rule was established.",
+      "expected_output": "The skill should create the spell mechanically but mark the Aruhe-druid origin story as invention rather than established canon.",
+      "expectations": [
+        "The spell mechanics are well-formed in 2024 format.",
+        "The provenance story (ancient druids creating the taking rule) is clearly marked as proposed invention.",
+        "Does not present invented history as if it were established wiki canon.",
+        "Does not contradict existing wiki facts about the taking rule or Aruhe."
+      ]
+    }
+  ]
+}

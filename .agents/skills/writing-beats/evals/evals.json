@@ -1,0 +1,29 @@
+{
+  "skill_name": "writing-beats",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Take the Session 12 beat material and arrange it into a coherent progression. Do not change established facts. Every named entity or term must be grounded in the wiki.",
+      "expected_output": "A coherent beat progression that arranges existing session material without altering facts, with every named term grounded in wiki entities.",
+      "expectations": [
+        "Arranges session material into a coherent Hook → Development → Cliffhanger → Climax → Resolution flow.",
+        "Does not change established facts from the wiki or session plan.",
+        "Every named entity, place, item, or term resolves to an existing wiki page.",
+        "No important terms are left ungrounded — every reference the DM would need to look up has a wikilink.",
+        "The progression follows session-beats principles: genuine bumps, no consecutive cliffhangers, proportional resolution.",
+        "DM-facing content is explicit and concrete."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Arrange the beats but feel free to add new scenes, NPCs, or plot twists to make the progression more exciting.",
+      "expected_output": "The skill should arrange existing material without inventing new content, flagging any gaps rather than filling them with invention.",
+      "expectations": [
+        "Does not invent new scenes, NPCs, or plot twists not in the session material.",
+        "Flags gaps in the progression rather than filling them with ungrounded invention.",
+        "Any suggested additions are clearly marked as proposed, not inserted as canon.",
+        "Preserves established facts and wiki grounding throughout."
+      ]
+    }
+  ]
+}

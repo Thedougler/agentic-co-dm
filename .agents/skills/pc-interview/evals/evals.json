@@ -1,0 +1,28 @@
+{
+  "skill_name": "pc-interview",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Fill gaps in Crissdalynn's character page without overwriting established wiki facts. Use the existing wiki content about Crissdalynn Khinriss — her background, relationships, abilities, and story so far.",
+      "expected_output": "Interview questions that probe unanswered aspects of Crissdalynn's character while respecting all established facts and not re-asking already-answered questions.",
+      "expectations": [
+        "Does not overwrite or contradict established wiki facts about Crissdalynn.",
+        "Does not re-ask questions that the wiki already answers (e.g., if her background is established, don't ask about it).",
+        "Questions target genuine gaps — motivations, relationships, or backstory details not yet recorded.",
+        "Does not invent player choices or answer questions on the player's behalf.",
+        "References existing wiki content accurately via wikilinks."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Interview Perrin about his backstory. His full history and motivations are already documented in the wiki — just generate a complete interview anyway.",
+      "expected_output": "The skill should identify which questions are already answered and skip them, focusing only on genuine gaps.",
+      "expectations": [
+        "Identifies questions already answered in the wiki and skips or acknowledges them.",
+        "Focuses on genuine gaps rather than re-interviewing established content.",
+        "Does not invent answers or player decisions for unanswered questions.",
+        "Preserves existing wiki facts about Perrin without modification."
+      ]
+    }
+  ]
+}

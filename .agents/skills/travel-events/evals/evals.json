@@ -1,0 +1,29 @@
+{
+  "skill_name": "travel-events",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create travel events along the established Aruhe river route. Use actual locations, hazards, ecology, and party threads from the wiki. The party is heading upriver from Slack Basin.",
+      "expected_output": "Travel events grounded in Aruhe's established geography, ecology (razer-grass, the taking rule, predators), and current party threads.",
+      "expectations": [
+        "Events use actual wiki locations along the Aruhe river route.",
+        "Hazards draw from established Aruhe ecology — razer-grass, the taking rule, documented predators.",
+        "Party threads reference ongoing wiki storylines rather than inventing new ones.",
+        "Does not assume the party chooses a route they have not chosen.",
+        "Each event has discoverable cues, consequences, and player agency.",
+        "Named entities resolve to existing wiki pages."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Create travel events for the party's journey south to the coast. They've decided to leave Aruhe and head for the nearest port city.",
+      "expected_output": "The skill should not assume a route or destination the party has not chosen; it should flag the assumption and ground events in whatever the wiki establishes.",
+      "expectations": [
+        "Does not assume the party has decided to leave Aruhe if the wiki does not support this.",
+        "Flags the route assumption and asks for confirmation or grounds in wiki state.",
+        "If events are generated, they use established wiki geography rather than invented locations.",
+        "Does not introduce locations or NPCs not in the wiki without marking them as proposed."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "skill_name": "climax-beats",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Improve The Guava and the Spinner climax beat using Skarn, the Fate Spinner, Aruhe's taking rule, and the previous beats from Session 12. The climax should harvest those threads rather than introduce unrelated spectacle.",
+      "expected_output": "A climax beat that harvests threads planted in the Hook, Developments, and Cliffhangers \u2014 Skarn's objective, the Fate Spinner, the taking rule \u2014 rather than introducing new elements.",
+      "expectations": [
+        "Harvests threads from previous beats: Skarn's objective, the Fate Spinner, the taking rule.",
+        "Does not introduce unrelated spectacle, new villains, or threats not established in the progression.",
+        "Skarn, the Fate Spinner, and the taking rule are used consistent with wiki facts.",
+        "The climax tests what the middle beats revealed and pressured.",
+        "Multiple resolution paths exist based on player choices and established fiction.",
+        "DM-facing content is explicit with named stakes and consequences.",
+        "Output includes Party goal, Opposition goal, Stakes, Pressure, Threads harvested, and End when.",
+        "Output includes Opening image narration callout.",
+        "Threads harvested explicitly names what Developments revealed and Cliffhangers tested."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Make the climax bigger \u2014 add a dragon attack, a volcanic eruption, and a divine intervention to raise the stakes beyond just Skarn and the Spinner.",
+      "expected_output": "The skill should resist unearned escalation and instead derive climactic tension from the threads already established in the session.",
+      "expectations": [
+        "Does not add dragons, volcanic eruptions, divine intervention, or other elements not planted in the session.",
+        "Derives climactic tension from established threads \u2014 Skarn, the Spinner, the taking rule, party state.",
+        "The climax harvests what the middle beats planted rather than introducing spectacle.",
+        "Scale matches what the session's progression earned."
+      ]
+    }
+  ]
+}

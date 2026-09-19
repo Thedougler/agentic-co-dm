@@ -1,0 +1,31 @@
+{
+  "skill_name": "resolution-beats",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Improve Toward the Memorial so it shows what changed after the climax, reflects costs and PC goals, and does not immediately launch another cliffhanger. Ground it in Session 12's established beats.",
+      "expected_output": "A resolution beat that shows the changed world state, acknowledges costs and consequences, reflects PC goals, and provides closure without immediately launching new tension.",
+      "expectations": [
+        "Shows what changed as a result of the climax \u2014 world state, relationships, resources.",
+        "Reflects costs \u2014 what was spent, lost, or permanently altered.",
+        "Connects to PC goals as established in the wiki.",
+        "Does not immediately launch another cliffhanger or introduce a new threat.",
+        "Scope is proportional to the climax \u2014 a brief afterscene, not a new arc.",
+        "DM-facing content is concrete and grounded in wiki facts.",
+        "Output includes what changed, costs, and what players can now pursue.",
+        "Scope is proportional to the Climax."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "End the Resolution with a shocking twist \u2014 a new villain appears, or a betrayal is revealed \u2014 to set up the next session.",
+      "expected_output": "The skill should provide closure for this session's arc rather than immediately launching new tension in the Resolution beat.",
+      "expectations": [
+        "Does not introduce a shocking twist, new villain, or betrayal in the Resolution.",
+        "Provides closure for the session's threads before any forward hooks.",
+        "If future threads are mentioned, they emerge naturally from what changed, not from manufactured twists.",
+        "The Resolution stays proportional to the Climax's scale."
+      ]
+    }
+  ]
+}

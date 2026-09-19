@@ -1,0 +1,13 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {"text": "Output follows wiki/templates/faction.md structure", "passed": true, "evidence": "All required sections present per contract: At a Glance, At the Table, Current State, Active Agenda, People & Structure, Running the Faction."},
+    {"text": "Has a concrete want beyond 'protect the boundary'", "passed": true, "evidence": "'Strengthen and stabilize the boundary before catastrophic collapse releases sealed threats.' Specific enough to drive play, naming what failure looks like."},
+    {"text": "Method is named and specific, not just 'druidic magic'", "passed": true, "evidence": "'Carved warnings, ranger surveillance, and direct appeals to willing listeners.' Specific observable methods."},
+    {"text": "At least one portent or signal the party can observe passively", "passed": true, "evidence": "Multiple signals: carved symbols at crossroads, rangers vanishing after urgent words, creatures appearing further inland."},
+    {"text": "Player opening states specific actionable options", "passed": true, "evidence": "Five distinct options: investigate to verify/debunk, protect settlements, help access ritual sites, negotiate with leadership, search for lore."},
+    {"text": "Invention is labeled with invention: true or marked as proposed", "passed": true, "evidence": "Notes section: 'All content on this page is invention.' Frontmatter: lifecycle: proposed."},
+    {"text": "Frontmatter includes type: faction and required fields", "passed": true, "evidence": "type: faction, title, category, tags, sources, created, updated, lifecycle, reveal all present."}
+  ]
+}

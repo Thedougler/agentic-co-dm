@@ -1,0 +1,49 @@
+{
+  "eval_id": 1,
+  "eval_name": "sentinels-improve",
+  "prompt": "Improve sentinels-of-the-eyrie.md into a runnable faction page. Preserve Kyzil, Vantyrus, High Eyrie, and the non-intervention doctrine. Use only what the wiki already establishes about the Sentinels.",
+  "assertions": [
+    {
+      "id": "a1",
+      "text": "Preserves non-intervention doctrine as core trait",
+      "type": "content",
+      "check": "grep"
+    },
+    {
+      "id": "a2",
+      "text": "Kyzil, Vantyrus, and High Eyrie appear with accurate roles",
+      "type": "content",
+      "check": "grep"
+    },
+    {
+      "id": "a3",
+      "text": "No invented politics or schisms not in the wiki",
+      "type": "guardrail",
+      "check": "manual"
+    },
+    {
+      "id": "a4",
+      "text": "DM thesis is one sentence of campaign pressure",
+      "type": "quality",
+      "check": "manual"
+    },
+    {
+      "id": "a5",
+      "text": "At the Table section has concrete entries for all 5 fields",
+      "type": "structure",
+      "check": "grep"
+    },
+    {
+      "id": "a6",
+      "text": "Active Agenda has goal, next move, and player opening",
+      "type": "structure",
+      "check": "grep"
+    },
+    {
+      "id": "a7",
+      "text": "Identity sentence appears before the page draft",
+      "type": "process",
+      "check": "manual"
+    }
+  ]
+}

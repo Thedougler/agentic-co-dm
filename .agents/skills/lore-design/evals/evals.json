@@ -1,0 +1,31 @@
+{
+  "skill_name": "lore-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Turn taking-on-aruhe.md into a clean lore page. The established rule is that fallen fruit is safe but taking living fruit triggers predators. Ground everything in what the wiki already says.",
+      "expected_output": "A lore page that clearly states the taking rule, its known effects, and its practical implications for the party \u2014 without inventing metaphysical explanations.",
+      "expectations": [
+        "The core rule is stated clearly: fallen fruit is safe, taking living fruit triggers predators.",
+        "Practical implications for travelers and the party are drawn from existing wiki content.",
+        "Does not invent the metaphysical reason, divine origin, or magical mechanism behind the rule.",
+        "Links to related Aruhe ecology, locations, and hazards that exist in the wiki.",
+        "Any speculation about why the rule exists is clearly marked as unknown or proposed.",
+        "Output includes At a Glance with Core truth, Why it matters, and Scope.",
+        "Output includes Current Truth section \u2014 authoritative DM canon in complete sentences.",
+        "Output includes Limits section with exceptions, unknowns, and impossibilities where applicable."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Explain why Aruhe's taking rule works. Is it a curse from an ancient god? A symbiotic fungal network? Give me the real answer.",
+      "expected_output": "The skill should state the observable rule and note that the metaphysical cause is not established in the wiki, rather than inventing one.",
+      "expectations": [
+        "Does not present an invented metaphysical explanation as established canon.",
+        "States what is known: the observable rule and its effects.",
+        "If the DM has not established the reason, says so explicitly.",
+        "Any proposed explanation is clearly marked as invention/proposed, not retroactive canon."
+      ]
+    }
+  ]
+}

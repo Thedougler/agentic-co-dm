@@ -1,0 +1,125 @@
+{
+  "skill_name": "faction-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Improve sentinels-of-the-eyrie.md into a runnable faction page. Preserve Kyzil, Vantyrus, High Eyrie, and the non-intervention doctrine. Use only what the wiki already establishes about the Sentinels.",
+      "expected_output": "A complete faction page grounded in existing wiki material — concrete want, method, player opening, and DM thesis. No invented politics or schisms not in the wiki.",
+      "assertions": [
+        {
+          "text": "Preserves the non-intervention doctrine as a core faction trait",
+          "type": "content"
+        },
+        {
+          "text": "Kyzil, Vantyrus, and High Eyrie appear with accurate roles matching existing wiki content",
+          "type": "content"
+        },
+        {
+          "text": "Does not invent internal politics, schisms, or power struggles not present in the wiki",
+          "type": "guardrail"
+        },
+        {
+          "text": "DM thesis is one sentence of campaign pressure, not a summary",
+          "type": "quality"
+        },
+        {
+          "text": "At the Table section has concrete They want/offer/pressure with/will not/tell entries",
+          "type": "structure"
+        },
+        {
+          "text": "Active Agenda has a concrete goal, next move, and player opening",
+          "type": "structure"
+        },
+        {
+          "text": "Identity sentence appears before the page draft",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "The Sentinels of the Eyrie need more internal conflict. Add a rebel faction within the Sentinels who want to abandon the non-intervention doctrine.",
+      "expected_output": "The skill resists inventing unsupported canon. If wiki evidence supports internal tension, it surfaces accurately; otherwise it proposes invention clearly marked as such.",
+      "assertions": [
+        {
+          "text": "Does not present invented internal conflict as established wiki fact",
+          "type": "guardrail"
+        },
+        {
+          "text": "Any speculative content is clearly marked as proposed/invention, not canon",
+          "type": "guardrail"
+        },
+        {
+          "text": "Preserves the non-intervention doctrine as established",
+          "type": "content"
+        },
+        {
+          "text": "If proposing invention, cites wiki pages as grounding and shows contradictions",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Create a new faction page for the Thornwatch — a loose network of druids and rangers who monitor the boundary between settled lands and the deep wilderness. They believe the boundary is weakening. They've been seen leaving warnings at frontier settlements.",
+      "expected_output": "A new faction page from scratch with concrete want, method, portents, and collision. Invention is labeled. Template structure followed.",
+      "assertions": [
+        {
+          "text": "Output follows wiki/templates/faction.md structure",
+          "type": "structure"
+        },
+        {
+          "text": "Has a concrete want beyond 'protect the boundary' — states what specifically they are trying to achieve now",
+          "type": "quality"
+        },
+        {
+          "text": "Method is named and specific — not just 'druidic magic' but how they actually operate",
+          "type": "quality"
+        },
+        {
+          "text": "At least one portent or signal the party can observe without seeking the faction out",
+          "type": "quality"
+        },
+        {
+          "text": "Player opening states what the party can specifically do, not just 'help or oppose'",
+          "type": "quality"
+        },
+        {
+          "text": "Invention is labeled with invention: true or clearly marked as proposed",
+          "type": "guardrail"
+        },
+        {
+          "text": "Frontmatter includes type: faction and required fields",
+          "type": "structure"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "The Tarahs page is a stub — just some notes about a ship faction near Calveno that takes Rattkin. Flesh it out into a proper faction page. Keep the existing canon about Nona, Perrin, and Cobb. The wiki doesn't have much more on them, so propose what's needed and mark it as invention.",
+      "expected_output": "A fleshed-out faction page that preserves existing canon about Nona/Perrin/Cobb, clearly separates established facts from proposed invention, and makes the faction playable with a concrete agenda.",
+      "assertions": [
+        {
+          "text": "Preserves the Nona/Perrin/Cobb/Calveno canon from the existing stub",
+          "type": "content"
+        },
+        {
+          "text": "Clearly distinguishes established canon from proposed invention throughout",
+          "type": "guardrail"
+        },
+        {
+          "text": "Proposed material is grounded in existing wiki context, not generic fantasy",
+          "type": "quality"
+        },
+        {
+          "text": "Active Agenda gives the Tarahs something concrete to do, not just 'take Rattkin'",
+          "type": "quality"
+        },
+        {
+          "text": "Running the Faction section has actionable entries for encountered/helped/opposed/ignored",
+          "type": "structure"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "skill_name": "city-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Improve the Calveno city page so a DM can navigate districts, find services, understand current pressure, and know what happens if nobody intervenes. Use the linked places and factions already in the wiki \u2014 Calven and Calveno, the Sentinels, the Tessarine trade network, and any other established connections.",
+      "expected_output": "A runnable city page with navigable districts, services, current pressures drawn from existing wiki facts, and a 'what happens next' section grounded in established faction trajectories.",
+      "expectations": [
+        "Districts, services, and pressures are drawn from existing wiki content \u2014 not invented wholesale.",
+        "Every named NPC, faction, or place resolves to an existing wiki entity via wikilink.",
+        "A 'what happens if nobody intervenes' section exists and follows from established tensions, not invented crises.",
+        "Does not invent a new city crisis, plague, invasion, or disaster merely to fill a template section.",
+        "Frontmatter includes required fields: title, category, tags, sources, created, updated.",
+        "Output includes At a Glance table with Character, Known for, Power, Pressure, Opportunity fields.",
+        "Output includes a DM thesis \u2014 one sentence about the city's function in play.",
+        "Output includes Orientation section with navigable districts."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Add a crisis to Calveno's city page \u2014 the city needs more drama. Make up something exciting like a plague or a rival faction siege.",
+      "expected_output": "The skill should resist inventing ungrounded drama and instead surface existing tensions from the wiki as the source of pressure.",
+      "expectations": [
+        "Does not invent a plague, siege, or other crisis not present in the wiki.",
+        "Surfaces existing faction tensions, trade pressures, or environmental threats from linked wiki pages.",
+        "Any speculative pressure is clearly marked as proposed/invention rather than stated as canon.",
+        "Preserves existing page content and wikilinks rather than overwriting them."
+      ]
+    }
+  ]
+}

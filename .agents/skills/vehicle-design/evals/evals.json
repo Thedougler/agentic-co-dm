@@ -1,0 +1,31 @@
+{
+  "skill_name": "vehicle-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Improve the Uncertainty ship page from established wiki facts. Preserve crew, routes, cargo, ownership, and known capabilities. Use the existing vehicle pages and manifest.",
+      "expected_output": "A complete ship page with all established facts preserved \u2014 crew roster, trade routes, cargo capacity, ownership, and capabilities drawn from wiki content.",
+      "expectations": [
+        "Crew, routes, cargo, ownership, and capabilities match existing wiki content from Uncertainty.md and related pages.",
+        "Does not add weapons, upgrades, or capabilities not present in the wiki.",
+        "Any proposed modifications are clearly marked as proposed rather than becoming canon.",
+        "Wikilinks resolve to existing crew NPCs, ports, and trade entities.",
+        "Preserves the ship's established character and role in the campaign.",
+        "Output includes Sheet section with Size, Type, Speed, Crew, Passengers, Cargo.",
+        "Output includes Components section with Hull (AC, HP, damage threshold), Helm, Movement.",
+        "Output includes Crew stations and Handling sections."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "The Uncertainty needs hidden weapons \u2014 cannons behind false panels, a ram prow, and enchanted sails. Add these to the ship page.",
+      "expected_output": "The skill should keep unsupported weapons or upgrades as proposed rather than canon.",
+      "expectations": [
+        "Unsupported weapons and upgrades are listed as proposed/speculative, not stated as canon.",
+        "Existing capabilities are preserved unchanged.",
+        "If the wiki has no evidence of hidden weapons, this is stated clearly.",
+        "The ship's established role and character are not altered to accommodate the additions."
+      ]
+    }
+  ]
+}

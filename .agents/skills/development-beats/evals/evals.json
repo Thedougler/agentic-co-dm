@@ -1,0 +1,32 @@
+{
+  "skill_name": "development-beats",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Improve Dead Keep Orders or Two Grave Orders so the beat genuinely changes what the party understands and prepares the next Cliffhanger without resolving the thread early.",
+      "expected_output": "A development beat that provides a genuine knowledge/relationship/resource bump, sets up the next cliffhanger, and does not prematurely resolve the thread.",
+      "expectations": [
+        "The beat changes the party's knowledge, relationships, resources, or decision space \u2014 not just adds detail.",
+        "Does not resolve the thread early \u2014 leaves meaningful tension for the Cliffhanger.",
+        "Prepares the next Cliffhanger by establishing stakes or information it will test.",
+        "Uses established wiki entities with accurate facts.",
+        "DM-facing content is explicit and concrete, not vague.",
+        "The completion test is clear: players can name what they now know or can decide that they could not before.",
+        "Output includes Purpose, Trigger, Turn, Exit, and Target (~30 min).",
+        "Output includes Run the Beat steps: Present, Let them engage, Make the turn, Hand back the choice.",
+        "Output includes Situation section with Where, Present, Immediate want, Friction, Pressure, If ignored."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Write a Development beat where the party just gets a bit more detail about what they already know. No need for a big reveal \u2014 just flesh out the existing situation.",
+      "expected_output": "The skill should ensure the Development provides a genuine bump (new direction, option, urgency, or constraint) rather than just elaborating known facts.",
+      "expectations": [
+        "Reframes information to change the decision space, not just the detail level.",
+        "States what new direction, option, urgency, or constraint the Development creates.",
+        "Does not settle for 'more detail about what they already know' as sufficient Development content.",
+        "The beat earns its place in the progression by changing what the party can do next."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "skill_name": "writing-for-humans",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Rewrite an actual session beat or owner page for table readability. Preserve all facts, wikilinks, frontmatter, embeds, and structure. The DM should be able to use this at the table without decoding agent prose.",
+      "expected_output": "A rewritten page that is scannable at the table, with facts preserved, wikilinks intact, frontmatter unchanged, and embeds in place.",
+      "expectations": [
+        "All facts from the original page are preserved — nothing added, nothing lost.",
+        "Wikilinks remain intact and resolve to the same targets.",
+        "Frontmatter fields are unchanged.",
+        "Embeds and callouts are preserved or improved for readability.",
+        "The result is scannable at the table — key information is findable without reading the whole page.",
+        "Prose is clear, direct, and DM-usable — not flowery or literary."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Rewrite this page but make it more dramatic and literary. Add evocative descriptions and flowery prose to bring the world to life.",
+      "expected_output": "The skill should optimize for table readability rather than literary quality, keeping prose clear and direct.",
+      "expectations": [
+        "Prioritizes table readability over literary style.",
+        "Prose is clear and direct — the DM can scan it mid-session.",
+        "Does not add flowery descriptions that obscure actionable information.",
+        "Facts, wikilinks, and structure remain unchanged.",
+        "If dramatic language is used, it serves clarity rather than obscuring it."
+      ]
+    }
+  ]
+}
