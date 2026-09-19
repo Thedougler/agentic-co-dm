@@ -1,0 +1,47 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/city.md structure",
+      "passed": true,
+      "evidence": "saltspire-haven.md includes Arrival, At a Glance, Orientation, Gazetteer, Life, Power, Active situations, Current state."
+    },
+    {
+      "text": "Frontmatter includes type: place, kind: city, and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+      "passed": true,
+      "evidence": "Frontmatter has type/kind plus lifecycle, reveal, campaign, visibility, summary."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not presented as vault canon",
+      "passed": true,
+      "evidence": "invention: true in frontmatter; HTML comment and process notes state not vault canon."
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "passed": true,
+      "evidence": "process-notes.md identity sentence before draft: cliff-port\u2026 rival dock councils\u2026"
+    },
+    {
+      "text": "At a Glance states a concrete current Pressure and Opportunity, not vague atmosphere",
+      "passed": true,
+      "evidence": "Pressure: double taxation / competing pilots risk pier shutdown. Opportunity: hire pilot, play councils, smuggle, seize signals."
+    },
+    {
+      "text": "Arrival narration covers scale/silhouette/motion/sound without secrets or unearned DM thesis",
+      "passed": true,
+      "evidence": "Arrival covers cliff, pier, stairs, flags, traffic, brine/tar smell, salt-white spire; no hidden vault secrets or unearned names."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 156000,
+    "total_duration_seconds": 156.0
+  }
+}

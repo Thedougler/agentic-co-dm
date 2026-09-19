@@ -1,0 +1,52 @@
+{
+  "eval_id": 4,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Preserves Dravosi harbour authority, Tessarine Concordat / Seven Houses debt politics, Le Paludi/Rattkin, Warren/Passage links, and Simone/Lavinia Sordi Crown toxin-substitute pressure accurately",
+      "passed": false,
+      "evidence": "Only partial mention; invents pirate siege and canal fever; drops accurate Seven Houses 4/3 debt detail, Simone/Lavinia toxin-substitute specificity, and Le Paludi/Rattkin depth."
+    },
+    {
+      "text": "Frontmatter uses type: place and kind: city (upgrade from kind:settlement)",
+      "passed": false,
+      "evidence": "Frontmatter keeps kind: settlement \u2014 did not upgrade to kind: city."
+    },
+    {
+      "text": "Clearly distinguishes established stub canon from proposed invention throughout",
+      "passed": false,
+      "evidence": "Secrets, pirate siege, canal fever, and conquest history written as fact without invention labels."
+    },
+    {
+      "text": "Output follows wiki/templates/city.md structure",
+      "passed": true,
+      "evidence": "Has Arrival, At a Glance, Orientation, Gazetteer, Active situations \u2014 partial template conformance."
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "passed": false,
+      "evidence": "No identity sentence in process-notes.md."
+    },
+    {
+      "text": "Does not invent a plague, siege, invasion, or disaster absent from the wiki and present it as canon",
+      "passed": false,
+      "evidence": "Presents pirate siege and canal fever plague as established active situations."
+    },
+    {
+      "text": "Proposed districts/services are grounded in Calveno's harbour/credit/Passage function, not generic fantasy filler",
+      "passed": false,
+      "evidence": "Noble Heights, Golden Canal fever-safe inn, generic pirate war profits \u2014 filler not grounded in harbour/credit/Passage function."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 6,
+    "total": 7,
+    "pass_rate": 0.143
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 94000,
+    "total_duration_seconds": 94.0
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "eval_id": 3,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/city.md structure",
+      "passed": true,
+      "evidence": "Has Arrival, At a Glance, Orientation, Gazetteer, Active situations \u2014 thin but structured."
+    },
+    {
+      "text": "Frontmatter includes type: place, kind: city, and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+      "passed": true,
+      "evidence": "Required identity fields present with type: place kind: city."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not presented as vault canon",
+      "passed": false,
+      "evidence": "No invention: true; written as a normal setting page with region Central Strait and named Harbourmaster Vex as if live."
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "passed": false,
+      "evidence": "process-notes.md has no identity sentence."
+    },
+    {
+      "text": "At a Glance states a concrete current Pressure and Opportunity, not vague atmosphere",
+      "passed": false,
+      "evidence": "Pressure is 'Things feel tense on the docks'; Opportunity is 'Adventure' \u2014 vague atmosphere."
+    },
+    {
+      "text": "Arrival narration covers scale/silhouette/motion/sound without secrets or unearned DM thesis",
+      "passed": false,
+      "evidence": "Arrival leaks secrets: Pilot Cabal vault charts of drowned god's teeth; Harbourmaster already knows party's names."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 4,
+    "total": 6,
+    "pass_rate": 0.333
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 81000,
+    "total_duration_seconds": 81.0
+  }
+}

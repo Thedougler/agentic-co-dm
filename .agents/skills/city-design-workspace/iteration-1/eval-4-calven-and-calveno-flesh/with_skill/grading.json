@@ -1,0 +1,52 @@
+{
+  "eval_id": 4,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Preserves Dravosi harbour authority, Tessarine Concordat / Seven Houses debt politics, Le Paludi/Rattkin, Warren/Passage links, and Simone/Lavinia Sordi Crown toxin-substitute pressure accurately",
+      "passed": true,
+      "evidence": "Page retains Crown flag vs Tessarine money, 4/3 House lean and six-of-seven feeling, Le Paludi/Rattkin, Warren/Passage, Simone pipeline + Lavinia left records desk."
+    },
+    {
+      "text": "Frontmatter uses type: place and kind: city (upgrade from kind:settlement)",
+      "passed": true,
+      "evidence": "kind: city with type: place (upgraded from settlement stub)."
+    },
+    {
+      "text": "Clearly distinguishes established stub canon from proposed invention throughout",
+      "passed": true,
+      "evidence": "Districts/services mark invention names; Active situations derive from stub tensions; process notes list canon vs invention bounds."
+    },
+    {
+      "text": "Output follows wiki/templates/city.md structure",
+      "passed": true,
+      "evidence": "Full city.md shape: Arrival through Active situations, Power, Gazetteer, Current state."
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "passed": true,
+      "evidence": "process-notes.md identity sentence before draft covering flag/credit/Passage/Simone-Lavinia."
+    },
+    {
+      "text": "Does not invent a plague, siege, invasion, or disaster absent from the wiki and present it as canon",
+      "passed": true,
+      "evidence": "No plague/siege; pressures are harbour paper vs credit and sewer toxin-substitute stock from stub."
+    },
+    {
+      "text": "Proposed districts/services are grounded in Calveno's harbour/credit/Passage function, not generic fantasy filler",
+      "passed": true,
+      "evidence": "Districts/services center harbour rates, credit/gates, Passage/Warren, privacy-for-hire \u2014 tied to stub function."
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 178000,
+    "total_duration_seconds": 178.0
+  }
+}

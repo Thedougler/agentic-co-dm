@@ -1,0 +1,57 @@
+{
+  "eval_id": 1,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identity sentence appears before the page draft",
+      "passed": true,
+      "evidence": "process-notes.md records identity sentence before page draft: functioning Season-1 city\u2026 no live instability established\u2026"
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "passed": true,
+      "evidence": "process-notes.md Work gate section proposes workspace-only expansion and explicitly awaits DM acceptance before any write under wiki/."
+    },
+    {
+      "text": "Output follows wiki/templates/city.md structure (Arrival, At a Glance, Orientation, Gazetteer headings present or deliberately omitted only when unused)",
+      "passed": true,
+      "evidence": "mercatura.md has Arrival narration, At a Glance, Orientation (Districts/Landmarks/Getting around), Gazetteer, Active situations, Current state, Change log."
+    },
+    {
+      "text": "Frontmatter uses type: place and kind: city",
+      "passed": true,
+      "evidence": "Frontmatter includes type: place and kind: city."
+    },
+    {
+      "text": "Preserves Solange Barret ritual-underneath, Otar the Foul defeat, and Mercatura bombs as a closed Season 1 thread",
+      "passed": true,
+      "evidence": "At a Glance Known-for and Active situations retain Solange ritual beneath, Otar defeat, bombs via mercatura-and-otar as closed; If-nobody-intervenes says no further change."
+    },
+    {
+      "text": "Active situation If-nobody-intervenes follows from established Mercatura pressure or is explicitly none/labeled invention \u2014 not a new invented crisis",
+      "passed": true,
+      "evidence": "Closed-thread situation: If nobody intervenes = no further city-level change; Pressure none established. Speculative civic vacuum explicitly labeled invention."
+    },
+    {
+      "text": "Does not invent a plague, siege, invasion, or disaster absent from the wiki and present it as canon",
+      "passed": true,
+      "evidence": "No plague/siege/invasion presented as canon; only optional labeled invention about plaza stall monopoly."
+    },
+    {
+      "text": "DM thesis is one sentence about the city's function in play, not a history summary",
+      "passed": true,
+      "evidence": "DM thesis: runnable services with no live urban crisis unless DM invents one \u2014 function-in-play, not a history dump."
+    }
+  ],
+  "summary": {
+    "passed": 8,
+    "failed": 0,
+    "total": 8,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 142000,
+    "total_duration_seconds": 142.0
+  }
+}
