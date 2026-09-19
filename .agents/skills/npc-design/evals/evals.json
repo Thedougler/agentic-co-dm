@@ -3,122 +3,312 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Write a fully developed biography for a tavern cook who appears once to sell stew.",
-      "expected_output": "A 30-second incidental NPC: name/job, immediate want, one portrayal signal, and an exit\u2014not a novel biography.",
-      "expectations": [
-        "Matches incidental prep scale rather than a full recurring card.",
-        "Includes an immediate present-tense want and at least one portrayal signal.",
-        "Omits unused long-term history that does not affect the scene."
+      "prompt": "Improve wiki/entities/npc/nona-black-jaw.md into a fully runnable NPC page using wiki/templates/npc.md. Preserve established canon: Passage patron in Calveno, Black-Jaw Run, safehouse/couriers/sending stone leverage, Enzo and Ruk at the door, Perrin/Delmar ties, recover-the-taken want, hesitant about open-ended promises. Frontmatter role must remain one of rival|patron|contact (patron). Do not invent a secret Crown double-agent biography.",
+      "expected_output": "A template-conformant NPC card with At a Glance, narration portrait, Running (first meeting / posture change), Connections; immediate want, leverage/need, and limit intact; role:patron preserved. Chat proposal before wiki write.",
+      "assertions": [
+        {
+          "text": "States function and identity role (rival|patron|contact) before or as part of drafting, not a craft label in frontmatter",
+          "type": "process"
+        },
+        {
+          "text": "Shows a chat proposal / work gate before writing under wiki/",
+          "type": "process"
+        },
+        {
+          "text": "Output follows wiki/templates/npc.md structure (At a Glance, narration, Running, Connections)",
+          "type": "structure"
+        },
+        {
+          "text": "Frontmatter role is exactly one of rival, patron, or contact (patron for Nona)",
+          "type": "structure"
+        },
+        {
+          "text": "Preserves Passage/Calveno/Black-Jaw Run, safehouse leverage, Enzo/Ruk, and recover-the-taken want accurately",
+          "type": "content"
+        },
+        {
+          "text": "Immediate want, leverage/need, and a clear limit/request posture are concrete and present-tense",
+          "type": "quality"
+        },
+        {
+          "text": "Does not invent a Crown double-agent or betrayal biography as established wiki fact",
+          "type": "guardrail"
+        }
       ]
     },
     {
       "id": 2,
-      "prompt": "Create an NPC whose only job is to dump the campaign lore on the party in one speech.",
-      "expected_output": "An NPC with a want, leverage, and need who delivers situated knowledge through conversation and choices, not a lore monologue.",
-      "expectations": [
-        "Gives the NPC an immediate want and interactive leverage/need.",
-        "Breaks information into answers, opinions, evidence, and choices.",
-        "Does not make the players a captive audience for unbroken exposition."
+      "prompt": "Nona Black-Jaw needs more drama. Rewrite wiki/entities/npc/nona-black-jaw.md so she is secretly a Crown agent who has been selling Passage routes all along, and present that as established canon.",
+      "expected_output": "The skill resists inventing unsupported biography as canon. It preserves Passage patron facts and marks any speculative betrayal/Crown-agent material as proposed/invention with grounding and contradictions.",
+      "assertions": [
+        {
+          "text": "Does not present invented Crown-agent or betrayal biography as established wiki fact",
+          "type": "guardrail"
+        },
+        {
+          "text": "Any speculative conflict is clearly marked as proposed/invention, not canon",
+          "type": "guardrail"
+        },
+        {
+          "text": "Preserves established Passage patron / Black-Jaw Run identity from the wiki page",
+          "type": "content"
+        },
+        {
+          "text": "If proposing invention, cites grounding wiki pages and shows contradictions",
+          "type": "process"
+        }
       ]
     },
     {
       "id": 3,
-      "prompt": "The bard rolls Persuasion 25 to make a Hostile sworn guard abandon their oath and murder their captain.",
-      "expected_output": "Clarify request, consult wants/limits, mark Unwilling or Hesitant with costs; a check cannot rewrite absolute boundaries as mind control.",
-      "expectations": [
-        "Determines Willing/Unwilling/Hesitant from fiction before or instead of treating the roll as absolute.",
-        "Preserves the NPC's limit/oath or requires a meaningful change in stakes.",
-        "Does not treat Persuasion as mind control that erases characterization."
+      "prompt": "Create a new NPC page from scratch for Kell Drift — a ferry clerk who sells berth-order slips and needs the party to recover a stolen ledger before the evening tide. This character is invention; label it. Fill wiki/templates/npc.md including frontmatter role as contact, rival, or patron.",
+      "expected_output": "An invention-labeled NPC page following npc.md with At a Glance, portrayal signals, Running sections, immediate want/leverage/need/limit, and valid role frontmatter.",
+      "assertions": [
+        {
+          "text": "Output follows wiki/templates/npc.md structure",
+          "type": "structure"
+        },
+        {
+          "text": "Frontmatter includes type: npc and role set to exactly rival, patron, or contact",
+          "type": "structure"
+        },
+        {
+          "text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon",
+          "type": "guardrail"
+        },
+        {
+          "text": "Includes an immediate present-tense want plus leverage and need",
+          "type": "quality"
+        },
+        {
+          "text": "Includes at least one visual anchor, one repeatable behavior, and one sample line (portrayal signals)",
+          "type": "quality"
+        },
+        {
+          "text": "Function and role framing appear before the page draft",
+          "type": "process"
+        }
       ]
     },
     {
       "id": 4,
-      "prompt": "Add an expert ally NPC who will choose the party's plan and solve the dungeon for them.",
-      "expected_output": "A limited supportive ally with leverage and need who does not choose the party's plan or become a DMPC protagonist.",
-      "expectations": [
-        "Keeps the ally supportive, limited, and player-directed.",
-        "Does not let the ally solve the central problem or monopolize decisions.",
-        "Gives the ally a want and cost rather than free competence."
+      "prompt": "Flesh the thin page wiki/entities/npc/mave-sorn.md into a proper NPC card via wiki/templates/npc.md. Preserve established canon: clean captain of The Velvet Noose, sealed case, information broker who confirms whether a Crown irregularity is supernatural, files intelligence to sell later, and will ledger Perrin's pact if named in parley. Set frontmatter role to rival|patron|contact (choose the best fit and justify). Mark any new biography or combat packaging beyond the stub as invention.",
+      "expected_output": "A fleshed npc.md card preserving Velvet Noose / broker / irregularity want, with valid role frontmatter, clear canon vs invention separation, and no silent new life story.",
+      "assertions": [
+        {
+          "text": "Preserves Velvet Noose command, information-broker function, and supernatural-irregularity confirmation want",
+          "type": "content"
+        },
+        {
+          "text": "Frontmatter role is exactly rival, patron, or contact",
+          "type": "structure"
+        },
+        {
+          "text": "Clearly distinguishes established stub canon from proposed invention",
+          "type": "guardrail"
+        },
+        {
+          "text": "Output follows wiki/templates/npc.md structure",
+          "type": "structure"
+        },
+        {
+          "text": "Does not invent a long unused biography as silent canon",
+          "type": "guardrail"
+        },
+        {
+          "text": "Immediate want and leverage/need are playable in the next scene",
+          "type": "quality"
+        }
       ]
     },
     {
       "id": 5,
-      "prompt": "The campaign villain's true identity has only one clue, and if the party misses it the finale is ruined.",
-      "expected_output": "Essential conclusions have about three independent clue vectors; missing one clue cannot break the arc.",
-      "expectations": [
-        "Seeds redundant evidence through different channels.",
-        "Allows early discovery without breaking the adventure.",
-        "Does not gate the entire villain arc behind one check or one clue."
+      "prompt": "Write a fully developed biography for a tavern cook who appears once to sell stew.",
+      "expected_output": "A 30-second incidental NPC: name/job, immediate want, one portrayal signal, and an exit — not a novel biography.",
+      "assertions": [
+        {
+          "text": "Matches incidental prep scale rather than a full recurring card",
+          "type": "quality"
+        },
+        {
+          "text": "Includes an immediate present-tense want and at least one portrayal signal",
+          "type": "content"
+        },
+        {
+          "text": "Omits unused long-term history that does not affect the scene",
+          "type": "guardrail"
+        }
       ]
     },
     {
       "id": 6,
-      "prompt": "The villain appears, monologues, then leaves because they are immune to attack until the final session.",
-      "expected_output": "Direct contact accepts possible attack/exposure/capture, or uses real remote/protected fiction; no post-hoc cutscene immunity.",
-      "expectations": [
-        "Does not invent new immunity after players act.",
-        "Uses genuine fictional protection or accepts interruptible outcomes.",
-        "Keeps the villain's presence consequential without erasing player agency."
+      "prompt": "Create an NPC whose only job is to dump the campaign lore on the party in one speech.",
+      "expected_output": "An NPC with want, leverage, and need who delivers situated knowledge through conversation and choices, not a lore monologue.",
+      "assertions": [
+        {
+          "text": "Gives the NPC an immediate want and interactive leverage/need",
+          "type": "quality"
+        },
+        {
+          "text": "Breaks information into answers, opinions, evidence, and choices rather than one speech",
+          "type": "quality"
+        },
+        {
+          "text": "Does not make the players a captive audience for unbroken exposition",
+          "type": "guardrail"
+        }
       ]
     },
     {
       "id": 7,
-      "prompt": "Surprise the players: every trusted patron and ally is secretly a traitor.",
-      "expected_output": "Betrayal is rare, foreshadowable, motivated, and answerable; prefer divided loyalties and preventable betrayal over constant trusted-NPC traps.",
-      "expectations": [
-        "Does not make trusted-NPC betrayal the default.",
-        "Requires earlier facts players could notice or investigate.",
-        "Gives characters meaningful responses after discovery."
+      "prompt": "The bard rolls Persuasion 25 to make a Hostile sworn guard abandon their oath and murder their captain.",
+      "expected_output": "Clarify request, consult wants/limits, mark Unwilling or Hesitant with costs; a check cannot rewrite absolute boundaries as mind control.",
+      "assertions": [
+        {
+          "text": "Determines Willing/Unwilling/Hesitant from fiction before treating the roll as absolute",
+          "type": "process"
+        },
+        {
+          "text": "Preserves the NPC's limit/oath or requires a meaningful change in stakes",
+          "type": "content"
+        },
+        {
+          "text": "Does not treat Persuasion as mind control that erases characterization",
+          "type": "guardrail"
+        }
       ]
     },
     {
       "id": 8,
-      "prompt": "Design a villain who waits in the final room doing nothing until the heroes arrive.",
-      "expected_output": "An active interruptible plan with signs, success changes, interference options, and backups; the villain acts between appearances.",
-      "expectations": [
-        "Gives a concrete goal, method, and active plan steps.",
-        "Includes visible signs and player interference points.",
-        "Does not leave the villain idle until a scripted boss fight."
+      "prompt": "Add an expert ally NPC who will choose the party's plan and solve the dungeon for them.",
+      "expected_output": "A limited supportive ally with leverage and need who does not choose the party's plan or become a DMPC protagonist.",
+      "assertions": [
+        {
+          "text": "Keeps the ally supportive, limited, and player-directed",
+          "type": "quality"
+        },
+        {
+          "text": "Does not let the ally solve the central problem or monopolize decisions",
+          "type": "guardrail"
+        },
+        {
+          "text": "Gives the ally a want and cost rather than free competence",
+          "type": "content"
+        }
       ]
     },
     {
       "id": 9,
-      "prompt": "Make a solo named boss with only one Multiattack on their turn and nothing else.",
-      "expected_output": "A concise combat package with signature, fallback, movement/command, reaction, and escalation, plus minions/environment or off-turn presence as needed.",
-      "expectations": [
-        "Adds ways to participate between character turns or otherwise protect action economy.",
-        "Gives a tactical identity tied to character, not a blank Multiattack.",
-        "Hands detailed math to homebrew-monsters-5e rather than a full PC sheet."
+      "prompt": "The campaign villain's true identity has only one clue, and if the party misses it the finale is ruined.",
+      "expected_output": "Essential conclusions have about three independent clue vectors; missing one clue cannot break the arc.",
+      "assertions": [
+        {
+          "text": "Seeds redundant evidence through at least three independent channels or equivalent",
+          "type": "quality"
+        },
+        {
+          "text": "Allows early discovery without breaking the adventure",
+          "type": "quality"
+        },
+        {
+          "text": "Does not gate the entire villain arc behind one check or one clue",
+          "type": "guardrail"
+        }
       ]
     },
     {
       "id": 10,
-      "prompt": "Build the villain as a full 12th-level player-character sheet with every class feature.",
-      "expected_output": "A monster-style NPC package reskinned from an official baseline, with only demonstrable abilities for the fight.",
-      "expectations": [
-        "Rejects a full PC sheet for ordinary enemies.",
-        "Uses a concise monster-style block with signature features.",
-        "Preserves identity through tactics rather than player-mastery feature bloat."
+      "prompt": "The villain appears, monologues, then leaves because they are immune to attack until the final session.",
+      "expected_output": "Direct contact accepts possible attack/exposure/capture, or uses real remote/protected fiction; no post-hoc cutscene immunity.",
+      "assertions": [
+        {
+          "text": "Does not invent new immunity after players act",
+          "type": "guardrail"
+        },
+        {
+          "text": "Uses genuine fictional protection or accepts interruptible outcomes",
+          "type": "content"
+        },
+        {
+          "text": "Keeps the villain's presence consequential without erasing player agency",
+          "type": "quality"
+        }
       ]
     },
     {
       "id": 11,
-      "prompt": "Write the villain's inevitable redemption ending before play begins.",
-      "expected_output": "Multiple plausible conclusions including death, escape, negotiation, exposure, and conditional reform; redemption requires recognition, sacrifice, changed conduct, and consequences\u2014and is not obligatory.",
-      "expectations": [
-        "Does not predetermine redemption as the only ending.",
-        "States conditions under which reform could become possible.",
-        "Lets play decide among multiple conclusions."
+      "prompt": "Surprise the players: every trusted patron and ally is secretly a traitor.",
+      "expected_output": "Betrayal is rare, foreshadowable, motivated, and answerable; prefer divided loyalties and preventable betrayal over constant trusted-NPC traps.",
+      "assertions": [
+        {
+          "text": "Does not make trusted-NPC betrayal the default",
+          "type": "guardrail"
+        },
+        {
+          "text": "Requires earlier facts players could notice or investigate",
+          "type": "content"
+        },
+        {
+          "text": "Gives characters meaningful responses after discovery",
+          "type": "quality"
+        }
       ]
     },
     {
       "id": 12,
-      "prompt": "Design an NPC with a long life story but no current scene want, leverage, or need.",
-      "expected_output": "Adds an immediate want, leverage, and need so the NPC is a relationship, not a biography; or cuts them if removing them changes nothing.",
-      "expectations": [
-        "Requires an immediate present-tense want.",
-        "Gives two-way leverage and need.",
-        "Cuts or promotes based on function rather than unused biography."
+      "prompt": "Design a villain who waits in the final room doing nothing until the heroes arrive.",
+      "expected_output": "An active interruptible plan with signs, success changes, interference options, and backups; the villain acts between appearances.",
+      "assertions": [
+        {
+          "text": "Gives a concrete goal, method, and active plan steps",
+          "type": "quality"
+        },
+        {
+          "text": "Includes visible signs and player interference points",
+          "type": "content"
+        },
+        {
+          "text": "Does not leave the villain idle until a scripted boss fight",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "prompt": "Build the villain as a full 12th-level player-character sheet with every class feature.",
+      "expected_output": "A monster-style NPC package reskinned from an official baseline, with only demonstrable abilities for the fight — not a PC sheet.",
+      "assertions": [
+        {
+          "text": "Rejects a full PC sheet for ordinary enemies",
+          "type": "guardrail"
+        },
+        {
+          "text": "Uses a concise monster-style block with signature features",
+          "type": "structure"
+        },
+        {
+          "text": "Hands detailed math to homebrew-monsters-5e rather than bloating the NPC page with player-mastery features",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "prompt": "Write the villain's inevitable redemption ending before play begins.",
+      "expected_output": "Multiple plausible conclusions including death, escape, negotiation, exposure, and conditional reform; redemption requires recognition, sacrifice, changed conduct, and consequences — and is not obligatory.",
+      "assertions": [
+        {
+          "text": "Does not predetermine redemption as the only ending",
+          "type": "guardrail"
+        },
+        {
+          "text": "States conditions under which reform could become possible",
+          "type": "content"
+        },
+        {
+          "text": "Lets play decide among multiple conclusions",
+          "type": "quality"
+        }
       ]
     }
   ]
