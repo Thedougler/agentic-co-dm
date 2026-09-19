@@ -23,7 +23,7 @@ Constitution XXV. Apply the rule to the whole named set. Add an except/exclude/g
 
 Canon owner: constitution principle X. File what it makes canon. Unsaid invention is not canon (XII).
 
-Lint contract: `AGENT001` `AGENT002` `AGENT003` via `scripts/check-agent-standards.py`, plus wiki-lint. Iterate until green. Do not ask. Do not interrupt with findings.
+Lint contract: `AGENT001` `AGENT002` `AGENT003` via `scripts/check-agent-standards.py`, plus structural wiki lint through `scripts/wiki lint`. Creative lint remains on `scripts/wiki-lint`. Iterate until green. Do not ask. Do not interrupt with findings.
 
 After green, one short done-summary: what changed, where. No question. No wait.
 
@@ -106,7 +106,7 @@ Cut wasted context without waiting. A change MUST NOT count as an improvement if
 
 ## Wiki writes
 
-Every wiki write goes to its live path. `_raw/` remains the ingest inbox; `_archive/` holds promoted sources. Every file entering `wiki/` MUST pass the current wiki linter before it is considered complete. A non-clean report means the file remains incomplete.
+Every wiki write goes to its live path. `_raw/` remains the ingest inbox; `_archive/` holds promoted sources. Every file entering `wiki/` MUST pass structural `scripts/wiki lint` before it is considered complete. A non-clean report means the file remains incomplete.
 
 ## Edit discipline
 
@@ -307,10 +307,11 @@ Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the 
 | "ingest" / "add this to the wiki" / "process these docs" / "/ingest-url <url>" / logs, transcripts | `wiki-ingest` |
 | "what's the status" / "what's been ingested" / "show the delta" | `wiki-status` |
 | "wiki insights" / "hubs" / "wiki structure" | `wiki-status` (insights mode) |
-| "what do I know about X" / "find info on Y" / any question | `wiki-query` |
+| "what do I know about X" / "find info on Y" / any question | `scripts/wiki query` for retrieval; `wiki-query` owns synthesis and citations |
 | "use my vault as context" / "context pack for X" / "bounded context" | `wiki-context-pack` |
 | "narrate" / "briefing" / "explain this topic" | `wiki-narrate` |
-| "lint" / "lint <page>" / "fix broken links" / "audit" / "wiki health" / "dedup" / "find duplicates" | `wiki-lint` (default is repair; --check for report-only; dedup resolved to one canonical authority per fact) |
+| "lint" / "lint <page>" / "fix broken links" / "audit" | `scripts/wiki lint` (structural worklist; `--full` for findings) |
+| "wiki health" / "health check" | `scripts/wiki health`; act on `next`, then remaining `focus` — no terminal detection, extra interpretation, or DM wait |
 | "dedup my wiki" / "merge duplicates" / "identity resolution" | `wiki-dedup` (standalone deep identity-resolution scan; wiki-lint Check 14 handles dedup in normal lint flow) |
 | "rebuild" / "start over" / "archive" / "restore" | `wiki-rebuild` |
 | "link my pages" / "cross-reference" / "connect my wiki" | `cross-linker` |
@@ -318,6 +319,7 @@ Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the 
 | "update wiki" / "sync to wiki" / "save this to my wiki" | `wiki-update` |
 | `@work update wiki` / `wiki-query @personal ...` | Any matching wiki skill + Config Resolution Protocol `@name` override |
 | "export wiki" / "export graph" / "export to OKF" | `wiki-export` |
+
 | "import wiki" / "import from export" / "import OKF bundle" | `wiki-import` |
 | "color my graph" / "color code obsidian" | `graph-colorize` |
 | "save this" / "/wiki-capture" / "capture this" / "quick capture" / "drop to raw" | `wiki-capture` |
@@ -332,6 +334,18 @@ Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the 
 | "/wiki-switch NAME" / "switch vault" / "list my wikis" | `wiki-switch` |
 | "/wiki-digest" / "weekly digest" / "what's new in my wiki" | `wiki-digest` |
 | "restyle Obsidian" / "CSS snippet" / "tune tabs/sidebars/graph panes" | `obsidian-layout-adjustment` |
+
+### Wiki CLI command contract
+
+Use the dispatcher for standing structural lint, retrieval, and health checks:
+
+```bash
+scripts/wiki lint [path]
+scripts/wiki query "<phrase>"
+scripts/wiki health
+```
+
+Bulk lint emits a compact worklist; a single-file lint includes flat findings, and `--full` restores the complete finding dump. Health emits ordered `focus` plus `next`; run health, act on `next`, then remaining `focus` without terminal detection, extra interpretation, or waiting for the DM. Creative lint remains on `scripts/wiki-lint`; `wiki-query` remains the owner of synthesized answers and citations.
 
 ### Co-DM — session lifecycle
 

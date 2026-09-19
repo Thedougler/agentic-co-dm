@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -434,6 +435,16 @@ def main(argv: list[str] | None = None) -> int:
         help="include an optional corpus creative-lint report (A7)",
     )
     args = parser.parse_args(argv)
+    if args.report:
+        environment = None
+        if args.vault != "wiki" or "OBSIDIAN_VAULT_PATH" not in os.environ:
+            environment = os.environ.copy()
+            environment["OBSIDIAN_VAULT_PATH"] = args.vault
+        return subprocess.run(
+            [sys.executable, str(ROOT / "scripts/wiki"), "health"],
+            cwd=ROOT,
+            env=environment,
+        ).returncode
 
     cwd = ROOT
     if not WIKI_LINT.is_file():

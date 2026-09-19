@@ -1,0 +1,410 @@
+#!/usr/bin/env python3
+"""Agent-shaped structural lint, retrieval, and health CLI."""
+from __future__ import annotations
+
+import argparse
+import contextlib
+import importlib.machinery
+import importlib.util
+import io
+import json
+import os
+import subprocess
+import sys
+from pathlib import Path
+from typing import Any
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from tools.wiki_ops.cli import configured_vault, emit_json, resolve_vault
+from tools.wiki_ops.health import build_focus, build_health_snapshot, build_trends
+from tools.wiki_ops.lint_cache import digest_config, file_sha256, load_cache, save_cache
+from tools.wiki_ops.pretty import render_health, render_lint, render_query, render_usage_error
+from tools.wiki_ops.worklist import DEFAULT_HARD_KEYS, build_worklist
+
+SKIP_DIRS = frozenset({".obsidian", "_archive", "_archives", "_raw", "_readouts", "_meta", "templates", "attachments"})
+HARD_SEVERITIES = frozenset({"BLOCK", "REPAIR", "ERROR", "HARD"})
+
+
+def _machine_error(message: str, *, pretty: bool = False) -> int:
+    if pretty:
+        print(render_usage_error(message), file=sys.stderr)
+    else:
+        emit_json({"status": "error", "error": message})
+    return 2
+
+
+def _live_files(vault: Path) -> list[Path]:
+    return sorted(
+        path for path in vault.rglob("*.md")
+        if path.is_file() and not SKIP_DIRS.intersection(path.relative_to(vault).parts)
+    )
+
+
+def _resolve_paths(vault: Path, values: list[str]) -> list[str]:
+    if not values:
+        return [path.relative_to(vault).as_posix() for path in _live_files(vault)]
+    selected: set[str] = set()
+    root = vault.resolve()
+    for raw in values:
+        candidate_input = Path(raw)
+        if candidate_input.is_absolute():
+            raise ValueError(f"path must be vault-relative: {raw!r}")
+        candidate = (root / candidate_input).resolve()
+        try:
+            candidate.relative_to(root)
+        except ValueError as exc:
+            raise ValueError(f"path escapes vault: {raw!r}") from exc
+        if not candidate.exists():
+            raise ValueError(f"path not found in vault: {raw!r}")
+        if SKIP_DIRS.intersection(candidate.relative_to(root).parts):
+            raise ValueError(f"path is in a skipped directory: {raw!r}")
+        if candidate.is_file():
+            if candidate.suffix.casefold() != ".md":
+                raise ValueError(f"path must be a Markdown file: {raw!r}")
+            selected.add(candidate.relative_to(root).as_posix())
+        elif candidate.is_dir():
+            selected.update(
+                path.relative_to(root).as_posix()
+                for path in candidate.rglob("*.md")
+                if path.is_file() and not SKIP_DIRS.intersection(path.relative_to(root).parts)
+            )
+        else:
+            raise ValueError(f"path is not a file or directory: {raw!r}")
+    return sorted(selected)
+
+
+def _finding(rule: str, item: Any, vault: Path) -> dict[str, Any] | None:
+    if not isinstance(item, dict):
+        return None
+    location = item.get("location") if isinstance(item.get("location"), dict) else {}
+    raw_file = item.get("file") or item.get("page") or item.get("path") or location.get("file")
+    if not raw_file:
+        return None
+    path = Path(str(raw_file))
+    if path.is_absolute():
+        try:
+            raw_file = path.resolve().relative_to(vault.resolve()).as_posix()
+        except ValueError:
+            raw_file = path.as_posix()
+    else:
+        raw_file = path.as_posix()
+    line = item.get("line") or location.get("line") or 1
+    try:
+        line = max(1, int(line))
+    except (TypeError, ValueError):
+        line = 1
+    severity = str(item.get("severity") or item.get("level") or "WARN")
+    message = str(item.get("message") or item.get("reason") or item.get("text") or "")
+    result = {"rule": str(rule), "file": raw_file, "line": line, "severity": severity, "message": message}
+    if "hard_fail" in item:
+        result["hard_fail"] = bool(item["hard_fail"])
+    return result
+
+
+def _flatten(report: dict[str, Any], vault: Path) -> list[dict[str, Any]]:
+    flattened: list[dict[str, Any]] = []
+    findings = report.get("findings") or {}
+    if isinstance(findings, dict):
+        for rule, items in findings.items():
+            if isinstance(items, dict):
+                items = [items]
+            if isinstance(items, list):
+                for item in items:
+                    normalized = _finding(str(rule), item, vault)
+                    if normalized:
+                        flattened.append(normalized)
+    elif isinstance(findings, list):
+        for item in findings:
+            if isinstance(item, dict):
+                normalized = _finding(str(item.get("rule") or item.get("rule_id") or "unknown"), item, vault)
+                if normalized:
+                    flattened.append(normalized)
+    flattened.sort(key=lambda item: (item["file"], item["line"], item["rule"], item["message"]))
+    return flattened
+
+
+def _run_structural(
+    vault: Path, relative: str | list[str], args: argparse.Namespace
+) -> dict[str, Any]:
+    selected = relative if isinstance(relative, str) else ",".join(relative)
+    command = [
+        sys.executable,
+        str(ROOT / "scripts/wiki-lint"),
+        "--json",
+        str(vault),
+        "--scope",
+        f"files:{selected}",
+    ]
+    if args.all:
+        command.append("--all")
+    if not args.vale:
+        command.append("--no-vale")
+    if not args.template:
+        command.append("--no-template")
+    proc = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
+    if proc.returncode not in (0, 1, 2):
+        detail = proc.stderr.strip() or f"lint checker exited {proc.returncode}"
+        raise RuntimeError(detail)
+    try:
+        return json.loads(proc.stdout)
+    except json.JSONDecodeError as exc:
+        detail = proc.stderr.strip() or f"lint checker exited {proc.returncode}"
+        raise RuntimeError(f"{detail}: {exc}") from exc
+def _group_findings(findings: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
+    grouped: dict[str, list[dict[str, Any]]] = {}
+    for finding in findings:
+        grouped.setdefault(str(finding.get("rule") or "unknown"), []).append(finding)
+    return grouped
+
+
+def _cached_findings(value: Any) -> list[dict[str, Any]]:
+    if isinstance(value, dict):
+        return [
+            item
+            for records in value.values()
+            if isinstance(records, list)
+            for item in records
+            if isinstance(item, dict)
+        ]
+    if isinstance(value, list):
+        return [item for item in value if isinstance(item, dict)]
+    return []
+
+
+
+def _lint(args: argparse.Namespace, vault: Path) -> int:
+    paths = _resolve_paths(vault, args.paths)
+    digest_input = {"all": args.all, "vale": args.vale, "template": args.template}
+    digest = digest_config(digest_input)
+    cache = load_cache(vault)
+    entries = cache.get("entries") if isinstance(cache.get("entries"), dict) else {}
+    findings: list[dict[str, Any]] = []
+    hard_keys: set[str] = set()
+    hits = misses = vale_skipped = 0
+    pending: list[tuple[str, str]] = []
+    for relative in paths:
+        digest_value = file_sha256(vault / relative)
+        cached = entries.get(relative) if isinstance(entries, dict) else None
+        if (
+            isinstance(cached, dict)
+            and cached.get("content_sha256") == digest_value
+            and cached.get("config_digest") == digest
+        ):
+            cached_results = _cached_findings(cached.get("results"))
+            findings.extend(cached_results)
+            hits += 1
+            if args.vale:
+                vale_skipped += 1
+        else:
+            pending.append((relative, digest_value))
+
+    if pending:
+        report = _run_structural(vault, [relative for relative, _ in pending], args)
+        current_findings = _flatten(report, vault)
+        grouped: dict[str, list[dict[str, Any]]] = {relative: [] for relative, _ in pending}
+        for item in current_findings:
+            if item["file"] in grouped:
+                grouped[item["file"]].append(item)
+        hard_keys.update(str(key) for key in ((report.get("schema") or {}).get("hard") or []))
+        for relative, digest_value in pending:
+            current = grouped[relative]
+            findings.extend(current)
+            entries[relative] = {
+                "content_sha256": digest_value,
+                "config_digest": digest,
+                "extracts": {"file": relative},
+                "results": _group_findings(current),
+            }
+            misses += 1
+
+    current_set = set(paths)
+    entries = {
+        key: value
+        for key, value in entries.items()
+        if key in current_set and isinstance(value, dict)
+    }
+    save_cache(vault, {"config_digest": digest, "entries": entries})
+    include_findings = args.full or (
+        len(args.paths) == 1 and (vault / args.paths[0]).is_file()
+    )
+    hard_rule_set = hard_keys or set(DEFAULT_HARD_KEYS)
+    visible = findings if args.all else [
+        item
+        for item in findings
+        if item.get("rule") in hard_rule_set
+        or str(item.get("severity", "")).upper() in HARD_SEVERITIES
+    ]
+    result = build_worklist(
+        visible,
+        files_checked=len(paths),
+        scope={"paths": list(args.paths)},
+        cache={"hits": hits, "misses": misses, "vale_skipped": vale_skipped},
+        hard_keys=hard_rule_set,
+        include_findings=False,
+        vault=vault,
+    )
+    if include_findings:
+        result["findings"] = findings
+    if args.pretty:
+        print(render_lint(result))
+    else:
+        emit_json(result)
+    return 1 if (bool(result.get("counts")) if args.all else bool(result.get("hard_fail"))) else 0
+
+
+def _query(args: argparse.Namespace) -> int:
+    environment = os.environ.copy()
+    environment.pop("CI", None)
+    command = ["qmd", "query", args.phrase, "-c", args.collection, "-n", str(args.count), "--format", "json"]
+    proc = subprocess.run(command, cwd=ROOT, env=environment, capture_output=True, text=True)
+    if proc.returncode:
+        return _machine_error(proc.stderr.strip() or "qmd query failed", pretty=args.pretty)
+    try:
+        raw = json.loads(proc.stdout or "[]")
+    except json.JSONDecodeError as exc:
+        return _machine_error(f"qmd returned invalid JSON: {exc}", pretty=args.pretty)
+    rows = raw.get("results", raw.get("hits", raw)) if isinstance(raw, dict) else raw
+    hits = []
+    for item in rows if isinstance(rows, list) else []:
+        if not isinstance(item, dict):
+            continue
+        path = item.get("path") or item.get("filepath") or item.get("file") or item.get("url") or ""
+        path = str(path)
+        if path.startswith("qmd://"):
+            path = path.split("qmd://", 1)[1]
+        hits.append({"title": str(item.get("title") or Path(path).stem), "path": path, "id": str(item.get("id") or item.get("docid") or item.get("source") or "")})
+    result = {"status": "ok", "collection": args.collection, "hits": hits[: args.count]}
+    if args.pretty:
+        print(render_query(result))
+    else:
+        emit_json(result)
+    return 0
+
+
+def _run_json(command: list[str], vault: Path) -> dict[str, Any]:
+    proc = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
+    try:
+        value = json.loads(proc.stdout or "{}")
+    except json.JSONDecodeError:
+        value = {}
+    return value if isinstance(value, dict) else {}
+
+
+def _load_maintenance_module():
+    path = str(ROOT / "scripts/wiki-maintain")
+    loader = importlib.machinery.SourceFileLoader("wiki_maintain", path)
+    spec = importlib.util.spec_from_loader(loader.name, loader)
+    if spec is None:
+        raise RuntimeError("unable to load Layer A maintenance module")
+    module = importlib.util.module_from_spec(spec)
+    loader.exec_module(module)
+    return module
+
+
+def _health(args: argparse.Namespace, vault: Path) -> int:
+    paths = _resolve_paths(vault, args.paths)
+    lint_args = argparse.Namespace(
+        paths=args.paths, all=False, vale=True, template=True, hard=True, pretty=False, full=False
+    )
+    output = io.StringIO()
+    with contextlib.redirect_stdout(output):
+        lint_code = _lint(lint_args, vault)
+    try:
+        lint = json.loads(output.getvalue())
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"lint produced invalid JSON: {exc}") from exc
+
+    maintenance = _load_maintenance_module()
+    a2 = maintenance.step_context_waste(str(vault), ROOT)
+    a5 = maintenance.step_raw_empty(str(vault), ROOT)
+    a6 = maintenance.step_a6_dry_run_plans(str(vault), ROOT)
+    policy = maintenance.step_policy_conflicts(ROOT)
+    waste = a2.get("metric") or {"hits": 0, "hard_hits": 0}
+    staging = a5.get("metric") or {"leftover_count": 0}
+    remorph = a6.get("metric") or {"plan_count": 0, "skip_count": 0, "error_count": 0}
+    policy_data = {
+        "ok": bool(policy.get("ok", True)),
+        "conflict_count": len(policy.get("conflicts") or []),
+    }
+    sittings = _run_json(
+        [sys.executable, str(ROOT / "scripts/error-ledger.py"), "--root", str(ROOT), "--format", "json", "sitting", "list"],
+        ROOT,
+    )
+    errors = _run_json(
+        [sys.executable, str(ROOT / "scripts/error-ledger.py"), "--root", str(ROOT), "--format", "json", "error", "list"],
+        ROOT,
+    )
+    efficiency = _run_json(
+        [sys.executable, str(ROOT / "scripts/efficiency-trace.py"), "report"], ROOT
+    )
+    trends = build_trends(sittings, errors, efficiency)
+    focus = build_focus(lint, cap=5)
+    pages = [vault / relative for relative in paths]
+    bytes_total = sum(path.stat().st_size for path in pages if path.is_file())
+    token_result = _run_json([sys.executable, str(ROOT / "scripts/token-count.py"), "--sum", str(vault)], ROOT)
+    tokens = token_result.get("total_tokens")
+    if tokens is None and isinstance(token_result.get("files"), list):
+        tokens = sum(int(item.get("tokens") or 0) for item in token_result["files"] if isinstance(item, dict))
+    result = build_health_snapshot(
+        status="findings" if lint.get("status") == "findings" else "clean",
+        pages=len(pages),
+        bytes=bytes_total,
+        tokens=tokens,
+        lint=lint,
+        waste=waste,
+        staging=staging,
+        remorph=remorph,
+        policy=policy_data,
+        trends=trends,
+        focus=focus,
+    )
+    if args.pretty:
+        print(render_health(result))
+    else:
+        emit_json(result)
+    return 1 if lint_code else 0
+
+
+def parser() -> argparse.ArgumentParser:
+    root = argparse.ArgumentParser(prog="scripts/wiki")
+    commands = root.add_subparsers(dest="command", required=True)
+    lint = commands.add_parser("lint")
+    lint.add_argument("paths", nargs="*")
+    lint.add_argument("--full", action="store_true")
+    lint.add_argument("--pretty", action="store_true")
+    lint.add_argument("--json", action="store_true")
+    lint.add_argument("--hard", action="store_true", default=True)
+    lint.add_argument("--all", action="store_true")
+    lint.add_argument("--no-vale", dest="vale", action="store_false", default=True)
+    lint.add_argument("--no-template", dest="template", action="store_false", default=True)
+    query = commands.add_parser("query")
+    query.add_argument("phrase")
+    query.add_argument("--collection", default="wiki")
+    query.add_argument("-n", "--count", type=int, default=10)
+    query.add_argument("--pretty", action="store_true")
+    query.add_argument("--json", action="store_true")
+    health = commands.add_parser("health")
+    health.add_argument("paths", nargs="*")
+    health.add_argument("--pretty", action="store_true")
+    health.add_argument("--json", action="store_true")
+    return root
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = parser().parse_args(argv)
+    try:
+        vault = resolve_vault(configured_vault())
+        if args.command == "lint":
+            return _lint(args, vault)
+        if args.command == "query":
+            return _query(args)
+        return _health(args, vault)
+    except (OSError, ValueError, RuntimeError) as exc:
+        return _machine_error(str(exc), pretty=getattr(args, "pretty", False))
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

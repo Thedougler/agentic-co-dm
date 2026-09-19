@@ -37,10 +37,15 @@ template field is preserved.
 
 ## Deterministic pass
 
-Run the script from repo root before any agent repair:
+Run the structural command from repo root before any agent repair:
 
-- **Full vault:** `./scripts/wiki-lint --json wiki/`
-- **Page-scoped:** `./scripts/wiki-lint --json --scope <path> wiki/`
+- **Full vault (default compact worklist):** `scripts/wiki lint`
+- **Single-file scope (findings included):** `scripts/wiki lint <path>`
+- **Full findings:** `scripts/wiki lint --full` (also add `--full` to a directory scope)
+
+The default bulk output is compact worklist JSON: counts, `backlog`, and
+`next_page`, without per-finding details. A single-file scope includes
+findings; `--full` includes findings for bulk scopes.
 
 Pass owner extensions: `--allow-lifecycle` / `--allow-relationship-type`.
 The JSON `schema` block must match your effective schema before accepting
@@ -116,11 +121,11 @@ unfixable findings listed; one done-summary names what changed and where.
 
 When vault-wide lint finds fixable issues and `--check` is not set:
 
-1. Run `./scripts/wiki-lint --json wiki/`.
-2. Take JSON `backlog` — live pages with findings, sorted by file byte size
-   then path. `next_page` is the first item.
+1. Run `scripts/wiki lint` for the default compact worklist.
+2. Take `next_page` — the first page in `backlog`, sorted by file byte size
+   then path.
 3. Process one backlog page: read, repair, page-scoped verify, commit.
-   Re-run lint and take the new `next_page`.
+   Re-run `scripts/wiki lint` and take the new `next_page`.
 4. Stop only when `backlog` is empty, the user stops the run, or a concrete
    unrecoverable blocker occurs.
 

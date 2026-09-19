@@ -35,14 +35,14 @@
     {
       "id": 2,
       "prompt": "Run a full vault lint in --check mode. Report what you find but don't fix anything.",
-      "expected_output": "A structured report of findings across the vault, grouped by check type, with no files modified. HARD findings before soft.",
+      "expected_output": "A compact worklist of structural lint actions across the vault, with no files modified. Bulk output omits findings; HARD findings before soft when findings are included.",
       "assertions": [
         {
           "text": "No files are modified — report only, no edits or renames",
           "type": "guardrail"
         },
         {
-          "text": "Runs ./scripts/wiki-lint --json wiki/ as the deterministic pass",
+          "text": "Runs scripts/wiki lint as the deterministic pass and consumes its compact worklist output (without findings for bulk runs)",
           "type": "process"
         },
         {
