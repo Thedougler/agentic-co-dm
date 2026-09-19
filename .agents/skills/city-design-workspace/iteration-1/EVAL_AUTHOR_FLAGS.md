@@ -1,33 +1,39 @@
-# EVAL_AUTHOR_FLAGS — city-design Batch A re-score (post-#145)
+# EVAL_AUTHOR_FLAGS — city-design thin Phase 3 post-#152 verify
 
-Re-scored on `evals/batch-a-rescore-pr145` after assertion tighten (#145 @ ae11c9c). Soft lint / vault completeness correctly out of scope. Success bar: with_skill mean **1.000** — **HIT**.
+Re-scored on `evals/thin-city-postmerge` @ `5e21149` after #152 thin merge (`b2e6114`) on main tip (also #153, #154). Suite = post-#151 `evals/evals.json` (10 evals) — **not edited**. Soft lint / vault completeness out of scope. Success bar: with_skill mean **1.000** — **HIT**.
 
-## New from this re-score
+## Gate result
 
-- **No new Author-blocking failures** on with_skill (8/8, 4/4, 6/6, 11/11).
-- **Eval-4 split content asserts** (Dravosi / Seven Houses / Paludi-Rattkin / Warren-Passage / Simone-Lavinia): with_skill 5/5, without_skill 0/5. Split improves diagnosability without weakening discrimination.
-- **DM-thesis negative** (eval-1): without_skill plague-arc thesis correctly fails; with_skill function-in-play thesis passes. Keep.
-- **Durable process locus** (process-notes.md / transcript.md): with_skill satisfies; without_skill omits identity sentence and work gate. Graders must read those artifacts, not only the page file.
-- **Structure+substance companions**: both configs can still clear the floor when template headings are visible and partially filled — discrimination remains in process / guardrail / content. Optional future sharpen: require Orientation ≥2 *named function-linked* districts with non-placeholder pressure cells.
+| Metric | Threshold | Observed | Result |
+| --- | ---: | ---: | --- |
+| with_skill mean pass rate | 1.000 | **1.000** | **HIT** |
+| without_skill mean | (discriminator) | 0.067 | sharp |
+| Recommendation | | | **KEEP merge #152** |
+
+## New from this verify
+
+- **No with_skill assertion failures** across 10/10 evals (57/57 assertions).
+- Thinned `SKILL.md` (~102 lines) keeps refuse-gates in-body; craft detail in `references/city-craft.md`. with_skill runs record both loads in `process-notes.md` / `transcript.md`.
+- Adversarial evals 5–10 (forced rail, PC civic fiat, secrets-in-Arrival, single-lever, skip-gate, combat-only) remain with_skill 1.0 / without_skill 0.0.
+- Craft evals 1/3/4 still clear structure+substance under reference load; process identity sentence + work gate still discriminate.
 
 ## Discriminating (keep)
 
-- **Resist-invent plague/siege as canon** (eval-2): strongest discriminator (1.0 vs 0.0). Keep hostile prompt wording.
-- **Closed S1 thread must stay closed** (eval-1 content + If-nobody-intervenes).
-- **invention: true on from-scratch** (eval-3).
-- **kind: settlement → kind: city upgrade** (eval-4).
-- **Split canon preserves** (eval-4 five content asserts) — keep split form.
-- **Identity sentence / work gate** with durable locus wording — keep post-#145 text.
+- Resist-invent plague/siege as canon (eval-2) and related Mercatura resists (5/8/9).
+- Calven adversarial 6/7/10 (PC civic fiat, secrets-in-Arrival, combat-only).
+- Closed S1 thread must stay closed (eval-1 content + If-nobody-intervenes).
+- `invention: true` on from-scratch (eval-3).
+- `kind: settlement → kind: city` upgrade (eval-4) + split canon preserves.
+- Durable process locus wording (process-notes / transcript).
 
 ## Non-discriminating / soft
 
-- **Template structure with some fill** (evals 1,3,4): without_skill often still passes the substance floor. Useful as a floor, weak alone.
-- **Frontmatter type:place kind:city** on improve/from-scratch when prompt names `wiki/templates/city.md`.
+- Template structure with some fill (evals 1,3,4): without_skill can still clear a weak floor; discrimination remains in process/guardrail/content.
 
-## Flaky / evidence-dependent
+## Thinning-specific note
 
-- Process asserts are **not** flaky when `process-notes.md` / `transcript.md` are required outputs of the executor. This re-score wrote both under each run's `outputs/`.
+- Gate risk for #152 was with_skill agents skipping `references/city-craft.md`. This verify's with_skill process artifacts explicitly load craft per SKILL instruction; refuse-gates did not need the reference file (they remain in SKILL). **No REVERT signal.**
 
 ## Bounds held
 
-- No SKILL.md edits. No live wiki/ writes. Workspace `*/outputs/` only. Did not touch Batch B / `wt-batch-b-spell` / main.
+- No SKILL.md edits. No `evals/evals.json` edits. No live `wiki/` writes. Workspace `*/outputs/` only. Did not checkout other worktrees for this verify's writes.

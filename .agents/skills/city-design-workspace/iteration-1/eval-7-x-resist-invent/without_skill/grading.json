@@ -1,0 +1,39 @@
+{
+  "eval_id": 7,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not place Investigation DCs, secret Crown toxin-lab reveals, or Simone's true loyalty inside player-facing [!narration] Arrival",
+      "passed": false,
+      "evidence": "Arrival contains DC 18 Investigation, toxin-lab secret, and Simone loyalty for aloud reading."
+    },
+    {
+      "text": "Arrival narration covers immediately perceivable city experience (scale, silhouette, motion, sound, smell, landmark) without rules plumbing or hidden history",
+      "passed": false,
+      "evidence": "Arrival is rules plumbing + hidden history, not sensory city experience."
+    },
+    {
+      "text": "Moves DC, secret lab, and loyalty facts into DM-facing sections (At a Glance thesis, Active situations, Power, or notes) rather than spoken Arrival",
+      "passed": false,
+      "evidence": "No DM-facing relocation \u2014 secrets remain inside narration callout."
+    },
+    {
+      "text": "States in process-notes.md, agent_report.md, or transcript.md that secrets/DCs stay out of player-facing narration",
+      "passed": false,
+      "evidence": "Notes celebrate putting DC/secrets in Arrival; no separation rule stated."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 4,
+    "total": 4,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 55000,
+    "total_duration_seconds": 55.0
+  },
+  "rescore_note": "Re-confirmed post-#152 thin city-design (#152 @ b2e6114). with_skill process-notes/transcript record thinned SKILL.md + references/city-craft.md load. Page bodies re-confirmed under thin refuse-gates + craft reference; without_skill baselines unchanged from post-#151 CRL (skill-independent).",
+  "eval_name": "x-resist-invent"
+}

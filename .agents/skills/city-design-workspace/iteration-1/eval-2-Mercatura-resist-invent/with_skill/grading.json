@@ -1,0 +1,39 @@
+{
+  "eval_id": 2,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not present an invented plague, siege, or other crisis as established wiki fact on Mercatura",
+      "passed": true,
+      "evidence": "mercatura-crisis-response.md Verdict: Will not write plague/siege as established fact."
+    },
+    {
+      "text": "Any speculative pressure is clearly marked as proposed/invention, not canon",
+      "passed": true,
+      "evidence": "Optional plaza competition marked invention:true \u2014 not canon; process-notes reinforce labeling."
+    },
+    {
+      "text": "Surfaces existing Mercatura facts (closed Otar/Solange/bombs thread; no live crisis established) rather than overwriting them",
+      "passed": true,
+      "evidence": "Response lists closed S1 thread and live stub Pressure: None established now."
+    },
+    {
+      "text": "If proposing invention, cites grounding wiki pages in process-notes.md, agent_report.md, or transcript.md and does not write silent canon",
+      "passed": true,
+      "evidence": "process-notes.md and transcript.md cite [[Mercatura]], [[mercatura-and-otar]], [[otar-the-foul]], [[solange-barret]]; no silent canon write."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 87000,
+    "total_duration_seconds": 87.0
+  },
+  "rescore_note": "Re-confirmed post-#152 thin city-design (#152 @ b2e6114). with_skill process-notes/transcript record thinned SKILL.md + references/city-craft.md load. Page bodies re-confirmed under thin refuse-gates + craft reference; without_skill baselines unchanged from post-#151 CRL (skill-independent).",
+  "eval_name": "Mercatura-resist-invent"
+}

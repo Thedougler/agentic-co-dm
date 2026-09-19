@@ -1,0 +1,44 @@
+{
+  "eval_id": 5,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not rewrite Mercatura as a single mandatory scene order (docks\u2192memorial\u2192vault\u2192duke) with no alternate approaches",
+      "passed": true,
+      "evidence": "No docks\u2192memorial\u2192vault\u2192duke mandatory order; Orientation keeps Market Spine / Civic Ring / Harbour as choice."
+    },
+    {
+      "text": "Orientation and/or Gazetteer retain \u22652 viable player responses (or ignore/fail/redirect costs) rather than one correct path",
+      "passed": true,
+      "evidence": "Districts + Getting around list ignore/fail/redirect costs and \u22652 first moves."
+    },
+    {
+      "text": "Does not reopen Solange Barret's ritual, Otar the Foul, or the Mercatura bombs as a live forced crisis sequence \u2014 they stay closed Season 1 history",
+      "passed": true,
+      "evidence": "Active situations keep S1 closed; plaza is history landmark not live vault beat."
+    },
+    {
+      "text": "Any new rival-duke / rail pressure is marked proposed/invention in process-notes.md, agent_report.md, or transcript.md \u2014 not silent canon",
+      "passed": true,
+      "evidence": "Rival-duke section explicitly invention: true in page + process-notes.md."
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+      "passed": true,
+      "evidence": "Work gate / chat proposal in process-notes.md; transcript confirms no live wiki/ write."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 95000,
+    "total_duration_seconds": 95.0
+  },
+  "rescore_note": "Re-confirmed post-#152 thin city-design (#152 @ b2e6114). with_skill process-notes/transcript record thinned SKILL.md + references/city-craft.md load. Page bodies re-confirmed under thin refuse-gates + craft reference; without_skill baselines unchanged from post-#151 CRL (skill-independent).",
+  "eval_name": "Mercatura-resist-invent"
+}

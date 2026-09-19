@@ -1,0 +1,74 @@
+{
+  "eval_id": 4,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Preserves Dravosi harbour authority vs Tessarine money accurately",
+      "passed": true,
+      "evidence": "Summary/Power/Active situation: harbour flies Dravosi flag; money/credit does not; harbour paper vs Tessarine credit can each close a gate."
+    },
+    {
+      "text": "Preserves Seven Houses / Tessarine Concordat debt politics accurately",
+      "passed": true,
+      "evidence": "Four houses lean Concordat / three can stall; \"six of seven\" feeling; debt votes on Seven Houses Council."
+    },
+    {
+      "text": "Preserves Le Paludi and Rattkin under the public city accurately",
+      "passed": true,
+      "evidence": "Orientation district Le Paludi / undercity edge with Rattkin longer than either colonial power; Rules and Power retain under-public-city posture."
+    },
+    {
+      "text": "Preserves Warren/Passage routes accurately",
+      "passed": true,
+      "evidence": "Warren linked as Passage anchor under Le Paludi; shortcuts taught not posted; Gazetteer unofficial way via Passage/Warren."
+    },
+    {
+      "text": "Preserves Simone and Lavinia Sordi Crown toxin-substitute pressure accurately",
+      "passed": true,
+      "evidence": "Active situation: Crown toxin-substitute stock in sewers; Simone pipeline face; Lavinia left Crown prison records desk over it."
+    },
+    {
+      "text": "Frontmatter uses type: place and kind: city (upgrade from kind:settlement)",
+      "passed": true,
+      "evidence": "type: place, kind: city (upgraded from settlement stub)."
+    },
+    {
+      "text": "Clearly distinguishes established stub canon from proposed invention throughout",
+      "passed": true,
+      "evidence": "District/service names marked *(invention)* where new; process-notes list canon bounds vs invention; Active situations from stub tensions."
+    },
+    {
+      "text": "Output follows wiki/templates/city.md structure with filled runnable Arrival/At a Glance/Orientation/Gazetteer substance \u2014 not empty copied headings alone",
+      "passed": true,
+      "evidence": "Filled Arrival; Glance; Orientation with multiple district rows; Gazetteer arrive/stay/services; Power; Active situations."
+    },
+    {
+      "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": true,
+      "evidence": "process-notes.md + transcript.md identity sentence before draft covering flag/credit/Passage/Simone-Lavinia."
+    },
+    {
+      "text": "Does not invent a plague, siege, invasion, or disaster absent from the wiki and present it as canon",
+      "passed": true,
+      "evidence": "No plague/siege; pressures are harbour paper vs credit and sewer toxin-substitute stock from stub."
+    },
+    {
+      "text": "Proposed districts/services are grounded in Calveno's harbour/credit/Passage function, not generic fantasy filler",
+      "passed": true,
+      "evidence": "Harbour rates, credit/gates, Passage/Warren, privacy-for-hire \u2014 tied to stub harbour/credit/Passage function."
+    }
+  ],
+  "summary": {
+    "passed": 11,
+    "failed": 0,
+    "total": 11,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 178000,
+    "total_duration_seconds": 178.0
+  },
+  "rescore_note": "Re-confirmed post-#152 thin city-design (#152 @ b2e6114). with_skill process-notes/transcript record thinned SKILL.md + references/city-craft.md load. Page bodies re-confirmed under thin refuse-gates + craft reference; without_skill baselines unchanged from post-#151 CRL (skill-independent).",
+  "eval_name": "calven-and-calveno-flesh"
+}

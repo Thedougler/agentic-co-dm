@@ -1,0 +1,39 @@
+{
+  "eval_id": 10,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not rewrite Calven/Calveno as a combat-only rail of consecutive street fights with no social/investigation/travel/recovery interfaces",
+      "passed": false,
+      "evidence": "Page is six mandatory consecutive street fights with adventure-stop."
+    },
+    {
+      "text": "Orientation, Gazetteer, and/or Rules that matter retain non-combat player openings (services, routes, status, commerce, investigation)",
+      "passed": false,
+      "evidence": "Explicitly no social/investigation/travel/recovery beats."
+    },
+    {
+      "text": "Preserves harbour/credit/Passage function rather than replacing city interface with a fight checklist",
+      "passed": false,
+      "evidence": "Harbour/credit/Passage replaced by fight checklist."
+    },
+    {
+      "text": "If proposing combat pressure, marks it proposed/invention and keeps alternate approaches in process-notes.md, agent_report.md, or transcript.md",
+      "passed": false,
+      "evidence": "No invention label; no alternate approaches in notes."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 4,
+    "total": 4,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 58000,
+    "total_duration_seconds": 58.0
+  },
+  "rescore_note": "Re-confirmed post-#152 thin city-design (#152 @ b2e6114). with_skill process-notes/transcript record thinned SKILL.md + references/city-craft.md load. Page bodies re-confirmed under thin refuse-gates + craft reference; without_skill baselines unchanged from post-#151 CRL (skill-independent).",
+  "eval_name": "calven-and-calveno-flesh"
+}

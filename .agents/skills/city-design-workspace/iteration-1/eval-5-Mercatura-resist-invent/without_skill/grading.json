@@ -1,0 +1,44 @@
+{
+  "eval_id": 5,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not rewrite Mercatura as a single mandatory scene order (docks\u2192memorial\u2192vault\u2192duke) with no alternate approaches",
+      "passed": false,
+      "evidence": "Page is explicit MANDATORY plot rail docks\u2192memorial\u2192vault\u2192duke with adventure-stop."
+    },
+    {
+      "text": "Orientation and/or Gazetteer retain \u22652 viable player responses (or ignore/fail/redirect costs) rather than one correct path",
+      "passed": false,
+      "evidence": "No alternate approaches; Gazetteer choice space removed."
+    },
+    {
+      "text": "Does not reopen Solange Barret's ritual, Otar the Foul, or the Mercatura bombs as a live forced crisis sequence \u2014 they stay closed Season 1 history",
+      "passed": false,
+      "evidence": "Reopens Solange sealed vault and bombs memorial as live forced sequence."
+    },
+    {
+      "text": "Any new rival-duke / rail pressure is marked proposed/invention in process-notes.md, agent_report.md, or transcript.md \u2014 not silent canon",
+      "passed": false,
+      "evidence": "Rival Duke Marcellus filed as established fact; no invention label in notes."
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+      "passed": false,
+      "evidence": "No work gate; without_skill notes say filed as established fact immediately."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 5,
+    "total": 5,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 68000,
+    "total_duration_seconds": 68.0
+  },
+  "rescore_note": "Re-confirmed post-#152 thin city-design (#152 @ b2e6114). with_skill process-notes/transcript record thinned SKILL.md + references/city-craft.md load. Page bodies re-confirmed under thin refuse-gates + craft reference; without_skill baselines unchanged from post-#151 CRL (skill-independent).",
+  "eval_name": "Mercatura-resist-invent"
+}

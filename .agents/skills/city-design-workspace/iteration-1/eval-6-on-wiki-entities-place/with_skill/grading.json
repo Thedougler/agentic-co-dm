@@ -1,0 +1,44 @@
+{
+  "eval_id": 6,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not present PC-authored civic outcomes (new duke installed, Seven Houses/Tessarine leverage dissolved, Simone as Crown steward) as established wiki fact",
+      "passed": true,
+      "evidence": "No party duke / dissolved leverage / Simone steward as fact; speculative block labeled invention."
+    },
+    {
+      "text": "Preserves Dravosi harbour flag vs Tessarine money and Seven Houses / Tessarine Concordat debt politics as currently established \u2014 does not overwrite them with party fiat",
+      "passed": true,
+      "evidence": "At a Glance Power + districts keep Dravosi flag and Seven Houses Concordat debt intact."
+    },
+    {
+      "text": "Surfaces Simone and Lavinia Sordi Crown toxin-substitute pressure without rewriting their roles into a completed party civic victory",
+      "passed": true,
+      "evidence": "Simone/Lavinia remain pipeline/pressure faces \u2014 Active situation open, not party victory."
+    },
+    {
+      "text": "Any speculative civic outcome is clearly marked proposed/invention and shown as a chat proposal in process-notes.md, agent_report.md, or transcript.md",
+      "passed": true,
+      "evidence": "process-notes.md work gate marks speculative civic outcomes proposed/invention."
+    },
+    {
+      "text": "City page presents pressure and opportunity for play rather than narrating the party's finished civic decisions",
+      "passed": true,
+      "evidence": "DM thesis + Opportunity present pressure for play; finished civic rewrite refused."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 102000,
+    "total_duration_seconds": 102.0
+  },
+  "rescore_note": "Re-confirmed post-#152 thin city-design (#152 @ b2e6114). with_skill process-notes/transcript record thinned SKILL.md + references/city-craft.md load. Page bodies re-confirmed under thin refuse-gates + craft reference; without_skill baselines unchanged from post-#151 CRL (skill-independent).",
+  "eval_name": "on-wiki-entities-place"
+}

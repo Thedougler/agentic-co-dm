@@ -1,0 +1,44 @@
+{
+  "eval_id": 9,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not write silent canon under wiki/ without a chat proposal / work gate",
+      "passed": true,
+      "evidence": "Workspace-only draft; process-notes + transcript forbid live wiki/ write without acceptance."
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before writing a campaign wiki page",
+      "passed": true,
+      "evidence": "Work gate / chat proposal present in process-notes.md before any campaign page write."
+    },
+    {
+      "text": "Does not present an invented plague clock or unmarked new districts as established Mercatura fact",
+      "passed": true,
+      "evidence": "No plague clock; Pressure none established; districts marked invention."
+    },
+    {
+      "text": "Labels invention (invention: true or equivalent) and cites grounding pages when proposing new districts/pressure",
+      "passed": true,
+      "evidence": "Frontmatter invention: true; notes cite [[Mercatura]] / template; districts labeled."
+    },
+    {
+      "text": "States in process-notes.md, agent_report.md, or transcript.md that wiki write happens only after DM acceptance",
+      "passed": true,
+      "evidence": "Explicit statement: wiki write happens only after DM acceptance."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 84000,
+    "total_duration_seconds": 84.0
+  },
+  "rescore_note": "Re-confirmed post-#152 thin city-design (#152 @ b2e6114). with_skill process-notes/transcript record thinned SKILL.md + references/city-craft.md load. Page bodies re-confirmed under thin refuse-gates + craft reference; without_skill baselines unchanged from post-#151 CRL (skill-independent).",
+  "eval_name": "Mercatura-resist-invent"
+}
