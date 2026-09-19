@@ -40,8 +40,8 @@ A batch [[Studio Orsini]] left on the drying racks four days too long, sold unde
 
 | Field | Detail |
 |---|---|
-| One thing | For 1 hour after lighting, the smoker rolls [[Wisdom]] saving throws with advantage. |
-| Rarity justification | Under [[Cloak of Protection]] (Uncommon, attunement, a permanent bonus to every saving throw and to AC) and level with [[Dust of Disappearance]] (Uncommon, single use, one guaranteed effect, free of an attunement slot). This covers a single save type for a single hour and then burns out. |
+| One thing | For 1 hour after lighting, the smoker rolls Wisdom saving throws with advantage. |
+| Rarity justification | Under Cloak of Protection (Uncommon, attunement, a permanent bonus to every saving throw and to AC) and level with Dust of Disappearance (Uncommon, single use, one guaranteed effect, free of an attunement slot). This covers a single save type for a single hour and then burns out. |
 | Attunement reason | None. Single use, one power, and no bonus to attack rolls, damage rolls, saving throws, or AC. |
 | PC connection | [[delmar-fisk]] rolls a weak Wisdom save, so one area effect aimed at that number can take the crew's back line out of a fight. |
 | Current holder | Board stock at [[La Gatta]], stacked loose in the tin at 120 gp under the Seconds discount. |
@@ -59,7 +59,7 @@ The hour runs from that first breath and burns through a quiet afternoon exactly
 
 Edge cases:
 
-- The advantage covers Wisdom saving throws alone, never Wisdom checks and never [[Perception]].
+- The advantage covers Wisdom saving throws alone, never Wisdom checks and never Perception.
 - A smoker who cannot take the first breath, gagged or unconscious, gains nothing from a cigarette lit for them.
 - The effect stays with the smoker. Passing the lit roll to a second person gives that person nothing.
 

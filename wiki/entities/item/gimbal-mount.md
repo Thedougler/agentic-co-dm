@@ -47,7 +47,7 @@ _Gear (Mount), Common._
 ## Mechanics
 
 > [!mechanic]
-> **Gimbal Mount [HB].** Bolting the yoke down takes ten minutes with [[smith's tools]] and four bolts into a rail or a beam. The cradle takes a device or a weapon of up to 60 pounds and holds it with four thumbscrews.
+> **Gimbal Mount [HB].** Bolting the yoke down takes ten minutes with smith's tools and four bolts into a rail or a beam. The cradle takes a device or a weapon of up to 60 pounds and holds it with four thumbscrews.
 >
 > The rings keep the cradle level through any pitch or roll a seaworthy hull survives, and it swings a full half-circle by hand. An attack made with a weapon seated in the mount ignores disadvantage from an unstable or moving surface.
 >

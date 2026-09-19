@@ -2,6 +2,7 @@
 title: "Bice Riva"
 aliases:
   - Bice Riva
+  - Bice
 category: entities
 tags: [shattered-sea, npc]
 sources:
@@ -31,7 +32,7 @@ tier: supporting
 
 |             |                                                |
 | ----------- | ---------------------------------------------- |
-| **Species** | [[Halfling]]                                        |
+| **Species** | Halfling                                        |
 | **Role**    | Co-proprietor, [[Al Fondale]] (front of house; husband [[aldo-riva|Aldo]] runs the kitchen) |
 | **Location**| [[Al Fondale]], [[le-paludi]], [[calven-and-calveno]]         |
 

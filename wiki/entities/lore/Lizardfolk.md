@@ -36,6 +36,6 @@ Lizardfolk weigh each choice against survival and treat wasted resources as the 
 
 **Hungry Jaws.** Once per long rest, you can make a bonus action bite attack. On a hit, you gain temporary hit points equal to your proficiency bonus.
 
-**Natural Armor.** Your unarmored AC equals 13 + your [[Dexterity]] modifier. This trait is compatible with shields.
+**Natural Armor.** Your unarmored AC equals 13 + your Dexterity modifier. This trait is compatible with shields.
 
-**Nature's Intuition.** You have [[Proficiency]] in two of the following skills: Animal Handling, Medicine, Nature, Perception, Stealth, or Survival.
+**Nature's Intuition.** You have Proficiency in two of the following skills: Animal Handling, Medicine, Nature, Perception, Stealth, or Survival.

@@ -74,7 +74,7 @@ bonus_actions:
 ```
 
 > [!check] Perception — Spotting the Sawek's Lair
-> DC 18 [[Wisdom]]; only a creature looking directly into the lair entrance may roll.
+> DC 18 Wisdom; only a creature looking directly into the lair entrance may roll.
 > **Success:** movement stirs in the dark water below — something large is waiting.
 > **Failure:** the entrance looks empty and still; the sawek is free to ambush when prey comes into reach.
 

@@ -57,8 +57,8 @@ The stern bunk hides an undocumented cavity behind a false panel, large enough f
 | **Status** | Impounded |
 | **Hull Points** | 120 |
 | **Hull AC** | 10 |
-| **[[Condition]]** | Worn, structurally sound |
-| **[[Speed]] (good wind)** | 65 miles/day |
+| **Condition** | Worn, structurally sound |
+| **Speed (good wind)** | 65 miles/day |
 | **Speed (poor wind)** | 30 miles/day |
 | **Maneuverability** | Good |
 | **Profile** | Low |

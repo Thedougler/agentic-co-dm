@@ -64,7 +64,7 @@ The Long Wager has run the same contest between two rival crews for decades, lon
 
 - Trampled grass and scrub: the clearing's floor, packed bare by decades of the same pacing feet. A fringe of tall dune grass rings the course's edge, right where the trees take over.
 - Sour grass: grows thick along that fringe and chews sharp enough to clear a dry throat, the referee's own cure between rulings and worth a fistful to anyone thirsty mid-round.
-- [[vulture|Vultures]]: work the refuse pit behind the scoreboard for whatever the two crews throw out after a match, bold enough to take food off an unattended plate.
-- [[crab|Crabs]]: pick through the tide pools below the western course marker at low water, easy pickings for anyone who steps off the course between heats.
-- [[giant-vulture|Giant vultures]]: hold a slow circuit over the ridge behind the clearing and never once come down while the crowd's still shouting.
+- Vultures: work the refuse pit behind the scoreboard for whatever the two crews throw out after a match, bold enough to take food off an unattended plate.
+- Crabs: pick through the tide pools below the western course marker at low water, easy pickings for anyone who steps off the course between heats.
+- Giant vultures: hold a slow circuit over the ridge behind the clearing and never once come down while the crowd's still shouting.
 - [[reef-shark|Reef sharks]]: run the shallows past the western marker, patient enough that a bet settled by a swim across that water gets collected on once.

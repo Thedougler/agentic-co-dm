@@ -24,7 +24,7 @@ tier: supporting
 ---
 # Coralyra Dranra
 
-A beautiful, siren-like elf [[sorcerer]]/[[bard]] (level 5). Her voice stops people talking. She weaponized this gift. An Incomplete Aoidos *(ah-OY-dos)* from [[Halythion]], she left at 87 years old (young for elves). She joins the party after the first arc.
+A beautiful, siren-like elf sorcerer/bard (level 5). Her voice stops people talking. She weaponized this gift. An Incomplete Aoidos *(ah-OY-dos)* from [[Halythion]], she left at 87 years old (young for elves). She joins the party after the first arc.
 
 **Personality:** she wants people to listen. Deep down, she wants home, forgiveness, apologies, and recognition for her music. For an elf, she is young. She respects beggars, servants, and children.
 
@@ -35,10 +35,10 @@ A beautiful, siren-like elf [[sorcerer]]/[[bard]] (level 5). Her voice stops peo
 **Mechanics:** she is a sorcerer/bard multiclass. Her voice holds magic trained into music and effects beyond words (details hidden). Her trident came from a shipwreck she does not remember.
 
 > [!mechanic]
-> **Tradition:** Arcane. **School:** Enchantment. **Spell analogue(s):** *[[Calm Emotions]]*, *Command*.
+> **Tradition:** Arcane. **School:** Enchantment. **Spell analogue(s):** *Calm Emotions*, *Command*.
 > **Homebrew element:** Her voice suspends the impulse to speak in every listener simultaneously, rather than compelling one creature.
-> **[[Detect Magic]]:** Enchantment — a felt weight settles on the tongue, as though the next word costs more than it is worth.
-> **[[Counterspell]]:** yes.
+> **Detect Magic:** Enchantment — a felt weight settles on the tongue, as though the next word costs more than it is worth.
+> **Counterspell:** yes.
 
 **Active situations:**
 

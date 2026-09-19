@@ -58,7 +58,7 @@ This is a discarded DM prep concept. It describes a [[Vaka]] elder and Karath de
 
 **Appearance:** a lean green Grung, three-and-a-half feet tall with flat matte skin the color of old leaves and wide amber eyes. He carries a worn satchel across one shoulder and moves quietly for his size.
 
-**Voice:** soft and reedy, he pauses like Kermit before hard truths ("Well… yeah. That's the thing") and speaks "we" more than "I." He clears his throat when nervous. Only when scared or caught off [[Guard]] does he speak for himself alone. His surface reads as warm, earnest, and overwhelmed. When danger threatens someone he protects, he stills and focuses. He knows how to make things explode, yet chooses not to.
+**Voice:** soft and reedy, he pauses like Kermit before hard truths ("Well… yeah. That's the thing") and speaks "we" more than "I." He clears his throat when nervous. Only when scared or caught off Guard does he speak for himself alone. His surface reads as warm, earnest, and overwhelmed. When danger threatens someone he protects, he stills and focuses. He knows how to make things explode, yet chooses not to.
 
 **Karath defection:** green caste. He defected from Karath eight years ago, using homemade explosives to destroy [[Grung]] raiding groups in careful, deliberate work he never discussed. The Karath Gold know who did it, yet they have not found him. From a fish stall at [[Fare I'a]] in [[calders-tooth-and-port-tidefall]], he built the [[Vaka]] (Grung defectors and freed slaves) one conversation at a time.
 

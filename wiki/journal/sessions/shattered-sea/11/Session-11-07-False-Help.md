@@ -9,6 +9,7 @@ updated: 2026-09-13
 type: session-prep
 kind: cliffhanger
 lifecycle: proposed
+base_confidence: 0.55
 reveal: unrevealed
 summary: "Night ambush at Spoke Ring. The [[Deer-Stalker]] uses the garden invitation to isolate one body; a grouped answer makes it leave, while any disorder becomes cover on [[Session-11-09-Theft-on-the-Watch]]."
 campaign: shattered-sea

@@ -27,7 +27,7 @@ tier: supporting
 > [!narration] Narration
 > A low cutter comes on with patched tan canvas and a tired brown hull, the kind of working boat that should smell of fish and wet rope. Then the gunports open. Black-painted teeth show along the rail, boarding hooks come up from behind the bulwark. The false trade pennant drops before the real flag rises, and what rises is a narrow black streamer, sharp as a knife wound.
 
-*[[Pirate]] cutter · Tier 1 · unmoored.*
+*Pirate cutter · Tier 1 · unmoored.*
 
 The *Knife's Wake* is a pirate cutter built for quick strikes and fast escape. She looks like a worn trading ship from far away. Up close, the disguise reveals too many clues. Her gun ports are too clean, her rail too bare, and her crew too ready.
 
@@ -65,8 +65,8 @@ Her best attack hinges on a short deception. She sails under false colours and c
 | **Decks** | 1 weather deck plus cramped belowdecks |
 | **Hull Points** | 120 |
 | **Hull AC** | 10 |
-| **[[Condition]]** | Worn |
-| **[[Speed]] (good wind)** | 60 miles/day |
+| **Condition** | Worn |
+| **Speed (good wind)** | 60 miles/day |
 | **Speed (poor wind)** | 30 miles/day |
 | **Speed (calm)** | 15 miles/day |
 | **Maneuverability** | Good |

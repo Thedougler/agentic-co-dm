@@ -47,15 +47,15 @@ light if the sheet is wrong.
 
 | PC | Sustained DPR | Nova DPR | AC / EHP | Save weakness |
 |---|---|---|---|---|
-| Delmar | 18.13 (Blunderbuss +8, [[Sneak Attack]] 3d6 always-on) | 18.13 (no round-1 burst beyond the routine; Lucky rerolls unmodeled) | 16 / 69 | WIS +1, STR +0 |
-| Crissdalynn | 12.63 (Quarterstaff +7, bonus Unarmed +8) | 19.50 ([[Flurry of Blows]], 1 Focus Point) | 17 / 70 | CHA +0, INT +0 |
+| Delmar | 18.13 (Blunderbuss +8, Sneak Attack 3d6 always-on) | 18.13 (no round-1 burst beyond the routine; Lucky rerolls unmodeled) | 16 / 69 | WIS +1, STR +0 |
+| Crissdalynn | 12.63 (Quarterstaff +7, bonus Unarmed +8) | 19.50 (Flurry of Blows, 1 Focus Point) | 17 / 70 | CHA +0, INT +0 |
 | Jean-Claude | 11.60 (2× +1 Silent Shortbow +9) | 17.20 (+ Dreadful Strike 2d6, 2/long rest) | 16 / 80 | CHA -1, INT +0 |
-| Perrin | 10.25 ([[Green-Flame Blade]] +8) | 10.25 ([[Hex]] costs round 1's bonus action; 12.88 from round 2) | 18 / 109 | STR -1, and disadvantage on STR (Mortis) |
+| Perrin | 10.25 (Green-Flame Blade +8) | 10.25 (Hex costs round 1's bonus action; 12.88 from round 2) | 18 / 109 | STR -1, and disadvantage on STR (Mortis) |
 
 `[calculated]` throughout, closed-form against AC 15 for damage and a +6
 attacker for EHP, crits at 5% doubling dice. Reaction mitigation sits
 outside the EHP column and is not summed into it: Delmar halves one hit
-per round ([[Uncanny Dodge]]), Crissdalynn takes 1d10+9
+per round (Uncanny Dodge), Crissdalynn takes 1d10+9
 (avg 14.5) off one hit per round (Deflect Attacks), Perrin subtracts
 1d6 from a roll five times per long rest (Cutting Words). All three
 raise real survivability well above the printed EHP.
@@ -70,7 +70,7 @@ Structural: CHA and INT saves are unprotected — Crissdalynn +0/+0,
 Jean-Claude -1/+0, Delmar +2/+3; only Perrin's CHA +9 resists a charm
 line, and he alone cannot cover the party. Severity high, no counter in
 the party's current kit. Concentration runs through Perrin at +3 — a
-single focused hit drops [[Hex]]. Perrin's STR save is -1 with
+single focused hit drops Hex. Perrin's STR save is -1 with
 disadvantage on top, so grapples and shoves land on him almost at will.
 Party WIS averages +2.25, so a WIS-save AoE stun chain-disables the
 back line.
@@ -86,8 +86,8 @@ data backs a specific count.
 Confirmed synergy (session-cited): Perrin flips ally saves via Bardic
 Inspiration (S04 restrain escape). Jean-Claude's Bardic-Inspiration-
 boosted save resists [[Ozzeth]]'s
-[[Dominate Person]] via Delmar (S06).
-[[Healing Word]] and [[Cure Wounds]] sustain
+Dominate Person via Delmar (S06).
+Healing Word and Cure Wounds sustain
 the party (S04) `[session-04, session-06]`.
 
 ## Effective CR Band

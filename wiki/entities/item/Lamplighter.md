@@ -34,14 +34,14 @@ tier: supporting
 > In the dark of the drawer it goes on glowing after you shut it, and Ettore shuts it anyway.
 
 
-_[[Weapon]] (Arrow), Uncommon._
+_Weapon (Arrow), Uncommon._
 
 The dearest shaft in [[ettore-lupo]]'s drawer at [[Casa Lupo]], and the only one he warns buyers about. It works just as well on the person holding it.
 
 | Field | Detail |
 |---|---|
 | One thing | A creature it hits glows for an hour. Hiding does not stop the glow, and neither does dousing the light or turning invisible. |
-| Rarity justification | Comparable to [[Lantern of Revealing]] (reveals invisible creatures within 30 ft, reusable) and [[Goggles of Night]] (permanent darkvision, reusable). Lamplighter is single use and works on only one creature. It grants no bonus to hit, and it washes off. |
+| Rarity justification | Comparable to Lantern of Revealing (reveals invisible creatures within 30 ft, reusable) and Goggles of Night (permanent darkvision, reusable). Lamplighter is single use and works on only one creature. It grants no bonus to hit, and it washes off. |
 | Attunement reason | It marks and nothing else, once, leaving attack, damage, save, and AC rolls alone. The attunement tree has no branch for it. |
 | PC connection | [[crissdalynn-khinriss]] regains district-wide tracking of one marked runner. |
 | Current holder | [[ettore-lupo]], in his felt-lined drawer at [[Casa Lupo]]. |
@@ -56,7 +56,7 @@ Somebody in Calveno is already using them. A glowing man gets walked out of a ta
 > [!mechanic]
 > **Lamplighter [HB].** Consumed on impact. It flies as an ordinary arrow and takes an ordinary ranged attack roll. On a hit against a creature it deals 1d6 piercing damage, the glass head breaks against it, and cold luminous rot coats the creature for 1 hour.
 >
-> While coated, the creature sheds dim light in a 10-foot radius and is visible as a glow out to 300 feet in darkness. It cannot succeed on a [[Dexterity]] (Stealth) check to Hide, and if it turns invisible, the glow holds its position, so anyone who can see the glow knows the creature's location.
+> While coated, the creature sheds dim light in a 10-foot radius and is visible as a glow out to 300 feet in darkness. It cannot succeed on a Dexterity (Stealth) check to Hide, and if it turns invisible, the glow holds its position, so anyone who can see the glow knows the creature's location.
 >
 > A creature can end the effect early by spending an Action to scrub the coating off with water, sand, or cloth, or by fully submerging itself, though rain only thins the coating instead of removing it.
 >
@@ -68,4 +68,4 @@ Somebody in Calveno is already using them. A glowing man gets walked out of a ta
 
 [[marta-orsini]] grows the rot at [[Studio Orsini]] in a sealed jar she keeps behind everything else, and blown glass from the [[Velo Quarter]] carries it. [[ettore-lupo]] has sold four in eleven years at [[Casa Lupo]] and remembers all four buyers, which is a longer list than it sounds.
 
-[[prospero-morsani]] also had a quiver of these on his shelves at [[the Cabinet of Morsani]], Session 8, priced at 200 gold. Confirmed: [[Transcript]].
+[[prospero-morsani]] also had a quiver of these on his shelves at [[the Cabinet of Morsani]], Session 8, priced at 200 gold. Confirmed: Transcript.

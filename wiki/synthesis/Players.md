@@ -54,7 +54,7 @@ No additional notes.
 
 ## Notes
 
-Courtney has a hard line on self-harm content at this table — see [[Lines and Veils]] for the full [[campaign]] safety tool.
+Courtney has a hard line on self-harm content at this table — see Lines and Veils for the full campaign safety tool.
 
 ## Frederick
 
@@ -92,7 +92,7 @@ No additional notes.
 
 ## Campaigns & Characters
 
-| [[Campaign]] | Character | Status |
+| Campaign | Character | Status |
 |---|---|---|
 | [[shattered-sea]] | — | DM |
 

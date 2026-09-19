@@ -28,14 +28,14 @@ tier: supporting
 > The leather is dark and slightly warm, charged-warm, like a handle gripped too long near a storm window. The outer seams pulse with a faint blue-white light that flickers. When you tilt the quiver, the arrows stand perfectly upright. A low hum arrives in your teeth before it reaches your ears. The air at the mouth smells of ozone. The tip of the nearest arrow is crackling.
 
 
-*Wondrous Item, Uncommon (Requires Attunement).* Holds up to 20 [[arrows]].
+*Wondrous Item, Uncommon (Requires Attunement).* Holds up to 20 arrows.
 
 | Field | Value |
 |---|---|
 | One thing | The quiver infuses each drawn arrow with lightning. On a hit, it deals an extra 1d6 lightning damage alongside the arrow's normal damage. |
-| Rarity justification | Uncommon, comparable to [[Bracers of Archery]] (Uncommon, attunement, +2 damage to shortbow/longbow attacks) and a +1 weapon (Uncommon, attunement, +1 attack and damage). Avg +3.5 lightning per hit sits in the same power band. |
+| Rarity justification | Uncommon, comparable to Bracers of Archery (Uncommon, attunement, +2 damage to shortbow/longbow attacks) and a +1 weapon (Uncommon, attunement, +1 attack and damage). Avg +3.5 lightning per hit sits in the same power band. |
 | Attunement reason | Useful in most combats without consuming a resource. No class feature reproduced. |
-| PC connection | [[jean-claude-tabarnack]], [[Ranger]] with [[Shortbow]] focus, affordable upgrade at current level. One attunement slot free. |
+| PC connection | [[jean-claude-tabarnack]], Ranger with Shortbow focus, affordable upgrade at current level. One attunement slot free. |
 | Current holder | [[cotter-foss]] at [[nimmik-vollask]], kept behind normal shelf stock. |
 | Narrative hook | Sold openly at the Vollask rail; nobody aboard explains how the gnomes charge the lining. Other items available through Cotter. |
 

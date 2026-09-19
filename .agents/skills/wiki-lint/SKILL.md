@@ -27,7 +27,7 @@ Pass owner extensions: `--allow-lifecycle` / `--allow-relationship-type`. The JS
 
 **HARD fail keys:** `broken_links`, `missing_frontmatter`, `bad_type`, `bad_lifecycle`, `typed_relationships`, `pc_identity_mismatch`, `spaced_basename`, `aruhe_prefix_basename`, `illegal_basename`, `duplicate_stems`, `template_conformance`. **Soft keys:** `snake_case_labels`, `pc_tag_on_npc`, `snake_case_owner_basename`.
 
-Redirect stubs (`redirects_to` in frontmatter) are skipped for `missing_frontmatter`, `spaced_basename`, `aruhe_prefix_basename`; reserved files and mechanic-allowlist links skipped for `broken_links`; `_archive`/`_raw`/templates/`_meta` skipped — live pages only for filename HARD keys. Template conformance checks typed pages against `wiki/templates/contracts/{type}.yml`.
+Redirect stubs (`redirects_to` in frontmatter) are skipped for `missing_frontmatter`, `spaced_basename`, `aruhe_prefix_basename`; reserved files (`AGENTS.md`, `README.md`, `index.md`, `log.md`, `hot.md`) and mechanic-allowlist links skipped for `broken_links`; `_archive`/`_raw`/templates/`_meta` skipped — live pages only for filename HARD keys. Template conformance checks typed pages against `wiki/templates/contracts/{type}.yml`.
 
 Clean = `status: "clean"`, empty findings, `identity.status` `"resolved"`.
 

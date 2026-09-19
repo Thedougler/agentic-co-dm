@@ -44,7 +44,7 @@ When a captain pays for an open-water blessing, she comes alongside with her bas
 | **Tier** | 1 (Crew-Optimized) |
 | **Hull Points** | 95 |
 | **Hull AC** | 10 |
-| **[[Speed]] (good wind)** | 70 miles/day |
+| **Speed (good wind)** | 70 miles/day |
 | **Speed (poor wind)** | 35 miles/day |
 | **Speed (calm)** | 15 miles/day with sweeps |
 | **Crew (min/full)** | 3 / 8 |

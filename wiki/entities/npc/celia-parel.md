@@ -11,6 +11,7 @@ created: 2026-09-16
 updated: 2026-09-16
 type: npc
 lifecycle: canon
+base_confidence: 0.42
 reveal: unrevealed
 campaign: shattered-sea
 status: alive

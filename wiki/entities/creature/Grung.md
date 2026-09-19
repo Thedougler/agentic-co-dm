@@ -67,10 +67,10 @@ actions:
 
 ## Description
 
-CR 1/4 humanoid grung — green-caste laborers and scouts, the lowest freeborn caste of [[Grung]] society and the expendable workforce of Grung operations. [[Weapon]] hits deal 2d4 poison damage directly; the Poisonous Skin trait is separate.
+CR 1/4 humanoid grung — green-caste laborers and scouts, the lowest freeborn caste of [[Grung]] society and the expendable workforce of Grung operations. Weapon hits deal 2d4 poison damage directly; the Poisonous Skin trait is separate.
 
 > [!mechanic]
-> **Poisonous Skin stacking.** Grappling or unarmed strikes against a grung's bare skin trigger a DC 12 [[Constitution]] save. Fail: poisoned for 1 minute, with disadvantage on attacks and ability checks. Success: no effect. Multiple grung in one fight mean multiple saves per round.
+> **Poisonous Skin stacking.** Grappling or unarmed strikes against a grung's bare skin trigger a DC 12 Constitution save. Fail: poisoned for 1 minute, with disadvantage on attacks and ability checks. Success: no effect. Multiple grung in one fight mean multiple saves per round.
 
 ## Ecology
 

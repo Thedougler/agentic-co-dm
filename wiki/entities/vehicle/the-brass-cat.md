@@ -48,8 +48,8 @@ A two-masted schooner, 95 feet long. The hull is timber above water and copper-s
 | **Type** | Experimental schooner (Davirelli prototype) |
 | **Hull Points** | 240 |
 | **Hull AC** | 13 |
-| **[[Condition]]** | Pristine |
-| **[[Speed]] (surface, good wind)** | 85 miles/day |
+| **Condition** | Pristine |
+| **Speed (surface, good wind)** | 85 miles/day |
 | **Speed (surface, poor wind)** | 40 miles/day |
 | **Speed (submerged)** | 30 miles/day |
 | **Maneuverability** | Good (surface) / Average (submerged) |

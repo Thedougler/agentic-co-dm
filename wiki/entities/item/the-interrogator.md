@@ -46,7 +46,7 @@ One of six blends sold as alchemical cigarettes made for smoking in [[calven-and
 | Current holder | [[rufio-segalla]] rolls this one to order at [[La Brace]], a [[Velo Quarter]] smoking room in [[calven-and-calveno]]. He never keeps it on the shelf. Ordering it means an hour seated in the room first, with the price named only afterward. |
 | Narrative hook | It never appears on [[La Gatta]]'s board. A buyer has to already know Segalla rolls it, and has to sit for it in person. |
 
-**Rarity justification:** uncommon, comparable to a spell scroll of [[Zone of Truth]] and a spell scroll of [[Detect Thoughts]], both 2nd-level spells scribed as Uncommon scrolls with a single use and unattuned casting. [[Medallion of Thoughts]], a permanent Uncommon item that reads surface thoughts outright, sets this tier's ceiling. This consumable's narrower one-shot lie detection matches that tier already.
+**Rarity justification:** uncommon, comparable to a spell scroll of Zone of Truth and a spell scroll of Detect Thoughts, both 2nd-level spells scribed as Uncommon scrolls with a single use and unattuned casting. Medallion of Thoughts, a permanent Uncommon item that reads surface thoughts outright, sets this tier's ceiling. This consumable's narrower one-shot lie detection matches that tier already.
 
 At the table, this blend serves one specific story beat: catching a liar.
 
@@ -58,7 +58,7 @@ At the table, this blend serves one specific story beat: catching a liar.
 
 Belief changes the reading. A speaker who believes their own false statement reads honest. A technically true but misleading statement reads the same way.
 
-A creature immune to the [[charmed]] condition gives no reading at all, honest or otherwise.
+A creature immune to the charmed condition gives no reading at all, honest or otherwise.
 
 The cigarette burns out at the end of the 10 minutes, or the smoker snuffs it out early. Either way it can't be lit again. Single use, consumable.
 

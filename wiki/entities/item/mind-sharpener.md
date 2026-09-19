@@ -35,7 +35,7 @@ tier: supporting
 
 ## Mechanics
 
-**[HB]** Wearing this item grants a power to its wearer. When they fail a [[Constitution]] save to hold concentration on a spell, they can use their reaction to succeed instead. This costs one charge. The item has 4 charges and regains them at dawn.
+**[HB]** Wearing this item grants a power to its wearer. When they fail a Constitution save to hold concentration on a spell, they can use their reaction to succeed instead. This costs one charge. The item has 4 charges and regains them at dawn.
 
 **Limitations:** only works when you fail a Constitution save to hold concentration on a spell. It does not work on other Constitution saves. Crissdalynn once tried it to break through a magical barrier. It did not work.
 

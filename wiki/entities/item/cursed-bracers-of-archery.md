@@ -33,9 +33,9 @@ tier: supporting
 
 *Wondrous item, uncommon (requires attunement).*
 
-While wearing these bracers, you have proficiency with the [[Longbow]] and [[Shortbow]], and you gain a +2 bonus to damage rolls made with such weapons.
+While wearing these bracers, you have proficiency with the Longbow and Shortbow, and you gain a +2 bonus to damage rolls made with such weapons.
 
-**Neon Flare Curse.** Whenever you roll a natural 1 on an attack roll while wearing these bracers, your entire body turns a random neon color (DM's or random-table choice each time) for 1 hour. When the hour ends, the color fades from everywhere except one random patch of skin, which stays that color permanently. Only [[Remove Curse]] or a comparable curse-breaking effect removes the permanent mark. Multiple natural 1s accumulate separate permanent patches, each a different color, with no cap. The color change is purely cosmetic and visible to everyone present; ordinary clothing covers a patch the same as any mark, but nothing mundane erases the color itself.
+**Neon Flare Curse.** Whenever you roll a natural 1 on an attack roll while wearing these bracers, your entire body turns a random neon color (DM's or random-table choice each time) for 1 hour. When the hour ends, the color fades from everywhere except one random patch of skin, which stays that color permanently. Only Remove Curse or a comparable curse-breaking effect removes the permanent mark. Multiple natural 1s accumulate separate permanent patches, each a different color, with no cap. The color change is purely cosmetic and visible to everyone present; ordinary clothing covers a patch the same as any mark, but nothing mundane erases the color itself.
 
 **Glory Shot Curse.** Whenever you roll a natural 20 on an attack roll while wearing these bracers, you are compelled to immediately shout and loudly take credit for the shot, audible at a good distance. The compulsion allows no save. When you are trying to stay hidden or unnoticed, the compelled shout gives away your position. The curse triggers on every natural 20 with the bracers regardless of the situation.
 
@@ -52,7 +52,7 @@ Every natural 1 or natural 20 Jean-Claude rolls with these bracers is a moment h
 ## Connections
 
 - [[jean-claude-tabarnack]] — Current holder; carried in his kit.
-- [[Bracers of Archery]] — Base effect this cursed pair matches.
+- Bracers of Archery — Base effect this cursed pair matches.
 - [[lavinia-sordi]] — Sold them from her rack at [[la-cenere]].
 - [[la-cenere]] — Purchase site in [[le-paludi]], [[calven-and-calveno]].
 

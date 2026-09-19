@@ -70,8 +70,8 @@ actions:
 |---|---|---|
 | Satiated | Fed within the last day | Normal, sociable, professional; Sanguivore's Satiated trait active. |
 | Hungry | One day unfed | Irritable, asks for a willing draw; Voracious active, Satiated lost. |
-| Difficult | Two days unfed | Feeds on animals without asking. −2 to all [[Charisma]] checks. |
-| Desperate | Three days unfed | Biology overrides contract, feeds on any available creature. [[Disadvantage]] on [[Wisdom]] saves, [[Advantage]] on attacks against bloodied creatures. |
+| Difficult | Two days unfed | Feeds on animals without asking. −2 to all Charisma checks. |
+| Desperate | Three days unfed | Biology overrides contract, feeds on any available creature. Disadvantage on Wisdom saves, Advantage on attacks against bloodied creatures. |
 | Starving | Four or more days unfed | Attacks to feed, taking 1d8 necrotic per day. Dies at 0 HP. |
 
 **Wants:** a squad wants its next blood keep filled and its contract honored in full, since cash and a clean feed matter more to a Moucheron than the fight itself.

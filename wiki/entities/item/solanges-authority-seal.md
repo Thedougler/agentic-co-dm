@@ -32,7 +32,7 @@ tier: supporting
 
 *Wondrous item, rare (requires attunement).*
 
-**Caste command.** As an action, speak a single word of command to target one [[Grung]] creature you can see within 60 feet. The target must succeed on a DC 15 [[Wisdom]] saving throw. On a failure, it follows the command on its next turn, exactly as the *[[command]]* spell. Only Grung creatures respond to the seal. Once per long rest.
+**Caste command.** As an action, speak a single word of command to target one [[Grung]] creature you can see within 60 feet. The target must succeed on a DC 15 Wisdom saving throw. On a failure, it follows the command on its next turn, exactly as the *command* spell. Only Grung creatures respond to the seal. Once per long rest.
 
 The seal still works on a creature immune to charmed or frightened (it imposes neither condition) unless that immunity covers compulsion. It compels any Grung of red caste or lower (red, purple, blue, or green) — everyone but the gold ruling caste. It will not work if another creature already controls the Grung (charmed or dominated).
 
@@ -54,7 +54,7 @@ Once per long rest, spend the action to force a visible Grung within 60 feet to 
 - [[simone-tabarnack]] — Former red-caste officer's group that held it before Solange.
 - [[jean-claude-tabarnack]] — Reads red-caste markings on sight; wearing his sister's operation's command seal against her soldiers means more than a mechanical bonus.
 - [[Grung]] — Only creatures the seal can compel.
-- [[command]] — Spell the seal duplicates once per long rest.
+- command — Spell the seal duplicates once per long rest.
 
 ## Provenance
 

@@ -64,11 +64,11 @@ No anchorage rings the base, so a boat holds position at the waterline while cli
 
 ## Hazards
 
-[[giant-spider|Giant spiders]] web the narrow crevices near the waterline, invisible until a groping hand closes on silk instead of stone, and [[stirge|stirges]] roost in the dark folds below the carvings, dropping onto anyone who lingers too long at the climb's midpoint.
+Giant spiders web the narrow crevices near the waterline, invisible until a groping hand closes on silk instead of stone, and stirges roost in the dark folds below the carvings, dropping onto anyone who lingers too long at the climb's midpoint.
 
 ## Ecology
 
-Black lichen crusts every ledge and crack above the spray line, tough enough to grip for a handhold when the wet basalt isn't, and salt-crusted samphire roots in the thin soil packed into crevices partway up, edible raw and worth picking for a party that climbed without provisions. [[goat|Wild goats]] pick along the upper ledges where no boat could follow, sending scree rattling down onto anyone climbing below, while [[giant-vulture|giant vultures]] nest in the higher hollows and start circling the moment something on the rock face stops moving.
+Black lichen crusts every ledge and crack above the spray line, tough enough to grip for a handhold when the wet basalt isn't, and salt-crusted samphire roots in the thin soil packed into crevices partway up, edible raw and worth picking for a party that climbed without provisions. Wild goats pick along the upper ledges where no boat could follow, sending scree rattling down onto anyone climbing below, while giant vultures nest in the higher hollows and start circling the moment something on the rock face stops moving.
 
 ## Loot
 

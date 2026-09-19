@@ -28,7 +28,7 @@ tier: supporting
 
 |               |                                                              |
 | ------------- | ------------------------------------------------------------ |
-| **Species**   | [[Halfling]]                                                     |
+| **Species**   | Halfling                                                     |
 | **Pronouns**  | he/him                                                       |
 | **Location**  | [[Moretti and Sons]], [[calven-and-calveno]]  |
 | **Role**      | Ship chandler                                                |

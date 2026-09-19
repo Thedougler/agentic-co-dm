@@ -39,7 +39,7 @@ tier: supporting
 ## Mechanics
 
 > [!mechanic]
-> **[HB] Rig (1 minute).** Set the coil across a doorway, corridor, or gangplank up to 10 feet wide. The wire is noticed with a passive Perception of 15 or a successful DC 13 [[Intelligence]] (Investigation) check. The first Large or smaller creature to move through the space without stepping over it makes a DC 13 [[Dexterity]] saving throw, and on a failure it is restrained and falls prone. A restrained creature escapes with a DC 13 [[Strength]] (Athletics) check, which cuts the wire and spends the coil.
+> **[HB] Rig (1 minute).** Set the coil across a doorway, corridor, or gangplank up to 10 feet wide. The wire is noticed with a passive Perception of 15 or a successful DC 13 Intelligence (Investigation) check. The first Large or smaller creature to move through the space without stepping over it makes a DC 13 Dexterity saving throw, and on a failure it is restrained and falls prone. A restrained creature escapes with a DC 13 Strength (Athletics) check, which cuts the wire and spends the coil.
 >
 > **Limitations:** one creature, one spring, and the whole rig is useless against anything Huge or anything that flies over it. Resetting it takes another minute and the wire has to be uncut.
 

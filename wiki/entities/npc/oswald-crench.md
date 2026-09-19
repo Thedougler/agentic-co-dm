@@ -28,7 +28,7 @@ tier: supporting
 
 |               |                                                                       |
 | ------------- | --------------------------------------------------------------------- |
-| **Species**   | [[Dwarf]]                                                                 |
+| **Species**   | Dwarf                                                                 |
 | **Pronouns**  | he/him                                                                |
 | **Location**  | [[Shelf Instrument Dealer]], [[calders-tooth-and-port-tidefall]] |
 | **Role**      | Navigation instrument dealer                                          |

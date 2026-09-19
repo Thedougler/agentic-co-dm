@@ -47,14 +47,14 @@ Sold to companies too small to print a programme, so the second name on the bill
 | Current holder | [[Fio]], fanned on a card at the counter. |
 | Narrative hook | 90 gp, and Fio never asks which door. |
 
-Common tier holds. [[Magic Item Rarity]] prices Common goods at 100 gp, and the placard's 90 gp sits under that. Its effect stops well short of _[[disguise self]]_: it changes nothing about the bearer's face, voice, or clothing, and it does no work at all once the bearer walks out of sight of the door.
+Common tier holds. Magic Item Rarity prices Common goods at 100 gp, and the placard's 90 gp sits under that. Its effect stops well short of _disguise self_: it changes nothing about the bearer's face, voice, or clothing, and it does no work at all once the bearer walks out of sight of the door.
 
 ## Mechanics
 
 > [!mechanic]
 > **Second Billing Placard [HB].** Writing a name and a role on the brass and hanging the plate takes 1 minute. The writing holds for 8 hours or until rubbed off, and the plate works only while it hangs on a door, gate, hatch, or archway a creature can walk through.
 >
-> While the plate hangs, one creature bearing the written name has advantage on [[Charisma]] (Deception) checks made within 30 feet of that doorway to pass as the role written on it. The plate does no work at all on a creature who already heard otherwise, who knows the real staff by sight, or who watched the plate go up.
+> While the plate hangs, one creature bearing the written name has advantage on Charisma (Deception) checks made within 30 feet of that doorway to pass as the role written on it. The plate does no work at all on a creature who already heard otherwise, who knows the real staff by sight, or who watched the plate go up.
 >
 > **Edge cases:** two plates hung on one doorway both fall off within a round. A plate hung on a door with a real name plate already on it does nothing until the real one comes down. Illiterate creatures and creatures that cannot see the plate get no impression from it either way.
 >

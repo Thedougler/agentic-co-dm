@@ -63,4 +63,4 @@ Drovannis is a druidic bird sanctuary. Each year, seabirds return here. They car
 - Roosting terns and cormorants: pack the platforms shoulder to shoulder by midday, and a wrong step or a raised voice sends the whole colony up screaming at once.
 - Shore crabs: work the mud exposed at low tide, picking through what the birds drop.
 - [[reef-shark|Reef sharks]]: patrol the channel where the lagoon opens to open water, close enough to the outer platforms to take anyone who goes in after a dropped line.
-- [[giant-octopus|Giant octopuses]]: den in the shadow beneath the pilings, and a hand dipped past the waterline can vanish in the three heartbeats it takes to notice the grip.
+- Giant octopuses: den in the shadow beneath the pilings, and a hand dipped past the waterline can vanish in the three heartbeats it takes to notice the grip.

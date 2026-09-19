@@ -56,7 +56,7 @@ relationships:
 **Voice & Delivery:** precise, formal diction that avoids naval jargon, each word costing something. He favors measured pauses and questions that invite challenge. Sample: *"You'd settle this through committee? How thoroughly… cautious."* (with a faint smile that suggests pity). His worldview is elitist. Mastery and proven skill are the sole legitimate sources of authority, and birth and hierarchy are mere scaffolding for incompetence. Every exchange plays as a test of capability, and what a person *does* matters more than rank or promises. Physically he's controlled and efficient, weight balanced as though ready to draw at any moment, eyes tracking hands and blades in conversation. The blade-sheathing tic runs nearly constant when he's seated or waiting.
 
 > [!mechanic]
-> **[[Charisma]] (Persuasion/Deception/Intimidation) against Corvin (Elitist worldview).** DC 10 if the approach proves worth through direct action or personal challenge (he yields to demonstrated skill). DC 12 for neutral requests. DC 18+ to persuade him through rank, tradition, or abstract loyalty. Failure hardens his stance.
+> **Charisma (Persuasion/Deception/Intimidation) against Corvin (Elitist worldview).** DC 10 if the approach proves worth through direct action or personal challenge (he yields to demonstrated skill). DC 12 for neutral requests. DC 18+ to persuade him through rank, tradition, or abstract loyalty. Failure hardens his stance.
 
 **Three Villain Questions:**
 

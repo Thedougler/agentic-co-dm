@@ -43,7 +43,7 @@ The name is procedural. The Chain Council only has authority when enough affecte
 
 | | |
 |---|---|
-| **Tier** | 1 ([[Speed]]-Built) |
+| **Tier** | 1 (Speed-Built) |
 | **Hull Points** | 80 |
 | **Hull AC** | 11 |
 | **Speed (good wind)** | 88 miles/day |

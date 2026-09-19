@@ -60,7 +60,7 @@ Ilo Maren's free-diving culture harvests bioluminescent kelp beds found almost n
 
 - Bioluminescent kelp: the reef-side beds glow blue-green even under moonlight. The whole culture's livelihood runs through them, harvested every dawn and burned whole at the yearly bonfire.
 - Salt-fig scrub: low, wind-flattened fig thickets hold the dune line above the tide, and their fruit ferments into a sharp wine traded up and down the strait.
-- [[crab|Crabs]]: pick through the exposed tide pools at low water, easy food for anyone willing to wade in before the harvesters return.
-- [[vulture|Vultures]]: ride the cliff thermals above the reef and strip whatever the tide leaves behind before a diver can claim it.
+- Crabs: pick through the exposed tide pools at low water, easy food for anyone willing to wade in before the harvesters return.
+- Vultures: ride the cliff thermals above the reef and strip whatever the tide leaves behind before a diver can claim it.
 - [[reef-shark|Reef sharks]]: patrol the kelp beds in loose packs, drawn by the same currents the kelp-cutters work. A harvester who surfaces too fast surfaces among them.
-- [[giant-octopus|Giant octopuses]]: den in the reef's deeper hollows below the kelp line, and a diver who reaches too far into a crevice pulls back a stump instead of a hand.
+- Giant octopuses: den in the reef's deeper hollows below the kelp line, and a diver who reaches too far into a crevice pulls back a stump instead of a hand.

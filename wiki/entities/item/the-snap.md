@@ -31,12 +31,12 @@ tier: supporting
 >
 > Close the hand and the whole shield goes slack again, soft enough now to take a beat from an open palm.
 
-*Armor (Shield), Uncommon (Requires [[Attunement]]).*
+*Armor (Shield), Uncommon (Requires Attunement).*
 
 | Field | Value |
 |---|---|
 | One thing | As a Bonus Action, unfurl into a shield that grants its standard +2 AC without occupying the wearer's hand, so that hand stays free for an instrument, a component, or any other non-weapon use. |
-| Rarity justification | Comparable to [[Cloak of Protection]] (Uncommon, +1 AC and saves, requires attunement) and a +1 Shield (Uncommon, requires attunement, DMG). Both turn a worn or held slot into an AC benefit. The Snap adds no numeric bonus beyond a mundane shield's own +2; the freed hand is the entire benefit, and that keeps it at Uncommon instead of Rare. |
+| Rarity justification | Comparable to Cloak of Protection (Uncommon, +1 AC and saves, requires attunement) and a +1 Shield (Uncommon, requires attunement, DMG). Both turn a worn or held slot into an AC benefit. The Snap adds no numeric bonus beyond a mundane shield's own +2; the freed hand is the entire benefit, and that keeps it at Uncommon instead of Rare. |
 | Attunement reason | Grants an AC benefit: a magic item that gives the wearer a shield's AC. The decision tree's first branch requires attunement regardless of whether the number itself is new. |
 | PC connection | [[perrin-black-jaw]] already carries a mundane shield that ties up the hand he needs for his bodhran drum. [[master-kyzil]] already flagged the drum itself as a tactical threat worth targeting. The Snap fits his small frame and lets him keep the shield and the drum in the same fight. |
 | Current holder | [[perrin-black-jaw]] bought it for 150 gold from [[prospero-morsani]] at [[the Cabinet of Morsani]], Session 8. |
@@ -54,4 +54,4 @@ tier: supporting
 
 ## Provenance
 
-Sold by [[prospero-morsani]] out of [[the Cabinet of Morsani]] in [[calven-and-calveno]]'s [[Velo Quarter]], bought by [[perrin-black-jaw]] for 150 gold, Session 8. Confirmed: [[Transcript]].
+Sold by [[prospero-morsani]] out of [[the Cabinet of Morsani]] in [[calven-and-calveno]]'s [[Velo Quarter]], bought by [[perrin-black-jaw]] for 150 gold, Session 8. Confirmed: Transcript.

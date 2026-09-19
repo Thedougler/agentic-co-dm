@@ -42,7 +42,7 @@ tier: supporting
 ## Mechanics
 
 > [!mechanic]
-> **Gnomish Rigging Block [HB].** Functions as a [[Block and Tackle]]: when attached to a solid anchor point and used with rope, halves the force needed to lift or move a load. A creature using this block has advantage on [[Strength]] checks to lift or haul cargo through it.
+> **Gnomish Rigging Block [HB].** Functions as a Block and Tackle: when attached to a solid anchor point and used with rope, halves the force needed to lift or move a load. A creature using this block has advantage on Strength checks to lift or haul cargo through it.
 >
 > The self-greasing axle (a wax reservoir feeds the bearing over months) means no maintenance in salt air, no jamming, and no squealing. Weighs 2.5 lb (half a standard block and tackle). The wax reservoir lasts roughly six months of daily use before needing refill (1 sp).
 >

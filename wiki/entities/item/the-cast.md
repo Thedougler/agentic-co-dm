@@ -34,8 +34,8 @@ Weapon (arrow), uncommon. Consumed on use. [[ettore-lupo]] keeps one in the draw
 
 One shot, consumed on landing. Loose it as an ordinary ranged attack at a Large or smaller creature within the weapon's normal range, with no range penalty beyond the bow's own. The cord parts in flight and the net opens.
 
-On a hit, the creature takes no damage and is [[Restrained]] until it frees itself. Freeing follows the mundane [[Net]]'s own rules: the creature or another creature within 5 feet of it takes an Action and rolls a DC 10 [[Strength]] check, or someone deals 5 slashing damage to the net (AC 10). Either one destroys a 5-foot square of it and frees the creature.
+On a hit, the creature takes no damage and is Restrained until it frees itself. Freeing follows the mundane Net's own rules: the creature or another creature within 5 feet of it takes an Action and rolls a DC 10 Strength check, or someone deals 5 slashing damage to the net (AC 10). Either one destroys a 5-foot square of it and frees the creature.
 
-[[Huge]] and larger creatures shrug it off, and so do formless creatures. On a miss the net still opens and falls across the ground, water, or whatever else lies under it — that square becomes difficult terrain, a 10-foot patch of net. Over water it floats on its lead line and fouls a swimmer at the surface exactly as it would on land. A creature already Restrained by one net is not Restrained twice by a second.
+Huge and larger creatures shrug it off, and so do formless creatures. On a miss the net still opens and falls across the ground, water, or whatever else lies under it — that square becomes difficult terrain, a 10-foot patch of net. Over water it floats on its lead line and fouls a swimmer at the surface exactly as it would on land. A creature already Restrained by one net is not Restrained twice by a second.
 
 It deals no damage and does not seize, pull, or drag the target. It does nothing to a creature that is Incorporeal, gaseous, or larger than a cart. Once opened, it stays a net and does not fold itself back up.

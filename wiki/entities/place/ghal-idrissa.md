@@ -61,10 +61,10 @@ Ghal Idrissa is where the [[dravosi-crown|Dravosi Crown]] sends ships suspected 
 
 - Salt scrub and driftwood grass: low, wind-flattened cover that never rises past the knee, so nothing on this island hides a person standing upright.
 - Bitter samphire: grows thick along the tideline and strips off the rock in fistfuls, edible raw for anyone willing to eat something that grew this close to the quarantine flag.
-- [[crab|Shore crabs]]: work the hulls of the three anchored ships at low tide, and pull free of anything soft enough to give.
-- [[giant-vulture|Giant vultures]]: hold a slow circuit over the stockade from first light, and never once land on the ships themselves.
-- [[swarm-of-rats|Rat swarms]]: move between the ships' bilges and the stockade's grain store on the ebb tide, the one crossing nobody on the island has managed to close off.
-- [[stirge|Stirges]]: nest in the driftwood palisade after dark and drop onto anything that stops moving near the gate.
+- Shore crabs: work the hulls of the three anchored ships at low tide, and pull free of anything soft enough to give.
+- Giant vultures: hold a slow circuit over the stockade from first light, and never once land on the ships themselves.
+- Rat swarms: move between the ships' bilges and the stockade's grain store on the ebb tide, the one crossing nobody on the island has managed to close off.
+- Stirges: nest in the driftwood palisade after dark and drop onto anything that stops moving near the gate.
 
 ## Loot
 

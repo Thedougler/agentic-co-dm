@@ -28,4 +28,4 @@ tier: supporting
 
 ## The Culture
 
-The Cat Lord created the Tabaxi, Medium feline humanoids with a strong territorial streak. [[This campaign]] occupies [[shattered-sea|the Shattered Sea]], where Tabaxi presence is sparse but old. The [[keth-naar]] community in the [[sunken-crown]] has lived beyond easy colonial contact for generations, and [[elder-anton]] is the campaign's known Tabaxi from it. See [[Tabaxi]] for the people's mechanical traits.
+The Cat Lord created the Tabaxi, Medium feline humanoids with a strong territorial streak. This campaign occupies [[shattered-sea|the Shattered Sea]], where Tabaxi presence is sparse but old. The [[keth-naar]] community in the [[sunken-crown]] has lived beyond easy colonial contact for generations, and [[elder-anton]] is the campaign's known Tabaxi from it. See [[Tabaxi]] for the people's mechanical traits.

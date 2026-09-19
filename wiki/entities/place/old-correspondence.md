@@ -64,5 +64,5 @@ Old Correspondence's sole resident has been drafting the same letter for as long
 - Salt-bleached grass and wind-bent scrub: the wind and salt spray keep the islet's thin soil cropped low, and the cottage window looks over the whole islet.
 - Sea purslane: mats over the tideline rock in fleshy, salty clusters, edible raw and enough to cut a day's rations for a party that knows to look for it.
 - Gulls and crabs: gulls nest along the seaward ledges and crabs work the tide pools below, the ordinary noise and traffic of the shore.
-- [[swarm-of-rats|A swarm of rats]]: nests under the floorboards among the discarded drafts, and comes up biting if anyone starts pulling papers out of the stack.
-- [[vulture|Vultures]]: circle the cottage roof some mornings and stoop at anything that goes still too long on the open rock outside.
+- A swarm of rats: nests under the floorboards among the discarded drafts, and comes up biting if anyone starts pulling papers out of the stack.
+- Vultures: circle the cottage roof some mornings and stoop at anything that goes still too long on the open rock outside.

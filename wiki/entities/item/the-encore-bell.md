@@ -47,7 +47,7 @@ Sold as a keepsake for weddings, first performances, and last words. Of everythi
 | Current holder | [[fioravante-selmerin|Fio]], on the window stand. |
 | Narrative hook | Bought for 250 gp, or lifted while Fio talks. |
 
-Uncommon tier holds. [[Magic Item Rarity]] prices Common goods at 100 gp and Uncommon goods at 400 gp, with an approximate Uncommon range of 100-500 gp; the bell's 250 gp asking price sits inside that band, not Common's. [[the-interrogator]] (250 gp) and [[ricochet-red]] (300 gp) are this shop's own Uncommon stock at the same price point. The bell matches the voice clause of _[[magic mouth]]_ and drops the spell's trigger, its duration, and its 10 gp component. That's a full spell effect held in a standing trinket.
+Uncommon tier holds. Magic Item Rarity prices Common goods at 100 gp and Uncommon goods at 400 gp, with an approximate Uncommon range of 100-500 gp; the bell's 250 gp asking price sits inside that band, not Common's. [[the-interrogator]] (250 gp) and [[ricochet-red]] (300 gp) are this shop's own Uncommon stock at the same price point. The bell matches the voice clause of _magic mouth_ and drops the spell's trigger, its duration, and its 10 gp component. That's a full spell effect held in a standing trinket.
 
 Mortis holds [[jean-claude-tabarnack]] to the truth and strips every mask off his intent. The bell carries no such binding. It puts a voice belonging to somebody else into a room he has already left.
 

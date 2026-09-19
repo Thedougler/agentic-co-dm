@@ -1,6 +1,7 @@
 - [[a-sliver-of-the-unstable-form]] — A fist-sized fragment of warm red hide from Otar the Foul granting 2d8 HP regeneration per turn (1 minute, once per long rest, suppressed by fire/acid). Held by Catarina Da'Virelli in Calveno. ( #shattered-sea #item)
 - [[Aarakocra]] — Species text for Aarakocra, an avian homebrew humanoid people rare in the Shattered Sea and most associated with the Sentinels of the Eyrie. ( #shattered-sea #lore)
 - [[adriana-tarquine]] — Sunkline chief engineer. ( #shattered-sea #npc)
+- [[adwe]] — Mangrove channels that fork three ways with no marker on any of them and rearrange after every storm, where the only pilot worth having is a heron. ( #shattered-sea #place)
 - [[Aldenmere]] — Quiet Crown farm island with a mile-wide tidal mere; a revenue officer collects the fishing tithe twice a year and leaves. ( #shattered-sea #region)
 - [[aldo-riva]] — Verbose dwarf chef running Al Fondale's kitchen, keeper of Le Paludi's history spanning centuries, harboring secrets about the cellar's mysteries. ( #shattered-sea #npc)
 - [[aldous-draves]] — Draves-branch relative who placed Geoffrey Draves. ( #shattered-sea #npc)
@@ -19,14 +20,17 @@
 - [[aruhe]] — Island protected by Hinewai's grief-bound law: receiving is safe, but taking fruit, fish, plants, or beasts brings Nature's fury. ( #shattered-sea #aruhe #region)
 - [[aruhe-beach]] — Generic name for Aruhe's western shingle shore — same known sea approach as [[western-landing]]; distinct from Sorn/Veth beaches. ( #shattered-sea #place)
 - [[aruhe-caves]] — Buried lava-tube under-region of [[aruhe]] — braided basalt tunnels, [[blackrail]] risk, no secret door into [[memorial-grove]]. ( #shattered-sea #place)
+- [[ash-caldera-dragon]] — Young red dragon on a dead volcanic island in the Eastern Midchain; ash-slope approach, glowing crater lair, slag-fused hoard; optional costly fight. ( #shattered-sea #creature)
 - [[ashen-roost]] — Nesting grounds for firebirds that scorch and regrow the island in patches. The ash sells for a fortune. ( #shattered-sea #place)
 - [[Ashglass]] — Dead volcanic island in the eastern Midchain whose crater holds a young red dragon and a slag hoard. ( #shattered-sea #place)
 - [[Ashkevet]] — Named Dravosi prison the Lavinia note refuses to treat as her workplace. ( #shattered-sea #place)
 - [[Ashwalls]] — Cold-water volcanic spires: last solid ground heading west and first safe lee returning east; feels hot, sulfurous, and opportunistic. ( #shattered-sea #region)
+- [[ASSETS]] — Drop map for Session 11 summary, transcript, and recording. ( #shattered-sea #session)
 - [[Auralis]] — Public Grung mandate and name associated with a serene gold presence whose exact nature remains unknown. ( #shattered-sea #lore)
 - [[bala-tane]] — Pit boss of The Mud Pits on Kalowe's third island, orc woman, mid-forties, has run the fights for fifteen years. ( #shattered-sea #npc)
 - [[barb-line-harpoon]] — A forged harpoon on sixty feet of light chain: it sets a barb in something swimming and holds it inside the chain's reach of whatever the far end shackles to. ( #shattered-sea #item)
 - [[barnaby-rook]] — Boarded the Crown cutter Surety during the Saltwright fight. ( #shattered-sea #npc)
+- [[barrow-ait]] — An islet of grave-mounds in rows too neat to be natural, humming low in the wind, which grave-robbers reach easily and have never once left carrying anything. ( #shattered-sea #place)
 - [[bastian-ookage]] — Lizardfolk captain of the Loud Argument who drowned at The Drowned Maw. His soul inhabits Delmar Fisk. ( #shattered-sea #npc)
 - [[batta-zusto]] — An information broker at the Bridge in Calveno selling intel on Red Lady salvage work, port contacts, and Maw access deals. ( #shattered-sea #npc)
 - [[Bazzoth]] — Grung operative of unknown color named among the clans' current faces. ( #shattered-sea #npc)
@@ -61,6 +65,7 @@
 - [[cades-fortune]] — A dozen expeditions have surveyed this "treasure island;" each certain the map was almost right. ( #shattered-sea #place)
 - [[cage-calm-draught]] — A wax-sealed crock of sweet fermented feed additive from Zort's Pits that takes the fight out of a beast for ten minutes. ( #shattered-sea #item)
 - [[calders-tooth-and-port-tidefall]] — Three tiers on the cliff: docks at the water, a trade shelf on the face, and [[fort-crestwall]] on the crown with the guns. Every ship entering the western Strait should stop at the Inspection Pier, a ( #shattered-sea #place)
+- [[calders-verge]] — A glassblowing guild built on a natural silica vent that produces prized glasswork. Training kills most outsiders. ( #shattered-sea #place)
 - [[calven-and-calveno]] — Harbor city where the party became Defenders after the Mercatura crater. ( #shattered-sea #calveno #place)
 - [[cambreys-fold]] — A pocket of terrain that folds space. Walk far enough and you loop back sooner than the distance should allow. ( #shattered-sea #place)
 - [[campaign-timeline]] — Chronological Index of Shattered Sea history from the Antheri's height through Session 01. ( #shattered-sea #lore)
@@ -73,12 +78,14 @@
 - [[cave-bats]] — Dusk-exit cave bats whose mass flight warns of Blackrail country. ( #shattered-sea #aruhe #creature)
 - [[cecco-trivani]] — The apprentice at Il Preludio who can feel every musical number coming and has never once finished the first line of one. ( #shattered-sea #npc)
 - [[cedric-hollowell]] — A Crown-licensed Tidefall import factor who regards family and cargo through the same calculus of cost and obligation. ( #shattered-sea #npc)
+- [[celia-parel]] — Calveno wreck survivor who preserves the names and orders of Aruhe's dead, even when the living want only a route home. ( #shattered-sea #aruhe #npc)
 - [[central-strait]] — The primary shipping corridor between the two arcs; feels like a moving border. ( #shattered-sea #region)
 - [[central-strait-crossing]] — Five-to-six-day open-water Blue Lane between Calveno and Kalowe, with no nearby shore if a hull comes to grief. ( #shattered-sea #place)
 - [[chain-brake-winch]] — A rail-mounted drum winch with a ratchet pawl that locks every foot of chain it takes in, so a hauled weight never runs back out. ( #shattered-sea #item)
 - [[chain-coil-python]] — A Mid-Chain constrictor sold out of Zort's Pits, broke to a single command word and trained to take one target and hold it. ( #shattered-sea #item)
 - [[chain-council]] — Midchain political council that masks Pearl-control interests; commissioned Delmar Fisk's five-ship theft from Vel Orn. ( #shattered-sea #faction)
 - [[Chorewick]] — A cooperative of escaped indentured workers; strict and fair; deeply suspicious of the well-dressed. ( #shattered-sea #place)
+- [[chronehall]] — A guild island with hundreds of clocks and sundials. They time something and won't say what. ( #shattered-sea #place)
 - [[clear-lake]] — Inland crater basin — black hexagonal shelf, glass-clear shallows, otter families, outlet to the River and wet south into the Marshes. ( #shattered-sea #aruhe #place)
 - [[Cobb]] — Young Rattkin dockworker and runner for Nona Black-Jaw at La Vasca who greets the Uncertainty crew and carries messages to Perrin. ( #shattered-sea #npc)
 - [[coeur-bris]] — Site of a centuries-old broken marriage pact between two feuding families; still technically unresolved. ( #shattered-sea #place)
@@ -132,6 +139,7 @@
 - [[Dreth]] — Drowned Verdant Teeth island with no charted shoreline, where timber work moves through trunks standing in tide. ( #shattered-sea #region)
 - [[dreth-orak-channel]] — Forbidden flooded crossing between Dreth and Orak, not an ordinary strait for outsider travel. ( #shattered-sea #place)
 - [[driftlight-lantern]] — A salvaged nautical lantern whose shutter opens a window onto another plane, real or false with no way to tell; if real, something looks back. ( #shattered-sea #item)
+- [[drovannis]] — A sheltered lagoon of floating perches where a druidic order tends the seabirds, which come back each year carrying small lost objects nobody has traced to a source. ( #shattered-sea #place)
 - [[drowned-maw]] — Maritime place tied by the source to the Red Lady's sinking, routes, and moving wake. ( #shattered-sea #place)
 - [[drowned-maws-open-shelf]] — Warm, still Maw water over intact workshops at eighty feet, ruin-shadows forty feet down, a dead-fish and hot-iron smell. ( #shattered-sea #npc)
 - [[Duskveil]] — A permanent illusion of dusk blankets the island; source unknown. ( #shattered-sea #place)
@@ -177,6 +185,7 @@
 - [[gentle-hag]] — A CR 7 fey hag whose supernatural charm turns victims into loyal, permanent thralls. ( #shattered-sea #creature)
 - [[geoffrey-draves]] — First hand recruited when the crew took the Crown cutter Surety. ( #shattered-sea #npc)
 - [[gerrit-sallow]] — Stub spawned by location prep from stillmere.md, needs a full npc-guide ( #shattered-sea #npc)
+- [[ghal-idrissa]] — A silent Dravosi Crown quarantine stockade holding three empty plague ships, none of whose crews have ever left. ( #shattered-sea #place)
 - [[ghigo-volpin]] — Elderly goblin who breeds and sells canal-otters out of tanks in Le Paludi, moving above his own pens on a rope rig because he has no legs below the knee. ( #shattered-sea #npc)
 - [[ghost-plum]] — Rare Aruhe fruit that grants the eater the Invisible condition for one hour. ( #shattered-sea #aruhe #item)
 - [[Giacinto]] — Gnome craftsman in Calveno's Velo Quarter who sells beret-and-moustache performer kits and recognizes his own handiwork on sight; a key beat for Jean-Claude's Calveno cover. ( #shattered-sea #npc)
@@ -241,6 +250,7 @@
 - [[il-gioco-delle-beffe-running-it]] — Full mechanics for running Il Gioco delle Beffe at the table, from mark selection through the three-phase skill challenge that decides scoring. ( #shattered-sea #lore)
 - [[il-palio-delle-voci-contese]] — Table mechanics for running Il Palio: roles, skill checks, outcomes, and recruitable allies. ( #shattered-sea #lore)
 - [[ilaria-grimaldi]] — The tiefling apothecary who has run Kalowe's only healer's supply for fifteen years and reveals her discretionary stock only to those who ask the right way. ( #shattered-sea #npc)
+- [[ilo-maren]] — A free-diving matriarchal island culture, its reef-side kelp harvest and shore braiding closing on the annual bonfire that lights the whole bay. ( #shattered-sea #place)
 - [[iolo-bracca]] — A Crown harbour stamp-clerk who plays the Tallow Row felt, loses cheerfully on purpose, and cannot stop talking about which hulls move past the mole after dark. ( #shattered-sea #npc)
 - [[iron-prayer-tablet]] — A palm-sized iron tablet inscribed with prayers, worn smooth by decades of handling, possibly salvaged from a shrine or abandoned temple. ( #shattered-sea #item)
 - [[Ironmantle]] — An old Valcoran sloop with an iron hull. Slow but won't sink. It hums in rough water. ( #shattered-sea #vehicle)
@@ -261,6 +271,7 @@
 - [[Khlysty]] — A secret mystical sect threading through Dravosi and Tessarine noble courts, growing through miraculous healings that bind grateful hosts as unwitting phylacteries. ( #shattered-sea #faction)
 - [[khlysty-the-flock]] — Ecstatic Otel Karn tradition that treats flesh as spirit's vehicle and spreads blood anchors through noble houses. ( #shattered-sea #faction)
 - [[Krakling]] — Juvenile arm-predator sailors report near Midchain; third named entity through the Maw fissure. ( #shattered-sea #creature)
+- [[kwoss]] — Kwoss's nesting beach turns each egg season into an armed standoff between the locals who guard it and the poachers who come for the eggs. ( #shattered-sea #place)
 - [[la-cenere]] — Named later chapter of Lavinia Sordi's life, after she left Crown prison work. ( #shattered-sea #place)
 - [[la-vasca]] — Three-generation Black-Jaw dry dock in Le Paludi, concealed as a defunct tanning yard, where Cobb runs the Basin cradle.
 - [[Lamplighter]] — A consumable arrow that coats its target in cold luminous rot, making it glow for an hour and unable to hide, with the glow visible from 300 feet in darkness. ( #shattered-sea #item)
@@ -298,6 +309,7 @@
 - [[marta-kessler]] — Named Voyvode face. ( #shattered-sea #faction)
 - [[marta-orsini]] — Proprietor of Studio Orsini in Le Paludi. Perfectionist alchemist who demands obedience and speaks to her failed batches. ( #shattered-sea #npc)
 - [[master-kyzil]] — Entered the chase around Calveno and the Sentinel schism. ( #shattered-sea #npc)
+- [[matteo-scola]] — Thin Calveno wreck survivor pulled from the otter hole; he wants the ship and will not follow the woman in the woods. ( #shattered-sea #npc)
 - [[mave-sorn]] — A clean captain with no visible blade, a sealed case held open at the corners, unhurried enough to have changed since morning. ( #shattered-sea #npc)
 - [[mave-sorn-dialogue-terms]] — Mave names the vessel, last port, and Crown language, then offers terms after questions. ( #shattered-sea #lore)
 - [[maw-fissure-and-the-tribute-system]] — Pressure clock: tribute and the Pearl may be holding the Drowned Maw fissure shut. ( #shattered-sea #faction)
@@ -307,17 +319,23 @@
 - [[Meth-Var]] — Watch island of the Sunken Crown facing open Maw waters. ( #shattered-sea #place)
 - [[Mid-Works]] — Antheri residential tier from 200\u2013500 feet below the Maw shelf; feels sealed, pressurized, and built for bodies that did not need floors or air. ( #shattered-sea #place)
 - [[Midchain]] — Sea region whose route the Dead Lady knows when it follows Delmar Fisk's heading. ( #shattered-sea #region)
+- [[midchain-east]] — The Midchain's older, stranger end, where smaller islands scatter wide over pale reef, charts turn vague, and Halythion lies under the water. ( #shattered-sea #region)
+- [[midchain-north]] — A dense, defended strip above the Verdant Teeth, where villages hide in coves and watch two ways at once: Crown patrols to the north, Grung raids from the south. ( #shattered-sea #region)
+- [[midchain-south]] — The chain's smallest region, steep volcanic islands with terraced slopes, rich soil, almost no flat ground, and a settled hostility to anyone arriving uninvited. ( #shattered-sea #region)
+- [[midchain-west]] — The chain's western end and its biggest land: forested islands over a shallow shelf, wide channels no frigate runs without a pilot, and Kalowe taking any hull that pays. ( #shattered-sea #region)
 - [[mind-sharpener]] — An artificer-infused hair clip that lets its wearer auto-succeed a failed concentration save by spending one of four charges that renew at dawn. ( #shattered-sea #item)
 - [[minor-slaad]] — CR 1/2 juvenile slaad with Magic Resistance and a Bite/Claw multiattack, stalled between tadpole and adult — what a tadpole-infested host becomes under Otar the Foul's control. ( #shattered-sea #creature)
 - [[Minotaur]] — Navigator species of the Shattered Sea — no homeland or nation, kinship through teaching/peer bonds called Soundings. ( #shattered-sea #lore)
 - [[minotaur-culture]] — Minotaur Soundings kinship, life stages, naming, and the pilot's authority at sea. ( #shattered-sea #lore)
 - [[Moucheron]] — CR 8 fey species native to Murrat; blood-economy mercenaries who hire out of Kalowe as the Five Blades. ( #shattered-sea #creature)
+- [[munai]] — A shipwrecked botanist's orchard gone wild over generations, now a grove whose poisons and whose cures both work unnervingly well. ( #shattered-sea #place)
 - [[Murrat]] — A mile-and-a-half limestone reef that looks empty until canopy closes twenty feet inland; feels hunted before the first rope bridge. ( #shattered-sea #place)
 - [[murrats-living-shroud]] — A dark mass over Murrat that resolves into a living shroud of millions of Moucheron, audible before visible. ( #shattered-sea #npc)
 - [[murrats-shroud-kets-warning-narration-open]] — Moucheron detach from the cloud and fly toward the Uncertainty. One of them is shouting. ( #shattered-sea #npc)
 - [[murrats-shroud-the-cloud-resolves-narration-open]] — The dark mass over Murrat resolves into wings as the Uncertainty closes distance. ( #shattered-sea #npc)
 - [[Nallowick]] — A drifting peat-bog island with no fixed position; tracing the same slow circuit season after season. ( #shattered-sea #place)
 - [[Necromaton]] — CR 20 artificer lich whose phylactery is a biological anchor organ inside a self-built construct body, running three chassis variants (Base, Flying, Bulldozer) that share one soul via Soul Transfer ( #shattered-sea #creature)
+- [[nemwe]] — Nemwe is an abandoned Dravosi Crown watchtower island whose signal-fire still works, letting whoever holds it call in or warn off patrol cutters. ( #shattered-sea #place)
 - [[nicco-kettley]] — A canal-city halfling who sells alchemical cigarettes off a board under the Bridge, stocked from Studio Orsini's rejected batches. ( #shattered-sea #npc)
 - [[nico-renzetti]] — A lean man in his twenties, jaw set, checking a blade's edge over and over when nobody is watching. ( #shattered-sea #npc)
 - [[nigel-strutt]] — Crown chandlery clerk at the Tidefall Chandlery, young and conscientious, who becomes deeply distressed when customer paperwork is out of order. ( #shattered-sea #npc)
@@ -333,18 +351,21 @@
 - [[Noor]] — Fifteen-year-old ship's cook (learning) aboard the HCS Surety, driven to bridge sailing manuals and real sailing experience. ( #shattered-sea #npc)
 - [[norrington-kingsly]] — Retired Dravosi patrol officer, jovial and red-faced, quietly pushed off the Midchain route to make room for Barnaby Rook's operation. ( #shattered-sea #npc)
 - [[oil-of-still-water]] — An oil that stops bleeding and prevents scarring from wounds. ( #shattered-sea #item)
+- [[old-correspondence]] — An isolated islet where a lone scribe has spent decades drafting one unfinished letter to an unnamed recipient. ( #shattered-sea #place)
 - [[old-faas]] — A brick-solid rigger on two brass-ferruled pegs, faster in the shrouds than on the deck, speaking in short unraised sentences. ( #shattered-sea #npc)
 - [[old-gardens]] — Ancient fruit terraces forming Aruhe’s first inland route.. ( #shattered-sea #aruhe #place)
 - [[old-gardens]] — Ancient fruit terraces inland from Western Landing, forming Aruhe's first route toward the Grasslands and Quiet Forest. ( #shattered-sea #aruhe #place)
 - [[old-harrows-bones]] — A single derelict ship so massive it's become an island; with a whole economy built into its ribs. ( #shattered-sea #place)
 - [[oleandro-fuschi]] — Orc tavern proprietor at Ponte Bassa who keeps detailed records of every ship passing through Calveno's main crossing. ( #shattered-sea #npc)
 - [[Orak]] — High karst Verdant Teeth island paired with Dreth, marked by sinkholes, clefts, and wet dark nests. ( #shattered-sea #region)
+- [[oren-vask]] — Calveno wreck deckhand who has learned a rule-bound route toward the memorial and wants every survivor to return by it. ( #shattered-sea #aruhe #npc)
 - [[oriana-becht]] — Named Tessarine face, craft, or house from the Concordat dump. ( #shattered-sea #npc)
 - [[oshas-slip]] — Stilt village over Calder's Tooth mudflats and a hub for local smuggling. ( #shattered-sea #place)
 - [[Osset]] — Original name of [[talon-vantyrus|Talon Vantyrus]], the alias he now uses as leader of the Countless. ( #shattered-sea #npc)
 - [[Ossira]] — Coral spit so thick with nesting seabirds the beach shifts underfoot with molted feathers. ( #shattered-sea #place)
 - [[ossuary-cay]] — A bone-collecting cay tended by a death-cult that reads the tides through what washes ashore. ( #shattered-sea #place)
 - [[oswald-crench]] — Dwarf proprietor of the Shelf Instrument Dealer in Port Tidefall. Has calibrated Crown navigation equipment for decades. ( #shattered-sea #npc)
+- [[otanu]] — A mildly active volcanic island whose smoke plume locals read like weather, refusing to sail when it 'leans wrong. ( #shattered-sea #place)
 - [[otar-the-foul]] — Named opponent whose defeat at Mercatura is a closed Season 1 thread. ( #shattered-sea #npc)
 - [[otel-karn]] — Island root and original context of the Khlysty, or Flock, tradition. ( #shattered-sea #place)
 - [[Otho]] — Archfey source of the old teaching on Otel Karn, whose bargain shaped the Flock's hidden origin. ( #shattered-sea #npc)
@@ -383,6 +404,7 @@
 - [[purple-caste-enforcer]] — A CR 1/2 grung enforcer, a Pack Tactics escort that grapples with a prehensile tongue before finishing with a venom-coated spear. ( #shattered-sea #creature)
 - [[purple-caste-zealot]] — A CR 3 purple-caste Grung zealot, a battle-draught frenzied escort that closes with Standing Leap before setting off powder charges lit from its own slow-match. ( #shattered-sea #creature)
 - [[pursue-the-grung-raiding-fleet]] — Pursuit thread following the Grung fleet through reefs, supply pressure, and the captive route toward Karath. ( #shattered-sea #quest)
+- [[quillane]] — An observatory sinking by degrees, where scholar-mages study the tides and pay in real knowledge for specimens they cannot go and collect themselves. ( #shattered-sea #place)
 - [[rael-corven]] — Person identified by the source as aboard the original Red Lady during the fleet's sinking. ( #shattered-sea #npc)
 - [[Ral-Arn]] — Record island of the Sunken Crown holding oldest family histories in stone. ( #shattered-sea #place)
 - [[rangi-kailani]] — A lean Sparhold watchman in his thirties, nothing wasted, thumb testing the blade before he speaks. ( #shattered-sea #npc)
@@ -439,6 +461,7 @@
 - [[Sawek]] — Rumored apex predator of the Central Strait's dark southern Midchain approaches. ( #shattered-sea #creature)
 - [[schisms-third-name]] — Named Sentinel-linked pressure or technique from the Sentinels dump. ( #shattered-sea #quest)
 - [[sea-elf]] — Aquatic elf subtype centered at Halythion in the Shattered Sea, tied to the worship of Deep Sashelas. ( #shattered-sea #lore)
+- [[season-02-the-open-midchain]] — Draft Season 2 fiction set across the Midchain: shipwreck survivors, Osset's last fences, Vantyrus's watch, Simone's gold, High Eyrie attention, and Umberlee collecting. ( #shattered-sea #lore #draft)
 - [[season-2]] — Open Midchain sandbox from level 5 to 10: unofficial piracy, island hooks, and live clocks rather than a rail. ( #shattered-sea #lore)
 - [[second-billing-placard]] — A blank brass name plate that, hung at a door with a name written on it, makes readers take the named bearer for someone who belongs there. ( #shattered-sea #item)
 - [[self-heating-tar-pot]] — An iron tar pot with a gnomish alchemical heating element in the base, keeping its contents workable without a brazier. ( #shattered-sea #item)
@@ -450,6 +473,15 @@
 - [[serafina-windfall-fisk]] — An Aasimar fortune-teller compelled by precognition to wander the Verdant Scatter. ( #shattered-sea #npc)
 - [[serena-cottle]] — Halfling co-owner of Il Preludio who finishes her business partner's sentences a fourth higher, then lands them flat as inventory talk. She actually runs the shop. ( #shattered-sea #npc)
 - [[serin-haut]] — Dravosi Crown spy operating in Calveno as a Tessarine trade-assessor. ( #shattered-sea #npc)
+- [[Session-12-00-The-Weight-of-Obedience]] — The party pushes deeper into Aruhe, reads the Gold orders layered among the dead, and faces Talon Skarn's second attempt to take the Fate Spinner. ( #shattered-sea #session-prep)
+- [[Session-12-01-River-Slack-Reprise]] — The session resumes mid-fight as Talon Skarn burns through his Stunned opening to reach Crissdalynn's Fate Spinner. ( #shattered-sea #session-prep)
+- [[Session-12-02-The-Dead-Keep-Orders]] — A trail of Grung dead and spent Authority Seals changes the party's understanding from one lost group to repeated Gold-caste replacement orders. ( #shattered-sea #session-prep)
+- [[Session-12-03-Grass-Without-Wind]] — An invisible disturbance follows the party inland, turning missing fruit, disturbed packs, and impossible movement into a short pursuit contest. ( #shattered-sea #session-prep)
+- [[Session-12-04-Two-Grave-Orders]] — A valley mass grave proves that Gold kept sending replacements after Aruhe had already killed earlier Grung parties, and the latest order names two graves. ( #shattered-sea #session-prep)
+- [[Session-12-05-The-Rule-Bound-Route]] — A survivor-led route toward the memorial turns Aruhe's rules into a physical contest about carried fruit, urgency, trust, Jean-Claude, and the Fate Spinner. ( #shattered-sea #session-prep)
+- [[Session-12-06-What-Is-Chosen]] — The survivors state what they choose to obey and point the party toward the memorial, where a living Giant's Guava makes the next refusal or claim visible. ( #shattered-sea #session-prep)
+- [[Session-12-07-The-Guava-and-the-Spinner]] — Invisible Talon Skarn makes his second close theft attempt while Perrin chooses whether Auralis's command to consume a living Giant's Guava is worth Aruhe's response. ( #shattered-sea #session-prep)
+- [[Session-12-08-Toward-the-Memorial]] — After Skarn's second theft attempt, the party sees the changed route and the survivors point from the mass grave toward Memorial Grove. ( #shattered-sea #session-prep)
 - [[shattered-sea]] — Roughly 60,000 square miles south of Chult; Season 2 pressure sits at Aruhe after Sparhold while major powers claim the sea. ( #shattered-sea #region)
 - [[shattered-sea-pantheon]] — Regional Index of the Shattered Sea's divine landscape, linking each deity's own page. ( #shattered-sea #lore)
 - [[shattered-sea-tone-guide]] — DM/agent-facing craft guidance: six-pillar tone doctrine for the Shattered Sea, defaulting to the npc guide's and vault/refs/craft/'s generic construction techniques. ( #shattered-sea #lore)
@@ -529,6 +561,8 @@
 - [[tessarine-factor-amberreach]] — A Tier 3 Tessarine cargo galleon serving the commercial route from Calveno westward. ( #shattered-sea #vehicle)
 - [[tessarine-trade-house]] — Named Tessarine face, craft, or house from the Concordat dump. ( #shattered-sea #npc)
 - [[Thassos]] — A Minotaur regular at the Tallow Row card den who lost his passage-sense to drink and reads a card shoe instead. ( #shattered-sea #npc)
+- [[the-foundling-shoals]] — A tide-flat reef north of Sparhold where unharmed infants keep turning up unexplained, and the fisherfolk who find them raise them as a sacred trust. ( #shattered-sea #place)
+- [[the-long-wager]] — An island west of Ghal Idrissa given over to a decades-running contest between two rival crews, refereed by a neutral judge who's outlived both original captains. ( #shattered-sea #place)
 - [[the-tithe-of-the-bitch-queen]] — A cursed hoard of Umberlee's storm-claimed treasures scattered across the Sunken Crown seafloor. ( #shattered-sea #lore)
 - [[the-anchorless]] — A bare; unapproachable rock. Every ship that passes in sight reports the same dream that night. ( #shattered-sea #place)
 - [[the-aruhe-wreck]] — A storm splits the Grung fleet carrying Calveno's 487 captives toward Karath. Part of it wrecks on Aruhe, where the Blight and its fauna leave only two survivors. ( #shattered-sea #lore)
@@ -576,13 +610,14 @@
 - [[the-struck-match]] — An alchemical cigarette tipped with a grey striking head that leaves the smoker an hour of reading a room a half-second before it turns. ( #shattered-sea #item)
 - [[the-taken-314]] — Captive pipeline clock tracking more than 314 fighting-age people moved from festival ports toward Karath. ( #shattered-sea #quest)
 - [[the-tallow-bell]] — A Tier 1 Waveservant Shrine sloop that moves clergy, tribute records, and sealed offerings between Shattered Sea ports. ( #shattered-sea #vehicle)
-- [[the-tarahs]] — A faction operating ships in or near [[calveno|Calveno]]. Known to [[nona-black-jaw|Nona Black-Jaw]] and the [[black-jaw-run|Black-Jaw Run]] as a group that takes [[rattkin|Rattkin]]. When [[perrin ( #shattered-sea #faction)
+- [[the-tarahs]] — Calveno-area ship faction that takes Rattkin; Nona assumed they had Perrin when he missed check-in. ( #shattered-sea #faction)
 - [[the-understudy]] — A folded canvas figure that unfolds into a convincing double of its owner, takes one attack meant for them, and collapses at the owner's feet. ( #shattered-sea #item)
 - [[the-unnamed-companion]] — The drowned man Hinewai buried on Aruhe; his grave became the reason for the island's law. ( #shattered-sea #aruhe #npc)
 - [[the-unplotted]] — Never in the same place on two charts; yet ships always find it exactly where they need it. ( #shattered-sea #place)
 - [[the-vault-of-the-first-factor]] — A legendary hidden depository, built by the earliest [[tessarine-concordat|Tessarine Concordat]] Envoy to [[campaign-overview|the Shattered Sea]], said to hold the physical collateral of the region ( #shattered-sea #lore)
 - [[the-velvet-noose]] — A four-deck black-lacquer man-of-war with ninety closed gunports and a laughing magistrate at the prow. ( #shattered-sea #npc)
 - [[the-weeping-stair]] — A submerged staircase rumored to lead to a drowned city. Nobody has confirmed reaching the bottom. ( #shattered-sea #place)
+- [[thessit]] — A wreck-collecting island where whole, undamaged ships wash ashore months after they reportedly sank somewhere else entirely. ( #shattered-sea #place)
 - [[Thistlewick]] — Brambles that produce a mild narcotic effect on contact. ( #shattered-sea #place)
 - [[thoon-adar]] — A ring of standing stones that reorient themselves overnight; slow enough nobody's caught them moving. ( #shattered-sea #place)
 - [[thornback]] — CR 7 blight-corrupted thorned bruiser that roots the Quiet floor and drives off other beasts. ( #shattered-sea #aruhe #creature)
@@ -593,9 +628,11 @@
 - [[toa-kiri]] — Pearl-diving island where the workers labor in total silence; bound to a superstition about the sea and speech. ( #shattered-sea #place)
 - [[Toby]] — Child on Halewick whose cursed speech declared him emperor and overwrote the island's memory. ( #shattered-sea #npc)
 - [[Tomo]] — Grung or wreck companion in the Season 2 draft who ate fruit and changed. ( #shattered-sea #npc)
+- [[tor-vessane]] — An island every Midchain captain routes wide around; a real curse sits on it, but no two sailors agree on what it actually does. ( #shattered-sea #place)
 - [[torn-crossing]] — Flood-scoured grassland crossing where prints, slick stone, razer-grass, deep water, and a Spiguar hunting lane constrain movement. ( #shattered-sea #creature)
 - [[Torvalline]] — Shipbreaker's yard stripping wrecks for parts; half the Midchain's "used" rigging traces back here. ( #shattered-sea #place)
 - [[Twineye]] — Twin islets joined by an arch; feuded over for generations by one estranged family. ( #shattered-sea #place)
+- [[two-grave-orders]] — The spent Authority Seals preserve a partial order trail from inland reporting to replacement expeditions and finally a command to find and destroy two graves. ( #shattered-sea #aruhe #lore)
 - [[Tyr]] — Deity whose scales are cut into the altar stone at Blackrule. ( #shattered-sea #lore)
 - [[Umberlee]] — The sea as it is: tribute theology, Pearl frustration at the Maw boundary, and the Dead Lady as collection hull. ( #shattered-sea #lore)
 - [[umberlee-branca]] — Named from the Umberlee dump. ( #shattered-sea #npc)
@@ -607,6 +644,8 @@
 - [[unsaid-macaw]] — Macaw that echoes a listener's surface thought in their own voice and can briefly compel one truthful sentence. ( #shattered-sea #aruhe #creature)
 - [[Ussa]] — A green-skinned scout in Sparhold colours, bare webbed feet, chalk-dusted palms, eyes always on the tree line. ( #shattered-sea #npc)
 - [[Ussamet]] — Half-sunken ruins that surface only at the lowest tides; on a schedule only the sea seems to keep. ( #shattered-sea #place)
+- [[v001-autonomy-probe]] — Disposable lint-repair probe for agent autonomy V-001. ( #shattered-sea)
+- [[vaelspire]] — A solitary basalt spire said to answer one true question, once, to whoever reaches the summit. Nobody who's asked will say what. ( #shattered-sea #place)
 - [[Vaka]] — Eight years old. Founded by [[felix-aho|Félix Aho]] after his defection from [[karath|Karath]] — green caste, the lowest freeborn. Roughly a dozen members: mostly green- and blue-caste defectors, p ( #shattered-sea #faction)
 - [[Valkur]] — Named from the Umberlee dump. ( #shattered-sea #lore)
 - [[vantrys-choice]] — Identical harbors side by side; one universally and inexplicably avoided. ( #shattered-sea #place)
@@ -626,6 +665,7 @@
 - [[verity-hollowell]] — Cedric Hollowell's elder daughter; manages the secondary accounts of the family's import agency in Port Tidefall. ( #shattered-sea #npc)
 - [[verrows-cradle]] — A floating orphanage quietly funded by a retired pirate captain's old treasure. ( #shattered-sea #place)
 - [[Vestra]] — Family brig built and captained by Vincenzo Black-Jaw; something massive rose and took it. ( #shattered-sea #vehicle)
+- [[vetau]] — An ungoverned geothermal atoll whose lagoon vent boils the only safe anchorage shut for an hour at noon, keeping any permanent settlement off it. ( #shattered-sea #place)
 - [[Veth]] — Largest Verdant Teeth island, with a western beach trade strip and blue intermediaries but no pier. ( #shattered-sea #region)
 - [[veth-west-beach]] — Specific sanctioned Veth trade site where blue intermediaries meet outsiders without opening the interior. ( #shattered-sea #place)
 - [[Vethka]] — Name attached to the narrow Grung war proas that carry raiding power through reefs and channels. ( #shattered-sea #vehicle)
@@ -649,6 +689,7 @@
 - [[Welak]] — CR 5 whip shark surface ambusher that follows salvage-pump vibration. ( #shattered-sea #creature)
 - [[Wessa]] — Cook aboard the Saltwright who runs the galley with methodical skill. ( #shattered-sea #npc)
 - [[western-landing|Western Landing]] — Aruhe's known sea approach: a reef gap, a short shingle beach, and a retreat that depends on tide and surf. ( #shattered-sea #aruhe #place)
+- [[whitmoth-hollow]] — Albino apes tend a vanished druidic order's overgrown garden on this hollow, leaving fruit offerings on a flat stone in ritual-like silence. ( #shattered-sea #place)
 - [[whits-larder]] — Impossible cuisine made from ingredients that shouldn't be local at all. ( #shattered-sea #place)
 - [[widows-shrine-locket]] — A tarnished locket left as a shrine offering at Sparhold's fishing-village shrine, holding a portrait of a face nobody now living remembers. ( #shattered-sea #item)
 - [[widows-toast]] — The house drink at The Long Toast, dark rum poured with a joke about widows nobody on Otel Karn actually becomes. ( #shattered-sea #item)
@@ -711,21 +752,31 @@
 [Artifact storage: ~/.omp/agent/sessions/-agentic-co-dm/2026-09-16T21-35-49-408Z_01a0ac25-bca0-75b5-8c19-55d8b9643423/9.read.log (108.6KB). Use artifact://9:N-M to page, artifact://9:raw:N-M for verbatim chunks, and the artifact file path for search/copy workflows.]
 
 ## Folder Indexes
-- [[entities/_index|Entities]]
-- [[journal/_index|Journal]]
-- [[synthesis/_index|Synthesis]]
-- [[entities/place/aruhe-beach|Aruhe Beach]] — Generic western Aruhe strand owner.
-- [[entities/place/aruhe-caves|Aruhe Caves]] — Buried lava-tube under-region beneath Aruhe.
-- [[entities/place/hungry-isle|Hungry Isle]] — Aruhe expedition site and island pressure.
-- [[entities/npc/celia-parel|Celia Parel]] — Survivor who records the dead.
-- [[entities/npc/oren-vask|Oren Vask]] — Survivor who follows Aruhe rules by choice.
-- [[entities/lore/two-grave-orders|Two-Grave Orders]] — Partial history of Gold-caste expeditions.
-- [[journal/sessions/shattered-sea/12/Session-12-00-The-Weight-of-Obedience|Session 12 — The Weight of Obedience]] — Session 12 preparation beat.
-- [[journal/sessions/shattered-sea/12/Session-12-01-River-Slack-Reprise|Session 12 — River Slack Reprise]] — Session 12 preparation beat.
-- [[journal/sessions/shattered-sea/12/Session-12-02-The-Dead-Keep-Orders|Session 12 — The Dead Keep Orders]] — Session 12 preparation beat.
-- [[journal/sessions/shattered-sea/12/Session-12-03-Grass-Without-Wind|Session 12 — Grass Without Wind]] — Session 12 preparation beat.
-- [[journal/sessions/shattered-sea/12/Session-12-04-Two-Grave-Orders|Session 12 — Two-Grave Orders]] — Session 12 preparation beat.
-- [[journal/sessions/shattered-sea/12/Session-12-05-The-Rule-Bound-Route|Session 12 — The Rule-Bound Route]] — Session 12 preparation beat.
-- [[journal/sessions/shattered-sea/12/Session-12-06-What-Is-Chosen|Session 12 — What Is Chosen]] — Session 12 preparation beat.
-- [[journal/sessions/shattered-sea/12/Session-12-07-The-Guava-and-the-Spinner|Session 12 — The Guava and the Spinner]] — Session 12 preparation beat.
-- [[journal/sessions/shattered-sea/12/Session-12-08-Toward-the-Memorial|Session 12 — Toward the Memorial]] — Session 12 preparation beat.
+- [[entities/creature/creature-index|Creatures]]
+- [[entities/entities-index|Entities]]
+- [[entities/faction/faction-index|Factions]]
+- [[entities/item/item-index|Items]]
+- [[entities/lore/lore-index|Lore]]
+- [[entities/npc/npc-index|Non-Player Characters]]
+- [[entities/pc/pc-index|Player Characters]]
+- [[entities/place/place-index|Places]]
+- [[entities/quest/quest-index|Quests]]
+- [[entities/region/region-index|Regions]]
+- [[entities/vehicle/vehicle-index|Vehicles]]
+- [[entities/work/work-index|Work]]
+- [[journal/journal-index|Journal]]
+- [[journal/sessions/sessions-index|Sessions]]
+- [[journal/sessions/shattered-sea/01/01-index|Session 01]]
+- [[journal/sessions/shattered-sea/02/02-index|Session 02]]
+- [[journal/sessions/shattered-sea/03/03-index|Session 03]]
+- [[journal/sessions/shattered-sea/04/04-index|Session 04]]
+- [[journal/sessions/shattered-sea/05/05-index|Session 05]]
+- [[journal/sessions/shattered-sea/06/06-index|Session 06]]
+- [[journal/sessions/shattered-sea/07/07-index|Session 07]]
+- [[journal/sessions/shattered-sea/08/08-index|Session 08]]
+- [[journal/sessions/shattered-sea/09/09-index|Session 09]]
+- [[journal/sessions/shattered-sea/10/10-index|Session 10]]
+- [[journal/sessions/shattered-sea/11/11-index|Session 11]]
+- [[journal/sessions/shattered-sea/12/12-index|Session 12]]
+- [[journal/sessions/shattered-sea/shattered-sea-index|Shattered Sea sessions]]
+- [[synthesis/synthesis-index|Synthesis]]

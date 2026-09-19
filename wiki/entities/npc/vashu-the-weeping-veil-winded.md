@@ -2,6 +2,7 @@
 title: "Vashu the Weeping Veil (Winded)"
 aliases:
   - Vashu the Weeping Veil (Winded)
+  - vashu-the-weeping-veil (Winded)
 category: entities
 tags: [shattered-sea, npc]
 sources:
@@ -92,6 +93,6 @@ Same NPC as [[vashu-the-weeping-veil|Vashu, the Weeping Veil]]. See her page for
 
 ## Session Log
 
-- **Session 06**: [[catarina-davirelli|Catarina]] hits her with [[Fire Bolt]] (15 fire damage), then on the next turn has her homunculus Strix land a [[Shocking Grasp]] (13 lightning damage). Vashu turns and locks onto Catarina in response. Delmar's blunderbuss shot (identified in play as hitting "the blind one") forces a DEX save against the explosive follow-up. Vashu fails the save, but the DM rules her Evasion trait halves the damage instead.
+- **Session 06**: [[catarina-davirelli|Catarina]] hits her with Fire Bolt (15 fire damage), then on the next turn has her homunculus Strix land a Shocking Grasp (13 lightning damage). Vashu turns and locks onto Catarina in response. Delmar's blunderbuss shot (identified in play as hitting "the blind one") forces a DEX save against the explosive follow-up. Vashu fails the save, but the DM rules her Evasion trait halves the damage instead.
 
-- Confirmed: [[Transcript]]: "Vashu turns around you and without looking at you, she does seem to have locked onto you now. He's pissed her off." / "Zaxu's dex mod is plus 5… it's a 10! That's not good. Okay, well, I guess I'm going to use Evasion and instead take half damage."
+- Confirmed: Transcript: "Vashu turns around you and without looking at you, she does seem to have locked onto you now. He's pissed her off." / "Zaxu's dex mod is plus 5… it's a 10! That's not good. Okay, well, I guess I'm going to use Evasion and instead take half damage."

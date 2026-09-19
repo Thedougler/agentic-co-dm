@@ -5,6 +5,11 @@ tags: []
 sources: []
 created: 2026-09-17
 updated: 2026-09-17
+type: lore
+lifecycle: proposed
+reveal: unrevealed
+summary: Folder index of Places.
+base_confidence: 0.55
 ---
 
 - [[entities/place/adwe|Adwe]]
@@ -74,6 +79,7 @@ updated: 2026-09-17
 - [[entities/place/le-paludi|Le Paludi]]
 - [[entities/place/Lethys|Lethys]]
 - [[entities/place/line-bank|Line Bank]]
+- [[entities/place/low-lamp|Low Lamp]]
 - [[entities/place/Marenui|Marenui]]
 - [[entities/place/Marlstrand|Marlstrand]]
 - [[entities/place/Marrow|Marrow]]

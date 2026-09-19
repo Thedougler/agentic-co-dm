@@ -39,7 +39,7 @@ tier: supporting
 ## Mechanics
 
 > [!mechanic]
-> **Grimaldi's Waking Salts [HB].** A tin holds four doses. As an Action, break one dose under the nose of a creature within 5 feet that is [[Charmed]], [[Frightened]], [[Incapacitated]], [[Paralyzed]], or [[Stunned]] by an effect that allows a saving throw to end it. That creature immediately repeats that saving throw with advantage, ending the effect on itself on a success.
+> **Grimaldi's Waking Salts [HB].** A tin holds four doses. As an Action, break one dose under the nose of a creature within 5 feet that is Charmed, Frightened, Incapacitated, Paralyzed, or Stunned by an effect that allows a saving throw to end it. That creature immediately repeats that saving throw with advantage, ending the effect on itself on a success.
 >
 > **Edge cases:** the target need not be conscious or willing. A dose works on a creature at 0 hit points, though the salts neither stabilise it nor restore hit points. A second dose against the same effect grants no further save.
 >

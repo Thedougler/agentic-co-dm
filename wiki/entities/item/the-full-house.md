@@ -47,14 +47,14 @@ Sold to nobody yet. It stands in the locked case at the back of the shop, above 
 | Current holder | [[fioravante-selmerin|Fio]], in the high case, booked. |
 | Narrative hook | 1,500 gp, and the tag already carries somebody else's name. |
 
-Rare tier holds. [[Magic Item Rarity]] puts Rare goods in an approximate 500-5,000 gp band, and 1,500 gp sits low inside it beside [[la-cenere]]'s [[Necklace of Fireballs]] at the same price. The effect is _[[fear]]_ cast at 3rd level, traded out of a 30-foot cone into a 60-foot sphere and out of the caster's control into a fixed round of duration, once a day, on a device anyone attuned can work.
+Rare tier holds. Magic Item Rarity puts Rare goods in an approximate 500-5,000 gp band, and 1,500 gp sits low inside it beside [[la-cenere]]'s Necklace of Fireballs at the same price. The effect is _fear_ cast at 3rd level, traded out of a 30-foot cone into a 60-foot sphere and out of the caster's control into a fixed round of duration, once a day, on a device anyone attuned can work.
 
 ## Mechanics
 
 > [!mechanic]
 > **The Full House [HB].** Setting the stand down and turning the crank once takes an action, and the device does this once per day, recovering at dawn. It must rest on a solid surface to work.
 >
-> The roar of a packed house fills a 60-foot-radius sphere centred on the stand. Every creature in that sphere hostile to the attuned owner makes a DC 15 [[Wisdom]] saving throw. On a failure a creature is frightened of the stand for 1 minute. A frightened creature must move away from the stand on its turn by the safest route available, and repeats the save at the end of each of its turns, ending the effect on itself on a success.
+> The roar of a packed house fills a 60-foot-radius sphere centred on the stand. Every creature in that sphere hostile to the attuned owner makes a DC 15 Wisdom saving throw. On a failure a creature is frightened of the stand for 1 minute. A frightened creature must move away from the stand on its turn by the safest route available, and repeats the save at the end of each of its turns, ending the effect on itself on a success.
 >
 > **Edge cases:** the sound carries a further 300 feet as ordinary noise, and anyone in that outer band hears an audience where there is no theatre. A creature that cannot hear is unaffected. The crank turns whether or not the owner is attuned, and unattuned it makes noise and nothing else. Creatures immune to the frightened condition ignore the effect entirely and still hear it.
 >

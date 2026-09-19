@@ -39,7 +39,7 @@ _Wondrous Item, Uncommon._
 | Field | Detail |
 |---|---|
 | One thing | Nothing reaches a sleeping camp or a moored ship unannounced. |
-| Rarity justification | Narrower than [[Rope of Climbing]] (uncommon, unlimited uses, works anywhere) and than the [[Alarm]] spell a ritual caster gets free every night. This works only while the chime sits still, once between long rests, and gives no bonus to any roll. |
+| Rarity justification | Narrower than Rope of Climbing (uncommon, unlimited uses, works anywhere) and than the Alarm spell a ritual caster gets free every night. This works only while the chime sits still, once between long rests, and gives no bonus to any roll. |
 | Attunement reason | No attack, damage, AC, or save modifier, and one power only. The attunement tree has no branch for it. |
 | PC connection | The crew's damage sits almost entirely in [[delmar-fisk|Delmar]] and [[crissdalynn-khinriss|Crissdalynn]]'s melee lanes, so losing a first round costs them more than hit points do. |
 | Current holder | [[giacomo-moretti]], on the signal-gear shelf at [[Moretti & Sons Chandlery]]. |
@@ -50,7 +50,7 @@ _Wondrous Item, Uncommon._
 > [!mechanic]
 > **Anchor-Watch Chime [HB].** Setting the chime on a surface that carries no motion of its own takes 1 minute. It holds until a creature lifts it or until the next dawn. From then, the first time a creature the setter has not already seen comes within 60 feet, the chime rings once, loud enough to wake sleepers and audible 300 feet off. Every creature within 30 feet that hears it escapes the Surprised condition in an encounter beginning in the next minute.
 >
-> **Edge cases:** it rings for a creature that goes [[Invisible]], hides, or arrives underwater. A ship at anchor counts as still, and one under way carries too much motion for it. It rings once a setting, and a reset costs the full minute again.
+> **Edge cases:** it rings for a creature that goes Invisible, hides, or arrives underwater. A ship at anchor counts as still, and one under way carries too much motion for it. It rings once a setting, and a reset costs the full minute again.
 >
 > **Limitations:** it grants no bonus to Initiative, Perception, or any other roll, names nothing about what woke it, and points in no direction. A creature, a held object, and a vehicle with way on it all refuse it. A second chime within the same 60 feet stays silent while the first one holds.
 

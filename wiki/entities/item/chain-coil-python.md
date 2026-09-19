@@ -39,7 +39,7 @@ tier: supporting
 ## Mechanics
 
 > [!mechanic]
-> **[HB] Set On (action).** Open the crate and name a target you can see within 20 feet. The python moves its speed toward that target and makes one attack against it: +4 to hit, reach 5 ft., 1d8 bludgeoning damage, and the target is grappled. A grappled creature escapes with a successful DC 14 [[Strength]] (Athletics) or [[Dexterity]] (Acrobatics) check made as an action. On a failure it stays grappled and loses that action. While grappling, the python does nothing else. It holds on until the target escapes or until someone drops it to 0 hit points, and you can call it off with an action.
+> **[HB] Set On (action).** Open the crate and name a target you can see within 20 feet. The python moves its speed toward that target and makes one attack against it: +4 to hit, reach 5 ft., 1d8 bludgeoning damage, and the target is grappled. A grappled creature escapes with a successful DC 14 Strength (Athletics) or Dexterity (Acrobatics) check made as an action. On a failure it stays grappled and loses that action. While grappling, the python does nothing else. It holds on until the target escapes or until someone drops it to 0 hit points, and you can call it off with an action.
 >
 > **[HB] One Target.** The python takes one target per command and will not change targets while it holds. Getting it back into the crate takes a minute and both hands, or a fitted [[corvos-catch-pole|catch-pole]].
 >

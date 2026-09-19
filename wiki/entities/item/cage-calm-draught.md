@@ -39,7 +39,7 @@ tier: supporting
 ## Mechanics
 
 > [!mechanic]
-> **[HB] Dose (action).** Mix one dose into food or water a beast then eats or drinks, or throw the crock as an improvised weapon at a target within 20 feet. A beast that swallows the dose, and any beast the thrown crock splashes, makes a DC 13 [[Constitution]] saving throw. On a failed save the draught charms it toward you for 10 minutes and halves its speed, and it will not attack while charmed. On a success nothing takes hold, though it knows someone tried.
+> **[HB] Dose (action).** Mix one dose into food or water a beast then eats or drinks, or throw the crock as an improvised weapon at a target within 20 feet. A beast that swallows the dose, and any beast the thrown crock splashes, makes a DC 13 Constitution saving throw. On a failed save the draught charms it toward you for 10 minutes and halves its speed, and it will not attack while charmed. On a success nothing takes hold, though it knows someone tried.
 >
 > **[HB] Second Dose.** Give a beast another dose inside the hour and it saves with advantage. A thrown crock breaks on impact, hit or miss.
 >

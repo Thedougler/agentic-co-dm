@@ -37,4 +37,4 @@ He's not smiling at all once he's sure of a thing. He said as much to [[Thunk]] 
 
 ## Session Log
 
-- **Session 07.** Dealt the next hand himself once he clocked Thunk counting, then shoved the table past six hundred gold to test him. Called out the count in front of the room: "You've been lucky a great many times." Folded his hand instead of pressing the fight when Thunk and Faas made for the door. [[Transcript]]
+- **Session 07.** Dealt the next hand himself once he clocked Thunk counting, then shoved the table past six hundred gold to test him. Called out the count in front of the room: "You've been lucky a great many times." Folded his hand instead of pressing the fight when Thunk and Faas made for the door. Transcript

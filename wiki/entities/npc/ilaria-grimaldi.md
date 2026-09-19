@@ -49,7 +49,7 @@ tier: supporting
 
 *Ilaria Grimaldi*: "Healer's kit or wound supplies? There's a difference."
 
-*Ilaria Grimaldi*: "[[Antitoxin]]'s fifty. I have two."
+*Ilaria Grimaldi*: "Antitoxin's fifty. I have two."
 
 Works at the counter throughout any exchange, the scale and the mortar never idle, and doesn't look up until she's named her price.
 

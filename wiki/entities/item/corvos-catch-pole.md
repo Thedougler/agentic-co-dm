@@ -38,7 +38,7 @@ tier: supporting
 
 ## Mechanics
 
-**[HB] Noose (action).** Reach 10 ft. Make a [[Dexterity]] check contested by the target's [[Strength]] (Athletics) or Dexterity (Acrobatics) against a Medium or smaller beast. On a success the beast is restrained while you hold the pole in two hands, and it stays at the far end of the shaft, out of reach of anything with a 5-foot reach. Maintaining the hold costs your action each turn. The beast repeats the contest at the end of each of its turns.
+**[HB] Noose (action).** Reach 10 ft. Make a Dexterity check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) against a Medium or smaller beast. On a success the beast is restrained while you hold the pole in two hands, and it stays at the far end of the shaft, out of reach of anything with a 5-foot reach. Maintaining the hold costs your action each turn. The beast repeats the contest at the end of each of its turns.
 
 **Limitations:** beasts only, Medium or smaller, and nothing that can simply chew through wire. The pole itself is AC 13, 10 hp, and snaps at 0 hp.
 

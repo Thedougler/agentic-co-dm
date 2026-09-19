@@ -35,7 +35,7 @@ tier: supporting
 | | |
 |---|---|
 | One thing | Once per day as a reaction, cause one divination spell or magical effect targeting you to fail automatically. |
-| Rarity justification | Uncommon. Comparable to [[Cloak of Protection]] (uncommon, attunement, +1 to AC and all saving throws continuously) and [[Bag of Tricks]] (uncommon, attunement, 8 charges/day varying effect). The chip lands harder in a narrower lane: 1/day hard block vs. divination only, more story weight, less combat breadth. |
+| Rarity justification | Uncommon. Comparable to Cloak of Protection (uncommon, attunement, +1 to AC and all saving throws continuously) and Bag of Tricks (uncommon, attunement, 8 charges/day varying effect). The chip lands harder in a narrower lane: 1/day hard block vs. divination only, more story weight, less combat breadth. |
 | Attunement reason | Grants a save-adjacent defensive benefit (automatic block of a targeted divination that would otherwise force or bypass a save), triggering the "any attack/damage/save/AC bonus" branch of the attunement decision tree. |
 | PC connection | [[perrin-black-jaw]]. The Crown dispatch in the sealed case tracks "supernatural irregularity manifesting as arcane attunement outside standard registry." Perrin is the designated subject. The chip blocks the next scrying attempt before it resolves. |
 | Current holder | Mave Sorn, on her person during the [[Velvet Noose Intercept]] encounter. |
@@ -43,9 +43,9 @@ tier: supporting
 
 ## Mechanics
 
-*Warding Reaction.* Once per day, when you are the specific target of a divination spell or magical effect (such as [[Scrying]], *Locate Person*, [[Locate Creature]], or a similar detection effect), you may use your Reaction to cause that effect to fail automatically. The spell fires and its slot expends. The effect stops at the chip. The caster or source knows the deflection happened. This property recharges at dawn.
+*Warding Reaction.* Once per day, when you are the specific target of a divination spell or magical effect (such as Scrying, *Locate Person*, Locate Creature, or a similar detection effect), you may use your Reaction to cause that effect to fail automatically. The spell fires and its slot expends. The effect stops at the chip. The caster or source knows the deflection happened. This property recharges at dawn.
 
-**Limitations.** This does not block divination effects cast as area effects, or effects that alter only the caster's own senses. A [[Detect Magic]] cantrip sweeping a room, or [[True Seeing]] sharpening the caster's sight, passes unimpeded. The chip has no effect on non-divination magic of any school.
+**Limitations.** This does not block divination effects cast as area effects, or effects that alter only the caster's own senses. A Detect Magic cantrip sweeping a room, or True Seeing sharpening the caster's sight, passes unimpeded. The chip has no effect on non-divination magic of any school.
 
 ## Provenance
 

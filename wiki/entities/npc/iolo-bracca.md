@@ -44,4 +44,4 @@ His chatter flows from real hunger, not careless talk. He wants your ship's deta
 
 ## Session Log
 
-- **Session 07.** Bet cheerfully into [[Thunk]]'s good hands and kept talking through the count, still narrating harbour gossip about hulls passing the mole after dark. [[Transcript]]
+- **Session 07.** Bet cheerfully into [[Thunk]]'s good hands and kept talking through the count, still narrating harbour gossip about hulls passing the mole after dark. Transcript

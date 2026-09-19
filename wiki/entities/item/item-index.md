@@ -5,6 +5,11 @@ tags: []
 sources: []
 created: 2026-09-17
 updated: 2026-09-17
+type: lore
+lifecycle: proposed
+reveal: unrevealed
+summary: Folder index of Items.
+base_confidence: 0.55
 ---
 
 - [[entities/item/a-sliver-of-the-unstable-form|A Sliver of the Unstable Form]]
@@ -22,8 +27,8 @@ updated: 2026-09-17
 - [[entities/item/bell-tone-draught|Bell-Tone Draught]]
 - [[entities/item/bent-offering-farthing|Bent Offering Farthing]]
 - [[entities/item/bilge-lamp|Bilge Lamp]]
+- [[entities/item/black-lotus|Black Lotus]]
 - [[entities/item/black-lotus-heart|Black Lotus Heart]]
-- [[entities/item/black-lotus|black-lotus]]
 - [[entities/item/blade-of-the-lost-grip|Blade of the Lost Grip]]
 - [[entities/item/blind-hood-and-jesses|Blind-Hood and Jesses]]
 - [[entities/item/bosuns-reach|Bosun's Reach]]

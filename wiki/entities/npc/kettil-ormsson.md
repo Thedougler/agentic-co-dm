@@ -28,7 +28,7 @@ tier: supporting
 
 |               |                                                               |
 | ------------- | ------------------------------------------------------------- |
-| **Species**   | [[Dwarf]]                                                         |
+| **Species**   | Dwarf                                                         |
 | **Pronouns**  | he/him                                                        |
 | **Location**  | [[Ormsson's Fittings]], [[Kalowe]]   |
 | **Role**      | Hardware and arms merchant                                    |

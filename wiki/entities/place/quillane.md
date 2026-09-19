@@ -75,11 +75,11 @@ A hull reaches Quillane only by threading the tide pools at the shoreline; there
 
 ## Hazards
 
-The flooded nave admits [[reef-shark|reef sharks]] once the tide rises high enough to fill it, patient enough to trail anyone still wading through. [[giant-crab|Giant crabs]] shelter under the collapsed dome's lower shelf and come out snapping if disturbed after dark. Anyone caught on the wrong side of the causeway when the tide turns is stranded until it clears again.
+The flooded nave admits [[reef-shark|reef sharks]] once the tide rises high enough to fill it, patient enough to trail anyone still wading through. Giant crabs shelter under the collapsed dome's lower shelf and come out snapping if disturbed after dark. Anyone caught on the wrong side of the causeway when the tide turns is stranded until it clears again.
 
 ## Ecology
 
-Salt lichen and wind-flattened stonecrop crust every stretch of exposed masonry and the dome's fallen tiles, the only real cover a party gets crossing the open shoreline. Sea fennel roots in the cracks between the tide-pool rocks below the dome, and the scholars pick it for the evening pot as much as they trade it. [[crab|Crabs]] work the tide pools at low water, easy enough for anyone who wades in with a bucket, and [[vulture|vultures]] wheel over the broken dome for fish stranded on the tiles when the tide pulls back.
+Salt lichen and wind-flattened stonecrop crust every stretch of exposed masonry and the dome's fallen tiles, the only real cover a party gets crossing the open shoreline. Sea fennel roots in the cracks between the tide-pool rocks below the dome, and the scholars pick it for the evening pot as much as they trade it. Crabs work the tide pools at low water, easy enough for anyone who wades in with a bucket, and vultures wheel over the broken dome for fish stranded on the tiles when the tide pulls back.
 
 ## Hooks
 

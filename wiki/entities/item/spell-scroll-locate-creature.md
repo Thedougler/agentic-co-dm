@@ -32,8 +32,8 @@ tier: supporting
 
 Scroll, rare. Among prize-goods at [[Vask's Reclaimed Goods]].
 
-A _[[Spell Scroll]]_ bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once you cast the spell, the scroll crumbles to dust. If something interrupts the casting, the scroll isn't lost.
+A _Spell Scroll_ bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once you cast the spell, the scroll crumbles to dust. If something interrupts the casting, the scroll isn't lost.
 
 If the spell is on your spell list but of a higher level than you can normally cast, you make an ability check using your spellcasting ability to determine whether you cast the spell. The DC equals 10 plus the spell's level. On a failed check, the spell disappears from the scroll with no other effect.
 
-This 4th-level scroll holds a single casting of _[[Locate Creature]]_ (save DC 15, attack bonus +7). The caster must name or describe a creature familiar to them, or a species they've seen up close before. Without that familiarity, the scroll can't function for the caster who reads it.
+This 4th-level scroll holds a single casting of _Locate Creature_ (save DC 15, attack bonus +7). The caster must name or describe a creature familiar to them, or a species they've seen up close before. Without that familiarity, the scroll can't function for the caster who reads it.

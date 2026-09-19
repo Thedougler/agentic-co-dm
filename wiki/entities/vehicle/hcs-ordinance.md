@@ -70,8 +70,8 @@ Installed: 6 units of 24 (Tier 4 limit). 3 special facility slots, all filled.
 | **Decks** | 4 (weather, upper gun, main gun, lower gun) + orlop |
 | **Hull Points** | 650 |
 | **Hull AC** | 14 |
-| **[[Condition]]** | Prime |
-| **[[Speed]] (good wind)** | 50 miles/day |
+| **Condition** | Prime |
+| **Speed (good wind)** | 50 miles/day |
 | **Speed (poor wind)** | 20 miles/day |
 | **Maneuverability** | Poor |
 | **Profile** | Massive |

@@ -40,7 +40,7 @@ This page holds full table mechanics for the Beffa. It covers how a mark gets pi
 
 The crew may propose their own mark from the Accord list. The DC and bonus follow the same table above.
 
-## The Team [[Symbol]]
+## The Team Symbol
 
 On Day One, the crew registers its symbol with the committee. Let its members design it themselves: a sigil, a stamp, a wax seal shape, a color band, anything that belongs to them.
 
@@ -69,7 +69,7 @@ Complications on failure: a prop is wrong (disadvantage on one Phase 3 check) or
 
 Rival interference: one rival team may attempt to sabotage preparation with a contested Stealth check against the crew's Perception. If the rival succeeds, assign a complication. If the crew succeeds, they identify the rival and earn a free sabotage action against them in Phase 3.
 
-False-alarm gambit: the crew may deliberately tip off their mark on an early day to lull him into complacency before the real strike. Deception check (DC = mark's [[Wisdom]] + 2). Success: the mark's Phase 3 save is at disadvantage. Failure: the mark is now actively suspicious and the DC rises by 3.
+False-alarm gambit: the crew may deliberately tip off their mark on an early day to lull him into complacency before the real strike. Deception check (DC = mark's Wisdom + 2). Success: the mark's Phase 3 save is at disadvantage. Failure: the mark is now actively suspicious and the DC rises by 3.
 
 > [!check] Perception — Spotting a Committee Adjudicator
 > DC 10. Committee adjudicators are bad at staying unseen during Phase 2.
@@ -83,9 +83,9 @@ Each crew member makes one live-pressure check, the execution version of their P
 > [!check] Sleight of Hand/Deception — Placing the Symbol
 > DC 12. Placing the team symbol during or at the end of the prank without tipping off the mark prematurely.
 > **Success:** the crew places the symbol cleanly.
-> **Failure:** the mark finds the symbol too early, reducing [[Surprise]] by 1.
+> **Failure:** the mark finds the symbol too early, reducing Surprise by 1.
 
-Recovery check: after the prank, one crew member works to walk it back with a Performance or Persuasion check. Deception or Medicine works as an alternate. Good recovery is worth up to 2 extra [[craft]] points from the committee.
+Recovery check: after the prank, one crew member works to walk it back with a Performance or Persuasion check. Deception or Medicine works as an alternate. Good recovery is worth up to 2 extra craft points from the committee.
 
 ## Rival Teams
 

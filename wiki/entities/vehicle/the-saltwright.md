@@ -2,6 +2,7 @@
 title: "The Saltwright"
 aliases:
   - The Saltwright
+  - Saltwright
 category: entities
 tags: [shattered-sea, vehicle]
 sources:

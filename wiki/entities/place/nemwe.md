@@ -61,7 +61,7 @@ The [[dravosi-crown|Dravosi Crown]] raised Nemwe's watchtower and abandoned it w
 
 - Salt-pine scrub and gorse: crowd the slope up to the treeline below the tower, thick enough that a party bushwhacking off the old path loses the shoreline from sight within a few strides.
 - Bayberry: waxy grey berries cluster along the scrub's seaward edge, and a pilot who renders them down gets enough tallow for a season of candles.
-- [[goat|Wild goats]]: pick along the rocky slope below the tower at dawn, unbothered by anyone who keeps their distance.
-- [[vulture|Vultures]]: circle the tower year-round, drawn by whatever last died on the ledge below the signal-fire platform.
-- [[giant-rat|Giant rats]]: nest in the collapsed stores behind the tower's kicked-in door, and a party bedding down there for the night shares it with them.
-- [[venomous-snake|Venomous snakes]]: den in the gorse where the slope goes to shade, and a barefoot search for firewood is how most people meet one.
+- Wild goats: pick along the rocky slope below the tower at dawn, unbothered by anyone who keeps their distance.
+- Vultures: circle the tower year-round, drawn by whatever last died on the ledge below the signal-fire platform.
+- Giant rats: nest in the collapsed stores behind the tower's kicked-in door, and a party bedding down there for the night shares it with them.
+- Venomous snakes: den in the gorse where the slope goes to shade, and a barefoot search for firewood is how most people meet one.

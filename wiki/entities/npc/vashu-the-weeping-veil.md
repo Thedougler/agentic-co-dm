@@ -44,7 +44,7 @@ Vashu leads the Still-Water Discipline. This purple-caste order teaches patience
 
 "Weeping Veil" is an order title for a master's special move. For Vashu, it means the toxic mist she releases. She keeps it in a bone vial. The mist is both her title and her bonus action in combat.
 
-Her constant tongue-click sounds nervous to outsiders. It's actually echolocation. She bounces sound waves off objects to see. The sound never stops but sharpens before she strikes. A PC who knows echolocating creatures (like bats) might see the tell with a [[passive Perception]] check. Others just hear a tic.
+Her constant tongue-click sounds nervous to outsiders. It's actually echolocation. She bounces sound waves off objects to see. The sound never stops but sharpens before she strikes. A PC who knows echolocating creatures (like bats) might see the tell with a passive Perception check. Others just hear a tic.
 
 ## Stats & Combat
 

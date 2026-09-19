@@ -64,11 +64,11 @@ No sailing chart marks a preferred approach, because no pilot family works this 
 
 ## Hazards
 
-[[venomous-snake|Venomous snakes]] coil in the bramble roots and strike anyone who kneels to forage without checking first, and [[giant-spider|giant spiders]] web the taller bramble stands on the interior's shaded side, patient enough to let a party walk past before they commit. Beneath the ordinary wildlife sits the real hazard: the curse itself, whatever it actually is. No two survivors describe the same effect, and nothing on the island confirms which telling, if any, is true.
+Venomous snakes coil in the bramble roots and strike anyone who kneels to forage without checking first, and giant spiders web the taller bramble stands on the interior's shaded side, patient enough to let a party walk past before they commit. Beneath the ordinary wildlife sits the real hazard: the curse itself, whatever it actually is. No two survivors describe the same effect, and nothing on the island confirms which telling, if any, is true.
 
 ## Ecology
 
-Wild sea-fig grows fleshy fruit clusters along the bramble's edge, sweet enough to eat raw and common enough that no forager bothers hauling any back to a market. [[goat|Wild goats]] graze the open ground at dawn and dusk, the only animals on the island that don't scatter when a boat pulls in, and [[hawk|hawks]] hunt the goat herds off the ridge line, the loudest thing on the island on an ordinary day.
+Wild sea-fig grows fleshy fruit clusters along the bramble's edge, sweet enough to eat raw and common enough that no forager bothers hauling any back to a market. Wild goats graze the open ground at dawn and dusk, the only animals on the island that don't scatter when a boat pulls in, and hawks hunt the goat herds off the ridge line, the loudest thing on the island on an ordinary day.
 
 ## Hooks
 

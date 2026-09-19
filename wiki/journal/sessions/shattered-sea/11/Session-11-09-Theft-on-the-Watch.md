@@ -9,6 +9,7 @@ updated: 2026-09-13
 type: session-prep
 kind: climax
 lifecycle: proposed
+base_confidence: 0.55
 reveal: unrevealed
 summary: "Climax theft on the Star Cut watch, or the column if they marched. [[talon-skarn]] makes one committed attempt at the [[fate-spinner]]; the watch answers into [[Session-11-10-Aftermath]]."
 campaign: shattered-sea

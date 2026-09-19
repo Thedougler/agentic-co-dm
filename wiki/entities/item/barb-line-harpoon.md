@@ -34,23 +34,23 @@ tier: supporting
 > Lifted, it carries all its weight at the point, and it wants to go tip first.
 
 
-_[[Weapon]] (Harpoon), Common._
+_Weapon (Harpoon), Common._
 
 | Field | Detail |
 |---|---|
 | One thing | A set barb plus a shackled chain end keeps the target inside sixty feet of the anchor. |
-| Rarity justification | Non-magical rigger's gear, priced beside the [[reinforced-specimen-cage]] (60 gp) and the [[grung-resistant-climbing-harness]] (35 gp). It grants no bonus to any roll and does far less at range than [[Rope of Entanglement]]. |
+| Rarity justification | Non-magical rigger's gear, priced beside the [[reinforced-specimen-cage]] (60 gp) and the [[grung-resistant-climbing-harness]] (35 gp). It grants no bonus to any roll and does far less at range than Rope of Entanglement. |
 | Attunement reason | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
 | PC connection | [[jean-claude-tabarnack|Jean-Claude]] throws better than anyone aboard, and the [[Sawek]] holding the [[Kalowe]] channel wins any fight it can break off and take back down its hole. |
 | Current holder | [[kettil-ormsson]], on the chain wall at [[Ormsson's Fittings]]. |
-| Narrative hook | The [[harbour bounty]] pays for a ridge-plate, and you cut a ridge-plate off something still where you left it. |
+| Narrative hook | The harbour bounty pays for a ridge-plate, and you cut a ridge-plate off something still where you left it. |
 
 ## Mechanics
 
 > [!mechanic]
 > **Barb-Line Harpoon [HB].** A martial thrown weapon, range 20/60, dealing 1d6 piercing damage. On a hit against a Large or smaller creature the barbs set and the chain pays out behind it.
 >
-> Shackle the chain's far end to a rail or a driven bolt and the hit creature moves no more than 60 feet from that anchor. It works the head free with an action and a DC 13 [[Strength]] check, or cuts the chain by dealing 10 damage to it (AC 15, immune to poison and psychic damage).
+> Shackle the chain's far end to a rail or a driven bolt and the hit creature moves no more than 60 feet from that anchor. It works the head free with an action and a DC 13 Strength check, or cuts the chain by dealing 10 damage to it (AC 15, immune to poison and psychic damage).
 >
 > **Edge cases:** a boat anchors the chain no better than its own weight, so the heavier of boat and creature wins that pull. A second harpoon in the same target brings its own chain and its own check.
 >

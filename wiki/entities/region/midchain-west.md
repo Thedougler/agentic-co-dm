@@ -3,6 +3,7 @@ title: "Western Midchain"
 aliases:
   - "Western Midchain"
   - "The Western Midchain"
+  - "Midchain West"
 category: entities
 tags: [shattered-sea, region]
 sources:

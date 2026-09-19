@@ -28,7 +28,7 @@ tier: supporting
 
 ## The Fact
 
-[[shattered-sea]] is at the edge of the colonial world. The crossing west of the [[Galewall]] reaches the known: Chult first, then the kingdoms, records, and recognized law of [[Faerûn]]. East of the Galewall lies [[verdant-scatter|the Scatter]], and the Scatter does not ask where you came from. The further east you travel, the less the colonial map means. The [[crown-islands]] are the western homelands transplanted to warmer water. [[Kalowe]] and the [[Midchain]] are those homelands losing the ability to enforce anything, and [[Tail|the Tail]] and the [[outer-reach]] are what was here before the homelands ever arrived.
+[[shattered-sea]] is at the edge of the colonial world. The crossing west of the [[Galewall]] reaches the known: Chult first, then the kingdoms, records, and recognized law of Faerûn. East of the Galewall lies [[verdant-scatter|the Scatter]], and the Scatter does not ask where you came from. The further east you travel, the less the colonial map means. The [[crown-islands]] are the western homelands transplanted to warmer water. [[Kalowe]] and the [[Midchain]] are those homelands losing the ability to enforce anything, and [[Tail|the Tail]] and the [[outer-reach]] are what was here before the homelands ever arrived.
 
 ### Presence Terms
 
@@ -49,13 +49,13 @@ The oldest colonial foothold in the Scatter. The majority population is [[Human|
 | Species | Presence | Notes |
 |---|---|---|
 | Human | Dominant | Dravosi colonial stock; also Tessarine merchants and independent families. |
-| [[Halfling]] | Common | Chandlers, bookkeepers, small merchants. |
-| [[Dwarf]] | Common | Naval engineering, fortification work, armaments manufacture. |
+| Halfling | Common | Chandlers, bookkeepers, small merchants. |
+| Dwarf | Common | Naval engineering, fortification work, armaments manufacture. |
 | [[Rattkin]] | Common | Port infrastructure, message networks, [[the Passage]]. Officially discouraged; practically irreplaceable. |
-| [[Gnome]] | Present | Instrument makers, cartographers, Tessarine ledger work. |
-| [[Tiefling]] | Present | Mixed colonial heritage. More visible in [[calven-and-calveno]] than in Tidefall. |
+| Gnome | Present | Instrument makers, cartographers, Tessarine ledger work. |
+| Tiefling | Present | Mixed colonial heritage. More visible in [[calven-and-calveno]] than in Tidefall. |
 | Orc | Present | Dock crews, ship labour, garrison soldiers. Often underranked relative to competence. |
-| [[Dragonborn]] | Present | Scattered across military and merchant roles. |
+| Dragonborn | Present | Scattered across military and merchant roles. |
 | Aasimar | Rare | Occasional pilgrims and Tyr-aligned advocates. |
 | [[Aarakocra]] | Rare | Mostly Sentinels. [[high-eyrie]] maintains a small permanent population near the eastern Crown approaches. |
 | Other | Rare | The Galewall crossing drops all kinds onto Crown docks. Most do not stay long. |
@@ -109,7 +109,7 @@ The [[Midchain]] has been occupied by too many different peoples for too long fo
 | [[Tabaxi]] | Present | More common here than in Crown waters. |
 | Kenku | Present | — |
 | Aasimar | Rare | — |
-| [[Goliath]] | Rare | — |
+| Goliath | Rare | — |
 | [[Aarakocra]] | Rare | Far from the Eyrie. Independent. |
 | Triton | Rare | Occasionally surface near the [[verdant-teeth]] deep-water approaches. |
 | [[sea-elf]] | Rare | [[Halythion]] contact zone. Some surface trade. |
@@ -145,7 +145,7 @@ No colonial administration — only pilot families, producing a working meritocr
 | Fire Genasi | Rare | Occasionally drawn here by the Maw's elemental bleed. |
 | Halfling | Rare | Provisioning. The staging islands need someone to run the stores. |
 | Rattkin | Rare | No major Run. Individual operators working salvage information routes. |
-| Triton | Rare | Deep-water presence near the [[Shelfworks]]. [[Encounter]] rather than community. |
+| Triton | Rare | Deep-water presence near the [[Shelfworks]]. Encounter rather than community. |
 
 ### The Sunken Crown and Outer Reach
 

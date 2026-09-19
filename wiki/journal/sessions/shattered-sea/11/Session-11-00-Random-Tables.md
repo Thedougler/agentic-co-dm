@@ -9,6 +9,7 @@ updated: 2026-09-13
 type: session-prep
 kind: development
 lifecycle: proposed
+base_confidence: 0.55
 reveal: unrevealed
 summary: The single current-hazards table for Session-11-00-Birds-of-a-Feather. No Grung. Do not restage beat 9 (Talon Skarn).
 campaign: shattered-sea
@@ -57,7 +58,7 @@ If the rolled hazard does not belong in the current ground, reroll once. If a de
 
 ## Deep
 
-- The current hazard roster is also indexed at [[00 Hazards]].
+- The current hazard roster is also indexed at 00 Hazards.
 - Dedicated scene cards take precedence over this table. Do not roll it during the landing, the wolfrabbit pack, [[line-bank]], the otter hole, the night watch, [[print-braid]], or [[spoke-ring]].
 - No planned treasure is attached to a roll. Living plants remain subject to [[taking-on-aruhe]]; fallen fruit is genuinely beneficial when its owner note says it is.
 

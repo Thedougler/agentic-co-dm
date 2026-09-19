@@ -2,6 +2,7 @@
 title: "Savia Brentino"
 aliases:
   - Savia Brentino
+  - Savia
 category: entities
 tags: [shattered-sea, npc]
 sources:
@@ -26,7 +27,7 @@ tier: supporting
 
 ![[savia-brentino-banner]]
 
-[[Dwarf]] who runs [[Carpenter's Slip]] in [[calven-and-calveno]]. She talks about ships only by how they're built. That is the only currency that matters to her.
+Dwarf who runs [[Carpenter's Slip]] in [[calven-and-calveno]]. She talks about ships only by how they're built. That is the only currency that matters to her.
 
 **Quote:** "Paint does not hide what a ship is."
 

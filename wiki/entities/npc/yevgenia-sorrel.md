@@ -36,7 +36,7 @@ visibility: dm
 
 Company-store customer-service voice, drilled flat, cracking on one word, Marta. Underneath the uniform she is sharper with scavenged [[Antheri]] parts than the job lets her show.
 
-**Runs Sunkline General Store** at Fathomrush's Sunkline pier, stocking [[rope]], tools, rations, and diving sundries repriced daily to match [[marta-kessler]]'s ledger across the harbor, item for item. **Despises Marta personally**, not just professionally: the two shops read as interchangeable from the dock, and that reading is what cracks her company patter.
+**Runs Sunkline General Store** at Fathomrush's Sunkline pier, stocking rope, tools, rations, and diving sundries repriced daily to match [[marta-kessler]]'s ledger across the harbor, item for item. **Despises Marta personally**, not just professionally: the two shops read as interchangeable from the dock, and that reading is what cracks her company patter.
 
 | Field | Detail |
 |---|---|

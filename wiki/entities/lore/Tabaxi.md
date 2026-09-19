@@ -34,17 +34,17 @@ Tabaxi rely on predatory instinct and keen senses, honed into the traits below.
 
 **Feline Ferocity.** You can call on a burst of speed in a fight. This trait recharges after you take a turn without moving.
 
-**Keen Senses.** You have [[Advantage]] on Wisdom (Perception) checks that rely on hearing or smell.
+**Keen Senses.** You have Advantage on Wisdom (Perception) checks that rely on hearing or smell.
 
 **Predatory Agility.** You are proficient in the Stealth skill.
 
-**[[Darkvision]].** You have Darkvision with a range of 60 feet.
+**Darkvision.** You have Darkvision with a range of 60 feet.
 
-**Territorial Streak.** You defend what's yours fiercely, calling on quick [[speed]] when the moment demands it.
+**Territorial Streak.** You defend what's yours fiercely, calling on quick speed when the moment demands it.
 
 Table: Tabaxi Types
 
 | Type | Shape at the Table |
 |---|---|
-| [[Tiger]] | A powerful, open-terrain hunter. It can knock targets prone with a claw strike and counts as one [[size]] larger for carrying capacity. |
+| Tiger | A powerful, open-terrain hunter. It can knock targets prone with a claw strike and counts as one size larger for carrying capacity. |
 | Jaguar | A lean, stealth-focused hunter. It can hide as a bonus action and climbs at walking speed. Later, it also knocks targets prone with claws. |

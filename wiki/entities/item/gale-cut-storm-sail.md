@@ -39,7 +39,7 @@ _Wondrous Item, Rare._
 | Field | Detail |
 |---|---|
 | One thing | A ship under this sail keeps its course and its speed in weather that should stop it. |
-| Rarity justification | Beside [[Folding Boat]] (rare, a whole vessel out of a box) and above [[Decanter of Endless Water]] (uncommon, water on tap). This carries no vessel of its own and does nothing whatever off the water. |
+| Rarity justification | Beside Folding Boat (rare, a whole vessel out of a box) and above Decanter of Endless Water (uncommon, water on tap). This carries no vessel of its own and does nothing whatever off the water. |
 | Attunement reason | A mast carries it, and it modifies no roll a creature makes, so the attunement tree has no branch for it. |
 | PC connection | The crew crosses open water in _[[Uncertainty]]_, and weather has already cost them a hull once. |
 | Current holder | [[giacomo-moretti]], in the back-room crate the [[tessarine-concordat|Tessarine]] factor house has not claimed. |

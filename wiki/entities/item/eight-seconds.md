@@ -39,7 +39,7 @@ tier: supporting
 | Field | Detail |
 |---|---|
 | One thing | For about eight seconds after lighting, the smoker gains one extra action on the current turn and on the next turn, then falls prone and loses reactions until their following turn ends. |
-| Rarity justification | Rare, comparable to Potion of Invulnerability (resistance to all damage for 1 minute) and [[Potion of Heroism]] (10 temporary hit points plus a 1-hour [[Bless]] effect). None of the three requires attunement. Eight Seconds borrows [[Haste]]'s extra-action shape at a much smaller scale: it lasts two rounds where Haste lasts ten. Speed, AC, and [[Dexterity]] saves stay the same, and the burn ends by dropping the smoker prone with reactions gone for a turn. That smaller shape keeps Eight Seconds at Rare, below [[Potion of Speed]]'s Very Rare tier. |
+| Rarity justification | Rare, comparable to Potion of Invulnerability (resistance to all damage for 1 minute) and Potion of Heroism (10 temporary hit points plus a 1-hour Bless effect). None of the three requires attunement. Eight Seconds borrows Haste's extra-action shape at a much smaller scale: it lasts two rounds where Haste lasts ten. Speed, AC, and Dexterity saves stay the same, and the burn ends by dropping the smoker prone with reactions gone for a turn. That smaller shape keeps Eight Seconds at Rare, below Potion of Speed's Very Rare tier. |
 | Attunement reason | No attunement required: a single-use consumable with one power, and no bonus to attack, damage, save, or AC rolls. |
 | PC connection | [[jean-claude-tabarnack]]. His cover holds only while nothing forces him to fight in the open, and Eight Seconds buys him two rounds to disappear before anyone works out what they just watched. |
 | Current holder | [[rufio-segalla]] rolls this one to order at [[La Brace]], a [[Velo Quarter]] smoking room in [[calven-and-calveno]]. He never keeps it on the shelf. |
@@ -47,9 +47,9 @@ tier: supporting
 
 ## Mechanics
 
-**[HB]** Lighting Eight Seconds and taking its first breath costs a [[Bonus Action]]. It affects only the smoker, and it keeps burning through the end of the smoker's next turn. It has no recharge: this is a single-use item, gone the instant it burns out.
+**[HB]** Lighting Eight Seconds and taking its first breath costs a Bonus Action. It affects only the smoker, and it keeps burning through the end of the smoker's next turn. It has no recharge: this is a single-use item, gone the instant it burns out.
 
-On the turn you light it and on your next turn, you gain one extra action. You can spend that extra action only on the [[Attack action]] (one weapon attack only), [[Dash]], [[Disengage]], [[Hide]], or [[Use an Object]]. It burns out. At the end of your second turn when it does, you fall [[prone]] and can't take [[reactions]] until the end of your following turn.
+On the turn you light it and on your next turn, you gain one extra action. You can spend that extra action only on the Attack action (one weapon attack only), Dash, Disengage, Hide, or Use an Object. It burns out. At the end of your second turn when it does, you fall prone and can't take reactions until the end of your following turn.
 
 Edge cases:
 

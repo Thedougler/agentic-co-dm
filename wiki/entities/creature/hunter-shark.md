@@ -52,7 +52,7 @@ actions:
 
 ## Description
 
-A Hunter Shark is a large, blunt-nosed predator built for open water, not reef work. At a distance it's easy to mistake for the [[reef-shark]], until its size and its refusal to scatter after a first pass give it away. Dock hands who work both species keep [[the smaller animal's numbers]] close at hand for that reason. The Hunter Shark is a different order of animal from the region's [[Giant Shark]], which hunts alone, far from any coastline. A Hunter Shark works the water ships actually use.
+A Hunter Shark is a large, blunt-nosed predator built for open water, not reef work. At a distance it's easy to mistake for the [[reef-shark]], until its size and its refusal to scatter after a first pass give it away. Dock hands who work both species keep the smaller animal's numbers close at hand for that reason. The Hunter Shark is a different order of animal from the region's Giant Shark, which hunts alone, far from any coastline. A Hunter Shark works the water ships actually use.
 
 ## Ecology
 

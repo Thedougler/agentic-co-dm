@@ -58,18 +58,18 @@ Physical mannerisms: flicks a coin across his knuckles and claps a hand on a sho
 
 > [!mechanic]
 > **Tradition:** Divine (archfey patron bargain). **School:** Necromancy.
-> **[[Detect Magic]] near an unhealable wound:** Divine necromancy — old, permanent, the weight of something that decided and never looked back.
-> **[[Counterspell]]:** not applicable — the bargain was made generations ago; no discrete cast event exists to intercept.
-> **[[Dispel Magic]]:** suppresses a wound's unhealability for 1 minute; the bargain reasserts. Only Otho choosing to end it, or a negotiated release, dissolves it permanently.
+> **Detect Magic near an unhealable wound:** Divine necromancy — old, permanent, the weight of something that decided and never looked back.
+> **Counterspell:** not applicable — the bargain was made generations ago; no discrete cast event exists to intercept.
+> **Dispel Magic:** suppresses a wound's unhealability for 1 minute; the bargain reasserts. Only Otho choosing to end it, or a negotiated release, dissolves it permanently.
 
 ## Stats & Combat
 
-Calibrated against the real crew (`vault/campaigns/shattered-sea/pcs/*.md`): [[crissdalynn-khinriss]] ([[Monk]] 5), [[delmar-fisk]] ([[Rogue]] 5), [[jean-claude-tabarnack]] ([[Ranger]] 5), and [[perrin-black-jaw]] ([[Bard]] 3/[[Warlock]] 2), all level 5 as of Season 1.
+Calibrated against the real crew (`vault/campaigns/shattered-sea/pcs/*.md`): [[crissdalynn-khinriss]] (Monk 5), [[delmar-fisk]] (Rogue 5), [[jean-claude-tabarnack]] (Ranger 5), and [[perrin-black-jaw]] (Bard 3/Warlock 2), all level 5 as of Season 1.
 
 Otho follows the CR-built path (`vault/refs/vault/npc/references/villains.md`), designed to stay unwinnable by force well past this crew's current level. He's pitched in the spirit of [[shepherd-grigori|Grigori]]'s own CR-19 [[Hierarch]] build, one that dominates and de-escalates instead of fighting to the death (`vault/campaigns/shattered-sea/npcs/shepherd-grigori.md` § Stats & Combat), but pitched a full tier above it: roughly CR 23-24, AC 21, 450+ HP.
 
 - **Legendary Resistance (3/day) [HB]:** no action, negates a failed save.
-- **Legendary Actions (3/round, refresh at the start of his turn) [HB]:** *Fey Step*, teleport 60 ft. instantly, spending no action. *Beguile*, a gaze effect, a [[Wisdom]] save, charmed for 1 round. *Command the Isle*, a minor terrain effect drawn from Otel Karn itself, a hedge of thorns, a fog bank, a swarm of gulls, lasting 1 round. The island functions as his lair while he's on it.
+- **Legendary Actions (3/round, refresh at the start of his turn) [HB]:** *Fey Step*, teleport 60 ft. instantly, spending no action. *Beguile*, a gaze effect, a Wisdom save, charmed for 1 round. *Command the Isle*, a minor terrain effect drawn from Otel Karn itself, a hedge of thorns, a fog bank, a swarm of gulls, lasting 1 round. The island functions as his lair while he's on it.
 - **Reset [HB]:** the instant a fight turns dangerous to him, his first Legendary Resistance burned or his HP dropped below half, he doesn't grit through it. He laughs, calls it "the best show yet," and Fey Steps away mid-sentence, no action, at-will, triggered by the condition just named. The bargain and the island's wounds stay exactly as they were. He returns later, delighted, wanting to hear how the fight looked from the other side.
 
 Open combat is the Hardest of his three resolution paths by design (see the Toy Chest above and Goals & Fronts below). This section exists to telegraph that at the table, not to invite a fair fight.

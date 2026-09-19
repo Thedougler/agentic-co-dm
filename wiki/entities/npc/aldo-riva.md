@@ -32,7 +32,7 @@ tier: supporting
 **Wants:** to keep [[Al Fondale]]'s kitchen running and [[Bice]] untroubled, but three sleepless nights over an unexplained click from the cellar panel are wearing on him, and he still hasn't told her.
 
 > [!narration] Narration
-> A broad-shouldered [[dwarf]], white-bearded, flour on his forearms this early in the day (it turns to oil by the time the kitchen closes). He moves without hurry, the way of a man two centuries past caring whether anyone's waiting on him, large hands testing a pot's weight before he sets it down. He wipes his hands on his apron and is already talking before he's finished turning around.
+> A broad-shouldered dwarf, white-bearded, flour on his forearms this early in the day (it turns to oil by the time the kitchen closes). He moves without hurry, the way of a man two centuries past caring whether anyone's waiting on him, large hands testing a pot's weight before he sets it down. He wipes his hands on his apron and is already talking before he's finished turning around.
 
 
 Aldo Riva runs the kitchen at [[Al Fondale]] and has been doing so for twenty-two years, since he and [[bice-riva]] bought the place from the previous owner. He cooks everything on the menu and has strong opinions about each dish; he comes out of the kitchen to talk while [[Bice]] manages the room, switching to a cleaner apron before he does. Aldo fills the space with noise; together they have run [[Al Fondale]] long enough that the division of labour no longer requires discussion.

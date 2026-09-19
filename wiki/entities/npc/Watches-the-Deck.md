@@ -37,4 +37,4 @@ She was first to spot [[Thunk]]'s tells before [[Thassos]] said it out loud, but
 
 ## Session Log
 
-- **Session 07.** Stopped touching her own cards for three hands running to watch Thunk's land instead, the first at the table to clock his count. [[Transcript]]
+- **Session 07.** Stopped touching her own cards for three hands running to watch Thunk's land instead, the first at the table to clock his count. Transcript

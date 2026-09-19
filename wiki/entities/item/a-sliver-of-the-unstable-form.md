@@ -26,12 +26,12 @@ tier: supporting
 
 > [!narration] Narration A fragment of red hide the size of a fist, still faintly warm long after everything around it has gone cold. It shouldn't have kept its shape this long. Flesh like this doesn't survive separation from what it belonged to, yet it does anyway. Every so often, so slowly you're uncertain whether the edge of the wound is closing a little further, or if it simply pauses here.
 
-*Wondrous Item, Very Rare (Requires [[Attunement]]).*
+*Wondrous Item, Very Rare (Requires Attunement).*
 
 | Field | Value |
 |---|---|
 | One thing | Once per long rest, invoke the sliver to regenerate a burst of hit points at the start of each of your turns for 1 minute, unless you've taken fire or acid damage since your last turn. |
-| Rarity justification | Comparable to *[[Ring of Regeneration]]*, from the opposite direction. |
+| Rarity justification | Comparable to *Ring of Regeneration*, from the opposite direction. |
 | Attunement reason | A repeatable, high-value healing effect with no other resource cost. The decision tree's "useful in most encounters without consuming a resource" branch requires attunement. |
 | Current holder | [[catarina-davirelli]], kept in her Calveno workshop. |
 | Narrative hook | Part of tonight's raid-site loot, offered as a Reward in `vault/episodes/006/s06-run-guide.md` § Rewards. |

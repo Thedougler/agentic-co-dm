@@ -9,6 +9,7 @@ updated: 2026-09-13
 type: session-prep
 kind: development
 lifecycle: proposed
+base_confidence: 0.55
 reveal: unrevealed
 summary: "Development at Spoke Ring. Calveno wreck people split over the garden and the route back to [[Uncertainty]] under the last sun; the unfinished argument hands to [[Session-11-07-False-Help]]."
 campaign: shattered-sea

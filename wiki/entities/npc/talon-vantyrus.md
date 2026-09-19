@@ -1,14 +1,14 @@
 ---
 title: Talon Vantyrus
 aliases:
-  - Osset
+  - Vantyrus
 category: entities
 tags: [shattered-sea, npc]
 sources:
   - "Talon Skarn"
   - "campaign-os:talon-vantyrus.md"
   - "campaign-os:osset.md"
-summary: "Countless master and former Sentinel who now uses Talon Vantyrus as an alias; his original name is Osset, and his apprentice [[talon-skarn]] is trying to kill him under the Rule of Two."
+summary: "Countless master and former Sentinel who now uses Talon Vantyrus as an alias; his original name is [[Osset]], and his apprentice [[talon-skarn]] is trying to kill him under the Rule of Two."
 base_confidence: 0.50
 lifecycle: canon
 created: 2026-09-12T06:23:47Z
@@ -26,7 +26,7 @@ visibility: dm
 
 **Wants:** [[soul-incarnate|the Soul Incarnate]]'s transformation technique, and the crack he means to use is [[crissdalynn-khinriss]]'s own unexplained gift.
 
-**Identity.** Osset is his original name. He now goes by Talon Vantyrus as leader of [[Countless|the Countless]].
+**Identity.** [[Osset]] is his original name. He now goes by Talon Vantyrus as leader of [[Countless|the Countless]].
 
 > [!narration] Narration
 > Feathers the color of old snow cover him shoulder to talon, bled past white by age and altitude both. Cold air off the heights clings to him, carrying a faint tang of frost. He watches without blinking. When he finally moves, it costs him nothing, one wing folding tighter to his back, the only warning a lesser argument gets before he ends it.
@@ -114,6 +114,7 @@ CR 14. The build adapts Master Kyzil's Kensei technique into a colder, more cont
 - [[crissdalynn-khinriss]]: unaware target. The gift Kyzil never fully explained to her is the one crack in the Sentinels' seal, and his whole plan runs through it.
 - [[sentinels-of-the-eyrie]]: the order he broke from over that old rift with Kyzil. He works against it now.
 - [[The Countless]]: the order he leads now, built on the Sentinels' own reach with none of its restraint.
+- [[Osset]]. Original name. This page is the live alias and current identity.
 
 ## Goals & Fronts
 

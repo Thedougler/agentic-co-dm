@@ -57,10 +57,10 @@ The [[Leviathan]] and [[Umberlee]]'s rage disrupt trade routes that anchor Conco
 
 > [!mechanic]
 > **Tradition:** Arcane. **School:** Transmutation.
-> **Spell analogue:** [[True Polymorph]] (SRD) — permanent, self-sustaining; no concentration required.
-> **Homebrew element:** Form maintained for two centuries without upkeep; cannot be unravelled by standard [[Dispel Magic]].
-> **[[Detect Magic]]:** Transmutation — a deep, diffuse shimmer clings to his silhouette, the source lodged within rather than cast from outside.
-> **[[Counterspell]]:** not applicable — no casting event is in progress; the form has been fixed for two centuries.
+> **Spell analogue:** True Polymorph (SRD) — permanent, self-sustaining; no concentration required.
+> **Homebrew element:** Form maintained for two centuries without upkeep; cannot be unravelled by standard Dispel Magic.
+> **Detect Magic:** Transmutation — a deep, diffuse shimmer clings to his silhouette, the source lodged within rather than cast from outside.
+> **Counterspell:** not applicable — no casting event is in progress; the form has been fixed for two centuries.
 
 ## Stats & Combat
 

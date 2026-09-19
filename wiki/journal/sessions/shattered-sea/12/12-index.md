@@ -1,10 +1,15 @@
 ---
-title: 12
+title: Session 12
 category: journal
 tags: []
 sources: []
 created: 2026-09-17
 updated: 2026-09-17
+type: lore
+lifecycle: proposed
+reveal: unrevealed
+summary: Folder index of Session 12.
+base_confidence: 0.55
 ---
 
 - [[journal/sessions/shattered-sea/12/Session-12-03-Grass-Without-Wind|Session 12 — Grass Without Wind]]

@@ -69,8 +69,8 @@ Calder's Verge produces glasswork prized across the [[Midchain|Midchain]], made 
   scraped and sold to the guild as flux, since it cuts the melt's working
   temperature, and every apprentice learns to gather it before they touch a
   blowpipe.
-- [[giant-lizard|Giant lizards]] lie flat against the black rock through the
-  afternoon heat, and [[giant-crab|Giant crabs]] pick the tide line below the
+- Giant lizards lie flat against the black rock through the
+  afternoon heat, and Giant crabs pick the tide line below the
   furnace for anything the runoff has cooked.
-- [[giant-scorpion|Giant scorpions]] den in the lava tubes threading the
+- Giant scorpions den in the lava tubes threading the
   interior.

@@ -34,7 +34,7 @@ tier: supporting
 > It yips twice, close and then far, and both sounds arrive together.
 
 
-*Tool (Trained Animal), Rare.* A [[blink dog]] taken young off a Mid-Chain shipment and worked for two years by [[Zort]]'s hands until it answers a call instead of its own judgment. Medium fey, speed 40 ft. Its own kind will not have it back.
+*Tool (Trained Animal), Rare.* A blink dog taken young off a Mid-Chain shipment and worked for two years by [[Zort]]'s hands until it answers a call instead of its own judgment. Medium fey, speed 40 ft. Its own kind will not have it back.
 
 ## Mechanics
 

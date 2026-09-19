@@ -45,7 +45,7 @@ Senior Factor [[oriana-becht]] signs legal papers aboard: loans to 2,000 gp, rou
 | **Tier** | 3 |
 | **Hull Points** | 340 |
 | **Hull AC** | 13 |
-| **[[Speed]] (good wind)** | 65 miles/day |
+| **Speed (good wind)** | 65 miles/day |
 | **Speed (poor wind)** | 30 miles/day |
 | **Crew (min/full)** | 22 / 60 |
 | **Cargo** | 217 tons rated (185 available) |

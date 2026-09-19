@@ -41,4 +41,4 @@ visibility: dm
 
 ## Session Log
 
-- **Session 08** (`vault/episodes/008/`). Met the four crew members at [[Zort's Pits]]. Warned them off the animal cages. The completed prosthetic had already been delivered, and Zort provided the Mid-Chain reptile contact. Traded a high five with [[perrin-black-jaw|Perrin]] (a "sleight of foot" check). Confirmed: [[Transcript]].
+- **Session 08** (`vault/episodes/008/`). Met the four crew members at [[Zort's Pits]]. Warned them off the animal cages. The completed prosthetic had already been delivered, and Zort provided the Mid-Chain reptile contact. Traded a high five with [[perrin-black-jaw|Perrin]] (a "sleight of foot" check). Confirmed: Transcript.

@@ -38,9 +38,9 @@ tier: supporting
 
 ## Mechanics
 
-**[HB] Drink (bonus action).** For 10 minutes you have advantage on [[Wisdom]] saving throws, and you cannot be [[frightened]]. Your blood runs cold with it: your speed drops by 10 feet for the duration, and you have disadvantage on [[Charisma]] checks made to persuade or perform, because nothing reaches your face.
+**[HB] Drink (bonus action).** For 10 minutes you have advantage on Wisdom saving throws, and you cannot be frightened. Your blood runs cold with it: your speed drops by 10 feet for the duration, and you have disadvantage on Charisma checks made to persuade or perform, because nothing reaches your face.
 
-**Limitations:** one dose, no stacking, and a second dose inside 24 hours does nothing but the speed penalty. It does not touch [[Intelligence]] or Charisma saving throws.
+**Limitations:** one dose, no stacking, and a second dose inside 24 hours does nothing but the speed penalty. It does not touch Intelligence or Charisma saving throws.
 
 ## Provenance
 

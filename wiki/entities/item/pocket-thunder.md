@@ -48,7 +48,7 @@ One of six blends sold as alchemical cigarettes in [[calven-and-calveno]], thoug
 | Current holder | Sold at [[La Brace]], [[La Gatta]] (reduced), and two stalls. |
 | Narrative hook | Bought openly at either stall, or found already on a courier or enforcer who works Calveno's crowds for a living. |
 
-Comparable to [[Dust of Sneezing and Choking]] (Uncommon, thrown, area effect, Constitution save, no damage) and Potion of Fire Breath (Uncommon, single-use, area effect, [[Dexterity]] save). Pocket Thunder's effects last shorter than those items. It deals no damage. Both items work well.
+Comparable to Dust of Sneezing and Choking (Uncommon, thrown, area effect, Constitution save, no damage) and Potion of Fire Breath (Uncommon, single-use, area effect, Dexterity save). Pocket Thunder's effects last shorter than those items. It deals no damage. Both items work well.
 
 [[La Brace]] sells it from the shelf. [[rufio-segalla]] runs this [[Velo Quarter]] smoking room, the only one in Calveno where smoke can burn out in the open. [[La Gatta]] also sells it, at 60% price as an unreliable second. [[nicco-kettley]] runs this stall on [[the Bridge]]'s bottom tier.
 
@@ -61,7 +61,7 @@ Comparable to [[Dust of Sneezing and Choking]] (Uncommon, thrown, area effect, C
 >
 > **Limitations:** deals no damage and breaks no concentration. A creature already immune to blinded or deafened feels nothing. Smoking it does nothing at all.
 
-> [!check] [[Constitution]] Save — The Detonation
+> [!check] Constitution Save — The Detonation
 > DC 13; every creature within 10 feet of the landing point rolls, wielder included.
 > **Success:** no effect.
 > **Failure:** the blast blinds and deafens the creature until the end of its next turn.

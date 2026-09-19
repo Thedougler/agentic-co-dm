@@ -55,12 +55,12 @@ The next time an ally within 10 feet of her is the target of a ranged attack, th
 - [[crissdalynn-khinriss]] — Current holder; bought expecting protection.
 - [[lavinia-sordi]] — Sold it from her rack at [[la-cenere]] in [[le-paludi]], [[calven-and-calveno]], for 900 gp under the name Nightmantle (Session 8).
 - [[Osset]] — Falcon-featured man Lavinia named as the prior source.
-- [[Cloak of Displacement]] — Correct identification in play; cursed variant.
-- [[Cloak of Protection]] — What Lavinia believed she was selling.
+- Cloak of Displacement — Correct identification in play; cursed variant.
+- Cloak of Protection — What Lavinia believed she was selling.
 
 ## Secrets
 
-Play identified the cloak as a cursed [[Cloak of Displacement]], not the [[Cloak of Protection]] Lavinia thought she sold. The seller's misidentification is the hidden friction; the curse itself is already on the effect block.
+Play identified the cloak as a cursed Cloak of Displacement, not the Cloak of Protection Lavinia thought she sold. The seller's misidentification is the hidden friction; the curse itself is already on the effect block.
 
 ## Provenance
 

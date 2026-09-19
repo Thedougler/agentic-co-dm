@@ -2,6 +2,9 @@
 title: "Calven and Calveno"
 aliases:
   - Calven and Calveno
+  - Calven
+  - Calveno
+  - calveno
 category: entities
 tags: [shattered-sea, calveno, place]
 sources: ["Calven and Calveno.md", "Session 03 - Recap.md", "Session 07 - Recap.md", "Session 08 - Recap.md", "Session 09 - Recap.md"]

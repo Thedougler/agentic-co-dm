@@ -41,7 +41,7 @@ The blend [[rufio-segalla]] built his trade on. [[La Brace]] sells privacy, and 
 | Field | Detail |
 |---|---|
 | One thing | Lit in an enclosed space, it fills a 20-foot cube for 1 hour, and no sense or divination outside that cube reaches anything happening within it. |
-| Rarity justification | Under [[Ring of Mind Shielding]] (Rare, permanent, blocks scrying and thought-reading, attunement required) and beside [[Necklace of Adaptation]] (Rare, permanent, attunement required). This one covers a single room for an hour and then burns out, and it needs no attunement slot. |
+| Rarity justification | Under Ring of Mind Shielding (Rare, permanent, blocks scrying and thought-reading, attunement required) and beside Necklace of Adaptation (Rare, permanent, attunement required). This one covers a single room for an hour and then burns out, and it needs no attunement slot. |
 | Attunement reason | None. Single use, one power, and no bonus to attack rolls, damage rolls, saving throws, or AC. |
 | PC connection | [[delmar-fisk]] plans in rooms belonging to other people, and so far he has laid every plan in [[calven-and-calveno]] within earshot of someone. |
 | Current holder | Rolled to order only. Rufio keeps at most one made up at a time, and a name sits on that one more often than not. |
@@ -55,7 +55,7 @@ The blend [[rufio-segalla]] built his trade on. [[La Brace]] sells privacy, and 
 
 **[HB]** Lighting the Drawn Curtain takes an Action. The smoke fills a 20-foot cube centred on the lighting point and lasts 1 hour, or until the enclosed space opens to the outside air, whichever comes first.
 
-While it holds, no sense and no [[divination]] magic outside the cube reaches anything happening within it, and no [[scrying]] sensor forms inside it or sees into it. Creatures inside perceive one another normally. The area is [[lightly obscured]] for everyone in it.
+While it holds, no sense and no divination magic outside the cube reaches anything happening within it, and no scrying sensor forms inside it or sees into it. Creatures inside perceive one another normally. The area is lightly obscured for everyone in it.
 
 Edge cases:
 

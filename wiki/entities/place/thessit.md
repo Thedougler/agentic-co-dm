@@ -60,7 +60,7 @@ Thessit collects wrecks that shouldn't be able to reach it: whole ships, undamag
 
 - Salt-scrub and dune grass: wind-flattened cover no taller than a knee, so nothing on the interior blocks a sightline back to the next line of hulls.
 - Sea-purslane: fleshy, salt-tolerant greens crowd the tideline pools between wrecks, foraged raw or pickled by anyone who has run out of ship's stores.
-- [[giant-crab|Giant crabs]]: work the waterline under every hull at low tide, scavenging whatever spills from a wreck's hold.
+- Giant crabs: work the waterline under every hull at low tide, scavenging whatever spills from a wreck's hold.
 - Gulls: nest thick in the standing rigging of the older ships, and their noise is the first thing a party hears crossing the tideline.
-- [[giant-rat|Giant rats]]: infest the holds of the ships that have sat longest, bred fat on cargo no one ever came back to claim.
+- Giant rats: infest the holds of the ships that have sat longest, bred fat on cargo no one ever came back to claim.
 - [[reef-shark|Reef sharks]]: hold the channels between hulls at high tide, close enough to a beached keel that wading from ship to ship is worse than swimming open water.

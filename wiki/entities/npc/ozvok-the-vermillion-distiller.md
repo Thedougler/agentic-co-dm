@@ -26,7 +26,7 @@ tier: supporting
 
 Ozvok is a small [[Grung]] who is Lawful Evil. He works as an alchemist and [[Grung]] officer. He throws acid, poison, and tar at enemies, then drinks elixirs to grow faster and more deadly in close combat. His Drunken Nonchalance makes him hard to scare. He gains advantage against charm and fear effects.
 
-Ozvok joined the prep for the [[Calveno Sewer Magazines]] dungeon as a fourth lieutenant but got **shelved from the Session 06 lineup (2026-07-03)**. [[ozzeth-the-twiceborn]] took his slot. This kept the three main lieutenants from feeling alike, since one is a drunk alchemist, one is a blind monk, and one is a mage-abomination. Ozvok would have been a second drunk alchemist like [[bazzoth-the-steeped]]. He stays ready for future use. The tidal harbor fits his Amphibious trait, and his Legendary [[Action]] suite works well for solo or duo fights. He guards no room yet and has no placement.
+Ozvok joined the prep for the [[Calveno Sewer Magazines]] dungeon as a fourth lieutenant but got **shelved from the Session 06 lineup (2026-07-03)**. [[ozzeth-the-twiceborn]] took his slot. This kept the three main lieutenants from feeling alike, since one is a drunk alchemist, one is a blind monk, and one is a mage-abomination. Ozvok would have been a second drunk alchemist like [[bazzoth-the-steeped]]. He stays ready for future use. The tidal harbor fits his Amphibious trait, and his Legendary Action suite works well for solo or duo fights. He guards no room yet and has no placement.
 
 Chemical Awakening triggers at no cost when he takes his first melee hit or drops to 90 hit points or fewer, whichever comes first. Players can't stop it. Bark Orders works with minions before the Awakening. After it triggers, he's fast enough to leave minions and strike the rear. Use the Legendary Action suite only for solo or duo fights. Skip it if he has three or more minions.
 
@@ -100,7 +100,7 @@ If he has no reaction left, this happens at the start of his next turn instead. 
 
 His AC becomes 17, his speed becomes 40 ft./climb 40 ft., and he gains 22 temporary hit points. He can Dash or Disengage as a bonus action.
 
-He gains Multiattack (two Toxin-Slick Blade attacks, or swap both for one Hurl Concoction), Toxin-Slick Blade (*Melee [[Weapon Attack]]:* +7 to hit, reach 5 ft., one target. *Hit:* 9 (2d4 + 4) piercing and 7 (2d6) poison), and Chemical Leap as a bonus action (jumps to 30 feet without making opportunity attacks provoked, then one Toxin-Slick Blade strike on a creature within 5 feet of landing). All changes last the rest of the encounter.
+He gains Multiattack (two Toxin-Slick Blade attacks, or swap both for one Hurl Concoction), Toxin-Slick Blade (*Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 9 (2d4 + 4) piercing and 7 (2d6) poison), and Chemical Leap as a bonus action (jumps to 30 feet without making opportunity attacks provoked, then one Toxin-Slick Blade strike on a creature within 5 feet of landing). All changes last the rest of the encounter.
 
 **Legendary Actions (Optional).** Use this suite only if running Ozvok solo or with few minions. Drop it entirely if he has three or more minions. Ozvok can take 2 legendary actions from the options above, using one at a time and only at the end of another creature's turn. He regains spent legendary actions at the start of his turn.
 

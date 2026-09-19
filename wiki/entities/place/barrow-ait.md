@@ -60,6 +60,6 @@ Burial mounds from a forgotten war compose this island. Every grave-robbing atte
 
 - Sea-grass: thick, waist-high, silvered blades that lie flat in sheets when the wind gusts off the strait, showing the shape of every mound underneath before a boot ever touches one.
 - Bittercress: grows wild in the ditches between the rows. Tart enough to chew raw, a fistful cures the seasickness locals blame on the crossing.
-- [[deer|Deer]]: graze the open swales at dawn and bolt for the shoreline the moment anyone starts digging.
-- [[raven|Ravens]]: gather over any mound freshly turned, waiting on scraps before the digger notices them.
-- [[venomous-snake|Venomous snakes]]: den in the gaps between the turf blocks and strike the hand that reaches into a barrow without checking first.
+- Deer: graze the open swales at dawn and bolt for the shoreline the moment anyone starts digging.
+- Ravens: gather over any mound freshly turned, waiting on scraps before the digger notices them.
+- Venomous snakes: den in the gaps between the turf blocks and strike the hand that reaches into a barrow without checking first.

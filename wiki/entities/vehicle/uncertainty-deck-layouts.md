@@ -54,8 +54,8 @@ Hull numbers and armament are on [[Uncertainty|the ship's page]], and bands and 
 |---|---|---|---|
 | Climb the rigging | 10 | Strength (Athletics) | Reach the tops |
 | Roll a gun carriage | 14 | Strength (Athletics) | Re-lay that gun |
-| Drop the cargo grate | 13 | [[Strength]] | Seals the hold |
-| Swing the main boom | 12 | Strength, target saves [[Dexterity]] 13 | 1d8 bludgeoning, and a 10-ft shove on a failure |
+| Drop the cargo grate | 13 | Strength | Seals the hold |
+| Swing the main boom | 12 | Strength, target saves Dexterity 13 | 1d8 bludgeoning, and a 10-ft shove on a failure |
 | Stern canister, point blank | 13 | Target saves Dexterity | 3d6 in a 15-ft cone, halved on a success |
 
 ### Gun Deck
@@ -96,7 +96,7 @@ Hull numbers and armament are on [[Uncertainty|the ship's page]], and bands and 
 
 Hold hazards will end a fight down here faster than any weapon aboard does.
 
-> **Hold hazards.** *Powder magazine*, open flame within 10 ft: DC 12 [[Dexterity]] save or 8d6 fire in a 20-ft radius, and the hull takes 30 outright. *Galley stove*, shoved into it: DC 12 Dexterity or 1d4 fire. *Bilge*, working the pump with water underfoot: DC 10 Dexterity (Acrobatics) or fall prone.
+> **Hold hazards.** *Powder magazine*, open flame within 10 ft: DC 12 Dexterity save or 8d6 fire in a 20-ft radius, and the hull takes 30 outright. *Galley stove*, shoved into it: DC 12 Dexterity or 1d4 fire. *Bilge*, working the pump with water underfoot: DC 10 Dexterity (Acrobatics) or fall prone.
 
 The forward keel under this deck carries five feet of new timber, sound and freshly cut in. Nothing remains of the brig cage, whose bolts went into the ram-plate fitting.
 

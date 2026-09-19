@@ -60,7 +60,7 @@ Adwe's mangrove channels rearrange themselves after every storm strong enough to
 
 - Red mangrove roots: arch overhead and close out most of the sky. The same roots run below the waterline, and they force a boat to hold the marked channel instead of cutting a shorter line.
 - Nipa palms and mangrove apple: cluster on the drier hummocks between channels. The apple's pulp is bitter raw, but boiled down it makes a preserve that keeps through a long crossing.
-- [[crab|Mud crabs]]: pack the exposed roots at low tide, thick enough to fill a sack within the hour. Half the shells here run soft and split underfoot.
+- Mud crabs: pack the exposed roots at low tide, thick enough to fill a sack within the hour. Half the shells here run soft and split underfoot.
 - Herons: stand motionless at the channel forks, reading water the mud won't show. A party that loses the one it's following loses Adwe's only reliable guide.
-- [[crocodile|Crocodiles]]: hold the deeper channels and take a boat's wake as an opening. Most of the danger on Adwe's water comes from what a rocking hull can't see over the side.
-- [[swarm-of-insects|Mosquito swarms]]: rise off the standing pools at dusk, thick enough to drive a camp back onto open water. The fever they leave behind outlasts the bites by a week.
+- Crocodiles: hold the deeper channels and take a boat's wake as an opening. Most of the danger on Adwe's water comes from what a rocking hull can't see over the side.
+- Mosquito swarms: rise off the standing pools at dusk, thick enough to drive a camp back onto open water. The fever they leave behind outlasts the bites by a week.

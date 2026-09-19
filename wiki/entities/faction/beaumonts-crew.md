@@ -7,14 +7,14 @@ tags: [shattered-sea, faction]
 sources:
   - "campaign-os:beaumonts-crew.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-18
 type: faction
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "All of them are competent professionals. None of them are remarkable or ambitious. [[saltwright|Saltwright]] — the ship they crew."
+summary: "Competent professionals crewing [[saltwright|Saltwright]]. None of them are ambitious."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -24,28 +24,32 @@ tier: supporting
 ---
 # Beaumont's Crew
 
-# Beaumont's Crew
+## At a Glance
 
-*Four hired hands crewing the Saltwright under [[beaumont-sel]] — competent, unremarkable, and pragmatic.*
+*Hired hands crewing the Saltwright under [[beaumont-sel]]. They are competent, ordinary, and pragmatic.*
 
-All of them are competent professionals. None of them are remarkable or ambitious. [[Saltwright]] — the ship they crew.
+All of them are competent professionals. None of them are ambitious. They crew [[Saltwright]].
 
-## Members
+## At the Table
 
-- [[lenne-vor]] — Navigator. Lean and middle-aged, silver hair cropped close, fingertips ink-darkened from twenty years of chart work; has navigated the [[Midchain]] under three captains; methodical and skeptical, quietly right about everything.
+**[[Session-01-Recap|Session 01, The Boarding of the Saltwright]]**. The hold ambush cites them as a group ("three of his crew descended the ladder into the dark below") without naming members. `vault/episodes/001/transcript.md:25`. [[delmar-fisk]] and the party were present in the same scene.
 
-- [[drav-holke]] — Bosun. Short and broad, sun-darkened, a jar of stank leaf in his coat pocket and a rolled cigarette behind one ear unless he's smoking it; manages the rigging with clipped efficiency and no interest in small talk.
+Status: canon, pile-table rung 2. The session log records the crew acting as a group in play. Thin citation. It corroborates the crew as a group, not any member by name.
 
-- [[Wessa]] — Cook. Stocky and grey-haired, mostly declarative; runs the galley with methodical competence — the crew eats better than the provisions should allow.
+## Current State
 
-- [[Fen]] — Ordinary Sailor. Seventeen or eighteen, working on a beard that hasn't committed; does what he's told and gets it right; earnest about his first real sea job.
+The source states no agenda. They are background hirelings.
 
-## Goals & Fronts
+## People & Structure
 
-No agenda or Front clock is stated in the source; they are background hirelings, not schemers.
+- [[lenne-vor]]. Navigator. Lean and middle-aged, silver hair cropped close, fingertips ink-darkened from twenty years of chart work. He has sailed the [[Midchain]] under three captains. Methodical and skeptical, quietly right about everything.
 
-## Session Log
+- [[drav-holke]]. Bosun. Short and broad, sun-darkened, a jar of stank leaf in his coat pocket and a rolled cigarette behind one ear unless he's smoking it. He manages the rigging with clipped efficiency and no interest in small talk.
 
-**[[Session 01 — The Boarding of the Saltwright]]**: referenced as a group — "three of his crew descended the ladder into the dark below" — during the hold ambush; the line does not name individual crew members. `vault/episodes/001/transcript.md:25`. [[delmar-fisk]] and the party were present in the same scene.
+- [[Wessa]]. Cook. Stocky and grey-haired, mostly declarative. She runs the galley with methodical competence and the crew eats better than the provisions should allow.
 
-Status: canon, pile-table rung 2 (session log shows group scene evidence in actual play) — thin citation: corroborates the crew's existence/action as a group, not any individual member by name.
+- [[Fen]]. Ordinary Sailor. Seventeen or eighteen, working on a beard that hasn't committed. He does what he's told and gets it right. Earnest about his first real sea job.
+
+## Running the Faction
+
+Treat them as competent background hirelings on [[Saltwright]]. They take orders. They do not drive an independent plot.

@@ -43,7 +43,7 @@ Petro's operation is the only thing keeping [[Sparhold]] competitive with [[Kalo
 | Performance hooks | Harbormaster meets timber roughneck. He adjusts the ledger constantly and licks his pencil tip before each notation. His scarred forearm rolls as if he's testing it for pain. |
 | Link of relevance | Contact for any party investigating the timber trade, the raid escalation, or [[Sparhold]]'s economic survival. |
 
-**Voice & Delivery:** brisk, clipped speech with a working-harbor accent. [[Prone]] to incomplete sentences when he's calculating aloud. Numbers animate him more than people do.
+**Voice & Delivery:** brisk, clipped speech with a working-harbor accent. Prone to incomplete sentences when he's calculating aloud. Numbers animate him more than people do.
 
 - *Petro: "Margin's there if you know where to cut. Harbor pays by the thousand feet. You cut a foot closer to the trees, timber's worth double. That's the math."*
 - *Petro: "Ussa knows the boundary markers. Knows where the actual line sits. What she reports and what's really happening are two different measurements."*

@@ -60,7 +60,7 @@ spells:
 
 ## Description
 
-Found in the forests and highlands of [[shattered-sea]], most often around the [[crown-islands]] and the [[Ashwall Islands]]. Larger than any mundane owl, it flies in near-total silence and carries a faint celestial tint to its plumage — pale eyes that catch no torchlight, and a stillness that unsettles anything it watches. It shares its range with [[Giant Constrictor Snake]] and [[Giant Axe Beak]], both of which it avoids by hunting from the air rather than the ground.
+Found in the forests and highlands of [[shattered-sea]], most often around the [[crown-islands]] and the [[Ashwall Islands]]. Larger than any mundane owl, it flies in near-total silence and carries a faint celestial tint to its plumage — pale eyes that catch no torchlight, and a stillness that unsettles anything it watches. It shares its range with Giant Constrictor Snake and Giant Axe Beak, both of which it avoids by hunting from the air rather than the ground.
 
 ## Ecology
 

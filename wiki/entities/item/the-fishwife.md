@@ -35,14 +35,14 @@ tier: supporting
 >
 > Held level it hums on its own, faintly, off the draught coming under the shop door.
 
-_[[Weapon]] (Arrow), Uncommon._
+_Weapon (Arrow), Uncommon._
 
 Every Calveno household knows the sound this one makes, which is the point of it. [[ettore-lupo]] keeps it in the drawer built into his counter at [[Casa Lupo]], and sells it to people who will not say what for.
 
 | Field | Detail |
 |---|---|
 | One thing | It screams in a woman's voice for a minute wherever it lands, and everyone within half a mile turns toward the noise instead of toward you. |
-| Rarity justification | A minute of noise, where [[Pipes of Haunting]] frightens on a save and [[Bag of Tricks]] places a creature. |
+| Rarity justification | A minute of noise, where Pipes of Haunting frightens on a save and Bag of Tricks places a creature. |
 | Attunement reason | One power, spent in a single shot, touching no attack, damage, save, or AC roll. The attunement tree stays shut. |
 | PC connection | [[jean-claude-tabarnack]] works crowds and patrols by reading where attention gathers. This puts the attention two canals away, in a voice the city has learned to chase, without anyone seeing him do anything at all. |
 | Current holder | [[ettore-lupo]], in the drawer built into the counter at [[Casa Lupo]]. |
@@ -53,7 +53,7 @@ Every Calveno household knows the sound this one makes, which is the point of it
 > [!mechanic]
 > **The Fishwife [HB].** Consumable, one shot. Loose it at a point, surface, or creature within the weapon's normal range. On landing, the tin head opens and shrieks in a woman's voice, wordless and rising, for 1 minute.
 >
-> The scream carries at full volume to 300 feet. Between there and half a mile it thins to distant screaming. Nothing reaches past half a mile. While it sounds, every creature within 30 feet of it has disadvantage on [[Wisdom]] (Perception) checks that rely on hearing, and no shout inside that radius rises above the noise.
+> The scream carries at full volume to 300 feet. Between there and half a mile it thins to distant screaming. Nothing reaches past half a mile. While it sounds, every creature within 30 feet of it has disadvantage on Wisdom (Perception) checks that rely on hearing, and no shout inside that radius rises above the noise.
 >
 > The noise stops early only if a creature spends an Action to crush the head underfoot or under a hand, or if the arrow goes into deep water.
 >
@@ -65,4 +65,4 @@ Every Calveno household knows the sound this one makes, which is the point of it
 
 [[marta-orsini]] presses the tin heads at [[Studio Orsini]], using shafts cut from [[savia-brentino]]'s offcut pile at [[Carpenters' Slip]]. She has never explained where the voice in them comes from, or to whom it once belonged. [[ettore-lupo]] sells them at [[Casa Lupo]] without comment. He prices them the same as he did eleven years ago.
 
-[[prospero-morsani]] also had a quiver of these on his shelves at [[the Cabinet of Morsani]], Session 8, offered to the crew for near 100 gold. Confirmed: [[Transcript]].
+[[prospero-morsani]] also had a quiver of these on his shelves at [[the Cabinet of Morsani]], Session 8, offered to the crew for near 100 gold. Confirmed: Transcript.

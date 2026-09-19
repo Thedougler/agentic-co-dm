@@ -5,6 +5,7 @@ tags: [shattered-sea, session]
 type: session-prep
 kind: session-plan
 lifecycle: proposed
+base_confidence: 0.55
 campaign: shattered-sea
 visibility: dm
 reveal: unrevealed

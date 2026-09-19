@@ -52,7 +52,7 @@ If anyone puts it on, surface thoughts of everyone nearby flood in at once — m
 - [[lavinia-sordi]] — Current holder; offered from the rack at [[la-cenere]].
 - [[la-cenere]] — Shop in [[le-paludi]], [[calven-and-calveno]].
 - [[delmar-fisk]] — Tried it on in Session 8 without paying; handed it straight back.
-- [[Ring of Mind Shielding]] — Base protection this cursed ring still grants.
+- Ring of Mind Shielding — Base protection this cursed ring still grants.
 
 ## Provenance
 

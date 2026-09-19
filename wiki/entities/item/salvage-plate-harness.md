@@ -39,7 +39,7 @@ _Armor (Harness), Uncommon._
 | Field | Detail |
 |---|---|
 | One thing | The first critical hit against the wearer each short rest lands as an ordinary hit. |
-| Rarity justification | Strictly weaker than [[Adamantine Armor]] (uncommon, every critical hit against the wearer becomes a normal hit, no limit and no repair), and narrower than [[Brooch of Shielding]] (uncommon, force resistance and [[Magic Missile]] immunity outright). |
+| Rarity justification | Strictly weaker than Adamantine Armor (uncommon, every critical hit against the wearer becomes a normal hit, no limit and no repair), and narrower than Brooch of Shielding (uncommon, force resistance and Magic Missile immunity outright). |
 | Attunement reason | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
 | PC connection | [[crissdalynn-khinriss|Crissdalynn]] fights at the front on the thinnest effective hit-point cushion in the crew, and one open critical hit is what ends her round. |
 | Current holder | [[kettil-ormsson]], on a stand at the end of the counter at [[Ormsson's Fittings]]. |
@@ -50,7 +50,7 @@ _Armor (Harness), Uncommon._
 > [!mechanic]
 > **Salvage-Plate Harness [HB].** Straps over any armor or none at 5 pounds. Donning or doffing it costs an action.
 >
-> The first time a critical hit lands on the wearer after a short or long rest, that hit becomes a normal hit. The struck panel crushes in, and re-riveting it takes ten minutes with [[smith's tools]] before the harness protects again.
+> The first time a critical hit lands on the wearer after a short or long rest, that hit becomes a normal hit. The struck panel crushes in, and re-riveting it takes ten minutes with smith's tools before the harness protects again.
 >
 > **Edge cases:** the panel crushes even when the blunted hit drops the wearer, so a downed wearer wakes up owing the repair. A wearer with no smith's tools and no smith in reach carries dead weight until they find one.
 >

@@ -37,7 +37,7 @@ tier: supporting
 | Field | Detail |
 |---|---|
 | One thing | Two days of rations in one tin, and they taste good — the only ship supply anyone eats by choice. |
-| Rarity justification | Non-magical food, a step above standard [[Rations]] (5 sp/day). No bonus to any roll; the value is caloric density and shelf life. |
+| Rarity justification | Non-magical food, a step above standard Rations (5 sp/day). No bonus to any roll; the value is caloric density and shelf life. |
 | Attunement reason | Non-magical consumable, no branch of the decision tree applies. |
 | PC connection | Every customer of the Nimmik Vollask gets free meatballs with an order. The tins are what you pay for — expedition supply for a crew that won't see the Depot again for weeks. |
 | Current holder | [[cotter-foss]] sells these from the rail of the [[nimmik-vollask]]; the gnomes below decks make and tin them. |

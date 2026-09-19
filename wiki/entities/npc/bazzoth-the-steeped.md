@@ -28,11 +28,11 @@ tier: supporting
 
 An old red-caste Grung. Thick, heavyset, with a mottled brick-red hide and sagging throat. He wore a bone-plate apron over vials of reagent and carried a drinking gourd at all times.
 
-He guarded **Room 5** in the [[Calveno Sewer Magazines]] dungeon, where two [[Grung]] laborers worked with him. [[Dead]] in Session 05, he used a Sump-Reek Bomb but still fell. His death destroyed the room's powder barrels; this was the second magazine down, after [[le-paludi]]'s Magazine Alpha fell first.
+He guarded **Room 5** in the [[Calveno Sewer Magazines]] dungeon, where two [[Grung]] laborers worked with him. Dead in Session 05, he used a Sump-Reek Bomb but still fell. His death destroyed the room's powder barrels; this was the second magazine down, after [[le-paludi]]'s Magazine Alpha fell first.
 
 > [!mechanic]
 > **Shed the Years** is a bonus-action rite. While active: +15 ft. speed, no opportunity attacks, +2 AC, advantage on Dex saves, and a third Envenomed Lash at +8 to hit. Any hit or a failed DC 15 Con save ends it. Steeped gives advantage against charm/fear and on Con saves. Toxic Secretion and Master of the Bench punish melee foes. Reeking Step (3/day) teleports him when hit. Sump-Reek Bomb (Recharge 5, 6) deals area damage: a 20-ft. poison cloud forcing saves each round.
-> **Tradition and school:** Shed the Years — Arcane transmutation (concentration); [[Counterspell]] can target it, breaking concentration ends it; [[Detect Magic]] while active: "Arcane transmutation — the caster's body is burning through time it doesn't have left." Reeking Step — Arcane conjuration (teleportation); Counterspell can target each use. Sump-Reek Bomb — Arcane conjuration (area conjured poison cloud); no concentration.
+> **Tradition and school:** Shed the Years — Arcane transmutation (concentration); Counterspell can target it, breaking concentration ends it; Detect Magic while active: "Arcane transmutation — the caster's body is burning through time it doesn't have left." Reeking Step — Arcane conjuration (teleportation); Counterspell can target each use. Sump-Reek Bomb — Arcane conjuration (area conjured poison cloud); no concentration.
 
 ## Stats & Combat
 

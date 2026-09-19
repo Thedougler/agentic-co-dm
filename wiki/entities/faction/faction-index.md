@@ -5,6 +5,11 @@ tags: []
 sources: []
 created: 2026-09-17
 updated: 2026-09-17
+type: lore
+lifecycle: proposed
+reveal: unrevealed
+summary: Folder index of Factions.
+base_confidence: 0.55
 ---
 
 - [[entities/faction/Antheri|Antheri]]
@@ -13,7 +18,6 @@ updated: 2026-09-17
 - [[entities/faction/chain-council|Chain Council]]
 - [[entities/faction/Countless|Countless]]
 - [[entities/faction/dravosi-crown|Dravosi Crown]]
-- [[entities/faction/fisks-captains|Fisk's Captains]]
 - [[entities/faction/fisks-fleet|Fisk's Fleet]]
 - [[entities/faction/five-blades|Five Blades]]
 - [[entities/faction/grung-clans|Grung Clans]]

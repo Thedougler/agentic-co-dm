@@ -2,6 +2,8 @@
 title: "Fioravante Selmerin"
 aliases:
   - Fioravante Selmerin
+  - Fio
+  - Fioravante "Fio" Selmerin
 category: entities
 tags: [shattered-sea, npc]
 sources:

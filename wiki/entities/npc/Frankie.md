@@ -57,8 +57,8 @@ Voice is fast, loud, and self-interrupting. She corrects her own sentence mid-wo
 
 > [!mechanic]
 > **Tradition:** none classifiable. **School:** unclassifiable. Source: planar contamination from the [[drowned-maw]] entity — not cast by either child.
-> **[[Detect Magic]]:** No school registers. The air feels like it's under strain — wrong pressure, something pushing through from somewhere else. DC 16 [[Intelligence]] (Arcana) check: on a success, planar contamination, not a cast spell; on a failure, the pressure reads as nothing classifiable — wrong, but sourceless.
-> **[[Counterspell]]:** not applicable — declarations are not discrete cast events. There is no caster to target.
+> **Detect Magic:** No school registers. The air feels like it's under strain — wrong pressure, something pushing through from somewhere else. DC 16 Intelligence (Arcana) check: on a success, planar contamination, not a cast spell; on a failure, the pressure reads as nothing classifiable — wrong, but sourceless.
+> **Counterspell:** not applicable — declarations are not discrete cast events. There is no caster to target.
 > The children are keys; the entity and the fissure are the source. Harming Toby or Frankie does nothing to the power itself. The Maw entity and fissure are the only lever.
 
 ## Connections

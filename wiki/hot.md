@@ -1,7 +1,12 @@
 ---
-updated: 2026-09-19T02:53:49Z
+updated: 2026-09-19T05:53:35Z
 ---
 ## Recent Activity
+- Full-vault lint: differentiated [[Osset]] from [[talon-vantyrus]] (removed alias collision), repaired [[beaumonts-crew]], [[il-palio-delle-voci-contese]], and [[prospero-morsani]]. Identity resolved. Degradation stop: 427 missing-place links and 234 template findings remain.
+- `moc-generate` now writes unique `{folder}-index.md` pages with campaign frontmatter and deletes leftover `_index.md`. Lint no longer reserves `_index.md`.
+- Reserved `_index.md` folder notes in wiki-lint (same class as `index.md`). Duplicate-stem and missing campaign frontmatter on those 28 MOCs are gone; they are not entity pages.
+- Set `base_confidence` on 34 content pages (canon/accepted 0.42, proposed 0.55, probe 0.20). Content missing-trust is clear; 28 `_index.md` files remain.
+- Full-vault lint: unlinked 610 mechanic wikilinks; repaired [[the-tarahs]] YAML; deleted the [[fisks-captains]] redirect stub; added resolving aliases on Calveno, Saltwright, Black-Jaw Run, and related owners. Identity resolved. Degradation stop: 440 missing-place links and 253 template findings remain.
 - Scoped lint repair for [[Rattkin]] and supporting files: [[rattkin-culture]], [[rattkin-runs-and-black-jaw-run]], [[the-black-jaw-run]], [[Warren]], [[nona-black-jaw]], [[vincenzo-black-jaw]], [[essa-two-tooth]], and minted [[low-lamp]]. Identity resolved. Cluster lint is clean.
 Committed 34 staged pages: 15 new pages and 19 updates, including Session 12 preparation and Aruhe entity updates.
 - Scoped lint repair for the Umberlee cluster: identity resolved. [[bring-the-pearl-of-souls-to-umberlee]] and [[pearl-signal-across-the-boundary]] are distinct quests. Tithe item digested into [[the-tithe-of-the-bitch-queen]]. Cluster lint is clean.
@@ -17,10 +22,10 @@ Committed 34 staged pages: 15 new pages and 19 updates, including Session 12 pre
 - Linted and repaired [[bloodhawk]]: restored the canonical creature page from its archived source, removed the self-redirect, and cleared structural and Vale findings.
 - Linted and repaired [[Antheri]]: completed the faction template, normalized DM-facing prose, and cleared all scoped findings.
 - Linted and repaired [[Auralis]]: cleared four broken links and eight Vale prose findings.
-Merged duplicate Khlysty faction listings into [[khlysty-the-flock]]; the obsolete [[Khlysty]] file was removed, nine live links were retargeted, unique facts were integrated, and the canonical page has no agenda clock line.
+Merged duplicate Khlysty faction listings into [[khlysty-the-flock]]; the obsolete [[Khlysty]] file was removed, nine live links were retargeted, unique facts were integrated, and the canonical page has no agenda line.
 Retconned Catarina Da'Virelli to her Calveno NPC owner page; completed workshop work remains with Delmar, Crissdalynn, and Zort.
 Consolidated the redundant Fisk's Captains page into [[fisks-fleet]]; the old path now redirects to the canonical fleet page.
-Corrected [[fisks-fleet]] from DM annotations: removed production maintenance procedure, inactive-faction turn scaffolding, and the empty agenda clock; aligned the faction template and skill.
+Corrected [[fisks-fleet]] from DM annotations: removed production maintenance procedure, inactive-faction turn scaffolding, and the empty agenda; aligned the faction template and skill.
 Linted 726 live pages: 1,051 unresolved links dominate the backlog; 30 index omissions, 29 trust-field gaps, and six orphans remain.
 Corrected the campaign roster and encounter calibrations to Delmar, Crissdalynn, Jean-Claude, and Perrin.
 Removed an obsolete closed plot artifact and its archived narration source.

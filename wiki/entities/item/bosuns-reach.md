@@ -35,14 +35,14 @@ tier: supporting
 >
 > Somebody has climbed on this one already, and wound it back for the next person.
 
-_[[Weapon]] (Arrow), Uncommon._
+_Weapon (Arrow), Uncommon._
 
 [[ettore-lupo]] keeps five odd shafts in a felt-lined drawer below his counter at [[Casa Lupo]]. He shows none of them until somebody asks him for a thing he does not stock, and this is the one his hand goes to first.
 
 | Field | Detail |
 |---|---|
 | One thing | Fired into a wall, hull, or beam, it anchors and leaves sixty feet of climbable line hanging where nobody could have thrown a rope. |
-| Rarity justification | Comparable to [[Rope of Climbing]] (60 ft, anchors itself, permanent) and [[Immovable Rod]] (a fixed anchor point on command). Both are reusable. This is one shot. |
+| Rarity justification | Comparable to Rope of Climbing (60 ft, anchors itself, permanent) and Immovable Rod (a fixed anchor point on command). Both are reusable. This is one shot. |
 | Attunement reason | A single power, spent in one shot, adding nothing to attack, damage, save, or AC rolls. No branch of the attunement tree fires. |
 | PC connection | Solves [[jean-claude-tabarnack]]'s scouting problem: no way to bring the crew up after him. |
 | Current holder | [[ettore-lupo]], in the felt-lined drawer below the counter at [[Casa Lupo]]. |
@@ -53,7 +53,7 @@ _[[Weapon]] (Arrow), Uncommon._
 > [!mechanic]
 > **Bosun's Reach [HB].** Single use, consumable. Fired as a normal ranged attack at a wall, hull, beam, spar, or similar solid surface within the weapon's normal range (AC 10 for an unattended object, or higher at the DM's discretion for a small or awkward target). On a hit, the wire ring shears. The barbs spring open and bite into whatever it struck. The spool pays out up to 60 feet of silk line to the shooter's hand.
 >
-> The anchored line holds 400 pounds. Climbing it costs movement at half speed, the same as any rope. The barbs hold until somebody cuts the line or works the head free from the far end, which takes an Action and a successful DC 15 [[Strength]] (Athletics) check from a creature standing beside it.
+> The anchored line holds 400 pounds. Climbing it costs movement at half speed, the same as any rope. The barbs hold until somebody cuts the line or works the head free from the far end, which takes an Action and a successful DC 15 Strength (Athletics) check from a creature standing beside it.
 >
 > **Edge cases:** fired at a creature, it hits as an ordinary arrow for 1d6 piercing damage. The line falls slack, wasting the shot. It bites clean into timber, brick, mortared stone, and packed earth. Rotten timber, dry-stacked stone, ice, and sail canvas tear on the first ten feet of climbing (the DM says so as the climber's weight comes on). It cannot be re-wound in the field.
 >

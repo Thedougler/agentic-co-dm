@@ -11,6 +11,7 @@ created: 2026-09-12
 updated: 2026-09-13
 type: creature
 lifecycle: proposed
+base_confidence: 0.55
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm

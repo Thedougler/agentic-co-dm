@@ -2,12 +2,13 @@
 title: "Prospero Morsani"
 aliases:
   - Prospero Morsani
+  - Morsani
 category: entities
 tags: [shattered-sea, npc]
 sources:
   - "campaign-os:prospero-morsani.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-18
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
@@ -28,9 +29,9 @@ tier: supporting
 
 |               |                                                                 |
 | ------------- | --------------------------------------------------------------- |
-| **Species**   | [[Gnome]]                                                            |
+| **Species**   | Gnome                                                            |
 | **Pronouns**  | he/him                                                           |
-| **Location**  | [[Cabinet of Morsani]], [[calven-and-calveno]]  |
+| **Location**  | the Cabinet of Morsani, [[calven-and-calveno]]  |
 | **Role**      | Curio dealer                                                     |
 
 **Wants:** to complete a collection by placing each object in the right hands, then own the final piece that makes the set whole.
@@ -43,7 +44,7 @@ tier: supporting
 
 **Opening move:** examining a salt lantern, turning it over in the light · Prospero speaks first · "You're new to this work. Tell me: who carried this when they were happy?"
 
-**Lore Sheet:** runs the Cabinet from [[the Velo Quarter]], where magic and rare things accumulate like dust. Each object carries a ring on his fingers, and that ring holds the story of its previous owner, its failure to stay put, and the reason it arrived here. A locked case in the back holds the thirty-second ring, attached to nothing yet. His hours move with his mood. The lantern at his door is the only notice anyone gets.
+**Lore Sheet:** runs the Cabinet from the Velo Quarter, where magic and rare things accumulate like dust. Each object carries a ring on his fingers, and that ring holds the story of its previous owner, its failure to stay put, and the reason it arrived here. A locked case in the back holds the thirty-second ring, attached to nothing yet. His hours move with his mood. The lantern at his door is the only notice anyone gets.
 
 **Toy Chest**
 
@@ -61,17 +62,16 @@ tier: supporting
 
 No stats given in source.
 
-> [!mechanic]
-> **Tradition:** Arcane. **School:** Evocation. **Spell analogue(s):** *[[Gust of Wind]]*.
-> **Homebrew element:** amplified to hurricane force — automatic 20-foot push on trigger, no save; door seals shut until manually reset.
-> **[[Detect Magic]]:** Evocation — cold current along every threshold; hinges hum faintly when magic passes near.
-> **[[Counterspell]]:** not applicable — trigger-activated enchantment, not a live cast; [[Dispel Magic]] suppresses it.
+**Tradition** is Arcane. **School** is Evocation. The spell analogue is *Gust of Wind*.
+**Homebrew element:** amplified to hurricane force. It is an automatic 20-foot push on trigger, with no save. The door seals shut until someone resets it by hand.
+**Detect Magic** reads as Evocation. A cold current runs along every threshold. Hinges hum faintly when magic passes near.
+**Counterspell** does not apply. This is a trigger-activated enchantment. Dispel Magic suppresses it.
 
 ## Connections
 
-- [[Cabinet of Morsani]]: proprietor
+- the Cabinet of Morsani: proprietor
 - [[calven-and-calveno]]: his shop sits in the Velo Quarter
 
 ## Session Log
 
-- **Session 08** (`vault/episodes/008/`). Offered the Defenders of Calveno the Compass of the Drowned (400 gp). Showed off three quivers of trick arrows: [[the Fishwife]], [[the Chimney]], and [[the Lamp Lighter]]. Sold [[the-snap]] to [[perrin-black-jaw]] for 150 gold. Under [[catarina-davirelli|Catarina]]'s scrutiny, admitted he hadn't bought it. He'd found it, probably off a corpse. Sold a +1 dragonhide belt to [[crissdalynn-khinriss]] for 100 gold, paid by [[delmar-fisk|Delmar]]. Crissdalynn knocked him off his own counter twice testing the belt, non-lethally. Delmar pocketed a torn scrap of paper from among his stock of goggles unnoticed (Sleight of Hand 25). When Catarina accused him to his face of robbing his own customers (Intimidation 15), he triggered a hidden shop defense: a hurricane-force gust threw her out the door and 20 feet down the street, then the door slammed shut on its own. Confirmed: [[episode 008 transcript]].
+- **Session 08** (`vault/episodes/008/`). Offered the Defenders of Calveno the Compass of the Drowned (400 gp). Showed off three quivers of trick arrows: [[the Fishwife]], [[the Chimney]], and [[Lamplighter|the Lamp Lighter]]. Sold [[the-snap]] to [[perrin-black-jaw]] for 150 gold. Under [[catarina-davirelli|Catarina]]'s scrutiny, admitted he hadn't bought it. He'd found it, probably off a corpse. Sold a +1 dragonhide belt to [[crissdalynn-khinriss]] for 100 gold, paid by [[delmar-fisk|Delmar]]. Crissdalynn knocked him off his own counter twice testing the belt, non-lethally. Delmar pocketed a torn scrap of paper from among his stock of goggles unnoticed (Sleight of Hand 25). When Catarina accused him to his face of robbing his own customers (Intimidation 15), he triggered a hidden shop defense: a hurricane-force gust threw her out the door and 20 feet down the street, then the door slammed shut on its own. Confirmed: session 08 transcript.

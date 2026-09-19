@@ -39,16 +39,16 @@ _Wondrous Item, Uncommon._
 | Field | Detail |
 |---|---|
 | One thing | The wearer holds their ground when something tries to move them. |
-| Rarity justification | Narrower than [[Oil of Slipperiness]] (uncommon, 8 hours of full freedom of movement) and than [[Stone of Good Luck]] (uncommon, +1 to every save). This covers one narrow class of effect and nothing else. |
+| Rarity justification | Narrower than Oil of Slipperiness (uncommon, 8 hours of full freedom of movement) and than Stone of Good Luck (uncommon, +1 to every save). This covers one narrow class of effect and nothing else. |
 | Attunement reason | No bonus to attack, damage, AC, or any save roll's number, and one power only. The attunement tree has no branch for it. |
-| PC connection | [[perrin-black-jaw]] saves at [[Strength]] -1 with disadvantage on top, so every grappler and shover in the Teeth goes for him first. |
+| PC connection | [[perrin-black-jaw]] saves at Strength -1 with disadvantage on top, so every grappler and shover in the Teeth goes for him first. |
 | Current holder | [[ninka-solvei]], on the counter at [[Ninka's Findings]]. |
 | Narrative hook | The knot is a diver's, tied to be cut from the far end, and it was cut from the far end. |
 
 ## Mechanics
 
 > [!mechanic]
-> **Deadman's Cleat [HB].** While worn on a belt, sash, or harness, you have Advantage on saving throws and ability checks made to resist being shoved, knocked [[Prone]], or moved against your will, including by a spell, a wave, or a creature's forced movement.
+> **Deadman's Cleat [HB].** While worn on a belt, sash, or harness, you have Advantage on saving throws and ability checks made to resist being shoved, knocked Prone, or moved against your will, including by a spell, a wave, or a creature's forced movement.
 >
 > **Edge cases:** it does nothing against a grapple already holding you, only against the attempt to move you while grappled. A wearer knocked Prone by damage rather than by an effect gets no save to have Advantage on.
 >

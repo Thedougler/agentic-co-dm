@@ -43,7 +43,7 @@ tier: supporting
 >
 > **[HB] Step Over.** As part of its move, a mounted strider can step over a Medium or smaller creature's space without provoking an opportunity attack from that creature. A creature attempting to grapple the rider from the ground does so at disadvantage.
 >
-> **[HB] Spooks.** The strider is a beast with no combat training. If it takes any damage, its rider must succeed on a DC 12 [[Wisdom]] (Animal Handling) check as a reaction or the strider bolts 50 feet in a random direction, carrying the rider with it and ending the rider's turn.
+> **[HB] Spooks.** The strider is a beast with no combat training. If it takes any damage, its rider must succeed on a DC 12 Wisdom (Animal Handling) check as a reaction or the strider bolts 50 feet in a random direction, carrying the rider with it and ending the rider's turn.
 >
 > **Limitations:** one Medium rider and no more, no barding, no deep water, no stairs, and nothing a horse would refuse. Ride it into a fight and the Spooks check comes up inside a round or two.
 

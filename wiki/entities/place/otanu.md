@@ -65,6 +65,6 @@ The vent stays active. Locals have built their weather-reading practice around i
 
 - Ash-fed scrub and wind-bent pandanus hold the upper slopes. The black soil runs down to a shoreline of coarse sand and tide pools.
 - Sulfur moss growing near the steam vents gets boiled into a joint-ache remedy fishers trade in small clay jars at Vetau's market.
-- [[goat|Wild goats]] pick along the crater rim at dawn, and [[hawk|Hawks]] ride the vent's rising heat to hunt them from above.
-- [[giant-crab|Giant crabs]], shells scorched black from years of ash-fall, work the tide pools after dark.
-- [[giant-scorpion|Giant scorpions]] den in the cooled lava tubes threading the interior, drawn out by the rock's leftover warmth.
+- Wild goats pick along the crater rim at dawn, and Hawks ride the vent's rising heat to hunt them from above.
+- Giant crabs, shells scorched black from years of ash-fall, work the tide pools after dark.
+- Giant scorpions den in the cooled lava tubes threading the interior, drawn out by the rock's leftover warmth.

@@ -29,7 +29,7 @@ tier: supporting
 >
 > A clamp folds around the breech with a sharp *click*. Light runs down the barrel, crackling faintly, and pools into a magazine that appears underneath, loaded and ready. Metal slides home with a decisive *clank*. It clicks into place.
 
-*[[Weapon]] (Blunderbuss), Uncommon.*
+*Weapon (Blunderbuss), Uncommon.*
 
 [[catarina-davirelli]] cast this spell during a fight in the [[Calveno Sewer Magazines]]. [[delmar-fisk]] carries it over his shoulder with four pistols. He used to stop and reload after each shot. Now the magazine loads itself.
 

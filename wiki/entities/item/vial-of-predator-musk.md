@@ -39,7 +39,7 @@ tier: supporting
 ## Mechanics
 
 > [!mechanic]
-> **[HB] Dauber (action).** Smear the dose across a doorway, a deck, or your own boots. For 1 hour, a beast of CR 1 or lower that is not immune to being frightened must succeed on a DC 13 [[Wisdom]] saving throw to move within 10 feet of the marked ground, and on a failure it must spend its turn moving away. Any scent-based tracking of a creature carrying the open vial fails outright.
+> **[HB] Dauber (action).** Smear the dose across a doorway, a deck, or your own boots. For 1 hour, a beast of CR 1 or lower that is not immune to being frightened must succeed on a DC 13 Wisdom saving throw to move within 10 feet of the marked ground, and on a failure it must spend its turn moving away. Any scent-based tracking of a creature carrying the open vial fails outright.
 >
 > **Limitations:** one use, beasts only, and it works on the party's own mounts and animal companions exactly as well as it works on anything else. Everything with a nose within a hundred feet knows where you are.
 

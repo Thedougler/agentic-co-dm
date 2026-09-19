@@ -13,6 +13,7 @@ updated: 2026-09-13
 type: session-prep
 kind: hook
 lifecycle: accepted
+base_confidence: 0.42
 reveal: unrevealed
 summary: Action Hook. An adult hawk stoops on the Crown Squid over the Old Gardens; grass, river, terrace cover, or the beach ends the action.
 campaign: shattered-sea

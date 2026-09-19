@@ -40,7 +40,7 @@ One of six alchemical cigarette blends sold in [[calven-and-calveno]]. Among the
 | Field | Detail |
 |---|---|
 | One thing | Once lit, it lets the wielder reroll their next missed ranged weapon attack against the same target. |
-| Rarity justification | Uncommon, comparable to Potion of Fire Breath (Uncommon, single-use consumable, no attunement, guarantees an area of fire damage on use) and [[Dust of Disappearance]] (Uncommon, single-use consumable, no attunement, guarantees invisibility for its duration). Both hand the user a certain combat benefit. The Boomerang only offers a second attempt at a roll that can still fail, so its power stays below both benchmarks. The repo's rarity budget puts anything with combat relevance at Uncommon or above, so this sits above Common despite the small effect. |
+| Rarity justification | Uncommon, comparable to Potion of Fire Breath (Uncommon, single-use consumable, no attunement, guarantees an area of fire damage on use) and Dust of Disappearance (Uncommon, single-use consumable, no attunement, guarantees invisibility for its duration). Both hand the user a certain combat benefit. The Boomerang only offers a second attempt at a roll that can still fail, so its power stays below both benchmarks. The repo's rarity budget puts anything with combat relevance at Uncommon or above, so this sits above Common despite the small effect. |
 | Attunement reason | Single use, grants no bonus to attack, damage, saving throws, or AC, and carries one power. The decision tree's attunement branches don't trigger. |
 | PC connection | [[jean-claude-tabarnack]] (the cheapest blend on the board, and the one he can buy without anyone reading anything into it). He buys it for cover as much as for backup. |
 | Current holder | Sold from the shelf at [[La Brace]], a [[Velo Quarter]] smoking room run by [[rufio-segalla]], the only room in Calveno licensed to burn alchemical smoke in the open. Also sold at 60 percent price (60 gp) as an unreliable second off a vending board called [[La Gatta]] on [[the Bridge]]'s bottom tier, run by [[nicco-kettley]]. |
@@ -48,7 +48,7 @@ One of six alchemical cigarette blends sold in [[calven-and-calveno]]. Among the
 
 ## Mechanics
 
-**[HB]** Single use, consumable. As a [[Bonus Action]], the wielder lights the cigarette and draws from it, exhaling a ring of smoke.
+**[HB]** Single use, consumable. As a Bonus Action, the wielder lights the cigarette and draws from it, exhaling a ring of smoke.
 
 Once before the end of the wielder's next turn, the first time the wielder misses with a ranged weapon attack, they may reroll that attack roll against the same target. The wielder must use the second roll, even if worse than the first.
 

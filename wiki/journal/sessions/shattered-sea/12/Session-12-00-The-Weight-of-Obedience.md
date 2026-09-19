@@ -13,6 +13,7 @@ updated: 2026-09-16
 type: session-prep
 kind: session-plan
 lifecycle: proposed
+base_confidence: 0.55
 reveal: unrevealed
 campaign: shattered-sea
 session: 12

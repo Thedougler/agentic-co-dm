@@ -30,7 +30,7 @@ tier: supporting
 
 This page is world-texture with no single PC thread owning it. Every Grung encounter, Maw conduit interaction, and Tithe item question pulls on it through its own thread.
 
-Magic in the Shattered Sea runs on three source traditions: Arcane, Divine, and Primal. These sit above the eight spell schools as a table-level classification governing how [[Detect Magic]], [[Counterspell]], and [[Dispel Magic]] interact with every supernatural effect in the world. The answer to "what does Detect Magic show?" and "can I Counterspell this?" always depends on tradition first, school second.
+Magic in the Shattered Sea runs on three source traditions: Arcane, Divine, and Primal. These sit above the eight spell schools as a table-level classification governing how Detect Magic, Counterspell, and Dispel Magic interact with every supernatural effect in the world. The answer to "what does Detect Magic show?" and "can I Counterspell this?" always depends on tradition first, school second.
 
 ### Tradition Profiles
 
@@ -82,7 +82,7 @@ The curse that falls on every piece of the [[Tithe]] is divine. [[Umberlee]] mai
 > [!mechanic]
 > **Tradition:** Divine. **School:** Necromancy.
 > **Detect Magic:** Divine necromancy. The curse reads as old and deliberate, carrying the weight of something that has never let go.
-> **[[Remove Curse]]:** fails. The curse is divine in origin. Only the divine release condition lifts it: the item touching saltwater.
+> **Remove Curse:** fails. The curse is divine in origin. Only the divine release condition lifts it: the item touching saltwater.
 > **Dispel Magic:** suppresses for 1 minute, after which Umberlee's attention reasserts.
 > **Counterspell:** not applicable (not a cast spell, an ongoing divine imposition).
 > The curse falls on the object, not the bearer. Transfer, sale, or gifting moves the curse with the item.
@@ -92,8 +92,8 @@ The curse that falls on every piece of the [[Tithe]] is divine. [[Umberlee]] mai
 The cosmological law governing fiend incursion, hallowed ground, and the demon's/devil's kiss maps to existing SRD spells without homebrew additions. See [[sin-and-sanctuary]] for the full lore.
 
 > [!mechanic]
-> **Hallowed ground ([[Hallow]], Evocation, Divine).** Maintained by active patron attention. Lapses without the patron's ongoing claim. No visible sign marks when a patron withdraws. Detect Magic: Divine evocation, a claim being actively held.
+> **Hallowed ground (Hallow, Evocation, Divine).** Maintained by active patron attention. Lapses without the patron's ongoing claim. No visible sign marks when a patron withdraws. Detect Magic: Divine evocation, a claim being actively held.
 >
-> **The demon's/devil's kiss ([[Bestow Curse]], Necromancy, Divine).** Permanent, patron-sanctioned. The receiving fiend is the instrument, not the caster. Detect Magic: Divine necromancy, a mark that remembers the moment of recognition. Counterspell: not applicable. The patron sanctions the kiss directly, and no mortal cast event occurs to intercept.
+> **The demon's/devil's kiss (Bestow Curse, Necromancy, Divine).** Permanent, patron-sanctioned. The receiving fiend is the instrument, not the caster. Detect Magic: Divine necromancy, a mark that remembers the moment of recognition. Counterspell: not applicable. The patron sanctions the kiss directly, and no mortal cast event occurs to intercept.
 >
-> **Fiend/celestial soul-reading ([[Detect Evil and Good]], Divination, Divine).** Always-on and passive, requiring neither a cast event nor concentration. All fiends and celestials read mortal souls this way innately. Counterspell: not applicable.
+> **Fiend/celestial soul-reading (Detect Evil and Good, Divination, Divine).** Always-on and passive, requiring neither a cast event nor concentration. All fiends and celestials read mortal souls this way innately. Counterspell: not applicable.

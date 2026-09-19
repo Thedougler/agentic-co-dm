@@ -2,6 +2,7 @@
 title: "Ozzeth, the Twiceborn"
 aliases:
   - Ozzeth, the Twiceborn
+  - Ozzeth the Twiceborn
 category: entities
 tags: [shattered-sea, npc]
 sources:
@@ -34,18 +35,18 @@ tier: supporting
 
 "Twiceborn" is not a name Ozzeth chose. It's Gold caste's own official term of censure, the brand stamped on a Grung caught mid-shift with an unsealed, incomplete color change. He and Simone Tabarnack, both power-hungry, independently found the same suppressed rite Gold caste keeps for reordering *someone else's* caste: a governance and punishment tool, never built to run on its own holder. Turned inward, it doesn't finish. His hands shifting red and blue mid-cast is that rite still stuck, permanently, mid-transfer. Gold couldn't move against him openly without admitting the rite exists and works, so the punishment went sideways, through reputation instead of force. With no standing of his own to resist it, "the mage-abomination" stuck outright, immediate and unchallenged. See [[grung-clans|Grung Clans]] for the caste-color mechanism this rests on.
 
-Ozzeth found the rite first and went further with it than Simone ever managed alone, and he spent years keeping hers stable even after his own brand cost him everything that secret should have protected. He casts [[Sending]] freely, on his own schedule instead of hers, so no watcher can predict the timing, and checks in with her often. She looks up to him for the maintenance nobody else in her garrison ever suspected existed.
+Ozzeth found the rite first and went further with it than Simone ever managed alone, and he spent years keeping hers stable even after his own brand cost him everything that secret should have protected. He casts Sending freely, on his own schedule instead of hers, so no watcher can predict the timing, and checks in with her often. She looks up to him for the maintenance nobody else in her garrison ever suspected existed.
 
 | Field | Value |
 |---|---|
 | Primary goal | Keep [[Simone]]'s unsealed color-rite from collapsing, at any distance. |
-| Consistent method | Checks in by [[Sending]], timed to his own schedule instead of hers, so no watcher learns the pattern. |
+| Consistent method | Checks in by Sending, timed to his own schedule instead of hers, so no watcher learns the pattern. |
 | Active problem | His own miscarried rite marked him "mage-abomination," so any help he offers has to travel through Sending, never his own name. |
 | Performance hooks | The silent professional who never explains himself + a casting hand that visibly bleeds color, red climbing one palm as blue drains the other. |
 | Link of relevance | [[jean-claude-tabarnack]]: Ozzeth's death at his hands in Session 06 is what finally leaves Simone's rite unmaintained. |
 
 > [!mechanic]
-> **Ozzeth's Ossketh — incomplete arcane transmutation, background process.** The self-cast color-sealing rite never finished; it has been running unstably on his body for years (visible as the red-and-blue color shift in his hands during spellcasting). [[Detect Magic]] near Ozzeth: "Arcane transmutation — like a spell caught mid-execution, still running." His spellcasting is standard Arcane ([[Intelligence]], wizard tradition) and is separate from the Ossketh. The unstable Ossketh is a background process — [[Counterspell]] cannot target it.
+> **Ozzeth's Ossketh — incomplete arcane transmutation, background process.** The self-cast color-sealing rite never finished; it has been running unstably on his body for years (visible as the red-and-blue color shift in his hands during spellcasting). Detect Magic near Ozzeth: "Arcane transmutation — like a spell caught mid-execution, still running." His spellcasting is standard Arcane (Intelligence, wizard tradition) and is separate from the Ossketh. The unstable Ossketh is a background process — Counterspell cannot target it.
 
 ## Stats & Combat
 
@@ -116,7 +117,7 @@ A small grung mage whose chromatic ward and 130 hit points of spellcasting prowe
 
 Guards **Room T2 (Magazine Delta)** with [[purple-caste-zealot]] in [[Calveno Sewer Magazines]] (Session 06 roster, reworked 2026-07-03). He left mobile work, and a drunk mage, blind monk, and mage-abomination took the remaining slots. He swims 30 ft. and casts control spells well; the Zealot is a walking bomb, so watch the barrels.
 
-Ozzeth casts with no speech, and [[Silence]] won't stop him (that trick won't work here). The Purple-Caste Zealot draws all fire, freeing him up to use *dominate person* and other control magic. [[Dominate Person]] is best, used once per fight at the right moment.
+Ozzeth casts with no speech, and [[Silence]] won't stop him (that trick won't work here). The Purple-Caste Zealot draws all fire, freeing him up to use *dominate person* and other control magic. Dominate Person is best, used once per fight at the right moment.
 
 ## Connections
 
@@ -135,6 +136,6 @@ Ozzeth casts with no speech, and [[Silence]] won't stop him (that trick won't wo
 
 **Session 06** (`vault/episodes/006/`): fought in the Primary Chamber, warding [[solange-barret|Solange]]'s spell as his hands shifted red and blue. He cast Dominate Person at [[delmar-fisk]], but Delmar saved (roll 19, plus [[jean-claude-tabarnack|Jean-Claude]]'s help for 20) and shook it off.
 
-Mid-fight, stood by Solange. Placed a hand on her shoulder and said “you can do this.” Cast [[Misty Step]] and [[Greater Invisibility]] to keep her safe. She kept casting her spell.
+Mid-fight, stood by Solange. Placed a hand on her shoulder and said “you can do this.” Cast Misty Step and Greater Invisibility to keep her safe. She kept casting her spell.
 
-Killed later in the same fight. Delmar shot his arm. Jean-Claude cast [[Hunter's Mark]] and finished him with a bow (17 to hit, 13 damage). His last act: grabbed Solange's shoulder and said “do it now” before he fell.
+Killed later in the same fight. Delmar shot his arm. Jean-Claude cast Hunter's Mark and finished him with a bow (17 to hit, 13 damage). His last act: grabbed Solange's shoulder and said “do it now” before he fell.

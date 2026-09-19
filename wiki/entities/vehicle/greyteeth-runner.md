@@ -33,13 +33,13 @@ tier: supporting
 
 The *Greyteeth Runner* is a Tier 1 reef runner for sale in [[calders-tooth-and-port-tidefall]] harbour. Built by the Island Council for [[Midchain]] work, she trades guns and comfort for speed and nimble handling.
 
-The hull shows wear but remains sound. Visible patches mark the port bow, and seams need re-caulking. The deck is open aft with no cabin. Belowdecks holds crew and cargo in one space with hammock hooks, two hatches, and a minimal [[Galley]].
+The hull shows wear but remains sound. Visible patches mark the port bow, and seams need re-caulking. The deck is open aft with no cabin. Belowdecks holds crew and cargo in one space with hammock hooks, two hatches, and a minimal Galley.
 
 ## Layout
 
 **Weather Deck:** open, with a full-width tiller aft. Swivel guns on each side and sweep oars provide enough firepower and calm-water mobility for escape rather than engagement.
 
-**Belowdecks:** one undivided space for crew and cargo. Hammock hooks line the hull for six hands, cargo stows low and wide in the shallow hold, and two deck hatches allow access. Crew sleeps in hammocks. The [[Galley]] is minimal.
+**Belowdecks:** one undivided space for crew and cargo. Hammock hooks line the hull for six hands, cargo stows low and wide in the shallow hold, and two deck hatches allow access. Crew sleeps in hammocks. The Galley is minimal.
 
 ## Facilities
 
@@ -70,8 +70,8 @@ The hull shows wear but remains sound. Visible patches mark the port bow, and se
 | **Status** | For sale |
 | **Hull Points** | 110 |
 | **Hull AC** | 10 |
-| **[[Condition]]** | Worn |
-| **[[Speed]] (good wind)** | 80 miles/day |
+| **Condition** | Worn |
+| **Speed (good wind)** | 80 miles/day |
 | **Speed (poor wind)** | 42 miles/day |
 | **Speed (reef channels)** | Full speed |
 | **Speed (calm)** | 12 miles/day |

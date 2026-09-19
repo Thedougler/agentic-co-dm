@@ -36,7 +36,7 @@ relationships:
 flexGrow=2
 ===
 > [!narration] Narration
-> A dead tree walks: forty feet of split bark and dragging roots. It patrols deep [[The Rot]] on a seasonal beat and never leaves the tree line. Fire is the one thing that stops it knitting itself back together. The wood died years ago; what moves it did not.
+> A dead tree walks: forty feet of split bark and dragging roots. It patrols deep The Rot on a seasonal beat and never leaves the tree line. Fire is the one thing that stops it knitting itself back together. The wood died years ago; what moves it did not.
 ```
 
 ```col-md
@@ -78,7 +78,7 @@ actions:
 ## Behavior
 
 - **Habitat.** Deep Rot, always near the tree line. It follows a seasonal beat and does not leave the forest. Silence moths, thornbacks, or ordinary Rot terrain can create movement problems, but the corpsewood should remain the obvious durable target rather than gain a pile of immunities.
-- **Behavior.** A dead tree walks: forty feet of split bark and dragging roots. It patrols deep [[The Rot]] on a seasonal beat and never leaves the tree line. Fire is the one thing that stops it knitting itself back together. The wood died years ago; what moves it did not.
+- **Behavior.** A dead tree walks: forty feet of split bark and dragging roots. It patrols deep The Rot on a seasonal beat and never leaves the tree line. Fire is the one thing that stops it knitting itself back together. The wood died years ago; what moves it did not.
 - **Diet.** Source is silent unless named above.
 - **Social Structure.** Source is silent unless named above.
 

@@ -37,9 +37,9 @@ A brass birdcage hung from a ship nail in the Surety's brig, holding him. Feral,
 - *"You're bleeding a little. From the fight. I can smell it."*
 - *"Just your hand for a moment."*
 
-**Session 02, Freed:** [[jean-claude-tabarnack|Jean-Claude]] offered a wine glass of his own blood, which Ket drank to grow calmer (though not safe) while [[perrin-black-jaw|Perrin]] drew his longsword to execute him. [[crissdalynn-khinriss|Crissdalynn]] deflected the blade and placed herself between Perrin and the cage, stepping past the safe distance so Ket could feed from her arm before Perrin cast Tasha's [[Hideous Laughter]] and dropped him. To free him, they used [[ensign-wouters]]' body as a lure and released the cage from a safe distance with [[Mage Hand]], allowing Ket to feed on the body for about a minute before flying toward Murrat, leaving [[shepherd-grigori]] glad and the crew (who had always hated what Rook did to him) vindicated.
+**Session 02, Freed:** [[jean-claude-tabarnack|Jean-Claude]] offered a wine glass of his own blood, which Ket drank to grow calmer (though not safe) while [[perrin-black-jaw|Perrin]] drew his longsword to execute him. [[crissdalynn-khinriss|Crissdalynn]] deflected the blade and placed herself between Perrin and the cage, stepping past the safe distance so Ket could feed from her arm before Perrin cast Tasha's Hideous Laughter and dropped him. To free him, they used [[ensign-wouters]]' body as a lure and released the cage from a safe distance with Mage Hand, allowing Ket to feed on the body for about a minute before flying toward Murrat, leaving [[shepherd-grigori]] glad and the crew (who had always hated what Rook did to him) vindicated.
 
-He is free, [[flying]] toward Murrat.
+He is free, flying toward Murrat.
 
 > [!mechanic]
 > Owes the crew in the way a freed prisoner owes people. It's complicated and not guaranteed. Open question: why was he this far from Murrat, and what does he know about the [[five-blades]] connection Rook was curious about? If the crew reaches Murrat, [[Varet]] will recognize him as Murrat-born immediately.

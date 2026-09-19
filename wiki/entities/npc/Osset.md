@@ -32,11 +32,11 @@ visibility: dm
 
 ## Connections
 
-[[delmar-fisk]] found Osset's name in Session 08. He spotted the scrap of paper at [[the Cabinet of Morsani]]. He pocketed it unseen (Sleight of Hand 25) and read it later (Insight 17). It named Ossanth, or Osset: his original name, once a monk of the [[high-eyrie]] and a master among the [[sentinels-of-the-eyrie]]. He left the order during the schism and later adopted the name Talon Vantyrus.
+[[delmar-fisk]] found Osset's name in Session 08. He spotted the scrap of paper at the Cabinet of Morsani. He pocketed it unseen (Sleight of Hand 25) and read it later (Insight 17). It named Ossanth, or Osset: his original name, once a monk of the [[high-eyrie]] and a master among the [[sentinels-of-the-eyrie]]. He left the order during the schism and later adopted the name Talon Vantyrus.
 
-That same session, [[lavinia-sordi]] of [[la-cenere]] named him too. She said a falcon-featured man calling himself Osset sold her the cursed [[Cloak of Displacement]]. She later passed it to [[crissdalynn-khinriss]]. Confirmed: [[Transcript]].
+That same session, [[lavinia-sordi]] of [[la-cenere]] named him too. She said a falcon-featured man calling himself Osset sold her the cursed Cloak of Displacement. She later passed it to [[crissdalynn-khinriss]]. Confirmed from the transcript.
 
 - [[sentinels-of-the-eyrie]]: former member, left during the schism. He now leads [[Countless|the Countless]] under the name [[talon-vantyrus|Talon Vantyrus]].
-- [[lavinia-sordi]]: sold her the cursed [[Cloak of Displacement]].
+- [[lavinia-sordi]]: sold her the cursed Cloak of Displacement.
 - [[crissdalynn-khinriss]]: the Sentinel whose Long Sight he is quietly reading for the Countless. She has never heard his original name from anyone at the Eyrie.
 - [[master-kyzil|Master Kyzil]]: an old classmate at the High Eyrie who would recognize his face on sight. Osset avoids any port where they might cross paths.

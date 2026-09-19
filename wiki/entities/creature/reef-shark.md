@@ -61,7 +61,7 @@ A Reef Shark is smaller and warier than the open-water [[hunter-shark]], built f
 
 ## Ecology
 
-Reef sharks hold the shallow channels of the [[central-strait]] and the reef rim around the [[sunken-crown]]'s Blue Hole, wherever the current funnels baitfish through a gap narrow enough for a pack to work together. [[A drafted Session 01 beat]] built around a reef-shark ambush is staged in these same waters.
+Reef sharks hold the shallow channels of the [[central-strait]] and the reef rim around the [[sunken-crown]]'s Blue Hole, wherever the current funnels baitfish through a gap narrow enough for a pack to work together. A drafted Session 01 beat built around a reef-shark ambush is staged in these same waters.
 
 ## Toy Chest
 

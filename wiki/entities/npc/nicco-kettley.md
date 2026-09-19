@@ -29,7 +29,7 @@ tier: supporting
 > [!narration] Narration
 > A board on trestles, wedged between a fry stall and a rope seller, with a grey cat asleep across the middle of it in the one patch of sun that reaches under the arch. He wears a second board strapped across his chest from shoulder to hip, and nine years of that weight have bent his spine forward. He cannot sit down in that rig.
 >
-> The halfling behind it works around the cat. [[Paper]] cones of loose leaf. A tin of hand-rolled cigarettes with the ends twisted shut. A brass lighter on a chain long enough to reach any customer and not one inch past them.
+> The halfling behind it works around the cat. Paper cones of loose leaf. A tin of hand-rolled cigarettes with the ends twisted shut. A brass lighter on a chain long enough to reach any customer and not one inch past them.
 >
 > He is talking to two people at once, and neither of them is you.
 >
@@ -40,7 +40,7 @@ Nicco runs [[La Gatta]], a vending board on the bottom tier of the Bridge in [[c
 
 He buys short batches and failed runs from [[Studio Orsini]] at a fraction of what a finished blend costs, twists them shut himself, and sells them at prices no licensed room in the city can match. When one burns wrong, he says so afterward, cheerfully, and offers the next one at a discount.
 
-**Roleplay Concept:** [[Halfling]] street vendor + dealer in rejected stock who built a gossip empire.
+**Roleplay Concept:** Halfling street vendor + dealer in rejected stock who built a gossip empire.
 
 **Opening move:** selling cigarettes under the arch · Nicco speaks first · "Seconds," he says. "Perfectly good seconds."
 

@@ -45,7 +45,7 @@ tier: supporting
 >
 > **[HB] Six-Point Grip.** The cat climbs sheer stone, a ship's side, or anything a rope could anchor to. It hauls up to 200 pounds up a wall, and a hit taken while climbing does not knock it off.
 >
-> **[HB] Never Fully Broke.** If the cat drops below half its hit points, or if a creature it holds goes still, its handler must succeed on a DC 15 [[Wisdom]] (Animal Handling) check as an action or the cat stops taking commands until the fight ends and hunts what it chooses.
+> **[HB] Never Fully Broke.** If the cat drops below half its hit points, or if a creature it holds goes still, its handler must succeed on a DC 15 Wisdom (Animal Handling) check as an action or the cat stops taking commands until the fight ends and hunts what it chooses.
 >
 > **Limitations:** one handler at a time, no barding, no saddle, and no space too tight for it to turn around in. It kills what it catches unless its handler stands over it.
 

@@ -60,6 +60,6 @@ A shipwrecked botanist planted Munai's orchard long ago. It has run wild ever si
 
 - Feral fruit trees: rows planted once in orderly lines now split the canopy into light and shade at random, fruit hanging in every stage of rot and ripeness so no branch reads as safe because the last one was.
 - Bramble understory: thorny vine chokes every gap between the rows, slowing a walk to a crawl and opening a hundred small cuts that never close clean.
-- [[rat|Rats]] and [[goat|feral goats]]: work the fallen fruit under the trees at dawn and dusk, and neither species seems to sicken on what it eats.
-- [[giant-wasp|Giant wasps]]: nest in the split trunks of the oldest trees, and their sting carries a slower version of whatever poison the fruit around them is steeping in that season.
-- [[violet-fungus|Violet fungus]]: grows low in the rot at the base of the oldest trees, close enough in color and shape to the orchard's own poisonous fruit that a forager who can't tell the difference finds out the hard way.
+- Rats and feral goats: work the fallen fruit under the trees at dawn and dusk, and neither species seems to sicken on what it eats.
+- Giant wasps: nest in the split trunks of the oldest trees, and their sting carries a slower version of whatever poison the fruit around them is steeping in that season.
+- Violet fungus: grows low in the rot at the base of the oldest trees, close enough in color and shape to the orchard's own poisonous fruit that a forager who can't tell the difference finds out the hard way.

@@ -33,7 +33,7 @@ relationships:
 |             |                                                        |
 | ----------- | ------------------------------------------------------ |
 | **Species** | [[Grung]] (Red Caste)                                      |
-| **Role**    | [[Ritual]] specialist, warlock; direct subordinate of [[simone-tabarnack]] |
+| **Role**    | Ritual specialist, warlock; direct subordinate of [[simone-tabarnack]] |
 | **Location**| [[Calveno Sewer Magazines]], primary detonation chamber, [[Mercatura]] collector system |
 
 > *"The circle is an invitation. What arrives cares nothing for your objections."*
@@ -51,7 +51,7 @@ Solange learned binding shapes from her patron. She calls this entity *le couran
 
 If the circle stands, Solange won't leave, knowing she is the key piece. If enemies break the circle, she runs, but if caught before the blast, she gives only her name and caste. **When she escapes:** she leaves only if the circle breaks before the blast (two rounds of chanting, or the garrison drops to 2). She blows the ceiling. She uses Dimension Door to reach the surface. She tells [[simone-tabarnack|Simone]] that enemies hit the main site, [[jean-claude-tabarnack|Jean-Claude]] helped them, and the summoning failed, so [[simone-tabarnack|Simone]] now knows someone works against her. If the ritual finishes, Solange stays and the entity takes her, and no one tells [[simone-tabarnack|Simone]] that [[jean-claude-tabarnack|Jean-Claude]] helped.
 
-## Stats & [[Combat]]
+## Stats & Combat
 
 ```statblock
 layout: Basic 5e Layout
@@ -103,14 +103,14 @@ When the crew reaches Solange, she's almost done. One hand rests on stone, the o
 
 After two full rounds of chanting or when the garrison drops to 2, she triggers the blast by speaking a magic word. Counterspell can't stop it. The circle shields Solange while others take fire. She finishes the ritual in the dust. [[otar-the-foul|Otar]] comes through her body and takes her.
 
-**Channeling:** [[Mirror Image]] is up (3 copies, each blocks one hit). She stays 10 ft from the circle (AC 15, good saves). Bright light spreads 10 ft.
+**Channeling:** Mirror Image is up (3 copies, each blocks one hit). She stays 10 ft from the circle (AC 15, good saves). Bright light spreads 10 ft.
 
 > [!mechanic]
-> **[[Reaction]]:** cast [[Counterspell]] or blast. If a caster hits the circle or her mind, Solange casts [[Counterspell]] (blocks level 3 or less, check for higher). She has two level 3 slots. Each spell costs half her power and this turn's blast. **Blast:** after two rounds of chanting or when the garrison hits 2, Solange says the word. Magic fuses blow. Counterspell can't stop it. The circle keeps her safe. Others take 8d6 fire and 4d6 crush (DEX/STR save, DC 16 to halve).
+> **Reaction:** cast Counterspell or blast. If a caster hits the circle or her mind, Solange casts Counterspell (blocks level 3 or less, check for higher). She has two level 3 slots. Each spell costs half her power and this turn's blast. **Blast:** after two rounds of chanting or when the garrison hits 2, Solange says the word. Magic fuses blow. Counterspell can't stop it. The circle keeps her safe. Others take 8d6 fire and 4d6 crush (DEX/STR save, DC 16 to halve).
 
 **[[Arrival]]:** after the blast, Solange finishes the chant as [[otar-the-foul]] comes through her with darkness and ice and change. The entity takes her and can't be undone.
 
-**If enemies disrupt the circle before detonation:** Solange loses the summoning but still detonates as a diversion. She escapes via [[Misty Step]] (break line of sight), then uses [[Dimension Door]] (to the surface). She won't die for a failed ritual.
+**If enemies disrupt the circle before detonation:** Solange loses the summoning but still detonates as a diversion. She escapes via Misty Step (break line of sight), then uses [[Dimension Door]] (to the surface). She won't die for a failed ritual.
 
 ## Connections
 
@@ -126,6 +126,6 @@ After two full rounds of chanting or when the garrison drops to 2, she triggers 
 
 **Session 06** (`vault/episodes/006/`). Solange chanted in the Primary Chamber, hands on stone. [[crissdalynn-khinriss|Crissdalynn]]'s Read the Current said, “the big one… Solange,” with low strength. [[ozzeth-the-twiceborn|Ozzeth]] (called Ozzy in play) protected her, warding the ritual. She spoke once: “I will not have my princesses stopped.”
 
-Mid-fight, [[ozzeth-the-twiceborn|Ozzeth]] held her shoulder, saying “you can do this,” and poured his red-and-blue power into her. Misty Step and [[Greater Invisibility]] flowed to her, keeping her from harm. Crissdalynn hit and poisoned her. Ozzeth fell in combat, his last act grabbing her shoulder again, saying “do it now.” (See [[ozzeth-the-twiceborn|Ozzeth]]'s own Session Log.)
+Mid-fight, [[ozzeth-the-twiceborn|Ozzeth]] held her shoulder, saying “you can do this,” and poured his red-and-blue power into her. Misty Step and Greater Invisibility flowed to her, keeping her from harm. Crissdalynn hit and poisoned her. Ozzeth fell in combat, his last act grabbing her shoulder again, saying “do it now.” (See [[ozzeth-the-twiceborn|Ozzeth]]'s own Session Log.)
 
 After his death she moved to [[catarina-davirelli|Catarina]] and spoke “Agni,” blowing the ceiling and finishing the ritual. Catarina tried to stop her and failed. The ritual's end brought [[otar-the-foul|Otar]]'s arrival.

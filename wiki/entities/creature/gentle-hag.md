@@ -79,11 +79,11 @@ actions:
 
 ### Coven Actions (requires 2 other hags within 30 ft.)
 
-- **Shared Spellcasting:** 3/day: [[Alarm]], [[Bless]], [[Calm Emotions]], [[Charm Person]]; 2/day: [[Beacon of Hope]], [[Counterspell]], [[Hallucinatory Terrain]], [[Haste]]; 1/day: [[Dominate Person]], [[Heroes' Feast]], [[Mass Cure Wounds]], [[Modify Memory]].
+- **Shared Spellcasting:** 3/day: Alarm, Bless, Calm Emotions, Charm Person; 2/day: Beacon of Hope, Counterspell, Hallucinatory Terrain, Haste; 1/day: Dominate Person, Heroes' Feast, Mass Cure Wounds, Modify Memory.
 - **Gentle Gaze:** Create a magic item (10,000 gp, 1 hour). User can see through it to read a target's deepest desire.
 
 > [!mechanic]
-> **Siphon Joy.** Sacrifice a [[Charmed]] thrall: DC 15 [[Constitution]] save (disadvantage if charmed 24+ hours). Deals half the thrall's max HP as force damage; each coven hag heals for one-third of this.
+> **Siphon Joy.** Sacrifice a Charmed thrall: DC 15 Constitution save (disadvantage if charmed 24+ hours). Deals half the thrall's max HP as force damage; each coven hag heals for one-third of this.
 
 ## Description
 
@@ -97,5 +97,5 @@ The Gentle Hag keeps to deep forest interior, well back from patrolled anchorage
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
-| Break a thrall's charm mid-fight ([[Remove Curse]], [[Greater Restoration]], or the hag's death) | Thrall still within 5 ft. of the hag when the charm breaks | The thrall's borrowed devotion collapses into real terror; it flees or turns on the hag outright, and Joyous Loyalty can no longer redirect attacks through it | [[jean-claude-tabarnack]] |
+| Break a thrall's charm mid-fight (Remove Curse, Greater Restoration, or the hag's death) | Thrall still within 5 ft. of the hag when the charm breaks | The thrall's borrowed devotion collapses into real terror; it flees or turns on the hag outright, and Joyous Loyalty can no longer redirect attacks through it | [[jean-claude-tabarnack]] |
 | Question a charmed thrall about the coven before Persistent Charm locks in | Thrall has been charmed under 24 hours | It answers warmly and completely, naming the other hags' haunts, before its borrowed loyalty catches up with what it just did | [[Midchain West]] |

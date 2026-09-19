@@ -54,5 +54,5 @@ No statblock recorded in the source. He never got to act. Killed in a single sim
 
 ## Session Log
 
-- **Session 01: boarding of the Saltwright.** Ambushed and killed descending into the hold. [[Poisoned]] arrow, musket blast, and shattered kneecap, all simultaneous. He never acted. `vault/episodes/001/transcript.md:29`.
+- **Session 01: boarding of the Saltwright.** Ambushed and killed descending into the hold. Poisoned arrow, musket blast, and shattered kneecap, all simultaneous. He never acted. `vault/episodes/001/transcript.md:29`.
 - **[[Session 02: conflict is a Surety]].** Referenced but not present. [[shepherd-grigori]] tells the crew he's dead and warns that Rupert Knighton will send ships. `vault/episodes/002/transcript.raw.md:49,92,107`.

@@ -39,7 +39,7 @@ tier: supporting
 ## Mechanics
 
 > [!mechanic]
-> **[HB] Cry (action).** The whistle holds 3 charges and regains all of them at dawn. Spend a charge and choose one creature within 30 feet that can hear you. It must succeed on a DC 13 [[Constitution]] saving throw or lose concentration on a spell it is maintaining, and it takes 1d4 thunder damage whether it saves or not.
+> **[HB] Cry (action).** The whistle holds 3 charges and regains all of them at dawn. Spend a charge and choose one creature within 30 feet that can hear you. It must succeed on a DC 13 Constitution saving throw or lose concentration on a spell it is maintaining, and it takes 1d4 thunder damage whether it saves or not.
 >
 > **Limitations:** no effect on a deafened creature, on anything immune to thunder damage, or on a creature that cannot hear over its own noise. Every blast carries roughly 300 feet, and everything hunting in that radius hears a wounded bird.
 

@@ -5,6 +5,11 @@ tags: []
 sources: []
 created: 2026-09-17
 updated: 2026-09-17
+type: lore
+lifecycle: proposed
+reveal: unrevealed
+summary: Folder index of Lore.
+base_confidence: 0.55
 ---
 
 - [[entities/lore/Aarakocra|Aarakocra]]
@@ -54,5 +59,6 @@ updated: 2026-09-17
 - [[entities/lore/two-grave-orders|Two-Grave Orders]]
 - [[entities/lore/Tyr|Tyr]]
 - [[entities/lore/Umberlee|Umberlee]]
+- [[entities/lore/v001-autonomy-probe|V001 Autonomy Probe]]
 - [[entities/lore/Valkur|Valkur]]
 - [[entities/lore/word-from-halewick|Word from Halewick]]

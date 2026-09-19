@@ -32,7 +32,7 @@ relationships:
 
 ![[Algernon Reginald Clyde Banner]]
 
-[[Gnome]] naturalist and author of Clyde's Bestiary of Oceanic Creatures, currently on an unwanted book tour through [[verdant-scatter|the Scatter]] promoting Volume II.
+Gnome naturalist and author of Clyde's Bestiary of Oceanic Creatures, currently on an unwanted book tour through [[verdant-scatter|the Scatter]] promoting Volume II.
 
 **Roleplay Concept**
 

@@ -41,7 +41,7 @@ The one thing on [[La Gatta]]'s board that is not stock, and the only fixture [[
 | Field | Detail |
 |---|---|
 | One thing | Once a day, a blend lit from its flame takes hold in a second willing creature within 5 feet as fully as in the smoker. |
-| Rarity justification | Above [[Pearl of Power]] (Uncommon, attunement, one recovered spell slot of 3rd level or lower each day) and under [[Ring of Spell Storing]] (Rare, attunement, holds and releases up to five levels of spells at a time). It duplicates a consumable somebody already paid for, once a day, and does nothing on its own. |
+| Rarity justification | Above Pearl of Power (Uncommon, attunement, one recovered spell slot of 3rd level or lower each day) and under Ring of Spell Storing (Rare, attunement, holds and releases up to five levels of spells at a time). It duplicates a consumable somebody already paid for, once a day, and does nothing on its own. |
 | Attunement reason | None. One power, no standing bonus to attack rolls, damage rolls, saving throws, or AC, so no branch of the attunement tree fires. |
 | PC connection | The crew's saves fail in pairs across the back line, and one blend covering one person leaves the other rolling flat. This is the only thing in [[calven-and-calveno]] that turns a single hour of cover into two. |
 | Current holder | Bolted to the board at [[La Gatta]]. Nicco named 1,800 gp for it once, late, and has not repeated the number since. |

@@ -88,7 +88,7 @@ legendary_actions:
 
 On initiative count 20, the Hierarch can use one of the following (no repeat in consecutive rounds):
 
-- [[Bloodied]] floor: spilled blood covers the area as magical difficult terrain until initiative count 20 on the next round.
+- Bloodied floor: spilled blood covers the area as magical difficult terrain until initiative count 20 on the next round.
 - Ancestral surge: all bloodline creatures (including the Hierarch) gain +1 to attacks and saving throws until initiative count 20 on the next round.
 - Family rally: all bloodline creatures move up to their speed immediately without provoking opportunity attacks.
 - Bloodline metamagic: the Hierarch can apply one metamagic option to any spell cast in the lair without expending uses until initiative count 20 on the next round.

@@ -69,11 +69,11 @@ actions:
 
 ## Description
 
-The largest hand on a [[pirate]] cutter's deck. The bosun carries a boarding axe in one hand and a hook on a line in the other, and everything about the way they move says "I have done this before and you have not." Their job is to pull a defender off balance and hold someone still long enough for the nimble hands to do the real work.
+The largest hand on a pirate cutter's deck. The bosun carries a boarding axe in one hand and a hook on a line in the other, and everything about the way they move says "I have done this before and you have not." Their job is to pull a defender off balance and hold someone still long enough for the nimble hands to do the real work.
 
 ## Ecology
 
-Pirate bosuns earn the role by surviving more boardings than anyone else in the crew. They work the same [[Midchain]] shipping lanes as the [[captains]] they serve, and between boardings they are the enforcer the crew answers to: settling disputes, assigning watches, keeping the hull sound. A bosun who cannot grapple a man in armour on a rolling deck does not keep the title long.
+Pirate bosuns earn the role by surviving more boardings than anyone else in the crew. They work the same [[Midchain]] shipping lanes as the captains they serve, and between boardings they are the enforcer the crew answers to: settling disputes, assigning watches, keeping the hull sound. A bosun who cannot grapple a man in armour on a rolling deck does not keep the title long.
 
 ## Toy Chest
 

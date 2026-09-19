@@ -60,6 +60,6 @@ Kwoss has one of the [[Midchain|Midchain]]'s largest sea turtle nesting grounds.
 
 - Salt scrub and wind-flattened pandanus crowd the strip behind the beach, thinning inland to open grass where the sand finally gives way to firmer ground.
 - Beach purslane threads through the dune grass in fat succulent mats. Boiled down, its leaves ease the itch of sand-flea bites, and locals sell the dried leaf at the same stalls where they trade turtle-watch shifts.
-- [[crab|Crabs]] work the tideline at low water, tearing into any nest a vulture has already broken open.
-- [[vulture|Vultures]] circle high over the nesting ground from first light, waiting for a nest to fail on its own before they drop.
+- Crabs work the tideline at low water, tearing into any nest a vulture has already broken open.
+- Vultures circle high over the nesting ground from first light, waiting for a nest to fail on its own before they drop.
 - [[reef-shark|Reef sharks]] cruise the shallows past the surf line on hatching nights, and a poacher wading out after a scattering brood risks losing fingers to one as readily as a local blade.

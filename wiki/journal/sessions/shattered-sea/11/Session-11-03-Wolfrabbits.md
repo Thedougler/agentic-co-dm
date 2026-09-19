@@ -9,6 +9,7 @@ updated: 2026-09-15
 type: session-prep
 kind: cliffhanger
 lifecycle: proposed
+base_confidence: 0.55
 reveal: unrevealed
 summary: A Spiguar's hunt cuts across the upriver trail; the party must clear the lane without becoming prey or losing the prints.
 campaign: shattered-sea

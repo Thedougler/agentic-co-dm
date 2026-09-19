@@ -36,15 +36,15 @@ As a Sea Elf, you have these special traits.
 
 **Child of the Sea.** Breathe air and water; resistance to cold damage.
 
-**[[Darkvision]].** 60 ft. Discern colors in darkness as shades of gray.
+**Darkvision.** 60 ft. Discern colors in darkness as shades of gray.
 
-**Fey Ancestry.** [[Advantage]] on saving throws to avoid or end the charmed condition.
+**Fey Ancestry.** Advantage on saving throws to avoid or end the charmed condition.
 
 **Friend of the Sea.** Communicate simple ideas to any Beast with a swimming speed.
 
-**Keen Senses.** [[Proficiency]] in the Perception skill.
+**Keen Senses.** Proficiency in the Perception skill.
 
-**Trance.** No need to sleep; cannot be magically put to sleep. [[Long rest]] requires 4 hours of trance. End of trance: gain two proficiencies (weapon or tool) from elven memory, retained until next long rest.
+**Trance.** No need to sleep; cannot be magically put to sleep. Long rest requires 4 hours of trance. End of trance: gain two proficiencies (weapon or tool) from elven memory, retained until next long rest.
 
 **Languages.** Common plus one additional language.
 

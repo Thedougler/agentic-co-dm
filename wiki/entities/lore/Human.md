@@ -34,7 +34,7 @@ Humans are the multiverse's most physically and culturally varied people; as a H
 
 **Life Span.** Humans live roughly 80 years.
 
-**Resourceful.** You gain [[Heroic Inspiration]] whenever you finish a [[Long Rest]].
+**Resourceful.** You gain Heroic Inspiration whenever you finish a Long Rest.
 
 **Skillful.** You gain proficiency in one skill of your choice.
 

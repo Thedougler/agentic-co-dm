@@ -35,14 +35,14 @@ tier: supporting
 >
 > Hold it a while and the bulb warms in your hand faster than your hand should be warming it.
 
-_[[Weapon]] (Arrow), Uncommon._
+_Weapon (Arrow), Uncommon._
 
 [[ettore-lupo]] moves more of these out of the felt-lined drawer beneath his till at [[Casa Lupo]] than the other four shafts combined. People who work nights buy them.
 
 | Field | Detail |
 |---|---|
 | One thing | It fills a fifteen-foot ball of air with smoke nobody can see through, at whatever distance a bow reaches. |
-| Rarity justification | Cover that stays put, where [[Dust of Disappearance]] hides bodies and [[Dust of Sneezing and Choking]] disables them. |
+| Rarity justification | Cover that stays put, where Dust of Disappearance hides bodies and Dust of Sneezing and Choking disables them. |
 | Attunement reason | A lone power, gone in one shot, adding nothing to attack, damage, save, or AC rolls. The attunement tree never opens. |
 | PC connection | Removes a watcher's sightline without giving [[jean-claude-tabarnack|Jean-Claude]] a target. |
 | Current holder | [[ettore-lupo]], in the drawer beneath the till at [[Casa Lupo]]. |
@@ -65,4 +65,4 @@ _[[Weapon]] (Arrow), Uncommon._
 
 Compounded by [[marta-orsini]] at [[Studio Orsini]]. She uses the same lamp-black she sells to sign painters. She packs it into fired clay and pins it to a shaft turned from [[Carpenters' Slip]] offcuts. [[ettore-lupo]] stocks them at [[Casa Lupo]]. He keeps them in the bottom of the drawer, wrapped. A cracked one in a warm room is everybody's problem.
 
-[[prospero-morsani]] also had a quiver of these on his shelves at [[the Cabinet of Morsani]], Session 8, priced at 150 gold. Confirmed: [[Transcript]].
+[[prospero-morsani]] also had a quiver of these on his shelves at [[the Cabinet of Morsani]], Session 8, priced at 150 gold. Confirmed: Transcript.

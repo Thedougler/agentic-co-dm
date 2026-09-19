@@ -33,7 +33,7 @@ tier: supporting
 
 *Wondrous item, common.*
 
-One stone of a paired *[[sending]]* stone set. Speaking to this stone reaches only its twin, held by [[nona-black-jaw]]. No charges, range limits, or activation rules are recorded on this page beyond that narrative pairing.
+One stone of a paired *sending* stone set. Speaking to this stone reaches only its twin, held by [[nona-black-jaw]]. No charges, range limits, or activation rules are recorded on this page beyond that narrative pairing.
 
 ## At a Glance
 

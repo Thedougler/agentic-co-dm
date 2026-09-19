@@ -53,10 +53,10 @@ world, not rumor or hearsay.
 
 > [!mechanic]
 > **Tradition:** Primal.
-> **Spell analogue:** [[Geas]] (SRD) — the compulsion binds a specific spoken instruction rather than a broad directive.
+> **Spell analogue:** Geas (SRD) — the compulsion binds a specific spoken instruction rather than a broad directive.
 > **Homebrew element:** Targets repeat the given words verbatim and indefinitely; no paraphrase is possible.
-> **[[Detect Magic]]:** nothing — Primal biology; no aura registers.
-> **[[Counterspell]]:** no — Primal tradition; the compulsion persists after the moment of activation.
+> **Detect Magic:** nothing — Primal biology; no aura registers.
+> **Counterspell:** no — Primal tradition; the compulsion persists after the moment of activation.
 
 **Toy Chest**
 

@@ -32,7 +32,7 @@ tier: supporting
 | Field | Value |
 |---|---|
 | One thing | Drinking this potion always heals 1d6 hit points and always leaves the drinker talking uncontrollably for 1 hour. A failed Constitution save also triggers one random potion effect rolled fresh from a d6 table. Every dose is a guaranteed heal wrapped in an unpredictable gamble, never just a plain healing potion. |
-| Rarity justification | Uncommon: the guaranteed 1d6 healing alone would be closer to Common (matching [[Potion of Healing]] (Common)), but the attached random effect draws from a table that includes real Uncommon-tier potion effects ([[Potion of Growth]], [[Potion of Poison]], and others), so the item as a whole sits at Uncommon to match its strongest possible outcome. |
+| Rarity justification | Uncommon: the guaranteed 1d6 healing alone would be closer to Common (matching Potion of Healing (Common)), but the attached random effect draws from a table that includes real Uncommon-tier potion effects (Potion of Growth, Potion of Poison, and others), so the item as a whole sits at Uncommon to match its strongest possible outcome. |
 | Attunement reason | Potions never require attunement per SRD convention (single-use items, applied and spent immediately). This matches every potion in the vault. |
 | PC connection | [[delmar-fisk]] carries one, slipped into his coat by [[lavinia-sordi]] along with a way to reach her directly. Each future use is a 1d6 gamble, not just a guaranteed heal. |
 | Current holder | [[lavinia-sordi]] keeps vials stocked at [[la-cenere]]; [[delmar-fisk]] carries one in his coat. |
@@ -47,17 +47,17 @@ tier: supporting
 >
 > **Limitations:** the drinker cannot choose or reroll the random effect, and cannot suppress the hour of compulsive talking once it starts. The potion doesn't scale with the drinker's level. Nothing about this potion reads as anything other than a plain healing draught before it's drunk.
 
-> [!check] [[Constitution]] Save — The Second Effect
+> [!check] Constitution Save — The Second Effect
 > DC 11. The drinker rolls immediately after drinking.
 > **Success:** the drinker gets the healing and the talking, nothing else.
 > **Failure:** roll a d6 and apply the matching potion effect in full, exactly as written on that potion's own page (table below).
 
-1. [[Potion of Climbing]]
-2. [[Potion of Animal Friendship]]
-3. [[Potion of Growth]]
-4. [[Potion of Resistance]] (roll or choose the damage type per that potion's own text)
-5. [[Potion of Water Breathing]]
-6. [[Potion of Poison]], whose own save never re-triggers, since rolling this result already counts as the failure.
+1. Potion of Climbing
+2. Potion of Animal Friendship
+3. Potion of Growth
+4. Potion of Resistance (roll or choose the damage type per that potion's own text)
+5. Potion of Water Breathing
+6. Potion of Poison, whose own save never re-triggers, since rolling this result already counts as the failure.
 
 ## Provenance
 

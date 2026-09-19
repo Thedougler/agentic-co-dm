@@ -43,7 +43,7 @@ Deck notes from the *Warrant*:
 
 - **Weather Deck.** Helm and binnacle aft. Belfry and capstan amidships. Swivel guns cover bow and stern. Cannon (twelve total) below with hinged covers. Crown pennant flies from the masthead.
 - **Captain's Cabin and Officers.** Stern cabin (full width) with chart table and papers. Lockable iron locker inside. Officer cabins (three) forward. Rating officer's desk amidships for paperwork.
-- **Crew Quarters.** Hammocks (twenty) on the lower forward deck. [[Galley]] with copper range amidships.
+- **Crew Quarters.** Hammocks (twenty) on the lower forward deck. Galley with copper range amidships.
 - **Below the Waterline.** Magazine aft (two keys: Ault and [[Harwick]] Admiralty). Cargo hold for seized goods awaiting judgment. Prisoner hold with iron grating and six cages.
 
 > [!mechanic]
@@ -58,8 +58,8 @@ Deck notes from the *Warrant*:
 | **Decks** | 3 |
 | **Hull Points** | 210 |
 | **Hull AC** | 12 |
-| **[[Condition]]** | Pristine |
-| **[[Speed]] (good wind)** | 80 miles/day |
+| **Condition** | Pristine |
+| **Speed (good wind)** | 80 miles/day |
 | **Speed (poor wind)** | 40 miles/day |
 | **Maneuverability** | Average |
 | **Profile** | High (visible at distance) |
@@ -76,7 +76,7 @@ Deck notes from the *Warrant*:
 |---|---|---|
 | Magazine and arms locker | Weapons Locker | 1 |
 | Officer charts and navigation | Chart Archive | 2 |
-| Captain's cabin | Helm and [[Command]] | 1 |
+| Captain's cabin | Helm and Command | 1 |
 | Crew berths and galley | Crew Berths | 1 |
 
 Installed: 5 units. Open: 3 units. Special slot: 1 available.

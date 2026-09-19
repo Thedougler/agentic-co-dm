@@ -41,7 +41,7 @@ A run [[Studio Orsini]] bound with the wrong fixative, which took the scent out 
 | Field | Detail |
 |---|---|
 | One thing | For 1 hour after lighting, nobody who sees the smoker can afterward describe, name, or pick them out. |
-| Rarity justification | Under [[Hat of Disguise]] (Uncommon, attunement, at-will [[Disguise Self]] every hour the wearer keeps it on) and under [[Cloak of Elvenkind]] (Uncommon, free of an attunement slot, a standing penalty on every attempt to see the wearer). Single use, one hour, and a watcher who keeps looking sees everything. |
+| Rarity justification | Under Hat of Disguise (Uncommon, attunement, at-will Disguise Self every hour the wearer keeps it on) and under Cloak of Elvenkind (Uncommon, free of an attunement slot, a standing penalty on every attempt to see the wearer). Single use, one hour, and a watcher who keeps looking sees everything. |
 | Attunement reason | None. Single use, one power, no bonus to attack rolls, damage rolls, saving throws, or AC. |
 | PC connection | [[jean-claude-tabarnack]] reads [[Grung]] handler stances in the crowd and knows the reading runs both ways. Buying anything on [[the Bridge]]'s bottom tier happens in the most-watched twenty feet in [[calven-and-calveno]]. |
 | Current holder | Board stock at [[La Gatta]], sold at 90 gp under the Seconds discount, and [[nicco-kettley]] never asks who wants one or why. |

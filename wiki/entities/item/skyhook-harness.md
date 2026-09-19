@@ -41,7 +41,7 @@ tier: supporting
 > [!mechanic]
 > **[HB] Fly rigged.** Fitting the harness to a willing or trained flying beast of Large size takes 10 minutes. A Medium or smaller rider clipped into the shoulder hooks does not reduce the beast's flying speed and does not count against its carrying capacity. The rider has half cover against attacks from directly below and can use both hands freely.
 >
-> **[HB] Locked in.** While clipped, the rider cannot be knocked off the mount by an attack, a shove, or the mount's own maneuvering, and is not thrown when the mount is knocked prone in the air. Unclipping takes a bonus action from the rider or a DC 15 [[Strength]] (Athletics) check from anyone else.
+> **[HB] Locked in.** While clipped, the rider cannot be knocked off the mount by an attack, a shove, or the mount's own maneuvering, and is not thrown when the mount is knocked prone in the air. Unclipping takes a bonus action from the rider or a DC 15 Strength (Athletics) check from anyone else.
 >
 > **Limitations:** flying beasts of Large size only, one rider, and the rider goes down with the mount. A clipped rider who wants free of a falling animal spends the bonus action first.
 

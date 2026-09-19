@@ -33,7 +33,7 @@ tier: supporting
 | Field | Detail |
 |---|---|
 | One thing | Keeps tar at working temperature for 8 hours with no open flame — hull repairs at sea, in rain, in the dark. |
-| Rarity justification | Non-magical alchemical tool. Comparable to [[Alchemist's Fire]] (50 gp) in alchemical complexity but narrower in use — it heats tar, nothing else. Common. |
+| Rarity justification | Non-magical alchemical tool. Comparable to Alchemist's Fire (50 gp) in alchemical complexity but narrower in use — it heats tar, nothing else. Common. |
 | Attunement reason | Non-magical, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
 | PC connection | Any crew maintaining a ship at sea needs workable tar without the risk of an open brazier on a wooden deck. |
 | Current holder | [[cotter-foss]] sells these from the rail of the [[nimmik-vollask]]. The gnomes make the heating elements below decks. |

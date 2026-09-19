@@ -14,7 +14,7 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "A faction operating ships in or near [[calveno|Calveno]]. Known to [[nona-black-jaw|Nona Black-Jaw]] and the [[black-jaw-run|Black-Jaw Run]] as a group that takes [[rattkin|Rattkin]]. When [[perrin"
+summary: "Calveno-area ship faction that takes Rattkin; Nona assumed they had Perrin when he missed check-in."
 provenance:
   extracted: 0.85
   inferred: 0.10

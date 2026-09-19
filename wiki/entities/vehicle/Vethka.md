@@ -44,7 +44,7 @@ In reef country, nothing with a keel can catch a *Vethka*. [[Grung]] Standing Le
 
 | | |
 |---|---|
-| **Tier** | 1 ([[Speed]]-Built) |
+| **Tier** | 1 (Speed-Built) |
 | **Hull Points** | 70 |
 | **Hull AC** | 11 |
 | **Maneuverability** | Superior |

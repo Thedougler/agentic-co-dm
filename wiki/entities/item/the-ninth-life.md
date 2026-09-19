@@ -41,7 +41,7 @@ An intact first run out of [[Studio Orsini]], not a second, not board stock, and
 | Field | Detail |
 |---|---|
 | One thing | For 1 hour after lighting, the first saving throw the smoker fails becomes a success instead. |
-| Rarity justification | Under [[Ring of Evasion]] (Rare, attunement, three charges, each turning a failed [[Dexterity]] save into a success, recharging daily) and level with [[Potion of Heroism]] (Rare, single-use consumable, an hour of real combat benefit, no attunement). One save, any kind, once, then gone for good. |
+| Rarity justification | Under Ring of Evasion (Rare, attunement, three charges, each turning a failed Dexterity save into a success, recharging daily) and level with Potion of Heroism (Rare, single-use consumable, an hour of real combat benefit, no attunement). One save, any kind, once, then gone for good. |
 | Attunement reason | None. Single use, one power, and no standing bonus to attack rolls, damage rolls, saving throws, or AC. |
 | PC connection | The crew's mind saves are close to unprotected across four of the five, so the roll that ends a fight for them is a save, not a hit. This is the only thing in [[calven-and-calveno]] that answers a specific save nobody at the table wants to roll. |
 | Current holder | Held under the board at [[La Gatta]] for a buyer who has not come back for it, and Nicco names 1,200 gp to anyone who asks. |
@@ -63,7 +63,7 @@ Edge cases:
 - It fires on the first failed save of any kind, chosen by nothing. A smoker cannot hold it back for a save they would rather spend it on.
 - A second one lit inside the hour does nothing until the first has fired.
 
-**Limitations:** it never touches an attack roll, an ability check, or [[death saving throws]], and it grants no bonus to any save it does not outright replace. Once it fires, the hour ends with it.
+**Limitations:** it never touches an attack roll, an ability check, or death saving throws, and it grants no bonus to any save it does not outright replace. Once it fires, the hour ends with it.
 
 ## Provenance
 

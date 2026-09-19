@@ -46,7 +46,7 @@ Sold for the last scene of a play nobody in [[calven-and-calveno]] stages any mo
 | Current holder | [[Fio]], in a bowl at the counter's near end. |
 | Narrative hook | 60 gp a twist, and Fio counts how many leave in one sale. |
 
-Common tier holds. [[Magic Item Rarity]] prices Common goods at 100 gp, and a single-use screen at 60 gp sits under that. The effect matches _[[fog cloud]]_ cast at 1st level, stripped of concentration and of the caster's ability to move it, which is the trade a scroll of the same spell does not make.
+Common tier holds. Magic Item Rarity prices Common goods at 100 gp, and a single-use screen at 60 gp sits under that. The effect matches _fog cloud_ cast at 1st level, stripped of concentration and of the caster's ability to move it, which is the trade a scroll of the same spell does not make.
 
 ## Mechanics
 

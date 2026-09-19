@@ -32,7 +32,7 @@ tier: supporting
 
 ## Mechanics
 
-**Seated authority [HB].** The seated occupant has advantage on [[Charisma]] saving throws and Charisma checks. The occupant keeps the benefit only while seated. It ends when the occupant stands or leaves the chair.
+**Seated authority [HB].** The seated occupant has advantage on Charisma saving throws and Charisma checks. The occupant keeps the benefit only while seated. It ends when the occupant stands or leaves the chair.
 
 **Limitations.** Grants no benefit to anyone not seated in the chair. Confers no other property beyond its indestructibility.
 

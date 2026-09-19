@@ -40,8 +40,8 @@ One of the blends [[rufio-segalla]] keeps on the shelf at [[La Brace]], named fo
 
 | Field | Detail |
 |---|---|
-| One thing | For 1 hour after lighting, the smoker rolls [[Initiative]] with advantage. |
-| Rarity justification | Below [[Sentinel Shield]] (Uncommon, permanent advantage on Initiative and [[Perception]], attunement required) and level with [[Cloak of Elvenkind]] (Uncommon, situational advantage, worn without attunement). Single use, one hour, one roll. |
+| One thing | For 1 hour after lighting, the smoker rolls Initiative with advantage. |
+| Rarity justification | Below Sentinel Shield (Uncommon, permanent advantage on Initiative and Perception, attunement required) and level with Cloak of Elvenkind (Uncommon, situational advantage, worn without attunement). Single use, one hour, one roll. |
 | Attunement reason | None. Single use, one power, no bonus to attack rolls, damage rolls, saving throws, or AC, and Initiative counts as an ability check. |
 | PC connection | [[delmar-fisk]] carries the crew's damage in the opening round and loses it the moment something else moves first. |
 | Current holder | Shelf stock at [[La Brace]], sold across the counter to anyone who walks in. |
@@ -59,7 +59,7 @@ The hour runs from that first breath, fight or no fight. Lighting the cigarette 
 
 Edge cases:
 
-- The advantage applies to the Initiative roll alone, never to any other [[Dexterity]] check.
+- The advantage applies to the Initiative roll alone, never to any other Dexterity check.
 - A smoker who cannot roll Initiative at all, because they are unconscious when combat begins, gains nothing from it.
 - The effect does not transfer with the cigarette. Passing a lit one to a second smoker gives that smoker nothing.
 

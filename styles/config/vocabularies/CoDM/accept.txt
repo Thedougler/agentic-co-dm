@@ -1,17 +1,17 @@
 # Generated from live wiki page titles and aliases.
 # Do not hand-edit; wiki-lint refreshes this Vale vocabulary.
-01
-02
-03
-04
-05
-06
-07
-08
-09
-10
-11
-12
+01-index
+02-index
+03-index
+04-index
+05-index
+06-index
+07-index
+08-index
+09-index
+10-index
+11-index
+12-index
 A Sliver of the Unstable Form
 a-sliver-of-the-unstable-form
 Aarakocra
@@ -206,6 +206,8 @@ Black
 Black Lotus
 Black Lotus Heart
 Black-Jaw
+Black-Jaw Run
+black-jaw-run
 black-lotus
 black-lotus-heart
 Blackrail
@@ -275,6 +277,7 @@ Calven
 Calven and Calveno
 calven-and-calveno
 Calveno
+calveno
 Cambrey's
 Cambrey's Fold
 cambreys-fold
@@ -436,6 +439,7 @@ Cradle
 Cradle Reef
 cradle-reef
 Creature
+creature-index
 Creatures
 Crench
 Crestwall
@@ -576,6 +580,7 @@ Ensign
 Ensign Wouters
 ensign-wouters
 Entities
+entities-index
 Enzo
 Essa
 Essa Two-Tooth
@@ -589,6 +594,7 @@ Eyrie
 Eyries
 Faas
 Face
+faction-index
 Factions
 Factor
 False
@@ -630,9 +636,11 @@ Fid
 Fieschi
 Fifita
 Fig
+Fio
 Fio's
 Fio's Own Curtain
 Fioravante
+Fioravante "Fio" Selmerin
 Fioravante Selmerin
 fioravante-selmerin
 fios-own-curtain
@@ -649,7 +657,6 @@ Fisk
 Fisk's
 Fisk's Captains
 Fisk's Fleet
-fisks-captains
 fisks-fleet
 Five
 Five Blades
@@ -918,6 +925,7 @@ Isle
 Isles
 Istishia
 It
+item-index
 Items
 Ithera
 Jean-Claude
@@ -925,6 +933,7 @@ Jean-Claude Tabarnack
 jean-claude-tabarnack
 Jesses
 Journal
+journal-index
 Kahurangi
 Kailani
 Kalash
@@ -1039,9 +1048,11 @@ long-reach
 long-sight
 long-sight-hunt
 Lore
+lore-index
 Lost
 Lotus
 Loud
+Loud Argument
 Low
 Low Lamp
 low-lamp
@@ -1112,6 +1123,7 @@ Merchant's
 Meth-Var
 Mid-Works
 Midchain
+Midchain West
 midchain-east
 midchain-north
 midchain-south
@@ -1199,6 +1211,7 @@ norrington-kingsly
 Northern
 Northern Midchain
 Notes
+npc-index
 Obedience
 Offering
 Oil
@@ -1268,6 +1281,7 @@ Ozvok
 Ozvok, the Vermillion Distiller
 ozvok-the-vermillion-distiller
 Ozzeth
+Ozzeth the Twiceborn
 Ozzeth, the Twiceborn
 ozzeth-the-twiceborn
 Packet
@@ -1284,6 +1298,7 @@ Passage
 Passing
 Passing Bank
 Paulo
+pc-index
 Pearl
 Pearl of Souls
 Pearl signal across the boundary
@@ -1327,6 +1342,7 @@ Pit-Broke
 Pit-Broke Blink Dog
 pit-broke-blink-dog
 Placard
+place-index
 Places
 Plane
 Player
@@ -1373,6 +1389,7 @@ pursue-the-grung-raiding-fleet
 Python
 Quackers
 Queen
+quest-index
 Quests
 Quiet
 Quiet Forest
@@ -1431,6 +1448,7 @@ Refit
 Reginald
 Reginald Fenn
 reginald-fenn
+region-index
 Regions
 Reinforced
 Reinforced Specimen Cage
@@ -1601,16 +1619,27 @@ Serin
 Serin Haut
 serin-haut
 Session
+Session 01
 Session 01 - Recap
+Session 02
 Session 02 - Recap
+Session 03
 Session 03 - Recap
+Session 04
 Session 04 - Recap
+Session 05
 Session 05 - Recap
+Session 06
 Session 06 - Recap
+Session 07
 Session 07 - Recap
+Session 08
 Session 08 - Recap
+Session 09
 Session 09 - Recap
+Session 10
 Session 10 - Recap
+Session 11
 Session 11 - Recap
 Session 11 assets
 Session 11 — Aftermath
@@ -1624,6 +1653,7 @@ Session 11 — The farthest camp
 Session 11 — Theft on the watch
 Session 11 — Torn Crossing hunt
 Session 11 — What they ate
+Session 12
 Session 12 — Grass Without Wind
 Session 12 — River Slack Reprise
 Session 12 — The Dead Keep Orders
@@ -1666,6 +1696,7 @@ Session-12-06-What-Is-Chosen
 Session-12-07-The-Guava-and-the-Spinner
 Session-12-08-Toward-the-Memorial
 Sessions
+sessions-index
 Shard
 Shark
 Sharpener
@@ -1673,7 +1704,9 @@ Shattered
 Shattered Sea
 Shattered Sea - Tone Guide
 Shattered Sea Pantheon
+Shattered Sea sessions
 shattered-sea
+shattered-sea-index
 shattered-sea-pantheon
 shattered-sea-tone-guide
 Shelf
@@ -1860,6 +1893,7 @@ Suryo
 Suryo Wibowo
 suryo-wibowo
 Synthesis
+synthesis-index
 Syranita
 Tabarnack
 Tabaxi
@@ -1912,6 +1946,7 @@ tessarine-courier-silkvane
 tessarine-factor-amberreach
 tessarine-trade-house
 Thassos
+The \*Dead Lady\*
 The Anchorless
 The Aruhe Wreck
 The Bad Receipt
@@ -2146,11 +2181,13 @@ Vashu
 Vashu the Weeping Veil
 Vashu the Weeping Veil \(Winded\)
 vashu-the-weeping-veil
+vashu-the-weeping-veil \(Winded\)
 vashu-the-weeping-veil-winded
 Vask
 Vault
 Vault of the First Factor
 vault-of-the-first-factor
+vehicle-index
 Vehicles
 Veil
 Vel
@@ -2286,6 +2323,7 @@ Work - Flying Boots provenance
 Work - Malone regeneration
 Work - Snakewood creature vs hazard
 work-flying-boots-provenance
+work-index
 work-malone-regeneration
 work-snakewood-creature-vs-hazard
 Working

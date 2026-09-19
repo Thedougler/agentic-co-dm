@@ -37,7 +37,7 @@ tier: supporting
 | Field | Detail |
 |---|---|
 | One thing | Advantage on rope-work checks — splicing, knotting, and repairing cordage. |
-| Rarity justification | Non-magical tool, comparable to [[Thieves' Tools]] (25 gp) in specificity but narrower in application. Grants advantage on one skill use, no attack/damage/save/AC bonus. Common. |
+| Rarity justification | Non-magical tool, comparable to Thieves' Tools (25 gp) in specificity but narrower in application. Grants advantage on one skill use, no attack/damage/save/AC bonus. Common. |
 | Attunement reason | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
 | PC connection | Any PC working rigging, setting anchors, or binding prisoners benefits from better rope work. |
 | Current holder | [[cotter-foss]] sells these from the rail of the [[nimmik-vollask]]. The gnomes make them below decks. |

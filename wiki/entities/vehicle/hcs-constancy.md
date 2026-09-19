@@ -55,8 +55,8 @@ The ship inspects vessels in Crown waters. It checks hull records, cargo lists, 
 | **Decks** | 2 gun decks + weather deck |
 | **Hull Points** | 390 |
 | **Hull AC** | 13 |
-| **[[Condition]]** | Good |
-| **[[Speed]] (good wind)** | 65 miles/day |
+| **Condition** | Good |
+| **Speed (good wind)** | 65 miles/day |
 | **Speed (poor wind)** | 30 miles/day |
 | **Maneuverability** | Average |
 | **Profile** | Large |

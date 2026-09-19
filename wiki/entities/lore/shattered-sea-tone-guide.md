@@ -24,7 +24,7 @@ tier: supporting
 ---
 # Shattered Sea - Tone Guide
 
-*DM/agent-facing craft guidance for narrating characters and scenes, not player-known content, and not a content boundary (see [[Lines and Veils]] for those).*
+*DM/agent-facing craft guidance for narrating characters and scenes, not player-known content, and not a content boundary (see Lines and Veils for those).*
 
 ## The Fact
 
@@ -47,4 +47,4 @@ Core equation: high competence trapped inside low emotional maturity. Real dange
 
 **Agent application:** the default NPC dialogue register is status-testing and guarded about real needs. Default scene energy comes from competent professionals sabotaged by interpersonal baggage. Comedy comes from character flaws, never from making the world itself silly: the sea and its monsters remain dangerous, while the people are the disasters.
 
-This guidance governs narrative style and carries no overlap with [[Lines and Veils]], which sets hard content boundaries (self-harm, hanging, sex), not tone.
+This guidance governs narrative style and carries no overlap with Lines and Veils, which sets hard content boundaries (self-harm, hanging, sex), not tone.

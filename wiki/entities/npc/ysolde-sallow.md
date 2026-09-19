@@ -2,6 +2,7 @@
 title: "Ysolde Sallow"
 aliases:
   - Ysolde Sallow
+  - Ysolde
 category: entities
 tags: [shattered-sea, npc]
 sources:

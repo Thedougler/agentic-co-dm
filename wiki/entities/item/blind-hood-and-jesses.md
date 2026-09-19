@@ -38,7 +38,7 @@ tier: supporting
 
 ## Mechanics
 
-**[HB] Hood (action).** Fit the hood over the head of a beast that is restrained, incapacitated, or willing. While hooded, the beast is blinded and goes quiet: it will not attack unless it is damaged or an adjacent creature is grappling it, and [[Wisdom]] (Animal Handling) checks made to lead, load, or calm it have advantage. The jesses hobble its legs, halving its speed.
+**[HB] Hood (action).** Fit the hood over the head of a beast that is restrained, incapacitated, or willing. While hooded, the beast is blinded and goes quiet: it will not attack unless it is damaged or an adjacent creature is grappling it, and Wisdom (Animal Handling) checks made to lead, load, or calm it have advantage. The jesses hobble its legs, halving its speed.
 
 **Limitations:** beasts of CR 2 or lower, Large or smaller, and nothing with hands. A beast that takes damage while hooded thrashes free at the end of its next turn. No effect on a creature that can speak.
 

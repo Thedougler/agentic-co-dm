@@ -39,4 +39,4 @@ tier: supporting
 
 ## Session Log
 
-- **Session 08** (`vault/episodes/008/`). Capsized his gondola near the Mercatura; rescued by [[crissdalynn-khinriss|Crissdalynn]], [[perrin-black-jaw|Perrin]], and [[delmar-fisk|Delmar]]. Confirmed: [[Transcript]].
+- **Session 08** (`vault/episodes/008/`). Capsized his gondola near the Mercatura; rescued by [[crissdalynn-khinriss|Crissdalynn]], [[perrin-black-jaw|Perrin]], and [[delmar-fisk|Delmar]]. Confirmed: Transcript.

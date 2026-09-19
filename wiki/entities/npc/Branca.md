@@ -58,8 +58,8 @@ Umberlee used Branca as a vessel, snapped her neck before witnesses, and brought
 
 > [!mechanic]
 > **Tradition:** Divine. **School:** Necromancy.
-> **[[Detect Magic]]:** Divine, Necromancy — a seawater cold behind the sternum that does not warm, the trace of a god who has passed through a body and left the door open.
-> **[[Counterspell]]:** not applicable — both the possession and the resurrection are direct deity action, not cast spells.
+> **Detect Magic:** Divine, Necromancy — a seawater cold behind the sternum that does not warm, the trace of a god who has passed through a body and left the door open.
+> **Counterspell:** not applicable — both the possession and the resurrection are direct deity action, not cast spells.
 
 ## Stats & Combat
 

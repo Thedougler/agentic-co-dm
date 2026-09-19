@@ -2,6 +2,7 @@
 title: "The Loud Argument"
 aliases:
   - The Loud Argument
+  - Loud Argument
 category: entities
 tags: [shattered-sea, vehicle]
 sources:

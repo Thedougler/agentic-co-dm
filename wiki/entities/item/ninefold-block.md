@@ -39,7 +39,7 @@ _Wondrous Item, Rare._
 | Field | Detail |
 |---|---|
 | One thing | One person on the line hauls what nine of them could. |
-| Rarity justification | Sits above [[Immovable Rod]] (uncommon, one 8,000-pound anchor point, no lifting at all) and beside [[Belt of Giant Strength]] (rare and up, which raises every [[Strength]] roll the wearer makes, attack rolls included). This raises nothing but haulage through a rove line, and no fight has room for it. |
+| Rarity justification | Sits above Immovable Rod (uncommon, one 8,000-pound anchor point, no lifting at all) and beside Belt of Giant Strength (rare and up, which raises every Strength roll the wearer makes, attack rolls included). This raises nothing but haulage through a rove line, and no fight has room for it. |
 | Attunement reason | No attack, damage, AC, or save modifier, and it changes no roll the holder makes with their own hands. The attunement tree has no branch for it. |
 | PC connection | The crew keeps _[[Uncertainty]]_ in and out of dry dock at [[La Vasca]], where the yard sets its day rate by what its own gangs have to lift. |
 | Current holder | [[giacomo-moretti]], on the high rail above the counter at [[Moretti & Sons Chandlery]]. |

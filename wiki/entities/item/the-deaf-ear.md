@@ -40,8 +40,8 @@ Shelf stock at [[La Brace]], and the blend regulars buy on the way into a meetin
 
 | Field | Detail |
 |---|---|
-| One thing | For 1 hour after lighting, the smoker has advantage on [[Charisma]] saving throws. |
-| Rarity justification | Level with [[Elixir of Health]] (Uncommon, single use, cures blindness, deafness, disease, and poison outright) and [[Cloak of Elvenkind]] (Uncommon, one situational advantage, worn without attunement); under [[Potion of Heroism]], which is Rare and grants a flat bonus to every save for an hour. |
+| One thing | For 1 hour after lighting, the smoker has advantage on Charisma saving throws. |
+| Rarity justification | Level with Elixir of Health (Uncommon, single use, cures blindness, deafness, disease, and poison outright) and Cloak of Elvenkind (Uncommon, one situational advantage, worn without attunement); under Potion of Heroism, which is Rare and grants a flat bonus to every save for an hour. |
 | Attunement reason | None. Single use, one power, and advantage on one ability's saves, leaving the other five untouched. |
 | PC connection | [[jean-claude-tabarnack]] saves at CHA -1, and his cover ends the first time something reaches past it and takes hold of him. |
 | Current holder | Shelf stock at [[La Brace]], sold across the counter to anyone who walks in. |
@@ -59,11 +59,11 @@ The blend reaches nobody but the smoker and forces no save of its own. Lighting 
 
 Edge cases:
 
-- The advantage covers Charisma saves alone. The smoker rolls Charisma checks flat, [[Persuasion]] and [[Deception]] included.
+- The advantage covers Charisma saves alone. The smoker rolls Charisma checks flat, Persuasion and Deception included.
 - It ends no effect already on the smoker. A charm landed before the first breath lasts out its full duration.
 - A second Deaf Ear inside the hour does nothing, and a lit one passed to another smoker carries nothing with it.
 
-**Limitations:** no bonus to attack rolls, damage rolls, AC, or any save outside Charisma, no immunity to the [[charmed]] or [[frightened]] conditions, and no protection for anyone standing next to the smoker.
+**Limitations:** no bonus to attack rolls, damage rolls, AC, or any save outside Charisma, no immunity to the charmed or frightened conditions, and no protection for anyone standing next to the smoker.
 
 ## Provenance
 

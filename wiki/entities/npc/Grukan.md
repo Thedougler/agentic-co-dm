@@ -35,4 +35,4 @@ Grukan is the sole doorman at the [[Tallow Row]] card den, working the two-eye w
 
 ## Session Log
 
-- **Session 07.** Vetted [[Thunk]] and Old Faas through the two-eye window and Draconic challenge, then let them in without a word. Filled the front doorway during [[Thassos]]'s accusation and let the pair leave once the hand ended. [[Transcript]]
+- **Session 07.** Vetted [[Thunk]] and Old Faas through the two-eye window and Draconic challenge, then let them in without a word. Filled the front doorway during [[Thassos]]'s accusation and let the pair leave once the hand ended. Transcript

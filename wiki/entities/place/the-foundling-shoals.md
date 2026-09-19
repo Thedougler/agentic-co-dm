@@ -62,9 +62,9 @@ For generations, infants arrive at the Foundling Shoals, safe but mysterious. Th
 - Eelgrass beds cover the deeper channels between bars, swaying flat with the current and giving cover to anything hunting the shallows.
 - Bladderwrack and sea lettuce mat the exposed sandbars at low tide, and the fisherfolk strip handfuls of both to eat fresh or dry for winter stores.
 - Cockles and mussels bed thick in the wet sand. A low-tide walk with a bucket fills it inside an hour.
-- [[crab|Crabs]] work the tide line at dusk, and [[vulture|Vultures]] circle low over anything the tide leaves stranded.
+- Crabs work the tide line at dusk, and Vultures circle low over anything the tide leaves stranded.
 - [[reef-shark|Reef sharks]] run the deep channels on an incoming tide, cutting off a sandbar faster than a wader expects.
-- [[giant-crab|Giant crabs]] bury in the softest sand near the channel mouths, and a misplaced step can put a boot straight into a waiting claw.
+- Giant crabs bury in the softest sand near the channel mouths, and a misplaced step can put a boot straight into a waiting claw.
 
 ## Loot
 

@@ -35,7 +35,7 @@ visibility: dm
 | **Species**   | Warforged (construct)                                  |
 | **Role**      | Compliance Auditor, [[tessarine-concordat]] |
 | **Currently** | [[calven-and-calveno]], specifically [[La Vasca]]                                      |
-| **Class**     | [[Divination]] [[Wizard]] 9                                     |
+| **Class**     | Divination Wizard 9                                     |
 
 > [!narration] Narration
 > A brass and dark wood figure steps onto your gangplank without permission. Its footsteps ring hollow on the worn wood. It wears a Tessarine merchant sash. The frame favors durability over style. It stops at the rail and studies you carefully. Its voice is flat, without inflection. Then it speaks: "Hello. I am here to help you complete your transaction."
@@ -47,7 +47,7 @@ Estratto is a Warforged auditor sent by the Tessarine Concordat to [[calven-and-
 Estratto holds a writ for your ship, the *Uncertainty* (Concordat records: *[[Uncertainty|HCS Surety]]*). The original crew financed salvage. You took the ship. The Concordat says you hold their collateral. Estratto is here to check your name and your cargo.
 
 > [!mechanic]
-> **The writ's scope.** It covers the ship from salvage financing [[barnaby-rook]] signed before you took it. The Concordat says it's their collateral. Estratto knows you renamed and repainted it ([[Arcane Eye]] and [[Locate Object]] proved it). One true name means the Concordat acts.
+> **The writ's scope.** It covers the ship from salvage financing [[barnaby-rook]] signed before you took it. The Concordat says it's their collateral. Estratto knows you renamed and repainted it (Arcane Eye and Locate Object proved it). One true name means the Concordat acts.
 
 ## Toy Chest
 
@@ -161,14 +161,14 @@ reactions:
 
 Estratto avoids fights. It only uses these tactics if talking fails. The first attack is an "unregistered transaction" it records. The second attack makes it fight back.
 
-**Opening:** casts [[Slow]] saying "Your transaction is processing. Please stand by." It uses a Portent die to make one save fail.
+**Opening:** casts Slow saying "Your transaction is processing. Please stand by." It uses a Portent die to make one save fail.
 
-**Sustained pressure:** uses [[Detect Thoughts]] to learn who you are, Mind Sliver to weaken saves, and [[Counterspell]] to block your magic.
+**Sustained pressure:** uses Detect Thoughts to learn who you are, Mind Sliver to weaken saves, and Counterspell to block your magic.
 
-**If losing:** casts [[Hold Monster]] on whoever hits hardest (saying "Please remain in the designated area."), then files the report.
+**If losing:** casts Hold Monster on whoever hits hardest (saying "Please remain in the designated area."), then files the report.
 
 > [!mechanic]
-> **Killing it changes nothing.** At 0 HP, it casts [[Sending]] and reports your names. Then it shuts down. The Concordat picks it up in 24 hours. A new agent comes with the same writ and no patience.
+> **Killing it changes nothing.** At 0 HP, it casts Sending and reports your names. Then it shuts down. The Concordat picks it up in 24 hours. A new agent comes with the same writ and no patience.
 
 ## Connections
 

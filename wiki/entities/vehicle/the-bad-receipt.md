@@ -49,7 +49,7 @@ Prize cargo sits in nine crates on a nameless limestone rock near Kalowe. See [[
 | **Tier** | 2 |
 | **Hull Points** | 220 |
 | **Hull AC** | 12 |
-| **[[Speed]] (good wind)** | 80 miles/day |
+| **Speed (good wind)** | 80 miles/day |
 | **Speed (poor wind)** | 40 miles/day |
 | **Crew (min/full)** | 9 / 26 |
 | **Cargo** | 48 tons |
@@ -61,7 +61,7 @@ Prize cargo sits in nine crates on a nameless limestone rock near Kalowe. See [[
 
 | Enhancement | Rarity | Use |
 |---|---|---|
-| Ghost Keel Coating | Uncommon | [[Advantage]] on Stealth checks at sea. |
+| Ghost Keel Coating | Uncommon | Advantage on Stealth checks at sea. |
 | Fog Cannon | Uncommon | 60-ft fog bank for disengagement or boarding cover. |
 | Tide Reader | Uncommon | Advantage on navigation checks in reef-heavy waters. |
 | Signal Lantern Pair | Common | Coordinates with shore agents up to 30 miles. |

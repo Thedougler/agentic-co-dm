@@ -60,9 +60,9 @@ For generations, Whitmoth Hollow's pale apes have kept an old druid garden alive
 
 - Fig and vine: broad-leaved fig trees have split the old garden's trellises apart, and flowering vines have swallowed the rest, leaving a green tangle a party has to duck and cut through instead of a path.
 - Offering fruit: a cluster of trees still bears the soft, sweet fruit the apes leave on the flat stone. It bruises at a touch and stains the fingers, but it keeps a party fed for a day without further foraging.
-- [[ape|Albino apes]]: the colony that tends the garden works the beds in loose pairs, clearing deadfall and setting fruit at the stone. A party that keeps its distance and leaves the stone alone, the apes leave alone.
-- [[blood-hawk|Blood hawks]]: pairs hunt the canopy gaps for the rats the fallen fruit draws, stooping low enough that a party working the beds hears wings cut the air before it sees the bird.
-- [[venomous-snake|Garden vipers]]: they coil under the deadfall the apes clear from the beds, and a hand that reaches into a pile of cut vine without checking first earns a bite.
+- Albino apes: the colony that tends the garden works the beds in loose pairs, clearing deadfall and setting fruit at the stone. A party that keeps its distance and leaves the stone alone, the apes leave alone.
+- Blood hawks: pairs hunt the canopy gaps for the rats the fallen fruit draws, stooping low enough that a party working the beds hears wings cut the air before it sees the bird.
+- Garden vipers: they coil under the deadfall the apes clear from the beds, and a hand that reaches into a pile of cut vine without checking first earns a bite.
 
 ## Secrets
 

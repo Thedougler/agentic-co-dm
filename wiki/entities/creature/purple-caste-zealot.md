@@ -87,7 +87,7 @@ A purple-caste Grung marked by the same deep-violet caste coloring worn by [[pur
 
 ## Ecology
 
-Zealots are Purple-Caste Grung dosed on a red-caste battle-draught and staged as escort muscle, not raised as their own line. They're war-footing conscripts drafted from within [[grung-clans|Grung Clans]] territory in the reef-fringed rainforest of the [[verdant-teeth]], the same stock that supplies [[purple-caste-enforcer|Purple-Caste Enforcers]] and [[grung-elite-warrior|Grung Elite Warriors]]. Like every Grung, it's amphibious and needs to submerge at least an hour a day or take on [[Exhaustion]], a dependency the [[Calveno sewer magazines]]'s flooded tunnels accommodate without effort. The same standing water that keeps a zealot healthy is what neutralizes its explosive threat if a fight turns against it.
+Zealots are Purple-Caste Grung dosed on a red-caste battle-draught and staged as escort muscle, not raised as their own line. They're war-footing conscripts drafted from within [[grung-clans|Grung Clans]] territory in the reef-fringed rainforest of the [[verdant-teeth]], the same stock that supplies [[purple-caste-enforcer|Purple-Caste Enforcers]] and [[grung-elite-warrior|Grung Elite Warriors]]. Like every Grung, it's amphibious and needs to submerge at least an hour a day or take on Exhaustion, a dependency the [[Calveno sewer magazines]]'s flooded tunnels accommodate without effort. The same standing water that keeps a zealot healthy is what neutralizes its explosive threat if a fight turns against it.
 
 ## Toy Chest
 

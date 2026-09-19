@@ -53,4 +53,4 @@ visibility: dm
 
 ## Session Log
 
-- **Session 07** (`vault/episodes/007/`). Sent over by [[iacopo-fieschi]] to run messages for [[catarina-davirelli|Catarina]] between [[Cat's Curios]] and the crew. Confirmed: [[Transcript]].
+- **Session 07** (`vault/episodes/007/`). Sent over by [[iacopo-fieschi]] to run messages for [[catarina-davirelli|Catarina]] between [[Cat's Curios]] and the crew. Confirmed: Transcript.

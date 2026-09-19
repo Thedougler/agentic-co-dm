@@ -40,7 +40,7 @@ One of six blends of alchemical cigarettes sold in [[calven-and-calveno]]. Hunte
 | Field | Detail |
 |---|---|
 | One thing | Studied against a fresh physical trace and lit, it shows the compass direction of the marked creature for the next hour. |
-| Rarity justification | Uncommon, comparable to [[Wand of Secrets]] (no attunement, divination utility, points toward a hidden target within its own range) and [[Bag of Tricks]] (no attunement, charge-limited, one bounded effect per use). Hunter's Blend trades their repeatable charges for a single burn, and its direction-only readout with no distance and no line of sight keeps it well under the 4th-level [[Locate Creature]] spell. |
+| Rarity justification | Uncommon, comparable to Wand of Secrets (no attunement, divination utility, points toward a hidden target within its own range) and Bag of Tricks (no attunement, charge-limited, one bounded effect per use). Hunter's Blend trades their repeatable charges for a single burn, and its direction-only readout with no distance and no line of sight keeps it well under the 4th-level Locate Creature spell. |
 | Attunement reason | Single use, grants no bonus to attack, damage, saving throws, or AC, and carries one power. The attunement decision tree's branches don't trigger. |
 | PC connection | [[jean-claude-tabarnack]] already reads the [[Grung]] handler cell's stances in Calveno's crowds but can never follow one home. Hunter's Blend turns a single dropped trace into an hour of knowing which way a handler went. |
 | Current holder | Sold from the shelf at [[La Brace]], the [[Velo Quarter]] smoking room [[rufio-segalla]] runs, the only room in Calveno licensed to burn alchemical smoke in the open. Also sold at 60% price as an unreliable second off [[La Gatta]], a vending board on [[the Bridge]]'s bottom tier run by [[nicco-kettley]]. |
@@ -54,7 +54,7 @@ Lighting the cigarette takes an Action. For the next hour, the wielder knows the
 
 The effect ends early if the marked creature dies or leaves the plane. It also ends if the creature moves more than 1 mile away. Once lit, Hunter's Blend burns away for good, with no recharge and no recovery.
 
-**Limitations:** gives a heading only, with nothing about distance or sightline and nothing about the creature's condition. It cannot track a creature the wielder never gathered a trace from, and a trace older than 24 hours does nothing. The smoke fails silently against a creature warded by [[Nondetection]] or a similar effect.
+**Limitations:** gives a heading only, with nothing about distance or sightline and nothing about the creature's condition. It cannot track a creature the wielder never gathered a trace from, and a trace older than 24 hours does nothing. The smoke fails silently against a creature warded by Nondetection or a similar effect.
 
 ## Provenance
 

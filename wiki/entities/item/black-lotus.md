@@ -1,5 +1,4 @@
 ---
----
 title: Black Lotus
 aliases:
   - Black Lotus
@@ -12,6 +11,7 @@ created: 2026-09-12
 updated: 2026-09-14
 type: item
 lifecycle: proposed
+base_confidence: 0.55
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm

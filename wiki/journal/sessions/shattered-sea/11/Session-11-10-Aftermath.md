@@ -9,6 +9,7 @@ updated: 2026-09-13
 type: session-prep
 kind: resolution
 lifecycle: proposed
+base_confidence: 0.55
 reveal: unrevealed
 summary: "Resolution after the Star Cut theft. Hawks hunt [[talon-skarn]] only if the [[fate-spinner]] left this fire; otherwise the camp splits, the mark speaks once, and the night ends short of the garden."
 campaign: shattered-sea

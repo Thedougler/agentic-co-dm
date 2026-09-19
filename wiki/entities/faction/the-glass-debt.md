@@ -36,7 +36,7 @@ Her hull began life as a [[dravosi-crown|Crown]]-built heavy escort. Every forma
 | **Tier** | 3 |
 | **Hull Points** | 380 |
 | **Hull AC** | 13 |
-| **[[Speed]] (good wind)** | 65 miles/day |
+| **Speed (good wind)** | 65 miles/day |
 | **Speed (poor wind)** | 30 miles/day |
 | **Crew (min/full)** | 24 / 72 |
 | **Gun Mounts** | 40 |
@@ -45,7 +45,7 @@ Her hull began life as a [[dravosi-crown|Crown]]-built heavy escort. Every forma
 
 | Enhancement | Rarity | Use |
 |---|---|---|
-| Wardstone Figurehead | Rare | [[Advantage]] on saves vs magical effects; hostile divination can fail. |
+| Wardstone Figurehead | Rare | Advantage on saves vs magical effects; hostile divination can fail. |
 | Cartographer's Table | Rare | Maps route in real time; produces saleable charts. |
 | Arcane Artillery | Rare | Force-bolt gun mounts when powder fails. |
 | Ghost Keel Coating | Uncommon | Approaches more quietly than any frigate has a right to. |

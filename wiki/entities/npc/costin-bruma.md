@@ -33,8 +33,8 @@ tier: supporting
 
 | Field | Content |
 |---|---|
-| **primary_goal** | keep the shop solvent and buy anything offered. Fresh stock means fresh margins |
-| **consistent_method** | quotes low on intake; calculates totals out loud while marking slate; names no price twice the same way; feigns indifference to what people need |
-| **active_problem** | shelves crowded with unredeemed pawns three months past deadline; deadwood stock that won't move |
-| **performance_hooks** | market haggler's impatience, fingers working goods hand to hand while he talks; runs a murmur of numbers through every conversation |
-| **link_of_relevance** | Holds [[perrin-black-jaw]]'s unredeemed pawn: [[a navigation journal]], water-warped and swollen, spine stamped "Grandfather's Course," marked six months past redemption. Someone desperate pawned it after the [[Vestra]]'s loss. Costin knows nothing of it, just a number on slate (3 silver, unredeemed since Wintertide). To Perrin, irreplaceable. |
+| **Primary goal** | keep the shop solvent and buy anything offered. Fresh stock means fresh margins |
+| **Consistent method** | quotes low on intake; calculates totals out loud while marking slate; names no price twice the same way; feigns indifference to what people need |
+| **Active problem** | shelves crowded with unredeemed pawns three months past deadline; deadwood stock that won't move |
+| **Performance hooks** | market haggler's impatience, fingers working goods hand to hand while he talks; runs a murmur of numbers through every conversation |
+| **Link of relevance** | Holds [[perrin-black-jaw]]'s unredeemed pawn: [[a navigation journal]], water-warped and swollen, spine stamped "Grandfather's Course," marked six months past redemption. Someone desperate pawned it after the [[Vestra]]'s loss. Costin knows nothing of it, just a number on slate (3 silver, unredeemed since Wintertide). To Perrin, irreplaceable. |

@@ -34,12 +34,12 @@ tier: supporting
 > A few bubbles come off the seam and nothing else does.
 
 
-_Gear ([[Lamp]]), Common._
+_Gear (Lamp), Common._
 
 | Field | Detail |
 |---|---|
 | One thing | It keeps burning underwater and through any knock a fight can give it. |
-| Rarity justification | Non-magical gear, a step above the [[Hooded Lantern]] (5 gp) and priced with the [[reinforced-specimen-cage]] (60 gp). It sheds less light than [[Light]] and grants no bonus to any roll. |
+| Rarity justification | Non-magical gear, a step above the Hooded Lantern (5 gp) and priced with the [[reinforced-specimen-cage]] (60 gp). It sheds less light than Light and grants no bonus to any roll. |
 | Attunement reason | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
 | PC connection | [[delmar-fisk|Delmar]] does the searching, and six weeks of debris on the floor of a [[Sawek]]'s blue hole gives up nothing in the dark. |
 | Current holder | [[kettil-ormsson]] keeps one lit in a bucket on the counter at [[Ormsson's Fittings]] and sells the rest off the shelf behind him. |

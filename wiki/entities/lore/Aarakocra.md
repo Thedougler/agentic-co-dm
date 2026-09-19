@@ -36,6 +36,6 @@ Aarakocra track the world by altitude, not distance. They have feathered bodies,
 
 **Talons.** A natural unarmed strike that deals slashing damage.
 
-**Wind Caller.** You can cast *gust of wind* once per [[Long Rest]], with no material components. You pick the casting ability.
+**Wind Caller.** You can cast *gust of wind* once per Long Rest, with no material components. You pick the casting ability.
 
-**Keen Sight.** You have [[Advantage]] on [[Wisdom]] (Perception) checks relying on sight.
+**Keen Sight.** You have Advantage on Wisdom (Perception) checks relying on sight.

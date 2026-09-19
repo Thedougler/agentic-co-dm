@@ -44,4 +44,4 @@ She is unmistakably delighted by company, and the delight is the tell: she is wa
 
 ## Session Log
 
-- **Session 07.** Rose to greet [[Thunk]] and Faas, took Thunk's face in both hands, and poured him a glass herself. Closed her lacquer box once the room turned on Thunk's count. [[Transcript]]
+- **Session 07.** Rose to greet [[Thunk]] and Faas, took Thunk's face in both hands, and poured him a glass herself. Closed her lacquer box once the room turned on Thunk's count. Transcript

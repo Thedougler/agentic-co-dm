@@ -139,7 +139,7 @@ legendary_actions:
 
 ## Session Log
 
-**Session 07** (`vault/episodes/007/`): flew into the Calveno crater fight after Delmar's whistle. Threw four edge dancer daggers a turn, all hitting, and dropped one of [[otar-the-foul]]'s [[minor-slaad]] minions in one attack for 67 damage. Took a Dodge action on a later turn and killed two more Minor Slaad with ease. Source: [[Transcript]].
+**Session 07** (`vault/episodes/007/`): flew into the Calveno crater fight after Delmar's whistle. Threw four edge dancer daggers a turn, all hitting, and dropped one of [[otar-the-foul]]'s [[minor-slaad]] minions in one attack for 67 damage. Took a Dodge action on a later turn and killed two more Minor Slaad with ease. Source: Transcript.
 
 **Session 06** (`vault/episodes/006/`): led a rooftop chase across [[le-paludi]] during [[il-gioco-delle-beffe]]. He batted away a water balloon, picked through a flower/balloon/net barrage, and wasn't fooled by a boy's fake drowning.
 

@@ -38,8 +38,8 @@ Her shelves hold salted meat and hides that never seem to run short no matter ho
 
 > [!mechanic]
 > **Tradition:** Primal. **homebrew element:** Otel Karn's non-death curse suspends biological mortality and replenishes natural stock island-wide; both effects here are environmental, not cast.
-> **[[Detect Magic]]:** nothing. Neither Marta nor her shelves register any aura. The island's refusal sits beneath the weave entirely.
-> **[[Counterspell]]:** no. Environmental imposition. No spell to interrupt.
+> **Detect Magic:** nothing. Neither Marta nor her shelves register any aura. The island's refusal sits beneath the weave entirely.
+> **Counterspell:** no. Environmental imposition. No spell to interrupt.
 
 **A dossier of usable facts:**
 

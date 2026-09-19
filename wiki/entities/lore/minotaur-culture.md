@@ -28,7 +28,7 @@ tier: supporting
 
 ## The Culture
 
-In [[shattered-sea]], [[Minotaurs]] pilot ships. Many farm or fight, but most love the sea. They guide ships through blind channels and read reefs. They hold maps in their minds that keep ships safe. **Passages** shape Minotaur life. A passage is a sea route, a life stage, or a turn from one to the next.
+In [[shattered-sea]], Minotaurs pilot ships. Many farm or fight, but most love the sea. They guide ships through blind channels and read reefs. They hold maps in their minds that keep ships safe. **Passages** shape Minotaur life. A passage is a sea route, a life stage, or a turn from one to the next.
 
 A Minotaur pilot costs more than any other hire in [[Midchain]]. Every coin is worth the price. [[sienne-orre]], who leads the *[[Fernen]]* in [[fisks-fleet]], ran the survey work. Her gift for reading passages made her the clear choice.
 

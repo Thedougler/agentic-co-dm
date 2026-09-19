@@ -60,6 +60,6 @@ A geothermal vent runs close under Vetau's lagoon, and locals time their whole d
 
 - Salt grass and stunted, wind-bent scrub: cover the atoll's low ring in a mat that never rises above the knee, so nothing on Vetau blocks a sightline for more than a few strides.
 - Sulfur moss: crusts the rock nearest the vent's throat and gets boiled into the joint-ache remedy fishers sell from clay jars right here at low tide, the same trade [[otanu|Otanu]]'s fishers count on.
-- [[crab|Crabs]]: work every tide pool along the shore in the hour before and after the boil, easy pickings for anyone quick enough to beat the vultures to them.
-- [[vulture|Vultures]]: circle low the moment the anchorage reopens, dropping onto whatever got caught in the shallows when the water sealed shut.
-- [[giant-crab|Giant crabs]]: den in the flooded rock nearest the vent's throat, shells scorched black from the heat. A pincer can snap a forearm, so no one wades in without checking the water first.
+- Crabs: work every tide pool along the shore in the hour before and after the boil, easy pickings for anyone quick enough to beat the vultures to them.
+- Vultures: circle low the moment the anchorage reopens, dropping onto whatever got caught in the shallows when the water sealed shut.
+- Giant crabs: den in the flooded rock nearest the vent's throat, shells scorched black from the heat. A pincer can snap a forearm, so no one wades in without checking the water first.

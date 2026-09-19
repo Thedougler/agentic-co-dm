@@ -2,6 +2,8 @@
 title: "The Black-Jaw Run"
 aliases:
   - The Black-Jaw Run
+  - Black-Jaw Run
+  - black-jaw-run
 category: entities
 tags: [shattered-sea, faction]
 sources:

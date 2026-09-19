@@ -63,4 +63,4 @@ Knighton visits [[catarina-davirelli]]'s workshop before the [[Grung]] crisis, w
 ## Session Log
 
 - **Session 02**, referenced but not yet met in person. [[shepherd-grigori]]
-  tells the crew [[capn-gorgeous|Captain Gorgeous]] is [[dead]]. Knighton will send ships over it, logged as an open pursuit thread.
+  tells the crew [[capn-gorgeous|Captain Gorgeous]] is dead. Knighton will send ships over it, logged as an open pursuit thread.

@@ -47,7 +47,7 @@ When Delmar needs to move or survive underwater, raise the hood for swim speed, 
 
 - [[delmar-fisk]] — Current holder; wore it the day [[Umberlee]] sank his fleet.
 - [[crissdalynn-khinriss]] — Dove from the crow's nest, grabbed him, and rode the coat's buoyancy to the surface with him.
-- [[Cloak of the Manta Ray]] — Base item this coat matches.
+- Cloak of the Manta Ray — Base item this coat matches.
 - [[Umberlee]] — Sank Fisk's fleet the day he wore it.
 
 ## Provenance

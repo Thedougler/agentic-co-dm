@@ -39,9 +39,9 @@ tier: supporting
 ## Mechanics
 
 > [!mechanic]
-> **[HB] Bind (8 hours).** Attune to the collar while it is buckled on a beast of CR 3 or lower. While the beast wears it and you are attuned, you can command it telepathically at up to 100 feet, and it obeys as though it were [[charmed]] by you. It acts on your initiative and takes one action of your choosing on its turn. You know its condition and rough direction while it lives.
+> **[HB] Bind (8 hours).** Attune to the collar while it is buckled on a beast of CR 3 or lower. While the beast wears it and you are attuned, you can command it telepathically at up to 100 feet, and it obeys as though it were charmed by you. It acts on your initiative and takes one action of your choosing on its turn. You know its condition and rough direction while it lives.
 >
-> **Limitations:** one collar, one beast; rebinding to a different animal takes another 8 hours and ends the first bond. A beast with [[Intelligence]] 5 or higher repeats a DC 15 [[Wisdom]] saving throw at each dawn, and on a success the collar falls open and stays open for a day. The collar gives no command over anything that is not a beast.
+> **Limitations:** one collar, one beast; rebinding to a different animal takes another 8 hours and ends the first bond. A beast with Intelligence 5 or higher repeats a DC 15 Wisdom saving throw at each dawn, and on a success the collar falls open and stays open for a day. The collar gives no command over anything that is not a beast.
 
 ## Provenance
 

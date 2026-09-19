@@ -57,8 +57,8 @@ The sealed chart package is this group's main edge. Any party that gets it knows
 | **Status** | Destroyed (wreck) |
 | **Hull Points** | 230 |
 | **Hull AC** | 12 |
-| **[[Condition]]** | Prime (pre-wreck) |
-| **[[Speed]] (good wind)** | 90 miles/day |
+| **Condition** | Prime (pre-wreck) |
+| **Speed (good wind)** | 90 miles/day |
 | **Speed (poor wind)** | 45 miles/day |
 | **Maneuverability** | Good |
 | **Profile** | Medium |
@@ -84,7 +84,7 @@ The sealed chart package is this group's main edge. Any party that gets it knows
 - Cook's galley with fresh-water cistern: long-voyage capable.
 
 > [!mechanic]
-> **Captain's lockbox.** Iron lockbox in the captain's cabin: DC 18 Dexterity ([[Thieves' Tools]]) to pick. Success grants private access to the magazine key. Failure leaves it locked with no further effect. The key stays inaccessible until opened.
+> **Captain's lockbox.** Iron lockbox in the captain's cabin: DC 18 Dexterity (Thieves' Tools) to pick. Success grants private access to the magazine key. Failure leaves it locked with no further effect. The key stays inaccessible until opened.
 
 ## Crew
 

@@ -38,9 +38,9 @@ tier: supporting
 
 **Name on the slate [HB].** Writing a creature's name on the slate takes one minute and wipes any name already there. The slate holds one name at a time, and functions only for the creature named on it, and only while that creature carries it.
 
-**Called back [HB].** Once per long rest, when the named creature carrying the slate fails an [[Intelligence]] or [[Charisma]] saving throw, the slate speaks that name aloud in the flat delivery of a watch officer working down a list. The creature rerolls the failed save and must use the new roll. The name is audible to everyone within 30 feet.
+**Called back [HB].** Once per long rest, when the named creature carrying the slate fails an Intelligence or Charisma saving throw, the slate speaks that name aloud in the flat delivery of a watch officer working down a list. The creature rerolls the failed save and must use the new roll. The name is audible to everyone within 30 feet.
 
-**Limitations.** No effect on a [[Wisdom]], [[Strength]], [[Dexterity]], or [[Constitution]] save, and none on a save another creature is making. It cannot be used on a save already rerolled by another effect. It will not fire for a creature whose name it does not carry, and a creature who does not know its own true name cannot write one that works. Wiping the slate mid-fight costs an action, and the daily use does not reset with the new name.
+**Limitations.** No effect on a Wisdom, Strength, Dexterity, or Constitution save, and none on a save another creature is making. It cannot be used on a save already rerolled by another effect. It will not fire for a creature whose name it does not carry, and a creature who does not know its own true name cannot write one that works. Wiping the slate mid-fight costs an action, and the daily use does not reset with the new name.
 
 ## Provenance
 

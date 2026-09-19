@@ -40,7 +40,7 @@ Her best weapon is the first hour after she is sighted, when everyone with autho
 | **Tier** | 4 |
 | **Hull Points** | 780 |
 | **Hull AC** | 15 |
-| **[[Speed]] (good wind)** | 55 miles/day |
+| **Speed (good wind)** | 55 miles/day |
 | **Speed (poor wind)** | 22 miles/day |
 | **Crew (min/full)** | 60 / 260 |
 | **Cargo** | 145 tons |
@@ -52,7 +52,7 @@ Her best weapon is the first hour after she is sighted, when everyone with autho
 
 | Enhancement | Rarity | Use |
 |---|---|---|
-| Wardstone Figurehead | Rare | [[Advantage]] on saves vs magical effects; hostile divination can fail. |
+| Wardstone Figurehead | Rare | Advantage on saves vs magical effects; hostile divination can fail. |
 | Cartographer's Table | Rare | Maps fleet routes; produces saleable or strategically false charts. |
 | Arcane Artillery | Rare | Eight force-bolt gun mounts for wet weather or magical intimidation. |
 | Spirit Crew | Rare | Spectral sailors count toward crew needs without wages or provisions. |
@@ -65,7 +65,7 @@ Her best weapon is the first hour after she is sighted, when everyone with autho
 
 **Tactical considerations:**
 
-- **As an enemy:** she should change the map, not just start combat. A Tier 1–3 party cannot fight this ship directly — if a direct confrontation ever needs a resolution beyond standard combat, [[Siege Rules]] is the overlay built for exactly this scale.
+- **As an enemy:** she should change the map, not just start combat. A Tier 1–3 party cannot fight this ship directly — if a direct confrontation ever needs a resolution beyond standard combat, Siege Rules is the overlay built for exactly this scale.
 - **As a prize:** campaign-altering and immediately contested by every major naval, commercial, and religious power.
 - **As an ally:** solves impossible naval problems in ways that make the party complicit.
 - **As a rumour:** makes convoys delay, patrols consolidate, and smugglers charge more.

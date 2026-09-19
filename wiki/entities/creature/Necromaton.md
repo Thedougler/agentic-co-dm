@@ -146,7 +146,7 @@ traits+:
 ```
 
 **Base (Ground)** above is the primary registered block for this
-Necromaton's one shared soul. **[[Flying]]** and **Bulldozer**
+Necromaton's one shared soul. **Flying** and **Bulldozer**
 recall it and override only the fields the source states as different,
 and the source's own delta format leaves every unlisted field matching
 Base. Lair Actions live on the Base block only, since they belong to the
@@ -186,7 +186,7 @@ soul between them, and it must constantly maintain and eventually replace each
 body's biological anchor as it decays. A Necromaton is never finished
 building. The source gives no sensory tell for running this creature
 beyond its physical description (a metal chassis, an Arm Cannon or Arm
-[[Torch]] housing); a DM call once it's staged for a real encounter.
+Torch housing); a DM call once it's staged for a real encounter.
 
 ## Toy Chest
 
