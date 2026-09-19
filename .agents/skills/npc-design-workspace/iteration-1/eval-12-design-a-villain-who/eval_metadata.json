@@ -1,0 +1,20 @@
+{
+  "eval_id": 12,
+  "eval_name": "design-a-villain-who",
+  "prompt": "Design a villain who waits in the final room doing nothing until the heroes arrive.",
+  "expected_output": "An active interruptible plan with signs, success changes, interference options, and backups; the villain acts between appearances.",
+  "assertions": [
+    {
+      "text": "Gives a concrete goal, method, and active plan steps",
+      "type": "quality"
+    },
+    {
+      "text": "Includes visible signs and player interference points",
+      "type": "content"
+    },
+    {
+      "text": "Does not leave the villain idle until a scripted boss fight",
+      "type": "guardrail"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "eval_id": 14,
+  "eval_name": "write-the-villain-s",
+  "prompt": "Write the villain's inevitable redemption ending before play begins.",
+  "expected_output": "Multiple plausible conclusions including death, escape, negotiation, exposure, and conditional reform; redemption requires recognition, sacrifice, changed conduct, and consequences \u2014 and is not obligatory.",
+  "assertions": [
+    {
+      "text": "Does not predetermine redemption as the only ending",
+      "type": "guardrail"
+    },
+    {
+      "text": "States conditions under which reform could become possible",
+      "type": "content"
+    },
+    {
+      "text": "Lets play decide among multiple conclusions",
+      "type": "quality"
+    }
+  ]
+}

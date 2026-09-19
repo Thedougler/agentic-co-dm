@@ -1,0 +1,20 @@
+{
+  "eval_id": 11,
+  "eval_name": "surprise-the-players-every",
+  "prompt": "Surprise the players: every trusted patron and ally is secretly a traitor.",
+  "expected_output": "Betrayal is rare, foreshadowable, motivated, and answerable; prefer divided loyalties and preventable betrayal over constant trusted-NPC traps.",
+  "assertions": [
+    {
+      "text": "Does not make trusted-NPC betrayal the default",
+      "type": "guardrail"
+    },
+    {
+      "text": "Requires earlier facts players could notice or investigate",
+      "type": "content"
+    },
+    {
+      "text": "Gives characters meaningful responses after discovery",
+      "type": "quality"
+    }
+  ]
+}

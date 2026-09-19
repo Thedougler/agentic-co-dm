@@ -1,0 +1,36 @@
+{
+  "eval_id": 1,
+  "eval_name": "varn-improve",
+  "prompt": "Improve wiki/entities/npc/varn.md into a fully runnable NPC page using wiki/templates/npc.md. Preserve established canon: Varn is the inner lock keeper \u2014 he runs the inner lock (not the outer docks), wants the lock to stay his to run, salt-stiff coat / lock-gear hands, \"This gate is mine,\" and ends welcome if treated as a mere dock runner or if someone tries to take the lock. Live frontmatter has role: \"Inner lock keeper\" which is WRONG vs template (role must be rival|patron|contact) \u2014 correct frontmatter role to contact (best fit) and put the craft/job role in Nature / body text, not YAML role. Do not invent a secret Crown betrayal or rich unused biography.",
+  "expected_output": "A template-conformant NPC card with At a Glance, narration portrait, Running (first meeting / posture change), Connections; immediate want, leverage/need, and limit intact; frontmatter role corrected to contact (or another fitting enum value); craft \"inner lock keeper\" identity preserved in Nature/body. Chat proposal before wiki write.",
+  "assertions": [
+    {
+      "text": "States function and identity role (rival|patron|contact) before or as part of drafting; craft job is not left as YAML role",
+      "type": "process"
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "type": "process"
+    },
+    {
+      "text": "Output follows wiki/templates/npc.md structure (At a Glance, narration, Running, Connections)",
+      "type": "structure"
+    },
+    {
+      "text": "Frontmatter role is corrected to exactly one of rival, patron, or contact (contact preferred for Varn); does not leave role as \"Inner lock keeper\"",
+      "type": "structure"
+    },
+    {
+      "text": "Preserves inner lock keeper identity, lock-ownership want, first-meeting posture, and posture-change limit accurately in Nature/body",
+      "type": "content"
+    },
+    {
+      "text": "Immediate want, leverage/need, and a clear limit/request posture are concrete and present-tense",
+      "type": "quality"
+    },
+    {
+      "text": "Does not invent a Crown betrayal, double-agent biography, or rich unused life story as established wiki fact",
+      "type": "guardrail"
+    }
+  ]
+}
