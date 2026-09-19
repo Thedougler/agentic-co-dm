@@ -32,7 +32,7 @@ A two-masted schooner, 95 feet long. The hull is timber above water and copper-s
 
 *Experimental schooner · Tier 2 · unmoored.*
 
-[[catarina-davirelli|Catarina Davirelli]]'s personal ship. Built to sail on the surface and dive below. Designed for long journeys with no outside support. Not for sale.
+[[catarina-davirelli|Catarina Davirelli]]'s personal ship. Built for surface sailing and dives below. Designed for long journeys with no outside support. Not for sale.
 
 **Air system:** built by Davirelli using brass fittings, magic, and a pump in the keel. Takes 10 minutes to turn on or off. Dives to 120 feet. Needs a live garden to make air; without it, the air goes bad.
 

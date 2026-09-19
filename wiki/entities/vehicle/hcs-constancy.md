@@ -43,7 +43,7 @@ The ship inspects vessels in Crown waters. It checks hull records, cargo lists, 
 
 **Below decks**: brig and holding cells alongside surgeon's quarters and supplies.
 
-**Hold**: ammunition and shot. The ship also carries 75 tons of cargo.
+**Hold**: ammunition and shot. The ship also carries cargo weighing 75 tons.
 
 ## Stats & Combat
 

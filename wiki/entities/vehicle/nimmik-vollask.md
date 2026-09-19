@@ -74,8 +74,8 @@ Gnome-crewed orange cargo brig (alias: the Depot) on the [[central-strait]]. [[c
 
 ## Connections
 
-- [[central-strait]]: Four-year resupply circuit. Primary play is trade, not offense.
-- [[cotter-foss]]: Public interface at the rail. He manages the ledger, coffee, and crane-and-hatch handoffs.
+- [[central-strait]], with a four-year resupply circuit. Primary play is trade, not offense.
+- [[cotter-foss]] is the public interface at the rail. He manages the ledger, coffee, and crane-and-hatch handoffs.
 
 ## At the Table
 

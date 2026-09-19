@@ -35,7 +35,7 @@ The *HCS Warrant* patrols the [[central-strait]] with crews from [[Harwick]]. Sh
 
 **Privateer letters.** Ault issues them, and the [[Harwick]] ledger records them at resupply.
 
-**Prize posture:** capture of the *Warrant* is reported to the Admiralty at [[Harwick]] within a week. Sealed orders go to every Crown ship in the Strait.
+**Prize posture.** Crews report any capture of the *Warrant* to the Admiralty at [[Harwick]] within a week. Sealed orders go to every Crown ship in the Strait.
 
 ## Layout
 
@@ -44,7 +44,7 @@ Deck notes from the *Warrant*:
 - **Weather Deck.** Helm and binnacle aft. Belfry and capstan amidships. Swivel guns cover bow and stern. Cannon (twelve total) below with hinged covers. Crown pennant flies from the masthead.
 - **Captain's Cabin and Officers.** Stern cabin (full width) with chart table and papers. Lockable iron locker inside. Officer cabins (three) forward. Rating officer's desk amidships for paperwork.
 - **Crew Quarters.** Hammocks (twenty) on the lower forward deck. Galley with copper range amidships.
-- **Below the Waterline.** The magazine is aft, with two keys. Ault holds one key, and the [[Harwick]] Admiralty holds the other. The cargo hold stores seized goods awaiting judgment. The prisoner hold has iron grating and six cages.
+- **Below the Waterline.** The magazine is aft, with two keys. Ault carries one key, and the [[Harwick]] Admiralty carries the other. The cargo hold stores seized goods awaiting judgment. The prisoner hold has iron grating and six cages.
 
 > [!mechanic]
 > **Captain's Locker.** Lockable iron chest in the stern cabin. Make a Strength (Athletics) check (DC 18) to force it. If you fail, the lock holds and the chest remains undamaged. You may retry only with a new tool or approach.

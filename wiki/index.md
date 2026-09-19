@@ -747,7 +747,7 @@
 - [[zorts-pits]] — Calveno site named in the item record for Zort’s Pits. ( #shattered-sea #place)
 - [[black-pennants]] — Quest pressure named in the Magistrate’s Warding Chip item record. ( #shattered-sea #quest)
 - [[velvet-noose-intercept]] — Encounter named in the Magistrate’s Warding Chip item record. ( #shattered-sea #quest)
-- [[salted-margin]] — Vehicle named in the Plumb Eye item record as the Salted Margin. ( #shattered-sea #vehicle)
+- [[glass-debt]] — Vehicle named in the Plumb Eye item record; the Salted Margin is its former name. ( #shattered-sea #vehicle)
 ## References
 
 *No pages yet.*

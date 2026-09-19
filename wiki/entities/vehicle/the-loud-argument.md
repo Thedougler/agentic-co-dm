@@ -35,7 +35,7 @@ Lost simultaneously with the rest of [[fisks-fleet]] when [[Umberlee]] opened [[
 
 ## Stats & Combat
 
-Stub: source gives no hull/AC/speed/weapon statblock, only descriptive armament (eight gun mounts, four per side, two bow chasers).
+The source gives no hull, AC, speed, or weapon statblock. It only describes eight gun mounts, four per side, and two bow chasers.
 
 ## Crew
 

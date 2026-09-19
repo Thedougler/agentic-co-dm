@@ -2,6 +2,8 @@
 title: "Glass Debt"
 aliases:
   - Glass Debt
+  - The Salted Margin
+  - Salted Margin
 category: entities
 tags: [shattered-sea, vehicle]
 sources: ["central-strait-crossing.md"]
@@ -28,5 +30,5 @@ relationships:
 ---
 # Glass Debt
 
-The Plumb Eye item record references this vessel as the item's former holder. No other sheet is established.
+The Plumb Eye item record lists this vessel as the item's former holder. No additional sheet exists.
 

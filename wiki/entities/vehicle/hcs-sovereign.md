@@ -62,7 +62,7 @@ The Sovereign does not patrol or escort. News of its arrival travels weeks ahead
 
 ## Combat
 
-The supplied source gives no initiative, movement, ramming, boarding, component-targeting, sinking, or destruction procedures. Use only the Gargantuan chassis and hull figures until those figures are authored.
+The supplied source gives no initiative, movement, ramming, boarding, component-targeting, sinking, or destruction procedures. Use only the Gargantuan chassis and hull figures until an author supplies those figures.
 
 ## At a Glance
 

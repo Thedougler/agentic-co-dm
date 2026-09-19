@@ -201,10 +201,6 @@ Out-of-scope: constitution; feature specs; generated Spec Kit adapters; campaign
 
 Design-impact work: `docs/agents/skill-design-dispatch.md`.
 
-## Subagent discipline
-
-A subagent receives only bounded task inputs — the specific page paths, the scoped findings, the concrete question. Expose the task, not the feature scope. Full specs, design docs, and surrounding context stay with the parent; the subagent gets what it needs to act and nothing more.
-
 ## Vault retrieval
 
 **QMD before grep.** Search QMD first for wiki content; use grep only for targeted evidence QMD cannot answer (exact line numbers, regex matches, file existence checks). Grep-first for wiki content violates retrieval precedence and produces lower-quality results.

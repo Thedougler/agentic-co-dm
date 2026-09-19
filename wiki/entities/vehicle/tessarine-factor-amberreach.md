@@ -55,7 +55,7 @@ Senior Factor [[oriana-becht]] signs legal papers aboard: loans to 2,000 gp, rou
 
 **Weather Deck.** Cargo logistics focus: davits, winches, cargo booms. Tessarine pennant and factor's authority pennant both fly.
 
-**Gun Deck / Factor Suite.** 16 cannon, widely spaced for cargo movement. Factor suite at stern: Becht's cabin, contract office, sealed correspondence.
+**Gun Deck / Factor Suite.** Sixteen cannon are widely spaced for cargo movement. The stern factor suite has Becht's cabin, a contract office, and sealed correspondence.
 
 **Crew/Passenger Deck.** 60 hammocks forward, a galley, and six private merchant passenger cabins aft.
 

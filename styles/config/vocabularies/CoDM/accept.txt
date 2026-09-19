@@ -336,6 +336,7 @@ Captain's
 captain-dorian-bishop
 Captains
 Carpenter's
+Carpenter's Shop
 Carpenter's Slip
 Carpenters'
 Carpenters' Slip
@@ -1038,6 +1039,7 @@ Kalowe Bad Receipt Cache
 Kalowe Merrow's Prize
 Kalowe Waveservant Shrine
 Kalowe — The Sawek Bounty
+Kalowe, The Bad Receipt's Cache
 Kalowe, The Captain's Map
 Kalowe, The Merrow's Prize
 kalowe-bad-receipt-cache
@@ -1572,6 +1574,7 @@ razer-grass
 Reach
 Recap
 Receipt
+Receipt's
 Reclaimed
 Red
 Red Lady
@@ -1699,7 +1702,6 @@ salt-drake-bile-draught
 Salted
 Salted Margin
 Salted Otel Mutton
-salted-margin
 salted-otel-mutton
 Salts
 Saltwright
@@ -1890,6 +1892,7 @@ Shepherd Grigori
 shepherd-grigori
 Shoal
 Shoals
+Shop
 Shrieking
 Shrine
 Shroud
@@ -2126,6 +2129,7 @@ Tessarine Amberreach
 Tessarine Concordat
 Tessarine Courier Silkvane
 Tessarine Factor Amberreach
+Tessarine Silkvane
 Tessarine Trade House
 tessarine-concordat
 tessarine-courier-silkvane
@@ -2575,14 +2579,6 @@ Wolfrabbit
 Word
 Word from Halewick
 word-from-halewick
-Work
-Work - Flying Boots provenance
-Work - Malone regeneration
-Work - Snakewood creature vs hazard
-work-flying-boots-provenance
-work-index
-work-malone-regeneration
-work-snakewood-creature-vs-hazard
 Working
 Works
 Wouters

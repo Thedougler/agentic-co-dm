@@ -40,7 +40,7 @@ Vestra is a family brig built and captained by Vincenzo Black-Jaw. Something mas
 ## Narration
 
 > [!narration]
-> *The *[[vestra|Vestra]]* lies keel-down on a shelf of dead coral, hull staved in below the waterline in a wound too clean for any reef. Her masts lie snapped and half-buried in silt. Rigging trails like weed.*
+> *The *[[vestra|Vestra]]* lies keel-down on a shelf of dead coral, hull staved in below the waterline in a wound too clean for any reef. Her masts lie snapped and partly covered by silt. Rigging trails like weed.*
 >
 > *The gun mounts still contain their iron, green with corrosion, while sand chokes the barrels. No bones remain on deck. The cold presses against bare skin. The water tastes of rust where it seeps from the corroded iron.*
 >

@@ -25,7 +25,7 @@ tier: supporting
 ---
 # Tessarine Courier Silkvane
 
-A fast Tessarine Concordat sloop built for speed, not cargo, with a single mast and pale grey hull. The transom bears a Concordat registry mark, and a Tessarine pennant flies when underway. It has one gun mount per side and clean rigging. Nothing about it suggests a cargo ship. Currently anchored in Port Tidefall harbour.
+A fast Tessarine Concordat sloop built for speed, not cargo, with one mast and a pale grey hull. The transom bears a Concordat registry mark, and a Tessarine pennant flies when underway. It has one gun mount per side and clean rigging. Nothing about it suggests a cargo ship. Currently anchored in Port Tidefall harbour.
 
 *Dispatch sloop · Tier 1 · [[calders-tooth-and-port-tidefall]].*
 
@@ -54,7 +54,7 @@ You can remove both the pennant and registry mark. The ship needs 2 crew for sho
 ## Crew
 
 - Captain: none named in source.
-- Notable crew: Tessarine Concordat personnel rather than naval ratings. Crew count ranges from 2 to 8 by route.
+- Notable crew consists of Tessarine Concordat personnel rather than naval ratings. Crew count ranges from 2 to 8 by route.
 
 ## Connections
 

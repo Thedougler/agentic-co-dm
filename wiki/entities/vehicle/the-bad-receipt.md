@@ -28,15 +28,15 @@ relationships:
 ---
 # The Bad Receipt
 
-A two-masted schooner runs through channels under patched cream sails. The merchant flag looks real until it does not. The hull is black-green, old and stained. Brass registry plates bolt over old marks. Drop the side screens and cannons show. They sit in neat rows under cargo nets. The figurehead is a clerk holding a ship's hook.
+A two-masted schooner runs through channels under patched cream sails. The merchant flag looks real until it does not. The hull is black-green, old and stained. Brass registry plates bolt over old marks. Drop the side screens and cannons appear in neat rows under cargo nets. The figurehead is a clerk holding a ship's hook.
 
 *Armed schooner · Tier 2 · [[Kalowe]].*
 
 A Tier 2 armed pirate schooner built for [[Midchain]] work. She uses false papers and calculated strikes. She escapes through channels where Crown captains get lost. Crews at [[Kalowe]] rebuilt her from a seized hull.
 
-She is not a slaughter ship. The captain wants cargo, [[letters-of-marque]], hostage officers, and undeclared goods. The crew disables the rudder and scares the deck. They get a signed transfer under threat.
+She is not a slaughter ship. The captain targets cargo, [[letters-of-marque]], hostage officers, and undeclared goods. The crew disables the rudder and scares the deck. They get a signed transfer under threat.
 
-The Bad Receipt uses three false identities. She poses as a distressed courier, a [[chain-council]] survey vessel, or a privateer. An island issued her commission but denies knowing it. As an enemy, she is a Tier 2 pirate threat. As a prize, she works as a mid-campaign stronghold. As a contact, her captain makes deals and forges documents. She knows which captains carry stolen cargo.
+The Bad Receipt uses three false identities. She presents herself as a distressed courier, a [[chain-council]] survey vessel, or a privateer. An island issued her commission but denies knowing it. As an enemy, she is a Tier 2 pirate threat. As a prize, she works as a mid-campaign stronghold. As a contact, her captain makes deals and forges documents. She knows which captains carry stolen cargo.
 
 The ship raises false colours and requests aid. She claims a paperwork problem. Once the target slows, she fires into the rigging. If trapped, the crew uses three advantages. Fog cannon covers disengagement or boarding. Ghost Keel Coating hides her at sea. Reef pilots know every channel near Kalowe.
 

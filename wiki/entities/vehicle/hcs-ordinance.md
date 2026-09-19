@@ -50,8 +50,8 @@ Source's own callout: superseded by [[hcs-sovereign]] as the definitive Tier 4 C
 
 | Facility | Space | Hireling | Effect |
 |---|---|---|---|
-| Admiralty Court | 2 | Judge-Advocate (ship's legal officer) | *Active:* once/Bastion Turn, issues one Crown legal instrument, such as a commission, revocation, warrant, impound order, or [[letters-of-marque]]. Full Admiralty authority is enforceable in all Crown-held ports. *Passive:* Crown officers gain advantage on Intimidation checks against parties subject to Crown law. |
-| Registry Vault | 2 | Ship's Registrar (not a crew role) | *Active:* once/Bastion Turn, produces certified document copies or forges Crown certificates and locates named Crown registrations. *Passive:* the vault generates legal paper trails for visited ports, inspected vessels, and issued orders. |
+| Admiralty Court | 2 | Judge-Advocate (ship's legal officer) | Active effect uses one Bastion Turn to issue one legal instrument under Crown authority, such as a commission, revocation, warrant, impound order, or [[letters-of-marque]]. Full Admiralty authority is enforceable in all Crown-held ports. Passive effect grants Crown officers advantage on Intimidation checks against parties subject to Crown law. |
+| Registry Vault | 2 | Ship's Registrar (not a crew role) | *Active:* once/Bastion Turn, produces certified document copies or forges Crown certificates and locates named Crown registrations. *Passive:* the vault generates a paper trail for every port visit. It records vessel inspections and issued orders. |
 | Gunner's Magazine | 2 | Gunner-Warden (double-role: gunner on crew roster) | *Active:* once/Bastion Turn, prepares a specialist shot order (grapeshot, chain shot, or alchemical incendiary), applying in the next combat encounter. *Passive:* cannon attacks deal full damage on a confirmed critical hit. The magazine has fired every time. |
 
 > [!mechanic]
