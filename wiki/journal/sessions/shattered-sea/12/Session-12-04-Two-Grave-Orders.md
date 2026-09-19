@@ -73,9 +73,9 @@ flexGrow=2
 
 | Actor | Wants now | Offers / withholds | Posture changes when |
 | ----- | --------- | ----------------- | -------------------- |
-| [[celia-parel\|Celia]] | Preserve names and the change in orders. | Offers the sorted sequence; withholds it from anyone who treats the grave as loot. | The party records a name or refuses a body. |
-| [[oren-vask\|Oren]] | Get the living toward a safe route. | Offers his route markers; withholds leadership after a living claim. | Someone picks, breaks, or digs. |
-| [[jean-claude-tabarnack\|Jean-Claude]] | His existing catatonia remains part of the pressure. | His seal can confirm the authority system without requiring him to speak. | The party protects his body or tries to use his heritage as a tool. |
+| [[celia-parel|Celia]] | Preserve names and the change in orders. | Offers the sorted sequence; withholds it from anyone who treats the grave as loot. | The party records a name or refuses a body. |
+| [[oren-vask|Oren]] | Get the living toward a safe route. | Offers his route markers; withholds leadership after a living claim. | Someone picks, breaks, or digs. |
+| [[jean-claude-tabarnack|Jean-Claude]] | His existing catatonia remains part of the pressure. | His seal can confirm the authority system without requiring him to speak. | The party protects his body or tries to use his heritage as a tool. |
 
 ## Checks & Costs
 

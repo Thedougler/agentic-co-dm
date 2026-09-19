@@ -163,7 +163,7 @@ Mobile ranged and melee skirmisher — Sneak Attack (3d6) on the blunderbuss is 
 | Item | Notes |
 | ---- | ----- |
 | Cloak of the Manta Ray | Swim 60 ft and water breathing while worn |
-| [[Flying Boots\|Winged Boots]] | 4 charges; regain 1d4 at dawn |
+| [[flying-boots|Winged Boots]] | 4 charges; regain 1d4 at dawn |
 
 ### Carried
 

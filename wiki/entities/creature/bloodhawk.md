@@ -1,6 +1,7 @@
 ---
 title: Bloodhawk
 aliases:
+  - Bloodhawk
   - Aruhe - Bloodhawk
 category: entities
 tags: [shattered-sea, aruhe, creature, apex-predator, aerial]
@@ -8,7 +9,7 @@ sources:
   - "wiki/_archive/Aruhe - Bloodhawk.md"
   - "wiki/_raw/Aruhe - Bloodhawk.md"
 created: 2026-09-12T05:40:07Z
-updated: 2026-09-18T06:39:10Z
+updated: 2026-09-19T08:26:00Z
 type: creature
 lifecycle: proposed
 reveal: unrevealed

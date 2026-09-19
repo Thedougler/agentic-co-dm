@@ -34,9 +34,9 @@ tier: supporting
 | | |
 | --- | --- |
 | **Nature** | A smuggling network, refugee shelter, and underground community-defense system. |
-| **Scope** | Calveno-centered, within the wider [[the-passage\|Passage]] route network. |
-| **Base** | [[Warren\|The Warren]] beneath [[calven-and-calveno\|Calven and Calveno]]. |
-| **Leader** | [[nona-black-jaw\|Nona Black-Jaw]], who runs the Warren anchor. |
+| **Scope** | Calveno-centered, within the wider [[the-passage|Passage]] route network. |
+| **Base** | [[Warren|The Warren]] beneath [[calven-and-calveno|Calven and Calveno]]. |
+| **Leader** | [[nona-black-jaw|Nona Black-Jaw]], who runs the Warren anchor. |
 | **Public purpose** | Move goods and messages, shelter fugitives, and protect the community outside Crown control. |
 | **Signature method** | Family trust, forged documents, bribes, couriers, safe shelter, and sabotage. |
 | **Current posture** | Acting. The Run keeps its operations moving while Crown pressure and Perrin's favor shape its next work. |
@@ -54,7 +54,7 @@ tier: supporting
 ## Current State
 
 - **Status quo.** The Run smuggles goods and forges documents. It shelters fugitives and bribes officials. It also moves messages and hides people who need hiding. It sabotages Crown operations.
-- **Recent change.** In Session 03, [[perrin-black-jaw\|Perrin]] found [[nona-black-jaw\|Nona]]. She called off the attacks once she learned he was not captured, accepted his promise of one favor without conditions, and gave him a sending stone.
+- **Recent change.** In Session 03, [[perrin-black-jaw|Perrin]] found [[nona-black-jaw|Nona]]. She called off the attacks once she learned he was not captured, accepted his promise of one favor without conditions, and gave him a sending stone.
 - **Pressure.** The Run must keep its sanctuary and operations intact while Crown operations continue to threaten the network.
 - **Strength.** Family loyalty and route knowledge sit beside forged papers, bribed officials, shelter, couriers, and community defense.
 - **Vulnerability.** Its work depends on sanctuary, trust, and the Warren remaining safe enough to anchor the routes.
@@ -70,7 +70,7 @@ tier: supporting
 
 **Needs.** The Warren, trusted family routes, working couriers, forged documents, and people willing to carry out Nona's rules.
 
-**Opposition.** [[dravosi-crown\|The Dravosi Crown]] and any threat that exposes the Warren or turns its routes against the people using them.
+**Opposition.** [[dravosi-crown|The Dravosi Crown]] and any threat that exposes the Warren or turns its routes against the people using them.
 
 **Next signal.** A courier arrives with a message, or a safehouse admits someone who needs to disappear. A Crown operation may also be quietly disrupted.
 
@@ -82,17 +82,17 @@ tier: supporting
 
 | Asset | Type | Location | What it enables | Condition |
 | --- | --- | --- | --- | --- |
-| [[Warren\|The Warren]] | Access / Refuge | Beneath Calveno | Sanctuary, route coordination, and a protected community | Active anchor |
+| [[Warren|The Warren]] | Access / Refuge | Beneath Calveno | Sanctuary, route coordination, and a protected community | Active anchor |
 | Passage route network | Access / Information | Calveno and connected routes | Couriers, shelter, messages, and movement outside Crown records | Working |
 | Forged documents and bribes | Influence / Access | Wherever the Run operates | Movement, concealment, and disrupted Crown oversight | Ongoing |
-| Nona's sending stone | Information | With [[perrin-black-jaw\|Perrin]] | A direct call from Nona tied to the favor he owes | Available |
+| Nona's sending stone | Information | With [[perrin-black-jaw|Perrin]] | A direct call from Nona tied to the favor he owes | Available |
 
 ## People & Structure
 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
-| [[nona-black-jaw\|Nona Black-Jaw]] | Matriarch and Warren anchor leader | Keep the Run, its people, and its sanctuary alive | Personally enforces the four rules |
-| [[perrin-black-jaw\|Perrin]] | Grandson, current PC, and favor-holder | Survive and answer Nona's request when it comes | Believed missing until Session 03 |
+| [[nona-black-jaw|Nona Black-Jaw]] | Matriarch and Warren anchor leader | Keep the Run, its people, and its sanctuary alive | Personally enforces the four rules |
+| [[perrin-black-jaw|Perrin]] | Grandson, current PC, and favor-holder | Survive and answer Nona's request when it comes | Believed missing until Session 03 |
 | [[Anzolo]] | Tortle enforcer and Passage-adjacent ally | Find Perrin and carry out Nona's orders | Deployed before the call-off reached him |
 | [[Cobb]] | La Vasca contact under Black-Jaw colors | Keep the Run's local contact working | Supports the anchor Run |
 
@@ -100,16 +100,16 @@ tier: supporting
 
 | Place | Presence | What they control or need here | Current pressure |
 | --- | --- | --- | --- |
-| [[Warren\|The Warren]] | Headquarters / Hidden | Sanctuary, people, and route coordination | Must remain protected |
-| [[calven-and-calveno\|Calven and Calveno]] | Strong / Hidden | Safehouses, officials, couriers, and Crown-facing operations | Crown scrutiny |
+| [[Warren|The Warren]] | Headquarters / Hidden | Sanctuary, people, and route coordination | Must remain protected |
+| [[calven-and-calveno|Calven and Calveno]] | Strong / Hidden | Safehouses, officials, couriers, and Crown-facing operations | Crown scrutiny |
 
 ## Connections
 
 | Faction / person | Stance | What The Black-Jaw Run wants from them | Leverage, debt, or friction |
 | --- | --- | --- | --- |
-| [[the-passage\|The Passage]] | Allied | Shared routes, shelter, and protection for Kin | The Run operates within the wider network |
-| [[dravosi-crown\|The Dravosi Crown]] | Hostile | Fewer inspections and less interference | Crown operations threaten the Run's sanctuary |
-| [[perrin-black-jaw\|Perrin]] | Friendly | One favor without conditions | Nona holds the sending stone's call over him |
+| [[the-passage|The Passage]] | Allied | Shared routes, shelter, and protection for Kin | The Run operates within the wider network |
+| [[dravosi-crown|The Dravosi Crown]] | Hostile | Fewer inspections and less interference | Crown operations threaten the Run's sanctuary |
+| [[perrin-black-jaw|Perrin]] | Friendly | One favor without conditions | Nona holds the sending stone's call over him |
 | [[rattkin-runs-and-black-jaw-run]] | Parent network | The wider Runs remain readable to one another | Black-Jaw is the visible Calveno face |
 
 ### Party

@@ -64,8 +64,8 @@ summary: "The survivors state what they choose to obey and point the party towar
 
 | Actor | Wants now | Offers / withholds | Posture changes when |
 | ----- | --------- | ----------------- | -------------------- |
-| [[celia-parel\|Celia]] | Wants the party to distinguish respect from obedience. | Offers the survivors' reasons; withholds endorsement of the Gold objective. | The party calls the dead expendable or treats the Grove as a prize. |
-| [[oren-vask\|Oren]] | Wants one last clear route decision. | Offers the safest approach he knows; withholds a promise that it is safe from Skarn. | The party knowingly makes a living claim. |
+| [[celia-parel|Celia]] | Wants the party to distinguish respect from obedience. | Offers the survivors' reasons; withholds endorsement of the Gold objective. | The party calls the dead expendable or treats the Grove as a prize. |
+| [[oren-vask|Oren]] | Wants one last clear route decision. | Offers the safest approach he knows; withholds a promise that it is safe from Skarn. | The party knowingly makes a living claim. |
 | [[Auralis]] | Wants Perrin to use the guava as a hand against the immediate threat. | Offers an early warning and the word “CONSUME.” | Perrin obeys, refuses, or chooses a third action. |
 
 ## Player Levers

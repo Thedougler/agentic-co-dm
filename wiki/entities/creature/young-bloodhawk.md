@@ -1,5 +1,4 @@
 ---
----
 title: Young Bloodhawk
 aliases:
   - Young Bloodhawk

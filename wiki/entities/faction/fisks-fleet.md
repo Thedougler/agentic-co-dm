@@ -113,8 +113,8 @@ No independent secondary agenda exists for a dissolved fleet. Keep current conse
  
 | Asset | Type | Location | What it enables | Condition |
 | --- | --- | --- | --- | --- |
-| Captain souls | Information / Influence | [[delmar-fisk\|Delmar Fisk]] | Distinct expertise, memories, and reactions | Bound; responds to triggers |
-| Brass flagon soul-anchor | Magic / Access | [[delmar-fisk\|Delmar Fisk]] | Brings back a captain who is already active | Present; custody is not recorded here |
+| Captain souls | Information / Influence | [[delmar-fisk|Delmar Fisk]] | Distinct expertise, memories, and reactions | Bound; responds to triggers |
+| Brass flagon soul-anchor | Magic / Access | [[delmar-fisk|Delmar Fisk]] | Brings back a captain who is already active | Present; custody is not recorded here |
 | Shrine-operation knowledge | Information | Shared among the captains | Explains the route, teams, and Pearl theft | Fragmented across the voices |
 
 ---
@@ -124,12 +124,12 @@ No independent secondary agenda exists for a dissolved fleet. Keep current conse
 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
-| [[delmar-fisk\|Delmar Fisk]] | Rear Admiral and current host | Survive and recover the Pearl | Carries all five captains |
-| [[rael-corven\|Rael Corven]] | Flag captain of the *[[red-lady\|Red Lady]]* | Protect Delmar and act decisively | Loudest and most trusted captain voice |
-| [[Maren]] | Captain of the *[[the-narrow\|Narrow]]* | Reject imposed authority and blocked passage | Quickest to challenge command |
-| [[detto-kalash\|Detto Kalash]] | Captain of the *[[Heft]]* | Solve physical obstacles directly | Blunt and difficult to redirect |
-| [[sienne-orre\|Sienne Orre]] | Captain of the *[[Fernen]]* | Gather enough information before acting | Slows action when evidence is thin |
-| [[bastian-ookage\|Bastian Ookage]] | Captain of the *[[the-loud-argument\|Loud Argument]]* | Turn pressure into movement and spectacle | Most emotionally expressive of the five |
+| [[delmar-fisk|Delmar Fisk]] | Rear Admiral and current host | Survive and recover the Pearl | Carries all five captains |
+| [[rael-corven|Rael Corven]] | Flag captain of the *[[red-lady|Red Lady]]* | Protect Delmar and act decisively | Loudest and most trusted captain voice |
+| [[Maren]] | Captain of the *[[the-narrow|Narrow]]* | Reject imposed authority and blocked passage | Quickest to challenge command |
+| [[detto-kalash|Detto Kalash]] | Captain of the *[[Heft]]* | Solve physical obstacles directly | Blunt and difficult to redirect |
+| [[sienne-orre|Sienne Orre]] | Captain of the *[[Fernen]]* | Gather enough information before acting | Slows action when evidence is thin |
+| [[bastian-ookage|Bastian Ookage]] | Captain of the *[[the-loud-argument|Loud Argument]]* | Turn pressure into movement and spectacle | Most emotionally expressive of the five |
 
 ### Chain of Action
 
@@ -144,8 +144,8 @@ No independent secondary agenda exists for a dissolved fleet. Keep current conse
 
 | Place | Presence | What they control or need here | Current pressure |
 | --- | --- | --- | --- |
-| [[delmar-fisk\|Delmar Fisk]] | Headquarters / Mobile | The only current physical host of the captains | Delmar's survival and control |
-| [[vel-orn\|Vel Orn]] | Past operation | The origin point of the Pearl theft | The commission's hidden purpose remains relevant |
+| [[delmar-fisk|Delmar Fisk]] | Headquarters / Mobile | The only current physical host of the captains | Delmar's survival and control |
+| [[vel-orn|Vel Orn]] | Past operation | The origin point of the Pearl theft | The commission's hidden purpose remains relevant |
 | [[The Drowned Maw]] | Contested wreck | The fleet's wreck and the Pearl's last known fall | [[Umberlee]]'s claim surrounds the site |
 
 ---
@@ -154,10 +154,10 @@ No independent secondary agenda exists for a dissolved fleet. Keep current conse
 
 | Faction / person | Stance | What Fisk's Fleet wants from them | Leverage, debt, or friction |
 | --- | --- | --- | --- |
-| [[delmar-fisk\|Delmar Fisk]] | Bound host | Survival and continued movement | His body carries the captains |
-| [[chain-council\|Chain Council]] | Used commission | Recognition of what the commission caused | The Council commissioned the theft |
-| [[tessarine-concordat\|Tessarine Concordat]] | Hidden principal | The truth behind the commission | It used the Council to keep the Pearl from [[aldric-drave\|Aldric Drave]] |
-| [[pearl-of-souls\|Pearl of Souls]] | Target / prison | Recovery of the Pearl and the crews' souls | [[Umberlee]]'s claim binds the Pearl to the souls |
+| [[delmar-fisk|Delmar Fisk]] | Bound host | Survival and continued movement | His body carries the captains |
+| [[chain-council|Chain Council]] | Used commission | Recognition of what the commission caused | The Council commissioned the theft |
+| [[tessarine-concordat|Tessarine Concordat]] | Hidden principal | The truth behind the commission | It used the Council to keep the Pearl from [[aldric-drave|Aldric Drave]] |
+| [[pearl-of-souls|Pearl of Souls]] | Target / prison | Recovery of the Pearl and the crews' souls | [[Umberlee]]'s claim binds the Pearl to the souls |
 | [[The Drowned Maw]] | Destroyer / contested site | Access to the wreck's last evidence | The Maw swallowed the Pearl's trail |
 
 ### Party
