@@ -33,6 +33,12 @@ after Cliffhanger dulls danger faster than it builds excitement.
 The contest resolved; physical situation changed. DM can state what changed
 and what the next beat's trigger is.
 
+A predetermined outcome — the villain escapes no matter what — is not a
+contest. If the result is decided before the players act, the beat is
+narration, not a Cliffhanger. Player tactics, rolls, and choices determine the
+outcome. Prepare what each side wants and what happens on success, failure, and
+partial result; never lock the ending.
+
 ## How to fill a Cliffhanger
 
 1. **Choose the card.** Read [references/cliffhanger-cards.md](references/cliffhanger-cards.md).

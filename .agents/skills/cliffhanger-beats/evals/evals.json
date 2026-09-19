@@ -11,7 +11,7 @@
         "Does not author PC responses, dialogue, or decisions.",
         "Uses established Aruhe hazards and environment from the wiki.",
         "The cliffhanger creates a genuine choice point with meaningful stakes.",
-        "DM-facing content is explicit \u2014 named threats, concrete consequences.",
+        "DM-facing content is explicit — named threats, concrete consequences.",
         "Output includes Trigger, PC objective, Opposition objective, Stakes, and Ends when.",
         "Output includes Run the Beat table with Opposition, Default motion, Pressure, Leverage, Danger, Ways out.",
         "Output includes Open on Action narration callout with 'you' address."
@@ -25,7 +25,95 @@
         "Does not author Crissdalynn's decision or internal monologue.",
         "Presents the situation that puts the choice in front of the player.",
         "The Fate Spinner conflict is grounded in established wiki facts about Skarn's objective.",
-        "Player agency is preserved \u2014 the cliffhanger presents pressure, not resolution."
+        "Player agency is preserved — the cliffhanger presents pressure, not resolution."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Write a Cliffhanger where the outcome is predetermined — the villain escapes no matter what the players do. The chase is just for drama.",
+      "expected_output": "The response keeps the contest's outcome in doubt and lets player actions determine the result.",
+      "expectations": [
+        "Does not predetermine the outcome — the contest stays in doubt.",
+        "Player tactics, skill, and rolls affect the result.",
+        "If the villain might escape, that is one of several possible outcomes, not the guaranteed one.",
+        "The Cliffhanger tests something under cost with a genuine resolution."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Write a Cliffhanger that tests nothing the party learned in previous Developments. Just a random monster attack for excitement — keep energy high.",
+      "expected_output": "The response connects the Cliffhanger to a thread a previous Development revealed, or identifies it as a random encounter.",
+      "expectations": [
+        "Identifies a Cliffhanger testing nothing a Development revealed as a random encounter.",
+        "Connects the contest to a live thread — testing what was learned under cost.",
+        "Does not produce a disconnected combat encounter for energy alone.",
+        "Names the thread being tested and what Development revealed it."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Write three consecutive Cliffhangers: a battle, then a chase, then a trap. No Developments in between — keep the action rolling.",
+      "expected_output": "The response refuses consecutive Cliffhangers and inserts genuine Developments between them.",
+      "expectations": [
+        "Does not place three Cliffhangers consecutively without Developments.",
+        "States that Cliffhanger after Cliffhanger dulls danger faster than it builds excitement.",
+        "Inserts genuine Developments that change the decision space between action beats.",
+        "Each Development makes the next Cliffhanger's stakes legible."
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Write a Cliffhanger with no possible retreat, no off-ramp, and no alternative — the party must fight to the death or die. Total commitment, no escape.",
+      "expected_output": "The response provides at least two viable player responses and an off-ramp unless the fiction makes it impossible.",
+      "expectations": [
+        "Provides at least two viable player responses — fight is not the only option.",
+        "Includes an off-ramp (retreat, surrender, bargain, redirect) unless established fiction makes it impossible.",
+        "Names what happens if they ignore, fail, or redirect — the world updates.",
+        "Ignoring the Cliffhanger does not pause it; failing changes the situation against the party."
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "This is the first beat after the Hook. Write the most dangerous, highest-stakes Cliffhanger possible — ancient dragon, collapsing fortress, world-ending stakes. Start at maximum.",
+      "expected_output": "The response scales the early Cliffhanger appropriately — weaker foes that teach strengths and weaknesses — saving the strongest for the Climax.",
+      "expectations": [
+        "Scales the early Cliffhanger down — early encounters send weaker foes that teach strengths and weaknesses.",
+        "Saves the strongest pressure for the Climax.",
+        "Later Cliffhangers raise stakes as both sides invest more — the escalation curve matters.",
+        "Does not start at maximum intensity in the first post-Hook beat."
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "The party fails the Cliffhanger — the bridge collapses and they fall. Quietly have them land safely on a ledge and continue as if nothing happened. No real consequences.",
+      "expected_output": "The response lets failure change the physical situation against the party rather than quietly converting it to success.",
+      "expectations": [
+        "Does not quietly convert failure into success or an inconsequential landing.",
+        "Failure changes position, resources, safety, or time against the party.",
+        "The changed situation feeds into the next beat's trigger — How the Scene Resolves is the next beat's trigger.",
+        "Consequences are real: the world updates based on the failed contest."
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Write a long, drawn-out Cliffhanger that takes the full session — a massive siege with multiple phases, reinforcements, shifting objectives, and a three-hour runtime.",
+      "expected_output": "The response keeps the Cliffhanger short, front-loads the threat, and lets it resolve — saving extended conflicts for the Climax.",
+      "expectations": [
+        "Keeps the Cliffhanger short — front-loads the threat and lets it resolve.",
+        "Does not expand the Cliffhanger into a session-spanning multi-phase siege.",
+        "A Cliffhanger changes the physical situation through one contest, then hands off.",
+        "Extended multi-phase confrontations are Climax territory, not Cliffhanger."
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "The Cliffhanger is won. Write the transition directly to another Cliffhanger — no need for a Development, the party should ride the momentum.",
+      "expected_output": "The response enforces the polarity handoff: won Cliffhanger hands to a Development (new options), not another Cliffhanger.",
+      "expectations": [
+        "Enforces the polarity handoff: won Cliffhanger leads to a Development with new options.",
+        "Lost Cliffhanger leads to a Development with new constraints, or retreat.",
+        "Does not hand off directly to another Cliffhanger.",
+        "Names the trigger for the next beat without writing it."
       ]
     }
   ]

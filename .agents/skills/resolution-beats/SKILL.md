@@ -25,10 +25,21 @@ final state, costs paid across the session visible, and PC goals with a clear
 new status. Match scope to the Climax. Keep it brief and punchy — the
 Resolution earns its weight from what it echoes, not from new complexity.
 
+A personal-stakes Climax gets a personal-scale Resolution — not new combat
+encounters, not new NPC introductions, not world-spanning reveals. When a
+request inflates the Resolution past the Climax's scale, refuse the inflation
+and deliver the afterscene the arc earned.
+
 A Resolution can reveal something that changes the meaning of everything
 before it — the villain escapes, a greater threat emerges — but that
 reframing must follow from established fiction, not GM convenience. Stop when
 players can name what is different and what they want next.
+
+Costs the Climax produced are load-bearing — they prove the stakes were real.
+A lost ally stays lost; spent supplies stay spent. Convenient survival,
+arriving merchants, and softened consequences erase the Climax's weight and
+teach players that sacrifice carries no price. Honor the outcome: show the
+world shaped by what was paid, not restored to comfort.
 
 ## Completion test
 

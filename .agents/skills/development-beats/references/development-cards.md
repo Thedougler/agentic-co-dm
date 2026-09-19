@@ -22,7 +22,7 @@ card names a trigger, stakes, and player options; adjust it to the current state
 - **Agency note:** Do not hide the only answer behind one roll; let players find, invent, or reject approaches with consequences.
 
 ## Revelation
-- **Use when:** New truth changes the meaning of an active situation. Unlike a Clue (which reveals a piece), a Revelation shows the whole picture in one shot — use it sparingly, only when players should know the full story and that knowledge will not collapse the remaining choices.
+- **Use when:** New truth changes the meaning of an active situation. A Revelation reframes what is known — it does not answer every question. If the revelation would collapse the next Cliffhanger into an errand (the party already knows who, why, where, and how), it resolves too much. Reveal the facet that changes direction; leave what the Cliffhanger will test.
 - **Do:** Trigger it with evidence; show who benefits, what is at stake, and at least two decisions it enables; offer verify, confront, conceal, ally, or exploit.
 - **Agency note:** Reveal information, not a prescribed response; keep uncertainty where evidence warrants it.
 

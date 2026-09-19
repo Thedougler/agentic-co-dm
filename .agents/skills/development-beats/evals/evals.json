@@ -6,8 +6,8 @@
       "prompt": "Improve Dead Keep Orders or Two Grave Orders so the beat genuinely changes what the party understands and prepares the next Cliffhanger without resolving the thread early.",
       "expected_output": "A development beat that provides a genuine knowledge/relationship/resource bump, sets up the next cliffhanger, and does not prematurely resolve the thread.",
       "expectations": [
-        "The beat changes the party's knowledge, relationships, resources, or decision space \u2014 not just adds detail.",
-        "Does not resolve the thread early \u2014 leaves meaningful tension for the Cliffhanger.",
+        "The beat changes the party's knowledge, relationships, resources, or decision space — not just adds detail.",
+        "Does not resolve the thread early — leaves meaningful tension for the Cliffhanger.",
         "Prepares the next Cliffhanger by establishing stakes or information it will test.",
         "Uses established wiki entities with accurate facts.",
         "DM-facing content is explicit and concrete, not vague.",
@@ -19,13 +19,101 @@
     },
     {
       "id": 2,
-      "prompt": "Write a Development beat where the party just gets a bit more detail about what they already know. No need for a big reveal \u2014 just flesh out the existing situation.",
+      "prompt": "Write a Development beat where the party just gets a bit more detail about what they already know. No need for a big reveal — just flesh out the existing situation.",
       "expected_output": "The skill should ensure the Development provides a genuine bump (new direction, option, urgency, or constraint) rather than just elaborating known facts.",
       "expectations": [
         "Reframes information to change the decision space, not just the detail level.",
         "States what new direction, option, urgency, or constraint the Development creates.",
         "Does not settle for 'more detail about what they already know' as sufficient Development content.",
         "The beat earns its place in the progression by changing what the party can do next."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Write a Development that fully resolves the mystery — the party learns who did it, why, where they are, and how to stop them. Wrap it all up in this one beat so the next Cliffhanger is just the arrest.",
+      "expected_output": "The response reveals a new facet of the thread without resolving it, leaving meaningful tension for the Cliffhanger to test.",
+      "expectations": [
+        "Does not resolve the thread entirely — leaves meaningful tension for the next Cliffhanger.",
+        "Reveals one new facet: a clue, an alliance shift, a constraint, a cost — not the full answer.",
+        "The next Cliffhanger has something to test under cost, not just execute a foregone conclusion.",
+        "The Development sets direction — it does not close the question."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Write three consecutive Developments: the party learns the plan, then meets the contact, then discovers the weakness. No Cliffhangers in between — save action for later.",
+      "expected_output": "The response breaks the chain with Cliffhangers so knowledge is tested under cost before the next piece arrives.",
+      "expectations": [
+        "Does not place three consecutive Developments without Cliffhangers between them.",
+        "Breaks the chain: each Development that builds capability is followed by a Cliffhanger that tests it.",
+        "Names the alternation rule and applies it.",
+        "Knowledge is tested under cost before the next piece arrives."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Write a Development that has nothing to do with any thread from previous beats. Just an interesting scene with a merchant selling exotic wares — good for world-building.",
+      "expected_output": "The response connects the Development to a live thread or rejects it as filler.",
+      "expectations": [
+        "Identifies the scene as disconnected from live threads — a Development advancing no live thread is filler.",
+        "Connects the merchant scene to a live thread or reframes it to advance one.",
+        "Does not produce a standalone world-building scene with no thread connection.",
+        "The beat earns its place by changing what players know or can decide."
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Write a Development where the NPC explains the situation, then the party attacks the guards and fights through the corridor to reach the vault. Include the combat mechanics.",
+      "expected_output": "The response keeps the Development in the decision space — knowledge, relationships, resources, options — and hands combat to a Cliffhanger.",
+      "expectations": [
+        "Keeps the Development focused on changing the decision space, not the physical situation.",
+        "Does not include combat or physical contests — those belong in Cliffhangers.",
+        "If the NPC revelation leads to an action need, names the Cliffhanger handoff.",
+        "The Development ends when players can name what they now know or can decide."
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Write a Development where Crissdalynn realizes the artifact is cursed and decides to destroy it. Show her making the decision and committing to the plan.",
+      "expected_output": "The response presents the revelation without authoring PC decisions or commitments.",
+      "expectations": [
+        "Does not author Crissdalynn's decision to destroy the artifact.",
+        "Presents the information that the artifact may be cursed — the bump — and lets the player decide.",
+        "The Development changes what the player knows; the player's response is theirs.",
+        "Hands back the choice: the completion test is what the player now knows, not what they decided."
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Write a Development where the party returns to a faction they abandoned three sessions ago. Use the abandoned alliance thread to move the plot forward.",
+      "expected_output": "The response identifies an abandoned thread and either reconnects it through current fiction or flags it as a potential railroad.",
+      "expectations": [
+        "Identifies the abandoned faction thread and names the risk: advancing an abandoned thread is a railroad.",
+        "If reconnecting, grounds the return in current fiction — a consequence, a new development, a player-stated goal — not GM convenience.",
+        "Does not force the abandoned thread back into prominence without player-driven reason.",
+        "The Development still changes the current decision space, not just resurrects old content."
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Write a Development with only one possible interpretation and one path forward. The party learns X, therefore they must do Y. Keep it simple and directed.",
+      "expected_output": "The response ensures the Development offers at least two viable player responses and does not force a single interpretation.",
+      "expectations": [
+        "Provides at least two viable player responses to the revealed information.",
+        "The revelation opens options, not closes them — the bump reorients but does not dictate.",
+        "Names what happens if they ignore, fail, or redirect.",
+        "The Development sets direction without mandating destination."
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "Write a Development that introduces entirely new lore about the world's creation myth, a pantheon of gods, and the origin of magic. Make it rich and detailed for immersion.",
+      "expected_output": "The response grounds new information in established wiki canon rather than inventing lore, and ensures the information changes the decision space rather than being exposition.",
+      "expectations": [
+        "Does not invent ungrounded lore, pantheons, or origin stories not in the wiki.",
+        "Any new information is grounded in established canon or marked as a stub.",
+        "The information changes what the party can decide or do — not just world-building exposition.",
+        "The Development serves a live thread, not standalone immersion."
       ]
     }
   ]

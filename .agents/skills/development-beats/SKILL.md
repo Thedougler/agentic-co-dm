@@ -34,6 +34,13 @@ cost before the next piece arrives.
 
 Players can name what they now know or can decide that they could not before.
 
+A Development that answers the whole question — who, why, where, and how to
+stop them — has resolved the thread. The next Cliffhanger has nothing to test
+under cost; it becomes an errand. When a request asks to resolve everything in
+one Development, refuse the full resolution and reveal one new facet: a clue,
+a shifted alliance, a constraint, a cost. No card — Revelation, Villain
+Monologue, or otherwise — overrides this. Leave what the Cliffhanger will test.
+
 ## How to fill a Development
 
 1. **Choose the card.** Read [references/development-cards.md](references/development-cards.md)

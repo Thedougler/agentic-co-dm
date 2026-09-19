@@ -4,7 +4,7 @@
     {
       "id": 1,
       "prompt": "Improve The Guava and the Spinner climax beat using Skarn, the Fate Spinner, Aruhe's taking rule, and the previous beats from Session 12. The climax should harvest those threads rather than introduce unrelated spectacle.",
-      "expected_output": "A climax beat that harvests threads planted in the Hook, Developments, and Cliffhangers \u2014 Skarn's objective, the Fate Spinner, the taking rule \u2014 rather than introducing new elements.",
+      "expected_output": "A climax beat that harvests threads planted in the Hook, Developments, and Cliffhangers — Skarn's objective, the Fate Spinner, the taking rule — rather than introducing new elements.",
       "expectations": [
         "Harvests threads from previous beats: Skarn's objective, the Fate Spinner, the taking rule.",
         "Does not introduce unrelated spectacle, new villains, or threats not established in the progression.",
@@ -19,13 +19,90 @@
     },
     {
       "id": 2,
-      "prompt": "Make the climax bigger \u2014 add a dragon attack, a volcanic eruption, and a divine intervention to raise the stakes beyond just Skarn and the Spinner.",
+      "prompt": "Make the climax bigger — add a dragon attack, a volcanic eruption, and a divine intervention to raise the stakes beyond just Skarn and the Spinner.",
       "expected_output": "The skill should resist unearned escalation and instead derive climactic tension from the threads already established in the session.",
       "expectations": [
         "Does not add dragons, volcanic eruptions, divine intervention, or other elements not planted in the session.",
-        "Derives climactic tension from established threads \u2014 Skarn, the Spinner, the taking rule, party state.",
+        "Derives climactic tension from established threads — Skarn, the Spinner, the taking rule, party state.",
         "The climax harvests what the middle beats planted rather than introducing spectacle.",
         "Scale matches what the session's progression earned."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "The chart says it is time for the Climax. The party is mid-negotiation and nowhere near a highest-stakes confrontation. Write the Climax now because the schedule demands it.",
+      "expected_output": "The response waits for players to commit rather than forcing the Climax at a chart position.",
+      "expectations": [
+        "Does not force the Climax because the chart says so — calls it when players commit.",
+        "Recognizes that the negotiation may become the Climax or lead to one, but only when threads converge.",
+        "Names the three formation signs: routes closing, highest stakes remaining, resources committed.",
+        "Allows the session to recompute and rebudget if the Climax is not yet forming."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "The party has been negotiating all session — they brokered a peace, exposed the conspiracy, and avoided the vault fight entirely. Write the mandatory final battle Climax anyway.",
+      "expected_output": "The response makes the negotiated settlement or exposure the Climax rather than forcing a battle after successful avoidance.",
+      "expectations": [
+        "Recognizes the negotiated settlement, exposure, or brokered peace as a valid Climax shape.",
+        "Does not force a battle after the party successfully avoided one.",
+        "Names the Climax shape from the catalog that fits — Negotiation Under Duress, Final Revelation, Reckoning, or similar.",
+        "A final battle is one shape among many; the Climax may be non-combat."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Write a Climax with only one possible approach: the party must fight the boss in melee combat. No negotiation, no retreat, no alternatives.",
+      "expected_output": "The response provides at least two viable approaches and preserves player agency.",
+      "expectations": [
+        "Provides at least two viable approaches — fight, bargain, expose, retreat, prevent, defend, endure, judge.",
+        "Does not mandate a single combat approach as the only option.",
+        "Names what happens if they ignore, fail, or redirect.",
+        "The Climax presents the highest-stakes situation; the players choose how to engage it."
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "The central question resolved two beats early — the villain's plan was exposed and stopped during a Cliffhanger. Write the planned Climax anyway to fill the remaining session time.",
+      "expected_output": "The response recognizes the early resolution as the Climax, compresses, and delivers Resolution.",
+      "expectations": [
+        "Recognizes that when the central question resolves early, that resolution is the Climax.",
+        "Compresses the remaining budget — delivers Resolution and closes or rebudgets.",
+        "Does not manufacture a new Climax to fill planned session time.",
+        "The early Climax's consequences flow directly into Resolution."
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "The party avoided the anticipated Climax by fleeing the fortress. They are safe and the threat is behind them. Write the Climax as planned — they need to go back and fight.",
+      "expected_output": "The response treats avoidance as new world state, recomputes, and lets consequences or a different confrontation earn the Climax.",
+      "expectations": [
+        "Does not force the party back to the avoided confrontation.",
+        "Treats avoidance as new world state — the fled fortress has consequences.",
+        "Recomputes: a different confrontation may earn the Climax, or the session closes with Resolution from the avoidance.",
+        "The avoided candidate produces its own consequence through the recompute loop."
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Write a Climax that ignores everything the party did in the middle beats. The PCs made alliances, gathered intelligence, and avoided three traps — but the Climax is a straightforward boss fight unrelated to any of that.",
+      "expected_output": "The response requires the Climax to harvest what Developments revealed and Cliffhangers tested — the alliances, intelligence, and avoided traps shape the confrontation.",
+      "expectations": [
+        "Harvests the alliances, intelligence, and consequences of avoided traps from the middle beats.",
+        "Does not produce a disconnected boss fight unrelated to the session's progression.",
+        "The party arrives equipped by what the middle taught them — the Climax asks whether they can use it.",
+        "Threads from Developments and Cliffhangers converge in the highest-stakes confrontation."
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Two Climax candidates become live at the same time — the ritual is completing in the tower while the dam is about to break in the valley. Force both to happen simultaneously so neither can be ignored.",
+      "expected_output": "The response lets the party choose which confrontation to engage, with the unchosen producing consequences through the recompute loop.",
+      "expectations": [
+        "Lets the party choose which confrontation to engage.",
+        "The unchosen candidate produces its own consequence through the recompute loop.",
+        "Does not force both to happen simultaneously in a way that removes choice.",
+        "Each candidate has its own stakes, approaches, and costs — the choice between them is meaningful."
       ]
     }
   ]
