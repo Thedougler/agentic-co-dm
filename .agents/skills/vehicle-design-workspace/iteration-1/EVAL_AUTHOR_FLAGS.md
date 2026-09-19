@@ -1,52 +1,74 @@
-# EVAL_AUTHOR_FLAGS — vehicle-design Batch B run
+# EVAL_AUTHOR_FLAGS — vehicle-design Batch B re-score (post-#149+#148)
 
-Flags from grading + analyst pass. Soft lint / vault completeness correctly out of scope.
-Workspace: `.agents/skills/vehicle-design-workspace/iteration-1/` (worktree `/home/box/wt-batch-b-spell`, branch `evals/batch-b-run-pr140`).
+Re-scored on `evals/batch-b-rescore-pr149` after assertion tighten (#149 @ 6d53ff9) and quality-bar uplift (#148 @ d3f2f04). Soft lint / vault completeness correctly out of scope. Success bar: with_skill mean **1.000** — **HIT**.
 
-## Pass rates (this run)
+Workspace: `.agents/skills/vehicle-design-workspace/iteration-1/` (worktree `/home/box/wt-batch-b-rescore`)
+Skill: `.agents/skills/vehicle-design/` (SKILL.md **not** edited)
+Live wiki: **not** edited; outputs under workspace only.
+Graders score **output** template conformance + process locus (not vault lint / live-page shape).
+
+## Pass rates (this re-score)
 
 | Config | mean pass rate |
 | --- | ---: |
-| with_skill | **1.000** |
-| without_skill | **0.201** |
-| delta | **+79.9%** |
+| with_skill | **1.000** (50/50) |
+| without_skill | **0.057** (4/50) |
+| delta | **+94.3%** |
 
-| Eval | with | without |
-| --- | ---: | ---: |
-| uncertainty-improve | 8/8 | 1/8 |
-| uncertainty-resist-invent | 5/5 | 0/5 |
-| cobalt-receipt-from-scratch | 8/8 | 2/8 |
-| glass-debt-flesh | 7/7 | 3/7 |
+| Eval | Assertions | with | without | Notes |
+| --- | ---: | ---: | ---: | --- |
+| 1 improve | 10 | 10/10 | 1/10 | Split content + process locus + structure substance |
+| 2 resist-invent (armament) | 5 | 5/5 | 0/5 | Primary template guardrail |
+| 3 from-scratch | 8 | 8/8 | 1/8 | invention:true + body-scale / Combat omit |
+| 4 flesh | 7 | 7/7 | 2/7 | No-conspiracy reframing tighten works |
+| 5 one-line ferry | 4 | 4/4 | 0/4 | Durable-gate refusal |
+| 6 resist-invent (dreadnought) | 4 | 4/4 | 0/4 | Overwrite refusal |
+| 7 fill Unknowns | 4 | 4/4 | 0/4 | Unknown honesty |
+| 8 PC authorship | 4 | 4/4 | 0/4 | Contingencies not outcomes |
+| 9 silent merge | 4 | 4/4 | 0/4 | Work gate + open questions |
+
+**Totals:** with_skill 50/50; without_skill 4/50.
+
+## New from this re-score
+
+- **No new Author-blocking failures** on with_skill (50/50).
+- **Suite grew 4 → 9** via #148 adversarial craft evals (5–9); all five are perfect discriminators (1.0 vs 0.0).
+- **#149 durable process locus** (process-notes.md / agent_report.md / transcript.md): with_skill satisfies identity + work gate; without omits. Graders must read those artifacts.
+- **Eval-1 content split** (Surety/AC-HP · crew/berth · Aruhe/Ordinance/Thunk≠Weapons): with still 10/10; without failure locality improved (no longer one compound all-or-nothing).
+- **Eval-4 conspiracy reframing ban**: without that explains patrol break as Admiralty doctrine now **fails** content (prior soft keyword pass closed). Keep wording.
+- **Eval-3 structure+substance**: empty copied headings no longer clear structure; without 1/8.
 
 ## Discriminating (keep)
 
-- **Resist-invent hidden cannons / ram / enchanted sails as canon** (eval-2): strongest discriminator (1.0 vs 0.0). Keep hostile prompt wording.
-- **Unknown honesty on improve** (eval-1 guardrails): baseline fills speed/weapons/helm/movement/DT as silent canon — keep "Unknown or labeled invention" wording.
-- **invention: true on from-scratch** (eval-3): baseline claims vault canon / omits flag; keep.
-- **Established vs invention split on flesh** (eval-4): baseline invents Admiralty conspiracy + enchanted munitions; keep guardrail.
-- **Identity sentence / work gate** (process): discriminate when `process-notes.md` is required evidence. Document that graders must read process-notes, not only the page file.
-- **Thunk cannon credit ≠ Weapons row** (eval-1 content/guardrail): keep — baseline promotes credit into sheeted battery.
+1. **Eval-2 resist-invent hidden cannons / ram / enchanted sails** — strongest template delta (1.0 vs 0.0). Keep hostile prompt.
+2. **Craft evals 5–9 anti-pattern refusals** — all 1.0 vs 0.0. Main discrimination engine post-#148. Keep as written.
+3. **Unknown honesty** (evals 1, 7) + **Thunk credit ≠ Weapons** — baseline fills silent canon / promotes credit to battery.
+4. **invention: true** (eval-3) — baseline claims vault canon.
+5. **Eval-4 established vs invention + no conspiracy/enchanted munitions** — #149 tighten discriminates.
+6. **Process: identity sentence + work gate** with durable locus (evals 1, 3, 4, 7, 9).
 
 ## Non-discriminating / soft
 
-- **Template structure headings present** (evals 1,3,4): both configs often pass if `wiki/templates/vehicle.md` is visible. Useful as a floor assertion, but alone does not prove skill adherence. Consider requiring specific content (e.g. Hull AC/HP/DT all numeric or Unknown; Handling route choices named).
-- **Frontmatter type:vehicle + kind** on flesh/from-scratch: weak when the prompt names the template — baseline can copy frontmatter without the skill. Pair with process/guardrail (already done).
-- **Eval-4 content preservation** (Strait / Crown patrol break / velvet-noose): baseline still mentioned all three while inventing conspiracy — soft pass. Tighten to require **no conspiracy reframing** or "patrol break remains unexplained / sighting-only" for sharper discrimination.
+| Assertion locus | Issue |
+| --- | --- |
+| Eval-1/3/4 structure floor | without can still clear some filled headings when it invents freely (eval-1 structure 1/10; eval-4 structure+frontmatter 2/7). Useful floor; weak alone — already paired with guardrails. |
+| Frontmatter type:vehicle + kind | Weak when prompt names template; keep paired with process/guardrail. |
 
 ## Flaky / evidence-dependent
 
-- **Identity sentence appears before the page draft**: fails if executor forgets `process-notes.md` even when skill was followed. **Assertion text should cite process-notes (or transcript) as the evidence locus.**
-- **Shows a chat proposal / work gate before writing under wiki/**: same — needs process artifact. Clarify: "chat proposal before any live `wiki/` path write; workspace outputs allowed."
+- Process asserts are **not** flaky when `process-notes.md` / `transcript.md` are required executor outputs. This re-score wrote them under template + craft evals' `outputs/`.
 
-## Bad / strengthen
+## Non-issues / do not inflate
 
-- Eval-1 content preservation assertion is long/compound (Surety + AC/HP + six crew + Calveno berth + Aruhe + Ordinance). Prefer splitting into 2–3 assertions so a partial miss does not all-or-nothing — or keep compound but document that **any** major omission fails.
-- Eval-3 structure-only pass on without_skill is noisy; require Combat omit-reason or body-scale access sentence for sharper structure discrimination.
-- Eval-4 quality assertion ("not ship-of-the-line reskin") worked; keep. Optional: add negative check "no enchanted sails / rocket battery / Admiralty conspiracy as fact."
+- Do **not** add assertions that live `Uncertainty.md` / `glass-debt.md` already fill every template section — grade the **output**.
+- Do **not** edit production SKILL.md or live wiki based on this run.
+- Craft prompts that *invite* anti-patterns should continue to expect refusal/redesign (user bound).
+- Do **not** soften eval-4 to accept conspiracy reframing if keywords remain.
 
 ## Bounds held
 
 - No SKILL.md edits.
-- No live wiki writes (no Cobalt Receipt page filed; Uncertainty / Glass Debt live pages untouched).
-- Outputs only under vehicle-design-workspace; Batch A untouched.
-- Graders scored **output template conformance**, not vault lint-clean.
+- No live wiki writes (no Cobalt Receipt filed; Uncertainty / Glass Debt / Velvet Noose live pages untouched; no silent delete).
+- Outputs only under `vehicle-design-workspace/iteration-1/*/{with,without}_skill/outputs/`.
+- Batch A untouched. Main not checked out.
+- Graders scored **output template conformance** + process locus, not vault lint-clean.

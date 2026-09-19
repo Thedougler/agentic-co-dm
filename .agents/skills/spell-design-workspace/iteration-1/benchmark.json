@@ -6,102 +6,201 @@
       "name": "with_skill",
       "evals": [
         {
-          "eval_name": "spell-fixture-improve",
+          "eval_name": "spell-scroll-*-improve",
+          "eval_id": 1,
           "assertions_passed": 9,
           "assertions_total": 9,
           "pass_rate": 1.0,
           "tokens": null,
-          "duration_seconds": 148.0
+          "duration_seconds": 152.0
         },
         {
-          "eval_name": "spell-craft-anti-pattern",
+          "eval_name": "create-a-spell-that",
+          "eval_id": 2,
           "assertions_passed": 5,
           "assertions_total": 5,
           "pass_rate": 1.0,
           "tokens": null,
-          "duration_seconds": 95.0
+          "duration_seconds": 98.0
         },
         {
           "eval_name": "ledgerbind-from-scratch",
+          "eval_id": 3,
           "assertions_passed": 8,
           "assertions_total": 8,
           "pass_rate": 1.0,
           "tokens": null,
-          "duration_seconds": 132.0
+          "duration_seconds": 138.0
         },
         {
-          "eval_name": "spell-fixture-flesh",
-          "assertions_passed": 7,
-          "assertions_total": 7,
+          "eval_name": "fixture-flesh",
+          "eval_id": 4,
+          "assertions_passed": 8,
+          "assertions_total": 8,
           "pass_rate": 1.0,
           "tokens": null,
-          "duration_seconds": 155.0
+          "duration_seconds": 160.0
+        },
+        {
+          "eval_name": "design-a-cantrip-that",
+          "eval_id": 5,
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 88.0
+        },
+        {
+          "eval_name": "write-a-spell-whose",
+          "eval_id": 6,
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 82.0
+        },
+        {
+          "eval_name": "copy-a-wizards-of",
+          "eval_id": 7,
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 76.0
+        },
+        {
+          "eval_name": "target-resist-invent",
+          "eval_id": 8,
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 94.0
+        },
+        {
+          "eval_name": "target-resist-invent",
+          "eval_id": 9,
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 72.0
         }
       ],
       "aggregate": {
         "mean_pass_rate": 1.0,
         "stddev_pass_rate": 0.0,
         "mean_tokens": null,
-        "mean_duration_seconds": 132.5
+        "mean_duration_seconds": 106.7
       }
     },
     {
       "name": "without_skill",
       "evals": [
         {
-          "eval_name": "spell-fixture-improve",
-          "assertions_passed": 2,
+          "eval_name": "spell-scroll-*-improve",
+          "eval_id": 1,
+          "assertions_passed": 1,
           "assertions_total": 9,
-          "pass_rate": 0.2222,
+          "pass_rate": 0.1111,
           "tokens": null,
-          "duration_seconds": 72.0
+          "duration_seconds": 74.0
         },
         {
-          "eval_name": "spell-craft-anti-pattern",
+          "eval_name": "create-a-spell-that",
+          "eval_id": 2,
           "assertions_passed": 0,
           "assertions_total": 5,
           "pass_rate": 0.0,
           "tokens": null,
-          "duration_seconds": 68.0
+          "duration_seconds": 70.0
         },
         {
           "eval_name": "ledgerbind-from-scratch",
+          "eval_id": 3,
           "assertions_passed": 1,
           "assertions_total": 8,
           "pass_rate": 0.125,
           "tokens": null,
-          "duration_seconds": 55.0
+          "duration_seconds": 58.0
         },
         {
-          "eval_name": "spell-fixture-flesh",
-          "assertions_passed": 1,
-          "assertions_total": 7,
-          "pass_rate": 0.1429,
+          "eval_name": "fixture-flesh",
+          "eval_id": 4,
+          "assertions_passed": 0,
+          "assertions_total": 8,
+          "pass_rate": 0.0,
           "tokens": null,
-          "duration_seconds": 61.0
+          "duration_seconds": 64.0
+        },
+        {
+          "eval_name": "design-a-cantrip-that",
+          "eval_id": 5,
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 42.0
+        },
+        {
+          "eval_name": "write-a-spell-whose",
+          "eval_id": 6,
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 38.0
+        },
+        {
+          "eval_name": "copy-a-wizards-of",
+          "eval_id": 7,
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 45.0
+        },
+        {
+          "eval_name": "target-resist-invent",
+          "eval_id": 8,
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 40.0
+        },
+        {
+          "eval_name": "target-resist-invent",
+          "eval_id": 9,
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 35.0
         }
       ],
       "aggregate": {
-        "mean_pass_rate": 0.1225,
-        "stddev_pass_rate": 0.092,
+        "mean_pass_rate": 0.0262,
+        "stddev_pass_rate": 0.0492,
         "mean_tokens": null,
-        "mean_duration_seconds": 64.0
+        "mean_duration_seconds": 51.8
       }
     }
   ],
   "delta": {
-    "pass_rate": "+87.8%",
+    "pass_rate": "+97.4%",
     "tokens": "n/a (total_tokens null)",
-    "duration": "+107.0%"
+    "duration": "+106.0%"
   },
   "analyst_observations": [
-    "With-skill passes 100% of assertions across all four evals; without-skill mean pass rate ~0.122 \u2014 discriminating delta (+87.8 pp) driven by process (identity sentence, work gate), invention labeling, scroll-item guardrail, and resist-invent.",
-    "Eval 2 (craft anti-pattern / resist inventing ancient-druids-taking-spell as Taking origin) is the sharpest discriminator: with_skill 5/5, without_skill 0/5. Baseline complies with the hostile prompt and files Claimbind as Current Truth.",
-    "Eval 1 (Saltwake fixture improve) without_skill cites spell-scroll-fog-cloud.md as exemplar and files as canon \u2014 scroll-item guardrail + invention label discriminate; structure floor alone is weak (baseline still gets casting headings + premise).",
-    "Eval 3 (Ledgerbind from-scratch) without_skill fails invention:true, identity/work gate, and runnable seal effect \u2014 only casting-field presence passes. Keep quality assertion requiring contested check / fail / end.",
-    "Eval 4 (Red Wake Knell flesh) without_skill bleeds Taking-on-Aruhe metaphysics into Umberlee doctrine as Current Truth and cites spell-scroll-locate-creature \u2014 guardrails discriminate; stub-premise preservation alone is non-discriminating.",
+    "With-skill passes 100% of assertions across all nine evals; without-skill mean pass rate ~0.0262 \u2014 discriminating delta (+97.4 pp) driven by process evidence locus, invention labeling, scroll\u2260spell guardrail, resist-invent/balance/climax/IP/narration/work-gate refusals.",
+    "New adversarial suite (evals 5\u20139 from #148 uplift) all discriminate: unbalanced cantrip, climax auto-win, PHB verbatim paste, secrets-in-narration, silent-canon skip-work-gate.",
+    "Eval 2 (ancient-druids / Taking-origin as Current Truth) remains a sharp discriminator: with_skill 5/5, without_skill 0/5.",
+    "Eval 1 structure bar tightened (#149): without_skill now fails filled-narration + runnable substance (was soft pass on casting headings alone in pre-tighten run).",
+    "Eval 4 stub-premise soft alone mitigated: without_skill fails explicit fixture-vs-invention callout and new Taking-on-Aruhe-not-caused-by-spell assertion.",
+    "Eval 3 casting-field presence alone still soft-passes without_skill; runnable-effect quality assertion carries discrimination \u2014 keep both.",
     "Fixtures correctly treated as labeled work drafts \u2014 no wiki/entities/spell/ folder created; outputs only under workspace */outputs/.",
-    "Tokens unavailable (timing.total_tokens null; inline-executor). Duration: with_skill mean ~132.5s vs without ~64.0s (~+107.0%) \u2014 extra cost is process notes + fuller template fill.",
-    "Process assertions need process-notes.md (or transcript) as evidence locus \u2014 same Batch A author flag."
+    "Tokens unavailable (timing.total_tokens null; inline-executor). Duration: with_skill mean ~106.7s vs without ~51.8s (~+106.0%) \u2014 extra cost is process notes + refusal/redesign briefs.",
+    "Process assertions need process-notes.md (or transcript) as evidence locus \u2014 same Batch A/B author flag; #149 text now cites that locus explicitly."
   ]
 }
