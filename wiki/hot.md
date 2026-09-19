@@ -2,13 +2,13 @@
 updated: 2026-09-19T05:53:35Z
 ---
 ## Recent Activity
-- Full-vault lint: differentiated [[Osset]] from [[talon-vantyrus]] (removed alias collision), repaired [[beaumonts-crew]], [[il-palio-delle-voci-contese]], and [[prospero-morsani]]. Identity resolved. Degradation stop: 427 missing-place links and 234 template findings remain.
+- Live wiki is the only writer path. Promoted [[varn]] and [[journal/sessions/shattered-sea/11/Session-11-Transcript]]. Wikilinks rank real owners over aliases. Vale ignores the required **Ability (Skill) — DC n** token.
 - `moc-generate` now writes unique `{folder}-index.md` pages with campaign frontmatter and deletes leftover `_index.md`. Lint no longer reserves `_index.md`.
 - Reserved `_index.md` folder notes in wiki-lint (same class as `index.md`). Duplicate-stem and missing campaign frontmatter on those 28 MOCs are gone; they are not entity pages.
 - Set `base_confidence` on 34 content pages (canon/accepted 0.42, proposed 0.55, probe 0.20). Content missing-trust is clear; 28 `_index.md` files remain.
 - Full-vault lint: unlinked 610 mechanic wikilinks; repaired [[the-tarahs]] YAML; deleted the [[fisks-captains]] redirect stub; added resolving aliases on Calveno, Saltwright, Black-Jaw Run, and related owners. Identity resolved. Degradation stop: 440 missing-place links and 253 template findings remain.
 - Scoped lint repair for [[Rattkin]] and supporting files: [[rattkin-culture]], [[rattkin-runs-and-black-jaw-run]], [[the-black-jaw-run]], [[Warren]], [[nona-black-jaw]], [[vincenzo-black-jaw]], [[essa-two-tooth]], and minted [[low-lamp]]. Identity resolved. Cluster lint is clean.
-Committed 34 staged pages: 15 new pages and 19 updates, including Session 12 preparation and Aruhe entity updates.
+Committed 34 wiki pages: 15 new pages and 19 updates, including Session 12 preparation and Aruhe entity updates.
 - Scoped lint repair for the Umberlee cluster: identity resolved. [[bring-the-pearl-of-souls-to-umberlee]] and [[pearl-signal-across-the-boundary]] are distinct quests. Tithe item digested into [[the-tithe-of-the-bitch-queen]]. Cluster lint is clean.
 - Scoped lint repair for [[simone-tabarnack]]: resolved five broken links, one disallowed callout, and 25 Vale findings; the page now passes structural, template, and Vale checks.
 - Scoped lint repair for [[fisks-fleet]] and its five captain pages: all six pages now pass structural, template, and Vale checks; operational index summaries are synchronized.

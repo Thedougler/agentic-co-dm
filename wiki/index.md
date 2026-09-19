@@ -649,6 +649,7 @@
 - [[Vaka]] — Eight years old. Founded by [[felix-aho|Félix Aho]] after his defection from [[karath|Karath]] — green caste, the lowest freeborn. Roughly a dozen members: mostly green- and blue-caste defectors, p ( #shattered-sea #faction)
 - [[Valkur]] — Named from the Umberlee dump. ( #shattered-sea #lore)
 - [[vantrys-choice]] — Identical harbors side by side; one universally and inexplicably avoided. ( #shattered-sea #place)
+- [[varn]] — Varn runs the inner lock. ( #shattered-sea #npc)
 - [[Varet]] — Moucheron contract speaker for the Five Blades mercenary company in Kalowe. Quotes rate and feeding clause before ink touches paper. ( #shattered-sea #npc)
 - [[vashka-doru]] — Tavern keeper and watch-post sentinel in Sparhold, keeping decades of harbor records and a secret about one of Delmar's captains. ( #shattered-sea #npc)
 - [[vashu-the-weeping-veil]] — Named Grung face called Vashu the Weeping Veil, with color and current role unestablished here. ( #shattered-sea #npc)
@@ -748,6 +749,7 @@
 - [[Session-11-10-Aftermath|Session 11 - Aftermath]] — Resolution covering the theft outcome, hawk pursuit, survivors, and the garden invitation. ( #shattered-sea #session-prep)
 - [[Session-11-00-Random-Tables|Session 11 - Random Tables]] — Current-hazard table for Aruhe river and grassland travel, with dedicated scene exclusions. ( #shattered-sea #session-prep)
 - [[journal/sessions/shattered-sea/11/Session-11-Recap]] — Inland flight, Matteo Scola at the otter camp, Skarn still in Crissdalynn's face. ( #shattered-sea #recap)
+- [[journal/sessions/shattered-sea/11/Session-11-Transcript]] — Distilled evidence companion for Session 11 play. ( #shattered-sea #session)
 
 [Artifact storage: ~/.omp/agent/sessions/-agentic-co-dm/2026-09-16T21-35-49-408Z_01a0ac25-bca0-75b5-8c19-55d8b9643423/9.read.log (108.6KB). Use artifact://9:N-M to page, artifact://9:raw:N-M for verbatim chunks, and the artifact file path for search/copy workflows.]
 
