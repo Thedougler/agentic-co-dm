@@ -75,5 +75,5 @@ Far-east bearing. Two pressure-rig companies watch which dock receives the *[[Un
 
 ## Exit
 
-- they refuse [[Fathomrush]] or turn off → [[The Open Strait]]
+- they refuse [[Fathomrush]] or turn off → [[central-strait-crossing]]
 - they leave for another named port → that destination's run-guide

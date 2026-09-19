@@ -73,9 +73,9 @@ flexGrow=2
 
 | Actor | Wants now | Offers / withholds | Posture changes when |
 | ----- | --------- | ----------------- | -------------------- |
-| [[celia-parel\|Celia]] | Record the dead and preserve the order layers. | Offers sorted scraps; withholds route knowledge from desecration. | Someone treats a body or grave as salvage. |
-| [[oren-vask\|Oren]] | Keep the party moving along a route that has not killed them yet. | Offers route markers and safe edges; withholds his lead after a living claim. | Someone picks living fruit or breaks a stem. |
-| [[jean-claude-tabarnack\|Jean-Claude]] | Remains catatonic unless the fiction changes; his seal and heritage still provide a reading route. | His carried seal and markings make comparison possible. | The party asks him to translate, protects him, or uses the seal as an order. |
+| [[celia-parel|Celia]] | Record the dead and preserve the order layers. | Offers sorted scraps; withholds route knowledge from desecration. | Someone treats a body or grave as salvage. |
+| [[oren-vask|Oren]] | Keep the party moving along a route that has not killed them yet. | Offers route markers and safe edges; withholds his lead after a living claim. | Someone picks living fruit or breaks a stem. |
+| [[jean-claude-tabarnack|Jean-Claude]] | Remains catatonic unless the fiction changes; his seal and heritage still provide a reading route. | His carried seal and markings make comparison possible. | The party asks him to translate, protects him, or uses the seal as an order. |
 
 ## Checks & Costs
 

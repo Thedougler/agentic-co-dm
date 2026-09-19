@@ -77,5 +77,5 @@ The leg is [[central-strait-crossing]].
 
 ## Exit
 
-- they refuse [[Kalowe]] or turn off → [[The Open Strait]]
+- they refuse [[Kalowe]] or turn off → [[central-strait-crossing]]
 - they leave for another named port → that destination's run-guide

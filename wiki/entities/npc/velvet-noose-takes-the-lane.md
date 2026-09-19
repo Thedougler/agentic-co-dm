@@ -77,5 +77,5 @@ Any bearing. Terms first; the intercept is [[Encounter Velvet Noose Intercept]] 
 
 ## Exit
 
-- they pay, refuse, or the deadline expires → stay on the intercept encounter, then return to [[The Open Strait]] or the destination already named
+- they pay, refuse, or the deadline expires → stay on the intercept encounter, then return to [[central-strait-crossing]] or the destination already named
 - they never enter claimed water → this page stays closed

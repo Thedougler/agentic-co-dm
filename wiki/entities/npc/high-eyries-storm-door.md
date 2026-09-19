@@ -81,5 +81,5 @@ West bearing. Maw weather, one stair, the order decides who comes farther.
 
 ## Exit
 
-- they refuse the stair or turn off → [[The Open Strait]]
+- they refuse the stair or turn off → [[central-strait-crossing]]
 - they leave for another named port → that destination's run-guide

@@ -47,7 +47,7 @@ tier: supporting
 | Consistent method | Feeds every guest before business. Establishes the house's claim on their goodwill first, then conducts affairs |
 | Active problem | A sealed message shard has sat unclaimed at the bar for eight days, and one of her regulars stopped coming three weeks back |
 | Performance hooks | Warren elder vibe. Introduces her two named teeth (Scrimper and the Keeper) to every stranger before anything else. |
-| Link of relevance | Runs the Warren's gathering house where every kin-deal unfolds and settles, and knows [[perrin-black-jaw\|Perrin]]'s family through [[nona-black-jaw]] going back decades |
+| Link of relevance | Runs the Warren's gathering house where every kin-deal unfolds and settles, and knows [[perrin-black-jaw|Perrin]]'s family through [[nona-black-jaw]] going back decades |
 
 **Voice & Delivery:** drawl, unhurried and ancient. She doesn't posture or explain herself. Words swing between "These two need to hear this" and "You're too thin. Sit." The pause that follows is her real voice. She reads everything at the bar, including how fast someone drinks, whether the cup remains untouched, who won't look up, what remains unused, and what fills the space between people, and she does not miss a transaction, debt, or grudge, and her temper does not move.
 

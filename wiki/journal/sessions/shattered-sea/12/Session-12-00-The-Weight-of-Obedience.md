@@ -55,9 +55,9 @@ summary: "The party pushes deeper into Aruhe, reads the Gold orders layered amon
 
 | They need to reach or learn… | Route 1 | Route 2 | Route 3 |
 | ---------------------------- | ------- | ------- | ------- |
-| The old Grung objective changed over time. | [[grung-authority-seal]] beside the dead. | [[celia-parel\|Celia]]'s sorted scraps. | [[jean-claude-tabarnack\|Jean-Claude]] compares the marks to his carried seal. |
-| The memorial lies beyond the mass grave. | [[oren-vask\|Oren]]'s route markers. | The inward line of repeated bodies and roots. | The party follows the survivors' spoken rules and sees where they lead. |
-| Perrin can detect the invisible Skarn. | Stay within 5 feet of [[crissdalynn-khinriss\|Crissdalynn]]. | Use the party's own area control, noise, or terrain. | Let Skarn expose himself by reaching for the Spinner or fruit. |
+| The old Grung objective changed over time. | [[grung-authority-seal]] beside the dead. | [[celia-parel|Celia]]'s sorted scraps. | [[jean-claude-tabarnack|Jean-Claude]] compares the marks to his carried seal. |
+| The memorial lies beyond the mass grave. | [[oren-vask|Oren]]'s route markers. | The inward line of repeated bodies and roots. | The party follows the survivors' spoken rules and sees where they lead. |
+| Perrin can detect the invisible Skarn. | Stay within 5 feet of [[crissdalynn-khinriss|Crissdalynn]]. | Use the party's own area control, noise, or terrain. | Let Skarn expose himself by reaching for the Spinner or fruit. |
 
 ## Pressure
 
