@@ -55,7 +55,7 @@ Every agent-facing file MUST use a predictable path and searchable name:
 - `docs/agents/<kebab>.yml`
 - `AGENTS.md`, `wiki/AGENTS.md`, `.omp/AGENTS.md`
 
-This feature bulk-renames the existing tree to match and updates references. `CHECKS.md` / `CONSOLIDATE.md` remorph to kebab.
+This feature bulk-renames the existing tree to match and updates references. `checks.md` / `consolidate.md` remorph to kebab.
 
 ### AGENT003 (BLOCK)
 

@@ -74,7 +74,7 @@ wiki/_raw/Session-11-*.md               # evidence; do not rewrite
 .agents/skills/session-beats/SKILL.md
 .agents/skills/session-beats/references/session-skeleton.md
 .agents/skills/wiki-ingest/SKILL.md
-.agents/skills/obsidian-markdown/references/PROPERTIES.md
+.agents/skills/obsidian-markdown/references/properties.md
 .agents/skills/session-wrapup/SKILL.md  # path pointer only
 .agents/skills/copy-writer/SKILL.md     # pointer only if it still treats beats as freeform
 ```

@@ -4,7 +4,7 @@ policies:
     consumers:
       - .agents/skills/faction-design/SKILL.md
       - .agents/skills/wiki-ingest/SKILL.md
-    reference: "See Work#Decide; do not restate acceptance rules."
+    reference: "File what constitution X makes canon; do not restate a chat accept gate."
   callout_vocabulary:
     owner: wiki/templates/faction.md
     consumers:
@@ -28,4 +28,4 @@ policies:
     consumers:
       - docs/agents/work.md
       - .agents/skills/wiki-ingest/SKILL.md
-    reference: "Judgment-only and canon-changing mutations require acceptance."
+    reference: "WIKI_STAGED_WRITES is a write-path. User-said canon files without a chat accept gate."

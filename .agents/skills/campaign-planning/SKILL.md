@@ -7,44 +7,7 @@ description: >-
 ---
 
 # Campaign Planning
-## Work gate
-
-Prep only. Follow `docs/agents/work.md`.
-
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
-
-Players see nothing until the DM accepts and presents.
-
-Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagged, grounding named.
-
-Output durable pages under `wiki/` (entities/journal as appropriate); templates live in `wiki/templates/`.
-
-Do not replace geographic “river bank” or “far bank”; use `wiki` for knowledge references.
-
-Point at `docs/agents/work.md` rather than restating its glossary.
-
-Keep the craft procedure.
-
----
-
-
-Establish or revise the campaign's **architecture**: the shared contract
-between the DM and every agent that later creates material.
-
-Leading words:
-
-- **anchors** — DM commitments that survive planning revisions
-- **horizon** — detail decreases with distance from current play
-- **season** — a campaign-scale chapter with a function and a question
-
-The contract lives on the existing `type: campaign` hub and `hot.md`.
-Chapters live in the existing story, hot, and session-prep notes. This skill owns the DM
-conversation that produces those decisions.
-
-Ambiguity about the DM's intention is a defect. Uncertainty about what
-players will do is a feature.
-
----
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Workflow
 

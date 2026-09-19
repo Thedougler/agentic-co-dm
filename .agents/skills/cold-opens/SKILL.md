@@ -10,36 +10,7 @@ description: >-
 ---
 
 # Cold Opens
-## Work gate
-
-Prep only. Follow `docs/agents/work.md`.
-
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
-
-Players see nothing until the DM accepts and presents.
-
-Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagged, grounding named.
-
-Remap durable output paths from `campaigns/<slug>/` to `wiki/` (entities/journal as appropriate). Templates live in `wiki/templates/`. Replace knowledge-bank terminology with wiki terminology, but do not change geographic river-bank language. Point at `docs/agents/work.md` rather than restating the glossary.
-
-
-Write a **directed, interactive prelude** that energizes the table, dramatizes
-events outside the PCs' viewpoint, and hands momentum into the main session.
-
-A cold open is **one Hook beat** with `framing: borrowed-pov`, not a
-miniature adventure and not a new kind. Recap, Strong Start, and cold
-open stay three different openers. Knowledge uses `audience` and
-`reveals:` — no third secrecy model. Table math is the campaign's
-existing procedure; do not invent a five-d20 house rule here.
-
-Default shape:
-
-> alternate POV → immediate situation → escalating checks → striking payoff →
-> hard cut → main PCs
-
-Target **20–30 minutes** of table time and **five group checks or saves**
-unless the request establishes another count.
-
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## HARD: entity-before-spoken
 

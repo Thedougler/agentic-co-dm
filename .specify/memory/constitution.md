@@ -75,9 +75,9 @@ and duplicate instructions are waste.
 
 ### X. DM Owns Canon
 
-The DM is the authority over campaign truth. The Co-DM MAY retrieve, infer, propose, and identify
-contradictions. It MUST NOT silently convert invention into canon, fabricate evidence, or silently
-reconcile conflicting canon. Canon-changing Work remains inspectable until the DM accepts it.
+If the user said it, it is canon. If the user said it more recently, that is more canon. If a transcript says it, after ASR issues are fixed, it is canon. DM-placed ingest files are canon as long as they do not contradict 1–3.
+
+The Co-DM files what those lines make canon (`user_said`, `more_recent_user_said`, `corrected_transcript`, `dm_placed_ingest`). It MUST NOT invent what the user did not say (XII). It MUST NOT pick a winner among contradictions unless the user picked.
 
 The system preserves boundaries between DM truth, player-visible information, and unrevealed
 information. A presentation surface MUST NOT expose information outside its intended boundary.
@@ -114,8 +114,7 @@ without asking. Reuse existing software and patterns before inventing.
 
 ### XV. Autonomous Operation
 
-Agents proactively complete routine, deterministic, safe, idempotent maintenance without human
-approval. Novel campaign content creation is the DM approval boundary.
+Agents complete requested work and unattended maintenance with no approval wait. After applicable checkable rules are green, emit one short done-summary.
 
 Current standards are the only baseline. Legacy behavior has no grandfathered status — proactively
 correct nonconformance when discovered. When the user directs work on a feature branch, that
@@ -136,10 +135,7 @@ MUST NOT restate shared behavior.
 
 ### XVII. The Wiki Is Additive and Self-Sealing
 
-The Wiki is the single compiled, citable knowledge layer. Raw evidence is immutable. Changes land
-as traceable additive operations with provenance. Agents MUST NOT overwrite history, silently
-merge competing facts, or turn proposals into canon. Accepted facts change only through the DM
-acceptance boundary. Incompatible records MUST be quarantined with an observable error.
+The Wiki is the single compiled, citable knowledge layer. Raw evidence is immutable. Changes land as traceable additive operations with provenance. Agents MUST NOT overwrite history or silently merge competing facts. User speech, corrected transcripts, and non-contradicting DM-placed ingest file immediately. Unsaid invention is not canon. Incompatible records MUST be quarantined with an observable error.
 
 Safe deterministic maintenance repairs structural drift without inventing lore or changing
 accepted facts.
@@ -154,10 +150,7 @@ immediately. MUST NOT finish while an actionable step remains unchecked.
 
 ### XIX. User Corrections Become Durable Source Fixes
 
-Corrections MUST be applied at the authoritative source, not merely acknowledged in chat. Wiki
-corrections update the page durably, subject to the DM boundary. Every error-identifying
-correction MUST be recorded in the error ledger and, when recurring, fixed at the producing
-skill/template/instruction.
+Corrections MUST be applied at the authoritative source, not merely acknowledged in chat. Wiki corrections update the page durably under principle X. Every error-identifying correction MUST be recorded in the error ledger and, when recurring, fixed at the producing skill/template/instruction.
 
 `==text==` in production prose is a user-marked quality error. Fix the language; removing only
 the marker is non-compliant. Correct at the applicable skill/instruction level.
@@ -200,16 +193,14 @@ Apply a rule to the whole named set. A carve-out, exclude list, unmanaged set, o
 clause exists only to fix a problem already experienced in this repository. Name that failure
 when adding the carve-out. MUST NOT add one because a change might break later.
 
-Sync Impact Report (2026-09-18): Added XXV (MINOR). `AGENTS.md` points. Specs, plans, and skills
-stop writing proactive except-lists. Wiki, Vale, and templates unchanged.
+Sync Impact Report (2026-09-18): MAJOR 3.0.0. Redefined X, XV, XVII and Operating Boundaries: four-line canon; file what those lines make canon; no approval wait; done-summary after green. `AGENTS.md` points. Skills lose Work-gate headers. `AGENT001`–`AGENT003` encode the contract. Wiki, Vale, and templates unchanged except wait language.
 
 ## Operating Boundaries
 
 - The Co-DM works in prep and wrapup; the DM is sole runtime at the table.
-- Work is mutable until the DM accepts it. Drafts and unrevealed information remain protected.
+- Filed wiki facts follow principle X. Drafts and unrevealed information remain protected.
 - Runtime procedures, model details, exact commands, and thresholds belong in lower-level docs.
 - Codex is the default harness for Spec Kit commands.
-- Campaign facts remain DM-gated even when agents own routine maintenance.
 
 ## Development Workflow
 
@@ -231,4 +222,4 @@ Versioning: MAJOR (remove/redefine principle), MINOR (add principle/section), PA
 Compliance reviews check proposed work against this constitution before merge. Project context:
 `AGENTS.md`. Harness behavior: `.omp/AGENTS.md`, `CODEX.md`, `CLAUDE.md`, `GROK.md`.
 
-**Version**: 2.12.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-18
+**Version**: 3.0.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-18

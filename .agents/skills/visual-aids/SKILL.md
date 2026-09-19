@@ -11,27 +11,7 @@ description: >-
 
 # Visual Aids
 
-## Work gate
-
-Prep art is Work, not auto-canon. Follow `docs/agents/work.md`.
-
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
-
-Players see nothing until the DM accepts and presents.
-
-Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagged, grounding named.
-
-Remap durable output paths from `campaigns/<slug>/` to `wiki/`; use `wiki/templates/`. Replace knowledge-bank wording with wiki wording. Keep the craft procedure.
-
-The owner's appearance prose is the source of truth. A reference image supports that look; an
-illustration depicts one moment and never becomes identity. Spoken `[!narration]` remains the
-table's descriptive layer and an image follows the same information boundary.
-
-Distinct things need distinct assets. Existing art, portraits, tokens, and
-battlemaps may guide vibe, palette, or genre, but they are depictions of other
-owners, sites, or moments. Use an existing asset only for the exact same
-depicted owner/site/moment. For new content, mint or request a new image rather
-than reusing one that will make different things blur together at the table.
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Ground
 

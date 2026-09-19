@@ -8,20 +8,7 @@ description: >-
 ---
 
 # Travel Events
-## Work gate
-
-Prep only. Follow `docs/agents/work.md`.
-
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Ground invention in wiki pages and/or D&D 5e rules; set `invention: true`, cite `[[pages]]`, and show the DM contradictions. Never present invention as wiki fact or write silent canon. Players see nothing until DM acceptance.
-
-Output durable pages under `wiki/`; templates live in `wiki/templates/`. Point at `docs/agents/work.md`; keep the craft procedure.
-
----
-
-
-A journey leg changes the situation. Never roll to decide what encounter exists: derive each event
-from a live pressure colliding with a fact of the route. Dice may resolve an in-fiction role or
-hazard after the event is chosen.
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Ground
 

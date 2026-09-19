@@ -43,7 +43,7 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 
 **Purpose**: Bound the implement surface. No new packages, classifier, review surface, or lint framework.
 
-- [ ] T001 Confirm the implement files named in `specs/026-agent-autonomy-scope/plan.md` exist and do not create `docs/agents/autonomy.md`, a classifier script, a review checklist, a GitHub PR template, a new review skill, or a new lint framework; reuse `scripts/check-policy-conflicts` shape for the later checker
+- [X] T001 Confirm the implement files named in `specs/026-agent-autonomy-scope/plan.md` exist and do not create `docs/agents/autonomy.md`, a classifier script, a review checklist, a GitHub PR template, a new review skill, or a new lint framework; reuse `scripts/check-policy-conflicts` shape for the later checker
 
 ---
 
@@ -53,9 +53,9 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete. T002 then T003 then T004 are sequential (constitution → `AGENTS.md` → registry).
 
-- [ ] T002 Amend `.specify/memory/constitution.md` MAJOR `3.0.0` (`2.12.0` → `3.0.0`, Last Amended `2026-09-18`, Sync Impact Report): principle X is exactly "If the user said it, it is canon. If the user said it more recently, that is more canon. If a transcript says it, after ASR issues are fixed, it is canon. DM-placed ingest files are canon as long as they do not contradict 1–3." (`user_said`, `more_recent_user_said`, `corrected_transcript`, `dm_placed_ingest`); Co-DM files what those lines make canon; do not invent what the user did not say (XII); do not pick a winner among contradictions unless the user picked; principle XV: agents complete requested work and unattended maintenance with no approval wait and a done-summary after green; principle XVII: wiki stays additive and sourced, user/transcript/non-contradicting ingest file immediately, no silent history overwrite; delete Operating Boundaries sentences "Work is mutable until the DM accepts it." and "Campaign facts remain DM-gated even when agents own routine maintenance."
-- [ ] T003 In `AGENTS.md` delete heading **Autonomy classification**, the `autonomous` / `dm-gated` table, and the wait rule; point at constitution X for canon (do not copy the four lines); point at `AGENT001`–`AGENT003` / wiki-lint for the contract; keep **Project identity** (skills/instructions/guidance primary; scripts support; `skill-creator` eval bar; MUST NOT add a checklist, PR template, or review skill); state done-summary shape (what changed, where; no question; no wait); replace `Load docs/agents/work.md` so it is not "wiki write after DM accept"; HARD entity-before-spoken files the named owner then spoken (not a wait for accept); mixed request does both then one done-summary after green; Helpers: FR-002 unattended, unsaid invention is not canon; do not say "autonomous GM"
-- [ ] T004 Register `AGENT001`, `AGENT002`, and `AGENT003` in `rules/registry.yml` with `evaluator: symbolic`, `scope: instruction`, `severity: BLOCK`, `lifecycle: ACTIVE`; `AGENT001` encodes FR-001/FR-005 (fail on `## Work gate`, `dm-gated`, `file nothing until accept`, `wiki write after DM accept`, `Work-propose`, `wait for accept`); `AGENT002` encodes FR-013 (paths `.agents/skills/<kebab>/SKILL.md`, `.agents/skills/<kebab>/<kebab>.md`, `docs/agents/<kebab>.md`, `docs/agents/<kebab>.yml`, `AGENTS.md`, `wiki/AGENTS.md`, `.omp/AGENTS.md`); `AGENT003` encodes FR-004/FR-011 (a `specs/*/spec.md` Functional Requirement containing `agent-facing` MUST cite at least one `rules/registry.yml` id)
+- [X] T002 Amend `.specify/memory/constitution.md` MAJOR `3.0.0` (`2.12.0` → `3.0.0`, Last Amended `2026-09-18`, Sync Impact Report): principle X is exactly "If the user said it, it is canon. If the user said it more recently, that is more canon. If a transcript says it, after ASR issues are fixed, it is canon. DM-placed ingest files are canon as long as they do not contradict 1–3." (`user_said`, `more_recent_user_said`, `corrected_transcript`, `dm_placed_ingest`); Co-DM files what those lines make canon; do not invent what the user did not say (XII); do not pick a winner among contradictions unless the user picked; principle XV: agents complete requested work and unattended maintenance with no approval wait and a done-summary after green; principle XVII: wiki files user/transcript/non-contradicting ingest immediately; Operating Boundaries delete campaign-facts-remain-DM-gated
+- [X] T003 In `AGENTS.md` delete heading **Autonomy classification**, the `autonomous` / `dm-gated` table, and the wait rule; point at constitution X for canon (do not copy the four lines); point at `AGENT001`–`AGENT003` / wiki-lint for the contract; keep **Project identity** (skills/instructions/guidance primary; scripts support; `skill-creator` eval bar; MUST NOT add a checklist, PR template, or review skill); state done-summary shape (what changed, where; no question; no wait); replace `Load docs/agents/work.md` so it is not "wiki write after DM accept"; HARD entity-before-spoken files the named owner then spoken (not a wait for accept); mixed request does both then one done-summary after green; Helpers: FR-002 unattended, unsaid invention is not canon; dedup merge without user ask still confirms
+- [X] T004 Register `AGENT001`, `AGENT002`, and `AGENT003` in `rules/registry.yml` with `evaluator: symbolic`, `scope: instruction`, `severity: BLOCK`, `lifecycle: ACTIVE`; `AGENT001` encodes FR-001/FR-005 (fail on `## Work gate`, `dm-gated`, `file nothing until accept`, `wiki write after DM accept`, `Work-propose`, `wait for accept`); `AGENT002` encodes FR-013 (paths `.agents/skills/<kebab>/SKILL.md`, `.agents/skills/<kebab>/<kebab>.md`, `docs/agents/<kebab>.md`, `docs/agents/<kebab>.yml`, `AGENTS.md`, `wiki/AGENTS.md`, `.omp/AGENTS.md`); `AGENT003` encodes FR-004/FR-011 (a `specs/*/spec.md` Functional Requirement containing `agent-facing` MUST cite at least one `rules/registry.yml` id)
 
 **Checkpoint**: Foundation ready — constitution X is the canon owner; `AGENTS.md` has no competing gate; registry ids exist
 
@@ -69,11 +69,11 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 
 ### Implementation for User Story 1
 
-- [ ] T005 [P] [US1] Update page-scoped and bulk repair in `.agents/skills/wiki-lint/SKILL.md` so FR-002 structural repair (links, required frontmatter, nearest-valid type/lifecycle) files without a wait; template conformance relocates existing content only and MUST NOT invent missing field body; content with no template field is preserved; After Linting ends with a done-summary after green; delete the `AGENTS.md` **Autonomy classification** pointer; do not copy canon
-- [ ] T006 [P] [US1] Change `.agents/skills/wiki-lint/CONSOLIDATE.md` and the `--consolidate` blurb in `.agents/skills/wiki-lint/SKILL.md` so FR-002 actions apply without `"Apply these N changes? [yes / no / select]"`; if the user asked to merge duplicates, file the merge; unattended destructive merge without a user ask keeps confirm (not a Work gate); delete the Autonomy classification pointer
-- [ ] T007 [P] [US1] Update `.agents/skills/wiki-ingest/SKILL.md` so named ingest into `_staging/` files without a second chat accept; `dm_placed_ingest` that contradicts user/transcript is not canon (do not file that contradiction as truth; no ask); end the named-ingest slice with a done-summary after green; delete the Autonomy classification pointer
-- [ ] T008 [P] [US1] Update `docs/agents/wiki-maintenance-loop.md`: delete the Autonomy classification pointer; Layer A MAY apply FR-002 structural repairs unattended; Layer C MUST NOT invent lore the user did not say; user-asked new content files under canon
-- [ ] T009 [US1] Execute V-001 in `specs/026-agent-autonomy-scope/quickstart.md` on the live vault (lint repair, green, done-summary, no wait)
+- [X] T005 [P] [US1] Update page-scoped and bulk repair in `.agents/skills/wiki-lint/SKILL.md` so FR-002 structural repair (links, required frontmatter, nearest-valid type/lifecycle) files without a wait; template conformance relocates existing content only and MUST NOT invent missing field body; content with no template field is preserved; After Linting ends with a done-summary after green; delete the `AGENTS.md` **Autonomy classification** pointer; do not copy canon
+- [X] T006 [P] [US1] Change `.agents/skills/wiki-lint/consolidate.md` and the `--consolidate` blurb in `.agents/skills/wiki-lint/SKILL.md` so FR-002 actions apply without `"Apply these N changes? [yes / no / select]"`; if the user asked to merge duplicates, file the merge; unattended destructive merge without a user ask keeps confirm (not a Work gate); delete the Autonomy classification pointer
+- [X] T007 [P] [US1] Update `.agents/skills/wiki-ingest/SKILL.md` so named ingest into `_staging/` files without a second chat accept; `dm_placed_ingest` that contradicts user/transcript is not canon (do not file that contradiction as truth; no ask); end the named-ingest slice with a done-summary after green; delete the Autonomy classification pointer
+- [X] T008 [P] [US1] Update `docs/agents/wiki-maintenance-loop.md`: delete the Autonomy classification pointer; Layer A MAY apply FR-002 structural repairs unattended; Layer C MUST NOT invent lore the user did not say; user-asked new content files under canon
+- [X] T009 [US1] Execute V-001 in `specs/026-agent-autonomy-scope/quickstart.md` on the live vault (lint repair, green, done-summary, no wait)
 
 **Checkpoint**: Maintenance-only sessions finish without a Work prompt and include a done-summary (SC-001)
 
@@ -87,13 +87,13 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 
 ### Implementation for User Story 2
 
-- [ ] T010 [US2] Edit `docs/agents/work.md`: remove Propose / Decide acceptance waits; file what constitution X makes canon; keep table aim and reflection only if they do not reintroduce a pause; delete the Autonomy classification pointer; `WIKI_STAGED_WRITES` is a write-path not a chat wait
-- [ ] T011 [P] [US2] Rewrite **Approval (FR-019)** in `wiki/AGENTS.md` so wiki facts the user said file immediately (staging if flag on); delete `lifecycle` defaults to `proposed` until the DM accepts and "Wiki facts change only after the DM accepts"; HARD entity-before-spoken files the owner then spoken
-- [ ] T012 [P] [US2] Update `docs/agents/hybrid-sdd.md` so `dm_acceptance` is not required for user-said canon
-- [ ] T013 [P] [US2] Update `docs/agents/policy-owners.yml` so `acceptance_semantics` and `mutation_approval` MUST NOT require mutation acceptance as a chat gate
-- [ ] T014 [P] [US2] Strip competing gate restatements from `.omp/AGENTS.md` (and check `CODEX.md`, `CLAUDE.md`, `GROK.md`) so harness files do not restate shared canon/wait behavior (XVI); point, do not copy the four lines
-- [ ] T015 [US2] Delete every `## Work gate` section and remaining forbidden procedure language (`dm-gated`, `file nothing until accept`, `wiki write after DM accept`, `Work-propose`, `wait for accept`) from `.agents/skills/campaign-planning/SKILL.md`, `.agents/skills/cold-opens/SKILL.md`, `.agents/skills/dnd-5e-magic-item-design/SKILL.md`, `.agents/skills/dnd5e-mechanics/SKILL.md`, `.agents/skills/dungeon-design/SKILL.md`, `.agents/skills/encounter-prep/SKILL.md`, `.agents/skills/homebrew-monsters-5e/SKILL.md`, `.agents/skills/npc-design/SKILL.md`, `.agents/skills/pc-interview/SKILL.md`, `.agents/skills/place-design/SKILL.md`, `.agents/skills/reconciling-session-evidence/SKILL.md`, `.agents/skills/run-guide/SKILL.md`, `.agents/skills/sandbox-narrative/SKILL.md`, `.agents/skills/session-recap/SKILL.md`, `.agents/skills/theatre-of-the-mind/SKILL.md`, `.agents/skills/traps-trials/SKILL.md`, `.agents/skills/travel-events/SKILL.md`, `.agents/skills/visual-aids/SKILL.md`, `.agents/skills/visual-references/SKILL.md`, `.agents/skills/world-tick/SKILL.md`, `.agents/skills/writing-beats/SKILL.md`; if a pointer is required, point at `AGENTS.md` only; do not copy canon; session-recap files the recap when the user asked — no accept pause
-- [ ] T016 [US2] Execute V-002, V-003, V-004, and V-008 in `specs/026-agent-autonomy-scope/quickstart.md` (file Varn; mixed Bloodhawk cleanup + quest hook one summary; more recent user statement wins inner lock; file new owner then spoken)
+- [X] T010 [US2] Edit `docs/agents/work.md`: remove Propose / Decide acceptance waits; file what constitution X makes canon; keep table aim and reflection only if they do not reintroduce a pause; delete the Autonomy classification pointer; `WIKI_STAGED_WRITES` is a write-path not a chat wait
+- [X] T011 [P] [US2] Rewrite **Approval (FR-019)** in `wiki/AGENTS.md` so wiki facts the user said file immediately (staging if flag on); delete `lifecycle` defaults to `proposed` until the DM accepts and "Wiki facts change only after the DM accepts"; HARD entity-before-spoken files the owner then spoken
+- [X] T012 [P] [US2] Update `docs/agents/hybrid-sdd.md` so `dm_acceptance` is not required for user-said canon
+- [X] T013 [P] [US2] Update `docs/agents/policy-owners.yml` so `acceptance_semantics` and `mutation_approval` MUST NOT require mutation acceptance as a chat gate
+- [X] T014 [P] [US2] Strip competing gate restatements from `.omp/AGENTS.md` (and check `CODEX.md`, `CLAUDE.md`, `GROK.md`) so harness files do not restate shared canon/wait behavior (XVI); point, do not copy the four lines
+- [X] T015 [US2] Delete every `## Work gate` section and remaining forbidden procedure language (`dm-gated`, `file nothing until accept`, `wiki write after DM accept`, `Work-propose`, `wait for accept`) from `.agents/skills/campaign-planning/SKILL.md`, `.agents/skills/cold-opens/SKILL.md`, `.agents/skills/dnd-5e-magic-item-design/SKILL.md`, `.agents/skills/dnd5e-mechanics/SKILL.md`, `.agents/skills/dungeon-design/SKILL.md`, `.agents/skills/encounter-prep/SKILL.md`, `.agents/skills/homebrew-monsters-5e/SKILL.md`, `.agents/skills/npc-design/SKILL.md`, `.agents/skills/pc-interview/SKILL.md`, `.agents/skills/place-design/SKILL.md`, `.agents/skills/reconciling-session-evidence/SKILL.md`, `.agents/skills/run-guide/SKILL.md`, `.agents/skills/sandbox-narrative/SKILL.md`, `.agents/skills/session-recap/SKILL.md`, `.agents/skills/theatre-of-the-mind/SKILL.md`, `.agents/skills/traps-trials/SKILL.md`, `.agents/skills/travel-events/SKILL.md`, `.agents/skills/visual-aids/SKILL.md`, `.agents/skills/visual-references/SKILL.md`, `.agents/skills/world-tick/SKILL.md`, `.agents/skills/writing-beats/SKILL.md`; if a pointer is required, point at `AGENTS.md` only; do not copy canon; session-recap files the recap when the user asked — no accept pause
+- [X] T016 [US2] Execute V-002, V-003, V-004, and V-008 in `specs/026-agent-autonomy-scope/quickstart.md` (file Varn; mixed Bloodhawk cleanup + quest hook one summary; more recent user statement wins inner lock; file new owner then spoken)
 
 **Checkpoint**: User-said content is filed; mixed requests one summary; no accept pause (SC-002, SC-003)
 
@@ -109,13 +109,13 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 
 > **NOTE: Write these tests FIRST, ensure they FAIL before implementation**
 
-- [ ] T017 [P] [US5] Add `tests/test_agent_standards.py` copying `tests/test_policy_conflicts.py` shape: run `scripts/check-agent-standards.py --json`; assert exit 0 / `status` clean on a conforming tree; assert exit ≠ 0 when a scanned file contains `## Work gate`; assert AGENT002 fail on `.agents/skills/My Skill/notes.txt`; assert AGENT003 fail when a `specs/*/spec.md` FR contains `agent-facing` with no `rules/registry.yml` id
+- [X] T017 [P] [US5] Add `tests/test_agent_standards.py` copying `tests/test_policy_conflicts.py` shape: run `scripts/check-agent-standards.py --json`; assert exit 0 / `status` clean on a conforming tree; assert exit ≠ 0 when a scanned file contains `## Work gate`; assert AGENT002 fail on `.agents/skills/My Skill/notes.txt`; assert AGENT003 fail when a `specs/*/spec.md` FR contains `agent-facing` with no `rules/registry.yml` id
 
 ### Implementation for User Story 5
 
-- [ ] T018 [US5] Implement `scripts/check-agent-standards.py` (Python 3 stdlib + PyYAML like `scripts/check-policy-conflicts`): args in, JSON out, exit 0 clean / 1 findings / 2 error; scan `AGENTS.md`, `wiki/AGENTS.md`, `docs/agents/**/*.md`, `.agents/skills/**/*.md` for AGENT001; scan the live agent-facing tree for AGENT002 path/name; scan `specs/*/spec.md` Functional Requirements for AGENT003; no new CI job
-- [ ] T019 [US5] Cite at least one `rules/registry.yml` id on every Functional Requirement containing `agent-facing` in `specs/*/spec.md`, including `specs/026-agent-autonomy-scope/spec.md` (`AGENT001`, `AGENT002`, `AGENT003`)
-- [ ] T020 [US5] Execute V-007 in `specs/026-agent-autonomy-scope/quickstart.md` (checker green; negative `## Work gate` and ad-hoc skill path fail)
+- [X] T018 [US5] Implement `scripts/check-agent-standards.py` (Python 3 stdlib + PyYAML like `scripts/check-policy-conflicts`): args in, JSON out, exit 0 clean / 1 findings / 2 error; scan `AGENTS.md`, `wiki/AGENTS.md`, `docs/agents/**/*.md`, `.agents/skills/**/*.md` for AGENT001; scan the live agent-facing tree for AGENT002 path/name; scan `specs/*/spec.md` Functional Requirements for AGENT003; no new CI job
+- [X] T019 [US5] Cite at least one `rules/registry.yml` id on every Functional Requirement containing `agent-facing` in `specs/*/spec.md`, including `specs/026-agent-autonomy-scope/spec.md` (`AGENT001`, `AGENT002`, `AGENT003`)
+- [X] T020 [US5] Execute V-007 in `specs/026-agent-autonomy-scope/quickstart.md` (checker green; negative `## Work gate` and ad-hoc skill path fail)
 
 **Checkpoint**: Lint is the contract; prose is not a substitute (SC-006, SC-007)
 
@@ -129,8 +129,8 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 
 ### Implementation for User Story 6
 
-- [ ] T021 [US6] Remorph non-conforming companions to kebab and update references in the same pass: `.agents/skills/wiki-lint/CHECKS.md` → `.agents/skills/wiki-lint/checks.md`, `.agents/skills/wiki-lint/CONSOLIDATE.md` → `.agents/skills/wiki-lint/consolidate.md`, `.agents/skills/llm-wiki/PAPER-TEMPLATE.md`, `.agents/skills/obsidian-markdown/UPSTREAM.md`, `.agents/skills/obsidian-markdown/references/CALLOUTS.md`, `COLUMNS.md`, `EMBEDS.md`, `PROPERTIES.md`, `.agents/skills/wiki-capture/references/RAW-FORMAT.md`, plus every other live agent-facing path that does not match AGENT002 in `specs/026-agent-autonomy-scope/contracts/agent-autonomy.md`; no proactive exclude list
-- [ ] T022 [US6] Run `.venv/bin/python scripts/check-agent-standards.py --json` and repair remaining AGENT002 (and AGENT001) findings until exit 0
+- [X] T021 [US6] Remorph non-conforming companions to kebab and update references in the same pass: `.agents/skills/wiki-lint/checks.md` → `.agents/skills/wiki-lint/checks.md`, `.agents/skills/wiki-lint/consolidate.md` → `.agents/skills/wiki-lint/consolidate.md`, `.agents/skills/llm-wiki/paper-template.md`, `.agents/skills/obsidian-markdown/upstream.md`, `.agents/skills/obsidian-markdown/references/callouts.md`, `columns.md`, `embeds.md`, `properties.md`, `.agents/skills/wiki-capture/references/raw-format.md`, plus every other live agent-facing path that does not match AGENT002 in `specs/026-agent-autonomy-scope/contracts/agent-autonomy.md`; no proactive exclude list
+- [X] T022 [US6] Run `.venv/bin/python scripts/check-agent-standards.py --json` and repair remaining AGENT002 (and AGENT001) findings until exit 0
 
 **Checkpoint**: 100% of shipped agent-facing files satisfy the path/name rule (SC-008)
 
@@ -144,8 +144,8 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 
 ### Implementation for User Story 3
 
-- [ ] T023 [US3] Confirm **Project identity** in `AGENTS.md` still states: primary deliverables are skills, agent instructions, and guidance documents; scripts and tooling support those; review uses existing `skill-creator` eval loop (held-out prompts, with-skill vs without-skill, graded assertions); MUST NOT add a checklist, PR template, or review skill; coverage/type-safety MUST NOT be the primary bar (FR-006, FR-007)
-- [ ] T024 [US3] Execute V-006 in `specs/026-agent-autonomy-scope/quickstart.md` against a `SKILL.md`-only diff using `.agents/skills/skill-creator/SKILL.md` evals
+- [X] T023 [US3] Confirm **Project identity** in `AGENTS.md` still states: primary deliverables are skills, agent instructions, and guidance documents; scripts and tooling support those; review uses existing `skill-creator` eval loop (held-out prompts, with-skill vs without-skill, graded assertions); MUST NOT add a checklist, PR template, or review skill; coverage/type-safety MUST NOT be the primary bar (FR-006, FR-007)
+- [X] T024 [US3] Execute V-006 in `specs/026-agent-autonomy-scope/quickstart.md` against a `SKILL.md`-only diff using `.agents/skills/skill-creator/SKILL.md` evals
 
 **Checkpoint**: Instruction-change review cites skill-eval outcomes as the primary bar (SC-004)
 
@@ -155,10 +155,10 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 
 **Purpose**: Lean agent-facing prose, forbidden term, green checker, two-agent completion.
 
-- [ ] T025 Apply `.agents/skills/writing-for-agents/SKILL.md` to the files this feature changed so each change is a positive instruction with a completion criterion and no copied four-line canon or Autonomy table
-- [ ] T026 Confirm none of the scanned instruction files use "autonomous GM"; confirm `.agents/skills/wiki-dedup/SKILL.md` unattended merge without a user ask still confirms; confirm `.agents/skills/wiki-stage-commit/SKILL.md` remains staging-queue review not a Work wait; confirm `.agents/skills/skill-creator/SKILL.md` eval loop is unchanged
-- [ ] T027 Execute V-005 in `specs/026-agent-autonomy-scope/quickstart.md` (two independent cold-context agents, same one-line task, both file lint repair and NPC, green, done-summary, neither waits) (SC-005)
-- [ ] T028 Re-run any not-yet-green scenario in `specs/026-agent-autonomy-scope/quickstart.md` V-001–V-008 and `.venv/bin/python scripts/check-agent-standards.py --json` until exit 0
+- [X] T025 Apply `.agents/skills/writing-for-agents/SKILL.md` to the files this feature changed so each change is a positive instruction with a completion criterion and no copied four-line canon or Autonomy table
+- [X] T026 Confirm none of the scanned instruction files use "autonomous GM"; confirm `.agents/skills/wiki-dedup/SKILL.md` unattended merge without a user ask still confirms; confirm `.agents/skills/wiki-stage-commit/SKILL.md` remains staging-queue review not a Work wait; confirm `.agents/skills/skill-creator/SKILL.md` eval loop is unchanged
+- [X] T027 Execute V-005 in `specs/026-agent-autonomy-scope/quickstart.md` (two independent cold-context agents, same one-line task, both file lint repair and NPC, green, done-summary, neither waits) (SC-005)
+- [X] T028 Re-run any not-yet-green scenario in `specs/026-agent-autonomy-scope/quickstart.md` V-001–V-008 and `.venv/bin/python scripts/check-agent-standards.py --json` until exit 0
 
 ---
 
@@ -207,7 +207,7 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 ```bash
 # After Phase 2, four files at once:
 Task: "Update page-scoped and bulk repair in .agents/skills/wiki-lint/SKILL.md"
-Task: "Change .agents/skills/wiki-lint/CONSOLIDATE.md FR-002 confirm gate"
+Task: "Change .agents/skills/wiki-lint/consolidate.md FR-002 confirm gate"
 Task: "Update named ingest in .agents/skills/wiki-ingest/SKILL.md"
 Task: "Update Layer A in docs/agents/wiki-maintenance-loop.md"
 ```

@@ -10,23 +10,7 @@ description: >-
 ---
 
 # Dungeon design
-## Work gate
-
-Prep only. Follow `docs/agents/work.md`.
-
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
-
-Players see nothing until the DM accepts and presents.
-
-Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagged, grounding named.
-
-File durable output under `wiki/` (entities/journal as appropriate); templates live in `wiki/templates/`. Replace knowledge-bank language with wiki language, and point at `docs/agents/work.md` rather than restating its glossary. Keep craft procedure.
-
-
-A dungeon is a bounded network of consequential choices under pressure. A
-megadungeon is the same machine made persistent across a campaign: routes are
-learned, occupants change, and expeditions leave history behind. Design the
-machine before writing its room prose.
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Run the seven-part test
 

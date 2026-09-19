@@ -5,16 +5,7 @@ description: Research, design, reskin, balance, audit, and revise monsters for t
 
 # Homebrew Monsters 5e
 
-## Work gate
-
-Prep only. Follow `docs/agents/work.md`.
-
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Invention is required when the wiki lacks the fact: set `invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]` for wiki claims. Show the DM any contradiction with an existing page. Never present invention as a wiki fact. Never write silent canon. A craft `type` becomes `canon` only after DM accept.
-
-Players see nothing until the DM accepts and presents.
-
-Done when: the page is inspectable Work, `lifecycle: proposed`, invention flagged, grounding named.
-
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Success criteria
 - The monster has a memorable fiction signature, a readable role, counterplay, and a reason to exist in this encounter.

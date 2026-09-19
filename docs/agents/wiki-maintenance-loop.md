@@ -6,7 +6,7 @@
 
 **Standing constraints:** conflict/redundancy first; no craft/narrative/mechanics thinning; equal-or-better agent output quality on dedupe (#71/#84/#87); scripts ≠ prose (CD); demotion freeze during migration; legacy filename remorph (kebab / Aruhe / `00` strips) **greenlit 2026-09-14**; other mass consolidates still gated; GitHub SoT; objective tokens via tiktoken when labeled (#86).
 
-Classify operations per `AGENTS.md` **Autonomy classification**. Do not copy that table.
+Layer A MAY apply FR-002 structural repairs unattended. Layer C MUST NOT invent lore the user did not say. User-asked new content files under constitution X.
 
 ---
 
@@ -52,9 +52,9 @@ Optional thin facade (ATE): `scripts/wiki-maintain --report` → one JSON bundli
 
 When cleaning or remorphing: prune **template fluff, duplicate section jobs, and inactive current-list cruft** only. **Keep** provisional vs revealed, NPC-knows vs party-knows, public vs secret, open threads, incomplete Known Facts, conflicting rumors, multi-clue paths, and expedition/diff history. Fidelity sample vs raw is a CD/Nick craft gate — lint-green ≠ craft quality.
 
-### Layer C — Never auto without Nick
+### Layer C — Unsaid invent stays out
 
-- Lore invent / Midchain recreate / unapproved names / stubs replaced by invent
+- Lore invent the user did not say / Midchain recreate / unapproved names / stubs replaced by invent
 - Link demotions during migration freeze; archive/demote ≠ delete without greenlight
 - Mass consolidates **other than** greenlit filename legacy remorph (kebab / Aruhe / `00` strips)
 - `wiki-dedup --merge` / `--auto`

@@ -2,8 +2,6 @@
 # Do not hand-edit; wiki-lint refreshes this Vale vocabulary.
 01
 02
-026 Autonomy Lint Probe
-026-autonomy-lint-probe
 03
 04
 05
@@ -1020,7 +1018,6 @@ Lighter
 Line
 Line Bank
 line-bank
-Lint
 Lip
 Living
 Lizardfolk
@@ -2125,6 +2122,9 @@ unsaid-macaw
 Unstable
 Ussa
 Ussamet
+V001
+V001 Autonomy Probe
+v001-autonomy-probe
 Vaelspire
 Vafnar
 Vafnar\]

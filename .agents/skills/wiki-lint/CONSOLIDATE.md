@@ -4,15 +4,15 @@ Triggered by `wiki-lint --consolidate`. Switches from report-only to act-and-rep
 
 ## Safety Protocol
 
-Classify each planned action per `AGENTS.md` **Autonomy classification**. Do not copy that table.
+FR-002 actions apply without `"Apply these N changes? [yes / no / select]"`. If the user asked to merge duplicates, file the merge. Unattended destructive merge without a user ask still confirms (not a Work wait).
 
 **Always dry-run first:**
 
-1. Run all lint checks (deterministic pass + checks 1–14 from [CHECKS.md](CHECKS.md)).
+1. Run all lint checks (deterministic pass + checks 1–14 from [checks.md](checks.md)).
 2. Print planned actions as structured list (see Dry-Run Output below).
 3. Apply FR-002 actions without `"Apply these N changes? [yes / no / select]"`: broken-link rewrites, required frontmatter, nearest-valid type/lifecycle, template conformance that relocates existing content, kebab remorph, contradiction flags (do not resolve).
-4. Ask `"Apply these N changes? [yes / no / select]"` only for merge, tier demotion, and other non-FR-002 actions. Write those only after explicit confirmation. Selective application honored.
-5. Duplicate pages (Check 14) stay confirm-gated — merge or digest only after Nick confirms.
+4. If the user asked to merge duplicates, file the merge. Ask `"Apply these N changes? [yes / no / select]"` only for unattended merge, tier demotion, and other non-FR-002 actions without a user ask. Selective application honored.
+5. Duplicate pages (Check 14) without a user ask stay confirm-gated.
 
 ## Pre-Write Snapshot
 
@@ -84,7 +84,7 @@ Sections: Summary (counts per action type), Broken Link Fixes, Cross-References 
 
 ## Dry-Run Output
 
-Numbered list of planned actions, one per line: `[N] <action-type>: <file:line> <change>`. Split the list: FR-002 items apply without confirm; end the non-FR-002 remainder with `Apply these N changes? [yes / no / select by number]`.
+Numbered list of planned actions, one per line: `[N] <action-type>: <file:line> <change>`. Split the list: FR-002 items apply without confirm; user-asked merges apply; end the unattended non-FR-002 remainder with `Apply these N changes? [yes / no / select by number]`.
 
 ## Log Entry
 

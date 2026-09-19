@@ -8,7 +8,7 @@ description: >
 
 # Wiki Lint
 
-Classify operations per `AGENTS.md` **Autonomy classification**. Do not copy that table.
+FR-002 structural repair (links, required frontmatter, nearest-valid type/lifecycle) files without a wait. Template conformance relocates existing content only; MUST NOT invent missing field body. Content with no template field is preserved. After Linting: one done-summary after green.
 
 ## Setup
 
@@ -55,7 +55,7 @@ When a page path is given (the hot path):
 
 When vault-wide lint finds fixable issues across files and `--check` is not set:
 
-1. Run deterministic pass + checks 1–14 (see [CHECKS.md](CHECKS.md)). Collect the full **backlog**.
+1. Run deterministic pass + checks 1–14 (see [checks.md](checks.md)). Collect the full **backlog**.
 2. Group by file. Order: most HARD findings first.
 3. Per file:
    a. Read file + related context files. Write only this file.
@@ -68,11 +68,11 @@ When vault-wide lint finds fixable issues across files and `--check` is not set:
 
 ## Full Vault Checks
 
-For checks beyond the deterministic script, see [CHECKS.md](CHECKS.md).
+For checks beyond the deterministic script, see [checks.md](checks.md).
 
 ## Consolidate Mode
 
-`--consolidate` is act-and-report: apply FR-002 without `"Apply these N changes? [yes / no / select]"`; keep that confirm for merge, tier demotion, and other non-FR-002 actions. See [CONSOLIDATE.md](CONSOLIDATE.md).
+`--consolidate` is act-and-report: apply FR-002 without `"Apply these N changes? [yes / no / select]"`; keep that confirm for merge, tier demotion, and other non-FR-002 actions. See [consolidate.md](consolidate.md).
 
 ## After Linting
 

@@ -93,7 +93,7 @@ Green-before-done for wiki pages remains existing `wiki-lint` / Vale / template 
 - `docs/agents/<kebab>.md` or `docs/agents/<kebab>.yml`
 - `AGENTS.md`, `wiki/AGENTS.md`, `.omp/AGENTS.md`
 
-Non-conforming files MUST be renamed in this feature; references updated. `CHECKS.md` / `CONSOLIDATE.md` remorph to kebab.
+Non-conforming files MUST be renamed in this feature; references updated. `checks.md` / `consolidate.md` remorph to kebab.
 
 **AGENT003**: A `specs/*/spec.md` Functional Requirement that uses `agent-facing` must cite at least one `rules/registry.yml` `id`. This feature’s spec.md cites AGENT001–AGENT003. Every existing spec that uses that phrase MUST cite an id.
 

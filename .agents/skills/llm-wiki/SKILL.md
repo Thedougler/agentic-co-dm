@@ -155,7 +155,7 @@ Things that are unresolved or need more sources.
 
 ## Paper Deep-Dive Template
 
-Academic papers (arXiv/conference) with load-bearing figures or equations use a richer body template instead of the generic Page Template. See [`PAPER-TEMPLATE.md`](PAPER-TEMPLATE.md).
+Academic papers (arXiv/conference) with load-bearing figures or equations use a richer body template instead of the generic Page Template. See [`paper-template.md`](paper-template.md).
 
 ## Provenance Markers
 

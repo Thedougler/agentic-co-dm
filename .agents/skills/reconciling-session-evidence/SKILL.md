@@ -8,16 +8,7 @@ description: >-
 ---
 
 # Reconcile Session Evidence
-## Work gate
-
-Wrapup. Follow `docs/agents/work.md`.
-
-Show a chat proposal; write a campaign wiki page only after DM accept (FR-019). Reject leaves no page. Ground claims in wiki pages and/or D&D 5e rules; cite `[[pages]]`. Contradictions surface to the DM. Never present invention as wiki fact; unused prep is not canon. Outcomes remain proposed until accept, then make surgical owner-page updates.
-
-
-Evidence fidelity beats prep fidelity. Raw evidence remains immutable; this skill builds a sparse,
-auditable interpretation and reconciliation delta. Clear play can revise prepared material, but
-unsupported summaries or ambiguous ASR readings cannot silently become canon.
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Boundary
 

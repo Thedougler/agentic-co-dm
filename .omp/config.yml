@@ -1,10 +1,8 @@
-# Wiki-write finalization is owned by tools/wiki_ops/Transaction; direct OMP-managed
-# writes invoke scripts/qmd-hook.sh exactly once after the write set commits.
 modelRoleStorage: project
 modelRoles:
   default: opencode-go/grok-4.6:medium
   plan: github-copilot/gpt-6-astra:low
-  task: opencode-go/gpt-5.6-luna:xhigh
+  task: xai-oauth/grok-4.6:medium
   review: opencode-go/grok-4.6:high
   smol: opencode-go/gpt-5.6-luna:xhigh
   advisor: opencode-go/grok-4.6:medium
@@ -51,37 +49,22 @@ compaction:
 advisor:
   enabled: false
 memory:
-  backend: off
-
+  backend: "off"
 mnemopi:
-  # Project memories stay project-local.
-  # Global memories can also be recalled when you deliberately create them.
   scoping: per-project-tagged
-
   autoRecall: true
   autoRetain: true
-
-  # Don't retain every few exchanges. Let a meaningful chunk of work form.
   retainEveryNTurns: 6
-
-  # Keep automatic memory injection tight.
   recallLimit: 6
   recallContextTurns: 3
   recallMaxQueryChars: 3000
   injectionTokenLimit: 2000
-
-  # Use normal semantic + full-text retrieval.
   noEmbeddings: false
   embeddingVariant: en
-
-  # Memory extraction/consolidation uses your online tiny/smol routing.
   llmMode: smol
-
-  # I'd leave the more elaborate retrieval machinery off initially.
   polyphonicRecall: false
   enhancedRecall: true
   proactiveLinking: false
-
   debug: false
 autolearn:
   enabled: false
