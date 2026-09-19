@@ -57,7 +57,7 @@ title. Battlemaps and other non-identity art go under **Art**.
 current task needs one. Keep provisional until DM approval. PC images require player-supplied or
 player-approved material. **Mint illustration** only for an explicitly named session moment; keep
 it session-scoped and out of identity lists. For native image requests, read the active harness
-addendum: [OMP](../../../OMP.md), [Codex](../../../CODEX.md), or [Grok Build](../../../GROK.md).
+addendum: [Codex](../../../CODEX.md) or [Grok Build](../../../GROK.md).
 **Promote/kill** accepted
 candidates without leaving
 competing faces active. **Assemble** only approved player-safe images for entities actually in the

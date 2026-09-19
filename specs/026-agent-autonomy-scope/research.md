@@ -84,20 +84,20 @@ Green-before-done for wiki pages remains existing `wiki-lint` / Vale / template 
 
 ## R-006: AGENT001 / AGENT002 / AGENT003 mechanics
 
-**AGENT001**: Fail if agent-facing instruction files still describe Work-gate / DM-approval-wait / extra canon workflow. Scan: `AGENTS.md`, `wiki/AGENTS.md`, `docs/agents/**/*.md`, `.agents/skills/**/*.md` (exclude generated `.agents/skills/speckit-*`). Forbidden procedure language after this feature: `## Work gate`, `dm-gated`, `file nothing until accept`, `wiki write after DM accept`, `Work-propose`, `wait for accept`. `docs/agents/work.md` may remain as a filename; its body must not reintroduce those procedures.
+**AGENT001**: Fail if agent-facing instruction files still describe Work-gate / DM-approval-wait / extra canon workflow. Scan: `AGENTS.md`, `wiki/AGENTS.md`, `docs/agents/**/*.md`, `.agents/skills/**/*.md`. Forbidden procedure language after this feature: `## Work gate`, `dm-gated`, `file nothing until accept`, `wiki write after DM accept`, `Work-propose`, `wait for accept`. Existing files in that scan MUST be edited until green.
 
-**AGENT002**: For files **added** after merge-base with `main` (not the existing tree): agent-facing paths must match:
+**AGENT002**: Scan the live agent-facing tree. Paths must match:
 
 - `.agents/skills/<kebab>/SKILL.md`
-- `.agents/skills/<kebab>/<kebab>.md` or documented companion names already used (`CHECKS.md`, `CONSOLIDATE.md` grandfathered as existing)
+- `.agents/skills/<kebab>/<kebab>.md`
 - `docs/agents/<kebab>.md` or `docs/agents/<kebab>.yml`
-- root/wiki/`.omp` `AGENTS.md` (fixed names)
+- `AGENTS.md`, `wiki/AGENTS.md`, `.omp/AGENTS.md`
 
-New files outside those patterns fail. No bulk rename of the current tree (FR-013).
+Non-conforming files MUST be renamed in this feature; references updated. `CHECKS.md` / `CONSOLIDATE.md` remorph to kebab.
 
-**AGENT003**: A `specs/*/spec.md` Functional Requirement that uses `agent-facing` must cite at least one `rules/registry.yml` `id`. This feature’s spec.md is in scope and must cite AGENT001–AGENT003 (implement updates spec or the check exempts 026 until those ids exist — prefer add ids first). Existing specs without that phrase are out of retrofit scope.
+**AGENT003**: A `specs/*/spec.md` Functional Requirement that uses `agent-facing` must cite at least one `rules/registry.yml` `id`. This feature’s spec.md cites AGENT001–AGENT003. Every existing spec that uses that phrase MUST cite an id.
 
-**Alternatives considered**: Frozen grandfather file of every current path (rejected: merge-base diff is enough). Require kebab for `CHECKS.md` (rejected: bulk rename).
+**Alternatives considered**: Grandfather existing tree (rejected: later user statement). Proactive adapter exclude-list (rejected: carve-outs only after a problem already experienced).
 
 ## R-007: Instruction files to strip
 
@@ -149,5 +149,13 @@ Skill-design class: `not` (established-file strips + AGENTS.md). No designated-w
 **Decision**: FR-002 list still runs unattended (lint, conform, ingest, bookkeeping). User-asked new content files under FR-003. Unattended Layer C still MUST NOT invent lore the user did not say (XII + four-line rule: unsaid is not canon). Dedup merge stays a destructive confirm (not a canon Work gate); if the user said merge, file the merge.
 
 **Rationale**: FR-002 + XII + Q9.
+
+## R-012: Carve-outs
+
+**Decision**: A carve-out exists only to fix a problem already experienced. Do not add exclude lists, unmanaged sets, or grandfather clauses because a rename *might* break generated adapters, skill protocol, or later Spec Kit regeneration.
+
+**Rationale**: User: "when I say everything I mean everything"; "carve outs only exist to solve a problem already experienced, they are not applied proactively."
+
+**Alternatives considered**: Exclude `speckit-*` / `.omp/commands/speckit.*` / templates up front (rejected: no breakage yet).
 
 **Unresolved**: none. No `NEEDS CLARIFICATION`.

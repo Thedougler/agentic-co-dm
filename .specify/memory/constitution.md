@@ -131,7 +131,7 @@ procedures. ADRs: resolved architecture. Lower layers operationalize but MUST NO
 principles.
 
 Reader-specific routing (`AGENTS.md` "Writing and visual authorities") is mandatory. Harness
-files (`OMP.md`, `CODEX.md`, `CLAUDE.md`, `GROK.md`) contain only harness-specific guidance and
+files (`.omp/AGENTS.md`, `CODEX.md`, `CLAUDE.md`, `GROK.md`) contain only harness-specific guidance and
 MUST NOT restate shared behavior.
 
 ### XVII. The Wiki Is Additive and Self-Sealing
@@ -194,6 +194,15 @@ The three systems — compiled Wiki, authoring guidance (templates/skills), and 
 (Vale) — stay synchronized. Changes to one MUST update relevant counterparts in the same change.
 Agents proactively maintain all three using observed failures, corrections, and evidence.
 
+### XXV. Carve-Outs Are Retrospective
+
+Apply a rule to the whole named set. A carve-out, exclude list, unmanaged set, or grandfather
+clause exists only to fix a problem already experienced in this repository. Name that failure
+when adding the carve-out. MUST NOT add one because a change might break later.
+
+Sync Impact Report (2026-09-18): Added XXV (MINOR). `AGENTS.md` points. Specs, plans, and skills
+stop writing proactive except-lists. Wiki, Vale, and templates unchanged.
+
 ## Operating Boundaries
 
 - The Co-DM works in prep and wrapup; the DM is sole runtime at the table.
@@ -220,6 +229,6 @@ Versioning: MAJOR (remove/redefine principle), MINOR (add principle/section), PA
 `Ratified` MUST NOT change. `Last Amended` records latest amendment date.
 
 Compliance reviews check proposed work against this constitution before merge. Project context:
-`AGENTS.md`. Harness behavior: `OMP.md`, `CODEX.md`, `CLAUDE.md`, `GROK.md`.
+`AGENTS.md`. Harness behavior: `.omp/AGENTS.md`, `CODEX.md`, `CLAUDE.md`, `GROK.md`.
 
-**Version**: 2.11.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-17
+**Version**: 2.12.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-18

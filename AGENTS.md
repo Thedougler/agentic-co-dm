@@ -13,6 +13,12 @@ Spec Kit auto-commit is enabled for the configured before/after hooks. The commi
 
 Before writing substantial engineering, agent-system, campaign-architecture, or creative-system work, classify it once and follow the full route in [`docs/agents/hybrid-sdd.md`](docs/agents/hybrid-sdd.md). Routine established campaign content stays on its existing skill, template, lifecycle, and Work route; split mixed requests into their system-changing and routine-content slices. Keep the managed Spec Kit block below disposable.
 
+## Carve-outs
+
+Constitution XXV. Apply the rule to the whole named set. Add an except/exclude/grandfather only after that rule has already failed in this repo; name the failure on the carve-out.
+
+**Done when:** the written rule has no proactive exclude list.
+
 ## Autonomy classification
 
 Classify each wiki or Co-DM operation as `autonomous` or `dm-gated` only. Derived; no third value. No `maybe`. This heading is the only table. Skills MUST NOT copy it. Do not say "autonomous GM".
@@ -488,7 +494,7 @@ Each fact has one owner. Do not restate these in harness config, generated adapt
 | Source + tests | Executable truth |
 | Harness runtime files (`.omp/config.yml`, etc.) | That harness's runtime concerns only |
 | Spec Kit generated adapters | Harness invocation of Spec Kit phases (disposable) |
-`OMP.md` is the OMP-only runtime addendum; when operating under OMP, read it for harness-specific edge cases.
+`.omp/AGENTS.md` is the OMP-only runtime addendum; when operating under OMP, read it for harness-specific edge cases.
 When operating under Codex or Grok Build, read `CODEX.md` or `GROK.md` respectively for harness-specific companion guidance.
 
 Orchestrator procedure: `docs/agents/harness-dispatch.md`.

@@ -21,6 +21,7 @@
 - Q: What is the entire canon rule and workflow? → A: If the user said it, it is canon. If the user said it more recently, that is more canon. If a transcript says it, after ASR issues are fixed, it is canon. DM-placed ingest files are canon as long as they do not contradict. No canon gates. No approval wait.
 - Q: Must new agent-facing files live in predictable paths with consistent, searchable names so an agent can find and edit them without hunting? → A: Required going forward: new agent-facing files use predictable paths and consistent searchable names; encode that as a checkable rule. No bulk rename of the existing tree.
 - Q: Is removing Work gates, DM-approval pauses, and extra canon workflow in scope? → A: Yes. All of it. Canon is only the four-line rule. Do not add gates or extra steps.
+- Q: Earlier answers grandfathered old files (no bulk rename, no retrofit). Should this feature bulk-rename existing agent-facing files and bring old files to the new checkable standards? → A: Yes. Everything. No grandfathering. Carve-outs only after a problem already experienced, never proactively. Rename to the placement rule. Update every old instruction file until the new rules are green.
 
 
 
@@ -104,16 +105,16 @@ Each new agent-facing standard — in this feature and every later feature — s
 
 ### User Story 6 - Predictable Agent-Facing Files (Priority: P1)
 
-New agent-facing files use predictable paths and consistent searchable names. That placement/name rule is checkable. Existing trees are not bulk-renamed by this feature.
+Agent-facing files use predictable paths and consistent searchable names. That placement/name rule is checkable. This feature bulk-renames the existing tree to match.
 
-**Why this priority**: Agents cannot find or edit what they cannot grep or glob.
+**Why this priority**: Agents cannot find or edit what they cannot grep or glob. Grandfathered names leave the hunt in place.
 
-**Independent Test**: A new agent-facing file that is not at the predicted path or that uses an ad-hoc unsearchable name fails the checkable rule.
+**Independent Test**: An agent-facing file that is not at the predicted path or that uses an ad-hoc unsearchable name fails the checkable rule, including files that predate this feature.
 
 **Acceptance Scenarios**:
 
 1. **Given** this feature or a later feature adds a new agent-facing file, **When** it is offered as done, **Then** its path and name match the checkable placement rule
-2. **Given** an existing file that predates this feature, **When** this feature ships, **Then** it is not bulk-renamed solely to satisfy the new rule
+2. **Given** an existing agent-facing file whose path or name does not match the placement rule, **When** this feature ships, **Then** it has been renamed and references updated; AGENT002 is green
 
 ### Edge Cases
 
@@ -123,8 +124,8 @@ New agent-facing files use predictable paths and consistent searchable names. Th
 - Ingest file placed by the DM contradicts the user or a corrected transcript — that ingest is not canon
 - Session prep needs a new named owner the user asked to introduce — file the page
 - A later feature adds an agent-facing standard with no checkable rule — the feature is incomplete; do not treat AGENTS.md prose as a substitute
-- Existing prose-only standards predating this feature remain until a later change encodes them; this feature does not rewrite them in bulk
-- A new agent-facing file is placed in an ad-hoc path — the checkable placement rule fails; the work is not done
+- Existing instruction files that predate this feature are updated and renamed until AGENT001–AGENT002 are green
+- An agent-facing file in an ad-hoc path — the checkable placement rule fails; the work is not done
 
 
 ## Requirements
@@ -142,9 +143,9 @@ New agent-facing files use predictable paths and consistent searchable names. Th
 - **FR-008**: The only required user-facing report after completed work is one short done-summary. Agents MUST NOT add extra questions.
 - **FR-009**: After checkable rules are green, the agent MUST report one short done-summary naming what changed and where. Work is not done while rules for that work still fail.
 - **FR-010**: When a single request mixes maintenance and user-requested new content, the agent MUST complete all of it, reach green, and issue one done-summary
-- **FR-011**: From this feature onward, each new agent-facing standard MUST ship as a machine-checkable rule. Agents MUST iterate until that rule is green. `AGENTS.md` MAY explain why and give examples and MUST NOT be treated as a sufficient substitute for the rule. This default applies to later features; it does not require bulk-encoding of existing prose-only standards. Checkable rule: `AGENT003`.
+- **FR-011**: Each agent-facing standard — this feature's, later features', and existing instruction files this feature updates — MUST ship as a machine-checkable rule. Agents MUST iterate until that rule is green. `AGENTS.md` MAY explain why and give examples and MUST NOT be treated as a sufficient substitute for the rule. Existing instruction files MUST be updated until green. Checkable rule: `AGENT003`.
 - **FR-012**: Every task the agent executes is in scope for the green-before-done loop
-- **FR-013**: New agent-facing files MUST use predictable paths and consistent searchable names, encoded as a checkable rule (`AGENT002`). This feature MUST NOT bulk-rename the existing tree to satisfy that rule.
+- **FR-013**: Agent-facing files MUST use predictable paths and consistent searchable names, encoded as a checkable rule (`AGENT002`). This feature MUST bulk-rename the existing tree to satisfy that rule. References MUST be updated with the rename.
 - **FR-014**: The same checkable rules MUST apply on the agent path and the human path. Do not keep an agent-only honor system.
 
 
@@ -165,9 +166,9 @@ New agent-facing files use predictable paths and consistent searchable names. Th
 - **SC-003**: 100% of Work-gate, DM-approval-pause, and extra canon-step procedures are removed from agent-facing instructions this feature touches
 - **SC-004**: Spec and PR reviews for skill/instruction changes cite skill-eval outcomes, not software-only metrics, as the primary bar
 - **SC-005**: Two agents given the same task description both complete it
-- **SC-006**: 100% of new agent-facing standards in this feature and later features have a corresponding checkable rule; a change that adds such a standard in prose only is incomplete
+- **SC-006**: 100% of agent-facing standards in this feature, later features, and existing instruction files this feature updates have a corresponding checkable rule; a change that adds such a standard in prose only is incomplete
 - **SC-007**: 0% of done-summaries are issued while checkable rules for that work still fail
-- **SC-008**: 100% of new agent-facing files this feature or a later feature adds satisfy the checkable path/name rule
+- **SC-008**: 100% of agent-facing files this feature ships (new and renamed existing) satisfy the checkable path/name rule
 
 ## Assumptions
 
@@ -176,6 +177,6 @@ New agent-facing files use predictable paths and consistent searchable names. Th
 - `AGENTS.md` explains why and examples; the checkable rule is the contract
 - Helper scripts and tooling continue to follow Constitution VI ("Software and Instructions Are Agent-Shaped")
 - Skill evaluation for instruction changes reuses the existing `skill-creator` eval loop
-- The lint-contract default applies going forward. Existing prose-only standards are out of retrofit scope unless a later change encodes them.
+- Existing instruction files are updated and renamed in this feature until AGENT001–AGENT002 are green.
 - The four-line canon rule is the entire canon workflow
 - Checkable rules are shared by agents and humans (FR-014)

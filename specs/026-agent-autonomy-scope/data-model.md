@@ -30,7 +30,7 @@ Machine-checkable rules that encode new agent-facing standards from this feature
 | id | Encodes | Input | Fail when |
 |----|---------|-------|-----------|
 | AGENT001 | FR-001, FR-005 | Agent-facing instruction files | Work-gate / approval-wait / extra canon-step procedures remain |
-| AGENT002 | FR-013 | Files added vs `main` merge-base | New agent-facing path/name is ad-hoc |
+| AGENT002 | FR-013 | Live agent-facing tree | Path or name is ad-hoc |
 | AGENT003 | FR-004, FR-011 | `specs/*/spec.md` FRs containing `agent-facing` | No cited `rules/registry.yml` id |
 
 Wiki HARD lint (links, frontmatter, templates, Vale on wiki) already exists. This feature does not duplicate it. Green-before-done (FR-012) means: every checkable rule that applies to the work just done is exit 0 before the done-summary.
@@ -65,9 +65,9 @@ No Propose / Decide / accept states.
 
 - Canon Rule → wiki page write (immediate; staging flag may redirect path)
 - Lint Contract → done-summary (blocks until green)
-- AGENT001 → instruction files in R-007
-- AGENT002 → new files only
-- AGENT003 → later feature specs
+- AGENT001 → instruction files in R-007; existing files updated until green
+- AGENT002 → whole scanned tree; bulk-rename + reference updates
+- AGENT003 → this spec and later specs that use `agent-facing`
 - `docs/agents/work.md` → no longer a gate; may keep table-aim / reflection that is not an approval wait
 
 ## Edge-case resolution
@@ -80,7 +80,7 @@ No Propose / Decide / accept states.
 | Ingest contradicts user/transcript | Ingest is not canon; do not file that contradiction as truth; no ask |
 | Session prep needs a named owner the user asked to introduce | File the owner page; spoken may follow |
 | Later feature adds agent-facing standard in prose only | AGENT003 fail; feature incomplete |
-| Existing prose-only standards | Out of retrofit scope |
-| New agent-facing file in an ad-hoc path | AGENT002 fail |
+| Existing instruction file predates this feature | Update and/or rename until AGENT001–AGENT002 green |
+| Agent-facing file in an ad-hoc path | AGENT002 fail until renamed |
 | Dedup merge without user ask | Not FR-002 unattended; destructive confirm remains |
 | User asked to merge duplicates | File the merge; green; done-summary |

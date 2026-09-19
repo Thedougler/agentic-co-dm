@@ -41,25 +41,25 @@ Do not say "autonomous GM".
 
 Agent-facing instruction files MUST NOT describe Work-gate, DM-approval-wait, or extra canon workflow.
 
-Scan: `AGENTS.md`, `wiki/AGENTS.md`, `docs/agents/**/*.md`, `.agents/skills/**/*.md` excluding generated `speckit-*`.
+Scan: `AGENTS.md`, `wiki/AGENTS.md`, `docs/agents/**/*.md`, `.agents/skills/**/*.md`.
 
 Fail on procedure language including: `## Work gate`, `dm-gated`, `file nothing until accept`, `wiki write after DM accept`, `Work-propose`, `wait for accept`.
 
 ### AGENT002 (BLOCK)
 
-New agent-facing files (added vs `main` merge-base) MUST use predictable paths and searchable names:
+Every agent-facing file MUST use a predictable path and searchable name:
 
 - `.agents/skills/<kebab>/SKILL.md`
 - `.agents/skills/<kebab>/<kebab>.md`
 - `docs/agents/<kebab>.md`
 - `docs/agents/<kebab>.yml`
-- existing fixed names: `AGENTS.md`, `wiki/AGENTS.md`, `.omp/AGENTS.md`
+- `AGENTS.md`, `wiki/AGENTS.md`, `.omp/AGENTS.md`
 
-Existing tree is not bulk-renamed. Companion files already on `main` (`CHECKS.md`, `CONSOLIDATE.md`, …) stay.
+This feature bulk-renames the existing tree to match and updates references. `CHECKS.md` / `CONSOLIDATE.md` remorph to kebab.
 
 ### AGENT003 (BLOCK)
 
-A `specs/*/spec.md` Functional Requirement that contains `agent-facing` MUST cite at least one `rules/registry.yml` id. This feature’s spec cites `AGENT001`, `AGENT002`, `AGENT003`. Specs that never use that phrase are out of retrofit scope.
+A `specs/*/spec.md` Functional Requirement that contains `agent-facing` MUST cite at least one `rules/registry.yml` id. This feature’s spec cites `AGENT001`, `AGENT002`, `AGENT003`. Every existing spec that contains that phrase MUST cite an id.
 
 ### Wiki lint (already exists)
 

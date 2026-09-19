@@ -63,7 +63,7 @@ keeps it alive.
    central subject has its strongest available anchor attached.
 
 5. **Feed the host image tool.** Use the active harness's native request contract:
-   [OMP](../../../OMP.md), [Codex](../../../CODEX.md), or [Grok Build](../../../GROK.md).
+   [Codex](../../../CODEX.md) or [Grok Build](../../../GROK.md).
    The input field must hold the identity files or host-supported image tokens — a filename
    in prompt text is not the input. A previous generated frame is not an identity anchor.
    Read `references/prompt-inventory.md` for the structured brief template. Completion: when

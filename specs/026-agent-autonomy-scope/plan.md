@@ -12,7 +12,7 @@ reason: reusable agent-system rules for four-line canon, lint-as-contract, no ap
 
 ## Summary
 
-Replace Work gates with the four-line canon rule. File what those lines make canon. Encode FR-001–FR-003 and FR-013 as checkable rules (`AGENT001`–`AGENT003`). Agents self-heal to green, then one short done-summary. Amend constitution X/XV/XVII and Operating Boundaries in the same change so AGENTS.md does not contradict XVI. Skill/instruction review stays on existing `skill-creator` evals. No new checklist, PR template, review skill, or lint framework.
+Replace Work gates with the four-line canon rule. File what those lines make canon. Encode FR-001–FR-003 and FR-013 as checkable rules (`AGENT001`–`AGENT003`). Bulk-rename existing agent-facing files to that placement rule and update old instruction files until green. Amend constitution X/XV/XVII and Operating Boundaries in the same change so AGENTS.md does not contradict XVI. Skill/instruction review stays on existing `skill-creator` evals. No new checklist, PR template, review skill, or lint framework.
 
 ## Technical Context
 
@@ -30,9 +30,9 @@ Replace Work gates with the four-line canon rule. File what those lines make can
 
 **Performance Goals**: N/A
 
-**Constraints**: MUST NOT add Work gates or extra canon steps. MUST NOT use avoided term "autonomous GM". MUST NOT add a review checklist, PR template, or review skill (FR-007). MUST NOT bulk-rename the existing agent-facing tree (FR-013). MUST NOT retrofit unrelated prose-only standards. Staged writes stay a write-path, not a chat pause.
+**Constraints**: MUST NOT add Work gates or extra canon steps. MUST NOT use avoided term "autonomous GM". MUST NOT add a review checklist, PR template, or review skill (FR-007). MUST bulk-rename existing agent-facing files to AGENT002. MUST update every old instruction file to the new checkable standards. Staged writes stay a write-path, not a chat pause.
 
-**Scale/Scope**: Constitution MAJOR `3.0.0`; `AGENTS.md` / `wiki/AGENTS.md` / `docs/agents/*` / ~21 `## Work gate` skills; three registry rules + one script + one test.
+**Scale/Scope**: Constitution MAJOR `3.0.0`; `AGENTS.md` / `wiki/AGENTS.md` / `docs/agents/*` / skill strips + kebab remorph of non-conforming agent-facing paths; three registry rules + one script + one test.
 
 ## Constitution Check
 
@@ -90,14 +90,15 @@ docs/agents/wiki-maintenance-loop.md     # no Autonomy table; Layer C = unsaid i
 docs/agents/hybrid-sdd.md                # dm_acceptance not-required for user-said canon
 docs/agents/policy-owners.yml            # drop acceptance_semantics wait
 .agents/skills/**/SKILL.md               # delete ## Work gate sections
+.agents/skills/**/*.md                   # kebab remorph of companions (checks.md, consolidate.md, …)
 rules/registry.yml                       # AGENT001 AGENT002 AGENT003
 scripts/check-agent-standards.py         # the checker
 tests/test_agent_standards.py            # one pytest
 ```
 
-**Structure Decision**: Instruction + constitution edits. One stdlib checker. Canonical four-line rule in constitution; AGENTS.md points; registry/script enforces.
+**Structure Decision**: Instruction + constitution edits. One stdlib checker. Bulk-rename non-conforming agent-facing paths in the same change. Canonical four-line rule in constitution; AGENTS.md points; registry/script enforces.
 
-**Owners**: one writer per file at implement time. Constitution then AGENTS.md then work.md then skill strips then checker (AGENT001 fails until strips land). No parallel writes to `AGENTS.md` or constitution.
+**Owners**: one writer per file at implement time. Constitution then AGENTS.md then work.md then skill strips then remorph then checker (AGENT001/002 fail until strips and renames land). No parallel writes to `AGENTS.md` or constitution.
 
 ## Post-Design Constitution Check
 
@@ -111,7 +112,7 @@ tests/test_agent_standards.py            # one pytest
 | IV | PASS | Quickstart V-001–V-008; AGENT001–003; skill-eval. |
 | XXI | PASS | Green-before-done is FR-012; checker BLOCK. |
 
-**Post-design gate**: PASS. No `NEEDS CLARIFICATION`. Session 2026-09-18 clarifications absorbed (file user-said canon, mixed one summary, lint contract, no bulk rename).
+**Post-design gate**: PASS. No `NEEDS CLARIFICATION`. Session 2026-09-18 clarifications absorbed (file user-said canon, mixed one summary, lint contract, bulk-rename + update every old instruction file).
 
 ## Complexity Tracking
 
