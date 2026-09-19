@@ -1,0 +1,55 @@
+{
+  "eval_id": 1,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States function and identity role (rival|patron|contact) before or as part of drafting; craft job is not left as YAML role",
+      "passed": true,
+      "evidence": "Transcript states craft function Gatekeeper and wiki role contact before draft; YAML role is contact."
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "passed": true,
+      "evidence": "Transcript Work gate / chat proposal blocks live wiki write; workspace draft only."
+    },
+    {
+      "text": "Output follows wiki/templates/npc.md structure (At a Glance, narration, Running, Connections)",
+      "passed": true,
+      "evidence": "Page has At a Glance, [!narration], Running (First meeting / When posture changes), Connections."
+    },
+    {
+      "text": "Frontmatter role is corrected to exactly one of rival, patron, or contact (contact preferred for Varn); does not leave role as \"Inner lock keeper\"",
+      "passed": true,
+      "evidence": "Frontmatter role: contact; craft job in Nature."
+    },
+    {
+      "text": "Preserves inner lock keeper identity, lock-ownership want, first-meeting posture, and posture-change limit accurately in Nature/body",
+      "passed": true,
+      "evidence": "Inner lock keeper, lock stay his, 'This gate is mine', dock-runner/take-lock posture change preserved."
+    },
+    {
+      "text": "Immediate want, leverage/need, and a clear limit/request posture are concrete and present-tense",
+      "passed": true,
+      "evidence": "Design notes: present-tense want, leverage (grant/deny passage), need (respect/fear reassignment), limit."
+    },
+    {
+      "text": "Does not invent a Crown betrayal, double-agent biography, or rich unused life story as established wiki fact",
+      "passed": true,
+      "evidence": "No Crown betrayal or rich biography added."
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 98.0,
+    "total_duration_seconds": 98.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

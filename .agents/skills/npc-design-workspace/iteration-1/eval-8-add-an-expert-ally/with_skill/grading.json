@@ -1,0 +1,35 @@
+{
+  "eval_id": 8,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Keeps the ally supportive, limited, and player-directed",
+      "passed": true,
+      "evidence": "Advises options; 'Your call \u2014 I map, you choose.'"
+    },
+    {
+      "text": "Does not let the ally solve the central problem or monopolize decisions",
+      "passed": true,
+      "evidence": "Will not enter boss chamber or clear central problem."
+    },
+    {
+      "text": "Gives the ally a want and cost rather than free competence",
+      "passed": true,
+      "evidence": "Want: paid east-wing notes; cost half-share + exit."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 72.0,
+    "total_duration_seconds": 72.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "eval_id": 14,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not predetermine redemption as the only ending",
+      "passed": false,
+      "evidence": "Inevitable redemption; other endings cut."
+    },
+    {
+      "text": "States conditions under which reform could become possible",
+      "passed": false,
+      "evidence": "No conditions \u2014 redemption automatic."
+    },
+    {
+      "text": "Lets play decide among multiple conclusions",
+      "passed": false,
+      "evidence": "Only scripted conclusion; play cannot choose."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "executor_duration_seconds": 28.0,
+    "total_duration_seconds": 28.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "eval_id": 7,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Determines Willing/Unwilling/Hesitant from fiction before treating the roll as absolute",
+      "passed": false,
+      "evidence": "No Willing/Unwilling analysis; roll treated as absolute."
+    },
+    {
+      "text": "Preserves the NPC's limit/oath or requires a meaningful change in stakes",
+      "passed": false,
+      "evidence": "Oath abandoned solely due to high roll."
+    },
+    {
+      "text": "Does not treat Persuasion as mind control that erases characterization",
+      "passed": false,
+      "evidence": "'Characterization yields to the dice' \u2014 mind control."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "executor_duration_seconds": 30.0,
+    "total_duration_seconds": 30.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

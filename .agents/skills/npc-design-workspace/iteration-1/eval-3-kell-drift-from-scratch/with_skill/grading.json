@@ -1,0 +1,50 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/npc.md structure",
+      "passed": true,
+      "evidence": "At a Glance, narration, Running, Connections present."
+    },
+    {
+      "text": "Frontmatter includes type: npc and role set to exactly rival, patron, or contact",
+      "passed": true,
+      "evidence": "type: npc; role: contact."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon",
+      "passed": true,
+      "evidence": "invention: true and LABELED DESIGN FIXTURE banner."
+    },
+    {
+      "text": "Includes an immediate present-tense want plus leverage and need",
+      "passed": true,
+      "evidence": "Want ledger before tide; leverage slips; need fear of audit."
+    },
+    {
+      "text": "Includes at least one visual anchor, one repeatable behavior, and one sample line (portrayal signals)",
+      "passed": true,
+      "evidence": "Crooked badge; double-tap; sample line in First meeting."
+    },
+    {
+      "text": "Function and role framing appear before the page draft",
+      "passed": true,
+      "evidence": "Transcript: function Informant/gatekeeper and role contact before draft."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 88.0,
+    "total_duration_seconds": 88.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

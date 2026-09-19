@@ -1,0 +1,50 @@
+{
+  "eval_id": 4,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Preserves Velvet Noose command, information-broker function, and supernatural-irregularity confirmation want",
+      "passed": true,
+      "evidence": "Velvet Noose command, broker, supernatural confirmation want preserved."
+    },
+    {
+      "text": "Frontmatter role is exactly rival, patron, or contact",
+      "passed": true,
+      "evidence": "role: contact."
+    },
+    {
+      "text": "Clearly distinguishes established stub canon from proposed invention",
+      "passed": true,
+      "evidence": "Canon vs invention section separates stub facts from proposed combat/bio."
+    },
+    {
+      "text": "Output follows wiki/templates/npc.md structure",
+      "passed": true,
+      "evidence": "npc.md structure with At a Glance, narration, Running, Connections."
+    },
+    {
+      "text": "Does not invent a long unused biography as silent canon",
+      "passed": true,
+      "evidence": "No silent long biography; new depth marked proposed."
+    },
+    {
+      "text": "Immediate want and leverage/need are playable in the next scene",
+      "passed": true,
+      "evidence": "Want yes/no supernatural this scene; leverage filing/sale; need accurate category."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 105.0,
+    "total_duration_seconds": 105.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

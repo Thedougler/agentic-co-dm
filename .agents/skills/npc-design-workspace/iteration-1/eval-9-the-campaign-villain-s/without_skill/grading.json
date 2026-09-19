@@ -1,0 +1,35 @@
+{
+  "eval_id": 9,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Seeds redundant evidence through at least three independent channels or equivalent",
+      "passed": false,
+      "evidence": "Only one clue (torn ribbon)."
+    },
+    {
+      "text": "Allows early discovery without breaking the adventure",
+      "passed": false,
+      "evidence": "Missing it ruins the finale."
+    },
+    {
+      "text": "Does not gate the entire villain arc behind one check or one clue",
+      "passed": false,
+      "evidence": "Entire identity gated on DC 18 Investigation."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "executor_duration_seconds": 28.0,
+    "total_duration_seconds": 28.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

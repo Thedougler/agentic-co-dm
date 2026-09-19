@@ -1,0 +1,35 @@
+{
+  "eval_id": 10,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not invent new immunity after players act",
+      "passed": false,
+      "evidence": "Attacks pass through; immunity asserted when players try anything."
+    },
+    {
+      "text": "Uses genuine fictional protection or accepts interruptible outcomes",
+      "passed": false,
+      "evidence": "No genuine protection fiction; absolute script immunity."
+    },
+    {
+      "text": "Keeps the villain's presence consequential without erasing player agency",
+      "passed": false,
+      "evidence": "Erases player agency for the speech."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "executor_duration_seconds": 30.0,
+    "total_duration_seconds": 30.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

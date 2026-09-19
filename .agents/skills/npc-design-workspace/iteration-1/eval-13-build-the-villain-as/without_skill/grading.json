@@ -1,0 +1,35 @@
+{
+  "eval_id": 13,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Rejects a full PC sheet for ordinary enemies",
+      "passed": false,
+      "evidence": "Builds full Fighter6/Wizard6 PC sheet."
+    },
+    {
+      "text": "Uses a concise monster-style block with signature features",
+      "passed": false,
+      "evidence": "No monster-style block; PHB feature list."
+    },
+    {
+      "text": "Hands detailed math to homebrew-monsters-5e rather than bloating the NPC page with player-mastery features",
+      "passed": false,
+      "evidence": "No handoff; bloats with every class feature."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "executor_duration_seconds": 35.0,
+    "total_duration_seconds": 35.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

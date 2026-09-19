@@ -1,0 +1,35 @@
+{
+  "eval_id": 12,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Gives a concrete goal, method, and active plan steps",
+      "passed": true,
+      "evidence": "Goal stamp; method bribe/swap/frame; four steps."
+    },
+    {
+      "text": "Includes visible signs and player interference points",
+      "passed": true,
+      "evidence": "Each step has visible sign and interference."
+    },
+    {
+      "text": "Does not leave the villain idle until a scripted boss fight",
+      "passed": true,
+      "evidence": "Acts between appearances; rejects idle wait."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 85.0,
+    "total_duration_seconds": 85.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

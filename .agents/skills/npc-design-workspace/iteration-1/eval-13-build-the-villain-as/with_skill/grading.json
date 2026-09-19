@@ -1,0 +1,35 @@
+{
+  "eval_id": 13,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Rejects a full PC sheet for ordinary enemies",
+      "passed": true,
+      "evidence": "Explicit reject of 12th-level PC sheet."
+    },
+    {
+      "text": "Uses a concise monster-style block with signature features",
+      "passed": true,
+      "evidence": "Monster-style skeleton with signature features only."
+    },
+    {
+      "text": "Hands detailed math to homebrew-monsters-5e rather than bloating the NPC page with player-mastery features",
+      "passed": true,
+      "evidence": "Hands math/CR/chassis to homebrew-monsters-5e."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 80.0,
+    "total_duration_seconds": 80.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

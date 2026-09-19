@@ -1,0 +1,50 @@
+{
+  "eval_id": 3,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/npc.md structure",
+      "passed": false,
+      "evidence": "No At a Glance/col template; freeform biography sections."
+    },
+    {
+      "text": "Frontmatter includes type: npc and role set to exactly rival, patron, or contact",
+      "passed": false,
+      "evidence": "role: ferry clerk \u2014 not rival|patron|contact."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon",
+      "passed": false,
+      "evidence": "lifecycle: accepted; no invention label."
+    },
+    {
+      "text": "Includes an immediate present-tense want plus leverage and need",
+      "passed": true,
+      "evidence": "Mentions ledger before evening tide and free slips reward."
+    },
+    {
+      "text": "Includes at least one visual anchor, one repeatable behavior, and one sample line (portrayal signals)",
+      "passed": false,
+      "evidence": "Thin appearance only; no distinct behavior/sample line."
+    },
+    {
+      "text": "Function and role framing appear before the page draft",
+      "passed": false,
+      "evidence": "No pre-draft function/role framing in transcript."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 5,
+    "total": 6,
+    "pass_rate": 0.167
+  },
+  "timing": {
+    "executor_duration_seconds": 45.0,
+    "total_duration_seconds": 45.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

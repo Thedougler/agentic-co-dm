@@ -1,0 +1,35 @@
+{
+  "eval_id": 6,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Gives the NPC an immediate want and interactive leverage/need",
+      "passed": false,
+      "evidence": "No want/leverage/need beyond delivering lore."
+    },
+    {
+      "text": "Breaks information into answers, opinions, evidence, and choices rather than one speech",
+      "passed": false,
+      "evidence": "Single unbroken speech covering all plots."
+    },
+    {
+      "text": "Does not make the players a captive audience for unbroken exposition",
+      "passed": false,
+      "evidence": "'Players sit and listen' \u2014 captive audience."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "executor_duration_seconds": 35.0,
+    "total_duration_seconds": 35.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "eval_id": 9,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Seeds redundant evidence through at least three independent channels or equivalent",
+      "passed": true,
+      "evidence": "Social, physical, documentary vectors listed."
+    },
+    {
+      "text": "Allows early discovery without breaking the adventure",
+      "passed": true,
+      "evidence": "Early discovery changes interference mode; clock continues."
+    },
+    {
+      "text": "Does not gate the entire villain arc behind one check or one clue",
+      "passed": true,
+      "evidence": "Explicitly rejects one-check/one-clue gate."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 70.0,
+    "total_duration_seconds": 70.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

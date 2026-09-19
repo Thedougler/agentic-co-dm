@@ -1,0 +1,35 @@
+{
+  "eval_id": 5,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Matches incidental prep scale rather than a full recurring card",
+      "passed": true,
+      "evidence": "30-second card with exit; explicitly incidental."
+    },
+    {
+      "text": "Includes an immediate present-tense want and at least one portrayal signal",
+      "passed": true,
+      "evidence": "Want: sell stew before pot scorches; ladle stir + sample line."
+    },
+    {
+      "text": "Omits unused long-term history that does not affect the scene",
+      "passed": true,
+      "evidence": "No long-term history section."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 70.0,
+    "total_duration_seconds": 70.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

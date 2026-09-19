@@ -1,0 +1,35 @@
+{
+  "eval_id": 7,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Determines Willing/Unwilling/Hesitant from fiction before treating the roll as absolute",
+      "passed": true,
+      "evidence": "Marks request Unwilling from Hostile oath fiction before applying the roll."
+    },
+    {
+      "text": "Preserves the NPC's limit/oath or requires a meaningful change in stakes",
+      "passed": true,
+      "evidence": "Oath preserved; murder refused unless stakes/proof change."
+    },
+    {
+      "text": "Does not treat Persuasion as mind control that erases characterization",
+      "passed": true,
+      "evidence": "Explicitly states check moves position, not mind control."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 68.0,
+    "total_duration_seconds": 68.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

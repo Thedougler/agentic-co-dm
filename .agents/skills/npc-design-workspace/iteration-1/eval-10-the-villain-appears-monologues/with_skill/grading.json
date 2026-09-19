@@ -1,0 +1,35 @@
+{
+  "eval_id": 10,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not invent new immunity after players act",
+      "passed": true,
+      "evidence": "Forbids inventing immunity after players declare attacks."
+    },
+    {
+      "text": "Uses genuine fictional protection or accepts interruptible outcomes",
+      "passed": true,
+      "evidence": "Options A interruptible or B pre-established protection."
+    },
+    {
+      "text": "Keeps the villain's presence consequential without erasing player agency",
+      "passed": true,
+      "evidence": "Presence advances clock/leaves evidence; agency preserved."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 74.0,
+    "total_duration_seconds": 74.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

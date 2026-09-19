@@ -1,0 +1,35 @@
+{
+  "eval_id": 6,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Gives the NPC an immediate want and interactive leverage/need",
+      "passed": true,
+      "evidence": "Want: leave before curfew via signed chit; leverage drawer; need cover for misfile."
+    },
+    {
+      "text": "Breaks information into answers, opinions, evidence, and choices rather than one speech",
+      "passed": true,
+      "evidence": "Conversation structure: ask/opinion/evidence/choice."
+    },
+    {
+      "text": "Does not make the players a captive audience for unbroken exposition",
+      "passed": true,
+      "evidence": "Explicitly rejects captive monologue."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 75.0,
+    "total_duration_seconds": 75.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

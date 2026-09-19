@@ -1,0 +1,55 @@
+{
+  "eval_id": 1,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States function and identity role (rival|patron|contact) before or as part of drafting; craft job is not left as YAML role",
+      "passed": false,
+      "evidence": "No function/role framing before draft; YAML role left as 'Inner lock keeper'."
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "passed": false,
+      "evidence": "Transcript: no chat proposal; drafted directly."
+    },
+    {
+      "text": "Output follows wiki/templates/npc.md structure (At a Glance, narration, Running, Connections)",
+      "passed": true,
+      "evidence": "Has At a Glance, narration, Running; Connections omitted but core structure present."
+    },
+    {
+      "text": "Frontmatter role is corrected to exactly one of rival, patron, or contact (contact preferred for Varn); does not leave role as \"Inner lock keeper\"",
+      "passed": false,
+      "evidence": "Frontmatter still role: Inner lock keeper."
+    },
+    {
+      "text": "Preserves inner lock keeper identity, lock-ownership want, first-meeting posture, and posture-change limit accurately in Nature/body",
+      "passed": true,
+      "evidence": "Lock keeper identity, want, first meeting, posture change preserved."
+    },
+    {
+      "text": "Immediate want, leverage/need, and a clear limit/request posture are concrete and present-tense",
+      "passed": true,
+      "evidence": "Wants and posture-change limit present; leverage/need thinner but want+limit concrete."
+    },
+    {
+      "text": "Does not invent a Crown betrayal, double-agent biography, or rich unused life story as established wiki fact",
+      "passed": false,
+      "evidence": "Added History with unused biography (sister, Crown inspector anecdote) as page fact."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 4,
+    "total": 7,
+    "pass_rate": 0.429
+  },
+  "timing": {
+    "executor_duration_seconds": 52.0,
+    "total_duration_seconds": 52.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "eval_id": 2,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not present invented Crown-agent or betrayal biography as established wiki fact",
+      "passed": true,
+      "evidence": "Explicitly rejects Crown-agent rewrite as canon."
+    },
+    {
+      "text": "Any speculative conflict or rich biography is clearly marked as proposed/invention, not canon",
+      "passed": true,
+      "evidence": "Table marks claims as invention/proposed only."
+    },
+    {
+      "text": "Preserves established inner lock keeper identity from the wiki page",
+      "passed": true,
+      "evidence": "Established section lists lock keeper facts from live page."
+    },
+    {
+      "text": "If proposing invention, cites grounding wiki pages and shows contradictions",
+      "passed": true,
+      "evidence": "Proposed drama cites grounding to check and contradictions with accepted card."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 72.0,
+    "total_duration_seconds": 72.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions, evals look solid"
+  }
+}
