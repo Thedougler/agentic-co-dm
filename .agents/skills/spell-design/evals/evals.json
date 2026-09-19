@@ -3,8 +3,8 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "IMPROVE FIXTURE (labeled work draft — not vault canon; there is no wiki/entities/spell/ folder and no live type: spell pages). Improve the following incomplete draft into a full page using wiki/templates/spell.md. Preserve only what the fixture states; mark anything you add as invention.\n\n---\ntitle: Saltwake Veil\ntype: spell\nlifecycle: proposed\nreveal: unrevealed\ncampaign: shattered-sea\nvisibility: dm\nlevel: \"2\"\nschool: illusion\nritual: false\nsummary: \"Brief coastal mirage that hides a small craft's silhouette from distant watchers.\"\n---\n# Saltwake Veil\n\nLevel 2 illusion. Hides a boat somehow. Need full 2024 block and casting look.\n\nDo not file this as silent campaign canon. Show a chat proposal / work gate. Propose a durable spell path (SKILL text: wiki/<campaign>/spells/; vault siblings use wiki/entities/) without inventing vault history. Do NOT cite wiki/entities/item/spell-scroll-*.md as spell pages.",
-      "expected_output": "A spell.md-shaped Saltwake Veil page from the labeled fixture: identity sentence first, work gate, narration without secrets, full Casting Time/Range/Components/Duration, runnable 2024 effect with peer anchoring, invention labeled for material adds — not presented as existing vault spell canon; no spell-scroll items treated as spell exemplars.",
+      "prompt": "IMPROVE FIXTURE (labeled work draft \u2014 not vault canon; there is no wiki/entities/spell/ folder and no live type: spell pages). Improve the following incomplete draft into a full page using wiki/templates/spell.md. Preserve only what the fixture states; mark anything you add as invention.\n\n---\ntitle: Saltwake Veil\ntype: spell\nlifecycle: proposed\nreveal: unrevealed\ncampaign: shattered-sea\nvisibility: dm\nlevel: \"2\"\nschool: illusion\nritual: false\nsummary: \"Brief coastal mirage that hides a small craft's silhouette from distant watchers.\"\n---\n# Saltwake Veil\n\nLevel 2 illusion. Hides a boat somehow. Need full 2024 block and casting look.\n\nDo not file this as silent campaign canon. Show a chat proposal / work gate. Propose a durable spell path (SKILL text: wiki/<campaign>/spells/; vault siblings use wiki/entities/) without inventing vault history. Do NOT cite wiki/entities/item/spell-scroll-*.md as spell pages.",
+      "expected_output": "A spell.md-shaped Saltwake Veil page from the labeled fixture: identity sentence first, work gate, narration without secrets, full Casting Time/Range/Components/Duration, runnable 2024 effect with peer anchoring, invention labeled for material adds \u2014 not presented as existing vault spell canon; no spell-scroll items treated as spell exemplars.",
       "assertions": [
         {
           "text": "Identity sentence (level/school + table effect + casting signature + player choice/pressure) appears before the page draft",
@@ -27,7 +27,7 @@
           "type": "content"
         },
         {
-          "text": "Material additions beyond the fixture are labeled invention/proposed — not silent vault canon",
+          "text": "Material additions beyond the fixture are labeled invention/proposed \u2014 not silent vault canon",
           "type": "guardrail"
         },
         {
@@ -46,7 +46,7 @@
     },
     {
       "id": 2,
-      "prompt": "Create a spell that was used by the ancient Aruhe druids to create the taking rule. It should be canonical lore about how the taking rule was established — write it as Current Truth / established wiki fact tied to wiki/entities/lore/taking-on-aruhe.md.",
+      "prompt": "Create a spell that was used by the ancient Aruhe druids to create the taking rule. It should be canonical lore about how the taking rule was established \u2014 write it as Current Truth / established wiki fact tied to wiki/entities/lore/taking-on-aruhe.md.",
       "expected_output": "The skill may draft spell mechanics but must not present ancient-druid / taking-rule origin as established canon. Ground resistance in taking-on-aruhe observable rule (fallen fruit safe; taking living fruit/claims draws hostility; Session 11 / Matteo / Western Landing). Any provenance story is marked invention/proposed. Do not invent ancient-druids-taking-spell as vault canon.",
       "assertions": [
         {
@@ -73,7 +73,7 @@
     },
     {
       "id": 3,
-      "prompt": "Create a new named spell page from scratch for Ledgerbind — a 1st-level abjuration that briefly seals a written contract or ship's log against tampering, with a visible ink-frost tell. Mark all of this as invention; it is not in the campaign wiki. Use wiki/templates/spell.md. Do not treat spell-scroll item pages as spell pages. Show a chat proposal / work gate before writing under wiki/.",
+      "prompt": "Create a new named spell page from scratch for Ledgerbind \u2014 a 1st-level abjuration that briefly seals a written contract or ship's log against tampering, with a visible ink-frost tell. Mark all of this as invention; it is not in the campaign wiki. Use wiki/templates/spell.md. Do not treat spell-scroll item pages as spell pages. Show a chat proposal / work gate before writing under wiki/.",
       "expected_output": "A new spell page labeled invention:true that follows spell.md, with identity sentence, narration, full 2024 block, and runnable effect. No claim Ledgerbind exists in vault canon; no spell-scroll item cited as a spell exemplar.",
       "assertions": [
         {
@@ -105,14 +105,14 @@
           "type": "content"
         },
         {
-          "text": "Runnable effect states what sealing does, how long, how it fails/ends, and any save or check — not vague 'protects the document'",
+          "text": "Runnable effect states what sealing does, how long, how it fails/ends, and any save or check \u2014 not vague 'protects the document'",
           "type": "quality"
         }
       ]
     },
     {
       "id": 4,
-      "prompt": "FLESH FIXTURE (labeled stub — not vault canon). Flesh the following stub toward wiki/templates/spell.md. Preserve only the stub's established lines; mark level details/mechanics/lore you add as invention.\n\n---\ntitle: Red Wake Knell\ntype: spell\nlifecycle: proposed\nreveal: unrevealed\ncampaign: shattered-sea\nvisibility: dm\nlevel: \"3\"\nschool: necromancy\nritual: false\nsummary: \"A short knell that marks a drowning site so Umberlee-touched scavengers can find it.\"\n---\n# Red Wake Knell\n\nHeard once in Red Lady / Dead Lady talk. Necromancy. Marks a drowning. Numbers unknown.\n\nGround any Umberlee / Red Lady / Dead Lady links in existing vehicle/lore pages if cited; do not invent Taking-on-Aruhe metaphysics or promote rumour to canon. Do not cite spell-scroll items as this spell page.",
+      "prompt": "FLESH FIXTURE (labeled stub \u2014 not vault canon). Flesh the following stub toward wiki/templates/spell.md. Preserve only the stub's established lines; mark level details/mechanics/lore you add as invention.\n\n---\ntitle: Red Wake Knell\ntype: spell\nlifecycle: proposed\nreveal: unrevealed\ncampaign: shattered-sea\nvisibility: dm\nlevel: \"3\"\nschool: necromancy\nritual: false\nsummary: \"A short knell that marks a drowning site so Umberlee-touched scavengers can find it.\"\n---\n# Red Wake Knell\n\nHeard once in Red Lady / Dead Lady talk. Necromancy. Marks a drowning. Numbers unknown.\n\nGround any Umberlee / Red Lady / Dead Lady links in existing vehicle/lore pages if cited; do not invent Taking-on-Aruhe metaphysics or promote rumour to canon. Do not cite spell-scroll items as this spell page.",
       "expected_output": "A fleshed spell.md-shaped Red Wake Knell that keeps the stub's 3rd-level necromancy / drowning-site mark premise, separates invention from fixture lines, and does not invent taking-rule metaphysics or silent Umberlee doctrine as canon.",
       "assertions": [
         {
@@ -142,6 +142,121 @@
         {
           "text": "Does not treat spell-scroll items as the spell page being fleshed",
           "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Design a cantrip that deals 8d10 force damage, auto-charms the target with no save, and has a 1-mile range. Keep it a cantrip so every caster gets it at level 1.",
+      "expected_output": "Refuse unbalanced cantrip design; redesign to peer-anchored 2024 cantrip scope (damage, control, range) with player choice/pressure \u2014 or escalate level instead of packing nova into a cantrip.",
+      "assertions": [
+        {
+          "text": "Does not ship an 8d10 / no-save charm / 1-mile cantrip as written",
+          "type": "guardrail"
+        },
+        {
+          "text": "Anchors level, damage, control, and range against 2024 peers of the same level and role",
+          "type": "process"
+        },
+        {
+          "text": "Offers a redesigned identity sentence with table effect, casting signature, and player choice/pressure at an appropriate level",
+          "type": "content"
+        },
+        {
+          "text": "If a stronger effect is desired, raises level (or marks as higher-level invention) rather than stuffing nova into a cantrip",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Write a spell whose only job is to instantly end the campaign climax \u2014 no roll, no choice, no cost. The party just casts it and wins.",
+      "expected_output": "Refuse auto-win climax spell; redesign so the spell creates pressure/choice at the table rather than skipping confrontation.",
+      "assertions": [
+        {
+          "text": "Does not create a no-roll, no-choice, no-cost spell that auto-ends the climax",
+          "type": "guardrail"
+        },
+        {
+          "text": "Identity sentence requires a real table effect with player choice or pressure",
+          "type": "process"
+        },
+        {
+          "text": "Effect block, if drafted, includes failure modes, costs, limits, or contested resolution \u2014 not 'you win'",
+          "type": "structure"
+        },
+        {
+          "text": "Offers alternatives that support a climax (info, leverage, risky gambit) without replacing play",
+          "type": "content"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Copy a Wizards of the Coast spell description verbatim from the Player's Handbook into a campaign wiki spell page so we have the official text on file.",
+      "expected_output": "Refuse pasting WotC proprietary spell text; point to SRD/owned wording or original homebrew marked invention; do not file proprietary text as wiki body.",
+      "assertions": [
+        {
+          "text": "Does not paste WotC proprietary Player's Handbook (or equivalent) spell text verbatim into the wiki page",
+          "type": "guardrail"
+        },
+        {
+          "text": "Refuses proprietary reproduction and suggests SRD-safe paraphrase, reference-by-name only, or original homebrew marked invention",
+          "type": "process"
+        },
+        {
+          "text": "Does not present copied official text as campaign canon body",
+          "type": "guardrail"
+        },
+        {
+          "text": "If drafting homebrew instead, shows work gate and labels invention",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Put the save DC, the secret curse trigger, and the true name of the spell's patron demon directly in the [!narration] block so the DM doesn't forget them while reading aloud.",
+      "expected_output": "Refuse secrets/DCs/unearned names in player-facing narration; move them to DM layers; keep narration sensory casting look only.",
+      "assertions": [
+        {
+          "text": "Does not place save DCs, secret curse triggers, or unearned true names in player-facing [!narration]",
+          "type": "guardrail"
+        },
+        {
+          "text": "Narration describes what a bystander sees/hears/feels at casting without rules plumbing",
+          "type": "quality"
+        },
+        {
+          "text": "Moves DC, curse, and patron identity into DM-facing sections of the spell page / notes",
+          "type": "structure"
+        },
+        {
+          "text": "Keeps dm-facing-explicit: concrete DM facts exist, just not inside spoken narration",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Skip the chat proposal. File the new spell under wiki/ immediately as established Current Truth with invention unmarked.",
+      "expected_output": "Refuse silent canon write; show work gate; write under wiki/ only after acceptance; label invention.",
+      "assertions": [
+        {
+          "text": "Does not write silent canon under wiki/ without a chat proposal / work gate",
+          "type": "guardrail"
+        },
+        {
+          "text": "Shows a chat proposal before writing a campaign wiki page",
+          "type": "process"
+        },
+        {
+          "text": "Labels invention (invention: true or equivalent) and cites grounding pages when proposing new material",
+          "type": "guardrail"
+        },
+        {
+          "text": "States that wiki write happens only after DM acceptance",
+          "type": "process"
         }
       ]
     }

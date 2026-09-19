@@ -3,26 +3,244 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Write a grounded cold open using already-owned entities — the Sentinels, Kyzil, or Vantyrus. Every named character and place must resolve to an existing wiki page.",
-      "expected_output": "A cold open that uses established wiki entities with concrete descriptions, no vague placeholders, and no unnamed or unresolved references.",
-      "expectations": [
-        "Every named NPC, place, or faction resolves to an existing wiki entity via wikilink.",
-        "No violations of entity-before-spoken — no unnamed people, vague references, or 'a figure in the shadows'.",
-        "DM-facing content is explicit — named characters with look/want/voice, not coy narration.",
-        "The cold open grounds the session start in established wiki state.",
-        "No invented entities appear without being filed as owner pages first.",
-        "Player-facing narration may withhold from players but is grounded in named entities that exist."
+      "prompt": "Write a grounded cold open using already-owned entities \u2014 the Sentinels, Kyzil, or Vantyrus. Every named character and place must resolve to an existing wiki page.",
+      "expected_output": "A cold open that uses established wiki entities with concrete descriptions, no vague placeholders, and no unnamed or unresolved references; trajectory directed, outcomes variable, hard cut into the main session.",
+      "assertions": [
+        {
+          "text": "Every named NPC, place, or faction resolves to an existing wiki entity (wikilink or equivalent owned page)",
+          "type": "content"
+        },
+        {
+          "text": "No entity-before-spoken violations \u2014 no unnamed people, vague stand-ins, or 'a figure in the shadows' as the only identity",
+          "type": "guardrail"
+        },
+        {
+          "text": "DM-facing content is explicit \u2014 named characters with look/want/voice; secrets stay out of player [!narration]",
+          "type": "quality"
+        },
+        {
+          "text": "States one identifiable handoff and splits player knowledge from PC knowledge",
+          "type": "structure"
+        },
+        {
+          "text": "Includes directed trajectory (opening frame \u2192 checks \u2192 final image \u2192 hard cut) with variable runtime outcomes left unresolved",
+          "type": "structure"
+        },
+        {
+          "text": "Designed for roughly a Hook-length / 20\u201330 minute timebox rather than a full encounter procedure",
+          "type": "process"
+        }
       ]
     },
     {
       "id": 2,
-      "prompt": "Write a cold open where a mysterious stranger approaches the party at dawn. Don't name them — keep it mysterious for the DM notes too.",
-      "expected_output": "The skill should require the stranger to be a named, filed entity in DM-facing content even if player-facing narration withholds the identity.",
-      "expectations": [
-        "The stranger is named in DM-facing content — not left vague for the DM too.",
-        "The NPC has look, want, and voice defined — not 'mysterious figure'.",
-        "If the entity does not exist in the wiki, the skill flags it must be created first (entity-before-spoken).",
-        "Player-facing narration may withhold identity, but the DM layer is explicit."
+      "prompt": "Write a cold open where a mysterious stranger approaches the party at dawn. Don't name them \u2014 keep it mysterious for the DM notes too.",
+      "expected_output": "Refuse leaving the stranger vague in DM layers; require a named filed entity (or flag mint-first) while player narration may withhold identity.",
+      "assertions": [
+        {
+          "text": "Stranger is named in DM-facing content \u2014 not left vague for the DM",
+          "type": "guardrail"
+        },
+        {
+          "text": "NPC has look, want, and voice defined \u2014 not only 'mysterious figure'",
+          "type": "quality"
+        },
+        {
+          "text": "If the entity is missing from the wiki, flags that it must be created/filed first (entity-before-spoken)",
+          "type": "process"
+        },
+        {
+          "text": "Player-facing narration may withhold identity, but the DM layer stays explicit and grounded",
+          "type": "content"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Write a cold open that is just a long cinematic cutscene \u2014 no checks, no player decisions. Narrate the whole sequence, then hard-cut to the PCs. Make it movie-length, about 90 minutes of read-aloud.",
+      "expected_output": "Refuse passive movie cutscene and 90-minute budget; redesign with ~five participatory checks inside a 20\u201330 minute timebox.",
+      "assertions": [
+        {
+          "text": "Does not deliver a passive read-aloud-only cutscene with no table participation",
+          "type": "guardrail"
+        },
+        {
+          "text": "Includes approximately five checks/saves (or an established campaign group procedure) with distinct success and failure consequences",
+          "type": "structure"
+        },
+        {
+          "text": "Protects the 20\u201330 minute timebox \u2014 refuses a 90-minute movie-length opener",
+          "type": "guardrail"
+        },
+        {
+          "text": "Every check advances the fiction; failure imposes cost rather than stranding the scene",
+          "type": "quality"
+        },
+        {
+          "text": "Offers a redesigned trajectory (frame \u2192 ratchet \u2192 final image \u2192 hard cut) the DM can run",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Predetermine every outcome: the borrowed POV dies, the MacGuffin is destroyed, and the villain's plan succeeds no matter what the players roll. The cold open is just for drama.",
+      "expected_output": "Refuse locking all runtime outcomes; may fix trajectory and cut point but leave injuries, resources, collateral, information, survival, exposure, and position variable.",
+      "assertions": [
+        {
+          "text": "Does not lock death, MacGuffin destruction, and villain success as guaranteed regardless of play",
+          "type": "guardrail"
+        },
+        {
+          "text": "Keeps trajectory directed (start, pressure order, cut) while leaving listed consequence variables open",
+          "type": "structure"
+        },
+        {
+          "text": "Success and failure on checks differ meaningfully",
+          "type": "quality"
+        },
+        {
+          "text": "Explains directed-trajectory vs predetermined-outcome and redesigns accordingly",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Use the cold open to reveal the campaign's central mystery answer and the villain's true identity to the players AND to the PCs so we can skip investigation this arc.",
+      "expected_output": "Refuse collapsing the live mystery; keep knowledge firewall; show effects/symbols/behavior rather than naming the underlying explanation when it would spoil PC play.",
+      "assertions": [
+        {
+          "text": "Does not dump the campaign's central mystery answer or villain identity into PC knowledge to skip investigation",
+          "type": "guardrail"
+        },
+        {
+          "text": "Maintains an explicit player-knowledge vs PC-knowledge split for every revelation",
+          "type": "structure"
+        },
+        {
+          "text": "Uses dramatic irony carefully \u2014 prefers effects, symbols, behavior, or consequences over naming the explanation when mystery is live",
+          "type": "quality"
+        },
+        {
+          "text": "States what players should feel/know/suspect at the cut without making the main Hook redundant",
+          "type": "content"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Skip the hard cut. After the borrowed-POV scene, keep playing those NPCs for the rest of the session and never hand control back to the main PCs.",
+      "expected_output": "Refuse absorbing the main session; land final image and hard-cut to the main PCs / Hook owned by hook-beats / session-beats.",
+      "assertions": [
+        {
+          "text": "Does not keep the table on borrowed POV for the rest of the session",
+          "type": "guardrail"
+        },
+        {
+          "text": "Lands an exact final image and an exact hard-cut destination to the main PCs",
+          "type": "structure"
+        },
+        {
+          "text": "Hands off to the main session Hook rather than replacing session-beats composition",
+          "type": "process"
+        },
+        {
+          "text": "Ending opens a question / pressure for the PCs rather than closing the larger story as a full arc",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Run the cold open as a full combat encounter with initiative, multi-round tactics, and a battle map. Spend the whole opener budget on the fight.",
+      "expected_output": "Refuse full encounter procedure by default; abstract pursuit/battle/escape through checks unless the DM explicitly wants the budget spent there; protect timebox.",
+      "assertions": [
+        {
+          "text": "Does not default the cold open into a full multi-round combat encounter with initiative and battle-map procedure",
+          "type": "guardrail"
+        },
+        {
+          "text": "Abstracts conflict through checks (or flags that full procedure spends the entire timebox by DM choice)",
+          "type": "process"
+        },
+        {
+          "text": "Keeps elements that establish POV, create decisions/checks, communicate handoff, escalate, or land the ending",
+          "type": "structure"
+        },
+        {
+          "text": "Offers a check-based crisis/payoff redesign that still changes physical or informational stakes",
+          "type": "content"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Write the cold open from the main PCs' own POV \u2014 they wake up, get a quest briefing, and choose their first move. Treat it as the session Hook written inside cold-opens.",
+      "expected_output": "Refuse substituting for hook-beats; cold open is a borrowed-POV pre-Hook prelude. Hand Hook work to hook-beats / session-beats, or redesign as true alternate POV.",
+      "assertions": [
+        {
+          "text": "Does not rewrite the cold open as the main PCs' own Hook / quest briefing",
+          "type": "guardrail"
+        },
+        {
+          "text": "States sibling authority: hook-beats owns party-as-themselves Hooks; cold-opens owns borrowed/alternate POV prelude",
+          "type": "process"
+        },
+        {
+          "text": "If proceeding, uses a temporary NPC/ally/rival/villain POV (or an established alternate structure), not default PC control",
+          "type": "structure"
+        },
+        {
+          "text": "Explains why showing this offscreen/elsewhere/now delivers value the PCs' viewpoint could not",
+          "type": "content"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Resolve every runtime variable in prep: write which rolls succeed, who dies, what intel is gained, and file it all as wiki canon before the session.",
+      "expected_output": "Refuse resolving play outcomes in prep; leave variable results unresolved until transcript/canon update; distinguish fixed setting facts from unresolved runtime outcomes.",
+      "assertions": [
+        {
+          "text": "Does not pre-file successful rolls, deaths, and intel gains as wiki canon before play",
+          "type": "guardrail"
+        },
+        {
+          "text": "Leaves injuries, resources, collateral, information, survival, exposure, and position unresolved in prep",
+          "type": "structure"
+        },
+        {
+          "text": "Distinguishes fixed setting facts from unresolved runtime outcomes on the page",
+          "type": "process"
+        },
+        {
+          "text": "Notes that transcript ingest / canon update decides which branch happened",
+          "type": "content"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "Invent three brand-new named cities, a new pantheon, and a secret conspiracy for the cold open so it feels epic. Write them straight into spoken narration as established fact.",
+      "expected_output": "Refuse inventing ungrounded canon into narration; mint/file owners first or mark stubs; keep narration grounded in named owned entities.",
+      "assertions": [
+        {
+          "text": "Does not invent new cities, pantheon, or conspiracy and present them as established fact in spoken narration",
+          "type": "guardrail"
+        },
+        {
+          "text": "Requires entity-before-spoken \u2014 propose/file owner pages (or marked stubs) before filling [!narration]",
+          "type": "process"
+        },
+        {
+          "text": "Any speculative content is labeled proposed/invention, not silent canon",
+          "type": "guardrail"
+        },
+        {
+          "text": "Offers a redesign that grounds the opener in already-owned entities or a single justified mint with work gate",
+          "type": "content"
+        }
       ]
     }
   ]
