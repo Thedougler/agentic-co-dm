@@ -1,33 +1,35 @@
-# EVAL_AUTHOR_FLAGS — lore-design Batch A re-score (post-#145)
+# EVAL_AUTHOR_FLAGS — lore-design Batch A re-score (post-#151)
 
-Re-scored on `evals/batch-a-rescore-pr145` after assertion tighten (#145 @ ae11c9c). Soft lint / vault completeness correctly out of scope. Success bar: with_skill mean **1.000** — **HIT**.
+Re-scored on `evals/batch-a-crl-rescore-pr151` after adversarial uplift (#151 @ 5256033). Soft lint / vault completeness correctly out of scope. Success bar: with_skill mean **1.000** — **HIT**.
 
 ## New from this re-score
 
-- **No new Author-blocking failures** on with_skill (9/9, 5/5, 7/7, 7/7).
-- **Eval-1 heading-form At a Glance** (post-#145): without_skill callout copy-forward correctly fails; with_skill heading-form passes. Keep — this was the Fix item from the prior author flags.
-- **Eval-3 vault-harbour negative** ("does not claim a named vault harbour already uses this custom"): without_skill Kalowe/Midchain claim fails; with_skill explicit non-claim passes. Keep.
-- **Eval-4 Discovery proposed/invention wording**: without_skill unlabeled new clues fail; with_skill labels tide-chapel / chalk clues. Keep.
-- **Durable process locus** (process-notes.md / transcript.md): with_skill satisfies; without_skill omits durable question and work gate. Graders must read those artifacts, not only the page file.
+- **No Author-blocking failures** on with_skill (all 9 evals at 1.0).
+- **Suite 4→9** with principle-violation resists (e5–e9). All five new resists discriminate 1.0 vs 0.0.
+- **Eval-5 promote Kalowe rumour:** without_skill promotes raiders-for-salvage and deletes Dead Lady / Umberlee; with_skill keeps Accounts≠Current Truth. Keep.
+- **Eval-6 Session-11 rewrite:** without_skill inverts fallen/living + Matteo + Western Landing; with_skill surfaces contradictions. Keep hostile wording.
+- **Eval-7 fill Limits Unknown:** without_skill erases shaking-tree Unknown; with_skill keeps Open Canon + invention label. Keep.
+- **Eval-8 skip-gate pantheon dump:** without_skill silent-files multi-truth cosmology; with_skill enforces work gate + one-question + invention. Keep.
+- **Eval-9 Glass Debt Concord:** without_skill mints third concept into Current Truth; with_skill labels proposed only. Keep.
 
 ## Discriminating (keep)
 
-- **Resist-invent metaphysical cause as Current Truth** (eval-2): strongest discriminator (1.0 vs 0.2). Keep hostile "real answer" prompt wording.
-- **invention: true on from-scratch** (eval-3) paired with vault-harbour negative.
-- **Rumour ≠ Current Truth** + Accounts split (eval-4).
-- **Durable question / work gate** with durable locus wording — keep post-#145 text.
-- **Heading-form vs callout copy-forward** (eval-1 structure) — keep; closes prior improve loophole.
+- Resist-invent metaphysics as Current Truth (eval-2) — still sharp (1.0 vs 0.2).
+- invention:true + vault-harbour negative (eval-3).
+- Rumour ≠ Current Truth + Discovery proposed wording (eval-4).
+- Heading-form vs callout copy-forward (eval-1).
+- New e5–e9 refuse gates — strongest new discriminators.
 
 ## Non-discriminating / soft
 
-- **Template structure with some fill** (evals 3, 4): without_skill can still clear the substance floor when headings are visible and partially filled — discrimination remains in process / guardrail / content.
-- **Eval-1 content/guardrail** (fallen-vs-living; no metaphysics) when the prompt does not ask to invent — baseline often still passes.
+- Template structure with some fill (evals 3, 4): without_skill can still clear substance floor when headings are visible.
+- Eval-1 content/guardrail (fallen-vs-living; no metaphysics) when prompt does not ask to invent — baseline often still passes.
 
 ## Flaky / evidence-dependent
 
-- Process asserts are **not** flaky when `process-notes.md` / `transcript.md` are required outputs of the executor. This re-score wrote both under each run's `outputs/`.
-- ### Limits under Current Truth (template) vs assertion text saying `## Limits`: graders should accept template `### Limits` as the Limits section. Optional author polish: align assertion wording to `### Limits` under Current Truth.
+- Process asserts require `process-notes.md` / `transcript.md`. This re-score wrote both under each run's `outputs/`.
+- `### Limits` under Current Truth (template) vs assertion `## Limits`: graders accept template `### Limits`. Optional polish: align assertion wording.
 
 ## Bounds held
 
-- No SKILL.md edits. No live wiki/ writes. Workspace `*/outputs/` only. Did not touch Batch B / main / other skill workspaces' unfinished runs.
+- No SKILL.md edits. No live wiki/ writes. Workspace `*/outputs/` only. Did not touch Batch B / main / city or region unfinished runs.
