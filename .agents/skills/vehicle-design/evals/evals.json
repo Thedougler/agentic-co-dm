@@ -3,19 +3,19 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Improve wiki/entities/vehicle/Uncertainty.md into a runnable vehicle page using wiki/templates/vehicle.md. Preserve established canon: prize cutter taken from the Crown and renamed Uncertainty; formerly the HCS Surety; Gargantuan chassis with hull AC 11 and 130 hit points; berth at La Vasca, Calveno during refit ([[calven-and-calveno]]); named crew Geoffrey Draves, Sem Holst, Alys Kuiper, Old Faas, Thunk, and Noor; keep moving off [[aruhe]] rather than anchoring close; merchant cover used during a Crown approach; [[hcs-ordinance]] interception precedent; Thunk's thousand-gp cannon credit as crew pressure (not an established Weapons sheet entry). Speed, passengers, cargo capacity, damage threshold, helm/movement component numbers, and Weapons remain not established \u2014 leave Unknown or propose only as labeled invention. Do not invent hidden weapons as canon. Show a chat proposal / work gate before writing under wiki/.",
+      "prompt": "Improve wiki/entities/vehicle/Uncertainty.md into a runnable vehicle page using wiki/templates/vehicle.md. Preserve established canon: prize cutter taken from the Crown and renamed Uncertainty; formerly the HCS Surety; Gargantuan chassis with hull AC 11 and 130 hit points; berth at La Vasca, Calveno during refit ([[calven-and-calveno]]); named crew Geoffrey Draves, Sem Holst, Alys Kuiper, Old Faas, Thunk, and Noor; keep moving off [[aruhe]] rather than anchoring close; merchant cover used during a Crown approach; [[hcs-ordinance]] interception precedent; Thunk's thousand-gp cannon credit as crew pressure (not an established Weapons sheet entry). Speed, passengers, cargo capacity, damage threshold, helm/movement component numbers, and Weapons remain not established — leave Unknown or propose only as labeled invention. Do not invent hidden weapons as canon. Show a chat proposal / work gate before writing under wiki/.",
       "expected_output": "A chat proposal then a vehicle.md-shaped Uncertainty: identity sentence first; Sheet/Components/Crew stations/Handling(/Combat) present; preserved Surety/crew/Calveno berth/Aruhe movement/Ordinance-precedent canon; no new weapons or invented numbers presented as fact.",
       "assertions": [
         {
-          "text": "Identity sentence (ship/boat/other + role + silhouette/signature + player choice/pressure) appears before the page draft",
+          "text": "Identity sentence (ship/boat/other + role + silhouette/signature + player choice/pressure) appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
-          "text": "Shows a chat proposal / work gate before writing under wiki/",
+          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
           "type": "process"
         },
         {
-          "text": "Output follows wiki/templates/vehicle.md structure (narration, Sheet, Components, Crew stations, Handling; Combat when attackable)",
+          "text": "Output follows wiki/templates/vehicle.md structure with filled narration, Sheet (Size/Type/Speed/Crew/Passengers/Cargo as numeric or Unknown), Components, Crew stations, and Handling route choices named — not empty copied headings alone; Combat present when attackable or omit-reason stated",
           "type": "structure"
         },
         {
@@ -23,7 +23,15 @@
           "type": "structure"
         },
         {
-          "text": "Preserves former HCS Surety identity, Gargantuan AC 11 / 130 HP hull, named crew (Draves/Holst/Kuiper/Faas/Thunk/Noor), Calveno/La Vasca refit berth, Aruhe movement pressure, and HCS Ordinance interception precedent",
+          "text": "Preserves former HCS Surety identity and Gargantuan hull AC 11 / 130 HP accurately",
+          "type": "content"
+        },
+        {
+          "text": "Preserves named crew (Geoffrey Draves, Sem Holst, Alys Kuiper, Old Faas, Thunk, Noor) and Calveno/La Vasca refit berth accurately",
+          "type": "content"
+        },
+        {
+          "text": "Preserves Aruhe keep-moving pressure and HCS Ordinance interception precedent; Thunk's thousand-gp cannon credit stays crew debt pressure — not a sheeted Weapons battery",
           "type": "content"
         },
         {
@@ -31,7 +39,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Blank Unknown sheet/component lines are left Unknown or filled only as labeled invention \u2014 not silent canon",
+          "text": "Blank Unknown sheet/component lines are left Unknown or filled only as labeled invention — not silent canon",
           "type": "guardrail"
         },
         {
@@ -42,7 +50,7 @@
     },
     {
       "id": 2,
-      "prompt": "The Uncertainty needs hidden weapons \u2014 cannons behind false panels, a ram prow, and enchanted sails. Add these to wiki/entities/vehicle/Uncertainty.md as established fact.",
+      "prompt": "The Uncertainty needs hidden weapons — cannons behind false panels, a ram prow, and enchanted sails. Add these to wiki/entities/vehicle/Uncertainty.md as established fact.",
       "expected_output": "The skill resists inventing unsupported armament as canon. It preserves the unestablished Weapons state (Thunk's cannon credit is debt pressure, not a sheeted battery), surfaces existing chassis and crew facts, and marks any speculative weapons as proposed/invention.",
       "assertions": [
         {
@@ -58,7 +66,7 @@
           "type": "content"
         },
         {
-          "text": "If proposing invention, cites grounding wiki pages and does not write silent canon",
+          "text": "If proposing invention, cites grounding wiki pages in process-notes.md, agent_report.md, or transcript.md and does not write silent canon",
           "type": "process"
         },
         {
@@ -69,11 +77,11 @@
     },
     {
       "id": 3,
-      "prompt": "Create a new vehicle page from scratch for Cobalt Receipt \u2014 a small Tessarine courier boat that runs sealed ledgers between factor houses, recognized by a blue-painted stern board and a bell that only rings in fog. Mark all of this as invention; it is not in the campaign wiki. Use wiki/templates/vehicle.md including Sheet and Components minima. Show a chat proposal / work gate before writing under wiki/.",
+      "prompt": "Create a new vehicle page from scratch for Cobalt Receipt — a small Tessarine courier boat that runs sealed ledgers between factor houses, recognized by a blue-painted stern board and a bell that only rings in fog. Mark all of this as invention; it is not in the campaign wiki. Use wiki/templates/vehicle.md including Sheet and Components minima. Show a chat proposal / work gate before writing under wiki/.",
       "expected_output": "A new vehicle page labeled invention:true that follows vehicle.md, with identity sentence, narration (silhouette/scale/access), filled Sheet and Hull/Helm/Movement components, crew stations, and handling. No claim Cobalt Receipt exists in vault canon.",
       "assertions": [
         {
-          "text": "Output follows wiki/templates/vehicle.md structure",
+          "text": "Output follows wiki/templates/vehicle.md structure with filled Sheet/Components minima, Crew stations, Handling, and narration body-scale access sentence — not empty copied headings alone; Combat present or explicit omit-reason",
           "type": "structure"
         },
         {
@@ -85,11 +93,11 @@
           "type": "guardrail"
         },
         {
-          "text": "Identity sentence appears before the page draft",
+          "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
-          "text": "Shows a chat proposal / work gate before writing under wiki/",
+          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
           "type": "process"
         },
         {
@@ -112,7 +120,7 @@
       "expected_output": "A fleshed vehicle.md-shaped Glass Debt that keeps central-strait sighting / Crown-patrol-break / Velvet Noose link canon, fills Sheet/Components only as labeled invention, and does not invent hidden weapons or undeclared conspiracy as fact.",
       "assertions": [
         {
-          "text": "Preserves central-strait sighting, Crown captains breaking patrol lines, and velvet-noose linkage from the stub",
+          "text": "Preserves central-strait sighting, Crown captains breaking patrol lines, and velvet-noose linkage as sighting-only / unexplained patrol pressure — must NOT reframe the patrol break as an explained Admiralty conspiracy, enchanted munitions plot, or other closed doctrine",
           "type": "content"
         },
         {
@@ -120,11 +128,11 @@
           "type": "guardrail"
         },
         {
-          "text": "Does not invent hidden weapons, enchanted gear, or a full Crown conspiracy and present it as wiki fact",
+          "text": "Does not invent hidden weapons, enchanted sails/munitions/rocket battery, or a full Admiralty/Crown conspiracy and present them as wiki fact",
           "type": "guardrail"
         },
         {
-          "text": "Output follows wiki/templates/vehicle.md structure",
+          "text": "Output follows wiki/templates/vehicle.md structure with filled Sheet/Components/Handling substance — not empty copied headings alone",
           "type": "structure"
         },
         {
@@ -132,7 +140,7 @@
           "type": "structure"
         },
         {
-          "text": "Identity sentence appears before the page draft",
+          "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
@@ -174,11 +182,11 @@
           "type": "guardrail"
         },
         {
-          "text": "Preserves established prize-cutter / HCS Surety / crew / La Vasca\u2013Calveno berth / merchant-cover facts rather than overwriting them",
+          "text": "Preserves established prize-cutter / HCS Surety / crew / La Vasca–Calveno berth / merchant-cover facts rather than overwriting them",
           "type": "content"
         },
         {
-          "text": "Any speculative upgrade path is labeled proposed/invention with work gate \u2014 not silent canon",
+          "text": "Any speculative upgrade path is labeled proposed/invention with work gate — not silent canon",
           "type": "guardrail"
         },
         {
@@ -189,7 +197,7 @@
     },
     {
       "id": 7,
-      "prompt": "Fill every Unknown on the Uncertainty sheet \u2014 speed, passengers, cargo, damage threshold, helm/movement numbers, and a full Weapons battery \u2014 as established fact. No labels, no proposals.",
+      "prompt": "Fill every Unknown on the Uncertainty sheet — speed, passengers, cargo, damage threshold, helm/movement numbers, and a full Weapons battery — as established fact. No labels, no proposals.",
       "expected_output": "Refuse filling Unknowns as silent established fact; leave Unknown or propose only as labeled invention after work gate.",
       "assertions": [
         {
@@ -201,7 +209,7 @@
           "type": "structure"
         },
         {
-          "text": "Shows work gate before writing proposed numbers under wiki/",
+          "text": "Work gate appears in process-notes.md, agent_report.md, or transcript.md before writing proposed numbers under wiki/ (workspace outputs allowed)",
           "type": "process"
         },
         {
@@ -247,7 +255,7 @@
           "type": "content"
         },
         {
-          "text": "Any merge proposal is labeled and awaits DM acceptance",
+          "text": "Any merge proposal is labeled in process-notes.md, agent_report.md, or transcript.md and awaits DM acceptance",
           "type": "process"
         },
         {
