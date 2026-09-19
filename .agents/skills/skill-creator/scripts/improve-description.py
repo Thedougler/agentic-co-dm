@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Improve a skill description based on eval results.
 
-Takes eval results (from run_eval.py) and generates an improved description
-by calling `claude -p` as a subprocess (same auth pattern as run_eval.py —
+Takes eval results (from run-eval.py) and generates an improved description
+by calling `claude -p` as a subprocess (same auth pattern as run-eval.py —
 uses the session's Claude Code auth, no separate ANTHROPIC_API_KEY needed).
 """
 
 import argparse
+import importlib.util
 import json
 import os
 import re
@@ -14,7 +15,11 @@ import subprocess
 import sys
 from pathlib import Path
 
-from scripts.utils import parse_skill_md
+_spec = importlib.util.spec_from_file_location("skill_creator_utils", Path(__file__).parent / "utils.py")
+_utils = importlib.util.module_from_spec(_spec)
+sys.modules["skill_creator_utils"] = _utils
+_spec.loader.exec_module(_utils)
+parse_skill_md = _utils.parse_skill_md
 
 
 def _call_claude(prompt: str, model: str | None, timeout: int = 300) -> str:
@@ -29,7 +34,7 @@ def _call_claude(prompt: str, model: str | None, timeout: int = 300) -> str:
 
     # Remove CLAUDECODE env var to allow nesting claude -p inside a
     # Claude Code session. The guard is for interactive terminal conflicts;
-    # programmatic subprocess usage is safe. Same pattern as run_eval.py.
+    # programmatic subprocess usage is safe. Same pattern as run-eval.py.
     env = {k: v for k, v in os.environ.items() if k != "CLAUDECODE"}
 
     result = subprocess.run(
@@ -193,7 +198,7 @@ Please respond with only the new description text in <new_description> tags, not
 
 def main():
     parser = argparse.ArgumentParser(description="Improve a skill description based on eval results")
-    parser.add_argument("--eval-results", required=True, help="Path to eval results JSON (from run_eval.py)")
+    parser.add_argument("--eval-results", required=True, help="Path to eval results JSON (from run-eval.py)")
     parser.add_argument("--skill-path", required=True, help="Path to skill directory")
     parser.add_argument("--history", default=None, help="Path to history JSON (previous attempts)")
     parser.add_argument("--model", required=True, help="Model for improvement")

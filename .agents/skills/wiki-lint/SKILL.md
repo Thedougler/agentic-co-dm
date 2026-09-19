@@ -29,7 +29,7 @@ Pass owner extensions: `--allow-lifecycle` / `--allow-relationship-type`. The JS
 
 Redirect stubs (`redirects_to` in frontmatter) are skipped for `missing_frontmatter`, `spaced_basename`, `aruhe_prefix_basename`; reserved files and mechanic-allowlist links skipped for `broken_links`; `_archive`/`_raw`/templates/`_meta` skipped — live pages only for filename HARD keys. Template conformance checks typed pages against `wiki/templates/contracts/{type}.yml`.
 
-Findings include 1-based `line`. Use `findings_by_file` to open exact file+line. Clean = `status: "clean"`, empty findings.
+Clean = `status: "clean"`, empty findings, `identity.status` `"resolved"`.
 
 Schema precedence: CLI flags > resolved config > framework defaults. Lifecycle/relationship extensions additive. Empty/whitespace values fail closed.
 
@@ -41,13 +41,13 @@ When a page path is given (the hot path):
 
 1. Run page-scoped deterministic pass.
 2. Read the page via QMD search-then-get; fall back to direct file read.
-3. **Identity check** — verify no other page covers the same entity (matching title, aliases, `redirects_to` target). Surface conflicts before editing.
+3. **Identity.** When `identity.status` is `ambiguous`, read every candidate body. Complete Check 14 (`merge`, `digest`, or `differentiate`) until identity is `resolved`. Then edit.
 4. **Repair every fixable finding** (autonomous FR-002; no Work prompt; kebab remorph needs no extra greenlight): broken wikilinks (correct or remove), missing required frontmatter (add with defaults), invalid lifecycle/type (correct to nearest valid), snake_case/spaced/Aruhe/`00` basenames (rename to kebab). **Template ceiling:** when a contract exists for the page's `type`, add/correct/remove only sections, frontmatter, and callouts defined in that contract — relocate existing content only; MUST NOT invent missing field body. Content with no template field is preserved and flagged. **Source before filling:** when adding a missing required section, `wiki-query` the page's linked entities and source material before writing — ground in wiki content, not generation. Canon contradiction: append `errors.md` and MUST NOT pick a winner.
 5. Report fixes inline. List unfixable findings separately with reasons.
 6. Skip Rule 12e when `_meta/trust-ledger.json` absent.
 7. **QMD refresh** — if page modified and QMD available, `${QMD_CLI:-qmd} update`.
 
-**Done when:** every fixable finding repaired, page-scoped command exits `0` with `hard_fail: false`, unfixable findings listed, one done-summary names what changed and where (no question, no wait).
+**Done when:** identity is `resolved`; every fixable finding repaired; page-scoped command has `hard_fail: false` and empty findings; remaining unfixable findings listed; one done-summary names what changed and where (no question, no wait).
 
 `--check`: report findings without repairing.
 

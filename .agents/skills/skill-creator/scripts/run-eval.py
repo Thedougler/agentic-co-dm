@@ -6,6 +6,7 @@ for a set of queries. Outputs results as JSON.
 """
 
 import argparse
+import importlib.util
 import json
 import os
 import select
@@ -16,7 +17,11 @@ import uuid
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 
-from scripts.utils import parse_skill_md
+_spec = importlib.util.spec_from_file_location("skill_creator_utils", Path(__file__).parent / "utils.py")
+_utils = importlib.util.module_from_spec(_spec)
+sys.modules["skill_creator_utils"] = _utils
+_spec.loader.exec_module(_utils)
+parse_skill_md = _utils.parse_skill_md
 
 
 def find_project_root() -> Path:

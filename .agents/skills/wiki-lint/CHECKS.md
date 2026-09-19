@@ -125,13 +125,17 @@ Script detects via `typed_relationships` key. Fix: invalid type → correct only
 
 Every fact has one owner page. Find pages that duplicate or fragment a concept's authority.
 
-**Completion criterion:** every flagged pair ends with one canonical page or a `needs-review` finding. No duplicate authority survives.
+**Completion criterion:** every flagged pair ends as one canonical page, or as distinct situations with `identity.status` `"resolved"`.
 
 **Detect:** from live pages (excluding `_archives/`, `_raw/`, `_staging/`, redirects), extract `title`, `aliases`, `tags`, `summary`. Compute similarity (title overlap, edit distance, substring containment, alias cross-match — same signals as `wiki-dedup` Step 2a–2b, frontmatter only, no full reads). Flag ≥ 0.75 (HIGH ≥ 0.90, MEDIUM 0.75–0.89). Skip pairs linked by `redirects_to`. Script's `duplicate_stems` catches filename collisions; this check catches semantic duplicates.
 
-**Verdicts:** `merge` (same concept, different name) | `digest` (facts belong on existing canonicals) | `needs-review` (ambiguous).
+**Verdicts:** `merge` (same concept, different name) | `digest` (facts belong on existing canonicals) | `differentiate` (scanner collision, different table jobs).
 
 **Manual merges only.** Read both files, decide, edit through Edit/Write tools.
+
+#### Differentiate (scanner collision, different table jobs)
+
+Read both bodies and their linked owners. Rewrite each page from those facts until each answers a different objective. `identity.status` `"resolved"` is the check.
 
 #### Merge (same concept → one canonical)
 

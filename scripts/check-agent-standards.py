@@ -81,14 +81,9 @@ def _agent002_ok(rel: str) -> bool:
         if not tail:
             return False
         filename = tail[-1]
-        if filename.startswith(".") or filename == "__init__.py":
-            return True
         stem, dot, ext = filename.rpartition(".")
         if dot != ".":
             return False
-        # ponytail: kebab breaks `import`; snake_case .py is the experienced Python module stem
-        if ext == "py":
-            return bool(re.fullmatch(r"[a-z_][a-z0-9_]*", stem)) and _kebab_parts_ok(tuple(tail[:-1]))
         if not KEBAB.fullmatch(stem):
             return False
         return _kebab_parts_ok(tuple(tail[:-1]))
@@ -96,8 +91,6 @@ def _agent002_ok(rel: str) -> bool:
         rest = rel[len("docs/agents/") :]
         parts = rest.split("/")
         filename = parts[-1]
-        if filename.startswith("."):
-            return True
         stem, dot, ext = filename.rpartition(".")
         if dot != ".":
             return False

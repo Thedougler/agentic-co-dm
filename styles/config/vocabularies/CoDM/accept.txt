@@ -12,7 +12,6 @@
 10
 11
 12
-\[Vel-Orn
 A Sliver of the Unstable Form
 a-sliver-of-the-unstable-form
 Aarakocra
@@ -1043,6 +1042,9 @@ Lore
 Lost
 Lotus
 Loud
+Low
+Low Lamp
+low-lamp
 Lupo
 Macaw
 Maddock
@@ -1951,6 +1953,7 @@ The Lava Tubes
 The Ledger Isle
 The Long Wager
 The Loud Argument
+the Low Lamp
 The Mangroves
 The Marrow
 The Marshes
@@ -2061,7 +2064,6 @@ Timeline
 Tin
 Tithe
 Tithe of the Bitch Queen
-tithe-of-the-bitch-queen
 Toa
 Toa Kailani
 Toa Kiri
@@ -2127,7 +2129,6 @@ V001 Autonomy Probe
 v001-autonomy-probe
 Vaelspire
 Vafnar
-Vafnar\]
 Vaka
 Valkur
 Vance
