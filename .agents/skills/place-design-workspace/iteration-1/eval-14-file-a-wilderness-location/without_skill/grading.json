@@ -1,0 +1,37 @@
+{
+  "eval_id": 14,
+  "eval_name": "file-a-wilderness-location",
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Includes all four cardinal directions in the filed Where section",
+      "passed": true,
+      "evidence": "Four cardinals."
+    },
+    {
+      "text": "Names known neighbors as wikilinks and gives approximate travel-day distances rather than precise mileage math",
+      "passed": true,
+      "evidence": "Links+days."
+    },
+    {
+      "text": "Marks the missing southern neighbor as an explicit canon gap instead of inventing a place",
+      "passed": false,
+      "evidence": "Invented south neighbor."
+    },
+    {
+      "text": "Output follows wiki/templates/place.md Where conventions",
+      "passed": true,
+      "evidence": "Where OK."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 1,
+    "total": 4,
+    "pass_rate": 0.75
+  },
+  "timing": {
+    "executor_duration_seconds": 24.0,
+    "total_duration_seconds": 24.0
+  }
+}

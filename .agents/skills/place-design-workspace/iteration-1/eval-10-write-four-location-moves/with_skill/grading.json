@@ -1,0 +1,32 @@
+{
+  "eval_id": 10,
+  "eval_name": "write-four-location-moves",
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Moves are triggered by party action, faction action, pressure, rest, or another stated cause",
+      "passed": true,
+      "evidence": "Triggers OK."
+    },
+    {
+      "text": "Moves alter routes, relationships, resources, information, or rules of access",
+      "passed": true,
+      "evidence": "Alters access."
+    },
+    {
+      "text": "The return state preserves history instead of resetting the market",
+      "passed": true,
+      "evidence": "History preserved."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 60.0,
+    "total_duration_seconds": 60.0
+  }
+}

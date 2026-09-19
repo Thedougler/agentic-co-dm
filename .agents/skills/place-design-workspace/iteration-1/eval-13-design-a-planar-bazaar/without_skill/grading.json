@@ -1,0 +1,32 @@
+{
+  "eval_id": 13,
+  "eval_name": "design-a-planar-bazaar",
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States what changes, when it changes, and what remains invariant",
+      "passed": false,
+      "evidence": "Unreliable chaos."
+    },
+    {
+      "text": "Provides ways to learn, exploit, resist, bargain with, or redirect the rule",
+      "passed": false,
+      "evidence": "No agency."
+    },
+    {
+      "text": "Uses landmarks, repeated cues, or customs to preserve navigability",
+      "passed": false,
+      "evidence": "No cues."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "executor_duration_seconds": 15.0,
+    "total_duration_seconds": 15.0
+  }
+}

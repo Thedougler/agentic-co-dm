@@ -1,0 +1,32 @@
+{
+  "eval_id": 12,
+  "eval_name": "create-a-ruin-that",
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Includes meaningful non-combat verbs and affordances",
+      "passed": false,
+      "evidence": "Combat-only."
+    },
+    {
+      "text": "Includes a payoff or consequence tied to the place's promise",
+      "passed": false,
+      "evidence": "No payoff."
+    },
+    {
+      "text": "Does not rely on an encounter quota to make nodes worth visiting",
+      "passed": false,
+      "evidence": "Quota-based."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "executor_duration_seconds": 14.0,
+    "total_duration_seconds": 14.0
+  }
+}

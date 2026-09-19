@@ -1,0 +1,47 @@
+{
+  "eval_id": 3,
+  "eval_name": "cinder-ford-from-scratch",
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/place.md structure",
+      "passed": true,
+      "evidence": "Structure OK."
+    },
+    {
+      "text": "Frontmatter includes type: place, kind, region or blank, and summary",
+      "passed": true,
+      "evidence": "Frontmatter OK."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon",
+      "passed": false,
+      "evidence": "Not labeled."
+    },
+    {
+      "text": "Five-sentence kernel or equivalent identity framing appears before the page draft",
+      "passed": false,
+      "evidence": "No kernel."
+    },
+    {
+      "text": "Names a player-facing promise that produces actionable choices",
+      "passed": false,
+      "evidence": "No promise."
+    },
+    {
+      "text": "If the party includes at least two named verbs that change the situation",
+      "passed": false,
+      "evidence": "Need \u22652 named verbs."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 4,
+    "total": 6,
+    "pass_rate": 0.333
+  },
+  "timing": {
+    "executor_duration_seconds": 70.0,
+    "total_duration_seconds": 70.0
+  }
+}

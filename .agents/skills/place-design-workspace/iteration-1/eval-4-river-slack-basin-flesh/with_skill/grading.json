@@ -1,0 +1,47 @@
+{
+  "eval_id": 4,
+  "eval_name": "river-slack-basin-flesh",
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Preserves Slack Basin as claimed backwater behind the rock lip with bloody-bank prints toward Cutoff Lip and otter ownership / taking-on-aruhe river take",
+      "passed": true,
+      "evidence": "Canon preserved."
+    },
+    {
+      "text": "Where section includes cardinal directions with wikilinks where known and explicit canon gaps where unknown",
+      "passed": true,
+      "evidence": "Cardinals OK."
+    },
+    {
+      "text": "Clearly distinguishes established page canon from proposed invention (new interiors, new named occupants, new neighbors)",
+      "passed": true,
+      "evidence": "Distinguished."
+    },
+    {
+      "text": "Output follows wiki/templates/place.md structure",
+      "passed": true,
+      "evidence": "Structure OK."
+    },
+    {
+      "text": "Does not invent pack contents, secret occupants, or a named neighbor across a gap as silent canon",
+      "passed": true,
+      "evidence": "No silent invent."
+    },
+    {
+      "text": "Kernel or identity framing appears before the page draft",
+      "passed": true,
+      "evidence": "Kernel OK."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 125.0,
+    "total_duration_seconds": 125.0
+  }
+}

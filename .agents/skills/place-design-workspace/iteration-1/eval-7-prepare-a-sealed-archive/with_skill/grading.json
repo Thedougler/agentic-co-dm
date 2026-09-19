@@ -1,0 +1,32 @@
+{
+  "eval_id": 7,
+  "eval_name": "prepare-a-sealed-archive",
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Provides about three independent clue vectors (witness/faction, physical/document, spatial/consequence or equivalent)",
+      "passed": true,
+      "evidence": "3 vectors."
+    },
+    {
+      "text": "Separates automatic signs from declared Search, Study, or other actions",
+      "passed": true,
+      "evidence": "Separated."
+    },
+    {
+      "text": "A failed check adds a cost or complication without blocking the required revelation",
+      "passed": true,
+      "evidence": "Fail=cost."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 70.0,
+    "total_duration_seconds": 70.0
+  }
+}

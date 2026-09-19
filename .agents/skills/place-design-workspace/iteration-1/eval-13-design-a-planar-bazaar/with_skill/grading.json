@@ -1,0 +1,32 @@
+{
+  "eval_id": 13,
+  "eval_name": "design-a-planar-bazaar",
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States what changes, when it changes, and what remains invariant",
+      "passed": true,
+      "evidence": "Rule stated."
+    },
+    {
+      "text": "Provides ways to learn, exploit, resist, bargain with, or redirect the rule",
+      "passed": true,
+      "evidence": "Agency OK."
+    },
+    {
+      "text": "Uses landmarks, repeated cues, or customs to preserve navigability",
+      "passed": true,
+      "evidence": "Cues OK."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 58.0,
+    "total_duration_seconds": 58.0
+  }
+}

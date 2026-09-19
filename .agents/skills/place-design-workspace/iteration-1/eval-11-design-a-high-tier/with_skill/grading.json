@@ -1,0 +1,32 @@
+{
+  "eval_id": 11,
+  "eval_name": "design-a-high-tier",
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States what flight and teleportation can accomplish",
+      "passed": true,
+      "evidence": "Uses stated."
+    },
+    {
+      "text": "Uses fiction-based constraints (visibility, anchors, weather, exposure, incomplete information) only where justified",
+      "passed": true,
+      "evidence": "Constraints OK."
+    },
+    {
+      "text": "Does not make every route a fake wall or declare abilities invalid without a setting reason",
+      "passed": true,
+      "evidence": "Abilities useful."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 55.0,
+    "total_duration_seconds": 55.0
+  }
+}

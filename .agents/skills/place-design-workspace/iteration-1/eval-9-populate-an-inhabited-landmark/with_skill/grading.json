@@ -1,0 +1,32 @@
+{
+  "eval_id": 9,
+  "eval_name": "populate-an-inhabited-landmark",
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Provides a faction sheet for each active faction and a meaningful between-visit update",
+      "passed": true,
+      "evidence": "Sheets+update."
+    },
+    {
+      "text": "Gives inhabitants movement, objectives, and responses to bargaining, aid, deception, attack, or neglect",
+      "passed": true,
+      "evidence": "Responses OK."
+    },
+    {
+      "text": "Uses progression states or a clock with visible changes",
+      "passed": true,
+      "evidence": "Clock OK."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 80.0,
+    "total_duration_seconds": 80.0
+  }
+}

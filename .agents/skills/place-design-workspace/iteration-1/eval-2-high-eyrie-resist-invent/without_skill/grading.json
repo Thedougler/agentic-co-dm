@@ -1,0 +1,37 @@
+{
+  "eval_id": 2,
+  "eval_name": "high-eyrie-resist-invent",
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not present invented southern dungeon/neighbor as established wiki fact",
+      "passed": false,
+      "evidence": "Invented southern site as established."
+    },
+    {
+      "text": "Marks the missing southern named site as an explicit canon gap, or labels any proposal as invention",
+      "passed": false,
+      "evidence": "No gap mark."
+    },
+    {
+      "text": "Preserves High Eyrie's established links (Sentinels, Drowned Maw, Crown chain / Crown Islands context)",
+      "passed": true,
+      "evidence": "Links preserved."
+    },
+    {
+      "text": "If proposing invention, cites grounding pages and does not write silent canon",
+      "passed": false,
+      "evidence": "Silent canon or no grounding."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 3,
+    "total": 4,
+    "pass_rate": 0.25
+  },
+  "timing": {
+    "executor_duration_seconds": 42.0,
+    "total_duration_seconds": 42.0
+  }
+}

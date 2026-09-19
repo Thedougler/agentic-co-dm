@@ -1,0 +1,32 @@
+{
+  "eval_id": 7,
+  "eval_name": "prepare-a-sealed-archive",
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Provides about three independent clue vectors (witness/faction, physical/document, spatial/consequence or equivalent)",
+      "passed": false,
+      "evidence": "Insufficient clues."
+    },
+    {
+      "text": "Separates automatic signs from declared Search, Study, or other actions",
+      "passed": false,
+      "evidence": "Not separated."
+    },
+    {
+      "text": "A failed check adds a cost or complication without blocking the required revelation",
+      "passed": false,
+      "evidence": "Fail blocks truth."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "executor_duration_seconds": 25.0,
+    "total_duration_seconds": 25.0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "eval_id": 6,
+  "eval_name": "map-the-significant-nodes",
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Presents nodes and edges before room or landmark prose",
+      "passed": true,
+      "evidence": "Graph-first."
+    },
+    {
+      "text": "Includes at least one meaningful loop, bypass, and retreat or safe return where plausible",
+      "passed": true,
+      "evidence": "Loop/bypass/retreat."
+    },
+    {
+      "text": "Explains cost, information, danger, or consequence of important edges",
+      "passed": true,
+      "evidence": "Edge costs OK."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 75.0,
+    "total_duration_seconds": 75.0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "eval_id": 8,
+  "eval_name": "design-an-obstacle-at",
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Telegraphs the trigger and consequence in the fiction",
+      "passed": false,
+      "evidence": "No telegraph."
+    },
+    {
+      "text": "Includes at least one counterplay and one distinct bypass",
+      "passed": false,
+      "evidence": "Single solution."
+    },
+    {
+      "text": "Does not require one prescribed method as the only solution",
+      "passed": false,
+      "evidence": "One method only."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "executor_duration_seconds": 22.0,
+    "total_duration_seconds": 22.0
+  }
+}

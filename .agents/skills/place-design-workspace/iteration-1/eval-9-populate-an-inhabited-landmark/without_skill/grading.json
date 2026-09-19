@@ -1,0 +1,32 @@
+{
+  "eval_id": 9,
+  "eval_name": "populate-an-inhabited-landmark",
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Provides a faction sheet for each active faction and a meaningful between-visit update",
+      "passed": false,
+      "evidence": "No sheets."
+    },
+    {
+      "text": "Gives inhabitants movement, objectives, and responses to bargaining, aid, deception, attack, or neglect",
+      "passed": false,
+      "evidence": "No responses."
+    },
+    {
+      "text": "Uses progression states or a clock with visible changes",
+      "passed": false,
+      "evidence": "No clock."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "executor_duration_seconds": 20.0,
+    "total_duration_seconds": 20.0
+  }
+}

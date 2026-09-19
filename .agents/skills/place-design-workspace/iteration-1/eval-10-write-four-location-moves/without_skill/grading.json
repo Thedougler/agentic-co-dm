@@ -1,0 +1,32 @@
+{
+  "eval_id": 10,
+  "eval_name": "write-four-location-moves",
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Moves are triggered by party action, faction action, pressure, rest, or another stated cause",
+      "passed": false,
+      "evidence": "No triggers."
+    },
+    {
+      "text": "Moves alter routes, relationships, resources, information, or rules of access",
+      "passed": false,
+      "evidence": "Baseline lists cosmetic/reset events; explicitly says no lasting change to routes/relationships."
+    },
+    {
+      "text": "The return state preserves history instead of resetting the market",
+      "passed": false,
+      "evidence": "Resets."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 3,
+    "total": 3,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "executor_duration_seconds": 18.0,
+    "total_duration_seconds": 18.0
+  }
+}

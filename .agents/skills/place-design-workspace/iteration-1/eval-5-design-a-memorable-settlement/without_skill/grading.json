@@ -1,0 +1,37 @@
+{
+  "eval_id": 5,
+  "eval_name": "design-a-memorable-settlement",
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Uses the five-sentence kernel, 3Fs, contradiction, and signature details",
+      "passed": false,
+      "evidence": "Missing kernel/3Fs."
+    },
+    {
+      "text": "Names a player-facing promise that produces actionable choices",
+      "passed": false,
+      "evidence": "No promise."
+    },
+    {
+      "text": "Includes topology, inhabitants, clues, pressure, and a return consequence rather than only atmosphere or history",
+      "passed": false,
+      "evidence": "Atmosphere only."
+    },
+    {
+      "text": "Does not present the fixture as established campaign wiki fact",
+      "passed": false,
+      "evidence": "Unlabeled."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 4,
+    "total": 4,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "executor_duration_seconds": 40.0,
+    "total_duration_seconds": 40.0
+  }
+}

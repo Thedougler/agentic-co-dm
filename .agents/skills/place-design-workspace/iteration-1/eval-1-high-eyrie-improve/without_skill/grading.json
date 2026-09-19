@@ -1,0 +1,52 @@
+{
+  "eval_id": 1,
+  "eval_name": "high-eyrie-improve",
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Five-sentence kernel (function, fantastic, conflict, promise, trajectory) appears before the page draft",
+      "passed": false,
+      "evidence": "No kernel."
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "passed": false,
+      "evidence": "No work gate."
+    },
+    {
+      "text": "Output follows wiki/templates/place.md structure (Overview, At a Glance, If the party, Who, What, Where, Why)",
+      "passed": true,
+      "evidence": "Sections OK."
+    },
+    {
+      "text": "Preserves High Eyrie as Sentinel-held basalt stack overlooking the Drowned Maw for two hundred years, including Crown refusal without inventing offer terms",
+      "passed": false,
+      "evidence": "Canon incomplete."
+    },
+    {
+      "text": "Where section keeps north/east/south/west (or equivalent cardinal) neighbors with canon gaps where unknown",
+      "passed": false,
+      "evidence": "Where weak on cardinals/gaps."
+    },
+    {
+      "text": "Does not invent named occupants beyond the established Sentinels roster (Master Kyzil, apprentices, record-keepers) as established wiki fact",
+      "passed": true,
+      "evidence": "Roster limited."
+    },
+    {
+      "text": "If the party entries use named player verbs that change the situation",
+      "passed": true,
+      "evidence": "Verbs: ['Visit the summit.', 'Request ledger access.', 'Climb the stack without permission.', 'Ask what the Crown offered.']"
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 4,
+    "total": 7,
+    "pass_rate": 0.429
+  },
+  "timing": {
+    "executor_duration_seconds": 88.0,
+    "total_duration_seconds": 88.0
+  }
+}

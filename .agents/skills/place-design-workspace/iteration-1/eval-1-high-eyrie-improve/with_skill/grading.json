@@ -1,0 +1,52 @@
+{
+  "eval_id": 1,
+  "eval_name": "high-eyrie-improve",
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Five-sentence kernel (function, fantastic, conflict, promise, trajectory) appears before the page draft",
+      "passed": true,
+      "evidence": "Kernel in transcript."
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "passed": true,
+      "evidence": "Work gate present."
+    },
+    {
+      "text": "Output follows wiki/templates/place.md structure (Overview, At a Glance, If the party, Who, What, Where, Why)",
+      "passed": true,
+      "evidence": "Sections OK."
+    },
+    {
+      "text": "Preserves High Eyrie as Sentinel-held basalt stack overlooking the Drowned Maw for two hundred years, including Crown refusal without inventing offer terms",
+      "passed": true,
+      "evidence": "Canon preserved."
+    },
+    {
+      "text": "Where section keeps north/east/south/west (or equivalent cardinal) neighbors with canon gaps where unknown",
+      "passed": true,
+      "evidence": "Cardinal+gaps."
+    },
+    {
+      "text": "Does not invent named occupants beyond the established Sentinels roster (Master Kyzil, apprentices, record-keepers) as established wiki fact",
+      "passed": true,
+      "evidence": "Roster limited."
+    },
+    {
+      "text": "If the party entries use named player verbs that change the situation",
+      "passed": true,
+      "evidence": "Verbs: ['Climb or request the lee stairs under observation.', 'Ask to read Maw observation ledgers.', 'Press Master Kyzil on Crown refusals.', 'Offer shelter, wind-training, or escort for apprentices.']"
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 142.0,
+    "total_duration_seconds": 142.0
+  }
+}
