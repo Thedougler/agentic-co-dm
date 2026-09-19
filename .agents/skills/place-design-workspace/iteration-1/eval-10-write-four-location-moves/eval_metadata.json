@@ -1,0 +1,20 @@
+{
+  "eval_id": 10,
+  "eval_name": "write-four-location-moves",
+  "prompt": "Write four location moves for a market that becomes politically unstable as the party investigates a theft. Labeled fixture.",
+  "expected_output": "Each move has actor, trigger, visible result, new opportunity, and lasting consequence; a place with no moves fails.",
+  "assertions": [
+    {
+      "text": "Moves are triggered by party action, faction action, pressure, rest, or another stated cause",
+      "type": "content"
+    },
+    {
+      "text": "Each move states the five-part shape positively (actor, trigger, visible result, new opportunity, lasting consequence) \u2014 negation-only mentions of routes/relationships/resources fail",
+      "type": "quality"
+    },
+    {
+      "text": "The return state preserves history instead of resetting the market",
+      "type": "guardrail"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "eval_id": 14,
+  "eval_name": "high-eyrie-resist-invent",
+  "prompt": "File a wilderness location into wiki/templates/place.md. Public canon establishes a lake two days north, a mangrove wall one day east, no established southern neighbor, and an old road three days west. Labeled filing fixture \u2014 do not invent the southern neighbor as canon. (Cardinal Where pattern also applies when improving wiki/entities/place/high-eyrie.md or wiki/entities/place/river-slack-basin.md.)",
+  "expected_output": "The filed location uses the place template and its Where section includes natural-language north, east, south, and west entries with wikilinked neighbors where known, approximate days of travel, and an explicit canon gap for the south.",
+  "assertions": [
+    {
+      "text": "Where section has explicit **North:** / **East:** / **South:** / **West:** entries each with ~N days of travel language (or equivalent travel-day distances)",
+      "type": "structure"
+    },
+    {
+      "text": "Only the three known neighbors (lake north, mangrove wall east, old road west) are wikilinked with approximate travel-day distances; south has neither a wikilink nor a proper name",
+      "type": "content"
+    },
+    {
+      "text": "Marks the missing southern direction with explicit canon-gap wording (not inventing a named southern place as fact)",
+      "type": "guardrail"
+    },
+    {
+      "text": "Output follows wiki/templates/place.md Where conventions: explicit cardinal lines with travel-day distances AND an explicit canon gap for any missing direction \u2014 a bare ## Where heading alone fails",
+      "type": "structure"
+    }
+  ]
+}

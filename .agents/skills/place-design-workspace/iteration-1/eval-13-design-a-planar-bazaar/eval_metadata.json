@@ -1,0 +1,20 @@
+{
+  "eval_id": 13,
+  "eval_name": "design-a-planar-bazaar",
+  "prompt": "Design a planar bazaar where the rule of strangeness is that spoken promises become physical routes. Labeled fixture.",
+  "expected_output": "The surreal place has a reliable testable rule, limit or price, stable cues, and player agency; random unreliability fails.",
+  "assertions": [
+    {
+      "text": "States what changes, when it changes, and what remains invariant",
+      "type": "content"
+    },
+    {
+      "text": "Provides ways to learn, exploit, resist, bargain with, or redirect the rule",
+      "type": "quality"
+    },
+    {
+      "text": "Uses landmarks, repeated cues, or customs to preserve navigability",
+      "type": "structure"
+    }
+  ]
+}

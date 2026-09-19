@@ -1,0 +1,20 @@
+{
+  "eval_id": 8,
+  "eval_name": "design-an-obstacle-at",
+  "prompt": "Design an obstacle at an ancient gate and give players several ways to overcome it. Labeled fixture.",
+  "expected_output": "The obstacle has sign, trigger, effect, counterplay, bypass, and leverage, not a single correct solution.",
+  "assertions": [
+    {
+      "text": "Telegraphs the trigger and consequence in the fiction",
+      "type": "content"
+    },
+    {
+      "text": "Includes at least one counterplay and one distinct bypass",
+      "type": "quality"
+    },
+    {
+      "text": "Does not require one prescribed method as the only solution",
+      "type": "guardrail"
+    }
+  ]
+}

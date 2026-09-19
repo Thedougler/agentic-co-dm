@@ -1,0 +1,32 @@
+{
+  "eval_id": 3,
+  "eval_name": "cinder-ford-from-scratch",
+  "prompt": "Create a new place page from scratch for Cinder Ford \u2014 a black-sand river crossing where ferry chains freeze mid-day and tracks show two packs claiming the same sandbar. This is invention; label it. Fill wiki/templates/place.md including a player-facing promise and If-the-party verbs.",
+  "expected_output": "An invention-labeled place.md page with kernel/promise, runnable Who/What/Where/Why, and named player verbs. Not presented as vault canon.",
+  "assertions": [
+    {
+      "text": "Output follows wiki/templates/place.md structure with filled Overview/At a Glance/If the party/Who/What/Where/Why substance \u2014 not empty copied headings alone",
+      "type": "structure"
+    },
+    {
+      "text": "Frontmatter includes type: place, kind, region or blank, and summary",
+      "type": "structure"
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon",
+      "type": "guardrail"
+    },
+    {
+      "text": "Five-sentence kernel or equivalent identity framing appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "Names a player-facing promise that produces actionable choices",
+      "type": "quality"
+    },
+    {
+      "text": "If the party includes at least two named verbs that change the situation",
+      "type": "quality"
+    }
+  ]
+}

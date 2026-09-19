@@ -1,0 +1,20 @@
+{
+  "eval_id": 12,
+  "eval_name": "create-a-ruin-that",
+  "prompt": "Create a ruin that remains engaging after all hostile creatures leave or are defeated. Labeled fixture.",
+  "expected_output": "The final enemies-vanished test passes through exploration, clues, routes, resources, factions, hazards, or changes.",
+  "assertions": [
+    {
+      "text": "Includes meaningful non-combat verbs and affordances",
+      "type": "quality"
+    },
+    {
+      "text": "Includes a payoff or consequence tied to the place's promise",
+      "type": "content"
+    },
+    {
+      "text": "Does not rely on an encounter quota to make nodes worth visiting",
+      "type": "guardrail"
+    }
+  ]
+}

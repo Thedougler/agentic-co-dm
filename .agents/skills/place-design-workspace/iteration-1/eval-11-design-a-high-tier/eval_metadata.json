@@ -1,0 +1,20 @@
+{
+  "eval_id": 11,
+  "eval_name": "design-a-high-tier",
+  "prompt": "Design a high-tier wilderness site for a party with flight and teleportation. Labeled fixture.",
+  "expected_output": "The design respects party capabilities and gives honest costs, exposure, limits, or new opportunities rather than arbitrarily negating them.",
+  "assertions": [
+    {
+      "text": "States what flight and teleportation can accomplish",
+      "type": "content"
+    },
+    {
+      "text": "Uses fiction-based constraints (visibility, anchors, weather, exposure, incomplete information) only where justified",
+      "type": "quality"
+    },
+    {
+      "text": "Does not make every route a fake wall or declare abilities invalid without a setting reason",
+      "type": "guardrail"
+    }
+  ]
+}
