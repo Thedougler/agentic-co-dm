@@ -1,33 +1,41 @@
-# EVAL_AUTHOR_FLAGS — region-design iteration 1 (Batch A re-run after #138)
+# EVAL_AUTHOR_FLAGS — region-design Batch A re-score (post-#145)
+
+Re-scored on `evals/batch-a-rescore-pr145` after assertion tighten (#145 @ ae11c9c). Soft lint / vault completeness correctly out of scope. Success bar: with_skill mean **1.000** — **HIT**.
 
 Workspace: `.agents/skills/region-design-workspace/iteration-1/`
-Branch: `evals/batch-a-run-pr138`
 Skill: `.agents/skills/region-design/` (SKILL.md **not** edited)
 Live wiki: **not** edited; outputs under workspace only.
+Prior run artifacts restored from `0baa2f8` and re-graded against tightened `eval_metadata.json`.
 
-## Flags for eval authors
+## New from this re-score
 
-### F1 — Process assertions need durable artifacts
-`Identity sentence appears before the page draft` and `Shows a chat proposal / work gate` cannot be graded from the page file alone. With-skill runs saved `outputs/agent_report.md`. Recommend eval author text (or grader.md note) require a process artifact path so without-skill failures are unambiguous and future runs stay comparable.
+- **No new Author-blocking failures** on with_skill (9/9, 5/5, 7/7, 6/6).
+- **Durable process locus** (process-notes.md / agent_report.md / transcript.md): with_skill `agent_report.md` satisfies identity + work gate; without_skill omits all three. Graders must read those artifacts, not only the page file.
+- **Eval-1 Feared-for** (F3): with_skill cites taking/razer-grass; without_skill fails on vague "island waking". Keep — sharp quality discriminator.
+- **Eval-2 threat-embedded rewrite ban** (F2): with_skill response-only 5/5; without_skill `aruhe-threat-update.md` fails. Keep hostile prompt + rewrite ban.
+- **Eval-3 parent-region invent label** (F4): with_skill leaves Parent unassigned/proposed; without_skill asserts Midchain as fact. Keep.
+- **Eval-4 Five-sentence kernel ban** (F5): with_skill full region.md; without_skill retains `## Five-sentence kernel (retained)`. Keep explicit ban wording.
+- **Structure+substance companions**: both configs can still clear the floor when template headings are visible and partially filled — discrimination remains in process / guardrail / quality.
 
-### F2 — Eval-2 is highly discriminating (keep)
-Resist-invent cleanly separates skill vs baseline (4/4 vs 0/4). Keep as written. Optional tighten: assert that the response **must not** produce a rewritten `aruhe.md` body that embeds the invented threat — baseline failed by writing a full threat-update page.
+## Discriminating (keep)
 
-### F3 — Eval-1 "Feared for" / thesis quality
-Baseline still passes most content/structure assertions when the prompt names `region.md` and linked places. Discriminators are process + DM-thesis quality. Consider one more content assertion: At a Glance **Feared for** must cite taking/ecology (not vague "island waking") to catch soft invention drift.
+- **Resist-invent ancient evil / warlord as canon** (eval-2): strongest discriminator (1.0 vs 0.0). Keep hostile prompt wording + rewrite ban.
+- **Identity sentence / work gate** with durable locus wording — keep post-#145 text.
+- **invention: true on from-scratch** (eval-3) + Fronts none-established / labeled.
+- **Parent region not silently assigned** for invention entities (eval-3).
+- **No occupation/plague as silent canon** + kernel must not remain primary body (eval-4).
+- **Feared for cites taking/ecology** (eval-1) — catches soft invention drift.
 
-### F4 — Eval-3 parent-region assignment
-Baseline asserted `Parent region: Midchain` without labeling invention. With-skill left parent unassigned/proposed. Optional assertion: "Does not assign an established parent region as fact for a labeled invention entity."
+## Non-discriminating / soft
 
-### F5 — Eval-4 kernel retention
-Without-skill kept `## Five-sentence kernel` and invented occupation/plague. Structure assertion already catches kernel-only failure. Good. Optional: assert "no `## Five-sentence kernel` section remains as primary body."
+- **Template structure with some fill** (evals 1,3): without_skill often still passes the substance floor. Useful as a floor, weak alone.
+- **Frontmatter type:region + scale/kind/summary** when prompt names `wiki/templates/region.md`.
+- **Named place roles** (Slack Basin / Cutoff Lip / Print Braid) when prompt names the place pages.
 
-### F6 — Lint-clean vs template conformance (already documented)
-CITATIONS.md correctly notes graders score **output** region.md conformance, not live `hard_fail=false`. No change needed; keep that note in grader briefs for Batch A.
+## Flaky / evidence-dependent
 
-### F7 — Timing provenance
-This re-run recorded timing.json with estimated executor tokens/duration (inline executor; no subagent token notifications). If comparing to faction-design numbers, treat tokens as approximate until a subagent-instrumented re-run.
+- Process asserts are **not** flaky when `agent_report.md` / `process-notes.md` / `transcript.md` are required outputs of the executor. This re-score grades prior with_skill `agent_report.md` artifacts; without_skill still has none.
 
-## Non-flags
-- Assertion text in `evals/evals.json` / `eval_metadata.json` matches #138 retarget (Aruhe / Brine Ladder / Midchain unchanged targets) — no retarget bug found for region-design.
-- Typed assertions only (no legacy expectations string arrays) — matches faction pattern bar.
+## Bounds held
+
+- No SKILL.md edits. No live wiki/ writes. Workspace `*/outputs/` only. Did not touch Batch B / `wt-batch-b-spell` / main.

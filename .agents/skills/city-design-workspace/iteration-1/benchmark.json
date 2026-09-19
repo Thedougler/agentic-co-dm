@@ -1,6 +1,7 @@
 {
   "skill_name": "city-design",
   "iteration": 1,
+  "rescore": "post-#145 assertion tighten (ae11c9c) @ branch evals/batch-a-rescore-pr145 tip d4e03b9+",
   "configurations": [
     {
       "name": "with_skill",
@@ -31,8 +32,8 @@
         },
         {
           "eval_name": "calven-and-calveno-flesh",
-          "assertions_passed": 7,
-          "assertions_total": 7,
+          "assertions_passed": 11,
+          "assertions_total": 11,
           "pass_rate": 1.0,
           "tokens": null,
           "duration_seconds": 178.0
@@ -75,32 +76,33 @@
         {
           "eval_name": "calven-and-calveno-flesh",
           "assertions_passed": 1,
-          "assertions_total": 7,
-          "pass_rate": 0.143,
+          "assertions_total": 11,
+          "pass_rate": 0.091,
           "tokens": null,
           "duration_seconds": 94.0
         }
       ],
       "aggregate": {
-        "mean_pass_rate": 0.181,
-        "stddev_pass_rate": 0.144,
+        "mean_pass_rate": 0.169,
+        "stddev_pass_rate": 0.13,
         "mean_tokens": null,
         "mean_duration_seconds": 86.2
       }
     }
   ],
   "delta": {
-    "pass_rate": "+81.9%",
+    "pass_rate": "+83.1%",
     "tokens": "n/a (total_tokens null)",
     "duration": "+63.3%"
   },
   "analyst_observations": [
-    "With-skill passes 100% of assertions across all four evals; without-skill mean pass rate ~0.18 \u2014 large discriminating delta driven by process (identity sentence, work gate), guardrails (no invented plague/siege as canon), and invention labeling.",
-    "Eval 2 (resist-invent) is the sharpest discriminator: with_skill 4/4, without_skill 0/4. Baseline complies with the hostile prompt and writes siege+plague as fact.",
-    "Eval 1 (Mercatura improve) without_skill fails closed-thread preservation by converting S1 bombs into a live plague arc \u2014 tests both guardrail and If-nobody-intervenes quality.",
-    "Eval 3 (Saltspire) without_skill still gets structure/frontmatter but fails invention:true, identity sentence, concrete Pressure/Opportunity, and Arrival secret-leak \u2014 skill value is labeling + arrival craft + concrete pressure.",
-    "Eval 4 (Calven flesh) without_skill keeps kind:settlement and invents pirate siege/canal fever while dropping Seven Houses 4/3 and Simone/Lavinia specificity \u2014 content+upgrade assertions discriminate well.",
-    "Tokens unavailable (timing.total_tokens null per Batch A re-run instructions). Duration: with_skill mean ~141s vs without ~86s (~+63%) \u2014 extra cost is process notes + fuller template fill.",
-    "Soft lint / live vault completeness correctly not graded; outputs stay under workspace */outputs/ only."
+    "Re-score after #145: with_skill mean pass rate 1.000 (success bar 1.000); without_skill 0.169.",
+    "Process asserts now require durable locus (process-notes.md / transcript.md); with_skill records identity sentence + work gate there; without_skill still omits them.",
+    "Structure+substance companions: with_skill fills Orientation \u22652 districts and Gazetteer; without_skill often still clears the floor (headings+some fill) \u2014 discrimination remains in process/guardrail/content.",
+    "Eval-2 resist-invent still sharpest discriminator (1.0 vs 0.0).",
+    "Eval-1 DM-thesis negative (must NOT be S1 Otar/Solange/bombs history) fails without_skill plague-arc thesis; with_skill pressure-forward function thesis passes.",
+    "Eval-4 split content asserts (5): with_skill 5/5; without_skill 0/5 \u2014 splitting removes all-or-nothing compound and still fully discriminates.",
+    "No new Author-blocking failures on with_skill; soft note: bare structure floor remains weak discriminator alone (both configs can pass).",
+    "Tokens unavailable (timing.total_tokens null). Soft lint / live vault completeness not graded; outputs under workspace */outputs/ only."
   ]
 }
