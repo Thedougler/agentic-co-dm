@@ -25,8 +25,13 @@ Cliffhangers test what Developments revealed: a Chase tests the escape route
 a clue identified, a Battle tests the alliance a negotiation built. Keep them
 short, front-load the threat, and let them resolve. Save the strongest for the
 Climax — early Cliffhangers send weaker foes that teach strengths and
-weaknesses; later ones raise stakes as both sides invest more. Cliffhanger
-after Cliffhanger dulls danger faster than it builds excitement.
+weaknesses; later ones raise stakes as both sides invest more.
+
+Cliffhanger after Cliffhanger dulls danger faster than it builds excitement.
+When a request asks for consecutive Cliffhangers without Developments between
+them, refuse and write one Cliffhanger, then hand off to a Development. Each
+Development makes the next Cliffhanger's stakes legible; skipping it turns
+action into noise.
 
 ## Completion test
 

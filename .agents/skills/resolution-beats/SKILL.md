@@ -32,8 +32,12 @@ and deliver the afterscene the arc earned.
 
 A Resolution can reveal something that changes the meaning of everything
 before it — the villain escapes, a greater threat emerges — but that
-reframing must follow from established fiction, not GM convenience. Stop when
-players can name what is different and what they want next.
+reframing must follow from established fiction, not GM convenience. A dark god,
+breaking seals, or world-ending threat invented for the Resolution is not
+established fiction — it is a new Hook disguised as an afterscene. When the
+request introduces ungrounded existential content, refuse it and deliver the
+aftermath the session's fiction earned. Stop when players can name what is
+different and what they want next.
 
 Costs the Climax produced are load-bearing — they prove the stakes were real.
 A lost ally stays lost; spent supplies stay spent. Convenient survival,

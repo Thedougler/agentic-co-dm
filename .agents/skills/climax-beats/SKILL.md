@@ -29,6 +29,12 @@ A final battle is one shape among many. The Climax may be a revelation,
 sacrifice, desperate gambit, reckoning, siege, negotiation, catastrophe, trial,
 or betrayal cascade. Call it when players commit, not when the chart says so.
 
+When the party earned the Climax through negotiation, exposure, or diplomacy,
+that resolution is the Climax — do not manufacture a new battle to replace it.
+A negotiated peace under pressure, a conspiracy exposed at personal cost, or a
+sacrifice that ends a conflict without combat are all valid highest-stakes
+confrontations. Default to the shape the fiction earned, not to combat.
+
 ## Completion test
 
 Highest-stakes confrontation resolved; threads harvested.
