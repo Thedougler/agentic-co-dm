@@ -1,48 +1,49 @@
 {
   "skill_name": "lore-design",
   "iteration": 1,
+  "rescore": "post-#145 assertion tighten (ae11c9c) @ branch evals/batch-a-rescore-pr145 tip 5832e0d+",
   "configurations": [
     {
       "name": "with_skill",
       "evals": [
         {
           "eval_name": "taking-on-aruhe-improve",
-          "assertions_passed": 8,
-          "assertions_total": 8,
+          "assertions_passed": 9,
+          "assertions_total": 9,
           "pass_rate": 1.0,
-          "tokens": 42000,
-          "duration_seconds": 95.0
+          "tokens": null,
+          "duration_seconds": 118.0
         },
         {
           "eval_name": "taking-on-aruhe-resist-invent",
           "assertions_passed": 5,
           "assertions_total": 5,
           "pass_rate": 1.0,
-          "tokens": 38000,
-          "duration_seconds": 88.0
+          "tokens": null,
+          "duration_seconds": 94.0
         },
         {
           "eval_name": "pier-debt-custom-from-scratch",
-          "assertions_passed": 6,
-          "assertions_total": 6,
+          "assertions_passed": 7,
+          "assertions_total": 7,
           "pass_rate": 1.0,
-          "tokens": 36000,
-          "duration_seconds": 82.0
+          "tokens": null,
+          "duration_seconds": 126.0
         },
         {
           "eval_name": "taken-whole-flesh",
-          "assertions_passed": 6,
-          "assertions_total": 6,
+          "assertions_passed": 7,
+          "assertions_total": 7,
           "pass_rate": 1.0,
-          "tokens": 45000,
-          "duration_seconds": 102.0
+          "tokens": null,
+          "duration_seconds": 148.0
         }
       ],
       "aggregate": {
         "mean_pass_rate": 1.0,
         "stddev_pass_rate": 0.0,
-        "mean_tokens": 40250,
-        "mean_duration_seconds": 91.8
+        "mean_tokens": null,
+        "mean_duration_seconds": 121.5
       }
     },
     {
@@ -51,56 +52,57 @@
         {
           "eval_name": "taking-on-aruhe-improve",
           "assertions_passed": 5,
-          "assertions_total": 8,
-          "pass_rate": 0.625,
-          "tokens": 28000,
-          "duration_seconds": 62.0
+          "assertions_total": 9,
+          "pass_rate": 0.556,
+          "tokens": null,
+          "duration_seconds": 72.0
         },
         {
           "eval_name": "taking-on-aruhe-resist-invent",
           "assertions_passed": 1,
           "assertions_total": 5,
           "pass_rate": 0.2,
-          "tokens": 22000,
-          "duration_seconds": 48.0
+          "tokens": null,
+          "duration_seconds": 51.0
         },
         {
           "eval_name": "pier-debt-custom-from-scratch",
           "assertions_passed": 3,
-          "assertions_total": 6,
-          "pass_rate": 0.5,
-          "tokens": 24000,
-          "duration_seconds": 51.0
+          "assertions_total": 7,
+          "pass_rate": 0.429,
+          "tokens": null,
+          "duration_seconds": 68.0
         },
         {
           "eval_name": "taken-whole-flesh",
-          "assertions_passed": 3,
-          "assertions_total": 6,
-          "pass_rate": 0.5,
-          "tokens": 26000,
-          "duration_seconds": 55.0
+          "assertions_passed": 2,
+          "assertions_total": 7,
+          "pass_rate": 0.286,
+          "tokens": null,
+          "duration_seconds": 79.0
         }
       ],
       "aggregate": {
-        "mean_pass_rate": 0.456,
-        "stddev_pass_rate": 0.181,
-        "mean_tokens": 25000,
-        "mean_duration_seconds": 54.0
+        "mean_pass_rate": 0.367,
+        "stddev_pass_rate": 0.136,
+        "mean_tokens": null,
+        "mean_duration_seconds": 67.5
       }
     }
   ],
   "delta": {
-    "pass_rate": "+54.4%",
-    "tokens": "+61.0%",
-    "duration": "+70.0%"
+    "pass_rate": "+172.1%",
+    "tokens": "n/a (total_tokens null)",
+    "duration": "+80.0%"
   },
   "analyst_observations": [
-    "With-skill passes all assertions across 4 evals (25/25). Baseline mean pass_rate 0.456 (12/25).",
-    "Largest skill delta on eval-2 resist-invent: with_skill 1.0 vs without_skill 0.2 \u2014 baseline invents fungal network as Current Truth when prompted for 'the real answer'.",
-    "Process assertions (durable question, work gate) discriminate improve/from-scratch/flesh: baseline fails them even when content quality is decent (eval-1 content mostly preserved).",
-    "Eval-3 invention labeling and single-question discipline fail without skill (truth:established + Midchain scope; bundles berth/pilot/salvage).",
-    "Eval-4 without_skill keeps Dead Lady/Umberlee names but promotes dock rumour into Current Truth and adds unlabeled Discovery vectors \u2014 guardrail assertions catch this.",
-    "With-skill costs ~61% more tokens and ~70% more time; value is guardrail + process, not raw page length.",
-    "Timing/token figures are executor estimates (inline runs; no nested Claude subagent metrics available on this box)."
+    "Re-score after #145: with_skill mean pass rate 1.000 (success bar 1.000); without_skill 0.367.",
+    "Eval-1 heading-form ## At a Glance now fails callout copy-forward (without 5/9); with_skill upgrades to template headings + kind/truth.",
+    "Process asserts require durable locus (process-notes.md / transcript.md); with_skill records durable question + work gate; without_skill omits them.",
+    "Eval-2 resist-invent remains sharpest discriminator (1.0 vs 0.2) — baseline fungal network as Current Truth.",
+    "Eval-3 new vault-harbour negative assert fires on without_skill Kalowe/Midchain claim; invention:true + single-question still discriminate (with 7/7 vs without 3/7).",
+    "Eval-4 new Discovery proposed/invention wording assert fails unlabeled without_skill clues; rumour≠Current Truth still strong (with 7/7 vs without 2/7).",
+    "No new Author-blocking failures on with_skill; soft note: structure+substance floor still passable without skill when headings are filled.",
+    "Tokens unavailable (timing.total_tokens null). Soft lint / live vault completeness not graded; outputs under workspace */outputs/ only. No SKILL.md or live wiki/ edits."
   ]
 }

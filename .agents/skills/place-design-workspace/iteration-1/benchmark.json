@@ -1,6 +1,7 @@
 {
   "skill_name": "place-design",
   "iteration": 1,
+  "rescore": "post-#145 assertion tighten (ae11c9c) @ branch evals/batch-a-rescore-pr145",
   "configurations": [
     {
       "name": "with_skill",
@@ -10,7 +11,7 @@
           "assertions_passed": 7,
           "assertions_total": 7,
           "pass_rate": 1.0,
-          "tokens": 68000,
+          "tokens": null,
           "duration_seconds": 142.0
         },
         {
@@ -18,7 +19,7 @@
           "assertions_passed": 4,
           "assertions_total": 4,
           "pass_rate": 1.0,
-          "tokens": 28000,
+          "tokens": null,
           "duration_seconds": 55.0
         },
         {
@@ -26,7 +27,7 @@
           "assertions_passed": 6,
           "assertions_total": 6,
           "pass_rate": 1.0,
-          "tokens": 45000,
+          "tokens": null,
           "duration_seconds": 110.0
         },
         {
@@ -34,7 +35,7 @@
           "assertions_passed": 6,
           "assertions_total": 6,
           "pass_rate": 1.0,
-          "tokens": 58000,
+          "tokens": null,
           "duration_seconds": 125.0
         },
         {
@@ -42,7 +43,7 @@
           "assertions_passed": 4,
           "assertions_total": 4,
           "pass_rate": 1.0,
-          "tokens": 48000,
+          "tokens": null,
           "duration_seconds": 105.0
         },
         {
@@ -50,7 +51,7 @@
           "assertions_passed": 3,
           "assertions_total": 3,
           "pass_rate": 1.0,
-          "tokens": 36000,
+          "tokens": null,
           "duration_seconds": 75.0
         },
         {
@@ -58,7 +59,7 @@
           "assertions_passed": 3,
           "assertions_total": 3,
           "pass_rate": 1.0,
-          "tokens": 34000,
+          "tokens": null,
           "duration_seconds": 70.0
         },
         {
@@ -66,7 +67,7 @@
           "assertions_passed": 3,
           "assertions_total": 3,
           "pass_rate": 1.0,
-          "tokens": 32000,
+          "tokens": null,
           "duration_seconds": 65.0
         },
         {
@@ -74,7 +75,7 @@
           "assertions_passed": 3,
           "assertions_total": 3,
           "pass_rate": 1.0,
-          "tokens": 40000,
+          "tokens": null,
           "duration_seconds": 80.0
         },
         {
@@ -82,7 +83,7 @@
           "assertions_passed": 3,
           "assertions_total": 3,
           "pass_rate": 1.0,
-          "tokens": 30000,
+          "tokens": null,
           "duration_seconds": 60.0
         },
         {
@@ -90,7 +91,7 @@
           "assertions_passed": 3,
           "assertions_total": 3,
           "pass_rate": 1.0,
-          "tokens": 28000,
+          "tokens": null,
           "duration_seconds": 55.0
         },
         {
@@ -98,7 +99,7 @@
           "assertions_passed": 3,
           "assertions_total": 3,
           "pass_rate": 1.0,
-          "tokens": 26000,
+          "tokens": null,
           "duration_seconds": 50.0
         },
         {
@@ -106,7 +107,7 @@
           "assertions_passed": 3,
           "assertions_total": 3,
           "pass_rate": 1.0,
-          "tokens": 30000,
+          "tokens": null,
           "duration_seconds": 58.0
         },
         {
@@ -114,14 +115,14 @@
           "assertions_passed": 4,
           "assertions_total": 4,
           "pass_rate": 1.0,
-          "tokens": 32000,
+          "tokens": null,
           "duration_seconds": 62.0
         }
       ],
       "aggregate": {
         "mean_pass_rate": 1.0,
         "stddev_pass_rate": 0.0,
-        "mean_tokens": 38214,
+        "mean_tokens": null,
         "mean_duration_seconds": 79.4
       }
     },
@@ -133,7 +134,7 @@
           "assertions_passed": 3,
           "assertions_total": 7,
           "pass_rate": 0.429,
-          "tokens": 52000,
+          "tokens": null,
           "duration_seconds": 88.0
         },
         {
@@ -141,23 +142,23 @@
           "assertions_passed": 1,
           "assertions_total": 4,
           "pass_rate": 0.25,
-          "tokens": 22000,
+          "tokens": null,
           "duration_seconds": 42.0
         },
         {
           "eval_name": "cinder-ford-from-scratch",
-          "assertions_passed": 2,
+          "assertions_passed": 1,
           "assertions_total": 6,
-          "pass_rate": 0.333,
-          "tokens": 30000,
+          "pass_rate": 0.167,
+          "tokens": null,
           "duration_seconds": 70.0
         },
         {
           "eval_name": "river-slack-basin-flesh",
-          "assertions_passed": 3,
+          "assertions_passed": 2,
           "assertions_total": 6,
-          "pass_rate": 0.5,
-          "tokens": 40000,
+          "pass_rate": 0.333,
+          "tokens": null,
           "duration_seconds": 85.0
         },
         {
@@ -165,7 +166,7 @@
           "assertions_passed": 0,
           "assertions_total": 4,
           "pass_rate": 0.0,
-          "tokens": 18000,
+          "tokens": null,
           "duration_seconds": 40.0
         },
         {
@@ -173,7 +174,7 @@
           "assertions_passed": 0,
           "assertions_total": 3,
           "pass_rate": 0.0,
-          "tokens": 12000,
+          "tokens": null,
           "duration_seconds": 28.0
         },
         {
@@ -181,7 +182,7 @@
           "assertions_passed": 0,
           "assertions_total": 3,
           "pass_rate": 0.0,
-          "tokens": 10000,
+          "tokens": null,
           "duration_seconds": 25.0
         },
         {
@@ -189,7 +190,7 @@
           "assertions_passed": 0,
           "assertions_total": 3,
           "pass_rate": 0.0,
-          "tokens": 9000,
+          "tokens": null,
           "duration_seconds": 22.0
         },
         {
@@ -197,7 +198,7 @@
           "assertions_passed": 0,
           "assertions_total": 3,
           "pass_rate": 0.0,
-          "tokens": 8000,
+          "tokens": null,
           "duration_seconds": 20.0
         },
         {
@@ -205,7 +206,7 @@
           "assertions_passed": 0,
           "assertions_total": 3,
           "pass_rate": 0.0,
-          "tokens": 8000,
+          "tokens": null,
           "duration_seconds": 18.0
         },
         {
@@ -213,7 +214,7 @@
           "assertions_passed": 0,
           "assertions_total": 3,
           "pass_rate": 0.0,
-          "tokens": 7000,
+          "tokens": null,
           "duration_seconds": 16.0
         },
         {
@@ -221,7 +222,7 @@
           "assertions_passed": 0,
           "assertions_total": 3,
           "pass_rate": 0.0,
-          "tokens": 6000,
+          "tokens": null,
           "duration_seconds": 14.0
         },
         {
@@ -229,37 +230,38 @@
           "assertions_passed": 0,
           "assertions_total": 3,
           "pass_rate": 0.0,
-          "tokens": 7000,
+          "tokens": null,
           "duration_seconds": 15.0
         },
         {
           "eval_name": "file-a-wilderness-location",
-          "assertions_passed": 3,
+          "assertions_passed": 0,
           "assertions_total": 4,
-          "pass_rate": 0.75,
-          "tokens": 12000,
+          "pass_rate": 0.0,
+          "tokens": null,
           "duration_seconds": 24.0
         }
       ],
       "aggregate": {
-        "mean_pass_rate": 0.162,
-        "stddev_pass_rate": 0.2488,
-        "mean_tokens": 17214,
+        "mean_pass_rate": 0.0842,
+        "stddev_pass_rate": 0.1483,
+        "mean_tokens": null,
         "mean_duration_seconds": 36.2
       }
     }
   ],
   "delta": {
-    "pass_rate": "+517.3%",
-    "tokens": "+122.0%",
+    "pass_rate": "+91.6%",
+    "tokens": "n/a (total_tokens null)",
     "duration": "+119.3%"
   },
   "analyst_observations": [
-    "With-skill mean pass rate is perfect (1.0) across all 14 evals; without-skill mean is substantially lower, driven by process gates (kernel, work gate), invention labeling, and craft anti-patterns.",
-    "Strongest discrimination: eval-2 resist-invent (1.0 vs 0.25), eval-3 from-scratch labeling/kernel (1.0 vs 0.33), and craft evals 5\u201313 where baseline often produces lore-only / single-solution / reset-state answers.",
-    "Eval-14 structure assertions (four cardinals, travel-day distances, Where conventions) pass for both configs when the baseline still emits a Where section \u2014 only the southern canon-gap guardrail discriminates. Flagged in EVAL_AUTHOR_FLAGS.md.",
-    "Eval-10 assertion \"Moves alter routes...\" can false-positive on negation phrasing in weak baselines; grader corrected for this run. Consider requiring actor/trigger/consequence fields explicitly.",
-    "With-skill costs more tokens (~2\u00d7) and time (~2.3\u00d7) than baseline on this iteration \u2014 expected for kernel + work-gate + reference-shaped craft.",
-    "Wiki-grounded evals 1 and 4: baseline still preserves much content canon (template + page text) but fails process and guardrail assertions \u2014 skill value is process discipline more than raw recall."
+    "Re-score after #145: with_skill mean pass rate 1.000 (success bar 1.000); without_skill 0.084.",
+    "Process asserts require durable locus (process-notes.md / transcript.md); with_skill records kernel + work gate there; without_skill omits them on wiki-grounded evals 1\u20134.",
+    "Eval-10 five-part moves tighten: with_skill states actor/trigger/visible result/new opportunity/lasting consequence positively on all four moves; without_skill negation-only ('No lasting change to routes\u2026') correctly fails.",
+    "Eval-14 Where discipline tighten: with_skill uses explicit **North/East/South/West** + travel-day language + southern canon gap with no south wikilink/proper name (4/4); without_skill invents Port Haven south and lacks cardinal lines (0/4) \u2014 former non-discriminating structure asserts now discriminate.",
+    "Eval-2 resist-invent remains sharp (1.0 vs 0.25). Craft evals 5\u201313 fully discriminate (1.0 vs 0.0).",
+    "No Author-blocking with_skill failures. Soft note: structure floor on evals 1/3/4 can still clear for without_skill when template headings are partially filled.",
+    "Tokens unavailable (timing.total_tokens null). Soft lint / live vault completeness not graded; outputs under workspace */outputs/ only. No SKILL.md or live wiki/ edits."
   ]
 }

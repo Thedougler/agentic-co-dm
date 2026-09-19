@@ -1,30 +1,31 @@
 {
   "skill_name": "region-design",
   "iteration": 1,
+  "rescore": "post-#145 assertion tighten (ae11c9c) @ branch evals/batch-a-rescore-pr145",
   "configurations": [
     {
       "name": "with_skill",
       "evals": [
         {
           "eval_name": "aruhe-improve",
-          "assertions_passed": 8,
-          "assertions_total": 8,
+          "assertions_passed": 9,
+          "assertions_total": 9,
           "pass_rate": 1.0,
           "tokens": 68420,
           "duration_seconds": 142.0
         },
         {
           "eval_name": "aruhe-resist-invent",
-          "assertions_passed": 4,
-          "assertions_total": 4,
+          "assertions_passed": 5,
+          "assertions_total": 5,
           "pass_rate": 1.0,
           "tokens": 38500,
           "duration_seconds": 72.0
         },
         {
           "eval_name": "brine-ladder-from-scratch",
-          "assertions_passed": 6,
-          "assertions_total": 6,
+          "assertions_passed": 7,
+          "assertions_total": 7,
           "pass_rate": 1.0,
           "tokens": 52100,
           "duration_seconds": 98.0
@@ -51,15 +52,15 @@
         {
           "eval_name": "aruhe-improve",
           "assertions_passed": 5,
-          "assertions_total": 8,
-          "pass_rate": 0.625,
+          "assertions_total": 9,
+          "pass_rate": 0.5555555555555556,
           "tokens": 41250,
           "duration_seconds": 78.0
         },
         {
           "eval_name": "aruhe-resist-invent",
           "assertions_passed": 0,
-          "assertions_total": 4,
+          "assertions_total": 5,
           "pass_rate": 0.0,
           "tokens": 28900,
           "duration_seconds": 54.0
@@ -67,8 +68,8 @@
         {
           "eval_name": "brine-ladder-from-scratch",
           "assertions_passed": 3,
-          "assertions_total": 6,
-          "pass_rate": 0.5,
+          "assertions_total": 7,
+          "pass_rate": 0.42857142857142855,
           "tokens": 31800,
           "duration_seconds": 61.0
         },
@@ -76,31 +77,33 @@
           "eval_name": "Midchain-flesh",
           "assertions_passed": 2,
           "assertions_total": 6,
-          "pass_rate": 0.333,
+          "pass_rate": 0.3333333333333333,
           "tokens": 35600,
           "duration_seconds": 67.0
         }
       ],
       "aggregate": {
-        "mean_pass_rate": 0.364,
-        "stddev_pass_rate": 0.235,
+        "mean_pass_rate": 0.329,
+        "stddev_pass_rate": 0.206,
         "mean_tokens": 34388,
         "mean_duration_seconds": 65.0
       }
     }
   ],
   "delta": {
-    "pass_rate": "+174.7%",
+    "pass_rate": "+203.6%",
     "tokens": "+67.4%",
     "duration": "+79.7%"
   },
   "analyst_observations": [
-    "With-skill mean pass_rate 1.0 across 4 evals; without-skill mean ~0.375 \u2014 large discriminating delta driven by guardrail/process assertions.",
-    "Eval-2 (resist invent) is the strongest discriminator: with_skill 4/4, without_skill 0/4. Baseline writes ancient evil + warlord as canon.",
-    "Eval-1 baseline still produces usable region.md-shaped content from the template-in-prompt, but fails identity sentence, work gate, and pressure-forward DM thesis.",
-    "Eval-3 baseline gives route tradeoffs but omits invention:true and invents smuggling-war / Crown-inspection fronts as fact.",
-    "Eval-4 baseline keeps named links but invents occupation war + plague as established and retains five-sentence kernel instead of full region.md reshape.",
-    "With-skill costs more tokens/time (~1.7\u20132\u00d7 duration). Acceptable: process gates + pressure discipline are the skill value-add.",
-    "Process assertions (identity sentence, work gate) require agent_report.md artifacts \u2014 graders should treat those as first-class outputs alongside the page draft."
+    "Re-score after #145: with_skill mean pass rate 1.000 (success bar 1.000); without_skill 0.329.",
+    "Process asserts now require durable locus (process-notes.md / agent_report.md / transcript.md); with_skill agent_report.md satisfies; without_skill still omits them.",
+    "Eval-1 new Feared-for assert (F3): with_skill cites taking/razer-grass; without_skill fails on vague 'island waking'.",
+    "Eval-2 new ban on threat-embedded rewrite (F2): with_skill 5/5 (response-only); without_skill 0/5 (aruhe-threat-update.md embeds evil+warlord).",
+    "Eval-3 new parent-region invent label (F4): with_skill leaves Parent unassigned/proposed; without_skill asserts Midchain as fact.",
+    "Eval-4 kernel ban wording (F5): with_skill full region.md; without_skill retains ## Five-sentence kernel (retained).",
+    "Structure+substance companions: both configs can still clear the floor when template headings are visible and partially filled \u2014 discrimination remains in process/guardrail/quality.",
+    "No new Author-blocking failures on with_skill; tokens/duration retained from prior run timings (estimated executor).",
+    "Soft lint / live vault completeness not graded; outputs under workspace */outputs/ only. SKILL.md and live wiki untouched."
   ]
 }

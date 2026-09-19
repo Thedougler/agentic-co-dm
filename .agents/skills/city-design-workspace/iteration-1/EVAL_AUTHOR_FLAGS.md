@@ -1,32 +1,33 @@
-# EVAL_AUTHOR_FLAGS — city-design Batch A re-run (post-#138)
+# EVAL_AUTHOR_FLAGS — city-design Batch A re-score (post-#145)
 
-Flags from grading + analyst pass. Soft lint / vault completeness correctly out of scope.
+Re-scored on `evals/batch-a-rescore-pr145` after assertion tighten (#145 @ ae11c9c). Soft lint / vault completeness correctly out of scope. Success bar: with_skill mean **1.000** — **HIT**.
+
+## New from this re-score
+
+- **No new Author-blocking failures** on with_skill (8/8, 4/4, 6/6, 11/11).
+- **Eval-4 split content asserts** (Dravosi / Seven Houses / Paludi-Rattkin / Warren-Passage / Simone-Lavinia): with_skill 5/5, without_skill 0/5. Split improves diagnosability without weakening discrimination.
+- **DM-thesis negative** (eval-1): without_skill plague-arc thesis correctly fails; with_skill function-in-play thesis passes. Keep.
+- **Durable process locus** (process-notes.md / transcript.md): with_skill satisfies; without_skill omits identity sentence and work gate. Graders must read those artifacts, not only the page file.
+- **Structure+substance companions**: both configs can still clear the floor when template headings are visible and partially filled — discrimination remains in process / guardrail / content. Optional future sharpen: require Orientation ≥2 *named function-linked* districts with non-placeholder pressure cells.
 
 ## Discriminating (keep)
 
 - **Resist-invent plague/siege as canon** (eval-2): strongest discriminator (1.0 vs 0.0). Keep hostile prompt wording.
-- **Closed S1 thread must stay closed** (eval-1 content + If-nobody-intervenes): catches baseline rewriting bombs into live plague.
-- **invention: true on from-scratch** (eval-3): baseline often omits; keep.
-- **kind: settlement → kind: city upgrade** (eval-4): baseline failed; keep explicit.
-- **Identity sentence / work gate** (process): discriminate well when process-notes.md is required evidence. Document that graders must read process-notes, not only the page file.
+- **Closed S1 thread must stay closed** (eval-1 content + If-nobody-intervenes).
+- **invention: true on from-scratch** (eval-3).
+- **kind: settlement → kind: city upgrade** (eval-4).
+- **Split canon preserves** (eval-4 five content asserts) — keep split form.
+- **Identity sentence / work gate** with durable locus wording — keep post-#145 text.
 
 ## Non-discriminating / soft
 
-- **Template structure headings present** (evals 1,3,4): both configs often pass if the template file is visible in-repo. Still useful as a floor assertion, but alone does not prove skill adherence. Consider requiring specific subsection content (e.g. Orientation districts table with ≥2 rows) for sharper discrimination.
-- **Frontmatter type:place kind:city** on improve/from-scratch (eval-1, eval-3): weak discriminator when the prompt names `wiki/templates/city.md` — baseline can copy frontmatter without the skill. Pair with process/guardrail assertions (already done).
+- **Template structure with some fill** (evals 1,3,4): without_skill often still passes the substance floor. Useful as a floor, weak alone.
+- **Frontmatter type:place kind:city** on improve/from-scratch when prompt names `wiki/templates/city.md`.
 
 ## Flaky / evidence-dependent
 
-- **Identity sentence appears before the page draft**: fails if executor forgets `process-notes.md` even when skill was followed. Not flaky given notes requirement, but **assertion text should cite process-notes (or transcript) as the evidence locus** so future graders do not hunt the page file.
-- **Shows a chat proposal / work gate before writing under wiki/**: same — needs process artifact. Also ambiguous if workspace-only writes count as "writing under wiki/" (they must not). Clarifying assertion: "chat proposal before any live `wiki/` path write; workspace outputs allowed."
+- Process asserts are **not** flaky when `process-notes.md` / `transcript.md` are required outputs of the executor. This re-score wrote both under each run's `outputs/`.
 
-## Bad / strengthen
+## Bounds held
 
-- Eval-1 assertion *DM thesis is one sentence about the city's function in play* can pass weak theses that are still one sentence. Consider requiring pressure-forward / no-live-crisis framing for Mercatura specifically, or a negative check ("not a Season-1 history summary").
-- Eval-3 *Arrival without secrets* is good; baseline failure mode (secret vault + knows party names) is clear. No change needed.
-- Eval-4 content preservation assertion is long/compound (Dravosi + Houses + Paludi + Warren + Simone/Lavinia). Prefer splitting into 2–3 assertions so a partial miss does not all-or-nothing the grade — or keep compound but document that **any** major omission fails.
-
-## Retarget note (post-#138)
-
-- Improve target is **Mercatura** (kind:city); flesh target is **calven-and-calveno** (settlement→city). Do not grade live Mercatura stub completeness; grade output template conformance only.
-- No invented lore filed as live wiki pages in this run (workspace `*/outputs/` only).
+- No SKILL.md edits. No live wiki/ writes. Workspace `*/outputs/` only. Did not touch Batch B / `wt-batch-b-spell` / main.
