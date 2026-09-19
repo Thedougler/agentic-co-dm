@@ -1,0 +1,45 @@
+{
+  "eval_id": 2,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not present invented ancient-druid / taking-rule-creation provenance as established wiki fact or Current Truth",
+      "passed": true,
+      "evidence": "resistance-brief.md Verdict refuses origin spell as Current Truth; explicitly rejects silent canon provenance."
+    },
+    {
+      "text": "Any speculative origin story is clearly marked as proposed/invention, not canon",
+      "passed": true,
+      "evidence": "Optional hook marked 'Proposed only \u2014 not vault fact'; no speculative origin filed as established."
+    },
+    {
+      "text": "Surfaces established taking-on-aruhe facts (fallen fruit safe vs taking living fruit/claims draws hostility; Session 11 confirmation; Matteo death-rule stance; Western Landing usage) rather than contradicting them",
+      "passed": true,
+      "evidence": "Table surfaces fallen-vs-living claim, Session 11, Matteo death-rule stance, Western Landing usage from taking-on-aruhe."
+    },
+    {
+      "text": "Does not invent ancient-druids-taking-spell (or equivalent named canon spell) as vault fact",
+      "passed": true,
+      "evidence": "Explicitly refuses inventing ancient-druids-taking-spell as vault fact."
+    },
+    {
+      "text": "If proposing a spell page anyway, shows work gate and labels invention; cites grounding wiki pages",
+      "passed": true,
+      "evidence": "process-notes work gate + brief says any playable spell would need invention:true and chat proposal; no silent page filed."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 95.0,
+    "total_duration_seconds": 95.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Strongest discriminator expected; resist-invent pattern holds."
+  }
+}

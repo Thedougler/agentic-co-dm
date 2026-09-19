@@ -1,0 +1,65 @@
+{
+  "eval_id": 3,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/spell.md structure",
+      "passed": false,
+      "evidence": "Missing narration callout and Level/School classification line; thin pseudo-template only."
+    },
+    {
+      "text": "Frontmatter includes type: spell, level, school, ritual, and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+      "passed": false,
+      "evidence": "Frontmatter lacks lifecycle, reveal, visibility, ritual."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not presented as vault canon",
+      "passed": false,
+      "evidence": "No invention:true; instructs filing under wiki/entities/spell/ without proposed label."
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "passed": false,
+      "evidence": "No process-notes / identity sentence."
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "passed": false,
+      "evidence": "No work gate; jumps to file-under-wiki instruction."
+    },
+    {
+      "text": "Does not cite spell-scroll item pages as type: spell pages",
+      "passed": false,
+      "evidence": "Alludes to spell scroll Protection-type magic in item vault as reference pattern for the spell."
+    },
+    {
+      "text": "Casting Time, Range, Components, and Duration are filled in 2024 terms",
+      "passed": true,
+      "evidence": "Casting Time/Range/Components/Duration lines are present (even if effect is weak)."
+    },
+    {
+      "text": "Runnable effect states what sealing does, how long, how it fails/ends, and any save or check \u2014 not vague 'protects the document'",
+      "passed": false,
+      "evidence": "Effect is vague 'protected from tampering / changes just don't stick' \u2014 no check, fail mode, or end condition."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 7,
+    "total": 8,
+    "pass_rate": 0.125
+  },
+  "timing": {
+    "executor_duration_seconds": 55.0,
+    "total_duration_seconds": 55.0
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "Casting Time, Range, Components, and Duration are filled",
+        "reason": "Weak discriminator \u2014 baseline can fill labels without runnable effect. Pair already exists with quality assertion; keep both."
+      }
+    ],
+    "overall": "Baseline passes only the casting-field presence check."
+  }
+}

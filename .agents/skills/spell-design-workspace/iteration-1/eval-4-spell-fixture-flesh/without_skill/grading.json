@@ -1,0 +1,60 @@
+{
+  "eval_id": 4,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Preserves stub premise: 3rd-level necromancy that marks a drowning site for Umberlee-touched scavengers",
+      "passed": true,
+      "evidence": "Still 3rd-level necromancy marking drownings for Umberlee scavengers at summary level."
+    },
+    {
+      "text": "Clearly distinguishes fixture lines from proposed invention throughout",
+      "passed": false,
+      "evidence": "No fixture-vs-invention separation; presents invented metaphysics as established."
+    },
+    {
+      "text": "Does not invent Taking-on-Aruhe metaphysics or promote undeclared Umberlee doctrine as established Current Truth",
+      "passed": false,
+      "evidence": "Claims Taking-on-Aruhe / Umberlee doctrine as Current Truth linking knell to land Taking \u2014 invented metaphysics."
+    },
+    {
+      "text": "Output follows wiki/templates/spell.md structure",
+      "passed": false,
+      "evidence": "Missing narration callout and full spell.md shape; thin structure."
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "passed": false,
+      "evidence": "No identity sentence / process-notes."
+    },
+    {
+      "text": "Discovery and/or Lore sections, if filled, stay on the spell page and label invention where history is proposed",
+      "passed": false,
+      "evidence": "Lore asserts canon Umberlee+Taking origin without invention label."
+    },
+    {
+      "text": "Does not treat spell-scroll items as the spell page being fleshed",
+      "passed": false,
+      "evidence": "Cites wiki/entities/item/spell-scroll-locate-creature.md as how locate-style magic is filed as spells."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 6,
+    "total": 7,
+    "pass_rate": 0.1429
+  },
+  "timing": {
+    "executor_duration_seconds": 61.0,
+    "total_duration_seconds": 61.0
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "Preserves stub premise...",
+        "reason": "Non-discriminating alone \u2014 both configs keep level/school/summary. Guardrail assertions carry the discrimination."
+      }
+    ],
+    "overall": "Baseline fails invention separation, Taking bleed, process, scroll guardrail."
+  }
+}

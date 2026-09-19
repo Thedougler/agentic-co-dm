@@ -1,0 +1,70 @@
+{
+  "eval_id": 1,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identity sentence (level/school + table effect + casting signature + player choice/pressure) appears before the page draft",
+      "passed": true,
+      "evidence": "process-notes.md Identity sentence states 2nd-level illusion, hides small craft silhouette, salt-haze signature, player pressure to slip past lookouts \u2014 before page draft."
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "passed": true,
+      "evidence": "process-notes.md Chat proposal / work gate proposes wiki/shattered-sea/spells/saltwake-veil.md and forbids live wiki write until DM acceptance."
+    },
+    {
+      "text": "Output follows wiki/templates/spell.md structure (narration, Level/School line, Casting Time, Range, Components, Duration, effect block)",
+      "passed": true,
+      "evidence": "saltwake-veil.md has narration callout, Level 2 Illusion line, Casting Time/Range/Components/Duration, and effect block."
+    },
+    {
+      "text": "Frontmatter includes type: spell and required identity fields (lifecycle, reveal, campaign, visibility, level, school, ritual, summary)",
+      "passed": true,
+      "evidence": "Frontmatter: type: spell, lifecycle, reveal, campaign, visibility, level, school, ritual, summary all present."
+    },
+    {
+      "text": "Preserves fixture premise: 2nd-level illusion that hides a small craft's silhouette from distant watchers",
+      "passed": true,
+      "evidence": "Summary and effect preserve 2nd-level illusion hiding small craft silhouette from distant watchers (120 ft disadvantage framing)."
+    },
+    {
+      "text": "Material additions beyond the fixture are labeled invention/proposed \u2014 not silent vault canon",
+      "passed": true,
+      "evidence": "invention: true in frontmatter; Invention callout labels duration/size/scaling as proposed, not vault canon."
+    },
+    {
+      "text": "Does not cite or treat wiki/entities/item/spell-scroll-*.md pages as type: spell exemplars",
+      "passed": true,
+      "evidence": "Discovery explicitly says do not treat spell-scroll-fog-cloud items as this spell page; no scroll cited as type:spell exemplar."
+    },
+    {
+      "text": "Narration describes what a bystander sees/hears/feels without secrets, DCs, or unearned names",
+      "passed": true,
+      "evidence": "Narration describes salt haze, taste of brine, silhouette softening \u2014 no DCs, secrets, or unearned names in player-facing prose."
+    },
+    {
+      "text": "Effect block is runnable in 2024 terms (saves/attacks, targets/area, duration end, scaling when applicable) and peer-anchored",
+      "passed": true,
+      "evidence": "Effect states Perception disadvantage, 120 ft tell, size gate, end conditions, upcast scaling; peer-anchored to Fog Cloud/Invisibility in process notes."
+    }
+  ],
+  "summary": {
+    "passed": 9,
+    "failed": 0,
+    "total": 9,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 148.0,
+    "total_duration_seconds": 148.0
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "Identity sentence...",
+        "reason": "Requires process-notes.md as evidence locus \u2014 document that in assertion text for future graders."
+      }
+    ],
+    "overall": "Solid improve eval; process assertions need artifact path cited."
+  }
+}

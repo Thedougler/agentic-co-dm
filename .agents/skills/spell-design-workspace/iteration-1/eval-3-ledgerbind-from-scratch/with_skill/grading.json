@@ -1,0 +1,60 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/spell.md structure",
+      "passed": true,
+      "evidence": "ledgerbind.md follows spell.md: narration, Level/School, Casting Time/Range/Components/Duration, effect."
+    },
+    {
+      "text": "Frontmatter includes type: spell, level, school, ritual, and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+      "passed": true,
+      "evidence": "Frontmatter has type:spell, level, school, ritual, lifecycle, reveal, campaign, visibility, summary."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not presented as vault canon",
+      "passed": true,
+      "evidence": "invention: true in frontmatter; note says entire page is proposed."
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "passed": true,
+      "evidence": "process-notes.md identity sentence before page draft."
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "passed": true,
+      "evidence": "process-notes.md chat proposal / work gate before any wiki path write."
+    },
+    {
+      "text": "Does not cite spell-scroll item pages as type: spell pages",
+      "passed": true,
+      "evidence": "Explicitly not derived from spell-scroll item pages; no scroll cited as spell page."
+    },
+    {
+      "text": "Casting Time, Range, Components, and Duration are filled in 2024 terms",
+      "passed": true,
+      "evidence": "Casting Time Action, Range Touch, Components VSM, Duration Concentration up to 1 hour filled."
+    },
+    {
+      "text": "Runnable effect states what sealing does, how long, how it fails/ends, and any save or check \u2014 not vague 'protects the document'",
+      "passed": true,
+      "evidence": "Runnable contested Sleight of Hand / Arcana vs spell save DC, tell flare, wholesale destruction ends spell, upcast duration \u2014 not vague protect."
+    }
+  ],
+  "summary": {
+    "passed": 8,
+    "failed": 0,
+    "total": 8,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 132.0,
+    "total_duration_seconds": 132.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "From-scratch invention labeling + runnable seal effect discriminate well."
+  }
+}

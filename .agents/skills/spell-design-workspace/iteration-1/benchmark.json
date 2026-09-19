@@ -1,0 +1,107 @@
+{
+  "skill_name": "spell-design",
+  "iteration": 1,
+  "configurations": [
+    {
+      "name": "with_skill",
+      "evals": [
+        {
+          "eval_name": "spell-fixture-improve",
+          "assertions_passed": 9,
+          "assertions_total": 9,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 148.0
+        },
+        {
+          "eval_name": "spell-craft-anti-pattern",
+          "assertions_passed": 5,
+          "assertions_total": 5,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 95.0
+        },
+        {
+          "eval_name": "ledgerbind-from-scratch",
+          "assertions_passed": 8,
+          "assertions_total": 8,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 132.0
+        },
+        {
+          "eval_name": "spell-fixture-flesh",
+          "assertions_passed": 7,
+          "assertions_total": 7,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 155.0
+        }
+      ],
+      "aggregate": {
+        "mean_pass_rate": 1.0,
+        "stddev_pass_rate": 0.0,
+        "mean_tokens": null,
+        "mean_duration_seconds": 132.5
+      }
+    },
+    {
+      "name": "without_skill",
+      "evals": [
+        {
+          "eval_name": "spell-fixture-improve",
+          "assertions_passed": 2,
+          "assertions_total": 9,
+          "pass_rate": 0.2222,
+          "tokens": null,
+          "duration_seconds": 72.0
+        },
+        {
+          "eval_name": "spell-craft-anti-pattern",
+          "assertions_passed": 0,
+          "assertions_total": 5,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 68.0
+        },
+        {
+          "eval_name": "ledgerbind-from-scratch",
+          "assertions_passed": 1,
+          "assertions_total": 8,
+          "pass_rate": 0.125,
+          "tokens": null,
+          "duration_seconds": 55.0
+        },
+        {
+          "eval_name": "spell-fixture-flesh",
+          "assertions_passed": 1,
+          "assertions_total": 7,
+          "pass_rate": 0.1429,
+          "tokens": null,
+          "duration_seconds": 61.0
+        }
+      ],
+      "aggregate": {
+        "mean_pass_rate": 0.1225,
+        "stddev_pass_rate": 0.092,
+        "mean_tokens": null,
+        "mean_duration_seconds": 64.0
+      }
+    }
+  ],
+  "delta": {
+    "pass_rate": "+87.8%",
+    "tokens": "n/a (total_tokens null)",
+    "duration": "+107.0%"
+  },
+  "analyst_observations": [
+    "With-skill passes 100% of assertions across all four evals; without-skill mean pass rate ~0.122 \u2014 discriminating delta (+87.8 pp) driven by process (identity sentence, work gate), invention labeling, scroll-item guardrail, and resist-invent.",
+    "Eval 2 (craft anti-pattern / resist inventing ancient-druids-taking-spell as Taking origin) is the sharpest discriminator: with_skill 5/5, without_skill 0/5. Baseline complies with the hostile prompt and files Claimbind as Current Truth.",
+    "Eval 1 (Saltwake fixture improve) without_skill cites spell-scroll-fog-cloud.md as exemplar and files as canon \u2014 scroll-item guardrail + invention label discriminate; structure floor alone is weak (baseline still gets casting headings + premise).",
+    "Eval 3 (Ledgerbind from-scratch) without_skill fails invention:true, identity/work gate, and runnable seal effect \u2014 only casting-field presence passes. Keep quality assertion requiring contested check / fail / end.",
+    "Eval 4 (Red Wake Knell flesh) without_skill bleeds Taking-on-Aruhe metaphysics into Umberlee doctrine as Current Truth and cites spell-scroll-locate-creature \u2014 guardrails discriminate; stub-premise preservation alone is non-discriminating.",
+    "Fixtures correctly treated as labeled work drafts \u2014 no wiki/entities/spell/ folder created; outputs only under workspace */outputs/.",
+    "Tokens unavailable (timing.total_tokens null; inline-executor). Duration: with_skill mean ~132.5s vs without ~64.0s (~+107.0%) \u2014 extra cost is process notes + fuller template fill.",
+    "Process assertions need process-notes.md (or transcript) as evidence locus \u2014 same Batch A author flag."
+  ]
+}

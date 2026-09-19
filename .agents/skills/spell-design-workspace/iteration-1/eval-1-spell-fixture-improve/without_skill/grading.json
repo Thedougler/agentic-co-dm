@@ -1,0 +1,65 @@
+{
+  "eval_id": 1,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identity sentence (level/school + table effect + casting signature + player choice/pressure) appears before the page draft",
+      "passed": false,
+      "evidence": "No process-notes.md / identity sentence before draft; only the page file exists."
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "passed": false,
+      "evidence": "No chat proposal/work gate; output instructs filing under wiki/entities/spell/ as campaign canon."
+    },
+    {
+      "text": "Output follows wiki/templates/spell.md structure (narration, Level/School line, Casting Time, Range, Components, Duration, effect block)",
+      "passed": true,
+      "evidence": "Has Casting Time/Range/Components/Duration and a short effect; thin narration but headings present enough to pass structure floor."
+    },
+    {
+      "text": "Frontmatter includes type: spell and required identity fields (lifecycle, reveal, campaign, visibility, level, school, ritual, summary)",
+      "passed": false,
+      "evidence": "Frontmatter missing lifecycle, reveal, visibility, ritual; incomplete identity fields."
+    },
+    {
+      "text": "Preserves fixture premise: 2nd-level illusion that hides a small craft's silhouette from distant watchers",
+      "passed": true,
+      "evidence": "Still frames 2nd-level illusion hiding boats from distant watchers."
+    },
+    {
+      "text": "Material additions beyond the fixture are labeled invention/proposed \u2014 not silent vault canon",
+      "passed": false,
+      "evidence": "No invention label; tells reader to file as campaign canon."
+    },
+    {
+      "text": "Does not cite or treat wiki/entities/item/spell-scroll-*.md pages as type: spell exemplars",
+      "passed": false,
+      "evidence": "Explicitly cites wiki/entities/item/spell-scroll-fog-cloud.md as basis for how the spell works \u2014 treats scroll item as spell exemplar."
+    },
+    {
+      "text": "Narration describes what a bystander sees/hears/feels without secrets, DCs, or unearned names",
+      "passed": false,
+      "evidence": "No bystander narration callout; mechanical blurb only."
+    },
+    {
+      "text": "Effect block is runnable in 2024 terms (saves/attacks, targets/area, duration end, scaling when applicable) and peer-anchored",
+      "passed": false,
+      "evidence": "Effect is vague 'lightly obscured' with no save/check, no concentration, no end conditions, no peer anchoring."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 7,
+    "total": 9,
+    "pass_rate": 0.2222
+  },
+  "timing": {
+    "executor_duration_seconds": 72.0,
+    "total_duration_seconds": 72.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Baseline fails process, invention, scroll-guardrail, narration, runnable effect \u2014 strong discriminator vs with_skill."
+  }
+}

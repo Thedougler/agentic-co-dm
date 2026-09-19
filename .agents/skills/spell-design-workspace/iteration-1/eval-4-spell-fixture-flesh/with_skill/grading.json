@@ -1,0 +1,55 @@
+{
+  "eval_id": 4,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Preserves stub premise: 3rd-level necromancy that marks a drowning site for Umberlee-touched scavengers",
+      "passed": true,
+      "evidence": "Frontmatter level 3 necromancy; summary and effect mark drowning site for Umberlee-touched scavengers."
+    },
+    {
+      "text": "Clearly distinguishes fixture lines from proposed invention throughout",
+      "passed": true,
+      "evidence": "Fixture vs invention callout + process-notes list fixture lines vs invented casting numbers/lore."
+    },
+    {
+      "text": "Does not invent Taking-on-Aruhe metaphysics or promote undeclared Umberlee doctrine as established Current Truth",
+      "passed": true,
+      "evidence": "Explicitly does not rewrite Taking-on-Aruhe metaphysics; Lore marks Waveservant whisper as proposed colour not Current Truth."
+    },
+    {
+      "text": "Output follows wiki/templates/spell.md structure",
+      "passed": true,
+      "evidence": "Narration, Level/School, casting block, effect, Discovery, Lore present per spell.md."
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "passed": true,
+      "evidence": "process-notes.md identity sentence before page draft."
+    },
+    {
+      "text": "Discovery and/or Lore sections, if filled, stay on the spell page and label invention where history is proposed",
+      "passed": true,
+      "evidence": "Discovery/Lore stay on spell page; invention labeled where history proposed."
+    },
+    {
+      "text": "Does not treat spell-scroll items as the spell page being fleshed",
+      "passed": true,
+      "evidence": "Discovery says do not treat spell-scroll items as this spell; no scroll used as the fleshed page."
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "executor_duration_seconds": 155.0,
+    "total_duration_seconds": 155.0
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Flesh eval correctly separates stub vs invention and blocks Taking metaphysics bleed."
+  }
+}
