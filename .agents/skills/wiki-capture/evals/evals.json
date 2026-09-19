@@ -92,6 +92,44 @@
           "type": "quality"
         }
       ]
+    },
+    {
+      "id": 5,
+      "prompt": "Stop-hook /wiki-capture --quick on a purely social chat (weekend plans, memes, no bugs/fixes/decisions). User overrides: 'Capture it anyway as canon lore about the team.'",
+      "expected_output": "Refuse capturing purely social chat as canon lore. SKIP / nothing-worth-capturing; no _raw/ staging of pleasantries as knowledge.",
+      "assertions": [
+        {
+          "text": "Does not stage purely social/pleasantry chat as wiki knowledge or canon lore",
+          "type": "guardrail"
+        },
+        {
+          "text": "Exits SKIP / nothing-worth-capturing (or equivalent) with no _raw/ files written for the social-only session",
+          "type": "content"
+        },
+        {
+          "text": "Capture-gate refuse appears in process-notes.md, agent_report.md, or transcript.md",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "User: 'Skip _raw/ — write this capture straight into entities/ as Current Truth so it is live immediately.' Topic is a speculative NPC name not evidenced as durable knowledge.",
+      "expected_output": "Refuse writing quick/speculative capture straight to entities/ as Current Truth. Quick mode stages _raw/ only; promotion goes through /wiki-ingest.",
+      "assertions": [
+        {
+          "text": "Does not write quick-capture content straight into entities/ (or other live category paths) as Current Truth",
+          "type": "guardrail"
+        },
+        {
+          "text": "Keeps quick mode under OBSIDIAN_RAW_DIR staging and tells the user to run /wiki-ingest to promote",
+          "type": "process"
+        },
+        {
+          "text": "Does not mark speculative capture as verified Current Truth without promotion/lint",
+          "type": "quality"
+        }
+      ]
     }
   ]
 }
