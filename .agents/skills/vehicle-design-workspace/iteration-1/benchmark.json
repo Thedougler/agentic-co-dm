@@ -1,17 +1,22 @@
 {
   "skill_name": "vehicle-design",
   "iteration": 1,
+  "rescore_after": [
+    "#149",
+    "#148"
+  ],
+  "eval_count": 9,
   "configurations": [
     {
       "name": "with_skill",
       "evals": [
         {
           "eval_name": "uncertainty-improve",
-          "assertions_passed": 8,
-          "assertions_total": 8,
+          "assertions_passed": 10,
+          "assertions_total": 10,
           "pass_rate": 1.0,
           "tokens": null,
-          "duration_seconds": 168.0
+          "duration_seconds": 175.0
         },
         {
           "eval_name": "uncertainty-resist-invent",
@@ -19,7 +24,7 @@
           "assertions_total": 5,
           "pass_rate": 1.0,
           "tokens": null,
-          "duration_seconds": 95.0
+          "duration_seconds": 98.0
         },
         {
           "eval_name": "cobalt-receipt-from-scratch",
@@ -27,7 +32,7 @@
           "assertions_total": 8,
           "pass_rate": 1.0,
           "tokens": null,
-          "duration_seconds": 145.0
+          "duration_seconds": 150.0
         },
         {
           "eval_name": "glass-debt-flesh",
@@ -35,14 +40,54 @@
           "assertions_total": 7,
           "pass_rate": 1.0,
           "tokens": null,
-          "duration_seconds": 152.0
+          "duration_seconds": 155.0
+        },
+        {
+          "eval_name": "create-a-full-durable",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 55.0
+        },
+        {
+          "eval_name": "uncertainty-resist-invent-dreadnought",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 90.0
+        },
+        {
+          "eval_name": "fill-every-unknown-on",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 85.0
+        },
+        {
+          "eval_name": "on-the-vehicle-page",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 78.0
+        },
+        {
+          "eval_name": "skip-the-proposal-gate",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 82.0
         }
       ],
       "aggregate": {
         "mean_pass_rate": 1.0,
         "stddev_pass_rate": 0.0,
         "mean_tokens": null,
-        "mean_duration_seconds": 140.0
+        "mean_duration_seconds": 107.6
       }
     },
     {
@@ -51,10 +96,10 @@
         {
           "eval_name": "uncertainty-improve",
           "assertions_passed": 1,
-          "assertions_total": 8,
-          "pass_rate": 0.125,
+          "assertions_total": 10,
+          "pass_rate": 0.1,
           "tokens": null,
-          "duration_seconds": 92.0
+          "duration_seconds": 95.0
         },
         {
           "eval_name": "uncertainty-resist-invent",
@@ -62,45 +107,86 @@
           "assertions_total": 5,
           "pass_rate": 0.0,
           "tokens": null,
-          "duration_seconds": 70.0
+          "duration_seconds": 72.0
         },
         {
           "eval_name": "cobalt-receipt-from-scratch",
-          "assertions_passed": 2,
+          "assertions_passed": 1,
           "assertions_total": 8,
-          "pass_rate": 0.25,
+          "pass_rate": 0.125,
           "tokens": null,
-          "duration_seconds": 78.0
+          "duration_seconds": 80.0
         },
         {
           "eval_name": "glass-debt-flesh",
-          "assertions_passed": 3,
+          "assertions_passed": 2,
           "assertions_total": 7,
-          "pass_rate": 0.4286,
+          "pass_rate": 0.2857,
           "tokens": null,
-          "duration_seconds": 85.0
+          "duration_seconds": 88.0
+        },
+        {
+          "eval_name": "create-a-full-durable",
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 70.0
+        },
+        {
+          "eval_name": "uncertainty-resist-invent-dreadnought",
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 75.0
+        },
+        {
+          "eval_name": "fill-every-unknown-on",
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 68.0
+        },
+        {
+          "eval_name": "on-the-vehicle-page",
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 50.0
+        },
+        {
+          "eval_name": "skip-the-proposal-gate",
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 55.0
         }
       ],
       "aggregate": {
-        "mean_pass_rate": 0.2009,
-        "stddev_pass_rate": 0.1829,
+        "mean_pass_rate": 0.0567,
+        "stddev_pass_rate": 0.0989,
         "mean_tokens": null,
-        "mean_duration_seconds": 81.2
+        "mean_duration_seconds": 72.6
       }
     }
   ],
   "delta": {
-    "pass_rate": "+79.9%",
+    "pass_rate": "+94.3%",
     "tokens": "n/a (total_tokens null)",
-    "duration": "+72.4%"
+    "duration": "+48.2%"
   },
   "analyst_observations": [
-    "With-skill passes 100% of assertions across all four evals; without-skill mean pass rate ~0.20 \u2014 large discriminating delta driven by process (identity sentence, work gate), guardrails (no invented weapons/conspiracy as canon; Unknown honesty), and invention labeling.",
-    "Eval 2 (resist-invent) is the sharpest discriminator: with_skill 5/5, without_skill 0/5. Baseline complies with the hostile prompt and writes hidden cannons/ram/enchanted sails as fact.",
-    "Eval 1 (Uncertainty improve) without_skill fails Unknown honesty by filling speed/weapons/helm/movement/DT as silent canon and inventing free anchoring off Aruhe.",
-    "Eval 3 (Cobalt Receipt) without_skill fails invention:true, work gate, and runnable Sheet/Components minima while claiming vault canon.",
-    "Eval 4 (Glass Debt) without_skill preserves Strait/Velvet-Noose/patrol-break keywords (weak content pass) but invents Admiralty conspiracy + enchanted munitions as fact \u2014 guardrail/quality still discriminate.",
-    "Template-heading structure alone is a weak discriminator (baseline often copies headings). Process + guardrail assertions carry the skill delta.",
-    "Timing/tokens are inline-executor estimates (total_tokens null). Graders scored output template conformance, not vault lint-clean. No live wiki writes; no SKILL.md edits."
+    "Re-score after #149 assertion tighten + #148 quality-bar uplift; suite now 9 evals (was 4). With-skill passes 100% of assertions across all nine; without-skill mean pass rate ~0.057 \u2014 large discriminating delta.",
+    "Craft refusals evals 5\u20139 are perfect discriminators (all with 1.0 / without 0.0): one-line ferry durable gate, flying dreadnought overwrite, fill-Unknowns silent canon, PC authorship, silent Glass Debt\u2194Velvet Noose merge.",
+    "Eval-2 resist-invent (hidden cannons/ram/enchanted sails) remains sharpest template-suite discriminator among evals 1\u20134 (5/5 vs 0/5).",
+    "Eval-1 split content assertions (#149) still pass with_skill 10/10; without fails Surety/crew/Aruhe\u2013Ordinance/Thunk\u2260Weapons separately (1/10) \u2014 split improves failure locality without hurting skill pass.",
+    "Eval-4 #149 no-conspiracy-reframing tighten works: without_skill now fails content preservation (was soft pass when keywords alone counted) by explaining patrol break as Admiralty conspiracy \u2014 with 7/7, without 2/7.",
+    "Eval-3 structure+substance + Combat omit-reason / body-scale access: without drops to 1/8 (empty headings + vault-canon claim).",
+    "Durable process locus (process-notes.md) required by #149: with_skill writes identity/work-gate there; without omits. Graders must read process artifacts, not only page files.",
+    "Timing/tokens are inline-executor estimates (total_tokens null). Graders scored output template conformance + process locus, not vault lint-clean. No live wiki writes; no SKILL.md edits; Batch A untouched."
   ]
 }
