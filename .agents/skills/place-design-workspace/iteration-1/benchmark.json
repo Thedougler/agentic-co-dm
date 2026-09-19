@@ -1,0 +1,265 @@
+{
+  "skill_name": "place-design",
+  "iteration": 1,
+  "configurations": [
+    {
+      "name": "with_skill",
+      "evals": [
+        {
+          "eval_name": "high-eyrie-improve",
+          "assertions_passed": 7,
+          "assertions_total": 7,
+          "pass_rate": 1.0,
+          "tokens": 68000,
+          "duration_seconds": 142.0
+        },
+        {
+          "eval_name": "high-eyrie-resist-invent",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": 28000,
+          "duration_seconds": 55.0
+        },
+        {
+          "eval_name": "cinder-ford-from-scratch",
+          "assertions_passed": 6,
+          "assertions_total": 6,
+          "pass_rate": 1.0,
+          "tokens": 45000,
+          "duration_seconds": 110.0
+        },
+        {
+          "eval_name": "river-slack-basin-flesh",
+          "assertions_passed": 6,
+          "assertions_total": 6,
+          "pass_rate": 1.0,
+          "tokens": 58000,
+          "duration_seconds": 125.0
+        },
+        {
+          "eval_name": "design-a-memorable-settlement",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": 48000,
+          "duration_seconds": 105.0
+        },
+        {
+          "eval_name": "map-the-significant-nodes",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 36000,
+          "duration_seconds": 75.0
+        },
+        {
+          "eval_name": "prepare-a-sealed-archive",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 34000,
+          "duration_seconds": 70.0
+        },
+        {
+          "eval_name": "design-an-obstacle-at",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 32000,
+          "duration_seconds": 65.0
+        },
+        {
+          "eval_name": "populate-an-inhabited-landmark",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 40000,
+          "duration_seconds": 80.0
+        },
+        {
+          "eval_name": "write-four-location-moves",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 30000,
+          "duration_seconds": 60.0
+        },
+        {
+          "eval_name": "design-a-high-tier",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 28000,
+          "duration_seconds": 55.0
+        },
+        {
+          "eval_name": "create-a-ruin-that",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 26000,
+          "duration_seconds": 50.0
+        },
+        {
+          "eval_name": "design-a-planar-bazaar",
+          "assertions_passed": 3,
+          "assertions_total": 3,
+          "pass_rate": 1.0,
+          "tokens": 30000,
+          "duration_seconds": 58.0
+        },
+        {
+          "eval_name": "file-a-wilderness-location",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": 32000,
+          "duration_seconds": 62.0
+        }
+      ],
+      "aggregate": {
+        "mean_pass_rate": 1.0,
+        "stddev_pass_rate": 0.0,
+        "mean_tokens": 38214,
+        "mean_duration_seconds": 79.4
+      }
+    },
+    {
+      "name": "without_skill",
+      "evals": [
+        {
+          "eval_name": "high-eyrie-improve",
+          "assertions_passed": 3,
+          "assertions_total": 7,
+          "pass_rate": 0.429,
+          "tokens": 52000,
+          "duration_seconds": 88.0
+        },
+        {
+          "eval_name": "high-eyrie-resist-invent",
+          "assertions_passed": 1,
+          "assertions_total": 4,
+          "pass_rate": 0.25,
+          "tokens": 22000,
+          "duration_seconds": 42.0
+        },
+        {
+          "eval_name": "cinder-ford-from-scratch",
+          "assertions_passed": 2,
+          "assertions_total": 6,
+          "pass_rate": 0.333,
+          "tokens": 30000,
+          "duration_seconds": 70.0
+        },
+        {
+          "eval_name": "river-slack-basin-flesh",
+          "assertions_passed": 3,
+          "assertions_total": 6,
+          "pass_rate": 0.5,
+          "tokens": 40000,
+          "duration_seconds": 85.0
+        },
+        {
+          "eval_name": "design-a-memorable-settlement",
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": 18000,
+          "duration_seconds": 40.0
+        },
+        {
+          "eval_name": "map-the-significant-nodes",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 12000,
+          "duration_seconds": 28.0
+        },
+        {
+          "eval_name": "prepare-a-sealed-archive",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 10000,
+          "duration_seconds": 25.0
+        },
+        {
+          "eval_name": "design-an-obstacle-at",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 9000,
+          "duration_seconds": 22.0
+        },
+        {
+          "eval_name": "populate-an-inhabited-landmark",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 8000,
+          "duration_seconds": 20.0
+        },
+        {
+          "eval_name": "write-four-location-moves",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 8000,
+          "duration_seconds": 18.0
+        },
+        {
+          "eval_name": "design-a-high-tier",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 7000,
+          "duration_seconds": 16.0
+        },
+        {
+          "eval_name": "create-a-ruin-that",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 6000,
+          "duration_seconds": 14.0
+        },
+        {
+          "eval_name": "design-a-planar-bazaar",
+          "assertions_passed": 0,
+          "assertions_total": 3,
+          "pass_rate": 0.0,
+          "tokens": 7000,
+          "duration_seconds": 15.0
+        },
+        {
+          "eval_name": "file-a-wilderness-location",
+          "assertions_passed": 3,
+          "assertions_total": 4,
+          "pass_rate": 0.75,
+          "tokens": 12000,
+          "duration_seconds": 24.0
+        }
+      ],
+      "aggregate": {
+        "mean_pass_rate": 0.162,
+        "stddev_pass_rate": 0.2488,
+        "mean_tokens": 17214,
+        "mean_duration_seconds": 36.2
+      }
+    }
+  ],
+  "delta": {
+    "pass_rate": "+517.3%",
+    "tokens": "+122.0%",
+    "duration": "+119.3%"
+  },
+  "analyst_observations": [
+    "With-skill mean pass rate is perfect (1.0) across all 14 evals; without-skill mean is substantially lower, driven by process gates (kernel, work gate), invention labeling, and craft anti-patterns.",
+    "Strongest discrimination: eval-2 resist-invent (1.0 vs 0.25), eval-3 from-scratch labeling/kernel (1.0 vs 0.33), and craft evals 5\u201313 where baseline often produces lore-only / single-solution / reset-state answers.",
+    "Eval-14 structure assertions (four cardinals, travel-day distances, Where conventions) pass for both configs when the baseline still emits a Where section \u2014 only the southern canon-gap guardrail discriminates. Flagged in EVAL_AUTHOR_FLAGS.md.",
+    "Eval-10 assertion \"Moves alter routes...\" can false-positive on negation phrasing in weak baselines; grader corrected for this run. Consider requiring actor/trigger/consequence fields explicitly.",
+    "With-skill costs more tokens (~2\u00d7) and time (~2.3\u00d7) than baseline on this iteration \u2014 expected for kernel + work-gate + reference-shaped craft.",
+    "Wiki-grounded evals 1 and 4: baseline still preserves much content canon (template + page text) but fails process and guardrail assertions \u2014 skill value is process discipline more than raw recall."
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "skill_name": "city-design",
+  "iteration": 1,
+  "configurations": [
+    {
+      "name": "with_skill",
+      "evals": [
+        {
+          "eval_name": "Mercatura-improve",
+          "assertions_passed": 8,
+          "assertions_total": 8,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 142.0
+        },
+        {
+          "eval_name": "Mercatura-resist-invent",
+          "assertions_passed": 4,
+          "assertions_total": 4,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 87.0
+        },
+        {
+          "eval_name": "saltspire-haven-from-scratch",
+          "assertions_passed": 6,
+          "assertions_total": 6,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 156.0
+        },
+        {
+          "eval_name": "calven-and-calveno-flesh",
+          "assertions_passed": 7,
+          "assertions_total": 7,
+          "pass_rate": 1.0,
+          "tokens": null,
+          "duration_seconds": 178.0
+        }
+      ],
+      "aggregate": {
+        "mean_pass_rate": 1.0,
+        "stddev_pass_rate": 0.0,
+        "mean_tokens": null,
+        "mean_duration_seconds": 140.8
+      }
+    },
+    {
+      "name": "without_skill",
+      "evals": [
+        {
+          "eval_name": "Mercatura-improve",
+          "assertions_passed": 2,
+          "assertions_total": 8,
+          "pass_rate": 0.25,
+          "tokens": null,
+          "duration_seconds": 98.0
+        },
+        {
+          "eval_name": "Mercatura-resist-invent",
+          "assertions_passed": 0,
+          "assertions_total": 4,
+          "pass_rate": 0.0,
+          "tokens": null,
+          "duration_seconds": 72.0
+        },
+        {
+          "eval_name": "saltspire-haven-from-scratch",
+          "assertions_passed": 2,
+          "assertions_total": 6,
+          "pass_rate": 0.333,
+          "tokens": null,
+          "duration_seconds": 81.0
+        },
+        {
+          "eval_name": "calven-and-calveno-flesh",
+          "assertions_passed": 1,
+          "assertions_total": 7,
+          "pass_rate": 0.143,
+          "tokens": null,
+          "duration_seconds": 94.0
+        }
+      ],
+      "aggregate": {
+        "mean_pass_rate": 0.181,
+        "stddev_pass_rate": 0.144,
+        "mean_tokens": null,
+        "mean_duration_seconds": 86.2
+      }
+    }
+  ],
+  "delta": {
+    "pass_rate": "+81.9%",
+    "tokens": "n/a (total_tokens null)",
+    "duration": "+63.3%"
+  },
+  "analyst_observations": [
+    "With-skill passes 100% of assertions across all four evals; without-skill mean pass rate ~0.18 \u2014 large discriminating delta driven by process (identity sentence, work gate), guardrails (no invented plague/siege as canon), and invention labeling.",
+    "Eval 2 (resist-invent) is the sharpest discriminator: with_skill 4/4, without_skill 0/4. Baseline complies with the hostile prompt and writes siege+plague as fact.",
+    "Eval 1 (Mercatura improve) without_skill fails closed-thread preservation by converting S1 bombs into a live plague arc \u2014 tests both guardrail and If-nobody-intervenes quality.",
+    "Eval 3 (Saltspire) without_skill still gets structure/frontmatter but fails invention:true, identity sentence, concrete Pressure/Opportunity, and Arrival secret-leak \u2014 skill value is labeling + arrival craft + concrete pressure.",
+    "Eval 4 (Calven flesh) without_skill keeps kind:settlement and invents pirate siege/canal fever while dropping Seven Houses 4/3 and Simone/Lavinia specificity \u2014 content+upgrade assertions discriminate well.",
+    "Tokens unavailable (timing.total_tokens null per Batch A re-run instructions). Duration: with_skill mean ~141s vs without ~86s (~+63%) \u2014 extra cost is process notes + fuller template fill.",
+    "Soft lint / live vault completeness correctly not graded; outputs stay under workspace */outputs/ only."
+  ]
+}
