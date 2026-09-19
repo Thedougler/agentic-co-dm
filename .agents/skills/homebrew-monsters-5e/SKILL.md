@@ -8,9 +8,9 @@ description: Research, design, reskin, balance, audit, and revise monsters for t
 File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Success criteria
-- The monster has a memorable fiction signature, a readable role, counterplay, and a reason to exist in this encounter.
-- A custom combat feature (ability, phase shift, legendary action, or equivalent tell added or rewritten) communicates lore, origin, or stakes a second person can state. Number-only features are incomplete.
-- A substantial homebrew rewrite (changes how the creature acts, not a light reskin) names the plot or character beat it manifests. Difficulty-only is incomplete.
+- The monster has a memorable **fiction signature**, a readable role, counterplay, and a reason to exist in this encounter.
+- A custom combat feature communicates lore, origin, or stakes a second person can state. Number-only features are incomplete.
+- A substantial homebrew names the plot or character beat it manifests. Difficulty-only is incomplete.
 - Stock published opposition used unchanged does not need custom features. An explicit DM request for a stock or featureless fight overrides.
 - Mechanics use legal 2024/2025 notation, are internally consistent, calibrated against peers, and runnable without hidden arithmetic.
 - Output gives the DM decisions to make, not a pile of abilities. Prefer delete and clarify.
@@ -26,7 +26,7 @@ Briefly gather tier, party size, intended difficulty, environment, role, signatu
 Before a deliberate homebrew, use `references/reference-gate.md`: inspect one official numerical peer, one role peer, and one mechanic peer (one creature may cover multiple; use at least two independent designs). Summarize patterns in a dossier. Then use `references/chassis-and-budget.md` and `references/audit-and-revise.md`.
 
 ## Define the monster before numbers
-Write one sentence: “This is a [fantasy] [role] that [signature] to pursue [goal], fears [fear], and gives players [counterplay].” Then fill **Fantasy / Signature / Goal / Fear / Counterplay / Proof**. Proof is the observable tell that makes the signature fair.
+Write one sentence: "This is a [fantasy] [role] that [signature] to pursue [goal], fears [fear], and gives players [counterplay]." Then fill **Fantasy / Signature / Goal / Fear / Counterplay / Proof**. Proof is the observable **tell** that makes the signature fair.
 
 ## Assign a combat role
 Use one primary role. Add a secondary only when complexity is justified. Rank (minion / standard / elite / solo or legendary) is separate from role.
@@ -46,20 +46,15 @@ First turn and default choice must reveal the primary role.
 ## Decision loop
 For every signature feature write **Tell → Threat → Responses → Payoff**. Tell is a visible cue; Threat is what happens if ignored; Responses are at least two viable player answers; Payoff is the benefit, with a cost or opening. Remove features with no response or payoff.
 
-## Numerical chassis: trade, do not stack
-Set rank/CR, PB, AC, HP, attack/DC, damage, speed, and saves from the peer dossier. Use formulas and benchmarks in `references/chassis-and-budget.md`; keep one strong axis, one support axis, and a meaningful weakness. Do not stack high AC, HP, broad resistances, immunities, control, damage, and mobility merely because each looks reasonable alone.
+## Numerical chassis and encounter design
+Read `references/chassis-and-budget.md` for formulas, PB table, trade rules, three-round offense script, defense checklist, action-economy packages (standard / elite / solo), legendary actions, action-oriented phases, and bloodied transitions. The core principles:
 
-- **Three-round offense:** script likely first three rounds, including setup, misses, recharge, reactions, legendary/off-turn actions, and targets. Compare output and control to peers.
-- **Defense honesty:** audit effective HP, avoidance, mitigation, saves, immunities, regeneration, healing, and escape together. Every unusual defense needs a bypass, tell, resource, or trade.
-- Conditions should create choices or a clock. Prefer slowed movement, narrow disadvantage, exposed positions, resource pressure, or repeat saves over turn deletion. Never spam hard conditions without counterplay.
+- **Trade, do not stack.** One strong axis, one support axis, a meaningful weakness. Do not stack high AC, HP, broad resistances, immunities, control, damage, and mobility.
+- **Three-round honesty.** Script likely first three rounds including setup, misses, recharge, reactions, legendary/off-turn actions. Compare output and control to peers.
+- **Defense bypass.** Every unusual defense needs a bypass, tell, resource, or trade. Conditions should create choices or a clock — prefer slowed movement, narrow disadvantage, exposed positions, or repeat saves over turn deletion.
+- **Lightning rods.** Do not solve solo play with inflated AC/HP alone. Use fragile burst targets, expendable lieutenants, terrain objectives, visible hazards — so the party's best features work somewhere. Leave immunities blank unless fiction and encounter justify them.
 
-## Action economy and encounter use
-- **Standard:** reliable action or Multiattack; one signature or situational action; zero or one Bonus Action or Reaction.
-- **Elite:** more durability or one defensive resource; reliable action plus signature; a Reaction, Bonus Action, or limited off-turn presence; allies or environmental support. Do not simply double every statistic.
-- **Solo/legendary:** participate between character turns via Legendary Actions (3 uses/round; each expends one use; options return at start of turn — SRD 5.2.1), Legendary Resistance, Reaction/Bonus Action, lair/terrain, minions, or action-oriented villain phases (Position → Pressure → Desperation). Rate-limit the strongest Legendary Action. Bloodied (≤ half HP) should change decisions, not only add damage.
-Do not solve solo play with inflated AC/HP alone. Use lightning rods — groups of weak creatures, fragile burst targets, reachable artillery, expendable lieutenants, visible hazards — so the party's best features work somewhere. Leave immunities blank unless fiction and encounter justify them.
-
-Integrate objective, terrain, allies (usually two or three complementary types), reinforcements, escape, and failure states other than TPK. Trap counterplay must not depend on one check.
+Integrate objective, terrain, allies, reinforcements, escape, and failure states other than TPK. Trap counterplay must not depend on one check.
 
 ## 2024 notation
 Use `DC 15`; `+7 to hit`; `Hit: 11 (2d8 + 2) damage`; `Recharge 5–6`; `1/Day`; `Speed 30 feet`; `PB +3`; explicit save/repeat timing; and clear shapes, ranges, targets, durations, and triggers. Label any 2014 recalibration. Statblock YAML keeps that 5e fence phrasing. Wiki-body checks and saves outside the fence use the at-table grammar in `obsidian-markdown`.
@@ -76,10 +71,14 @@ Use `DC 15`; `+7 to hit`; `Hit: 11 (2d8 + 2) damage`; `Recharge 5–6`; `1/Day`;
 
 ## Wiki note structure
 
+Read `references/stat-block-template.md` for the full statblock template, 2024 notation examples, and the design-to-wiki field mapping.
+
 Two paths depending on whether the creature has a personal identity:
 
 ### Standalone creature → `wiki/templates/creature.md`
-Pass on creature jobs in `wiki/AGENTS.md` Layout: look, runnable sheet, life, hunt. Copy the template as a scaffold. Visual reference omit-if-empty. Column density is allowed. Frontmatter includes `region` alongside standard fields. `wiki/_raw/Bloodhawk.md`, `wiki/_raw/Deerstalker.md`, and `wiki/_raw/Wolfrabbit.md` illustrate density.
+Pass on creature jobs in `wiki/AGENTS.md` Layout: look, runnable sheet, life, hunt. Copy the template as a scaffold. Visual reference omit-if-empty. Column density is allowed. Frontmatter includes `region` alongside standard fields.
+
+Exemplars: `wiki/entities/creature/bloodhawk.md` (aerial skirmisher, pounce-and-haul loop), `wiki/entities/creature/spiguar.md` (grass ambusher, drag-into-cover loop).
 
 **Life** answers habitat (ground it uses and ground it refuses when that refusal is true), habits, diet, social. Shut-downs MUST be things the party can do.
 
@@ -94,10 +93,10 @@ When the creature has a name, history, relationships, and a personal identity, s
 
 - State an **encounter rule** before the statblocks: the fiction condition that selects which block to use.
 - One statblock per stage or form, keyed to fiction conditions (memorial damage, pact state, betrayal), not HP thresholds alone.
-Exemplar: `wiki/shattered-sea/npcs/Aruhe - Hinewai` (three staged statblocks keyed to Death Bloom condition).
-- Behavior and Tactics fields fold into the NPC's `## Running` section instead of standalone `## Behavior` / `## Tactics` sections.
 
-Exemplar: `wiki/shattered-sea/npcs/Aruhe - Hinewai` (three staged statblocks keyed to Death Bloom condition).
+Exemplar: `wiki/entities/npc/Hinewai.md` (three staged statblocks keyed to Death Bloom condition).
+
+- Behavior and Tactics fields fold into the NPC's `## Running` section instead of standalone `## Behavior` / `## Tactics` sections.
 
 ## Handoffs
 - **dnd5e-mechanics**: which save or check a feature uses; chassis still owns the DC number.
@@ -105,4 +104,3 @@ Exemplar: `wiki/shattered-sea/npcs/Aruhe - Hinewai` (three staged statblocks key
 - **dungeon-design**: sites, rooms, hazards, terrain, and encounter architecture.
 - **session-beats**: reveal, escalation, pacing, and scene timing.
 - **qmd-retrieval**: campaign-vault retrieval; do not invent missing canon.
-
