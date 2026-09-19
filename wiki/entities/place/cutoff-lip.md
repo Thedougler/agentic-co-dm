@@ -1,5 +1,4 @@
 ---
----
 title: Cutoff Lip
 category: entities
 tags: [shattered-sea, aruhe, place]

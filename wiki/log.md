@@ -762,3 +762,4 @@ title: Wiki Log
 - [2026-09-19T05:53:35Z] LINT_REPAIR scope=full-vault pages_repaired=6 osset_alias_collision_recorded=e-55 vale_dc_emdash_recorded=e-56 remaining="427 missing campaign-place owners; 234 template_conformance (disallowed callouts and 15 factions missing required sections); 10 fragmented_tags; 6 long_summary" identity=resolved
 - [2026-09-19T06:27:03Z] LINT_REPAIR e-54_to_e-60 pytest=scripts/run-pytest ranked_links=canonical_over_alias vale_check_token_ignore=true staging_retired=true promoted="entities/npc/varn.md,journal/sessions/shattered-sea/11/Session-11-Transcript.md"
 - [2026-09-19T07:44:23Z] LINT_FIX exemplar_repair aruhe OpenStrait→central-strait-crossing; calven provenance→tessarine-concordat (Eval Author Phase 2)
+- [2026-09-19T07:48:41Z] LINT_FIX soft-clean batch-a: river-slack-basin+cutoff-lip single YAML opener; calven-and-calveno summary<=200

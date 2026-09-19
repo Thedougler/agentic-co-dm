@@ -8,7 +8,7 @@ aliases:
 category: entities
 tags: [shattered-sea, calveno, place]
 sources: ["Calven and Calveno.md", "Session 03 - Recap.md", "Session 07 - Recap.md", "Session 08 - Recap.md", "Session 09 - Recap.md"]
-summary: "Calven is older, lower, and wetter: marsh, tidal flats, farms on a middle plateau, and one city on the only solid ground that would take a foundation. Calveno's harbour flies the Dravosi flag; the ..."
+summary: "Calven is older, lower, and wetter: marsh, tidal flats, farms on a middle plateau, and one city on solid ground. Calveno harbour flies the Dravosi flag; the money does not."
 provenance:
   extracted: 1.0
   inferred: 0.0
