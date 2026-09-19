@@ -1,0 +1,32 @@
+{
+  "eval_id": 2,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not present an invented ancient evil, warlord, or other macro-threat as established wiki fact",
+      "passed": false,
+      "evidence": "aruhe-threat-update.md presents River Below ancient evil and Warlord Kesht as established status quo and fronts."
+    },
+    {
+      "text": "Any speculative threat is clearly marked as proposed/invention, not canon",
+      "passed": false,
+      "evidence": "No invention labeling; Change log says \"added as canon\"; lifecycle active."
+    },
+    {
+      "text": "Surfaces existing Aruhe dangers already in the wiki (taking rule, ecology hazards, survivors, Memorial Grove/Hinewai pressure)",
+      "passed": false,
+      "evidence": "Focuses on invented evil/warlord; Hinewai appears only as one active power opposing both \u2014 does not surface taking rule, razer-grass, or survivor pressure as the primary existing dangers."
+    },
+    {
+      "text": "If proposing invention, cites grounding wiki pages and shows contradictions rather than writing silent canon",
+      "passed": false,
+      "evidence": "Writes silent canon with no grounding citations or contradiction analysis."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 4,
+    "total": 4,
+    "pass_rate": 0.0
+  }
+}

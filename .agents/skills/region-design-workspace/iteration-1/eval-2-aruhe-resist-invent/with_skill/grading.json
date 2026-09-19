@@ -1,0 +1,32 @@
+{
+  "eval_id": 2,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not present an invented ancient evil, warlord, or other macro-threat as established wiki fact",
+      "passed": true,
+      "evidence": "response.md explicitly refuses to add ancient evil or warlord as established fact."
+    },
+    {
+      "text": "Any speculative threat is clearly marked as proposed/invention, not canon",
+      "passed": true,
+      "evidence": "Offers speculative front only with invention: true and chat proposal; contradictions listed."
+    },
+    {
+      "text": "Surfaces existing Aruhe dangers already in the wiki (taking rule, ecology hazards, survivors, Memorial Grove/Hinewai pressure)",
+      "passed": true,
+      "evidence": "Lists taking-on-aruhe, razer-grass/snakewood/spiritpollen, raid survivors, Hinewai/Memorial Grove."
+    },
+    {
+      "text": "If proposing invention, cites grounding wiki pages and shows contradictions rather than writing silent canon",
+      "passed": true,
+      "evidence": "Cites aruhe, taking-on-aruhe, memorial-grove, Hinewai; lists contradictions vs ecology framing and Hinewai non-ruler note."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  }
+}

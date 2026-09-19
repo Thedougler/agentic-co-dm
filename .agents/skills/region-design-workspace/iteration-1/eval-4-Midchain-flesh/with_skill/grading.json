@@ -1,0 +1,42 @@
+{
+  "eval_id": 4,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Preserves Midchain's established island/free-port character and named links (e.g. Aruhe, Sparhold, Verdant Teeth where already present)",
+      "passed": true,
+      "evidence": "Character crowded free ports; links Verdant Teeth, Sparhold, Aruhe, Central Strait, Karath near-edge preserved."
+    },
+    {
+      "text": "Clearly distinguishes established canon from proposed invention throughout",
+      "passed": true,
+      "evidence": "Canon vs invention table; Fronts warn occupation war not established; rumors mark occupation fear as invention if asserted as fact."
+    },
+    {
+      "text": "Output follows wiki/templates/region.md structure rather than leaving only a five-sentence kernel",
+      "passed": true,
+      "evidence": "Full region.md sections; kernel content absorbed into At a Glance / truths / travel \u2014 not left as sole body."
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "passed": true,
+      "evidence": "agent_report.md identity sentence before draft."
+    },
+    {
+      "text": "Does not present a new occupation war, plague, or macro-front as established wiki fact",
+      "passed": true,
+      "evidence": "Explicitly forbids occupation war as silent canon; fronts limited to page tensions / trajectory stake."
+    },
+    {
+      "text": "Current state / routes are runnable for travel prep, not only atmosphere",
+      "passed": true,
+      "evidence": "Routes table with time/cost/risk/advantage; current state lists trail, pressures, next visible change."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  }
+}

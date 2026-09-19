@@ -1,0 +1,52 @@
+{
+  "eval_id": 1,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identity sentence appears before the page draft",
+      "passed": true,
+      "evidence": "agent_report.md states identity sentence before draft: regional wilderness island\u2026 route choices\u2026 changeable by Hinewai grief-preservation."
+    },
+    {
+      "text": "Shows a chat proposal / work gate before writing under wiki/",
+      "passed": true,
+      "evidence": "agent_report.md Work gate: proposal awaiting DM acceptance; outputs only under workspace."
+    },
+    {
+      "text": "Output follows wiki/templates/region.md structure (Narration, At a Glance, Current state, Geography/Travel or Key places)",
+      "passed": true,
+      "evidence": "aruhe.md has [!narration], At a Glance table, Current state, Geography, Travel, Key places."
+    },
+    {
+      "text": "Frontmatter includes type: region and scale/kind/summary fields expected by region.md / contracts/region.yml",
+      "passed": true,
+      "evidence": "type: region; scale: regional; kind: wilderness; summary present."
+    },
+    {
+      "text": "Slack Basin, Cutoff Lip, and Print Braid appear with roles matching their wiki pages (claimed backwater; Quiet\u2013grassland seam; print strands toward Spoke Ring)",
+      "passed": true,
+      "evidence": "Landmarks/Key places: Slack Basin claimed backwater/otter ownership; Cutoff Lip Quiet\u2013grassland seam; Print Braid strands toward Spoke Ring."
+    },
+    {
+      "text": "Hazards/ecology reference established taking-on-aruhe and/or razer-grass rather than inventing a new regional threat system",
+      "passed": true,
+      "evidence": "Pressure and encounter ecology cite taking-on-aruhe and razer-grass; no new threat system."
+    },
+    {
+      "text": "Does not invent an ancient evil, warlord invasion, or other macro-threat absent from the wiki as canon",
+      "passed": true,
+      "evidence": "Explicitly: Pressure none other established; do not invent warlord or buried evil as canon."
+    },
+    {
+      "text": "DM thesis states table function (route choices / who can change the region), not encyclopedia lore",
+      "passed": true,
+      "evidence": "DM thesis: choosing how far inland on band-scale routes under taking ecology \u2014 not inventing a new regional war."
+    }
+  ],
+  "summary": {
+    "passed": 8,
+    "failed": 0,
+    "total": 8,
+    "pass_rate": 1.0
+  }
+}

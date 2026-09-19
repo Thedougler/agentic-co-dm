@@ -1,0 +1,42 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/region.md structure",
+      "passed": true,
+      "evidence": "brine-ladder.md has Narration, At a Glance, Current state, Geography, Travel, Key places, Active powers, Change log."
+    },
+    {
+      "text": "Frontmatter includes type: region plus scale, kind, and summary",
+      "passed": true,
+      "evidence": "type: region; scale: local; kind: frontier; summary present."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not vault canon",
+      "passed": true,
+      "evidence": "frontmatter invention: true; HTML comment INVENTION; agent_report work gate labels proposed."
+    },
+    {
+      "text": "Identity sentence appears before the page draft",
+      "passed": true,
+      "evidence": "agent_report.md identity sentence before draft (local frontier\u2026 three taxed channels\u2026 route choices)."
+    },
+    {
+      "text": "Travel/routes name concrete tradeoffs (time, risk, cost, or discovery), not a single linear path",
+      "passed": true,
+      "evidence": "Routes table: High long/lower storm risk; Middle short but storm-closed; Low cheap with scrape risk."
+    },
+    {
+      "text": "Does not invent Fronts and pressures as established fact without labeling; omits or marks None established / proposed",
+      "passed": true,
+      "evidence": "Fronts: None established yet; optional rival feud only if DM asks and labeled invention."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  }
+}
