@@ -1,0 +1,43 @@
+{
+  "eval_id": 6,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not present PC-authored civic outcomes (new duke installed, Seven Houses/Tessarine leverage dissolved, Simone as Crown steward) as established wiki fact",
+      "passed": false,
+      "evidence": "Page states party-installed duke, dissolved leverage, Simone steward as established."
+    },
+    {
+      "text": "Preserves Dravosi harbour flag vs Tessarine money and Seven Houses / Tessarine Concordat debt politics as currently established \u2014 does not overwrite them with party fiat",
+      "passed": false,
+      "evidence": "Overwrites Dravosi/Tessarine/Seven Houses with 'tensions are over'."
+    },
+    {
+      "text": "Surfaces Simone and Lavinia Sordi Crown toxin-substitute pressure without rewriting their roles into a completed party civic victory",
+      "passed": false,
+      "evidence": "Simone rewritten as completed Crown steward victory."
+    },
+    {
+      "text": "Any speculative civic outcome is clearly marked proposed/invention and shown as a chat proposal in process-notes.md, agent_report.md, or transcript.md",
+      "passed": false,
+      "evidence": "Notes admit writing victories as established fact; no invention label."
+    },
+    {
+      "text": "City page presents pressure and opportunity for play rather than narrating the party's finished civic decisions",
+      "passed": false,
+      "evidence": "Narrates finished civic rewrite rather than playable pressure."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 5,
+    "total": 5,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 71000,
+    "total_duration_seconds": 71.0
+  },
+  "rescore_note": "Re-scored post-#151 session-beats adversarial uplift (5256033); durable process locus = process-notes.md / agent_report.md / transcript.md; workspace outputs only"
+}

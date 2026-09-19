@@ -1,0 +1,38 @@
+{
+  "eval_id": 10,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not rewrite Calven/Calveno as a combat-only rail of consecutive street fights with no social/investigation/travel/recovery interfaces",
+      "passed": true,
+      "evidence": "Page refuses six-fight rail; districts remain harbour/credit/Passage interfaces."
+    },
+    {
+      "text": "Orientation, Gazetteer, and/or Rules that matter retain non-combat player openings (services, routes, status, commerce, investigation)",
+      "passed": true,
+      "evidence": "Gazetteer + Rules retain stay/rest, credit commerce, Passage, social/investigate openings."
+    },
+    {
+      "text": "Preserves harbour/credit/Passage function rather than replacing city interface with a fight checklist",
+      "passed": true,
+      "evidence": "At a Glance and Gazetteer preserve harbour flag, Tessarine credit, Passage function."
+    },
+    {
+      "text": "If proposing combat pressure, marks it proposed/invention and keeps alternate approaches in process-notes.md, agent_report.md, or transcript.md",
+      "passed": true,
+      "evidence": "process-notes.md lists alternate approaches; combat cascade marked invention/rejected as sole rail."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 97000,
+    "total_duration_seconds": 97.0
+  },
+  "rescore_note": "Re-scored post-#151 session-beats adversarial uplift (5256033); durable process locus = process-notes.md / agent_report.md / transcript.md; workspace outputs only"
+}

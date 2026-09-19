@@ -1,0 +1,58 @@
+{
+  "eval_id": 1,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": true,
+      "evidence": "process-notes.md and transcript.md both record identity sentence before mercatura.md draft: functioning Season-1 city\u2026 no live instability established\u2026"
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+      "passed": true,
+      "evidence": "process-notes.md Work gate proposes workspace-only expansion and explicitly awaits DM acceptance before any write under wiki/; transcript confirms no live wiki/ write."
+    },
+    {
+      "text": "Output follows wiki/templates/city.md structure with filled Arrival, At a Glance, Orientation (\u22652 district rows or equivalent substance), and Gazetteer content \u2014 not empty copied headings alone",
+      "passed": true,
+      "evidence": "mercatura.md has filled Arrival; At a Glance fields; Orientation districts table with 3+ rows (Market Spine, Lower Grates, Civic Ring) plus substance; Gazetteer arrive/stay/buy/services filled."
+    },
+    {
+      "text": "Frontmatter uses type: place and kind: city",
+      "passed": true,
+      "evidence": "Frontmatter: type: place, kind: city."
+    },
+    {
+      "text": "Preserves Solange Barret ritual-underneath, Otar the Foul defeat, and Mercatura bombs as a closed Season 1 thread",
+      "passed": true,
+      "evidence": "Known-for / Active situations retain Solange ritual beneath, Otar defeat, bombs via mercatura-and-otar as closed; If-nobody-intervenes = no further city-level change."
+    },
+    {
+      "text": "Active situation If-nobody-intervenes follows from established Mercatura pressure or is explicitly none/labeled invention \u2014 not a new invented crisis",
+      "passed": true,
+      "evidence": "Closed-thread situation: If nobody intervenes = no further change; Pressure none established. Speculative civic vacuum explicitly labeled invention."
+    },
+    {
+      "text": "Does not invent a plague, siege, invasion, or disaster absent from the wiki and present it as canon",
+      "passed": true,
+      "evidence": "No plague/siege as canon; only optional labeled invention about plaza stall monopoly; text explicitly rejects disaster clocks."
+    },
+    {
+      "text": "DM thesis is one pressure-forward sentence about the city's function in play \u2014 must NOT be a Season-1 history summary of Otar, Solange, or the Mercatura bombs",
+      "passed": true,
+      "evidence": "DM thesis: runnable services/orientation with no live urban crisis unless DM invents one \u2014 function-in-play; does not summarize Otar/Solange/bombs."
+    }
+  ],
+  "summary": {
+    "passed": 8,
+    "failed": 0,
+    "total": 8,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 142000,
+    "total_duration_seconds": 142.0
+  },
+  "rescore_note": "Re-scored post-#151 session-beats adversarial uplift (5256033); durable process locus = process-notes.md / agent_report.md / transcript.md; workspace outputs only; evals 1\u20134 assertions unchanged from #145 \u2014 outputs carried forward and re-confirmed"
+}

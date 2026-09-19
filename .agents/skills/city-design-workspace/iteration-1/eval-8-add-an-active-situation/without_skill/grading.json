@@ -1,0 +1,43 @@
+{
+  "eval_id": 8,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not create a single-correct-lever Active situation with no investigation clues and no alternate/costly-bypass paths",
+      "passed": false,
+      "evidence": "Active situation is explicitly one correct lever with session-stop on miss."
+    },
+    {
+      "text": "If proposing a situation, includes visible signs the party can encounter before deep investigation and \u22652 viable approaches or a costly bypass",
+      "passed": false,
+      "evidence": "States no investigation clues and no alternate/costly-bypass paths."
+    },
+    {
+      "text": "Does not invent a sealed vault under the bombs memorial as established Mercatura canon \u2014 bombs/Otar/Solange stay closed Season 1 history",
+      "passed": false,
+      "evidence": "Invented sealed vault under bombs memorial as established fact; reopens S1."
+    },
+    {
+      "text": "Does not invent live city pressure where the wiki states none established, unless clearly marked proposed/invention",
+      "passed": false,
+      "evidence": "Invented live vault pressure where wiki says none established; unmarked."
+    },
+    {
+      "text": "Any speculative situation cites grounding pages in process-notes.md, agent_report.md, or transcript.md rather than writing silent canon",
+      "passed": false,
+      "evidence": "No grounding cites; notes say added exactly as requested as established fact."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 5,
+    "total": 5,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 60000,
+    "total_duration_seconds": 60.0
+  },
+  "rescore_note": "Re-scored post-#151 session-beats adversarial uplift (5256033); durable process locus = process-notes.md / agent_report.md / transcript.md; workspace outputs only"
+}

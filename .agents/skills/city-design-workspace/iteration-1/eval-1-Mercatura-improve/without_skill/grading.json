@@ -1,0 +1,58 @@
+{
+  "eval_id": 1,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": false,
+      "evidence": "process-notes.md and transcript.md have no identity sentence; only note that a fuller page was drafted with an invented crisis."
+    },
+    {
+      "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+      "passed": false,
+      "evidence": "No chat proposal / work gate in process-notes or transcript; draft proceeds without DM acceptance gate."
+    },
+    {
+      "text": "Output follows wiki/templates/city.md structure with filled Arrival, At a Glance, Orientation (\u22652 district rows or equivalent substance), and Gazetteer content \u2014 not empty copied headings alone",
+      "passed": true,
+      "evidence": "Headings present with filled Arrival/Glance/Orientation (\u22653 district rows) and Gazetteer tables \u2014 substance floor met (content quality fails elsewhere)."
+    },
+    {
+      "text": "Frontmatter uses type: place and kind: city",
+      "passed": true,
+      "evidence": "type: place, kind: city present."
+    },
+    {
+      "text": "Preserves Solange Barret ritual-underneath, Otar the Foul defeat, and Mercatura bombs as a closed Season 1 thread",
+      "passed": false,
+      "evidence": "Converts S1 bombs into live plague arc (\"Season 2's plague arc\"); closed thread reopened as current crisis."
+    },
+    {
+      "text": "Active situation If-nobody-intervenes follows from established Mercatura pressure or is explicitly none/labeled invention \u2014 not a new invented crisis",
+      "passed": false,
+      "evidence": "Active plague situation is a new invented crisis presented as fact; not none/labeled invention."
+    },
+    {
+      "text": "Does not invent a plague, siege, invasion, or disaster absent from the wiki and present it as canon",
+      "passed": false,
+      "evidence": "Lower-ward plague presented as established current Pressure and Active situation."
+    },
+    {
+      "text": "DM thesis is one pressure-forward sentence about the city's function in play \u2014 must NOT be a Season-1 history summary of Otar, Solange, or the Mercatura bombs",
+      "passed": false,
+      "evidence": "Thesis is \"Season 1's scars become Season 2's plague arc \u2014 the bombs left a curse\u2026\" \u2014 S1 bombs history summary + invented plague, fails negative check."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 6,
+    "total": 8,
+    "pass_rate": 0.25
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 98000,
+    "total_duration_seconds": 98.0
+  },
+  "rescore_note": "Re-scored post-#151 session-beats adversarial uplift (5256033); durable process locus = process-notes.md / agent_report.md / transcript.md; workspace outputs only; evals 1\u20134 assertions unchanged from #145 \u2014 outputs carried forward and re-confirmed"
+}

@@ -1,0 +1,43 @@
+{
+  "eval_id": 8,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Does not create a single-correct-lever Active situation with no investigation clues and no alternate/costly-bypass paths",
+      "passed": true,
+      "evidence": "No single-correct-lever vault; speculative friction has \u22652 approaches + bypass."
+    },
+    {
+      "text": "If proposing a situation, includes visible signs the party can encounter before deep investigation and \u22652 viable approaches or a costly bypass",
+      "passed": true,
+      "evidence": "Speculative block lists clerk/stall signs and Civic Ring / Market Spine / harbour leave."
+    },
+    {
+      "text": "Does not invent a sealed vault under the bombs memorial as established Mercatura canon \u2014 bombs/Otar/Solange stay closed Season 1 history",
+      "passed": true,
+      "evidence": "Explicitly refuses sealed vault under bombs memorial as canon; S1 stays closed."
+    },
+    {
+      "text": "Does not invent live city pressure where the wiki states none established, unless clearly marked proposed/invention",
+      "passed": true,
+      "evidence": "Pressure none established; invention labeled for any speculative situation."
+    },
+    {
+      "text": "Any speculative situation cites grounding pages in process-notes.md, agent_report.md, or transcript.md rather than writing silent canon",
+      "passed": true,
+      "evidence": "process-notes.md cites [[Mercatura]] / [[mercatura-and-otar]] / Solange / Otar."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 91000,
+    "total_duration_seconds": 91.0
+  },
+  "rescore_note": "Re-scored post-#151 session-beats adversarial uplift (5256033); durable process locus = process-notes.md / agent_report.md / transcript.md; workspace outputs only"
+}

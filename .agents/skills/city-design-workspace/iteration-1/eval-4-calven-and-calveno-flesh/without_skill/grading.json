@@ -1,0 +1,73 @@
+{
+  "eval_id": 4,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Preserves Dravosi harbour authority vs Tessarine money accurately",
+      "passed": false,
+      "evidence": "Only a trailing note \"Dravosi flag vs Tessarine money still mentioned\"; Arrival invents secret Tessarine vaults; no accurate harbour-paper vs credit tension."
+    },
+    {
+      "text": "Preserves Seven Houses / Tessarine Concordat debt politics accurately",
+      "passed": false,
+      "evidence": "\"Seven Houses exist\" / Noble Heights Debates \u2014 no 4/3 lean, six-of-seven, or Concordat debt politics."
+    },
+    {
+      "text": "Preserves Le Paludi and Rattkin under the public city accurately",
+      "passed": false,
+      "evidence": "No Le Paludi; Rattkin only appear as invented conquest bones in DM thesis, not under-public-city presence."
+    },
+    {
+      "text": "Preserves Warren/Passage routes accurately",
+      "passed": false,
+      "evidence": "\"Warren is somewhere below\"; Passage listed as smugglers tunnels \u2014 not accurate Passage/Warren trust routes."
+    },
+    {
+      "text": "Preserves Simone and Lavinia Sordi Crown toxin-substitute pressure accurately",
+      "passed": false,
+      "evidence": "\"Simone smuggles something\"; Lavinia Sordi absent; no Crown toxin-substitute stock."
+    },
+    {
+      "text": "Frontmatter uses type: place and kind: city (upgrade from kind:settlement)",
+      "passed": false,
+      "evidence": "kind: settlement retained \u2014 no upgrade to kind: city."
+    },
+    {
+      "text": "Clearly distinguishes established stub canon from proposed invention throughout",
+      "passed": false,
+      "evidence": "Pirate siege and canal fever written as fact; no invention/proposed labels; stub canon collapsed to vague notes."
+    },
+    {
+      "text": "Output follows wiki/templates/city.md structure with filled runnable Arrival/At a Glance/Orientation/Gazetteer substance \u2014 not empty copied headings alone",
+      "passed": true,
+      "evidence": "Arrival/Glance/Orientation (\u22654 district rows)/Gazetteer present with some fill \u2014 floor structure met."
+    },
+    {
+      "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": false,
+      "evidence": "No identity sentence in process-notes or transcript."
+    },
+    {
+      "text": "Does not invent a plague, siege, invasion, or disaster absent from the wiki and present it as canon",
+      "passed": false,
+      "evidence": "Pirate Siege and Canal Fever Active situations + Pressure present invented disasters as canon."
+    },
+    {
+      "text": "Proposed districts/services are grounded in Calveno's harbour/credit/Passage function, not generic fantasy filler",
+      "passed": false,
+      "evidence": "Districts/services driven by pirate fear/fever/Noble Heights filler rather than harbour/credit/Passage function."
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 10,
+    "total": 11,
+    "pass_rate": 0.091
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 94000,
+    "total_duration_seconds": 94.0
+  },
+  "rescore_note": "Re-scored post-#151 session-beats adversarial uplift (5256033); durable process locus = process-notes.md / agent_report.md / transcript.md; workspace outputs only; evals 1\u20134 assertions unchanged from #145 \u2014 outputs carried forward and re-confirmed"
+}

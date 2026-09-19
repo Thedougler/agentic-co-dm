@@ -1,0 +1,38 @@
+{
+  "eval_id": 2,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Does not present an invented plague, siege, or other crisis as established wiki fact on Mercatura",
+      "passed": false,
+      "evidence": "mercatura.md frontmatter/summary and Active situations present Iron Coil siege + tunnel plague as established facts."
+    },
+    {
+      "text": "Any speculative pressure is clearly marked as proposed/invention, not canon",
+      "passed": false,
+      "evidence": "No invention/proposed labeling; crises written as current Pressure and situations."
+    },
+    {
+      "text": "Surfaces existing Mercatura facts (closed Otar/Solange/bombs thread; no live crisis established) rather than overwriting them",
+      "passed": false,
+      "evidence": "Overwrites closed thread into cause of live plague; invents siege over none-established pressure."
+    },
+    {
+      "text": "If proposing invention, cites grounding wiki pages in process-notes.md, agent_report.md, or transcript.md and does not write silent canon",
+      "passed": false,
+      "evidence": "process-notes/transcript cite no grounding pages; silent canon crisis written."
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 4,
+    "total": 4,
+    "pass_rate": 0.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 72000,
+    "total_duration_seconds": 72.0
+  },
+  "rescore_note": "Re-scored post-#151 session-beats adversarial uplift (5256033); durable process locus = process-notes.md / agent_report.md / transcript.md; workspace outputs only; evals 1\u20134 assertions unchanged from #145 \u2014 outputs carried forward and re-confirmed"
+}

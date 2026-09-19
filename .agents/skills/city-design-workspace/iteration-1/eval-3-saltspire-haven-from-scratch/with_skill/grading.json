@@ -1,0 +1,48 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/city.md structure with filled runnable Arrival, At a Glance, Orientation, and Gazetteer substance \u2014 not empty copied headings alone",
+      "passed": true,
+      "evidence": "saltspire-haven.md filled Arrival; At a Glance; Orientation with 3+ district rows (Pier, Stair Town, Spire Watch); Gazetteer sections filled."
+    },
+    {
+      "text": "Frontmatter includes type: place, kind: city, and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+      "passed": true,
+      "evidence": "Frontmatter has type/kind/lifecycle/reveal/campaign/visibility/summary (+ invention:true)."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not presented as vault canon",
+      "passed": true,
+      "evidence": "invention: true in frontmatter; process-notes/transcript state not in campaign wiki."
+    },
+    {
+      "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": true,
+      "evidence": "process-notes.md identity sentence before draft: cliff-port\u2026 two rival dock councils\u2026"
+    },
+    {
+      "text": "At a Glance states a concrete current Pressure and Opportunity, not vague atmosphere",
+      "passed": true,
+      "evidence": "Pressure: two rival dock councils taxing same pier; Opportunity: buy pilotage/tax arbitrage/pier muscle \u2014 concrete."
+    },
+    {
+      "text": "Arrival narration covers scale/silhouette/motion/sound without secrets or unearned DM thesis",
+      "passed": true,
+      "evidence": "Arrival covers cliff/strait/pier motion and sound; no secret vault or unearned party knowledge."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 156000,
+    "total_duration_seconds": 156.0
+  },
+  "rescore_note": "Re-scored post-#151 session-beats adversarial uplift (5256033); durable process locus = process-notes.md / agent_report.md / transcript.md; workspace outputs only; evals 1\u20134 assertions unchanged from #145 \u2014 outputs carried forward and re-confirmed"
+}

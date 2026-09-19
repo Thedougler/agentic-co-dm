@@ -1,0 +1,48 @@
+{
+  "eval_id": 3,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/city.md structure with filled runnable Arrival, At a Glance, Orientation, and Gazetteer substance \u2014 not empty copied headings alone",
+      "passed": true,
+      "evidence": "Sections present with some filled rows (Arrival, Glance, 2 districts, Gazetteer tables) \u2014 not empty headings alone. Quality of fill fails other asserts."
+    },
+    {
+      "text": "Frontmatter includes type: place, kind: city, and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+      "passed": true,
+      "evidence": "Required identity fields present; invention label missing (caught by guardrail assert)."
+    },
+    {
+      "text": "Invention is labeled with invention: true or clearly marked as proposed, not presented as vault canon",
+      "passed": false,
+      "evidence": "No invention:true; page reads as ordinary vault setting; region \"Central Strait\" claimed without proposed mark."
+    },
+    {
+      "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
+      "passed": false,
+      "evidence": "process-notes/transcript lack identity sentence."
+    },
+    {
+      "text": "At a Glance states a concrete current Pressure and Opportunity, not vague atmosphere",
+      "passed": false,
+      "evidence": "Pressure 'Things feel tense on the docks'; Opportunity 'Adventure' \u2014 vague atmosphere."
+    },
+    {
+      "text": "Arrival narration covers scale/silhouette/motion/sound without secrets or unearned DM thesis",
+      "passed": false,
+      "evidence": "Arrival leaks secret channel charts / drowned god's teeth and that Harbourmaster already knows party names."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 4,
+    "total": 6,
+    "pass_rate": 0.333
+  },
+  "timing": {
+    "total_tokens": null,
+    "duration_ms": 81000,
+    "total_duration_seconds": 81.0
+  },
+  "rescore_note": "Re-scored post-#151 session-beats adversarial uplift (5256033); durable process locus = process-notes.md / agent_report.md / transcript.md; workspace outputs only; evals 1\u20134 assertions unchanged from #145 \u2014 outputs carried forward and re-confirmed"
+}
