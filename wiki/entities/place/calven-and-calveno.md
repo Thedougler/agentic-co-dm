@@ -54,4 +54,4 @@ The Crown inspects and the Concordat invoices. Both collect from the same fisher
 ## Connections
 - → [[crown-islands]] · [[calders-tooth-and-port-tidefall]] · [[Harwick]] · [[central-strait]] · [[Warren]] · [[Mercatura]] · [[tessarine-concordat]]
 
-**Provenance:** Dump source staged at [[inbox/archive/FILED-2026-09-05-tessarine-concordat.md]]. Legacy read-only context: `/Users/nick/shattered-sea/wiki/shattered-sea/region-calven.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/calveno-raid/settlement-calveno.md`.
+**Provenance:** Dump source filed into [[tessarine-concordat]]. Legacy read-only context: `/Users/nick/shattered-sea/wiki/shattered-sea/region-calven.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/calveno-raid/settlement-calveno.md`.

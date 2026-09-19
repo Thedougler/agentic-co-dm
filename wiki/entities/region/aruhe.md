@@ -152,4 +152,4 @@ After the cold open, if they turn east or follow wreckage. The Sequence already 
 
 ## Exit
 
-- they leave the island → [[The Open Strait]]
+- they leave the island → [[central-strait-crossing|The Open Strait]]
