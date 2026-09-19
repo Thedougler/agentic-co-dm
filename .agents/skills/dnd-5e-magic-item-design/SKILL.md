@@ -7,89 +7,121 @@ description: Design, revise, or audit engaging and mechanically sound homebrew m
 
 File what constitution X makes canon. Follow `docs/agents/work.md`.
 
-## Success criteria
-- The item promises a specific experience, has a readable decision loop, and earns its place in the campaign.
-- Mechanics are legal 2024/5.5e rules language, internally consistent, and calibrated against comparable published designs.
-- Power is traded, not stacked: the item has a useful ceiling, costs, limits, counterplay, and an honest party role.
-- Output is runnable at the table. Prefer delete and clarify; never paste WotC proprietary book text. Paraphrase and link public rules or benchmarks.
-- State assumptions, uncertainty, and tuning knobs. Keep designs setting-agnostic unless the brief supplies canon.
+## Refuse gates
 
-## Required context
-Ask or state what is known about: character level and class mix; item tier, rarity, and intended owner; campaign tone and setting constraints; encounter and exploration cadence; attunement availability; desired fantasy; action economy; existing party items; and whether the item is temporary, evolving, cursed, sentient, or plot-critical. Do not invent missing campaign canon.
+- **Work gate.** Show a chat proposal before writing under `wiki/`. Write only
+  after DM acceptance. Workspace outputs are allowed before acceptance.
+- **Invention.** Never present invention as wiki fact. Set `invention: true` (or
+  mark proposed), cite `[[pages]]`, show contradictions, and propose for
+  acceptance. No silent canon — including new curses, maker myths, extra daily
+  powers, stacked envelopes, or undeclared campaign plots on existing items.
+- **Template lock.** Copy `wiki/templates/item.md` only. Fill narration,
+  classification, and runnable effect with substance — not empty headings.
+- **Narration.** Spoken look is `[!narration]` cold portrait. No secrets, DCs,
+  or unearned names.
+- **Pitch first.** Write a Signature / pitch sentence (object + distinctive verb
+  + why it belongs) before the page draft or final numbers.
+- **Web grounding.** Current public 2024/5.5e rules anchor before final numbers;
+  at least three comparator roles (chassis, effect/role, boundary) with working
+  links. Votes, ratings, or a single anecdote are not balance evidence. Label
+  2014 material legacy and recalibrate — do not silently reuse it as 2024.
+- **No proprietary paste.** Never paste WotC book text; paraphrase and link
+  public rules or benchmarks.
+- **Rarity is a ceiling.** Refuse to stack maximum offense, defense, mobility,
+  control, and utility merely because the rarity is high. Trade axes.
+- **Every-hit riders.** Unbounded “on every hit” needs a once-per-turn (or
+  equivalently calibrated) frequency — Extra Attack, TWF, and reactions multiply.
+- **Concentration / slots.** Do not silently remove concentration or grant
+  hidden free spell slots from an item.
+- **Curse agency.** Reject curse as secret plot punishment or unilateral loss of
+  player control. Require visible tells, player choices, counterplay, consent,
+  and an exit or redirect.
+- **Travel loops.** Reject trivializing travel forever (impossible to track +
+  auto-navigate + daily anywhere teleport). Preserve exploration identity with
+  limits and counterplay; check ranger/rogue/scout niches.
+- **Combine ≠ same rarity.** Two same-rarity ceilings combined do not stay that
+  rarity by default — remove, narrow, cost, raise tier, or add a hard limit.
 
-## Mandatory web grounding
-Every deliberate design needs current web research before final numbers. Use the public 2024/5.5e rules or SRD as the rules anchor, then inspect at least three comparators: one chassis peer, one effect/role peer, and one higher- or lower-tier boundary peer. A reputable published homebrew comparator may fill one slot, but label it as such. Record actionable observations and working links in the comparator matrix; do not append a bibliography or credit page.
+## Central principle
 
-Use this priority order when evidence conflicts: (1) user brief and table limits; (2) current 2024/5.5e public rules; (3) official published item peers; (4) reputable published homebrew; (5) numerical audit and playtest evidence; (6) theme and flourish. Do not silently use a 2014 chassis as a 2024 benchmark: label it legacy and recalibrate it.
+An item promises a specific experience, has a readable decision loop, and earns
+its place. Mechanics are legal 2024/5.5e language, calibrated against published
+peers. Power is traded, not stacked. Prefer delete and clarify. State
+assumptions, uncertainty, and tuning knobs. Keep designs setting-agnostic unless
+the brief supplies canon.
 
-## Minimum research packet
-Before designing, capture for each comparator: rarity/tier, attunement, item type and weapon/armor chassis, action cost, range/targets, damage or defense delta, save/DC or attack bonus, frequency/recharge, duration, concentration interaction, stacking interactions, exploration utility, and the player choice it creates. Copy none of the protected prose. Use `references/research-and-comparators.md`.
+## Build the item
 
-## Workflow: five passes
-1. **Pitch.** Write a one-sentence promise: “This is a [item] for a [role] that lets its bearer [choice/experience] by paying [cost or risk].” Name intended experience, fantasy, owner, tier, and counterplay. If the pitch is generic, reskin or delete.
-2. **Chassis.** Prefer the least speculative method: (1) reskin an existing item; (2) change form, damage type, or a narrow capability; (3) exchange one property for another of similar value; (4) combine compatible published properties, then reassess rarity; (5) create a new mechanic only when existing ones cannot express the concept. Combining two same-rarity items is stronger than either — it does not stay that rarity by default. Choose rarity and attunement after the effect is understood.
-3. **Power envelope.** Build a table for reliable offense, burst offense, defense, action economy, spell access, exploration, and social utility. Compare each axis to the matrix. Trade one strong axis for a weakness, cost, narrowness, or frequency limit. Audit the whole party, not just the intended owner.
-4. **Engagement loop.** Write Tell → Choice → Cost → Payoff → Counterplay. Include a normal turn, a tempting but costly use, and what happens when the item is ignored. The item should create decisions, not replace them. Prefer once-per-turn or per-rest limits over unbounded “every hit” riders.
-5. **Limits and handoff.** Run `references/mechanical-audit.md` and `references/narrative-and-wording.md`. State attunement, charges, recharge, duration, target limits, concentration, stacking, failure, curse consent/exit, and tuning knobs. Give the final player-facing text only after the audit.
+1. **Pitch.** One sentence: “This is a [item] for a [role] that lets its bearer
+   [choice/experience] by paying [cost or risk].” Name experience, fantasy,
+   owner, tier, and counterplay.
+2. **Chassis.** Prefer least-speculative: reskin → narrow change → equal
+   exchange → combine-then-reassess rarity → bespoke only if needed.
+3. **Research packet.** Public rules anchor + three comparator roles. Record
+   actionable observations and working links in the matrix — no bibliography
+   page. Use `references/research-and-comparators.md`.
+4. **Power envelope.** Table reliable/burst offense, defense, action economy,
+   spell access, exploration, social. Trade a strong axis for weakness, cost,
+   narrowness, or frequency. Audit the whole party.
+5. **Engagement loop.** Tell → Choice → Cost → Payoff → Counterplay. Include a
+   normal turn, a tempting costly use, and what happens if ignored.
+6. **Limits and audit.** Attunement, charges, recharge, duration, targets,
+   concentration, stacking, failure, curse consent/exit, tuning knobs. Run
+   `references/mechanical-audit.md` and `references/narrative-and-wording.md`
+   before final player-facing text.
 
-## Power by rarity: a ceiling, not a shopping list
-Use the 2024 Magic Item Power by Rarity ceilings as maxima, not a budget to fill repeatedly. An item at its maximum spell level should not also take its maximum bonus plus strong passives and several extras.
+Evidence priority when conflicts: (1) user brief/table limits; (2) current
+2024/5.5e public rules; (3) official peers; (4) reputable published homebrew;
+(5) numerical audit/playtest; (6) theme.
 
-| Rarity | Maximum limited spell effect | Maximum static bonus |
-|---|---:|---:|
-| Common | Level 1 | None |
-| Uncommon | Level 3 | +1 |
-| Rare | Level 5 | +2 |
-| Very Rare | Level 8 | +3 |
-| Legendary | Level 9 | +4 |
+Read `references/item-craft.md` for rarity ceilings, design habits, default
+output, campaign wiki workflow, audit questions, and failure modes.
 
-A lower-level spell may appear more often than the table's maximum, but compare daily output to published items. Also weigh owner level/build, party items, magic density, permanent vs consumable, how often the ideal situation occurs, multiplier interactions, and how easily the item can be traded. Artifact and evolving items add story weight and removal/escalation conditions; they are not merely higher DPR.
+## File the wiki note
 
-## Audit pointers and design habits
-- **Attunement:** use it when the item is broadly or repeatedly powerful; waive it for narrow, consumable, or mostly-fictional utility only with evidence.
-- **Spell from item:** specify spellcasting ability, save DC/attack bonus, components, target, casting time, duration, concentration, charges, and whether the spell is cast from the item. Do not grant a hidden free slot or bypass concentration.
-- **Action economy:** price bonus actions, reactions, concentration, setup turns, opportunity cost, and off-turn triggers. “On every hit” needs a once-per-turn limit unless the whole item is deliberately calibrated around it.
-- **Class and party fit:** do not invalidate a class's signature resource, another character's niche, or the campaign's travel challenge forever. Narrow the scope or add a trade.
-- **Evolving/cursed/sentient items:** make change visible and playable; never use a curse as secret plot punishment. Include consent, tells, choices, escape, and consequences.
+Copy `wiki/templates/item.md` (consumables) or `wiki/templates/hazard.md` (flora
+hazards). Pass item jobs in `wiki/AGENTS.md` Layout. Before design, retrieve
+target PC, hot page, front/quest/session, signature gear, and three same-tier
+comparators. State tier, wielder, acquisition, constraints, attunement, cadence,
+and strongest party synergy.
 
-Use `references/mechanical-audit.md` for the offense, defense, action economy, spell access, stacking, roles, and challenge-preservation audits. Use `references/narrative-and-wording.md` for the player-facing template, design notes, playtest procedure, and final checklist.
+1. **Frontmatter** — `type: item`, plus `campaign`, `region`, `kind`, `rarity`,
+   `attunement`, `tags`, and `wiki/AGENTS.md` required fields. Omit unused keys
+   including `owner`.
+2. **Spoken look** — `[!narration]` cold portrait.
+3. **Classification** — kind and rarity (or hazard start/notice).
+4. **One runnable effect** — terse 2024/5.5e text; trigger, action type,
+   prerequisite, target/range, roll/DC, effect, duration, uses/charges/recharge,
+   concentration, stacking, edge case. At-table grammar from `obsidian-markdown`.
+5. **At the Table** — playable-tonight consequence only (no design diary). Omit
+   only with documented N/A rationale in process notes — silent omit fails.
 
-## Default output
-1. Pitch, assumptions, intended experience, owner, tier, and chassis choice.
-2. Comparator matrix with working links and concise research observations.
-3. Power-envelope table and tradeoffs.
-4. Player-facing item text in 2024/5.5e language.
-5. Engagement loop: Tell → Choice → Cost → Payoff → Counterplay.
-6. Mechanical audit summary, limits, stacking, and party-role effects.
-7. Required design notes: Intended Experience, Published Benchmarks, Balance Assessment, and Tuning Knobs.
-8. Playtest plan, revision triggers, and relevant handoff.
+Complex items (weapons, relics, artifacts, sentient/cursed/evolving) add sections
+only when they change the table. Separate reveal into first sight, handling,
+known mechanics, earned lore, and DM truth. Design-process artifacts (matrix,
+envelope, loop) stay in conversation/process notes — not the wiki note.
 
 ## Handoffs
-- **theatre-of-the-mind:** item tells, sensory manifestations, cursed/sentient voice, and player-facing fiction without map assumptions.
-- **dungeon-design:** item placement, vault/quest, hazards, factions, gates, and consequences around acquiring or losing it.
-- **session-beats:** reveal, first-use scene, escalation, evolution, curse pressure, and payoff timing.
-- **homebrew-monsters-5e:** an item that creates, commands, transforms into, or is balanced around a monster; keep creature math in that skill.
-- **qmd-retrieval:** campaign-vault facts and canon; do not invent setting details when retrieval is silent.
 
-## Campaign item workflow
-Copy `wiki/templates/item.md` for consumables. Copy `wiki/templates/hazard.md` for flora hazards. `wiki/_raw/Ghost Plum.md` and `wiki/_raw/Razer-Grass.md` illustrate. Pass is jobs in `wiki/AGENTS.md` Layout, not a frozen outline.
-Single item-design authority in ai-co-dm. Stackable gear remains PC/inventory data; mint a type: item note only when play, a query, or another note needs to cite the object.
+- **theatre-of-the-mind:** item tells, sensory manifestations, cursed/sentient
+  voice, player-facing fiction without map assumptions.
+- **dungeon-design:** placement, vault/quest, hazards, factions, gates around
+  acquiring or losing it.
+- **session-beats:** reveal, first-use, escalation, evolution, curse pressure,
+  payoff timing.
+- **homebrew-monsters-5e:** item that creates/commands/transforms into a monster;
+  keep creature math there.
+- **qmd-retrieval:** campaign-vault facts; do not invent setting details when
+  retrieval is silent.
 
-Before design, retrieve the target PC, campaign hot page, relevant front/quest/session, existing signature gear, and three same-tier comparators. State tier, intended wielder, acquisition mode, campaign constraints, attunement, cadence, and strongest party synergy. Write one Signature sentence: object + distinctive verb + why it belongs here.
+## Done
 
-Make every property runnable: trigger, action type, prerequisite, target/range, roll or DC, effect, duration, uses/charges/recharge, concentration, stacking, and likely edge case. For consumable, cursed, sentient, evolving, artifact, or set-piece items, add visible tells, player choices, consent/exit where relevant, and administrable change states.
-
-Separate reveal into first sight, handling, known mechanics, earned lore, and DM truth. Invoke theatre-of-the-mind for player-facing appearance prose; flesh-out-content may supply missing lived-in facts and visual-aids may ground an identity image.
-
-### Note format
-
-Copy those templates as scaffolds. Numbers live on one owner page.
-
-1. **Frontmatter** — `type: item`, plus `campaign`, `region`, `kind`, `rarity`, `attunement`, `tags` (include region and kind in tags), and `wiki/AGENTS.md` required fields. Omit unused keys including `owner`.
-2. **Spoken look** — `[!narration]` cold portrait. No secrets, DCs, unearned names.
-3. **Classification** — kind and rarity (consumable) or hazard start/notice.
-4. **One runnable effect** — terse 2024/5.5e text; at-table grammar from `obsidian-markdown`. Then stop on a consumable. Flora hazards also answer contact cost, careful passage, and counterplay.
-
-Complex items (magic weapons, relics, artifacts, sentient/cursed/evolving) add sections below only when they change the table. Do not add sections a simple item does not need.
-
-Run obsidian-markdown and applicable checks.
+- Pitch/Signature present; template filled with substance; narration
+  perceivable-only.
+- Invention labeled/cited/proposed; wiki write only after accept.
+- Comparator matrix with working links; rarity treated as ceiling with trades.
+- Runnable effect states trigger, frequency/limits, and hard constraints;
+  every-hit / concentration / travel / combine-rarity gates held when relevant.
+- Engagement loop readable; mechanical + narrative audits run; tuning knobs
+  stated.
+- DM can run the item tonight without a design diary on the page.
