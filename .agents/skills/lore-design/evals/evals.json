@@ -3,20 +3,24 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Turn wiki/entities/lore/taking-on-aruhe.md into a clean lore page using wiki/templates/lore.md. The established rule is that fallen fruit is safe but taking living fruit (or other living claims) triggers predators. Ground everything in what the wiki already says \u2014 Session 11 confirmation, Matteo's death-rule stance, Western Landing usage. Do not invent a metaphysical cause. Wiki Linter marked hard_fail=false on taking-on-aruhe.md; still assert output template conformance (At a Glance / Current Truth / Limits / At the Table) even if the live page is pre-template shaped.",
-      "expected_output": "A lore page answering one durable question, with At a Glance (Core truth / Why it matters / Scope), Current Truth, Limits (Exception/Unknown/Impossible), and At the Table handles \u2014 preserving the fallen-vs-living split without inventing divine or fungal origins.",
+      "prompt": "Turn wiki/entities/lore/taking-on-aruhe.md into a clean lore page using wiki/templates/lore.md. The established rule is that fallen fruit is safe but taking living fruit (or other living claims) triggers predators. Ground everything in what the wiki already says — Session 11 confirmation, Matteo's death-rule stance, Western Landing usage. Do not invent a metaphysical cause. Wiki Linter marked hard_fail=false on taking-on-aruhe.md; still assert output template conformance (At a Glance / Current Truth / Limits / At the Table) even if the live page is pre-template shaped.",
+      "expected_output": "A lore page answering one durable question, with At a Glance (Core truth / Why it matters / Scope), Current Truth, Limits (Exception/Unknown/Impossible), and At the Table handles — preserving the fallen-vs-living split without inventing divine or fungal origins.",
       "assertions": [
         {
-          "text": "States the durable question or identity framing before the page draft",
+          "text": "Durable question or identity framing appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
-          "text": "Shows a chat proposal / work gate before writing under wiki/",
+          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
           "type": "process"
         },
         {
-          "text": "Output follows wiki/templates/lore.md structure (At a Glance, Current Truth, Limits, At the Table)",
+          "text": "Output uses wiki/templates/lore.md heading-form sections ## At a Glance, ## Current Truth, ## Limits, and ## At the Table with filled substance — callout-form At-a-Glance copy-forward alone fails",
           "type": "structure"
+        },
+        {
+          "text": "Current Truth and Limits are proper sections with runnable substance (Core rule + Exception/Unknown/Impossible), not empty headings or stub callout paste",
+          "type": "content"
         },
         {
           "text": "Frontmatter includes type: lore and kind/truth/summary fields",
@@ -62,18 +66,18 @@
           "type": "guardrail"
         },
         {
-          "text": "If proposing invention, cites grounding pages and leaves Open Canon rather than overwriting Limits unknowns",
+          "text": "If proposing invention, cites grounding pages in process-notes.md, agent_report.md, or transcript.md and leaves Open Canon rather than overwriting Limits unknowns",
           "type": "process"
         }
       ]
     },
     {
       "id": 3,
-      "prompt": "Create a new lore page from scratch for the Pier-Debt Custom \u2014 in invented free ports, a spoken harbour debt can be transferred by touching the debtor's token to the pier post before witnesses. This is not campaign wiki canon; label it as invention.",
+      "prompt": "Create a new lore page from scratch for the Pier-Debt Custom — in invented free ports, a spoken harbour debt can be transferred by touching the debtor's token to the pier post before witnesses. This is not campaign wiki canon; label it as invention.",
       "expected_output": "A lore.md page with invention:true, one durable question, At a Glance, Current Truth, explicit Limits/unknowns, and At the Table handles. Not presented as vault fact.",
       "assertions": [
         {
-          "text": "Output follows wiki/templates/lore.md structure",
+          "text": "Output follows wiki/templates/lore.md structure with filled At a Glance, Current Truth, Limits, and At the Table substance — not empty copied headings alone",
           "type": "structure"
         },
         {
@@ -85,6 +89,10 @@
           "type": "guardrail"
         },
         {
+          "text": "Does not claim a named vault harbour already uses this Pier-Debt Custom as established campaign fact",
+          "type": "guardrail"
+        },
+        {
           "text": "Answers one durable question; does not bundle unrelated encyclopedia truths",
           "type": "quality"
         },
@@ -93,7 +101,7 @@
           "type": "quality"
         },
         {
-          "text": "Durable question / framing appears before the page draft",
+          "text": "Durable question / framing appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         }
       ]
@@ -116,11 +124,15 @@
           "type": "guardrail"
         },
         {
-          "text": "Output follows wiki/templates/lore.md structure",
+          "text": "Any new Discovery clue not present on the stub is marked with proposed or invention wording",
+          "type": "guardrail"
+        },
+        {
+          "text": "Output follows wiki/templates/lore.md structure with filled At a Glance, Current Truth, Limits, and At the Table substance — not empty copied headings alone",
           "type": "structure"
         },
         {
-          "text": "Durable question / framing appears before the page draft",
+          "text": "Durable question / framing appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {

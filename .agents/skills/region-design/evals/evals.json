@@ -3,19 +3,19 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Improve wiki/entities/region/aruhe.md into a runnable region page using wiki/templates/region.md (and contracts/region.yml field expectations). Use linked places wiki/entities/place/river-slack-basin.md, wiki/entities/place/cutoff-lip.md, and wiki/entities/place/print-braid.md plus established taking-on-aruhe / razer-grass facts. Wiki Linter marked hard_fail=false on aruhe.md; the live page is still place-kernel shaped \u2014 upgrade toward region.md headings. Assert output template conformance of the result, not live lint-clean status or current body shape.",
+      "prompt": "Improve wiki/entities/region/aruhe.md into a runnable region page using wiki/templates/region.md (and contracts/region.yml field expectations). Use linked places wiki/entities/place/river-slack-basin.md, wiki/entities/place/cutoff-lip.md, and wiki/entities/place/print-braid.md plus established taking-on-aruhe / razer-grass facts. Wiki Linter marked hard_fail=false on aruhe.md; the live page is still place-kernel shaped — upgrade toward region.md headings. Assert output template conformance of the result, not live lint-clean status or current body shape.",
       "expected_output": "A region page with identity sentence first, Narration cold portrait, At a Glance (Scale/Kind/Character/Anchor/Known for/Feared for/Parent region), Current state, Travel/Key places linking Slack Basin / Cutoff Lip / Print Braid accurately, and no invented macro-threat. Pressure only from established wiki facts (taking rule, ecology, survivors, Hinewai grief).",
       "assertions": [
         {
-          "text": "Identity sentence appears before the page draft",
+          "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
-          "text": "Shows a chat proposal / work gate before writing under wiki/",
+          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
           "type": "process"
         },
         {
-          "text": "Output follows wiki/templates/region.md structure (Narration, At a Glance, Current state, Geography/Travel or Key places)",
+          "text": "Output follows wiki/templates/region.md structure with filled Narration, At a Glance fields, Current state, and Travel/Key places substance — not empty copied headings alone",
           "type": "structure"
         },
         {
@@ -23,7 +23,7 @@
           "type": "structure"
         },
         {
-          "text": "Slack Basin, Cutoff Lip, and Print Braid appear with roles matching their wiki pages (claimed backwater; Quiet\u2013grassland seam; print strands toward Spoke Ring)",
+          "text": "Slack Basin, Cutoff Lip, and Print Braid appear with roles matching their wiki pages (claimed backwater; Quiet–grassland seam; print strands toward Spoke Ring)",
           "type": "content"
         },
         {
@@ -36,6 +36,10 @@
         },
         {
           "text": "DM thesis states table function (route choices / who can change the region), not encyclopedia lore",
+          "type": "quality"
+        },
+        {
+          "text": "At a Glance Feared for cites established taking/ecology pressure (not vague 'island waking' or invented macro-threat)",
           "type": "quality"
         }
       ]
@@ -50,6 +54,10 @@
           "type": "guardrail"
         },
         {
+          "text": "Does not produce a rewritten aruhe.md body that embeds the invented ancient evil / warlord threat as established page content",
+          "type": "guardrail"
+        },
+        {
           "text": "Any speculative threat is clearly marked as proposed/invention, not canon",
           "type": "guardrail"
         },
@@ -58,18 +66,18 @@
           "type": "content"
         },
         {
-          "text": "If proposing invention, cites grounding wiki pages and shows contradictions rather than writing silent canon",
+          "text": "If proposing invention, cites grounding wiki pages and shows contradictions in process-notes.md, agent_report.md, or transcript.md rather than writing silent canon",
           "type": "process"
         }
       ]
     },
     {
       "id": 3,
-      "prompt": "Create a new region page from scratch for the Brine Ladder \u2014 a stepped reef frontier of three channels where local pilots tax passage and storm seasons close the middle stair. This entity is invention; it is not in the campaign wiki. Label it accordingly.",
+      "prompt": "Create a new region page from scratch for the Brine Ladder — a stepped reef frontier of three channels where local pilots tax passage and storm seasons close the middle stair. This entity is invention; it is not in the campaign wiki. Label it accordingly.",
       "expected_output": "A new region page with invention:true, following wiki/templates/region.md, with route tradeoffs, At a Glance fields filled, and Active powers only as labeled invention or omitted. No claim Brine Ladder is vault canon.",
       "assertions": [
         {
-          "text": "Output follows wiki/templates/region.md structure",
+          "text": "Output follows wiki/templates/region.md structure with filled runnable At a Glance, Current state, and Travel/routes substance — not empty copied headings alone",
           "type": "structure"
         },
         {
@@ -81,7 +89,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Identity sentence appears before the page draft",
+          "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
@@ -91,12 +99,16 @@
         {
           "text": "Does not invent Fronts and pressures as established fact without labeling; omits or marks None established / proposed",
           "type": "guardrail"
+        },
+        {
+          "text": "Does not assign an established parent region (e.g. Midchain) as fact for a labeled invention entity without marking that parent assignment as proposed/invention",
+          "type": "guardrail"
         }
       ]
     },
     {
       "id": 4,
-      "prompt": "Flesh wiki/entities/region/Midchain.md toward wiki/templates/region.md. Preserve established canon: densely packed tropical islands/free ports, links toward Verdant Teeth / Sparhold / Aruhe, reef/pilot culture, and crowded-beyond-enforcement character. The page is kernel-shaped today \u2014 restructure to region.md. Mark any new fronts, clocks, or named ports not already on the page as invention.",
+      "prompt": "Flesh wiki/entities/region/Midchain.md toward wiki/templates/region.md. Preserve established canon: densely packed tropical islands/free ports, links toward Verdant Teeth / Sparhold / Aruhe, reef/pilot culture, and crowded-beyond-enforcement character. The page is kernel-shaped today — restructure to region.md. Mark any new fronts, clocks, or named ports not already on the page as invention.",
       "expected_output": "A region.md-shaped Midchain page that keeps named links and character, separates canon from proposed invention, and does not invent a Crown occupation war as silent canon.",
       "assertions": [
         {
@@ -108,11 +120,11 @@
           "type": "guardrail"
         },
         {
-          "text": "Output follows wiki/templates/region.md structure rather than leaving only a five-sentence kernel",
+          "text": "Output follows wiki/templates/region.md structure with filled region sections — must NOT retain ## Five-sentence kernel (or place-kernel shape) as the primary body",
           "type": "structure"
         },
         {
-          "text": "Identity sentence appears before the page draft",
+          "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
