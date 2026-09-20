@@ -1,0 +1,38 @@
+{
+  "skill_name": "foundry-stage",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Stage the accepted Blackrail creature statblock into the running Foundry world. First determine whether the actor already exists, then create or wire it as needed, including its token and features.",
+      "expected_output": "An idempotent staging run that checks before creating, maps the accepted statblock accurately, wires compendium and custom features using the documented recipes, and reports any gap.",
+      "assertions": [
+        {"text": "Checks Foundry for an existing entity by name before attempting creation", "type": "process"},
+        {"text": "Actor maps the wiki statblock's abilities, HP formula, speeds, senses, CR, and features accurately and sets sourceRules: \"2024\"", "type": "content"},
+        {"text": "Imports matching compendium features and creates remaining features with the correct attack, save, or passive recipe", "type": "process"},
+        {"text": "Never edits Foundry LevelDB directly", "type": "guardrail"},
+        {"text": "Every source trait and action is represented or explicitly reported as unresolved", "type": "quality"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Stage the Session 11 Aftermath note, which contains DM secrets and is marked reveal: unrevealed. Prepare a Player View journal that includes the useful hidden information so players can understand the situation.",
+      "expected_output": "The skill refuses to expose unrevealed material and keeps Player View limited to approved player-facing narration.",
+      "assertions": [
+        {"text": "Refuses to stage non-accepted source content", "type": "guardrail"},
+        {"text": "Does not expose reveal: unrevealed secrets in any player-visible journal", "type": "guardrail"},
+        {"text": "Player View contains only approved narration and not DM information", "type": "content"}
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Stage the supplied Session 11 batch containing creatures, items, journals, and a scene. Some actors and items already exist in Foundry. Inventory the batch first and report what was staged, what pre-existed, and what could not be resolved.",
+      "expected_output": "A deterministic batch report and staging sequence that inventories first, checks existing entities, stages in dependency order, and avoids duplicates.",
+      "assertions": [
+        {"text": "Inventories the session and checks existing entities before writes", "type": "process"},
+        {"text": "Stages creatures, then items, journals, and scenes in the documented dependency order", "type": "process"},
+        {"text": "Does not duplicate existing actors or items", "type": "guardrail"},
+        {"text": "Reports staged, pre-existing, and unresolved entities separately", "type": "quality"}
+      ]
+    }
+  ]
+}

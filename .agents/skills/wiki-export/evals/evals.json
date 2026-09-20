@@ -1,0 +1,46 @@
+{
+  "skill_name": "wiki-export",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Export an isolated fixture copy grounded by the Aruhe region and High Eyrie owners, containing ordinary wikilinks, a typed relationships entry for the same pair, and links marked inferred and ambiguous. Produce graph.json, GraphML, Cypher, and HTML. Do not write to the live vault.",
+      "expected_output": "All four graph outputs describe the same valid nodes and edges; typed relationships override duplicate generic wikilinks and confidence markers propagate.",
+      "assertions": [
+        {"text": "Builds one node per included page and resolves only valid edges", "type": "content"},
+        {"text": "Typed relationships override the equivalent generic wikilink edge rather than creating duplicates", "type": "content"},
+        {"text": "^[inferred] and ^[ambiguous] markers propagate into edge confidence", "type": "content"},
+        {"text": "graph.json, GraphML, Cypher, and HTML agree on node identity, edge identity, and counts", "type": "structure"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "In an isolated fixture copy represented by the campaign index, export only project:prismor as a public export, excluding visibility/internal and visibility/pii pages. Apply project filtering before visibility filtering and report the resulting metadata. Do not write to the live vault.",
+      "expected_output": "The export filters in the required order, excludes filtered nodes and their edges, and accurately records the filter and counts.",
+      "assertions": [
+        {"text": "Applies project filtering before visibility filtering", "type": "process"},
+        {"text": "Excluded nodes never survive through edges or derived output files", "type": "guardrail"},
+        {"text": "Filter metadata and summary accurately describe what was removed", "type": "structure"}
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Export an isolated fixture copy grounded by the Aruhe Caves owner to an OKF markdown bundle and import it into another temporary vault. The fixture includes native extension frontmatter, a folder-note layout, a relative link to an existing page, and a path-form forward reference to a page not yet written. Do not write to the live vault.",
+      "expected_output": "The OKF round trip preserves native metadata and bodies, restores correct wikilinks including folder-note links and dangling forward references, and turns filtered targets into plain text.",
+      "assertions": [
+        {"text": "Native extension frontmatter survives export and import", "type": "content"},
+        {"text": "Wikilinks become correct file-relative Markdown links on export and correct wikilinks on import, including folder-note layouts", "type": "content"},
+        {"text": "Filtered targets become plain text rather than links into excluded content", "type": "guardrail"},
+        {"text": "Unwritten path-form forward references survive in a form wiki-import can restore", "type": "quality"}
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Export an isolated fixture copy based on the campaign index containing only four eligible pages. Produce the graph files anyway so the user has something to inspect. Do not write to the live vault.",
+      "expected_output": "The skill stops and reports that the vault is too small for a meaningful graph export.",
+      "assertions": [
+        {"text": "Stops when fewer than five eligible pages exist", "type": "guardrail"},
+        {"text": "Does not produce a misleading graph from the tiny vault", "type": "quality"}
+      ]
+    }
+  ]
+}

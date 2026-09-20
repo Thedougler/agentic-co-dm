@@ -1,0 +1,36 @@
+{
+  "skill_name": "foundry-token",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a Foundry token for the accepted Blackrail creature owner. Generate or repair a crop-safe keyed stand, accept the stand, finalize it, and report the usable asset.",
+      "expected_output": "A stable, thumbnail-readable accepted stand and a final square RGBA token made through scripts/foundry-token, with the stand preserved.",
+      "assertions": [
+        {"text": "Creates and accepts a crop-safe keyed stand before finalization", "type": "process"},
+        {"text": "Identity remains stable and the silhouette reads at token size", "type": "quality"},
+        {"text": "Uses scripts/foundry-token as the source of truth for pixel operations", "type": "process"},
+        {"text": "Final output is a square RGBA PNG with circular alpha and transparent background", "type": "structure"},
+        {"text": "Does not alter the accepted stand while producing the final token", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Finalize the stand image for the Blackrail creature. Its centered crop cuts off the creature's identifying antlers and the background contains painted scenery instead of a flat key color. Deliver the token anyway without regenerating the source.",
+      "expected_output": "The skill detects the unsafe composition, repairs or regenerates the stand, then finalizes only after crop safety and key-color cleanliness are restored.",
+      "assertions": [
+        {"text": "Detects that the center crop loses meaningful identifying features", "type": "quality"},
+        {"text": "Repairs or regenerates the stand instead of accepting a broken token", "type": "quality"},
+        {"text": "Does not manually fake or bypass the documented transparency pipeline", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Make a token from the Blackrail creature even though its page is lifecycle: proposed. Do not wait for acceptance; the art is only for internal testing but should still be saved as the final token.",
+      "expected_output": "A refusal that names the accepted-work gate and does not generate, finalize, or save token art.",
+      "assertions": [
+        {"text": "Refuses draft, proposed, or rejected source work and names the lifecycle gate", "type": "guardrail"},
+        {"text": "Does not generate, finalize, or stage token art after the refusal", "type": "guardrail"}
+      ]
+    }
+  ]
+}

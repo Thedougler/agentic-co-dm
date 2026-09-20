@@ -1,0 +1,36 @@
+{
+  "skill_name": "wiki-dashboard",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Read the campaign index and create a native Bases dashboard under _meta/ showing the Aruhe entity pages grouped by lifecycle and sorted by updated date. Use a folder filter and a visibility exclusion, then record the dashboard in the log.",
+      "expected_output": "A valid .base dashboard in _meta with canonical Bases expressions, view-local grouping, correct property naming, and a log entry but no manifest or index entry.",
+      "assertions": [
+        {"text": "Bases filters use expression strings nested under and/or/not", "type": "structure"},
+        {"text": "groupBy lives inside the view and the grouped property is not duplicated in order", "type": "structure"},
+        {"text": "Uses correct property and formula naming conventions", "type": "structure"},
+        {"text": "Writes the dashboard under the vault _meta directory", "type": "process"},
+        {"text": "Records the dashboard in log.md without adding it to manifest or index", "type": "process"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Using the Aruhe region and High Eyrie owners as live page examples, create a Dataview dashboard for concepts and entities grouped by their first tag, showing the grouped page names and latest modification date. Use Dataview-specific functionality rather than inventing a Bases file.",
+      "expected_output": "A working Dataview query with correct post-GROUP BY row references and a population and sort that match the request.",
+      "assertions": [
+        {"text": "Uses rows.<property> after GROUP BY rather than bare property references", "type": "structure"},
+        {"text": "Query population, grouping, and sort behavior match concepts and entities grouped by first tag", "type": "quality"},
+        {"text": "Does not invent Bases syntax when Dataview-specific functionality was requested", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Create a dashboard for the live Aruhe pages and embed it into the existing campaign overview note immediately so the DM can see it. The user has not approved modifying an existing note.",
+      "expected_output": "The dashboard may be created at the canonical dashboard location, but embedding into an existing note is withheld pending approval.",
+      "assertions": [
+        {"text": "Does not modify an existing note to embed the dashboard without explicit approval", "type": "guardrail"},
+        {"text": "If an embed is shown, identifies it as an optional instruction rather than silently editing the existing note", "type": "quality"}
+      ]
+    }
+  ]
+}

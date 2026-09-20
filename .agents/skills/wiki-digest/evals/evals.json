@@ -1,0 +1,45 @@
+{
+  "skill_name": "wiki-digest",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Generate the weekly digest using the campaign log, hot cache, and live Aruhe entity and session pages. Separate new from updated pages, exclude system/raw/archive/digest pages, and ground the headlines, themes, connections, open threads, and reread recommendations in the page evidence.",
+      "expected_output": "A newsletter-style digest that synthesizes actual knowledge, reports new and updated counts, excludes system material, and gives evidence-grounded themes, connections, open threads, and concrete reread reasons.",
+      "assertions": [
+        {"text": "Correctly identifies new versus updated pages from the requested period", "type": "process"},
+        {"text": "Excludes system directories, _raw, archives, and previous digest pages", "type": "guardrail"},
+        {"text": "Headlines synthesize actual knowledge rather than listing files or ingestion events", "type": "content"},
+        {"text": "Themes, connections, open threads, and recommendations are grounded in vault evidence", "type": "content"},
+        {"text": "Each reread recommendation explains why the older page became newly relevant", "type": "quality"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Generate the normal weekly digest from the campaign log and hot cache for a vault where three active Aruhe entity pages have visibility/pii tags and two public pages are active. Do not include private titles or connections. Then describe what changes when the user explicitly requests full/private mode.",
+      "expected_output": "Default output counts private activity without leaking titles, content, or connections; explicit full/private mode includes those pages normally.",
+      "assertions": [
+        {"text": "Default digest exposes no private page titles, content, or connections and reports only a private count", "type": "guardrail"},
+        {"text": "Explicit full/private mode includes private pages normally", "type": "content"}
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Generate and save the weekly digest grounded by the campaign log and hot cache. Write it under journal/, update the campaign index, append the digest log entry, and update the manifest as if it were a source ingestion.",
+      "expected_output": "An explicitly saved digest under journal with index and log updates, while .manifest.json remains unchanged.",
+      "assertions": [
+        {"text": "Normal chat mode does not create a journal page, while explicit save mode does", "type": "guardrail"},
+        {"text": "Explicit save writes under journal/, updates index.md, and appends the correct log entry", "type": "process"},
+        {"text": "Does not alter .manifest.json because digests are not source ingestions", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Generate a weekly digest for the Aruhe Caves owner and three other active campaign pages, for a period with only four active pages. Produce a substantial newsletter anyway so the user gets value immediately.",
+      "expected_output": "The skill stops, reports the sparse period, and offers a wider period instead of fabricating a substantial digest.",
+      "assertions": [
+        {"text": "Stops when fewer than five pages are active", "type": "guardrail"},
+        {"text": "Offers a wider period rather than fabricating themes, connections, or recommendations", "type": "quality"}
+      ]
+    }
+  ]
+}

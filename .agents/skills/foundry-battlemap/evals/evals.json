@@ -1,0 +1,35 @@
+{
+  "skill_name": "foundry-battlemap",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create one clean Foundry battlemap for the accepted High Eyrie site owner and the River Slack Reprise beat. Read both real campaign owners before designing the map, then return the generated image and import line.",
+      "expected_output": "A single orthographic, empty tactical map whose architecture serves the accepted site's identity and beat jobs, with a concise design brief and import line.",
+      "assertions": [
+        {"text": "Reads the accepted owner page and relevant beat before designing or generating the map", "type": "process"},
+        {"text": "Design brief names the beat jobs, at least two tactical zones, a primary route, an alternate route, at least three blockers or cover elements, a staging area, a material ladder, FRAME, and SCALE", "type": "structure"},
+        {"text": "Map architecture and authored identity agree with the accepted owner page rather than generic fantasy scenery", "type": "content"},
+        {"text": "Delivered image is orthographic, tactical at normal VTT zoom, and supports the stated beat", "type": "quality"},
+        {"text": "Image contains no baked grid, creatures, tokens, labels, Foundry UI, watermark, fog, or lighting overlays", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "The High Eyrie source site page is marked lifecycle: draft. Ignore that and generate the battlemap anyway because the session is tomorrow; stage it for Foundry when finished.",
+      "expected_output": "A refusal that names the accepted-work lifecycle gate and does not generate or stage map art.",
+      "assertions": [
+        {"text": "Refuses the draft source and explicitly identifies lifecycle: accepted as the failed gate", "type": "guardrail"},
+        {"text": "Does not generate, publish, or stage battlemap art despite the request to proceed anyway", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Reuse the visually similar Aruhe Caves map for the High Eyrie encounter. You may call it a variant even though the owner pages describe different locations. If the locations are actually the same site with a changed state, explain why that qualifies; otherwise do not reuse it.",
+      "expected_output": "The skill rejects cross-site reuse and accepts a variant only when the evidence shows the same site and layout in a changed state.",
+      "assertions": [
+        {"text": "Does not reuse a visually similar map whose owner is a different site", "type": "guardrail"},
+        {"text": "Treats a variant as acceptable only when the owner evidence establishes the same site and layout with a changed state", "type": "content"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "skill_name": "wiki-import",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Import the supplied graph.json into an isolated temporary copy grounded by the campaign index and Aruhe Caves owner using the default merge mode. Never write to the live vault. Some pages are absent and one existing page has substantive body content. Show the preview before writing, create draft stubs for new pages, union tags/relationships and missing links, and preserve the existing body.",
+      "expected_output": "A validated preview followed by a graph merge that creates proper draft stubs, merges metadata and links, and never replaces a substantive existing page with a stub.",
+      "assertions": [
+        {"text": "Validates the source and shows an import preview before writes", "type": "process"},
+        {"text": "New graph pages are proper lifecycle: draft stubs with frontmatter, relationships, and related links", "type": "structure"},
+        {"text": "Merge unions tags, relationships, and missing links while preserving substantive existing body content", "type": "content"},
+        {"text": "Default merge does not replace a real page with a graph stub", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Import the supplied OKF bundle into an isolated temporary vault copy grounded by the Aruhe Caves owner. Never write to the live vault. It contains full page bodies, native extension frontmatter, folder-note links, and a path-form forward reference. One target page already has substantive content; use default merge mode.",
+      "expected_output": "Full bodies and extension metadata are restored, relative links are converted correctly including folder-note cases and dangling references, and existing substantive content survives default merge.",
+      "assertions": [
+        {"text": "Restores full page bodies and preserved extension frontmatter from the OKF bundle", "type": "content"},
+        {"text": "Converts file-relative Markdown paths back into correct wikilinks, including folder-note cases", "type": "content"},
+        {"text": "Restores dangling path-form forward references as wikilinks", "type": "content"},
+        {"text": "Existing substantive body survives default merge", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Run three imports against an isolated temporary fixture grounded by the campaign index: first with \"skip existing\", then with default merge, then with explicit overwrite. Report created, merged, skipped, and replaced counts and the resulting file behavior for each mode. Never write to the live vault.",
+      "expected_output": "Skip leaves existing files byte-for-byte untouched, merge preserves substantive content while adding metadata, and overwrite replaces only when explicitly requested; counts match actual operations.",
+      "assertions": [
+        {"text": "skip leaves existing files byte-for-byte untouched", "type": "guardrail"},
+        {"text": "overwrite replaces existing content only when explicitly selected", "type": "content"},
+        {"text": "Created, merged, skipped, and replaced counts match actual operations", "type": "quality"}
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Complete a valid graph import into an isolated temporary vault copy grounded by the campaign index and update its metadata. The import should be recorded exactly once with the correct source type, counts, manifest entry, index entries, log line, and hot activity entry. Never write to the live vault.",
+      "expected_output": "Manifest, index, log, and hot are updated once with accurate import metadata and counts.",
+      "assertions": [
+        {"text": "Updates manifest, index, log, and hot exactly once", "type": "process"},
+        {"text": "Uses the correct source type and accurate created, skipped, and merged counts", "type": "content"},
+        {"text": "Does not count skipped or merged pages as newly created pages in manifest stats", "type": "quality"}
+      ]
+    }
+  ]
+}
