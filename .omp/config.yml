@@ -32,10 +32,10 @@ async:
 compaction:
   enabled: true
   experimentalContextManagement: true
-  thresholdPercent: 60
+  thresholdPercent: 70
   thresholdTokens: -1
   midTurnEnabled: true
-  keepRecentTokens: 12000
+  keepRecentTokens: 20000
   asyncEnabled: true
   autoContinue: true
   methodOrder:
@@ -52,7 +52,7 @@ compaction:
 advisor:
   enabled: false
 memory:
-  backend: "off"
+  backend: "mnemopi"
 mnemopi:
   scoping: per-project-tagged
   autoRecall: true
@@ -72,7 +72,7 @@ mnemopi:
 autolearn:
   enabled: false
   autoContinue: true
-  minToolCalls: 20
+  minToolCalls: 10
 tools:
   approvalMode: yolo
   format: auto
