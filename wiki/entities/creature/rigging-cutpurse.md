@@ -21,10 +21,18 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Rigging Cutpurse
 
-## Stats & Combat
+> [!narration] Narration
+>
+
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -68,15 +76,21 @@ bonus_actions:
 **Wants:** to grab the prize and run. Fighting is what the bosun does. The cutpurse's hands are for taking and throwing.
 **Morale:** flees the instant it takes any damage while not carrying the prize. If carrying the prize, Dashes toward extraction and tosses to the nearest ally.
 
-## Description
+## Biology
+
+**Description.**
 
 Light and fast, dressed in dark close-fitting clothes with soft-soled shoes and no armour heavier than a leather vest. Cutpurses climb rigging the way other people walk corridors, and their hands never stop moving. They come aboard from above or from the blind side, wherever nobody is looking.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 Rigging cutpurses crew the same [[Midchain]] pirate cutters as [[tidehex captains]] and [[pirate-bosun|bosuns]], but captains pick them from port thieves and rooftop runners, not from the forecastle. The sea legs come later, if they come at all. What the captain pays for is hands that can lift a coin purse off a man's belt while he swings a sword at someone else, and the nerve to do it on a rolling deck.
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|

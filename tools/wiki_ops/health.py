@@ -9,15 +9,17 @@ from __future__ import annotations
 import copy
 import math
 import re
+import json
+
 from collections import Counter
 from collections.abc import Iterable, Mapping, Sequence
-from pathlib import PurePosixPath
+from pathlib import Path, PurePosixPath
 from typing import Any, TypeAlias
 
 JsonObject: TypeAlias = dict[str, Any]
 TrackerInput: TypeAlias = Mapping[str, Any] | Sequence[Mapping[str, Any]] | None
 
-__all__ = ["build_trends", "build_focus", "build_health_snapshot"]
+__all__ = ["build_trends", "build_focus", "build_health_snapshot", "build_context_load", "build_core_files"]
 
 _DRIVE_PATH = re.compile(r"^[A-Za-z]:(?:/|\\)")
 
@@ -159,10 +161,41 @@ def _cause_rows(value: Any) -> list[dict[str, Any]]:
     return result[:3]
 
 
+def _error_entries(value: Any, *, limit: int = 5) -> list[dict[str, Any]]:
+    """Expose small open-ledger records without dumping the ledger."""
+    rows = _rows(value, ("records", "errors", "entries", "items"))
+    entries: list[dict[str, Any]] = []
+    for row in rows:
+        status = row.get("status")
+        if not isinstance(status, str) or status.casefold() != "open":
+            continue
+        entry: dict[str, Any] = {"status": "open"}
+        for key in ("id", "cause"):
+            if isinstance(row.get(key), str) and row[key].strip():
+                entry[key] = row[key].strip()
+        path = _error_path(row)
+        if path:
+            entry["path"] = path
+        elif isinstance(row.get("sitting"), str) and row["sitting"].strip():
+            entry["sitting"] = row["sitting"].strip()
+        entries.append(entry)
+    return entries if len(entries) <= limit else []
+
+
+def _with_error_entries(result: dict[str, Any], source: Any) -> dict[str, Any]:
+    entries = _error_entries(source)
+    if entries:
+        result["entries"] = entries
+    elif _rows(source, ("records", "errors", "entries", "items")) == []:
+        result["entries"] = []
+    return result
+
+
 def _error_trends(errors: TrackerInput) -> dict[str, Any]:
     summary = _summary_mapping(errors, ("open_count", "causes"))
     if summary is not None and "open_count" in summary:
-        return {"open_count": _int(summary.get("open_count")), "causes": _cause_rows(summary.get("causes"))}
+        result = {"open_count": _int(summary.get("open_count")), "causes": _cause_rows(summary.get("causes"))}
+        return _with_error_entries(result, summary.get("entries"))
 
     rows = _rows(errors, ("records", "errors", "entries", "items"))
     causes: Counter[str] = Counter()
@@ -175,13 +208,14 @@ def _error_trends(errors: TrackerInput) -> dict[str, Any]:
         cause = row.get("cause")
         if isinstance(cause, str) and cause.strip():
             causes[cause.strip()] += 1
-    return {
+    result = {
         "open_count": open_count,
         "causes": [
             {"cause": cause, "count": count}
             for cause, count in sorted(causes.items(), key=lambda pair: (-pair[1], pair[0]))[:3]
         ],
     }
+    return _with_error_entries(result, rows)
 
 
 def _trajectory_tokens(row: Mapping[str, Any]) -> int:
@@ -369,6 +403,8 @@ def _lint_reason(lint: Mapping[str, Any], page: str) -> str:
             if row.get("page", row.get("path")) != page:
                 continue
             findings = row.get("findings", row.get("rules"))
+            if isinstance(findings, (int, float)) and not isinstance(findings, bool):
+                return f"{_int(findings)} lint findings on this page"
             if isinstance(findings, str) and findings.strip():
                 return findings.strip()
             if isinstance(findings, Sequence) and not isinstance(findings, (str, bytes, bytearray)):
@@ -380,8 +416,16 @@ def _lint_reason(lint: Mapping[str, Any], page: str) -> str:
     if isinstance(counts, Mapping):
         rules = sorted(str(rule) for rule, count in counts.items() if _int(count) > 0)
         if rules:
-            return rules[0]
+            return f"{rules[0]} lint findings"
     return "lint findings"
+
+
+def _focus_action(source: str, path: str, reason: str) -> str:
+    if source == "lint":
+        return f"Repair {reason} in {path}, then rerun wiki health."
+    if source == "tracker":
+        return f"Resolve the open error for {path}, then rerun wiki health."
+    return f"Apply the {source} plan for {path}, then rerun wiki health."
 
 
 def _error_path(row: Any) -> str | None:
@@ -424,7 +468,13 @@ def build_focus(
         if relative is None or relative in seen:
             return
         seen.add(relative)
-        items.append({"path": relative, "reason": _reason(reason, fallback), "source": source})
+        objective = _reason(reason, fallback)
+        items.append({
+            "path": relative,
+            "reason": objective,
+            "source": source,
+            "action": _focus_action(source, relative, objective),
+        })
 
     if isinstance(lint, Mapping):
         add(lint.get("next_page"), _lint_reason(lint, str(lint.get("next_page", ""))), "lint", "lint findings")
@@ -478,11 +528,51 @@ def build_focus(
 def _compact_lint(lint: Any) -> dict[str, Any]:
     if not isinstance(lint, Mapping):
         return {}
-    return {
+    result = {
         key: _clone(value)
         for key, value in lint.items()
         if key not in {"findings", "findings_by_file", "files"}
     }
+    raw_counts = lint.get("counts")
+    counts = raw_counts if isinstance(raw_counts, Mapping) else {}
+    finding_total = sum(_int(value) for value in counts.values())
+    backlog = lint.get("backlog")
+    affected_pages = (
+        len(backlog)
+        if isinstance(backlog, Sequence) and not isinstance(backlog, (str, bytes, bytearray))
+        else len({
+            target
+            for values in (lint.get("unique"),)
+            if isinstance(values, Mapping)
+            for targets in values.values()
+            if isinstance(targets, Sequence) and not isinstance(targets, (str, bytes, bytearray))
+            for target in targets
+        })
+    )
+    blocking = [
+        {"rule": str(rule), "findings": _int(count)}
+        for rule, count in sorted(counts.items(), key=lambda item: str(item[0]))
+        if _int(count) > 0
+    ]
+    hard_fail = bool(lint.get("hard_fail"))
+    result.update({
+        "finding_total": finding_total,
+        "affected_pages": affected_pages,
+        "blocking": blocking if hard_fail else [],
+        "meaning": (
+            f"{finding_total:,} blocking lint findings remain across {affected_pages:,} pages."
+            if hard_fail
+            else "No blocking lint findings remain."
+        ),
+        "action": (
+            "Repair the blocking findings, then rerun wiki health."
+            if hard_fail
+            else "No blocking lint repair is required."
+        ),
+    })
+    return result
+
+
 def _layer_object(value: Any, fields: Sequence[str]) -> dict[str, Any]:
     source: Mapping[str, Any] = value if isinstance(value, Mapping) else {}
     raw_metric = source.get("metric")
@@ -508,6 +598,244 @@ def _status(status: Any, lint: Mapping[str, Any]) -> str:
     return result
 
 
+def _repo_relative(root: Path, path: Path) -> str:
+    try:
+        return path.resolve().relative_to(root.resolve()).as_posix()
+    except ValueError:
+        return path.name
+
+
+def _token_row(root: Path, path: Path, encoding: str) -> dict[str, Any] | None:
+    if not path.is_file():
+        return None
+    from tools.token_count import count_file
+
+    counted = count_file(path, encoding=encoding)
+    return {"path": _repo_relative(root, path), "tokens": int(counted["tokens"])}
+
+
+def _previous_first_turn(traces: TrackerInput) -> int | None:
+    rows = traces if isinstance(traces, Sequence) and not isinstance(traces, (str, bytes, bytearray)) else ()
+    for row in reversed(list(rows)):
+        if not isinstance(row, Mapping):
+            continue
+        if row.get("record_kind") != "command" or row.get("command") != "health":
+            continue
+        value = row.get("first_turn_tokens")
+        if value is None:
+            continue
+        try:
+            return int(value)
+        except (TypeError, ValueError):
+            continue
+    return None
+
+
+def _eval_coverage(skill_dir: Path) -> dict[str, Any]:
+    path = skill_dir / "evals" / "evals.json"
+    empty = {"evals": 0, "criteria": 0, "coverage": "without"}
+    if not path.is_file():
+        return empty
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return empty
+    cases = payload.get("evals") if isinstance(payload, Mapping) else payload
+    if not isinstance(cases, list):
+        return empty
+    evals = 0
+    criteria = 0
+    for case in cases:
+        if not isinstance(case, Mapping):
+            continue
+        evals += 1
+        rows = case.get("assertions") or case.get("expectations") or ()
+        if not isinstance(rows, list):
+            continue
+        for row in rows:
+            if isinstance(row, str) and row.strip():
+                criteria += 1
+            elif isinstance(row, Mapping) and str(row.get("text") or "").strip():
+                criteria += 1
+    return {
+        "evals": evals,
+        "criteria": criteria,
+        "coverage": "with" if evals and criteria else "without",
+    }
+
+
+INDEX_LINE = re.compile(r"\[\[[^\]]+\]\]\s+[—–-]")
+LOG_LINE = re.compile(r"\[20\d{2}-\d{2}-\d{2}[T ]")
+HEADING = re.compile(r"^##\s+(.+)$", re.M)
+H1 = re.compile(r"^#\s+", re.M)
+CORE_FILES = (
+    ("index.md", "master index of every page"),
+    ("hot.md", "500-word semantic snapshot"),
+    ("log.md", "chronological activity log"),
+    ("AGENTS.md", "owner conventions"),
+)
+
+
+def _core_body(text: str) -> str:
+    if text.startswith("---"):
+        end = text.find("\n---", 3)
+        if end != -1:
+            return text[end + 4 :]
+    return text
+
+
+def build_core_files(vault: str | Path) -> dict[str, Any]:
+    """Flag oversized, bloated, duplicate, redundant, and overlapping llm-wiki core files."""
+    root = Path(vault)
+    files: list[dict[str, Any]] = []
+    issues: list[dict[str, str]] = []
+    headings: dict[str, str] = {}
+    for name, job in CORE_FILES:
+        path = root / name
+        row = {"path": name, "job": job, "exists": path.is_file(), "bytes": 0, "words": 0, "index_lines": 0, "log_lines": 0}
+        if path.is_file():
+            raw = path.read_text(encoding="utf-8")
+            body = _core_body(raw)
+            words = [part for part in body.split() if part]
+            index_lines = len(INDEX_LINE.findall(body))
+            log_lines = len(LOG_LINE.findall(body))
+            row.update({
+                "bytes": path.stat().st_size,
+                "words": len(words),
+                "index_lines": index_lines,
+                "log_lines": log_lines,
+            })
+            if len(H1.findall(body)) > 1:
+                issues.append({"path": name, "kind": "bloated", "reason": f"{name} has multiple H1 headings"})
+            if name == "hot.md" and len(words) > 500:
+                issues.append({"path": name, "kind": "oversized", "reason": f"hot.md is {len(words)} words; snapshot job is 500"})
+            if name == "AGENTS.md" and row["bytes"] > 24 * 1024:
+                issues.append({"path": name, "kind": "oversized", "reason": f"AGENTS.md is {row['bytes']} bytes; conventions belong behind a pointer past 24KB"})
+            if name == "hot.md" and index_lines > 8:
+                issues.append({"path": name, "kind": "cohesion", "reason": "hot.md is doing the index.md listing job"})
+            if name == "hot.md" and log_lines > 3:
+                issues.append({"path": name, "kind": "cohesion", "reason": "hot.md is doing the log.md activity-log job"})
+            if name == "index.md" and log_lines > 5:
+                issues.append({"path": name, "kind": "cohesion", "reason": "index.md is doing the log.md activity-log job"})
+            if name == "log.md" and index_lines > 20 and log_lines == 0:
+                issues.append({"path": name, "kind": "cohesion", "reason": "log.md is doing the index.md listing job"})
+            if name == "AGENTS.md" and (index_lines > 8 or log_lines > 3):
+                issues.append({"path": name, "kind": "cohesion", "reason": "AGENTS.md is duplicating index.md or log.md"})
+            for heading in HEADING.findall(body):
+                key = heading.strip().casefold()
+                if key in headings and headings[key] != name:
+                    issues.append({
+                        "path": name,
+                        "kind": "duplication",
+                        "reason": f"{name} and {headings[key]} share heading {heading.strip()}",
+                    })
+                else:
+                    headings[key] = name
+        files.append(row)
+    act = [
+        f"Repair {item['path']} ({item['kind']}): {item['reason']}. Done: index.md lists pages, log.md is the activity log, hot.md is a 500-word snapshot, AGENTS.md is conventions only."
+        for item in issues
+    ]
+    return {"files": files, "issues": issues, "act": act}
+
+
+def build_context_load(
+    *,
+    root: Path,
+    vault: Path,
+    traces: TrackerInput = None,
+    encoding: str | None = None,
+) -> dict[str, Any]:
+    """Tiktoken first-turn files, ranked skills, and imperative act steps."""
+    from tools.token_count import resolve_encoding
+
+    enc = resolve_encoding(encoding)
+    seen: set[str] = set()
+    files: list[dict[str, Any]] = []
+    for path in (
+        root / ".omp" / "AGENTS.md",
+        root / "AGENTS.md",
+        vault / "AGENTS.md",
+        vault / "hot.md",
+    ):
+        row = _token_row(root, path, enc)
+        if row is None or row["path"] in seen:
+            continue
+        seen.add(str(row["path"]))
+        files.append(row)
+    files.sort(key=lambda item: (-int(item["tokens"]), str(item["path"])))
+    first_total = sum(int(item["tokens"]) for item in files)
+
+    skills: list[dict[str, Any]] = []
+    with_evals = 0
+    without_evals = 0
+    for skill in sorted((root / ".agents" / "skills").glob("*/SKILL.md")):
+        row = _token_row(root, skill, enc)
+        if row is None:
+            continue
+        coverage = _eval_coverage(skill.parent)
+        if coverage["coverage"] == "with":
+            with_evals += 1
+        else:
+            without_evals += 1
+        skills.append({
+            "name": skill.parent.name,
+            "path": row["path"],
+            "tokens": row["tokens"],
+            "evals": coverage["evals"],
+            "criteria": coverage["criteria"],
+            "coverage": coverage["coverage"],
+        })
+    skills.sort(key=lambda item: (-int(item["tokens"]), str(item["name"])))
+
+    previous = _previous_first_turn(traces)
+    delta = None if previous is None else first_total - previous
+    if previous is None:
+        trend = "new"
+    elif delta and delta > 0:
+        trend = "up"
+    elif delta and delta < 0:
+        trend = "down"
+    else:
+        trend = "flat"
+
+    act: list[str] = []
+    if files:
+        heaviest = files[0]
+        act.append(
+            f"Disclose {heaviest['path']} ({heaviest['tokens']} tokens) behind a pointer when that file is reference. Done: first-turn files are steps only."
+        )
+    if skills:
+        heaviest_skill = skills[0]
+        act.append(
+            f"Load {heaviest_skill['name']} ({heaviest_skill['tokens']} tokens, {heaviest_skill['coverage']} eval criteria) only when this job matches that skill. Done: SKILL.md stayed behind its description unless the job matched."
+        )
+        missing = next((item for item in skills if item["coverage"] == "without"), None)
+        if missing:
+            act.append(
+                f"Add eval criteria for {missing['name']} ({missing['tokens']} tokens, evals={missing['evals']}, criteria={missing['criteria']}). Done: evals.json has assertions or expectations."
+            )
+    if trend == "up" and delta:
+        act.append(
+            f"First-turn grew by {delta} tokens since last wiki health. Disclose the grown file. Done: first-turn delta is 0 or down."
+        )
+
+    return {
+        "encoding": enc,
+        "first_turn": {"total_tokens": first_total, "files": files},
+        "skills": skills[:15],
+        "skills_total": len(skills),
+        "eval_coverage": {"with": with_evals, "without": without_evals},
+        "efficiency": {
+            "first_turn_tokens": first_total,
+            "previous_first_turn_tokens": previous,
+            "delta_tokens": delta,
+            "trend": trend,
+        },
+        "act": act,
+    }
+
+
 def build_health_snapshot(
     *,
     status: str,
@@ -521,11 +849,17 @@ def build_health_snapshot(
     policy: Mapping[str, Any] | None,
     trends: Mapping[str, Any] | None,
     focus: Sequence[Mapping[str, Any]] | None = None,
+    context: Mapping[str, Any] | None = None,
 ) -> dict[str, Any]:
     """Assemble the compact path-scoped health snapshot."""
     compact_lint = _compact_lint(lint)
     focus_rows = [
-        {"path": str(item["path"]), "reason": str(item["reason"]), "source": str(item["source"])}
+        {
+            "path": str(item["path"]),
+            "reason": str(item["reason"]),
+            "source": str(item["source"]),
+            "action": str(item.get("action") or _focus_action(str(item["source"]), str(item["path"]), str(item["reason"]))),
+        }
         for item in (focus or ())
         if isinstance(item, Mapping) and {"path", "reason", "source"}.issubset(item)
     ][:5]
@@ -542,5 +876,18 @@ def build_health_snapshot(
         "trends": _clone(trends) if isinstance(trends, Mapping) else build_trends(None, None, None),
         "focus": focus_rows,
         "next": _clone(focus_rows[0]) if focus_rows else None,
+        "context": _clone(context) if isinstance(context, Mapping) else {
+            "encoding": "cl100k_base",
+            "first_turn": {"total_tokens": 0, "files": []},
+            "skills": [],
+            "skills_total": 0,
+            "efficiency": {
+                "first_turn_tokens": 0,
+                "previous_first_turn_tokens": None,
+                "delta_tokens": None,
+                "trend": "new",
+            },
+            "act": [],
+        },
     }
     return snapshot

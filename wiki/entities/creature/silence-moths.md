@@ -31,17 +31,11 @@ relationships:
 ---
 # Silence Moths
 
-## Statblock
-
-````col
-```col-md
-flexGrow=2
-===
 > [!narration] Narration
 > Thumb-sized, colorless moths drift at dusk and dawn in a cloud the size of a sail. Ahead of the swarm the jungle goes quiet, then the cloud fills a mouth.
-```
 
-```col-md
+## Statblock
+
 ```statblock
 layout: Basic 5e Layout
 name: "Silence Moths"
@@ -69,10 +63,9 @@ actions:
   - name: "Engulf"
     desc: "Melee Weapon Attack: +6 to hit, reach 0 ft., one target in the swarm's space. Hit: 21 (6d6) piercing damage, or 10 (3d6) piercing damage if the swarm has half its hit points or fewer."
 ```
-```
-````
 
 ## Behavior
+
 
 - **Habitat.** Rot and Grove approaches at dusk and dawn. Fire drives them off. They will not leave the trees.
 - **Behavior.** Cloud advances with silence ahead, then fills mouths.
@@ -80,6 +73,7 @@ actions:
 - **Social Structure.** Swarm.
 
 ## Tactics
+
 
 - **Signs.** Jungle sound cuts out. A sail-sized colorless cloud follows.
 - **Instincts.** Fill a mouth. Keep to the trees.

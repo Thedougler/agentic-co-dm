@@ -34,17 +34,11 @@ relationships:
 ---
 # Young Snakewood
 
-## Statblock
-
-````col
-```col-md
-flexGrow=2
-===
 > [!narration] Narration
 > On the first terraces, ordinary vines hang in the low canopy. Five or six stems tighten together, and tiny flowers show inside a forming wedge. The low branches shake when the stems draw tight.
-```
 
-```col-md
+## Statblock
+
 ```statblock
 layout: Basic 5e Layout
 name: "Young Snakewood"
@@ -80,10 +74,9 @@ actions:
   - name: "Constrict"
     desc: "One creature grappled by the young Snakewood takes 13 (2d8 + 4) bludgeoning damage."
 ```
-```
-````
 
 ## Behavior
+
 
 - **Habitat.** First terraces and orchard edges such as [[old-gardens]], where connected low branches provide the skeleton. Adults live farther in.
 - **Behavior.** At rest it is ordinary vines. When it strikes, stems braid into a wedge, clap shut, and lift prey into the low canopy.
@@ -91,6 +84,7 @@ actions:
 - **Social Structure.** Clonal juvenile of the same liana as adult Snakewood. Keep [[vine-lash]] on narrow trail lanes and young Snakewood on wider canopy lanes.
 
 ## Tactics
+
 
 - **Signs.** Five or six stems tighten. Tiny flowers appear inside the closing jaw. Low canopy shakes.
 - **Instincts.** One target. Practice grab-and-lift where vegetation connects.

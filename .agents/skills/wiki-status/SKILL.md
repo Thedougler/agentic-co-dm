@@ -16,8 +16,10 @@ You are computing the current state of the wiki: what's been ingested, what's ne
 
 ## Before You Start
 
-1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `OBSIDIAN_SOURCES_DIR`, `CLAUDE_HISTORY_PATH`, and `CODEX_HISTORY_PATH`.
+1. **Resolve config** — follow the Config Resolution Protocol in AGENTS.md (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `OBSIDIAN_SOURCES_DIR`, `CLAUDE_HISTORY_PATH`, and `CODEX_HISTORY_PATH`.
 2. Use `python3 scripts/manifest.py stats "$OBSIDIAN_VAULT_PATH"` (then `list`/`has`/`get`/`lookup` as needed) — do **not** read whole `.manifest.json`
+3. Vault fitness: `wiki health` then do `context.act`, then `next`. Done: first-turn load is named and `next.path` is acted on.
+
 
 ## The Manifest
 
@@ -219,7 +221,7 @@ Replace the old single-line Recommendation with a ranked **What to Do Next** sec
 
 5. **Source delta** — from Step 2: count of new + modified sources ready to ingest.
 
-6. **Lint issues** — check `log.md` for a recent `/wiki-lint` run (within last 30 days). If a recent run recorded broken links or missing frontmatter, surface the count. If no lint run appears in the log, flag "lint not run recently".
+6. **Structural health** — run `wiki health`; when a scope is relevant, run `wiki lint <scope>` and surface current hard findings. Do not use `log.md` as a lint ledger.
 
 ### 4b: Rank and render
 
@@ -232,7 +234,7 @@ Score each category and emit a ranked list, **capped at 6 items**. Always rank i
 | 3 | Orphan pages | Any pages with zero incoming wikilinks |
 | 4 | Synthesis opportunities | N opportunities from last synthesize run, OR scan overdue |
 | 5 | New/modified sources | Count from delta in Step 2 |
-| 6 | Lint issues | Known issues from last lint run, OR lint overdue |
+| 6 | Structural health | Current hard findings from `wiki health` or `wiki lint`, if any |
 
 Render as:
 
@@ -254,10 +256,10 @@ Render as:
 
 5. ✅  4 sources modified since last ingest  →  run: /wiki-ingest (append mode)
 
-6. 🩺  Lint not run in 30+ days — run: /wiki-lint
+6. 🩺  Structural findings present — run: `wiki health` (or `wiki lint <scope>`)
 ```
 
-**Empty state:** If all categories have nothing to report (no `_raw/` files, no orphans, no stale pages, no synthesis opportunities, no new sources, no lint issues), output instead:
+**Empty state:** If all categories have nothing to report (no `_raw/` files, no orphans, no stale pages, no synthesis opportunities, no new sources, no structural findings), output instead:
 
 ```markdown
 ## What to Do Next
@@ -448,8 +450,7 @@ Verify the collection with either:
 ${QMD_CLI:-qmd} ls "${QMD_WIKI_COLLECTION:-wiki}"
 ```
 
-For a specific page, follow the exact QMD retrieval rule in
-`.agents/skills/llm-wiki/SKILL.md`: search first, then pass the returned docid
+For a specific page, follow the exact QMD retrieval rule in AGENTS.md (Vault retrieval): search first, then pass the returned docid
 or source verbatim to `qmd get` / `qmd multi-get`.
 
 Record one of:

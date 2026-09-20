@@ -59,3 +59,13 @@ No captain, officers, or crew are named in the source — the page describes the
 ## Goals & Fronts
 
 No Front clock is defined for this faction. Its operating pattern is convoy disruption and prize-taking along the Midchain/Central Strait/Tail/Drowned Maw approaches, with the [[dravosi-crown]] as primary institutional enemy — descriptive only, not a formal Front.
+
+## At a Glance
+
+## At the Table
+
+## Current State
+
+## People & Structure
+
+## Running the Faction

@@ -61,6 +61,34 @@
         {"text": "The missing Deer-Stalker combat stats are flagged rather than its math invented.", "type": "process"},
         {"text": "Pass boundary: dnd5e-mechanics loaded on pass 1; writing-for-humans only on pass 2; theatre-of-the-mind only on pass 3.", "type": "process"}
       ]
+    },
+    {
+      "id": "cockpit-shape-development",
+      "prompt": "Render a DM-only run guide for a Development beat where the party finds a camp and learns a local rule from the survivors. The beat is talk-mode with no combat. Use established wiki NPCs. The next beat is a Cliffhanger that tests what the party learns here.",
+      "expected_output": "One cockpit filed from the session-prep template. Talk-mode: no threat clock (or a social/time-pressure clock instead of combat rounds). Zones table has Narration column with italic stubs. Be ready for covers social outcomes. Action cards for NPCs with wants and posture, not combat stats.",
+      "assertions": [
+        {"text": "Scene ends when is the first ## heading with an end condition and time budget.", "type": "structure"},
+        {"text": "At a Glance col-md block contains stakes, goal or exit, danger, and situation magnets.", "type": "structure"},
+        {"text": "Action cards name NPC wants, posture, and what changes their posture — not combat stat blocks.", "type": "content"},
+        {"text": "Zones table includes a Narration column with ==_italic_== stubs on pass 1.", "type": "structure"},
+        {"text": "Be ready for table covers social outcomes — what if they offend, what if they ask the wrong question, what if they leave early.", "type": "content"},
+        {"text": "How the Scene Resolves has an options table with at least three outcomes and their carry-forward to the next beat.", "type": "structure"},
+        {"text": "No threat clock in combat-round form — talk-mode uses a social or time-pressure clock if any.", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": "cockpit-shape-climax",
+      "prompt": "Render a DM-only run guide for a Climax beat where the party confronts a rival who has been shadowing them. The rival wants to steal a contested item while the party sleeps. Multiple resolution paths exist: direct combat, negotiation, setting a trap, or letting the rival succeed and pursuing. Use established wiki entities for the rival and item.",
+      "expected_output": "One cockpit with the full session-prep template shape. Multiple action cards (one per resolution path). Threat clock with escalation. Zones table with tactical terrain. Be ready for table covers each resolution path's branching moments. How the Scene Resolves covers all paths with distinct world-state changes.",
+      "assertions": [
+        {"text": "Scene ends when is the first ## heading with an end condition and time budget.", "type": "structure"},
+        {"text": "Action cards exist for at least the rival and the contested item, with stats from wiki owner pages.", "type": "content"},
+        {"text": "Procedure section names each resolution path as a distinct mode with its own sequence.", "type": "structure"},
+        {"text": "Threat clock has numbered escalation steps and a Narration column with ==_italic_== stubs on pass 1.", "type": "structure"},
+        {"text": "How the Scene Resolves options table covers at least: party wins by force, party wins by cunning, rival succeeds, and a mixed outcome.", "type": "content"},
+        {"text": "Roster includes ![[entity#Statblock]] embeds for combat-capable entities — stats are not retyped.", "type": "structure"},
+        {"text": "Be ready for table has at least 5 rows covering branching moments across the resolution paths.", "type": "content"}
+      ]
     }
   ]
 }

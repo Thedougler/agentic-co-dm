@@ -3,15 +3,22 @@ from __future__ import annotations
 
 import json
 import os
-import shutil
 import subprocess
+import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Any
+
 
 from .finding import Finding
 from .registry import Registry
 
 ROOT = Path(__file__).resolve().parents[2]
+TIMING: dict[str, int] = {}
+VALE_BATCH_SIZE = 100
+VALE_MAX_WORKERS = 8
+VALE_TIMEOUT_SECONDS = 60
+
 
 
 def _relative_file(value: str | Path, root: Path) -> str:
@@ -58,10 +65,11 @@ def map_vale_output(payload: dict[str, Any], registry: Registry, *, root: Path |
                 location["text"] = str(alert["Match"])
             message = str(alert.get("Message") or alert.get("Match") or (rule.message if rule else check))
             action_kind = "delete_section" if check.casefold().startswith("deprecated.") else "replace_section"
+            default_severity = "REPAIR" if is_custom else rule.severity if rule else "BLOCK"
             findings.append(Finding(
                 rule_id=f"VALE_{check}" if is_custom else lookup_id,
                 result="fail",
-                severity=(severity_overrides or {}).get(lookup_id, "REPAIR" if is_custom else rule.severity),
+                severity=(severity_overrides or {}).get(lookup_id, default_severity),
                 location=location,
                 evidence=message,
                 reason=rule.message if rule else message,
@@ -97,16 +105,51 @@ def _runtime_failure(files: list[Path], root: Path, reason: str) -> Finding:
     )
 
 
+
+def _vale_json(
+    binary: str, root: Path, files: list[Path], style: str | None
+) -> tuple[subprocess.CompletedProcess[str], int]:
+    command = [binary, "--output=JSON", f"--config={root / '.vale.ini'}"]
+    if style:
+        command.append(f'--filter=.Name matches "{style}.+"')
+    command.extend(_relative_file(path, root) for path in files)
+    started = time.monotonic()
+    try:
+        proc = subprocess.run(
+            command,
+            cwd=root,
+            capture_output=True,
+            text=True,
+            env=os.environ.copy(),
+            timeout=VALE_TIMEOUT_SECONDS,
+        )
+    except subprocess.TimeoutExpired as exc:
+        stdout = exc.stdout.decode() if isinstance(exc.stdout, bytes) else exc.stdout or ""
+        proc = subprocess.CompletedProcess(
+            command,
+            124,
+            stdout,
+            f"Vale timed out after {VALE_TIMEOUT_SECONDS}s",
+        )
+    except OSError as exc:
+        proc = subprocess.CompletedProcess(command, 126, "", f"Vale could not run: {exc}")
+    return proc, int((time.monotonic() - started) * 1000)
+
+
 def run_vale(files: list[Path], registry: Registry, *, root: Path | None = None,
              vault: Path | None = None, severity_overrides: dict[str, str] | None = None,
              executable: str = "vale") -> tuple[list[Finding], list[str]]:
+    global TIMING
+    TIMING = {}
     root = (root or ROOT).resolve()
     if not files:
         return [], []
     warnings: list[str] = []
     try:
         from .vale_vocab import refresh_vocab
+        started = time.monotonic()
         refresh_vocab(root, (vault or root / "wiki").resolve())
+        TIMING["tools/creative_lint/vale_vocab.py"] = int((time.monotonic() - started) * 1000)
     except (OSError, ValueError) as exc:
         reason = f"Vale proper-noun vocabulary refresh failed: {exc}"
         return [_runtime_failure(files, root, reason)], [reason]
@@ -114,30 +157,46 @@ def run_vale(files: list[Path], registry: Registry, *, root: Path | None = None,
     if not binary:
         reason = f"Project-local Vale is not installed at {root / '.venv' / 'bin' / executable}; run uv sync"
         return [_runtime_failure(files, root, reason)], [reason]
-    command = [
-        binary, "--output=JSON",
-        f"--config={root / '.vale.ini'}",
-        *[_relative_file(p, root) for p in files],
+    payloads: list[dict[str, Any]] = []
+    runtime_failures: list[Finding] = []
+    batches = [
+        files[start:start + VALE_BATCH_SIZE]
+        for start in range(0, len(files), VALE_BATCH_SIZE)
     ]
-    proc = subprocess.run(command, cwd=root, capture_output=True, text=True, env=os.environ.copy())
-    if proc.stderr.strip():
-        warnings.append(proc.stderr.strip())
-    if proc.returncode not in (0, 1):
-        reason = f"Vale exited {proc.returncode}"
-        warnings.append(reason)
-        return [_runtime_failure(files, root, reason)], warnings
-    if not proc.stdout.strip():
-        reason = "Vale returned no JSON output"
-        warnings.append(reason)
-        return [_runtime_failure(files, root, reason)], warnings
-    try:
-        payload = json.loads(proc.stdout)
-    except json.JSONDecodeError as exc:
-        reason = f"Vale returned invalid JSON: {exc}"
-        warnings.append(reason)
-        return [_runtime_failure(files, root, reason)], warnings
-    if not isinstance(payload, dict):
-        reason = "Vale returned a non-object JSON payload"
-        warnings.append(reason)
-        return [_runtime_failure(files, root, reason)], warnings
-    return map_vale_output(payload, registry, root=root, severity_overrides=severity_overrides), warnings
+    started = time.monotonic()
+    if len(batches) == 1:
+        results = [_vale_json(binary, root, batches[0], None)]
+    else:
+        with ThreadPoolExecutor(max_workers=min(VALE_MAX_WORKERS, len(batches))) as pool:
+            results = list(pool.map(lambda batch: _vale_json(binary, root, batch, None), batches))
+    TIMING["vale"] = int((time.monotonic() - started) * 1000)
+
+    merged: dict[str, list[Any]] = {}
+    for batch, (proc, _) in zip(batches, results):
+        if proc.stderr.strip():
+            warnings.append(proc.stderr.strip())
+        if proc.returncode not in (0, 1):
+            reason = f"Vale exited {proc.returncode}"
+            warnings.append(reason)
+            runtime_failures.append(_runtime_failure(batch, root, reason))
+            continue
+        if not proc.stdout.strip():
+            continue
+        try:
+            payload = json.loads(proc.stdout)
+        except json.JSONDecodeError as exc:
+            reason = f"Vale returned invalid JSON: {exc}"
+            warnings.append(reason)
+            runtime_failures.append(_runtime_failure(batch, root, reason))
+            continue
+        if isinstance(payload, dict):
+            payloads.append(payload)
+
+    for payload in payloads:
+        for filename, alerts in payload.items():
+            if isinstance(alerts, list):
+                merged.setdefault(str(filename), []).extend(alerts)
+    return runtime_failures + map_vale_output(
+        merged, registry, root=root, severity_overrides=severity_overrides
+    ), warnings
+

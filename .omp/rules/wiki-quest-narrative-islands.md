@@ -5,4 +5,4 @@ scope: "tool:edit(wiki/entities/quest/**), tool:write(wiki/entities/quest/**), t
 interruptMode: always
 ---
 
-Read `skill://narrative-islands`. Follow it for this write.
+Read `wiki/templates/quest.md` and `skill://narrative-islands`. Follow both for this write.

@@ -8,6 +8,7 @@ from .mutations import MutationOp, RepairPlan, apply_mutation, parse_sections, s
 from .repair_plans import build_plan, plan_json, snapshot
 from .scope import Scope, parse_scope
 from .template_contracts import TemplateContract, check_conformance, contract_for_type, load_contract
+
 from .transactions import Transaction
 
 __all__ = [
@@ -31,6 +32,7 @@ __all__ = [
     "TemplateContract",
     "load_contract",
     "contract_for_type",
+    "check_conformance",
     "build_plan",
     "plan_json",
     "snapshot",

@@ -22,10 +22,18 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Tidehex Captain
 
-## Stats & Combat
+> [!narration] Narration
+>
+
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -78,15 +86,21 @@ reactions:
 **Wants:** to take the prize and get every hand back to the ship alive. A dead crewmate costs more than the cargo is worth.
 **Morale:** breaks off the instant the crew secures the prize or two of the boarding party drop, whichever comes first.
 
-## Description
+## Biology
+
+**Description.**
 
 A pirate captain who learned to pull fog and force from waters that teach hard lessons. The magic is practical: fog to hide an approach, a command to make someone drop what they hold. Nothing about it looks scholarly. The gestures are quick, one-handed, performed without breaking stride or dropping a cutlass.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 Tidehex captains command the cutter-class raiders that hunt the [[Midchain]] shipping lanes, the [[Doldrums]] calms, and the shoal approaches to [[Midchain West]]. A captain who can call fog at will takes prizes without burning powder, and crews tolerate the strangeness because a tidehex captain's boarding party comes home. Most learned their craft crewing vessels that passed too close to places where the sea holds old things, picking up tricks the way other sailors pick up scars.
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|

@@ -69,3 +69,13 @@ Prevent certificate discovery while the memorial wall fills. Losing the compound
 - [[adriana-tarquine]]
 - [[yevgenia-sorrel]]
 - [[petera-ngata]]
+
+## At a Glance
+
+## At the Table
+
+## Current State
+
+## People & Structure
+
+## Running the Faction

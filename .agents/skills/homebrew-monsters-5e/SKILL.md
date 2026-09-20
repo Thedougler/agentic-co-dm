@@ -76,7 +76,7 @@ Read `references/stat-block-template.md` for the full statblock template, 2024 n
 Two paths depending on whether the creature has a personal identity:
 
 ### Standalone creature → `wiki/templates/creature.md`
-Pass on creature jobs in `wiki/AGENTS.md` Layout: look, runnable sheet, life, hunt. Copy the template as a scaffold. Visual reference omit-if-empty. Column density is allowed. Frontmatter includes `region` alongside standard fields.
+Pass on creature jobs in `wiki/AGENTS.md` Layout: look, runnable sheet, life, hunt. Copy `wiki/templates/creature.md`. File a *linear* page: H1, `[!narration]`, `## Statblock` with at most one overview image immediately before the fence, then Visual reference when a sheet exists, Biology when anatomy matters, Behavior, Tactics, and Art subsections for remaining images. Frontmatter includes `region` alongside standard fields.
 
 Exemplars: `wiki/entities/creature/bloodhawk.md` (aerial skirmisher, pounce-and-haul loop), `wiki/entities/creature/spiguar.md` (grass ambusher, drag-into-cover loop).
 

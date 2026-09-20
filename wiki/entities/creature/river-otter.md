@@ -38,6 +38,7 @@ relationships:
 > Twelve-foot chocolate-black river otters work the river and clear lake in blood-kin families, their pale throat marks as distinct as fingerprints. They roll through the shallows with rope, oars, ankles, or a dead Deer-Stalker's head as if every loose thing in the water has joined their game. Clear water surrounds them, and the whole family goes still when play becomes a hunt.
 
 ## Statblock
+
 ![[attachments/shattered-sea/creatures/aruhe-river-otter-token.png|Aruhe River Otter Foundry VTT token]]
 ```statblock
 layout: Basic 5e Layout
@@ -77,12 +78,17 @@ bonus_actions:
   - name: "Tug Toy (Play mode only)"
     desc: "Contested Athletics or Sleight of Hand against a held or worn object within 5 feet, or a trailing rope. On a success, the otter takes the object and swims 10 feet; no damage."
 ```
+## Visual reference
+
+![[attachments/shattered-sea/creatures/aruhe-river-otter-reference-sheet.jpg|Aruhe River Otter character reference sheet]]
 
 ## Biology
+
 
 Aruhe River Otters are twelve-foot, stocky, wet-furred animals with dark chocolate-brown coats and thick tapered tails. Amber-brown eyes, dark noses, small rounded ears, and long pale whiskers sit on blunt heads. Webbed paws end in sharp dark claws. A pale cream throat and chest mark, fingerprint-like, identifies each animal in the family.
 
 ## Behavior
+
 
 - **Habitat.** Families hold [[the-river|the river]] and [[clear-lake|the clear lake]], especially open cuts where bank, shallows, and deep water let them watch both land and current.
 - **Behavior.** They play first. Rope, oars, ankles, trailing packs, and a [[Deer-Stalker|Deer-Stalker's]] antlered head can become tug toys in the shallows. The family treats an entry into the water as joining the game. Responding to play gives the family a new game.
@@ -91,10 +97,9 @@ Aruhe River Otters are twelve-foot, stocky, wet-furred animals with dark chocola
 
 ## Tactics
 
+
 - **Signs.** Glass-clear water, polished slides in mud, pale throat flashes below the waterline, and ropes drawn tight from under a boat. Oars tugged from hands and a recently killed Deer-Stalker head can bob where no current should hold them.
 - **Instincts.** The family watches first, then steals gear. It tests reactions before dunking and releasing a trespasser. It commits fully only after a trespasser crosses the line. What comes from the river belongs to the family.
 - **Tactics.** In play mode, the family shares initiative and avoids damage. In hunt mode, adults use Watery Ambush and Dunk to split one target from the group. The adults apply the Grappled condition while the others show only wakes.
 - **Weaknesses.** They dominate occupied water but are less willing to fight on dry land or any haul-out that traps their bodies away from the current. The family remembers fire, ropes, and repeated tricks. A clever party can bait, redirect, or avoid them.
 
-## Art
-![[attachments/shattered-sea/creatures/aruhe-river-otter-reference-sheet.jpg|Aruhe River Otter character reference sheet]]

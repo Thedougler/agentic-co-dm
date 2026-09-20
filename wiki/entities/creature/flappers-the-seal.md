@@ -22,11 +22,23 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Flappers the Seal
 
+> [!narration] Narration
+>
+
 A seal, and [[coralyra-dranra]]'s closest relationship — the creature whose opinion matters most to her. Currently out chasing mackerel; neither party knows the other's whereabouts. Flappers serves as a compact recurring companion hook for Coralyra's eventual arrival (she is a Season 2 PC concept, not yet in play per her own page); a reunion between the two is a planned future beat, not something that has happened yet.
 
-## Stats & Combat
+## Statblock
+
+**Stats & Combat.**
 
 <!-- Not stated in source. -->
+
+## Behavior
+
+## Tactics

@@ -27,14 +27,26 @@ relationships:
     type: related_to
   - target: "[[hcs-surety]]"
     type: related_to
+region: ""
+role: ""
+cr: ""
 ---
 # Dravosi Deckhand
 
-## Look
+> [!narration] Narration
+>
+
+## Statblock
+
+## Visual reference
+
+**Look.**
 
 Source is silent beyond Medium human deckhand kit on the fight sheet: cutlass and hand crossbow at AC 13.
 
-## Runnable sheet
+## Behavior
+
+**Runnable sheet.**
 
 CR 1/8. Sea Legs ignore ship-movement difficult terrain. Cutlass and hand crossbow attacks. Alert Call reaction shouts an alarm audible up to 300 feet when damaged.
 
@@ -68,16 +80,18 @@ reactions:
     desc: "When this creature takes damage, it shouts an alarm audible up to 300 feet away. Any hidden creatures within earshot are no longer hidden from creatures that hear the alarm."
 ```
 
-## Life
+**Life.**
 
 Habitat is Crown hulls and inspection boats under [[dravosi-crown]] service. Habits, diet, and social detail beyond ordinary crew work: Source is silent.
 
-## Hunt
-
-Signs: Crown grey hulls, white Admiralty stripes, and working deck crews. Instincts: raise Alert Call when hurt. Opening: cutlass or crossbow at boarding range. Shut-down: ordinary humanoid vulnerabilities. Aftermath: an audible alarm that ends nearby stealth for anyone who hears it.
-
-## Connections
+**Connections.**
 
 - [[dravosi-crown]]
 - [[hcs-surety]]
 - [[hcs-ordinance]]
+
+## Tactics
+
+**Hunt.**
+
+Signs: Crown grey hulls, white Admiralty stripes, and working deck crews. Instincts: raise Alert Call when hurt. Opening: cutlass or crossbow at boarding range. Shut-down: ordinary humanoid vulnerabilities. Aftermath: an audible alarm that ends nearby stealth for anyone who hears it.

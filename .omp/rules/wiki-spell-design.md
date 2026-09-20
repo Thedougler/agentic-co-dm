@@ -5,4 +5,4 @@ scope: "tool:edit(wiki/entities/spell/**), tool:write(wiki/entities/spell/**), t
 interruptMode: always
 ---
 
-Read `skill://spell-design`. Follow it for this write.
+Read `wiki/templates/spell.md` and `skill://spell-design`. Follow both for this write.

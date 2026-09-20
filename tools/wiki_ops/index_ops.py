@@ -66,7 +66,7 @@ def insert_index_entry(text: str, entry: str) -> str:
     slug = match.group(1).rsplit("/", 1)[-1]
     if any((m := ENTRY_RE.match(line.rstrip("\r\n"))) and m.group(1).rsplit("/", 1)[-1] == slug for line in lines):
         raise ValueError(f"index entry already exists: {slug}")
-    entries = parse_index(text)
+    parse_index(text)
     target_key = slug.casefold()
     insert_at = len(lines)
     for index, line in enumerate(lines):

@@ -88,3 +88,13 @@ After [[iacopo-fieschi]] confessed his Tessarine debt in public, the house conta
 - [[vault-of-the-first-factor]]
 - [[pearl-of-souls]]
 - [[Passage]]
+
+## At a Glance
+
+## At the Table
+
+## Current State
+
+## People & Structure
+
+## Running the Faction

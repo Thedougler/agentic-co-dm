@@ -1,0 +1,13 @@
+{
+  "eval_id": 1,
+  "eval_name": "npc-nigel-strutt",
+  "prompt": "Polish the Nigel Strutt NPC page for table readability. The page is at wiki/entities/npc/nigel-strutt.md. Preserve all facts, wikilinks, frontmatter, and embeds. The DM should be able to use this at the table without decoding agent prose.",
+  "assertions": [
+    {"text": "All facts from the original page are preserved — nothing material added, nothing lost.", "type": "qualitative"},
+    {"text": "Wikilinks remain intact and resolve to the same targets.", "type": "structural"},
+    {"text": "Frontmatter fields are unchanged.", "type": "structural"},
+    {"text": "The portrait includes a drawable face or body — not just role/job description.", "type": "qualitative"},
+    {"text": "No lines that fail the removal test — every line changes a DM choice, ruling, or improv handle.", "type": "qualitative"},
+    {"text": "No AI tell phrases: 'tapestry of', 'nestled between', 'a sense of', 'it's worth noting', 'the air is thick with'.", "type": "structural"}
+  ]
+}

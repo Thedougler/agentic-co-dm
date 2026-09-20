@@ -44,7 +44,8 @@ Keep persistent geography separate from ephemeral events. Give a detailed site i
 <!-- Add region art when available. -->
 
 > [!narration] Narration
-> Write a high-quality cold portrait of the region as a traveler first experiences it. Cover horizon, terrain, weather, movement, sound, and one unmistakable feature. No secrets, DCs, or unearned names.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: location. -->
+> Write a standalone cold portrait of the region as a traveler first experiences it — as long as the region requires to be felt. Cover horizon, terrain, weather, movement underfoot, sound, and one unmistakable feature that distinguishes this region from its neighbors. The portrait paints a drawable landscape a player can picture from a ridge. No secrets, DCs, or unearned names.
 
 ## At a Glance
 

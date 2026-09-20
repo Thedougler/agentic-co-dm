@@ -17,7 +17,7 @@ You are finding and merging wiki pages that cover the same concept under differe
 
 ## Before You Start
 
-1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` and `OBSIDIAN_LINK_FORMAT`.
+1. **Resolve config** — follow the Config Resolution Protocol in AGENTS.md (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` and `OBSIDIAN_LINK_FORMAT`.
 2. Prefer capped `qmd`/`rg`/`hot.md` for candidate pages; full `index.md` only if required — whole-file preload is token waste.
 3. Check recent dedup via `hot.md` or a bounded `log.md` slice — do not preload all of `log.md`.
 
@@ -285,8 +285,7 @@ Verify the collection with either:
 ${QMD_CLI:-qmd} ls "${QMD_WIKI_COLLECTION:-wiki}"
 ```
 
-For a specific page, follow the exact QMD retrieval rule in
-`.agents/skills/llm-wiki/SKILL.md`: search first, then pass the returned docid
+For a specific page, follow the exact QMD retrieval rule in AGENTS.md (Vault retrieval): search first, then pass the returned docid
 or source verbatim to `qmd get` / `qmd multi-get`.
 
 Record one of:

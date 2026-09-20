@@ -33,3 +33,13 @@ The [[Tangle]] is an elder teaching and proposed anchor referenced by the [[ratt
 - [[perrin-black-jaw]]
 - [[nona-black-jaw]]
 - [[rattkin-runs-and-black-jaw-run]]
+
+## At a Glance
+
+## At the Table
+
+## Current State
+
+## People & Structure
+
+## Running the Faction

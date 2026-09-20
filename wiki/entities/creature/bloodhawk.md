@@ -9,7 +9,7 @@ sources:
   - "wiki/_archive/Aruhe - Bloodhawk.md"
   - "wiki/_raw/Aruhe - Bloodhawk.md"
 created: 2026-09-12T05:40:07Z
-updated: 2026-09-19T08:26:00Z
+updated: 2026-09-19T18:00:00Z
 type: creature
 lifecycle: proposed
 reveal: unrevealed
@@ -28,6 +28,7 @@ lifecycle_changed: "2026-09-12"
 > The grass lies still under the wind. An adult circles too high to see. Then: **THUMP-thump.** Wind brushes the grass as the sound pauses. **THUMP-thump.** The shadow sweeps over you before the bird appears. A broad charcoal body appears overhead, wings folded tight against a frame large enough to lift a whale.
 
 ## Statblock
+
 ![[bloodhawk-of-aruhe-flight.jpg|Bloodhawk over Aruhe]]
 ```statblock
 layout: Basic 5e Layout
@@ -72,12 +73,21 @@ reactions:
 ```
 
 ---
+
+## Visual reference
+
+
+The adult is a whale-scale hawk: a charcoal body, crimson undersides and primaries, a red crest, a pale hooked beak, a red eye, and black hook talons. Four wings share the work. The lower pair carries the climb. The upper pair rolls the dive. Recurved teeth sit behind the pale beak.
+
 ## Biology
+
 
 Bloodhawks are four-winged Aruhe predators with hawk silhouettes and older, uglier hardware. Recurved teeth hide behind the pale beak, and black talons close around prey like hooks. The lower wing-pair bears the bird's weight during the climb, while the second pair lets an adult roll hard in a dive despite its size. A full adult can lift a whale clear of the water. The same grip can seize one body from open ground or open sky.
 
 ---
+
 ## Behavior
+
 
 - **Habitat.** Bloodhawks own the open sky above [[Aruhe - Hungry Isle]], especially sea channels, lake bowls, reef gaps, river mouths, cliff faces, canopy breaks, and grassland rims.
 - **Behavior.** At altitude, an adult rides lift in wide, quiet circles. When it commits, the two wing-pairs strike the air out of phase, and the paired **thump-thump** reaches the ground before the body does.
@@ -87,6 +97,7 @@ Bloodhawks are four-winged Aruhe predators with hawk silhouettes and older, ugli
 
 ## Tactics
 
+
 - **Signs.** Use a moving wing-shadow with no call, crushed grass circles with no exit trail, bear-elk bones on terrace stone with no approach tracks, whale blood spreading in open water, crimson primary feathers, or the paired **thump-thump** during an active chase.
 - **Instincts.** It keys on height, noise, exposed movement, open water, and prey already flushed from cover. It breaks off when the target disappears under closed canopy, deep grass, rigging, overhang, or protected water.
 - **Tactics.** Start high and outside ordinary weapon range. Let the table hear the **thump-thump** before Terminal Stoop. The Bloodhawk stoops on the most exposed large target, seizes it with Hook Talons, then uses Haul Aloft to make altitude the danger. On the next turn, it tears into the held body with Serrated Beak or drops the body to regain distance.
@@ -94,6 +105,8 @@ Bloodhawks are four-winged Aruhe predators with hawk silhouettes and older, ugli
 - **Aftermath.** A Bloodhawk strike leaves torn feathers, falling blood, cracked branches, nest fiber dropped from high canopy, and sometimes a carcass placed where no ground trail leads.
 
 ---
+
 ## Art
+
 ### Token
 ![[bloodhawk-of-aruhe-token.jpg|Bloodhawk FoundryVTT token]]

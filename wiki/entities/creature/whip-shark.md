@@ -14,7 +14,19 @@ campaign: shattered-sea
 visibility: dm
 summary: "A dangerous sea creature known through hull damage, survivor stories, eggs, and a hunt through its body."
 base_confidence: 0.20
+region: ""
+role: ""
+cr: ""
 ---
 # Whip Shark
 
+> [!narration] Narration
+>
+
 The Whip Shark is a dangerous sea creature known through hull damage, survivor stories, and fertilized eggs.
+
+## Statblock
+
+## Behavior
+
+## Tactics

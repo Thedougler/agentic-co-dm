@@ -28,8 +28,7 @@ This skill writes nothing to the wiki. It is pure conversation.
 Before asking the DM anything, pull campaign state so your questions are
 grounded in what actually happened, not generic prompts.
 
-1. **Resolve config** — follow the Config Resolution Protocol in
-   `llm-wiki/SKILL.md` to get `OBSIDIAN_VAULT_PATH`.
+1. **Resolve config** — follow the Config Resolution Protocol in AGENTS.md to get `OBSIDIAN_VAULT_PATH`.
 2. **Read `hot.md`** — recent activity snapshot; orients you fast.
 3. **Find the previous session.** Look in
    `wiki/journal/sessions/<campaign-slug>/` for the highest-numbered session

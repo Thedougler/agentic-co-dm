@@ -28,6 +28,7 @@ visibility: dm
 kind: fact
 truth: established
 summary: "Campaign State hub for Shattered Sea: table aim, live Aruhe state, sitting index, party goals, and contract facts drawn from the wiki."
+base_confidence: 0.55
 ---
 <!--
 Campaign State hub for shattered-sea. Region geography stays on [[shattered-sea]].
@@ -54,7 +55,7 @@ Season 2 is an open [[Midchain]] sandbox aboard *[[Uncertainty]]*: unofficial pi
 
 Season 1 is closed. Season 2's live handle is [[aruhe]] (the Hungry Isle) until play moves it.
 
-Session 11 remains open mid-fight at [[river-slack-basin]]: [[talon-skarn]] has spent one Legendary Resistance and the [[fate-spinner]] is still Held. [[jean-claude-tabarnack]] is catatonic in Delmar's coat. *[[Uncertainty]]* stays offshore. Other inland survivors remain farther upriver. Session 12 preparation is filed under [[journal/sessions/shattered-sea/12/]] with the Aruhe route, two-grave orders, and Auralis manifestation beats.
+Session 11 remains open mid-fight at [[river-slack-basin]]: [[talon-skarn]] has spent one Legendary Resistance and the [[fate-spinner]] is still Held. [[jean-claude-tabarnack]] is catatonic in Delmar's coat. *[[Uncertainty]]* stays offshore. Other inland survivors remain farther upriver. Session 12 preparation is filed under [[journal/sessions/shattered-sea/12/12-index|Session 12 preparation]] with the Aruhe route, two-grave orders, and Auralis manifestation beats.
 
 Named pressures in play include the Maw fissure and tribute system, [[the-taken-314]], [[long-sight-hunt]], [[rule-of-two]], [[schisms-third-name]], and [[countless-through-the-maw-seal]]. [[soul-incarnates-watch]] remains dormant until [[crissdalynn-khinriss]] completes a Maw pilgrimage. [[Osset]] is [[talon-vantyrus]]'s original name; he leads [[Countless]] and wants the Fate Spinner.
 
@@ -66,7 +67,7 @@ If nobody intervenes at the otter camp, Talon Skarn's stoop on Crissdalynn for t
 
 - Geography: [[shattered-sea]]
 - Current season: [[season-2]]
-- Recap handle: [[story-so-far]] · [[hot]]
+- Recap handle: [[story-so-far]]
 - Table roster: [[Players]]
 - PCs: [[perrin-black-jaw]] · [[delmar-fisk]] · [[crissdalynn-khinriss]] · [[jean-claude-tabarnack]]
 - Chronology: [[campaign-timeline]]

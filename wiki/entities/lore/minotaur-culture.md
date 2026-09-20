@@ -32,7 +32,7 @@ In [[shattered-sea]], Minotaurs pilot ships. Many farm or fight, but most love t
 
 A Minotaur pilot costs more than any other hire in [[Midchain]]. Every coin is worth the price. [[sienne-orre]], who leads the *[[Fernen]]* in [[fisks-fleet]], ran the survey work. Her gift for reading passages made her the clear choice.
 
-Minotaurs live where water is hard to cross: [[Narrow]] straits, tidal channels, reef knots. The killers of ships are the routes Minotaurs learn as youth. Small groups live in each big port. A Minotaur street is odd. The halls turn. Minotaurs gather where hard channels need a teacher, not around any one seat of power.
+Minotaurs live where water is hard to cross: [[the-narrow|Narrow]] straits, tidal channels, reef knots. The killers of ships are the routes Minotaurs learn as youth. Small groups live in each big port. A Minotaur street is odd. The halls turn. Minotaurs gather where hard channels need a teacher, not around any one seat of power.
 
 [[delmar-fisk]] carries the soul of [[sienne-orre]], a Minotaur druid, as one of his five captains ("Mortis"). When Sienne surfaces, her calm, methodical nature speaks as Minotaur culture. See the Kinship and Temperament sections below. This is detail, not an active plot. Each of Sienne's moments draws from the culture described here.
 

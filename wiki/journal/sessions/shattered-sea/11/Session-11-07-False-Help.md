@@ -11,7 +11,7 @@ kind: cliffhanger
 lifecycle: proposed
 base_confidence: 0.55
 reveal: unrevealed
-summary: "Night ambush at Spoke Ring. The [[Deer-Stalker]] uses the garden invitation to isolate one body; a grouped answer makes it leave, while any disorder becomes cover on [[Session-11-09-Theft-on-the-Watch]]."
+summary: "Night ambush at Spoke Ring. The Deer-Stalker uses a garden invitation to isolate one body; a grouped answer makes it leave, while disorder gives Talon Skarn cover on the next beat."
 campaign: shattered-sea
 session: 11
 status: ready

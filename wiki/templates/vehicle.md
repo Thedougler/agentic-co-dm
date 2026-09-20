@@ -29,7 +29,8 @@ summary: ""
 # {{title}}
 
 > [!narration] Narration
-> Write a high-quality cold portrait in flowing prose for as long as the craft requires. Cover silhouette, scale, material, and usable features. No secrets, DCs, or unearned names.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: object. -->
+> Write a standalone cold portrait in flowing prose — as long as the craft requires to be pictured at its berth or underway. Cover silhouette, scale, material, and usable features a character can interact with. The portrait paints a drawable picture a player can recognize and distinguish. No secrets, DCs, or unearned names.
 
 ## Sheet
 

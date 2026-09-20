@@ -26,7 +26,8 @@ summary: ""
 <!-- Add hazard art when available. -->
 
 > [!narration] Narration
-> Write a high-quality cold portrait of the hazard in flowing prose. Cover appearance, scale, and at least one non-sight sense. No secrets, DCs, or unearned names.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: hazard. -->
+> Write a standalone cold portrait of the hazard in flowing prose — as long as the hazard requires to be pictured and avoided. Cover form, material, scale, and at least one non-sight warning sense. The portrait gives a player enough visual information to recognize the hazard and decide whether to approach. No secrets, DCs, contact effects, or unearned names.
 
 ## Hazard
 

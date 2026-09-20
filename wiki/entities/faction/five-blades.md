@@ -45,3 +45,13 @@ They take contracts through [[the Flat Water]] and through factors who know to a
 
 - **Session 02** — named in the canon recap: Rook's curiosity about "the
   mercenaries out of [[Kalowe]] — the Five Blades" is given as his reason for taking Ket as a specimen (`vault/episodes/002/transcript.raw.md:53`). The company has not appeared directly in play yet, only by name.
+
+## At a Glance
+
+## At the Table
+
+## Current State
+
+## People & Structure
+
+## Running the Faction

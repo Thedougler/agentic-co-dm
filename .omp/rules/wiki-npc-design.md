@@ -5,4 +5,4 @@ scope: "tool:edit(wiki/entities/npc/**), tool:write(wiki/entities/npc/**), tool:
 interruptMode: always
 ---
 
-Read `skill://npc-design`. Follow it for this write.
+Read `wiki/templates/npc.md` and `skill://npc-design`. Follow both for this write.

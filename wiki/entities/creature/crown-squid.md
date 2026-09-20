@@ -42,6 +42,7 @@ relationships:
 
 ## Statblock
 
+
 ```statblock
 layout: Basic 5e Layout
 name: "Great Crown Squid"
@@ -107,12 +108,15 @@ legendary_actions:
 
 ## Behavior
 
+
 - **Habitat.** Adults hold connected mature canopy in [[the-quiet|the Quiet]], [[the-marshes|the Marshes]], and the roof of [[the-mangroves|the Mangroves]]. The interrupted trees of [[old-gardens|the Old Gardens]] support juveniles but usually not adults.
 - **Habits.** The squid braces several arms against separate trunks and watches before committing. Its gas-filled mantle makes its weight seem wrong on the branches, allowing it to cross canopy gaps with little movement below.
 - **Diet.** It eats large animals, travelers, and anything it can lift into the canopy. Terror-Birds are dangerous prey. Bear-Elk are especially dangerous prey, and Wolfrabbits are easy meals.
 - **Social structure.** Each adult is solitary and treats other large predators as boundaries rather than allies. It avoids broad grassland, open shoreline, and river water occupied by otter families.
 
-## Hunt
+## Tactics
+
+**Hunt.**
 
 - **Signs.** Look for sucker scars high on trunks, bark stripped upward, broken branches that never fell, polished antler without a nearby carcass, and prey tracks that end above the ground.
 - **Opening.** The squid watches the group and targets a straggler, a wounded creature, or anyone carrying meat. Its first Hookline attack has advantage when the target lacks a conscious ally within `10 feet`.

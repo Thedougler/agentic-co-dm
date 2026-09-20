@@ -1,0 +1,1 @@
+Clear Lake fills a wide basin, the far bank a thin dark line. Wet stone marks the shore in the shallows; farther out the water deepens and the blue goes dark. Two rivers feed in from the northern valleys, and one channel runs eastward toward the Grove shore. The air carries cool lake-smell off the water and the scent of wet stone.

@@ -27,16 +27,23 @@ relationships:
     type: related_to
   - target: "[[Galewall]]"
     type: related_to
+cr: ""
 ---
 # Arclight Phoenix
 
 > [!narration] Narration
 > A white bird of stormlight can show in the rigging. Lateral fire branches through ash and holds for a breath before it fades.
 
-## Life
+## Statblock
+
+## Behavior
+
+**Life.**
 
 When an [[arclight-phoenix]] dies, its egg remains in the [[Ashwalls]] volcanoes. Lightning opens the egg. The bird emerges oriented toward the storm edge and flies west into the [[Galewall]]. It does not return until it dies again in the weather.
 
-## Hunt
+## Tactics
+
+**Hunt.**
 
 Ashwall crews treat sideways vent-fire as the hatch sign. A survivor account left burn marks along contact points and magnetized iron fittings. No fight sheet is established on this page.

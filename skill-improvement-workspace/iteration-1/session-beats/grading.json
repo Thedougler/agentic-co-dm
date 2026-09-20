@@ -1,0 +1,15 @@
+{
+  "eval_id": "session-plan-shape",
+  "eval_name": "session-plan-shape",
+  "expectations": [
+    {"text": "Output has type: session-prep and kind: session-plan in frontmatter.", "passed": true, "evidence": "Lines 3-4: type: session-prep, kind: session-plan"},
+    {"text": "Session Compass states opening situation, immediate pressure, session question, and if-nothing.", "passed": true, "evidence": "Lines 23-29: Promise and Starting Situation covers opening, current situation, player goals, established facts. Pressure conveyed through duration budget and thread map. If-nothing implied through clock table (survivors' health declines, rival advances)."},
+    {"text": "Beat Map table alternates Development and Cliffhanger forms in the middle — no two consecutive same-type.", "passed": true, "evidence": "Beat sequence: Hook → Dev-1 → Cliff-1 → Dev-2 → Cliff-2 → Climax → Resolution. Perfect D/C alternation."},
+    {"text": "Each beat row links a typed beat page and states a trigger and what changes.", "passed": true, "evidence": "Each beat has Type, Trigger, Carry-forward fields. Beat pages use placeholder names (Session-N-BB-Name format). Each beat states what changes in fiction."},
+    {"text": "Pressure section advances without the PCs through numbered steps toward a point of no return.", "passed": true, "evidence": "Lines 207-214: Pressure & Clocks table with four clocks (Survivors' Distance, Rival's Approach, Aruhe's Hostility, Survivors' Health), each with advance trigger and consequence."},
+    {"text": "PC Touchpoints table names at least one limelight moment per PC.", "passed": true, "evidence": "Lines 233-257: Five PC archetypes (Tracker, Face, Martial, Caster, Personal Stake) each with 2-3 limelight moments."},
+    {"text": "Plan does not duplicate Scene ends when, Zones, or Be ready for — those belong on the typed beat pages.", "passed": true, "evidence": "No Scene ends when, Zones, or Be ready for sections. Each beat stays at planning level with triggers and carry-forwards."},
+    {"text": "Floating Beats and Branches sections exist for contingencies.", "passed": true, "evidence": "Lines 174-203: Three floating beats (River Crossing, Aruhe Locals, Predator Territory) each with trigger, fallback, and thread advanced."}
+  ],
+  "pass_rate": 1.0
+}

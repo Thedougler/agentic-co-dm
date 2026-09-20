@@ -56,7 +56,8 @@ Who starts where, in feet and compass directions. What a move vs Dash reaches.
 ````
 
 > [!narration] Initial Narration
-> Write high-quality theatre of the mind. "You" address, visible threat, relative position, cover/routes, drawable appearance, and at least one non-sight sense. End on the reaction point.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: situated moment. -->
+> Write a situated opening the DM can speak aloud. Address the players as "you", present tense. Seat the party in the space — visible threat, relative position, cover or routes, drawable appearance, and at least one non-sight sense. End on the reaction point. No secrets, DCs, or unearned names.
 
 ````col
 ```col-md
@@ -109,7 +110,8 @@ flexGrow=3
 Next state. Hand to the next beat on this session’s skeleton.
 
 > [!narration] How the Scene Resolves
-> Write high-quality theatre of the mind: the changed situation in "you" address, at least one non-sight sense.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: situated moment. -->
+> Write the changed situation in "you" address, present tense, at least one non-sight sense. Show what is now true.
 
 | If | Next | Narration |
 | --- | --- | --- |

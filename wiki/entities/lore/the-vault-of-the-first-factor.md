@@ -14,7 +14,7 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "A legendary hidden depository, built by the earliest [[tessarine-concordat|Tessarine Concordat]] Envoy to [[campaign-overview|the Shattered Sea]], said to hold the physical collateral of the region"
+summary: "Legendary hidden depository on an uncharted Midchain limestone spire, said to hold collateral seized by the first Tessarine envoy."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -24,7 +24,7 @@ tier: supporting
 ---
 # The Vault of the First Factor
 
-A legendary hidden depository, built by the earliest [[tessarine-concordat]] Envoy to [[shattered-sea]], said to hold the physical collateral of the region's most desperate debtors.
+A legendary hidden depository, built by the earliest [[tessarine-concordat|Tessarine Concordat]] Envoy to [[shattered-sea|the Shattered Sea]], said to hold the physical collateral of the region's most desperate debtors.
 
 ## The Fact
 

@@ -15,7 +15,19 @@ campaign: shattered-sea
 visibility: dm
 summary: "A Water Weird holding Bela Silt-Paw in a flooded Warren chamber."
 base_confidence: 0.20
+region: ""
+role: ""
+cr: ""
 ---
 # Water Weird
 
+> [!narration] Narration
+>
+
 A Water Weird holds [[bela-silt-paw|Bela Silt-Paw]] in a flooded chamber beneath the Warren.
+
+## Statblock
+
+## Behavior
+
+## Tactics

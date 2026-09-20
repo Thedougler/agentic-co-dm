@@ -88,8 +88,22 @@ No snippets in the default object.
 | `focus` | Focus item[] | Ordered, cap 5; present even if empty |
 | `next` | Focus item \| null | `focus[0]` or null |
 | `timing` | Timing | |
+| `context` | Context load | First-turn files, ranked skills, efficiency delta, `act` |
 
-MUST NOT include per-step essays, a full findings dump, raw sittings, raw traces, skill-eval pass/fail, or missing-skill inventories.
+## Context load
+
+| Field | Type | Notes |
+|---|---|---|
+| `encoding` | string | tiktoken encoding |
+| `first_turn` | `{total_tokens, files}` | `files` is `{path, tokens}[]` descending; always-loaded: `.omp/AGENTS.md`, repo `AGENTS.md`, vault `AGENTS.md`, vault `hot.md` |
+| `skills` | `{name, path, tokens, evals, criteria, coverage}[]` | Installed `SKILL.md` descending; cap 15. `coverage` is `with` if evals and criteria else `without` |
+| `skills_total` | int | Count of installed skills |
+| `eval_coverage` | `{with, without}` | Skills with vs without eval criteria |
+| `efficiency` | `{first_turn_tokens, previous_first_turn_tokens, delta_tokens, trend}` | `trend` is `up` \| `down` \| `flat` \| `new` vs last health command record |
+| `act` | string[] | Imperative steps with done-when; no file bodies |
+
+
+MUST NOT include per-step essays, a full findings dump, raw sittings, raw traces, skill-eval pass/fail, or file bodies.
 
 `scripts/wiki-maintain --report` emits this same object.
 
@@ -124,7 +138,7 @@ File: `$VAULT/_meta/lint-cache.json`.
 
 | Field | Type | Notes |
 |---|---|---|
-| `config_digest` | string | Hash of checker configuration |
+| `config_digest` | string | Hash of rules state (Vale styles/config, structural lint sources, template contracts, checker flags) |
 | `entries` | map vault-relative path → Cache entry | |
 
 ### Cache entry
@@ -136,7 +150,7 @@ File: `$VAULT/_meta/lint-cache.json`.
 | `extracts` | object | Links and named targets needed for corpus refresh |
 | `results` | object | Per-checker findings for this file |
 
-Invalidation: content sha256 change, config_digest change, path add/delete/rename (missing path dropped; new path is a miss). Corpus facts always rebuilt from current path set + extracts.
+Invalidation: content sha256 change, rules-state `config_digest` change, path add/delete/rename (missing path dropped; new path is a miss). Corpus facts always rebuilt from current path set + extracts.
 
 ## Command timing record
 
@@ -173,8 +187,8 @@ health:
         → same lint path (drop files dump)
         → Layer A numbers (no steps essays)
         → read sittings/errors/traces (empty ok)
-        → trends (incl. slowest_commands, token_heaviest) + focus + next
-        → emit + append command record → exit 0|1|2
+        → context (tiktoken first-turn files + ranked skills + act)
+        → emit + append command record (health rows may include first_turn_tokens)
 
 query:
   invoke → unset CI → qmd query → compact hits

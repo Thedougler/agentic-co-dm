@@ -23,10 +23,17 @@ region: aruhe
 relationships:
   - target: "[[western-landing]]"
     type: related_to
+role: ""
+cr: ""
 ---
 # Aruhe - Reef Skull
 
-## Stats & Combat
+> [!narration] Narration
+>
+
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -56,14 +63,20 @@ actions:
     desc: "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage."
 ```
 
-## Description
+## Biology
+
+**Description.**
 
 The reef skulls hunt [[Aruhe]]'s shallow reefs in groups of three to five at low tide. They bury themselves in the shingle with only the top of each shell visible, blending with the beach debris and hull planking that litter [[the Teeth]].
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 Hermit crabs don't grow past their shell supply. On most islands, that caps them at coconut-sized. On [[Aruhe]], the reef has been collecting wreckage for generations ([[Grung]] war-proas, fishing boats, the bones of everyone the island has ever killed) and the [[Blight]]'s corruption pushed the crabs to match. They outgrew every natural shell on the reef and moved into the wreckage and remains instead.
 
 **The result is a medium-sized predatory crab wearing a Human skull or a chunk of ship hull as armor.** It moves through ankle-deep water with the lateral gait of something that stopped being clumsy about this a long time ago. The coordination in groups is instinctive, not intelligent, the way army ants swarm without a plan. When something walks within reach, the nearest reef skull erupts from the sand and clamps. The others converge toward the waterline, dragging the prey where the undertow does half their work.
 
 The pilot who found a goat-sized scorpion under his dinghy found the wrong animal. The reef skulls had already occupied the dinghy's shadow.
+
+## Tactics

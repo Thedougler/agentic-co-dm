@@ -51,3 +51,13 @@ tier: supporting
 **Possible outcomes:** (1) House Renzetti wins: Ottavia takes control and reshapes the settlement's timber trade alliances. (2) House Kailani wins: Toa Kailani retains power and House Renzetti loses standing. (3) Nico Renzetti's reluctance costs him his life. The settlement remembers the injustice of a man coerced to his death for his family's ambition.
 
 **PC connection:** not yet specified.
+
+## At a Glance
+
+## At the Table
+
+## Current State
+
+## People & Structure
+
+## Running the Faction

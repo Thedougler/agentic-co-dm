@@ -15,7 +15,7 @@ You are helping the user browse and compare their Obsidian wiki knowledge filter
 
 ## Before You Start
 
-1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`.
+1. **Resolve config** — follow the Config Resolution Protocol in AGENTS.md (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`.
 2. Provenance lives in the ingest ledger — query via `python3 scripts/manifest.py` (`stats` / `tool-pages [--tool|--limit]` / `list --limit` / `get` / `lookup`); do **not** load whole `.manifest.json` into context (S1).
 3. Read `$OBSIDIAN_VAULT_PATH/index.md` for page titles and one-line descriptions.
 

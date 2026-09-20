@@ -46,7 +46,7 @@ The [[tessarine-concordat]] backs Sunkline financially. The [[Shelfworks]] feeds
 
 **Trigger conditions:**
 
-- The forged certificate at the Last Berth surfaces ([[Last Berth False Log]]'s own discovery).
+- The forged certificate at the Last Berth surfaces ([[fathomrush-last-berth-false-log|Last Berth False Log]]'s own discovery).
 - Investors formally demand a live trial dive.
 
 **Clock:** 6 segments (slow burn), 4 filled. The concealment is already fragile, one loose floorboard from discovery.
@@ -70,3 +70,13 @@ Clue 1: [[adriana-tarquine]]. She's rebuilt the same valve four times this year 
 Clue 2: the Last Berth False Log. It's the forged certificate itself, hidden beneath a loose floorboard at the boardinghouse.
 
 Clue 3: [[Fathomrush]]. Dockside rumor holds that neither company has shown its trial results outside its own inner circle.
+
+## At a Glance
+
+## At the Table
+
+## Current State
+
+## People & Structure
+
+## Running the Faction

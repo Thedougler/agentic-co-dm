@@ -42,7 +42,7 @@ Tomo came ashore on the same broken outrigger strut they did. He held the wood o
 
 He ate four of them. He said they were sweet, in a voice that had already changed. By the time either man understood what he was hearing, the changing had reached Tomo's hands.
 
-Now Nino walks twelve paces and turns, and the island goes on being an island. Crabs the size of hunting dogs work the shingle and do not scatter, and birds come down out of the palms in a line, open a thing on the sand, and vanish before the sound arrives. Something in the freshwater springs has learned the sound of a person kneeling. The two [[grung-npc|Grung]] who made the beach alive were dead inside four hours, and neither man saw it happen, and both of them heard it.
+Now Nino walks twelve paces and turns, and the island goes on being an island. Crabs the size of hunting dogs work the shingle and do not scatter, and birds come down out of the palms in a line, open a thing on the sand, and vanish before the sound arrives. Something in the freshwater springs has learned the sound of a person kneeling. The two [[Grung|Grung]] who made the beach alive were dead inside four hours, and neither man saw it happen, and both of them heard it.
 
 They watch the reef gap. That is the whole of the work now. The gap is the only water a hull could come through. It has stayed empty every day, first light to last. Sandro has stopped saying out loud that a ship is coming because saying it costs something now and buys nothing back.
 

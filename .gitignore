@@ -47,6 +47,7 @@ wiki/.trash/
 __pycache__/
 *.pyc
 *.egg-info/
+.ruff_cache/
 .venv/
 venv/
 

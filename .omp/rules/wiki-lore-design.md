@@ -5,4 +5,4 @@ scope: "tool:edit(wiki/entities/lore/**), tool:write(wiki/entities/lore/**), too
 interruptMode: always
 ---
 
-Read `skill://lore-design`. Follow it for this write.
+Read `wiki/templates/lore.md` and `skill://lore-design`. Follow both for this write.

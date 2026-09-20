@@ -1,6 +1,6 @@
 modelRoleStorage: project
 modelRoles:
-  default: opencode-go/grok-4.6:medium
+  default: null
   plan: github-copilot/gpt-6-astra:low
   task: openai-codex/gpt-5.6-luna:high
   review: opencode-go/grok-4.6:high

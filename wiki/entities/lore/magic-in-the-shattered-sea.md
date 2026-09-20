@@ -52,7 +52,7 @@ Magic in the Shattered Sea runs on three source traditions: Arcane, Divine, and 
 
 **Layer 1 (Primal, species-wide).** Toxic secretion, diet-driven color shift, standing leap, sticky tongue: all biological traits with no spell school attached. Detect Magic returns nothing on them, Counterspell has no application, and Dispel Magic has no effect.
 
-**Layer 2 (Arcane): the [[Ossketh]] (Gold monopoly, now stolen).** The color-sealing rite operates in the Transmutation school, designed to permanently reorder another Grung's caste color. When a second caster completes the rite on another Grung, the effect holds permanently with neither concentration nor a duration limit. Self-cast, the rite never completes: it becomes an unstable, ongoing transmutation requiring periodic external arcane maintenance from a skilled caster to prevent collapse. [[Ozzeth the Twiceborn]] and [[simone-tabarnack]] independently discovered and misapplied it. Gold chose reputation censure over direct force to avoid confirming the rite exists.
+**Layer 2 (Arcane): the [[grung-color-and-the-sealing-rite|Ossketh]] (Gold monopoly, now stolen).** The color-sealing rite operates in the Transmutation school, designed to permanently reorder another Grung's caste color. When a second caster completes the rite on another Grung, the effect holds permanently with neither concentration nor a duration limit. Self-cast, the rite never completes: it becomes an unstable, ongoing transmutation requiring periodic external arcane maintenance from a skilled caster to prevent collapse. [[Ozzeth the Twiceborn]] and [[simone-tabarnack]] independently discovered and misapplied it. Gold chose reputation censure over direct force to avoid confirming the rite exists.
 
 > [!mechanic]
 > **Detect Magic (sealed Grung, Ossketh properly completed by a second caster):** Arcane transmutation, a change locked in place, holding.
@@ -77,7 +77,7 @@ An entity on the far side of the [[drowned-maw]] fissure is actively ripping rea
 
 ### Umberlee's Tithe
 
-The curse that falls on every piece of the [[Tithe]] is divine. [[Umberlee]] maintains active divine attention on each piece; the curse is her attention, not a cast spell.
+The curse that falls on every piece of the [[the-tithe-of-the-bitch-queen|Tithe]] is divine. [[Umberlee]] maintains active divine attention on each piece; the curse is her attention, not a cast spell.
 
 > [!mechanic]
 > **Tradition:** Divine. **School:** Necromancy.

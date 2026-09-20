@@ -5,4 +5,4 @@ scope: "tool:edit(wiki/entities/item/**), tool:write(wiki/entities/item/**), too
 interruptMode: always
 ---
 
-Read `skill://dnd-5e-magic-item-design`. Follow it for this write.
+Read `wiki/templates/item.md` and `skill://dnd-5e-magic-item-design`. Follow both for this write.

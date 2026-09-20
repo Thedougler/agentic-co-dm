@@ -25,19 +25,19 @@ final state, costs paid across the session visible, and PC goals with a clear
 new status. Match scope to the Climax. Keep it brief and punchy — the
 Resolution earns its weight from what it echoes, not from new complexity.
 
-A personal-stakes Climax gets a personal-scale Resolution — not new combat
-encounters, not new NPC introductions, not world-spanning reveals. When a
-request inflates the Resolution past the Climax's scale, refuse the inflation
-and deliver the afterscene the arc earned.
+Match scope to the Climax's scale — a personal-stakes Climax earns a
+personal-scale afterscene.
 
-A Resolution can reveal something that changes the meaning of everything
-before it — the villain escapes, a greater threat emerges — but that
-reframing must follow from established fiction, not GM convenience. A dark god,
-breaking seals, or world-ending threat invented for the Resolution is not
-established fiction — it is a new Hook disguised as an afterscene. When the
-request introduces ungrounded existential content, refuse it and deliver the
-aftermath the session's fiction earned. Stop when players can name what is
-different and what they want next.
+A Resolution can **overturn** the Climax's apparent result — the defeated
+villain is seen flying away in an escape craft, the rescued ally turns out to
+have been changed by captivity, the won battle reveals a greater threat it
+inadvertently served. This reframing power is a legitimate dramatic tool when
+the reversal follows from established fiction (planted clues, faction
+mechanics, the villain's known escape plans). Ungrounded reversals — a new
+threat invented for the Resolution, a convenient survival with no basis — are
+a new Hook disguised as an afterscene. Deliver the aftermath the session's
+fiction earned. Stop when players can name what is different and what they want
+next.
 
 Costs the Climax produced are load-bearing — they prove the stakes were real.
 A lost ally stays lost; spent supplies stay spent. Convenient survival,
@@ -54,9 +54,14 @@ Players can name what is different and what they want next.
 1. **Choose the card.** Read [references/resolution-cards.md](references/resolution-cards.md).
    Pick by fiction trigger.
 
-2. **Echo the arc.** Name the Hook pressure, middle costs, Climax result, and
-   live threads this Resolution answers. Answering no live thread is epilogue
-   filler; erasing prior cost is a retcon.
+2. **Echo the arc.** Read the Climax's **carry-forward** as your entry state —
+   what the confrontation resolved, what it cost, and which threads reached
+   their final state. Name the Hook pressure, middle costs, Climax result, and
+   live threads this Resolution answers. When the Climax branched (held vs
+   lost, succeeded vs failed), the Resolution shows the distinct aftermath
+   each branch produces — costs visible in the closing image, not abstracted
+   away. Answering no live thread is epilogue filler; erasing prior cost is a
+   retcon.
 
 3. **Write the changed world.** Name trigger, actors, stakes, visible
    information, and at least two viable player responses. Theatre of the mind

@@ -34,7 +34,7 @@ If no query is given, default to **recent sessions mode**: ingest the last 5 unp
 
 ## Before You Start
 
-1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`.
+1. **Resolve config** — follow the Config Resolution Protocol in AGENTS.md (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`.
 2. Use `python3 scripts/manifest.py stats/has/get/delta` on `$OBSIDIAN_VAULT_PATH` — do **not** read whole `.manifest.json`.
 3. Read `$OBSIDIAN_VAULT_PATH/hot.md` if it exists → warm context on recent wiki activity.
 
@@ -303,8 +303,7 @@ Verify the collection with either:
 ${QMD_CLI:-qmd} ls "${QMD_WIKI_COLLECTION:-wiki}"
 ```
 
-For a specific page, follow the exact QMD retrieval rule in
-`.agents/skills/llm-wiki/SKILL.md`: search first, then pass the returned docid
+For a specific page, follow the exact QMD retrieval rule in AGENTS.md (Vault retrieval): search first, then pass the returned docid
 or source verbatim to `qmd get` / `qmd multi-get`.
 
 Record one of:

@@ -14,7 +14,7 @@ You are distilling knowledge from the current project into the user's Obsidian w
 
 ## Before You Start
 
-1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `OBSIDIAN_WIKI_REPO`, `OBSIDIAN_LINK_FORMAT` (`wikilink` default or `markdown`), and optional QMD settings such as `QMD_WIKI_COLLECTION`. Works from any project directory.
+1. **Resolve config** — follow the Config Resolution Protocol in AGENTS.md (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `OBSIDIAN_WIKI_REPO`, `OBSIDIAN_LINK_FORMAT` (`wikilink` default or `markdown`), and optional QMD settings such as `QMD_WIKI_COLLECTION`. Works from any project directory.
 3. Check prior sync with `python3 scripts/manifest.py` (`stats` / `has` / `get`) on `$OBSIDIAN_VAULT_PATH` — do **not** read whole `.manifest.json`.
 4. Read `$OBSIDIAN_VAULT_PATH/index.md` to know what the wiki already contains.
 
@@ -243,7 +243,7 @@ scripts/qmd-maintain.sh --embed
 ```
 
 Verify a created or materially updated page by following the exact QMD
-retrieval rule in `.agents/skills/llm-wiki/SKILL.md`: search first, then pass
+retrieval rule in AGENTS.md (Vault retrieval): search first, then pass
 the returned docid or source verbatim to `qmd get` / `qmd multi-get`.
 
 Record QMD refresh in the final report as one of:

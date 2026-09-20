@@ -9,6 +9,12 @@
     "markdownlint-cli2": "0.23.2"
   },
   "scripts": {
+    "lint:python": ".venv/bin/ruff check scripts tools tests",
+    "format:python": ".venv/bin/ruff format scripts tools tests",
+    "typecheck:python": ".venv/bin/pyright",
+    "test:python": "./scripts/run-pytest",
+    "test:python:coverage": "./scripts/run-pytest --cov=tools --cov=scripts --cov-report=term-missing",
+    "check:python": "npm run lint:python && npm run typecheck:python && npm run test:python",
     "lint:wiki": "./scripts/wiki-lint",
     "lint:vale": ".venv/bin/python scripts/vale-vocab && .venv/bin/vale --config=.vale.ini",
     "lint:markdown": "markdownlint-cli2",

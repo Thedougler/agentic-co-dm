@@ -15,15 +15,20 @@ Before writing substantial engineering, agent-system, campaign-architecture, or 
 
 ## Carve-outs
 
-Constitution XXV. Apply the rule to the whole named set. Add an except/exclude/grandfather only after that rule has already failed in this repo; name the failure on the carve-out.
+Constitution XXV. The user's named set is the work set. *Everything* means that whole set.
+Implement one *uniform* *composed* path.
 
-**Done when:** the written rule has no proactive exclude list.
+A filter, except list, hardcoded special case, or smallest-slice reading of a whole-set
+instruction is a carve-out. Add one only after that rule already failed in this repo; name
+the failure on it.
+
+**Done when:** the change applies to the named set; the written rule has no proactive exclude list.
 
 ## Canon and done-summary
 
 Canon owner: constitution principle X. File what it makes canon. Unsaid invention is not canon (XII).
 
-Lint contract: `AGENT001` `AGENT002` `AGENT003` via `scripts/check-agent-standards.py`, plus structural wiki lint through `scripts/wiki lint`. Creative lint remains on `scripts/wiki-lint`. Iterate until green. Do not ask. Do not interrupt with findings.
+Lint contract: `AGENT001` `AGENT002` `AGENT003` via `scripts/check-agent-standards.py`, plus structural wiki lint through `wiki lint`. Creative lint remains on `scripts/wiki-lint`. Iterate until green. Do not ask. Do not interrupt with findings.
 
 After green, one short done-summary: what changed, where. No question. No wait.
 
@@ -40,7 +45,7 @@ Primary deliverables are skills, agent instructions, and guidance documents. Scr
 
 ## Configuration
 
-Resolve config using the Config Resolution Protocol in `llm-wiki/SKILL.md`:
+Resolve config:
 
 0. **Inline vault override (`@name`)** — if the request contains an `@<name>` token, resolve `~/.obsidian-wiki/config.<name>` directly, overriding the steps below. See "Targeting a specific vault" right after this list.
 1. **Walk up from CWD** — look for a `.env` file in the current directory, then each parent, up to `$HOME`. Stop at the first `.env` that contains `OBSIDIAN_VAULT_PATH`.
@@ -106,7 +111,7 @@ Cut wasted context without waiting. A change MUST NOT count as an improvement if
 
 ## Wiki writes
 
-Every wiki write goes to its live path. `_raw/` remains the ingest inbox; `_archive/` holds promoted sources. Every file entering `wiki/` MUST pass structural `scripts/wiki lint` before it is considered complete. A non-clean report means the file remains incomplete.
+Every wiki write goes to its live path. `_raw/` remains the ingest inbox; `_archive/` holds promoted sources. Every file entering `wiki/` MUST pass structural `wiki lint` before it is considered complete. A non-clean report means the file remains incomplete.
 
 ## Edit discipline
 
@@ -273,7 +278,7 @@ replace this push protocol or perform pushes.
 ```
 $OBSIDIAN_VAULT_PATH/
 ├── index.md                # Master index — every page listed, always kept current
-├── log.md                  # Chronological activity log (ingests, updates, lints)
+├── log.md                  # Chronological activity log for llm-wiki operations (ingests, updates, retcons)
 ├── hot.md                  # Session hot cache — ~500-word semantic snapshot of recent activity
 ├── .manifest.json          # Tracks every ingested source: path, timestamps, pages produced
 ├── _meta/
@@ -307,11 +312,11 @@ Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the 
 | "ingest" / "add this to the wiki" / "process these docs" / "/ingest-url <url>" / logs, transcripts | `wiki-ingest` |
 | "what's the status" / "what's been ingested" / "show the delta" | `wiki-status` |
 | "wiki insights" / "hubs" / "wiki structure" | `wiki-status` (insights mode) |
-| "what do I know about X" / "find info on Y" / any question | `scripts/wiki query` for retrieval; `wiki-query` owns synthesis and citations |
+| "what do I know about X" / "find info on Y" / any question | `wiki query` for retrieval; `wiki-query` owns synthesis and citations |
 | "use my vault as context" / "context pack for X" / "bounded context" | `wiki-context-pack` |
 | "narrate" / "briefing" / "explain this topic" | `wiki-narrate` |
-| "lint" / "lint <page>" / "fix broken links" / "audit" | `scripts/wiki lint` (structural worklist; `--full` for findings) |
-| "wiki health" / "health check" | `scripts/wiki health`; act on `next`, then remaining `focus` — no terminal detection, extra interpretation, or DM wait |
+| "lint" / "lint <page>" / "fix broken links" / "audit" | `wiki lint` — grouped-file dump |
+| "wiki health" / "health check" | `wiki health`; act on `context.act`, then `next`, then remaining `focus` |
 | "dedup my wiki" / "merge duplicates" / "identity resolution" | `wiki-dedup` (standalone deep identity-resolution scan; wiki-lint Check 14 handles dedup in normal lint flow) |
 | "rebuild" / "start over" / "archive" / "restore" | `wiki-rebuild` |
 | "link my pages" / "cross-reference" / "connect my wiki" | `cross-linker` |
@@ -335,17 +340,15 @@ Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the 
 | "/wiki-digest" / "weekly digest" / "what's new in my wiki" | `wiki-digest` |
 | "restyle Obsidian" / "CSS snippet" / "tune tabs/sidebars/graph panes" | `obsidian-layout-adjustment` |
 
-### Wiki CLI command contract
-
-Use the dispatcher for standing structural lint, retrieval, and health checks:
+### Wiki CLI
 
 ```bash
-scripts/wiki lint [path]
-scripts/wiki query "<phrase>"
-scripts/wiki health
+wiki lint [path]
+wiki query "<phrase>"
+wiki health
 ```
 
-Default lint dumps every finding grouped by file; `--full` does not change that dump. Run `scripts/wiki health`, then act on `next` (then remaining `focus`) without terminal detection, extra interpretation, or waiting for the DM. Creative lint remains on `scripts/wiki-lint`; `wiki-query` remains the owner of synthesized answers and citations.
+stderr `tune` names a checker. Fix it this sitting.
 
 ### Co-DM — session lifecycle
 
@@ -461,7 +464,7 @@ See `wiki-query` and `wiki-export` skills for how the filter is applied.
 ## Core Principles
 
 - **Compile, don't retrieve.** The wiki is pre-compiled knowledge. Update existing pages — don't append or duplicate.
-- **Track everything.** After ingest, `python3 scripts/manifest.py record` the completed source (never whole-file read of `.manifest.json`); update `index.md`, `log.md`, and `hot.md` after writes.
+- **Track llm-wiki operations.** After ingest or another source-backed update, record the source with `python3 scripts/manifest.py record`; update `index.md`, `log.md`, and `hot.md`. Structural lint and repair do not write `log.md`.
 - **Connect with `[[wikilinks]]`.** Every page should link to related pages. This is what makes it a knowledge graph, not a folder of files.
 - **Frontmatter is required.** Every wiki page needs: `title`, `category`, `tags`, `sources`, `created`, `updated`.
 - **Single source of truth.** Visibility tags shape how content is surfaced — they don't duplicate or separate it.
@@ -504,7 +507,7 @@ Spec Kit artifacts are the handoff protocol. When `specs/<feature>/{spec,plan,ta
 
 ## Architecture Reference
 
-For the full pattern (three-layer architecture, page templates, project org), read `.agents/skills/llm-wiki/SKILL.md`.
+Wiki architecture, page templates, provenance, or trust model → `llm-wiki`.
 
 Human-facing documentation lives in `docs/` — `installation.md`, `agents.md`, `skills.md`, `cli.md`, `configuration.md`, `architecture.md`, `session-brain.md`, `contributing.md`. `README.md` is a landing page only; when you add a skill, CLI command, or config variable, update the matching `docs/` page rather than the README.
 

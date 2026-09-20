@@ -21,10 +21,18 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Gentle Hag
 
-## Stats & Combat
+> [!narration] Narration
+>
+
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -77,7 +85,7 @@ actions:
 **Wants:** to grow her household of charmed thralls without ever raising a hand herself, letting Gentle Charm and Persistent Charm do the patient work while she plays the grateful host.
 **Morale:** never breaks and runs; past half HP she leans on Siphon Joy, spending thralls to heal, and only disengages once every thrall present is spent or dead.
 
-### Coven Actions (requires 2 other hags within 30 ft.)
+**Coven Actions (requires 2 other hags within 30 ft.).**
 
 - **Shared Spellcasting:** 3/day: Alarm, Bless, Calm Emotions, Charm Person; 2/day: Beacon of Hope, Counterspell, Hallucinatory Terrain, Haste; 1/day: Dominate Person, Heroes' Feast, Mass Cure Wounds, Modify Memory.
 - **Gentle Gaze:** Create a magic item (10,000 gp, 1 hour). User can see through it to read a target's deepest desire.
@@ -85,15 +93,21 @@ actions:
 > [!mechanic]
 > **Siphon Joy.** Sacrifice a Charmed thrall: DC 15 Constitution save (disadvantage if charmed 24+ hours). Deals half the thrall's max HP as force damage; each coven hag heals for one-third of this.
 
-## Description
+## Biology
+
+**Description.**
 
 A fey hag that specializes in persistent charm. Once the initial resistance is worn down, the Gentle Hag's victims become permanent retainers — joyful, loyal, and impossible to free without high-level magic. She tends her charmed household herself, warm meals and real comfort, offering genuine protection to those she has already caught. The horror is not that she is cruel. It is that she is not. A related variant, the Haunt Hag, comes from the same fey lineage, though none has turned up in the [[shattered-sea]] yet.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 The Gentle Hag keeps to deep forest interior, well back from patrolled anchorages — the forested highlands behind [[crown-islands]]' coastal forts, or the tangled tree cover of [[Midchain West]]. She settles near a freshwater spring or tidal creek close enough to shore to draw in castaways, deserters, and anyone separated from a crew, but far enough inland that no fort's cannon range reaches her door. She does not hunt; she waits, and she keeps every charmed thrall fed, sheltered, and safe from the forest's other predators, tallying each one's comfort the way she'd tally coin. Other hags of her kind, the Haunt Hag chief among them, are drawn to the same quiet, unpatrolled corners of the world, though a coven only forms where the surrounding ground can feed and hide all its members at once.
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|

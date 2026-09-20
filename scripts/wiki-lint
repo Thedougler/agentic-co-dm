@@ -13,6 +13,7 @@ import json
 import re
 import subprocess
 import sys
+import time
 from pathlib import Path
 from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
@@ -106,19 +107,20 @@ def structural_main(argv: list[str]) -> int:
     parser.add_argument("--allow-relationship-type", action="append", default=[])
     args = parser.parse_args(argv)
     try:
+        timing: dict[str, int] = {}
         vault = resolve_vault(args.vault_override or args.vault)
         from tools.wiki_ops.scope import parse_scope
         scope = parse_scope(args.scope)
         if scope:
             scope.resolve(vault)
         identities = []
+        started = time.monotonic()
         if scope:
             from tools.wiki_ops.identity import scan_identities
             identities = scan_identities(vault, scope=scope)
+        timing["tools/wiki_ops/identity.py"] = int((time.monotonic() - started) * 1000)
         ambiguous_identities = [item.to_dict() for item in identities if item.status == "ambiguous"]
         extra: list[str] = []
-        if not args.all:
-            extra.append("--hard-only")
         for value in args.allow_lifecycle:
             extra.extend(["--allow-lifecycle", value])
         if args.verbose:
@@ -128,14 +130,18 @@ def structural_main(argv: list[str]) -> int:
         if scope:
             extra.extend(["--scope", args.scope])
         source = json.loads(Path(args.findings_file).read_text(encoding="utf-8")) if args.findings_file else None
+        started = time.monotonic()
         if source is None:
             code, report = run_lint(vault, extra)
         else:
             code, report = 0, source
+        timing["tools/lint_wiki.py"] = int((time.monotonic() - started) * 1000)
         report["identity"] = {"status": "ambiguous" if ambiguous_identities else "resolved", "ambiguous": ambiguous_identities, "scanned": len(identities)}
         if ambiguous_identities:
             report["identity_ambiguous"] = True
         if args.template:
+            started = time.monotonic()
+            from tools.creative_lint.template_profile import template_conformance as profile_conformance
             from tools.wiki_ops.template_contracts import check_conformance, contract_for_type
             paths = scope.resolved_files if scope else [
                 p.relative_to(vault).as_posix()
@@ -143,14 +149,28 @@ def structural_main(argv: list[str]) -> int:
                 if p.is_file() and not {"_archive", "_archives", "_raw", "_readouts", "_meta", "templates", ".obsidian"}.intersection(p.relative_to(vault).parts)
             ]
             template_findings = []
-            exemptions = 0
             for relative in paths:
                 page = vault / relative
                 try:
                     fields = __import__("tools.wiki_ops.mutations", fromlist=["frontmatter_fields"]).frontmatter_fields(page.read_text(encoding="utf-8"))
-                    contract = contract_for_type(vault, fields.get("type", "")) or contract_for_type(ROOT / "wiki", fields.get("type", ""))
+                    typ = (fields.get("type") or "").strip()
+                    contract = contract_for_type(vault, typ) or contract_for_type(ROOT / "wiki", typ)
                     if contract:
                         template_findings.extend(check_conformance(relative, page.read_text(encoding="utf-8"), contract))
+                    _, profile_findings = profile_conformance(page, root=ROOT)
+                    for finding in profile_findings:
+                        payload = finding.to_dict()
+                        location = payload.get("location") or {}
+                        template_findings.append({
+                            "rule_id": payload["rule_id"],
+                            "file": relative,
+                            "line": location.get("line", 1),
+                            "severity": payload["severity"],
+                            "reason": payload["reason"],
+                            "evidence": payload["evidence"],
+                            "repair_class": payload.get("repair_class", "human_repair"),
+                            "repair_target": payload.get("repair_target"),
+                        })
                 except (OSError, ValueError) as exc:
                     template_findings.append({"rule_id": "TMPL_error", "file": relative, "severity": "BLOCK", "reason": str(exc)})
             source_paths = [ROOT / "wiki" / "templates" / "faction.md", ROOT / ".agents" / "skills" / "faction-design" / "SKILL.md"]
@@ -178,12 +198,15 @@ def structural_main(argv: list[str]) -> int:
                 report.setdefault("counts", {})["template_conformance"] = len(template_findings)
                 report["hard_fail"] = True
                 report["status"] = "findings"
-        if args.vale and scope:
+            timing["tools/wiki_ops/template_contracts.py"] = int((time.monotonic() - started) * 1000)
+        if args.vale:
             from tools.creative_lint.bundles import BundleRegistry
             from tools.creative_lint.engine import LintEngine
             from tools.creative_lint.registry import Registry
             from tools.creative_lint.waivers import WaiverRegistry
+            from tools.creative_lint import vale_adapter
             creative_paths = [vault / relative for relative in scope.resolved_files] if scope else [vault]
+            started = time.monotonic()
             creative = LintEngine(
                 Registry.load(ROOT / "rules" / "registry.yml"),
                 BundleRegistry.load(ROOT / "rules" / "bundles.yml"),
@@ -191,21 +214,22 @@ def structural_main(argv: list[str]) -> int:
                 vault=vault,
                 waivers=WaiverRegistry.load(ROOT / "rules" / "waivers.json"),
             ).run(paths=creative_paths)
-            vale_findings = [
-                finding.to_dict() for finding in creative.findings
-                if finding.rule_id.startswith("VALE_")
-            ]
-            if vale_findings:
+            timing["tools/creative_lint/engine.py"] = int((time.monotonic() - started) * 1000)
+            timing.update(vale_adapter.TIMING)
+            if creative.findings:
                 findings = report.setdefault("findings", {})
-                for finding in vale_findings:
-                    rule_id = str(finding["rule_id"])
-                    item = dict(finding)
+                for finding in creative.findings:
+                    payload = finding.to_dict()
+                    rule_id = str(payload["rule_id"])
+                    item = dict(payload)
                     location = item.pop("location", {})
                     item["file"] = location.get("file", "")
                     item["line"] = location.get("line", 1)
                     findings.setdefault(rule_id, []).append(item)
                     report.setdefault("counts", {})[rule_id] = len(findings[rule_id])
+                report["hard_fail"] = True
                 report["status"] = "findings"
+        report["timing"] = timing
         if not args.verbose:
             counts = report.get("counts") or {}
             report["findings"] = {
@@ -262,7 +286,7 @@ def structural_main(argv: list[str]) -> int:
             return 2
         if args.plan:
             return 2 if report.get("actions") else 0
-        return 1 if (args.all and any((report.get("counts") or {}).values())) or (not args.all and report.get("hard_fail")) else 0
+        return 1 if any((report.get("counts") or {}).values()) or report.get("hard_fail") else 0
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         print(f"wiki-lint: {exc}", file=sys.stderr)
         return 2

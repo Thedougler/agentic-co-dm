@@ -33,7 +33,8 @@ summary: ""
 **Next:** [[Session-{{session}}-BB-Resolution]]
 
 > [!narration] Opening image
-> Write high-quality theatre of the mind. Address the players as "you" and describe the decisive situation directly in front of the characters. Include a visible threat, relative position, cover or routes, drawable appearance, and at least one non-sight sense. End on the reaction point. No hidden information or prescribed response.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: situated moment → beat: climax. -->
+> Write a situated opening that puts the decisive situation directly in front of the characters. Address the players as "you", present tense. Include a visible threat, relative position, cover or routes, drawable appearance, and at least one non-sight sense. End on the reaction point — opposition, stakes, and features clear, outcomes still open. The opening makes the fight, confrontation, or crisis immediate without narrating victory, defeat, or escape. No hidden information or prescribed response.
 
 ````col
 ```col-md

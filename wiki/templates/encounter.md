@@ -25,7 +25,8 @@ Omit empty sections. Pass is the jobs in wiki/AGENTS.md, not heading-order match
 What problem is already in motion, who is involved, and why it is live now.
 
 > [!narration] Initial Narration
-> Write high-quality theatre of the mind. "You" address, visible threat, relative position, and at least one non-sight sense. End on the reaction point.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: situated moment. -->
+> Write a situated opening the DM can speak aloud. Address the players as "you", present tense. Seat the party in the space at body scale — visible threat, relative position, cover or routes, and at least one non-sight sense. End on the reaction point: a live situation the players can respond to. No secrets, DCs, or unearned names.
 
 ## Opening pressure
 

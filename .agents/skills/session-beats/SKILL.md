@@ -41,9 +41,11 @@ and every response costs something.
 ## Composition
 
 A Beat Chart is a **pacing instrument**: alternation controls audience energy.
-Two action beats in a row numb; two introspection beats in a row stall. Each
-Development makes the next Cliffhanger's stakes legible; each Cliffhanger makes
-the next Development's information urgent. The rhythm is the point.
+Stacking action beats numbs — audiences groan when the hero finishes one fight
+and immediately walks into another; stacking introspection beats stalls — the
+players start checking their phones. Each Development makes the next
+Cliffhanger's stakes legible; each Cliffhanger makes the next Development's
+information urgent. The rhythm is the point.
 
 The five beat types compose a session when they advance shared **threads** — a
 faction clock, a PC goal, a mystery, a relationship under pressure, a depleting
@@ -67,7 +69,13 @@ learn the weakness → discover the ally); break chains with Cliffhangers so
 knowledge is tested before the next piece arrives.
 
 **How the Scene Resolves is the next beat's Trigger.** Prepare transitions, not
-just beats. A transition that teleports past a live option is a railroad.
+just beats. Each beat's carry-forward — what changed in the fiction, what the
+party committed to, and the continuity change — is the next beat's entry state.
+When different agents compose adjacent beats, the carry-forward is the contract
+between them: the receiving beat's opening must inherit the sending beat's
+changed world without teleporting past a live option, dropping a planted thread,
+or contradicting what the party just experienced. A transition that requires the
+reader to invent a bridge is a broken seam.
 
 **Stakes escalate across the arc.** Early pairs explore at lower cost; later
 pairs narrow the field and raise the price. Scale opposition across the arc:
@@ -151,6 +159,16 @@ agency checks. Additional session-level gates:
   graphs. Retrieve setting canon with qmd-retrieval; if the vault is silent,
   use a marked stub rather than inventing canon. Never paste WotC proprietary text.
 
+## Dramatic spine
+
+State a one-sentence dramatic spine for the session — the thematic through-line
+every beat reinforces from a different angle. The spine guides preparation, not
+play: situations are triggered by fiction, not forced by theme. Each beat on the
+chart advances the spine through a different lens — the Hook introduces it, early
+beats explore it at lower cost, later beats narrow and raise the price, and the
+Climax inverts or resolves it. A spine that repeats the same lesson in every beat
+is a lecture, not a through-line.
+
 ## Beat order audit
 
 Before play, write `Hook → (D/C pairs) → Climax → Resolution` and check:
@@ -167,7 +185,7 @@ Before play, write `Hook → (D/C pairs) → Climax → Resolution` and check:
 During play, cross out or rewrite candidates after each recompute.
 
 Copy [references/session-skeleton.md](references/session-skeleton.md) for
-preparation. Run [evals/evals.json](evals/evals.json) against drafts.
+preparation.
 
 ## Typed fill
 

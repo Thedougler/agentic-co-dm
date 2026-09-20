@@ -23,6 +23,9 @@ relationships:
     type: related_to
   - target: "[[drowned-maw]]"
     type: related_to
+region: ""
+role: ""
+cr: ""
 ---
 # Ridgeback
 
@@ -30,3 +33,9 @@ relationships:
 >
 
 [[Ridgeback]] is named as the second entity through the [[drowned-maw]] fissure from the [[elemental-plane-of-water]]. Clyde's Bestiary documents it. Like [[Leviathan]] and [[Krakling]], it is described with flat-black skin, no eyes, blindsight, and water breathing. No fight sheet is established here.
+
+## Statblock
+
+## Behavior
+
+## Tactics

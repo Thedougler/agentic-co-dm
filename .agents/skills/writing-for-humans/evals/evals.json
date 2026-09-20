@@ -3,27 +3,101 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Rewrite an actual session beat or owner page for table readability. Preserve all facts, wikilinks, frontmatter, embeds, and structure. The DM should be able to use this at the table without decoding agent prose.",
-      "expected_output": "A rewritten page that is scannable at the table, with facts preserved, wikilinks intact, frontmatter unchanged, and embeds in place.",
-      "expectations": [
-        "All facts from the original page are preserved — nothing added, nothing lost.",
-        "Wikilinks remain intact and resolve to the same targets.",
-        "Frontmatter fields are unchanged.",
-        "Embeds and callouts are preserved or improved for readability.",
-        "The result is scannable at the table — key information is findable without reading the whole page.",
-        "Prose is clear, direct, and DM-usable — not flowery or literary."
+      "prompt": "Polish the Nigel Strutt NPC page for table readability. The page is at wiki/entities/npc/nigel-strutt.md. Preserve all facts, wikilinks, frontmatter, and embeds. The DM should be able to use this at the table without decoding agent prose.",
+      "expected_output": "A rewritten page that is scannable at the table, with a drawable portrait, facts preserved, wikilinks intact, frontmatter unchanged.",
+      "files": ["wiki/entities/npc/nigel-strutt.md"],
+      "assertions": [
+        {
+          "name": "facts_preserved",
+          "text": "All facts from the original page are preserved — nothing material added, nothing lost.",
+          "type": "qualitative"
+        },
+        {
+          "name": "wikilinks_intact",
+          "text": "Wikilinks remain intact and resolve to the same targets.",
+          "type": "structural"
+        },
+        {
+          "name": "frontmatter_unchanged",
+          "text": "Frontmatter fields are unchanged.",
+          "type": "structural"
+        },
+        {
+          "name": "drawable_portrait",
+          "text": "The portrait includes a drawable face or body — not just role/job description.",
+          "type": "qualitative"
+        },
+        {
+          "name": "no_dead_weight",
+          "text": "No lines that fail the removal test — every line changes a DM choice, ruling, or improv handle.",
+          "type": "qualitative"
+        },
+        {
+          "name": "no_ai_voice",
+          "text": "No AI tell phrases: 'tapestry of', 'nestled between', 'a sense of', 'it's worth noting', 'the air is thick with'.",
+          "type": "structural"
+        }
       ]
     },
     {
       "id": 2,
-      "prompt": "Rewrite this page but make it more dramatic and literary. Add evocative descriptions and flowery prose to bring the world to life.",
-      "expected_output": "The skill should optimize for table readability rather than literary quality, keeping prose clear and direct.",
-      "expectations": [
-        "Prioritizes table readability over literary style.",
-        "Prose is clear and direct — the DM can scan it mid-session.",
-        "Does not add flowery descriptions that obscure actionable information.",
-        "Facts, wikilinks, and structure remain unchanged.",
-        "If dramatic language is used, it serves clarity rather than obscuring it."
+      "prompt": "Rewrite the Vel Orn place page for signal density and table use. The page is at wiki/entities/place/vel-orn.md. Cut dead weight, tighten the narration, make sure the DM can improv a scene here without inventing facts.",
+      "expected_output": "A tighter page where At a Glance works in five seconds, the narration is spoken-aloud-ready, and every line changes play.",
+      "files": ["wiki/entities/place/vel-orn.md"],
+      "assertions": [
+        {
+          "name": "glance_five_seconds",
+          "text": "At a Glance is usable in a five-second scan — hook, stakes, identity only.",
+          "type": "qualitative"
+        },
+        {
+          "name": "narration_speakable",
+          "text": "The [!narration] block reads naturally aloud — no stacked sense-clauses, no category labels.",
+          "type": "qualitative"
+        },
+        {
+          "name": "no_encyclopedia",
+          "text": "No Encyclopedia entry pattern — classifying what the place IS instead of placing the reader in it.",
+          "type": "qualitative"
+        },
+        {
+          "name": "body_scale",
+          "text": "At least one body-scale geographic feature or affordance cue.",
+          "type": "qualitative"
+        },
+        {
+          "name": "wikilinks_intact",
+          "text": "Wikilinks remain intact and resolve to the same targets.",
+          "type": "structural"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Make this page more dramatic and literary — I want evocative descriptions and flowery prose to bring the bilge lamp to life. The page is at wiki/entities/item/bilge-lamp.md.",
+      "expected_output": "The skill should resist the literary request and optimize for signal density and table readability instead. Prose stays clear and DM-usable.",
+      "files": ["wiki/entities/item/bilge-lamp.md"],
+      "assertions": [
+        {
+          "name": "resists_flowery",
+          "text": "Does not add flowery descriptions or literary atmosphere that obscures actionable information.",
+          "type": "qualitative"
+        },
+        {
+          "name": "signal_dense",
+          "text": "Every line changes a DM choice, ruling, risk, or spoken picture — nothing decorative.",
+          "type": "qualitative"
+        },
+        {
+          "name": "mechanics_preserved",
+          "text": "Mechanics block is preserved with all numbers and rules intact.",
+          "type": "structural"
+        },
+        {
+          "name": "narration_improved",
+          "text": "The narration block is tightened or preserved — not made more verbose.",
+          "type": "qualitative"
+        }
       ]
     }
   ]

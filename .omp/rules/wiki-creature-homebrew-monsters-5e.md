@@ -5,4 +5,4 @@ scope: "tool:edit(wiki/entities/creature/**), tool:write(wiki/entities/creature/
 interruptMode: always
 ---
 
-Read `skill://homebrew-monsters-5e`. Follow it for this write.
+Read `wiki/templates/creature.md` and `skill://homebrew-monsters-5e`. Follow both for this write.

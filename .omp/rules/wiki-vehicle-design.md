@@ -5,4 +5,4 @@ scope: "tool:edit(wiki/entities/vehicle/**), tool:write(wiki/entities/vehicle/**
 interruptMode: always
 ---
 
-Read `skill://vehicle-design`. Follow it for this write.
+Read `wiki/templates/vehicle.md` and `skill://vehicle-design`. Follow both for this write.

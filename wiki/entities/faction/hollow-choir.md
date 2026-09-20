@@ -32,3 +32,13 @@ relationships:
 The [[hollow-choir]] is a reclusive singing order in the southern [[Midchain]]. The source names it only to say it does not overlap [[Blackrule]].
 
 Southern Midchain sea caves turn any voice into multi-part harmony; the order sings the tides on schedule (campaign-os place note).
+
+## At a Glance
+
+## At the Table
+
+## Current State
+
+## People & Structure
+
+## Running the Faction

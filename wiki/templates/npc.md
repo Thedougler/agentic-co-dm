@@ -40,7 +40,8 @@ flexGrow=2
 flexGrow=1
 ===
 > [!narration] {{title}}
-> Write a high-quality cold portrait in flowing prose — as long as the person requires. Cover face, body, posture, clothing, and at least one non-sight detail. No secrets, DCs, unearned names, or DM thesis.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: person. -->
+> Write a standalone cold portrait in flowing prose — as long as the person requires to be recognizable. Cover face, body, posture, clothing, and at least one non-sight detail (voice timbre, smell, habit). The portrait gives a player a first-look picture they can sketch and distinguish from other NPCs. No secrets, DCs, unearned names, or DM thesis.
 ```
 ````
 

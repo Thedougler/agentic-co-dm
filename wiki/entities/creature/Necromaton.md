@@ -19,12 +19,17 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Necromaton
 
-## Stats & Combat
+## Statblock
 
-### Base Model (Ground)
+**Stats & Combat.**
+
+**Base Model (Ground).**
 
 ```statblock
 layout: Basic 5e Layout
@@ -93,7 +98,7 @@ lair_actions:
   - desc: "The Necromaton grants arcane gifts to constructs within 30 feet of it. Until initiative count 20 on the next round, each of those constructs can use its action to cast Mending, restoring 2d6 hit points to a construct it touches instead of Mending's normal effect."
 ```
 
-### Flying Model
+**Flying Model.**
 
 Small chassis, built for a scout/sniper role. Every field below overrides
 Base; the source's own delta format leaves every other field (saves,
@@ -120,7 +125,7 @@ traits+:
     desc: "The Necromaton has no disadvantage on ranged attack rolls against targets beyond normal range, and its Arm Cannon deals an extra 1d6 damage against a target when no creatures are within 5 feet of that target."
 ```
 
-### Bulldozer Model
+**Bulldozer Model.**
 
 Large chassis, built for a tank role. Every field below overrides Base;
 all other fields inherit unchanged, same as the Flying Model above.
@@ -166,7 +171,9 @@ which body is currently active in a fight. The source is Pointy Hat.
 > It doesn't blink, because there's nothing in the sockets to blink. It's already looking straight at you.
 
 
-## Description
+## Biology
+
+**Description.**
 
 Common knowledge about this specific creature kind isn't established yet
 in this campaign. No Necromaton has appeared at the table, so no
@@ -175,7 +182,9 @@ What the read-aloud description above gives away is all a witness would
 have to go on: metal, unhurried, and armed for a fight it doesn't expect
 to lose.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 A Necromaton is an artificer who achieved lichdom by building a construct
 body and transferring their soul into it, anchored by a biological
@@ -188,7 +197,9 @@ building. The source gives no sensory tell for running this creature
 beyond its physical description (a metal chassis, an Arm Cannon or Arm
 Torch housing); a DM call once it's staged for a real encounter.
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
@@ -196,7 +207,7 @@ Torch housing); a DM call once it's staged for a real encounter.
 | Crack open a downed body and examine its anchor organ | The Necromaton has already lost a construct body in this fight | An Arcana or Investigation check reveals how decayed that anchor is, letting an artificer read the chassis's engineering choices at a glance | |
 | Track down and destroy every body it maintains | Its hunters have found every construct body it maintains | The Necromaton is permanently destroyed, its only true end | |
 
-## Prepped Reveals
+**Prepped Reveals.**
 
 The source states that destroying every construct body a Necromaton
 maintains permanently ends it. A party that finds and destroys a single

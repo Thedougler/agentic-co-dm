@@ -1,0 +1,11 @@
+{
+  "eval_id": "combat-spatial-clarity",
+  "eval_name": "Combat opening spatial clarity",
+  "prompt": "Write a combat opening for a fight in a flooded temple ruin. Three sahuagin cluster near the altar (Near the party), two more lurk behind a collapsed pillar (Far). A cracked stone bridge connects the entry ledge to the altar platform. Knee-deep water covers the floor. Use relational distance, not coordinates.",
+  "assertions": [
+    {"text": "Uses relational bands (Melee, Near, Far) for distance, not feet or coordinates in spoken prose.", "type": "structure"},
+    {"text": "Grouping of the three clustered sahuagin is legible enough to answer a reasonable area-effect question.", "type": "quality"},
+    {"text": "Threats, terrain (bridge, water), cover (pillar), and routes are understandable from one hearing.", "type": "quality"},
+    {"text": "Does not include a turn-by-turn script or top-of-round summary.", "type": "guardrail"}
+  ]
+}

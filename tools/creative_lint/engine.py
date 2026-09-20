@@ -88,6 +88,8 @@ class LintEngine:
                     categories[category] = GATES[gate]
         if bundle:
             try:
+                if self.bundles is None:
+                    raise ValueError("bundle registry is not configured")
                 resolved = self.bundles.get(bundle).resolve(self.registry)
             except KeyError as exc:
                 raise ValueError(f"unknown bundle {bundle!r}") from exc

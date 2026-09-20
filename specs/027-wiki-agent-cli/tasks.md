@@ -105,6 +105,8 @@ Repo root: `scripts/wiki`, `tools/wiki_ops/`, `tests/test_wiki_cli.py`
 - [X] T014 [US4] Implement snapshot in `tools/wiki_ops/health.py`: live lint **summary** (same cache, **no `files` dump**); `pages`, `bytes`, `tokens` (tiktoken via `scripts/token-count.py`); Layer A `waste` (`hits`, `hard_hits`), `staging.leftover_count`, `remorph` (`plan_count`, `skip_count`, `error_count`), `policy` (`ok`, `conflict_count`); `trends.sittings`, `trends.skills` (usage names cap 5, not evals), `trends.errors` (open only, causes cap 3), `trends.efficiency` sitting subset, `trends.slowest_commands` cap 3 from `record_kind=command`, `trends.token_heaviest` cap 3 (`tokens` = sum of trajectory fields); `focus` ordered cap 5 (`path`, `reason`, `source` `lint` \| `remorph` \| `layout` \| `tracker`); `next` is `focus[0]` or null; MUST NOT include skill-eval pass/fail, missing-skill inventories, raw traces, or per-step essays; missing trackers → zero/empty trends, not exit 2
 - [X] T015 [US4] Wire `health` in `scripts/wiki` and make `scripts/wiki-maintain --report` emit the identical snapshot; path args scope `pages`/`bytes`/`tokens`/`lint`/`focus`; `trends` always whole-tracker
 - [X] T016 [US4] Add pytest in `tests/test_wiki_cli.py` for alias equality, no `files` dump, empty-tracker zeros, `len(focus) <= 5`, `next is focus[0] or None`, slowest-command rank after two timed runs, token-heaviest from a sitting fixture, no skill-eval keys
+- [X] T023 [US4] Add `context` to `tools/wiki_ops/health.py` + `scripts/wiki health`: tiktoken first-turn file breakdown, skill SKILL.md ranks, first-turn efficiency delta vs last health command record, `act` steps; pretty prints `act`; pytest in `tests/test_wiki_cli.py`; retarget wiki-lint / wiki-status / llm-wiki to follow `context.act` then `next`
+
 
 **Checkpoint**: Health is compact and actionable via `next`.
 
@@ -133,6 +135,13 @@ Repo root: `scripts/wiki`, `tools/wiki_ops/`, `tests/test_wiki_cli.py`
 - [X] T020 Run `.venv/bin/python scripts/check-agent-standards.py` until AGENT001–003 are green
 - [X] T021 Run cold-context smol subject for SC-008 (names a finding line + `next_page`) and SC-009 (names `next.path`) per `specs/027-wiki-agent-cli/quickstart.md` V-008/V-009
 - [X] T022 Run `.venv/bin/python -m pytest tests/test_wiki_cli.py -q` and the runnable quickstart V-001–V-007, V-010 checks
+- [X] T023 [US2] Hash Vale styles, structural lint sources, template contracts, and checker flags in `digest_rules`; a rules-state change is a cache miss (`tools/wiki_ops/lint_cache.py`, `scripts/wiki`)
+- [X] T024 [US4] Run pending live lint in one checker invocation (`scripts/wiki` `_compute_lint`)
+- [X] T025 [US4] Flag llm-wiki core files in `build_core_files` / `context.core` + `context.act`
+- [X] T026 Surface open `errors.md` on `wiki lint`/`wiki health` so `status: clean` is not page-lint-only
+- [X] T027 [US1][US4] `wiki lint` and `wiki health` emit stderr `wiki <command>: elapsed_s=<n> still=1` at least every 10 seconds while running (`tools/wiki_ops/timing.py` `ProgressHeartbeat`, wrap `scripts/wiki` `main`); stdout unchanged; pytest in `tests/test_wiki_cli.py`
+- [X] T028 Integrate locked Python lint, format, type-check, and coverage commands in `pyproject.toml`, `package.json`, README setup, and `.gitignore`
+
 
 ---
 

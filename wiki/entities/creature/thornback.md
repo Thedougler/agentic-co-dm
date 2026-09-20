@@ -32,17 +32,11 @@ relationships:
 ---
 # Aruhe - Thornback
 
-## Statblock
-
-````col
-```col-md
-flexGrow=2
-===
 > [!narration] Narration
 > Boar and porcupine with the off-switch gone: javelin quills on shoulder and rump, tusks grown through the skull and out again. Solitary animals root the Quiet floor and shove trails other beasts use afterward. Spent spines litter the path and regrow in hours.
-```
 
-```col-md
+## Statblock
+
 ```statblock
 layout: Basic 5e Layout
 name: "Thornback"
@@ -72,10 +66,9 @@ actions:
   - name: "Spine Volley (Recharge 5-6)"
     desc: "The thornback flings a spray of quills in a 15-foot cone. Each creature in the area must make a DC 15 Dexterity saving throw, taking 21 (6d6) piercing damage on a failed save, or half as much damage on a successful one."
 ```
-```
-````
 
 ## Behavior
+
 
 - **Habitat.** [[the-quiet]] floor. It avoids other thornbacks because two in one stretch fight each other first.
 - **Behavior.** The Blight fused boar aggression with a porcupine's defensive arsenal and removed the off switch. It roots through the jungle floor and shoves trails open. Shed quills regrow within hours.
@@ -83,6 +76,7 @@ actions:
 - **Social Structure.** Solitary. Two in one stretch fight each other first.
 
 ## Tactics
+
 
 - **Signs.** Javelin quills, tusks through skull, spent spines on trails.
 - **Instincts.** Charge, gore, and quill. It claims a stretch alone.

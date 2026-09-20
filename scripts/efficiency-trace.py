@@ -369,9 +369,14 @@ def main() -> int:
         elif args.command == "promote":
             settings = policy()
             records = [validate_record(record) for record in records_from(read_json(args.input)) if record.get("record_kind") != "command"]
-            classes = {r["sitting_class"] for r in complete}
-            jobs = {r.get("job") for r in complete}
-            identities = {(r["model_family"], r["tokenizer_family"], r["encoding"]) for r in complete}
+            complete = [
+                record
+                for record in records
+                if record["measurement_status"] == "complete" and record["work_status"] == "accepted"
+            ]
+            classes = {record["sitting_class"] for record in complete}
+            jobs = {record.get("job") for record in complete}
+            identities = {(record["model_family"], record["tokenizer_family"], record["encoding"]) for record in complete}
             if len(complete) < settings["minimum_pairs"] or len(classes) != 1 or len(jobs) != 1:
                 error(f"promotion requires at least {settings['minimum_pairs']} same-kind accepted complete records")
             if len(identities) != 1:

@@ -5,4 +5,4 @@ scope: "tool:edit(wiki/entities/region/**), tool:write(wiki/entities/region/**),
 interruptMode: always
 ---
 
-Read `skill://region-design`. Follow it for this write.
+Read `wiki/templates/region.md` and `skill://region-design`. Follow both for this write.

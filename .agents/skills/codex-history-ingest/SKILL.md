@@ -16,7 +16,7 @@ This skill can be invoked directly or via the `wiki-history-ingest` router (`/wi
 
 ## Before You Start
 
-1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` and `CODEX_HISTORY_PATH` (defaults to `~/.codex`)
+1. **Resolve config** — follow the Config Resolution Protocol in AGENTS.md (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` and `CODEX_HISTORY_PATH` (defaults to `~/.codex`)
 2. Query the ingest ledger with `python3 scripts/manifest.py` (`stats` / `has` / `get` / `delta`) — do **not** read whole `.manifest.json` into context
 3. Prefer `hot.md` + capped `qmd`/`rg` for existing wiki context; full `index.md` only if required — whole-file preload is token waste
 
@@ -229,8 +229,7 @@ Verify the collection with either:
 ${QMD_CLI:-qmd} ls "${QMD_WIKI_COLLECTION:-wiki}"
 ```
 
-For a specific page, follow the exact QMD retrieval rule in
-`.agents/skills/llm-wiki/SKILL.md`: search first, then pass the returned docid
+For a specific page, follow the exact QMD retrieval rule in AGENTS.md (Vault retrieval): search first, then pass the returned docid
 or source verbatim to `qmd get` / `qmd multi-get`.
 
 Record one of:

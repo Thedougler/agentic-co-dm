@@ -61,7 +61,7 @@ Design-time fields — work through these during creation, then distribute into 
 
 ### Standalone creature → `wiki/templates/creature.md`
 
-Linear layout: H1 → `[!narration]` → `## Statblock` (image then fence) → Visual reference when present → Behavior (list items `- **Label.**`) → Tactics (list items `- **Label.**`) → Art. No column wrappers. Exemplars: `wiki/entities/creature/bloodhawk.md`, `wiki/entities/creature/spiguar.md`.
+Linear layout: H1 → `[!narration]` → `## Statblock` (at most one overview image immediately before the fence) → Visual reference when present → Biology when present → Behavior (list items `- **Label.**`) → Tactics (list items `- **Label.**`) → Art subsections for remaining images. Exemplars: `wiki/entities/creature/bloodhawk.md`, `wiki/entities/creature/spiguar.md`.
 
 - **Opening tell and preferred position:** [ ] → Tactics: **Signs**, **Instincts**
 - **Default choice:** [ ] → Tactics: **Tactics**

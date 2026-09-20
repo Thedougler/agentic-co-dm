@@ -6,7 +6,7 @@ import json
 import os
 import tempfile
 from pathlib import Path
-from typing import Any, Mapping, TypedDict
+from typing import Any, Mapping, TypedDict, cast
 
 CACHE_NAME = "lint-cache.json"
 
@@ -64,6 +64,46 @@ def digest_config(config: Any) -> str:
 
 config_sha256 = digest_config
 
+RULE_FILES = (
+    ".vale.ini",
+    ".vale.yaml",
+    "tools/lint_wiki.py",
+    "scripts/wiki-lint",
+    "rules/registry.yml",
+    "rules/bundles.yml",
+)
+RULE_DIRS = ("styles", "wiki/templates/contracts", "tools/creative_lint")
+RULE_SUFFIXES = {".ini", ".yml", ".yaml", ".py", ".md"}
+SKIP_DIR_NAMES = {"__pycache__", ".git"}
+
+
+def _repo_relative(root: Path, path: Path) -> str:
+    try:
+        return path.resolve().relative_to(root.resolve()).as_posix()
+    except ValueError:
+        return path.name
+
+
+def digest_rules(root: str | Path, extra: Mapping[str, Any] | None = None) -> str:
+    """Hash the rules state applied to a lint: Vale, structural sources, contracts, flags."""
+    base = Path(root)
+    files: dict[str, str] = {}
+    for relative in RULE_FILES:
+        path = base / relative
+        if path.is_file():
+            files[_repo_relative(base, path)] = sha256_file(path)
+    for relative in RULE_DIRS:
+        directory = base / relative
+        if not directory.is_dir():
+            continue
+        for child in sorted(directory.rglob("*")):
+            if SKIP_DIR_NAMES.intersection(child.parts) or not child.is_file():
+                continue
+            if child.suffix.lower() in RULE_SUFFIXES or child.name in {".vale.ini", ".vale.yaml"}:
+                files[_repo_relative(base, child)] = sha256_file(child)
+    return digest_config({"extra": dict(extra or {}), "files": files})
+
+
 
 def _empty_cache() -> LintCache:
     return {"config_digest": "", "entries": {}}
@@ -93,12 +133,12 @@ def _valid_entry(raw: Any) -> CacheEntry | None:
         return None
     if not isinstance(extracts, Mapping) or not isinstance(results, Mapping):
         return None
-    return {
+    return cast(CacheEntry, {
         "content_sha256": content,
         "config_digest": config,
         "extracts": dict(extracts),
         "results": dict(results),
-    }
+    })
 
 
 def _clean_cache(vault: Path, raw: Any) -> LintCache:

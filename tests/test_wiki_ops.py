@@ -290,8 +290,9 @@ def test_scoped_lint_keeps_default_vale_in_acceptance_gate(tmp_path: Path):
         "--vault",
         tmp_path,
     )
-    structural_report = assert_json(structural_only, returncode=0)
-    assert structural_report["hard_fail"] is False
+    structural_report = assert_json(structural_only, returncode=1)
+    assert structural_report["status"] == "findings"
+    assert structural_report["counts"]
 
 def test_mutation_hash_and_dry_run():
     page = (FIXTURE / "fisks-fleet.md").read_text()
@@ -345,6 +346,14 @@ def test_identity_fixture_is_deterministic():
     assert resolve_identity(FIXTURE, "fisks-fleet.md").status == "ambiguous"
     assert resolve_identity(FIXTURE, "fisks-fleet.md").candidates
 
+def test_identity_scan_matches_individual_resolution():
+    scanned = {result.path: result.to_dict() for result in scan_identities(FIXTURE)}
+    expected = {
+        path: resolve_identity(FIXTURE, path).to_dict()
+        for path in scanned
+    }
+    assert scanned == expected
+
 def test_identity_only_compares_same_type(tmp_path: Path):
     base = (FIXTURE / "fisks-fleet.md").read_text()
     (tmp_path / "faction.md").write_text(base, encoding="utf-8")
@@ -374,7 +383,7 @@ def test_typed_frontmatter_tag_and_link_mutations_preserve_document_shape(tmp_pa
         tmp_path,
         MutationOp("set_frontmatter", "page.md", selector={"field": "lifecycle"}, payload={"value": "active"}),
     )["accepted"]
-    result = apply_mutation(
+    apply_mutation(
         tmp_path,
         MutationOp(
             "repair_links",
@@ -454,6 +463,81 @@ def test_repair_plan_contains_only_allowlisted_deterministic_actions(tmp_path: P
     )
     assert [item["action"] for item in plan["actions"]] == ["delete_redirect_stub"]
     assert plan["requires_approval"] is True
+
+
+def test_repair_plan_skips_dict_vale_actions(tmp_path: Path):
+    plan = build_plan(
+        tmp_path,
+        {"findings": {"VALE_Deprecated.DMThesis": [
+            {
+                "file": "page.md",
+                "repair_class": "deterministic_repair",
+                "repair_action": {"kind": "delete_section", "target": "page.md", "selector": {"line": 4}},
+            },
+        ]}},
+    )
+    assert plan["actions"] == []
+
+
+def test_misplaced_entity_is_hard_and_skips_wrong_template(tmp_path: Path):
+    page = tmp_path / "entities" / "item" / "snakewood.md"
+    page.parent.mkdir(parents=True)
+    page.write_text(
+        "---\n"
+        "title: Snakewood\n"
+        "category: entities\n"
+        "tags: []\n"
+        "sources: []\n"
+        "created: 2026-09-01\n"
+        "updated: 2026-09-17\n"
+        "type: creature\n"
+        "lifecycle: proposed\n"
+        "reveal: dm\n"
+        "---\n\n"
+        "# Snakewood\n",
+        encoding="utf-8",
+    )
+    result = run_cli(
+        "scripts/wiki-lint",
+        "--no-vale",
+        "--scope",
+        "files:entities/item/snakewood.md",
+        "--vault",
+        tmp_path,
+    )
+    report = assert_json(result, returncode=1)
+    hits = report["findings"]["misplaced_entity"]
+    assert hits[0]["page"] == "entities/item/snakewood.md"
+    assert hits[0]["expected"] == "entities/creature/snakewood.md"
+
+def test_moc_generate_wrapper_reports_help():
+    result = subprocess.run(
+        [str(ROOT / "scripts" / "moc-generate"), "--help"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    assert result.returncode == 0, result.stderr
+    assert "moc-generate" in result.stdout
+
+
+def test_type_migrate_plans_wrong_folder(tmp_path: Path):
+    src = tmp_path / "entities" / "item" / "snakewood.md"
+    src.parent.mkdir(parents=True)
+    src.write_text("---\ntitle: Snakewood\ntype: creature\n---\n", encoding="utf-8")
+    result = subprocess.run(
+        [PYTHON, str(ROOT / "scripts" / "wiki-entities-type-migrate.py"), "--dry-run", "--wiki", str(tmp_path)],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    assert result.returncode == 0, result.stderr
+    payload = json.loads(result.stdout)
+    assert any(
+        item["reason"] == "wrong_type_folder" and item["dest"] == "entities/creature/snakewood.md"
+        for item in payload["moves"]
+    )
+
 
 
 def _run_qmd_hook(temp: Path, *, body: str, extra_env: dict[str, str] | None = None) -> subprocess.CompletedProcess[str]:

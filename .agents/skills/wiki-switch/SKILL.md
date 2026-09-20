@@ -17,7 +17,7 @@ whichever file `~/.obsidian-wiki/config` symlinks to. Switching vaults means re-
 the symlink, affecting all future requests). To touch a different vault for just one request without
 changing your default, use the inline **`@name`** override in any request (e.g. `@work save this`,
 `wiki-query @personal about X`). The `@name` override is handled by the **Config Resolution Protocol**
-in `llm-wiki/SKILL.md`, not by this skill — it resolves `~/.obsidian-wiki/config.<name>` for that one
+in AGENTS.md, not by this skill — it resolves `~/.obsidian-wiki/config.<name>` for that one
 invocation and never re-points the symlink.
 
 ## Dispatch

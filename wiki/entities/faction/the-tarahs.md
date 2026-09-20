@@ -41,3 +41,13 @@ No goal or Front clock is defined yet. Apparent adversarial relationship to the 
 **Session 03** (`vault/episodes/003/`) — Nona realizes she'd thought Perrin captured by the Tarahs — Cobb had reported one of their ships coming in — and calls off the attacks.
 
 Status: canon, pile-table rung 2 (source session log shows it in actual play) — citation above is a primary DM scene-log line, not self-description.
+
+## At a Glance
+
+## At the Table
+
+## Current State
+
+## People & Structure
+
+## Running the Faction

@@ -14,6 +14,7 @@ def render_lint(result: Mapping[str, Any]) -> str:
     """Render a lint worklist without exposing its machine representation."""
     counts = _value(result, "counts", {})
     cache = _value(result, "cache", {})
+    ledger = _value(result, "ledger", {})
     lines = [
         "Lint: " + str(_value(result, "status", "unknown")),
         "Counts: " + (" ".join(f"{k}={counts[k]}" for k in sorted(counts)) or "none"),
@@ -22,6 +23,10 @@ def render_lint(result: Mapping[str, Any]) -> str:
             f"{key}={_value(cache, key, 0)}" for key in ("hits", "misses", "vale_skipped")
         ),
     ]
+    if int(_value(ledger, "open", 0) or 0):
+        ids = _value(ledger, "ids", ())
+        lines.append("Ledger: " + (" ".join(str(item) for item in ids) or str(_value(ledger, "open"))))
+
     groups = _value(result, "files", ())
     if not groups:
         groups = ({"file": _value(finding, "file", ""), "findings": (finding,)} for finding in _value(result, "findings", ()))
@@ -49,7 +54,7 @@ def render_query(result: Mapping[str, Any]) -> str:
 
 
 def render_health(result: Mapping[str, Any]) -> str:
-    """Render the short health scoreboard and ordered focus queue."""
+    """Render the short health scoreboard, context act, and ordered focus queue."""
     lint = _value(result, "lint", {})
     lint_counts = _value(lint, "counts", {})
     hard = sum(v for k, v in lint_counts.items() if str(k).lower() in {"hard", "error"})
@@ -59,14 +64,34 @@ def render_health(result: Mapping[str, Any]) -> str:
     trends = _value(result, "trends", {})
     slowest = _value(trends, "slowest_commands", ())
     heaviest = _value(trends, "token_heaviest", ())
+    context = _value(result, "context", {})
+    first_turn = _value(context, "first_turn", {})
     lines = [
         "Health: " + str(_value(result, "status", "unknown")),
         "Metrics: " + " ".join(
             f"{key}={_value(result, key, 'n/a')}" for key in ("pages", "bytes", "tokens")
         ) + f" lint_hard={hard}",
+        f"First-turn: {_value(first_turn, 'total_tokens', 0)} tokens",
         f"Slowest: {slowest[0] if slowest else 'none'}",
         f"Token-heaviest: {heaviest[0] if heaviest else 'none'}",
     ]
+    for row in _value(first_turn, "files", ()):
+        lines.append(f"  {_value(row, 'path', '')}  {_value(row, 'tokens', 0)}")
+    skills = _value(context, "skills", ())
+    coverage = _value(context, "eval_coverage", {})
+    if skills:
+        lines.append(
+            "Skills: "
+            f"with={_value(coverage, 'with', 0)} without={_value(coverage, 'without', 0)}"
+        )
+        lines.extend(
+            f"  {_value(row, 'name', '')}  {_value(row, 'tokens', 0)}  {_value(row, 'coverage', '')}  evals={_value(row, 'evals', 0)}  criteria={_value(row, 'criteria', 0)}"
+            for row in skills[:10]
+        )
+    act = _value(context, "act", ())
+    if act:
+        lines.append("Act:")
+        lines.extend(f"- {step}" for step in act)
     nxt = _value(result, "next", None)
     lines.append("Next: " + (str(_value(nxt, "path", "")) if isinstance(nxt, Mapping) else (str(nxt) if nxt else "none")))
     focus = _value(result, "focus", ())

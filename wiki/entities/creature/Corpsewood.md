@@ -29,17 +29,11 @@ relationships:
 ---
 # Corpsewood
 
-## Statblock
-
-````col
-```col-md
-flexGrow=2
-===
 > [!narration] Narration
 > A dead tree walks: forty feet of split bark and dragging roots. It patrols deep The Rot on a seasonal beat and never leaves the tree line. Fire is the one thing that stops it knitting itself back together. The wood died years ago; what moves it did not.
-```
 
-```col-md
+## Statblock
+
 ```statblock
 layout: Basic 5e Layout
 name: "Corpsewood"
@@ -72,10 +66,9 @@ actions:
   - name: "Uproot (Recharge 5–6)"
     desc: "The corpsewood tears the ground in a 20-foot-radius area centered on itself. Each creature in the area must make a DC 17 Dexterity saving throw, taking 36 (8d8) bludgeoning damage and falling Prone on a failed save, or taking half as much damage without falling Prone on a successful one."
 ```
-```
-````
 
 ## Behavior
+
 
 - **Habitat.** Deep Rot, always near the tree line. It follows a seasonal beat and does not leave the forest. Silence moths, thornbacks, or ordinary Rot terrain can create movement problems, but the corpsewood should remain the obvious durable target rather than gain many immunities.
 - **Behavior.** It is a dead tree that moves: forty feet of split bark and dragging roots. It patrols deep The Rot on a seasonal beat and never leaves the tree line. Fire is the one thing that stops it knitting itself back together. The wood stopped living years ago. The animating force did not.
@@ -83,5 +76,6 @@ actions:
 - **Social Structure.** Source is silent unless named above.
 
 ## Tactics
+
 
 **Tactic:** patrol the deep Rot as a moving dead tree. The roots drag through the line. The corpsewood slams anything that blocks the beat and uproots the ground when surrounded. **Tell:** split bark knits visibly until fire blackens the wood along its breaks.

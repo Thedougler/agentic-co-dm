@@ -59,7 +59,8 @@ Write the minimum facts needed to understand the quest **as it exists now**. Des
 ### What the party knows
 
 > [!narration] Player-facing brief
-> Write a high-quality cold portrait of the hook, request, rumor, evidence, or visible problem using only information the characters currently possess.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait. -->
+> Write a standalone cold portrait of the hook, request, rumor, evidence, or visible problem in flowing prose — using only information the characters currently possess. The portrait gives the players a drawable picture of the situation and enough detail to decide whether to engage. No secrets, hidden motives, or DM-only facts.
 
 ### What is really happening
 

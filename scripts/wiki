@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import contextlib
 import json
 import os
 import subprocess
@@ -11,14 +12,17 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
+_VENV_PY = ROOT / ".venv" / "bin" / "python"
+if _VENV_PY.is_file() and Path(sys.executable).resolve() != _VENV_PY.resolve():
+    os.execv(str(_VENV_PY), [str(_VENV_PY), str(Path(__file__).resolve()), *sys.argv[1:]])
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from tools.wiki_ops.cli import configured_vault, emit_json, resolve_vault
-from tools.wiki_ops.health import build_focus, build_health_snapshot, build_trends
-from tools.wiki_ops.lint_cache import digest_config, file_sha256, load_cache, save_cache
+from tools.wiki_ops.health import build_context_load, build_core_files, build_focus, build_health_snapshot, build_trends
+from tools.wiki_ops.lint_cache import digest_rules, load_cache, lookup_entry, save_cache, update_entry
 from tools.wiki_ops.pretty import render_health, render_lint, render_query, render_usage_error
-from tools.wiki_ops.timing import append_command_record, elapsed_ms, now_ms, timing_payload
+from tools.wiki_ops.timing import ProgressHeartbeat, append_command_record, elapsed_ms, now_ms, timing_payload
 from tools.wiki_ops.worklist import DEFAULT_HARD_KEYS, build_worklist
 
 SKIP_DIRS = frozenset({".obsidian", "_archive", "_archives", "_raw", "_readouts", "_meta", "templates", "attachments"})
@@ -186,64 +190,111 @@ def _cached_findings(value: Any) -> list[dict[str, Any]]:
     return []
 
 
-def _config_digest(vault: Path, args: argparse.Namespace) -> str:
-    files: dict[str, str] = {}
-    for path in (ROOT / ".vale.ini", ROOT / ".vale.yaml", vault / "AGENTS.md"):
-        if path.is_file():
-            files[str(path)] = file_sha256(path)
-    contracts = ROOT / "wiki" / "templates" / "contracts"
-    if contracts.is_dir():
-        for child in sorted(contracts.glob("*.yml")):
-            files[child.as_posix()] = file_sha256(child)
-    return digest_config({"all": args.all, "vale": args.vale, "template": args.template, "files": files})
+def _config_digest(_vault: Path, args: argparse.Namespace) -> str:
+    return digest_rules(
+        ROOT,
+        extra={"all": bool(args.all), "vale": bool(args.vale), "template": bool(args.template)},
+    )
+
+
+def _ledger() -> dict[str, Any]:
+    rows = _run_json(
+        [sys.executable, str(ROOT / "scripts/error-ledger.py"), "--root", str(_tracker_root()), "--format", "json", "error", "list"],
+        _tracker_root() if _tracker_root().exists() else ROOT,
+    )
+    open_rows = [
+        row for row in rows
+        if isinstance(row, dict) and str(row.get("status", "")).casefold() == "open"
+    ] if isinstance(rows, list) else []
+    return {
+        "open": len(open_rows),
+        "ids": [str(row.get("id")) for row in open_rows if row.get("id")],
+    }
+
+
+
+def _progress(task: str, **fields: Any) -> None:
+    bits = " ".join(f"{key}={value}" for key, value in fields.items())
+    print(f"wiki {task}: {bits}", file=sys.stderr, flush=True)
+
+
+def _tune(kind: str, ranked: list[tuple[str, int]]) -> None:
+    if not ranked:
+        return
+    script, elapsed = ranked[0]
+    nxt_script, nxt = ranked[1] if len(ranked) > 1 else ("", 0)
+    if elapsed < 500:
+        return
+    if nxt and elapsed < int(1.4 * nxt) and (elapsed - nxt) < 400:
+        return
+    follow = f", next {nxt_script} {nxt}ms" if nxt_script else ""
+    print(
+        f"wiki {kind}: tune {script} — {elapsed}ms{follow}. Fix that checker this sitting.",
+        file=sys.stderr,
+        flush=True,
+    )
+
+
+def _timed(task: str, fn, times: list[tuple[str, int]] | None = None):
+    start = now_ms()
+    value = fn()
+    elapsed = elapsed_ms(start)
+    _progress(task, ms=elapsed)
+    if times is not None:
+        times.append((task, elapsed))
+    return value
+
 
 
 def _compute_lint(args: argparse.Namespace, vault: Path) -> tuple[dict[str, Any], int]:
     paths = _resolve_paths(vault, args.paths)
     digest = _config_digest(vault, args)
     cache = load_cache(vault)
-    entries = cache.get("entries") if isinstance(cache.get("entries"), dict) else {}
     findings: list[dict[str, Any]] = []
     hard_keys: set[str] = set()
     hits = misses = vale_skipped = 0
-    pending: list[tuple[str, str]] = []
+    pending: list[str] = []
     for relative in paths:
-        digest_value = file_sha256(vault / relative)
-        cached = entries.get(relative) if isinstance(entries, dict) else None
-        if (
-            isinstance(cached, dict)
-            and cached.get("content_sha256") == digest_value
-            and cached.get("config_digest") == digest
-        ):
+        cached = lookup_entry(cache, vault, relative, digest)
+        if cached is not None:
             findings.extend(_cached_findings(cached.get("results")))
             hits += 1
             if args.vale:
                 vale_skipped += 1
         else:
-            pending.append((relative, digest_value))
+            pending.append(relative)
 
+    total = len(paths)
     if pending:
-        report = _run_structural(vault, [relative for relative, _ in pending], args)
+        _progress("lint", done=f"{hits}/{total}", hits=hits, pending=len(pending))
+        started = now_ms()
+        report = _run_structural(vault, pending, args)
+        elapsed = elapsed_ms(started)
         current_findings = _flatten(report, vault)
-        grouped: dict[str, list[dict[str, Any]]] = {relative: [] for relative, _ in pending}
+        grouped: dict[str, list[dict[str, Any]]] = {relative: [] for relative in pending}
         for item in current_findings:
             if item["file"] in grouped:
                 grouped[item["file"]].append(item)
         hard_keys.update(str(key) for key in ((report.get("schema") or {}).get("hard") or []))
-        for relative, digest_value in pending:
+        for relative in pending:
             current = grouped[relative]
             findings.extend(current)
-            entries[relative] = {
-                "content_sha256": digest_value,
-                "config_digest": digest,
-                "extracts": {"file": relative},
-                "results": _group_findings(current),
-            }
+            update_entry(cache, vault, relative, digest, {"file": relative}, _group_findings(current))
             misses += 1
+        save_cache(vault, cache)
+        _progress("lint", done=f"{hits + misses}/{total}", hits=hits, misses=misses, n=len(pending), ms=elapsed)
+        timing = report.get("timing") if isinstance(report.get("timing"), dict) else {}
+        ranked = sorted(
+            ((script, int(elapsed_ms)) for script, elapsed_ms in timing.items() if isinstance(elapsed_ms, (int, float))),
+            key=lambda item: item[1],
+            reverse=True,
+        )
+        for script, script_ms in ranked:
+            _progress("lint", script=script, ms=script_ms, n=len(pending))
+        _tune("lint", ranked)
+    else:
+        save_cache(vault, cache)
 
-    current_set = set(paths)
-    entries = {key: value for key, value in entries.items() if key in current_set and isinstance(value, dict)}
-    save_cache(vault, {"config_digest": digest, "entries": entries})
     hard_rule_set = hard_keys or set(DEFAULT_HARD_KEYS)
     visible = findings if args.all else [
         item
@@ -261,8 +312,13 @@ def _compute_lint(args: argparse.Namespace, vault: Path) -> tuple[dict[str, Any]
         page_bytes=page_bytes,
         file_order=paths,
     )
-    code = 1 if (bool(result.get("counts")) if args.all else bool(result.get("hard_fail"))) else 0
+    ledger = _ledger()
+    result["ledger"] = ledger
+    if ledger["open"]:
+        result["status"] = "findings"
+    code = 1 if (bool(result.get("counts")) if args.all else bool(result.get("hard_fail"))) or ledger["open"] else 0
     return result, code
+
 
 
 def _finish(
@@ -274,11 +330,12 @@ def _finish(
     pretty: bool,
     renderer,
     cache: dict[str, Any] | None = None,
+    extra_record: dict[str, Any] | None = None,
 ) -> int:
     duration = max(0, elapsed_ms(start))
     if result.get("status") != "error":
         result["timing"] = timing_payload(command, duration, cache)
-    append_command_record(command, duration, code, cache, trace_path=_trace_path())
+    append_command_record(command, duration, code, cache, trace_path=_trace_path(), extra=extra_record)
     if pretty:
         print(renderer(result))
     else:
@@ -320,6 +377,7 @@ def _query(args: argparse.Namespace, start: float) -> int:
             "id": str(item.get("id") or item.get("docid") or item.get("source") or ""),
         })
     result = {"status": "ok", "collection": args.collection, "hits": hits[: args.count]}
+    _progress("query", hits=len(result["hits"]), ms=elapsed_ms(start))
     return _finish("query", start, 0, result, pretty=args.pretty, renderer=render_query)
 
 
@@ -389,32 +447,56 @@ def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
     lint_args = argparse.Namespace(
         paths=args.paths, all=False, vale=True, template=True, hard=True, pretty=False, full=False
     )
-    lint, lint_code = _compute_lint(lint_args, vault)
+    times: list[tuple[str, int]] = []
+    lint, lint_code = _timed("health.lint", lambda: _compute_lint(lint_args, vault), times)
     paths = _resolve_paths(vault, args.paths)
     pages = [vault / relative for relative in paths]
     bytes_total = sum(path.stat().st_size for path in pages if path.is_file())
-    maintenance = _load_maintenance_module()
-    a2 = maintenance.step_context_waste(str(vault), ROOT)
-    a5 = maintenance.step_raw_empty(str(vault), ROOT)
-    a6 = maintenance.step_a6_dry_run_plans(str(vault), ROOT)
-    policy = maintenance.step_policy_conflicts(ROOT)
+    maintenance = _timed("scripts/wiki-maintain", _load_maintenance_module, times)
+    a2 = _timed("scripts/wiki-maintain:context-waste", lambda: maintenance.step_context_waste(str(vault), ROOT), times)
+    a5 = _timed("scripts/wiki-maintain:raw-empty", lambda: maintenance.step_raw_empty(str(vault), ROOT), times)
+    a6 = _timed("scripts/wiki-maintain:remorph", lambda: maintenance.step_a6_dry_run_plans(str(vault), ROOT), times)
+    policy = _timed("scripts/wiki-maintain:policy", lambda: maintenance.step_policy_conflicts(ROOT), times)
     tracker = _tracker_root()
-    sittings = _run_json(
-        [sys.executable, str(ROOT / "scripts/error-ledger.py"), "--root", str(tracker), "--format", "json", "sitting", "list"],
-        tracker if tracker.exists() else ROOT,
+    sittings = _timed(
+        "scripts/error-ledger.py:sitting",
+        lambda: _run_json(
+            [sys.executable, str(ROOT / "scripts/error-ledger.py"), "--root", str(tracker), "--format", "json", "sitting", "list"],
+            tracker if tracker.exists() else ROOT,
+        ),
+        times,
     )
-    errors = _run_json(
-        [sys.executable, str(ROOT / "scripts/error-ledger.py"), "--root", str(tracker), "--format", "json", "error", "list"],
-        tracker if tracker.exists() else ROOT,
+    errors = _timed(
+        "scripts/error-ledger.py:error",
+        lambda: _run_json(
+            [sys.executable, str(ROOT / "scripts/error-ledger.py"), "--root", str(tracker), "--format", "json", "error", "list"],
+            tracker if tracker.exists() else ROOT,
+        ),
+        times,
     )
     traces = _load_jsonl(_trace_path() or (ROOT / ".local/efficiency/traces.jsonl"))
     trends = build_trends(sittings if sittings is not None else [], errors if errors is not None else [], traces)
     focus = build_focus(lint, remorph=a6, open_errors=errors, cap=5)
+    tokens = _timed("scripts/token-count.py", lambda: _tokens(vault, paths, args), times)
+
+    context = _timed(
+        "health.context",
+        lambda: build_context_load(root=ROOT, vault=vault, traces=traces),
+        times,
+    )
+    core = _timed("health.core", lambda: build_core_files(vault), times)
+    if isinstance(context, dict):
+        context["act"] = list(context.get("act") or []) + list(core.get("act") or [])
+    _tune(
+        "health",
+        sorted(((name, ms) for name, ms in times if name != "health.lint"), key=lambda item: item[1], reverse=True),
+    )
+    dirty = lint.get("status") == "findings" or bool(core.get("issues"))
     result = build_health_snapshot(
-        status="findings" if lint.get("status") == "findings" else "clean",
+        status="findings" if dirty else "clean",
         pages=len(pages),
         bytes=bytes_total,
-        tokens=_tokens(vault, paths, args),
+        tokens=tokens,
         lint=lint,
         waste=a2.get("metric") if isinstance(a2, dict) else a2,
         staging=a5.get("metric") if isinstance(a5, dict) else a5,
@@ -425,20 +507,32 @@ def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
         },
         trends=trends,
         focus=focus,
+        context=context,
     )
     cache = result.get("lint", {}).get("cache") if isinstance(result.get("lint"), dict) else lint.get("cache")
-    return _finish("health", start, 1 if lint_code else 0, result, pretty=args.pretty, renderer=render_health, cache=cache)
+    first_turn = (context or {}).get("first_turn") if isinstance(context, dict) else {}
+    extra = {"first_turn_tokens": int((first_turn or {}).get("total_tokens") or 0)}
+    return _finish(
+        "health",
+        start,
+        1 if lint_code or dirty else 0,
+        result,
+        pretty=args.pretty,
+        renderer=render_health,
+        cache=cache,
+        extra_record=extra,
+    )
+
 
 
 def parser() -> argparse.ArgumentParser:
-    root = argparse.ArgumentParser(prog="scripts/wiki")
+    root = argparse.ArgumentParser(prog="wiki")
     commands = root.add_subparsers(dest="command", required=True)
     lint = commands.add_parser("lint")
     lint.add_argument("paths", nargs="*")
     lint.add_argument("--full", action="store_true")
     lint.add_argument("--pretty", action="store_true")
     lint.add_argument("--json", action="store_true")
-    lint.add_argument("--hard", action="store_true", default=True)
     lint.add_argument("--all", action="store_true")
     lint.add_argument("--no-vale", dest="vale", action="store_false", default=True)
     lint.add_argument("--no-template", dest="template", action="store_false", default=True)
@@ -458,17 +552,19 @@ def parser() -> argparse.ArgumentParser:
 def main(argv: list[str] | None = None) -> int:
     args = parser().parse_args(argv)
     start = now_ms()
-    try:
-        if args.command == "query":
-            return _query(args, start)
-        vault = resolve_vault(configured_vault())
-        if args.command == "lint":
-            return _lint(args, vault, start)
-        return _health(args, vault, start)
-    except (OSError, ValueError, RuntimeError) as exc:
-        code = _machine_error(str(exc), pretty=getattr(args, "pretty", False))
-        append_command_record(getattr(args, "command", "lint"), max(0, elapsed_ms(start)), code, trace_path=_trace_path())
-        return code
+    heartbeat = ProgressHeartbeat(args.command) if args.command in {"lint", "health"} else contextlib.nullcontext()
+    with heartbeat:
+        try:
+            if args.command == "query":
+                return _query(args, start)
+            vault = resolve_vault(configured_vault())
+            if args.command == "lint":
+                return _lint(args, vault, start)
+            return _health(args, vault, start)
+        except (OSError, ValueError, RuntimeError) as exc:
+            code = _machine_error(str(exc), pretty=getattr(args, "pretty", False))
+            append_command_record(getattr(args, "command", "lint"), max(0, elapsed_ms(start)), code, trace_path=_trace_path())
+            return code
 
 
 if __name__ == "__main__":

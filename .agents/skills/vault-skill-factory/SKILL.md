@@ -30,7 +30,7 @@ conversation into a page; the factory turns a body of pages into a reusable skil
 
 ## Before You Start
 
-1. **Resolve config** (Config Resolution Protocol in `llm-wiki/SKILL.md`): get `OBSIDIAN_VAULT_PATH`,
+1. **Resolve config** (Config Resolution Protocol in AGENTS.md): get `OBSIDIAN_VAULT_PATH`,
    `OBSIDIAN_WIKI_REPO`, `OBSIDIAN_LINK_FORMAT`, the QMD vars, and:
    - `SKILL_FACTORY_OUTPUT_DIR` — where generated skills land. Default:
      `$OBSIDIAN_VAULT_PATH/_generated-skills` (a vault-level, underscore-prefixed *excluded* dir —

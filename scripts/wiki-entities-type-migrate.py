@@ -256,6 +256,26 @@ def plan_moves(wiki: Path) -> list[Move]:
             )
         )
 
+    for type_dir in sorted(
+        path for path in entities.iterdir() if path.is_dir() and path.name in ALLOWED_ENTITY_TYPES
+    ):
+        for src in sorted(type_dir.glob("*.md"), key=lambda p: p.name.lower()):
+            if src.name.endswith("-index.md"):
+                continue
+            text = src.read_text(encoding="utf-8", errors="replace")
+            page_type = fm_field(parse_frontmatter(text), FM_TYPE)
+            if page_type not in ALLOWED_ENTITY_TYPES or page_type == type_dir.name:
+                continue
+            dest = entities / page_type / src.name
+            moves.append(
+                Move(
+                    src=rel_posix(wiki, src),
+                    dest=rel_posix(wiki, dest),
+                    type=page_type,
+                    reason="wrong_type_folder",
+                )
+            )
+
     return moves
 
 

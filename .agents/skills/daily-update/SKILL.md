@@ -14,7 +14,7 @@ You run a lightweight maintenance pass over the wiki: check source freshness, re
 
 ## Before You Start
 
-1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` and `OBSIDIAN_WIKI_REPO`.
+1. **Resolve config** — follow the Config Resolution Protocol in AGENTS.md (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` and `OBSIDIAN_WIKI_REPO`.
 2. **Derive vault-scoped state dir** — all runtime state is scoped to the resolved vault, not global:
    ```bash
    VAULT_ID=$(echo "$OBSIDIAN_VAULT_PATH" | md5sum 2>/dev/null | cut -c1-8 || md5 -q - <<< "$OBSIDIAN_VAULT_PATH" | cut -c1-8)
@@ -183,8 +183,7 @@ Verify the collection with either:
 ${QMD_CLI:-qmd} ls "${QMD_WIKI_COLLECTION:-wiki}"
 ```
 
-For a specific page, follow the exact QMD retrieval rule in
-`.agents/skills/llm-wiki/SKILL.md`: search first, then pass the returned docid
+For a specific page, follow the exact QMD retrieval rule in AGENTS.md (Vault retrieval): search first, then pass the returned docid
 or source verbatim to `qmd get` / `qmd multi-get`.
 
 Record one of:

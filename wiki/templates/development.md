@@ -29,7 +29,8 @@ summary: ""
 **Target.** ~30 minutes.
 
 > [!narration] Opening
-> Write high-quality theatre of the mind in two to four player-facing sentences. Address the players as "you". Establish only what the characters can immediately perceive. Include a visible situation, a relative position, and a non-sight sense. End on the reaction point.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: situated moment → beat: development. -->
+> Write a situated opening in two to four sentences the DM can speak aloud. Address the players as "you", present tense. Establish only what the characters can immediately perceive — a visible situation, relative position, and a non-sight sense. End on the reaction point. The opening presents the changed information that makes this beat matter, giving players something new to engage with. No secrets, DCs, or unearned names.
 
 ## Run the Beat
 

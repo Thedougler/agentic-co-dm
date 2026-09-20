@@ -21,10 +21,18 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Giant Owl
 
-## Stats & Combat
+> [!narration] Narration
+>
+
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -58,15 +66,21 @@ spells:
   - "1: Clairvoyance|XPHB"
 ```
 
-## Description
+## Biology
+
+**Description.**
 
 Found in the forests and highlands of [[shattered-sea]], most often around the [[crown-islands]] and the [[Ashwall Islands]]. Larger than any mundane owl, it flies in near-total silence and carries a faint celestial tint to its plumage — pale eyes that catch no torchlight, and a stillness that unsettles anything it watches. It shares its range with Giant Constrictor Snake and Giant Axe Beak, both of which it avoids by hunting from the air rather than the ground.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 The owl hunts the forested highlands of the Crown Islands and the volcanic slopes of the Ashwall Islands during the hours the [[sentinels-of-the-eyrie]]'s own watch cannot cover: their ledgers at [[high-eyrie|the High Eyrie]] log what passes by day, and it's often a giant owl's cry, not a Sentinel's eye, that marks a boat's position after dark. It dens alone in the crags below the tree line, territorial and silent on the wing, its wingspan wide enough to blot out a low moon.
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|

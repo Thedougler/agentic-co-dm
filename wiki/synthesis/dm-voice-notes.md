@@ -66,7 +66,7 @@ Six shattered secondary sites, civilians screaming in the rubble, and one selfis
 
 *(terrified, whispered)*
 
-I built a boss with no morale, no retreat, and no reasoning, ran you through the worst of him first, and only then told you the mechanic that saves you had been called the [[Rattle]] the entire time.
+I built a boss with no morale, no retreat, and no reasoning, ran you through the worst of him first, and only then told you the mechanic that saves you had been called the Rattle the entire time.
 
 *(sarcastic)*
 

@@ -31,17 +31,11 @@ relationships:
 ---
 # Aruhe - Grinning Ape
 
-## Statblock
-
-````col
-```col-md
-flexGrow=2
-===
 > [!narration] Narration
 > Gorilla-sized, dark-furred apes sit in the terrace canopy in groups of three and five. Their faces are locked in a rictus that never changes; they do not groom or call. Stones come first, then the group drops as one on whatever moved below.
-```
 
-```col-md
+## Statblock
+
 ```statblock
 layout: Basic 5e Layout
 name: "Grinning Ape"
@@ -74,10 +68,9 @@ actions:
   - name: "Rock"
     desc: "Ranged Weapon Attack: +7 to hit, range 30/60 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage."
 ```
-```
-````
 
 ## Behavior
+
 
 - **Habitat.** [[old-gardens]] terraces. Groups of three to five.
 - **Behavior.** Silent canopy sitters; stones first, then a group drop.
@@ -85,6 +78,7 @@ actions:
 - **Social Structure.** Groups of three to five. No grooming or calls.
 
 ## Tactics
+
 
 - **Signs.** Rictus grins never change. Stones fall from above without a warning call.
 - **Instincts.** Ambush from canopy as a group.

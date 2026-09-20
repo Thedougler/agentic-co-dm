@@ -66,4 +66,4 @@ This page orders the record, not the story — strict chronology, not narrative-
 
 ### Session 01
 
-- Jean-Claude leaps aboard the Saltwright. The [[Uncertainty|HCS Surety]] under [[barnaby-rook]] flags it for inspection. The hold ambush, weather-deck fight, [[geoffrey-draves]]'s defection, and the gangplank standoff play out in full on [[Session 01's recap]].
+- Jean-Claude leaps aboard the Saltwright. The [[Uncertainty|HCS Surety]] under [[barnaby-rook]] flags it for inspection. The hold ambush, weather-deck fight, [[geoffrey-draves]]'s defection, and the gangplank standoff play out in full on [[journal/sessions/shattered-sea/01/Session-01-Recap|Session 01's recap]].

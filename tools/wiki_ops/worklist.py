@@ -14,6 +14,7 @@ DEFAULT_HARD_KEYS = frozenset(
         "bad_lifecycle",
         "typed_relationships",
         "pc_identity_mismatch",
+        "misplaced_entity",
         "spaced_basename",
         "aruhe_prefix_basename",
         "illegal_basename",

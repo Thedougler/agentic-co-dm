@@ -53,3 +53,13 @@ Conclusion: the trial dive that killed a diver three nights ago was Voyvode's ow
 Clue 1: [[Fathomrush]]'s memorial wall, the newest carved name, cross-referenced against which crews were on the water that night.
 Clue 2: [[petera-ngata]]'s boardinghouse ledger at the Last Berth. She holds the only complete list of who's gone down and not come back up.
 Clue 3: a surviving crew member's account, pressed in conversation. They know which rig failed and refuse to name it.
+
+## At a Glance
+
+## At the Table
+
+## Current State
+
+## People & Structure
+
+## Running the Faction

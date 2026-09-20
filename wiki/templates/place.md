@@ -19,7 +19,8 @@ summary: ""
 <!-- Add identity art when available. -->
 ## Overview
 > [!narration] Narration
-> Write a high-quality cold portrait in flowing prose for as long as the place requires. Cover body-scale geography, routes, senses, and at least one usable affordance. No secrets, DCs, or unearned names.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: location. -->
+> Write a standalone cold portrait in flowing prose — as long as the place requires to seat a party in the space. Cover body-scale geography (size, ground, air, light), routes or exits, senses, and at least one usable affordance. The portrait paints a drawable picture a player can navigate and respond to. No secrets, DCs, kernel fields, or unearned names.
 
 ---
 ## At a Glance

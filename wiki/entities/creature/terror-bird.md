@@ -40,6 +40,7 @@ relationships:
 > Taller than a horse, a black Terror-Bird tears through the jungle with ragged wings spread for balance. Moss clings to its feathers. A yellow eye, serrated beak, hooked talons, and teeth inside that beak identify the predator. Each talon is as long as a forearm. Dust jumps beneath each stride as it bears down the path. The ground shakes before it reaches you.
 
 ## Statblock
+
 ```statblock
 layout: Basic 5e Layout
 name: "Terror-Bird"
@@ -78,6 +79,7 @@ actions:
 
 ## Behavior
 
+
 - **Habitat.** Terror-Birds occupy shaded rims, grass cuts, and hard-running lanes around [[grasslands|the Grasslands]] and [[the-river|the River]]. Each adult claims about a quarter-mile of edge territory where open ground gives it room for one committed charge. It ranges from the Rot toward the Hunger in the deep interior and appears on the approach to the central grove.
 - **Behavior.** A still Terror-Bird reads as a mossed trunk with one yellow eye until it chooses to move. It does not fly. Its ragged wings provide balance and threat display around the charge.
 - **Diet.** It runs down exposed prey and swallows smaller bodies whole. Feeding leaves flattened digest-circles, bone, and sour bolus. Its hunger remains animal rather than commanded by the Blight gardens. ^[inferred]
@@ -85,6 +87,7 @@ actions:
 - **Blight Growth.** Moss and vegetation have grown through its feathers for decades. The island is reclaiming the bird as it reclaimed the terraces, and the bird does not notice or resist it. ^[inferred]
 
 ## Tactics
+
 
 - **Signs.** A yellow eye inside mossed black feathers, trunk-like stillness at a shaded rim, dust hopping on the path, tremors underfoot, talon prints deeper than a person's hand, and a sour feeding circle pressed flat in the grass.
 - **Instincts.** It waits as cover. When prey breaks into the open, the ground-shake gives away its charge. It commits to one straight rush. Eight-foot grass, deep water, or a white [[razer-grass|razer-grass]] stand ends the hunt.

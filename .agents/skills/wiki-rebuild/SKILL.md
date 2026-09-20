@@ -14,7 +14,7 @@ You are performing a destructive operation on the wiki. Always archive first, al
 
 ## Before You Start
 
-1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` and optional QMD settings such as `QMD_WIKI_COLLECTION`
+1. **Resolve config** — follow the Config Resolution Protocol in AGENTS.md (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` and optional QMD settings such as `QMD_WIKI_COLLECTION`
 2. Use `python3 scripts/manifest.py stats` on the vault — do **not** read whole `.manifest.json` into context
 3. **Confirm the user's intent.** This skill supports three modes:
    - **Archive only** — snapshot current wiki, no rebuild
@@ -188,7 +188,7 @@ ${QMD_CLI:-qmd} ls "${QMD_WIKI_COLLECTION:-wiki}"
 ```
 
 For restore, verify one restored page by following the exact QMD retrieval rule
-in `.agents/skills/llm-wiki/SKILL.md`: search first, then pass the returned
+in AGENTS.md (Vault retrieval): search first, then pass the returned
 docid or source verbatim to `qmd get` / `qmd multi-get`.
 
 Record QMD refresh in the final report as one of:

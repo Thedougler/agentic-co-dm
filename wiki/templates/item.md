@@ -43,7 +43,8 @@ summary: ""
 <!-- Add item art when available. Omit Art section when unused. -->
 
 > [!narration] Narration
-> Write a high-quality cold portrait in flowing prose for as long as needed to show the object's appearance and wear. Cover type, scale vs body, material, wear, and at least one non-sight sense. No secrets, DCs, or unearned names.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: object. -->
+> Write a standalone cold portrait in flowing prose — as long as the object requires to be pictured in a character's hands. Cover type, scale against the body, material, wear or patina, and at least one non-sight sense (weight, temperature, sound, smell). The portrait lets a player recognize and distinguish this object on sight. No secrets, DCs, lore closers, rarity, or unearned names.
 
 <!-- Classification line: kind + rarity (+ attunement when required). Examples:
      Consumable, Rare

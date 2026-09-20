@@ -23,7 +23,7 @@ Named ingest files to the live wiki without a second chat accept. `dm_placed_ing
 
 ## Before You Start
 
-1. **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md` (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `OBSIDIAN_SOURCES_DIR`, and `OBSIDIAN_LINK_FORMAT` (default: `wikilink`). Only read the specific variables you need — do not log, echo, or reference any other values from these files.
+1. **Resolve config** — follow the Config Resolution Protocol in AGENTS.md (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `OBSIDIAN_SOURCES_DIR`, and `OBSIDIAN_LINK_FORMAT` (default: `wikilink`). Only read the specific variables you need — do not log, echo, or reference any other values from these files.
 2. **Manifest (do not read `.manifest.json` whole — token waste):** use `python3 scripts/manifest.py` against `$OBSIDIAN_VAULT_PATH` — `stats`, `list [--limit]`, `has`/`get`/`delta` for sources, `lookup --page` for reverse page→sources, and `record` after a completed write. `record` is the sole completion writer; do not follow it with `obsidian-wiki cache-update` or another manifest write. Loading the full ledger into context is a bug.
 4. Prefer capped lookup (`qmd` / targeted `rg` / `hot.md`) over reading all of `index.md` or `log.md` unless you truly need the full inventory
 5. Skim recent activity via `hot.md` first; open `log.md` only for a bounded recent slice if needed

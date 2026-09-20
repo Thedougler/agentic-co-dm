@@ -24,9 +24,8 @@ summary: ""
 <!-- Optional one-line cold open: place / pressure / clock. Complete sentence(s). -->
 
 > [!narration] Recap
-> Write the player-safe account of the session in complete sentences, past tense, and "you" address.
-> Open from the prior cliff when useful ("Last time on …"). Cover only what play supported.
-> Include no secrets the table has not established, DCs, or agent process notes.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: situated moment (recap). -->
+> Write the player-safe account of the session in flowing prose — complete sentences, past tense, "you" address. Open from the prior cliff when useful. Cover only what play established. The recap gives players a shared picture of what happened so the next session can start from common ground. No secrets the table has not established, DCs, or agent process notes.
 
 ## Wiki facts
 

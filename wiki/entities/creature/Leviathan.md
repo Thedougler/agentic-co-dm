@@ -26,9 +26,15 @@ type: creature
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: ""
+role: ""
+cr: ""
 ---
 
 # Leviathan
+
+> [!narration] Narration
+>
 
 ![[leviathan-banner]]
 
@@ -38,39 +44,9 @@ visibility: dm
 ![[leviathan-narration-appearance]]
 
 
-## Description
+## Statblock
 
-Sailors who've seen it and lived describe a shape "longer than two ships," flat black and eyeless, hide like wet stone, not scale. It doesn't hunt like a shark working a chum line. It doesn't circle, doesn't test, coming straight up from directly below whatever's loudest, the water around it boiling as lightning cracks a clear sky with no storm behind it. Full accounts don't exist. What does is wreckage, one confirmed survivor, and captains who trade the phrase "Vestra water" without agreeing on what actually does the killing out there.
-
-## Ecology
-
-The Leviathan crossed from the Elemental Plane of Water when the [[pearl-of-souls]] turned the breach under [[drowned-maw]] into an attractor and pulled it through the fissure, the first of at least three entities that same pull has drawn across, alongside Ridgeback and Krakling (see Notable Individuals). All three share the same flat-black, eyeless hide, blindsight in place of sight, and full water breathing, marking them as one displaced kind, not three unrelated horrors. [[elemental-plane-of-water|The Elemental Plane of Water]] itself stays undocumented past the breach. What still pushes and scrapes at the fissure from the far side is bigger than anything that's come through yet.
-
-It now ranges The Drowned Maw's lower depths and the open water of [[outer-reach|the Outer Reach]] beyond it, sharing that lightless range with the kraken and dragon-turtle-class predators already established there. [[Auralis]], the demigod construct bound to hold the fissure shut, reads it as a parasitic invader trespassing in the realm that is his alone to Guard.
-
-[[perrin-black-jaw]]'s account is the closest thing to firsthand testimony: something massive rose under the *[[Vestra]]*, the water boiled, lightning cracked a clear sky, and then there was nothing. He never said no one else survived. [[nona-black-jaw]] understood anyway when he tried to tell her in her kitchen. He named it "the Leviathan" only afterward, never at the table, once he needed a word for what took his family's ship.
-
-Whether it actually sank the *Vestra* stays the open question the table hasn't closed: it's the leading account, medium confidence, with [[Umberlee]]'s own motive against Fisk's fleet running as the strongest counter-theory (full case notes in `Inbox/situations/active/what-sunk-the-vestra.md`). The table has settled one fact under that question, not theory: [[Auralis]], not the cloak Perrin credits, actually kept him alive in the wreck, forging an unwitting warlock pact between them that the table doesn't have yet (see [[perrin-black-jaw]] § Arc Notes). He washed up alone on [[keth-naar]] afterward, the only *Vestra* survivor anyone's found.
-
-This convergence (the Pearl of Souls, Perrin's Leviathan encounter, and [[crissdalynn-khinriss|Crissdalynn]]'s unfinished mapping of the Maw) all trace back to the same stretch of water, making it one of the highest-value threads the whole crew is already tangled in, not just Perrin's grudge.
-
-## Toy Chest
-
-| Verb | Unstable Condition | Consequence | Link of Relevance |
-|---|---|---|---|
-| Cut it loose mid-grapple | The Leviathan's Crushing Coil holds a creature | Breaking the grip early costs the Leviathan its follow-up attack that turn and briefly exposes the coil to a called shot | [[perrin-black-jaw]] (the only known survivor of a Vestra-scale grip) |
-| Read the boil before the strike | Riftbolt is off recharge, about to fire | Watching the water for the heat shimmer buys one round's warning before the lightning line comes | [[Vestra]] |
-| Drive it back toward the breach | The fight happens within reach of The Drowned Maw's fissure | Forcing it toward the rift risks reopening the pull the Pearl of Souls created, and something larger is still pushing from the other side | [[pearl-of-souls]], [[elemental-plane-of-water]] |
-
-## Prepped Reveals
-
-**Nature or Arcana — Recognizing the Displaced Kind**
-
-DC 15. Anyone who gets a good look at the hide may roll.
-**Success:** the flat-black, eyeless hide and blindsight match two smaller predators sailors have separately reported, Ridgeback and Krakling, confirming more than one Elemental Plane of Water entity has already crossed through The Drowned Maw's breach.
-**Failure:** nothing beyond what's already obvious, that this thing doesn't behave like any known sea predator.
-
-## Stats & Combat
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -120,6 +96,44 @@ legendary_actions:
     desc: "Each creature within 15 feet of the Leviathan must succeed on a DC 19 Strength saving throw or be knocked [[Prone]]."
 ```
 
-## Notable Individuals
+## Biology
+
+**Description.**
+
+Sailors who've seen it and lived describe a shape "longer than two ships," flat black and eyeless, hide like wet stone, not scale. It doesn't hunt like a shark working a chum line. It doesn't circle, doesn't test, coming straight up from directly below whatever's loudest, the water around it boiling as lightning cracks a clear sky with no storm behind it. Full accounts don't exist. What does is wreckage, one confirmed survivor, and captains who trade the phrase "Vestra water" without agreeing on what actually does the killing out there.
+
+## Behavior
+
+**Ecology.**
+
+The Leviathan crossed from the Elemental Plane of Water when the [[pearl-of-souls]] turned the breach under [[drowned-maw]] into an attractor and pulled it through the fissure, the first of at least three entities that same pull has drawn across, alongside Ridgeback and Krakling (see Notable Individuals). All three share the same flat-black, eyeless hide, blindsight in place of sight, and full water breathing, marking them as one displaced kind, not three unrelated horrors. [[elemental-plane-of-water|The Elemental Plane of Water]] itself stays undocumented past the breach. What still pushes and scrapes at the fissure from the far side is bigger than anything that's come through yet.
+
+It now ranges The Drowned Maw's lower depths and the open water of [[outer-reach|the Outer Reach]] beyond it, sharing that lightless range with the kraken and dragon-turtle-class predators already established there. [[Auralis]], the demigod construct bound to hold the fissure shut, reads it as a parasitic invader trespassing in the realm that is his alone to Guard.
+
+[[perrin-black-jaw]]'s account is the closest thing to firsthand testimony: something massive rose under the *[[Vestra]]*, the water boiled, lightning cracked a clear sky, and then there was nothing. He never said no one else survived. [[nona-black-jaw]] understood anyway when he tried to tell her in her kitchen. He named it "the Leviathan" only afterward, never at the table, once he needed a word for what took his family's ship.
+
+Whether it actually sank the *Vestra* stays the open question the table hasn't closed: it's the leading account, medium confidence, with [[Umberlee]]'s own motive against Fisk's fleet running as the strongest counter-theory (full case notes in `Inbox/situations/active/what-sunk-the-vestra.md`). The table has settled one fact under that question, not theory: [[Auralis]], not the cloak Perrin credits, actually kept him alive in the wreck, forging an unwitting warlock pact between them that the table doesn't have yet (see [[perrin-black-jaw]] § Arc Notes). He washed up alone on [[keth-naar]] afterward, the only *Vestra* survivor anyone's found.
+
+This convergence (the Pearl of Souls, Perrin's Leviathan encounter, and [[crissdalynn-khinriss|Crissdalynn]]'s unfinished mapping of the Maw) all trace back to the same stretch of water, making it one of the highest-value threads the whole crew is already tangled in, not just Perrin's grudge.
+
+**Notable Individuals.**
 
 Ridgeback and Krakling are the second and third entities the Pearl of Souls' pull has drawn through The Drowned Maw's fissure, not this creature under other names, but the same displaced kind, sharing its flat-black eyeless hide, blindsight, and water breathing. [[algernon-reginald-clyde|Clyde's Bestiary]] documents Ridgeback. Krakling is a juvenile arm-predator sailors have reported near [[Midchain]]. Neither has a page of its own yet.
+
+## Tactics
+
+**Toy Chest.**
+
+| Verb | Unstable Condition | Consequence | Link of Relevance |
+|---|---|---|---|
+| Cut it loose mid-grapple | The Leviathan's Crushing Coil holds a creature | Breaking the grip early costs the Leviathan its follow-up attack that turn and briefly exposes the coil to a called shot | [[perrin-black-jaw]] (the only known survivor of a Vestra-scale grip) |
+| Read the boil before the strike | Riftbolt is off recharge, about to fire | Watching the water for the heat shimmer buys one round's warning before the lightning line comes | [[Vestra]] |
+| Drive it back toward the breach | The fight happens within reach of The Drowned Maw's fissure | Forcing it toward the rift risks reopening the pull the Pearl of Souls created, and something larger is still pushing from the other side | [[pearl-of-souls]], [[elemental-plane-of-water]] |
+
+**Prepped Reveals.**
+
+**Nature or Arcana — Recognizing the Displaced Kind**
+
+DC 15. Anyone who gets a good look at the hide may roll.
+**Success:** the flat-black, eyeless hide and blindsight match two smaller predators sailors have separately reported, Ridgeback and Krakling, confirming more than one Elemental Plane of Water entity has already crossed through The Drowned Maw's breach.
+**Failure:** nothing beyond what's already obvious, that this thing doesn't behave like any known sea predator.

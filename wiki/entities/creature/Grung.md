@@ -20,10 +20,18 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Grung
 
-## Stats & Combat
+> [!narration] Narration
+>
+
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -65,18 +73,24 @@ actions:
 **Wants:** Stay hidden and report an intrusion back to [[grung-elite-warrior|the handler]] rather than engage it directly.
 **Morale:** Flees immediately if the handler is killed or the grung itself drops below half HP; never fights to the death.
 
-## Description
+## Biology
+
+**Description.**
 
 CR 1/4 humanoid grung — green-caste laborers and scouts, the lowest freeborn caste of [[Grung]] society and the expendable workforce of Grung operations. Weapon hits deal 2d4 poison damage directly; the Poisonous Skin trait is separate.
 
 > [!mechanic]
 > **Poisonous Skin stacking.** Grappling or unarmed strikes against a grung's bare skin trigger a DC 12 Constitution save. Fail: poisoned for 1 minute, with disadvantage on attacks and ability checks. Success: no effect. Multiple grung in one fight mean multiple saves per round.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 Green-caste grung are laborers, not fighters, drawn from the rainforest-interior clan holds of [[verdant-teeth]] and pressed into garrison duty across [[Midchain North]]. At the [[Calveno Sewer Magazines]] (itself `status: pending`), they serve as sentries alongside a blue-caste handler ([[grung-elite-warrior]]): standing orders are hide at the sound of movement (Stealth +4, advantage in dim light near water), let intruders pass, and report after. They break cover only if intruders interfere with the blackpowder barrels under guard, and even then try to flee and report rather than fight — a sentry discipline built on the caste's low standing within [[grung-clans|Grung Clans]] society, not any lack of nerve.
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|

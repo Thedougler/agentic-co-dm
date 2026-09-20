@@ -5,4 +5,4 @@ scope: "tool:edit(wiki/entities/faction/**), tool:write(wiki/entities/faction/**
 interruptMode: always
 ---
 
-Read `skill://faction-design`. Follow it for this write.
+Read `wiki/templates/faction.md` and `skill://faction-design`. Follow both for this write.

@@ -31,17 +31,11 @@ relationships:
 ---
 # Aruhe - Strangler Fig
 
-## Statblock
-
-````col
-```col-md
-flexGrow=2
-===
 > [!narration] Narration
 > Single strangler figs grow on game trails already squeezed through stone. Aerial roots hang in curtains and reach; the trunk is hollow, with old kills showing as bones in the bark. The tree does not walk and does not need to.
-```
 
-```col-md
+## Statblock
+
 ```statblock
 layout: Basic 5e Layout
 name: "Strangler Fig"
@@ -74,10 +68,9 @@ actions:
   - name: "Hollow-Trunk Engulf"
     desc: "One Large or smaller creature grappled by the strangler fig is pulled into its hollow trunk and becomes Restrained. The creature takes 14 (4d6) bludgeoning damage at the start of each of the fig's turns. As an action, the engulfed creature can make a DC 16 Strength (Athletics) or Dexterity (Acrobatics) check, ending the effect on itself on a success. An ally adjacent to the trunk can use an action to make the same check to pull the creature free. The fig can engulf one creature at a time."
 ```
-```
-````
 
 ## Behavior
+
 
 - **Habitat.** Single figs grow on game trails already squeezed through stone. The tree remains rooted. A trail bend, a low ceiling, or a harmless-looking root curtain is enough. Leave at least one route that can be cleared or abandoned.
 - **Behavior.** Single strangler figs grow on game trails already squeezed through stone. Aerial roots hang in curtains and reach toward the trail. The trunk is hollow, with old kills showing as bones in the bark. The tree remains rooted.
@@ -85,5 +78,6 @@ actions:
 - **Social Structure.** Source is silent unless named above.
 
 ## Tactics
+
 
 **Tactic:** let a trail pinch itself. Aerial roots reach from the curtain, and one victim disappears into the hollow trunk. **Tell:** curtains of roots hang across a game trail already squeezed through stone. Old bones show in the bark.

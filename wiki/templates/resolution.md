@@ -32,7 +32,8 @@ summary: ""
 5. **End on an image.** Close when the consequence is clear. Use a stinger only when it grows naturally from play.
 
 > [!narration] Closing image
-> Write high-quality theatre of the mind in two to four sentences the DM can speak. Address the players as "you". Show the new status quo through something the characters can see, hear, or experience, including at least one non-sight sense. Do not narrate a PC's feelings, decisions, or future.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: situated moment → beat: resolution. -->
+> Write a closing image in two to four sentences the DM can speak aloud. Address the players as "you", present tense. Show the new status quo through something the characters can see, hear, or experience — at least one non-sight sense. The closing shows visible consequences only; it lets the changed world land without telling the players what to feel. Do not narrate a PC's feelings, decisions, or future.
 
 ````col
 ```col-md

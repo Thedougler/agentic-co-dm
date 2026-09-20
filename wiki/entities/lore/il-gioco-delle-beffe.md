@@ -29,7 +29,7 @@ tier: supporting
 
 ## The Culture
 
-Teams design elaborate public hoaxes and execute them on willing marks across five days in [[calven-and-calveno]]. [[shepherd-grigori]] left the crew of the [[Uncertainty]] to attend festival business as soon as the ship reached [[calven-and-calveno]], recorded in [[S05 Recap]].
+Teams design elaborate public hoaxes and execute them on willing marks across five days in [[calven-and-calveno]]. [[shepherd-grigori]] left the crew of the [[Uncertainty]] to attend festival business as soon as the ship reached [[calven-and-calveno]], recorded in [[journal/sessions/shattered-sea/05/Session-05-Recap|S05 Recap]].
 
 Registration is tomorrow morning from wherever the crew currently stands in the city. Legendary-scale declarations are already expected this year, so this year's pool should run large.
 

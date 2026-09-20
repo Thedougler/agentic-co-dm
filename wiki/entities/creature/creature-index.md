@@ -1,5 +1,5 @@
 ---
-title: Creatures
+title: Creatures Index
 category: entities
 tags: []
 sources: []
@@ -10,7 +10,19 @@ lifecycle: proposed
 reveal: unrevealed
 summary: Folder index of Creatures.
 base_confidence: 0.55
+campaign: ""
+visibility: ""
+kind: ""
+truth: ""
+scope: ""
+region: ""
+era: ""
 ---
+# Creatures
+
+## At a Glance
+
+
 
 - [[entities/creature/arclight-phoenix|Arclight Phoenix]]
 - [[entities/creature/crown-squid|Aruhe - Crown Squid]]
@@ -68,3 +80,26 @@ base_confidence: 0.55
 - [[entities/creature/young-bloodhawk|young-bloodhawk]]
 - [[entities/creature/water-weird|Water Weird]]
 - [[entities/creature/whip-shark|Whip Shark]]
+
+### Limits
+
+
+## Who Knows
+
+
+### Party Knowledge
+
+
+### Common telling
+
+
+## If This Is Changing
+
+
+## Consequences
+
+
+## Connections
+
+
+## Open Canon

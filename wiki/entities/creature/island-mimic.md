@@ -21,10 +21,18 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Island Mimic
 
-## Stats & Combat
+> [!narration] Narration
+>
+
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -95,14 +103,20 @@ DC 17; either skill, disadvantage on the check. Any creature Grappled by the isl
 **Wants:** crews should choose it as shelter, not search it as treasure. It feeds on whoever a full day inland lures in, but a wreck jams its own throat, so it can only bait, never simply close.
 **Morale:** it never breaks, and nothing this crew carries can kill it. Hurt, it stops being patient. A burned grove or a broken headland speeds the bay shut, and it stops waiting for stragglers.
 
+## Visual reference
+
 ![[island-mimic-narration-narrator]]
 
 
-## Description
+## Biology
+
+**Description.**
 
 A mimic that survived long enough to stop being a chest, then a chair, then anything a hand could lift, grown to island scale instead. Every chart of the Southern islands disagrees about where this one sits, and none of them puts a flag on it. The best landfall in the region carries no claim, and a becalmed crew holds both facts happily without connecting them. Sailors already know the standard mimic warning: check every chest, because it wants to look like treasure and it hates fire. None of that sounds like advice about an island, and nobody who needed it has ever come back to write one.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 The whole island is one animal, old past reckoning. Soil has packed into the seams of its shell while roots thread through cracked plate, a beach grown scaled over the hide showing through. And it waits. It follows shipping traffic, drifting slowly enough that three separate charts can disagree about its position without any of them staying wrong for long. A crew gets a full generous day, and it takes nothing at the waterline. The cold stream, the fruit no bird has touched, the bay flat enough to careen in: each one baits a walk inland, where the stream runs warm and the fruit hangs better up the slope.
 
@@ -110,7 +124,9 @@ An island this size originated the doctrine every surviving mimic now runs on, c
 
 One example sits in the Northern [[Midchain]], where it appeared between known islands in a channel that used to be open water: [[the-unplotted]].
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
@@ -118,7 +134,7 @@ One example sits in the Northern [[Midchain]], where it appeared between known i
 | Burn a grove near anyone the ground has already gripped | Adhesive Ground is live. Someone gets caught. | Fire frees every Grappled creature within 30 feet of the flames immediately, the one true thing sailors already know about mimics still working at this scale | [[delmar-fisk]]'s habit of calling a wreck "salvage" before he lets himself call it a grave. This island hands him a bay full of both, and asks him to misname it twice before he understands what he is looking at. |
 | Drive a ship into the closing gap, or use the bow-in wreck already wedged there | The heads of the bay are narrowing toward their floor | The dead ship's spine holds the throat open to a floor of 14 feet (the width it's held for nine years), the one door the island can't undo | The *[[Uncertainty]]*, the crew's own way out |
 
-## Prepped Reveals
+**Prepped Reveals.**
 
 Bow-in wrecks fill the bay with hulls whole and decks empty of remains (four total). A ship that strikes a reef doesn't keep its masts, and these came in whole and stopped. Everything above the waterline on the beach is the lie, while the wrecks are honest. Time on the beach is free. It reacts the instant anyone steps onto the interior, whether that's an hour in or a full day. This crew can hurt the island, but nothing they carry can kill it. Lost limbs, burned groves, or broken headlands still leave it an island. Wounded, it stops being patient.
 

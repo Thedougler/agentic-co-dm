@@ -2,16 +2,62 @@
 from __future__ import annotations
 
 import json
+import os
 import re
+from collections import Counter
+from concurrent.futures import ProcessPoolExecutor
 from dataclasses import asdict, dataclass, field
 from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any
 
+
 from .scope import Scope, SKIP_DIRS, _frontmatter
 
 RESERVED_PAGES = {"index.md", "log.md", "hot.md"}
+IDENTITY_BATCH_TIMEOUT_SECONDS = 60
 
+
+def _content_similarity(
+    left: str,
+    right: str,
+    left_counts: Counter[str],
+    right_counts: Counter[str],
+) -> float:
+    if not left or not right:
+        return 0.0
+    if 2 * sum((left_counts & right_counts).values()) / (len(left) + len(right)) <= 0.6:
+        return 0.0
+    matcher = SequenceMatcher(None, left, right)
+    if matcher.quick_ratio() <= 0.6:
+        return 0.0
+    return round(matcher.ratio(), 4)
+
+_SIMILARITY_ROWS: list[dict[str, Any]] = []
+_SIMILARITY_PROFILES: dict[str, Counter[str]] = {}
+
+
+def _init_similarity_worker(
+    rows: list[dict[str, Any]], profiles: dict[str, Counter[str]]
+) -> None:
+    global _SIMILARITY_ROWS, _SIMILARITY_PROFILES
+    _SIMILARITY_ROWS = rows
+    _SIMILARITY_PROFILES = profiles
+
+
+def _similarity_batch(pairs: list[tuple[int, int]]) -> list[tuple[tuple[str, str], float]]:
+    return [
+        (
+            tuple(sorted((_SIMILARITY_ROWS[left]["path"], _SIMILARITY_ROWS[right]["path"]))),
+            _content_similarity(
+                _SIMILARITY_ROWS[left]["body"],
+                _SIMILARITY_ROWS[right]["body"],
+                _SIMILARITY_PROFILES[_SIMILARITY_ROWS[left]["path"]],
+                _SIMILARITY_PROFILES[_SIMILARITY_ROWS[right]["path"]],
+            ),
+        )
+        for left, right in pairs
+    ]
 
 def _norm(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", str(value).casefold())
@@ -129,10 +175,6 @@ def _manifest_signals(vault: Path) -> tuple[dict[str, set[str]], dict[str, str]]
     return provenance, transitions
 
 
-def _content_similarity(left: str, right: str) -> float:
-    if not left or not right:
-        return 0.0
-    return round(SequenceMatcher(None, left, right).ratio(), 4)
 
 
 def _candidate(row: dict[str, Any]) -> dict[str, Any]:
@@ -161,15 +203,14 @@ def _identity(
     return result
 
 
-def resolve_identity(vault: str | Path, path_or_slug: str) -> PageIdentity:
-    root = Path(vault).resolve()
-    if not root.is_dir():
-        raise ValueError(f"vault does not exist or is not a directory: {root}")
-    target = _path_for(root, path_or_slug)
-    rows = _pages(root)
-    target_rel = target.relative_to(root).as_posix()
-    row = next((item for item in rows if item["path"] == target_rel), None) or _row(target, root)
-    provenance, transitions = _manifest_signals(root)
+def _resolve_row_identity(
+    rows: list[dict[str, Any]],
+    row: dict[str, Any],
+    provenance: dict[str, set[str]],
+    transitions: dict[str, str],
+    similarity_cache: dict[tuple[str, str], float],
+    content_profiles: dict[str, Counter[str]],
+) -> PageIdentity:
     redirect_target = row["redirects_to"]
     if redirect_target:
         canonical = next(
@@ -210,7 +251,16 @@ def resolve_identity(vault: str | Path, path_or_slug: str) -> PageIdentity:
             _norm(row["title"]) in {_norm(item) for item in other["aliases"]}
             or _norm(other["title"]) in {_norm(item) for item in row["aliases"]}
         )
-        similarity = _content_similarity(row["body"], other["body"])
+        key = tuple(sorted((row["path"], other["path"])))
+        similarity = similarity_cache.get(key)
+        if similarity is None:
+            similarity = _content_similarity(
+                row["body"],
+                other["body"],
+                content_profiles[row["path"]],
+                content_profiles[other["path"]],
+            )
+            similarity_cache[key] = similarity
         shared_source = bool(row_sources & provenance.get(other["path"], set()))
         merge_match = row_target in {other["path"], other["stem"], f"{other['stem']}.md"} or transitions.get(other["path"]) == row["path"]
         stem_similarity = SequenceMatcher(None, row["stem"].casefold(), other["stem"].casefold()).ratio()
@@ -225,13 +275,88 @@ def resolve_identity(vault: str | Path, path_or_slug: str) -> PageIdentity:
     return _identity(row, status="ambiguous" if candidates else "resolved", candidates=candidates, signals=signals)
 
 
+def _similarity_cache(
+    rows: list[dict[str, Any]], profiles: dict[str, Counter[str]]
+) -> dict[tuple[str, str], float]:
+    cache: dict[tuple[str, str], float] = {}
+    candidates: list[tuple[int, int]] = []
+    groups: dict[str, list[int]] = {}
+    for index, row in enumerate(rows):
+        if row["type"] and not row["redirects_to"]:
+            groups.setdefault(row["type"], []).append(index)
+    for indexes in groups.values():
+        for offset, left in enumerate(indexes):
+            for right in indexes[offset + 1:]:
+                key = tuple(sorted((rows[left]["path"], rows[right]["path"])))
+                cache[key] = 0.0
+                left_body = rows[left]["body"]
+                right_body = rows[right]["body"]
+                if left_body and right_body and 2 * sum(
+                    (profiles[rows[left]["path"]] & profiles[rows[right]["path"]]).values()
+                ) / (len(left_body) + len(right_body)) > 0.6:
+                    candidates.append((left, right))
+    if not candidates:
+        return cache
+    chunks = [candidates[start:start + 512] for start in range(0, len(candidates), 512)]
+    if len(candidates) > 2000:
+        workers = min(4, os.cpu_count() or 1, len(chunks))
+        pool = ProcessPoolExecutor(
+            max_workers=workers,
+            initializer=_init_similarity_worker,
+            initargs=(rows, profiles),
+        )
+        try:
+            futures = [pool.submit(_similarity_batch, chunk) for chunk in chunks]
+            for future in futures:
+                for key, similarity in future.result(timeout=IDENTITY_BATCH_TIMEOUT_SECONDS):
+                    cache[key] = similarity
+        except Exception:
+            terminate = getattr(pool, "terminate_workers", None)
+            if terminate:
+                terminate()
+            else:
+                pool.shutdown(wait=False, cancel_futures=True)
+        else:
+            pool.shutdown()
+            return cache
+    for chunk in chunks:
+        for left, right in chunk:
+            key = tuple(sorted((rows[left]["path"], rows[right]["path"])))
+            cache[key] = _content_similarity(
+                rows[left]["body"],
+                rows[right]["body"],
+                profiles[rows[left]["path"]],
+                profiles[rows[right]["path"]],
+            )
+    return cache
+
+
+def resolve_identity(vault: str | Path, path_or_slug: str) -> PageIdentity:
+    root = Path(vault).resolve()
+    if not root.is_dir():
+        raise ValueError(f"vault does not exist or is not a directory: {root}")
+    target = _path_for(root, path_or_slug)
+    rows = _pages(root)
+    target_rel = target.relative_to(root).as_posix()
+    row = next((item for item in rows if item["path"] == target_rel), None) or _row(target, root)
+    provenance, transitions = _manifest_signals(root)
+    profiles = {item["path"]: Counter(item["body"]) for item in rows}
+    if row["path"] not in profiles:
+        profiles[row["path"]] = Counter(row["body"])
+    return _resolve_row_identity(rows, row, provenance, transitions, {}, profiles)
+
+
 def scan_identities(vault: str | Path, *, scope: Scope | None = None) -> list[PageIdentity]:
     root = Path(vault).resolve()
     rows = _pages(root)
     selected = set(scope.resolved_files) if scope else None
-    results = []
-    for row in rows:
-        if selected is not None and row["path"] not in selected:
-            continue
-        results.append(resolve_identity(root, row["path"]))
-    return results
+    provenance, transitions = _manifest_signals(root)
+    profiles = {item["path"]: Counter(item["body"]) for item in rows}
+    similarity_cache = _similarity_cache(rows, profiles)
+    return [
+        _resolve_row_identity(rows, row, provenance, transitions, similarity_cache, profiles)
+        for row in rows
+        if selected is None or row["path"] in selected
+    ]
+
+

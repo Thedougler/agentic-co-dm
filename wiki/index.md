@@ -815,6 +815,7 @@
 ## Folder Indexes
 - [[entities/creature/creature-index|Creatures]]
 - [[entities/entities-index|Entities]]
+- [[entities/lore/shattered-sea-overview|Shattered Sea Overview]]
 - [[entities/faction/faction-index|Factions]]
 - [[entities/item/item-index|Items]]
 - [[entities/lore/lore-index|Lore]]

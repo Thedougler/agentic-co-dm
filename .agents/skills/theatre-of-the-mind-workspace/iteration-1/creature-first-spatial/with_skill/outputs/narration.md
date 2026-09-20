@@ -1,0 +1,3 @@
+From the ledge the flooded vault opens before you. Dark water fills most of the chamber, still and cold. At the far side where the water shallows, a stone basin sits half-submerged. A brass key rests in that basin, dry and visible, untouched. A narrow running of stone descends from your ledge toward the basin, the only dry footing over the water.
+
+A drake waits in the basin's shallows. Broad-backed and scaled, with a pair of long horns curving back from its skull. One massive foreclaw braces on the basin rim, toes splayed on wet stone. Its head swings toward the ledge, eyes fixing on the stone under your feet.

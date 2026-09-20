@@ -21,18 +21,13 @@ role: bruiser
 cr: 11
 ---
 # Bear-Elk
-## Statblock
 
-````col
-```col-md
-flexGrow=3
-===
-![[attachments/shattered-sea/creatures/bear-elk-of-aruhe-02.jpg|Bear-Elk of Aruhe]]
 > [!narration] Narration
 > The Bear-Elk moves on a moose's high shoulders and a bear's heavy forelimbs, big enough to shove young trees aside with its chest. Wide shovel antlers fill the space over its head, scraped dark at the base and strung with vines, wet sap, and hanging drops. Its pale long face splits around yellow teeth and black gums, while clawed black forelegs punch through the leaf rot and leave the smell of blood, mud, and torn green behind it.
-```
 
-```col-md
+## Statblock
+![[attachments/shattered-sea/creatures/bear-elk-of-aruhe-01.jpg|Bear-Elk of Aruhe]]
+
 ```statblock
 layout: Basic 5e Layout
 name: "Bear-Elk"
@@ -67,10 +62,13 @@ bonus_actions:
   - name: "Crushing Stomp"
     desc: "Melee Weapon Attack: +13 to hit, reach 5 ft., one prone creature. Hit: 21 (2d12 + 8) bludgeoning damage."
 ```
-```
-````
+## Visual reference
+
+![[attachments/shattered-sea/creatures/bear-elk-of-aruhe-03.jpg|Bear-Elk of Aruhe]]
+![[attachments/shattered-sea/creatures/bear-elk-of-aruhe-04.jpg|Bear-Elk of Aruhe]]
 
 ## Behavior
+
 
 - **Habitat.** The Bear-Elk holds the wet floor where [[the-quiet|the Quiet]] gives way to [[the-marshes|the Marshes]]. It favors vine-choked game trails, soft black earth, and narrow tree gaps where its antlers scrape the canopy and its weight can break a path that smaller creatures only move through.
 - **Behavior.** It follows the same scored circuit day after day. It shoulders through brush and rubs sap-wet antlers against trunks. It roars when another large body refuses to move. [[terror-bird|Terror-birds]] give its route room. [[crown-squid|Crown squid]] and [[bloodhawk|bloodhawks]] take it only when canopy, open sky, or bad footing gives them the better angle.
@@ -79,20 +77,10 @@ bonus_actions:
 
 ## Tactics
 
+
 - **Signs.** Scored trees and peeled bark mark the route. Snapped vines, black hoof-and-claw tracks, churned marsh edge, antler gouges above head height, white sap strings, blood smears on leaves, and paths crushed wide enough for a cart complete the trail.
 - **Instincts.** It protects its circuit, its carcasses, and any narrow passage where it has already forced a trail. Loud movement, fresh blood, antler-scraping on trees, or a creature standing firm in its path reliably draws its attention.
 - **Tactics.** It lowers the broad antlers and commits to a straight rush, using mud, vines, and tight trails to trap prey in front of its weight. If the first sweep drops something, the Bear-Elk stamps down with its foreclaws and keeps its head low enough to hook anything trying to crawl away.
 - **Weaknesses.** Its patrol is predictable, and the same size that makes it terrifying also makes it bad at sharp turns, low tangles, deep water, and places where the antlers snag. Careful trackers can read its circuit from tree damage and choose when to avoid, bait, or brace for the charge.
 - **Aftermath.** A Bear-Elk encounter leaves smashed understory, sap-streaked bark, cracked branches hanging from vines, bloody churned mud, and carcass scraps pressed into the trail. Useful remains can include heavy antler plates, claws, hide, teeth, and sap-stained vine tangles caught in the rack.
 
-## Art
-````col
-```col-md
-![[attachments/shattered-sea/creatures/bear-elk-of-aruhe-01.jpg|Bear-Elk of Aruhe]]
-![[attachments/shattered-sea/creatures/bear-elk-of-aruhe-03.jpg|Bear-Elk of Aruhe]]
-```
-
-```col-md
-![[attachments/shattered-sea/creatures/bear-elk-of-aruhe-04.jpg|Bear-Elk of Aruhe]]
-```
-````

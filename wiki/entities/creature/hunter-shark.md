@@ -21,10 +21,18 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Hunter Shark
 
-## Stats & Combat
+> [!narration] Narration
+>
+
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -50,15 +58,21 @@ actions:
     desc: "Melee Weapon Attack: +6 to hit (with Advantage if the target doesn't have all its Hit Points), reach 5 ft. Hit: 14 (3d6 + 4) Piercing damage."
 ```
 
-## Description
+## Biology
+
+**Description.**
 
 A Hunter Shark is a large, blunt-nosed predator built for open water, not reef work. At a distance it's easy to mistake for the [[reef-shark]], until its size and its refusal to scatter after a first pass give it away. Dock hands who work both species keep the smaller animal's numbers close at hand for that reason. The Hunter Shark is a different order of animal from the region's Giant Shark, which hunts alone, far from any coastline. A Hunter Shark works the water ships actually use.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 Hunter Sharks follow the things ships leave behind: bilge discharge, fish-cleaning waste, blood from cargo loading. Where boats work water regularly, they learn the schedule. The [[central-strait]] has them year-round in the deeper lanes, trailing merchant convoys and patrol routes alike. The [[crown-islands]] harbour approaches see more incidents than any port authority records cleanly. Most involve swimmers. The cold upwelling below [[high-line]]'s cliffs draws them into the water column there too. Winch operators read the surface for shark sign before sending repair crews down the net face. At [[Kalowe]], the reef gap that opens the lagoon holds baitfish, which holds Hunter Sharks, which the dry-dock workers have learned to account for. The gap now has a rope with a bell on it.
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|

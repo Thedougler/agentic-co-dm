@@ -146,6 +146,8 @@ After writing the skill draft, come up with 2-3 realistic test prompts — the k
 
 Save test cases to `evals/evals.json`. Don't write assertions yet — just the prompts. You'll draft assertions in the next step while the runs are in progress.
 
+Campaign wiki skills: every prompt cites a live `wiki/` path. Coverage is those grounded cases. Vacuum scenarios do not count.
+
 ```json
 {
   "skill_name": "example-skill",

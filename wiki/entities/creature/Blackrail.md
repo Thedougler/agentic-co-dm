@@ -30,17 +30,11 @@ relationships:
 ---
 # Blackrail
 
-## Statblock
-
-````col
-```col-md
-flexGrow=2
-===
 > [!narration] Narration
 > A thirty- to forty-five-foot cave centipede fills the tube. Its back reads as parallel strips of wet black iron. Antennae longer than a man taste the air while the body keeps contact with the stone. Dust jumps in rings before the leg-rattle comes around the bend, and the head arrives sideways along the wall.
-```
 
-```col-md
+## Statblock
+
 ```statblock
 layout: Basic 5e Layout
 name: Blackrail
@@ -78,10 +72,9 @@ actions:
   - name: Pin
     desc: "One Medium or smaller creature within 5 feet must succeed on a DC 16 Strength saving throw or have the Restrained condition from body segments (escape DC 16). While Restrained this way, the target takes 14 (4d6) poison damage at the start of each of its turns. The blackrail can restrain up to three creatures and can move at half speed while carrying pinned prey."
 ```
-```
-````
 
 ## Behavior
+
 
 - **Habitat.** Main cave tubes and the Great Bore under [[Aruhe]], especially [[lava-tubes]]. It cannot enter spaces narrower than 5 feet.
 - **Behavior.** It listens first: vibration, dust rings, then the leg-rattle. One adult controls miles of main tube. Juveniles mean the adult is elsewhere. Adults eat unrelated young.
@@ -89,6 +82,7 @@ actions:
 - **Social Structure.** Solitary adult ownership of tube roads. Juveniles separate from the adult's beat.
 
 ## Tactics
+
 
 - **Signs.** Rhythmic tremors about thirty seconds out, dust jumping in rings, leg-rattle around the bend.
 - **Instincts.** Hunt by stone contact and tremorsense. Haul quiet prey somewhere still.

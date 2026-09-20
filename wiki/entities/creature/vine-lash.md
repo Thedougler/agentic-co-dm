@@ -33,17 +33,11 @@ relationships:
 ---
 # Vine Lash
 
-## Statblock
-
-````col
-```col-md
-flexGrow=2
-===
 > [!narration] Narration
 > Shoulder-thick leafless hangers drape over a trail like ordinary rope. Five or six rope-thick stems hang together from the canopy in one grasping bundle. The tendrils twitch only after something enters the trail lane.
-```
 
-```col-md
+## Statblock
+
 ```statblock
 layout: Basic 5e Layout
 name: "Vine Lash"
@@ -75,10 +69,9 @@ actions:
   - name: "Constrict"
     desc: "One creature grappled by the vine lash takes 9 (2d6 + 2) bludgeoning damage. The grapple remains until the target escapes or the grasping bundle is destroyed."
 ```
-```
-````
 
 ## Behavior
+
 
 - **Habitat.** First terraces of [[Aruhe]]. Keep these on narrow trail lanes. [[young-snakewood]] keeps wider canopy lanes.
 - **Behavior.** Hang as ordinary rope, then whip, wrap, and squeeze, drinking through roots.
@@ -86,6 +79,7 @@ actions:
 - **Social Structure.** Trail ambush plants; place a second vine on a separate lane, not the same target.
 
 ## Tactics
+
 
 - **Signs.** Shoulder-thick leafless hangers. Tendrils twitch after something enters the lane.
 - **Instincts.** Establish a hold, then squeeze or seize another.

@@ -25,7 +25,8 @@ summary: ""
 <!-- Add faction art when available. -->
 
 > [!narration] Public face
-> Write a high-quality cold portrait of the faction's public face: symbols, reputation, customs, territory, visible activities, and public purpose. No secret motives, hidden leaders, or unrevealed plans.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: faction. -->
+> Write a standalone cold portrait of the faction's public face in flowing prose — as long as the faction requires to be recognized on sight. Cover method footprint, shared marks or garb, visible territory, and customs or reputation a character encounters before knowing the faction's name. The portrait lets a player spot a member or a sign of this faction's presence. No secret motives, hidden leaders, or unrevealed plans.
 
 ````col
 ```col-md

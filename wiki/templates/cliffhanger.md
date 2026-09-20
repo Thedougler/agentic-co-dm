@@ -29,7 +29,8 @@ summary: ""
 **Ends when.** The observable condition that means this beat is over. Make the Cliffhanger brief, then resolve and hand off.
 
 > [!narration] Open on Action
-> Write high-quality theatre of the mind in two to four sentences. Address the players as "you" and include immediate danger, relative position, cover or routes, drawable appearance, and at least one non-sight sense. End on the reaction point. Do not prescribe the party's response or reveal hidden information.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: situated moment → beat: cliffhanger. -->
+> Write a situated opening in two to four sentences the DM can speak aloud. Address the players as "you", present tense. Front-load the danger — immediate threat, relative position, cover or routes, drawable appearance, and at least one non-sight sense. End on the reaction point. The opening makes the danger or instability unmistakable and gives the players something urgent to respond to. Do not prescribe the party's response or reveal hidden information.
 
 ## Run the Beat
 

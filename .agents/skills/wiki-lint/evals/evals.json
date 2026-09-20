@@ -42,7 +42,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Runs scripts/wiki lint as the deterministic pass and uses the grouped per-file findings plus next_page",
+          "text": "Runs wiki lint as the deterministic pass and uses the grouped per-file findings plus next_page",
           "type": "process"
         },
         {
@@ -114,6 +114,21 @@
         {
           "text": "Consults the template contract file before making structural changes",
           "type": "process"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Lint wiki/entities/item/snakewood.md. Frontmatter type is creature (same as live wiki/entities/creature/snakewood.md) but the file is under entities/item.",
+      "expected_output": "Kind home first: move to wiki/entities/creature/snakewood.md from frontmatter type, then audit the creature page. Do not apply the item template while it sits under entities/item.",
+      "assertions": [
+        {
+          "text": "Reports misplaced_entity and moves the page to wiki/entities/creature/snakewood.md before template or Vale",
+          "type": "process"
+        },
+        {
+          "text": "Does not audit or repair the page as an item while it remains under entities/item",
+          "type": "guardrail"
         }
       ]
     }

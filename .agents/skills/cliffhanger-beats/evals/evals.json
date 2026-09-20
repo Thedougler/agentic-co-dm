@@ -115,6 +115,34 @@
         "Does not hand off directly to another Cliffhanger.",
         "Names the trigger for the next beat without writing it."
       ]
+    },
+    {
+      "id": 11,
+      "prompt": "Write a Cliffhanger where the party's camp is raided while they sleep. A creature they tracked in a previous Development has turned the tables and is now hunting them. Use established wiki creatures and terrain.",
+      "expected_output": "A cliffhanger beat filed from the cliffhanger template with all structural sections. The contest tests a thread a previous Development planted. The physical situation changes through one contest with a clear end condition.",
+      "expectations": [
+        "Output has type: session-prep and kind: cliffhanger in frontmatter.",
+        "Trigger, PC objective, Opposition objective, Stakes, and Ends when are present as top-level statements.",
+        "An Open on Action narration callout exists with you-address, immediate physical threat, and a non-sight sense.",
+        "Run the Beat table has columns for Opposition, Default motion, Pressure, Leverage, Danger, and Ways out.",
+        "Opposition and Pressure sections exist in col-md blocks naming the threat's goal, method, and escalation.",
+        "Resolution table covers at least: party wins, party loses, and a mixed outcome with distinct consequences.",
+        "Handoff names the next beat type (Development) and the carry-forward state.",
+        "The contest tests a thread from a previous beat — not a random disconnected attack."
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "Write a Cliffhanger where the party must cross a contested space while two factions vie for control of it. The party is not the target of either faction but becomes entangled. The terrain itself is a factor — unstable ground, limited visibility, or flowing water. Use established wiki factions and places.",
+      "expected_output": "A cliffhanger where the party navigates a three-way situation. The terrain creates mechanical consequences beyond flavor. The contest changes the physical situation and hands to a Development with new options or constraints.",
+      "expectations": [
+        "The terrain produces mechanical consequences — cover, movement cost, visibility limits — not just flavor text.",
+        "Both factions have named objectives independent of the party, creating a three-way situation.",
+        "The party can choose sides, play factions against each other, sneak through, or retreat — at least three viable approaches.",
+        "Opposition section names each faction's goal, method, and what triggers their attention on the party.",
+        "Stakes are concrete: what the party gains or loses by engaging vs avoiding.",
+        "The contest changes the physical situation through one engagement, then hands off to a Development."
+      ]
     }
   ]
 }

@@ -46,9 +46,9 @@ Health live lint **does not** copy this dump (FR-014).
 
 ## 5. Checker cache
 
-**Decision:** Per-file cache at `$VAULT/_meta/lint-cache.json` (lint already skips `_meta`). Key = content sha256 of file bytes + checker-config digest (structural rules, Vale styles/config, template contracts). Hit → reuse that file’s checker results and extracts. Miss (hash change, config change, new path) → run checkers, write entry. Add/delete/rename: recompute corpus facts from cached extracts plus the current file set.
+**Decision:** Per-file cache at `$VAULT/_meta/lint-cache.json` (lint already skips `_meta`). Key = unique file (content sha256) + rules state (`digest_rules`: Vale styles/config, `tools/lint_wiki.py`, `scripts/wiki-lint`, creative-lint sources, template contracts, checker flags). Hit → reuse that file’s checker results and extracts. Miss (hash change, rules-state change, new path) → run checkers, write entry. Add/delete/rename: recompute corpus facts from cached extracts plus the current file set.
 
-**Rationale:** Spec FR-008/SC-003. User asked hash identity; config digest still required so Vale style edits are not stale.
+**Rationale:** Spec FR-008/SC-003. User asked hash identity; rules-state digest is required so Vale style or structural-rule edits are not stale.
 
 **Alternatives considered:** Repo `.cache/` — splits from vault. Hash-only without config digest — stale after Vale edits. mtime — misses identical-byte rewrites and false-misses on touch.
 

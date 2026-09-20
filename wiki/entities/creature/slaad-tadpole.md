@@ -21,10 +21,15 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Slaad Tadpole
 
-## Stats & Combat
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -58,15 +63,21 @@ actions:
 > Something the size of a housecat drags itself free of the rubble on too many legs, trailing a caul of iridescent slime, and chitters wetly at the smell of blood.
 
 
-## Description
+## Biology
+
+**Description.**
 
 Anyone who's dealt with a slaad summoning before — rare knowledge, but it exists — recognizes the tadpole stage on sight: the larval form a slaad egg produces, either after three months gestating in an infected host's chest cavity, or shed directly from an already-manifested slaad's own flesh. They're easy to kill and everyone who's fought one knows it. What's less obvious until it's too late: a tadpole's bite carries the same infection risk as [[otar-the-foul]]'s own.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 Otar's own transformation stalled between red and blue and never finished — his flesh keeps sloughing off half-formed tadpoles the way a wound sheds dead skin. The [[Mercatura]] crater's rubble is thick with the ones he's abandoned; most starve or eat each other before finding a host worth infecting. Not remotely intelligent — barely more than a biting reflex wrapped in chaos-stuff — a tadpole that feeds enough without dying can eventually molt toward a [[minor-slaad|minor slaad]] and then, over months or years, a true adult; almost none survive that long. Below Otar, they exist purely as a byproduct of his condition, not a controlled brood.
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
@@ -74,6 +85,6 @@ Otar's own transformation stalled between red and blue and never finished — hi
 | Finish a downed tadpole before it acts again | It's dropped to 0 HP but still on its feet near an ally | Denies its opportunity attack outright — a cheap action against a swarm this weak | Same Session 07 fight against [[otar-the-foul|Otar]] |
 | Examine a fresh bite closely (Medicine or Nature) | A party member or ally was bitten this scene | Confirms the wound carries the same infection risk as [[otar-the-foul|Otar]]'s own Bite, before symptoms show | Direct byproduct of Otar's stalled molt |
 
-## Prepped Reveals
+**Prepped Reveals.**
 
 A party that examines a dead tadpole closely (Arcana or Investigation) can learn it's a byproduct of an incomplete transformation, not a bred minion — evidence toward Otar's own condition and, by extension, [[solange-barret|Solange]]'s fate.

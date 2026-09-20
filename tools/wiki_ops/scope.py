@@ -204,7 +204,7 @@ class Scope:
 
     def to_dict(self) -> dict[str, Any]:
         def serialise(value: Any) -> Any:
-            if is_dataclass(value):
+            if is_dataclass(value) and not isinstance(value, type):
                 return serialise(asdict(value))
             if isinstance(value, dict):
                 return {str(key): serialise(item) for key, item in value.items()}

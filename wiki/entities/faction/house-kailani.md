@@ -45,3 +45,13 @@ Standing goal: maintain control of [[Sparhold]]'s spar-timber trade and the [[dr
 **Possible outcomes:** (a) Rangi defeats his opponent and House Kailani's rule stands. (b) Rangi falls and House Renzetti takes [[Sparhold]]. (c) Outside intervention shifts the challenge's outcome through force, magic, or leverage.
 
 **PC connection:** the duel is on the books and the bell can toll at any hour, so anyone tying up at [[Sparhold]]'s dock arrives while the succession is still open. Whichever family holds the settlement holds the watch, the timber yards, and the answer to any request put to the town.
+
+## At a Glance
+
+## At the Table
+
+## Current State
+
+## People & Structure
+
+## Running the Faction

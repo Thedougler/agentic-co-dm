@@ -39,6 +39,7 @@ relationships:
 > A low, spotted cat shape slides through the gold grass, almost invisible beneath a mat of reeds, creepers, and wet green leaves. Amber eyes watch from above a dark muzzle, and ivory saber teeth show before the heavy body drops flatter than a hunting leopard should be able to move. The grass barely whispers until it breaks open at once and the weight of the thing arrives before the roar does.
 
 ## Statblock
+
 ![[attachments/shattered-sea/creatures/spiguar-of-aruhe-token.jpg|Spiguar of Aruhe Foundry VTT token]]
 ```statblock
 layout: Basic 5e Layout
@@ -86,9 +87,14 @@ bonus_actions:
 
 ## Visual reference
 
+
 Heavy spotted cat with a broad head, long tail, large paws, and long ivory saber teeth. Golden-brown fur carries dark rosettes. Amber-gold eyes, a dark nose, and a dark muzzle mark the face. Fresh leaves, dry grass, vines, and plant fibers form a camouflage mantle over the back and shoulders. The mantle breaks up the outline and exposes the spotted face, legs, paws, and banded tail. The palette uses muted jungle green, dry grass brown, golden fur, and dark rosette markings.
+![[attachments/shattered-sea/creatures/spiguar-of-aruhe.jpg|Spiguar of Aruhe]]
+![[attachments/spiguar-reference.png|Spiguar visual reference sheet]]
+![[attachments/shattered-sea/creatures/spiguar-of-aruhe-token-stand.jpg|Spiguar of Aruhe token stand]]
 
 ## Behavior
+
 
 - **Habitat.** Spiguars dominate the hottest open cuts of [[grasslands]], especially long channels where shaded banks and eight-foot grass force travelers to choose between cover and clear sight. They favor low rises and game trails. River bends and the line where grass gives way to the darker jungle rim also suit them.
 - **Behavior.** A Spiguar takes prey from stillness. It lies beneath its living mantle until wind, insects, and birds treat it as another grass clump, then explodes through the lane in one crushing rush. It does not spend itself on long pursuit into deep water, bare stone, or broken ground.
@@ -97,13 +103,10 @@ Heavy spotted cat with a broad head, long tail, large paws, and long ivory saber
 
 ## Tactics
 
+
 - **Signs.** Sudden silence in noisy grass, heavy prints that appear and vanish, low drag furrows leading into cover, flattened feeding circles, and bones with paired fang punctures. Clumps of spotted fur and mats of reeds or creepers snag on thorn or branch.
 - **Instincts.** It keys on movement through lanes, prey that stops to drink, and anything noisy enough to betray its line through the grass. It prefers the first strike from concealment and commits hardest when it can knock prey down or seize one body before the rest can react.
 - **Tactics.** It keeps low and closes under cover before launching into a pounce that bowls a target over. Once something is down, it bites deep and drags the prey back into grass where sightlines collapse. If several enemies press it, it uses grass to break line of sight and circles for another ambush instead of standing in the open.
 - **Weaknesses.** Deep water and wide bare ground blunt its advantage. Fire and clean overhead sightlines do the same. It will not willingly rush through [[razer-grass|razer-grass]], and open stone or the river costs it much of its edge.
 - **Aftermath.** A kill site shows a brief struggle in the open and a worse one in the grass beyond. A pounced lane, blood on seed heads, and a drag trail vanish under bent reeds. A hidden feeding hollow gives off its smell before anyone sees it.
 
-## Art
-![[attachments/shattered-sea/creatures/spiguar-of-aruhe.jpg|Spiguar of Aruhe]]
-![[attachments/spiguar-reference.png|Spiguar visual reference sheet]]
-![[attachments/shattered-sea/creatures/spiguar-of-aruhe-token-stand.jpg|Spiguar of Aruhe token stand]]

@@ -23,7 +23,10 @@ A Climax is the highest-stakes confrontation the middle made inevitable — the
 capability, Cliffhangers tested it under cost, and player choices narrowed the
 remaining paths until one confrontation carries the session's central cost. The
 party arrives equipped by what the middle taught them; the Climax asks whether
-they can use it.
+they can use it. By this point, early Cliffhangers have taught the party their
+strengths and weaknesses, middle Developments have armed them with knowledge
+and alliances, and the opposition has escalated through the arc's scaling
+ladder — the Climax is where all of that pays off or falls short.
 
 A final battle is one shape among many. The Climax may be a revelation,
 sacrifice, desperate gambit, reckoning, siege, negotiation, catastrophe, trial,
@@ -41,20 +44,36 @@ Highest-stakes confrontation resolved; threads harvested.
 
 ## How to fill a Climax
 
-1. **Choose the card.** Read [references/climax-cards.md](references/climax-cards.md).
+1. **Read the entry state.** Read the preceding beat's carry-forward as your
+   opening. The Climax inherits the accumulated world-state of every prior
+   beat — positions, knowledge, alliances, resources, injuries, and
+   preparation states the party established. The penultimate beat's continuity
+   change is the Climax's trigger.
+
+2. **Choose the card.** Read [references/climax-cards.md](references/climax-cards.md).
    Pick by fiction trigger.
 
-2. **Harvest threads.** Name the live threads this Climax harvests. Harvesting
-   no middle threads is spectacle without payoff; harvesting an abandoned
-   thread is a railroad.
+3. **Harvest threads.** Name the live threads this Climax harvests explicitly —
+   what each Development revealed, what each Cliffhanger tested, and what
+   preparation states the party established. The party's prior choices
+   (alliances built, intelligence gathered, precautions taken) create the
+   Climax's entry conditions and available approaches. Harvesting no middle
+   threads is spectacle without payoff; harvesting an abandoned thread is a
+   railroad.
 
 3. **Write the situation.** Name trigger, actors, stakes, visible information,
    and at least two viable player responses. Theatre of the mind owns
    `[!narration]` for spoken text.
 
 4. **Prepare the resolution handoff.** Only a Resolution follows a Climax.
-   Name what changed, what it cost, and the scope the Resolution must echo.
-   Do not write the Resolution.
+   State the **carry-forward**: what the confrontation resolved, what it cost
+   (lives, resources, relationships, positions permanently changed), which
+   threads reached their final state, and the **continuity change** — the
+   observable world-state the Resolution's opening inherits. Name the scope
+   the Resolution must echo. The Resolution's writer reads this carry-forward
+   as the aftermath they show — a handoff that drops a cost or ignores a
+   resolved thread produces a Resolution disconnected from what the players
+   just lived through.
 
 5. **Name what happens if they ignore, fail, or redirect.** Ignoring lets
    the highest-stakes pressure land without them. Failing resolves the
@@ -74,3 +93,4 @@ Opening another type-card catalog for any other reason is a defect. Chart
 assembly, polarity rules, time budget, thread planting, escalation, recompute,
 and the session plan belong to `session-beats`. Spoken player text belongs to
 theatre of the mind.
+

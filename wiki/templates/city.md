@@ -39,7 +39,8 @@ Design basis: city gazetteer + meaningful districts + layered urban activity; si
 <!-- Add identity art when available. -->
 
 > [!narration] Arrival
-> Write a high-quality cold portrait of the city as the party enters or first overlooks it. Cover scale, silhouette, movement, sound, smell, and one unmistakable landmark. No secrets, hidden history, or unearned names.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: location. -->
+> Write a standalone cold portrait of the city as the party enters or first overlooks it — as long as the city requires to land as a place. Cover scale, silhouette, movement at the gates, sound, smell, and one unmistakable landmark that orients a newcomer. The portrait paints a drawable skyline and street-level impression a player can navigate from. No secrets, hidden history, or unearned names.
 
 ## At a Glance
 

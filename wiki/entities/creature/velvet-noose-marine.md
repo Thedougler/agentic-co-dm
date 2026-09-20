@@ -21,10 +21,15 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Velvet Noose Marine
 
-## Stats & Combat
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -61,15 +66,21 @@ actions:
 > [!narration] Narration
 > Four of them take positions at the stern rail without looking at anyone in particular. They do not draw weapons. They do not need to — the Noose is ninety yards off with the long cannon port closed and the gun-crew visible on deck.
 
-## Description
+## Biology
+
+**Description.**
 
 [[the-velvet-noose|Velvet Noose]] boarding marines: disciplined, unhurried, and keyed entirely to the Captain's rhythm. They arrive last, position without instruction, and say nothing during the parley. They are not guards. They are punctuation.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 The Noose's marines rotate between shipboard duty, harbour work in [[Midchain]], and the occasional port enforcement job the Captain takes on contract. They do not serve for prize money — the Noose pays a wage above the Crown rate, which buys a specific kind of silence and a specific kind of professionalism.
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|

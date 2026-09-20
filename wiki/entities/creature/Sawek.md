@@ -23,13 +23,21 @@ relationships:
     type: related_to
   - target: "[[central-strait-crossing]]"
     type: related_to
+region: ""
+role: ""
+cr: ""
 ---
 
 # Sawek
 
+> [!narration] Narration
+>
+
 ![[sawek-banner]]
 
-## Stats & Combat
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -81,15 +89,21 @@ DC 18 Wisdom; only a creature looking directly into the lair entrance may roll.
 
 This entry's statblock is the general bestiary build. The [[Kalowe — The Sawek Bounty]] quest carries a separate, tuned combat write-up for its own territorial sawek — run that page's version for that encounter specifically, not this one.
 
-## Description
+## Biology
+
+**Description.**
 
 [[Kalowe]]'s reef divers call it the sawek; colonial sailors call it the blue devil, after its preference for the caves lining blue holes as its lair. The front half is shark: broad, muscle-dense, jaws wide enough to take a man at the shoulder, skin a deep blue-grey that reads as black in dim water. The rear half is octopus: eight tentacles, each up to twenty feet long at full extension. It fits inside a cave entrance that looks too small to hold anything of note.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 The sawek is an ambush predator — the tentacles emerge from the entrance and grab whatever is within range, and the shark half takes over once prey is in reach. It can maintain a grapple on two targets at once and drags a grappled creature back toward its lair. While stationary in its lair, the sawek is silent and requires no Stealth check. It has advantage on Perception checks that rely on smell and breathes only underwater. [[Kalowe]] divers mark claimed holes with a length of cord tied to a reef stake, the only signal that a given blue hole is already taken.
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|

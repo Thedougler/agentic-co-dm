@@ -14,6 +14,7 @@ _HEADING = re.compile(r"^(#{1,6})\s+(.+?)\s*$", re.MULTILINE)
 _CALLOUT = re.compile(r"^>\s*\[!([^\]]+)\]", re.MULTILINE)
 _TABLE = re.compile(r"^\|\s*(.+?)\s*\|\s*$", re.MULTILINE)
 _MARKER = re.compile(r"(?:```+([^\n]*)|\b(col(?:-md)?|flexGrow)\b)")
+_LAYOUT_MARKERS = frozenset({"col", "col-md", "flexGrow"})
 
 
 def _frontmatter(text: str) -> dict[str, Any]:
@@ -108,6 +109,8 @@ def _rules() -> dict[str, RuleDefinition]:
         "TMPL003": ("Section order mismatch", "Page sections do not follow the selected template order", "Move the section to the template-defined order without changing facts"),
         "TMPL004": ("Frontmatter shape mismatch", "Page frontmatter does not match the selected template shape", "Add or correct structural frontmatter keys without inventing values"),
         "TMPL005": ("Formatting mismatch", "Page is missing a formatting construct required by the selected template", "Restore the template formatting construct without changing prose"),
+        "TMPL006": ("Statblock image layout", "Statblock allows at most one overview image immediately before the statblock fence; remaining images belong in Art subsections", "Keep at most one overview image before the statblock fence and move remaining images to Art subsections"),
+        "TMPL007": ("Art subsection structure", "Art embeds are not nested under a subsection heading", "Nest each Art embed under a role subsection"),
     }
     return {key: RuleDefinition(id=key, title=title, message=message, repair=repair, **common)
             for key, (title, message, repair) in definitions.items()}
@@ -158,13 +161,33 @@ def compare_page(page_file: str | Path, template_file: str | Path, *, root: str 
     if missing:
         findings.append(_finding("TMPL004", page, root_path,
                                  "Missing template frontmatter keys: " + ", ".join(missing), 1))
-    template_markers = {marker for marker in profile["formatting_markers"] if marker in {"col", "col-md", "flexGrow"}}
-    if template_markers and not (template_markers & _marker_values(page_text)):
+    template_markers = {marker for marker in profile["formatting_markers"] if marker in _LAYOUT_MARKERS}
+    page_markers = _marker_values(page_text) & _LAYOUT_MARKERS
+    if template_markers and not (template_markers & page_markers):
         findings.append(_finding("TMPL005", page, root_path, "Missing template formatting marker", 1))
+    for marker in sorted(page_markers - template_markers):
+        line = next((index for index, text in enumerate(page_text.splitlines(), 1)
+                     if re.search(rf"\b{re.escape(marker)}\b", text)), 1)
+        findings.append(_finding("TMPL005", page, root_path, f"Extra formatting marker: {marker}", line,
+                                 "Remove the column layout wrapper; keep a linear Statblock"))
     expected_callouts = {item["type"] for item in profile["callout_forms"]}
     actual_callouts = {match.group(1).strip().lower() for match in _CALLOUT.finditer(page_text)}
     for callout in sorted(expected_callouts - actual_callouts):
         findings.append(_finding("TMPL005", page, root_path, f"Missing callout form: {callout}", 1))
+    contract_path = template.parent / "contracts" / f"{template.stem}.yml"
+    if contract_path.is_file():
+        from tools.wiki_ops.template_contracts import check_layout_conformance, load_contract
+
+        contract = load_contract(contract_path)
+        for item in check_layout_conformance(page, page_text, contract.layout):
+            findings.append(_finding(
+                item["rule_id"],
+                page,
+                root_path,
+                item["reason"],
+                int(item.get("line", 1)),
+                "Apply the declared template layout rule",
+            ))
     return findings
 
 

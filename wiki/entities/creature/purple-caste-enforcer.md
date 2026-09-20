@@ -21,8 +21,14 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Purple-Caste Enforcer
+
+> [!narration] Narration
+>
 
 A CR 1/2 humanoid grung — low-tier purple-caste muscle serving as a Pack Tactics spear-and-tongue skirmisher, escort for named lieutenants in the back half of the [[Calveno sewer magazine dungeon]]. Encountered in Session 06's Primary Chamber fight: [[delmar-fisk|Delmar]] one-shot one with a pistol sneak attack ("before the groin that was standing there is replaced with a pink mist"). Staged as escort for [[vashu-the-weeping-veil|Vashu, the Weeping Veil]] at Room T1 (Magazine Gamma) of the [[Calveno Sewer Magazines]].
 
@@ -33,7 +39,9 @@ A CR 1/2 humanoid grung — low-tier purple-caste muscle serving as a Pack Tacti
 - [[purple-caste-zealot]]
 - [[Grung|Grung (Green-Caste NPC)]]
 
-## Stats & Combat
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -68,15 +76,21 @@ actions:
 **Wants:** Land Binding Tongue on whatever target Vashu is pressing, so the grapple holds it still for her Pressure Point finisher.
 **Morale:** Breaks and flees once Vashu falls or the enforcer itself drops below half HP — it won't die guarding a blind master who's already down.
 
-## Description
+## Biology
+
+**Description.**
 
 A purple-caste grung armed with a venom-coated spear and a prehensile, whip-like tongue used to grapple and restrain at range. Its hide runs deep violet, darker and glossier than the green-caste laborers it stands escort over. Where a green-caste sentry (see [[Grung]]) is built to flee and report, an enforcer is built to hold a line: heavier build, a poison-slicked spearhead, and the discipline to fight in support of a named lieutenant rather than alone.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 Purple-caste enforcers are drawn from the warrior line of [[Grung]] caste society, the rank [[grung-clans|Grung Clans]] field as escort muscle for named lieutenants rather than rear-guard security. Like every grung they are amphibious and must submerge for at least an hour daily or take on Exhaustion, tying even a garrisoned enforcer back to the flooded channels of the [[Calveno Sewer Magazines]] and the reef-fringed rainforest of the [[verdant-teeth]] it was raised in. At Calveno an enforcer stands post at Room T1 (Magazine Gamma) beside [[vashu-the-weeping-veil|Vashu, the Weeping Veil]] — the mirror of the [[purple-caste-zealot]] [[ozzeth-the-twiceborn|Ozzeth]] keeps at Room T2 (Magazine Delta) — and the pairing is deliberate: Vashu fights blind by the Still-Water Discipline's own teaching, and the enforcer's Binding Tongue is what puts a target inside her reach before her Pressure Point ever needs to land.
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|

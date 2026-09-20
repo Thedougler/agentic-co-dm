@@ -37,6 +37,7 @@ relationships:
 > The Deer-Stalker stands roughly eight feet tall on long, cloven-hoofed hind legs, its shaggy brown coat broken by pale patches across the shoulders and back. A long white deer face and broad branching antlers rise above its front-heavy body, while overlong forelimbs hang past its knees and end in black, fingered claws stained dark with blood. Pale eyes remain fixed over a wet black muzzle, where blood and spit thread from its teeth into the leaf rot.
 
 ## Statblock
+
 ![[attachments/shattered-sea/creatures/deer-stalker-of-aruhe-token.png|Deer-Stalker of Aruhe Foundry VTT token]]
 ```statblock
 layout: Basic 5e Layout
@@ -81,11 +82,16 @@ reactions:
 
 ## Visual reference
 
+
 The supplied character reference sheet establishes the Deer-Stalker at roughly eight feet tall, with a shaggy brown-and-cream coat, broad branching antlers, a long pale muzzle, pale forward eyes, blood-stained forelimbs, black clawed hands, and cloven hind hooves. Its front-heavy upright silhouette keeps the overlong arms reaching below the knees.
 
 ![[attachments/shattered-sea/creatures/deer-stalker-of-aruhe-reference-sheet.png|Deer-Stalker character reference sheet]]
+![[attachments/shattered-sea/creatures/deer-stalker-of-aruhe-01.jpg|Deer-Stalker of Aruhe]]
+![[attachments/shattered-sea/creatures/deer-stalker-of-aruhe-02.jpg|Deer-Stalker of Aruhe]]
+![[attachments/shattered-sea/creatures/deer-stalker-of-aruhe-03.jpg|Deer-Stalker of Aruhe]]
 
 ## Behavior
+
 
 - **Habitat.** Deer-Stalkers keep to the dim edges of [[the-quiet|the Quiet]] and [[the-marshes|the Marshes]], using game trails, wet paths, root shadows, and grassland margins where a sick deer shape can stand half-hidden. They avoid [[razer-grass]].
 - **Behavior.** A Deer-Stalker stands over a carcass like a sick deer. If disturbed, it crashes away too loudly. It circles back through the dim and repeats a voice it heard until one person follows.
@@ -94,13 +100,10 @@ The supplied character reference sheet establishes the Deer-Stalker at roughly e
 
 ## Tactics
 
+
 - **Signs.** Deer tracks become handlike claw marks, with blood on low leaves, dragged carcasses, torn bark at shoulder height, long pauses in ordinary forest sound, sweet rot, and a familiar voice repeated wetly from the wrong place.
 - **Instincts.** It wants the one person who answers a sound or touches its meal alone. It does not use the voice to control anyone. It uses the sound to make separation feel safe.
 - **Tactics.** It opens with Multiattack against the isolated target while Assassinate applies. It uses Lunge and Drag to cross the gap and carry that target away, or Cunning Action to reposition. When two or more enemies close, it uses Break Contact and resets the hunt.
 - **Weaknesses.** Keep allies within 10 feet, force it into bright or open ground, and refuse to follow a voice without the group. It will not walk through [[razer-grass]].
 - **Aftermath.** An encounter leaves an interrupted kill site, blood threads on leaves and roots, clawed drag marks, hoofprints that stop making sense, and a lingering stink of sweet rot. Nothing useful remains at the site.
 
-## Art
-![[attachments/shattered-sea/creatures/deer-stalker-of-aruhe-01.jpg|Deer-Stalker of Aruhe]]
-![[attachments/shattered-sea/creatures/deer-stalker-of-aruhe-02.jpg|Deer-Stalker of Aruhe]]
-![[attachments/shattered-sea/creatures/deer-stalker-of-aruhe-03.jpg|Deer-Stalker of Aruhe]]

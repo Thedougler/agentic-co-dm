@@ -40,6 +40,7 @@ HARD_KEYS = (
     "bad_lifecycle",
     "typed_relationships",
     "pc_identity_mismatch",
+    "misplaced_entity",
     "spaced_basename",
     "aruhe_prefix_basename",
     "illegal_basename",
@@ -288,8 +289,10 @@ def named_missing_owner(raw: str) -> bool:
 
 
 def resolve(raw: str, pages: dict[str, dict], lookup: dict[str, list[str]]) -> list[str]:
-    return list(classify_link(raw, pages, lookup)["targets"])
-
+    targets = classify_link(raw, pages, lookup)["targets"]
+    if not isinstance(targets, list):
+        return []
+    return [str(target) for target in targets]
 
 def link_occurrences(text: str) -> list[tuple[str, int]]:
     """Return wikilink targets with their 1-based source lines."""
@@ -344,6 +347,37 @@ def pc_identity_mismatches(pages: dict[str, dict]) -> list[dict[str, object]]:
                 "line": page_line(item, "type") if typ else page_line(item, "role"),
             })
     return out
+
+
+def misplaced_entities(pages: dict[str, dict]) -> list[dict[str, object]]:
+    """HARD: live owner under entities/{folder}/ must match frontmatter type."""
+    out: list[dict[str, object]] = []
+    for rel, item in pages.items():
+        if item["fields"].get("redirects_to"):
+            continue
+        parts = Path(rel).parts
+        if len(parts) < 3 or parts[0] != "entities":
+            continue
+        folder = parts[1]
+        if folder not in OWNER_TYPES:
+            continue
+        if Path(rel).stem.endswith("-index"):
+            continue
+        typ = (item["fields"].get("type") or "").strip("\"'")
+        if typ not in OWNER_TYPES or typ == folder:
+            continue
+        expected = f"entities/{typ}/{Path(rel).name}"
+        out.append({
+            "page": rel,
+            "type": typ,
+            "folder": folder,
+            "expected": expected,
+            "line": page_line(item, "type"),
+            "repair_class": "deterministic_repair",
+            "repair_action": {"kind": "move_page", "from": rel, "to": expected},
+        })
+    return out
+
 
 
 ILLEGAL_BASENAME_CHARS = re.compile(r'[/\\:*?"<>|\x00-\x1f]')
@@ -508,6 +542,7 @@ def main() -> int:
         if item["fields"].get("type") and item["fields"]["type"].strip("\"'") not in types
     ]
     findings["pc_identity_mismatch"] = pc_identity_mismatches(pages)
+    findings["misplaced_entity"] = misplaced_entities(pages)
     findings["pc_tag_on_npc"] = [
         {
             "page": rel,
@@ -570,10 +605,10 @@ def main() -> int:
         emit_findings = scoped_documents is None or rel in scoped_documents
         lines = body.splitlines()
         for raw, line in link_occurrences(body):
-            if normalize(raw) in MECHANIC_LINK_ALLOWLIST:
-                continue
             hit = classify_link(raw, resolve_pages, resolve_lookup)
-            targets = list(hit["targets"])
+            targets = hit["targets"]
+            if not isinstance(targets, list):
+                targets = []
             if hit["kind"] in {"canonical", "alias"} and len(targets) == 1:
                 incoming[targets[0]] += 1
                 edges.append((rel, targets[0]))

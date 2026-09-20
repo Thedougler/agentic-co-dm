@@ -25,21 +25,25 @@ template field is preserved.
 
 ## Setup
 
-1. **Resolve config** — Config Resolution Protocol in `llm-wiki/SKILL.md`.
+1. **Resolve config** — Config Resolution Protocol in AGENTS.md.
    Yields `OBSIDIAN_VAULT_PATH` plus optional `OBSIDIAN_ALLOWED_LIFECYCLES`,
    `OBSIDIAN_ALLOWED_RELATIONSHIP_TYPES`, `OBSIDIAN_REQUIRED_TRUST_FIELDS`,
    `OBSIDIAN_SCHEMA_SOURCE`.
 2. **Form effective schema** — record schema source, effective
    required/optional frontmatter, lifecycle values, relationship types,
    provenance markers. Never coerce owner types to framework types.
-3. **Read `hot.md`** from the resolved vault path. Open bounded `log.md`
-   slice only if needed. Do not preload `index.md` or full `log.md`.
+3. **Read `hot.md`** from the resolved vault path.
+
+
+## Health
+
+`wiki health` then do `context.act` (first-turn and skill load). Done: heaviest first-turn file is disclosed or kept as a step. Then do `next` (then remaining `focus`).
 
 ## Deterministic pass
 
 Run the structural command from repo root before any agent repair:
 
-- **Vault or path:** `scripts/wiki lint [path ...]`
+- **Vault or path:** `wiki lint [path ...]`
 - `--full` is accepted and does not change the dump
 
 Default stdout is summary fields plus every finding grouped by `files`.
@@ -51,8 +55,8 @@ Pass owner extensions through `scripts/wiki-lint` when a checker needs
 
 **HARD fail keys:** `broken_links`, `missing_frontmatter`, `bad_type`,
 `bad_lifecycle`, `typed_relationships`, `pc_identity_mismatch`,
-`spaced_basename`, `aruhe_prefix_basename`, `illegal_basename`,
-`duplicate_stems`, `template_conformance`.
+`misplaced_entity`, `spaced_basename`, `aruhe_prefix_basename`,
+`illegal_basename`, `duplicate_stems`, `template_conformance`.
 
 **Soft keys:** `snake_case_labels`, `pc_tag_on_npc`,
 `snake_case_owner_basename`.
@@ -61,8 +65,14 @@ Redirect stubs (`redirects_to` in frontmatter) skip `missing_frontmatter`,
 `spaced_basename`, `aruhe_prefix_basename`. Reserved files (`AGENTS.md`,
 `README.md`, `index.md`, `log.md`, `hot.md`) and mechanic-allowlist links
 skip `broken_links`. `_archive`/`_raw`/templates/`_meta` skipped — live
-pages only for filename HARD keys. Template conformance checks typed pages
-against `wiki/templates/contracts/{type}.yml`.
+pages only for filename HARD keys.
+
+**Kind home first.** A live owner under `entities/{folder}/` must match
+frontmatter `type`. `misplaced_entity` → move to
+`entities/{type}/{basename}` from frontmatter `type`, then re-run.
+Template conformance checks the typed page against the derived
+`wiki/templates/{type}.md` profile and `wiki/templates/contracts/{type}.yml`.
+Default dump includes every checker finding.
 
 Clean = `status: "clean"`, empty findings, `identity.status` `"resolved"`.
 
@@ -90,6 +100,9 @@ The hot path — a single page given by path.
    candidate body. Complete Check 14 (`merge`, `digest`, or `differentiate`)
    until identity is `resolved`. Then edit.
 4. **Repair every fixable finding:**
+   - **Kind home:** `misplaced_entity` → move the page to
+     `entities/{type}/{basename}` from frontmatter `type`, then re-run.
+     Template and Vale wait until that path is current.
    - Broken wikilinks → resolve to an existing owner; if the target is a
      named missing owner, mint the thinnest valid page from its template
      using only established mentions.
@@ -119,9 +132,9 @@ unfixable findings listed; one done-summary names what changed and where.
 
 When vault-wide lint finds fixable issues and `--check` is not set:
 
-1. Run `scripts/wiki lint` and take `next_page` (first `backlog` page).
+1. Run `wiki lint` and take `next_page` (first `backlog` page).
 2. Process that page: read, repair, page-scoped verify, commit.
-   Re-run `scripts/wiki lint` and take the new `next_page`.
+   Re-run `wiki lint` and take the new `next_page`.
 3. Stop only when `backlog` is empty, the user stops the run, or a concrete
    unrecoverable blocker occurs.
 
@@ -143,13 +156,6 @@ npc-design, place-design, etc.), deep dedup scans to `wiki-dedup`, tag
 audits to `tag-taxonomy`, cross-referencing to `cross-linker`, and vault
 lookup to `.agents/skills/qmd` plus
 `specs/004-qmd-search-default/contracts/retrieval-precedence.md`.
-
-## After linting
-
-Append to `log.md`:
-```
-- [TIMESTAMP] LINT issues_found=N orphans=X broken_links=Y stale=Z contradictions=W prov_issues=P missing_summary=S fragmented_clusters=F visibility_issues=V promotion_candidates=C duplicate_pages=D synthesis_gaps=G relationship_issues=R
-```
 
 One done-summary: what changed, where.
 

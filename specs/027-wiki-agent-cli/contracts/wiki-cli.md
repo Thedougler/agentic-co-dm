@@ -50,7 +50,7 @@ No nested per-rule finding maps. `unique` values are already-deduped targets. Li
 
 ### Health
 
-One snapshot: `pages`, `bytes`, `tokens`, live lint **summary** (no `files` dump), waste / staging / remorph / policy, `trends` (including `slowest_commands` and `token_heaviest`), ordered `focus` (cap 5), `next`, `timing`. See [data-model.md](../data-model.md).
+One snapshot: `pages`, `bytes`, `tokens`, live lint **summary** (no `files` dump), waste / staging / remorph / policy, `trends` (including `slowest_commands` and `token_heaviest`), ordered `focus` (cap 5), `next`, `context` (first-turn files, ranked skills, first-turn efficiency delta, `act`), `timing`. See [data-model.md](../data-model.md).
 
 Missing sittings/errors/traces → zero/empty `trends`, still exit 0 or 1 from lint/Layer A — not exit 2.
 
@@ -63,7 +63,7 @@ No skill-eval pass/fail keys.
 | lint | Scoreboard of counts / next_page / cache, then findings grouped by file as `file:line  RULE  message` |
 | lint `--pretty --full` | Same human findings list |
 | query | One hit per line: `path  title  id` |
-| health | Short scoreboard (pages, bytes, tokens, lint hard total, quiet-relevant counts, slowest command, token-heaviest sitting) then `next.path` and the `focus` list (`path  source  reason`) |
+| health | Short scoreboard (pages, bytes, tokens, lint hard total, quiet-relevant counts, slowest command, token-heaviest sitting, first-turn total) then `context.act`, `next.path`, and the `focus` list (`path  source  reason`) |
 
 Pretty usage errors: one line on stderr, exit 2.
 
@@ -74,6 +74,10 @@ Stdout: `{"error":"<message>","status":"error"}` exit 2.
 ## Side effects
 
 Each lint/query/health run appends one `record_kind=command` row to `.local/efficiency/traces.jsonl`. Append failure does not change the wiki command’s exit code.
+
+
+`lint` and `health` write `wiki <command>: elapsed_s=<n> still=1` to stderr at least every 10 seconds while running. Stdout remains one JSON object (`--pretty`: one human text result). A run under 10 seconds may emit no heartbeat. `query` has no heartbeat requirement.
+
 
 ## Non-goals this sitting
 

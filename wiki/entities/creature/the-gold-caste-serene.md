@@ -31,14 +31,26 @@ relationships:
     type: related_to
   - target: "[[verdant-teeth]]"
     type: related_to
+region: ""
+role: ""
+cr: ""
 ---
 # The Gold-Caste Serene
 
-## Look
+> [!narration] Narration
+>
+
+## Statblock
+
+## Visual reference
+
+**Look.**
 
 No creature can look upon it directly. Certainty Ward radiance makes the gold presence untargetable by attack, spell, or effect that requires aiming. Source is silent on drawable features beyond that unlookable gold radiance.
 
-## Runnable sheet
+## Behavior
+
+**Runnable sheet.**
 
 CR 30 Small Grung humanoid that flies and hovers. Certainty Ward, Legendary Resistance 5/Day, Magic Resistance, Profound Immunity, Sustained Concentration, Loved by the Weave, Amphibious, Poisonous Skin (DC 27 dominate), full arcane and innate spellcasting, Multiattack (two spells), Counterspell and Shield of the Weave reactions, legendary actions including Wish, and Verdant Teeth lair actions.
 
@@ -121,16 +133,18 @@ lair_actions:
   - desc: "Radiant proclamation. All creatures within 60 feet of the Gold Caste Serene must succeed on a DC 27 Constitution saving throw or be blinded until the end of their next turn."
 ```
 
-## Life
+**Life.**
 
 Associated with the [[grung-clans]]' gold authority, **Gold Caste Serene** names the fiction-layer presence through which the clans frame their decrees, while the sheet leaves its identity relative to [[Auralis]] unsettled. Its habitat is [[verdant-teeth]]. The sheet gives no habits, diet, or social detail beyond the unlookable gold presence.
 
-## Hunt
-
-Signs include radiance no one can look at directly and jungle lair responses in the Verdant Teeth. The creature's instincts favor decree and wish-scale magic over melee. It opens with area exclusion and dominate on contact. The source gives no further shutdown detail beyond the listed immunities. Survivors may remain restrained, blinded, or unable to teleport.
-
-## Connections
+**Connections.**
 
 - [[grung-clans]]
 - [[Auralis]]
 - [[verdant-teeth]]
+
+## Tactics
+
+**Hunt.**
+
+Signs include radiance no one can look at directly and jungle lair responses in the Verdant Teeth. The creature's instincts favor decree and wish-scale magic over melee. It opens with area exclusion and dominate on contact. The source gives no further shutdown detail beyond the listed immunities. Survivors may remain restrained, blinded, or unable to teleport.

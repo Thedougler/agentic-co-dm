@@ -10,7 +10,7 @@ Correct a campaign wiki error only when the user's current message explicitly as
 
 ## Start
 
-1. Resolve the vault with the Config Resolution Protocol in `llm-wiki/SKILL.md`.
+1. Resolve the vault with the Config Resolution Protocol in AGENTS.md.
 2. Read `$OBSIDIAN_VAULT_PATH/AGENTS.md` when it exists, and follow its wiki conventions unless this skill explicitly overrides them.
 3. Parse the correction into:
    - the **original error**: every exact phrase, name, filename stem, alias, wikilink, or slug that must disappear.

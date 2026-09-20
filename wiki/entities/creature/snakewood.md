@@ -31,6 +31,8 @@ relationships:
     type: related_to
   - target: "[[old-gardens]]"
     type: related_to
+role: ""
+cr: ""
 ---
 # Aruhe - Snakewood
 
@@ -39,7 +41,11 @@ relationships:
 > [!narration] Narration
 > Thick, bark-dark vines coil through the canopy above like heavy branches that have learned to hang in loops. Wet leaves and dangling roots hide much of the tangle, but stripped bones hang caught among the higher coils where the green opens. Some vines sit unnaturally smooth against the tree limbs, thicker than the hanging roots around them. Over a trail or waterway, the coils slowly change their set overhead, wood sliding over wood with a low creak.
 
-## Hazard
+## Statblock
+
+## Behavior
+
+**Hazard.**
 
 - **Trigger.** A Small or larger creature moving beneath an active colony section triggers an instinctive attack from above.
 - **Notice.** A DC 14 Wisdom (Perception) or Wisdom (Survival) check spots stripped carcasses hanging in the canopy, unnatural coils among the branches, and vines slowly repositioning overhead.
@@ -54,3 +60,5 @@ relationships:
 **Canon conflict**
 
 A campaign monster drop also supplies a CR 6 Snakewood creature sheet. Live hazard facts are kept.^[ambiguous]
+
+## Tactics

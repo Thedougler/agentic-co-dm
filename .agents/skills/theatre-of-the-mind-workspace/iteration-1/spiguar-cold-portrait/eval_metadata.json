@@ -1,0 +1,12 @@
+{
+  "eval_id": "spiguar-cold-portrait",
+  "eval_name": "Cold creature portrait - Spiguar",
+  "prompt": "Using wiki/entities/creature/spiguar.md, write the page's [!narration] cold portrait. The parent establishes: large spotted cat body, broad head, saber teeth, amber eyes, dark muzzle, golden-brown rosette fur, a living mantle of leaves/grass/vines over back and shoulders, long tail, large paws. No party, encounter, or table state is supplied.",
+  "assertions": [
+    {"text": "Makes the Spiguar the sole subject with a body-scale silhouette a player could sketch: cat shape, saber teeth, and the grass/leaf mantle as the visual signature.", "type": "quality"},
+    {"text": "Uses connected flowing prose, not a feature checklist or telegram stubs.", "type": "quality"},
+    {"text": "Does not stage a pounce, drag, hide sequence, or any tactic.", "type": "guardrail"},
+    {"text": "Does not invent a scene, party, encounter, or current hunt.", "type": "guardrail"},
+    {"text": "Rephrases the parent rather than copying its narration block verbatim.", "type": "quality"}
+  ]
+}

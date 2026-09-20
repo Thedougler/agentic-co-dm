@@ -9,7 +9,7 @@ import re
 import tempfile
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
-from typing import Any
+from typing import Any, Mapping
 
 from .index_ops import ENTRY_RE, insert_index_entry, parse_index, remove_index_entry, replace_index_entry
 
@@ -736,7 +736,7 @@ def _diff_for(path: Path, root: Path, before: str, after: str) -> str:
     return "".join(difflib.unified_diff(before.splitlines(True), after.splitlines(True), fromfile=_relative(root, path), tofile=_relative(root, path)))
 
 
-def _atomic_commit(changes: dict[Path, str], deletes: set[Path], originals: dict[Path, str | None]) -> None:
+def _atomic_commit(changes: dict[Path, str], deletes: set[Path], originals: Mapping[Path, str | None]) -> None:
     if set(changes) & deletes:
         _fail("overlap", "a path cannot be both written and deleted")
     paths = sorted(set(changes) | deletes, key=lambda path: str(path))

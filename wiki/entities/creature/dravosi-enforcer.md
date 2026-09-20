@@ -21,14 +21,22 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Dravosi Enforcer
+
+> [!narration] Narration
+>
 
 [[dravosi-crown]] veterans assigned to boarding actions and crowd suppression. Built for confined-space fighting, they know how to use a hook to pull someone off their feet, and they know how to use a gangplank as a kill zone.
 
 Related: [[dravosi-deckhand]], [[dravosi-crown]].
 
-## Stats & Combat
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -62,15 +70,21 @@ actions:
     desc: "Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 5 (1d6 + 2) piercing damage. On a hit, the target must succeed on a DC 12 Strength saving throw or be pulled up to 5 feet toward the enforcer and knocked prone."
 ```
 
-## Description
+## Biology
+
+**Description.**
 
 Recognizable by the boarding kit: cutlass, hooked boarding pole, and a Crown-grey coat heavier than a [[dravosi-deckhand]]'s inspection uniform. Where a deckhand works a routine check and shouts for backup, an enforcer is the backup — sent down first into a hold or across a gangplank in pairs, trained to press an advantage rather than hold a line. [[dravosi-crown]] boarding parties field enforcers behind the first wave of deckhands, using them to finish what an inspection turns into a fight.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 Enforcers crew [[dravosi-crown]] patrol vessels working the [[central-strait]]'s shipping lanes and the inspection posts around [[Calder's Tooth]], the Crown's naval reach over free-sailor traffic passing between the [[crown-islands]] and [[Midchain]]. The rank is a step up from [[dravosi-deckhand]] — a sailor who survived a first boarding and got issued a hook instead of a crossbow — and enforcers are assigned in pairs, which is why Pack Tactics describes how they actually fight: never alone into a hold, always working a target together. Off duty they carry the same flat, by-the-book manner as any Crown inspector, reciting registry standards and rating forms; that manner drops the instant a target resists.
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|

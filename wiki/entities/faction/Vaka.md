@@ -43,3 +43,13 @@ This faction rests on the prep-profile identity of [[felix-aho|Félix Aho]], whi
 ## Goals & Fronts
 
 No stated agenda beyond the mutual-support network itself — no manifesto or ideology. No Front clock is defined for this faction yet.
+
+## At a Glance
+
+## At the Table
+
+## Current State
+
+## People & Structure
+
+## Running the Faction

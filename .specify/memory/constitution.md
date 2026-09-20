@@ -1,3 +1,12 @@
+<!--
+Sync Impact Report
+- Version change: 3.0.2 -> 3.1.0
+- Modified principles: none
+- Added sections: XXVI. Skill Evaluation Uses the Weakest Sufficient Model
+- Removed sections: none
+- Follow-up TODOs: none
+-->
+
 # Agentic Co-DM Constitution
 
 ## Core Principles
@@ -191,13 +200,29 @@ Agents proactively maintain all three using observed failures, corrections, and 
 
 ### XXV. Carve-Outs Are Retrospective
 
-Apply a rule to the whole named set. A carve-out, exclude list, unmanaged set, or grandfather
-clause exists only to fix a problem already experienced in this repository. Name that failure
-when adding the carve-out. MUST NOT add one because a change might break later.
+Apply a rule to the whole named set. When the user names *everything*, that set is the work.
+A smallest-slice reading of a whole-set instruction is a defect.
+
+Implement one *uniform* *composed* path. A filter, except list, unmanaged set, grandfather
+clause, or hardcoded special case exists only to fix a problem already experienced in this
+repository. Name that failure when adding it. MUST NOT add one because a change might break
+later.
+
+### XXVI. Skill Evaluation Uses the Weakest Sufficient Model
+
+Skill evaluation, behavioral testing, benchmarking, and related validation MUST use the weakest
+available model that can complete the task. Evaluation prompts and context MUST be clear,
+concise, and focused so success demonstrates instruction quality rather than excess model
+capability. The `skill-creator` workflow MUST be used only when modifying agent skills; other
+agent-facing or project changes MUST use their applicable workflow. This isolates instruction
+quality from model strength and keeps workflow selection bounded.
+
 
 Sync Impact Report (2026-09-18): MAJOR 3.0.0. Redefined X, XV, XVII and Operating Boundaries: four-line canon; file what those lines make canon; no approval wait; done-summary after green. `AGENTS.md` points. Skills lose Work-gate headers. `AGENT001`–`AGENT003` encode the contract. Wiki, Vale, and templates unchanged except wait language.
 
 Sync Impact Report (2026-09-19): PATCH 3.0.1. Clarified III: filing a new named campaign page is Campaign Work and MUST complete that kind's owner skill before the page is filed. Routing tables stay in `AGENTS.md`. No principle added or renamed. Wiki, Vale, and templates unchanged.
+
+Sync Impact Report (2026-09-19): PATCH 3.0.2. Clarified XXV: the user's named set is the work set; shrinking it with filters, hardcoded special cases, or a smallest-slice reading is a carve-out. Default is one uniform composed path. `AGENTS.md` operationalizes. No principle added or renamed.
 
 ## Operating Boundaries
 
@@ -226,4 +251,4 @@ Versioning: MAJOR (remove/redefine principle), MINOR (add principle/section), PA
 Compliance reviews check proposed work against this constitution before merge. Project context:
 `AGENTS.md`. Harness behavior: `.omp/AGENTS.md`, `CODEX.md`, `CLAUDE.md`, `GROK.md`.
 
-**Version**: 3.0.1 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-19
+**Version**: 3.1.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-19

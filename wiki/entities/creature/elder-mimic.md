@@ -20,10 +20,15 @@ type: creature
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: ""
+role: ""
+cr: ""
 ---
 # Elder Mimic
 
-## Stats & Combat
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -72,17 +77,23 @@ bonus_actions:
 > It smells of pipe smoke and old oil, and the leather at the armrest gives a fraction more than good leather should.
 
 
-## Description
+## Biology
+
+**Description.**
 
 A mimic old and clever enough to have learned that furniture stays in service longer than chests. Sailors tell the standard mimic stories: it wants to look like treasure and hates fire, so crews check every chest before opening it. Nobody tells that story about a chair, and there's no folk warning for this one, because nobody's had reason to write it yet.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 Most mimics don't live long enough to grow clever. The first sword swung at an unattended chest cuts down anything young that resembles treasure. Mimics that endure learn the lesson early and permanently: stop being a chest. This one picked furniture instead, patient enough to sit unclaimed for decades wherever nobody thinks to search, feeding on scraps and vermin between the rare meals that come to it. Age sharpened its judgment more than its hunger. A disguise that has fooled a hundred taverns' worth of drunks and dockhands knows which room to sit in and which move gets it carried somewhere better.
 
 It did not work the lesson out on its own. It learned the doctrine from an [[island mimic]], one of its own kind grown past any disguise smaller than a coastline, and then it left. Every patient decade since has been a thing running, and it has never once been back inside sight of that coast.
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
@@ -91,6 +102,6 @@ It did not work the lesson out on its own. It learned the doctrine from an [[isl
 | Grab it and throw it (a Tavern Brawler habit) | It gets kept instead of thrown | The chair has a plan for whoever keeps it. Adhesive leaves them stuck the instant they mean to use it | [[delmar-fisk]] |
 | Corner it with every exit covered | It has nowhere left to reshape into | It abandons the chase and fights for real instead of shape-shifting away | No direct link. |
 
-## Prepped Reveals
+**Prepped Reveals.**
 
 The chair waits for someone to touch it, then bites once and disappears before anyone can pin it down. Left unhunted, it keeps feeding on whatever's aboard. Ration sacks turn up torn, rope ends turn up bitten, and sooner or later a crew member wakes with a bite mark and no memory of what did it. It isn't trying to kill anyone aboard, but it doesn't need to try hard to hurt one. That gives the crew of the *[[Uncertainty]]* a reason to run it down that has nothing to do with Delmar's pride.

@@ -6,6 +6,14 @@ import json
 from pathlib import Path
 from typing import Any
 
+def _action_name(value: Any) -> str | None:
+    if isinstance(value, str):
+        return value
+    if isinstance(value, dict):
+        name = value.get("kind") or value.get("action") or value.get("name")
+        return name if isinstance(name, str) else None
+    return None
+
 ALLOWED_ACTIONS = frozenset({"delete_redirect_stub", "repair_links", "replace_index_entry", "update_manifest_identity"})
 
 
@@ -28,8 +36,8 @@ def build_plan(vault: str | Path, findings: dict[str, Any], *, scope: dict[str, 
         for finding in group:
             if not isinstance(finding, dict) or finding.get("repair_class") != "deterministic_repair":
                 continue
-            action = finding.get("repair_action") or finding.get("action")
-            if action not in ALLOWED_ACTIONS:
+            action = _action_name(finding.get("repair_action") or finding.get("action"))
+            if not action or action not in ALLOWED_ACTIONS:
                 continue
             target = finding.get("file") or finding.get("page")
             if not target:

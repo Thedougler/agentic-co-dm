@@ -6,7 +6,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Callable
 
-from .manifest_ops import ManifestTransition, apply_transition
+from .manifest_ops import ManifestTransition
+
 from .mutations import MutationOp, atomic_write, resolve_mutation, validate_non_overlapping
 
 @dataclass
@@ -117,7 +118,10 @@ class Transaction:
             if runner is None:
                 script = self.vault.parent / "scripts" / "qmd-hook.sh"
                 if script.is_file():
-                    runner = lambda: subprocess.run([str(script)], cwd=self.vault.parent, check=False).returncode
+                    def run_qmd_hook() -> int:
+                        return subprocess.run([str(script)], cwd=self.vault.parent, check=False).returncode
+
+                    runner = run_qmd_hook
             if runner is not None:
                 code = int(runner())
                 finalization["qmd_exit_code"] = code

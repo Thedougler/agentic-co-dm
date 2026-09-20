@@ -21,10 +21,18 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Reef Shark
 
-## Stats & Combat
+> [!narration] Narration
+>
+
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -55,15 +63,21 @@ actions:
 **Wants:** Feed without exposing itself alone — a reef shark presses an attack only once its pack already outnumbers whatever's in the water with it.
 **Morale:** The pack breaks off the instant one of its members drops, or the moment the numbers it counted on stop holding.
 
-## Description
+## Biology
+
+**Description.**
 
 A Reef Shark is smaller and warier than the open-water [[hunter-shark]], built for tight channel work instead of open chase. Alone it's a minor hazard, closer to scavenger than predator. Pack Tactics is what changes the math: four or five hunting the same channel together turn a routine reef crossing into a real fight, each shark pressing an opening the moment another draws blood.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 Reef sharks hold the shallow channels of the [[central-strait]] and the reef rim around the [[sunken-crown]]'s Blue Hole, wherever the current funnels baitfish through a gap narrow enough for a pack to work together. A drafted Session 01 beat built around a reef-shark ambush is staged in these same waters.
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|

@@ -20,12 +20,21 @@ Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/session
 ## Purpose
 
 A Cliffhanger changes the **physical situation** — position, resources, safety,
-time. It is a **contest whose outcome stays in doubt** up to the end.
-Cliffhangers test what Developments revealed: a Chase tests the escape route
-a clue identified, a Battle tests the alliance a negotiation built. Keep them
-short, front-load the threat, and let them resolve. Save the strongest for the
-Climax — early Cliffhangers send weaker foes that teach strengths and
-weaknesses; later ones raise stakes as both sides invest more.
+time. It serves two purposes: it **speeds up the plotline** by increasing the
+pace, and it **injects a note of danger** that wakes the audience. It is a
+**contest whose outcome stays in doubt** up to the end. Cliffhangers test what
+Developments revealed: a Chase tests the escape route a clue identified, a
+Battle tests the alliance a negotiation built. Keep them short, front-load the
+threat, and let them resolve.
+
+Scale opposition across the arc. Early Cliffhangers send weaker foes that
+teach strengths and weaknesses — the party learns what works and what hurts.
+Later Cliffhangers raise stakes as both sides invest more. Save the strongest
+pressure for the Climax. Opposition scaling when combat is the contest:
+grunts (outnumber 3:1, lesser skill) → minions (2:1, slightly weaker) →
+henchmen (equal numbers, equal or greater skill) → the principal antagonist
+(stronger, backed by henchmen). This ladder is a guideline, not a mandate —
+fiction selects the level.
 
 Cliffhanger after Cliffhanger dulls danger faster than it builds excitement.
 When a request asks for consecutive Cliffhangers without Developments between
@@ -46,22 +55,37 @@ partial result; never lock the ending.
 
 ## How to fill a Cliffhanger
 
-1. **Choose the card.** Read [references/cliffhanger-cards.md](references/cliffhanger-cards.md).
+1. **Read the entry state.** Read the previous beat's carry-forward as your
+   opening: what changed, what the party committed to, and the continuity
+   change. The Cliffhanger's trigger inherits this world-state — the
+   Development's revealed knowledge, shifted alliances, or new constraints
+   become the contest's setup.
+
+2. **Choose the card.** Read [references/cliffhanger-cards.md](references/cliffhanger-cards.md).
    Pick by fiction trigger.
 
-2. **Test a thread.** Name the live thread this Cliffhanger tests. Testing
+3. **Test a thread.** Name the live thread this Cliffhanger tests. Testing
    nothing a Development revealed is a random encounter; testing an abandoned
    thread is a railroad.
 
-3. **Write the situation.** Name trigger, actors, stakes, visible information,
+4. **Write the situation.** Name trigger, actors, stakes, visible information,
    and at least two viable player responses. Theatre of the mind owns
-   `[!narration]` for spoken text.
+   `[!narration]` for spoken text. Terrain produces mechanical consequences —
+   cover, movement cost, visibility limits, unstable ground — beyond flavor.
+   When multiple factions are present, each has an objective independent of
+   the party; the party can choose sides, exploit the conflict, or avoid it.
 
-4. **Prepare the polarity handoff.** Won → Development (new options). Lost →
-   Development (new constraints) or Retreat. Do not write the next beat — name
-   the trigger and type only.
+5. **Prepare the polarity handoff.** Won → Development (new options). Lost →
+   Development (new constraints) or Retreat. State the **carry-forward**: what
+   changed in the physical situation (positions, resources, safety, time,
+   injuries), what the contest proved or disproved, and the **continuity
+   change** — the observable world-state shift the next Development's opening
+   inherits. The Development's writer reads this as their entry state and
+   trigger. How the Scene Resolves IS the next beat's opening — a handoff
+   that requires a time-skip, teleport, or dropped consequence is a broken
+   transition.
 
-5. **Name what happens if they ignore, fail, or redirect.** The world updates.
+6. **Name what happens if they ignore, fail, or redirect.** The world updates.
    Ignoring does not pause it. Failing changes the situation against the party.
 
 ## Named seams
@@ -77,3 +101,4 @@ Opening another type-card catalog for any other reason is a defect. Chart
 assembly, polarity rules, time budget, thread planting, escalation, recompute,
 and the session plan belong to `session-beats`. Spoken player text belongs to
 theatre of the mind.
+

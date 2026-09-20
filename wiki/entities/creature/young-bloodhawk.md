@@ -35,6 +35,7 @@ relationships:
 > Charcoal juveniles trail the adult in a loose file. Four wings, a torn red crest, and oversize talons mark a still-thin frame. They make no calls. Each stoops only long enough to shove a flushed body down, then claws back into the adult's lane.
 
 ## Statblock
+
 ![[young-bloodhawk-of-aruhe-flight.jpg|Young Bloodhawk over Aruhe]]
 
 ```statblock
@@ -74,12 +75,14 @@ actions:
 
 ## Behavior
 
+
 - **Habitat.** Open sky over [[aruhe]] / [[hungry-isle]]. It favors open water bowls, reef gaps, river cuts, canopy breaks, and sunlit grass rims. It will not chase under closed canopy or into eight-foot grass.
 - **Behavior.** It holds station behind an adult [[bloodhawk]]. When the adult tears prey from cover, the juvenile drops on whatever is left in the open.
 - **Diet.** Flushed fish, birds, and small land animals first. It follows the adult rather than fighting over a big kill.
 - **Social Structure.** It stays in the adult line until it can own a sky lane. Several may chase one flush, each peeling toward a different exposed body. They do not form a coordinated pack.
 
 ## Tactics
+
 
 - **Signs.** Extra wing-shadows behind a larger bird, small crimson feathers in canopy, and narrow talon cuts beside adult strikes.
 - **Instincts.** It keys on already-flushed bodies, noise, and flyers closing on the adult or other young. It breaks off when prey vanishes into canopy, tall grass, or moving water.
@@ -88,4 +91,7 @@ actions:
 - **Aftermath.** Small crimson feathers, paired gouges in stone or bark, a short fall scar into bruised grass, split fruit, or a Prone body under the adult's shadow.
 
 ## Art
+
+### Token
+
 ![[young-bloodhawk-of-aruhe-token.jpg|Young Bloodhawk FoundryVTT token]]

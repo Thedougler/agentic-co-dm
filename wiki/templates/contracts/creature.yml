@@ -1,10 +1,41 @@
-version: 1
+version: 2
 template: creature.md
 type: creature
-sections: []
+sections:
+  - heading: "{{title}}"
+    level: 1
+    required: true
+  - heading: "Statblock"
+    level: 2
+    required: true
+  - heading: "Visual reference"
+    level: 2
+    required: false
+  - heading: "Biology"
+    level: 2
+    required: false
+  - heading: "Behavior"
+    level: 2
+    required: true
+  - heading: "Tactics"
+    level: 2
+    required: true
+  - heading: "Art"
+    level: 2
+    required: false
+  - heading: "Token"
+    level: 3
+    parent: "Art"
+    required: false
 repeatable: []
+layout:
+  statblock:
+    image_position: immediately_before_fence
+    max_images_before_fence: 1
+  art:
+    embeds_require_subsections: true
 callouts:
   allowed: [narration, mechanic, secret]
 frontmatter:
   required: [title, category, tags, sources, created, updated, type, lifecycle, reveal]
-  optional: [campaign, visibility, kind, aliases, summary]
+  optional: [campaign, visibility, kind, aliases, summary, region, role, cr]

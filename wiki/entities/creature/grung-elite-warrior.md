@@ -27,14 +27,26 @@ relationships:
     type: related_to
   - target: "[[verdant-teeth]]"
     type: related_to
+region: ""
+role: ""
+cr: ""
 ---
 # Grung Elite Warrior
 
-## Look
+> [!narration] Narration
+>
+
+## Statblock
+
+## Visual reference
+
+**Look.**
 
 Source is silent beyond Small grung humanoid on the fight sheet: natural armor AC 13, climb speed, and poisoned dagger or shortbow.
 
-## Runnable sheet
+## Behavior
+
+**Runnable sheet.**
 
 CR 2. Amphibious; poisonous skin (DC 12 Constitution or poisoned); Standing Leap 25/15 feet; Multiattack with dagger or shortbow dealing poison damage; Mesmerizing Chirr (Recharge 6) stuns hearing humanoids and beasts in 15 feet (DC 12 Wisdom), grung immune.
 
@@ -81,16 +93,18 @@ actions:
     desc: "The grung makes a chirring noise to which grung are immune. Each humanoid or beast within 15 feet of the grung that can hear it must succeed on a DC 12 Wisdom saving throw or be stunned until the end of the grung's next turn."
 ```
 
-## Life
+**Life.**
 
 Habitat fits [[grung-clans]] and the [[verdant-teeth]] closed rainforest system. Habits, diet, and social role beyond elite warrior kit: Source is silent on this sheet.
 
-## Hunt
-
-Signs: poisonous contact, leap range, and a chirr that stuns non-grung listeners. Instincts: close or shoot with poisoned weapons; recharge Mesmerizing Chirr against clustered foes. Opening: Multiattack into exposed targets. Shut-down: poison immunity or distance beyond leap and bow. Aftermath: stunned victims and poisoned wounds among survivors.
-
-## Connections
+**Connections.**
 
 - [[grung-clans]]
 - [[verdant-teeth]]
 - [[Simone]]
+
+## Tactics
+
+**Hunt.**
+
+Signs: poisonous contact, leap range, and a chirr that stuns non-grung listeners. Instincts: close or shoot with poisoned weapons; recharge Mesmerizing Chirr against clustered foes. Opening: Multiattack into exposed targets. Shut-down: poison immunity or distance beyond leap and bow. Aftermath: stunned victims and poisoned wounds among survivors.

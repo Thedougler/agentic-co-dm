@@ -40,7 +40,8 @@ summary: ""
 # {{title}}
 
 > [!narration] Narration
-> Write a high-quality cold portrait in flowing prose for as long as the character requires. Cover face, body, clothing, posture, and at least one non-sight detail. Player-safe. No secrets, DCs, unearned names, or DM thesis.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: person. -->
+> Write a standalone cold portrait in flowing prose — as long as the character requires to be recognized at a table. Cover face, body, clothing, posture, and at least one non-sight detail (voice, gait, smell, habit). The portrait gives a player a picture they can sketch and distinguish from other PCs. Player-safe. No secrets, DCs, unearned names, or DM thesis.
 
 ## At a Glance
 

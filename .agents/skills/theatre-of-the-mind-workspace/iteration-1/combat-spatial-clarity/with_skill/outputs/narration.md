@@ -1,0 +1,3 @@
+The flooded temple spreads before you in knee-deep water, cold and still. A cracked stone bridge rises from the ledge beneath your feet, its surface broken—chunks fallen away, edges jagged. It stretches toward an altar platform beyond. The ceiling vaults high, swallowing torch-light in shadow.
+
+Three sahuagin wait at the altar. The nearest straightens, gill-slits flaring open, webbed hand reaching for a trident. Near the bridge to your right, behind a collapsed pillar, two more sahuagin surface. Water streams from their mottled scales as they advance toward you across the flooded floor, eyes fixed and unwavering.

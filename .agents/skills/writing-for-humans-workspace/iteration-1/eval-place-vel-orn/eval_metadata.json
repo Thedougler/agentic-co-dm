@@ -1,0 +1,12 @@
+{
+  "eval_id": 2,
+  "eval_name": "place-vel-orn",
+  "prompt": "Rewrite the Vel Orn place page for signal density and table use. The page is at wiki/entities/place/vel-orn.md. Cut dead weight, tighten the narration, make sure the DM can improv a scene here without inventing facts.",
+  "assertions": [
+    {"text": "At a Glance is usable in a five-second scan — hook, stakes, identity only.", "type": "qualitative"},
+    {"text": "The [!narration] block reads naturally aloud — no stacked sense-clauses, no category labels.", "type": "qualitative"},
+    {"text": "No Encyclopedia entry pattern — classifying what the place IS instead of placing the reader in it.", "type": "qualitative"},
+    {"text": "At least one body-scale geographic feature or affordance cue.", "type": "qualitative"},
+    {"text": "Wikilinks remain intact and resolve to the same targets.", "type": "structural"}
+  ]
+}

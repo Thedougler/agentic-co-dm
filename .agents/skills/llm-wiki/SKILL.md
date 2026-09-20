@@ -1,8 +1,8 @@
 ---
 name: llm-wiki
 description: >
-  Three-layer wiki architecture (raw → wiki → schema), page templates, provenance, trust model, and config resolution.
-  Use for wiki structure decisions, page format, or when a companion skill needs the foundational contract.
+  Three-layer wiki architecture (raw → wiki → schema), page templates, provenance, and trust model.
+  Use for wiki architecture, page templates, provenance markers, confidence/lifecycle, wiki environment variables, or a format/trust question the operating skill does not own.
 ---
 
 # LLM Wiki — Knowledge Distillation Pattern
@@ -349,7 +349,7 @@ Use the cheapest primitive that answers the question — **escalate only when in
 
 **Search commands:** prefer ripgrep (`rg`) when available; fall back to `grep`/`find`. Capitalized `Grep`/`Glob` are tool-generic primitives.
 
-Consumers: `wiki-query`, `cross-linker`, `wiki-lint`, `wiki-status` (insights). New vault-reading skills cite this section. Anti-patterns scanned by `scripts/context-waste-scan.py` — see `docs/agents/context-waste-method.md`.
+Consumers: `wiki-query`, `cross-linker`, `wiki-lint`, `wiki-status` (insights). New vault-reading skills cite this section. Anti-patterns scanned by `scripts/context-waste-scan.py` — see `docs/agents/context-waste-method.md`. First-turn file cost and ranked skill load: `wiki health` → `context`; follow `context.act`.
 
 ## QMD Index Freshness
 
@@ -415,7 +415,7 @@ STATE_DIR="$HOME/.obsidian-wiki/state/$VAULT_ID"
 
 Every skill's setup section should read:
 
-> **Resolve config** — follow the Config Resolution Protocol in `llm-wiki/SKILL.md`. Honor an inline `@name` override first, then walk up from CWD for `.env`, fall back to `~/.obsidian-wiki/config`, else prompt setup. This gives `OBSIDIAN_VAULT_PATH` and any tool-specific path overrides.
+> **Resolve config** — follow the Config Resolution Protocol in AGENTS.md. Honor an inline `@name` override first, then walk up from CWD for `.env`, fall back to `~/.obsidian-wiki/config`, else prompt setup. This gives `OBSIDIAN_VAULT_PATH` and any tool-specific path overrides.
 
 ## Environment Variables
 

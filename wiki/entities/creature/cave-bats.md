@@ -37,9 +37,11 @@ relationships:
 
 ## Statblock
 
+
 Source is silent on a finished combat sheet. Run as ecology and warning until an accepted sheet arrives.
 
 ## Behavior
+
 
 - **Habitat.** Skylights, wells, and [[lava-tubes]].
 - **Behavior.** Leave at dusk. Feed over the canopy. Mass flight is a warning.
@@ -47,6 +49,7 @@ Source is silent on a finished combat sheet. Run as ecology and warning until an
 - **Social Structure.** Colony.
 
 ## Tactics
+
 
 - **Signs.** Guano, dusk exits, and sudden whole-colony flight.
 - **Instincts.** Feed outside. Flee inward danger by emptying the roost.

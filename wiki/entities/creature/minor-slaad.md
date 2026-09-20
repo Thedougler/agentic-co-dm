@@ -21,10 +21,15 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Minor Slaad
 
-## Stats & Combat
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -58,11 +63,15 @@ actions:
 > A hunched, red-skinned shape wrenches free of the debris. Too large for a tadpole, too raw and unfinished for a grown slaad, it turns toward the nearest sound, skin sloughing off in wet ribbons with every step.
 
 
-## Description
+## Biology
+
+**Description.**
 
 A minor slaad is a tadpole that fed enough to accelerate past the larval stage without completing a full molt — stuck partway between tadpole and true adult, the same stalled state Otar himself is locked in between red and blue. Genuinely dangerous compared to a tadpole: it fights with real claws and real teeth, not a reflexive nip. Anyone who's fought or studied one knows it's still a runt by slaad standards — no true adult would tolerate the comparison.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 Not sapient enough to act without a stronger slaad nearby directing it; left alone, a minor slaad reverts to tadpole-like scavenging within days. Around Otar, that's never a problem — it fights in his shadow, using his attacks and the tadpole clutches he spawns as cover to close in on whatever he's already engaged.
 
@@ -74,12 +83,14 @@ Not sapient enough to act without a stronger slaad nearby directing it; left alo
 | Performance hooks | Skin still wet and half-formed, sloughing translucent tissue with every movement. |
 | Link of relevance | This is what a tadpole-infested host becomes — the same fate [[solange-barret|Solange]] suffered, scaled down to a single reclaimed body; a downed ally lost to a tadpole clutch rises as one of these under Otar's control. |
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
 | Peel it off the ally it's ganged up on | It's mid-Multiattack against an already-engaged target, using that fight as cover the way [[otar-the-foul]]'s own tadpole clutches do | It loses the opening it was waiting for and has to reposition before it can pile on again | [[otar-the-foul]] |
 
-## Prepped Reveals
+**Prepped Reveals.**
 
 A minor slaad that's reduced to 0 HP and searched still carries recognizable fragments of its original body (a signet ring fused into chitin, a familiar scar) — the DM's cue to confirm, on request, whose infested corpse it used to be.

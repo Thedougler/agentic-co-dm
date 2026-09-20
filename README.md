@@ -11,53 +11,70 @@ Agentic Co-DM is a skill-based toolkit for preparing and wrapping up tabletop RP
 
 Python dependencies are declared in `pyproject.toml`; Node development tools are declared in `package.json`. QMD is installed globally because the maintenance scripts invoke its `qmd` executable.
 
-## Installation and setup
+## First-time installation and setup
 
-1. Clone the repository:
+Run these steps once from a fresh checkout. On later sessions, start at [Verify the checkout](#verify-the-checkout).
+
+1. Install the host prerequisites:
+
+   - Python 3.12 or newer
+   - Node.js 22 or newer and npm
+
+   Use your operating system's package manager or the official installers. Confirm the versions:
+
+   ```bash
+   python3 --version
+   node --version
+   npm --version
+   ```
+
+2. Clone the repository:
 
    ```bash
    git clone <repository-url>
    cd agentic-co-dm
    ```
 
-2. Install `uv` if it is not already available:
+3. Install `uv` if it is not already available:
 
    ```bash
    curl -LsSf https://astral.sh/uv/install.sh | sh
    ```
 
-   Restart the shell or add `~/.local/bin` to `PATH` if the installer requests it.
+   Restart the shell or add `~/.local/bin` to `PATH` if the installer requests it, then re-run `uv --version`.
 
-3. Install the Python dependencies, including the `dev` group that provides pytest:
+4. Install the locked Python dependencies and development tools:
 
    ```bash
    uv sync
    source .venv/bin/activate
    .venv/bin/python -m pytest --version
+   .venv/bin/ruff --version
+   .venv/bin/pyright --version
    ```
 
-   `uv sync` creates the locked project environment. If pytest is missing, run `uv sync` again before `npm test`.
+   `uv sync` creates `.venv` with the runtime and development dependencies. If a tool is missing, run `uv sync` again.
 
-4. Install the Node development tools:
+5. Install the Node development tools:
 
    ```bash
    npm install
    ```
 
-5. Install Spec Kit. This repository is already initialized for the `omp` integration; do not run `specify init` over the checkout.
+6. Install Spec Kit. This repository is already initialized for the `omp` integration; do not run `specify init` over the checkout.
 
    ```bash
    uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
    specify --version
    ```
 
-6. Create the local environment file:
+7. Create the local environment file:
 
    ```bash
    cp .env.example .env
    ```
 
-   Add the path to your Obsidian vault:
+   Set the path to your Obsidian vault:
 
    ```dotenv
    OBSIDIAN_VAULT_PATH=/absolute/path/to/your/vault
@@ -65,20 +82,20 @@ Python dependencies are declared in `pyproject.toml`; Node development tools are
 
    Keep the QMD defaults from `.env.example` unless you use a different index configuration. `.env` is ignored by Git.
 
-7. Install QMD:
+8. Install QMD:
 
    ```bash
    npm install --global @tobilu/qmd
    qmd --version
    ```
 
-8. Initialize and update the project search index:
+9. Initialize and update the project search index:
 
    ```bash
    ./scripts/qmd-maintain.sh
    ```
 
-   QMD indexes this repository’s `wiki/` collection first. The maintenance script also expects the configured legacy campaign collections to exist; update those collection paths in `scripts/qmd-maintain.sh` if they are not available on your workstation.
+   QMD indexes this repository's `wiki/` collection first. The maintenance script also expects the configured legacy campaign collections to exist; update those collection paths in `scripts/qmd-maintain.sh` if they are not available on your workstation.
 
 ## Verify the checkout
 
@@ -88,6 +105,7 @@ Run these checks from the repository root after activating `.venv`:
 python3 tools/check_wiki_pages.py
 specify --version
 qmd status
+npm run check:python
 npm test
 npm run lint:markdown -- --no-globs README.md
 ./scripts/wiki-maintain --report --summary-only

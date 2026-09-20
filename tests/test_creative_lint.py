@@ -1,7 +1,9 @@
 from __future__ import annotations
 
 import json
+import subprocess
 from pathlib import Path
+
 
 import pytest
 
@@ -74,6 +76,34 @@ def test_vale_deprecated_output_gets_typed_repair():
     assert findings[0].severity == "REPAIR"
     assert findings[0].repair_class == "deterministic_repair"
     assert findings[0].repair_action["kind"] == "delete_section"
+
+def test_vale_batches_merge_results(monkeypatch, tmp_path):
+    from tools.creative_lint import vale_adapter
+
+    registry = Registry.load(ROOT / "rules" / "registry.yml")
+    files = [tmp_path / f"page-{index}.md" for index in range(3)]
+    calls: list[tuple[str, ...]] = []
+
+    def fake_vale(binary, root, batch, style):
+        calls.append(tuple(path.name for path in batch))
+        payload = {
+            path.name: [{"Check": "CoDM.AGENCY001", "Line": index + 1}]
+            for index, path in enumerate(batch)
+        }
+        return subprocess.CompletedProcess(["vale"], 1, json.dumps(payload), ""), 1
+
+    monkeypatch.setattr(vale_adapter, "VALE_BATCH_SIZE", 2)
+    monkeypatch.setattr(vale_adapter, "_resolve_vale", lambda root, executable: "vale")
+    monkeypatch.setattr(vale_adapter, "_vale_json", fake_vale)
+    monkeypatch.setattr("tools.creative_lint.vale_vocab.refresh_vocab", lambda root, vault: vault)
+
+    findings, warnings = vale_adapter.run_vale(files, registry, root=tmp_path, vault=tmp_path)
+
+    assert not warnings
+    assert len(findings) == len(files)
+    assert {finding.location["file"] for finding in findings} == {path.name for path in files}
+    assert sorted(calls) == [("page-0.md", "page-1.md"), ("page-2.md",)]
+
 
 def test_engine_finds_and_filters_agency_rule():
     registry = Registry.load(ROOT / "rules" / "registry.yml")
@@ -258,3 +288,69 @@ def test_state_overrides_applicability_and_lifecycle(monkeypatch, tmp_path):
     engine = LintEngine(registry, bundles, root=ROOT, vault=tmp_path)
     assert engine.run(paths=[page], rule_ids={"SCENE001"}).findings
     assert not engine.run(paths=[page], rule_ids={"SCENE001"}, state={"type": "item"}).findings
+
+
+def test_linear_template_flags_column_wrappers(tmp_path):
+    from tools.creative_lint.template_profile import compare_page
+
+    template = tmp_path / "creature.md"
+    template.write_text(
+        "---\ntitle: t\ntype: creature\n---\n# T\n\n> [!narration] Narration\n> look\n\n"
+        "## Statblock\n```statblock\n```\n## Behavior\n## Tactics\n",
+        encoding="utf-8",
+    )
+    page = tmp_path / "bear.md"
+    page.write_text(
+        "---\ntitle: Bear\ntype: creature\n---\n# Bear\n## Statblock\n"
+        "````col\n```col-md\nflexGrow=1\n```\n## Behavior\n## Tactics\n",
+        encoding="utf-8",
+    )
+    evidence = " ".join(item.evidence for item in compare_page(page, template, root=tmp_path))
+    assert "col" in evidence
+
+
+def test_bear_elk_flags_multiple_statblock_images():
+    from tools.creative_lint.template_profile import template_conformance
+
+    _, findings = template_conformance(ROOT / "wiki/entities/creature/bear-elk.md", root=ROOT)
+    assert any(item.rule_id == "TMPL006" for item in findings)
+
+
+def test_bloodhawk_allows_one_statblock_image():
+    from tools.creative_lint.template_profile import template_conformance
+
+    _, findings = template_conformance(ROOT / "wiki/entities/creature/bloodhawk.md", root=ROOT)
+    assert not any(item.rule_id in {"TMPL006", "TMPL007"} for item in findings)
+
+
+def test_creature_layout_contract_flags_multiple_statblock_images(tmp_path):
+    from tools.wiki_ops.template_contracts import check_layout_conformance, load_contract
+
+    contract = load_contract(ROOT / "wiki/templates/contracts/creature.yml")
+    page = tmp_path / "creature.md"
+    page.write_text(
+        "## Statblock\n![[overview.jpg]]\n![[second.jpg]]\n```statblock\n```\n"
+        "## Art\n### Reference\n![[extra.jpg]]\n",
+        encoding="utf-8",
+    )
+    findings = check_layout_conformance(page, page.read_text(encoding="utf-8"), contract.layout)
+    assert {item["rule_id"] for item in findings} == {"TMPL006"}
+
+def test_creature_layout_contract_flags_misplaced_images(tmp_path):
+    from tools.wiki_ops.template_contracts import check_layout_conformance, load_contract
+
+    contract = load_contract(ROOT / "wiki/templates/contracts/creature.yml")
+    page = tmp_path / "creature.md"
+    page.write_text(
+        "## Statblock\n```statblock\n```\n![[overview.jpg]]\n"
+        "## Art\n![[extra.jpg]]\n",
+        encoding="utf-8",
+    )
+    findings = check_layout_conformance(page, page.read_text(encoding="utf-8"), contract.layout)
+    assert {item["rule_id"] for item in findings} == {"TMPL006", "TMPL007"}
+
+def test_bloodhawk_keeps_linear_creature_layout():
+    from tools.creative_lint.template_profile import template_conformance
+
+    _, findings = template_conformance(ROOT / "wiki/entities/creature/bloodhawk.md", root=ROOT)
+    assert not any("Extra formatting marker" in item.evidence for item in findings)

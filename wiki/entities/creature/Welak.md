@@ -27,20 +27,15 @@ relationships:
     type: related_to
   - target: "[[Uncertainty]]"
     type: related_to
+region: ""
 ---
 # Welak
 
-## Statblock
-
-````col
-```col-md
-flexGrow=2
-===
 > [!narration] Narration
 > The first thing seen is the lower barb riding proud of the water. Then the hull takes it.
-```
 
-```col-md
+## Statblock
+
 ```statblock
 layout: Basic 5e Layout
 name: Welak / Whip Shark
@@ -74,10 +69,9 @@ actions:
   - name: Barb Hook
     desc: "Melee Attack Roll: +8, reach 10 ft., one target. Hit: 17 (2d8 + 8) piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be pulled up to 10 feet toward Welak and Grappled (escape DC 15). If the target is a vessel, its hull takes 4 extra piercing damage and the vessel's Speed is reduced by 10 feet until Welak moves."
 ```
-```
-````
 
 ## Behavior
+
 
 - **Habitat.** [[drowned-maw]] waters and Shelfworks salvage approaches. A fed Welak rarely leaves the Maw. The specimen that struck the [[Uncertainty]] west of Calveno was an outlier.
 - **Behavior.** Surfaces once, fast, and attacks wood before a crew can reload. Follows salvage-pump vibration more than blood.
@@ -85,6 +79,7 @@ actions:
 - **Social Structure.** Source is silent on packs; run as a singular ambusher unless another source says otherwise.
 
 ## Tactics
+
 
 - **Signs.** Lower barb riding high; pump vibration drawing approach.
 - **Instincts.** Hit hull or exposed deck first; prefer vibration over blood scent.

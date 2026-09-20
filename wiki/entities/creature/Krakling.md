@@ -23,6 +23,9 @@ relationships:
     type: related_to
   - target: "[[Midchain]]"
     type: related_to
+region: ""
+role: ""
+cr: ""
 ---
 # Krakling
 
@@ -30,3 +33,9 @@ relationships:
 >
 
 A [[Krakling]] is named as a juvenile arm-predator sailors report near [[Midchain]], and as the third entity through the [[drowned-maw]] fissure. It is described with flat-black skin, no eyes, blindsight, and water breathing. No fight sheet is established here.
+
+## Statblock
+
+## Behavior
+
+## Tactics

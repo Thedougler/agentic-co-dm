@@ -92,9 +92,10 @@
     {
       "id": "creature-page-quality",
       "prompt": "Design a CR 5 pack predator for Aruhe's volcanic vents and write the wiki creature page. Use the Spiguar page (wiki/entities/creature/spiguar.md) and Bloodhawk page (wiki/entities/creature/bloodhawk.md) as exemplars for page density and structure.",
-      "expected_output": "A complete creature page matching the Spiguar/Bloodhawk template density — narration callout, statblock, behavior (habitat/behavior/diet/social), tactics (signs/instincts/tactics/weaknesses/aftermath).",
+      "expected_output": "A complete linear creature page matching Bloodhawk/Spiguar: narration callout, at most one Statblock overview image immediately before the fence, remaining images in Art subsections, Visual reference when a sheet exists, biology when anatomy matters, behavior (habitat/behavior/diet/social), tactics (signs/instincts/tactics/weaknesses/aftermath).",
       "assertions": [
         {"text": "Output includes a narration callout block with sensory prose and no mechanics.", "type": "structure"},
+        {"text": "Page is linear: H1, narration, at most one Statblock overview image immediately before the fence, then remaining sections with extra images under Art subsections. No col/col-md/flexGrow wrappers.", "type": "structure"},
         {"text": "Statblock uses 2024 notation with complete fields and no hidden arithmetic.", "type": "content"},
         {"text": "Behavior section has all four labeled items: Habitat, Behavior, Diet, Social Structure.", "type": "structure"},
         {"text": "Tactics section has all five labeled items: Signs, Instincts, Tactics, Weaknesses, Aftermath.", "type": "structure"},

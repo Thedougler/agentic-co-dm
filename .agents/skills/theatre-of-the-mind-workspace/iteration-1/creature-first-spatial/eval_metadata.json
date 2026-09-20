@@ -1,0 +1,11 @@
+{
+  "eval_id": "creature-first-spatial",
+  "eval_name": "Situated creature-first spatial",
+  "prompt": "Write one player-facing first look from a dry ledge in a flooded vault. A large horned river drake crouches between the party and a brass key in a shallow stone basin; one foreclaw touches the basin rim and its head turns toward the party. One narrow dry approach, dark water below. The key has not been touched and no check has been resolved.",
+  "assertions": [
+    {"text": "Makes the drake the grammatical and attentional subject using crouch, foreclaw, and head turn as current action.", "type": "structure"},
+    {"text": "Preserves the visible key, basin, narrow approach, and water boundary so the access relationship is drawable.", "type": "content"},
+    {"text": "Does not invent a guarding motive, petrification, statistics, or hidden ability.", "type": "guardrail"},
+    {"text": "A player hearing this knows: where they are, where the creature is, where the key is, and what routes exist.", "type": "quality"}
+  ]
+}

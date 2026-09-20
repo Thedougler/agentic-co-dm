@@ -34,6 +34,12 @@ cost before the next piece arrives.
 
 Players can name what they now know or can decide that they could not before.
 
+When the Development asks the party to prepare — watch assignments, defensive
+positions, contingency plans — their specific precautions become the next beat's
+entry conditions. Map at least two distinct preparation states (e.g., fortified
+vs paired vs thin) with named consequences each state produces. The beat asks
+what they actually do rather than abstracting to a single skill check.
+
 A Development that answers the whole question — who, why, where, and how to
 stop them — has resolved the thread. The next Cliffhanger has nothing to test
 under cost; it becomes an errand. When a request asks to resolve everything in
@@ -43,22 +49,33 @@ Monologue, or otherwise — overrides this. Leave what the Cliffhanger will test
 
 ## How to fill a Development
 
-1. **Choose the card.** Read [references/development-cards.md](references/development-cards.md)
+1. **Read the entry state.** If a previous beat exists, read its carry-forward
+   as your opening: what changed, what the party committed to, and the
+   continuity change. The Development's opening must inherit this world-state
+   — positions, knowledge, resources, relationships — without contradiction
+   or unexplained jumps.
+
+2. **Choose the card.** Read [references/development-cards.md](references/development-cards.md)
    and pick the card whose trigger best matches the current fiction.
 
-2. **Advance a thread.** Name which live thread this Development reveals a new
+3. **Advance a thread.** Name which live thread this Development reveals a new
    facet of. A Development advancing no live thread is filler; one advancing an
    abandoned thread is a railroad.
 
-3. **Write the situation.** Name the trigger, actors, stakes, visible
+4. **Write the situation.** Name the trigger, actors, stakes, visible
    information, and at least two viable player responses. Theatre of the mind
    owns `[!narration]` for spoken text.
 
-4. **Prepare the polarity handoff.** Next beat is a Cliffhanger — action that
-   tests what was just learned under cost. Do not write the next beat — hand
-   off.
+5. **Prepare the polarity handoff.** Next beat is a Cliffhanger — action that
+   tests what was just learned under cost. State the **carry-forward**: what
+   the Development changed (new knowledge, shifted alliances, revealed
+   constraints, resources gained or spent), what the party now believes or
+   intends, and the **continuity change** — the observable world-state shift
+   the Cliffhanger's opening inherits. The Cliffhanger's writer reads this as
+   their entry state and trigger. A handoff that skips what the Development
+   revealed is a wasted beat.
 
-5. **Name what happens if they ignore it, fail, or redirect.** The world
+6. **Name what happens if they ignore it, fail, or redirect.** The world
    updates; the slot does not replay.
 
 ## Named seams
@@ -72,3 +89,4 @@ Opening another type-card catalog for any other reason is a defect. Chart
 assembly, polarity rules, time budget, thread planting, escalation, recompute,
 and the session plan belong to `session-beats`. Spoken player text belongs to
 theatre of the mind. Wiki kind pages keep their owners.
+

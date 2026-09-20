@@ -21,10 +21,18 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Dravosi Alchemist
 
-## Stats & Combat
+> [!narration] Narration
+>
+
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -67,20 +75,26 @@ actions:
 **Morale:** breaks the instant her bandolier runs dry or she drops below half HP — without compounds left to throw, she has nothing but a dagger and no reason left to stand.
 
 
-## Description
+## Biology
+
+**Description.**
 
 A [[dravosi-crown]] warrant officer responsible for shipboard stores, medicinals, and, when the situation calls for it, weaponised compounds. She works the same boarding parties as the Crown's [[dravosi-deckhand]]s and [[dravosi-enforcer]]s, reporting up through officers like [[barnaby-rook]]. She does not think of herself as a fighter. She thinks of herself as the officer who keeps the hold stocked and the wounded patched, and who reached for a canister only because something at the gangplank meant to take both.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 Dravosi alchemists ride Crown patrol vessels along [[Calder's Tooth]] and the [[central-strait]], where they keep a ship's stores, dose the injured, and turn cargo-hold chemistry into canisters and flasks the moment a boarding turns hostile. Trained to treat every escalation as a supply problem first, she reaches for the bandolier before the dagger, and logs every compound she burns as inventory loss rather than a kill.
 
-## Toy Chest
+**Session Log.**
+
+- Session 01: deployed a [[Grung]] toxin canister at the gangplank standoff during the boarding of the [[Saltwright]]; [[jean-claude-tabarnack|Jean-Claude]] and [[perrin-black-jaw|Perrin]] resisted, [[crissdalynn-khinriss|Crissdalynn]]'s [[Gust]] redirected the cloud back, and the crew of the Saltwright brought her down (`vault/episodes/001/transcript-dm-notes.md:30,32`).
+
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
 | Kill or incapacitate her before her bandolier is spent | She still carries unused canisters or flasks | The bandolier and its remaining compounds can be looted and reused | [[dravosi-crown]] |
-
-## Session Log
-
-- Session 01: deployed a [[Grung]] toxin canister at the gangplank standoff during the boarding of the [[Saltwright]]; [[jean-claude-tabarnack|Jean-Claude]] and [[perrin-black-jaw|Perrin]] resisted, [[crissdalynn-khinriss|Crissdalynn]]'s [[Gust]] redirected the cloud back, and the crew of the Saltwright brought her down (`vault/episodes/001/transcript-dm-notes.md:30,32`).

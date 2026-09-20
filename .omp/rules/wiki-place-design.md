@@ -5,4 +5,4 @@ scope: "tool:edit(wiki/entities/place/**), tool:write(wiki/entities/place/**), t
 interruptMode: always
 ---
 
-Read `skill://place-design`. Follow it for this write.
+Read `wiki/templates/place.md` and `skill://place-design`. Follow both for this write.

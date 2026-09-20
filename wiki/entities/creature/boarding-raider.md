@@ -21,12 +21,19 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Boarding Raider
 
-# Boarding Raider
+> [!narration] Narration
+>
 
-## Stats & Combat
+
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -63,15 +70,21 @@ actions:
 **Wants:** to hit someone hard enough to put them on the deck so a cutpurse can walk up behind. The raider does not care about the prize itself.
 **Morale:** fights until bloodied (half HP), then backs toward the extraction point and uses Shoulder Check to clear a lane.
 
-## Description
+## Biology
+
+**Description.**
 
 Broad and heavy, built for the first thirty seconds of a boarding action. Raiders wear studded leather over bare arms and carry a cutlass in each hand. They come over the rail at a dead run, shoulder-first, and their job is to put the first defender on the ground before the rest of the crew arrives.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 Boarding raiders fill the same role on a [[Midchain]] pirate cutter that a [[dravosi-enforcer]] fills on a Crown vessel: the heavy hand behind the lighter crew. Where the enforcer works hooks and gangplanks by Crown procedure, the raider works momentum and surprise. Most are former dock brawlers or failed prizefighters who found that the same skills pay better at sea.
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|

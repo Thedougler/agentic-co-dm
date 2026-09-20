@@ -24,7 +24,8 @@ summary: ""
 **Hook lands when.** State when the party is committed and moving. Give them clear direction.
 
 > [!narration] Open on
-> Write high-quality theatre of the mind in two to four sentences the DM can speak. Address the players as "you" and start at the first changed thing. Include the visible threat, relative position, concrete sensory details, at least one non-sight sense, and an obvious point of interaction. End on the reaction point. No secrets, DCs, unearned names, or hidden premise.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: situated moment → beat: hook. -->
+> Write a situated opening in two to four sentences the DM can speak aloud. Address the players as "you", present tense. Start at the first changed thing — the visible threat, relative position, concrete sensory details, at least one non-sight sense, and an obvious point of interaction. End on the reaction point: the last image is a windup the players can respond to. The opening seats the party in the space and gives them something live to act on. No secrets, DCs, unearned names, or hidden premise.
 
 ````col
 ```col-md

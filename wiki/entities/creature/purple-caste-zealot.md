@@ -21,8 +21,14 @@ provenance:
   ambiguous: 0.05
 base_confidence: 0.55
 tier: supporting
+region: ""
+role: ""
+cr: ""
 ---
 # Purple-Caste Zealot
+
+> [!narration] Narration
+>
 
 A CR 3 humanoid Grung, a battle-draught frenzied minion prepped as escort for lieutenants in the back half of the [[Calveno sewer magazine dungeon]]. It escorts [[ozzeth-the-twiceborn]] as part of the dungeon's mobile reserve, not tied to a specific room.
 
@@ -36,7 +42,9 @@ A CR 3 humanoid Grung, a battle-draught frenzied minion prepped as escort for li
 - [[grung-clans|Grung Clans (Faction)]]
 - [[Calveno Sewer Magazines]]
 
-## Stats & Combat
+## Statblock
+
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -81,15 +89,21 @@ reactions:
     desc: "When the zealot is reduced to 0 hit points, the lit slow-match falls into its remaining powder. Each creature within 5 feet of it must succeed on a DC 13 Dexterity saving throw or take 7 (2d6) fire damage. It fights to the death, and then a heartbeat past it. This does not trigger if the zealot's powder has been soaked."
 ```
 
-## Description
+## Biology
+
+**Description.**
 
 A purple-caste Grung marked by the same deep-violet caste coloring worn by [[purple-caste-enforcer|Purple-Caste Enforcers]], but heavier-built and toxin-hardened past the point of needing armor. It fights with a lit slow-match clenched in its teeth and two crude iron powder-charges, Crown ordnance skimmed from the toxin trade, slung at its hip, and carries a spear built for both melee reach and a thrown follow-up. The red flush under its skin marks the battle-draught working through it; anyone who's seen a Grung on Toxin Frenzy before knows the fight ends when the draught does, one way or the other.
 
-## Ecology
+## Behavior
+
+**Ecology.**
 
 Zealots are Purple-Caste Grung dosed on a red-caste battle-draught and staged as escort muscle, not raised as their own line. They're war-footing conscripts drafted from within [[grung-clans|Grung Clans]] territory in the reef-fringed rainforest of the [[verdant-teeth]], the same stock that supplies [[purple-caste-enforcer|Purple-Caste Enforcers]] and [[grung-elite-warrior|Grung Elite Warriors]]. Like every Grung, it's amphibious and needs to submerge at least an hour a day or take on Exhaustion, a dependency the [[Calveno sewer magazines]]'s flooded tunnels accommodate without effort. The same standing water that keeps a zealot healthy is what neutralizes its explosive threat if a fight turns against it.
 
-## Toy Chest
+## Tactics
+
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|

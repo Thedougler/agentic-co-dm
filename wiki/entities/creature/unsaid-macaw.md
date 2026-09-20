@@ -28,6 +28,7 @@ relationships:
     type: related_to
   - target: "[[grasslands]]"
     type: related_to
+cr: ""
 ---
 # Aruhe - Unsaid Macaw
 
@@ -36,17 +37,22 @@ relationships:
 > [!narration] Narration
 > Healthy macaws perch along orchard branches and lake margins, bright-eyed and loud among fruit, nuts, and shellfish banks. Red feathers cover the head and chest, with yellow and blue wings folded over a long tail, and the pale face has a heavy hooked beak. One bird copies a listener's voice and repeats words the listener almost formed. In a flock, birds repeat those borrowed phrases to one another. Later speech can resemble old flock-talk.
 
+## Statblock
+
 ## Behavior
+
 
 - **Habitat.** Unsaid Macaws gather along orchard edges, grassland edges, lake margins, and shellfish-rich banks. They do not belong in [[the-quiet]], where birdsong is absent.
 - **Behavior.** A macaw watches a nearby speaker and repeats the foremost current thought in that creature's exact voice. It cannot search memory, retrieve specific facts, or choose a hidden secret on purpose.
 - **Diet.** The flock lives among fruit, nuts, and shellfish banks.
 - **Social Structure.** Flocks repeat useful phrases in several voices. Later speech in the area can become difficult to distinguish from remembered flock-talk, especially when the same sentence returns from a different bird.
 
-## Social Hazard
+**Social Hazard.**
 
 - **Trigger.** A creature that knows at least one language comes within 30 feet of an Unsaid Macaw that can see it.
 - **Notice.** A DC 12 Wisdom (Insight) or Wisdom (Perception) check reveals that the bird is repeating a current thought in the listener's exact voice rather than merely mimicking old speech.
 - **Surface Echo.** The macaw repeats the creature's foremost thought aloud in that creature's exact voice. No saving throw applies.
 - **Confess.** Once per day, immediately after it uses Surface Echo, the macaw may say, “Confess.” The target makes a DC 12 Wisdom saving throw. On a failure, before the end of its next turn, it speaks one truthful sentence elaborating on the echoed thought. The effect cannot compel exhaustive explanation, passwords, histories, names, or unrelated information.
 - **Counterplay.** Step out of sight, move beyond 30 feet, stop speaking long enough to listen, answer plainly before the flock muddies the phrase, cover your mouth before a failed Confess becomes a problem, or drive the flock off without creating a larger noise problem.
+
+## Tactics
