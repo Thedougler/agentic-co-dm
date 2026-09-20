@@ -14,6 +14,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[otel-karn]]"
+kind: consumable
+rarity: common
+attunement: false
+owner: "[[Ysolde]]"
 summary: "The house drink at The Long Toast, dark rum poured with a joke about widows nobody on Otel Karn actually becomes."
 provenance:
   extracted: 0.85
