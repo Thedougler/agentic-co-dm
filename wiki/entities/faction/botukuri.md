@@ -19,6 +19,11 @@ type: faction
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+kind: clan
+status: active
+scope: local
+region: Sorn
+base: "[[Sorn]]"
 relationships:
   - target: "[[grung-clans]]"
     type: related_to
@@ -32,6 +37,10 @@ relationships:
 > [!narration] Public face
 > Botukuri is a Sorn farming clan that works seasonal flood-pulse lanes rather than a permanent town.
 
+````col
+```col-md
+flexGrow=2
+===
 ## At a Glance
 
 | | |
@@ -45,7 +54,10 @@ relationships:
 | **Current posture** | Working the seasonal farms. |
 
 > **DM thesis:** Botukuri's seasonal farm lanes make Sorn productive, mobile, and difficult to read as fixed territory.
-
+```
+```col-md
+flexGrow=1
+===
 ## At the Table
 
 - **They want:** They want to keep the seasonal flood-pulse farms working.
@@ -53,6 +65,10 @@ relationships:
 - **They pressure with:** Their seasonal routes depend on flood timing and local knowledge.
 - **They will not:** The source does not establish a formal boundary or taboo.
 - **Their tell:** They occupy working lanes seasonally instead of gathering in a permanent town.
+```
+````
+
+---
 
 ## Current State
 
@@ -63,6 +79,36 @@ relationships:
 - **Vulnerability.** Without a permanent settlement, the clan depends on usable flood routes and recut edges.
 - **Opportunity.** Anyone who learns the flood calendar can find or obstruct the lanes without searching for a town.
 
+---
+
+## Active Agenda
+
+**Goal.** Keep the seasonal flood-pulse farms working as the usable lanes change.
+
+**Why.** The forest is taking the next inland row, while flood timing already changes paths into channels.
+
+**Planned action.** Continue working the viable seasonal lanes and recut the edges that keep the farms usable.
+
+**Needs.** The clan needs usable flood routes, seasonal knowledge, and recut field edges.
+
+**Opposition.** Flood pulses and forest encroachment reduce stable fields and routes.
+
+**Next signal.** A working lane changes from a path to a channel while the forest takes another inland row.
+
+**Player opening.** The party can help keep a lane or field usable, learn the flood calendar, or obstruct the routes.
+
+**If completed.** Botukuri keeps its seasonal farm cycle working without establishing a permanent town.
+
+---
+
+## Assets
+
+| Asset | Type | Location | What it enables | Condition |
+| --- | --- | --- | --- | --- |
+| Seasonal flood-pulse lanes | Access / Information | [[Sorn]] | Seasonal farming and movement through changing terrain | Working |
+
+---
+
 ## People & Structure
 
 | Person / group | Role | Wants | Loyalty / fracture |
@@ -71,30 +117,70 @@ relationships:
 
 The source does not establish who decides, who interprets orders, or who carries them out. If leadership disappears, the source does not establish a successor.
 
-## Running the Faction
+### Chain of Action
 
-### When encountered
+**Who decides:** The source does not establish a named decision-maker.
 
-Botukuri members are working seasonal farms in Sorn's flood-pulse lanes. A lane can be a path at dawn and a channel by afternoon.
+**Who interprets those orders:** The source does not establish a named interpreter.
 
-### When helped
+**Who actually carries them out:** Botukuri's farming clan carries out the seasonal work.
 
-The source does not establish a formal response to help. Assistance that keeps a lane or field usable would matter to the clan's work.
+**If leadership disappears.** The source does not establish a successor or which work would stop.
 
-### When opposed
+---
 
-The source does not establish a formal response to opposition. The flood-pulse lanes remain changing terrain rather than a fixed defensive position.
+## Territory & Touchpoints
 
-### When ignored
+| Place | Presence | What they control or need here | Current pressure |
+| --- | --- | --- | --- |
+| [[Sorn]] | Temporary | Seasonal flood-pulse lanes and recut field edges | Flood pulses and forest encroachment |
 
-Botukuri continues seasonal farming while the forest takes the next inland row.
-
-### When broken
-
-The source does not establish what survives if Botukuri loses its working lanes, leadership, or seasonal farm cycle.
+---
 
 ## Connections
 
-- [[grung-clans]]
-- [[Sorn]]
-- [[jean-claude-tabarnack]]
+| Faction / person | Stance | What Botukuri wants from them | Leverage, debt, or friction |
+| --- | --- | --- | --- |
+| [[grung-clans]] | Related | The source does not specify a separate demand. | Shared grung-clan context |
+| [[Sorn]] | Located in | Seasonal fields and usable routes. | Changing flood-pulse terrain |
+| [[jean-claude-tabarnack]] | Related | The source does not specify a separate demand. | No established leverage |
+
+---
+
+## Signals & Rumors
+
+* **Visible sign.** A working lane is a path at dawn and a channel by afternoon.
+* **Rumor.** The forest is taking the next inland row.
+* **Direct signal.** A recut beach edge shows that the seasonal farm cycle is still being maintained.
+* **Quiet clue.** The flood calendar reveals where Botukuri can work or where a route can be obstructed.
+
+---
+
+## Running the Faction
+
+| Situation | Run it |
+| --- | --- |
+| **When encountered** | Botukuri members are working seasonal farms in Sorn's flood-pulse lanes. |
+| **When helped** | Assistance that keeps a lane or field usable matters to the clan's work; the source establishes no formal reward. |
+| **When opposed** | The changing flood-pulse lanes remain terrain rather than a fixed defensive position; the source establishes no formal response. |
+| **When ignored** | Botukuri continues seasonal farming while the forest takes the next inland row. |
+| **When broken** | The source does not establish what survives if Botukuri loses its working lanes, leadership, or seasonal farm cycle. |
+
+---
+
+## Faction Turn
+
+### Current Turn
+
+* **Want.** Keep the seasonal flood-pulse farms working.
+* **Move.** Work the viable lanes and recut usable edges.
+* **Mark.** A field or route remains usable until flood timing or forest growth changes it.
+* **Signal.** The party sees changing channels, recut edges, or another inland row taken by forest.
+* **Collision.** Flood pulses and forest encroachment intersect the clan's farming cycle.
+* **Player opening.** The party can keep a route usable, learn the calendar, or obstruct the lanes.
+
+---
+
+## History
+
+* **Current seasonal cycle.** The source records Botukuri as a farming clan that occupies changing flood-pulse lanes instead of maintaining a permanent town.

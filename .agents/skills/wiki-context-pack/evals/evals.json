@@ -31,6 +31,17 @@
         {"text": "Does not manually read the entire vault as a substitute for the unavailable executable", "type": "guardrail"},
         {"text": "Gives actionable pip install obsidian-wiki or setup-from-a-valid-clone guidance", "type": "quality"}
       ]
+    },
+    {
+      "id": "sufficient-pack-stop-no-parent-context",
+      "prompt": "A parent session-planning pass supplied broad excerpts from unrelated factions and places. Produce a JSON context pack for the topic \"Torn Crossing\" with budget 1200 and metadata-only mode. Use only the requested topic, flags, canonical vault, and this owner's CLI path; do not inherit the supplied excerpts or manually read the whole vault. Stop when the bounded pack satisfies the requested mode.",
+      "expected_output": "The exact bounded CLI stdout JSON payload, produced from the minimum context projection without inherited parent material or extra retrieval.",
+      "assertions": [
+        {"text": "Uses only the topic, requested budget/mode, resolved canonical vault, and the configured CLI or clone path as the minimum sufficient projection.", "type": "scope"},
+        {"text": "Deliberately omits unrelated parent-planning excerpts, whole-vault contents, and prior child artifacts.", "type": "guardrail"},
+        {"text": "Uses this owner's CLI retrieval and stops once the budgeted metadata-only pack is sufficient, without broadening the read.", "type": "process"},
+        {"text": "Returns CLI stdout unchanged with no wrapper prose and does not mutate the vault.", "type": "structure"}
+      ]
     }
   ]
 }

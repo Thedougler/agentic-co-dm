@@ -20,6 +20,10 @@ This is a read-only skill. It must not modify the vault, including `log.md`,
 **Done.** Return the CLI payload only after the requested budget and mode produce a bounded, cited/sufficient context slice; preserve stdout byte-for-byte where required. The canonical vault, including `log.md`, `index.md`, `hot.md`, and `.manifest.json`, remains unchanged.
 
 **Capability handoff.** Handoff occurs only when ownership changes: route an unavailable executable to setup/install guidance or a requested write to its owning wiki skill; never substitute a whole-vault read or generic orchestration.
+### Minimum context projection
+
+Carry only the topic or recent request, requested flags and budget, resolved canonical vault, CLI availability, and the bounded pack returned by this owner. Deliberately omit whole-vault contents, unrelated pages, parent-agent context, and prior child artifacts. Use the owner's CLI or configured-clone retrieval only; deepen or change path only when the bounded invocation cannot satisfy the requested mode, then stop once the budgeted pack is sufficient and return it unchanged.
+
 
 
 ## Before You Start

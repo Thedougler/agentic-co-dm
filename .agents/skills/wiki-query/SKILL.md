@@ -39,6 +39,10 @@ If the user's message contains a new finding, an action request ("save this", "b
 **Done.** Return a cited answer only when the factual claims are supported by sufficient wiki evidence (or explicitly marked as gaps, inference, or conflict), with Pages consulted and Retrieval counts. Canonical wiki pages, index, hot cache, manifest, and other durable knowledge remain unchanged; the permitted `log.md` query append is the only query-side write.
 
 **Capability handoff.** Handoff occurs only when the request changes ownership: route a requested capture or knowledge sync to `wiki-capture` or `wiki-update`, then resume only with the resulting query boundary; do not insert a generic orchestration step.
+### Minimum context projection
+
+Carry only the resolved vault, question, visibility/index mode, ranked candidates, and focused evidence needed for the answer. Deliberately omit unrelated page groups, parent-agent context, and prior capability artifacts. Begin with the cheapest sufficient evidence; deepen through this owner's focused section or page retrieval only when it cannot support the answer, then stop and synthesize with citations and counts. Never inherit a parent planner's broader retrieval set as query evidence.
+
 
 ## Before You Start
 

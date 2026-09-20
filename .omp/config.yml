@@ -52,7 +52,7 @@ compaction:
 advisor:
   enabled: false
 memory:
-  backend: mnemopi
+  backend: false
 mnemopi:
   scoping: per-project-tagged
   autoRecall: true

@@ -24,6 +24,9 @@ You are preserving knowledge from the current conversation as a permanent wiki n
 **Done** — Full mode closes only with declarative knowledge, required frontmatter and links, destination-owner validation scoped to the page, one manifest record, one `index.md` update, one `log.md` entry, and one bounded `hot.md` update, followed by one QMD refresh and one search-then-get retrieval check. Correction mode closes only after its immutability and consumer checks pass. Quick mode closes with staged paths and explicitly no manifest/index/log/hot/QMD writes. Otherwise report the specific blocker; a written note alone is not completion.
 
 **Capability Handoff** — Return the page path, source evidence, tracking evidence, and scoped validation to the caller. `wiki-capture` owns full/correction tracking and QMD finalization; `/wiki-ingest` owns later `_raw/` promotion. The receiving validator or promotion owner returns evidence before the parent reports done.
+### Minimum context projection
+
+For capture, the minimum sufficient projection is the current conversation, explicit mode, targeted index/hot, and governing category/template. Deliberately omit unrelated history, page bodies, and inherited parent context. Deepen retrieval only when classification or destination evidence is insufficient; then resume this owner's same capture mode with the bounded return and stop at that mode's completion contract.
 
 
 This skill has three modes:

@@ -39,6 +39,10 @@ artifact/section and completion result; the child does not re-plan the place.
 Resume the place draft only after the child result satisfies its owner contract;
 if it does not, leave dependent work open and report the missing evidence or
 specific blocker.
+### Minimum context projection
+
+For a place draft, carry only the named place owner, caller objective, relevant place brief/template, linked topology/faction/NPC/route/session evidence, and any child return packet needed for the current seam. Deliberately omit unrelated artifact groups, prior-child context not needed by this owner, and broad vault pages. Start with this projection; retrieve focused evidence for the same place only when the current evidence cannot support a required claim or topology decision, then stop when sufficient and resume this place draft with the bounded result. Never inherit a parent planner's broad context as place canon.
+
 
 ### Done
 

@@ -19,6 +19,9 @@ This is a thin router for **history sources only**. It does not replace `wiki-in
 **Done** — A route closes only with an explicit destination dispatch, or with the single documented clarification for an ambiguous source. It must not claim pages, manifest/index/log/hot updates, validation, or QMD completion until the destination owner returns that evidence. A missing or invalid route ends with a specific blocker.
 
 **Capability Handoff** — Pass the selected history owner, source path/target, and parent objective to the specialized history skill. The destination owner returns selected evidence, page/tracking results, scoped validation, and any one-time QMD retrieval result; then this router returns that bounded result to the caller without re-running or re-finalizing it.
+### Minimum context projection
+
+For routing, the minimum sufficient projection is the explicit history target or source path, relevant config, route table, and parent objective. Deliberately omit destination sessions, the full manifest, unrelated vault artifacts, and inherited parent context. This router does not deepen retrieval: dispatch to the same specialized history owner, wait for its bounded evidence, then stop and return that result without re-running or re-finalizing it.
 
 
 ## Subcommands

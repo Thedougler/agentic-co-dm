@@ -25,6 +25,9 @@ This is not bulk ingest. You find sessions about a specific topic, extract the r
 **Done** — A write closes only when selected sessions and page destinations are reported, each affected page passes scoped validation, each ingested session is tracked exactly once, and `index.md`, `log.md`, and `hot.md` reflect the same bounded set. Then run one QMD refresh and one search-then-get retrieval check for an affected page. Missing history, no matches, or a failed guard closes with a specific evidence-backed blocker; a synthesized paragraph alone is not completion.
 
 **Capability Handoff** — Return source locators, selected-session evidence, page paths, validation results, and the synthesized answer to the caller. `wiki-agent` owns bounded session tracking and QMD finalization; the category/page owner owns only its page artifact and returns scoped evidence before synthesis closes.
+### Minimum context projection
+
+For targeted history ingest, the minimum sufficient projection is the selected agent target/query, cheapest session inventory, selected session blobs, targeted vault pointers, manifest query, and page-owner contract. Deliberately omit unrelated agent histories, whole unselected sessions, the full manifest, and inherited parent context. Deepen extraction only when the selected evidence is insufficient; retrieve focused sections from the same owner, then resume this owner's distillation and stop at its scoped validation and tracking conditions.
 
 
 ## Command Routing

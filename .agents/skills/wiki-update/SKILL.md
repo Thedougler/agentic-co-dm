@@ -20,6 +20,9 @@ You are distilling knowledge from the current project into the user's Obsidian w
 **Done** — With meaningful changes, close only after each created or updated page satisfies its output contract and scoped validation, then finalize tracking once: one project manifest `upsert`, one `index.md` update, one `log.md` entry, and one bounded `hot.md` rewrite. Run one QMD refresh after those writes and verify one affected page with search followed by `qmd get`/`multi-get`. With no meaningful delta, report unchanged and perform no writes or refresh. Any failed guard ends with a specific blocker and evidence, not a success claim based on prose.
 
 **Capability Handoff** — Return focus-map/source citations, destination pages, and scoped validation evidence to the parent sync. `wiki-update` owns project tracking and QMD finalization; a delegated read or craft capability owns only its bounded operation and returns evidence before the sync resumes.
+### Minimum context projection
+
+For a project sync, the minimum sufficient projection is the current project delta or focus map, targeted existing pages/index/hot, the prior manifest entry, and the destination owner's contract. Deliberately omit unrelated campaign or project groups and inherited parent context. Deepen retrieval only when cited evidence is insufficient; then resume this owner's same project sync with the bounded return and stop at its output, tracking, and QMD conditions.
 
 
 ## Before You Start

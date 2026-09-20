@@ -22,6 +22,10 @@ campaign: shattered-sea
 visibility: dm
 status: active
 kind: breakaway order
+scope: regional
+region: Midchain
+base: "Sentinel waystations and covert routes"
+
 relationships:
   - target: "[[sentinels-of-the-eyrie]]"
     type: related_to
@@ -37,6 +41,10 @@ relationships:
 > [!narration] Narration
 > Countless broke away from the Sentinels. Missing names mark its work. Hired blades and paid contacts take one job each. They never learn who ordered it. Along pilgrim routes, grey markets, and Sentinel waystations, the work leaves an empty place where a name used to sit. Agents use the shared title Talon. People hear Talon before they meet anyone who claims it.
 
+````col
+```col-md
+flexGrow=2
+===
 ## At a Glance
 
 | | |
@@ -50,7 +58,10 @@ relationships:
 | **Current posture** | Acting and fractured |
 
 > **DM thesis.** Countless bends fate for itself. It keeps its losses out of the record. It targets [[fate-spinner]] carriers while the [[rule-of-two]] turns the schism inward.
-
+```
+```col-md
+flexGrow=1
+===
 ## At the Table
 
 - **They want.** Countless seeks [[crissdalynn-khinriss]] or another Fate Spinner carrier. It wants the gift tied to the Soul Incarnate transformation technique.
@@ -58,6 +69,9 @@ relationships:
 - **They pressure with.** Countless uses taken names and blank ledgers. Covert routes and agents who know one job support the pressure.
 - **They will not.** Countless will not expose its order chain. It gives each contact only the information needed for the current job.
 - **Their tell.** Agents use the shared title Talon. Work leaves an empty place where a name used to sit.
+```
+````
+
 
 ## Current State
 
@@ -100,6 +114,16 @@ relationships:
 | [[talon-vantyrus]] | Leader | The Soul Incarnate transformation technique and survival against his apprentice | Leads through the Rule of Two |
 | [[talon-skarn]] | Apprentice | To overthrow Vantyrus | Open internal contest |
 | Hired blades and paid contacts | Agents | One assignment at a time | They do not know who ordered the work |
+### Chain of Action
+
+**Who decides:** [[talon-vantyrus]]
+
+**Who interprets those orders:** [[talon-skarn]] and the one-job contacts who receive assignments.
+
+**Who actually carries them out:** Hired blades and paid contacts.
+
+**If leadership disappears.** The Rule of Two contest determines whether [[talon-skarn]] or another Talon takes control; one-job contacts continue only the assignments they already know.
+
 
 ## Territory & Touchpoints
 
@@ -115,6 +139,13 @@ relationships:
 | [[crissdalynn-khinriss]] | Target | The gift connected to the Soul Incarnate transformation technique | She is unaware of the full hunt |
 | [[rule-of-two]] | Internal pressure | Survival through the contest between Vantyrus and Skarn | Power is taken by force, not inherited |
 | [[countless-through-the-maw-seal]] | Related pressure | A route toward the Soul Incarnate transformation technique | The Maw seal keeps the wider operation live |
+## Signals & Rumors
+
+* **Visible sign.** A name disappears from a ledger while a Talon job appears around Yssenmoor.
+* **Rumor.** Countless is searching Sentinel visitors who recently reached Yssenmoor.
+* **Direct signal.** A hired blade offers or carries out a one-job assignment without naming the patron.
+* **Quiet clue.** Taken names and blank ledger entries reveal that the order avoids a central roster.
+
 
 ## Running the Faction
 

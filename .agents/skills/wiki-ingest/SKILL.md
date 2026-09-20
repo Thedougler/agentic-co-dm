@@ -29,6 +29,9 @@ Named ingest files to the live wiki without a second chat accept. `dm_placed_ing
 **Done** — A file closes only as `complete` when every extracted idea has a destination, the destination output contract passes scoped `wiki lint <page>` until clean, and tracking is finalized exactly once: one manifest `record`, one `index.md` update, one `log.md` entry, and one bounded `hot.md` update for that file. After all writes, run one QMD refresh and one search-then-get retrieval check for a created or materially updated page. If any guard cannot pass, close as `failed` with the specific blocker and evidence; prose alone is not completion.
 
 **Capability Handoff** — Return the bounded destination payload and scoped validation evidence to the receiving owner, then resume this ingest's per-file report. `wiki-ingest` owns manifest/index/log/hot and QMD finalization; a receiving craft owner owns only its page artifact. The final report is the handoff back to the user: per-file status, destinations, evidence, blocker (if any), and QMD result.
+### Minimum context projection
+
+For each named source file, the minimum sufficient projection is the source, targeted index/hot/QMD evidence, the source manifest query, the destination owner's contract, and bounded child return evidence. Deliberately omit unrelated source files, full ledgers, unrelated artifact groups, and child context not needed for this file. Deepen retrieval only when the destination owner reports evidence is insufficient; then resume this owner's same per-file ingest and stop only at its tracking and QMD completion conditions.
 
 
 ## Before You Start

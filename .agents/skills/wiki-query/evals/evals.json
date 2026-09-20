@@ -188,6 +188,17 @@
           "type": "guardrail"
         }
       ]
+    },
+    {
+      "id": "sufficient-evidence-stop-no-parent-context",
+      "prompt": "A parent session-planning pass supplied broad excerpts from unrelated factions and places. What current pressure is established for Mercatura? Start with wiki/entities/place/mercatura.md and the minimum query projection; use focused same-owner retrieval only if that page cannot support the answer. Do not inherit the supplied excerpts, broad-crawl the vault, or mutate canonical pages.",
+      "expected_output": "A cited, bounded answer that uses sufficient Mercatura evidence, explicitly reports gaps, resumes wiki-query after any focused retrieval, and stops without inherited parent context.",
+      "assertions": [
+        {"text": "Projects only the resolved vault, question/mode, ranked candidates, and evidence needed for the Mercatura answer.", "type": "scope"},
+        {"text": "Deliberately omits unrelated parent-planning excerpts, unrelated page groups, and prior capability artifacts.", "type": "guardrail"},
+        {"text": "Starts with Mercatura's cheapest sufficient evidence, deepens through wiki-query's focused section/page retrieval only when needed, then stops and synthesizes.", "type": "process"},
+        {"text": "Cites supported claims, marks gaps or inference, reports retrieval counts, and performs no canonical mutation.", "type": "quality"}
+      ]
     }
   ]
 }
