@@ -1,47 +1,81 @@
 ---
-title: Vincenzo Black-Jaw
+title: "Vincenzo Black-Jaw"
 aliases:
   - Vincenzo Black-Jaw
 category: entities
 tags: [shattered-sea, npc]
-sources: ["Vestra.md"]
-summary: Builder and captain of the family brig Vestra, taken when something massive rose.
+sources:
+  - "Vestra.md"
+created: 2026-09-13T07:50:00Z
+updated: 2026-09-20
+type: npc
+lifecycle: proposed
+lifecycle_changed: "2026-09-13"
+reveal: unrevealed
+campaign: shattered-sea
+status: dead
+role: contact
+location: unknown
+faction: none
+visibility: dm
+summary: "Builder and captain of the family brig Vestra, remembered by Nona Black-Jaw after his death."
 provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
 base_confidence: 0.37
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
-created: 2026-09-13T07:50:00Z
-updated: 2026-09-18
-type: npc
-reveal: unrevealed
-campaign: shattered-sea
-visibility: dm
-relationships:
-  - target: "[[Vestra]]"
-    type: related_to
-  - target: "[[nona-black-jaw]]"
-    type: related_to
 ---
 # Vincenzo Black-Jaw
 
-*(This is a different character from [[Enzo]], despite the name similarity. W17 flag resolved, canon-review 2026-07-14.)*
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-[[nona-black-jaw|Nona]]'s late husband. He built the [[Vestra]] and captained her across the [[Midchain]] for decades before he died. The ship then passed to the family, and later to [[perrin-black-jaw]].
+| **Role** | Contact |
+| --- | --- |
+| **Nature** | Builder, captain, and remembered family patriarch |
+| **Home** | Unknown; he captained the [[Vestra]] across the [[Midchain]] |
+| **Wants** | No active want is recorded; his memory still shapes the Black-Jaw family |
 
-Nona speaks of him constantly. His chair at family meals is empty. Nobody sits in it.
+> **DM thesis:** Vincenzo's death left an empty chair, a family legacy, and a ship whose history still belongs to the Black-Jaws.
+```
 
-**Quote:** *"My Vincenzo was a beautiful idiot. We fought and loved with equal fury, constantly. I smashed four frying pans on that stubborn old fool. Four of them! But he was my Vincenzo. Gods rest his soul."*
+```col-md
+flexGrow=1
+===
+> [!narration] Vincenzo Black-Jaw
+> Vincenzo Black-Jaw is present through the things he left behind: the family brig [[Vestra]], an empty chair at Black-Jaw family meals, and the stories [[nona-black-jaw|Nona]] tells about her late husband. Her voice remembers both his stubbornness and the love beneath their fights.
+```
+````
 
-## Stats & Combat
+## Running Vincenzo Black-Jaw
 
-No stats given in source.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Vincenzo is encountered through the [[Vestra]], the Black-Jaw family, and Nona's stories. Nona introduces him as the builder and captain who crossed the [[Midchain]] for decades.
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Nona's posture changes when someone treats Vincenzo's memory as disposable or challenges the family's claim to the [[Vestra]]. Her affection remains fierce even when she recounts their fights.
+```
+````
 
 ## Connections
 
-- [[nona-black-jaw]] (widow)
-- [[perrin-black-jaw]] (grandson; inherited the [[Vestra]])
-- [[Vestra]] (the ship he built and captained)
+| Connection | Meaning |
+| --- | --- |
+| [[nona-black-jaw]] | Widow who speaks of Vincenzo constantly and preserves his memory. |
+| [[perrin-black-jaw]] | Grandson who later inherited the [[Vestra]]. |
+| [[Vestra]] | Family brig Vincenzo built and captained across the [[Midchain]]. |
+| [[Enzo]] | A different character despite the name similarity. |
