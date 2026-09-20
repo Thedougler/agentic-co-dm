@@ -25,12 +25,67 @@ updated: 2026-09-13
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: contact
+location: "[[tessarine-factor-amberreach]]"
+faction: "[[tessarine-concordat]]"
 visibility: dm
+summary: "Senior Tessarine factor signing contracts aboard the Amberreach."
+provenance:
+  extracted: 1.0
+  inferred: 0.0
+  ambiguous: 0.0
+base_confidence: 0.45
+tier: supporting
 ---
 # Oriana Becht
 
-The wiki has little on Oriana. She is Senior Factor of the [[Tessarine Amberreach]]. She signs contracts at sea. See the ship's page for her cabin, DC, and crew role.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
+
+| **Role**   | Contact |
+| ---------- | ------- |
+| **Nature** | Senior Tessarine factor and contract signer |
+| **Home**   | [[tessarine-factor-amberreach|Tessarine Factor Amberreach]] |
+| **Wants**  | Sign and enforce Concordat contracts at sea; the source does not establish a personal goal beyond this work. |
+
+> **DM thesis:** Oriana turns the Concordat's power into signed obligations that can be negotiated aboard ship.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Oriana Becht
+> Oriana Becht is the Senior Factor aboard the Tessarine Amberreach. Contract papers, route deals, salvage plans, and cargo oaths pass through her hands at sea.
+```
+````
+
+## Running Oriana Becht
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Oriana meets the party aboard the [[tessarine-factor-amberreach|Tessarine Amberreach]] when a contract, route deal, salvage plan, or cargo oath needs a Concordat signature. **Sample line:** “Put the terms on the table; I sign what can be enforced.”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Oriana's posture changes when the party alters the terms, threatens the Amberreach's contract interests, or asks her to sign beyond her authority. The source does not establish her response to any one breach.
+```
+````
 
 ## Connections
 
-- [[Tessarine Amberreach]]: her ship and role details.
+| Connection | Meaning |
+| ---------- | ------- |
+| [[tessarine-factor-amberreach]] | Ship where Oriana signs legal papers and keeps her factor's cabin. |
+| [[tessarine-concordat]] | Faction whose craft and contracts she represents. |
