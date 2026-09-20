@@ -14,6 +14,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "Eastern Midchain"
+kind: plot
+rarity: common
+attunement: false
+owner: "Unknown captain"
 summary: "A warped, barely legible captain's log recovered from a driftbound strongbox in the Eastern Midchain reef shallows."
 provenance:
   extracted: 0.85
