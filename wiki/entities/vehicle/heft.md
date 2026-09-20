@@ -5,13 +5,16 @@ tags: [shattered-sea, vehicle]
 sources:
   - "campaign-os:heft.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: vehicle
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+kind: vessel
+region: "Shattered Sea"
+berth: "Lost with [[fisks-fleet]] in [[drowned-maw]]."
 summary: "A heavy brig and the second-largest ship in Fisk's Fleet, lost when Umberlee opened The Drowned Maw."
 provenance:
   extracted: 0.85
@@ -22,25 +25,42 @@ tier: supporting
 ---
 # Heft
 
-A heavy brig, the largest ship in [[fisks-fleet]] after the [[red-lady]]. Broad in the beam and deep-keeled, high freeboard, the hull sitting low under its own weight. Hull painted black from waterline to rail with white gun port lids. Each side carried five gun mounts. A deliberate presence. Nothing about her proportions suggested speed.
+> [!narration] Narration
+> Heft is a broad, deep-keeled heavy brig with high freeboard, black hull sides, white gun port lids, and five gun mounts on each side.
 
-*Heavy brig · Third of Fisk's Fleet.*
+## Sheet
 
-Not revealed to players. Delmar's confession established the fleet's existence (see [[Session 04 - Recap]]), but the DM deliberately withheld the individual ship names (`vault/campaigns/shattered-sea/factions/fisks-fleet.md`).
+* **Size.** Heavy brig; broad in the beam, deep-keeled, and high-freeboard.
+* **Type.** Heavy brig.
+* **Speed.** Not stated in source.
+* **Crew.** Full complement; all hands lost.
+* **Passengers.** Not stated in source.
+* **Cargo.** Deep, wide hold built to take punishment and hold position; a magazine below the waterline.
 
-Below decks, a magazine was below the waterline alongside a surgeon's berth and crew quarters for a full complement. The hold ran deep and wide, built to take punishment and hold position. She perished simultaneously with the rest of [[fisks-fleet]] when [[Umberlee]] opened [[drowned-maw]] beneath them. All hands lost.
+## Components
 
-## Stats & Combat
+* **Hull.** Hull painted black from waterline to rail with white gun port lids; AC, HP, and damage threshold not stated.
+* **Helm.** Not stated in source.
+* **Movement.** Nothing about the proportions suggested speed.
+* **Weapons.** Five gun mounts on each side.
 
-Not stated in source.
+## Crew stations
 
-## Crew
+* **Captain.** [[detto-kalash]]
+* **Fleet admiral.** [[delmar-fisk]]
+* **Surgeon.** A surgeon's berth was below decks; name not stated.
 
-- Captain: [[detto-kalash]]
+## Combat
+
+Heft was built to take punishment and hold position. Its magazine was below the waterline. No further combat statistics are stated in the source.
+## At a Glance
+
+Heft was the largest ship in [[fisks-fleet]] after the [[red-lady]]. It was lost with the fleet when [[Umberlee]] opened [[drowned-maw]] beneath them.
+
 
 ## Connections
 
-- [[fisks-fleet]]
-- [[drowned-maw]]
-- [[Umberlee]]
-- [[delmar-fisk]] (fleet admiral)
+* [[fisks-fleet]] — Heft was the fleet's second-largest ship and perished with it.
+* [[drowned-maw]] — The site of the fleet's loss.
+* [[Umberlee]] — Opened the Drowned Maw beneath the fleet.
+* [[delmar-fisk]] — Fleet admiral.
