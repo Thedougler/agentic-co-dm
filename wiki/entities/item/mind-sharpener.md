@@ -7,13 +7,18 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:mind-sharpener.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: item
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "Shattered Sea"
+kind: magic
+rarity: uncommon
+attunement: false
+owner: "[[crissdalynn-khinriss]]"
 summary: "An artificer-infused hair clip that lets its wearer auto-succeed a failed concentration save by spending one of four charges that renew at dawn."
 provenance:
   extracted: 0.85
@@ -33,12 +38,10 @@ tier: supporting
 
 *Wondrous Item, Uncommon.*
 
-## Mechanics
+**Effect.** Wearing this item grants a power to its wearer. When they fail a Constitution save to hold concentration on a spell, they can use their Reaction to succeed instead. This costs one charge. The item has 4 charges and regains them at dawn.
 
-**[HB]** Wearing this item grants a power to its wearer. When they fail a Constitution save to hold concentration on a spell, they can use their reaction to succeed instead. This costs one charge. The item has 4 charges and regains them at dawn.
-
-**Limitations:** only works when you fail a Constitution save to hold concentration on a spell. It does not work on other Constitution saves. Crissdalynn once tried it to break through a magical barrier. It did not work.
+**Limitations.** It works only when the wearer fails a Constitution save to hold concentration on a spell. It does not work on other Constitution saves. Crissdalynn once tried it to break through a magical barrier; it did not work.
 
 ## Provenance
 
-[[catarina-davirelli]] crafted and infused this item. She gave it to [[crissdalynn-khinriss]] during a fight in the [[Calveno sewer magazines]]. Catarina had noticed Crissdalynn struggling to keep concentration under fire. Crissdalynn holds it now. [[Session 06]]'s transcript documents this exchange.
+[[catarina-davirelli]] crafted and infused this item. She gave it to [[crissdalynn-khinriss]] during a fight in the [[Calveno sewer magazines]]. Catarina had noticed Crissdalynn struggling to keep concentration under fire. Crissdalynn holds it now. [[journal/sessions/shattered-sea/06/Session-06-Recap]]'s transcript documents this exchange.
