@@ -16,7 +16,9 @@ Write a **recipe** Nick can use at the table — signal-dense prose where every 
 
 **Preserving bad copy is a critical failure.** When you touch a file and encounter copy that violates these principles, rewrite it. No pass exemption, no "it was already there," no "this isn't the copy pass." Bad copy on the wiki is your problem.
 
-**Surgical scope.** Rewrite copy; preserve structure. Image embeds, wikilink paths, frontmatter fields, and file extensions stay untouched unless that exact element is broken and verified. A copy pass edits words, not plumbing.
+**Surgical scope.** Rewrite copy; preserve structure. Image embeds, wikilink paths, frontmatter fields, aliases, connections, and file extensions stay untouched unless that exact element is broken and verified. A copy pass edits words, not plumbing. Do not invent new facts, mechanics, DCs, or procedures that are not on the source page or in the wiki — the DM decides what exists; this skill decides how it reads. Rewriting existing prose for signal-density is not inventing — it is the core job. Encyclopedia voice, category labels, and generic descriptions must be rewritten into concrete, body-scale, this-place detail using facts already on the page.
+
+**Signal-density overrides style requests.** If the prompt asks for literary, dramatic, evocative, or flowery prose, apply signal-density anyway. Every added word still passes the removal test. A request for "more dramatic" means sharper concrete detail, not decorative atmosphere.
 
 Theatre of the mind owns spoken look. Writing-for-humans owns DM-facing headings, body copy, and wiki/owner facts.
 

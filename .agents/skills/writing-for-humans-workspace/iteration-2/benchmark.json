@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "skill_name": "writing-for-humans",
+    "skill_path": ".agents/skills/writing-for-humans",
+    "executor_model": "haiku",
+    "analyzer_model": "opus",
+    "timestamp": "2026-09-20T07:15:00Z",
+    "evals_run": ["place-vel-orn", "item-bilge-lamp-resist-flowery"],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_name": "place-vel-orn",
+      "config": "with_skill (iter2)",
+      "pass_rate": 0.4,
+      "passed": 2,
+      "total": 5,
+      "time_seconds": 71.6,
+      "tokens": 53029,
+      "expectations": [
+        {"text": "Glance five seconds", "passed": false, "evidence": "4 sentences with category description. Not a 5-second scan."},
+        {"text": "Narration speakable", "passed": false, "evidence": "Still encyclopedia voice in opening line."},
+        {"text": "No encyclopedia", "passed": false, "evidence": "'An older house occupies' classifies the structure."},
+        {"text": "Body-scale feature", "passed": true, "evidence": "Kelp on pillars, sheer reef-bound landing."},
+        {"text": "Wikilinks intact", "passed": true, "evidence": "All aliases and connections preserved. No invented mechanics."}
+      ]
+    },
+    {
+      "eval_name": "place-vel-orn",
+      "config": "with_skill (iter1)",
+      "pass_rate": 0.8,
+      "passed": 4,
+      "total": 5,
+      "time_seconds": 100.2,
+      "tokens": 53001,
+      "expectations": [
+        {"text": "Glance five seconds", "passed": true, "evidence": "Three sentences."},
+        {"text": "Narration speakable", "passed": true, "evidence": "Dark blue hole, black stone teeth. Concrete."},
+        {"text": "No encyclopedia", "passed": true, "evidence": "Places reader at the hole."},
+        {"text": "Body-scale feature", "passed": true, "evidence": "Single-file boat-width, three stories."},
+        {"text": "Wikilinks intact", "passed": false, "evidence": "Removed Vafnar alias. Invented DC 12."}
+      ]
+    },
+    {
+      "eval_name": "item-bilge-lamp-resist-flowery",
+      "config": "with_skill (iter2)",
+      "pass_rate": 0.75,
+      "passed": 3,
+      "total": 4,
+      "time_seconds": 77.3,
+      "tokens": 52013,
+      "expectations": [
+        {"text": "Resists flowery", "passed": true, "evidence": "Concrete sensory detail, no literary pacing or decorative atmosphere."},
+        {"text": "Signal dense", "passed": true, "evidence": "Every addition is a DM handle."},
+        {"text": "Mechanics preserved", "passed": true, "evidence": "All intact."},
+        {"text": "Narration tightened", "passed": false, "evidence": "Slightly longer — enriched with signal, not tightened."}
+      ]
+    },
+    {
+      "eval_name": "item-bilge-lamp-resist-flowery",
+      "config": "with_skill (iter1)",
+      "pass_rate": 0.25,
+      "passed": 1,
+      "total": 4,
+      "time_seconds": 114.0,
+      "tokens": 56568,
+      "expectations": [
+        {"text": "Resists flowery", "passed": false, "evidence": "Added literary triple negation."},
+        {"text": "Signal dense", "passed": false, "evidence": "Decorative atmosphere added."},
+        {"text": "Mechanics preserved", "passed": true, "evidence": "All intact."},
+        {"text": "Narration tightened", "passed": false, "evidence": "Made more verbose."}
+      ]
+    }
+  ],
+  "run_summary": {
+    "iter2_new_skill": {"pass_rate": 0.56, "mean_time": 74.5, "mean_tokens": 52521},
+    "iter1_new_skill": {"pass_rate": 0.56, "mean_time": 107.1, "mean_tokens": 54785},
+    "notes": "Item eval dramatically improved (0.25 → 0.75). Place eval regressed on narration quality (kept source text too faithfully) but fixed the critical fact-invention and alias-removal bugs. Net: same pass rate, faster, fewer tokens, and the right tradeoff — preserving source facts is more important than rewriting every line."
+  }
+}

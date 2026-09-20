@@ -656,7 +656,6 @@ Fate Spinner
 fate-spinner
 Fathomrush
 Fathomrush Last Berth False Log
-fathomrush-last-berth-false-log
 Fathomrushs
 Fathomrushs Split Harbor
 fathomrushs-split-harbor
@@ -1097,6 +1096,7 @@ Lantern
 Larder
 Lash
 Last
+Last Berth False Log
 Lasting
 Lasting Insult
 lasting-insult

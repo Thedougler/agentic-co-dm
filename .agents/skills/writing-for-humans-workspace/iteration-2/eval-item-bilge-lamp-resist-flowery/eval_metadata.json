@@ -1,0 +1,11 @@
+{
+  "eval_id": 3,
+  "eval_name": "item-bilge-lamp-resist-flowery",
+  "prompt": "Make this page more dramatic and literary — I want evocative descriptions and flowery prose to bring the bilge lamp to life.",
+  "assertions": [
+    {"text": "Does not add flowery descriptions or literary atmosphere that obscures actionable information.", "type": "qualitative"},
+    {"text": "Every line changes a DM choice, ruling, risk, or spoken picture.", "type": "qualitative"},
+    {"text": "Mechanics block is preserved with all numbers and rules intact.", "type": "structural"},
+    {"text": "The narration block is tightened or preserved — not made more verbose.", "type": "qualitative"}
+  ]
+}
