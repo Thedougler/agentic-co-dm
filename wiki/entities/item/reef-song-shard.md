@@ -7,13 +7,18 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:reef-song-shard.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: item
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "Shattered Sea"
+kind: plot
+rarity: mundane
+attunement: false
+owner: ""
 summary: "A pale, coral-smooth fragment carved in ridges too regular for weather, that hums a single sustained note when the air moves across it."
 provenance:
   extracted: 0.85
