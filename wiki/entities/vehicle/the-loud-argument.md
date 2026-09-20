@@ -8,14 +8,17 @@ tags: [shattered-sea, vehicle]
 sources:
   - "campaign-os:loud-argument.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: vehicle
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "A gun brig of Fisk's Fleet, built for close engagement with reinforced armament."
+kind: ship
+region: "Shattered Sea"
+berth: ""
+summary: "A gun brig of Fisk's Fleet, built for close engagement with eight gun mounts and little cargo space."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -25,24 +28,43 @@ tier: supporting
 ---
 # The Loud Argument
 
-A gun brig (the combat vessel of [[fisks-fleet]]) that's shorter than the *[[red-lady]]* but wider, built for close engagement. She carries eight gun mounts (four per side, two bow chasers), has high freeboard and a reinforced gunwale. She displays red paint below the waterline and black paint above, a deliberate inversion of the *[[red-lady]]*'s scheme. The bow chasers are long-barrelled and prominent from ahead.
+> [!narration] Narration
+> The Loud Argument is a broad gun brig with high freeboard and a reinforced gunwale. Red paint runs below the waterline while black paint covers the hull above it, reversing the scheme of the [[red-lady]]. Two long-barrelled bow chasers stand out from ahead, and the ship's locked magazine leaves little room for cargo.
 
-Below decks, the *Loud Argument* houses a locked magazine and crew quarters for a full complement, with only minimal hold space since the builders prioritized gun deck clearance over cargo capacity. She was not built to carry things.
+## Sheet
 
-Fifth ship of the fleet.
+- **Size.** Gun brig; exact dimensions are not recorded.
+- **Type.** Armed ship.
+- **Speed.** Unknown.
+- **Crew (min).** Full complement required; exact number is not recorded.
+- **Passengers.** Crew quarters only; exact capacity is not recorded.
+- **Cargo.** Minimal hold space; the ship was built for a gun deck, not cargo.
 
-Lost simultaneously with the rest of [[fisks-fleet]] when [[Umberlee]] opened [[drowned-maw]] beneath them. All hands lost. The source material reveals no hidden details about ownership or secrets.
+## Components
 
-## Stats & Combat
+- **Hull.** AC, HP, and damage threshold are not recorded.
+- **Helm.** Present; statistics and disabled consequence are not recorded.
+- **Movement.** Present; speed and disabled consequence are not recorded.
+- **Weapons.** Eight gun mounts: four per side and two bow chasers.
 
-The source gives no hull, AC, speed, or weapon statblock. It only describes eight gun mounts, four per side, and two bow chasers.
+## Crew stations
 
-## Crew
+Captain: [[bastian-ookage]]. The ship otherwise requires a full complement; named stations are not recorded.
 
-- Captain: [[bastian-ookage]]
+## Handling
+
+The reinforced gunwale and high freeboard suit close engagement. Limited cargo space makes the ship a poor choice for hauling anything that is not crew, ammunition, or immediate fight support.
+
+## Combat
+
+The ship is built for close engagement. It can bring four gun mounts per side to a broadside and two long-barrelled bow chasers to bear from ahead. Hull, AC, speed, and damage statistics remain unknown.
+
+## At a Glance
+
+The Loud Argument was the fifth ship of [[fisks-fleet]]. It was lost with the rest of the fleet when [[Umberlee]] opened [[drowned-maw]] beneath them; all hands were lost.
 
 ## Connections
 
-- [[delmar-fisk]]: fleet admiral
-- [[red-lady]]: fleet flagship
-- [[fisks-fleet]]
+- [[delmar-fisk]] — Fleet admiral.
+- [[red-lady]] — Fleet flagship whose paint scheme the ship reverses.
+- [[fisks-fleet]] — Fleet of which it was the fifth ship.
