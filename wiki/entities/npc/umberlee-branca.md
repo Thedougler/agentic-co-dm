@@ -25,15 +25,62 @@ updated: 2026-09-18
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: "Senior Calveno Waveservant and appointment-keeper"
+location: unknown
+faction: "[[Waveservants]]"
 visibility: dm
 ---
 # Umberlee - Branca
 
-[[umberlee-branca]] is a senior Calveno [[Waveservants|Waveservant]] and appointment-keeper. Through her, [[Umberlee]] commanded her to bring the pearl. Then they would talk about the commissioners.
+````
+```col-md
+flexGrow=2
+===
+## At a Glance
+
+| **Role**   | Senior Calveno Waveservant and appointment-keeper |
+| ---------- | ----------------------------------------------- |
+| **Nature** | [[Waveservants|Waveservant]] serving [[Umberlee]] |
+| **Home**   | Calveno |
+| **Wants**  | Delivery of the [[pearl-of-souls]] before discussion of the commissioners |
+
+> **DM thesis:** Branca is the named intermediary for Umberlee's command concerning the pearl and the commissioners.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Umberlee - Branca
+> *A senior Calveno [[Waveservants|Waveservant]] keeps the appointment and delivers the message without softening it: [[Umberlee]] wants the [[pearl-of-souls]] brought first. Only then will the commissioners be discussed.*
+```
+````
+
+## Running Umberlee - Branca
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Branca delivers [[Umberlee]]'s command: bring the [[pearl-of-souls]], then discuss the commissioners.
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Her priority changes when the [[pearl-of-souls]] is delivered; the source then moves the conversation to the commissioners.
+```
+````
 
 ## Connections
 
-- [[Umberlee]]
-- [[Waveservants]]
-- [[pearl-of-souls]]
-- [[delmar-fisk]]
+| Connection | Meaning |
+| ---------- | ------- |
+| [[Umberlee]] | The power whose command Branca delivers. |
+| [[Waveservants]] | Branca's faction and religious order. |
+| [[pearl-of-souls]] | The object Umberlee commands Branca to bring. |
+| [[delmar-fisk]] | Connected to the commissioners under discussion. |
