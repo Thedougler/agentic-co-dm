@@ -112,7 +112,7 @@ def validate_record(record: dict[str, Any]) -> dict[str, Any]:
     if record.get("record_kind") == "command":
         if record.get("schema_version") != SUPPORTED_SCHEMA:
             error(f"incompatible schema_version {record.get('schema_version')}; supported {SUPPORTED_SCHEMA}")
-        if record.get("command") not in {"lint", "query", "health"}:
+        if record.get("command") not in {"lint", "lint fix", "query", "health"}:
             error(f"invalid command {record.get('command')}")
         validate_count(record.get("duration_ms"), "duration_ms")
         for key in ("cache_hits", "cache_misses", "vale_skipped"):

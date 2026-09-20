@@ -31,6 +31,7 @@ KEY_RE = re.compile(r"^[A-Za-z0-9_-]+$")
 FM_LINE_RE = re.compile(r"^([A-Za-z0-9_-]+):([ \t]*)(.*?)(\r?\n)?$")
 LINK_RE = re.compile(r"(!?\[\[([^\]|#]*)(#[^\]|]*)?(?:\|([^\]]*))?\]\])")
 EMPTY_LINK_RE = re.compile(r"!?(?:\[\[)(?:[ \t]*(?:\]|\||#))")
+INDEX_TAG_SUFFIX_RE = re.compile(r"[ \t]+\(\s+#[^()\s]+(?:\s+#[^()\s]+)*\s*\)(?=\r?\n|##\s|$)")
 
 
 class CLIError(Exception):
@@ -1004,9 +1005,18 @@ def root_moc_links(vault: Path, folders: list[Path]) -> str:
     return "".join(link for _key, link in sorted(links))
 
 
+def strip_generated_index_tags(text: str) -> str:
+    return "".join(
+        INDEX_TAG_SUFFIX_RE.sub("", line)
+        for line in text.splitlines(keepends=True)
+    )
+
+
 def moc_root_text(vault: Path, folders: list[Path]) -> str:
     root = vault / "index.md"
-    original = root.read_text(encoding="utf-8") if root.exists() else ""
+    original = strip_generated_index_tags(
+        root.read_text(encoding="utf-8") if root.exists() else ""
+    )
     marker = "## Folder Indexes\n"
     block = marker + root_moc_links(vault, folders)
     if marker in original:

@@ -520,3 +520,28 @@ def test_lint_and_health_main_install_heartbeat(tmp_path: Path, monkeypatch):
     assert module.main(["lint"]) == 0
     assert module.main(["health"]) == 0
     assert seen == ["lint", "health"]
+
+
+def test_lint_fix_deletes_registered_redirect_stub_and_is_idempotent(tmp_path: Path):
+    stub = tmp_path / "entities/npc/legacy.md"
+    stub.parent.mkdir(parents=True, exist_ok=True)
+    stub.write_text(
+        "---\n"
+        "title: Legacy\n"
+        "type: npc\n"
+        "redirects_to: entities/npc/current.md\n"
+        "---\n\n"
+        "# Legacy\n\nUse the canonical page.\n",
+        encoding="utf-8",
+    )
+    first = run_cli(tmp_path, "lint", "fix", "entities/npc/legacy.md")
+    assert first.returncode in (0, 1), first.stderr
+    data = payload(first)
+    assert data["status"] in {"clean", "findings"}
+    assert data["changed_files"] == ["entities/npc/legacy.md"]
+    assert any(item["status"] == "applied" for item in data["applied"])
+    assert not stub.exists()
+
+    second = run_cli(tmp_path, "lint", "fix", "entities/npc/legacy.md")
+    assert second.returncode == 2
+    assert payload(second)["status"] == "error"

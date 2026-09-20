@@ -329,9 +329,11 @@ class MocGenerationTests(VaultFixture):
         super().setUp()
         self.page("entities/npc/zara.md", "---\ntitle: Zara Vale\n---\nnpc\n")
         self.page("entities/npc/alpha.md", "---\ntitle: Alpha\n---\npc\n")
-        self.page("entities/place/harbor.md", "---\ntitle: Harbor\n---\nplace\n")
+        self.page("entities/place/harbor.md", "---\ntitle: Harbor\ntags: [campaign, place]\n---\nplace\n")
+        self.page("entities/place/cove.md", "---\ntitle: Cove\n---\nplace\n")
         self.page("entities/creature/a.md", "---\ntitle: A\n---\ncreature\n")
         self.page("entities/creature/b.md", "---\ntitle: B\n---\ncreature\n")
+        self.page("index.md", "## Entities\n\n- [[old]] — Old entry. ( #campaign #place)\n")
         self.page("_raw/ignored.md", "raw\n")
         self.page("_meta/ignored.md", "meta\n")
         self.page("attachments/ignored.md", "attachment\n")
@@ -353,13 +355,17 @@ class MocGenerationTests(VaultFixture):
         self.assertEqual(applied.returncode, 0, applied.stderr)
         entities = (self.vault / "entities/_index.md").read_text()
         npc = (self.vault / "entities/npc/_index.md").read_text()
+        place = (self.vault / "entities/place/_index.md").read_text()
         creature = (self.vault / "entities/creature/_index.md").read_text()
         self.assertFalse((self.vault / "entities/entities-index.md").exists())
         self.assertFalse((self.vault / "entities/npc/npc-index.md").exists())
         self.assertFalse((self.vault / "entities/place/place-index.md").exists())
         self.assertIn("title: Entities Index", entities)
         self.assertIn("title: Non-Player Characters Index", npc)
+        self.assertIn("title: Places Index", place)
         self.assertIn("title: Creature Index", creature)
+        self.assertNotIn("#campaign", place)
+        self.assertNotIn("#place", place)
         self.assertIn("type: lore", entities)
         self.assertIn("lifecycle: proposed", entities)
         self.assertIn("reveal: unrevealed", entities)
@@ -370,12 +376,37 @@ class MocGenerationTests(VaultFixture):
         root = (self.vault / "index.md").read_text()
         self.assertIn("- [[entities/_index|Entities Index]]", root)
         self.assertIn("- [[entities/npc/_index|Non-Player Characters Index]]", root)
+        self.assertIn("- [[old]] — Old entry.", root)
+        self.assertNotIn("#campaign", root)
+        self.assertNotIn("#place", root)
         self.assertFalse((self.vault / "_meta/_index.md").exists())
         self.assertFalse((self.vault / "_raw/_index.md").exists())
         repeat = run_cli("moc-generate", "--json", "--vault", str(self.vault))
         self.assertEqual(repeat.returncode, 0, repeat.stderr)
         self.assertEqual(json.loads(repeat.stdout)["files_modified"], 0)
 
+class RawIngestIndexTests(VaultFixture):
+    def test_raw_ingest_does_not_append_tags_to_index_entries(self) -> None:
+        self.page("index.md", "## Entities\n")
+        (self.vault / "entities").mkdir()
+        self.page("log.md", "")
+        self.page("hot.md", "")
+        self.page(".manifest.json", "{}\n")
+        source = self.page(
+            "_raw/harbor.md",
+            "---\ntitle: Harbor\ntype: place\ntags: [campaign, place]\n---\nbody\n",
+        )
+        result = subprocess.run(
+            [PYTHON, str(ROOT / "scripts" / "ingest-raw.py"), "--skip-qmd", "--wiki", str(self.vault), str(source)],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
+        index = (self.vault / "index.md").read_text()
+        self.assertIn("- [[harbor]] — Ingested campaign entity.", index)
+        self.assertNotIn("#campaign", index)
+        self.assertNotIn("#place", index)
 
 
 class PerformanceSmokeTests(VaultFixture):

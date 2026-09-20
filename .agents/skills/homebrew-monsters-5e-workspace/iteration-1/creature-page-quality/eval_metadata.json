@@ -1,0 +1,18 @@
+{
+  "eval_id": "creature-page-quality",
+  "eval_name": "creature-page-quality",
+  "prompt": "Design a CR 5 pack predator for Aruhe's volcanic vents and write the wiki creature page. Use the Spiguar page (wiki/entities/creature/spiguar.md) and Bloodhawk page (wiki/entities/creature/bloodhawk.md) as exemplars for page density and structure.",
+  "assertions": [
+    {"text": "Output includes a narration callout block with sensory prose and no mechanics.", "type": "structure"},
+    {"text": "Page is linear: H1, narration, at most one Statblock overview image immediately before the fence, then remaining sections with extra images under Art subsections. No col/col-md/flexGrow wrappers.", "type": "structure"},
+    {"text": "Statblock uses 2024 notation with complete fields and no hidden arithmetic.", "type": "content"},
+    {"text": "Behavior section has all four labeled items: Habitat, Behavior, Diet, Social Structure.", "type": "structure", "principle": "hunt-cycle"},
+    {"text": "Tactics section has all five labeled items: Signs, Instincts, Tactics, Weaknesses, Aftermath.", "type": "structure", "principle": "hunt-cycle"},
+    {"text": "Fiction signature (fantasy/signature/goal/fear/counterplay/proof) appears in the design output before the page.", "type": "process"},
+    {"text": "Weaknesses name things the party can actually exploit in the volcanic vent environment — terrain, positioning, or resource.", "type": "quality", "principle": "environmental-counterplay"},
+    {"text": "The creature has a sensory tell that reveals its presence or intent before it strikes.", "type": "quality", "principle": "sensory-tell"},
+    {"text": "Summary frontmatter follows 'CR X [qualifier] [role] that [signature] but [limitation]' pattern.", "type": "structure", "principle": "summary-compression"},
+    {"text": "Diet names at least one wiki-linked creature or prey type from Aruhe.", "type": "content", "principle": "ecology-links"},
+    {"text": "Every statblock ability maps to a matching behavior or tactics item — no orphan mechanics.", "type": "quality", "principle": "signature-behavior-coherence"}
+  ]
+}

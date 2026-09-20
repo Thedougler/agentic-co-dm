@@ -1,0 +1,12 @@
+{
+  "eval_id": "fiction-before-numbers",
+  "eval_name": "fiction-before-numbers",
+  "prompt": "Create a creature for Aruhe that hunts by echolocation in the lava tubes, disorienting prey with sound before striking. Write the fiction-first definition before any numbers.",
+  "assertions": [
+    {"text": "States the one-sentence signature and all six fiction fields before any stat numbers.", "type": "process"},
+    {"text": "Assigns a role from the role table with a player-facing counterplay.", "type": "structure"},
+    {"text": "Numbers are justified by the signature rather than listed without fiction context.", "type": "quality"},
+    {"text": "The Tell→Threat→Responses→Payoff loop is present and coherent.", "type": "structure", "principle": "decision-loop"},
+    {"text": "Counterplay names environmental or terrain factors the party can act on — not abstract resistances.", "type": "quality", "principle": "environmental-counterplay"}
+  ]
+}

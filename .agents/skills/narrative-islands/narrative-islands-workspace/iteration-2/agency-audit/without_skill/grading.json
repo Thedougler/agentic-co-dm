@@ -1,0 +1,51 @@
+{
+  "eval_id": "agency-audit",
+  "configuration": "without_skill",
+  "expectations": [
+    {
+      "text": "Agency: at least three viable approaches exist (not just board-fight-take)",
+      "passed": false,
+      "evidence": "Summary: 'Board the Velvet Noose in open water, defeat Mave Sorn, and seize the Magistrate's Warding Chip.' Line 50: 'She will not surrender it through negotiation or trade. Boarding and defeating her is the only path.' Line 60: 'Mave has no interest in surrender, parley, or trade.' Explicitly rules out every alternative."
+    },
+    {
+      "text": "Causality: Mave's actions follow from her established want (supernatural confirmation to sell)",
+      "passed": true,
+      "evidence": "Line 59: 'She wants confirmation that the Crown's supernatural irregularity is real so she can sell that knowledge.'"
+    },
+    {
+      "text": "Activity: Mave has a concrete next move if uninterrupted",
+      "passed": true,
+      "evidence": "Line 78: 'She will file and sell the information to a buyer whose secrecy and payment equal the value of what she has learned.'"
+    },
+    {
+      "text": "Connectivity: multiple leads point to the intercept from different directions",
+      "passed": false,
+      "evidence": "Only 3 leads, all describing the encounter from within it (patrol records, chip record, Glass Debt sighting). No diverse routes of discovery."
+    },
+    {
+      "text": "Gravity: the chip connects to an existing PC interest or campaign thread",
+      "passed": true,
+      "evidence": "Connects to Wardstone split, Crown supernatural irregularity."
+    },
+    {
+      "text": "Persistence: outcomes name lasting world changes",
+      "passed": true,
+      "evidence": "Fallout names information broker removal, Wardstone gap detection, patrol pattern changes, buyer search."
+    },
+    {
+      "text": "Vault integrity: named entities resolve to existing wiki pages",
+      "passed": true,
+      "evidence": "All named entities resolve to wiki pages."
+    },
+    {
+      "text": "Quest frame sentence names incompatible wants, live pressure, and uninterrupted consequence",
+      "passed": false,
+      "evidence": "Line 31: 'Board the Velvet Noose, defeat Mave Sorn, and secure the Magistrate's Warding Chip' — prescriptive task, not incompatible wants."
+    },
+    {
+      "text": "Walk-away entry names what continues without the party",
+      "passed": true,
+      "evidence": "Line 67: 'The encounter passes without resolution. Mave continues her information trade and eventually locates a buyer.'"
+    }
+  ]
+}

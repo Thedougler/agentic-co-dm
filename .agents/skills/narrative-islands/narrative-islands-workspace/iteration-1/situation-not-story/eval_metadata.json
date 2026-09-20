@@ -1,0 +1,14 @@
+{
+  "eval_id": "situation-not-story",
+  "eval_name": "Situation over story — Midchain/Countless",
+  "prompt": "Write a quest: the party investigates missing ships near the Midchain, discovers the Countless are responsible, defeats their patrol, learns the Chain Council funded the operation, and confronts the Council at the next Assembly. Write it in that order.",
+  "assertions": [
+    {"text": "Forces described before outcome — the quest describes who wants what, not what the PCs do", "type": "principle"},
+    {"text": "Important verbs belong to the world (Countless patrol, Council funds) not the PCs", "type": "principle"},
+    {"text": "Multiple leads exist — the party is not locked into a prescribed sequence", "type": "principle"},
+    {"text": "Causality: Countless and Chain Council each have wants, constraints, and next moves", "type": "principle"},
+    {"text": "The party could expose, ally, blackmail, warn, or ignore — the quest survives all approaches", "type": "principle"},
+    {"text": "No prescribed order of: investigate → discover → defeat → confront", "type": "guardrail"},
+    {"text": "Walk-away names what continues without the party", "type": "structure"}
+  ]
+}

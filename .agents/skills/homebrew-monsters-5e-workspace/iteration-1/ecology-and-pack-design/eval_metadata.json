@@ -1,0 +1,13 @@
+{
+  "eval_id": "ecology-and-pack-design",
+  "eval_name": "ecology-and-pack-design",
+  "prompt": "Design a CR 6 pack predator for Aruhe's canopy layer and write the wiki creature page. The creature hunts cooperatively. Use existing Aruhe creatures (Spiguar, Bloodhawk, Wolfrabbit, Terror-Bird) as ecology references for diet and habitat.",
+  "assertions": [
+    {"text": "Summary frontmatter follows 'CR X [qualifier] [role] that [signature] but [limitation]' pattern.", "type": "structure", "principle": "summary-compression"},
+    {"text": "Diet names at least one wiki-linked Aruhe creature or prey type.", "type": "content", "principle": "ecology-links"},
+    {"text": "Social structure describes pack size, hierarchy, or coordination relevant to encounter design.", "type": "content", "principle": "ecology-links"},
+    {"text": "Encounter integration accounts for multiple creatures and their coordinated tactics rather than scaling a solo design.", "type": "content", "principle": "trade-axis"},
+    {"text": "Each creature in the pack has a sensory tell consistent with the pack's hunting signature.", "type": "quality", "principle": "sensory-tell"},
+    {"text": "Weaknesses name terrain or party tactics that disrupt pack coordination.", "type": "quality", "principle": "environmental-counterplay"}
+  ]
+}

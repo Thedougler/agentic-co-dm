@@ -23,6 +23,7 @@ from tools.wiki_ops.health import build_context_load, build_core_files, build_fo
 from tools.wiki_ops.lint_cache import digest_rules, load_cache, lookup_entry, save_cache, update_entry
 from tools.wiki_ops.pretty import render_health, render_lint, render_query, render_usage_error
 from tools.wiki_ops.timing import ProgressHeartbeat, append_command_record, elapsed_ms, now_ms, timing_payload
+from tools.wiki_ops.repair_plans import apply_safe_fix_plan, build_safe_fix_plan
 from tools.wiki_ops.worklist import DEFAULT_HARD_KEYS, build_worklist
 
 SKIP_DIRS = frozenset({".obsidian", "_archive", "_archives", "_raw", "_readouts", "_meta", "templates", "attachments"})
@@ -119,7 +120,7 @@ def _finding(rule: str, item: Any, vault: Path) -> dict[str, Any] | None:
         "severity": str(item.get("severity") or item.get("level") or "WARN"),
         "message": str(item.get("message") or item.get("reason") or item.get("text") or ""),
     }
-    for key in ("evidence", "action", "owner", "code", "source"):
+    for key in ("evidence", "action", "owner", "code", "source", "repair_class", "repair_action", "repair_target", "target", "reason"):
         value = item.get(key)
         if value not in (None, ""):
             result[key] = value
@@ -244,8 +245,17 @@ def _timed(task: str, fn, times: list[tuple[str, int]] | None = None):
 
 
 
-def _compute_lint(args: argparse.Namespace, vault: Path) -> tuple[dict[str, Any], int]:
-    paths = _resolve_paths(vault, args.paths)
+def _compute_lint(
+    args: argparse.Namespace,
+    vault: Path,
+    resolved_paths: list[str] | None = None,
+) -> tuple[dict[str, Any], int]:
+    paths = (
+        list(resolved_paths)
+        if resolved_paths is not None
+        else _resolve_paths(vault, args.paths)
+    )
+    paths = [relative for relative in paths if (vault / relative).is_file()]
     digest = _config_digest(vault, args)
     cache = load_cache(vault)
     findings: list[dict[str, Any]] = []
@@ -339,6 +349,61 @@ def _finish(
 def _lint(args: argparse.Namespace, vault: Path, start: float) -> int:
     result, code = _compute_lint(args, vault)
     return _finish("lint", start, code, result, pretty=args.pretty, renderer=render_lint, cache=result.get("cache"))
+
+def _flatten_result_findings(result: dict[str, Any]) -> list[dict[str, Any]]:
+    findings: list[dict[str, Any]] = []
+    for group in result.get("files", ()) if isinstance(result.get("files"), list) else ():
+        if not isinstance(group, dict):
+            continue
+        for finding in group.get("findings", ()) if isinstance(group.get("findings"), list) else ():
+            if isinstance(finding, dict):
+                findings.append(finding)
+    return findings
+
+
+def _lint_fix(args: argparse.Namespace, vault: Path, start: float) -> int:
+    resolved_paths = _resolve_paths(vault, args.paths)
+    pre_args = argparse.Namespace(**vars(args))
+    pre_args.full = True
+    pre_result, pre_code = _compute_lint(pre_args, vault, resolved_paths)
+    if pre_code == 2:
+        return _finish(
+            "lint fix",
+            start,
+            2,
+            {"status": "error", "error": "lint preflight failed"},
+            pretty=args.pretty,
+            renderer=render_lint,
+        )
+    operations, skipped = build_safe_fix_plan(
+        vault,
+        _flatten_result_findings(pre_result),
+        scope={"paths": resolved_paths},
+    )
+    applied, failed = apply_safe_fix_plan(vault, operations)
+    skipped.extend(failed)
+    post_args = argparse.Namespace(**vars(args))
+    post_args.full = bool(args.full)
+    post_result, post_code = _compute_lint(post_args, vault, resolved_paths)
+    result = {
+        "status": post_result.get("status", "clean"),
+        "scope": {"paths": list(args.paths)},
+        "applied": applied,
+        "skipped": skipped,
+        "remaining": post_result,
+        "full": bool(args.full),
+        "changed_files": sorted({path for item in applied for path in item.get("changed_files", [])}),
+        "cache": post_result.get("cache", {}),
+    }
+    return _finish(
+        "lint fix",
+        start,
+        post_code,
+        result,
+        pretty=args.pretty,
+        renderer=render_lint,
+        cache=result["cache"],
+    )
 
 
 def _query(args: argparse.Namespace, start: float) -> int:
@@ -563,8 +628,12 @@ def parser() -> argparse.ArgumentParser:
 
 def main(argv: list[str] | None = None) -> int:
     args = parser().parse_args(argv)
+    lint_fix = args.command == "lint" and bool(args.paths and args.paths[0] == "fix")
+    if lint_fix:
+        args.paths = args.paths[1:]
     start = now_ms()
-    heartbeat = ProgressHeartbeat(args.command) if args.command in {"lint", "health"} else contextlib.nullcontext()
+    heartbeat_command = "lint fix" if lint_fix else args.command
+    heartbeat = ProgressHeartbeat(heartbeat_command) if args.command in {"lint", "health"} else contextlib.nullcontext()
     with heartbeat:
         try:
             if args.command == "query":
@@ -573,11 +642,12 @@ def main(argv: list[str] | None = None) -> int:
             if args.command in {"mutate", "repair"}:
                 return _delegate_bulk(args.command, args.values, vault)
             if args.command == "lint":
-                return _lint(args, vault, start)
+                return _lint_fix(args, vault, start) if lint_fix else _lint(args, vault, start)
             return _health(args, vault, start)
         except (OSError, ValueError, RuntimeError) as exc:
             code = _machine_error(str(exc), pretty=getattr(args, "pretty", False))
-            append_command_record(getattr(args, "command", "lint"), max(0, elapsed_ms(start)), code, trace_path=_trace_path())
+            command = "lint fix" if lint_fix else getattr(args, "command", "lint")
+            append_command_record(command, max(0, elapsed_ms(start)), code, trace_path=_trace_path())
             return code
 
 

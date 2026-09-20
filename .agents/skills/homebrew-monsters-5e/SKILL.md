@@ -8,13 +8,13 @@ description: Research, design, reskin, balance, audit, and revise monsters for t
 File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Success criteria
-- The monster has a memorable **fiction signature**, a readable role, counterplay, and a reason to exist in this encounter.
-- A custom combat feature communicates lore, origin, or stakes a second person can state. Number-only features are incomplete.
+- The monster has a **signature** a second person can restate, a role from the table, at least two named counterplays, and a stated encounter job.
+- Every custom feature has a sensory **tell** before the strike, an environmental **counterplay** the party can act on, and a **proof** (the observable cue that makes the signature fair). Exemplar pattern: Spiguar's grass silence → pounce; Bloodhawk's thump-thump → stoop; Blackrail's tremor dust → rush.
 - A substantial homebrew names the plot or character beat it manifests. Difficulty-only is incomplete.
 - Stock published opposition used unchanged does not need custom features. An explicit DM request for a stock or featureless fight overrides.
-- Mechanics use legal 2024/2025 notation, are internally consistent, calibrated against peers, and runnable without hidden arithmetic.
-- Output gives the DM decisions to make, not a pile of abilities. Prefer delete and clarify.
-- Setting-agnostic paraphrased rules language. Never paste WotC proprietary book text.
+- Mechanics use legal 2024/2025 notation, internally consistent, calibrated against peers, runnable without hidden arithmetic.
+- Output gives the DM decisions to make. Prefer delete and clarify.
+- Setting-agnostic paraphrased rules language.
 
 ## Rules basis and priority order
 When facts conflict use: (1) the user brief and table constraints; (2) 2024/2025 core rules and current public SRD; (3) reference-gate peer evidence; (4) numerical chassis and three-round budget; (5) stylistic flourish. State assumptions. Do not silently mix 2014 and 2024 math.
@@ -103,4 +103,4 @@ Exemplar: `wiki/entities/npc/Hinewai.md` (three staged statblocks keyed to Death
 - **theatre-of-the-mind**: spatial prose, tells, and runnable descriptions without a map.
 - **dungeon-design**: sites, rooms, hazards, terrain, and encounter architecture.
 - **session-beats**: reveal, escalation, pacing, and scene timing.
-- **qmd-retrieval**: campaign-vault retrieval; do not invent missing canon.
+- **qmd**: campaign-vault retrieval before invention.

@@ -74,7 +74,10 @@ def normalize_finding(
         "severity": str(severity),
         "message": str(message),
     }
-    for key in ("evidence", "action", "owner", "code", "source"):
+    for key in (
+        "evidence", "action", "owner", "code", "source",
+        "repair_class", "repair_action", "repair_target", "target", "reason",
+    ):
         value = finding.get(key)
         if value not in (None, ""):
             result[key] = value
@@ -186,7 +189,10 @@ def build_worklist(
                 for key in ("rule", "file", "line", "severity", "message")
                 if key in item
             }
-            for key in ("evidence", "action", "owner", "code", "source"):
+            for key in (
+                "evidence", "action", "owner", "code", "source",
+                "repair_class", "repair_action", "repair_target", "target", "reason",
+            ):
                 if key in item:
                     grouped_item[key] = item[key]
             grouped[page].append(grouped_item)
@@ -224,8 +230,8 @@ def build_worklist(
                 "findings": next_item["findings"],
                 "bytes": next_item["bytes"],
                 "action": (
-                    f"Run wiki lint {next_item['page']} --full, repair it, "
-                    "then rerun wiki lint."
+                    f"Run wiki lint fix {next_item['page']}, rerun the affected scope, "
+                    f"then use wiki lint {next_item['page']} --full only for remaining findings."
                 ),
             }
             if next_item

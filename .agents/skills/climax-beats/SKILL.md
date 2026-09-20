@@ -61,11 +61,11 @@ Highest-stakes confrontation resolved; threads harvested.
    threads is spectacle without payoff; harvesting an abandoned thread is a
    railroad.
 
-3. **Write the situation.** Name trigger, actors, stakes, visible information,
+4. **Write the situation.** Name trigger, actors, stakes, visible information,
    and at least two viable player responses. Theatre of the mind owns
    `[!narration]` for spoken text.
 
-4. **Prepare the resolution handoff.** Only a Resolution follows a Climax.
+5. **Prepare the resolution handoff.** Only a Resolution follows a Climax.
    State the **carry-forward**: what the confrontation resolved, what it cost
    (lives, resources, relationships, positions permanently changed), which
    threads reached their final state, and the **continuity change** — the
@@ -75,7 +75,7 @@ Highest-stakes confrontation resolved; threads harvested.
    resolved thread produces a Resolution disconnected from what the players
    just lived through.
 
-5. **Name what happens if they ignore, fail, or redirect.** Ignoring lets
+6. **Name what happens if they ignore, fail, or redirect.** Ignoring lets
    the highest-stakes pressure land without them. Failing resolves the
    confrontation against the party. Redirecting creates the new highest-stakes
    confrontation.

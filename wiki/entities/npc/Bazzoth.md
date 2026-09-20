@@ -4,7 +4,7 @@ category: entities
 tags: [shattered-sea, npc]
 sources:
   - "wiki/_raw/Grung clans.md"
-summary: Grung operative of unknown color named among the clans' current faces.
+summary: "Grung operative of unknown color named among the clans' current faces."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -14,10 +14,14 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T00:00:00Z
-updated: 2026-09-12T00:00:00Z
+updated: 2026-09-20
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: contact
+location: unknown
+faction: "[[grung-clans]]"
 visibility: dm
 relationships:
   - target: "[[grung-clans]]"
@@ -27,9 +31,42 @@ relationships:
 ---
 # Bazzoth
 
-Bazzoth is a Grung operative whose color is unknown. The source names him among the current faces of the [[grung-clans]] but gives no further role or location.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
+
+| **Role** | Contact |
+| --- | --- |
+| **Nature** | Grung operative of unknown color |
+| **Home** | Unknown |
+| **Wants** | Unknown |
+
+> **DM thesis:** Bazzoth is a named Grung operative whose current function and agenda are not established beyond appearing among the clans' current faces.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Bazzoth
+> Bazzoth is a Grung operative named among the current faces of the [[grung-clans]]. The source does not establish Bazzoth's color, appearance, voice, or equipment.
+```
+````
+
+## Running Bazzoth
+
+### First meeting
+
+The source does not record a first meeting, opening posture, or sample line for Bazzoth. Resolve those from the scene where this contact appears.
+
+### When posture changes
+
+The source does not establish Bazzoth's want, limit, leverage, or posture-change trigger. Keep those Unknown until a source or play event supplies them.
 
 ## Connections
 
-- [[grung-clans]]
-- [[calven-and-calveno]]
+| Connection | Meaning |
+| --- | --- |
+| [[grung-clans]] | Bazzoth is named among the clans' current faces. |
+| [[calven-and-calveno]] | The existing record links Bazzoth to Calveno, but does not state the nature of the connection. |

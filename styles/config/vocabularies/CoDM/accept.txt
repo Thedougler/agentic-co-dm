@@ -383,7 +383,6 @@ Chime
 Chimney
 Chip
 Choice
-Choir
 Chorewick
 Chosen
 Chronehall
@@ -542,7 +541,6 @@ dessa-wule
 Detto
 Detto Kalash
 detto-kalash
-Dialogue
 Disguise
 Dispensary
 Distiller
@@ -930,8 +928,6 @@ Hold
 Hole
 Holke
 Hollow
-Hollow Choir
-hollow-choir
 Hollowell
 Holst
 Hook
@@ -1209,9 +1205,7 @@ Matteo Scola
 matteo-scola
 Mave
 Mave Sorn
-Mave Sorn Dialogue Terms
 mave-sorn
-mave-sorn-dialogue-terms
 Maw
 Maw fissure and the tribute system
 Maw's
@@ -2081,7 +2075,6 @@ Taufa Fifita
 Taufa Fifita & Sons
 taufa-fifita
 Teeth
-Terms
 Terror-Bird
 terror-bird
 Terror-Birds
@@ -2136,7 +2129,6 @@ The Glass Debt
 The Gold-Caste Serene
 The Grandfather Hole
 The Grove
-The Hollow Choir
 The Hound of God
 The Hungry Isle
 The Interrogator

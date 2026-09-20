@@ -1,7 +1,10 @@
 ---
-updated: 2026-09-20T00:41:05Z
+updated: 2026-09-20T10:40:00Z
 ---
 ## Recent Activity
+- Repaired [[thistlewick]] as a place page, preserving its bramble hazard and making all unrecorded topology explicit; normalized the basename to lowercase.
+- Merged the thin [[Ozzeth]] stub into [[ozzeth-the-twiceborn|Ozzeth, the Twiceborn]], preserving the canonical NPC owner and adding the short alias.
+- Merged [[mave-sorn-dialogue-terms]] into [[mave-sorn]] because the page contained NPC dialogue, not standalone lore; removed the obsolete lore owner and updated indexes and manifest.
 - Full-vault structural lint repaired 115 findings across faction, lore, index, synthesis, and session pages; 10 fragmented-tag findings remain as a cross-linker handoff.
 - Merged the duplicate [[fathomrush-last-berth-false-log|Last Berth False Log]] into [[forged-rig-trial-certificate]]; retargeted live links and removed the redundant owner.
 - Integrated Murrat's cloud approach and Ket's one-turn warning into their owner pages; removed the duplicate session-prep notes and repaired the shroud hub links.

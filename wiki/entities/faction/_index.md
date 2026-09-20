@@ -21,7 +21,6 @@ base_confidence: 0.55
 - [[entities/faction/fisks-fleet|Fisk's Fleet]]
 - [[entities/faction/five-blades|Five Blades]]
 - [[entities/faction/grung-clans|Grung Clans]]
-- [[entities/faction/hollow-choir|Hollow Choir]]
 - [[entities/faction/house-kailani|House Kailani]]
 - [[entities/faction/house-renzetti|House Renzetti]]
 - [[entities/faction/khlysty-the-flock|Khlysty / the Flock]]

@@ -42,13 +42,6 @@ Retarget composition work:
 
 There is no `quest-design` skill. This skill owns quests.
 
-## Craft Basis
-
-Use node-based and clue-rich prep: Justin Alexander's node and clue guidance,
-Sly Flourish's secrets-and-clues prep, and Robin D. Laws's attention to turns of
-pressure all point to the same outcome here: prepare actionable information,
-several routes, and moving forces instead of a required sequence.
-
 ## Quest Method
 
 Three states:
@@ -117,20 +110,26 @@ materially, and at least one question remains open for play.
 
 Name the driver, what it wants, its current move, its next move if
 uninterrupted, and the end state if it gets what it wants. Progress portents are
-observable changes, not hidden bookkeeping.
+observable changes, not hidden bookkeeping. Portents advance on the driver's
+timeline — early arrival sees an earlier state than late arrival. If the prompt
+ties escalation only to party presence or arrival, convert it to an independent
+timeline the driver controls.
 
 Complete when: the driver and uninterrupted next move are concrete enough for
-the DM to advance the quest without `world-tick`. `world-tick` does not advance
-quest portents.
+the DM to advance the quest without `world-tick`, and portents produce a
+different situation depending on when the party engages. `world-tick` does not
+advance quest portents.
 
 ### 7. Build Leads and Routes
 
 Write at least two independent leads. Each lead points to useful progress from
 a different source, vector, or location. Losing one lead does not erase the
-quest.
+quest. If the prompt prescribes a single approach, open alternatives — the
+prompt describes a possible route, not the only route.
 
-Complete when: the party has at least two independent routes and no required
-sequence of actions.
+Complete when: the party has at least two independent routes, no required
+sequence of actions, and no single method (combat, stealth, negotiation) is
+the only viable path.
 
 ### 8. Fill Support Sections
 
@@ -177,9 +176,14 @@ point to at least two independent leads.
 - Mint `type: quest` only.
 - Retired campaign situations are quests; do not mint `type: front` or
   `type: encounter`.
-- Do not create or invoke a `quest-design` skill.
 - Night-only pressure stays in the session plan unless it needs a named quest
   page.
+- Reject anti-patterns from the prompt, not just in the audit. If the prompt
+  prescribes a frozen island (escalation paused until party arrives), a single
+  approach (only one method works), or a keyhole island (one chokepoint gates
+  all progress), convert it: give the world its own timeline, open alternative
+  routes, and add redundant bridges. The prompt describes the DM's intent; the
+  quest page must be playable.
 
 ## Done Check
 

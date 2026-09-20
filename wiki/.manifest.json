@@ -7279,7 +7279,7 @@
     "project": "shattered-sea",
     "source_type": "document"
   },
-  "last_updated": "2026-09-19T22:52:27Z",
+  "last_updated": "2026-09-20T10:23:07.709225+00:00",
   "page_identity_transitions": [
     {
       "page_path": "entities/faction/Khlysty.md",
@@ -7329,6 +7329,27 @@
       "target": "entities/place/Murrat.md",
       "reason": "Integrated into Murrat place page",
       "timestamp": "2026-09-19T22:46:56.993253+00:00"
+    },
+    {
+      "page_path": "entities/lore/mave-sorn-dialogue-terms.md",
+      "transition": "merged_into",
+      "target": "entities/npc/mave-sorn.md",
+      "reason": "Dialogue belongs on the Mave Sorn NPC owner page.",
+      "timestamp": "2026-09-20T10:13:23.488751+00:00"
+    },
+    {
+      "page_path": "entities/npc/Ozzeth.md",
+      "transition": "merged_into",
+      "target": "entities/npc/ozzeth-the-twiceborn.md",
+      "reason": "Thin Ozzeth stub duplicates the canonical Ozzeth, the Twiceborn owner.",
+      "timestamp": "2026-09-20T10:17:51.544550+00:00"
+    },
+    {
+      "page_path": "entities/place/Thistlewick.md",
+      "transition": "renamed_to",
+      "target": "entities/place/thistlewick.md",
+      "reason": "Normalized place basename to lowercase kebab-case.",
+      "timestamp": "2026-09-20T10:23:07.709225+00:00"
     }
   ],
   "sources": {

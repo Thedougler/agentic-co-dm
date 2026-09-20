@@ -11,7 +11,22 @@ def _value(data: Mapping[str, Any], key: str, default: Any = "") -> Any:
 
 
 def render_lint(result: Mapping[str, Any]) -> str:
-    """Render the compact lint overview and optional detailed findings."""
+    """Render lint and lint-fix results without expanding default output."""
+    if "applied" in result:
+        applied = _value(result, "applied", ())
+        skipped = _value(result, "skipped", ())
+        changed = _value(result, "changed_files", ())
+        remaining = _value(result, "remaining", {})
+        lines = [
+            "Lint fix: " + str(_value(result, "status", "unknown")),
+            f"Applied: {len(applied)}",
+            f"Skipped: {len(skipped)}",
+            f"Remaining: {_value(remaining, 'finding_total', 0)}",
+            "Changed files: " + (", ".join(str(path) for path in changed) or "none"),
+        ]
+        if _value(result, "full", False):
+            lines.extend(_render_findings(remaining))
+        return "\n".join(lines)
     counts = _value(result, "counts", {})
     cache = _value(result, "cache", {})
     ledger = _value(result, "ledger", {})
@@ -29,7 +44,11 @@ def render_lint(result: Mapping[str, Any]) -> str:
     if int(_value(ledger, "open", 0) or 0):
         ids = _value(ledger, "ids", ())
         lines.append("Ledger: " + (" ".join(str(item) for item in ids) or str(_value(ledger, "open"))))
+    lines.extend(_render_findings(result))
+    return "\n".join(lines)
 
+
+def _render_findings(result: Mapping[str, Any]) -> list[str]:
     groups = _value(result, "files", ())
     if not groups:
         groups = ({"file": _value(finding, "file", ""), "findings": (finding,)} for finding in _value(result, "findings", ()))
@@ -42,10 +61,7 @@ def render_lint(result: Mapping[str, Any]) -> str:
             rule = str(_value(finding, "rule", ""))
             message = str(_value(finding, "message", ""))
             findings.append(f"{file}:{line}  {rule}  {message}")
-    if findings:
-        lines.append("")
-        lines.extend(findings)
-    return "\n".join(lines)
+    return ["", *findings] if findings else []
 
 
 def render_query(result: Mapping[str, Any]) -> str:

@@ -94,7 +94,7 @@ def main() -> int:
     manifest_path.write_text(json.dumps(manifest, indent=2) + "\n")
     index = wiki / "index.md"
     index.write_text(index.read_text().replace("## Entities\n", "## Entities\n" + "".join(
-        f"- [[{Path(rel).stem}]] — Ingested campaign entity. ( #shattered-sea )\n" for _, rel in produced
+        f"- [[{Path(rel).stem}]] — Ingested campaign entity.\n" for _, rel in produced
     ), 1))
     log = wiki / "log.md"
     with log.open("a") as handle:

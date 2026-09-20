@@ -3,17 +3,22 @@ title: "Ozzeth, the Twiceborn"
 aliases:
   - Ozzeth, the Twiceborn
   - Ozzeth the Twiceborn
+  - Ozzeth
 category: entities
 tags: [shattered-sea, npc]
 sources:
   - "campaign-os:ozzeth-the-twiceborn.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
+status: dead
+role: rival
+location: "[[Calveno Sewer Magazines]]"
+faction: "[[grung-clans]]"
 visibility: dm
 summary: "A Grung mage branded Twiceborn by Gold caste, guards Magazine Delta in the sewers with control spells and dominates foes."
 provenance:
@@ -24,14 +29,57 @@ base_confidence: 0.55
 tier: supporting
 ---
 # Ozzeth, the Twiceborn
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
+
+| **Role**   | Grung mage and former Magazine Delta guardian |
+| ---------- | --------------------------------------------- |
+| **Nature** | Silent, disciplined, and marked by an unfinished color rite |
+| **Home**   | [[Calveno Sewer Magazines]]                  |
+| **Wants**  | Keep [[simone-tabarnack]]'s unsealed color-rite stable. |
+
+> **DM thesis:** Ozzeth protects Simone's secret through remote maintenance until his own disgrace and death make that protection impossible.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Ozzeth
+> A wiry Grung crouches at the tide line inside Magazine Delta, mottled green-and-grey hide slick with sewer damp. His hands are never still when he casts; red climbs one palm as blue drains from the other.
+```
+````
+
+## Running Ozzeth, the Twiceborn
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+In the recorded Session 06 encounter, Ozzeth guarded the Primary Chamber while protecting Solange's spell. He used silent control magic and tried to dominate Delmar.
+
+> [!narration] Ozzeth
+> “Hold still. This won't take long. Not for you.”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Ozzeth's posture changed when the party threatened the chamber or the people he was protecting. He is dead after Session 06; this page preserves the encounter and its consequences rather than presenting him as a current actor.
+```
+````
 
 **Wants:** to keep [[Simone]]'s unsealed color-rite stable from a distance, the one secret his own Twiceborn brand couldn't take from him, while Gold caste's reputation-work keeps him too disgraced to ever ask for open help.
 
-> [!narration] Narration
-> A wiry Grung crouches at the tide line inside Magazine Delta, mottled green-and-grey hide slick with sewer damp, eyes fixed on the vent above for movement. His hands are never still when he casts (red climbs one palm as blue drains from the other), the stalled Gold-caste rite still trying, uselessly, to finish what it started years ago.
 
 
-*Ozzeth*: "Hold still. This won't take long. Not for you."
+
 
 "Twiceborn" is not a name Ozzeth chose. It's Gold caste's own official term of censure, the brand stamped on a Grung caught mid-shift with an unsealed, incomplete color change. He and Simone Tabarnack, both power-hungry, independently found the same suppressed rite Gold caste keeps for reordering *someone else's* caste: a governance and punishment tool, never built to run on its own holder. Turned inward, it doesn't finish. His hands shifting red and blue mid-cast is that rite still stuck, permanently, mid-transfer. Gold couldn't move against him openly without admitting the rite exists and works, so the punishment went sideways, through reputation instead of force. With no standing of his own to resist it, "the mage-abomination" stuck outright, immediate and unchallenged. See [[grung-clans|Grung Clans]] for the caste-color mechanism this rests on.
 
@@ -48,7 +96,7 @@ Ozzeth found the rite first and went further with it than Simone ever managed al
 > [!mechanic]
 > **Ozzeth's Ossketh — incomplete arcane transmutation, background process.** The self-cast color-sealing rite never finished; it has been running unstably on his body for years (visible as the red-and-blue color shift in his hands during spellcasting). Detect Magic near Ozzeth: "Arcane transmutation — like a spell caught mid-execution, still running." His spellcasting is standard Arcane (Intelligence, wizard tradition) and is separate from the Ossketh. The unstable Ossketh is a background process — Counterspell cannot target it.
 
-## Stats & Combat
+**Combat package.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -132,7 +180,7 @@ Ozzeth casts with no speech, and [[Silence]] won't stop him (that trick won't wo
   independently, then became her mentor, keeping her own unsealed rite
   stable for years; his death here leaves it unmaintained
 
-## Session Log
+**Session log.**
 
 **Session 06** (`vault/episodes/006/`): fought in the Primary Chamber, warding [[solange-barret|Solange]]'s spell as his hands shifted red and blue. He cast Dominate Person at [[delmar-fisk]], but Delmar saved (roll 19, plus [[jean-claude-tabarnack|Jean-Claude]]'s help for 20) and shook it off.
 
