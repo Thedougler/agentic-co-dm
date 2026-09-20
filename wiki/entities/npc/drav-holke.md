@@ -13,6 +13,10 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: contact
+location: "[[the-saltwright]]"
+faction: "[[beaumonts-crew]]"
 visibility: dm
 summary: "Bosun aboard the Saltwright, practical and no-nonsense ship hand."
 provenance:
@@ -22,14 +26,57 @@ provenance:
 base_confidence: 0.55
 tier: supporting
 ---
+<!-- Copy-start scaffold. Who/want, look, first minutes and posture change, Connections (named ties). Single H1 only (`# Drav Holke`). Combat omit-if-empty. -->
+
 # Drav Holke
 
-Bosun aboard [[the Saltwright]] under [[beaumont-sel]].
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-**Appearance & Manner:** short and broad, sun-burned. Keeps stank leaf in a jar and a rolled cigarette behind one ear. Works rigging with speed and precision. Shuns small talk.
+| **Role**   | Contact |
+| ---------- | ------- |
+| **Nature** | Short, broad, sun-burned bosun and practical ship hand |
+| **Home**   | [[the-saltwright|The Saltwright]] |
+| **Wants**  | The ship's work done right, without wasted time |
 
-**Roleplay Notes:** practical and direct. Wants ship work done right. Hates wasted time and foolish questions.
+> **DM thesis:** Drav is the Saltwright's no-nonsense working standard: useful when the party respects shipboard competence, impatient when they turn a task into a discussion.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Drav Holke
+> Drav Holke is short and broad, sun-burned from shipboard work. He keeps stank leaf in a jar and a rolled cigarette behind one ear, and his hands move through rigging with practiced speed and precision. He shuns small talk.
+```
+````
+
+## Running Drav Holke
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Drav meets the party while checking rigging or directing work aboard the Saltwright. He gives the shortest useful answer and points to the task that needs doing. Sample line: “If you can do it, do it. If you can't, clear the deck.”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Drav's practical cooperation ends when the party wastes time, asks foolish questions instead of watching the work, or creates a rigging problem. He becomes direct and corrective rather than hostile; competent help restores his working posture.
+```
+````
 
 ## Connections
 
-Bosun under [[beaumont-sel]]. One of four hirelings crewing the Saltwright, alongside [[Fen]], [[lenne-vor]], and [[Wessa]].
+| Connection | Meaning |
+| ---------- | ------- |
+| [[the-saltwright]] | Drav is the vessel's bosun. |
+| [[beaumont-sel]] | Drav works under Beaumont Sel. |
+| [[beaumonts-crew]] | Drav is one of four hirelings in Beaumont's crew, alongside [[Fen]], [[lenne-vor]], and [[Wessa]]. |
