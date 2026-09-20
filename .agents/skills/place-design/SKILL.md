@@ -88,9 +88,36 @@ the wiki page.
 | Connections | Neighbors + how connected; name canon gaps |
 | Purpose | Why a party comes, stays, or cares |
 
+### Filing patterns
+
+These patterns appear in the strongest vault pages and make the output
+immediately runnable at the table:
+
+- **Navigation first.** If the party opens with movement verbs (follow, walk
+  back, descend, climb, stay on ridge) before interaction verbs (search, take,
+  fish, investigate). The DM reads top-down at the table; exits and routes come
+  before activities.
+- **Skip entry.** Include what the party loses by bypassing: "Skip hub: lose
+  fire ring, mats, fruit, and split." A place that cannot be skipped still
+  states the cost of retreat.
+- **Relative identity.** At a Glance states what makes this place different from
+  its neighbors: "Unlike Print Braid's grass braid or Cutoff Lip's sleep-shelf,
+  identity is the radial fire and spoke choices." Neighbors already exist in the
+  vault — name the contrast.
+- **Owner-page deferral.** When a creature, hazard, or rule appears in If the
+  party, wikilink the owner page and say "resolve on owner page" rather than
+  restating its full mechanics. The owner page is the source of truth; the
+  place page says what triggers contact and what changes.
+- **Absence honesty.** Who section states who is **not** here when the place is
+  empty: "No campers now; prints show prior survivors." This is DM truth, not
+  narration — the DM needs to know at a glance whether to prep an encounter.
+
 **Where:** explicit **North:** / **East:** / **South:** / **West:** lines with
 wikilinks + travel-day distances where known, and explicit canon-gap wording
-where unknown.
+where unknown. When reformatting an existing Where section into NESW, preserve
+every established detail — landmarks, route notes, environmental observations —
+by folding them into the appropriate cardinal entry or a closing note. Dropping
+content during a format conversion is worse than leaving the format loose.
 
 Rules vocabulary and type adjusters:
 [rules-and-place-types](references/rules-and-place-types.md). Living systems and

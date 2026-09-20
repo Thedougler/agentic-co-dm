@@ -151,7 +151,7 @@ Describe the physical logic of the region. Note its boundaries, internal divisio
 
 <!-- Use for forces that keep moving when ignored: villains, wars, plagues, migrations, storms, curses, ecological collapse, etc. Usually 1–3 active fronts are enough. Do not pre-script how the party responds. -->
 
-### [[front or threat]]
+## Front or threat
 
 * **Impulse / goal.** What drives it.
 

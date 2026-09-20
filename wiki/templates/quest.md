@@ -175,7 +175,7 @@ After meaningful play or campaign downtime:
 
 ## Resolution
 
-<!-- Fill when the quest reaches a stable outcome. Omit while unresolved. -->
+<!-- Fill when the quest reaches a stable outcome. Omit while unresolved, including the World changes and Loose threads subsections. -->
 
 **Outcome.** Resolved / Failed / Expired / Transformed
 

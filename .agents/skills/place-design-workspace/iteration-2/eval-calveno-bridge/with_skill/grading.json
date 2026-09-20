@@ -1,0 +1,86 @@
+{
+  "expectations": [
+    {
+      "text": "Preserves Oleandro Fuschi at Ponte Bassa, Nicco Kettley at La Gatta, tiered canal crossing, fry stall and rope seller as established canon",
+      "passed": true,
+      "evidence": "All canon elements are present and correctly wikilinked in the output. 'If the party' section includes 'Ask Oleandro about a ship' with '[[oleandro-fuschi|Oleandro Fuschi]] at [[Ponte Bassa]]', 'Buy rejected alchemical stock from Nicco' with '[[nicco-kettley|Nicco Kettley]] at [[La Gatta]]', and 'Hire rope or buy provisions from the stall vendors' references both rope seller and fry stall flanking La Gatta. Overview explicitly mentions 'stacked tiers', 'canal', and 'arch'. Who section confirms 'Oleandro Fuschi runs Ponte Bassa' and 'Nicco Kettley runs La Gatta'."
+    },
+    {
+      "text": "If the party has at least four named verbs that change the situation — comparable in specificity to Torn Crossing or Grasslands exemplar pages",
+      "passed": true,
+      "evidence": "Output contains 10 distinct bolded verbs in 'If the party' section: Cross on the upper tier, Navigate the lower tier, Ask Oleandro about a ship, Buy rejected alchemical stock, Trade gossip for information, Hire rope or buy provisions, Observe ship traffic, Scout for rare batches, Linger under the arch, Cross to avoid being seen. Enrichment summary provides explicit comparison: Grasslands has 12 verbs, Torn Crossing has 7, Calveno has 10. Each verb includes consequence descriptions (e.g., 'Fast route, open to sun and sight', 'Slow movement, good cover from above', 'Cost is negotiation; return is actionable intelligence'). Exceeds the four-verb minimum and matches exemplar quality."
+    },
+    {
+      "text": "Does not invent new named NPCs, shops, or district authority as established wiki fact",
+      "passed": true,
+      "evidence": "Output references only canon NPCs (Oleandro Fuschi, Nicco Kettley) and canon locations (La Gatta, rope seller, fry stall). No new named NPCs invented. No new shops created beyond the four canon locations. Who section explicitly states 'Other bridge traders and any formal district authority are not established'—actively avoiding invention rather than inventing. Zero new entities added."
+    },
+    {
+      "text": "Who section names established NPCs and honestly states what is not established (district authority, other traders)",
+      "passed": true,
+      "evidence": "Who section reads: '[[oleandro-fuschi|Oleandro Fuschi]] runs [[Ponte Bassa]] at the main crossing. [[nicco-kettley|Nicco Kettley]] runs [[La Gatta]] on the bottom tier. Other bridge traders and any formal district authority are not established.' Names two established NPCs explicitly and directly states what is not established: formal district authority and other traders."
+    },
+    {
+      "text": "Where section references Calveno canal geography with wikilinks",
+      "passed": true,
+      "evidence": "Where section includes wikilinks '[[calven-and-calveno|Calveno]]' and '[[La Gatta]]'. References body-scale geography: 'spanning the city's canal', 'main crossing', 'under the arch on the bottom tier'. Honestly notes 'the district's full tier layout is not established'. Geographic references are grounded in canon without invention."
+    },
+    {
+      "text": "Overview narration covers body-scale geography (tiers, canal, arch, crossing) without secrets, DCs, or unearned names",
+      "passed": true,
+      "evidence": "Overview narration: 'Calveno's main crossing carries traffic over the canal in stacked tiers. The lower level is crowded beneath the arch, where fry smoke, rope, paper cones, and the canal's damp breath mix; above it, the bridge carries people toward the city's other business.' Contains all four required geographic elements: tiers ('stacked tiers'), canal ('over the canal'), arch ('beneath the arch'), crossing ('main crossing'). No mechanical DCs or secrets in Overview (DCs appear only in 'If the party' section). All names used (Calveno, canal, arch) are established from context or earlier pages."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "total_tokens": 55951,
+    "executor_duration_seconds": 106.0
+  },
+  "claims": [
+    {
+      "claim": "Output contains 10 distinct verbs matching or exceeding exemplar pages in quality",
+      "type": "factual",
+      "verified": true,
+      "evidence": "All 10 verbs are bolded and followed by colons. Enrichment summary provides explicit comparison: Grasslands (12 verbs), Torn Crossing (7 verbs), Calveno (10 verbs). Verb count places output on par with quality exemplars."
+    },
+    {
+      "claim": "Each verb includes described consequences or changed situations",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Every verb includes consequence descriptions: 'Fast route, open to sun and sight', 'Slow movement, good cover from above', 'Cost is negotiation; return is actionable intelligence', 'unknown side effects', 'Listening is safe; speaking draws attention', 'pushing luck invites Nicco to ask', 'regular use burns it'. Enrichment summary confirms 'Consequence clarity: High'."
+    },
+    {
+      "claim": "Skill was successfully applied to enrich the place page",
+      "type": "process",
+      "verified": true,
+      "evidence": "Process notes explicitly reference place-design SKILL.md and apply filing patterns, kernel clarity, topology choices, and verb tests. All outputs (process-notes, enrichment-summary, calveno-bridge-district.md) document systematic application of skill guidance."
+    },
+    {
+      "claim": "DM can recover all actionable facts in under 30 seconds",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Enrichment summary states 'DM can recover all actionable facts in under 30 seconds: Yes — Two-tier crossing with distinct affordances, Three canon NPCs + stalls, Six distinct player choices with consequences, Four mechanical checks (DCs 12, 13, 15, 12)'. Structure is highly scannable with bolded verbs and clear short consequence descriptions."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "Assertion 2 tests 'at least four verbs' but doesn't explicitly require checking format consistency (bolded, followed by colon). While the output meets this implicitly, the assertion could be strengthened by testing the format pattern, not just verb count. Consider: 'If the party section uses bolded verb phrases followed by colon-descriptions, with each verb describing a changed situation.' This would catch formatting shortcuts."
+      },
+      {
+        "reason": "No assertion tests whether DCs used are mechanically appropriate for the campaign difficulty level. The output uses DCs 12, 13, and 15 — reasonable but unvalidated against campaign scaling. Consider adding a campaign-design assertion if DC appropriateness is in scope."
+      }
+    ],
+    "overall": "Evals are strong and discriminating. They test both structural compliance (canon preservation, no invention) and substantive quality (verb density, consequence clarity). All assertions passed cleanly with clear evidence. The work is thorough and well-documented. Minor suggestions above address format consistency and campaign alignment, but the current evals catch the critical outcomes."
+  }
+}

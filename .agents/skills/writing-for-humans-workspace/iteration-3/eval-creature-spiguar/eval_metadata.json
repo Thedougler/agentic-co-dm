@@ -1,0 +1,13 @@
+{
+  "eval_id": 6,
+  "eval_name": "creature-spiguar",
+  "prompt": "Polish the Spiguar creature page for signal density and table use. The page is at wiki/entities/creature/spiguar.md. Tighten visual reference, preserve statblock, all wikilinks and embeds.",
+  "assertions": [
+    {"text": "Frontmatter unchanged — all fields preserved exactly.", "type": "structural"},
+    {"text": "All wikilinks and image embeds intact.", "type": "structural"},
+    {"text": "Statblock unchanged — all numbers, abilities, and formatting preserved.", "type": "structural"},
+    {"text": "Visual reference describes silhouette, body parts, and one sensory behavior.", "type": "qualitative"},
+    {"text": "No dead weight — every line changes a DM choice or encounter handle.", "type": "qualitative"},
+    {"text": "No invented mechanics or abilities not in statblock/source.", "type": "structural"}
+  ]
+}

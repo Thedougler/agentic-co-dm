@@ -38,7 +38,6 @@ base_confidence: 0.55
 - [[entities/quest/the-taken-314|The taken 314]]
 - [[entities/quest/velvet-noose-intercept|Velvet Noose Intercept]]
 - [[entities/quest/warren-bela-silt-paw|Warren, Bela Silt-Paw]]
-- [[entities/quest/warren-ferrin-locke|Warren, Ferrin Locke]]
 - [[entities/quest/warren-grung-in-the-sewers|Warren, Grung in the Sewers]]
 - [[entities/quest/warren-marrows-crate|Warren, Marrow's Crate]]
 - [[entities/quest/yssenmoors-ancient-challenge|Yssenmoor's Ancient Challenge]]

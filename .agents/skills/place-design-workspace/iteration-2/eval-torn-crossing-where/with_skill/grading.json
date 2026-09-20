@@ -1,0 +1,74 @@
+{
+  "expectations": [
+    {
+      "text": "Where section uses explicit **North:** / **East:** / **South:** / **West:** lines (not a freeform list)",
+      "passed": true,
+      "evidence": "The improved Where section contains all four cardinal directions with bold formatting and bullet structure: **North:** [[line-bank|Line Bank]] (upvalley through [[grasslands]]), **East:** Canon gap — unknown, **South:** [[landing-bank]] (downvalley), **West:** Canon gap — unknown. (Bank-woods and jungle visible on inland edge, direction unmapped.). This matches explicit NESW format required by place-design skill line 115."
+    },
+    {
+      "text": "Preserves established neighbors: North to Line Bank, South to Landing Bank, with wikilinks",
+      "passed": true,
+      "evidence": "Original Where section: North='The cut continues upvalley through [[grasslands]] to [[line-bank|Line Bank]]', South='[[landing-bank]]'. Improved Where section: North='[[line-bank|Line Bank]] (upvalley through [[grasslands]])', South='[[landing-bank]] (downvalley)'. Both wikilinks are intact ([[line-bank|Line Bank]] and [[landing-bank]]), and travel direction context is preserved and clarified."
+    },
+    {
+      "text": "East direction has explicit canon-gap wording or references the jungle wall / woods without inventing a named site",
+      "passed": true,
+      "evidence": "The improved Where section marks East as 'Canon gap — unknown' with no invented named site. This follows place-design skill guidance (line 26: 'Do not invent a named site to fill a direction'). The West entry acknowledges the jungle wall exists ('Bank-woods and jungle visible on inland edge, direction unmapped') without assigning it a cardinal direction or naming it as an established fact."
+    },
+    {
+      "text": "Does not drop established Where content (inland woods, downstream route, Spiguar hunting context)",
+      "passed": false,
+      "evidence": "The original Where section (torn-crossing.md lines 61-67) contained: (1) 'Inland: Woods on the jungle side of the grass' — the improved version rephrases this to 'Bank-woods and jungle visible on inland edge, direction unmapped' (preserving the concept but changing specific wording); (2) 'Smoke inland in this same valley is a sign beyond this stretch, not a place on it' — this detail is DROPPED entirely from the improved Where section and does not appear in the outputs/torn-crossing-where-improved.md or the Where section of outputs/torn-crossing-full-improved.md (it does appear in the What section of the full page, representing a section reorganization rather than true preservation of Where-specific content); (3) downstream route detail is preserved as 'South: [[landing-bank]] (downvalley)' instead of original 'West: Downstream to [[landing-bank]]', so this is properly preserved. The smoke note removal violates the requirement to not drop established Where content."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 1,
+    "total": 4,
+    "pass_rate": 0.75
+  },
+  "execution_metrics": null,
+  "timing": {
+    "executor_duration_seconds": 127.7,
+    "total_duration_seconds": 127.7
+  },
+  "claims": [
+    {
+      "claim": "The improved Where section follows place-design skill NESW format requirement (SKILL.md lines 115-117)",
+      "type": "factual",
+      "verified": true,
+      "evidence": "All four cardinal directions are present with explicit labels, wikilinks for known neighbors, travel context ('upvalley', 'downvalley'), and canon-gap wording for unknown directions. Matches exemplar cutoff-lip.md structure."
+    },
+    {
+      "claim": "The task correctly prevents invention by marking East and West as canon gaps",
+      "type": "factual",
+      "verified": true,
+      "evidence": "East is marked 'Canon gap — unknown' without naming a site. West is marked 'Canon gap — unknown' and notes the jungle wall 'direction unmapped' rather than assigning it. This aligns with skill line 26 (Refuse: Invention)."
+    },
+    {
+      "claim": "The smoke note detail was preserved in the improved output",
+      "type": "factual",
+      "verified": false,
+      "evidence": "The original Where section included 'Smoke inland in this same valley is a sign beyond this stretch, not a place on it.' This line does not appear in the improved Where section (torn-crossing-where-improved.md lines 1-9) or the Where section of the full improved page (torn-crossing-full-improved.md lines 61-66). The content exists in the What section of the full page, indicating reorganization rather than preservation in the Where context."
+    }
+  ],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [
+      "Assertion 4 failure: The smoke note was established Where content in the original and is now missing from the improved Where section, even though it appears in What. Clarify whether moving Where content to another section constitutes 'dropping' or acceptable reorganization."
+    ],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "Does not drop established Where content (inland woods, downstream route, Spiguar hunting context)",
+        "reason": "The assertion passes 2 of 3 criteria (inland woods preserved in rephrased form, downstream route preserved as South/downvalley) but fails on the smoke note removal. Consider whether the assertion should distinguish between content preservation (semantic meaning preserved even if reorganized elsewhere) vs. section-specific preservation (content remains in the Where section). The task context (converting to NESW cardinal format) might justify reorganizing non-directional metadata (like the smoke visibility note) to more appropriate sections, but the strict reading of the assertion is that Where content was dropped."
+      },
+      {
+        "reason": "Strong assertions overall: Assertion 1 (structure) and Assertion 3 (guardrail) are discriminating — they catch real skill violations. Assertion 2 (content preservation) is satisfied by the task. Assertion 4 is the weakest: it attempts to catch over-simplification but is ambiguous on section-level preservation vs. page-level preservation. Consider clarifying in future evals whether the Where section should be evaluated in isolation or as part of the full page's content distribution."
+      }
+    ],
+    "overall": "The evaluation is well-structured and catches a meaningful issue (content reorganization). The skill application is correct: the improved Where section properly implements NESW format with canon gaps and no invention. The failure on Assertion 4 reflects a reasonable but strict interpretation — the smoke note was Where-section content originally, and it is no longer in the Where section, even though the page preserves it elsewhere."
+  }
+}

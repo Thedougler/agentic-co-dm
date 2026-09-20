@@ -13,11 +13,27 @@ lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-kind: shop
+kind: site
+region: ""
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 type: place
 ---
 # Carpenters' Slip
 
+## Overview
+> [!narration] Narration
+> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: location. -->
+
+## At a Glance
 This workshop is referenced in item records as a source of timber and ship fittings.
+
+## If the party
+
+## Who
+
+## What
+
+## Where
+
+## Why

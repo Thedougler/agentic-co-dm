@@ -8,5 +8,10 @@ Read `.omp/config.yml` for model roles, caps, isolation, and discovery settings.
 
 ## Behavioral validation
 
-Use the weakest available configured model for every skill evaluation, behavioral test, benchmark, and related validation of agent behavior. Select the configured `smol` role when it is the weakest available role. Give it cold context (the changed instruction excerpt, task or slice, scope, and success criteria) and no write permission; reconcile its output before declaring that wiki behavior is complete. The `skill-creator` workflow is reserved for modifying agent skills; other agent-facing changes use their applicable workflow. Code, CLI, infrastructure, and other non-wiki changes use direct tests or smoke checks.
+For skill-creator test subagents, use the configured `task` model. Give cold
+context containing the changed excerpt, task, scope, and success criteria; grant
+no write permission; reconcile the output before completion.
+
+Prefer flexible, outcome-based guidance over rigid carveouts and unnecessary
+step-by-step specificity.
 

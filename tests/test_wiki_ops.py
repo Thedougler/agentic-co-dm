@@ -378,6 +378,7 @@ def test_typed_frontmatter_tag_and_link_mutations_preserve_document_shape(tmp_pa
         "---\ntitle: Page\ntags: [old]\n---\n# Page\n\nSee [[old-page]] and ![[old-page.png]].\n",
         encoding="utf-8",
     )
+    (tmp_path / "new-page.md").write_text("---\ntitle: New Page\n---\n# New Page\n", encoding="utf-8")
     assert apply_mutation(tmp_path, MutationOp("add_tag", "page.md", payload={"tag": "new"}))["accepted"]
     assert apply_mutation(
         tmp_path,
@@ -400,6 +401,29 @@ def test_typed_frontmatter_tag_and_link_mutations_preserve_document_shape(tmp_pa
     assert "tags: [old, new]" in text
     assert "lifecycle: active" in text
     assert "[[new-page]]" in text and "![[new-page.png]]" in text
+
+
+def test_link_repair_rejects_missing_or_ambiguous_page_target(tmp_path: Path):
+    page = tmp_path / "page.md"
+    page.write_text("---\ntitle: Page\n---\nSee [[old-page]].\n", encoding="utf-8")
+    missing = apply_mutation(
+        tmp_path,
+        MutationOp("repair_links", "page.md", payload={"old_target": "old-page", "new_target": "guessed-page"}),
+    )
+    assert missing["error"] == "target_not_found"
+    assert "[[old-page]]" in page.read_text(encoding="utf-8")
+
+
+def test_page_rename_supports_case_only_names(tmp_path: Path):
+    source = tmp_path / "Page.md"
+    destination = tmp_path / "page.md"
+    source.write_text("---\ntitle: Page\n---\n# Page\n", encoding="utf-8")
+    destination_alias = destination.exists()
+    result = apply_mutation(tmp_path, MutationOp("rename_page", "Page.md", payload={"new_target": "page.md"}))
+    assert result["accepted"]
+    assert destination.read_text(encoding="utf-8").startswith("---")
+    if not destination_alias:
+        assert not source.exists()
 
 
 def test_typed_mutation_rejects_invalid_selector_without_writing(tmp_path: Path):

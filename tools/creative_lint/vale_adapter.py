@@ -145,6 +145,8 @@ def run_vale(files: list[Path], registry: Registry, *, root: Path | None = None,
     global TIMING
     TIMING = {}
     root = (root or ROOT).resolve()
+    if not files:
+        return [], []
     if not (root / ".vale.ini").is_file():
         return [], []
     warnings: list[str] = []

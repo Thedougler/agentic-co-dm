@@ -1,0 +1,72 @@
+{
+  "expectations": [
+    {
+      "text": "Each location move states actor, trigger, visible result, new opportunity, and lasting consequence positively — not negation-only",
+      "passed": true,
+      "evidence": "All four moves state their components positively. Move 1: 'Hinewai withdraws,' 'predators step forward,' 'air grows heavier' (positive). Move 2: 'pale bracts rise,' 'dark needles sharpen' (positive; constraint 'does not advance' is mitigated by positive 'holds position'). Move 3: 'sacs rupture,' 'cloud bursts,' 'hallucinations begin' (positive). Move 4: 'grass coils,' 'roots bulge,' 'ground becomes treacherous' (positive). No move relies on negation-only framing."
+    },
+    {
+      "text": "Moves are grounded in established Memorial Grove content (Hinewai, Death Bloom, Stillbloom, Spirit Pollen, graves, fruit tree) — not invented actors or effects",
+      "passed": true,
+      "evidence": "All actors and mechanics verified against source wiki. Move 1: Hinewai (named NPC on hinewai.md with walking form and withdrawal behavior; line 53 memorial-grove.md confirms 'hinewai owns walking form and memorial pressure'). Silent mourners: explicitly referenced as 'independent predators' at line 54 memorial-grove.md. Move 2: Stillbloom listed at line 39 memorial-grove.md ('raises pale bracts and dark needles'). Move 3: Spirit Pollen listed at line 40 memorial-grove.md with full mechanics ('15-foot cloud,' 'Wisdom DC 15,' 'Spirit-Haunted'). Move 4: Death Bloom's bound soil and too-green grass: line 60 memorial-grove.md confirms 'bound soil' and 'too-green grass.' All mechanics (DC values, conditions) are pre-existing on the source pages. Zero new creatures, NPCs, or effects invented."
+    },
+    {
+      "text": "At least 2 location moves are provided",
+      "passed": true,
+      "evidence": "Four location moves provided: (1) Hinewai's Welcome Ends, (2) Stillbloom Rises, (3) Spirit Pollen Cloud, (4) Bound Soil Grips. Count exceeds minimum requirement of 2."
+    },
+    {
+      "text": "Lasting consequences change the Grove on return — no reset to default state",
+      "passed": true,
+      "evidence": "Each move establishes persistent consequences. Move 1: 'Hinewai's courtesy is revoked...On return, she may permit looking from the tree line only' (durable state change). Move 2: 'The bracts remain raised as long as the grave is actively exposed or threatened' (persistence tied to current conditions, not reset). Move 3: 'Burst sacs do not regenerate...If sacs remain intact, the hazard persists on future visits' (explicit non-regeneration). Move 4: 'Disturbed patches of grass remain darker or scarred afterward' (lasting environmental mark). Design notes explicitly state: 'On return, preserve what is durable and update what is alive; do not reset rooms by default.' All moves align with this principle."
+    },
+    {
+      "text": "Does not invent new creatures, named NPCs, or magical effects not already on the page or linked owner pages",
+      "passed": true,
+      "evidence": "Process notes section 'Constraint Validation' exhaustively verifies all actors and mechanics against source material. Hinewai: established on hinewai.md. Silent mourners: referenced as existing fauna ('independent predators') in memorial-grove.md. Stillbloom: hazard-listed in 'If the party' section. Spirit Pollen: full mechanics documented in 'If the party' section. Death Bloom, graves, fruit tree: established on memorial-grove.md. Mechanical conditions (Spirit-Haunted, Wisdom DC 15, Strength checks): all pre-existing on source pages. Conclusion explicitly states: 'No new creatures, NPCs, or effects invented.'"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "total_tokens": 57423,
+    "duration_seconds": 97.0
+  },
+  "timing": {
+    "executor_duration_seconds": 97.0
+  },
+  "claims": [
+    {
+      "claim": "All four moves follow the location move structure: trigger, actor, visible result, new opportunity, lasting consequence",
+      "type": "structural",
+      "verified": true,
+      "evidence": "Each move is explicitly formatted with all five components clearly separated. Example (Move 1): Trigger: 'Party picks living fruit...', Actor: 'Hinewai in her walking form', Visible result: 'Hinewai withdraws...', New opportunity: 'Party can now observe...', Lasting consequence: 'Hinewai's courtesy is revoked...'"
+    },
+    {
+      "claim": "Moves align with place-design skill guidance on location moves",
+      "type": "process",
+      "verified": true,
+      "evidence": "Process notes explicitly validate against SKILL.md line 68 ('2–4 location moves with actor, trigger, visible result, new opportunity, lasting consequence') and place-craft.md patterns (close route, recruit help, relocate resource, reveal cost, escalate ritual, exploit choice). All moves are classified by type and mapped to these patterns."
+    },
+    {
+      "claim": "Moves preserve player agency and avoid single-lever design",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Each move offers multiple options and workarounds. Move 1: negotiate vs. observe. Move 2: Study, climb, or negotiate. Move 3: retreat, Create wind, cover mouths, Search source. Move 4: Study roots, escape with check, or negotiate. Design notes explicitly state: 'preserve player agency (retreat, negotiation, clever solutions).'"
+    },
+    {
+      "claim": "The Death Bloom is treated as a place, not an object",
+      "type": "conceptual",
+      "verified": true,
+      "evidence": "Design notes state: 'All four moves flow from the memorial's nature as a place-bound phylactery...responses come from the place itself, its guardians, and its living systems — not from Hinewai's combat stat block.' Moves activate place-bound systems (Stillbloom, Spirit Pollen, bound soil) rather than treating the Bloom as an extractable object."
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Evals are well-designed and discriminating. All five assertions test meaningful outcomes that would fail if key content was missing, invented, insufficiently grounded, or if consequences didn't persist across visits. The assertions are neither trivial nor over-specified. The 'quality' assertion (positivity check) is particularly strong, catching superficial compliance. No suggestions for improvement."
+  }
+}

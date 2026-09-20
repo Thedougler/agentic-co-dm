@@ -2,7 +2,7 @@
 
 Reference for checks 1–14, run during full-vault lint and bulk repair. The deterministic script handles detection for HARD/soft keys; checks below add what it cannot detect. Run in order, report findings as you go.
 
-**Scope:** skip `_archives/`, `_raw/`, `_readouts/`, `.obsidian/`. Redirect stubs (`redirects_to`) skipped in orphan, frontmatter, and creative checks. Reserved `README.md`, `AGENTS.md`, `index.md`, `log.md`, `hot.md` are operational, not content pages.
+**Scope:** skip `_archives/`, `_raw/`, `_readouts/`, `.obsidian/`. Redirect stubs (`redirects_to`) are skipped in orphan, frontmatter, and content checks. Reserved `README.md`, `AGENTS.md`, `index.md`, `log.md`, `hot.md` are operational, not content pages.
 
 ### 1. Orphaned Pages
 
@@ -74,7 +74,7 @@ Every page should have `summary:` (1–2 sentences, ≤200 chars) for cheap retr
 
 ### 12. Confidence and Lifecycle Schema
 
-Script detects `bad_type` and `bad_lifecycle`. Additional agent checks below. Two modes: `--check` (report only), `--consolidate` (approved structural maintenance — never rewrites `base_confidence`). Confidence is a semantic judgment — deterministic tools cannot infer it from source strings.
+Script detects `bad_type` and `bad_lifecycle`. Additional agent checks below. `--check` reports; repair mode applies the same lint loop. Confidence is a semantic judgment — deterministic tools cannot infer it from source strings.
 
 #### 12a — `lifecycle` enum
 

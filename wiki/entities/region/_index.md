@@ -15,7 +15,6 @@ base_confidence: 0.55
 - [[entities/region/Aldenmere|Aldenmere]]
 - [[entities/region/aruhe|Aruhe]]
 - [[entities/region/ashwall-islands|Ashwall Islands]]
-- [[entities/region/Ashwalls|Ashwalls]]
 - [[entities/region/central-strait|Central Strait]]
 - [[entities/region/crown-islands|Crown Islands]]
 - [[entities/region/Doldrums|Doldrums]]

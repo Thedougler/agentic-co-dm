@@ -7,15 +7,57 @@ tags: [shattered-sea, quest]
 sources:
   - "campaign-os:Sawek.md"
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 type: quest
 lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+status: offered
+scope: local
+region: ""
+quest_giver: ""
+factions: []
+deadline: ""
+last_advanced: 2026-09-19
 summary: "A local bounty concerning a territorial Sawek near Kalowe's blue holes."
 base_confidence: 0.20
 ---
 # Kalowe — The Sawek Bounty
 
-A local bounty concerning a territorial [[Sawek]] near [[Kalowe]]'s blue holes.
+## At a Glance
+
+## Situation
+
+### What the party knows
+
+> [!narration] Player-facing brief
+> A local bounty concerning a territorial [[Sawek]] near [[Kalowe]]'s blue holes.
+
+### What is really happening
+
+## World in motion
+
+### Progress
+
+## Leads & routes
+
+## People & factions
+
+## Relevant places
+
+## Useful things
+
+## Rewards & consequences
+
+### Promised
+
+### Possible
+
+### Fallout
+
+## Resolution
+
+### World changes
+
+### Loose threads

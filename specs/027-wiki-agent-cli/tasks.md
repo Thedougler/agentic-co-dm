@@ -232,3 +232,19 @@ Serialize `tests/test_wiki_cli.py` writes.
 - Do not add npm wrappers
 - Do not add a second benchmark file
 - `focus` layout items only from existing remorph/layout plans
+## Phase 11: Error-ledger remediation
+
+**Purpose**: Close actionable ledger findings that weaken the unified agent-facing wiki surface.
+
+- [x] T036 [US1] Keep scoped lint findings scoped while surfacing ledger state separately; preserve actionable finding metadata in worklists and health (`scripts/wiki`, `tools/wiki_ops/worklist.py`, `tests/test_wiki_cli.py`)
+- [x] T037 [US1] Expose repair and typed mutations through the self-configuring `wiki` command with vault-relative paths (`scripts/wiki`, `tests/test_wiki_cli.py`, `docs/cli.md`, agent instructions)
+- [x] T038 [US1] Make link repair validate canonical existing page targets and reject guessed identities (`tools/wiki_ops/mutations.py`, `tests/test_wiki_ops.py`)
+- [x] T039 [US1] Support case-only page renames atomically on case-insensitive filesystems (`tools/wiki_ops/mutations.py`, `tests/test_wiki_ops.py`)
+- [x] T040 Make pytest and lint validation hermetic and remove stale repair guidance (`scripts/run-pytest`, instruction files, tests)
+- [x] T041 Verify focused and full validation, drain fixed ledger entries, and review the final diff (`scripts/error-ledger.py`, `errors.md`) — focused `59 passed`; full `118 passed, 18 subtests`; OMP baseline passed; e-168 remains open.
+ 
+## Phase 12: OMP session-start QMD refresh
+
+**Purpose**: Keep the QMD index and embeddings current before each new OMP session without blocking startup on optional QMD failures.
+
+- [x] T042 Add an awaited, silent `session_start` hook under `.omp/hooks/pre/` that reuses the bounded, lock-serialized `scripts/qmd-hook.sh` (`.omp/hooks/pre/qmd-session-refresh.ts`, `.omp/RULES.md`)

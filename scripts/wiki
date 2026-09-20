@@ -112,13 +112,18 @@ def _finding(rule: str, item: Any, vault: Path) -> dict[str, Any] | None:
         line = max(1, int(item.get("line") or location.get("line") or 1))
     except (TypeError, ValueError):
         line = 1
-    return {
+    result = {
         "rule": str(rule),
         "file": raw_file,
         "line": line,
         "severity": str(item.get("severity") or item.get("level") or "WARN"),
         "message": str(item.get("message") or item.get("reason") or item.get("text") or ""),
     }
+    for key in ("evidence", "action", "owner", "code", "source"):
+        value = item.get(key)
+        if value not in (None, ""):
+            result[key] = value
+    return result
 
 
 def _flatten(report: dict[str, Any], vault: Path) -> list[dict[str, Any]]:
@@ -295,16 +300,16 @@ def _compute_lint(args: argparse.Namespace, vault: Path) -> tuple[dict[str, Any]
         scope={"paths": list(args.paths)},
         cache={"hits": hits, "misses": misses, "vale_skipped": vale_skipped},
         hard_keys=hard_rule_set,
-        full=bool(getattr(args, "full", False)),
+        full=bool(getattr(args, "full", False) or len(args.paths) > 1),
         vault=vault,
         page_bytes=page_bytes,
         file_order=paths,
     )
     ledger = _ledger()
     result["ledger"] = ledger
-    if ledger["open"]:
-        result["status"] = "findings"
-    code = 1 if bool(result.get("counts")) or ledger["open"] else 0
+    # Lint scope describes checker output; operational ledger state is reported
+    # separately and belongs in holistic health status.
+    code = 1 if bool(result.get("counts")) else 0
     return result, code
 
 
@@ -364,9 +369,25 @@ def _query(args: argparse.Namespace, start: float) -> int:
             "path": path,
             "id": str(item.get("id") or item.get("docid") or item.get("source") or ""),
         })
+
     result = {"status": "ok", "collection": args.collection, "hits": hits[: args.count]}
     _progress("query", hits=len(result["hits"]), ms=elapsed_ms(start))
     return _finish("query", start, 0, result, pretty=args.pretty, renderer=render_query)
+
+def _delegate_bulk(command: str, values: list[str], vault: Path) -> int:
+    backend_command = "transact" if command == "repair" else "mutate"
+    forwarded = list(values)
+    if "--vault" not in forwarded:
+        forwarded.extend(["--vault", str(vault)])
+    if "--json" not in forwarded:
+        forwarded.append("--json")
+    proc = subprocess.run(
+        [sys.executable, str(ROOT / "scripts/wiki-bulk-ops"), backend_command, *forwarded],
+        cwd=ROOT,
+        capture_output=False,
+        text=True,
+    )
+    return proc.returncode
 
 
 def _run_json(command: list[str], cwd: Path) -> Any:
@@ -473,11 +494,15 @@ def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
     core = _timed("health.core", lambda: build_core_files(vault), times)
     if isinstance(context, dict):
         context["act"] = list(context.get("act") or []) + list(core.get("act") or [])
+    open_ledger = any(
+        isinstance(row, dict) and str(row.get("status", "")).casefold() == "open"
+        for row in (errors or [])
+    )
     _tune(
         "health",
         sorted(((name, ms) for name, ms in times if name != "health.lint"), key=lambda item: item[1], reverse=True),
     )
-    dirty = lint.get("status") == "findings" or bool(core.get("issues"))
+    dirty = lint.get("status") == "findings" or bool(core.get("issues")) or open_ledger
     result = build_health_snapshot(
         status="findings" if dirty else "clean",
         pages=len(pages),
@@ -525,6 +550,10 @@ def parser() -> argparse.ArgumentParser:
     query.add_argument("-n", "--count", type=int, default=10)
     query.add_argument("--pretty", action="store_true")
     query.add_argument("--json", action="store_true")
+    mutate = commands.add_parser("mutate", help="apply a typed semantic mutation")
+    mutate.add_argument("values", nargs=argparse.REMAINDER)
+    repair = commands.add_parser("repair", help="apply an approved typed repair plan")
+    repair.add_argument("values", nargs=argparse.REMAINDER)
     health = commands.add_parser("health")
     health.add_argument("paths", nargs="*")
     health.add_argument("--pretty", action="store_true")
@@ -541,6 +570,8 @@ def main(argv: list[str] | None = None) -> int:
             if args.command == "query":
                 return _query(args, start)
             vault = resolve_vault(configured_vault())
+            if args.command in {"mutate", "repair"}:
+                return _delegate_bulk(args.command, args.values, vault)
             if args.command == "lint":
                 return _lint(args, vault, start)
             return _health(args, vault, start)

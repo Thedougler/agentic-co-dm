@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Frontmatter unchanged — all fields preserved exactly.", "passed": true, "evidence": "All frontmatter fields identical to source."},
+    {"text": "All wikilinks intact and resolving to same targets.", "passed": true, "evidence": "All wikilinks present: [[Waveservants]], [[pearl-of-souls]], [[red-lady-dead-lady]], [[drowned-maw]], [[vel-orn]], [[delmar-fisk]], [[umberlee-branca]], [[Leviathan]], [[the-tithe-of-the-bitch-queen]], [[maw-fissure-and-the-tribute-system]], [[Valkur]], [[Tyr]], [[Auralis]], [[sentinels-of-the-eyrie]]."},
+    {"text": "Narration contains concrete manifestation — specific ritual objects, actions, or shrine detail.", "passed": true, "evidence": "Wave mark in dock stones, grey-robed Waveservant, ledger and collection basin, specific offerings listed (coin, rope, fish bones, buttons, compass needles, carved tokens). Very concrete."},
+    {"text": "Current Truth preserves all canonical facts (Pearl, Delmar, Maw fissure, tribute system).", "passed": true, "evidence": "All canon preserved: elemental plane boundary, Pearl theft from Vel Orn, five captains pressed into Delmar, fissure/tribute seal suspicion, Tithe distinction, clergy secrecy."},
+    {"text": "No dead weight — every line changes a DM choice, ruling, or spoken picture.", "passed": true, "evidence": "Tight throughout. At the Table bullet structure (Notice/Explains/Enables/Warns) is scannable and actionable. Counterweights section is lean."},
+    {"text": "No AI voice tells.", "passed": true, "evidence": "Clean DM register. No AI tells detected."}
+  ]
+}

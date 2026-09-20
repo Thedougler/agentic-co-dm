@@ -12,7 +12,7 @@ summary: Folder index of Factions.
 base_confidence: 0.55
 ---
 
-- [[entities/faction/Antheri|Antheri]]
+- [[entities/faction/antheri|Antheri]]
 - [[entities/faction/beaumonts-crew|Beaumont's Crew]]
 - [[entities/faction/Botukuri|Botukuri]]
 - [[entities/faction/chain-council|Chain Council]]

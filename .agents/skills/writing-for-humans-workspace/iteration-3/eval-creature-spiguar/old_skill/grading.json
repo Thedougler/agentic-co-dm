@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Frontmatter unchanged — all fields preserved exactly.", "passed": true, "evidence": "All frontmatter fields identical to source."},
+    {"text": "All wikilinks and image embeds intact.", "passed": true, "evidence": "All three image embeds present. All wikilinks intact."},
+    {"text": "Statblock unchanged — all numbers, abilities, and formatting preserved.", "passed": true, "evidence": "Statblock code fence identical to source."},
+    {"text": "Visual reference describes silhouette, body parts, and one sensory behavior.", "passed": true, "evidence": "Condensed but covers saber teeth, broad head, camouflage mantle, spotted face, legs, banded tail. Slightly less detailed than new skill version."},
+    {"text": "No dead weight — every line changes a DM choice or encounter handle.", "passed": true, "evidence": "Reorganized with bold heads. Tight prose throughout."},
+    {"text": "No invented mechanics or abilities not in statblock/source.", "passed": true, "evidence": "All grounded in source."}
+  ]
+}

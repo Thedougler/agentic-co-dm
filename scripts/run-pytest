@@ -16,15 +16,23 @@ def main() -> int:
     if not PYTHON.is_file():
         sys.stderr.write(f"Missing {PYTHON}. Restore the locked environment: uv sync\n")
         return 1
+    env = os.environ.copy()
+    env["PYTHONPATH"] = os.pathsep.join(filter(None, [str(ROOT), env.get("PYTHONPATH", "")]))
     probe = subprocess.run(
         [str(PYTHON), "-c", "import pytest; print(pytest.__version__)"],
         capture_output=True,
+        cwd=ROOT,
+        env=env,
         text=True,
     )
     if probe.returncode != 0:
         sys.stderr.write(REPAIR + "\n")
         return 1
-    os.execv(str(PYTHON), [str(PYTHON), "-m", "pytest", *sys.argv[1:]])
+    os.execve(
+        str(PYTHON),
+        [str(PYTHON), "-m", "pytest", *sys.argv[1:]],
+        env,
+    )
     return 1
 
 

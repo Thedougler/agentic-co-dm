@@ -504,6 +504,7 @@ Dario
 Dario Vanni
 dario-vanni
 Dath-Mar
+dath-mar
 Davu
 Davu Kamu
 davu-kamu
@@ -678,9 +679,6 @@ ferran-balt
 Ferrand's
 Ferrand's Wager
 ferrands-wager
-Ferrin
-Ferrin Locke
-ferrin-locke
 Ferrymoor
 Feyroa
 Fid
@@ -1136,7 +1134,6 @@ Lizardfolk Culture
 lizardfolk-culture
 Locate
 Locations
-Locke
 Locket
 Log
 Long
@@ -1230,6 +1227,7 @@ mercatura-and-otar
 Merchant's
 Merrow's
 Meth-Var
+meth-var
 Mid-Works
 Midchain
 Midchain West
@@ -1451,9 +1449,6 @@ pest-house-bandages
 Petera
 Petera Ngata
 petera-ngata
-Petra
-Petra Venn
-petra-venn
 Petrified
 Petro
 Petro Amaru
@@ -1538,6 +1533,7 @@ Rael Corven
 rael-corven
 Raider
 Ral-Arn
+ral-arn
 Rangi
 Rangi Kailani
 rangi-kailani
@@ -2397,7 +2393,6 @@ velvet-noose
 velvet-noose-intercept
 velvet-noose-marine
 velvet-noose-takes-the-lane
-Venn
 Venom-Cut
 Venom-Cut Poultice
 venom-cut-poultice
@@ -2462,20 +2457,16 @@ Warding
 Warning
 Warrant
 Warren
-Warren \(Ferrin Locke\)
 Warren \(Grung in the Sewers\)
 Warren \(Marrow's Crate\)
 Warren - Bela Silt-Paw
 Warren - Marrow's Crate
 Warren, Bela Silt-Paw
-Warren, Ferrin Locke
 Warren, Grung in the Sewers
 Warren, Marrow's Crate
 warren-bela-silt-paw
-warren-ferrin-locke
 warren-grung-in-the-sewers
 warren-marrows-crate
-Warren: Ferrin Locke
 Warren: Grung in the Sewers
 Warrior
 Watch

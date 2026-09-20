@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Frontmatter unchanged — all fields preserved exactly.", "passed": true, "evidence": "All frontmatter fields identical to source."},
+    {"text": "All wikilinks intact and resolving to same targets.", "passed": true, "evidence": "All wikilinks present and correct."},
+    {"text": "Narration contains concrete manifestation — specific ritual objects, actions, or shrine detail.", "passed": false, "evidence": "Narration reduced to two sentences: harbour stones wave mark and Waveservants taking coin. Lost the collection basin, ledger, the specific variety of tribute objects (rope, fish bones, buttons, compass needles, carved tokens). Too thin."},
+    {"text": "Current Truth preserves all canonical facts (Pearl, Delmar, Maw fissure, tribute system).", "passed": true, "evidence": "All canon facts preserved. Good Delmar passage, Maw boundary, tribute system."},
+    {"text": "No dead weight — every line changes a DM choice, ruling, or spoken picture.", "passed": true, "evidence": "Lean prose throughout. At the Table is tight."},
+    {"text": "No AI voice tells.", "passed": true, "evidence": "Clean register."}
+  ]
+}

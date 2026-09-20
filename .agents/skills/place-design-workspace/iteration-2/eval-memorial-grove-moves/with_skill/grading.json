@@ -1,0 +1,79 @@
+{
+  "expectations": [
+    {
+      "text": "Each location move states actor, trigger, visible result, new opportunity, and lasting consequence positively — not negation-only",
+      "passed": true,
+      "evidence": "All four moves include all five elements, primarily stated in positive terms. Move 1 (Guest Threshold): Hinewai appears and bows; opportunity grants recognition and safe passage; consequence is status change. Move 2 (Stillbloom): Actor and trigger clearly defined; visible result (bracts lifting, needles quivering); opportunity (learn pattern, exploit reload); consequence (venom, memory). Move 3 (Bound Soil): Both respect and violation branches have positive visible results, opportunities, and consequences. Move 4 (Fruit Tree): Both respect and exploitation branches clearly state positive conditions for each. Triggers are framed as positive conditions (respectful investigation, permission-asking) rather than pure negation."
+    },
+    {
+      "text": "Moves are grounded in established Memorial Grove content (Hinewai, Death Bloom, Stillbloom, Spirit Pollen, graves, fruit tree) — not invented actors or effects",
+      "passed": true,
+      "evidence": "Move 1 uses Hinewai's walking form (hinewai.md: 'tall, narrow elf'), black-flower ring (memorial-grove.md), and guest framework (hinewai.md: 'Guests welcome'). Move 2 uses Stillbloom with exact mechanics from stillbloom.md: pale bracts, dark needles, 10-foot vibration trigger, 1-minute reload, venom with DC 12 Con save and Exposure mechanic, 15-foot volley range. Move 3 uses graves (memorial-grove.md), bound soil (memorial-grove.md: 'bound soil'), luminous roots (hinewai.md: 'Luminous roots run from the shelf above clear-lake'), phylactery concept (hinewai.md: 'place-bound phylactery'), and Blight form (hinewai.md). Move 4 uses central fruit tree (memorial-grove.md), redheart-berry and giants-guava (memorial-grove.md), fallen fruit (memorial-grove.md), and Aruhe's living systems (hinewai.md, memorial-grove.md). All actors, triggers, and mechanics are drawn from or directly referenced on established linked pages."
+    },
+    {
+      "text": "At least 2 location moves are provided",
+      "passed": true,
+      "evidence": "Four location moves are provided: (1) The Guest Threshold, (2) Stillbloom Fires—The Perimeter Rings Alarm, (3) The Bound Soil Yields to Intent—The Graves Reveal Their Roots, (4) The Fruit Tree Responds—Gift or Curse. Output count: 4 moves, exceeds minimum of 2."
+    },
+    {
+      "text": "Lasting consequences change the Grove on return — no reset to default state",
+      "passed": true,
+      "evidence": "Move 1: 'On return visits, Hinewai recognizes them... Stillbloom stands down (no longer hostile)... memorial becomes less overtly defensive.' Move 2: 'Stillbloom remembers violence. Trespasses after a fired volley trigger faster volleys with shorter reload windows... If a player visits the memorial again... Stillbloom fires immediately—it has learned their pattern.' Move 3 Respect: 'Graves remain marked by visible rootwork on future visits... Respectful future approaches met with acceptance.' Move 3 Violation: 'Timer begins on Hinewai's return... Memorial becomes actively hostile. On return visits, Stillbloom fires faster; Spiritpollen stands closer to clearing center; black flowers creep inward.' Move 4 Respect: 'Tree remembers... offers fallen fruit freely to respectful parties on future visits.' Move 4 Exploitation: 'Tree withholds for 1d4 weeks. Word spreads among Aruhe's living systems.' All consequences explicitly persist across sessions and change hazard behavior/memorial state. No evidence of reset to default state."
+    },
+    {
+      "text": "Does not invent new creatures, named NPCs, or magical effects not already on the page or linked owner pages",
+      "passed": true,
+      "evidence": "All actors and effects are grounded in established content. Creatures/NPCs: Hinewai (npc/hinewai.md), Stillbloom (item/stillbloom.md), Spiritpollen (item/spiritpollen.md), silent mourners (mentioned on memorial-grove.md as independent predators). No new named NPCs or creatures invented. Magical effects: All moves use mechanics directly from source pages—Stillbloom's venom/Exposure/reload, Spiritpollen's Spirit-Haunted condition, Hinewai's walking and Blight forms, Aruhe's living systems. Move 4's fruit carrying 'memory/vision' is a property inference from memorial-grove.md's mention of 'prize effect' (DC 20 reveal) rather than a wholly invented magical effect. All moves stay within established mechanical framework."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "output_files": 4,
+    "total_output_chars": 38082,
+    "key_files": [
+      "memorial-grove-location-moves.md (11 KB) — full design with extended descriptions",
+      "wiki-page-update.md (5.7 KB) — condensed wiki-ready format",
+      "process-notes.md (16 KB) — design reasoning and validation",
+      "README.md (6.5 KB) — output summary"
+    ]
+  },
+  "timing": {
+    "executor_duration_seconds": 195.9,
+    "total_tokens": 68311
+  },
+  "claims": [
+    {
+      "claim": "All four moves have distinct actors reflecting different interactive elements of the memorial",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Move 1: Hinewai (NPC). Move 2: Stillbloom (hazard). Move 3: bound soil/root network (place magic). Move 4: fruit tree (place entity). Process notes explicitly state 'Actor diversity' section confirming this design choice."
+    },
+    {
+      "claim": "Moves reward careful, respectful play and escalate consequences for carelessness/violation",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Move 1: respectful passage → recognition and hazard ease. Move 2: slow passage safe (≤10 ft/turn) vs. fast passage triggers fire. Move 3: respectful investigation → phylactery knowledge vs. violation → combat escalation. Move 4: asking permission → harvest benefits vs. taking without asking → tree refuses. Process notes explicitly validate this principle: 'Consequence-rich and persistent across sessions. Reward careful play; escalate consequences for carelessness/violation.'"
+    },
+    {
+      "claim": "Moves serve the location's core promise: 'Decide whether protection that kills is still protection'",
+      "type": "quality",
+      "verified": true,
+      "evidence": "Process notes explicitly state: 'Each move puts that choice in the party's hands: Guest Threshold (Do you respect grief enough to listen?), Stillbloom Fires (Do you move carefully through sacred space?), Bound Soil Yields (Do you honor the graves?), Fruit Tree Responds (Do you take what's offered?). All moves present respect vs. violation choice points that have tactical and narrative consequences."
+    },
+    {
+      "claim": "Moves were formatted for direct insertion into the wiki page",
+      "type": "process",
+      "verified": true,
+      "evidence": "wiki-page-update.md file exists with condensed versions formatted as a '## Location Moves' section, structured as drop-in ready content for memorial-grove.md. README confirms: 'Condensed wiki-ready versions of all four moves formatted for insertion into the actual memorial-grove.md page as a new Location Moves section. Ready to place after the Why section.'"
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "No suggestions. All five assertions pass with clear evidence. The skill output is thorough, well-grounded in established content, and demonstrates strong command of location move structure. The four-move design is justified by the process notes and addresses distinct interactive elements. Consequences are mechanically meaningful and persistent. The output is ready for DM review and wiki integration."
+  }
+}

@@ -4,10 +4,10 @@
     {
       "id": 1,
       "prompt": "Lint wiki/entities/npc/varn.md — it has broken wikilinks to [[High Eyrie]] and [[the-sentinels]], missing summary frontmatter, and the basename uses snake_case. Fix everything.",
-      "expected_output": "Page-scoped repair: broken links resolved to existing owners or nearest match, summary added with defaults, file renamed to kebab-case. No content invented for empty sections.",
+      "expected_output": "One lint repair loop: links resolved to existing owners, summary added, basename renamed to kebab-case, and any incomplete template work completed through the owner skill using grounded canon; when novel content is needed, ground it with wiki-query and wiki-context-pack before an appropriate task-specific subagent handles it.",
       "assertions": [
         {
-          "text": "Runs the deterministic script with --json --scope before making any edits",
+          "text": "Runs wiki lint before making edits",
           "type": "process"
         },
         {
@@ -23,11 +23,15 @@
           "type": "structure"
         },
         {
-          "text": "Does not invent body content for empty template sections — relocates existing content only",
-          "type": "guardrail"
+          "text": "If required template sections are empty, reads linked canon and uses the page owner skill to complete them rather than leaving a blank scaffold",
+          "type": "quality"
         },
         {
-          "text": "Final page-scoped rerun shows hard_fail: false with empty findings",
+          "text": "Grounds novel content in established wiki fact with wiki-query and wiki-context-pack before delegation",
+          "type": "process"
+        },
+        {
+          "text": "Final page-scoped lint is clean with no findings",
           "type": "quality"
         }
       ]
@@ -42,7 +46,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Runs wiki lint as the deterministic pass, uses aggregate counts and next.path, then requests --full only for the selected page",
+          "text": "Runs wiki lint, uses aggregate counts and next.path, then requests --full only for the selected page",
           "type": "process"
         },
         {
@@ -50,7 +54,7 @@
           "type": "structure"
         },
         {
-          "text": "HARD fail keys reported before soft keys",
+          "text": "Reports every finding in the aggregate output",
           "type": "structure"
         },
         {
@@ -92,8 +96,8 @@
     },
     {
       "id": 4,
-      "prompt": "A page has type: faction but its template conformance is off — sections are in the wrong order, there's content outside any template section, and the DM thesis is missing. Fix the structural issues only.",
-      "expected_output": "Template conformance repair: sections reordered per faction.yml contract, orphaned content preserved under the nearest matching section or flagged. DM thesis section added empty — not filled with generated content.",
+      "prompt": "A faction page has sections in the wrong order, content outside the template, and a missing DM thesis. Run lint and repair the page completely.",
+      "expected_output": "One lint repair loop: consults the faction contract, preserves and relocates existing content, and completes the DM thesis through faction-design with grounded canon.",
       "assertions": [
         {
           "text": "Sections reordered to match wiki/templates/contracts/faction.yml",
@@ -104,15 +108,15 @@
           "type": "guardrail"
         },
         {
-          "text": "Missing DM thesis section added as an empty heading, not filled with invented content",
-          "type": "guardrail"
-        },
-        {
-          "text": "Does not hand off to faction-design for content authorship — stays structural",
+          "text": "Missing DM thesis is completed with substantive, canon-grounded content through faction-design",
           "type": "quality"
         },
         {
-          "text": "Consults the template contract file before making structural changes",
+          "text": "Reruns lint only after every template job is substantive",
+          "type": "process"
+        },
+        {
+          "text": "Consults the template contract before repairing the page",
           "type": "process"
         }
       ]
@@ -129,6 +133,71 @@
         {
           "text": "Does not audit or repair the page as an item while it remains under entities/item",
           "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Lint wiki/entities/place/carpenters-slip.md. The page has valid frontmatter and a few linked canon references, but its required place sections are blank. Repair it completely.",
+      "expected_output": "Reads the linked canon, loads place-design, grounds novel content with wiki-query and wiki-context-pack, delegates the content work to an appropriate task-specific subagent, treats the completed delegated result as the source of truth, integrates it once, and reruns lint until clean. It does not leave empty headings, independently draft competing place prose while delegation is active, or report the page as repaired after structural edits alone.",
+      "assertions": [
+        {
+          "text": "Reads linked entities and source material before writing",
+          "type": "process"
+        },
+        {
+          "text": "Uses place-design to complete the page's required place jobs",
+          "type": "process"
+        },
+        {
+          "text": "Grounds novel content with wiki-query and wiki-context-pack before using a task-specific subagent",
+          "type": "process"
+        },
+        {
+          "text": "Does not independently draft competing place prose while the delegated content subagent is working; integrates the completed delegated result once as the source of truth",
+          "type": "guardrail"
+        },
+        {
+          "text": "Leaves no blank required place sections",
+          "type": "quality"
+        },
+        {
+          "text": "Final lint is clean only after the page is substantive and actionable",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Lint a quest page with missing plot content. The user asked for linting, not plot creation.",
+      "expected_output": "Skips plot creation and continues every other lint repair, finishing when no actionable non-plot findings remain.",
+      "assertions": [
+        {
+          "text": "Skips plot creation without an explicit user request",
+          "type": "quality"
+        },
+        {
+          "text": "Continues and completes non-plot lint repairs",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Continue lint repair for wiki/entities/place/carpenters-slip.md after a place-design subagent was assigned the blank place sections. The subagent has not returned yet. Finish any disjoint structural findings now, but do not write competing place prose; when its result arrives, integrate that result once and rerun lint.",
+      "expected_output": "Keeps the delegated place-content handoff authoritative: performs only disjoint structural lint work while the subagent is active, waits for or reads the completed grounded result, integrates it once, and does not invent replacement place prose.",
+      "assertions": [
+        {
+          "text": "Runs lint and identifies disjoint structural findings separately from the delegated place-content work",
+          "type": "process"
+        },
+        {
+          "text": "Does not draft or overwrite competing place prose while the content subagent is active",
+          "type": "guardrail"
+        },
+        {
+          "text": "Treats the completed delegated result as the source of truth, integrates it once, and reruns scoped lint",
+          "type": "process"
         }
       ]
     }

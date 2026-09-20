@@ -11,7 +11,7 @@ from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any, Mapping
 
-from .index_ops import ENTRY_RE, insert_index_entry, parse_index, remove_index_entry, replace_index_entry
+from .identity import resolve_identity
 
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
 LINK_RE = re.compile(r"(!?\[\[)([^\]|#]+)(#[^\]|]*)?(\|[^\]]+)?(\]\])")
@@ -614,7 +614,21 @@ def _rewrite_links(text: str, old: str, new: str) -> str:
     return LINK_RE.sub(replace, text)
 
 
-def _repair_links(text: str, op: MutationOp) -> str:
+def _validate_link_target(root: Path, target: str) -> None:
+    page_target = str(target).split("#", 1)[0].strip()
+    if not page_target:
+        _fail("malformed_payload", "link repair target is empty")
+    if Path(page_target).suffix.casefold() in {".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".avif", ".mp4", ".webm"}:
+        return
+    try:
+        identity = resolve_identity(root, page_target)
+    except ValueError as exc:
+        _fail("target_not_found", f"link repair target is not an existing page: {page_target}")
+    if identity.status == "ambiguous" or identity.signals.get("redirect_match"):
+        _fail("identity_ambiguous", f"link repair target is not canonical: {page_target}")
+
+
+def _repair_links(text: str, op: MutationOp, *, root: Path | None = None) -> str:
     mapping = op.payload.get("mapping", op.payload.get("links"))
     pairs: list[tuple[str, str]] = []
     if isinstance(mapping, dict):
@@ -631,6 +645,9 @@ def _repair_links(text: str, op: MutationOp) -> str:
             pairs = [(str(old), str(new))]
     if not pairs:
         _fail("malformed_payload", "repair_links requires a link mapping")
+    if root is not None:
+        for _, new in pairs:
+            _validate_link_target(root, new)
     result = text
     for old, new in pairs:
         result = _rewrite_links(result, old, new)
@@ -704,7 +721,7 @@ def resolve_mutation(vault: str | Path, op: MutationOp, text: str | None = None)
     elif kind in {"add_tag", "remove_tag"}:
         result = _mutate_tag(current, op, add=kind == "add_tag")
     elif kind in {"repair_links", "rewrite_links"}:
-        result = _repair_links(current, op)
+        result = _repair_links(current, op, root=root)
     elif kind == "replace_index_entry":
         result = replace_index_entry(current, str(op.selector.get("slug", "")), str(op.payload.get("new_entry", "")))
     elif kind == "remove_index_entry":
@@ -724,6 +741,12 @@ def resolve_mutation(vault: str | Path, op: MutationOp, text: str | None = None)
 
     return result, diff
 
+def _same_file(left: Path, right: Path) -> bool:
+    try:
+        return os.path.samefile(left, right)
+    except (FileNotFoundError, OSError):
+        return False
+
 def _relative(root: Path, path: Path) -> str:
     return path.relative_to(root).as_posix()
 
@@ -737,6 +760,11 @@ def _diff_for(path: Path, root: Path, before: str, after: str) -> str:
 
 
 def _atomic_commit(changes: dict[Path, str], deletes: set[Path], originals: Mapping[Path, str | None]) -> None:
+    aliases = {
+        delete
+        for delete in deletes
+        if any(_same_file(delete, change) for change in changes)
+    }
     if set(changes) & deletes:
         _fail("overlap", "a path cannot be both written and deleted")
     paths = sorted(set(changes) | deletes, key=lambda path: str(path))
@@ -762,6 +790,8 @@ def _atomic_commit(changes: dict[Path, str], deletes: set[Path], originals: Mapp
             os.replace(staged[path], path)
             replaced.append(path)
         for path in sorted(deletes, key=lambda item: str(item)):
+            if path in aliases:
+                continue
             if path.exists():
                 path.unlink()
             else:
@@ -818,12 +848,13 @@ def _rename_changes(root: Path, op: MutationOp) -> tuple[dict[Path, str], set[Pa
                 _verify_hash(op, destination_text, [])
             return {}, set(), {}, _relative(root, destination)
         _fail("file_not_found", f"target file not found: {_relative(root, source)}")
-    if destination.exists():
+    case_only = destination.exists() and _same_file(source, destination)
+    if destination.exists() and not case_only:
         _fail("target_exists", f"destination already exists: {_relative(root, destination)}")
     source_text = _read_text(source)
     _verify_hash(op, source_text, [])
     changes: dict[Path, str] = {destination: source_text}
-    originals: dict[Path, str | None] = {source: source_text, destination: None}
+    originals: dict[Path, str | None] = {source: source_text, destination: source_text if case_only else None}
     deletes = {source}
     if op.payload.get("rewrite_backlinks", False):
         old = _relative(root, source)

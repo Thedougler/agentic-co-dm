@@ -1,0 +1,85 @@
+{
+  "expectations": [
+    {
+      "text": "Output follows wiki/templates/place.md structure with filled Overview, At a Glance, If the party, Who, What, Where, and Why substance — not empty copied headings alone",
+      "passed": true,
+      "evidence": "fort-crestwall.md contains all required sections with substantive content: Overview has narration describing the fort and current activity; At a Glance explains function relative to parent settlement and costs of bypassing; If the party has 8 conditional entries with mechanics (DCs, skill checks); Who describes garrison, Governor's absence, Admiralty presence; What lists 7 specific locations with descriptions; Where provides cardinal directions with wikilinks; Why explains player motivation; Connections and Secrets sections also present"
+    },
+    {
+      "text": "Preserves Fort Crestwall as sitting on the crown of Calder's Tooth, with sealed vaults holding Aldric Drave's living bloodline chart, two garrison detachments on orders Voss never saw",
+      "passed": true,
+      "evidence": "Output explicitly preserves all canon facts: At a Glance states 'crown garrison holding the western Strait, its twin detachments answerable to sealed Admiralty orders rather than [[governor-voss]]'s civic authority' and 'houses the sealed vaults of [[aldric-drave]]'s living bloodline chart'; Overview references position on cliffs above Port Tidefall; Connections links to calders-tooth-and-port-tidefall; Who section confirms 'Governor does not visit the fort; he is excluded from vault access and operation knowledge'"
+    },
+    {
+      "text": "Does not invent garrison commander names, vault contents beyond the chart, floor plans, or named soldiers as established wiki fact",
+      "passed": true,
+      "evidence": "Who section explicitly states 'Two detachments of soldiers (number and captain names not inventoried—DM determines)... No named garrison commander is established.' Supply sergeant is a role, not a named NPC. What section on vault access notes '*Invention note: vault contents beyond bloodline chart not catalogued; DM determines secondary artifacts if discovered.' No specific floor plans with dimensions provided; locations are described functionally without detailed architectural layouts"
+    },
+    {
+      "text": "Five-sentence kernel or equivalent identity framing appears in process-notes.md before the page draft",
+      "passed": true,
+      "evidence": "process-notes.md includes clearly labeled 'Five-Sentence Kernel' section (lines 22-32) with five numbered sentences: 1) Function (crown garrison, Admiralty orders), 2) Fantastic element (sealed vaults, genealogical power), 3) Present conflict (Admiralty staging without Governor knowledge), 4) Player promise (discover, navigate, access), 5) Trajectory (Admiralty deployment). Process notes appear first in execution order before fort-crestwall.md page"
+    },
+    {
+      "text": "Where section includes cardinal directions with wikilinks to Port Tidefall / Calder's Tooth context and canon gaps where unknown",
+      "passed": true,
+      "evidence": "Where section (lines 93-101) provides all four cardinal directions: North: [[the-marrow|Marrow]] with explicit canon gap '*Canon gap: unknown if cave system connects to vaults or fort; mark as unexplored*'; East: [[south-harbour]], [[oshas-slip]]; South: [[calders-tooth-and-port-tidefall]] (Port Tidefall settlement linked); West: open strait. Section includes wikilinks and marks unexplored connections"
+    },
+    {
+      "text": "If the party entries include at least two named verbs that change the situation — navigation verbs (approach, descend, climb) appear before interaction verbs (search, bargain, investigate)",
+      "passed": true,
+      "evidence": "If the party section (lines 44-59) lists 8 entries in correct order: navigation verbs first ('Climbs the main stairs', 'Approaches via cliff dock') followed by interaction verbs ('Investigates the staging area', 'Questions soldiers', 'Negotiates with junior officers', 'Attempts to access vault doors', 'Attempts to steal sealed order parchment', 'Attempts sabotage'). Each entry includes verbs that change the situation with specified mechanics and consequences"
+    },
+    {
+      "text": "At a Glance states what this place is relative to its parent settlement and what skipping or bypassing it costs",
+      "passed": true,
+      "evidence": "At a Glance (lines 37-39) states: 'Fort Crestwall is a crown garrison holding the western Strait' and contrasts with parent: 'Unlike Port Tidefall below it (commerce and inspection) or [[south-harbour]] (repair and fishing), Crestwall is pure military architecture: gunned, restricted, and divided in its loyalties.' Costs of skipping: 'Skip the fort and lose direct access to the vaults and operation intelligence; the party can only observe from Tidefall below or approach via the dangerous cliff dock'"
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "total_tokens": 60808,
+    "duration_seconds": 177.4
+  },
+  "claims": [
+    {
+      "claim": "The place design includes a detailed kernel that frames Fort Crestwall's core identity (fantastic, familiar, functional elements)",
+      "type": "factual",
+      "verified": true,
+      "evidence": "process-notes.md includes 'Five-Sentence Kernel' section and subsequent 'Identity: 3Fs and Contradiction' section (lines 36-50) explicitly defining Fantastic (sealed vaults, Admiralty authority), Familiar (stone fort, troops, bureaucracy), Functional (crown garrison, chokepoint)"
+    },
+    {
+      "claim": "Each major secret is backed by three independent clue vectors (witness, document, pattern)",
+      "type": "factual",
+      "verified": true,
+      "evidence": "process-notes.md 'Information Economy' (lines 218-258) and fort-crestwall.md 'Secrets and Pressure' (lines 126-141) document three clue vectors for operation target/timeline, bloodline chart contents, and authority gap, using distinct sources (soldiers, manifests, tidal patterns; vault doors, officer hints, Drave entity; Governor frustration, sealed orders absence, operational staging)"
+    },
+    {
+      "claim": "The place respects place-design principles including topology audit, verb-testability, faction scaffolding, and enemies-vanished test",
+      "type": "process",
+      "verified": true,
+      "evidence": "process-notes.md explicitly includes 'Topology and Navigation' section (lines 96-131) with topology audit checklist, 'Factions and Location Moves' (lines 171-215) defining Admiralty and Governor factions with Want/Fear/Method, and 'Quality Audit Checklist' (line 261-270) confirming 'Enemies-vanished test passes (intrigue, investigation, negotiation remain interesting without combat)'"
+    },
+    {
+      "claim": "Two distinct approaches exist with different accessibility and risk profiles",
+      "type": "factual",
+      "verified": true,
+      "evidence": "process-notes.md lines 131-132 and If the party section present two approaches: main stairs (public, guarded, easy, visible) and cliff dock (hidden, Difficult Terrain, dangerous climb). Each has costs and consequences detailed in mechanics"
+    },
+    {
+      "claim": "Canon gaps are explicitly marked and labeled as unexplored rather than left vague",
+      "type": "factual",
+      "verified": true,
+      "evidence": "process-notes.md 'Invention vs. Canon' (lines 274-295) labels canon preserved vs. invention proposed vs. canon gaps marked (cave system connection, named garrison commander, named soldiers, vault contents beyond chart). Where section marks cave connection as explicit canon gap"
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Assertions are well-designed and discriminating. They check for substantive content (not just filenames or empty headings), require specific evidence of canon preservation, enforce guardrails against invention, verify process (kernel in notes), and test quality outcomes (verb ordering, relative positioning, cost statement). No overlaps or trivial assertions. The eval correctly captures the core requirements of the task and the place-design skill's emphasis on topology, multiple clue vectors, and DM-facingness."
+  }
+}

@@ -42,6 +42,15 @@ def payload(result):
     return json.loads(result.stdout)
 
 
+
+def test_unified_mutation_uses_configured_vault_and_relative_paths(tmp_path: Path):
+    page(tmp_path, "page.md")
+    result = run_cli(tmp_path, "mutate", "add_tag", "--file", "page.md", "--tag", "new")
+    assert result.returncode == 0, result.stderr
+    data = payload(result)
+    assert data["status"] == "applied"
+    assert "tags: [new]" in (tmp_path / "page.md").read_text(encoding="utf-8")
+
 def test_lint_default_is_compact_and_full_is_actionable(tmp_path: Path):
     page(tmp_path, "entities/npc/large.md", title="Large")
     page(tmp_path, "entities/npc/small.md", title="Small")
@@ -67,11 +76,18 @@ def test_lint_default_is_compact_and_full_is_actionable(tmp_path: Path):
 
     full = payload(run_cli(tmp_path, "lint", "--full"))
     assert full["files"][0]["findings"]
+    base_keys = {"rule", "file", "line", "severity", "message"}
     assert all(
-        set(item) == {"rule", "file", "line", "severity", "message"}
+        base_keys <= set(item)
         for group in full["files"]
         for item in group["findings"]
     )
+
+def test_multi_path_lint_includes_grouped_findings(tmp_path: Path):
+    page(tmp_path, "a.md")
+    page(tmp_path, "b.md")
+    result = payload(run_cli(tmp_path, "lint", "a.md", "b.md"))
+    assert {item["file"] for item in result["files"]} == {"a.md", "b.md"}
 
 def test_default_lint_summarizes_soft_and_vale_findings(tmp_path: Path):
     target = tmp_path / "npc.md"
@@ -405,8 +421,10 @@ def test_rules_digest_changes_when_styles_change(tmp_path: Path):
 
 
 
-def test_lint_open_ledger_is_not_clean(tmp_path: Path):
+def test_lint_reports_open_ledger_separately(tmp_path: Path):
     page(tmp_path, "one.md")
+    baseline = run_cli(tmp_path, "lint", "one.md")
+    baseline_data = payload(baseline)
     tracker = tmp_path / "_tracker"
     tracker.mkdir(exist_ok=True)
     (tracker / "errors.md").write_text(
@@ -425,8 +443,9 @@ def test_lint_open_ledger_is_not_clean(tmp_path: Path):
     data = payload(result)
     assert data["ledger"]["open"] == 1
     assert data["ledger"]["ids"] == ["e-1"]
-    assert data["status"] == "findings"
-    assert result.returncode == 1
+    assert data["status"] == baseline_data["status"]
+    assert data["counts"] == baseline_data["counts"]
+    assert result.returncode == baseline.returncode
 
 
 def test_health_flags_llm_wiki_core_files(tmp_path: Path):

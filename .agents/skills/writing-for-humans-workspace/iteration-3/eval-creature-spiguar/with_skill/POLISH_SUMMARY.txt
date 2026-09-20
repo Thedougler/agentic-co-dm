@@ -1,0 +1,94 @@
+SPIGUAR CREATURE PAGE POLISH — WRITING-FOR-HUMANS SKILL APPLICATION
+
+WORKFLOW COMPLETED:
+✓ Step 1: Ground — Full page read end-to-end; no stale placeholders; all facts verified
+✓ Step 2: Choose band + surface — Owner page (DM reference); present tense; descriptive voice
+✓ Step 3: Draft lean — Identified and fixed dead weight and signal-density issues
+✓ Step 4: Table gate — Tested readability and DM usability; all diagnostics pass
+✓ Step 5: File — Output to target directory
+
+CHANGES MADE:
+
+1. VISUAL REFERENCE PARAGRAPH (Critical rewrite)
+   
+   BEFORE (6 sentences, 85 words, catalog voice):
+   "Heavy spotted cat with a broad head, long tail, large paws, and long ivory saber teeth. 
+   Golden-brown fur carries dark rosettes. Amber-gold eyes, a dark nose, and a dark muzzle 
+   mark the face. Fresh leaves, dry grass, vines, and plant fibers form a camouflage mantle 
+   over the back and shoulders. The mantle breaks up the outline and exposes the spotted 
+   face, legs, paws, and banded tail. The palette uses muted jungle green, dry grass brown, 
+   golden fur, and dark rosette markings."
+   
+   ISSUES FIXED:
+   - F0 dead weight: Catalog-style list ("with a broad head, long tail...") — removed
+   - F3 thin owner: Features listed without showing function — converted to prose showing how creature works
+   - Encyclopedia voice: "The palette uses..." had no table value — removed entirely
+   - Redundancy: Repeated narration details (eyes, muzzle, mantle visibility) — consolidated
+   - Passive voice: "carries," "mark," "form" — shifted to more active construction
+   
+   AFTER (4 sentences, 62 words, DM reference voice):
+   "A large spotted feline shaped for explosive ambush. Golden-brown fur carries dark rosettes 
+   throughout the body; the long banded tail helps balance the muscular frame. Fresh leaves, 
+   grass, vines, and plant fibers form a living mantle across the back and shoulders, breaking 
+   the silhouette in tall grass. Massive paws carry curved claws; ivory saber teeth project 
+   from the open mouth."
+   
+   SIGNAL-DENSITY GAINS:
+   - Every phrase now shows what a DM needs for improv (silhouette, mantle function, threat signals)
+   - Flows as connected prose, not bullet list
+   - Maintains all table-useful facts (size, coat, mantle construction, distinguishing features)
+   - Passes removal test: cutting any sentence removes essential DM information
+
+2. HABITAT BULLET (Minor tightening)
+   
+   BEFORE:
+   "Spiguars dominate the hottest open cuts of [[grasslands]], especially long channels where 
+   shaded banks and eight-foot grass force travelers to choose between cover and clear sight. 
+   They favor low rises and game trails. River bends and the line where grass gives way to 
+   the darker jungle rim also suit them."
+   
+   AFTER:
+   "Spiguars hunt in long grass channels of [[grasslands]], especially where eight-foot banks 
+   and shade force travelers to choose between sightline and cover. They favor low rises, game 
+   trails, river bends, and the jungle rim's edge."
+   
+   CHANGES:
+   - "dominate the hottest open cuts" → "hunt in" (more active verb, less encyclopedia-y)
+   - Streamlined compound sentences
+   - "shaded banks" → "shade" (tighter)
+   - Consolidated list of preferred terrain into one flowing unit
+   - All tactical information preserved
+
+PRESERVED:
+✓ Frontmatter (all fields)
+✓ Narration (already signal-dense, no changes needed)
+✓ Statblock (complete, unchanged)
+✓ All image embeds and captions
+✓ Behavior bullets except Habitat (Behavior, Diet, Social Structure all passed removal test)
+✓ All Tactics bullets (Signs, Instincts, Tactics, Weaknesses, Aftermath all table-useful)
+✓ All wikilinks intact: [[grasslands]], [[Deer-Stalker]], [[Wolfrabbit]], [[razer-grass]]
+
+TESTING:
+
+Removal test — every line:
+✓ Narration: Visual details that change how DM describes the encounter
+✓ Visual reference: Physical specs that affect player recognition and DM improv
+✓ Habitat: Terrain preferences that guide encounter placement
+✓ Behavior bullets: Ecological facts for world consistency
+✓ Tactics bullets: Combat and tracking information that changes DM decisions
+
+Per-band diagnostic (Owner page):
+✓ Could a DM use this to improv an unplanned encounter? Yes — sufficient detail on appearance, ecology, behavior, tactics
+✓ Does the page read as one voice? Yes — consistent DM reference tone throughout
+✓ Can the DM find tactical info quickly? Yes — Tactics section clearly indexed with bold heads
+✓ Hear it test: Would flow aloud for a DM reading at the table? Yes — varied sentence structure, active verbs, concrete nouns
+
+GATE COMPLIANCE:
+
+Earn it: Every phrase changes a choice, ruling, risk, or improv handle. No decorative atmosphere.
+Place it: Each fact in the surface where DM needs it (owner page reference voice).
+Hear it: Reads aloud with ordinary words; concrete images; varied sentence structure.
+
+RESULT:
+Signal-dense owner page that reads as a usable table resource, not a catalog or encyclopedia entry.
+The page tells the DM what they need to run this creature unplanned, in the voice they need it.

@@ -24,9 +24,8 @@
 - [[ashen-roost]] — Nesting grounds for firebirds that scorch and regrow the island in patches. The ash sells for a fortune. ( #shattered-sea #place)
 - [[Ashglass]] — Dead volcanic island in the eastern Midchain whose crater holds a young red dragon and a slag hoard. ( #shattered-sea #place)
 - [[Ashkevet]] — Named Dravosi prison the Lavinia note refuses to treat as her workplace. ( #shattered-sea #place)
-- [[ashwall-islands]] — Volcanic islands whose highlands and slopes form part of the Giant Owl's range. ( #shattered-sea #region)
+- [[ashwall-islands]] — Cold volcanic spires at the Galewall edge: last solid ground heading west and first safe lee returning east, with vent fauna and arclight phoenix hatch signs. ( #shattered-sea #region)
 
-- [[Ashwalls]] — Cold-water volcanic spires: last solid ground heading west and first safe lee returning east; feels hot, sulfurous, and opportunistic. ( #shattered-sea #region)
 - [[ASSETS]] — Drop map for Session 11 summary, transcript, and recording. ( #shattered-sea #session)
 - [[Auralis]] — Public Grung mandate and name associated with a serene gold presence whose exact nature remains unknown. ( #shattered-sea #lore)
 - [[bala-tane]] — Pit boss of The Mud Pits on Kalowe's third island, orc woman, mid-forties, has run the fights for fifteen years. ( #shattered-sea #npc)

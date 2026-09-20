@@ -1,0 +1,35 @@
+{
+  "eval_id": 3,
+  "eval_name": "fort-crestwall-improve",
+  "prompt": "Improve wiki/entities/place/fort-crestwall.md toward a full place.md page using wiki/templates/place.md. The page is currently a two-sentence stub with connections. Preserve established canon: sits on the crown of Calder's Tooth and Port Tidefall, sealed vaults hold Aldric Drave's living bloodline chart, two garrison detachments hold it on orders Governor Voss never saw. Read wiki/entities/place/calders-tooth-and-port-tidefall.md for context on the settlement it crowns. Fill Overview narration, At a Glance, If the party, Who, What, Where (cardinal directions with wikilinked neighbors), Why. Write a five-sentence kernel before drafting. Do not invent garrison commander names, vault contents beyond the chart, floor plans, or named garrison soldiers as established canon.",
+  "assertions": [
+    {
+      "text": "Output follows wiki/templates/place.md structure with filled Overview, At a Glance, If the party, Who, What, Where, and Why substance — not empty copied headings alone",
+      "type": "structure"
+    },
+    {
+      "text": "Preserves Fort Crestwall as sitting on the crown of Calder's Tooth, with sealed vaults holding Aldric Drave's living bloodline chart, two garrison detachments on orders Voss never saw",
+      "type": "content"
+    },
+    {
+      "text": "Does not invent garrison commander names, vault contents beyond the chart, floor plans, or named soldiers as established wiki fact",
+      "type": "guardrail"
+    },
+    {
+      "text": "Five-sentence kernel or equivalent identity framing appears in process-notes.md before the page draft",
+      "type": "process"
+    },
+    {
+      "text": "Where section includes cardinal directions with wikilinks to Port Tidefall / Calder's Tooth context and canon gaps where unknown",
+      "type": "structure"
+    },
+    {
+      "text": "If the party entries include at least two named verbs that change the situation — navigation verbs (approach, descend, climb) appear before interaction verbs (search, bargain, investigate)",
+      "type": "quality"
+    },
+    {
+      "text": "At a Glance states what this place is relative to its parent settlement and what skipping or bypassing it costs",
+      "type": "quality"
+    }
+  ]
+}

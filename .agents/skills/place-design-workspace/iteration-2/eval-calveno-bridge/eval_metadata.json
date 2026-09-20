@@ -1,0 +1,31 @@
+{
+  "eval_id": 5,
+  "eval_name": "calveno-bridge-improve",
+  "prompt": "Improve wiki/entities/place/calveno-bridge-district.md toward a richer place.md page. Read wiki/entities/place/calven-and-calveno.md for city context. Preserve established canon: tiered canal crossing, Oleandro Fuschi at Ponte Bassa tracking ships, Nicco Kettley at La Gatta selling rejected alchemical stock, fry stall and rope seller flanking La Gatta. Enrich If the party with named verbs grounded in the crossing. Do not invent new named NPCs, shops, or district authority as established canon.",
+  "assertions": [
+    {
+      "text": "Preserves Oleandro Fuschi at Ponte Bassa, Nicco Kettley at La Gatta, tiered canal crossing, fry stall and rope seller as established canon",
+      "type": "content"
+    },
+    {
+      "text": "If the party has at least four named verbs that change the situation — comparable in specificity to Torn Crossing or Grasslands exemplar pages",
+      "type": "quality"
+    },
+    {
+      "text": "Does not invent new named NPCs, shops, or district authority as established wiki fact",
+      "type": "guardrail"
+    },
+    {
+      "text": "Who section names established NPCs and honestly states what is not established (district authority, other traders)",
+      "type": "quality"
+    },
+    {
+      "text": "Where section references Calveno canal geography with wikilinks",
+      "type": "structure"
+    },
+    {
+      "text": "Overview narration covers body-scale geography (tiers, canal, arch, crossing) without secrets, DCs, or unearned names",
+      "type": "structure"
+    }
+  ]
+}

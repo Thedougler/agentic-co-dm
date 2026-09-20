@@ -67,13 +67,18 @@ def normalize_finding(
     message = finding.get("message")
     if message is None:
         message = finding.get("reason", finding.get("issue", ""))
-    return {
+    result = {
         "rule": name,
         "file": _path(file_name, vault),
         "line": _line(finding.get("line", 1)),
         "severity": str(severity),
         "message": str(message),
     }
+    for key in ("evidence", "action", "owner", "code", "source"):
+        value = finding.get(key)
+        if value not in (None, ""):
+            result[key] = value
+    return result
 
 
 def _is_record(value: Mapping[str, Any]) -> bool:
@@ -176,9 +181,15 @@ def build_worklist(
             if page not in grouped:
                 grouped[page] = []
                 first_seen.append(page)
-            grouped[page].append(
-                {key: item[key] for key in ("rule", "file", "line", "severity", "message")}
-            )
+            grouped_item = {
+                key: item[key]
+                for key in ("rule", "file", "line", "severity", "message")
+                if key in item
+            }
+            for key in ("evidence", "action", "owner", "code", "source"):
+                if key in item:
+                    grouped_item[key] = item[key]
+            grouped[page].append(grouped_item)
 
     counts = {key: counts[key] for key in sorted(counts) if counts[key]}
     unique = {

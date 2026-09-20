@@ -16,13 +16,16 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T19:45:00Z
-updated: 2026-09-13
+updated: 2026-09-20
 type: faction
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 status: active
 kind: other
+scope: regional
+region: "Drowned Maw"
+base: "[[Shelfworks]]"
 relationships:
   - target: "[[Shelfworks]]"
     type: related_to
@@ -36,6 +39,10 @@ relationships:
 > [!narration] Public face
 > The Antheri left a public record of a city in the Maw's western wall and a route toward the Elemental Plane of Water. The ruins, records, and salvage at [[Shelfworks]] are the faction's surviving face.
 
+````col
+```col-md
+flexGrow=2
+===
 ## At a Glance
 
 | | |
@@ -49,7 +56,11 @@ relationships:
 | **Current posture** | Dormant |
 
 > **DM thesis.** The Antheri are a vanished engineering power whose breach evidence may explain current Maw pressure and the [[pearl-of-souls]] signal without giving the table a living faction to negotiate with.
+```
 
+```col-md
+flexGrow=1
+===
 ## At the Table
 
 - **They want.** The surviving Antheri record creates a choice to investigate, salvage, or expose evidence about the Maw breach.
@@ -57,6 +68,8 @@ relationships:
 - **They pressure with.** Their pressure comes from the breach and machinery that still runs.
 - **They will not.** They will not negotiate. No living leader or spokesman is known.
 - **Their tell.** Dark alloy, living-light channels, unfinished workshops, and soul-pledge architecture identify Antheri work.
+```
+````
 
 ---
 
@@ -107,6 +120,17 @@ The next move follows the evidence from [[Shelfworks]] through [[Mid-Works]] tow
 ## People & Structure
 
 The Antheri were builders rather than a presently organized people. No living leader is known. Their surviving structure is the three-tier descent from [[Shelfworks]] through [[Mid-Works]] to [[deep-works]]. Their architecture indicates that soul-pledge could bind minds into artificial frames. The surviving record leaves open whether any minds besides [[Auralis]] remain active.
+### Chain of Action
+
+**Who decides.** No living Antheri leader is known, so no current decision-maker issues orders.
+
+**Who interprets those orders.** No living interpreter or administrative chain is known.
+
+**Who actually carries them out.** Surviving machinery, channels, and architecture continue their residual functions without a confirmed Antheri agent directing them.
+
+**If leadership disappears.** The Antheri have already vanished. Their surviving ruins, records, and machinery remain as separate evidence rather than a hierarchy that can transfer control.
+
+---
 
 ---
 
