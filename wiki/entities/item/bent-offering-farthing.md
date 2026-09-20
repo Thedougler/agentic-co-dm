@@ -14,6 +14,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: ""
+kind: plot
+rarity: common
+attunement: false
+owner: "Unknown sailor"
 summary: "A bent, pierced farthing worn dark with age, a sailor's incomplete tribute offering."
 provenance:
   extracted: 0.85
