@@ -33,9 +33,27 @@ relationships:
 ## Overview
 
 > [!narration] Narration
->
+> South Harbour opens on the east side of [[calders-tooth-and-port-tidefall]]. Repair work and fishing keep the harbour moving, while Crown patrols leave enough gaps for the piers to feel lightly policed.
 
 ## At a Glance
 
-[[south-harbour]] is the east harbour of [[calders-tooth-and-port-tidefall]]. It handles repairs and fishing. The Crown polices it lightly. The [[overland-track]] crosses the [[the-marrow|Marrow]] toward [[calders-tooth-and-port-tidefall]] if that name is used for the west-cliff port. [[south-harbour-impound]] sits on the east pier.
+[[south-harbour]] is the east harbour of [[calders-tooth-and-port-tidefall]]. It handles repairs and fishing. The Crown polices it lightly. The [[overland-track]] crosses the [[the-marrow|Marrow]] toward the west-cliff port, and [[south-harbour-impound]] sits on the east pier.
 
+## Who
+
+Fisherfolk and repair crews use South Harbour. The Crown polices it lightly. No specific harbourmaster, crew, or resident is established on this page.
+
+## What
+
+South Harbour is an east harbour for repairs and fishing. Its east pier contains [[south-harbour-impound]]. The harbour's light Crown policing leaves its local activity only partly controlled.
+
+## Where
+
+- **East side:** The harbour opens from the east side of [[calders-tooth-and-port-tidefall]].
+- **East pier:** [[south-harbour-impound]].
+- **Overland route:** [[overland-track]] crosses the [[the-marrow|Marrow]] toward the west-cliff port.
+- **Other directions:** No canon route or distance is established.
+
+## Why
+
+The party comes to South Harbour for repairs, fishing traffic, the east-pier impound, or the overland route across the Marrow. Light Crown policing makes the harbour a place where official control and local movement can diverge.
