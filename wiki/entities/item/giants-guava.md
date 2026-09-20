@@ -21,10 +21,12 @@ updated: 2026-09-12T00:00:00Z
 type: item
 reveal: unrevealed
 campaign: shattered-sea
+visibility: dm
 region: aruhe
 kind: consumable
 rarity: rare
 attunement: false
+owner: ""
 relationships:
   - target: "[[old-gardens]]"
     type: related_to
