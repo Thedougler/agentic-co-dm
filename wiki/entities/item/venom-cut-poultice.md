@@ -16,8 +16,10 @@ reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: consumable
+region: ""
 rarity: common
 attunement: false
+owner: ""
 summary: "Single-use sailcloth poultice that ends mundane venom and steadies the next hour of poison saves."
 provenance:
   extracted: 0.90
