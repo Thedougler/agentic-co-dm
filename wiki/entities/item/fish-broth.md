@@ -14,9 +14,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
 kind: consumable
 rarity: common
 attunement: false
+owner: ""
 summary: "A cheap, hot, reliable bowl of fish stock served at canal-side taverns."
 provenance:
   extracted: 0.85
