@@ -13,8 +13,12 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: contact
+location: "[[Murrat]]"
+faction: none
 visibility: dm
-summary: "Moucheron detach from the cloud and fly toward the Uncertainty. One of them is shouting."
+summary: "Moucheron detach from the cloud and fly toward the Uncertainty; one of them is shouting."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -24,7 +28,45 @@ tier: supporting
 ---
 # Murrats Shroud Kets Warning Narration Open
 
-## Source notes
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-> [!narration]
-> *Shapes peel from the dark mass over the island and close on the [[Uncertainty]] fast, low over the water. Pigeon-sized, barbed, moving in a loose pack with their stingers forward. One pulls ahead of the rest and hangs fifty feet off the port rail, wings loud enough to hear over the drone behind it. The mouth opens. Common words, shouted thin against the wind. The voice belongs to [[Ket]]. His wings keep the same rhythm as the others. He hovers there, stinger angled away from the ship, and shouts one word over and over. Go. The rest of the pack does not slow down.*
+| **Role**   | Contact |
+| ---------- | ------- |
+| **Nature** | Moucheron warning beat with [[Ket]] identifiable among the swarm |
+| **Home**   | [[Murrat]] |
+| **Wants**  | Not established; the source records only that one Moucheron shouts. |
+
+> **DM thesis:** Use this handle to interrupt the cloud's approach with a recognizable voice before the scene resolves.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Murrats Shroud Kets Warning Narration Open
+> *Shapes peel from the dark mass over the island and close on the [[Uncertainty]] fast, low over the water. Pigeon-sized, barbed, moving in a loose pack with their stingers forward. One pulls ahead of the rest and hangs fifty feet off the port rail, wings loud enough to hear over the drone behind it. The mouth opens. Common words, shouted thin against the wind. The voice belongs to [[Ket]]. His wings keep the same rhythm as the others. He hovers there, stinger angled away from the ship, and shouts one word…*
+```
+````
+
+## Running Murrats Shroud Kets Warning Narration Open
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Read this when the Moucheron cloud closes on the [[Uncertainty]] and [[Ket]] becomes identifiable.
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Stop at the warning's open word and let play determine what the party hears or does next. The source does not establish the rest of the speech.
+```
+````
