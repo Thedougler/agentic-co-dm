@@ -25,12 +25,33 @@ type: place
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+kind: site
+region: "[[calders-tooth-and-port-tidefall]]"
 ---
 # Tessarine Trade House
 
-The [[tessarine-trade-house]] is a three-storey building on the Shelf at [[calders-tooth-and-port-tidefall]]. It licenses trade, brokers salvage, and sends couriers for the [[tessarine-concordat]].
+> [!narration] Narration
+> Three storeys of pale stone rise from the Shelf at [[calders-tooth-and-port-tidefall]]. A Tessarine pennant marks the door; ink and cedar oil hang in the air where trade, salvage, and dispatch work are turned into signed obligations.
 
-## Connections
+## At a Glance
 
-- [[tessarine-concordat]]
-- [[calders-tooth-and-port-tidefall]]
+[[tessarine-trade-house]] is a three-storey building on the Shelf at [[calders-tooth-and-port-tidefall]]. It licenses trade, brokers salvage, and sends couriers for the [[tessarine-concordat]].
+
+## Who
+
+The [[tessarine-concordat]] operates the trade house. Factors, merchants, salvage brokers, and couriers use it. [[Maret]] was held in its back office under a debt-recovery hold after a salvage dive failed.
+
+## What
+
+The three-storey house licenses trade, brokers salvage, and sends couriers. Its visible dispatch work includes [[Silkvane]], and its Concordat craft include [[amberreach|Amberreach]]. The source does not establish a complete staff list or floor plan.
+
+## Where
+
+- **Region:** [[calders-tooth-and-port-tidefall]].
+- **District:** The Shelf.
+- **Building:** Three storeys; the back office can hold a debt-recovery case.
+- **Routes:** Couriers depart for Tessarine business; exact destinations and timings are not established.
+
+## Why
+
+The party comes to the Tessarine Trade House to license trade, negotiate salvage, send or intercept a courier, or address a debt held by the Concordat. Its business makes contracts and recovery pressure visible in the port.
