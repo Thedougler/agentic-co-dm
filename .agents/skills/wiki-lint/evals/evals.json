@@ -35,14 +35,14 @@
     {
       "id": 2,
       "prompt": "Run a full vault lint in --check mode. Report what you find but don't fix anything.",
-      "expected_output": "A structural lint object with summary fields plus findings grouped by file, with no files modified.",
+      "expected_output": "A compact lint overview with aggregate counts and an actionable next.path, with no files modified; use wiki lint <next.path> --full for line-level findings.",
       "assertions": [
         {
           "text": "No files are modified — report only, no edits or renames",
           "type": "guardrail"
         },
         {
-          "text": "Runs wiki lint as the deterministic pass and uses the grouped per-file findings plus next_page",
+          "text": "Runs wiki lint as the deterministic pass, uses aggregate counts and next.path, then requests --full only for the selected page",
           "type": "process"
         },
         {

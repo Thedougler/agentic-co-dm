@@ -196,13 +196,13 @@ scripts/wiki-bulk-ops moc-generate [global opts]
 
 **Behavior**:
 1. Walk content category folders (e.g. `entities/`, `entities/npc/`, `journal/`, `synthesis/`) — skip infrastructure dirs (`_archive/`, `_raw/`, `_meta/`, `.obsidian/`, `attachments/`, `templates/`)
-2. For each content folder, generate `_index.md` with:
+2. For each eligible content folder, generate canonical `_index.md` with:
    - Required llm-wiki frontmatter (`title`, `category`, `tags`, `sources`, `created`, `updated`)
-   - `title:` from static folder-name → player-friendly title map (fallback: title-cased folder name)
+   - `title:` from the built-in readable folder-title map, with explicit index-title overrides and an `Index` suffix for fallback names
    - Flat alphabetical list of piped wikilinks: `[[kebab-name|Page Title]]` (fallback to filename if no `title:` field)
    - Wikilinks to child folder `_index.md` MOCs where nested subfolders exist
-3. Update root `index.md` to include wikilinks to all top-level `_index.md` MOC files
-4. Fully idempotent — each run regenerates from current folder contents; manual `_index.md` edits are not preserved
+3. Update root `index.md` to include wikilinks to all top-level eligible `_index.md` MOC files
+4. Fully idempotent — each run regenerates from current folder contents; manual `_index.md` edits are not preserved, and stale one-page leaf MOCs are removed
 
 **Exit codes**: 0 success, 1 validation error, 2 partial failure
 

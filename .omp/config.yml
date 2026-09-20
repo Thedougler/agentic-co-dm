@@ -117,3 +117,5 @@ disabledProviders:
 disabledExtensions:
   - context-file:project:CLAUDE.md
   - context-file:project:copilot-instructions.md
+ttsr:
+  repeatMode: once

@@ -19,7 +19,7 @@
           "type": "process"
         },
         {
-          "text": "Runs page-scoped ./scripts/wiki-lint --json --scope <page> on each produced page and fixes until clean",
+          "text": "Runs wiki lint <page> on each produced page and fixes every reported finding until clean",
           "type": "quality"
         },
         {

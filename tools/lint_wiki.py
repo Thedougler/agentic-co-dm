@@ -13,6 +13,7 @@ import datetime as dt
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 from typing import Any
 
@@ -44,7 +45,9 @@ HARD_KEYS = (
     "spaced_basename",
     "aruhe_prefix_basename",
     "illegal_basename",
+    "noncanonical_basename",
     "duplicate_stems",
+    "duplicate_slugs",
     "redirect_stubs",
     "template_conformance",
 )
@@ -361,7 +364,7 @@ def misplaced_entities(pages: dict[str, dict]) -> list[dict[str, object]]:
         folder = parts[1]
         if folder not in OWNER_TYPES:
             continue
-        if Path(rel).stem.endswith("-index"):
+        if Path(rel).name == "_index.md" or Path(rel).stem.endswith("-index"):
             continue
         typ = (item["fields"].get("type") or "").strip("\"'")
         if typ not in OWNER_TYPES or typ == folder:
@@ -438,16 +441,94 @@ def illegal_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
     return out
 
 
+def is_moc_page(rel: str) -> bool:
+    name = Path(rel).name
+    return name == "_index.md" or name.endswith("-index.md")
+
+
+def slugify_basename(stem: str) -> str:
+    """Return the lowercase kebab slug used to compare wiki basenames."""
+    ascii_stem = unicodedata.normalize("NFKD", stem).encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]+", "-", ascii_stem.casefold()).strip("-")
+
+
+def noncanonical_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
+    """HARD: titled live pages should use lowercase kebab basenames."""
+    out: list[dict[str, object]] = []
+    for rel, item in pages.items():
+        path = Path(rel)
+        title = str(item.get("title") or "").strip()
+        first_alpha = re.search(r"[A-Za-z]", title)
+        if (
+            item["fields"].get("redirects_to")
+            or "attachments" in path.parts
+            or is_moc_page(rel)
+            or not first_alpha
+            or not first_alpha.group(0).isupper()
+        ):
+            continue
+        stem = path.stem
+        expected_stem = slugify_basename(stem)
+        if not expected_stem or stem == expected_stem:
+            continue
+        expected = path.with_name(f"{expected_stem}.md").as_posix()
+        collision = expected in pages and expected != rel
+        out.append({
+            "page": rel,
+            "stem": stem,
+            "title": title,
+            "expected": expected,
+            "line": 1,
+            "repair_class": "human_repair" if collision else "deterministic_repair",
+            "repair_action": None if collision else {"kind": "rename_page", "from": rel, "to": expected},
+            "collision": collision,
+        })
+    return out
+
+
+def duplicate_slugs(pages: dict[str, dict]) -> list[dict[str, object]]:
+    """HARD: different basenames that collapse to one lowercase kebab slug."""
+    groups: dict[str, list[str]] = collections.defaultdict(list)
+    for rel, item in pages.items():
+        path = Path(rel)
+        if item["fields"].get("redirects_to") or "attachments" in path.parts or is_moc_page(rel):
+            continue
+        slug = slugify_basename(path.stem)
+        if slug:
+            groups[slug].append(rel)
+    out: list[dict[str, object]] = []
+    for slug, members in sorted(groups.items()):
+        if len(members) < 2 or len({Path(member).stem.casefold() for member in members}) < 2:
+            continue
+        pages_sorted = sorted(members)
+        out.append({
+            "slug": slug,
+            "pages": pages_sorted,
+            "lines": [1 for _ in pages_sorted],
+            "repair_class": "human_repair",
+            "reason": "Multiple basenames collapse to one canonical wiki slug; resolve identity before renaming or merging.",
+        })
+    return out
+
+
 def duplicate_stems(pages: dict[str, dict]) -> list[dict[str, object]]:
     """HARD: vault-wide unique stems (casefold); attachments skipped."""
     groups: dict[str, list[str]] = collections.defaultdict(list)
     for rel in pages:
         if "attachments" in Path(rel).parts:
             continue
+        if Path(rel).name == "_index.md" or Path(rel).stem.endswith("-index"):
+            continue
         stem = Path(rel).stem
         groups[stem.casefold()].append(rel)
     return [
-        {"stem": Path(members[0]).stem, "pages": sorted(members), "lines": [1 for _ in members]}
+        {
+            "stem": Path(members[0]).stem,
+            "pages": sorted(members),
+            "lines": [1 for _ in members],
+            "repair_class": "human_repair",
+            "reason": "Case-folded basenames collide; resolve identity before renaming or merging.",
+        }
         for _key, members in sorted(groups.items())
         if len(members) > 1
     ]
@@ -562,6 +643,8 @@ def main() -> int:
         )
     ]
     findings["duplicate_stems"] = duplicate_stems(pages)
+    findings["noncanonical_basename"] = noncanonical_basenames(pages)
+    findings["duplicate_slugs"] = duplicate_slugs(pages)
     findings["snake_case_owner_basename"] = snake_case_owner_basenames(pages)
     findings["missing_trust"] = [
         {

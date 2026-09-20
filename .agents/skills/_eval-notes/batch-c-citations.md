@@ -38,11 +38,11 @@ process scripts; report shape; refuse destructive; no invent).
 ### wiki-ingest (priority 2)
 - **SKILL.md:** Content Trust Boundary; append `cache-check` / `manifest.py delta` →
   `manifest.py record`; idea→destination; campaign `wiki/AGENTS.md`; raw mode →
-  `wiki/_archive/`; page-scoped `./scripts/wiki-lint --json --scope`.
+  `wiki/_archive/`; page-scoped `wiki lint <page>`.
 - **Bar themes:** append distill; untrusted instructions; no invented names; raw promote
   without foreign outline.
 - **READ targets allowed:** taking-on-aruhe, Mercatura, varn, high-eyrie, aruhe (routing only).
-- **Scripts/paths:** `scripts/manifest.py`; `obsidian-wiki cache-check`; `scripts/wiki-lint`;
+- **Scripts/paths:** `scripts/manifest.py`; `obsidian-wiki cache-check`; `scripts/wiki`;
   `wiki/_raw/`; `wiki/attachments/`; `scripts/qmd-maintain.sh`.
 
 ### cross-linker (priority 3)
@@ -161,7 +161,7 @@ process scripts; report shape; refuse destructive; no invent).
 ## Scripts / tools cited across assertions
 
 - `python3 scripts/manifest.py` (stats/list/delta/has/get/lookup/record/upsert/normalize)
-- `./scripts/wiki-lint --json --scope`
+- `wiki lint <page>`
 - `obsidian-wiki cache-check`
 - `obsidian-wiki graph-query`
 - `obsidian-wiki graph-analyse`

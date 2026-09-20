@@ -42,40 +42,88 @@ def payload(result):
     return json.loads(result.stdout)
 
 
-def test_lint_prefix_dump_and_full_noop(tmp_path: Path):
-    page(tmp_path, "entities/npc/one.md", title="One")
-    page(tmp_path, "entities/npc/two.md", title="Two")
-    bulk = run_cli(tmp_path, "lint", "entities/npc")
+def test_lint_default_is_compact_and_full_is_actionable(tmp_path: Path):
+    page(tmp_path, "entities/npc/large.md", title="Large")
+    page(tmp_path, "entities/npc/small.md", title="Small")
+    (tmp_path / "entities/npc/large.md").write_text(
+        (tmp_path / "entities/npc/large.md").read_text(encoding="utf-8") + ("x" * 200),
+        encoding="utf-8",
+    )
+    bulk = run_cli(tmp_path, "lint")
     assert bulk.returncode in (0, 1), bulk.stderr
     data = payload(bulk)
     required = {
-        "status", "counts", "hard_fail", "unique", "backlog", "next_page",
-        "cache", "files_checked", "scope", "files", "timing",
+        "status", "counts", "hard_fail", "finding_total", "affected_pages",
+        "next_page", "next", "cache", "files_checked", "scope", "timing",
     }
     assert required <= data.keys()
-    assert "findings" not in data
-    assert "findings_by_file" not in data
+    assert "files" not in data
+    assert "unique" not in data
+    assert "backlog" not in data
     assert data["timing"]["command"] == "lint"
-    assert data["scope"]["paths"] == ["entities/npc"]
-    for group in data["files"]:
-        assert group["findings"]
-        assert all(isinstance(item["line"], int) and item["line"] >= 1 for item in group["findings"])
-        assert all(set(item) == {"rule", "file", "line", "severity", "message"} for item in group["findings"])
-    full = payload(run_cli(tmp_path, "lint", "entities/npc", "--full"))
-    assert set(full) == set(data)
-    assert full["files"] == data["files"]
-    assert full["counts"] == data["counts"]
+    assert data["scope"]["paths"] == []
+    assert data["next"]["path"] == "entities/npc/small.md"
+    assert data["next"]["bytes"] < (tmp_path / "entities/npc/large.md").stat().st_size
+
+    full = payload(run_cli(tmp_path, "lint", "--full"))
+    assert full["files"][0]["findings"]
+    assert all(
+        set(item) == {"rule", "file", "line", "severity", "message"}
+        for group in full["files"]
+        for item in group["findings"]
+    )
+
+def test_default_lint_summarizes_soft_and_vale_findings(tmp_path: Path):
+    target = tmp_path / "npc.md"
+    target.write_text(
+        "---\n"
+        "title: Vale fixture\n"
+        "category: test\n"
+        "tags: []\n"
+        "sources: []\n"
+        "created: 2026-09-01\n"
+        "updated: 2026-09-19\n"
+        "type: npc\n"
+        "lifecycle: draft\n"
+        "reveal: dm\n"
+        "---\n\n"
+        "# Vale fixture\n\n"
+        "## Narrative\n\n"
+        "You decide the risk is worth it.\n\n"
+        "| **snake_case** |\n",
+        encoding="utf-8",
+    )
+    result = run_cli(tmp_path, "lint", "npc.md")
+    assert result.returncode == 1, result.stderr
+    data = payload(result)
+    assert "snake_case_labels" in set(data["counts"])
+    assert "files" not in data
+
+    full = payload(run_cli(tmp_path, "lint", "npc.md", "--full"))
+    findings = [item for group in full["files"] for item in group["findings"]]
+    assert any(item["rule"] == "snake_case_labels" for item in findings)
+
+    suppressed = run_cli(tmp_path, "lint", "npc.md", "--no-vale")
+    assert suppressed.returncode == 2
 
 
-def test_two_named_files_are_separate_blocks(tmp_path: Path):
+def test_two_named_files_are_separate_full_blocks(tmp_path: Path):
     page(tmp_path, "entities/npc/one.md", title="One")
     page(tmp_path, "entities/npc/two.md", title="Two")
-    result = run_cli(tmp_path, "lint", "entities/npc/two.md", "entities/npc/one.md")
+    result = run_cli(
+        tmp_path,
+        "lint",
+        "entities/npc/two.md",
+        "entities/npc/one.md",
+        "--full",
+    )
     assert result.returncode in (0, 1), result.stderr
     data = payload(result)
     files = [group["file"] for group in data["files"]]
     if len(files) >= 2:
         assert files.index("entities/npc/two.md") < files.index("entities/npc/one.md")
+
+
 
 
 def test_unknown_path_is_structured_error_without_scan(tmp_path: Path):
@@ -92,7 +140,7 @@ def test_unknown_path_is_structured_error_without_scan(tmp_path: Path):
     assert pretty.stderr.strip().startswith("error:")
 
 
-def test_cache_hits_byte_change_and_config_miss(tmp_path: Path):
+def test_cache_hits_and_byte_change(tmp_path: Path):
     page(tmp_path, "one.md")
     run_cli(tmp_path, "lint")
     second_result = run_cli(tmp_path, "lint", "--json")
@@ -103,8 +151,41 @@ def test_cache_hits_byte_change_and_config_miss(tmp_path: Path):
     (tmp_path / "one.md").write_text((tmp_path / "one.md").read_text(encoding="utf-8") + "x", encoding="utf-8")
     changed = payload(run_cli(tmp_path, "lint"))
     assert changed["cache"]["misses"] >= 1
-    flagged = payload(run_cli(tmp_path, "lint", "--no-vale"))
-    assert flagged["cache"]["misses"] >= 1
+    unchanged = payload(run_cli(tmp_path, "lint"))
+    assert unchanged["cache"]["hits"] >= 1
+    assert unchanged["cache"]["misses"] == 0
+
+def test_cache_version_and_mapped_template_invalidation(tmp_path: Path, monkeypatch):
+    from tools.wiki_ops import lint_cache
+
+    page_file = tmp_path / "page.md"
+    page_file.write_text("---\ntype: npc\n---\npage\n", encoding="utf-8")
+    template_dir = tmp_path / "repo" / "wiki" / "templates"
+    template_dir.mkdir(parents=True)
+    template = template_dir / "npc.md"
+    template.write_text("template-v1\n", encoding="utf-8")
+    unrelated = template_dir / "item.md"
+    unrelated.write_text("unrelated-v1\n", encoding="utf-8")
+    monkeypatch.setattr(lint_cache, "_REPO_ROOT", tmp_path / "repo")
+    cache = lint_cache.load_cache(tmp_path)
+    entry = lint_cache.update_entry(cache, tmp_path, "page.md", "rules-v1", {}, {})
+    assert cache["version"] == lint_cache.CACHE_VERSION
+    assert entry["template_sha256"] == lint_cache.sha256_file(template)
+    lint_cache.save_cache(tmp_path, cache)
+    assert lint_cache.lookup_entry(lint_cache.load_cache(tmp_path), tmp_path, "page.md", "rules-v1")
+
+    unrelated.write_text("unrelated-v2\n", encoding="utf-8")
+    assert lint_cache.lookup_entry(lint_cache.load_cache(tmp_path), tmp_path, "page.md", "rules-v1")
+    template.write_text("template-v2\n", encoding="utf-8")
+    assert lint_cache.lookup_entry(lint_cache.load_cache(tmp_path), tmp_path, "page.md", "rules-v1") is None
+
+    raw = json.loads(lint_cache.cache_path(tmp_path).read_text(encoding="utf-8"))
+    raw["version"] = lint_cache.CACHE_VERSION - 1
+    lint_cache.cache_path(tmp_path).write_text(json.dumps(raw), encoding="utf-8")
+    fresh = lint_cache.load_cache(tmp_path)
+    assert fresh["version"] == lint_cache.CACHE_VERSION
+    assert fresh["entries"] == {}
+
 
 
 def test_scoped_lint_keeps_other_cache_entries(tmp_path: Path):
@@ -116,7 +197,7 @@ def test_scoped_lint_keeps_other_cache_entries(tmp_path: Path):
     assert again["cache"]["hits"] >= 1
 
 
-def test_pretty_default_json_and_full_same_list(tmp_path: Path):
+def test_pretty_default_is_compact_and_full_lists_findings(tmp_path: Path):
     page(tmp_path, "one.md")
     default = run_cli(tmp_path, "lint")
     pretty = run_cli(tmp_path, "lint", "--pretty")
@@ -124,7 +205,8 @@ def test_pretty_default_json_and_full_same_list(tmp_path: Path):
     assert json.loads(default.stdout)
     assert pretty.stdout.strip()
     assert not pretty.stdout.lstrip().startswith("{")
-    assert pretty.stdout == pretty_full.stdout
+    assert "Next page:" in pretty.stdout
+    assert len(pretty_full.stdout) >= len(pretty.stdout)
 
 
 def test_query_compact_hits_and_backend_failure(tmp_path: Path):
@@ -208,6 +290,43 @@ def test_health_alias_trends_focus_and_empty_trackers(tmp_path: Path):
     assert heavy["trends"]["token_heaviest"]
     assert heavy["trends"]["token_heaviest"][0]["tokens"] >= 100
 
+
+def test_health_explains_blockers_and_small_error_ledger():
+    from tools.wiki_ops.health import build_health_snapshot, build_trends
+
+    snapshot = build_health_snapshot(
+        status="findings",
+        pages=827,
+        bytes=0,
+        tokens=None,
+        lint={
+            "status": "findings",
+            "counts": {"template_conformance": 5475},
+            "hard_fail": True,
+            "backlog": [{"page": f"page-{index}.md", "findings": 1, "bytes": index} for index in range(827)],
+        },
+        waste=None,
+        staging=None,
+        remorph=None,
+        policy=None,
+        trends=build_trends(
+            None,
+            [{"id": f"e-{index}", "cause": f"cause-{index}", "status": "open"} for index in range(5)],
+            None,
+        ),
+        focus=[{"path": "page-0.md", "reason": "template_conformance lint findings", "source": "lint"}],
+        context={"act": ["Repair hot.md: snapshot is oversized."]},
+    )
+
+    lint = snapshot["lint"]
+    assert lint["finding_total"] == 5475
+    assert lint["affected_pages"] == 827
+    assert lint["blocking"] == [{"rule": "template_conformance", "findings": 5475}]
+    assert "blocking lint findings" in lint["meaning"]
+    assert lint["action"].startswith("Repair")
+    assert snapshot["next"]["action"].endswith("rerun wiki health.")
+    assert len(snapshot["trends"]["errors"]["entries"]) == 5
+    assert "core" not in snapshot["context"]
 
 def test_context_load_ranks_files_skills_and_trend(tmp_path: Path):
     from tools.wiki_ops.health import build_context_load

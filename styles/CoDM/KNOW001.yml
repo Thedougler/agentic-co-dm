@@ -1,6 +1,0 @@
-extends: existence
-message: "KNOW001: DM-facing knowledge claim lacks an explicit evidence handle"
-level: warning
-scope: text
-tokens:
-  - "(?i)\\b(obviously|everyone knows|clearly)\\b"

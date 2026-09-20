@@ -212,6 +212,15 @@ description: "Implementation tasks for agent-safe wiki lint, repair, and consoli
 - [X] T046 Add 1-based source line numbers to default structural, template, and Vale lint findings, preserve them in `findings_by_file`, emit only actual findings or `status: "clean"`, add `--verbose` for the full zero-count matrix, and add CLI regression coverage.
 
 ---
+## Phase 12: Filename and slug collision diagnostics
+
+**Purpose**: Give agents deterministic filename-shape findings and identity-safe collision evidence without auto-selecting a canonical page.
+
+- [x] T047 Add focused lint fixtures and assertions for lowercase basename repair targets, occupied rename targets, exact basename collisions, slug-normalization collisions, MOC/redirect exclusions, and grouped JSON findings.
+- [x] T048 Implement `noncanonical_basename` and `duplicate_slugs` in `tools/lint_wiki.py`, wire both into HARD findings and worklist/contract metadata, and preserve human-repair classification for ambiguous collisions.
+- [x] T049 Run focused lint tests and record any unrelated baseline findings in `errors.md`.
+
+---
 
 ## Dependencies & Execution Order
 

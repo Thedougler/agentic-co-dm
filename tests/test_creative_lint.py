@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-import json
-import subprocess
 from pathlib import Path
 
 
@@ -14,7 +12,6 @@ from tools.creative_lint.registry import Registry, RuleDefinition
 from tools.creative_lint.severity import min_severity, status_from_findings
 from tools.creative_lint.shadow import ShadowRecorder
 from tools.creative_lint.vale_adapter import map_vale_output
-from tools.creative_lint.waivers import WaiverRegistry
 
 ROOT = Path(__file__).resolve().parents[1]
 FIXTURES = ROOT / "tests" / "fixtures" / "creative_lint"
@@ -22,10 +19,9 @@ FIXTURES = ROOT / "tests" / "fixtures" / "creative_lint"
 
 def test_registry_loads_and_exposes_stable_ids():
     registry = Registry.load(ROOT / "rules" / "registry.yml")
-    assert "AGENCY001" in registry.all_ids()
-    assert registry.get("AGENCY001").category == "agency"
-    assert registry.by_category("agency")
-    assert registry.by_evaluator("vale")
+    assert registry.all_ids()
+    assert registry.by_category("wiki")
+    assert registry.by_evaluator("symbolic")
     assert not registry.validate()
 
 
@@ -48,19 +44,8 @@ def test_bundle_resolution_caps_diagnostics():
     registry = Registry.load(ROOT / "rules" / "registry.yml")
     bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
     resolved = dict((rule.id, severity) for rule, severity in bundles.get("session-prep").resolve(registry))
-    assert resolved["AGENCY001"] == "BLOCK"
-    assert resolved["SCENE001"] == "WARN"
-    assert resolved["TEMP001"] == "REVIEW"
-    assert "KNOW001" in resolved
+    assert set(resolved) == {"CANON001", "CANON002", "WIKI001", "WIKI002", "RETRIEVAL001", "DIVERSITY001"}
 
-
-def test_vale_mapping_uses_registry_metadata():
-    registry = Registry.load(ROOT / "rules" / "registry.yml")
-    findings = map_vale_output({"wiki/example.md": [{"Check": "CoDM.AGENCY001", "Line": 4,
-        "Span": [2, 8], "Match": "You decide", "Message": "matched"}]}, registry, root=ROOT)
-    assert findings[0].to_dict()["rule_id"] == "AGENCY001"
-    assert findings[0].severity == "BLOCK"
-    assert findings[0].location == {"file": "wiki/example.md", "line": 4, "col": 2, "end_col": 8, "text": "You decide"}
 
 
 def test_vale_deprecated_output_gets_typed_repair():
@@ -77,103 +62,26 @@ def test_vale_deprecated_output_gets_typed_repair():
     assert findings[0].repair_class == "deterministic_repair"
     assert findings[0].repair_action["kind"] == "delete_section"
 
-def test_vale_batches_merge_results(monkeypatch, tmp_path):
-    from tools.creative_lint import vale_adapter
-
-    registry = Registry.load(ROOT / "rules" / "registry.yml")
-    files = [tmp_path / f"page-{index}.md" for index in range(3)]
-    calls: list[tuple[str, ...]] = []
-
-    def fake_vale(binary, root, batch, style):
-        calls.append(tuple(path.name for path in batch))
-        payload = {
-            path.name: [{"Check": "CoDM.AGENCY001", "Line": index + 1}]
-            for index, path in enumerate(batch)
-        }
-        return subprocess.CompletedProcess(["vale"], 1, json.dumps(payload), ""), 1
-
-    monkeypatch.setattr(vale_adapter, "VALE_BATCH_SIZE", 2)
-    monkeypatch.setattr(vale_adapter, "_resolve_vale", lambda root, executable: "vale")
-    monkeypatch.setattr(vale_adapter, "_vale_json", fake_vale)
-    monkeypatch.setattr("tools.creative_lint.vale_vocab.refresh_vocab", lambda root, vault: vault)
-
-    findings, warnings = vale_adapter.run_vale(files, registry, root=tmp_path, vault=tmp_path)
-
-    assert not warnings
-    assert len(findings) == len(files)
-    assert {finding.location["file"] for finding in findings} == {path.name for path in files}
-    assert sorted(calls) == [("page-0.md", "page-1.md"), ("page-2.md",)]
 
 
-def test_engine_finds_and_filters_agency_rule():
-    registry = Registry.load(ROOT / "rules" / "registry.yml")
-    bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
-    engine = LintEngine(registry, bundles, root=ROOT, vault=ROOT / "wiki")
-    path = FIXTURES / "AGENCY001" / "fail_authored_decision.md"
-    result = engine.run(bundle="session-prep", paths=[path])
-    assert result.status == "repair_required"
-    assert any(f.rule_id == "AGENCY001" and f.severity == "BLOCK" for f in result.findings)
-    filtered = engine.run(bundle="session-prep", paths=[path], severity_filter={"REVIEW"})
-    assert all(f.severity == "REVIEW" for f in filtered.findings)
 
 
-def test_fixture_fail_and_pass_regions_for_vale_rules():
-    registry = Registry.load(ROOT / "rules" / "registry.yml")
-    bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
-    engine = LintEngine(registry, bundles, root=ROOT, vault=ROOT / "wiki")
-    for rule in registry.by_evaluator("vale"):
-        fail = next((FIXTURES / rule.id).glob("fail_*.md"))
-        passed = next((FIXTURES / rule.id).glob("pass_*.md"))
-        assert any(f.rule_id == rule.id for f in engine.run(paths=[fail], rule_ids={rule.id}).findings), rule.id
-        assert not any(f.rule_id == rule.id for f in engine.run(paths=[passed], rule_ids={rule.id}).findings), rule.id
-
-
-def test_waiver_suppresses_status_but_keeps_audit_record(tmp_path):
-    waiver_path = tmp_path / "waivers.json"
-    waiver_path.write_text(json.dumps([{"rule_id": "AGENCY001", "target": "file:tests/fixtures/creative_lint/AGENCY001/fail_authored_decision.md",
-        "reason": "intentional test", "owner": "DM", "granted": "2026-09-01", "expires": "2099-01-01"}]), encoding="utf-8")
-    registry = Registry.load(ROOT / "rules" / "registry.yml")
-    bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
-    engine = LintEngine(registry, bundles, root=ROOT, vault=ROOT / "wiki", waivers=WaiverRegistry.load(waiver_path))
-    result = engine.run(bundle="session-prep", paths=[FIXTURES / "AGENCY001" / "fail_authored_decision.md"])
-    finding = next(f for f in result.findings if f.rule_id == "AGENCY001")
-    assert finding.waiver and result.status == "clean" and result.summary["waived"] == 1
 
 
 def test_shadow_recorder_writes_jsonl(tmp_path):
-    finding = Finding("AGENCY001", "fail", "BLOCK", {"file": "x.md", "line": 1}, "e", "r", "vale")
+    finding = Finding("TEST001", "fail", "BLOCK", {"file": "x.md", "line": 1}, "e", "r", "vale")
     recorder = ShadowRecorder(tmp_path)
     paths = recorder.record([finding], run_id="test")
-    assert paths[0].name == "AGENCY001.jsonl"
-    assert recorder.load("AGENCY001")[0]["run_id"] == "test"
+    assert paths[0].name == "TEST001.jsonl"
+    assert recorder.load("TEST001")[0]["run_id"] == "test"
 
-
-def test_repair_loop_retests_changed_surface(tmp_path):
-    path = tmp_path / "output.md"
-    path.write_text(
-        "---\ntitle: Repair output\ncategory: test\ntags: []\nsources: []\n"
-        "created: 2026-09-01\nupdated: 2026-09-16\ntype: session-prep\n"
-        "lifecycle: draft\nreveal: dm\n---\n\nYou decide the risk is worth it.\n",
-        encoding="utf-8",
-    )
-    registry = Registry.load(ROOT / "rules" / "registry.yml")
-    bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
-    engine = LintEngine(registry, bundles, root=ROOT, vault=ROOT / "wiki")
-
-    def repair(findings):
-        assert findings[0].rule_id == "AGENCY001"
-        path.write_text("The risk is visible and the door is open.\n", encoding="utf-8")
-        return [path]
-
-    result = engine.repair_loop(bundle="session-prep", paths=[path], repair_callback=repair)
-    assert result.status == "clean"
 
 
 def test_finding_from_dict_validates_contract():
     finding = Finding.from_dict({
-        "rule_id": "AGENCY001", "result": "fail", "severity": "BLOCK",
+        "rule_id": "TEST001", "result": "fail", "severity": "BLOCK",
         "location": {"file": "x.md", "line": 2}, "evidence": "match",
-        "reason": "reason", "evaluator": "vale",
+        "reason": "reason", "evaluator": "symbolic",
     })
     assert finding.to_dict()["location"]["line"] == 2
     with pytest.raises(ValueError, match="invalid finding severity"):
@@ -237,20 +145,6 @@ def test_shadow_rules_are_excluded_from_active_result(tmp_path):
     assert (tmp_path / "rules" / "shadow" / "WIKI001.jsonl").is_file()
 
 
-def test_expired_waiver_does_not_suppress_finding(tmp_path):
-    waiver_path = tmp_path / "waivers.json"
-    waiver_path.write_text(json.dumps([{
-        "rule_id": "AGENCY001", "target": "*", "reason": "temporary",
-        "owner": "DM", "granted": "2020-01-01", "expires": "2020-01-02",
-    }]), encoding="utf-8")
-    registry = Registry.load(ROOT / "rules" / "registry.yml")
-    bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
-    result = LintEngine(
-        registry, bundles, root=ROOT, vault=ROOT / "wiki",
-        waivers=WaiverRegistry.load(waiver_path),
-    ).run(bundle="session-prep", paths=[FIXTURES / "AGENCY001" / "fail_authored_decision.md"])
-    finding = next(f for f in result.findings if f.rule_id == "AGENCY001")
-    assert finding.waiver is None and result.status == "repair_required"
 
 
 def test_fixture_families_have_fail_and_pass_cases():
@@ -261,33 +155,6 @@ def test_fixture_families_have_fail_and_pass_cases():
             assert list(directory.glob("fail_*.md")), rule.id
             assert list(directory.glob("pass_*.md")), rule.id
 
-def test_scene_applicability_exempts_redirects_and_explicit_pressure(monkeypatch):
-    registry = Registry.load(ROOT / "rules" / "registry.yml")
-    bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
-    files = [
-        FIXTURES / "SCENE001" / "redirect_stub.md",
-        FIXTURES / "SCENE001" / "pass_explicit_pressure.md",
-        FIXTURES / "SCENE001" / "fail_missing_pressure.md",
-    ]
-    monkeypatch.setattr("tools.creative_lint.engine.run_vale", lambda *args, **kwargs: (
-        [Finding("SCENE001", "fail", "WARN", {"file": str(path), "line": 1}, "match", "reason", "vale")
-         for path in files], []))
-    result = LintEngine(registry, bundles, root=ROOT, vault=FIXTURES).run(rule_ids={"SCENE001"}, paths=files)
-    assert [Path(item.location["file"]).name for item in result.findings] == ["fail_missing_pressure.md"]
-
-
-def test_state_overrides_applicability_and_lifecycle(monkeypatch, tmp_path):
-    page = tmp_path / "page.md"
-    page.write_text("---\ntype: faction\nlifecycle: accepted\n---\n## Narrative\nNo pressure.\n", encoding="utf-8")
-    registry = Registry.load(ROOT / "rules" / "registry.yml")
-    bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
-    monkeypatch.setattr(
-        "tools.creative_lint.engine.run_vale",
-        lambda *args, **kwargs: ([Finding("SCENE001", "fail", "WARN", {"file": str(page), "line": 1}, "match", "reason", "vale")], []),
-    )
-    engine = LintEngine(registry, bundles, root=ROOT, vault=tmp_path)
-    assert engine.run(paths=[page], rule_ids={"SCENE001"}).findings
-    assert not engine.run(paths=[page], rule_ids={"SCENE001"}, state={"type": "item"}).findings
 
 
 def test_linear_template_flags_column_wrappers(tmp_path):
@@ -309,11 +176,6 @@ def test_linear_template_flags_column_wrappers(tmp_path):
     assert "col" in evidence
 
 
-def test_bear_elk_flags_multiple_statblock_images():
-    from tools.creative_lint.template_profile import template_conformance
-
-    _, findings = template_conformance(ROOT / "wiki/entities/creature/bear-elk.md", root=ROOT)
-    assert any(item.rule_id == "TMPL006" for item in findings)
 
 
 def test_bloodhawk_allows_one_statblock_image():

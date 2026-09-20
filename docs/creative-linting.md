@@ -7,7 +7,7 @@ Creative linting is the repository-owned validation layer for generated wiki and
 The implementation has three cooperating layers:
 
 - `tools/lint_wiki.py` remains the owner of the existing structural HARD checks.
-- Vale runs static prose-pattern rules from `styles/CoDM/`.
+- Vale runs the configured third-party and deprecated-term packages; the retained `CoDM` style namespace is available for future rules but has no active uppercase custom styles.
 - `tools/creative_lint/` owns registry loading, bundle routing, symbolic evaluators, the finding schema, severity/status computation, waivers, shadow telemetry, and the repair loop.
 
 The CLI entry point is `scripts/wiki-lint`:
@@ -18,9 +18,7 @@ The CLI entry point is `scripts/wiki-lint`:
 
 Configuration has one owner per tool:
 
-- `.vale.ini` is the sole Vale package and path-scope authority. The repository carries `ai-tells`, `proselint`, and `Readability`. Wiki pages also enable `CoDM`, while creative fixtures intentionally enable only `CoDM`. Raw and archive pages are excluded, staging uses only the configured prose packages, and templates are excluded.
-- `Vocab = CoDM` supplies Vale's proper-noun exemptions from `styles/config/vocabularies/CoDM/accept.txt`; `scripts/vale-vocab` and `scripts/wiki-lint` regenerate that list from live wiki titles and aliases before linting.
-- Vale resolves only from the project environment at `.venv/bin/vale`; `uv sync` installs the pinned CLI and lint fails closed when it is absent.
+- Vale is resolved from the project environment at `.venv/bin/vale` or from `PATH`; lint fails closed when it is absent.
 - `.markdownlint-cli2.jsonc` owns built-in Markdown structure settings. It excludes `wiki/_raw`, `wiki/_archive`, `wiki/templates`, `specs`, and `node_modules` from its Markdown globs.
 - `package.json` is private metadata only. Its npm scripts are thin aliases to existing repository commands; no Node wrapper or duplicate lint implementation exists. `markdownlint-cli2` is pinned to `0.23.2`, Node is `>=22`, and `package-lock.json` is committed.
 - `rules/registry.yml` owns rule metadata. `rules/bundles.yml` owns task-to-category routing. Neither duplicates the Vale package list.
@@ -31,19 +29,19 @@ Every evaluator emits the same fields:
 
 ```json
 {
-  "rule_id": "AGENCY001",
+  "rule_id": "CANON001",
   "result": "fail",
   "severity": "BLOCK",
   "location": {
     "file": "wiki/path/to/file.md",
     "line": 42,
     "col": 5,
-    "text": "You decide..."
+    "text": "[[dead-npc]]"
   },
-  "evidence": "Matched pattern: 'You decide...'",
-  "reason": "Narration authors a player-character decision",
-  "repair_target": "Rewrite to describe the situation without prescribing the PC's response",
-  "evaluator": "vale"
+  "evidence": "Unresolved wikilink: [[dead-npc]]",
+  "reason": "The page references an entity that is not current canon",
+  "repair_target": "Retarget the wikilink to a current canonical page",
+  "evaluator": "symbolic"
 }
 ```
 
@@ -64,7 +62,7 @@ Aggregate status is `repair_required` when any unwaived `BLOCK` or `REPAIR` find
 ./scripts/wiki-lint file wiki/entities/npc/archivist-vel.md --json
 ./scripts/wiki-lint corpus wiki --json
 ./scripts/wiki-lint changed --json
-./scripts/wiki-lint rule AGENCY001
+./scripts/wiki-lint rule CANON001
 ./scripts/wiki-lint queue --json
 ./scripts/wiki-lint template wiki/journal/sessions/campaign/01/Session-01.md --json
 ./scripts/wiki-lint candidate "Stop having NPCs know things they could not know" --json
@@ -100,7 +98,7 @@ To add a rule:
 3. Add `fail_*.md`, `pass_*.md`, and an `ambiguous_*.md` acceptable-region fixture under `tests/fixtures/creative_lint/<ID>/`. Ambiguous cases are recorded for review rather than treated as suite failures.
 4. Add the rule category to the appropriate bundle in `rules/bundles.yml` only once, under `block`, `review`, or `diagnostics`.
 
-The initial static rules are AGENCY001-003, KNOW001-002, TEMP001, and SCENE001-002. Symbolic rules cover CANON001-002, WIKI001-002, and RETRIEVAL001; DIVERSITY001 remains an INFO diagnostic. Rules with `scene` or `diversity` categories may never exceed `WARN`. The bundle's gate caps effective severity, while the registry remains the inherent-severity source.
+The static Vale rule set is intentionally empty; symbolic rules cover CANON001-002, WIKI001-002, and RETRIEVAL001; DIVERSITY001 remains an INFO diagnostic. Rules with `diversity` categories may never exceed `WARN`. The bundle's gate caps effective severity, while the registry remains the inherent-severity source.
 
 A correction should first search existing titles, messages, and tags with `wiki-lint candidate`. A match routes the correction to the existing rule and its fixtures. A no-match candidate is written under `rules/candidates/` with lifecycle `SHADOW`; it must accumulate fixtures and telemetry before promotion. Promotion requires greater than 90% human agreement and less than 10% false positives, followed by a deliberate `SHADOW` → `ACTIVE` lifecycle change. Creative diagnostics can reach `WARN`, never `BLOCK`.
 
@@ -124,7 +122,6 @@ Waivers live in `rules/waivers.json` and require exact `rule_id`, `target`, `rea
 
 Vale and symbolic fixture families define the acceptable region:
 
-- `tests/fixtures/creative_lint/AGENCY001/` through `SCENE002/` contain static Vale fail/pass/ambiguous cases.
 - `CANON001/`, `CANON002/`, `WIKI001/`, `WIKI002/`, `RETRIEVAL001/`, and `DIVERSITY001/` contain symbolic fail/pass/ambiguous cases and counterexamples.
 - `template/` contains a mapped page, a baseline template, and a changed-template mutation for profile comparison. Template drift is manually corrected; fixtures never authorize unattended edits.
 - `integration/session_prep_violations.md` combines an authored PC decision with a stale/dead canonical reference for the agent-loop scenario.

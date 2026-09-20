@@ -41,25 +41,25 @@ Repo root: `scripts/wiki`, `tools/wiki_ops/`, `tests/test_wiki_cli.py`
 
 - [X] T003 Implement vault-relative path resolve in `scripts/wiki`: zero args = whole vault; several args = union; unknown or out-of-vault path → stdout `{"error":"<message>","status":"error"}` exit 2, no scan, no fuzzy match (`tools/wiki_ops/cli.py` `configured_vault` / `emit_error`)
 - [X] T004 [P] Extend `scripts/efficiency-trace.py` `validate_record` to accept `record_kind: command` with fields `schema_version`, `command` (`lint` \| `query` \| `health`), `duration_ms`, `cache_hits`, `cache_misses`, `vale_skipped`, `exit`, `timestamp`; sitting `report`/`promote` ignore command rows; implement append + stdout `timing` (`command`, `duration_ms`, `cache` when lint/health) in `tools/wiki_ops/timing.py` (append failure must not change wiki exit code)
-- [X] T005 Add argparse in `scripts/wiki` for `lint|query|health`, flags `--pretty --json --full --hard --all --no-vale --no-template`, `--collection`/`-n` on query; `--json` ignored; default stdout one compact JSON object via `emit_json` (`sort_keys=True`, no indent); exit 0/1/2 per `specs/027-wiki-agent-cli/contracts/wiki-cli.md`
+- [X] T005 Add argparse in `scripts/wiki` for `lint|query|health`, lint compatibility flags `--pretty --json --full` only, and query `--collection`/`-n`; `--json` ignored; default stdout one compact JSON object via `emit_json` (`sort_keys=True`, no indent); exit 0/1/2 per `specs/027-wiki-agent-cli/contracts/wiki-cli.md`
 
 **Checkpoint**: `scripts/wiki lint nosuch` exits 2 with `status=error`. Timing helper exists.
 
 ---
 
-## Phase 3: User Story 1 - Agent lints a path and gets every finding, grouped by file (Priority: P1) 🎯 MVP
+## Phase 3: User Story 1 - Agent gets a compact lint worklist (Priority: P1) 🎯 MVP
 
-**Goal**: `scripts/wiki lint` returns summary fields plus complete Vale-included findings grouped by file.
+**Goal**: `scripts/wiki lint` returns a bounded overview with aggregate checker counts and an actionable smallest-next recommendation; `--full` adds complete findings grouped by file.
 
-**Independent Test**: Lint a directory, one page, and two named pages. Each result includes `files` groups with 1-based `line`, plus `unique` / `next_page`. Unknown path exits 2.
+**Independent Test**: Lint a directory, one page, and two named pages. Default results stay compact and expose `next`; `--full` exposes detailed `files` groups with 1-based lines. Unknown path exits 2.
 
 ### Implementation for User Story 1
 
-- [X] T006 [US1] Implement lint summary + dump in `tools/wiki_ops/worklist.py`: required keys `status` (`clean` \| `findings` \| `error`), `counts`, `hard_fail`, `unique` (already-deduped targets per rule), `backlog` (`page`, `findings`, `bytes`; sort bytes then path), `next_page` (`backlog[0].page` or null), `cache`, `files_checked`, `scope` (`paths`; `[]` = whole vault), `files` (array of `{file, findings}` in argument/path order; omit zero-finding groups); each finding `{rule, file, line, severity, message}` with 1-based `line`; MUST NOT contain nested per-rule finding maps; compose existing `tools/lint_wiki.py` (Vale included unless `--no-vale`)
-- [X] T007 [US1] Wire `lint` in `scripts/wiki` to `worklist.py` + `timing.py`: `--full` accepted and MUST NOT add or remove keys; `--hard` default; two named files → two `files` entries when both have findings
-- [X] T008 [US1] Add pytest in `tests/test_wiki_cli.py` for prefix dump, two-file `files` blocks, `--full` no-op, unknown path <1s exit 2, no nested per-rule maps, `timing.command == "lint"`
+- [X] T006 [US1] Implement lint overview + optional dump in `tools/wiki_ops/worklist.py`: required keys `status`, `counts`, `hard_fail`, `finding_total`, `affected_pages`, `next_page`, `next`, `cache`, `files_checked`, `scope`, `ledger`; `--full` adds `unique`, `backlog`, and `files` with flat findings.
+- [X] T007 [US1] Wire `lint` in `scripts/wiki` to `worklist.py` + `timing.py`: every configured checker and every severity contribute to the default aggregates; `--full` emits two named files as separate groups.
+- [X] T008 [US1] Add pytest in `tests/test_wiki_cli.py` for bounded prefix/whole-wiki output, smallest-next selection, explicit `--full` groups, unknown path <1s exit 2, no nested per-rule maps, `timing.command == "lint"`.
 
-**Checkpoint**: `scripts/wiki lint entities/npc` dumps per-file findings. MVP.
+**Checkpoint**: `scripts/wiki lint` returns one bounded worklist and `next.path`.
 
 ---
 
@@ -129,10 +129,10 @@ Repo root: `scripts/wiki`, `tools/wiki_ops/`, `tests/test_wiki_cli.py`
 
 ## Phase 8: Polish & Cross-Cutting Concerns
 
-**Purpose**: FR-018 instruction retarget; quickstart; agent standards
+**Purpose**: FR-018 instruction retarget; quickstart; remove obsolete agent-standard and uppercase custom-style checks
 
 - [X] T019 Replace structural lint/query/health examples with `scripts/wiki` in `.agents/skills/wiki-lint/SKILL.md`, `.agents/skills/wiki-lint/evals/evals.json`, `.agents/skills/wiki-query/SKILL.md` (synthesis stays; retrieval examples → `wiki query`), `.agents/skills/wiki-status/SKILL.md` if present, and standing examples in `AGENTS.md` / `.omp/AGENTS.md`: run `scripts/wiki health`, then act on `next` (then remaining `focus`) without a DM wait
-- [X] T020 Run `.venv/bin/python scripts/check-agent-standards.py` until AGENT001–003 are green
+- [X] T020 Remove the obsolete agent-standards checker, its tests, and uppercase custom Vale styles
 - [X] T021 Run cold-context smol subject for SC-008 (names a finding line + `next_page`) and SC-009 (names `next.path`) per `specs/027-wiki-agent-cli/quickstart.md` V-008/V-009
 - [X] T022 Run `.venv/bin/python -m pytest tests/test_wiki_cli.py -q` and the runnable quickstart V-001–V-007, V-010 checks
 - [X] T023 [US2] Hash Vale styles, structural lint sources, template contracts, and checker flags in `digest_rules`; a rules-state change is a cache miss (`tools/wiki_ops/lint_cache.py`, `scripts/wiki`)
@@ -142,6 +142,23 @@ Repo root: `scripts/wiki`, `tools/wiki_ops/`, `tests/test_wiki_cli.py`
 - [X] T027 [US1][US4] `wiki lint` and `wiki health` emit stderr `wiki <command>: elapsed_s=<n> still=1` at least every 10 seconds while running (`tools/wiki_ops/timing.py` `ProgressHeartbeat`, wrap `scripts/wiki` `main`); stdout unchanged; pytest in `tests/test_wiki_cli.py`
 - [X] T028 Integrate locked Python lint, format, type-check, and coverage commands in `pyproject.toml`, `package.json`, README setup, and `.gitignore`
 
+## Phase 9: Complete lint visibility
+
+**Purpose**: Remove the hard-only and checker-suppression carve-outs from the agent-facing lint surface.
+
+- [X] T029 [US1] Make `scripts/wiki lint` always pass every configured checker and aggregate every finding by default; remove `--all`, `--no-vale`, and `--no-template` from its public parser and cache-key branches.
+- [X] T030 [US1] Make lint exit `1` for any returned finding, not only hard findings, while preserving compact health output.
+- [X] T031 [US1] Add CLI coverage proving Vale and soft structural findings appear in aggregate default counts and in detailed `--full` groups without suppression flags.
+- [X] T032 [US1] Replace agent-facing references to `scripts/wiki-lint` and hard-only lint with `scripts/wiki lint`; retain backend-only uses required by implementation tests.
+- [X] T033 [US2] Version the lint cache schema and include each page's resolved template hash in cache hit comparison; unsupported cache versions, page changes, and mapped-template changes must miss (`tools/wiki_ops/lint_cache.py`, `tests/test_wiki_cli.py`, `specs/027-wiki-agent-cli/data-model.md`)
+
+
+## Phase 10: Bounded bulk lint output
+
+**Purpose**: Keep default whole-wiki and bulk lint results compact while preserving an explicit detailed escape hatch.
+
+- [X] T034 [US1] Change `tools/wiki_ops/worklist.py` and `scripts/wiki` so default lint emits aggregate counts, affected-page/finding totals, and actionable `next` (smallest dirty file by bytes then path), while `--full` adds `unique`, `backlog`, and per-file findings.
+- [X] T035 [US1] Update lint contract artifacts, tests, pretty output, and agent instructions to document compact default output and `wiki lint <next.path> --full`.
 
 ---
 
@@ -205,7 +222,7 @@ Serialize `tests/test_wiki_cli.py` writes.
 4. US3 query (or parallel with US1)
 5. US4 health
 6. US5 pretty
-7. Polish (skills, AGENT001–003, smol, pytest)
+7. Polish (skills, custom-style cleanup, smol, pytest)
 
 ---
 

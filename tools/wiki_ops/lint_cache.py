@@ -7,14 +7,16 @@ import os
 import tempfile
 from pathlib import Path
 from typing import Any, Mapping, TypedDict, cast
-
 CACHE_NAME = "lint-cache.json"
+CACHE_VERSION = 2
+_REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
 class CacheEntry(TypedDict):
     """The reusable checker output for one vault-relative file."""
 
     content_sha256: str
+    template_sha256: str
     config_digest: str
     extracts: dict[str, Any]
     results: dict[str, Any]
@@ -23,6 +25,7 @@ class CacheEntry(TypedDict):
 class LintCache(TypedDict):
     """On-disk lint cache document."""
 
+    version: int
     config_digest: str
     entries: dict[str, CacheEntry]
 
@@ -64,6 +67,7 @@ def digest_config(config: Any) -> str:
 
 config_sha256 = digest_config
 
+
 RULE_FILES = (
     ".vale.ini",
     ".vale.yaml",
@@ -104,9 +108,18 @@ def digest_rules(root: str | Path, extra: Mapping[str, Any] | None = None) -> st
     return digest_config({"extra": dict(extra or {}), "files": files})
 
 
+def _template_sha256(vault: Path, key: str) -> str:
+    """Hash the template selected by the page's current type and kind."""
+    from tools.creative_lint.template_profile import resolve_template
+
+    template = resolve_template(vault / key, root=_REPO_ROOT)
+    return sha256_file(template) if template is not None else ""
+
 
 def _empty_cache() -> LintCache:
-    return {"config_digest": "", "entries": {}}
+    return {"version": CACHE_VERSION, "config_digest": "", "entries": {}}
+
+
 
 
 def _relative_key(vault: Path, raw_path: str | Path) -> str:
@@ -126,15 +139,17 @@ def _valid_entry(raw: Any) -> CacheEntry | None:
     if not isinstance(raw, Mapping):
         return None
     content = raw.get("content_sha256")
+    template = raw.get("template_sha256")
     config = raw.get("config_digest")
     extracts = raw.get("extracts")
     results = raw.get("results")
-    if not all(isinstance(value, str) for value in (content, config)):
+    if not all(isinstance(value, str) for value in (content, template, config)):
         return None
     if not isinstance(extracts, Mapping) or not isinstance(results, Mapping):
         return None
     return cast(CacheEntry, {
         "content_sha256": content,
+        "template_sha256": template,
         "config_digest": config,
         "extracts": dict(extracts),
         "results": dict(results),
@@ -142,7 +157,11 @@ def _valid_entry(raw: Any) -> CacheEntry | None:
 
 
 def _clean_cache(vault: Path, raw: Any) -> LintCache:
-    if not isinstance(raw, Mapping) or not isinstance(raw.get("config_digest"), str):
+    if (
+        not isinstance(raw, Mapping)
+        or raw.get("version") != CACHE_VERSION
+        or not isinstance(raw.get("config_digest"), str)
+    ):
         return _empty_cache()
     source_entries = raw.get("entries")
     if not isinstance(source_entries, Mapping):
@@ -161,7 +180,7 @@ def _clean_cache(vault: Path, raw: Any) -> LintCache:
         entry = _valid_entry(raw_entry)
         if entry is not None:
             entries[key] = entry
-    return {"config_digest": raw["config_digest"], "entries": entries}
+    return {"version": CACHE_VERSION, "config_digest": raw["config_digest"], "entries": entries}
 
 
 def load_cache(vault: str | Path) -> LintCache:
@@ -212,15 +231,20 @@ def lookup_entry(
     path: str | Path,
     config_digest: str,
 ) -> CacheEntry | None:
-    """Return a hit only when both file bytes and checker config still match."""
+    """Return a hit only when page, template, and checker inputs still match."""
     root = Path(vault).expanduser().resolve()
     try:
         key = _relative_key(root, path)
         current_hash = sha256_file(root / key)
+        current_template_hash = _template_sha256(root, key)
     except (OSError, ValueError):
+        return None
+    if cache.get("version") != CACHE_VERSION:
         return None
     entry = cache.get("entries", {}).get(key)
     if entry is None or entry.get("content_sha256") != current_hash:
+        return None
+    if entry.get("template_sha256") != current_template_hash:
         return None
     if entry.get("config_digest") != config_digest:
         return None
@@ -235,17 +259,19 @@ def update_entry(
     extracts: Mapping[str, Any],
     results: Mapping[str, Any],
 ) -> CacheEntry:
-    """Hash and store one file's checker extracts and results in *cache*."""
+    """Hash and store one file and its selected template in *cache*."""
     if not isinstance(extracts, Mapping) or not isinstance(results, Mapping):
         raise TypeError("cache extracts and results must be mappings")
     root = Path(vault).expanduser().resolve()
     key = _relative_key(root, path)
     entry: CacheEntry = {
         "content_sha256": sha256_file(root / key),
+        "template_sha256": _template_sha256(root, key),
         "config_digest": config_digest,
         "extracts": dict(extracts),
         "results": dict(results),
     }
+    cache["version"] = CACHE_VERSION
     cache.setdefault("entries", {})[key] = entry
     cache["config_digest"] = config_digest
     return entry

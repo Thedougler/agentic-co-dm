@@ -137,6 +137,12 @@ def compare_page(page_file: str | Path, template_file: str | Path, *, root: str 
     root_path = Path(root) if root is not None else Path(__file__).resolve().parents[2]
     page_text = page.read_text(encoding="utf-8")
     profile = derive_profile(template)
+    page_title = str(_frontmatter(page_text).get("title", "")).strip()
+    if page_title:
+        profile["heading_tree"] = [
+            {**item, "text": item["text"].replace("{{title}}", page_title)}
+            for item in profile["heading_tree"]
+        ]
     page_headings = [match.group(2).strip() for match in _HEADING.finditer(page_text)
                      if len(match.group(1)) >= 2]
     expected = [item["text"] for item in profile["heading_tree"] if item["level"] >= 2 and not item["optional"]]

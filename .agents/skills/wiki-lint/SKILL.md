@@ -44,50 +44,43 @@ template field is preserved.
 Run the structural command from repo root before any agent repair:
 
 - **Vault or path:** `wiki lint [path ...]`
-- `--full` is accepted and does not change the dump
+- `--full` adds the detailed per-file findings for the selected scope
 
-Default stdout is summary fields plus every finding grouped by `files`.
-Use `counts`, `unique`, `backlog`, `next_page`, and each file's `findings`
-(`rule`, `file`, 1-based `line`, `severity`, `message`).
+Default stdout is a compact overview: `counts`, `finding_total`,
+`affected_pages`, cache/scope metadata, and `next`. `next.path` is the
+smallest dirty file by bytes, then vault-relative path; `next.action` tells
+the agent to run `wiki lint <next.path> --full`, repair it, and rerun lint.
+Default output does not contain `files`, `unique`, or `backlog` dumps.
 
-Pass owner extensions through `scripts/wiki-lint` when a checker needs
-`--allow-lifecycle` / `--allow-relationship-type`.
+`wiki lint` is the sole agent-facing lint command. It runs every configured
+checker, including structural, template-conformance, creative, and Vale
+checks. Aggregate counts include every finding at every severity. Agents do
+not add checker-suppression flags.
 
-**HARD fail keys:** `broken_links`, `missing_frontmatter`, `bad_type`,
-`bad_lifecycle`, `typed_relationships`, `pc_identity_mismatch`,
-`misplaced_entity`, `spaced_basename`, `aruhe_prefix_basename`,
-`illegal_basename`, `duplicate_stems`, `template_conformance`.
+Clean = `status: "clean"`, `finding_total: 0`, and no open ledger failures.
 
-**Soft keys:** `snake_case_labels`, `pc_tag_on_npc`,
-`snake_case_owner_basename`.
 
-Redirect stubs (`redirects_to` in frontmatter) skip `missing_frontmatter`,
-`spaced_basename`, `aruhe_prefix_basename`. Reserved files (`AGENTS.md`,
-`README.md`, `index.md`, `log.md`, `hot.md`) and mechanic-allowlist links
-skip `broken_links`. `_archive`/`_raw`/templates/`_meta` skipped — live
-pages only for filename HARD keys.
+### Vale and other checker findings
 
-**Kind home first.** A live owner under `entities/{folder}/` must match
-frontmatter `type`. `misplaced_entity` → move to
-`entities/{type}/{basename}` from frontmatter `type`, then re-run.
-Template conformance checks the typed page against the derived
-`wiki/templates/{type}.md` profile and `wiki/templates/contracts/{type}.yml`.
-Default dump includes every checker finding.
+Every `VALE_*` or mapped Vale finding is included in the aggregate counts.
+Use `wiki lint <path> --full` when line-level Vale or other checker findings
+are needed for repair.
+Repair deterministic findings when safe; route judgment findings to their
+owner skill. False positives: correct the rule/config with a narrowly scoped
+exemption and regression fixture, then rerun. Rerun after repairs because
+follow-on findings can surface. Persisting findings remain explicit manual
+review items.
 
-Clean = `status: "clean"`, empty findings, `identity.status` `"resolved"`.
+The agent-facing command does not expose hard-only or checker-suppression
+carve-outs. The checker backend remains an implementation detail.
 
-Schema precedence: CLI flags > resolved config > framework defaults.
-Lifecycle/relationship extensions additive. Empty/whitespace values fail
-closed.
 
 ### Vale gate
 
-Page-scoped runs the default Vale pass. Every `VALE_*` finding is a lint
-finding — repair when deterministic. False positives: correct the Vale
-rule/config with narrowly scoped exemption and regression fixture, then
-rerun. Overall-clean = no fixable findings, `hard_fail: false`, exit `0`.
-Rerun after Vale repairs — fixes surface follow-on findings. Budget three
-passes per page; persist → manual review item.
+Page-scoped runs the default Vale pass. Use `--full` to expose every finding
+with a 1-based line. Repair deterministic findings when safe; route judgment
+findings to the owner skill; then rerun until the result is clean or a
+concrete manual-review blocker remains.
 
 ## Branch: page-scoped repair
 
@@ -122,9 +115,9 @@ The hot path — a single page given by path.
 6. **QMD refresh.** If page modified and QMD available,
    `${QMD_CLI:-qmd} update`.
 
-**Done when:** identity resolved; every fixable finding repaired;
-page-scoped command returns `hard_fail: false` with empty findings;
-unfixable findings listed; one done-summary names what changed and where.
+**Done when:** identity resolved; `wiki lint <page> --full` returns
+`hard_fail: false` with no findings; unfixable findings listed; one
+done-summary names what changed and where.
 
 `--check`: report findings without repairing.
 
@@ -132,10 +125,11 @@ unfixable findings listed; one done-summary names what changed and where.
 
 When vault-wide lint finds fixable issues and `--check` is not set:
 
-1. Run `wiki lint` and take `next_page` (first `backlog` page).
-2. Process that page: read, repair, page-scoped verify, commit.
-   Re-run `wiki lint` and take the new `next_page`.
-3. Stop only when `backlog` is empty, the user stops the run, or a concrete
+1. Run `wiki lint` and take `next.path` (the smallest dirty file).
+2. Run `wiki lint <next.path> --full`, read and repair that page, then run
+   the page-scoped lint again.
+3. Rerun `wiki lint` and take the new `next.path`.
+4. Stop when `next` is null, the user stops the run, or a concrete
    unrecoverable blocker occurs.
 
 **Done when:** backlog empty or a concrete blocker named; one done-summary.

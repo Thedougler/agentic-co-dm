@@ -26,6 +26,8 @@ Provide a single Python CLI script (`scripts/wiki-bulk-ops`) that agents invoke 
 
 **Constraints**: Zero external dependencies; must preserve Obsidian markdown syntax; must be idempotent; writes go to live vault paths
 
+
+MOC eligibility: generate navigation pages only for folders with at least two direct markdown pages or at least one eligible child MOC. One-page leaf folders are not useful navigation surfaces; stale generated MOCs are removed on regeneration. Generated MOCs remain structural pages and are excluded from identity and template-conformance checks.
 **Scale/Scope**: ~1565 markdown files, ~44k total lines, single vault
 
 ## Constitution Check

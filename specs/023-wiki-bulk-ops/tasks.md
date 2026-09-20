@@ -208,6 +208,15 @@ Every implementation task uses `- [ ] T###`, an optional `[P]` marker only for i
 
 ---
 
+## Phase 11: MOC noise correction
+
+**Purpose**: Keep structural navigation useful without creating or linting redundant one-page leaf indexes.
+
+- [x] T073 Narrow MOC generation to folders with at least two direct pages or eligible child MOCs, remove stale one-page leaf MOCs, and exempt generated MOCs from identity/template lint in `scripts/wiki-bulk-ops`, `tools/wiki_ops/identity.py`, `tools/lint_wiki.py`, and `scripts/wiki-lint`
+- [x] T074 Update MOC acceptance coverage and run focused structural verification in `tests/test_wiki_bulk_ops.py`
+
+---
+
 ## Dependencies & Execution Order
 
 ### Phase Dependencies

@@ -16,9 +16,11 @@ DEFAULT_HARD_KEYS = frozenset(
         "pc_identity_mismatch",
         "misplaced_entity",
         "spaced_basename",
+        "noncanonical_basename",
         "aruhe_prefix_basename",
         "illegal_basename",
         "duplicate_stems",
+        "duplicate_slugs",
         "redirect_stubs",
         "template_conformance",
     }
@@ -155,7 +157,7 @@ def build_worklist(
     page_bytes: Mapping[Any, Any] | None = None,
     file_order: Iterable[str] | None = None,
 ) -> dict[str, Any]:
-    """Build the deterministic public lint worklist from flat or grouped findings."""
+    """Build a bounded lint overview, optionally including detailed findings."""
     flat = list(_records(findings, vault=vault))
     counts: dict[str, int] = {}
     targets: dict[str, set[str]] = {}
@@ -189,6 +191,7 @@ def build_worklist(
         for page, number in pages.items()
     ]
     backlog.sort(key=lambda item: (item["bytes"], item["page"]))
+    next_item = backlog[0] if backlog else None
     hard = set(hard_keys) if hard_keys is not None else DEFAULT_HARD_KEYS
     order = list(file_order) if file_order is not None else []
     ordered_files: list[str] = []
@@ -196,18 +199,37 @@ def build_worklist(
         page = _path(page, vault)
         if page in grouped and page not in ordered_files:
             ordered_files.append(page)
+
     result: dict[str, Any] = {
         "status": "findings" if counts else "clean",
         "counts": counts,
         "hard_fail": any(rule in hard for rule in counts),
-        "unique": unique,
-        "backlog": backlog,
-        "next_page": backlog[0]["page"] if backlog else None,
+        "finding_total": sum(counts.values()),
+        "affected_pages": len(pages),
+        "next_page": next_item["page"] if next_item else None,
+        "next": (
+            {
+                "path": next_item["page"],
+                "findings": next_item["findings"],
+                "bytes": next_item["bytes"],
+                "action": (
+                    f"Run wiki lint {next_item['page']} --full, repair it, "
+                    "then rerun wiki lint."
+                ),
+            }
+            if next_item
+            else None
+        ),
         "cache": _cache(cache),
         "files_checked": max(0, int(files_checked or 0)),
         "scope": _scope(scope, vault),
-        "files": [{"file": page, "findings": grouped[page]} for page in ordered_files],
     }
+    if include_findings or full:
+        result.update({
+            "unique": unique,
+            "backlog": backlog,
+            "files": [{"file": page, "findings": grouped[page]} for page in ordered_files],
+        })
     return result
 
 

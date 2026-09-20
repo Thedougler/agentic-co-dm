@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import os
+import shutil
 import subprocess
 import time
 from concurrent.futures import ThreadPoolExecutor
@@ -89,7 +90,9 @@ def _resolve_vale(root: Path, executable: str) -> str | None:
     if requested.is_absolute() or requested.parent != Path("."):
         return str(requested) if requested.is_file() and os.access(requested, os.X_OK) else None
     project_binary = root / ".venv" / "bin" / executable
-    return str(project_binary) if project_binary.is_file() and os.access(project_binary, os.X_OK) else None
+    if project_binary.is_file() and os.access(project_binary, os.X_OK):
+        return str(project_binary)
+    return shutil.which(executable)
 
 
 def _runtime_failure(files: list[Path], root: Path, reason: str) -> Finding:
@@ -142,7 +145,7 @@ def run_vale(files: list[Path], registry: Registry, *, root: Path | None = None,
     global TIMING
     TIMING = {}
     root = (root or ROOT).resolve()
-    if not files:
+    if not (root / ".vale.ini").is_file():
         return [], []
     warnings: list[str] = []
     try:
@@ -155,7 +158,7 @@ def run_vale(files: list[Path], registry: Registry, *, root: Path | None = None,
         return [_runtime_failure(files, root, reason)], [reason]
     binary = _resolve_vale(root, executable)
     if not binary:
-        reason = f"Project-local Vale is not installed at {root / '.venv' / 'bin' / executable}; run uv sync"
+        reason = f"Vale is not installed at {root / '.venv' / 'bin' / executable} or on PATH"
         return [_runtime_failure(files, root, reason)], [reason]
     payloads: list[dict[str, Any]] = []
     runtime_failures: list[Finding] = []

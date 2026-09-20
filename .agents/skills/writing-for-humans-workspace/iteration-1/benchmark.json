@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "skill_name": "writing-for-humans",
+    "skill_path": ".agents/skills/writing-for-humans",
+    "executor_model": "haiku",
+    "analyzer_model": "opus",
+    "timestamp": "2026-09-20T06:51:47Z",
+    "evals_run": ["npc-nigel-strutt", "place-vel-orn", "item-bilge-lamp-resist-flowery"],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_name": "npc-nigel-strutt",
+      "config": "with_skill",
+      "pass_rate": 1.0,
+      "passed": 6,
+      "total": 6,
+      "time_seconds": 76.4,
+      "tokens": 50404,
+      "expectations": [
+        {"text": "All facts preserved", "passed": true, "evidence": "All original facts present."},
+        {"text": "Wikilinks intact", "passed": true, "evidence": "All three wikilinks preserved."},
+        {"text": "Frontmatter unchanged", "passed": true, "evidence": "All fields preserved."},
+        {"text": "Drawable portrait", "passed": true, "evidence": "Pressed grey uniform shirt, every button aligned, hair combed. Jaw works side to side when stressed."},
+        {"text": "No dead weight", "passed": true, "evidence": "Every line serves play."},
+        {"text": "No AI voice", "passed": true, "evidence": "No AI tell phrases."}
+      ]
+    },
+    {
+      "eval_name": "npc-nigel-strutt",
+      "config": "old_skill",
+      "pass_rate": 0.83,
+      "passed": 5,
+      "total": 6,
+      "time_seconds": 85.1,
+      "tokens": 55041,
+      "expectations": [
+        {"text": "All facts preserved", "passed": true, "evidence": "All facts present."},
+        {"text": "Wikilinks intact", "passed": true, "evidence": "All wikilinks preserved."},
+        {"text": "Frontmatter unchanged", "passed": false, "evidence": "Removed lifecycle_changed field."},
+        {"text": "Drawable portrait", "passed": true, "evidence": "Crisp-pressed coat, fingernails bitten short. Drawable."},
+        {"text": "No dead weight", "passed": true, "evidence": "Clean output."},
+        {"text": "No AI voice", "passed": true, "evidence": "No AI tells."}
+      ]
+    },
+    {
+      "eval_name": "place-vel-orn",
+      "config": "with_skill",
+      "pass_rate": 0.8,
+      "passed": 4,
+      "total": 5,
+      "time_seconds": 100.2,
+      "tokens": 53001,
+      "expectations": [
+        {"text": "Glance five seconds", "passed": true, "evidence": "Three sentences: location, access, Pearl theft."},
+        {"text": "Narration speakable", "passed": true, "evidence": "Dark blue hole, black stone teeth. Concrete and drawable."},
+        {"text": "No encyclopedia", "passed": true, "evidence": "Places reader at the hole."},
+        {"text": "Body-scale feature", "passed": true, "evidence": "Single-file boat-width, three stories."},
+        {"text": "Wikilinks intact", "passed": false, "evidence": "Removed Vafnar alias. Invented DC 12 Athletics check not in source."}
+      ]
+    },
+    {
+      "eval_name": "place-vel-orn",
+      "config": "old_skill",
+      "pass_rate": 0.2,
+      "passed": 1,
+      "total": 5,
+      "time_seconds": 148.4,
+      "tokens": 59397,
+      "expectations": [
+        {"text": "Glance five seconds", "passed": true, "evidence": "Short hook with stakes."},
+        {"text": "Narration speakable", "passed": false, "evidence": "Kept original narration unchanged. 'Older house occupies black cliff stone' is encyclopedia voice."},
+        {"text": "No encyclopedia", "passed": false, "evidence": "'Older house occupies' classifies the structure."},
+        {"text": "Body-scale feature", "passed": false, "evidence": "No body-scale anchors. Adjective stacking only."},
+        {"text": "Wikilinks intact", "passed": false, "evidence": "Removed 5 connections from original."}
+      ]
+    },
+    {
+      "eval_name": "item-bilge-lamp-resist-flowery",
+      "config": "with_skill",
+      "pass_rate": 0.25,
+      "passed": 1,
+      "total": 4,
+      "time_seconds": 114.0,
+      "tokens": 56568,
+      "expectations": [
+        {"text": "Resists flowery", "passed": false, "evidence": "Added 'does not flicker, does not drown, does not betray' — literary triple negation."},
+        {"text": "Signal dense", "passed": false, "evidence": "'does not betray' is atmosphere. Added category description in At a Glance."},
+        {"text": "Mechanics preserved", "passed": true, "evidence": "All mechanics intact."},
+        {"text": "Narration tightened", "passed": false, "evidence": "Original 4 lines became 6 lines with added literary phrasing."}
+      ]
+    },
+    {
+      "eval_name": "item-bilge-lamp-resist-flowery",
+      "config": "old_skill",
+      "pass_rate": 0.25,
+      "passed": 1,
+      "total": 4,
+      "time_seconds": 98.2,
+      "tokens": 54587,
+      "expectations": [
+        {"text": "Resists flowery", "passed": false, "evidence": "Added 'Minutes pass. Hours pass. It simply keeps burning.' Literary pacing."},
+        {"text": "Signal dense", "passed": false, "evidence": "Literary pacing is not signal."},
+        {"text": "Mechanics preserved", "passed": true, "evidence": "All mechanics intact."},
+        {"text": "Narration tightened", "passed": false, "evidence": "Added literary pacing. Not tightened."}
+      ]
+    }
+  ],
+  "run_summary": {
+    "with_skill": {"pass_rate": 0.73, "mean_time": 96.9, "mean_tokens": 53324},
+    "old_skill": {"pass_rate": 0.47, "mean_time": 110.6, "mean_tokens": 56342},
+    "delta": {"pass_rate": "+0.26", "time_seconds": "-13.7", "tokens": "-3018"}
+  },
+  "notes": [
+    "New skill: stronger on place pages (body-scale, narration rewrite). Weaker: invented mechanics (DC check) not in source.",
+    "Both versions failed to resist the flowery prompt — neither version firmly overrides a direct user request for literary prose.",
+    "Old skill: kept encyclopedia voice on narration, removed connections. Took longer and used more tokens.",
+    "New skill used fewer tokens on average (53k vs 56k) despite reading more reference files — workflow-first structure may reduce wandering."
+  ]
+}

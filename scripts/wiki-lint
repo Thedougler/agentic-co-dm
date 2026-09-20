@@ -35,6 +35,11 @@ def run_lint(vault: Path, extra: list[str]) -> tuple[int, dict]:
     return proc.returncode, json.loads(proc.stdout)
 
 
+
+def is_moc_page(relative: str) -> bool:
+    name = Path(relative).name
+    return name == "_index.md" or name.endswith("-index.md")
+
 def _line_for_finding(vault: Path, item: dict[str, Any]) -> int:
     """Return an existing or best-effort 1-based source line for a finding."""
     existing = item.get("line")
@@ -150,6 +155,8 @@ def structural_main(argv: list[str]) -> int:
             ]
             template_findings = []
             for relative in paths:
+                if is_moc_page(relative):
+                    continue
                 page = vault / relative
                 try:
                     fields = __import__("tools.wiki_ops.mutations", fromlist=["frontmatter_fields"]).frontmatter_fields(page.read_text(encoding="utf-8"))

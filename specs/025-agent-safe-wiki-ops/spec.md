@@ -28,6 +28,9 @@
 - Q: Should AI-tells and community Vale package findings also be deterministic agent repair? → A: Yes. The entire Vale layer is agent-facing tooling. All findings — deprecated patterns, AI tells, prose quality — are deterministic agent repair. No human gate on any Vale finding.
 - (User request 2026-09-18) The default `wiki-lint` report MUST include a 1-based source `line` for every file-scoped structural, template, and Vale finding. Grouped findings MUST repeat the line so an agent can open the exact source location without rescanning the file. File-level findings use line `1`.
 
+- (User request 2026-09-19) Structural lint MUST report slug collisions separately from exact basename collisions, group all conflicting page paths, and classify the collision as human repair until identity resolution selects a canonical owner.
+- (User request 2026-09-19) Structural lint MUST flag a live titled page whose basename is not lowercase kebab-case when its frontmatter title begins with a human-friendly capitalized name; when the lowercase target is free, emit an agent-actionable rename target, otherwise block automatic rename and report the collision.
+
 ## User Scenarios & Testing
 
 ### User Story 1 - Scoped Faction Lint and Consolidation (Priority: P1)
@@ -47,6 +50,9 @@ An agent receives "Lint and consolidate this faction, applying the safe fixes." 
 5. **Given** a consolidation merges two faction pages, **When** the merge completes, **Then** the canonical page, index entry, manifest identity, and backlinks update in one logical operation — the obsolete page is removed, no redirect stub is created, no manual regex editing.
 6. **Given** a multi-file repair transaction completes, **When** finalization runs, **Then** QMD, index, and manifest refresh exactly once (not after each intermediate write).
 7. **Given** a page contains an embed link (`![[name]]`) referencing a nonexistent asset, **When** scoped lint runs, **Then** it produces an error finding for the broken embed.
+8. **Given** two live pages have different basenames that normalize to the same lowercase kebab slug, **When** structural lint runs, **Then** `duplicate_slugs` groups both paths as `human_repair` and does not choose a canonical page.
+9. **Given** two live pages share the same case-folded basename, **When** structural lint runs, **Then** `duplicate_stems` reports the basename collision separately from slug-normalization collisions.
+10. **Given** a live page has a capitalized human-friendly frontmatter title and an uppercase or non-kebab basename, **When** structural lint runs, **Then** `noncanonical_basename` reports the expected lowercase target and emits a deterministic rename action only when that target is free.
 
 ---
 
@@ -198,6 +204,8 @@ Policy rules (like acceptance semantics, callout vocabulary, template optionalit
 - **FR-021**: The QMD hook MUST serialize concurrent invocations, produce zero output on success, and return a non-zero status with one actionable error line on stderr when maintenance cannot complete. If QMD is not installed, the hook MUST exit 0 silently (no output, no error).
 - **FR-022**: A QMD embedding backlog after a successful hook MUST remain a derived status field; it MUST NOT cause a successful hook or mutation to emit a verbose remediation narrative. The backlog drains naturally across successive wiki writes; agents query `qmd status` for situational awareness when needed.
 - **FR-024**: Default `wiki-lint` output MUST include a positive 1-based `line` for every file-scoped structural, template, and Vale finding, and `findings_by_file` MUST preserve that line. Findings without a narrower source span MUST use line `1`.
+- **FR-025**: Structural lint MUST report `duplicate_slugs` for distinct basenames that collapse to the same lowercase kebab slug, including every conflicting page path and `human_repair` classification; it MUST keep exact case-folded basename collisions in `duplicate_stems`.
+- **FR-026**: Structural lint MUST report `noncanonical_basename` for live titled pages whose capitalized human-friendly title accompanies a basename that is not lowercase kebab-case. If the lowercase target is free, the finding MUST include a deterministic rename action; if occupied, it MUST mark the collision as human repair and provide no automatic action.
 - **FR-023**: The linting system MUST include a Vale-powered prose and pattern quality layer. Vale findings MUST feed into the same finding schema as all other lint findings (FR-004, FR-011), participating in dry-run repair plans, typed mutations, and batched finalization. The Vale layer MUST include: (a) custom deprecated-pattern rules that match headings and inline content — each rule MUST declare an agent-facing guidance message explaining the correct usage or action; (b) AI-tells packages and community Vale packages (e.g., write-good, proselint) to flag LLM-generated prose artifacts. Frontmatter key deprecation stays with existing Python checks (FR-019). The entire Vale layer is agent-facing tooling: all findings — deprecated patterns, AI tells, prose quality — MUST have repair class deterministic-repair. The agent acts on each rule's guidance message without waiting for DM review. No human gate on any Vale finding. The first banned pattern is `DM Thesis`: a junk section agents hallucinate that MUST be flagged for deletion with no replacement. Checkable rule: `AGENT003`.
 
 ### Key Entities

@@ -15,6 +15,10 @@ from typing import Any
 from .scope import Scope, SKIP_DIRS, _frontmatter
 
 RESERVED_PAGES = {"index.md", "log.md", "hot.md"}
+
+
+def _is_moc_page(path: Path) -> bool:
+    return path.name == "_index.md" or path.stem.endswith("-index")
 IDENTITY_BATCH_TIMEOUT_SECONDS = 60
 
 
@@ -147,6 +151,7 @@ def _pages(vault: Path) -> list[dict[str, Any]]:
         if (
             not path.is_file()
             or path.name.casefold() in RESERVED_PAGES
+            or _is_moc_page(path)
             or SKIP_DIRS.intersection(rel.parts)
         ):
             continue

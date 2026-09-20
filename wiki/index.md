@@ -647,7 +647,6 @@
 - [[unsaid-macaw]] — Macaw that echoes a listener's surface thought in their own voice and can briefly compel one truthful sentence. ( #shattered-sea #aruhe #creature)
 - [[Ussa]] — A green-skinned scout in Sparhold colours, bare webbed feet, chalk-dusted palms, eyes always on the tree line. ( #shattered-sea #npc)
 - [[Ussamet]] — Half-sunken ruins that surface only at the lowest tides; on a schedule only the sea seems to keep. ( #shattered-sea #place)
-- [[v001-autonomy-probe]] — Disposable lint-repair probe for agent autonomy V-001. ( #shattered-sea)
 - [[vaelspire]] — A solitary basalt spire said to answer one true question, once, to whoever reaches the summit. Nobody who's asked will say what. ( #shattered-sea #place)
 - [[Vaka]] — Eight years old. Founded by [[felix-aho|Félix Aho]] after his defection from [[karath|Karath]] — green caste, the lowest freeborn. Roughly a dozen members: mostly green- and blue-caste defectors, p ( #shattered-sea #faction)
 - [[Valkur]] — Named from the Umberlee dump. ( #shattered-sea #lore)
@@ -721,7 +720,7 @@
 - [[takowan]] — Harbour crew member named in Grimaldi’s waking-salts item record. ( #shattered-sea #npc)
 - [[anvezs-provisions]] — General provisions shop named in the item record for Anvez’s Provisions. ( #shattered-sea #place)
 - [[arsenal]] — Calveno site named in the item record for Arsenal. ( #shattered-sea #place)
-- [[bridge]] — Named bridge site referenced by item records as the Bridge. ( #shattered-sea #place)
+- [[calveno-bridge-district]] — Calveno bridge district named in item records as the Bridge. ( #shattered-sea #place)
 - [[cabinet-of-morsani]] — Calveno site named in the item record for the Cabinet of Morsani. ( #shattered-sea #place)
 - [[calveno-sewer-magazines]] — Calveno sewer location named in item records. ( #shattered-sea #place)
 - [[carpenters-slip]] — Calveno waterfront site named in the item record for Carpenters’ Slip. ( #shattered-sea #place)
@@ -813,32 +812,20 @@
 - [[entities/item/room-6-key|Room 6 Key]] — A key named in Kalowe evidence.
 - [[entities/item/fathomrush-last-berth-false-log|Fathomrush Last Berth False Log]] — A false log named in Kalowe evidence.
 ## Folder Indexes
-- [[entities/creature/creature-index|Creatures]]
-- [[entities/entities-index|Entities]]
-- [[entities/lore/shattered-sea-overview|Shattered Sea Overview]]
-- [[entities/faction/faction-index|Factions]]
-- [[entities/item/item-index|Items]]
-- [[entities/lore/lore-index|Lore]]
-- [[entities/npc/npc-index|Non-Player Characters]]
-- [[entities/pc/pc-index|Player Characters]]
-- [[entities/place/place-index|Places]]
-- [[entities/quest/quest-index|Quests]]
-- [[entities/region/region-index|Regions]]
-- [[entities/vehicle/vehicle-index|Vehicles]]
-- [[entities/work/work-index|Work]]
-- [[journal/journal-index|Journal]]
-- [[journal/sessions/sessions-index|Sessions]]
-- [[journal/sessions/shattered-sea/01/01-index|Session 01]]
-- [[journal/sessions/shattered-sea/02/02-index|Session 02]]
-- [[journal/sessions/shattered-sea/03/03-index|Session 03]]
-- [[journal/sessions/shattered-sea/04/04-index|Session 04]]
-- [[journal/sessions/shattered-sea/05/05-index|Session 05]]
-- [[journal/sessions/shattered-sea/06/06-index|Session 06]]
-- [[journal/sessions/shattered-sea/07/07-index|Session 07]]
-- [[journal/sessions/shattered-sea/08/08-index|Session 08]]
-- [[journal/sessions/shattered-sea/09/09-index|Session 09]]
-- [[journal/sessions/shattered-sea/10/10-index|Session 10]]
-- [[journal/sessions/shattered-sea/11/11-index|Session 11]]
-- [[journal/sessions/shattered-sea/12/12-index|Session 12]]
-- [[journal/sessions/shattered-sea/shattered-sea-index|Shattered Sea sessions]]
-- [[synthesis/synthesis-index|Synthesis]]
+- [[entities/_index|Entities Index]]
+- [[entities/creature/_index|Creature Index]]
+- [[entities/faction/_index|Factions Index]]
+- [[entities/item/_index|Items Index]]
+- [[entities/lore/_index|Lore Index]]
+- [[entities/npc/_index|Non-Player Characters Index]]
+- [[entities/pc/_index|Player Characters Index]]
+- [[entities/place/_index|Places Index]]
+- [[entities/quest/_index|Quests Index]]
+- [[entities/region/_index|Regions Index]]
+- [[entities/vehicle/_index|Vehicles Index]]
+- [[journal/_index|Journal Index]]
+- [[journal/sessions/_index|Sessions Index]]
+- [[journal/sessions/shattered-sea/11/_index|Session 11 Index]]
+- [[journal/sessions/shattered-sea/12/_index|Session 12 Index]]
+- [[journal/sessions/shattered-sea/_index|Shattered Sea Sessions Index]]
+- [[synthesis/_index|Synthesis Index]]

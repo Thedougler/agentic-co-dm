@@ -76,7 +76,7 @@ When all are `None`, scope is the entire vault (excluding skip dirs: `.obsidian`
 
 | Field | Type | Default | Description |
 |---|---|---|---|
-| `title_map` | `dict[str, str]` | built-in | Folder name → player-friendly title (e.g. `npc` → "Non-Player Characters") |
+| `title_map` | `dict[str, str]` | built-in | Folder name → readable folder title; explicit index-title overrides and an `Index` suffix distinguish navigation pages (e.g. `creature` → "Creature Index") |
 
 No user-supplied parameters beyond global vault. The static title map is internal.
 

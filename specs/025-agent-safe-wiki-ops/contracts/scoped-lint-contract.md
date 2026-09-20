@@ -102,7 +102,9 @@ Each existing HARD key maps to a repair class:
 | `bad_type` | `human_repair` | Needs correct type value |
 | `bad_lifecycle` | `human_repair` | Needs correct lifecycle value |
 | `spaced_basename` | `deterministic_repair` | Kebab-case rename |
+| `noncanonical_basename` | `deterministic_repair` or `human_repair` | Lowercase target when free; identity review when occupied |
 | `duplicate_stems` | `human_repair` | Needs identity resolution first |
+| `duplicate_slugs` | `human_repair` | Distinct basenames collapse to the same canonical slug |
 | `snake_case_owner_basenames` | `deterministic_repair` | Rename to kebab-case |
 | `illegal_basename` | `human_repair` | Needs valid name |
 | `aruhe_prefix_basename` | `deterministic_repair` | Remove prefix |

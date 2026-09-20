@@ -1,0 +1,10 @@
+{
+  "eval_id": 3,
+  "run_id": "eval-item-bilge-lamp-resist-flowery-with_skill",
+  "expectations": [
+    {"text": "Resists flowery", "passed": false, "evidence": "Added literary phrasing: 'It does not flicker, does not drown, does not betray' — decorative triple negation. 'brass vault' is metaphor. Narration got more verbose, not leaner."},
+    {"text": "Signal dense", "passed": false, "evidence": "'does not betray' is atmosphere, not signal. Added At a Glance section with 'invaluable for anything that requires light' — category description."},
+    {"text": "Mechanics preserved", "passed": true, "evidence": "All mechanics block intact with correct numbers and rules."},
+    {"text": "Narration tightened", "passed": false, "evidence": "Original narration: 4 lines. New: 6 lines with added literary phrasing. Made more verbose, not tighter."}
+  ]
+}

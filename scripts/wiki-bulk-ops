@@ -864,6 +864,9 @@ MOC_TITLE_MAP = {
     "region": "Regions",
     "sessions": "Sessions",
 }
+MOC_INDEX_TITLE_MAP = {
+    "creature": "Creature Index",
+}
 
 
 def moc_folder_title(folder: Path) -> str:
@@ -871,16 +874,25 @@ def moc_folder_title(folder: Path) -> str:
     if name.isdigit():
         return f"Session {name}"
     if folder.parent.name == "sessions":
-        return f"{name.replace('-', ' ').title()} sessions"
+        return f"{name.replace('-', ' ').title()} Sessions"
     return MOC_TITLE_MAP.get(name.casefold(), name.replace("-", " ").replace("_", " ").title())
 
 
+def moc_index_title(folder: Path) -> str:
+    return MOC_INDEX_TITLE_MAP.get(
+        folder.name.casefold(),
+        f"{moc_folder_title(folder)} Index",
+    )
+
+
 def moc_stem(folder: Path) -> str:
-    return f"{folder.name}-index"
+    return "_index"
 
 
 def moc_page(folder: Path) -> Path:
     return folder / f"{moc_stem(folder)}.md"
+def moc_legacy_page(folder: Path) -> Path:
+    return folder / f"{folder.name}-index.md"
 
 
 def is_moc_filename(path: Path) -> bool:
@@ -892,7 +904,14 @@ def moc_folder_allowed(relative: Path) -> bool:
     return not any(part in MOC_SKIP_DIRS for part in relative.parts)
 
 
-def moc_content_folders(vault: Path) -> list[Path]:
+def moc_direct_pages(folder: Path) -> list[Path]:
+    return [
+        path for path in folder.glob("*.md")
+        if path.is_file() and not is_moc_filename(path)
+    ]
+
+
+def moc_candidate_folders(vault: Path) -> list[Path]:
     folders: set[Path] = set()
     for path in vault.rglob("*.md"):
         relative = path.relative_to(vault)
@@ -905,6 +924,17 @@ def moc_content_folders(vault: Path) -> list[Path]:
             if moc_folder_allowed(relative) and any(child.is_dir() for child in path.iterdir()):
                 folders.add(path)
     return sorted(folders, key=lambda item: item.relative_to(vault).as_posix())
+
+
+def moc_content_folders(vault: Path) -> list[Path]:
+    candidates = moc_candidate_folders(vault)
+    eligible: set[Path] = set()
+    for folder in sorted(candidates, key=lambda item: len(item.parts), reverse=True):
+        direct_pages = len(moc_direct_pages(folder))
+        child_mocs = any(child in eligible for child in folder.iterdir() if child.is_dir())
+        if direct_pages >= 2 or child_mocs:
+            eligible.add(folder)
+    return sorted(eligible, key=lambda item: item.relative_to(vault).as_posix())
 
 
 def existing_title(text: str, fallback: str) -> str:
@@ -924,10 +954,10 @@ def moc_metadata(target: Path, vault: Path, title: str, folder: Path) -> tuple[s
 
 
 def moc_generated_text(folder: Path, vault: Path, existing: Path | None, content_folders: set[Path]) -> str:
-    title = moc_folder_title(folder)
+    title = moc_index_title(folder)
     metadata_target = existing or moc_page(folder)
     title, category, tags, sources, created, updated = moc_metadata(metadata_target, vault, title, folder)
-    summary = f"Folder index of {title}."
+    summary = f"Folder index of {moc_folder_title(folder)}."
     lines = [
         "---\n",
         f"title: {title}\n",
@@ -958,7 +988,7 @@ def moc_generated_text(folder: Path, vault: Path, existing: Path | None, content
         if not child.is_dir() or child not in content_folders:
             continue
         child_target = child.relative_to(vault).joinpath(moc_stem(child)).as_posix()
-        child_title = moc_folder_title(child)
+        child_title = moc_index_title(child)
         entries.append((child_title.casefold(), f"- [[{child_target}|{child_title}]]\n"))
     for _sort_key, link in sorted(entries):
         lines.append(link)
@@ -968,7 +998,7 @@ def moc_generated_text(folder: Path, vault: Path, existing: Path | None, content
 def root_moc_links(vault: Path, folders: list[Path]) -> str:
     links = []
     for folder in folders:
-        title = moc_folder_title(folder)
+        title = moc_index_title(folder)
         target = folder.relative_to(vault).joinpath(moc_stem(folder)).as_posix()
         links.append((target.casefold(), f"- [[{target}|{title}]]\n"))
     return "".join(link for _key, link in sorted(links))
@@ -986,18 +1016,17 @@ def moc_root_text(vault: Path, folders: list[Path]) -> str:
         return prefix + block + suffix
     separator = "\n" if original and not original.endswith("\n") else ""
     return original + separator + ("\n" if original else "") + block
-
-
 def moc_generate(args: argparse.Namespace) -> tuple[OperationResult, str]:
     vault = resolve_vault(args.vault)
+    candidate_folders = moc_candidate_folders(vault)
     folders = moc_content_folders(vault)
     content_folders = set(folders)
     records: list[ChangeRecord] = []
     plans: dict[Path, str] = {}
-    leftovers: list[Path] = []
+    deletions: list[Path] = []
     for folder in folders:
         target = moc_page(folder)
-        legacy = folder / "_index.md"
+        legacy = moc_legacy_page(folder)
         existing = next((path for path in (target, legacy) if path.exists()), None)
         try:
             old_text = existing.read_text(encoding="utf-8") if existing else ""
@@ -1009,7 +1038,24 @@ def moc_generate(args: argparse.Namespace) -> tuple[OperationResult, str]:
             changes = [Change(1, old_text, new_text, "body")]
             records.append(ChangeRecord(target.relative_to(vault).as_posix(), changes))
             plans[target] = new_text
-        leftovers.append(legacy)
+        if legacy.exists() and legacy != target:
+            deletions.append(legacy)
+    for folder in candidate_folders:
+        if folder in content_folders:
+            continue
+        for stale in (moc_page(folder), moc_legacy_page(folder)):
+            if not stale.exists():
+                continue
+            try:
+                old_text = stale.read_text(encoding="utf-8")
+            except (OSError, UnicodeDecodeError) as exc:
+                records.append(ChangeRecord(stale.relative_to(vault).as_posix(), [], True, f"read error: {exc}"))
+                continue
+            records.append(ChangeRecord(
+                stale.relative_to(vault).as_posix(),
+                [Change(1, old_text, "", "body")],
+            ))
+            deletions.append(stale)
     root = vault / "index.md"
     root_text = moc_root_text(vault, folders)
     if root_text != (root.read_text(encoding="utf-8") if root.exists() else ""):
@@ -1018,7 +1064,7 @@ def moc_generate(args: argparse.Namespace) -> tuple[OperationResult, str]:
     result = result_for("moc-generate", args.dry_run, sum(1 for _ in iter_markdown(vault, args.glob, args.directory)), records)
     apply_content_plans(plans, args.dry_run)
     if not args.dry_run:
-        for path in leftovers:
+        for path in dict.fromkeys(deletions):
             if path.exists():
                 path.unlink()
     return result, "moc-generate"
@@ -1278,9 +1324,10 @@ def self_check() -> None:
         assert main(["frontmatter", "--action", "set", "--field", "reviewed", "--value", "true", "--vault", str(vault)]) == 0
         (vault / "entities").mkdir()
         (vault / "entities" / "entry.md").write_text("---\ntitle: Entry\n---\n", encoding="utf-8")
+        (vault / "entities" / "second-entry.md").write_text("---\ntitle: Second Entry\n---\n", encoding="utf-8")
         assert main(["moc-generate", "--vault", str(vault)]) == 0
-        assert (vault / "entities" / "entities-index.md").is_file()
-        assert not (vault / "entities" / "_index.md").exists()
+        assert (vault / "entities" / "_index.md").is_file()
+        assert "title: Entities Index" in (vault / "entities" / "_index.md").read_text(encoding="utf-8")
     with tempfile.TemporaryDirectory(prefix="wiki-bulk-self-check-") as raw:
         vault = Path(raw)
         (vault / "target.md").write_text("target\n", encoding="utf-8")

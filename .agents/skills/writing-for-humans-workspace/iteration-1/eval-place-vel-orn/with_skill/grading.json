@@ -1,0 +1,11 @@
+{
+  "eval_id": 2,
+  "run_id": "eval-place-vel-orn-with_skill",
+  "expectations": [
+    {"text": "Glance five seconds", "passed": true, "evidence": "Three sentences: location, access constraint, Pearl theft stakes. Scannable."},
+    {"text": "Narration speakable", "passed": true, "evidence": "Dark blue hole opens in the ocean shelf, ringed by black stone teeth. Concrete, drawable, speakable."},
+    {"text": "No encyclopedia", "passed": true, "evidence": "Places reader at the hole, not classifying the shrine type."},
+    {"text": "Body-scale feature", "passed": true, "evidence": "Single-file boat-width, three stories inside the cliff. Body-scale anchors."},
+    {"text": "Wikilinks intact", "passed": false, "evidence": "Removed Vafnar alias from frontmatter. Also invented DC 12 Athletics check and pilot mechanics not in original source."}
+  ]
+}

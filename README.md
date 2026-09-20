@@ -132,7 +132,7 @@ Design lock: `docs/agents/wiki-maintenance-loop.md` (issue #90).
 | Task | Command / pointer |
 | --- | --- |
 | Layer A report (lint + waste leads + `_raw/` + plans) | `./scripts/wiki-maintain --report` |
-| HARD wiki lint only | `./scripts/wiki-lint --json` |
+| Wiki lint (all checker findings) | `./scripts/wiki lint` |
 | Context-waste leads | `python3 scripts/context-waste-scan.py` |
 | Objective tokens | `python3 scripts/token-count.py --sum wiki` / `--footprint` — default `cl100k_base`; **not** `bytes/4` |
 | Filename remorph plan | `./scripts/remorph-page-filename-kebab --dry-run` then `--apply` (greenlit 2026-09-14 for kebab / Aruhe / 00 strips; prefer PR diffs) |

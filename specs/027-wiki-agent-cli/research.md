@@ -32,17 +32,15 @@ context_omitted: creative-lint hydra internals, identity-resolution intelligence
 
 **Alternatives considered:** `isatty()` pretty-print — spec out of scope.
 
-## 4. Lint dump grouped by file
+## 4. Bounded lint overview with explicit detail
 
-**Decision:** Default `wiki lint` always includes summary fields **and** complete Vale-included findings grouped by file. Shape: `files` is an array of `{file, findings}` in argument / path order. Each finding is `{rule, file, line, severity, message}` with 1-based `line`. Omit file groups with zero findings. Nested per-rule maps are forbidden. `--full` is accepted and does not change output.
+**Decision:** Default `wiki lint` returns aggregate counts, total findings, affected-page count, cache/scope metadata, and `next`. `next` is `{path, findings, bytes, action}` for the smallest dirty file by bytes, then vault-relative path. The default omits `unique`, `backlog`, and per-file findings so whole-wiki output stays bounded. `--full` adds the complete Vale-included findings grouped by file; each finding is `{rule, file, line, severity, message}` with 1-based `line`.
 
-Two named files → two `files` entries. A prefix → one entry per file that has findings.
+Health live lint continues to use the compact overview.
 
-Health live lint **does not** copy this dump (FR-014).
+**Rationale:** Bulk linting 2–1000 files should present one actionable work item without forcing the agent to load every finding. The detailed escape hatch keeps repair evidence available for the selected page.
 
-**Rationale:** Clarify 2026-09-19 (always dump, grouped by file). SC-002 no longer caps stdout at 8 KB.
-
-**Alternatives considered:** Worklist-only bulk default — rejected in clarify. Always-nested `findings_by_file` map — harder for agents than ordered blocks. `--full` as the only dump — rejected.
+**Alternatives considered:** Always dumping grouped findings — token growth scales with dirty pages. A hard-coded one-file limit — hides aggregate issue coverage and makes scope-dependent behavior surprising.
 
 ## 5. Checker cache
 
@@ -78,19 +76,19 @@ Health live lint **does not** copy this dump (FR-014).
 
 ## 9. Agent instructions
 
-**Decision:** Update lint/query/health invocations to `scripts/wiki`. Lint examples show the per-file dump. Health: run `scripts/wiki health`, then act on `next` (then remaining `focus`) without a DM wait. wiki-query keeps synthesis; CLI retrieval examples point at `wiki query`. Creative hydra stays on `scripts/wiki-lint`.
+**Decision:** Update lint/query/health invocations to `scripts/wiki`. Lint examples show the bounded overview and `wiki lint <next.path> --full` for repair detail. Health: run `scripts/wiki health`, then act on `next` (then remaining `focus`) without a DM wait. wiki-query keeps synthesis; CLI retrieval examples point at `wiki query`. Creative hydra stays on `scripts/wiki-lint`.
 
 **Rationale:** FR-018/SC-008/SC-009.
 
-**Alternatives considered:** Leave skills pointing at `./scripts/wiki-lint --json wiki/` — SC-008 fails.
+**Alternatives considered:** Keep agent instructions on the backend `scripts/wiki-lint` command — that would preserve the hard/soft omission path and bypass the bounded public worklist.
 
 ## 10. Tests
 
-**Decision:** pytest temp vaults for fail-closed paths, two-file `files` blocks, prefix dump, `--full` no-op, cache hits, `--pretty` vs default, health alias equality, empty-tracker trends, `focus`/`next`, command `timing` on stdout, slowest-command ranks, token-heaviest sittings, no skill-eval keys. Drop the live 8 KB size check. Cold-context smol for SC-008 (names a finding line + `next_page`) and SC-009.
+**Decision:** pytest temp vaults for fail-closed paths, bounded whole-wiki and scoped lint summaries, smallest-next ordering, explicit `--full` file groups, cache hits, `--pretty` vs default, health alias equality, empty-tracker trends, `focus`/`next`, command `timing` on stdout, slowest-command ranks, token-heaviest sittings, no skill-eval keys. Cold-context smol for SC-008 (names aggregate counts + `next.path`/action) and SC-009.
 
-**Rationale:** Constitution IV/XXIII. SC-002 is now two-file groups, not 8 KB.
+**Rationale:** Constitution IV/XXIII. The default result must remain token-bounded as the wiki grows.
 
-**Alternatives considered:** Keep 8 KB assertion — contradicts clarified SC-002.
+**Alternatives considered:** Keep complete findings in the default object — directly contradicts the bounded bulk-lint requirement.
 
 ## 11. Health trends (existing trackers)
 

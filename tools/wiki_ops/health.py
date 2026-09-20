@@ -392,6 +392,14 @@ def _reason(value: Any, fallback: str) -> str:
 
 
 def _lint_reason(lint: Mapping[str, Any], page: str) -> str:
+    next_item = lint.get("next")
+    if isinstance(next_item, Mapping) and next_item.get("path") == page:
+        findings = next_item.get("findings")
+        if isinstance(findings, (int, float)) and not isinstance(findings, bool):
+            return f"{_int(findings)} lint findings on this page"
+        action = next_item.get("action")
+        if isinstance(action, str) and action.strip():
+            return action.strip()
     for key in ("next_reason", "reason"):
         if isinstance(lint.get(key), str) and lint[key].strip():
             return lint[key].strip()
@@ -517,14 +525,7 @@ def build_focus(
         else:
             add(item, None, "layout", "layout plan")
 
-    for row in _rows(open_errors, ("records", "errors", "entries", "items")):
-        status = row.get("status")
-        if status is not None and (not isinstance(status, str) or status.casefold() != "open"):
-            continue
-        add(_error_path(row), row.get("cause"), "tracker", "error ledger")
     return items
-
-
 def _compact_lint(lint: Any) -> dict[str, Any]:
     if not isinstance(lint, Mapping):
         return {}
@@ -535,20 +536,24 @@ def _compact_lint(lint: Any) -> dict[str, Any]:
     }
     raw_counts = lint.get("counts")
     counts = raw_counts if isinstance(raw_counts, Mapping) else {}
-    finding_total = sum(_int(value) for value in counts.values())
-    backlog = lint.get("backlog")
-    affected_pages = (
-        len(backlog)
-        if isinstance(backlog, Sequence) and not isinstance(backlog, (str, bytes, bytearray))
-        else len({
-            target
-            for values in (lint.get("unique"),)
-            if isinstance(values, Mapping)
-            for targets in values.values()
-            if isinstance(targets, Sequence) and not isinstance(targets, (str, bytes, bytearray))
-            for target in targets
-        })
-    )
+    finding_total = _int(lint.get("finding_total")) or sum(_int(value) for value in counts.values())
+    raw_affected = lint.get("affected_pages")
+    if isinstance(raw_affected, (int, float)) and not isinstance(raw_affected, bool):
+        affected_pages = max(0, int(raw_affected))
+    else:
+        backlog = lint.get("backlog")
+        affected_pages = (
+            len(backlog)
+            if isinstance(backlog, Sequence) and not isinstance(backlog, (str, bytes, bytearray))
+            else len({
+                target
+                for values in (lint.get("unique"),)
+                if isinstance(values, Mapping)
+                for targets in values.values()
+                if isinstance(targets, Sequence) and not isinstance(targets, (str, bytes, bytearray))
+                for target in targets
+            })
+        )
     blocking = [
         {"rule": str(rule), "findings": _int(count)}
         for rule, count in sorted(counts.items(), key=lambda item: str(item[0]))
@@ -571,6 +576,8 @@ def _compact_lint(lint: Any) -> dict[str, Any]:
         ),
     })
     return result
+
+
 
 
 def _layer_object(value: Any, fields: Sequence[str]) -> dict[str, Any]:

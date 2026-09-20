@@ -1,7 +1,0 @@
-extends: conditional
-message: "TEMP001: text reveals knowledge of a future event"
-level: warning
-scope: text
-ignorecase: true
-first: '\b(as you will discover|next session|in the future you)\b'
-second: '\b(will|next|future|discover)\b'

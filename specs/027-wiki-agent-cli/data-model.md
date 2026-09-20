@@ -12,26 +12,30 @@ Present on every successful or findings `wiki` stdout object.
 | `duration_ms` | int | Wall clock, ≥ 0 |
 | `cache` | `{hits, misses, vale_skipped}` \| omitted | Lint/health only |
 
-## Worklist (lint summary + dump)
+## Worklist (lint overview + optional dump)
 
-Default `wiki lint` object. Always includes grouped findings.
+Default `wiki lint` object is bounded regardless of scope size. `--full` adds the detailed dump.
 
 | Field | Type | Required | Notes |
 |---|---|---|---|
 | `status` | `clean` \| `findings` \| `error` | yes | `error` only with exit 2 |
-| `counts` | map rule → int | yes | Non-zero rules; `--hard` default omits soft-only |
+| `counts` | map rule → int | yes | Non-zero rules across all configured checkers |
 | `hard_fail` | bool | yes | |
-| `unique` | map rule → string[] | yes | Already-deduped targets per rule; empty map if clean |
-| `backlog` | `{page, findings, bytes}[]` | yes | Live pages with findings, sort bytes then path |
-| `next_page` | string \| null | yes | `backlog[0].page` or null |
+| `finding_total` | int | yes | Sum of `counts` |
+| `affected_pages` | int | yes | Pages with at least one finding |
+| `next_page` | string \| null | yes | Same path as `next.path`, or null |
+| `next` | object \| null | yes | `{path, findings, bytes, action}` for the smallest dirty file, or null |
 | `cache` | `{hits, misses, vale_skipped}` | yes | Ints |
 | `files_checked` | int | yes | |
 | `scope` | `{paths: string[]}` | yes | Vault-relative args; `[]` means whole vault |
-| `files` | File group[] | yes | One block per file that has findings, argument/path order |
+| `ledger` | object | yes | Open operational failures |
 | `timing` | Timing | yes | |
+| `unique` | map rule → string[] | `--full` | Already-deduped targets per rule |
+| `backlog` | `{page, findings, bytes}[]` | `--full` | Dirty pages, sorted bytes then path |
+| `files` | File group[] | `--full` | One block per file with findings, argument/path order |
 | `error` | string | status=error | |
 
-Validation: MUST NOT contain nested per-rule finding maps. `unique` MUST NOT invent owners. `--full` does not add or remove keys.
+`next.path` is the smallest dirty file by byte size; vault-relative path breaks ties. Its `action` tells the agent to run `wiki lint <path> --full`, repair that page, and rerun lint. Default output omits `unique`, `backlog`, and `files`, so its size does not grow with the number of dirty pages. Every configured checker and severity still contributes to the aggregate counts. `--full` findings are flat records, never nested per-rule maps. `unique` MUST NOT invent owners.
 
 ### File group
 
@@ -78,7 +82,7 @@ No snippets in the default object.
 | `pages` | int | Live markdown page count (path-scoped) |
 | `bytes` | int | Live page bytes (path-scoped) |
 | `tokens` | int \| null | tiktoken via existing token-count helper |
-| `lint` | Worklist without `files` | Same cache as `wiki lint`; path-scoped; **no finding dump** |
+| `lint` | Worklist without `files` | Same cache as `wiki lint`; path-scoped; **no finding dump**. The summary also exposes `finding_total`, `affected_pages`, `blocking`, `meaning`, and `action` so checker-finding counts are not mistaken for page counts. |
 | `waste` | object | Layer A A2 metrics (hits, hard_hits) |
 | `staging` | `{leftover_count}` | `_raw` leftovers |
 | `remorph` | `{plan_count, skip_count, error_count}` | A6 dry-run counts |
@@ -115,8 +119,7 @@ Path arguments scope `pages` / `bytes` / `tokens` / `lint` / `focus`. `trends` i
 |---|---|---|
 | `sittings` | `{count, by_kind}` | `by_kind` counts `prep` / `wrapup`; missing file → `count` 0 |
 | `skills` | `{name, sittings}[]` | Top 5 skill **usage** names from sitting `skills_loaded`; empty if none. Not eval results |
-| `errors` | `{open_count, causes}` | Open ledger only; `causes` is `{cause, count}[]` cap 3 |
-| `efficiency` | object | Sitting subset of `efficiency-trace report`: `records`, `trajectory_tokens` (int), `retrieval_queries` (int), `hard_gate_failure_rate` (number), `dm_acceptance_rate` (number). Missing traces → `records` 0 and the rest 0 |
+| `errors` | `{open_count, causes, entries?}` | Open ledger only; `causes` is `{cause, count}[]` cap 3. When at most five open records exist, `entries` includes their compact id/cause/path details. |
 | `slowest_commands` | `{command, duration_ms, n}[]` | From `record_kind=command` rows; cap 3; highest `duration_ms` first |
 | `token_heaviest` | `{sitting_class, job, tokens}[]` | From sitting records; `tokens` = sum of trajectory fields; cap 3; highest first |
 
@@ -129,6 +132,7 @@ Do not embed the full efficiency report or sitting rows.
 | `path` | string | Vault-relative file or prefix |
 | `reason` | string | One objective line; existing rule, remorph/layout plan reason, or tracker name |
 | `source` | `lint` \| `remorph` \| `layout` \| `tracker` | |
+| `action` | string | Imperative next step for this focus item, ending with a health rerun. |
 
 Fill order (skip empty sources): lint `next_page`, first remorph plan `src`, first remaining layout/remorph prefix already in that plan, first open-error sitting path that is vault-relative. Never invent trees.
 
@@ -138,6 +142,7 @@ File: `$VAULT/_meta/lint-cache.json`.
 
 | Field | Type | Notes |
 |---|---|---|
+| `version` | integer | Cache schema version; an unsupported or missing version invalidates the whole document |
 | `config_digest` | string | Hash of rules state (Vale styles/config, structural lint sources, template contracts, checker flags) |
 | `entries` | map vault-relative path → Cache entry | |
 
@@ -146,11 +151,12 @@ File: `$VAULT/_meta/lint-cache.json`.
 | Field | Type | Notes |
 |---|---|---|
 | `content_sha256` | string | File bytes |
+| `template_sha256` | string | Bytes of the template selected from the page's current `type`/`kind`; empty when no template applies |
 | `config_digest` | string | Must match current or entry is a miss |
 | `extracts` | object | Links and named targets needed for corpus refresh |
 | `results` | object | Per-checker findings for this file |
 
-Invalidation: content sha256 change, rules-state `config_digest` change, path add/delete/rename (missing path dropped; new path is a miss). Corpus facts always rebuilt from current path set + extracts.
+Invalidation: unsupported/missing cache version, content sha256 change, resolved template sha256 change, rules-state `config_digest` change, path add/delete/rename (missing path dropped; new path is a miss). Corpus facts always rebuilt from current path set + extracts.
 
 ## Command timing record
 

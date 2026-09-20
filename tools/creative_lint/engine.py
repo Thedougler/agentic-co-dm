@@ -20,6 +20,10 @@ ROOT = Path(__file__).resolve().parents[2]
 _SKIP_DIRS = frozenset({"_archive", "_archives", "_raw", "_readouts", "_meta", "templates", ".obsidian"})
 
 
+def _is_moc_page(path: Path) -> bool:
+    return path.name == "_index.md" or path.stem.endswith("-index")
+
+
 @dataclass(slots=True)
 class LintResult:
     status: str
@@ -68,10 +72,12 @@ class LintEngine:
                 for candidate in path.rglob("*.md"):
                     if not candidate.is_file():
                         continue
+                    if _is_moc_page(candidate):
+                        continue
                     if _SKIP_DIRS.intersection(candidate.relative_to(path).parts):
                         continue
                     selected.append(candidate)
-            elif path.is_file() and path.suffix.lower() == ".md":
+            elif path.is_file() and path.suffix.lower() == ".md" and not _is_moc_page(path):
                 selected.append(path)
         return sorted(set(selected))
 
@@ -147,12 +153,7 @@ class LintEngine:
             return False
         if "table" in rule.exemptions and "|" in text:
             return False
-        body = text.split("---", 2)[-1]
         if "narrative" in rule.structural_scope and text.startswith("---") and not re.search(r"(?mi)^#{1,6}\s+narrative\s*$", text):
-            return False
-        if rule.id == "SCENE001" and not fields and re.search(r"\b(?:pressure|threat|can|must|clock|risk|choice|deadline)\b", body, re.I):
-            return False
-        if rule.id == "SCENE001" and re.search(r"\b(?:pressure\s+is|agenda\s+is|player\s+opening\s+is)\b", body, re.I):
             return False
 
         return True

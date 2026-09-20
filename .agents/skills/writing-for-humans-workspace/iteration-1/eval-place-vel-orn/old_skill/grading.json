@@ -1,0 +1,11 @@
+{
+  "eval_id": 2,
+  "run_id": "eval-place-vel-orn-old_skill",
+  "expectations": [
+    {"text": "Glance five seconds", "passed": true, "evidence": "Three short sentences: hidden shrine, tidal access, Pearl theft stakes."},
+    {"text": "Narration speakable", "passed": false, "evidence": "Kept original narration unchanged — 'An older house occupies black cliff stone' is Encyclopedia entry voice, not placing the reader in the space."},
+    {"text": "No encyclopedia", "passed": false, "evidence": "'An older house occupies black cliff stone' classifies the structure rather than placing the reader. 'Older' is relative without a body-scale anchor."},
+    {"text": "Body-scale feature", "passed": false, "evidence": "No body-scale anchors. 'Sheer, reef-bound, and dangerous' is adjective stacking without scale reference."},
+    {"text": "Wikilinks intact", "passed": false, "evidence": "Removed drowned-maw, Shelfworks, chain-council, tessarine-concordat, aldric-drave from Connections."}
+  ]
+}

@@ -17,11 +17,11 @@
 - Vault comes from existing configuration (environment, nearest `.env`, global wiki config). Working directory does not matter. Path arguments are vault-relative. Unknown path fails closed. No fuzzy path matching.
 - Default stdout is **agent-shaped**: one compact structured object, stable keys, no terminal detection. `--json` is accepted and ignored. `--pretty` is explicit human text.
 - Lint runs **all** checkers including prose/Vale. Unchanged files reuse prior checker results. Adding, deleting, or renaming a page still refreshes corpus facts (links, missing owners) from cached per-file extracts plus the current file set.
-- Default lint body is **every finding, grouped by file**: Vale included, 1-based line numbers, one block per file. Summary fields (status, counts, unique targets, backlog, next page, cache, files checked, scope) remain on the same object. There is no worklist-only default. `--full` is accepted and does not change that dump.
+- Default whole-wiki and bulk lint output is a compact overview: aggregate counts, affected-page/finding totals, cache/scope metadata, and an actionable `next` recommendation. `next.path` is the smallest dirty file by byte size, with path as the tie-breaker. Detailed per-file findings are available only with `--full`; `--full` is the intentional escape hatch for the next page.
 - Query defaults: retrieval enabled in agent environments, collection `wiki`, ten hits, compact fields title / path / retrieval id.
 - Health **promotes** the existing Layer A maintenance report: live lint (same cache) plus page count, bytes, tokens, waste, staging leftovers, remorph plan counts, and policy, **plus compact trend aggregates** from existing sitting, efficiency, skill, and error trackers, plus ordered `focus` and a single `next` action. The old report invocation remains an alias of that one snapshot.
-- Creative lint subcommands (`file`, `task`, `corpus`, `changed`, `rule`, `queue`, `template`, consolidate) stay on the existing lint script this sitting.
-- Out of this feature: human-default output, TTY format forks, migrating the creative hydra, a second health counter, identity-resolution intelligence inside lint, inventing new vault folder trees, skill-eval pass/fail or missing-skill inventories (stay on skill-creator), npm/package.json wrappers (`wiki` is the command).
+- Creative lint evaluator implementations remain behind the single `wiki lint` command this sitting. Their findings are part of the default result; evaluator-specific subcommands are implementation details, not agent instructions or alternate lint paths.
+- Out of this feature: human-default output, TTY format forks, identity-resolution intelligence inside lint, inventing new vault folder trees, skill-eval pass/fail or missing-skill inventories (stay on skill-creator), npm/package.json wrappers (`wiki` is the command), and repair-plan authoring.
 
 ### Session 2026-09-19
 
@@ -35,21 +35,21 @@
 
 ## User Scenarios & Testing *(mandatory)*
 
-### User Story 1 - Agent lints a path and gets every finding, grouped by file (Priority: P1)
+### User Story 1 - Agent gets a compact lint worklist (Priority: P1)
 
-An agent needs to lint one owner page, several named pages, or a whole directory (for example `entities/npc`) without remembering vault roots, scope dialects, or extra flags. It receives one structured object: summary fields plus a complete Vale-included finding dump grouped by file, each record with a 1-based line. Two named files produce two file blocks. A prefix produces one block per file that has findings. It does not write a follow-up script to flatten nested per-rule maps.
+An agent needs to lint one owner page, several named pages, or the whole wiki without loading every finding into context. It receives one structured overview with counts, affected-page/finding totals, cache metadata, and one actionable `next` recommendation. `next.path` is the smallest dirty file by byte size, then path. The agent can rerun that file with `--full` to read line-level findings.
 
-**Why this priority**: This is the failure that burns sessions today. Shorter flags without this contract still dump an unusable blob or hide the lines the agent must fix.
+**Why this priority**: Bulk linting must scale from two to thousands of files without making the agent reduce a giant result before it can act.
 
-**Independent Test**: Lint a directory of owner pages, a single page, and two named pages. Each result includes complete findings grouped by file with line numbers, plus summary fields (`unique` targets, `next_page`). Unknown path exits with a structured error and does not scan the wiki.
+**Independent Test**: Lint a directory, the whole wiki, and two named pages. Each default result stays compact, exposes aggregate issue counts, and selects the smallest dirty file. `--full` exposes complete findings for the selected scope. Unknown path exits with a structured error and does not scan the wiki.
 
 **Acceptance Scenarios**:
 
-1. **Given** a configured vault, **When** an agent runs `wiki lint entities/npc`, **Then** the command lints that prefix using all checkers (Vale included) and prints one structured object: summary fields plus one findings block per file that has issues, each record with `rule`, `file`, `line` (1-based), `severity`, and `message`.
-2. **Given** the same vault, **When** an agent runs `wiki lint entities/npc/some-page.md`, **Then** the object includes that page’s complete findings with 1-based `line` on each record.
-3. **Given** two existing files, **When** an agent runs `wiki lint entities/npc/Thunk.md entities/npc/Ket.md`, **Then** the object contains two separate file blocks, each a complete Vale-included breakdown of that file.
-4. **Given** `--full`, **When** lint completes, **Then** output matches the default complete per-file dump (the flag is accepted and does not hide or add a second format).
-5. **Given** path `entities/npcs` when only `entities/npc` exists, **When** lint runs, **Then** it exits 2 with `status=error` and does not invent a nearby directory.
+1. **Given** a configured vault, **when** an agent runs `wiki lint`, the command lints the whole wiki using all checkers and returns one compact object with aggregate counts, affected-page/finding totals, cache/scope metadata, and `next`.
+2. **Given** dirty files of different sizes, **when** lint completes, **then** `next.path` is the smallest dirty file; equal sizes use vault-relative path order.
+3. **Given** a scoped lint of multiple files, **when** lint completes without `--full`, **then** it returns the same compact overview shape and does not emit per-file findings.
+4. **Given** `--full`, **when** lint completes, **then** output adds complete Vale-included findings grouped by file, with 1-based lines and flat finding records.
+5. **Given** path `entities/npcs` when only `entities/npc` exists, **when** lint runs, **then** it exits 2 with `status=error` and does not invent a nearby directory.
 
 ---
 
@@ -65,7 +65,7 @@ A second lint of the same wiki (or health, which lints live) must not re-run exp
 
 1. **Given** a completed lint, **When** the same paths are linted again with identical file contents and checker configuration, **Then** those files’ checker results are reused and `cache` reports hits / vale skipped.
 2. **Given** a cached wiki, **When** one page’s content changes, **Then** that page is rechecked and corpus facts (links, missing owners) reflect the current file set.
-3. **Given** `--no-vale` or `--no-template`, **When** lint runs, **Then** those checkers are skipped for this invocation without disabling the others.
+3. **Given any checker configuration, **When** lint runs, **Then** all configured checkers run and all findings are returned by default; there is no default hard-only filter and no checker-suppression flag on the agent-facing command.
 
 ---
 
@@ -129,7 +129,7 @@ A human at a terminal passes `--pretty` and reads text: lint scoreboard and `fil
 - Several path arguments: union of those vault-relative files and prefixes; lint findings are still one block per file.
 - Path outside the vault or a missing file/prefix: exit 2, structured error, no scan.
 - `--pretty` and `--full` together: human listing of all findings grouped by file, not indented structured text pretending to be human.
-- Checker configuration (prose styles, structural rules) changes: prior per-file cache entries for those checkers are invalid.
+- Checker configuration (prose styles, structural rules, templates) changes: prior per-file cache entries for the affected checkers are invalid.
 - Retrieval backend missing or failing: query returns structured error, exit 2; it does not invent hits.
 - Creative lint subcommands invoked via the new `wiki` command: out of scope this sitting; existing script remains the surface.
 - `entities/npcs` vs `entities/npc`: not corrected; fail closed.
@@ -147,18 +147,18 @@ A human at a terminal passes `--pretty` and reads text: lint scoreboard and `fil
 - **FR-004**: Default stdout for every subcommand MUST be agent-shaped: exactly one compact structured object, stable keys, `status` present, plus compact `timing` (`command`, duration, cache hits/misses when applicable). No terminal detection. `--json` MUST be accepted and MUST NOT change default output.
 - **FR-005**: Machine failures MUST print `{"status":"error","error":"<message>"}` (or equivalent compact object with those keys) on stdout and exit 2. They MUST NOT be prose-only.
 - **FR-006**: Exit codes MUST be 0 = clean/success, 1 = findings present (lint/health when the wiki is not clean), 2 = bad invocation or precondition.
-- **FR-007**: `wiki lint` MUST run every checker including prose/Vale and template conformance. `--hard` is the default finding class; `--all` includes soft. `--no-vale` and `--no-template` MUST remain overrides.
-- **FR-008**: Lint MUST cache per-file checker results keyed by the unique file plus the rules state applied to it (file content sha256 and a digest of Vale styles/config, structural lint sources, template contracts, and checker flags). Identical inputs MUST reuse results. A rules-state change MUST invalidate that entry and re-lint. Add/delete/rename MUST refresh corpus facts from cached extracts plus the current file set.
-- **FR-009**: Default lint objects MUST include `status`, `counts`, `hard_fail`, `unique` (already-deduped targets per rule), `backlog` (page, finding count, size), `next_page`, `cache` (hits, misses, vale skipped), `files_checked`, `scope`, `ledger` (open count and ids from `errors.md`), and complete findings grouped by file (FR-010). `status` MUST NOT be `clean` while the error ledger has open entries.
-- **FR-010**: Default `wiki lint` output MUST include every finding for the scoped files (Vale included unless `--no-vale`), grouped by file. Each file group is a block with the file path and a flat list of records with `rule`, `file`, `line` (1-based), `severity`, and `message`. One named file is one block. Several named files are several blocks in argument order. A prefix or the whole vault is one block per file that has findings. Nested per-rule finding maps MUST NOT be used.
-- **FR-011**: `--full` MUST be accepted on lint and MUST NOT change default lint output (the complete per-file dump is already default).
+- **FR-007**: `wiki lint` MUST run every configured checker including structural, template-conformance, creative, and prose/Vale checks. Its default finding set is all severities and all checker types. The agent-facing command exposes no hard-only or checker-suppression override.
+- **FR-008**: Lint MUST cache per-file checker results keyed by the unique file plus the rules state applied to it (cache schema version, file content sha256, the hash of that file's resolved template when one exists, and a digest of Vale styles/config, structural lint sources, template contracts, and checker flags). Identical inputs MUST reuse results. A cache-version, rules-state, page-content, or resolved-template change MUST invalidate that entry and re-lint. Add/delete/rename MUST refresh corpus facts from cached extracts plus the current file set.
+- **FR-009**: Default lint objects MUST include `status`, `counts`, `hard_fail`, `finding_total`, `affected_pages`, `next_page`, `next` (an actionable recommendation containing `path`, `findings`, `bytes`, and `action` or null), `cache` (hits, misses, Vale skipped), `files_checked`, `scope`, `ledger` (open count and ids from `errors.md`), and `timing`. The default object MUST NOT include the full `files`, `unique`, or `backlog` dumps.
+- **FR-010**: Default `wiki lint` output MUST summarize every finding through aggregate rule counts and total/affected-page counts. `--full` MUST include every finding for the scoped files, including every Vale finding and every severity, grouped by file. Each full file group has the file path and flat records with `rule`, `file`, `line` (1-based), `severity`, and `message`. Nested per-rule finding maps MUST NOT be used.
+- **FR-011**: `--full` MUST be accepted on lint and MUST add the detailed per-file finding dump to the compact default overview. Without `--full`, lint output MUST remain bounded by summary fields and one `next` recommendation regardless of file count.
 - **FR-012**: Lint MUST NOT guess, alias-match, or invent owners for missing-link targets.
 - **FR-013**: `wiki query <phrase>` MUST run retrieval even when the process environment would otherwise block it, default collection `wiki`, default cap 10 hits, compact hit fields `title`, `path`, and retrieval id. Collection and hit cap MUST be overridable.
 - **FR-014**: `wiki health` MUST produce one snapshot: live lint (FR-007, FR-008) plus page count, bytes, tokens, the existing Layer A maintenance stats (waste, staging leftovers, remorph plan counts, policy), compact trend aggregates composed from the existing sitting log (`sittings.jsonl`), efficiency traces, skill-usage fields on those records, and the error ledger, an ordered `focus` array (FR-019), `next` (the first `focus` item or null), and `context` (FR-022). Trend aggregates MUST cover all currently retained tracker records.
 - **FR-015**: The existing Layer A maintenance-report invocation MUST remain an alias of `wiki health` (same snapshot, not a second counter).
 - **FR-016**: `--pretty` MUST select human text: lint scoreboard plus `file:line  RULE  message` grouped by file; query one hit per line (`path  title  id`); health scoreboard plus `next` and the same `focus` list. `--pretty` plus `--full` is the same human findings list. `--pretty` MUST NOT be implied by an interactive terminal.
-- **FR-017**: Creative lint operations (`file`, `task`, `corpus`, `changed`, `rule`, `queue`, `template`, consolidate) MUST remain on the existing lint script for this feature. `wiki lint` is structural lint plus the per-file finding dump and summary fields.
-- **FR-018**: Agent instructions that tell agents how to lint, query, or health-check the wiki MUST be updated to this command, to the default per-file finding dump, and to: run `wiki health`, then act on `context.act` (first-turn and skill load) then `next` (then remaining `focus`) without terminal detection, extra interpretation, or waiting for the DM. This MUST be usable by small agents (Luna/Haiku class).
+- **FR-017**: Creative lint evaluator operations remain backend implementation details. Their findings MUST flow through the single default `wiki lint` result; agents MUST NOT need an evaluator-specific command to see them.
+- **FR-018**: Agent instructions that tell agents how to lint, query, or health-check the wiki MUST be updated to this command, to the compact default lint overview, and to: run `wiki health`, then act on `context.act` (first-turn and skill load) then `next` (then remaining `focus`) without terminal detection, extra interpretation, or waiting for the DM. For detailed lint findings, agents MUST run `wiki lint <next.path> --full`. This MUST be usable by small agents (Luna/Haiku class).
 - **FR-019**: Default `wiki health` MUST include a bounded ordered `focus` array and `next`. Each `focus` item MUST have `path` (file or prefix), `reason` (one objective line using an existing rule, remorph/layout plan, or tracker name — no new jargon), and `source` (`lint` | `remorph` | `layout` | `tracker`). `next` MUST be `focus[0]` or null if `focus` is empty. Layout and file/folder-structure suggestions MUST come from existing remorph/layout plans. `focus` MUST NOT invent new vault trees, MUST NOT be free prose, and MUST be present (possibly empty) on the default object.
 - **FR-020**: Every `wiki lint`, `wiki query`, and `wiki health` invocation MUST append one compact timing record to the existing efficiency tracker (`command`, duration, cache hits/misses when applicable, exit code) and MUST include that same compact `timing` on its stdout object. Health MUST rank slowest wiki commands from those records. This MUST NOT create a second benchmark ledger or dump raw traces.
 - **FR-021**: Default `wiki health` MUST include compact token-heaviest sitting ranks composed from existing sitting/efficiency records. It MUST NOT include skill-eval pass/fail or missing-skill inventories.
@@ -172,7 +172,7 @@ A human at a terminal passes `--pretty` and reads text: lint scoreboard and `fil
 
 ### Key Entities
 
-- **Worklist**: Summary fields on the default lint object — counts, unique targets, backlog, next page, cache, scope — accompanying the per-file finding dump, not replacing it.
+- **Worklist**: Bounded default lint overview — aggregate counts, finding/page totals, cache/scope metadata, and `next` for the smallest dirty file — with `--full` as the detailed per-file finding dump.
 - **Finding record**: Flat diagnostic: rule, file, 1-based line, severity, message.
 - **Checker cache**: Reuse of per-file checker results when file bytes and checker configuration are unchanged.
 - **Health snapshot**: One inventory + lint + Layer A maintenance + compact operational-trend object (including slowest wiki-command ranks and token-heaviest sittings), including ordered `focus`, `next`, and `context` (first-turn file cost, ranked skill cost, efficiency delta, `act`).
@@ -184,14 +184,14 @@ A human at a terminal passes `--pretty` and reads text: lint scoreboard and `fil
 
 ### Measurable Outcomes
 
-- **SC-001**: An agent lints a directory of owner pages with one invocation and uses the grouped per-file findings without a follow-up script to flatten nested per-rule maps.
-- **SC-002**: Default lint of two named files produces two file groups, each with that file’s complete Vale-included findings and 1-based line numbers. Default lint of a prefix produces one group per file that has findings. The former 8 KB worklist-only cap does not apply.
+- **SC-001**: An agent lints a directory or the whole wiki with one invocation and receives bounded aggregate issue counts plus an actionable `next.path`; it does not need to flatten or summarize a per-file finding dump.
+- **SC-002**: Default lint of two named files, a prefix, or the whole wiki returns one compact overview with complete issue counts and selects the smallest dirty file. `--full` returns the complete Vale-included findings for that scope with 1-based line numbers.
 - **SC-003**: A second whole-wiki lint with no content or checker-config changes reports cache hits for previously checked pages and does not re-run prose checkers on those pages.
 - **SC-004**: `wiki query` of a known in-wiki title, with no extra flags, returns at least one hit containing title, path, and retrieval id.
 - **SC-005**: `wiki health` returns page count, byte size, token total, lint hard-total, compact sitting/efficiency/skill/error trend aggregates over all currently retained tracker records including slowest wiki-command ranks and token-heaviest sittings, ordered `focus`, `next`, and `context` (first-turn files, ranked skills, first-turn efficiency delta, `act`) in one invocation; the historical maintenance-report invocation returns the same snapshot.
 - **SC-006**: On an interactive terminal, omitting `--pretty` still yields compact structured output; passing `--pretty` yields text a human can read without a decoder.
 - **SC-007**: An unknown vault-relative path fails in under one second with a structured error and does not enumerate the wiki.
-- **SC-008**: Independent agent given only this spec’s command examples lints one file, names at least one finding line, and names the next backlog page from the summary fields without being told to parse nested finding maps.
+- **SC-008**: Independent agent given only this spec’s command examples lints the whole wiki, names aggregate issue counts, and names `next.path` and its action without being told to parse per-file findings. It can then run `wiki lint <next.path> --full` for line-level repair.
 - **SC-009**: A small independent agent (Luna/Haiku class) given only this spec’s health object names `next.path` and its `reason` and would perform that action without extra interpretation, extra commands, or a DM wait.
 - **SC-010**: After at least two `wiki lint` or `wiki query` runs, `wiki health` names the slower command from the existing efficiency tracker without a raw-trace dump.
 - **SC-011**: Given retained sitting/efficiency records with token totals, `wiki health` names the token-heaviest sitting and does not list skill-eval pass/fail.
@@ -202,8 +202,8 @@ A human at a terminal passes `--pretty` and reads text: lint scoreboard and `fil
 
 - Existing vault configuration and vault-resolution behavior are reused, not redesigned.
 - Existing structural lint, template conformance, prose/Vale, identity scan, Layer A maintenance report, sitting log, efficiency-trace reports, error ledger, and retrieval backend are composed, not replaced. This feature changes the **command surface and default result contract**.
-- Creative lint remains on the current lint script until a later feature.
-- `--hard` default and `--all` for soft findings match current lint behavior.
+- All configured checkers, including structural, template-conformance, creative, and Vale checks, run through the agent-facing `wiki lint` command. Its default result aggregates every finding regardless of severity; detailed records require `--full`. Agents do not need checker-suppression flags.
+- `--full` adds the detailed dump; it is not a suppression or omission carve-out. The agent-facing lint command has no `--all`, `--no-vale`, or `--no-template` flags.
 - Retrieval hit cap uses the backend’s native count flag; the user-facing default is 10.
 - Constitution VI asks for errors on stderr. This feature’s **default** machine errors are structured objects on stdout so agents have one stream to load (already the shared wiki-ops convention). `--pretty` errors go to stderr. That split is intentional.
 - Agent-instruction updates (lint/query/health skills and standing wiki command examples) ship in the same change so agents do not keep copying the old invocation. Health instructions tell agents to run `wiki health` and do `next`.

@@ -11,14 +11,17 @@ def _value(data: Mapping[str, Any], key: str, default: Any = "") -> Any:
 
 
 def render_lint(result: Mapping[str, Any]) -> str:
-    """Render a lint worklist without exposing its machine representation."""
+    """Render the compact lint overview and optional detailed findings."""
     counts = _value(result, "counts", {})
     cache = _value(result, "cache", {})
     ledger = _value(result, "ledger", {})
+    next_item = _value(result, "next", {}) or {}
     lines = [
         "Lint: " + str(_value(result, "status", "unknown")),
         "Counts: " + (" ".join(f"{k}={counts[k]}" for k in sorted(counts)) or "none"),
+        f"Findings: {_value(result, 'finding_total', 0)} on {_value(result, 'affected_pages', 0)} pages",
         f"Next page: {_value(result, 'next_page', None) or 'none'}",
+        "Next action: " + str(_value(next_item, "action", "none") or "none"),
         "Cache: " + " ".join(
             f"{key}={_value(cache, key, 0)}" for key in ("hits", "misses", "vale_skipped")
         ),

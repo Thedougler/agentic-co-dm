@@ -12,7 +12,7 @@ reason: new public wiki command and default result contract; FR-018 updates agen
 
 ## Summary
 
-One `scripts/wiki` command (`lint`, `query`, `health`) that composes existing structural lint, Vale, Layer A maintenance, sitting/efficiency/error trackers, and qmd retrieval. Default lint stdout is summary fields plus every finding grouped by file (Vale on, 1-based lines). `--pretty` is the only human text; `--json` and `--full` are no-ops on the default dump. Unchanged files reuse checker results from `$VAULT/_meta/lint-cache.json` keyed by content sha256 + config digest. Each run appends a `record_kind=command` row to the existing `.local/efficiency/traces.jsonl` and includes compact `timing` on stdout. Health is a compact snapshot (no findings dump) with `trends.slowest_commands`, `trends.token_heaviest`, ordered `focus`, and `next`. Creative lint stays on `scripts/wiki-lint`. `scripts/wiki-maintain --report` aliases `wiki health`. No npm wrappers. No skill-eval dashboard.
+One `scripts/wiki` command (`lint`, `query`, `health`) that composes existing structural lint, Vale, template-conformance, creative checks, Layer A maintenance, sitting/efficiency/error trackers, and qmd retrieval. `wiki lint` always runs the configured lint checkers and exposes every finding through aggregate rule counts; agents never need a flag to opt into soft, template, creative, or Vale checks. Default lint stdout is a bounded overview with finding/page totals, cache/scope metadata, and an actionable `next` recommendation; `--full` adds the complete per-file finding dump for the selected scope.
 
 ## Technical Context
 
@@ -28,11 +28,10 @@ One `scripts/wiki` command (`lint`, `query`, `health`) that composes existing st
 
 **Project Type**: CLI within existing wiki-ops repo.
 
-**Performance Goals**: Unknown path fails in <1s (SC-007). Second identical lint does not re-run Vale on cached pages (SC-003). Default lint dump is complete (no 8 KB cap).
+**Performance Goals**: Unknown path fails in <1s (SC-007). Second identical lint does not re-run Vale on cached pages (SC-003). Default lint output remains bounded as the wiki grows; `next` selects the smallest dirty file by bytes then path.
 
-**Constraints**: No fuzzy path matching. No TTY detection. No owner guessing. No creative-hydra migration. No second benchmark file. No skill-eval inventory. No npm wrappers. Machine errors on stdout (named VI split; see Complexity Tracking). Agent instruction examples must not keep `./scripts/wiki-lint --json wiki/` as the default structural pass.
-
-**Scale/Scope**: One dispatcher script, thin dump/cache/pretty/health helpers under `tools/wiki_ops/`, health alias, small `efficiency-trace` command-record accept path, skill/AGENTS command-string updates. Does not replace `tools/lint_wiki.py`.
+**Constraints**: No fuzzy path matching. No TTY detection. No owner guessing. No checker-suppression flags on the agent-facing lint command. No second benchmark file. No skill-eval inventory. No npm wrappers. Machine errors on stdout (named VI split; see Complexity Tracking). Agent instruction examples must not keep `./scripts/wiki-lint --json wiki/` as the default lint pass.
+**Scale/Scope**: One dispatcher script, thin dump/cache/pretty/health helpers under `tools/wiki_ops/`, health alias, small `efficiency-trace` command-record accept path, skill/AGENTS command-string updates. The dispatcher is the sole agent-facing lint surface; `scripts/wiki-lint` remains an implementation backend and creative evaluator host.
 
 ## Constitution Check
 
@@ -48,7 +47,7 @@ One `scripts/wiki` command (`lint`, `query`, `health`) that composes existing st
 | VI. Agent-Shaped | PASS with named split | Args in, compact JSON out, exit 0/1/2. Machine errors on stdout (wiki-ops `emit_error`); `--pretty` errors on stderr. Spec Assumptions. |
 | VII. Creative Judgment | PASS | No voice/method rules. |
 | VIII. Safe Automation | PASS | Cache and health are deterministic; unknown paths fail closed; timing append is best-effort. |
-| IX. Measured Efficiency | PASS | Cache skips Vale on unchanged bytes. Default lint dump is complete by clarify (not 8 KB). Health stays compact (no findings dump, no raw traces). |
+| IX. Measured Efficiency | PASS | Cache skips Vale on unchanged bytes. Default lint output is complete for every checker and severity. Health stays compact (no findings dump, no raw traces). |
 | X. DM Owns Canon | PASS | No wiki fact invention; `focus` layout items only from existing remorph/layout plans. |
 | XII. Evidence Precedes Invention | PASS | Query does not invent hits; lint does not invent owners. |
 | XIV. Simplest Adequate Tool | PASS | Compose existing checkers and the existing traces file; one new `scripts/wiki`. |
@@ -59,7 +58,7 @@ One `scripts/wiki` command (`lint`, `query`, `health`) that composes existing st
 | XXI. Linter Root-Cause | PASS | Checkers unchanged; default output is the defect list. |
 | XXIII. Real Surfaces | PASS | Quickstart on configured vault; temp vaults for fail-closed. |
 | XXIV. Synchronized Content | PASS | Skills + standing command examples update with the CLI. |
-| XXV. Carve-Outs | PASS | Creative hydra left on `wiki-lint` is deferred scope, not a rule exclude list. |
+| XXV. Carve-Outs | PASS | The agent-facing lint command has no hard-only or checker-specific omission path; all configured findings are displayed by default. |
 
 Gate: PASS. VI stdout errors are the existing wiki-ops convention named in the spec, not a silent contradiction.
 
@@ -82,14 +81,14 @@ specs/027-wiki-agent-cli/
 
 ```text
 scripts/wiki                 # New dispatcher: lint | query | health
-scripts/wiki-lint            # Unchanged creative hydra; structural path stays for existing tests
+scripts/wiki-lint            # Existing checker backend and creative evaluator host; not an agent-facing lint path
 scripts/wiki-maintain        # --report aliases wiki health
 scripts/efficiency-trace.py  # Accept record_kind=command on the existing traces stream
 
 tools/wiki_ops/
 ├── cli.py                   # Existing emit_json / resolve_vault
 ├── worklist.py              # New: summary fields + files dump from a lint report
-├── lint_cache.py            # New: per-file checker cache (sha256 + config digest)
+├── lint_cache.py            # New: versioned per-file checker cache (page + resolved-template sha256 + config digest)
 ├── health.py                # New: compose Layer A + trends + focus/next
 ├── timing.py                # New: duration + append command record
 └── pretty.py                # New: --pretty text for lint/query/health
@@ -102,7 +101,7 @@ tests/test_wiki_cli.py       # New behavioral tests
 AGENTS.md                    # Standing lint/query/health command examples only
 ```
 
-**Structure Decision**: New public command is `scripts/wiki`. Helpers stay in `tools/wiki_ops/` next to `cli.py`. Command timings stay in `.local/efficiency/traces.jsonl`. Do not add `src/`. Do not fold creative lint into the dispatcher this sitting.
+**Structure Decision**: New public command is `scripts/wiki`. Helpers stay in `tools/wiki_ops/` next to `cli.py`. Command timings stay in `.local/efficiency/traces.jsonl`. Do not add `src/`. The dispatcher invokes every configured checker; no alternate agent lint command or omission flag is part of the surface.
 
 ## Post-Design Constitution Check
 

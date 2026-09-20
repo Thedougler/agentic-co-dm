@@ -1,6 +1,0 @@
-extends: existence
-message: "AGENCY001: narration authors a player-character decision"
-level: error
-scope: text
-tokens:
-  - "(?i)\\byou\\s+(decide|choose|feel|think|believe|realize|know)\\b"

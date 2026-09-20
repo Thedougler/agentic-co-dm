@@ -26,7 +26,6 @@ from tools.wiki_ops.timing import ProgressHeartbeat, append_command_record, elap
 from tools.wiki_ops.worklist import DEFAULT_HARD_KEYS, build_worklist
 
 SKIP_DIRS = frozenset({".obsidian", "_archive", "_archives", "_raw", "_readouts", "_meta", "templates", "attachments"})
-HARD_SEVERITIES = frozenset({"BLOCK", "REPAIR", "ERROR", "HARD"})
 
 
 def _trace_path() -> Path | None:
@@ -144,7 +143,7 @@ def _flatten(report: dict[str, Any], vault: Path) -> list[dict[str, Any]]:
     return flattened
 
 
-def _run_structural(vault: Path, relative: list[str], args: argparse.Namespace) -> dict[str, Any]:
+def _run_structural(vault: Path, relative: list[str]) -> dict[str, Any]:
     command = [
         sys.executable,
         str(ROOT / "scripts/wiki-lint"),
@@ -153,12 +152,6 @@ def _run_structural(vault: Path, relative: list[str], args: argparse.Namespace) 
         "--scope",
         "files:" + ",".join(relative),
     ]
-    if args.all:
-        command.append("--all")
-    if not args.vale:
-        command.append("--no-vale")
-    if not args.template:
-        command.append("--no-template")
     proc = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
     if proc.returncode not in (0, 1, 2):
         raise RuntimeError(proc.stderr.strip() or f"lint checker exited {proc.returncode}")
@@ -190,10 +183,10 @@ def _cached_findings(value: Any) -> list[dict[str, Any]]:
     return []
 
 
-def _config_digest(_vault: Path, args: argparse.Namespace) -> str:
+def _config_digest(_vault: Path, _args: argparse.Namespace) -> str:
     return digest_rules(
         ROOT,
-        extra={"all": bool(args.all), "vale": bool(args.vale), "template": bool(args.template)},
+        extra={"lint_output": "all", "vale": True, "template": True},
     )
 
 
@@ -259,8 +252,7 @@ def _compute_lint(args: argparse.Namespace, vault: Path) -> tuple[dict[str, Any]
         if cached is not None:
             findings.extend(_cached_findings(cached.get("results")))
             hits += 1
-            if args.vale:
-                vale_skipped += 1
+            vale_skipped += 1
         else:
             pending.append(relative)
 
@@ -268,7 +260,7 @@ def _compute_lint(args: argparse.Namespace, vault: Path) -> tuple[dict[str, Any]
     if pending:
         _progress("lint", done=f"{hits}/{total}", hits=hits, pending=len(pending))
         started = now_ms()
-        report = _run_structural(vault, pending, args)
+        report = _run_structural(vault, pending)
         elapsed = elapsed_ms(started)
         current_findings = _flatten(report, vault)
         grouped: dict[str, list[dict[str, Any]]] = {relative: [] for relative in pending}
@@ -296,18 +288,14 @@ def _compute_lint(args: argparse.Namespace, vault: Path) -> tuple[dict[str, Any]
         save_cache(vault, cache)
 
     hard_rule_set = hard_keys or set(DEFAULT_HARD_KEYS)
-    visible = findings if args.all else [
-        item
-        for item in findings
-        if item.get("rule") in hard_rule_set or str(item.get("severity", "")).upper() in HARD_SEVERITIES
-    ]
     page_bytes = {relative: (vault / relative).stat().st_size for relative in paths if (vault / relative).is_file()}
     result = build_worklist(
-        visible,
+        findings,
         files_checked=len(paths),
         scope={"paths": list(args.paths)},
         cache={"hits": hits, "misses": misses, "vale_skipped": vale_skipped},
         hard_keys=hard_rule_set,
+        full=bool(getattr(args, "full", False)),
         vault=vault,
         page_bytes=page_bytes,
         file_order=paths,
@@ -316,7 +304,7 @@ def _compute_lint(args: argparse.Namespace, vault: Path) -> tuple[dict[str, Any]
     result["ledger"] = ledger
     if ledger["open"]:
         result["status"] = "findings"
-    code = 1 if (bool(result.get("counts")) if args.all else bool(result.get("hard_fail"))) or ledger["open"] else 0
+    code = 1 if bool(result.get("counts")) or ledger["open"] else 0
     return result, code
 
 
@@ -444,9 +432,7 @@ def _tokens(vault: Path, paths: list[str], args: argparse.Namespace) -> int | No
 
 
 def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
-    lint_args = argparse.Namespace(
-        paths=args.paths, all=False, vale=True, template=True, hard=True, pretty=False, full=False
-    )
+    lint_args = argparse.Namespace(paths=args.paths)
     times: list[tuple[str, int]] = []
     lint, lint_code = _timed("health.lint", lambda: _compute_lint(lint_args, vault), times)
     paths = _resolve_paths(vault, args.paths)
@@ -533,9 +519,6 @@ def parser() -> argparse.ArgumentParser:
     lint.add_argument("--full", action="store_true")
     lint.add_argument("--pretty", action="store_true")
     lint.add_argument("--json", action="store_true")
-    lint.add_argument("--all", action="store_true")
-    lint.add_argument("--no-vale", dest="vale", action="store_false", default=True)
-    lint.add_argument("--no-template", dest="template", action="store_false", default=True)
     query = commands.add_parser("query")
     query.add_argument("phrase")
     query.add_argument("--collection", default="wiki")

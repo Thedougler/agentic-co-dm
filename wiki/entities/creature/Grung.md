@@ -86,7 +86,7 @@ CR 1/4 humanoid grung — green-caste laborers and scouts, the lowest freeborn c
 
 **Ecology.**
 
-Green-caste grung are laborers, not fighters, drawn from the rainforest-interior clan holds of [[verdant-teeth]] and pressed into garrison duty across [[Midchain North]]. At the [[Calveno Sewer Magazines]] (itself `status: pending`), they serve as sentries alongside a blue-caste handler ([[grung-elite-warrior]]): standing orders are hide at the sound of movement (Stealth +4, advantage in dim light near water), let intruders pass, and report after. They break cover only if intruders interfere with the blackpowder barrels under guard, and even then try to flee and report rather than fight — a sentry discipline built on the caste's low standing within [[grung-clans|Grung Clans]] society, not any lack of nerve.
+Green-caste grung are laborers, not fighters, drawn from the rainforest-interior clan holds of [[verdant-teeth]] and pressed into garrison duty across [[midchain-north|Northern Midchain]]. At the [[Calveno Sewer Magazines]] (itself `status: pending`), they serve as sentries alongside a blue-caste handler ([[grung-elite-warrior]]): standing orders are hide at the sound of movement (Stealth +4, advantage in dim light near water), let intruders pass, and report after. They break cover only if intruders interfere with the blackpowder barrels under guard, and even then try to flee and report rather than fight — a sentry discipline built on the caste's low standing within [[grung-clans|Grung Clans]] society, not any lack of nerve.
 
 ## Tactics
 

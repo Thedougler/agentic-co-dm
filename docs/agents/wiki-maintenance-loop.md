@@ -18,7 +18,7 @@ Run without fleet chat when clean. Emit compact JSON path+metric (no body dumps)
 
 | Step | Command / tool | Notes |
 |---|---|---|
-| A1 | `./scripts/wiki-lint --json` | HARD keys only for fail-noise; soft findings listed separately |
+| A1 | `./scripts/wiki lint` | All configured checker findings, including Vale and soft findings |
 | A2 | `python3 scripts/context-waste-scan.py` | S3/S4 = **leads** (redundancy/conflict/infra), not shorten mandates |
 | A3 | `python3 scripts/token-count.py` (when #86 lands) | Optional footprint rollup; never ÷4 |
 | A4 | Filename remorph (#72/#80) | Spaces / `Aruhe` / leading `00` HARD — remorph `--apply` greenlit 2026-09-14 |
@@ -62,7 +62,7 @@ When cleaning or remorphing: prune **template fluff, duplicate section jobs, and
 - Craft cuts or instruction deletes for token/byte scores; thinning that loses output quality
 - Destructive consolidate without dry-run + blast-radius confirm
 - Overwrite `_raw/`; silent multi-agent clobber; delete orphans/planned links
-- Treat lint-green as fidelity or run prose QC via scripts
+- Lint output is the complete checker defect list; do not silently replace it with a hard-only or structural-only pass.
 
 ---
 
@@ -85,10 +85,10 @@ CoS expands the existing Wiki lint keep-ahead routine; do not spawn duplicate ac
 
 | Need | Use |
 |---|---|
-| HARD/soft structure | `wiki-lint` + `./scripts/wiki-lint` |
+| All lint findings | `wiki lint` |
 | Waste leads | `context-waste-scan.py` + ASE method docs |
 | Tokens | `token-count.py` / wiki-status (#86) |
-| Orphans / links | `wiki-lint`, `cross-linker` |
+| Orphans / links | `wiki lint`, `cross-linker` |
 | Dupes | `wiki-dedup` audit |
 | Digest | `wiki-digest` |
 | Ingest inbox | `wiki-ingest` |

@@ -510,6 +510,36 @@ def test_misplaced_entity_is_hard_and_skips_wrong_template(tmp_path: Path):
     assert hits[0]["page"] == "entities/item/snakewood.md"
     assert hits[0]["expected"] == "entities/creature/snakewood.md"
 
+
+def test_moc_is_not_reported_as_misplaced_entity(tmp_path: Path):
+    page = tmp_path / "entities" / "creature" / "_index.md"
+    page.parent.mkdir(parents=True)
+    page.write_text(
+        "---\n"
+        "title: Creature Index\n"
+        "category: entities\n"
+        "tags: []\n"
+        "sources: []\n"
+        "created: 2026-09-17\n"
+        "updated: 2026-09-17\n"
+        "type: lore\n"
+        "lifecycle: proposed\n"
+        "reveal: unrevealed\n"
+        "---\n\n"
+        "- [[entities/creature/bloodhawk|Bloodhawk]]\n",
+        encoding="utf-8",
+    )
+    result = run_cli(
+        "scripts/wiki-lint",
+        "--no-vale",
+        "--scope",
+        "files:entities/creature/_index.md",
+        "--vault",
+        tmp_path,
+    )
+    report = assert_json(result, returncode=1)
+    assert report["findings"].get("misplaced_entity", []) == []
+
 def test_moc_generate_wrapper_reports_help():
     result = subprocess.run(
         [str(ROOT / "scripts" / "moc-generate"), "--help"],
@@ -761,6 +791,64 @@ def test_named_missing_owner_cannot_be_removed(tmp_path: Path):
     assert "Named Place" in owners
     assert "foo_bar" not in owners
     assert report["next_page"] == "page.md"
+
+
+def test_lint_reports_noncanonical_basenames_and_slug_collisions(tmp_path: Path):
+    def write_page(relative: str, title: str, page_type: str) -> None:
+        path = tmp_path / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(
+            "---\n"
+            f"title: {title}\n"
+            "category: entities\n"
+            "tags: []\n"
+            "sources: []\n"
+            "created: 2026-09-19\n"
+            "updated: 2026-09-19\n"
+            f"type: {page_type}\n"
+            "lifecycle: proposed\n"
+            "reveal: unrevealed\n"
+            "summary: Fixture.\n"
+            "base_confidence: 0.55\n"
+            "---\n",
+            encoding="utf-8",
+        )
+
+    write_page("entities/npc/Alice_Name.md", "Alice Name", "npc")
+    write_page("entities/npc/alice-name.md", "Alice Name", "npc")
+    write_page("entities/faction/Alice_Name.md", "Alice Name", "faction")
+    write_page("entities/faction/Bob.md", "Bob", "faction")
+    write_page("entities/place/old_port.md", "Old Port", "place")
+    write_page("entities/region/old-port.md", "Old Port", "region")
+
+    report = assert_json(
+        run_cli(
+            "scripts/wiki-lint",
+            "--json",
+            "--no-vale",
+            "--no-template",
+            "--all",
+            "--vault",
+            tmp_path,
+        ),
+        returncode=1,
+    )
+    basename_findings = {
+        item["page"]: item for item in report["findings"]["noncanonical_basename"]
+    }
+    assert basename_findings["entities/faction/Bob.md"]["expected"] == "entities/faction/bob.md"
+    assert basename_findings["entities/faction/Bob.md"]["repair_class"] == "deterministic_repair"
+    assert basename_findings["entities/npc/Alice_Name.md"]["collision"] is True
+    assert basename_findings["entities/npc/Alice_Name.md"]["repair_class"] == "human_repair"
+    assert basename_findings["entities/npc/Alice_Name.md"]["repair_action"] is None
+
+    stem_collision = report["findings"]["duplicate_stems"][0]
+    assert stem_collision["pages"] == ["entities/faction/Alice_Name.md", "entities/npc/Alice_Name.md"]
+    slug_collision = next(
+        item for item in report["findings"]["duplicate_slugs"] if item["slug"] == "old-port"
+    )
+    assert slug_collision["pages"] == ["entities/place/old_port.md", "entities/region/old-port.md"]
+    assert slug_collision["repair_class"] == "human_repair"
 
 
 def test_run_pytest_wrapper_reports_version():

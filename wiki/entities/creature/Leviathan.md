@@ -82,7 +82,7 @@ actions:
   - name: "Bite"
     desc: "Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 34 (4d12 + 8) piercing damage."
   - name: "Crushing Coil"
-    desc: "Melee Weapon Attack: +14 to hit, reach 20 ft., one creature. Hit: 30 (4d10 + 8) bludgeoning damage, and the target is [[Grappled]] (escape DC 22). Until this grapple ends, the target is [[Restrained]], and the Leviathan can't use Crushing Coil on another target."
+    desc: "Melee Weapon Attack: +14 to hit, reach 20 ft., one creature. Hit: 30 (4d10 + 8) bludgeoning damage, and the target is grappled (escape DC 22). Until this grapple ends, the target is restrained, and the Leviathan can't use Crushing Coil on another target."
   - name: "Riftbolt (Recharge 5–6)"
     desc: "The Leviathan discharges planar lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one."
 legendary_actions:
@@ -93,7 +93,7 @@ legendary_actions:
   - name: "Coil (Costs 2 Actions)"
     desc: "The Leviathan makes one Crushing Coil attack."
   - name: "Submerge Pulse"
-    desc: "Each creature within 15 feet of the Leviathan must succeed on a DC 19 Strength saving throw or be knocked [[Prone]]."
+    desc: "Each creature within 15 feet of the Leviathan must succeed on a DC 19 Strength saving throw or be knocked prone."
 ```
 
 ## Biology

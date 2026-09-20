@@ -5,7 +5,7 @@ Public seam for lint, query, and health. Implementation details live in the plan
 ## Invocation
 
 ```text
-scripts/wiki lint [path ...] [--full] [--pretty] [--json] [--hard] [--all] [--no-vale] [--no-template]
+scripts/wiki lint [path ...] [--full] [--pretty] [--json]
 scripts/wiki query <phrase> [--collection NAME] [-n N] [--pretty] [--json]
 scripts/wiki health [path ...] [--pretty] [--json]
 ```
@@ -16,9 +16,9 @@ Paths: vault-relative files or prefixes. Zero paths = whole live wiki. Union if 
 
 `--json` is accepted and ignored. `--pretty` is explicit human text. No terminal detection.
 
-`--full` is accepted on lint and MUST NOT change lint output.
+`--full` is accepted on lint and adds the detailed per-file findings dump to the compact default overview.
 
-Creative lint (`file`, `task`, `corpus`, `changed`, `rule`, `queue`, `template`, consolidate) is not this command. Use `scripts/wiki-lint`.
+The checker backend is internal. Its structural, template, creative, and Vale findings are all surfaced by `wiki lint`; agents do not use evaluator-specific commands.
 
 `scripts/wiki-maintain --report` is an alias of `scripts/wiki health` (identical snapshot).
 
@@ -27,7 +27,7 @@ Creative lint (`file`, `task`, `corpus`, `changed`, `rule`, `queue`, `template`,
 | Code | When |
 |---|---|
 | 0 | Clean lint/health, or query with a result object (including zero hits if the backend succeeded) |
-| 1 | Lint/health completed with findings (`hard_fail` under `--hard`, or any counts under `--all`) |
+| 1 | Lint/health completed with any findings or maintenance issues |
 | 2 | Bad invocation, unknown path, missing vault, retrieval backend failure |
 
 ## Default stdout
@@ -36,11 +36,11 @@ Exactly one compact JSON object, `sort_keys=True`, no indent. `status` always pr
 
 ### Lint
 
-Required keys: `status`, `counts`, `hard_fail`, `unique`, `backlog`, `next_page`, `cache`, `files_checked`, `scope`, `files`, `timing`.
+Required keys: `status`, `counts`, `hard_fail`, `finding_total`, `affected_pages`, `next_page`, `next`, `cache`, `files_checked`, `scope`, `ledger`, `timing`.
 
-`files` is an array of `{file, findings}` in argument / path order. `findings` is `{rule, file, line, severity, message}[]` with 1-based `line`. Vale included unless `--no-vale`. Groups with zero findings are omitted.
+Default lint is bounded: `counts` aggregates every configured checker finding by rule; `finding_total` and `affected_pages` cover the complete result; `next` is either null or `{path, findings, bytes, action}`. `next.path` is the smallest dirty file by byte size, with vault-relative path as the tie-breaker. The default object omits `unique`, `backlog`, and `files`.
 
-Two named files → two `files` entries. A prefix → one entry per file that has findings.
+With `--full`, the object also includes `unique`, `backlog`, and `files`. `files` is an array of `{file, findings}` in argument / path order. `findings` is `{rule, file, line, severity, message}[]` with 1-based `line`. Every configured checker finding is included, including all Vale findings and every severity. There is no hard-only default and no checker-suppression flag.
 
 No nested per-rule finding maps. `unique` values are already-deduped targets. Lint MUST NOT guess, alias-match, or invent owners.
 
@@ -50,7 +50,7 @@ No nested per-rule finding maps. `unique` values are already-deduped targets. Li
 
 ### Health
 
-One snapshot: `pages`, `bytes`, `tokens`, live lint **summary** (no `files` dump), waste / staging / remorph / policy, `trends` (including `slowest_commands` and `token_heaviest`), ordered `focus` (cap 5), `next`, `context` (first-turn files, ranked skills, first-turn efficiency delta, `act`), `timing`. See [data-model.md](../data-model.md).
+One snapshot: `pages`, `bytes`, `tokens`, live lint summary (no `files` dump; includes finding/page totals, blocking rules, meaning, and repair action), waste / staging / remorph / policy, `trends` (including `slowest_commands`, `token_heaviest`, and small open-ledger entries when at most five exist), ordered `focus` (cap 5; each item includes an action), `next`, `context` (first-turn files, ranked skills, first-turn efficiency delta, `act`), `timing`. See [data-model.md](../data-model.md).
 
 Missing sittings/errors/traces → zero/empty `trends`, still exit 0 or 1 from lint/Layer A — not exit 2.
 
@@ -60,7 +60,7 @@ No skill-eval pass/fail keys.
 
 | Command | Text |
 |---|---|
-| lint | Scoreboard of counts / next_page / cache, then findings grouped by file as `file:line  RULE  message` |
+| lint | Scoreboard of counts / totals / next action / cache; `--full` then lists findings as `file:line  RULE  message` |
 | lint `--pretty --full` | Same human findings list |
 | query | One hit per line: `path  title  id` |
 | health | Short scoreboard (pages, bytes, tokens, lint hard total, quiet-relevant counts, slowest command, token-heaviest sitting, first-turn total) then `context.act`, `next.path`, and the `focus` list (`path  source  reason`) |

@@ -2,6 +2,10 @@
 
 A **skill-based framework** for building and maintaining an Obsidian knowledge base. No scripts or dependencies — everything is markdown instructions that you execute directly.
 
+## Project domain terms
+
+Before campaign architecture, session design, beat or skill guidance, template changes, or any terminology decision, read [`CONTEXT.md`](CONTEXT.md). It is the reusable project glossary: use its canonical terms, surface conflicts, and update it in the same change when a domain term is clarified. Keep it free of implementation details and transient campaign facts.
+
 ## README Translation Parity
 
 `README.md` and `README_TW.md` are one documentation surface. Keep headings, examples, links, and user-facing behavior aligned between the two translations. The check is advisory and never blocks a PR: the `readme-translation-drift` CI job only reports drift. Run `python3 tools/check_readme_sync.py` to list commits that changed `README.md` without a later `README_TW.md` update, along with the pending English diff — then translate and backfill those changes into `README_TW.md`. Reviewers assess translation quality.
@@ -28,7 +32,7 @@ the failure on it.
 
 Canon owner: constitution principle X. File what it makes canon. Unsaid invention is not canon (XII).
 
-Lint contract: `AGENT001` `AGENT002` `AGENT003` via `scripts/check-agent-standards.py`, plus structural wiki lint through `wiki lint`. Creative lint remains on `scripts/wiki-lint`. Iterate until green. Do not ask. Do not interrupt with findings.
+Lint contract: the single agent-facing `wiki lint`, which runs every checker and reports a compact aggregate overview by default, including Vale and soft findings. Use `next.path`, then `wiki lint <next.path> --full` for line-level repair. Iterate until green. Do not ask. Do not interrupt with findings.
 
 After green, one short done-summary: what changed, where. No question. No wait.
 
@@ -40,7 +44,7 @@ FR-002 structural repair, template conformance of existing content, named ingest
 
 ## Project identity
 
-Primary deliverables are skills, agent instructions, and guidance documents. Scripts and tooling support those. Review of skill or instruction changes uses the existing `skill-creator` eval loop (held-out prompts, with-skill vs without-skill, graded assertions grounded in live wiki content — not vacuum scenarios). MUST NOT add a checklist, PR template, or review skill. Coverage and type-safety MUST NOT be the primary bar.
+Primary deliverables are skills, agent instructions, and guidance documents. Scripts and tooling support those. Review of agent-skill changes uses the `skill-creator` eval loop (held-out prompts, with-skill vs without-skill, graded assertions grounded in live wiki content — not vacuum scenarios). Every skill evaluation, behavioral test, benchmark, and related validation MUST use the weakest available model that can complete the task with cold, focused context; weaker models expose unclear guidance, and stronger models benefit from the same clarity. The `skill-creator` workflow is reserved for modifying agent skills; other instruction, documentation, and system changes use their applicable workflow. MUST NOT add a checklist, PR template, or review skill. Coverage and type-safety MUST NOT be the primary bar.
 
 
 ## Configuration
@@ -81,6 +85,10 @@ If table aim is `missing`, ask the DM to name the players (at least one; tests u
 **Dependency order (recursive):** If a beat/scene names or requires an NPC, item, creature, place, faction, vehicle, spell, quest, or other entity — load that kind's **owner skill** (Wiki kind routing, Beat skill routing, or Skill Routing), **mint/file that owner page first** (kebab basename, matching `wiki/templates/`, live vault path), **then** write/update the session/TotM text that depends on it. A new named owner the user asked to introduce is filed first; spoken that depends on it follows. Existing wiki content MUST NOT wait. The DM cannot describe what does not exist.
 
 Agents MUST complete **all** recursive dependency steps to finish the goal — not only top-level, intermediary, or initial steps — in dependency order. Applies to `session-beats`, typed beat skills, `theatre-of-the-mind`, `cold-opens`, `session-recap`, and Session Architect orchestration. Completeness gate — do **not** thin narrative craft.
+
+### Focused minting
+
+Problem: minting several new page types in one task blurs ownership and wastes context. When a task requires new owners of multiple types, create one focused subtask per type and delegate each mint to a subagent using that type's owner skill. Keep dependent types serial; run independent types in parallel only when their canonical write surfaces are disjoint. The parent agent owns dependency order, integration, and final verification. This follows Mike Shea's practice of separating characters, NPCs, locations, and session notes for legible prep ([source](https://slyflourish.com/organizing_notes.html)).
 
 ### HARD: dm-facing-explicit (Nick 2026-09-14)
 

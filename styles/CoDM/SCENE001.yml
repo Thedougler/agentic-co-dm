@@ -1,6 +1,0 @@
-extends: existence
-message: "SCENE001: section lacks an actionable situation or pressure marker"
-level: suggestion
-scope: text
-tokens:
-  - "(?s).+"

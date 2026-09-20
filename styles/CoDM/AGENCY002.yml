@@ -1,6 +1,0 @@
-extends: existence
-message: "AGENCY002: narration prescribes a player-character action"
-level: error
-scope: text
-tokens:
-  - "(?i)\\byou\\s+(must|have to|need to)\\b"

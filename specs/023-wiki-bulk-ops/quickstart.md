@@ -143,25 +143,28 @@ printf 'old-npc-name\tnew-npc-name\nold-place\tnew-place\n' > /tmp/link-mapping.
 # Verify: unknown tags now listed for removal
 ```
 
-### 12. MOC generation — create subfolder indexes
+### 12. MOC generation — create useful subfolder indexes
 
 ```bash
-# Dry run: see what _index.md files would be created/updated
+# Dry run: see which eligible MOCs would be created/updated or stale
+# one-page leaf MOCs removed
 ./scripts/wiki-bulk-ops moc-generate --dry-run --json --vault wiki
 
-# Verify: output lists content folders that would get _index.md
-# Verify: infrastructure folders (_archive, _raw, _meta, .obsidian, attachments, templates) absent
-# Verify: each MOC has player-friendly title, wikilinks to folder contents
+# Verify: output includes folders with at least two direct pages or
+# eligible child MOCs; one-page leaf folders are absent
+# Verify: infrastructure folders (_archive, _raw, _meta, .obsidian,
+# attachments, templates) are absent
+# Verify: each MOC uses canonical `_index.md`, has a distinguishing
+# `Index` title, and contains folder wikilinks
 
 # Apply
 ./scripts/wiki-bulk-ops moc-generate --vault wiki
 
-# Verify: _index.md exists in content folders (entities/, entities/npc/, journal/, etc.)
 # Verify: root index.md updated with links to top-level MOCs
 # Verify: frontmatter valid YAML with required fields
 
 # Idempotency
-./scripts/wiki-bulk-ops moc-generate --vault wiki --json
+./scripts/wiki-bulk-ops moc-generate --json --vault wiki
 # Verify: files_modified: 0
 ```
 

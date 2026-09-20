@@ -1,0 +1,12 @@
+{
+  "eval_id": 1,
+  "run_id": "eval-npc-nigel-strutt-old_skill",
+  "expectations": [
+    {"text": "All facts preserved", "passed": true, "evidence": "All original facts present including charter knowledge, pricing, stock, paperwork concern."},
+    {"text": "Wikilinks intact", "passed": true, "evidence": "All three wikilinks preserved."},
+    {"text": "Frontmatter unchanged", "passed": false, "evidence": "Removed lifecycle_changed field from frontmatter."},
+    {"text": "Drawable portrait", "passed": true, "evidence": "Crisp-pressed coat, cuffs fastened tight, one hand on ledger, fingernails bitten short. Drawable."},
+    {"text": "No dead weight", "passed": true, "evidence": "Clean output, every line actionable."},
+    {"text": "No AI voice", "passed": true, "evidence": "No AI tell phrases. Natural DM-table language."}
+  ]
+}

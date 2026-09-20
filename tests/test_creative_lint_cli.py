@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CLI = ROOT / "scripts" / "wiki-lint"
-FIXTURE = ROOT / "tests" / "fixtures" / "creative_lint" / "AGENCY001" / "fail_authored_decision.md"
+FIXTURE = ROOT / "tests" / "fixtures" / "creative_lint" / "WIKI001" / "fail_missing_frontmatter.md"
 
 
 def run_cli(*args: str) -> subprocess.CompletedProcess[str]:
@@ -18,14 +18,14 @@ def test_task_json_contract_and_exit_code():
     assert proc.returncode == 1
     data = json.loads(proc.stdout)
     assert data["status"] == "repair_required"
-    assert data["findings"][0]["rule_id"] == "AGENCY001"
+    assert data["findings"][0]["rule_id"] == "WIKI001"
     assert {"rule_id", "result", "severity", "location", "evidence", "reason", "evaluator"} <= data["findings"][0].keys()
 
 
 def test_rule_human_output_and_unknown_rule():
-    proc = run_cli("rule", "AGENCY001")
+    proc = run_cli("rule", "CANON001")
     assert proc.returncode == 0
-    assert "AGENCY001" in proc.stdout and "Bundles:" in proc.stdout
+    assert "CANON001" in proc.stdout and "Bundles:" in proc.stdout
     missing = run_cli("rule", "NOPE999")
     assert missing.returncode == 2
     assert "Unknown rule ID" in missing.stderr
@@ -38,10 +38,6 @@ def test_legacy_no_subcommand_is_structural_json():
     assert "counts" in data and "hard_fail" in data
 
 
-def test_candidate_routes_known_correction():
-    proc = run_cli("candidate", "NPC", "meta-knowledge")
-    assert proc.returncode == 0
-    assert "KNOW002" in proc.stdout
 
 
 def test_candidate_creates_shadow_template_for_unmatched_correction():

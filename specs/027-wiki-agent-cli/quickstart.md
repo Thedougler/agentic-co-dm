@@ -17,27 +17,33 @@ chmod +x scripts/wiki
 
 No extra packages. Vale and tiktoken are already project dependencies.
 
-## V-001 Prefix dump grouped by file (SC-001, SC-002)
+## V-001 Bounded bulk lint and smallest next page (SC-001, SC-002)
 
 ```bash
-.venv/bin/python scripts/wiki lint entities/npc
+.venv/bin/python scripts/wiki lint
 ```
 
-Expect: compact JSON; summary keys plus `files` (one group per file that has findings); each finding has 1-based `line`; no nested per-rule maps; `timing.command` is `lint`. Exit 0 or 1, never 2.
+Expect: compact JSON whose aggregate `counts`, `finding_total`, and `affected_pages` cover all configured checkers. `next.path` is the smallest dirty file by bytes then path, and `next.action` tells the agent to lint it with `--full`. Default output has no `files`, `unique`, or `backlog` dump.
 
 ```bash
-.venv/bin/python scripts/wiki lint entities/npc --full
+.venv/bin/python scripts/wiki lint --full
 ```
 
-Expect: same object shape as without `--full`.
-
-## V-002 Named files are separate blocks (SC-002, FR-010)
+Expect: the same overview plus complete per-file findings, including 1-based lines.
 
 ```bash
-.venv/bin/python scripts/wiki lint entities/npc/<page-a>.md entities/npc/<page-b>.md
+.venv/bin/python scripts/wiki lint entities/npc/<next-page>.md --full
 ```
 
-Expect: `files` has two entries (if both have findings), each a complete Vale-included breakdown with 1-based `line`.
+Expect: detailed findings for only the recommended page.
+
+## V-002 Scoped bulk lint (SC-002)
+
+```bash
+.venv/bin/python scripts/wiki lint entities/npc/page-a.md entities/npc/page-b.md
+```
+
+Expect: the same bounded overview shape, with `next` selected from the dirty files in scope. Add `--full` to get two detailed file groups.
 
 ## V-003 Unknown path fails closed (SC-007)
 
@@ -106,4 +112,4 @@ Temp-vault tests cover V-001–V-004, V-006–V-007, and V-010 seams. V-005 need
 
 ## Instruction check
 
-`.agents/skills/wiki-lint/SKILL.md` documents `scripts/wiki lint`, not `./scripts/wiki-lint --json wiki/` as the default structural pass. Health docs say run `scripts/wiki health` then do `next`.
+`.agents/skills/wiki-lint/SKILL.md` documents `wiki lint` as the sole agent-facing lint command with a bounded default overview and `--full` detail. Health docs say run `scripts/wiki health` then do `next`.
