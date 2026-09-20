@@ -14,6 +14,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: Botukuri
+kind: plot
+rarity: common
+attunement: false
+owner: "Unknown Botukuri family"
 summary: "A set of small hand-carved wooden tokens sealed in resin, the way Botukuri families mark a household during naming ceremonies."
 provenance:
   extracted: 0.85
