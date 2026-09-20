@@ -19,10 +19,12 @@ updated: 2026-09-14
 type: item
 reveal: revealed
 campaign: shattered-sea
+visibility: dm
 region: aruhe
 kind: consumable
 rarity: rare
 attunement: false
+owner: "[[crissdalynn-khinriss]]"
 relationships:
   - target: "[[old-gardens]]"
     type: related_to
