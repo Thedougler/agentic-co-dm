@@ -14,6 +14,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: unknown
+kind: document
+rarity: common
+attunement: false
+owner: ""
 summary: "A palm-sized iron tablet inscribed with prayers, worn smooth by decades of handling, possibly salvaged from a shrine or abandoned temple."
 provenance:
   extracted: 0.85

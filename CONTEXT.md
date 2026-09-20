@@ -1,6 +1,6 @@
 # Agentic Co-DM
 
-Prep-and-wrap co-DM for a human table. Agents author playable Work before a session and compile outcomes after. The DM is the only runtime while players are present. This file is a reusable glossary for campaign play; it does not record work packets, ingest grain, or failure catalogs.
+Prep-and-wrap co-DM for a human table. Agents author playable Work before a session and compile outcomes after. The DM is the only runtime while players are present. This file is the reusable glossary for campaign play and Co-DM operations; it does not record work packets, ingest grain, or failure catalogs.
 
 ## Language
 
@@ -146,6 +146,52 @@ _Avoid_: knowledge bank; the bank; unaudited chat memory; a second store beside 
 **Search index**:
 A derived retrieval layer over the wiki (commonly QMD). The wiki remains the source of truth.
 _Avoid_: treating the index as a second canon store
+
+## Agent execution language
+
+**Capability**:
+An existing skill or deterministic wiki operation that owns a bounded kind of work.
+_Avoid_: node; generic worker; interchangeable tool
+
+**Owner capability**:
+The capability with authority over a specific artifact or operation and its completion criteria.
+_Avoid_: generic author; fallback owner; shared ownership
+
+**Capability handoff**:
+The transfer of bounded work when ownership changes, after which control returns to the parent operation.
+_Avoid_: handoff; task drift; permanent delegation
+
+**Parent operation**:
+The capability that retains the user's original objective while owner capabilities complete dependencies.
+_Avoid_: orchestrator; supervisor skill; workflow engine
+
+**Capability dependency**:
+An artifact or state that must be valid before dependent work can proceed.
+_Avoid_: procedural step; speculative prerequisite
+
+**Completion guard**:
+An observable condition that closes a capability branch or permits dependent work to begin.
+_Avoid_: prose exists; agent says done; implicit completion
+
+**Context projection**:
+The minimum sufficient canon and operational evidence retrieved for one capability's current work.
+_Avoid_: inherited full context; whole-vault loading; incidental context
+
+**Observation surface**:
+Compact query, lint, or health evidence that identifies relevant knowledge, invalid output, or the next attention target.
+_Avoid_: planner; workflow ledger; second source of truth
+
+**Output contract**:
+The combined owner conventions, template, and validation rules that define a valid artifact.
+_Avoid_: prose-only completion; optional shape
+
+**Knowledge graph**:
+Campaign pages and their semantic relationships.
+_Avoid_: execution graph; workflow state
+
+**Execution graph**:
+The ephemeral capability routes, dependencies, completion guards, observations, and capability handoffs for the current request.
+_Avoid_: knowledge graph; persistent workflow ledger; graph runtime
 
 ## Presentation language
 

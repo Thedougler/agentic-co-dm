@@ -12,9 +12,9 @@
 
 - **work_class**: `agent-system`
 - **route**: `full-sdd`
-- **Objective**: Make future agents reliably select the correct existing skill, load only relevant context, satisfy real dependencies, return control after handoffs, and close work only on observable completion evidence.
+- **Objective**: Make future agents reliably select the correct existing skill, load only relevant context, satisfy real dependencies, return control after capability handoffs, and close work only on observable completion evidence.
 - **User value**: The DM receives more reliable, complete, canon-faithful Work with less wasted context and less agent drift between capabilities.
-- **In scope**: Root routing and invariants; wiki-facing skill boundaries; cross-skill handoffs; dependency semantics; context projection at capability boundaries; read, write, ingest, and maintenance workflow shapes; lint and retrieval feedback cycles; agent-facing observation contracts; route-level behavioral evaluation; removal of duplicated workflow prose after authority is established.
+- **In scope**: Root routing and invariants; wiki-facing skill boundaries; cross-skill capability handoffs; capability dependency semantics; context projection at capability boundaries; read, write, ingest, and maintenance workflow shapes; lint and retrieval feedback cycles; agent-facing observation surfaces; route-level behavioral evaluation; removal of duplicated workflow prose after authority is established.
 - **Out of scope**: New graph runtimes, graph databases for execution, persistent workflow ledgers, generic orchestrator capabilities, universal workflow state schemas, bespoke node classes, hand-maintained all-skill DAGs, replacement of wiki canon stores, and consolidation of the knowledge graph with the execution graph.
 - **Canon impact**: Campaign canon remains unchanged. This feature changes agent operating behavior and supporting guidance only.
 
@@ -24,7 +24,7 @@
 
 As a DM asking for wiki or campaign work, I want the agent to route directly from my intent to the capability that owns the requested artifact or operation so that specialized rules apply without unrelated instruction loading.
 
-**Why this priority**: Correct ownership is the entry guard for every later dependency, contract, and completion check.
+**Why this priority**: Correct ownership must be established before any capability dependency, output contract, or completion guard can be applied reliably.
 
 **Independent Test**: Give a cold agent representative requests for a faction page, a wiki question, a page repair, and session content; verify each reaches the correct existing owner without a generic intermediate router.
 
@@ -40,7 +40,7 @@ As a DM asking for wiki or campaign work, I want the agent to route directly fro
 
 As a DM requesting work that depends on several artifact owners, I want the parent operation to preserve my original objective while specialized capabilities produce their artifacts and return control so that the entire request completes without task drift.
 
-**Why this priority**: The highest-risk failures occur at edges between capabilities rather than inside a single capability.
+**Why this priority**: The highest-risk failures occur at capability routes and capability handoffs rather than inside a single capability.
 
 **Independent Test**: Give a cold agent a session-content request requiring a missing faction and place; verify dependency owners run in valid order, independent dependencies may proceed concurrently, control returns to the parent, and the original session artifact closes only after all contracts pass.
 
@@ -55,7 +55,7 @@ As a DM requesting work that depends on several artifact owners, I want the pare
 
 ### User Story 3 - Load Bounded Context at Each Boundary (Priority: P2)
 
-As a repository maintainer, I want every capability to retrieve only the canon and operational context needed for its current work so that agents remain accurate without carrying unrelated prior-node context.
+As a repository maintainer, I want every capability to retrieve only the canon and operational context needed for its current work so that agents remain accurate without carrying unrelated prior-capability context.
 
 **Why this priority**: Bounded context reduces wasted tokens and cross-domain contamination while preserving the evidence needed for quality.
 
@@ -73,7 +73,7 @@ As a repository maintainer, I want every capability to retrieve only the canon a
 
 As a DM, I want mutations and maintenance work to finish only when their applicable output contracts are valid, so that prose existence is never mistaken for completion.
 
-**Why this priority**: Observable guards make completion reliable and keep invalid work from shipping.
+**Why this priority**: Observable completion guards make completion reliable and keep invalid work from shipping.
 
 **Independent Test**: Give a cold agent one write and one maintenance request with an induced semantic finding; verify each uses the correct feedback edge, returns to the owner when needed, and reports completion only after the target scope is valid.
 
@@ -88,15 +88,15 @@ As a DM, I want mutations and maintenance work to finish only when their applica
 
 ### User Story 5 - Maintain Legible Capability Contracts (Priority: P3)
 
-As a skill author, I want wiki-facing capabilities to expose consistent boundary information while preserving their distinct craft, so that agents can understand inputs, ownership, completion, and handoffs quickly.
+As a skill author, I want wiki-facing capabilities to expose consistent boundary information while preserving their distinct craft, so that agents can understand inputs, ownership, completion, and capability handoffs quickly.
 
 **Why this priority**: Consistent boundaries improve graph traversal without flattening specialized procedures into one generic workflow.
 
-**Independent Test**: Review the named wiki-facing capabilities and verify each makes Input, Work, Done, and Handoff legible, with no requirement that their internal procedures become identical.
+**Independent Test**: Review the named wiki-facing capabilities and verify each makes Input, Work, Done, and Capability Handoff legible, with no requirement that their internal procedures become identical.
 
 **Acceptance Scenarios**:
 
-1. **Given** a wiki-facing capability, **When** an agent opens its guidance, **Then** the expected input, owned work, observable completion condition, and ownership-changing handoff are immediately identifiable.
+1. **Given** a wiki-facing capability, **When** an agent opens its guidance, **Then** the expected input, owned work, observable completion condition, and capability handoff are immediately identifiable.
 2. **Given** two capabilities with different craft requirements, **When** their boundary contracts are normalized, **Then** their internal procedures remain capability-specific.
 3. **Given** duplicated workflow guidance across authority layers, **When** one canonical owner is established, **Then** lower-value duplication is removed without deleting global invariants or quality-critical detail.
 
@@ -108,7 +108,7 @@ As a skill author, I want wiki-facing capabilities to expose consistent boundary
 - A validation loop repeats without progress: report the unresolved owner-level defect rather than weakening validation or looping indefinitely.
 - An observation surface is silent or unavailable: use the existing documented fallback without inventing a second durable state store.
 - Two dependencies target the same canonical write surface: serialize them under one active writer.
-- A route-level evaluation finds correct final prose but an invalid route, broad context load, missed handoff, or premature completion: treat the composition as failed.
+- A route-level evaluation finds correct final prose but an invalid route, broad context load, missed capability handoff, or premature completion: treat the composition as failed.
 - Guidance, templates, or validation rules are changed: assess and update relevant counterparts in the same change when the behavior they jointly govern is affected.
 
 ## Requirements *(mandatory)*
@@ -117,12 +117,12 @@ As a skill author, I want wiki-facing capabilities to expose consistent boundary
 
 - **FR-001**: The system MUST preserve four authority layers: global routing and invariants; capability-owned execution; wiki semantic conventions; and output-shape validation.
 - **FR-002**: Global guidance MUST answer which capability branch owns a job and MUST NOT restate branch-specific execution procedures already owned elsewhere.
-- **FR-003**: Each in-scope wiki-facing capability MUST make its Input, Work, Done, and Handoff contract immediately identifiable.
+- **FR-003**: Each in-scope wiki-facing capability MUST make its Input, Work, Done, and Capability Handoff contract immediately identifiable.
 - **FR-004**: Boundary normalization MUST preserve each capability's specialized procedures and craft requirements.
 - **FR-005**: Routing MUST normally proceed directly from user intent to one owner capability.
-- **FR-006**: Additional classification nodes MUST exist only where subtype choice changes the actual owner or execution branch.
-- **FR-007**: The parent operation MUST retain responsibility for the user's original objective across every child handoff.
-- **FR-008**: A delegated capability MUST own only the specialized artifact or operation named by the handoff and MUST return control when its completion condition is met.
+- **FR-006**: Additional classification steps MUST exist only where subtype choice changes the actual owner or execution branch.
+- **FR-007**: The parent operation MUST retain responsibility for the user's original objective across every child capability handoff.
+- **FR-008**: A delegated capability MUST own only the specialized artifact or operation named by the capability handoff and MUST return control when its completion condition is met.
 - **FR-009**: Cross-capability guidance MUST identify real prerequisite relationships rather than prescribe one rigid procedure for every request.
 - **FR-010**: Independent dependencies with disjoint canonical write surfaces MUST be eligible for concurrent execution; dependencies sharing a write surface or prerequisite relationship MUST remain serial.
 - **FR-011**: Session-facing work MUST preserve entity-before-spoken dependency order and DM-facing explicitness while using owner capabilities for missing dependencies.
@@ -133,9 +133,9 @@ As a skill author, I want wiki-facing capabilities to expose consistent boundary
 - **FR-016**: The system MUST define canonical read, write, ingest, and maintenance workflow shapes as recurring compositions of existing capabilities and operations.
 - **FR-017**: The read workflow MUST remain read-only unless mutation is explicitly requested.
 - **FR-018**: Every vault-write workflow MUST reach the applicable validation contract before completion.
-- **FR-019**: Validation MUST act as a feedback edge: clean results close the branch; deterministic findings route to deterministic repair; semantic findings route to the artifact owner; repaired scope returns to validation.
-- **FR-020**: Retrieval MUST act as a feedback edge: sufficient evidence proceeds; insufficient evidence triggers focused retrieval and resumes the same capability.
-- **FR-021**: Agent-facing query, lint, and health observations MUST provide compact, stable, actionable evidence sufficient to select the next existing operation without requiring agents to reconstruct hidden prioritization.
+- **FR-019**: Validation MUST act as a feedback cycle: clean results close the branch; deterministic findings route to deterministic repair; semantic findings route to the artifact owner; repaired scope returns to validation.
+- **FR-020**: Retrieval MUST act as a feedback cycle: sufficient evidence proceeds; insufficient evidence triggers focused retrieval and resumes the same capability.
+- **FR-021**: Agent-facing query, lint, and health observation surfaces MUST provide compact, stable, actionable evidence sufficient to select the next existing operation without requiring agents to reconstruct hidden prioritization.
 - **FR-022**: Maintenance guidance MUST treat health as an observation surface and MUST NOT layer a second planner over its explicit action ordering.
 - **FR-023**: Existing owner-skill routing MUST remain the deterministic domain boundary between artifact kind, owner capability, template or jobs, and validation.
 - **FR-024**: A new machine-readable owner registry MAY be proposed only after observed duplication creates a maintenance failure; this feature MUST NOT add one speculatively.
@@ -150,45 +150,45 @@ As a skill author, I want wiki-facing capabilities to expose consistent boundary
 
 ### Key Entities
 
-- **Capability node**: An existing skill or deterministic wiki operation with a defined input, owned work, observable completion condition, and possible ownership-changing handoff.
-- **Routing edge**: A direct selection or handoff from one capability owner to another based on user intent, artifact kind, prerequisite, or finding class.
-- **Guard**: An observable prerequisite or completion condition that permits traversal or closes a branch.
+- **Capability**: An existing skill or deterministic wiki operation with a defined input, owned work, observable completion condition, and possible capability handoff.
+- **Capability route**: A direct selection or capability handoff from one owner capability to another based on user intent, artifact kind, prerequisite, or finding class.
+- **Completion guard**: An observable prerequisite or completion condition that permits traversal or closes a branch.
 - **Parent operation**: The capability retaining responsibility for the user's original objective while dependencies or specialized artifacts are delegated.
-- **Dependency**: A real prerequisite artifact or state required before dependent work can be valid.
+- **Capability dependency**: A real prerequisite artifact or state required before dependent work can be valid.
 - **Context projection**: The minimum sufficient canon and operational evidence retrieved for one capability's current work.
-- **Observation**: Compact query, lint, or health evidence that reports relevant knowledge, invalid output, or the next attention target.
+- **Observation surface**: Compact query, lint, or health evidence that reports relevant knowledge, invalid output, or the next attention target.
 - **Output contract**: The combined template, owner conventions, and validation rules defining a valid artifact.
 - **Knowledge graph**: Campaign pages and their semantic relationships; distinct from the execution relationships among capabilities.
-- **Execution graph**: Ephemeral traversal among capabilities, dependencies, guards, observations, and handoffs for the current request.
+- **Execution graph**: Ephemeral traversal among capabilities, capability dependencies, completion guards, observation surfaces, and capability handoffs for the current request.
 
 ## Success Criteria *(mandatory)*
 
 ### Measurable Outcomes
 
 - **SC-001**: In route-level evaluation, 100% of representative requests reach the correct existing owner capability without an unnecessary generic routing step.
-- **SC-002**: In handoff evaluation, 100% of child capabilities return control to the parent operation and the original objective closes only after all required child contracts pass.
+- **SC-002**: In capability-handoff evaluation, 100% of child capabilities return control to the parent operation and the original objective closes only after all required child contracts pass.
 - **SC-003**: In dependency evaluation, 100% of prerequisite relationships execute in valid order, while every evaluated independent pair with disjoint write surfaces remains eligible for concurrent execution.
-- **SC-004**: In context evaluation, 100% of evaluated nodes load required owner and canon evidence, and no evaluated node loads unrelated artifact groups solely because a prior node read them.
+- **SC-004**: In context evaluation, 100% of evaluated capabilities load required owner and canon evidence, and no evaluated capability loads unrelated artifact groups solely because a prior capability read them.
 - **SC-005**: In read/write isolation evaluation, 100% of read-only requests complete without wiki mutation.
 - **SC-006**: In validation-loop evaluation, 100% of vault mutations either finish with a green applicable scope or report a specific unresolved owner-level blocker; none report success merely because prose was written.
-- **SC-007**: Every in-scope wiki-facing capability exposes all four boundary elements—Input, Work, Done, and Handoff—without losing its specialized completion requirements.
+- **SC-007**: Every in-scope wiki-facing capability exposes all four boundary elements—Input, Work, Done, and Capability Handoff—without losing its specialized completion requirements.
 - **SC-008**: Review finds zero new graph runtimes, execution databases, persistent workflow ledgers, generic orchestrator capabilities, universal state schemas, bespoke node classes, or hand-maintained global DAGs.
-- **SC-009**: A maintainer can identify the owner, required context, dependencies, completion guard, and next handoff for each canonical workflow in under two minutes using the authoritative guidance.
+- **SC-009**: A maintainer can identify the owner, required context, dependencies, completion guard, and next capability handoff for each canonical workflow in under two minutes using the authoritative guidance.
 - **SC-010**: Representative cold-context evaluations pass 100% of critical routing, dependency, read-only, and completion assertions and introduce no regression in applicable existing behavior checks.
 
 ## Assumptions
 
-- Existing skills, owner mappings, templates, wiki conventions, query/lint/health observations, and durable wiki state remain the foundation; the feature clarifies composition rather than replacing them.
+- Existing skills, owner mappings, templates, wiki conventions, query/lint/health observation surfaces, and durable wiki state remain the foundation; the feature clarifies composition rather than replacing them.
 - The four recurring workflows are descriptive canonical shapes, not a universal engine or mandatory serialized recipe.
-- Input, Work, Done, and Handoff are legibility headings or clearly equivalent concepts, not a new configuration schema.
-- A handoff occurs only when ownership changes; trivial decisions remain inside the receiving capability.
+- Input, Work, Done, and Capability Handoff are legibility headings or clearly equivalent concepts, not a new configuration schema.
+- A capability handoff occurs only when ownership changes; trivial decisions remain inside the receiving capability.
 - Existing health action ordering, lint repair behavior, and query retrieval behavior remain owned by their current specifications and implementations.
 - Campaign canon is unaffected unless implementation uncovers a separately governed campaign-content defect.
 - An accountable issue will be created or linked before implementation, as required by project governance.
 
 ## Dependencies and Authoritative Context
 
-- **context_used**: User-provided graph-engineering direction; project constitution v3.1.0; root agent context and routing rules; `CONTEXT.md`; hybrid SDD contract; active wiki CLI specification for query, lint, and health observation semantics.
+- **context_used**: User-provided graph-engineering direction; project constitution v3.1.0; root agent context and routing rules; `CONTEXT.md`; hybrid SDD contract; active wiki CLI specification for query, lint, and health observation-surface semantics.
 - **context_omitted**: Individual campaign entity pages, session content, and full bodies of unrelated capability guidance because this specification defines system behavior rather than modifying campaign canon or prescribing each capability's internal craft.
 - **Canonical owners**: Root agent context for global routing and invariants; each capability's guidance for execution; wiki agent context for semantic artifact meaning; templates and validation rules for output validity; current CLI specification for query, lint, and health behavior.
 - **External dependency**: An accountable issue before implementation.
@@ -198,7 +198,7 @@ As a skill author, I want wiki-facing capabilities to expose consistent boundary
 - **Wrong owner selected** → User Story 1 scenarios; FR-005–FR-006; SC-001.
 - **Parent objective lost after delegation** → User Story 2 scenarios; FR-007–FR-008; SC-002.
 - **Dependency executed out of order or unsafe parallel write** → User Story 2 scenarios; FR-009–FR-011; SC-003.
-- **Broad inherited context contaminates a node** → User Story 3 scenarios; FR-012–FR-013; SC-004.
+- **Broad inherited context contaminates a capability** → User Story 3 scenarios; FR-012–FR-013; SC-004.
 - **Read operation mutates the wiki** → User Story 1 scenario 3; FR-017; SC-005.
 - **Prose treated as complete before contracts pass** → User Story 4 scenarios; FR-018–FR-020; SC-006.
 - **Boundary normalization erases specialized craft** → User Story 5 scenarios; FR-003–FR-004; SC-007.
