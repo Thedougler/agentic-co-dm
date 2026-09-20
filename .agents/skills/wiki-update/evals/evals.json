@@ -1,5 +1,26 @@
 {
-  "skill_name": "wiki-update",
+  "trajectory_records": [
+    {
+      "case_id": "C10",
+      "pair_id": "C10-baseline",
+      "category": "recovery",
+      "phase": "baseline",
+      "outcome": "not-run",
+      "observations": [],
+      "actions": [],
+      "turns": 0,
+      "tool_calls": 0,
+      "retrieval_attempts": 0,
+      "duplicate_equivalent_actions": 0,
+      "capability_handoffs": [],
+      "validation_passes": [],
+      "trajectory_tokens": null,
+      "tokenizer": "cl100k_base",
+      "termination_reason": "Cold executor unavailable in this session",
+      "hard_gates": {"captured": false, "terminal_blocker": null},
+      "semantic_review": null
+    }
+  ],
   "evals": [
     {
       "id": 1,
@@ -148,6 +169,17 @@
           "text": "Returns source citations, destination owner, changed pages, and validation evidence while excluding unrelated campaign surfaces",
           "type": "content"
         }
+      ]
+    },
+    {
+      "id": "delta-noop-and-recovery-convergence",
+      "prompt": "Run wiki-update for a project with no meaningful delta, then for a changed delta with one transient diagnostic and one terminal diagnostic. Stop the no-op without writes; use the documented fallback once; block the unchanged terminal failure; finalize a changed run exactly once.",
+      "expected_output": "No-op termination without reprocessing, bounded recovery or a specific blocker, and exactly-once tracking/finalization for meaningful changes.",
+      "assertions": [
+        {"text": "Re-observes the project delta and terminates an unchanged no-op without writes or QMD refresh.", "type": "guardrail"},
+        {"text": "Uses a documented fallback only when diagnostic evidence changes, then re-observes the same boundary.", "type": "process"},
+        {"text": "Does not repeat an unchanged terminal recovery and reports a specific blocker.", "type": "quality"},
+        {"text": "Finalizes manifest/index/log/hot/QMD once after all changed work closes.", "type": "structure"}
       ]
     }
   ]

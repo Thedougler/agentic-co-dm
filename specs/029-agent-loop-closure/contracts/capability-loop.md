@@ -22,6 +22,19 @@ For every incomplete owner boundary:
 
 Outer harness recursion, request, runtime, isolation, continuation, compaction, and memory limits remain safeguards, not normal termination conditions.
 
+## Transition examples
+
+- **Continue:** the owner observes one missing required section, writes that
+  bounded section, re-observes the same page, and the next observation shows
+  the section present with scoped validation evidence.
+- **Complete:** the re-observation satisfies the existing owner template and
+  validation guard; the parent resumes only from that evidence.
+- **Change path:** a registered fixer is unsupported and leaves the same
+  finding; the owner rereads the finding and takes a different documented
+  repair path.
+- **Block:** the alternative path also leaves the same finding and no
+  sanctioned path remains; the owner returns the full specific-blocker fields.
+
 ## Completion contract
 
 A successful branch closes only when its existing owner completion guard passes. Prose existence, a child assertion, or a reduced finding count without the required guard is insufficient.

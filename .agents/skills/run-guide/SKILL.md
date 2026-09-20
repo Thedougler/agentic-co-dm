@@ -38,6 +38,11 @@ current pass's job before it is done.
   → the pass-4 ready check. A missing owner page or incomplete result returns
   the path, section, and blocker instead of advancing.
 
+Each pass re-observes its own completion evidence before the next pass begins.
+An unchanged incomplete pass takes a materially different sanctioned action or
+returns a specific blocker naming the missing owner, path, section, evidence,
+and parent session objective. Never advance a later pass from an assertion.
+
 ### Pre-pass: Ground and Diagnose
 
 **Load:** `.agents/skills/qmd` plus

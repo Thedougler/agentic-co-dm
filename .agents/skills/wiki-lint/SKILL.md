@@ -17,15 +17,16 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 Accept a whole-vault or page/prefix scope plus the user's repair or report
 intent. Resolve the existing CLI scope and owner contract before editing; do
-not narrow a complete lint result to only hard findings.
+not narrow a complete lint result to only hard findings. Preserve the resolved
+scope through every observation, repair, and rerun.
 
 ### Work
 
 Run `wiki lint` for the selected scope and expose every configured finding.
 Run the existing registered deterministic fixer through the current CLI
-contract once (the full-vault sweep remains `wiki lint fix` with no path), then
-repair remaining semantic findings through the named artifact owner. Keep one
-active writer per page, and rerun the affected scope after each owner return.
+contract once for that same resolved scope, then repair remaining semantic
+findings through the named artifact owner. Keep one active writer per page,
+and rerun the affected scope after each owner return.
 
 ### Done
 
@@ -33,6 +34,11 @@ Close only when the affected scope is clean on a fresh lint. If a finding
 cannot close, report a specific blocker with its path, rule, evidence, and
 owner; prose completion or a structural-only edit is not success. Preserve the
 existing full-finding and fixer CLI contracts.
+
+For each iteration, compare the same-scope observation before and after the
+action. A skipped or unsupported deterministic repair that leaves its finding
+unchanged is not retried. An unchanged semantic finding is reread with its
+owner contract, then receives a different sanctioned action or a blocker.
 
 ### Capability Handoff
 
@@ -44,6 +50,10 @@ incomplete return remains a blocker. `wiki-lint` integrates it once, reruns
 lint on the affected scope, and resumes the same worklist only from that
 result. Use `wiki-dedup`, `cross-linker`, or `tag-taxonomy` only for their
 named findings.
+
+**Progress guard:** Continue only when the selected worklist, finding evidence,
+next target, or changed files differ, or when the owner completion guard passes.
+
 
 
 ## Method

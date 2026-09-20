@@ -57,10 +57,22 @@ Default `wiki lint` returns aggregate counts and the complete finding dump. `--f
 | `skipped` | Skipped fix[] | yes | Eligible-scope findings not changed, with stable reason (`unsupported`, `unsafe`, `conflict`, or `precondition`) |
 | `remaining` | Worklist summary | yes | Post-fix findings; detailed file groups require `--full` if supported |
 | `changed_files` | string[] | yes | Sorted vault-relative files changed by this run |
+| `progress` | Progress delta | yes | Same-scope pre/post observation |
 | `cache` | `{hits, misses, vale_skipped}` | yes | Post-fix lint cache accounting |
 | `timing` | Timing | yes | `command` is `lint fix` |
 
-Fixers are selected from an explicit registry keyed by finding rule/action. A fixer MUST validate its precondition, use the existing hash-preconditioned atomic mutation seam, and be a no-op when the desired state already holds. Findings without a registered eligible fixer remain in `remaining`.
+### Progress delta
+
+| Field | Type | Notes |
+|---|---|---|
+| `before_total` | non-negative integer | Complete pre-fix finding total for the resolved scope |
+| `after_total` | non-negative integer | Complete post-fix finding total for the same scope |
+| `resolved` | array | Stable finding identities present before and absent after |
+| `changed_files` | string[] | Vault-relative files changed by the atomic repair |
+| `next_changed` | boolean | Compact next target changed |
+| `state_changed` | boolean | Findings, next target, or files changed |
+
+The delta augments `applied`, `skipped`, `remaining`, and health action ordering; it does not replace them.
 
 ### Applied fix
 

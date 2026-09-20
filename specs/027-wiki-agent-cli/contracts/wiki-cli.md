@@ -45,13 +45,15 @@ No nested per-rule finding maps. `unique` values are already-deduped targets. Li
 
 ### Lint fix
 
-`wiki lint fix [path ...]` uses the same path scope and fail-closed resolution as lint. Zero paths select the whole live wiki; multiple files/prefixes form their union.
+`wiki lint fix [path ...]` uses the same path scope and fail-closed resolution as lint. Zero paths select the whole live wiki; multiple files/prefixes form their union. The resolved scope is retained for pre-fix lint, repair, and post-fix lint.
 
 The command selects only explicitly registered fixers whose preconditions are deterministic and whose result is idempotent. It applies eligible mutations through the existing atomic, hash-preconditioned seam, then reruns lint over the same resolved scope.
 
-Required keys: `status`, `scope`, `applied`, `skipped`, `remaining`, `changed_files`, `cache`, `timing`.
+Required keys: `status`, `scope`, `applied`, `skipped`, `remaining`, `changed_files`, `progress`, `cache`, `timing`.
 
-`applied` contains `{rule, action, target, status, changed_files}` records where `status` is `applied` or `no_op`. `skipped` contains `{rule, action, target, reason}` records. `remaining` is the post-fix complete lint result. Unsupported, unsafe, conflicting, or failed-precondition findings are skipped and remain available for manual repair.
+`progress` is `{before_total, after_total, resolved, changed_files, next_changed, state_changed}`. Totals are non-negative integers from complete same-scope worklists; `resolved` contains stable finding identities present before and absent after; `changed_files` is sorted vault-relative paths; `next_changed` and `state_changed` are booleans. `state_changed` is true when findings, next target, or files changed.
+
+`applied` contains `{rule, action, target, status, changed_files}` records where `status` is `applied` or `no_op`. `skipped` contains `{rule, action, target, reason}` records. `remaining` is the post-fix complete lint result. Unsupported, unsafe, conflicting, or failed-precondition findings are skipped and remain available for manual repair. An unchanged skipped or semantic finding is not retried against the same observation.
 
 Exit code follows the post-fix result: `0` when clean, `1` when findings remain, `2` for bad invocation, unknown scope, or an unrecoverable precondition/error. A second identical run makes no further changes.
 

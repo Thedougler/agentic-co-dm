@@ -539,7 +539,44 @@ def test_lint_fix_deletes_registered_redirect_stub_and_is_idempotent(tmp_path: P
     assert data["changed_files"] == ["entities/npc/legacy.md"]
     assert any(item["status"] == "applied" for item in data["applied"])
     assert not stub.exists()
-
     second = run_cli(tmp_path, "lint", "fix", "entities/npc/legacy.md")
     assert second.returncode == 2
     assert payload(second)["status"] == "error"
+
+def test_lint_fix_reports_same_scope_progress_delta(tmp_path: Path):
+    target = tmp_path / "entities/npc/target.md"
+    other = tmp_path / "entities/npc/other.md"
+    target.parent.mkdir(parents=True, exist_ok=True)
+    redirect = (
+        "---\n"
+        "title: Target\n"
+        "type: npc\n"
+        "redirects_to: entities/npc/current.md\n"
+        "---\n\n"
+        "# Target\n\nUse the canonical page.\n"
+    )
+    target.write_text(redirect, encoding="utf-8")
+    other.write_text(redirect.replace("Target", "Other"), encoding="utf-8")
+
+    result = payload(run_cli(tmp_path, "lint", "fix", "entities/npc/target.md"))
+    progress = result["progress"]
+
+    assert result["scope"]["paths"] == ["entities/npc/target.md"]
+    assert progress["before_total"] >= progress["after_total"]
+    assert progress["changed_files"] == ["entities/npc/target.md"]
+    assert progress["state_changed"] is True
+    assert isinstance(progress["resolved"], list)
+    assert isinstance(progress["next_changed"], bool)
+    assert other.exists()
+
+
+
+def test_lint_fix_uses_contract_skip_reason_for_unsupported_fixer(tmp_path: Path):
+    target = tmp_path / "entities/npc/Bob.md"
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text("---\ntitle: Bob\n---\n\n# Bob\n", encoding="utf-8")
+
+    result = payload(run_cli(tmp_path, "lint", "fix", "entities/npc/Bob.md"))
+    reasons = {item["reason"] for item in result["skipped"]}
+
+    assert reasons <= {"unsupported", "unsafe", "conflict", "precondition"}

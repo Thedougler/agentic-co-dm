@@ -34,7 +34,6 @@ policies:
     consumers:
       - AGENTS.md
       - wiki/AGENTS.md
-      - .agents/skills/
     reference: "Own bounded Input, Work, Done, and Capability Handoff; preserve local craft and completion evidence."
   read_write_isolation:
     owner: AGENTS.md

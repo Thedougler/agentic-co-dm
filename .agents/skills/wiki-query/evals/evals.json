@@ -1,10 +1,51 @@
 {
-  "skill_name": "wiki-query",
+  "trajectory_records": [
+    {
+      "case_id": "C01",
+      "pair_id": "C01-baseline",
+      "category": "query",
+      "phase": "baseline",
+      "outcome": "not-run",
+      "observations": [],
+      "actions": [],
+      "turns": 0,
+      "tool_calls": 0,
+      "retrieval_attempts": 0,
+      "duplicate_equivalent_actions": 0,
+      "capability_handoffs": [],
+      "validation_passes": [],
+      "trajectory_tokens": null,
+      "tokenizer": "cl100k_base",
+      "termination_reason": "Cold executor unavailable in this session",
+      "hard_gates": {"captured": false, "read_isolation": null},
+      "semantic_review": null
+    },
+    {
+      "case_id": "C02",
+      "pair_id": "C02-baseline",
+      "category": "query",
+      "phase": "baseline",
+      "outcome": "not-run",
+      "observations": [],
+      "actions": [],
+      "turns": 0,
+      "tool_calls": 0,
+      "retrieval_attempts": 0,
+      "duplicate_equivalent_actions": 0,
+      "capability_handoffs": [],
+      "validation_passes": [],
+      "trajectory_tokens": null,
+      "tokenizer": "cl100k_base",
+      "termination_reason": "Cold executor unavailable in this session",
+      "hard_gates": {"captured": false, "specific_blocker": null},
+      "semantic_review": null
+    }
+  ],
   "evals": [
     {
       "id": 1,
       "prompt": "What do I know about Mercatura? You may read lint-clean campaign pages such as wiki/entities/place/mercatura.md and the related live page wiki/entities/place/calven-and-calveno.md — answer from the wiki only.",
-      "expected_output": "READ-ONLY synthesized answer with [[wikilink]] citations, Pages consulted, Gaps, and Retrieval transparency counts. Sole write = log.md QUERY append.",
+      "expected_output": "READ-ONLY synthesized answer with [[wikilink]] citations. No wiki files or logs are mutated. Include Pages consulted, Gaps, and Retrieval transparency counts.",
       "assertions": [
         {
           "text": "Runs obsidian-wiki graph-query (or Retrieval Primitives fallback: hot.md / capped qmd/rg / frontmatter grep) before full-page reads",
@@ -19,7 +60,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Does not modify index.md, hot.md, _insights.md, or .manifest.json — sole write is a log.md QUERY append",
+          "text": "Does not modify index.md, hot.md, _insights.md, .manifest.json, or log.md",
           "type": "guardrail"
         },
         {
@@ -50,7 +91,7 @@
           "type": "structure"
         },
         {
-          "text": "No wiki content files modified except optional log.md QUERY append with mode=index_only",
+          "text": "Does not modify wiki content files or log.md",
           "type": "guardrail"
         }
       ]
@@ -88,7 +129,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Logs the query with mode=filtered in the log.md QUERY entry",
+          "text": "Reports filtered-mode retrieval in the answer without writing a log.md QUERY entry",
           "type": "structure"
         },
         {
@@ -190,14 +231,14 @@
       ]
     },
     {
-      "id": "sufficient-evidence-stop-no-parent-context",
-      "prompt": "A parent session-planning pass supplied broad excerpts from unrelated factions and places. What current pressure is established for Mercatura? Start with wiki/entities/place/mercatura.md and the minimum query projection; use focused same-owner retrieval only if that page cannot support the answer. Do not inherit the supplied excerpts, broad-crawl the vault, or mutate canonical pages.",
-      "expected_output": "A cited, bounded answer that uses sufficient Mercatura evidence, explicitly reports gaps, resumes wiki-query after any focused retrieval, and stops without inherited parent context.",
+      "id": "owner-relative-retrieval-convergence",
+      "prompt": "Answer what current pressure is established for wiki/entities/place/mercatura.md. Start with that owner, deepen only through an unexplored supporting, conflicting, or gap path, and stop when sufficient. If the candidate set remains unchanged, report a specific retrieval blocker rather than repeating the same read.",
+      "expected_output": "A cited answer with retrieval counts, sufficient-evidence stop or a blocker naming the owner, boundary, surviving evidence, attempted paths, and reason; no canonical mutation.",
       "assertions": [
-        {"text": "Projects only the resolved vault, question/mode, ranked candidates, and evidence needed for the Mercatura answer.", "type": "scope"},
-        {"text": "Deliberately omits unrelated parent-planning excerpts, unrelated page groups, and prior capability artifacts.", "type": "guardrail"},
-        {"text": "Starts with Mercatura's cheapest sufficient evidence, deepens through wiki-query's focused section/page retrieval only when needed, then stops and synthesizes.", "type": "process"},
-        {"text": "Cites supported claims, marks gaps or inference, reports retrieval counts, and performs no canonical mutation.", "type": "quality"}
+        {"text": "Begins from a fresh owner-relative Mercatura observation and re-observes the same boundary after focused retrieval.", "type": "process"},
+        {"text": "Continues only when supporting, conflicting, or gap evidence changes.", "type": "quality"},
+        {"text": "Does not repeat equivalent retrieval against an unchanged candidate set and reports the blocker fields when blocked.", "type": "guardrail"},
+        {"text": "Leaves pages, index, hot cache, manifest, and log unchanged.", "type": "guardrail"}
       ]
     }
   ]

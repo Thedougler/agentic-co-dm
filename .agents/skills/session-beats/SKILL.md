@@ -38,15 +38,19 @@ parent objective, session state, slot type, planted threads, trigger, and
 requested output. Require return evidence naming the child beat artifact/slot,
 its changed state, and completion result; recompute the parent chart without
 letting the child re-plan the session. Resume the parent chart only after that
-evidence is returned and the named owner contract is satisfied; if the child
-cannot satisfy it, keep the slot unresolved and report the blocker instead of
-advancing dependent beats.
+evidence changes a dependency, artifact state, or completion evidence and the
+named owner contract is satisfied. If it does not, keep the slot unresolved
+and report the blocker instead of advancing dependent beats.
 
 ### Done
 
 Use the existing session-plan and composition completion checks below. Completion
 is observable when the session-plan artifact, preserved objective, linked typed
 beats, and each child return trigger/changed-state evidence are reported.
+
+Every child return is re-observed at the parent seam. An unchanged incomplete
+return takes a different sanctioned child path or becomes a blocker naming the
+slot, evidence, attempted paths, reason, and parent objective.
 
 ## Filed session plan
 

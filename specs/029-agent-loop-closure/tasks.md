@@ -22,8 +22,8 @@ description: "Dependency-ordered implementation tasks for agent loop closure"
 
 **Purpose**: Establish the required issue surface and freeze comparable pre-change evidence.
 
-- [ ] T001 Link or create the accountable implementation issue and record its URL in `specs/029-agent-loop-closure/plan.md`
-- [ ] T002 Define at least ten comparable baseline/replay case IDs, categories, success/stall variants, and weakest-sufficient executor assignments in `specs/029-agent-loop-closure/quickstart.md`
+- [X] T001 Link or create the accountable implementation issue and record its URL in `specs/029-agent-loop-closure/plan.md`
+- [X] T002 Define at least ten comparable baseline/replay case IDs, categories, success/stall variants, and weakest-sufficient executor assignments in `specs/029-agent-loop-closure/quickstart.md`
 - [ ] T003 Capture pre-change cold trajectory records for the cases defined by T002 in the existing named-owner `.agents/skills/*/evals/evals.json` files, recording outcome, observations, actions, turns, tool calls, retrieval attempts, duplicate equivalent actions, handoffs, validation passes, tokenizer-identified trajectory tokens, termination reason, hard gates, and semantic review
 
 ---
@@ -34,10 +34,10 @@ description: "Dependency-ordered implementation tasks for agent loop closure"
 
 **⚠️ CRITICAL**: T001–T003 and this phase block all user story implementation.
 
-- [ ] T004 Add the canonical route → observe → act → re-observe → continue/change-path/complete/block invariant, owner-relative progress rules, and specific-blocker fields to `docs/agents/hybrid-sdd.md`
-- [ ] T005 Add only the compact always-loaded loop invariant and canonical pointer to `AGENTS.md`, preserving the full procedure in `docs/agents/hybrid-sdd.md`
-- [ ] T006 Reconcile the wiki semantic pointer with the canonical loop authority without duplicating common procedure in `wiki/AGENTS.md`
-- [ ] T007 Update durable Capability Iteration and Progress Evidence terminology only where required, without changing the existing Execution Graph definition, in `CONTEXT.md`
+- [X] T004 Add the canonical route → observe → act → re-observe → continue/change-path/complete/block invariant, owner-relative progress rules, and specific-blocker fields to `docs/agents/hybrid-sdd.md`
+- [X] T005 Add only the compact always-loaded loop invariant and canonical pointer to `AGENTS.md`, preserving the full procedure in `docs/agents/hybrid-sdd.md`
+- [X] T006 Reconcile the wiki semantic pointer with the canonical loop authority without duplicating common procedure in `wiki/AGENTS.md`
+- [X] T007 Update durable Capability Iteration and Progress Evidence terminology only where required, without changing the existing Execution Graph definition, in `CONTEXT.md`
 
 **Checkpoint**: Common authority is stable; story-specific slices may begin in dependency order.
 
@@ -51,12 +51,12 @@ description: "Dependency-ordered implementation tasks for agent loop closure"
 
 ### Behavioral Tests for User Story 1
 
-- [ ] T008 [P] [US1] Add cold success, premature-completion, equivalent-action stall, and specific-blocker assertions to the representative owner `.agents/skills/*/evals/evals.json` files named by the T002 case matrix
-- [ ] T009 [P] [US1] Add contract examples for current observation, owner-sanctioned action, same-boundary re-observation, meaningful progress, completion, change-path, and blocking to `specs/029-agent-loop-closure/contracts/capability-loop.md`
+- [X] T008 [P] [US1] Add cold success, premature-completion, equivalent-action stall, and specific-blocker assertions to the representative owner `.agents/skills/*/evals/evals.json` files named by the T002 case matrix
+- [X] T009 [P] [US1] Add contract examples for current observation, owner-sanctioned action, same-boundary re-observation, meaningful progress, completion, change-path, and blocking to `specs/029-agent-loop-closure/contracts/capability-loop.md`
 
 ### Implementation for User Story 1
 
-- [ ] T010 [US1] Reconcile T008 failures by tightening the common iteration, completion, equivalent-action, and blocker rules in `docs/agents/hybrid-sdd.md`
+- [X] T010 [US1] Reconcile T008 failures by tightening the common iteration, completion, equivalent-action, and blocker rules in `docs/agents/hybrid-sdd.md`
 - [ ] T011 [US1] Run the T008 cold cases with the weakest sufficient executor and record passing outcome plus owner, boundary, surviving observation, attempted paths, reason, and parent effect for every blocker in the same `.agents/skills/*/evals/evals.json` records
 
 **Checkpoint**: The common loop independently converges or blocks with evidence.
@@ -71,15 +71,15 @@ description: "Dependency-ordered implementation tasks for agent loop closure"
 
 ### Behavioral Tests for User Story 2
 
-- [ ] T012 [P] [US2] Add read-isolation and selected-scope coherence cases to `.agents/skills/wiki-query/evals/evals.json` and `.agents/skills/wiki-lint/evals/evals.json`
-- [ ] T013 [P] [US2] Add current faction-path and immediate user-said place-canon cases to `.agents/skills/faction-design/evals/evals.json` and `.agents/skills/place-design/evals/evals.json`
+- [X] T012 [P] [US2] Add read-isolation and selected-scope coherence cases to `.agents/skills/wiki-query/evals/evals.json` and `.agents/skills/wiki-lint/evals/evals.json`
+- [X] T013 [P] [US2] Add current faction-path and immediate user-said place-canon cases to `.agents/skills/faction-design/evals/evals.json` and `.agents/skills/place-design/evals/evals.json`
 
 ### Implementation for User Story 2
 
-- [ ] T014 [P] [US2] Remove canonical `log.md` mutation from read-only completion and preserve QMD-first synthesis behavior in `.agents/skills/wiki-query/SKILL.md`
-- [ ] T015 [P] [US2] Preserve the selected path through lint observation, deterministic fix, semantic repair, and re-observation in `.agents/skills/wiki-lint/SKILL.md`
-- [ ] T016 [P] [US2] Replace the legacy faction completion path with the canonical `wiki/entities/faction/` owner path in `.agents/skills/faction-design/SKILL.md`
-- [ ] T017 [P] [US2] Remove the separate acceptance wait for user-said canon while retaining owner completion and filing guards in `.agents/skills/place-design/SKILL.md`
+- [X] T014 [P] [US2] Remove canonical `log.md` mutation from read-only completion and preserve QMD-first synthesis behavior in `.agents/skills/wiki-query/SKILL.md`
+- [X] T015 [P] [US2] Preserve the selected path through lint observation, deterministic fix, semantic repair, and re-observation in `.agents/skills/wiki-lint/SKILL.md`
+- [X] T016 [P] [US2] Replace the legacy faction completion path with the canonical `wiki/entities/faction/` owner path in `.agents/skills/faction-design/SKILL.md`
+- [X] T017 [P] [US2] Remove the separate acceptance wait for user-said canon while retaining owner completion and filing guards in `.agents/skills/place-design/SKILL.md`
 - [ ] T018 [US2] Run quickstart V-001 and record the four passing coherence results in `specs/029-agent-loop-closure/quickstart.md`
 
 **Checkpoint**: Loop guards target current authority and requested scope.
@@ -94,16 +94,16 @@ description: "Dependency-ordered implementation tasks for agent loop closure"
 
 ### Tests for User Story 3
 
-- [ ] T019 [US3] Add failing public-seam tests for selected-scope retention and `progress.before_total`, `after_total`, `resolved`, `changed_files`, `next_changed`, and `state_changed` in `tests/test_wiki_cli.py`
-- [ ] T020 [P] [US3] Add failing cold cases for unsupported deterministic repair, unchanged semantic repair, and complete blocker fields to `.agents/skills/wiki-lint/evals/evals.json`
+- [X] T019 [US3] Add failing public-seam tests for selected-scope retention and `progress.before_total`, `after_total`, `resolved`, `changed_files`, `next_changed`, and `state_changed` in `tests/test_wiki_cli.py`
+- [X] T020 [P] [US3] Add failing cold cases for unsupported deterministic repair, unchanged semantic repair, and complete blocker fields to `.agents/skills/wiki-lint/evals/evals.json`
 
 ### Implementation for User Story 3
 
-- [ ] T021 [US3] Compose the progress delta from existing pre-fix and post-fix same-scope worklists while preserving existing result fields in `scripts/wiki`
-- [ ] T022 [US3] Update the public lint-fix progress and scope contract in `specs/027-wiki-agent-cli/contracts/wiki-cli.md`
-- [ ] T023 [P] [US3] Add the progress result shape to `specs/027-wiki-agent-cli/data-model.md` with these exact constraints: `before_total` and `after_total` are non-negative integers; `resolved` is an array; `changed_files` is an array of vault-relative paths; `next_changed` and `state_changed` are booleans
-- [ ] T024 [US3] Add no-repeat handling for unchanged skipped/unsupported fixes and reread/change-path/block handling for identical semantic findings in `.agents/skills/wiki-lint/SKILL.md`
-- [ ] T025 [US3] Run focused `tests/test_wiki_cli.py` cases and quickstart V-004/V-005 against a disposable configured vault, then record the observed results in `specs/029-agent-loop-closure/quickstart.md`
+- [X] T021 [US3] Compose the progress delta from existing pre-fix and post-fix same-scope worklists while preserving existing result fields in `scripts/wiki`
+- [X] T022 [US3] Update the public lint-fix progress and scope contract in `specs/027-wiki-agent-cli/contracts/wiki-cli.md`
+- [X] T023 [P] [US3] Add the progress result shape to `specs/027-wiki-agent-cli/data-model.md` with these exact constraints: `before_total` and `after_total` are non-negative integers; `resolved` is an array; `changed_files` is an array of vault-relative paths; `next_changed` and `state_changed` are booleans
+- [X] T024 [US3] Add no-repeat handling for unchanged skipped/unsupported fixes and reread/change-path/block handling for identical semantic findings in `.agents/skills/wiki-lint/SKILL.md`
+- [X] T025 [US3] Run focused `tests/test_wiki_cli.py` cases and quickstart V-004/V-005 against a disposable configured vault, then record the observed results in `specs/029-agent-loop-closure/quickstart.md`
 
 **Checkpoint**: Deterministic maintenance exposes progress and terminates without spinning.
 
@@ -117,13 +117,13 @@ description: "Dependency-ordered implementation tasks for agent loop closure"
 
 ### Behavioral Tests for User Story 4
 
-- [ ] T026 [P] [US4] Add sufficient-first-hit, focused-deepening, unchanged-candidate, and canonical-read-isolation cases to `.agents/skills/wiki-query/evals/evals.json`
-- [ ] T027 [P] [US4] Add bounded-pack, documented-fallback, unchanged-terminal-retrieval, and canonical-read-isolation cases to `.agents/skills/wiki-context-pack/evals/evals.json`
+- [X] T026 [P] [US4] Add sufficient-first-hit, focused-deepening, unchanged-candidate, and canonical-read-isolation cases to `.agents/skills/wiki-query/evals/evals.json`
+- [X] T027 [P] [US4] Add bounded-pack, documented-fallback, unchanged-terminal-retrieval, and canonical-read-isolation cases to `.agents/skills/wiki-context-pack/evals/evals.json`
 
 ### Implementation for User Story 4
 
-- [ ] T028 [P] [US4] Add evidence-sufficiency, unexplored-path, unchanged-candidate, and evidenced-gap termination rules to `.agents/skills/wiki-query/SKILL.md`
-- [ ] T029 [P] [US4] Add evidence-budget completion, documented fallback, unchanged-candidate, and specific-blocker rules to `.agents/skills/wiki-context-pack/SKILL.md`
+- [X] T028 [P] [US4] Add evidence-sufficiency, unexplored-path, unchanged-candidate, and evidenced-gap termination rules to `.agents/skills/wiki-query/SKILL.md`
+- [X] T029 [P] [US4] Add evidence-budget completion, documented fallback, unchanged-candidate, and specific-blocker rules to `.agents/skills/wiki-context-pack/SKILL.md`
 - [ ] T030 [US4] Run quickstart V-006/V-007 and record passing retrieval convergence and read-isolation evidence in `specs/029-agent-loop-closure/quickstart.md`
 
 **Checkpoint**: Read owners gather enough evidence and stop without mutation or repeated retrieval.
@@ -138,15 +138,15 @@ description: "Dependency-ordered implementation tasks for agent loop closure"
 
 ### Behavioral Tests for User Story 5
 
-- [ ] T031 [P] [US5] Add complete/incomplete typed-beat return, objective preservation, and context-reset cases to `.agents/skills/session-beats/evals/evals.json`
-- [ ] T032 [P] [US5] Add bounded faction/narration return, blocked child, and same-seam stall cases to `.agents/skills/place-design/evals/evals.json`
-- [ ] T033 [P] [US5] Add four-pass completion, missing owner/path/section, and later-pass blocking cases to `.agents/skills/run-guide/evals/evals.json`
+- [X] T031 [P] [US5] Add complete/incomplete typed-beat return, objective preservation, and context-reset cases to `.agents/skills/session-beats/evals/evals.json`
+- [X] T032 [P] [US5] Add bounded faction/narration return, blocked child, and same-seam stall cases to `.agents/skills/place-design/evals/evals.json`
+- [X] T033 [P] [US5] Add four-pass completion, missing owner/path/section, and later-pass blocking cases to `.agents/skills/run-guide/evals/evals.json`
 
 ### Implementation for User Story 5
 
-- [ ] T034 [P] [US5] Require typed-beat child evidence to change a dependency, artifact state, or completion evidence before parent resumption in `.agents/skills/session-beats/SKILL.md`
-- [ ] T035 [P] [US5] Require bounded child evidence, preserve the place objective, and block unchanged seam re-entry in `.agents/skills/place-design/SKILL.md`
-- [ ] T036 [P] [US5] Require each guide pass to satisfy its completion evidence before the next pass and stop missing-owner/path/section cases precisely in `.agents/skills/run-guide/SKILL.md`
+- [X] T034 [P] [US5] Require typed-beat child evidence to change a dependency, artifact state, or completion evidence before parent resumption in `.agents/skills/session-beats/SKILL.md`
+- [X] T035 [P] [US5] Require bounded child evidence, preserve the place objective, and block unchanged seam re-entry in `.agents/skills/place-design/SKILL.md`
+- [X] T036 [P] [US5] Require each guide pass to satisfy its completion evidence before the next pass and stop missing-owner/path/section cases precisely in `.agents/skills/run-guide/SKILL.md`
 - [ ] T037 [US5] Run quickstart V-010/V-011/V-012 and record passing parent-resumption, dependency, context-reset, and blocker evidence in `specs/029-agent-loop-closure/quickstart.md`
 
 **Checkpoint**: Composed parents retain objectives and advance only on complete child evidence.
@@ -161,15 +161,15 @@ description: "Dependency-ordered implementation tasks for agent loop closure"
 
 ### Behavioral Tests for User Story 6
 
-- [ ] T038 [P] [US6] Add multi-child completion, incomplete-child blocking, and exactly-once finalization cases to `.agents/skills/wiki-ingest/evals/evals.json`
-- [ ] T039 [P] [US6] Add full/quick mode progress, validation, and exactly-once finalization cases to `.agents/skills/wiki-capture/evals/evals.json`
-- [ ] T040 [P] [US6] Add changed-delta, no-op termination, transient fallback, and terminal-blocker cases to `.agents/skills/wiki-update/evals/evals.json`
+- [X] T038 [P] [US6] Add multi-child completion, incomplete-child blocking, and exactly-once finalization cases to `.agents/skills/wiki-ingest/evals/evals.json`
+- [X] T039 [P] [US6] Add full/quick mode progress, validation, and exactly-once finalization cases to `.agents/skills/wiki-capture/evals/evals.json`
+- [X] T040 [P] [US6] Add changed-delta, no-op termination, transient fallback, and terminal-blocker cases to `.agents/skills/wiki-update/evals/evals.json`
 
 ### Implementation for User Story 6
 
-- [ ] T041 [P] [US6] Make source/destination progress and parent-owned exactly-once manifest/index/log/hot/QMD finalization explicit in `.agents/skills/wiki-ingest/SKILL.md`
-- [ ] T042 [P] [US6] Make mode-relative progress and exactly-once tracking/finalization explicit without changing quick-capture ownership in `.agents/skills/wiki-capture/SKILL.md`
-- [ ] T043 [P] [US6] Make delta/no-op termination, documented recovery, and exactly-once finalization explicit in `.agents/skills/wiki-update/SKILL.md`
+- [X] T041 [P] [US6] Make source/destination progress and parent-owned exactly-once manifest/index/log/hot/QMD finalization explicit in `.agents/skills/wiki-ingest/SKILL.md`
+- [X] T042 [P] [US6] Make mode-relative progress and exactly-once tracking/finalization explicit without changing quick-capture ownership in `.agents/skills/wiki-capture/SKILL.md`
+- [X] T043 [P] [US6] Make delta/no-op termination, documented recovery, and exactly-once finalization explicit in `.agents/skills/wiki-update/SKILL.md`
 - [ ] T044 [US6] Run quickstart V-008/V-009/V-013 and record bounded progress, incomplete-child blocking, exactly-once finalization, and tool-recovery evidence in `specs/029-agent-loop-closure/quickstart.md`
 
 **Checkpoint**: Write parents account for every bounded destination and finalize once.
@@ -184,13 +184,10 @@ description: "Dependency-ordered implementation tasks for agent loop closure"
 
 ### Behavioral Tests for User Story 7
 
-- [ ] T045 [US7] Add paired grading assertions for outcome, invariant compliance, alternative valid strategies, hard gates, and semantic non-inferiority to `.agents/skills/skill-creator/evals/evals.json`
-
-### Implementation for User Story 7
-
+- [X] T045 [US7] Add paired grading assertions for outcome, invariant compliance, alternative valid strategies, hard gates, and semantic non-inferiority to `.agents/skills/skill-creator/evals/evals.json`
 - [ ] T046 [US7] Replay the T002 case matrix with the weakest sufficient executor and store comparable post-change trajectory evidence beside each baseline in the existing named-owner `.agents/skills/*/evals/evals.json` files
 - [ ] T047 [US7] Perform blind paired fixed-rubric review of playability, specificity, continuity, player agency, and DM usefulness and record results in the matching `.agents/skills/*/evals/evals.json` records
-- [ ] T048 [US7] Count trajectory tokens with `scripts/token-count.py`, record tokenizer/model compatibility, and record either a qualified five-percent median improvement claim or explicitly no token-improvement claim in `specs/029-agent-loop-closure/quickstart.md`
+- [X] T048 [US7] Count trajectory tokens with `scripts/token-count.py`, record tokenizer/model compatibility, and record either a qualified five-percent median improvement claim or explicitly no token-improvement claim in `specs/029-agent-loop-closure/quickstart.md`
 - [ ] T049 [US7] Record promotion results for at least ten pairs, including zero duplicate equivalent actions, lost objectives, duplicate finalizations, read mutations, and unspecific intentional stalls, in `specs/029-agent-loop-closure/quickstart.md`
 
 **Checkpoint**: Promotion is backed by comparable trajectory and semantic-quality evidence.
@@ -201,11 +198,11 @@ description: "Dependency-ordered implementation tasks for agent loop closure"
 
 **Purpose**: Verify compatibility, remove temporary evidence, and confirm the implementation stayed inside scope.
 
-- [ ] T050 Run all focused `tests/test_wiki_cli.py` and any changed owner eval validation commands, recording command outcomes in `specs/029-agent-loop-closure/quickstart.md`
-- [ ] T051 [P] Run `specify integration status --json` and record the `ok` default-OMP four-integration result in `specs/029-agent-loop-closure/quickstart.md`
-- [ ] T052 [P] Run `scripts/check-omp-baseline.sh` and record the exit result in `specs/029-agent-loop-closure/quickstart.md`
-- [ ] T053 Review changed paths for forbidden orchestration, persistent state, progress commands, global iteration limits, proactive carve-outs, campaign content, unrelated templates/rules/skills, or generated Spec Kit adapter changes and record the result in `specs/029-agent-loop-closure/quickstart.md`
-- [ ] T054 Remove throwaway baseline/replay scratch artifacts while retaining the required redacted evaluation evidence in the existing `.agents/skills/*/evals/evals.json` files
+- [X] T050 Run all focused `tests/test_wiki_cli.py` and any changed owner eval validation commands, recording command outcomes in `specs/029-agent-loop-closure/quickstart.md`
+- [X] T051 [P] Run `specify integration status --json` and record the `ok` default-OMP four-integration result in `specs/029-agent-loop-closure/quickstart.md`
+- [X] T052 [P] Run `scripts/check-omp-baseline.sh` and record the exit result in `specs/029-agent-loop-closure/quickstart.md`
+- [X] T053 Review changed paths for forbidden orchestration, persistent state, progress commands, global iteration limits, proactive carve-outs, campaign content, unrelated templates/rules/skills, or generated Spec Kit adapter changes and record the result in `specs/029-agent-loop-closure/quickstart.md`
+- [X] T054 Remove throwaway baseline/replay scratch artifacts while retaining the required redacted evaluation evidence in the existing `.agents/skills/*/evals/evals.json` files
 
 ---
 

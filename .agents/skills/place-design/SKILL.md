@@ -36,9 +36,9 @@ For an explicit city or region subtype, hand off directly to `city-design` or
 narration) with a bounded packet: owner, parent objective, evidence, template
 seam, and requested output. Require return evidence naming the child
 artifact/section and completion result; the child does not re-plan the place.
-Resume the place draft only after the child result satisfies its owner contract;
-if it does not, leave dependent work open and report the missing evidence or
-specific blocker.
+Resume the place draft only after the child result changes required place state
+or completion evidence and satisfies its owner contract; if it does not, leave
+dependent work open and report the missing evidence or specific blocker.
 ### Minimum context projection
 
 For a place draft, carry only the named place owner, caller objective, relevant place brief/template, linked topology/faction/NPC/route/session evidence, and any child return packet needed for the current seam. Deliberately omit unrelated artifact groups, prior-child context not needed by this owner, and broad vault pages. Start with this projection; retrieve focused evidence for the same place only when the current evidence cannot support a required claim or topology decision, then stop when sufficient and resume this place draft with the bounded result. Never inherit a parent planner's broad context as place canon.
@@ -50,14 +50,13 @@ Use the existing `## Done` checklist below. Completion is observable when the
 named place page path, kernel/topology/template checks, and any child return
 evidence are reported.
 
-## Refuse gates
-
-- **Work gate.** Show a chat proposal before writing under `wiki/`. Write only
-  after DM acceptance.
-- **Invention.** Never present invention as wiki fact. Set `invention: true` (or
-  mark proposed), cite `[[pages]]`, show contradictions, and propose for
-  acceptance. No silent canon — including invented neighbors, occupants, pack
-  contents, or secret dungeons across a gap.
+- **Work gate.** Show a proposal before writing invented or conditional
+  additions under `wiki/`; user-said canon is filed immediately.
+- **Canon filing.** User-said place facts file immediately on the live owner
+  path under constitution X. No separate acceptance wait is used. Invented or
+  conditional additions still carry `invention: true` (or proposal markers),
+  cite `[[pages]]`, show contradictions, and wait for the DM's decision before
+  filing.
 - **Canon gaps.** Missing cardinal neighbors stay explicit gaps. Do not invent a
   named site to fill a direction and write it as established fact.
 - **Template lock.** Copy `wiki/templates/place.md` only. Fill Overview, At a

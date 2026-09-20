@@ -11,6 +11,7 @@ reason: changes reusable owner-capability iteration, completion, blocker, and ev
 ```
 
 ## Summary
+**Accountable issue**: https://github.com/Thedougler/agentic-co-dm/issues/167
 
 Extend feature 028's existing capability composition with an owner-relative observe/act/re-observe invariant. Each incomplete branch continues only on meaningful progress, reaches its existing owner completion guard, changes to a materially different sanctioned path, or stops with a specific blocker. Correct four guard contradictions before measurement; add compact lint-fix progress to the existing CLI result; update only named owners and cold trajectory evaluations; preserve ephemeral execution state and existing exactly-once finalization.
 

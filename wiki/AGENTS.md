@@ -33,6 +33,15 @@ the original objective; dependent spoken or presentation work waits for owner
 pages and contracts. Use `AGENTS.md` for global routing and
 `docs/agents/hybrid-sdd.md` for cross-capability composition.
 
+### Capability convergence pointer
+
+Use the full owner-relative `observe → act → re-observe` rule in
+[`docs/agents/hybrid-sdd.md`](../docs/agents/hybrid-sdd.md) whenever wiki
+work has an incomplete boundary. Continue only on changed owner evidence or a
+passed owner guard; an unchanged observation requires a different sanctioned
+path or a blocker. This file keeps wiki mutation, scope, canon, and handoff
+semantics; it does not duplicate the common procedure.
+
 ## Frontmatter
 
 Required on every page: `title`, `category`, `tags`, `sources`, `created`, `updated`.

@@ -260,14 +260,14 @@
       ]
     },
     {
-      "id": "minimum-context-and-focused-place-retrieval",
-      "prompt": "A broader session-planning pass has already read unrelated faction, session, and neighboring-site material. Improve wiki/entities/place/high-eyrie.md for the caller's stated Who-section objective. Project only High Eyrie's owner, objective, place/template evidence, linked topology, and the evidence needed for that section; omit unrelated inherited artifacts. If the current owner evidence is insufficient, retrieve a focused High Eyrie section, then resume place-design and stop once the Who section is supported.",
-      "expected_output": "A focused High Eyrie update that uses the minimum sufficient place projection, deliberately omits unrelated inherited context, deepens only through same-owner focused retrieval when needed, and resumes/stops on sufficient evidence.",
+      "id": "user-said-canon-immediate-and-bounded-return",
+      "prompt": "File user-said facts for wiki/entities/place/high-eyrie.md immediately on the live owner path, then hand off only the bounded Who seam to faction-design. Resume only when the child returns changed artifact state and completion evidence; otherwise block.",
+      "expected_output": "Immediate filing of user-said canon plus a bounded child return or a specific blocker; no separate acceptance wait for the user's facts.",
       "assertions": [
-        {"text": "Projects only the named place owner, caller objective, relevant place/template and linked topology evidence, plus the current section's needed evidence.", "type": "scope"},
-        {"text": "Deliberately omits unrelated parent-planning artifacts, broad session context, and unrelated faction or neighboring-site pages.", "type": "guardrail"},
-        {"text": "Retrieves focused evidence for High Eyrie only when the projected evidence is insufficient, then resumes the place owner rather than routing through a generic retriever.", "type": "process"},
-        {"text": "Stops retrieval once the Who-section claim is sufficiently supported and reports any remaining canon gap instead of inventing it.", "type": "quality"}
+        {"text": "Files user-said place canon without a second acceptance step.", "type": "guardrail"},
+        {"text": "Keeps the place objective and Who seam bounded during handoff.", "type": "scope"},
+        {"text": "Requires changed child evidence before dependent place work resumes.", "type": "process"},
+        {"text": "Names the place boundary and parent effect when the child is incomplete.", "type": "quality"}
       ]
     }
   ]

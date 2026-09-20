@@ -152,14 +152,13 @@
       ]
     },
     {
-      "id": "bounded-child-return-and-resume",
-      "prompt": "The Ember Cartel page needs one dock-city posture section to support the parent's safe-passage objective. Send that seam to city-design, then resume faction work only when the child returns the named section and completion evidence.",
-      "expected_output": "Sends a bounded city packet, keeps faction-design as owner, and resumes the faction deliverable only after the returned section satisfies its owner contract; missing evidence remains a blocker.",
+      "id": "canonical-faction-owner-and-blocker",
+      "prompt": "Complete the named faction owner under wiki/entities/faction/. Re-observe the page and child seam after each bounded action. If the owner path or child return is unchanged, do not repeat it; report the faction boundary, surviving evidence, attempted paths, reason, and parent effect.",
+      "expected_output": "A faction page at the canonical owner path with completion evidence, or a specific blocker instead of legacy-path completion or repetition.",
       "assertions": [
-        {"text": "Limits the child request to the dock-city posture section with owner, parent objective, and grounding evidence.", "type": "quality"},
-        {"text": "Requires the returned city artifact/section and completion evidence before resuming the faction page.", "type": "structure"},
-        {"text": "Keeps the faction agenda and parent objective in scope rather than delegating or replacing them.", "type": "guardrail"},
-        {"text": "Reports a specific missing-evidence blocker instead of claiming completion when the child return is incomplete.", "type": "process"}
+        {"text": "Uses wiki/entities/faction/ as the owner path and applies the faction template guard.", "type": "structure"},
+        {"text": "Requires changed artifact/dependency/completion evidence before parent resumption.", "type": "process"},
+        {"text": "Reports a complete specific blocker when no sanctioned path remains.", "type": "quality"}
       ]
     }
   ]

@@ -1,0 +1,39 @@
+{
+  "skill_name": "skill-creator",
+  "trajectory_records": [
+    {
+      "case_id": "C01-C10-promotion",
+      "pair_id": "C01-C10-baseline-replay",
+      "category": "paired promotion",
+      "phase": "baseline",
+      "outcome": "not-run",
+      "observations": [],
+      "actions": [],
+      "turns": 0,
+      "tool_calls": 0,
+      "retrieval_attempts": 0,
+      "duplicate_equivalent_actions": 0,
+      "capability_handoffs": [],
+      "validation_passes": [],
+      "trajectory_tokens": null,
+      "tokenizer": "cl100k_base",
+      "termination_reason": "Cold executor unavailable in this session",
+      "hard_gates": {"captured": false, "semantic_non_inferiority": null},
+      "semantic_review": null
+    }
+  ],
+  "evals": [
+    {
+      "id": "paired-trajectory-promotion",
+      "prompt": "Grade at least ten comparable baseline/replay pairs for the Agent Loop Closure case matrix using cold focused contexts and the weakest sufficient executor.",
+      "expected_output": "Promotion evidence based on observable outcomes rather than one tool sequence: every success reaches its owner guard, every intentional stall has a complete blocker, hard gates are zero-failure, semantic review is non-inferior, and no token claim is made without compatible measurements.",
+      "assertions": [
+        {"text": "Grades at least ten comparable pairs spanning success, stall, read isolation, scope, child return, finalization, and recovery cases.", "type": "coverage"},
+        {"text": "Requires zero duplicate equivalent actions, lost objectives, duplicate finalizations, and read mutations before promotion.", "type": "guardrail"},
+        {"text": "Accepts materially different valid strategies when owner guards and semantic outcomes pass.", "type": "quality"},
+        {"text": "Uses weakest-sufficient executor and fixed blind semantic rubric.", "type": "process"},
+        {"text": "Makes no token-improvement claim unless tokenizer and objective-compatible measurements meet the existing five-percent median threshold.", "type": "guardrail"}
+      ]
+    }
+  ]
+}

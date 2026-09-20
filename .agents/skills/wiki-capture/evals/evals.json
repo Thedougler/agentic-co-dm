@@ -1,5 +1,26 @@
 {
-  "skill_name": "wiki-capture",
+  "trajectory_records": [
+    {
+      "case_id": "C08",
+      "pair_id": "C08-baseline",
+      "category": "capture/update",
+      "phase": "baseline",
+      "outcome": "not-run",
+      "observations": [],
+      "actions": [],
+      "turns": 0,
+      "tool_calls": 0,
+      "retrieval_attempts": 0,
+      "duplicate_equivalent_actions": 0,
+      "capability_handoffs": [],
+      "validation_passes": [],
+      "trajectory_tokens": null,
+      "tokenizer": "cl100k_base",
+      "termination_reason": "Cold executor unavailable in this session",
+      "hard_gates": {"captured": false, "mode_contract": null, "exactly_once_finalization": null},
+      "semantic_review": null
+    }
+  ],
   "evals": [
     {
       "id": 1,
@@ -152,6 +173,17 @@
           "text": "Keeps quick mode's _raw-only no-manifest/no-index/no-log/no-hot/no-QMD contract and hands promotion to wiki-ingest",
           "type": "guardrail"
         }
+      ]
+    },
+    {
+      "id": "capture-mode-progress-and-finalize-once",
+      "prompt": "A full capture has written its page but one child validation return is unchanged and incomplete. Re-observe the same page boundary, take a different sanctioned action or block, and finalize tracking exactly once only after the owner and validation guards pass.",
+      "expected_output": "A complete full capture with one tracking/finalization pass, or a specific blocker; quick mode remains _raw-only.",
+      "assertions": [
+        {"text": "Re-observes the same mode and page boundary after child validation.", "type": "process"},
+        {"text": "Does not repeat an equivalent unchanged validation action.", "type": "guardrail"},
+        {"text": "Finalizes full mode exactly once only after page and scoped validation evidence close.", "type": "quality"},
+        {"text": "Preserves quick mode's no-manifest/no-index/no-log/no-hot/no-QMD contract.", "type": "guardrail"}
       ]
     }
   ]

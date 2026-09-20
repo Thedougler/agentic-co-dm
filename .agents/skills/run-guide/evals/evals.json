@@ -77,17 +77,14 @@
       ]
     },
     {
-      "id": "cockpit-shape-climax",
-      "prompt": "Render a DM-only run guide for a Climax beat where the party confronts a rival who has been shadowing them. The rival wants to steal a contested item while the party sleeps. Multiple resolution paths exist: direct combat, negotiation, setting a trap, or letting the rival succeed and pursuing. Use established wiki entities for the rival and item.",
-      "expected_output": "One cockpit with the full session-prep template shape. Multiple action cards (one per resolution path). Threat clock with escalation. Zones table with tactical terrain. Be ready for table covers each resolution path's branching moments. How the Scene Resolves covers all paths with distinct world-state changes.",
+      "id": "four-pass-stall-and-gate",
+      "prompt": "Run the four-pass cockpit workflow for a named beat. Re-observe each pass before advancing. If an owner, path, or required section remains unchanged and incomplete, stop with a blocker and do not advance later passes.",
+      "expected_output": "A Reading-view-ready cockpit only after every pass has completion evidence, or a precise blocker naming the missing owner/path/section and parent session objective.",
       "assertions": [
-        {"text": "Scene ends when is the first ## heading with an end condition and time budget.", "type": "structure"},
-        {"text": "Action cards exist for at least the rival and the contested item, with stats from wiki owner pages.", "type": "content"},
-        {"text": "Procedure section names each resolution path as a distinct mode with its own sequence.", "type": "structure"},
-        {"text": "Threat clock has numbered escalation steps and a Narration column with ==_italic_== stubs on pass 1.", "type": "structure"},
-        {"text": "How the Scene Resolves options table covers at least: party wins by force, party wins by cunning, rival succeeds, and a mixed outcome.", "type": "content"},
-        {"text": "Roster includes ![[entity#Statblock]] embeds for combat-capable entities — stats are not retyped.", "type": "structure"},
-        {"text": "Be ready for table has at least 5 rows covering branching moments across the resolution paths.", "type": "content"}
+        {"text": "Pass 2 does not begin before pass 1 mechanical and empty-stub evidence is complete.", "type": "process"},
+        {"text": "Pass 3 does not begin before pass 2 DM-facing evidence is complete, and pass 4 checks Reading view.", "type": "process"},
+        {"text": "An unchanged incomplete pass takes a different sanctioned path or returns a specific blocker.", "type": "guardrail"},
+        {"text": "Preserves the parent session objective through every handoff.", "type": "quality"}
       ]
     }
   ]

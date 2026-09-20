@@ -66,6 +66,19 @@ Capability handoffs name the receiving owner, bounded output, return evidence,
 and parent resume point. Preserve each receiving owner's specialized craft and
 completion test. Do not add a second planner, execution ledger, or global graph.
 
+### Capability iteration and convergence
+
+For every incomplete owner boundary, use the existing route and owner guard:
+
+1. **Observe** fresh owner-relative evidence for the same boundary.
+2. **Act** once through an owner-sanctioned mutation, retrieval, validation, handoff, or recovery path that can change required state, evidence, dependencies, validation, or diagnostic specificity.
+3. **Re-observe** that boundary.
+4. Continue only when the owner guard passes or the re-observation proves meaningful progress.
+
+If the observation is unchanged, do not repeat an equivalent action. Choose a materially different sanctioned path, or stop with a specific blocker naming the owner, boundary, surviving observation, attempted paths, reason no path remains, and parent effect. A child return cannot advance a parent without changed dependency, artifact state, or completion evidence. Outer request and runtime limits remain safety bounds, not completion.
+
+Progress is owner-relative; paraphrased prose, changed tool encoding, and repeated completion claims do not count. This procedure adds no persistent state or second planner.
+
 
 The plan names one canonical owner and one active writer for every artifact. It records the minimum context, deliberate exclusions, dependency edges, serial/parallel waves, agency and continuity constraints, DM usability, verification surfaces, and measured context cost where claimed.
 

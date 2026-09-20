@@ -1,5 +1,26 @@
 {
-  "skill_name": "session-beats",
+  "trajectory_records": [
+    {
+      "case_id": "C09",
+      "pair_id": "C09-baseline",
+      "category": "parent composition",
+      "phase": "baseline",
+      "outcome": "not-run",
+      "observations": [],
+      "actions": [],
+      "turns": 0,
+      "tool_calls": 0,
+      "retrieval_attempts": 0,
+      "duplicate_equivalent_actions": 0,
+      "capability_handoffs": [],
+      "validation_passes": [],
+      "trajectory_tokens": null,
+      "tokenizer": "cl100k_base",
+      "termination_reason": "Cold executor unavailable in this session",
+      "hard_gates": {"captured": false, "objective_preservation": null, "context_reset": null},
+      "semantic_review": null
+    }
+  ],
   "evals": [
     {
       "id": "forced-order-one-shot",
@@ -191,14 +212,14 @@
       ]
     },
     {
-      "id": "dependency-order-and-parent-resume",
-      "prompt": "Build Session-12's chart when the Development needs a named place owner and its spoken handoff before the next Cliffhanger. Send only the bounded owner and beat packets, wait for each named contract and return evidence, then resume the parent chart.",
-      "expected_output": "Resolves the place owner before dependent spoken work, keeps each child within its requested seam, records artifact/section and changed-state evidence, and resumes or blocks the parent chart explicitly.",
+      "id": "parent-resume-requires-child-progress",
+      "prompt": "Build Session-12's chart when a typed Development child is required. Resume the parent only after the child returns its bounded artifact/slot, changed dependency or artifact state, and completion evidence; preserve the original objective and block an unchanged incomplete return.",
+      "expected_output": "A recomputed parent chart from complete child evidence, or a specific blocker with the parent objective preserved.",
       "assertions": [
-        {"text": "Completes the named place-owner contract before requesting dependent spoken narration or the next beat.", "type": "process"},
-        {"text": "Bounds each child packet to the parent objective, current state, requested seam, and output.", "type": "quality"},
-        {"text": "Requires returned artifact/section, changed state, and completion evidence before resuming the parent chart.", "type": "structure"},
-        {"text": "Leaves dependent beats unresolved and reports a specific blocker when a required owner contract is not returned.", "type": "guardrail"}
+        {"text": "Keeps the original session objective and unresolved dependencies in scope.", "type": "guardrail"},
+        {"text": "Requires changed child dependency, artifact, or completion evidence before resumption.", "type": "structure"},
+        {"text": "Omits unrelated child context after resumption.", "type": "scope"},
+        {"text": "Stops an unchanged incomplete child return with a specific blocker.", "type": "quality"}
       ]
     }
   ]

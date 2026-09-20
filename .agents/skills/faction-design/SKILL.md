@@ -34,9 +34,10 @@ Hand off only a local seam (for example, a named place to `place-design` or
 off-screen motion to `world-tick`) with a bounded packet: owner, objective,
 relevant evidence, and the exact section needed. Require return evidence naming
 the child artifact/section and its completion result; do not delegate the whole
-faction brief or re-plan the parent job. Resume faction work only when the child
-returns that bounded result and the owner contract is met; otherwise keep the
-seam open and report the missing evidence or specific blocker.
+faction brief or re-plan the parent job. Resume faction work only when the
+bounded result changes a dependency, artifact state, or completion evidence and
+the owner contract is met; otherwise keep the seam open and report the missing
+evidence or specific blocker.
 
 ### Done
 
@@ -135,9 +136,7 @@ pacing to `session-beats`, and vault lookup to `.agents/skills/qmd` plus
 
 ## Done
 
-The page is done when:
-
-- It lives in `wiki/<campaign>/factions/` with `type: faction`.
+- It lives at the canonical owner path `wiki/entities/faction/` with `type: faction`.
 - It fills `wiki/templates/faction.md` per the template contract.
 - The identity sentence holds: concrete want, method, player opening.
 - DM thesis is one sentence of campaign pressure.

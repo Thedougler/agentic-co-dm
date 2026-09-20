@@ -360,6 +360,32 @@ def _flatten_result_findings(result: dict[str, Any]) -> list[dict[str, Any]]:
                 findings.append(finding)
     return findings
 
+def _finding_identity(finding: dict[str, Any]) -> str:
+    """Build a stable same-scope identity for progress comparison."""
+    evidence = finding.get("evidence") or finding.get("target") or finding.get("message") or ""
+    return "|".join(
+        str(finding.get(key) or "")
+        for key in ("rule", "file", "line")
+    ) + f"|{evidence}"
+
+
+def _finding_identities(result: dict[str, Any]) -> set[str]:
+    return {
+        _finding_identity(item)
+        for item in _flatten_result_findings(result)
+    }
+
+
+def _next_identity(result: dict[str, Any]) -> tuple[Any, ...]:
+    next_item = result.get("next")
+    if not isinstance(next_item, dict):
+        return ()
+    return (
+        next_item.get("path"),
+        next_item.get("findings"),
+        next_item.get("bytes"),
+    )
+
 
 def _lint_fix(args: argparse.Namespace, vault: Path, start: float) -> int:
     resolved_paths = _resolve_paths(vault, args.paths)
@@ -385,6 +411,22 @@ def _lint_fix(args: argparse.Namespace, vault: Path, start: float) -> int:
     post_args = argparse.Namespace(**vars(args))
     post_args.full = bool(args.full)
     post_result, post_code = _compute_lint(post_args, vault, resolved_paths)
+    changed_files = sorted({path for item in applied for path in item.get("changed_files", [])})
+    before_ids = _finding_identities(pre_result)
+    after_ids = _finding_identities(post_result)
+    next_changed = _next_identity(pre_result) != _next_identity(post_result)
+    progress = {
+        "before_total": max(0, int(pre_result.get("finding_total", len(before_ids)))),
+        "after_total": max(0, int(post_result.get("finding_total", len(after_ids)))),
+        "resolved": sorted(before_ids - after_ids),
+        "changed_files": changed_files,
+        "next_changed": next_changed,
+        "state_changed": bool(
+            before_ids != after_ids
+            or changed_files
+            or next_changed
+        ),
+    }
     result = {
         "status": post_result.get("status", "clean"),
         "scope": {"paths": list(args.paths)},
@@ -392,7 +434,8 @@ def _lint_fix(args: argparse.Namespace, vault: Path, start: float) -> int:
         "skipped": skipped,
         "remaining": post_result,
         "full": bool(args.full),
-        "changed_files": sorted({path for item in applied for path in item.get("changed_files", [])}),
+        "changed_files": changed_files,
+        "progress": progress,
         "cache": post_result.get("cache", {}),
     }
     return _finish(

@@ -11,6 +11,31 @@
 
 Use [data-model.md](data-model.md) for evidence fields and [contracts/capability-loop.md](contracts/capability-loop.md) for pass conditions.
 
+## Baseline/replay case matrix
+
+The paired cases use the weakest sufficient executor available to the owner.
+`deterministic` means the repository CLI or checker; `task` means the
+configured task executor with cold, focused context. Baseline records are
+redacted evaluation evidence, never runtime state.
+
+| Case ID | Category | Variant | Executor | Required hard gate |
+|---|---|---|---|---|
+| C01 | query | sufficient first hit | task | read isolation |
+| C02 | query | unchanged candidate stall | task | specific blocker |
+| C03 | context-pack | bounded success | task | budget/output contract |
+| C04 | context-pack | silent collection blocker | task | read isolation |
+| C05 | lint | deterministic repair | deterministic | selected scope |
+| C06 | lint | unchanged unsupported/semantic repair | deterministic | no equivalent retry |
+| C07 | ingest | multi-child success | task | exactly-once finalization |
+| C08 | capture/update | no-op and quick mode | task | mode contract |
+| C09 | parent composition | incomplete child return | task | objective preservation |
+| C10 | recovery | terminal diagnostic | task | specific blocker before outer limit |
+
+Each replay is paired with the same case ID and records owner, boundary,
+observations, material actions, turns, tool calls, retrieval attempts,
+duplicate-equivalent-action count, handoffs, validation passes, tokenizer and
+trajectory tokens, termination reason, hard gates, and blind semantic review.
+
 ## V-001 — Guard coherence
 
 Exercise focused query, scoped lint, faction filing, and user-said place canon scenarios.
@@ -195,3 +220,41 @@ Expected:
 - any pre-existing repository blocker is reported with exact evidence, not hidden.
 
 Covers FR-042–FR-045 and SC-011, SC-013.
+
+## Changed-path review
+
+The implementation touches only the named owner guidance/evals, the shared
+loop authority and glossary pointers, the existing lint CLI public seam and
+its 027 contract/data model, feature evidence, and the focused CLI test. No
+campaign page, unrelated template, generated Spec Kit adapter, new
+orchestration layer, persistent ledger, progress command, or global iteration
+limit was added. `styles/config/vocabularies/CoDM/accept.txt` was already
+modified outside this feature and was not touched.
+
+## Implementation evidence
+
+- `tests/test_wiki_cli.py`: 23 passed, including the red/green
+  `test_lint_fix_reports_same_scope_progress_delta` and the unsupported-reason
+  contract regression.
+- Evaluation JSON: ten owner files plus `skill-creator/evals/evals.json` parse
+  successfully. Cold trajectory records are present with explicit
+  `not-run`/`deterministic-not-captured` outcomes because no cold executor was
+  available in this implementation session; they are not promotion evidence.
+- `specify integration status --json`: passed with `status: ok`, default
+  `omp`, and installed `omp`, `codex`, `grok`, and `claude` integrations.
+- `scripts/check-omp-baseline.sh`: failed before implementation validation with
+  `.omp/config.yml memory not off`; recorded as error-ledger entry `e-211`.
+- `scripts/token-count.py --help`: available. No token-improvement claim is
+  made without paired cold trajectories.
+
+- C05 disposable-vault run: selected `entities/npc/target3.md` returned clean
+  with `before_total=21`, `after_total=0`, one changed file, and no unrelated
+  page mutation. C06 repeated `entities/npc/Bob.md` twice with
+  `before_total=after_total=5`, `resolved=[]`, `changed_files=[]`,
+  `next_changed=false`, `state_changed=false`, and the contract reason
+  `unsupported`; no equivalent retry occurred.
+- Cold owner review covered C01-C04 and C07-C10. It found the expected
+  complete/blocker transitions and hard gates in the changed guidance, but the
+  model-generated checks are qualitative: they do not supply owner execution,
+  tool-call, or token-count evidence. They therefore do not promote the
+  missing paired trajectory tasks.

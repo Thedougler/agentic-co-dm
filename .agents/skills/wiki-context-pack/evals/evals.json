@@ -1,5 +1,46 @@
 {
-  "skill_name": "wiki-context-pack",
+  "trajectory_records": [
+    {
+      "case_id": "C03",
+      "pair_id": "C03-baseline",
+      "category": "context-pack",
+      "phase": "baseline",
+      "outcome": "not-run",
+      "observations": [],
+      "actions": [],
+      "turns": 0,
+      "tool_calls": 0,
+      "retrieval_attempts": 0,
+      "duplicate_equivalent_actions": 0,
+      "capability_handoffs": [],
+      "validation_passes": [],
+      "trajectory_tokens": null,
+      "tokenizer": "cl100k_base",
+      "termination_reason": "Cold executor unavailable in this session",
+      "hard_gates": {"captured": false, "read_isolation": null, "budget_contract": null},
+      "semantic_review": null
+    },
+    {
+      "case_id": "C04",
+      "pair_id": "C04-baseline",
+      "category": "context-pack",
+      "phase": "baseline",
+      "outcome": "not-run",
+      "observations": [],
+      "actions": [],
+      "turns": 0,
+      "tool_calls": 0,
+      "retrieval_attempts": 0,
+      "duplicate_equivalent_actions": 0,
+      "capability_handoffs": [],
+      "validation_passes": [],
+      "trajectory_tokens": null,
+      "tokenizer": "cl100k_base",
+      "termination_reason": "Cold executor unavailable in this session",
+      "hard_gates": {"captured": false, "read_isolation": null},
+      "semantic_review": null
+    }
+  ],
   "evals": [
     {
       "id": 1,
@@ -33,14 +74,14 @@
       ]
     },
     {
-      "id": "sufficient-pack-stop-no-parent-context",
-      "prompt": "A parent session-planning pass supplied broad excerpts from unrelated factions and places. Produce a JSON context pack for the topic \"Torn Crossing\" with budget 1200 and metadata-only mode. Use only the requested topic, flags, canonical vault, and this owner's CLI path; do not inherit the supplied excerpts or manually read the whole vault. Stop when the bounded pack satisfies the requested mode.",
-      "expected_output": "The exact bounded CLI stdout JSON payload, produced from the minimum context projection without inherited parent material or extra retrieval.",
+      "id": "bounded-terminal-retrieval-blocker",
+      "prompt": "Produce a JSON context pack for the silent collection path for Torn Crossing with budget 1200. Use the documented CLI fallback once; if the focused candidate set remains unchanged, stop with a specific blocker rather than manually reading the whole vault.",
+      "expected_output": "A bounded CLI result or blocker naming collection, retrieval path, surviving evidence, attempted paths, reason, and parent effect; no vault mutation.",
       "assertions": [
-        {"text": "Uses only the topic, requested budget/mode, resolved canonical vault, and the configured CLI or clone path as the minimum sufficient projection.", "type": "scope"},
-        {"text": "Deliberately omits unrelated parent-planning excerpts, whole-vault contents, and prior child artifacts.", "type": "guardrail"},
-        {"text": "Uses this owner's CLI retrieval and stops once the budgeted metadata-only pack is sufficient, without broadening the read.", "type": "process"},
-        {"text": "Returns CLI stdout unchanged with no wrapper prose and does not mutate the vault.", "type": "structure"}
+        {"text": "Re-observes the same focused collection after the documented fallback.", "type": "process"},
+        {"text": "Does not repeat equivalent terminal retrieval or substitute a whole-vault read.", "type": "guardrail"},
+        {"text": "Preserves the requested budget and JSON output contract.", "type": "structure"},
+        {"text": "Leaves canonical vault tracking files unchanged.", "type": "guardrail"}
       ]
     }
   ]

@@ -193,6 +193,22 @@ _Avoid_: execution graph; workflow state
 The ephemeral capability routes, dependencies, completion guards, observations, and capability handoffs for the current request.
 _Avoid_: knowledge graph; persistent workflow ledger; graph runtime
 
+**Capability iteration**:
+One owner-relative `observe → act → re-observe` cycle over a bounded boundary.
+It continues only on meaningful progress or a passed completion guard; an
+unchanged observation requires a materially different sanctioned path or a
+specific blocker.
+
+**Progress evidence**:
+An owner-relative change in required artifact or operation state, relevant
+evidence, unresolved dependencies, validation or next target, diagnostic
+specificity, or documented fallback availability.
+
+**Specific blocker**:
+Terminal evidence naming the owner, boundary, surviving observation, attempted
+paths, reason no sanctioned path remains, and the effect on the parent
+objective. It is not a runtime-limit outcome or persistent ledger.
+
 ## Presentation language
 
 **Theatre of the mind**:
