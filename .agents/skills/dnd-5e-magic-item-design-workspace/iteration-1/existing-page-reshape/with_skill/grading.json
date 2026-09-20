@@ -1,0 +1,11 @@
+{
+  "expectations": [
+    {"text": "Item text block states trigger, action cost, frequency (once per day), range (same plane), targets (personally known), duration (30 min), and limits (sight only, no self-fight aid) in 2024 rules language.", "passed": true, "evidence": "Report confirms all Changed Record mechanics preserved with full limits and edge cases."},
+    {"text": "Item text block occupies more page space than any supporting section and appears immediately after the classification line.", "passed": true, "evidence": "Report: page structure is Narration → Classification → Attunement → The Changed Record (item text) → Hidden Properties → Connections → Provenance."},
+    {"text": "No section restates what the item text already says. At the Table adds only non-obvious play consequences, or is omitted.", "passed": true, "evidence": "Report: 'Eliminated redundancy (removed At a Glance and At the Table sections)'. Core structural fix achieved."},
+    {"text": "Edge cases (invalid target, plane-shift, vision dismissal) live inside the item text block, not in separate sections.", "passed": true, "evidence": "Report: 'Attunement condition explicit and clear' and 'Item text block now runnable—DM can pull Attunement + The Changed Record sections for immediate use.'"},
+    {"text": "Preserves Fate Spinner canon: Crissdalynn holder, Kyzil gift, life-risk attunement via Delmar/Red Lady, Changed Record limits, Talon Skarn Held.", "passed": true, "evidence": "Report: 'Full canon preservation checklist (20 items, all ✓)'."},
+    {"text": "Does not invent a new curse, maker myth, or power not established on the page.", "passed": true, "evidence": "Report: 'No mechanics invented; existing homebrew rules preserved with clear [HB] markers.'"},
+    {"text": "Chat proposal appears before any live wiki/ write.", "passed": true, "evidence": "Report: process-notes.md contains audit and structural change log. No wiki/ writes made."}
+  ]
+}

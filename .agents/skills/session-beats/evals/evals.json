@@ -159,6 +159,47 @@
         {"text": "The spine guides preparation, not play — situations are triggered by fiction, not forced by theme.", "type": "guardrail"},
         {"text": "The chart is a pacing palette, not a script — beats can be skipped, reordered, or replaced.", "type": "process"}
       ]
+    },
+    {
+      "id": "direct-named-owner",
+      "prompt": "The request names Session-12 as the session-plan owner and asks for a Beat Chart advancing the party's rescue objective. Select session-beats directly; do not route through a generic typed-beat or orchestration skill.",
+      "expected_output": "Enters session-beats directly for Session-12, preserves the rescue objective, and returns session-plan evidence with a flexible Beat Chart and observable next triggers.",
+      "assertions": [
+        {"text": "Selects session-beats directly from the named session-plan owner.", "type": "process"},
+        {"text": "Works only the named session plan and preserves its rescue objective.", "type": "quality"},
+        {"text": "Reports session-plan completion with Beat Chart and next-trigger evidence.", "type": "structure"}
+      ]
+    },
+    {
+      "id": "local-typed-handoff",
+      "prompt": "Session-12 needs a Hook and a Development. Hand each typed slot to its owning beat skill with only the parent objective, current state, planted threads, trigger, and requested slot output; then recompute the session chart.",
+      "expected_output": "Uses direct Hook and Development handoffs with bounded packets, receives each beat's artifact and changed-state evidence, and keeps session-beats responsible for recomputing the parent chart.",
+      "assertions": [
+        {"text": "Hands each typed slot to its owning beat skill rather than asking a generic agent to plan the session.", "type": "process"},
+        {"text": "Bounds each child packet with parent objective, state, planted threads, trigger, and slot output.", "type": "quality"},
+        {"text": "Requires returned beat artifact and changed-state evidence before recomputing the chart.", "type": "structure"}
+      ]
+    },
+    {
+      "id": "preserve-parent-objective",
+      "prompt": "The parent session objective is to expose the Countless search pattern. A child Development proposes rescuing an unrelated merchant; incorporate only what advances the parent objective, and recompute if the party chooses otherwise.",
+      "expected_output": "Retains exposing the search pattern as the session objective, rejects or bounds the unrelated child proposal, and records changed state and a visible recompute path when player choice redirects play.",
+      "assertions": [
+        {"text": "Preserves the parent session objective as the constraint on child beat work.", "type": "guardrail"},
+        {"text": "Does not let a child beat replace the session objective with an unrelated quest.", "type": "guardrail"},
+        {"text": "Reports the recomputed chart, changed state, and next trigger when player choice redirects play.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "dependency-order-and-parent-resume",
+      "prompt": "Build Session-12's chart when the Development needs a named place owner and its spoken handoff before the next Cliffhanger. Send only the bounded owner and beat packets, wait for each named contract and return evidence, then resume the parent chart.",
+      "expected_output": "Resolves the place owner before dependent spoken work, keeps each child within its requested seam, records artifact/section and changed-state evidence, and resumes or blocks the parent chart explicitly.",
+      "assertions": [
+        {"text": "Completes the named place-owner contract before requesting dependent spoken narration or the next beat.", "type": "process"},
+        {"text": "Bounds each child packet to the parent objective, current state, requested seam, and output.", "type": "quality"},
+        {"text": "Requires returned artifact/section, changed state, and completion evidence before resuming the parent chart.", "type": "structure"},
+        {"text": "Leaves dependent beats unresolved and reports a specific blocker when a required owner contract is not returned.", "type": "guardrail"}
+      ]
     }
   ]
 }

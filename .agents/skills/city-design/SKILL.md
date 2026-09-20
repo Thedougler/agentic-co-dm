@@ -13,6 +13,36 @@ description: >-
 
 Prep only. Follow `docs/agents/work.md`.
 
+## Boundary contract
+
+### Input
+
+Take a named city owner, the caller's objective, and the relevant brief, city
+template, and linked region/place/faction notes. When the owner is a city,
+enter this skill directly; do not route through a generic place planner.
+
+### Owner-specific Work
+
+Work only the named city: preserve its canon, fill `wiki/templates/city.md`,
+and apply the arrival, orientation, gazetteer, local-rule, and active-situation
+craft below. Keep the caller's session or situation objective intact.
+
+### Capability Handoff
+
+Hand off only a local seam (for example, a named faction to `faction-design`,
+non-city place to `place-design`, or off-screen motion to `world-tick`) with a
+bounded packet: city owner, parent objective, evidence, and requested section.
+Require return evidence naming the child artifact/section and completion result;
+the child does not re-plan the city or parent session. Resume city work only
+after that return satisfies the named owner contract; otherwise keep dependent
+sections open and report the missing evidence or specific blocker.
+
+### Done
+
+Use the existing `## Done` checklist below. Completion is observable when the
+named city page path, city template contract, playable urban choices, and any
+child return evidence are reported.
+
 ## Refuse gates
 
 - **Work gate.** Show a chat proposal before writing under `wiki/`. Write only

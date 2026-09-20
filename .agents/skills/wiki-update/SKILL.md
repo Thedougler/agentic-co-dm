@@ -11,6 +11,16 @@ description: >
 # Wiki Update — Sync Any Project to Your Wiki
 
 You are distilling knowledge from the current project into the user's Obsidian wiki. This skill works from any project directory, not just the obsidian-wiki repo.
+## Capability Boundary
+
+**Input** — The current project, its source evidence (working tree, relevant docs, and decision-bearing commits), the resolved vault, and the prior project manifest entry. Load only bounded project context plus targeted existing pages, `index.md`, and recent `hot.md`; do not inherit unrelated campaign or project artifact groups.
+
+**Work** — `wiki-update` owns the project delta, evidence-backed distillation, project-page destination selection, and cross-links. The parent objective remains “sync this project”; read-only helpers such as `code-understand` return focus evidence, while page/craft owners receive only the cited claims, target path, and applicable template conventions.
+
+**Done** — With meaningful changes, close only after each created or updated page satisfies its output contract and scoped validation, then finalize tracking once: one project manifest `upsert`, one `index.md` update, one `log.md` entry, and one bounded `hot.md` rewrite. Run one QMD refresh after those writes and verify one affected page with search followed by `qmd get`/`multi-get`. With no meaningful delta, report unchanged and perform no writes or refresh. Any failed guard ends with a specific blocker and evidence, not a success claim based on prose.
+
+**Capability Handoff** — Return focus-map/source citations, destination pages, and scoped validation evidence to the parent sync. `wiki-update` owns project tracking and QMD finalization; a delegated read or craft capability owns only its bounded operation and returns evidence before the sync resumes.
+
 
 ## Before You Start
 

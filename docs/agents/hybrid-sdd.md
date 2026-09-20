@@ -36,6 +36,36 @@ Describe observable behavior. Leave creative method, prose voice, screenplay ord
 Completion criterion: every applicable specification field has evidence or an explicit not-applicable reason, and each named failure maps to an acceptance check or review.
 
 ## 3. Plan real ownership and dependencies
+## Capability composition
+
+Treat each existing skill or deterministic wiki operation as an owner capability.
+The parent keeps the original objective while a child receives only a bounded
+artifact or operation. A child returns observable evidence before the parent
+resumes; dependent work waits for required child contracts, while independent
+children may run concurrently only when canonical write surfaces are disjoint.
+Shared surfaces have one active writer.
+
+Project each boundary the minimum sufficient context: owner instructions, target
+artifact or source, relevant canon, governing template or contract, validation
+evidence, dependencies, and deliberate omissions. A prior capability's
+unrelated reads are not inherited. If evidence is insufficient, focused
+retrieval resumes the same owner rather than reclassifying the request.
+
+Use the existing workflow compositions:
+
+- **Read**: direct owner → focused retrieval → sufficient cited evidence → answer;
+  no canonical wiki mutation.
+- **Write**: direct artifact owner → current canon and contract → dependencies →
+  owner mutation → scoped validation → close or specific blocker.
+- **Ingest**: source evidence → destination owner → owner write and tracking →
+  scoped validation → existing retrieval refresh.
+- **Maintenance**: health/lint observation → ordered action → registered repair
+  or artifact owner → affected-scope rerun → clean or specific blocker.
+
+Capability handoffs name the receiving owner, bounded output, return evidence,
+and parent resume point. Preserve each receiving owner's specialized craft and
+completion test. Do not add a second planner, execution ledger, or global graph.
+
 
 The plan names one canonical owner and one active writer for every artifact. It records the minimum context, deliberate exclusions, dependency edges, serial/parallel waves, agency and continuity constraints, DM usability, verification surfaces, and measured context cost where claimed.
 

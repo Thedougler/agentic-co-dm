@@ -143,6 +143,29 @@ Shared files have one writer and execute serially. Disjoint skill files may be d
 5. **Counterpart synchronization**: update only governing templates/contracts/rules and their tests if waves 2–4 changed artifact validity or validation behavior.
 6. **Cold evaluation**: run focused weakest-model scenarios and named-failure coverage; correct owners, not symptoms.
 7. **Repository verification**: targeted tests if runtime changed, OMP baseline, Spec Kit status, real wiki scope if affected, then cleanup.
+## Implementation gate
+
+Accountable issue: https://github.com/Thedougler/agentic-co-dm/issues/166
+
+The issue is linked before implementation. The live root routing inventory has no
+absent owner paths; policy counterparts are limited to the authority files and
+owner skills named by the synchronization contract.
+
+## Route inventory reconciliation
+
+The live Wiki, Wiki kind, Co-DM, world-building, and presentation routing tables
+resolve to existing `.agents/skills/<owner>/SKILL.md` paths. No route was
+redirected or removed. `docs/agents/policy-owners.yml` continues to own only
+shared artifact-shape, mutation, acceptance, and capability-boundary policies;
+individual skills remain procedure owners.
+
+## Completion evidence
+
+Implementation records route, context used/omitted, affected and resolved
+owners, dependencies, deterministic checks, cold quality review, work status,
+canon state, filing, and measured/estimated/inferred context results in
+`quickstart.md`.
+
 
 ## Context Boundaries
 

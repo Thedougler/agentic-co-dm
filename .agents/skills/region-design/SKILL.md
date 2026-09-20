@@ -14,6 +14,37 @@ description: >-
 
 Prep only. Follow `docs/agents/work.md`.
 
+## Boundary contract
+
+### Input
+
+Take a named region owner, the caller's objective, and the relevant brief,
+`wiki/templates/region.md`, and linked geography, route, place, faction, and
+session notes. When the owner is a region, enter this skill directly rather
+than a generic place or campaign orchestrator.
+
+### Owner-specific Work
+
+Work only the named region: preserve its scale and canon, fill the region
+template, and apply the identity, route-choice, active-power, and pressure
+craft below. Keep the caller's objective intact while retrieving local facts.
+
+### Capability Handoff
+
+Hand off only a local seam (for example, a city to `city-design`, a site to
+`place-design`, a faction to `faction-design`, or off-screen motion to
+`world-tick`) with a bounded packet: region owner, objective, evidence, and
+requested section. Require return evidence naming the child artifact/section
+and completion result; the child does not re-plan the region. Resume region work
+only after that return satisfies the named owner contract; otherwise keep the
+dependent section open and report the missing evidence or specific blocker.
+
+### Done
+
+Use the existing `## Done` checklist below. Completion is observable when the
+named region page path, region template contract, route choices, active powers,
+and any child return evidence are reported.
+
 ## Refuse gates
 
 - **Work gate.** Show a chat proposal before writing under `wiki/`. Write only

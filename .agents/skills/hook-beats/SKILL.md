@@ -16,6 +16,23 @@ Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-
 
 Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: hook`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a session-plan cockpit.
 
+## Boundary contract
+
+- **Input:** A named Hook beat, its accepted draft/template, the prior
+  carry-forward or entry state, the matching card, and linked owner evidence.
+- **Work:** Choose one Hook card and preserve the strong-start job, completion
+  test, player agency, spatial/mechanical grounding, and
+  `theatre-of-the-mind` ownership of spoken text.
+- **Done:** The existing completion test passes: the party has committed to a
+  response, and the DM can state what changed and the next beat's trigger.
+  Return that result with the Hook's carry-forward and continuity change as
+  downstream evidence.
+- **Capability Handoff:** Return only this Hook's completed card/section and
+  entry-to-exit state. The next `Development` or `Cliffhanger` (per polarity)
+  owns its bounded opening seam and may proceed when it has that trigger and
+  entry state; otherwise return the specific missing evidence.
+
+
 ## Purpose
 
 A Hook is the session's **strong start** — **reel in the line**. Its sole job

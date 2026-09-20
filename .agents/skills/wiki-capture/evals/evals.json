@@ -130,6 +130,29 @@
           "type": "quality"
         }
       ]
+    },
+    {
+      "id": 7,
+      "prompt": "Full-mode capture of an architecture decision into a temp vault has written a declarative synthesis page and says it is done, but has not recorded the conversation source in the manifest, updated index/log/hot, run scoped validation, or refreshed QMD.",
+      "expected_output": "Keep full capture incomplete: verify the page contract and scoped lint, record the source once, update index/log/hot once, run one QMD refresh plus one search-then-get retrieval check, and return a saved-path report or a specific blocker. Quick mode remains the separate _raw-only path.",
+      "assertions": [
+        {
+          "text": "Does not treat a written declarative note as complete without destination-owner output-contract and scoped validation evidence",
+          "type": "guardrail"
+        },
+        {
+          "text": "Records the conversation source exactly once and updates index.md, log.md, and hot.md exactly once for full mode",
+          "type": "process"
+        },
+        {
+          "text": "Runs one QMD refresh followed by one search-then-get retrieval verification, or reports the concrete QMD blocker",
+          "type": "process"
+        },
+        {
+          "text": "Keeps quick mode's _raw-only no-manifest/no-index/no-log/no-hot/no-QMD contract and hands promotion to wiki-ingest",
+          "type": "guardrail"
+        }
+      ]
     }
   ]
 }

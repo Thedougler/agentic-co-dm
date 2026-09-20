@@ -10,6 +10,40 @@ description: >-
 ---
 
 # Encounter Prep
+## Boundary contract
+
+### Input
+
+Take the named encounter or session cockpit, the caller's objective, the
+relevant brief, party/location/opposition canon and evidence, and
+`templates/Encounter.md` when a reusable note is requested. Identify whether
+the owner is reusable encounter stock or a session-only cockpit before
+drafting.
+
+### Owner-specific Work
+
+Work only the encounter: classify its primary mode, preserve the named beat
+and place pressure, then build the goal, opposition method, suspense fuse,
+choice paths, rulings, and resolution. Keep agency and public stakes visible;
+route creature statblocks and ability checks instead of absorbing their owners.
+
+### Capability Handoff
+
+Hand off only a bounded seam (for example, DCs/checks to
+`dnd5e-mechanics`, creatures to `homebrew-monsters-5e`, a named place to
+`place-design`/`dungeon-design`, or tonight's field order to `run-guide`) with
+the encounter owner, parent objective, evidence, and exact section requested.
+Require return evidence naming the child artifact/section and completion result;
+resume encounter work only after that seam satisfies the encounter contract,
+otherwise report the missing evidence or blocker.
+
+### Done
+
+Use the existing output contract and `## Table-prep gate` below. Completion is
+observable when the named encounter/cockpit path or inline location, runnable
+mode/pressure/mechanics checks, playability gates, and any child return
+evidence are reported.
+
 
 File what constitution X makes canon. Follow `docs/agents/work.md`.
 

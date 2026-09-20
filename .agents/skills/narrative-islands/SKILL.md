@@ -8,6 +8,39 @@ description: >-
 ---
 
 # Narrative Islands
+## Boundary contract
+
+### Input
+
+Take a named quest owner, the caller's objective, the relevant brief,
+`wiki/templates/quest.md`, and current canon/evidence for its forces, places,
+leads, clocks, and recent play. The owner is a live situation page, not a beat
+chart or a scripted episode.
+
+### Owner-specific Work
+
+Work only the quest topology: preserve True/Possible/Happened status, independent
+world motion, agency, routes, stakes, and walk-away consequences. Fill the quest
+template through the situation workflow below; do not absorb typed beats,
+encounter math, or another entity's page.
+
+### Capability Handoff
+
+Hand off only a local seam (for example, encounter math to `encounter-prep`, a
+multi-room site to `dungeon-design`, a place to `place-design`, or a named
+faction/NPC/vehicle/spell/lore to its owner) with the quest owner, parent
+objective, evidence, and exact section requested. Require return evidence naming
+the child artifact/section and completion result; resume quest work only after
+that seam satisfies the quest contract, otherwise report the missing evidence or
+blocker.
+
+### Done
+
+Use the existing `## Done Check` and workflow completion tests below.
+Completion is observable when the named quest path, template/situation
+contract, agency and connectivity checks, and any child return evidence are
+reported.
+
 
 Build named quest pages as live situations: forces act, pressure advances, and
 the party chooses the route. Campaign situation pages use `type: quest`.

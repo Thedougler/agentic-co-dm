@@ -17,6 +17,25 @@ Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-
 
 Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: resolution`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a session-plan cockpit.
 
+## Boundary contract
+
+- **Input:** A named Resolution beat, its accepted draft/template, the Climax
+  carry-forward, Hook/middle costs and live-thread states, the matching card,
+  and linked owner evidence.
+- **Work:** Choose one Resolution card and preserve the changed-world
+  afterscene, completion test, visible costs, player agency, branch-specific
+  consequences, and `theatre-of-the-mind` ownership of spoken text.
+- **Done:** The existing completion test passes: players can name what is
+  different and what they want next. Return the changed situation, remaining
+  pressure, and branch evidence for the next interest without erasing earned
+  consequences.
+- **Capability Handoff:** Return only this Resolution's completed card/section
+  and aftermath state. `session-beats` or a named next-type skill owns any
+  chart transition; a named entity goes to its wiki-kind owner. Proceed only
+  when the downstream owner has the changed-world evidence, otherwise return
+  the specific missing evidence.
+
+
 ## Purpose
 
 A Resolution is the **tag line** — a tiny afterscene that shows the arc's

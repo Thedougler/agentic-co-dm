@@ -15,6 +15,20 @@ description: >
 You are weaving the wiki's knowledge graph tighter by finding and inserting missing `[[wikilinks]]` between pages that should reference each other but currently don't.
 
 **Follow the Retrieval Primitives table in `llm-wiki/SKILL.md`.** Build the registry in Step 1 by grepping frontmatter only (not full pages). Reserve full `Read` for the unlinked-mention detection pass, and even there, only read pages whose summaries/titles make them plausible link targets. Blind full-vault reads are what this framework exists to avoid.
+## Boundary Contract
+
+### Input
+Accept a resolved vault, `OBSIDIAN_LINK_FORMAT`, and a request to connect pages; the scope may be the whole vault or recent-ingest candidates. Build the registry from frontmatter and titles before opening bodies.
+
+### Work (owner: cross-linker)
+Own candidate scoring and insertion of `EXTRACTED`/`INFERRED` body links, typed `relationships:`, and misc affinity. Keep archives, readouts, redirect stubs, code/frontmatter, and `AMBIGUOUS` candidates untouched; take the required standalone-vault snapshot before writes.
+
+### Done
+Return the existing Cross-Link Report with pages scanned, links/confidence/placements, orphans, affinity, and promotion candidates. Update `log.md` and `hot.md`; report any snapshot SHA and the exact QMD result; verify that added links are neither duplicated nor unsafe.
+
+### Capability Handoff
+When page-identity collisions surface, hand candidate paths and confidence to `wiki-dedup`; its bounded return is an audit verdict or confirmed merge result, not additional link edits.
+
 
 ## Before You Start
 

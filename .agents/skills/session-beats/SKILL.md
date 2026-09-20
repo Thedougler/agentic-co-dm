@@ -15,6 +15,39 @@ description: >-
 Prep only. Follow `docs/agents/work.md` for Work protocol, invention, accept, and lifecycle.
 Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
 
+## Boundary contract
+
+### Input
+
+Take a named session owner or session-plan request, the parent session
+objective, and the bounded brief, thread map, and linked owner pages. When the
+owner is a session plan, enter this skill directly; do not route through a
+generic beat or orchestration skill.
+
+### Owner-specific Work
+
+Work only the named session plan: preserve its objective and live threads,
+compose the Beat Chart, and apply the pacing, agency, transition, and
+completion craft below. A typed beat request is a local fill, not permission to
+replace the parent session objective.
+
+### Capability Handoff
+
+Hand off a typed slot directly to its owning beat skill with a bounded packet:
+parent objective, session state, slot type, planted threads, trigger, and
+requested output. Require return evidence naming the child beat artifact/slot,
+its changed state, and completion result; recompute the parent chart without
+letting the child re-plan the session. Resume the parent chart only after that
+evidence is returned and the named owner contract is satisfied; if the child
+cannot satisfy it, keep the slot unresolved and report the blocker instead of
+advancing dependent beats.
+
+### Done
+
+Use the existing session-plan and composition completion checks below. Completion
+is observable when the session-plan artifact, preserved objective, linked typed
+beats, and each child return trigger/changed-state evidence are reported.
+
 ## Filed session plan
 
 After accept, file one session plan at `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<number>-00-<Title>.md` copied from `wiki/templates/session-plan.md` with `type: session-prep` and `kind: session-plan`. Jobs: compass, Beat Map, Floating Beats, Pressure, PC Touchpoints, and links to typed beat pages. The plan MUST NOT duplicate Scene ends when, Zones, or Be ready for. Live beats are typed pages filled by their type skills.

@@ -17,6 +17,24 @@ Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-
 
 Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: cliffhanger`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a session-plan cockpit.
 
+## Boundary contract
+
+- **Input:** A named Cliffhanger beat, its accepted draft/template, the prior
+  carry-forward or entry state, the matching card, the live thread under test,
+  and terrain/owner evidence.
+- **Work:** Choose one Cliffhanger card and preserve the unresolved contest,
+  completion test, player agency, terrain-driven mechanics, opposition
+  objectives, and `theatre-of-the-mind` ownership of spoken text.
+- **Done:** The existing completion test passes: the contest resolved, the
+  physical situation changed, and the DM can state what changed and the next
+  beat's trigger. Return the resolved branch and its carry-forward/continuity
+  change as downstream evidence.
+- **Capability Handoff:** Return only this Cliffhanger's completed card/section
+  and branch state to the next `Development` (or Retreat when the fiction
+  names it). Its writer may proceed when the changed positions, resources,
+  safety, time, and trigger are explicit; otherwise return the missing evidence.
+
+
 ## Purpose
 
 A Cliffhanger changes the **physical situation** — position, resources, safety,

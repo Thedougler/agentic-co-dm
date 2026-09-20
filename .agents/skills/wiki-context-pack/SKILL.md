@@ -11,6 +11,16 @@ description: >
 
 This is a read-only skill. It must not modify the vault, including `log.md`,
 `index.md`, `hot.md`, or `.manifest.json`.
+## Capability Boundary
+
+**Accepted input.** A topic or `--recent` request plus the supported budget, visibility, metadata, and JSON flags.
+
+**Owner work.** Enter `wiki-context-pack` directly, resolve and canonicalize the configured vault, invoke the installed CLI (or its configured clone), and return its bounded pack without replacing QMD, citation, visibility, or untrusted-excerpt handling.
+
+**Done.** Return the CLI payload only after the requested budget and mode produce a bounded, cited/sufficient context slice; preserve stdout byte-for-byte where required. The canonical vault, including `log.md`, `index.md`, `hot.md`, and `.manifest.json`, remains unchanged.
+
+**Capability handoff.** Handoff occurs only when ownership changes: route an unavailable executable to setup/install guidance or a requested write to its owning wiki skill; never substitute a whole-vault read or generic orchestration.
+
 
 ## Before You Start
 

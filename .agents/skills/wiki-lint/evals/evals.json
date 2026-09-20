@@ -200,6 +200,44 @@
           "type": "process"
         }
       ]
+    },
+    {
+      "id": 9,
+      "prompt": "Run the maintenance loop on a scoped page with one registered deterministic finding and one semantic owner-level finding.",
+      "expected_output": "Complete findings are reported; the registered fixer runs through the existing CLI, the semantic finding returns to its artifact owner, and the affected scope reruns until clean or a specific blocker is reported.",
+      "assertions": [
+        {
+          "text": "Exposes every configured finding in the selected scope, including the deterministic and semantic findings",
+          "type": "structure"
+        },
+        {
+          "text": "Runs only the existing registered deterministic fixer through wiki lint fix and preserves its CLI scope contract",
+          "type": "process"
+        },
+        {
+          "text": "Returns the semantic finding to the named artifact owner with bounded page, canon, and lint evidence",
+          "type": "handoff"
+        },
+        {
+          "text": "Reruns wiki lint on the affected scope after repair and closes only on a clean result or reports a path/rule/owner-specific blocker",
+          "type": "quality"
+        },
+        {
+          "text": "Does not report success merely because prose was written or structural edits completed",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "deterministic-semantic-owner-loop",
+      "prompt": "Repair a scoped page with one registered deterministic finding and one semantic finding owned by place-design. Run the deterministic fixer once, hand off only the semantic section with lint evidence, and resume the same worklist after the owner returns.",
+      "expected_output": "Runs the existing deterministic fixer through its CLI contract, sends a bounded semantic packet, integrates the owner's returned artifact evidence once, reruns only the affected lint scope, and closes only on clean lint or a specific blocker.",
+      "assertions": [
+        {"text": "Runs the registered deterministic fixer once before semantic owner work.", "type": "process"},
+        {"text": "Bounds the place-design packet to the affected page/section, linked canon, template, and lint evidence.", "type": "handoff"},
+        {"text": "Requires the owner return to name the artifact/section, addressed finding, and completion evidence before resuming the worklist.", "type": "structure"},
+        {"text": "Reruns lint on the affected scope and reports a path/rule/owner blocker when the return is incomplete or lint remains.", "type": "quality"}
+      ]
     }
   ]
 }

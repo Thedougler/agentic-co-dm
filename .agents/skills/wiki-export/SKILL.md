@@ -14,6 +14,35 @@ description: >
 
 You are exporting the wiki's wikilink graph to structured formats so it can be used in external tools (Gephi, Neo4j, custom scripts, browser visualization).
 
+## Boundary
+
+### Input
+
+Accept a resolved vault, optional project/visibility filters, and an optional
+OKF bundle request. The export owns derived files under `wiki-export/`; it does
+not mutate canonical wiki pages.
+
+### Work
+
+Collect the in-scope pages, apply filters before edges, and preserve the
+existing graph/GraphML/Cypher/HTML and optional OKF procedures. Keep graph
+outputs derived from the node/edge source data; do not add a graph runtime or
+workflow ledger.
+
+### Done
+
+Verify every requested output exists, reports the in-scope node/edge/page
+counts and active filters, and distinguishes OKF from graph output. If a
+requested output cannot be written or verified, report that specific file
+blocker instead of claiming export completion.
+
+### Capability Handoff
+
+Hand graph files to the named external consumer (Gephi, Neo4j, or browser);
+hand OKF bundles to `wiki-import` for round-trip import. This skill returns the
+export counts and verification evidence to the requesting workflow.
+
+
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in AGENTS.md (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`

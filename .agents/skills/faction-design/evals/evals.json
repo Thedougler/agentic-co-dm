@@ -120,6 +120,47 @@
           "type": "structure"
         }
       ]
+    },
+    {
+      "id": "direct-named-owner",
+      "prompt": "The session brief names the Ember Cartel as the faction owner and asks for its active agenda. Select the correct owner skill and produce only the faction-design work; do not start a generic place or session plan.",
+      "expected_output": "Enters faction-design directly for the named Ember Cartel, preserves the brief's objective, and returns a faction-template-shaped agenda with observable player opening and completion evidence.",
+      "assertions": [
+        {"text": "Selects faction-design directly from the named faction owner instead of a generic orchestrator.", "type": "process"},
+        {"text": "Works only the named faction and preserves the caller's active-agenda objective.", "type": "quality"},
+        {"text": "Reports faction template completion and an observable player opening.", "type": "structure"}
+      ]
+    },
+    {
+      "id": "local-subtype-handoff",
+      "prompt": "While designing the named Ember Cartel, the brief needs one local dock city posture. Hand off only that city seam, then finish the faction page without redesigning the campaign.",
+      "expected_output": "Sends a bounded city request with the faction owner, objective, evidence, and requested section; incorporates returned city-section evidence while keeping faction-design responsible for the faction page.",
+      "assertions": [
+        {"text": "Hands off only the explicitly requested city subtype seam to city-design.", "type": "process"},
+        {"text": "Bounds the child request with owner, objective, evidence, and requested section.", "type": "quality"},
+        {"text": "Returns child artifact/section and completion evidence without replacing the faction deliverable.", "type": "structure"}
+      ]
+    },
+    {
+      "id": "preserve-parent-objective",
+      "prompt": "A session plan's objective is to expose the Countless's search pattern; use the named faction's agenda as supporting pressure, but do not let faction prep replace or broaden that session objective.",
+      "expected_output": "Keeps the session objective as the parent constraint, designs only the faction pressure that advances it, and reports how the faction result returns to the session.",
+      "assertions": [
+        {"text": "Preserves the parent session objective while scoping faction work to supporting pressure.", "type": "guardrail"},
+        {"text": "Does not expand the faction handoff into a replacement session plan.", "type": "guardrail"},
+        {"text": "States the returned faction evidence and how it advances the parent's objective.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "bounded-child-return-and-resume",
+      "prompt": "The Ember Cartel page needs one dock-city posture section to support the parent's safe-passage objective. Send that seam to city-design, then resume faction work only when the child returns the named section and completion evidence.",
+      "expected_output": "Sends a bounded city packet, keeps faction-design as owner, and resumes the faction deliverable only after the returned section satisfies its owner contract; missing evidence remains a blocker.",
+      "assertions": [
+        {"text": "Limits the child request to the dock-city posture section with owner, parent objective, and grounding evidence.", "type": "quality"},
+        {"text": "Requires the returned city artifact/section and completion evidence before resuming the faction page.", "type": "structure"},
+        {"text": "Keeps the faction agenda and parent objective in scope rather than delegating or replacing them.", "type": "guardrail"},
+        {"text": "Reports a specific missing-evidence blocker instead of claiming completion when the child return is incomplete.", "type": "process"}
+      ]
     }
   ]
 }

@@ -22,18 +22,23 @@ session — it owns DM-facing prose standards that player-facing prose inherits.
 
 File what constitution X makes canon. Follow `docs/agents/work.md`.
 
-Apply **HARD: entity-before-spoken** and **HARD: dm-facing-explicit** from
-`AGENTS.md`. Mint owner pages before writing prose that names them; make DM
-layers concrete, never coy.
+## Boundary contract
 
-Show a chat proposal; write a wiki page only after DM accept. Set
-`invention: true` and ground in wiki pages and/or 5e rules when the wiki
-lacks the fact. Cite `[[pages]]` for wiki claims. Show contradictions. Never
-present invention as wiki fact. Never write silent canon. `lifecycle: proposed`
-until accepted.
-
-All spoken copy is Work for the DM and player-safe; `[!narration]` is the
-spoken slot.
+- **Input:** A named presentation target (situated moment, standalone portrait,
+  or session-beat surface), its exact spoken surface, parent objective/table
+  state, named owner, and grounding evidence (including pixels when required).
+- **Work:** Work only that player-facing seam. Preserve entity-before-spoken,
+  access boundaries, agency, drawable natural prose, and the target's
+  narration craft; `[!narration]` remains the spoken slot.
+- **Done:** The existing mode test holds: the player can recognize and picture a
+  standalone subject, or a situated block gives a stable shared picture and a
+  live response without narrating player choices or outcomes. For session beats,
+  every assigned spoken slot is filled and player-safe. Return the artifact with
+  its grounding/owner evidence and completion result.
+- **Capability Handoff:** Return only the completed spoken artifact/section to
+  its named parent or run-guide pass. Dependent prose proceeds only after the
+  entity/place/beat owner contract is resolved; otherwise return the specific
+  missing-owner or missing-evidence blocker.
 
 ## Process
 

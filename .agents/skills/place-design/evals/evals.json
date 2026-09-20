@@ -247,6 +247,17 @@
           "type": "structure"
         }
       ]
+    },
+    {
+      "id": "bounded-child-return-and-parent-resume",
+      "prompt": "Improve High Eyrie while a named faction seam is needed for the Who section. Send only that seam with the place objective and evidence, wait for the faction owner return, then resume the place template without redesigning the site.",
+      "expected_output": "Keeps place-design responsible for High Eyrie, sends a bounded faction packet, and resumes only after the returned section and completion evidence satisfy the child owner contract.",
+      "assertions": [
+        {"text": "Bounds the faction handoff to the Who-section seam with the place owner, parent objective, evidence, and requested output.", "type": "quality"},
+        {"text": "Requires returned child artifact/section and completion evidence before resuming the place draft.", "type": "structure"},
+        {"text": "Does not let the child re-plan High Eyrie or replace the place objective.", "type": "guardrail"},
+        {"text": "Leaves dependent place work open and reports a specific blocker when the owner return is incomplete.", "type": "process"}
+      ]
     }
   ]
 }

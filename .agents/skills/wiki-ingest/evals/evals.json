@@ -142,6 +142,33 @@
           "type": "process"
         }
       ]
+    },
+    {
+      "id": 7,
+      "prompt": "Append-ingest one approved fixture note into a temp vault. The page has been drafted from source evidence, but manifest record, index/log/hot tracking, scoped page lint, and QMD retrieval verification have not run. The agent says 'done' and asks whether to finalize.",
+      "expected_output": "Keep the source file open and the ingest incomplete: retain bounded source/target context, finish the destination-owner contract, record tracking exactly once, run scoped validation, then run one QMD refresh and one search-then-get check. If a guard fails, report the specific blocker rather than success.",
+      "assertions": [
+        {
+          "text": "Keeps completion open until source evidence maps to a destination owner and the written page satisfies its output contract",
+          "type": "process"
+        },
+        {
+          "text": "Does not report success before exactly one manifest record plus index.md, log.md, and hot.md tracking are finalized",
+          "type": "guardrail"
+        },
+        {
+          "text": "Runs scoped page validation and fixes or reports its concrete finding rather than treating prose existence as green",
+          "type": "quality"
+        },
+        {
+          "text": "Performs one QMD refresh followed by one search-then-get retrieval verification, or reports the exact QMD blocker",
+          "type": "process"
+        },
+        {
+          "text": "Keeps context bounded to the named source, targeted vault evidence, and receiving owner instead of loading unrelated files or the full manifest",
+          "type": "process"
+        }
+      ]
     }
   ]
 }

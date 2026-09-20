@@ -13,6 +13,37 @@ description: >-
 
 File what constitution X makes canon. Follow `docs/agents/work.md`.
 
+## Boundary contract
+
+### Input
+
+Take a named faction owner, the caller's objective, and the relevant brief,
+owner pages, and `wiki/templates/faction.md`. When the owner is a faction,
+enter this skill directly; do not route through a generic place or session
+planner.
+
+### Owner-specific Work
+
+Work only the named faction: preserve its canon, fill the faction template,
+and apply the want/method/pressure/portent/collision craft below. Keep the
+caller's objective intact while retrieving any local supporting entities.
+
+### Capability Handoff
+
+Hand off only a local seam (for example, a named place to `place-design` or
+off-screen motion to `world-tick`) with a bounded packet: owner, objective,
+relevant evidence, and the exact section needed. Require return evidence naming
+the child artifact/section and its completion result; do not delegate the whole
+faction brief or re-plan the parent job. Resume faction work only when the child
+returns that bounded result and the owner contract is met; otherwise keep the
+seam open and report the missing evidence or specific blocker.
+
+### Done
+
+Use the existing `## Done` checklist below. Completion is observable when the
+named faction page path, template contract, and actionable want/method/player
+opening are reported alongside any child handoff evidence.
+
 ## Central principle
 
 A faction is a source of **off-screen motion and campaign pressure**, not an

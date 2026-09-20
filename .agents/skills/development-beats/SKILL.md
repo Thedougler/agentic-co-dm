@@ -17,6 +17,24 @@ Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-
 
 Copy `wiki/templates/development.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: development`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a session-plan cockpit.
 
+## Boundary contract
+
+- **Input:** A named Development beat, its accepted draft/template, the prior
+  carry-forward or entry state, the matching card, the live thread, and linked
+  owner evidence.
+- **Work:** Choose one Development card and preserve the decision-space change,
+  completion test, player agency, preparation-state consequences, relevant
+  mechanics, and `theatre-of-the-mind` ownership of spoken text.
+- **Done:** The existing completion test passes: players can name what they now
+  know or can decide that they could not before. Return that result with the
+  changed knowledge, constraints, resources, and continuity change as
+  downstream evidence.
+- **Capability Handoff:** Return only this Development's completed card/section
+  and entry-to-exit state to the next `Cliffhanger`. Its writer may proceed when
+  the revealed thread, trigger, and contest entry conditions are explicit;
+  otherwise return the specific missing evidence.
+
+
 ## Purpose
 
 A Development is the **bump** — it changes the **decision space** (what players

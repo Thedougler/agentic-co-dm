@@ -126,6 +126,29 @@
           "type": "quality"
         }
       ]
+    },
+    {
+      "id": 7,
+      "prompt": "A fixture project has a meaningful architecture delta and a drafted project page, but the agent has not yet run scoped validation or updated the project manifest, index.md, log.md, hot.md, or QMD. It claims the sync is complete.",
+      "expected_output": "Keep the sync open: retain project source evidence and the destination owner, validate affected pages, finalize each tracking surface once, run one QMD refresh and one search-then-get verification, or report a specific blocker. If no meaningful delta is found, stop without writes or refresh.",
+      "assertions": [
+        {
+          "text": "Does not close on a drafted page alone; requires the project page output contract and scoped validation evidence",
+          "type": "guardrail"
+        },
+        {
+          "text": "Finalizes exactly one project manifest upsert plus one index.md, log.md, and hot.md update for the bounded delta",
+          "type": "process"
+        },
+        {
+          "text": "Runs one QMD refresh followed by search-then-get retrieval verification, or reports the exact refresh blocker",
+          "type": "process"
+        },
+        {
+          "text": "Returns source citations, destination owner, changed pages, and validation evidence while excluding unrelated campaign surfaces",
+          "type": "content"
+        }
+      ]
     }
   ]
 }

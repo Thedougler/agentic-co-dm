@@ -1,0 +1,11 @@
+{
+  "expectations": [
+    {"text": "Item text block occupies more page space than any supporting section.", "passed": true, "evidence": "From output.md: Mechanics block is ~200 words with 6 subsections. Largest section on the page."},
+    {"text": "Classification line immediately precedes item text. No intervening sections.", "passed": false, "evidence": "From output.md: A 6-row field table (One thing, Recharge mechanic, Rarity justification, Balance, Fisher connection, Narrative weight) sits between classification and mechanics block. Design-diary content intervenes."},
+    {"text": "Edge cases (escape DC, target size, recharge, action cost) live inside the item text block.", "passed": true, "evidence": "From output.md: Small/Medium only, aquatic creatures passive, flying creatures need grapple, DC 13 Strength — all inside mechanics block."},
+    {"text": "No At a Glance section. Each fact appears once on the page.", "passed": false, "evidence": "From output.md: The field table's 'One thing' row restates the mechanics ('Cast as action at creature within 15 feet; make ranged attack roll. On hit, target restrained...') which the Mechanics block then repeats in detail."},
+    {"text": "Provenance is 0–2 sentences or omitted.", "passed": false, "evidence": "From output.md: Provenance is a full paragraph of 3 sentences (~55 words) with world-building detail beyond what changes play."},
+    {"text": "Narration is a cold portrait of the physical net — no mechanics or secrets.", "passed": true, "evidence": "From output.md: 'salt and something older', 'lead weights are smooth river stones', 'stones sing, a low bell-note' — sensory, no mechanics."},
+    {"text": "One strong axis (restrain) paid for by stated limitations.", "passed": true, "evidence": "From output.md: 'only one creature at a time', 'requires attack roll', 'recharges at dawn'."}
+  ]
+}

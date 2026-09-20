@@ -11,6 +11,20 @@ description: >
 # Wiki Synthesize — First-Class Synthesis Discovery
 
 You are scanning the wiki for concepts that co-occur across many pages but have no dedicated synthesis page connecting them. Your job is to surface these gaps and fill the most valuable ones with cross-cutting synthesis pages.
+## Boundary Contract
+
+### Input
+Accept a resolved vault and an optional topic filter. Candidate evidence is the co-occurrence map, existing synthesis pages, tags, categories, and `_insights.md`; do not treat proximity alone as a conclusion.
+
+### Work (owner: wiki-synthesize)
+Own candidate scoring, genuine cross-cutting synthesis, strongest-objection tests, source-concept backlinks, and the top-five selection. Preserve provenance markers, avoid restatement, and report worthwhile candidates that were not written.
+
+### Done
+Return the created synthesis pages plus the skipped-next-ten list and quality-check evidence, including objections and backlinks. Update `index.md`, `log.md`, and `hot.md`; report the exact QMD result and all page paths.
+
+### Capability Handoff
+When an open question or strongest objection needs new evidence, hand the question and source pages to `wiki-research`; its bounded return is sourced findings or an explicitly unresolved contradiction, not a prewritten synthesis.
+
 
 ## Before You Start
 

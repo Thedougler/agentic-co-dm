@@ -20,6 +20,24 @@ Each pass loads only its listed skills. The pass boundary is a skill-load
 boundary — loading a later pass's skill early pulls attention away from the
 current pass's job before it is done.
 
+### Boundary contract
+
+- **Input:** A named session or 30-minute beat cockpit, its existing prep and
+  owner pages, the skeleton/entry state, and the evidence needed to run this
+  slice.
+- **Work:** Preserve the four-pass contract: pass 1 keeps the mechanical card
+  and empty narration stubs; pass 2 keeps DM-facing procedure; pass 3 keeps
+  spoken-text craft; pass 4 keeps the Reading-view/table gate. Each pass stays
+  within its named seam.
+- **Done:** The existing pass completions hold: mechanical, DM-facing, and
+  spoken returns are complete; every required narration slot is filled; and the
+  pass-4 table gate holds in Reading view. Return the ready cockpit and those
+  checks as downstream evidence.
+- **Capability Handoff:** Return each bounded pass result only to its named
+  owner: pass 1 → `writing-for-humans`, pass 2 → `theatre-of-the-mind`, pass 3
+  → the pass-4 ready check. A missing owner page or incomplete result returns
+  the path, section, and blocker instead of advancing.
+
 ### Pre-pass: Ground and Diagnose
 
 **Load:** `.agents/skills/qmd` plus

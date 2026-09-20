@@ -15,6 +15,16 @@ description: >
 # Wiki Capture — Conversation to Wiki Note
 
 You are preserving knowledge from the current conversation as a permanent wiki note. The goal is to extract the *substance* — the knowledge itself — not a summary of what was said.
+## Capability Boundary
+
+**Input** — The current conversation, explicit mode (`full`, `quick`, or `correction`), resolved vault configuration, and only the bounded context needed to classify it: targeted `index.md`/`hot.md` and the governing category/template. Conversation text is the source evidence; unrelated history and pages stay out of context.
+
+**Work** — `wiki-capture` owns evidence extraction, classification, and the mode-specific destination. Full mode writes one owner-compliant note; correction mode writes one atomic derived claim pair; quick mode writes `_raw/` only. A full/correction page handoff carries source locator/evidence, destination owner, and constraints to scoped lint or downstream promotion; the parent capture objective remains active.
+
+**Done** — Full mode closes only with declarative knowledge, required frontmatter and links, destination-owner validation scoped to the page, one manifest record, one `index.md` update, one `log.md` entry, and one bounded `hot.md` update, followed by one QMD refresh and one search-then-get retrieval check. Correction mode closes only after its immutability and consumer checks pass. Quick mode closes with staged paths and explicitly no manifest/index/log/hot/QMD writes. Otherwise report the specific blocker; a written note alone is not completion.
+
+**Capability Handoff** — Return the page path, source evidence, tracking evidence, and scoped validation to the caller. `wiki-capture` owns full/correction tracking and QMD finalization; `/wiki-ingest` owns later `_raw/` promotion. The receiving validator or promotion owner returns evidence before the parent reports done.
+
 
 This skill has three modes:
 
@@ -273,6 +283,12 @@ Every note must link to at least 2 existing wiki pages. Search `index.md` before
 
 ## Step 6: Update Tracking Files
 
+For full mode, record the conversation source exactly once after the page is written:
+
+```bash
+python3 scripts/manifest.py record "$OBSIDIAN_VAULT_PATH" "conversation:<ISO-date>" --pages "<page-path>"
+```
+
 **`index.md`** — Add the new page under its category section.
 
 **`log.md`** — Append:
@@ -280,7 +296,7 @@ Every note must link to at least 2 existing wiki pages. Search `index.md` before
 - [TIMESTAMP] CAPTURE type=<type> page="<path>" title="<title>"
 ```
 
-**`hot.md`** — Update **Recent Activity** with what was just captured. Update **Key Takeaways** if the note introduced something worth flagging. Update `updated` timestamp.
+**`hot.md`** — Update **Recent Activity** with what was just captured. Update **Key Takeaways** if the note introduced something worth flagging. Update `updated` timestamp. Write each tracking surface once; correction mode keeps its atomic correction tracking and quick mode deliberately writes none.
 
 ## Step 7: Confirm to User
 

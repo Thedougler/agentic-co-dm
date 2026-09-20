@@ -10,6 +10,40 @@ description: >-
 ---
 
 # Dungeon design
+## Boundary contract
+
+### Input
+
+Take a named dungeon/site or expedition owner, the caller's objective, the
+relevant brief, applicable place template/skeleton, and canon/evidence for its
+scale, topology, factions, pressure, and prior state. The owner is a playable
+site or expedition loop, not room prose or an encounter list.
+
+### Owner-specific Work
+
+Work only the dungeon: run the seven-part test, choose scale, build the
+decision graph before keys, then stock factions, information, obstacles,
+encounters, pressure, rest, and persistence. Preserve agency, honest
+capabilities, and the keying order; keep player-facing prose and owner
+mechanics on their proper surfaces.
+
+### Capability Handoff
+
+Hand off only a bounded seam (for example, an encounter to `encounter-prep`, a
+hazard to `traps-trials`, checks to `dnd5e-mechanics`, creature math to
+`homebrew-monsters-5e`, or spoken room text to `theatre-of-the-mind`) with the
+dungeon owner, parent objective, evidence, and exact section requested. Require
+return evidence naming the child artifact/section and completion result; resume
+dungeon work only after that seam satisfies the site contract, otherwise report
+the missing evidence or blocker.
+
+### Done
+
+Use the existing seven-part test, skeletons, procedures, and review gates below.
+Completion is observable when the named site/expedition path, scale/graph/
+template checks, runnable pressure and rest procedure, modular keys, and any
+child return evidence are reported.
+
 File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Run the seven-part test

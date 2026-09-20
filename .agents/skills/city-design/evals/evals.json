@@ -298,6 +298,36 @@
           "type": "process"
         }
       ]
+    },
+    {
+      "id": "direct-named-owner",
+      "prompt": "The brief names Mercatura as the city owner and asks for a runnable arrival and district orientation. Select the city owner directly; do not route through generic place-design or session planning.",
+      "expected_output": "Enters city-design directly for Mercatura, preserves the requested urban objective, and returns city-template evidence covering Arrival, Orientation, and the current situation boundary.",
+      "assertions": [
+        {"text": "Selects city-design directly from the named city owner.", "type": "process"},
+        {"text": "Works only Mercatura's city contract and preserves the arrival/orientation objective.", "type": "quality"},
+        {"text": "Reports city template completion with observable Arrival and Orientation sections.", "type": "structure"}
+      ]
+    },
+    {
+      "id": "local-subtype-handoff",
+      "prompt": "While updating Mercatura, the brief needs one named dock faction's local posture. Hand off only that faction seam, then complete the city page without turning the request into a new campaign plan.",
+      "expected_output": "Sends faction-design a bounded packet naming Mercatura, the parent objective, grounding evidence, and the local Power subsection; incorporates return evidence while city-design remains the owner.",
+      "assertions": [
+        {"text": "Hands off only the explicitly requested faction posture seam to faction-design.", "type": "process"},
+        {"text": "Bounds the child request with city owner, parent objective, evidence, and requested subsection.", "type": "quality"},
+        {"text": "Returns child artifact/section and completion evidence while preserving the city deliverable.", "type": "structure"}
+      ]
+    },
+    {
+      "id": "preserve-parent-objective",
+      "prompt": "The parent session objective is to negotiate safe passage through Mercatura. Add city orientation and local rules only as support; do not substitute a city crisis, faction agenda, or whole session plan for that objective.",
+      "expected_output": "Keeps safe passage as the parent objective, adds only city choices and rules that support it, and reports the city evidence back to the session without broadening scope.",
+      "assertions": [
+        {"text": "Preserves the parent session objective while scoping city work to supporting choices and rules.", "type": "guardrail"},
+        {"text": "Does not replace the objective with an invented city crisis or a new session plan.", "type": "guardrail"},
+        {"text": "States which city sections and return evidence advance safe passage.", "type": "quality"}
+      ]
     }
   ]
 }

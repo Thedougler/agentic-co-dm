@@ -167,6 +167,38 @@ Reader is `agent` | `DM` | `players`. Unknown reader → `DM`. Vault is `true` i
 | Working with visual references for a depiction | visual-references |
 | Producing (attach, ground, generate, promote, place) a visual aid | visual-aids |
 
+## Capability execution contract
+
+Root routing selects the existing owner capability directly from intent or
+artifact kind. Each capability owns its procedure, specialized craft, local
+handoffs, and completion guard.
+
+Every capability boundary is legible through four concepts, using headings or
+clear equivalents:
+
+- **Input** — owned intent, target, evidence, and constraints.
+- **Work** — owner-specific procedure and safeguards using the minimum context
+  projection; focused retrieval resumes the same owner when evidence is insufficient.
+- **Done** — observable output-contract, evidence, or scoped-validation result.
+  Prose existence is never enough.
+- **Capability Handoff** — the bounded artifact or operation, receiving owner,
+  return evidence, and parent resume point when ownership changes.
+
+The parent operation retains the user's objective. Children own only bounded
+artifacts or operations and return evidence before the parent resumes. Real
+prerequisites run first; disjoint canonical write surfaces may run concurrently;
+a shared surface has one active writer. Read capabilities return cited evidence
+without mutating canonical wiki pages, manifests, indexes, or logs.
+
+Load only owner instructions, target evidence, relevant canon, governing
+template or contract, validation evidence, dependencies, and deliberate
+omissions for the current capability. Do not inherit unrelated artifact groups.
+Do not create a generic router, workflow engine, global DAG, second owner
+registry, or persistent execution ledger.
+
+Use `docs/agents/hybrid-sdd.md` for substantial cross-capability composition
+and `wiki/AGENTS.md` for wiki semantics. Neither duplicates owner procedure.
+
 ## Beat skill routing
 
 | Job | Skill |

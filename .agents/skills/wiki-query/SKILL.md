@@ -30,6 +30,16 @@ If the user's message contains a new finding, an action request ("save this", "b
 - a full new page → `wiki-capture`
 - a project-knowledge sync → `wiki-update`
 
+## Capability Boundary
+
+**Accepted input.** A question about compiled wiki knowledge, including a bounded topic lookup, filtered/public query, index-only request, or typed-edge path.
+
+**Owner work.** Enter `wiki-query` directly. Resolve the target vault, use the Retrieval Protocol's cheapest sufficient evidence, deepen to focused sections or page reads only when the current evidence cannot support the answer, and keep the query's citations and retrieval counts intact.
+
+**Done.** Return a cited answer only when the factual claims are supported by sufficient wiki evidence (or explicitly marked as gaps, inference, or conflict), with Pages consulted and Retrieval counts. Canonical wiki pages, index, hot cache, manifest, and other durable knowledge remain unchanged; the permitted `log.md` query append is the only query-side write.
+
+**Capability handoff.** Handoff occurs only when the request changes ownership: route a requested capture or knowledge sync to `wiki-capture` or `wiki-update`, then resume only with the resulting query boundary; do not insert a generic orchestration step.
+
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in AGENTS.md (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). For cross-project queries without `@name`, prefer `~/.obsidian-wiki/config` when present, even if it is a symlink to the vault `.env`. This gives `OBSIDIAN_VAULT_PATH` and any QMD variables. Works from any project directory.

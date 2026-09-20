@@ -10,6 +10,16 @@ description: >
 # Unified History Ingest Router
 
 This is a thin router for **history sources only**. It does not replace `wiki-ingest` for documents.
+## Capability Boundary
+
+**Input** — One explicit history target or an inferable source path, the user's original ingest objective, and only the bounded routing context needed to choose a destination owner. The router may inspect the command/path and relevant config, but does not load destination sessions, a full manifest, or unrelated vault artifacts.
+
+**Work** — `wiki-history-ingest` owns source classification and direct dispatch only. It preserves the destination skill's specialized ingest, approval, canon, and tracking procedure; it does not duplicate or partially execute that work.
+
+**Done** — A route closes only with an explicit destination dispatch, or with the single documented clarification for an ambiguous source. It must not claim pages, manifest/index/log/hot updates, validation, or QMD completion until the destination owner returns that evidence. A missing or invalid route ends with a specific blocker.
+
+**Capability Handoff** — Pass the selected history owner, source path/target, and parent objective to the specialized history skill. The destination owner returns selected evidence, page/tracking results, scoped validation, and any one-time QMD retrieval result; then this router returns that bounded result to the caller without re-running or re-finalizing it.
+
 
 ## Subcommands
 

@@ -11,6 +11,27 @@ Write **complete-sentence human prose**. A DM reads this without decoding agent 
 Classify each write against the stack table in `AGENTS.md`. Vault is `true` on wiki vault notes. Mixed documents classify per passage, then apply vault format to the whole note.
 
 Spoken player text is `[!narration]` only.
+## Capability boundary
+
+Wiki-facing skills receive a bounded intent, target, evidence, and constraints.
+Their procedure remains in the owning skill; this file owns wiki semantics and
+output constraints rather than duplicating craft.
+
+For wiki work, project only the owner instructions, target source or page,
+relevant current canon, applicable template or contract, validation evidence,
+real dependencies, and deliberate omissions. Do not inherit unrelated artifact
+groups from another capability.
+
+Completion requires the owner's output contract plus applicable scoped
+validation. A possible edit does not authorize a read route to mutate canonical
+pages, manifests, indexes, or logs. Query, lint, and health observation shapes
+remain owned by their current CLI contracts.
+
+When ownership changes, hand off only the bounded artifact or operation to the
+named receiving skill and return its evidence to the parent. The parent retains
+the original objective; dependent spoken or presentation work waits for owner
+pages and contracts. Use `AGENTS.md` for global routing and
+`docs/agents/hybrid-sdd.md` for cross-capability composition.
 
 ## Frontmatter
 

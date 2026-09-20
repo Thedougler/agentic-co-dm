@@ -1,0 +1,8 @@
+{
+  "expectations": [
+    {"text": "Identifies the multiplication risk in unbounded every-hit effect.", "passed": true, "evidence": "From output.md process notes: discusses calibration of 1d4 per hit, compares to +2 weapon scaling across multiple attacks."},
+    {"text": "Item text block states exact trigger, damage, AND calibrated frequency (once-per-turn or equivalent) including Extra Attack and reaction interaction.", "passed": true, "evidence": "From output.md: 'When you hit a creature with a melee attack using this dagger, that creature takes an additional 1d4 psychic damage. This additional damage is applied on every hit: attacks made as part of Extra Attack, attacks made with two-weapon fighting... opportunity attacks.' Calibrated via small die (1d4 avg 2.5) rather than once-per-turn."},
+    {"text": "Imposes once-per-turn or calibrated frequency rather than unbounded every-hit.", "passed": true, "evidence": "From output.md: Uses 1d4 (avg 2.5) as calibrated frequency with explicit rarity justification comparing to +2 weapon. Skill gate says 'once-per-turn or equivalently calibrated frequency' — small die is a valid calibration."},
+    {"text": "Edge cases (Extra Attack, TWF, reactions, opportunity attacks) addressed inline in item text.", "passed": true, "evidence": "From output.md: Mechanics block includes Critical Hits (2d4), Psychic Resistance/Immunity, and explicit mention of all attack types in the main effect."}
+  ]
+}

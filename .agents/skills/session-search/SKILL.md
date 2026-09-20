@@ -12,6 +12,16 @@ description: >
 # Session Search
 
 Answers "which of my past sessions was about X" and then pulls that session's context in.
+## Capability Boundary
+
+**Accepted input.** A session topic with the supported project, cluster, date, and result-count filters.
+
+**Owner work.** Enter `session-search` directly, query the existing session graph, preserve its ranking signals, present focused candidates, and load only the bounded transcript evidence needed to answer.
+
+**Done.** Complete with a compact, cited result set and a synthesis grounded in the loaded session IDs; distinguish loadable transcripts from history-only prompts and say when evidence is insufficient. The wiki and session graph remain read-only: no vault, graph, or canonical knowledge mutation.
+
+**Capability handoff.** Handoff occurs only when ownership changes: use an installed session loader (or the documented transcript fallback) when a selected transcript must be opened, then resume with the loader's evidence; do not reimplement a second search owner.
+
 
 ## Step 1: Check the graph exists and is fresh
 

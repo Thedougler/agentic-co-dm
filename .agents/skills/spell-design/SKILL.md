@@ -8,6 +8,38 @@ description: >-
 ---
 
 # Spell Design
+## Boundary contract
+
+### Input
+
+Take a named spell owner, the caller's objective, the relevant brief,
+`wiki/templates/spell.md`, and linked caster, source, and 2024 peer evidence.
+The owner is a durable spell identity with a runnable effect, not a scroll item
+or a prose-only magical flourish.
+
+### Owner-specific Work
+
+Work only the spell: establish the identity sentence, preserve canon, write
+perceivable narration, and fill concrete casting fields plus the peer-anchored
+2024 effect. Keep Discovery/Lore on this page when needed; label invention and
+route checks, saves, and adjudication to the mechanics owner.
+
+### Capability Handoff
+
+Hand off only a bounded seam (for example, casting checks to
+`dnd5e-mechanics`, a scroll/item to `dnd-5e-magic-item-design`, a place to
+`place-design`, or spoken delivery to `theatre-of-the-mind`) with the spell
+owner, parent objective, evidence, and exact section requested. Require return
+evidence naming the child artifact/section and completion result; resume spell
+work only after that seam satisfies the spell contract, otherwise report the
+missing evidence or blocker.
+
+### Done
+
+Use the existing `## Done` checklist below. Completion is observable when the
+named spell page path, spell-template and runnable-effect checks, narration and
+mechanics routing, and any child return evidence are reported.
+
 
 Prep only. Follow `docs/agents/work.md`.
 

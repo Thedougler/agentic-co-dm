@@ -11,6 +11,41 @@ description: >-
 
 File what constitution X makes canon. Follow `docs/agents/work.md`.
 
+## Boundary
+
+### Input
+
+Accept a whole-vault or page/prefix scope plus the user's repair or report
+intent. Resolve the existing CLI scope and owner contract before editing; do
+not narrow a complete lint result to only hard findings.
+
+### Work
+
+Run `wiki lint` for the selected scope and expose every configured finding.
+Run the existing registered deterministic fixer through the current CLI
+contract once (the full-vault sweep remains `wiki lint fix` with no path), then
+repair remaining semantic findings through the named artifact owner. Keep one
+active writer per page, and rerun the affected scope after each owner return.
+
+### Done
+
+Close only when the affected scope is clean on a fresh lint. If a finding
+cannot close, report a specific blocker with its path, rule, evidence, and
+owner; prose completion or a structural-only edit is not success. Preserve the
+existing full-finding and fixer CLI contracts.
+
+### Capability Handoff
+
+Send semantic page work to its existing owner skill (`faction-design`,
+`place-design`, `npc-design`, and so on), projecting the page, linked canon,
+template, and lint evidence. The owner must return the bounded artifact
+path/section, the finding(s) it addressed, and completion evidence; an
+incomplete return remains a blocker. `wiki-lint` integrates it once, reruns
+lint on the affected scope, and resumes the same worklist only from that
+result. Use `wiki-dedup`, `cross-linker`, or `tag-taxonomy` only for their
+named findings.
+
+
 ## Method
 
 Three phases: **sweep**, **reindex**, **repair**.

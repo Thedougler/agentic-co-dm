@@ -12,6 +12,36 @@ description: >
 
 You run a lightweight maintenance pass over the wiki: check source freshness, refresh the index, update hot.md, and write the state file that the terminal notification reads.
 
+## Boundary
+
+### Input
+
+Accept the scheduled or explicit daily-update request, resolved vault config,
+source manifest, and the selected run/setup mode. The daily cycle owns
+freshness, index, hot-cache, state, and notification maintenance.
+
+### Work
+
+Keep the existing freshness → index → `hot.md` → state → validator → log
+sequence. When maintenance health is part of the run, consume `wiki health`
+`context.act`, `next.path`, and ordered `focus` exactly; do not add a second
+planner or rerank actions. A requested lint scope uses complete `wiki lint`
+findings and the existing registered `wiki lint fix` path only. Semantic
+findings return to their artifact owner, then the affected scope is rerun.
+
+### Done
+
+Close with the validator evidence and the daily report only when the cycle's
+affected scope is clean. Otherwise name the exact health/lint blocker and owner;
+do not treat an updated timestamp or written log as completion.
+
+### Capability Handoff
+
+Hand stale sources to the relevant ingest owner, structural findings to
+`wiki-lint`, and semantic findings to the page owner. The receiving result
+returns to this daily cycle before its log/report is marked complete.
+
+
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in AGENTS.md (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` and `OBSIDIAN_WIKI_REPO`.

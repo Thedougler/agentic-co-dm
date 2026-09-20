@@ -16,6 +16,23 @@ Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-
 
 Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: climax`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a session-plan cockpit.
 
+## Boundary contract
+
+- **Input:** A named Climax beat, its accepted draft/template, the preceding
+  carry-forward or entry state, the matching card, all live threads to harvest,
+  and preparation/owner evidence.
+- **Work:** Choose one Climax card and preserve the earned highest-stakes
+  confrontation, completion test, thread harvest, player agency, applicable
+  mechanics, and `theatre-of-the-mind` ownership of spoken text.
+- **Done:** The existing completion test passes: the highest-stakes
+  confrontation is resolved and threads are harvested. Return the resolved
+  costs, final thread states, and continuity change as downstream evidence.
+- **Capability Handoff:** Return only this Climax's completed card/section and
+  carry-forward to `Resolution`. Its writer may proceed when the changed world,
+  paid costs, and scope to echo are explicit; otherwise return the specific
+  missing evidence.
+
+
 ## Purpose
 
 A Climax is the highest-stakes confrontation the middle made inevitable — the

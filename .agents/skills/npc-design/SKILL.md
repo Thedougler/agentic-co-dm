@@ -10,6 +10,37 @@ description: >-
 ---
 
 # NPC design
+## Boundary contract
+
+### Input
+
+Take a named NPC owner, the caller's objective, the relevant brief,
+`wiki/templates/npc.md`, and linked canon/evidence for the person's ties,
+current situation, and table role. The owner is a playable identity with
+agency, not a generic monster or biography request.
+
+### Owner-specific Work
+
+Work only the NPC: preserve the appropriate prep scale, build want, leverage,
+need, limit, contradiction, and portrayal signals, then fill the NPC template.
+Keep Influence/Attitude distinct from request posture, leave PC choices open,
+and route any fightable numbers to the monster-style owner.
+
+### Capability Handoff
+
+Hand off only a bounded seam (for example, dialogue/look to
+`theatre-of-the-mind`, a place to `place-design`, pacing to `session-beats`, or
+combat math to `homebrew-monsters-5e`) with the NPC owner, parent objective,
+evidence, and exact section requested. Require return evidence naming the child
+artifact/section and completion result; resume NPC work only after that seam
+meets the NPC contract, otherwise report the missing evidence or blocker.
+
+### Done
+
+Use the existing `## Done` checklist below. Completion is observable when the
+named NPC page path, NPC-template and agency/playability checks, combat
+handoff when applicable, and any child return evidence are reported.
+
 
 Prep only. Follow `docs/agents/work.md`.
 

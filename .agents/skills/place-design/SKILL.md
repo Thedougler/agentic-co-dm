@@ -14,6 +14,38 @@ description: >-
 
 File what constitution X makes canon. Follow `docs/agents/work.md`.
 
+## Boundary contract
+
+### Input
+
+Take a named place owner, the caller's objective, and the relevant brief,
+`wiki/templates/place.md`, and linked topology, faction, NPC, route, and
+session notes. When the owner is a place, enter this skill directly; select a
+more specific local subtype only when the owner is explicitly a city or region.
+
+### Owner-specific Work
+
+Work only the named place: preserve its canon, build the kernel and topology,
+fill the place template, and apply the affordance, clue, pressure, and
+consequence craft below. Keep the caller's objective intact.
+
+### Capability Handoff
+
+For an explicit city or region subtype, hand off directly to `city-design` or
+`region-design`; otherwise hand off only a local seam (such as a faction or
+narration) with a bounded packet: owner, parent objective, evidence, template
+seam, and requested output. Require return evidence naming the child
+artifact/section and completion result; the child does not re-plan the place.
+Resume the place draft only after the child result satisfies its owner contract;
+if it does not, leave dependent work open and report the missing evidence or
+specific blocker.
+
+### Done
+
+Use the existing `## Done` checklist below. Completion is observable when the
+named place page path, kernel/topology/template checks, and any child return
+evidence are reported.
+
 ## Refuse gates
 
 - **Work gate.** Show a chat proposal before writing under `wiki/`. Write only

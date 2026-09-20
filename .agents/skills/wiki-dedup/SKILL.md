@@ -14,6 +14,20 @@ description: >
 You are finding and merging wiki pages that cover the same concept under different names. This is a write-heavy, potentially destructive skill — page merges cannot be automatically undone. Work carefully and confirm before acting in merge mode.
 
 **Follow the Retrieval Primitives table in `llm-wiki/SKILL.md`.** The candidate-detection pass uses only frontmatter and titles (cheap). Only open full page bodies for confirmed candidate pairs.
+## Boundary Contract
+
+### Input
+Accept a resolved vault plus an audit request or explicit `--merge` request. Candidate identity comes from frontmatter/title scans; full bodies are opened only for candidate pairs, and merge mode still requires per-pair confirmation.
+
+### Work (owner: wiki-dedup)
+Own identity verdicts, canonical-page selection, manual content merges, link rewrites, and tracking updates. Preserve audit-first behavior, the standalone-vault snapshot gate, redirect-stub rules, and the prohibition on batch or destructive shell merges.
+
+### Done
+Return the existing dedup report with scores, verdicts, reasons, counts, and (for merges) canonical/secondary outcomes. Include the final secondary-link check and snapshot SHA when applicable; update `index.md`, `.manifest.json`, `hot.md`, `log.md`, and report the exact QMD result.
+
+### Capability Handoff
+After confirmed merges, hand canonical/secondary paths and any surviving references to `cross-linker`; its bounded return is a Cross-Link Report for graph repair, not another identity merge.
+
 
 ## Before You Start
 

@@ -12,6 +12,20 @@ description: >
 # Tag Taxonomy — Controlled Vocabulary for Wiki Tags
 
 You are enforcing consistent tagging across the wiki by normalizing tags to a controlled vocabulary.
+## Boundary Contract
+
+### Input
+Accept a tag audit, normalization, new-page tagging, or taxonomy-change request with a resolved vault. The canonical `_meta/taxonomy.md` and the page frontmatter are the authoritative inputs.
+
+### Work (owner: tag-taxonomy)
+Own canonical-tag selection, alias migration, tag-count limits, and taxonomy changes. Preserve reserved `visibility/` tags and their separate accounting; ask before changing unknown tags, and keep the mode-specific audit or normalization procedure intact.
+
+### Done
+Return the mode's audit report or normalization summary with unknowns, pages changed, and taxonomy additions. Update `log.md` and `hot.md`, report the exact QMD result, and leave unresolved unknown-tag decisions explicit.
+
+### Capability Handoff
+When structural findings remain after tagging, hand modified paths and unresolved tag findings to `wiki-lint`; its bounded return is the lint result, not a second taxonomy decision.
+
 
 ## Before You Start
 
