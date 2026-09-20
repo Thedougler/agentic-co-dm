@@ -10,9 +10,9 @@ context_omitted: creative-lint hydra internals, identity-resolution intelligence
 
 ## 1. One `wiki` dispatcher
 
-**Decision:** Add `scripts/wiki` with subcommands `lint`, `query`, and `health`. No setuptools console script. No npm/package.json wrappers. Creative hydra stays on `scripts/wiki-lint`.
+**Decision:** Keep one `scripts/wiki` dispatcher with `lint`, nested `lint fix`, `query`, and `health`. No setuptools console script or npm/package.json wrapper. Creative hydra stays on `scripts/wiki-lint`.
 
-**Rationale:** Existing agent tools are `scripts/*` with args in and JSON out (`tools/wiki_ops/cli.py`). Spec FR-001/FR-017. Clarify: npm wrappers are out; `wiki` is the command.
+**Rationale:** Existing agent tools are `scripts/*` with args in and JSON out (`tools/wiki_ops/cli.py`). The nested repair action preserves one discoverable lint surface while separating safe mutation from report-only lint.
 
 **Alternatives considered:** Three new binaries — violates one-command rule. Replace `scripts/wiki-lint` entirely — breaks creative subcommands. package.json scripts — user declined.
 
@@ -76,7 +76,7 @@ Health live lint continues to use the compact overview.
 
 ## 9. Agent instructions
 
-**Decision:** Update lint/query/health invocations to `scripts/wiki`. Lint examples show the bounded overview and `wiki lint <next.path> --full` for repair detail. Health: run `scripts/wiki health`, then act on `next` (then remaining `focus`) without a DM wait. wiki-query keeps synthesis; CLI retrieval examples point at `wiki query`. Creative hydra stays on `scripts/wiki-lint`.
+**Decision:** Update lint/query/health invocations to `scripts/wiki`. The lint workflow is bounded overview → `wiki lint fix <next.path>` → scoped rerun → `wiki lint <next.path> --full` only for remaining manual findings. Health: run `scripts/wiki health`, then act on `next` (then remaining `focus`) without a DM wait. Creative hydra stays on `scripts/wiki-lint`.
 
 **Rationale:** FR-018/SC-008/SC-009.
 
@@ -84,7 +84,7 @@ Health live lint continues to use the compact overview.
 
 ## 10. Tests
 
-**Decision:** pytest temp vaults for fail-closed paths, bounded whole-wiki and scoped lint summaries, smallest-next ordering, explicit `--full` file groups, cache hits, `--pretty` vs default, health alias equality, empty-tracker trends, `focus`/`next`, command `timing` on stdout, slowest-command ranks, token-heaviest sittings, no skill-eval keys. Cold-context smol for SC-008 (names aggregate counts + `next.path`/action) and SC-009.
+**Decision:** Extend pytest temp-vault coverage with single-file, bulk/prefix, whole-vault, safe-fixer application, unsupported-finding preservation, post-fix rerun, idempotence, structured applied/skipped/remaining output, and fix-first instruction order. Keep existing cache, bounded lint, query, health, and cold-agent checks.
 
 **Rationale:** Constitution IV/XXIII. The default result must remain token-bounded as the wiki grows.
 
@@ -123,3 +123,11 @@ Fill order (skip empty): lint `next_page`; first remorph plan `src`; first remai
 **Rationale:** FR-020 forbids a second ledger. Fake `prep` sittings would poison promotion (`SITTING_CLASSES` is only prep/wrapup; trajectory is tokens not milliseconds).
 
 **Alternatives considered:** New `commands.jsonl` — second ledger. Stuffing wiki lint as `sitting_class: prep` — breaks same-kind promotion. Stdout-only timing — SC-010 fails.
+
+## 14. Safe automatic repair
+
+**Decision:** Add an explicit fixer registry at the lint boundary. A registered fixer declares its finding rule/action, scope-safe input, deterministic precondition, idempotent result, and mutation operation. `wiki lint fix` selects only eligible registered fixers in the requested scope, applies them through the existing hash-preconditioned atomic mutation seam, then reruns lint and reports applied, skipped, and remaining findings. The initial registry is deliberately limited to the existing `delete_redirect_stub` action; other deterministic-looking actions, including page moves and identity/index updates, remain skipped until they have complete fixer payloads and invariant-preserving tests.
+
+**Rationale:** Existing findings already distinguish `deterministic_repair` from `human_repair`, and `tools/wiki_ops/mutations.py` provides atomic writes, identity gates, and no-op results. A registry makes the safety contract discoverable and prevents deriving fixability from finding prose. Starting with redirect-stub deletion avoids silently turning path moves or manifest/index changes into autonomous writes.
+
+**Alternatives considered:** Reuse approval-gated repair plans unchanged — they intentionally stop before mutation and have a different action allowlist. Apply every finding with a generic text rewrite — not deterministic, not safe, and violates the clarified contract. Make `--full` mutate — conflates inspection with repair.

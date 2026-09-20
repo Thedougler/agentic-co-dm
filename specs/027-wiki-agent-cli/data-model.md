@@ -8,7 +8,7 @@ Present on every successful or findings `wiki` stdout object.
 
 | Field | Type | Notes |
 |---|---|---|
-| `command` | `lint` \| `query` \| `health` | |
+| `command` | `lint` \| `lint fix` \| `query` \| `health` | |
 | `duration_ms` | int | Wall clock, ≥ 0 |
 | `cache` | `{hits, misses, vale_skipped}` \| omitted | Lint/health only |
 
@@ -35,7 +35,7 @@ Default `wiki lint` object is bounded regardless of scope size. `--full` adds th
 | `files` | File group[] | `--full` | One block per file with findings, argument/path order |
 | `error` | string | status=error | |
 
-`next.path` is the smallest dirty file by byte size; vault-relative path breaks ties. Its `action` tells the agent to run `wiki lint <path> --full`, repair that page, and rerun lint. Default output omits `unique`, `backlog`, and `files`, so its size does not grow with the number of dirty pages. Every configured checker and severity still contributes to the aggregate counts. `--full` findings are flat records, never nested per-rule maps. `unique` MUST NOT invent owners.
+`next.path` is the smallest dirty file by byte size; vault-relative path breaks ties. Its `action` tells the agent to run `wiki lint fix <path>`, rerun the affected scope, and use `wiki lint <path> --full` only for findings that remain. Default output omits `unique`, `backlog`, and `files`, so its size does not grow with the number of dirty pages. Every configured checker and severity still contributes to the aggregate counts. `--full` findings are flat records, never nested per-rule maps. `unique` MUST NOT invent owners.
 
 ### File group
 
@@ -44,6 +44,42 @@ Default `wiki lint` object is bounded regardless of scope size. `--full` adds th
 | `file` | string | Vault-relative |
 | `findings` | Finding record[] | Non-empty |
 
+
+## Fix result
+
+`wiki lint fix [paths...]` returns one compact machine object after applying eligible fixers and rerunning lint over the same resolved scope.
+
+| Field | Type | Required | Notes |
+|---|---|---|---|
+| `status` | `clean` \| `findings` \| `error` | yes | Derived from post-fix lint; exit 2 only for rejected invocation/precondition |
+| `scope` | `{paths: string[]}` | yes | Original vault-relative arguments; `[]` means whole vault |
+| `applied` | Applied fix[] | yes | Each applied or no-op registered fixer, stable finding/action identity, target, changed files, and result |
+| `skipped` | Skipped fix[] | yes | Eligible-scope findings not changed, with stable reason (`unsupported`, `unsafe`, `conflict`, or `precondition`) |
+| `remaining` | Worklist summary | yes | Post-fix findings; detailed file groups require `--full` if supported |
+| `changed_files` | string[] | yes | Sorted vault-relative files changed by this run |
+| `cache` | `{hits, misses, vale_skipped}` | yes | Post-fix lint cache accounting |
+| `timing` | Timing | yes | `command` is `lint fix` |
+
+Fixers are selected from an explicit registry keyed by finding rule/action. A fixer MUST validate its precondition, use the existing hash-preconditioned atomic mutation seam, and be a no-op when the desired state already holds. Findings without a registered eligible fixer remain in `remaining`.
+
+### Applied fix
+
+| Field | Type | Notes |
+|---|---|---|
+| `rule` | string | Finding rule |
+| `action` | string | Registered fixer action |
+| `target` | string | Vault-relative target |
+| `status` | `applied` \| `no_op` | |
+| `changed_files` | string[] | Sorted vault-relative paths |
+
+### Skipped fix
+
+| Field | Type | Notes |
+|---|---|---|
+| `rule` | string | Finding rule |
+| `action` | string \| null | Registered action when known |
+| `target` | string | Vault-relative target |
+| `reason` | `unsupported` \| `unsafe` \| `conflict` \| `precondition` | Machine-readable manual-repair reason |
 ## Finding record
 
 | Field | Type | Notes |
@@ -166,7 +202,7 @@ Appended to `.local/efficiency/traces.jsonl` (same stream as sitting traces).
 |---|---|---|
 | `record_kind` | `command` | Discriminator; sitting records omit this or are not `command` |
 | `schema_version` | 1 | |
-| `command` | `lint` \| `query` \| `health` | |
+| `command` | `lint` \| `lint fix` \| `query` \| `health` | |
 | `duration_ms` | int | |
 | `cache_hits` | int | 0 when N/A |
 | `cache_misses` | int | 0 when N/A |
@@ -182,11 +218,17 @@ Sitting records keep the existing efficiency schema. `promote` / sitting `report
 
 ## State transitions
 
-```text
 lint:
   invoke → resolve vault → resolve paths (fail closed)
         → load cache → run/reuse checkers → rebuild corpus
         → summary + files dump → emit + append command record → exit 0|1|2
+
+lint fix:
+  invoke → resolve vault → resolve paths (fail closed)
+        → lint selected scope → select explicit eligible fixers
+        → validate preconditions and apply atomic no-op-safe mutations
+        → rerun lint on the same scope → classify applied/skipped/remaining
+        → emit + append command record → exit 0|1|2
 
 health:
   invoke → resolve vault → resolve paths (fail closed)

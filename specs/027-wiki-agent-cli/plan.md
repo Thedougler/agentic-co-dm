@@ -12,26 +12,28 @@ reason: new public wiki command and default result contract; FR-018 updates agen
 
 ## Summary
 
-One `scripts/wiki` command (`lint`, `query`, `health`) that composes existing structural lint, Vale, template-conformance, creative checks, Layer A maintenance, sitting/efficiency/error trackers, and qmd retrieval. `wiki lint` always runs the configured lint checkers and exposes every finding through aggregate rule counts; agents never need a flag to opt into soft, template, creative, or Vale checks. Default lint stdout is a bounded overview with finding/page totals, cache/scope metadata, and an actionable `next` recommendation; `--full` adds the complete per-file finding dump for the selected scope.
+One `scripts/wiki` command (`lint`, nested `lint fix`, `query`, `health`) composes existing structural lint, Vale, template-conformance, creative checks, Layer A maintenance, sitting/efficiency/error trackers, and qmd retrieval. `wiki lint` always exposes every configured finding through aggregate rule counts. `wiki lint fix` is the explicit safe-repair path: it selects only registered deterministic/idempotent fixers, applies hash-preconditioned atomic mutations, reruns lint on the same scope, and returns compact applied/skipped/remaining results. `--full` remains the manual detail escape hatch.
 
 ## Technical Context
 
 **Language/Version**: Python 3.12+ (matches `pyproject.toml` `requires-python`)
 
-**Primary Dependencies**: Existing: stdlib, PyYAML, Vale, tiktoken, `tools/lint_wiki.py`, `tools/wiki_ops/cli.py` (`configured_vault`, `emit_json`, `emit_error`), `scripts/wiki-lint`, `scripts/wiki-maintain`, `scripts/token-count.py`, `scripts/context-waste-scan.py`, `scripts/error-ledger.py`, `scripts/efficiency-trace.py`, qmd CLI. No new packages.
+**Primary Dependencies**: Existing: stdlib, PyYAML, Vale, tiktoken, `tools/lint_wiki.py`, `tools/wiki_ops/cli.py` (`configured_vault`, `emit_json`, `emit_error`), `tools/wiki_ops/mutations.py` (`MutationOp`, atomic apply), `tools/wiki_ops/transactions.py`, `tools/wiki_ops/repair_plans.py` (extended explicit fixer registry), `scripts/wiki-lint`, `scripts/wiki-maintain`, `scripts/token-count.py`, `scripts/context-waste-scan.py`, `scripts/error-ledger.py`, `scripts/efficiency-trace.py`, qmd CLI. No new packages.
 
-**Storage**: Wiki markdown on disk. Checker cache: `$VAULT/_meta/lint-cache.json` (lint already skips `_meta`). Not git-canonical wiki content. Health **reads** `sittings.jsonl`, `errors.md`, `.local/efficiency/traces.jsonl`. Every `wiki` subcommand **appends** one command record to that same traces file (not a second ledger).
+**Storage**: Wiki markdown on disk. Checker cache: `$VAULT/_meta/lint-cache.json` (lint already skips `_meta`). Fixes use existing atomic mutation semantics; no separate fix ledger. Health reads `sittings.jsonl`, `errors.md`, `.local/efficiency/traces.jsonl`. Every `wiki` subcommand appends one command record to that same traces file.
 
-**Testing**: pytest temp-vault pattern in `tests/test_wiki_ops.py`. New `tests/test_wiki_cli.py`. Cold-context smol subject for SC-008 and SC-009.
+**Testing**: pytest temp-vault pattern in `tests/test_wiki_cli.py` and existing mutation/transaction tests. Add behavioral coverage for one file, multiple files/prefixes, whole vault, registry eligibility, unsupported findings, precondition rejection without writes, post-fix rerun, idempotence, structured result fields, and fix-first agent instructions. Cold-context smol subjects cover SC-008, SC-009, and SC-017.
 
 **Target Platform**: macOS/darwin local repo; CI-compatible except qmd query (needs local LLM; `env -u CI`).
 
 **Project Type**: CLI within existing wiki-ops repo.
 
-**Performance Goals**: Unknown path fails in <1s (SC-007). Second identical lint does not re-run Vale on cached pages (SC-003). Default lint output remains bounded as the wiki grows; `next` selects the smallest dirty file by bytes then path.
+**Performance Goals**: Unknown path fails in <1s (SC-007). Second identical lint does not re-run Vale on cached pages (SC-003). Fix runs one preflight and one post-fix lint over the resolved scope; default output remains bounded.
 
-**Constraints**: No fuzzy path matching. No TTY detection. No owner guessing. No checker-suppression flags on the agent-facing lint command. No second benchmark file. No skill-eval inventory. No npm wrappers. Machine errors on stdout (named VI split; see Complexity Tracking). Agent instruction examples must not keep `./scripts/wiki-lint --json wiki/` as the default lint pass.
-**Scale/Scope**: One dispatcher script, thin dump/cache/pretty/health helpers under `tools/wiki_ops/`, health alias, small `efficiency-trace` command-record accept path, skill/AGENTS command-string updates. The dispatcher is the sole agent-facing lint surface; `scripts/wiki-lint` remains an implementation backend and creative evaluator host.
+**Constraints**: No fuzzy path matching, TTY detection, owner guessing, checker-suppression flags, generic text rewriting, unsafe cross-scope mutation, second benchmark file, skill-eval inventory, or npm wrappers. Machine errors on stdout (named VI split). Agent instructions must teach fix before `--full`.
+
+**Scale/Scope**: One dispatcher, existing cache/worklist/health/timing/pretty helpers, one explicit fixer registry at the repair-plan boundary, and synchronized agent guidance. Registry entries must declare exact action/finding shape, validate preconditions, produce scope-safe `MutationOp` operations, and be no-ops when already satisfied. The initial registry is limited to `delete_redirect_stub`; unsupported deterministic-looking actions remain skipped until their full mutation contracts exist. Findings without eligible registered fixers remain manual.
+
 
 ## Constitution Check
 
@@ -42,16 +44,16 @@ One `scripts/wiki` command (`lint`, `query`, `health`) that composes existing st
 | I. Domain Language | PASS | Wiki / Search index. Product terms worklist, finding record, file group, health snapshot, command timing record. |
 | II. Issues Are the Work Surface | PASS | Feature `027-wiki-agent-cli`. |
 | III. Spec Before System Change | PASS | [spec.md](spec.md) has FR/SC; grill + clarify 2026-09-19 locked dump, timings, token-heaviest, skill-evals out. |
-| IV. Behavioral Tests | PASS | pytest on the CLI seam + quickstart V-008/V-009 cold subjects. |
+| IV. Behavioral Tests | PASS | pytest CLI/mutation seams plus quickstart V-008/V-009/V-011 and cold-agent SC-017 instruction validation. |
 | V. Single Source of Truth | PASS | Contract owns the result shape; skills point at `scripts/wiki`; lint_wiki remains checker owner; one traces file. |
-| VI. Agent-Shaped | PASS with named split | Args in, compact JSON out, exit 0/1/2. Machine errors on stdout (wiki-ops `emit_error`); `--pretty` errors on stderr. Spec Assumptions. |
-| VII. Creative Judgment | PASS | No voice/method rules. |
-| VIII. Safe Automation | PASS | Cache and health are deterministic; unknown paths fail closed; timing append is best-effort. |
-| IX. Measured Efficiency | PASS | Cache skips Vale on unchanged bytes. Default lint output is complete for every checker and severity. Health stays compact (no findings dump, no raw traces). |
+| VI. Agent-Shaped | PASS with named split | Args in, compact JSON out, exit 0/1/2. Fix results expose applied/skipped/remaining machine fields. Machine errors on stdout use existing `emit_error`; `--pretty` errors on stderr. |
+| VII. Creative Judgment | PASS | No voice/method rules; unsupported or content-bearing findings stay manual. |
+| VIII. Safe Automation | PASS | Fixer registry is explicit; preconditions, atomic mutation, and idempotent no-op behavior gate automatic repair. |
+| IX. Measured Efficiency | PASS | Cache skips Vale on unchanged pages; fix reports post-fix results without raw trace dumps. |
 | X. DM Owns Canon | PASS | No wiki fact invention; `focus` layout items only from existing remorph/layout plans. |
 | XII. Evidence Precedes Invention | PASS | Query does not invent hits; lint does not invent owners. |
-| XIV. Simplest Adequate Tool | PASS | Compose existing checkers and the existing traces file; one new `scripts/wiki`. |
-| XV. Autonomous Operation | PASS | Unattended lint/health; agents act on `next` without a DM wait. |
+| XIV. Simplest Adequate Tool | PASS | Compose existing checkers, mutation/transaction seams, repair-plan registry, and existing traces file; no new dependency. |
+| XV. Autonomous Operation | PASS | Unattended lint/fix/health; agents act on `next`, apply safe fixes, and continue to manual detail without a DM wait. |
 | XVI. Layering | PASS | Contract owns CLI behavior; AGENTS.md/skills only retarget invocations. |
 | XVII. Wiki Additive | PASS | Cache is derived; live pages unchanged by this CLI. |
 | XX. Lean | PASS | Do not copy the JSON schema into every skill. |
@@ -80,32 +82,36 @@ specs/027-wiki-agent-cli/
 ### Source Code (repository root)
 
 ```text
-scripts/wiki                 # New dispatcher: lint | query | health
+scripts/wiki                 # Existing dispatcher: add nested lint fix mode
 scripts/wiki-lint            # Existing checker backend and creative evaluator host; not an agent-facing lint path
 scripts/wiki-maintain        # --report aliases wiki health
-scripts/efficiency-trace.py  # Accept record_kind=command on the existing traces stream
-
+scripts/efficiency-trace.py  # Accept record_kind=command and lint fix command
+ 
 tools/wiki_ops/
 ├── cli.py                   # Existing emit_json / resolve_vault
-├── worklist.py              # New: summary fields + files dump from a lint report
-├── lint_cache.py            # New: versioned per-file checker cache (page + resolved-template sha256 + config digest)
-├── health.py                # New: compose Layer A + trends + focus/next
-├── timing.py                # New: duration + append command record
-└── pretty.py                # New: --pretty text for lint/query/health
+├── worklist.py              # Existing lint summary/detail shaping
+├── lint_cache.py            # Existing versioned per-file checker cache
+├── health.py                # Existing Layer A + trends + focus/next composition
+├── timing.py                # Existing duration + command record
+├── pretty.py                # Existing --pretty renderers
+└── repair_plans.py          # Add explicit safe-fixer registry and mutation planning
 
-tests/test_wiki_cli.py       # New behavioral tests
+tests/test_wiki_cli.py       # Extend behavioral CLI tests
+tests/test_wiki_ops.py       # Extend fixer/registry seam tests
 
 .agents/skills/wiki-lint/SKILL.md
 .agents/skills/wiki-lint/evals/evals.json
-.agents/skills/wiki-status/SKILL.md   # health invocation if present
-AGENTS.md                    # Standing lint/query/health command examples only
-```
+.agents/skills/wiki-status/SKILL.md
+.agents/skills/wiki-ingest/SKILL.md
+.agents/skills/session-recap/SKILL.md
+AGENTS.md                    # Standing lint/query/health command examples
+alternate harness wiki-lint skill copies (.kiro/.pi/.windsurf/.cursor)
 
-**Structure Decision**: New public command is `scripts/wiki`. Helpers stay in `tools/wiki_ops/` next to `cli.py`. Command timings stay in `.local/efficiency/traces.jsonl`. Do not add `src/`. The dispatcher invokes every configured checker; no alternate agent lint command or omission flag is part of the surface.
+**Structure Decision**: Keep the public command in `scripts/wiki`. Extend the existing repair-plan boundary with an explicit fixer registry rather than adding a new abstraction before a second consumer exists. Generate `MutationOp` batches only from exact registered actions; validate scope and preconditions, commit through existing atomic mutation/transaction seams, then rerun the selected scope. Command timings stay in `.local/efficiency/traces.jsonl`. The dispatcher invokes every configured checker; no alternate agent lint command or omission flag is part of the surface.
 
 ## Post-Design Constitution Check
 
-Same table as above. Design artifacts: [research.md](research.md), [data-model.md](data-model.md), [contracts/wiki-cli.md](contracts/wiki-cli.md), [quickstart.md](quickstart.md). No new `NEEDS CLARIFICATION`. Cache path, qmd flags, command-record discriminator, `focus` cap 5, and `next` = `focus[0]` are resolved. Gate still PASS.
+Same table as above. Design artifacts resolve the remaining choices: exact nested invocation, compact fix result, explicit registry boundary, conservative scope-safe mutation policy, post-fix rerun, exit semantics, and synchronized agent guidance. Gate still PASS; no `NEEDS CLARIFICATION` remains.
 
 ## Complexity Tracking
 

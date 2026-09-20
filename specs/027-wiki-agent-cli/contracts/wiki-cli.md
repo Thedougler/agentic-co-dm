@@ -6,6 +6,7 @@ Public seam for lint, query, and health. Implementation details live in the plan
 
 ```text
 scripts/wiki lint [path ...] [--full] [--pretty] [--json]
+scripts/wiki lint fix [path ...] [--full] [--pretty] [--json]
 scripts/wiki query <phrase> [--collection NAME] [-n N] [--pretty] [--json]
 scripts/wiki health [path ...] [--pretty] [--json]
 ```
@@ -16,7 +17,7 @@ Paths: vault-relative files or prefixes. Zero paths = whole live wiki. Union if 
 
 `--json` is accepted and ignored. `--pretty` is explicit human text. No terminal detection.
 
-`--full` is accepted on lint and adds the detailed per-file findings dump to the compact default overview.
+`--full` is accepted on lint and lint fix. On lint it adds the detailed per-file findings dump. On lint fix it adds detailed post-fix remaining findings; it does not change which fixers are eligible.
 
 The checker backend is internal. Its structural, template, creative, and Vale findings are all surfaced by `wiki lint`; agents do not use evaluator-specific commands.
 
@@ -44,6 +45,18 @@ With `--full`, the object also includes `unique`, `backlog`, and `files`. `files
 
 No nested per-rule finding maps. `unique` values are already-deduped targets. Lint MUST NOT guess, alias-match, or invent owners.
 
+### Lint fix
+
+`wiki lint fix [path ...]` uses the same path scope and fail-closed resolution as lint. Zero paths select the whole live wiki; multiple files/prefixes form their union.
+
+The command selects only explicitly registered fixers whose preconditions are deterministic and whose result is idempotent. It applies eligible mutations through the existing atomic, hash-preconditioned seam, then reruns lint over the same resolved scope.
+
+Required keys: `status`, `scope`, `applied`, `skipped`, `remaining`, `changed_files`, `cache`, `timing`.
+
+`applied` contains `{rule, action, target, status, changed_files}` records where `status` is `applied` or `no_op`. `skipped` contains `{rule, action, target, reason}` records. `remaining` is the post-fix bounded lint result; `--full` adds its detailed file groups. Unsupported, unsafe, conflicting, or failed-precondition findings are skipped and remain available for manual repair.
+
+Exit code follows the post-fix result: `0` when clean, `1` when findings remain, `2` for bad invocation, unknown scope, or an unrecoverable precondition/error. A second identical run makes no further changes.
+
 ### Query
 
 `{status, collection, hits, timing}` where `hits` is `{title, path, id}[]`. Default collection `wiki`, default cap 10. Retrieval runs even when `CI=true`. Failure: error object, exit 2, no invented hits.
@@ -59,8 +72,8 @@ No skill-eval pass/fail keys.
 ## `--pretty`
 
 | Command | Text |
-|---|---|
 | lint | Scoreboard of counts / totals / next action / cache; `--full` then lists findings as `file:line  RULE  message` |
+| lint fix | Scoreboard of applied / skipped / remaining findings / changed files; `--full` then lists post-fix findings as `file:line  RULE  message` |
 | lint `--pretty --full` | Same human findings list |
 | query | One hit per line: `path  title  id` |
 | health | Short scoreboard (pages, bytes, tokens, lint hard total, quiet-relevant counts, slowest command, token-heaviest sitting, first-turn total) then `context.act`, `next.path`, and the `focus` list (`path  source  reason`) |
@@ -73,10 +86,9 @@ Stdout: `{"error":"<message>","status":"error"}` exit 2.
 
 ## Side effects
 
-Each lint/query/health run appends one `record_kind=command` row to `.local/efficiency/traces.jsonl`. Append failure does not change the wiki command’s exit code.
+Each lint, lint fix, query, and health run appends one `record_kind=command` row to `.local/efficiency/traces.jsonl`. Append failure does not change the wiki command’s exit code.
 
-
-`lint` and `health` write `wiki <command>: elapsed_s=<n> still=1` to stderr at least every 10 seconds while running. Stdout remains one JSON object (`--pretty`: one human text result). A run under 10 seconds may emit no heartbeat. `query` has no heartbeat requirement.
+`lint`, `lint fix`, and `health` write `wiki <command>: elapsed_s=<n> still=1` to stderr at least every 10 seconds while running. Stdout remains one JSON object (`--pretty`: one human text result). A run under 10 seconds may emit no heartbeat. `query` has no heartbeat requirement.
 
 
 ## Non-goals this sitting
