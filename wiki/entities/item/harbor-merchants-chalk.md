@@ -14,6 +14,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[Sparhold]]"
+kind: durable
+rarity: common
+attunement: false
+owner: "Costin"
 summary: "A box of thick white chalk marked for tallying prices and debts on slate boards. The currency of Sparhold's market."
 provenance:
   extracted: 0.85
