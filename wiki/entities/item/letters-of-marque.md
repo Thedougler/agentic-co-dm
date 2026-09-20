@@ -16,8 +16,10 @@ reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: plot
+region: ""
 rarity: common
 attunement: false
+owner: ""
 summary: "Worn Crown parchment that licensed Barnaby Rook as a privateer; no magic, details unclear."
 provenance:
   extracted: 0.95
@@ -35,11 +37,9 @@ Plot item (no magical effect). Document, Common.
 
 These letters have no charges, activation, or saving throws. They are a credential. If someone presents them as real or forged authority, stop and rule from the scene; the source does not fix the outcome.
 
-## At a Glance
+## At the Table
 
 The crew holds the papers that licensed [[barnaby-rook]] to privateer for the [[dravosi-crown]]. Listed value is 30,000 gp. What the text actually permits is unclear.
-
-## At the Table
 
 Flash them as a Crown warrant and you are making a claim. The page does not tell you who buys it.
 
