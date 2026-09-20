@@ -26,8 +26,14 @@ type: vehicle
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+kind: ship
+region: "[[calven-and-calveno]]"
+berth: "Calveno cargo routes"
 ---
 # Amberreach
+
+> [!narration] Narration
+> White sails marked with blue triangles carry the reliable cargo galleon Amberreach across the Calveno routes. The Concordat writ is visible before the ship reaches the dock.
 
 [[Amberreach]] is a reliable [[calven-and-calveno]] cargo galleon under [[tessarine-concordat]] craft. White sails with blue triangles speak Concordat writ.
 
