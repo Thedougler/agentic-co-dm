@@ -14,6 +14,9 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+kind: cutter
+region: ""
+berth: "Dravosi Crown patrol waters"
 summary: "Dravosi Crown Tier 1 patrol cutter, minimally documented in play."
 provenance:
   extracted: 0.85
@@ -24,25 +27,12 @@ tier: supporting
 ---
 # HCS Relentless
 
-![[hcs-relentless-banner]]
+> [!narration] Narration
+> The HCS Relentless is a Dravosi Crown patrol cutter, built for the Crown's patrol waters and carrying heavier armament than the [[Uncertainty|HCS Surety]]. No further visible detail is established.
 
 Dravosi Crown Tier 1 patrol cutter, more heavily armed than the [[Uncertainty|HCS Surety]]. The source provides no further detail.
-
-This entry is a stub. The source carries no hidden facts. Players establish details through play.
-
-## Stats & Combat
-
-More heavily armed than [[Uncertainty|HCS Surety]]. The source provides no further details. Compare her stats for a baseline.
-
-## Crew
-
-The source provides no captain or crew member.
 
 ## Connections
 
 - [[dravosi-crown]]
 - [[hcs-warrant]]
-
-## Session Log
-
-None. The source's summary states "No page yet." The source provides no further details. Searching `vault/episodes/` for "Relentless" yields no matches.
