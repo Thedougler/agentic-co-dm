@@ -14,6 +14,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: ""
+kind: durable
+rarity: common
+attunement: false
+owner: "Unknown bookmaker"
 summary: "A drawstring purse of mixed coin, skimmed from a challenge-bell duel's stakes before the payout was ever called."
 provenance:
   extracted: 0.85
