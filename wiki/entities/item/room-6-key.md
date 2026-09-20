@@ -27,7 +27,7 @@ base_confidence: 0.20
 
 Plot item.
 
-## At a Glance
+**Current role.**
 
 The Room 6 key identifies the room associated with Ruma's pipe-click check-in clock in the [[calveno-sewer-magazines|Calveno sewer magazines]].
 
