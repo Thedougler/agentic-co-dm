@@ -63,6 +63,7 @@ base_confidence: 0.55
 - [[entities/creature/vine-lash|Vine Lash]]
 - [[entities/creature/Welak|Welak]]
 - [[entities/creature/Wolfrabbit|Wolfrabbit]]
+- [[entities/creature/snakewood|Aruhe - Snakewood]]
 - [[entities/creature/young-snakewood|Young Snakewood]]
 - [[entities/creature/young-bloodhawk|young-bloodhawk]]
 - [[entities/creature/water-weird|Water Weird]]

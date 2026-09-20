@@ -65,7 +65,7 @@ When heresy is confirmed, Malone arrives as a Crown hunter, not a negotiator. He
 
 ## Combat
 
-CR 14. Regeneration 20, Heretic's Bane against fiends and undead, Sneak Attack, 7th-level Wisdom spellcasting (DC 17), Multiattack with blessed longsword and bayonet, Bayonet Barrage cone, Action Surge, Spiritual Weapon, Rebuke the Unclean, Guided Judgment, and Withdraw by Judgment when reduced below 49 hit points. A later idea note asks for no invented supernatural resilience; the live sheet is kept. ^[ambiguous] See [[work-malone-regeneration]].
+CR 14. Regeneration 20, Heretic's Bane against fiends and undead, Sneak Attack, 7th-level Wisdom spellcasting (DC 17), Multiattack with blessed longsword and bayonet, Bayonet Barrage cone, Action Surge, Spiritual Weapon, Rebuke the Unclean, Guided Judgment, and Withdraw by Judgment when reduced below 49 hit points. A later idea note asks for no invented supernatural resilience; the live sheet is kept. ^[ambiguous]
 
 ```statblock
 layout: Basic 5e Layout

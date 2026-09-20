@@ -19,7 +19,6 @@ base_confidence: 0.55
 - [[entities/item/lesser-black-lotus|Aruhe - Lesser Black Lotus]]
 - [[entities/item/razer-grass|Aruhe - Razer-Grass]]
 - [[entities/item/rotheart|Aruhe - Rotheart]]
-- [[entities/item/snakewood|Aruhe - Snakewood]]
 - [[entities/item/spiritpollen|Aruhe - Spiritpollen]]
 - [[entities/item/stillbloom|Aruhe - Stillbloom]]
 - [[entities/item/stonepear|Aruhe - Stonepear]]

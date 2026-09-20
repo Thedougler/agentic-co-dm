@@ -3,7 +3,7 @@ title: Aruhe - Snakewood
 aliases:
   - Aruhe - Snakewood
 category: entities
-tags: [shattered-sea, aruhe, item]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "house (user-supplied hazard capture; 2026-09-08)"
   - "/workspace/midchain-ingest/group-a/monsters/Snakewood.md"
@@ -18,7 +18,7 @@ lifecycle_changed: 2026-09-12
 tier: supporting
 created: 2026-09-12T11:10:00Z
 updated: 2026-09-13T19:57:00Z
-type: item
+type: creature
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -53,4 +53,4 @@ relationships:
 
 **Canon conflict**
 
-A campaign monster drop also supplies a CR 6 Snakewood creature sheet. Live hazard facts are kept. See [[work-snakewood-creature-vs-hazard]].^[ambiguous]
+A campaign monster drop also supplies a CR 6 Snakewood creature sheet. Live hazard facts are kept.^[ambiguous]

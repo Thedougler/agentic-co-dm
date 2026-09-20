@@ -59,9 +59,8 @@ Spend a charge when Delmar needs altitude — boarding, escape, or a theatrical 
 - [[delmar-fisk]] — Current owner; attuned.
 - [[jean-claude-tabarnack]] — Session 04 records that he bought a pair for Delmar after selling whip-shark eggs.
 - [[perrin-black-jaw]] — The campaign item note says Perrin passed them to Delmar, making a small Black-Jaw obligation visible.
-- [[work-flying-boots-provenance]] — Live session fact vs item-note chain held for DM decision.
 
 ## Provenance
 
-**How they arrived — contested.** Session 04 records that [[jean-claude-tabarnack]] bought a pair of Flying Boots for Delmar after selling whip-shark eggs.^[ambiguous] The campaign item note says [[perrin-black-jaw]] passed them to Delmar, making a small Black-Jaw obligation visible.^[ambiguous] Live session fact is kept; the item-note chain is recorded for DM decision. See [[work-flying-boots-provenance]].
+**How they arrived — contested.** Session 04 records that [[jean-claude-tabarnack]] bought a pair of Flying Boots for Delmar after selling whip-shark eggs.^[ambiguous] The campaign item note says [[perrin-black-jaw]] passed them to Delmar, making a small Black-Jaw obligation visible.^[ambiguous] Live session fact is kept; the item-note chain is recorded for DM decision.
 
