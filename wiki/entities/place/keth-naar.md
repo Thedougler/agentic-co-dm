@@ -28,13 +28,18 @@ region: "Shattered Sea"
 > Keth Naar is where Perrin washed up alone after the water boiled beneath the Vestra and lightning broke a clear sky.
 
 ## At a Glance
-The wash-up point for [[perrin-black-jaw]] after the [[Vestra]] sinking; feels like a survivor's shore and an unreliable witness.
+The wash-up point for [[perrin-black-jaw]] after the [[Vestra]] sinking; it feels like a survivor's shore and an unreliable witness.
 
-## Canon
-Perrin's account names the thing that rose under the Vestra “the Leviathan.” Whether that beast sank the vessel remains the leading account, not settled fact.
+## Who
+No permanent occupants are established. [[perrin-black-jaw]] is the named survivor associated with this shore.
 
-## Connections
-- → [[Vestra]] · [[perrin-black-jaw]] · [[Leviathan]]
+## What
+The page establishes the shore as a wash-up point, but no further physical features or objects. Perrin's account names the thing that rose under the [[Vestra]] “the [[Leviathan]].” Whether that beast sank the vessel remains the leading account, not settled fact.
 
-## Provenance
-Dump source 2026-09-05; legacy: `/Users/nick/shattered-sea/wiki/shattered-sea/creature-leviathan.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/pc-perrin-black-jaw.md`.
+## Where
+Keth Naar is linked to the [[Vestra]] sinking and to [[perrin-black-jaw]]'s arrival. Its exact position within the [[Shattered Sea]] is not established here.
+
+## Why
+The party cares because Keth Naar holds Perrin's surviving account of the [[Vestra]] sinking and the possible [[Leviathan]] attack.
+
+<!-- Provenance: Dump source 2026-09-05; legacy: `/Users/nick/shattered-sea/wiki/shattered-sea/creature-leviathan.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/pc-perrin-black-jaw.md`. -->
