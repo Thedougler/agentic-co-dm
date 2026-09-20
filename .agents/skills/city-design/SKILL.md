@@ -69,12 +69,8 @@ routes, laws, or urban pressure exceed a site-place page.
    (districts + getting around); Gazetteer (arrive/leave, stay, buy/sell,
    services); Rules that matter (only choice-changing local realities); Power
    (city-local posture only).
-5. **Active situations.** At least one when pressure exists: actors, visible
-   signs, want, opposition, **If nobody intervenes**, trigger/date. Link quest
-   pages for pursuable objectives; propose missing quests — do not bury full
-   quests here. If no established pressure, say so; do not invent crisis.
-6. **Current state + change log.** Live deltas only on the city page; fold
-   normalized deltas into baseline and archive in `# Change log`.
+5. **Active situations.** Use plain `## Situation` headings for active situation cards; keep the heading unlinked because it is a structural slot, not an entity. Establish at least one when pressure exists: actors, visible signs, want, opposition, **If nobody intervenes**, trigger/date. Link quest pages for pursuable objectives; propose missing quests — do not bury full quests here. If no established pressure, say so; do not invent crisis.
+6. **Current state + change log.** Live deltas only on the city page; fold normalized deltas into baseline and archive in `# Change log`.
 
 Read `references/city-craft.md` for craft basis, section fill detail, audit
 questions, and failure modes.

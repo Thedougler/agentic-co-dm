@@ -239,7 +239,7 @@ For each situation, establish actors, visible evidence, their current objective,
 Move completed or irrelevant situations to the Change log instead of preserving dead prep here.
 -->
 
-## [[Situation]]
+## Situation
 
 **Involved:** [[Faction]] · [[NPC]] · [[District]]
 
@@ -252,7 +252,7 @@ Describe the unstable present in two to four sentences.
 * **Trigger / date.** When that change occurs, if time matters.
 * **After interference.** Do not pre-script a branch. Record the new situation here after the party acts.
 
-## [[Situation]]
+## Situation
 
 **Involved:**
 
