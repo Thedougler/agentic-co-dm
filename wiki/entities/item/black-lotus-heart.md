@@ -35,7 +35,7 @@ owner: "[[black-lotus]]"
 
 Plot item (no mechanical effect until activated).
 
-## At a Glance
+**Current role.**
 
 The Black Lotus Heart is a harvested material from a mature Black Lotus. It becomes available only after the flower can no longer close; its use, value, and mechanical effect are not established.
 
