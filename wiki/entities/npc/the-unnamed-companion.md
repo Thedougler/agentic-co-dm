@@ -24,4 +24,54 @@ visibility: dm
 ---
 # The Unnamed Companion
 
-He drowned on the swim toward [[aruhe]] after escaping [[Karath]] with [[Hinewai]]. She buried him beneath a fruit tree in [[memorial-grove]], and that grave is the reason for the island's law.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
+
+| **Role**   | Contact |
+| ---------- | ------- |
+| **Nature** | Dead companion whose grave became a legal memory on Aruhe |
+| **Home**   | [[memorial-grove]] |
+| **Wants**  | No present want is recorded; his grave remains the reason for Aruhe's law. |
+
+> **DM thesis:** The Unnamed Companion matters because Hinewai's loss became a rule the island still lives under.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] The Unnamed Companion
+> The Unnamed Companion is not present to be seen. The surviving trace is a grave beneath a fruit tree in [[memorial-grove]], where [[Hinewai]] buried him after he drowned during their escape from [[Karath]] toward [[Aruhe]].
+```
+````
+
+## Running The Unnamed Companion
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+The party first meets his story through [[Hinewai]], the grave in [[memorial-grove]], or the law that grew from it. Hinewai can say, “He drowned within sight of Aruhe, and I carried him the rest of the way.”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+There is no living posture to change. The relevant change is whether the party treats his grave and the law it represents as a person’s memorial or as an obstacle to be bypassed.
+```
+````
+
+## Connections
+
+| Connection | Meaning |
+| ---------- | ------- |
+| [[Hinewai]] | His companion during the escape from [[Karath]] toward [[Aruhe]] and the person who buried him. |
+| [[memorial-grove]] | His grave beneath a fruit tree. |
+| [[aruhe]] | His death became the reason for the island's law. |
+| [[Karath]] | The place he escaped before drowning in the swim toward Aruhe. |
