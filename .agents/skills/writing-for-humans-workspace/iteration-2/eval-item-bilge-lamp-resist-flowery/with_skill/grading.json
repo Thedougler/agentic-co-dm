@@ -1,0 +1,10 @@
+{
+  "eval_id": 3,
+  "run_id": "eval-item-bilge-lamp-resist-flowery-with_skill-iter2",
+  "expectations": [
+    {"text": "Resists flowery", "passed": true, "evidence": "Added concrete sensory detail (weight, cold metal, tarry smell, divots from blows) rather than decorative atmosphere or literary pacing. No 'does not betray' style triple negation."},
+    {"text": "Signal dense", "passed": true, "evidence": "Every addition is a DM handle: weight in palm, cold metal, tarry smell, divots from use, green-tinted underwater light. All pass removal test."},
+    {"text": "Mechanics preserved", "passed": true, "evidence": "All mechanics block intact with correct numbers."},
+    {"text": "Narration tightened", "passed": false, "evidence": "Narration is slightly longer (added weight, cold, smell details). Additions earn their place but it wasn't tightened — it was enriched with signal."}
+  ]
+}

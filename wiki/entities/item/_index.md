@@ -45,7 +45,6 @@ base_confidence: 0.55
 - [[entities/item/driftlight-lantern|Driftlight Lantern]]
 - [[entities/item/eight-seconds|Eight Seconds]]
 - [[entities/item/fate-spinner|Fate Spinner]]
-- [[entities/item/fathomrush-last-berth-false-log|Fathomrush Last Berth False Log]]
 - [[entities/item/fen-glass-newt|Fen-Glass Newt]]
 - [[entities/item/fios-own-curtain|Fio's Own Curtain]]
 - [[entities/item/fish-broth|Fish Broth]]

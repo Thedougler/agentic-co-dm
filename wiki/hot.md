@@ -3,6 +3,7 @@ updated: 2026-09-20T00:41:05Z
 ---
 ## Recent Activity
 - Full-vault structural lint repaired 115 findings across faction, lore, index, synthesis, and session pages; 10 fragmented-tag findings remain as a cross-linker handoff.
+- Merged the duplicate [[fathomrush-last-berth-false-log|Last Berth False Log]] into [[forged-rig-trial-certificate]]; retargeted live links and removed the redundant owner.
 - Integrated Murrat's cloud approach and Ket's one-turn warning into their owner pages; removed the duplicate session-prep notes and repaired the shroud hub links.
 - Scoped lint found no structural hard failures; remaining findings are generic Vale style warnings on the updated owner pages.
 - Scoped creature lint for 54 pages: minted [[kalowe-the-sawek-bounty]], [[ashwall-islands]], and [[gust]] owners, added aliases for existing owners, and exempted creature reference pages from generic Vale heuristics. Structural and Vale findings are clear; fragmented tags remain a [[cross-linker]] handoff.

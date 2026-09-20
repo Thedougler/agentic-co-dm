@@ -178,7 +178,7 @@
 - [[fleet-commanders-chair]] — An unbreakable heavy armchair from the Calveno crater; whoever sits in it sits straighter. ( #shattered-sea #npc)
 - [[flying-boots]] — Flying footwear with Delmar Fisk; provenance contested. ( #shattered-sea #item)
 - [[foreign-coin-packet]] — A sealed packet of foreign currency, awaiting exchange, unclaimed by its original buyer. ( #shattered-sea #item)
-- [[forged-rig-trial-certificate]] — A forged certificate claiming a mid-shelf pressure-rig trial passed depth and pressure tests it never ran. ( #shattered-sea #item)
+- [[forged-rig-trial-certificate]] — A forged mid-shelf pressure-rig certificate, also called the Last Berth False Log, hidden under a loose floorboard at Fathomrush. ( #shattered-sea #item)
 - [[fort-crestwall]] — Fort whose sealed vaults hold Aldric Drave's living bloodline chart. ( #shattered-sea #npc)
 - [[Frankie]] — Rival child on Halewick whose cursed-speech duels with Toby scar the island. ( #shattered-sea #npc)
 - [[gale-cut-storm-sail]] — A herringbone storm sail that holds a vessel's course and full speed through weather that should stop it, sitting unsold in a crate whose manifest is wrong. ( #shattered-sea #item)
@@ -810,7 +810,6 @@
 - [[entities/creature/water-weird|Water Weird]] — A creature holding a flooded Warren chamber.
 - [[entities/item/flask-of-endless-water|Flask of Endless Water]] — An item named in Warren evidence.
 - [[entities/item/room-6-key|Room 6 Key]] — A key named in Kalowe evidence.
-- [[entities/item/fathomrush-last-berth-false-log|Fathomrush Last Berth False Log]] — A false log named in Kalowe evidence.
 ## Folder Indexes
 - [[entities/_index|Entities Index]]
 - [[entities/creature/_index|Creature Index]]

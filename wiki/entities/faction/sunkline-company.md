@@ -46,7 +46,7 @@ The [[tessarine-concordat]] backs Sunkline financially. The [[Shelfworks]] feeds
 
 **Trigger conditions:**
 
-- The forged certificate at the Last Berth surfaces ([[fathomrush-last-berth-false-log|Last Berth False Log]]'s own discovery).
+- The forged certificate at the Last Berth surfaces ([[forged-rig-trial-certificate|Last Berth False Log]]'s own discovery).
 - Investors formally demand a live trial dive.
 
 **Clock:** 6 segments (slow burn), 4 filled. The concealment is already fragile, one loose floorboard from discovery.
