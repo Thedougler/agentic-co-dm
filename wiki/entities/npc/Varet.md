@@ -11,8 +11,12 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: contact
+location: "[[the-flat-water|The Flat Water]], [[Kalowe]]"
+faction: "[[five-blades]]"
 visibility: dm
-summary: "Moucheron contract speaker for the Five Blades mercenary company in Kalowe. Quotes rate and feeding clause before ink touches paper."
+summary: "Moucheron contract speaker for the Five Blades in Kalowe; quotes rate and feeding clause before ink touches paper."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -22,16 +26,53 @@ tier: supporting
 ---
 # Varet
 
-[[Moucheron]] member of the [[five-blades]]. She speaks for the company in contracts, quoting the feeding clause before signing.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-Small even for a Moucheron. She knows where everyone is in the room, a navigator's habit. She has worked the [[Midchain]] long enough to pick up a Kalowe accent in her Sylvan. She brokers contracts through [[The Flat Water]] in [[Kalowe]].
+| **Role**   | Contact |
+| ---------- | ------- |
+| **Nature** | Moucheron contract speaker and mercenary broker |
+| **Home**   | [[the-flat-water|The Flat Water]], [[Kalowe]] |
+| **Wants**  | Secure workable contracts for [[five-blades]], with the rate and feeding clause clear before anyone signs. |
 
-## Stats & Combat
+> **DM thesis:** Varet makes the Five Blades legible as a business before they become a fight.
+```
 
-No stats given in source.
+```col-md
+flexGrow=1
+===
+> [!narration] Varet
+> Varet is small even for a Moucheron. She keeps track of everyone in the room with a navigator's attention, and her Sylvan carries a Kalowe accent learned on the [[Midchain]].
+```
+````
+
+## Running Varet
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Varet brokers a contract through [[the-flat-water|The Flat Water]] in [[Kalowe]]. She quotes the rate and feeding clause before the party sees the ink. **Sample line:** “The rate is first; the feeding clause is not a footnote.”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Varet's posture changes when someone hides the real terms, refuses the feeding clause, or treats the Five Blades' contract as informal. The source does not establish her exact response to a breach.
+```
+````
 
 ## Connections
 
-- [[five-blades]]: the mercenary company she speaks contracts for.
-- [[The Flat Water]]: where she brokers her contracts.
-- [[Ket]]: per Ket's page, would recognize him as a fellow [[Murrat]] native on sight if the party reaches Murrat.
+| Connection | Meaning |
+| ---------- | ------- |
+| [[five-blades]] | Mercenary company Varet speaks contracts for. |
+| [[the-flat-water|The Flat Water]] | Kalowe venue where she brokers contracts. |
+| [[Ket]] | Varet recognizes him as a fellow [[Murrat]] native if the party reaches Murrat. |
