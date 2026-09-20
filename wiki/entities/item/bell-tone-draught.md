@@ -15,9 +15,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: unknown
 kind: consumable
 rarity: common
 attunement: false
+owner: ""
 summary: "Single-sip vial that adds +5 to the first Constitution save to keep a spell this hour."
 provenance:
   extracted: 0.90
