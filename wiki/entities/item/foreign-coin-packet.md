@@ -14,6 +14,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: ""
+kind: durable
+rarity: common
+attunement: false
+owner: "Unknown buyer"
 summary: "A sealed packet of foreign currency, awaiting exchange, unclaimed by its original buyer."
 provenance:
   extracted: 0.85
