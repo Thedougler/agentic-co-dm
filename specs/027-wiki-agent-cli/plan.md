@@ -12,7 +12,7 @@ reason: new public wiki command and default result contract; FR-018 updates agen
 
 ## Summary
 
-One `scripts/wiki` command (`lint`, nested `lint fix`, `query`, `health`) composes existing structural lint, Vale, template-conformance, creative checks, Layer A maintenance, sitting/efficiency/error trackers, and qmd retrieval. `wiki lint` always exposes every configured finding through aggregate rule counts. `wiki lint fix` is the explicit safe-repair path: it selects only registered deterministic/idempotent fixers, applies hash-preconditioned atomic mutations, reruns lint on the same scope, and returns compact applied/skipped/remaining results. `--full` remains the manual detail escape hatch.
+One `scripts/wiki` command (`lint`, nested `lint fix`, `query`, `health`) composes existing structural lint, Vale, template-conformance, creative checks, Layer A maintenance, sitting/efficiency/error trackers, and qmd retrieval. `wiki lint` always exposes every configured finding in aggregate and per-file form by default. `wiki lint fix` is the explicit safe-repair path: it selects only registered deterministic/idempotent fixers, applies hash-preconditioned atomic mutations, reruns lint on the same scope, and returns compact repair metadata plus the complete remaining findings.
 
 ## Technical Context
 
@@ -28,9 +28,9 @@ One `scripts/wiki` command (`lint`, nested `lint fix`, `query`, `health`) compos
 
 **Project Type**: CLI within existing wiki-ops repo.
 
-**Performance Goals**: Unknown path fails in <1s (SC-007). Second identical lint does not re-run Vale on cached pages (SC-003). Fix runs one preflight and one post-fix lint over the resolved scope; default output remains bounded.
+**Performance Goals**: Unknown path fails in <1s (SC-007). Second identical lint does not re-run Vale on cached pages (SC-003). Fix runs one preflight and one post-fix lint over the resolved scope; default output includes the complete finding dump.
 
-**Constraints**: No fuzzy path matching, TTY detection, owner guessing, checker-suppression flags, generic text rewriting, unsafe cross-scope mutation, second benchmark file, skill-eval inventory, or npm wrappers. Machine errors on stdout (named VI split). Agent instructions must teach fix before `--full`.
+**Constraints**: No fuzzy path matching, TTY detection, owner guessing, checker-suppression flags, generic text rewriting, unsafe cross-scope mutation, second benchmark file, skill-eval inventory, or npm wrappers. Machine errors on stdout (named VI split). Agent instructions must teach fix before manual one-file lint.
 
 **Scale/Scope**: One dispatcher, existing cache/worklist/health/timing/pretty helpers, one explicit fixer registry at the repair-plan boundary, and synchronized agent guidance. Registry entries must declare exact action/finding shape, validate preconditions, produce scope-safe `MutationOp` operations, and be no-ops when already satisfied. The initial registry is limited to `delete_redirect_stub`; unsupported deterministic-looking actions remain skipped until their full mutation contracts exist. Findings without eligible registered fixers remain manual.
 

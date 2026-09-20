@@ -221,7 +221,7 @@ Replace the old single-line Recommendation with a ranked **What to Do Next** sec
 
 5. **Source delta** — from Step 2: count of new + modified sources ready to ingest.
 
-6. **Structural health** — run `wiki health`; when a scope is relevant, run `wiki lint <scope>` and surface current hard findings. Do not use `log.md` as a lint ledger.
+6. **Structural health** — run `wiki health`; when a scope is relevant, run `wiki lint <scope>` and surface all current findings. Do not use `log.md` as a lint ledger.
 
 ### 4b: Rank and render
 
@@ -234,7 +234,7 @@ Score each category and emit a ranked list, **capped at 6 items**. Always rank i
 | 3 | Orphan pages | Any pages with zero incoming wikilinks |
 | 4 | Synthesis opportunities | N opportunities from last synthesize run, OR scan overdue |
 | 5 | New/modified sources | Count from delta in Step 2 |
-| 6 | Structural health | Current hard findings from `wiki health` or `wiki lint`, if any |
+| 6 | Structural health | Current findings from `wiki health` or `wiki lint`, if any |
 
 Render as:
 

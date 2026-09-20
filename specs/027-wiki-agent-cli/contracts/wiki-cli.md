@@ -17,7 +17,7 @@ Paths: vault-relative files or prefixes. Zero paths = whole live wiki. Union if 
 
 `--json` is accepted and ignored. `--pretty` is explicit human text. No terminal detection.
 
-`--full` is accepted on lint and lint fix. On lint it adds the detailed per-file findings dump. On lint fix it adds detailed post-fix remaining findings; it does not change which fixers are eligible.
+`--full` is accepted on lint and lint fix as a compatibility no-op. Both commands always return their complete configured findings; the flag does not change fixer eligibility.
 
 The checker backend is internal. Its structural, template, creative, and Vale findings are all surfaced by `wiki lint`; agents do not use evaluator-specific commands.
 
@@ -37,11 +37,9 @@ Exactly one compact JSON object, `sort_keys=True`, no indent. `status` always pr
 
 ### Lint
 
-Required keys: `status`, `counts`, `hard_fail`, `finding_total`, `affected_pages`, `next_page`, `next`, `cache`, `files_checked`, `scope`, `ledger`, `timing`.
+Required keys: `status`, `counts`, `hard_fail`, `finding_total`, `affected_pages`, `next_page`, `next`, `cache`, `files_checked`, `scope`, `ledger`, `timing`, `unique`, `backlog`, and `files`.
 
-Default lint is bounded: `counts` aggregates every configured checker finding by rule; `finding_total` and `affected_pages` cover the complete result; `next` is either null or `{path, findings, bytes, action}`. `next.path` is the smallest dirty file by byte size, with vault-relative path as the tie-breaker. The default object omits `unique`, `backlog`, and `files`.
-
-With `--full`, the object also includes `unique`, `backlog`, and `files`. `files` is an array of `{file, findings}` in argument / path order. `findings` is `{rule, file, line, severity, message}[]` with 1-based `line`. Every configured checker finding is included, including all Vale findings and every severity. There is no hard-only default and no checker-suppression flag.
+Lint includes aggregate counts and every configured checker finding, including all Vale findings and every severity. `files` is an array of `{file, findings}` in argument / path order. `findings` is `{rule, file, line, severity, message}[]` with 1-based `line`. There is no hard-only default or checker-suppression flag.
 
 No nested per-rule finding maps. `unique` values are already-deduped targets. Lint MUST NOT guess, alias-match, or invent owners.
 
@@ -53,7 +51,7 @@ The command selects only explicitly registered fixers whose preconditions are de
 
 Required keys: `status`, `scope`, `applied`, `skipped`, `remaining`, `changed_files`, `cache`, `timing`.
 
-`applied` contains `{rule, action, target, status, changed_files}` records where `status` is `applied` or `no_op`. `skipped` contains `{rule, action, target, reason}` records. `remaining` is the post-fix bounded lint result; `--full` adds its detailed file groups. Unsupported, unsafe, conflicting, or failed-precondition findings are skipped and remain available for manual repair.
+`applied` contains `{rule, action, target, status, changed_files}` records where `status` is `applied` or `no_op`. `skipped` contains `{rule, action, target, reason}` records. `remaining` is the post-fix complete lint result. Unsupported, unsafe, conflicting, or failed-precondition findings are skipped and remain available for manual repair.
 
 Exit code follows the post-fix result: `0` when clean, `1` when findings remain, `2` for bad invocation, unknown scope, or an unrecoverable precondition/error. A second identical run makes no further changes.
 
@@ -72,9 +70,9 @@ No skill-eval pass/fail keys.
 ## `--pretty`
 
 | Command | Text |
-| lint | Scoreboard of counts / totals / next action / cache; `--full` then lists findings as `file:line  RULE  message` |
-| lint fix | Scoreboard of applied / skipped / remaining findings / changed files; `--full` then lists post-fix findings as `file:line  RULE  message` |
-| lint `--pretty --full` | Same human findings list |
+| lint | Scoreboard of counts / totals / next action / cache, then findings as `file:line  RULE  message` |
+| lint fix | Scoreboard of applied / skipped / remaining findings / changed files, then post-fix findings as `file:line  RULE  message` |
+| lint `--pretty --full` | Same human findings list; `--full` is a compatibility no-op |
 | query | One hit per line: `path  title  id` |
 | health | Short scoreboard (pages, bytes, tokens, lint hard total, quiet-relevant counts, slowest command, token-heaviest sitting, first-turn total) then `context.act`, `next.path`, and the `focus` list (`path  source  reason`) |
 

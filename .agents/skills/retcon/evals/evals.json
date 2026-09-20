@@ -30,6 +30,38 @@
         {"text": "Removes the erroneous term completely instead of preserving it as formerly, previously, an alias, redirect, or explanatory parenthetical", "type": "guardrail"},
         {"text": "Repairs stale backlinks and filename or frontmatter references introduced by the historical alias", "type": "quality"}
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "In an isolated temporary vault grounded by the River Slack Basin and Session 12 owners, explicitly retcon a false duplicate recap file that cannot be made true without preserving its error. Delete the whole false file and repair every inbound wikilink, index entry, hot/log reference, manifest entry, and dashboard reference. Never mutate the live vault.",
+      "expected_output": "A whole-file deletion with exhaustive inbound-reference repair and zero remaining filename or identity hits in the temporary vault.",
+      "assertions": [
+        {"text": "Chooses whole-file deletion when the false recap cannot be repaired without preserving the error", "type": "content"},
+        {"text": "Repairs inbound wikilinks, index, hot, log, manifest, and dashboard references", "type": "quality"},
+        {"text": "Rechecks content and filenames and reports zero remaining hits in the isolated vault", "type": "process"},
+        {"text": "Does not mutate the live campaign vault", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "In an isolated temporary vault, explicitly ask for a retcon changing the Aruhe Caves owner from \"the western cave\" to \"the eastern cave\". The supplied evidence supports both candidate owners and does not identify which replacement is true. Begin the retcon but resolve the ambiguity before editing.",
+      "expected_output": "One focused clarification question identifying the ambiguous replacement truth, with no edits until the user resolves it.",
+      "assertions": [
+        {"text": "Recognizes that the replacement truth is ambiguous rather than choosing a candidate", "type": "guardrail"},
+        {"text": "Asks one focused clarification before editing", "type": "process"},
+        {"text": "Makes no temporary-vault edits while the original error or truth remains ambiguous", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "In an isolated temporary copy grounded by the High Eyrie owner, explicitly retcon the false identity slug \"high-eyries\" to the canonical \"high-eyrie\". Clean the filename, title, aliases, frontmatter references, wikilinks, and any dashboard or index identity references, then verify all transformed forms are gone. Never mutate the live vault.",
+      "expected_output": "A complete identity cleanup across filename, slug, frontmatter, aliases, links, and tracking surfaces, followed by transformed-form zero-hit verification.",
+      "assertions": [
+        {"text": "Searches filename, slug, title, aliases, frontmatter, wikilinks, and tracking references for every identity form", "type": "process"},
+        {"text": "Repairs or renames the owner consistently without leaving stale identity references", "type": "content"},
+        {"text": "Verifies zero hits for original, kebab, title, alias, and wikilink forms", "type": "quality"},
+        {"text": "Does not mutate the live campaign vault", "type": "guardrail"}
+      ]
     }
   ]
 }

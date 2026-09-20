@@ -41,24 +41,24 @@ Every implementation task uses `- [ ] [TaskID] [P?] [Story?] Description with an
 
 ---
 
-## Phase 3: User Story 1 - Agent gets a compact lint worklist (Priority: P1) MVP
+## Phase 3: User Story 1 - Agent gets a complete lint worklist (Priority: P1) MVP
 
-**Goal**: Make `wiki lint` run every configured checker while returning a bounded overview and an explicit detailed escape hatch.
+**Goal**: Make `wiki lint` run every configured checker while returning aggregate counts and every detailed finding by default.
 
-**Independent Test**: Run whole-vault, prefix, multi-file, single-file, unknown-path, and `--full` lint against a temporary vault; aggregate counts remain complete, `next` selects the smallest dirty file, and unknown paths do not scan.
+**Independent Test**: Run whole-vault, prefix, multi-file, single-file, unknown-path, and compatibility `--full` lint against a temporary vault; complete findings remain available by default, `next` selects the smallest dirty file, and unknown paths do not scan.
 
 ### Tests for User Story 1
 
-- [ ] T008 [US1] Add behavioral coverage for whole-vault, prefix, multi-file, single-file, unknown-path, and `--full` lint contracts in `tests/test_wiki_cli.py`.
+- [ ] T008 [US1] Add behavioral coverage for whole-vault, prefix, multi-file, single-file, unknown-path, and default-complete lint contracts in `tests/test_wiki_cli.py`.
 
 ### Implementation for User Story 1
 
 - [ ] T009 [US1] Route structural, template, creative, prose/Vale, and corpus findings through the public lint dispatcher without checker-suppression paths in `scripts/wiki`, `scripts/wiki-lint`, and `tools/wiki_ops/worklist.py`.
-- [ ] T010 [US1] Implement bounded aggregate counts, finding totals, affected-page totals, cache/scope metadata, and actionable `next` selection by byte size then vault-relative path in `tools/wiki_ops/worklist.py`.
-- [ ] T011 [US1] Implement flat 1-based detailed findings, `unique`, `backlog`, and per-file groups only for `--full` while preserving the bounded default result in `tools/wiki_ops/worklist.py` and `scripts/wiki`.
+- [ ] T010 [US1] Implement aggregate counts, complete finding totals, affected-page totals, cache/scope metadata, and actionable `next` selection by byte size then vault-relative path in `tools/wiki_ops/worklist.py`.
+- [ ] T011 [US1] Implement flat 1-based detailed findings, `unique`, `backlog`, and per-file groups in the default result while accepting `--full` as a compatibility no-op in `tools/wiki_ops/worklist.py` and `scripts/wiki`.
 - [ ] T012 [US1] Implement lint exit semantics and compact/pretty result rendering for clean, findings, and error states in `scripts/wiki` and `tools/wiki_ops/pretty.py`.
 
-**Checkpoint**: User Story 1 is independently runnable through `scripts/wiki lint` and `scripts/wiki lint --full`.
+**Checkpoint**: User Story 1 is independently runnable through `scripts/wiki lint`; `scripts/wiki lint --full` is equivalent.
 
 ---
 
@@ -164,7 +164,7 @@ Every implementation task uses `- [ ] [TaskID] [P?] [Story?] Description with an
 
 **Purpose**: Synchronize agent guidance, validate real surfaces, and close the feature against the design artifacts.
 
-- [ ] T031 [P] Update the canonical lint, status, ingest, recap, and standing command guidance to teach `wiki lint fix <next.path>` before manual `--full` review and `wiki health` followed by `next` in `.agents/skills/wiki-lint/SKILL.md`, `.agents/skills/wiki-lint/evals/evals.json`, `.agents/skills/wiki-status/SKILL.md`, `.agents/skills/wiki-ingest/SKILL.md`, `.agents/skills/session-recap/SKILL.md`, and `AGENTS.md`.
+- [ ] T031 [P] Update the canonical lint, status, ingest, recap, and standing command guidance to teach one whole-vault `wiki lint fix`, then manual one-file `wiki lint <next.path>` repair and `wiki health` followed by `next` in `.agents/skills/wiki-lint/SKILL.md`, `.agents/skills/wiki-lint/evals/evals.json`, `.agents/skills/wiki-status/SKILL.md`, `.agents/skills/wiki-ingest/SKILL.md`, `.agents/skills/session-recap/SKILL.md`, and `AGENTS.md`.
 - [ ] T032 [P] Synchronize equivalent lint guidance in `.kiro/skills/wiki-lint/SKILL.md`, `.pi/skills/wiki-lint/SKILL.md`, `.windsurf/skills/wiki-lint/SKILL.md`, and `.cursor/skills/wiki-lint/SKILL.md`.
 - [ ] T033 [P] Add or update the public command and fix-result contract references in `docs/cli.md` and `specs/027-wiki-agent-cli/contracts/wiki-cli.md`.
 - [ ] T034 Run the feature quickstart scenarios V-001 through V-011 and record any unavailable qmd/live-vault blocker in `specs/027-wiki-agent-cli/quickstart.md`.

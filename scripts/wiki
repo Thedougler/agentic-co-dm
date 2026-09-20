@@ -310,7 +310,7 @@ def _compute_lint(
         scope={"paths": list(args.paths)},
         cache={"hits": hits, "misses": misses, "vale_skipped": vale_skipped},
         hard_keys=hard_rule_set,
-        full=bool(getattr(args, "full", False) or len(args.paths) > 1),
+        full=bool(getattr(args, "full", True)),
         vault=vault,
         page_bytes=page_bytes,
         file_order=paths,
@@ -518,7 +518,7 @@ def _tokens(vault: Path, paths: list[str], args: argparse.Namespace) -> int | No
 
 
 def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
-    lint_args = argparse.Namespace(paths=args.paths)
+    lint_args = argparse.Namespace(paths=args.paths, full=False)
     times: list[tuple[str, int]] = []
     lint, lint_code = _timed("health.lint", lambda: _compute_lint(lint_args, vault), times)
     paths = _resolve_paths(vault, args.paths)
@@ -606,7 +606,7 @@ def parser() -> argparse.ArgumentParser:
     commands = root.add_subparsers(dest="command", required=True)
     lint = commands.add_parser("lint")
     lint.add_argument("paths", nargs="*")
-    lint.add_argument("--full", action="store_true")
+    lint.add_argument("--full", action="store_true", default=True, help="compatibility no-op; lint is always full")
     lint.add_argument("--pretty", action="store_true")
     lint.add_argument("--json", action="store_true")
     query = commands.add_parser("query")

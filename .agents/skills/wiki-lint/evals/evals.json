@@ -38,15 +38,15 @@
     },
     {
       "id": 2,
-      "prompt": "Run a full vault lint in --check mode. Report what you find but don't fix anything.",
-      "expected_output": "A compact lint overview with aggregate counts and an actionable next.path, with no files modified; use wiki lint <next.path> --full for line-level findings.",
+      "prompt": "Run a full vault lint. Report what you find but don't fix anything.",
+      "expected_output": "A full lint result with aggregate counts and every finding, with no files modified; identify next.path as the first file for manual repair.",
       "assertions": [
         {
           "text": "No files are modified — report only, no edits or renames",
           "type": "guardrail"
         },
         {
-          "text": "Runs wiki lint, uses aggregate counts and next.path, then requests --full only for the selected page",
+          "text": "Runs wiki lint, uses aggregate counts and next.path as the first manual repair target",
           "type": "process"
         },
         {

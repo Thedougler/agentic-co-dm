@@ -12,9 +12,9 @@ Present on every successful or findings `wiki` stdout object.
 | `duration_ms` | int | Wall clock, ≥ 0 |
 | `cache` | `{hits, misses, vale_skipped}` \| omitted | Lint/health only |
 
-## Worklist (lint overview + optional dump)
+## Worklist (lint overview + complete dump)
 
-Default `wiki lint` object is bounded regardless of scope size. `--full` adds the detailed dump.
+Default `wiki lint` returns aggregate counts and the complete finding dump. `--full` is a compatibility no-op.
 
 | Field | Type | Required | Notes |
 |---|---|---|---|
@@ -30,12 +30,12 @@ Default `wiki lint` object is bounded regardless of scope size. `--full` adds th
 | `scope` | `{paths: string[]}` | yes | Vault-relative args; `[]` means whole vault |
 | `ledger` | object | yes | Open operational failures |
 | `timing` | Timing | yes | |
-| `unique` | map rule → string[] | `--full` | Already-deduped targets per rule |
-| `backlog` | `{page, findings, bytes}[]` | `--full` | Dirty pages, sorted bytes then path |
-| `files` | File group[] | `--full` | One block per file with findings, argument/path order |
+| `unique` | map rule → string[] | yes | Already-deduped targets per rule |
+| `backlog` | `{page, findings, bytes}[]` | yes | Dirty pages, sorted bytes then path |
+| `files` | File group[] | yes | One block per file with findings, argument/path order |
 | `error` | string | status=error | |
 
-`next.path` is the smallest dirty file by byte size; vault-relative path breaks ties. Its `action` tells the agent to run `wiki lint fix <path>`, rerun the affected scope, and use `wiki lint <path> --full` only for findings that remain. Default output omits `unique`, `backlog`, and `files`, so its size does not grow with the number of dirty pages. Every configured checker and severity still contributes to the aggregate counts. `--full` findings are flat records, never nested per-rule maps. `unique` MUST NOT invent owners.
+`next.path` is the smallest dirty file by byte size; vault-relative path breaks ties. Its `action` tells the agent to run `wiki lint fix <path>`, rerun the affected scope, and use `wiki lint <path>` for remaining findings. Findings are flat records, never nested per-rule maps. Every configured checker and severity contributes to the aggregate counts. `unique` MUST NOT…
 
 ### File group
 

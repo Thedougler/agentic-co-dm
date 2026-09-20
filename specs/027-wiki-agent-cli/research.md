@@ -32,15 +32,22 @@ context_omitted: creative-lint hydra internals, identity-resolution intelligence
 
 **Alternatives considered:** `isatty()` pretty-print — spec out of scope.
 
-## 4. Bounded lint overview with explicit detail
+## 4. Complete lint findings by default
 
-**Decision:** Default `wiki lint` returns aggregate counts, total findings, affected-page count, cache/scope metadata, and `next`. `next` is `{path, findings, bytes, action}` for the smallest dirty file by bytes, then vault-relative path. The default omits `unique`, `backlog`, and per-file findings so whole-wiki output stays bounded. `--full` adds the complete Vale-included findings grouped by file; each finding is `{rule, file, line, severity, message}` with 1-based `line`.
+**Decision:** Default `wiki lint` returns aggregate counts, total findings,
+affected-page count, cache/scope metadata, `next`, and complete
+Vale-included findings grouped by file. Each finding is
+`{rule, file, line, severity, message}` with 1-based `line`. `--full` remains
+accepted as a compatibility no-op. Health live lint continues to use the
+compact overview because health is a summary surface, not the lint worklist.
 
-Health live lint continues to use the compact overview.
+**Rationale:** The agent completing the task is the automation. A full result
+lets it manually repair every remaining finding one file at a time without a
+second detail command or a bulk workaround.
 
-**Rationale:** Bulk linting 2–1000 files should present one actionable work item without forcing the agent to load every finding. The detailed escape hatch keeps repair evidence available for the selected page.
-
-**Alternatives considered:** Always dumping grouped findings — token growth scales with dirty pages. A hard-coded one-file limit — hides aggregate issue coverage and makes scope-dependent behavior surprising.
+**Alternatives considered:** A bounded default with an explicit detail escape
+hatch was rejected because it encourages agents to avoid the remaining work
+when the backlog is large.
 
 ## 5. Checker cache
 
@@ -76,19 +83,30 @@ Health live lint continues to use the compact overview.
 
 ## 9. Agent instructions
 
-**Decision:** Update lint/query/health invocations to `scripts/wiki`. The lint workflow is bounded overview → `wiki lint fix <next.path>` → scoped rerun → `wiki lint <next.path> --full` only for remaining manual findings. Health: run `scripts/wiki health`, then act on `next` (then remaining `focus`) without a DM wait. Creative hydra stays on `scripts/wiki-lint`.
+**Decision:** Update lint/query/health invocations to `scripts/wiki`. The lint
+workflow is one whole-vault `wiki lint fix` sweep, then manual one-file repair
+with `wiki lint <next.path>` until the worklist is empty. Health: run
+`scripts/wiki health`, then act on `next` (then remaining `focus`) without a DM
+wait. Creative hydra stays on `scripts/wiki-lint`.
 
-**Rationale:** FR-018/SC-008/SC-009.
-
-**Alternatives considered:** Keep agent instructions on the backend `scripts/wiki-lint` command — that would preserve the hard/soft omission path and bypass the bounded public worklist.
+**Rationale:** FR-018/SC-008/SC-009. The agent completing the task is the
+automation; remaining findings are not a reason to add another fixer or batch
+path.
 
 ## 10. Tests
 
-**Decision:** Extend pytest temp-vault coverage with single-file, bulk/prefix, whole-vault, safe-fixer application, unsupported-finding preservation, post-fix rerun, idempotence, structured applied/skipped/remaining output, and fix-first instruction order. Keep existing cache, bounded lint, query, health, and cold-agent checks.
+**Decision:** Extend pytest temp-vault coverage with single-file, bulk/prefix,
+whole-vault, safe-fixer application, unsupported-finding preservation,
+post-fix rerun, idempotence, structured applied/skipped/remaining output,
+default-complete findings, and fix-first instruction order. Keep existing cache,
+query, health, and cold-agent checks.
 
-**Rationale:** Constitution IV/XXIII. The default result must remain token-bounded as the wiki grows.
+**Rationale:** Constitution IV/XXIII. The default result must give the agent
+the complete manual worklist.
 
-**Alternatives considered:** Keep complete findings in the default object — directly contradicts the bounded bulk-lint requirement.
+**Alternatives considered:** A bounded default with an explicit detail escape
+hatch was rejected because it encourages agents to avoid remaining work.
+
 
 ## 11. Health trends (existing trackers)
 

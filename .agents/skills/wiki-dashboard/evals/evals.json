@@ -31,6 +31,27 @@
         {"text": "Does not modify an existing note to embed the dashboard without explicit approval", "type": "guardrail"},
         {"text": "If an embed is shown, identifies it as an optional instruction rather than silently editing the existing note", "type": "quality"}
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "Create a normal dashboard of the Aruhe entity pages, with no request for Dataview, grouping, or computed columns. Use the default dashboard technology and write the dashboard in the canonical metadata location.",
+      "expected_output": "A native Bases dashboard under _meta, with no unnecessary Dataview query or technology-selection detour.",
+      "assertions": [
+        {"text": "Selects Obsidian Bases by default for a normal dashboard request", "type": "process"},
+        {"text": "Writes a valid .base dashboard under _meta", "type": "structure"},
+        {"text": "Does not invent a Dataview query when no Dataview-specific need was requested", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Create a stale-content dashboard for the Aruhe wiki slice using a computed days_stale field, display the formula column, write it under _meta, log the dashboard, and refresh the QMD collection after the vault write.",
+      "expected_output": "A computed dashboard with a valid stale-days formula and formula property references, followed by the documented QMD update and verification report.",
+      "assertions": [
+        {"text": "Defines a computed days_stale formula from note.updated and references it as formula.days_stale", "type": "structure"},
+        {"text": "Dashboard population and stale sort behavior match the Aruhe wiki slice", "type": "quality"},
+        {"text": "Writes under _meta and appends the dashboard log entry without manifest/index mutation", "type": "process"},
+        {"text": "Runs the documented post-write QMD update and reports its verification or failure separately", "type": "process"}
+      ]
     }
   ]
 }

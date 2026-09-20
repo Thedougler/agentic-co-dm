@@ -30,6 +30,39 @@
         {"text": "Does not reuse a visually similar map whose owner is a different site", "type": "guardrail"},
         {"text": "Treats a variant as acceptable only when the owner evidence establishes the same site and layout with a changed state", "type": "content"}
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "Create a battlemap for the accepted Uncertainty ship. Use vehicle/deck-plan mode: make the hull the tactical architecture, distinguish playable weather-deck floor from scenic rigging, show bow/stern orientation, and ground the deck zones in the campaign's Uncertainty owner and deck-layout material.",
+      "expected_output": "A long-axial, playable ship deck plan with clear hull footprint, deck inventory, thresholds, vertical transitions, dangerous edges, and a visible distinction between walkable deck and scenic envelope.",
+      "assertions": [
+        {"text": "Detects vehicle/deck-plan mode from the Uncertainty ship request", "type": "process"},
+        {"text": "Brief includes hull outline, playable deck inventory, rooms or thresholds, vertical transitions, dangerous edges, and scenic-envelope separation", "type": "structure"},
+        {"text": "Vessel orientation, routes, and cover are grounded in Uncertainty's campaign identity and deck material", "type": "content"},
+        {"text": "Map reads as a playable deck plan rather than a ship-shaped illustration", "type": "quality"}
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Create a linked three-layer map set for the Uncertainty: weather deck, interior deck, and hold. Use the ship's shared footprint and orientation anchors, register hatches and stairs across layers, and deliver one clean import line per layer in elevation order.",
+      "expected_output": "Three separately importable layers with aligned footprint and anchors, matching vertical connections, distinct tactical grammars, and no baked labels or grid.",
+      "assertions": [
+        {"text": "Detects multi-level/map-set mode and generates one image per layer", "type": "process"},
+        {"text": "Brief names a shared footprint, at least two orientation anchors, layer inventory, and vertical connections with matching positions", "type": "structure"},
+        {"text": "Layers align in footprint and anchors while retaining distinct deck, interior, and hold tactics", "type": "quality"},
+        {"text": "Delivers import lines in elevation order with no baked grid, labels, or branding", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Generate a map for the River Slack Basin. The first image is beautiful and matches the Aruhe palette, but at normal VTT zoom the route, cover, staging area, and line-of-sight breaks cannot be read. Judge it, reject it, apply one repair line, and regenerate within the documented repair cap.",
+      "expected_output": "The skill rejects the visually attractive but tactically unusable frame, applies a targeted repair line without rewriting the prompt, and either produces a tactical replacement or reports the remaining failure after two repairs.",
+      "assertions": [
+        {"text": "Judge identifies the tactical failure even though the image is visually good", "type": "quality"},
+        {"text": "Rejects the frame because normal-zoom routes, cover, staging, or LoS reads fail", "type": "guardrail"},
+        {"text": "Uses a documented repair line and regenerates rather than silently delivering the rejected image", "type": "process"},
+        {"text": "Does not exceed two repairs and names any remaining failure", "type": "quality"}
+      ]
     }
   ]
 }

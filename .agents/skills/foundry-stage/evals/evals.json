@@ -33,6 +33,50 @@
         {"text": "Does not duplicate existing actors or items", "type": "guardrail"},
         {"text": "Reports staged, pre-existing, and unresolved entities separately", "type": "quality"}
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "Stage the accepted Lesser Black Lotus item from the campaign wiki. Check whether the item already exists in Foundry, map its description, rarity, and attunement, and wire it to the owner named by the item's frontmatter if that owner is already staged.",
+      "expected_output": "An idempotent item staging run that checks first, maps the item accurately, attaches it to its resolved owner when requested by frontmatter, and reports any missing owner.",
+      "assertions": [
+        {"text": "Checks Foundry world items for the Lesser Black Lotus before creating anything", "type": "process"},
+        {"text": "Maps the wiki item's description, rarity, attunement, and item type into the Foundry item", "type": "content"},
+        {"text": "Wires the item to the frontmatter owner only when that owner resolves in Foundry", "type": "process"},
+        {"text": "Does not create duplicate items and reports an unresolved owner instead of inventing one", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Stage the Session 11 Aftermath journal for Foundry. Keep the [!narration] block as player-visible narration and put all other session facts, secrets, and DM procedures on the DM page. Convert resolvable campaign links to Foundry UUID links and leave unresolved ones as plain bold text.",
+      "expected_output": "A journal with separate DM and Player View pages, correct visibility boundaries, and safe wikilink conversion.",
+      "assertions": [
+        {"text": "Creates separate DM-facing and Player View journal pages", "type": "structure"},
+        {"text": "Player View contains only the source [!narration] content and no DM facts or procedures", "type": "guardrail"},
+        {"text": "DM page preserves non-narration session facts and secrets", "type": "content"},
+        {"text": "Converts links to existing Foundry journals into @UUID links and renders unresolved links as plain bold text", "type": "process"}
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Stage the Session 11 Angry Birds scene. Its zones require a tactical map, but no battlemap image is available in the supplied materials. Check for an existing scene, hand the map work to foundry-battlemap, and pause scene creation until the asset is ready.",
+      "expected_output": "A scene check followed by a precise battlemap handoff and no invented map, scene, or token coordinates.",
+      "assertions": [
+        {"text": "Checks whether the Angry Birds scene already exists before writing", "type": "process"},
+        {"text": "Hands missing battlemap work to foundry-battlemap and reports the dependency", "type": "process"},
+        {"text": "Does not invent a replacement map or pretend scene creation completed without the required asset", "type": "guardrail"},
+        {"text": "Does not invent token coordinates when the source note does not provide them", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Stage the Aruhe River Otter again. Foundry already contains an actor with that name, including a token and custom features. The request does not say whether to update or skip; report the existing actor and ask which operation is wanted. If the user then chooses update, update the existing actor rather than creating a second one.",
+      "expected_output": "The skill handles the existing-entity decision explicitly, preserves the actor identity, and updates in place only after update is selected.",
+      "assertions": [
+        {"text": "Detects the existing actor and reports its status before changing it", "type": "process"},
+        {"text": "Asks whether to update or skip when the request does not choose a branch", "type": "guardrail"},
+        {"text": "On explicit update, preserves the existing actor identity and updates in place", "type": "content"},
+        {"text": "Never creates a duplicate actor for the same owner", "type": "guardrail"}
+      ]
     }
   ]
 }

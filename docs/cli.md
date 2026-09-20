@@ -10,4 +10,4 @@ wiki mutate replace_section --file page.md --heading-path Overview --content-fil
 wiki repair --plan-file repair-plan.json --approve
 ```
 
-Lint output keeps stable `status`, aggregate `counts`, `next`, `scope`, `cache`, `timing`, and `ledger` keys; `--full` adds flat findings. Mutations require vault-relative targets and semantic preconditions; use `--dry-run` before applying and inspect the structured result before approval.
+`wiki lint` runs every configured checker and returns aggregate counts plus every flat finding by default. `--full` remains accepted as a compatibility no-op. Mutations require vault-relative targets and semantic preconditions; use `--dry-run` before applying and inspect the structured result before approval.

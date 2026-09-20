@@ -51,7 +51,7 @@ def test_unified_mutation_uses_configured_vault_and_relative_paths(tmp_path: Pat
     assert data["status"] == "applied"
     assert "tags: [new]" in (tmp_path / "page.md").read_text(encoding="utf-8")
 
-def test_lint_default_is_compact_and_full_is_actionable(tmp_path: Path):
+def test_lint_default_is_full_and_actionable(tmp_path: Path):
     page(tmp_path, "entities/npc/large.md", title="Large")
     page(tmp_path, "entities/npc/small.md", title="Small")
     (tmp_path / "entities/npc/large.md").write_text(
@@ -63,25 +63,24 @@ def test_lint_default_is_compact_and_full_is_actionable(tmp_path: Path):
     data = payload(bulk)
     required = {
         "status", "counts", "hard_fail", "finding_total", "affected_pages",
-        "next_page", "next", "cache", "files_checked", "scope", "timing",
+        "next_page", "next", "cache", "files_checked", "scope", "ledger", "timing",
+        "unique", "backlog", "files",
     }
     assert required <= data.keys()
-    assert "files" not in data
-    assert "unique" not in data
-    assert "backlog" not in data
     assert data["timing"]["command"] == "lint"
     assert data["scope"]["paths"] == []
     assert data["next"]["path"] == "entities/npc/small.md"
     assert data["next"]["bytes"] < (tmp_path / "entities/npc/large.md").stat().st_size
-
-    full = payload(run_cli(tmp_path, "lint", "--full"))
-    assert full["files"][0]["findings"]
     base_keys = {"rule", "file", "line", "severity", "message"}
     assert all(
         base_keys <= set(item)
-        for group in full["files"]
+        for group in data["files"]
         for item in group["findings"]
     )
+
+    compatibility = payload(run_cli(tmp_path, "lint", "--full"))
+    assert compatibility["finding_total"] == data["finding_total"]
+    assert compatibility["files"]
 
 def test_multi_path_lint_includes_grouped_findings(tmp_path: Path):
     page(tmp_path, "a.md")
@@ -89,7 +88,7 @@ def test_multi_path_lint_includes_grouped_findings(tmp_path: Path):
     result = payload(run_cli(tmp_path, "lint", "a.md", "b.md"))
     assert {item["file"] for item in result["files"]} == {"a.md", "b.md"}
 
-def test_default_lint_summarizes_soft_and_vale_findings(tmp_path: Path):
+def test_default_lint_includes_soft_and_vale_findings(tmp_path: Path):
     target = tmp_path / "npc.md"
     target.write_text(
         "---\n"
@@ -113,17 +112,18 @@ def test_default_lint_summarizes_soft_and_vale_findings(tmp_path: Path):
     assert result.returncode == 1, result.stderr
     data = payload(result)
     assert "snake_case_labels" in set(data["counts"])
-    assert "files" not in data
-
-    full = payload(run_cli(tmp_path, "lint", "npc.md", "--full"))
-    findings = [item for group in full["files"] for item in group["findings"]]
+    findings = [item for group in data["files"] for item in group["findings"]]
     assert any(item["rule"] == "snake_case_labels" for item in findings)
+
+    compatibility = payload(run_cli(tmp_path, "lint", "npc.md", "--full"))
+    compatibility_findings = [item for group in compatibility["files"] for item in group["findings"]]
+    assert any(item["rule"] == "snake_case_labels" for item in compatibility_findings)
 
     suppressed = run_cli(tmp_path, "lint", "npc.md", "--no-vale")
     assert suppressed.returncode == 2
 
 
-def test_two_named_files_are_separate_full_blocks(tmp_path: Path):
+def test_two_named_files_are_separate_default_blocks(tmp_path: Path):
     page(tmp_path, "entities/npc/one.md", title="One")
     page(tmp_path, "entities/npc/two.md", title="Two")
     result = run_cli(
@@ -131,9 +131,7 @@ def test_two_named_files_are_separate_full_blocks(tmp_path: Path):
         "lint",
         "entities/npc/two.md",
         "entities/npc/one.md",
-        "--full",
     )
-    assert result.returncode in (0, 1), result.stderr
     data = payload(result)
     files = [group["file"] for group in data["files"]]
     if len(files) >= 2:
@@ -213,7 +211,7 @@ def test_scoped_lint_keeps_other_cache_entries(tmp_path: Path):
     assert again["cache"]["hits"] >= 1
 
 
-def test_pretty_default_is_compact_and_full_lists_findings(tmp_path: Path):
+def test_pretty_default_lists_findings_and_full_is_compatible(tmp_path: Path):
     page(tmp_path, "one.md")
     default = run_cli(tmp_path, "lint")
     pretty = run_cli(tmp_path, "lint", "--pretty")
@@ -222,7 +220,7 @@ def test_pretty_default_is_compact_and_full_lists_findings(tmp_path: Path):
     assert pretty.stdout.strip()
     assert not pretty.stdout.lstrip().startswith("{")
     assert "Next page:" in pretty.stdout
-    assert len(pretty_full.stdout) >= len(pretty.stdout)
+    assert pretty_full.stdout == pretty.stdout
 
 
 def test_query_compact_hits_and_backend_failure(tmp_path: Path):

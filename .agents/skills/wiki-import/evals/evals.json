@@ -42,6 +42,39 @@
         {"text": "Uses the correct source type and accurate created, skipped, and merged counts", "type": "content"},
         {"text": "Does not count skipped or merged pages as newly created pages in manifest stats", "type": "quality"}
       ]
+    },
+    {
+      "id": 5,
+      "prompt": "In an isolated temporary vault grounded by the Aruhe Caves owner, import a malformed source: the JSON is valid but lacks the required links array. Validate it and report the error. Do not write any pages or metadata, and do not touch the live vault.",
+      "expected_output": "A validation error that stops before preview or writes, with the temporary vault byte-for-byte unchanged.",
+      "assertions": [
+        {"text": "Validates required graph.json structure before attempting import", "type": "process"},
+        {"text": "Reports the missing required links array and stops", "type": "content"},
+        {"text": "Performs zero page or metadata writes after validation failure", "type": "guardrail"},
+        {"text": "Does not touch the live campaign vault", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "In an isolated temporary vault grounded by the campaign index, import the same unchanged graph.json twice in default merge mode. Report both summaries and compare the resulting pages, links, manifest stats, and index/log/hot entries.",
+      "expected_output": "The second import is idempotent: it creates no duplicate pages or links, does not inflate source/page counts, and reports the expected repeat-import behavior; timestamp refreshes are distinguished from substantive changes.",
+      "assertions": [
+        {"text": "Second default merge creates no duplicate pages, relationships, or related links", "type": "guardrail"},
+        {"text": "Manifest stats and index entries are not inflated by repeating the same import", "type": "quality"},
+        {"text": "Reports timestamp refresh separately from substantive content changes", "type": "content"},
+        {"text": "Runs entirely against the isolated temporary vault", "type": "process"}
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Import a graph.json produced by a public export of the Aruhe knowledge slice. Its graph metadata records that visibility/internal and visibility/pii pages were filtered out. Import it into an isolated temporary vault and include the filtered-set metadata and counts in the summary.",
+      "expected_output": "Only the exported filtered set is imported, excluded nodes do not reappear, and the summary explicitly reports the source filtering metadata and counts.",
+      "assertions": [
+        {"text": "Imports only nodes present in the filtered graph and does not reconstruct excluded pages", "type": "guardrail"},
+        {"text": "Preserves valid links among included nodes without creating edges to excluded content", "type": "content"},
+        {"text": "Notes the filtered source metadata and accurate imported counts in the summary", "type": "structure"},
+        {"text": "Does not write to the live vault", "type": "guardrail"}
+      ]
     }
   ]
 }

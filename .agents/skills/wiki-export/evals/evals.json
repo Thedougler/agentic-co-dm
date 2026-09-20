@@ -41,6 +41,27 @@
         {"text": "Stops when fewer than five eligible pages exist", "type": "guardrail"},
         {"text": "Does not produce a misleading graph from the tiny vault", "type": "quality"}
       ]
+    },
+    {
+      "id": 5,
+      "prompt": "Run wiki-export twice against the same isolated Aruhe fixture snapshot with the export timestamp fixed. Compare graph.json, GraphML, Cypher, and HTML byte-for-byte and compare their node, edge, and summary counts.",
+      "expected_output": "Repeat exports are deterministic: every generated format and count is identical for the same snapshot and fixed timestamp.",
+      "assertions": [
+        {"text": "Produces identical graph.json, GraphML, Cypher, and HTML for the same snapshot and fixed timestamp", "type": "quality"},
+        {"text": "Node, edge, community, and summary counts remain identical across runs", "type": "content"},
+        {"text": "Does not mutate the isolated source pages between exports", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Export an isolated Aruhe fixture containing a broken body wikilink, a relationships entry whose target page is absent, a path-form forward reference, and a filtered-out target. Produce every graph format plus the OKF bundle and report how each unresolved target is handled.",
+      "expected_output": "Graph formats contain only valid node edges; OKF preserves restorable path-form forward references, renders bare missing or filtered targets as plain text, and does not invent relationships.",
+      "assertions": [
+        {"text": "Skips broken body links and missing relationship targets from graph edges across graph.json, GraphML, Cypher, and HTML", "type": "guardrail"},
+        {"text": "Preserves an unresolved path-form forward reference in OKF as a relative Markdown link that wiki-import can restore", "type": "content"},
+        {"text": "Renders bare missing and filtered-out targets as plain text rather than invalid links", "type": "content"},
+        {"text": "Reports node and edge counts consistently across every generated format", "type": "structure"}
+      ]
     }
   ]
 }

@@ -160,12 +160,12 @@ def build_worklist(
     cache: Mapping[str, Any] | None = None,
     hard_keys: Iterable[str] | None = None,
     include_findings: bool = False,
-    full: bool = False,
+    full: bool = True,
     vault: str | Path | None = None,
     page_bytes: Mapping[Any, Any] | None = None,
     file_order: Iterable[str] | None = None,
 ) -> dict[str, Any]:
-    """Build a bounded lint overview, optionally including detailed findings."""
+    """Build the complete lint worklist with aggregate and file findings."""
     flat = list(_records(findings, vault=vault))
     counts: dict[str, int] = {}
     targets: dict[str, set[str]] = {}
@@ -231,7 +231,7 @@ def build_worklist(
                 "bytes": next_item["bytes"],
                 "action": (
                     f"Run wiki lint fix {next_item['page']}, rerun the affected scope, "
-                    f"then use wiki lint {next_item['page']} --full only for remaining findings."
+                    f"then use wiki lint {next_item['page']} for remaining findings."
                 ),
             }
             if next_item

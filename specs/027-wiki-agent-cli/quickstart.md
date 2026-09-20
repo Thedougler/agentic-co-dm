@@ -17,31 +17,31 @@ chmod +x scripts/wiki
 
 No extra packages. Vale and tiktoken are already project dependencies.
 
-## V-001 Bounded bulk lint and smallest next page (SC-001, SC-002)
+## V-001 Full bulk lint and smallest next page (SC-001, SC-002)
 
 ```bash
 .venv/bin/python scripts/wiki lint
 ```
 
-Expect: compact JSON whose aggregate `counts`, `finding_total`, and `affected_pages` cover all configured checkers. `next.path` is the smallest dirty file by bytes then path, and `next.action` tells the agent to run `wiki lint fix <next.path>`. Default output has no `files`, `unique`, or `backlog` dump.
+Expect: JSON whose aggregate `counts`, `finding_total`, `affected_pages`, and
+per-file `files` findings cover all configured checkers. `next.path` is the
+smallest dirty file by bytes then path, and `next.action` tells the agent to run
+`wiki lint fix <next.path>`.
 
 ```bash
-.venv/bin/python scripts/wiki lint fix entities/npc/<next-page>.md
+.venv/bin/python scripts/wiki lint fix
 ```
 
-Expect: one compact fix result with `applied`, `skipped`, `remaining`, `changed_files`, and post-fix `timing`. Only registered deterministic/idempotent fixers change the selected page.
+Expect: one fix result with `applied`, `skipped`, `remaining`, `changed_files`,
+and post-fix timing. Only registered deterministic/idempotent fixers change the
+vault.
 
 ```bash
 .venv/bin/python scripts/wiki lint entities/npc/<next-page>.md
 ```
 
-Expect: the affected scope is clean or reports the findings that remain. Use `--full` only when line-level manual repair is needed:
-
-```bash
-.venv/bin/python scripts/wiki lint entities/npc/<next-page>.md --full
-```
-
-Expect: detailed findings for only the recommended page.
+Expect: complete findings for the selected page. Manually repair that one file,
+rerun the same command until clean, then proceed to the next `next.path`.
 
 ## V-011 Safe fix scopes and idempotence (SC-014, SC-015, SC-016)
 
@@ -60,7 +60,7 @@ Expect: single-file, multi-file/prefix, and whole-vault scopes are accepted. The
 .venv/bin/python scripts/wiki lint entities/npc/page-a.md entities/npc/page-b.md
 ```
 
-Expect: the same bounded overview shape, with `next` selected from the dirty files in scope. Add `wiki lint fix <path>` before `--full` to apply safe registered fixes; use `--full` only for findings that remain.
+Expect: the same complete finding shape, with `next` selected from the dirty files in scope. `--full` is accepted but changes nothing.
 
 ## V-003 Unknown path fails closed (SC-007)
 
@@ -127,4 +127,4 @@ Temp vault with no `sittings.jsonl`, `errors.md`, or traces. `wiki health` still
 
 Temp-vault tests cover V-001–V-004, V-006–V-007, and V-010 seams. V-005 needs the live wiki / qmd when available.
 
-`wiki-lint` documents `wiki lint` as the sole agent-facing lint command with a bounded default overview. Its repair sequence is `wiki lint fix <next.path>`, scoped rerun, then `wiki lint <next.path> --full` only for remaining findings. Health docs say run `scripts/wiki health` then do `next`.
+`wiki-lint` documents `wiki lint` as the sole agent-facing lint command with a complete default finding dump. Its repair sequence is one whole-vault `wiki lint fix`, then manual one-file repair using `wiki lint <next.path>` until the worklist is empty. Health docs say run `scripts/wiki health` then do `next`. 

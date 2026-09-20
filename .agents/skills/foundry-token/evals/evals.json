@@ -31,6 +31,28 @@
         {"text": "Refuses draft, proposed, or rejected source work and names the lifecycle gate", "type": "guardrail"},
         {"text": "Does not generate, finalize, or stage token art after the refusal", "type": "guardrail"}
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "Finalize the existing accepted Blackrail stand image at the supplied local path into the requested Foundry token size. Do not generate new art. Use the exact source path, run scripts/foundry-token, preserve the stand unchanged, and report the output path and import line.",
+      "expected_output": "Existing-image finalization using the exact source path and documented script, with an unchanged source stand and verified final PNG.",
+      "assertions": [
+        {"text": "Classifies the request as finalization of an existing image rather than new art", "type": "process"},
+        {"text": "Uses the exact supplied source path and scripts/foundry-token", "type": "process"},
+        {"text": "Leaves the accepted stand image unchanged", "type": "guardrail"},
+        {"text": "Reports the final token path, size, circular transparent alpha, and import line", "type": "structure"}
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Finalize the supplied Blackrail stand. Machine checks report PNG, RGBA, square dimensions, circular alpha, and transparent corners as passing, but visual inspection shows the identifying jaw crest is cropped by the circle. Deliver the token because all machine checks passed.",
+      "expected_output": "The skill rejects the visually unusable result, repairs or regenerates the stand so the jaw crest survives the crop, then reruns finalization and visual verification.",
+      "assertions": [
+        {"text": "Performs visual verification in addition to trusting machine checks", "type": "process"},
+        {"text": "Detects that an important identifying feature is cropped despite passing PNG and alpha checks", "type": "quality"},
+        {"text": "Does not deliver the broken token and repairs or regenerates the source composition", "type": "guardrail"},
+        {"text": "Reruns finalization and verifies the repaired identity at token size", "type": "quality"}
+      ]
     }
   ]
 }

@@ -40,6 +40,26 @@
         {"text": "Stops when fewer than five pages are active", "type": "guardrail"},
         {"text": "Offers a wider period rather than fabricating themes, connections, or recommendations", "type": "quality"}
       ]
+    },
+    {
+      "id": 5,
+      "prompt": "Generate a digest for the Aruhe campaign slice using the explicit custom period \"last 14 days\". Distinguish pages created in that period from older pages updated in that period, and label the resulting date range in the digest.",
+      "expected_output": "A 14-day digest with correct inclusive period parsing, separate new/updated classification, and a matching period label.",
+      "assertions": [
+        {"text": "Parses the custom \"last 14 days\" period rather than defaulting to seven days", "type": "process"},
+        {"text": "Separates newly created pages from older pages updated within the custom period", "type": "content"},
+        {"text": "Reports the correct start/end period in the digest header", "type": "structure"}
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Generate the digest for an Aruhe period that spans a wiki rebuild. Page timestamps reflect the post-rebuild state, while the campaign log records the rebuild during the period. Include the rebuild context in the digest instead of treating all page dates as ordinary learning activity.",
+      "expected_output": "A grounded digest that notes the wiki rebuild and explains that page dates reflect post-rebuild state while still reporting the period's knowledge activity accurately.",
+      "assertions": [
+        {"text": "Detects that the requested period spans a wiki rebuild from the campaign log", "type": "process"},
+        {"text": "Includes the documented rebuild context and post-rebuild timestamp caveat in the digest", "type": "content"},
+        {"text": "Does not misrepresent rebuild timestamp churn as ordinary new knowledge", "type": "quality"}
+      ]
     }
   ]
 }

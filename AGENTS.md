@@ -32,7 +32,7 @@ the failure on it.
 
 Canon owner: constitution principle X. File what it makes canon. Unsaid invention is not canon (XII).
 
-Lint contract: the single agent-facing `wiki lint`, which runs every checker and reports a compact aggregate overview by default, including Vale and soft findings. Use `next.path`, then `wiki lint <next.path> --full` for line-level repair. Iterate until green. Do not ask. Do not interrupt with findings.
+Lint contract: the single agent-facing `wiki lint` runs every checker and reports every finding by default, including Vale and soft findings. Use `next.path`, then `wiki lint fix <next.path>` for deterministic repairs; rerun `wiki lint <next.path>` for remaining findings. `--full` is accepted as a compatibility no-op. Iterate until green. Do not ask. Do not interrupt with findings.
 
 After green, one short done-summary: what changed, where. No question. No wait.
 
@@ -323,7 +323,7 @@ Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the 
 | "what do I know about X" / "find info on Y" / any question | `wiki query` for retrieval; `wiki-query` owns synthesis and citations |
 | "use my vault as context" / "context pack for X" / "bounded context" | `wiki-context-pack` |
 | "narrate" / "briefing" / "explain this topic" | `wiki-narrate` |
-| "lint" / "lint <page>" / "fix broken links" / "audit" | `wiki lint` — grouped-file dump |
+| "lint" / "lint <page>" / "fix broken links" / "audit" | `wiki lint` — full finding dump |
 | "wiki health" / "health check" | `wiki health`; act on `context.act`, then `next`, then remaining `focus` |
 | "dedup my wiki" / "merge duplicates" / "identity resolution" | `wiki-dedup` (standalone deep identity-resolution scan; wiki-lint Check 14 handles dedup in normal lint flow) |
 | "rebuild" / "start over" / "archive" / "restore" | `wiki-rebuild` |
@@ -351,7 +351,7 @@ Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the 
 ### Wiki CLI
 
 ```bash
-wiki lint [path]
+wiki lint [path ...]
 wiki query "<phrase>"
 wiki health
 ```

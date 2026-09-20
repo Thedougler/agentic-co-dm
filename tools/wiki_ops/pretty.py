@@ -11,7 +11,7 @@ def _value(data: Mapping[str, Any], key: str, default: Any = "") -> Any:
 
 
 def render_lint(result: Mapping[str, Any]) -> str:
-    """Render lint and lint-fix results without expanding default output."""
+    """Render complete lint and lint-fix results."""
     if "applied" in result:
         applied = _value(result, "applied", ())
         skipped = _value(result, "skipped", ())
@@ -24,8 +24,7 @@ def render_lint(result: Mapping[str, Any]) -> str:
             f"Remaining: {_value(remaining, 'finding_total', 0)}",
             "Changed files: " + (", ".join(str(path) for path in changed) or "none"),
         ]
-        if _value(result, "full", False):
-            lines.extend(_render_findings(remaining))
+        lines.extend(_render_findings(remaining))
         return "\n".join(lines)
     counts = _value(result, "counts", {})
     cache = _value(result, "cache", {})
