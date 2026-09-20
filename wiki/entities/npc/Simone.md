@@ -4,39 +4,75 @@ category: entities
 tags: [shattered-sea, npc]
 sources:
   - "wiki/_raw/Grung clans.md"
-summary: Purple Grung officer who holds the Sorn garrison, sells toxin, and hunts her brother Jean-Claude.
+created: 2026-09-12T00:00:00Z
+updated: 2026-09-12T00:00:00Z
+type: npc
+lifecycle: proposed
+reveal: unrevealed
+campaign: shattered-sea
+status: alive
+role: rival
+location: "[[Sorn]]"
+faction: "[[grung-clans]]"
+visibility: dm
+summary: "Purple Grung officer who holds the Sorn garrison, sells toxin, and hunts her brother Jean-Claude."
 provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
 base_confidence: 0.37
-lifecycle: proposed
-lifecycle_changed: "2026-09-12"
 tier: supporting
-created: 2026-09-12T00:00:00Z
-updated: 2026-09-12T00:00:00Z
-type: npc
-reveal: unrevealed
-campaign: shattered-sea
-visibility: dm
-relationships:
-  - target: "[[grung-clans]]"
-    type: related_to
-  - target: "[[jean-claude-tabarnack]]"
-    type: related_to
-  - target: "[[dravosi-crown]]"
-    type: related_to
 ---
 # Simone
 
-Simone is a purple Grung officer who holds the [[Sorn]] garrison, sells toxin through the [[dravosi-crown]], and hunts her brother [[jean-claude-tabarnack]].
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
+
+| **Role**   | Rival |
+| ---------- | ----- |
+| **Nature** | Purple Grung officer; garrison holder, toxin seller, and hunter |
+| **Home**   | [[Sorn]] |
+| **Wants**  | Control the Sorn garrison, continue selling toxin through the [[dravosi-crown]], and find her brother [[jean-claude-tabarnack]]. |
+
+> **DM thesis:** Simone is an officer whose garrison authority and family pursuit make the Grung conflict personal.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Simone
+> Simone is a purple Grung officer holding the Sorn garrison. She carries the stillness of someone who expects the post to obey her, and her clipped commands carry across the guarded shore.
+```
+````
+
+## Running Simone
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Simone meets outsiders as the officer holding [[Sorn]]. She establishes her authority before discussing the garrison, toxin trade, or her hunt for [[jean-claude-tabarnack]]. **Sample line:** “State your business at Sorn.”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Simone's posture changes when the party interferes with the garrison, threatens her toxin trade through the [[dravosi-crown]], or provides a lead on Jean-Claude. The source does not establish what she does after that change.
+```
+````
 
 ## Connections
 
-- [[grung-clans]]
-- [[jean-claude-tabarnack]]
-- [[dravosi-crown]]
+| Connection | Meaning |
+| ---------- | ------- |
+| [[grung-clans]] | Simone holds a Grung garrison and operates within its power structure. |
+| [[jean-claude-tabarnack]] | Her brother and the subject of her hunt. |
+| [[dravosi-crown]] | Through this network, Simone sells toxin. |
 
-## Provenance
-
-This is a thin named-ingest stub. The source does not establish Simone's full history, appearance, or command structure.
