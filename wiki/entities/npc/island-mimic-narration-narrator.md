@@ -13,6 +13,10 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: contact
+location: unknown
+faction: none
 visibility: dm
 summary: "The first sight of the island as it emerges from the haze — a green hill with a white beach and a bay mouth like a bite."
 provenance:
@@ -24,7 +28,45 @@ tier: supporting
 ---
 # Island Mimic Narration Narrator
 
-## Source notes
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-> [!narration]
+| **Role**   | Contact |
+| ---------- | ------- |
+| **Nature** | Narration handle for the island's first visible approach; not a separately established person |
+| **Home**   | Unknown |
+| **Wants**  | Not applicable; the page preserves the island's first-look narration. |
+
+> **DM thesis:** Use this handle to present the island's deceptive welcome before the party understands what it is.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Island Mimic Narration Narrator
 > The island comes up out of the haze as a low green hill with a white beach under it, a bay cut into the southern side like a bite out of an apple. Warm air carries salt and crushed fruit. Inside the two rock heads the water lies so flat it swallows the wind's noise whole. Outside them, chop keeps slapping the hull. The line between the two runs clean across the gap, sharp as a drawn edge.
+```
+````
+
+## Running Island Mimic Narration Narrator
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Use the narration when the party first sees the island emerging from haze. Do not add a speaker or imply that this page is a separate person.
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Stop using this first-look narration once the party has a later, more informed view of the [[island-mimic]] or the island's interior.
+```
+````
