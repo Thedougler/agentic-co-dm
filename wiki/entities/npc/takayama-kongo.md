@@ -67,6 +67,10 @@ Kongo's posture changes when access to ore, the mountain base, or the clan's wea
 ```
 ````
 
+## Voice
+
+Takayama Kongo's voice is not established in the source. The page establishes a practical clan leader responsible for mining, kilns, and weapons, but it records no verbal habit or sample line. Do not invent dialogue until the DM accepts one.
+
 ## Connections
 
 | Connection | Meaning |
