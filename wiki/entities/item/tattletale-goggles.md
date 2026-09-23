@@ -13,6 +13,7 @@ type: item
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
+region: "le-paludi"
 campaign: shattered-sea
 visibility: dm
 kind: magic
@@ -36,9 +37,6 @@ tier: supporting
 
 While worn, you have Darkvision out to 60 feet. If you already have Darkvision, wearing them increases that range by 60 feet instead. You also have Disadvantage on Dexterity (Stealth) checks for as long as they stay on. Any creature in a wide radius, ally or foe, feels a sudden unexplained certainty that someone is present at your exact location: a rough hunch, not a map square, and not a source anyone present can name. The hunch fires whether you are hiding or not. It does not grant Advantage on attacks against you, does not pierce total cover, and does not reach long range. The goggles grant no other combat bonus.
 
-## At a Glance
-
-[[delmar-fisk]] bought them to see in the dark. Wearing them is what gives him away.
 
 ## At the Table
 

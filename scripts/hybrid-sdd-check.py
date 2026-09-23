@@ -11,7 +11,7 @@ from typing import Any, NoReturn
 
 CLASSES = {"engineering", "agent-system", "campaign-architecture", "creative-system"}
 ROUTES = {"full-sdd", "existing-skill"}
-ROUTINE_SKILLS = {"npc-design", "place-design", "dnd-5e-magic-item-design", "spell-design", "homebrew-monsters-5e"}
+ROUTINE_SKILLS = {"npc-design", "place-design", "item-design", "spell-design", "monster-design"}
 FORBIDDEN_AGENCY = {
     "mandatory_allegiance", "authored_player_decision", "fixed_scene_sequence",
     "fixed_ending", "predetermined_route", "required_player_choice",

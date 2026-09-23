@@ -14,7 +14,7 @@ session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Copy-start scaffold. Compass; Beat map; Floating beats; Pressure; PC touchpoints. Omit unused. Pass is those jobs. File Session-<n>-00-<Title>.md. Do not duplicate Scene ends when, Zones, or Be ready for. -->
+<!-- Copy-start scaffold for `session-beats`. Jobs: Compass; Beat Map; Cards, threads, and tiers; Floating Beats; Climax candidates; Branches & Skips; Threads; Critical Routes; Pressure (opposition agenda); PC Touchpoints; Floating Clues; Session Toolkit. Omit a section only when this session never spends it. Typed beats carry Scene ends when, Zones, and Be ready for. Bar: docs/agents/table-ready.md. File Session-<n>-00-<Title>.md. -->
 
 # {{title}}
 
@@ -28,13 +28,15 @@ summary: ""
 
 **If the party does nothing.** State what the situation naturally becomes.
 
+**Dramatic spine.** One sentence every beat approaches from a different angle.
+
 **Now:** [[Session-{{session}}-01-Label]]
 
 **On deck:** [[Session-{{session}}-02-Label]] · [[Session-{{session}}-03-Label]]
 
 ## Beat Map
 
-Use the chart to pace play. Do not treat it as a script. Alternate action and introspection beats because repeated action can numb attention and repeated introspection can stall. Place one Hook first, alternate Developments and Cliffhangers, then use one Climax followed by one Resolution. Trigger a beat when its situation becomes relevant. After play, skip, reorder, or replace middle beats when player choices change the fiction. Preserve consequences rather than forcing the next planned slot.
+The chart paces play; the players' choices pick which beat fires. One Hook first; Developments and Cliffhangers alternate; one Climax, then one Resolution. About thirty minutes per beat. Trigger a beat when its situation becomes relevant; when choices change the fiction, skip, reorder, or replace middle beats and keep the consequences.
 
 |  # | Beat                               | Form                      | Trigger                                                                             | What changes                                                      | Hand-off / options                                      | Budget |
 | -: | ---------------------------------- | ------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------- | -----: |
@@ -46,6 +48,18 @@ Use the chart to pace play. Do not treat it as a script. Alternate action and in
 | 06 | [[Session-{{session}}-06-Label]]   | **Climax**                | What circumstances make the decisive confrontation, choice, or revelation possible? | What major question is decided?                                   | [[Session-{{session}}-07-Label]]                        |        |
 | 07 | [[Session-{{session}}-07-Label]]   | **Resolution**            | The climax resolves                                                                 | Consequences become visible and a new situation exists.           | [[Next Session]] / player-selected direction            |        |
 
+### Cards, threads, and tiers
+
+|  # | Card | Thread | Tier (Cliffhangers, Climax) | Memorable element |
+| -: | ---- | ------ | --------------------------- | ----------------- |
+| 01 |      |        |                             |                   |
+| 02 |      |        |                             |                   |
+| 03 |      |        |                             |                   |
+| 04 |      |        |                             |                   |
+| 05 |      |        |                             |                   |
+| 06 |      |        | Villain                     |                   |
+| 07 |      |        |                             |                   |
+
 ### Floating Beats
 
 <!-- Beats that can move to wherever they become useful. Do not assign them a mandatory place in the sequence. -->
@@ -55,6 +69,15 @@ Use the chart to pace play. Do not treat it as a script. Alternate action and in
 | [[Session-{{session}}-BX-Label]]   | The fiction produces this condition. | Reveal / pressure / complicate / reconnect / escalate. | Its purpose is already accomplished. |
 | [[Session-{{session}}-BX-Label]]   |                                      |                                                        |                                      |
 
+### Climax candidates
+
+<!-- Keep when more than one confrontation could be earned. Call the Climax when the party commits. -->
+
+| Candidate | Player choices that would make it inevitable | Shape | Threads harvested |
+| --------- | -------------------------------------------- | ----- | ----------------- |
+|           |                                              |       |                   |
+|           |                                              |       |                   |
+
 ### Branches & Skips
 
 <!-- Record meaningful routes, not every conceivable contingency. -->
@@ -63,6 +86,14 @@ Use the chart to pace play. Do not treat it as a script. Alternate action and in
 | -------- | ----------------------------------------- | ------------------- | -------------------------------------------------- |
 | [[Beat]] | Makes a consequential choice              | [[Beat]] / [[Beat]] | What changes because they chose this route?        |
 | [[Beat]] | Bypasses or defeats the expected obstacle | [[Beat]]            | Preserve their success. State what becomes possible now. |
+
+## Threads
+
+| Thread     | Source (PC goal / faction clock / mystery / relationship / resource) | Planted | Tested | Harvested |
+| ---------- | --------------------------------------------------------------------- | ------- | ------ | --------- |
+| [[Thread]] |                                                                       | [[Beat]] | [[Beat]] | [[Beat]] |
+| [[Thread]] |                                                                       |         |        |           |
+| [[Thread]] |                                                                       |         |        |           |
 
 ## Critical Routes
 
@@ -78,7 +109,9 @@ flexGrow=2
 ===
 ## Pressure
 
-<!-- What happens without the PCs. Advance this when time passes, the party stalls, or their actions logically accelerate events. Do not pre-script responses to specific PC plans. -->
+<!-- The opposition agenda: what happens without the PCs. Advance it when time passes, the party stalls, or their actions accelerate events. Cliffhanger opposition comes from this agenda or the environment. -->
+
+**Opposition.** [[NPC / Faction]] — goal this session, means, and the resource it spends.
 
 | Step | Situation without intervention                     | Surface through |
 | ---: | -------------------------------------------------- | --------------- |
@@ -92,7 +125,7 @@ flexGrow=2
 ```col-md
 ## PC Touchpoints
 
-| Character | What matters to them **this session**                            | Best Beat(s) to touch it |
+| Character | What matters to them **this session**                            | Spotlight beat(s)        |
 | --------- | ---------------------------------------------------------------- | ------------------------ |
 | [[PC]]    | Desire, relationship, fear, question, or unresolved consequence. | [[Beat]]                 |
 | [[PC]]    |                                                                  |                          |
@@ -103,7 +136,7 @@ flexGrow=2
 
 ## Floating Clues
 
-<!-- Keep these unattached until play tells you where they belong. Reveal them wherever the fiction makes sense. Carry forward only those that remain useful. -->
+<!-- About ten true, concrete facts, unattached until play tells you where they belong. Each can surface through more than one interaction. -->
 
 - [ ] A short, usable fact the characters can discover.
 - [ ] A fact that changes how the party understands the situation.
@@ -155,16 +188,16 @@ flexGrow=2
 
 ### Prep Audit
 
-- [ ] The Hook creates immediate interest, pressure, or an important decision.
-- [ ] A Beat has a **trigger** and a clear **change**. Keep the player response open.
-- [ ] Middle Beats alternate Development and Cliffhanger. Do not place two of the same type consecutively on the chart.
-- [ ] Escalation trends upward toward the Climax.
-- [ ] Any real chokepoint has multiple clues, routes, or solutions.
-- [ ] Opposition has goals and actions that exist independently of the PCs.
-- [ ] Important clues are portable enough to appear through more than one reasonable interaction.
-- [ ] The Climax can be reached through more than one sequence of player choices.
-- [ ] The Resolution follows the **actual outcome**, not the planned outcome.
-- [ ] Each linked Beat contains only the information needed to run that Beat at the table.
+- [ ] The Hook starts in motion, commits the party fast, and opens the question the Climax answers.
+- [ ] Middle beats alternate Development and Cliffhanger; the Climax prelude has the opposite type.
+- [ ] Every beat advances a live thread; the Climax harvests threads the middle planted.
+- [ ] Escalation tiers rise across the night; the Villain waits for the Climax.
+- [ ] Each outcome row hands a visible trigger to the next beat.
+- [ ] Every must-have conclusion or access has three routes.
+- [ ] The opposition's agenda runs without the PCs.
+- [ ] Every PC has a spotlight beat and a harvested thread.
+- [ ] Every named actor, place, and item has an owner page.
+- [ ] Every linked beat passes the table-ready cold read.
 
 ## After the Session
 

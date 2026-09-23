@@ -1,6 +1,6 @@
 # Rules and place types
 
-This is a compact mechanical palette for D&D 5.5e (2024 / SRD 5.2.1). Look up
+Read this in step 5. This is a compact mechanical palette for D&D 5.5e (2024 / SRD 5.2.1). Look up
 exact wording in the operational [SRD 5.2.1](https://www.dndbeyond.com/sources/dnd/srd-5-2-1)
 and the public [Everything's a Dungeon tip page](https://www.dndbeyond.com/posts/1460-everything-is-a-dungeon)
 when needed. Do not paste proprietary book text; use brief paraphrase and a
@@ -89,12 +89,3 @@ can test or learn the rule. Keep orientation possible through repeated cues,
 landmarks, local customs, or a changing but legible topology. Surreal is not the
 same as random: state what changes, when it changes, and what remains invariant.
 Give characters a way to exploit, bargain with, resist, or redirect the rule.
-
-## Audit
-
-- Are mechanics brief enough to run without replacing the fiction?
-- Is the opening sign visible before the commitment or roll?
-- Are cover, terrain, movement, and action choices applied consistently?
-- Does each required secret have multiple clue vectors?
-- Does the place reward the party's actual capabilities?
-- Could the party negotiate, explore, alter, or return even if enemies vanish?

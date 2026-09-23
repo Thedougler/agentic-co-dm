@@ -15,18 +15,15 @@ description: >
 # Wiki Capture — Conversation to Wiki Note
 
 You are preserving knowledge from the current conversation as a permanent wiki note. The goal is to extract the *substance* — the knowledge itself — not a summary of what was said.
-## Capability Boundary
+## Capability boundary
 
-**Input** — The current conversation, explicit mode (`full`, `quick`, or `correction`), resolved vault configuration, and only the bounded context needed to classify it: targeted `index.md`/`hot.md` and the governing category/template. Conversation text is the source evidence; unrelated history and pages stay out of context.
+**Input.** Current conversation, explicit mode (`full`, `quick`, or `correction`), resolved vault, targeted `index.md`/`hot.md`, governing category/template.
 
-**Work** — `wiki-capture` owns evidence extraction, classification, and the mode-specific destination. Full mode writes one owner-compliant note; correction mode writes one atomic derived claim pair; quick mode writes `_raw/` only. A full/correction page handoff carries source locator/evidence, destination owner, and constraints to scoped lint or downstream promotion; the parent capture objective remains active. Re-observe the same mode boundary after each child or validation action.
+**Work.** Extract evidence, classify, write to mode-specific destination. Full → owner-compliant note. Correction → atomic derived claim pair. Quick → `_raw/` only.
 
-**Done** — Full mode closes only with declarative knowledge, required frontmatter and links, destination-owner validation scoped to the page, one manifest record, one `index.md` update, one `log.md` entry, and one bounded `hot.md` update, followed by one QMD refresh and one search-then-get retrieval check. Correction mode closes only after its immutability and consumer checks pass. Quick mode closes with staged paths and explicitly no manifest/index/log/hot/QMD writes. An unchanged incomplete result takes a materially different sanctioned action or returns a specific blocker; no finalization occurs before the owned page and validation evidence close.
+**Done.** Full: declarative knowledge + frontmatter + links + scoped lint + manifest/index/log/hot + QMD refresh. Correction: immutability and consumer checks. Quick: staged paths, no tracking writes.
 
-**Capability Handoff** — Return the page path, source evidence, tracking evidence, and scoped validation to the caller. `wiki-capture` owns full/correction tracking and QMD finalization; `/wiki-ingest` owns later `_raw/` promotion. The receiving validator or promotion owner returns evidence before the parent reports done. Finalization runs once after all required children close.
-### Minimum context projection
-
-For capture, the minimum sufficient projection is the current conversation, explicit mode, targeted index/hot, and governing category/template. Deliberately omit unrelated history, page bodies, and inherited parent context. Deepen retrieval only when classification or destination evidence is insufficient; then resume this owner's same capture mode with the bounded return and stop at that mode's completion contract.
+**Handoff.** `_raw/` promotion → `wiki-ingest`. Scoped validation → destination owner.
 
 
 This skill has three modes:

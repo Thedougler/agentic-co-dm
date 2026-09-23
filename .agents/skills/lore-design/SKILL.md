@@ -28,12 +28,8 @@ open to play.
 
 ### Capability Handoff
 
-Hand off only a bounded seam (for example, a named place, faction, NPC, or
-spell to its owner, a check to `dnd5e-mechanics`, or spoken delivery to
-`theatre-of-the-mind`) with the lore owner, parent objective, evidence, and
-exact section requested. Require return evidence naming the child
-artifact/section and its completion result; resume lore work only when that
-seam is satisfied, otherwise report the missing evidence or blocker.
+Named entity → its owner skill. Checks → `dnd5e-mechanics`. Spoken delivery
+→ `theatre-of-the-mind`.
 
 ### Done
 

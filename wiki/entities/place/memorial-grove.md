@@ -15,7 +15,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-12
-updated: 2026-09-14
+updated: 2026-09-22
 type: place
 reveal: unrevealed
 campaign: shattered-sea
@@ -36,6 +36,7 @@ The 150-foot clearing where Aruhe's appetite stops. Tree, graves, flower ring, b
 ---
 ## If the party
 
+- **Approach from the south across [[turned-hollow]]:** The path climbs a few minutes from the Hollow's north rim under a leaning guava; the black-flower ring shows through the trunks about 100 feet on.
 - **Approach along forest trail or sunbreak:** Charged [[stillbloom]] raises pale bracts and dark needles when living movement closes — resolve stillbloom contact on its owner page.
 - **Cross marsh or treeline pocket:** White [[spiritpollen]] sacs — touch/cut/shake/burn bursts a `15-foot` cloud; breathing creatures **Wisdom — `DC 15`** or **Spirit-Haunted** (Action forced against hallucinated threats until save repeats). Cover mouth, strong wind, or disturb from beyond `15 feet`.
 - **Enter as guest:** Leave tree, graves, flower ring, bound soil, and mourners undisturbed — the Bloom remains place-bound.

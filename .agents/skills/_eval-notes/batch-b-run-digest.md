@@ -8,7 +8,7 @@ Bounds: no SKILL.md rewrites; no live wiki writes; bulky workspaces stay on feat
 
 | Skill | with_skill | without_skill | delta | Workspace |
 | --- | ---: | ---: | --- | --- |
-| dnd-5e-magic-item-design | **1.000** | 0.042 | +95.8% | `.agents/skills/dnd-5e-magic-item-design-workspace/iteration-1/` |
+| item-design | **1.000** | 0.042 | +95.8% | `.agents/skills/item-design-workspace/iteration-1/` |
 | spell-design | **1.000** | 0.122 | +87.8% | `.agents/skills/spell-design-workspace/iteration-1/` |
 | vehicle-design | **1.000** | 0.201 | +79.9% | `.agents/skills/vehicle-design-workspace/iteration-1/` |
 

@@ -7,14 +7,18 @@ tags: [shattered-sea, npc]
 sources:
   - "campaign-os:reginald-fenn.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "Elven chart clerk at the Harbourmaster's Office in Tidefall, sold official Dravosi surveys from Crown charts he once helped draft."
+status: alive
+role: contact
+location: "[[calders-tooth-and-port-tidefall]]"
+faction: "[[dravosi-crown]]"
+summary: "Elven chart clerk at the Harbourmaster's Office in Tidefall, selling official Dravosi surveys from Crown charts he once helped draft."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -24,18 +28,54 @@ tier: supporting
 ---
 # Reginald Fenn
 
-![[reginald-fenn-banner]]
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-Elf, he/him. Chart clerk at the [[Harbourmaster's Office]] in [[calders-tooth-and-port-tidefall]]. Mild and calm. Patient in a way that only makes sense once you know how long he has worked here.
+| **Role** | Contact |
+| --- | --- |
+| **Nature** | Elven chart clerk and surveyor |
+| **Home** | Harbourmaster's Office in [[calders-tooth-and-port-tidefall]] |
+| **Wants** | To sell accurate official surveys and keep his desk work useful |
 
-He surveyed parts of [[crown-islands|the Crown Islands]] and [[central-strait]] routes himself. He calls this time the "fieldwork years." He enjoyed it then and feels at home in his desk job now.
+> **DM thesis:** Reginald is a calm, exact source of Crown route knowledge whose honest charts reveal where the Crown has no coverage.
+```
 
-He starts bad news with "I'm afraid" and uses the same tone for good news, which bothers people until they realize he's not faking but truly indifferent to outcomes. His charts work because he has checked them. If your ship ran aground using one of his charts, the chart was not the problem.
+```col-md
+flexGrow=1
+===
+> [!narration] Reginald Fenn
+> Reginald is an elf with a patient, calm manner and the settled posture of someone who has worked behind the same chart counter for years. He speaks in an even tone, beginning both good and bad news with “I'm afraid.” His charts are handled more carefully than the people asking for them.
+```
+````
 
-He does not have [[Midchain]] coverage past the basic surveys sold at his counter. He knows this is a gap. It bugs him. He will tell you if asked.
+## Running Reginald Fenn
 
-He sells official Dravosi surveys and answers trade board questions. He gives the best ship routes available for sale in the Crown Islands. The [[dravosi-crown]] pays him because he is the best, though he has never asked them to admit this.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Reginald answers a trade-board question by opening the best available Crown chart and naming its limits. **Sample line:** “I'm afraid the chart is accurate; it is the water beyond the survey that is missing.”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+He becomes direct when a customer asks for Midchain coverage beyond the basic surveys sold at his counter. He admits the gap and does not pretend a Crown chart knows what it does not.
+```
+````
 
 ## Connections
 
-[[dravosi-crown]]: employer who keeps him for his flawless accuracy. [[Harbourmaster's Office]]: he manages the chart counter there.
+| Connection | Meaning |
+| --- | --- |
+| [[dravosi-crown]] | Employer that keeps him for his flawless accuracy. |
+| [[Harbourmaster's Office]] | The chart counter he manages in Tidefall. |
+| [[crown-islands]] | He surveyed parts of the islands during his “fieldwork years.” |
+| [[central-strait]] | He surveyed parts of these routes before returning to desk work. |

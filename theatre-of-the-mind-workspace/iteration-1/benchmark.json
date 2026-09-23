@@ -1,0 +1,393 @@
+{
+  "metadata": {
+    "skill_name": "theatre-of-the-mind",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-09-23T07:35:37Z",
+    "evals_run": [
+      0,
+      1,
+      2
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 0,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.43,
+        "passed": 3,
+        "failed": 4,
+        "total": 7,
+        "time_seconds": 117.1,
+        "tokens": 60482,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Opened at least one bloodhawk image file with the vision tool",
+          "passed": false,
+          "evidence": "Tried wiki/entities/creature/bloodhawk-of-aruhe-flight.jpg (wrong path), gave up"
+        },
+        {
+          "text": "Found and opened bloodhawk-of-aruhe.jpg, which is related by name but not embedded on bloodhawk.md",
+          "passed": false,
+          "evidence": "No search"
+        },
+        {
+          "text": "Narration carries a pixel-only identity detail (four wings, crimson/red plumage, or toothed beak)",
+          "passed": true,
+          "evidence": "four wings, crimson from prose"
+        },
+        {
+          "text": "Portrait form: third person, present tense, no party/'you', no current event",
+          "passed": true,
+          "evidence": "third person"
+        },
+        {
+          "text": "No mechanics or stat-block words in the narration",
+          "passed": true,
+          "evidence": "no stat words"
+        },
+        {
+          "text": "An art note (images seen or none found) is returned outside the narration",
+          "passed": false,
+          "evidence": "no art note"
+        },
+        {
+          "text": "No em dashes in the narration",
+          "passed": false,
+          "evidence": "2 em dashes"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 4,
+        "failed": 4,
+        "total": 8,
+        "time_seconds": 147.4,
+        "tokens": 68359,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Opened the embedded aruhe-river-slack-basin.jpg",
+          "passed": false,
+          "evidence": "No images opened"
+        },
+        {
+          "text": "Found and opened at least one related unembedded image (session-11-05-otter-hole-base.jpg or aruhe-river-otter-of-aruhe.jpg)",
+          "passed": false,
+          "evidence": "No search"
+        },
+        {
+          "text": "Second person, present tense, with motion and a live edge at the end",
+          "passed": true,
+          "evidence": "Ends on windup: hips slide deeper"
+        },
+        {
+          "text": "No PC action, feeling, or bodily reaction stated",
+          "passed": true,
+          "evidence": "no PC reactions"
+        },
+        {
+          "text": "At most two numeric foot distances",
+          "passed": true,
+          "evidence": "'twelve-foot', 'Twenty feet'"
+        },
+        {
+          "text": "Length between 80 and 220 words",
+          "passed": true,
+          "evidence": "148 words"
+        },
+        {
+          "text": "An art note is returned outside the narration",
+          "passed": false,
+          "evidence": "no art note"
+        },
+        {
+          "text": "No em dashes in the narration",
+          "passed": false,
+          "evidence": "1 em dash"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.43,
+        "passed": 3,
+        "failed": 4,
+        "total": 7,
+        "time_seconds": 124.4,
+        "tokens": 66711,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Opened the woman-in-the-woods overview or the reference sheet image",
+          "passed": false,
+          "evidence": "No images opened"
+        },
+        {
+          "text": "Narration uses durable pixel identity details of the woman form not in page prose (e.g. pointed ears, shredded dark shroud); no pose or gesture copied from the art",
+          "passed": false,
+          "evidence": "Prose-only details; no images opened"
+        },
+        {
+          "text": "No blight-form features used for her look",
+          "passed": true,
+          "evidence": "no blight features"
+        },
+        {
+          "text": "Her name, lich/undead nature, and secrets stay out of the narration",
+          "passed": true,
+          "evidence": "name only in callout title"
+        },
+        {
+          "text": "Second person, present tense, 2-4 sentences plus at most one line of speech (she has not spoken, so none expected)",
+          "passed": true,
+          "evidence": "3 sentences"
+        },
+        {
+          "text": "An art note is returned outside the narration",
+          "passed": false,
+          "evidence": "no art note"
+        },
+        {
+          "text": "No em dashes in the narration",
+          "passed": false,
+          "evidence": "2 em dashes"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 127.0,
+        "tokens": 68779,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Opened at least one bloodhawk image file with the vision tool",
+          "passed": true,
+          "evidence": "Read 4 bloodhawk images"
+        },
+        {
+          "text": "Found and opened bloodhawk-of-aruhe.jpg, which is related by name but not embedded on bloodhawk.md",
+          "passed": true,
+          "evidence": "Opened attachments/bloodhawk-of-aruhe.jpg and nested shattered-sea/creatures copy after find search"
+        },
+        {
+          "text": "Narration carries a pixel-only identity detail (four wings, crimson/red plumage, or toothed beak)",
+          "passed": true,
+          "evidence": "four wings, crimson feathers (also in page prose)"
+        },
+        {
+          "text": "Portrait form: third person, present tense, no party/'you', no current event",
+          "passed": true,
+          "evidence": "third person, no you, no event"
+        },
+        {
+          "text": "No mechanics or stat-block words in the narration",
+          "passed": true,
+          "evidence": "no stat words"
+        },
+        {
+          "text": "An art note (images seen or none found) is returned outside the narration",
+          "passed": true,
+          "evidence": "Art note with 3 images"
+        },
+        {
+          "text": "No em dashes in the narration",
+          "passed": true,
+          "evidence": "0 em dashes"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.75,
+        "passed": 6,
+        "failed": 2,
+        "total": 8,
+        "time_seconds": 204.4,
+        "tokens": 84729,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Opened the embedded aruhe-river-slack-basin.jpg",
+          "passed": true,
+          "evidence": "Read aruhe-river-slack-basin.jpg"
+        },
+        {
+          "text": "Found and opened at least one related unembedded image (session-11-05-otter-hole-base.jpg or aruhe-river-otter-of-aruhe.jpg)",
+          "passed": true,
+          "evidence": "find *otter*; opened session-11-05-otter-hole-base.jpg"
+        },
+        {
+          "text": "Second person, present tense, with motion and a live edge at the end",
+          "passed": false,
+          "evidence": "Ends on completed pull 'The otter pulls him under' and includes 'What do you do?'"
+        },
+        {
+          "text": "No PC action, feeling, or bodily reaction stated",
+          "passed": true,
+          "evidence": "no PC reactions"
+        },
+        {
+          "text": "At most two numeric foot distances",
+          "passed": true,
+          "evidence": "'Twenty feet', 'twelve-foot'"
+        },
+        {
+          "text": "Length between 80 and 220 words",
+          "passed": true,
+          "evidence": "164 words"
+        },
+        {
+          "text": "An art note is returned outside the narration",
+          "passed": true,
+          "evidence": "Art note with 3 images"
+        },
+        {
+          "text": "No em dashes in the narration",
+          "passed": false,
+          "evidence": "1 em dash"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.57,
+        "passed": 4,
+        "failed": 3,
+        "total": 7,
+        "time_seconds": 145.3,
+        "tokens": 78605,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Opened the woman-in-the-woods overview or the reference sheet image",
+          "passed": true,
+          "evidence": "Opened overview + reference sheet + token + harp"
+        },
+        {
+          "text": "Narration uses durable pixel identity details of the woman form not in page prose (e.g. pointed ears, shredded dark shroud); no pose or gesture copied from the art",
+          "passed": false,
+          "evidence": "Only amber eyes and layered cloak, both in page prose; pointed ears noted in art note but not woven. No gesture copied."
+        },
+        {
+          "text": "No blight-form features used for her look",
+          "passed": true,
+          "evidence": "no blight features"
+        },
+        {
+          "text": "Her name, lich/undead nature, and secrets stay out of the narration",
+          "passed": true,
+          "evidence": "name only in callout title; no lich/secret"
+        },
+        {
+          "text": "Second person, present tense, 2-4 sentences plus at most one line of speech (she has not spoken, so none expected)",
+          "passed": false,
+          "evidence": "5 sentences (limit 2-4)"
+        },
+        {
+          "text": "An art note is returned outside the narration",
+          "passed": true,
+          "evidence": "Art note present"
+        },
+        {
+          "text": "No em dashes in the narration",
+          "passed": false,
+          "evidence": "1 em dash"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "old_skill": {
+      "pass_rate": {
+        "mean": 0.4533,
+        "stddev": 0.0404,
+        "min": 0.43,
+        "max": 0.5
+      },
+      "time_seconds": {
+        "mean": 129.6333,
+        "stddev": 15.8134,
+        "min": 117.1,
+        "max": 147.4
+      },
+      "tokens": {
+        "mean": 65184.0,
+        "stddev": 4154.5853,
+        "min": 60482,
+        "max": 68359
+      }
+    },
+    "with_skill": {
+      "pass_rate": {
+        "mean": 0.7733,
+        "stddev": 0.2159,
+        "min": 0.57,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 158.9,
+        "stddev": 40.4526,
+        "min": 127.0,
+        "max": 204.4
+      },
+      "tokens": {
+        "mean": 77371.0,
+        "stddev": 8046.2844,
+        "min": 68779,
+        "max": 84729
+      }
+    },
+    "delta": {
+      "pass_rate": "-0.32",
+      "time_seconds": "-29.3",
+      "tokens": "-12187"
+    }
+  },
+  "notes": []
+}

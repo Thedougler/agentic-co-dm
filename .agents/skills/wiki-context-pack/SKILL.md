@@ -11,19 +11,15 @@ description: >
 
 This is a read-only skill. It must not modify the vault, including `log.md`,
 `index.md`, `hot.md`, or `.manifest.json`.
-## Capability Boundary
+## Capability boundary
 
-**Accepted input.** A topic or `--recent` request plus the supported budget, visibility, metadata, and JSON flags.
+**Input.** Topic or `--recent` request, budget, visibility/metadata/JSON flags.
 
-**Owner work.** Enter `wiki-context-pack` directly, resolve and canonicalize the configured vault, invoke the installed CLI (or its configured clone), and return its bounded pack without replacing QMD, citation, visibility, or untrusted-excerpt handling. Re-observe the same focused collection after retrieval.
+**Work.** Resolve vault, invoke the installed CLI (or configured clone), return its bounded pack unchanged. No vault writes.
 
-**Done.** Return the CLI payload only after the requested budget and mode produce a bounded, cited/sufficient context slice; preserve stdout byte-for-byte where required. Stop when the evidence budget and output contract are met. If the collection is silent or the candidate set is unchanged after the documented fallback, return a blocker naming the collection, retrieval path, surviving evidence, and reason. The canonical vault, including `log.md`, `index.md`, `hot.md`, and `.manifest.json`, remains unchanged.
+**Done.** CLI payload with budget/citations/visibility intact. Preserve stdout byte-for-byte when required.
 
-**Capability handoff.** Handoff occurs only when ownership changes: route an unavailable executable to setup/install guidance or a requested write to its owning wiki skill; never substitute a whole-vault read or generic orchestration.
-
-### Minimum context projection
-
-Carry only the topic or recent request, requested flags and budget, resolved canonical vault, CLI availability, and the bounded pack returned by this owner. Deliberately omit whole-vault contents, unrelated pages, parent-agent context, and prior child artifacts. Use the owner's CLI or configured-clone retrieval only; deepen or change path only when the bounded invocation cannot satisfy the requested mode, then stop once the budgeted pack is sufficient and return it unchanged.
+**Handoff.** Missing executable → setup guidance. Write requests → owning wiki skill.
 
 
 

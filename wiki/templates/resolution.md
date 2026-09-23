@@ -14,14 +14,25 @@ session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Copy-start scaffold. Abstract; Run the beat; Closing image; What is true now; Consequences. Omit unused. Pass is those jobs. File Session-<n>-<BB>-<Label>.md. -->
+<!-- Copy-start scaffold for `resolution-beats`. Jobs: Abstract; Outcome branches; Run the beat; Closing image; What is true now; Consequences; Payoffs; Character epilogues; Loose ends; Rewards & accounting; Optional stinger. Omit a section only when this Resolution never spends it. Bar: docs/agents/table-ready.md. File Session-<n>-<BB>-<Label>.md. -->
 
 # {{title}}
 
 **Follows:** [[Session-{{session}}-BB-Climax]]
 **Purpose.** This short afterscene shows what the climax changed. Fulfill the adventure's promise, give the characters room to react, and end on one strong final image. Keep it brief and proportional to the Climax.
 
+**Card.** Resolution card from `resolution-beats` — one per Climax outcome this page answers.
 **Outcome.** State in one sentence what is true now because of what the party did.
+**Budget.** About 10–25 minutes.
+
+## Outcome branches
+
+<!-- Keep when the Climax could end more than one way. Each branch gets its own closing image. -->
+
+| Climax outcome | Card | What the party sees first | Costs visible | Rewards |
+| -------------- | ---- | ------------------------- | ------------- | ------- |
+| **[Outcome]**  |      |                           |               |         |
+| **[Outcome]**  |      |                           |               |         |
 
 ## Run the Beat
 
@@ -32,8 +43,8 @@ summary: ""
 5. **End on an image.** Close when the consequence is clear. Use a stinger only when it grows naturally from play.
 
 > [!narration] Closing image
-> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: situated moment → beat: resolution. -->
-> Write a closing image in two to four sentences the DM can speak aloud. Address the players as "you", present tense. Show the new status quo through something the characters can see, hear, or experience — at least one non-sight sense. The closing shows visible consequences only; it lets the changed world land without telling the players what to feel. Do not narrate a PC's feelings, decisions, or future.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → references/scenes.md → Resolution closing image. -->
+> Spoken narration, 3–6 sentences, second person, present tense. Closing image: the visible change the session made, the cost still showing, people reacting through what they do, and one still final image.
 
 ````col
 ```col-md
@@ -115,7 +126,7 @@ Use only as many as the table needs. Ask rather than prescribe.
 
 ## Rewards & Accounting
 
-- [ ] Promised payment, treasure, or favors delivered or denied
+- [ ] Promised payment, treasure, or favors delivered or denied — amounts and item owner links
 - [ ] Advancement / XP / milestone resolved when appropriate
 - [ ] Important [[Item]] ownership updated
 - [ ] Reputation, faction standing, titles, debts, or obligations updated
@@ -136,12 +147,10 @@ Use only if the ending needs one. A stinger should **open a door, not erase the 
 
 Stop after the reveal.
 
-### Avoid
+### Keep
 
-- Predetermining a PC's choices, emotions, retirement, romance, or future.
-- Making an important victory meaningless just to preserve a villain or sequel.
-- Introducing consequences that do not follow from anything established in play.
-- Turning the resolution into another full adventure.
-- Explaining every unanswered mystery.
-- Dumping several competing hooks when one clear future vector or simple closure is stronger.
-- Skipping the reunion, reward, consequence, or other payoff the adventure promised.
+- Each PC's choices, emotions, and future in the player's hands — ask, then record.
+- The victory's weight: costs paid stay paid; the stinger opens a door beside the ending.
+- Consequences rooted in what play established; name the beat that planted any reversal.
+- The afterscene short — one clear future vector or plain closure.
+- Every payoff the adventure promised — reunion, reward, answer, or loss — delivered on the page.

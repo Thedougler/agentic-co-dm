@@ -11,15 +11,15 @@ description: >
 # Wiki Update — Sync Any Project to Your Wiki
 
 You are distilling knowledge from the current project into the user's Obsidian wiki. This skill works from any project directory, not just the obsidian-wiki repo.
-## Capability Boundary
+## Capability boundary
 
-**Input** — The current project, its source evidence (working tree, relevant docs, and decision-bearing commits), the resolved vault, and the prior project manifest entry. Load only bounded project context plus targeted existing pages, `index.md`, and recent `hot.md`; do not inherit unrelated campaign or project artifact groups.
+**Input.** Current project (working tree, relevant docs, decision-bearing commits), resolved vault, prior project manifest entry.
 
-**Work** — `wiki-update` owns the project delta, evidence-backed distillation, project-page destination selection, and cross-links. The parent objective remains “sync this project”; read-only helpers such as `code-understand` return focus evidence, while page/craft owners receive only the cited claims, target path, and applicable template conventions. Re-observe the same project delta after each child or recovery action.
+**Work.** Compute project delta, distill evidence-backed knowledge, select project-page destinations, add cross-links. No meaningful delta → report unchanged, no writes.
 
-**Done** — With meaningful changes, close only after each created or updated page satisfies its output contract and scoped validation, then finalize tracking once: one project manifest `upsert`, one `index.md` update, one `log.md` entry, and one bounded `hot.md` rewrite. Run one QMD refresh after those writes and verify one affected page with search followed by `qmd get`/`multi-get`. With no meaningful delta, report unchanged and perform no writes or refresh. A changed delta or validation finding is required for continuation; an unchanged result terminates rather than reprocessing. Failed recovery ends with a specific blocker before outer limits.
+**Done.** Each page satisfies its output contract + scoped lint. Finalize once: manifest upsert, index/log/hot update, QMD refresh + verify.
 
-**Capability Handoff** — Return focus-map/source citations, destination pages, and scoped validation evidence to the parent sync. `wiki-update` owns project tracking and QMD finalization; a delegated read or craft capability owns only its bounded operation and returns evidence before the sync resumes. Finalization occurs exactly once after all required child owners close; children never duplicate manifest/index/log/hot/QMD work.
+**Handoff.** Read helpers return focus evidence. Page/craft owners receive cited claims + target path.
 
 
 ## Before You Start

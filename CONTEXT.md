@@ -137,6 +137,14 @@ The highest-stakes confrontation made inevitable by the preceding play.
 **Resolution**:
 The aftermath that shows what changed, closes the current pressure, and establishes what comes next.
 
+**Table-ready**:
+A beat the DM can run cold from its page — every moment the players could act has its world response, roll, and changed state written down, with no name, number, motive, or consequence left to invent at the table.
+_Avoid_: complete-looking; filled template
+
+**Escalation tier**:
+A Cliffhanger's or Climax's place on the session's opposition ladder — Grunts, Minions, Henchmen, Villain (monsters: Scare, Fright, Horror, Terror) — rising across the night.
+_Avoid_: difficulty setting; random encounter strength
+
 ## Infrastructure language
 
 **Wiki**:

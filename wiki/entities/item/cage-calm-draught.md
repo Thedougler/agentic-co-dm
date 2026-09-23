@@ -7,8 +7,13 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:cage-calm-draught.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: "2026-09-22"
 type: item
+kind: consumable
+region: "Calveno"
+owner: "Zort"
+rarity: common
+attunement: false
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
@@ -36,7 +41,6 @@ tier: supporting
 
 *Potion (Feed Additive), Common.* Brewed in the back of [[Zort's Pits]] out of fermented marsh fruit and something [[Zort]] will not name, and used there to make a new arrival safe to handle on its first day. One crock holds three doses. Weighs 2 pounds.
 
-## Mechanics
 
 > [!mechanic]
 > **[HB] Dose (action).** Mix one dose into food or water a beast then eats or drinks, or throw the crock as an improvised weapon at a target within 20 feet. A beast that swallows the dose, and any beast the thrown crock splashes, makes a DC 13 Constitution saving throw. On a failed save the draught charms it toward you for 10 minutes and halves its speed, and it will not attack while charmed. On a success nothing takes hold, though it knows someone tried.

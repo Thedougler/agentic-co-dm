@@ -12,9 +12,13 @@
         "Uses established Aruhe hazards and environment from the wiki.",
         "The cliffhanger creates a genuine choice point with meaningful stakes.",
         "DM-facing content is explicit — named threats, concrete consequences.",
-        "Output includes Trigger, PC objective, Opposition objective, Stakes, and Ends when.",
+        "Output includes Card, Tier, Thread under test, Entry state, Trigger, PC objective, Opposition objective, Stakes, Ends when, and Memorable element.",
         "Output includes Run the Beat table with Opposition, Default motion, Pressure, Leverage, Danger, Ways out.",
-        "Output includes Open on Action narration callout with 'you' address."
+        "Output includes Open on Action narration callout with 'you' address.",
+        "Opposition that can fight carries compact numbers on the page (AC, HP, Speed, the attack or save DC the DM rolls) and a tactics line: opening move, adaptation, break point, exit.",
+        "Interactive features each carry a ruling (cover, DC, damage, or condition), and the space changes on a named round or trigger.",
+        "Pressure table escalates by round or named trigger.",
+        "Resolution rows cover objective gained, costly success, lost, and broken off, each with a next beat."
       ]
     },
     {
@@ -122,13 +126,14 @@
       "expected_output": "A cliffhanger beat filed from the cliffhanger template with all structural sections. The contest tests a thread a previous Development planted. The physical situation changes through one contest with a clear end condition.",
       "expectations": [
         "Output has type: session-prep and kind: cliffhanger in frontmatter.",
-        "Trigger, PC objective, Opposition objective, Stakes, and Ends when are present as top-level statements.",
+        "Card, Tier, Thread under test, Entry state, Trigger, PC objective, Opposition objective, Stakes, Ends when, and Memorable element are present as top-level statements.",
         "An Open on Action narration callout exists with you-address, immediate physical threat, and a non-sight sense.",
         "Run the Beat table has columns for Opposition, Default motion, Pressure, Leverage, Danger, and Ways out.",
-        "Opposition and Pressure sections exist in col-md blocks naming the threat's goal, method, and escalation.",
-        "Resolution table covers at least: party wins, party loses, and a mixed outcome with distinct consequences.",
+        "Opposition and Pressure sections exist in col-md blocks: Opposition gives numbers, intent, opening move, adaptation, breaking point, and exit; Pressure escalates by round or trigger.",
+        "Resolution table covers objective gained, costly success, lost, and broken off, with distinct consequences.",
         "Handoff names the next beat type (Development) and the carry-forward state.",
-        "The contest tests a thread from a previous beat — not a random disconnected attack."
+        "The contest tests a thread from a previous beat — not a random disconnected attack.",
+        "Surprise is resolved by Stealth against passive Perception, with surprised creatures rolling Initiative at Disadvantage, when the raid starts as an ambush."
       ]
     },
     {
@@ -141,7 +146,34 @@
         "The party can choose sides, play factions against each other, sneak through, or retreat — at least three viable approaches.",
         "Opposition section names each faction's goal, method, and what triggers their attention on the party.",
         "Stakes are concrete: what the party gains or loses by engaging vs avoiding.",
-        "The contest changes the physical situation through one engagement, then hands off to a Development."
+        "The contest changes the physical situation through one engagement, then hands off to a Development.",
+        "Each faction has compact numbers and its own tactics line."
+      ]
+    },
+    {
+      "id": 13,
+      "prompt": "Write an early-session Skirmish on Aruhe beach against a small Countless (wiki/entities/faction/countless.md) scouting party trying to mark the party's camp.",
+      "expected_output": "A Skirmish at grunt or minion tier: if the party wins the scouts escape by a prepared trick visible in the scene; if the party loses they are captured or left wounded.",
+      "expectations": [
+        "Card is Skirmish and the tier is Grunts or Minions, matching an early slot.",
+        "The scouts' escape trick is named, placed in the scene before it fires, and a PC who anticipates it can stop it.",
+        "Capture terms (or wounded-and-left) are stated for a party loss.",
+        "Opposition count follows the tier ratio or states the encounter-prep difficulty.",
+        "Opposition that can fight carries compact numbers on the page (AC, HP, Speed, the attack or save DC the DM rolls) and a tactics line: opening move, adaptation, break point, exit.",
+        "Resolution hands off to a Development."
+      ]
+    },
+    {
+      "id": 14,
+      "prompt": "Write a Confrontation Cliffhanger where Countless (wiki/entities/faction/countless.md) enforcers tell the party to leave Aruhe by the next tide or else.",
+      "expected_output": "A Confrontation: the opposition holds overwhelming visible force but chooses not to use it yet; the demand, what makes them strike, and the lasting cost are defined.",
+      "expectations": [
+        "Card is Confrontation and no blows land unless the party pushes.",
+        "The opposition's overwhelming force is visible and counted.",
+        "The demand is stated exactly.",
+        "What makes the enforcers strike now is stated, with that fight's numbers.",
+        "The humiliation or cost that sticks — the reason to want to beat them later — is named.",
+        "Defy, bargain, bluff, and comply each change how the Countless treat the party afterward."
       ]
     }
   ]

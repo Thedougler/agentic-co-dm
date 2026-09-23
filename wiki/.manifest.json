@@ -7279,7 +7279,7 @@
     "project": "shattered-sea",
     "source_type": "document"
   },
-  "last_updated": "2026-09-20T10:23:07.709225+00:00",
+  "last_updated": "2026-09-21T01:20:36Z",
   "page_identity_transitions": [
     {
       "page_path": "entities/faction/Khlysty.md",
@@ -8452,12 +8452,43 @@
       ],
       "source_type": "document",
       "project": "shattered-sea"
+    },
+    "/Users/nick/agentic-co-dm/wiki/_raw/Tokage-Island.md": {
+      "content_hash": "sha256:35d5e94cb96bf4810dfe05c5b1e39176fa6d0234ae0c56319e388f26d01d0d98",
+      "last_ingested": "2026-09-21T01:20:36Z",
+      "pages_produced": [
+        "entities/faction/akai-hodo-clan.md",
+        "entities/faction/ebony-scales.md",
+        "entities/faction/horntail-clan.md",
+        "entities/faction/kento-clan.md",
+        "entities/faction/omusubi-family.md",
+        "entities/faction/ryu-no-kage.md",
+        "entities/faction/yuki-no-kibo.md",
+        "entities/lore/semuanya.md",
+        "entities/npc/akibana-besko.md",
+        "entities/npc/biggu-baito.md",
+        "entities/npc/don-gex.md",
+        "entities/npc/kinryu-omusubi.md",
+        "entities/npc/madam-hino.md",
+        "entities/npc/master-miki-trox.md",
+        "entities/npc/mizobasho-red-tail.md",
+        "entities/npc/nona-black-jaw.md",
+        "entities/npc/ranga-gex.md",
+        "entities/npc/rango-gex.md",
+        "entities/npc/takayama-kongo.md",
+        "entities/place/akai-hodo-village.md",
+        "entities/place/honteiru-no-mura.md",
+        "entities/place/kurogane-mura.md",
+        "entities/place/shorin-hakushin-ji.md",
+        "entities/place/tokage-island.md",
+        "entities/place/zennitana.md"
+      ]
     }
   },
   "stats": {
     "packet_ingest-raw-2026-09-13-gh-2": 515,
-    "total_pages": 757,
-    "total_sources_ingested": 819
+    "total_pages": 782,
+    "total_sources_ingested": 820
   },
   "version": 1
 }

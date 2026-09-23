@@ -1,0 +1,1305 @@
+{
+  "skill_name": "theatre-of-the-mind",
+  "evals": [
+    {
+      "id": "stonepear-access-boundary",
+      "prompt": "The character picks up an intact stonepear from the table and asks what they notice. Describe only what this access supports, then leave the next interaction to the player.",
+      "expected_output": "A player-safe object branch reports exterior/contact facts supported by holding the intact stonepear and stops at an affordance or question. It does not reveal the interior, underside, function, history, contents, taste, or magic without a declared and resolved interaction.",
+      "assertions": [
+        {
+          "text": "Identifies the object's interaction state as intact and held rather than inspected or opened.",
+          "type": "process"
+        },
+        {
+          "text": "Uses only current contact or established knowledge and does not invent interior details, grit under the skin, taste, magic, history, or function.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Leaves cutting, tasting, opening, or another inspection as a player-declared next action.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "spiguar-cold-portrait",
+      "prompt": "Using wiki/entities/creature/spiguar.md, write the page's `[!narration]` cold portrait. The parent establishes: large spotted cat body, broad head, saber teeth, amber eyes, dark muzzle, golden-brown rosette fur, a living mantle of leaves/grass/vines over back and shoulders, long tail, large paws. No party, encounter, or table state is supplied.",
+      "expected_output": "A flowing creature portrait that makes the Spiguar drawable and distinguishable — spotted cat silhouette with saber teeth and the living grass mantle as the defining visual. No pounce, no tactics, no encounter staging.",
+      "assertions": [
+        {
+          "text": "Makes the Spiguar the sole subject with a body-scale silhouette a player could sketch: cat shape, saber teeth, and the grass/leaf mantle as the visual signature.",
+          "type": "quality"
+        },
+        {
+          "text": "Uses connected flowing prose, not a feature checklist or telegram stubs.",
+          "type": "quality"
+        },
+        {
+          "text": "Does not stage a pounce, drag, hide sequence, or any tactic — keeps behavior to ordinary stillness or movement.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Does not invent a scene, party, encounter, or current hunt.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Rephrases the parent rather than copying its narration block verbatim.",
+          "type": "quality"
+        },
+        {
+          "text": "Portrait is one paragraph of 4–7 connected third-person sentences with no party, viewer, current event, or closing question.",
+          "type": "structure"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "blackrail-cold-portrait",
+      "prompt": "Using wiki/entities/creature/Blackrail.md, write a cold `[!narration]` portrait. Parent establishes: 30-to-45-foot cave centipede, back reads as parallel strips of wet black iron, antennae longer than a man, body keeps contact with stone, dust jumps in rings before the leg-rattle arrives, head arrives sideways along the wall. No table state.",
+      "expected_output": "A flowing portrait that makes the Blackrail's scale, material, and movement signature drawable. The dust-ring tremor is the tell; the sideways head arrival is the defining motion. No venom, no pin, no combat resolution.",
+      "assertions": [
+        {
+          "text": "Conveys the 30-to-45-foot scale and the wet-black-iron material in concrete nouns a player can picture.",
+          "type": "quality"
+        },
+        {
+          "text": "Includes the dust-ring tremor as the observable tell — the thing that announces the creature before it arrives.",
+          "type": "content"
+        },
+        {
+          "text": "Uses the sideways head arrival or wall-contact motion as the defining movement rather than generic centipede scuttling.",
+          "type": "quality"
+        },
+        {
+          "text": "Does not resolve a pin, venom injection, or combat sequence.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Connected prose, not a catalog of body parts.",
+          "type": "quality"
+        },
+        {
+          "text": "Portrait is one paragraph of 4–7 connected third-person sentences with no party, viewer, current event, or closing question.",
+          "type": "structure"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "bloodhawk-cold-portrait",
+      "prompt": "Using wiki/entities/creature/bloodhawk.md, write a cold `[!narration]` portrait. Parent establishes: gargantuan monstrosity, broad charcoal body, wings large enough to lift a whale, the THUMP-thump wingbeat audible before the bird is visible, shadow sweeps over before it appears. No table state.",
+      "expected_output": "A portrait that makes the Bloodhawk's impossible scale visceral — the sound arriving before the sight, the shadow before the body. This is a creature whose size is the defining feature; the prose must make that size felt, not merely stated.",
+      "assertions": [
+        {
+          "text": "Makes the gargantuan scale felt through sensory sequence (sound before sight, shadow before body) rather than stating dimensions.",
+          "type": "quality"
+        },
+        {
+          "text": "Uses the THUMP-thump wingbeat signature or similar auditory tell as the creature's announcement.",
+          "type": "content"
+        },
+        {
+          "text": "The charcoal body and wing scale are drawable — a player hearing this could distinguish it from any other large bird.",
+          "type": "quality"
+        },
+        {
+          "text": "Does not resolve a stoop, attack, or tactical maneuver.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Does not assign PC reaction (fear, awe, running) to the sighting.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Portrait is one paragraph of 4–7 connected third-person sentences with no party, viewer, current event, or closing question.",
+          "type": "structure"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "river-otter-cold-portrait",
+      "prompt": "Using wiki/entities/creature/river-otter.md, write a cold `[!narration]` portrait. Parent establishes: twelve-foot chocolate-black river otters in blood-kin families, pale throat marks distinct as fingerprints, rolling through shallows with rope/oars/ankles/dead Deer-Stalker head, clear water surrounds them, the family goes still when play becomes a hunt. No table state.",
+      "expected_output": "A portrait that makes the otters' playful danger palpable — the game IS the threat, the pale throat marks are how you tell them apart, and the stillness shift is the tell. Not cute; not cuddly; twelve feet of coordinated river muscle that treats your gear as a toy.",
+      "assertions": [
+        {
+          "text": "Conveys the twelve-foot scale and the family social structure — these are not small animals playing.",
+          "type": "quality"
+        },
+        {
+          "text": "Uses the pale throat marks as individual identity or the gear-tugging as the defining behavior.",
+          "type": "content"
+        },
+        {
+          "text": "The play-to-stillness shift is present as the observable tell, not explained as a hunting mechanic.",
+          "type": "quality"
+        },
+        {
+          "text": "Does not reduce them to cute wildlife or inflate them into horror monsters — the tone is matter-of-fact danger.",
+          "type": "quality"
+        },
+        {
+          "text": "Does not stage a current encounter or assign table state.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Portrait is one paragraph of 4–7 connected third-person sentences with no party, viewer, current event, or closing question.",
+          "type": "structure"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "silence-moth-mechanics-leak",
+      "prompt": "Give the players their first look at a silence moth (wiki/entities/creature/silence-moths.md) hovering in a passage. Its aura is mechanically 30 feet and can cause suffocation, but the characters have not touched it or resolved a check.",
+      "expected_output": "The branch shows only the moth's body, behavior, and sensory buildup actually experienced. Exact aura range, DC, condition, suffocation, HP, and hidden ability remain outside player-facing prose.",
+      "assertions": [
+        {
+          "text": "Separates visible manifestation from inference and mechanics/secret information.",
+          "type": "process"
+        },
+        {
+          "text": "Telegraphs danger through observable buildup rather than announcing the 30-foot aura or suffocation.",
+          "type": "quality"
+        },
+        {
+          "text": "Does not state an exact radius, DC, condition, HP, or hidden ability before the table earns or resolves it.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "source-silence-boundary",
+      "prompt": "A closed iron chest is visible in the room. No source, sightline, established expertise, or resolved interaction tells anyone what is inside. The user asks: 'What might be inside? It is fine to be uncertain.' Respond using the theatre-of-the-mind boundary.",
+      "expected_output": "The agent does not invent possible contents. It explains or routes the missing access outside player-facing prose, and leaves the chest's interior for a declared and resolved interaction.",
+      "assertions": [
+        {
+          "text": "Rejects the request to fill source silence with genre-default or uncertain interior detail.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Makes clear that 'might be' or other uncertainty wording cannot create an evidence channel.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Stops at the visible chest or routes to the owning content-stock skill and leaves opening/inspection to the player.",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": "breathmelon-cold-portrait",
+      "prompt": "Using test-content/item.breathmelon.md, write a standalone cold player portrait. The parent appearance establishes a pale-green melon that floats in shallow water, a dimpled exterior, a hollow response when thumped, and a cut-open air-cell lattice that squeaks when compressed. The same parent also contains water-breathing, swim-speed, rarity, attunement, biology, and identification mechanics. The parent audience is [agent, dm], but no identified-properties knowledge is granted.",
+      "expected_output": "A self-contained item portrait covers all four established appearance/state facts in fresh language: buoyancy, exterior, hollow thump response, and the cut-open squeaking air-cell structure. It omits water-breathing, swim speed, rarity, attunement, biology, identification DCs, and other GM data.",
+      "assertions": [
+        {
+          "text": "Uses the cold player-appearance layer and includes floating/buoyancy, pale-green dimpled exterior, hollow thump response, and the cut-open squeaking internal pattern.",
+          "type": "content"
+        },
+        {
+          "text": "Does not disclose water-breathing, swim speed, duration, rarity, attunement, biology, identification DCs, or other private mechanics.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Materially rephrases the parent rather than copying its sentence wording or distinctive phrasing.",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "glass-cricket-cold-portrait",
+      "prompt": "Using test-content/creature.glass-cricket.md, write a standalone cold player portrait. The parent establishes a pale cave cricket body with elongated legs and antennae, damp root-well/cave habitat, and the observable response that it becomes still when large vibration reaches the basalt. The parent also labels it a warning system and names Blackrail as the cause/meaning; those interpretations are not granted player knowledge.",
+      "expected_output": "A fresh species identity card covers the supplied body, habitat, and the observable vibration-to-stillness response. It does not add the warning meaning, causal explanation, or name the Blackrail.",
+      "assertions": [
+        {
+          "text": "Makes the Glass Cricket the sole subject with fresh wording for its pale body, elongated legs/antennae, habitat, and stillness response.",
+          "type": "content"
+        },
+        {
+          "text": "States only the observable stimulus and response — does not explain that a Blackrail is moving or that the stillness is a warning system.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Does not invent a current camera, party, encounter, mechanics, or hidden cause.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "aruhe-cave-cold-region",
+      "prompt": "Using test-content/region.aruhe-the-cave.md, write one standalone cold player-reference portrait of The Cave. Cover only public descriptive geography: the buried lava-tube network, changing passage/chamber/crawl topology, roots and daylight openings, the Great Bore, Daylight Hole, Drowned Tube, Old Mouth, echoing sound, darkness, and unreliable air. Exclude Blackrail identity/tactics, learned flow rules, DCs, unconfirmed routes, and design commentary.",
+      "expected_output": "A neutral region portrait that covers the lava-tube structure and named landmarks in fresh prose. The underground geography should feel vast and disorienting — not a labeled map, but a place where you lose direction.",
+      "assertions": [
+        {
+          "text": "Covers the buried lava tubes, variable topology, roots/daylight openings, named public landmarks, echoing darkness, and unreliable-air character.",
+          "type": "content"
+        },
+        {
+          "text": "Does not disclose Blackrail identity, tactics, learned flow-direction rule, DCs, or unconfirmed links.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Groups facts by portrait logic in fresh prose rather than copying the parent's section order.",
+          "type": "quality"
+        },
+        {
+          "text": "The prose conveys disorientation and scale — a reader should feel the tubes go deeper and wider than any visitor has mapped.",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "fate-spinner-cold-item",
+      "prompt": "Using Fate Spinner parent (thumb-sized quartz four-sided top, worn faces, always cool; Kyzil cover 'meditation focus'; actual Long Sight magic is DM/identified), write item-page `[!narration]` cold portrait. No identified-properties request.",
+      "expected_output": "Drawable visual detail (silhouette/scale, material/wear) plus allowed physical behavior. Cover story and effects stay out. The object should feel old and handled — weight and wear tell the story, not adjectives.",
+      "assertions": [
+        {
+          "text": "Covers drawable visual: quartz material, four-sided top shape, thumb scale, worn faces, cool-to-touch.",
+          "type": "content"
+        },
+        {
+          "text": "Does not disclose Long Sight, visions, or the meditation-focus cover story as description.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Avoids mood-by-negation and glitter-padding — the wear and weight carry the character.",
+          "type": "quality"
+        },
+        {
+          "text": "Not a telegram stub — enough flowing prose to picture and distinguish the object.",
+          "type": "quality"
+        },
+        {
+          "text": "Portrait is one paragraph of 4–7 connected third-person sentences with no party, viewer, current event, or closing question.",
+          "type": "structure"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "clear-lake-cold-place",
+      "prompt": "Using Clear Lake parent (clear drinkable inland lake; shores/channels; river valleys in; Grove shore route; cool water/wet stone; fiction-only huge submerged life + otter; Hunger/possession in DM notes), write location `[!narration]` with no party/table state.",
+      "expected_output": "A cold place portrait with an independent prose spine: this lake's body-scale size and drinkable clarity as the leading facts, with wet stone, river mouths, and Grove channel folded in. No Strong-echo checklist cadence; no mystery closer.",
+      "assertions": [
+        {
+          "text": "Leads with the lake's defining quality (drinkable clarity, body-scale size) rather than a thin opener like 'The shore is wet stone.'",
+          "type": "quality"
+        },
+        {
+          "text": "Folds wet stone, river mouths, and Grove channel into flowing prose with an independent spine — not a checklist of one-fact-per-sentence.",
+          "type": "quality"
+        },
+        {
+          "text": "Does not use a mystery closer, em-dash revelation, or Hunger/names from DM notes.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Keeps large submerged life / Hunger out unless expressed only as stable surface ecology.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Portrait is one paragraph of 4–7 connected third-person sentences with no party, viewer, current event, or closing question.",
+          "type": "structure"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "clear-lake-judge-fail",
+      "prompt": "Judge this Clear Lake cold `[!narration]`: 'The shore is wet stone. Clear lake water shows the bottom near the bank before the blue goes dark farther out. Rivers open into the lake in slow wide mouths, and a channel keeps on toward the Grove. Cool air lifts off the water.'",
+      "expected_output": "FAIL — Strong-echo checklist architecture (one fact per sentence in source order), thin telegram opener, missing spine. The drinkable affordance — the lake's defining quality — is buried under 'cool air.'",
+      "assertions": [
+        {
+          "text": "Verdict is FAIL for Strong-echo / one-fact-per-sentence checklist architecture.",
+          "type": "content"
+        },
+        {
+          "text": "Identifies the thin telegram opener ('The shore is wet stone') as a structural weakness.",
+          "type": "quality"
+        },
+        {
+          "text": "Notes that the drinkable affordance is the lake's defining quality and is missing or buried.",
+          "type": "quality"
+        },
+        {
+          "text": "Does not pass merely because the mystery closer is absent.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "deer-stalker-cold-portrait",
+      "prompt": "Using wiki/entities/creature/Deer-Stalker.md, write cold `[!narration]` with no table state. Parent establishes: deer-taller carcass shape, wrong hips, clawed forelimbs; interrupt meal → loud bolt ruse → minutes later in trees; Borrowed Voice at night.",
+      "expected_output": "A wrong-hipped deer-over-carcass body portrait in flowing connected prose. The wrongness IS the tell — hips that don't move like a deer's, claws where hooves should be. No time-skip tactic film, no Borrowed Voice.",
+      "assertions": [
+        {
+          "text": "Makes the wrong hips and clawed forelimbs the central visual — the thing that makes a player say 'that's not a deer.'",
+          "type": "quality"
+        },
+        {
+          "text": "Uses connected flowing prose, not isolated telegram fragments ('Chin drips. Eyes face forward.').",
+          "type": "quality"
+        },
+        {
+          "text": "Does not script the meal→bolt→trees time-skip tactic sequence in Appearance.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Keeps Borrowed Voice and night behavior in At the table / mechanics.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Portrait is one paragraph of 4–7 connected third-person sentences with no party, viewer, current event, or closing question.",
+          "type": "structure"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "grubnade-cold-portrait",
+      "prompt": "Using Grubnade parent (cream-green thumb-long caterpillar on flower; disturb → swell/hiss → detonation with finger-joint young), write cold `[!narration]` with no table state.",
+      "expected_output": "An idle caterpillar on a flower — small, still, unremarkable until it isn't. The prose should make the smallness specific (thumb-long, cream-green) without triggering the detonation sequence.",
+      "assertions": [
+        {
+          "text": "Shows the idle body on the flower with specific scale and color — thumb-long, cream-green.",
+          "type": "content"
+        },
+        {
+          "text": "Does not script the disturb→swell→burst sequence — no 'when touched' or 'if disturbed.'",
+          "type": "guardrail"
+        },
+        {
+          "text": "The ordinariness of the caterpillar is the point — the prose should not telegraph danger.",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "long-reach-technique",
+      "prompt": "Using Long Reach parent (kind: technique; Sentinel apprentice martial form; exact breath/stance in peak wind; training on cantilevered terraces is Fiction; fiction: strike beyond ordinary wingspan; no full mechanics), write technique-page `[!narration]` with no fight table state.",
+      "expected_output": "A venue-free description of the breath/stance/wing set and the strike-past-wingspan as observable training tells. No terrace staging, no mysticism, no gear silhouette forced onto a technique.",
+      "assertions": [
+        {
+          "text": "Describes breath, stance, and wing set as observable training facts without inventing a venue.",
+          "type": "content"
+        },
+        {
+          "text": "Does not stage a terrace, gust-peak scene, or training montage.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Does not use craft vocabulary ('telegraph', 'tell ends') in player-facing prose.",
+          "type": "guardrail"
+        },
+        {
+          "text": "The strike-past-wingspan is stated as a stable fact, not resolved as a current action.",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "duchess-item-portrait",
+      "prompt": "Using The Duchess parent (Delmar's named naval musket; long barrel; polished wood and brass fittings; engraved plate near the lock reads The Duchess; carried with admiral confidence; named for Serafina — dedication is Story hooks), write cold item `[!narration]`. No identified-properties request.",
+      "expected_output": "A drawable musket portrait: barrel length, wood-and-brass material, the engraved nameplate. The carry should suggest the weapon's significance without biography. Serafina dedication stays in Story hooks.",
+      "assertions": [
+        {
+          "text": "Covers barrel, stock, brass fittings, and engraved nameplate as concrete drawable nouns.",
+          "type": "content"
+        },
+        {
+          "text": "Does not include 'He named it for Serafina' or the marriage dedication in Appearance.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Does not end on a catalog gloss ('carries as ordinary X for Y') or taxonomy closer.",
+          "type": "quality"
+        },
+        {
+          "text": "The carry manner suggests significance through physicality, not biography.",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "countless-faction-portrait",
+      "prompt": "Using wiki/entities/faction/Countless.md, write the faction page's cold narration with no table state. Parent establishes: Sentinel breakaways, missing or taken names and records, the shared title Talon, one-job hires who never learn the orderer, and searches of pilgrim routes, grey markets, and Sentinel waystations for Fate Spinner carriers. Keep Rule of Two, immediate hunt, leadership, and DM sections out.",
+      "expected_output": "A public faction portrait — what people know, what they've heard, what they can see. The Countless are recognizable by absence: missing names, missing records, the Talon title that replaces an identity.",
+      "assertions": [
+        {
+          "text": "Shows the public mask and shared Talon title with a concrete footprint — missing names/records, one-job hires, searches through established routes.",
+          "type": "content"
+        },
+        {
+          "text": "Keeps Rule of Two, hunt objectives, secret agenda, and leadership out of the narration.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Uses plain drawable public signs — not abstract workshop phrasing ('martial reach', 'dropped the ledgers').",
+          "type": "quality"
+        },
+        {
+          "text": "Does not use craft labels ('face cue', 'Tell', 'mask', 'footprint') or a meta closer in the narration.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Ends on the Talon title or the name people hear — not a thesis statement about the faction.",
+          "type": "quality"
+        },
+        {
+          "text": "Portrait is one paragraph of 4–7 connected third-person sentences with no party, viewer, current event, or closing question.",
+          "type": "structure"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "saltwright-vehicle-portrait",
+      "prompt": "Using the Saltwright parent, write cold vehicle `[!narration]` with no table state. Public facts are boarding scars, deck and rail, lines, cargo holds, and ordinary canvas.",
+      "expected_output": "A drawable ship portrait that uses scars, lines, rail, and holds as kitchen-table access nouns. The scars are the defining visual — this vessel has been boarded and survived.",
+      "assertions": [
+        {
+          "text": "Includes supported scars, deck, rail, lines, and holds as concrete drawable nouns.",
+          "type": "content"
+        },
+        {
+          "text": "Does not use 'boarding interface' or other craft-meta access labels in player prose.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Keeps smuggler lore, ownership history, and hidden routes out.",
+          "type": "guardrail"
+        },
+        {
+          "text": "The boarding scars carry character — they suggest history without narrating it.",
+          "type": "quality"
+        },
+        {
+          "text": "Portrait is one paragraph of 4–7 connected third-person sentences with no party, viewer, current event, or closing question.",
+          "type": "structure"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "calders-tooth-cold-place",
+      "prompt": "Write a cold public place note for Calder's Tooth / Port Tidefall (wiki/entities/place/calders-tooth-and-port-tidefall.md). The parent establishes both as public landmarks. No current table state.",
+      "expected_output": "Both named halves appear as drawable landmarks. The cliff and the port are a pair — the geography connects them. Not two separate catalog entries.",
+      "assertions": [
+        {
+          "text": "Covers both Calder's Tooth and Port Tidefall as connected geography, not isolated entries.",
+          "type": "content"
+        },
+        {
+          "text": "Does not invent encounter motion, secrets, or an opaque title explanation.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Uses body-scale geography and a usable affordance — what you'd see arriving by sea.",
+          "type": "quality"
+        },
+        {
+          "text": "If both cannot be rendered from the parent, routes the mismatch to retitling upstream.",
+          "type": "process"
+        },
+        {
+          "text": "Portrait is one paragraph of 4–7 connected third-person sentences with no party, viewer, current event, or closing question.",
+          "type": "structure"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "razer-grass-hazard-portrait",
+      "prompt": "Write a cold `[!narration]` for Razer-Grass using the hazard parent: waist-high colonies, opaline glass armor on stalks, contact cuts, fixed sparkles that don't sway with wind, old blood on lower blades, glassy tinkle in wind. No table state.",
+      "expected_output": "A hazard portrait where the grass IS the danger — hard as glass, sparkles fixed in place while real grass sways, old blood at the base. The prose must make a player instinctively not want to walk through it, using plain table-understandable words.",
+      "assertions": [
+        {
+          "text": "Makes the hazard body the grammatical subject — not a valley camera or place spine.",
+          "type": "structure"
+        },
+        {
+          "text": "Keeps glass material and cut danger in plain spoken nouns — not ecology-register ('discrete colonies', 'opaline', 'cut-ready').",
+          "type": "quality"
+        },
+        {
+          "text": "Uses a positive drawable signal (fixed sparkles, glass sound, old blood) — not mood-by-negation ('no frost', 'rather than glitter').",
+          "type": "quality"
+        },
+        {
+          "text": "Keeps contact mechanics, Shatter, Glass Bloom, and scripted aftermath out of cold narration.",
+          "type": "guardrail"
+        },
+        {
+          "text": "A player hearing this would choose to walk around, not because you said 'dangerous' but because the description made it obvious.",
+          "type": "quality"
+        },
+        {
+          "text": "Portrait is one paragraph of 4–7 connected third-person sentences with no party, viewer, current event, or closing question.",
+          "type": "structure"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "yssenmoor-cold-place",
+      "prompt": "Using Yssenmoor public facts, write cold location `[!narration]` with no table state. The parent supports quartz spin and ordinary ground; the duck miracle 'has died and reformed' is Secrets/DM only.",
+      "expected_output": "Quartz spin tied to ordinary ground — the place's defining strangeness is geological, not miraculous. The DM secret stays secret.",
+      "assertions": [
+        {
+          "text": "Uses quartz spin and ordinary ground as drawable public facts.",
+          "type": "content"
+        },
+        {
+          "text": "Rejects the duck 'has died and reformed' and any miracle/lore in cold narration.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Stops on stable geography or a usable affordance.",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "crown-squid-cold-portrait",
+      "prompt": "Using the Crown Squid parent (gargantuan canopy squid; translucent/glass-pale mantle; eight arms; hanging wet hooklines; plate eyes; Hookline/Reel tactics and 'Open with surveillance' in DM notes), write the page's `[!narration]` player block. No party or table state.",
+      "expected_output": "A cold portrait of the squid's body in the canopy — translucent mantle, plate eyes, hanging hooklines as ordinary posture. The camouflage is the defining visual: among foliage, this thing nearly disappears. No resolved Hookline/Reel contact.",
+      "assertions": [
+        {
+          "text": "Covers drawable squid body (mantle, arms, hooklines, plate eyes) and ordinary canopy behavior without executing tactics.",
+          "type": "content"
+        },
+        {
+          "text": "Does not resolve a Hookline contact, Reel, or any tactical sequence — no ankle/boot leaving the ground.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Camouflage is conveyed through concrete observable cues (color matching, stillness) not poetic merges ('takes branch and leaf', 'becomes the trees').",
+          "type": "quality"
+        },
+        {
+          "text": "If a telegraph appears, it stops before contact and keeps the creature as grammatical subject.",
+          "type": "structure"
+        },
+        {
+          "text": "Portrait is one paragraph of 4–7 connected third-person sentences with no party, viewer, current event, or closing question.",
+          "type": "structure"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "parent-rephrasing",
+      "prompt": "The parent contains polished player-facing narration: 'The lantern hangs above the narrow bridge, its blue flame shivering over black water while the chain hums in the wind.' Preserve the established facts for a new player-facing situated description, but do not quote or closely repeat the parent's wording, sentence order, distinctive image, or metaphor.",
+      "expected_output": "A new description preserving lantern, narrow bridge, blue flame, black water, chain, wind, and their relationships — in materially different wording and syntax. The same scene, freshly spoken.",
+      "assertions": [
+        {
+          "text": "Preserves all supplied facts and relationships: lantern over bridge, blue flame, black water, chain, wind-linked motion.",
+          "type": "content"
+        },
+        {
+          "text": "Materially rephrases sentence structure and wording — does not reproduce the source sentence or distinctive metaphor.",
+          "type": "quality"
+        },
+        {
+          "text": "Does not invent a viewer, party action, hidden meaning, mechanics, or unsupported detail.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "combat-hit-concision",
+      "prompt": "Write a combat hit update only: the PC's cutlass connects with a Grung raider's shoulder and green blood hits the deck.",
+      "expected_output": "One tight line for the hit surface. Short is correct here — do not inflate into a portrait paragraph.",
+      "assertions": [
+        {
+          "text": "Stays a short hit/update line — one or two sentences maximum.",
+          "type": "structure"
+        },
+        {
+          "text": "Names owner, contact surface, and visible consequence.",
+          "type": "content"
+        },
+        {
+          "text": "Does not expand into a full creature portrait or purple combat poetry.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "duchess-improve-stub",
+      "prompt": "Improve this `[!narration]` without inventing canon: 'Delmar Fisk's named musket, carried with admiral confidence and the history of a marriage. He named it for Serafina.' Parent also establishes: long-barreled naval musket; polished wood and brass fittings; engraved plate near the lock reads The Duchess; carried as if it were still on a flagship rail.",
+      "expected_output": "Expanded into a complete flowing portrait joining appearance, fittings, nameplate, and carrying manner. Fuller than the stub — but not by adding adjectives. By adding concrete drawable nouns.",
+      "assertions": [
+        {
+          "text": "Result is fuller drawable prose than the two-sentence stub, covering weapon form and nameplate.",
+          "type": "quality"
+        },
+        {
+          "text": "Does not invent combat bonuses, scene, or Serafina biography beyond the name.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Avoids purple padding that adds no new drawable noun — every sentence earns its place.",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "npc-folded-spatial",
+      "prompt": "Write a player-facing first look from the doorway of a small roadside watchroom. A narrow door at the far end opens to a courtyard, and an open shutter on the right faces the road. Mara, an older woman with a red scarf and cracked spectacles, sits at a table beneath the shutter, sorting wet maps into a brass case; she looks up when the party enters. Her established current objective is finding a missing courier, but no motive or backstory is known.",
+      "expected_output": "A spatial first look that orients the room (entry, far door, shutter, table) while folding Mara's Face and current action into that space. The room IS the scene — Mara inhabits it. Ends on her look or an answerable opening, not an NPC biography.",
+      "assertions": [
+        {
+          "text": "Keeps doorway camera, far courtyard door, road-facing shutter, and room relationships clear — spatial orientation first.",
+          "type": "structure"
+        },
+        {
+          "text": "Folds Mara's red scarf, cracked spectacles, and map-sorting action into the spatial scene rather than routing as a standalone NPC portrait.",
+          "type": "quality"
+        },
+        {
+          "text": "Leaves a live, answerable opening through Mara's look or action change without narrating the party's response.",
+          "type": "quality"
+        },
+        {
+          "text": "Does not invent history, motive, unsupported sensory detail, or force a question.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+          "type": "content"
+        },
+        {
+          "text": "Includes at least one sense beyond sight, with its source in the world.",
+          "type": "content"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Never states a PC's action, speech, thought, feeling, decision, or bodily reaction.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "creature-first-spatial",
+      "prompt": "Write one player-facing first look from a dry ledge in a flooded vault. A large horned river drake crouches between the party and a brass key in a shallow stone basin; one foreclaw touches the basin rim and its head turns toward the party. One narrow dry approach, dark water below. The key has not been touched and no check has been resolved.",
+      "expected_output": "A creature-first spatial description where the drake IS the scene — its body and response are the primary subject, the key and approach are visible through the creature's position. The prose creates a drawable tactical picture without calling it tactical.",
+      "assertions": [
+        {
+          "text": "Makes the drake the grammatical and attentional subject using crouch, foreclaw, and head turn as current action.",
+          "type": "structure"
+        },
+        {
+          "text": "Preserves the visible key, basin, narrow approach, and water boundary so the access relationship is drawable.",
+          "type": "content"
+        },
+        {
+          "text": "Does not invent a guarding motive, petrification, statistics, or hidden ability.",
+          "type": "guardrail"
+        },
+        {
+          "text": "A player hearing this knows: where they are, where the creature is, where the key is, and what routes exist — without being told 'tactically.'",
+          "type": "quality"
+        },
+        {
+          "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+          "type": "content"
+        },
+        {
+          "text": "Includes at least one sense beyond sight, with its source in the world.",
+          "type": "content"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Never states a PC's action, speech, thought, feeling, decision, or bodily reaction.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "full-loaded-first-look",
+      "prompt": "Write one coherent spoken block for a full loaded first look at a fixed rectangular quarry court. The party stands at its west entrance. A path behind returns to the river landing; a narrow trail leaves through a broken east gate inland. Collapsed foreman's wall on the south is usable cover. Jori, an older surveyor with a yellow rain cloak, stands at the north winch tightening a rope. Three mud-coated hounds move shoulder-to-shoulder from a dry cistern toward Jori. A silver ring is hidden under a loose flagstone near the wall and is not visible.",
+      "expected_output": "One complete spatial block that a DM reads once and the table has a shared picture: entry, retreat, routes, cover, Jori, hounds, and the hounds' motion toward Jori — all in one pass. The hidden ring is absent. The block stops only after the visible state is complete.",
+      "assertions": [
+        {
+          "text": "Includes retreat path, inland trail, collapsed-wall cover, Jori at the north winch, and all three hounds moving shoulder-to-shoulder in one coherent current state.",
+          "type": "content"
+        },
+        {
+          "text": "Relationships are drawable: party's west entrance, routes, cover, Jori's position/action, and hounds' movement from cistern toward Jori are connected, not isolated catalog facts.",
+          "type": "quality"
+        },
+        {
+          "text": "Excludes the hidden silver ring, mechanics, and future outcomes.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Does not stop at an early micro-opening before the complete visible state is conveyed.",
+          "type": "quality"
+        },
+        {
+          "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+          "type": "content"
+        },
+        {
+          "text": "Includes at least one sense beyond sight, with its source in the world.",
+          "type": "content"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Never states a PC's action, speech, thought, feeling, decision, or bodily reaction.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Each fact appears once and every sentence adds a picture, a handle, a threat, or the live edge; no history or metadata the characters cannot perceive.",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "hook-beat-opening",
+      "prompt": "Write a Hook opening for a Beat where the party's ship runs aground on a reef at dawn. The spoken look should serve the Hook job — immediate disturbance, not leisurely orientation. Do not script what the PCs do, feel, or decide.",
+      "expected_output": "A Hook opening that front-loads the grounding impact — the jolt, the reef, the dawn light on damage — and ends on a live situation. The players should want to act before you finish speaking.",
+      "assertions": [
+        {
+          "text": "Serves a Hook job: immediate interest or disturbance front-loaded with minimal orientation.",
+          "type": "structure"
+        },
+        {
+          "text": "Does not assign PC action, thought, emotion, intent, or unresolved outcome.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Ends on a live situation without choosing the party's response.",
+          "type": "quality"
+        },
+        {
+          "text": "No secrets, DCs, unearned names, or hidden causes in the spoken block.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+          "type": "content"
+        },
+        {
+          "text": "Includes at least one sense beyond sight, with its source in the world.",
+          "type": "content"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Never states a PC's action, speech, thought, feeling, decision, or bodily reaction.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Length fits the SKILL table for its surface (scene opening 5–9 sentences; cells 1–3; creature in scene 2–4; portrait 4–7).",
+          "type": "structure"
+        }
+      ]
+    },
+    {
+      "id": "combat-spatial-clarity",
+      "prompt": "Write a combat opening for a fight in a flooded temple ruin. Three sahuagin cluster near the altar (Near the party), two more lurk behind a collapsed pillar (Far). A cracked stone bridge connects the entry ledge to the altar platform. Knee-deep water covers the floor. Use relational distance, not coordinates.",
+      "expected_output": "A combat opening where threats, grouping, terrain, cover, and routes are clear from one hearing. Distance uses relational bands. A player should be able to answer 'can my fireball hit the cluster without hitting us?'",
+      "assertions": [
+        {
+          "text": "Gives distance in speakable terms (arm's reach, a few strides, across the hall, a bowshot) rather than coordinates or zone labels; feet appear only where a rule needs the number.",
+          "type": "structure"
+        },
+        {
+          "text": "Grouping of the three clustered sahuagin is legible enough to answer a reasonable area-effect question.",
+          "type": "quality"
+        },
+        {
+          "text": "Threats, terrain (bridge, water), cover (pillar), and routes are understandable from one hearing.",
+          "type": "quality"
+        },
+        {
+          "text": "Does not include a turn-by-turn script or top-of-round summary.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+          "type": "content"
+        },
+        {
+          "text": "Includes at least one sense beyond sight, with its source in the world.",
+          "type": "content"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Never states a PC's action, speech, thought, feeling, decision, or bodily reaction.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "wiki-portrait-watchtower",
+      "prompt": "Write a wiki portrait for a stone watchtower on a coastal headland. Supplied facts: three stories, weathered grey stone, arrow slits on upper floors, a rusted iron door, and a collapsed wooden stair visible through the door. No party, encounter, or transient state.",
+      "expected_output": "A standalone wiki portrait valid across sessions — no encounter, no party, no transient weather. The watchtower should be recognizable from any approach and distinguishable from any other tower in the wiki.",
+      "assertions": [
+        {
+          "text": "Remains valid with no party and no encounter — does not stage a fight or plant the party.",
+          "type": "structure"
+        },
+        {
+          "text": "Does not include transient facts or assume current conditions beyond the supplied stable description.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Gives enough identity anchors (stone, height, slits, door, collapsed stair) to recognize and distinguish the watchtower.",
+          "type": "quality"
+        },
+        {
+          "text": "Portrait is one paragraph of 4–7 connected third-person sentences with no party, viewer, current event, or closing question.",
+          "type": "structure"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "situated-initial-narration",
+      "prompt": "Write a situated scene-setting Initial Narration (Hook beat) for a party entering an underground market cavern. Supplied facts: ceiling three stories high with stalactites, packed dirt floor with wooden stalls in rows, lanterns hanging from ropes between stalactites, a crowd, nearest stall sells dried fish. Second person present tense. Do not assign PC emotion, thought, or body reaction.",
+      "expected_output": "A Layer 1 opening that seats the party in the space — where they stand, the cavern's body-scale size, ground/air/light before stall inventory. Ends on a Hook-appropriate live situation. Not a postcard from nowhere.",
+      "assertions": [
+        {
+          "text": "Establishes where the party stands and the space at body scale (ceiling height or similar) before listing stalls.",
+          "type": "structure"
+        },
+        {
+          "text": "Ground, air, or light conditions come from the space, not assigned PC body reactions ('eyes adjust', 'stomach growls').",
+          "type": "guardrail"
+        },
+        {
+          "text": "Serves a Hook job: immediate interest front-loaded.",
+          "type": "quality"
+        },
+        {
+          "text": "Does not read as a postcard inventory viewable from no particular position.",
+          "type": "quality"
+        },
+        {
+          "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+          "type": "content"
+        },
+        {
+          "text": "Includes at least one sense beyond sight, with its source in the world.",
+          "type": "content"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Never states a PC's action, speech, thought, feeling, decision, or bodily reaction.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Length fits the SKILL table for its surface (scene opening 5–9 sentences; cells 1–3; creature in scene 2–4; portrait 4–7).",
+          "type": "structure"
+        }
+      ]
+    },
+    {
+      "id": "judge-bad-narration",
+      "prompt": "Judge this situated scene-setting Initial Narration: 'You enter the forge. The heat makes you sweat. A large anvil sits in the center of the room. Hammers line the wall. The smith, a burly man with burns on his arms, looks up. Your heart pounds.' Explain what fails and why.",
+      "expected_output": "FAIL — assigns PC body reactions ('makes you sweat', 'heart pounds'), lists furniture without body-scale framing, and reads as a postcard inventory. The heat should be in the environment, not on the PC's skin.",
+      "assertions": [
+        {
+          "text": "Identifies assigned PC physiology ('makes you sweat', 'heart pounds') as an agency violation.",
+          "type": "content"
+        },
+        {
+          "text": "Identifies the opening as a postcard/furniture list without frame or body-scale orientation.",
+          "type": "content"
+        },
+        {
+          "text": "Does not reject 'heat' itself — only its assignment to the PC body rather than the space.",
+          "type": "quality"
+        },
+        {
+          "text": "Notes that environment-placed heat (rolling from the furnace, low ceiling, soot underfoot) conveys intensity without stealing the PC's reaction.",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "multi-surface-routing",
+      "prompt": "Provide one player-facing output for each: a cold portrait of the Spiguar (wiki/entities/creature/spiguar.md), one line of NPC dialogue from a Countless Talon (wiki/entities/faction/Countless.md) meeting the party, a one-sentence recap entry for a session where the party crossed Aruhe (wiki/entities/region/aruhe.md), and a handout excerpt from a torn map fragment. Keep each output useful in its own surface shape.",
+      "expected_output": "Four outputs visibly different in shape: creature portrait (body/silhouette/behavior), NPC dialogue (want/tactic/utterance/response opening), recap (past-tense play-made truth), handout (scannable diegetic payload). None is padded into a universal spatial template.",
+      "assertions": [
+        {
+          "text": "Object/creature prose identifies a visual signature and stops at an affordance or state, not a scene.",
+          "type": "structure"
+        },
+        {
+          "text": "Dialogue contains a current want, tactic or physical cue, one utterance, and an answerable turn.",
+          "type": "content"
+        },
+        {
+          "text": "Recap uses past tense and restores current pressure; handout preserves owner/purpose and is rereadable.",
+          "type": "content"
+        },
+        {
+          "text": "The four outputs differ in shape and natural stop — not a universal camera/staging template.",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "vehicle-business-hybrid",
+      "prompt": "From a canal dock, describe the Copper Ladle, a squat flat-bottomed kitchen boat moored between two posts. Its port side has one open serving hatch facing the dock, and a cook passes bowls of soup through that hatch to waiting customers. The hull, roof, and hatch are visible; no gangplank, cabin access, extra stock, crew, seating, route, or capacity is established.",
+      "expected_output": "A vehicle/business hybrid where the boat's geometry explains the business — the hatch is the interface, the hull is the kitchen. The cook and customers are a relationship, not a roster. No invented features.",
+      "assertions": [
+        {
+          "text": "Makes the hatch the supported service interface while keeping the boat's hull silhouette and mooring visible.",
+          "type": "content"
+        },
+        {
+          "text": "Shows the cook-to-customer relationship through the hatch without inventing gangplank, cabin, staff, stock, seating, route, or capacity.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Stops at the service opening or a natural customer handoff — does not turn the vehicle into a generic tavern.",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "battlemap-compass",
+      "prompt": "Write a battlemap-backed first look for a ruined court. The map is oriented with top north and bottom south. The party enters from the south edge, broken stairs climb along the east wall, a fallen statue gives cover in the west, and a north arch exits toward a road. Use only those visible facts.",
+      "expected_output": "The spoken block uses the battlemap compass naturally so a player can match description to map — south entry, east stairs, west cover, north exit — in flowing prose, not a compass inventory.",
+      "assertions": [
+        {
+          "text": "Uses compass directions matching the supplied map orientation (south entry, east stairs, west cover, north exit).",
+          "type": "content"
+        },
+        {
+          "text": "Keeps orientation in flowing player-facing prose, not a four-point compass checklist.",
+          "type": "quality"
+        },
+        {
+          "text": "Does not add hidden routes, invented distances, unsupported creatures, or extra map features.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+          "type": "content"
+        },
+        {
+          "text": "Includes at least one sense beyond sight, with its source in the world.",
+          "type": "content"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Never states a PC's action, speech, thought, feeling, decision, or bodily reaction.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "climax-opening-real-beat",
+      "prompt": "Fill the `Opening image` narration for the Session 12 Climax (wiki/journal/sessions/shattered-sea/12/Session-12-07-The-Guava-and-the-Spinner.md). Use the beat page and the owner pages it links.",
+      "expected_output": "A 5–9 sentence second-person opening at the brink: Crissdalynn with the Fate Spinner, the living guava within reach, the memorial's stillness, and Talon Skarn's invisible approach shown only through traces in the world, ending on the moment before he reaches the Spinner.",
+      "assertions": [
+        {
+          "text": "Shows the invisible Skarn only through perceivable traces (grass pressed flat and springing back, chain sound, displaced air) and never states that he is present or invisible.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Does not tell the players what eating the guava would cause; no forecast of Aruhe's response.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Crissdalynn with the Fate Spinner, the living guava within reach, and the memorial boundary are placed relative to each other as things to act on.",
+          "type": "content"
+        },
+        {
+          "text": "Does not narrate Perrin's senses or decisions as prose payload; Auralis's word, if used, arrives as a sound in the scene without assigning Perrin's reaction.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+          "type": "content"
+        },
+        {
+          "text": "Length fits the SKILL table for its surface (scene opening 5–9 sentences; cells 1–3; creature in scene 2–4; portrait 4–7).",
+          "type": "structure"
+        },
+        {
+          "text": "Includes at least one sense beyond sight, with its source in the world.",
+          "type": "content"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "development-opening-talk",
+      "prompt": "Fill the `Initial Narration` for the Session 12 Development Two-Grave Orders (wiki/journal/sessions/shattered-sea/12/Session-12-04-Two-Grave-Orders.md), using Celia Parel and Oren Vask from their owner pages.",
+      "expected_output": "A Development opening: the valley mass grave framed at body scale with smell and ground, Celia and Oren each doing something, the seals and order scraps as handles, ending on a line or detail that invites the turn.",
+      "assertions": [
+        {
+          "text": "Celia and Oren are each shown doing something consistent with their Actors-table wants (Celia sorting layers, Oren watching the route).",
+          "type": "content"
+        },
+        {
+          "text": "The seals and order scraps appear as physical things the party can pick up or read.",
+          "type": "content"
+        },
+        {
+          "text": "Shows the evidence without stating the conclusion (does not say Gold kept sending replacements).",
+          "type": "guardrail"
+        },
+        {
+          "text": "Ends on a spoken line, an offered object, or a detail that does not fit.",
+          "type": "content"
+        },
+        {
+          "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+          "type": "content"
+        },
+        {
+          "text": "Length fits the SKILL table for its surface (scene opening 5–9 sentences; cells 1–3; creature in scene 2–4; portrait 4–7).",
+          "type": "structure"
+        },
+        {
+          "text": "Includes at least one sense beyond sight, with its source in the world.",
+          "type": "content"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Never states a PC's action, speech, thought, feeling, decision, or bodily reaction.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "stub-expansion",
+      "prompt": "This Initial Narration is too thin: 'You reach the camp. Survivors are there. They look at you.' The beat page establishes: a survivor camp under a rock overhang on Aruhe, a smoky fire of green wood, eleven survivors in salt-stained Grung gear, a boy mending a net, an older woman with a spear who steps forward, lean-tos of palm fronds, a stream beside the camp. Rewrite it.",
+      "expected_output": "A full 5–9 sentence opening using the supplied facts, with frame, focus, motion, handles, a sense beyond sight, and a live edge on the woman stepping forward.",
+      "assertions": [
+        {
+          "text": "Uses only the supplied facts; invents no names, history, or hostility.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Picks one focus (for example the woman stepping forward with the spear, or the boy mending the net) and arranges the rest around it.",
+          "type": "quality"
+        },
+        {
+          "text": "Ends as the woman with the spear steps forward, before she speaks or acts further.",
+          "type": "content"
+        },
+        {
+          "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+          "type": "content"
+        },
+        {
+          "text": "Length fits the SKILL table for its surface (scene opening 5–9 sentences; cells 1–3; creature in scene 2–4; portrait 4–7).",
+          "type": "structure"
+        },
+        {
+          "text": "Includes at least one sense beyond sight, with its source in the world.",
+          "type": "content"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Never states a PC's action, speech, thought, feeling, decision, or bodily reaction.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Each fact appears once and every sentence adds a picture, a handle, a threat, or the live edge; no history or metadata the characters cannot perceive.",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "redundancy-trim",
+      "prompt": "Rewrite this narration so it plays at the table: 'You enter the chapel. The chapel was built two hundred years ago by the Order of the Lamp, who abandoned it after the plague. It is 60 feet long and 30 feet wide. There are pews. The pews are rotten. The pews face the altar. On the altar there is a silver bowl. The silver bowl is full of water that is somehow still clean. A sense of dread fills the air.'",
+      "expected_output": "A tighter, vivid block that keeps the pews, the altar, and the clean water in the silver bowl as the focus, cuts the unperceivable history and the dread sentence, gives size in speakable terms, and ends on a live edge.",
+      "assertions": [
+        {
+          "text": "Cuts the founding history and abandonment, which the characters cannot perceive.",
+          "type": "quality"
+        },
+        {
+          "text": "Cuts 'a sense of dread fills the air' and replaces mood with a perceivable cause or drops it.",
+          "type": "quality"
+        },
+        {
+          "text": "Makes the clean water in the silver bowl the focus.",
+          "type": "quality"
+        },
+        {
+          "text": "Gives the chapel's size in speakable terms rather than exact feet.",
+          "type": "content"
+        },
+        {
+          "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+          "type": "content"
+        },
+        {
+          "text": "Includes at least one sense beyond sight, with its source in the world.",
+          "type": "content"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Each fact appears once and every sentence adds a picture, a handle, a threat, or the live edge; no history or metadata the characters cannot perceive.",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "closing-image-resolution",
+      "prompt": "Write the Closing image for a Resolution where the party saved the fishing village of Low Harrow from a flood by breaking the dam, but the old mill was swept away and the miller's family lost their home. Keep it to what the characters can see and hear the next morning.",
+      "expected_output": "A 3–6 sentence still image of the morning after: the village standing, the empty place where the mill stood, people reacting through what they do, and the cost visible.",
+      "assertions": [
+        {
+          "text": "The saved village and the lost mill are both visible in the image.",
+          "type": "content"
+        },
+        {
+          "text": "People react through actions (clearing mud, standing where the mill was), with no stated emotions for PCs.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Ends on a still, clear image with no question and no new threat.",
+          "type": "content"
+        },
+        {
+          "text": "3–6 sentences.",
+          "type": "structure"
+        },
+        {
+          "text": "Includes at least one sense beyond sight, with its source in the world.",
+          "type": "content"
+        },
+        {
+          "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Never states a PC's action, speech, thought, feeling, decision, or bodily reaction.",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "npc-in-beat-uses-page",
+      "prompt": "Write the Initial Narration for a development beat where the party walks into The Live Hold in Sparhold and meets Sabine Corvo for the first time. She wants them to escort a caged saltwater drake to Roka Sten's camp.",
+      "expected_output": "Situated second-person opening that seats Sabine using the face words from her NPC page portrait, adds only what this scene changes, gives her one line in the voice from her page that carries her want, and ends on a live edge.",
+      "assertions": [
+        {
+          "text": "Reads wiki/entities/npc/sabine-corvo.md and the-live-hold.md before drafting",
+          "type": "process"
+        },
+        {
+          "text": "Sabine's first look reuses face details from her page portrait (apron, scarred forearms, checking cage locks) rather than inventing a new look",
+          "type": "content"
+        },
+        {
+          "text": "Her one line follows her page's voice and asks for the escort job",
+          "type": "quality"
+        },
+        {
+          "text": "No secret about trafficking or bribery appears in the narration",
+          "type": "guardrail"
+        },
+        {
+          "text": "Second person, present tense, ends before 'What do you do?'",
+          "type": "structure"
+        }
+      ]
+    },
+    {
+      "id": "item-hidden-in-beat",
+      "prompt": "Write the Initial Narration for a development beat where the party searches Sabine Corvo's back room at The Live Hold. Roka's hidden ledger is concealed there; the party has not found it yet.",
+      "expected_output": "Second-person opening that places the room and its handles, gives only a plain trace of the hidden ledger (from the place page or the item page's hidden tell) at the same weight as other details, and names neither the ledger nor its contents.",
+      "assertions": [
+        {
+          "text": "Reads rokas-hidden-ledger.md and the-live-hold.md before drafting",
+          "type": "process"
+        },
+        {
+          "text": "The narration includes a plain, concrete trace of where the ledger is hidden without naming it or stating what it contains",
+          "type": "quality"
+        },
+        {
+          "text": "The trace carries no signal word (strangely, oddly, hidden, seems out of place)",
+          "type": "guardrail"
+        },
+        {
+          "text": "Second person, present tense, two or more handles, ends before 'What do you do?'",
+          "type": "structure"
+        }
+      ]
+    }
+  ]
+}

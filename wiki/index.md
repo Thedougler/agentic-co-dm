@@ -174,7 +174,7 @@
 - [[fisks-fleet]] — A Chain Council-sponsored privateer fleet founded by Delmar Fisk and five allied captains ended when its Pearl theft destroyed the fleet.
 - [[five-blades]] — A [[moucheron|Moucheron]] mercenary company working out of [[kalowe|Kalowe]]. The name is literal: four blades and a stinger, the Way of the Five Blades.
 - [[flappers-the-seal]] — A seal — Coralyra Dranra's closest relationship and anchor, currently out chasing mackerel.
-- [[fleet-commanders-chair]] — An unbreakable heavy armchair from the Calveno crater; whoever sits in it sits straighter.
+- [[fleet-commanders-chair]] — An unbreakable heavy armchair whose seated occupant sits straighter; it is the object form of the elder mimic.
 - [[flying-boots]] — Flying footwear with Delmar Fisk; provenance contested.
 - [[foreign-coin-packet]] — A sealed packet of foreign currency, awaiting exchange, unclaimed by its original buyer.
 - [[forged-rig-trial-certificate]] — A forged mid-shelf pressure-rig certificate, also called the Last Berth False Log, hidden under a loose floorboard at Fathomrush.
@@ -474,15 +474,15 @@
 - [[serafina-windfall-fisk]] — An Aasimar fortune-teller compelled by precognition to wander the Verdant Scatter.
 - [[serena-cottle]] — Halfling co-owner of Il Preludio who finishes her business partner's sentences a fourth higher, then lands them flat as inventory talk. She actually runs the shop.
 - [[serin-haut]] — Dravosi Crown spy operating in Calveno as a Tessarine trade-assessor.
-- [[Session-12-00-The-Weight-of-Obedience]] — The party pushes deeper into Aruhe, reads the Gold orders layered among the dead, and faces Talon Skarn's second attempt to take the Fate Spinner.
-- [[Session-12-01-River-Slack-Reprise]] — The session resumes mid-fight as Talon Skarn burns through his Stunned opening to reach Crissdalynn's Fate Spinner.
-- [[Session-12-02-The-Dead-Keep-Orders]] — A trail of Grung dead and spent Authority Seals changes the party's understanding from one lost group to repeated Gold-caste replacement orders.
-- [[Session-12-03-Grass-Without-Wind]] — An invisible disturbance follows the party inland, turning missing fruit, disturbed packs, and impossible movement into a short pursuit contest.
-- [[Session-12-04-Two-Grave-Orders]] — A valley mass grave proves that Gold kept sending replacements after Aruhe had already killed earlier Grung parties, and the latest order names two graves.
-- [[Session-12-05-The-Rule-Bound-Route]] — A survivor-led route toward the memorial turns Aruhe's rules into a physical contest about carried fruit, urgency, trust, Jean-Claude, and the Fate Spinner.
-- [[Session-12-06-What-Is-Chosen]] — The survivors state what they choose to obey and point the party toward the memorial, where a living Giant's Guava makes the next refusal or claim visible.
-- [[Session-12-07-The-Guava-and-the-Spinner]] — Invisible Talon Skarn makes his second close theft attempt while Perrin chooses whether Auralis's command to consume a living Giant's Guava is worth Aruhe's response.
-- [[Session-12-08-Toward-the-Memorial]] — After Skarn's second theft attempt, the party sees the changed route and the survivors point from the mass grave toward Memorial Grove.
+- [[Session-12-00-The-Weight-of-Obedience]] — Skarn's theft resumes at dawn, two survivors ask the party to fetch a believer who walked toward the woman's garden, and the road north runs through the bowl where generations of Grung died obeying an order, to a voice telling Perrin to CONSUME.
+- [[Session-12-01-River-Slack-Reprise]] — Play resumes pre-dawn at the otter camp with Talon Skarn five feet from Crissdalynn; he gets three rounds to take the Fate Spinner, and if he can't, he steals Matteo's ghost plums on the way out.
+- [[Session-12-02-A-Name-for-Matteo]] — At sunrise Celia and Oren come down the bloody bank to record Matteo as dead, find him alive, and ask the flyers to help bring back Nello, who walked north in the night toward the place where the Grung died.
+- [[Session-12-03-Grass-Without-Wind]] — On Print Braid, Skarn probes the column and makes a living claim to break it, and two wolfrabbits burst through the party hunting something they cannot see.
+- [[Session-12-04-Two-Grave-Orders]] — At the Turned Hollow the party reads generations of Gold orders in rings of Grung dead, learns the diggers died under the wrong tree, and finds Nello alive and motionless in the fig's roots.
+- [[Session-12-05-The-Wrong-Tree]] — The party pulls Nello out of a strangler fig that lashes at whatever moves and swallows whatever waits, while every cut and every flame is weighed against the island's law.
+- [[Session-12-06-What-Is-Chosen]] — At the Hollow's north rim, with the true memorial tree in view, Nello confesses that he told the woman about the Grung, the survivors split on what they obey, and seawater starts dripping from Perrin's cloak.
+- [[Session-12-07-The-Guava-and-the-Spinner]] — Skarn makes his committed second attempt on the Spinner at the Hollow's north rim, a voice orders Perrin to CONSUME the living guava, and the island's law decides who the roots go after.
+- [[Session-12-08-Toward-the-Memorial]] — After Skarn's second attempt, the party takes stock at the Hollow's rim, and the woman in the woods steps to the edge of her black flowers and looks straight at Jean-Claude.
 - [[shattered-sea]] — Roughly 60,000 square miles south of Chult; Season 2 pressure sits at Aruhe after Sparhold while major powers claim the sea.
 - [[shattered-sea-pantheon]] — Regional Index of the Shattered Sea's divine landscape, linking each deity's own page.
 - [[shattered-sea-tone-guide]] — DM/agent-facing craft guidance: six-pillar tone doctrine for the Shattered Sea, defaulting to the npc guide's and vault/refs/craft/'s generic construction techniques.
@@ -826,3 +826,29 @@
 - [[journal/sessions/shattered-sea/12/_index|Session 12 Index]]
 - [[journal/sessions/shattered-sea/_index|Shattered Sea Sessions Index]]
 - [[synthesis/_index|Synthesis Index]]
+- [[akai-hodo-clan]] — Northern Tokage clan of geckos and chameleons known for illusion, camouflage, stealth, and red-square kills.
+- [[akai-hodo-village]] — Hidden northern village surrounded by marsh, thick forest, and constant red mist where the Akai Hodo patrol.
+- [[akibana-besko]] — Dark red-scaled rock agama-type lizardfolk leader of the Horntail Clan in western Tokage.
+- [[biggu-baito]] — Huge scarred black-scaled crocodile man who serves Madam Hino as the Ryu no Kage's head general.
+- [[don-gex]] — Late Ebony Scales leader who established Tokage's drug trade and ended slavery through a three-year war.
+- [[ebony-scales]] — Tokage clan that runs drugs, sells hired muscle, and kills slavers on sight.
+- [[honteiru-no-mura]] — Large fortified Japanese-style village and western base of the Horntail Clan.
+- [[horntail-clan]] — Western Tokage clan of elite archers and samurai-style swordsmen who defend the island openly.
+- [[kento-clan]] — Mountain-base clan of blacksmiths and ore miners whose weapons and armor supply the other Tokage clans.
+- [[kinryu-omusubi]] — Leader of the Omusubi Family, the self-proclaimed royal house based in Zennitana.
+- [[kurogane-mura]] — Iron Village at the central mountain base, marked by kilns, mines, smoke, and Kento smithing.
+- [[madam-hino]] — Secretive Ryu no Kage leader who sends disguised ninjas and appears only in black cloth and an Oni mask.
+- [[master-miki-trox]] — Albino-scaled skink-type lizardfolk leader of the Yuki no Kibo at the snowy mountain summit.
+- [[mizobasho-red-tail]] — Dark grey-scaled Eurasian lizardfolk leader of the Akai Hodo's northern marsh patrols.
+- [[omusubi-family]] — Self-proclaimed royal family whose authority grew from control of rice and fishing wealth in southwest Tokage.
+- [[ranga-gex]] — Green-and-black-scaled monitor lizardfolk twin who co-leads the Ebony Scales with Rango Gex.
+- [[rango-gex]] — Green-and-black-scaled monitor lizardfolk twin who co-leads the Ebony Scales with Ranga Gex.
+- [[ryu-no-kage]] — Shadow organization loyal to the Omusubi Family, using assassins, thieves, magic, and disguised ninjas.
+- [[Semuanya]] — Deity whom the Yuki no Kibo understand through breeding, hunting, and survival rather than morality or cosmic philosophy.
+- [[shorin-hakushin-ji]] — Snowy summit temple and village where the Yuki no Kibo train, worship Semuanya, and hold open trials.
+- [[takayama-kongo]] — Brown-and-orange-scaled armadillo lizardfolk leader of the Kento Clan's mining and smithing village.
+- [[tokage-island]] — Large Mid-chain island where six lizard-folk clans compete, trade, and unite against outside threats.
+- [[yuki-no-kibo]] — Mountain order of Shaolin-style lizardfolk monks who test survival and mastery beneath Semuanya's eye.
+- [[zennitana]] — Bustling southwest capital attached to a huge harbor and surrounded by fishing villages, rivers, rice fields, and sake makers.
+- [[turned-hollow]] — A sky-open bowl of Grung dig pits where expeditions died digging under a strangler fig they mistook for the memorial tree.
+- [[nello-castri]] — Calveno survivor who walked toward the woman's garden and told her a Grung had come on wings.

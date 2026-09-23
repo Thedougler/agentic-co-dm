@@ -7,13 +7,17 @@ tags: [shattered-sea, npc]
 sources:
   - "campaign-os:suryo-wibowo.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+status: alive
+role: contact
+location: "[[Wibowo's Provisions]], [[Kalowe]]"
+faction: none
 summary: "Proprietor of Wibowo's Provisions on Kalowe's first island, known for reading orders quickly and speaking with precise directness."
 provenance:
   extracted: 0.85
@@ -24,24 +28,52 @@ tier: supporting
 ---
 # Suryo Wibowo
 
-![[suryo-wibowo-banner]]
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-|               |                                                                |
-| ------------- | -------------------------------------------------------------- |
-| **Species**   | Orc                                                            |
-| **Pronouns**  | he/him                                                          |
-| **Location**  | [[Wibowo's Provisions]], [[Kalowe]]   |
-| **Role**      | Victualler                                                     |
+| **Role** | Contact |
+| --- | --- |
+| **Nature** | Orc victualler and precise supply calculator |
+| **Home** | [[Wibowo's Provisions]] on [[Kalowe]] |
+| **Wants** | To give captains accurate provisions and extend credit only to customers who have earned it |
 
-Fifties, broad even for an orc, efficient. He works fast and talks at the same speed, direct and understated. Thirty years of watching captains make bad supply decisions have left him at peace with just offering the right answer once. He can calculate exactly how long a crew will last on available supplies. If an order comes up short, he'll say so with precision and no unkindness. He extends credit to captains he's dealt with three times or more through handshake terms kept in memory instead of ledgers. Best approached with a list and a crew count. He prefers lists and will often have the order ready before the collector arrives.
+> **DM thesis:** Suryo turns provisioning into a clear conversation about crew, days, destination, and the consequences of coming up short.
+```
 
-> *"How many crew, how many days, where are you headed?"*
+```col-md
+flexGrow=1
+===
+> [!narration] Suryo Wibowo
+> Suryo is broad even for an orc, and he works and talks at the same efficient speed. He studies a supply list without drama, then looks up with the exact question the captain hoped to avoid.
+```
+````
 
-## Stats & Combat
+## Running Suryo Wibowo
 
-No stats given in source.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Suryo asks for the crew count, number of days, and destination before discussing an order. He can calculate how long the available supplies will last and says plainly when an order comes up short. **Sample line:** “How many crew, how many days, where are you headed?”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+He stays direct and unkind only when customers ignore a shortfall or waste his time without a list. He extends credit to captains he has dealt with three times or more, keeping those handshake terms in memory; new customers must settle their order honestly.
+```
+````
 
 ## Connections
 
-- [[Wibowo's Provisions]], the shop he runs.
-- [[Kalowe]], his home port.
+| Connection | Meaning |
+| --- | --- |
+| [[Wibowo's Provisions]] | The shop he runs. |
+| [[Kalowe]] | His home port and the shop's location. |

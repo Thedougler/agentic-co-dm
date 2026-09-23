@@ -409,8 +409,8 @@ stderr `tune` names a checker. Fix it this sitting.
 | User says something like… | Skill |
 |---|---|
 | "design a dungeon" / "dungeon layout" / "map this dungeon" | `dungeon-design` |
-| "homebrew monster" / "build a creature" / "stat block" | `homebrew-monsters-5e` + mandatory `dnd5e-mechanics` pass |
-| "design a magic item" / "homebrew item" | `dnd-5e-magic-item-design` + mandatory `dnd5e-mechanics` pass |
+| "design a monster" / "homebrew monster" / "build a creature" / "stat block" | `monster-design` + mandatory `dnd5e-mechanics` pass |
+| "design an item" / "design a magic item" / "homebrew item" | `item-design` + mandatory `dnd5e-mechanics` pass |
 | "design an NPC" / "build an NPC" / "NPC stat block" | `npc-design` |
 | "design a trap" / "trial" / "puzzle" / "hazard" | `traps-trials` |
 | "travel event" / "random encounter" / "journey event" | `travel-events` |

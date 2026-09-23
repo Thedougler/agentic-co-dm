@@ -26,12 +26,8 @@ crew or PC decisions as playable pressure rather than authored outcomes.
 
 ### Capability Handoff
 
-Hand off only a bounded seam (for example, a berth to `place-design`, a crew
-member to `npc-design`, an owner to `faction-design`, or spoken look to
-`theatre-of-the-mind`) with the vehicle owner, parent objective, evidence, and
-exact section requested. Require return evidence naming the child
-artifact/section and completion result; resume craft work only after that seam
-meets the vehicle contract, otherwise report the missing evidence or blocker.
+Berth → `place-design`. Crew member → `npc-design`. Owner →
+`faction-design`. Spoken look → `theatre-of-the-mind`.
 
 ### Done
 

@@ -1,109 +1,110 @@
 ---
 name: resolution-beats
 description: >-
-  Write, edit, or create content for a Resolution. The aftermath and arc echo:
-  show the changed world, close the current pressure, and leave players able
-  to name what is different and what they want next. Cards, completion test,
-  and fill procedure for Resolution beats.
+  Write, edit, or create content for a Resolution — the short afterscene after
+  the Climax that shows the changed world, pays off rewards and costs, gives
+  each PC a closing moment, and leaves the players able to name what is
+  different and what they want next. Card catalog (Pondsmith's Resolutions),
+  fill steps, and table-ready check.
 ---
 
 # Resolution beats
+
+A Resolution is the **tag line**: a tiny afterscene where the session's ends
+are tied off, or the sequel shows its face. It is the result of every beat
+before it — threads planted in the Hook and middle at their final state,
+costs visible, rewards in hand — and it is proportional to the Climax. It can
+overturn the Climax's apparent result when the overturn grows from
+established fiction.
 
 ## Gates
 
 Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
 
-## Copy-start
-
-Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: resolution`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a session-plan cockpit.
-
 ## Boundary contract
 
-- **Input:** A named Resolution beat, its accepted draft/template, the Climax
-  carry-forward, Hook/middle costs and live-thread states, the matching card,
-  and linked owner evidence.
-- **Work:** Choose one Resolution card and preserve the changed-world
-  afterscene, completion test, visible costs, player agency, branch-specific
-  consequences, and `theatre-of-the-mind` ownership of spoken text.
-- **Done:** The existing completion test passes: players can name what is
-  different and what they want next. Return the changed situation, remaining
-  pressure, and branch evidence for the next interest without erasing earned
-  consequences.
-- **Capability Handoff:** Return only this Resolution's completed card/section
-  and aftermath state. `session-beats` or a named next-type skill owns any
-  chart transition; a named entity goes to its wiki-kind owner. Proceed only
-  when the downstream owner has the changed-world evidence, otherwise return
-  the specific missing evidence.
+- **Input:** A named Resolution beat, the Climax's outcome rows and
+  carry-forward, the session's threads and costs, and linked owner pages.
+- **Work:** Build one Resolution to the table-ready bar with the Resolution
+  craft below; spoken text is filled through `theatre-of-the-mind`.
+- **Done:** The cold read passes and the completion test holds for every
+  Climax outcome the Resolution answers.
+- **Capability Handoff:** Return the Resolution page and the aftermath state.
+  `session-beats` owns the next session's chart; a named entity goes to its
+  wiki-kind owner; a missing entry fact returns as a named gap.
 
+## Copy-start
 
-## Purpose
+Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: resolution`, `category: journal`. Keep the template's jobs; omit a section only when this Resolution never spends it.
 
-A Resolution is the **tag line** — a tiny afterscene that shows the arc's
-echo. Show the changed world: threads planted in the Hook and middle at their
-final state, costs paid across the session visible, and PC goals with a clear
-new status. Match scope to the Climax. Keep it brief and punchy — the
-Resolution earns its weight from what it echoes, not from new complexity.
+## Fill a Resolution
 
-Match scope to the Climax's scale — a personal-stakes Climax earns a
-personal-scale afterscene.
+1. **Ground.** Read the Climax's outcome rows and carry-forward, the session
+   plan's threads and PC touchpoints, each beat's costs, and the owner pages
+   for the people, places, and items in the afterscene (retrieve with `qmd`).
+   Done when each thread's final state and each cost paid are listed.
+2. **Choose the card per outcome.** Read
+   [references/resolution-cards.md](references/resolution-cards.md). For each
+   Climax outcome the Resolution answers, pick the card that outcome produced.
+3. **Mint owners first.** Every named person, place, item, or faction in the
+   afterscene has an owner page before any text depends on it.
+4. **Read the bar.** Read `docs/agents/table-ready.md`, then build every
+   anatomy part the afterscene spends, applying the Resolution craft below.
+   Write every DM-facing line with `writing-for-humans`: lead with the
+   point, name everything, conditionals in tables, secrets stated plainly.
+5. **Set rewards and rulings.** Name every reward and its owner; load
+   `dnd5e-mechanics` for any check, and `item-design` for a new
+   magic item.
+6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill the
+   `Closing image` for each outcome branch.
+7. **Record the aftermath.** Fill What Is True Now, Loose Ends, and Rewards &
+   Accounting so the next session's planner reads the changed world from
+   this page.
+8. **Cold read.** Run the cold read from `docs/agents/table-ready.md` and the
+   completion test. Fix every gap before filing.
 
-A Resolution can **overturn** the Climax's apparent result — the defeated
-villain is seen flying away in an escape craft, the rescued ally turns out to
-have been changed by captivity, the won battle reveals a greater threat it
-inadvertently served. This reframing power is a legitimate dramatic tool when
-the reversal follows from established fiction (planted clues, faction
-mechanics, the villain's known escape plans). Ungrounded reversals — a new
-threat invented for the Resolution, a convenient survival with no basis — are
-a new Hook disguised as an afterscene. Deliver the aftermath the session's
-fiction earned. Stop when players can name what is different and what they want
-next.
+## Resolution craft
 
-Costs the Climax produced are load-bearing — they prove the stakes were real.
-A lost ally stays lost; spent supplies stay spent. Convenient survival,
-arriving merchants, and softened consequences erase the Climax's weight and
-teach players that sacrifice carries no price. Honor the outcome: show the
-world shaped by what was paid, not restored to comfort.
+- **Short and proportional.** About ten to twenty-five minutes. A
+  personal-stakes Climax gets a personal afterscene; a faction-scale Climax
+  gets a power-vacuum afterscene. New fights, new villains, and new
+  worldbuilding belong to the next session.
+- **Branch by outcome.** When the Climax could end several ways, the page
+  carries a branch per outcome — held or lost, captured or escaped — each
+  with its own closing image, costs, and rewards.
+- **Costs stay paid.** Lost allies stay lost; spent supplies stay spent;
+  injuries and broken trust show in the scene. Convenient survivals and
+  arriving merchants erase what the Climax proved.
+- **Rewards are named.** Coin with amounts, items with owner links, XP or the
+  milestone, favors and titles with who grants them, faction standing with
+  its effect.
+- **Echo the arc.** The Hook's question gets its answer; each thread gets
+  Close, Carry, or Transform; each PC's touchpoint gets a closing moment,
+  framed as a prompt the player answers.
+- **Grounded overturns.** A reversal of the Climax's result — the villain's
+  escape craft, the rescued ally changed by captivity — uses means planted
+  earlier and names that beat. A threat with no roots belongs in the next
+  session's Hook.
+- **One door forward.** End on one clear next vector, or plain closure. An
+  Ending Cliffhanger or Greater Threat card is that one door, chosen because
+  the Climax's outcome exposed it.
 
 ## Completion test
 
-Players can name what is different and what they want next.
-
-## How to fill a Resolution
-
-1. **Choose the card.** Read [references/resolution-cards.md](references/resolution-cards.md).
-   Pick by fiction trigger.
-
-2. **Echo the arc.** Read the Climax's **carry-forward** as your entry state —
-   what the confrontation resolved, what it cost, and which threads reached
-   their final state. Name the Hook pressure, middle costs, Climax result, and
-   live threads this Resolution answers. When the Climax branched (held vs
-   lost, succeeded vs failed), the Resolution shows the distinct aftermath
-   each branch produces — costs visible in the closing image, not abstracted
-   away. Answering no live thread is epilogue filler; erasing prior cost is a
-   retcon.
-
-3. **Write the changed world.** Name trigger, actors, stakes, visible
-   information, and at least two viable player responses. Theatre of the mind
-   owns `[!narration]` for spoken text.
-
-4. **Name what happens next.** State the changed situation, remaining pressure,
-   and at least two viable next interests. If How the Scene Resolves names a
-   next beat type, load that type skill for the handoff only.
-
-5. **Preserve agency.** Ignoring the aftermath lets consequences mature.
-   Failing changes who benefits or what remains possible. Redirecting creates
-   new fiction.
+Players can name what is different and what they want next; every Climax
+outcome the page answers shows its costs, rewards, and thread states; and the
+aftermath records are complete enough for the next session's plan.
 
 ## Named seams
 
 - **Chart question** → load `session-beats` for position, polarity, threads,
   or transition only.
-- **How the Scene Resolves names a type** → load that type skill for the
+- **The closing names a next beat type** → load that type skill for the
   handoff only.
 - **A named entity (vehicle, spell, faction, lore, quest, city, region)** →
-  hand off to wiki-kind owner.
+  hand off to its wiki-kind owner.
 
-Opening another type-card catalog for any other reason is a defect. Chart
-assembly, polarity rules, time budget, thread planting, escalation, recompute,
-and the session plan belong to `session-beats`. Spoken player text belongs to
-theatre of the mind.
+Chart assembly, polarity rules, time budget, thread planting, escalation,
+recompute, and the session plan belong to `session-beats`. Spoken player text
+belongs to `theatre-of-the-mind`. Other type-card catalogs load only through a
+seam above.

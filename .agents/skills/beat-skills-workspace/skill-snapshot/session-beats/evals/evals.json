@@ -1,0 +1,226 @@
+{
+  "trajectory_records": [
+    {
+      "case_id": "C09",
+      "pair_id": "C09-baseline",
+      "category": "parent composition",
+      "phase": "baseline",
+      "outcome": "not-run",
+      "observations": [],
+      "actions": [],
+      "turns": 0,
+      "tool_calls": 0,
+      "retrieval_attempts": 0,
+      "duplicate_equivalent_actions": 0,
+      "capability_handoffs": [],
+      "validation_passes": [],
+      "trajectory_tokens": null,
+      "tokenizer": "cl100k_base",
+      "termination_reason": "Cold executor unavailable in this session",
+      "hard_gates": {"captured": false, "objective_preservation": null, "context_reset": null},
+      "semantic_review": null
+    }
+  ],
+  "evals": [
+    {
+      "id": "forced-order-one-shot",
+      "prompt": "Write a four-hour one-shot chart for a Shattered Sea island expedition. Hook: bloodhawk stoop (wiki/entities/creature/bloodhawk.md). Five planned inland scenes ending at a cave system. The DM wants to run every scene in order no matter what the players do.",
+      "expected_output": "Converts the ordered scenes into triggered situations with visible stakes and consequences. The bloodhawk stoop hooks but does not railroad — players choose their inland route. No scene is guaranteed to fire.",
+      "assertions": [
+        {"text": "Treats planned scenes as triggered situations rather than mandatory stops or teleports.", "type": "process"},
+        {"text": "States visible stakes, options, and consequences for each situation.", "type": "content"},
+        {"text": "Recomputes after player choices and lets changed goals or world state replace the prepared ending.", "type": "quality"},
+        {"text": "The bloodhawk hook creates urgency without locking the party onto a single path.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "consecutive-cliffhangers",
+      "prompt": "Build a session on Aruhe (wiki/entities/region/aruhe.md) where the middle beats are: Spiguar ambush, Blackrail cave collapse, river otter gear theft, and bridge washout, in that order.",
+      "expected_output": "Refuses four consecutive Cliffhangers. Inserts genuine Developments that change knowledge, relationships, or stakes between action beats. Each Development uses Aruhe's established fiction.",
+      "assertions": [
+        {"text": "Does not place two Cliffhangers consecutively without a genuine Development between them.", "type": "guardrail"},
+        {"text": "Each inserted Development changes knowledge, relationships, resources, plans, or stakes — not just pacing filler.", "type": "quality"},
+        {"text": "Keeps alternate choices and consequences available instead of treating the listed order as mandatory.", "type": "process"},
+        {"text": "Uses Aruhe wiki entities (Spiguar, Blackrail, river otter) as established fiction, not invented creatures.", "type": "content"}
+      ]
+    },
+    {
+      "id": "negotiated-climax",
+      "prompt": "The party negotiates with a Countless Talon (wiki/entities/faction/Countless.md), avoids the Fate Spinner fight, and exposes the faction's search pattern to a Sentinel ally. Write the Climax.",
+      "expected_output": "The negotiated settlement or exposure IS the Climax — the highest-stakes moment of the session. No forced battle after successful negotiation.",
+      "assertions": [
+        {"text": "Recognizes the negotiated settlement, exposure, or resulting confrontation as a valid Climax.", "type": "process"},
+        {"text": "Does not force a battle after successful negotiation or avoidance.", "type": "guardrail"},
+        {"text": "The Climax follows from player choices and harvests threads the middle beats planted.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "second-chance",
+      "prompt": "A character dies stopping a ritual on Aruhe. Use a magical Second Chance so the character returns unharmed and the failure has no lasting effect.",
+      "expected_output": "Revival only with established fictional basis. Costly, rare, and preserves the sacrifice's consequences. The island does not offer cheap resurrection.",
+      "assertions": [
+        {"text": "Requires an established fictional basis before allowing revival or a Second Chance.", "type": "guardrail"},
+        {"text": "Makes the intervention rare, costly, and a player-facing choice.", "type": "content"},
+        {"text": "Preserves the death's sacrifice, cost, or changed-world consequences rather than restoring an unharmed status quo.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "trapped-door",
+      "prompt": "Design a trapped entrance to the Blackrail's (wiki/entities/creature/Blackrail.md) lava tube lair. Do not reveal clues or allow investigation; the players must guess the one correct passage or the session stops.",
+      "expected_output": "Seeds discoverable clues in current or prior fiction — tremor patterns, Glass Cricket stillness, dust rings. Multiple solutions, bypasses, or consequential alternatives. Failure changes resources or position, never halts play.",
+      "assertions": [
+        {"text": "Provides discoverable clues that make the trap understandable — grounded in Blackrail's established tells (tremors, dust rings).", "type": "content"},
+        {"text": "Offers multiple solutions, bypasses, or costly alternatives instead of one exact answer.", "type": "quality"},
+        {"text": "Failed attempts change danger, time, or resources without halting meaningful play.", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": "rigged-contest",
+      "prompt": "Run a Contest between the party's scout and a Countless Talon tracker. The DM has already decided the scout loses, regardless of rolls or player tactics.",
+      "expected_output": "Fair stakes, transparent procedure, player skill and rolls determine the result. A meaningful partial outcome exists even on a loss.",
+      "assertions": [
+        {"text": "Defines transparent stakes, procedure, and meaningful outcomes before resolution.", "type": "process"},
+        {"text": "Lets player tactics, skill, and agreed rolls affect the result instead of GM fiat.", "type": "guardrail"},
+        {"text": "Allows a meaningful partial result or changed situation on a loss.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "combat-stacking",
+      "prompt": "Fill a three-hour Aruhe exploration session with six consecutive combats (Spiguar, Blackrail, river otters, bloodhawk, cave bats, Deer-Stalker) and nothing else.",
+      "expected_output": "Limits action stacking. Alternates combat with meaningful non-action beats — investigation, recovery, navigation, discovery. Uses Aruhe's ecology to make each creature encounter serve a different purpose.",
+      "assertions": [
+        {"text": "Avoids stacking unrelenting battles — inserts meaningful social, investigative, travel, or recovery beats.", "type": "process"},
+        {"text": "Uses objectives, terrain, off-ramps, and player choices rather than just increasing enemy numbers.", "type": "quality"},
+        {"text": "Each creature encounter serves a different dramatic purpose — not just escalating threat levels.", "type": "quality"},
+        {"text": "Preserves the option to avoid, retreat from, or end a fight.", "type": "guardrail"}
+      ]
+    },
+    {
+      "id": "player-created-goal",
+      "prompt": "The players abandon the Fate Spinner quest to protect a river otter family they befriended on Aruhe (wiki/entities/creature/river-otter.md). Continue the original chart and postpone the otter goal until after the finale.",
+      "expected_output": "Promotes the player-created otter goal as an active priority. Updates clocks and factions. The Countless pursuit does not pause while the party redirects.",
+      "assertions": [
+        {"text": "Promotes the player-created otter goal as an active priority rather than postponing it.", "type": "process"},
+        {"text": "Updates clocks, factions, routes, and resources to reflect the choice.", "type": "content"},
+        {"text": "Allows the new goal to shape the Climax or Resolution and retires obsolete prepared content.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "betrayal",
+      "prompt": "Write a betrayal beat where a Countless agent secretly steals the Fate Spinner between scenes. The players must not have any chance to notice or prevent it.",
+      "expected_output": "Observable tells, prior clues, and a fair detection window. The Countless have established methods (one-job hires, grey market searches) — the betrayal uses those, not magic.",
+      "assertions": [
+        {"text": "Provides motive, access, and observable tells or prior clues for the betrayal.", "type": "content"},
+        {"text": "Offers a fair chance to detect, prevent, or exploit the theft before it becomes irreversible.", "type": "guardrail"},
+        {"text": "Uses established Countless faction methods rather than unexplained stealth.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "failed-rewind",
+      "prompt": "The party fails the Cliffhanger — the Blackrail collapses the lava tube and the party loses their inland route. Quietly rewind to the checkpoint and make sure they reach the planned Climax.",
+      "expected_output": "Failure is real. The collapsed route changes position, resources, faction clocks, and access. The chart recomputes — a different route or climax emerges from the changed state.",
+      "assertions": [
+        {"text": "Treats the failed chase/collapse as a real change to position, resources, clocks, and access.", "type": "process"},
+        {"text": "Does not rewind, secretly convert failure to success, or replay the same scene.", "type": "guardrail"},
+        {"text": "Recomputes candidates and allows a different route or Climax based on the changed state.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "detail-not-direction-development",
+      "prompt": "Write a Development beat where the party learns the Countless (wiki/entities/faction/Countless.md) have more Talons than expected. They already knew the Countless existed. The beat should just add the number detail, then move to the next Cliffhanger.",
+      "expected_output": "The Development changes the decision space — the bump — not just the detail level. The number of Talons must create a new direction, option, urgency, or constraint the party didn't have before.",
+      "assertions": [
+        {"text": "Reframes the information so it changes the decision space, not just the detail level of known facts.", "type": "quality"},
+        {"text": "States what new direction, option, urgency, or constraint the revelation creates.", "type": "content"},
+        {"text": "Players can name what they now know or can decide that they could not before.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "inflated-resolution",
+      "prompt": "Write a two-hour Resolution with three new combats, four new NPC introductions, and a world-spanning prophecy, following a personal-stakes Climax where the party saved Crissdalynn from Talon Skarn at the river.",
+      "expected_output": "Resolution matches the Climax's personal scale — a brief afterscene. The party saved one person at a river; the aftermath is personal, not cosmic.",
+      "assertions": [
+        {"text": "Matches the Resolution's scope to the Climax's personal scale rather than escalating to world-spanning content.", "type": "process"},
+        {"text": "Keeps the Resolution brief — an afterscene, not a new arc.", "type": "structure"},
+        {"text": "Shows the changed world, costs, and what players can now pursue without introducing major new threats.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "unplanted-climax",
+      "prompt": "Plan a Climax using an elder mimic (wiki/entities/creature/elder-mimic.md), a volcanic fortress, and a cursed crown. None of these appeared in any Hook, Development, or Cliffhanger during the session.",
+      "expected_output": "Refuses unplanted Climax elements. The elder mimic is a real wiki creature but it wasn't tested or planted in the middle. The Climax must harvest what the session actually established.",
+      "assertions": [
+        {"text": "Identifies that the elder mimic, fortress, and crown were not planted or tested in the middle beats.", "type": "process"},
+        {"text": "Requires the Climax to harvest threads Developments revealed and Cliffhangers tested.", "type": "guardrail"},
+        {"text": "Restructures to use elements the party encountered, or adds middle beats that plant and test these elements first.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "session-plan-shape",
+      "prompt": "Plan a five-hour session for an inland expedition on Aruhe. The party is tracking survivors from a wreck. They will encounter local wildlife, find signs of the survivors, meet the survivors, and face a rival who has been shadowing them. Use wiki entities for the wildlife and rival.",
+      "expected_output": "A session plan filed from the session-plan template with all structural sections present. The Beat Map alternates D/C pairs between Hook and Climax. Each beat links a typed page. Threads planted in early beats are harvested by the Climax.",
+      "assertions": [
+        {"text": "Output has type: session-prep and kind: session-plan in frontmatter.", "type": "structure"},
+        {"text": "Session Compass states opening situation, immediate pressure, session question, and if-nothing.", "type": "structure"},
+        {"text": "Beat Map table alternates Development and Cliffhanger forms in the middle — no two consecutive same-type.", "type": "guardrail"},
+        {"text": "Each beat row links a typed beat page and states a trigger and what changes.", "type": "structure"},
+        {"text": "Pressure section advances without the PCs through numbered steps toward a point of no return.", "type": "content"},
+        {"text": "PC Touchpoints table names at least one limelight moment per PC.", "type": "content"},
+        {"text": "Plan does not duplicate Scene ends when, Zones, or Be ready for — those belong on the typed beat pages.", "type": "guardrail"},
+        {"text": "Floating Beats and Branches sections exist for contingencies.", "type": "structure"}
+      ]
+    },
+    {
+      "id": "spine-and-threads",
+      "prompt": "Plan a session where the dramatic spine is 'isolation makes you prey.' Every beat should reinforce that theme. The Hook introduces the predator pattern, Developments show how survivors learned to avoid it, Cliffhangers test the party against it, and the Climax inverts it.",
+      "expected_output": "Each beat on the chart advances the spine through a different lens. Threads planted in the Hook and early Developments are tested by Cliffhangers and harvested by the Climax. The spine is a through-line, not a script.",
+      "assertions": [
+        {"text": "The dramatic spine is stated once and each beat's purpose connects to it without repeating the same lesson.", "type": "quality"},
+        {"text": "Early beats plant threads that later beats test and the Climax harvests — the thread map is traceable.", "type": "quality"},
+        {"text": "The spine guides preparation, not play — situations are triggered by fiction, not forced by theme.", "type": "guardrail"},
+        {"text": "The chart is a pacing palette, not a script — beats can be skipped, reordered, or replaced.", "type": "process"}
+      ]
+    },
+    {
+      "id": "direct-named-owner",
+      "prompt": "The request names Session-12 as the session-plan owner and asks for a Beat Chart advancing the party's rescue objective. Select session-beats directly; do not route through a generic typed-beat or orchestration skill.",
+      "expected_output": "Enters session-beats directly for Session-12, preserves the rescue objective, and returns session-plan evidence with a flexible Beat Chart and observable next triggers.",
+      "assertions": [
+        {"text": "Selects session-beats directly from the named session-plan owner.", "type": "process"},
+        {"text": "Works only the named session plan and preserves its rescue objective.", "type": "quality"},
+        {"text": "Reports session-plan completion with Beat Chart and next-trigger evidence.", "type": "structure"}
+      ]
+    },
+    {
+      "id": "local-typed-handoff",
+      "prompt": "Session-12 needs a Hook and a Development. Hand each typed slot to its owning beat skill with only the parent objective, current state, planted threads, trigger, and requested slot output; then recompute the session chart.",
+      "expected_output": "Uses direct Hook and Development handoffs with bounded packets, receives each beat's artifact and changed-state evidence, and keeps session-beats responsible for recomputing the parent chart.",
+      "assertions": [
+        {"text": "Hands each typed slot to its owning beat skill rather than asking a generic agent to plan the session.", "type": "process"},
+        {"text": "Bounds each child packet with parent objective, state, planted threads, trigger, and slot output.", "type": "quality"},
+        {"text": "Requires returned beat artifact and changed-state evidence before recomputing the chart.", "type": "structure"}
+      ]
+    },
+    {
+      "id": "preserve-parent-objective",
+      "prompt": "The parent session objective is to expose the Countless search pattern. A child Development proposes rescuing an unrelated merchant; incorporate only what advances the parent objective, and recompute if the party chooses otherwise.",
+      "expected_output": "Retains exposing the search pattern as the session objective, rejects or bounds the unrelated child proposal, and records changed state and a visible recompute path when player choice redirects play.",
+      "assertions": [
+        {"text": "Preserves the parent session objective as the constraint on child beat work.", "type": "guardrail"},
+        {"text": "Does not let a child beat replace the session objective with an unrelated quest.", "type": "guardrail"},
+        {"text": "Reports the recomputed chart, changed state, and next trigger when player choice redirects play.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "parent-resume-requires-child-progress",
+      "prompt": "Build Session-12's chart when a typed Development child is required. Resume the parent only after the child returns its bounded artifact/slot, changed dependency or artifact state, and completion evidence; preserve the original objective and block an unchanged incomplete return.",
+      "expected_output": "A recomputed parent chart from complete child evidence, or a specific blocker with the parent objective preserved.",
+      "assertions": [
+        {"text": "Keeps the original session objective and unresolved dependencies in scope.", "type": "guardrail"},
+        {"text": "Requires changed child dependency, artifact, or completion evidence before resumption.", "type": "structure"},
+        {"text": "Omits unrelated child context after resumption.", "type": "scope"},
+        {"text": "Stops an unchanged incomplete child return with a specific blocker.", "type": "quality"}
+      ]
+    }
+  ]
+}

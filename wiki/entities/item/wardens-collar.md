@@ -13,6 +13,11 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
+region: ""
+kind: wondrous
+rarity: rare
+attunement: true
+owner: ""
 visibility: dm
 summary: "A brass-studded collar cased on The Live Hold's back wall, already tagged with a buyer's name, that binds one beast to its attuned wearer's word."
 provenance:
@@ -36,7 +41,6 @@ tier: supporting
 
 *Wondrous Item, Rare (Requires Attunement).* The most expensive thing in [[The Live Hold]], sold with the animal or not at all.
 
-## Mechanics
 
 > [!mechanic]
 > **[HB] Bind (8 hours).** Attune to the collar while it is buckled on a beast of CR 3 or lower. While the beast wears it and you are attuned, you can command it telepathically at up to 100 feet, and it obeys as though it were charmed by you. It acts on your initiative and takes one action of your choosing on its turn. You know its condition and rough direction while it lives.

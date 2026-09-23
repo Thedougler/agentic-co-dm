@@ -40,8 +40,8 @@ flexGrow=2
 flexGrow=1
 ===
 > [!narration] {{title}}
-> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: person. -->
-> Write a standalone cold portrait in flowing prose — as long as the person requires to be recognizable. Cover face, body, posture, clothing, and at least one non-sight detail (voice timbre, smell, habit). The portrait gives a player a first-look picture they can sketch and distinguish from other NPCs. No secrets, DCs, unearned names, or DM thesis.
+> <!-- `.agents/skills/npc-design` step 6 builds the packet → `.agents/skills/theatre-of-the-mind` → mode: portrait → recipe: person. -->
+> Write a third-person, present-tense portrait of the person as they always are. Cover build and age, two or three face details a player could repeat next session, clothing and gear, one sound or smell with its source, what their hands do at rest, and a plain tell for every secret they keep. Every later scene reuses these face words. No secrets, DCs, unearned names, or DM thesis.
 ```
 ````
 
@@ -61,9 +61,13 @@ flexGrow=1
 ===
 ### When posture changes
 
-What ends the welcome, closes the door, or takes priority.
+What opens them up, what closes the door, what takes priority, and what they will and will not share.
 ```
 ````
+
+### Voice
+
+Word choice, rhythm, one verbal habit, and the subject they avoid. Three sample lines: the ask, the refusal, and the line under pressure.
 
 ## Connections
 

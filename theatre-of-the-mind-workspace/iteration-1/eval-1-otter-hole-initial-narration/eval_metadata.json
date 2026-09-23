@@ -1,0 +1,15 @@
+{
+  "eval_id": 1,
+  "eval_name": "otter-hole-initial-narration",
+  "prompt": "Rewrite the `Initial Narration` on wiki/journal/sessions/shattered-sea/11/Session-11-05-Otter-Hole.md. The current one reads like a grid inventory of distances instead of a scene the DM can speak.",
+  "assertions": [
+    "Opened the embedded aruhe-river-slack-basin.jpg",
+    "Found and opened at least one related unembedded image (session-11-05-otter-hole-base.jpg or aruhe-river-otter-of-aruhe.jpg)",
+    "Second person, present tense, with motion and a live edge at the end",
+    "No PC action, feeling, or bodily reaction stated",
+    "At most two numeric foot distances",
+    "Length between 80 and 220 words",
+    "An art note is returned outside the narration",
+    "No em dashes in the narration"
+  ]
+}

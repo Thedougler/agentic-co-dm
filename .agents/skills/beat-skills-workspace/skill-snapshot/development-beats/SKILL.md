@@ -1,0 +1,110 @@
+---
+name: development-beats
+description: >-
+  Write, edit, or create content for a Development. Changes the decision
+  space — what players know, can reach, or choose between — and sets the
+  direction of action until the next Development changes it again. Cards,
+  completion test, and fill procedure for Development beats.
+---
+
+# Development beats
+
+## Gates
+
+Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
+
+## Copy-start
+
+Copy `wiki/templates/development.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: development`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a session-plan cockpit.
+
+## Boundary contract
+
+- **Input:** A named Development beat, its accepted draft/template, the prior
+  carry-forward or entry state, the matching card, the live thread, and linked
+  owner evidence.
+- **Work:** Choose one Development card and preserve the decision-space change,
+  completion test, player agency, preparation-state consequences, relevant
+  mechanics, and `theatre-of-the-mind` ownership of spoken text.
+- **Done:** The existing completion test passes: players can name what they now
+  know or can decide that they could not before. Return that result with the
+  changed knowledge, constraints, resources, and continuity change as
+  downstream evidence.
+- **Capability Handoff:** Return only this Development's completed card/section
+  and entry-to-exit state to the next `Cliffhanger`. Its writer may proceed when
+  the revealed thread, trigger, and contest entry conditions are explicit;
+  otherwise return the specific missing evidence.
+
+
+## Purpose
+
+A Development is the **bump** — it changes the **decision space** (what players
+know, can reach, or choose between) and **sets the direction** of action until
+the next Development changes it again. It reorients the party's trajectory:
+a clue advances a mystery, an alliance shifts a faction clock, a warning makes
+an approaching Cliffhanger legible.
+
+Developments can chain — meeting the mentor leads to learning the weakness
+leads to discovering the ally — each building capability toward the Climax.
+When they chain, break them with Cliffhangers so knowledge is tested under
+cost before the next piece arrives.
+
+## Completion test
+
+Players can name what they now know or can decide that they could not before.
+
+When the Development asks the party to prepare — watch assignments, defensive
+positions, contingency plans — their specific precautions become the next beat's
+entry conditions. Map at least two distinct preparation states (e.g., fortified
+vs paired vs thin) with named consequences each state produces. The beat asks
+what they actually do rather than abstracting to a single skill check.
+
+A Development that answers the whole question — who, why, where, and how to
+stop them — has resolved the thread. The next Cliffhanger has nothing to test
+under cost; it becomes an errand. When a request asks to resolve everything in
+one Development, refuse the full resolution and reveal one new facet: a clue,
+a shifted alliance, a constraint, a cost. No card — Revelation, Villain
+Monologue, or otherwise — overrides this. Leave what the Cliffhanger will test.
+
+## How to fill a Development
+
+1. **Read the entry state.** If a previous beat exists, read its carry-forward
+   as your opening: what changed, what the party committed to, and the
+   continuity change. The Development's opening must inherit this world-state
+   — positions, knowledge, resources, relationships — without contradiction
+   or unexplained jumps.
+
+2. **Choose the card.** Read [references/development-cards.md](references/development-cards.md)
+   and pick the card whose trigger best matches the current fiction.
+
+3. **Advance a thread.** Name which live thread this Development reveals a new
+   facet of. A Development advancing no live thread is filler; one advancing an
+   abandoned thread is a railroad.
+
+4. **Write the situation.** Name the trigger, actors, stakes, visible
+   information, and at least two viable player responses. Theatre of the mind
+   owns `[!narration]` for spoken text.
+
+5. **Prepare the polarity handoff.** Next beat is a Cliffhanger — action that
+   tests what was just learned under cost. State the **carry-forward**: what
+   the Development changed (new knowledge, shifted alliances, revealed
+   constraints, resources gained or spent), what the party now believes or
+   intends, and the **continuity change** — the observable world-state shift
+   the Cliffhanger's opening inherits. The Cliffhanger's writer reads this as
+   their entry state and trigger. A handoff that skips what the Development
+   revealed is a wasted beat.
+
+6. **Name what happens if they ignore it, fail, or redirect.** The world
+   updates; the slot does not replay.
+
+## Named seams
+
+- **Chart question** → load `session-beats` for position, polarity, threads,
+  or transition only.
+- **How the Scene Resolves names a type** → load that type skill for the
+  handoff only. Do not absorb the next beat's fill.
+
+Opening another type-card catalog for any other reason is a defect. Chart
+assembly, polarity rules, time budget, thread planting, escalation, recompute,
+and the session plan belong to `session-beats`. Spoken player text belongs to
+theatre of the mind. Wiki kind pages keep their owners.
+

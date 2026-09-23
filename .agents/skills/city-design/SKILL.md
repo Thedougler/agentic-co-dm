@@ -29,13 +29,8 @@ craft below. Keep the caller's session or situation objective intact.
 
 ### Capability Handoff
 
-Hand off only a local seam (for example, a named faction to `faction-design`,
-non-city place to `place-design`, or off-screen motion to `world-tick`) with a
-bounded packet: city owner, parent objective, evidence, and requested section.
-Require return evidence naming the child artifact/section and completion result;
-the child does not re-plan the city or parent session. Resume city work only
-after that return satisfies the named owner contract; otherwise keep dependent
-sections open and report the missing evidence or specific blocker.
+Faction → `faction-design`. Non-city place → `place-design`. Off-screen
+motion → `world-tick`. The child does not re-plan the city.
 
 ### Done
 

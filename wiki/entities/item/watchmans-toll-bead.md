@@ -14,6 +14,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: unknown
+kind: magic
+rarity: uncommon
+attunement: false
+owner: ""
 summary: "A brass bead worn smooth off a watch bell's pull-rope, which rings a half-beat early once a day and puts its bearer first into a fight."
 provenance:
   extracted: 0.85
@@ -35,7 +40,6 @@ tier: supporting
 
 *Wondrous Item, Uncommon.* Cut from the pull-rope of a watch bell that has tolled a real alarm, and worth what it is because the bead keeps ringing early after the bell it came from goes quiet.
 
-## Mechanics
 
 > [!mechanic]
 > **Watchman's Toll-Bead [HB].** While you carry the bead, you may roll Initiative with advantage. Once used, it stays silent until you finish a Long Rest.

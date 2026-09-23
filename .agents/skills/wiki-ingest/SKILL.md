@@ -20,18 +20,15 @@ description: >
 You are ingesting source documents into an Obsidian wiki. Your job is not to summarize — it is to **distill and integrate** knowledge across the entire wiki.
 
 Named ingest files to the live wiki without a second chat accept. `dm_placed_ingest` that contradicts user/transcript is not canon — do not file that contradiction as truth; no ask. Unsaid invention is not canon. End the named-ingest slice with a done-summary after green (what changed, where; no question; no wait).
-## Capability Boundary
+## Capability boundary
 
-**Input** — The user-named source file(s), approval/canon mode, and resolved vault configuration. Source evidence is limited to the named source plus the bounded context needed to place it: recent `hot.md`, targeted `index.md`/QMD lookups, the manifest query for this source, and the destination owner's governing template or skill.
+**Input.** Named source file(s), approval/canon mode, resolved vault. Load only `hot.md`, targeted index/QMD, manifest query for this source, and destination owner template.
 
-**Work** — `wiki-ingest` owns source reading, evidence-to-destination mapping, and the sequential per-file ingest. Keep the parent objective (integrate this source) while handing only a bounded page payload to a receiving owner (for example, a campaign kind or combatant owner): source citations, proposed destination, approval constraints, and relevant canon. Do not inherit unrelated source files, full ledgers, or unrelated artifact groups. Re-observe the same source/destination boundary after each child return.
+**Work.** Read source, map evidence to destinations, ingest sequentially per file. Hand page payloads to receiving craft owners (campaign kind, combatant, etc.); `wiki-ingest` keeps source-level tracking.
 
-**Done** — A file closes only as `complete` when every extracted idea has a destination, the destination output contract passes scoped `wiki lint <page>` until clean, and tracking is finalized exactly once: one manifest `record`, one `index.md` update, one `log.md` entry, and one bounded `hot.md` update for that file. After all writes, run one QMD refresh and one search-then-get retrieval check for a created or materially updated page. A child return must change destination state or completion evidence before dependent work resumes. If any guard cannot pass, close as `failed` with the specific blocker and leave parent finalization undone.
+**Done.** Per file: every extracted idea has a destination, scoped lint clean, tracking finalized once (manifest record + index/log/hot + QMD refresh). Failed guard → `failed` with specific blocker.
 
-**Capability Handoff** — Return the bounded destination payload and scoped validation evidence to the receiving owner, then resume this ingest's per-file report. `wiki-ingest` owns manifest/index/log/hot and QMD finalization; a receiving craft owner owns only its page artifact. The final report is the handoff back to the user: per-file status, destinations, evidence, blocker (if any), and QMD result. Finalize only after all required children close, and never let a child duplicate source-level tracking.
-### Minimum context projection
-
-For each named source file, the minimum sufficient projection is the source, targeted index/hot/QMD evidence, the source manifest query, the destination owner's contract, and bounded child return evidence. Deliberately omit unrelated source files, full ledgers, unrelated artifact groups, and child context not needed for this file. Deepen retrieval only when the destination owner reports evidence is insufficient; then resume this owner's same per-file ingest and stop only at its tracking and QMD completion conditions.
+**Handoff.** Craft owners own their page artifact only. `wiki-ingest` owns manifest/index/log/hot/QMD. Final report: per-file status, destinations, evidence, QMD result.
 
 
 ## Before You Start

@@ -31,13 +31,8 @@ craft below. Keep the caller's objective intact while retrieving local facts.
 
 ### Capability Handoff
 
-Hand off only a local seam (for example, a city to `city-design`, a site to
-`place-design`, a faction to `faction-design`, or off-screen motion to
-`world-tick`) with a bounded packet: region owner, objective, evidence, and
-requested section. Require return evidence naming the child artifact/section
-and completion result; the child does not re-plan the region. Resume region work
-only after that return satisfies the named owner contract; otherwise keep the
-dependent section open and report the missing evidence or specific blocker.
+City → `city-design`. Site → `place-design`. Faction → `faction-design`.
+Off-screen motion → `world-tick`. The child does not re-plan the region.
 
 ### Done
 

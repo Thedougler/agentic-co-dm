@@ -7,13 +7,17 @@ tags: [shattered-sea, npc]
 sources:
   - "campaign-os:serin-haut.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+status: alive
+role: spy and trade assessor
+location: "[[calven-and-calveno]]"
+faction: "[[dravosi-crown]]"
 summary: "Dravosi Crown spy operating in Calveno as a Tessarine trade-assessor."
 provenance:
   extracted: 0.85
@@ -24,26 +28,60 @@ tier: supporting
 ---
 # Serin Haut
 
-Serin Haut is a spy for the [[dravosi-crown]]. She works in [[calven-and-calveno]] as a [[tessarine-concordat|Tessarine]] trader.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-She killed courier Dren and now watches the [[Marrows]] canal, waiting for someone to claim the crate while changing hiding spots to avoid detection. See [[Warren (Marrow's Crate)]] for the full story.
+| **Role** | Spy and trade assessor |
+| --- | --- |
+| **Nature** | Dravosi Crown agent operating as a Tessarine trader |
+| **Home** | [[calven-and-calveno]], where she works undercover |
+| **Wants** | To recover the watched crate and keep her identity and strongbox concealed |
 
-Her strongbox holds: a codebook (500 gp), 420 gp, three spy contacts, and [[ferrin-locke]]'s signed deal (see [[Warren (Ferrin Locke)]]).
+> **DM thesis:** Serin is a live intelligence problem in Calveno: the party can expose her, let her escape, or trade her evidence for cooperation.
+```
 
-## Stats & Combat
+```col-md
+flexGrow=1
+===
+> [!narration] Serin Haut
+> Serin presents herself as a Tessarine trade assessor, composed and attentive to every exit. Her room carries the quiet order of a person who expects to leave quickly: a concealed blade, a locked strongbox, and no object left where it cannot be taken.
+```
+````
+
+## Running Serin Haut
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Serin presents her trade-assessor cover in [[calven-and-calveno]] and changes hiding spots while watching the [[Marrows]] canal. She waits for someone to claim the crate and asks practical questions that reveal what the visitor knows without exposing her own mission.
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+She becomes evasive when anyone connects her to courier Dren's death, the watched crate, or her Dravosi Crown employer. If discovered in her room, she uses the narrow hallway and a hired thug to create an exit. At 10 HP or lower, she trades her codebook and help for her life.
+```
+````
 
 > [!mechanic]
-> **Spy (MM p.349), +1 Deception, concealed shortsword.** Carries 3 doses of basic poison (ingested, DC 11 Constitution save, 2d6 poison damage on a failed save). HP 27, AC 12.
-
-When discovered in her room:
-
-> [!mechanic] Encounter. Serin Haut at Bay (source: inbox/narrative-islands/Calveno-street-encounters.md)
-> Triggers when they approach her room or she spots them first. Combat happens in a narrow hallway (3 feet wide) outside her room above a canal-side notary's office, where a hired thug (HP 32, AC 11, club +4, 2d4+2) blocks the exit. Serin uses Cunning Action to escape and hide. At 10 HP or lower, she trades her codebook and help for her life.
+> **Spy package.** Use the Spy stat block, with +1 Deception and a concealed shortsword. Serin carries 3 doses of basic poison (ingested, DC 11 Constitution save, 2d6 poison damage on a failed save); her HP is 27 and AC is 12.
+>
+> **Encounter: Serin Haut at Bay.** The encounter triggers when the party approaches her room or she spots them first. Combat occurs in a 3-foot-wide hallway outside her room above a canal-side notary's office. A hired thug (HP 32, AC 11, club +4, 2d4+2) blocks the exit while Serin uses Cunning Action to escape and hide.
 
 ## Connections
 
-- [[dravosi-crown]]: employer; spy contact
-- [[calven-and-calveno]]: where she works undercover
-- [[Marrow's]]: canal she watches
-- [[ferrin-locke]]: has his signed deal in her strongbox
-- [[Warren (Marrow's Crate)]]: her current mission
+| Connection | Meaning |
+| --- | --- |
+| [[dravosi-crown]] | Employer and spy contact. |
+| [[calven-and-calveno]] | Place where she works undercover. |
+| [[Marrows]] | Canal she watches while waiting for the crate claimant. |
+| Ferrin Locke | His signed deal is in her strongbox; no live owner page is established. |
+| [[warren-marrows-crate|Warren (Marrow's Crate)]] | Her current mission and the crate she watches. |

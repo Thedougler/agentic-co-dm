@@ -2,38 +2,81 @@
 title: "Nino"
 category: entities
 tags: [shattered-sea, npc]
-sources: ["quest-aruhe-castaways.md"]
-summary: "Named companion in the Half the Fleet draft."
+sources:
+  - "quest-aruhe-castaways.md"
+created: 2026-09-13T21:40:00Z
+updated: 2026-09-20
+type: npc
+lifecycle: proposed
+lifecycle_changed: "2026-09-13"
+reveal: unrevealed
+campaign: shattered-sea
+status: alive
+role: contact
+location: "[[aruhe]]"
+faction: none
+visibility: dm
+summary: "A dyer's apprentice from [[calven-and-calveno]], stranded on [[aruhe]] after the raid and now serving as the castaway camp's lookout."
 provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
 base_confidence: 0.37
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
-created: 2026-09-13T21:40:00Z
-updated: 2026-09-13
-type: npc
-reveal: unrevealed
-campaign: shattered-sea
-visibility: dm
 ---
-
 # Nino
 
-**Wants:** to stay alive long enough to learn what the sail now closing on the reef gap means, having touched nothing on Aruhe but fish since the night the island took Tomo.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-> [!narration] Narration
-> Salt-cracked skin gone sun-dark, a dyer's callus still faint on two fingers, the last trace of the trade she never finished learning. He watches long before he moves toward anything, then points instead of explaining, saving words for when nothing else will do: "Don't touch it," flat, already turning away. One hand stays closed on whatever's solid within reach.
+| **Role** | Contact |
+| --- | --- |
+| **Nature** | Dyer's apprentice and Aruhe castaway |
+| **Home** | [[calven-and-calveno|Calven and Calveno]] |
+| **Wants** | To stay alive, learn what the sail closing on the reef gap means, and keep the castaway camp from touching what the island forbids. |
 
+> **DM thesis:** Nino is a watchful survivor whose knowledge of the raid and Aruhe's danger gives the party a living warning without making him the camp's decision-maker.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Nino
+> Nino has salt-cracked, sun-dark skin and a dyer's callus faint on two fingers. He watches long before he moves, points instead of explaining, and keeps one hand closed around whatever is solid within reach. When words are necessary, he says them flat: “Don’t touch it.”
+```
+````
+
+## Running Nino
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Nino is the camp's lookout on [[aruhe]]. He watches the horizon before anyone else spots what is coming, then points and gives the party the shortest warning he can. Sample line: “Sail. Reef gap. Don’t touch it.”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Nino stops observing and acts when the horizon changes, someone approaches the island's forbidden growth, or the camp's survival is threatened. He has not spoken a full sentence since Tomo was dragged into the treeline, so silence and pointing are his established limits.
+```
+````
 
 ## Connections
 
-- [[Sandro]], fellow castaway who swam ashore with him onto [[Aruhe]] alongside an older man, Tomo. Tomo broke the island's only rule and ate from a shore bush. Something dragged him into the treeline by both ankles before dawn. Nino hasn't spoken a full sentence since.
-- [[Vethka]], the wrecked ship she rode ashore on and shelters in. It sailed south for [[Karath]] with the rest of the fleet until an easterly storm drove it onto Aruhe.
-- [[Aruhe]], the island she's stranded on. She's made herself the camp's only working lookout, watching the horizon before anyone else spots what's on it.
-- [[calven-and-calveno]], his home, a dyer's apprentice out of its Beffa quarter before the raid took him.
-- [[Grung]], whose raid on La Finestra took him and roughly 500 others captive.
-- [[nona-black-jaw]], counts her among the roughly 500 missing from the Beffa raid.
-- [[perrin-black-jaw]], PC connection. His vow to chase down Nona's missing is a debt Nino's survival helps answer.
+| Connection | Meaning |
+| --- | --- |
+| [[sandro]] | Fellow castaway who came ashore with Nino and Tomo; Nino's closest named camp connection. |
+| [[vethka]] | The wrecked ship Nino rode ashore on and shelters in; the fleet had been sailing south for [[karath]] before an easterly storm drove it onto Aruhe. |
+| [[aruhe]] | The island where Nino is stranded and serves as the camp's only working lookout. Tomo was dragged into the treeline after breaking its rule and eating from a shore bush. |
+| [[calven-and-calveno]] | Nino's home; he was a dyer's apprentice from its Beffa quarter before the raid. |
+| [[grung-clans|Grung]] | The raiders who took Nino and roughly 500 others captive from La Finestra. |
+| [[nona-black-jaw]] | Counts Nino among roughly 500 people missing from the Beffa raid. |
+| [[perrin-black-jaw]] | PC connection; Perrin's vow to chase Nona's missing makes Nino's survival part of his debt. |

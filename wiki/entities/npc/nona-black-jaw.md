@@ -10,11 +10,12 @@ sources:
   - "campaign-os:nona-black-jaw-narration-appearance.md"
   - "wiki/_archive/Nona Black-Jaw.md"
   - "Nona Black-Jaw"
-summary: Calveno host and Passage route face who turns safehouse access and favors into practical work for the Black-Jaw Run.
+  - "Tokage-Island.md"
 provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
+summary: "Passage patron and Black-Jaw Run matriarch who turns trust into routes, obligations, and recovery work."
 base_confidence: 0.57
 lifecycle: canon
 lifecycle_changed: "2026-09-12"
@@ -68,7 +69,7 @@ flexGrow=1
 ```
 ````
 
-## Running Nona
+## Running Nona Black-Jaw
 
 ````col
 ```col-md
@@ -84,11 +85,11 @@ Let Nona hear the party's problem before naming hers. Enzo and Ruk hold the door
 ```col-md
 flexGrow=1
 ===
-### When the party helps
+### When posture changes
 
 Concrete evidence of recovered people or a workable route moves her. She answers with practical access, protection, or a favor. A favor can become a debt.
 
-### Under pressure
+**Under pressure.**
 
 Threats against the network close the door. Family language becomes business terms, and she calls on safe kitchens, couriers, ships, and bodyguards without exposing the whole Passage to save one request.
 ```
@@ -96,7 +97,7 @@ Threats against the network close the door. Family language becomes business ter
 
 ---
 
-## Current pressure
+**Current pressure.**
 
 Nona turned the [[Mercatura]] crater into a missing-persons desk for more than `314` fighting-age men. She vowed public chase, dispatched two [[Passage]] ships already days behind the raiders, and gave [[perrin-black-jaw]] a favor instead of cash.
 
@@ -106,7 +107,7 @@ The party found its own way to [[aruhe]] while following the Calveno raid's surv
 ```col-md
 flexGrow=1
 ===
-## Public face vs secret
+**Public face vs secret.**
 
 **Public.** A practical Calveno host offering protection and work through the Passage.
 
@@ -116,7 +117,7 @@ flexGrow=1
 ```col-md
 flexGrow=1
 ===
-## Limit and contradiction
+**Limit and contradiction.**
 
 Nona protects people through a network whose survival requires transactional pressure. She cannot expose the whole Passage without endangering it.
 ```
@@ -130,12 +131,13 @@ Nona protects people through a network whose survival requires transactional pre
 | [[rattkin-runs-and-black-jaw-run]] | Family network Nona keeps alive through coded trust, couriers, and ships. |
 | [[the-black-jaw-run]] | The Calveno family Run she anchors at the Warren. |
 | [[perrin-black-jaw]] | Grandson and favor-debtor. He is part of the crew that arrived at Aruhe after the raid. |
+| [[madam-hino|Madam Hino]] | One of the only people said to know Hino's true appearance; Nona is sworn to keep that secret. |
 | [[Enzo]] · [[Ruk]] | Visible boundary of the safehouse. Ruk has guarded Passage witnesses for Nona. |
 | [[delmar-fisk]] | Captain-facing talent. Ask him to choose which passage is safe. |
 | [[crissdalynn-khinriss]] | Map-reading asset. Invite her to compare Aruhe and Maw routes. |
 | [[jean-claude-tabarnack]] | Grung perspective on the taken. Ask what the Warren leads omit. |
 
-## Activity log
+**Activity log.**
 
 | When / scene | What changed | Table handle |
 | --- | --- | --- |
@@ -143,16 +145,16 @@ Nona protects people through a network whose survival requires transactional pre
 | Session 08 | Turned the crater into a missing-persons desk and vowed chase. She dispatched two Passage ships after the raiders. | More than `314` men are missing, and those ships are days behind. |
 | Current | The crew arrived at Aruhe while following the Calveno raid survivors. Nona continues the recovery effort. | Keep the missing-persons desk moving. |
 
-## Appearances
+**Appearances.**
 
 - [[synthesis/story-so-far|Story So Far]]
 - [[pursue-the-grung-raiding-fleet]]
 
-## Provenance
+**Provenance.**
 
 This delta compiles the 2026-09-05 PC deep-dive. Legacy context file: `/Users/nick/shattered-sea/wiki/shattered-sea/pc.perrin-black-jaw.md`.
 
-## Narration
+**Narration.**
 
 > [!narration]
 > *[[nona-black-jaw|Nona Black-Jaw]] sits small for a [[Rattkin]] and straight as a mast. Silver-white fur. A dark mask runs along her jaw, the mark that made her Black-Jaw. Pink-rimmed eyes watch the next receipt.*
@@ -161,7 +163,7 @@ This delta compiles the 2026-09-05 PC deep-dive. Legacy context file: `/Users/ni
 >
 > *She does not raise her voice. The queue still thins when she looks up.*
 
-## Voice
+**Voice.**
 
 Use a low kitchen register. She does not shout until the tomato.
 

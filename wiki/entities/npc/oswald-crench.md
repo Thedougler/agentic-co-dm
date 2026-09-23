@@ -7,14 +7,18 @@ tags: [shattered-sea, npc]
 sources:
   - "campaign-os:oswald-crench.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "Dwarf proprietor of the Shelf Instrument Dealer in Port Tidefall. Has calibrated Crown navigation equipment for decades."
+status: alive
+role: contact
+location: "[[shelf-instrument-dealer|Shelf Instrument Dealer]]"
+faction: none
+summary: "Dwarf proprietor of the Shelf Instrument Dealer in Port Tidefall who has calibrated Crown navigation equipment for decades."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -24,28 +28,53 @@ tier: supporting
 ---
 # Oswald Crench
 
-![[oswald-crench-banner]]
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-|               |                                                                       |
-| ------------- | --------------------------------------------------------------------- |
-| **Species**   | Dwarf                                                                 |
-| **Pronouns**  | he/him                                                                |
-| **Location**  | [[Shelf Instrument Dealer]], [[calders-tooth-and-port-tidefall]] |
-| **Role**      | Navigation instrument dealer                                          |
+| **Role** | Contact |
+| --- | --- |
+| **Nature** | Dwarf navigation instrument dealer and careful calibrator |
+| **Home** | [[shelf-instrument-dealer|Shelf Instrument Dealer]], [[calders-tooth-and-port-tidefall]] |
+| **Wants** | To sell tools that survive close inspection and keep the shop independent |
 
-Oswald has squinted eyes from decades looking through lenses. He believes most things break under close inspection. He is not mean, but his quiet feels worse than rudeness.
+> **DM thesis:** Oswald is the quietest route to reliable navigation equipment, and his refusal to pretend certainty makes his gaps useful evidence.
+```
 
-He hates browsing. Linger and he will appear at your side, silent until you ask something. His answers are brief. Follow-ups get the same short replies.
+```col-md
+flexGrow=1
+===
+> [!narration] Oswald Crench
+> Oswald has squinted eyes from decades of looking through lenses. He stands quietly behind the counter, handling instruments with more care than he gives browsers. His answers are brief, and his silence lasts just long enough to make a follow-up feel expensive.
+```
+````
 
-He knows what each tool is and where it came from, and he admits when he does not.
+## Running Oswald Crench
 
-He owns the [[Shelf Instrument Dealer]], Port Tidefall's only navigation shop. Every Crown officer who came to the Shelf has left. Oswald stayed. The Crown stopped trying to move him.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
 
-## Stats & Combat
+Oswald appears beside anyone who lingers in the shop and asks what they actually need. He knows what each tool is and where it came from, admitting when he does not. **Sample line:** “I'm afraid that instrument is honest about the water.”
+```
 
-No stats given in source.
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+He closes the conversation when customers browse without purpose, demand certainty the equipment cannot provide, or threaten the shop's independence. Crown officers have tried to move him before; Oswald stayed.
+```
+````
 
 ## Connections
 
-- [[Shelf Instrument Dealer]]. The shop he runs.
-- [[calders-tooth-and-port-tidefall]]. His home port.
+| Connection | Meaning |
+| --- | --- |
+| [[shelf-instrument-dealer|Shelf Instrument Dealer]] | The navigation shop he owns and runs. |
+| [[calders-tooth-and-port-tidefall]] | His home port and the source of his Crown customers. |
+| [[dravosi-crown]] | Crown officers use his calibrated navigation equipment, but the source does not make him a Crown member. |

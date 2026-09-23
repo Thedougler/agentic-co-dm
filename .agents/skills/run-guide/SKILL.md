@@ -23,8 +23,8 @@ current pass's job before it is done.
 ### Boundary contract
 
 - **Input:** A named session or 30-minute beat cockpit, its existing prep and
-  owner pages, the skeleton/entry state, and the evidence needed to run this
-  slice.
+  owner pages, the session plan's Beat Map and entry state, and the evidence
+  needed to run this slice.
 - **Work:** Preserve the four-pass contract: pass 1 keeps the mechanical card
   and empty narration stubs; pass 2 keeps DM-facing procedure; pass 3 keeps
   spoken-text craft; pass 4 keeps the Reading-view/table gate. Each pass stays
@@ -33,10 +33,8 @@ current pass's job before it is done.
   spoken returns are complete; every required narration slot is filled; and the
   pass-4 table gate holds in Reading view. Return the ready cockpit and those
   checks as downstream evidence.
-- **Capability Handoff:** Return each bounded pass result only to its named
-  owner: pass 1 → `writing-for-humans`, pass 2 → `theatre-of-the-mind`, pass 3
-  → the pass-4 ready check. A missing owner page or incomplete result returns
-  the path, section, and blocker instead of advancing.
+- **Handoff:** Pass 1 → `writing-for-humans`, pass 2 → `theatre-of-the-mind`,
+  pass 3 → pass-4 ready check. Missing owner page → blocker, not advance.
 
 Each pass re-observes its own completion evidence before the next pass begins.
 An unchanged incomplete pass takes a materially different sanctioned action or
@@ -54,24 +52,28 @@ and parent session objective. Never advance a later pass from an assertion.
    summaries, snippets, truncated output, and range reads may help target the
    file but are not grounding. The previous beat's How the Scene Resolves is
    this beat's entry state — the situation, position, and changed world the
-   party walks in with. Verify beat identity: filename number matches skeleton
-   position (`Session-<session>-<NN>-Label.md` = beat NN), purpose and
-   dramatis personae match the skeleton, hand-off targets the skeleton's next
+   party walks in with. Verify beat identity: filename number matches its Beat
+   Map row (`Session-<session>-<NN>-Label.md` = beat NN), purpose and
+   dramatis personae match that row, hand-off targets the next row's
    beat. Mismatch → rename the file. Completion: beat identity confirmed;
    entry state known; every working file read end-to-end; every named actor,
    place, and item has an owner path or is marked unknown.
 
 2. **Diagnose.** Mark each beat `ready`, `missing owner`, `missing prep`, or
-   `proposal`. Identify the central element — the skeleton's Purpose and Table
-   sees name it. That element and its dramatis personae have owners before the
-   card is written; create via the appropriate craft skill (`npc-design`,
-   `place-design`, `vehicle-design`). Missing chart → `session-beats`. Missing
-   live beat of a type → that type skill (`hook-beats`, `development-beats`,
-   `cliffhanger-beats`, `climax-beats`, `resolution-beats`). Missing
-   mechanical stock → `encounter-prep`. Missing player-visible scene stock →
+   `proposal`. Run the cold read from `docs/agents/table-ready.md` on each
+   source beat: an undefined consequence term, opposition without numbers or
+   a tactics line, or an outcome with no world response is `missing prep` —
+   define it in pass 1 from the owner that already states it, otherwise route
+   the beat back to its type skill. Identify the central element — the
+   Beat Map row and the beat page's purpose name it. That element and its
+   dramatis personae have owners before the card is written; create via the
+   appropriate craft skill (`npc-design`, `place-design`, `vehicle-design`).
+   Missing chart → `session-beats`. Missing live beat of a type → that type
+   skill (`hook-beats`, `development-beats`, `cliffhanger-beats`,
+   `climax-beats`, `resolution-beats`). Missing mechanical stock → `encounter-prep`. Missing player-visible scene stock →
    owning page or craft skill before TotM fill. Empty `[!narration]` stubs are
    expected; TotM fill is pass 3. A creature you will roll that has no owner →
-   `homebrew-monsters-5e`. Choose live beats. Completion: the central element
+   `monster-design`. Choose live beats. Completion: the central element
    has an owner; every actionable hazard, loot, monster, route, clue, lore
    sign, and world detail has an owner or is marked unknown; no invented canon.
 
@@ -97,10 +99,13 @@ partial, procedure, and position conventions.
    this beat spends at the table. Place **empty titled `[!narration]` stubs**
    at the required TotM slots (see [TotM stubs](#totm-stubs) below). Embed an
    existing owner identity image (`![[attachments/…]]`) when the owner page
-   already lists one. Completion: every mechanical field this slice uses is
-   present; unused sections are absent; clock and Be ready for are one
-   *procedure*; every `[!narration]` body is empty; every Narration table
-   column cell is empty.
+   already lists one. Action cards carry the opposition loop — opening move,
+   adaptation when countered, break point, exit — beside the compact
+   numbers. Completion: every mechanical field this slice uses is present;
+   every consequence the card names is defined where it is named (who acts,
+   trigger, numbers, duration, what the players perceive); unused sections
+   are absent; clock and Be ready for are one *procedure*; every
+   `[!narration]` body is empty; every Narration table column cell is empty.
 
 ### Pass 2: DM copy
 
@@ -123,12 +128,11 @@ wrong field order), fix it before polishing copy.
 
 ### Pass 3: Spoken fill
 
-**Load:** `theatre-of-the-mind`. Read its references before drafting:
-`references/surfaces.md` for surface routing, `references/voice.md` for the
-slop gate, the matching specialist reference, and `references/boundary.md` for
-the access and hidden-truth checks. Open related owner, session, or
-user-attached images with the vision tool and ground the spoken picture in the
-pixels.
+**Load:** `theatre-of-the-mind` and follow its steps: `references/scenes.md`
+for the slot recipes, `references/examples.md` for the quality bar,
+`references/boundary.md` when a slot involves hidden truth or a handled
+object, and `references/vision.md` with the related images opened before
+drafting.
 
 Read [`references/cockpit-rules.md`](references/cockpit-rules.md) § Scene-setting
 for what the Initial Narration carries.
@@ -199,7 +203,7 @@ behind/ahead cuts when pacing is not obvious. Now states positions in feet and
 compass directions where tactical distance matters. Action cards carry the
 creature's or NPC's stat numbers (AC, HP, key attacks, saves) from their wiki
 owner page — enough for the DM to run the encounter without opening another
-note. How the Scene Resolves hands to a beat on this session's skeleton with
+note. How the Scene Resolves hands to a beat on this session's Beat Map with
 an options table covering each resolution path's distinct world-state change.
 Default-mode action-card numbers MAY sit on the beat; the beat stays a cockpit,
 never a second full owner page.
@@ -212,7 +216,7 @@ stock. This skill owns pass 1 (mechanical card + empty stubs).
 `writing-for-humans` owns pass 2 DM copy. `theatre-of-the-mind` owns pass 3
 spoken fill. Pass 4 is the ready check. `visual-aids` assembles an
 already-listed owner image onto the card. Monster math →
-`homebrew-monsters-5e`. Check, save, DC, and player-interaction mechanics →
+`monster-design`. Check, save, DC, and player-interaction mechanics →
 `dnd5e-mechanics`.
 
 ## Attribution

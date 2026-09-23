@@ -74,7 +74,7 @@ Decisions feed existing kinds through existing templates and the type enum:
 | Faction fronts surfaced | front note / faction pages | `wiki/templates/`, `wiki/templates/` |
 | Named place anchor with no page | spatial kind via `place-design` | `wiki/templates/` (or settlement, region, route) |
 | Named dungeon complex with no page | `dungeon` via `dungeon-design` | `templates/` |
-| Named notable object with no page | `item` via `dnd-5e-magic-item-design` | `templates/` |
+| Named notable object with no page | `item` via `item-design` | `templates/` |
 | Named conveyance with no page | `vehicle` via `vehicle-design` | `templates/` |
 
 Fill the overview. Later writes update that page. The region page

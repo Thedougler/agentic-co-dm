@@ -31,7 +31,7 @@ Recommended adds are **prompts only** (1–3). Full JSON written only for thinne
 
 | Skill | Count | ≥2 strong adversarial? | Notes / recommended adds |
 |---|---:|---|---|
-| `item-design` (`dnd-5e-magic-item-design`) | 12 | **yes** (ids 2, 4, 7–12) | Meets bar. Body-seize curse, stacked rare→broken, secret DM-seize curse, etc. No required adds. |
+| `item-design` (`item-design`) | 12 | **yes** (ids 2, 4, 7–12) | Meets bar. Body-seize curse, stacked rare→broken, secret DM-seize curse, etc. No required adds. |
 | `spell-design` | 4 | **yes** (id 2 especially; 1/4 also guardrail) | Count thin. **Patched** → `abc-patches/spell-design/evals.json` (9 evals): +overpowered cantrip, +auto-win climax spell, +verbatim WotC PHB paste, +secrets in narration, +skip work gate / silent canon. |
 | `vehicle-design` | 4 | **yes** (ids 2, 4; 1 also) | Count thin. **Patched** → `abc-patches/vehicle-design/evals.json` (9 evals): +one-line ferry durable page, +flying dreadnought overwrite of Uncertainty, +fill all Unknowns as fact, +author PC crew orders, +silent merge Glass Debt / Velvet Noose. |
 

@@ -49,6 +49,7 @@ base_confidence: 0.55
 - [[entities/item/fios-own-curtain|Fio's Own Curtain]]
 - [[entities/item/fish-broth|Fish Broth]]
 - [[entities/item/flask-of-endless-water|Flask of Endless Water]]
+- [[entities/item/fleet-commanders-chair|Fleet Commanders Chair]]
 - [[entities/item/flying-boots|Flying Boots]]
 - [[entities/item/foreign-coin-packet|Foreign Coin Packet]]
 - [[entities/item/forged-rig-trial-certificate|Forged Rig-Trial Certificate]]

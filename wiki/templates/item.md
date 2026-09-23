@@ -36,11 +36,13 @@ summary: ""
 
 # {{title}}
 
-<!-- Add item art when available. Omit Art section when unused. -->
+<!-- Add the primary item image directly under the title when available; omit when unused. -->
+<!-- ![[attachments/{subject-slug}-overview.ext|{{title}} overview]] -->
 
 > [!narration] Narration
-> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: object. -->
-> Write a standalone cold portrait in flowing prose — as long as the object requires to be pictured in a character's hands. Cover type, scale against the body, material, wear or patina, and at least one non-sight sense (weight, temperature, sound, smell). The portrait lets a player recognize and distinguish this object on sight. No secrets, DCs, lore closers, rarity, or unearned names.
+> <!-- `.agents/skills/item-design` step 7 builds the packet → `.agents/skills/theatre-of-the-mind` → mode: portrait → recipe: item. -->
+> Keep the finished portrait directly in this callout; do not add a separate linked narration-source note.
+> Write a third-person, present-tense portrait of the object as it always is. Cover the plain noun, size against a hand or body, material, wear and repairs, visible marks, one sense beyond sight (weight, temperature, sound, smell), and a plain tell for every hidden property. A player can recognise and pick out this object on sight. No effects, DCs, rarity, curse, or unearned names.
 
 <!-- Classification line: kind + rarity (+ attunement when required). Examples:
      Consumable, Rare
@@ -58,7 +60,7 @@ Consumable, Rare
      Simple items (consumables, mundane): 1–3 sentences.
      Complex items (magic weapons, relics, attunement): bold-label properties,
      each with its mechanical scope. Include limitations and edge cases inline.
-     See references/narrative-and-wording.md for the simple/complex patterns.
+     See .agents/skills/item-design/references/rules-2024.md for 2024 wording.
 -->
 Write the runnable item text here.
 
@@ -68,7 +70,7 @@ Write the runnable item text here.
 
 ## At the Table
 
-How the item changes a choice tonight that the item text alone does not make obvious. Cover notice, spend, reveal, or pressure. Only playable consequences — no design diary, RAW commentary, or restating the item text. Omit when the item text already covers table use.
+How the item shows itself (seen, held, active, and its tell when hidden), who wants it, and how it changes a choice tonight that the item text alone does not make obvious. A sentient item's voice and sample lines go here. Only playable consequences — no design diary, RAW commentary, or restating the item text. Omit when the item text already covers table use.
 
 ## Hidden Properties
 
@@ -83,7 +85,3 @@ Describe any hidden property the party does not yet know. Examples include a cur
 ## Provenance
 
 Where it came from, contested ownership chains, and open questions. State facts only. No ingest meta or process notes. Omit when unused.
-
-## Art
-
-<!-- Art embeds: wiki/attachments/{subject-slug}-{role}.ext — roles: banner|portrait|token|battlemap|overview|reference|handout|teaser. Flat folder; omit Art when unused. -->

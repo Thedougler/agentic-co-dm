@@ -5,14 +5,18 @@ tags: [shattered-sea, npc]
 sources:
   - "campaign-os:grukan.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "Ogre doorman at the hidden card den on Tallow Row. He vets every arrival through a two-eye window and a Draconic password."
+status: alive
+role: contact
+location: "[[Tallow Row]]"
+faction: none
+summary: "Ogre doorman at the hidden card den on Tallow Row who vets every arrival through a two-eye window and Draconic password."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -22,17 +26,54 @@ tier: supporting
 ---
 # Grukan
 
-> [!narration] Narration
-> A window no bigger than a man's two eyes opens without a sound and studies you for a long count before a voice asks something in Draconic. Answer correctly. The door swings open to reveal an ogre built like a second wall, with yellowed tusks and more knives holstered across him than most men own.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-Grukan is the sole doorman at the [[Tallow Row]] card den, working the two-eye window and the Draconic challenge that decides who gets past it. Like a buyer appraising cargo, he studies a newcomer's shoulders to judge whether they're worth the room's trouble. Once decided, he steps aside without a word. Though he doesn't often show it, he remembers faces well, especially anyone who lingers under his stare or makes noise before he finishes deciding.
+| **Role** | Contact |
+| --- | --- |
+| **Nature** | Ogre doorman and quiet appraiser |
+| **Home** | Hidden card den on [[Tallow Row]] |
+| **Wants** | To decide who gets through the door without creating trouble for the room |
+
+> **DM thesis:** Grukan makes access a social gate: answer the Draconic challenge, earn his judgment, or find another way into the den.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Grukan
+> A window no bigger than a man's two eyes opens without a sound and studies you for a long count before a voice asks something in Draconic. The door opens to an ogre built like a second wall, with yellowed tusks and more knives holstered across him than most men own.
+```
+````
+
+## Running Grukan
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Grukan vets each arrival through the two-eye window and Draconic challenge. He studies a newcomer's shoulders as if appraising cargo, then steps aside without a word if satisfied. **Sample line:** “Name the thing that opens this room.”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+He remembers faces and reacts when someone lingers under his stare, makes noise before he decides, or threatens the den. [[old-faas]] answers in the same flat cadence and is waved through; [[Thunk]] was admitted on Faas's word.
+```
+````
 
 ## Connections
 
-- [[Tallow Row]]. The den where he works the door.
-- [[old-faas]]. A regular who answers Grukan's Draconic challenge in the same flat cadence he uses for everything. That's enough to get him waved through without a second look.
-- [[Thunk]]. Vetted and let through on Faas's word during a debt-paying visit to the den.
-
-## Session Log
-
-- **Session 07.** Vetted [[Thunk]] and Old Faas through the two-eye window and Draconic challenge, then let them in without a word. Filled the front doorway during [[Thassos]]'s accusation and let the pair leave once the hand ended. Transcript
+| Connection | Meaning |
+| --- | --- |
+| [[Tallow Row]] | The hidden card den where Grukan works the door. |
+| [[old-faas]] | Regular whose answer earns immediate passage. |
+| [[Thunk]] | Vetted and admitted on Faas's word during a debt-paying visit. |
+| [[Thassos]] | Grukan filled the doorway during Thassos's accusation and let the pair leave after the hand. |

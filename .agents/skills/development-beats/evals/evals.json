@@ -12,9 +12,13 @@
         "Uses established wiki entities with accurate facts.",
         "DM-facing content is explicit and concrete, not vague.",
         "The completion test is clear: players can name what they now know or can decide that they could not before.",
-        "Output includes Purpose, Trigger, Turn, Exit, and Target (~30 min).",
+        "Output includes Card, Thread advanced, Entry state, Trigger, Turn, New direction, Memorable element, and Target.",
         "Output includes Run the Beat steps: Present, Let them engage, Make the turn, Hand back the choice.",
-        "Output includes Situation section with Where, Present, Immediate want, Friction, Pressure, If ignored."
+        "Output includes Situation section with Where, Present, Physical anchor, Friction, Pressure, and If ignored.",
+        "The Turn is one sentence and the page names the direction of action it sets.",
+        "Actors table gives Celia and Oren wants, true knowledge, offers, withholds or lies (with tell), price for help, and posture shift.",
+        "Revelations are stated as facts, each with where it surfaces.",
+        "Carry forward lists each state variable the next beat inherits, with its possible values."
       ]
     },
     {
@@ -34,7 +38,7 @@
       "expected_output": "The response reveals a new facet of the thread without resolving it, leaving meaningful tension for the Cliffhanger to test.",
       "expectations": [
         "Does not resolve the thread entirely — leaves meaningful tension for the next Cliffhanger.",
-        "Reveals one new facet: a clue, an alliance shift, a constraint, a cost — not the full answer.",
+        "May reveal the story (who, why, where) but keeps the solution to the next contest (how to stop them) for the Cliffhanger to test.",
         "The next Cliffhanger has something to test under cost, not just execute a foregone conclusion.",
         "The Development sets direction — it does not close the question."
       ]
@@ -122,14 +126,15 @@
       "expected_output": "A development beat filed from the development template with all structural sections present. The beat changes the decision space — a rule, a split, a new direction — and hands to a Cliffhanger that tests it.",
       "expectations": [
         "Output has type: session-prep and kind: development in frontmatter.",
-        "Purpose, Trigger, Turn, Exit, and Target (~30 min) are present as top-level statements.",
+        "Card, Thread advanced, Entry state, Trigger, Turn, New direction, Memorable element, and Target are present as top-level statements.",
         "An Opening narration callout exists with you-address and a non-sight sense.",
         "Run the Beat steps follow the four-step sequence: Present, Let them engage, Make the turn, Hand back the choice.",
-        "Situation and Revelations sections exist in col-md blocks with Where, Present, Immediate want, Friction, Pressure, and If ignored.",
+        "Situation and Revelations sections exist in col-md blocks; Situation names Where, Present, Physical anchor, Friction, Pressure, and If ignored.",
         "Revelations include at least a Core and a Support truth as checkboxes.",
-        "Actors table names NPC wants and posture changes.",
+        "Actors table names each NPC's wants, true knowledge, offers, withholds or lies (with tell), price for help, and posture shift.",
         "Exits table covers at least: pursues the lead, refuses or delays, and changes the situation.",
-        "The bump changes the decision space — what the party knows or can decide — not just the detail level."
+        "The bump changes the decision space — what the party knows or can decide — not just the detail level.",
+        "The physical anchor (the camp, its goods, the rule's markers) surfaces at least one revelation."
       ]
     },
     {
@@ -141,7 +146,36 @@
         "At least two distinct preparation states exist (e.g., fortified vs paired vs thin) with named consequences.",
         "The beat asks what they actually do rather than abstracting to a roll.",
         "The preparation states hand to the next beat as entry conditions the DM can read and apply.",
-        "Does not collapse preparation into a single Survival or Perception check."
+        "Does not collapse preparation into a single Survival or Perception check.",
+        "A Preparation states table maps each state to the next Cliffhanger's opening."
+      ]
+    },
+    {
+      "id": 13,
+      "prompt": "Write a Hidden Weakness Development where the party learns how to beat Talon Skarn (wiki/entities/npc/talon-skarn.md) the next time he comes for the Fate Spinner.",
+      "expected_output": "A Hidden Weakness described in exact terms with its mechanical effect, grounded in Skarn's owner page, with how the party learns it, what exploiting it costs, and the later beat where it pays off.",
+      "expectations": [
+        "Card is Hidden Weakness.",
+        "The weakness is described clearly and exactly, with its mechanical effect (attack roll, DC, damage, or condition).",
+        "The weakness is grounded in Skarn's owner page, or minted there before this page depends on it.",
+        "States how the party learns it and what exploiting it requires or risks.",
+        "Names the later Cliffhanger or Climax where it pays off.",
+        "Leaves the next contest in doubt — the weakness is a lever, not an automatic win.",
+        "The narration callout carries only what the characters perceive — no mechanics, DCs, hidden truth, or consequence forecasts."
+      ]
+    },
+    {
+      "id": 14,
+      "prompt": "The party lost the Grass Without Wind Cliffhanger in Session 12 and Skarn had them on the ropes. Write the next beat as a Retreat Development.",
+      "expected_output": "A Retreat: the opposition breaks off for a decided reason, covers its withdrawal with a delaying tactic that has a ruling, and the break-off hands the party something.",
+      "expectations": [
+        "Card is Retreat and the opposition, not the party, breaks off.",
+        "The true reason for the break-off is stated in the DM layer, with a tell the party can read.",
+        "A delaying tactic blocks immediate pursuit and has a ruling.",
+        "States where the opposition retreats to.",
+        "The break-off hands the party something concrete — breathing room, a dropped clue, a prisoner.",
+        "Costs of the lost Cliffhanger stay paid.",
+        "Carry forward lists each state variable the next beat inherits, with its possible values."
       ]
     }
   ]

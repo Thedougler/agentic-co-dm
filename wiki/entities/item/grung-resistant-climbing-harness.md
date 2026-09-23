@@ -15,6 +15,8 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "verdant-teeth"
+owner: ""
 kind: durable
 rarity: common
 attunement: false
@@ -35,7 +37,6 @@ Durable gear, Common
 
 While climbing forest canopy or wet stone with scarce handholds, you have Advantage on Dexterity (Acrobatics) checks. The treated leather reduces poison damage from climbing surfaces or from rope-work contact with a venomous opponent by 2, to a maximum reduction of 1 damage.^[ambiguous] To jam the quick-release buckles, make a **Dexterity** check — `DC 8`. Success: the buckles seize and will not open. Failure: they still work.
 
-## At a Glance
 
 Expedition harness with sewn anchor points and hip pockets for rope coils. Priced at 35 gp.
 

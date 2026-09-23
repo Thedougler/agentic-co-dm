@@ -17,6 +17,8 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
+role: contact
+faction: none
 location: "[[penance-bar]]"
 visibility: dm
 summary: "Mirela Cass's sister. She mends nets on Penance Bar's tideline; the current siege telling retires her."

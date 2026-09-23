@@ -12,9 +12,14 @@
         "The climax tests what the middle beats revealed and pressured.",
         "Multiple resolution paths exist based on player choices and established fiction.",
         "DM-facing content is explicit with named stakes and consequences.",
-        "Output includes Party goal, Opposition goal, Stakes, Pressure, Threads harvested, and End when.",
+        "Output includes Card, Entry state, Party goal, Opposition goal, Stakes, Pressure, End when, Memorable element, and Budget with an If behind compression.",
         "Output includes Opening image narration callout.",
-        "Threads harvested explicitly names what Developments revealed and Cliffhangers tested."
+        "Thread harvest table gives each thread its planted beat, tested beat, a concrete lever in this Climax, and what happens without it.",
+        "Aruhe's response to a living claim (the 'convergence') is defined on the page — who or what acts, trigger, numbers, duration, what the players perceive — or returned as a named gap, since taking-on-aruhe does not define it.",
+        "Skarn's compact numbers (AC, HP, Speed, Stunning Strike DC, reach) and tactics loop, including every exit and how the party can close it, are on the page.",
+        "The Opening image forecasts no consequence (it does not tell players that eating the guava draws Aruhe's response).",
+        "PC moments table gives each PC a thread, foe, or feature.",
+        "Outcome table states what becomes true, costs paid, and thread states per row."
       ]
     },
     {
@@ -111,13 +116,13 @@
       "expected_output": "A climax beat filed from the climax template with all structural sections. The Climax harvests named threads from the middle beats. Multiple resolution paths exist based on what the session established.",
       "expectations": [
         "Output has type: session-prep and kind: climax in frontmatter.",
-        "Party goal, Opposition goal, Stakes, Pressure, Threads harvested, and End when are present as top-level statements.",
-        "Threads harvested explicitly names what Developments revealed and what Cliffhangers tested.",
+        "Card, Entry state, Party goal, Opposition goal, Stakes, Pressure, End when, Memorable element, and Budget are present as top-level statements.",
+        "Thread harvest table names the alliance, the intelligence, and the rival with planted beat, tested beat, lever, and without-it consequence.",
         "An Opening image narration callout exists with you-address and sensory grounding.",
         "Situation and Visible levers sections exist in col-md blocks.",
         "A Pressure clock or escalation sequence exists with numbered steps.",
-        "Opposition section names the rival's goal, method, resources, and breaking point.",
-        "Outcome section covers at least: party wins, party loses, and a mixed result with distinct world-state changes.",
+        "Opposition section gives the rival's numbers, goal, method, resources, breaking point, and exits.",
+        "Outcome table covers victory, costly victory, opposition wins, and withdrawal/reframed, with costs and thread states.",
         "At least two viable Climax shapes are available — confrontation and exposure are both valid paths."
       ]
     },
@@ -132,6 +137,35 @@
         "The Climax harvests faction threads the middle beats planted and tested.",
         "Payoffs section names what each choice costs and what it preserves.",
         "The party arrives at the choice equipped by what the session taught them — the Climax asks whether they can use it."
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "Write a Final Revelation Climax for Session 12 where the party gathers the survivors and exposes who told Talon Skarn (wiki/entities/npc/talon-skarn.md) where the Fate Spinner would be.",
+      "expected_output": "A Final Revelation: a reason everyone is gathered, the full truth stated, proof tied to the beats where it was found, resistance with a breaking point, a settled consequence of correct exposure, and a defined result for a wrong accusation.",
+      "expectations": [
+        "Card is Final Revelation and the actors are gathered in one place for a stated reason.",
+        "The full truth is stated as DM-facing fact.",
+        "Each piece of proof names the earlier beat where the party got it.",
+        "The contesting party has an alternative story and a named breaking point.",
+        "The consequence of a correct exposure is settled on the page.",
+        "A wrong accusation has a defined consequence.",
+        "The culprit's last move when cornered is stated, with numbers if it turns violent.",
+        "Every named actor, place, and item links an existing owner page, or the output mints the owner before text depends on it."
+      ]
+    },
+    {
+      "id": 13,
+      "prompt": "Write a Final Battle Climax where the Countless (wiki/entities/faction/countless.md) come for the Fate Spinner at the memorial grove after the party spent the session gathering allies and learning the Countless' weakness.",
+      "expected_output": "A Final Battle with forces by tier and numbers, a stage that transforms, two or three phases, harvest levers from the allies and the weakness, and win/lose conditions beyond hit points.",
+      "expectations": [
+        "Card is Final Battle; the villain is substantially stronger than any PC and backed by henchmen and minions with numbers.",
+        "The stage has three features with rulings, and at least one transforms the fight.",
+        "Two or three phases each have a trigger, a player-visible signal, a change, and a new opportunity.",
+        "The harvest table turns the allies and the learned weakness into concrete levers in this fight.",
+        "Win and lose conditions go beyond reducing enemies to 0 HP; losing does not require a total party kill.",
+        "What the opposition accomplishes each round nobody stops it is stated.",
+        "PC moments table gives each PC a call."
       ]
     }
   ]

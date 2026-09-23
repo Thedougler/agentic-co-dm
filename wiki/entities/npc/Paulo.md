@@ -13,6 +13,8 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
+role: contact
+faction: none
 location: "[[Mercatura]]"
 visibility: dm
 summary: "Young gondolier who announces every wrong turn like it was the plan, and still delivers late."

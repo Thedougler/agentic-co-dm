@@ -29,13 +29,9 @@ mechanics on their proper surfaces.
 
 ### Capability Handoff
 
-Hand off only a bounded seam (for example, an encounter to `encounter-prep`, a
-hazard to `traps-trials`, checks to `dnd5e-mechanics`, creature math to
-`homebrew-monsters-5e`, or spoken room text to `theatre-of-the-mind`) with the
-dungeon owner, parent objective, evidence, and exact section requested. Require
-return evidence naming the child artifact/section and completion result; resume
-dungeon work only after that seam satisfies the site contract, otherwise report
-the missing evidence or blocker.
+Encounter → `encounter-prep`. Hazard → `traps-trials`. Checks →
+`dnd5e-mechanics`. Creature math → `monster-design`. Spoken room text →
+`theatre-of-the-mind`.
 
 ### Done
 

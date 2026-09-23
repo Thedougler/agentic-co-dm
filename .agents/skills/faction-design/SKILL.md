@@ -30,14 +30,8 @@ caller's objective intact while retrieving any local supporting entities.
 
 ### Capability Handoff
 
-Hand off only a local seam (for example, a named place to `place-design` or
-off-screen motion to `world-tick`) with a bounded packet: owner, objective,
-relevant evidence, and the exact section needed. Require return evidence naming
-the child artifact/section and its completion result; do not delegate the whole
-faction brief or re-plan the parent job. Resume faction work only when the
-bounded result changes a dependency, artifact state, or completion evidence and
-the owner contract is met; otherwise keep the seam open and report the missing
-evidence or specific blocker.
+Named place → `place-design`. Off-screen motion → `world-tick`. Hand off only
+the bounded section needed; the child does not re-plan the faction.
 
 ### Done
 

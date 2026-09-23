@@ -1,0 +1,45 @@
+{
+  "expectations": [
+    {
+      "text": "Opened the woman-in-the-woods overview or the reference sheet image",
+      "passed": false,
+      "evidence": "No images opened"
+    },
+    {
+      "text": "Narration uses durable pixel identity details of the woman form not in page prose (e.g. pointed ears, shredded dark shroud); no pose or gesture copied from the art",
+      "passed": false,
+      "evidence": "Prose-only details; no images opened"
+    },
+    {
+      "text": "No blight-form features used for her look",
+      "passed": true,
+      "evidence": "no blight features"
+    },
+    {
+      "text": "Her name, lich/undead nature, and secrets stay out of the narration",
+      "passed": true,
+      "evidence": "name only in callout title"
+    },
+    {
+      "text": "Second person, present tense, 2-4 sentences plus at most one line of speech (she has not spoken, so none expected)",
+      "passed": true,
+      "evidence": "3 sentences"
+    },
+    {
+      "text": "An art note is returned outside the narration",
+      "passed": false,
+      "evidence": "no art note"
+    },
+    {
+      "text": "No em dashes in the narration",
+      "passed": false,
+      "evidence": "2 em dashes"
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 4,
+    "total": 7,
+    "pass_rate": 0.43
+  }
+}

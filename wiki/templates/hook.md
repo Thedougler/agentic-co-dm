@@ -14,18 +14,23 @@ session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Copy-start scaffold. At the table; Open on; Situation; Run the hook; Decision handles; Handoff. Omit unused. Pass is those jobs. File Session-<n>-<BB>-<Label>.md. -->
+<!-- Copy-start scaffold for `hook-beats`. Jobs: Abstract; Open on; Situation; Run the hook; Character pull; Decision handles; Leads; Checks; Action setup; Handoff. Omit a section only when this Hook never spends it. Bar: docs/agents/table-ready.md. File Session-<n>-<BB>-<Label>.md. -->
 
 # {{title}}
 
-**Something happens.** State what changes right now.
+**Card.** Hook card from `hook-beats` — and the Cliffhanger or Development card when it plays one as the Hook.
+**Key.** Action (next beat: Development) or cerebral (next beat: Cliffhanger).
+**Thread.** The live thread this Hook opens or carries in.
+**Climax question.** The question this Hook opens that the Climax will answer.
+**Something happens.** State what changes right now, with names.
 **Why it matters.** State the immediate threat, opportunity, or personal stake.
-**Decision.** Describe the important choice now in front of the party.
-**Hook lands when.** State when the party is committed and moving. Give them clear direction.
+**Decision.** State the important choice now in front of the party.
+**Hook lands when.** State the observable commitment that ends the beat — the party gives chase, takes the job, flees the city.
+**Memorable element.** The image, feature, or person the table will remember from this opening.
 
 > [!narration] Open on
-> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: situated moment → beat: hook. -->
-> Write a situated opening in two to four sentences the DM can speak aloud. Address the players as "you", present tense. Start at the first changed thing — the visible threat, relative position, concrete sensory details, at least one non-sight sense, and an obvious point of interaction. End on the reaction point: the last image is a windup the players can respond to. The opening seats the party in the space and gives them something live to act on. No secrets, DCs, unearned names, or hidden premise.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → references/scenes.md → Hook opening. -->
+> Spoken narration, 5–9 sentences, second person, present tense. Hook opening: open inside the disturbance, fold the frame around it, show the threat or people in motion and two to four things to act on, and end on the demand, attack, or question that forces a response.
 
 ````col
 ```col-md
@@ -33,42 +38,43 @@ flexGrow=2
 ===
 ## Situation
 
+- **Entry state.** Positions in feet, conditions, HP or resources that matter, who holds what — carried from last session's ending or the plan's opening situation.
 - **Where.** [[Place]] — only the features that matter right now.
-- **Who.** [[NPC]] / [[Creature]] — what each wants and what each is doing now.
+- **Who.** [[NPC]] / [[Creature]] — what each wants and what each does next if nobody interferes.
 - **What changed.** The event that makes this moment different from normal.
-- **Pressure.** What worsens, escapes, arrives, or is lost if nobody acts.
+- **Pressure.** What worsens, escapes, arrives, or is lost, and when.
 - **Open question.** What is genuinely undecided and belongs to the players.
 ```
 
 ```col-md
 ## Run the hook
 
-| If the party…        | World response                                                                             |
-| -------------------- | ------------------------------------------------------------------------------------------ |
-| **Engages**          | React immediately to their method. Do not steer them toward a planned solution.            |
-| **Hesitates**        | Advance the pressure once, make the change concrete, then return the decision to them.     |
-| **Rejects / leaves** | Let the choice stand. Apply the logical consequence and leave another direction available. |
-| **Surprises you**    | Improvise from the actors' wants, situation facts, and pressure above.                     |
+| If the party…        | World response                                                                          |
+| -------------------- | --------------------------------------------------------------------------------------- |
+| **Engages**          | What the actors do in answer to each likely method — named, concrete.                   |
+| **Hesitates**        | The pressure advances once, concretely: what happens and what the party now sees.       |
+| **Rejects / leaves** | What the world does without them, and the other door that stays open.                 |
+| **Anything else**    | The facts on this page that stay true whatever they do, and what each actor wants.     |
 ```
 ````
 
 ## Character pull
 
-<!-- Omit when the group stake is already obvious. -->
+<!-- One row per PC present. Each PC has a tie, an obvious first job, or a stake. -->
 
-| PC / existing tie | Why this matters to them now                                              |
-| ----------------- | ------------------------------------------------------------------------- |
-| [[PC]]            | Personal goal, relationship, obligation, fear, curiosity, or opportunity. |
+| PC     | Why this matters to them now, or their obvious first job                  |
+| ------ | ------------------------------------------------------------------------- |
+| [[PC]] | Personal goal, relationship, obligation, fear, curiosity, or opportunity. |
 
 ## Decision handles
 
-- **[Player verb].** What they can affect now and what makes this approach interesting.
+- **[Player verb].** What they can affect now, its upside, and its cost.
 - **[Player verb].** A different approach, allegiance, cost, or risk.
-- **Environment / leverage.** A person, object, route, hazard, position, or fact they can exploit.
+- **Environment / leverage.** A person, object, route, hazard, or position they can exploit, with its ruling.
 
 ## Leads
 
-<!-- Omit when the next step is already explicit. Never gate the Hook itself behind a roll. If play depends on reaching a conclusion or finding the next node, seed three independent leads. -->
+<!-- Keep when play depends on reaching a conclusion or finding the next node. Three independent leads. The Hook itself lands without a roll. -->
 
 | Lead  | How it enters play                                       | Points to |
 | ----- | -------------------------------------------------------- | --------- |
@@ -78,26 +84,27 @@ flexGrow=2
 
 ## Checks
 
-<!-- Include only uncertain outcomes with meaningful consequences. Failure changes position, cost, time, danger, or information; it does not erase the Hook. -->
+<!-- Uncertain outcomes with meaningful consequences only (`dnd5e-mechanics`). Failure changes position, cost, time, danger, or information, and the Hook still lands. -->
 
-| Trigger | Check | Success | Failure / cost |
-| ------- | ----- | ------- | -------------- |
-| …       | …     | …       | …              |
+| Trigger | Ability (Skill) | DC | Success | Failure / cost |
+| ------- | --------------- | -- | ------- | -------------- |
+| …       | …               | …  | …       | …              |
 
 ## Action setup
 
-<!-- Keep only when the Hook opens with physical conflict or peril. -->
+<!-- Keep when the Hook opens with physical conflict or peril. -->
 
-- **Objective.** Describe each side's goal besides defeating the other.
-- **Opposition.** [[Creature]] × # / [[NPC]].
-- **Terrain.** One or two features that materially change choices.
-- **Escalation.** What enters, breaks, moves, catches fire, escapes, or otherwise changes the field.
-- **End condition.** What can end the action besides total elimination.
+- **Objective.** Each side's goal besides defeating the other.
+- **Opposition.** [[Creature]] × # / [[NPC]] — AC, HP, Speed, the attack or save DC the DM rolls, the trait that changes tactics.
+- **Tactics.** Opening move → how they adapt when countered → break point → exit.
+- **Terrain.** One or two features with the ruling each produces.
+- **Escalation.** What enters, breaks, moves, catches fire, or escapes, and on which round or trigger.
+- **End condition.** What ends the action besides total elimination.
 
 ## Handoff
 
-**Next.** [[Session-{{session}}-BB-Label]]. **Development / Cliffhanger**
+**Next.** [[Session-{{session}}-BB-Label]] — **Development / Cliffhanger**
 
-**Carry forward.** State the person, clue, object, wound, clock, obligation, or unanswered question that gives the next beat momentum.
+**Carry forward.** One line per state variable the next beat inherits, with its possible values — who holds the object, who is hurt, where the opposition went, what the party committed to.
 
 **Continuity change.** State what is now true because of the party's choice.

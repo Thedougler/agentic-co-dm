@@ -1,0 +1,4 @@
+> [!narration] Initial Narration
+> A man in a grey shirt is drowning in the slack, and two twelve-foot otters are playing tag with him. The nearest stands on this sand—chocolate-black with a white whorl on its pale chest, water streaming from its whiskers and amber eyes fixed on you, a chewed pole dripping from its mouth. Twenty feet out, the second otter circles beneath the surface with a pale streak at its throat, cutting the man off each time he reaches for the hanging roots. His fingers slip on the wet wood. One boot is gone. Blood runs from his split lip.
+>
+> Wet spray reaches this bank as white water breaks over a rock lip downriver. Bloody footprints climb into the jungle wall behind you. The man coughs. It comes out as a gasp. The streaked otter nudges him a handspan farther from the roots. His hips slide deeper into the water.

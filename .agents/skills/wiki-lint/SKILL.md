@@ -35,24 +35,12 @@ cannot close, report a specific blocker with its path, rule, evidence, and
 owner; prose completion or a structural-only edit is not success. Preserve the
 existing full-finding and fixer CLI contracts.
 
-For each iteration, compare the same-scope observation before and after the
-action. A skipped or unsupported deterministic repair that leaves its finding
-unchanged is not retried. An unchanged semantic finding is reread with its
-owner contract, then receives a different sanctioned action or a blocker.
-
 ### Capability Handoff
 
-Send semantic page work to its existing owner skill (`faction-design`,
-`place-design`, `npc-design`, and so on), projecting the page, linked canon,
-template, and lint evidence. The owner must return the bounded artifact
-path/section, the finding(s) it addressed, and completion evidence; an
-incomplete return remains a blocker. `wiki-lint` integrates it once, reruns
-lint on the affected scope, and resumes the same worklist only from that
-result. Use `wiki-dedup`, `cross-linker`, or `tag-taxonomy` only for their
-named findings.
-
-**Progress guard:** Continue only when the selected worklist, finding evidence,
-next target, or changed files differ, or when the owner completion guard passes.
+Semantic page findings → existing owner skill (`faction-design`,
+`place-design`, `npc-design`, etc.) with page, linked canon, template, and
+lint evidence. Rerun lint on the affected scope after each owner return.
+`wiki-dedup`, `cross-linker`, `tag-taxonomy` only for their named findings.
 
 
 

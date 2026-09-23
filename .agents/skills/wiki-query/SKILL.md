@@ -31,18 +31,15 @@ If the user's message contains a new finding, an action request ("save this", "b
 - a full new page → `wiki-capture`
 - a project-knowledge sync → `wiki-update`
 
-## Capability Boundary
+## Capability boundary
 
-**Accepted input.** A question about compiled wiki knowledge, including a bounded topic lookup, filtered/public query, index-only request, or typed-edge path.
+**Input.** A question about compiled wiki knowledge: topic lookup, filtered/public query, index-only request, or typed-edge path.
 
-**Owner work.** Enter `wiki-query` directly. Resolve the target vault, use the Retrieval Protocol's cheapest sufficient evidence, deepen to focused sections or page reads only when the current evidence cannot support the answer, and keep the query's citations and retrieval counts intact. Re-observe the same candidate set after each focused retrieval.
+**Work.** Use the Retrieval Protocol's cheapest sufficient evidence. Deepen to focused sections or page reads only when current evidence cannot support the answer.
 
-**Done.** Return a cited answer only when the factual claims are supported by sufficient wiki evidence (or explicitly marked as gaps, inference, or conflict), with Pages consulted and Retrieval counts. Stop when evidence is sufficient. If the candidate set is unchanged and no unexplored supporting, conflicting, or gap path remains, return a specific blocker rather than repeating retrieval. Canonical wiki pages, index, hot cache, manifest, and log remain unchanged.
+**Done.** Cited answer with Pages consulted and Retrieval counts. Claims supported by wiki evidence or explicitly marked as gaps/inference/conflict. No vault writes.
 
-**Capability handoff.** Handoff occurs only when the request changes ownership: route a requested capture or knowledge sync to `wiki-capture` or `wiki-update`, then resume only with the resulting query boundary; do not insert a generic orchestration step.
-### Minimum context projection
-
-Carry only the resolved vault, question, visibility/index mode, ranked candidates, and focused evidence needed for the answer. Deliberately omit unrelated page groups, parent-agent context, and prior capability artifacts. Begin with the cheapest sufficient evidence; deepen through this owner's focused section or page retrieval only when it cannot support the answer, then stop and synthesize with citations and counts. Never inherit a parent planner's broader retrieval set as query evidence.
+**Handoff.** Capture/sync requests → `wiki-capture` or `wiki-update`.
 
 
 ## Before You Start

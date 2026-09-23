@@ -165,9 +165,14 @@
         {"text": "Beat Map table alternates Development and Cliffhanger forms in the middle — no two consecutive same-type.", "type": "guardrail"},
         {"text": "Each beat row links a typed beat page and states a trigger and what changes.", "type": "structure"},
         {"text": "Pressure section advances without the PCs through numbered steps toward a point of no return.", "type": "content"},
-        {"text": "PC Touchpoints table names at least one limelight moment per PC.", "type": "content"},
+        {"text": "PC Touchpoints table names a spotlight beat for each PC.", "type": "content"},
         {"text": "Plan does not duplicate Scene ends when, Zones, or Be ready for — those belong on the typed beat pages.", "type": "guardrail"},
-        {"text": "Floating Beats and Branches sections exist for contingencies.", "type": "structure"}
+        {"text": "Floating Beats and Branches sections exist for contingencies.", "type": "structure"},
+        {"text": "Cards, threads, and tiers table names each beat's card, thread, and memorable element; Cliffhanger tiers rise across the night and the Villain tier is reserved for the Climax.", "type": "content"},
+        {"text": "Pressure names the opposition, its goal this session, its means, and steps 0–4 it takes without the PCs.", "type": "content"},
+        {"text": "Threads table traces each thread from planted to tested to harvested.", "type": "content"},
+        {"text": "Floating Clues lists about ten true, concrete facts.", "type": "content"},
+        {"text": "Every named creature, NPC, and place links an existing owner page or is minted first.", "type": "process"}
       ]
     },
     {
@@ -220,6 +225,42 @@
         {"text": "Requires changed child dependency, artifact, or completion evidence before resumption.", "type": "structure"},
         {"text": "Omits unrelated child context after resumption.", "type": "scope"},
         {"text": "Stops an unchanged incomplete child return with a specific blocker.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "budget-math",
+      "prompt": "Plan a six-hour one-shot for a new group on Aruhe (wiki/entities/region/aruhe.md). Open with a Crisis: a Grung raid on the beach camp.",
+      "expected_output": "Chart built from the three rules: Crisis Hook, then a Development (action Hook), alternating middle, Climax, Resolution; 4.5 hours of middle budget treated as a ceiling of about nine middle beats.",
+      "assertions": [
+        {"text": "Budget reserves about ninety minutes for Hook, Climax, and Resolution and treats the remaining 4.5 hours as about nine middle slots at most.", "type": "content"},
+        {"text": "The action Crisis Hook is followed by a Development.", "type": "content"},
+        {"text": "Middle beats alternate Development and Cliffhanger; the Climax prelude has the opposite type to the Climax.", "type": "content"},
+        {"text": "The Crisis ties to the plot — the opposition caused it or rides it.", "type": "quality"},
+        {"text": "Cliffhanger tiers rise from Grunts toward the Villain at the Climax.", "type": "content"}
+      ]
+    },
+    {
+      "id": "opposition-agenda-runs",
+      "prompt": "Plan Session 13. Assume Session 12 ended with the Fate Spinner held, Talon Skarn (wiki/entities/npc/talon-skarn.md) driven off wounded, and the party camped outside the memorial grove. The players said they want to rest and study the Spinner.",
+      "expected_output": "A plan whose opposition agenda advances while the party rests, turning the players' stated goal into a beat and letting Skarn's next move create pressure.",
+      "assertions": [
+        {"text": "Grounds the plan in Session 12's ending state as facts.", "type": "process"},
+        {"text": "Pressure states what Skarn and his allies do step by step while the party rests.", "type": "content"},
+        {"text": "The players' stated goal (rest and study the Spinner) becomes a beat rather than being skipped.", "type": "quality"},
+        {"text": "Every PC has a spotlight beat.", "type": "content"},
+        {"text": "Each chart row names card, thread, trigger, what changes, and handoff.", "type": "content"}
+      ]
+    },
+    {
+      "id": "typed-fill-table-ready",
+      "prompt": "Plan Session 13 on Aruhe and fill the Hook and Climax beat pages so the DM can run them cold.",
+      "expected_output": "Session plan plus Hook and Climax pages that pass the table-ready cold read.",
+      "assertions": [
+        {"text": "The Hook page is filled via hook-beats and the Climax page via climax-beats, in chart order.", "type": "process"},
+        {"text": "Both beat pages carry compact opposition numbers and tactics lines.", "type": "content"},
+        {"text": "Every consequence term on both pages is defined where it is used.", "type": "content"},
+        {"text": "The Climax harvest table draws levers from threads the plan's middle beats plant.", "type": "quality"},
+        {"text": "Narration callouts carry perception only.", "type": "content"}
       ]
     }
   ]

@@ -1,7 +1,7 @@
 # Batch B eval citations (entity design)
 
 Written under `/workspace/batch-b-evals/` only. Source skills live in
-`/home/box/agentic-co-dm/.agents/skills/{dnd-5e-magic-item-design,spell-design,vehicle-design}/`
+`/home/box/agentic-co-dm/.agents/skills/{item-design,spell-design,vehicle-design}/`
 and were **not** modified. Do **not** treat this folder as authorization to
 edit `/home/box/agentic-co-dm` until explicitly told.
 
@@ -20,8 +20,8 @@ Audit input: `/workspace/eval-audit/batch-b-entity-report.md`.
 
 | Template | Correct owner skill | Notes |
 | --- | --- | --- |
-| `wiki/templates/hazard.md` (flora hazard; `type: item`, `kind: flora hazard`) | **`dnd-5e-magic-item-design`** | Flora-hazard **page** authorship belongs here — **not** `traps-trials`. Batch B **narrowed** this suite to `item.md` only; flora-hazard template evals are **deferred** (optional later fold-in). |
-| `wiki/templates/creature.md` | **`homebrew-monsters-5e`** | Creature page authorship — **not** authored in this Batch B pass. |
+| `wiki/templates/hazard.md` (flora hazard; `type: item`, `kind: flora hazard`) | **`item-design`** | Flora-hazard **page** authorship belongs here — **not** `traps-trials`. Batch B **narrowed** this suite to `item.md` only; flora-hazard template evals are **deferred** (optional later fold-in). |
+| `wiki/templates/creature.md` | **`monster-design`** | Creature page authorship — **not** authored in this Batch B pass. |
 | — | *(none)* | **No** `hazard-design` or `creature-design` skills exist. Do not invent those skill folders to "complete" the mapping. |
 | traps / challenge craft | `traps-trials` | Challenge telegraph/counterplay — must **hand off** flora-hazard frontmatter to item-design; no `hazard.md` structure ownership. |
 
@@ -29,7 +29,7 @@ Audit input: `/workspace/eval-audit/batch-b-entity-report.md`.
 
 ---
 
-## dnd-5e-magic-item-design
+## item-design
 
 | | Path |
 | --- | --- |
@@ -91,7 +91,7 @@ Audit input: `/workspace/eval-audit/batch-b-entity-report.md`.
 
 | Skill | Evals | Wiki-template (improve/resist/create/flesh) | Craft extras |
 | --- | ---: | ---: | ---: |
-| dnd-5e-magic-item-design | 12 | 4 | 8 |
+| item-design | 12 | 4 | 8 |
 | spell-design | 4 | 4 | 0 |
 | vehicle-design | 4 | 4 | 0 |
 | **Total** | **20** | **12** | **8** |
@@ -109,5 +109,5 @@ Schema: all suites use `skill_name` + `evals[{id,prompt,expected_output,assertio
 5. **Uncertainty Unknown lines:** Improve eval requires leaving blank speed/weapons/component numbers Unknown or labeled invention — matches live page honesty. Thunk's cannon credit stays crew pressure, not a Weapons row presented as canon.
 6. **Glass Debt over Velvet Noose for vehicle flesh:** Same thin sighting stub pattern; Glass Debt named first in steering; Velvet Noose acceptable alt (same Strait/Crown canon).
 7. **Craft cap at 12 for item:** Converted 8 strongest mechanical themes to typed assertions; dropped 4 weakest/redundant from the legacy 12. Wiki-grounded floor (≥4) met by ids 1–4.
-8. **hazard.md deferred, not reassigned:** Still owned by `dnd-5e-magic-item-design` for flora pages; traps-trials must not claim it. Not authored here because Batch B narrowed to `item.md`.
+8. **hazard.md deferred, not reassigned:** Still owned by `item-design` for flora pages; traps-trials must not claim it. Not authored here because Batch B narrowed to `item.md`.
 9. **Graders vs live completeness:** Score **output** template conformance; live Uncertainty / Fate Spinner / stubs may be pre-template or partial — that is expected for improve/flesh inputs.

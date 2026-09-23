@@ -26,13 +26,8 @@ route checks, saves, and adjudication to the mechanics owner.
 
 ### Capability Handoff
 
-Hand off only a bounded seam (for example, casting checks to
-`dnd5e-mechanics`, a scroll/item to `dnd-5e-magic-item-design`, a place to
-`place-design`, or spoken delivery to `theatre-of-the-mind`) with the spell
-owner, parent objective, evidence, and exact section requested. Require return
-evidence naming the child artifact/section and completion result; resume spell
-work only after that seam satisfies the spell contract, otherwise report the
-missing evidence or blocker.
+Casting checks → `dnd5e-mechanics`. Scroll/item → `item-design`.
+Place → `place-design`. Spoken delivery → `theatre-of-the-mind`.
 
 ### Done
 
@@ -108,7 +103,7 @@ questions, and failure modes.
 
 ## Handoffs
 
-Narration → `theatre-of-the-mind`; items/scrolls → `dnd-5e-magic-item-design`;
+Narration → `theatre-of-the-mind`; items/scrolls → `item-design`;
 places → `place-design`; lore pages → `lore-design` (spell Discovery/Lore stay on
 the spell page); vault lookup → `.agents/skills/qmd`.
 

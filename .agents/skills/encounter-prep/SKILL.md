@@ -12,37 +12,11 @@ description: >-
 # Encounter Prep
 ## Boundary contract
 
-### Input
+**Input.** Named encounter or session cockpit, party/location/opposition canon, `templates/Encounter.md` when reusable. Classify reusable stock vs session-only cockpit before drafting.
 
-Take the named encounter or session cockpit, the caller's objective, the
-relevant brief, party/location/opposition canon and evidence, and
-`templates/Encounter.md` when a reusable note is requested. Identify whether
-the owner is reusable encounter stock or a session-only cockpit before
-drafting.
+**Work.** Classify primary mode, build goal/opposition/suspense/choices/rulings/resolution. Route creature statblocks to `monster-design`, DCs to `dnd5e-mechanics`, places to `place-design`/`dungeon-design`, tonight's field order to `run-guide`.
 
-### Owner-specific Work
-
-Work only the encounter: classify its primary mode, preserve the named beat
-and place pressure, then build the goal, opposition method, suspense fuse,
-choice paths, rulings, and resolution. Keep agency and public stakes visible;
-route creature statblocks and ability checks instead of absorbing their owners.
-
-### Capability Handoff
-
-Hand off only a bounded seam (for example, DCs/checks to
-`dnd5e-mechanics`, creatures to `homebrew-monsters-5e`, a named place to
-`place-design`/`dungeon-design`, or tonight's field order to `run-guide`) with
-the encounter owner, parent objective, evidence, and exact section requested.
-Require return evidence naming the child artifact/section and completion result;
-resume encounter work only after that seam satisfies the encounter contract,
-otherwise report the missing evidence or blocker.
-
-### Done
-
-Use the existing output contract and `## Table-prep gate` below. Completion is
-observable when the named encounter/cockpit path or inline location, runnable
-mode/pressure/mechanics checks, playability gates, and any child return
-evidence are reported.
+**Done.** `## Table-prep gate` below is the completion guard.
 
 
 File what constitution X makes canon. Follow `docs/agents/work.md`.
@@ -53,7 +27,7 @@ Customized combat mechanics serve a named narrative beat (lore, origin, stakes, 
 
 When the encounter has a named place (lair, site, battlefield), that place has at least one mechanical pressure that belongs to it and changes a choice. Flavor-only scenery is incomplete. No named place, or an explicit DM request for a featureless skirmish, does not require invented lair mechanics.
 
-Stock opposition used unchanged needs no custom features. Do not author statblocks — `homebrew-monsters-5e` owns those.
+Stock opposition used unchanged needs no custom features. Do not author statblocks — `monster-design` owns those.
 
 
 ## Ground and type
@@ -104,7 +78,7 @@ in `run-guide`; this skill supplies table-useful stock:
    that matter; speeds that matter; what a move vs Dash reaches. The cockpit
    writes this under Now only when Glance would otherwise get crowded.
 3. **Action cards:** opposition loop with named actions; compact default-mode
-   numbers the DM will roll. Missing owner → `homebrew-monsters-5e`.
+   numbers the DM will roll. Missing owner → `monster-design`.
 4. **Roster embeds:** only for creatures or items the DM will roll or spend.
 5. **Zones:** named places with distances in feet and compass directions; same
    numbers as Now; features either side can use.
@@ -149,7 +123,7 @@ structure. Run applicable checks; report changed paths and any deferred owner wo
 
 Ability check, save, and DC choice → `dnd5e-mechanics`. Write those tests with
 the at-table grammar in `obsidian-markdown`. `npc-design`, `place-design`,
-`dungeon-design`, `dnd-5e-magic-item-design`, `run-guide`, and `homebrew-monsters-5e`
+`dungeon-design`, `item-design`, `run-guide`, and `monster-design`
 own their respective handoffs.
 
 ## Table-prep gate

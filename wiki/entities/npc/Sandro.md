@@ -2,39 +2,78 @@
 title: "Sandro"
 category: entities
 tags: [shattered-sea, npc]
-sources: ["quest-aruhe-castaways.md"]
-summary: "Calveno captive named in the Half the Fleet draft."
+sources:
+  - "quest-aruhe-castaways.md"
+created: 2026-09-13T21:40:00Z
+updated: 2026-09-20
+type: npc
+lifecycle: proposed
+lifecycle_changed: "2026-09-13"
+reveal: unrevealed
+campaign: shattered-sea
+visibility: dm
+status: alive
+role: contact
+location: "[[Vethka]], [[Aruhe]]"
+faction: none
+summary: "Calveno captive sheltering in the wreck of Vethka on Aruhe with Nino, distrustful of anything he has not seen prove safe."
 provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
 base_confidence: 0.37
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
-created: 2026-09-13T21:40:00Z
-updated: 2026-09-13
-type: npc
-reveal: unrevealed
-campaign: shattered-sea
-visibility: dm
 ---
-
 # Sandro
 
-**Wants:** to keep himself and Nino alive until the ship now crossing the reef gap turns out to be rescue, not another Vethka. He trusts nothing on this island he hasn't watched kill someone else first.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-> [!narration] Narration
-> Salt-cracked and sun-browned, Sandro crouches in the shade of the Vethka's broken hull, a haggler's patience in the way he moves, nothing wasted, nothing tried twice.
->
-> *Sandro*: I don't touch anything until I've watched it kill someone else first.
->
-> She doesn't look up, working a bent hook through a length of shoelace, the notch-marks she stopped counting worn smooth under her thumb.
+| **Role** | Contact |
+| --- | --- |
+| **Nature** | Calveno captive, survivor, and cautious haggler |
+| **Home** | The wreck of [[Vethka]] on [[Aruhe]] |
+| **Wants** | To keep himself and [[Nino]] alive and determine whether approaching ships mean rescue or another threat |
 
+> **DM thesis:** Sandro is useful because caution has kept him alive, but his silence about Tomo's death leaves Nino without the truth.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Sandro
+> Salt-cracked and sun-browned, Sandro crouches in the shade of the broken hull. He moves with a haggler's patience: nothing wasted, nothing tried twice. “I don't touch anything until I've watched it kill someone else first.”
+```
+````
+
+## Running Sandro
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Sandro watches a newcomer before committing to conversation. He asks what they know about the ship crossing the reef gap and whether they have seen the island's dangers up close. His first useful offer is practical caution about the wreck and the island's fruit taboo.
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+He becomes guarded when anyone pressures him to trust an untested object, route, or stranger. Mentioning Tomo's death or the treeline makes him cut the subject short; he has not explained the death to Nino. He also watches anyone connected to the Grung raid that took him captive.
+```
+````
 
 ## Connections
 
-- [[Nino]], swam ashore with him onto [[Aruhe]] alongside an older man, Tomo. Tomo broke the island's fruit taboo that first night. Something dragged him into the treeline, and only the drag marks remained. Sandro still hasn't explained that death to Nino, and cuts the subject short the moment the treeline comes up.
-- [[nona-black-jaw]], chasing the raid that took Sandro captive along with roughly five hundred other **[[calven-and-calveno]]** during [[il-gioco-delle-beffe|La Finestra]] (Session 04).
-- [[Grung]], his captors on the raid. He found two of them already dead on the beach after the wreck, and has never told Nino what killed them.
-- [[Vethka]], the wrecked hull he and Nino now shelter in. One of the fleet's ships, it sailed for [[Karath]] before the storm wrecked it on Aruhe.
+| Connection | Meaning |
+| --- | --- |
+| [[Nino]] | Swam ashore with Sandro onto [[Aruhe]]; Sandro has not told her what happened to Tomo. |
+| [[nona-black-jaw]] | Chasing the raid that took Sandro captive with roughly five hundred other [[calven-and-calveno]] during [[il-gioco-delle-beffe|La Finestra]]. |
+| [[Grung]] | His captors on the raid; two were already dead on the beach after the wreck, and Sandro has not told Nino what killed them. |
+| [[Vethka]] | Wrecked fleet ship where Sandro and Nino shelter after it sailed for [[Karath]] and was wrecked on Aruhe. |

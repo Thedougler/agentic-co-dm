@@ -19,6 +19,7 @@ reveal: unrevealed
 campaign: shattered-sea
 status: alive
 role: contact
+faction: none
 location: "[[penance-bar]]"
 visibility: dm
 summary: "Reeve of Penance Bar. She tries to hold the peace while Corvin Ashe whips the town."

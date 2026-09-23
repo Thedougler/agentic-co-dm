@@ -1,48 +1,12 @@
 ---
-updated: 2026-09-20T10:40:00Z
+updated: 2026-09-23T07:30:00Z
 ---
 ## Recent Activity
-- Repaired [[thistlewick]] as a place page, preserving its bramble hazard and making all unrecorded topology explicit; normalized the basename to lowercase.
-- Merged the thin [[Ozzeth]] stub into [[ozzeth-the-twiceborn|Ozzeth, the Twiceborn]], preserving the canonical NPC owner and adding the short alias.
-- Merged [[mave-sorn-dialogue-terms]] into [[mave-sorn]] because the page contained NPC dialogue, not standalone lore; removed the obsolete lore owner and updated indexes and manifest.
-- Full-vault structural lint repaired 115 findings across faction, lore, index, synthesis, and session pages; 10 fragmented-tag findings remain as a cross-linker handoff.
-- Merged the duplicate [[fathomrush-last-berth-false-log|Last Berth False Log]] into [[forged-rig-trial-certificate]]; retargeted live links and removed the redundant owner.
-- Integrated Murrat's cloud approach and Ket's one-turn warning into their owner pages; removed the duplicate session-prep notes and repaired the shroud hub links.
-- Scoped lint found no structural hard failures; remaining findings are generic Vale style warnings on the updated owner pages.
-- Scoped creature lint for 54 pages: minted [[kalowe-the-sawek-bounty]], [[ashwall-islands]], and [[gust]] owners, added aliases for existing owners, and exempted creature reference pages from generic Vale heuristics. Structural and Vale findings are clear; fragmented tags remain a [[cross-linker]] handoff.
-- Scoped lint repair for 138 item pages: resolved 126 missing owners by minting 24 minimal place/quest/vehicle owners and aliases, plus [[takowan]]; updated [[index]]. Structural item and minted-owner checks have no hard failures. Fragmented tags and existing Vale creative-style findings remain for tag/content review.
-- Scoped place lint repaired the remaining place owners: moved [[grasslands]] to [[entities/region/grasslands|Grasslands]], split [[marrow]] from [[the-marrow|The Marrow]], minted [[casa-lupo]], [[tallow-row]], [[studio-orsini]], [[al-fondale]], [[marrows]], and [[Warren, Marrow's Crate]], repaired place indexes and malformed place YAML. Structural place lint is clean; generic Vale creative-style findings remain on untouched place pages.
-- Scoped lint repair for all 32 region owners: structural findings are clean, and region-specific Vale configuration keeps campaign/deprecation checks while excluding false-positive generic prose heuristics. `wiki/entities/region/*.md` now lint clean.
-- Scoped lint repair for the Aruhe region and 23 place owners: structural scope is clean; repaired Aruhe prose, corrected the Sorn landing link, and resolved the Aruhe Beach/Western Landing identity split. Vale still reports existing creative-style warnings on 22 untouched place/region pages.
-- `moc-generate` now writes canonical `_index.md` MOCs only for useful folders: at least two direct pages or an eligible child MOC. One-page leaf MOCs are removed as stale derived output.
-- Wiki lint recognizes generated MOCs as navigation files and skips identity/template checks; content pages still require trust metadata.
-- Full-vault lint: unlinked 610 mechanic wikilinks; repaired [[the-tarahs]] YAML; deleted the [[fisks-captains]] redirect stub; added resolving aliases on Calveno, Saltwright, Black-Jaw Run, and related owners. Identity resolved. Degradation stop: 440 missing-place links and 253 template findings remain.
-- Scoped lint repair for [[Rattkin]] and supporting files: [[rattkin-culture]], [[rattkin-runs-and-black-jaw-run]], [[the-black-jaw-run]], [[Warren]], [[nona-black-jaw]], [[vincenzo-black-jaw]], [[essa-two-tooth]], and minted [[low-lamp]]. Identity resolved. Cluster lint is clean.
-Committed 34 wiki pages: 15 new pages and 19 updates, including Session 12 preparation and Aruhe entity updates.
-- Scoped lint repair for the Umberlee cluster: identity resolved. [[bring-the-pearl-of-souls-to-umberlee]] and [[pearl-signal-across-the-boundary]] are distinct quests. Tithe item digested into [[the-tithe-of-the-bitch-queen]]. Cluster lint is clean.
-- Scoped lint repair for [[simone-tabarnack]]: resolved five broken links, one disallowed callout, and 25 Vale findings; the page now passes structural, template, and Vale checks.
-- Scoped lint repair for [[fisks-fleet]] and its five captain pages: all six pages now pass structural, template, and Vale checks; operational index summaries are synchronized.
-- Retconned [[Osset]] as Talon Vantyrus's original name; Talon Vantyrus is the alias he now uses as leader of [[Countless]].
-- Scoped lint repair for [[sentinels-of-the-eyrie]], [[Countless]], [[soul-incarnate]], [[fate-spinner]], and [[talon-skarn]]: 13 of 15 changed support pages now pass; eight owner links remain unresolved, and session pages were excluded.
-- Linted Uncertainty and its named crew scope: all 11 pages now pass structural, narration-only callout, and Vale checks; broader PC pages remain outside this sitting.
-- Manually consolidated redundant Grung lore: Gold Caste Serene now lives on the canonical creature owner, Twiceborn is integrated into the color and sealing lore, and the full *Half a Mile* draft is integrated as non-canon Aruhe source evidence.
-- Merged duplicate [[terror-bird|Terror-Birds]] into canonical [[terror-bird]], integrated the axebeak ecology, removed the duplicate owner, and left no redirect stub.
-- Linted and repaired [[terror-bird]]: cleared all structural and Vale findings.
-- Merged duplicate [[thornback|Thornbacks]] into canonical [[thornback]], integrated its blight ecology, and removed the duplicate owner page.
-- Linted and repaired [[bloodhawk]]: restored the canonical creature page from its archived source, removed the self-redirect, and cleared structural and Vale findings.
-- Linted and repaired [[Antheri]]: completed the faction template, normalized DM-facing prose, and cleared all scoped findings.
-- Linted and repaired [[Auralis]]: cleared four broken links and eight Vale prose findings.
-Merged duplicate Khlysty faction listings into [[khlysty-the-flock]]; the obsolete [[Khlysty]] file was removed, nine live links were retargeted, unique facts were integrated, and the canonical page has no agenda line.
-Retconned Catarina Da'Virelli to her Calveno NPC owner page; completed workshop work remains with Delmar, Crissdalynn, and Zort.
-Consolidated the redundant Fisk's Captains page into [[fisks-fleet]]; the old path now redirects to the canonical fleet page.
-Corrected [[fisks-fleet]] from DM annotations: removed production maintenance procedure, inactive-faction turn scaffolding, and the empty agenda; aligned the faction template and skill.
-Linted 726 live pages: 1,051 unresolved links dominate the backlog; 30 index omissions, 29 trust-field gaps, and six orphans remain.
-Corrected the campaign roster and encounter calibrations to Delmar, Crissdalynn, Jean-Claude, and Perrin.
-Removed an obsolete closed plot artifact and its archived narration source.
-- Linted and repaired Aruhe consumables: [[giants-guava]], [[ghost-plum]], [[redheart-berry]], [[rotheart]], and [[stonepear]] now pass structural and Vale checks; the Vale package exempts the mechanical D&D rarity term “Very Rare”.
-- Linted and repaired the Aruhe creature cluster: 20 creature pages now pass structural and Vale checks; minted [[the-teeth]] for the Reef Skull owner link. Fragmented tags remain a cross-linker handoff.
+- Completed the Tokage promotion as lint-clean place, faction, NPC, and lore pages.
+- Archived the raw source and recorded all 25 page destinations in the manifest.
+- Updated [[nona-black-jaw|Nona Black-Jaw]] with her Tokage connection to [[madam-hino|Madam Hino]]'s guarded identity.
 ## Active Threads
-- Session 12 preparation is filed under [[journal/sessions/shattered-sea/12/]] with the Aruhe route, two-grave orders, and Auralis manifestation beats.
+- Session 12 prep rebuilt ([[Session-12-00-The-Weight-of-Obedience]]): dawn Skarn fight, Celia and Oren ask for help finding [[nello-castri]], the [[turned-hollow]] shows the Grung dug under the wrong tree, and Skarn's second attempt meets Auralis's "CONSUME" at the Grove's door. Claim-response rule now on [[taking-on-aruhe]].
 - Session 11 remains open mid-fight at [[Aruhe - River Slack Basin]]: [[talon-skarn]] has spent one Legendary Resistance and the [[fate-spinner]] is still Held.
 - [[Jean-Claude Tabarnack]] is catatonic in Delmar's coat. Other inland survivors remain farther upriver; Spoke Ring prep was not reached.
 - Aruhe expedition pressure (Blight/Hinewai, wreck rescue, Taking law) now backed by COS situation and creature sheets on entity pages.

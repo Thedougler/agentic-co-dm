@@ -287,7 +287,7 @@
           "type": "structure"
         },
         {
-          "text": "Hands detailed math to homebrew-monsters-5e rather than bloating the NPC page with player-mastery features",
+          "text": "Hands detailed math to monster-design rather than bloating the NPC page with player-mastery features",
           "type": "process"
         }
       ]
@@ -308,6 +308,60 @@
         {
           "text": "Lets play decide among multiple conclusions",
           "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "sabine-face-voice-tells",
+      "prompt": "Improve wiki/entities/npc/sabine-corvo.md so she is memorable at the table: a face players will recognise next time, a distinct voice, and the secrets behind The Live Hold findable in how she looks and acts.",
+      "expected_output": "Retrieves Sabine's page, The Live Hold, Sparhold, Roka Sten, Roka's Hidden Ledger, and the item pages naming The Live Hold; keeps every established fact; builds face, voice, and tells for her secret (the trafficking link and bribed boundary scout); gets a person portrait and three sample lines from theatre-of-the-mind; states the truth plainly in the DM layer.",
+      "assertions": [
+        {
+          "text": "Working notes include a canon inventory with the-live-hold, sparhold, roka-sten, and rokas-hidden-ledger, plus a PC thread line for each PC page",
+          "type": "process"
+        },
+        {
+          "text": "Preserves established face details already on her page (leather apron, scarred forearms from creatures she has handled) in the new portrait",
+          "type": "content"
+        },
+        {
+          "text": "The portrait is third-person present tense with no 'you', carries at least one tell pointing at her secret as plain appearance, and names no secret",
+          "type": "quality"
+        },
+        {
+          "text": "The page has a Voice section with voice notes and three sample lines (ask, refusal, under pressure) that sound like one person",
+          "type": "structure"
+        },
+        {
+          "text": "At a Glance or Running states her secret by name (Roka Sten's live-capture trafficking and the bribed boundary scout) rather than hinting",
+          "type": "quality"
+        },
+        {
+          "text": "role is rival, patron, or contact, and [!narration] is the only callout",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "incidental-stew-seller",
+      "prompt": "The party stops at a stew stall in Sparhold's market for two minutes. Give me the stew seller.",
+      "expected_output": "An incidental-scale NPC: face, immediate want, one line, and an exit, with no biography, secret web, or combat block.",
+      "assertions": [
+        {
+          "text": "Chooses the Incidental prep scale and produces face, want, one line, and exit only",
+          "type": "process"
+        },
+        {
+          "text": "The face has two or three specific details and a sound or smell with a source, distinct from generic 'cheerful vendor'",
+          "type": "quality"
+        },
+        {
+          "text": "No backstory essay, villain front, secret network, or statblock is produced",
+          "type": "guardrail"
+        },
+        {
+          "text": "Any invented name is shown as a proposal before filing",
+          "type": "guardrail"
         }
       ]
     }

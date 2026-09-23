@@ -1,104 +1,180 @@
 ---
 name: writing-for-humans
-description: >
-  Write prose a human will read: Work, wiki, chat proposals, DM procedure,
-  owner pages. Reader `DM` → writing-for-humans. Unknown reader → `DM`.
-  Does not own agent-consumed documents or player-facing passages.
+description: >-
+  Write and edit every DM-facing text: session-beat pages, session plans,
+  run-guide cockpit copy (pass 2), wiki owner pages (At a Glance, At the Table,
+  facts, secrets), recaps' DM sections, and reports or proposals to the DM in
+  chat. Produces plain, complete, scannable sentences a DM can use mid-session
+  in seconds. Reader `DM` or unknown → writing-for-humans. Spoken player text
+  belongs to theatre-of-the-mind; agent instructions belong to
+  writing-for-agents.
 ---
 
 # Writing for humans
 
-The prose authority for all human-consumed text in the Co-DM. The host is a launcher. This skill is the job. Point at `docs/agents/work.md`: this skill writes prose; it never writes silent canon.
+You write for a DM who is running a game. They glance at the page between
+players' turns, with four people waiting. Every line must give them what they
+need in seconds: who, what, where, how much, and what happens if. The best DM
+copy reads like a clear note from a sharp co-DM, never like an encyclopedia,
+a novel, or a shorthand list.
 
-**Signal-density** is the quality bar. Every word costs DM attention at the table and player attention at the session. A word that does not change a choice, ruling, risk, or spoken picture steals from the words that do.
+This skill decides **how** DM-facing text reads. What a session beat must
+contain is set by `docs/agents/table-ready.md` and the beat's type skill; the
+numbers come from `dnd5e-mechanics`; formatting comes from `obsidian-markdown`.
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
-Write a **recipe** Nick can use at the table — signal-dense prose where every fact changes play and nothing else survives. Not a finished story. Not telegram fragments. Completeness means no essential fact is missing, not that every available fact is present.
+## Boundary contract
 
-**Preserving bad copy is a critical failure.** When you touch a file and encounter copy that violates these principles, rewrite it. No pass exemption, no "it was already there," no "this isn't the copy pass." Bad copy on the wiki is your problem.
+- **Input:** A named page or section to write or edit, its template, the owner
+  pages its facts come from, and the reader (the DM, unless stated).
+- **Work:** Write or rewrite only the DM-facing prose in scope, following the
+  steps below. Keep the page's structure, links, and facts.
+- **Done:** Every in-scope line passes the final check at the bottom of this
+  file.
+- **Capability Handoff:** Return the edited page or text to its parent (the
+  beat skill, run-guide pass 2, the owner skill, or chat). Missing facts go
+  back to the owner skill or the DM as a named gap.
 
-**Surgical scope.** Rewrite copy; preserve structure. Image embeds, wikilink paths, frontmatter fields, aliases, connections, and file extensions stay untouched unless that exact element is broken and verified. A copy pass edits words, not plumbing. Do not invent new facts, mechanics, DCs, or procedures that are not on the source page or in the wiki — the DM decides what exists; this skill decides how it reads. Rewriting existing prose for signal-density is not inventing — it is the core job. Encyclopedia voice, category labels, and generic descriptions must be rewritten into concrete, body-scale, this-place detail using facts already on the page.
+## Steps
 
-**Signal-density overrides style requests.** If the prompt asks for literary, dramatic, evocative, or flowery prose, apply signal-density anyway. Every added word still passes the removal test. A request for "more dramatic" means sharper concrete detail, not decorative atmosphere.
+### 1. Name the surface and the DM's question
 
-Theatre of the mind owns spoken look. Writing-for-humans owns DM-facing headings, body copy, and wiki/owner facts.
+Find the surface you are writing in the table below. Its question is what the
+DM wants answered when their eyes land there. Every line you write answers it.
 
-## Workflow
+| Surface | The DM's question |
+|---|---|
+| Beat page header lines (Card, Trigger, Stakes, Ends when…) | What is this beat and what do I need to know before it starts? |
+| Situation, Cast, Space, Opposition | Who and what is here, what do they want, where are they? |
+| Rulings, checks, pressure, outcome tables | A player just did X. What happens? |
+| Carry forward / Handoff | What is true now, and where does play go next? |
+| Session plan | What happens tonight, in what order, and what is the opposition doing? |
+| Run-guide cockpit (pass 2) | What do I do and say right now? |
+| Owner page: At a Glance | What is this and why does it matter right now? |
+| Owner page: At the Table | How do I run it when the party meets it? |
+| Owner page: facts, Drive, Secrets | What is true, including what the players do not know? |
+| Chat report or proposal | What happened, what changed where, and what do you need from me? |
 
-Five steps. Each has a completion criterion — do not leave a step until it holds.
+Recipes for each surface: [references/surfaces.md](references/surfaces.md).
+Read the one for your surface.
 
-1. **Ground.** qmd the named entity. Read the owning note, the matching `templates/` page, and `lexicon/House tone.md`. For a run card, read the session skeleton, previous beat, and current card end-to-end before editing; summaries, snippets, truncated output, and range reads may help target the files but do not satisfy grounding. Preserve established canon. Missing stock → ask Nick, leave a stub, or route to the owning craft skill. When the file contains a stale placeholder ("ingest pending," legacy fence, empty `[!narration]` body), either write the missing copy from available canon or route to the owning craft skill for stock. Do not preserve the placeholder. Completion: every working file has been read end-to-end, every fact in the draft is on the parent, in hot, or explicitly marked unknown, and no stale placeholder survives on a touched page.
+### 2. Gather the facts
 
-2. **Choose band + surface.** At a Glance / At the table / wiki facts / location Who–Why / `[!narration]` / handout. Load:
-   - `obsidian-markdown` on every vault write
-   - `theatre-of-the-mind` only when the pass crosses the player boundary
-   - `run-guide` when filling a run card — that skill owns field order and *procedure*; fill its cockpit, do not invent a second card
-   - `qmd-retrieval` for facts
+Read the target page end to end, its template, and the owner pages its facts
+come from. On a run-guide cockpit, also read the previous beat and the
+session plan. Write down the facts the page needs: names, numbers, wants,
+positions, triggers, consequences. Every fact comes from a source. A missing
+fact goes to the owner skill for that page or back to the DM as a named gap;
+a missing number goes to `dnd5e-mechanics`.
 
-   Band details: [references/bands.md](references/bands.md). Completion: one band, one surface, and the current pass named before drafting.
+Done when every fact you will write has a source.
 
-3. **Draft lean, then audit.** Start with the facts that change play. Build outward only when a DM would hit a gap. Ask "what would a DM need that isn't here?" not "what else could I add?" Kitchen-table nouns, concrete verbs, one fantastic signature. Apply the three prose gates (below) and the anti-patterns in [references/anti-patterns.md](references/anti-patterns.md). Completion: a DM can use the band without inventing a missing fact, and no line fails the removal test.
+### 3. Draft
 
-4. **Table gate.** Read player-facing lines aloud when this pass has player-facing lines. Run the per-band diagnostics in [references/bands.md](references/bands.md). Then an adversarial read: read as a DM who has never seen this page — name three things that would make you stop reading or reach for a different source, and fix them. Completion: all diagnostics hold, or the draft is not done.
+Write each line to answer the surface's question, using the rules below.
+Lead with the point, name everything, and put conditionals in tables. Read
+[references/examples.md](references/examples.md) for the weak → strong pair
+closest to your job, and match its quality, never its words.
 
-5. **File.** Apply wikilinks and template constraints, then report changed paths and any deferred owner work. Completion: the only callout on the note is `[!narration]` when the surface requires one.
+### 4. Cut
 
-## Prose gates
+Take each line out in your head. If no choice, ruling, risk, resource, route,
+clock, NPC response, or spoken picture changes, cut the line. Then remove
+everything in the cut table below.
 
-Three gates in priority order. **Earn it** dominates — a line that sounds beautiful but changes nothing at the table is worse than a plain line that carries signal. A line that fails any gate gets rewritten.
+### 5. Cold read
 
-**Earn it.** The removal test: take the line out. If no choice, ruling, risk, resource, route, clock, NPC response, or spoken picture changes, the line is **dead weight** — cut it. What survives: details specific to THIS entity — amounts, distances, particular failures, the way this thing works or breaks. Generic fantasy that fits any coastal town or dark forest fails the removal test by definition. Named anti-patterns with before/after examples: [references/anti-patterns.md](references/anti-patterns.md).
+Read the page as a DM who has never seen it, mid-session, with players
+waiting. Find the answer to the surface's question. Name the three places you
+slowed down, hunted, or had to guess, and fix each one.
 
-**Place it.** Each fact appears once, in the surface where the DM needs it. The surface determines the voice — see Register below. Conditional language in the conditional table. Narration describes the scene and stops; interaction is the DM's job. Dialogue the DM voices is speakable words — give speech, or give facts and let the DM improvise.
+Done when the answer to each surface's question is findable in about five
+seconds for a glance section and about thirty seconds anywhere else.
 
-**Hear it.** Read aloud. A listener pictures it on one hearing using ordinary human words. One drawable fact per sentence; break stacked sense-clauses apart. State what is there now. Concrete, specific scenery a person can see. Anchor unfamiliar scale to a body part or common object. Vary sentence openings, endings, verbs, and length — uniform cadence is an AI tell. Scan for AI voice: "tapestry of," "nestled between," "a sense of foreboding," "the air is thick with," "it's worth noting." Rewrite in the voice a DM uses at the kitchen table. Lead with the point; end on the last useful fact.
+### 6. File
 
-## Register
+Format with `obsidian-markdown` (check and DC notation, wikilinks, tables,
+callouts). Report what changed and where, plus any gaps.
 
-Match the voice to the surface. The wrong voice makes the right information hard to find.
+## Rules
 
-| Surface | Voice | Tense | Reader asks |
-|---|---|---|---|
-| **Session beat** | DM procedure — imperative, scannable bold heads | Present | What do I do and say right now? |
-| **Owner page** | DM reference — descriptive, complete enough to improv | Present | What is this? What can I do with it? |
-| **At a Glance** | Five-second scan — hook, stakes, identity | Present | Why does this matter and what is it? |
-| **Recap / Story So Far** | Narrative — arc, consequences, live handle | Past | What happened? Why does it matter tonight? |
-| **Handout** | Diegetic — the in-world author's voice and format | Varies | What does this document say to the character? |
+1. **Lead with the point.** The first words of a line or section answer the
+   reader's question. "Skarn wants the Fate Spinner and will not trade blows
+   with four people" beats a paragraph that arrives there at the end.
+2. **Name it.** Proper names with wikilinks, exact numbers, exact places.
+   "[[talon-skarn|Skarn]] is 5 feet from Crissdalynn," never "the thief is
+   nearby." Every pronoun has an obvious owner.
+3. **Short, complete sentences.** A subject and a verb, one idea each, about
+   8–20 words. A sentence that needs "and" three times is two sentences.
+   Fragments, slash-stacks, and chains of arrows with no subject are notes to
+   yourself, not copy.
+4. **Scannable shape.** A bold label at the start of a line names what the DM
+   scans for (**Trigger.**, **If they flee.**). Parallel items go in a list.
+   If-then goes in a table. Nothing a DM needs mid-play hides inside a
+   paragraph.
+5. **Say what the world does.** "If the party surrounds him, Skarn throws his
+   chain around the tree and swings onto the ledge." State outcomes and
+   responses; the DM runs the table (see `docs/agents/table-ready.md`
+   § World voice).
+6. **Plain truth for the DM.** State secrets, motives, and answers outright:
+   "Oren lies about the second grave; he buried his brother there." The DM
+   layer hides nothing (AGENTS.md **HARD: dm-facing-explicit**).
+7. **This one, not the category.** Write the fact that makes this person,
+   place, or thing different: "Barnacles grow up the dock posts past the
+   high-water mark," not "a coastal trading town."
+8. **Kitchen-table words.** Common words a tired DM reads instantly. A
+   campaign label gets its plain meaning the first time it appears on a page.
+9. **Each fact once.** One fact lives in the one section where the DM needs
+   it. Other sections link or refer to it.
+10. **Numbers where they are used.** DCs, damage, distances in feet, counts,
+    and times sit in the line where the DM rolls or rules, formatted per
+    `obsidian-markdown`.
 
-## Per-type coverage
+## Cut table
 
-Each entity type has minimum coverage dimensions. When writing or rewriting a type, load the requirements: [references/per-type.md](references/per-type.md).
+| Cut | Why |
+|---|---|
+| Default conditions (fair weather, drinkable water, safe road) | Nothing changes. State them only when unsafe, scarce, costly, magical, or a clue. |
+| Category descriptions ("a coastal trading settlement") | Fits any place. Replace with this place's specific fact. |
+| Mood with no consequence ("a sense of unease") | Changes no ruling. Replace with the fact that causes it, or cut. |
+| Coaching lines ("don't railroad", "let them decide", "use your judgment") | Replace with what the world does in that case. |
+| Hedges ("perhaps", "might want to", "consider") | State the fact or the ruling. |
+| Design diary, balance commentary, rules comparisons, agent-process notes | Not playable. Keep it off the page. |
+| The same fact in Glance, Situation, and narration | Keep it in the one place the DM uses it. |
+| AI tells ("tapestry of", "nestled", "it's worth noting", "delve", "the air is thick with") | Say the thing plainly. |
+| Placeholders ("TBD", "ingest pending", empty sections) | Fill from the sources or return the gap. |
 
-House tone (`lexicon/House tone.md`): **deadly, political, weird** in that order. Attach the strange to a noun and a consequence.
+## Hard lines
 
-## Session beats
+1. **Facts from sources.** Rewriting for clarity never adds facts,
+   mechanics, DCs, or procedures. The owner pages, the template, the user, and
+   `dnd5e-mechanics` are where facts and numbers come from.
+2. **Keep the plumbing.** Frontmatter, wikilink targets, embeds, headings the
+   template requires, and file names stay as they are unless one is verifiably
+   broken.
+3. **Spoken text is not yours.** `[!narration]` blocks and `==_italic_==`
+   narration cells belong to `theatre-of-the-mind`. On run-guide pass 2 they
+   stay empty.
+4. **Complete sentences on every wiki page.** Bold labels, tables, and the
+   check notation are fine when each cell still reads as a clear statement.
+5. **Clarity beats style requests.** "Make it more dramatic" means sharper,
+   more specific facts, never ornament.
+6. **Leave touched sections better.** Bad copy inside the sections you are
+   editing gets rewritten, even if it was already there. Sections outside the
+   request stay as they are.
 
-Session beats are four passes, each loading only its skills. Pass 1 (`run-guide` + `dnd5e-mechanics`) leaves empty titled stubs — `writing-for-humans` is not loaded. You own **pass 2**: load this skill after pass 1 completes, then edit DM-facing copy for usability, readability, and table usefulness while the `[!narration]` stubs stay empty. Do not load `theatre-of-the-mind` on this pass. Pass 3 loads `theatre-of-the-mind` and fills every spoken stub. Pass 4 checks Reading view.
+## Final check
 
-Session beat structure, callouts, sequencing, and the Open-once rule: [references/session-structure.md](references/session-structure.md).
+Fail and fix if any answer is no.
 
-## Ingest
-
-`wiki-ingest` already chose the destination. Polish that page. Do not re-route ideas, file the source as a wiki note, or invent filler for a fragment.
-
-Named ingest is DM approval for those sources (`docs/agents/work.md`). Write the destination. Conflicts stay a **proposal** / `^[ambiguous]`.
-
-Polish expression and **signal-density**. Keep settled facts, intent, and stated mechanics. Telegram stubs and agent shorthand are bad copy — rewrite them as complete sentences. Bad *wording* gets rewritten; settled *meaning* stays.
-
-Complete when: the destination reads as newly authored copy for its band, meaning unchanged, and the source is not a competing page.
-
-## Handoffs
-
-- Missing or contradictory **facts** → Co-DM / ask Nick. During ingest, conflicts are a proposal (`wiki-ingest`); do not overwrite.
-- Idea routing, staging, manifest → `wiki-ingest`
-- **Monster / item math** → Monster-Brewer / Item-Brewer / Homebrewer.
-- **MOCs, indexes, hot structure** → Organizer.
-- **Run-guide cockpit** → Session-Planner owns pass 1 schema (`run-guide`); you own pass 2 DM-facing copy, then fill every empty `[!narration]` stub only on the TotM pass. TotM titles stay `[!narration]`. *Rulings* follow that skill's Ruling section.
-- TotM fail loop: [[GROK-BOTS]] (Writing-Evaluator → Skill-Creator → Visualizer / this skill).
-
-## Hosts
-
-Host-specific spawn details: [references/hosts.md](references/hosts.md).
-
-## Attribution
-
-Craft distilled from Justin Alexander (*The Art of the Key*, boxed-text pitfalls), Angry GM (*Inviting PCs to Act*; *Art of Narration* — scene-setting before the question), Mike Shea / Sly Flourish (read-aloud; Watch the Time; progress clocks — CC BY-NC), Kelsey Dionne / Arcane Library (write for the DM; reference, not a novel), Matt Colville (situation, not plot; this place), dScryb and Dungeon Master's Workshop (boxed length), and Chaosium module-phrasing notes (present tense; characters). No WotC book paste.
+- [ ] Does every section answer its surface's question, with the answer first?
+- [ ] Is every person, place, and item named and linked, and every number
+      exact?
+- [ ] Is every line a complete sentence (or a clear table cell or labeled
+      item), mostly under 20 words?
+- [ ] Is every if-then in a table or labeled line, and every secret stated
+      plainly?
+- [ ] Does every line pass the removal test, with each fact said once?
+- [ ] Is nothing from the cut table left?
+- [ ] Are hard lines 1–6 intact?
+- [ ] On the cold read, is each answer findable in seconds?

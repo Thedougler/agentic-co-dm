@@ -12,6 +12,11 @@ type: item
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
+region: ""
+kind: magic
+rarity: uncommon
+attunement: false
+owner: "[[The Shelf Instrument Dealer]]"
 campaign: shattered-sea
 visibility: dm
 summary: "A minor magic scroll that carries a single Sending spell, a short message across any distance."

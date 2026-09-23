@@ -10,18 +10,15 @@ description: >
 # Unified History Ingest Router
 
 This is a thin router for **history sources only**. It does not replace `wiki-ingest` for documents.
-## Capability Boundary
+## Capability boundary
 
-**Input** — One explicit history target or an inferable source path, the user's original ingest objective, and only the bounded routing context needed to choose a destination owner. The router may inspect the command/path and relevant config, but does not load destination sessions, a full manifest, or unrelated vault artifacts.
+**Input.** History target or inferable source path, ingest objective.
 
-**Work** — `wiki-history-ingest` owns source classification and direct dispatch only. It preserves the destination skill's specialized ingest, approval, canon, and tracking procedure; it does not duplicate or partially execute that work.
+**Work.** Classify source and dispatch to the specialized history skill. No page writes, manifest, or tracking — the destination owner handles all of that.
 
-**Done** — A route closes only with an explicit destination dispatch, or with the single documented clarification for an ambiguous source. It must not claim pages, manifest/index/log/hot updates, validation, or QMD completion until the destination owner returns that evidence. A missing or invalid route ends with a specific blocker.
+**Done.** Explicit dispatch, or clarification for an ambiguous source. Missing/invalid route → blocker.
 
-**Capability Handoff** — Pass the selected history owner, source path/target, and parent objective to the specialized history skill. The destination owner returns selected evidence, page/tracking results, scoped validation, and any one-time QMD retrieval result; then this router returns that bounded result to the caller without re-running or re-finalizing it.
-### Minimum context projection
-
-For routing, the minimum sufficient projection is the explicit history target or source path, relevant config, route table, and parent objective. Deliberately omit destination sessions, the full manifest, unrelated vault artifacts, and inherited parent context. This router does not deepen retrieval: dispatch to the same specialized history owner, wait for its bounded evidence, then stop and return that result without re-running or re-finalizing it.
+**Handoff.** Destination skill returns pages/tracking/validation/QMD. This router passes that result through unchanged.
 
 
 ## Subcommands

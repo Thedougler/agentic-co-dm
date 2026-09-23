@@ -1,179 +1,225 @@
 ---
 name: place-design
 description: >-
-  Design engaging playable places for D&D 5.5e (2024 / SRD 5.2.1): settlements,
-  wilderness regions, dungeons and ruins, landmarks, encounter sites, and planar
-  or reality-warped locations. Use when creating location kernels, topology,
-  affordances, factions, information economies, pressure, location moves, or
-  node keys, or when filing those facts into a campaign location note. Prefer
-  situations over plots. Do not use for pure narration without structure (use
-  theatre-of-the-mind) or for monster/item math alone.
+  Design and file playable site places for D&D 5.5e (2024 / SRD 5.2.1):
+  dungeons and ruins, wilderness sites, landmarks, shops and buildings,
+  encounter sites, and planar or reality-warped locations. Use when creating or
+  improving a `type: place` page or any part of one: identity, canon weave,
+  secrets, hazards, items, topology, inhabitants, pressure, location moves, or
+  its spoken look. Hub for all places: cities go to city-design, regions to
+  region-design, narration alone to theatre-of-the-mind.
 ---
 
 # Place design
+
+A place is a **situation with topology**: something is happening in a space the
+party can move through, and the space is built from the campaign's own canon.
+Players meet it through its narration first, so everything the place holds (its
+secrets, items, hazards, people, and history) leaves a **tell** in the spoken
+look: a plain, ordinary-sounding detail a sharp player can pull on. The DM page
+states the truth behind every tell.
 
 File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Boundary contract
 
-### Input
+- **Input:** A named place (existing page or one to mint), the caller's
+  objective and brief, `wiki/templates/place.md`, and the vault canon the place
+  touches.
+- **Work:** The steps below, for this one place. Keep the caller's objective.
+- **Done:** Every item in `## Done` holds for the reported page path.
+- **Capability Handoff:** `kind: city` → `city-design`; region → `region-design`;
+  a deep dungeon graph → `dungeon-design`. A named person, creature, item,
+  faction, lore, or quest the place needs and the vault lacks → its owner skill
+  mints it first (AGENTS.md **HARD: entity-before-spoken**, **Focused
+  minting**). The spoken look → `theatre-of-the-mind` with the packet from
+  step 6. Each child returns its page path or prose and its completion result;
+  resume at the step that waited on it. A child that cannot finish returns a
+  named gap; leave the dependent work open and report the gap.
 
-Take a named place owner, the caller's objective, and the relevant brief,
-`wiki/templates/place.md`, and linked topology, faction, NPC, route, and
-session notes. When the owner is a place, enter this skill directly; select a
-more specific local subtype only when the owner is explicitly a city or region.
+## Page rules
 
-### Owner-specific Work
+These hold in every step.
 
-Work only the named place: preserve its canon, build the kernel and topology,
-fill the place template, and apply the affordance, clue, pressure, and
-consequence craft below. Keep the caller's objective intact.
+- **Canon.** User-said place facts file immediately on the live path. Invented
+  additions are shown to the DM as a proposal, marked as invention and citing
+  the `[[pages]]` they grow from, and are filed after the DM accepts. A
+  contradiction between sources is shown, never settled by you.
+- **Preserve.** Improving an existing page keeps every established detail;
+  fold each one into the section that now owns it.
+- **One callout.** `[!narration]` in Overview is the only callout on the page.
+  Truths, DCs, mechanics, and GM notes are plain complete sentences in the
+  section that owns the feature.
+- **Explicit DM layer** (AGENTS.md **HARD: dm-facing-explicit**). Every tell has
+  its truth on the page: who, what, why, and what is at stake, by name. When
+  canon is truly silent and you are not inventing, name the canon gap and who
+  decides it; a gap is never written as mystery ("something waits below").
+- **Canon gaps stay gaps.** A cardinal direction with no established neighbour
+  is written as a gap, never filled with an invented site stated as fact.
+- **Honest capabilities.** Flight, teleportation, burrowing, darkvision, and
+  social authority work here; give them costs, exposure, or limits with a
+  reason in the fiction.
+- **Process stays off the page.** The inventory, kernel, weave map, and packet
+  are working notes; the page carries only their facts.
 
-### Capability Handoff
+## Steps
 
-For an explicit city or region subtype, hand off directly to `city-design` or
-`region-design`; otherwise hand off only a local seam (such as a faction or
-narration) with a bounded packet: owner, parent objective, evidence, template
-seam, and requested output. Require return evidence naming the child
-artifact/section and completion result; the child does not re-plan the place.
-Resume the place draft only after the child result changes required place state
-or completion evidence and satisfies its owner contract; if it does not, leave
-dependent work open and report the missing evidence or specific blocker.
-### Minimum context projection
+[references/example.md](references/example.md) takes one place through every
+step; read it before step 3.
 
-For a place draft, carry only the named place owner, caller objective, relevant place brief/template, linked topology/faction/NPC/route/session evidence, and any child return packet needed for the current seam. Deliberately omit unrelated artifact groups, prior-child context not needed by this owner, and broad vault pages. Start with this projection; retrieve focused evidence for the same place only when the current evidence cannot support a required claim or topology decision, then stop when sufficient and resume this place draft with the bounded result. Never inherit a parent planner's broad context as place canon.
+### 1. Take the canon inventory
 
+Retrieve before inventing (constitution XII), using QMD per AGENTS.md § Vault
+retrieval (`.agents/skills/qmd`).
 
-### Done
+1. Read the place page if it exists, its region page, and every page that
+   links to it: run `grep -rliF "[[<name>" wiki/entities` once for the slug,
+   the title, and each alias (links use all three).
+2. Search QMD for the place name, its aliases, its region, and each neighbour.
+   Then search for what a place holds: people, factions, creatures, items,
+   hazards, lore, quests, and session events tied to it or to its owner.
+3. `qmd get` every hit you will use. Snippets are leads, not facts.
 
-Use the existing `## Done` checklist below. Completion is observable when the
-named place page path, kernel/topology/template checks, and any child return
-evidence are reported.
+Write the **canon inventory** in working notes, one line per owner page:
+`[[slug]]` · kind · the fact that could put it physically in this place.
 
-- **Work gate.** Show a proposal before writing invented or conditional
-  additions under `wiki/`; user-said canon is filed immediately.
-- **Canon filing.** User-said place facts file immediately on the live owner
-  path under constitution X. No separate acceptance wait is used. Invented or
-  conditional additions still carry `invention: true` (or proposal markers),
-  cite `[[pages]]`, show contradictions, and wait for the DM's decision before
-  filing.
-- **Canon gaps.** Missing cardinal neighbors stay explicit gaps. Do not invent a
-  named site to fill a direction and write it as established fact.
-- **Template lock.** Copy `wiki/templates/place.md` only. Fill Overview, At a
-  Glance, If the party, Who, What, Where, Why with substance — not empty headings.
-- **Narration.** Overview spoken look is `[!narration]` — immediately perceivable
-  only. No secrets, DCs, hidden history, or unearned names.
-- **Kernel before draft.** Write the five-sentence kernel (and identity framing)
-  before the page body.
-- **No single-lever trap.** Essential truths need ~three independent clue
-  vectors. Obstacles get sign, trigger, effect, counterplay, bypass, and
-  leverage — not one prescribed method or one check.
-- **Respect capabilities.** Do not arbitrarily negate flight, teleportation,
-  burrowing, darkvision, or social authority; give honest costs, exposure,
-  limits, or opportunities.
-- **Enemies-vanished.** The place must stay interesting without an encounter
-  quota — exploration, clues, routes, resources, factions, hazards, or change.
-- **No reset.** On return, preserve durable history; update what is alive.
-- **Hub deferral.** For `kind: city`, load `city-design` as primary. For a region
-  job, load `region-design` as primary.
+Done when every backlink and every relevant hit is either in the inventory or
+dropped with a one-line reason, and every inventory page was read in full.
 
-## Central principle
+### 2. Write the kernel
 
-A place is a **situation with topology**, not a lore essay or predetermined
-scene sequence. Prepare circumstances and actors; let players determine what
-happens. Spend prep on decisions the table will face.
+Five sentences, in working notes: **Function** (what the place is for),
+**Fantastic element**, **Present conflict**, **Player promise** (one or two of
+discovery, danger, intrigue, exploitation, wonder, refuge, transformation,
+mastery), and **Trajectory** (what happens if nobody intervenes). Take the
+fantastic element and the conflict from the inventory whenever it offers them.
 
-## Build the place
+### 3. Make it this place and no other
 
-1. **Kernel.** Five sentences — **Function**, **Fantastic element**, **Present
-   conflict**, **Player promise**, **Trajectory** (what if nobody intervenes).
-2. **References.** 2–4 recognizable handles; record inherit / transform / reject.
-3. **Promise.** One or two dominant player promises that decide what deserves
-   prep (discovery, danger, intrigue, exploitation, wonder, refuge,
-   transformation, mastery). Make them actionable.
-4. **3Fs + signatures.** Fantastic / Familiar / Functional; one productive
-   contradiction; three concrete actionable signature details.
-5. **Structure.** Nodes and edges before room prose. Cardinal NESW neighbors with
-   `~ days of travel` or explicit canon gaps. Prefer ≥2 approaches, a loop, a
-   bypass, a retreat, a route tradeoff, and reconnection after branches.
-6. **Affordances.** Verb test: each significant node invites a useful verb.
-   Prepare materials, relationships, constraints — not prescribed solutions.
-7. **Life, clues, pressure.** Faction sheets (Want/Fear/Method/Resources/Tell/
-   Offer/Response); ~three clue vectors per required secret; 2–4 location moves
-   with actor, trigger, visible result, new opportunity, lasting consequence.
+1. **Stock version.** Write one line naming the generic version: "a dockside
+   fish stall", "a sea cave", "a ruined watchtower". Everything that line
+   predicts is furniture.
+2. **Twist.** Push the fantastic element into the physical structure. The place
+   is built from, shaped by, or bent around a piece of campaign canon: the
+   creature's shed hide roofs the stalls, the flood left the chapel's bell in
+   the treetops, the faction's toll chain is also the only handrail.
+3. **Rule of the place.** One reliable thing that works differently here, its
+   limit or price, and one way players can test it before they depend on it.
+4. **Signatures.** Three concrete details players can act on: one spatial (a
+   shape to climb, cross, or hide in), one sensory with its source, and one
+   behavioural (a habit the people or creatures here keep).
+5. **Swap test.** Put a neighbour's name, or a generic label, in place of this
+   place's name. Every sentence that stays true is furniture; replace it with
+   something from the inventory, the twist, or the rule. Then write one
+   sentence contrasting this place with its linked neighbours. It goes into
+   At a Glance.
 
-## File the wiki note
+Done when the twist, rule, and signatures all fail the swap test, meaning each
+is true only here.
 
-Copy `wiki/templates/place.md`. Pass place jobs in `wiki/AGENTS.md` Layout — not
-heading-order match. Design with
-[location-skeleton](references/location-skeleton.md) and
-[node-key-and-affordances](references/node-key-and-affordances.md); file **facts**
-into the template. Kernel, 3Fs, promise lists, topology audit, and quality
-checklist stay in this skill (or process notes) — do not dump the skeleton onto
-the wiki page.
+### 4. Weave the canon into the ground
 
-| Design work | Place jobs |
+Read [references/weave.md](references/weave.md). Build the **weave map** in
+working notes: one row for every inventory entry and every invented element.
+
+| Element | Where | Tell | Truth | Use | Find |
+|---|---|---|---|---|---|
+| `[[slug]]` or invention | the node or feature it sits in, and why there | the durable perceivable sign it leaves | the DM answer, by name | the verb it invites and what that changes | how a closer look, check, or action turns the tell into the truth |
+
+Environmental storytelling lives here: for one or two past events the inventory
+supports, leave the evidence in the place and keep the explanation on the DM
+page, so players rebuild what happened from the traces.
+
+Done when every inventory entry has a filled row or a written reason it does
+not live here, every required secret has three clue vectors across different
+features, every hazard has sign, trigger, effect, counterplay, bypass, and
+leverage, and no Truth cell is vague.
+
+### 5. Build the structure and the life
+
+Read [references/topology-and-life.md](references/topology-and-life.md) for
+the node card, faction sheet, location moves, and pressure; read
+[references/rules-and-place-types.md](references/rules-and-place-types.md) for
+2024 mechanics and the adjuster for this place type.
+
+- **Topology.** Nodes and edges before prose. Aim for two or more approaches, a
+  loop, a bypass, a retreat, and a route tradeoff. Every edge changes a choice.
+- **Neighbours.** North, East, South, and West, each a wikilink with
+  `~n days of travel` (or hours, for a site inside a settlement), or a named
+  canon gap.
+- **Verb test.** Every significant node invites a verb that changes a route,
+  clue, resource, relationship, or pressure.
+- **Life.** Who is here now, doing what, wanting what; or the sign of who is
+  gone. Two to four location moves with actor, trigger, visible result, new
+  opportunity, and lasting consequence.
+- **Enemies vanished.** With every hostile removed, players still have things
+  to learn, use, alter, bargain over, navigate, or choose.
+
+Done when every significant node passes the verb test and every row of the
+weave map sits on a node.
+
+### 6. Hand the look to theatre-of-the-mind
+
+The Overview `[!narration]` is the players' first look and the surface that
+carries every tell. Build the **narration packet** as fragments, each with its
+source:
+
+- **Frame:** size and shape at body scale or travel time; ground, light, air.
+- **Focus:** the one image players will remember, usually the twist made
+  visible.
+- **Routes:** ways in, out, up, and down, in the directions the page states.
+- **Senses:** at least one beyond sight, each with its source.
+- **Tells:** every Tell cell from the weave map, written as the perceivable
+  fact only ("the bars of the end cage bend outward"), never its truth.
+- **Affordances:** at least one thing a visitor can use.
+- **Leave out:** every Truth, DC, and mechanic; names the players have not
+  earned; current inhabitants and events (they belong to Who and to scenes).
+
+Load `.agents/skills/theatre-of-the-mind`, portrait mode, place recipe, and
+give it the packet. Its place recipe owns how tells are written and how long
+the portrait runs.
+
+Done when the returned narration passes theatre-of-the-mind's final check and
+contains every tell. A missing tell goes back to theatre-of-the-mind named.
+
+### 7. File the page
+
+Copy `wiki/templates/place.md` and fill the place jobs from `wiki/AGENTS.md`
+Layout. Omit empty sections. Write complete sentences. Wikilink every owner
+page; numbers and stat blocks stay on their owner page ("resolve on
+[[owner]]").
+
+| Section | Carries |
 |---|---|
-| Identity image | After the title when art exists (`visual-aids`) |
-| Spoken look | Theatre of the mind `[!narration]` |
-| Situation now | What this place is; linked places it sits between |
-| Consequential moves | Player verbs that change the scene |
-| Presence / absence | Who is here, or the sign they are not |
-| Table objects | Features, flora, fauna, objects; wikilink owners |
-| Connections | Neighbors + how connected; name canon gaps |
-| Purpose | Why a party comes, stays, or cares |
+| Overview | The narration from step 6, nothing else |
+| At a Glance | What the place is now, what it sits between, the relative-identity sentence, the rule of the place, the current pressure and trajectory, and what skipping it costs |
+| If the party | Navigation verbs first (arrive, cross, climb, descend, leave by), then interaction verbs. Each entry: the changed situation, a 2024 check only when the outcome is uncertain, what they find, and what it costs |
+| Who | Who is here, how many, doing what, wanting what; location moves with trigger and visible result; or the sign of absence and who is not here |
+| What | Features, items, hazards, flora, and fauna. Each entry opens with its tell, quoting the narration phrase in italics, then states its truth and its find |
+| Where | **North:** / **East:** / **South:** / **West:** lines with wikilinks and travel time, or the named canon gap |
+| Why | Why a party comes, stays, returns, or cares |
 
-### Filing patterns
+The quoted phrase in What is the **narration key**: when a player pulls on a
+detail from the spoken look, the DM finds its truth in one glance.
 
-These patterns appear in the strongest vault pages and make the output
-immediately runnable at the table:
-
-- **Navigation first.** If the party opens with movement verbs (follow, walk
-  back, descend, climb, stay on ridge) before interaction verbs (search, take,
-  fish, investigate). The DM reads top-down at the table; exits and routes come
-  before activities.
-- **Skip entry.** Include what the party loses by bypassing: "Skip hub: lose
-  fire ring, mats, fruit, and split." A place that cannot be skipped still
-  states the cost of retreat.
-- **Relative identity.** At a Glance states what makes this place different from
-  its neighbors: "Unlike Print Braid's grass braid or Cutoff Lip's sleep-shelf,
-  identity is the radial fire and spoke choices." Neighbors already exist in the
-  vault — name the contrast.
-- **Owner-page deferral.** When a creature, hazard, or rule appears in If the
-  party, wikilink the owner page and say "resolve on owner page" rather than
-  restating its full mechanics. The owner page is the source of truth; the
-  place page says what triggers contact and what changes.
-- **Absence honesty.** Who section states who is **not** here when the place is
-  empty: "No campers now; prints show prior survivors." This is DM truth, not
-  narration — the DM needs to know at a glance whether to prep an encounter.
-
-**Where:** explicit **North:** / **East:** / **South:** / **West:** lines with
-wikilinks + travel-day distances where known, and explicit canon-gap wording
-where unknown. When reformatting an existing Where section into NESW, preserve
-every established detail — landmarks, route notes, environmental observations —
-by folding them into the appropriate cardinal entry or a closing note. Dropping
-content during a format conversion is worse than leaving the format loose.
-
-Rules vocabulary and type adjusters:
-[rules-and-place-types](references/rules-and-place-types.md). Living systems and
-pressure: [life-info-pressure](references/life-info-pressure.md).
-
-Read `references/place-craft.md` for promise detail, topology/clue/pressure
-craft, audit questions, and failure modes.
-
-## Handoffs
-
-Deep dungeon graphs → `dungeon-design`; narration → `theatre-of-the-mind`;
-pacing → `session-beats`; cities → `city-design`; regions → `region-design`;
-factions → `faction-design`; vault lookup → `.agents/skills/qmd`. Do not invent
-setting canon when the vault is silent — mark a stub or gap.
+Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
+and rerun until green.
 
 ## Done
 
-- Fills `wiki/templates/place.md`; empty sections omitted; skeleton not on-page.
-- Kernel + promise clear; topology has real choices; nodes pass the verb test.
-- Clues robust (~3 vectors); factions have goals and moves; pressure changes play.
-- Where has NESW + travel days or explicit canon gaps; invention labeled/cited/
-  proposed; wiki write only after accept.
-- Enemies-vanished test passes; consequences persist on return.
-- DM recovers actionable facts in under 30 seconds.
+- The canon inventory is complete; every entry is woven onto a node or dropped
+  with a reason.
+- The twist, rule of the place, and signatures fail the swap test.
+- Every secret, item, hazard, trace, and presence has a tell in the narration
+  and, in What or If the party, its truth and its find. Required secrets have
+  three clue vectors.
+- The narration came from theatre-of-the-mind, passes its final check, and
+  holds no truth, DC, or unearned name; its tells read as ordinary description.
+- Topology offers real choices; every significant node passes the verb test;
+  Where has four cardinal lines with travel time or named gaps.
+- The enemies-vanished test passes; a revisited place keeps its history.
+- `[!narration]` is the only callout; the DM layer names who, what, and why.
+- Missing owners were minted first; invention was proposed and accepted before
+  filing; user-said canon is filed.
+- `wiki lint <path>` is green, and one done-summary names the page and what
+  changed.

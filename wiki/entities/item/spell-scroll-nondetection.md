@@ -14,6 +14,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: unknown
+kind: consumable
+rarity: uncommon
+attunement: false
+owner: ""
 summary: "A scroll holding a single casting of Nondetection, hiding a target from divination magic for 8 hours."
 provenance:
   extracted: 0.85

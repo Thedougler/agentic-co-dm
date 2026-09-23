@@ -16,6 +16,8 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
+role: rival
+faction: none
 location: "[[Stillmere]]"
 visibility: dm
 summary: "Ysolde Sallow's great-uncle. Stillmere's oldest duelist, who still treats the proving ground as a contest."
@@ -79,6 +81,5 @@ A stranger's blade that finally works. Ysolde has already named that fear: she i
 | [[Stillmere]] | Proving ground. Fatal wounds are not fatal, but they still hurt and nothing heals. |
 | [[otel-karn]] | The island. Nobody there has ever gone a widow. |
 
-## Combat
 
 He duels at [[Stillmere]]. No owner sheet is on file. Do not invent Armor Class or hit points. The place itself is the rule: wounds land and stay.

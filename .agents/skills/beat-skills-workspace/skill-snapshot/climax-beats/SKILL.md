@@ -1,0 +1,113 @@
+---
+name: climax-beats
+description: >-
+  Write, edit, or create content for a Climax. The highest-stakes confrontation
+  the middle made inevitable; threads harvested. Cards, completion test, and
+  fill procedure for Climax beats.
+---
+
+# Climax beats
+
+## Gates
+
+Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
+
+## Copy-start
+
+Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: climax`, `category: journal`. Keep that draft's jobs. Pass is those jobs plus readable scan. Do not rewrite this beat into a session-plan cockpit.
+
+## Boundary contract
+
+- **Input:** A named Climax beat, its accepted draft/template, the preceding
+  carry-forward or entry state, the matching card, all live threads to harvest,
+  and preparation/owner evidence.
+- **Work:** Choose one Climax card and preserve the earned highest-stakes
+  confrontation, completion test, thread harvest, player agency, applicable
+  mechanics, and `theatre-of-the-mind` ownership of spoken text.
+- **Done:** The existing completion test passes: the highest-stakes
+  confrontation is resolved and threads are harvested. Return the resolved
+  costs, final thread states, and continuity change as downstream evidence.
+- **Capability Handoff:** Return only this Climax's completed card/section and
+  carry-forward to `Resolution`. Its writer may proceed when the changed world,
+  paid costs, and scope to echo are explicit; otherwise return the specific
+  missing evidence.
+
+
+## Purpose
+
+A Climax is the highest-stakes confrontation the middle made inevitable — the
+**earned convergence**. It **harvests** live threads: Developments built
+capability, Cliffhangers tested it under cost, and player choices narrowed the
+remaining paths until one confrontation carries the session's central cost. The
+party arrives equipped by what the middle taught them; the Climax asks whether
+they can use it. By this point, early Cliffhangers have taught the party their
+strengths and weaknesses, middle Developments have armed them with knowledge
+and alliances, and the opposition has escalated through the arc's scaling
+ladder — the Climax is where all of that pays off or falls short.
+
+A final battle is one shape among many. The Climax may be a revelation,
+sacrifice, desperate gambit, reckoning, siege, negotiation, catastrophe, trial,
+or betrayal cascade. Call it when players commit, not when the chart says so.
+
+When the party earned the Climax through negotiation, exposure, or diplomacy,
+that resolution is the Climax — do not manufacture a new battle to replace it.
+A negotiated peace under pressure, a conspiracy exposed at personal cost, or a
+sacrifice that ends a conflict without combat are all valid highest-stakes
+confrontations. Default to the shape the fiction earned, not to combat.
+
+## Completion test
+
+Highest-stakes confrontation resolved; threads harvested.
+
+## How to fill a Climax
+
+1. **Read the entry state.** Read the preceding beat's carry-forward as your
+   opening. The Climax inherits the accumulated world-state of every prior
+   beat — positions, knowledge, alliances, resources, injuries, and
+   preparation states the party established. The penultimate beat's continuity
+   change is the Climax's trigger.
+
+2. **Choose the card.** Read [references/climax-cards.md](references/climax-cards.md).
+   Pick by fiction trigger.
+
+3. **Harvest threads.** Name the live threads this Climax harvests explicitly —
+   what each Development revealed, what each Cliffhanger tested, and what
+   preparation states the party established. The party's prior choices
+   (alliances built, intelligence gathered, precautions taken) create the
+   Climax's entry conditions and available approaches. Harvesting no middle
+   threads is spectacle without payoff; harvesting an abandoned thread is a
+   railroad.
+
+4. **Write the situation.** Name trigger, actors, stakes, visible information,
+   and at least two viable player responses. Theatre of the mind owns
+   `[!narration]` for spoken text.
+
+5. **Prepare the resolution handoff.** Only a Resolution follows a Climax.
+   State the **carry-forward**: what the confrontation resolved, what it cost
+   (lives, resources, relationships, positions permanently changed), which
+   threads reached their final state, and the **continuity change** — the
+   observable world-state the Resolution's opening inherits. Name the scope
+   the Resolution must echo. The Resolution's writer reads this carry-forward
+   as the aftermath they show — a handoff that drops a cost or ignores a
+   resolved thread produces a Resolution disconnected from what the players
+   just lived through.
+
+6. **Name what happens if they ignore, fail, or redirect.** Ignoring lets
+   the highest-stakes pressure land without them. Failing resolves the
+   confrontation against the party. Redirecting creates the new highest-stakes
+   confrontation.
+
+## Named seams
+
+- **Chart question** → load `session-beats` for position, polarity, threads,
+  or transition only.
+- **How the Scene Resolves names a type** → load that type skill for the
+  handoff only.
+- **A named entity (vehicle, spell, faction, lore, quest, city, region)** →
+  hand off to wiki-kind owner.
+
+Opening another type-card catalog for any other reason is a defect. Chart
+assembly, polarity rules, time budget, thread planting, escalation, recompute,
+and the session plan belong to `session-beats`. Spoken player text belongs to
+theatre of the mind.
+

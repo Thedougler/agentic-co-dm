@@ -35,11 +35,7 @@ tier: supporting
 > [!narration] Narration
 > A single folded sheet, company seal pressed sharp into the wax. The text certifies a mid-shelf pressure trial passed, depth and hull tolerances both signed off, dated three weeks back. The signatures read clean. The ink still sits a shade too dark for paper that's supposed to have spent three weeks folded in a damp boardinghouse.
 
-Plot item. No magical properties.
-
-## At a Glance
-
-The certificate claims that [[sunkline-company|Sunkline Company]] passed a mid-shelf pressure trial it never ran. It is also called the Last Berth False Log and is hidden under a loose floorboard at [[fathomrush|Fathomrush]]'s Last Berth.
+Plot item (no mechanical effect). The certificate claims that [[sunkline-company|Sunkline Company]] passed a mid-shelf pressure trial it never ran. It is also called the Last Berth False Log and is hidden under a loose floorboard at [[fathomrush|Fathomrush]]'s Last Berth.
 
 ## At the Table
 

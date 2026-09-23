@@ -1,0 +1,42 @@
+[
+ [
+  "bloodhawk-portrait-related-art",
+  "Rewrite the `[!narration]` cold portrait on wiki/entities/creature/bloodhawk.md. The current one narrates a scene instead of describing the creature.",
+  [
+   "Opened at least one bloodhawk image file with the vision tool",
+   "Found and opened bloodhawk-of-aruhe.jpg, which is related by name but not embedded on bloodhawk.md",
+   "Narration carries a pixel-only identity detail (four wings, crimson/red plumage, or toothed beak)",
+   "Portrait form: third person, present tense, no party/'you', no current event",
+   "No mechanics or stat-block words in the narration",
+   "An art note (images seen or none found) is returned outside the narration",
+   "No em dashes in the narration"
+  ]
+ ],
+ [
+  "otter-hole-initial-narration",
+  "Rewrite the `Initial Narration` on wiki/journal/sessions/shattered-sea/11/Session-11-05-Otter-Hole.md. The current one reads like a grid inventory of distances instead of a scene the DM can speak.",
+  [
+   "Opened the embedded aruhe-river-slack-basin.jpg",
+   "Found and opened at least one related unembedded image (session-11-05-otter-hole-base.jpg or aruhe-river-otter-of-aruhe.jpg)",
+   "Second person, present tense, with motion and a live edge at the end",
+   "No PC action, feeling, or bodily reaction stated",
+   "At most two numeric foot distances",
+   "Length between 80 and 220 words",
+   "An art note is returned outside the narration",
+   "No em dashes in the narration"
+  ]
+ ],
+ [
+  "hinewai-first-look",
+  "Write the NPC first look for the party's first sighting of Hinewai in her woman-in-the-woods form: she stands on a game trail in the rainforest near the Memorial Grove, at night, in the rain. She has not spoken yet. Source: wiki/entities/npc/Hinewai.md.",
+  [
+   "Opened the woman-in-the-woods overview or the reference sheet image",
+   "Narration uses pixel details of the woman form (pointed ears, glowing amber eyes, shredded dark shroud, beckoning hand)",
+   "No blight-form features used for her look",
+   "Her name, lich/undead nature, and secrets stay out of the narration",
+   "Second person, present tense, 2-4 sentences plus at most one line of speech (she has not spoken, so none expected)",
+   "An art note is returned outside the narration",
+   "No em dashes in the narration"
+  ]
+ ]
+]

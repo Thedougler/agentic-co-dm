@@ -13,6 +13,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
+region: "le-paludi"
 visibility: dm
 kind: magic
 rarity: common
@@ -35,7 +36,6 @@ tier: supporting
 
 One stone of a paired *sending* stone set. Speaking to this stone reaches only its twin, held by [[nona-black-jaw]]. No charges, range limits, or activation rules are recorded on this page beyond that narrative pairing.
 
-## At a Glance
 
 [[perrin-black-jaw|Perrin]] holds this stone; Nona holds its twin. She gave it in exchange for a favor whose terms remain unheard — this stone is how she will collect.
 

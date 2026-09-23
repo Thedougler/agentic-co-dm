@@ -1,159 +1,196 @@
 # Development cards
 
-Select a card because the fiction calls for it, not to fill an empty slot. Every
-card names a trigger, stakes, and player options; adjust it to the current state.
+Card shapes follow Mike Pondsmith, *Scripting the Game* (R. Talsorian, 2020;
+transcription at `RTG-Scripting-the-Game-v1.2-agent-readable (2).md` in the repo
+root), paraphrased for 5e play. A Development moves the plot without physical
+conflict — the **bump** that sets the direction of action until the next
+Development (Gandalf telling Frodo about the Ring; Ilsa walking into Rick's).
+Pick the card the fiction calls for:
 
-- Which active thread needs a new facet revealed? A Development advances a
-  mystery, shifts a faction clock, or makes an approaching Cliffhanger legible.
-- Which card builds capability toward the Climax? Developments can chain —
-  meeting the mentor leads to learning the weakness leads to discovering the
-  ally — each adding what players need to face the harvest.
-- When Developments chain, break them with Cliffhangers so knowledge is tested
-  under cost before the next piece arrives.
+- Which live thread needs its next facet? A Development advances a mystery,
+  shifts a faction, arms the party, or makes the next Cliffhanger's stakes
+  legible.
+- What did the last Cliffhanger change? Won contests open options (Advantage
+  Revealed, Alliance, Clue from the bodies); lost ones open constraints or an
+  opposition move (Retreat, Hesitation, Personal Stake, Second Chance).
+- Developments chain — meeting the mentor leads to training leads to the
+  truth about your father. Break chains with Cliffhangers so each piece is
+  tested before the next arrives.
+
+Each card: **Shape** — what the beat is; **Build** — what the page must
+contain beyond the table-ready anatomy; **Pairs** — natural neighbours;
+**Fair play** — how the card keeps the players' grip on the outcome.
 
 ## Warning
-- **Use when:** Evidence of impending danger can change a decision before impact. Unlike Foreshadowing (which gives only vague hints), a Warning is always explicit: it names the nature of the threat.
-- **Do:** Trigger it with a credible sign or messenger; show what is at stake and what preparation can alter; offer heed, verify, prepare, warn others, or ignore.
-- **Agency note:** Make warnings actionable, not compulsory; ignoring one produces grounded consequences.
+- **Shape:** The party is told of something coming, or a threat they did not know about — a voice in the night, a note under the door, an ally arriving breathless. A Warning is explicit: it names the threat. (Foreshadowing only hints.)
+- **Build:** The messenger or sign (owner page); exactly what it says; what is coming, when, and in what strength; what preparation changes.
+- **Pairs:** Before Ambush, Pursuit, or Battle — the Cliffhanger tests whether it was heeded.
+- **Fair play:** Heeding it gives a concrete edge in the next contest; ignoring it has a stated cost.
 
 ## Hidden Weakness
-- **Use when:** A threat has a discoverable limitation that opens alternatives to brute force.
-- **Do:** Trigger it through observation, experiment, or a source; show the stakes of learning it and ways to exploit it; offer test, share, prepare, bypass, or attack.
-- **Agency note:** Do not hide the only answer behind one roll; let players find, invent, or reject approaches with consequences.
+- **Shape:** The party learns a previously unknown weakness of the opposition: physical, a hidden fear, a weapon or tool that works against it, or a traitor in its camp. Always described clearly — "a hand-sized gap in the dragon's scales under the left wing; one arrow there kills it."
+- **Build:** The weakness in exact terms, with its mechanical effect (the attack roll, the DC, the damage, the condition); how the party learns it; what exploiting it requires or risks.
+- **Pairs:** Before the Cliffhanger or Climax where it pays off; after Monster or Battle.
+- **Fair play:** The weakness is real and works as described when used.
 
 ## Revelation
-- **Use when:** New truth changes the meaning of an active situation. A Revelation reframes what is known — it does not answer every question. If the revelation would collapse the next Cliffhanger into an errand (the party already knows who, why, where, and how), it resolves too much. Reveal the facet that changes direction; leave what the Cliffhanger will test.
-- **Do:** Trigger it with evidence; show who benefits, what is at stake, and at least two decisions it enables; offer verify, confront, conceal, ally, or exploit.
-- **Agency note:** Reveal information, not a prescribed response; keep uncertainty where evidence warrants it.
+- **Shape:** The whole story, in one shot — not "someone is buying up the city's alchemical silver" but who, with whom, and why. Use it when the players should know everything and knowing it does not decide the contest ahead: the story, not the solution. Knowing the villain's plan still leaves his guards, his fortress, and his clock.
+- **Build:** The full truth as DM-facing fact; the source that delivers it and why they can; what the truth changes about the next move; which contest still stands between the party and acting on it.
+- **Pairs:** After Secret Meeting or Villain's Monologue; before Race, Chase, or the Climax.
+- **Fair play:** The solution to the next contest stays on the table for the party to earn.
 
 ## Advantage Revealed
-- **Use when:** Players learn they possess a resource, position, ally, or leverage they can use.
-- **Do:** Trigger it when evidence makes the advantage credible; show its stakes, limits, and costs; offer spend, save, share, trade, or keep it hidden.
-- **Agency note:** Do not grant an automatic win; players decide whether and how to turn it into change.
+- **Shape:** The party discovers an ability, tool, weapon, or knack they already had — the plain sword that is magic in disguise, a power that wakes under stress, a technique that seemed useless.
+- **Build:** The advantage with exact rules (item owner page via `item-design`, or feature text); how it reveals itself; its limits or cost; where it will matter.
+- **Pairs:** After a Cliffhanger the party barely survived; before the contest it tips.
+- **Fair play:** The party decides when and how to spend it.
 
 ## Clue
-- **Use when:** Information can open a route, identify an actor, or alter priorities.
-- **Do:** Trigger it through an observable source; show why it matters and what is at stake; offer follow, test, combine, publish, sell, or ignore it.
-- **Agency note:** Provide redundant or varied paths to important truths; a missed clue changes options but does not end play.
+- **Shape:** An ambiguous Revelation: one piece of the puzzle, not the picture. "Someone is buying up the city's alchemical silver."
+- **Build:** The clue as found; the full truth it points to (DM layer); where it leads next; two other routes to the same conclusion when the session depends on it.
+- **Pairs:** After Skirmish, Murder, or Discovery; before Race or Chase.
+- **Fair play:** Every clue is true and leads somewhere a player could follow.
 
 ## Retreat
-- **Use when:** Withdrawal can preserve lives, resources, or a better position.
-- **Pairs with:** Usually follows a Cliffhanger the party lost or is losing — the opposition breaks off its attack, retreats under cover, or the tide turns for unknown reasons.
-- **Do:** Trigger it when pressure makes staying costly; show what is lost and what can be saved; offer withdraw, delay, bargain, cover an ally, or risk staying.
-- **Agency note:** Treat retreat as a real success condition with consequences, not cowardice or a forced reset.
+- **Shape:** Usually after a Cliffhanger: the opposition suddenly breaks off and falls back to its stronghold. Decide the real reason — a setback or betrayal in their camp, or the fight no longer serves their purpose. They cover their withdrawal with a delaying tactic so the party cannot follow at once: a landslide, released beasts, a third party crossing between them.
+- **Build:** The true reason (DM layer) and the tell the party can read; the delaying tactic with its ruling; where they retreat to; what the break-off hands the party (breathing room, a dropped clue, a wounded prisoner).
+- **Pairs:** After a Cliffhanger the party was losing or winning; before Clue, Hidden Weakness, or Rescuers.
+- **Fair play:** The reason is discoverable, and the delaying tactic can be beaten later.
 
 ## Hesitation
-- **Use when:** A person or faction pauses because competing motives make action uncertain.
-- **Do:** Trigger it with a credible conflict; show stakes and what could tip the choice; offer persuade, exploit, reassure, pressure, wait, or act around them.
-- **Agency note:** Do not freeze an NPC to preserve a plot; response follows player pressure and established interests.
+- **Shape:** Like Retreat, the opposition breaks off without warning — but stays on the field and offers a truce. "You are better than I expected. Perhaps we can work together." If the party agrees, the villain betrays them at the earliest good opportunity.
+- **Build:** The offer's terms; what the villain truly intends and when the knife comes; the tell that betrays the intent; what the truce gives the party meanwhile.
+- **Pairs:** After Battle or Duel; before Betrayal or Strange Bedfellows.
+- **Fair play:** The tell is on the page; a wary party can use the truce against its maker.
 
 ## Mistaken Identity
-- **Use when:** Someone is plausibly treated as another person, faction, or role.
-- **Do:** Trigger it with evidence and social cost; show who gains or suffers and how the error can be used or corrected; offer play along, reveal, investigate, flee, or redirect.
-- **Agency note:** Do not dictate a player's identity or consent; let players choose whether to exploit or end the mistake.
+- **Shape:** A PC is mistaken for someone else — always someone important, hero or villain. "Aren't you the King? The Hero? My old lover?" The mistake brings problems, advantages, and information that spawn further Developments: the real hero's nemesis attacks; the real hero's love turns up with a secret. Use it carefully; it is dynamite.
+- **Build:** Who they are taken for (owner page) and why the resemblance holds; who acts on the mistake tonight and how; the follow-on Developments it seeds.
+- **Pairs:** Strong as Play a Development in a Hook; before Vengeance, Romance, or Confrontation.
+- **Fair play:** The player decides whether to play along, correct it, or exploit it.
 
-## Villain Monologue
-- **Use when:** An antagonist has reason to explain terms, motives, or a threat in the players' presence.
-- **Do:** Trigger it through leverage or a pause in action; show what information and stakes are exposed; offer listen, interrupt, challenge, bargain, attack, or use the time.
-- **Agency note:** Keep it interruptible and fallible; speech creates openings, not immunity or forced agreement.
+## Villain's Monologue
+- **Shape:** The opposition's leader, in a talkative mood, brags about the Master Plan — the goal and how it will be done. Played only when the party is in the villain's power: after a Kidnapping, a sprung Trap, or a Confrontation they lost. The villain thinks it will not matter.
+- **Build:** The plan as the villain tells it, including the true parts and the one boast that is wrong; what the villain intends to do with the party next; the opening the monologue gives them (time, a guard's attention, a loosened bond).
+- **Pairs:** After Kidnapped, a sprung Trap, or a lost Confrontation; before an escape Cliffhanger.
+- **Fair play:** Every word the villain says is usable, and interrupting has a ruling.
 
 ## Secret Meeting
-- **Use when:** An unseen negotiation or alliance can change faction intent.
-- **Pairs with:** Usually played before a Clue, Revelation, or Alliance Development — what the meeting decided becomes the information those Developments reveal. A Cliffhanger (Ambush, Skirmish) can interrupt the meeting.
-- **Do:** Trigger it when actors have motive and privacy; show stakes and clues players can discover; offer attend, spy, infiltrate, expose, interrupt, or let it happen.
-- **Agency note:** A secret is not a cutscene; make detection and intervention possible and let terms respond to play.
+- **Shape:** A clandestine meeting where the party can gain allies or information. Most of the play is in setting it up, getting there unseen, and the meeting itself. Usually comes before a Clue, Revelation, or Alliance; an Ambush can break it up.
+- **Build:** Who calls it and why secretly; the place and how to reach it unobserved; who is watching; what each attendee offers and wants; the interruption if it comes.
+- **Pairs:** Strong as Play a Development in a Hook; before Clue, Revelation, or Alliance; interrupted by Ambush.
+- **Fair play:** Getting there unseen, being followed, and walking out each have rulings.
 
 ## Personal Stake
-- **Use when:** A conflict touches a character's bond, vow, identity, or cost.
-- **Do:** Trigger it with established history; show what can be gained or lost and meaningful approaches; offer protect, confront, sacrifice, refuse, recruit, or redefine the goal.
-- **Agency note:** Present pressure without assigning a player's feelings or choice; the player authors the response.
+- **Shape:** The ante goes up by making it personal: a PC is poisoned and the antidote is the villain's; a friend is taken; the party learns it was set up and only the real culprit clears them.
+- **Build:** The stake, with its mechanics (the poison's timetable and effect, the captive's schedule); the tie to the PC (their owner page, table aim); the route to resolving it.
+- **Pairs:** After Cliffhanger losses; before Race or the Climax.
+- **Fair play:** Agree PC-defining stakes within the table's aim; the player chooses the character's response.
 
 ## Second Chance
-- **Use when:** A rare opportunity could avert a failure at a meaningful price.
-- **Do:** Trigger it through established resources or a credible offer; show the stakes and attached cost or danger; offer accept, refuse, negotiate, or seek a harder alternative.
-- **Agency note:** Make it rare, costly, and player-facing; never erase failure or its consequences for convenience.
+- **Shape:** Another crack at the problem after a major setback — the party was unprepared or missed the clues. New allies bring new information, a new clue surfaces, or a comrade thought dead returns. Powerful; use it with extreme care to save a disintegrating game.
+- **Build:** What the setback cost; the new source and why it exists in the fiction; what it offers and what it charges.
+- **Pairs:** After a lost Cliffhanger; before a retry Cliffhanger.
+- **Fair play:** The setback's costs stay paid; the Second Chance opens a new route rather than rewinding.
 
 ## Gain Mastery
-- **Use when:** Practice, insight, or sacrifice earns a new capability or reliable edge.
-- **Do:** Trigger it through demonstrated learning; show limits, stakes, and uses; offer apply now, train further, teach, trade, or reserve it.
-- **Agency note:** Let mastery emerge from play and choices; it opens options, not guaranteed outcomes.
+- **Shape:** A period of learning — weeks with a master, study, long practice — compressed into a montage of high spots. At the end the party holds the skill needed to win, if they use it wisely.
+- **Build:** The teacher (owner page) and their price; the montage in three high spots, each with a choice or check; the mastery's exact rules; where it will matter.
+- **Pairs:** After Hidden Weakness or Advantage Revealed; before the Climax.
+- **Fair play:** The mastery's limits are stated, and the party chooses when to spend it.
 
 ## Alliance
-- **Use when:** Actors with compatible interests can cooperate against a shared problem.
-- **Do:** Trigger it with mutual leverage; state terms, stakes, trust limits, and exit conditions; offer ally, demand proof, set terms, use temporary cooperation, or decline.
-- **Agency note:** Keep allies autonomous and interests active; players may renegotiate or abandon the alliance.
+- **Shape:** Outside help — an ancient hero takes up the cause, a town rises in support. Alliances always add manpower: powerful allies, not enough to win on their own.
+- **Build:** Who allies (owner pages) and why; their numbers and what they can do in the next contest; their terms and limits; what breaks the alliance.
+- **Pairs:** After Secret Meeting or Strange Bedfellows; before Battle or the Climax.
+- **Fair play:** Allies act on their own interests; the party sets and renegotiates terms.
 
 ## Betrayal
-- **Use when:** An ally's conflicting interest can turn trust into danger.
-- **Do:** Trigger it with motive and an observable tell; show stakes and chances to test, prevent, expose, or exploit it; offer confront, watch, bargain, turn the tables, or accept risk.
-- **Agency note:** Betrayal must be detectable and consequential, not a secret GM switch; surprise cannot deny fair clues.
+- **Shape:** The party is betrayed — by an ally, a lover, or another actor, but never by a Guide (the trustworthy guide stays trustworthy). The betrayer reveals the plans, sets up an ambush, drugs the party for capture, hands a hostage to the villain, or steals the weapon they need.
+- **Build:** The betrayer (owner page), their motive, and the act; the tells planted in earlier beats; the moment the party can stop them in the act or catch them soon after.
+- **Pairs:** After Alliance or Romance; before Chase, Ambush, or Confrontation.
+- **Fair play:** The party always has a chance to stop the betrayer in the act or catch them soon after.
 
 ## Sabotage
-- **Use when:** Someone damages a plan, resource, route, or tool from within or nearby.
-- **Do:** Trigger it through motive and access; show signs, stakes, and detection or repair options; offer inspect, secure, repair, expose, counter-sabotage, or proceed damaged.
-- **Agency note:** Give a fair chance to notice or prevent it; do not reveal sabotage only to force the next prepared scene.
+- **Shape:** An artifact, device, or vehicle the party relies on is disabled.
+- **Build:** What is sabotaged and its exact effect; who did it and how they got access; the signs; the check or tools to detect and repair it, and the time repair takes.
+- **Pairs:** Before Dogfight, Race, or Pursuit; after Betrayal.
+- **Fair play:** The party has a chance to detect and avert or repair it.
 
 ## Foreshadowing
-- **Use when:** A future danger, opportunity, or relationship deserves meaningful early signs.
-- **Do:** Trigger it with concrete recurring evidence; show why noticing matters and what is at stake; offer investigate, prepare, warn, exploit, or dismiss it.
-- **Agency note:** Foreshadowing is not a promise that the forecast must occur; players can prevent, redirect, or reinterpret it.
+- **Shape:** Like a Warning, but hazy — "watch the skies" instead of "flying saucers attack at dawn." Dreams, omens, a non-threatening meeting with the villain, a stranger's odd remark. Play it well before the event so suspense can build.
+- **Build:** The omen as perceived; what it truly points to (DM layer); the later beat where it pays off, at least one beat away.
+- **Pairs:** Early in the session; pays off in a later Cliffhanger or the Climax.
+- **Fair play:** The payoff matches the omen once seen in hindsight.
 
 ## Not What It Seems
-- **Use when:** A credible surface explanation hides a more useful or dangerous truth.
-- **Do:** Trigger it with contradictions; show the stakes of being wrong and evidence for alternatives; offer test, trust, expose, use the appearance, or walk away.
-- **Agency note:** Play fair with clues and interpretations; do not invalidate conclusions without new fiction.
+- **Shape:** An action in an earlier beat was not what it looked like: the friend was an enemy, the harm was help, the defector was a double agent. The DM must know the true meaning from the start and make it clear, when revealed, that it was intended all along.
+- **Build:** The earlier action and its true meaning (fixed at prep); the evidence already planted; how the truth surfaces now.
+- **Pairs:** After Betrayal or Turnabout; before Confrontation or the Climax.
+- **Fair play:** The true meaning is fixed in prep, and the earlier evidence supports it.
 
 ## Strange Bedfellows
-- **Use when:** Rivals must cooperate because a threat or opportunity outweighs their conflict.
-- **Do:** Trigger it with shared pressure; show terms, stakes, distrust, and exit routes; offer cooperate, set conditions, exploit, betray, or refuse.
-- **Agency note:** Preserve each side's agency and interests; cooperation need not become friendship or a mandatory alliance.
+- **Shape:** A common threat forces the party into alliance with the opposition — best when the enemy shows up and says, "We have a common problem." The threat must be compelling and convincing.
+- **Build:** The common threat and proof of it; the enemy's terms; what each side holds back; when the truce ends.
+- **Pairs:** After Race or Warning; before Battle against the common threat.
+- **Fair play:** The threat is real, and the party can accept, refuse, or set terms.
 
 ## Turnabout
-- **Use when:** A consequence or new fact reverses who has leverage or what success means.
-- **Do:** Trigger it with an earned reversal; show new stakes and options; offer press the advantage, recover, negotiate, flee, or change objectives.
-- **Agency note:** Base reversals on visible choices and fiction, not arbitrary GM correction; players may keep or lose the advantage.
+- **Shape:** One member of the opposition decides, for their own reasons, to help the party — the henchman betraying the villain for his job, the enemy who falls for a PC. A good way to rebalance a weakened party.
+- **Build:** The turncoat (owner page) and their motive; what help they bring (numbers, access, information); what they want in return; the risk they carry.
+- **Pairs:** After a lost Cliffhanger or Hesitation; before Battle or the Climax.
+- **Fair play:** The turncoat's motive is theirs and can be read; the party chooses to trust or use them.
 
 ## Romance
-- **Use when:** Attraction, intimacy, or commitment can change choices and relationships.
-- **Do:** Trigger it through mutual, established interest; show emotional and practical stakes; offer pursue, pause, define terms, refuse, keep private, or redirect.
-- **Agency note:** Keep consent explicit and player-controlled; never force a character's feelings or compliance.
+- **Shape:** Someone attractive takes a strong liking to a PC — rarely all hearts and flowers: secret ties to the enemy, a jealous suitor, angry parents, a curse.
+- **Build:** The suitor (owner page), what draws them, and the complication; how it touches the plot.
+- **Pairs:** Strong as Play a Development in a Hook; before Betrayal, Vengeance, or Personal Stake.
+- **Fair play:** The player decides the character's feelings; consent and pace follow the table's aim.
 
 ## Lie Revealed
-- **Use when:** A false claim, cover story, or omission becomes actionable.
-- **Do:** Trigger it with evidence or contradiction; show who is endangered and what choices remain; offer confess, confront, verify, leverage, forgive, or walk away.
-- **Agency note:** Let players decide how to respond and liars have motives and options; revelation need not dictate punishment.
+- **Shape:** Something believed true is exposed as a lie — a clue, a fact, the identity of an actor or guide. It shows only that it was false; the truth stays unknown.
+- **Build:** The lie, who told it, and why; the evidence that breaks it; the truth (DM layer) and where it can be learned next.
+- **Pairs:** After Clue or Alliance; before Clue, Secret Meeting, or Confrontation.
+- **Fair play:** The evidence is solid, and the truth is findable.
 
 ## Hazardous Quest
-- **Use when:** Reaching a place or securing an object requires sustained risk rather than one obstacle.
-- **Do:** Trigger it with a concrete objective; show route, hazards, stakes, resources, and alternatives; offer prepare, choose a route, recruit, turn back, or accept a cost.
-- **Agency note:** Make the route a decision space with clues and trade-offs, not a fixed sequence of hazards.
+- **Shape:** A long, arduous journey to destroy, find, or recover something: traps, pitfalls, storms, deadly conditions. Attacks along the way are minor and unrelated to the opposition — wild animals, stinging insects, random monsters. A Battle, Ambush, or Trap can start, interrupt, or end the journey.
+- **Build:** The goal; the route in three legs, each with a hazard (numbers) and a choice; supplies and their depletion; `travel-events` for the leg complications.
+- **Pairs:** After Revelation or Warning; interrupted by Obstacles or Ambush.
+- **Fair play:** Route, preparation, and supply choices change what each leg costs.
 
 ## Puzzle
-- **Use when:** Reasoning or experimentation can unlock progress, knowledge, or a safer route.
-- **Do:** Trigger it with a meaningful mechanism; provide sufficient clues, stakes, and multiple solution paths or bypasses; offer test, combine, ask, brute-force at a cost, or leave it.
-- **Agency note:** Never require one unhinted answer; failed guesses change time, resources, or danger instead of halting play.
+- **Shape:** A riddle or puzzle stands between the party and progress — out, in, or the secret. No opposing side. Like a Trap, it always has a solution, with clues in this scene or an earlier one.
+- **Build:** The puzzle as presented; the answer; three clues and where each is; what a wrong attempt costs; a costly bypass.
+- **Pairs:** Inside Hazardous Quest; after Clue.
+- **Fair play:** The answer can be worked out from the clues on the table.
 
 ## Framed
-- **Use when:** Evidence falsely links a character or faction to wrongdoing.
-- **Do:** Trigger it with a plausible accusation; show legal, social, or physical stakes and evidence to challenge; offer defend, investigate, flee, bargain, expose, or exploit.
-- **Agency note:** Let players choose reputation versus other goals; exoneration is not the only meaningful route.
+- **Shape:** The party, or a PC, is set up for a crime they did not commit. The frame is obvious to everyone except the authorities, who have convincing evidence.
+- **Build:** The crime; the planted evidence and why it convinces; the framer (owner page) and motive; the authorities' response and timetable; three routes to proof.
+- **Pairs:** After False Accusation Hook; before Chase, Pursuit, or Trial.
+- **Fair play:** Proof exists and can be reached.
 
 ## Obsession
-- **Use when:** A person or faction pursues one aim despite mounting costs.
-- **Do:** Trigger it with established motive and escalation; show what the obsession threatens and leverage points; offer appeal, exploit, interrupt, support, or let consequences land.
-- **Agency note:** Do not commandeer a player's mind; NPC obsession is pressure, not guaranteed behavior from PCs.
+- **Shape:** A PC becomes the target of someone's obsession — love, hate, or curiosity. The obsessed actor follows them and tries to stay close, but will not attack and avoids confrontation.
+- **Build:** The obsessed actor (owner page); what they want from the PC; where they turn up; what they know or carry that matters to the plot.
+- **Pairs:** Across several beats; before Romance, Betrayal, or Rescuers.
+- **Fair play:** The obsessed actor's behavior follows their nature; the player chooses how to respond.
 
 ## Back from the Dead
-- **Use when:** Established magic, technology, or fiction makes return from death possible and relevant.
-- **Do:** Trigger it through a credible mechanism; show stakes, costs, changes, and alternatives; offer accept, refuse, investigate, bargain, or let the death stand.
-- **Agency note:** Keep it rare and costly; never restore someone unharmed just to erase sacrifice or failure.
+- **Shape:** An old opponent returns from a supposed death — they fell into the water; the wound only looked mortal. Use it once, best when the party crushed the opposition early and the final Battle needs a challenge.
+- **Build:** The returning opponent (owner page); the reasonable explanation; what the return changed in them; their new plan.
+- **Pairs:** Before the Climax.
+- **Fair play:** The explanation fits what the table saw; the party's earlier victory still counts.
 
 ## Rescuers
-- **Use when:** Allies or strangers can intervene after players create or encounter danger.
-- **Do:** Trigger it through prior relationships, signals, or credible opportunity; show what rescuers can save and their stakes; offer call, direct, trust, bargain, or proceed alone.
-- **Agency note:** Rescuers add options, not automatic salvation; players choose whether to accept help and consequences remain.
+- **Shape:** The party must save someone from capture, death, or confinement. The key is a compelling reason: the victim is a friend, or holds information the party needs.
+- **Build:** The victim (owner page) and why they matter to the party; where they are held and by whom; the danger's schedule; two approaches to the rescue.
+- **Pairs:** After Kidnapped, Skirmish, or Betrayal; before Pursuit or Battle.
+- **Fair play:** Several rescue approaches work; delay has a stated cost to the victim.
 
 ## Vengeance
-- **Use when:** Harm or loss motivates a character or faction to pursue retribution.
-- **Do:** Trigger it with an established grievance; show targets, stakes, evidence, and alternatives; offer confront, mediate, aid, redirect, forgive, or refuse.
-- **Agency note:** Do not assume revenge is righteous or required; affected players and NPCs choose their response.
+- **Shape:** One PC becomes the target of the opposition's vengeance — for something they did, or because the villain hates their face. In any conflict, this enemy goes after or challenges that PC, whatever the risk.
+- **Build:** The avenger (owner page) and the grievance; how the vendetta shows in the next contests (targets that PC first, issues a challenge); the grievance's truth.
+- **Pairs:** After Fist Fight, Duel, or Confrontation; before Duel or the Climax.
+- **Fair play:** The avenger's single-mindedness is a weakness the party can exploit.

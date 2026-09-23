@@ -33,7 +33,7 @@ Each field earns its place only when this beat spends it at the table.
 | **Be ready for** | Players are likely to attempt consequential actions. | Selective ruling table — only intents that change a ruling, risk, route, clock, resource, NPC response, or information. Table: intent \| approach \| DC \| success \| partial \| failure. Approach is **Ability (Skill)** when a check applies. DC column: `` `DC 14` ``. Dice and damage: inline code. Applied conditions: **bold**. Name creature, item, place in every cell. Every cell is a *ruling*. Include **Assess the situation** only when success and failure both say what changes. |
 | **Threat clock** | A fuse or opposition turn changes the situation. | `## Threat clock`. Table: tick \| what happens \| narration. Named ticks. 3–4 ticks. Each tick states what newly becomes visible, usable, threatened, blocked, or changed. **Narration** column: `==_italic_==`. When absent, `> [!narration] Tick {n}` stubs after the table. Bloodied, cover-reached, and scene dials sit in the right `col-md` beside the clock table. |
 | **Secondary objective** | A second question runs in parallel and changes outcome or later consequence. | `## Secondary objective`. One paragraph: beats required, ignore outcome, later consequence. |
-| **How the Scene Resolves** | Every live beat. | `## How the Scene Resolves`. Most likely options, usually one or two. Each option hands off to a beat on this session's skeleton. Next state, damage applied, relevant conditions, what follows. One empty `> [!narration] How the Scene Resolves` for the unconditional spoken state, plus an options table (`If` \| `Next` \| `Narration`). Narration cells: `==_spoken_==`. |
+| **How the Scene Resolves** | Every live beat. | `## How the Scene Resolves`. Most likely options, usually one or two. Each option hands off to a beat on this session's Beat Map. Next state, damage applied, relevant conditions, what follows. One empty `> [!narration] How the Scene Resolves` for the unconditional spoken state, plus an options table (`If` \| `Next` \| `Narration`). Narration cells: `==_spoken_==`. |
 | **Exit narration** | The next cockpit is already on this file. | Empty `> [!narration] Exit` on pass 1. Spoken transition on pass 3. |
 | **Roster** | The DM will roll a creature or item. | `## Roster`. `![[Monster#Statblock]]` for opposition in combat mode. At most two columns per row; a third monster starts a new row or sits full width. After each embed: empty `> [!narration] {Creature}`. Item embeds only if this slice spends charges or the item is the pressure. |
 | **Backup** | Extra owner links save table hunting. | `## Backup`. Extra wikilinks only. |
@@ -74,6 +74,15 @@ mode or external fuse. Cut combat-only sections.
 **Hook:** immediate pressure, first response paths, How the Scene Resolves.
 Combat sections only when the hook is itself a combat encounter. A hook with a
 cover endpoint stays on this beat; the next stretch is the next cockpit.
+
+**Cliffhanger:** threat up front — Action cards for every opposing side,
+Zones with terrain rulings, a Threat clock ticking by round or named trigger,
+and How the Scene Resolves rows for won, lost, and broken-off outcomes.
+
+**Climax:** every combatant on Action cards; phase triggers as Threat clock
+ticks; each harvested thread's lever written inline where it changes a ruling
+(the Be ready for row, the action card, the zone); How the Scene Resolves
+rows carry each thread's final state for the Resolution.
 
 **Travel:** use run-guide only when travel is the live slice. Inline one
 specific complication, travel time in days/hours/minutes, every number needed

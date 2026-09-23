@@ -253,10 +253,22 @@
       "prompt": "Improve High Eyrie while a named faction seam is needed for the Who section. Send only that seam with the place objective and evidence, wait for the faction owner return, then resume the place template without redesigning the site.",
       "expected_output": "Keeps place-design responsible for High Eyrie, sends a bounded faction packet, and resumes only after the returned section and completion evidence satisfy the child owner contract.",
       "assertions": [
-        {"text": "Bounds the faction handoff to the Who-section seam with the place owner, parent objective, evidence, and requested output.", "type": "quality"},
-        {"text": "Requires returned child artifact/section and completion evidence before resuming the place draft.", "type": "structure"},
-        {"text": "Does not let the child re-plan High Eyrie or replace the place objective.", "type": "guardrail"},
-        {"text": "Leaves dependent place work open and reports a specific blocker when the owner return is incomplete.", "type": "process"}
+        {
+          "text": "Bounds the faction handoff to the Who-section seam with the place owner, parent objective, evidence, and requested output.",
+          "type": "quality"
+        },
+        {
+          "text": "Requires returned child artifact/section and completion evidence before resuming the place draft.",
+          "type": "structure"
+        },
+        {
+          "text": "Does not let the child re-plan High Eyrie or replace the place objective.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Leaves dependent place work open and reports a specific blocker when the owner return is incomplete.",
+          "type": "process"
+        }
       ]
     },
     {
@@ -264,10 +276,111 @@
       "prompt": "File user-said facts for wiki/entities/place/high-eyrie.md immediately on the live owner path, then hand off only the bounded Who seam to faction-design. Resume only when the child returns changed artifact state and completion evidence; otherwise block.",
       "expected_output": "Immediate filing of user-said canon plus a bounded child return or a specific blocker; no separate acceptance wait for the user's facts.",
       "assertions": [
-        {"text": "Files user-said place canon without a second acceptance step.", "type": "guardrail"},
-        {"text": "Keeps the place objective and Who seam bounded during handoff.", "type": "scope"},
-        {"text": "Requires changed child evidence before dependent place work resumes.", "type": "process"},
-        {"text": "Names the place boundary and parent effect when the child is incomplete.", "type": "quality"}
+        {
+          "text": "Files user-said place canon without a second acceptance step.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Keeps the place objective and Who seam bounded during handoff.",
+          "type": "scope"
+        },
+        {
+          "text": "Requires changed child evidence before dependent place work resumes.",
+          "type": "process"
+        },
+        {
+          "text": "Names the place boundary and parent effect when the child is incomplete.",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "Build out wiki/entities/place/the-live-hold.md into a full place page. It is Sabine Corvo's exotic-animal dealership in Sparhold near the Verdant Teeth. Use what the wiki already says about it.",
+      "expected_output": "A canon inventory built from QMD and backlinks (Sabine Corvo, Sparhold, Verdant Teeth, Roka Sten, and the item pages that name The Live Hold such as Warden's Collar, Corvo's Catch-Pole, Vial of Predator Musk, Blind Hood and Jesses, Harrier-Cry Whistle, Roka's Hidden Ledger), each placed on a named feature with a tell, truth, and find; a TotM-produced Overview narration carrying those tells as plain description; and a template page with only the narration callout.",
+      "assertions": [
+        {
+          "text": "Working notes list a canon inventory that includes sabine-corvo and at least four item pages whose text names The Live Hold, found by QMD or backlink search rather than guessed",
+          "type": "process"
+        },
+        {
+          "text": "Each inventoried item or person is placed at a specific feature of the Live Hold with a reason it sits there (for example the Warden's Collar cased on the back wall, already tagged with a buyer's name)",
+          "type": "content"
+        },
+        {
+          "text": "The Overview narration contains a perceivable tell for at least four woven elements, phrased as ordinary description with no signal words (strangely, oddly, curiously, out of place)",
+          "type": "quality"
+        },
+        {
+          "text": "The Overview narration states no truth, DC, mechanic, or name the players have not earned (no 'trafficking', no 'bribery', no item names such as Warden's Collar)",
+          "type": "guardrail"
+        },
+        {
+          "text": "The What section quotes the narration phrase for each tell in italics and states its truth and find in plain sentences",
+          "type": "structure"
+        },
+        {
+          "text": "The only callout on the page is [!narration]; no [!secret], [!mechanic], or other callout appears",
+          "type": "guardrail"
+        },
+        {
+          "text": "The DM layer names the trafficking link to Roka Sten's Verdant Teeth expeditions concretely rather than as 'something shady'",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "prompt": "Rewrite the Overview narration and What section of wiki/entities/place/the-teeth.md so a buried Reef Skull in the shingle is findable by sharp players without the narration giving it away.",
+      "expected_output": "Place-design builds a packet whose tell for the buried Reef Skull is a concrete, durable perceivable sign on its owner noun, hands it to theatre-of-the-mind, and records the truth and find in What with a link to reef-skull.",
+      "assertions": [
+        {
+          "text": "Reads wiki/entities/creature reef-skull owner page (via QMD get or direct read) before writing the tell",
+          "type": "process"
+        },
+        {
+          "text": "The narration carries a concrete perceivable sign of the buried Reef Skull (for example a disturbance, mark, or absence in the shingle) without naming the creature or saying anything waits, lurks, or hides",
+          "type": "quality"
+        },
+        {
+          "text": "The narration is third-person present tense portrait prose with no em dashes and no party or 'you'",
+          "type": "structure"
+        },
+        {
+          "text": "What quotes the tell phrase in italics, links [[reef-skull]], states the truth plainly, and defers numbers to the owner page",
+          "type": "structure"
+        },
+        {
+          "text": "Preserves every established fact: low-tide exposure, coral points, wreckage, the boat gap, Western Landing",
+          "type": "content"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "Design Fare I'a (wiki/entities/place/fare-ia.md) properly. Right now it is one line: the fish stall in Calder's Tooth and Port Tidefall where Felix Aho built the Vaka one conversation at a time.",
+      "expected_output": "Place-design retrieves Felix Aho, the Vaka, and Calder's Tooth and Port Tidefall, writes the stock version, and builds a twist, rule, and signatures from that canon so the page fails the swap test against a generic fish stall; invention is proposed rather than filed as canon.",
+      "assertions": [
+        {
+          "text": "Working notes write a stock version (a generic fish stall) and a swap test, and replace generic details that would be true of any stall",
+          "type": "process"
+        },
+        {
+          "text": "The twist or rule of the place is built from retrieved canon about Felix Aho or the Vaka rather than generic market dressing",
+          "type": "quality"
+        },
+        {
+          "text": "At a Glance contains a sentence contrasting Fare I'a with its linked neighbours or with Calder's Tooth and Port Tidefall",
+          "type": "content"
+        },
+        {
+          "text": "Invented additions are shown as a proposal marked as invention with cited pages before any live wiki write",
+          "type": "guardrail"
+        },
+        {
+          "text": "Any new named NPC the stall needs is routed to npc-design to be minted first, or left out, never written as an unnamed stand-in",
+          "type": "guardrail"
+        }
       ]
     }
   ]

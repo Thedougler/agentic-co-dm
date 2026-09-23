@@ -12,6 +12,11 @@ type: item
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
+region: "calven-and-calveno"
+kind: magic
+rarity: common
+attunement: false
+owner: ""
 campaign: shattered-sea
 visibility: dm
 summary: "A common spell scroll holding Disguise Self, cheap cover for a face that's become too well known."

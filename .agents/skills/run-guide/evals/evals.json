@@ -11,7 +11,9 @@
         {"text": "Each live card is one cockpit — no dual Now/Run-now pair, no Scene menu, no separate Ask callout.", "type": "guardrail"},
         {"text": "Pass 1 leaves every [!narration] body empty; pass 3 fills them. No spoken prose appears before pass 3.", "type": "process"},
         {"text": "dnd5e-mechanics is loaded before any check, save, DC, or player action mapped to a roll.", "type": "process"},
-        {"text": "writing-for-humans and theatre-of-the-mind are not loaded during pass 1.", "type": "guardrail"}
+        {"text": "writing-for-humans and theatre-of-the-mind are not loaded during pass 1.", "type": "guardrail"},
+        {"text": "Action cards carry the opposition loop — opening move, adaptation, break point, exit — beside compact numbers.", "type": "content"},
+        {"text": "Every consequence term on each card is defined on the card or flagged in Diagnose as missing prep.", "type": "content"}
       ]
     },
     {
@@ -85,6 +87,18 @@
         {"text": "Pass 3 does not begin before pass 2 DM-facing evidence is complete, and pass 4 checks Reading view.", "type": "process"},
         {"text": "An unchanged incomplete pass takes a different sanctioned path or returns a specific blocker.", "type": "guardrail"},
         {"text": "Preserves the parent session objective through every handoff.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "undefined-consequence-diagnose",
+      "prompt": "Build a DM-only run guide for the Session 12 Climax (wiki/journal/sessions/shattered-sea/12/Session-12-07-The-Guava-and-the-Spinner.md).",
+      "expected_output": "Diagnose flags 'Aruhe convergence' as an undefined consequence (missing prep) and either defines it from an owner that states it or routes back to climax-beats; the cockpit carries Skarn's numbers and loop.",
+      "assertions": [
+        {"text": "Diagnose runs the table-ready cold read and marks the undefined Aruhe convergence as missing prep.", "type": "process"},
+        {"text": "The convergence is defined from an owner that states it, or the beat is routed back to climax-beats with a named gap — not invented at pass 1.", "type": "process"},
+        {"text": "Skarn's action card carries AC, HP, Speed, Stunning Strike DC, reach, and his loop: opening move, adaptation, break point, exit.", "type": "content"},
+        {"text": "No spoken block forecasts a consequence ('taking it draws Aruhe's convergence').", "type": "content"},
+        {"text": "The table gate checks that each PC present has a reason to act.", "type": "content"}
       ]
     }
   ]

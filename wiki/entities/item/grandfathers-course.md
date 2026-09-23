@@ -15,6 +15,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: unknown
+kind: durable
+rarity: none
+attunement: false
+owner: "[[perrin-black-jaw]]"
 summary: "A water-warped navigation journal, spine stamped with fading gold leaf, pawned six months ago in desperation after a ship sank."
 provenance:
   extracted: 0.85

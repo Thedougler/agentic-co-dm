@@ -12,6 +12,11 @@ type: item
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
+region: "verdant-teeth"
+kind: wondrous
+rarity: rare
+attunement: false
+owner: ""
 campaign: shattered-sea
 visibility: dm
 summary: "A belt-and-hook flight rig hung from The Live Hold's beam, built so a trained flying beast can carry a rider without losing a foot of speed."
@@ -36,7 +41,6 @@ tier: supporting
 
 *Wondrous Item, Rare.* Flight tack for a Large winged beast and one rider, priced past what most crews clear in a season.
 
-## Mechanics
 
 > [!mechanic]
 > **[HB] Fly rigged.** Fitting the harness to a willing or trained flying beast of Large size takes 10 minutes. A Medium or smaller rider clipped into the shoulder hooks does not reduce the beast's flying speed and does not count against its carrying capacity. The rider has half cover against attacks from directly below and can use both hands freely.

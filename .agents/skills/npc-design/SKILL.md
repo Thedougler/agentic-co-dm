@@ -1,145 +1,227 @@
 ---
 name: npc-design
 description: >-
-  Design, revise, and run engaging NPCs and villains for D&D 5.5e (2024 rules).
-  Use when creating incidental extras, scene NPCs, recurring allies, patrons,
-  rivals, faction faces, villains, lieutenants, or social encounters. Covers
-  wants, leverage, limits, portrayal, Influence/Attitude, villain plans, and
-  monster-style combat packages. Do not use for pure monster design without a
-  personal identity (use homebrew-monsters-5e) or for player-character builds.
+  Design, revise, and file NPCs and villains for D&D 5.5e (2024 rules):
+  incidental extras, scene NPCs, recurring allies, patrons, rivals, faction
+  faces, villains, and lieutenants. Use when creating or improving a
+  `type: npc` page or any part of one (want, secret, look, voice, ties,
+  Influence play, villain plan, combat forms), or when a beat needs a new
+  speaker minted. Monsters without a personal identity go to monster-design;
+  player characters go elsewhere.
 ---
 
 # NPC design
+
+An NPC is a person who **wants something now** and does something about it.
+Players remember three things about them: their **face** (the few details they
+can picture again), their **voice** (how they talk, and one line they would
+repeat), and what they **want** from the party. Everything the NPC hides (a
+secret, a debt, a divided loyalty) leaves a **tell** in their face or habits
+that a sharp player can notice; the DM page states the truth behind it.
+
+File what constitution X makes canon. Follow `docs/agents/work.md`.
+
 ## Boundary contract
 
-### Input
+- **Input:** A named NPC (existing page or one to mint), the caller's
+  objective and brief, `wiki/templates/npc.md`, and the vault canon the person
+  touches.
+- **Work:** The steps below at the prep scale this NPC needs.
+- **Done:** Every item in `## Done` holds for the reported page path.
+- **Capability Handoff:** The portrait and voice lines go to
+  `theatre-of-the-mind` with the packet from step 6. Combat forms go to
+  `monster-design`, which tunes them against the live party and returns the
+  statblocks and encounter rule for the Combat section. A faction the NPC
+  fronts goes to `faction-design`; a home or workplace to `place-design`. A
+  named owner the NPC needs and the vault lacks is minted first by its owner
+  skill (AGENTS.md **HARD: entity-before-spoken**). Each child returns its page
+  path or result; resume at the step that waited on it, or report the named
+  gap.
 
-Take a named NPC owner, the caller's objective, the relevant brief,
-`wiki/templates/npc.md`, and linked canon/evidence for the person's ties,
-current situation, and table role. The owner is a playable identity with
-agency, not a generic monster or biography request.
+## Page rules
 
-### Owner-specific Work
+- **Canon.** User-said facts file immediately on the live path. Invented
+  additions are shown to the DM as a proposal, marked as invention and citing
+  the `[[pages]]` they grow from, and filed after the DM accepts.
+- **Preserve.** Improving an existing page keeps every established fact and
+  the NPC's existing face words; add only what changed.
+- **Role.** Frontmatter `role` is exactly `rival`, `patron`, or `contact`,
+  chosen from how the NPC stands toward the party. Their job (gatekeeper,
+  informant, smith) goes in Nature.
+- **One callout.** `[!narration] {Name}` is the only callout. Secrets and
+  truths are plain complete sentences in At a Glance, Running, or Connections.
+- **Explicit DM layer** (AGENTS.md **HARD: dm-facing-explicit**). Every tell
+  has its truth on the page, by name: what they hide, from whom, and what
+  happens if it comes out.
+- **Process stays off the page.** The inventory, concept notes, and packet are
+  working notes.
 
-Work only the NPC: preserve the appropriate prep scale, build want, leverage,
-need, limit, contradiction, and portrayal signals, then fill the NPC template.
-Keep Influence/Attitude distinct from request posture, leave PC choices open,
-and route any fightable numbers to the monster-style owner.
+## Prep scale
 
-### Capability Handoff
+Pick the scale from the NPC's importance at the table. It decides which steps
+run.
 
-Hand off only a bounded seam (for example, dialogue/look to
-`theatre-of-the-mind`, a place to `place-design`, pacing to `session-beats`, or
-combat math to `homebrew-monsters-5e`) with the NPC owner, parent objective,
-evidence, and exact section requested. Require return evidence naming the child
-artifact/section and completion result; resume NPC work only after that seam
-meets the NPC contract, otherwise report the missing evidence or blocker.
+| Scale | Page carries | Steps |
+|---|---|---|
+| Incidental | Face, want, one line, exit | 1 (canon only); Want from 2; Face and Voice from 3; 6; 7 |
+| Scene | Face, voice, want, leverage, limit, one secret or contradiction | All steps |
+| Recurring | Scene, plus ties to every relevant PC, faction, and place, a next move, and an activity log | All steps |
+| Villain or faction face | Recurring, plus a front from [references/villain-front.md](references/villain-front.md) | All steps |
 
-### Done
+## Steps
 
-Use the existing `## Done` checklist below. Completion is observable when the
-named NPC page path, NPC-template and agency/playability checks, combat
-handoff when applicable, and any child return evidence are reported.
+[references/example.md](references/example.md) takes one NPC through every
+step; read it before step 3.
 
+### 1. Read the canon and the party
 
-Prep only. Follow `docs/agents/work.md`.
+Retrieve before inventing (constitution XII), using QMD per AGENTS.md § Vault
+retrieval.
 
-## Refuse gates
+1. Read the NPC page if it exists and every page that links to it:
+   `grep -rliF "[[<name>" wiki/entities` for the slug, title, and each alias.
+2. Read their home place, their faction, and every person they are tied to.
+   Search QMD for the name, their job in that place, and session recaps that
+   mention them. `qmd get` every hit you will use.
+3. Read each PC page in `wiki/entities/pc/` (At a Glance, Connections, Session
+   Log) for backstory threads, debts, rivals, and goals this NPC could touch.
 
-- **Work gate.** Show a chat proposal before writing under `wiki/`. Write only
-  after DM acceptance.
-- **Invention.** Never present invention as wiki fact. Set `invention: true` (or
-  mark proposed), cite `[[pages]]`, show contradictions, and propose for
-  acceptance. No silent canon or rich unused biography as established fact.
-- **Role enum.** Frontmatter `role` is exactly one of `rival` | `patron` |
-  `contact`. Craft/job labels (gatekeeper, informant, …) go in Nature/body —
-  never in YAML `role`. Do not default `role`.
-- **Template lock.** Copy `wiki/templates/npc.md` only. Fill At a Glance,
-  narration portrait, Running, Connections with substance — not empty headings.
-- **Narration.** Spoken look is `[!narration]` `{Name}`. Theatre of the mind.
-  No secrets, DCs, unearned names, or DM thesis in player-facing prose.
-- **Prep scale.** Match importance: incidental = name/job, immediate want, one
-  signal, exit — refuse novel biography for a one-shot stew seller.
-- **No lore dump.** Situated knowledge through conversation, evidence, and
-  choices — not one unbroken exposition speech.
-- **Influence ≠ mind control.** Attitude (Friendly/Indifferent/Hostile) is
-  separate from request posture (Willing/Unwilling/Hesitant). A check moves
-  position; it does not erase oaths, limits, or agency.
-- **No DMPC.** Allies stay supportive, limited, and player-directed. Give want
-  and cost; do not let them choose the party's plan or solve the central problem.
-- **Three clues.** Essential conclusions need ~three independent channels.
-  Do not gate a villain arc behind one clue or one check.
-- **No cutscene immunity.** Direct villain contact accepts interrupt, injure,
-  expose, bargain, or bypass — or uses genuine remote/protected fiction. No
-  post-hoc immunity after players act.
-- **Betrayal rare.** Earned, foreshadowable, motivated, answerable — not the
-  default for every trusted patron/ally. Prefer divided loyalties and off-ramps.
-- **Active villain plan.** Interruptible steps with visible signs and player
-  interference — not idle in the final room until heroes arrive.
-- **Monster package, not PC sheet.** Reject full PC class sheets for ordinary
-  enemies. Concise monster-style block; hand numbers/balance to
-  `homebrew-monsters-5e`.
-- **Multiple conclusions.** Defeat, escape, compromise, exposure, alliance, or
-  conditional reform. Do not predetermine redemption as the only ending.
+Write the **canon inventory** in working notes: `[[slug]]` · kind · the fact
+that ties it to this NPC. Add one line per PC: the thread this NPC could pull.
 
-## Central principle
+Done when every backlink and relevant hit is in the inventory or dropped with a
+reason, and every PC has a line (or "no thread").
 
-An NPC is a legible, interruptible source of **agency and consequence**, not a
-biography. Spend prep in proportion to table importance.
+### 2. Build what drives them
 
-| Importance | Prep | At the table |
-| --- | --- | --- |
-| Incidental extra | Name/job, immediate want, one signal | One line, reaction, exit |
-| Scene NPC | Want, leverage, limit, contradiction, 2–3 signals | Ask/offer/refuse; leave a hook |
-| Recurring/significant | Card plus relationships, activity log, change trigger | Pursues goals between appearances |
-| Villain/faction face | Recurring card plus front, clock, contingencies | Acts off-screen and responds to players |
+- **Want:** concrete, present tense, able to change the next scene.
+- **Leverage:** what they can grant, deny, expose, or mobilise, and what using
+  it costs them.
+- **Need or fear:** what they lack or dread losing.
+- **Limit:** the line, oath, resource, or fear that blocks an easy win.
+- **Contradiction:** two true pressures that can collide in play.
+- **Secret:** what they hide, from whom, why, and what happens if it comes
+  out. Give it about three discovery paths (a statement, a trace, a witness, a
+  document, a consequence).
+- **What they know:** the facts they carry, which they share freely, which
+  they sell, and which they lie about.
+- **If ignored:** what they do next without the party.
+- **PC threads:** one optional reason for each relevant PC to engage, drawn
+  from step 1. An invitation, never a forced bond.
 
-## Build the person
+Done when every field is concrete enough to change a choice, and the secret
+has its truth, its stakes, and its discovery paths.
 
-1. **Function + identity `role`.** State craft function this session (see
-   `references/npc-templates.md`). Set wiki `role` to `rival` | `patron` |
-   `contact` only.
-2. **Immediate want.** Concrete, present-tense; can change the next scene.
-3. **Leverage + need.** What they can grant/deny/expose/mobilize; what they lack
-   or fear losing. Cost on leverage; playable address for need.
-4. **Limit.** Line, resource, skill, oath, fear, or time that blocks easy wins.
-5. **Productive contradiction.** Two truths under pressure — do not resolve in prose.
-6. **Four portrayal signals.** Visual anchor, repeatable behavior, voice
-   principle (not accent), sample line carrying want.
-7. **PC invitation.** One optional reason to engage per PC — never a forced bond.
+### 3. Make them this person and no other
 
-## File the wiki note
+Read [references/concept.md](references/concept.md) for diversity axes, face
+and voice craft, and weak-to-strong examples.
 
-Copy `wiki/templates/npc.md`. Pass person jobs in `wiki/AGENTS.md` Layout.
-At a Glance: Role, Nature, Home, Wants + one-sentence **DM thesis**. Spoken look
-is `[!narration]` `{Name}`. Running: first move and posture-change. Relationships:
-wikilink + meaning (omit only on stub with no named ties). Omit unused optional
-sections. Named-ingest stubs: identity fields + complete sentences only.
+1. **Stock version.** One line: "gruff dwarf smith", "mysterious hooded
+   stranger", "jolly innkeeper". Everything it predicts is the default.
+2. **Twist.** Tie their work, body, or history to campaign canon so the
+   stock version breaks: a smith who forges only from wreck iron because the
+   Crown taxes ore; a harbour clerk who can recite every ship lost in forty
+   years.
+3. **Face.** Two or three specific visual details, one sound or smell with its
+   source, and what they are usually doing with their hands. These words are
+   reused every time they appear.
+4. **Voice.** Word choice, rhythm, one verbal habit, and a subject they avoid.
+   Voice comes from what they care about, never from an accent or a gag.
+5. **Tells.** For the secret, the contradiction, and any hidden leverage, one
+   detail in the face or a habit that points at it: the wedding ring worn on a
+   cord under the collar, ink under the fingernails of a man who claims he
+   cannot read.
+6. **Swap test.** Put another NPC from the same place or faction in their
+   place. Replace every line that stays true.
 
-Identity defaults: `location`/`faction` unknown → `unknown`/`none`; omit unused
-`aliases`; supply `role`. Density exemplars in `wiki/_raw/` are not clone targets.
-`specs/003-npc-page-standard/contracts/npc-page.md` is optional extra depth.
+Done when the twist, face, and voice fail the swap test and every hidden truth
+has a tell.
 
-**Combat:** `# Combat` only if fightable. One-sentence encounter rule + on-page
-sheet **or** exactly one `type: creature` pointer. Landmark stages: one sheet per
-named condition. Else omit the heading.
+### 4. Plan how they run
 
-## Handoffs
+- **First meeting:** where they are, what they are doing, their opening move,
+  and what they want from the party.
+- **Attitude and request:** starting Attitude (Friendly, Indifferent, Hostile)
+  and, separately, how they meet the party's likely requests (Willing,
+  Hesitant, Unwilling).
+- **Posture changes:** what opens them up, what closes the door, and what
+  takes priority over the party.
+- **Influence:** the approaches that fit their need and limit, and what a
+  success or miss moves. Procedure:
+  [references/social.md](references/social.md).
+- **Next move and activity log** (recurring and villain): what they do between
+  appearances; one log line per appearance with what play changed.
+- **Villain or faction face:** build the front in
+  [references/villain-front.md](references/villain-front.md): an active plan
+  with visible, interruptible steps and several possible endings.
+- **Allies:** capable, limited, and player-directed; they have a want and a
+  cost and leave the central problem to the party.
 
-Narration/dialogue → `theatre-of-the-mind`; places → `place-design`; pacing →
-`session-beats`; combat math → `homebrew-monsters-5e`; vault lookup →
-`.agents/skills/qmd` plus
-`specs/004-qmd-search-default/contracts/retrieval-precedence.md`.
+Done when the DM could run the first five minutes of the meeting and the
+moment the NPC's posture changes from the page alone.
 
-Read `references/npc-craft.md` for social play, recurrence/villains, wiki fill
-detail, audit, and failure modes. Also: `references/npc-templates.md`,
-`references/villain-front.md`, `references/social-and-combat.md`.
+### 5. Hand off the fight
+
+When they can fight, hand `monster-design` their concept, face, tells, and
+brief. It returns statblocks tuned to the live party and an encounter rule
+(the fiction that picks a form). Combat numbers live only there.
+
+### 6. Hand the look and voice to theatre-of-the-mind
+
+Build the **packet** as fragments, each with its source:
+
+- **Body:** build, age, and height against something familiar.
+- **Face:** the details from step 3, word for word.
+- **Clothing and gear:** what they wear and carry, and its wear.
+- **Senses:** one sound or smell with its source.
+- **At rest:** what their hands do when nothing is happening.
+- **Tells:** every tell from step 3, as plain appearance, never its meaning.
+- **Voice:** the voice notes from step 3 and what they want from the party.
+- **Leave out:** the secret, the DM thesis, mechanics, and names the players
+  have not earned.
+
+Load `.agents/skills/theatre-of-the-mind` and give it the packet twice: in
+portrait mode, person recipe, for the `[!narration] {Name}` block; and in the
+dialogue recipe, for three sample lines (the ask, the refusal, the line under
+pressure).
+
+Done when the portrait passes theatre-of-the-mind's final check and carries the
+face and every tell, and the three lines sound like one person.
+
+### 7. File the page
+
+Copy `wiki/templates/npc.md` and fill the person jobs from `wiki/AGENTS.md`
+Layout. Omit empty sections, write complete sentences, and wikilink every
+owner page.
+
+| Section | Carries |
+|---|---|
+| At a Glance | Role, Nature (job and what they are like), Home, Wants; rows for Secret, Leverage, or Limit when they change how the DM runs them; the one-sentence DM thesis |
+| Narration | The portrait from step 6 |
+| First meeting | Opening move and one sample line |
+| When posture changes | What opens them, what closes the door, what takes priority, and what they will and will not share |
+| Voice | Voice notes and the three sample lines |
+| Connections | Each tie by wikilink and what it does at the table, including PC threads |
+| Combat | Encounter rule and statblocks from `monster-design`, only when they can fight |
+
+Run `wiki lint <path>`, then `wiki lint fix <path>`, and rerun until green.
 
 ## Done
 
-- Fills `wiki/templates/npc.md`; `role` is rival|patron|contact; craft job in body.
-- Want, leverage, need, limit present-tense and playable at the right prep scale.
-- Narration is perceivable-only; invention labeled/cited/proposed; wiki write after accept.
-- Villain (if any): active interruptible plan, no cutscene immunity, multiple conclusions.
-- Combat (if any): monster package + handoff — not a PC sheet.
-- DM recovers the actionable card in under 30 seconds.
+- The prep scale matches their importance; the page carries what that scale
+  lists.
+- The canon inventory is complete, and every relevant PC has a thread or a
+  "no thread".
+- Want, leverage, limit, contradiction, and secret are concrete; the secret
+  has its truth, stakes, and discovery paths.
+- The twist, face, and voice fail the swap test; every hidden truth has a
+  tell.
+- The portrait and three sample lines came from theatre-of-the-mind and pass
+  its final check.
+- A villain has an active, interruptible front and several possible endings.
+- Combat forms, when present, came from `monster-design`.
+- `role` is rival, patron, or contact; `[!narration]` is the only callout.
+- Invention was proposed and accepted before filing; user-said canon is filed.
+- `wiki lint <path>` is green, and one done-summary names the page and what
+  changed.

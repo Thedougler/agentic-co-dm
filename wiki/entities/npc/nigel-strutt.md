@@ -7,14 +7,18 @@ tags: [shattered-sea, npc]
 sources:
   - "campaign-os:nigel-strutt.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: contact
+location: "[[Tidefall Chandlery]]"
+faction: "[[dravosi-crown]]"
 visibility: dm
-summary: "Crown chandlery clerk at the Tidefall Chandlery, young and conscientious, who becomes deeply distressed when customer paperwork is out of order."
+summary: "Crown chandlery clerk at the Tidefall Chandlery who helps customers comply with naval provisioning rules."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -24,29 +28,53 @@ tier: supporting
 ---
 # Nigel Strutt
 
-![[nigel-strutt-banner]]
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-|               |                                                                    |
-| ------------- | ------------------------------------------------------------------ |
-| **Species**   | [[Human]]                                                              |
-| **Pronouns**  | he/him                                                             |
-| **Location**  | [[Tidefall Chandlery]], [[calders-tooth-and-port-tidefall]] |
-| **Role**      | Crown chandlery clerk                                              |
+| **Role**   | Crown chandlery clerk |
+| ---------- | ---------------------- |
+| **Nature** | Conscientious and rule-bound |
+| **Home**   | [[Tidefall Chandlery]], [[calders-tooth-and-port-tidefall|Port Tidefall]] |
+| **Wants**  | Keep provisioning orderly and help customers leave with correct papers. |
 
-Young and neat, he moves like someone who read the rules and found them comforting. He knows the prices, the stock, and the Crown charter word for word. Ask once and you'll get what you need.
+> **DM thesis:** Nigel is useful when the party accepts that the paperwork is part of the port's safety and authority.
+```
 
-When paperwork fails, Nigel turns *concerned* instead of difficult. He explains the problem and offers solutions, then says sorry in a voice that holds you responsible (though too tactful to admit it). He'll help you fill out the right form, which he keeps on hand.
+```col-md
+flexGrow=1
+===
+> [!narration] Nigel Strutt
+> Nigel is young and neat, with the careful posture of someone who finds comfort in written rules. He keeps the posted prices and inspection forms close at hand, and his voice stays polite even when a missing line on a form has clearly distressed him. He smells faintly of rope, paper, and naval stores from the chandlery counter.
+```
+````
 
-He is not unhelpful. He just helps best when you follow the rules first.
+## Running Nigel Strutt
 
-Clerk at the [[Tidefall Chandlery]], Port Tidefall's Crown-sanctioned naval outfitter. First point of contact for any vessel provisioning after inspection. Never deviates from posted prices in his career, which puzzles him when customers ask. The [[dravosi-crown]] employs him and he takes that seriously.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
 
-## Stats & Combat
+Nigel checks the party's vessel papers before discussing supplies. He says, "Of course I can help; we only need to correct this line before I release the order."
+```
 
-No stats given in source.
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+When paperwork fails, Nigel becomes concerned rather than hostile. He explains the problem, offers the correct form, and refuses to bypass posted Crown prices or inspection requirements.
+```
+````
 
 ## Connections
 
-- [[Tidefall Chandlery]], where he clerks.
-- [[calders-tooth-and-port-tidefall]], his home port.
-- [[dravosi-crown]], his employer.
+| Connection | Meaning |
+| ---------- | ------- |
+| [[Tidefall Chandlery]] | His workplace and the first provisioning stop after inspection. |
+| [[calders-tooth-and-port-tidefall]] | His home port and the settlement where the chandlery operates. |
+| [[dravosi-crown]] | His employer; he takes the Crown charter seriously. |

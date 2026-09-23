@@ -193,7 +193,7 @@ frequency, recoverability, and narrative stakes.
 Instantiate the relevant note type and template under `wiki/`. Write for scan speed: short bullets, explicit
 triggers, DCs beside the action, consequences beside their trigger,
 wikilinks instead of repeated lore. If the challenge needs a combatant
-statblock, invoke `homebrew-monsters-5e`. If the host place lacks
+statblock, invoke `monster-design`. If the host place lacks
 physical logic, invoke `place-design` — or `dungeon-design` when
 the host is a multi-room dungeon. If the challenge exists but
 the fiction is still generic, invoke `flesh-out`.

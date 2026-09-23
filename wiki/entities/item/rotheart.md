@@ -25,6 +25,7 @@ region: aruhe
 kind: consumable
 rarity: very rare
 attunement: false
+owner: none
 relationships:
   - target: "[[the-marshes]]"
     type: related_to

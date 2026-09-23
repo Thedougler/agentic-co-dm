@@ -26,13 +26,8 @@ encounter math, or another entity's page.
 
 ### Capability Handoff
 
-Hand off only a local seam (for example, encounter math to `encounter-prep`, a
-multi-room site to `dungeon-design`, a place to `place-design`, or a named
-faction/NPC/vehicle/spell/lore to its owner) with the quest owner, parent
-objective, evidence, and exact section requested. Require return evidence naming
-the child artifact/section and completion result; resume quest work only after
-that seam satisfies the quest contract, otherwise report the missing evidence or
-blocker.
+Encounter math → `encounter-prep`. Multi-room site → `dungeon-design`. Place
+→ `place-design`. Named entity → its owner skill.
 
 ### Done
 
