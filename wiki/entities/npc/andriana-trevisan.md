@@ -61,6 +61,10 @@ Andriana is a minor contact who knows roughly where the [[Warren]] is. She can p
 
 No posture change is established. If pressed, preserve the same boundary: Andriana withholds the contact and escort rather than supplying a new route or an invented explanation.
 
+## Voice
+
+Andriana's voice is not established in the source. Her actionable boundary is clear: she gives the Warren's rough direction and refuses names or an escort. No verbal habit or sample line is recorded; do not invent one.
+
 ## Connections
 
 - [[Warren]]: Andriana knows its rough location but withholds a contact or escort.
