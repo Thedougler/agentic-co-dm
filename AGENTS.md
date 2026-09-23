@@ -34,15 +34,15 @@ the failure on it.
 
 Canon owner: constitution principle X. File what it makes canon. Unsaid invention is not canon (XII).
 
-Lint contract: the single agent-facing `wiki lint` runs every checker and reports every finding by default, including Vale and soft findings. Use `next.path`, then `wiki lint fix <next.path>` for deterministic repairs; rerun `wiki lint <next.path>` for remaining findings. `--full` is accepted as a compatibility no-op. Iterate until green. Do not ask. Do not interrupt with findings.
+Lint contract (constitution XXI): `wiki lint` runs every checker, Vale included, and every finding it reports is an issue to fix. Use `next.path`, then `wiki lint fix <next.path>` for deterministic repairs; rerun `wiki lint <next.path>` for the remaining issues. `--full` is accepted as a compatibility no-op. Iterate until clean: zero issues. Do not ask. Do not interrupt with findings.
 
-After green, one short done-summary: what changed, where. No question. No wait.
+When clean, one short done-summary: what changed, where. No question. No wait.
 
-Mixed request: do every requested slice, then one done-summary after green.
+Mixed request: do every requested slice, then one done-summary when clean.
 
-FR-002 structural repair, template conformance of existing content, named ingest, and bookkeeping run unattended. Dedup merge without a user ask still confirms (destructive, not a Work wait). User-asked merge files.
+FR-002 repair, template conformance of existing content, named ingest, and bookkeeping run unattended. Dedup merge without a user ask still confirms (destructive, not a Work wait). User-asked merge files.
 
-**Done when:** requested work is filed; applicable checkable rules are green; one done-summary was emitted.
+**Done when:** requested work is filed; `wiki lint` is clean; every other checkable rule passes; one done-summary was emitted.
 
 ## Project identity
 
@@ -121,7 +121,7 @@ Cut wasted context without waiting. A change MUST NOT count as an improvement if
 
 ## Wiki writes
 
-Every wiki write goes to its live path. `_raw/` remains the ingest inbox; `_archive/` holds promoted sources. Every file entering `wiki/` MUST pass structural `wiki lint` before it is considered complete. A non-clean report means the file remains incomplete.
+Every wiki write goes to its live path. `_raw/` remains the ingest inbox; `_archive/` holds promoted sources. Every file entering `wiki/` is complete only when `wiki lint` is clean for it.
 
 ## Edit discipline
 
@@ -506,7 +506,7 @@ See `wiki-query` and `wiki-export` skills for how the filter is applied.
 ## Core Principles
 
 - **Compile, don't retrieve.** The wiki is pre-compiled knowledge. Update existing pages — don't append or duplicate.
-- **Track llm-wiki operations.** After ingest or another source-backed update, record the source with `python3 scripts/manifest.py record`; update `index.md`, `log.md`, and `hot.md`. Structural lint and repair do not write `log.md`.
+- **Track llm-wiki operations.** After ingest or another source-backed update, record the source with `python3 scripts/manifest.py record`; update `index.md`, `log.md`, and `hot.md`. Lint and lint repair do not write `log.md`.
 - **Connect with `[[wikilinks]]`.** Every page should link to related pages. This is what makes it a knowledge graph, not a folder of files.
 - **Frontmatter is required.** Every wiki page needs: `title`, `category`, `tags`, `sources`, `created`, `updated`.
 - **Single source of truth.** Visibility tags shape how content is surfaced — they don't duplicate or separate it.

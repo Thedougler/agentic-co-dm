@@ -11,25 +11,27 @@ Each recipe gives: **Job** (what the block must do), **Build** (what goes in),
 ## Contents
 
 - Beat openings: Hook, Development, Cliffhanger, Climax, Resolution
-- Beat slots: zone cell, tick cell, creature in scene, How the Scene Resolves, Exit
+- Beat slots: zone cell, tick cell, outcome cell, creature in scene, How the Scene Resolves, Exit
 - People and things: NPC first look, dialogue, item in scene
-- Action: combat update
+- Action: combat opening state
+- Moments: social scene, suspense, revelation, return to a known place
 - Movement: travel, transition, vehicle
 - Other: business, recap, handout, vision
 
 ## Beat openings
 
 The scene opening (Initial Narration, Open on, Opening, Open on Action,
-Opening image) uses the five-part spine from `SKILL.md`: frame, focus, motion,
-handles, live edge. The beat type decides what leads.
+Opening image) uses the spine from `SKILL.md`: frame, anchor, sense, handles,
+motion, live edge. It carries the entry layer; zone, creature, and outcome
+cells carry the rest (`SKILL.md` step 5). The beat type decides what leads.
 
 ### Hook opening
 
 - **Job:** Grab the table in the first sentence and get them moving.
 - **Build:** Open inside the disturbance: the thing that just changed is in
   sentence one or two, with the frame folded around it. Then the people or
-  threat in motion, two to four handles (routes, cover, objects, someone to
-  talk to), and one sense beyond sight. When play resumes mid-scene from last
+  threat in motion, every handle on the list (routes, cover, objects, someone
+  to talk to), and one sense beyond sight. When play resumes mid-scene from last
   session, open on the exact frozen moment: who is where, what is mid-motion.
 - **End:** The demand, the attack about to land, the stranger's question, the
   thing that is about to get away.
@@ -38,7 +40,7 @@ handles, live edge. The beat type decides what leads.
 
 - **Job:** Put the new information source in front of the party so the scene
   can turn.
-- **Build:** A calmer frame with a sense beyond sight, then the focus: the
+- **Build:** A calmer frame with a sense beyond sight, then the anchor: the
   person, document, body, or sign that holds the new information, doing
   something. Give the players something to handle (the map, the ledger, the
   grave marker) and someone to talk to. Show the evidence; the players draw
@@ -80,57 +82,87 @@ handles, live edge. The beat type decides what leads.
 
 ## Beat slots
 
+On beat pages and run-guide cockpits, these `[!narration]` slots together carry
+every handle, each in its layer (`SKILL.md` step 5):
+
+- **Initial Narration**, **Open on**, **Opening**, **Open on Action**,
+  **Opening image**: the beat's scene opening (entry layer; recipes above).
+- **Closing image**: the Resolution's final picture.
+- **How the Scene Resolves**: the one ending that is always true.
+- **{Creature}**: that creature as it appears in this scene.
+- **Exit**: the transition into the next beat on the same page.
+- **Narration columns** in Zones, Threat clock, and outcome tables: short
+  conditional lines written as `==_italic_==` inside the table cell
+  (attention and interaction layers; state changes).
+
+
 ### Zone cell and tick cell
 
 - **Job:** One conditional picture the DM reads when the party enters the zone
-  or the clock ticks.
-- **Build:** 1–3 sentences in `==_italic_==` inside the table cell. Zone: the
-  one feature of that place a player would act on, with its property. Tick:
-  what changes, visibly and audibly, and what it now threatens. Build on the
-  opening; add only what is new.
+  or the clock ticks. Zone cells are the **attention** layer: what a closer
+  look at that part of the scene shows.
+- **Build:** A line or two in `==_italic_==` inside the table cell. Zone: the
+  one feature of that place a player would act on, with its property, plus
+  any handle the opening left to this zone. Tick: what changes, visibly and
+  audibly, and what it now threatens. Build on the opening; add only what is
+  new.
 - **End:** The changed thing.
+
+### Outcome cell (state change)
+
+- **Job:** Show what a player's action changed. Outcome cells are the
+  **interaction** layer.
+- **Build:** A line or two of the new state only, never the scene again: the
+  rope parts, and the wet sailcloth drops across the passage, burying one
+  raider and forcing the others around it. Show how the world reacts (the
+  crowd scatters, the dog stops barking, the fire takes the awning).
+- **End:** The new situation the next player acts on.
 
 ### Creature in scene ({Creature} slot)
 
 - **Job:** This creature, here, now.
-- **Build:** 2–4 sentences. Its shape and size in familiar terms, the feature
-  that sets it apart, what it is doing with its body, and where it is relative
-  to the stage. Use the owner page and art for its look; the scene decides its
-  pose.
+- **Build:** A few sentences, in this order of attention: its silhouette, how it
+  moves, its dangerous parts, its scale against something familiar, and what
+  it is doing right now, placed on the stage. Name its kind only when the
+  characters would recognize it; let behavior show the threat. Use the owner
+  page and art for its look; the scene decides its pose.
 - **End:** The next thing it is about to do, before contact.
 
 ### How the Scene Resolves
 
 - **Job:** The one ending that is true however the beat went.
-- **Build:** 2–4 sentences showing the world settling into the changed state.
+- **Build:** A few sentences showing the world settling into the changed state.
   Branch-specific endings live in the outcome table's Narration column.
 - **End:** The image that hands off to the next beat.
 
 ### Exit
 
 - **Job:** Carry the party into the next beat on the same page.
-- **Build:** 2–4 sentences: mark the time or movement ("By the time the
+- **Build:** A few sentences: mark the time or movement ("By the time the
   lanterns are lit…"), orient only what changed, and show the new situation.
-- **End:** The first sight of the next beat's focus.
+- **End:** The first sight of the next beat's anchor.
 
 ## People and things
 
 ### NPC first look
 
 - **Job:** Make this person memorable and approachable.
-- **Build:** 2–4 sentences. Two or three striking visual details (the red
-  scarf, yellowed teeth, spectacles cracked across one lens), how they hold
-  themselves, one sound or smell that comes off them, and what they were
-  already doing when the party arrived (wiping the same glass, icing a cake,
-  sharpening a knife). Seat them in the room. This set of details is their
-  **face**: repeat the same words when the party meets them again and add
-  only what changed.
-- **From the NPC page:** When the NPC has a page, take the face from its
-  `[!narration]` portrait and keep its words; add what this scene changes
-  (a wound, wet clothes, a new companion) and what they are doing now. A tell
-  from the page appears when the beat's situation touches the secret behind
-  it. An NPC with no page is minted by `npc-design` first (AGENTS.md **HARD:
-  entity-before-spoken**).
+- **Build:** A few strokes. Their role or first read (the harbormaster, a
+  broad woman in a coat two sizes too large), one distinctive feature (ink
+  stains covering both hands: the one a player would use to describe her to a
+  friend), and one behavior they were already doing when
+  the party arrived (she keeps signing papers while you speak). Seat them in
+  the room. A sound or smell that comes off them can ride along if it is
+  their strongest note. This feature and behavior are their **face**: the
+  same feature returns when the party meets them again, described fresh
+  with a new specific detail, plus whatever changed.
+- **From the NPC page:** When the NPC has a page, take the face (their
+  anchor feature and habit) from its `[!narration]` portrait and name the same
+  feature so the table recognizes them, in a sentence made for this scene;
+  add what this scene changes (a wound, wet clothes, a new companion) and what
+  they are doing now. A tell from the page appears when the beat's situation
+  touches the secret behind it. An NPC with no page is minted by `npc-design`
+  first (AGENTS.md **HARD: entity-before-spoken**).
 - **End:** They look up, stop what they are doing, or speak.
 
 ### Dialogue
@@ -152,8 +184,8 @@ handles, live edge. The beat type decides what leads.
 - **Job:** Put an item in the room so players can find it, want it, or miss it
   fairly.
 - **From the item page:** Read its `[!narration]` portrait and At the Table
-  (seen, held, active, and its tell when hidden). Reuse the portrait's words
-  for what shows from where the party stands; the inside, the weight, and the
+  (seen, held, active, and its tell when hidden). Show the portrait's anchor
+  feature, in this scene's words, for what shows from where the party stands; the inside, the weight, and the
   magic wait until someone looks closer, picks it up, or uses it
   ([boundary.md](boundary.md) § object states).
 - **In plain view:** place it relative to the party and to its owner or
@@ -165,20 +197,59 @@ handles, live edge. The beat type decides what leads.
   name, magic, and hiding place stay out until play finds them.
 - **Sentient item:** it speaks only in the voice on its page, and only to the
   one who can hear it.
-- **End:** On the scene's live edge, never on the item unless it is the focus.
+- **End:** On the scene's live edge, never on the item unless it is the anchor.
 
 ## Action
 
-### Combat update
+### Combat opening state
 
-- **Job:** Tell the table what just happened and whose turn it is.
-- **Build:** The acting body, what it did, where on the field (hang it on a
-  landmark the table already knows: "across the flaming crack"), and the
-  visible result. Damage numbers stay with the DM. A hit is one or two
-  sentences; a kill or a turn in the fight (morale breaks, reinforcements,
-  terrain changes) gets one more. Combat updates happen live at the table;
-  prep writes openings and ticks, not turn-by-turn narration.
-- **End:** The next live threat or the next player's turn.
+- **Job:** Give the table a battlefield it can plan on.
+- **Build:** In the opening or creature slot of a beat that starts a fight:
+  the enemy groups and where they are, the landmarks, the cover, the high
+  ground, the hazards, and the ways out, each hung on something the party can
+  see. Several of the same creature each get one visible trait the table can
+  call them by (Split-Ear, Red Sash, Broken Spear), shown as they move into
+  place.
+- **End:** The first enemy move, before contact.
+
+## Moments
+
+### Social scene
+
+- **Job:** Show who holds power in the room before anyone speaks.
+- **Build:** Who is present, how they are arranged, what they are doing, and
+  the tension in the air, told through the arrangement itself: "Six merchants
+  sit along one side of the table and three naval officers along the other,
+  leaving the only empty chairs at the far end."
+- **End:** The silence, look, or line that invites the party in.
+
+### Suspense
+
+- **Job:** Build dread from partial evidence.
+- **Build:** Absence, uncertainty, and the consequence before its cause: "The
+  door is still locked from the inside. Beneath it, blood has begun to reach
+  the hallway." Controlled sentences that hold something back. Anything the
+  characters would plainly perceive is still stated; suspense comes from what
+  cannot be seen yet.
+- **End:** The next sign, closer.
+
+### Revelation
+
+- **Job:** Land a major reveal so the table feels it.
+- **Build:** The familiar first, then the one thing that contradicts it, then
+  the central image, then stop: "At first the valley looks as it did
+  yesterday. There are no birds. Beyond the ridge, where the town stood, a
+  column of black smoke climbs from the crater to the clouds." No explanation
+  of what it means.
+- **End:** The central image, with nothing after it.
+
+### Return to a known place
+
+- **Job:** Show what changed since the party was last here.
+- **Build:** The place's anchor from the earlier visit, and how it has
+  changed: "Half the blue lanterns are gone. The rest burn even in daylight."
+  Then only what is new, including what the party's own actions caused.
+- **End:** The change that matters most to them now.
 
 ## Movement
 
@@ -220,7 +291,7 @@ handles, live edge. The beat type decides what leads.
 ### Recap
 
 - **Job:** Bring the table back to where they stopped.
-- **Build:** Past tense, 4–8 sentences, only what play made true, told as a
+- **Build:** Past tense, a short paragraph, only what play made true, told as a
   short story with the party as "you". Then switch to present tense for
   tonight's opening situation.
 - **End:** The live pressure that starts tonight.

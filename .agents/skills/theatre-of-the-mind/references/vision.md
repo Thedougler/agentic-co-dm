@@ -63,7 +63,7 @@ Resolve every embed to a file. Obsidian resolves a bare name
 (`![[attachments/shattered-sea/…]]`) is relative to `wiki/`.
 
 Open each file with the host vision tool so the picture is in context (Claude
-Code: `Read` on the image path; Grok: `read_file`). Reading the embed line is
+Code: `Read` on the image path; Codex: `view_image`; Grok: `read_file`). Reading the embed line is
 not seeing. A missing or unreadable file is marked unavailable; write from
 prose and invent nothing from its filename.
 
@@ -72,7 +72,9 @@ Done when every kept image is opened or marked unavailable.
 ## 4. Analyze
 
 Look at the whole picture, then region by region, and write what it shows as
-fragments on the fact list, each sourced `pixels:<path>`:
+keywords on the fact list, each sourced `pixels:<path>`. Name each color in
+one plain word or a comparison as you note it, so no swatch name reaches the
+draft:
 
 - **Identity:** silhouette and body plan, size against something in frame,
   colors and patterns, materials and textures, wear and damage, marks and
@@ -83,7 +85,7 @@ fragments on the fact list, each sourced `pixels:<path>`:
 - **Sense cues the picture supports:** wet sheen, steam, smoke, dust, blood,
   spray, wind in the grass.
 - **The eye's first stop:** the thing the picture makes you look at first.
-  It is the leading candidate for the focus (`SKILL.md` step 5).
+  It is the leading candidate for the anchor (`SKILL.md` step 5).
 
 Text lettered onto a reference sheet (labels, callouts, notes) is prose, not
 pixels; treat it like the owner page.
@@ -114,8 +116,10 @@ Placing, minting, or editing art belongs to `visual-aids`.
 ## 6. Weave
 
 The durable facts the pixels add beyond the prose are why you opened the
-art. Carry the ones that set the subject apart into the block, folded onto the
-body that owns them, in spoken prose. The table hears the thing, never a
+art. Carry the few per subject that set it apart into the block, folded
+onto the body that owns them, in spoken prose. The rest stay on your list: the
+art is evidence, not a checklist to recite, and a block that recites it is an
+inventory. The table hears the thing, never a
 description of a picture ("in the image", "the art shows").
 
 **Weak:** A deer-stalker of Aruhe stands in the trees.

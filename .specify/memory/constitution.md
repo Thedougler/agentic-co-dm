@@ -1,10 +1,10 @@
 <!--
 Sync Impact Report
-- Version change: 3.0.2 -> 3.1.0
-- Modified principles: none
-- Added sections: XXVI. Skill Evaluation Uses the Weakest Sufficient Model
+- Version change: 3.1.0 -> 4.0.0
+- Modified principles: XV (done-summary follows a clean lint), XXI (redefined: one linter; every finding is an issue; clean means zero issues)
+- Added sections: none
 - Removed sections: none
-- Follow-up TODOs: none
+- Follow-up TODOs: remove finding tiers from lint tooling, specs, docs, and skills that still grade findings into kinds (see XXI)
 -->
 
 # Agentic Co-DM Constitution
@@ -125,7 +125,7 @@ without asking. Reuse existing software and patterns before inventing.
 
 ### XV. Autonomous Operation
 
-Agents complete requested work and unattended maintenance with no approval wait. After applicable checkable rules are green, emit one short done-summary.
+Agents complete requested work and unattended maintenance with no approval wait. When `wiki lint` is clean (principle XXI) and every other checkable rule passes, emit one short done-summary.
 
 Current standards are the only baseline. Legacy behavior has no grandfathered status — proactively
 correct nonconformance when discovered. When the user directs work on a feature branch, that
@@ -173,11 +173,14 @@ its context cost. No hedging required steps with "maybe", "perhaps", "consider",
 `writing-for-agents` is the authority on structure and pruning. This principle MUST NOT be used to
 delete necessary safeguards or quality-critical domain detail.
 
-### XXI. Linter Findings Require Root-Cause Repair
+### XXI. One Linter; Every Issue Is Fixed
 
-Every finding is evidence of a defect. Repair the cause and rerun. MUST NOT evade by rewording
-without fixing, weakening rules, or adding exclusions. Recurring causes require fixing the
-authoritative template/skill/instruction.
+`wiki lint` is the project's one lint system, and every finding it reports is an **issue**.
+Every issue is in scope and MUST be fixed at its cause, then the lint rerun. Work is **clean**
+only when the linter reports zero issues; while any issue remains, the work is not done. Clean
+has one meaning, and no qualifier or grouping of findings makes any issue optional or out of
+scope. MUST NOT evade by rewording without fixing, weakening rules, or adding exclusions.
+Recurring causes require fixing the authoritative template/skill/instruction.
 
 ### XXII. Appropriate Delegation
 
@@ -222,6 +225,8 @@ Sync Impact Report (2026-09-18): MAJOR 3.0.0. Redefined X, XV, XVII and Operatin
 
 Sync Impact Report (2026-09-19): PATCH 3.0.1. Clarified III: filing a new named campaign page is Campaign Work and MUST complete that kind's owner skill before the page is filed. Routing tables stay in `AGENTS.md`. No principle added or renamed. Wiki, Vale, and templates unchanged.
 
+Sync Impact Report (2026-09-23): MAJOR 4.0.0. Redefined XXI: `wiki lint` is the one lint system; every finding is an issue; every issue is in scope and fixed; clean means zero issues, with one meaning. XV's done-summary now follows a clean lint. Lower layers that sort findings into kinds must converge on XXI.
+
 Sync Impact Report (2026-09-19): PATCH 3.0.2. Clarified XXV: the user's named set is the work set; shrinking it with filters, hardcoded special cases, or a smallest-slice reading is a carve-out. Default is one uniform composed path. `AGENTS.md` operationalizes. No principle added or renamed.
 
 ## Operating Boundaries
@@ -251,4 +256,4 @@ Versioning: MAJOR (remove/redefine principle), MINOR (add principle/section), PA
 Compliance reviews check proposed work against this constitution before merge. Project context:
 `AGENTS.md`. Harness behavior: `.omp/AGENTS.md`, `CODEX.md`, `CLAUDE.md`, `GROK.md`.
 
-**Version**: 3.1.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-19
+**Version**: 4.0.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-23

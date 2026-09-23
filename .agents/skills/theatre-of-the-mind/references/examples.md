@@ -6,20 +6,28 @@ made up for illustration and are never canon.
 
 ## Contents
 
-- Beat openings: Hook, Hook resuming mid-scene, Development, Cliffhanger, Climax
+- Beat openings: compact default, Hook, Hook resuming mid-scene, Development, Cliffhanger, Climax
 - Closing image
 - Beat slots: zone and tick cells, creature in scene, How the Scene Resolves
 - NPC first look with dialogue
-- Combat updates
+- Outcome cells
 - Travel, recap, handout
 - Portraits: creature, place, item, hazard, faction
-- Weak → strong pairs
+- Weak → strong pairs: stub, inventory, generic filler, assigned feelings, slop, rules, resolved attack, useless facts
+
+## Compact opening (the default shape)
+
+> The shrine fills the lowest chamber of the sea caves, and every surface is slick with salt water, though the tide sits far below you. Three stone doors ring the chamber, and only the western one is dry. From behind it comes the slow scrape of something heavy being dragged.
+
+Why it works: three sentences. The schema (a sea-cave shrine), the anchor
+(wet walls far above the tide), the handles grouped (three doors, one dry),
+and a sound that is both atmosphere and threat ends it.
 
 ## Hook opening
 
 > You are halfway across the ford, the river pulling cold and waist-deep around you, when the far bank starts to move. What looked like a fallen log rolls onto its side and becomes a flat-bottomed boat, and three figures in reed cloaks rise out of the mud beside it with short bows already bent. Behind you, the near bank is a few strides of slick stones and a wagon stuck to its axles, the mule braying and throwing its head. Upstream, a rope bridge sags across the water with one plank missing near the middle. The tallest archer calls out over the rush of the river, voice flat and patient: "Packs in the water. Then hands." An arrow thumps into the wagon's side, a hand's width from the mule's neck.
 
-Why it works: the disturbance lands in sentence one; the focus (log into boat)
+Why it works: the disturbance lands in sentence one; the anchor (log into boat)
 is unforgettable; the archers are in motion; the wagon, the mule, the bridge
 with its missing plank, and the demand are all handles; it ends on a warning
 shot that forces a choice.
@@ -36,7 +44,7 @@ the players can see.
 
 > The shack is one room on stilts, so low that the drying nets strung from the rafters brush the top of a tall head. Rain drums on the tin roof and drips through in two places, into a bucket and onto a map pinned flat to the table with four fish hooks. The ferryman, a lean old half-orc with one ear notched like a tally stick, sits over it with a lantern pulled close and does not look up. His thumb rests on the map where the river forks, and around that spot he has drawn a circle in fresh charcoal, three times over. "You're the ones asking about the barge," he says. "Sit, or stand in the wet. Either way, you'll want to see this."
 
-Why it works: a calm frame with sound and drip; the focus is the circle
+Why it works: a calm frame with sound and drip; the anchor is the circle
 drawn three times; the map and the ferryman are both handles; his line
 invites the scene to turn.
 
@@ -80,21 +88,24 @@ image is quiet and clear.
 
 ## NPC first look with dialogue
 
-> Behind the counter, a heavyset gnome in a leather apron stands on an upturned crate so she can see over it, weighing silver on a brass scale with a pair of tweezers. Her spectacles are pushed up into a nest of gray braids, and a pencil stub is tucked behind one ear. The shop smells of lamp oil and cold metal. She does not stop weighing. "If you're selling, it goes on the scale," she says. "If you're buying, you're standing in my light."
+> The moneychanger is a gnome standing on an upturned crate to see over her own counter, and she is weighing silver on a brass scale with tweezers. She does not look up. "If you're selling, it goes on the scale," she says. "If you're buying, you're standing in my light."
 
-Why it works: three visual details a player could repeat next session; one
-smell; she is busy doing something; her line tells the players exactly what
-she wants and invites a reply.
+Why it works: role and first read, one feature a player will repeat next
+session (the crate), one behavior that never stops (weighing), and a line that
+tells the players exactly what she wants.
 
-## Combat updates
+## Outcome cells
 
-**A hit:**
+**The cargo net is cut loose:**
 
-> The raider's cutlass skids off your shield and he stumbles into the rail. Behind him, the two in the rigging have cut the last line on the cargo net, and it swings loose over the deck. Mira, you're up.
+> ==_The net drops across the deck in a wet heap, pinning one raider under it and forcing the other two around toward the rail._==
 
-**A turn in the fight:**
+**The second raider falls (a turn in the fight):**
 
-> The bolt takes the second raider under the arm, and he folds over the rail and drops into the surf. The last one stares at the empty deck where his friends stood, lets his cutlass clatter to the planks, and starts backing toward the stern.
+> ==_The bolt takes the second raider under the arm, and he folds over the rail into the surf. The last one stares at the empty deck, lets his cutlass clatter to the planks, and starts backing toward the stern._==
+
+Why they work: each shows only what changed, then the new situation the next
+player acts on.
 
 ## Travel
 
@@ -147,8 +158,38 @@ Strong:
 > The door opens on a long, low common room packed shoulder to shoulder, the ceiling beams close enough for a tall person to touch and black with pipe smoke. A fiddler stands on a table at the far end, and half the room is stamping along with him, sloshing beer onto the sawdust. The only empty space is around the hearth, where a woman in a soaked blue cloak sits alone with a sword across her knees and a plate of food going cold beside her. The barkeep, a one-armed dwarf with a braided beard, looks straight at you across the crowd and tips his head toward her, hard, twice. Then the fiddle stops mid-note, and every head in the room turns to the door behind you.
 
 The weak version gives nothing to picture or grab. The strong one has a
-frame, a focus (the woman with the sword), motion, handles (the barkeep, the
+frame, an anchor (the woman with the sword), motion, handles (the barkeep, the
 woman, the crowd), and a live edge.
+
+**Inventory → felt scene.**
+
+Weak:
+
+> You stand on wet gravel beside a gray lake, with pine forest to the east and a wooden jetty to the north. A tall, gaunt, pale-skinned man with long gray-white hair, sunken brown eyes, and a patched blue-green coat stands on the jetty; a nine-foot pale-white heron stands beside him. Mist covers the far shore.
+
+Strong:
+
+> Cold comes off the lake in a breath you feel through your cloaks, and the gravel under your boots is slick with the same mist that swallows the far shore. At the end of the wooden jetty, a man so thin his patched coat hangs on him like a sail is feeding a heron from a bucket, and the heron is taller than he is, its white neck coiling down to take each fish from his fingers. Every time it swallows, the planks creak under its weight. The man looks up at the crunch of your steps, a fish still dangling from his hand, and the heron's head turns with him.
+
+The weak version is true and dead: a spec sheet for each body, a semicolon,
+paint-chip colors, a measurement. The strong one hits the body first (cold,
+slick gravel), gives each figure two details that stick (the coat like a sail,
+the coiling neck), shows the heron's size by what it does to the man and the
+planks, and ends on both heads turning.
+
+**Generic filler → evidence.**
+
+Weak:
+
+> You enter a large old room. There are many bookshelves and some tables. It is dusty and dark. There is a strange statue at the other end.
+
+Strong:
+
+> The old library rises two stories around you, its upper shelves lost in darkness. Dust lifts from the tables with every step, except along one path across the floor that someone has recently walked. It ends at a stone statue facing the wall.
+
+The strong version gives scale, an anchor, dust as evidence, a route, and
+something worth walking toward; "strange" becomes a statue turned the wrong
+way.
 
 **Assigned feelings → the world does the work.**
 

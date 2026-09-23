@@ -2,7 +2,7 @@
 
 Recipes for a wiki owner page's `[!narration]`: one subject described as it
 always is, so any DM can read it aloud the first time the players meet it.
-Third person, present tense, one full paragraph of 4–7 connected sentences
+Third person, present tense, one full paragraph of connected sentences
 (a place with tells runs longer; see Place or region).
 The matching example is in [examples.md](examples.md).
 
@@ -20,7 +20,9 @@ The matching example is in [examples.md](examples.md).
   terms (shape and size) fused with its most distinctive feature. Everything
   else hangs on that.
 - **Your own order.** Choose the order that makes this subject vivid, not the
-  order of the source page's headings. Rephrase every source sentence.
+  order of the source page's headings. Build every sentence new from your
+  keywords; a rephrased source sentence is still an echo (`SKILL.md` hard
+  line 5).
 - **Stable behavior only.** Ordinary habits the parent states (grazes, basks,
   hums, spins) are welcome. Signature attacks, hunting sequences, and reactions
   to an intruder belong to encounters, not the portrait.
@@ -35,8 +37,9 @@ The matching example is in [examples.md](examples.md).
   repeat next session; clothing and gear with their wear; one sound or smell
   that comes off them, with its source; what their hands do when nothing is
   happening; where they are usually found, in one clause.
-- **Face:** When `npc-design` hands you a packet, its face details appear word
-  for word. Every later scene reuses them.
+- **Face:** When `npc-design` hands you a packet, every face detail in it
+  appears, said in your own sentence. Later scenes bring the same features
+  back, described fresh.
 - **Tells:** Every tell in the packet appears as plain appearance or habit
   (a fresh tear in the ledger under her arm), at the same weight as the
   details around it, with no signal word and never its meaning.
@@ -74,8 +77,8 @@ The matching example is in [examples.md](examples.md).
   as a plain perceivable fact inside a sentence about the noun that owns it, at
   the same weight as the details around it, with no signal word (strangely,
   oddly, curiously, out of place). Length follows the tells: fold them onto
-  owner nouns first, then add sentences until every tell is in; past about
-  seven sentences, break into a second paragraph.
+  owner nouns first, then add sentences until every tell is in; when the
+  paragraph grows long, break it into a second one.
 - **Leave out:** current inhabitants, encounters, the truth behind any tell,
   hidden routes (their visible sign can be a tell), mechanics, invented events
   at the end ("then everything goes still").
