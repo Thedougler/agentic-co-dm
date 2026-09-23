@@ -42,6 +42,12 @@ Semantic page findings → existing owner skill (`faction-design`,
 lint evidence. Rerun lint on the affected scope after each owner return.
 `wiki-dedup`, `cross-linker`, `tag-taxonomy` only for their named findings.
 
+### Output-contract synchronization
+
+Treat the lint profile, `wiki/templates/`, the applicable template contract, and the named owner skill as one D&D output contract. Before repairing pages, compare their required headings, frontmatter, callouts, layout markers, and content jobs. If those source artifacts disagree, record the mismatch in `errors.md` and reconcile the authoritative sources before mass page repair; never make pages conform to contradictory rules. Pages that fail an agreed contract are the intended lint work, not evidence that the contract is broken.
+
+The synchronized target is DM utility, complete-sentence readability, playable choices, and player fun without inventing canon. After any contract or owner-skill change, lint a representative page and the resolved scope, then reindex QMD before continuing. A clean structural result is necessary but not sufficient when the repair leaves an empty or unusable D&D job.
+
 
 
 ## Method

@@ -51,3 +51,7 @@ flexGrow=1
 ### When posture changes
 ```
 ````
+ 
+## Voice
+
+No voice is canon for Mirela Cass. [[sula-marn|Reeve Sula Marn]] keeps strangers away from her name, and the current telling does not put Mirela on stage. Do not invent dialogue.

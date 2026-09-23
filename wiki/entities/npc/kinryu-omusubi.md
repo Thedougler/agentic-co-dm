@@ -67,6 +67,9 @@ Kinryu's posture changes when the family's claim or the capital's harbor interes
 ```
 ````
 
+## Voice
+
+Kinryu's voice is not established in the source. The page identifies him as the public face of the Omusubi Family's royal claim, but it records no sample line or verbal habit. Do not invent dialogue until the DM accepts one.
 ## Connections
 
 | Connection | Meaning |
@@ -74,3 +77,4 @@ Kinryu's posture changes when the family's claim or the capital's harbor interes
 | [[omusubi-family|Omusubi Family]] | Kinryu leads the self-proclaimed royal family. |
 | [[Zennitana]] | Capital and harbor base. |
 | [[ryu-no-kage|Ryu no Kage]] | Covert organization loyal to the family. |
+ 

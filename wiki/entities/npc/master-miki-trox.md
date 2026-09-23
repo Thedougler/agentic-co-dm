@@ -67,6 +67,10 @@ Miki's posture changes when visitors treat the trials as a performance instead o
 ```
 ````
 
+## Voice
+
+Master Miki Trox's voice is not established in the source. The page establishes a disciplined leader who treats survival as instruction, but it records no verbal habit or sample line. Do not invent dialogue until the DM accepts one.
+
 ## Connections
 
 | Connection | Meaning |

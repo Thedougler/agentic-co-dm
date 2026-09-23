@@ -62,3 +62,7 @@ flexGrow=1
 Anyone treating him as a mere dock runner, or trying to take the lock from him, ends the welcome.
 ```
 ````
+ 
+## Voice
+
+Varn speaks in short possessive statements about the inner lock. His only established line is, “This gate is mine.” No refusal or pressure line is canon; do not invent either.
