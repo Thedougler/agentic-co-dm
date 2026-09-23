@@ -67,6 +67,10 @@ Besko's posture changes when an outside threat reaches the island; the Horntails
 ```
 ````
 
+## Voice
+
+Akibana Besko's voice is not established in the source. The page establishes an openly defensive clan leader, but it records no verbal habit or sample line. Do not invent dialogue until the DM accepts one.
+
 ## Connections
 
 | Connection | Meaning |
