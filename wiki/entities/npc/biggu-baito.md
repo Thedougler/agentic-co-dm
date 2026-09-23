@@ -67,6 +67,10 @@ Baito's posture changes when someone threatens the Ryu no Kage or tries to expos
 ```
 ````
 
+## Voice
+
+Biggu Baito's voice is not established in the source. The page establishes a physically imposing general who protects [[madam-hino|Madam Hino]]'s secret, but it records no verbal habit or sample line. Do not invent dialogue until the DM accepts one.
+
 ## Connections
 
 | Connection | Meaning |
