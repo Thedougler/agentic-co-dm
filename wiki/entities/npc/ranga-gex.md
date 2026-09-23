@@ -67,6 +67,10 @@ Ranga's posture changes when an outside threat reaches Tokage or when someone te
 ```
 ````
 
+## Voice
+
+Ranga Gex's voice is not established in the source. The page establishes a twin leader protecting the Ebony Scales' trade and anti-slavery reputation, but it records no verbal habit or sample line. Do not invent dialogue until the DM accepts one.
+
 ## Connections
 
 | Connection | Meaning |
