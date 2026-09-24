@@ -1,46 +1,58 @@
 <!--
 Sync Impact Report
-- Version change: 6.0.0 -> 6.0.1 (PATCH: XXIV validation-rules wording clarified for the Vale
-  decision in specs/030-self-improving-architecture 7c62d79b; meaning unchanged). Carried from
-  5.0.0 -> 6.0.0 (MAJOR: XIII redefined; the log-every-friction and different-agent-diagnosis
-  rules are removed).
+- Version change: 6.0.1 -> 7.0.0 (MAJOR: X redefined; the canon-proposal lifecycle, where Co-DM
+  writing stays a marked proposal until the DM accepts it, is removed and replaced by Nick's
+  three-rule canon, specs/030-self-improving-architecture FR-047 and SC-015 at 5ce37294)
 - Modified principles:
-  - XIII. Self-Improvement Is Evidence-Driven: the self-reporting SOP is replaced by a friction
-    rule. The agent that meets friction fixes the source, verifies it, and continues; `errors.md`
-    holds only reusable, unresolved defects; a matching source and cause add an occurrence to the
-    open entry; a verified fix drains its entry in the same change. Removed: "MUST record the issue
-    in `errors.md` before continuing" and "MUST be diagnosed by a different agent".
-  - VI. Software and Instructions Are Agent-Shaped: "log it, fix or remove the cause" -> fix or
-    remove the cause under XIII; record it in `errors.md` only when it stays unresolved.
-  - XIX. User Corrections Become Durable Source Fixes: "Every error-identifying correction MUST be
-    recorded in the error ledger and, when recurring, fixed at the producing
-    skill/template/instruction" -> fixed and verified at the producing skill/template/instruction;
-    recorded in `errors.md` only when that fix cannot land in the current task (XIII).
-  - XXIV. Synchronized Content Systems (6.0.1): "validation rules (Vale)" -> "validation rules
-    (`wiki lint` Python checks, and Vale with the repo-local `Deprecated` style and the `CoDM`
-    vocabulary)". Rationale: FR-023 puts repository-specific structural and semantic checks in the
-    Python wiki tooling, "not in new custom Vale styles"; FR-022 keeps "`styles/Deprecated/*.yml`
-    and `Vocab = CoDM`" unchanged and removes only the `CoDM` style reference. Replaces the 6.0.0
-    wording "Vale prose packages", which omitted the kept `Deprecated` style.
+  - X. DM Owns Canon: the four canon sources (`user_said`, `more_recent_user_said`,
+    `corrected_transcript`, `dm_placed_ingest`) and "Everything else it writes is a **canon
+    proposal** (XII): marked, listed for the DM, and canon only once the DM accepts it" are
+    replaced by Nick's rule, verbatim and in precedence order, with
+    `.agents/skills/llm-wiki/SKILL.md` as its single owner; agents apply it and code only reports conflicts and single-source facts
+    (FR-047 items 1-3). The boundary paragraph (DM truth, player-visible, unrevealed) is unchanged.
+  - XII. Evidence Precedes Invention: "Current accepted canon outranks legacy, proposed, and
+    external context" -> "Current canon (X) outranks legacy and external context"; "agents decide
+    it as a canon proposal (X), distinguishable from retrieved fact" -> silence is decided under X,
+    contradictions name the conflicting sources under X.
+  - XVII. The Wiki Is Additive and Self-Sealing: "Canon files immediately under principle X; canon
+    proposals stay marked until the DM accepts them." -> "Canon is decided under principle X."
+  - Reviewed, no change: I and Operating Boundaries ("accepted canon", "Filed wiki facts follow
+    principle X") do not require proposals; XIII "evidence supports promotion" concerns
+    self-improvement changes, not wiki page promotion; XVII "accepted facts" names existing canon.
+  - Carried unchanged from 6.0.0/6.0.1: VI, XIII, XIX, XXIV.
 - Added sections: none
-- Removed sections: none (the 5.0.0 Sync Impact Report is replaced; git holds amendment history)
+- Removed sections: none (the 6.0.1 Sync Impact Report is replaced; git holds amendment history)
 - Templates requiring updates:
-  - .specify/templates/constitution-template.md: no change needed (resolved scaffold; structure
-    unchanged)
+  - .specify/templates/constitution-template.md: no change needed (structure unchanged)
   - .specify/templates/plan-template.md: no change needed (Constitution Check reads the
-    constitution at runtime; no XIII-specific text)
-  - .specify/templates/spec-template.md: no change needed (no `errors.md` or XIII text)
-  - .specify/templates/tasks-template.md: no change needed (no `errors.md` or XIII text)
-  - .specify/templates/checklist-template.md: no change needed (no `errors.md` or XIII text)
-- Lower layers pending (not edited by the constitution step):
-  - AGENTS.md "errors.md" procedure ("On runtime failure, append to `errors.md` before the sitting
-    is complete."): pending; must record only unresolved, reusable defects per XIII
-  - .agents/skills/wiki-lint/SKILL.md ("record the mismatch in `errors.md` and reconcile the
-    authoritative sources"): pending; reconcile first, record only if unresolved
-  - scripts/error-ledger.py and errors.md format (`status`, `cause_fixed`; no `source` or
-    `evidence`): pending; implemented by specs/030-self-improving-architecture FR-006-FR-010
-  - .vale.ini `BasedOnStyles` still names the absent `CoDM` style: pending; FR-022 removes only
-    that reference (`styles/Deprecated/*.yml` and `Vocab = CoDM` stay unchanged)
+    constitution at runtime)
+  - .specify/templates/spec-template.md, tasks-template.md, checklist-template.md: no change
+    needed (no canon-proposal, promotion, or confidence text; checklist "lifecycle" is Spec Kit's)
+- Lower layers pending (not edited by the constitution step; FR-047, SC-015):
+  - .agents/skills/llm-wiki/SKILL.md: does not yet contain the rule; its "Confidence and
+    Lifecycle" section (`base_confidence`, lifecycle, promotion to `core`) is still present
+  - AGENTS.md line 87 ("Everything else is a marked canon proposal the DM accepts (XII)"):
+    pending; point to llm-wiki
+  - wiki/AGENTS.md line 54 (`lifecycle` field) and line 62: pending
+  - docs/agents/work.md lines 7 and 51 ("marked canon proposal"): pending
+  - CONTEXT.md line 123 and "Canon proposal" term (line 248): pending
+  - docs/agents/table-ready.md lines 99 and 115 (`lifecycle: proposed`, "canon proposal"): pending
+  - docs/adr/0003-canon-changes-are-proposals.md: pending; conflicts with X
+  - .agents/skills/plan-session/SKILL.md line 107 ("offer a canon proposal"): pending
+  - .agents/skills/wiki-lint/consolidate.md section 3 "Lifecycle corrections": pending; FR-047
+    deletes it
+  - wiki/templates/*.md (`lifecycle: proposed`; work.md line 30 "`lifecycle` stays `proposed`")
+    and wiki/templates/contracts/*.yml (`lifecycle` required, `base_confidence` optional): pending
+  - lifecycle/confidence fields and rules in .agents/skills (wiki-import, wiki-export,
+    vehicle-design and evals), tools/, scripts/wiki-lint, rules/registry.yml, tests/: pending
+  - Carried from 6.0.0: AGENTS.md line 196 ("On runtime failure, append to `errors.md` before the
+    sitting is complete."): pending; record only unresolved, reusable defects per XIII
+  - Carried from 6.0.0: .agents/skills/wiki-lint/SKILL.md line 47 ("record the mismatch in
+    `errors.md`"): pending; reconcile first, record only if unresolved
+  - Carried from 6.0.0: scripts/error-ledger.py and errors.md format (`status`, `cause_fixed`; no
+    `source` or `evidence`): pending; FR-006-FR-010
+  - Carried from 6.0.1: .vale.ini `BasedOnStyles` still names the absent `CoDM` style: pending;
+    FR-022 removes only that reference (`styles/Deprecated/*.yml` and `Vocab = CoDM` stay)
 - Follow-up TODOs: carried from 4.0.0 (see XXI): remove finding tiers from lint tooling, specs,
   docs, and skills that still grade findings into kinds
 -->
@@ -124,14 +136,18 @@ and duplicate instructions are waste.
 
 ### X. DM Owns Canon
 
-If the user said it, it is canon. If the user said it more recently, that is more canon. If a
-transcript says it, after ASR issues are fixed, it is canon. DM-placed ingest files are canon as
-long as they do not contradict those three.
+Canon is decided by Nick's rule, in precedence order:
 
-The Co-DM files what those lines make canon (`user_said`, `more_recent_user_said`,
-`corrected_transcript`, `dm_placed_ingest`). Everything else it writes is a **canon proposal**
-(XII): marked, listed for the DM, and canon only once the DM accepts it. The DM picks the winner
-among contradictions; the Co-DM proposes a reading and names the conflicting sources.
+> Something is canon if the DM says so > something is canon if it's present in the wiki in
+> multiple places > something is canon if it doesn't conflict with the wiki.
+
+That is the entire system: there is no page lifecycle, promotion, or confidence gate. The rule's
+single owner is `.agents/skills/llm-wiki/SKILL.md`; other lower layers link to it and MUST NOT
+restate it. Agents apply the rule; code MUST NOT assign, store, or gate on canon, and MAY only
+report the facts that feed it (declared conflicts and single-source facts). A DM ruling is
+recorded where the repo already records it (session log, recap `## Wiki facts`, or the DM's chat
+statement filed on the owner page) and cited in that page's `sources:`. Where wiki sources
+conflict, the agent names the conflicting sources; `retcon` handles corrections.
 
 The system preserves boundaries between DM truth, player-visible information, and unrevealed
 information. A presentation surface MUST NOT expose information outside its intended boundary.
@@ -148,11 +164,11 @@ failure, and unexpected approaches, and no predetermined player outcome is the o
 
 ### XII. Evidence Precedes Invention
 
-Agents MUST retrieve authoritative knowledge before inventing. Current accepted canon outranks
-legacy, proposed, and external context. Existing content is cast before new content is minted: a
+Agents MUST retrieve authoritative knowledge before inventing. Current canon (X) outranks
+legacy and external context. Existing content is cast before new content is minted: a
 page already in play, or an unrevealed page that fits the role, fills it first. Where canon is
-silent or contradicts itself on something the Work needs, agents decide it as a canon proposal
-(X), distinguishable from retrieved fact; a gap left open where the DM needs an answer is a
+silent on something the Work needs, agents decide it under X; where it contradicts itself, agents
+name the conflicting sources under X. A gap left open where the DM needs an answer is a
 defect. Evidence and citations MUST never be fabricated.
 
 ### XIII. Self-Improvement Is Evidence-Driven
@@ -199,7 +215,7 @@ MUST NOT restate shared behavior.
 
 ### XVII. The Wiki Is Additive and Self-Sealing
 
-The Wiki is the single compiled, citable knowledge layer. Raw evidence is immutable. Changes land as traceable additive operations with provenance. Agents MUST NOT overwrite history or silently merge competing facts. Canon files immediately under principle X; canon proposals stay marked until the DM accepts them.
+The Wiki is the single compiled, citable knowledge layer. Raw evidence is immutable. Changes land as traceable additive operations with provenance. Agents MUST NOT overwrite history or silently merge competing facts. Canon is decided under principle X.
 Incompatible records MUST be quarantined with an observable error.
 
 Safe deterministic maintenance repairs structural drift without inventing lore or changing
@@ -306,4 +322,4 @@ Versioning: MAJOR (remove/redefine principle), MINOR (add principle/section), PA
 Compliance reviews check proposed work against this constitution before merge. Project context:
 `AGENTS.md`. Harness behavior: `.omp/AGENTS.md`, `CODEX.md`, `CLAUDE.md`, `GROK.md`.
 
-**Version**: 6.0.1 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-24
+**Version**: 7.0.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-24
