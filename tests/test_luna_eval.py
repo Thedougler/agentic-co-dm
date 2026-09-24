@@ -185,3 +185,34 @@ def test_skill_selected_grades_the_first_owner_skill_read():
     assert miss["passed"] is False
     none = grade([{"type": "skill_selected", "text": "city-design"}], {"skills_read": []})[0]
     assert none["passed"] is False and "no SKILL.md" in none["evidence"]
+
+
+def _bench_run(root: Path, eval_id: str, config: str, outcome: str, passed: dict, tools: int, model: str = "gpt-6-luna"):
+    run = root / eval_id / config / "run-1"
+    run.mkdir(parents=True)
+    (root / eval_id / "eval_metadata.json").write_text(json.dumps({"eval_id": eval_id, "eval_name": eval_id}))
+    (run / "grading.json").write_text(json.dumps({"task_outcome": outcome, "expectations": [
+        {"text": t, "passed": p, "evidence": "", "type": "behavior"} for t, p in passed.items()]}))
+    (run / "metrics.json").write_text(json.dumps({"total_tool_calls": tools, "retries": 0, "tokens": {"total": tools * 100},
+                                                  "model": model, "effort": "high"}))
+    (run / "timing.json").write_text(json.dumps({"duration_ms": tools * 1000, "exit": 0}))
+
+
+def test_promotion_report_lists_regressions_and_medians_without_a_verdict(tmp_path: Path):
+    script = ROOT / ".agents/skills/skill-creator/scripts/aggregate-benchmark.py"
+    _bench_run(tmp_path, "a", "old_skill", "pass", {"x": True, "y": True}, 10)
+    _bench_run(tmp_path, "a", "with_skill", "fail", {"x": True, "y": False}, 6)
+    _bench_run(tmp_path, "b", "old_skill", "pass", {"z": True}, 20)
+    _bench_run(tmp_path, "b", "with_skill", "pass", {"z": True}, 8)
+    proc = subprocess.run([sys.executable, str(script), str(tmp_path)], capture_output=True, text=True)
+    assert proc.returncode == 0, proc.stderr
+    report = json.loads((tmp_path / "benchmark.json").read_text())["report"]
+    a, b = report["per_eval"]
+    assert (a["task_outcome_regression"], a["incumbent_pass_candidate_fail"]) == (True, ["y"])
+    assert (b["task_outcome_regression"], b["incumbent_pass_candidate_fail"]) == (False, [])
+    assert report["medians"]["old_skill"]["total_tool_calls"] == 15 and report["medians"]["with_skill"]["total_tool_calls"] == 7
+    text = proc.stdout.lower()
+    assert "±" not in text and "verdict" not in text and "promote" not in text
+    _bench_run(tmp_path, "c", "with_skill", "pass", {"z": True}, 8, model="other-model")
+    refused = subprocess.run([sys.executable, str(script), str(tmp_path)], capture_output=True, text=True)
+    assert refused.returncode == 2 and "model or effort" in json.loads(refused.stdout)["error"]
