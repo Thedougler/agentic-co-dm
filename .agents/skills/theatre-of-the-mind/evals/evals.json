@@ -1388,7 +1388,7 @@
    "expected_output": "A player-facing recap that retells Session 11 as an engaging story: the heroic and funny moments the table reacted to told in specific detail, every PC credited, mechanics turned into fiction, only play-supported events, ending on Skarn's attack on Crissdalynn as live pressure.",
    "assertions": [
     {
-     "text": "Retells the table's standout moments with their specific, vivid detail, not a summary line: at least four of Delmar's crit shot on the spiguar and the jaw kick, Perrin's leap off Crissdalynn's back onto the spiguar with a green-flame blade, the two otters colliding midair when Crissdalynn dodges, Crissdalynn carrying the lotus into camp while Matteo sprints away, Perrin setting the lotus down perfectly and then collapsing in helpless laughter while Delmar hunts for an invisible caster, the cloak turning Skarn's first strike",
+     "text": "Retells the table's standout moments with their specific, vivid detail, not a summary line: at least four of Delmar's crit shot on the spiguar and the jaw kick, Perrin's leap off Crissdalynn's back onto the spiguar with a green-flame blade, the two otters colliding midair, Crissdalynn carrying the lotus into camp while Matteo sprints away, Perrin setting the lotus down perfectly and then collapsing in helpless laughter while Delmar hunts for an invisible caster, the cloak turning the falcon's first strike",
      "type": "quality"
     },
     {
