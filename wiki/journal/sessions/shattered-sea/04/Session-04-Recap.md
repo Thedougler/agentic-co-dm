@@ -39,7 +39,7 @@ Played 2026-05-31. Pearl named. Festival clock starts.
 >
 > You were back out on the cobbles when Crissdalynn hooked Delmar's ankle out from under him and dropped him on his back for walking into a goddess's house alone.
 >
-> Then the stone in Perrin's hand spoke, and it was Nona. *Bring your friends, especially the blue one.* In the dark under the Warren she showed you six Grung, the first of their kind to come over the Strait in living memory, and then she put a meal in front of you that left you stronger than you had walked in, and sent you down after the rest of them.
+> Then the stone in Perrin's hand spoke, and it was Nona. *Bring your friends, especially the blue one.* In the dark under the Warren her two bodyguards, Enzo and Ruk, were still clearing away the six Grung you had just put down, the first of their kind to come over the Strait in living memory, and Nona put a meal in front of you that left you stronger than you had walked in, and sent you down after the rest of them.
 >
 > You found the powder boat and burned it where it sat. When the light came back, a purple stood in the smoke and called Jean-Claude a traitor to his face, and Jean-Claude ended him there. You took Felix Aho alive, and Felix was the one who talked. He said they would hit the festival crowds on the second day, with six ships behind the powder, the charges already stacked in the scaffolds under the streets, purple garrisons over every cache and red-caste leaders above the purple. He told Jean-Claude that Simone's hunters kill leavers on sight, and that his name had just gone on that list. Then he bargained for his life, one month of it, and Nona put Ruk on his door.
 >
