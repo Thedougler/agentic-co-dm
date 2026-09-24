@@ -94,7 +94,7 @@ The file is a `# Error ledger` heading, a blank line, then one JSON object per l
 
 ## 5 Wiki page frontmatter (FR-047)
 
-Removed from every page, template, contract, and fixture: `lifecycle`, `lifecycle_changed`, `lifecycle_reason`, `base_confidence`, `canon_status`. Kept: `reveal`, `visibility`, `truth`, `invention`, entity `status`, `sources`, `tier`, `relationships`, `redirects_to`.
+Removed from every page, template, contract, and fixture: `lifecycle`, `lifecycle_changed`, `lifecycle_reason`, `base_confidence`, `canon_status`, `superseded_by` (documented only; no page uses it). Kept: `reveal`, `visibility`, `truth`, `invention`, entity `status`, `sources`, `tier`, `relationships`, `redirects_to`.
 
 - Campaign required fields become `type`, `reveal` (`tools/lint_wiki.py` `CAMPAIGN_REQUIRED`) plus the generic `title`, `category`, `tags`, `sources`, `created`, `updated`.
 - Canon is not stored. The agent decides it under the rule in `.agents/skills/llm-wiki/SKILL.md`. A DM ruling is cited in `sources:` (session log under `wiki/journal/sessions/<campaign>/<NN>/`, recap `## Wiki facts`, or the filed DM statement).
