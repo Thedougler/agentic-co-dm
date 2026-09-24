@@ -1,81 +1,168 @@
-#!/usr/bin/env bash
-# Run one skill eval on Luna 6 (Codex CLI) as the behavioral test subject.
-# Policy (who grades, dispatch all at once, stop on usage limit): CLAUDE.md
-# § Behavioral Test Subject. This script owns the command.
-#
-# Usage (repo root):
-#   ./scripts/luna-eval <skill-dir> <eval-id> <iteration-dir> [config]
-#
-#   skill-dir      skill whose evals/evals.json holds <eval-id>
-#   eval-id        the eval's "id"
-#   iteration-dir  e.g. <skill-name>-workspace/iteration-3 (gitignored)
-#   config         with_skill (default) or a baseline label such as old_skill;
-#                  set SUBJECT_SKILL=<dir> to point a baseline at a snapshot
-#
-# The subject skill is SUBJECT_SKILL, else the eval's "subject_skill", else
-# <skill-dir>. Writes <iteration-dir>/<eval-id>/eval_metadata.json and
-# <iteration-dir>/<eval-id>/<config>/run-1/{outputs/output.md,
-# outputs/process.md, events.jsonl, final.txt, timing.json}.
-#
-# Run one call per eval, each in its own background shell.
-# Exit: 0 done, 2 bad args or eval, 3 usage-limit marker present (dispatch
-# nothing until it resets, then delete <workspace>/CODEX_LIMIT), 4 subject
-# finished without outputs/output.md, 5 this run hit the usage limit.
-set -uo pipefail
+#!/usr/bin/env python3
+"""Run one Luna 6 (Codex CLI) behavioral test subject: a skill eval or any ad-hoc task.
 
-[ $# -ge 3 ] || { sed -n '2,24p' "$0"; exit 2; }
-REPO=$(git rev-parse --show-toplevel)
-SKILL=$(cd "$1" && pwd); ID=$2; ITER=$(mkdir -p "$3" && cd "$3" && pwd); CONFIG=${4:-with_skill}
-MODEL=${LUNA_MODEL:-gpt-6-luna}
-LIMIT=$(dirname "$ITER")/CODEX_LIMIT
-[ -f "$LIMIT" ] && { echo "usage-limit marker present: $LIMIT"; cat "$LIMIT"; exit 3; }
+Policy (who grades, dispatch all at once, re-run only failures, stop on usage
+limit): CLAUDE.md § Behavioral Test Subject. This script owns the Codex command.
 
-EVAL_DIR="$ITER/$ID"; RUN="$EVAL_DIR/$CONFIG/run-1"; mkdir -p "$RUN/outputs"
-META=$(python3 - "$SKILL" "$ID" "$EVAL_DIR" <<'PY'
-import json, sys
-skill, eid, out = sys.argv[1:]
-evals = json.load(open(f"{skill}/evals/evals.json"))["evals"]
-e = next((x for x in evals if str(x.get("id")) == eid), None)
-if e is None:
-    sys.exit(f"no eval '{eid}' in {skill}/evals/evals.json")
-json.dump({"eval_id": e["id"], "eval_name": e["id"], "prompt": e["prompt"],
-           "assertions": e.get("assertions", [])}, open(f"{out}/eval_metadata.json", "w"), indent=1)
-print(json.dumps(e["prompt"]))
-print(e.get("subject_skill", skill))
-PY
-) || exit 2
-TASK=$(python3 -c 'import json,sys; print(json.loads(sys.argv[1]))' "$(sed -n 1p <<<"$META")")
-SUBJECT=$(sed -n 2p <<<"$META")
-SUBJECT=${SUBJECT_SKILL:-$SUBJECT}; case "$SUBJECT" in /*) ;; *) SUBJECT="$REPO/$SUBJECT";; esac
+  # a skill eval: prompt, inputs, and outputs come from <skill>/evals/evals.json
+  ./scripts/luna-eval --skill .agents/skills/session-beats --eval hook-from-plan \\
+      --out session-beats-workspace/iteration-1
 
-PROMPT="Execute this task. Repo root: $REPO.
+  # any task, with or without a skill (--no-skill or no --skill = baseline)
+  ./scripts/luna-eval --task "Compose the Session 13 beats from ..." \\
+      --skill .agents/skills/session-beats --name s13-beats --out scratch/luna
 
-- Skill path: $SUBJECT (read SKILL.md first and follow it, including any references it points you to)
-- Task: $TASK
-- Save outputs to: $RUN/outputs/ (this exact path)
-- Outputs to save: \`output.md\` (exactly what you would return: the finished deliverable plus anything you would return alongside it), and \`process.md\` (a plain ordered list of every file you opened or searched for, including image files, and every shell search you ran).
+One call per subject, each in its own background shell. The subject never
+touches the repo: every page it would create or edit is written under
+<run>/outputs/ at its repo-relative path, beside response.md (what it would
+say back) and process.md (every file and image it opened, every search).
 
-Read-only: do NOT modify anything under wiki/ or .agents/. Only write the two output files."
+Eval fields read from evals.json (all optional except id and prompt):
+  prompt         the task
+  files          input files the subject must use
+  outputs        what to deliver, replacing the default description
+  context        extra instructions appended to the prompt (constraints,
+                 success criteria, scope)
+  subject_skill  skill the subject runs, when it is not the skill that owns
+                 the eval (e.g. a recap eval owned by theatre-of-the-mind but
+                 run through session-recap)
 
-start=$(date +%s)
-codex exec -m "$MODEL" -s workspace-write -C "$REPO" --skip-git-repo-check --json \
-  -o "$RUN/final.txt" "$PROMPT" > "$RUN/events.jsonl" 2> "$RUN/stderr.txt" < /dev/null
-rc=$?
-secs=$(( $(date +%s) - start ))
-echo "{\"duration_ms\": $((secs * 1000)), \"total_duration_seconds\": $secs, \"exit\": $rc}" > "$RUN/timing.json"
+Run layout: <out>/<name>/eval_metadata.json and
+<out>/<name>/<config>/run-<n>/{outputs/, events.jsonl, final.txt, timing.json}.
 
-if python3 - "$RUN/events.jsonl" <<'PY'
-import json, re, sys
-for line in open(sys.argv[1]):
-    try: e = json.loads(line)
-    except ValueError: continue
-    if e.get("type") in ("error", "turn.failed") or e.get("item", {}).get("type") == "error":
-        if re.search(r"usage limit|rate.?limit|quota|hit your", json.dumps(e), re.I): sys.exit(0)
-sys.exit(1)
-PY
-then
-  echo "$(date) $RUN" >> "$LIMIT"; pkill -f "codex exec -m $MODEL"
-  echo "Codex usage limit: stopped every Luna run; marker at $LIMIT"; exit 5
-fi
-[ -s "$RUN/outputs/output.md" ] || { echo "$ID: no outputs/output.md (check final.txt for a misplaced path)"; exit 4; }
-echo "$ID done in ${secs}s: $RUN/outputs/output.md"
+Exit: 0 done; 2 bad arguments or eval; 3 usage-limit marker present (dispatch
+nothing until the limit resets, then delete <out>/../CODEX_LIMIT); 4 subject
+wrote no deliverable under outputs/; 5 this run hit the usage limit (every
+Luna run was stopped).
+"""
+import argparse
+import json
+import re
+import subprocess
+import sys
+import time
+from datetime import datetime
+from pathlib import Path
+
+REPO = Path(subprocess.run(["git", "rev-parse", "--show-toplevel"], capture_output=True,
+                           text=True, check=True).stdout.strip())
+DEFAULT_OUTPUTS = (
+    "Write every page or file you would create or edit under {outputs}/ at its "
+    "repo-relative path (for example {outputs}/wiki/journal/sessions/<campaign>/<NN>/<page>.md), "
+    "complete as you would file it. Write what you would say back to the requester in "
+    "{outputs}/response.md."
+)
+
+
+def load_eval(skill: Path, eval_id: str) -> dict:
+    path = skill / "evals" / "evals.json"
+    evals = json.loads(path.read_text())["evals"]
+    found = next((e for e in evals if str(e.get("id")) == eval_id), None)
+    if found is None:
+        sys.exit(f"no eval '{eval_id}' in {path}")
+    return found
+
+
+def build_prompt(task: str, skill: Path | None, spec: dict, outputs: Path) -> str:
+    lines = [f"Execute this task. Repo root: {REPO}.", ""]
+    if skill:
+        lines.append(f"- Skill: {skill} (read SKILL.md first and follow it, including every "
+                     "reference and skill it points you to)")
+    lines.append(f"- Task: {task}")
+    if spec.get("files"):
+        lines.append("- Input files: " + ", ".join(spec["files"]))
+    lines.append("- Outputs: " + (spec.get("outputs") or DEFAULT_OUTPUTS).replace("{outputs}", str(outputs)))
+    lines.append(f"- Also write {outputs}/process.md: a plain ordered list of every file you "
+                 "opened or searched for (image files included) and every shell search you ran.")
+    if spec.get("context"):
+        lines.append(f"- Context: {spec['context']}")
+    lines += ["", f"Do not modify anything in the repo outside {outputs}/. Paths above are exact."]
+    return "\n".join(lines)
+
+
+def hit_usage_limit(events: Path) -> bool:
+    for line in events.read_text().splitlines():
+        try:
+            e = json.loads(line)
+        except ValueError:
+            continue
+        if e.get("type") in ("error", "turn.failed") or e.get("item", {}).get("type") == "error":
+            if re.search(r"usage limit|rate.?limit|quota|hit your", json.dumps(e), re.I):
+                return True
+    return False
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    src = ap.add_mutually_exclusive_group(required=True)
+    src.add_argument("--eval", help="eval id in <skill>/evals/evals.json")
+    src.add_argument("--task", help="free-form task text")
+    src.add_argument("--task-file", type=Path, help="file holding the task text")
+    ap.add_argument("--skill", type=Path, help="skill that owns --eval, and the subject's skill by default")
+    ap.add_argument("--subject-skill", type=Path, help="skill the subject follows instead (e.g. a snapshot for old_skill)")
+    ap.add_argument("--no-skill", action="store_true", help="subject gets no skill (without_skill baseline)")
+    ap.add_argument("--out", type=Path, required=True, help="iteration dir, e.g. <skill>-workspace/iteration-3")
+    ap.add_argument("--name", help="run name (default: the eval id)")
+    ap.add_argument("--config", default="with_skill", help="with_skill, without_skill, old_skill, ...")
+    ap.add_argument("--run", type=int, default=1, help="run number, for repeated runs")
+    ap.add_argument("--context", help="extra instructions appended to the prompt")
+    ap.add_argument("--model", default="gpt-6-luna")
+    a = ap.parse_args()
+
+    spec: dict = {}
+    if a.eval:
+        if not a.skill:
+            ap.error("--eval needs --skill (the skill whose evals.json holds it)")
+        spec = load_eval(a.skill.resolve(), a.eval)
+        task = spec["prompt"]
+    else:
+        if not a.name:
+            ap.error("--task and --task-file need --name")
+        task = a.task or a.task_file.read_text()
+    # precedence: --no-skill, --subject-skill, the eval's subject_skill, --skill
+    skill = (None if a.no_skill else a.subject_skill.resolve() if a.subject_skill
+             else REPO / spec["subject_skill"] if spec.get("subject_skill")
+             else a.skill.resolve() if a.skill else None)
+    if a.context:
+        spec["context"] = " ".join(filter(None, [spec.get("context"), a.context]))
+
+    out = a.out.resolve()
+    limit = out.parent / "CODEX_LIMIT"
+    if limit.exists():
+        print(f"usage-limit marker present: {limit}\n{limit.read_text()}")
+        return 3
+    name = a.name or str(spec["id"])
+    run = out / name / a.config / f"run-{a.run}"
+    outputs = run / "outputs"
+    outputs.mkdir(parents=True, exist_ok=True)
+    (out / name / "eval_metadata.json").write_text(json.dumps(
+        {"eval_id": spec.get("id", name), "eval_name": name, "prompt": task,
+         "assertions": spec.get("assertions", [])}, indent=1))
+
+    prompt = build_prompt(task, skill, spec, outputs)
+    (run / "prompt.txt").write_text(prompt)
+    start = time.time()
+    with open(run / "events.jsonl", "w") as ev, open(run / "stderr.txt", "w") as err:
+        rc = subprocess.run(["codex", "exec", "-m", a.model, "-s", "workspace-write", "-C", str(REPO),
+                             "--skip-git-repo-check", "--json", "-o", str(run / "final.txt"), prompt],
+                            stdout=ev, stderr=err, stdin=subprocess.DEVNULL).returncode
+    secs = round(time.time() - start)
+    (run / "timing.json").write_text(json.dumps(
+        {"duration_ms": secs * 1000, "total_duration_seconds": secs, "exit": rc}))
+
+    if hit_usage_limit(run / "events.jsonl"):
+        with open(limit, "a") as f:
+            f.write(f"{datetime.now().isoformat()} {run}\n")
+        subprocess.run(["pkill", "-f", f"codex exec -m {a.model}"])
+        print(f"Codex usage limit: stopped every Luna run; marker at {limit}")
+        return 5
+    delivered = [p for p in outputs.rglob("*") if p.is_file() and p.name != "process.md"]
+    if not delivered:
+        print(f"{name}: nothing under {outputs} (check final.txt for a misplaced path)")
+        return 4
+    print(f"{name} done in {secs}s: " + ", ".join(str(p.relative_to(outputs)) for p in delivered))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

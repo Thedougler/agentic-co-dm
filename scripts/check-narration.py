@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Grading aid for theatre-of-the-mind eval output (grader only, never the subject).
+"""Grading aid for any eval whose output carries player-facing `[!narration]` prose
+(scene openings, beat pages, portraits, recaps). For the grader only, never the subject.
 
-usage: python3 scripts/check-narration.py --draft <output.md> [--source <page.md> ...]
+usage: python3 scripts/check-narration.py <file-or-dir> ... [--source <page.md> ...]
 
---draft   a subject's output.md, or any file holding a narration block; the
-          first `[!narration]` callout is checked when there is one
+paths     subject outputs: files or directories; every `[!narration]` callout
+          in every .md is checked (a file with none is checked whole)
 --source  each page or old block the facts came from; copied five-word phrases
           are reported against all of them (quoted speech exempt)
 
-Prints the block, then one lead per line (long sentences, punctuation, paint-chip
+Prints each block, then one lead per line (long sentences, punctuation, paint-chip
 colors, grid distances, compass legends, labels, copied phrases), then sentence
 and word counts. Leads are for the grader to judge, not pass/fail gates: the
 skill sets no hard counts. Exit 1 when any lead remains, 0 when clean.
@@ -27,15 +28,21 @@ PC_PERCEIVE = r"\byou (?:see|notice|spot|realize|realise|feel|sense|recognize|un
 LABELS = r"\b(?:hub|slack|magnet|live edge|windup|focus image|cold portrait)\b"
 
 
+def narration_blocks(raw: str) -> list:
+    """Every `> [!narration] Title` callout as (title, text); the whole text when there is none."""
+    rows, blocks = raw.splitlines(), []
+    for i, ln in enumerate(rows):
+        m = re.match(r"\s*>\s*\[!narration\][-+]?\s*(.*)", ln)
+        if not m:
+            continue
+        end = next((k for k in range(i + 1, len(rows)) if not rows[k].lstrip().startswith(">")), len(rows))
+        body = "\n".join(re.sub(r"^\s*>\s?", "", r) for r in rows[i + 1:end]).strip()
+        blocks.append((m.group(1).strip() or "narration", body))
+    return blocks or [("text", raw.strip())]
+
+
 def narration_text(raw: str) -> str:
-    rows = raw.splitlines()
-    start = next((i for i, ln in enumerate(rows) if "[!narration]" in ln), None)
-    if start is not None:  # first narration callout only, not the notes after it
-        end = next((i for i in range(start + 1, len(rows)) if not rows[i].startswith(">")), len(rows))
-        rows = rows[start:end]
-    lines = [re.sub(r"^>\s?", "", ln) for ln in rows]
-    lines = [ln for ln in lines if not ln.strip().startswith("[!")]
-    return "\n".join(lines).strip()
+    return narration_blocks(raw)[0][1]
 
 
 def grams(text: str, n: int = 5) -> set:
@@ -83,19 +90,26 @@ def check(body: str, sources: list) -> list:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--draft", required=True)
-    ap.add_argument("--source", action="append", default=[])
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("paths", nargs="+", type=Path, help="files or directories (every .md inside)")
+    ap.add_argument("--source", action="append", default=[], help="page or old block to check copying against")
     a = ap.parse_args()
-    body = narration_text(Path(a.draft).read_text())
-    findings = check(body, a.source)
-    print(body, end="\n\n")
-    for f in findings:
-        print(f"  ! {f}")
-    flat = " ".join(body.split())
-    sentences = [s for s in re.split(r"(?<=[.!?])\s+", flat) if s]
-    print(f"  {'clean' if not findings else f'{len(findings)} leads'}; sentences={len(sentences)} words={len(flat.split())}")
-    return 1 if findings else 0
+    files = [f for p in a.paths for f in (sorted(p.rglob("*.md")) if p.is_dir() else [p])
+             if f.name != "process.md"]
+    total = 0
+    for f in files:
+        for title, body in narration_blocks(f.read_text()):
+            findings = check(body, a.source)
+            total += len(findings)
+            flat = " ".join(body.split())
+            sentences = [s for s in re.split(r"(?<=[.!?])\s+", flat) if s]
+            print(f"=== {f.name} :: {title} (sentences={len(sentences)} words={len(flat.split())})")
+            print(body)
+            for finding in findings:
+                print(f"  ! {finding}")
+            print()
+    print("clean" if not total else f"{total} leads")
+    return 1 if total else 0
 
 
 if __name__ == "__main__":

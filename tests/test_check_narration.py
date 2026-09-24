@@ -22,3 +22,9 @@ def test_reports_copied_phrases_but_not_quoted_speech(tmp_path):
     findings = cn.check(body, [str(src)])
     assert any("a thin line hangs in" in f for f in findings)
     assert not any("back from the water" in f for f in findings)
+
+
+def test_finds_every_narration_block_on_a_beat_page():
+    page = ("# Beat\n\n> [!narration] Initial Narration\n> Smoke hangs low.\n\n"
+            "| Zone | Narration |\n|---|---|\n\n```col-md\n> [!narration] Exit\n> The door slams.\n```\n")
+    assert [t for t, _ in cn.narration_blocks(page)] == ["Initial Narration", "Exit"]

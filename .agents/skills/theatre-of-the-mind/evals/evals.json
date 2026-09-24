@@ -1386,7 +1386,8 @@
      "type": "quality"
     }
    ],
-   "core": true
+   "core": true,
+   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   },
   {
    "id": "hinewai-first-look",
@@ -1430,7 +1431,8 @@
      "type": "quality"
     }
    ],
-   "core": true
+   "core": true,
+   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   },
   {
    "id": "session-11-recap",
@@ -1479,7 +1481,8 @@
     }
    ],
    "core": true,
-   "subject_skill": ".agents/skills/session-recap"
+   "subject_skill": ".agents/skills/session-recap",
+   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   },
   {
    "id": "false-help-initial-narration",
@@ -1543,7 +1546,8 @@
      "type": "quality"
     }
    ],
-   "core": true
+   "core": true,
+   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   },
   {
    "id": "hook-open-on",
@@ -1607,7 +1611,8 @@
      "type": "quality"
     }
    ],
-   "core": true
+   "core": true,
+   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   },
   {
    "id": "development-initial-narration",
@@ -1671,7 +1676,8 @@
      "type": "quality"
     }
    ],
-   "core": true
+   "core": true,
+   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   },
   {
    "id": "climax-opening-image",
@@ -1735,7 +1741,8 @@
      "type": "quality"
     }
    ],
-   "core": true
+   "core": true,
+   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   },
   {
    "id": "resolution-closing-image",
@@ -1779,7 +1786,8 @@
      "type": "quality"
     }
    ],
-   "core": true
+   "core": true,
+   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   },
   {
    "id": "fate-spinner-portrait",
@@ -1819,7 +1827,8 @@
      "type": "quality"
     }
    ],
-   "core": true
+   "core": true,
+   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   }
  ]
 }
