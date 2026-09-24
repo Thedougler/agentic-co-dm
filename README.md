@@ -102,7 +102,7 @@ Run these steps once from a fresh checkout. On later sessions, start at [Verify 
 Run these checks from the repository root after activating `.venv`:
 
 ```bash
-python3 tools/check_wiki_pages.py
+./scripts/wiki lint
 specify --version
 qmd status
 npm run check:python

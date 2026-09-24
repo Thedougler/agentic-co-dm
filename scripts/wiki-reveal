@@ -26,7 +26,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from tools.check_wiki_pages import frontmatter
+from tools.lint_wiki import frontmatter
 from tools.wiki_ops.cli import resolve_vault
 from tools.wiki_ops.scope import SKIP_DIRS
 
@@ -44,8 +44,8 @@ def scan(vault: Path) -> list[dict[str, str]]:
     for path in sorted(vault.rglob("*.md")):
         if not path.is_file() or SKIP_DIRS.intersection(path.relative_to(vault).parts):
             continue
-        keys = frontmatter(path.read_text(encoding="utf-8", errors="replace"))
-        if keys is None:
+        block, keys = frontmatter(path.read_text(encoding="utf-8", errors="replace"))
+        if block is None:
             continue
         page = {
             "path": path.relative_to(vault).as_posix(),
