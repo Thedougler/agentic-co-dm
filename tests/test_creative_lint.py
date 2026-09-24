@@ -48,24 +48,27 @@ def test_bundle_resolution_caps_diagnostics():
 
 
 
-def test_vale_deprecated_output_gets_typed_repair():
+def test_vale_repo_local_style_is_human_repair(tmp_path):
     registry = Registry.load(ROOT / "rules" / "registry.yml")
     findings = map_vale_output(
         {"wiki/example.md": [{"Check": "Deprecated.DMThesis", "Line": 15,
                               "Span": [1, 12], "Match": "## DM Thesis",
-                              "Message": "delete the deprecated section"}]},
+                              "Message": "DM Thesis is deprecated"}]},
         registry,
         root=ROOT,
     )
     assert findings[0].rule_id == "VALE_Deprecated.DMThesis"
     assert findings[0].severity == "REPAIR"
-    assert findings[0].repair_class == "deterministic_repair"
-    assert findings[0].repair_action["kind"] == "delete_section"
+    assert findings[0].repair_class == "human_repair"
+    assert findings[0].repair_action is None
 
+    from tools.wiki_ops.repair_plans import build_safe_fix_plan
 
-
-
-
+    (tmp_path / "example.md").write_text("# Example\n\n## DM Thesis\n", encoding="utf-8")
+    finding = findings[0].to_dict() | {"file": "example.md"}
+    operations, skipped = build_safe_fix_plan(tmp_path, [finding], scope={"paths": ["example.md"]})
+    assert operations == []
+    assert skipped == []
 
 
 def test_shadow_recorder_writes_jsonl(tmp_path):
