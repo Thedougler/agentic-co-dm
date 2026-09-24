@@ -548,9 +548,8 @@ def snake_case_owner_basenames(pages: dict[str, dict]) -> list[dict[str, object]
             out.append({"page": rel, "stem": stem, "kind": "snake", "line": 1})
     return out
 
-# Obsidian Markdown rules (folded from scripts/lint-obsidian-markdown and
-# scripts/lint-literal-newlines). Only the table pipe escape has one correct
-# output; every other finding needs an agent's call under wiki-lint.
+# Obsidian Markdown rules. Only the table pipe escape has one correct output;
+# every other finding needs an agent's call under wiki-lint.
 FENCE_OPEN = re.compile(r"`{3,}")
 MD_LINK = re.compile(r"(?<!!)\[([^\]]*)\]\((?!https?://)(?!mailto:)([^)]+\.md(?:#[^)]*)?)\)", re.I)
 MD_LINK_PATH = re.compile(r"(?<!!)\[([^\]]*)\]\((?!https?://)(?!mailto:)((?:wiki|attachments)/[^)]+)\)", re.I)

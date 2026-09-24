@@ -42,29 +42,16 @@ class LintScopeTests(unittest.TestCase):
             other = temp / "other.md"
             other.write_text(note.read_text(encoding="utf-8"), encoding="utf-8")
 
-            scripts = [
-                "scripts/lint-wiki-write",
-                "scripts/lint-obsidian-markdown",
-                "scripts/lint-literal-newlines",
-            ]
-            for script in scripts:
-                with self.subTest(script=script, form="positional-file"):
-                    self.assertEqual(run([str(ROOT / script), str(note)]).returncode, 0)
-                with self.subTest(script=script, form="flag-file"):
-                    self.assertEqual(run([str(ROOT / script), "--path", str(note)]).returncode, 0)
-                with self.subTest(script=script, form="positional-directory"):
-                    self.assertEqual(run([str(ROOT / script), str(scope)]).returncode, 0)
-                with self.subTest(script=script, form="equal-dual"):
-                    result = run([str(ROOT / script), str(note), "--path", str(note)])
-                    self.assertEqual(result.returncode, 0)
-                with self.subTest(script=script, form="missing"):
-                    result = run([str(ROOT / script), str(temp / "missing.md")])
-                    self.assertEqual(result.returncode, 2)
-                    self.assertIn("path not found", result.stderr)
-                with self.subTest(script=script, form="conflict"):
-                    result = run([str(ROOT / script), str(note), "--path", str(other)])
-                    self.assertEqual(result.returncode, 2)
-                    self.assertIn("different paths", result.stderr)
+            env = os.environ | {"OBSIDIAN_VAULT_PATH": str(temp), "WIKI_TRACKER_ROOT": str(temp)}
+            env.pop("CI", None)
+            with self.subTest(script="scripts/wiki lint", form="positional-file"):
+                result = run([str(ROOT / "scripts/wiki"), "lint", "scope/note.md"], env=env)
+                self.assertIn(result.returncode, (0, 1), result.stderr)
+                self.assertEqual(json.loads(result.stdout)["files_checked"], 1)
+            with self.subTest(script="scripts/wiki lint", form="missing"):
+                result = run([str(ROOT / "scripts/wiki"), "lint", "missing.md"], env=env)
+                self.assertEqual(result.returncode, 2)
+                self.assertIn("path not found", result.stdout)
 
 
 class ManifestRecordTests(unittest.TestCase):

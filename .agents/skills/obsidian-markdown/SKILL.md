@@ -32,7 +32,7 @@ Every wiki write must preserve vault wikilinks, `[!narration]` for spoken text, 
 - **Run-card roster:** embed the owner heading (`![[Bloodhawk#Statblock]]`) at the bottom. Put default-mode compact numbers on the action cards (`run-guide`). Do not retype the owner's full Multiattack/HP table into the card body. Do not embed the whole monster essay.
 - **Paths:** scratch → `inbox/`; **images/media** under `attachments/` (campaign subfolders ok). Embed with `![[attachments/…]]`; wikilink with `[[attachments/…]]`. See [[attachments/00 Attachments]] + [references/embeds.md](references/embeds.md). No parallel `wiki/` · `concepts/` · `sources/` tree.
 - **Surgical edits only:** Edit the elements in scope for the current pass. Preserve existing image embeds, wikilink paths, frontmatter fields, and structure unless that exact element is broken and verified broken. A copy pass edits copy; it does not rewrite embeds or paths.
-- **Lint:** Run `./scripts/lint-wiki-write` (obsidian-markdown plus literal-newlines on session/beat bodies). The literal-newline check skips YAML frontmatter and fenced code/statblocks.
+- **Lint:** Run `./scripts/wiki lint` (obsidian-markdown plus literal-newlines on session/beat bodies). The literal-newline check skips YAML frontmatter and fenced code/statblocks.
 
 ## Write workflow
 
