@@ -17,6 +17,8 @@ tier: supporting
 created: 2026-09-12T04:56:01Z
 updated: 2026-09-12T04:56:01Z
 type: recap
+campaign: shattered-sea
+visibility: dm
 reveal: revealed
 relationships:
   - target: "[[pearl-of-souls]]"
@@ -29,20 +31,24 @@ relationships:
 Played 2026-05-31. Pearl named. Festival clock starts.
 
 > [!narration] Recap
-> Last time on the Shattered Sea, you took the Surety, freed Ket, and killed the whip-shark that had been striking the hull. You made landfall at Calveno and renamed the prize Uncertainty. Nona Black-Jaw called off her attacks for an unspecified favor. Master Kyzil found Crissdalynn Khinriss. The shrine was still waiting.
+> Jean-Claude sold the three whip-shark eggs that morning and spent the money before noon. He came back with a silent shortbow for himself and flying boots for Delmar. Then Kyzil took the four of you up onto a Ponte Bassa rooftop for a sparring morning, and between rounds he told you that the Maw had gone wrong since the wreck and that Calveno would keep him until the festival was over.
 >
-> Jean-Claude Tabarnack sold the whip-shark eggs. He bought a silent shortbow and a pair of Flying Boots for Delmar Fisk. Kyzil sparred you on a Ponte Bassa rooftop. He said the Maw had been unruly since the wreck, and that he was staying through the festival.
+> On the walk to the harbour, Delmar told you the truth about himself. He had been an admiral of a real privateer fleet, five ships with letters of marque, and that fleet had gone into a shrine and carried off the Pearl of Souls. The Maw took all five ships within hours of the theft.
 >
-> Walking to the harbor, Delmar told you the truth. He had been a real admiral of a five-ship privateer fleet. They stole the Pearl of Souls from a shrine, and the Maw destroyed the Fleet within hours.
+> At the shrine on the harbour Umberlee answered him. She took Branca's body and used it, and when she handed it back Branca had died and come back with nothing to say about the gap. The price she named was the Pearl. Delmar offered it to her and began explaining who had ordered the theft, and she pulled that answer out of his head before he reached it. *Bring me the pearl. We will talk then.*
 >
-> At the harbor shrine Umberlee took Branca's body, killed her, and brought her back. The price was the Pearl. Delmar offered the Pearl and the commissioners. She read it out of his head. Bring me the pearl. We will talk then.
+> You were back out on the cobbles when Crissdalynn hooked Delmar's ankle out from under him and dropped him on his back for walking into a goddess's house alone.
 >
-> Crissdalynn swept Delmar's legs for going to a goddess alone.
+> Then the stone in Perrin's hand spoke, and it was Nona. *Bring your friends, especially the blue one.* In the dark under the Warren she showed you six Grung, the first of their kind to come over the Strait in living memory, and then she put a meal in front of you that left you stronger than you had walked in, and sent you down after the rest of them.
 >
-> Then the stone in Perrin's hand spoke. Bring your friends, especially the blue one. Nona laid out six Grung in the Warren sewers, the first crossing of the Strait in living memory. She fed you a Hero's Feast and sent you down. You burned a powder boat. A purple called Jean-Claude a traitor before Jean-Claude ended it. You took Felix Aho alive. He told you they would hit under the festival crowds in two days, with six ships behind them. Simone's people kill leavers on sight. He asked for a month of protection. Nona set Ruk to guard him.
+> You found the powder boat and burned it where it sat. When the light came back, a purple stood in the smoke and called Jean-Claude a traitor to his face, and Jean-Claude ended him there. You took Felix Aho alive, and Felix was the one who talked. He said they would hit the festival crowds on the second day, with six ships behind the powder, the charges already stacked in the scaffolds under the streets, purple garrisons over every cache and red-caste leaders above the purple. He told Jean-Claude that Simone's hunters kill leavers on sight, and that his name had just gone on that list. Then he bargained for his life, one month of it, and Nona put Ruk on his door.
 >
-> Two days until the festival bombs. Felix is under Nona. The Pearl is still outstanding.
+> Calveno has two days before the powder under the festival goes off. Felix is alive in Nona's keeping, and the Pearl is still outstanding.
 
 ## Wiki facts
 
-[[delmar-fisk]] commanded a five-ship fleet that stole the [[pearl-of-souls]]; the Drowned Maw wrecked that fleet. Umberlee named the Pearl as her price. Felix Aho is under Nona. Two days remain until festival bombs. Next: [[Session-05-Recap]].
+[[delmar-fisk]] commanded a five-ship fleet with [[letters-of-marque|letters of marque]] on the theft of the [[pearl-of-souls]], and [[drowned-maw|the Maw]] wrecked it within hours. [[umberlee]] used [[umberlee-branca|Branca]]'s body at the Calveno harbour shrine to name the Pearl as her price, and pulled Delmar's account of the commissioners out of his head before he could offer it. The Pearl is still unrecovered, and its location remains known only to Delmar and Umberlee.
+
+[[jean-claude-tabarnack]] sold the three whip-shark eggs in the morning market and bought a silent shortbow for himself and the [[flying-boots|flying boots]] for [[delmar-fisk]]. [[master-kyzil]] sparred the crew on a [[ponte-bassa|Ponte Bassa]] rooftop and stayed in [[calven-and-calveno|Calveno]] through the festival. [[nona-black-jaw]]'s [[sending-stone-nonas|sending stone]] summoned them with *Bring your friends, especially the blue one*, and she fed them before the Warren raid. Six Grung crossed the Central Strait for the operation, the first crossing in living memory.
+
+The powder boat burned in [[Warren|the Warren]] is evidence the Grung operation moved powder by ship. [[felix-aho]] gave up the scaffolds, the purple garrisons under red-caste leaders, and the shipping network, then traded it for a month of protection that [[nona-black-jaw]] granted under [[Ruk]]'s guard. Jean-Claude learned that [[Grung]] defectors are a kill-on-sight category under [[simone-tabarnack|Simone]]'s hunters, which is the first time that rule reached the table. Next: [[Session-05-Recap]].
