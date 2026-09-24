@@ -63,13 +63,14 @@ The file is a `# Error ledger` heading, a blank line, then one JSON object per l
 {"tool_calls": {"command": 7, "file_change": 2}, "total_tool_calls": 9, "retries": 1,
  "invocation_errors": 1, "invocation_error_commands": ["scripts/wiki lint wiki/entities/place/Belumara.md"],
  "duplicate_actions": 0, "tokens": {"input": 0, "output": 0, "total": 0},
- "completion_reason": "ok|no_output|usage_limit|error", "skills_read": [".agents/skills/place-design/SKILL.md"]}
+ "completion_reason": "ok|no_output|usage_limit|error", "model": "gpt-6-luna", "effort": "high", "skills_read": [".agents/skills/place-design/SKILL.md"]}
 ```
 
+- `model`, `effort`: the values `luna-eval` actually passed to codex (its `--model`/`--effort`, defaults at run time), recorded in every run (FR-019). The FR-019 baseline and every later comparison (FR-043, SC-012) must use the same pair. A comparison whose runs differ in `model` or `effort` is invalid.
 - `retries`: a failed command re-run with identical argv.
 - `invocation_errors`: the number of `command_execution` items in `events.jsonl` that invoke an FR-027 command (`scripts/wiki`, `scripts/wiki-lint`, `scripts/luna-eval`, `scripts/error-ledger.py`, `scripts/manifest.py`) and were rejected as a usage error. A usage error is either the FR-035 error object on stdout (`"status":"error"` with an `example` key; see contracts/wiki-cli.md) or argparse's `usage: … error:` on stderr, with a non-zero exit. Such a call counts whether or not it is later corrected. `invocation_error_commands` lists the offending command lines. Exit codes alone are not used, because exit 2 also means "rejected" (`tools/wiki_ops/cli.py` `EXIT_REJECTED`). This is the SC-010 measure: a cold-agent run passes SC-010 only with `invocation_errors == 0`.
 
-`grading.json`: the existing `skill-creator` schema (`expectations[{text, passed, evidence}]`, `summary`), plus `type` on each item and the new top-level fields `task_outcome` (`pass|fail|blocked`) and `semantic_quality` (1–5 rubric score from `agents/grader.md`). A `skill_selected` item is graded by `luna-eval`: it passes when the first owner `SKILL.md` in `skills_read` matches `text`. Latency is taken from `timing.json`. Together, `timing.json`, `metrics.json`, and `grading.json` carry every FR-016 metric.
+`grading.json`: the existing `skill-creator` schema (`expectations[{text, passed, evidence}]`, `summary`), plus `type` on each item and the new top-level fields `task_outcome` (`pass|fail|blocked`) and `semantic_quality` = pass rate of that eval's `quality`-type assertions (passed / total, `null` when the eval has none), computed from the graded items (FR-016). The grader assigns no separate score. A `skill_selected` item is graded by `luna-eval`: it passes when the first owner `SKILL.md` in `skills_read` matches `text`. Latency is taken from `timing.json`. Together, `timing.json`, `metrics.json`, and `grading.json` carry every FR-016 metric.
 
 ## 4 Identity index (`wiki/_meta/identity-index.json`, derived)
 
@@ -87,4 +88,4 @@ The file is a `# Error ledger` heading, a blank line, then one JSON object per l
 - `pairs` holds `SequenceMatcher.ratio()` for pairs that passed the prefilter, keyed by the sorted content hashes. Entries whose hashes no longer match any row are pruned on save.
 - **Validity**: a row is reused when `(size, mtime_ns)` matches, or when the rehashed `content_sha256` matches. A changed `version`, a JSON error, or a changed `manifest_sha256` refreshes the affected state; version and parse errors rebuild everything.
 - **Result shape added to `wiki-lint --json`**: `"identity": {"status", "ambiguous", "scanned": <selected>, "compared": <|selected ∪ candidates|>, "index": {"hits", "misses"}}`.
-- **Tracking**: follows `lint-cache.json`. If `lint-cache.json` stays tracked, the index is tracked the same way. Otherwise both are ignored. One rule covers both files.
+- **Tracking**: `wiki/_meta/lint-cache.json`, `wiki/_meta/identity-index.json`, and `styles/config/vocabularies/CoDM/accept.txt` stay tracked. They are FR-028 bookkeeping written by lint, not read-side mutation (FR-017), and are committed with the change that caused them.

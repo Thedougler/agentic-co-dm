@@ -11,7 +11,7 @@ export PATH="$PWD/.venv/bin:$PATH"
 export OBSIDIAN_VAULT_PATH="$PWD/wiki"        # REQUIRED until FR-027 lands: ~/.obsidian-wiki/config points at /home/box/agentic-co-dm/wiki
 ```
 
-After a timing run, lint may have rewritten `wiki/_meta/lint-cache.json` and `styles/config/vocabularies/CoDM/accept.txt`. Run `git diff --stat` before committing.
+Lint rewrites the tracked bookkeeping files `wiki/_meta/lint-cache.json`, `wiki/_meta/identity-index.json`, and `styles/config/vocabularies/CoDM/accept.txt` (FR-028). After a scratch timing run, revert them rather than committing measurement state.
 
 ## Phase 1
 
@@ -24,7 +24,9 @@ After a timing run, lint may have rewritten `wiki/_meta/lint-cache.json` and `st
 | V-05 | Scoped timing (SC-007) | `scripts/wiki lint entities/place/Belumara.md` after editing one character of that page in a scratch branch; run it twice | Run 1 `timing.duration_ms` < 5000, and `identity.compared` equals selected + candidates, far below the page count. Run 2 has `cache.hits: 1`. Record both numbers here and on the maintainer workstation. Box reference 2026-09-24 (Vale on, pre-fix): 3.72 s / 0.28 s. |
 | V-06 | Identity parity (FR-025/026) | `python -c "from tools.wiki_ops.identity import scan_identities as s; import json,sys; json.dump([i.to_dict() for i in s('wiki')], sys.stdout, sort_keys=True)"` once with `wiki/_meta/identity-index.json` deleted and once warm; `diff` the two outputs; repeat with `--scope`-equivalent selection | Identical output. Whole-vault `wiki lint` findings match those at the pre-change commit. |
 | V-07 | Corrupt index (Edge Case) | Write `{` into `wiki/_meta/identity-index.json`, then run V-05 | The index is rebuilt and the findings match V-06. |
-| V-08 | Health baseline (SC-007) | `time scripts/wiki health` | Exits without a harness timeout. Wall time is recorded next to the SC-006 baseline. Box reference 2026-09-24 (cold, 836 misses): 82.3 s, identity 55.1 s. |
+| V-08 | Health, few pages changed (SC-007) | With the lint cache and identity index current, edit 1–3 pages, then `time scripts/wiki health` | < 10 s. Warm reference 2026-09-24 (spec): 2.6 s. |
+| V-08b | Health after a rules change (SC-007) | With the identity index current, change the rules digest (e.g. add a comment line to `.vale.ini` on a scratch branch) so every lint-cache entry misses, then `time scripts/wiki health`; confirm `lint.cache.misses` ≈ page count and `identity.index.misses` = 0 | < 50 s. Pre-change reference 2026-09-24 (no index): 82.3 s, identity 55.1 s. Revert the scratch edit afterwards. |
+| V-08c | Health from scratch (SC-007) | Delete `wiki/_meta/identity-index.json` and `wiki/_meta/lint-cache.json` on a scratch branch, then `time scripts/wiki health` | Finishes. Wall time is recorded next to the SC-006 baseline (no bound). |
 | V-09 | One eval schema (SC-003) | `python3 - <<<'import json,glob; bad=[f for f in glob.glob(".agents/skills/*/evals/evals.json") if "skill_name" not in (d:=json.load(open(f))) or any("expectations" in e or not e.get("assertions") for e in d["evals"])]; print(bad)'` and `rg -il "work gate|chat proposal" .agents/skills/*/evals/evals.json` | `[]`, and no matches asserting that behavior as required. |
 | V-10 | One runner (SC-004, SC-005) | `scripts/luna-eval --skill .agents/skills/place-design --eval <skill_selected id> --out /tmp/030/iteration-1`, then the same record through the skill-creator workflow | Both run dirs contain `timing.json`, `metrics.json`, and `grading.json` with the same keys. The `skill_selected` item has `passed: true`. |
 | V-11 | 026 references (SC-008) | `rg "check-agent-standards\|test_agent_standards\|AGENT00[1-3]" specs/026-agent-autonomy-scope` | No matches. |
@@ -44,5 +46,5 @@ After a timing run, lint may have rewritten `wiki/_meta/lint-cache.json` and `st
 
 | ID | Scenario | Command | Expected |
 |---|---|---|---|
-| V-18 | Promotion (SC-012) | Snapshot the incumbent skill, then `luna-eval --config old_skill --subject-skill <snapshot>` vs `--config with_skill` on the same ids, then `aggregate-benchmark.py` | The candidate is kept only if non-inferior on success and quality, with lower median tool calls, retries, or tokens. |
+| V-18 | Promotion (SC-012) | Snapshot the incumbent skill, then run `luna-eval --config old_skill --subject-skill <snapshot>` and `--config with_skill` once each on the same ids with the baseline `--model`/`--effort`, then `aggregate-benchmark.py` | Refused if any eval's task outcome is worse or any incumbent-passing assertion fails. Otherwise promoted only if the median of tool calls, retries, or tokens is lower, with none of the three higher. Mean ± stddev is not consulted. |
 | V-19 | Small skills (SC-013) | `wc -l` on touched owner `SKILL.md` before and after; rerun each skill's evals | Line count is not higher. Evals are non-inferior. The five FR-040 answers are present. |

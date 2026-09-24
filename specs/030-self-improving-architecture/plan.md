@@ -31,13 +31,13 @@ Phase order is binding (spec Assumptions): Phase 1 = US1–US4, Phase 2 = US5–
 
 **Project Type**: Agent-facing CLI tooling plus agent instructions (single repo, no service)
 
-**Performance Goals**: SC-007. Scoped lint of one changed page (cache miss, Vale on) under 5 s. Unchanged page served from the lint cache. `wiki health` finishes without a harness timeout, and its wall time is recorded.
+**Performance Goals**: SC-007. Scoped lint of one changed page (cache miss, Vale on) under 5 s. Unchanged page served from the lint cache. `wiki health` finishes under 50 s whenever the identity index is current, including after a lint-rules change that empties the lint cache, and under 10 s when only a few pages changed. A from-scratch rebuild (no index) is recorded, not bounded. The 50 s case depends on the index's cached pair ratios: from the measured cold components, identity drops from 55.1 s to about index-load cost, leaving creative engine 15.7 s + Vale 13.1 s + lint_wiki 1.9 s ≈ 31 s. That is an estimate until V-08b runs.
 
 **Constraints**: Findings stay the same (FR-025/FR-026): cached = cold, and the whole-vault run is unchanged. Commands take no prompts (FR-030). Mutations are idempotent and support `--dry-run` (FR-036/FR-037). The feature 027 result contract stays: agent-shaped default output, `--pretty`, no fuzzy paths.
 
 **Scale/Scope**: About 1,640 non-raw wiki pages. 60 eval files with 533 records (143 use `expectations[]`; 7 have no `skill_name`). 32 `errors.md` lines. 13 eval files carry Work-gate wording. 7 feature 026 docs cite absent executables (66 references).
 
-No NEEDS CLARIFICATION remains. The open design choices are settled in [research.md](research.md). The real spec gaps are listed at the end of this plan.
+No NEEDS CLARIFICATION remains. The open design choices are settled in [research.md](research.md). The spec gaps raised by this plan are listed at the end, all resolved by cae8bb44.
 
 ## Constitution Check
 
@@ -98,8 +98,9 @@ scripts/luna-eval                           # repo-root discovery, metrics.json 
 .agents/skills/skill-creator/SKILL.md       # invoke luna-eval; drop run-eval/run-loop description loop (FR-012, FR-015)
 .agents/skills/skill-creator/references/schemas.md   # evals.json = repo schema; grading/metrics = run contract
 .agents/skills/skill-creator/scripts/run-eval.py, run-loop.py, improve-description.py   # removed (FR-012, FR-015)
-.agents/skills/skill-creator/agents/grader.md        # grade assertions[] {type,text}; skill_selected from events
-.agents/skills/*/evals/evals.json           # 60 files: one schema, skill_name, Work-gate wording fixed, skill_selected evals (FR-013–FR-017, SC-005)
+.agents/skills/skill-creator/agents/grader.md        # grade assertions[] {type,text}; skill_selected from events; no rubric score
+.agents/skills/skill-creator/scripts/aggregate-benchmark.py   # per-eval regressions + medians for promotion (FR-044, SC-012)
+.agents/skills/*/evals/evals.json           # 60 files: one schema, skill_name, Work-gate wording fixed, skill_selected evals for the six owners place-design, faction-design, session-beats, run-guide, wiki-query, wiki-lint (FR-013–FR-017, SC-005)
 AGENTS.md                                   # line ~196 "Error ledger" + friction rule once (FR-002, FR-006–FR-010); SPECKIT block → this plan
 .agents/skills/wiki-lint/SKILL.md           # line ~47 "record the mismatch in errors.md" → reconcile first, record only if unresolved
 .agents/skills/{place-design,faction-design,session-beats,run-guide,wiki-query,wiki-lint}/SKILL.md   # five FR-040 answers; remove text moved into tools (FR-029, FR-040)
@@ -119,8 +120,8 @@ tests/test_error_ledger_repairs.py, tests/test_wiki_cli.py, tests/test_wiki_ops.
 - **Vale (FR-022/023)**: `BasedOnStyles = CoDM, Deprecated, …` becomes `BasedOnStyles = Deprecated, …` in all 6 sections. That includes region, creature, and npc, where only `Deprecated` remains. `styles/Deprecated/*.yml`, `Vocab = CoDM`, and `tools/creative_lint/vale_vocab.py` do not change. No `VALE_Deprecated` test changes. Drain e-212, e-214, e-215, e-216, e-218 in the same commit.
 - **026 references (FR-018)**: rewrite each of the 66 references to the current enforcing surface. That is `luna-eval` evals for agent behavior and `wiki lint` for wiki structure. A reference with no current surface is removed with a one-line "replaced by" note.
 - **Evaluator (FR-012–FR-017)**: see [contracts/eval-run.md](contracts/eval-run.md). `luna-eval` stays the only runner. It gains repo-root discovery, a deterministic `metrics.json` built from `events.jsonl`, and a deterministic `skill_selected` grade: the first owner `SKILL.md` the subject reads. `grader.md` grades the other assertion types into `grading.json`, which keeps the viewer's `text`/`passed`/`evidence` fields and adds `type`. The corpus conversion is scripted once and not kept (VIII does not apply to one-offs): each `expectations[]` string becomes `{type: "behavior", text}`, the drift types become `qualitative→quality` and `structural→structure`, and `skill_name` is added to the 7 files missing it. The Work-gate, approval, read-mutation, and retired-path wording in 13 files is edited by hand per record, because the assertion stays and only its behavior is updated (spec Edge Cases).
-- **029 baseline (FR-019)**: run the nine categories (at least 10 cases) through `luna-eval` and record them in `specs/029-agent-loop-closure/quickstart.md`, closing T003…T049. `wiki health` wall time is recorded beside them (SC-007).
-- **Identity (FR-024–FR-026)**: see research R4 and data-model §4. Rows for unchanged pages come from the index keyed by `content_sha256`, so only changed pages are read and profiled. Candidates for a selected page are pages of the same `type` that share an exact cheap signal (norm title, alias, stem, manifest provenance with stem ratio > 0.7, merge transition), plus pages that pass the existing character-profile prefilter. That prefilter is computed from cached profiles. `SequenceMatcher` runs only on those candidates, and each pair ratio is cached by the two content hashes, so a warm whole-vault or health run recomputes only pairs that touch changed pages. `wiki-lint` reports `identity: {scanned, compared, index: {hits, misses}}`. Whole-vault output is unchanged, because the candidate rule is the current rule evaluated from cached data.
+- **029 baseline (FR-019)**: run the nine categories (at least 10 cases) through `luna-eval` at its default model and effort. Each run's `metrics.json` records both, and SC-012 comparisons reuse the same pair. Record them in `specs/029-agent-loop-closure/quickstart.md`, closing T003…T049. The from-scratch `wiki health` wall time is recorded beside them (SC-007, V-08c).
+- **Identity (FR-024–FR-026)**: see research R4 and data-model §4. Rows for unchanged pages come from the index keyed by `content_sha256`, so only changed pages are read and profiled. Candidates for a selected page are pages of the same `type` that share an exact cheap signal (norm title, alias, stem, manifest provenance with stem ratio > 0.7, merge transition), plus pages that pass the existing character-profile prefilter (> 0.6), as FR-024 now states. That prefilter is computed from cached profiles. `SequenceMatcher` runs only on those candidates, and each pair ratio is cached by the two content hashes, so a warm whole-vault or health run recomputes only pairs that touch changed pages. `wiki-lint` reports `identity: {scanned, compared, index: {hits, misses}}`. Whole-vault output is unchanged, because the candidate rule is the current rule evaluated from cached data.
 
 ### Phase 2: close the loop (US5–US7)
 
@@ -131,14 +132,14 @@ tests/test_error_ledger_repairs.py, tests/test_wiki_cli.py, tests/test_wiki_ops.
 
 ### Phase 3: optimize (US8–US9)
 
-- **Promotion (FR-041–FR-044)**: incumbent = the skill file at HEAD, snapshotted with `luna-eval --subject-skill <snapshot> --config old_skill`. Candidate = the working-tree edit. Both run on the same eval ids and are compared with the existing `aggregate-benchmark.py` on `metrics.json` + `grading.json`. The rule, in order: success, then quality, then tool calls, retries, tokens, latency, scope. The candidate is kept only if it is non-inferior on both success and quality. No new script.
+- **Promotion (FR-041–FR-044)**: incumbent = the skill file at HEAD, snapshotted with `luna-eval --subject-skill <snapshot> --config old_skill`. Candidate = the working-tree edit. Each config gets one run on the same eval ids, with the same `model`/`effort` as the FR-019 baseline. The decision reads per-eval `grading.json` + `metrics.json`. Refuse if any eval's `task_outcome` is worse, or if any assertion that passed for the incumbent fails for the candidate (FR-044). Otherwise, promote only on a measurable reduction: a lower median of `total_tool_calls`, `retries`, or `tokens.total`, with none of the three higher (SC-012). Latency and scope break ties only. `aggregate-benchmark.py` is extended to emit these per-eval regressions and medians. Promotion does not use its mean ± stddev summary. No new script.
 - **Small skills (FR-029, FR-040, SC-013)**: for each of the six named owners, move procedure into `wiki lint fix`, `scripts/manifest.py`, and `wiki health` `next`, then delete that skill text and rerun its evals.
 
 ## Risks and dependencies
 
 - **XIII dependency**: met by v6.0.0/v6.0.1. US5/US6 can land in Phase 2.
 - **Identity parity**: FR-025/FR-026 require identical findings. Parity is proven by diffing `scan_identities` output cold vs index-warm on the live vault (quickstart V-06).
-- **Where the time goes**: for one page, `lint_wiki.py` is the largest cost (1.66 s of 3.44 s; identity 0.84 s), and SC-007's 5 s is already met with Vale. For a cold whole-vault or health run, identity dominates (55.1 s of 82.3 s), from pairwise ratios. The pair cache targets that. The creative engine (15.7 s) and Vale (13.1 s) are out of this feature's scope unless the health baseline shows a harness timeout.
+- **Where the time goes**: for one page, `lint_wiki.py` is the largest cost (1.66 s of 3.44 s; identity 0.84 s), and SC-007's 5 s is already met with Vale. For a cold whole-vault or health run, identity dominates (55.1 s of 82.3 s), from pairwise ratios. The pair cache targets that. The creative engine (15.7 s) and Vale (13.1 s) stay unchanged unless V-08b shows the 50 s bound is missed.
 - **Box setup**: the repo has no committed venv. Timing needs `uv venv .venv && uv pip install tiktoken PyYAML vale==3.21.0.0` (as done 2026-09-24), with `.venv/bin` on `PATH` and `OBSIDIAN_VAULT_PATH` set to the clone's `wiki/`, because `~/.obsidian-wiki/config` points at `/home/box/agentic-co-dm/wiki`. FR-027's discovery order fixes that trap.
 
 ## Measurements taken (2026-09-24, /workspace clone @ bf021f03, 8-core Linux box)
@@ -154,11 +155,11 @@ Setup: `.venv` with `tiktoken`, `PyYAML`, and `vale==3.21.0.0` (Vale 3.21.0). `O
 
 Before the fix, Vale with the unmodified `.vale.ini` fails with `E100 … style 'CoDM' does not exist on StylesPath`, reproducing e-212 and related entries.
 
-## Spec gaps for Clarify
+## Spec gaps for Clarify (resolved by cae8bb44)
 
-1. **FR-024 vs FR-026 (identity candidates)**: FR-024 lists only slug, title, aliases, and manifest identity as cheap signals. Today, content similarity > 0.6 alone makes a candidate. Restricting comparison to the literal list would drop content-only duplicates and change findings, which violates FR-026. The plan treats the existing cached character-profile prefilter as a cheap signal. SC-007's "compared = selected + cheap-signal candidates" should then say that candidates include prefilter passes. Confirm.
-2. **FR-007 "same cause"**: the spec does not define how two causes match. The plan uses the same `source` plus a normalized cause key (casefold, collapse whitespace, strip digits and quoted literals), with `--attach e-N` to force a match. Confirm, or pick exact text.
-3. **FR-013 `expected_output` required**: the spec does not say whether all 533 records must have `expected_output`, or where it comes from for records that lack one. The plan makes it optional and does not invent text.
-4. **Minor assertion types** (`scope`, `handoff`, `coverage`; 7 uses): the spec does not say whether they stay in the vocabulary. The plan keeps them and folds only the `qualitative`/`structural` spellings.
-5. **SC-009 20-sitting window** is still an assumption (spec Assumptions); no data sets it.
-6. **Lint writes tracked files**: a lint run with Vale regenerates `styles/config/vocabularies/CoDM/accept.txt` and rewrites the tracked `wiki/_meta/lint-cache.json`. The spec does not say whether a read-side lint may change tracked files (compare FR-017, "read-side mutation"). The plan leaves this behavior unchanged.
+1. **FR-024 vs FR-026 (identity candidates)**: resolved. FR-024 now includes cached character-profile prefilter passes (> 0.6) as candidates, and SC-007's compared count includes them. The plan already did this.
+2. **FR-007 "same cause"**: resolved. Same `source` plus the same normalized cause. A forced attach cannot cross sources (contracts/error-ledger.md).
+3. **FR-013 `expected_output`**: resolved. It is optional.
+4. **Assertion types**: resolved. FR-014 fixes the vocabulary, keeps `scope`/`handoff`/`coverage`, and folds `qualitative`/`structural`.
+5. **SC-009 20-sitting window**: resolved. It stays an assumption.
+6. **Lint writes tracked files**: resolved. FR-028 keeps `lint-cache.json`, `identity-index.json`, and `accept.txt` tracked as bookkeeping. FR-017 scopes read-side mutation to canonical pages, manifests, indexes, and logs.
