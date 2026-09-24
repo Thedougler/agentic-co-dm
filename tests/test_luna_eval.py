@@ -81,3 +81,15 @@ def test_no_eval_assertion_uses_work_gate_wording():
                 if pattern.search(text):
                     offenders.append(f"{path.parent.parent.name}:{record.get('id')}: {text[:80]}")
     assert offenders == []
+
+
+def test_rerun_skips_a_completed_run(tmp_path: Path):
+    payload = {"skill_name": "demo-skill", "evals": [_record()]}
+    out = tmp_path / "out"
+    done = out / "1" / "with_skill" / "run-1"
+    done.mkdir(parents=True)
+    (done / "timing.json").write_text(json.dumps({"duration_ms": 1000, "total_duration_seconds": 1, "exit": 0}), encoding="utf-8")
+    proc = _run_bad(tmp_path, payload)
+    assert proc.returncode == 0, proc.stdout + proc.stderr
+    assert "skip" in proc.stdout
+    assert json.loads((done / "timing.json").read_text(encoding="utf-8"))["exit"] == 0

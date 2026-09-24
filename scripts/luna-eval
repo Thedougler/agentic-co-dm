@@ -30,7 +30,10 @@ Eval fields read from evals.json (all optional except id and prompt):
 Run layout: <out>/<name>/eval_metadata.json and
 <out>/<name>/<config>/run-<n>/{outputs/, events.jsonl, final.txt, timing.json}.
 
-Exit: 0 done; 2 bad arguments or eval; 3 usage-limit marker present (dispatch
+A rerun skips any run-<n>/ whose timing.json records exit 0, so after exit 3 or 5
+only the missing runs are dispatched again (completed runs are kept).
+
+Exit: 0 done (or already done); 2 bad arguments or eval; 3 usage-limit marker present (dispatch
 nothing until the limit resets, then delete <out>/../CODEX_LIMIT); 4 subject
 wrote no deliverable under outputs/; 5 this run hit the usage limit (every
 Luna run was stopped).
@@ -193,6 +196,15 @@ def main() -> int:
         return 3
     name = a.name or str(spec["id"])
     run = out / name / a.config / f"run-{a.run}"
+    timing = run / "timing.json"
+    if timing.is_file():
+        try:
+            finished = json.loads(timing.read_text()).get("exit") == 0
+        except ValueError:
+            finished = False
+        if finished:
+            print(f"{name}: skip, {run} already completed (timing.json exit 0)")
+            return 0
     outputs = run / "outputs"
     outputs.mkdir(parents=True, exist_ok=True)
     (out / name / "eval_metadata.json").write_text(json.dumps(
