@@ -362,6 +362,21 @@
           "type": "quality"
         }
       ]
+    },
+    {
+      "id": "skill-selected-vault-health",
+      "prompt": "Check the vault's health and repair the broken links and other findings.",
+      "expected_output": "Selects wiki-lint to run the deterministic auto-fix once and then repair the remaining findings one file at a time.",
+      "assertions": [
+        {
+          "type": "skill_selected",
+          "text": "wiki-lint"
+        },
+        {
+          "type": "behavior",
+          "text": "Runs the deterministic auto-fix once, then repairs the remaining findings one file at a time."
+        }
+      ]
     }
   ]
 }

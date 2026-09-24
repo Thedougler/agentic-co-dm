@@ -382,6 +382,21 @@
           "type": "guardrail"
         }
       ]
+    },
+    {
+      "id": "skill-selected-place-owner",
+      "prompt": "The party is heading to Candlemere next week. Improve wiki/entities/place/Candlemere.md into a runnable site page: hazards, secrets, and who is there when they arrive.",
+      "expected_output": "Selects place-design as the owner of the type: place page and improves Candlemere against wiki/templates/place.md.",
+      "assertions": [
+        {
+          "type": "skill_selected",
+          "text": "place-design"
+        },
+        {
+          "type": "behavior",
+          "text": "Improves Candlemere against wiki/templates/place.md."
+        }
+      ]
     }
   ]
 }

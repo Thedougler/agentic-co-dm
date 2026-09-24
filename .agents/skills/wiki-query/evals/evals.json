@@ -259,6 +259,21 @@
           "type": "guardrail"
         }
       ]
+    },
+    {
+      "id": "skill-selected-wiki-question",
+      "prompt": "What do I know about Mercatura? Give me the answer with citations from my wiki pages.",
+      "expected_output": "Selects wiki-query to answer from the compiled wiki with citations to the pages it read.",
+      "assertions": [
+        {
+          "type": "skill_selected",
+          "text": "wiki-query"
+        },
+        {
+          "type": "behavior",
+          "text": "Cites the wiki pages it read for each claim in the answer."
+        }
+      ]
     }
   ]
 }
