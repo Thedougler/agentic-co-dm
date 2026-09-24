@@ -10,6 +10,7 @@ Each recipe gives: **Job** (what the block must do), **Build** (what goes in),
 
 ## Contents
 
+- Handles, Layers, Spine (every situated block)
 - Beat openings: Hook, Development, Cliffhanger, Climax, Resolution
 - Beat slots: zone cell, tick cell, outcome cell, creature in scene, How the Scene Resolves, Exit
 - People and things: NPC first look, dialogue, item in scene
@@ -18,12 +19,78 @@ Each recipe gives: **Job** (what the block must do), **Build** (what goes in),
 - Movement: travel, transition, vehicle
 - Other: business, recap, handout, vision
 
+## Handles
+
+A **handle** is anything the players can act on in this scene. The block's
+handle list draws on every source below; the beat page is where it starts,
+never where it ends, because beats routinely miss things:
+
+- the beat's Situation, Cast, Space, Zones, and Stage;
+- the place and region pages: landmarks, routes, water, flora, fauna,
+  hazards, and every tell in their weave;
+- each person, creature, and item page: what they carry, wear, and do, and
+  their visible tells;
+- the art: everything drawn into this scene (the pot on the coals, the
+  baskets, the fallen branch);
+- the previous beat's end state: who is where, what broke, what was left;
+- hidden things, as the trace a careful look would catch
+  ([boundary.md](boundary.md) § Hidden things);
+- the place's history and working life, told by what remains (tracks,
+  patched walls, scorch marks, leftovers, something out of place).
+
+Every handle comes from one of those sources. A thing no source supports is a
+gap you return, not something you invent.
+
+## Layers
+
+Sort the handles the way a DM discloses a room. Across a beat's narration
+slots every handle gets its line, in the layer where it belongs, so nothing
+important hides by omission.
+
+1. **Entry.** Small: what the first decision needs, in this priority:
+   immediate danger, what the decision turns on, exits and routes, the
+   creatures and people who matter, the features most likely to be grabbed
+   first, the anchor, one useful sense. Texture and decoration come after;
+   lore comes only when it bears on the decision. Entry is the scene
+   opening, and only entry goes in it.
+2. **Attention.** What a closer look shows: the zone cells, the creature
+   slot, the detail that rewards a question.
+3. **Interaction.** What handling, opening, or testing reveals: the outcome
+   cells, an object's inside or weight ([boundary.md](boundary.md) § object
+   states).
+
+When the entry layer will not fit the opening without sentences past one
+breath, it is too big: move handles down to attention.
+
+## Spine
+
+Every scene opening is built from these parts. They are an order of
+**attention**, not a paragraph template: fold them together, and when danger
+is immediate, lead with it.
+
+1. **Frame.** The schema: the situation (what is happening, and to whom) in
+   its kind of place, sized at body scale (a ceiling a tall person could
+   touch, a courtyard a short sprint across). Ground, light, and air come in
+   through the body in the parts below.
+2. **Anchor.** The one memorable feature.
+3. **Sense.** One nonvisual sense, with its source, doing a second job.
+4. **Handles.** The entry layer, placed relative to each other and to the
+   party (a door hanging half-open, a rope bridge with a plank missing, a
+   guard whose hands shake on the spear), each with the property that
+   invites action, grouped where they go together.
+5. **Motion.** Something is already happening: laundry snapping overhead, a
+   guard dragging a sack, smoke drifting. A threat in motion beats a threat
+   standing still.
+6. **Live edge.** End on the pressure that demands a response: the arrival,
+   the demand, the windup, the thing that just changed. The last image is the
+   one still ringing when the DM stops talking.
+
 ## Beat openings
 
 The scene opening (Initial Narration, Open on, Opening, Open on Action,
-Opening image) uses the spine from `SKILL.md`: frame, anchor, sense, handles,
-motion, live edge. It carries the entry layer; zone, creature, and outcome
-cells carry the rest (`SKILL.md` step 5). The beat type decides what leads.
+Opening image) uses the spine above and carries the entry layer; zone,
+creature, and outcome cells carry the rest (§ Layers). The beat type decides
+what leads.
 
 ### Hook opening
 
@@ -83,7 +150,7 @@ cells carry the rest (`SKILL.md` step 5). The beat type decides what leads.
 ## Beat slots
 
 On beat pages and run-guide cockpits, these `[!narration]` slots together carry
-every handle, each in its layer (`SKILL.md` step 5):
+every handle, each in its layer (§ Layers):
 
 - **Initial Narration**, **Open on**, **Opening**, **Open on Action**,
   **Opening image**: the beat's scene opening (entry layer; recipes above).

@@ -17,7 +17,7 @@ made up for illustration and are never canon.
 
 ## Compact opening (the default shape)
 
-> The shrine fills the lowest chamber of the sea caves, and every surface is slick with salt water, though the tide sits far below you. Three stone doors ring the chamber, and only the western one is dry. From behind it comes the slow scrape of something heavy being dragged.
+> The shrine fills the lowest chamber of the sea caves, and every surface is slick with salt water, though the tide sits far below you. Three stone doors ring the chamber, and only the one on your left is dry. From behind it comes the slow scrape of something heavy being dragged.
 
 Why it works: three sentences. The schema (a sea-cave shrine), the anchor
 (wet walls far above the tide), the handles grouped (three doors, one dry),
@@ -25,7 +25,7 @@ and a sound that is both atmosphere and threat ends it.
 
 ## Hook opening
 
-> You are halfway across the ford, the river pulling cold and waist-deep around you, when the far bank starts to move. What looked like a fallen log rolls onto its side and becomes a flat-bottomed boat, and three figures in reed cloaks rise out of the mud beside it with short bows already bent. Behind you, the near bank is a few strides of slick stones and a wagon stuck to its axles, the mule braying and throwing its head. Upstream, a rope bridge sags across the water with one plank missing near the middle. The tallest archer calls out over the rush of the river, voice flat and patient: "Packs in the water. Then hands." An arrow thumps into the wagon's side, a hand's width from the mule's neck.
+> You are halfway across the ford, the river pulling cold and waist-deep around you, when the far bank starts to move. What looked like a fallen log rolls onto its side and becomes a flat-bottomed boat, and three figures in reed cloaks rise out of the mud beside it with short bows already bent. Behind you, the near bank is a few strides of slick stones and a wagon stuck to its axles, the mule braying and throwing its head. Upstream, a rope bridge sags across the water with one plank missing near the middle. The tallest archer calls out over the rush of the river, voice flat and patient, "Packs in the water. Then hands." An arrow thumps into the wagon's side, a hand's width from the mule's neck.
 
 Why it works: the disturbance lands in sentence one; the anchor (log into boat)
 is unforgettable; the archers are in motion; the wagon, the mule, the bridge
@@ -34,7 +34,7 @@ shot that forces a choice.
 
 ## Hook opening, resuming mid-scene
 
-> The fire has spread along the whole length of the bar, and the bottles behind it are bursting one by one, spraying burning gin across the floorboards. Captain Sella Morrow is on her knees by the hearth with a knife at her throat, and the man holding it, the bald smuggler with the tattooed scalp, has his back pressed to the chimney stones, eyes jumping from you to the door. Two of his crew lie under the overturned table; the third is halfway up the stairs with the strongbox in his arms, one boot on the landing. Smoke gathers against the ceiling beams and sinks lower by the moment. The smuggler presses the blade in until Morrow lifts her chin. "Nobody follows him up those stairs," he says.
+> The fire has spread along the whole length of the bar, and the bottles behind it are bursting one by one, spraying burning gin across the floorboards. Captain Sella Morrow is on her knees by the hearth with a knife at her throat, and the man holding it, the bald smuggler with the tattooed scalp, has his back pressed to the chimney stones, eyes jumping from you to the door. Two of his crew lie under the overturned table, and the third is halfway up the stairs with the strongbox in his arms, one boot on the landing. Smoke gathers against the ceiling beams and sinks lower by the moment. The smuggler presses the blade in until Morrow lifts her chin. "Nobody follows him up those stairs," he says.
 
 Why it works: every person from last session is exactly where play froze
 them, each doing something; the spreading fire and sinking smoke are a clock
@@ -50,7 +50,7 @@ invites the scene to turn.
 
 ## Cliffhanger opening
 
-> The first beam goes with a crack like a snapped oar, somewhere behind you in the dark, and the tunnel fills with the hiss of running grit. Dust rolls up the passage toward your lanterns in a gray wave. Ahead, the tunnel splits: the left branch slopes down toward the sound of water, its timbers bowed and weeping mud, while the right climbs steeply to a ladder bolted into the rock, its top rungs lost in blackness. Between the two, a loaded ore cart sits on its rails, and the floor under it is tilting it forward, one wheel already lifting. The rumble behind you grows louder. A second beam groans.
+> The first beam goes with a crack like a snapped oar, somewhere behind you in the dark, and the tunnel fills with the hiss of running grit. Dust rolls up the passage toward your lanterns in a gray wave. Ahead, the tunnel splits, and the left branch slopes down toward the sound of water, its timbers bowed and weeping mud, while the right climbs steeply to a ladder bolted into the rock, its top rungs lost in blackness. Between the two, a loaded ore cart sits on its rails, and the floor under it is tilting it forward, one wheel already lifting. The rumble behind you grows louder. A second beam groans.
 
 Why it works: danger in sentence one; one long sentence lays out both routes;
 the cart is a handle and a threat; short sentences at the end tighten the
@@ -58,7 +58,7 @@ clock.
 
 ## Climax opening
 
-> Rain lashes the temple roof, and the gutters run so full they spill over the carved gargoyles in sheets. In the middle of the flat roof, inside a ring of iron braziers that hiss and steam but will not go out, Magistrate Orel Vance holds the stolen reliquary open in both hands. A column of pale light climbs from it into the clouds, and the clouds are turning, slowly, around that point. Four temple guards in soaked blue tabards hold the top of the stairs between you and him, spears level, the nearest one's hands shaking on the shaft. To the left, a bell tower rises one story higher, its rope whipping in the wind; to the right, the roof ends at a gutter and a three-story drop to the flooded square, where a crowd stands staring up. Vance lifts the reliquary higher, and the light thickens.
+> Rain lashes the temple roof, and the gutters run so full they spill over the carved gargoyles in sheets. In the middle of the flat roof, inside a ring of iron braziers that hiss and steam but will not go out, Magistrate Orel Vance holds the stolen reliquary open in both hands. A column of pale light climbs from it into the clouds, and the clouds are turning, slowly, around that point. Four temple guards in soaked blue tabards hold the top of the stairs between you and him, spears level, the nearest one's hands shaking on the shaft. To the left, a bell tower rises one story higher, its rope whipping in the wind, and to the right, the roof ends at a gutter and a three-story drop to the flooded square, where a crowd stands staring up. Vance lifts the reliquary higher, and the light thickens.
 
 Why it works: the villain is doing the thing the party came to stop; the
 stakes are visible in the sky; the guards, the bell tower, the drop, and the
@@ -131,11 +131,11 @@ player acts on.
 
 **Place:**
 
-> The Drowned Steps are a staircase of pale limestone that runs straight down out of a cliff village and into the sea, each step as wide as a street and worn into a shallow dish in the middle. At low tide forty steps show above the water, slick with green weed and ringed with barnacles; at high tide the sea reaches a row of iron mooring rings set into the ninth step from the top. On both sides, fishing shacks cling to the cliff on stilts, joined by rope walkways that sway over the drop. The whole stair smells of salt, tar, and gutted fish, and gulls quarrel over it from dawn to dark. Halfway down, fresh water spills from a carved lion's mouth into a stone basin, the only sweet water on this stretch of coast.
+> The Drowned Steps are a staircase of pale limestone that runs straight down out of a cliff village and into the sea, each step as wide as a street and worn into a shallow dish in the middle. At low tide forty steps show above the water, slick with green weed and ringed with barnacles, and at high tide the sea reaches a row of iron mooring rings set into the ninth step from the top. On both sides, fishing shacks cling to the cliff on stilts, joined by rope walkways that sway over the drop. The whole stair smells of salt, tar, and gutted fish, and gulls quarrel over it from dawn to dark. Halfway down, fresh water spills from a carved lion's mouth into a stone basin, the only sweet water on this stretch of coast.
 
 **Item:**
 
-> The spyglass is as long as a forearm when it is fully drawn out, three brass tubes that slide into one another with a smooth, oiled hiss. The brass is worn to a soft gold at the grip and has darkened to brown everywhere else, and a dent near the eyepiece has been hammered almost flat. A leather strap, cracked and rewaxed many times, runs through a ring at its base. The lens cap hangs from a short chain and ticks against the tube when it swings. Around the widest tube, in a neat looping hand, someone has engraved: *For Tamsin, who always looked farther.*
+> The spyglass is as long as a forearm when it is fully drawn out, three brass tubes that slide into one another with a smooth, oiled hiss. The brass is worn to a soft gold at the grip and has darkened to brown everywhere else, and a dent near the eyepiece has been hammered almost flat. A leather strap, cracked and rewaxed many times, runs through a ring at its base. The lens cap hangs from a short chain and ticks against the tube when it swings. Around the widest tube, in a neat looping hand, someone has engraved *For Tamsin, who always looked farther.*
 
 **Hazard:**
 

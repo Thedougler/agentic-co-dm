@@ -93,12 +93,16 @@ The matching example is in [examples.md](examples.md).
   visible marks such as an engraved name.
 - **State views:** A state the parent describes ("when cut open, a grid of air
   cells") can appear, written as a general fact about the object.
-- **Tells:** When `item-design` hands you a packet, every tell in it appears
-  as plain appearance on the part of the object that carries it (a needle
-  that trembles before it settles), at the same weight as the details around
-  it, with no signal word and never its meaning.
-- **Leave out:** effects, magic, rarity, attunement, charges, cover stories,
-  who made it or who it was named for (unless it is written on the object).
+- **Tells:** The item's tells are every line of its page's At the Table
+  views (Seen, Held, Active) and every tell in an `item-design` packet. Each
+  appears as plain appearance or behavior on the part of the object that
+  carries it (a needle that trembles before it settles, a lamp that burns
+  without warming the glass), at the same weight as the details around it,
+  with no signal word and never its meaning. The perceivable sign of magic
+  is a tell and stays; what the magic does stays out.
+- **Leave out:** effects and what they do for the holder, rarity,
+  attunement, charges, cover stories, who made it or who it was named for
+  (unless it is written on the object).
 
 ## Hazard
 
