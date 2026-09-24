@@ -15,7 +15,7 @@ Ready, Search, Study, Utilize. Conditions include Prone, Grappled, Restrained.
 
 An evocative label (`scattered`, `crash-landed`) names a ruling already stated
 (lands 30 feet away; 2d6 bludgeoning and Prone). New action types, conditions,
-or resolution systems are a brew-skill job (`homebrew-monsters-5e`).
+or resolution systems are a brew-skill job (`monster-design`).
 
 ## Partial
 
@@ -93,7 +93,7 @@ is not roster.
 
 If the owner lacks `## Statblock`, add that heading above the fence on the
 owner page, then embed. Missing owner for a creature you will roll → stop and
-route to `homebrew-monsters-5e`.
+route to `monster-design`.
 
 ## Be ready for and the clock
 

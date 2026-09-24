@@ -13,6 +13,11 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
+region: "le-paludi"
+kind: trained animal
+rarity: common
+attunement: false
+owner: "Zort"
 visibility: dm
 summary: "A pit-bred marsh terrier sold out of Zort's Pits, trained to go rigid and silent the moment anything enters the water nearby."
 provenance:
@@ -36,7 +41,6 @@ tier: supporting
 
 *Tool (Trained Animal), Common.* A working dog bred in the [[le-paludi]] canals to hunt rats out of bilges and grain stores. [[Zort]] sells them broke to a single handler. Statistically a mastiff with a smaller frame and worse manners.
 
-## Mechanics
 
 **[HB] Water Watch.** The ratter goes rigid and silent when any creature larger than a rat enters water within 100 feet of it, day or night, seen or unseen. A handler who has worked the dog for a day reads the signal on sight. A creature that came through water cannot surprise anyone standing within 10 feet of the ratter.
 

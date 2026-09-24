@@ -18,14 +18,22 @@ campaign: shattered-sea
 status: alive
 role: artificer and salvage engineer
 location: "[[calven-and-calveno]]"
+faction: none
 visibility: dm
 summary: "Artificer and salvage engineer who remains in Calveno; her completed work is already with its recipients."
 ---
 # Catarina Da'Virelli
-
+````col
+```col-md
+flexGrow=2
+===
 > [!narration] Catarina Da'Virelli
 > A white-haired artificer in a worked breastplate, with tool marks on her gloves and the sharp workshop smell of oil, brass, and hot wire.
+```
 
+```col-md
+flexGrow=1
+===
 ## At a Glance
 
 | **Role** | Calveno artificer and salvage engineer |
@@ -35,6 +43,8 @@ summary: "Artificer and salvage engineer who remains in Calveno; her completed w
 | **Wants** | Keep her workshop operating and continue private salvage research |
 
 > **DM thesis:** Catarina is a local Calveno artificer and salvage engineer. Her workshop remains in Calveno.
+```
+````
 
 ## Running Catarina Da'Virelli
 
@@ -45,6 +55,10 @@ She receives visitors at her Calveno workshop and keeps the conversation practic
 ### When posture changes
 
 She ends the meeting when a visitor asks her to leave Calveno or treats her workshop as the party's standing resource.
+### Voice
+
+Catarina speaks in practical workshop terms and avoids treating her shop as a resource that travels with the party. Her ask is, “Show me the mechanism before you tell me the story.” Her refusal is, “The work stays here.” Under pressure, she says, “You are asking me to abandon the one place that makes this possible.”
+
 
 ## Connections
 

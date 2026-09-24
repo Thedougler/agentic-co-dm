@@ -7,12 +7,16 @@ tags: [shattered-sea, npc]
 sources:
   - "campaign-os:noa-fifita.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: contact
+location: "Fifita's Slip"
+faction: taufa-fifita
 visibility: dm
 summary: "Lizardfolk boatyard operator at Fifita's Slip; connected to the Taufa Fifita trading house."
 provenance:
@@ -24,21 +28,57 @@ tier: supporting
 ---
 # Noa Fifita
 
-![[noa-fifita-banner]]
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-|               |                                                                   |
-| ------------- | ----------------------------------------------------------------- |
-| **Species**   | [[Lizardfolk]]                                                        |
-| **Pronouns**  | he/him                                                            |
-| **Location**  | [[Fifita's Slip]], [[Kalowe]]                 |
-| **Role**      | Boatyard operator                                                 |
+| **Role**   | Boatyard operator and contact |
+| ---------- | ----------------------------- |
+| **Nature** | Young lizardfolk; slow, sure, and transactional |
+| **Home**   | [[Fifita's Slip]] on [[Kalowe]] |
+| **Wants**  | To be paid his price for hull work without haggling |
 
-His family owns the [[taufa-fifita]] business. Bosses don't ask what he does. He is dark and young. He works slow and sure, won't haggle, and sets a price by the hull. He cares for no one and wants only his price. If you won't pay, he leaves.
+> **DM thesis:** Noa provides discreet boatyard work only when the price and introduction are right; he leaves rather than argue.
+```
 
-Operator of [[Fifita's Slip]], an unofficial boatyard on Kalowe's lagoon side. It does not appear in harbour books. Access is by introduction or prior arrangement only. Cold approaches from the water get nothing. The slip looks like storage.
+```col-md
+flexGrow=1
+===
+> [!narration] Noa Fifita
+> Noa is a dark-scaled young lizardfolk with a broad, work-worn frame and hands that move slowly but precisely over a hull. He keeps his tools close, watches the boat rather than the customer, and speaks in a low, even voice that makes every quoted price sound final.
+```
+````
+
+## Running Noa Fifita
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Noa keeps working until an introduction or prior arrangement is named. He says, “Show me the hull, then I give you the price.”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+If a visitor approaches cold from the water, refuses his price, or starts haggling, Noa stops working and leaves. The slip is unofficial, absent from harbour books, and disguised as storage; he does not risk attention for an unpaid job.
+```
+````
+### Voice
+
+Noa speaks slowly and evenly, treating every price as final and avoiding any argument that could draw attention to the slip. His ask is, “Show me the hull, then I give you the price.” His refusal is, “That is the price.” Under pressure, he says, “Haggling makes noise. Noise brings trouble.”
+
 
 ## Connections
 
-- [[Fifita's Slip]], the boatyard he operates
-- [[Kalowe]], the island where the slip sits
-- [[taufa-fifita]], his family's trading house, source of his cover with harbour bosses
+| Connection | Meaning |
+| ---------- | ------- |
+| [[Fifita's Slip]] | The unofficial boatyard Noa operates on Kalowe's lagoon side. |
+| [[Kalowe]] | The island where the slip is hidden. |
+| [[taufa-fifita]] | His family's trading house and the source of his cover with harbour bosses. |

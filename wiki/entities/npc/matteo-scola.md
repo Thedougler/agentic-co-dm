@@ -6,6 +6,7 @@ category: entities
 tags: [shattered-sea, npc]
 sources:
   - "session-11-transcript.md"
+  - "Session 12 rebuild (DM request 2026-09-22)"
 summary: Thin Calveno wreck survivor pulled from the otter hole; he wants the ship and will not follow the woman in the woods.
 provenance:
   extracted: 0.90
@@ -16,7 +17,7 @@ lifecycle: accepted
 lifecycle_changed: "2026-09-14"
 tier: supporting
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-22
 type: npc
 reveal: revealed
 campaign: shattered-sea
@@ -34,6 +35,8 @@ relationships:
     type: related_to
 ---
 # Matteo Scola
+
+![[matteo-scola-overview.png|Matteo Scola overview: survivor at the river slack]]
 
 ````col
 ```col-md
@@ -79,6 +82,13 @@ flexGrow=1
 He will not take a north trail alone. Push him toward the woman in the woods, or treat the otters as a joke he should repeat, and he shuts down or looks for the ship.
 ```
 ````
+
+### Voice
+
+Matteo talks in short, wet bursts and repeats the one rule that kept him alive. He says "they" for the listeners and never names the woman. He carries two more fallen [[ghost-plum]]s in a knotted sailcloth sling at his hip as his way out if the island turns on him. This is Session 12 prep invention. [[talon-skarn]] watched from high up-sun when Matteo ate the first plum and vanished at the otter hole, so Skarn knows the sling holds more.
+
+- **The rule:** "You don't pick it. Don't pick it. You have to eat only what's on the ground."
+- **On the listeners:** "They walk where she tells them and call it living."
 
 ## Connections
 

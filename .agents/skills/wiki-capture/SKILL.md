@@ -15,6 +15,16 @@ description: >
 # Wiki Capture — Conversation to Wiki Note
 
 You are preserving knowledge from the current conversation as a permanent wiki note. The goal is to extract the *substance* — the knowledge itself — not a summary of what was said.
+## Capability boundary
+
+**Input.** Current conversation, explicit mode (`full`, `quick`, or `correction`), resolved vault, targeted `index.md`/`hot.md`, governing category/template.
+
+**Work.** Extract evidence, classify, write to mode-specific destination. Full → owner-compliant note. Correction → atomic derived claim pair. Quick → `_raw/` only.
+
+**Done.** Full: declarative knowledge + frontmatter + links + scoped lint + manifest/index/log/hot + QMD refresh. Correction: immutability and consumer checks. Quick: staged paths, no tracking writes.
+
+**Handoff.** `_raw/` promotion → `wiki-ingest`. Scoped validation → destination owner.
+
 
 This skill has three modes:
 
@@ -273,6 +283,12 @@ Every note must link to at least 2 existing wiki pages. Search `index.md` before
 
 ## Step 6: Update Tracking Files
 
+For full mode, record the conversation source exactly once after the page is written:
+
+```bash
+python3 scripts/manifest.py record "$OBSIDIAN_VAULT_PATH" "conversation:<ISO-date>" --pages "<page-path>"
+```
+
 **`index.md`** — Add the new page under its category section.
 
 **`log.md`** — Append:
@@ -280,7 +296,7 @@ Every note must link to at least 2 existing wiki pages. Search `index.md` before
 - [TIMESTAMP] CAPTURE type=<type> page="<path>" title="<title>"
 ```
 
-**`hot.md`** — Update **Recent Activity** with what was just captured. Update **Key Takeaways** if the note introduced something worth flagging. Update `updated` timestamp.
+**`hot.md`** — Update **Recent Activity** with what was just captured. Update **Key Takeaways** if the note introduced something worth flagging. Update `updated` timestamp. Write each tracking surface once; correction mode keeps its atomic correction tracking and quick mode deliberately writes none.
 
 ## Step 7: Confirm to User
 

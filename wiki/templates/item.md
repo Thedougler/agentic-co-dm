@@ -1,14 +1,14 @@
 ---
 title: "{{title}}"
 category: entities
-tags: [shattered-sea, item]
+tags: ["{{campaign}}", item]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: item
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 visibility: dm
 region: ""
 kind: consumable
@@ -21,30 +21,28 @@ summary: ""
      kind: consumable | magic | plot | durable
      (Flora hazards use wiki/templates/hazard.md — type: item, kind: flora hazard.)
 
-     CONSUMABLE (default short path): Portrait; classification; one runnable effect; then stop.
-     Omit unused identity keys including owner. Pass is consumable jobs in wiki/AGENTS.md Layout.
+     Priority: Item Name > Item Text > Everything else.
+     The item text block is why this page exists. Write it first, write it complete.
 
-     MAGIC | PLOT | DURABLE: Keep leading narration + classification + runnable effect.
-     Add omit-if-empty sections below in this order: At a Glance, At the Table, Connections, Provenance, Art.
-     Prefer one shared section order over kind-specific quirks. Numbers live on this owner page.
+     CONSUMABLE (default short path): Portrait; classification; item text; stop.
+     MAGIC | PLOT | DURABLE: Portrait; classification; item text; then omit-if-empty
+     sections below in order: At the Table, Hidden Properties, Connections, Provenance, Art.
 
-     Distill once — do not triple-tell the same fact across body / At a Glance / Provenance.
+     Distill once — each fact appears once on the page. The item text block owns
+     mechanics; other sections own context. Never restate the item text elsewhere.
      No agent-process asides (skill names, remorph notes, "item-prep") in wiki voice.
-     Incomplete magic items: either runnable table rules + spoken look, or mark provenance-only / incomplete explicitly — do not ship empty stubs as ready.
-     At the Table = playable consequence tonight only — no design diary, RAW comparison, or balance commentary.
-     DM-visible table labels: Title Case / spaced words only — never snake_case (`One thing`, not `one_thing`).
-     Prefer runnable effect prose over a Field/Value design table. If a short field table is needed, use:
-       One thing | Rarity justification | Attunement reason | PC connection | Current holder | Narrative hook
-     (Those design rows are prep notes — keep playable effect in the effect block; omit empty rows.)
+     DM-visible table labels: Title Case / spaced words only — never snake_case.
 -->
 
 # {{title}}
 
-<!-- Add item art when available. Omit Art section when unused. -->
+<!-- Add the primary item image directly under the title when available; omit when unused. -->
+<!-- ![[attachments/{subject-slug}-overview.ext|{{title}} overview]] -->
 
 > [!narration] Narration
-> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: object. -->
-> Write a standalone cold portrait in flowing prose — as long as the object requires to be pictured in a character's hands. Cover type, scale against the body, material, wear or patina, and at least one non-sight sense (weight, temperature, sound, smell). The portrait lets a player recognize and distinguish this object on sight. No secrets, DCs, lore closers, rarity, or unearned names.
+> <!-- `.agents/skills/item-design` step 7 builds the packet → `.agents/skills/theatre-of-the-mind` → mode: portrait → recipe: item. -->
+> Keep the finished portrait directly in this callout; do not add a separate linked narration-source note.
+> Write a third-person, present-tense portrait of the object as it always is. Cover the plain noun, size against a hand or body, material, wear and repairs, visible marks, one sense beyond sight (weight, temperature, sound, smell), and a plain tell for every hidden property. A player can recognise and pick out this object on sight. No effects, DCs, rarity, curse, or unearned names.
 
 <!-- Classification line: kind + rarity (+ attunement when required). Examples:
      Consumable, Rare
@@ -54,19 +52,25 @@ summary: ""
 -->
 Consumable, Rare
 
-Write the runnable effect in 2024 rules language. One short block. Owner of numbers: this page.
+<!-- === ITEM TEXT ===
+     The runnable mechanic. This block is the reason the page exists.
+     Write in 2024 rules language. State trigger, action cost, frequency, range,
+     targets, duration, limits, and edge cases. Owner of numbers: this page.
+
+     Simple items (consumables, mundane): 1–3 sentences.
+     Complex items (magic weapons, relics, attunement): bold-label properties,
+     each with its mechanical scope. Include limitations and edge cases inline.
+     See .agents/skills/item-design/references/rules-2024.md for 2024 wording.
+-->
+Write the runnable item text here.
 
 <!-- === STOP HERE for kind: consumable === -->
 
 <!-- === MAGIC | PLOT | DURABLE only — omit any empty section === -->
 
-## At a Glance
-
-In one or two sentences, describe the item's current role, known holder, and reason a DM opens the page at the table. Omit this section when the classification and effect already cover that.
-
 ## At the Table
 
-Explain how the item changes a choice tonight. Cover notice, spend, reveal, or pressure. Include only playable consequences. Omit when unused. No design diary or RAW/balance commentary.
+How the item shows itself (seen, held, active, and its tell when hidden), who wants it, and how it changes a choice tonight that the item text alone does not make obvious. A sentient item's voice and sample lines go here. Only playable consequences — no design diary, RAW commentary, or restating the item text. Omit when the item text already covers table use.
 
 ## Hidden Properties
 
@@ -80,8 +84,4 @@ Describe any hidden property the party does not yet know. Examples include a cur
 
 ## Provenance
 
-Describe where it came from, contested ownership chains, and open questions. State facts only. Do not include ingest meta or process notes. Omit when unused. Do not restate At a Glance.
-
-## Art
-
-<!-- Art embeds: wiki/attachments/{subject-slug}-{role}.ext — roles: banner|portrait|token|battlemap|overview|reference|handout|teaser. Flat folder; omit Art when unused. -->
+Where it came from, contested ownership chains, and open questions. State facts only. No ingest meta or process notes. Omit when unused.

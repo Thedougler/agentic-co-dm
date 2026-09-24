@@ -68,6 +68,10 @@ flexGrow=1
 Varet's posture changes when someone hides the real terms, refuses the feeding clause, or treats the Five Blades' contract as informal. The source does not establish her exact response to a breach.
 ```
 ````
+### Voice
+
+Varet speaks in exact contract terms and avoids letting courtesy blur an obligation. Her ask is, “Read the rate and feeding clause before you sign.” Her refusal is, “That is not the agreement we discussed.” Under pressure, she says, “A hidden term is a broken contract.”
+
 
 ## Connections
 

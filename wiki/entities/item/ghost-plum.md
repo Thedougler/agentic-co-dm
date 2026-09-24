@@ -26,6 +26,8 @@ region: aruhe
 kind: consumable
 rarity: rare
 attunement: false
+owner: ""
+visibility: dm
 relationships:
   - target: "[[old-gardens]]"
     type: related_to

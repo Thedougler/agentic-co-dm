@@ -130,6 +130,29 @@
           "type": "guardrail"
         }
       ]
+    },
+    {
+      "id": 7,
+      "prompt": "Run wiki status on a vault whose health snapshot contains context.act, next.path, and an ordered focus list with structural and semantic findings.",
+      "expected_output": "Status consumes the health-selected order, reports complete scoped findings, and hands semantic work to the artifact owner without introducing another planner or ledger.",
+      "assertions": [
+        {
+          "text": "Runs wiki health before rendering maintenance actions and consumes context.act, next.path, and ordered focus exactly",
+          "type": "process"
+        },
+        {
+          "text": "Does not independently rank, reorder, or replace the health focus list with a second maintenance planner or ledger",
+          "type": "guardrail"
+        },
+        {
+          "text": "Surfaces complete configured lint findings for the requested scope rather than a hard-only subset",
+          "type": "structure"
+        },
+        {
+          "text": "Hands semantic findings to the named artifact owner and keeps status report-only until that owner is explicitly invoked",
+          "type": "handoff"
+        }
+      ]
     }
   ]
 }

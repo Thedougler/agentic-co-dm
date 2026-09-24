@@ -140,13 +140,13 @@ Hear the garden invitation before anyone leaves this fire. If they hear it, [[Se
 
 | Place | Distance from the party | Cover | Narration |
 | --- | --- | --- | --- |
-| [[spoke-ring\|This fire]] / [[matteo-scola]] | Here, on the packed dirt around the stone ring. Matteo sits 5 feet from the coals if the party pulled him. Four woven mats lie 10 feet out. | Grouped people here are not isolated. Matteo talks from this dirt. | ==_He watches the people talking, not the north trails. His shirt is warm from the fire and smells of smoke._== |
-| Garden group | 10 feet toward the north trail mouths, still on this hub. | They look into the wood whenever branches move. | ==_They repeat, come admire her garden, this way, leave the living plants. When a branch moves, they look north and stop talking._== |
-| Ship group | 10 feet toward the south trail, still on this hub. | They watch the last grass more than the north trails. | ==_They talk over the others. They say she is leading people into danger, and anyone who listens is mad._== |
-| South trail / last grass | 20 feet south. Crushed prints enter this hub here. | Breaking off this way is a rebuild. A Dash does not reach the beach. | ==_Footprints run south through the last trees into gold-green grass._== |
-| West trail / river | 30 feet west, down a root-cut. | A Dash can reach the river. This is not [[river-slack-basin]]. | ==_The packed dirt drops west between hanging roots. You hear water down that way._== |
-| North trails | 20 feet into the wood. Garden talk points this way. | Difficult Terrain. Heavily obscures beyond 10 feet. A body on a trail is isolated. A Dash does not reach the garden. | ==_The trails north of the fire go dark between the big roots. Water drips from the leaves there._== |
-| Hawk sky | Flying up from this hub enters open valley air. | Exposed. Last sun remains on this roof until it goes. | ==_Wind moves above the trees. Sun still lights the treetops, and the fire looks small below._== |
+| [[spoke-ring\|This fire]] / [[matteo-scola]] | Here, on the packed dirt around the stone ring. Matteo sits 5 feet from the coals if the party pulled him. Four woven mats lie 10 feet out. | Grouped people here are not isolated. Matteo talks from this dirt. | _He watches the people talking, not the north trails. His shirt is warm from the fire and smells of smoke._ |
+| Garden group | 10 feet toward the north trail mouths, still on this hub. | They look into the wood whenever branches move. | _They repeat, come admire her garden, this way, leave the living plants. When a branch moves, they look north and stop talking._ |
+| Ship group | 10 feet toward the south trail, still on this hub. | They watch the last grass more than the north trails. | _They talk over the others. They say she is leading people into danger, and anyone who listens is mad._ |
+| South trail / last grass | 20 feet south. Crushed prints enter this hub here. | Breaking off this way is a rebuild. A Dash does not reach the beach. | _Footprints run south through the last trees into gold-green grass._ |
+| West trail / river | 30 feet west, down a root-cut. | A Dash can reach the river. This is not [[river-slack-basin]]. | _The packed dirt drops west between hanging roots. You hear water down that way._ |
+| North trails | 20 feet into the wood. Garden talk points this way. | Difficult Terrain. Heavily obscures beyond 10 feet. A body on a trail is isolated. A Dash does not reach the garden. | _The trails north of the fire go dark between the big roots. Water drips from the leaves there._ |
+| Hawk sky | Flying up from this hub enters open valley air. | Exposed. Last sun remains on this roof until it goes. | _Wind moves above the trees. Sun still lights the treetops, and the fire looks small below._ |
 
 ## Be ready for
 
@@ -186,8 +186,8 @@ If [[matteo-scola]] is with the party, he is still on this dirt or on the north 
 
 | If | Next | Narration |
 | --- | --- | --- |
-| Stay at this fire | The split remains live on this hub. Dusk is gone. Hand to [[Session-11-07-False-Help]]. | ==_Matteo is still sitting in the firelight._== |
-| Play along north | The party is on the first north trail, still in this valley. The garden stays out of reach tonight. Hand to [[Session-11-07-False-Help]]. | ==_You stand on the packed trail north of the fire. The fire is behind you._== |
+| Stay at this fire | The split remains live on this hub. Dusk is gone. Hand to [[Session-11-07-False-Help]]. | _Matteo is still sitting in the firelight._ |
+| Play along north | The party is on the first north trail, still in this valley. The garden stays out of reach tonight. Hand to [[Session-11-07-False-Help]]. | _You stand on the packed trail north of the fire. The fire is behind you._ |
 
 ## Backup
 

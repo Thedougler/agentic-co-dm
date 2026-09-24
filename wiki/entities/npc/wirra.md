@@ -68,6 +68,10 @@ flexGrow=1
 Wirra's welcome ends when a client refuses the upfront fee or treats medical work as part of the combat contract. She makes the terms explicit again and may stop negotiating rather than keep a crew alive on an unclear promise.
 ```
 ````
+### Voice
+
+Wirra uses precise, unsentimental terms and avoids treating medicine as charity. Her ask is, “Fee first. Then I stop the bleeding.” Her refusal is, “No payment, no treatment.” Under pressure, she says, “Choose quickly; the wound is not waiting for your contract.”
+
 
 ## Connections
 

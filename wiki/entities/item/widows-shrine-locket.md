@@ -14,6 +14,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "Sparhold"
+kind: durable
+rarity: common
+attunement: false
+owner: ""
 summary: "A tarnished locket left as a shrine offering at Sparhold's fishing-village shrine, holding a portrait of a face nobody now living remembers."
 provenance:
   extracted: 0.85

@@ -13,6 +13,10 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: scout
+location: "[[Warren]]"
+faction: none
 visibility: dm
 summary: "Rattkin scout trapped in the Warren's flooded sub-chamber, waiting for rescue."
 provenance:
@@ -24,19 +28,60 @@ tier: supporting
 ---
 # Bela Silt-Paw
 
-# Bela Silt-Paw
+````
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-[[Rattkin]] scout, 22 years old, on her first solo assignment in the [[Warren]]. Currently trapped in a flooded sub-chamber beneath the Warren for 2 to 3 days as of source date. The clock is still running. If her rescuers arrive, she struggles with exhaustion and expresses gratitude. See [[Warren - Bela Silt-Paw]] for the fuller quest-hook framing, including the reward.
+| **Role**   | Scout |
+| ---------- | ----- |
+| **Nature** | [[Rattkin]], 22 years old, on her first solo assignment |
+| **Home**   | [[Warren]] |
+| **Wants**  | Rescue from the flooded sub-chamber |
 
-**Cache in the chamber:** 340 gp, 2 potions of water breathing, and a Faste dispatch (~500 gp value). See [[Warren]] § Active Leads for fuller details on the dispatch.
+> **DM thesis:** Bela is a young scout whose rescue clock is still running beneath the [[Warren]].
+```
 
-A Water [[Weird]] (AC 13, HP 58) holds her in the chamber. She awaits discovery in the Warren's depths.
+```col-md
+flexGrow=1
+===
+> [!narration] Bela Silt-Paw
+> *A young [[Rattkin]] scout waits in the flooded chamber beneath the [[Warren]], worn down by two or three days of confinement. Water clings to her gear and her breathing is tight with exhaustion, but she turns toward any sound of rescue. When help reaches her, gratitude comes before anything else.*
+```
+````
 
-## Stats & Combat
+## Running Bela Silt-Paw
 
-No stats given in source for Bela.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Bela is discovered in the flooded sub-chamber beneath the [[Warren]]. She is exhausted but grateful when rescuers arrive.
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+The rescue clock is still running. The Water [[Weird]] holding Bela in the chamber remains the immediate threat; Bela has no combat statistics in the source.
+```
+````
+### Voice
+
+Bela speaks through exhaustion and keeps rescue, not combat, at the center of every exchange. Her ask is, “Get me out before the water rises.” Her refusal is, “I cannot stay here any longer.” Under pressure, she says, “Leave the cache; take me first.”
+
 
 ## Connections
 
-- [[Warren]]: current location. She remains trapped in its flooded sub-chamber.
-- [[Rattkin]]: her species.
+| Connection | Meaning |
+| ---------- | ------- |
+| [[Warren]] | Current location; Bela remains trapped in its flooded sub-chamber. |
+| [[Rattkin]] | Bela's species. |
+| [[Warren - Bela Silt-Paw]] | Fuller quest-hook framing, including the reward. |
+| [[Weird]] | The Water Weird holding Bela in the chamber has AC 13 and 58 HP. |
+
+**Cache in the chamber:** 340 gp, two potions of water breathing, and a Faste dispatch worth approximately 500 gp. [[Warren]]'s Active Leads contains fuller dispatch details.

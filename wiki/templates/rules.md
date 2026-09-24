@@ -1,14 +1,14 @@
 ---
 title: "{{title}}"
 category: lore
-tags: [shattered-sea, lore]
+tags: ["{{campaign}}", lore]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: lore
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 visibility: dm
 kind: fact
 truth: established

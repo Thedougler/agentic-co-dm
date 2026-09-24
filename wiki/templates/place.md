@@ -1,14 +1,14 @@
 ---
 title: "{{title}}"
 category: entities
-tags: [shattered-sea, place]
+tags: ["{{campaign}}", place]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: place
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 visibility: dm
 kind: site
 region: ""
@@ -19,8 +19,8 @@ summary: ""
 <!-- Add identity art when available. -->
 ## Overview
 > [!narration] Narration
-> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: location. -->
-> Write a standalone cold portrait in flowing prose — as long as the place requires to seat a party in the space. Cover body-scale geography (size, ground, air, light), routes or exits, senses, and at least one usable affordance. The portrait paints a drawable picture a player can navigate and respond to. No secrets, DCs, kernel fields, or unearned names.
+> <!-- `.agents/skills/place-design` step 6 builds the narration packet → `.agents/skills/theatre-of-the-mind` → mode: portrait → recipe: place. -->
+> Write a third-person, present-tense portrait of the place as it always is, as long as it needs to carry every tell. Cover body-scale geography (size, ground, air, light), routes or exits, at least one sense beyond sight with its source, at least one usable affordance, and a plain perceivable tell for every secret, item, hazard, and presence this page holds. No truths behind the tells, DCs, kernel fields, or unearned names.
 
 ---
 ## At a Glance

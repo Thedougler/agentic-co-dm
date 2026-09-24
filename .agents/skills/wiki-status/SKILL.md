@@ -18,7 +18,38 @@ You are computing the current state of the wiki: what's been ingested, what's ne
 
 1. **Resolve config** — follow the Config Resolution Protocol in AGENTS.md (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `OBSIDIAN_SOURCES_DIR`, `CLAUDE_HISTORY_PATH`, and `CODEX_HISTORY_PATH`.
 2. Use `python3 scripts/manifest.py stats "$OBSIDIAN_VAULT_PATH"` (then `list`/`has`/`get`/`lookup` as needed) — do **not** read whole `.manifest.json`
-3. Vault fitness: `wiki health` then do `context.act`, then `next`. Done: first-turn load is named and `next.path` is acted on.
+3. Vault fitness: run `wiki health` once, then consume `context.act`, `next.path`, and ordered `focus` without reranking. The first-turn load is named and `next.path` is acted on.
+
+## Boundary
+
+### Input
+
+Accept a status/delta or insights request, the resolved vault configuration, and
+manifest/health evidence. The request may identify a scope, but status does not
+reclassify an explicit owner request.
+
+### Work
+
+Run `wiki health` as the maintenance observation surface before rendering
+actions. Consume its exact `context.act`, `next.path`, and ordered `focus`
+values. Report status and delta evidence alongside that order; never construct
+a second priority planner, rerank the focus list, or create a maintenance
+ledger. Standard status is read-only; insights may only rewrite the
+regenerable `_insights.md` output.
+
+### Done
+
+Return the overview, complete delta, token footprint, and What to Do Next with
+the health-selected action first. If a selected scope cannot be made clean,
+report the concrete finding and blocker rather than claiming completion.
+
+### Capability Handoff
+
+Delta recommendations hand to `wiki-ingest` or `wiki-rebuild` only when the user
+starts that capability. Structural findings hand to `wiki-lint`; semantic
+findings return to their artifact owner. The health snapshot and the receiving
+owner's result are the evidence used when status resumes.
+
 
 
 ## The Manifest
@@ -198,68 +229,49 @@ After building the status summary, compute the token footprint estimate:
 
 2. **Count tokens** — For each page (or a scoped rollup), use objective tiktoken counts via `python3 scripts/token-count.py` / shared helper (`docs/agents/token-measurement.md`). Default encoding `cl100k_base`. **Do not** use `file_size_bytes / 4`. Sum per tier and total from tiktoken.
 
-3. **Index-only estimate** — Build a compact index text (or sample) from each page’s `title` + `summary` + `tags`, then count with `token-count.py` / shared helper (same encoding). Do **not** divide char lengths by 4.
-
-4. **Typical query estimate** — Index-only tiktoken total + tiktoken cost of five representative full pages (or mean page tokens × 5 from the footprint rollup). Prefer calling `token-count.py` on concrete paths.
-
-5. **Threshold check** — Read `WIKI_TOKEN_WARN_THRESHOLD` from config (default: `100000`). If `0`, skip the warning. Compare against **tiktoken** full-wiki (or scoped) sum only via `scripts/token-count.py` (`docs/agents/token-measurement.md`). Never fall back to ÷4.
-
-6. **Include in every standard status run** — both normal and insights mode. Footnote the **encoding** (`cl100k_base` or `WIKI_TOKEN_ENCODING`), not a chars/token heuristic.
-
 ## Step 4: What to Do Next
 
-Replace the old single-line Recommendation with a ranked **What to Do Next** section. Gather these signals before rendering:
+Replace the old single-line Recommendation with a **What to Do Next** section.
+Gather every signal below, but let the `wiki health` snapshot own action
+ordering.
 
 ### 4a: Gather signals
 
-1. **Raw files** — list every file at the top level of `OBSIDIAN_RAW_DIR` that isn't a `.gitkeep`. Promoted drafts are archived in `wiki/_archive/` (not a repo-root `_archive/`); do not treat archived files as pending work.
-2. **Stale core pages** — scan all vault `.md` files. A page is "stale" when its `updated` frontmatter field is ≥90 days before today's date AND it has ≥5 incoming wikilinks (i.e., it's "core" — other pages depend on it). List them by name + last-updated date.
+1. **Raw files** — list every file at the top level of `OBSIDIAN_RAW_DIR` that
+   isn't a `.gitkeep`. Promoted drafts are archived in `wiki/_archive/` (not a
+   repo-root `_archive/`); do not treat archived files as pending work.
+2. **Stale core pages** — scan all vault `.md` files. A page is "stale" when
+   its `updated` frontmatter field is ≥90 days before today's date and it has
+   ≥5 incoming wikilinks. List it by name and last-updated date.
+3. **Orphan pages** — pages with zero incoming wikilinks. Show up to 5 names
+   and report the total.
+4. **Synthesis opportunities** — check `hot.md` for a recent
+   `/wiki-synthesize` summary; if absent for 14 days, flag the scan as overdue.
+5. **Source delta** — use Step 2's new and modified counts.
+6. **Structural health** — use the same `wiki health` snapshot. For a requested
+   scope, run `wiki lint <scope>` and surface its complete configured findings.
+   Do not use `log.md` as a lint ledger.
 
-3. **Orphan pages** — pages with zero incoming wikilinks. To compute: glob all `.md` pages, extract every `[[wikilink]]`, count references to each page, collect pages with `incoming == 0`. Show up to 5 names; report total count.
+### 4b: Render health order
 
-4. **Synthesis opportunities** — check `hot.md` for any recent `/wiki-synthesize` run summary. If the last synthesis run reported N opportunities, surface that count. If no synthesis has been run recently (not in `hot.md` or `log.md` within last 14 days), flag it as "synthesis scan overdue".
-
-5. **Source delta** — from Step 2: count of new + modified sources ready to ingest.
-
-6. **Structural health** — run `wiki health`; when a scope is relevant, run `wiki lint <scope>` and surface all current findings. Do not use `log.md` as a lint ledger.
-
-### 4b: Rank and render
-
-Score each category and emit a ranked list, **capped at 6 items**. Always rank in this priority order (skip a category if its count is 0 or it has nothing to report):
-
-| Priority | Category | Trigger |
-|---|---|---|
-| 1 | `_raw/` files waiting | Any files present in `_raw/` |
-| 2 | Stale core pages | Any page: updated ≥90 days ago AND ≥5 incoming links |
-| 3 | Orphan pages | Any pages with zero incoming wikilinks |
-| 4 | Synthesis opportunities | N opportunities from last synthesize run, OR scan overdue |
-| 5 | New/modified sources | Count from delta in Step 2 |
-| 6 | Structural health | Current findings from `wiki health` or `wiki lint`, if any |
-
-Render as:
+Render `context.act`, then `next.path`, then the ordered `focus` list exactly as
+returned by `wiki health`. Attach the gathered raw/stale/orphan/synthesis/delta
+details to the relevant health action without sorting those actions again.
+Cap the displayed list at 6 entries; if more remain, append:
+`_(N more items available — run /wiki-status --full to see all)_`.
+The `--full` flag is not yet implemented; this is forward-looking copy only.
 
 ```markdown
 ## What to Do Next
 
-1. 📥  Ingest 3 files waiting in `_raw/`
-   → architecture-notes.md, meeting-2026-05-10.md, paper-draft.pdf
-   run: /wiki-ingest
-2. 🔄  Refresh 2 stale core pages (not updated in 90+ days)
-   → [[System Architecture]] (last updated 2026-02-10), [[API Design]] (2026-01-15)
-   run: open these pages and re-run /wiki-update
-
-3. 🔗  Link 7 orphan pages  →  run: /cross-linker
-   Disconnected: [[Redis Caching]], [[JWT Tokens]], +5 more
-
-4. 🧩  2 synthesis opportunities identified  →  run: /wiki-synthesize
-   [[Redis Caching]] × [[Session Management]] (co-occur in 8 pages)
-
-5. ✅  4 sources modified since last ingest  →  run: /wiki-ingest (append mode)
-
-6. 🩺  Structural findings present — run: `wiki health` (or `wiki lint <scope>`)
+Health action: <context.act>
+Next: <next.path> — <next.reason>
+1. <focus[0].action> — <raw/stale/orphan/synthesis/delta evidence>
+2. <focus[1].action> — <evidence, if present>
 ```
 
-**Empty state:** If all categories have nothing to report (no `_raw/` files, no orphans, no stale pages, no synthesis opportunities, no new sources, no structural findings), output instead:
+Do not replace the health order with the former fixed category ranking. If all
+signals and health findings are empty, output:
 
 ```markdown
 ## What to Do Next
@@ -268,7 +280,6 @@ Render as:
     All sources up to date · no orphans · no stale core pages · no _raw/ files pending
 ```
 
-**Overflow:** If more than 6 items would be shown, add a footer line: `_(N more items available — run /wiki-status --full to see all)_`. The `--full` flag is not yet implemented; this is forward-looking copy that sets expectations.
 
 ## Insights Mode
 

@@ -1,14 +1,14 @@
 ---
 title: "{{title}}"
 category: entities
-tags: [shattered-sea, spell]
+tags: ["{{campaign}}", spell]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: spell
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 visibility: dm
 level: ""
 school: ""

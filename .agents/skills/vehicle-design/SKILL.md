@@ -8,6 +8,33 @@ description: >-
 ---
 
 # Vehicle Design
+## Boundary contract
+
+### Input
+
+Take a named vehicle owner, the caller's objective, the relevant brief,
+`wiki/templates/vehicle.md`, and linked canon/evidence for its route, berth,
+owner, crew, components, and prior state. The owner is the craft's durable
+identity, not a one-off travel description.
+
+### Owner-specific Work
+
+Work only the named craft: preserve its class and canon, write the
+identity-first silhouette, and fill Sheet, Components, Crew stations, Handling,
+and needed Combat fields. Keep Unknowns explicit, mark invention, and leave
+crew or PC decisions as playable pressure rather than authored outcomes.
+
+### Capability Handoff
+
+Berth → `place-design`. Crew member → `npc-design`. Owner →
+`faction-design`. Spoken look → `theatre-of-the-mind`.
+
+### Done
+
+Use the existing `## Done` checklist below. Completion is observable when the
+named vehicle page path, vehicle-template and runnable-sheet checks, playable
+handling/combat decision, and any child return evidence are reported.
+
 
 Prep only. Follow `docs/agents/work.md`.
 

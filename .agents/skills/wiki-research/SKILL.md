@@ -10,6 +10,20 @@ description: >
 # Wiki Research — Autonomous Multi-Round Research
 
 You are running an autonomous research loop on a topic, synthesizing what you find, and filing the results into the Obsidian wiki as permanent knowledge.
+## Boundary Contract
+
+### Input
+Accept an unambiguous research topic plus the resolved vault context and optional `research-config.md` constraints. Existing `index.md`, `hot.md`, and source inventory establish what not to duplicate.
+
+### Work (owner: wiki-research)
+Own the bounded three-round search, gap filling, contradiction handling, provenance, and filing of source, concept, entity, and synthesis pages. Prefer authoritative sources, merge with existing pages, and keep unresolved limits explicit rather than inventing certainty.
+
+### Done
+Return the existing synthesis and quality evidence: rounds halted, source pages, concept/entity pages, contradictions, and cross-links. Update `.manifest.json`, `index.md`, `log.md`, and `hot.md`; report the exact QMD result and every created/updated path.
+
+### Capability Handoff
+When filing leaves graph-wide mentions outside the research set, hand the page list and unresolved link candidates to `cross-linker`; its bounded return is a Cross-Link Report, not another research round.
+
 
 ## Before You Start
 

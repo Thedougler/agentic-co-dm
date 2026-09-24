@@ -13,7 +13,7 @@ base_confidence: 0.55
 ---
 
 - [[entities/vehicle/Amberreach|Amberreach]]
-- [[entities/vehicle/Fernen|Fernen]]
+- [[entities/vehicle/fernen|Fernen]]
 - [[entities/vehicle/glass-debt|Glass Debt]]
 - [[entities/vehicle/greyteeth-runner|Greyteeth Runner]]
 - [[entities/vehicle/hcs-constancy|HCS Constancy]]

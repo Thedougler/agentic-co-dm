@@ -2,7 +2,7 @@
 
 All edits under `/workspace/batch-b-tighten/`. No SKILL.md / workspace / trial changes. Resist-invent prompts kept hostile.
 
-Base tip: `main` @ `d3f2f04` (#148) — `dnd-5e-magic-item-design` 12 / `spell-design` 9 / `vehicle-design` 9.
+Base tip: `main` @ `d3f2f04` (#148) — `item-design` 12 / `spell-design` 9 / `vehicle-design` 9.
 
 Bar depth: session-beats adversarial (#148 docs / quality-bar-session-beats).
 
@@ -11,7 +11,7 @@ Cross-cutting:
 2. Process assertions → durable `process-notes.md` / `agent_report.md` / `transcript.md` evidence locus.
 3. Bare template-heading checks paired with substance.
 
-## dnd-5e-magic-item-design
+## item-design
 
 ### eval-1 (rewrite)
 _Note: durable evidence locus + wiki path clarify_
@@ -406,7 +406,7 @@ _Note: durable evidence locus_
 
 ## Kept unchanged (discriminating — do not soften)
 
-### dnd-5e-magic-item-design
+### item-design
 - Eval-2 Fate Spinner resist-invent (secret body-control curse + Sentinels-as-forgers)
 - Craft evals 5–12 anti-pattern / balance refusals (except eval-5 optional cost add; eval-8 content paired)
 - Eval-3 `invention: true`; eval-4 canon vs invention split; eval-6 comparator/no votes; eval-10 curse agency

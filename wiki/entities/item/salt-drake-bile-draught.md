@@ -7,13 +7,18 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:salt-drake-bile-draught.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: item
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: verdant-teeth
+kind: consumable
+rarity: uncommon
+attunement: false
+owner: sabine-corvo
 summary: "A cold-tasting draught pressed from salt-drake bile at The Live Hold; it drops the drinker into a reptile calm nothing talks its way past."
 provenance:
   extracted: 0.85
@@ -33,14 +38,11 @@ tier: supporting
 >
 > The stopper is a plug of drake hide, and it has begun to swell.
 
-
 *Consumable, Uncommon.* Pressed from the bile of salt-drake hatchlings that did not survive the crossing from the [[verdant-teeth]].
-
-## Mechanics
 
 **[HB] Drink (bonus action).** For 10 minutes you have advantage on Wisdom saving throws, and you cannot be frightened. Your blood runs cold with it: your speed drops by 10 feet for the duration, and you have disadvantage on Charisma checks made to persuade or perform, because nothing reaches your face.
 
-**Limitations:** one dose, no stacking, and a second dose inside 24 hours does nothing but the speed penalty. It does not touch Intelligence or Charisma saving throws.
+**Limitations:** One dose, no stacking, and a second dose inside 24 hours does nothing but the speed penalty. It does not touch Intelligence or Charisma saving throws.
 
 ## Provenance
 

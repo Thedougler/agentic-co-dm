@@ -14,6 +14,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: unknown
+kind: consumable
+rarity: common
+attunement: false
+owner: ""
 summary: "A sealed tin of spiced delicacy from a distant port, prepaid and never claimed."
 provenance:
   extracted: 0.85

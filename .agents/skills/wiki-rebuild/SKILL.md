@@ -12,6 +12,36 @@ description: >
 
 You are performing a destructive operation on the wiki. Always archive first, always confirm with the user before proceeding.
 
+## Boundary
+
+### Input
+
+Accept one explicit mode—archive only, archive plus rebuild, or restore—plus
+the resolved vault and manifest evidence. This capability owns the destructive
+archive/rebuild/restore operation, not source re-ingest selection.
+
+### Work
+
+Resolve config, inspect manifest stats, archive before every destructive step,
+and confirm before clearing or overwriting live content. Preserve the existing
+archive metadata, QMD refresh, and mode-specific procedure. Do not auto-start
+ingest after a rebuild.
+
+### Done
+
+Report the archive destination, affected page/source counts, live-state result,
+and the explicit QMD outcome. A rebuild or restore is complete only when its
+mode's files and metadata are verified; QMD failure is a specific reported
+blocker, not a reason to roll back valid markdown.
+
+### Capability Handoff
+
+After archive plus rebuild, return control to the user to select
+`wiki-ingest`/history-ingest owners. After restore, hand the restored scope to
+`wiki-lint` for validation. The receiving result returns to this operation;
+never claim a clean scope from the archive action alone.
+
+
 ## Before You Start
 
 1. **Resolve config** — follow the Config Resolution Protocol in AGENTS.md (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH` and optional QMD settings such as `QMD_WIKI_COLLECTION`

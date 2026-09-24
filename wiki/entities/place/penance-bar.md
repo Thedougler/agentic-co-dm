@@ -30,16 +30,27 @@ relationships:
 ---
 # Penance Bar
 
-## Overview
-
-> [!narration] Narration
->
-
 ## At a Glance
 
-[[penance-bar]] is a named island or site in the western [[Midchain]]. A sandspit shrine doing endless penance for devils it never summoned; its priest is quietly paying off a debt of his own.
+[[penance-bar]] is a named island or site in the western [[Midchain]]. It is a sandspit shrine doing endless penance for devils it never summoned.
 
+> [!narration] Narration
+> Penance Bar is a sandspit shrine in the western Midchain, built for penance against devils it never summoned.
 
-## Situation
+## Who
 
-A later siege note overrides the west-split's personal-debt line. [[corvin-ashe]] scapegoats a woods coven to protect his standing. His fearmongering draws a demon swarm. [[Sorrowbell]] is the shrine. [[sula-marn]] is Reeve and a genuine ally. The locked climax is a demon walking into the empty Tyr box, telling Ashe that Tyr is not there, then kissing him into a devil-touched form. The coven is harmless. The grove is the last hallowed ground. The mob marches to burn it. Win condition is the truth arriving before the grove burns. Mirela Cass and Ysolde Cass are retired from this telling.
+* [[corvin-ashe]] is the priest whose fearmongering scapegoats a harmless woods coven.
+* [[sula-marn]] is the Reeve and a genuine ally.
+* A demon swarm is drawn by Ashe's fearmongering.
+
+## What
+
+The [[Sorrowbell]] is the shrine. The grove is the last hallowed ground, and the mob marches to burn it. A demon can walk into the empty Tyr box, say that Tyr is not there, and kiss Ashe into a devil-touched form.
+
+## Where
+
+Penance Bar is a named island or site on a sandspit in the western [[Midchain]]. The shrine, grove, and empty Tyr box are the relevant places within the situation.
+
+## Why
+
+The active conflict is whether the truth arrives before the grove burns. The coven is harmless; the danger comes from Ashe's scapegoating, the mob, and the demon swarm.

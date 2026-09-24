@@ -7,8 +7,13 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:spell-scroll-zone-of-truth.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: "2026-09-22"
 type: item
+kind: consumable
+region: "Calveno"
+owner: ""
+rarity: uncommon
+attunement: false
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed

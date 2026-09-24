@@ -34,32 +34,48 @@ relationships:
 ## Overview
 
 > [!narration] Narration
-> Grass covers mounds in neat rows across the islet, too perfect to be natural, and the wind carries a low hum that never fades.
-> 
-> A half-dug mound near the shore lies open, tools scattered. The digger has vanished.
-> 
-Burial mounds from a forgotten war compose this island. Every grave-robbing attempt here ends unfinished.
+> Grass covers mounds in neat rows across the islet, too perfect to be natural, and the wind carries a low hum that never fades. A half-dug mound near the shore lies open, tools scattered, while waist-high sea-grass shows the shape of every burial mound beneath it.
 
 ## At a Glance
 
-| Field | Detail |
-|---|---|
-| Type | Artificial burial-mound island |
-| Region | [[midchain-north|The Northern Midchain]] |
-| Controlled By | Unclaimed |
-| Known For | Forgotten war-graves, and grave-robbers who don't leave with their haul |
+Barrow Ait is an artificial island of forgotten war-graves in the [[midchain-north|Northern Midchain]], connected by water to [[central-strait|the Central Strait]], [[kwoss|Kwoss]], [[calders-verge|Calder's Verge]], and [[adwe|Adwe]]. The South route through Calder's Verge is the most direct approach recorded; the island can be skipped, but doing so gives up the chance to investigate its unfinished grave-robbing attempts and persistent hum.
 
-## Where
+---
 
-- North: [[central-strait|The Central Strait]]
-- East: [[kwoss|Kwoss]]
-- South: [[calders-verge|Calder's Verge]]
-- West: [[adwe|Adwe]]
+## If the party
+
+- **Approaches the shore.** The party finds a half-dug mound, scattered tools, and no digger; the unfinished work provides a visible reason to investigate.
+- **Searches a mound.** Sea-grass reveals the mound's shape before anyone steps onto it, while ravens and deer signal that digging has disturbed the island.
+- **Crosses the rows.** The party must navigate open swales, bittercress ditches, snakes, and the low hum without assuming the graves are safe to open.
+- **Leaves the island.** They preserve the mystery but abandon any chance to learn why grave-robbers never leave with their haul.
+
+---
+
+## Who
+
+No named resident or faction claims Barrow Ait. Deer graze the swales at dawn, ravens gather over freshly turned mounds, and venomous snakes den between turf blocks. Grave-robbers have visited, but the source records only their abandoned tools and absence, not a surviving crew.
+
+---
 
 ## What
 
-- Sea-grass: thick, waist-high, silvered blades that lie flat in sheets when the wind gusts off the strait, showing the shape of every mound underneath before a boot ever touches one.
-- Bittercress: grows wild in the ditches between the rows. Tart enough to chew raw, a fistful cures the seasickness locals blame on the crossing.
-- Deer: graze the open swales at dawn and bolt for the shoreline the moment anyone starts digging.
-- Ravens: gather over any mound freshly turned, waiting on scraps before the digger notices them.
-- Venomous snakes: den in the gaps between the turf blocks and strike the hand that reaches into a barrow without checking first.
+- **Burial mounds.** Rows of graves from a forgotten war compose the island; their arrangement is too neat to be natural.
+- **Sea-grass.** Waist-high silvered blades lie flat in wind from the strait and reveal each mound's shape.
+- **Bittercress.** It grows in the ditches and can be chewed to cure the seasickness locals blame on the crossing.
+- **Wildlife.** Deer flee when digging begins, ravens gather over turned earth, and venomous snakes strike hands reaching into barrows without checking.
+- **The hum.** A low sound never fades from the wind; its source is not established.
+
+---
+
+## Where
+
+- **North:** [[central-strait|The Central Strait]]; travel distance is not recorded.
+- **East:** [[kwoss|Kwoss]]; travel distance is not recorded.
+- **South:** [[calders-verge|Calder's Verge]]; the most direct recorded approach, with travel distance not recorded.
+- **West:** [[adwe|Adwe]]; travel distance is not recorded.
+
+---
+
+## Why
+
+The party comes to investigate the forgotten war-graves, follow the evidence of failed grave-robbers, or use bittercress against seasickness after the crossing. The island matters because it offers a visible mystery and a persistent environmental pressure without confirming whether the danger lies in the graves, the hum, or the act of taking anything away.

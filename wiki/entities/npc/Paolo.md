@@ -5,14 +5,18 @@ tags: [shattered-sea, npc]
 sources:
   - "campaign-os:paolo.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "A gondolier-in-training in Calveno who capsized his boat into the canal in front of the crew and offered them free rides afterward."
+status: alive
+role: contact
+location: "[[calven-and-calveno]]"
+faction: none
+summary: "A gondolier-in-training in Calveno who capsized his boat into the canal and offered the rescuing crew free rides afterward."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -22,21 +26,59 @@ tier: supporting
 ---
 # Paolo
 
-*A young gondolier still learning the trade in [[calven-and-calveno]]'s canals.*
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-**Wants:** to master the gondolier's trade, and to pay back the crew who fished him out of the canal.
+| **Role** | Contact |
+| --- | --- |
+| **Nature** | Cheerfully unbothered gondolier-in-training |
+| **Home** | [[calven-and-calveno]]'s canals |
+| **Wants** | To master the trade and repay the crew who fished him out |
 
-> [!narration] Narration
-> A young man, soaked through, cap knocked off, sash still clinging to him. He climbs back aboard his boat like nothing happened and starts dancing his way back into the work.
+> **DM thesis:** Paolo turns an embarrassing accident into an invitation: the journey is always more exciting than the destination.
+```
 
-**Roleplay Concept:** cheerfully unbothered novice who talks up the journey over the destination.
+```col-md
+flexGrow=1
+===
+> [!narration] Paolo
+> A young man climbs back aboard his gondola soaked through, cap knocked off, sash still clinging to him. He dances his way back into the work as though capsizing were part of the route, talking brightly over the slap of canal water.
+```
+````
 
-**Lore Sheet:** crashed his gondola into the canal wall near the [[Mercatura]] and went into the water. [[crissdalynn-khinriss|Crissdalynn]] grabbed him, [[perrin-black-jaw|Perrin]] jumped in and righted the boat, [[delmar-fisk|Delmar]] threw him a line, and Crissdalynn fished his dropped belongings (papers and scraps) out of the water. He introduced himself as still learning the trade but confident in it; when the crew declined his offer of a free gondola ride as thanks, he danced his way back to his boat undeterred.
+## Running Paolo
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Paolo has just capsized near the [[Mercatura]] and immediately offers a free ride to anyone who helps right the boat. **Sample line:** “The boat is fine, I am fine, and the canal is much more interesting from inside it.”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+He becomes genuinely grateful when someone treats his novice work seriously. He stops joking and asks how he can repay them, but still refuses to let embarrassment end his trade.
+```
+````
+### Voice
+
+Paolo talks brightly through embarrassment and avoids letting a capsize define his skill. His ask is, “The boat is fine, I am fine, and the canal is much more interesting from inside it.” His refusal is, “You cannot make me quit over one splash.” Under pressure, he says, “Let me repay you with the next ride.”
+
 
 ## Connections
 
-- [[calven-and-calveno]], works its canals as a gondolier
-
-## Session Log
-
-- **Session 08** (`vault/episodes/008/`). Capsized his gondola near the Mercatura; rescued by [[crissdalynn-khinriss|Crissdalynn]], [[perrin-black-jaw|Perrin]], and [[delmar-fisk|Delmar]]. Confirmed: Transcript.
+| Connection | Meaning |
+| --- | --- |
+| [[calven-and-calveno]] | Paolo works its canals as a gondolier. |
+| [[crissdalynn-khinriss|Crissdalynn]] | Grabbed Paolo after the capsize and recovered his dropped belongings. |
+| [[perrin-black-jaw|Perrin]] | Jumped in and righted the gondola. |
+| [[delmar-fisk|Delmar]] | Threw Paolo a line. |
+| [[Mercatura]] | The canal-wall accident occurred nearby. |

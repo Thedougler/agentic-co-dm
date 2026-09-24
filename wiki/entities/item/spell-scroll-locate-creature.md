@@ -17,6 +17,8 @@ visibility: dm
 kind: consumable
 rarity: rare
 attunement: false
+region: unknown
+owner: ""
 summary: "A rare spell scroll holding a single casting of Locate Creature."
 provenance:
   extracted: 0.85

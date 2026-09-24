@@ -12,6 +12,11 @@ type: item
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
+region: ""
+kind: magic
+rarity: rare
+attunement: false
+owner: ""
 campaign: shattered-sea
 visibility: dm
 summary: "A scroll holding Freedom of Movement, letting its reader shrug off restraints and swim as easily as walk."

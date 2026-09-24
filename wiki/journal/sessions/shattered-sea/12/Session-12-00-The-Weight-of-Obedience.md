@@ -3,13 +3,17 @@ title: "Session 12 — The Weight of Obedience"
 category: journal
 tags: [shattered-sea, session-prep]
 sources:
-  - "Session 12 concept (accepted 2026-09-16)"
   - "journal/sessions/shattered-sea/11/Session-11-Recap.md"
+  - "journal/sessions/shattered-sea/11/Session-11-Transcript.md"
+  - "wiki/entities/lore/shattered-sea-overview.md"
   - "wiki/entities/lore/two-grave-orders.md"
-  - "wiki/entities/npc/celia-parel.md"
-  - "wiki/entities/npc/oren-vask.md"
+  - "wiki/entities/lore/taking-on-aruhe.md"
+  - "wiki/entities/lore/Auralis.md"
+  - "wiki/entities/place/turned-hollow.md"
+  - "wiki/entities/npc/nello-castri.md"
+  - "Session 12 rebuild (DM request 2026-09-22)"
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-22
 type: session-prep
 kind: session-plan
 lifecycle: proposed
@@ -19,83 +23,163 @@ campaign: shattered-sea
 session: 12
 visibility: dm
 invention: true
-summary: "The party pushes deeper into Aruhe, reads the Gold orders layered among the dead, and faces Talon Skarn's second attempt to take the Fate Spinner."
+summary: "Skarn's theft resumes at dawn, two survivors ask the party to fetch a believer who walked toward the woman's garden, and the road north runs through the bowl where generations of Grung died obeying an order, to a voice telling Perrin to CONSUME."
 ---
 # Session 12 — The Weight of Obedience
 
-**Compass**
+## Session Compass
 
-**Promise.** The party pushes deeper into [[aruhe]] and learns that obedience can be imposed, inherited, chosen, or refused while [[talon-skarn]] turns that confusion into a second theft attempt.
+**Opening situation.** Pre-dawn at the otter camp on [[river-slack-basin]]: [[talon-skarn]] is five feet from [[crissdalynn-khinriss|Crissdalynn]], reaching for the [[fate-spinner]], with one of three Legendary Resistances spent.
 
-**Starting situation.** Play resumes at [[river-slack-basin]] with Skarn in the middle of his first attempt to take the [[fate-spinner]] from [[crissdalynn-khinriss|Crissdalynn]]. One Legendary Resistance is already spent, [[jean-claude-tabarnack|Jean-Claude]] remains catatonic, and the party has not reached [[memorial-grove]].
+**Immediate pressure.** Skarn gives the attempt three rounds before sunrise turns the sky over to the bloodhawks. If the Spinner slips away, he steals [[matteo-scola|Matteo]]'s ghost plums so he can come back unseen.
 
-**Central question.** When an order, a rule, a patron, or a living place demands obedience, what does the party choose to carry forward?
+**Session question.** Can the party keep the Fate Spinner from Skarn, and whose voice will they obey to do it?
+
+**If the party does nothing.** Skarn takes the Spinner and flies for [[talon-vantyrus]] at dusk. [[nello-castri|Nello]] is swallowed by the strangler fig in the [[turned-hollow]]. [[Hinewai]] waits at her Grove, already knowing a Grung is on her island.
+
+**Dramatic spine.** Obedience imposed (the Gold orders), inherited (Jean-Claude's caste), chosen (the survivors' rule), refused (Matteo), and unasked-for (Perrin's patron), each beat showing one of them under pressure.
+
+**Now:** [[Session-12-01-River-Slack-Reprise]]
+
+**On deck:** [[Session-12-02-A-Name-for-Matteo]] · [[Session-12-03-Grass-Without-Wind]]
 
 ## Beat Map
 
-| # | Beat | Form | Trigger | What changes | Handoff | Budget |
-| -: | ---- | ---- | ------- | ------------ | ------- | -----: |
-| 01 | [[Session-12-01-River-Slack-Reprise]] | **Hook** | Play resumes mid-fight at [[river-slack-basin]]. | Skarn's first theft attempt resolves as Held, Stolen, or interrupted, and the party commits to a next move. | [[Session-12-02-The-Dead-Keep-Orders]] | 30 min |
-| 02 | [[Session-12-02-The-Dead-Keep-Orders]] | **Development** | The fight or chase reaches the inland death trail. | Spent seals and order scraps reveal successive Grung expeditions. | [[Session-12-03-Grass-Without-Wind]] | 30 min |
-| 03 | [[Session-12-03-Grass-Without-Wind]] | **Cliffhanger** | The party travels with the trail evidence and unresolved Skarn pressure. | Packs, fruit, and grass show that an invisible pursuer can still alter the party's position. | [[Session-12-04-Two-Grave-Orders]] | 25 min |
-| 04 | [[Session-12-04-Two-Grave-Orders]] | **Development** | The trail opens into a valley mass grave. | Celia, Oren, and Jean-Claude make the layered Gold objective legible: report, replace, find, destroy. | [[Session-12-05-The-Rule-Bound-Route]] | 45 min |
-| 05 | [[Session-12-05-The-Rule-Bound-Route]] | **Cliffhanger** | The party accepts a route toward the memorial or tries to bypass it. | Urgency, carried fruit, Jean-Claude, and the Spinner test whether the party can follow Aruhe's rules without surrendering judgment. | [[Session-12-06-What-Is-Chosen]] | 30 min |
-| 06 | [[Session-12-06-What-Is-Chosen]] | **Development** | The safe route reaches its inland line and the followers state their terms. | The party can choose how to approach [[memorial-grove]], and the living guava makes the coming moral cost visible. | [[Session-12-07-The-Guava-and-the-Spinner]] | 30 min |
-| 07 | [[Session-12-07-The-Guava-and-the-Spinner]] | **Climax** | Skarn makes his second theft attempt while invisible and close. | Perrin's choice, Aruhe's response, and Skarn's access to the Spinner decide the highest-stakes pressure. | [[Session-12-08-Toward-the-Memorial]] | 45 min |
-| 08 | [[Session-12-08-Toward-the-Memorial]] | **Resolution** | The second attempt breaks, succeeds, or changes shape. | The party can name what is different and look from the mass grave toward the memorial line. | Player-selected next route | 25 min |
+The chart paces play; the players' choices pick which beat fires. About four hours.
 
-## Floating Beats
+|  # | Beat | Form | Trigger | What changes | Hand-off / options | Budget |
+| -: | --- | --- | --- | --- | --- | -: |
+| 01 | [[Session-12-01-River-Slack-Reprise]] | **Hook** | Play resumes mid-fight, pre-dawn. | The Spinner is Held, in the slack, or Stolen; Skarn leaves with 0–2 of Matteo's plums. | [[Session-12-02-A-Name-for-Matteo]] | 35 min |
+| 02 | [[Session-12-02-A-Name-for-Matteo]] | Development | Celia and Oren come down the bloody bank after sunrise. | Nello is missing up the north trail; Oren asks for help. Jean-Claude can wake. | [[Session-12-03-Grass-Without-Wind]] | 30 min |
+| 03 | [[Session-12-03-Grass-Without-Wind]] | Cliffhanger | Skarn makes a living claim beside the column on [[print-braid]]. | Wolfrabbits hunt the taker; Skarn is marked or learns where the Spinner rides. | [[Session-12-04-Two-Grave-Orders]] | 25 min |
+| 04 | [[Session-12-04-Two-Grave-Orders]] | Development | The aisle north of [[star-cut]] opens onto the Turned Hollow. | The whole Gold order trail; the diggers died under the wrong tree; Nello is alive in the fig. | [[Session-12-05-The-Wrong-Tree]] | 30 min |
+| 05 | [[Session-12-05-The-Wrong-Tree]] | Cliffhanger | A rescuer enters the fig's blindsight. | Nello is saved or swallowed; the party spends itself; the Hollow may burn. | [[Session-12-06-What-Is-Chosen]] | 30 min |
+| 06 | [[Session-12-06-What-Is-Chosen]] | Development | The party reaches the north rim in view of the Grove. | Nello confesses he told the woman about the Grung; Perrin's cloak starts dripping seawater. | [[Session-12-07-The-Guava-and-the-Spinner]] | 20 min |
+| 07 | [[Session-12-07-The-Guava-and-the-Spinner]] | **Climax** | The party commits to a direction, tries to rest, or 10 minutes pass. | The Spinner is kept, stolen, or traded; Perrin answers "CONSUME." | [[Session-12-08-Toward-the-Memorial]] | 50 min |
+| 08 | [[Session-12-08-Toward-the-Memorial]] | **Resolution** | Skarn is gone or bound. | Hinewai steps to the edge of her flowers and looks at Jean-Claude. | Session 13 opens on her question | 15 min |
+
+### Cards, threads, and tiers
+
+|  # | Card | Thread | Tier | Memorable element |
+| -: | --- | --- | --- | --- |
+| 01 | Play a Cliffhanger (Confrontation) | Skarn's theft | Villain, limited to three rounds and the object | A CR 13 monk who ignores every blow not between him and the Spinner. |
+| 02 | Rescuers | Inland survivors; Gold orders | — | Celia kneeling to write Matteo among the dead, and crossing him out instead. |
+| 03 | Pursuit | Skarn's theft; the island's law | Scare / Grunts | Wolfrabbits leaping past the party at empty air; a bloodhawk striking something invisible. |
+| 04 | Revelation | Gold orders; Nello | — | Rings of Grung dead like tree rings, and a living man hanging still beside a skeleton. |
+| 05 | Monster (Rescuers objective) | Nello; the island's law | Fright / Henchmen | Antlers sliding out of the fig's trunk as it empties for its next meal. |
+| 06 | Personal Stake | Jean-Claude and Hinewai; Perrin and Auralis | — | Seawater dripping from Perrin's cloak, far from any sea. |
+| 07 | Reckoning | Everything | Villain / Terror | "CONSUME," and vines uncoiling toward something no one can see. |
+| 08 | Ending Cliffhanger (+ Villain Escapes) | Everything | — | Hinewai's amber eyes stopping on Jean-Claude. |
+
+### Floating Beats
 
 | Beat | Bring it in when… | Job | Drop it when… |
-| ---- | ---------------- | --- | ------------- |
-| [[Session-12-03-Grass-Without-Wind]] | Skarn's first theft ends without an immediate chase. | Turn pursuit into visible travel paranoia. | The party has either secured its packs or accepted that Skarn is still shadowing them. |
-| [[Session-12-04-Two-Grave-Orders]] | The party bypasses the survivor camp or reaches the dead trail first. | Put the layered order clue in front of the party without requiring the named followers. | The party has a reliable route and understands that two graves matter. |
-| [[Session-12-06-What-Is-Chosen]] | The party refuses the followers' route or presses directly toward the Grove. | Make the choice about obedience explicit before the Climax. | The party commits to a route or turns away. |
+| --- | --- | --- | --- |
+| [[Session-12-03-Grass-Without-Wind]] | The party travels anywhere with the Spinner and Skarn is free, including south toward the beach. | Skarn probes, makes a claim, and the island punishes the taker. | Skarn is captured or the Spinner is already his. |
+| Jean-Claude wakes ([[Session-12-02-A-Name-for-Matteo]] table) | Chad is at the table and any waking route happens, in any beat. | Put Jean-Claude's player in the game. | He is awake. |
+
+### Climax candidates
+
+| Candidate | Player choices that would make it inevitable | Shape | Threads harvested |
+| --- | --- | --- | --- |
+| Skarn at the north rim ([[Session-12-07-The-Guava-and-the-Spinner]]) | The party goes north for Nello and keeps the Spinner. | Reckoning | All six. |
+| Skarn at the east canopy (Stolen branch on the same page) | Skarn took the Spinner in 01 or 03, and the party hunts him before dusk. | Final Battle | Theft, law, patron. |
+| Skarn on the beach road | The party takes Matteo to the ship in 02. Reuse 07's Skarn block and the claim rule with [[wolfrabbit]] responders; Auralis still speaks if a living fruit is in reach. | Reckoning | Theft, law, patron; Nello dies offscreen. |
+
+### Branches & Skips
+
+| From | If the party… | Then surface… | Consequence |
+| --- | --- | --- | --- |
+| [[Session-12-01-River-Slack-Reprise]] | Loses the Spinner to Skarn | 02 as written; 03 becomes tracking him; 07 Stolen branch. | He cannot fly off Aruhe until dusk because the bloodhawks own the day sky. |
+| [[Session-12-01-River-Slack-Reprise]] | Drops or captures Skarn | Skip 03's thief; keep the wolfrabbits if anyone makes a claim. 07 becomes the rescue's aftermath and the Hinewai meeting pulls forward. | A bound Countless apprentice who can be questioned about Vantyrus. |
+| [[Session-12-02-A-Name-for-Matteo]] | Heads south to the ship with Matteo | Floating 03 on the beach road; the beach-road Climax candidate. | Nello dies in the fig at dusk; Celia and Oren go north alone. |
+| [[Session-12-04-Two-Grave-Orders]] | Leaves Nello or goes around the Hollow | Skip 05; go to 06. | Nello's secret is lost; Oren leaves; Hinewai still knows. |
+| [[Session-12-06-What-Is-Chosen]] | Walks into the Grove as guests | 07 at the flower ring. | Any damage to the tree, graves, or flowers ends Hinewai's welcome. |
+
+## Threads
+
+| Thread | Source | Planted | Tested | Harvested |
+| --- | --- | --- | --- | --- |
+| Skarn and the [[fate-spinner]] | Faction clock ([[Countless]]) | [[Session-12-01-River-Slack-Reprise]] | [[Session-12-03-Grass-Without-Wind]] | [[Session-12-07-The-Guava-and-the-Spinner]] |
+| The island's law ([[taking-on-aruhe]]) | Mystery / world rule | [[Session-12-02-A-Name-for-Matteo]] | [[Session-12-03-Grass-Without-Wind]], [[Session-12-05-The-Wrong-Tree]] | [[Session-12-07-The-Guava-and-the-Spinner]] |
+| The inland survivors and Nello | Crew goal (the Calveno rescue) | [[Session-12-02-A-Name-for-Matteo]] | [[Session-12-05-The-Wrong-Tree]] | [[Session-12-08-Toward-the-Memorial]] |
+| [[two-grave-orders]] | Mystery / Jean-Claude's heritage | [[Session-12-02-A-Name-for-Matteo]] | [[Session-12-04-Two-Grave-Orders]] | [[Session-12-06-What-Is-Chosen]], [[Session-12-08-Toward-the-Memorial]] |
+| Perrin and [[Auralis]] | PC secret (unwitting pact) | [[Session-12-06-What-Is-Chosen]] | [[Session-12-07-The-Guava-and-the-Spinner]] | [[Session-12-08-Toward-the-Memorial]] |
+| Jean-Claude and [[Hinewai]] | Relationship under pressure | [[Session-12-02-A-Name-for-Matteo]] (Oren's warning) | [[Session-12-06-What-Is-Chosen]] | [[Session-12-08-Toward-the-Memorial]] |
 
 ## Critical Routes
 
-| They need to reach or learn… | Route 1 | Route 2 | Route 3 |
-| ---------------------------- | ------- | ------- | ------- |
-| The old Grung objective changed over time. | [[grung-authority-seal]] beside the dead. | [[celia-parel|Celia]]'s sorted scraps. | [[jean-claude-tabarnack|Jean-Claude]] compares the marks to his carried seal. |
-| The memorial lies beyond the mass grave. | [[oren-vask|Oren]]'s route markers. | The inward line of repeated bodies and roots. | The party follows the survivors' spoken rules and sees where they lead. |
-| Perrin can detect the invisible Skarn. | Stay within 5 feet of [[crissdalynn-khinriss|Crissdalynn]]. | Use the party's own area control, noise, or terrain. | Let Skarn expose himself by reaching for the Spinner or fruit. |
+| They need to reach / learn… | Route or clue 1 | Route or clue 2 | Route or clue 3 |
+| --- | --- | --- | --- |
+| Nello went north toward the Grung dead | [[Session-12-02-A-Name-for-Matteo]]: Oren asks for help. | [[Session-12-02-A-Name-for-Matteo]]: Celia's ledger ("walked north"). | [[Session-12-03-Grass-Without-Wind]]: Nello's boots and bare prints at Spoke Ring. |
+| How to get Nello out of the fig | [[Session-12-04-Two-Grave-Orders]]: Nello's whisper. | The hanging skeleton and the antlers in the trunk. | A thrown stone, or Intelligence (Nature) on the fig. |
+| The Grung dug under the wrong tree | Sorting the seals by ring. | An empty pit with sawn roots and no grave. | The black-flower ring and second tree past the north rim, and Nello's "This isn't it." |
+| Skarn is invisible and nearby | Slit straps and empty grass the wolfrabbits chase. | Perrin's whiskers at 5 feet. | Feathers bursting from bare air under the bloodhawk; the cloak's stream in 06–07. |
 
+````col
+```col-md
+flexGrow=2
+===
 ## Pressure
 
-| Step | Situation without intervention | Surface through |
-| ---: | ----------------------------- | --------------- |
-| 0 | Skarn is still trying to reach the Spinner while the party remains in Aruhe's active pressure. | [[Session-12-01-River-Slack-Reprise]] |
-| 1 | The party discovers that the dead mark repeated expeditions, not one lost group. | [[Session-12-02-The-Dead-Keep-Orders]] |
-| 2 | Skarn's invisible presence keeps the party from treating travel as recovery. | [[Session-12-03-Grass-Without-Wind]] |
-| 3 | The two-grave objective turns the route toward [[memorial-grove]] into a moral choice. | [[Session-12-04-Two-Grave-Orders]] and [[Session-12-06-What-Is-Chosen]] |
-| 4 | Skarn attacks the party's chosen protection of the Spinner, and Aruhe reacts to any living claim. | [[Session-12-07-The-Guava-and-the-Spinner]] |
+**Opposition.** [[talon-skarn]], apprentice of [[Countless]], wants the [[fate-spinner]] for [[talon-vantyrus]]. His means are patience, a CR 13 monk's kit, Matteo's [[ghost-plum]]s, and open sky he can use only at dusk. He spends Legendary Resistance and the party's own exhaustion.
 
+| Step | Situation without intervention | Surface through |
+| -: | --- | --- |
+| 0 | Skarn is five feet from Crissdalynn with three rounds before sunrise. | [[Session-12-01-River-Slack-Reprise]] |
+| 1 | He takes Matteo's plums and shadows the party north, invisible. | [[Session-12-03-Grass-Without-Wind]] |
+| 2 | He probes the column; if it is tight, he makes a living claim to break it and marks himself. | [[Session-12-03-Grass-Without-Wind]] |
+| 3 | He watches the party spend itself on the fig from the Hollow's east rim. | [[Session-12-05-The-Wrong-Tree]] |
+| 4 | He eats his last plum and makes the committed second attempt. | [[Session-12-07-The-Guava-and-the-Spinner]] |
+```
+
+```col-md
 ## PC Touchpoints
 
-| Character | What matters to them this session | Best beat |
-| --------- | --------------------------------- | --------- |
-| [[delmar-fisk]] | Delmar carries catatonic Jean-Claude and must decide when protecting the living means slowing the route, confronting the orders, or refusing the island's terms. | [[Session-12-04-Two-Grave-Orders]] and [[Session-12-05-The-Rule-Bound-Route]] |
-| [[crissdalynn-khinriss]] | Crissdalynn is the protected carrier of the Spinner, making her both Skarn's target and the party's visible point of trust. | [[Session-12-01-River-Slack-Reprise]] and [[Session-12-07-The-Guava-and-the-Spinner]] |
-| [[jean-claude-tabarnack]] | Jean-Claude's Grung identity and carried seal make the old orders personal without making him responsible for obeying them. | [[Session-12-02-The-Dead-Keep-Orders]] and [[Session-12-04-Two-Grave-Orders]] |
-| [[perrin-black-jaw]] | Perrin must choose whether to obey Auralis's exact warning, “CONSUME,” and stay close enough to Crissdalynn to detect Skarn. | [[Session-12-06-What-Is-Chosen]] and [[Session-12-07-The-Guava-and-the-Spinner]] |
+| Character | What matters to them this session | Spotlight beat(s) |
+| --- | --- | --- |
+| [[crissdalynn-khinriss]] | Her bonded Spinner is the target twice; every hiding, handoff, or fight is her call. Spinning it for Jean-Claude could wake him and expose it. | 01, 03, 07 |
+| [[perrin-black-jaw]] | His whiskers are the only sense that finds an invisible thief, and a voice he has heard once before orders him to take from a living tree. | 03, 06, 07 |
+| [[delmar-fisk]] | He carries Jean-Claude all day, and his blunderbuss and boots are the party's reach against a flyer. The fig rescue needs someone to haul. | 01, 05, 07 |
+| [[jean-claude-tabarnack]] | He can wake to a Gold mark, water, or the Spinner. The orders that killed his people are in the Hollow's rings, and the woman at the Grove hates Grung and knows he is coming. | 02, 04, 08 |
+```
+````
 
-## Floating Secrets & Clues
+## Floating Clues
 
-- [ ] The oldest order says “go inland and report,” while later scraps account for replacements after silence.
-- [ ] The latest readable order says to find and destroy two graves; it does not explain the Death Bloom.
-- [ ] Skarn's use of a Ghost Plum turns a missing piece of fruit into a movement problem, not just a lost ration.
-- [ ] Auralis can sense the second theft moments early but cannot choose for Perrin.
-- [ ] The party can reach the memorial without taking a living claim, but urgency makes that choice harder.
+- [ ] Skarn watched from high up-sun when Matteo ate a ghost plum and vanished, and he knows the sling holds two more.
+- [ ] Bloodhawks own the open daylight sky over Aruhe, so Skarn cannot fly off the island until dusk.
+- [ ] A living claim marks the taker until dawn, and the island's responders find a marked creature even when it is Invisible.
+- [ ] Fighting back against something that attacked you is not a claim. Oren does not know this.
+- [ ] The Spoke Ring camp was four people: Celia, Oren, Matteo, and Nello.
+- [ ] The oldest seals say "go inland and report"; the newest say "find and destroy two graves beneath the memorial tree."
+- [ ] Nothing is buried under the Hollow's fig; the pits hold only sawn roots.
+- [ ] The strangler fig can hold only one creature in its trunk at a time.
+- [ ] Fallen giant's guavas under [[star-cut]]'s west wall still work if picked up ripe, with no claim.
+- [ ] The woman in the woods asked Nello who came on wings, and he told her about the Grung.
+- [ ] Perrin's cloak runs with deep-sea water when Skarn is near.
 
 ## Session Toolkit
 
 | Need | Ready reference |
-| ---- | --------------- |
-| **Places** | [[river-slack-basin]] · [[memorial-grove]] · [[aruhe]] |
-| **People** | [[talon-skarn]] · [[Celia Parel]] · [[Oren Vask]] · [[Hinewai]] |
-| **Opposition** | [[talon-skarn]] · [[taking-on-aruhe]] |
-| **Objects** | [[fate-spinner]] · [[ghost-plum]] · [[grung-authority-seal]] · [[giants-guava]] |
-| **Lore** | [[two-grave-orders]] · [[Auralis]] |
+| --- | --- |
+| **Places** | [[river-slack-basin]] · [[cutoff-lip]] · [[print-braid]] · [[spoke-ring]] · [[star-cut]] · [[turned-hollow]] · [[memorial-grove]] |
+| **People** | [[celia-parel]] · [[oren-vask]] · [[matteo-scola]] · [[nello-castri]] · [[Hinewai]] |
+| **Opposition** | [[talon-skarn]] · [[wolfrabbit]] · [[young-bloodhawk]] · [[strangler-fig]] · [[vine-lash]] |
+| **Rewards / objects** | [[fate-spinner]] · [[ghost-plum]] · [[giants-guava]] · [[grung-authority-seal]] |
+| **Rules / special procedures** | [[taking-on-aruhe]] (claim response) · [[two-grave-orders]] · [[Auralis]] · Skarn's Snatch ruling in [[Session-12-01-River-Slack-Reprise]] |
+
+### If play stalls
+
+**Advance pressure.** Skarn Snatches, or the fig's trunk empties.
+
+**Surface information.** Celia holds up a seal from one ring beside a seal from another.
+
+**Offer a consequence.** Oren announces he is leaving in ten minutes, with or without the party.
+
+**Use a floating Beat.** Skarn's probe on whatever road the party is walking.
+
+**Ask for intent.** Ask what the party is protecting first.
 
 ## Live Notes
 
@@ -105,28 +189,42 @@ summary: "The party pushes deeper into Aruhe, reads the Gold orders layered amon
 
 ### Questions Created
 
-- What did Skarn learn from the first attempt, and what leverage did he gain?
-- Does the party approach the memorial as guests, investigators, rescuers, or takers?
+-
 
 ### Beats
 
 - [ ] [[Session-12-01-River-Slack-Reprise]]
-- [ ] [[Session-12-02-The-Dead-Keep-Orders]]
+- [ ] [[Session-12-02-A-Name-for-Matteo]]
 - [ ] [[Session-12-03-Grass-Without-Wind]]
 - [ ] [[Session-12-04-Two-Grave-Orders]]
-- [ ] [[Session-12-05-The-Rule-Bound-Route]]
+- [ ] [[Session-12-05-The-Wrong-Tree]]
 - [ ] [[Session-12-06-What-Is-Chosen]]
 - [ ] [[Session-12-07-The-Guava-and-the-Spinner]]
 - [ ] [[Session-12-08-Toward-the-Memorial]]
 
-**- After the Session**
+### Prep Audit
 
-**Actual ending:** What situation exists now?
+- [x] The Hook starts in motion, commits the party fast, and opens the question the Climax answers.
+- [x] Middle beats alternate Development and Cliffhanger; the Climax prelude (06) is a Development before an action Climax.
+- [x] Every beat advances a live thread; the Climax harvests threads the middle planted.
+- [x] Escalation rises: Scare (wolfrabbits) → Fright (fig) → Villain (Skarn with the island involved).
+- [x] Each outcome row hands a visible trigger to the next beat.
+- [x] Every must-have conclusion or access has three routes.
+- [x] The opposition's agenda runs without the PCs.
+- [x] Every PC has a spotlight beat and a harvested thread.
+- [x] Every named actor, place, and item has an owner page.
+- [ ] Every linked beat passes the table-ready cold read.
 
-**Unresolved pressure:** What continues moving?
+## After the Session
 
-**Unused but still relevant:** Which beat, clue, NPC, or consequence remains live?
+### Carry Forward
 
-**Players intend to:** Their stated next move, in their words when possible.
+**Actual ending.**
 
-**Next opening:** Which route or pressure can open the next session?
+**Unresolved pressure.**
+
+**Unused but still relevant.**
+
+**Players intend to.**
+
+**Next opening.**

@@ -60,6 +60,10 @@ In the draft, Tomo arrives with Sandro and Nino after eating four fruits. Keep t
 
 No posture change is established. Do not assign Tomo a settled goal, allegiance, or transformation beyond the draft's stated voice and hands.
 
+## Voice
+
+The draft establishes that Tomo's voice changed after he ate four fruits, but it records no verbal habit or sample line. Do not invent dialogue until the DM accepts this draft as Work.
+
 ## Connections
 
 | Connection | Meaning |

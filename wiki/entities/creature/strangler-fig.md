@@ -36,6 +36,8 @@ relationships:
 
 ## Statblock
 
+![[strangler-fig-overview.png|Strangler Fig overview: the rooted predator in the Turned Hollow]]
+
 ```statblock
 layout: Basic 5e Layout
 name: "Strangler Fig"

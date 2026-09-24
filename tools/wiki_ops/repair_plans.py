@@ -123,7 +123,7 @@ def build_safe_fix_plan(
         action = _action_name(finding.get("repair_action") or finding.get("action"))
         target = str(finding.get("file") or finding.get("page") or "").replace("\\", "/")
         if not action or action not in _FIXERS:
-            skipped.append(_record_skip(finding, "unsupported_fixer"))
+            skipped.append(_record_skip(finding, "unsupported"))
             continue
         if not _in_scope(target, selected):
             skipped.append(_record_skip(finding, "outside_scope"))

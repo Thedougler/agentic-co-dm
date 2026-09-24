@@ -15,6 +15,20 @@ description: >
 You are rewriting `$OBSIDIAN_VAULT_PATH/.obsidian/graph.json` so Obsidian's graph view tints nodes by tag, folder, or visibility.
 
 Obsidian stores graph settings in `<vault>/.obsidian/graph.json`. The `colorGroups` array is a list of `{query, color}` pairs; the first matching query wins per node. Queries use Obsidian's search syntax: `tag:#foo`, `path:"concepts"`, `file:foo`, etc. Color is `{"a": 1, "rgb": <packed-int>}` where the int is `(R << 16) | (G << 8) | B`.
+## Boundary Contract
+
+### Input
+Accept a resolved vault with an existing `.obsidian/` directory, a requested color mode (`by-tag`, `by-category`, `by-visibility`, `combined`, `custom`, or clear), and any explicit mappings. Treat the current `graph.json` as the preservation baseline.
+
+### Work (owner: graph-colorize)
+Own deriving groups from actual vault tags/categories, backup creation, and replacing only `colorGroups`. Preserve every other graph setting, warn about Obsidian's close-time overwrite, and keep reserved visibility ordering and explicit mappings intact.
+
+### Done
+Return the existing graph-colorize summary with mode, groups, palette, backup, reload warning, and the `GRAPH_COLORIZE` log entry. Verify the backup exists and only `colorGroups` changed; report the resulting graph path and any fallback or undo action.
+
+### Capability Handoff
+When the request expands to broader Obsidian appearance work, hand the graph path, mode, group count, and backup name to `obsidian-layout-adjustment`; its bounded return is a styling or reload/visual-confirmation result.
+
 
 ## Before You Start
 

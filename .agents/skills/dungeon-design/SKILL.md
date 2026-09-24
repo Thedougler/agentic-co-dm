@@ -10,6 +10,36 @@ description: >-
 ---
 
 # Dungeon design
+## Boundary contract
+
+### Input
+
+Take a named dungeon/site or expedition owner, the caller's objective, the
+relevant brief, applicable place template/skeleton, and canon/evidence for its
+scale, topology, factions, pressure, and prior state. The owner is a playable
+site or expedition loop, not room prose or an encounter list.
+
+### Owner-specific Work
+
+Work only the dungeon: run the seven-part test, choose scale, build the
+decision graph before keys, then stock factions, information, obstacles,
+encounters, pressure, rest, and persistence. Preserve agency, honest
+capabilities, and the keying order; keep player-facing prose and owner
+mechanics on their proper surfaces.
+
+### Capability Handoff
+
+Encounter → `encounter-prep`. Hazard → `traps-trials`. Checks →
+`dnd5e-mechanics`. Creature math → `monster-design`. Spoken room text →
+`theatre-of-the-mind`.
+
+### Done
+
+Use the existing seven-part test, skeletons, procedures, and review gates below.
+Completion is observable when the named site/expedition path, scale/graph/
+template checks, runnable pressure and rest procedure, modular keys, and any
+child return evidence are reported.
+
 File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Run the seven-part test
@@ -142,9 +172,9 @@ stocking, encounters, obstacles, table procedure, and QC. Use only the public
 links in [references/sources.md](references/sources.md).
 
 Hand player-facing room, landmark, NPC, and encounter prose to
-theatre-of-the-mind. Retrieve vault facts through qmd-retrieval; do not invent
-setting/campaign canon when the vault is silent—say so and leave a
-clearly marked stub. Keep design truth, clocks, DCs, and hidden information out
+theatre-of-the-mind. Retrieve vault facts through qmd-retrieval; when the vault is
+silent, fill the gap with a marked canon proposal (`invention: true`,
+listed for the DM), never silent canon. Keep design truth, clocks, DCs, and hidden information out
 of player-facing prose. Write keyed checks and saves with the at-table grammar
 in `obsidian-markdown`. File location keys as **facts** on `wiki/templates/place.md`
 (plus keyed subsections when the site is a dungeon). Seven-part tests and

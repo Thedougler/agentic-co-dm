@@ -13,6 +13,32 @@ description: >-
 
 File what constitution X makes canon. Follow `docs/agents/work.md`.
 
+## Boundary contract
+
+### Input
+
+Take a named faction owner, the caller's objective, and the relevant brief,
+owner pages, and `wiki/templates/faction.md`. When the owner is a faction,
+enter this skill directly; do not route through a generic place or session
+planner.
+
+### Owner-specific Work
+
+Work only the named faction: preserve its canon, fill the faction template,
+and apply the want/method/pressure/portent/collision craft below. Keep the
+caller's objective intact while retrieving any local supporting entities.
+
+### Capability Handoff
+
+Named place → `place-design`. Off-screen motion → `world-tick`. Hand off only
+the bounded section needed; the child does not re-plan the faction.
+
+### Done
+
+Use the existing `## Done` checklist below. Completion is observable when the
+named faction page path, template contract, and actionable want/method/player
+opening are reported alongside any child handoff evidence.
+
 ## Central principle
 
 A faction is a source of **off-screen motion and campaign pressure**, not an
@@ -104,9 +130,7 @@ pacing to `session-beats`, and vault lookup to `.agents/skills/qmd` plus
 
 ## Done
 
-The page is done when:
-
-- It lives in `wiki/<campaign>/factions/` with `type: faction`.
+- It lives at the canonical owner path `wiki/entities/faction/` with `type: faction`.
 - It fills `wiki/templates/faction.md` per the template contract.
 - The identity sentence holds: concrete want, method, player opening.
 - DM thesis is one sentence of campaign pressure.

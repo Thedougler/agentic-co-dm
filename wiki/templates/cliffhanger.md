@@ -1,7 +1,7 @@
 ---
 title: "{{title}}"
 category: journal
-tags: [shattered-sea, session-prep]
+tags: ["{{campaign}}", session-prep]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
@@ -9,39 +9,40 @@ type: session-prep
 kind: cliffhanger
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Copy-start scaffold. At a Glance; Open on Action; Run the beat; Opposition; Pressure; Resolution; Handoff. Omit unused. Pass is those jobs. File Session-<n>-<BB>-<Label>.md. -->
+<!-- Copy-start scaffold for `cliffhanger-beats`. Jobs: Abstract; Open on Action; Run the beat; Opposition; Pressure; Battlefield; Character jobs; Discoveries; Resolution; References. Omit a section only when this Cliffhanger never spends it. Bar: docs/agents/table-ready.md. File Session-<n>-<BB>-<Label>.md. -->
 
 # {{title}}
 
+**Card.** Cliffhanger card from `cliffhanger-beats`.
+**Tier.** Grunts / Minions / Henchmen / Villain (monsters: Scare / Fright / Horror / Terror) — this slot's place on the session's escalation ladder.
+**Thread under test.** What the last Development revealed that this contest proves or disproves.
+**Entry state.** Positions, conditions, resources, and knowledge the party carries in.
 **Trigger.** What happens that makes action necessary **now**.
-
-**PC objective.** What concrete result can end this contest besides merely surviving.
-
-**Opposition objective.** What [[npc]], [[creature]], faction, hazard, or other force is trying to accomplish.
-
+**PC objective.** The concrete result that ends this contest besides surviving.
+**Opposition objective.** What [[npc]], [[creature]], faction, or hazard is trying to accomplish.
 **Stakes.** What the party can lose, fail to protect, or allow to change.
-
-**Ends when.** The observable condition that means this beat is over. Make the Cliffhanger brief, then resolve and hand off.
+**Ends when.** The observable condition that ends the beat — about three to five rounds, or twenty to thirty minutes of table time for a non-combat contest.
+**Memorable element.** The feature, foe, or moment the table will remember.
 
 > [!narration] Open on Action
-> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: situated moment → beat: cliffhanger. -->
-> Write a situated opening in two to four sentences the DM can speak aloud. Address the players as "you", present tense. Front-load the danger — immediate threat, relative position, cover or routes, drawable appearance, and at least one non-sight sense. End on the reaction point. The opening makes the danger or instability unmistakable and gives the players something urgent to respond to. Do not prescribe the party's response or reveal hidden information.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → references/scenes.md → Cliffhanger opening. -->
+> Spoken text the DM reads aloud, written to that recipe.
 
 ## Run the Beat
 
-| Need at the table  | Prep                                                                                                                                         |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Opposition**     | [[opposition]], including what they want and how they pursue it.                                                                       |
-| **Default motion** | What happens if the party does nothing.                                                                                                      |
-| **Pressure**       | Timer, pursuit, collapsing position, hostage, advancing force, spreading hazard, or other urgency.                                           |
-| **Leverage**       | List visible features the party or opposition can exploit. Examples include cover, height, machinery, exits, crowds, unstable terrain, vehicles, magic, etc.   |
-| **Danger**         | What makes defeat credible. Include the important mechanic only when needed to run it.                                                       |
-| **Ways out**       | Visible opportunities to fight, flee, bargain, bypass, rescue, seize the objective, or change the situation. List the actual opportunities available here. |
+| Need at the table  | Prep                                                                                                   |
+| ------------------ | ------------------------------------------------------------------------------------------------------ |
+| **Opposition**     | [[opposition]], what they want, and how they pursue it.                                                |
+| **Default motion** | What happens each round the party does nothing.                                                        |
+| **Pressure**       | Timer, pursuit, collapsing position, hostage, advancing force, or spreading hazard — with its ticks.  |
+| **Leverage**       | Visible features either side can exploit, each with its ruling.                                        |
+| **Danger**         | What makes defeat credible, in numbers.                                                                |
+| **Ways out**       | The actual opportunities here to flee, bargain, bypass, rescue, seize the objective, or change the situation. |
 
 ````col
 ```col-md
@@ -49,11 +50,12 @@ flexGrow=1
 ===
 ### Opposition
 
+- **[[Creature / NPC]] × #.** AC, HP, Speed; the attack or save DC the DM rolls; the trait that changes tactics.
 - **Intent.** What they are trying to accomplish rather than whom they are trying to kill.
-- **Opening move.** Their first decisive action if nothing interrupts them.
-- **Behavior.** What they consistently do that the DM can play at the table.
+- **Opening move.** Their first decisive action.
+- **Adapts.** What they do when the party counters the opening.
 - **Breaking point.** What makes them retreat, surrender, change objectives, or become desperate.
-- **Resources.** [[creature]], [[npc]], [[item]], reinforcement, vehicle, spell, or environmental advantage actually available here.
+- **Exit.** Retreat route, escape trick, or surrender terms — and how the party can close it.
 ```
 
 ```col-md
@@ -61,63 +63,62 @@ flexGrow=1
 ===
 ### Pressure
 
-#### Escalation Toolkit
-
-Use these only when the fiction calls for them or momentum begins to flatten. Skip, reorder, or replace them in response to play.
-
-**Telegraph.** Show clearly what is about to worsen before it happens.
-
-**Escalate.** Increase danger, narrow an opportunity, move the objective, introduce a complication, or change the terrain.
-
-**Breaking point.** Make the central threat immediate enough that someone must act or accept the consequence.
-
-**Opposition ladder** (optional, scale across the session arc): Grunts (3:1 weaker, first test) → Minions (2:1 slightly weaker) → Henchmen (1:1 equal or stronger) → Villain (substantially stronger + support, Climax only). Save the strongest for last.
+| Round / trigger | What happens | What the party sees |
+| --------------- | ------------ | ------------------- |
+| 1               |              |                     |
+| 2               |              |                     |
+| 3               |              |                     |
+| 4               |              |                     |
 ```
 ````
 
 ### Battlefield / Chase / Hazard
 
-- **Space.** The few distances, zones, routes, or boundaries that matter.
-- **Hazard.** What is dangerous here and when it acts.
+- **Space.** The distances in feet, zones, routes, or boundaries that matter.
+- **Hazard.** What is dangerous here, when it acts, and its numbers.
 - **Interactive features.**
-  - **Feature.** Describe what a character can obviously do with it and what changes.
-  - **Feature.** Describe what a character can obviously do with it and what changes.
-  - **Feature.** Describe what a character can obviously do with it and what changes.
-- **Change.** One believable way the environment can evolve during the beat.
+  - **Feature.** What a character can obviously do with it and the ruling (cover, DC, damage, condition).
+  - **Feature.** What a character can obviously do with it and the ruling.
+  - **Feature.** What a character can obviously do with it and the ruling.
+- **Change.** How the space transforms mid-contest, and on which round or trigger.
 - **Map.** Add a battlemap when available.
 
-<!-- Omit the map line when theater of the mind is faster. -->
+## Character jobs
+
+<!-- One row per PC present: the job their abilities fit in this contest, or the personal stake it touches. -->
+
+| PC     | Job or stake in this contest |
+| ------ | ---------------------------- |
+| [[PC]] | …                            |
 
 ## Discoveries
 
-<!-- Keep information portable. Reveal it through whatever action, foe, object, or consequence makes sense in play rather than requiring one predetermined method. Omit this section when the beat carries no useful information. -->
+<!-- Keep when the contest carries information. Each fact portable: it surfaces through whatever action, foe, or object fits play. -->
 
-- **Clue.** One short usable fact the party can discover.
-- **Clue.** One short usable fact the party can discover.
-- **Clue.** One short usable fact the party can discover.
+- **Clue.** One short usable fact the party can discover, and where.
+- **Clue.** One short usable fact the party can discover, and where.
 
 ## Resolution
 
-| Outcome                 | What changes                                                                                 |
-| ----------------------- | -------------------------------------------------------------------------------------------- |
-| **Objective gained**    | The concrete benefit, changed situation, or advantage the party gains.                       |
-| **Costly success**      | What they gain and the important price, complication, or loss that remains.                 |
-| **Withdrawal / defeat** | The opposition's objective advances or the situation worsens without stopping play.          |
-| **Unexpected solution** | Follow the established fiction. Preserve the consequence of what the party actually changed. |
+| Outcome                 | What changes                                                                                  | Next                             |
+| ----------------------- | --------------------------------------------------------------------------------------------- | -------------------------------- |
+| **Objective gained**    | The concrete benefit, changed position, or advantage the party gains.                         | [[Session-{{session}}-BB-Label]] |
+| **Costly success**      | What they gain and the price that remains.                                                    | [[Session-{{session}}-BB-Label]] |
+| **Lost**                | Captured, separated, the item taken, the route cut — the opposition's objective advances.     | [[Session-{{session}}-BB-Label]] |
+| **Broken off**          | Who withdrew, where they went, and what each side kept.                                        | [[Session-{{session}}-BB-Label]] |
+| **Anything else**       | The facts on this page that stay true; the world follows what the party actually changed.     | [[Open Node]]                    |
 
-**Changed state.** What is now true because this contest happened.
+**Carry forward.** One line per state variable the next Development inherits — positions, injuries, resources, who holds what, what the contest proved.
 
-**Immediate question.** What decision, revelation, negotiation, investigation, or other non-action problem is now in front of the party.
+**Immediate question.** The decision, revelation, negotiation, or investigation now in front of the party.
 
-**Next Development.** [[Session-{{session}}-BB-Label]]
-
-**If the session ends here.** End on one concrete image, consequence, revelation, arrival, or unanswered decision that makes the changed situation unmistakable.
+**If the session ends here.** One concrete image, consequence, or arrival that makes the changed situation unmistakable.
 
 ## References
 
-- [[place]]. Include only the location details needed to adjudicate this beat.
-- [[npc]]. Include the motive, posture, or dialogue needed here.
-- [[creature]]. Include tactics or the statblock.
-- [[item]]. Include the objective, leverage, or reward.
-- [[vehicle]]. Include movement or combat rules.
-- [[spell]]. Include the effect that materially changes the situation.
+- [[place]]. Location details needed to adjudicate this beat.
+- [[npc]]. Motive, posture, and statblock.
+- [[creature]]. Tactics and statblock.
+- [[item]]. The objective, leverage, or reward.
+- [[vehicle]]. Movement or combat rules.
+- [[spell]]. The effect that changes the situation.

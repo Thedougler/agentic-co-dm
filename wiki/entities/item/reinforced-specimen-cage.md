@@ -16,8 +16,10 @@ reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: durable
+region: ""
 rarity: common
 attunement: false
+owner: ""
 summary: "Three-foot iron-and-oak travel cage that holds a specimen against ordinary strength and claws."
 provenance:
   extracted: 0.95
@@ -35,10 +37,8 @@ Durable gear, Common
 
 Empty weight is 45 pounds. The box is about 3 feet on a side. A creature secured inside cannot escape with a Strength check below `DC 16`. The cage itself is AC 14 and 20 hit points against claws and simple melee. The latch takes a padlock or a rope binding.
 
-## At a Glance
-
-Portable expedition cage for a living specimen, hostile or valuable. 60 gp.
-
 ## At the Table
+
+Portable expedition cage for a living specimen, hostile or valuable. It costs 60 gp.
 
 Lock something in, feed it through the tray, and do not open the door. Ordinary Strength will not walk it out under `DC 16`.

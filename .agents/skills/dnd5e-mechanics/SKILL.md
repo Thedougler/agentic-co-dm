@@ -72,7 +72,7 @@ and `automatic success` annotations; they are unfinished output.
   or tool if relevant).
 - An effect is being imposed; the creature resists or evades → ***save***.
 - A strike against Armor Class → **attack roll**. Stop. Do not turn it into
-  Athletics. Combat math lives in `homebrew-monsters-5e`.
+  Athletics. Combat math lives in `monster-design`.
 
 A *check* is something the creature **does**. A *save* is something that
 **happens to** the creature.
@@ -131,7 +131,7 @@ Load `references/difficulty.md`. Use this order:
    Load `references/saves.md` for which ability. Do not use this formula to
    mint a lock, climb, or recall *DC*.
 
-Monster save *numbers* still come from `homebrew-monsters-5e` chassis after
+Monster save *numbers* still come from `monster-design` chassis after
 the save *type* is chosen here.
 
 **Complete when:** the *DC* is a listed *rung* or a named formula.
@@ -199,7 +199,7 @@ success result, failure result, and current player use.
 - Challenge telegraph, fail-forward, escalation of the *situation* → `traps-trials`.
 - Encounter, cockpit, or success-count skill challenge → `encounter-prep` then
   `run-guide`. A *quality ladder* on one *check* stays here.
-- Monster attack bonus, HP, and save *number* → `homebrew-monsters-5e`.
+- Monster attack bonus, HP, and save *number* → `monster-design`.
 - Spoken prose → `theatre-of-the-mind` after the mechanical pass.
 - Idea routing, staging, manifest → `wiki-ingest`.
 

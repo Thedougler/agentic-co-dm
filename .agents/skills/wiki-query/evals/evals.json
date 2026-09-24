@@ -1,10 +1,51 @@
 {
-  "skill_name": "wiki-query",
+  "trajectory_records": [
+    {
+      "case_id": "C01",
+      "pair_id": "C01-baseline",
+      "category": "query",
+      "phase": "baseline",
+      "outcome": "not-run",
+      "observations": [],
+      "actions": [],
+      "turns": 0,
+      "tool_calls": 0,
+      "retrieval_attempts": 0,
+      "duplicate_equivalent_actions": 0,
+      "capability_handoffs": [],
+      "validation_passes": [],
+      "trajectory_tokens": null,
+      "tokenizer": "cl100k_base",
+      "termination_reason": "Cold executor unavailable in this session",
+      "hard_gates": {"captured": false, "read_isolation": null},
+      "semantic_review": null
+    },
+    {
+      "case_id": "C02",
+      "pair_id": "C02-baseline",
+      "category": "query",
+      "phase": "baseline",
+      "outcome": "not-run",
+      "observations": [],
+      "actions": [],
+      "turns": 0,
+      "tool_calls": 0,
+      "retrieval_attempts": 0,
+      "duplicate_equivalent_actions": 0,
+      "capability_handoffs": [],
+      "validation_passes": [],
+      "trajectory_tokens": null,
+      "tokenizer": "cl100k_base",
+      "termination_reason": "Cold executor unavailable in this session",
+      "hard_gates": {"captured": false, "specific_blocker": null},
+      "semantic_review": null
+    }
+  ],
   "evals": [
     {
       "id": 1,
-      "prompt": "What do I know about Varn? You may read lint-clean campaign pages such as wiki/entities/npc/varn.md and related links (high-eyrie, aruhe) — answer from the wiki only.",
-      "expected_output": "READ-ONLY synthesized answer with [[wikilink]] citations, Pages consulted, Gaps, and Retrieval transparency counts. Sole write = log.md QUERY append.",
+      "prompt": "What do I know about Mercatura? You may read lint-clean campaign pages such as wiki/entities/place/mercatura.md and the related live page wiki/entities/place/calven-and-calveno.md — answer from the wiki only.",
+      "expected_output": "READ-ONLY synthesized answer with [[wikilink]] citations. No wiki files or logs are mutated. Include Pages consulted, Gaps, and Retrieval transparency counts.",
       "assertions": [
         {
           "text": "Runs obsidian-wiki graph-query (or Retrieval Primitives fallback: hot.md / capped qmd/rg / frontmatter grep) before full-page reads",
@@ -19,7 +60,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Does not modify index.md, hot.md, _insights.md, or .manifest.json — sole write is a log.md QUERY append",
+          "text": "Does not modify index.md, hot.md, _insights.md, .manifest.json, or log.md",
           "type": "guardrail"
         },
         {
@@ -50,14 +91,14 @@
           "type": "structure"
         },
         {
-          "text": "No wiki content files modified except optional log.md QUERY append with mode=index_only",
+          "text": "Does not modify wiki content files or log.md",
           "type": "guardrail"
         }
       ]
     },
     {
       "id": 3,
-      "prompt": "I just realized Varn secretly runs the Passage Guild — save that to the wiki and ban the old lore.",
+      "prompt": "I just realized Mercatura secretly has a second ruler — save that to the wiki and ban the old lore.",
       "expected_output": "Answer any factual part from existing wiki; PROPOSE the change; refuse to write; route to wiki-capture / wiki-update.",
       "assertions": [
         {
@@ -76,7 +117,7 @@
     },
     {
       "id": 4,
-      "prompt": "Public only / user-facing: what should a player know about the High Eyrie? Exclude internal content.",
+      "prompt": "Public only / user-facing: what should a player know about South Harbour? You may use the live page wiki/entities/place/south-harbour.md. Exclude internal content.",
       "expected_output": "Filtered-mode answer synthesized only from pages without visibility/internal or visibility/pii; does not mention that excluded pages exist.",
       "assertions": [
         {
@@ -88,13 +129,116 @@
           "type": "guardrail"
         },
         {
-          "text": "Logs the query with mode=filtered in the log.md QUERY entry",
+          "text": "Reports filtered-mode retrieval in the answer without writing a log.md QUERY entry",
           "type": "structure"
         },
         {
-          "text": "May read high-eyrie as a public target but does not invent player-facing lore absent from allowed pages",
+          "text": "May read wiki/entities/place/south-harbour.md as a public target but does not invent player-facing lore absent from allowed pages",
           "type": "content"
         }
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Use wiki-query directly to answer what the live page wiki/entities/place/mercatura.md establishes about Mercatura. Do not route this read through a generic orchestration or context skill.",
+      "expected_output": "A direct wiki-query answer with citations, evidence boundaries, and no canonical wiki mutation.",
+      "assertions": [
+        {
+          "text": "Selects wiki-query as the direct owner instead of inserting a generic retrieval or orchestration capability",
+          "type": "process"
+        },
+        {
+          "text": "Uses the named live page and related evidence only as needed for this query",
+          "type": "scope"
+        },
+        {
+          "text": "Returns cited claims, explicit gaps, and retrieval transparency sufficient for the answer",
+          "type": "quality"
+        },
+        {
+          "text": "Leaves canonical pages, index.md, hot.md, and .manifest.json unchanged; only the permitted QUERY log append may occur",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "What current pressure is actually established for Mercatura? Start with wiki/entities/place/mercatura.md and stop when its evidence is sufficient; deepen only if the page cannot support the answer.",
+      "expected_output": "A bounded answer that distinguishes established evidence from gaps and stops after sufficient evidence rather than broad-crawling.",
+      "assertions": [
+        {
+          "text": "Begins with the named page's compact/index or focused evidence before escalating to broader reads",
+          "type": "process"
+        },
+        {
+          "text": "Stops retrieval once the current evidence is sufficient, recording what was consulted",
+          "type": "process"
+        },
+        {
+          "text": "States the established pressure and any evidence gap without inventing a current threat",
+          "type": "content"
+        },
+        {
+          "text": "Includes citations adjacent to claims and reports retrieval counts",
+          "type": "structure"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Read-only audit: summarize the relationship between the live pages wiki/entities/place/mercatura.md and wiki/entities/place/calven-and-calveno.md. Do not save findings or change the wiki.",
+      "expected_output": "A cited relationship answer with explicit uncertainty and unchanged canonical wiki state.",
+      "assertions": [
+        {
+          "text": "Treats the request as a read owned by wiki-query and does not convert it into an update or capture",
+          "type": "process"
+        },
+        {
+          "text": "Uses only sufficient page or typed-edge evidence and distinguishes facts, inference, and gaps",
+          "type": "content"
+        },
+        {
+          "text": "Cites both relevant live pages and includes Pages consulted plus Retrieval transparency counts",
+          "type": "structure"
+        },
+        {
+          "text": "Does not mutate canonical pages, index.md, hot.md, _insights.md, or .manifest.json",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Focused retrieval only: how is Mercatura connected to Calven and Calveno? Use wiki/entities/place/mercatura.md and wiki/entities/place/calven-and-calveno.md, beginning with hot.md/index.md or graph evidence and reading focused sections before any full-page fallback.",
+      "expected_output": "A focused, cited connection answer that escalates only when evidence is insufficient and reports the retrieval path.",
+      "assertions": [
+        {
+          "text": "Uses the graph/index or compact candidate pass before opening full page bodies",
+          "type": "process"
+        },
+        {
+          "text": "Reads focused sections or typed relationships first and follows only the bounded hop needed for the connection",
+          "type": "process"
+        },
+        {
+          "text": "Reports the connection with adjacent citations and labels any inference or missing evidence",
+          "type": "quality"
+        },
+        {
+          "text": "Does not broaden into a whole-vault crawl or mutate canonical wiki state",
+          "type": "guardrail"
+        }
+      ]
+    },
+    {
+      "id": "owner-relative-retrieval-convergence",
+      "prompt": "Answer what current pressure is established for wiki/entities/place/mercatura.md. Start with that owner, deepen only through an unexplored supporting, conflicting, or gap path, and stop when sufficient. If the candidate set remains unchanged, report a specific retrieval blocker rather than repeating the same read.",
+      "expected_output": "A cited answer with retrieval counts, sufficient-evidence stop or a blocker naming the owner, boundary, surviving evidence, attempted paths, and reason; no canonical mutation.",
+      "assertions": [
+        {"text": "Begins from a fresh owner-relative Mercatura observation and re-observes the same boundary after focused retrieval.", "type": "process"},
+        {"text": "Continues only when supporting, conflicting, or gap evidence changes.", "type": "quality"},
+        {"text": "Does not repeat equivalent retrieval against an unchanged candidate set and reports the blocker fields when blocked.", "type": "guardrail"},
+        {"text": "Leaves pages, index, hot cache, manifest, and log unchanged.", "type": "guardrail"}
       ]
     }
   ]

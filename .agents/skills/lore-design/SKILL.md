@@ -9,6 +9,34 @@ description: >-
 ---
 
 # Lore Design
+## Boundary contract
+
+### Input
+
+Take a named lore owner, the caller's objective, the relevant brief,
+`wiki/templates/lore.md`, and linked canon/evidence from sessions, places,
+factions, NPCs, items, spells, vehicles, and prior lore. The owner is the
+durable truth being clarified, not a request for generic setting exposition.
+
+### Owner-specific Work
+
+Work only the lore question: preserve established, contested, and unknown
+truth; separate fact from interpretation; and fill the lore template's Current
+Truth, discovery, and At the Table handles. Draft the entity truth before any
+spoken reveal, keep invention proposed and cited, and leave player conclusions
+open to play.
+
+### Capability Handoff
+
+Named entity → its owner skill. Checks → `dnd5e-mechanics`. Spoken delivery
+→ `theatre-of-the-mind`.
+
+### Done
+
+Use the existing `## Done` checklist below. Completion is observable when the
+named lore page path, durable-question/template checks, table-useful handles,
+and any child return evidence are reported.
+
 
 ## Work Gate
 

@@ -7,13 +7,17 @@ tags: [shattered-sea, npc]
 sources:
   - "campaign-os:fen-pickpocket.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+status: alive
+role: contact
+location: "[[calven-and-calveno]]"
+faction: none
 summary: "A teenage halfling pickpocket working the Calveno Beffa crowds, distinct from the Saltwright's Fen."
 provenance:
   extracted: 0.85
@@ -24,18 +28,54 @@ tier: supporting
 ---
 # Fen (Le Paludi Pickpocket)
 
-*Don't confuse this Fen with [[Fen]], the young [[Saltwright]] sailor, a different character with the same name.*
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-> [!narration]
-> A hand lifts clean from a coat pocket and disappears into the crowd. A small shape, already three bodies deep, weaves deeper and doesn't slow.
+| **Role** | Contact |
+| --- | --- |
+| **Nature** | Teenage halfling pickpocket; not violent and not part of an operation |
+| **Home** | Le Paludi and Calveno festival crowds |
+| **Wants** | To pay a Bridge district debt broker and keep working |
 
-A teenage halfling, fast and small, working the [[calven-and-calveno]] festival crowds for three days during [[il-gioco-delle-beffe]]. Not violent, not part of any operation. Use Spy stats, +5 Stealth, +5 Acrobatics.
+> **DM thesis:** Fen is a fast, cornerable witness whose stolen key connects a petty theft to the sewer investigation.
+```
 
-If cornered, she has the purse she lifted, a folding knife she will not use, and a sob story that is about 40% true. The true part is that she is paying off a debt to a Bridge district broker who found her working his territory.
+```col-md
+flexGrow=1
+===
+> [!narration] Fen (Le Paludi Pickpocket)
+> A hand lifts clean from a coat pocket and disappears into the crowd. A small halfling shape, already three bodies deep, weaves deeper without slowing. She is fast, light-footed, and always looking for the next gap.
+```
+````
 
-She carries a maintenance hatch key she cannot explain. She stole it thinking it valuable, and turns out she was right. It fits the sewer network below [[the Bridge]] connector and is a loaded gun for the [[Warren: Grung in the Sewers]] investigation. Leave it in her possession unless the party specifically looks for it.
+## Running Fen (Le Paludi Pickpocket)
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Fen works the [[calven-and-calveno]] festival crowds for three days during [[il-gioco-delle-beffe]]. She targets distracted strangers, then vanishes into the crowd. For a chase, use Spy statistics with `+5` Stealth and `+5` Acrobatics. **Sample line:** “You saw the wrong hand.”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+If cornered, Fen has the lifted purse, a folding knife she will not use, and a sob story that is about 40% true. She becomes cooperative when the party offers a way to address the debt without exposing her broker.
+```
+````
 
 ## Connections
 
-- [[Calveno (Districts & Running the City)]]: her working ground; full chase-encounter mechanics live there ("The Chase")
-- [[Warren (Grung in the Sewers)]]: her stolen hatch key connects here
+| Connection | Meaning |
+| --- | --- |
+| [[Fen]] | A different young [[Saltwright]] sailor with the same name; do not merge them. |
+| [[Calveno (Districts & Running the City)]] | Fen's working ground; the full chase mechanics live there. |
+| [[the Bridge]] | Its connector leads to the maintenance hatch key Fen stole. |
+| [[Warren (Grung in the Sewers)]] | The key connects Fen's theft to this investigation. |

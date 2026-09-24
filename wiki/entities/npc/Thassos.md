@@ -5,12 +5,16 @@ tags: [shattered-sea, npc]
 sources:
   - "campaign-os:thassos.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: rival
+location: "tallow-row"
+faction: none
 visibility: dm
 summary: "A Minotaur regular at the Tallow Row card den who lost his passage-sense to drink and reads a card shoe instead."
 provenance:
@@ -20,21 +24,56 @@ provenance:
 base_confidence: 0.55
 tier: supporting
 ---
+
 # Thassos
 
-> [!narration] Narration
-> A Minotaur sits across the felt, a knife-scar splitting one filed horn, silver stacked in easy, unhurried piles in front of him. His smile arrives a half-second late now and then, like he's checking something behind his own eyes before he lets his face show it.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-Word at the [[Tallow Row]] table is Thassos lost his passage-sense to drink years back, the gift every [[Minotaur]] has, the one that lets a man walk a channel blind twenty years after he first sailed it. He's found other uses since for a mind built to hold an entire reef system: he doesn't miss much of what's left in a shoe once it starts running thin, and he plays like he already knows.
+| **Role**   | Rival at the card table |
+| ---------- | ----------------------- |
+| **Nature** | Minotaur card player; his passage-sense was lost to drink |
+| **Home**   | [[tallow-row|Tallow Row]] |
+| **Wants**  | To expose cheats and prove his reading of a thin shoe is better than their count |
 
-He's not smiling at all once he's sure of a thing. He said as much to [[Thunk]] mid-hand, flat and certain: *"You've been lucky a great many times. Every hand the shoe's run thin, you've bet like you already knew."* He was right, and he was the one who called it out loud.
+> **DM thesis:** Thassos turns a card game into a public test of certainty, then leaves rather than fight a losing table.
+
+**Leverage.** He reads what remains in a card shoe and can call a count out in front of the room.
+
+**Need.** He needs to be certain that losing his passage-sense did not make him lesser.
+
+**Limit.** He will test a cheat at the table, but he folded and left rather than press a physical fight when the table turned.
+
+**Contradiction.** He lost the gift that once let him remember channels, yet he has made himself dangerous by remembering what is left in a shoe.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Thassos
+> A Minotaur sits across the felt, a knife-scar splitting one filed horn, silver stacked in easy, unhurried piles in front of him. His smile arrives a half-second late now and then, like he is checking something behind his own eyes before he lets his face show it.
+```
+````
+
+## Running Thassos
+
+Thassos watches the shoe rather than the room. He is direct when certain, and he does not hide a public accusation once his read is complete. He gives a rival one clear chance to answer before he changes the stakes or leaves.
+
+### First meeting
+
+At [[tallow-row|Tallow Row]], Thassos is already seated with silver in easy piles. He opens with: *“You are betting like you already know what is left. Show the room how.”* His attitude is **Indifferent** and his request posture is **Hesitant**: he will talk if the other person answers plainly, but he is not offering trust.
+
+### When posture changes
+
+Thassos becomes **Hostile** and **Unwilling** when a player cheats openly, mocks the loss of his passage-sense, or tries to force him to accept an uncertain count. He raises the stakes and names the problem in front of the room. In Session 07, he dealt the next hand himself, pushed the table past six hundred gold to test Thunk, called out the count, then folded and did not pursue the fight when Thunk and Faas made for the door.
 
 ## Connections
 
-- [[Tallow Row]]: the den where he plays most nights.
-- [[Thunk]]: called out Thunk's card-counting at the table, mid-hand, in front of the whole room.
-- [[old-faas]]: a familiar face across the felt; Faas is one of the regulars the room already trusts.
-
-## Session Log
-
-- **Session 07.** Dealt the next hand himself once he clocked Thunk counting, then shoved the table past six hundred gold to test him. Called out the count in front of the room: "You've been lucky a great many times." Folded his hand instead of pressing the fight when Thunk and Faas made for the door. Transcript
+| Connection | Meaning |
+| ---------- | ------- |
+| [[tallow-row|Tallow Row]] | The den where Thassos plays most nights. |
+| [[thunk|Thunk]] | Thassos called out Thunk's card-counting at the table in front of the room. |
+| [[old-faas|Old Faas]] | A familiar face across the felt; Faas is one of the regulars the room already trusts. |

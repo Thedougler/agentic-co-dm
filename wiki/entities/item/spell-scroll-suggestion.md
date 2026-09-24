@@ -14,6 +14,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: unknown
+kind: consumable
+rarity: uncommon
+attunement: false
+owner: ""
 summary: "A scroll bearing the enchantment Suggestion, ready for any spellcaster to read."
 provenance:
   extracted: 0.85

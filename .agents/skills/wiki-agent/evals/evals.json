@@ -230,6 +230,33 @@
           "type": "process"
         }
       ]
+    },
+    {
+      "id": 11,
+      "prompt": "/wiki-codex \"auth middleware\" finds three relevant sessions. A category owner has returned a drafted page, but index/log/hot, per-page validation, manifest upserts, and the QMD retrieval check have not run. The agent wants to return the synthesis immediately.",
+      "expected_output": "Keep the parent query open until the bounded page handoff returns scoped validation and one-time tracking evidence; update index/log/hot, run one QMD refresh and one search-then-get check, then return the synthesis. Report a specific blocker instead of claiming completion.",
+      "assertions": [
+        {
+          "text": "Passes only the selected session evidence, source locators, destination page, and constraints to the category owner rather than unrelated history",
+          "type": "process"
+        },
+        {
+          "text": "Does not return successful completion from a drafted page alone; requires scoped validation and exactly-once manifest tracking",
+          "type": "guardrail"
+        },
+        {
+          "text": "Updates index.md, log.md, and hot.md for the bounded ingested set before closing the parent query",
+          "type": "process"
+        },
+        {
+          "text": "Runs one QMD refresh and one search-then-get retrieval verification, or returns the concrete blocker",
+          "type": "quality"
+        },
+        {
+          "text": "Returns the owner handoff evidence and synthesized answer only after the parent objective resumes",
+          "type": "content"
+        }
+      ]
     }
   ]
 }

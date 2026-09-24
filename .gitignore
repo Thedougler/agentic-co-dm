@@ -65,3 +65,6 @@ legacy/
 .local/efficiency/traces.jsonl
 .local/efficiency/quarantine/
 .local/efficiency/retention/
+
+# skill-creator eval workspaces (local only)
+*-workspace/

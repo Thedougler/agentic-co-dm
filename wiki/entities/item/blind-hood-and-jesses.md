@@ -14,6 +14,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "verdant-teeth"
+kind: durable
+rarity: common
+attunement: false
+owner: ""
 summary: "A graded set of leather hoods and ankle straps from The Live Hold, cut to blind and quiet a captured beast so it can be moved without a fight."
 provenance:
   extracted: 0.85
@@ -36,7 +41,6 @@ tier: supporting
 
 *Tool, Common.* Handler's tack for moving live stock, in three sizes with matching ankle jesses. Weighs 2 pounds.
 
-## Mechanics
 
 **[HB] Hood (action).** Fit the hood over the head of a beast that is restrained, incapacitated, or willing. While hooded, the beast is blinded and goes quiet: it will not attack unless it is damaged or an adjacent creature is grappling it, and Wisdom (Animal Handling) checks made to lead, load, or calm it have advantage. The jesses hobble its legs, halving its speed.
 

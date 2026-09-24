@@ -18,6 +18,8 @@ visibility: dm
 kind: consumable
 rarity: common
 attunement: false
+region: "Shattered Sea"
+owner: ""
 summary: "One-use eel-fat ointment that makes grapples and shoves slide off the wearer for an hour."
 provenance:
   extracted: 0.90

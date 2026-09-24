@@ -8,6 +8,37 @@
 
 Layer A MAY apply FR-002 structural repairs unattended. Layer C MUST NOT invent lore the user did not say. User-asked new content files under constitution X.
 
+
+## Capability boundary
+
+### Input
+
+The loop accepts a resolved vault, an observation request, and the affected
+scope. It uses the existing `wiki health`, `wiki lint`, and registered
+`wiki lint fix` contracts; it does not create a workflow ledger or planner.
+
+### Work
+
+`wiki health` is the sole action-ordering surface: consume `context.act`, then
+`next.path`, then ordered `focus`. `wiki lint` exposes the complete configured
+findings for that scope. Registered deterministic repair may run through the
+existing fixer; semantic findings return to the artifact owner. Rerun the
+affected scope after each repair.
+
+### Done
+
+Maintenance closes only when the rerun is clean. If it cannot close, report a
+specific finding-level blocker with path, rule, evidence, and owner. A clean
+lint result is structural health evidence, not a claim that craft or canon was
+improved.
+
+### Capability Handoff
+
+Route deterministic structure to the registered fixer, semantic page work to
+the page owner, dedup to `wiki-dedup`, links to `cross-linker`, and tag audits
+to `tag-taxonomy`. Each owner returns bounded evidence to the loop, which
+resumes the same health-selected scope.
+
 ---
 
 ## Architecture

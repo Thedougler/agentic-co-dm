@@ -1,7 +1,7 @@
 ---
 title: "{{title}}"
 category: journal
-tags: [shattered-sea, session-prep]
+tags: ["{{campaign}}", session-prep]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
@@ -9,35 +9,34 @@ type: session-prep
 kind: development
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Copy-start scaffold. Abstract; Opening; Run the beat; Situation; Revelations; Exits. Omit unused. Pass is those jobs. File Session-<n>-<BB>-<Label>.md. -->
+<!-- Copy-start scaffold for `development-beats`. Jobs: Abstract; Opening; Run the beat; Situation; Revelations; Actors; Checks & costs; Player levers; Exits. Omit a section only when this Development never spends it. Bar: docs/agents/table-ready.md. File Session-<n>-<BB>-<Label>.md. -->
 
 # {{title}}
 
-**Purpose.** This beat needs to change for the party: a new direction, capability, or constraint.
-
+**Card.** Development card from `development-beats`.
+**Thread advanced.** The live thread and the new facet this beat reveals.
+**Entry state.** What the party carries in from the previous beat: position, condition, what they believe.
 **Trigger.** What brings this situation on screen.
-
-**Turn.** The fact, warning, relationship, advantage, or complication that changes the party's understanding.
-
-**Exit.** The party has a new direction of action they could not have chosen before this beat.
-
+**Turn.** One sentence: the fact, warning, relationship, advantage, or complication that changes the party's understanding.
+**New direction.** The direction of action the turn sets — what the party can now do or pursue that it could not before.
+**Memorable element.** The image, person, or reveal the table will remember.
 **Target.** ~30 minutes.
 
 > [!narration] Opening
-> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: situated moment → beat: development. -->
-> Write a situated opening in two to four sentences the DM can speak aloud. Address the players as "you", present tense. Establish only what the characters can immediately perceive — a visible situation, relative position, and a non-sight sense. End on the reaction point. The opening presents the changed information that makes this beat matter, giving players something new to engage with. No secrets, DCs, or unearned names.
+> <!-- Load `.agents/skills/theatre-of-the-mind` → references/scenes.md → Development opening. -->
+> Spoken text the DM reads aloud, written to that recipe.
 
 ## Run the Beat
 
-1. **Present the situation.** What wants the party's attention right now?
-2. **Let them engage.** What can they question, inspect, negotiate with, test, or refuse?
-3. **Make the turn.** Surface the information or change that makes this beat matter. This is the bump that sets a new direction.
-4. **Hand back the choice.** State the changed situation and the new direction clearly. Ask what they do.
+1. **Present the situation.** What wants the party's attention right now.
+2. **Let them engage.** The physical anchor they can work — a site to search, a body to examine, a map to read, a ritual to witness — and the people they can question, bargain with, or refuse.
+3. **Make the turn.** How the turn surfaces through what they are already doing.
+4. **Hand back the choice.** State the changed situation and the new direction. Ask what they do.
 
 ````col
 ```col-md
@@ -47,9 +46,9 @@ flexGrow=1
 
 - **Where.** [[Place]]
 - **Present.** [[NPC]], [[NPC]]
-- **Immediate want.** What the active person, faction, or situation wants right now.
-- **Friction.** What makes getting a clean answer or agreement difficult.
-- **Pressure.** What keeps the party from deliberating forever without forcing an outcome.
+- **Physical anchor.** The thing to do with their hands, and the revelation it surfaces.
+- **Friction.** What makes a clean answer or agreement hard.
+- **Pressure.** What ends the talking if it circles — a deadline, an interruption, a clock tick — and when.
 - **If ignored.** What proceeds without the party.
 ```
 
@@ -58,40 +57,40 @@ flexGrow=2
 ===
 ## Revelations
 
-<!-- Write truths, not scripts for how the party must discover them. Surface each through whatever method fits play. -->
+<!-- Truths stated as facts, each with where it surfaces. The story may be whole; the solution to the next contest stays for the party to earn. -->
 
-- [ ] **Core.** The truth that materially changes what the party knows, wants, or can do. → **Leads:** [[Node]]
-- [ ] **Support.** A fact that clarifies motives, stakes, history, or consequences. → **Leads:** [[Node]]
-- [ ] **Optional.** A useful clue, connection, omen, or piece of texture. → **Leads:** [[Node]]
+- [ ] **Core.** The truth that changes what the party knows, wants, or can do. → **Surfaces through:** [[Node]] / person / object
+- [ ] **Support.** A fact that clarifies motives, stakes, history, or consequences. → **Surfaces through:**
+- [ ] **Optional.** A useful clue, connection, omen, or texture. → **Surfaces through:**
 ```
 ````
 
-### Required conclusion (use sparingly)
+### Required conclusion
 
-Use this only when the adventure depends on the party drawing one conclusion.
+<!-- Keep when the session depends on the party drawing one conclusion. -->
 
 **Conclusion.** What the players need enough evidence to reasonably conclude.
 
 - [ ] **Route 1.** An independent clue, witness, observation, document, or consequence.
 - [ ] **Route 2.** A different source or method pointing to the same conclusion.
-- [ ] **Route 3.** A third independent route, preferably accessible from another person, place, or beat.
+- [ ] **Route 3.** A third independent route, from another person, place, or beat.
 
 ## Actors
 
-| Actor   | Wants now | Offers / withholds | Posture changes when |
-| ------- | --------- | ------------------ | -------------------- |
-| [[NPC]] |           |                    |                      |
-| [[NPC]] |           |                    |                      |
+| Actor   | Wants now | Knows (true) | Offers | Withholds / lies about — and the tell | Price for help | Posture shifts when |
+| ------- | --------- | ------------ | ------ | ------------------------------------- | -------------- | ------------------- |
+| [[NPC]] |           |              |        |                                       |                |                     |
+| [[NPC]] |           |              |        |                                       |                |                     |
 
-<!-- Link full NPC notes. Record only beat-specific wants, leverage, and posture here. -->
+<!-- Full NPC notes stay on owner pages. Quoted lines the DM can speak are filled through `theatre-of-the-mind`. -->
 
 ## Checks & Costs
 
-<!-- Omit when nothing meaningful is uncertain. Essential progress should never depend on a single failed check. -->
+<!-- `dnd5e-mechanics` sets every check. Essential progress rests on more than one check. -->
 
-- **Automatic.** What the characters learn or accomplish simply by taking the sensible action.
-- **Action.** Use `DC __`. **Success:** what improves, opens, or becomes certain. **Failure:** a cost, delay, exposure, complication, or incomplete answer that still leaves play moving.
-- **Action.** Use `DC __`. **Success:** . **Failure:** .
+- **Automatic.** What the characters learn or accomplish by taking the sensible action.
+- **Action.** **Ability (Skill)** `DC __`. **Success:** what improves, opens, or becomes certain. **Failure:** a cost, delay, exposure, or incomplete answer that keeps play moving.
+- **Cost of the good part.** What the best information or help costs, and why it bites: a favor owed, a promise, world time on a clock that is running, exposure.
 
 ## Player Levers
 
@@ -100,21 +99,25 @@ Use this only when the adventure depends on the party drawing one conclusion.
 - **Place.** [[Place]] can be searched, entered, watched, avoided, or revisited because…
 - **Promise / problem.** Something the party can accept, reject, bargain over, or solve.
 
+### Preparation states
+
+<!-- Keep when this Development is the party preparing for the next contest. -->
+
+| If the party prepares… | The next Cliffhanger opens with… |
+| ---------------------- | -------------------------------- |
+| Thoroughly             |                                  |
+| Partly                 |                                  |
+| Not at all             |                                  |
+
 ## Exits
 
-| If the party…                     | The situation changes…                                                   | Next                             |
-| --------------------------------- | ------------------------------------------------------------------------ | -------------------------------- |
-| Pursues the clearest lead         |                                                                          | [[Session-{{session}}-BB-Label]] |
-| Refuses, delays, or walks away    |                                                                          | [[Session-{{session}}-BB-Label]] |
-| Changes the situation another way | Preserve the established truths. Follow the consequence of their action. | [[Open Node]]                    |
+| If the party…                     | The situation changes…                                                      | Next                             |
+| --------------------------------- | --------------------------------------------------------------------------- | -------------------------------- |
+| Pursues the clearest lead         |                                                                             | [[Session-{{session}}-BB-Label]] |
+| Refuses, delays, or walks away    |                                                                             | [[Session-{{session}}-BB-Label]] |
+| Changes the situation another way | The established truths stand; the world follows the consequence of their act. | [[Open Node]]                    |
 
-### If the Beat Stalls
-
-- An actor pursues a current goal.
-- Surface the clearest unrevealed fact through something already in the scene.
-- Advance the pressure and show its consequence.
-- Restate what has changed and the obvious handles the party can act on. Remain open to another approach.
-- Once the party has a usable direction, end the beat and move on.
+**Carry forward.** One line per state variable the next Cliffhanger inherits — new knowledge, the party's direction, who is where, what they prepared.
 
 ### After Play
 

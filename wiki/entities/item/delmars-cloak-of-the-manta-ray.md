@@ -11,8 +11,9 @@ updated: 2026-09-13
 type: item
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
+region: ""
 visibility: dm
 kind: magic
 rarity: uncommon
@@ -35,7 +36,6 @@ tier: supporting
 
 While wearing this cloak with the hood up, you have a swimming speed of 60 feet, can breathe underwater, and take a manta ray form for as long as the hood stays raised.
 
-## At a Glance
 
 A Fisk family heirloom worn by [[delmar-fisk]]. Its buoyancy already carried Delmar and [[crissdalynn-khinriss|Crissdalynn]] to the surface once when the walls closed in.
 

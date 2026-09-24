@@ -140,12 +140,12 @@ Keep the thumb-sized [[fate-spinner]] hidden on [[crissdalynn-khinriss]] while t
 
 | Place | Distance from the party | Cover | Narration |
 | --- | --- | --- | --- |
-| [[spoke-ring\|This hub]] / fire | The party starts here on packed dirt around the stone ring unless beat 7 left them 20 feet north. Smoke marks this fire. | Grouped, awake people here are not isolated. Sleepers do not count as a posted watch. Fallen stonepears and two spears are in reach. Matteo stays on this dirt if he is here. | ==_Garden words pass around the fire. Fallen stonepears and two spears lie within reach._== |
-| Sleeping mats | 10 feet out from the coals, four mats around the ring. | Open dirt. A person on a mat is still on this hub. | ==_Four woven mats mark the fire's edge. Salt-stiff cloth shows where people sleep._== |
-| South trail / last grass | 20 feet south, then back toward the packed inland prints. | Breaking off this way is a rebuild. Gold-green still shows between the last trunks. A Dash does not reach the beach. | ==_Packed prints leave through the last trunks toward a bright strip of grass._== |
-| West trail / river | 30 feet west, down a root-cut. | Open root-cut. A Dash can reach the river. This is not [[river-slack-basin]]. | ==_The dirt drops between hanging roots. Clear water runs close below._== |
-| North trails / darker wood | 20 feet into the wood. Garden talk points this way. | The wood is Difficult Terrain and heavily obscures beyond 10 feet. A body on a trail is isolated from anyone who stayed at the fire. This is not [[memorial-grove]]. A Dash does not reach [[star-cut]]. | ==_Roots crowd the north trails. Drips fall through the leaves while the garden words call ahead._== |
-| Hawk sky | Flying up out of this hub is open valley air. | Exposed. This is not the bloodhawk stoop. | ==_Wind crosses the leaf roof. The fire and trees fall away below, leaving open air around a flying body._== |
+| [[spoke-ring\|This hub]] / fire | The party starts here on packed dirt around the stone ring unless beat 7 left them 20 feet north. Smoke marks this fire. | Grouped, awake people here are not isolated. Sleepers do not count as a posted watch. Fallen stonepears and two spears are in reach. Matteo stays on this dirt if he is here. | _Garden words pass around the fire. Fallen stonepears and two spears lie within reach._ |
+| Sleeping mats | 10 feet out from the coals, four mats around the ring. | Open dirt. A person on a mat is still on this hub. | _Four woven mats mark the fire's edge. Salt-stiff cloth shows where people sleep._ |
+| South trail / last grass | 20 feet south, then back toward the packed inland prints. | Breaking off this way is a rebuild. Gold-green still shows between the last trunks. A Dash does not reach the beach. | _Packed prints leave through the last trunks toward a bright strip of grass._ |
+| West trail / river | 30 feet west, down a root-cut. | Open root-cut. A Dash can reach the river. This is not [[river-slack-basin]]. | _The dirt drops between hanging roots. Clear water runs close below._ |
+| North trails / darker wood | 20 feet into the wood. Garden talk points this way. | The wood is Difficult Terrain and heavily obscures beyond 10 feet. A body on a trail is isolated from anyone who stayed at the fire. This is not [[memorial-grove]]. A Dash does not reach [[star-cut]]. | _Roots crowd the north trails. Drips fall through the leaves while the garden words call ahead._ |
+| Hawk sky | Flying up out of this hub is open valley air. | Exposed. This is not the bloodhawk stoop. | _Wind crosses the leaf roof. The fire and trees fall away below, leaving open air around a flying body._ |
 
 ## Be ready for
 
@@ -176,9 +176,9 @@ If the party sits awake in a knot, it remains on this hub. [[talon-skarn]] still
 
 | If | Next | Narration |
 | --- | --- | --- |
-| They posted a fortified, paired, or thin watch | They post that watch at [[star-cut]]. Hand to [[Session-11-09-Theft-on-the-Watch]]. | ==_The watch leaves the fire along a north trail. Packed dirt runs beneath the leaves toward a break where stars show._== |
-| They sit awake in a knot | The party remains on this hub. [[talon-skarn]] still comes, and a messy camp gives him cover. Hand to [[Session-11-09-Theft-on-the-Watch]] at this fire. | ==_You keep watch around the coals. The north trails stay dark, and the people around the fire remain within its light._== |
-| They are already walking | Beat 9 is the column, still the carrier. Hand to [[Session-11-09-Theft-on-the-Watch]]. | ==_You continue through the valley, with the fire shrinking behind you beneath the leaves._== |
+| They posted a fortified, paired, or thin watch | They post that watch at [[star-cut]]. Hand to [[Session-11-09-Theft-on-the-Watch]]. | _The watch leaves the fire along a north trail. Packed dirt runs beneath the leaves toward a break where stars show._ |
+| They sit awake in a knot | The party remains on this hub. [[talon-skarn]] still comes, and a messy camp gives him cover. Hand to [[Session-11-09-Theft-on-the-Watch]] at this fire. | _You keep watch around the coals. The north trails stay dark, and the people around the fire remain within its light._ |
+| They are already walking | Beat 9 is the column, still the carrier. Hand to [[Session-11-09-Theft-on-the-Watch]]. | _You continue through the valley, with the fire shrinking behind you beneath the leaves._ |
 
 Keep the people at this fire unnamed. Identify them only as garden mouths or ship mouths when the distinction matters.
 

@@ -1,14 +1,14 @@
 ---
 title: "{{title}}"
 category: entities
-tags: [shattered-sea, faction]
+tags: ["{{campaign}}", faction]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: faction
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 visibility: dm
 kind: organization
 status: active

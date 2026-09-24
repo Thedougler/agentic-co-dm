@@ -12,6 +12,11 @@ type: item
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
+region: "fathomrush"
+kind: document
+rarity: mundane
+attunement: false
+owner: "[[branimir-karsovine]]"
 campaign: shattered-sea
 visibility: dm
 summary: "Branimir Karsovine's own trial-dive notebook, real hull-pressure and air-pump endurance data from every dive he's personally run, failures included."

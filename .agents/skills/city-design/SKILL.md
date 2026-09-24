@@ -13,6 +13,31 @@ description: >-
 
 Prep only. Follow `docs/agents/work.md`.
 
+## Boundary contract
+
+### Input
+
+Take a named city owner, the caller's objective, and the relevant brief, city
+template, and linked region/place/faction notes. When the owner is a city,
+enter this skill directly; do not route through a generic place planner.
+
+### Owner-specific Work
+
+Work only the named city: preserve its canon, fill `wiki/templates/city.md`,
+and apply the arrival, orientation, gazetteer, local-rule, and active-situation
+craft below. Keep the caller's session or situation objective intact.
+
+### Capability Handoff
+
+Faction → `faction-design`. Non-city place → `place-design`. Off-screen
+motion → `world-tick`. The child does not re-plan the city.
+
+### Done
+
+Use the existing `## Done` checklist below. Completion is observable when the
+named city page path, city template contract, playable urban choices, and any
+child return evidence are reported.
+
 ## Refuse gates
 
 - **Work gate.** Show a chat proposal before writing under `wiki/`. Write only

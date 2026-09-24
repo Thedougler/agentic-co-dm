@@ -14,6 +14,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "le-paludi"
+kind: durable
+rarity: common
+attunement: false
+owner: "[[zort]]"
 summary: "Iron-capped handling sandals cut to Zort's own pattern, giving a wearer footing enough to shrug off a grapple or a shove."
 provenance:
   extracted: 0.85
@@ -36,7 +41,6 @@ tier: supporting
 
 *Tool (Footwear), Common.* [[Zort]] has a cobbler in [[le-paludi]] cut these to his own pattern and sells the spare pairs to anyone whose work involves a beast digging in its heels. Larger sizes take a week. Weighs 4 pounds.
 
-## Mechanics
 
 **[HB] Set.** While you wear the toe-claws on bare feet and stand on dirt, wood, stone, or deck, you have advantage on ability checks and saving throws made to resist being grappled, shoved, or knocked prone.
 

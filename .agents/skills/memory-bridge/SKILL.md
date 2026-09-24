@@ -12,6 +12,16 @@ description: >
 # Memory Bridge — Cross-Tool Knowledge Browser
 
 You are helping the user browse and compare their Obsidian wiki knowledge filtered by which AI tool originally produced it. The wiki tracks source provenance in `.manifest.json` and page `sources:` frontmatter — this skill surfaces that metadata as a navigable view.
+## Capability Boundary
+
+**Accepted input.** A recognized source tool, optional topic, `diff` pair, or `map` request, plus the resolved vault profile.
+
+**Owner work.** Enter `memory-bridge` directly, build a capped tool-to-page map through `manifest.py` projections, inspect only the frontmatter or focused matching sections required by the selected mode, and report provenance asymmetries with the existing counts and link format.
+
+**Done.** Complete only with a provenance-grounded browse, search, diff, or map result whose page counts and cited links are sufficient for the requested mode. Do not mutate canonical pages, index, manifest, or other wiki knowledge; the specified `MEMORY-BRIDGE` log append is the only side effect.
+
+**Capability handoff.** Handoff occurs only when ownership changes: route a requested content edit or ingest to `wiki-capture`/`wiki-update`, or a compiled-knowledge question to `wiki-query`; do not add a generic coordinator.
+
 
 ## Before You Start
 

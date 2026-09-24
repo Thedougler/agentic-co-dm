@@ -11,6 +11,16 @@ description: >
 # Wiki Update — Sync Any Project to Your Wiki
 
 You are distilling knowledge from the current project into the user's Obsidian wiki. This skill works from any project directory, not just the obsidian-wiki repo.
+## Capability boundary
+
+**Input.** Current project (working tree, relevant docs, decision-bearing commits), resolved vault, prior project manifest entry.
+
+**Work.** Compute project delta, distill evidence-backed knowledge, select project-page destinations, add cross-links. No meaningful delta → report unchanged, no writes.
+
+**Done.** Each page satisfies its output contract + scoped lint. Finalize once: manifest upsert, index/log/hot update, QMD refresh + verify.
+
+**Handoff.** Read helpers return focus evidence. Page/craft owners receive cited claims + target path.
+
 
 ## Before You Start
 

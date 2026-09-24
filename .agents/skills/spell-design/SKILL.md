@@ -8,6 +8,33 @@ description: >-
 ---
 
 # Spell Design
+## Boundary contract
+
+### Input
+
+Take a named spell owner, the caller's objective, the relevant brief,
+`wiki/templates/spell.md`, and linked caster, source, and 2024 peer evidence.
+The owner is a durable spell identity with a runnable effect, not a scroll item
+or a prose-only magical flourish.
+
+### Owner-specific Work
+
+Work only the spell: establish the identity sentence, preserve canon, write
+perceivable narration, and fill concrete casting fields plus the peer-anchored
+2024 effect. Keep Discovery/Lore on this page when needed; label invention and
+route checks, saves, and adjudication to the mechanics owner.
+
+### Capability Handoff
+
+Casting checks → `dnd5e-mechanics`. Scroll/item → `item-design`.
+Place → `place-design`. Spoken delivery → `theatre-of-the-mind`.
+
+### Done
+
+Use the existing `## Done` checklist below. Completion is observable when the
+named spell page path, spell-template and runnable-effect checks, narration and
+mechanics routing, and any child return evidence are reported.
+
 
 Prep only. Follow `docs/agents/work.md`.
 
@@ -76,7 +103,7 @@ questions, and failure modes.
 
 ## Handoffs
 
-Narration → `theatre-of-the-mind`; items/scrolls → `dnd-5e-magic-item-design`;
+Narration → `theatre-of-the-mind`; items/scrolls → `item-design`;
 places → `place-design`; lore pages → `lore-design` (spell Discovery/Lore stay on
 the spell page); vault lookup → `.agents/skills/qmd`.
 

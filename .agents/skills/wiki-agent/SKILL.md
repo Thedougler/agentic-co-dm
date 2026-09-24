@@ -16,6 +16,16 @@ description: >
 You are doing a **query-driven targeted ingest** from one specific AI agent's raw conversation history. The user is typically working in a *different* agent right now and wants to pull in context from another agent's past sessions.
 
 This is not bulk ingest. You find sessions about a specific topic, extract the relevant blobs, distill them into the wiki, and return a synthesized answer the user can act on immediately.
+## Capability boundary
+
+**Input.** One agent target, optional query, resolved history root, destination vault.
+
+**Work.** Score sessions against the query, extract selected blobs, distill into wiki pages, return synthesized answer. Read-only requests stop before any canonical write.
+
+**Done.** Selected sessions and page destinations reported, scoped validation clean, tracking finalized (manifest/index/log/hot + QMD refresh). No matches → specific blocker, not an empty synthesis.
+
+**Handoff.** Category/page owner owns its page artifact. `wiki-agent` owns session tracking and QMD finalization.
+
 
 ## Command Routing
 
@@ -236,10 +246,9 @@ After ingesting, immediately synthesize and return an answer from the newly inge
 If a query was given but no relevant sessions were found, say so explicitly: "No sessions about '<query>' found in `<agent>` history. The most recent sessions covered: <list topics from last 3 sessions>."
 
 ---
-
 ## Step 7: Update Tracking Files
 
-Upsert each session file with `python3 scripts/manifest.py upsert` (do not load whole `.manifest.json`):
+For each selected and actually ingested session, run `python3 scripts/manifest.py upsert` exactly once (do not load whole `.manifest.json`):
 ```json
 {
   "<path>": {
@@ -252,12 +261,12 @@ Upsert each session file with `python3 scripts/manifest.py upsert` (do not load 
 }
 ```
 
-Append to `log.md`:
+Update `index.md` for every created or materially updated page, then append one `log.md` line for the bounded set:
 ```
 - [TIMESTAMP] WIKI-AGENT agent=<agent> query="<query>" sessions_searched=N sessions_ingested=M pages_created=X pages_updated=Y
 ```
 
-Update `hot.md` with a one-line summary of what was ingested.
+Update `hot.md` with a one-line summary of what was ingested. Run scoped validation on the affected pages and fix findings before finalizing. Read-only requests perform none of these writes.
 
 ---
 
@@ -285,7 +294,7 @@ These are the primary use cases this skill is designed for:
 
 ## QMD Refresh After Vault Writes
 
-QMD is a search index, not the source of truth. The default collection is `wiki` when `$QMD_WIKI_COLLECTION` is empty or unset. Run it only after this skill has written or rewritten vault markdown. If QMD refresh fails, do not roll back the vault changes; report the QMD status separately.
+QMD is a search index, not the source of truth. The default collection is `wiki` when `$QMD_WIKI_COLLECTION` is empty or unset. Run exactly one refresh after this skill has written or rewritten vault markdown, then perform the single search-then-get verification described below. If QMD refresh fails, do not roll back the vault changes; report the QMD status separately.
 
 Use `$QMD_CLI` if set; otherwise use `qmd`.
 

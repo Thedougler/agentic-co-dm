@@ -11,6 +11,20 @@ description: >
 # Wiki Dashboard — Dynamic Vault Views
 
 Two tools available: **Obsidian Bases** (native, GUI-driven, no plugin) and **Dataview** (community plugin, SQL-like, more powerful). Check which the user has and prefer Bases unless they ask for Dataview or need GROUP BY / computed columns.
+## Boundary Contract
+
+### Input
+Accept a requested view (folder, tag, category, date range, grouping, or computed columns), a resolved vault, and an explicit Bases/Dataview preference when supplied. Existing `index.md` and installed-plugin availability constrain the choice.
+
+### Work (owner: wiki-dashboard)
+Own tool selection, canonical Bases or Dataview query construction, `_meta/` dashboard writes, and optional embedding. Preserve the official schema, ask before modifying an existing note, and keep live views distinct from static page/index/manifest content.
+
+### Done
+Return the created path, tool, filter/view description, and the existing quality-check evidence (including schema/query checks and user open/embed instructions). Append the required `WIKI_DASHBOARD` line to `log.md`; do not invent manifest/index entries, and report QMD only when a markdown dashboard was written.
+
+### Capability Handoff
+When the request changes from data selection to Obsidian visual styling, hand the dashboard path, tool, and embed context to `obsidian-layout-adjustment`; its bounded return is the styling or visual-confirmation result.
+
 
 ## Before You Start
 

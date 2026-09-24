@@ -15,9 +15,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: unknown
 kind: consumable
 rarity: uncommon
 attunement: false
+owner: none
 summary: "Three-dose tin of vent-rock salts that ends charm, fear, or sleep when held under a nose."
 provenance:
   extracted: 0.90

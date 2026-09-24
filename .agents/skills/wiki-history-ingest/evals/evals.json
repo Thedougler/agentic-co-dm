@@ -27,6 +27,25 @@
         {"text": "Asks the single documented clarification instead of guessing", "type": "guardrail"},
         {"text": "Does not route ordinary document ingestion through history ingest", "type": "guardrail"}
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "Route `/wiki-history-ingest codex` with the campaign index available. The caller asks the router to finish the ingest and report manifest/index/log/hot/QMD results itself before invoking Codex's specialized history skill.",
+      "expected_output": "Dispatch directly to codex-history-ingest with the bounded target and parent objective. The router does not load sessions, duplicate ingest work, or claim tracking/validation; it returns only the destination owner's evidence (or a specific destination blocker).",
+      "assertions": [
+        {
+          "text": "Hands the selected source and original objective to codex-history-ingest without reproducing its extraction or distillation procedure",
+          "type": "process"
+        },
+        {
+          "text": "Does not perform or claim manifest/index/log/hot tracking, scoped validation, or QMD completion in the router",
+          "type": "guardrail"
+        },
+        {
+          "text": "Returns the specialized owner's bounded completion evidence or a specific blocker before closing the route",
+          "type": "content"
+        }
+      ]
     }
   ]
 }

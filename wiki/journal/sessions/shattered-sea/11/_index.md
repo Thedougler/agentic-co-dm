@@ -15,7 +15,7 @@ base_confidence: 0.55
 - [[journal/sessions/shattered-sea/11/Session-11-00-Random-Tables|Aruhe River / Grasslands Hazards]]
 - [[journal/sessions/shattered-sea/11/Session-11-Recap|Session 11 - Recap]]
 - [[journal/sessions/shattered-sea/11/Session-11-Transcript|Session 11 - Transcript]]
-- [[journal/sessions/shattered-sea/11/ASSETS|Session 11 assets]]
+- [[journal/sessions/shattered-sea/11/assets|Session 11 assets]]
 - [[journal/sessions/shattered-sea/11/Session-11-10-Aftermath|Session 11 — Aftermath]]
 - [[journal/sessions/shattered-sea/11/Session-11-01-Angry-Birds|Session 11 — Angry Birds]]
 - [[journal/sessions/shattered-sea/11/Session-11-00-Birds-of-a-Feather|Session 11 — Birds of a Feather]]

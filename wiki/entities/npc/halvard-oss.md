@@ -71,6 +71,10 @@ No canonical posture, limit, or reaction is established. Update this page only w
 ```
 ````
 
+## Voice
+
+No voice is established for Halvard Oss. This page identifies him only in non-canon draft fiction, so it supplies no verbal habit or sample line for play.
+
 ## Connections
 
 | Connection | Meaning |

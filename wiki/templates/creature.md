@@ -1,14 +1,14 @@
 ---
 title: "{{title}}"
 category: entities
-tags: [shattered-sea, creature]
+tags: ["{{campaign}}", creature]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: creature
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 visibility: dm
 region: ""
 role: ""
@@ -20,8 +20,8 @@ summary: ""
 # {{title}}
 
 > [!narration] Narration
-> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: creature. -->
-> Write a standalone cold portrait in flowing prose — as long as the creature requires to be recognizable and distinguishable. Lead with the most unusual or defining feature (extra limbs, missing parts, anomalous proportion), then cover silhouette, scale, body parts or material, and at least one stable sensory behavior the DM can play. The portrait must let a player picture and distinguish this creature after one reading. No secrets, DCs, tactics, resolved attacks, or unearned names.
+> <!-- `.agents/skills/monster-design` step 7 builds the narration packet → `.agents/skills/theatre-of-the-mind` → mode: portrait → recipe: creature. -->
+> Write a third-person, present-tense portrait of the creature as it always is. Lead with its most unusual feature fused with its size and shape, then cover body parts and material, one sound or smell with its source, what it does at rest, and a plain tell on the body for every signature ability. A player can picture and pick out this creature after one reading. No attacks, tactics, numbers, truths, or unearned names.
 
 ## Statblock
 <!-- Add at most one overview image immediately before the statblock fence when available. Move remaining images to Art subsections at the end. -->

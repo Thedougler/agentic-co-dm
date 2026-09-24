@@ -24,6 +24,7 @@ region: aruhe
 kind: consumable
 rarity: rare
 attunement: false
+owner: "[[aruhe]]"
 relationships:
   - target: "[[the-quiet]]"
     type: related_to
@@ -38,8 +39,6 @@ relationships:
 
 > [!narration] Narration
 > A stonepear hangs like a heavy pear with a short, thick stem and a rind of fitted stone scales. Gray and moss-green plates cover the fruit from neck to base, each one rough and chipped with pale edges. In the hand, it scrapes like pumice and weighs more than its size suggests.
-
-## Effect
 
 Stonepear is a rare consumable. As a Bonus Action, eat the fruit to gain **Resistance to all damage** for **1 minute**.
 

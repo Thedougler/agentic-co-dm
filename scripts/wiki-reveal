@@ -1,0 +1,147 @@
+#!/usr/bin/env python3
+"""List live wiki pages by reveal gate, optionally filtered by content type.
+
+Frontmatter read only — page bodies are never opened. Pages without
+`reveal:` (root index/log/hot notes, redirect stubs) are not listed.
+
+Usage (repo root):
+  ./scripts/wiki-reveal                                  # every unrevealed page
+  ./scripts/wiki-reveal revealed                         # every revealed page
+  ./scripts/wiki-reveal all                              # both gates
+  ./scripts/wiki-reveal unrevealed --type npc            # unrevealed NPCs
+  ./scripts/wiki-reveal all --type npc,place --json      # machine-readable
+  ./scripts/wiki-reveal unrevealed --count               # per-type totals only
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import signal
+import sys
+from collections import Counter
+from pathlib import Path
+from typing import Any
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from tools.check_wiki_pages import frontmatter
+from tools.wiki_ops.cli import resolve_vault
+from tools.wiki_ops.scope import SKIP_DIRS
+
+STATES = ("unrevealed", "revealed", "all")
+GATED = ("unrevealed", "revealed")
+
+
+def _value(raw: str | None) -> str:
+    return (raw or "").strip().strip("\"'").casefold()
+
+
+def scan(vault: Path) -> list[dict[str, str]]:
+    """Frontmatter fields of every live page, path-sorted. No body kept."""
+    pages: list[dict[str, str]] = []
+    for path in sorted(vault.rglob("*.md")):
+        if not path.is_file() or SKIP_DIRS.intersection(path.relative_to(vault).parts):
+            continue
+        keys = frontmatter(path.read_text(encoding="utf-8", errors="replace"))
+        if keys is None:
+            continue
+        page = {
+            "path": path.relative_to(vault).as_posix(),
+            "title": str(keys.get("title", "")).strip().strip("\"'") or path.stem,
+            "type": _value(keys.get("type")),
+            "lifecycle": _value(keys.get("lifecycle")),
+            "reveal": _value(keys.get("reveal")),
+        }
+        kind = _value(keys.get("kind"))
+        if kind:
+            page["kind"] = kind
+        pages.append(page)
+    return pages
+
+
+def emit(payload: dict[str, Any], *, json_output: bool) -> None:
+    if json_output:
+        print(json.dumps(payload, sort_keys=True, separators=(",", ":"), ensure_ascii=False))
+        return
+    pages = payload.get("pages")
+    if pages is None:
+        if not payload["total"]:
+            print("_none_")
+            return
+        for name, count in payload["counts"].items():
+            print(f"- {name}: {count}")
+        print(f"- total: {payload['total']}")
+        return
+    if not pages:
+        print("_none_")
+        return
+    for page in pages:
+        label = f"{page['type']}, {page['kind']}" if page.get("kind") else page["type"]
+        print(f"{page['path']} - {page['title']} ({label})")
+
+
+def fail(message: str) -> int:
+    print(f"error: {message}", file=sys.stderr)
+    return 1
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(
+        description="List live wiki pages by reveal gate, filtered by content type.",
+    )
+    parser.add_argument(
+        "state",
+        nargs="?",
+        default="unrevealed",
+        choices=STATES,
+        help="reveal gate to list (default: unrevealed)",
+    )
+    parser.add_argument(
+        "--type",
+        dest="types",
+        action="append",
+        default=[],
+        metavar="TYPE",
+        help="content type filter; repeat the flag or comma-separate (npc, place, session-prep)",
+    )
+    parser.add_argument("--count", action="store_true", help="per-type totals only, no page list")
+    parser.add_argument("--json", action="store_true", help="emit one compact JSON object")
+    parser.add_argument("--vault", help="vault root (default: resolved config)")
+    args = parser.parse_args(argv)
+
+    try:
+        vault = resolve_vault(args.vault)
+    except (OSError, ValueError) as exc:
+        return fail(str(exc))
+
+    wanted = [part.strip().casefold() for chunk in args.types for part in chunk.split(",") if part.strip()]
+    pages = scan(vault)
+    present = sorted({page["type"] for page in pages if page["type"]})
+    unknown = [name for name in wanted if name not in present]
+    if unknown:
+        return fail(f"unknown content type: {', '.join(unknown)}; present types: {', '.join(present) or 'none'}")
+
+    selected = [
+        page
+        for page in pages
+        if page["reveal"] in GATED
+        and (args.state == "all" or page["reveal"] == args.state)
+        and (not wanted or page["type"] in wanted)
+    ]
+    payload: dict[str, Any] = {
+        "state": args.state,
+        "types": wanted,
+        "total": len(selected),
+        "counts": dict(sorted(Counter(page["type"] for page in selected).items())),
+    }
+    if not args.count:
+        payload["pages"] = selected
+    emit(payload, json_output=args.json)
+    return 0
+
+
+if __name__ == "__main__":
+    signal.signal(signal.SIGPIPE, signal.SIG_DFL)  # piping into head/grep stays quiet
+    raise SystemExit(main())

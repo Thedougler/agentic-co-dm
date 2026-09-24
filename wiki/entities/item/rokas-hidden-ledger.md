@@ -14,6 +14,11 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "verdant-teeth"
+kind: plot
+rarity: common
+attunement: false
+owner: "[[roka-sten]]"
 summary: "A private expedition journal kept separate from Roka's public inventory, recording actual specimen collections including live captures destined for trafficking."
 provenance:
   extracted: 0.85

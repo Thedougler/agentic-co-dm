@@ -19,6 +19,7 @@ reveal: unrevealed
 campaign: shattered-sea
 status: alive
 role: contact
+faction: none
 location: "[[penance-bar]]"
 visibility: dm
 summary: "Reeve of Penance Bar. She tries to hold the peace while Corvin Ashe whips the town."
@@ -73,6 +74,10 @@ flexGrow=1
 The mob organizing is the clock. She will not cover for Ashe. If strangers ask after Mirela Cass, she steers them off the name.
 ```
 ````
+### Voice
+
+Sula speaks with steady civic authority and avoids repeating Ashe's accusations as fact. Her ask is, “Slow down and hear what the grove is saying.” Her refusal is, “I will not cover for him.” Under pressure, she says, “A town that marches before it knows the truth may not come back as a town.”
+
 
 ## Connections
 

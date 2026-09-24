@@ -60,7 +60,7 @@ lock, recall, or persuasion *DC*. Those use the typical band or a named
 procedure.
 
 Monster save *numbers* on a new stat block: choose the *save* type here, then
-take the number from `homebrew-monsters-5e` chassis (peer or
+take the number from `monster-design` chassis (peer or
 `8 + PB + modifier`). Do not stack both.
 
 ## Calibration while writing content

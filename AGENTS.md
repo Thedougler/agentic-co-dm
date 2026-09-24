@@ -1,6 +1,58 @@
 # Obsidian Wiki — Agent Context
 
-A **skill-based framework** for building and maintaining an Obsidian knowledge base. No scripts or dependencies — everything is markdown instructions that you execute directly.
+A **skill-based framework** for building and maintaining an Obsidian knowledge base. Skills and instructions carry the behavior; `tools/` and `scripts/` implement the checks they call.
+
+## Repo map
+
+Top-level paths, one purpose each; the vault itself is explored under "Vault map" below. Which artifact owns which fact → "Sources of Truth".
+
+| Path | What it is, and what sends you there |
+| --- | --- |
+| `CONTEXT.md` | Domain glossary. Reach it for terminology, architecture, template, or beat-design decisions. |
+| `.agents/skills/<name>/` | Skill source (`SKILL.md`, `references/`, `evals/`). Edit here; imported skills are pinned in `skills-lock.json`. |
+| `.agents/skills/llm-wiki/` | The llm-wiki spec: three-layer architecture (raw sources → wiki → schema), page templates, provenance and trust model, wiki environment variables. The authority behind the vault map below and "Core Principles". |
+| `docs/agents/` | Procedure docs: Work, table-ready casting, hybrid SDD, maintenance loop, token and context measurement, harness and skill-design dispatch. |
+| `docs/adr/`, `docs/*.md` | Decision records; human-facing documentation. |
+| `tools/` | Python implementation: `lint_wiki.py`, `wiki_ops/` (transactions, health, identity, template contracts), `creative_lint/` (Vale engine, rule registry, evaluators), `token_count.py`. |
+| `scripts/` | CLI entrypoints — `wiki`, `wiki-lint`, `wiki-maintain`, `wiki-bulk-ops`, `manifest.py`, `error-ledger.py`, `luna-eval`, `wiki-reveal`, plus focused `check-*` / `lint-*` / `remorph-*` helpers. Unknown command → list the directory; each is `--help`-able. |
+| `tests/` | Pytest suite over `scripts/` and `tools/`. Run `./scripts/run-pytest`. |
+| `specs/<feature>/` | Spec, plan, tasks, contracts. Current feature: `029-agent-loop-closure`. |
+| `.specify/` | Constitution, templates, extensions, generated adapters (adapters disposable). |
+| `wiki/` | The live vault, at the path `.env` `OBSIDIAN_VAULT_PATH` and `pyproject.toml` `[tool.agentic-co-dm]` both name. Campaign pages, templates, session journals, indexes. Load `wiki/AGENTS.md` before any read or write here. Expanded below. |
+| `rules/`, `styles/`, `.vale.ini` | Creative-lint rule registry, bundles, waivers, Vale styles. Rule or prose-lint work. |
+| `config/efficiency.yaml` | Maintainer-owned efficiency policy; agents read and propose only. |
+| `.omp/` | OMP runtime: `config.yml`, `AGENTS.md`, `RULES.md`, `rules/`, `hooks/`, `commands/`, `agents/`. Harness behavior, hooks, subagent definitions. |
+| `.claude/`, `.cursor/`, `.kiro/`, `.pi/`, `.windsurf/`, `.grok/`, `.agent/`, `.github/`, `.hermes.md`, `CLAUDE.md`, `CODEX.md`, `GROK.md` | Other harness entrypoints. Their `skills/` are copies or symlinks of `.agents/skills/` — edit the source, not the copy. |
+| `.qmd/` | QMD collections in `index.yml` (`wiki` canonical; `shattered-sea` and `legacy-ss` read-only legacy), plus the gitignored local index. |
+| `errors.md`, `sittings.jsonl` | Error ledger and sitting ledger data, at repo root. Runtime failure; sitting record. |
+| `mcp.json`, `foundry-data/` | Local Foundry MCP config and data (gitignored). Foundry staging. |
+
+Local-only, neither canon nor hand-edited: `.venv/`, `_archive/`, `legacy/`, `*-workspace/` (skill-creator eval runs), `.local/efficiency/`, `wiki/.obsidian/` UI state.
+
+### Vault map (`wiki/`)
+
+Explored layout of the live vault. Vault semantics stay in `wiki/AGENTS.md`; page format stays in `llm-wiki`.
+
+```text
+wiki/                          # the live campaign vault
+├── AGENTS.md                  # vault owner conventions — load before any read or write here
+├── index.md                   # master index, every page listed
+├── log.md                     # chronological ingest/update/retcon log
+├── hot.md                     # ~500-word snapshot of recent activity — read this first
+├── .manifest.json             # ingested-source ledger; query via scripts/manifest.py, never load whole
+├── entities/{type}/           # campaign pages, depth 1 by frontmatter type — creature, faction, item,
+│                              #   lore, npc, pc, place, quest, region, spell, vehicle (kebab basenames)
+├── journal/sessions/<campaign-slug>/<NN>/   # plan, typed beats, recap (e.g. shattered-sea/12/)
+├── synthesis/                 # players, story-so-far, dm-voice-notes, party-combat-profile
+├── templates/                 # one page template per kind; contracts/*.yml = per-type frontmatter contract
+├── attachments/               # flat {subject-slug}-{role}.{ext}; roles in attachments/README.md
+├── _meta/                     # taxonomy.md (controlled tag vocabulary), lint-cache.json
+├── _raw/                      # capture inbox — the next ingest promotes from here
+├── _archive/                  # promoted and demoted pages; not canon
+└── .obsidian/                 # vault UI config, graph colors, CSS snippets
+```
+
+Every page carries required frontmatter and connects by `[[wikilinks]]` (`OBSIDIAN_LINK_FORMAT=wikilink` here; `markdown` switches to standard links). The generic llm-wiki categories `concepts/`, `skills/`, `references/`, and `projects/` are unused in this vault — campaign knowledge files under `entities/{type}/`.
 
 ## Project domain terms
 
@@ -17,6 +69,8 @@ Spec Kit auto-commit is enabled for the configured before/after hooks. The commi
 
 Before writing substantial engineering, agent-system, campaign-architecture, or creative-system work, classify it once and follow the full route in [`docs/agents/hybrid-sdd.md`](docs/agents/hybrid-sdd.md). Routine established campaign content stays on its existing skill, template, lifecycle, and Work route; split mixed requests into their system-changing and routine-content slices. Keep the managed Spec Kit block below disposable.
 
+**Capability loop:** For every incomplete owner boundary, `observe → act → re-observe`; continue only on owner-relative progress or a passed completion guard. An unchanged observation requires a materially different sanctioned path or a specific blocker. Use [`docs/agents/hybrid-sdd.md`](docs/agents/hybrid-sdd.md) for the full rule and blocker fields.
+
 ## Carve-outs
 
 Constitution XXV. The user's named set is the work set. *Everything* means that whole set.
@@ -30,17 +84,17 @@ the failure on it.
 
 ## Canon and done-summary
 
-Canon owner: constitution principle X. File what it makes canon. Unsaid invention is not canon (XII).
+Canon owner: constitution principle X. File what it makes canon. Everything else is a marked canon proposal the DM accepts (XII).
 
-Lint contract: the single agent-facing `wiki lint` runs every checker and reports every finding by default, including Vale and soft findings. Use `next.path`, then `wiki lint fix <next.path>` for deterministic repairs; rerun `wiki lint <next.path>` for remaining findings. `--full` is accepted as a compatibility no-op. Iterate until green. Do not ask. Do not interrupt with findings.
+Lint contract (constitution XXI): `wiki lint` runs every checker, Vale included, and every finding it reports is an issue to fix. Use `next.path`, then `wiki lint fix <next.path>` for deterministic repairs; rerun `wiki lint <next.path>` for the remaining issues. `--full` is accepted as a compatibility no-op. Iterate until clean: zero issues. Do not ask. Do not interrupt with findings.
 
-After green, one short done-summary: what changed, where. No question. No wait.
+When clean, one short done-summary: what changed, where. No question. No wait.
 
-Mixed request: do every requested slice, then one done-summary after green.
+Mixed request: do every requested slice, then one done-summary when clean.
 
-FR-002 structural repair, template conformance of existing content, named ingest, and bookkeeping run unattended. Dedup merge without a user ask still confirms (destructive, not a Work wait). User-asked merge files.
+FR-002 repair, template conformance of existing content, named ingest, and bookkeeping run unattended. Dedup merge without a user ask still confirms (destructive, not a Work wait). User-asked merge files.
 
-**Done when:** requested work is filed; applicable checkable rules are green; one done-summary was emitted.
+**Done when:** requested work is filed; `wiki lint` is clean; every other checkable rule passes; one done-summary was emitted.
 
 ## Project identity
 
@@ -82,7 +136,7 @@ If table aim is `missing`, ask the DM to name the players (at least one; tests u
 
 **Production session content** (session-prep beats, TotM/`[!narration]`, action cards, spoken text) is **complete or it does not ship**. Vague/non-specific descriptions of unnamed people/things because the entity page is missing = **critical error**.
 
-**Dependency order (recursive):** If a beat/scene names or requires an NPC, item, creature, place, faction, vehicle, spell, quest, or other entity — load that kind's **owner skill** (Wiki kind routing, Beat skill routing, or Skill Routing), **mint/file that owner page first** (kebab basename, matching `wiki/templates/`, live vault path), **then** write/update the session/TotM text that depends on it. A new named owner the user asked to introduce is filed first; spoken that depends on it follows. Existing wiki content MUST NOT wait. The DM cannot describe what does not exist.
+**Dependency order (recursive):** If a beat/scene names or requires an NPC, item, creature, place, faction, vehicle, spell, quest, or other entity — load that kind's **owner skill** (Wiki kind routing, Beat skill routing, or Skill Routing), **cast or mint that owner page first** (cast before minting: `docs/agents/table-ready.md`; kebab basename, matching `wiki/templates/`, live vault path), **then** write/update the session/TotM text that depends on it. A new named owner the user asked to introduce is filed first; spoken that depends on it follows. Existing wiki content MUST NOT wait. The DM cannot describe what does not exist.
 
 Agents MUST complete **all** recursive dependency steps to finish the goal — not only top-level, intermediary, or initial steps — in dependency order. Applies to `session-beats`, typed beat skills, `theatre-of-the-mind`, `cold-opens`, `session-recap`, and Session Architect orchestration. Completeness gate — do **not** thin narrative craft.
 
@@ -92,7 +146,7 @@ Problem: minting several new page types in one task blurs ownership and wastes c
 
 ### HARD: dm-facing-explicit (Nick 2026-09-14)
 
-**DM-facing content** (`visibility: dm`, action cards, Be ready for, secrets, situation facts, Wiki facts, owner pages): **no vagueness, non-specific placeholders, coy narration, or invented mystery.** The DM must have **all** scene/world facts available immediately. Making the DM decode coy agent writing = **critical error**.
+**DM-facing content** (`visibility: dm`, action cards, Be ready for, secrets, situation facts, Wiki facts, owner pages): **no vagueness, non-specific placeholders, coy narration, or mystery without a DM answer.** The DM must have **all** scene/world facts available immediately. Making the DM decode coy agent writing = **critical error**.
 
 **Clarify vs player-safe TotM:** Player-facing `[!narration]` may withhold from *players*; it must still be grounded in named entities that exist (**HARD: entity-before-spoken**). DM layers must state who/what/where/why concretely — names, wants, true stakes — with a DM answer on the page for every planted mystery.
 
@@ -119,7 +173,7 @@ Cut wasted context without waiting. A change MUST NOT count as an improvement if
 
 ## Wiki writes
 
-Every wiki write goes to its live path. `_raw/` remains the ingest inbox; `_archive/` holds promoted sources. Every file entering `wiki/` MUST pass structural `wiki lint` before it is considered complete. A non-clean report means the file remains incomplete.
+Every wiki write goes to its live path. `_raw/` remains the ingest inbox; `_archive/` holds promoted sources. Every file entering `wiki/` is complete only when `wiki lint` is clean for it.
 
 ## Edit discipline
 
@@ -166,6 +220,38 @@ Reader is `agent` | `DM` | `players`. Unknown reader → `DM`. Vault is `true` i
 | Destination is a wiki vault note | obsidian-markdown |
 | Working with visual references for a depiction | visual-references |
 | Producing (attach, ground, generate, promote, place) a visual aid | visual-aids |
+
+## Capability execution contract
+
+Root routing selects the existing owner capability directly from intent or
+artifact kind. Each capability owns its procedure, specialized craft, local
+handoffs, and completion guard.
+
+Every capability boundary is legible through four concepts, using headings or
+clear equivalents:
+
+- **Input** — owned intent, target, evidence, and constraints.
+- **Work** — owner-specific procedure and safeguards using the minimum context
+  projection; focused retrieval resumes the same owner when evidence is insufficient.
+- **Done** — observable output-contract, evidence, or scoped-validation result.
+  Prose existence is never enough.
+- **Capability Handoff** — the bounded artifact or operation, receiving owner,
+  return evidence, and parent resume point when ownership changes.
+
+The parent operation retains the user's objective. Children own only bounded
+artifacts or operations and return evidence before the parent resumes. Real
+prerequisites run first; disjoint canonical write surfaces may run concurrently;
+a shared surface has one active writer. Read capabilities return cited evidence
+without mutating canonical wiki pages, manifests, indexes, or logs.
+
+Load only owner instructions, target evidence, relevant canon, governing
+template or contract, validation evidence, dependencies, and deliberate
+omissions for the current capability. Do not inherit unrelated artifact groups.
+Do not create a generic router, workflow engine, global DAG, second owner
+registry, or persistent execution ledger.
+
+Use `docs/agents/hybrid-sdd.md` for substantial cross-capability composition
+and `wiki/AGENTS.md` for wiki semantics. Neither duplicates owner procedure.
 
 ## Beat skill routing
 
@@ -281,35 +367,9 @@ When pushing commits directly to `main`, use native Git in this order:
 `scripts/git-sync-main` remains the pre-work sync/reset helper and does not
 replace this push protocol or perform pushes.
 
-## Vault Structure
-
-```
-$OBSIDIAN_VAULT_PATH/
-├── index.md                # Master index — every page listed, always kept current
-├── log.md                  # Chronological activity log for llm-wiki operations (ingests, updates, retcons)
-├── hot.md                  # Session hot cache — ~500-word semantic snapshot of recent activity
-├── .manifest.json          # Tracks every ingested source: path, timestamps, pages produced
-├── _meta/
-│   ├── taxonomy.md         # Controlled tag vocabulary
-│   └── *.base              # Obsidian Bases dashboard definitions (wiki-dashboard skill)
-├── _insights.md            # Graph analysis output (hubs, bridges, dead ends)
-├── _raw/                   # Staging area — drop rough notes here, next ingest promotes them
-├── _readouts/              # Derived narrative readouts saved by wiki-narrate — not knowledge pages
-├── concepts/               # Abstract ideas, patterns, mental models
-├── entities/               # Concrete things — people, tools, libraries, companies
-├── skills/                 # How-to knowledge, techniques, procedures
-├── references/             # Factual lookups — specs, APIs, configs
-├── synthesis/              # Cross-cutting analysis connecting multiple concepts
-├── journal/                # Time-bound entries — daily logs, session notes
-└── projects/
-    └── <project-name>.md   # One page per project synced via wiki-update
-```
-
-Every wiki page has required frontmatter: `title`, `category`, `tags`, `sources`, `created`, `updated`. Pages connect via internal links — `[[wikilinks]]` by default, or standard Markdown links when `OBSIDIAN_LINK_FORMAT=markdown` is set in config.
-
 ## Skill Routing
 
-Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the right skill. Beat-type routing and wiki-kind routing have their own tables above — this table covers everything else. Minting a named campaign page loads that kind's **owner skill** first.
+Match the user's intent to the right skill. Beat-type routing and wiki-kind routing have their own tables above — this table covers everything else. Minting a named campaign page loads that kind's **owner skill** first.
 
 ### Wiki
 
@@ -375,8 +435,8 @@ stderr `tune` names a checker. Fix it this sitting.
 | User says something like… | Skill |
 |---|---|
 | "design a dungeon" / "dungeon layout" / "map this dungeon" | `dungeon-design` |
-| "homebrew monster" / "build a creature" / "stat block" | `homebrew-monsters-5e` + mandatory `dnd5e-mechanics` pass |
-| "design a magic item" / "homebrew item" | `dnd-5e-magic-item-design` + mandatory `dnd5e-mechanics` pass |
+| "design a monster" / "homebrew monster" / "build a creature" / "stat block" | `monster-design` + mandatory `dnd5e-mechanics` pass |
+| "design an item" / "design a magic item" / "homebrew item" | `item-design` + mandatory `dnd5e-mechanics` pass |
 | "design an NPC" / "build an NPC" / "NPC stat block" | `npc-design` |
 | "design a trap" / "trial" / "puzzle" / "hazard" | `traps-trials` |
 | "travel event" / "random encounter" / "journey event" | `travel-events` |
@@ -472,7 +532,7 @@ See `wiki-query` and `wiki-export` skills for how the filter is applied.
 ## Core Principles
 
 - **Compile, don't retrieve.** The wiki is pre-compiled knowledge. Update existing pages — don't append or duplicate.
-- **Track llm-wiki operations.** After ingest or another source-backed update, record the source with `python3 scripts/manifest.py record`; update `index.md`, `log.md`, and `hot.md`. Structural lint and repair do not write `log.md`.
+- **Track llm-wiki operations.** After ingest or another source-backed update, record the source with `python3 scripts/manifest.py record`; update `index.md`, `log.md`, and `hot.md`. Lint and lint repair do not write `log.md`.
 - **Connect with `[[wikilinks]]`.** Every page should link to related pages. This is what makes it a knowledge graph, not a folder of files.
 - **Frontmatter is required.** Every wiki page needs: `title`, `category`, `tags`, `sources`, `created`, `updated`.
 - **Single source of truth.** Visibility tags shape how content is surfaced — they don't duplicate or separate it.
@@ -524,5 +584,5 @@ The vault format is structurally conformant with the [Open Knowledge Format (OKF
 <!-- SPECKIT START -->
 For additional context about technologies to be used, project structure,
 shell commands, and other important information, read the current plan
-at specs/027-wiki-agent-cli/plan.md
+at specs/029-agent-loop-closure/plan.md
 <!-- SPECKIT END -->

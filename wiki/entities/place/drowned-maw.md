@@ -26,6 +26,9 @@ kind: planar
 region: "eastern edge"
 ---
 # Drowned Maw
+
+![[drowned-maw-overview.png|Drowned Maw overview: the trench where currents reverse]]
+
 > [!narration] Narration
 > The Drowned Maw is a deep trench at the chart edge where dark water drags ropes sideways and currents reverse under the hull. Storm wall and broken horizon sit over cold spray. Wet rope goes taut before the next swell clears.
 

@@ -4,39 +4,69 @@ aliases:
   - Dreth-Orak Channel
 category: entities
 tags: [shattered-sea, place]
-sources: ["Dreth-Orak Channel.md", "wiki/_raw/Grung clans.md"]
-summary: "Dreth-Orak Channel"
-provenance:
-  extracted: 1.0
-  inferred: 0.0
-  ambiguous: 0.0
-base_confidence: 0.53
+sources:
+  - "Dreth-Orak Channel.md"
+  - "wiki/_raw/Grung clans.md"
+created: 2026-09-12T00:00:00Z
+updated: 2026-09-20
+type: place
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-tier: supporting
-created: 2026-09-12T00:00:00Z
-updated: 2026-09-13T07:45:00Z
-type: place
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: waterway
 region: "verdant-teeth"
+summary: "A flooded jungle channel between Dreth and Orak where shallow crossings, channel axolotls, predators, and Grung timber patrols make the forbidden shortcut costly."
+provenance:
+  extracted: 1.0
+  inferred: 0.0
+  ambiguous: 0.0
+base_confidence: 0.53
+tier: supporting
 ---
 # Dreth-Orak Channel
+
+## Overview
+
 > [!narration] Narration
-> The Dreth-Orak Channel is flooded jungle water under joined canopy, where trunks stand in the tide. A hull bumps soft give then hard resistance in the dark. Frog-breath and tannin fill the air.
+> The Dreth-Orak Channel is flooded jungle water under joined canopy, where trunks stand in the tide. A hull bumps soft give then hard resistance in the dark. Frog-breath and tannin fill the air. Root hollows and silt margins offer places to search, while darker seams hide larger predators.
 
+## At a Glance
 
-## Stub
-The Dreth-Orak Channel is flooded jungle, not a normal strait. It is the forbidden crossing between the paired eastern islands and the confirmed ground of live channel axolotls.
+The channel is flooded jungle rather than a normal strait, forming a forbidden crossing between [[Dreth]] and [[Orak]]. It can be crossed, but it does not offer a safe shortcut: rain erases shallow crossings, and Grung timber work draws patrols south.
 
-## Playable facts
-- A [[Vethka]] belongs here; a keel, mast, and sail are liabilities.
-- Root hollows and silt margins hold specimens; darker seams hold larger predators.
-- Shallow crossings toward Orak exist only until rain erases them.
-- A fresh-cut hummock and resin smell signal Grung timber work; patrols thicken as the cut moves south.
-- Outsiders can withdraw, evade, bargain, or continue, but the channel does not offer a safe shortcut.
+## If the party
 
-## Linked
-- [[Dreth]] · [[Orak]] · [[verdant-teeth]] · [[grung-clans]] · [[pursue-the-grung-raiding-fleet]]
+- **Withdraws.** The party can leave the channel, surrendering the crossing and any specimens or information found inside.
+- **Evades.** The party can use root hollows, silt margins, and the channel's branching water to avoid attention, while darker seams remain dangerous.
+- **Bargains.** The party can respond to Grung timber patrols rather than forcing a crossing.
+- **Continues.** The party can attempt the channel crossing; a [[Vethka]] belongs here, while a keel, mast, and sail are liabilities.
+
+## Who
+
+The channel is confirmed ground for live channel axolotls. Grung timber workers and patrols operate where fresh-cut hummocks and resin smell mark the work, with patrols thickening as the cut moves south. No other permanent occupants are established.
+
+## What
+
+- Flooded jungle water under joined canopy, with trunks standing in the tide.
+- Root hollows and silt margins that hold specimens.
+- Darker seams that hold larger predators.
+- Shallow crossings toward [[Orak]] that rain can erase.
+- Fresh-cut hummocks and resin smell that signal Grung timber work.
+
+## Where
+
+- **North:** No canon direction is established.
+- **East:** [[Dreth]]; the channel is one side of the paired eastern-island crossing.
+- **South:** No named destination is established; Grung patrols thicken as timber cutting moves south.
+- **West:** [[Orak]]; shallow crossings toward Orak are temporary.
+- **Region:** [[verdant-teeth]].
+
+## Why
+
+The party comes to cross between Dreth and Orak, find channel specimens, follow or avoid Grung timber work, or decide whether the forbidden shortcut is worth its hazards.
+
+## Art
+
+<!-- No approved art is attached. -->

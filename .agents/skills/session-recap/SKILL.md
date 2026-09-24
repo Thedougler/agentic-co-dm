@@ -18,7 +18,7 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
 Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit** (Nick 2026-09-14). Recap narration stays player-safe but grounded in named entities; **Wiki facts** (DM-facing) name concrete owners/stakes — no coy “something happened” bullets without who/what.
 
 
-Done when: `Session-<NN>-Recap.md` is filed, inspectable, and a done-summary names what changed and where.
+Done when: `Session-<NN>-Recap.md` is filed, its `[!narration] Recap` passes the `theatre-of-the-mind` final check, and a done-summary names what changed and where.
 
 ## Output (only)
 
@@ -33,12 +33,12 @@ File:
 - No `[!secret]` / `[!mechanic]` on this surface
 - No spaces in basename; no `Aruhe` / `00` prefixes
 
-Align with `wiki/AGENTS.md` session-folder + page-filename rules. Load `obsidian-markdown` for formatting and Markdown standards. Use `writing-for-humans` for prose standards. After any write, run `wiki lint <recap-path>` on the recap; the single agent-facing command reports every checker finding.
+Align with `wiki/AGENTS.md` session-folder + page-filename rules. Load `obsidian-markdown` for formatting and Markdown standards. The `[!narration] Recap` is player-facing: `theatre-of-the-mind` owns its craft (`references/recaps.md`). `writing-for-humans` owns the Wiki facts. After any write, run `wiki lint <recap-path>` on the recap; the single agent-facing command reports every checker finding.
 
 ## Procedure
 
-1. **Orient.** Confirm campaign slug and session number (ask rather than guess). Prefer `hot.md` + that session folder over full index/log. If the source is a raw transcript, hand cleanup to `session-transcript-ingest` first and consume its bounded packet (or a bounded packet from `reconciling-session-evidence`).
-2. **Write the recap.** Player-safe story of what play supported. No unearned secrets, DCs, or agent-process notes. Optional short Wiki facts list for the vault (names as wikilinks, clocks moved, next handles).
+1. **Orient.** Confirm campaign slug and session number (ask rather than guess). Prefer `hot.md` + that session folder over full index/log. Gather the play evidence: the raw transcript or play notes, and any evidence packet (the session's transcript companion, or a packet from `reconciling-session-evidence`). The packet gives the order of events; the raw play gives the moments.
+2. **Write the recap.** Load `theatre-of-the-mind` and write the narration as a **story** from its recaps reference (moment list first), then run its recap final check. Earlier recaps give continuity facts only; the story is built new from the play. Then the optional short Wiki facts list for the vault (names as wikilinks, clocks moved, next handles).
 3. **File.** Write the live path `wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md`. Then one done-summary.
 4. **Stop.** Return the recap path. Do not cascade other skills from this skill.
 
@@ -56,7 +56,7 @@ Align with `wiki/AGENTS.md` session-folder + page-filename rules. Load `obsidian
 
 | Need | Skill |
 |---|---|
-| Raw transcript → evidence packet | `session-transcript-ingest` |
+| Player-facing recap prose | `theatre-of-the-mind` |
 | Evidence vs wiki reconcile / canon surgery | `reconciling-session-evidence` / Campaign Editor |
 | Off-screen faction advance | `world-tick` (after Nick asks — not auto from recap) |
 

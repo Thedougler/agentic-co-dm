@@ -1,5 +1,46 @@
 {
-  "skill_name": "wiki-context-pack",
+  "trajectory_records": [
+    {
+      "case_id": "C03",
+      "pair_id": "C03-baseline",
+      "category": "context-pack",
+      "phase": "baseline",
+      "outcome": "not-run",
+      "observations": [],
+      "actions": [],
+      "turns": 0,
+      "tool_calls": 0,
+      "retrieval_attempts": 0,
+      "duplicate_equivalent_actions": 0,
+      "capability_handoffs": [],
+      "validation_passes": [],
+      "trajectory_tokens": null,
+      "tokenizer": "cl100k_base",
+      "termination_reason": "Cold executor unavailable in this session",
+      "hard_gates": {"captured": false, "read_isolation": null, "budget_contract": null},
+      "semantic_review": null
+    },
+    {
+      "case_id": "C04",
+      "pair_id": "C04-baseline",
+      "category": "context-pack",
+      "phase": "baseline",
+      "outcome": "not-run",
+      "observations": [],
+      "actions": [],
+      "turns": 0,
+      "tool_calls": 0,
+      "retrieval_attempts": 0,
+      "duplicate_equivalent_actions": 0,
+      "capability_handoffs": [],
+      "validation_passes": [],
+      "trajectory_tokens": null,
+      "tokenizer": "cl100k_base",
+      "termination_reason": "Cold executor unavailable in this session",
+      "hard_gates": {"captured": false, "read_isolation": null},
+      "semantic_review": null
+    }
+  ],
   "evals": [
     {
       "id": 1,
@@ -30,6 +71,17 @@
         {"text": "Checks the installed executable and the configured repository fallback", "type": "process"},
         {"text": "Does not manually read the entire vault as a substitute for the unavailable executable", "type": "guardrail"},
         {"text": "Gives actionable pip install obsidian-wiki or setup-from-a-valid-clone guidance", "type": "quality"}
+      ]
+    },
+    {
+      "id": "bounded-terminal-retrieval-blocker",
+      "prompt": "Produce a JSON context pack for the silent collection path for Torn Crossing with budget 1200. Use the documented CLI fallback once; if the focused candidate set remains unchanged, stop with a specific blocker rather than manually reading the whole vault.",
+      "expected_output": "A bounded CLI result or blocker naming collection, retrieval path, surviving evidence, attempted paths, reason, and parent effect; no vault mutation.",
+      "assertions": [
+        {"text": "Re-observes the same focused collection after the documented fallback.", "type": "process"},
+        {"text": "Does not repeat equivalent terminal retrieval or substitute a whole-vault read.", "type": "guardrail"},
+        {"text": "Preserves the requested budget and JSON output contract.", "type": "structure"},
+        {"text": "Leaves canonical vault tracking files unchanged.", "type": "guardrail"}
       ]
     }
   ]

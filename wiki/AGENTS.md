@@ -11,6 +11,36 @@ Write **complete-sentence human prose**. A DM reads this without decoding agent 
 Classify each write against the stack table in `AGENTS.md`. Vault is `true` on wiki vault notes. Mixed documents classify per passage, then apply vault format to the whole note.
 
 Spoken player text is `[!narration]` only.
+## Capability boundary
+
+Wiki-facing skills receive a bounded intent, target, evidence, and constraints.
+Their procedure remains in the owning skill; this file owns wiki semantics and
+output constraints rather than duplicating craft.
+
+For wiki work, project only the owner instructions, target source or page,
+relevant current canon, applicable template or contract, validation evidence,
+real dependencies, and deliberate omissions. Do not inherit unrelated artifact
+groups from another capability.
+
+Completion requires the owner's output contract plus applicable scoped
+validation. A possible edit does not authorize a read route to mutate canonical
+pages, manifests, indexes, or logs. Query, lint, and health observation shapes
+remain owned by their current CLI contracts.
+
+When ownership changes, hand off only the bounded artifact or operation to the
+named receiving skill and return its evidence to the parent. The parent retains
+the original objective; dependent spoken or presentation work waits for owner
+pages and contracts. Use `AGENTS.md` for global routing and
+`docs/agents/hybrid-sdd.md` for cross-capability composition.
+
+### Capability convergence pointer
+
+Use the full owner-relative `observe → act → re-observe` rule in
+[`docs/agents/hybrid-sdd.md`](../docs/agents/hybrid-sdd.md) whenever wiki
+work has an incomplete boundary. Continue only on changed owner evidence or a
+passed owner guard; an unchanged observation requires a different sanctioned
+path or a blocker. This file keeps wiki mutation, scope, canon, and handoff
+semantics; it does not duplicate the common procedure.
 
 ## Frontmatter
 
@@ -54,12 +84,12 @@ Copy the matching `wiki/templates/` scaffold for the campaign `type` (and `kind`
 | Creature | Look; runnable sheet; life (habitat, habits, diet, social); hunt (signs, instincts, opening, shut-down, aftermath) |
 | Person | Who and want; look; first minutes and posture change; named ties; combat only if they can fight |
 | PC | Spoken look; At a Glance (class/level/player/home ship + play-pattern thesis); Connections; Sheet + Combat Profile; Abilities; Spells when caster; Inventory; Session Log; Voice; Art. Single H1 only — flatten satellites; forbid nested `# Title — Facet` dumps. `type: pc`. Copy `wiki/templates/pc.md`. Pass is those jobs. |
-| Session plan | Compass; beat map; floating beats; pressure; PC touchpoints. `type: session-prep` `kind: session-plan`. Copy `wiki/templates/session-plan.md`. File `Session-<n>-00-<Title>.md`. Pass is those jobs. |
-| Hook | At the table; Open on; Situation; Run the hook; Decision handles; Handoff. `type: session-prep` `kind: hook`. Copy `wiki/templates/hook.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
-| Development | Abstract; Opening; Run the beat; Situation; Revelations; Exits. `type: session-prep` `kind: development`. Copy `wiki/templates/development.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
-| Cliffhanger | At a Glance; Open on Action; Run the beat; Opposition; Pressure; Resolution; Handoff. `type: session-prep` `kind: cliffhanger`. Copy `wiki/templates/cliffhanger.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
-| Climax | Run this; Opening image; Situation; Visible levers; Pressure; Opposition; Outcome. `type: session-prep` `kind: climax`. Copy `wiki/templates/climax.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
-| Resolution | Abstract; Run the beat; Closing image; What is true now; Consequences. `type: session-prep` `kind: resolution`. Copy `wiki/templates/resolution.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
+| Session plan | Compass; Beat Map; Cards, threads, and tiers; Floating beats; Climax candidates; Branches & skips; Threads; Critical routes; Pressure (opposition agenda); PC touchpoints; Floating clues; Session toolkit. `type: session-prep` `kind: session-plan`. Copy `wiki/templates/session-plan.md`. File `Session-<n>-00-<Title>.md`. Pass is those jobs. |
+| Hook | Abstract; Open on; Situation; Run the hook; Character pull; Decision handles; Leads; Checks; Action setup; Handoff. `type: session-prep` `kind: hook`. Copy `wiki/templates/hook.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
+| Development | Abstract; Opening; Run the beat; Situation; Revelations; Actors; Checks & costs; Player levers; Exits. `type: session-prep` `kind: development`. Copy `wiki/templates/development.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
+| Cliffhanger | Abstract; Open on Action; Run the beat; Opposition; Pressure; Battlefield; Discoveries; Resolution; References. `type: session-prep` `kind: cliffhanger`. Copy `wiki/templates/cliffhanger.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
+| Climax | Abstract; Opening image; Thread harvest; Situation; Visible levers; Pressure; Opposition; Stage; Final Battle or Final Revelation; PC moments; Outcome. `type: session-prep` `kind: climax`. Copy `wiki/templates/climax.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
+| Resolution | Abstract; Outcome branches; Run the beat; Closing image; What is true now; Consequences; Payoffs; Character epilogues; Loose ends; Rewards & accounting. `type: session-prep` `kind: resolution`. Copy `wiki/templates/resolution.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
 | Vehicle | Look; sheet; components; crew stations; handling; combat; then omit-empty At a Glance / Secrets / Connections / At the Table / Provenance / Art. Copy `wiki/templates/vehicle.md`. Pass is those jobs. |
 | Spell | Look of the casting; classification; runnable 2024 effect; Discovery when placement needed; Lore when history needed. Pass is those jobs. |
 | Faction | Public face; DM thesis; current state; one active agenda; table-relevant assets, people, places, and relationships; faction-turn log. Pass is those jobs. |
@@ -113,6 +143,20 @@ Example: `title: Jean-Claude Tabarnack` → `wiki/entities/pc/jean-claude-tabarn
 **Uniqueness:** vault-wide unique stem (no two live `.md` files share the same basename across folders). Prefer clearer titles/slugs over folder shadowing.
 
 **Wikilinks:** bare `[[Display Title]]` resolves via `title` / `aliases` / path (lint already). Prefer putting the human name in `title` and former spaced stems in `aliases:` after rename. On rename: move the file to the new kebab stem and rewrite inbound wikilinks/embeds in the same pass so the old basename is gone. The old file is deleted in that pass, not kept as a `redirects_to` stub.
+
+**Case-only rename** (`Bisou.md` → `bisou.md`; hit 2026-09-24). This volume is case-insensitive, so both spellings name one file: a Write to the lowercase path lands in the same inode and leaves the old spelling on disk, and a later `rm Bisou.md` takes the page with it. Move the file twice:
+
+```bash
+mv Bisou.md case-tmp.md && mv case-tmp.md bisou.md
+```
+
+Then re-point the index, which keeps the old spelling while `core.ignorecase = true`:
+
+```bash
+git rm --cached --quiet entities/npc/Bisou.md && git add entities/npc/bisou.md
+```
+
+Done when `ls` and `git ls-files` both print the kebab stem.
 
 **Journal / session:** same session-number folder as today. Space-free forms:
 - Plan: `Session-<n>-00-<kebab-title>.md`

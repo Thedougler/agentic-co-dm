@@ -12,6 +12,11 @@ type: item
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
+region: ""
+kind: magic
+rarity: uncommon
+attunement: false
+owner: ""
 campaign: shattered-sea
 visibility: dm
 summary: "A scroll holding the See Invisibility spell, sold to those who suspect someone watches them."

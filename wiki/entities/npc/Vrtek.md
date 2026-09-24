@@ -5,14 +5,18 @@ tags: [shattered-sea, npc]
 sources:
   - "campaign-os:vrtek.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "Small Rattkin dockhand with too many pockets, unwittingly carrying Detto Kalash's buried cache note through Port Tidefall."
+status: alive
+role: contact
+location: "[[calders-tooth-and-port-tidefall]]"
+faction: none
+summary: "Small Rattkin dockhand with too many pockets, unwittingly carrying [[detto-kalash]]'s buried cache note through Port Tidefall."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -22,19 +26,54 @@ tier: supporting
 ---
 # Vrtek
 
-![[vrtek-banner]]
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-> [!narration] Narration
-> *The back section is quieter, lower benches, smaller cups. At the corner table, a [[Rattkin]] dockhand has emptied every pocket onto the wood in front of him and is sorting the results with methodical focus: useful, pretty, mysterious, food.*
+| **Role** | Contact |
+| --- | --- |
+| **Nature** | Small Rattkin dockhand with too many pockets |
+| **Home** | Passing through [[calders-tooth-and-port-tidefall]]; seen at the [[Anchor and Line]] |
+| **Wants** | To sort useful, pretty, mysterious, and edible things between ships |
 
-Small Rattkin dockhand, coat with more pockets than any coat has a right to. Currently between ships and passing through [[calders-tooth-and-port-tidefall]], seen at the [[Anchor and Line]]. Neutral disposition. Leaving port tomorrow unless something interesting happens.
+> **DM thesis:** Vrtek is an innocent carrier whose pocket clutter can expose a buried cache before he understands what he found.
+```
 
-He found a crumpled note in his coat pocket (pulled from a Crown officer's coat during a crowd or close deal, he's unclear). He can't read the script. He doesn't know it's a treasure map: the note holds [[detto-kalash]]'s buried cache directions (location, tide window, and DCs on [[Inspection Pier]]). The same coat also held four coins, a brass button, a candle stub, a carved fish, and a Dravosi rating stamp.
+```col-md
+flexGrow=1
+===
+> [!narration] Vrtek
+> The back section is quieter, with lower benches and smaller cups. At the corner table, a [[Rattkin]] dockhand empties every pocket onto the wood and sorts the results with methodical focus: useful, pretty, mysterious, food.
+```
+````
 
-Sosse, a regular at the [[Anchor and Line]], tells [[perrin-black-jaw|Perrin]] after the third drink that Vrtek has something official that does not belong to him.
+## Running Vrtek
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Vrtek is between ships at the [[Anchor and Line]], leaving Port Tidefall tomorrow unless something interesting happens. He cannot read the crumpled note he carries. **Sample line:** “This one is official, I think. It has a stamp.”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+He becomes wary only when someone tries to take his pockets or rushes him. A calm explanation or a trade keeps him cooperative; he does not know the note is [[detto-kalash]]'s buried-cache directions.
+```
+````
 
 ## Connections
 
-- [[calders-tooth-and-port-tidefall]], passing through between ships.
-- [[Anchor and Line]], where he sorts his pockets.
-- [[detto-kalash]], unwitting source of his buried-cache note.
+| Connection | Meaning |
+| --- | --- |
+| [[calders-tooth-and-port-tidefall]] | Port he is passing through between ships. |
+| [[Anchor and Line]] | Dockside establishment where he sorts his pockets. |
+| [[detto-kalash]] | Unwitting source of the buried-cache note. |
+| [[perrin-black-jaw|Perrin]] | Can learn from Sosse that Vrtek carries something official that does not belong to him. |

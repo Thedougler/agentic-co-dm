@@ -10,6 +10,14 @@ description: >-
 ---
 
 # Encounter Prep
+## Boundary contract
+
+**Input.** Named encounter or session cockpit, party/location/opposition canon, `templates/Encounter.md` when reusable. Classify reusable stock vs session-only cockpit before drafting.
+
+**Work.** Classify primary mode, build goal/opposition/suspense/choices/rulings/resolution. Route creature statblocks to `monster-design`, DCs to `dnd5e-mechanics`, places to `place-design`/`dungeon-design`, tonight's field order to `run-guide`.
+
+**Done.** `## Table-prep gate` below is the completion guard.
+
 
 File what constitution X makes canon. Follow `docs/agents/work.md`.
 
@@ -19,7 +27,7 @@ Customized combat mechanics serve a named narrative beat (lore, origin, stakes, 
 
 When the encounter has a named place (lair, site, battlefield), that place has at least one mechanical pressure that belongs to it and changes a choice. Flavor-only scenery is incomplete. No named place, or an explicit DM request for a featureless skirmish, does not require invented lair mechanics.
 
-Stock opposition used unchanged needs no custom features. Do not author statblocks — `homebrew-monsters-5e` owns those.
+Stock opposition used unchanged needs no custom features: name the standard statblock and copy the compact numbers the DM will roll onto the page. New or changed creatures get their statblocks from `monster-design` (its Reskin path covers a stock statblock with new fiction).
 
 
 ## Ground and type
@@ -70,7 +78,7 @@ in `run-guide`; this skill supplies table-useful stock:
    that matter; speeds that matter; what a move vs Dash reaches. The cockpit
    writes this under Now only when Glance would otherwise get crowded.
 3. **Action cards:** opposition loop with named actions; compact default-mode
-   numbers the DM will roll. Missing owner → `homebrew-monsters-5e`.
+   numbers the DM will roll. Missing owner → `monster-design`.
 4. **Roster embeds:** only for creatures or items the DM will roll or spend.
 5. **Zones:** named places with distances in feet and compass directions; same
    numbers as Now; features either side can use.
@@ -115,7 +123,7 @@ structure. Run applicable checks; report changed paths and any deferred owner wo
 
 Ability check, save, and DC choice → `dnd5e-mechanics`. Write those tests with
 the at-table grammar in `obsidian-markdown`. `npc-design`, `place-design`,
-`dungeon-design`, `dnd-5e-magic-item-design`, `run-guide`, and `homebrew-monsters-5e`
+`dungeon-design`, `item-design`, `run-guide`, and `monster-design`
 own their respective handoffs.
 
 ## Table-prep gate

@@ -1,14 +1,14 @@
 ---
 title: "{{title}}"
 category: journal
-tags: [shattered-sea, session]
+tags: ["{{campaign}}", session]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: session
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 visibility: dm
 summary: ""
 ---

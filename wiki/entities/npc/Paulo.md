@@ -13,6 +13,8 @@ lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
+role: contact
+faction: none
 location: "[[Mercatura]]"
 visibility: dm
 summary: "Young gondolier who announces every wrong turn like it was the plan, and still delivers late."
@@ -67,6 +69,10 @@ flexGrow=1
 A fare that actually has to be on time. He still does not crash and does not lose anyone to the water. He arrives late, by the wrong way round.
 ```
 ````
+### Voice
+
+Paulo talks himself through every turn, turning mistakes into confident announcements and avoiding any admission that he is lost. His ask is, “You made it! I mean, I never doubted the route.” His refusal is, “That was the planned way round.” Under pressure, he says, “Late is still better than lost.”
+
 
 ## Connections
 

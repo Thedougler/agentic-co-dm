@@ -20,6 +20,16 @@ description: >
 You are ingesting source documents into an Obsidian wiki. Your job is not to summarize — it is to **distill and integrate** knowledge across the entire wiki.
 
 Named ingest files to the live wiki without a second chat accept. `dm_placed_ingest` that contradicts user/transcript is not canon — do not file that contradiction as truth; no ask. Unsaid invention is not canon. End the named-ingest slice with a done-summary after green (what changed, where; no question; no wait).
+## Capability boundary
+
+**Input.** Named source file(s), approval/canon mode, resolved vault. Load only `hot.md`, targeted index/QMD, manifest query for this source, and destination owner template.
+
+**Work.** Read source, map evidence to destinations, ingest sequentially per file. Hand page payloads to receiving craft owners (campaign kind, combatant, etc.); `wiki-ingest` keeps source-level tracking.
+
+**Done.** Per file: every extracted idea has a destination, scoped lint clean, tracking finalized once (manifest record + index/log/hot + QMD refresh). Failed guard → `failed` with specific blocker.
+
+**Handoff.** Craft owners own their page artifact only. `wiki-ingest` owns manifest/index/log/hot/QMD. Final report: per-file status, destinations, evidence, QMD result.
+
 
 ## Before You Start
 

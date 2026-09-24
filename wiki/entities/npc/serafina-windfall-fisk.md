@@ -7,12 +7,16 @@ tags: [shattered-sea, npc]
 sources:
   - "campaign-os:serafina-windfall-fisk.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: "2026-09-22"
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: contact
+location: unknown
+faction: none
 visibility: dm
 summary: "An Aasimar fortune-teller compelled by precognition to wander the Verdant Scatter."
 provenance:
@@ -24,24 +28,44 @@ tier: supporting
 ---
 # Serafina Windfall Fisk
 
-![[serafina-windfall-fisk-banner]]
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-**Species:** Aasimar | **Role:** fortune-teller, compelled wanderer | **Location:** unknown, somewhere in the [[verdant-scatter]]
+| **Role** | Contact and fortune-teller |
+| --- | --- |
+| **Nature** | An Aasimar drawn by precognition toward specific people and places. |
+| **Home** | The [[verdant-scatter]], though her exact location is unknown. |
+| **Wants** | To follow the pull that brings her where people need her, without pretending to control what it means. |
 
-Serafina Windfall Fisk is an Aasimar fortune-teller who moves through the Scatter on compulsion, drawn to specific places and people at specific times by a precognitive pull she has stopped trying to explain or fight. She goes where people need her. She does not always know why until she arrives.
+> **DM thesis:** Serafina arrives with a precise reading and an uncertain reason, giving the party a choice rather than a prophecy they must obey.
+```
 
-**Appearance & Manner:** tall, dark-skinned, with long curly reddish-brown hair kept bundled in a headscarf. She reads as Human at a glance and rarely corrects the assumption. She wears a long multicolored skirt and keeps a well-kept leather tarot case close, producing it before she sits down.
+```col-md
+flexGrow=1
+===
+> [!narration] Serafina Windfall Fisk
+> Serafina is tall and dark-skinned, with long curly reddish-brown hair bundled beneath a headscarf. Her long multicolored skirt moves around a well-kept leather tarot case. At a glance she could pass for Human, but the case is already in her hands before she sits down.
+```
+````
 
-Her fortune-telling is accurate. She'll concede she isn't infallible, but those who've seen her work once rarely bet against it. She avoids performance theatrics, preferring to read the cards and show you what emerges. What happens next is your decision. Her pull can bring her into a scene before anyone understands why she belongs there. Some meetings she anticipates weeks ahead. Others emerge only when she arrives. Either way, she stands exactly where she needs to be.
+## Running Serafina Windfall Fisk
 
-She is [[delmar-fisk|Delmar Fisk's]] wife. They married knowing their work would keep them apart more often than not. She was not aboard the *[[red-lady]]* when the fleet went down. Her absence makes her one of the few pieces of Delmar's old life not swallowed by [[the Maw]].
+### First meeting
 
-## Stats & Combat
+Serafina arrives because her precognitive pull brought her to a specific person or place. She opens the tarot case, reads what emerges without theatrical performance, and leaves the next decision to the people in front of her.
 
-Not stated in source.
+### When posture changes
+
+Serafina stops explaining or resisting the pull when it has chosen its next destination. She concedes that her readings are not infallible, but she does not let certainty become an order; the decision remains with the people who hear her.
 
 ## Connections
 
-- [[delmar-fisk]] (husband)
-- the Duchess (Delmar's musket, named for her)
-- *[[red-lady]]* (the ship she was not aboard when it went down)
+| Connection | Meaning |
+| --- | --- |
+| [[delmar-fisk|Delmar Fisk]] | Her husband; their work keeps them apart more often than not. |
+| The Duchess | Delmar's musket, named for Serafina. |
+| [[red-lady]] | The ship she was not aboard when the fleet went down. |
+| [[the Maw]] | The loss that swallowed much of Delmar's old life but not Serafina. |

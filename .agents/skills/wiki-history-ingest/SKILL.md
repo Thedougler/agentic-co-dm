@@ -10,6 +10,16 @@ description: >
 # Unified History Ingest Router
 
 This is a thin router for **history sources only**. It does not replace `wiki-ingest` for documents.
+## Capability boundary
+
+**Input.** History target or inferable source path, ingest objective.
+
+**Work.** Classify source and dispatch to the specialized history skill. No page writes, manifest, or tracking — the destination owner handles all of that.
+
+**Done.** Explicit dispatch, or clarification for an ambiguous source. Missing/invalid route → blocker.
+
+**Handoff.** Destination skill returns pages/tracking/validation/QMD. This router passes that result through unchanged.
+
 
 ## Subcommands
 

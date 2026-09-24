@@ -120,6 +120,46 @@
           "type": "structure"
         }
       ]
+    },
+    {
+      "id": "direct-named-owner",
+      "prompt": "The session brief names the Ember Cartel as the faction owner and asks for its active agenda. Select the correct owner skill and produce only the faction-design work; do not start a generic place or session plan.",
+      "expected_output": "Enters faction-design directly for the named Ember Cartel, preserves the brief's objective, and returns a faction-template-shaped agenda with observable player opening and completion evidence.",
+      "assertions": [
+        {"text": "Selects faction-design directly from the named faction owner instead of a generic orchestrator.", "type": "process"},
+        {"text": "Works only the named faction and preserves the caller's active-agenda objective.", "type": "quality"},
+        {"text": "Reports faction template completion and an observable player opening.", "type": "structure"}
+      ]
+    },
+    {
+      "id": "local-subtype-handoff",
+      "prompt": "While designing the named Ember Cartel, the brief needs one local dock city posture. Hand off only that city seam, then finish the faction page without redesigning the campaign.",
+      "expected_output": "Sends a bounded city request with the faction owner, objective, evidence, and requested section; incorporates returned city-section evidence while keeping faction-design responsible for the faction page.",
+      "assertions": [
+        {"text": "Hands off only the explicitly requested city subtype seam to city-design.", "type": "process"},
+        {"text": "Bounds the child request with owner, objective, evidence, and requested section.", "type": "quality"},
+        {"text": "Returns child artifact/section and completion evidence without replacing the faction deliverable.", "type": "structure"}
+      ]
+    },
+    {
+      "id": "preserve-parent-objective",
+      "prompt": "A session plan's objective is to expose the Countless's search pattern; use the named faction's agenda as supporting pressure, but do not let faction prep replace or broaden that session objective.",
+      "expected_output": "Keeps the session objective as the parent constraint, designs only the faction pressure that advances it, and reports how the faction result returns to the session.",
+      "assertions": [
+        {"text": "Preserves the parent session objective while scoping faction work to supporting pressure.", "type": "guardrail"},
+        {"text": "Does not expand the faction handoff into a replacement session plan.", "type": "guardrail"},
+        {"text": "States the returned faction evidence and how it advances the parent's objective.", "type": "quality"}
+      ]
+    },
+    {
+      "id": "canonical-faction-owner-and-blocker",
+      "prompt": "Complete the named faction owner under wiki/entities/faction/. Re-observe the page and child seam after each bounded action. If the owner path or child return is unchanged, do not repeat it; report the faction boundary, surviving evidence, attempted paths, reason, and parent effect.",
+      "expected_output": "A faction page at the canonical owner path with completion evidence, or a specific blocker instead of legacy-path completion or repetition.",
+      "assertions": [
+        {"text": "Uses wiki/entities/faction/ as the owner path and applies the faction template guard.", "type": "structure"},
+        {"text": "Requires changed artifact/dependency/completion evidence before parent resumption.", "type": "process"},
+        {"text": "Reports a complete specific blocker when no sanctioned path remains.", "type": "quality"}
+      ]
     }
   ]
 }

@@ -11,6 +11,16 @@ description: >
 Use this skill only for a topic-based Markdown readout. Do not add tag or page-list
 selection, prior-query input, voice aliases, HTML, PDF, slides, renderer handoffs, or
 new compiled knowledge pages.
+## Capability Boundary
+
+**Accepted input.** A non-empty topic with the documented `briefing`, `plain-language`, or `lecturer` voice and optional `--save`.
+
+**Owner work.** Enter `wiki-narrate` directly, resolve the vault and link format, select evidence through the existing QMD/index/section/full-read order, build the claim ledger, and preserve filtered visibility and citation rules.
+
+**Done.** Return Markdown only when every factual sentence has adjacent citations and the evidence is sufficient, or when unsupported/conflicting claims are explicitly omitted or marked in `## Coverage`. Without `--save`, canonical wiki state remains unchanged; `--save` may create the specified derived readout and its required log/hot updates, but never edits canonical pages, `index.md`, or `.manifest.json`.
+
+**Capability handoff.** Handoff occurs only when ownership changes: route a requested canon edit or ingest to its owning wiki skill; return to narration only with the bounded evidence needed for the readout.
+
 
 ## Command Contract
 

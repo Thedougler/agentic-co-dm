@@ -19,7 +19,8 @@ You are answering questions against a compiled Obsidian wiki, not raw source doc
 
 ## This skill is READ-ONLY
 
-`wiki-query` answers questions. It MUST NOT create or modify any wiki content. The ONLY write it may perform is the single Step 6 append to `log.md`.
+`wiki-query` answers questions. It MUST NOT create or modify any wiki content,
+including `log.md`, `index.md`, `hot.md`, or `.manifest.json`.
 
 Never, even when a change seems obviously helpful:
 - create or edit pages under `concepts/`, `entities/`, `skills/`, `references/`, `synthesis/`, `journal/`, or `projects/`
@@ -29,6 +30,17 @@ If the user's message contains a new finding, an action request ("save this", "b
 - quick note / gotcha → `wiki-capture --quick`
 - a full new page → `wiki-capture`
 - a project-knowledge sync → `wiki-update`
+
+## Capability boundary
+
+**Input.** A question about compiled wiki knowledge: topic lookup, filtered/public query, index-only request, or typed-edge path.
+
+**Work.** Use the Retrieval Protocol's cheapest sufficient evidence. Deepen to focused sections or page reads only when current evidence cannot support the answer.
+
+**Done.** Cited answer with Pages consulted and Retrieval counts. Claims supported by wiki evidence or explicitly marked as gaps/inference/conflict. No vault writes.
+
+**Handoff.** Capture/sync requests → `wiki-capture` or `wiki-update`.
+
 
 ## Before You Start
 
@@ -255,14 +267,11 @@ Pages with no lifecycle field (legacy pages predating the schema) are treated th
 
 Include a **`Source code:`** line in the answer with that absolute path. When the query implies a code fix is wanted, name the specific files to edit using that path (e.g. `<source_cwd>/public/lib/anticheat.js`) and **offer to implement it as an explicit, separate next step** — but never edit during the query itself (see the READ-ONLY guard above).
 
-### Step 6: Log the Query
+### Step 6: Return without mutation
 
-Append to `log.md`. This `log.md` append is the *only* write this skill performs — do not edit anything else.
-```
-- [TIMESTAMP] QUERY query="the user's question" result_pages=N mode=normal|index_only|filtered escalated=true|false candidates_seen=N candidates_used=N dropped=N
-```
-
-Use the counts tracked since Step 2. If a count wasn't tracked (e.g. index-only mode never built a full candidate set), write `0` rather than omitting the field — the log format should stay parseable.
+The query has no tracking write. Keep retrieval counts in the answer only:
+`candidates_seen`, `candidates_used`, and `dropped`. Tracking and QMD
+maintenance belong to the owning write skill.
 
 ## Answer Format
 
@@ -283,4 +292,7 @@ Structure answers like this:
 
 The **Source code** line is optional — include it only for project-scoped queries where you resolved a `source_cwd` (see Step 5).
 
-The **Retrieval** line is always included — it's the transparency report from the counts tracked since Step 2 (mirrors the `candidates_seen`/`candidates_used`/`dropped` fields logged in Step 6). In index-only mode, report the counts from the frontmatter scan; if D is 0, drop the parenthetical rather than writing an empty list.
+The **Retrieval** line is always included as the transparency report from the
+counts tracked since Step 2. In index-only mode, report the counts from the
+frontmatter scan; if D is 0, drop the parenthetical rather than writing an
+empty list.

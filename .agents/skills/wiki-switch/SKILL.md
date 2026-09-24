@@ -10,6 +10,37 @@ description: >
 
 # Wiki Switch — Manage Multiple Vault Profiles
 
+## Boundary
+
+### Input
+
+Accept one dispatch mode (`switch`, `list`, `show`, or `new`) and a profile
+name when required. Resolve profile files from `~/.obsidian-wiki/config.*`;
+inline `@name` remains a one-request override owned by the Config Resolution
+Protocol.
+
+### Work
+
+Use the existing symlink, config-copy, redaction, and profile-list procedures.
+Only `switch` and `new` mutate configuration, and `new` never activates the
+profile automatically. Verify the target/profile after every mutation.
+
+### Done
+
+Close with observable profile evidence: the active symlink and resolved vault
+path for switch, complete registered profiles for list, redacted config for
+show, or a readable new config for new. Missing profiles, broken symlinks, and
+failed writes are specific blockers; do not report success from an attempted
+command.
+
+### Capability Handoff
+
+`@name` requests return to the matching owner skill without changing the
+default symlink. A newly created profile hands to `wiki-setup` when the user
+chooses to initialize it; normal wiki operations resume only after an explicit
+switch or inline override.
+
+
 Each vault is a complete config file at `~/.obsidian-wiki/config.<name>`. The active vault is
 whichever file `~/.obsidian-wiki/config` symlinks to. Switching vaults means re-pointing that symlink.
 

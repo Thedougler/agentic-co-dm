@@ -9,7 +9,7 @@ updated: 2026-09-13
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "A gnome labour slave on Sorn who challenged Jean-Claude Tabarnack's understanding of the world before her death in captivity."

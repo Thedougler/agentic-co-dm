@@ -63,6 +63,10 @@ flexGrow=1
 The current record gives no Takowan response. His posture becomes the live question when someone presses him about the ring or the injury instead of treating the visit as routine crew business.
 ```
 ````
+### Voice
+
+Takowan speaks like a working crewman trying to keep a routine visit uneventful and avoids explaining the ring unless pressed. His ask is, “Wrap the hand and give me the salts.” His refusal is, “It is only a ring.” Under pressure, he says, “The crew needs me back on the deck.”
+
 
 ## Connections
 

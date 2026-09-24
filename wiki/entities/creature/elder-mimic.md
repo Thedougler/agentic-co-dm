@@ -68,7 +68,7 @@ bonus_actions:
     desc: "The mimic shape-shifts to resemble a Medium or Small object while retaining its game statistics, or it returns to its true blob form. Any equipment it is wearing or carrying isn't transformed."
 ```
 
-**Wants:** to stay undiscovered indefinitely and get relocated to better, safer ground through someone else's labor. [[delmar-fisk]] claimed it as a consolation prize during the *[[Uncertainty]]*'s break-room refit at [[La Vasca]] and catalogued it as the [[Fleet Commanders Chair]]. It is now trapped aboard a ship at sea with no city's worth of replacement objects left to vanish into.
+**Wants:** to stay undiscovered indefinitely and get relocated to better, safer ground through someone else's labor. [[delmar-fisk]] claimed it as a consolation prize during the *[[Uncertainty]]*'s break-room refit at [[La Vasca]] and catalogued it as the [[fleet-commanders-chair|Fleet Commanders Chair]]. It is now trapped aboard a ship at sea with no city's worth of replacement objects left to vanish into.
 **Morale:** it never presses a fight it doesn't need to win. It bites once, then Shape-Shifts away to reform elsewhere and breaks line of sight through the nearest hatch or doorway. If cornered with nowhere left to reshape into, it fights for real instead.
 
 > [!narration] Narration

@@ -7,13 +7,18 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:harrier-cry-whistle.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: item
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: ""
+kind: magic
+rarity: uncommon
+attunement: false
+owner: ""
 summary: "A whistle cut from a crimson-crowned harrier's wing bone; one blast breaks like glass and shakes a caster's concentration loose."
 provenance:
   extracted: 0.85
@@ -33,15 +38,12 @@ tier: supporting
 >
 > Cover the hole and the note climbs until it stops sounding like breath and starts sounding like a bird.
 
-
 *Wondrous Item, Uncommon.* Cut from the wing bone of a crimson-crowned harrier, whose hunting cry breaks like a dropped pane.
-
-## Mechanics
 
 > [!mechanic]
 > **[HB] Cry (action).** The whistle holds 3 charges and regains all of them at dawn. Spend a charge and choose one creature within 30 feet that can hear you. It must succeed on a DC 13 Constitution saving throw or lose concentration on a spell it is maintaining, and it takes 1d4 thunder damage whether it saves or not.
 >
-> **Limitations:** no effect on a deafened creature, on anything immune to thunder damage, or on a creature that cannot hear over its own noise. Every blast carries roughly 300 feet, and everything hunting in that radius hears a wounded bird.
+> **Limitations:** No effect on a deafened creature, anything immune to thunder damage, or a creature that cannot hear over its own noise. Every blast carries roughly 300 feet, and everything hunting in that radius hears a wounded bird.
 
 ## Provenance
 

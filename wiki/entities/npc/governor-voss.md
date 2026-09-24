@@ -70,6 +70,10 @@ flexGrow=1
 The source does not record Voss's posture or response. The actionable change is whether Voss recognizes, denies, or investigates the two detachments holding Aldric's vault on orders outside the governor's record.
 ```
 ````
+### Voice
+
+No voice is recorded for Governor Voss. Until a sourced meeting exists, keep the governor's speech formal and tied to the command record. The ask is, “Show me the order.” The refusal is, “That command does not bear my authority.” Under pressure, Voss says, “Find who issued it before the Crown is blamed.”
+
 
 ## Connections
 

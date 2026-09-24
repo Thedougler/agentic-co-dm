@@ -1,6 +1,6 @@
 # Agentic Co-DM
 
-Prep-and-wrap co-DM for a human table. Agents author playable Work before a session and compile outcomes after. The DM is the only runtime while players are present. This file is a reusable glossary for campaign play; it does not record work packets, ingest grain, or failure catalogs.
+Prep-and-wrap co-DM for a human table. Agents author playable Work before a session and compile outcomes after. The DM is the only runtime while players are present. This file is the reusable glossary for campaign play and Co-DM operations; it does not record work packets, ingest grain, or failure catalogs.
 
 ## Language
 
@@ -15,6 +15,14 @@ _Avoid_: live co-GM; table-facing agent; autonomous GM
 **Session**:
 Table time with only humans present.
 _Avoid_: agent-attended play; in-session proposals
+
+**Table time**:
+Real minutes at the table. Beat budgets, the night's length, and pacing are table time.
+_Avoid_: turning a beat's budget into an in-world duration; pricing a fictional cost in table minutes
+
+**World time**:
+Time inside the fiction: rounds, minutes, hours, days, dusk. Clocks, deadlines, travel, durations, and costs the characters feel are world time.
+_Avoid_: a bare "30 minutes" with no clock named; a clock that advances on table time without saying so
 
 **Campaign**:
 The shared fictional world and ongoing play established by the DM and players across sessions.
@@ -112,9 +120,9 @@ The current state label for a page's subject. Values depend on the page kind and
 **Scope**:
 Describe scale where it changes play, but do not treat it as universal frontmatter.
 
-DM-facing summaries state sourced campaign facts and runnable procedures. They do not invent unsupplied DM intent.
+DM-facing summaries state sourced campaign facts, runnable procedures, and marked canon proposals where canon is silent or contradicts itself. They never pass a proposal off as the DM's intent.
 
-_Avoid_: treating hidden content as inaccessible to the DM or Co-DM; inventing DM intent; tying categories to layouts.
+_Avoid_: treating hidden content as inaccessible to the DM or Co-DM; passing a proposal off as DM intent; tying categories to layouts.
 
 ## Beat model
 
@@ -137,6 +145,14 @@ The highest-stakes confrontation made inevitable by the preceding play.
 **Resolution**:
 The aftermath that shows what changed, closes the current pressure, and establishes what comes next.
 
+**Table-ready**:
+A beat the DM can run cold from its page — every moment the players could act has its world response, roll, and changed state written down, with no name, number, motive, or consequence left to invent at the table.
+_Avoid_: complete-looking; filled template
+
+**Escalation tier**:
+A Cliffhanger's or Climax's place on the session's opposition ladder — Grunts, Minions, Henchmen, Villain (monsters: Scare, Fright, Horror, Terror) — rising across the night.
+_Avoid_: difficulty setting; random encounter strength
+
 ## Infrastructure language
 
 **Wiki**:
@@ -146,6 +162,68 @@ _Avoid_: knowledge bank; the bank; unaudited chat memory; a second store beside 
 **Search index**:
 A derived retrieval layer over the wiki (commonly QMD). The wiki remains the source of truth.
 _Avoid_: treating the index as a second canon store
+
+## Agent execution language
+
+**Capability**:
+An existing skill or deterministic wiki operation that owns a bounded kind of work.
+_Avoid_: node; generic worker; interchangeable tool
+
+**Owner capability**:
+The capability with authority over a specific artifact or operation and its completion criteria.
+_Avoid_: generic author; fallback owner; shared ownership
+
+**Capability handoff**:
+The transfer of bounded work when ownership changes, after which control returns to the parent operation.
+_Avoid_: handoff; task drift; permanent delegation
+
+**Parent operation**:
+The capability that retains the user's original objective while owner capabilities complete dependencies.
+_Avoid_: orchestrator; supervisor skill; workflow engine
+
+**Capability dependency**:
+An artifact or state that must be valid before dependent work can proceed.
+_Avoid_: procedural step; speculative prerequisite
+
+**Completion guard**:
+An observable condition that closes a capability branch or permits dependent work to begin.
+_Avoid_: prose exists; agent says done; implicit completion
+
+**Context projection**:
+The minimum sufficient canon and operational evidence retrieved for one capability's current work.
+_Avoid_: inherited full context; whole-vault loading; incidental context
+
+**Observation surface**:
+Compact query, lint, or health evidence that identifies relevant knowledge, invalid output, or the next attention target.
+_Avoid_: planner; workflow ledger; second source of truth
+
+**Output contract**:
+The combined owner conventions, template, and validation rules that define a valid artifact.
+_Avoid_: prose-only completion; optional shape
+
+**Knowledge graph**:
+Campaign pages and their semantic relationships.
+_Avoid_: execution graph; workflow state
+
+**Execution graph**:
+The ephemeral capability routes, dependencies, completion guards, observations, and capability handoffs for the current request.
+_Avoid_: knowledge graph; persistent workflow ledger; graph runtime
+
+**Capability iteration**:
+One owner-relative `observe → act → re-observe` cycle over a bounded boundary.
+It continues only on meaningful progress or a passed completion guard; an
+unchanged observation requires a materially different sanctioned path or a
+specific blocker.
+
+**Progress evidence**:
+An owner-relative change in required artifact or operation state, relevant
+evidence, unresolved dependencies, validation or next target, diagnostic
+specificity, or documented fallback availability.
+
+**Specific blocker**:
+Terminal evidence naming the owner, boundary, surviving observation, attempted
+paths, reason no sanctioned path remains, and the effect on the parent
+objective. It is not a runtime-limit outcome or persistent ledger.
 
 ## Presentation language
 
@@ -168,8 +246,8 @@ The current Co-DM project containing reusable prep-and-wrapup practice and the c
 _Avoid_: a separate campaign store; a candidate canon; a third full copy of the campaign
 
 **Canon proposal**:
-A suggested change to wiki facts. The Co-DM never silently edits canon. Fun may shape Work; facts change only when the DM accepts.
-_Avoid_: fun-as-silent-override; inventing lore or mechanics into the wiki as silent canon
+A suggested change or addition to wiki facts. Prep fills canon silence (including facts canon records as unknown), and resolves canon contradictions, with canon proposals (a motive, a name, a statblock, the opposition's next move), each marked and listed for the DM. The Co-DM never silently edits canon. Fun may shape Work; facts change only when the DM accepts.
+_Avoid_: fun-as-silent-override; filing a proposal as silent canon; leaving a silence open where the DM needs an answer
 
 **Redesign**:
 A clean rebuild around best practice. It is not a patch list of current-vault failures.

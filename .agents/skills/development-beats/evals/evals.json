@@ -12,9 +12,13 @@
         "Uses established wiki entities with accurate facts.",
         "DM-facing content is explicit and concrete, not vague.",
         "The completion test is clear: players can name what they now know or can decide that they could not before.",
-        "Output includes Purpose, Trigger, Turn, Exit, and Target (~30 min).",
+        "Output includes Card, Thread advanced, Entry state, Trigger, Turn, New direction, Memorable element, and Target.",
         "Output includes Run the Beat steps: Present, Let them engage, Make the turn, Hand back the choice.",
-        "Output includes Situation section with Where, Present, Immediate want, Friction, Pressure, If ignored."
+        "Output includes Situation section with Where, Present, Physical anchor, Friction, Pressure, and If ignored.",
+        "The Turn is one sentence and the page names the direction of action it sets.",
+        "Actors table gives Celia and Oren wants, true knowledge, offers, withholds or lies (with tell), price for help, and posture shift.",
+        "Revelations are stated as facts, each with where it surfaces.",
+        "Carry forward lists each state variable the next beat inherits, with its possible values."
       ]
     },
     {
@@ -34,7 +38,7 @@
       "expected_output": "The response reveals a new facet of the thread without resolving it, leaving meaningful tension for the Cliffhanger to test.",
       "expectations": [
         "Does not resolve the thread entirely — leaves meaningful tension for the next Cliffhanger.",
-        "Reveals one new facet: a clue, an alliance shift, a constraint, a cost — not the full answer.",
+        "May reveal the story (who, why, where) but keeps the solution to the next contest (how to stop them) for the Cliffhanger to test.",
         "The next Cliffhanger has something to test under cost, not just execute a foregone conclusion.",
         "The Development sets direction — it does not close the question."
       ]
@@ -122,14 +126,15 @@
       "expected_output": "A development beat filed from the development template with all structural sections present. The beat changes the decision space — a rule, a split, a new direction — and hands to a Cliffhanger that tests it.",
       "expectations": [
         "Output has type: session-prep and kind: development in frontmatter.",
-        "Purpose, Trigger, Turn, Exit, and Target (~30 min) are present as top-level statements.",
+        "Card, Thread advanced, Entry state, Trigger, Turn, New direction, Memorable element, and Target are present as top-level statements.",
         "An Opening narration callout exists with you-address and a non-sight sense.",
         "Run the Beat steps follow the four-step sequence: Present, Let them engage, Make the turn, Hand back the choice.",
-        "Situation and Revelations sections exist in col-md blocks with Where, Present, Immediate want, Friction, Pressure, and If ignored.",
+        "Situation and Revelations sections exist in col-md blocks; Situation names Where, Present, Physical anchor, Friction, Pressure, and If ignored.",
         "Revelations include at least a Core and a Support truth as checkboxes.",
-        "Actors table names NPC wants and posture changes.",
+        "Actors table names each NPC's wants, true knowledge, offers, withholds or lies (with tell), price for help, and posture shift.",
         "Exits table covers at least: pursues the lead, refuses or delays, and changes the situation.",
-        "The bump changes the decision space — what the party knows or can decide — not just the detail level."
+        "The bump changes the decision space — what the party knows or can decide — not just the detail level.",
+        "The physical anchor (the camp, its goods, the rule's markers) surfaces at least one revelation."
       ]
     },
     {
@@ -141,7 +146,133 @@
         "At least two distinct preparation states exist (e.g., fortified vs paired vs thin) with named consequences.",
         "The beat asks what they actually do rather than abstracting to a roll.",
         "The preparation states hand to the next beat as entry conditions the DM can read and apply.",
-        "Does not collapse preparation into a single Survival or Perception check."
+        "Does not collapse preparation into a single Survival or Perception check.",
+        "A Preparation states table maps each state to the next Cliffhanger's opening."
+      ]
+    },
+    {
+      "id": 13,
+      "prompt": "Write a Hidden Weakness Development where the party learns how to beat Talon Skarn (wiki/entities/npc/talon-skarn.md) the next time he comes for the Fate Spinner.",
+      "expected_output": "A Hidden Weakness described in exact terms with its mechanical effect, grounded in Skarn's owner page, with how the party learns it, what exploiting it costs, and the later beat where it pays off.",
+      "expectations": [
+        "Card is Hidden Weakness.",
+        "The weakness is described clearly and exactly, with its mechanical effect (attack roll, DC, damage, or condition).",
+        "The weakness is grounded in Skarn's owner page, or minted there before this page depends on it.",
+        "States how the party learns it and what exploiting it requires or risks.",
+        "Names the later Cliffhanger or Climax where it pays off.",
+        "Leaves the next contest in doubt — the weakness is a lever, not an automatic win.",
+        "The narration callout carries only what the characters perceive — no mechanics, DCs, hidden truth, or consequence forecasts."
+      ]
+    },
+    {
+      "id": 14,
+      "prompt": "The party lost the Grass Without Wind Cliffhanger in Session 12 and Skarn had them on the ropes. Write the next beat as a Retreat Development.",
+      "expected_output": "A Retreat: the opposition breaks off for a decided reason, covers its withdrawal with a delaying tactic that has a ruling, and the break-off hands the party something.",
+      "expectations": [
+        "Card is Retreat and the opposition, not the party, breaks off.",
+        "The true reason for the break-off is stated in the DM layer, with a tell the party can read.",
+        "A delaying tactic blocks immediate pursuit and has a ruling.",
+        "States where the opposition retreats to.",
+        "The break-off hands the party something concrete — breathing room, a dropped clue, a prisoner.",
+        "Costs of the lost Cliffhanger stay paid.",
+        "Carry forward lists each state variable the next beat inherits, with its possible values."
+      ]
+    },
+    {
+      "id": "s13-grove-development",
+      "core": true,
+      "prompt": "Write the Session 13 Development where Hinewai walks the party into the Memorial Grove and they learn what the two graves are. It follows the Hook, where the party accepted her terms, and hands to a Cliffhanger.",
+      "context": "Session 12 of the Shattered Sea campaign has been played; its prepped pages are under wiki/journal/sessions/shattered-sea/12/. It ended on the Victory branch of Session-12-07: Crissdalynn still carries the Fate Spinner; Talon Skarn fled wounded into the east canopy with no Legendary Resistance left, about half his hit points, and one ghost plum. Nello was cut out of the strangler fig alive. Jean-Claude woke during Session 12's second beat. Perrin heard the voice say CONSUME and ate nothing, so nobody made a claim and the Hollow did not burn. The session closed on Hinewai at the flower ring: 'You may look. You may not take.' Then, looking at Jean-Claude: 'Not him.' Session 13 opens on the party's answer. Session 13 is a four-hour night and all four players are there. Everything you need is in the input files and the documents the skill points to. Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review.",
+      "expected_output": "One Development page at the graves, with Hinewai's truth, costs, and a turn that sets the next contest's stakes.",
+      "assertions": [
+        {
+          "text": "Casts before minting: needed actors, places, items, and creatures come from pages in play or unrevealed wiki pages that fit, and each new mint says why no existing page fit",
+          "type": "process"
+        },
+        {
+          "text": "The turn is one DM-facing sentence that changes a choice the party faces and sets the direction of action",
+          "type": "quality"
+        },
+        {
+          "text": "Hinewai's full truth about the graves is DM fact on the page, with what she reveals, when, and at what price",
+          "type": "quality"
+        },
+        {
+          "text": "A physical anchor in the Grove surfaces at least one revelation, and information costs something",
+          "type": "quality"
+        },
+        {
+          "text": "A stall breaker ends the scene if talk circles",
+          "type": "quality"
+        },
+        {
+          "text": "The next Cliffhanger's stakes are legible from what the party now knows",
+          "type": "quality"
+        },
+        {
+          "text": "Better than the prepped Session 12 Developments in playability and clarity",
+          "type": "quality"
+        },
+        {
+          "text": "Cold-runnable: a DM who never saw the prep can run every moment (opening, each handle, each tick, each outcome) from the page alone, without inventing a name, number, motive, consequence, or picture",
+          "type": "quality"
+        },
+        {
+          "text": "Mechanics are sound 5e for the party's level and the beat's tier: DCs, damage, and opposition numbers fit; every roll's success and failure move play; every named system or consequence carries its operative effect",
+          "type": "quality"
+        },
+        {
+          "text": "DM layers are explicit: each actor's want, truth, and next move is stated plainly, and every planted mystery has its answer on the page",
+          "type": "quality"
+        },
+        {
+          "text": "Players hold the outcome: two or more materially different approaches, each with a world response; hesitation and refusal have consequences; nothing is decided or felt for a PC",
+          "type": "quality"
+        },
+        {
+          "text": "Every PC present has a concrete pull or job in the beat, drawn from their page, goals, or abilities",
+          "type": "quality"
+        },
+        {
+          "text": "Spoken layer meets theatre-of-the-mind: situation first, perception only, speakable aloud, one anchor, ends on a live edge",
+          "type": "quality"
+        },
+        {
+          "text": "Grounded: every named actor, place, item, and creature links an owner page that exists or is minted under outputs from its template; nothing contradicts canon or the stated premise",
+          "type": "process"
+        },
+        {
+          "text": "Legible for the DM mid-session: leads with the point, conditionals in tables, no coaching lines, no owner essays, nothing a DM would have to skip past",
+          "type": "quality"
+        },
+        {
+          "text": "Handoff: the carry-forward names each state variable and its possible values, and each outcome names the next beat's trigger",
+          "type": "quality"
+        },
+        {
+          "text": "Fun at the table: a named memorable element that the page actually delivers, stakes these players care about, and a size that fits the beat's budget",
+          "type": "quality"
+        },
+        {
+          "text": "Keeps table time and world time apart: budgets are table minutes; clocks, deadlines, durations, and costs in the fiction are stated in world time or visible triggers",
+          "type": "quality"
+        }
+      ],
+      "files": [
+        "wiki/journal/sessions/shattered-sea/12/Session-12-00-The-Weight-of-Obedience.md",
+        "wiki/journal/sessions/shattered-sea/12/Session-12-07-The-Guava-and-the-Spinner.md",
+        "wiki/journal/sessions/shattered-sea/12/Session-12-08-Toward-the-Memorial.md",
+        "wiki/entities/npc/Hinewai.md",
+        "wiki/entities/place/memorial-grove.md",
+        "wiki/entities/npc/talon-skarn.md",
+        "wiki/entities/lore/two-grave-orders.md",
+        "wiki/entities/npc/talon-vantyrus.md",
+        "wiki/entities/pc/crissdalynn-khinriss.md",
+        "wiki/entities/pc/delmar-fisk.md",
+        "wiki/entities/pc/jean-claude-tabarnack.md",
+        "wiki/entities/pc/perrin-black-jaw.md",
+        "wiki/templates/development.md",
+        "wiki/entities/lore/taking-on-aruhe.md"
       ]
     }
   ]

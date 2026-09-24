@@ -29,3 +29,16 @@ policies:
       - docs/agents/work.md
       - .agents/skills/wiki-ingest/SKILL.md
     reference: "User-said canon files on the live wiki path without a chat accept gate."
+  capability_boundary:
+    owner: docs/agents/hybrid-sdd.md
+    consumers:
+      - AGENTS.md
+      - wiki/AGENTS.md
+    reference: "Own bounded Input, Work, Done, and Capability Handoff; preserve local craft and completion evidence."
+  read_write_isolation:
+    owner: AGENTS.md
+    consumers:
+      - wiki/AGENTS.md
+      - .agents/skills/wiki-query/SKILL.md
+      - .agents/skills/wiki-context-pack/SKILL.md
+    reference: "Read capabilities return cited evidence without mutating canonical wiki state; write intent routes to a write owner."

@@ -11,6 +11,45 @@ description: >-
 
 File what constitution X makes canon. Follow `docs/agents/work.md`.
 
+## Boundary
+
+### Input
+
+Accept a whole-vault or page/prefix scope plus the user's repair or report
+intent. Resolve the existing CLI scope and owner contract before editing; do
+not narrow a complete lint result to only hard findings. Preserve the resolved
+scope through every observation, repair, and rerun.
+
+### Work
+
+Run `wiki lint` for the selected scope and expose every configured finding.
+Run the existing registered deterministic fixer through the current CLI
+contract once for that same resolved scope, then repair remaining semantic
+findings through the named artifact owner. Keep one active writer per page,
+and rerun the affected scope after each owner return.
+
+### Done
+
+Close only when the affected scope is clean on a fresh lint. If a finding
+cannot close, report a specific blocker with its path, rule, evidence, and
+owner; prose completion or a structural-only edit is not success. Preserve the
+existing full-finding and fixer CLI contracts.
+
+### Capability Handoff
+
+Semantic page findings → existing owner skill (`faction-design`,
+`place-design`, `npc-design`, etc.) with page, linked canon, template, and
+lint evidence. Rerun lint on the affected scope after each owner return.
+`wiki-dedup`, `cross-linker`, `tag-taxonomy` only for their named findings.
+
+### Output-contract synchronization
+
+Treat the lint profile, `wiki/templates/`, the applicable template contract, and the named owner skill as one D&D output contract. Before repairing pages, compare their required headings, frontmatter, callouts, layout markers, and content jobs. If those source artifacts disagree, record the mismatch in `errors.md` and reconcile the authoritative sources before mass page repair; never make pages conform to contradictory rules. Pages that fail an agreed contract are the intended lint work, not evidence that the contract is broken.
+
+The synchronized target is DM utility, complete-sentence readability, playable choices, and player fun without inventing canon. After any contract or owner-skill change, lint a representative page and the resolved scope, then reindex QMD before continuing. A clean structural result is necessary but not sufficient when the repair leaves an empty or unusable D&D job.
+
+
+
 ## Method
 
 Three phases: **sweep**, **reindex**, **repair**.

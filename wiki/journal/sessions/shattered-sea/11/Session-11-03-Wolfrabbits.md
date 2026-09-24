@@ -147,12 +147,12 @@ The northbound prints are the route through the crossing. They curve around the 
 
 | Place | Distance from the party | Cover | Narration |
 | --- | --- | --- | --- |
-| [[torn-crossing\|This crossing]] | Here, facing north. | Eight-foot grass hides a standing body, is Difficult Terrain, and heavily obscures beyond 10 feet. The muddy corridor is the pack's escape lane. | ==_Mud holds the fresh prints, and crushed stems show where the first runner crossed._== |
-| River lip | 20 feet west, or 30 feet south. | Deep water breaks pursuit. Glossy red berries hang from short stems at the west wet margin. | ==_The current pulls hard below the pale stone lip, and red berries shine above the wet bank._== |
-| Upriver prints | 10 feet north beyond the first crossing, then off this stretch. | The trail bends around the white stands and the Spiguar's grass. | ==_The prints keep to mud, turning around each white stand before they climb north._== |
-| [[razer-grass]] stands | Nearest stand 15 feet west in the scour; two more 25 feet east in the grass. | The pack jumps them, and the [[spiguar]] will not willingly rush them. A knockdown can send someone into a stand. | ==_Red smears mark the lower stalks, and the white blades tick like glass._== |
-| [[spiguar]]'s grass | 20 feet east of the corridor. | While motionless in tall grass, the Spiguar is harder to spot from more than 10 feet away. | ==_The spotted cat's eyes follow the corridor beneath the reeds while its body stays low over the kill._== |
-| Bank-woods | 40 feet east. | The pack breaks contact among the first trunks. The Spiguar drags a kill there to feed. | ==_The gold grass ends at the first dark trunks, where the ground disappears under shade._== |
+| [[torn-crossing\|This crossing]] | Here, facing north. | Eight-foot grass hides a standing body, is Difficult Terrain, and heavily obscures beyond 10 feet. The muddy corridor is the pack's escape lane. | _Mud holds the fresh prints, and crushed stems show where the first runner crossed._ |
+| River lip | 20 feet west, or 30 feet south. | Deep water breaks pursuit. Glossy red berries hang from short stems at the west wet margin. | _The current pulls hard below the pale stone lip, and red berries shine above the wet bank._ |
+| Upriver prints | 10 feet north beyond the first crossing, then off this stretch. | The trail bends around the white stands and the Spiguar's grass. | _The prints keep to mud, turning around each white stand before they climb north._ |
+| [[razer-grass]] stands | Nearest stand 15 feet west in the scour; two more 25 feet east in the grass. | The pack jumps them, and the [[spiguar]] will not willingly rush them. A knockdown can send someone into a stand. | _Red smears mark the lower stalks, and the white blades tick like glass._ |
+| [[spiguar]]'s grass | 20 feet east of the corridor. | While motionless in tall grass, the Spiguar is harder to spot from more than 10 feet away. | _The spotted cat's eyes follow the corridor beneath the reeds while its body stays low over the kill._ |
+| Bank-woods | 40 feet east. | The pack breaks contact among the first trunks. The Spiguar drags a kill there to feed. | _The gold grass ends at the first dark trunks, where the ground disappears under shade._ |
 
 ## Be ready for
 
@@ -179,10 +179,10 @@ flexGrow=3
 
 | Tick | What happens | Narration |
 | --- | --- | --- |
-| 1 | Each remaining [[Wolfrabbit]] uses Pouncing Bound against an isolated, bleeding, **Prone**, or grass-bound character. The [[spiguar]] stays on its kill unless a character is easier prey. | ==_A striped hunter lowers its shoulders and springs at the body caught in the grass._== |
-| 2 | A [[Wolfrabbit]] Bites a **Prone** character for `14` piercing, adding Pack Rend for `5 (1d10)` when another wolfrabbit is within 5 feet. The Spiguar Pounces or uses Saber Bite on a **Prone**, isolated, bleeding, or attacking character; otherwise it drags its kill toward the bank-woods. | ==_Teeth close on the nearest body already down. In the east grass, the spotted cat turns from its kill toward an exposed target or hauls the striped body toward the trees._== |
-| 3 | A knockdown can send a **Prone** character into the current or a [[razer-grass]] stand. Resolve the stand's damage and saves. If the Spiguar has a **Grappled** character, it drags that character up to 30 feet toward the bank-woods. | ==_Mud gives way toward the current or a white stand as the spotted cat hauls its captive through the grass._== |
-| 4 | If the party lingered, claimed living fruit, burned grass, or struck the [[spiguar]], an extra unnamed [[Wolfrabbit]] enters from the grass. Otherwise, the Spiguar finishes dragging its kill into cover and the pack breaks off unless a magnet remains. | ==_Another striped hunter pushes through the tall grass. If no new body draws the hunt, the spotted cat drags its kill beneath the reeds and the crossing starts to clear._== |
+| 1 | Each remaining [[Wolfrabbit]] uses Pouncing Bound against an isolated, bleeding, **Prone**, or grass-bound character. The [[spiguar]] stays on its kill unless a character is easier prey. | _A striped hunter lowers its shoulders and springs at the body caught in the grass._ |
+| 2 | A [[Wolfrabbit]] Bites a **Prone** character for `14` piercing, adding Pack Rend for `5 (1d10)` when another wolfrabbit is within 5 feet. The Spiguar Pounces or uses Saber Bite on a **Prone**, isolated, bleeding, or attacking character; otherwise it drags its kill toward the bank-woods. | _Teeth close on the nearest body already down. In the east grass, the spotted cat turns from its kill toward an exposed target or hauls the striped body toward the trees._ |
+| 3 | A knockdown can send a **Prone** character into the current or a [[razer-grass]] stand. Resolve the stand's damage and saves. If the Spiguar has a **Grappled** character, it drags that character up to 30 feet toward the bank-woods. | _Mud gives way toward the current or a white stand as the spotted cat hauls its captive through the grass._ |
+| 4 | If the party lingered, claimed living fruit, burned grass, or struck the [[spiguar]], an extra unnamed [[Wolfrabbit]] enters from the grass. Otherwise, the Spiguar finishes dragging its kill into cover and the pack breaks off unless a magnet remains. | _Another striped hunter pushes through the tall grass. If no new body draws the hunt, the spotted cat drags its kill beneath the reeds and the crossing starts to clear._ |
 ```
 
 ```col-md
@@ -207,9 +207,9 @@ The default escape ends when the [[spiguar]] drags its kill into the bank-woods 
 
 | If | Next | Narration |
 | --- | --- | --- |
-| Hunt clears | The party keeps the upriver prints toward [[line-bank]]. The [[spiguar]] kept its wolfrabbit. Hand to [[Session-11-04-What-They-Ate]]. | ==_The cat vanishes under the first trunks, and the runners leave the crossing. The prints lead north through the gap toward the smoke._== |
-| Costly escape | The party keeps the upriver prints with **Prone**, **Grappled**, or a [[taking-on-aruhe]] claim already applied. Hand to [[Session-11-04-What-They-Ate]]. | ==_The crossing clears around bloodied mud and torn grass. The northbound prints remain, but someone is down, held, or carrying a living stem._== |
-| Combat or redirection | Resolve the committed combat or environmental change first. Hand to [[Session-11-04-What-They-Ate]] only if the party still follows the prints; otherwise rebuild from the changed route and resources. | ==_Fur, blood, and broken white blades mark where the hunt changed. The northbound prints remain beyond the disturbed ground._== |
+| Hunt clears | The party keeps the upriver prints toward [[line-bank]]. The [[spiguar]] kept its wolfrabbit. Hand to [[Session-11-04-What-They-Ate]]. | _The cat vanishes under the first trunks, and the runners leave the crossing. The prints lead north through the gap toward the smoke._ |
+| Costly escape | The party keeps the upriver prints with **Prone**, **Grappled**, or a [[taking-on-aruhe]] claim already applied. Hand to [[Session-11-04-What-They-Ate]]. | _The crossing clears around bloodied mud and torn grass. The northbound prints remain, but someone is down, held, or carrying a living stem._ |
+| Combat or redirection | Resolve the committed combat or environmental change first. Hand to [[Session-11-04-What-They-Ate]] only if the party still follows the prints; otherwise rebuild from the changed route and resources. | _Fur, blood, and broken white blades mark where the hunt changed. The northbound prints remain beyond the disturbed ground._ |
 
 ## Roster
 

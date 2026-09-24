@@ -16,6 +16,20 @@ You are importing a vault's knowledge into the current vault from one of two sou
 - **OKF bundle** (a `wiki-export/okf/` directory) — the actual markdown files. Reconstructs **full pages** with their real bodies. Lossless. Use this for true vault-to-vault transfer.
 
 Either way, the import writes pages with correct frontmatter and wikilinks, then updates all vault metadata. **Step 2, Step 3 (graph only), and Step 5 are shared; Step 4 forks by source type.**
+## Boundary Contract
+
+### Input
+Accept a source path (graph JSON or OKF bundle), a resolved target vault, and an optional conflict mode: `merge` by default, or explicit `skip`/`overwrite`. Validate and preview the source before any write.
+
+### Work (owner: wiki-import)
+Own source detection, graph-versus-OKF reconstruction, conflict handling, page creation, and vault metadata updates. Preserve lossy graph stubs versus lossless OKF bodies, source-specific link transforms, permissive unparseable-file handling, and the existing preview/merge safeguards.
+
+### Done
+Return the existing import summary with source type, counts, replacements or skips, and OKF unparseable count when applicable. Update `.manifest.json`, `index.md`, `log.md`, and `hot.md`; report the exact QMD result and the created/merged paths.
+
+### Capability Handoff
+After import, hand created/merged paths and any dangling exported edges to `cross-linker`; its bounded return is a link report and remaining-orphan list, not source reconstruction.
+
 
 ## Before You Start
 

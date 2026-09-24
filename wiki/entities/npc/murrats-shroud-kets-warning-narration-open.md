@@ -70,3 +70,7 @@ flexGrow=1
 Stop at the warning's open word and let play determine what the party hears or does next. The source does not establish the rest of the speech.
 ```
 ````
+### Voice
+
+This is a narration handle, not a separate speaker. Ket's voice is identified only as a thin shout over the wind; stop before supplying words that the source leaves open.
+

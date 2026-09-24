@@ -30,26 +30,26 @@ region: "Northern Midchain"
 
 
 ## At a Glance
-A half-mile cut-over islet at the southern lip of the Northern Midchain strip; feels timber-poor, fortified, and close to the Teeth.
 
-## Aspects
-`cut-over land, harbour slope, fortress-market`
+Sparhold Isle is a half-mile cut-over islet at the southern lip of the Northern Midchain strip. It sits between the harbour, the fortress-market, and Teethward water; the islet can orient travelers toward [[Sparhold]] without being mistaken for the settlement itself.
 
-## Senses
-- Bare cut-over slopes, harbour, walls, and Teethward water.
-- Timber work, market calls, and crews cutting fringe wood.
-- Wet wood, pitch, salt, and smoke.
+## Who
 
-## Who is here
-- Sparhold crews and market workers.
-- Pilots, traders, and the Grung trail's watchers.
+Sparhold crews and market workers operate the harbour and fortress-market. Pilots and traders use the islet, while watchers follow the Grung trail at the Teeth fringe. No other occupants are established.
 
-## Connections
-- → [[Sparhold]] · [[Murrat]] · [[verdant-teeth]] · [[aruhe]]
+## What
 
-## Hooks
-- Use the islet to orient to the fortress-market without confusing landform and settlement.
-- Follow a timber crew toward the Teeth fringe.
+The islet has bare cut-over slopes, a harbour, fortress walls, timber work, and a market. Wet wood, pitch, salt, and smoke mark the place. The local spar stand fell when the fortress walls went up.
 
-## Secrets
-The local spar stand fell when the fortress walls went up; the market's exact founding and ownership are not fixed.
+## Where
+
+* **North:** [[Sparhold]], with the settlement distinct from the half-mile landform; distance is not recorded.
+* **East:** [[verdant-teeth]], toward the Teeth fringe; distance is not recorded.
+* **South:** [[aruhe]]; distance and direct route are not recorded.
+* **West:** [[Murrat]]; distance and direct route are not recorded.
+
+The islet is a southern-lip approach to the Northern Midchain strip. Its market's exact founding and ownership are not fixed.
+
+## Why
+
+The party comes here to orient to the fortress-market, use the harbour, follow timber crews toward the Teeth fringe, or distinguish the landform from [[Sparhold]]. The place matters because cut-over land, harbour traffic, and Teethward routes meet here without a settled account of who founded or owns the market.

@@ -1,5 +1,7 @@
 ---
 title: "Players"
+aliases:
+  - Players
 category: synthesis
 tags: ["shattered-sea", "lore"]
 sources:
@@ -9,14 +11,19 @@ sources:
   - "campaign-os:courtney.md"
   - "campaign-os:chad.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-20
 type: lore
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "Table player roster for the Shattered Sea."
+kind: fact
+truth: established
+scope: "The Shattered Sea campaign table"
+region: "Shattered Sea"
+era: "current campaign"
+summary: "Current Shattered Sea table roster: four active player characters and Nick as DM."
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -26,76 +33,96 @@ tier: supporting
 ---
 # Players
 
-## Chad
+## At a Glance
 
-# Chad
+**Core truth.** The Shattered Sea table has four active player characters: Jean-Claude Tabarnack, Crissdalynn Khinriss, Delmar Fisk, and Perrin Black-Jaw. Nick is the DM and has no player character on this roster.
 
-Chad's campaign and character roster at the table, tracked across the Shattered Sea game.
+**Why it matters.** Session prep, party references, and safety boundaries use this roster.
 
-## Campaigns & Characters
+**Scope.** This page records the real-world table assignment, not an in-world fact known by the characters.
 
-| Campaign | Character | Status |
-|---|---|---|
-| [[shattered-sea]] | [[jean-claude-tabarnack]] | active |
+## Current Truth
 
-## Notes
+| Player | Campaign | Character | Status |
+| ------ | -------- | --------- | ------ |
+| Chad | [[shattered-sea]] | [[jean-claude-tabarnack]] | Active |
+| Courtney | [[shattered-sea]] | [[crissdalynn-khinriss]] | Active |
+| Frederick | [[shattered-sea]] | [[delmar-fisk]] | Active |
+| Kaden | [[shattered-sea]] | [[perrin-black-jaw]] | Active |
+| Nick | [[shattered-sea]] | — | DM |
 
-No additional notes.
+### Limits
 
-## Courtney
+* **Exception.** A player may change characters or leave the campaign; update this page when the table establishes that change.
+* **Unknown.** No additional campaign or character assignment is recorded here.
+* **Impossible or forbidden.** Do not treat this real-world roster as an in-world secret or reveal it through player-facing narration.
 
-# Courtney
+## At the Table
 
-## Campaigns & Characters
+* **Players notice.** Prep names the four active PCs directly: Jean-Claude, Crissdalynn, Delmar, and Perrin.
+* **This explains.** The party roster used by [[shattered-sea]] prep.
+* **This enables.** Session notes can assign a scene, consequence, or resource to the correct PC.
+* **This warns of.** Courtney has a hard line on self-harm content; use the campaign's Lines and Veils safety tool.
+* **Relevant now.** The roster is the current party identity for campaign work.
 
-| Campaign | Character | Status |
-|---|---|---|
-| [[shattered-sea]] | [[crissdalynn-khinriss]] | active |
+## Who Knows
 
-## Notes
+| Knower | Knowledge | Certainty | Basis |
+| ------ | --------- | --------- | ----- |
+| Nick | The full table roster and DM role. | Knows | Campaign table records. |
+| Chad | His assignment to Jean-Claude Tabarnack. | Knows | Player roster. |
+| Courtney | Her assignment to Crissdalynn Khinriss and her stated safety boundary. | Knows | Player roster and table boundary. |
+| Frederick | His assignment to Delmar Fisk. | Knows | Player roster. |
+| Kaden | His assignment to Perrin Black-Jaw. | Knows | Player roster. |
 
-Courtney has a hard line on self-harm content at this table — see Lines and Veils for the full campaign safety tool.
+### Party Knowledge
 
-## Frederick
+**Known.** The characters know their adventuring companions as characters in play.
 
-# Frederick
+**Suspected.** No in-world conclusion about the players is recorded.
 
-A real-world player's campaign/character roster.
+**Misunderstood.** The party should not be given this real-world roster as setting information.
 
-## Campaigns & Characters
+**Last changed.** No session link is recorded for the current roster.
 
-| Campaign | Character | Status |
-|---|---|---|
-| [[shattered-sea]] | [[delmar-fisk]] | active |
+## Accounts
 
-## Notes
+| Account | Held by | Relation to truth | Why they believe it |
+| ------- | -------- | ----------------- | ------------------- |
+| The party is four active adventurers. | The table | True for play | Current roster. |
 
-No additional notes.
+### Common telling
 
-## Kaden
+> Four characters are active in the Shattered Sea campaign, and Nick runs the table as DM.
 
-# Kaden
+## If This Is Changing
 
-## Campaigns & Characters
+* **Current pressure.** A player joins, leaves, or changes characters.
+* **Actors.** The affected player and Nick as DM.
+* **Their aims.** Keep the roster and session prep aligned with the table.
+* **Without interference.** Prep continues to use the last recorded assignment.
+* **Visible sign.** A new character name, player assignment, or status appears in campaign material.
 
-| Campaign | Character | Status |
-|---|---|---|
-| [[shattered-sea]] | [[perrin-black-jaw]] | active |
+## Consequences
 
-## Notes
+* **Because this is true,** the active party roster has four player characters.
+* **If exposed,** the page exposes table metadata rather than changing the setting.
+* **If disproved,** session prep must stop using the incorrect assignment.
+* **If changed,** [[shattered-sea]] prep would use the new roster.
+* **If exploited,** a DM can tailor prep to the correct players and safety boundary.
 
-No additional notes.
+## Connections
 
-## Nick
+| Page | Relationship | Table relevance |
+| ---- | ------------ | --------------- |
+| [[shattered-sea]] | Campaign containing this roster. | Supplies the current table context. |
+| [[jean-claude-tabarnack]] | Chad's active character. | Party roster and prep target. |
+| [[crissdalynn-khinriss]] | Courtney's active character. | Party roster and safety-aware prep. |
+| [[delmar-fisk]] | Frederick's active character. | Party roster and prep target. |
+| [[perrin-black-jaw]] | Kaden's active character. | Party roster and prep target. |
 
-# Nick
+## Open Canon
 
-## Campaigns & Characters
-
-| Campaign | Character | Status |
-|---|---|---|
-| [[shattered-sea]] | — | DM |
-
-## Notes
-
-DM — no PC on this roster.
+* [ ] **Unknown.** Whether any player or character assignment changes after the current roster.
+* [ ] **Contradiction.** None is recorded in the supplied roster sources.
+* [ ] **Decide when needed.** Update timing and session provenance when the next roster change is established.

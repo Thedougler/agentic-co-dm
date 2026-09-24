@@ -18,7 +18,7 @@ tier: supporting
 created: 2026-09-13T03:00:00Z
 updated: 2026-09-14T21:45:00Z
 type: region
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 kind: region

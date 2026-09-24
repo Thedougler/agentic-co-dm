@@ -122,13 +122,13 @@ Stop a peeling survivor before tick 3. If the party ignores that person, they ar
 
 | Place | Distance from the party | Cover | Narration |
 | --- | --- | --- | --- |
-| This fire / hub | Here, on the packed dirt around the stone ring. Matteo sits 5 feet from the coals if the party pulled him from the hole. | Grouped people here count as ready hostiles. Staying on this dirt does not isolate anyone. Fallen stonepears and two spears are in reach. | ==_If Matteo is here, smoke clings to his damp shirt beside the coals. The people who turned north have not crossed the edge of the firelight._== |
-| Garden listeners | 10 feet toward the north trail mouths, still on this hub. | They stand when the whisper comes. A body that steps off with them becomes isolated. | ==_The garden listeners rise and face north when the whisper comes. They have not crossed from the fire's packed dirt._== |
-| North trail / voice | 20 feet north of this hub, inside the wood. | The trail is Difficult Terrain and heavily obscured beyond 10 feet. A person who reaches it alone is isolated and gets the face. | ==_Wet leaves and hanging roots pinch the path. Branches catch at shoulder height, and the stretched garden words come from ahead._== |
-| Deeper wood | 50 feet north in the wood. | The [[Deer-Stalker]] pulls a loner this way, while a grouped answer drives it this way. A Dash does not reach [[star-cut]]. | ==_Beyond the first bend, trunks crowd the path and the firelight drops behind you. No packed prints continue there; the garden words call from farther in._== |
-| South trail / last grass | 20 feet south. | Leaving this way rebuilds the scene from the new route. A Dash does not reach the beach. | ==_Packed tracks run through the last trunks toward gold-green grass. Seed heads scrape together beyond the shade._== |
-| West trail / river | 30 feet west, down a root-cut. | A Dash can reach the river. This is not [[river-slack-basin]]. | ==_The path drops through hanging roots, and clear water runs below it, close enough to hear._== |
-| Hawk sky | Open valley air above this hub. | A flyer is exposed. A Dash does not reach the beach, [[star-cut]], or the terraces from here. | ==_Wind crosses the leaf roof above the fire. From the open sky, the fire is a small bright ring below, with no trees between it and the dark._== |
+| This fire / hub | Here, on the packed dirt around the stone ring. Matteo sits 5 feet from the coals if the party pulled him from the hole. | Grouped people here count as ready hostiles. Staying on this dirt does not isolate anyone. Fallen stonepears and two spears are in reach. | _If Matteo is here, smoke clings to his damp shirt beside the coals. The people who turned north have not crossed the edge of the firelight._ |
+| Garden listeners | 10 feet toward the north trail mouths, still on this hub. | They stand when the whisper comes. A body that steps off with them becomes isolated. | _The garden listeners rise and face north when the whisper comes. They have not crossed from the fire's packed dirt._ |
+| North trail / voice | 20 feet north of this hub, inside the wood. | The trail is Difficult Terrain and heavily obscured beyond 10 feet. A person who reaches it alone is isolated and gets the face. | _Wet leaves and hanging roots pinch the path. Branches catch at shoulder height, and the stretched garden words come from ahead._ |
+| Deeper wood | 50 feet north in the wood. | The [[Deer-Stalker]] pulls a loner this way, while a grouped answer drives it this way. A Dash does not reach [[star-cut]]. | _Beyond the first bend, trunks crowd the path and the firelight drops behind you. No packed prints continue there; the garden words call from farther in._ |
+| South trail / last grass | 20 feet south. | Leaving this way rebuilds the scene from the new route. A Dash does not reach the beach. | _Packed tracks run through the last trunks toward gold-green grass. Seed heads scrape together beyond the shade._ |
+| West trail / river | 30 feet west, down a root-cut. | A Dash can reach the river. This is not [[river-slack-basin]]. | _The path drops through hanging roots, and clear water runs below it, close enough to hear._ |
+| Hawk sky | Open valley air above this hub. | A flyer is exposed. A Dash does not reach the beach, [[star-cut]], or the terraces from here. | _Wind crosses the leaf roof above the fire. From the open sky, the fire is a small bright ring below, with no trees between it and the dark._ |
 
 ## Be ready for
 
@@ -154,10 +154,10 @@ flexGrow=3
 
 | Tick | What happens | Narration |
 | --- | --- | --- |
-| 1 | The garden listeners hear the whisper and some stand. No one has left the packed dirt. | ==_Some people at the fire rise and face north. The same garden words return from that trail, stretched thin._== |
-| 2 | One unnamed garden listener steps off the hub toward the north trail and is 10 feet from its mouth. That person is still on the packed dirt. | ==_One listener leaves the coals and crosses the packed dirt toward the north dark. The whisper repeats those garden words, and the fire falls behind them._== |
-| 3 | The garden listener walks the north trail alone and becomes isolated. If the isolated body is a party member, speak the face lines and let the [[Deer-Stalker]] attack: Claw `+8` to hit for `12` slashing, reach `10 feet`, optional **Grappled** escape `DC 16`, Multiattack two Claws, This Meal extra `7` (`2d6`) while fewer than two other conscious creatures are within 10 feet. If it is a garden listener and two ready hostiles are not within 30 feet, that person is lost into Quiet. The walk does not begin with Snatch from the Dim. | ==_The listener's back vanishes between the big roots. The stretched garden words come from farther in._== |
-| 4 | The [[Deer-Stalker]] has its quarry or has broken contact. The voices die, and shouting, running, or kicked coals may leave the fire disorderly. Hand to [[Session-11-08-Night-Watch]] only after this scene resolves. | ==_The north trail goes quiet. Smoke presses beneath the leaf roof, mats lie kicked aside, and the people by the fire watch the dark._== |
+| 1 | The garden listeners hear the whisper and some stand. No one has left the packed dirt. | _Some people at the fire rise and face north. The same garden words return from that trail, stretched thin._ |
+| 2 | One unnamed garden listener steps off the hub toward the north trail and is 10 feet from its mouth. That person is still on the packed dirt. | _One listener leaves the coals and crosses the packed dirt toward the north dark. The whisper repeats those garden words, and the fire falls behind them._ |
+| 3 | The garden listener walks the north trail alone and becomes isolated. If the isolated body is a party member, speak the face lines and let the [[Deer-Stalker]] attack: Claw `+8` to hit for `12` slashing, reach `10 feet`, optional **Grappled** escape `DC 16`, Multiattack two Claws, This Meal extra `7` (`2d6`) while fewer than two other conscious creatures are within 10 feet. If it is a garden listener and two ready hostiles are not within 30 feet, that person is lost into Quiet. The walk does not begin with Snatch from the Dim. | _The listener's back vanishes between the big roots. The stretched garden words come from farther in._ |
+| 4 | The [[Deer-Stalker]] has its quarry or has broken contact. The voices die, and shouting, running, or kicked coals may leave the fire disorderly. Hand to [[Session-11-08-Night-Watch]] only after this scene resolves. | _The north trail goes quiet. Smoke presses beneath the leaf roof, mats lie kicked aside, and the people by the fire watch the dark._ |
 ```
 
 ```col-md
@@ -182,8 +182,8 @@ If the party broke from the hub, rebuild from the new route toward the last gras
 >
 | If | Next | Narration |
 | --- | --- | --- |
-| Stay grouped at this fire, or the voices die after a grouped answer | They are still on [[spoke-ring]], with the mark still live. Hand to [[Session-11-08-Night-Watch]]. | ==_You are on packed dirt around the stone ring. The people who stood have returned to the coals._== |
-| One person walked the north trail, or a peeler was lost | The fire is thinner or disorderly. Anyone missing, marked, or back at the coals is still in this valley. Hand to [[Session-11-08-Night-Watch]]. | ==_Mats lie kicked aside, and the people by the coals watch the dark trail instead of the fire._== |
+| Stay grouped at this fire, or the voices die after a grouped answer | They are still on [[spoke-ring]], with the mark still live. Hand to [[Session-11-08-Night-Watch]]. | _You are on packed dirt around the stone ring. The people who stood have returned to the coals._ |
+| One person walked the north trail, or a peeler was lost | The fire is thinner or disorderly. Anyone missing, marked, or back at the coals is still in this valley. Hand to [[Session-11-08-Night-Watch]]. | _Mats lie kicked aside, and the people by the coals watch the dark trail instead of the fire._ |
 
 ## Roster
 
