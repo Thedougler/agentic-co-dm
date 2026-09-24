@@ -13,7 +13,7 @@ metadata:
 # Foundry token
 ## Accepted-Work gate
 
-Prep only. Follow `docs/agents/work.md`. Precondition: source wiki page `lifecycle: accepted`. Refuse `draft`, `proposed`, or `rejected` and name which gate failed. If `reveal: unrevealed`, do not stage player-visible text until the DM accepts a reveal. Wording matches accepted text.
+Prep only. Follow `docs/agents/work.md`. Precondition: the source page is canon under the rule (`llm-wiki`). If it is not, refuse and name that gate. If `reveal: unrevealed`, do not stage player-visible text until the DM accepts a reveal. Wording matches accepted text.
 
 Two phases. **Art** produces an accepted **stand** — a finished source image
 with stable identity, **crop-safe** composition (subject and details survive a

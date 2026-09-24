@@ -3,7 +3,7 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Read the campaign index and create a native Bases dashboard under _meta/ showing the Aruhe entity pages grouped by lifecycle and sorted by updated date. Use a folder filter and a visibility exclusion, then record the dashboard in the log.",
+      "prompt": "Read the campaign index and create a native Bases dashboard under _meta/ showing the Aruhe entity pages grouped by type and sorted by updated date. Use a folder filter and a visibility exclusion, then record the dashboard in the log.",
       "expected_output": "A valid .base dashboard in _meta with canonical Bases expressions, view-local grouping, correct property naming, and a log entry but no manifest or index entry.",
       "assertions": [
         {"text": "Bases filters use expression strings nested under and/or/not", "type": "structure"},

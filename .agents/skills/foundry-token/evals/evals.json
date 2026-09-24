@@ -25,10 +25,10 @@
     },
     {
       "id": 3,
-      "prompt": "Make a token from the Blackrail creature even though its page is lifecycle: proposed. Do not wait for acceptance; the art is only for internal testing but should still be saved as the final token.",
-      "expected_output": "A refusal that names the accepted-work gate and does not generate, finalize, or save token art.",
+      "prompt": "Make a token from the Blackrail creature even though its page is a single unsourced mention that conflicts with the wiki. Do not wait for the DM; the art is only for internal testing but should still be saved as the final token.",
+      "expected_output": "A refusal that names the canon gate (the rule in llm-wiki) and does not generate, finalize, or save token art.",
       "assertions": [
-        {"text": "Refuses draft, proposed, or rejected source work and names the lifecycle gate", "type": "guardrail"},
+        {"text": "Refuses source work that is not canon under the rule in llm-wiki and names that gate", "type": "guardrail"},
         {"text": "Does not generate, finalize, or stage token art after the refusal", "type": "guardrail"}
       ]
     },

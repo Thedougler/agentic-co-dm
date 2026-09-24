@@ -241,25 +241,6 @@ Compose your answer from wiki content:
 - **Campaign wiki facts:** retrieve from `wiki/` pages and name those pages. If the wiki does not cover the fact, say the gap. Invention is Work (`docs/agents/work.md`), not a fake wiki fact. Do not present invented material as a wiki fact.
 - Suggest which sources might fill the gap
 
-**Page trust annotations:** For every page cited in your answer, check its `lifecycle` frontmatter and compute `is_stale = (today − updated) > 90 days`. Annotate risky pages inline so the user knows which citations to verify:
-
-| Condition | Annotation |
-|---|---|
-| `lifecycle: archived` | `(ARCHIVED: superseded by [[target]])` — use the successor instead |
-| `lifecycle: disputed` | `(DISPUTED, marked <lifecycle_changed>: <lifecycle_reason or "reason unspecified">)` |
-| `is_stale` + `lifecycle: verified` | `(VERIFIED but stale: last updated <updated>)` — reader should re-verify before relying |
-| `is_stale` (other lifecycle) | `(stale: last updated <updated>)` |
-
-Examples in a synthesized answer:
-```
-[[concept-page]] (stale: last updated 2026-01-15) — Original claim was X.
-[[verified-page]] (VERIFIED but stale: last updated 2025-09-10) — Reader should reverify before relying.
-[[disputed-page]] (DISPUTED, marked 2026-04-30: contradicted by [[new-source]]) — Earlier said Y, now uncertain.
-[[old-page]] (ARCHIVED: superseded by [[new-page]]) — Use the successor.
-```
-
-Pages with no lifecycle field (legacy pages predating the schema) are treated the same as `draft` — annotate if stale, skip otherwise. Never fabricate a `lifecycle_reason`; if the field is absent, omit the reason from the annotation.
-
 **Surface the project source path (project-scoped queries).** When the cited pages are project-scoped — their path is under `projects/<name>/...`, or their frontmatter carries a `source_path` field — resolve where the actual code lives so a proposed fix can name real files and a follow-up turn can edit them:
 
 1. Resolve project path via `python3 scripts/manifest.py get/stats` — do **not** load whole `.manifest.json`. Prefer `.projects.<name>.source_cwd` from a targeted get if present.

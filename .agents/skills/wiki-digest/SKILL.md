@@ -44,7 +44,7 @@ Classify:
 
 If fewer than 5 pages were active, note it and offer to widen: *"Only 3 pages were active in the last 7 days — want a monthly digest instead?"* Stop here unless the user says to continue.
 
-For each active page, collect: `title`, `category`, `tags`, `summary` (frontmatter field), `lifecycle`, any `^[ambiguous]` or `^[inferred]` markers in the body.
+For each active page, collect: `title`, `category`, `tags`, `summary` (frontmatter field), any `^[ambiguous]` or `^[inferred]` markers in the body.
 
 ## Step 2: Identify Themes
 
@@ -78,7 +78,6 @@ Take the top 3–5 connections. Write each as a plain-English sentence: not just
 
 Scan active pages and `_raw/` for unresolved work:
 
-- **Drafts**: pages with `lifecycle: draft` or `lifecycle: stub`
 - **Ambiguous claims**: count `^[ambiguous]` markers across all active pages (don't list every one — just the count and which pages have the most)
 - **Unstaged notes**: count files in `$OBSIDIAN_VAULT_PATH/_raw/` (anything here hasn't been promoted)
 - **Taxonomy gaps**: tags from Step 2 that aren't in `_meta/taxonomy.md`
@@ -140,7 +139,6 @@ Most active category: **[category/]** ([N pages added or updated])
 
 ## Open Threads
 
-- **Drafts to compile** ([count]): [[concepts/foo]], [[concepts/bar]] — still in draft lifecycle
 - **Ambiguous claims**: [N] `^[ambiguous]` markers across [M] pages — run `/wiki-synthesize` to resolve
 - **Unstaged notes**: [N] files in `_raw/` — run `/wiki-ingest _raw/` to promote them
 - **Taxonomy gaps**: Tags `#newtag1`, `#newtag2` used but not in taxonomy — run `/tag-taxonomy`

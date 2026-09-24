@@ -19,7 +19,7 @@
           "type": "structure"
         },
         {
-          "text": "Frontmatter includes type: vehicle, kind: ship (or valid kind), and required identity fields (lifecycle, reveal, campaign, visibility, summary; region/berth when known)",
+          "text": "Frontmatter includes type: vehicle, kind: ship (or valid kind), and required identity fields (reveal, campaign, visibility, summary; region/berth when known)",
           "type": "structure"
         },
         {
@@ -85,7 +85,7 @@
           "type": "structure"
         },
         {
-          "text": "Frontmatter includes type: vehicle, kind (ship|boat|other), and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+          "text": "Frontmatter includes type: vehicle, kind (ship|boat|other), and required identity fields (reveal, campaign, visibility, summary)",
           "type": "structure"
         },
         {

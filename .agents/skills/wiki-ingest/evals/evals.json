@@ -82,7 +82,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Reads wiki/AGENTS.md and uses campaign type/lifecycle/reveal fields for filed campaign pages",
+          "text": "Reads wiki/AGENTS.md and uses campaign type/reveal fields for filed campaign pages",
           "type": "process"
         },
         {

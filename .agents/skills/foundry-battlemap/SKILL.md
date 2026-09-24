@@ -9,7 +9,7 @@ metadata:
 # Foundry Battlemap
 ## Accepted-Work gate
 
-Prep only. Follow `docs/agents/work.md`. Precondition: source wiki page `lifecycle: accepted`. Refuse `draft`, `proposed`, or `rejected` and name which gate failed. If `reveal: unrevealed`, do not stage player-visible text until the DM accepts a reveal. Wording matches accepted text.
+Prep only. Follow `docs/agents/work.md`. Precondition: the source page is canon under the rule (`llm-wiki`). If it is not, refuse and name that gate. If `reveal: unrevealed`, do not stage player-visible text until the DM accepts a reveal. Wording matches accepted text.
 
 Make one Czepeku-grade overhead battlemap the table can drop into Foundry. The floor is a tactical architecture, not a backdrop — zones, routes, cover, staging, and identity are designed before the prompt is written.
 

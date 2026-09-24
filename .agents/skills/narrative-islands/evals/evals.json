@@ -133,7 +133,7 @@
       "prompt": "Write a quest page for Countless Through the Maw Seal. Use wiki entities for NPCs, places, and factions. The quest involves the Countless faction's interest in the Drowned Maw and whatever the party can learn about the seal.",
       "expected_output": "A complete quest page filed from wiki/templates/quest.md with all required sections and frontmatter. The page is a situation, not a plot.",
       "expectations": [
-        "Frontmatter includes all required fields: title, category, tags, sources, created, updated, type: quest, lifecycle, reveal, campaign, visibility, status, scope, region, quest_giver, factions, deadline, last_advanced, summary.",
+        "Frontmatter includes all required fields: title, category, tags, sources, created, updated, type: quest, reveal, campaign, visibility, status, scope, region, quest_giver, factions, deadline, last_advanced, summary.",
         "Output includes: At a Glance table, Situation with What the party knows and What is really happening, Stakes with success/failure/walk-away/questions, World in motion with driver/wants/current move/next move/end state, Progress portents, Leads & routes with at least two independent leads, People & factions, Relevant places, Complications, Rewards & consequences.",
         "Agency: at least two independent leads and no required sequence.",
         "Causality: the Countless have a want and constraint grounded in established wiki facts.",

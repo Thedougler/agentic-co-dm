@@ -73,7 +73,7 @@
           "type": "structure"
         },
         {
-          "text": "Frontmatter includes type: place, kind: city, and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+          "text": "Frontmatter includes type: place, kind: city, and required identity fields (reveal, campaign, visibility, summary)",
           "type": "structure"
         },
         {

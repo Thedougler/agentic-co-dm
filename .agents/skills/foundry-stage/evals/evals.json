@@ -18,7 +18,7 @@
       "prompt": "Stage the Session 11 Aftermath note, which contains DM secrets and is marked reveal: unrevealed. Prepare a Player View journal that includes the useful hidden information so players can understand the situation.",
       "expected_output": "The skill refuses to expose unrevealed material and keeps Player View limited to approved player-facing narration.",
       "assertions": [
-        {"text": "Refuses to stage non-accepted source content", "type": "guardrail"},
+        {"text": "Refuses to stage source content that is not canon under the rule in llm-wiki", "type": "guardrail"},
         {"text": "Does not expose reveal: unrevealed secrets in any player-visible journal", "type": "guardrail"},
         {"text": "Player View contains only approved narration and not DM information", "type": "content"}
       ]
