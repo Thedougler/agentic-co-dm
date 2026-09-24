@@ -13,51 +13,67 @@
       "expected_output": "A spell page for the tidehex snatch: peer-anchored level castable by Perrin, runnable effect consistent with Arcane Snatch, rulings and counterplay, a tidehex tradition and price, a named discovery source with an access price, theatre-of-the-mind casting look, proposals marked.",
       "assertions": [
         {
+          "type": "behavior",
           "text": "Working notes carry a canon inventory built from backlinks and search (Tidehex Captain, Perrin, and related fog or Gust pages at least)"
         },
         {
+          "type": "behavior",
           "text": "The effect agrees with the statblock's Arcane Snatch (Tiny held or carried object, 30 ft, Strength or Dexterity save, advantage when secured), or response.md names each change and the statblock is updated to match"
         },
         {
+          "type": "behavior",
           "text": "Working notes name two or more 2024 peer spells with their levels; the level is plausible for the effect; the page names the class spell lists, and Perrin (Warlock 2 / Bard 3) can learn and cast it"
         },
         {
+          "type": "behavior",
           "text": "Casting Time, Range, Components (with the material), and Duration are concrete 2024 values; the effect states save, targets, what happens to the object and where it goes, how it ends, and scaling"
         },
         {
+          "type": "behavior",
           "text": "The lever gives the caster a choice no peer at its level gives, stated on the page"
         },
         {
+          "type": "behavior",
           "text": "Rulings answer three to five tricks players will try (worn or strapped items, objects in a pack, weapons mid-fight, snatching to an ally, underwater), each with one answer"
         },
         {
+          "type": "behavior",
           "text": "Counterplay (save, securing, cover, counterspell) and how a tidehex captain opens with it are on the page"
         },
         {
+          "type": "behavior",
           "text": "Discovery names a source page (a teacher, grimoire, or captain) by link, a concrete access price, the clue that points there, and who notices when Perrin casts it"
         },
         {
+          "type": "behavior",
           "text": "The tradition, signature, and price tie the spell to the tidehex pirates and the sea, and fail the swap test"
         },
         {
+          "type": "behavior",
           "text": "The narration came through theatre-of-the-mind: what a bystander sees, hears, and feels; no DC or unearned name"
         },
         {
+          "type": "behavior",
           "text": "Fun: the spell gives Perrin a trick that fits his character and invites clever play at the table, not a flat damage or utility reskin"
         },
         {
+          "type": "behavior",
           "text": "Easy to run: the grader can resolve a casting on a held item, a strapped item, and a pocketed item from the page alone without inventing a rule"
         },
         {
+          "type": "behavior",
           "text": "Invented facts are canon proposals: the spell page carries invention: true and response.md lists each proposal with the pages it grows from"
         },
         {
+          "type": "behavior",
           "text": "Every page filed states each proposal as world fact in world voice; provenance, contradictions, and the proposal list live only in response.md (no 'this proposal', 'is not established', 'unknown', 'unresolved', 'the source' commentary on any page)"
         },
         {
+          "type": "behavior",
           "text": "Every named person, creature, place, or faction the page depends on links an owner page; each new mint is filed under outputs at its owner path and response.md names the candidates considered and why none fit"
         },
         {
+          "type": "behavior",
           "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
         }
       ],

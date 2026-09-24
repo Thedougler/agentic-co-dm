@@ -15,51 +15,67 @@
       "expected_output": "A full HCS Relentless vehicle page: named captain with errand and orders, numbers on every sheet and component line, armed crew, decks, handling, a chase and boarding loop against the Uncertainty, a hold worth fighting for, theatre-of-the-mind narration, proposals marked.",
       "assertions": [
         {
+          "type": "behavior",
           "text": "Working notes carry a canon inventory built from backlinks and search (Dravosi Crown, HCS Warrant, the Uncertainty or Surety at least)"
         },
         {
+          "type": "behavior",
           "text": "Established facts are kept: Tier 1 Dravosi Crown patrol cutter, more heavily armed than the Surety, Crown patrol-waters berth, ties to the Crown and the Warrant"
         },
         {
+          "type": "behavior",
           "text": "The captain is named and links an NPC page; At a Glance states the errand this week, standing orders on meeting the Uncertainty, and the next step with a time"
         },
         {
+          "type": "behavior",
           "text": "Every Sheet and Components line holds a number (no Unknown or blank); hull has AC, HP, and damage threshold; helm and movement say what is lost when disabled; each weapon has attack or DC, range, damage, and crew or reload; figures sit plausibly between a keelboat and a sailing ship and out-gun the Surety"
         },
         {
+          "type": "behavior",
           "text": "Every fighter aboard carries compact numbers: the captain and the rank-and-file by count and statblock (AC, HP, attacks)"
         },
         {
+          "type": "behavior",
           "text": "Decks lay out three to five areas with size in feet, a usable feature, and who stands watch"
         },
         {
+          "type": "behavior",
           "text": "The chase and boarding loop states speed against the Uncertainty, what closes and opens the gap, grapple and boarding distances, ramming damage, and when the crew strikes colours or fights on"
         },
         {
+          "type": "behavior",
           "text": "Handling gives two to four manoeuvres with Ability (Skill) or tool check, DC, and result, including a quirk that makes the Relentless handle unlike its class"
         },
         {
+          "type": "behavior",
           "text": "A hold, secret, or cargo aboard someone would fight or lie for has its tell in the narration and its truth and find in Hidden Cargo & History"
         },
         {
+          "type": "behavior",
           "text": "The narration is a theatre-of-the-mind portrait: silhouette and scale, how people get aboard, a sense beyond sight with its source, and no truth, DC, stat, or unearned name"
         },
         {
+          "type": "behavior",
           "text": "Fun: the Relentless has a signature a player would retell next session (a silhouette, captain, or quirk specific to this craft) that fails the swap test against the other HCS pages"
         },
         {
+          "type": "behavior",
           "text": "Easy to run: the grader can run three rounds of the chase and a boarding from the page alone without inventing a number, name, or motive (evidence lists any gap)"
         },
         {
+          "type": "behavior",
           "text": "Invented facts are canon proposals: hcs-relentless.md carries invention: true and response.md lists each proposal with the pages it grows from"
         },
         {
+          "type": "behavior",
           "text": "Every page filed states each proposal as world fact in world voice; provenance, contradictions, and the proposal list live only in response.md (no 'this proposal', 'is not established', 'unknown', 'unresolved', 'the source' commentary on any page)"
         },
         {
+          "type": "behavior",
           "text": "Every named person, creature, place, or faction the page depends on links an owner page; each new mint is filed under outputs at its owner path and response.md names the candidates considered and why none fit"
         },
         {
+          "type": "behavior",
           "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
         }
       ],

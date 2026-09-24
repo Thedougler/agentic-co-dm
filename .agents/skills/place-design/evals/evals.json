@@ -398,36 +398,47 @@
       "expected_output": "A full Fare I'a place page built from Felix Aho, the Vaka, and Port Tidefall canon: a twist and rule that fail the swap test, occupants cast from existing pages, tells in a theatre-of-the-mind narration keyed to What entries with truths, navigation and interaction verbs, location moves, four cardinal lines, and proposals marked.",
       "assertions": [
         {
+          "type": "behavior",
           "text": "Working notes carry a canon inventory built from backlinks and search (Felix Aho, the Vaka, Calder's Tooth and Port Tidefall at least), a stock version, and a swap test"
         },
         {
+          "type": "behavior",
           "text": "The twist or rule of the place is built from Felix Aho or Vaka canon, not generic market dressing, and At a Glance holds a sentence contrasting Fare I'a with Port Tidefall or its neighbours"
         },
         {
+          "type": "behavior",
           "text": "Who names every occupant by owner link; the stall keeper and regulars come from existing pages, or response.md names the candidates considered before minting; no unnamed stand-in"
         },
         {
+          "type": "behavior",
           "text": "Two to four location moves each name an actor, trigger, and visible result"
         },
         {
+          "type": "behavior",
           "text": "Each What entry opens with an italic quote of its narration phrase, then its truth and its find; every tell in the narration has an entry"
         },
         {
+          "type": "behavior",
           "text": "If the party offers navigation and interaction verbs, each with its changed situation, a 2024 check only where the outcome is uncertain, and its cost"
         },
         {
+          "type": "behavior",
           "text": "Where has four cardinal lines, each a wikilinked neighbour with travel time or what lies that way"
         },
         {
+          "type": "behavior",
           "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists them with the pages they grow from"
         },
         {
+          "type": "behavior",
           "text": "The narration is third-person present, has a sense beyond sight with its source and a usable affordance, and states no truth, DC, or unearned name; [!narration] is the only callout"
         },
         {
+          "type": "behavior",
           "text": "At a Glance names a present conflict drawn from canon, by name (who presses on whom), and a trajectory that visibly changes the place at a stated time if nobody intervenes"
         },
         {
+          "type": "behavior",
           "text": "The page states every proposal as world fact in world voice; provenance, source contradictions, and the proposal list live in response.md, never as commentary on the page ('this proposal', 'is not established')"
         }
       ]

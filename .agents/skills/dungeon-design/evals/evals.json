@@ -15,54 +15,71 @@
       "expected_output": "A Drave Vaults dungeon on the place template: seven-part test answered, a decision graph with loops and bypasses, 10 to 20 keyed areas, occupants with numbers, a pressure procedure, obstacles and clues, level-5 payoffs, a way to take the chart without fighting Aldric, theatre-of-the-mind overview, proposals marked.",
       "assertions": [
         {
+          "type": "behavior",
           "text": "Working notes carry a canon inventory built from backlinks and search (Aldric Drave, Fort Crestwall, Calder's Tooth and Port Tidefall, Governor Voss at least)"
         },
         {
+          "type": "behavior",
           "text": "Established facts are kept: beneath Fort Crestwall under Calder's Tooth, Aldric's lair and phylactery archive, the living bloodline chart, two garrison detachments on sealed orders Governor Voss never saw"
         },
         {
+          "type": "behavior",
           "text": "Promise, purpose, pressure, paths, powers, payoffs, and persistence are each answered on the page"
         },
         {
+          "type": "behavior",
           "text": "The decision graph has two entrances, a loop, a bypass, an unusual connection, a retreat, and two approaches to the chart; no hidden answer is the only way forward"
         },
         {
+          "type": "behavior",
           "text": "Ten to twenty keyed areas each follow the keying order and give something to learn, use, alter, or decide; checks carry Ability (Skill) and DC; sizes in feet where position matters"
         },
         {
+          "type": "behavior",
           "text": "Every occupant links a page and states want, offer, and response; every fighter has compact numbers; each encounter has a job, a 2024 difficulty for four level-5 PCs, and an off-ramp"
         },
         {
+          "type": "behavior",
           "text": "Aldric's power is honest: facing him is a telegraphed choice, and the party can take the chart by a route that does not require beating him"
         },
         {
+          "type": "behavior",
           "text": "The pressure procedure has a visible clock with ticks and triggers; rest safety and what occupants do while the party rests are stated"
         },
         {
+          "type": "behavior",
           "text": "Each essential revelation has three vectors; each obstacle has sign, trigger, effect, counterplay, bypass, and leverage"
         },
         {
+          "type": "behavior",
           "text": "Payoffs name treasure, items, information, and leverage by link or number, sized for level 5"
         },
         {
+          "type": "behavior",
           "text": "The Overview came through theatre-of-the-mind and holds no truth, DC, or unearned name"
         },
         {
+          "type": "behavior",
           "text": "Fun: the vaults have a signature room or set piece players would retell, built from Aldric's bloodline and phylactery canon"
         },
         {
+          "type": "behavior",
           "text": "Easy to run: the grader can walk an entrance-to-chart route and a retreat from the keys alone without inventing a room, number, or response"
         },
         {
+          "type": "behavior",
           "text": "Invented facts are canon proposals: drave-vaults.md carries invention: true and response.md lists each proposal with the pages it grows from"
         },
         {
+          "type": "behavior",
           "text": "Every page filed states each proposal as world fact in world voice; provenance, contradictions, and the proposal list live only in response.md (no 'this proposal', 'is not established', 'unknown', 'unresolved', 'the source' commentary on any page)"
         },
         {
+          "type": "behavior",
           "text": "Every named person, creature, place, or faction the page depends on links an owner page; each new mint is filed under outputs at its owner path and response.md names the candidates considered and why none fit"
         },
         {
+          "type": "behavior",
           "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
         }
       ],

@@ -14,51 +14,67 @@
       "expected_output": "A Kalowe city page on the city template: engine, districts, gazetteer with keepers and prices, enforced local rules, two or more clocked situations, rumors and encounters, faces with NPC pages, theatre-of-the-mind Arrival, proposals marked.",
       "assertions": [
         {
+          "type": "behavior",
           "text": "Working notes carry a canon inventory built from backlinks and search (Chain Council, Waveservants, Five Blades, Ashkevet, Penance Bar, Sabrique at least)"
         },
         {
+          "type": "behavior",
           "text": "Established facts are kept: three reef-linked islets and stone bridges, one navigable gap, the seized fort where the Chain Council sits, no seated local ruler, the gap shrine collecting from every hull, about 1,800 residents, and tribute raised to buy silence about the Pearl theft"
         },
         {
+          "type": "behavior",
           "text": "The page uses the city template with type: place and kind: city"
         },
         {
+          "type": "behavior",
           "text": "The engine names what Kalowe lives on and who holds each part by page; the fort hierarchy is decided by name"
         },
         {
+          "type": "behavior",
           "text": "Three to six districts each carry look, draw, holder, and a danger or opportunity now; landmarks and getting around are on the page"
         },
         {
+          "type": "behavior",
           "text": "The gazetteer lets a party arrive (pilotage and shrine toll with amounts), lodge, sell cargo, and find services, each with a keeper and a price"
         },
         {
+          "type": "behavior",
           "text": "Two to four local rules each name who enforces them, how, and the penalty"
         },
         {
+          "type": "behavior",
           "text": "Two or more situations each have named sides, visible signs, a trajectory within days of arrival, and two handles with costs; one touches something the party already cares about"
         },
         {
+          "type": "behavior",
           "text": "Rumors carry their truths; street encounters tie to situations; the watch or gangs the party could fight carry numbers"
         },
         {
+          "type": "behavior",
           "text": "Every face named on the page links an NPC page"
         },
         {
+          "type": "behavior",
           "text": "The Arrival came through theatre-of-the-mind, carries the situations' visible signs, and holds no truth, DC, or unearned name"
         },
         {
+          "type": "behavior",
           "text": "Fun: Kalowe has set pieces and a texture no other port shares (swap test against Port Tidefall or Calveno), with at least one scene players would remember"
         },
         {
+          "type": "behavior",
           "text": "Invented facts are canon proposals: Kalowe.md carries invention: true and response.md lists each proposal with the pages it grows from"
         },
         {
+          "type": "behavior",
           "text": "Every page filed states each proposal as world fact in world voice; provenance, contradictions, and the proposal list live only in response.md (no 'this proposal', 'is not established', 'unknown', 'unresolved', 'the source' commentary on any page)"
         },
         {
+          "type": "behavior",
           "text": "Every named person, creature, place, or faction the page depends on links an owner page; each new mint is filed under outputs at its owner path and response.md names the candidates considered and why none fit"
         },
         {
+          "type": "behavior",
           "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
         }
       ],

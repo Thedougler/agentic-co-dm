@@ -381,42 +381,55 @@
       "expected_output": "A scene-scale Sabine Corvo page on the npc template: established face and harrier canon kept, her secret and the missing expeditions decided as one concrete answer and marked as proposals, a runnable first meeting and posture change, Influence rulings, tells in a theatre-of-the-mind portrait, three voice lines, and numbers for anything that could fight.",
       "assertions": [
         {
+          "type": "behavior",
           "text": "Preserves established canon: leather apron and the named creature scars (kingfisher, saltwater drake, coral spine), the clipped-wing crimson-crowned harrier at 400 gp, Roka Sten and Spar & Snare as suppliers, and the three expedition teams that missed their returns"
         },
         {
+          "type": "behavior",
           "text": "Fills the silence with one concrete answer: the page states Sabine's secret and what happened to the missing expeditions (or exactly what she knows and hides about them), each as a single named truth, not a list of possibilities"
         },
         {
+          "type": "behavior",
           "text": "Every invented fact is a canon proposal: the page carries invention: true and response.md lists the proposals with the pages they grow from; nothing is held back waiting for approval"
         },
         {
+          "type": "behavior",
           "text": "Any person, creature, or place the page adds links an existing owner page, or response.md names the candidates considered before minting"
         },
         {
+          "type": "behavior",
           "text": "First meeting is runnable cold: where she is, what she is doing, her opening move, what she wants from the party, and one line the DM can speak"
         },
         {
+          "type": "behavior",
           "text": "Posture and Influence: starting attitude, what opens and closes her, and at least one Influence route with Ability (Skill) and DC and what success and failure change"
         },
         {
+          "type": "behavior",
           "text": "The portrait is third-person present tense, names no secret, and carries a plain tell for every hidden truth; each tell's truth is stated on the DM layer"
         },
         {
+          "type": "behavior",
           "text": "Voice has notes and three sample lines (the ask, the refusal, the line under pressure) that sound like one person"
         },
         {
+          "type": "behavior",
           "text": "The Crissdalynn thread through the harrier is a concrete choice with a price and Sabine's response to each way the party might act on it"
         },
         {
+          "type": "behavior",
           "text": "Sabine and anyone or anything else on the page the party could grab, strike, or fight (a loosed animal, a called guard) carries compact numbers from a named statblock (AC, HP, Speed, attack or save DC), even when she flees"
         },
         {
+          "type": "behavior",
           "text": "role is rival, patron, or contact; [!narration] is the only callout; the page follows the npc template headings"
         },
         {
+          "type": "behavior",
           "text": "Every question the page raises (a disappearance, a rumour, a debt, a late shipment) has its DM answer on the page"
         },
         {
+          "type": "behavior",
           "text": "The page states every proposal as world fact in world voice; provenance, source contradictions, and the proposal list live in response.md, never as commentary on the page ('this proposal', 'is not established')"
         }
       ]
