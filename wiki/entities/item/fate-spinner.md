@@ -21,7 +21,7 @@ tier: supporting
 created: 2026-09-13T19:35:00Z
 updated: 2026-09-14
 type: item
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 kind: magic
