@@ -66,7 +66,8 @@ No party, encounter, or table state supplied for an owner page → portrait.
 
 ### 2. Gather the facts
 
-Read the parent (the beat page or the owner page), every owner page the scene
+Read the parent (the beat page, the owner page, or for a recap the play
+evidence), every owner page the scene
 touches (the place and region, and every person, creature, item, and hazard
 present or linked), and every spoken block before this one, including earlier
 narration of this place or person. Owner pages hold what the beat leaves out.
@@ -135,10 +136,12 @@ arriving, and say what reaches them in the order it would. Start with the
 to whom, set in a kind of place the listener can fill in on their own (a
 caravan stalled at a washed-out ford while its drivers shout at each other,
 a dockside tavern packed wall to wall for a wedding). When danger is present,
-the danger is the schema. Terrain alone is a **caption**; the ground, light,
-and air come in later, where the body meets them. Build the rest from your
-keywords and the picture in
-your head, following the recipe and the craft rules. Drafting down the list
+the danger is the schema. When nobody is there, the situation is what the
+place shows was just happening (a camp left mid-meal, a forge still warm, a
+door kicked in from the outside). Terrain alone is a **caption**; the ground,
+light, and air come in later, where the body meets them, and every sentence
+after the schema serves the situation. Build the rest from your keywords and
+the picture in your head, following the recipe and the craft rules. Drafting down the list
 produces an **inventory**: every fact true, nothing felt.
 
 Read [references/examples.md](references/examples.md) for the matching example
@@ -190,8 +193,17 @@ Done when a full pass of the final check changes nothing.
   on the characters' bodies (spray on their faces, mud sucking at their
   boots, heat off the forge on their skin): that is what turns a scene from
   seen into felt. The world acts; the reaction is the player's.
-- **Evidence.** Show what the characters can see and let the players reason:
-  "small muddy footprints cross the dust toward the stairs". Size shows by
+- **Show, don't tell.** Give the evidence and let the players reach the
+  conclusion: "small muddy footprints cross the dust toward the stairs", not
+  the verdict that someone came through. Every judgment word (abandoned,
+  recent, dangerous, strange, unusually, angry, afraid, important) is a
+  conclusion you reached from something you saw, so say the thing you saw:
+  "a bowl of stew skinned over on the table" instead of abandoned, "still
+  turning after you have counted ten" instead of an unusually long spin, "he
+  sets the cup down hard enough to slop it" instead of angry. A person's
+  mood shows in what their body does, a thing's purpose in how it is used,
+  and a page label (the name a DM's notes give a voice, a zone, or a plan)
+  becomes what the characters actually meet. Size shows by
   what it does ("it rolls, and the wave off its back slaps the pilings"), or
   by a familiar comparison (two wagon lengths). Weather, magic, and a place's
   history and working life show by their effects (rainwater ankle-deep in the
@@ -203,7 +215,9 @@ Done when a full pass of the final check changes nothing.
   Colors are one plain word or a comparison ("grey", "black as wet bark");
   any hyphenated color compound is a **paint-chip**, translated even when
   the source uses one. Places and things get the name a stranger standing
-  there would use (the still pool, the camp, the clearing). Distance is
+  there would use (the still pool, the camp, the clearing), and a person is
+  named only once the party has learned the name; until then they are what
+  the characters see (a tall woman among the flowers). Distance is
   relational and body-scale (within reach, across the courtyard, between you
   and the stairs, a bowshot); foot counts are the **grid** and stay in the
   DM's tables unless a player must act on the number this instant.
@@ -221,7 +235,8 @@ Done when a full pass of the final check changes nothing.
 ## Length
 
 Length follows the job, never a count. A scene opening is as short as its
-entry layer allows and stops well before it becomes a monologue; the rest of
+entry layer allows: short enough that the players still hold its first
+sentence when the DM stops talking, well before it becomes a monologue; the rest of
 the scene lives in its other slots. Go shorter in danger, pursuit, and fast
 cuts; give a little more room to a first arrival at an important place, a
 major reveal, awe, horror, or a climax. A block that only fits by stretching
@@ -238,7 +253,8 @@ layer.
 | How the Scene Resolves / Exit | A few sentences |
 | Wiki portrait | One full paragraph covering the whole subject |
 | Place portrait with a place-design packet | As long as every tell in the packet needs, folded onto owner nouns first |
-| Recap | A short story paragraph, then tonight's opening |
+| Recap read aloud as a session starts | A short story paragraph, then tonight's opening |
+| Session recap page | A paragraph for each movement of the session, as long as its moments need |
 
 ## Hard lines
 
@@ -316,11 +332,17 @@ the list again.
       matters right now, and what has changed? (Portrait) Does every Build
       item the sources give and every tell appear, so a player could sketch
       and handle the whole subject, with no party, scene, or event?
+      (Session recap) Could each player retell their character's best
+      moment from it, and say where the party stands now?
 - [ ] **Compress.** Does the first sentence give the situation or the
       danger (a caption fails), is there one anchor, does each person and
       creature come across as one feature and one behavior (not a list of
       features, even one spread across sentences), does every known companion
       in the block act, and could any sentence go without losing anything?
+- [ ] **Show.** Is every judgment word, mood, and page label replaced by
+      the thing the characters see or hear, so the players draw every
+      conclusion themselves, and is every person the party has not yet
+      learned the name of called what the characters see?
 - [ ] **Layers.** (Situated) Is every entry handle in the block, and every
       other handle out of it and in the handle note?
 - [ ] **Art.** Was every related image searched for and opened, and does the
@@ -330,8 +352,9 @@ the list again.
       bodies?
 - [ ] **Speakable.** Read aloud, does every sentence fit one breath, with
       every place named as a stranger would, every direction one a body
-      knows, no grid distance, no semicolon or colon, and one paragraph (two
-      when loaded) that moves the eye?
+      knows (no north, south, east, or west), no grid distance, no
+      semicolon or colon, and one paragraph (two when loaded, one per
+      movement in a session recap) that moves the eye?
 - [ ] **Hands off.** Does every "you" place the characters, let the world act
       on them, or give what their senses plainly take in, with nothing
       decided for them?

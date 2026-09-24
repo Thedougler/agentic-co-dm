@@ -11,9 +11,9 @@ made up for illustration and are never canon.
 - Beat slots: zone and tick cells, creature in scene, How the Scene Resolves
 - NPC first look with dialogue
 - Outcome cells
-- Travel, recap, handout
+- Travel, recap, session recap, handout
 - Portraits: creature, place, item, hazard, faction
-- Weak → strong pairs: stub, inventory, generic filler, assigned feelings, slop, rules, resolved attack, useless facts
+- Weak → strong pairs: stub, inventory, conclusions, generic filler, assigned feelings, slop, rules, resolved attack, useless facts
 
 ## Compact opening (the default shape)
 
@@ -113,7 +113,22 @@ player acts on.
 
 ## Recap
 
+Read aloud as a session starts:
+
 > Last time, you followed the smuggler's ledger to the Gull's Rest, found Captain Morrow held in the cellar, and fought your way up through the taproom while the bar caught fire. The bald smuggler got a knife to Morrow's throat, and one of his crew ran for the stairs with the strongbox. Tonight, the smoke is thick against the ceiling, the stairs are burning at the bottom, and the man with the strongbox is almost at the landing.
+
+## Session recap
+
+> The ledger sent you to the Gull's Rest, and Brannoc got you through its door by announcing himself as the harbormaster's new tax assessor. He kept it up so long and so gravely that the barkeep began apologizing for the rats and poured you a round on the house. Under the cellar stairs you found Captain Morrow tied to a keg of lamp oil and gagged with her own scarf, and that was when the smugglers found you.
+>
+> The fight went up the stairs the hard way. Ilsa's sword stuck fast in a ceiling beam on her first swing, so she wrenched a leg off the nearest table and held the stairwell with that, and every smuggler who came up went back down faster. Tomas threw his lantern at the bald smuggler's head. It missed by a hand's width and burst across the bar, and the whole length of polished oak went up in blue flame. The barkeep stopped apologizing.
+>
+> When the smoke closed in, Morrow was free and coughing on the taproom floor, the bald man had a knife pressed under her jaw, and one of his crew was halfway up the burning stairs with the strongbox hugged to his chest.
+
+Each movement gets a paragraph, and the words go to the moments: the bluff
+that worked too well, the table leg, the lantern. Every character gets a
+choice of their own, the comedy pays off its own setup (the apologizing
+barkeep), and the page ends inside the cliffhanger.
 
 ## Handout
 
@@ -176,6 +191,20 @@ paint-chip colors, a measurement. The strong one hits the body first (cold,
 slick gravel), gives each figure two details that stick (the coat like a sail,
 the coiling neck), shows the heron's size by what it does to the man and the
 planks, and ends on both heads turning.
+
+**Conclusions → evidence.**
+
+Weak:
+
+> The camp has clearly been abandoned in a hurry, and the guard at the gate looks angry and dangerous.
+
+Strong:
+
+> Three bedrolls lie open around a fire that still smokes, and a pot of beans has boiled dry and black on the coals. At the gate, a guard with a split lip already has his spear lowered toward you, and he spits into the dirt as you come closer.
+
+The weak version hands over the verdicts (abandoned, in a hurry, angry,
+dangerous). The strong one gives the things that produced them, so the
+players reach each verdict themselves and believe it.
 
 **Generic filler → evidence.**
 

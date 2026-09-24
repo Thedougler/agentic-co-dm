@@ -17,7 +17,7 @@ Each recipe gives: **Job** (what the block must do), **Build** (what goes in),
 - Action: combat opening state
 - Moments: social scene, suspense, revelation, return to a known place
 - Movement: travel, transition, vehicle
-- Other: business, recap, handout, vision
+- Other: business, recap, session recap, handout, vision
 
 ## Handles
 
@@ -50,9 +50,10 @@ important hides by omission.
 1. **Entry.** Small: what the first decision needs, in this priority:
    immediate danger, what the decision turns on, exits and routes, the
    creatures and people who matter, the features most likely to be grabbed
-   first, the anchor, one useful sense. Texture and decoration come after;
-   lore comes only when it bears on the decision. Entry is the scene
-   opening, and only entry goes in it.
+   first, the anchor, one useful sense. The test: a player would act on it
+   in the first minute. What they would find by asking "what else is here?"
+   is attention, and texture, decoration, and lore wait for the question.
+   Entry is the scene opening, and only entry goes in it.
 2. **Attention.** What a closer look shows: the zone cells, the creature
    slot, the detail that rewards a question.
 3. **Interaction.** What handling, opening, or testing reveals: the outcome
@@ -218,8 +219,11 @@ every handle, each in its layer (§ Layers):
   broad woman in a coat two sizes too large), one distinctive feature (ink
   stains covering both hands: the one a player would use to describe her to a
   friend), and one behavior they were already doing when
-  the party arrived (she keeps signing papers while you speak). Seat them in
-  the room. A sound or smell that comes off them can ride along if it is
+  the party arrived (she keeps signing papers while you speak). When the
+  source gives only a pose (stands, waits, sits), the behavior is how they
+  hold it, drawn from their page: what they ignore, what they watch, what
+  stays still that should move (a sentry who never shifts his weight, a
+  guest who lets her tea go cold). Seat them in the room. A sound or smell that comes off them can ride along if it is
   their strongest note. This feature and behavior are their **face**: the
   same feature returns when the party meets them again, described fresh
   with a new specific detail, plus whatever changed.
@@ -230,7 +234,8 @@ every handle, each in its layer (§ Layers):
   they are doing now. A tell from the page appears when the beat's situation
   touches the secret behind it. An NPC with no page is minted by `npc-design`
   first (AGENTS.md **HARD: entity-before-spoken**).
-- **End:** They look up, stop what they are doing, or speak.
+- **End:** Their attention lands on the party: they look up, stop what they
+  are doing, or speak.
 
 ### Dialogue
 
@@ -357,11 +362,37 @@ every handle, each in its layer (§ Layers):
 
 ### Recap
 
-- **Job:** Bring the table back to where they stopped.
+- **Job:** Bring the table back to where they stopped, read aloud as the
+  session starts.
 - **Build:** Past tense, a short paragraph, only what play made true, told as a
-  short story with the party as "you". Then switch to present tense for
+  short story with the party as "you": the one or two moments the table will
+  remember, then the spot where play stopped. Then switch to present tense for
   tonight's opening situation.
 - **End:** The live pressure that starts tonight.
+
+### Session recap
+
+- **Job:** Retell a whole session so the players relive it: the moments they
+  cheered, groaned, and laughed at, told well enough that they want to read it
+  aloud, ending on where they stand now.
+- **Sources:** Play evidence only. An evidence packet gives the order of
+  events; the raw transcript or play notes give the **moments**. The table's
+  own reactions mark them: laughter, cheering, swearing, a gasp, a big roll, a
+  line everyone repeated. Search the raw play for those reactions and read
+  what happened around each one. Prep the table never reached stays out.
+- **Build:** Past tense, the party as "you", each character by name when they
+  act. Group the session into its movements, a paragraph each, and spend the
+  words on the moments while travel and routine pass in a clause. Each moment
+  gets its setup, the character's choice made in their own style, what it
+  caused, and the one specific detail that made the table react (the table
+  leg she fought with after her sword stuck, the lantern that missed and lit
+  the bar). Heroics show the
+  risk, the choice, and the payoff; comedy gets its setup, then the turn, told
+  straight. Every player character gets at least one moment of their own.
+  Dice and rules become fiction: a critical hit is a shot that goes exactly
+  where it was aimed, a failed save is a body that stops obeying. A line a
+  player or NPC said at the table can be quoted word for word.
+- **End:** The cliffhanger as live pressure, told in the moment it stopped.
 
 ### Handout
 
