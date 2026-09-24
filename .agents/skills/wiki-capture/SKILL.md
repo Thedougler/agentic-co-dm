@@ -40,7 +40,7 @@ Trigger when invoked as `/wiki-capture --quick`, by "quick capture" / "capture t
 
 1. **Resolve config** (Config Resolution Protocol in AGENTS.md): get `OBSIDIAN_VAULT_PATH` and `OBSIDIAN_RAW_DIR` (default: `$OBSIDIAN_VAULT_PATH/_raw`). Ensure `$OBSIDIAN_RAW_DIR` exists; create it if not.
 
-   Capture does not independently reinterpret validator schema inputs. When `OBSIDIAN_ALLOWED_LIFECYCLES`, `OBSIDIAN_ALLOWED_RELATIONSHIP_TYPES`, `OBSIDIAN_REQUIRED_TRUST_FIELDS`, or `OBSIDIAN_SCHEMA_SOURCE` is present, preserve it for the downstream lint/trust consumer: CLI values take precedence over environment/config values, which take precedence over framework defaults, and explicit blank or whitespace-only values fail closed. Omit a variable to use defaults.
+   Capture does not independently reinterpret validator schema inputs. When `OBSIDIAN_ALLOWED_RELATIONSHIP_TYPES` or `OBSIDIAN_SCHEMA_SOURCE` is present, preserve it for the downstream lint consumer: CLI values take precedence over environment/config values, which take precedence over framework defaults, and explicit blank or whitespace-only values fail closed. Omit a variable to use defaults.
 
 2. **Gate — KEEP or SKIP?** Before extracting, judge whether this session has capture value. This keeps the skill safe to call automatically without spamming `_raw/`.
    - **SKIP** (exit with "Nothing worth capturing in this session.") if ALL are true: the conversation is purely conversational (planning/Q&A/explanation) with no implementation; no errors, debugging, or problem-solving visible; nothing surprising or undocumented; every finding is already obvious from the docs.

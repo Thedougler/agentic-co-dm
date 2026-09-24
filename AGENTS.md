@@ -67,7 +67,7 @@ Spec Kit auto-commit is enabled for the configured before/after hooks. The commi
 
 ## Hybrid SDD routing
 
-Before writing substantial engineering, agent-system, campaign-architecture, or creative-system work, classify it once and follow the full route in [`docs/agents/hybrid-sdd.md`](docs/agents/hybrid-sdd.md). Routine established campaign content stays on its existing skill, template, lifecycle, and Work route; split mixed requests into their system-changing and routine-content slices. Keep the managed Spec Kit block below disposable.
+Before writing substantial engineering, agent-system, campaign-architecture, or creative-system work, classify it once and follow the full route in [`docs/agents/hybrid-sdd.md`](docs/agents/hybrid-sdd.md). Routine established campaign content stays on its existing skill, template, and Work route; split mixed requests into their system-changing and routine-content slices. Keep the managed Spec Kit block below disposable.
 
 **Capability loop:** For every incomplete owner boundary, `observe → act → re-observe`; continue only on owner-relative progress or a passed completion guard. An unchanged observation requires a materially different sanctioned path or a specific blocker. Use [`docs/agents/hybrid-sdd.md`](docs/agents/hybrid-sdd.md) for the full rule and blocker fields.
 
