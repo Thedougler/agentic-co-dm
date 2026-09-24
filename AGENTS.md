@@ -195,12 +195,9 @@ If a job will repeat and no existing command does it, create an agent-shaped hel
 
 ### Error ledger
 
-On runtime failure, append to `errors.md` before the sitting is complete. Drain matching entries when a wiki improvement or other landed fix actually removes the cause. Leftover entries for already-fixed causes are wasted context. The DM MUST NOT fill, review, or drain the ledger. Drain after the fixing write lands.
+A runtime failure is friction: fix and verify its source, then continue ([friction rule](#friction-rule)). `errors.md` holds only causes still open. Record one with `error append --source <path the fix lands in>` only when that fix cannot land in the current task. Drain it with `error drain --id e-N` in the same commit as the verified fix; an entry whose cause is already fixed is wasted context, so drain it when you find it. The ledger is agent-owned: the DM never fills, reviews, or drains it.
 
-Examples:
-- `python3 scripts/error-ledger.py error append --cause "…" --sitting "prep: …"`
-- `python3 scripts/error-ledger.py error drain --id e-N --cause-fixed true`
-- `python3 scripts/error-ledger.py error list`
+Same cause: `append` attaches an identical cause on the same source by itself. For a differently worded failure, pass `--attach e-N` when the fix for e-N would also remove it; otherwise `append` creates a new entry. Undo a wrong attach with `error detach --id e-N --index k`, using the `occurrence_index` that `append` reported. Invocations and examples: `python3 scripts/error-ledger.py error append --help`.
 
 ### Layout
 

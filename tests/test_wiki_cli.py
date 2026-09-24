@@ -324,7 +324,9 @@ def test_health_explains_blockers_and_small_error_ledger():
         policy=None,
         trends=build_trends(
             None,
-            [{"id": f"e-{index}", "cause": f"cause-{index}", "status": "open"} for index in range(5)],
+            {"entries": [{"id": f"e-{index}", "cause": f"cause-{index}", "source": "scripts/wiki",
+                          "evidence": [{"sitting": "lint: a", "detail": f"cause-{index}"}]} for index in range(5)],
+             "recurrence": {"total": 0, "by_sitting": {}}, "missing_sources": []},
             None,
         ),
         focus=[{"path": "page-0.md", "reason": "template_conformance lint findings", "source": "lint"}],
@@ -428,11 +430,10 @@ def test_lint_reports_open_ledger_separately(tmp_path: Path):
         "# Error ledger\n\n"
         + json.dumps({
             "cause": "open operational failure",
-            "cause_fixed": False,
+            "evidence": [{"detail": "open operational failure", "sitting": "test"}],
             "id": "e-1",
-            "sitting": "test",
-            "status": "open",
-        })
+            "source": "scripts/wiki",
+        }, sort_keys=True)
         + "\n",
         encoding="utf-8",
     )

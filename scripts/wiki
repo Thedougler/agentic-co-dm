@@ -201,10 +201,8 @@ def _ledger() -> dict[str, Any]:
         [sys.executable, str(ROOT / "scripts/error-ledger.py"), "--root", str(_tracker_root()), "--format", "json", "error", "list"],
         _tracker_root() if _tracker_root().exists() else ROOT,
     )
-    open_rows = [
-        row for row in rows
-        if isinstance(row, dict) and str(row.get("status", "")).casefold() == "open"
-    ] if isinstance(rows, list) else []
+    # every errors.md entry is open (data-model §1); error list returns {entries, recurrence, missing_sources}
+    open_rows = [row for row in rows.get("entries", []) if isinstance(row, dict)] if isinstance(rows, dict) else []
     return {
         "open": len(open_rows),
         "ids": [str(row.get("id")) for row in open_rows if row.get("id")],
@@ -597,7 +595,7 @@ def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
         times,
     )
     traces = _load_jsonl(_trace_path() or (ROOT / ".local/efficiency/traces.jsonl"))
-    trends = build_trends(sittings if sittings is not None else [], errors if errors is not None else [], traces)
+    trends = build_trends(sittings if sittings is not None else [], errors if errors is not None else {}, traces)
     focus = build_focus(lint, remorph=a6, open_errors=errors, cap=5)
     tokens = _timed("scripts/token-count.py", lambda: _tokens(vault, paths, args), times)
 
@@ -609,10 +607,7 @@ def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
     core = _timed("health.core", lambda: build_core_files(vault), times)
     if isinstance(context, dict):
         context["act"] = list(context.get("act") or []) + list(core.get("act") or [])
-    open_ledger = any(
-        isinstance(row, dict) and str(row.get("status", "")).casefold() == "open"
-        for row in (errors or [])
-    )
+    open_ledger = bool(errors.get("entries")) if isinstance(errors, dict) else False
     _tune(
         "health",
         sorted(((name, ms) for name, ms in times if name != "health.lint"), key=lambda item: item[1], reverse=True),

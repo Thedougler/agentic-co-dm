@@ -166,3 +166,133 @@ class QmdMaintenanceTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+LEDGER = ROOT / "scripts" / "error-ledger.py"
+
+
+class ErrorLedgerTests(unittest.TestCase):
+    """scripts/error-ledger.py over a scratch errors.md (contracts/error-ledger.md, data-model §1)."""
+
+    def setUp(self) -> None:
+        self._tmp = tempfile.TemporaryDirectory(prefix=".ledger-")
+        self.root = Path(self._tmp.name)
+        self.addCleanup(self._tmp.cleanup)
+
+    def ledger(self, *args: str, cwd: Path | None = None) -> tuple[int, dict]:
+        proc = run([PYTHON, str(LEDGER), "--root", str(self.root), *args], cwd=cwd or self.root)
+        out = proc.stdout.strip()
+        try:
+            data = json.loads(out) if out else {}
+        except ValueError:
+            data = {"raw": out}
+        return proc.returncode, data
+
+    def append(self, source: str, cause: str, sitting: str = "lint: a", *extra: str) -> tuple[int, dict]:
+        return self.ledger("error", "append", "--source", source, "--cause", cause, "--sitting", sitting, *extra)
+
+    def raw(self) -> str:
+        path = self.root / "errors.md"
+        return path.read_text(encoding="utf-8") if path.exists() else ""
+
+    def test_exact_match_attaches_and_other_causes_create(self) -> None:
+        code, first = self.append(".vale.ini", "Vale E100 on CoDM")
+        self.assertEqual((code, first["status"], first["occurrence_index"], first["occurrences"]), (0, "created", 0, 1))
+        code, same = self.append(".vale.ini", "  Vale E100 on CoDM ", "lint: b")
+        self.assertEqual((same["status"], same["id"], same["occurrence_index"], same["occurrences"]),
+                         ("attached", first["id"], 1, 2))
+        _, reworded = self.append(".vale.ini", "Vale E100 on the CoDM style")
+        self.assertEqual(reworded["status"], "created")
+        self.assertNotEqual(reworded["id"], first["id"])
+        _, other = self.append("scripts/wiki", "Vale E100 on CoDM")
+        self.assertEqual(other["status"], "created")
+        _, repeat = self.append(".vale.ini", "Vale E100 on CoDM", "lint: b")
+        self.assertEqual((repeat["status"], repeat["id"]), ("already_done", first["id"]))
+        entry = json.loads(self.raw().splitlines()[2])
+        self.assertEqual(sorted(entry), ["cause", "evidence", "id", "source"])
+        self.assertEqual(entry["evidence"][0], {"sitting": "lint: a", "detail": "Vale E100 on CoDM"})
+        self.assertTrue(self.raw().startswith("# Error ledger\n\n"))
+
+    def test_attach_within_one_source_and_refuse_across_sources(self) -> None:
+        _, first = self.append(".vale.ini", "Vale E100 on CoDM")
+        code, attached = self.append(".vale.ini", "Deprecated rule silenced", "lint: c", "--attach", first["id"],
+                                     "--detail", "DM Thesis passed")
+        self.assertEqual((code, attached["status"], attached["id"]), (0, "attached", first["id"]))
+        before = self.raw()
+        for target in (first["id"], "e-999"):
+            code, refused = self.append("scripts/wiki", "Other", "lint: d", "--attach", target)
+            self.assertEqual(code, 2)
+            self.assertEqual(refused["status"], "error")
+            self.assertTrue(refused["hint"] and refused["example"])
+        self.assertEqual(self.raw(), before)
+
+    def test_detach_undoes_an_attach_and_keeps_the_last_occurrence(self) -> None:
+        _, first = self.append(".vale.ini", "Vale E100 on CoDM")
+        self.append(".vale.ini", "Vale E100 on CoDM", "lint: b")
+        code, out = self.ledger("error", "detach", "--id", first["id"], "--index", "1")
+        self.assertEqual((code, out["status"], out["occurrences"]), (0, "detached", 1))
+        code, out = self.ledger("error", "detach", "--id", first["id"], "--index", "1")
+        self.assertEqual((code, out["status"]), (0, "already_done"))
+        code, out = self.ledger("error", "detach", "--id", first["id"], "--index", "0")
+        self.assertEqual(code, 2)
+        self.assertIn("drain", out["hint"])
+
+    def test_cause_fixed_flag_is_rejected_with_example(self) -> None:
+        _, first = self.append(".vale.ini", "Vale E100 on CoDM")
+        before = self.raw()
+        code, out = self.ledger("error", "drain", "--id", first["id"], "--cause-fixed", "true")
+        self.assertEqual(code, 2)
+        self.assertEqual(out["error"], "--cause-fixed was removed")
+        self.assertEqual(out["example"], "python3 scripts/error-ledger.py error drain --id e-212")
+        self.assertTrue(out["hint"])
+        self.assertEqual(self.raw(), before)
+
+    def test_list_reports_entries_recurrence_and_missing_sources(self) -> None:
+        _, a = self.append(".vale.ini", "Vale E100 on CoDM", "lint: a")
+        self.append(".vale.ini", "Vale E100 on CoDM", "lint: b")
+        self.append(".vale.ini", "Vale E100 on CoDM", "lint: b", "--detail", "again")
+        _, b = self.append("external:codex-cli", "usage limit", "eval: x")
+        path = self.root / "errors.md"
+        rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines()[2:]]
+        rows[1]["source"] = "scripts/no-such-script"
+        path.write_text("# Error ledger\n\n" + "\n".join(json.dumps(r, sort_keys=True) for r in rows) + "\n", encoding="utf-8")
+        code, out = self.ledger("error", "list")
+        self.assertEqual(code, 0)
+        self.assertEqual(sorted(out), ["entries", "missing_sources", "recurrence"])
+        self.assertEqual(out["recurrence"], {"total": 2, "by_sitting": {"lint: b": 2}})
+        self.assertEqual(out["missing_sources"], [b["id"]])
+        self.assertEqual([e["id"] for e in out["entries"]], [a["id"], b["id"]])
+        proc = run([PYTHON, str(LEDGER), "--root", str(self.root), "error", "list", "--ids-only"], cwd=self.root)
+        self.assertEqual(proc.stdout.split(), [a["id"], b["id"]])
+
+    def test_source_is_required_and_checked(self) -> None:
+        code, out = self.ledger("error", "append", "--cause", "x", "--sitting", "s")
+        self.assertEqual(code, 2)
+        self.assertIn("--source", out["error"])
+        self.assertTrue(out["example"])
+        code, out = self.append("scripts/no-such-script", "x")
+        self.assertEqual((code, out["status"]), (2, "error"))
+        self.assertEqual(self.raw(), "")
+
+    def test_drain_and_dry_run(self) -> None:
+        code, planned = self.append(".vale.ini", "Vale E100 on CoDM", "lint: a", "--dry-run")
+        self.assertEqual((code, planned["status"], self.raw()), (0, "planned", ""))
+        _, first = self.append(".vale.ini", "Vale E100 on CoDM")
+        self.append(".vale.ini", "Vale E100 on CoDM", "lint: b")
+        before = self.raw()
+        for args in (("detach", "--id", first["id"], "--index", "1"), ("drain", "--id", first["id"])):
+            code, out = self.ledger("error", *args, "--dry-run")
+            self.assertEqual((code, out["status"]), (0, "planned"))
+            self.assertIn("planned", out)
+            self.assertEqual(self.raw(), before)
+        _, out = self.ledger("error", "drain", "--id", first["id"])
+        self.assertEqual(out["status"], "drained")
+        _, out = self.ledger("error", "drain", "--id", first["id"])
+        self.assertEqual(out["status"], "already_done")
+
+    def test_runs_from_any_cwd(self) -> None:
+        elsewhere = self.root / "deep" / "dir"
+        elsewhere.mkdir(parents=True)
+        proc = run([PYTHON, str(LEDGER), "error", "list"], cwd=elsewhere)
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        self.assertIn("entries", json.loads(proc.stdout))
