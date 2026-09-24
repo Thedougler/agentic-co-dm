@@ -83,7 +83,7 @@ earns a page.
 
 Copy `wiki/templates/faction.md` as scaffold. The co-located
 `wiki/templates/contracts/faction.yml` owns required, optional, and
-lifecycle-gated section semantics — consult it for what to include or omit.
+status-gated section semantics — consult it for what to include or omit.
 Faction pages use only the `[!narration]` callout; keep DM-facing material as
 ordinary prose.
 

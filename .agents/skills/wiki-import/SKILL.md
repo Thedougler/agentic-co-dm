@@ -140,9 +140,6 @@ relationships:
     type: <relation>
 </for>
 </if>
-lifecycle: draft
-lifecycle_changed: <today YYYY-MM-DD>
-base_confidence: 0.5
 tier: supporting
 created: <ISO timestamp>
 updated: <ISO timestamp>
@@ -191,7 +188,7 @@ Walk the bundle directory tree. For each `.md` file that is **not** a reserved f
    - `updated` ← `timestamp` (or now if absent).
    - `created` ← the preserved `created` extension key if present, else now.
    - `sources` ← the preserved `sources` extension key if present; else `["imported from OKF bundle <bundle path>"]`. If a `resource` URL is present and not already in `sources`, add it.
-   - Carry through any other preserved extension keys verbatim (`relationships`, `lifecycle`, `tier`, `base_confidence`, …). These make the round-trip lossless.
+   - Carry through any other preserved extension keys verbatim (`relationships`, `tier`, …). These make the round-trip lossless.
 4. **Reverse-transform body links** — markdown links that point at `.md` paths become wikilinks (this restores both real cross-links and forward-references the exporter preserved per `wiki-export` Step 3.5):
    - `[text](../concepts/transformers.md)` or `[text](/concepts/transformers.md)` → resolve the path (relative to this file's dir, or bundle-root for `/`-absolute) to a concept id → `[[concepts/transformers]]`, or `[[concepts/transformers|text]]` when `text` differs from the target's title. The target's title comes from the bundle page when it exists; otherwise compare against the last path segment.
    - Treat the markdown target as a **file path first**: normalize the `.md` path relative to the current file, then strip the trailing `.md` from the resolved file path to recover the page id. Do not try to infer the id from directory traversal segments before resolving the full file path. This preserves round-trips for folder-note layouts like `projects/social-twitter.md` plus `projects/social-twitter/...`, where `../../social-twitter.md` must restore to `projects/social-twitter`.

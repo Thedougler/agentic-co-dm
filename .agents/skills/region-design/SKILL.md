@@ -95,7 +95,7 @@ landmarks, routes, or nested places exceed a site-place page.
    state, and open questions.
 2. **Identity sentence** before drafting (see refuse gate).
 3. **Scaffold.** Copy `wiki/templates/region.md`. Frontmatter: `type: region`,
-   lifecycle/reveal/campaign/visibility, parent `region`, `scale`
+   reveal/campaign/visibility, parent `region`, `scale`
    (macro|regional|local), `kind`, `structure`, `as_of`, `summary`.
 4. **Runnable fill.** Narration (perceivable); At a glance (scale, kind,
    character, anchor, known-for, feared-for, parent; DM thesis = table function:

@@ -37,7 +37,7 @@ Named ingest files to the live wiki without a second chat accept. `dm_placed_ing
 2. **Manifest (do not read `.manifest.json` whole — token waste):** use `python3 scripts/manifest.py` against `$OBSIDIAN_VAULT_PATH` — `stats`, `list [--limit]`, `has`/`get`/`delta` for sources, `lookup --page` for reverse page→sources, and `record` after a completed write. `record` is the sole completion writer; do not follow it with `obsidian-wiki cache-update` or another manifest write. Loading the full ledger into context is a bug.
 4. Prefer capped lookup (`qmd` / targeted `rg` / `hot.md`) over reading all of `index.md` or `log.md` unless you truly need the full inventory
 5. Skim recent activity via `hot.md` first; open `log.md` only for a bounded recent slice if needed
-6. **Campaign vault.** Read `$OBSIDIAN_VAULT_PATH/AGENTS.md` (`wiki/AGENTS.md` in this repo). Load craft skills per the Quality pass in Step 5. Campaign pages need `type`, `lifecycle`, and `reveal` from that file in addition to llm-wiki fields. A body written in AI shorthand or telegram stubs is invalid — rewrite as complete sentences before filing. Ingest only sources the DM named and approved (FR-019). Write distilled pages plus thin complete-sentence stubs for names in those sources (including as links). Do not create pages for names the sources do not contain. Do not invent extra names. Early-dev `wiki/_raw/` samples stay in `_raw/` as illustrations, not a layout source (do not move them to `_archive/`). General ingest still distills. Sample `type: monster` maps to campaign `type: creature`. Wrapup of a legacy page keeps that page's shape; it MUST NOT convert the page into a sample.
+6. **Campaign vault.** Read `$OBSIDIAN_VAULT_PATH/AGENTS.md` (`wiki/AGENTS.md` in this repo). Load craft skills per the Quality pass in Step 5. Campaign pages need `type` and `reveal` from that file in addition to llm-wiki fields. A body written in AI shorthand or telegram stubs is invalid — rewrite as complete sentences before filing. Ingest only sources the DM named and approved (FR-019). Write distilled pages plus thin complete-sentence stubs for names in those sources (including as links). Do not create pages for names the sources do not contain. Do not invent extra names. Early-dev `wiki/_raw/` samples stay in `_raw/` as illustrations, not a layout source (do not move them to `_archive/`). General ingest still distills. Sample `type: monster` maps to campaign `type: creature`. Wrapup of a legacy page keeps that page's shape; it MUST NOT convert the page into a sample.
 
 
 When writing internal links in Step 5, apply the link format described in `llm-wiki/SKILL.md` (Link Format section) according to the `OBSIDIAN_LINK_FORMAT` value you read.
@@ -500,21 +500,11 @@ relationships:
 
 **Write a `summary:` frontmatter field** on every new page (1–2 sentences, ≤200 characters) answering "what is this page about?" for a reader who hasn't opened it. When updating an existing page whose meaning has shifted, rewrite the summary to match the new content. This field is what `wiki-query`'s cheap retrieval path reads — a missing or stale summary forces expensive full-page reads.
 
-**Add confidence and lifecycle fields** to every new page's frontmatter:
+**Add a tier** to every new page's frontmatter:
 
 ```yaml
-base_confidence: <computed>   # [0.0, 1.0] — see llm-wiki/SKILL.md Confidence formula
-lifecycle: draft
-lifecycle_changed: "<ISO date today>"
 tier: supporting              # default for new pages; promote to core when ≥5 incoming links
 ```
-
-Compute `base_confidence` using the formula from `llm-wiki/SKILL.md` (Confidence and Lifecycle section):
-- Count distinct source_ids for this page
-- Classify each source's quality bucket
-- `base_confidence = min(N/3, 1.0) × 0.5 + avg_quality × 0.5`
-
-When **updating** an existing page, recompute `base_confidence` only if sources changed materially (source added or removed). Do not rewrite it on every update — this avoids git churn. Leave `lifecycle` unchanged on update; only the human editor promotes lifecycle state.
 
 **Apply a `visibility/` tag** if the content clearly warrants one (optional):
 - `visibility/internal` — architecture internals, system credentials patterns, team-only context
@@ -606,7 +596,7 @@ After ingesting, verify:
 - [ ] DM-only, player-facing, mechanical, and spoken content stayed on their surfaces
 - [ ] Craft skills ran for the destination surface (`writing-for-humans`, `obsidian-markdown`, `theatre-of-the-mind`, `dnd5e-mechanics` as applicable)
 - [ ] Every new page has frontmatter with title, category, tags, sources
-- [ ] Campaign pages also have `type`, `lifecycle`, `reveal`; body is complete-sentence prose (FR-018)
+- [ ] Campaign pages also have `type`, `reveal`; body is complete-sentence prose (FR-018)
 - [ ] Filed campaign pages match Layout kinds and jobs in `$OBSIDIAN_VAULT_PATH/AGENTS.md` (pointer; do not copy the job table here)
 - [ ] Multi-file runs were sequential: one file `complete` or `failed` before the next `open`; per-file report is in `log.md` and the end-of-run list
 - [ ] Failed files were not hashed as success

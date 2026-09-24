@@ -86,7 +86,7 @@ routes, laws, or urban pressure exceed a site-place page.
 
    If there is no current pressure or player opening, keep retrieving or ask.
 3. **Scaffold.** Copy `wiki/templates/city.md`. Fill frontmatter: `type: place`,
-   `kind: city`, lifecycle/reveal/campaign/visibility, region, status,
+   `kind: city`, reveal/campaign/visibility, region, status,
    population, government, ruler, controlling_faction, summary.
 4. **Runnable fill.** Arrival (perceivable); At a glance (character, known-for,
    visible power, **current pressure**, opportunity, population, one-sentence DM

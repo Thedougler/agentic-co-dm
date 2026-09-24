@@ -31,7 +31,7 @@ List the sessions or wiki pages that ground this analysis.
 
 ## Decision
 
-The DM accepts, edits, or rejects. `lifecycle` stays `proposed` until that decision.
+The DM accepts, edits, or rejects.
 
 <!--
 Design basis: keep table analysis off the hub and off campaign clocks. Review how

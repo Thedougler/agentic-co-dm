@@ -86,7 +86,7 @@ For the current file:
 3. Repair **every** finding in this file:
    - resolve links against existing owner filenames;
    - add required frontmatter;
-   - correct type, lifecycle, and filename;
+   - correct type and filename;
    - apply the page template and complete every required section;
    - load the page's owner skill when a section needs domain content;
    - create plot only when the user explicitly asks; otherwise defer and

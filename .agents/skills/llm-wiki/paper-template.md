@@ -4,7 +4,7 @@ For ML/AI/LLM/VLM academic papers landing in `references/`. The substance lives 
 
 Obsidian renders the needed primitives natively: Mermaid fenced diagrams, `$$…$$` LaTeX (MathJax), markdown tables, and `![[image]]` / `![[paper.pdf#page=N]]` embeds.
 
-Frontmatter, provenance markers, confidence, lifecycle, and `relationships:` are unchanged from the generic template — only the body sections differ.
+Frontmatter, provenance markers, and `relationships:` are unchanged from the generic template — only the body sections differ.
 
 ````markdown
 ---

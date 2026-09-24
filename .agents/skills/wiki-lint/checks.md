@@ -72,30 +72,6 @@ Every page should have `summary:` (1–2 sentences, ≤200 chars) for cheap retr
 
 **Fix:** run `/wiki-synthesize`.
 
-### 12. Confidence and Lifecycle Schema
-
-Script detects `bad_type` and `bad_lifecycle`. Additional agent checks below. `--check` reports; repair mode applies the same lint loop. Confidence is a semantic judgment — deterministic tools cannot infer it from source strings.
-
-#### 12a — `lifecycle` enum
-
-Flag values outside effective set (default: `{draft, reviewed, verified, disputed, archived}`). Fix: human only.
-
-#### 12b — `base_confidence` range
-
-Flag values outside `[0.0, 1.0]`; flag absence only when owner schema requires it. Fix: human only.
-
-#### 12c — Stale page report
-
-Computed at read time: `is_stale = (today − updated) > 90 days`. Report stale+verified as high priority. `--fix` does not rewrite lifecycle — staleness clears on re-ingest.
-
-#### 12d — Supersession integrity
-
-For pages with `superseded_by`: verify target exists, target not archived, no cycles. Warn if `lifecycle != archived` while `superseded_by` set. Fix: human.
-
-#### Enforcement
-
-Non-reserved content pages must contain finite `base_confidence` in `[0.0, 1.0]` and documented lifecycle value (owner schema may relax). Missing/malformed trust fields are hard errors.
-
 ### 13. Typed Relationships
 
 Script detects via `typed_relationships` key. Fix: invalid type → correct only if absent from both framework and owner sets; never replace a valid owner type with `related_to`. Broken target → update/remove. Self-reference → remove.

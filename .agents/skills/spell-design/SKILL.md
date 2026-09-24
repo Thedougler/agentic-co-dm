@@ -90,7 +90,7 @@ NPC, or item until it has a name or recurring consequence.
    contradict established wiki facts.
 2. **Identity sentence** before drafting (see refuse gate).
 3. **Scaffold.** Copy `wiki/templates/spell.md`. Frontmatter: `type: spell`,
-   lifecycle/reveal/campaign/visibility, `level`, `school`, `ritual`, `summary`.
+   reveal/campaign/visibility, `level`, `school`, `ritual`, `summary`.
 4. **Runnable fill.** Narration (perceivable); Level/School/(Ritual); Casting
    Time, Range, Components, Duration with concrete 2024 values; one short effect
    block (save/attack, DC, damage, conditions, targets/area, Concentration

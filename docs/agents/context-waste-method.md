@@ -43,7 +43,7 @@ Prior art (cite, do not reinvent): `scripts/manifest.py`, `hot.md` preference, `
 | Re-dump CLI stdout already on disk | Path to artifact + 1-line metric |
 
 ### Necessary structure (NOT waste)
-- Thin frontmatter (`type`, `title`, `summary`, lifecycle, sources, tier) — enables cheap retrieval
+- Thin frontmatter (`type`, `title`, `summary`, sources, tier) — enables cheap retrieval
 - Layout jobs / shared headings (`At a Glance`, `Connections`, …) when they carry content
 - One-owner numbers (Sheet / Combat Profile once — not a second Foundry novel)
 - Wikilinks + title-stem filenames under `entities/{type}/`

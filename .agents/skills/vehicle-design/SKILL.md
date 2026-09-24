@@ -88,7 +88,7 @@ named or recurring.
    aliases, berths, conditions, owners, cargo, and uncertainties.
 2. **Identity sentence** before drafting (see refuse gate).
 3. **Scaffold.** Copy `wiki/templates/vehicle.md`. Frontmatter: `type: vehicle`,
-   lifecycle/reveal/campaign/visibility, `kind`, region/berth when known,
+   reveal/campaign/visibility, `kind`, region/berth when known,
    `summary`.
 4. **Runnable fill.** Narration (silhouette/scale/access); Sheet (Size, Type,
    Speed, Crew min, Passengers, Cargo — numeric or Unknown); Components (Hull

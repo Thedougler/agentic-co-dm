@@ -17,12 +17,8 @@ tier: supporting
 related: []
 extends: null
 contradicts: null
-superseded_by: null
 capture_source: claude-session
 project: "<project name or null>"
-base_confidence: 0.75
-lifecycle: draft
-lifecycle_changed: <YYYY-MM-DD>
 provenance:
   extracted: 0.85
   inferred: 0.15
@@ -80,14 +76,14 @@ Apply provenance markers inline per the `llm-wiki` convention:
 | `^[inferred]` | Synthesized or generalized beyond what was directly said |
 | `^[ambiguous]` | Uncertain, potentially incomplete, or contradicted elsewhere |
 
-Use the table below to set `base_confidence` and the `provenance` split:
+Use the table below to set the `provenance` split:
 
-| Evidence strength | `extracted` | `inferred` | `base_confidence` |
-|---|---|---|---|
-| Build error + test pass | 0.90 | 0.10 | 0.80–0.90 |
-| Fix applied, appeared to work | 0.75 | 0.25 | 0.70–0.75 |
-| Discussed, not fully confirmed | 0.60 | 0.40 | 0.60 |
-| Reasoned from a single case | 0.50 | 0.50 | 0.55 |
+| Evidence strength | `extracted` | `inferred` |
+|---|---|---|
+| Build error + test pass | 0.90 | 0.10 |
+| Fix applied, appeared to work | 0.75 | 0.25 |
+| Discussed, not fully confirmed | 0.60 | 0.40 |
+| Reasoned from a single case | 0.50 | 0.50 |
 
 `extracted + inferred` should sum to 1.0 (or include a small `ambiguous` fraction if applicable).
 

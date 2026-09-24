@@ -204,8 +204,6 @@ For each extracted blob, determine where it belongs in the wiki:
    sources: [<agent>://<path/to/session>]
    created: <date>
    updated: <date>
-   confidence: high|medium|low
-   lifecycle: stable|draft
    ---
    ```
    Set `sources` with the agent prefix so `memory-bridge` can find it later.

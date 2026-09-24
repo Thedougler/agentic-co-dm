@@ -90,7 +90,6 @@ unused template section says it may be omitted. Fill these frontmatter fields:
 
 ```yaml
 type: lore
-lifecycle: proposed
 reveal: unrevealed
 campaign: <campaign slug>
 visibility: dm
@@ -102,8 +101,8 @@ era: "<known era or blank>"
 summary: "<one runnable sentence>"
 ```
 
-Do not add a second lore template. Do not set lifecycle or reveal to canon-level
-status before the players interact with or witness the lore.
+Do not add a second lore template. Do not set `reveal: revealed` before the
+players interact with or witness the lore.
 
 ### 3. Fill The Page
 

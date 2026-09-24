@@ -56,7 +56,7 @@ Run without fleet chat when clean. Emit compact JSON path+metric (no body dumps)
 | A5 | Empty `_raw/` check | Ingest inbox must clear; report leftover staging files — never overwrite `_raw/` as live canon |
 | A6 | Dry-run / plan reports | Dedup audit + structural remorph plans — report first; **filename legacy remorph apply is greenlit**; other applies stay Nick-gated |
 
-Layer A MAY apply FR-002 structural repairs unattended (links, required frontmatter, nearest-valid type/lifecycle, kebab remorph). Classify broken links (near-miss vs planned) as report-never-edit unless a deterministic safe FR-002 fix exists. Lint-green ≠ fidelity (CD/Nick craft gate).
+Layer A MAY apply FR-002 structural repairs unattended (links, required frontmatter, nearest-valid type, kebab remorph). Classify broken links (near-miss vs planned) as report-never-edit unless a deterministic safe FR-002 fix exists. Lint-green ≠ fidelity (CD/Nick craft gate).
 
 **Quiet rule:** if A1 HARD count = 0 and A5 clear and no P0 waste leads, stay silent (no Nick ping).
 

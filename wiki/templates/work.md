@@ -26,4 +26,4 @@ Write the Work in complete grammatical sentences. Mark what is invented. Cite `[
 
 ## Decision
 
-The DM accepts, edits, or rejects. `lifecycle` stays `proposed` until that decision.
+The DM accepts, edits, or rejects.

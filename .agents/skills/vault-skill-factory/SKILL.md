@@ -39,8 +39,6 @@ conversation into a page; the factory turns a body of pages into a reusable skil
      Note: `_generated-skills/` holds runtime Agent-Skill bundles (`name` + `description` frontmatter),
      **not** wiki pages — never write them into `skills/` (that category is for knowledge pages and
      is graph-/lint-/index-tracked).
-   - `SKILL_FACTORY_MATURITY` — comma list of `lifecycle:` values that count as "mature".
-     Default: `reviewed,verified`. Pages with `tier: core` also qualify.
 2. Prefer `hot.md` + capped `qmd`/`rg` to learn what the vault holds; full `index.md` only if required — whole-file preload is token waste.
 
 ## Step 1: Choose the cluster
@@ -54,8 +52,8 @@ candidates.
      (or `vsearch`) to gather semantically related pages — this is the intended way to find the
      full cluster, not just exact-tag matches.
    - Otherwise `Grep`/`Glob` by tag and wikilink-neighbourhood (pages linked from the seed pages).
-3. **Filter by maturity:** keep pages whose `lifecycle:` is in `SKILL_FACTORY_MATURITY` **or**
-   whose `tier:` is `core`. Drop `draft` pages unless the user explicitly includes them.
+3. **Filter by maturity:** keep pages whose `tier:` is `core`, plus pages the user explicitly
+   includes.
 4. **Confirm the cluster with the user** (list page names + count) before generating. If fewer than
    ~3 mature pages match, say so — a skill from one thin page isn't worth it; offer to proceed anyway
    or widen the net.
@@ -94,7 +92,7 @@ synthesis into fact.
 `sources:` — so the skill stays auditable back to the vault and original sources.
 
 **`SKILL_FACTORY.md`** (factory metadata, kept out of the installable skill) records: generation
-date, the cluster pages + their lifecycle/tier, the maturity filter used, and the vault commit/hash
+date, the cluster pages + their tier, the maturity filter used, and the vault commit/hash
 if available. This lets a regenerate-on-update workflow diff later.
 
 Optional, if the user asks: append/update a `marketplace.json` entry in the output dir (the OpenKB

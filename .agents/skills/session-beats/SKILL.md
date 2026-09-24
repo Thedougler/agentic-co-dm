@@ -24,7 +24,7 @@ page, and only the party's choices and the dice stay open.
 
 ## Gates
 
-Prep only. Follow `docs/agents/work.md` for Work protocol, invention, accept, and lifecycle.
+Prep only. Follow `docs/agents/work.md` for Work protocol and invention.
 Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
 Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § Fill the silence.
 

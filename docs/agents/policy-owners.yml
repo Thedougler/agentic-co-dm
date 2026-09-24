@@ -16,7 +16,7 @@ policies:
     consumers:
       - tools/wiki_ops/template_contracts.py
       - .agents/skills/faction-design/SKILL.md
-    reference: "Contract sections own required, optional, and lifecycle semantics."
+    reference: "Contract sections own required, optional, and status-gated semantics."
   repair_safety:
     owner: specs/025-agent-safe-wiki-ops/contracts/mutation-contract.md
     consumers:
