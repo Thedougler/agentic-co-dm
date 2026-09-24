@@ -11,8 +11,14 @@ Each decision names the chosen option, why it was chosen, and what else was cons
 
 ## R2 Vale
 
-- **Decision**: remove `CoDM` from the 6 `BasedOnStyles` lines in `.vale.ini`. Nothing else changes: `styles/Deprecated/{DMThesis,FactionClock}.yml`, `Vocab = CoDM`, the `Packages` line, and `tools/creative_lint/vale_vocab.py` all stay.
+- **Decision**: remove `CoDM` from the 6 `BasedOnStyles` lines in `.vale.ini`. `styles/Deprecated/{DMThesis,FactionClock}.yml`, `Vocab = CoDM`, and the `Packages` line stay. `tools/creative_lint/vale_vocab.py` gets one change: it excludes `DM` from the generated word list (Analyze B1, below).
 - **Rationale**: `styles/` has no `CoDM` directory. Vale 3.21.0 exits with `E100 [loadStyles] … style 'CoDM' does not exist on StylesPath` (reproduced 2026-09-24). Nick's decision and constitution v6.0.1 XXIV keep `Deprecated` and the vocabulary in Vale. For region, creature, and npc pages, `BasedOnStyles` becomes `Deprecated` alone, which is what actually loaded before `CoDM` went missing.
+- **Vocabulary blocks DMThesis (Analyze B1, verified 2026-09-24 at 25c3bef0 in a `git archive` scratch copy with Vale 3.21.0)**: `render_vocab` puts `DM` (line 564) and `DM Voice Notes` in `accept.txt`. `_owner_terms` splits the title and alias "DM Voice Notes" of `wiki/synthesis/dm-voice-notes.md` into capitalized words. Vale exempts accepted words from every rule.
+  - Scratch file with "DM Thesis" and "faction clock", with the generated vocab: only `Deprecated.FactionClock` fires.
+  - The same file with `^DM$` removed (`DM Voice Notes` kept): `Deprecated.DMThesis` fires (1:5), and `FactionClock` still fires. So removing the one term is sufficient.
+  - Whole live vault (838 pages; the lint page set without `_archive`, `_raw`, `_readouts`, `_meta`, `templates`), `vale --output=JSON` with the freshly generated vocab vs the same vocab minus `DM`: 8,501 vs 8,501 alerts, 0 new, 0 gone. No enabled style (`Deprecated`, ai-tells, proselint, write-good, Readability; `Vale.Spelling` is not enabled) flags `DM`. No live page contains "DM Thesis" today.
+  - No other vocab term collides with a Deprecated token today (`Thesis`, `Faction`, `Clock`, `Agenda` are absent).
+  - **Design**: a documented exclusion set in `vale_vocab.py` (`_RULE_TOKEN_WORDS = {"DM"}`), applied in `proper_nouns`. Deriving exclusions from the style regexes was rejected: the `FactionClock` token is a case-insensitive regex, and parsing style YAML into word lists is more code than one constant (FR-046). A regression that runs both Deprecated rules against the generated vocab guards future collisions instead. This needs no spec change: spec Q1 ("vocab stays unchanged") covers `Vocab = CoDM` and the styles, not the generated word list (Nick, 2026-09-24).
 - **Alternatives**: recreating a `CoDM` style was rejected, because FR-023 bars new custom Vale styles. Moving `Deprecated` to Python was rejected by Nick's 2026-09-24 decision.
 
 ## R3 errors.md format and matching
