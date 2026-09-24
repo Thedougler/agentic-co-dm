@@ -12,7 +12,7 @@ updated: 2026-09-18
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "Theatrical gnome curio dealer in Calveno, proprietor of the Cabinet of Morsani, completing a collection of thirty-two rings and their stories."

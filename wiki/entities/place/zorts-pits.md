@@ -8,7 +8,7 @@ sources: []
 summary: "An exotic-animal pit in Le Paludi run by Zort."
 base_confidence: 0.20
 lifecycle: proposed
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 kind: site
