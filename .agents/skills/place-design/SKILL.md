@@ -52,8 +52,9 @@ These hold in every step.
   section that owns the feature.
 - **Explicit DM layer** (AGENTS.md **HARD: dm-facing-explicit**). Every tell has
   its truth on the page: who, what, why, and what is at stake, by name. When
-  canon is truly silent and you are not inventing, name the canon gap and who
-  decides it; a gap is never written as mystery ("something waits below").
+  canon is silent, the truth is a marked canon proposal
+  (`docs/agents/table-ready.md` § Fill the silence); a gap is never written as
+  mystery ("something waits below").
 - **Canon gaps stay gaps.** A cardinal direction with no established neighbour
   is written as a gap, never filled with an invented site stated as fact.
 - **Honest capabilities.** Flight, teleportation, burrowing, darkvision, and

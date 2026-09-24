@@ -15,13 +15,16 @@ tier: supporting
 created: 2026-09-12T00:00:00Z
 updated: 2026-09-13T07:45:00Z
 type: region
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 kind: region
 region: "Verdant Teeth / eastern Midchain"
 ---
 # Karath
+
+![[karath-overview.png|Karath overview: blackwater mouths behind reef gaps]]
+
 > [!narration] Narration
 > Rainforest crowds tannin-black river mouths behind reef gaps. No open landing shows. Wet cuts run inland toward hatchery huts and pens, and the near shore sits only a short channel from another green island.
 

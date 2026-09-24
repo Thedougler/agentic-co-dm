@@ -16,7 +16,7 @@ tier: supporting
 created: 2026-09-13T07:20:00Z
 updated: 2026-09-16
 type: item
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 kind: seal
 rarity: ""
@@ -32,6 +32,8 @@ relationships:
 invention: true
 ---
 # Grung - Authority Seal
+
+![[grung-authority-seal-overview.png|Spent Grung Authority Seals in the Turned Hollow]]
 
 > [!narration] Grung - Authority Seal
 > Spent [[grung-authority-seal|Grung Authority Seals]] lie half-buried near old grung bones in [[grasslands]]. Torn gold-script edges still show. They are no longer active.

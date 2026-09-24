@@ -66,6 +66,9 @@ flexGrow=1
 Mizobasho's posture changes when a foreign threat reaches the island or when someone leaves evidence that the clan cannot ignore.
 ```
 ````
+### Voice
+
+Mizobasho speaks in quiet, precise observations and avoids explaining the clan's hidden routes. His ask is, “Stay where the marsh can see you.” His refusal is, “You will not take that path.” Under pressure, he says, “The mist hides us because we choose what it reveals.”
 
 ## Connections
 

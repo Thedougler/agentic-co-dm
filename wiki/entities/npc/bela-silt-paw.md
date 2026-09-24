@@ -70,6 +70,10 @@ flexGrow=1
 The rescue clock is still running. The Water [[Weird]] holding Bela in the chamber remains the immediate threat; Bela has no combat statistics in the source.
 ```
 ````
+### Voice
+
+Bela speaks through exhaustion and keeps rescue, not combat, at the center of every exchange. Her ask is, “Get me out before the water rises.” Her refusal is, “I cannot stay here any longer.” Under pressure, she says, “Leave the cache; take me first.”
+
 
 ## Connections
 

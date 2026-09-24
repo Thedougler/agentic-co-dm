@@ -71,10 +71,10 @@ flexGrow=1
 
 | Round / trigger | What happens | What the party sees |
 | --- | --- | --- |
-| 1 | Root Lashes at the first mover within 20 feet. Trail-Pinch if two or more rescuers are in a line inside 60 feet. | ==_Roots as thick as a wrist snap out of the curtain, and the ground between the pits heaves up in a ridge of knuckled root._== |
-| 2 | Same. At the end of the round, the last of the deer-stalker's bones drops out. The trunk is empty. (If the party went in with no plan, this happens at the end of round 1.) | ==_A skull with antlers drops from the trunk's gap and rolls to the bottom of the pit. Inside, the dark is empty._== |
-| 3 | If nothing moved in the curtain since its last turn, it engulfs Nello. Otherwise it lashes at movers and engulfs a Grappled rescuer if one is within 5 feet of the trunk. | ==_The roots around Nello tighten and draw him backward toward the trunk, his bare feet dragging through the dirt._== |
-| 4 | At the start of the fig's turn, whoever is in the trunk takes `4d6`. Nello dies on this tick unless he was pulled out. | ==_The trunk creaks closed like a fist, and the gold plates in the bark tick against each other._== |
+| 1 | Root Lashes at the first mover within 20 feet. Trail-Pinch if two or more rescuers are in a line inside 60 feet. | _Roots as thick as a wrist snap out of the curtain, and the ground between the pits heaves up in a ridge of knuckled root._ |
+| 2 | Same. At the end of the round, the last of the deer-stalker's bones drops out. The trunk is empty. (If the party went in with no plan, this happens at the end of round 1.) | _A skull with antlers drops from the trunk's gap and rolls to the bottom of the pit. Inside, the dark is empty._ |
+| 3 | If nothing moved in the curtain since its last turn, it engulfs Nello. Otherwise it lashes at movers and engulfs a Grappled rescuer if one is within 5 feet of the trunk. | _The roots around Nello tighten and draw him backward toward the trunk, his bare feet dragging through the dirt._ |
+| 4 | At the start of the fig's turn, whoever is in the trunk takes `4d6`. Nello dies on this tick unless he was pulled out. | _The trunk creaks closed like a fist, and the gold plates in the bark tick against each other._ |
 ```
 ````
 

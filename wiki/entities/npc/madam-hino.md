@@ -66,6 +66,9 @@ flexGrow=1
 Hino's posture changes when an outsider threatens the Omusubi Family, the Ryu no Kage, or the secret of her appearance.
 ```
 ````
+### Voice
+
+Madam Hino speaks in brief, formal commands and avoids discussing her true appearance. Her ask is, “Serve the Omusubi Family, and do not ask who stands before you.” Her refusal is, “That name is not yours to speak.” Under pressure, she says, “Leave now, and the Ryu no Kage will remember that you were given the chance to leave.”
 
 ## Connections
 

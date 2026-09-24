@@ -11,7 +11,7 @@ created: 2026-09-12
 updated: 2026-09-14
 type: creature
 lifecycle: proposed
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 region: aruhe

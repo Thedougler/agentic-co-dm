@@ -75,8 +75,8 @@ theirs.
 ## When the sources are silent
 
 - Missing appearance, stock, or layout: get it from the owner skill for that
-  page, or return the gap. Leave it out of the prose rather than filling it
-  with a genre default.
+  page, which proposes it when canon is silent. Until the owner holds it, leave
+  it out of the prose rather than filling it with a genre default.
 - Silence is not absence. Write "no guards at the gate" only when a source
   says the gate is unguarded.
 - Parent and art disagree: follow the parent and flag the mismatch outside the

@@ -167,6 +167,168 @@
         "What the opposition accomplishes each round nobody stops it is stated.",
         "PC moments table gives each PC a call."
       ]
+    },
+    {
+      "id": "veyle-council-hearing",
+      "core": false,
+      "prompt": "Campaign: Veyle, a court-intrigue campaign. Party: three level 11 characters, a bard of House Corran, a paladin of the Crown Oath, and a warlock of the Archfey. Tonight so far: Hook, the Duke's heir collapsed at the masque from poison; Development, the court physician showed the poison is a House Corran family recipe, so the bard is accused; Cliffhanger, a chase through the archive stacks, where the party took Chancellor Ormond's purchase ledger but his agent escaped with the antidote formula; Development, the Dowager Duchess offered her testimony if the party spares her son, the chancellor's secretary, from exposure. Write the Climax: the heir's hearing before the Council of Seven at midnight, while the heir is still dying.",
+      "context": "Veyle has no wiki pages yet. File every page you would create, including owners, under a veyle campaign in the wiki's usual layout.",
+      "expected_output": "One Climax page for a non-combat hearing, harvesting the night's threads, with minted owners.",
+      "assertions": [
+        {
+          "text": "Casts before minting: needed actors, places, items, and creatures come from pages in play or unrevealed wiki pages that fit, and each new mint says why no existing page fit",
+          "type": "process"
+        },
+        {
+          "text": "Harvest table: each thread from the night gives a concrete lever with its effect, and what happens without it",
+          "type": "quality"
+        },
+        {
+          "text": "A non-combat confrontation with a clear procedure: win and lose conditions, phases opened by named triggers, and rulings that resolve it",
+          "type": "quality"
+        },
+        {
+          "text": "The opposition's plan runs on its own and it can escape, and the page says how the party can close each exit",
+          "type": "quality"
+        },
+        {
+          "text": "Every PC has a moment that calls on them specifically",
+          "type": "quality"
+        },
+        {
+          "text": "Outcome rows state the changed world, the costs, and each thread's final state",
+          "type": "quality"
+        },
+        {
+          "text": "Cold-runnable: a DM who never saw the prep can run every moment (opening, each handle, each tick, each outcome) from the page alone, without inventing a name, number, motive, consequence, or picture",
+          "type": "quality"
+        },
+        {
+          "text": "Mechanics are sound 5e for the party's level and the beat's tier: DCs, damage, and opposition numbers fit; every roll's success and failure move play; every named system or consequence carries its operative effect",
+          "type": "quality"
+        },
+        {
+          "text": "DM layers are explicit: each actor's want, truth, and next move is stated plainly, and every planted mystery has its answer on the page",
+          "type": "quality"
+        },
+        {
+          "text": "Players hold the outcome: two or more materially different approaches, each with a world response; hesitation and refusal have consequences; nothing is decided or felt for a PC",
+          "type": "quality"
+        },
+        {
+          "text": "Every PC present has a concrete pull or job in the beat, drawn from their page, goals, or abilities",
+          "type": "quality"
+        },
+        {
+          "text": "Spoken layer meets theatre-of-the-mind: situation first, perception only, speakable aloud, one anchor, ends on a live edge",
+          "type": "quality"
+        },
+        {
+          "text": "Grounded: every named actor, place, item, and creature links an owner page that exists or is minted under outputs from its template; nothing contradicts canon or the stated premise",
+          "type": "process"
+        },
+        {
+          "text": "Legible for the DM mid-session: leads with the point, conditionals in tables, no coaching lines, no owner essays, nothing a DM would have to skip past",
+          "type": "quality"
+        },
+        {
+          "text": "Handoff: the carry-forward names each state variable and its possible values, and each outcome names the next beat's trigger",
+          "type": "quality"
+        },
+        {
+          "text": "Fun at the table: a named memorable element that the page actually delivers, stakes these players care about, and a size that fits the beat's budget",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "penance-bar-mob",
+      "core": true,
+      "prompt": "Write the Climax of a Penance Bar session built on the penance-bar-siege quest: the mob is marching on the coven's grove and the party has what it needs to put the truth about Corvin Ashe in front of them. Treat the leads the quest pages list as the session's earlier beats.",
+      "expected_output": "One Climax page, mostly non-combat, harvesting the quest's leads, composed from existing pages.",
+      "assertions": [
+        {
+          "text": "Casts before minting: needed actors, places, items, and creatures come from pages in play or unrevealed wiki pages that fit, and each new mint says why no existing page fit",
+          "type": "process"
+        },
+        {
+          "text": "Harvest table: each thread the quest planted gives a concrete lever with its effect, and what happens without it",
+          "type": "quality"
+        },
+        {
+          "text": "The confrontation has a clear procedure: win and lose conditions, phases opened by named triggers, rulings that resolve it",
+          "type": "quality"
+        },
+        {
+          "text": "Ashe's plan and the mob run on their own, and the page says how the party can close each exit",
+          "type": "quality"
+        },
+        {
+          "text": "Every PC has a moment that calls on them specifically",
+          "type": "quality"
+        },
+        {
+          "text": "Outcome rows state the changed world, the costs, and each thread's final state",
+          "type": "quality"
+        },
+        {
+          "text": "Cold-runnable: a DM who never saw the prep can run every moment (opening, each handle, each tick, each outcome) from the page alone, without inventing a name, number, motive, consequence, or picture",
+          "type": "quality"
+        },
+        {
+          "text": "Mechanics are sound 5e for the party's level and the beat's tier: DCs, damage, and opposition numbers fit; every roll's success and failure move play; every named system or consequence carries its operative effect",
+          "type": "quality"
+        },
+        {
+          "text": "DM layers are explicit: each actor's want, truth, and next move is stated plainly, and every planted mystery has its answer on the page",
+          "type": "quality"
+        },
+        {
+          "text": "Players hold the outcome: two or more materially different approaches, each with a world response; hesitation and refusal have consequences; nothing is decided or felt for a PC",
+          "type": "quality"
+        },
+        {
+          "text": "Every PC present has a concrete pull or job in the beat, drawn from their page, goals, or abilities",
+          "type": "quality"
+        },
+        {
+          "text": "Spoken layer meets theatre-of-the-mind: situation first, perception only, speakable aloud, one anchor, ends on a live edge",
+          "type": "quality"
+        },
+        {
+          "text": "Grounded: every named actor, place, item, and creature links an owner page that exists or is minted under outputs from its template; nothing contradicts canon or the stated premise",
+          "type": "process"
+        },
+        {
+          "text": "Legible for the DM mid-session: leads with the point, conditionals in tables, no coaching lines, no owner essays, nothing a DM would have to skip past",
+          "type": "quality"
+        },
+        {
+          "text": "Handoff: the carry-forward names each state variable and its possible values, and each outcome names the next beat's trigger",
+          "type": "quality"
+        },
+        {
+          "text": "Fun at the table: a named memorable element that the page actually delivers, stakes these players care about, and a size that fits the beat's budget",
+          "type": "quality"
+        },
+        {
+          "text": "Keeps table time and world time apart: budgets are table minutes; clocks, deadlines, durations, and costs in the fiction are stated in world time or visible triggers",
+          "type": "quality"
+        }
+      ],
+      "files": [
+        "wiki/entities/quest/penance-bar-siege.md",
+        "wiki/entities/quest/penance-bars-fear-siege.md",
+        "wiki/entities/place/penance-bar.md",
+        "wiki/entities/place/Sorrowbell.md",
+        "wiki/entities/npc/corvin-ashe.md",
+        "wiki/templates/climax.md",
+        "wiki/entities/pc/crissdalynn-khinriss.md",
+        "wiki/entities/pc/delmar-fisk.md",
+        "wiki/entities/pc/jean-claude-tabarnack.md",
+        "wiki/entities/pc/perrin-black-jaw.md"
+      ],
+      "context": "Everything you need is in the input files and the documents the skill points to. Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."
     }
   ]
 }

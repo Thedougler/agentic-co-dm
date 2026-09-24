@@ -36,6 +36,8 @@ relationships:
 ---
 # Matteo Scola
 
+![[matteo-scola-overview.png|Matteo Scola overview: survivor at the river slack]]
+
 ````col
 ```col-md
 flexGrow=2

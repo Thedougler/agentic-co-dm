@@ -31,6 +31,8 @@ summary: "A sky-open bowl of Grung dig pits where expeditions died digging under
 ---
 # Turned Hollow
 
+![[turned-hollow-overview.png|Turned Hollow overview: the dig pits around the wrong tree]]
+
 ## Overview
 > [!narration] Narration
 > A bowl of dug earth breaks the forest roof, about seventy paces from rim to rim and three stories deep at its middle, bare to the sky while the trees stand dark all around its edge. Its floor is nothing but digging: hundreds of pits, some knee-deep and some deeper than a tall man, each with its heap of spoil beside it, and the turned soil between them stays bare, with no grass taking hold. The pits crowd tighter and cut deeper toward the center, where one great fig rises out of the deepest hole, twice as tall as the bowl is deep, its trunk a hollow cage of fused roots inside a skirt of hanging roots a few long strides wide. Gold plates and pale bones are grown into its bark, and when air moves across the bowl the hanging roots sway and the plates tick against one another. A Grung skeleton hangs whole in that skirt at shoulder height, roots looped around its waist and one wrist, and at the bottom of the central pit, cut root ends have healed over into dark knots.

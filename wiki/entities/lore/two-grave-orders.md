@@ -26,6 +26,8 @@ summary: "The spent Authority Seals preserve a partial order trail from inland r
 ---
 # Two-Grave Orders
 
+![[two-grave-orders-overview.png|Two-Grave Orders overview: report, replacement, destroy]]
+
 ## At a Glance
 
 **Core truth.** Old Gold-caste orders sent lower-caste Grung inland through [[aruhe]]. The records move from reporting duties to replacement parties and then to a command to find and destroy two graves.

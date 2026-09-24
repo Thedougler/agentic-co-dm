@@ -7,6 +7,7 @@ tags: [shattered-sea, lore]
 sources:
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/faction-sentinels-of-the-eyrie.md"
   - "legacy: /Users/nick/shattered-sea/wiki/shattered-sea/location-high-eyrie.md"
+  - "Talon Vantyrus update (2026-09-23)"
 summary: "A rare Sentinel technique withheld from most practitioners and now tied to the hunt for Crissdalynn's Fate Spinner gift."
 provenance:
   extracted: 1.0
@@ -17,7 +18,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T20:20:00Z
-updated: 2026-09-20
+updated: 2026-09-23
 type: lore
 reveal: unrevealed
 campaign: shattered-sea
@@ -49,6 +50,7 @@ The Sentinels teach [[long-reach]] as a martial technique to every apprentice, b
 * **Exception.** Long Sight is not established as a technique every Sentinel can learn; it is explicitly withheld from most.
 * **Unknown.** Its activation, training, range, reliability, cost, and exact relationship to the Fate Spinner remain undefined.
 * **Impossible or forbidden.** The current sources do not support treating Long Sight as a fully specified spell, combat feature, or automatic prophecy.
+* **Irrational action.** [[talon-vantyrus|Vantyrus]] sees probable futures, not an authored one, and his read weakens whenever people act without preparation, irrationally, for reasons he does not understand, against their own obvious interests, through genuine self-sacrifice, or in deliberate coordination with chaos and uncertainty. His blind spot is treating people as solvable systems, so a willing sacrifice made to preserve someone else's freedom is the hardest choice for him to predict.
 
 ## At the Table
 

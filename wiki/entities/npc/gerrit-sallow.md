@@ -72,6 +72,10 @@ flexGrow=1
 A stranger's blade that finally works. Ysolde has already named that fear: she is the one who would have poured his last drink.
 ```
 ````
+### Voice
+
+Gerrit speaks like every duel is an argument he can still win, and he avoids admitting that the contest has outlasted its purpose. His ask is, “Take your stance and show me what you have.” His refusal is, “Do not call it finished while I am still standing.” Under pressure, he says, “A wound is only a score if someone remembers it.”
+
 
 ## Connections
 

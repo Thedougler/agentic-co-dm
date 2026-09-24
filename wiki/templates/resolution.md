@@ -1,7 +1,7 @@
 ---
 title: "{{title}}"
 category: journal
-tags: [shattered-sea, session-prep]
+tags: ["{{campaign}}", session-prep]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
@@ -9,7 +9,7 @@ type: session-prep
 kind: resolution
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 session: ""
 visibility: dm
 summary: ""
@@ -23,7 +23,7 @@ summary: ""
 
 **Card.** Resolution card from `resolution-beats` — one per Climax outcome this page answers.
 **Outcome.** State in one sentence what is true now because of what the party did.
-**Budget.** About 10–25 minutes.
+**Budget.** About 10–25 minutes of table time.
 
 ## Outcome branches
 
@@ -44,7 +44,7 @@ summary: ""
 
 > [!narration] Closing image
 > <!-- Load `.agents/skills/theatre-of-the-mind` → references/scenes.md → Resolution closing image. -->
-> Spoken narration, 3–6 sentences, second person, present tense. Closing image: the visible change the session made, the cost still showing, people reacting through what they do, and one still final image.
+> Spoken text the DM reads aloud, written to that recipe.
 
 ````col
 ```col-md
@@ -97,7 +97,7 @@ flexGrow=1
 
 ## Character Epilogues
 
-Use only as many as the table needs. Ask rather than prescribe.
+<!-- One row per PC: a prompt the player answers. -->
 
 | Character | Prompt                                                   | What becomes true |
 | --------- | -------------------------------------------------------- | ----------------- |
@@ -135,7 +135,7 @@ Use only as many as the table needs. Ask rather than prescribe.
 
 ## Optional Stinger
 
-Use only if the ending needs one. A stinger should **open a door, not erase the ending**.
+<!-- Keep only when the ending needs one: it opens a door and leaves the ending standing. -->
 
 **Reveal.** State one concrete new fact, arrival, image, message, consequence, or threat.
 
@@ -145,7 +145,6 @@ Use only if the ending needs one. A stinger should **open a door, not erase the 
 
 **Next vector:** [[Person]], [[Place]], [[Faction]], or question the players could pursue if they choose.
 
-Stop after the reveal.
 
 ### Keep
 

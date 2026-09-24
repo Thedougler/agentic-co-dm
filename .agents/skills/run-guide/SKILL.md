@@ -143,7 +143,7 @@ for what the Initial Narration carries.
    information are separate reveal blocks or zone/tick Narration cells. Then
    fill remaining stubs and Narration cells in reading order. Completion: every
    `[!narration]` body is filled; every Narration column cell is filled as
-   `==_italic_==`; the Initial Narration gives the table a stable shared
+   `_italic_`; the Initial Narration gives the table a stable shared
    picture and something live to respond to without hidden truth, DCs,
    mechanics talk, or padded mood; no stub restages Initial Narration.
 
@@ -173,13 +173,13 @@ places slots only for outcomes the beat can produce.
 - `{Creature}` — after each combat-mode roster embed. Situated look for this scene, not the owner-page cold portrait.
 - `Exit` — only when the next cockpit is already on this file.
 
-**Table Narration columns** (conditional spoken as `==_italic_==`, not a callout):
+**Table Narration columns** (conditional spoken as `_italic_`, not a callout):
 - Zones table — one cell per zone row.
 - Threat clock table — one cell per tick row.
 - How the Scene Resolves options table — one cell per likely option.
 
 Callouts inside table cells are not rendered by Obsidian. Conditional spoken in
-a cell is `==_italic_==` (`obsidian-markdown`).
+a cell is `_italic_` (`obsidian-markdown`).
 
 ## Whole-session branch
 

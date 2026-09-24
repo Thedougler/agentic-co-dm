@@ -9,6 +9,7 @@ sources:
   - "story-so-far.md"
   - "crissdalynns-dreidel.md"
   - "campaign-os:fate-spinner.md"
+  - "Talon Vantyrus update (2026-09-23)"
 summary: "Also called the dreidel. Crissdalynn still holds it while Talon Skarn confronts her at the otter camp."
 provenance:
   extracted: 1.0
@@ -19,9 +20,9 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T19:35:00Z
-updated: 2026-09-22
+updated: 2026-09-23
 type: item
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 kind: magic
@@ -33,7 +34,7 @@ owner: "[[crissdalynn-khinriss]]"
 ![[attachments/fate-spinner-overview.png]]
 
 > [!narration] Narration
-> A four-sided top no bigger than a thumb, cut from clear quartz. It stays cool even in a warm hand. Years of a thumbnail setting it spinning wore its faces smooth. Its maker did not leave a mark. Spun in sunlight, it casts coins of colored light across the table or ground beneath it, and it spins far longer than such a small piece should. A faint glass-on-glass tick marks each turn, and the tiny sound is hard to ignore.
+> The top is no bigger than a thumb, a four-sided shape cut from one clear piece of quartz. Its four faces are smooth and free of marks. It stays cool in a warm hand, and its edges catch the light in thin amber, blue, and violet flashes. Set spinning in sunlight, it scatters small colored pools across the surface beneath it and keeps turning long after a thing so small should have stopped. Each rotation gives off a faint glass-on-glass tick, softer than a coin's drop and harder to ignore.
 
 *Wondrous item, artifact (requires attunement).*
 
@@ -94,6 +95,8 @@ Session 06 never established the dreidel's magic at the table. The player named 
 **Artifact properties.** The Spinner's minor properties are its cool touch, abnormally long spin, colored sunlight, and glass-on-glass tick already described in the narration. Its major property is The Changed Record. Its detrimental pressure is that the bearer carries a visible, hunted connection to the [[soul-incarnate|Soul Incarnate]] transformation technique.
 
 **Destruction condition.** The current canon does not establish how the artifact can be destroyed. Do not invent a destruction quest at the table; file that condition before treating the Spinner as destructible.
+
+**Several spinners exist.** The dreidel is not unique. [[talon-vantyrus|Talon Vantyrus]] carries one and reads nearby possibilities through it, [[master-kyzil]] gave another to [[crissdalynn-khinriss|Crissdalynn]], and [[Countless]] hunts whatever spinners it can reach. Nothing in the record names the maker, dates the individual devices, or says how many are in the world, and that stays open until the table establishes it.
 
 ## Provenance
 

@@ -6,8 +6,9 @@ sources:
   - "campaign-os:osset-narration-appearance.md"
   - "story-so-far.md"
   - "campaign-os:osset.md"
+  - "Talon Vantyrus update (2026-09-23)"
 created: 2026-09-13T19:35:00Z
-updated: 2026-09-20
+updated: 2026-09-23
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
@@ -36,7 +37,7 @@ flexGrow=2
 
 | **Role** | Rival |
 | --- | --- |
-| **Nature** | Former High Eyrie monk and Countless leader |
+| **Nature** | Aged snowy-owl aarakocra, once a senior master of the [[high-eyrie|High Eyrie]], now leader of [[countless|the Countless]] |
 | **Home** | [[high-eyrie|High Eyrie]] |
 | **Wants** | A complete read on [[crissdalynn-khinriss|Crissdalynn Khinriss]]'s Long Sight, while avoiding recognition by [[master-kyzil|Master Kyzil]]. |
 
@@ -47,7 +48,7 @@ flexGrow=2
 flexGrow=1
 ===
 > [!narration] Osset
-> A falcon-featured man calls himself Osset when the old name serves him and Talon Vantyrus when it does not. He carries the controlled bearing of a monk and keeps his face available only long enough for someone to recognize the name he chose to use.
+> An aged snowy-owl aarakocra calls himself Osset when the old name serves him and Talon Vantyrus when it does not. His white plumage has faded toward pale grey with age and altitude, broken by black mottling across the brow and wings, and his eyes are yellow-gold. He keeps the layered robes of Sentinel martial dress stripped of every identifying mark, and he carries the controlled bearing of a master who once taught the Sentinels' own.
 ```
 ````
 
@@ -71,6 +72,15 @@ Osset's posture changes when [[master-kyzil|Master Kyzil]] might recognize his f
 ```
 ````
 
+### Voice
+
+Composed, quiet, and precise. He never raises his voice, rarely repeats himself, and speaks like a teacher who expects the student to eventually understand. He does not describe his foresight as destiny; his words are *avoidable*, *preventable*, *consequence*, *probability*, *intervention*, and *waste*, and he has no patience for the claim that something "had to happen." A plea that stops immediate harm can move him, while an appeal to patience or doctrine instead of action ends the conversation.
+
+* "You may sit. You already know what I am asking, or you would not be here."
+* "Tell me the difference between a preventable death and a permitted one."
+
+The full voice, doctrine, and sample lines live on [[talon-vantyrus]].
+
 ## Connections
 
 | Connection | Meaning |
@@ -78,6 +88,6 @@ Osset's posture changes when [[master-kyzil|Master Kyzil]] might recognize his f
 | [[countless]] | Osset leads the faction under the name [[talon-vantyrus|Talon Vantyrus]]. |
 | [[sentinels-of-the-eyrie]] | Former member; he left during the schism and was once a master among them. |
 | [[crissdalynn-khinriss]] | Sentinel whose Long Sight Osset is quietly reading for the Countless; she has not heard his original name from the Eyrie. |
-| [[master-kyzil|Master Kyzil]] | Old classmate at the High Eyrie who would recognize Osset's face; Osset avoids ports where they might meet. |
+| [[master-kyzil|Master Kyzil]] | His most gifted student at the High Eyrie. Osset asked him to leave the Sentinels with him; Kyzil refused and believes his old master died decades ago. |
 | [[lavinia-sordi]] | Osset sold her the cursed Cloak of Displacement while using the Osset name. |
 | [[delmar-fisk]] | Found Osset's name on a scrap at the Cabinet of Morsani in Session 08. |

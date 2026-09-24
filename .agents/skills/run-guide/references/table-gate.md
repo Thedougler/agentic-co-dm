@@ -34,7 +34,7 @@ draft is incomplete.
 - One cockpit per beat. No dual Now/Run-now pair, Scene menu, separate Ask
   callout, or peer round script.
 - The only `> [!` on the card is `[!narration]`. Conditional spoken in
-  Narration table columns is `==_italic_==`.
+  Narration table columns is `_italic_`.
 - Column layout uses `col` / `col-md` codeblock fences (not `[!col]`);
   `flexGrow` ratios match the layout table. Spoken `[!narration]` callouts,
   Zones, Be ready for, How the Scene Resolves, Backup, and Battlemap stay full
@@ -77,7 +77,7 @@ draft is incomplete.
 - **Pass 3:** `theatre-of-the-mind` loaded after pass 2 completes. Initial
   Narration is the Layer 1 immediate frame — a stable shared picture and
   something live to respond to. Every stub is filled. Every spoken Narration
-  cell is `==_italic_==`.
+  cell is `_italic_`.
 - **Pass 4:** Reading view checked top to bottom; no spoken slot is empty.
   Action cards sit near the procedure or ruling they support.
 

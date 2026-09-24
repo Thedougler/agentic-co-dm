@@ -19,6 +19,7 @@ ally, or an edge — and hands the next Cliffhanger stakes the table can read.
 ## Gates
 
 Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
+Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § Fill the silence.
 
 ## Boundary contract
 
@@ -34,21 +35,23 @@ Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-
 
 ## Copy-start
 
-Copy `wiki/templates/development.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: development`, `category: journal`. Keep the template's jobs; omit a section only when this Development never spends it.
+Copy `wiki/templates/development.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/` and use the next session that has no plan page yet, and say so. Keep the template's jobs; omit a section only when this Development never spends it.
 
 ## Fill a Development
 
 1. **Ground.** Read the preceding beat's carry-forward, the session plan row,
    and the owner pages for every actor, place, item, and lore fact the scene
    touches (retrieve with `qmd`). Done when the party's position, condition,
-   and current beliefs are stated, and each actor's current want is sourced.
+   and current beliefs are stated, and each actor's current want is sourced or
+   proposed (`docs/agents/table-ready.md` § Fill the silence).
 2. **Choose the card.** Read
    [references/development-cards.md](references/development-cards.md) and pick
    the card the fiction calls for. Name the live thread it advances and the
    **turn**: the one fact or change that sets the new direction.
-3. **Mint owners first.** Every named NPC, place, item, faction, or lore fact
-   the scene needs has an owner page before any text depends on it — mint
-   missing ones with their owner skill (`npc-design` for new speakers).
+3. **Cast owners.** Every named NPC, place, item, faction, or lore fact the
+   scene needs has an owner page before any text depends on it: cast from the
+   wiki first, and mint with its owner skill (`npc-design` for a new speaker)
+   only what nothing fits (`docs/agents/table-ready.md` § Cast before minting).
 4. **Read the bar.** Read `docs/agents/table-ready.md`, then build every
    anatomy part the scene spends, applying the Development craft below.
    Write every DM-facing line with `writing-for-humans`: lead with the
@@ -104,7 +107,14 @@ Copy `wiki/templates/development.md`. File after accept to `wiki/journal/session
 
 Players can name what they now know or can decide that they could not
 before; the page states the direction of action that knowledge sets; and the
-next Cliffhanger's stakes are legible from it.
+next Cliffhanger's stakes are legible from it. On the page:
+
+- the turn sentence names the choice it changes and the direction it sets;
+- the good part costs something, with the price named;
+- a stall breaker names who or what ends the scene, and when;
+- a physical anchor surfaces at least one revelation;
+- every question the scene sends the party away with names where its answer
+  lives (who knows, where, at what price), and the DM layer holds the answer.
 
 ## Named seams
 

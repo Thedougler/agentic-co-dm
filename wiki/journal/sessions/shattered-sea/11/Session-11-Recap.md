@@ -15,7 +15,7 @@ lifecycle: accepted
 lifecycle_changed: "2026-09-14"
 tier: supporting
 created: 2026-09-14T22:30:00Z
-updated: 2026-09-14T22:30:00Z
+updated: 2026-09-23T00:00:00Z
 type: recap
 campaign: shattered-sea
 visibility: dm
@@ -34,20 +34,22 @@ relationships:
 Aruhe. The island is still taking.
 
 > [!narration] Recap
-> Last time on the Shattered Sea, you were still in the air above the terraces, with the crown squid reaching through the trees. This time the squid stopped being the problem.
+> You were still in the air over the terraces with the squid in the trees when Jean-Claude stopped answering and slid down Delmar's back, staring up at the sun. Then a broad charcoal body came down out of it with four wings spread, wide enough that the whole terrace went dim, and it hit the squid hard enough to break the trees around it. Delmar called for the tree line, Perrin threw an illusion out to one side, and you flew low and inland while the hawk finished. Delmar wrapped Jean-Claude in his own coat and carried him that way, and would not put him in the bag of holding.
 >
-> Jean-Claude went limp on Delmar's back, eyes wide, stiff, and silent. A four-winged bird filled the sun, each wing about a hundred feet, and dropped on the squid. Trees shattered. You hugged the canopy, flew low, and left the kill behind. Inland smoke marked a day's walk upriver. The beach and *Uncertainty* sat the other way, with the bird and the squid between you and the ship.
+> The beach and the ship were behind the hawk, and smoke stood over the river about a day's walk inland, so you went that way. You stopped at a cold ring of stones where somebody had left half-eaten fruit, and there Crissdalynn taught you the island's rule the hard way. She ate a fallen redheart berry and her wounds closed, so she picked one off a living stem, and the grass broke open in every direction at once. Wolfrabbits came up out of it, young hawks came down on them, and you pulled the hunt off yourselves with bird calls and a decoy illusion of Perrin, hugely fat, thrown out as the bait.
 >
-> You landed at a cold ring of stones and half-eaten fruit. Crissdalynn ate a fallen redheart berry and healed. When she pulled fruit off a living stem, wolfrabbits broke the grass, and two young bloodhawks came in. Illusions and bird-speech pulled the hunt off you. Later an eight-legged cat in a leaf mantle, a Spiguar, jumped Delmar. His rifle dropped it hard. It fled. You did not chase.
+> A cat dropped on Delmar out of the brush with eight legs and a mat of wet leaves across its back. His shot went exactly where he put it, Perrin jumped onto the thing's back, and between the two of them it broke off and ran, and you let it go.
 >
-> At the slack water, three otters about twelve feet long had a thin man in the game. Crissdalynn pulled him out. The otters wanted play, not meat. You tired them until they swam downriver. He named himself Matteo Scola. He said you eat what lies on the ground and you do not pick living fruit. He said other survivors had gone farther inland after a woman in the woods. He does not trust her. He ate a ghost plum and vanished in front of you. Stonepears at the otter hole, eaten as a bonus, made the eater hard to hurt for a minute.
+> At the next slack stretch of the river, three otters the length of a longboat had a thin man in a game. Crissdalynn went in and pulled him out, and once he was up the bank they came after him wanting to play. You wore them out with acrobatics and tricks until they lost interest and swam off downstream. He called himself Matteo Scola, and he wanted a hull under him. He told you what you had already proved, that nothing gets taken off a living tree and that anything already lying on the dirt is yours, and he told you about the woman in the woods, a shadow with orange eyes, and that the ones who heard her and did as she said lived and the ones who refused her died. He had refused her, and the otters had caught him for it. Then he ate a ghost plum and was gone from where he stood.
 >
-> You camped at his otter-site instead of walking on. Perrin Mage-Handed a lesser black lotus into the river. It answered with Tasha's Hideous Laughter on him, then drifted away. Watch went Delmar, then Perrin with Matteo, then Crissdalynn. In the dark a voice kept saying admire my garden. Lantern light scared something off a dead porcupine. On Crissdalynn's watch a falcon stooped, missed her, and went for the pack that might hold the dreidel. She stunned him. He burned through it, took the hit, and stayed in her face.
+> You slept in the place Matteo had been sleeping rather than pushing on upriver. Crissdalynn found a black flower growing by the bank with something loose inside it, and Perrin lifted it out over the water on a hand of air. It answered by putting a laugh into him that he could not stop, and he stood in the shallows laughing until the flower drifted away downstream. Delmar took the first watch, Perrin and Matteo the middle, and Crissdalynn the last. In the dark a voice told you to admire its garden. Lantern light put something off a dead porcupine, and you cooked the meat and kept the quills.
+>
+> On the last watch a falcon dropped out of the dark at Crissdalynn. The first strike missed her, and the next one went past her to the pack that might be holding the dreidel. She hit him with everything she had, a strike that should have ended the night right there, and he came out of it and stayed in her face. That is where the night stopped.
 
 ## Wiki facts
 
-Play stopped mid-fight. The [[fate-spinner]] is still on [[Crissdalynn Khinriss]]. [[talon-skarn]] is in her face at [[Aruhe - River Slack Basin]] and has spent one Legendary Resistance.
+[[Jean-Claude Tabarnack]] is catatonic and travelling in [[Delmar Fisk]]'s coat, not the bag of holding. The party never returned to *[[Uncertainty]]* and never reached the inland survivor column.
 
-[[Jean-Claude Tabarnack]] is catatonic and is being carried in [[Delmar Fisk]]'s coat. The party did not return to [[Uncertainty]]. They did not reach [[Aruhe - Quiet Forest Spoke Ring]] or the other inland survivors.
+Rules the table earned this session: fallen fruit is safe, living fruit is not, and a [[ghost-plum]] makes the eater invisible. A [[Aruhe - Stonepear|stonepear]] grants resistance to every kind of damage for a minute. [[matteo-scola]] is at the camp and wants the ship.
 
-[[matteo-scola]] is with the camp and wants the ship. Fallen [[redheart-berry]] healed; picking living fruit drew [[Wolfrabbit]]s. A [[ghost-plum]] made Matteo **Invisible**. An [[Aruhe - Stonepear]] granted **Resistance** to all damage for one minute. The [[Aruhe - Lesser Black Lotus]] went downstream after the laughter. Live handle: [[story-so-far]].
+The night ended with [[talon-skarn]] in [[Crissdalynn Khinriss]]'s face, mid-theft, with the [[fate-spinner]] still on her and one Legendary Resistance spent. The watch order was Delmar, Perrin with Matteo, then Crissdalynn. An unseen night watcher left when the lantern came up and may return. Remaining handles: the woman in the woods, the inland survivors, the dead porcupine, the [[Aruhe - Lesser Black Lotus]] now downstream, and the route back to the ship. Live handle: [[story-so-far]].

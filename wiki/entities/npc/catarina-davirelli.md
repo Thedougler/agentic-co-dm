@@ -55,6 +55,10 @@ She receives visitors at her Calveno workshop and keeps the conversation practic
 ### When posture changes
 
 She ends the meeting when a visitor asks her to leave Calveno or treats her workshop as the party's standing resource.
+### Voice
+
+Catarina speaks in practical workshop terms and avoids treating her shop as a resource that travels with the party. Her ask is, “Show me the mechanism before you tell me the story.” Her refusal is, “The work stays here.” Under pressure, she says, “You are asking me to abandon the one place that makes this possible.”
+
 
 ## Connections
 

@@ -12,7 +12,7 @@ updated: 2026-09-13
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "Vashu's Session 06 Scene 4 winded combat state — sprint-depleted Still-Water reserves drop her to AC 18, 80 HP, CR 5, and cost her legendary actions."

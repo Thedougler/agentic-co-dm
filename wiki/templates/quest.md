@@ -1,14 +1,14 @@
 ---
 title: "{{title}}"
 category: campaign
-tags: [shattered-sea, quest]
+tags: ["{{campaign}}", quest]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: quest
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 visibility: dm
 status: offered
 scope: local

@@ -70,3 +70,7 @@ flexGrow=1
 Stop using this first-look narration once the party has a later, more informed view of the [[island-mimic]] or the island's interior.
 ```
 ````
+
+### Voice
+
+This handle has no character voice; it is a player-facing first-look narration, not a speaker. Keep the delivery sensory and observational rather than giving the island a demand, refusal, or threat.

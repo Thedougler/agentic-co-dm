@@ -33,6 +33,8 @@ relationships:
 ---
 # Taking on Aruhe
 
+![[taking-on-aruhe-overview.png|Taking on Aruhe overview: receiving fallen fruit or claiming the living]]
+
 ## At a Glance
 
 **Core truth.** On [[aruhe]], taking a living plant, animal, or other living claim draws surrounding life into hostility. Fruit already on the ground is not that claim.

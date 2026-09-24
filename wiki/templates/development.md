@@ -1,7 +1,7 @@
 ---
 title: "{{title}}"
 category: journal
-tags: [shattered-sea, session-prep]
+tags: ["{{campaign}}", session-prep]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
@@ -9,7 +9,7 @@ type: session-prep
 kind: development
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 session: ""
 visibility: dm
 summary: ""
@@ -29,7 +29,7 @@ summary: ""
 
 > [!narration] Opening
 > <!-- Load `.agents/skills/theatre-of-the-mind` → references/scenes.md → Development opening. -->
-> Spoken narration, 5–9 sentences, second person, present tense. Development opening: a calm frame with a sense beyond sight, then the person, document, or sign that holds the new information, doing something, with things to handle and someone to talk to. End on the first line spoken or the detail that does not fit.
+> Spoken text the DM reads aloud, written to that recipe.
 
 ## Run the Beat
 
@@ -90,7 +90,7 @@ flexGrow=2
 
 - **Automatic.** What the characters learn or accomplish by taking the sensible action.
 - **Action.** **Ability (Skill)** `DC __`. **Success:** what improves, opens, or becomes certain. **Failure:** a cost, delay, exposure, or incomplete answer that keeps play moving.
-- **Cost of the good part.** What the best information or help costs — a favor, a promise, time on the clock, exposure.
+- **Cost of the good part.** What the best information or help costs, and why it bites: a favor owed, a promise, world time on a clock that is running, exposure.
 
 ## Player Levers
 

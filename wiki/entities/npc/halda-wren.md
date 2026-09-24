@@ -61,6 +61,10 @@ In the draft, the party hears Halda's voice at Sandy Grove and can trade salt fi
 ### When posture changes
 
 No posture change is established. Keep Halda's trade, kindling, and complaint about the grove as draft material until the DM accepts the scene as Work.
+### Voice
+
+Halda's draft voice is plain, unhurried, and protective of the grove's boundary. Her ask is, “Bring salt fish if you want willowbark.” Her refusal is, “The grove was never asked into town.” Under pressure, she says, “Do not mistake quiet for permission.”
+
 
 ## Connections
 

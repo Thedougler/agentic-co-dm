@@ -1,30 +1,38 @@
 # Agency and recomputation
 
-A Beat Chart is a palette of pressures, not a sequence of required scenes.
-Prepare what can happen and why actors might act; leave the players' answer
-to the players. Chart rules live in `SKILL.md` § The three chart rules.
+**Decide the world; leave the party's choices open.** Every fact about the
+world is decided on the page: who wants what and why, what the opposition does
+next and when, where each clue sits (a canon proposal where canon is silent).
+Only the party's choices and the dice stay open. A Beat Chart is a palette of
+pressures, not a sequence of required scenes. Chart rules live in `SKILL.md` § The three chart rules.
 
 ## The recompute loop
 
-Run this loop after every beat, meaningful detour, long rest, failed roll with
-consequences, or newly stated player goal:
+Run this loop whenever the DM reports what happened in play (a finished
+session, or a sitting that stopped partway through the chart) and whenever a prep decision changes the
+state: a beat played out, a detour, a long rest, a failed roll with
+consequences, a newly stated player goal.
 
 1. **Record the state.** Write what changed in positions, knowledge, resources,
    faction intent, relationships, routes, clocks, injuries, and player goals.
 2. **Resolve consequences.** Advance or stall clocks according to fiction. Make
    a missed clue, failed obstacle, broken promise, or abandoned ally matter.
-3. **Retire candidates.** Drop a beat whose trigger, target, route, information,
-   or stakes no longer exists. Do not drag it back in to fill a planned slot.
+3. **Retire and replace.** Drop a beat whose trigger, target, route,
+   information, or stakes no longer exists, and give its slot to the strongest
+   replacement from § When to drop or replace a beat. What the party just did
+   is the richest source: a rescued ally, a won prize, an angered faction, a new
+   opening. Keep the retired beat retired.
 4. **Promote emergent candidates.** Turn a player-created goal, faction response,
    new danger, opportunity, or changed location into a candidate beat. Give it a
    trigger and at least two plausible responses before using it.
 5. **Re-label and re-order.** A planned Development can become a Cliffhanger;
    an expected battle can become a negotiation or Resolution. Preserve
    alternating polarity only when choosing the next beat remains fictionally
-   honest. If a new state calls for a pause, end or re-budget the session.
-6. **Offer the next opening.** Present the visible situation and meaningful
-   options. Ask what players do; do not narrate their decision or move them to
-   the next node.
+   honest. End the session early only when its question is answered; otherwise the
+   replacements fill the remaining budget.
+6. **Write the next opening.** The visible situation and its meaningful
+   options become the next beat's entry state, ending on what the players can
+   act on; their decision stays theirs.
 
 Keep a small ledger:
 
@@ -37,16 +45,16 @@ Keep a small ledger:
 | Retired beats | Why obsolete; what consequence replaced them |
 | Next opening | What players can perceive and act on right now |
 
-## Agency checks at the table
+## Agency checks on the page
 
-**Before a beat:** Can players see why this is happening now? Can they refuse,
+**Entry:** Can players see why this is happening now? Can they refuse,
 redirect, bargain, retreat, investigate, or accept a cost when those choices fit?
-If not, add a route, a tell, or a consequence before firing it.
+If not, add a route, a tell, or a consequence to the page.
 
-**During a beat:** State stakes and observable information. Keep an off-ramp
-open unless the fiction makes it impossible. Resolve a Contest by the agreed
-procedure. Let a failed attempt change the situation instead of quietly
-converting it into success.
+**Inside the beat:** The page states the stakes and what the characters can
+observe, keeps an off-ramp open unless the fiction makes it impossible, resolves
+a contest by a stated procedure, and gives a failed attempt a row that changes
+the situation instead of quietly converting it into success.
 
 **Between beats:** Does How the Scene Resolves create a visible opening for the next
 situation, or is the transition a teleport? Can players see why the new
@@ -54,7 +62,7 @@ situation follows from what just happened? If the transition requires the party
 to ignore a live option or abandon an active thread, that is a railroad — offer
 the option and recompute.
 
-**After a beat:** Ask what is now true, not what the outline wanted. Cross out
+**On replan:** Ask what is now true, not what the outline wanted. Cross out
 obsolete scenes. Promote choices that created new problems. If the next planned
 beat is no longer the most consequential available situation, replace it.
 

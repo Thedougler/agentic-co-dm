@@ -1,7 +1,7 @@
 ---
 title: "{{title}}"
 category: journal
-tags: [shattered-sea, session-prep]
+tags: ["{{campaign}}", session-prep]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
@@ -9,7 +9,7 @@ type: session-prep
 kind: hook
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 session: ""
 visibility: dm
 summary: ""
@@ -30,7 +30,7 @@ summary: ""
 
 > [!narration] Open on
 > <!-- Load `.agents/skills/theatre-of-the-mind` → references/scenes.md → Hook opening. -->
-> Spoken narration, 5–9 sentences, second person, present tense. Hook opening: open inside the disturbance, fold the frame around it, show the threat or people in motion and two to four things to act on, and end on the demand, attack, or question that forces a response.
+> Spoken text the DM reads aloud, written to that recipe.
 
 ````col
 ```col-md

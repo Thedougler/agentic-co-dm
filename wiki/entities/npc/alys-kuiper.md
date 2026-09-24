@@ -11,7 +11,7 @@ updated: 2026-09-13
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "HCS Surety's ship's surgeon, competent and precise, disappeared on shore leave in Calveno."

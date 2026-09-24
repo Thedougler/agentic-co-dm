@@ -12,7 +12,7 @@ updated: 2026-09-13
 type: lore
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "Calveno's five-day prank festival, where teams scheme against willing marks for bragging rights and a bronze medallion."

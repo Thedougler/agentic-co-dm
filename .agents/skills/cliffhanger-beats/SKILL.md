@@ -19,6 +19,7 @@ changed physical situation the next Development must deal with.
 ## Gates
 
 Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
+Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § Fill the silence.
 
 ## Boundary contract
 
@@ -36,7 +37,7 @@ Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-
 
 ## Copy-start
 
-Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: cliffhanger`, `category: journal`. Keep the template's jobs; omit a section only when this Cliffhanger never spends it.
+Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/` and use the next session that has no plan page yet, and say so. Keep the template's jobs; omit a section only when this Cliffhanger never spends it.
 
 ## Fill a Cliffhanger
 
@@ -49,9 +50,11 @@ Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/session
    card the fiction calls for and the escalation tier this slot holds on the
    session's ladder. Name the thread under test — what the last Development
    revealed that this contest proves or disproves.
-3. **Mint owners first.** Every creature, NPC, place, vehicle, or item the
-   contest needs has an owner page before any text depends on it; a creature
-   you will roll without an owner goes to `monster-design`.
+3. **Cast owners.** Every creature, NPC, place, vehicle, or item the contest
+   needs has an owner page before any text depends on it: cast from the wiki
+   first, and mint only what nothing fits (`docs/agents/table-ready.md` § Cast before minting); a creature the
+   party could fight that has no owner goes to `monster-design` (its Reskin
+   path fits rank-and-file: a standard statblock with this fiction).
 4. **Read the bar.** Read `docs/agents/table-ready.md`, then build every
    anatomy part the contest spends, applying the Cliffhanger craft below.
    Write every DM-facing line with `writing-for-humans`: lead with the
@@ -59,9 +62,10 @@ Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/session
 5. **Set numbers and rulings.** `encounter-prep` sets the difficulty for the
    tier and the live party; `dnd5e-mechanics` sets every check, save, and DC.
    Copy the opposition's compact numbers from its owner statblock onto the
-   page.
+   page. Done when everyone who could fight carries numbers: from the owner
+   statblock, or a proposed standard 5e statblock filed on the owner.
 6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Open on
-   Action`: danger front-loaded, positions clear, ending on the moment to act.
+   Action` to its Cliffhanger opening recipe.
 7. **Write the outcomes.** Won → the next Development opens new options.
    Lost → the next Development opens with new constraints, or the opposition
    plays Retreat or Hesitation. Each outcome row states the changed physical
@@ -72,7 +76,7 @@ Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/session
 ## Cliffhanger craft
 
 - **Short.** About three to five rounds of combat, or twenty to thirty
-  minutes of a non-combat contest. The page states the end condition, and the
+  minutes of table time for a non-combat contest. The page states the end condition, and the
   pressure makes the contest end if nobody else does.
 - **Threat up front.** The danger is visible in the opening narration and
   real by round one: the opposition's first move lands, or the hazard bites.

@@ -35,6 +35,8 @@ summary: "Captive pipeline clock tracking more than 314 fighting-age people move
 ---
 # The taken 314
 
+![[the-taken-314-overview.png|The taken 314 overview: a moving captive pipeline]]
+
 > [!narration] Narration
 > More than three hundred and fourteen people of fighting age have been taken from festival ports. Their route runs through the Grung fleet toward Karath, while the people who could move them and the people who want to own the rescue pull at the same crisis.
 

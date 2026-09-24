@@ -15,7 +15,7 @@ tier: supporting
 created: 2026-09-12T00:00:00Z
 updated: "2026-09-22"
 type: region
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 region: "verdant-teeth"

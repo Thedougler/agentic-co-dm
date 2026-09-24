@@ -70,6 +70,10 @@ flexGrow=1
 He stays direct and unkind only when customers ignore a shortfall or waste his time without a list. He extends credit to captains he has dealt with three times or more, keeping those handshake terms in memory; new customers must settle their order honestly.
 ```
 ````
+### Voice
+
+Suryo speaks with precise, direct questions and avoids pretending that a short order will last longer than it can. His ask is, “How many crew, how many days, where are you headed?” His refusal is, “I do not extend credit on a guess.” Under pressure, he says, “A hungry crew is the cost of an incomplete list.”
+
 
 ## Connections
 

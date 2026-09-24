@@ -68,6 +68,10 @@ flexGrow=1
 He becomes genuinely grateful when someone treats his novice work seriously. He stops joking and asks how he can repay them, but still refuses to let embarrassment end his trade.
 ```
 ````
+### Voice
+
+Paolo talks brightly through embarrassment and avoids letting a capsize define his skill. His ask is, “The boat is fine, I am fine, and the canal is much more interesting from inside it.” His refusal is, “You cannot make me quit over one splash.” Under pressure, he says, “Let me repay you with the next ride.”
+
 
 ## Connections
 

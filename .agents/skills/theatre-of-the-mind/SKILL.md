@@ -262,7 +262,7 @@ layer.
 | Closing image (Resolution) | A short paragraph that lets the change land |
 | Creature entering a scene | A few sentences, ending before contact |
 | NPC first look | A few strokes, plus a line of speech if they talk |
-| Zone, tick, or outcome cell (`==_italic_==`) | A line or two; a turn in the fight earns a little more |
+| Zone, tick, or outcome cell (`_italic_`) | A line or two; a turn in the fight earns a little more |
 | How the Scene Resolves / Exit | A few sentences |
 | Wiki portrait | One full paragraph covering the whole subject |
 | Place portrait with a place-design packet | As long as every tell in the packet needs, folded onto owner nouns first |

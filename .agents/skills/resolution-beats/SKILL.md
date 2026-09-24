@@ -20,6 +20,7 @@ established fiction.
 ## Gates
 
 Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
+Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § Fill the silence.
 
 ## Boundary contract
 
@@ -35,7 +36,7 @@ Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-
 
 ## Copy-start
 
-Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: resolution`, `category: journal`. Keep the template's jobs; omit a section only when this Resolution never spends it.
+Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/` and use the next session that has no plan page yet, and say so. Keep the template's jobs; omit a section only when this Resolution never spends it.
 
 ## Fill a Resolution
 
@@ -46,8 +47,9 @@ Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions
 2. **Choose the card per outcome.** Read
    [references/resolution-cards.md](references/resolution-cards.md). For each
    Climax outcome the Resolution answers, pick the card that outcome produced.
-3. **Mint owners first.** Every named person, place, item, or faction in the
-   afterscene has an owner page before any text depends on it.
+3. **Cast owners.** Every named person, place, item, or faction in the
+   afterscene has an owner page before any text depends on it: cast from the
+   wiki first, and mint only what nothing fits (`docs/agents/table-ready.md` § Cast before minting).
 4. **Read the bar.** Read `docs/agents/table-ready.md`, then build every
    anatomy part the afterscene spends, applying the Resolution craft below.
    Write every DM-facing line with `writing-for-humans`: lead with the
@@ -65,7 +67,7 @@ Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions
 
 ## Resolution craft
 
-- **Short and proportional.** About ten to twenty-five minutes. A
+- **Short and proportional.** About ten to twenty-five minutes of table time. A
   personal-stakes Climax gets a personal afterscene; a faction-scale Climax
   gets a power-vacuum afterscene. New fights, new villains, and new
   worldbuilding belong to the next session.
@@ -93,7 +95,15 @@ Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions
 
 Players can name what is different and what they want next; every Climax
 outcome the page answers shows its costs, rewards, and thread states; and the
-aftermath records are complete enough for the next session's plan.
+aftermath records are complete enough for the next session's plan. On the
+page:
+
+- each outcome's rewards are named with values: the loot the defeated side
+  carried (owner links), coin amounts, favors and access with who grants
+  them, and a milestone or XP proposal. These are canon proposals where canon
+  is silent; "none" stands only when the fiction offers nothing;
+- each actor's closing response is written, with what it changes;
+- What Is True Now states values, not instructions to record them later.
 
 ## Named seams
 

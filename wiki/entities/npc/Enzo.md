@@ -11,7 +11,7 @@ base_confidence: 0.42
 created: 2026-09-12T06:23:47Z
 updated: 2026-09-13
 type: npc
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 status: alive
 role: contact

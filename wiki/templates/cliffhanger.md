@@ -1,7 +1,7 @@
 ---
 title: "{{title}}"
 category: journal
-tags: [shattered-sea, session-prep]
+tags: ["{{campaign}}", session-prep]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
@@ -9,12 +9,12 @@ type: session-prep
 kind: cliffhanger
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Copy-start scaffold for `cliffhanger-beats`. Jobs: Abstract; Open on Action; Run the beat; Opposition; Pressure; Battlefield; Discoveries; Resolution; References. Omit a section only when this Cliffhanger never spends it. Bar: docs/agents/table-ready.md. File Session-<n>-<BB>-<Label>.md. -->
+<!-- Copy-start scaffold for `cliffhanger-beats`. Jobs: Abstract; Open on Action; Run the beat; Opposition; Pressure; Battlefield; Character jobs; Discoveries; Resolution; References. Omit a section only when this Cliffhanger never spends it. Bar: docs/agents/table-ready.md. File Session-<n>-<BB>-<Label>.md. -->
 
 # {{title}}
 
@@ -26,12 +26,12 @@ summary: ""
 **PC objective.** The concrete result that ends this contest besides surviving.
 **Opposition objective.** What [[npc]], [[creature]], faction, or hazard is trying to accomplish.
 **Stakes.** What the party can lose, fail to protect, or allow to change.
-**Ends when.** The observable condition that ends the beat — about three to five rounds, or twenty to thirty minutes.
+**Ends when.** The observable condition that ends the beat — about three to five rounds, or twenty to thirty minutes of table time for a non-combat contest.
 **Memorable element.** The feature, foe, or moment the table will remember.
 
 > [!narration] Open on Action
 > <!-- Load `.agents/skills/theatre-of-the-mind` → references/scenes.md → Cliffhanger opening. -->
-> Spoken narration, 5–9 sentences, second person, present tense. Cliffhanger opening: danger in the first sentence, then where the party stands, the routes and cover, and what is closing in. End with the threat a heartbeat from arriving.
+> Spoken text the DM reads aloud, written to that recipe.
 
 ## Run the Beat
 
@@ -82,6 +82,14 @@ flexGrow=1
   - **Feature.** What a character can obviously do with it and the ruling.
 - **Change.** How the space transforms mid-contest, and on which round or trigger.
 - **Map.** Add a battlemap when available.
+
+## Character jobs
+
+<!-- One row per PC present: the job their abilities fit in this contest, or the personal stake it touches. -->
+
+| PC     | Job or stake in this contest |
+| ------ | ---------------------------- |
+| [[PC]] | …                            |
 
 ## Discoveries
 

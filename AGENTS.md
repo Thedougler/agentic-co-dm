@@ -1,6 +1,58 @@
 # Obsidian Wiki — Agent Context
 
-A **skill-based framework** for building and maintaining an Obsidian knowledge base. No scripts or dependencies — everything is markdown instructions that you execute directly.
+A **skill-based framework** for building and maintaining an Obsidian knowledge base. Skills and instructions carry the behavior; `tools/` and `scripts/` implement the checks they call.
+
+## Repo map
+
+Top-level paths, one purpose each; the vault itself is explored under "Vault map" below. Which artifact owns which fact → "Sources of Truth".
+
+| Path | What it is, and what sends you there |
+| --- | --- |
+| `CONTEXT.md` | Domain glossary. Reach it for terminology, architecture, template, or beat-design decisions. |
+| `.agents/skills/<name>/` | Skill source (`SKILL.md`, `references/`, `evals/`). Edit here; imported skills are pinned in `skills-lock.json`. |
+| `.agents/skills/llm-wiki/` | The llm-wiki spec: three-layer architecture (raw sources → wiki → schema), page templates, provenance and trust model, wiki environment variables. The authority behind the vault map below and "Core Principles". |
+| `docs/agents/` | Procedure docs: Work, table-ready casting, hybrid SDD, maintenance loop, token and context measurement, harness and skill-design dispatch. |
+| `docs/adr/`, `docs/*.md` | Decision records; human-facing documentation. |
+| `tools/` | Python implementation: `lint_wiki.py`, `wiki_ops/` (transactions, health, identity, template contracts), `creative_lint/` (Vale engine, rule registry, evaluators), `token_count.py`. |
+| `scripts/` | CLI entrypoints — `wiki`, `wiki-lint`, `wiki-maintain`, `wiki-bulk-ops`, `manifest.py`, `error-ledger.py`, `luna-eval`, `wiki-reveal`, plus focused `check-*` / `lint-*` / `remorph-*` helpers. Unknown command → list the directory; each is `--help`-able. |
+| `tests/` | Pytest suite over `scripts/` and `tools/`. Run `./scripts/run-pytest`. |
+| `specs/<feature>/` | Spec, plan, tasks, contracts. Current feature: `029-agent-loop-closure`. |
+| `.specify/` | Constitution, templates, extensions, generated adapters (adapters disposable). |
+| `wiki/` | The live vault, at the path `.env` `OBSIDIAN_VAULT_PATH` and `pyproject.toml` `[tool.agentic-co-dm]` both name. Campaign pages, templates, session journals, indexes. Load `wiki/AGENTS.md` before any read or write here. Expanded below. |
+| `rules/`, `styles/`, `.vale.ini` | Creative-lint rule registry, bundles, waivers, Vale styles. Rule or prose-lint work. |
+| `config/efficiency.yaml` | Maintainer-owned efficiency policy; agents read and propose only. |
+| `.omp/` | OMP runtime: `config.yml`, `AGENTS.md`, `RULES.md`, `rules/`, `hooks/`, `commands/`, `agents/`. Harness behavior, hooks, subagent definitions. |
+| `.claude/`, `.cursor/`, `.kiro/`, `.pi/`, `.windsurf/`, `.grok/`, `.agent/`, `.github/`, `.hermes.md`, `CLAUDE.md`, `CODEX.md`, `GROK.md` | Other harness entrypoints. Their `skills/` are copies or symlinks of `.agents/skills/` — edit the source, not the copy. |
+| `.qmd/` | QMD collections in `index.yml` (`wiki` canonical; `shattered-sea` and `legacy-ss` read-only legacy), plus the gitignored local index. |
+| `errors.md`, `sittings.jsonl` | Error ledger and sitting ledger data, at repo root. Runtime failure; sitting record. |
+| `mcp.json`, `foundry-data/` | Local Foundry MCP config and data (gitignored). Foundry staging. |
+
+Local-only, neither canon nor hand-edited: `.venv/`, `_archive/`, `legacy/`, `*-workspace/` (skill-creator eval runs), `.local/efficiency/`, `wiki/.obsidian/` UI state.
+
+### Vault map (`wiki/`)
+
+Explored layout of the live vault. Vault semantics stay in `wiki/AGENTS.md`; page format stays in `llm-wiki`.
+
+```text
+wiki/                          # the live campaign vault
+├── AGENTS.md                  # vault owner conventions — load before any read or write here
+├── index.md                   # master index, every page listed
+├── log.md                     # chronological ingest/update/retcon log
+├── hot.md                     # ~500-word snapshot of recent activity — read this first
+├── .manifest.json             # ingested-source ledger; query via scripts/manifest.py, never load whole
+├── entities/{type}/           # campaign pages, depth 1 by frontmatter type — creature, faction, item,
+│                              #   lore, npc, pc, place, quest, region, spell, vehicle (kebab basenames)
+├── journal/sessions/<campaign-slug>/<NN>/   # plan, typed beats, recap (e.g. shattered-sea/12/)
+├── synthesis/                 # players, story-so-far, dm-voice-notes, party-combat-profile
+├── templates/                 # one page template per kind; contracts/*.yml = per-type frontmatter contract
+├── attachments/               # flat {subject-slug}-{role}.{ext}; roles in attachments/README.md
+├── _meta/                     # taxonomy.md (controlled tag vocabulary), lint-cache.json
+├── _raw/                      # capture inbox — the next ingest promotes from here
+├── _archive/                  # promoted and demoted pages; not canon
+└── .obsidian/                 # vault UI config, graph colors, CSS snippets
+```
+
+Every page carries required frontmatter and connects by `[[wikilinks]]` (`OBSIDIAN_LINK_FORMAT=wikilink` here; `markdown` switches to standard links). The generic llm-wiki categories `concepts/`, `skills/`, `references/`, and `projects/` are unused in this vault — campaign knowledge files under `entities/{type}/`.
 
 ## Project domain terms
 
@@ -32,7 +84,7 @@ the failure on it.
 
 ## Canon and done-summary
 
-Canon owner: constitution principle X. File what it makes canon. Unsaid invention is not canon (XII).
+Canon owner: constitution principle X. File what it makes canon. Everything else is a marked canon proposal the DM accepts (XII).
 
 Lint contract (constitution XXI): `wiki lint` runs every checker, Vale included, and every finding it reports is an issue to fix. Use `next.path`, then `wiki lint fix <next.path>` for deterministic repairs; rerun `wiki lint <next.path>` for the remaining issues. `--full` is accepted as a compatibility no-op. Iterate until clean: zero issues. Do not ask. Do not interrupt with findings.
 
@@ -84,7 +136,7 @@ If table aim is `missing`, ask the DM to name the players (at least one; tests u
 
 **Production session content** (session-prep beats, TotM/`[!narration]`, action cards, spoken text) is **complete or it does not ship**. Vague/non-specific descriptions of unnamed people/things because the entity page is missing = **critical error**.
 
-**Dependency order (recursive):** If a beat/scene names or requires an NPC, item, creature, place, faction, vehicle, spell, quest, or other entity — load that kind's **owner skill** (Wiki kind routing, Beat skill routing, or Skill Routing), **mint/file that owner page first** (kebab basename, matching `wiki/templates/`, live vault path), **then** write/update the session/TotM text that depends on it. A new named owner the user asked to introduce is filed first; spoken that depends on it follows. Existing wiki content MUST NOT wait. The DM cannot describe what does not exist.
+**Dependency order (recursive):** If a beat/scene names or requires an NPC, item, creature, place, faction, vehicle, spell, quest, or other entity — load that kind's **owner skill** (Wiki kind routing, Beat skill routing, or Skill Routing), **cast or mint that owner page first** (cast before minting: `docs/agents/table-ready.md`; kebab basename, matching `wiki/templates/`, live vault path), **then** write/update the session/TotM text that depends on it. A new named owner the user asked to introduce is filed first; spoken that depends on it follows. Existing wiki content MUST NOT wait. The DM cannot describe what does not exist.
 
 Agents MUST complete **all** recursive dependency steps to finish the goal — not only top-level, intermediary, or initial steps — in dependency order. Applies to `session-beats`, typed beat skills, `theatre-of-the-mind`, `cold-opens`, `session-recap`, and Session Architect orchestration. Completeness gate — do **not** thin narrative craft.
 
@@ -94,7 +146,7 @@ Problem: minting several new page types in one task blurs ownership and wastes c
 
 ### HARD: dm-facing-explicit (Nick 2026-09-14)
 
-**DM-facing content** (`visibility: dm`, action cards, Be ready for, secrets, situation facts, Wiki facts, owner pages): **no vagueness, non-specific placeholders, coy narration, or invented mystery.** The DM must have **all** scene/world facts available immediately. Making the DM decode coy agent writing = **critical error**.
+**DM-facing content** (`visibility: dm`, action cards, Be ready for, secrets, situation facts, Wiki facts, owner pages): **no vagueness, non-specific placeholders, coy narration, or mystery without a DM answer.** The DM must have **all** scene/world facts available immediately. Making the DM decode coy agent writing = **critical error**.
 
 **Clarify vs player-safe TotM:** Player-facing `[!narration]` may withhold from *players*; it must still be grounded in named entities that exist (**HARD: entity-before-spoken**). DM layers must state who/what/where/why concretely — names, wants, true stakes — with a DM answer on the page for every planted mystery.
 
@@ -315,35 +367,9 @@ When pushing commits directly to `main`, use native Git in this order:
 `scripts/git-sync-main` remains the pre-work sync/reset helper and does not
 replace this push protocol or perform pushes.
 
-## Vault Structure
-
-```
-$OBSIDIAN_VAULT_PATH/
-├── index.md                # Master index — every page listed, always kept current
-├── log.md                  # Chronological activity log for llm-wiki operations (ingests, updates, retcons)
-├── hot.md                  # Session hot cache — ~500-word semantic snapshot of recent activity
-├── .manifest.json          # Tracks every ingested source: path, timestamps, pages produced
-├── _meta/
-│   ├── taxonomy.md         # Controlled tag vocabulary
-│   └── *.base              # Obsidian Bases dashboard definitions (wiki-dashboard skill)
-├── _insights.md            # Graph analysis output (hubs, bridges, dead ends)
-├── _raw/                   # Staging area — drop rough notes here, next ingest promotes them
-├── _readouts/              # Derived narrative readouts saved by wiki-narrate — not knowledge pages
-├── concepts/               # Abstract ideas, patterns, mental models
-├── entities/               # Concrete things — people, tools, libraries, companies
-├── skills/                 # How-to knowledge, techniques, procedures
-├── references/             # Factual lookups — specs, APIs, configs
-├── synthesis/              # Cross-cutting analysis connecting multiple concepts
-├── journal/                # Time-bound entries — daily logs, session notes
-└── projects/
-    └── <project-name>.md   # One page per project synced via wiki-update
-```
-
-Every wiki page has required frontmatter: `title`, `category`, `tags`, `sources`, `created`, `updated`. Pages connect via internal links — `[[wikilinks]]` by default, or standard Markdown links when `OBSIDIAN_LINK_FORMAT=markdown` is set in config.
-
 ## Skill Routing
 
-Skills live in `.agents/skills/<name>/SKILL.md`. Match the user's intent to the right skill. Beat-type routing and wiki-kind routing have their own tables above — this table covers everything else. Minting a named campaign page loads that kind's **owner skill** first.
+Match the user's intent to the right skill. Beat-type routing and wiki-kind routing have their own tables above — this table covers everything else. Minting a named campaign page loads that kind's **owner skill** first.
 
 ### Wiki
 

@@ -73,6 +73,10 @@ flexGrow=1
 Duvane stops treating the danger as a past story when a repair job enters a vent fissure or someone proposes sending one worker alone. He insists on the two-person procedure and prioritizes getting the crew out over finishing the spar.
 ```
 ````
+### Voice
+
+Duvane speaks in work reports and avoids treating the scorpion attack as a story rather than a safety rule. His ask is, “Send a watcher with the worker.” His refusal is, “No one goes into that fissure alone.” Under pressure, he says, “Get the crew out; the spar can wait.”
+
 
 ## Connections
 

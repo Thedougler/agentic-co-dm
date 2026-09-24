@@ -74,9 +74,9 @@ image is quiet and clear.
 
 ## Beat slots
 
-**Zone cell:** ==_The bell tower's stairs are worn into dips by centuries of feet, and from the top step the bell rope swings within easy reach._==
+**Zone cell:** _The bell tower's stairs are worn into dips by centuries of feet, and from the top step the bell rope swings within easy reach._
 
-**Tick cell:** ==_Thunder cracks directly overhead and every brazier on the roof flares white at once, lighting the turning clouds from below._==
+**Tick cell:** _Thunder cracks directly overhead and every brazier on the roof flares white at once, lighting the turning clouds from below._
 
 **Creature in scene:**
 
@@ -98,11 +98,11 @@ tells the players exactly what she wants.
 
 **The cargo net is cut loose:**
 
-> ==_The net drops across the deck in a wet heap, pinning one raider under it and forcing the other two around toward the rail._==
+> _The net drops across the deck in a wet heap, pinning one raider under it and forcing the other two around toward the rail._
 
 **The second raider falls (a turn in the fight):**
 
-> ==_The bolt takes the second raider under the arm, and he folds over the rail into the surf. The last one stares at the empty deck, lets his cutlass clatter to the planks, and starts backing toward the stern._==
+> _The bolt takes the second raider under the arm, and he folds over the rail into the surf. The last one stares at the empty deck, lets his cutlass clatter to the planks, and starts backing toward the stern._
 
 Why they work: each shows only what changed, then the new situation the next
 player acts on.

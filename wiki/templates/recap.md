@@ -1,14 +1,14 @@
 ---
 title: "{{title}}"
 category: journal
-tags: [shattered-sea, recap]
+tags: ["{{campaign}}", recap]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: recap
 lifecycle: proposed
 reveal: revealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 visibility: dm
 summary: ""
 ---

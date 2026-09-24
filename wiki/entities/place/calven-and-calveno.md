@@ -21,7 +21,7 @@ tier: supporting
 created: 2026-09-12T04:56:01Z
 updated: 2026-09-13T07:45:00Z
 type: place
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 kind: settlement

@@ -1,14 +1,14 @@
 ---
 title: "{{title}}"
 category: entities
-tags: [shattered-sea, npc]
+tags: ["{{campaign}}", npc]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: npc
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 status: alive
 role: ""
 location: unknown

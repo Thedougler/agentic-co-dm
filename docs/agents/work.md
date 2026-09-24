@@ -4,7 +4,7 @@ Co-DM output is **Work** addressed to the DM. File what constitution X makes can
 
 ## File
 
-File what constitution X makes canon on the live wiki path. Unsaid invention is not canon. Do not pick a winner among contradictions unless the user picked.
+File what constitution X makes canon on the live wiki path. Everything else is a marked canon proposal; where canon contradicts itself, the proposal names the sources and the DM picks the winner.
 
 Done when:
 
@@ -22,7 +22,7 @@ Constitution principle X. More recent user speech wins.
 
 ## Windows
 
-- **Prep:** file requested work. Stage Foundry from filed Work.
+- **Prep:** file requested work. Stage Foundry from filed Work. Invention that fills canon silence is a proposal the DM accepts (`docs/agents/table-ready.md` § Fill the silence).
 - **Session:** no Co-DM.
 - **Wrapup:** file outcomes. Still no live table agent.
 
@@ -48,6 +48,6 @@ Done when: the DM has playable Work in that sitting and the gap is named.
 
 After a session sitting (not inside `session-recap` itself — that skill is narrative recap only), offer a reflection when appropriate. After prep, offer a reflection only if the DM asks. Do not run reflection or improvement during a session.
 
-User-said fact changes from reflection file under constitution X. Unsaid invention is not canon.
+User-said fact changes from reflection file under constitution X; anything else stays a canon proposal.
 
 Done when: a post-session sitting offered inspectable reflection when appropriate. Narrative recap filing stays in `session-recap` and does not own reflection.

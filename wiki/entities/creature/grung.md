@@ -10,7 +10,7 @@ updated: 2026-09-13
 type: creature
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "A CR 1/4 green-caste grung, the expendable laborer and scout caste of Grung raid operations."

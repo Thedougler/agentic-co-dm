@@ -68,6 +68,9 @@ flexGrow=1
 Suke's posture changes when she makes up her mind about a stranger or when a contract puts the Five Blades at risk. The source does not establish her personal limit, leverage, or exact signal for trust.
 ```
 ````
+### Voice
+
+The source does not establish Suke's voice, so keep her speech terse and watchful rather than adding an accent. Her ask is, “You want something, or are you just standing there?” Her refusal is, “No contract, no answer.” Under pressure, she says, “Move first, and the Five Blades will decide what follows.”
 
 ## Connections
 

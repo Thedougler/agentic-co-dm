@@ -1,7 +1,7 @@
 ---
 title: "{{title}}"
 category: journal
-tags: [shattered-sea, session-prep]
+tags: ["{{campaign}}", session-prep]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
@@ -9,7 +9,7 @@ type: session-prep
 kind: session-plan
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 session: ""
 visibility: dm
 summary: ""
@@ -36,7 +36,7 @@ summary: ""
 
 ## Beat Map
 
-The chart paces play; the players' choices pick which beat fires. One Hook first; Developments and Cliffhangers alternate; one Climax, then one Resolution. About thirty minutes per beat. Trigger a beat when its situation becomes relevant; when choices change the fiction, skip, reorder, or replace middle beats and keep the consequences.
+<!-- One row per charted beat, in play order. Chart rules, triggers, and recompute: `session-beats`. -->
 
 |  # | Beat                               | Form                      | Trigger                                                                             | What changes                                                      | Hand-off / options                                      | Budget |
 | -: | ---------------------------------- | ------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------- | -----: |
@@ -153,18 +153,21 @@ flexGrow=2
 | **Opposition**                 | [[Creature]] · [[Faction]] |
 | **Rewards / objects**          | [[Item]]                   |
 | **Rules / special procedures** | [[Reference]]              |
+| **Spare names**                | Four or five names for improvised extras, fitting the setting. |
 
 ### If play stalls
 
-**Advance pressure.** Let the world act rather than waiting for the party.
+<!-- Each line is a concrete move from this session's own pieces, named: who acts, what the characters see. -->
 
-**Surface information.** Reveal an unused clue through something the characters are already examining or interacting with.
+**Advance pressure.** The next opposition or clock move, and what the characters see of it.
 
-**Offer a consequence.** Clarify the available choices and their stakes.
+**Surface information.** The unused Floating Clue and the thing already in play that reveals it.
 
-**Use a floating Beat.** Bring in prepared pressure or opportunity that arises from the current situation.
+**Offer a consequence.** The stated cost of waiting, and who announces it.
 
-**Ask for intent.** Clarify what the characters are trying to accomplish, then adjudicate from there.
+**Use a floating Beat.** The Floating Beat that fits wherever the party is.
+
+**Parachute.** One self-contained situation that fits anywhere tonight, with its actor and what it offers.
 
 ## Live Notes
 
@@ -188,16 +191,9 @@ flexGrow=2
 
 ### Prep Audit
 
-- [ ] The Hook starts in motion, commits the party fast, and opens the question the Climax answers.
-- [ ] Middle beats alternate Development and Cliffhanger; the Climax prelude has the opposite type.
-- [ ] Every beat advances a live thread; the Climax harvests threads the middle planted.
-- [ ] Escalation tiers rise across the night; the Villain waits for the Climax.
-- [ ] Each outcome row hands a visible trigger to the next beat.
-- [ ] Every must-have conclusion or access has three routes.
-- [ ] The opposition's agenda runs without the PCs.
-- [ ] Every PC has a spotlight beat and a harvested thread.
-- [ ] Every named actor, place, and item has an owner page.
-- [ ] Every linked beat passes the table-ready cold read.
+<!-- One checked line per `session-beats` beat-order audit check, each naming the beats that satisfy it. -->
+
+- [x] **Check.** The beats that satisfy it, by number.
 
 ## After the Session
 

@@ -1,7 +1,7 @@
 ---
 title: "{{title}}"
 category: journal
-tags: [shattered-sea, session-prep]
+tags: ["{{campaign}}", session-prep]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
@@ -9,7 +9,7 @@ type: session-prep
 kind: climax
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 session: ""
 visibility: dm
 summary: ""
@@ -26,13 +26,13 @@ summary: ""
 **Pressure.** What makes acting now necessary.
 **End when.** The irreversible question this beat settles.
 **Memorable element.** The set piece, reveal, or moment the table will remember.
-**Budget.** About 45–60 minutes. **If behind:** the compression — fewer phases, a faster clock — with the central question still resolving here.
+**Budget.** About 45–60 minutes of table time. **If behind:** the compression — fewer phases, a faster clock — with the central question still resolving here.
 
 **Next:** [[Session-{{session}}-BB-Resolution]]
 
 > [!narration] Opening image
 > <!-- Load `.agents/skills/theatre-of-the-mind` → references/scenes.md → Climax opening. -->
-> Spoken narration, 5–9 sentences, second person, present tense. Climax opening: the opposition doing what the party came to stop, the stakes and where they are, the stage features, the defenders in the way, and the pressure worsening. End at the brink.
+> Spoken text the DM reads aloud, written to that recipe.
 
 ## Thread harvest
 

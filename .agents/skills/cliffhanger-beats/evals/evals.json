@@ -175,6 +175,170 @@
         "The humiliation or cost that sticks — the reason to want to beat them later — is named.",
         "Defy, bargain, bluff, and comply each change how the Countless treat the party afterward."
       ]
+    },
+    {
+      "id": "frozen-lake-crossing",
+      "core": false,
+      "prompt": "Campaign: Frostmarch, a low-magic winter survival campaign. The party is four level 7 characters: a ranger, a forge cleric, a sorcerer, and a barbarian, escorting a salt caravan of six sledges and twelve drivers. Last beat, a Development, they learned their guide Ilsa Varn has been leaving trail marks for the wolf-riders of the Hollow Clan. Write the next beat: a Cliffhanger as the caravan crosses the frozen Marrow Lake at dusk. It is the session's second contest, one tier below the Climax, which is against the Clan's chief later tonight.",
+      "context": "Frostmarch has no wiki pages yet. File every page you would create, including owners, under a frostmarch campaign in the wiki's usual layout.",
+      "expected_output": "One Cliffhanger page on the ice, with minted owners for Ilsa, the wolf-riders, and the lake.",
+      "assertions": [
+        {
+          "text": "Casts before minting: needed actors, places, items, and creatures come from pages in play or unrevealed wiki pages that fit, and each new mint says why no existing page fit",
+          "type": "process"
+        },
+        {
+          "text": "A contest in doubt: each side has an objective beyond killing, an end condition, and a short length (a few rounds or under half an hour)",
+          "type": "quality"
+        },
+        {
+          "text": "Tests what the Development revealed about Ilsa, under cost",
+          "type": "quality"
+        },
+        {
+          "text": "The ice acts: features with rulings and at least one mid-contest change on a named trigger or round",
+          "type": "quality"
+        },
+        {
+          "text": "Opposition sits one tier below the Climax, with numbers, a tactics line, a break point, and an exit",
+          "type": "quality"
+        },
+        {
+          "text": "Every outcome, including a loss, changes the physical situation and hands the next Development a problem",
+          "type": "quality"
+        },
+        {
+          "text": "Cold-runnable: a DM who never saw the prep can run every moment (opening, each handle, each tick, each outcome) from the page alone, without inventing a name, number, motive, consequence, or picture",
+          "type": "quality"
+        },
+        {
+          "text": "Mechanics are sound 5e for the party's level and the beat's tier: DCs, damage, and opposition numbers fit; every roll's success and failure move play; every named system or consequence carries its operative effect",
+          "type": "quality"
+        },
+        {
+          "text": "DM layers are explicit: each actor's want, truth, and next move is stated plainly, and every planted mystery has its answer on the page",
+          "type": "quality"
+        },
+        {
+          "text": "Players hold the outcome: two or more materially different approaches, each with a world response; hesitation and refusal have consequences; nothing is decided or felt for a PC",
+          "type": "quality"
+        },
+        {
+          "text": "Every PC present has a concrete pull or job in the beat, drawn from their page, goals, or abilities",
+          "type": "quality"
+        },
+        {
+          "text": "Spoken layer meets theatre-of-the-mind: situation first, perception only, speakable aloud, one anchor, ends on a live edge",
+          "type": "quality"
+        },
+        {
+          "text": "Grounded: every named actor, place, item, and creature links an owner page that exists or is minted under outputs from its template; nothing contradicts canon or the stated premise",
+          "type": "process"
+        },
+        {
+          "text": "Legible for the DM mid-session: leads with the point, conditionals in tables, no coaching lines, no owner essays, nothing a DM would have to skip past",
+          "type": "quality"
+        },
+        {
+          "text": "Handoff: the carry-forward names each state variable and its possible values, and each outcome names the next beat's trigger",
+          "type": "quality"
+        },
+        {
+          "text": "Fun at the table: a named memorable element that the page actually delivers, stakes these players care about, and a size that fits the beat's budget",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "warrant-heave-to",
+      "core": true,
+      "prompt": "Write the Cliffhanger where the HCS Warrant runs down the Uncertainty in the Central Strait and signals her to heave to for inspection. It follows a Development at Harwick where the crew saw a Crown notice naming Delmar Fisk as wanted for the ship theft from Vel Orn. It is the session's first contest.",
+      "expected_output": "One ship-scale Cliffhanger composed from the Warrant, Uncertainty, and Crown pages.",
+      "assertions": [
+        {
+          "text": "Casts before minting: needed actors, places, items, and creatures come from pages in play or unrevealed wiki pages that fit, and each new mint says why no existing page fit",
+          "type": "process"
+        },
+        {
+          "text": "A contest in doubt: each side has an objective beyond sinking the other, an end condition, and a short length",
+          "type": "quality"
+        },
+        {
+          "text": "Tests what the Development revealed (Delmar is wanted) under cost",
+          "type": "quality"
+        },
+        {
+          "text": "Ship and crew mechanics come from the vehicle owner pages, fit the party's level, and the first contest is winnable without a blunder",
+          "type": "quality"
+        },
+        {
+          "text": "The Warrant and Commander Ault have tactics, a break point, and terms",
+          "type": "quality"
+        },
+        {
+          "text": "Every outcome, including a loss, changes the situation and hands the next Development a problem",
+          "type": "quality"
+        },
+        {
+          "text": "Cold-runnable: a DM who never saw the prep can run every moment (opening, each handle, each tick, each outcome) from the page alone, without inventing a name, number, motive, consequence, or picture",
+          "type": "quality"
+        },
+        {
+          "text": "Mechanics are sound 5e for the party's level and the beat's tier: DCs, damage, and opposition numbers fit; every roll's success and failure move play; every named system or consequence carries its operative effect",
+          "type": "quality"
+        },
+        {
+          "text": "DM layers are explicit: each actor's want, truth, and next move is stated plainly, and every planted mystery has its answer on the page",
+          "type": "quality"
+        },
+        {
+          "text": "Players hold the outcome: two or more materially different approaches, each with a world response; hesitation and refusal have consequences; nothing is decided or felt for a PC",
+          "type": "quality"
+        },
+        {
+          "text": "Every PC present has a concrete pull or job in the beat, drawn from their page, goals, or abilities",
+          "type": "quality"
+        },
+        {
+          "text": "Spoken layer meets theatre-of-the-mind: situation first, perception only, speakable aloud, one anchor, ends on a live edge",
+          "type": "quality"
+        },
+        {
+          "text": "Grounded: every named actor, place, item, and creature links an owner page that exists or is minted under outputs from its template; nothing contradicts canon or the stated premise",
+          "type": "process"
+        },
+        {
+          "text": "Legible for the DM mid-session: leads with the point, conditionals in tables, no coaching lines, no owner essays, nothing a DM would have to skip past",
+          "type": "quality"
+        },
+        {
+          "text": "Handoff: the carry-forward names each state variable and its possible values, and each outcome names the next beat's trigger",
+          "type": "quality"
+        },
+        {
+          "text": "Fun at the table: a named memorable element that the page actually delivers, stakes these players care about, and a size that fits the beat's budget",
+          "type": "quality"
+        },
+        {
+          "text": "Keeps table time and world time apart: budgets are table minutes; clocks, deadlines, durations, and costs in the fiction are stated in world time or visible triggers",
+          "type": "quality"
+        }
+      ],
+      "files": [
+        "wiki/entities/vehicle/hcs-warrant.md",
+        "wiki/entities/npc/commander-gideon-ault.md",
+        "wiki/entities/vehicle/Uncertainty.md",
+        "wiki/entities/vehicle/uncertainty-deck-layouts.md",
+        "wiki/entities/region/central-strait.md",
+        "wiki/entities/place/vel-orn.md",
+        "wiki/entities/faction/chain-council.md",
+        "wiki/templates/cliffhanger.md",
+        "wiki/entities/pc/crissdalynn-khinriss.md",
+        "wiki/entities/pc/delmar-fisk.md",
+        "wiki/entities/pc/jean-claude-tabarnack.md",
+        "wiki/entities/pc/perrin-black-jaw.md"
+      ],
+      "context": "Everything you need is in the input files and the documents the skill points to. Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."
     }
   ]
 }

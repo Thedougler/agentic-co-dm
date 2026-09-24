@@ -19,7 +19,7 @@ tier: supporting
 created: 2026-09-12T09:30:00Z
 updated: 2026-09-12T00:00:00Z
 type: creature
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 region: aruhe

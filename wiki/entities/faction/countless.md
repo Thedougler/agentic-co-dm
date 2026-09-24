@@ -38,6 +38,8 @@ relationships:
 ---
 # Countless
 
+![[countless-overview.png|Countless overview: erased names and one-job routes]]
+
 > [!narration] Narration
 > Countless broke away from the Sentinels. Missing names mark its work. Hired blades and paid contacts take one job each. They never learn who ordered it. Along pilgrim routes, grey markets, and Sentinel waystations, the work leaves an empty place where a name used to sit. Agents use the shared title Talon. People hear Talon before they meet anyone who claims it.
 
@@ -160,4 +162,3 @@ flexGrow=1
 ## History
 
 Countless retired the name The Uncounted. Long Reach is the common Eldritch Claw Tattoo that every Sentinel apprentice receives, while Long Sight is rare and withheld. [[crissdalynn-khinriss]] has early partial access because the [[fate-spinner]] unlocked it and [[master-kyzil]] never explained how far it reaches. Taken names replace Eyrie names. Power belongs to the student or master who outlasts the other.
-

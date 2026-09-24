@@ -11,7 +11,7 @@ updated: 2026-09-13
 type: quest
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "Aleksander Malone pursues Shepherd Grigori through the Midchain, pronouncing what he knows aloud and tightening the trail toward the crew's own wake."

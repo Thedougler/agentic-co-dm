@@ -7279,7 +7279,7 @@
     "project": "shattered-sea",
     "source_type": "document"
   },
-  "last_updated": "2026-09-21T01:20:36Z",
+  "last_updated": "2026-09-24T06:34:42Z",
   "page_identity_transitions": [
     {
       "page_path": "entities/faction/Khlysty.md",
@@ -8483,12 +8483,23 @@
         "entities/place/tokage-island.md",
         "entities/place/zennitana.md"
       ]
+    },
+    "/Users/nick/agentic-co-dm/wiki/_archive/talon-vantyrus-1.md": {
+      "content_hash": "sha256:8191cfd13fb903e63e32e2f4f83df3935fcd2c4f3b6cbde6cbbd138c8bf98fc4",
+      "last_ingested": "2026-09-24T06:34:42Z",
+      "pages_produced": [
+        "entities/item/fate-spinner.md",
+        "entities/lore/long-sight.md",
+        "entities/npc/master-kyzil.md",
+        "entities/npc/osset.md",
+        "entities/npc/talon-vantyrus.md"
+      ]
     }
   },
   "stats": {
     "packet_ingest-raw-2026-09-13-gh-2": 515,
-    "total_pages": 782,
-    "total_sources_ingested": 820
+    "total_pages": 787,
+    "total_sources_ingested": 821
   },
   "version": 1
 }

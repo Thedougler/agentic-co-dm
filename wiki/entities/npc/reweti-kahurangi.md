@@ -70,6 +70,10 @@ flexGrow=1
 Reweti runs the exits and keeps a belaying pin under the bar. If the party threatens the peace, she acts; she has used the pin before.
 ```
 ````
+### Voice
+
+Reweti speaks patiently and quietly, protecting the bar's peace without making a show of authority. Her ask is, “Pay your tab and keep the room calm.” Her refusal is, “Not in my bar.” Under pressure, she says, “You can leave standing, or I can help you leave.”
+
 
 ## Connections
 

@@ -53,27 +53,27 @@ when, Memorable element, and so on).
 ### Pressure and outcome tables
 
 - One row per case. The first column is the condition ("If the party
-  surrounds Skarn", "Round 3"); the other columns say what happens, in the
+  surrounds Mara", "Round 3"); the other columns say what happens, in the
   world's voice.
-- Each cell reads as a statement with a subject: "Skarn swings onto the ledge
-  and runs for the grass," not "escape → grass."
+- Each cell reads as a statement with a subject: "Mara swings onto the barge
+  and poles for the far bank," not "escape → barge."
 - Include the "anything else" row the template asks for: what stays true
   whatever the party does.
 
 ### Carry forward
 
 - One line per state variable the next beat inherits, with its possible
-  values: "**Fate Spinner.** Held by Crissdalynn, or stolen by Skarn."
+  values: "**Ledger.** Held by the party, or taken by Mara."
 - Last line: what is now true because of the party's choice.
 
 ## Session plan
 
 - **Compass** lines are one sentence each, stated as facts about tonight.
-- **Beat Map** cells are short statements, not fragments: "Skarn's first
-  theft attempt ends; the party commits to a direction."
+- **Beat Map** cells are short statements, not fragments: "Mara's first
+  grab for the ledger ends; the party commits to a direction."
 - **Pressure** steps describe what the opposition does, in order, in the
-  opposition's voice ("Skarn follows the party inland and waits for the
-  carrier to be alone").
+  opposition's voice ("Mara follows the party to the docks and waits for
+  the ledger's carrier to be alone").
 - **PC Touchpoints** name the PC, what matters to them tonight, and the beat.
 - **Floating Clues** are true facts, one sentence each.
 

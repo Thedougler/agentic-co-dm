@@ -17,7 +17,7 @@ tier: supporting
 created: 2026-09-13T19:55:00Z
 updated: 2026-09-13T19:55:00Z
 type: creature
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 role: ambusher

@@ -17,7 +17,7 @@ tier: supporting
 created: 2026-09-13T07:50:00Z
 updated: 2026-09-13
 type: vehicle
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 kind: ship
@@ -33,6 +33,8 @@ relationships:
 # Vestra
 
 Vestra is a family brig built and captained by Vincenzo Black-Jaw. Something massive rose and took it. The fate of the vessel and crew remains unknown.
+
+![[vestra-overview.png|Vestra overview: the brig beneath impossible water]]
 
 ## Connections
 

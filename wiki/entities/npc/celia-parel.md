@@ -24,6 +24,8 @@ summary: Calveno wreck survivor who preserves the names and orders of Aruhe's de
 ---
 # Celia Parel
 
+![[celia-parel-overview.png|Celia Parel overview: recording the dead at the survivor camp]]
+
 ````col
 ```col-md
 flexGrow=2

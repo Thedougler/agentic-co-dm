@@ -11,7 +11,7 @@ updated: 2026-09-13
 type: item
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "A fist-sized fragment of warm red hide from Otar the Foul granting 2d8 HP regeneration per turn (1 minute, once per long rest, suppressed by fire/acid). Held by Catarina Da'Virelli in Calveno."

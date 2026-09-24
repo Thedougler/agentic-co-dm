@@ -11,7 +11,7 @@ updated: 2026-09-13
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "Crown-trained young navigator aboard HCS Surety, killed by Delmar Fisk's musket fire during the Session 02 boarding."

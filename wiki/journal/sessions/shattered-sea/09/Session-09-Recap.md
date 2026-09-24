@@ -17,6 +17,8 @@ tier: supporting
 created: 2026-09-12T04:56:01Z
 updated: 2026-09-12T04:56:01Z
 type: recap
+campaign: shattered-sea
+visibility: dm
 reveal: revealed
 relationships:
   - target: "[[Uncertainty]]"
@@ -29,19 +31,18 @@ relationships:
 Ordinance boards. Course for Sparhold.
 
 > [!narration] Recap
-> Last time on the Shattered Sea, Otar the Foul died in the Mercatura crater. Iacopo Fieschi signed you as Calveno's Defenders. Nona Black-Jaw's list climbed past three hundred fourteen fighting-age men. Osset was named twice. Cobb's refit on Uncertainty was twelve hours out, and two Passage ships were already days behind the raiders.
+> *Uncertainty* came out of La Vasca's cradle with fresh paint and a course for Sparhold, the first port on the trail of the Grung fleet. Before that, Nona's spellcaster had already taken the answer out of a captured purple, so you knew why the raiders sailed where they were sailing. The captives were bound for Karath, and Karath is where the Grung keep their power.
 >
-> Uncertainty left La Vasca refit, bound for Sparhold, first stop on the Grung fleet's trail. Nona's spellcaster had already pulled the destination from a captured purple Grung: the captives were bound for Karath, the Grung center of power.
+> At sea the water showed you a few breaths of somebody else's life. It put you inside a purple Grung on Aruhe, the Hungry Isle, with two guards from another garrison on either side of you, and then the brush behind you filled with wolfrabbits. You ran, you swam, and you put a spear into the reeds, and nobody came for you.
 >
-> For a few breaths you were a purple Grung on Aruhe, the Hungry Isle, two other guards from another garrison beside you. Wolfrabbit packs came out of the brush. You ran, you swam, you threw a spear. No rescue came.
+> Later in that crossing Crissdalynn flew ahead over the wreckage and came back with three of Calveno's people, burnt raw by the sun, holding onto a hull the sea had opened up under them. A hurricane had split the raid fleet down the middle.
 >
-> Aboard Uncertainty again, Crissdalynn Khinriss flew ahead over wreckage and found three sun-blasted Calveno captives on a shattered hull. An eastern hurricane had cut the raid fleet in half.
+> The Crown found you two days out of Calveno, and the ship that found you was HCS Ordinance with ninety-six guns and Crown colours flying. Corbin Knighton crossed to your deck first. *State your cargo and destination.* Behind him, aboard his own ship, was Aleksander Malone, the Hound of Tyr, hunting Shepherd Grigori. You played merchant. Perrin and Ruma Delacroix and Jean-Claude went below and stayed there while the Crown walked your decks, and Delmar talked Knighton onward to Calveno with the story you had built. You sent Nona word by stone about what was sailing toward her harbour.
 >
-> Two days out, HCS Ordinance intercepted you: ninety-six guns under Dravosi Crown colors. Corbin Knighton crossed first. Behind him Aleksander Malone, the Hound of Tyr, hunted Shepherd Grigori. You played merchant. You hid Perrin Black-Jaw, Ruma Delacroix, and Jean-Claude Tabarnack. Delmar Fisk sent them to Calveno. The warship stood off for the city. You warned Nona by stone about Ordinance and the Hound.
->
->
-> You set course for Sparhold, three rescued captives aboard. Ordinance and the Hound sailed for Calveno with your story.
+> Then you set course for Sparhold with three rescued captives in the hold, and behind you the warship carried the Hound on to Calveno inside the lie you had built for it.
 
 ## Wiki facts
 
-Captives from the raid are bound for Karath. A hurricane split the Grung fleet. Three [[calven-and-calveno|Calveno]] captives came aboard *[[Uncertainty]]*. HCS Ordinance and the Hound of Tyr sailed for Calveno with the party's merchant story. Next: [[Session-10-Recap]].
+The Grung raid fleet's captives were bound for [[Karath]], the seat of Grung power, which [[nona-black-jaw]]'s spellcaster pulled out of a captured purple. [[uncertainty|Uncertainty]] left [[la-vasca|La Vasca]]'s cradle for [[Sparhold]] after the refit. The Aruhe vision put the party inside a purple Grung of another garrison through the last minutes of a [[wolfrabbit]] hunt, and in the same crossing [[crissdalynn-khinriss]] found three sun-blasted Calveno captives on a shattered hull after a hurricane split the raid fleet in half.
+
+[[hcs-ordinance|HCS Ordinance]], ninety-six guns under [[dravosi-crown|Crown]] colours, intercepted two days out of Calveno with [[corbin-knighton|Corbin Knighton]] crossing first and [[aleksander-malone]] aboard hunting [[shepherd-grigori]] under the [[the-hound-of-god|Hound of God]] thread. The party played merchant, hid [[perrin-black-jaw]], [[ruma-delacroix]] and [[jean-claude-tabarnack]] below, and [[delmar-fisk]] sent the warship on to [[calven-and-calveno|Calveno]] with the merchant story. Nona was warned by [[sending-stone-nonas|stone]]. Next: [[Session-10-Recap]].

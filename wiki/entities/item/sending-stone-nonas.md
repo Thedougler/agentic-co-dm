@@ -11,7 +11,7 @@ updated: 2026-09-13
 type: item
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 region: "le-paludi"
 visibility: dm

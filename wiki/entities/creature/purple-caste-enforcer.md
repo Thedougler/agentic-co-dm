@@ -11,7 +11,7 @@ updated: 2026-09-13
 type: creature
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "A CR 1/2 grung enforcer, a Pack Tactics escort that grapples with a prehensile tongue before finishing with a venom-coated spear."

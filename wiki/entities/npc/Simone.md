@@ -8,7 +8,7 @@ created: 2026-09-12T00:00:00Z
 updated: 2026-09-12T00:00:00Z
 type: npc
 lifecycle: proposed
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 status: alive
 role: rival
@@ -67,6 +67,10 @@ flexGrow=1
 Simone's posture changes when the party interferes with the garrison, threatens her toxin trade through the [[dravosi-crown]], or provides a lead on Jean-Claude. The source does not establish what she does after that change.
 ```
 ````
+### Voice
+
+Simone uses clipped orders and avoids admitting that her hunt for Jean-Claude is personal. Her ask is, “State your business at Sorn.” Her refusal is, “You do not conduct your business through my garrison.” Under pressure, she says, “Give me my brother's trail, or leave my shore.”
+
 
 ## Connections
 

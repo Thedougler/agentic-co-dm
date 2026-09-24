@@ -9,7 +9,7 @@ updated: 2026-09-20
 type: lore
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 kind: fact

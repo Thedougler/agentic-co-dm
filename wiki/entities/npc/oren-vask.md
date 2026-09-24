@@ -24,6 +24,8 @@ summary: Calveno wreck deckhand who has learned a rule-bound route toward the me
 ---
 # Oren Vask
 
+![[oren-vask-overview.png|Oren Vask overview: choosing a safe step through Aruhe]]
+
 ````col
 ```col-md
 flexGrow=2

@@ -99,10 +99,10 @@ callouts). Report what changed and where, plus any gaps.
 ## Rules
 
 1. **Lead with the point.** The first words of a line or section answer the
-   reader's question. "Skarn wants the Fate Spinner and will not trade blows
+   reader's question. "The smuggler wants the ledger and will not trade blows
    with four people" beats a paragraph that arrives there at the end.
 2. **Name it.** Proper names with wikilinks, exact numbers, exact places.
-   "[[talon-skarn|Skarn]] is 5 feet from Crissdalynn," never "the thief is
+   "[[mara-quill|Mara]] is 5 feet from the ledger," never "the thief is
    nearby." Every pronoun has an obvious owner.
 3. **Short, complete sentences.** A subject and a verb, one idea each, about
    8–20 words. A sentence that needs "and" three times is two sentences.
@@ -112,8 +112,8 @@ callouts). Report what changed and where, plus any gaps.
    scans for (**Trigger.**, **If they flee.**). Parallel items go in a list.
    If-then goes in a table. Nothing a DM needs mid-play hides inside a
    paragraph.
-5. **Say what the world does.** "If the party surrounds him, Skarn throws his
-   chain around the tree and swings onto the ledge." State outcomes and
+5. **Say what the world does.** "If the party surrounds her, Mara cuts the
+   lantern rope and swings onto the barge." State outcomes and
    responses; the DM runs the table (see `docs/agents/table-ready.md`
    § World voice).
 6. **Plain truth for the DM.** State secrets, motives, and answers outright:
@@ -137,12 +137,12 @@ callouts). Report what changed and where, plus any gaps.
 | Default conditions (fair weather, drinkable water, safe road) | Nothing changes. State them only when unsafe, scarce, costly, magical, or a clue. |
 | Category descriptions ("a coastal trading settlement") | Fits any place. Replace with this place's specific fact. |
 | Mood with no consequence ("a sense of unease") | Changes no ruling. Replace with the fact that causes it, or cut. |
-| Coaching lines ("don't railroad", "let them decide", "use your judgment") | Replace with what the world does in that case. |
+| Lines about the DM's conduct instead of the world | Replace with what the world does in that case. |
 | Hedges ("perhaps", "might want to", "consider") | State the fact or the ruling. |
 | Design diary, balance commentary, rules comparisons, agent-process notes | Not playable. Keep it off the page. |
 | The same fact in Glance, Situation, and narration | Keep it in the one place the DM uses it. |
 | AI tells ("tapestry of", "nestled", "it's worth noting", "delve", "the air is thick with") | Say the thing plainly. |
-| Placeholders ("TBD", "ingest pending", empty sections) | Fill from the sources or return the gap. |
+| Placeholders ("TBD", "ingest pending", empty sections) | Fill from the sources, or with a marked canon proposal (`docs/agents/table-ready.md` § Fill the silence). |
 
 ## Hard lines
 
@@ -152,7 +152,7 @@ callouts). Report what changed and where, plus any gaps.
 2. **Keep the plumbing.** Frontmatter, wikilink targets, embeds, headings the
    template requires, and file names stay as they are unless one is verifiably
    broken.
-3. **Spoken text is not yours.** `[!narration]` blocks and `==_italic_==`
+3. **Spoken text is not yours.** `[!narration]` blocks and `_italic_`
    narration cells belong to `theatre-of-the-mind`. On run-guide pass 2 they
    stay empty.
 4. **Complete sentences on every wiki page.** Bold labels, tables, and the

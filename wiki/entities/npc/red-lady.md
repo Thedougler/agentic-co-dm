@@ -12,7 +12,7 @@ updated: 2026-09-13
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "A two-masted brigantine stained red in the wood, seven ports a side, a cloaked woman at the prow."

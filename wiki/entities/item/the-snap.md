@@ -11,7 +11,7 @@ updated: 2026-09-13
 type: item
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "A wrist bracer that unfurls into a shield granting +2 AC without occupying a hand, letting Perrin Black-Jaw keep his bodhran drum free in combat."

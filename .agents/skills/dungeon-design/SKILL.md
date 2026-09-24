@@ -172,9 +172,9 @@ stocking, encounters, obstacles, table procedure, and QC. Use only the public
 links in [references/sources.md](references/sources.md).
 
 Hand player-facing room, landmark, NPC, and encounter prose to
-theatre-of-the-mind. Retrieve vault facts through qmd-retrieval; do not invent
-setting/campaign canon when the vault is silent—say so and leave a
-clearly marked stub. Keep design truth, clocks, DCs, and hidden information out
+theatre-of-the-mind. Retrieve vault facts through qmd-retrieval; when the vault is
+silent, fill the gap with a marked canon proposal (`invention: true`,
+listed for the DM), never silent canon. Keep design truth, clocks, DCs, and hidden information out
 of player-facing prose. Write keyed checks and saves with the at-table grammar
 in `obsidian-markdown`. File location keys as **facts** on `wiki/templates/place.md`
 (plus keyed subsections when the site is a dungeon). Seven-part tests and

@@ -1,14 +1,14 @@
 ---
 title: "{{title}}"
 category: journal
-tags: [shattered-sea, session-prep]
+tags: ["{{campaign}}", session-prep]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: session-prep
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 session: 0
 visibility: dm
 status: ready
@@ -79,7 +79,7 @@ Omit this heading when there is no second question.
 
 | Place | Distance from the party | Cover | Narration |
 | --- | --- | --- | --- |
-| | | | ==_…_== |
+| | | | _…_ |
 
 ## Be ready for
 
@@ -95,7 +95,7 @@ flexGrow=3
 
 | Tick | What happens | Narration |
 | --- | --- | --- |
-| 1 | | ==_…_== |
+| 1 | | _…_ |
 ```
 
 ```col-md
@@ -115,7 +115,7 @@ Next state. Hand to the next beat on this session’s skeleton.
 
 | If | Next | Narration |
 | --- | --- | --- |
-| | [[Session-N-BB-Label]] | ==_…_== |
+| | [[Session-N-BB-Label]] | _…_ |
 
 ## Roster
 

@@ -1,14 +1,14 @@
 ---
 title: "{{title}}"
 category: entities
-tags: [shattered-sea, item]
+tags: ["{{campaign}}", item]
 sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: item
 lifecycle: proposed
 reveal: unrevealed
-campaign: shattered-sea
+campaign: "{{campaign}}"
 visibility: dm
 region: ""
 kind: consumable

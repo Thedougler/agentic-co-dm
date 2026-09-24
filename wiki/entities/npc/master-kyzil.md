@@ -8,6 +8,7 @@ sources:
   - "campaign-os:master-kyzil-narration-appearance.md"
   - "story-so-far.md"
   - "campaign-os:master-kyzil.md"
+  - "Talon Vantyrus update (2026-09-23)"
 summary: "Entered the chase around Calveno and the Sentinel schism."
 provenance:
   extracted: 1.0
@@ -18,13 +19,15 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T19:35:00Z
-updated: 2026-09-13
+updated: 2026-09-23
 type: npc
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 ---
 # Master Kyzil
+
+![[master-kyzil-overview.png|Master Kyzil overview: the barn-owl sentinel master above the storm coast]]
 
 ![[master-kyzil-banner.webp]]
 ![[master-kyzil-portrait.webp]]
@@ -128,7 +131,7 @@ legendary_actions:
 ## Connections
 
 - [[crissdalynn-khinriss]]: student/mentee (calls her Priscilla); gifted her the [[fate-spinner]], her crystal dreidel, before her pilgrimage
-- [[talon-vantyrus]]: his old master at [[high-eyrie]]. Kyzil believes he departed the order decades ago. Vantyrus's survival and leadership remain unknown to Kyzil.
+- [[talon-vantyrus]]: his old master at [[high-eyrie]], and [[Osset|the master]] Kyzil was the most gifted student of. He asked Kyzil to follow him out of the Sentinels and Kyzil refused. Kyzil believes Osset died decades ago and does not know that his old master survived, took the working identity Talon Vantyrus, and now leads the Countless.
 - [[sentinels-of-the-eyrie]]: the order he leads as senior master, based at High Eyrie
 - Crissdalynn's Pilgrimage: the task he assigned her
 - [[calven-and-calveno]]: present location

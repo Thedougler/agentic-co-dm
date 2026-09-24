@@ -70,6 +70,10 @@ flexGrow=1
 If a visitor approaches cold from the water, refuses his price, or starts haggling, Noa stops working and leaves. The slip is unofficial, absent from harbour books, and disguised as storage; he does not risk attention for an unpaid job.
 ```
 ````
+### Voice
+
+Noa speaks slowly and evenly, treating every price as final and avoiding any argument that could draw attention to the slip. His ask is, “Show me the hull, then I give you the price.” His refusal is, “That is the price.” Under pressure, he says, “Haggling makes noise. Noise brings trouble.”
+
 
 ## Connections
 

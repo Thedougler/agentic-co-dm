@@ -38,6 +38,8 @@ relationships:
 
 ## Statblock
 
+![[vine-lash-overview.png|Vine Lash overview: the disguised grasping bundle]]
+
 ```statblock
 layout: Basic 5e Layout
 name: "Vine Lash"

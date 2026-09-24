@@ -70,6 +70,10 @@ flexGrow=1
 He becomes guarded when asked about the strongbox's ownership or the rubies inside it. He has not disclosed that the captain's widow in [[calders-tooth-and-port-tidefall]] has a legal claim, and he is underselling the rubies' true worth.
 ```
 ````
+### Voice
+
+Davu speaks carefully and drinks steadily, presenting the salvage offer as practical work while avoiding the widow's legal claim. His ask is, “Say yes, and I will give you thirty percent.” His refusal is, “The strongbox is mine to recover.” Under pressure, he says, “You want the rubies, not the trouble that comes with them.”
+
 
 ## Connections
 

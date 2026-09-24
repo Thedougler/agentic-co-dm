@@ -84,10 +84,10 @@ flexGrow=1
 
 | Round / trigger | What happens | What the party sees |
 | --- | --- | --- |
-| 1 | The wolfrabbits bound through the column toward Skarn. Anyone in a landing square is clawed and must save against Prone. | ==_Two long striped cats leap clean over the path between you, ears flat, and land hunting empty grass beside the fork._== |
-| 2 | Skarn flies up out of reach. A [[young-bloodhawk]] stoops on him in the open sky and hits (he takes 10 damage and is visible for an instant as feathers burst). He drops into the wood fork canopy. | ==_Something unseen takes off with a crack of wings. A four-winged hawk the size of a pony folds out of the sun, and a spray of red-orange feathers bursts from bare air before it tumbles into the trees._== |
-| 3 | Denied their taker, the wolfrabbits turn on whoever stands nearest the claim point, preferring anyone Prone or bleeding. | ==_The cats swing back around, noses low, and come for the nearest body on the strand._== |
-| End of minute | The response ends. Surviving wolfrabbits melt west into the grass. | ==_The grass straightens, and the birds start again one by one._== |
+| 1 | The wolfrabbits bound through the column toward Skarn. Anyone in a landing square is clawed and must save against Prone. | _Two long striped cats leap clean over the path between you, ears flat, and land hunting empty grass beside the fork._ |
+| 2 | Skarn flies up out of reach. A [[young-bloodhawk]] stoops on him in the open sky and hits (he takes 10 damage and is visible for an instant as feathers burst). He drops into the wood fork canopy. | _Something unseen takes off with a crack of wings. A four-winged hawk the size of a pony folds out of the sun, and a spray of red-orange feathers bursts from bare air before it tumbles into the trees._ |
+| 3 | Denied their taker, the wolfrabbits turn on whoever stands nearest the claim point, preferring anyone Prone or bleeding. | _The cats swing back around, noses low, and come for the nearest body on the strand._ |
+| End of minute | The response ends. Surviving wolfrabbits melt west into the grass. | _The grass straightens, and the birds start again one by one._ |
 ```
 ````
 

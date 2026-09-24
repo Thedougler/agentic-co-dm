@@ -22,7 +22,7 @@ lifecycle_changed: "2026-09-13"
 created: 2026-09-13
 updated: 2026-09-17
 type: faction
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 kind: fleet

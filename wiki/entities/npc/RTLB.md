@@ -59,6 +59,10 @@ There is no established first meeting. If the DM later promotes RTLB from backst
 ### When posture changes
 
 No posture change is established. The page changes only if play supplies evidence that RTLB is active, reachable, or connected to a current faction.
+### Voice
+
+No voice is established for RTLB. If the wizard ever becomes active, keep the initials and unknown identity intact. The ask is, “What did Sir Quackers tell you?” The refusal is, “You know the letters, not the person.” Under pressure, RTLB says, “You are trying to make a person out of a clue.”
+
 
 ## Connections
 

@@ -107,12 +107,12 @@ If anyone plucks living plants, traps, or kills to carry flesh here, mark [[taki
 
 | Place | Distance from the party | Cover | Narration |
 | --- | --- | --- | --- |
-| [[line-bank\|This bank]] / grass and river | Here, facing north. Eight-foot grass. The river is immediately east. | The grass hides a standing body, is Difficult Terrain, and heavily obscures beyond 10 feet. | ==_The crushed track runs through wet sand beneath the grass. Split skins have burst under the nearest bush._== |
-| River-side pile and pole | 10 feet east of the prints, at the water. | Open sand around tawny fallen fruit, a wooden pole, baskets, and fish bones. | ==_The line taps the current beside the baskets. Fish bones and silver scales lie among the wet stones, while dark mud marks the living stems above them._== |
-| Downstream pile | 20 feet south along this same bank. | Open grass around pale-green fallen fruit and a second fruiting bush. | ==_Pale-green fruit and burst skins cover the sand below the second bush. The ground is clean until the living stems begin._== |
-| Inland pile | 25 feet west toward the jungle wall. | Thin cover as the grass thickens toward the trees. | ==_Rinds and whole fruit gather where the grass meets the trees. Sweet rot is strongest here, and blood-dark mud touches only living roots._== |
-| Upriver prints | The prints run 60 feet north up this bank, then off toward the smoke. | The trail leads to [[Session-11-05-Otter-Hole]]. | ==_Two parallel tracks leave the fruiting margin and cut north through the stems toward the inland smoke._== |
-| Inland smoke | A thin column on the northern horizon in this same valley. | The smoke is not reachable on this card. | ==_Wind pulls the top of the inland column sideways. It still marks the northbound route._== |
+| [[line-bank\|This bank]] / grass and river | Here, facing north. Eight-foot grass. The river is immediately east. | The grass hides a standing body, is Difficult Terrain, and heavily obscures beyond 10 feet. | _The crushed track runs through wet sand beneath the grass. Split skins have burst under the nearest bush._ |
+| River-side pile and pole | 10 feet east of the prints, at the water. | Open sand around tawny fallen fruit, a wooden pole, baskets, and fish bones. | _The line taps the current beside the baskets. Fish bones and silver scales lie among the wet stones, while dark mud marks the living stems above them._ |
+| Downstream pile | 20 feet south along this same bank. | Open grass around pale-green fallen fruit and a second fruiting bush. | _Pale-green fruit and burst skins cover the sand below the second bush. The ground is clean until the living stems begin._ |
+| Inland pile | 25 feet west toward the jungle wall. | Thin cover as the grass thickens toward the trees. | _Rinds and whole fruit gather where the grass meets the trees. Sweet rot is strongest here, and blood-dark mud touches only living roots._ |
+| Upriver prints | The prints run 60 feet north up this bank, then off toward the smoke. | The trail leads to [[Session-11-05-Otter-Hole]]. | _Two parallel tracks leave the fruiting margin and cut north through the stems toward the inland smoke._ |
+| Inland smoke | A thin column on the northern horizon in this same valley. | The smoke is not reachable on this card. | _Wind pulls the top of the inland column sideways. It still marks the northbound route._ |
 
 ## Be ready for
 
@@ -132,9 +132,9 @@ For an unforeseen intent, keep the northbound prints and smoke as the route, and
 
 | Tick | What happens | Narration |
 | --- | --- | --- |
-| 1 | The smoke leans and thins, but the prints remain sharp. | ==_The inland smoke column leans and thins as wind pulls its top sideways through the bright valley air._== |
-| 2 | Print edges lose their water and soften. The smoke is thinner. | ==_Water leaves the edges of the northbound prints. The smoke has thinned above the trees._== |
-| 3 | The fresh follow is gone. The smoke is a stain, but the crushed corridor still leads north. | ==_North, only a stain remains above the trees. The crushed corridor still runs through the grass, but the fresh sign has dulled._== |
+| 1 | The smoke leans and thins, but the prints remain sharp. | _The inland smoke column leans and thins as wind pulls its top sideways through the bright valley air._ |
+| 2 | Print edges lose their water and soften. The smoke is thinner. | _Water leaves the edges of the northbound prints. The smoke has thinned above the trees._ |
+| 3 | The fresh follow is gone. The smoke is a stain, but the crushed corridor still leads north. | _North, only a stain remains above the trees. The crushed corridor still runs through the grass, but the fresh sign has dulled._ |
 
 ## How the Scene Resolves
 
@@ -145,9 +145,9 @@ The default north handoff is [[Session-11-05-Otter-Hole]]. Once the party commit
 
 | If | Next | Narration |
 | --- | --- | --- |
-| Fresh north commit | The party follows sharp prints toward [[river-slack-basin]]. Hand to [[Session-11-05-Otter-Hole]]. | ==_The prints stay sharp in the wet ground, and the smoke still stands north as you take the corridor upriver._== |
-| Lingered north commit | The party follows softened prints toward [[river-slack-basin]] after the clock advances. Hand to [[Session-11-05-Otter-Hole]]. | ==_The print edges have softened and the smoke is thinner as you take the corridor north._== |
-| Southbound break | The party leaves the bank toward [[torn-crossing]], the terrace line, the beach, or [[Uncertainty]]. Rebuild from the route chosen. | ==_You turn south, leaving the smoke and northbound prints behind as the used bank opens toward the torn crossing and the beach._== |
+| Fresh north commit | The party follows sharp prints toward [[river-slack-basin]]. Hand to [[Session-11-05-Otter-Hole]]. | _The prints stay sharp in the wet ground, and the smoke still stands north as you take the corridor upriver._ |
+| Lingered north commit | The party follows softened prints toward [[river-slack-basin]] after the clock advances. Hand to [[Session-11-05-Otter-Hole]]. | _The print edges have softened and the smoke is thinner as you take the corridor north._ |
+| Southbound break | The party leaves the bank toward [[torn-crossing]], the terrace line, the beach, or [[Uncertainty]]. Rebuild from the route chosen. | _You turn south, leaving the smoke and northbound prints behind as the used bank opens toward the torn crossing and the beach._ |
 
 ## Backup
 

@@ -16,7 +16,7 @@ tier: supporting
 created: 2026-09-12T00:00:00Z
 updated: 2026-09-20
 type: npc
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 status: alive
 role: contact
@@ -63,6 +63,10 @@ The source does not record a first meeting, opening posture, or sample line for 
 ### When posture changes
 
 The source does not establish Bazzoth's want, limit, leverage, or posture-change trigger. Keep those Unknown until a source or play event supplies them.
+
+## Voice
+
+Bazzoth's voice is not established in the source. The page explicitly leaves Bazzoth's color, appearance, voice, and equipment unknown; do not invent a verbal habit or sample line.
 
 ## Connections
 

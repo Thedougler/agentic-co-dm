@@ -13,12 +13,13 @@ A Hook exists to **reel in the line**: wake the players up and get them moving
 before anyone fumbles for direction. Like the tomb run that opens *Raiders of
 the Lost Ark*, it shows the characters doing interesting things, puts the
 opposition or an ally in front of them, and sets the pace and tone of the
-night. One Hook per session, about thirty minutes, and it ends the moment the
+night. One Hook per session, about thirty minutes of table time, and it ends the moment the
 party is committed.
 
 ## Gates
 
 Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
+Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § Fill the silence.
 
 ## Boundary contract
 
@@ -37,7 +38,7 @@ Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-
 
 ## Copy-start
 
-Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: hook`, `category: journal`. Keep the template's jobs; omit a section only when this Hook never spends it.
+Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/` and use the next session that has no plan page yet, and say so. Keep the template's jobs; omit a section only when this Hook never spends it.
 
 ## Fill a Hook
 
@@ -46,22 +47,24 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
    Hook touches (retrieve with `qmd`). When last session stopped mid-scene,
    record the exact state — positions in feet, HP and conditions, initiative,
    spent resources, who holds what. Done when every fact the opening depends
-   on is sourced.
+   on is sourced or proposed (`docs/agents/table-ready.md` § Fill the silence).
 2. **Choose the card.** Read [references/hook-cards.md](references/hook-cards.md)
    and pick the card the fiction calls for. A session that stopped mid-action
    resumes as **Play a Cliffhanger** at the recorded state — the tension is
    already there. Done when the card, its key (action or cerebral), and the
    thread it opens are named.
-3. **Mint owners first.** Every named actor, place, item, or creature the
-   Hook needs has an owner page before any text depends on it — mint missing
-   ones with their owner skill (AGENTS.md Wiki kind routing / Skill Routing).
+3. **Cast owners.** Every named actor, place, item, or creature the Hook
+   needs has an owner page before any text depends on it: cast from the wiki
+   first, and mint with its owner skill only what nothing fits
+   (`docs/agents/table-ready.md` § Cast before minting).
 4. **Read the bar.** Read `docs/agents/table-ready.md`, then build every
    anatomy part the Hook spends, applying the Hook craft below.
    Write every DM-facing line with `writing-for-humans`: lead with the
    point, name everything, conditionals in tables, secrets stated plainly.
 5. **Set rulings.** Load `dnd5e-mechanics` for every check, save, and DC. When
    the Hook is a fight, pull the opposition's numbers from its owner
-   statblock; `encounter-prep` sets the difficulty when no encounter exists.
+   statblock; `encounter-prep` sets the difficulty when no encounter exists. Done when everyone who could fight carries numbers: from the owner
+   statblock, or a proposed standard 5e statblock filed on the owner.
 6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Open on`.
    The opening starts inside the changed moment and ends on something a
    player can act on.
@@ -102,7 +105,13 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
 
 The party can commit to a response within the beat, every approach on the
 page has a world response, and the page states what changed and the next
-beat's trigger. The Hook is the session's only Hook.
+beat's trigger. The Hook is the session's only Hook. On the page:
+
+- the first spoken sentence is already inside something in motion;
+- hesitation advances that motion once, concretely, with what the party sees;
+- the Hook plants at least one piece a later beat uses;
+- every boundary, demand, or taboo the scene states has a row for breaking
+  it, with the full consequence copied from its owner page.
 
 ## Named seams
 

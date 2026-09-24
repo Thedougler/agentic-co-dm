@@ -181,6 +181,95 @@
         "Outcome and response rows state what the world does; no coaching lines addressed to the DM ('do not railroad', 'let them decide').",
         "Every named actor, place, and item links an existing owner page, or the output mints the owner before text depends on it."
       ]
+    },
+    {
+      "id": "s13-hook",
+      "core": true,
+      "prompt": "Write the Hook for Session 13. There's no Session 13 plan yet; I want the opening first.",
+      "context": "Session 12 of the Shattered Sea campaign has been played; its prepped pages are under wiki/journal/sessions/shattered-sea/12/. It ended on the Victory branch of Session-12-07: Crissdalynn still carries the Fate Spinner; Talon Skarn fled wounded into the east canopy with no Legendary Resistance left, about half his hit points, and one ghost plum. Nello was cut out of the strangler fig alive. Jean-Claude woke during Session 12's second beat. Perrin heard the voice say CONSUME and ate nothing, so nobody made a claim and the Hollow did not burn. The session closed on Hinewai at the flower ring: 'You may look. You may not take.' Then, looking at Jean-Claude: 'Not him.' Session 13 opens on the party's answer. Session 13 is a four-hour night and all four players are there. Everything you need is in the input files and the documents the skill points to. Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review.",
+      "expected_output": "One Session 13 Hook page opening on the party's answer to Hinewai.",
+      "assertions": [
+        {
+          "text": "Casts before minting: needed actors, places, items, and creatures come from pages in play or unrevealed wiki pages that fit, and each new mint says why no existing page fit",
+          "type": "process"
+        },
+        {
+          "text": "Opens inside the live moment the premise left (Hinewai waiting on an answer), with no recap block or unrelated new event",
+          "type": "quality"
+        },
+        {
+          "text": "The party commits within the beat, and 'Hook lands when' names the observable commitment",
+          "type": "quality"
+        },
+        {
+          "text": "Opens the question the Climax will answer and plants at least one piece the session uses later",
+          "type": "quality"
+        },
+        {
+          "text": "Better than the prepped Session 12 Hook in playability and clarity",
+          "type": "quality"
+        },
+        {
+          "text": "Cold-runnable: a DM who never saw the prep can run every moment (opening, each handle, each tick, each outcome) from the page alone, without inventing a name, number, motive, consequence, or picture",
+          "type": "quality"
+        },
+        {
+          "text": "Mechanics are sound 5e for the party's level and the beat's tier: DCs, damage, and opposition numbers fit; every roll's success and failure move play; every named system or consequence carries its operative effect",
+          "type": "quality"
+        },
+        {
+          "text": "DM layers are explicit: each actor's want, truth, and next move is stated plainly, and every planted mystery has its answer on the page",
+          "type": "quality"
+        },
+        {
+          "text": "Players hold the outcome: two or more materially different approaches, each with a world response; hesitation and refusal have consequences; nothing is decided or felt for a PC",
+          "type": "quality"
+        },
+        {
+          "text": "Every PC present has a concrete pull or job in the beat, drawn from their page, goals, or abilities",
+          "type": "quality"
+        },
+        {
+          "text": "Spoken layer meets theatre-of-the-mind: situation first, perception only, speakable aloud, one anchor, ends on a live edge",
+          "type": "quality"
+        },
+        {
+          "text": "Grounded: every named actor, place, item, and creature links an owner page that exists or is minted under outputs from its template; nothing contradicts canon or the stated premise",
+          "type": "process"
+        },
+        {
+          "text": "Legible for the DM mid-session: leads with the point, conditionals in tables, no coaching lines, no owner essays, nothing a DM would have to skip past",
+          "type": "quality"
+        },
+        {
+          "text": "Handoff: the carry-forward names each state variable and its possible values, and each outcome names the next beat's trigger",
+          "type": "quality"
+        },
+        {
+          "text": "Fun at the table: a named memorable element that the page actually delivers, stakes these players care about, and a size that fits the beat's budget",
+          "type": "quality"
+        },
+        {
+          "text": "Keeps table time and world time apart: budgets are table minutes; clocks, deadlines, durations, and costs in the fiction are stated in world time or visible triggers",
+          "type": "quality"
+        }
+      ],
+      "files": [
+        "wiki/journal/sessions/shattered-sea/12/Session-12-00-The-Weight-of-Obedience.md",
+        "wiki/journal/sessions/shattered-sea/12/Session-12-07-The-Guava-and-the-Spinner.md",
+        "wiki/journal/sessions/shattered-sea/12/Session-12-08-Toward-the-Memorial.md",
+        "wiki/entities/npc/Hinewai.md",
+        "wiki/entities/place/memorial-grove.md",
+        "wiki/entities/npc/talon-skarn.md",
+        "wiki/entities/lore/two-grave-orders.md",
+        "wiki/entities/npc/talon-vantyrus.md",
+        "wiki/entities/pc/crissdalynn-khinriss.md",
+        "wiki/entities/pc/delmar-fisk.md",
+        "wiki/entities/pc/jean-claude-tabarnack.md",
+        "wiki/entities/pc/perrin-black-jaw.md",
+        "wiki/templates/hook.md",
+        "wiki/entities/lore/taking-on-aruhe.md"
+      ]
     }
   ]
 }

@@ -37,7 +37,7 @@
 - [[bazzoth|Bazzoth]] — Grung operative of unknown color named among the clans' current faces.
 - [[bazzoth-the-steeped]] — An old red-caste Grung alchemist and CR 6 magazine guardian in the Calveno Sewers, killed in Session 05.
 - [[bear-elk]] — CR 11 solitary territorial bruiser with a predictable patrol.
-- [[beaumont-sel]] — Passage operative and family-linked courier who named Perrin a Friend of the Passage.
+- [[beaumont-sel]] — Passage operative and family-linked courier who introduced himself to the crew as a Friend of the Passage.
 - [[beaumonts-crew]] — All of them are competent professionals. None of them are remarkable or ambitious. [[saltwright|Saltwright]] — the ship they crew.
 - [[bela-silt-paw]] — Rattkin scout trapped in the Warren's flooded sub-chamber, waiting for rescue.
 - [[bell-tone-draught]] — A vial of clear liquor that holds one sustained note when tapped, steadying a caster's grip on a spell for the hour after it is drunk.
@@ -46,7 +46,7 @@
 - [[bice-riva]] — Halfling co-proprietor of Al Fondale in Le Paludi, old enough to know the arithmetic of risk, keeps the Warren entrance in her cellar unknown to all but those who should know it.
 - [[bilge-lamp]] — A brass-and-iron lamp sealed against water, which keeps burning underwater, in weather, and through a fall that would put any hooded lantern out.
 - [[Billy]] — Third Halewick child who compelled villagers to find heroes to stop the other two.
-- [[Bisou]] — Beaumont Sel's capuchin companion for eleven years, a quick-witted thief and courier on the Midchain route.
+- [[Bisou]] — Beaumont Sel's capuchin of eleven years on the Midchain run, and the hand he throws when a gun or a powder store needs fouling.
 - [[black-lotus]] — Table-sized magic-feeding bloom that clamps shut, drains slots (then life), and may yield a Black Lotus Heart.
 - [[black-lotus]] — Magic-feeding flora hazard that traps creatures, drains spell slots, and can yield a crystallized Black Lotus Heart.
 - [[black-lotus-heart]] — Crystallized magical sap recovered from a mature Black Lotus after the flower can no longer close.
@@ -265,7 +265,7 @@
 - [[kalowes-frozen-council]] — Kalowe's closed council chamber and reef-gap shrine wait on the same arrival: nine seats, sealed mail, and a tribute basin.
 - [[Karath]] — Raid and hatchery island where captives, tannin rivers, and hidden gold reagent farms support the Grung interior.
 - [[karsovines-working-log]] — Branimir Karsovine's own trial-dive notebook, real hull-pressure and air-pump endurance data from every dive he's personally run, failures included.
-- [[Ket]] — Freed by the crew to fly home toward Murrat after the Surety boarding.
+- [[Ket]] — Moucheron taken off Murrat as a specimen and freed from the Surety's brig; he owes the crew what a freed prisoner owes and nothing more.
 - [[ket-solane]] — Looks abandoned; honeycombed with false-bottomed smugglers' caves the Chain Council hasn't finished mapping.
 - [[keth-naar]] — The wash-up point for [[perrin-black-jaw]] after the [[Vestra]] sinking; feels like a survivor's shore and an unreliable witness.
 - [[kettil-ormsson]] — Runs Ormsson's Fittings on Kalowe's first island, a dwarf ironworks merchant who reads a customer fast and keeps an unadvertised back-shelf arms trade.
@@ -294,7 +294,7 @@
 - [[Locations]] — Gazetteer hub for Shattered Sea regions, Crown water, Midchain, Aruhe, and the Verdant Teeth.
 - [[long-passage-biscuit]] — A soldered case of three hard ship's cakes baked for the long crossings, one of them eaten over a short rest taking a level of exhaustion off whoever eats it.
 - [[long-reach]] — Named Sentinel-linked pressure or technique from the Sentinels dump.
-- [[long-sight]] — Named Sentinel-linked pressure or technique from the Sentinels dump.
+- [[long-sight]] — Rare Sentinel technique withheld from most of the order, currently tied to [[crissdalynn-khinriss|Crissdalynn]] and the hunt for what she carries; it reads probable futures, so irrational or self-sacrificing action weakens it.
 - [[long-sight-hunt]] — Live pressure through which Countless and the Sentinel schism pursue Fate Spinner carriers.
 - [[low-lamp]] — Kin-only gathering house in the Warren, run by Essa Two-Tooth, where debts live in her memory and guests eat before business.
 - [[magic-as-commodity]] — Magic in the Shattered Sea is mass-market technology: cheap and everywhere when it's simple to make, still rare and guarded when it isn't.
@@ -551,7 +551,7 @@
 - [[taken-whole]] — Dockside talk at Kalowe claims a red ship out past the Maw takes ships whole and kills everyone aboard, leaving the cargo dumped over the side instead of stolen.
 - [[taking-on-aruhe]] — Taking a living plant, animal, or claim on Aruhe draws surrounding life into hostility.
 - [[talon-skarn]] — Countless peregrine apprentice and CR 13 flying skirmisher; his stoop-and-chain combat kit supports the Rule of Two rivalry with Talon Vantyrus.
-- [[talon-vantyrus]] — Countless master, originally named Osset, whom [[talon-skarn]] is trying to kill under the Rule of Two.
+- [[talon-vantyrus]] — CR 17 Countless master, originally named [[Osset]] and once a senior master of the High Eyrie; he breaks decisions rather than takes hits, and [[talon-skarn]] is trying to kill him under the Rule of Two.
 - [[tam-slim-nail]] — A deadpan Rattkin stockkeeper at Il Preludio who narrates the room like stage direction and never once sings.
 - [[Tangle]] — Elder teaching and proposed anchor referenced by the Rattkin Runs; Aruhe is a survey site.
 - [[tattletale-goggles]] — Goggles that grant darkvision, but make everyone nearby, friend or foe, feel an inexplicable certainty that someone is at the wearer's location.
@@ -622,7 +622,7 @@
 - [[Thistlewick]] — Brambles that produce a mild narcotic effect on contact.
 - [[thoon-adar]] — A ring of standing stones that reorient themselves overnight; slow enough nobody's caught them moving.
 - [[thornback]] — CR 7 blight-corrupted thorned bruiser that roots the Quiet floor and drives off other beasts.
-- [[Thunk]] — Orc ship gunner and field smith aboard Uncertainty; CR 1/4 fight sheet on the NPC page.
+- [[Thunk]] — Enormous orc master gunner of the Uncertainty, a dockyard metallurgist who counts as two crew at the guns and cannot explain how he reads powder.
 - [[tidehex-captain]] — CR 5 pirate spellcaster captain who coordinates theft operations with fog, command magic, and a telekinetic snatch.
 - [[Toa]] — Biggest and most readable member of the Five Blades: a cheerful Moucheron mercenary with opinions about how fights went wrong.
 - [[toa-kailani]] — Head of House Kailani and current ruler of Sparhold, holding the settlement's leadership through control of the watch.
@@ -713,7 +713,7 @@
 - [[ysolde-sallow]] — The exasperated tavern-keeper of The Long Toast on Otel Karn, grand-niece to the island's oldest duelist, who has run out of patience for the horror everyone else refuses to name aloud.
 - [[Yssenmoor]] — A place over a hidden ley line that reacts to [[fate-spinner]]; feels like an unresolved point of contact between old power and a watchful relic.
 - [[yssenmoors-ancient-challenge]] — A fog-bound demigod challenges every visitor to his marsh and none have answered in years. The ley line beneath his island pulls on an artifact the party carries.
-- [[Zort]] — Armless contact who offered a Midchain reptile lead for a prosthetic.
+- [[Zort]] — Armless goblin animal dealer in Le Paludi who paid for his prosthetic with a Midchain reptile name and works his whole pit with his feet.
 - [[zorts-toe-claws]] — Iron-capped handling sandals cut to Zort's own pattern, giving a wearer footing enough to shrug off a grapple or a shove.
 - [[takowan]] — Harbour crew member named in Grimaldi’s waking-salts item record.
 - [[anvezs-provisions]] — General provisions shop named in the item record for Anvez’s Provisions.
@@ -746,8 +746,11 @@
 
 ## Synthesis
 
-- [[story-so-far]] — Sessions 01–11 from the Saltwright hold to an otter-camp cliffhanger on Aruhe; Season 2's live handle is the Hungry Isle.## Journal
+- [[story-so-far]] — Sessions 01–11 retold as one story, from the boarding in the Saltwright's hold to the night camp on Aruhe.
 
+## Journal
+
+- [[journal/sessions/shattered-sea/00/Session-00-Prologue]] — Player primer: the sea, the powers, the cost of passage, and the four strangers who wash onto the Saltwright.
 - [[journal/sessions/shattered-sea/01/Session-01-Recap]] — The crew chose the Saltwright hold and took Geoffrey Draves.
 - [[journal/sessions/shattered-sea/02/Session-02-Recap]] — They took the HCS Surety and took three hull strikes from below.
 - [[journal/sessions/shattered-sea/03/Session-03-Recap]] — They killed the whip-shark, renamed Uncertainty, and made landfall at Calveno.

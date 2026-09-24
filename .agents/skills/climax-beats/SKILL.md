@@ -19,6 +19,7 @@ choices made inevitable; a final battle is one shape among several.
 ## Gates
 
 Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
+Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § Fill the silence.
 
 ## Boundary contract
 
@@ -35,7 +36,7 @@ Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-
 
 ## Copy-start
 
-Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md` with `type: session-prep`, `kind: climax`, `category: journal`. Keep the template's jobs; keep **Final Battle** or **Final Revelation** sections only for the shape in play.
+Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/` and use the next session that has no plan page yet, and say so. Keep the template's jobs; keep **Final Battle** or **Final Revelation** sections only for the shape in play.
 
 ## Fill a Climax
 
@@ -48,9 +49,11 @@ Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<ca
    [references/climax-cards.md](references/climax-cards.md) and pick the shape
    the party's choices earned. When the party negotiated, exposed, or fled
    their way here, that shape is the Climax.
-3. **Mint owners first.** Every creature, NPC, place, item, or rule the
-   Climax needs has an owner page before any text depends on it; a creature
-   you will roll without an owner goes to `monster-design`.
+3. **Cast owners.** Every creature, NPC, place, item, or rule the Climax
+   needs has an owner page before any text depends on it: cast from the wiki
+   first, and mint only what nothing fits (`docs/agents/table-ready.md` § Cast before minting); a creature the
+   party could fight that has no owner goes to `monster-design` (its Reskin
+   path fits rank-and-file: a standard statblock with this fiction).
 4. **Build the harvest.** Fill the harvest table (craft below) before
    anything else; the stage, forces, and phases grow from it.
 5. **Read the bar.** Read `docs/agents/table-ready.md`, then build every
@@ -59,7 +62,8 @@ Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<ca
    point, name everything, conditionals in tables, secrets stated plainly.
 6. **Set numbers and rulings.** `encounter-prep` sets difficulty for the
    villain tier and the live party; `dnd5e-mechanics` sets every check, save,
-   and DC. Copy compact numbers for every combatant onto the page.
+   and DC. Copy compact numbers for every combatant onto the page. Done when everyone who could fight carries numbers: from the owner
+   statblock, or a proposed standard 5e statblock filed on the owner.
 7. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Opening
    image`, plus any phase-shift signal the players must perceive.
 8. **Write the outcomes.** One row per outcome the Climax can produce —
@@ -92,7 +96,7 @@ Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<ca
   desperation), its break point, and every exit it holds — plus how the
   party can close each exit.
 - **Win and lose conditions.** Name what wins besides the last hit point
-  (seize the Spinner, break the ritual circle, hold until dawn) and what
+  (seize the idol, break the ritual circle, hold until dawn) and what
   loses without a total party kill (the villain escapes with the prize, the
   town burns).
 - **Every PC's moment.** Each PC has a thread, foe, or feature in the Climax
@@ -101,7 +105,7 @@ Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<ca
   chart reaches the slot. A central question resolved early is the Climax;
   compress and hand to the Resolution. An avoided Climax becomes new world
   state and returns to `session-beats` to recompute.
-- **Budget.** About forty-five to sixty minutes. Name the compression if the
+- **Budget.** About forty-five to sixty minutes of table time. Name the compression if the
   table runs behind: fewer phases, a faster clock — the central question
   still resolves on this page.
 

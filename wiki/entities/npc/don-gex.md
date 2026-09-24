@@ -66,6 +66,10 @@ flexGrow=1
 No living posture change is established. His legacy becomes active when the Ebony Scales decide whether a transaction crosses their anti-slavery line.
 ```
 ````
+### Voice
+
+Don Gex has no present voice; the clan remembers him in blunt, absolute terms about slavery. His ask was, “Name the price, and name who pays it.” His refusal was, “No trade that makes a slave.” Under pressure, his legacy answers, “The Ebony Scales do not bend on this.”
+
 
 ## Connections
 

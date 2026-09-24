@@ -281,9 +281,16 @@ def _resolve_row_identity(
 
 
 def _similarity_cache(
-    rows: list[dict[str, Any]], profiles: dict[str, Counter[str]]
+    rows: list[dict[str, Any]],
+    profiles: dict[str, Counter[str]],
+    selected: set[str] | None = None,
 ) -> dict[tuple[str, str], float]:
     cache: dict[tuple[str, str], float] = {}
+    selected_indexes = (
+        {index for index, row in enumerate(rows) if row["path"] in selected}
+        if selected is not None
+        else None
+    )
     candidates: list[tuple[int, int]] = []
     groups: dict[str, list[int]] = {}
     for index, row in enumerate(rows):
@@ -292,6 +299,8 @@ def _similarity_cache(
     for indexes in groups.values():
         for offset, left in enumerate(indexes):
             for right in indexes[offset + 1:]:
+                if selected_indexes is not None and left not in selected_indexes and right not in selected_indexes:
+                    continue
                 key = tuple(sorted((rows[left]["path"], rows[right]["path"])))
                 cache[key] = 0.0
                 left_body = rows[left]["body"]
@@ -300,8 +309,6 @@ def _similarity_cache(
                     (profiles[rows[left]["path"]] & profiles[rows[right]["path"]]).values()
                 ) / (len(left_body) + len(right_body)) > 0.6:
                     candidates.append((left, right))
-    if not candidates:
-        return cache
     chunks = [candidates[start:start + 512] for start in range(0, len(candidates), 512)]
     if len(candidates) > 2000:
         workers = min(4, os.cpu_count() or 1, len(chunks))
@@ -350,14 +357,13 @@ def resolve_identity(vault: str | Path, path_or_slug: str) -> PageIdentity:
         profiles[row["path"]] = Counter(row["body"])
     return _resolve_row_identity(rows, row, provenance, transitions, {}, profiles)
 
-
 def scan_identities(vault: str | Path, *, scope: Scope | None = None) -> list[PageIdentity]:
     root = Path(vault).resolve()
     rows = _pages(root)
     selected = set(scope.resolved_files) if scope else None
     provenance, transitions = _manifest_signals(root)
     profiles = {item["path"]: Counter(item["body"]) for item in rows}
-    similarity_cache = _similarity_cache(rows, profiles)
+    similarity_cache = _similarity_cache(rows, profiles, selected)
     return [
         _resolve_row_identity(rows, row, provenance, transitions, similarity_cache, profiles)
         for row in rows

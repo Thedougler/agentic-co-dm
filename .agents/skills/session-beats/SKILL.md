@@ -15,14 +15,18 @@ A Beat Chart scripts the session's **pacing**, not its outcomes (Mike
 Pondsmith, *Scripting the Game*; transcription at
 `RTG-Scripting-the-Game-v1.2-agent-readable (2).md` in the repo root). Each
 beat is a chunk of play that informs, entertains, and pushes the plot
-visibly forward; their order keeps tension up and the story legible. Prepare
-pressures, factions, clues, places, offers, and hazards that can become
-beats; let what the players do select which one fires next.
+visibly forward; their order keeps tension up and the story legible. Chart the
+situations that reach the party on their own triggers, and prepare the
+factions, clues, places, offers, and hazards that can become floating beats;
+the players' answers decide how each situation turns out. **Decide the
+world; leave the party's choices open**: every fact about the world is on the
+page, and only the party's choices and the dice stay open.
 
 ## Gates
 
 Prep only. Follow `docs/agents/work.md` for Work protocol, invention, accept, and lifecycle.
 Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
+Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § Fill the silence.
 
 ## Boundary contract
 
@@ -60,12 +64,13 @@ child slot resolved or explicitly blocked.
    Resolution is the tag line showing what the Climax changed.
 3. **Alternate Developments and Cliffhangers** in the middle, never two of a
    kind in a row. Developments are non-action beats (clues, revelations,
-   conversations, character turns); Cliffhangers are contests in doubt
-   (chases, fights, perils). An action Hook starts the middle with a
+   conversations, character turns); Cliffhangers are contests in doubt with
+   physical conflict or peril (chases, fights, hazards), and a Confrontation
+   carries force the opposition could use. An action Hook starts the middle with a
    Development; a cerebral Hook with a Cliffhanger. An action Climax follows a
    Development; a cerebral Climax follows a Cliffhanger.
 
-**Budget.** One beat ≈ thirty minutes of real time. Hook + Climax +
+**Budget.** One beat ≈ thirty minutes of table time; clocks and deadlines in the fiction run on world time (`CONTEXT.md`). Hook + Climax +
 Resolution ≈ ninety minutes; divide the remaining time into alternating
 Development/Cliffhanger slots. A six-hour night leaves four and a half hours
 — about nine middle beats. The count is a ceiling, not a quota.
@@ -86,13 +91,19 @@ makes the next Development's information urgent.
    session question, what happens if the party does nothing, and a
    one-sentence dramatic spine each beat approaches from a different angle.
 3. **Opposition agenda.** Name the opposition (owner page), its goal for this
-   session, its means, and what it does step by step if nobody interferes
+   session and how pursuing it brings the opposition into the party's path, its
+   means, and what it does step by step if nobody interferes
    (the Pressure table, steps 0–4). Cliffhanger opposition comes from this
-   agenda or from the environment.
+   agenda or from the environment. Done when each step names what the
+   opposition does, when, and what the party can see of it.
 4. **Threads.** Name three to five live threads — PC goals, faction clocks,
    mysteries, relationships under pressure, depleting resources — and for
    each, the beats that plant, test, and harvest it.
-5. **Chart the beats.** Fill the Beat Map in play order. Each row: form,
+5. **Chart the beats.** Fill the Beat Map in play order. A charted slot is a
+   situation that reaches the party on its own trigger (a clock tick, an
+   arrival, the opposition's next step, the last beat's consequence), and the
+   party chooses how to answer it. A situation that fires only when the party
+   opts into it is a Floating Beat or a Branch. Each row: form,
    card (index below), thread, trigger, what changes, handoff, budget; each
    Cliffhanger and the Climax also get an escalation tier; each row names its
    memorable element. Add Floating Beats for situations that can fire
@@ -109,15 +120,18 @@ makes the next Development's information urgent.
    more than one interaction.
 8. **Spotlight.** Each PC gets at least one beat where their goal, bond, or
    fear drives the scene (PC Touchpoints), and a thread the Climax harvests.
-9. **Cast and owners.** List every named actor, place, item, and creature the
-   beats need. Mint missing owners first with their owner skills, one focused
-   subtask per page type (AGENTS.md Focused minting).
+9. **Cast owners.** List every named actor, place, item, and creature the
+   beats need. Cast each from the wiki first; mint with its owner skill only
+   what nothing fits (`docs/agents/table-ready.md` § Cast before minting), one
+   focused subtask per page type (AGENTS.md Focused minting).
 10. **Fill the typed beats.** In chart order, hand each live slot to its type
     skill; each beat opens from the previous beat's carry-forward, so the Hook
     fills first. Every typed beat meets `docs/agents/table-ready.md`.
 11. **Audit.** Run the beat-order audit below and a cold read of the plan: a
     DM who has never seen the prep can say, from the plan, what starts the
-    night, what the opposition does next, and which beat is on deck.
+    night, what the opposition does next, and which beat is on deck. Write
+    each audit check into the plan's Prep Audit with the beats that satisfy
+    it. Done when every check names its beats and every failure is fixed.
 12. **File.** Write the plan's DM copy with `writing-for-humans`, file the
     session plan (below), and link every typed beat.
 
@@ -173,15 +187,15 @@ Escape are rare, costly, and keep earlier consequences.
 
 ## Agency and recompute
 
-Read [references/agency.md](references/agency.md) before charting and after
-every beat in replanning. Session-level gates:
+Read [references/agency.md](references/agency.md) before charting and
+whenever the DM reports play that changes the plan. Session-level gates:
 
 - Prepare situations and clocks, not required outcomes.
 - Offer two or more meaningful options when the fiction supports them.
 - Let players ignore a Development, fail a Cliffhanger, or pursue a goal they
   create; apply visible consequences and recompute.
-- Let the chart shrink, branch, pause, or end early when the new state
-  warrants it.
+- Let the chart branch, re-order, or re-label when the new state warrants
+  it; end early only when the session's question is answered.
 - Player-facing prose is a `theatre-of-the-mind` fill inside the typed beat
   page. Sites, routes, and decision graphs → `dungeon-design`. Retrieve canon
   with `qmd`; mark silent areas and file what the user makes canon. Never
@@ -191,8 +205,14 @@ every beat in replanning. Session-level gates:
 
 Before filing, write `Hook → (D/C …) → Climax → Resolution` and check:
 
-- **Polarity:** every transition alternates; the Climax prelude has the
-  opposite type.
+- **Polarity:** every transition alternates; the Hook's and the Climax's key
+  (action or cerebral) is the one its card catalog assigns, and the beat after
+  the Hook and the beat before the Climax have the opposite type; every
+  Cliffhanger puts bodies, a vehicle, or a place at physical risk.
+- **Answers:** every mystery, clue, route, and opponent in the plan names its
+  one concrete answer (who, what, where), proposed where canon is silent.
+- **Drive:** every charted slot reaches the party on its own trigger; the
+  opposition's agenda moves toward its goal whether or not the party engages.
 - **Threads:** every beat advances a live thread; the Climax harvests threads
   the middle planted; the Resolution shows their final state.
 - **Escalation:** tiers rise across the night; the Climax is the top tier and
@@ -224,16 +244,3 @@ Card names for charting; each type skill's catalog holds the shapes.
 | Cliffhanger | `cliffhanger-beats` |
 | Climax | `climax-beats` |
 | Resolution | `resolution-beats` |
-
-## Session ritual
-
-**Pre-session (30–40 minutes):** review PC goals and abilities; confirm each
-PC's spotlight beat; rehearse the strong start; skim the Floating Clues;
-note a few names for improvised extras; keep a parachute — an off-chart
-situation that fits anywhere. Prep only what is uncomfortable to improvise,
-as modular pieces findable in under thirty seconds.
-
-**In session:** keep clocks visible; give players useful roles (watcher,
-caller, mapper, negotiator, recorder) when a procedure benefits. A recording
-goes through `session-transcript-ingest` afterward; the transcript never
-becomes the session plan.

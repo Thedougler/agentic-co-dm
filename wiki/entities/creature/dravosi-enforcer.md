@@ -11,7 +11,7 @@ updated: 2026-09-13
 type: creature
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "A Dravosi Crown veteran built for confined boarding fights, crowd suppression, hooks, gangplanks, and violence carried out like just another inspection."

@@ -37,6 +37,8 @@ relationships:
 ---
 # Flying Boots
 
+![[flying-boots-overview.png|Flying Boots overview: ordinary leather lifting from the deck]]
+
 > [!narration] Narration
 > Ordinary boots on a theatrical mover's feet. On the ground they read as common footwear. Once he rises, the air holds him.
 
@@ -63,4 +65,3 @@ Spend a charge when Delmar needs altitude — boarding, escape, or a theatrical 
 ## Provenance
 
 **How they arrived — contested.** Session 04 records that [[jean-claude-tabarnack]] bought a pair of Flying Boots for Delmar after selling whip-shark eggs.^[ambiguous] The campaign item note says [[perrin-black-jaw]] passed them to Delmar, making a small Black-Jaw obligation visible.^[ambiguous] Live session fact is kept; the item-note chain is recorded for DM decision.
-

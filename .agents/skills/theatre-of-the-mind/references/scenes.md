@@ -164,7 +164,7 @@ every handle, each in its layer (§ Layers):
 - **{Creature}**: that creature as it appears in this scene.
 - **Exit**: the transition into the next beat on the same page.
 - **Narration columns** in Zones, Threat clock, and outcome tables: short
-  conditional lines written as `==_italic_==` inside the table cell
+  conditional lines written as `_italic_` inside the table cell
   (attention and interaction layers; state changes).
 
 
@@ -173,7 +173,7 @@ every handle, each in its layer (§ Layers):
 - **Job:** One conditional picture the DM reads when the party enters the zone
   or the clock ticks. Zone cells are the **attention** layer: what a closer
   look at that part of the scene shows.
-- **Build:** A line or two in `==_italic_==` inside the table cell. Zone: the
+- **Build:** A line or two in `_italic_` inside the table cell. Zone: the
   one feature of that place a player would act on, with its property, plus
   any handle the opening left to this zone. Tick: what changes, visibly and
   audibly, and what it now threatens. Build on the opening; add only what is

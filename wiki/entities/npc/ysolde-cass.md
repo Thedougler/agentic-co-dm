@@ -73,6 +73,10 @@ flexGrow=1
 The current [[penance-bar-siege]] does not use her. If you put her on stage anyway, [[dessa-wule]] already treats her name as something to leave a bowl for, not something to explain.
 ```
 ````
+### Voice
+
+No spoken line is on file for Ysolde Cass, and the current [[penance-bar-siege]] retires her from active play. Do not assign her a voice or sample lines; preserve the quiet net-mending image until new canon reintroduces her.
+
 
 ## Connections
 

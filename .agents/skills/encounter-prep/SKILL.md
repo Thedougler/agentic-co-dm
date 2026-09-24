@@ -27,7 +27,7 @@ Customized combat mechanics serve a named narrative beat (lore, origin, stakes, 
 
 When the encounter has a named place (lair, site, battlefield), that place has at least one mechanical pressure that belongs to it and changes a choice. Flavor-only scenery is incomplete. No named place, or an explicit DM request for a featureless skirmish, does not require invented lair mechanics.
 
-Stock opposition used unchanged needs no custom features. Do not author statblocks — `monster-design` owns those.
+Stock opposition used unchanged needs no custom features: name the standard statblock and copy the compact numbers the DM will roll onto the page. New or changed creatures get their statblocks from `monster-design` (its Reskin path covers a stock statblock with new fiction).
 
 
 ## Ground and type

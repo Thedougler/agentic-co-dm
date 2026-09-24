@@ -23,7 +23,7 @@ tier: supporting
 created: 2026-09-13T03:00:00Z
 updated: 2026-09-18
 type: lore
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 relationships:

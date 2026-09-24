@@ -16,6 +16,14 @@ _Avoid_: live co-GM; table-facing agent; autonomous GM
 Table time with only humans present.
 _Avoid_: agent-attended play; in-session proposals
 
+**Table time**:
+Real minutes at the table. Beat budgets, the night's length, and pacing are table time.
+_Avoid_: turning a beat's budget into an in-world duration; pricing a fictional cost in table minutes
+
+**World time**:
+Time inside the fiction: rounds, minutes, hours, days, dusk. Clocks, deadlines, travel, durations, and costs the characters feel are world time.
+_Avoid_: a bare "30 minutes" with no clock named; a clock that advances on table time without saying so
+
 **Campaign**:
 The shared fictional world and ongoing play established by the DM and players across sessions.
 _Avoid_: plot; setting bible; sequence of planned scenes
@@ -112,9 +120,9 @@ The current state label for a page's subject. Values depend on the page kind and
 **Scope**:
 Describe scale where it changes play, but do not treat it as universal frontmatter.
 
-DM-facing summaries state sourced campaign facts and runnable procedures. They do not invent unsupplied DM intent.
+DM-facing summaries state sourced campaign facts, runnable procedures, and marked canon proposals where canon is silent or contradicts itself. They never pass a proposal off as the DM's intent.
 
-_Avoid_: treating hidden content as inaccessible to the DM or Co-DM; inventing DM intent; tying categories to layouts.
+_Avoid_: treating hidden content as inaccessible to the DM or Co-DM; passing a proposal off as DM intent; tying categories to layouts.
 
 ## Beat model
 
@@ -238,8 +246,8 @@ The current Co-DM project containing reusable prep-and-wrapup practice and the c
 _Avoid_: a separate campaign store; a candidate canon; a third full copy of the campaign
 
 **Canon proposal**:
-A suggested change to wiki facts. The Co-DM never silently edits canon. Fun may shape Work; facts change only when the DM accepts.
-_Avoid_: fun-as-silent-override; inventing lore or mechanics into the wiki as silent canon
+A suggested change or addition to wiki facts. Prep fills canon silence (including facts canon records as unknown), and resolves canon contradictions, with canon proposals (a motive, a name, a statblock, the opposition's next move), each marked and listed for the DM. The Co-DM never silently edits canon. Fun may shape Work; facts change only when the DM accepts.
+_Avoid_: fun-as-silent-override; filing a proposal as silent canon; leaving a silence open where the DM needs an answer
 
 **Redesign**:
 A clean rebuild around best practice. It is not a patch list of current-vault failures.

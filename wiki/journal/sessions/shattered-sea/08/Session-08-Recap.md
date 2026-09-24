@@ -17,6 +17,8 @@ tier: supporting
 created: 2026-09-12T04:56:01Z
 updated: 2026-09-12T04:56:01Z
 type: recap
+campaign: shattered-sea
+visibility: dm
 reveal: revealed
 relationships:
   - target: "[[Uncertainty]]"
@@ -29,18 +31,20 @@ relationships:
 Played 2026-08-02. Lists. Osset. Pay.
 
 > [!narration] Recap
-> Last time on the Shattered Sea, you brought the prize Uncertainty into Calveno, where Delmar Fisk told you his fleet stole the Pearl of Souls, and Umberlee named that Pearl as her price. Otar the Foul died in the Mercatura crater. Iacopo Fieschi signed you as Calveno's Defenders. Nona Black-Jaw told you to come home. Hundreds of people were missing.
+> The Defender title came with pay attached, and Fieschi settled it out in the open. A thousand gold in trade credit, a diamond ring, and a house called Casa Falier.
 >
-> You climbed out of that crater as Defenders. Fieschi named a Tessarine debt in the open and paid it with a thousand gold in trade credit, Casa Falier, and a diamond ring.
+> Nona set a desk up at the lip of the crater and started taking names. The list went past three hundred fourteen men of fighting age and kept going. Jean-Claude said the word slaving to her face. Nona promised the crowd she would run the raiders down, and put two Passage ships to sea after a fleet that already had days on them. Perrin walked out of that meeting with a favor instead of coin, and Cobb would have the refit finished in twelve hours.
 >
-> Nona turned the Mercatura crater into a missing-persons desk. The list climbed past three hundred fourteen fighting-age men and kept taking names. Jean-Claude Tabarnack called it slaving. Nona vowed chase in front of the crowd and sent two Passage ships, already days behind the raiders. She gave Perrin Black-Jaw a favor instead of gold. Cobb's refit on Uncertainty would be ready in twelve hours.
+> You spent the pay the next morning. At the Cabinet of Morsani you bought the Snap, and Delmar came away with a torn page in his coat, a page with Osset written on it, a monk who had walked out of the Sentinels when they split. Catarina, still in Calveno, told the shop whose corpse the page had come off, and the shop put her out of the door and partway down the street.
 >
-> You took the pay to the shops. At Morsani you bought The Snap. Delmar lifted a torn page that named Osset, a monk who left the Sentinels in a schism. Catarina Da'Virelli, still in Calveno, named a corpse as Morsani's source, and the shop threw her out the door and twenty feet down the street.
+> The cloak Crissdalynn came away with was Lavinia Sordi's, who named it for what it was, a Nightmantle, and was willing to say where she had it from. From a man with a falcon's face, she said, who answered to the name Osset as well. Crissdalynn had never heard that name at the Eyrie.
 >
-> Lavinia Sordi sold Crissdalynn Khinriss a cloak. Identify made it Nightmantle. Lavinia had it from a falcon-featured man who also called himself Osset, a name Crissdalynn never heard at the Eyrie. Zort received the completed prosthetic from Catarina's Calveno workshop, and the Midchain reptile contact is no longer an open commission.
+> At Zort's Pits the old goblin already had the finished prosthetic on. He warned you off the cages and gave up the name of his reptile man in the Midchain. The room smelled of straw and animal musk, and something growled in a cage he did not show you. He took Perrin's high five with a foot.
 >
-> The paint is still wet on the Defender writ. Uncertainty sits in the cradle for twelve hours. The list is still growing. The raiders already have a head start. Osset is named in two mouths.
+> The ink on the Defender writ is barely dry. *Uncertainty* has twelve hours left in the cradle, the list keeps taking names, the raiders still have their head start, and Osset has been said out loud twice in one day.
 
 ## Wiki facts
 
-Nona's list passed three hundred fourteen fighting-age men. Two Passage ships chase raiders already days ahead. The party bought The Snap and Nightmantle. Osset was named by a torn page and by Lavinia Sordi. Cobb's refit on *[[Uncertainty]]* is twelve hours out. Next: [[Session-09-Recap]].
+[[iacopo-fieschi]] paid the crew out of the open debt he had just named, in trade credit, the house Casa Falier, and a diamond ring, which is the money that bought the [[the-snap|Snap]] and [[Nightmantle]]. [[nona-black-jaw]] turned the [[mercatura]] crater into a missing-persons desk: the list passed three hundred fourteen fighting-age men, she sent two [[the-passage|Passage]] ships after raiders days ahead, and she paid [[perrin-black-jaw]] in favor rather than coin. [[cobb]] had [[Uncertainty]]'s refit twelve hours out.
+
+[[delmar-fisk]] lifted the torn page naming [[osset]] as a monk who left [[sentinels-of-the-eyrie|the Sentinels]] in a schism, and [[catarina-davirelli]] identified its source as a corpse, which is what got her put out of [[cabinet-of-morsani|the Cabinet of Morsani]]. [[lavinia-sordi]] named Osset a second time in one day and tied the cloak to a falcon-featured man. [[crissdalynn-khinriss]] had never heard the name at [[high-eyrie|the Eyrie]]. [[Zort]] had his prosthetic and handed over the Midchain reptile contact, closing that commission. Next: [[Session-09-Recap]].

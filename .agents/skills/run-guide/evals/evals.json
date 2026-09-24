@@ -72,7 +72,7 @@
         {"text": "Scene ends when is the first ## heading with an end condition and time budget.", "type": "structure"},
         {"text": "At a Glance col-md block contains stakes, goal or exit, danger, and situation magnets.", "type": "structure"},
         {"text": "Action cards name NPC wants, posture, and what changes their posture — not combat stat blocks.", "type": "content"},
-        {"text": "Zones table includes a Narration column with ==_italic_== stubs on pass 1.", "type": "structure"},
+        {"text": "Zones table includes a Narration column with _italic_ stubs on pass 1.", "type": "structure"},
         {"text": "Be ready for table covers social outcomes — what if they offend, what if they ask the wrong question, what if they leave early.", "type": "content"},
         {"text": "How the Scene Resolves has an options table with at least three outcomes and their carry-forward to the next beat.", "type": "structure"},
         {"text": "No threat clock in combat-round form — talk-mode uses a social or time-pressure clock if any.", "type": "guardrail"}

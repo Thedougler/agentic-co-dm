@@ -106,7 +106,7 @@ class VaultFixture(unittest.TestCase):
 FIXTURE = Path(__file__).parent / "fixtures" / "wiki_ops"
 
 def test_cli_contracts_and_environment_discovery():
-    for script in ("scripts/wiki-bulk-ops", "scripts/wiki-lint", "scripts/wiki-identity"):
+    for script in ("scripts/wiki-bulk-ops", "scripts/wiki-lint", "scripts/wiki-identity", "scripts/wiki-reveal"):
         result = run_cli(script, "--help")
         assert result.returncode == 0
         assert "usage:" in result.stdout
@@ -116,6 +116,53 @@ def test_identity_cli_json_and_ambiguous_status():
     payload = assert_json(result, returncode=2)
     assert payload["ambiguous"] == 2
     assert payload["scanned"] == 2
+
+
+def test_reveal_cli_lists_gate_and_type_from_frontmatter(tmp_path: Path):
+    def page(relative: str, **fields: str) -> None:
+        front = "".join(f"{key}: {value}\n" for key, value in fields.items())
+        path = tmp_path / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(f"---\n{front}---\n\nBody.\n", encoding="utf-8")
+
+    page("entities/npc/hidden-fisher.md", title="Hidden Fisher", type="npc", lifecycle="proposed", reveal="unrevealed")
+    page("entities/npc/known-fisher.md", title="Known Fisher", type="npc", lifecycle="canon", reveal="revealed")
+    page("entities/place/salt-quay.md", title="Salt Quay", type="place", lifecycle="accepted", reveal="unrevealed")
+    page("journal/sessions/x/Session-11-01-Hook.md", title="Hook", type="session-prep", kind="hook", reveal="unrevealed")
+    page("_raw/draft.md", title="Draft", type="npc", reveal="unrevealed")
+    page("index.md", title="Index")
+
+    listed = assert_json(run_cli("scripts/wiki-reveal", "--json", vault=tmp_path))
+    assert listed["state"] == "unrevealed" and listed["total"] == 3
+    assert listed["counts"] == {"npc": 1, "place": 1, "session-prep": 1}
+    assert [item["path"] for item in listed["pages"]] == [
+        "entities/npc/hidden-fisher.md",
+        "entities/place/salt-quay.md",
+        "journal/sessions/x/Session-11-01-Hook.md",
+    ]
+    assert listed["pages"][2]["kind"] == "hook"
+    assert listed["pages"][0]["lifecycle"] == "proposed"
+
+    npc = assert_json(run_cli("scripts/wiki-reveal", "unrevealed", "--type", "npc", "--json", vault=tmp_path))
+    assert npc["total"] == 1 and npc["pages"][0]["title"] == "Hidden Fisher"
+
+    both = assert_json(run_cli("scripts/wiki-reveal", "all", "--type", "npc , place", "--json", vault=tmp_path))
+    assert both["total"] == 3
+
+    counted = assert_json(run_cli("scripts/wiki-reveal", "all", "--count", "--json", vault=tmp_path))
+    assert "pages" not in counted and counted["total"] == 4
+
+    text = run_cli("scripts/wiki-reveal", "revealed", vault=tmp_path)
+    assert text.returncode == 0
+    assert text.stdout.splitlines() == ["entities/npc/known-fisher.md - Known Fisher (npc)"]
+
+    empty = run_cli("scripts/wiki-reveal", "revealed", "--type", "place", vault=tmp_path)
+    assert empty.returncode == 0 and empty.stdout.strip() == "_none_"
+
+    typo = run_cli("scripts/wiki-reveal", "unrevealed", "--type", "npcs", vault=tmp_path)
+    assert typo.returncode == 1 and "unknown content type" in typo.stderr
+
+    assert run_cli("scripts/wiki-reveal", "hidden", vault=tmp_path).returncode == 2
 
 
 def test_scope_and_semantic_sections():

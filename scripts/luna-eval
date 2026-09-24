@@ -107,6 +107,7 @@ def main() -> int:
     ap.add_argument("--run", type=int, default=1, help="run number, for repeated runs")
     ap.add_argument("--context", help="extra instructions appended to the prompt")
     ap.add_argument("--model", default="gpt-6-luna")
+    ap.add_argument("--effort", default="high", help="Codex reasoning effort for the subject (default: high)")
     a = ap.parse_args()
 
     spec: dict = {}
@@ -143,7 +144,14 @@ def main() -> int:
     (run / "prompt.txt").write_text(prompt)
     start = time.time()
     with open(run / "events.jsonl", "w") as ev, open(run / "stderr.txt", "w") as err:
-        rc = subprocess.run(["codex", "exec", "-m", a.model, "-s", "workspace-write", "-C", str(REPO),
+        # Cold, lean subject: no Codex memories (none read, none written), no MCP servers (the
+        # subject works from the repo and qmd), and high reasoning effort (the user's Codex
+        # default is xhigh, which made each eval run 40+ minutes).
+        lean = ["-c", "memories.use_memories=false", "-c", "memories.generate_memories=false",
+                "-c", f"model_reasoning_effort={a.effort}"]
+        for server in ("chrome-devtools", "node_repl", "context7"):  # plugin servers cannot be overridden
+            lean += ["-c", f"mcp_servers.{server}.enabled=false"]
+        rc = subprocess.run(["codex", "exec", "-m", a.model, "-s", "workspace-write", "-C", str(REPO), *lean,
                              "--skip-git-repo-check", "--json", "-o", str(run / "final.txt"), prompt],
                             stdout=ev, stderr=err, stdin=subprocess.DEVNULL).returncode
     secs = round(time.time() - start)

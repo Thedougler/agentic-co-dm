@@ -29,6 +29,8 @@ summary: Calveno captive who obeys the woman in the woods devoutly, told her a G
 ---
 # Nello Castri
 
+![[nello-castri-overview.png|Nello Castri overview: held in the strangler fig]]
+
 ````col
 ```col-md
 flexGrow=2

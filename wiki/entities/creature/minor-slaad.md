@@ -11,7 +11,7 @@ updated: 2026-09-13
 type: creature
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "CR 1/2 juvenile slaad with Magic Resistance and a Bite/Claw multiattack, stalled between tadpole and adult — what a tadpole-infested host becomes under Otar the Foul's control."

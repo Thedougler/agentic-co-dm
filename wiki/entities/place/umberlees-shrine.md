@@ -12,7 +12,7 @@ created: 2026-09-19
 updated: 2026-09-19
 type: place
 lifecycle: proposed
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 kind: shrine
 region: "Sunken Crown"
