@@ -17,6 +17,8 @@ tier: supporting
 created: 2026-09-12T04:56:01Z
 updated: 2026-09-12T04:56:01Z
 type: recap
+campaign: shattered-sea
+visibility: dm
 reveal: revealed
 relationships:
   - target: "[[calven-and-calveno]]"
@@ -27,16 +29,16 @@ relationships:
 Played 2026-07-19. Agni. Ceiling opens.
 
 > [!narration] Recap
-> Last time on the Shattered Sea, you brought the prize Uncertainty into Calveno. Delmar Fisk told you his fleet stole the Pearl of Souls. At the harbor shrine Umberlee took Branca and named the Pearl as her price. You went into the sewers with local Calveno artificer Catarina Da'Virelli assisting. You reached Room 8 in the middle of a ritual, Solange Barret still chanting, Grung Elite Warriors still in the way.
+> Up in the city it was the second day of the festival, and Kyzil took no part in the pranks. Thunk walked down to the harbour and signed a thousand gold of cannon onto *Uncertainty*'s credit on nothing but your names. Nona threw a tomato back.
 >
-> On festival morning, Kyzil would not play the pranks. Thunk signed a thousand gold of cannon on Uncertainty's credit. Nona Black-Jaw threw a tomato back.
+> Down in the primary chamber the fight was still running. Catarina worked the room beside you until Ragnetto went down, and Delmar put one guard away with a single pistol shot. Perrin took a hit, called to his patron, and got one word back, *Not yet*, and stayed upright coughing seawater. Crissdalynn had the blind one on her, Vashu clicking and feeling out the room with that tongue of hers. Vashu landed twice, and Crissdalynn dodged the tongue twice and cracked her throat. Solange never stopped chanting, and somewhere in it she told you she would not have her princesses stopped.
 >
-> You were still in the primary chamber. Catarina assisted from the local side with fire and a shocking grasp, and Ragnetto fell. Delmar dropped a guard with one pistol shot. Perrin Black-Jaw took a strike, called to his patron, heard "Not yet," and stayed on his feet while he coughed seawater. Solange said, "I will not have my princesses stopped."
+> Ozzeth had been reaching for Delmar's mind. Jean-Claude reached him first, and Delmar's head stayed his own. He shot Ozzeth's arm off, and Jean-Claude finished him with an arrow. Ozzeth's last move was a hand on Solange's shoulder and two words for her, *do it now*.
 >
-> Vashu and Ozzeth died covering Solange. Crissdalynn Khinriss took Vashu's hits, dodged the tongue twice, and cracked the throat. Ozzeth reached for Delmar's mind. Jean-Claude Tabarnack put a word in Delmar's ear, and Delmar kept his own mind. Delmar shot Ozzeth's arm off. Jean-Claude finished him. Ozzeth spent his last magic on Solange and told her to do it now.
->
-> Crissdalynn still had Solange grappled and poisoned. Solange left that grip and appeared beside the local artificer Catarina. She spoke "Agni," and the chamber ceiling came down. Catarina's grab came up short. Where Solange had knelt, she stood up remade at twelve feet. The ceiling is open over you. Twelve-foot remade Solange is standing in the chamber.
+> Crissdalynn's hold was still on Solange, and the poison with it. Solange left the grip and came up beside Catarina, and she said one word. *Agni.* The whole ceiling let go, and Catarina's hand closed on nothing, and where Solange had been kneeling, something twelve feet tall stood up instead. The ceiling is open over you.
 
 ## Wiki facts
 
-Thunk signed a thousand gold of cannon on *[[Uncertainty]]*'s credit. Vashu the Weeping Veil and Ozzeth died covering Solange Barret. She spoke Agni, dropped the ceiling, and stood remade at twelve feet. Next: [[Session-07-Recap]].
+[[vashu-the-weeping-veil|Vashu the Weeping Veil]] and [[ozzeth-the-twiceborn|Ozzeth the Twiceborn]] both died covering [[solange-barret]], who left [[crissdalynn-khinriss]]'s grapple to stand beside [[catarina-davirelli]] and speak *Agni*. Ragnetto, Catarina's cannon, was destroyed in the chamber, and the sheet list of the fight sits in the [[calveno-sewer-magazines|Calveno sewer magazines]] entry. [[delmar-fisk]] shook off Ozzeth's dominate attempt with [[jean-claude-tabarnack]]'s help, and [[perrin-black-jaw]]'s patron answered him with *Not yet*, the second refusal on [[perrin-black-jaw]]'s thread.
+
+Above ground, the festival ran its second day: [[master-kyzil]] refused the pranks of [[il-gioco-delle-beffe|Il Gioco delle Beffe]], [[thunk]] signed a thousand gold of cannon onto [[Uncertainty]]'s credit, and [[nona-black-jaw]] gave the thrown tomato back. *Agni* as a word has no owner page, and neither do Ragnetto or Strix. Solange stood up remade at twelve feet. Next: [[Session-07-Recap]].
