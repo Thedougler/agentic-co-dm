@@ -84,7 +84,7 @@ the failure on it.
 
 ## Canon and done-summary
 
-Canon owner: constitution principle X. File what it makes canon. Everything else is a marked canon proposal the DM accepts (XII).
+Canon: apply the rule in [`llm-wiki`](.agents/skills/llm-wiki/SKILL.md#canon) (constitution X) and file what it makes canon.
 
 Lint contract (constitution XXI): `wiki lint` runs every checker, Vale included, and every finding it reports is an issue to fix. Use `next.path`, then `wiki lint fix <next.path>` for deterministic repairs; rerun `wiki lint <next.path>` for the remaining issues. `--full` is accepted as a compatibility no-op. Iterate until clean: zero issues. Do not ask. Do not interrupt with findings.
 
@@ -123,7 +123,7 @@ You can maintain multiple vaults (each a `~/.obsidian-wiki/config.<name>` file m
 
 ## Campaign Co-DM
 
-Load `wiki/AGENTS.md` before any write to `wiki/` (campaign `type`, `lifecycle`, `reveal`, complete-sentence prose).
+Load `wiki/AGENTS.md` before any write to `wiki/` (campaign `type`, `reveal`, complete-sentence prose).
 Load `docs/agents/work.md` before Co-DM prep or wrapup output (table aim and reflection; file what constitution X makes canon).
 
 The 019 loop lives in this file plus `docs/agents/work.md`. Reflection is offered after a session sitting outside `session-recap` (that skill is narrative recap only). No new skill.

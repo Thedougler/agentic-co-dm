@@ -120,7 +120,7 @@ The current state label for a page's subject. Values depend on the page kind and
 **Scope**:
 Describe scale where it changes play, but do not treat it as universal frontmatter.
 
-DM-facing summaries state sourced campaign facts, runnable procedures, and marked canon proposals where canon is silent or contradicts itself. They never pass a proposal off as the DM's intent.
+DM-facing summaries state sourced campaign facts and runnable procedures; canon follows the rule in `.agents/skills/llm-wiki/SKILL.md`. Where the wiki is silent or contradicts itself, they say so and name the sources.
 
 _Avoid_: treating hidden content as inaccessible to the DM or Co-DM; passing a proposal off as DM intent; tying categories to layouts.
 
@@ -245,9 +245,9 @@ _Avoid_: treating unaccepted drafts as canon or as player-visible
 The current Co-DM project containing reusable prep-and-wrapup practice and the campaign's canonical wiki.
 _Avoid_: a separate campaign store; a candidate canon; a third full copy of the campaign
 
-**Canon proposal**:
-A suggested change or addition to wiki facts. Prep fills canon silence (including facts canon records as unknown), and resolves canon contradictions, with canon proposals (a motive, a name, a statblock, the opposition's next move), each marked and listed for the DM. The Co-DM never silently edits canon. Fun may shape Work; facts change only when the DM accepts.
-_Avoid_: fun-as-silent-override; filing a proposal as silent canon; leaving a silence open where the DM needs an answer
+**Canon**:
+What the wiki treats as true, decided by the rule in `.agents/skills/llm-wiki/SKILL.md`. Prep fills canon silence (a motive, a name, a statblock, the opposition's next move) and names the conflicting sources where canon contradicts itself.
+_Avoid_: fun-as-silent-override; leaving a silence open where the DM needs an answer
 
 **Redesign**:
 A clean rebuild around best practice. It is not a patch list of current-vault failures.

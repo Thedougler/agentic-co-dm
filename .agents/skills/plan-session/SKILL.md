@@ -104,8 +104,8 @@ excited about, or when the DM says they're ready.
 Throughout the grill:
 
 - **Cite wiki pages.** When you suggest an NPC, place, faction, or thread,
-  name the `[[page]]`. If the wiki is silent, say so and offer a canon proposal;
-  the DM accepts, changes, or defers it.
+  name the `[[page]]`. If the wiki is silent, say so and offer an answer;
+  canon follows the rule in `llm-wiki`.
 - **Flag pacing.** If the DM's plan stacks two action beats or two
   introspection beats consecutively, name the alternation concern and suggest a
   reorder. Explain the energy reason: numbing vs. stalling.
