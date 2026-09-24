@@ -58,6 +58,10 @@ def render_vocab(vault: Path) -> str:
 
 def refresh_vocab(root: Path, vault: Path) -> Path:
     destination = (root / VOCAB_RELATIVE).resolve()
+    if vault.resolve() != (root / "wiki").resolve():
+        # The tracked vocabulary belongs to <root>/wiki (FR-028); another vault (a test or scratch
+        # vault) lints against it unchanged rather than rewriting it with its own titles.
+        return destination
     destination.parent.mkdir(parents=True, exist_ok=True)
     content = render_vocab(vault)
     if destination.is_file() and destination.read_text(encoding="utf-8") == content:

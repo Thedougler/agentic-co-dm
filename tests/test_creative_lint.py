@@ -251,3 +251,18 @@ def test_canon_rules_and_category_are_gone():
     from tools.creative_lint.constants import CATEGORIES
 
     assert "canon" not in CATEGORIES
+
+
+def test_linting_a_temp_vault_leaves_the_tracked_vocabulary_alone(tmp_path: Path):
+    from tools.creative_lint.vale_adapter import run_vale
+    from tools.creative_lint.vale_vocab import VOCAB_RELATIVE
+
+    root = Path(__file__).resolve().parents[1]
+    tracked = root / VOCAB_RELATIVE
+    before = tracked.read_bytes()
+    vault = tmp_path / "vault"
+    (vault / "entities/npc").mkdir(parents=True)
+    page = vault / "entities/npc/zorblax-quennifer.md"
+    page.write_text("---\ntitle: Zorblax Quennifer\ntype: npc\n---\n\n# Zorblax Quennifer\n", encoding="utf-8")
+    run_vale([page], Registry.load(root / "rules/registry.yml"), root=root, vault=vault)
+    assert tracked.read_bytes() == before
