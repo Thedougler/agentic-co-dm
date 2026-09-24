@@ -1,7 +1,9 @@
 <!--
 Sync Impact Report
-- Version change: 5.0.0 -> 6.0.0 (MAJOR: XIII redefined; the log-every-friction and
-  different-agent-diagnosis rules are removed)
+- Version change: 6.0.0 -> 6.0.1 (PATCH: XXIV validation-rules wording clarified for the Vale
+  decision in specs/030-self-improving-architecture 7c62d79b; meaning unchanged). Carried from
+  5.0.0 -> 6.0.0 (MAJOR: XIII redefined; the log-every-friction and different-agent-diagnosis
+  rules are removed).
 - Modified principles:
   - XIII. Self-Improvement Is Evidence-Driven: the self-reporting SOP is replaced by a friction
     rule. The agent that meets friction fixes the source, verifies it, and continues; `errors.md`
@@ -14,9 +16,12 @@ Sync Impact Report
     recorded in the error ledger and, when recurring, fixed at the producing
     skill/template/instruction" -> fixed and verified at the producing skill/template/instruction;
     recorded in `errors.md` only when that fix cannot land in the current task (XIII).
-  - XXIV. Synchronized Content Systems: "validation rules (Vale)" -> "validation rules (`wiki
-    lint` Python checks and Vale prose packages)", since repository-specific checks belong in the
-    Python wiki tooling (specs/030-self-improving-architecture FR-022, FR-023).
+  - XXIV. Synchronized Content Systems (6.0.1): "validation rules (Vale)" -> "validation rules
+    (`wiki lint` Python checks, and Vale with the repo-local `Deprecated` style and the `CoDM`
+    vocabulary)". Rationale: FR-023 puts repository-specific structural and semantic checks in the
+    Python wiki tooling, "not in new custom Vale styles"; FR-022 keeps "`styles/Deprecated/*.yml`
+    and `Vocab = CoDM`" unchanged and removes only the `CoDM` style reference. Replaces the 6.0.0
+    wording "Vale prose packages", which omitted the kept `Deprecated` style.
 - Added sections: none
 - Removed sections: none (the 5.0.0 Sync Impact Report is replaced; git holds amendment history)
 - Templates requiring updates:
@@ -34,7 +39,8 @@ Sync Impact Report
     authoritative sources"): pending; reconcile first, record only if unresolved
   - scripts/error-ledger.py and errors.md format (`status`, `cause_fixed`; no `source` or
     `evidence`): pending; implemented by specs/030-self-improving-architecture FR-006-FR-010
-  - .vale.ini and styles/Deprecated/ (XXIV wording): pending; FR-022, FR-023
+  - .vale.ini `BasedOnStyles` still names the absent `CoDM` style: pending; FR-022 removes only
+    that reference (`styles/Deprecated/*.yml` and `Vocab = CoDM` stay unchanged)
 - Follow-up TODOs: carried from 4.0.0 (see XXI): remove finding tiers from lint tooling, specs,
   docs, and skills that still grade findings into kinds
 -->
@@ -248,7 +254,9 @@ evidence.
 ### XXIV. Synchronized Content Systems
 
 The three systems — compiled Wiki, authoring guidance (templates/skills), and validation rules
-(`wiki lint` Python checks and Vale prose packages) — stay synchronized. Changes to one MUST update relevant counterparts in the same change.
+(`wiki lint` Python checks, and Vale with the repo-local `Deprecated` style and the `CoDM`
+vocabulary) — stay synchronized. Changes to one MUST update relevant counterparts in the same
+change.
 Agents proactively maintain all three using observed failures, corrections, and evidence.
 
 ### XXV. Carve-Outs Are Retrospective
@@ -298,4 +306,4 @@ Versioning: MAJOR (remove/redefine principle), MINOR (add principle/section), PA
 Compliance reviews check proposed work against this constitution before merge. Project context:
 `AGENTS.md`. Harness behavior: `.omp/AGENTS.md`, `CODEX.md`, `CLAUDE.md`, `GROK.md`.
 
-**Version**: 6.0.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-24
+**Version**: 6.0.1 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-24
