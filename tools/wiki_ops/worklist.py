@@ -11,7 +11,6 @@ DEFAULT_HARD_KEYS = frozenset(
         "broken_links",
         "missing_frontmatter",
         "bad_type",
-        "bad_lifecycle",
         "typed_relationships",
         "pc_identity_mismatch",
         "misplaced_entity",

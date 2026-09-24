@@ -11,8 +11,6 @@ sources:
 created: 2026-09-12T00:00:00Z
 updated: 2026-09-20
 type: lore
-lifecycle: proposed
-lifecycle_changed: "2026-09-12"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -26,7 +24,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.37
 tier: supporting
 ---
 # Grung Color and the Sealing Rite

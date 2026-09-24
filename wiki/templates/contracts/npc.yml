@@ -6,5 +6,5 @@ repeatable: []
 callouts:
   allowed: [narration, mechanic, secret]
 frontmatter:
-  required: [title, category, tags, sources, created, updated, type, lifecycle, reveal]
+  required: [title, category, tags, sources, created, updated, type, reveal]
   optional: [campaign, visibility, kind, aliases, summary]

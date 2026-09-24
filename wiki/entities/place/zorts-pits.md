@@ -6,8 +6,6 @@ category: entities
 tags: [shattered-sea, place]
 sources: []
 summary: "An exotic-animal pit in Le Paludi run by Zort."
-base_confidence: 0.20
-lifecycle: proposed
 reveal: revealed
 campaign: shattered-sea
 visibility: dm

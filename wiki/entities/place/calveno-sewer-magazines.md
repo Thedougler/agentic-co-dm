@@ -14,8 +14,6 @@ provenance:
   extracted: 0.95
   inferred: 0.05
   ambiguous: 0.0
-base_confidence: 0.42
-lifecycle: proposed
 reveal: revealed
 campaign: shattered-sea
 visibility: dm

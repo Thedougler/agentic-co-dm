@@ -11,7 +11,6 @@ sources:
 created: 2026-09-14
 updated: 2026-09-14
 type: place
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -22,7 +21,6 @@ provenance:
   extracted: 0.92
   inferred: 0.08
   ambiguous: 0.0
-base_confidence: 0.50
 tier: supporting
 ---
 # Aruhe Caves

@@ -7,8 +7,6 @@ sources: ["Tokage-Island.md"]
 created: 2026-09-20
 updated: 2026-09-20
 type: place
-lifecycle: proposed
-lifecycle_changed: "2026-09-20"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -21,7 +19,6 @@ ruler: "[[kinryu-omusubi|Kinryu Omusubi]]"
 controlling_faction: "[[omusubi-family|Omusubi Family]]"
 summary: "Bustling southwest capital attached to a huge harbor and surrounded by fishing villages, rivers, rice fields, and sake makers."
 provenance: {extracted: 1.0, inferred: 0.0, ambiguous: 0.0}
-base_confidence: 0.42
 tier: supporting
 ---
 # Zennitana

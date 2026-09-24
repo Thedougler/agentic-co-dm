@@ -9,7 +9,6 @@ sources:
 created: 2026-09-19
 updated: 2026-09-20
 type: quest
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -21,7 +20,6 @@ factions: []
 deadline: ""
 last_advanced: 2026-09-19
 summary: "A local bounty concerning a territorial Sawek near Kalowe's blue holes."
-base_confidence: 0.20
 ---
 # Kalowe — The Sawek Bounty
 

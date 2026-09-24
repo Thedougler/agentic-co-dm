@@ -15,10 +15,7 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 created: 2026-09-13
 updated: 2026-09-17
 type: faction

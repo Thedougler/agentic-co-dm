@@ -99,7 +99,6 @@ def test_default_lint_includes_soft_and_vale_findings(tmp_path: Path):
         "created: 2026-09-01\n"
         "updated: 2026-09-19\n"
         "type: npc\n"
-        "lifecycle: draft\n"
         "reveal: dm\n"
         "---\n\n"
         "# Vale fixture\n\n"

@@ -12,7 +12,6 @@ sources:
 created: 2026-09-19
 updated: 2026-09-20
 type: quest
-lifecycle: proposed
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
@@ -28,7 +27,6 @@ provenance:
   extracted: 0.95
   inferred: 0.05
   ambiguous: 0.0
-base_confidence: 0.42
 tier: supporting
 ---
 # Warren, Grung in the Sewers

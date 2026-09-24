@@ -6,8 +6,6 @@ sources: ["Tokage-Island.md"]
 created: 2026-09-20
 updated: 2026-09-20
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-20"
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
@@ -17,7 +15,6 @@ faction: "[[akai-hodo-clan|Akai Hodo Clan]]"
 visibility: dm
 summary: "Dark grey-scaled Eurasian lizardfolk leader of the Akai Hodo's northern marsh patrols."
 provenance: {extracted: 1.0, inferred: 0.0, ambiguous: 0.0}
-base_confidence: 0.42
 tier: supporting
 ---
 # Mizobasho Red Tail

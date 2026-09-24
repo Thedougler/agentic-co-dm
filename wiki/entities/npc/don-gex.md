@@ -6,8 +6,6 @@ sources: ["Tokage-Island.md"]
 created: 2026-09-20
 updated: 2026-09-20
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-20"
 reveal: unrevealed
 campaign: shattered-sea
 status: deceased
@@ -17,7 +15,6 @@ faction: "[[ebony-scales|Ebony Scales]]"
 visibility: dm
 summary: "Late Ebony Scales leader who established Tokage's drug trade and ended slavery through a three-year war."
 provenance: {extracted: 1.0, inferred: 0.0, ambiguous: 0.0}
-base_confidence: 0.42
 tier: supporting
 ---
 # Don Gex

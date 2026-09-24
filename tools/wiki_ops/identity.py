@@ -105,7 +105,6 @@ class PageIdentity:
     stem: str
     title: str
     type: str | None = None
-    lifecycle: str | None = None
     aliases: list[str] = field(default_factory=list)
     status: str = "distinct"
     candidates: list[dict[str, Any]] = field(default_factory=list)
@@ -136,7 +135,6 @@ def _row(path: Path, root: Path) -> dict[str, Any]:
         "stem": path.stem,
         "title": fields.get("title", path.stem).strip("\"'") or path.stem,
         "type": (fields.get("type") or fields.get("kind") or "").strip("\"'") or None,
-        "lifecycle": (fields.get("lifecycle") or fields.get("status") or "").strip("\"'") or None,
         "aliases": _aliases(fields),
         "redirects_to": fields.get("redirects_to", "").strip("\"'"),
         "body": _body(text),
@@ -199,7 +197,6 @@ def _identity(
         row["stem"],
         row["title"],
         row["type"],
-        row["lifecycle"],
         row["aliases"],
         status,
         sorted(candidates, key=lambda item: item["path"]),

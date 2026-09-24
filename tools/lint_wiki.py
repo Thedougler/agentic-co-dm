@@ -21,13 +21,11 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-OWNER_LIFECYCLES = {"draft", "proposed", "accepted", "rejected", "canon"}
-DEFAULT_LIFECYCLES = set(OWNER_LIFECYCLES)
 DEFAULT_RELATIONSHIPS = {
     "extends", "implements", "contradicts", "derived_from", "uses", "replaces", "related_to"
 }
 REQUIRED = ("title", "category", "tags", "sources", "created", "updated")
-CAMPAIGN_REQUIRED = ("type", "lifecycle", "reveal")
+CAMPAIGN_REQUIRED = ("type", "reveal")
 OWNER_TYPES = {
     "npc", "pc", "place", "faction", "item", "creature", "vehicle", "spell",
     "lore", "quest", "region",
@@ -38,7 +36,6 @@ HARD_KEYS = (
     "broken_links",
     "missing_frontmatter",
     "bad_type",
-    "bad_lifecycle",
     "typed_relationships",
     "pc_identity_mismatch",
     "misplaced_entity",
@@ -193,19 +190,16 @@ def normalize(value: str) -> str:
     return value.casefold()
 
 
-def parse_owner_schema(path: Path) -> tuple[set[str], set[str]]:
+def parse_owner_schema(path: Path) -> set[str]:
     types: set[str] = set()
-    lifecycles: set[str] = set()
     if not path.is_file():
-        return types, lifecycles
+        return types
     for line in path.read_text(encoding="utf-8").splitlines():
         stripped = line.lstrip()
         tokens = TOKEN.findall(line)
         if stripped.startswith("| `type`"):
             types.update(token for token in tokens if token != "type")
-        elif stripped.startswith("| `lifecycle`"):
-            lifecycles.update(token for token in tokens if token != "lifecycle")
-    return types, lifecycles
+    return types
 
 
 def load(vault: Path) -> tuple[dict[str, dict], dict[str, list[str]]]:
@@ -320,9 +314,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--verbose", action="store_true", help="include clean checks and zero counts")
     parser.add_argument("--hard-only", action="store_true", help=argparse.SUPPRESS)
     parser.add_argument("--schema-source", type=Path, help="Owner AGENTS.md (default: <vault>/AGENTS.md)")
-    parser.add_argument("--allow-lifecycle", action="append", default=[])
     parser.add_argument("--allow-relationship-type", action="append", default=[])
-    parser.add_argument("--required-trust-field", action="append", choices=("base_confidence", "lifecycle", "lifecycle_changed", "updated"), default=["base_confidence", "lifecycle"])
     parser.add_argument("--scope", help="scope specification (dir:, type:, files:, changed:)")
     parser.add_argument("--today", default=dt.date.today().isoformat(), help="ISO date for stale-page checks")
     return parser.parse_args()
@@ -712,18 +704,15 @@ def main() -> int:
         pages = {key: value for key, value in pages.items() if key in selected}
         lookup = {key: [item for item in values if item in selected] for key, values in lookup.items()}
     schema_path = args.schema_source.resolve() if args.schema_source else vault / "AGENTS.md"
-    owner_types, owner_lifecycles = parse_owner_schema(schema_path)
+    owner_types = parse_owner_schema(schema_path)
     types = CAMPAIGN_TYPES | owner_types
-    lifecycles = DEFAULT_LIFECYCLES | owner_lifecycles | set(args.allow_lifecycle)
     relationships = DEFAULT_RELATIONSHIPS | set(args.allow_relationship_type)
     result: dict[str, object] = {
         "scope": {"vault": str(vault), "pages": len(pages), "excluded_dirs": sorted(SKIP_DIRS)},
         "schema": {
             "source": str(schema_path) if schema_path.is_file() else None,
             "allowed_types": sorted(types),
-            "allowed_lifecycles": sorted(lifecycles),
             "allowed_relationship_types": sorted(relationships),
-            "required_trust_fields": args.required_trust_field,
             "hard": list(HARD_KEYS),
         },
         "findings": {},
@@ -760,11 +749,6 @@ def main() -> int:
         for rel, item in pages.items()
         if len(item["fields"].get("summary", "")) > 200
     ]
-    findings["bad_lifecycle"] = [
-        {"page": rel, "line": field_line(item["text"], "lifecycle"), "value": item["fields"].get("lifecycle")}
-        for rel, item in pages.items()
-        if item["fields"].get("lifecycle") and item["fields"]["lifecycle"].strip("\"'") not in lifecycles
-    ]
     findings["bad_type"] = [
         {"page": rel, "line": field_line(item["text"], "type"), "value": item["fields"].get("type")}
         for rel, item in pages.items()
@@ -794,17 +778,6 @@ def main() -> int:
     findings["noncanonical_basename"] = noncanonical_basenames(pages)
     findings["duplicate_slugs"] = duplicate_slugs(pages)
     findings["snake_case_owner_basename"] = snake_case_owner_basenames(pages)
-    findings["missing_trust"] = [
-        {
-            "page": rel,
-            "line": field_line(item["text"], next(
-                (key for key in args.required_trust_field if not item["fields"].get(key)), ""
-            )),
-            "missing": [key for key in args.required_trust_field if not item["fields"].get(key)],
-        }
-        for rel, item in pages.items()
-        if any(not item["fields"].get(key) for key in args.required_trust_field)
-    ]
 
     documents = {}
     for path in sorted(vault.rglob("*.md")):
@@ -962,7 +935,6 @@ def main() -> int:
                 "line": field_line(item["text"], "updated"),
                 "updated": value,
                 "days": age,
-                "lifecycle": item["fields"].get("lifecycle", ""),
             })
     findings["stale_pages"] = stale
     findings.update(obsidian_markdown_findings(vault, pages, scoped=bool(args.scope)))
@@ -998,7 +970,7 @@ def main() -> int:
             print(f"Wiki lint scope: {len(pages)} pages ({vault})")
             for key, value in counts.items():
                 print(f"{key}: {value}")
-            for key in ("missing_frontmatter", "missing_trust", "broken_links", "orphan_pages", "typed_relationships", "stale_pages"):
+            for key in ("missing_frontmatter", "broken_links", "orphan_pages", "typed_relationships", "stale_pages"):
                 items = findings.get(key, [])
                 if items:
                     print(f"\n{key}")

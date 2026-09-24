@@ -6,7 +6,6 @@ sources: []
 created: 2026-09-18
 updated: 2026-09-18
 type: npc
-lifecycle: accepted
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
@@ -15,7 +14,6 @@ location: inner lock
 faction: none
 visibility: dm
 summary: Varn runs the inner lock.
-base_confidence: 0.55
 ---
 
 # Varn

@@ -8,7 +8,6 @@ sources: []
 created: 2026-09-19
 updated: 2026-09-19
 type: quest
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -20,7 +19,6 @@ factions: []
 deadline: ""
 last_advanced: 2026-09-19
 summary: "An encounter referenced as the source of a magistrate's warding chip."
-base_confidence: 0.20
 kind: situation
 ---
 <!-- Copy-start scaffold. Track the situation, not a plotted sequence. -->

@@ -10,7 +10,6 @@ created: "2026-08-13"
 updated: "2026-08-13"
 tags: [mystery, fairy-tale]
 tier: supporting
-lifecycle: discoverable
 pressure: "Billy's compelled summons is already moving through the Midchain, and Toby and Frankie's next argument can overwrite another visible part of Halewick."
 if_ignored: "A fresh collision scars a public landmark, survival resource, or visitor within earshot. The summoned villagers keep carrying Billy's line farther from the island."
 actors: ["[[toby]]", "[[frankie]]", "[[billy]]", "[[halewick]]"]

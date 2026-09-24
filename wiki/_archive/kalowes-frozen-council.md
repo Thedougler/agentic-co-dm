@@ -10,7 +10,6 @@ created: "2026-08-13"
 updated: "2026-08-13"
 tags: [intrigue, politics, maritime]
 tier: supporting
-lifecycle: seeded
 pressure: "Delmar's arrival gives the Chain Council a living scapegoat, witness, and former commander while its hidden Pearl commission faces exposure."
 if_ignored: "The Council destroys Detto Kalash's mail record, closes ranks around a bad-intelligence story, and names Delmar as the easiest blame."
 actors: ["[[chain-council]]", "[[tessarine-concordat]]", "[[waveservants]]"]

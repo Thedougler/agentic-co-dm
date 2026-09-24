@@ -14,9 +14,6 @@ provenance:
   extracted: 0.97
   inferred: 0.03
   ambiguous: 0.0
-base_confidence: 0.88
-lifecycle: canon
-lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T04:56:01Z
 updated: 2026-09-18

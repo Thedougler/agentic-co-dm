@@ -29,18 +29,18 @@ Every evaluator emits the same fields:
 
 ```json
 {
-  "rule_id": "CANON001",
+  "rule_id": "WIKI001",
   "result": "fail",
   "severity": "BLOCK",
   "location": {
     "file": "wiki/path/to/file.md",
-    "line": 42,
-    "col": 5,
-    "text": "[[dead-npc]]"
+    "line": 1,
+    "col": 1,
+    "text": "---"
   },
-  "evidence": "Unresolved wikilink: [[dead-npc]]",
-  "reason": "The page references an entity that is not current canon",
-  "repair_target": "Retarget the wikilink to a current canonical page",
+  "evidence": "Missing required frontmatter: reveal",
+  "reason": "Wiki page is missing required frontmatter",
+  "repair_target": "Add the missing owner-schema fields before linting the page again",
   "evaluator": "symbolic"
 }
 ```
@@ -62,7 +62,7 @@ Aggregate status is `repair_required` when any unwaived `BLOCK` or `REPAIR` find
 ./scripts/wiki-lint file wiki/entities/npc/archivist-vel.md --json
 ./scripts/wiki-lint corpus wiki --json
 ./scripts/wiki-lint changed --json
-./scripts/wiki-lint rule CANON001
+./scripts/wiki-lint rule WIKI001
 ./scripts/wiki-lint queue --json
 ./scripts/wiki-lint template wiki/journal/sessions/campaign/01/Session-01.md --json
 ./scripts/wiki-lint candidate "Stop having NPCs know things they could not know" --json
@@ -98,7 +98,7 @@ To add a rule:
 3. Add `fail_*.md`, `pass_*.md`, and an `ambiguous_*.md` acceptable-region fixture under `tests/fixtures/creative_lint/<ID>/`. Ambiguous cases are recorded for review rather than treated as suite failures.
 4. Add the rule category to the appropriate bundle in `rules/bundles.yml` only once, under `block`, `review`, or `diagnostics`.
 
-The static Vale rule set is intentionally empty; symbolic rules cover CANON001-002, WIKI001-002, and RETRIEVAL001; DIVERSITY001 remains an INFO diagnostic. Rules with `diversity` categories may never exceed `WARN`. The bundle's gate caps effective severity, while the registry remains the inherent-severity source.
+The static Vale rule set is intentionally empty; symbolic rules cover WIKI001-002, and RETRIEVAL001; DIVERSITY001 remains an INFO diagnostic. Rules with `diversity` categories may never exceed `WARN`. The bundle's gate caps effective severity, while the registry remains the inherent-severity source.
 
 A correction should first search existing titles, messages, and tags with `wiki-lint candidate`. A match routes the correction to the existing rule and its fixtures. A no-match candidate is written under `rules/candidates/` with lifecycle `SHADOW`; it must accumulate fixtures and telemetry before promotion. Promotion requires greater than 90% human agreement and less than 10% false positives, followed by a deliberate `SHADOW` → `ACTIVE` lifecycle change. Creative diagnostics can reach `WARN`, never `BLOCK`.
 
@@ -122,7 +122,7 @@ Waivers live in `rules/waivers.json` and require exact `rule_id`, `target`, `rea
 
 Vale and symbolic fixture families define the acceptable region:
 
-- `CANON001/`, `CANON002/`, `WIKI001/`, `WIKI002/`, `RETRIEVAL001/`, and `DIVERSITY001/` contain symbolic fail/pass/ambiguous cases and counterexamples.
+- `WIKI001/`, `WIKI002/`, `RETRIEVAL001/`, and `DIVERSITY001/` contain symbolic fail/pass/ambiguous cases and counterexamples.
 - `template/` contains a mapped page, a baseline template, and a changed-template mutation for profile comparison. Template drift is manually corrected; fixtures never authorize unattended edits.
 - `integration/session_prep_violations.md` combines an authored PC decision with a stale/dead canonical reference for the agent-loop scenario.
 - `registry/` contains valid, duplicate, malformed, missing-style, unresolved-reference, invalid-enum, and severity-ceiling metadata fixtures.

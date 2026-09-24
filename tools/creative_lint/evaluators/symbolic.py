@@ -1,6 +1,5 @@
 """Cross-page symbolic checks built on the existing wiki lint loader."""
 from __future__ import annotations
-import datetime as dt
 import difflib
 import re
 from pathlib import Path
@@ -86,8 +85,6 @@ def evaluate_symbolic(paths: Iterable[Path], registry: Registry, *, root: Path,
         bad = []
         if fields.get("type") and fields["type"].strip("\"'") not in lint_wiki.CAMPAIGN_TYPES:
             bad.append(f"type={fields['type']}")
-        if fields.get("lifecycle") and fields["lifecycle"].strip("\"'") not in lint_wiki.DEFAULT_LIFECYCLES:
-            bad.append(f"lifecycle={fields['lifecycle']}")
         if bad and enabled("WIKI002"):
             rule = _rule(registry, "WIKI002")
             if rule:
@@ -114,8 +111,6 @@ def evaluate_symbolic(paths: Iterable[Path], registry: Registry, *, root: Path,
         bad = []
         if fields.get("type") and fields["type"].strip("\"'") not in lint_wiki.CAMPAIGN_TYPES:
             bad.append(f"type={fields['type']}")
-        if fields.get("lifecycle") and fields["lifecycle"].strip("\"'") not in lint_wiki.DEFAULT_LIFECYCLES:
-            bad.append(f"lifecycle={fields['lifecycle']}")
         if bad and enabled("WIKI002"):
             rule = _rule(registry, "WIKI002")
             if rule:
@@ -150,27 +145,6 @@ def evaluate_symbolic(paths: Iterable[Path], registry: Registry, *, root: Path,
                                                 reason=rule.message, repair_target=repair,
                                                 evaluator="lint_wiki"))
                 continue
-            target = pages[targets[0]]
-            target_path = Path(target["path"])
-            target_fields = target["fields"]
-            lifecycle = str(target_fields.get("lifecycle", "")).strip("\"'").lower()
-            if lifecycle in {"rejected", "dead"} and enabled("CANON001"):
-                rule = _rule(registry, "CANON001")
-                if rule:
-                    findings.append(_make(rule, path=source, root=root, line=line, text=match.group(0),
-                                          evidence=f"{raw} resolves to {target_path.relative_to(vault)} with lifecycle={lifecycle}"))
-            source_type = str(page["fields"].get("type", "")).strip("\"'")
-            is_prep = "session" in source.as_posix().lower() or source_type == "session-prep"
-            updated = str(target_fields.get("updated", "")).strip("\"'")[:10]
-            try:
-                age = (dt.date.today() - dt.date.fromisoformat(updated)).days
-            except ValueError:
-                age = 0
-            if is_prep and age > 30 and enabled("CANON002"):
-                rule = _rule(registry, "CANON002")
-                if rule:
-                    findings.append(_make(rule, path=source, root=root, line=line, text=match.group(0),
-                                          evidence=f"{raw} canonical page updated {updated} ({age} days stale)"))
     return findings
 
 

@@ -12,9 +12,6 @@ provenance:
   extracted: 0.9
   inferred: 0.1
   ambiguous: 0.0
-base_confidence: 0.55
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 status: alive

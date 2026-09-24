@@ -6,11 +6,9 @@ sources:
   - "[[western-landing]]"
   - "[[reef-skull]]"
 summary: The exposed reef teeth and shingle debris at Aruhe's western approach.
-base_confidence: 0.42
 created: 2026-09-15
 updated: 2026-09-15
 type: place
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm

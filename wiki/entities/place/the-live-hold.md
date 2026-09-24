@@ -7,8 +7,6 @@ category: entities
 tags: [shattered-sea, place]
 sources: []
 summary: "An exotic-animal dealership in Sparhold near the Verdant Teeth."
-base_confidence: 0.20
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm

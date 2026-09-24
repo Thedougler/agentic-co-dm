@@ -3,8 +3,6 @@ title: Session 11 - Transcript
 category: journal
 tags: [shattered-sea, session, transcript]
 type: session
-lifecycle: proposed
-lifecycle_changed: "2026-09-18"
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
@@ -15,7 +13,6 @@ provenance:
   extracted: 0.80
   inferred: 0.15
   ambiguous: 0.05
-base_confidence: 0.42
 tier: supporting
 created: 2026-09-18
 updated: 2026-09-18

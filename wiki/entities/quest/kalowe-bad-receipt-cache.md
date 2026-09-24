@@ -11,7 +11,6 @@ sources:
 created: 2026-09-19
 updated: 2026-09-20
 type: quest
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -23,7 +22,6 @@ factions: []
 deadline: "Before another crew reaches the cache."
 last_advanced: 2026-09-19
 summary: "Reweti Kahurangi can direct capable parties toward nine crates of prize cargo hidden on a limestone rock near Kalowe, while a recovery race remains unresolved."
-base_confidence: 0.20
 ---
 # Kalowe Bad Receipt Cache
 

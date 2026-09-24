@@ -9,7 +9,6 @@ sources: []
 created: 2026-09-19
 updated: 2026-09-19
 type: quest
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -21,7 +20,6 @@ factions: []
 deadline: ""
 last_advanced: 2026-09-19
 summary: "A Kalowe lead built around Sera Maddock's cache and deal."
-base_confidence: 0.20
 ---
 <!-- Copy-start scaffold. Track the situation, not a plotted sequence. -->
 # The Captain's Map

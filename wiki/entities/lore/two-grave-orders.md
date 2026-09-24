@@ -11,14 +11,12 @@ sources:
 created: 2026-09-16
 updated: 2026-09-16
 type: lore
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: history
 truth: partial
 scope: "Gold-caste expeditions sent inland through Aruhe"
-base_confidence: 0.55
 region: aruhe
 era: "Before the current Calveno wreck"
 invention: true

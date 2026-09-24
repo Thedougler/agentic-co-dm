@@ -968,10 +968,8 @@ def moc_generated_text(folder: Path, vault: Path, existing: Path | None, content
         f"created: {created}\n",
         f"updated: {updated}\n",
         "type: lore\n",
-        "lifecycle: proposed\n",
         "reveal: unrevealed\n",
         f"summary: {summary}\n",
-        "base_confidence: 0.55\n",
         "---\n",
         "\n",
     ]

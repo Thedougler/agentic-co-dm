@@ -8,8 +8,6 @@ created: 2026-09-13
 updated: 2026-09-13
 type: session-prep
 kind: development
-lifecycle: proposed
-base_confidence: 0.55
 reveal: unrevealed
 summary: "Fresh prints, cold ash, loose fruit, and thinning smoke point north to Torn Crossing before the trail goes cold."
 campaign: shattered-sea

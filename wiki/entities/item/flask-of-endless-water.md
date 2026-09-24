@@ -10,7 +10,6 @@ sources:
 created: 2026-09-19
 updated: 2026-09-20
 type: item
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -20,7 +19,6 @@ rarity: ""
 attunement: false
 owner: ""
 summary: "The flask Jean-Claude used to hit Barnaby Rook at the Saltwright gangplank."
-base_confidence: 0.20
 ---
 # Flask of Endless Water
 

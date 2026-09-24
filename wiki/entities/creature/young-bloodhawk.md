@@ -10,7 +10,6 @@ sources:
 created: 2026-09-12
 updated: 2026-09-14
 type: creature
-lifecycle: proposed
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
@@ -22,8 +21,6 @@ provenance:
   extracted: 0.95
   inferred: 0.05
   ambiguous: 0.0
-base_confidence: 0.45
-lifecycle_changed: "2026-09-12"
 tier: supporting
 relationships:
   - target: "[[bloodhawk]]"

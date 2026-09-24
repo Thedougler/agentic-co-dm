@@ -8,8 +8,6 @@ created: 2026-09-13
 updated: 2026-09-13
 type: session-prep
 kind: development
-lifecycle: proposed
-base_confidence: 0.55
 reveal: unrevealed
 summary: "Development watch-posting at Spoke Ring. Actual precautions lock fortified, paired, or thin before [[Session-11-09-Theft-on-the-Watch]]; an excellent watch still brings [[talon-skarn]]."
 campaign: shattered-sea

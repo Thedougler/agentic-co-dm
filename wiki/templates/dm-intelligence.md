@@ -6,7 +6,6 @@ sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: work
-lifecycle: proposed
 reveal: unrevealed
 grounded_in: []
 invention: true

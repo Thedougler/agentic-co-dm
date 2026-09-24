@@ -8,8 +8,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: creature
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
@@ -18,7 +16,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 region: ""
 role: ""

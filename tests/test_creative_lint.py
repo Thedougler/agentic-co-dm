@@ -44,7 +44,7 @@ def test_bundle_resolution_caps_diagnostics():
     registry = Registry.load(ROOT / "rules" / "registry.yml")
     bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
     resolved = dict((rule.id, severity) for rule, severity in bundles.get("session-prep").resolve(registry))
-    assert set(resolved) == {"CANON001", "CANON002", "WIKI001", "WIKI002", "RETRIEVAL001", "DIVERSITY001"}
+    assert set(resolved) == {"WIKI001", "WIKI002", "RETRIEVAL001", "DIVERSITY001"}
 
 
 
@@ -114,23 +114,6 @@ def test_bundle_validation_rejects_duplicate_categories(tmp_path):
         BundleRegistry.load(path)
 
 
-def test_symbolic_rules_detect_dead_and_stale_entities(tmp_path):
-    vault = tmp_path / "wiki"
-    (vault / "entities").mkdir(parents=True)
-    (vault / "journal").mkdir()
-    owner = "---\ntitle: Dead NPC\ncategory: npc\ntags: []\nsources: []\ncreated: 2026-01-01\nupdated: 2026-01-01\ntype: npc\nlifecycle: rejected\nreveal: dm\n---\n"
-    (vault / "entities" / "dead-npc.md").write_text(owner, encoding="utf-8")
-    source = "---\ntitle: Prep\ncategory: session\ntags: []\nsources: []\ncreated: 2026-01-01\nupdated: 2026-01-01\ntype: session-prep\nlifecycle: draft\nreveal: dm\n---\n[[dead-npc]]\n"
-    source_path = vault / "journal" / "prep.md"
-    source_path.write_text(source, encoding="utf-8")
-    registry = Registry.load(ROOT / "rules" / "registry.yml")
-    bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
-    result = LintEngine(registry, bundles, root=tmp_path, vault=vault).run(
-        bundle="session-prep", paths=[source_path]
-    )
-    assert any(f.rule_id == "CANON001" and f.evaluator == "symbolic" for f in result.findings)
-
-
 def test_shadow_rules_are_excluded_from_active_result(tmp_path):
     vault = tmp_path / "wiki"
     vault.mkdir()
@@ -153,7 +136,7 @@ def test_shadow_rules_are_excluded_from_active_result(tmp_path):
 def test_fixture_families_have_fail_and_pass_cases():
     registry = Registry.load(ROOT / "rules" / "registry.yml")
     for rule in registry.active():
-        if rule.id.startswith(("DIVERSITY", "CANON", "WIKI", "RETRIEVAL")):
+        if rule.id.startswith(("DIVERSITY", "WIKI", "RETRIEVAL")):
             directory = FIXTURES / rule.id
             assert list(directory.glob("fail_*.md")), rule.id
             assert list(directory.glob("pass_*.md")), rule.id
@@ -252,3 +235,19 @@ def test_generated_vale_vocab_keeps_rule_tokens_active(tmp_path: Path):
     output = proc.stdout + proc.stderr
     assert "Deprecated.DMThesis" in output, output
     assert "Deprecated.FactionClock" in output, output
+
+
+def test_canon_rules_and_category_are_gone():
+    import yaml
+
+    registry = Registry.load(ROOT / "rules" / "registry.yml")
+    ids = {rule.id for rule in registry.rules}
+    assert not {"CANON001", "CANON002"} & ids
+    assert all(rule.category != "canon" for rule in registry.rules)
+    bundles = yaml.safe_load((ROOT / "rules" / "bundles.yml").read_text(encoding="utf-8"))
+    for bundle in bundles["bundles"].values():
+        for key in ("block", "review", "diagnostics"):
+            assert "canon" not in bundle[key], bundle
+    from tools.creative_lint.constants import CATEGORIES
+
+    assert "canon" not in CATEGORIES

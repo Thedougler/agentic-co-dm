@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-23
 type: faction
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
@@ -24,7 +22,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.55
 tier: supporting
 ---
 # The Passage

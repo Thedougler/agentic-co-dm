@@ -11,8 +11,6 @@ sources:
   - "wiki/_archive/combat-profile/perrin-black-jaw-combat-profile.md"
   - "wiki/_archive/perrin-black-jaw.png"
 summary: Warlock 2 / Lore Bard 3 who baited Aruhe hunts with illusions and took Tasha's laughter from a lesser black lotus.
-lifecycle: canon
-base_confidence: 0.42
 created: 2026-09-12
 updated: 2026-09-16
 type: pc

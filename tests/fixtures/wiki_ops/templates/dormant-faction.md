@@ -2,7 +2,7 @@
 title: Dormant Faction
 category: faction
 type: faction
-lifecycle: dormant
+status: dormant
 ---
 # Dormant Faction
 
@@ -12,4 +12,4 @@ A dormant faction fixture.
 
 ## At the Table
 
-Use this page to verify lifecycle-exempt sections.
+Use this page to verify status-exempt sections.

@@ -14,8 +14,6 @@ provenance:
   extracted: 0.93
   inferred: 0.07
   ambiguous: 0.0
-base_confidence: 0.50
-lifecycle: canon
 created: 2026-09-12T06:23:47Z
 updated: 2026-09-23
 type: npc

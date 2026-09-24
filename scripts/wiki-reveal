@@ -51,7 +51,6 @@ def scan(vault: Path) -> list[dict[str, str]]:
             "path": path.relative_to(vault).as_posix(),
             "title": str(keys.get("title", "")).strip().strip("\"'") or path.stem,
             "type": _value(keys.get("type")),
-            "lifecycle": _value(keys.get("lifecycle")),
             "reveal": _value(keys.get("reveal")),
         }
         kind = _value(keys.get("kind"))

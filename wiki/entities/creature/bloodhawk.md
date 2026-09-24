@@ -11,7 +11,6 @@ sources:
 created: 2026-09-12T05:40:07Z
 updated: 2026-09-19T18:00:00Z
 type: creature
-lifecycle: proposed
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
@@ -19,8 +18,6 @@ region: aruhe
 role: skirmisher
 cr: 11
 summary: CR 11 adult aerial skirmisher. Its stoop targets exposed prey and ends when cover denies the dive.
-base_confidence: 0.45
-lifecycle_changed: "2026-09-12"
 ---
 # Bloodhawk
 

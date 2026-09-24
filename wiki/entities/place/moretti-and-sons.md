@@ -10,14 +10,12 @@ sources: []
 created: 2026-09-19
 updated: 2026-09-20
 type: place
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: site
 region: ""
 summary: "A ship chandlery on the Mercatura canal in Calveno, run by Giacomo Moretti."
-base_confidence: 0.20
 ---
 # Moretti and Sons
 

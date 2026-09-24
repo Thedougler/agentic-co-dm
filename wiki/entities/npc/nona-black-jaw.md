@@ -16,9 +16,6 @@ provenance:
   inferred: 0.0
   ambiguous: 0.0
 summary: "Passage patron and Black-Jaw Run matriarch who turns trust into routes, obligations, and recovery work."
-base_confidence: 0.57
-lifecycle: canon
-lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T06:23:47Z
 updated: 2026-09-18

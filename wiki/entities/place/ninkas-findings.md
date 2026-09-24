@@ -6,8 +6,6 @@ category: entities
 tags: [shattered-sea, place]
 sources: []
 summary: "A salvage shop in Sparhold run by Ninka Solvei."
-base_confidence: 0.20
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm

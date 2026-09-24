@@ -10,7 +10,6 @@ created: "2026-08-13"
 updated: "2026-08-13"
 tags: [maritime, intrigue, war]
 tier: supporting
-lifecycle: discoverable
 pressure: "The Velvet Noose has identified the Uncertainty and sends terms that target the forward hold; silence shortens the deadline instead of ending the contact."
 if_ignored: "The skiff returns with a fifteen-minute deadline, then the Noose begins a boarding intercept while nearby traffic breaks course and leaves the lane empty."
 actors: ["[[the-velvet-noose]]", "[[mave-sorn]]", "[[uncertainty]]"]

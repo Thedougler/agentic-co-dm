@@ -6,10 +6,8 @@ sources: []
 created: 2026-09-17
 updated: 2026-09-17
 type: lore
-lifecycle: proposed
 reveal: unrevealed
 summary: Folder index of Session 11.
-base_confidence: 0.55
 ---
 
 - [[journal/sessions/shattered-sea/11/Session-11-00-Random-Tables|Aruhe River / Grasslands Hazards]]

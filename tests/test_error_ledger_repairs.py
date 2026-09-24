@@ -34,7 +34,6 @@ class LintScopeTests(unittest.TestCase):
                 "created: 2026-09-16\n"
                 "updated: 2026-09-16\n"
                 "type: session\n"
-                "lifecycle: proposed\n"
                 "reveal: unrevealed\n"
                 "---\n\n# Note\n",
                 encoding="utf-8",

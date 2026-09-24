@@ -108,7 +108,6 @@ def structural_main(argv: list[str]) -> int:
     parser.add_argument("--from", dest="findings_file")
     parser.add_argument("--hard", action="store_true", default=True)
     parser.add_argument("--all", action="store_true")
-    parser.add_argument("--allow-lifecycle", action="append", default=[])
     parser.add_argument("--allow-relationship-type", action="append", default=[])
     args = parser.parse_args(argv)
     try:
@@ -126,8 +125,6 @@ def structural_main(argv: list[str]) -> int:
         timing["tools/wiki_ops/identity.py"] = int((time.monotonic() - started) * 1000)
         ambiguous_identities = [item.to_dict() for item in identities if item.status == "ambiguous"]
         extra: list[str] = []
-        for value in args.allow_lifecycle:
-            extra.extend(["--allow-lifecycle", value])
         if args.verbose:
             extra.append("--verbose")
         for value in args.allow_relationship_type:

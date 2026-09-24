@@ -21,12 +21,10 @@ updated: 2026-09-22
 type: place
 kind: site
 region: aruhe
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 invention: true
-base_confidence: 0.5
 summary: "A sky-open bowl of Grung dig pits where expeditions died digging under a strangler fig they mistook for the memorial tree."
 ---
 # Turned Hollow

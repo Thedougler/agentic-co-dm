@@ -12,7 +12,6 @@ created: "2026-08-13"
 updated: "2026-08-13"
 tags: [horror, mystery, exploration, maritime, nature]
 tier: supporting
-lifecycle: seeded
 pressure: "Sandro and Nino remain stranded in the wreck while the only landing route crosses an island that attacks Grung on sight and treats any taking as invasion."
 if_ignored: "The Vethka breaks down around the castaways, the beach loses its last safe shelter, and Aruhe's corruption keeps driving giant fauna toward the reef and landing ground."
 actors: ["[[sandro]]", "[[nino]]", "[[grung-clans]]", "[[blight|The Blight]]", "[[nona-black-jaw]]"]

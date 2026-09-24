@@ -6,8 +6,6 @@ sources: ["Tokage-Island.md"]
 created: 2026-09-20
 updated: 2026-09-20
 type: lore
-lifecycle: proposed
-lifecycle_changed: "2026-09-20"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -18,7 +16,6 @@ region: "Totemo Tokage"
 era: "Current campaign"
 summary: "The Yuki no Kibo understand Semuanya as a deity of lizard-folk breeding, hunting, and survival rather than morality or cosmic philosophy."
 provenance: {extracted: 1.0, inferred: 0.0, ambiguous: 0.0}
-base_confidence: 0.42
 tier: supporting
 ---
 # Semuanya

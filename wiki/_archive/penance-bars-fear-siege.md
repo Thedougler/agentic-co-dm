@@ -10,7 +10,6 @@ created: "2026-08-13"
 updated: "2026-08-13"
 tags: [horror, faith]
 tier: supporting
-lifecycle: seeded
 pressure: "Corvin Ashe's lies are turning village fear into a summoning force, and the next mob movement points at the coven's grove before nightfall."
 if_ignored: "The mob burns the grove, Penance Bar loses its last hallowed ground, and Sorrowbell's failed protection shows only after a fiend changes Ashe."
 actors: ["[[corvin-ashe]]", "[[sula-marn]]", "[[penance-bar]]", "[[sorrowbell]]", "[[sin-and-sanctuary]]"]

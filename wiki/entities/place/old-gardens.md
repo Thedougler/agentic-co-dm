@@ -8,8 +8,6 @@ sources: ["Aruhe - Old Gardens.md"]
 created: 2026-09-12
 updated: 2026-09-12
 type: place
-lifecycle: proposed
-base_confidence: 0.55
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm

@@ -8,14 +8,12 @@ sources: []
 created: 2026-09-19
 updated: 2026-09-19
 type: place
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: site
 region: "Warren"
 summary: "The Warren's only source of healing, run by Colla."
-base_confidence: 0.20
 ---
 # The Splint
 

@@ -125,9 +125,9 @@ def test_reveal_cli_lists_gate_and_type_from_frontmatter(tmp_path: Path):
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(f"---\n{front}---\n\nBody.\n", encoding="utf-8")
 
-    page("entities/npc/hidden-fisher.md", title="Hidden Fisher", type="npc", lifecycle="proposed", reveal="unrevealed")
-    page("entities/npc/known-fisher.md", title="Known Fisher", type="npc", lifecycle="canon", reveal="revealed")
-    page("entities/place/salt-quay.md", title="Salt Quay", type="place", lifecycle="accepted", reveal="unrevealed")
+    page("entities/npc/hidden-fisher.md", title="Hidden Fisher", type="npc", reveal="unrevealed")
+    page("entities/npc/known-fisher.md", title="Known Fisher", type="npc", reveal="revealed")
+    page("entities/place/salt-quay.md", title="Salt Quay", type="place", reveal="unrevealed")
     page("journal/sessions/x/Session-11-01-Hook.md", title="Hook", type="session-prep", kind="hook", reveal="unrevealed")
     page("_raw/draft.md", title="Draft", type="npc", reveal="unrevealed")
     page("index.md", title="Index")
@@ -142,7 +142,6 @@ def test_reveal_cli_lists_gate_and_type_from_frontmatter(tmp_path: Path):
         "journal/sessions/x/Session-11-01-Hook.md",
     ]
     assert listed["pages"][2]["kind"] == "hook"
-    assert listed["pages"][0]["lifecycle"] == "proposed"
 
     npc = assert_json(run_cli("scripts/wiki-reveal", "unrevealed", "--type", "npc", "--json", vault=tmp_path))
     assert npc["total"] == 1 and npc["pages"][0]["title"] == "Hidden Fisher"
@@ -218,7 +217,6 @@ def test_default_lint_output_includes_source_line_numbers(tmp_path: Path):
         "created: 2026-09-01\n"
         "updated: 2026-09-17\n"
         "type: session-prep\n"
-        "lifecycle: draft\n"
         "reveal: dm\n"
         "---\n\n"
         "# Line fixture\n\n"
@@ -238,9 +236,9 @@ def test_default_lint_output_includes_source_line_numbers(tmp_path: Path):
     report = assert_json(result, returncode=1)
     broken = report["findings"]["broken_links"][0]
     assert broken["page"] == "page.md"
-    assert broken["line"] == 15
+    assert broken["line"] == 14
     grouped = report["findings_by_file"]["page.md"]
-    assert any(item["rule"] == "broken_links" and item["line"] == 15 for item in grouped)
+    assert any(item["rule"] == "broken_links" and item["line"] == 14 for item in grouped)
     assert report["status"] == "findings"
     assert report["findings"]["orphan_pages"] == [{"page": "page.md", "line": 1}]
 
@@ -269,9 +267,7 @@ def test_default_lint_output_includes_source_line_numbers(tmp_path: Path):
         "created: 2026-09-17\n"
         "updated: 2026-09-17\n"
         "type: session-prep\n"
-        "lifecycle: draft\n"
         "reveal: dm\n"
-        "base_confidence: 0.8\n"
         "---\n\n"
         "# Clean fixture\n",
         encoding="utf-8",
@@ -305,7 +301,6 @@ def test_scoped_lint_keeps_default_vale_in_acceptance_gate(tmp_path: Path):
         "created: 2026-09-01\n"
         "updated: 2026-09-16\n"
         "type: session-prep\n"
-        "lifecycle: draft\n"
         "reveal: dm\n"
         "---\n\n"
         "You decide the risk is worth it.\n",
@@ -431,7 +426,7 @@ def test_typed_frontmatter_tag_and_link_mutations_preserve_document_shape(tmp_pa
     assert apply_mutation(tmp_path, MutationOp("add_tag", "page.md", payload={"tag": "new"}))["accepted"]
     assert apply_mutation(
         tmp_path,
-        MutationOp("set_frontmatter", "page.md", selector={"field": "lifecycle"}, payload={"value": "active"}),
+        MutationOp("set_frontmatter", "page.md", selector={"field": "status"}, payload={"value": "active"}),
     )["accepted"]
     apply_mutation(
         tmp_path,
@@ -448,7 +443,7 @@ def test_typed_frontmatter_tag_and_link_mutations_preserve_document_shape(tmp_pa
     )
     text = page.read_text(encoding="utf-8")
     assert "tags: [old, new]" in text
-    assert "lifecycle: active" in text
+    assert "status: active" in text
     assert "[[new-page]]" in text and "![[new-page.png]]" in text
 
 
@@ -489,20 +484,33 @@ def test_typed_mutation_rejects_invalid_selector_without_writing(tmp_path: Path)
 
 def test_template_contract_reports_required_sections():
     contract = load_contract(Path(__file__).parents[1] / "wiki/templates/contracts/faction.yml")
-    page = "---\ntitle: Test\ntype: faction\nlifecycle: active\n---\n# Test\n"
+    page = "---\ntitle: Test\ntype: faction\nstatus: active\n---\n# Test\n"
     findings = check_conformance("test.md", page, contract)
     assert any(item["rule_id"] == "TMPL_missing_required" for item in findings)
 
-def test_template_contract_respects_lifecycle_and_redirect_stubs():
+def test_template_contract_keys_when_on_status_and_redirect_stubs():
     contract = load_contract(Path(__file__).parents[1] / "wiki/templates/contracts/faction.yml")
     page = (
-        "---\ntitle: Dormant\ntype: faction\nlifecycle: dormant\nredirects_to: canonical\n"
+        "---\ntitle: Dormant\ntype: faction\nstatus: dormant\nredirects_to: canonical\n"
         "category: faction\ntags: []\nsources: []\ncreated: 2026-09-01\nupdated: 2026-09-01\n---\n"
         "# Dormant\n"
     )
     findings = check_conformance("dormant.md", page, contract)
     assert any(item["rule_id"] == "TMPL_redirect_stub" for item in findings)
     assert not any(item["section"] == "Active Agenda" for item in findings if "section" in item)
+
+    def agenda(front: str) -> bool:
+        text = f"---\ntitle: Test\ntype: faction\n{front}---\n# Test\n"
+        return any(
+            item.get("section") == "Active Agenda" and item["rule_id"] == "TMPL_missing_required"
+            for item in check_conformance("test.md", text, contract)
+        )
+
+    assert agenda("status: active\nlifecycle: proposed\n")
+    assert not agenda("status: dormant\nlifecycle: accepted\n")
+    assert not agenda("lifecycle: accepted\n")
+    fixture = (Path(__file__).parent / "fixtures/wiki_ops/templates/dormant-faction.md").read_text(encoding="utf-8")
+    assert "status: dormant" in fixture and "lifecycle" not in fixture
 
 
 def test_scope_and_cli_pipeline_resolve_typed_surface(tmp_path: Path):
@@ -564,7 +572,6 @@ def test_misplaced_entity_is_hard_and_skips_wrong_template(tmp_path: Path):
         "created: 2026-09-01\n"
         "updated: 2026-09-17\n"
         "type: creature\n"
-        "lifecycle: proposed\n"
         "reveal: dm\n"
         "---\n\n"
         "# Snakewood\n",
@@ -596,7 +603,6 @@ def test_moc_is_not_reported_as_misplaced_entity(tmp_path: Path):
         "created: 2026-09-17\n"
         "updated: 2026-09-17\n"
         "type: lore\n"
-        "lifecycle: proposed\n"
         "reveal: unrevealed\n"
         "---\n\n"
         "- [[entities/creature/bloodhawk|Bloodhawk]]\n",
@@ -800,7 +806,6 @@ def test_osset_owner_wins_over_alias(tmp_path: Path):
         "created: 2026-09-18\n"
         "updated: 2026-09-18\n"
         "type: npc\n"
-        "lifecycle: accepted\n"
         "reveal: dm\n"
         "summary: Fixture.\n"
     )
@@ -835,7 +840,6 @@ def test_named_missing_owner_cannot_be_removed(tmp_path: Path):
         "created: 2026-09-18\n"
         "updated: 2026-09-18\n"
         "type: lore\n"
-        "lifecycle: draft\n"
         "reveal: dm\n"
         "summary: Fixture.\n"
         "---\n\n"
@@ -879,10 +883,8 @@ def test_lint_reports_noncanonical_basenames_and_slug_collisions(tmp_path: Path)
             "created: 2026-09-19\n"
             "updated: 2026-09-19\n"
             f"type: {page_type}\n"
-            "lifecycle: proposed\n"
-            "reveal: unrevealed\n"
+                "reveal: unrevealed\n"
             "summary: Fixture.\n"
-            "base_confidence: 0.55\n"
             "---\n",
             encoding="utf-8",
         )
@@ -935,7 +937,7 @@ def test_lint_wiki_reports_folded_obsidian_markdown_rules(tmp_path: Path):
     (tmp_path / "concepts").mkdir()
     front = (
         "---\ntitle: {title}\ncategory: test\ntags: []\nsources: []\ncreated: 2026-09-01\n"
-        "updated: 2026-09-01\ntype: {type}\nlifecycle: proposed\nreveal: dm\n---\n\n"
+        "updated: 2026-09-01\ntype: {type}\nreveal: dm\n---\n\n"
     )
 
     def write(relative: str, text: str) -> None:
@@ -977,12 +979,36 @@ def test_lint_wiki_reports_folded_obsidian_markdown_rules(tmp_path: Path):
         ("entities/place/harbor.md", "attachments/missing-map.png")
     ]
     pipes = only("table_wikilink_unescaped_pipe")
-    assert [(item["page"], item["line"]) for item in pipes] == [("entities/place/harbor.md", 19)]
+    assert [(item["page"], item["line"]) for item in pipes] == [("entities/place/harbor.md", 18)]
     assert [item["tree"] for item in only("forbidden_tree")] == ["concepts/"]
     newlines = only("literal_newline")
-    assert [(item["page"], item["line"]) for item in newlines] == [("journal/sessions/c/01/beats.md", 17)]
+    assert [(item["page"], item["line"]) for item in newlines] == [("journal/sessions/c/01/beats.md", 16)]
 
     assert pipes[0]["repair_class"] == "deterministic_repair"
     assert pipes[0]["repair_action"]["kind"] == "escape_table_wikilink_pipe"
     for rule in ("md_internal_link", "title_only_frontmatter", "dc_in_narration", "broken_image_link", "forbidden_tree", "literal_newline"):
         assert all(item["repair_class"] == "human_repair" for item in only(rule)), rule
+
+
+def test_lint_wiki_has_no_lifecycle_or_trust_machinery(tmp_path: Path):
+    vault = tmp_path / "wiki"
+    page = vault / "entities/place/harbor.md"
+    page.parent.mkdir(parents=True)
+    page.write_text(
+        "---\ntitle: Harbor\ncategory: entities\ntags: []\nsources: []\ncreated: 2020-01-01\n"
+        "updated: 2020-01-01\ntype: place\nreveal: unrevealed\nsummary: A harbor.\n---\n\n# Harbor\n\nThe harbor is quiet.\n",
+        encoding="utf-8",
+    )
+    proc = subprocess.run(
+        [PYTHON, str(ROOT / "tools/lint_wiki.py"), "--json", str(vault)],
+        cwd=ROOT, capture_output=True, text=True,
+    )
+    report = json.loads(proc.stdout)
+    findings = report["findings"]
+    assert "bad_lifecycle" not in findings
+    assert "missing_trust" not in findings
+    assert not [item for item in findings.get("missing_frontmatter", []) if "lifecycle" in json.dumps(item)]
+    assert all("lifecycle" not in item for item in findings.get("stale_pages", []))
+    schema = report.get("schema", {})
+    assert "allowed_lifecycles" not in schema
+    assert "required_trust_fields" not in schema

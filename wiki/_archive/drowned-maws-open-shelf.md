@@ -10,7 +10,6 @@ created: "2026-08-13"
 updated: "2026-08-13"
 tags: [exploration, mystery, horror, maritime]
 tier: supporting
-lifecycle: discoverable
 pressure: "Intact [[antheri|Antheri]] workshops remain at eighty feet while each heat pulse severs dive lines and reaches closer to the surface."
 if_ignored: "The upper Shelfworks flood, the gold rush ends, and the Pearl's signal draws a larger incursion through the widening breach."
 actors: ["[[pearl-of-souls]]", "[[auralis]]", "[[umberlee]]", "[[sentinels-of-the-eyrie]]"]

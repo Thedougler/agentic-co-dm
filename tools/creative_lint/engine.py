@@ -142,12 +142,9 @@ class LintEngine:
                         fields[key.strip()] = value.strip().strip("\"'")
         state = state or {}
         fields.update({str(key): str(value) for key, value in state.items() if value is not None})
-        lifecycle = fields.get("lifecycle", fields.get("status", "")).casefold()
         if fields.get("redirects_to") or "redirect stub" in text.casefold():
             return "redirect" not in rule.exemptions
         if fields and rule.applicability and fields.get("type") not in rule.applicability:
-            return False
-        if any(item.casefold() in {lifecycle, f"lifecycle:{lifecycle}"} for item in rule.exemptions if lifecycle):
             return False
         if "metadata" in rule.exemptions and not text:
             return False

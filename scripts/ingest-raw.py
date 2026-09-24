@@ -71,7 +71,7 @@ def main() -> int:
             "---", f"title: {title}", "category: entities",
             f"tags: [{', '.join(tags)}]", f"sources: [\"{source.name}\"]",
             f"created: {today}", f"updated: {today}", f"type: {kind}",
-            "lifecycle: proposed", "reveal: unrevealed", "campaign: shattered-sea",
+            "reveal: unrevealed", "campaign: shattered-sea",
             f"visibility: {fields.get('visibility', 'dm')}", f"summary: {summary}", "---", "",
         ]
         target.write_text("\n".join(lines) + body)
