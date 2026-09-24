@@ -12,6 +12,8 @@ VOCAB_RELATIVE = Path("styles/config/vocabularies/CoDM/accept.txt")
 _STOPWORDS = {
     "a", "an", "and", "at", "by", "for", "from", "in", "of", "on", "or", "the", "to", "with",
 }
+# Words that repo-local `styles/Deprecated` tokens match; accepting them silences those rules.
+_RULE_TOKEN_WORDS = {"DM"}
 _REGEX_META = re.compile(r"([\\.^$*+?{}\[\]|()])")
 
 
@@ -40,6 +42,7 @@ def proper_nouns(vault: Path) -> list[str]:
         path = page.get("path")
         if isinstance(path, Path) and "-" in path.stem:
             terms.add(path.stem)
+    terms -= _RULE_TOKEN_WORDS
     return sorted(terms, key=lambda value: (value.casefold(), value))
 
 

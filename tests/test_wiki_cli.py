@@ -608,16 +608,6 @@ def test_vale_config_loads_without_e100(tmp_path: Path):
     assert "E100" not in output, output
 
 
-import pytest as _pytest
-
-
-@_pytest.mark.xfail(
-    strict=True,
-    reason=(
-        "spec gap (030 T007/T013): the CoDM vocabulary generated from the live vault accepts 'DM', "
-        "and Vale adds accepted terms to every rule's exception list, so 'DM Thesis' never matches"
-    ),
-)
 def test_vale_deprecated_dmthesis_fires_with_live_vocabulary(tmp_path: Path):
     import shutil
 

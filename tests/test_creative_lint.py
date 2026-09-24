@@ -219,3 +219,36 @@ def test_bloodhawk_keeps_linear_creature_layout():
 
     _, findings = template_conformance(ROOT / "wiki/entities/creature/bloodhawk.md", root=ROOT)
     assert not any("Extra formatting marker" in item.evidence for item in findings)
+
+
+def test_generated_vale_vocab_keeps_rule_tokens_active(tmp_path: Path):
+    import shutil
+    import subprocess
+
+    from tools.creative_lint.vale_vocab import VOCAB_RELATIVE, render_vocab
+
+    root = Path(__file__).resolve().parents[1]
+    vocab = render_vocab(root / "wiki")
+    assert "DM" not in vocab.splitlines()
+
+    vale = shutil.which("vale") or str(root / ".venv/bin/vale")
+    if not Path(vale).is_file():
+        pytest.skip("vale binary is absent")
+    config_root = tmp_path / "config"
+    shutil.copytree(root / "styles", config_root / "styles")
+    shutil.copy(root / ".vale.ini", config_root / ".vale.ini")
+    (config_root / VOCAB_RELATIVE).write_text(vocab, encoding="utf-8")
+    scratch = tmp_path / "scratch.md"
+    scratch.write_text(
+        "# Scratch\n\nThe DM Thesis section names the villain.\n\nTrack the faction clock here.\n",
+        encoding="utf-8",
+    )
+    proc = subprocess.run(
+        [vale, "--output=line", f"--config={config_root / '.vale.ini'}", str(scratch)],
+        cwd=config_root,
+        capture_output=True,
+        text=True,
+    )
+    output = proc.stdout + proc.stderr
+    assert "Deprecated.DMThesis" in output, output
+    assert "Deprecated.FactionClock" in output, output
