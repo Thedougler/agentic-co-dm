@@ -45,7 +45,7 @@ A geothermal vent runs close under Vetau's lagoon, and locals time their whole d
 | Field | Detail |
 |---|---|
 | Type | Geothermal atoll |
-| Region | [[midchain-north|The Northern Midchain]] |
+| Region | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | Ungoverned |
 | Known For | A midday tide that boils the shallows shut for an hour |
 

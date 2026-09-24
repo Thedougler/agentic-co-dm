@@ -47,7 +47,7 @@ VIEW[{reference_image}][image(class(reference-image-view))]
 | Field | Detail |
 |---|---|
 | Type | Solitary basalt spire |
-| Within | [[midchain-north|The Northern Midchain]] |
+| Within | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | Unclaimed |
 | Access | By boat to the base, then a sheer hand-over-hand climb with no fixed route |
 | Known For | A summit that answers one true question, once |

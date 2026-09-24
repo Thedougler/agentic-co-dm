@@ -76,7 +76,7 @@ Kettil becomes **Unwilling** when a customer over-explains, asks colonial questi
 
 | Connection | Meaning |
 | ---------- | ------- |
-| [[ormssons-fittings|Ormsson's Fittings]] | The shop Kettil runs alone. |
-| [[kalowe|Kalowe]] | His home base since leaving Crown territory. |
-| [[harwick|Harwick]] | Likely origin in the northern island chains. |
-| [[kalowe-the-sawek-bounty|The Sawek Bounty]] | Kettil mentions the local [[sawek|Sawek]] trouble without drama if asked. |
+| [[ormssons-fittings\|Ormsson's Fittings]] | The shop Kettil runs alone. |
+| [[kalowe\|Kalowe]] | His home base since leaving Crown territory. |
+| [[harwick\|Harwick]] | Likely origin in the northern island chains. |
+| [[kalowe-the-sawek-bounty\|The Sawek Bounty]] | Kettil mentions the local [[sawek\|Sawek]] trouble without drama if asked. |

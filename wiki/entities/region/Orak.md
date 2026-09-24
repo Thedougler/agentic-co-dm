@@ -41,7 +41,7 @@ tier: supporting
 | **Anchor** | [[dreth-orak-channel]] |
 | **Known for** | Stone towers, cold sinkholes, white water, and no sanctioned landing |
 | **Feared for** | Exposed cliff approaches, watched shafts, and routes that can disappear under rain conditions |
-| **Parent region** | [[verdant-teeth|Verdant Teeth]] |
+| **Parent region** | [[verdant-teeth\|Verdant Teeth]] |
 
 > **DM thesis.** Orak makes approach and descent the adventure: land exposed, commit to a cold shaft, or wait for the rain-dependent channel to [[dreth|Dreth]].
 
@@ -72,7 +72,7 @@ Orak is high karst above drowned trees, with stone towers, cleft forest, cold si
 | North | No named neighbor established | Karst towers and cloud | Movement becomes vertical and exposed |
 | East | No named neighbor established | Clefts and sinkholes | Cold breath and shaft routes replace open reef |
 | South | No named neighbor established | Wet dark nests and drowned trees | Routes become hidden and patrol-controlled |
-| West | [[dreth-orak-channel]] / [[dreth|Dreth]] | Rain-dependent Orak shallows crossing | The island route becomes a channel choice that can disappear |
+| West | [[dreth-orak-channel]] / [[dreth\|Dreth]] | Rain-dependent Orak shallows crossing | The island route becomes a channel choice that can disappear |
 
 ### Landmarks
 
@@ -101,7 +101,7 @@ Orak is high karst above drowned trees, with stone towers, cleft forest, cold si
 | Exposed landing | Reef ↔ cliff face ↔ karst towers | Unknown | Boat and a way up the cliff | Exposed approach and no sanctioned landing | Reaches the island's high ground | Yes |
 | Cold descent | Karst towers ↔ sink wells ↔ cleft forest | Unknown | Vertical movement and route choice | Committing descent and cold breath | Reaches the forest without a settlement | Yes |
 | Watched shafts | Cleft forest ↔ wet dark nests | Unknown | Known shaft or local route | Grung patrols and submerged clefts | Reaches hidden wet nests | Yes |
-| Rain crossing | Orak shallows ↔ [[dreth|Dreth]] | Unknown | Rain-dependent channel | Crossing can disappear | Creates a loop to Dreth | Yes |
+| Rain crossing | Orak shallows ↔ [[dreth\|Dreth]] | Unknown | Rain-dependent channel | Crossing can disappear | Creates a loop to Dreth | Yes |
 
 ### Hidden and broken connections
 
@@ -116,13 +116,13 @@ Orak is high karst above drowned trees, with stone towers, cleft forest, cold si
 | Sink wells | Route | Cold vertical descent | Commitment into cleft forest | Follow the cold breath |
 | Cleft forest | Wilderness | Watched routes and known shafts | Cover, movement, and patrol risk | Track falls and shaft openings |
 | Wet dark nests | Hidden site | No named settlement established | Water access and hidden movement | Follow a known shaft without assuming it is a door |
-| [[dreth-orak-channel]] | Channel | Rain-dependent | A loop to [[dreth|Dreth]] | Ask when the crossing last held |
+| [[dreth-orak-channel]] | Channel | Rain-dependent | A loop to [[dreth\|Dreth]] | Ask when the crossing last held |
 
 ## Active powers
 
 | Power | Hold / presence | Wants now | Next move | What reveals that move |
 | --- | --- | --- | --- | --- |
-| [[grung-clans|Grung clans]] | Forbidden territory, known shafts, and channel patrol | Keep Orak and Dreth forbidden and routes counted | Patrol the channel and watch known shafts | Patrol movement, clan marks, or a counted shaft |
+| [[grung-clans\|Grung clans]] | Forbidden territory, known shafts, and channel patrol | Keep Orak and Dreth forbidden and routes counted | Patrol the channel and watch known shafts | Patrol movement, clan marks, or a counted shaft |
 
 ## Fronts and pressures
 
@@ -138,10 +138,10 @@ None established yet. Do not add a war, invasion, plague, or other macro-threat 
 | -: | --- | --- | --- |
 | 1 | The holes are doors into somewhere else. | Established truth: the holes are shafts, not doors. | Sink wells |
 | 2 | A cold breath marks the island's hidden route. | Cold breath marks the sink-well and water system. | Cleft forest |
-| 3 | The Grung clans forbid Orak with Dreth. | They hold both territories as forbidden and patrol the channel. | [[grung-clans|Grung clans]] |
+| 3 | The Grung clans forbid Orak with Dreth. | They hold both territories as forbidden and patrol the channel. | [[grung-clans\|Grung clans]] |
 | 4 | The channel to Dreth is always open. | The crossing depends on rain and can disappear. | [[dreth-orak-channel]] |
 | 5 | A nest means a settlement. | Wet dark nests are not a named settlement; no settlement is established. | Wet dark nests |
-| 6 | Sinkholes prove a hidden portal. | The established truth is geology plus the same primal leak as the other Teeth. | [[verdant-teeth|Verdant Teeth]] |
+| 6 | Sinkholes prove a hidden portal. | The established truth is geology plus the same primal leak as the other Teeth. | [[verdant-teeth\|Verdant Teeth]] |
 
 ## Encounter ecology
 
@@ -149,7 +149,7 @@ None established yet. Do not add a war, invasion, plague, or other macro-threat 
 
 | d6 | Encounter | Sign / track / warning | Source or destination |
 | -: | --- | --- | --- |
-| 1 | Grung channel patrol | Counted shaft, patrol mark, or watched water | [[grung-clans|Grung clans]] |
+| 1 | Grung channel patrol | Counted shaft, patrol mark, or watched water | [[grung-clans\|Grung clans]] |
 | 2 | Exposed landing problem | Reef, cliff face, and no sanctioned landing | Karst towers |
 | 3 | Cold shaft descent | Cold breath and sink-well opening | Cleft forest |
 | 4 | Wet dark nest | Water beside a cleft where a creature can submerge | Wet dark nests |
@@ -174,8 +174,8 @@ None established yet. Do not add a war, invasion, plague, or other macro-threat 
 
 | Past fact | Present consequence | Evidence in the world |
 | --- | --- | --- |
-| Orak is the high-karst twin to Dreth. | Route choices and clan prohibition apply to both islands. | [[dreth|Dreth]] |
-| The Grung clans made the territory forbidden. | Shafts are counted and the channel is patrolled. | [[grung-clans|Grung clans]] |
+| Orak is the high-karst twin to Dreth. | Route choices and clan prohibition apply to both islands. | [[dreth\|Dreth]] |
+| The Grung clans made the territory forbidden. | Shafts are counted and the channel is patrolled. | [[grung-clans\|Grung clans]] |
 | Sailors turned sinkholes into thin-place rumors. | Travelers may seek a door where the canon gives them a shaft. | Sink wells and cold breath |
 
 ## Stakes
@@ -188,7 +188,7 @@ None established yet. Do not add a war, invasion, plague, or other macro-threat 
 
 | Date | Change | Cause | Fallout / pages affected |
 | --- | --- | --- | --- |
-| Current campaign state | Orak recorded as a vertical high-karst twin to Dreth with a rain-dependent channel and no sanctioned landing. | Regional source material | [[dreth|Dreth]], [[dreth-orak-channel]], [[verdant-teeth|Verdant Teeth]] |
+| Current campaign state | Orak recorded as a vertical high-karst twin to Dreth with a rain-dependent channel and no sanctioned landing. | Regional source material | [[dreth\|Dreth]], [[dreth-orak-channel]], [[verdant-teeth\|Verdant Teeth]] |
 
 ## Regional index
 

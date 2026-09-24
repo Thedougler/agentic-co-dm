@@ -51,43 +51,43 @@ Traffic is the point here. [[kalowe|Kalowe]] takes any hull that pays its harbou
 | Field | Detail |
 |---|---|
 | Type | Island group and free-port approaches |
-| Parent Region | [[Midchain|The Midchain]] |
-| Controlled By | [[chain-council|Chain Council]] in name, harbour fees and pilot families in practice |
+| Parent Region | [[Midchain\|The Midchain]] |
+| Controlled By | [[chain-council\|Chain Council]] in name, harbour fees and pilot families in practice |
 | Access | Wide western channels; a pilot for anything drawing more than a fathom |
-| Known For | [[kalowe|Kalowe]]'s free port, dry dock, and no questions about papers |
+| Known For | [[kalowe\|Kalowe]]'s free port, dry dock, and no questions about papers |
 
 ## Locations Within
 
 | Place | Detail |
 |---|---|
-| [[toa-kiri|Toa Kiri]] | Pearl-diving island where the workers labor in total silence, tied to an old belief about the sea and speech. |
-| [[marenui|Marenui]] | A floating market of lashed hulls that relocates every night, findable only by rumor. |
-| [[the-anchorless|The Anchorless]] | A bare, unapproachable rock where every ship that passes in sight reports the same dream that night. |
-| [[rostes-landing|Roste's Landing]] | A free clinic that treats anyone, no questions, payment negotiable to the point of absurdity. |
-| [[farrowmere|Farrowmere]] | Locals farm a colony of dire crocodiles instead of fighting them. |
-| [[chorewick|Chorewick]] | A group of escaped bonded workers, strict and fair, wary of anyone well-dressed. |
-| [[sabrique|Sabrique]] | Salt-pan island worked by bonded labor, its cheap salt sold without questions about why. |
-| [[ossuary-cay|Ossuary Cay]] | A bone-collecting cay tended by a death-cult that reads the tides through what washes ashore. |
-| [[ussamet|Ussamet]] | Half-sunken ruins that surface only at the lowest tides, on a schedule only the sea seems to keep. |
-| [[marlstrand|Marlstrand]] | Oracles read accurate futures in the pattern of stranded jellyfish. |
-| [[ferrands-wager|Ferrand's Wager]] | A floating casino whose house always knows exactly how much you can afford to lose. |
-| [[gallowmere|Gallowmere]] | A former execution island whose ghost trials still run, so they say, after midnight. |
-| [[corallith|Corallith]] | A single living coral colossus that relocates itself once a generation. |
-| [[cradle-reef|Cradle Reef]] | A sea dragon nursery reef where the mothers stay hidden. |
-| [[ashkevet|Ashkevet]] | Abandoned Dravosi Crown prison island, officially empty, though something still rings the yard bell at dawn. |
-| [[huahei|Huahei]] | island | Small overgrown marshy island with a fey presence. |
-| [[kettleback|Kettleback]] | Old mine tunnels heated by a deep vent, now home to an illegal alchemy lab. |
-| [[verrows-cradle|Verrow's Cradle]] | A floating orphanage quietly funded by a retired pirate captain's old treasure. |
-| [[cades-fortune|Cade's Fortune]] | A dozen search parties have mapped this "treasure island," each sure the map was almost right. |
-| [[whits-larder|Whit's Larder]] | Impossible cuisine made from ingredients that shouldn't be local at all. |
-| [[kalowe|Kalowe]] | free-port town | Main Midchain settlement and repair harbour for unlisted ships and hard jobs. |
-| [[the-weeping-stair|The Weeping Stair]] | A submerged staircase rumored to lead to a drowned city nobody has confirmed reaching the bottom of. |
-| [[penance-bar|Penance Bar]] | A sandspit shrine doing endless penance for devils it never summoned, kept by a priest quietly paying off a debt of his own. |
-| [[yevkas-folly|Yevka's Folly]] | A bankrupt merchant prince's half-built pleasure palace, now quietly squatted. |
-| [[rin-dola|Rin Dola]] | A reclusive cartographer sells uncannily accurate charts of places she insists she's never visited. |
-| [[the-ledger-isle|The Ledger Isle]] | A reclusive sorcerer keeps the real books behind half the region's smuggling. |
-| [[nine-bells|Nine Bells]] | Rival lighthouse-keeper families, each certain their own bell rings truest. |
-| [[perrinelle|Perrinelle]] | Four-generation lighthouse family island where the lamp still burns though the current keeper vanished weeks ago. |
+| [[toa-kiri\|Toa Kiri]] | Pearl-diving island where the workers labor in total silence, tied to an old belief about the sea and speech. |
+| [[marenui\|Marenui]] | A floating market of lashed hulls that relocates every night, findable only by rumor. |
+| [[the-anchorless\|The Anchorless]] | A bare, unapproachable rock where every ship that passes in sight reports the same dream that night. |
+| [[rostes-landing\|Roste's Landing]] | A free clinic that treats anyone, no questions, payment negotiable to the point of absurdity. |
+| [[farrowmere\|Farrowmere]] | Locals farm a colony of dire crocodiles instead of fighting them. |
+| [[chorewick\|Chorewick]] | A group of escaped bonded workers, strict and fair, wary of anyone well-dressed. |
+| [[sabrique\|Sabrique]] | Salt-pan island worked by bonded labor, its cheap salt sold without questions about why. |
+| [[ossuary-cay\|Ossuary Cay]] | A bone-collecting cay tended by a death-cult that reads the tides through what washes ashore. |
+| [[ussamet\|Ussamet]] | Half-sunken ruins that surface only at the lowest tides, on a schedule only the sea seems to keep. |
+| [[marlstrand\|Marlstrand]] | Oracles read accurate futures in the pattern of stranded jellyfish. |
+| [[ferrands-wager\|Ferrand's Wager]] | A floating casino whose house always knows exactly how much you can afford to lose. |
+| [[gallowmere\|Gallowmere]] | A former execution island whose ghost trials still run, so they say, after midnight. |
+| [[corallith\|Corallith]] | A single living coral colossus that relocates itself once a generation. |
+| [[cradle-reef\|Cradle Reef]] | A sea dragon nursery reef where the mothers stay hidden. |
+| [[ashkevet\|Ashkevet]] | Abandoned Dravosi Crown prison island, officially empty, though something still rings the yard bell at dawn. |
+| [[huahei\|Huahei]] | island | Small overgrown marshy island with a fey presence. |
+| [[kettleback\|Kettleback]] | Old mine tunnels heated by a deep vent, now home to an illegal alchemy lab. |
+| [[verrows-cradle\|Verrow's Cradle]] | A floating orphanage quietly funded by a retired pirate captain's old treasure. |
+| [[cades-fortune\|Cade's Fortune]] | A dozen search parties have mapped this "treasure island," each sure the map was almost right. |
+| [[whits-larder\|Whit's Larder]] | Impossible cuisine made from ingredients that shouldn't be local at all. |
+| [[kalowe\|Kalowe]] | free-port town | Main Midchain settlement and repair harbour for unlisted ships and hard jobs. |
+| [[the-weeping-stair\|The Weeping Stair]] | A submerged staircase rumored to lead to a drowned city nobody has confirmed reaching the bottom of. |
+| [[penance-bar\|Penance Bar]] | A sandspit shrine doing endless penance for devils it never summoned, kept by a priest quietly paying off a debt of his own. |
+| [[yevkas-folly\|Yevka's Folly]] | A bankrupt merchant prince's half-built pleasure palace, now quietly squatted. |
+| [[rin-dola\|Rin Dola]] | A reclusive cartographer sells uncannily accurate charts of places she insists she's never visited. |
+| [[the-ledger-isle\|The Ledger Isle]] | A reclusive sorcerer keeps the real books behind half the region's smuggling. |
+| [[nine-bells\|Nine Bells]] | Rival lighthouse-keeper families, each certain their own bell rings truest. |
+| [[perrinelle\|Perrinelle]] | Four-generation lighthouse family island where the lamp still burns though the current keeper vanished weeks ago. |
 
 ## Routes & Access
 

@@ -68,6 +68,6 @@ Taufa's welcome closes when a customer presses him to repeat what he has heard f
 | --- | --- |
 | [[Taufa Fifita & Sons]] | The chandlery Taufa runs; his adult sons work in the back storeroom. |
 | [[Kalowe]] | His home and the port where the family has traded for two generations. |
-| [[noa-fifita|Noa Fifita]] | His son, who operates [[Fifita's Slip]] on the lagoon side. |
+| [[noa-fifita\|Noa Fifita]] | His son, who operates [[Fifita's Slip]] on the lagoon side. |
 | [[Fifita's Slip]] | The family's second operation, which Taufa does not mention from the main counter. |
 | [[the-passage]] | A referral hook that belongs on the main shop rather than with Taufa's personal card. |

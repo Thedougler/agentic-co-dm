@@ -77,6 +77,6 @@ Wirra uses precise, unsentimental terms and avoids treating medicine as charity.
 
 | Connection | Meaning |
 | --- | --- |
-| [[five-blades|The Five Blades]] | Wirra is the company's medic and is called when jobs go badly. |
+| [[five-blades\|The Five Blades]] | Wirra is the company's medic and is called when jobs go badly. |
 | [[Kalowe]] | The Five Blades work out of Kalowe, where clients can hire them. |
-| [[moucheron|Moucheron]] | Wirra's species and the blood-economy context behind the company's contracts. |
+| [[moucheron\|Moucheron]] | Wirra's species and the blood-economy context behind the company's contracts. |

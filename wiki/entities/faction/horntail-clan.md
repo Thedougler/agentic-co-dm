@@ -71,7 +71,7 @@ The clan competes with the other Tokage clans but shares kinship with the [[akai
 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
-| [[akibana-besko|Akibana Besko]] | Leader | Protect western Tokage | Leads the clan |
+| [[akibana-besko\|Akibana Besko]] | Leader | Protect western Tokage | Leads the clan |
 
 ### Chain of Action
 

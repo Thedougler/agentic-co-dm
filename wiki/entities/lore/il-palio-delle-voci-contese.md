@@ -91,7 +91,7 @@ Rival band performance (rough tracking): la Canzone Nera has 2 automatic success
 | Total Successes | Result | Reward |
 |---|---|---|
 | 0-3 | Respectable showing | Crowd remembers them warmly (no cash prize). Halfling at Ponte Bassa asks if they want to try next year. |
-| 4-6 | Second place | 100 gp split. A [[tessarine-concordat|Tessarine]] scout approaches about a booking (Concordat circuit connection). |
+| 4-6 | Second place | 100 gp split. A [[tessarine-concordat\|Tessarine]] scout approaches about a booking (Concordat circuit connection). |
 | 7-8 | Third (close) | Crowd respect. Le Ossa del Toro want to buy them a drink. |
 | 9+ / Win | Palio banner + 300 gp | [[iacopo-fieschi]] mentions the performers to [[cosimo-verantio]] as "people worth knowing." Morsani appears at their stage just before midnight. The crowd knows their name. |
 

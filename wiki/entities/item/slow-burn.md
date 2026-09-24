@@ -43,7 +43,7 @@ Shelf stock at [[La Brace]], and the blend [[rufio-segalla]] sells most of to pe
 | One thing | For 1 hour after lighting, the smoker has advantage on Constitution saving throws made to maintain Concentration. |
 | Rarity justification | Well under Necklace of Adaptation (Rare, outright immunity to the Concentration-breaking effect of damage, permanent, attunement required), and level with Cloak of Elvenkind (Uncommon, one situational advantage, worn without attunement). |
 | Attunement reason | None. Single use, one power, and the advantage covers one narrow class of save, leaving every other saving throw flat. |
-| PC connection | [[perrin-black-jaw|Perrin]] has no War Caster, so an hour of advantage on Constitution saves can protect Hex before a hard crossing or fight. |
+| PC connection | [[perrin-black-jaw\|Perrin]] has no War Caster, so an hour of advantage on Constitution saves can protect Hex before a hard crossing or fight. |
 | Current holder | Shelf stock at [[La Brace]], sold across the counter to anyone who walks in. |
 | Narrative hook | Someone in [[le-paludi]] spins the thread, and Rufio will not say who. He answers every other question about his shelf. |
 

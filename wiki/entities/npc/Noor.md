@@ -30,7 +30,7 @@ tier: supporting
 |             |                                                            |
 | ----------- | ---------------------------------------------------------- |
 | **Species** | [[Human]]                                                       |
-| **Post**    | Formerly [[Uncertainty|HCS Surety]], under [[barnaby-rook]] |
+| **Post**    | Formerly [[Uncertainty\|HCS Surety]], under [[barnaby-rook]] |
 | **Rank**    | Ship's Cook (learning)                                      |
 | **Crew Role** | Cook                                                      |
 | **Wage**    | 4 gp/week (cook rate)                                       |

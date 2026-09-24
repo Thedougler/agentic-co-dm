@@ -96,4 +96,4 @@ Green-caste grung are laborers, not fighters, drawn from the rainforest-interior
 |---|---|---|---|
 | Provoke into the open | The party lingers near or handles the blackpowder barrels | The grung breaks cover, flees toward the handler, and raises the alarm | [[grung-elite-warrior]] |
 | Corner or grapple one | It's caught alone with its escape route cut off | Poisonous Skin triggers on contact, per the Description's Poisonous Skin stacking mechanic | [[Calveno Sewer Magazines]] |
-| Capture and interrogate | It's isolated and past its half-HP flee threshold | It talks — naming handler positions and patrol timing rather than dying for [[grung-clans|Grung Clans]] loyalty | [[simone-tabarnack]] |
+| Capture and interrogate | It's isolated and past its half-HP flee threshold | It talks — naming handler positions and patrol timing rather than dying for [[grung-clans\|Grung Clans]] loyalty | [[simone-tabarnack]] |

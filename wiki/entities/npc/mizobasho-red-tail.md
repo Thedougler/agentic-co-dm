@@ -74,6 +74,6 @@ Mizobasho speaks in quiet, precise observations and avoids explaining the clan's
 
 | Connection | Meaning |
 | --- | --- |
-| [[akai-hodo-clan|Akai Hodo Clan]] | Mizobasho leads the northern stealth clan. |
+| [[akai-hodo-clan\|Akai Hodo Clan]] | Mizobasho leads the northern stealth clan. |
 | [[Akai Hodo Village]] | Hidden marsh base. |
 | [[Totemo Tokage]] | Mizobasho patrols the island's northeast and northwest. |

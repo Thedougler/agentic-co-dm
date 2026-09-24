@@ -75,6 +75,6 @@ Don Gex has no present voice; the clan remembers him in blunt, absolute terms ab
 
 | Connection | Meaning |
 | --- | --- |
-| [[ebony-scales|Ebony Scales]] | Don Gex founded the clan's main drug trade and former leadership. |
-| [[ranga-gex|Ranga Gex]] · [[rango-gex|Rango Gex]] | Twin sons trying to live up to his name. |
+| [[ebony-scales\|Ebony Scales]] | Don Gex founded the clan's main drug trade and former leadership. |
+| [[ranga-gex\|Ranga Gex]] · [[rango-gex\|Rango Gex]] | Twin sons trying to live up to his name. |
 | [[Totemo Tokage]] | Don Gex's three-year war ended slavery on the island. |

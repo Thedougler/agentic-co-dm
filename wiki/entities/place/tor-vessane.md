@@ -47,7 +47,7 @@ VIEW[{reference_image}][image(class(reference-image-view))]
 | Field | Detail |
 |---|---|
 | Type | Universally-avoided island |
-| Within | [[midchain-north|The Northern Midchain]] |
+| Within | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | Unclaimed |
 | Access | No pilot approaches on purpose; the only landings on record are wrecks and dares |
 | Known For | A curse nobody agrees on the shape of |

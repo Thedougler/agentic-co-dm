@@ -639,3 +639,4 @@ def test_lint_fix_escapes_table_wikilink_pipes(tmp_path: Path):
     after = payload(run_cli(tmp_path, "lint", "entities/npc/table.md"))
     rules = {item["rule"] for group in after["files"] for item in group["findings"]}
     assert "table_wikilink_unescaped_pipe" not in rules
+    assert "broken_links" not in rules

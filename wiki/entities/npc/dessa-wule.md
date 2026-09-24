@@ -75,6 +75,6 @@ She becomes guarded when a visitor presses for the penance's debt, Ashe's action
 
 | Connection | Meaning |
 | --- | --- |
-| [[sula-marn|Reeve Sula Marn]] | Uses the Ash Bowl's back corner; Dessa does not know what Marn knows, but notices that Marn keeps strangers from Mirela Cass's name. |
+| [[sula-marn\|Reeve Sula Marn]] | Uses the Ash Bowl's back corner; Dessa does not know what Marn knows, but notices that Marn keeps strangers from Mirela Cass's name. |
 | [[Ysolde]] | Dessa knew Mirela's sister before the present trouble. |
 | [[Mirela Cass]] | Each fortieth morning Dessa leaves a second clay bowl at an empty spot and clears it at close without explanation. |

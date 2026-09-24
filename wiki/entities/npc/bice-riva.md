@@ -33,7 +33,7 @@ tier: supporting
 |             |                                                |
 | ----------- | ---------------------------------------------- |
 | **Species** | Halfling                                        |
-| **Role**    | Co-proprietor, [[Al Fondale]] (front of house; husband [[aldo-riva|Aldo]] runs the kitchen) |
+| **Role**    | Co-proprietor, [[Al Fondale]] (front of house; husband [[aldo-riva\|Aldo]] runs the kitchen) |
 | **Location**| [[Al Fondale]], [[le-paludi]], [[calven-and-calveno]]         |
 
 Halfling, white-haired, barely clears the tabletops. Moves between them with the economy of someone who stopped thinking about the route twenty years ago. Hands are flour-dusted in the morning, oil-stained in the evening. Wears an apron faded pale from decades of washing. Says *caro* to everyone regardless of gender, age, or threat level. Speaks in short declarative sentences. Does not repeat herself. Puts food on the table before asking what you want, then looks at you with the expression of someone who already knows the answer is yes.

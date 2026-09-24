@@ -30,7 +30,7 @@ tier: supporting
 |              |                                                              |
 | ------------ | ------------------------------------------------------------ |
 | **Species**  | [[Human]] (Dravosi)                                              |
-| **Post**     | Formerly [[Uncertainty|HCS Surety]], under [[barnaby-rook]] |
+| **Post**     | Formerly [[Uncertainty\|HCS Surety]], under [[barnaby-rook]] |
 | **Rank**     | Ensign, Navigator                                             |
 | **Status**   | Deceased (shot by Delmar Fisk's musket during the Session 02 boarding) |
 

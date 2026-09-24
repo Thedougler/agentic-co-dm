@@ -59,7 +59,7 @@ The lore is not yet revealed at the table. The wiki records the religious arrang
 
 | Knower | Knowledge | Certainty | Basis |
 | --- | --- | --- | --- |
-| [[crissdalynn-khinriss|Crissdalynn Khinriss]] | Holds marginal observance of Syranita; the extent of her doctrinal knowledge is unrecorded. | partial | Her character and faith notes. |
+| [[crissdalynn-khinriss\|Crissdalynn Khinriss]] | Holds marginal observance of Syranita; the extent of her doctrinal knowledge is unrecorded. | partial | Her character and faith notes. |
 
 ### Party Knowledge
 
@@ -99,9 +99,9 @@ No common telling, proverb, ritual phrase, or public explanation is recorded.
 
 | Page | Relationship | Table relevance |
 | --- | --- | --- |
-| [[shattered-sea-pantheon|The Shattered Sea Pantheon]] | Regional divine index | Places Syranita within Aarakocra observance. |
-| [[crissdalynn-khinriss|Crissdalynn Khinriss]] | Marginal observance | Holds the only named character connection currently recorded. |
-| [[remnis|Remnis]] | Primary neighboring observance | Clarifies Syranita's secondary status in Crissdalynn's faith. |
+| [[shattered-sea-pantheon\|The Shattered Sea Pantheon]] | Regional divine index | Places Syranita within Aarakocra observance. |
+| [[crissdalynn-khinriss\|Crissdalynn Khinriss]] | Marginal observance | Holds the only named character connection currently recorded. |
+| [[remnis\|Remnis]] | Primary neighboring observance | Clarifies Syranita's secondary status in Crissdalynn's faith. |
 
 ## Open Canon
 

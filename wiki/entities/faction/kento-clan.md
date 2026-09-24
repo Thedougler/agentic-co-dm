@@ -71,7 +71,7 @@ The clan's products are purchased by the other Tokage clans. Its settlement sits
 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
-| [[takayama-kongo|Takayama Kongo]] | Leader | Keep production running | Leads the clan |
+| [[takayama-kongo\|Takayama Kongo]] | Leader | Keep production running | Leads the clan |
 
 ### Chain of Action
 

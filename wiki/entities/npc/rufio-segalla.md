@@ -50,7 +50,7 @@ He buys base compound from [[Studio Orsini]] by standing order and finishes the 
 | Consistent method | Seats customers first; the price depends on booth-privacy, never the compound. Keeps no ledger, ever, and ensures patrons watch him refuse to write. |
 | Active problem | The [[tessarine-concordat]] has asked for a list of who books the curtained booths, and the absence of that list is the whole business. |
 | Performance hooks | Memory-keeper. Writes your face in his pocketbook after you draw. |
-| Link of relevance | The only smoke room where [[jean-claude-tabarnack|Tabarnack]] can exist openly. |
+| Link of relevance | The only smoke room where [[jean-claude-tabarnack\|Tabarnack]] can exist openly. |
 
 **Voice and delivery.** Quiet enough that the room has to settle for him, which it does. He answers a question with a longer version of the question when he does not intend to answer it at all. Worldview word: **discretion**. Not a kindness he extends, but the product he sells, and he puts a number on it.
 

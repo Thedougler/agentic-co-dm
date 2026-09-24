@@ -70,5 +70,5 @@ Roka stops cooperating when the party reaches for his hidden ledger, names the b
 | ---------- | ------- |
 | [[Zort]] | Roka is the Midchain contact named for Zort's prosthetic lead. |
 | [[Sparhold]] | Roka operates from Sparhold. |
-| [[spar-and-snare-outfitters|Spar & Snare Outfitters]] | His safari supplier network feeds live exotic creatures to Sabine Corvo's dealership. |
-| [[rokas-hidden-ledger|Roka's Hidden Ledger]] | The private ledger records live captures and payments to a boundary scout to misreport timber-cutting lines at the [[verdant-teeth]] fringe. |
+| [[spar-and-snare-outfitters\|Spar & Snare Outfitters]] | His safari supplier network feeds live exotic creatures to Sabine Corvo's dealership. |
+| [[rokas-hidden-ledger\|Roka's Hidden Ledger]] | The private ledger records live captures and payments to a boundary scout to misreport timber-cutting lines at the [[verdant-teeth]] fringe. |

@@ -49,7 +49,7 @@ Calder's Verge produces glasswork prized across the [[Midchain|Midchain]], made 
 | Field | Detail |
 |---|---|
 | Type | Volcanic-vent glassblowing guild |
-| Region | [[midchain-north|The Northern Midchain]] |
+| Region | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | The Calder's Verge guild |
 | Known For | Prized glasswork and a dangerous apprenticeship |
 

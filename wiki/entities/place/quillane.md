@@ -50,7 +50,7 @@ VIEW[{reference_image}][image(class(reference-image-view))]
 | Field | Detail |
 |---|---|
 | Type | Tidal-magic research island |
-| Within | [[midchain-north|The Northern Midchain]] |
+| Within | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | An independent scholar-mage colony |
 | Access | By boat only; the causeway to the dome only clears twice a day, between tides |
 | Known For | Trading knowledge for strange specimens |

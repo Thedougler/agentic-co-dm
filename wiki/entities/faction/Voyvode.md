@@ -108,10 +108,10 @@ flexGrow=1
 
 | Asset | Type | Location | What it enables | Condition |
 | --- | --- | --- | --- | --- |
-| Crown funding | Wealth / Influence | [[fathomrush|Fathomrush]] | Pays for rigs, crews, and open trials | Active |
-| Pressure-rig towers | Access / Force | [[fathomrush|Fathomrush]] | Tests the route toward the deep shelf | Untested for the next descent |
+| Crown funding | Wealth / Influence | [[fathomrush\|Fathomrush]] | Pays for rigs, crews, and open trials | Active |
+| Pressure-rig towers | Access / Force | [[fathomrush\|Fathomrush]] | Tests the route toward the deep shelf | Untested for the next descent |
 | Trial records | Information | Voyvode compound | Supports an honest comparison with Sunkline's certificate | Incomplete but public |
-| [[branimir-karsovine|Branimir Karsovine]] | Leadership | Voyvode compound | Decides whether a crew descends | Will not use an untested rig |
+| [[branimir-karsovine\|Branimir Karsovine]] | Leadership | Voyvode compound | Decides whether a crew descends | Will not use an untested rig |
 
 ---
 
@@ -119,9 +119,9 @@ flexGrow=1
 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
-| [[branimir-karsovine|Branimir Karsovine]] | Trial leader | A rig that can be used without sending a crew under an untested system | Holds the decision boundary |
-| [[marta-kessler|Marta Kessler]] | Storekeeper | Keep the compound supplied | Store access is a practical dependency |
-| [[dravosi-crown|Dravosi Crown]] | Backer | A Crown-backed pressure-rig result | Funding ties Voyvode to Crown expectations |
+| [[branimir-karsovine\|Branimir Karsovine]] | Trial leader | A rig that can be used without sending a crew under an untested system | Holds the decision boundary |
+| [[marta-kessler\|Marta Kessler]] | Storekeeper | Keep the compound supplied | Store access is a practical dependency |
+| [[dravosi-crown\|Dravosi Crown]] | Backer | A Crown-backed pressure-rig result | Funding ties Voyvode to Crown expectations |
 | Trial crews | Operators | Survive a descent and make the rig work | The memorial wall records their cost |
 
 ### Chain of Action
@@ -140,8 +140,8 @@ flexGrow=1
 
 | Place | Presence | What they control or need here | Current pressure |
 | --- | --- | --- | --- |
-| [[fathomrush|Fathomrush]] | Headquarters | Compound, pressure-rig towers, gate, and trial records | Another trial must earn a safe descent |
-| [[mid-works|Mid-Works]] | Contested | Deep-shelf access and the destination of the race | Voyvode has not reached it |
+| [[fathomrush\|Fathomrush]] | Headquarters | Compound, pressure-rig towers, gate, and trial records | Another trial must earn a safe descent |
+| [[mid-works\|Mid-Works]] | Contested | Deep-shelf access and the destination of the race | Voyvode has not reached it |
 | Memorial wall | Public sign | Names the crews lost to trials | Fresh names are mostly Voyvode's |
 
 ---
@@ -151,9 +151,9 @@ flexGrow=1
 | Faction / person | Stance | What Voyvode wants from them | Leverage, debt, or friction |
 | --- | --- | --- | --- |
 | [[Sunkline]] | Rival | A fair race and exposure of its false certificate | Voyvode's open records challenge Sunkline's fraud |
-| [[dravosi-crown|Dravosi Crown]] | Allied | Funding for the pressure-rig trials | Crown backing creates expectations |
+| [[dravosi-crown\|Dravosi Crown]] | Allied | Funding for the pressure-rig trials | Crown backing creates expectations |
 | [[Fathomrush]] | Friendly | Compound access and a working dock | Voyvode's trials spend crews and occupy the pier |
-| [[branimir-karsovine|Branimir Karsovine]] | Internal authority | A decision on when the rig is ready | He refuses an untested rig |
+| [[branimir-karsovine\|Branimir Karsovine]] | Internal authority | A decision on when the rig is ready | He refuses an untested rig |
 
 ### Party
 
@@ -205,7 +205,7 @@ flexGrow=1
 
 | Date / session | Move | Result / changed fact | Ripple | Signal | Cause |
 | --- | --- | --- | --- | --- | --- |
-| Current campaign state | Open pressure-rig trials | Voyvode continues to spend crews while seeking an honest rig | [[mid-works|Mid-Works]] | Open gate and memorial names | Existing faction brief |
+| Current campaign state | Open pressure-rig trials | Voyvode continues to spend crews while seeking an honest rig | [[mid-works\|Mid-Works]] | Open gate and memorial names | Existing faction brief |
 
 ---
 

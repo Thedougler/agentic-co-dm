@@ -47,7 +47,7 @@ last_advanced: 2026-09-13
 | **Quest giver** | No quest giver is established. |
 | **Region** | [[Midchain]] |
 | **Scope** | Regional |
-| **Opposition** | [[aleksander-malone|Malone]] and the [[dravosi-crown|Dravosi Crown]] |
+| **Opposition** | [[aleksander-malone\|Malone]] and the [[dravosi-crown\|Dravosi Crown]] |
 | **Reward** | Protection, leverage, or information gained by choosing how to handle Grigori. |
 | **Last change** | Malone's pursuit is active, and Grigori's Flock thread remains unresolved. |
 
@@ -76,7 +76,7 @@ Grigori leads the [[khlysty-the-flock|Flock]] and believes he authored its blood
 
 | | |
 | --- | --- |
-| **Driver** | [[shepherd-grigori|Shepherd Grigori]] |
+| **Driver** | [[shepherd-grigori\|Shepherd Grigori]] |
 | **Wants** | An army of blood anchors sufficient to support his ascension. |
 | **Current move** | Heals powerful heirs and leaves dormant blood-threads behind. |
 | **Next move** | Extends a quiet cure into another noble house before the Crown confirms the pattern. |
@@ -95,18 +95,18 @@ Grigori leads the [[khlysty-the-flock|Flock]] and believes he authored its blood
 
 | Lead | Points toward | Found? | State |
 | --- | --- | --- | --- |
-| Malone's public trail and Crown pronouncements | [[aleksander-malone|Malone]] | No | Available |
-| Reports of miraculous recoveries that leave a repeated blood-thread pattern | [[khlysty-the-flock|the Flock]] | No | Available |
-| The crew's direct knowledge of Grigori's healing and departure | [[shepherd-grigori|Grigori]] | Yes | Available |
+| Malone's public trail and Crown pronouncements | [[aleksander-malone\|Malone]] | No | Available |
+| Reports of miraculous recoveries that leave a repeated blood-thread pattern | [[khlysty-the-flock\|the Flock]] | No | Available |
+| The crew's direct knowledge of Grigori's healing and departure | [[shepherd-grigori\|Grigori]] | Yes | Available |
 
 ## People & factions
 
 | Entity | Role in the quest | Wants / pressure |
 | --- | --- | --- |
-| [[shepherd-grigori|Shepherd Grigori]] | Quarry and Flock leader | Wants blood anchors and eventual ascension. |
-| [[aleksander-malone|Aleksander Malone]] | Crown hunter | Wants Grigori dead after confirmed heresy. |
-| [[khlysty-the-flock|Khlysty / the Flock]] | Hidden network | Wants access to noble houses and bodies that can carry dormant threads. |
-| [[dravosi-crown|Dravosi Crown]] | Institutional pursuer | Wants confirmed infiltration contained. |
+| [[shepherd-grigori\|Shepherd Grigori]] | Quarry and Flock leader | Wants blood anchors and eventual ascension. |
+| [[aleksander-malone\|Aleksander Malone]] | Crown hunter | Wants Grigori dead after confirmed heresy. |
+| [[khlysty-the-flock\|Khlysty / the Flock]] | Hidden network | Wants access to noble houses and bodies that can carry dormant threads. |
+| [[dravosi-crown\|Dravosi Crown]] | Institutional pursuer | Wants confirmed infiltration contained. |
 
 ## Relevant places
 

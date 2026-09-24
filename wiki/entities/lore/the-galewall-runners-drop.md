@@ -113,7 +113,7 @@ Before the wreck disappeared, the crew reportedly rowed heavy lockboxes onto bla
 | Page | Relationship | Table relevance |
 | --- | --- | --- |
 | [[Galewall]] | Storm belt that wrecked the escape. | Sets the hazard and route history. |
-| [[ashwall-islands|Ashwall Islands]] | Volcanic chain containing the possible drop site. | Defines the search area without fixing one island. |
+| [[ashwall-islands\|Ashwall Islands]] | Volcanic chain containing the possible drop site. | Defines the search area without fixing one island. |
 | [[dravosi-crown]] | Owner of the missing payroll. | Provides records, authority, and pressure. |
 
 ---

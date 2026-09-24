@@ -42,7 +42,7 @@ tier: supporting
 | Field | Value |
 |---|---|
 | Primary goal | Secure a steady supply of brine-sage for her patients and the Warren. |
-| Consistent method | Treats all injuries with identical attention regardless of patron. Charges [[Rattkin|Kin]] community rates and surface folk premium prices. |
+| Consistent method | Treats all injuries with identical attention regardless of patron. Charges [[Rattkin\|Kin]] community rates and surface folk premium prices. |
 | Active problem | A Dravosi trade restriction has cut off her supplier. She has eleven days before her supply ends. |
 | Performance hooks | Underground healer vibe. Never looks up until she finishes closing each patient's wound. |
 | Link of relevance | Treats the [[Warren]]'s inhabitants, making her essential to any crew seeking to hold ground or gather allies below. |

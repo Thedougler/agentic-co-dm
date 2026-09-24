@@ -45,7 +45,7 @@ Thessit collects wrecks that shouldn't be able to reach it: whole ships, undamag
 | Field | Detail |
 |---|---|
 | Type | Wreck-collecting mystery island |
-| Region | [[midchain-north|The Northern Midchain]] |
+| Region | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | Unclaimed |
 | Known For | Whole ships arriving long after they sank elsewhere |
 

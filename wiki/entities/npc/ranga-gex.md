@@ -75,6 +75,6 @@ Ranga Gex's voice is not established in the source. The page establishes a twin 
 
 | Connection | Meaning |
 | --- | --- |
-| [[ebony-scales|Ebony Scales]] | Ranga co-leads the clan. |
-| [[rango-gex|Rango Gex]] | Twin co-leader. |
-| [[don-gex|Don Gex]] | Late father whose name Ranga is trying to live up to. |
+| [[ebony-scales\|Ebony Scales]] | Ranga co-leads the clan. |
+| [[rango-gex\|Rango Gex]] | Twin co-leader. |
+| [[don-gex\|Don Gex]] | Late father whose name Ranga is trying to live up to. |

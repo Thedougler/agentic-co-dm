@@ -50,7 +50,7 @@ The vent stays active. Locals have built their weather-reading practice around i
 | Field | Detail |
 |---|---|
 | Type | Active volcanic island |
-| Region | [[midchain-north|The Northern Midchain]] |
+| Region | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | Local volcano-watchers |
 | Known For | A living vent islanders navigate by, not around |
 

@@ -43,7 +43,7 @@ Ninka runs [[Ninka's Findings]] from a reinforced shop in [[Sparhold|Sparhold's]
 
 | Field | Content |
 |---|---|
-| Primary goal | Become so entrenched as [[Sparhold|Sparhold's]] salvage intermediary that no one can trace goods flowing through her hands or predict her next buyer. |
+| Primary goal | Become so entrenched as [[Sparhold\|Sparhold's]] salvage intermediary that no one can trace goods flowing through her hands or predict her next buyer. |
 | Consistent method | Prices items using a bone abacus without haggling. Closes each transaction the moment coin changes hands. She tells first-time buyers her three rules: "You ask about provenance, I walk. You ask about destination, I walk. You want credit, I walk." Then she disengages. |
 | Active problem | Vrex, her [[verdant-teeth]] contact, has gone silent for three weeks. The supply line has dried up. Other buyers are getting impatient. She needs to send someone into the Teeth to find out what happened. |
 | Performance hooks | Bureaucratic efficiency · wraps a mooring rope loosely around her abacus when pausing a transaction (a gesture suggesting dock-work habit). |

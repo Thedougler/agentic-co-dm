@@ -43,7 +43,7 @@ Sold to companies too small to print a programme, so the second name on the bill
 | One thing | A name on the brass makes readers take that person for staff at the door it hangs on. |
 | Rarity justification | Common: one social effect at one doorway, with nothing riding on a save. |
 | Attunement reason | None. It hangs on a door and does its work there. |
-| PC connection | Puts [[delmar-fisk|Delmar]] inside a door instead of over its wall. |
+| PC connection | Puts [[delmar-fisk\|Delmar]] inside a door instead of over its wall. |
 | Current holder | [[Fio]], fanned on a card at the counter. |
 | Narrative hook | 90 gp, and Fio never asks which door. |
 

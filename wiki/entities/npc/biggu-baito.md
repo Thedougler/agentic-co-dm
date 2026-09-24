@@ -75,6 +75,6 @@ Biggu Baito's voice is not established in the source. The page establishes a phy
 
 | Connection | Meaning |
 | --- | --- |
-| [[ryu-no-kage|Ryu no Kage]] | Baito serves as head general. |
-| [[madam-hino|Madam Hino]] | Baito follows Hino and guards her appearance. |
-| [[nona-black-jaw|Nona Black-Jaw]] | The other named keeper of Hino's appearance secret. |
+| [[ryu-no-kage\|Ryu no Kage]] | Baito serves as head general. |
+| [[madam-hino\|Madam Hino]] | Baito follows Hino and guards her appearance. |
+| [[nona-black-jaw\|Nona Black-Jaw]] | The other named keeper of Hino's appearance secret. |

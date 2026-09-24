@@ -75,6 +75,6 @@ Akibana Besko's voice is not established in the source. The page establishes an 
 
 | Connection | Meaning |
 | --- | --- |
-| [[horntail-clan|Horntail Clan]] | Besko leads the western clan. |
+| [[horntail-clan\|Horntail Clan]] | Besko leads the western clan. |
 | [[Hōnteiru no Mura]] | Besko's fortified settlement. |
 | [[Totemo Tokage]] | Besko defends the island. |

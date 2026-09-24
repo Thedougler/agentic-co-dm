@@ -78,5 +78,5 @@ Varet speaks in exact contract terms and avoids letting courtesy blur an obligat
 | Connection | Meaning |
 | ---------- | ------- |
 | [[five-blades]] | Mercenary company Varet speaks contracts for. |
-| [[the-flat-water|The Flat Water]] | Kalowe venue where she brokers contracts. |
+| [[the-flat-water\|The Flat Water]] | Kalowe venue where she brokers contracts. |
 | [[Ket]] | Varet recognizes him as a fellow [[Murrat]] native if the party reaches Murrat. |

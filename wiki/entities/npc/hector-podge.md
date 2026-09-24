@@ -77,4 +77,4 @@ Hector's posture changes when a direct question threatens the tavern's hospitali
 | --- | --- |
 | [[hook-and-ledger]] | The Shelf tavern he runs and the setting for his local authority. |
 | [[calders-tooth-and-port-tidefall]] | His home port and the harbour community where he is embedded. |
-| [[central-strait|Strait]] | A subject he discusses while deflecting direct questions. |
+| [[central-strait\|Strait]] | A subject he discusses while deflecting direct questions. |

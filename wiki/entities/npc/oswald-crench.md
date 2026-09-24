@@ -75,6 +75,6 @@ He closes the conversation when customers browse without purpose, demand certain
 
 | Connection | Meaning |
 | --- | --- |
-| [[shelf-instrument-dealer|Shelf Instrument Dealer]] | The navigation shop he owns and runs. |
+| [[shelf-instrument-dealer\|Shelf Instrument Dealer]] | The navigation shop he owns and runs. |
 | [[calders-tooth-and-port-tidefall]] | His home port and the source of his Crown customers. |
 | [[dravosi-crown]] | Crown officers use his calibrated navigation equipment, but the source does not make him a Crown member. |

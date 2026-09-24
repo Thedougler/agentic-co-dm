@@ -74,6 +74,6 @@ Thassos becomes **Hostile** and **Unwilling** when a player cheats openly, mocks
 
 | Connection | Meaning |
 | ---------- | ------- |
-| [[tallow-row|Tallow Row]] | The den where Thassos plays most nights. |
-| [[thunk|Thunk]] | Thassos called out Thunk's card-counting at the table in front of the room. |
-| [[old-faas|Old Faas]] | A familiar face across the felt; Faas is one of the regulars the room already trusts. |
+| [[tallow-row\|Tallow Row]] | The den where Thassos plays most nights. |
+| [[thunk\|Thunk]] | Thassos called out Thunk's card-counting at the table in front of the room. |
+| [[old-faas\|Old Faas]] | A familiar face across the felt; Faas is one of the regulars the room already trusts. |

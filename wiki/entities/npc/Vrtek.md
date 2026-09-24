@@ -76,4 +76,4 @@ He becomes wary only when someone tries to take his pockets or rushes him. A cal
 | [[calders-tooth-and-port-tidefall]] | Port he is passing through between ships. |
 | [[Anchor and Line]] | Dockside establishment where he sorts his pockets. |
 | [[detto-kalash]] | Unwitting source of the buried-cache note. |
-| [[perrin-black-jaw|Perrin]] | Can learn from Sosse that Vrtek carries something official that does not belong to him. |
+| [[perrin-black-jaw\|Perrin]] | Can learn from Sosse that Vrtek carries something official that does not belong to him. |

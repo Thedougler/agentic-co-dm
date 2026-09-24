@@ -74,8 +74,8 @@ Marrow becomes **Unwilling** when the party lacks a Kin introduction, makes the 
 
 | Connection | Meaning |
 | ---------- | ------- |
-| [[marrows|Marrow's]] | Marrow's alcove and place of business. |
-| [[warren|The Warren]] | His home and the setting for his Passage-adjacent work. |
-| [[warren-marrows-crate|Marrow's Crate]] | The crate currently on his shelf, containing the Vretek/Brol letter, silver, and a signet ring. |
-| [[serin-haut|Serin Haut]] | Killed courier Dren, who was transporting the crate. |
-| [[tangle|The Tangle]] | Regards Marrow's work as Passage-adjacent and leaves him to it. |
+| [[marrows\|Marrow's]] | Marrow's alcove and place of business. |
+| [[warren\|The Warren]] | His home and the setting for his Passage-adjacent work. |
+| [[warren-marrows-crate\|Marrow's Crate]] | The crate currently on his shelf, containing the Vretek/Brol letter, silver, and a signet ring. |
+| [[serin-haut\|Serin Haut]] | Killed courier Dren, who was transporting the crate. |
+| [[tangle\|The Tangle]] | Regards Marrow's work as Passage-adjacent and leaves him to it. |

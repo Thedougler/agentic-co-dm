@@ -66,15 +66,15 @@ flexGrow=1
 | Asset | Type | Location | What it enables | Condition |
 | --- | --- | --- | --- | --- |
 | Covert agents | Force | [[Zennitana]] | Assassination, theft, and deception | Active |
-| [[biggu-baito|Biggu Baito]] | Force | Tokage | Generalship and visible intimidation | Ready |
+| [[biggu-baito\|Biggu Baito]] | Force | Tokage | Generalship and visible intimidation | Ready |
 
 ## People & Structure
 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
-| [[madam-hino|Madam Hino]] | Leader | Protect the Omusubi Family | Hidden appearance |
-| [[biggu-baito|Biggu Baito]] | Head general | Enforce Hino's orders | Loyal |
-| [[nona-black-jaw|Nona Black-Jaw]] | Secret keeper | Keep Hino's appearance hidden | Sworn to secrecy |
+| [[madam-hino\|Madam Hino]] | Leader | Protect the Omusubi Family | Hidden appearance |
+| [[biggu-baito\|Biggu Baito]] | Head general | Enforce Hino's orders | Loyal |
+| [[nona-black-jaw\|Nona Black-Jaw]] | Secret keeper | Keep Hino's appearance hidden | Sworn to secrecy |
 
 ### Chain of Action
 

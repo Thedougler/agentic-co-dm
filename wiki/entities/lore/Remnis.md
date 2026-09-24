@@ -63,8 +63,8 @@ Remnis is an Aarakocra sky god and Crissdalynn's primary deity. Crissdalynn wear
 
 | Knower | Knowledge | Certainty | Basis |
 | --- | --- | --- | --- |
-| [[crissdalynn-khinriss|Crissdalynn]] | Remnis is her primary deity and part of her habitual prayer. | knows | Character source. |
-| [[aarakocra|Aarakocra]] traditions | Remnis is identified as an Aarakocra sky god. | established in source | Campaign lore source. |
+| [[crissdalynn-khinriss\|Crissdalynn]] | Remnis is her primary deity and part of her habitual prayer. | knows | Character source. |
+| [[aarakocra\|Aarakocra]] traditions | Remnis is identified as an Aarakocra sky god. | established in source | Campaign lore source. |
 
 ## Party Knowledge
 
@@ -106,8 +106,8 @@ No canonical prayer, proverb, title beyond “sky god,” or common telling is r
 
 | Page | Relationship | Table relevance |
 | --- | --- | --- |
-| [[aarakocra|Aarakocra]] | Remnis is identified as an Aarakocra sky god. | Grounds the deity's cultural scope. |
-| [[crissdalynn-khinriss|Crissdalynn]] | Remnis is Crissdalynn's primary deity. | Provides the current character-facing expression of the faith. |
+| [[aarakocra\|Aarakocra]] | Remnis is identified as an Aarakocra sky god. | Grounds the deity's cultural scope. |
+| [[crissdalynn-khinriss\|Crissdalynn]] | Remnis is Crissdalynn's primary deity. | Provides the current character-facing expression of the faith. |
 
 ---
 

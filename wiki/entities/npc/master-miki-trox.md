@@ -75,6 +75,6 @@ Master Miki Trox's voice is not established in the source. The page establishes 
 
 | Connection | Meaning |
 | --- | --- |
-| [[yuki-no-kibo|Yuki no Kibo]] | Miki leads the mountain order. |
+| [[yuki-no-kibo\|Yuki no Kibo]] | Miki leads the mountain order. |
 | [[Shōrin Hakushin-ji]] | Summit temple and village. |
 | [[Semuanya]] | Deity worshipped by the order. |

@@ -48,7 +48,7 @@ tier: supporting
 | Consistent method | Refuses to write prices down; prices everything from memory and observation, then adds what he recalls about past sales. |
 | Active problem | His regulars worry he recalls their transactions and fear who might ask him about their purchases. |
 | Performance hooks | Record keeper's precision. Runs his thumb across fabric or turns bottles in the light while pricing. |
-| Link of relevance | For [[delmar-fisk|Delmar]], he may recall every scarlet coat sold in Calveno; for [[jean-claude-tabarnack|Jean-Claude]], that same talent reads as threat. |
+| Link of relevance | For [[delmar-fisk\|Delmar]], he may recall every scarlet coat sold in Calveno; for [[jean-claude-tabarnack\|Jean-Claude]], that same talent reads as threat. |
 
 **Voice & Delivery:** patient, unhurried, precise. Never raises his voice when pricing items from memory.
 

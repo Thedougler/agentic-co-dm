@@ -45,7 +45,7 @@ Adwe's mangrove channels rearrange themselves after every storm strong enough to
 | Field | Detail |
 |---|---|
 | Type | Mangrove maze island |
-| Region | [[midchain-north|The Northern Midchain]] |
+| Region | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | Ungoverned |
 | Known For | Channels that don't match the last chart after a storm |
 

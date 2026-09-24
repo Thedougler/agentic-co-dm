@@ -27,7 +27,7 @@ tier: supporting
 |             |                                                             |
 | ----------- | ----------------------------------------------------------- |
 | **Species** | [[Tabaxi]] (tiger)                                               |
-| **Role**    | Tribal elder, memory-keeper, [[keth-naar|Keth-Naar]]        |
+| **Role**    | Tribal elder, memory-keeper, [[keth-naar\|Keth-Naar]]        |
 | **Status**  | Managing the tribe through the blessing crisis               |
 
 **Opening Scene**

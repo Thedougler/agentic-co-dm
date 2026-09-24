@@ -43,8 +43,8 @@ Sold as a keepsake for weddings, first performances, and last words. Of everythi
 | One thing | Rung, it replays the last nearby sound at full volume. |
 | Rarity justification | Uncommon: functional stock, priced at the Uncommon band. |
 | Attunement reason | None. No roll bonus, one power. |
-| PC connection | Speaks in a voice [[jean-claude-tabarnack|Jean-Claude]] cannot fake. |
-| Current holder | [[fioravante-selmerin|Fio]], on the window stand. |
+| PC connection | Speaks in a voice [[jean-claude-tabarnack\|Jean-Claude]] cannot fake. |
+| Current holder | [[fioravante-selmerin\|Fio]], on the window stand. |
 | Narrative hook | Bought for 250 gp, or lifted while Fio talks. |
 
 Uncommon tier holds. Magic Item Rarity prices Common goods at 100 gp and Uncommon goods at 400 gp, with an approximate Uncommon range of 100-500 gp; the bell's 250 gp asking price sits inside that band, not Common's. [[the-interrogator]] (250 gp) and [[ricochet-red]] (300 gp) are this shop's own Uncommon stock at the same price point. The bell matches the voice clause of _magic mouth_ and drops the spell's trigger, its duration, and its 10 gp component. That's a full spell effect held in a standing trinket.

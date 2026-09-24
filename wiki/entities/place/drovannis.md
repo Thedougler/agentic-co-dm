@@ -45,7 +45,7 @@ Drovannis is a druidic bird sanctuary. Each year, seabirds return here. They car
 | Field | Detail |
 |---|---|
 | Type | Migratory bird sanctuary |
-| Region | [[midchain-north|The Northern Midchain]] |
+| Region | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | A druidic order |
 | Known For | Migratory birds returning each year with lost objects in tow |
 

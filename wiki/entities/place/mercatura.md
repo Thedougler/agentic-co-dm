@@ -37,7 +37,7 @@ summary: "Functioning Calveno city where Solange Barret's ritual ran beneath; Ot
 |                 |                                                                 |
 | --------------- | --------------------------------------------------------------- |
 | **Character**   | A functioning city whose durable identity is only partly recorded. |
-| **Known for**   | The closed Season 1 thread involving [[solange-barret|Solange Barret]], [[otar-the-foul|Otar the Foul]], and the Mercatura bombs. |
+| **Known for**   | The closed Season 1 thread involving [[solange-barret\|Solange Barret]], [[otar-the-foul\|Otar the Foul]], and the Mercatura bombs. |
 | **Power**       | City authority is Unknown. |
 | **Pressure**    | No current pressure is established; the bombs and Otar's defeat are closed history. |
 | **Opportunity** | The party can use Mercatura as an urban base, pursue established connected notes, or investigate what the city offers when play points there. |

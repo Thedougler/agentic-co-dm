@@ -74,7 +74,7 @@ Kinryu's voice is not established in the source. The page identifies him as the 
 
 | Connection | Meaning |
 | --- | --- |
-| [[omusubi-family|Omusubi Family]] | Kinryu leads the self-proclaimed royal family. |
+| [[omusubi-family\|Omusubi Family]] | Kinryu leads the self-proclaimed royal family. |
 | [[Zennitana]] | Capital and harbor base. |
-| [[ryu-no-kage|Ryu no Kage]] | Covert organization loyal to the family. |
+| [[ryu-no-kage\|Ryu no Kage]] | Covert organization loyal to the family. |
  

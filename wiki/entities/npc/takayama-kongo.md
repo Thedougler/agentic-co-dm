@@ -75,6 +75,6 @@ Takayama Kongo's voice is not established in the source. The page establishes a 
 
 | Connection | Meaning |
 | --- | --- |
-| [[kento-clan|Kento Clan]] | Kongo leads the mining and smithing clan. |
+| [[kento-clan\|Kento Clan]] | Kongo leads the mining and smithing clan. |
 | [[Kurogane-mura]] | Kongo's village and industrial base. |
 | [[Totemo Tokage]] | Kongo's weapons and armor supply the island's clans. |

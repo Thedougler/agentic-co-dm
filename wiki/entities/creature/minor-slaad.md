@@ -81,7 +81,7 @@ Not sapient enough to act without a stronger slaad nearby directing it; left alo
 | Consistent method | Never initiates alone; waits for a tadpole clutch or one of Otar's own attacks to create an opening, then piles onto an already-engaged target. |
 | Active problem | Incomplete metamorphosis leaves it pain-wracked and aggressive — much closer to feral than a true adult slaad, and it knows it. |
 | Performance hooks | Skin still wet and half-formed, sloughing translucent tissue with every movement. |
-| Link of relevance | This is what a tadpole-infested host becomes — the same fate [[solange-barret|Solange]] suffered, scaled down to a single reclaimed body; a downed ally lost to a tadpole clutch rises as one of these under Otar's control. |
+| Link of relevance | This is what a tadpole-infested host becomes — the same fate [[solange-barret\|Solange]] suffered, scaled down to a single reclaimed body; a downed ally lost to a tadpole clutch rises as one of these under Otar's control. |
 
 ## Tactics
 

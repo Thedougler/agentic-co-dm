@@ -51,7 +51,7 @@ tier: supporting
 |                 |                                                                 |
 | --------------- | --------------------------------------------------------------- |
 | **Quest giver** | Unknown |
-| **Region**      | [[verdant-teeth|Verdant Teeth]] |
+| **Region**      | [[verdant-teeth\|Verdant Teeth]] |
 | **Scope**       | Regional |
 | **Opposition**  | [[grung-clans]] and the raiding fleet |
 | **Reward**      | Captives recovered, route information, and leverage over the fleet; no formal reward is established. |

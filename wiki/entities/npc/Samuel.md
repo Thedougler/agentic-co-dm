@@ -49,7 +49,7 @@ visibility: dm
 | Consistent method | Shows up on time, listens carefully and asks permission before acting. |
 | Active problem | Nobody has ever stated the job's actual scope or expectations. |
 | Performance hooks | Earnest, almost apologetic vibe. Fidgets with the beak-wax in his pocket when he's uncertain. |
-| Link of relevance | Runs messages between [[catarina-davirelli|Catarina]] and the crew at [[Cat's Curios]]. |
+| Link of relevance | Runs messages between [[catarina-davirelli\|Catarina]] and the crew at [[Cat's Curios]]. |
 
 ## Session Log
 

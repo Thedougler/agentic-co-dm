@@ -298,10 +298,13 @@ def resolve(raw: str, pages: dict[str, dict], lookup: dict[str, list[str]]) -> l
     return [str(target) for target in targets]
 
 def link_occurrences(text: str) -> list[tuple[str, int]]:
-    """Return wikilink targets with their 1-based source lines."""
+    """Return wikilink targets with their 1-based source lines.
+
+    A table-cell link writes its alias pipe as `\\|`; the backslash is not part of the target.
+    """
     scrubbed = TOKEN.sub(lambda m: " " * len(m.group(0)), text)
     return [
-        (m.group(1).split("|", 1)[0].strip(), text.count("\n", 0, m.start()) + 1)
+        (m.group(1).split("|", 1)[0].strip().removesuffix("\\").strip(), text.count("\n", 0, m.start()) + 1)
         for m in re.finditer(r"(?<!!)\[\[([^\]]+)\]\]", scrubbed)
     ]
 

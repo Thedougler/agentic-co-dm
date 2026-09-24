@@ -45,7 +45,7 @@ last_advanced: 2026-09-19
 |                 |                                                     |
 | --------------- | --------------------------------------------------- |
 | **Quest giver** | No quest giver is recorded.                         |
-| **Region**      | [[warren|The Warren]]                               |
+| **Region**      | [[warren\|The Warren]]                               |
 | **Scope**       | Local                                               |
 | **Opposition**  | [[serin-haut]] and the [[dravosi-crown]]             |
 | **Reward**      | The crate's contents and whatever they establish.   |
@@ -95,7 +95,7 @@ Serin Haut is a [[dravosi-crown]] spy working in Calveno as a Tessarine trader. 
 
 | Lead                                                        | Points toward       | Found? | State     |
 | ----------------------------------------------------------- | ------------------- | ------ | --------- |
-| Ask for Marrow through the Warren's learned routes.         | [[marrows|Marrow's]] | No     | Available |
+| Ask for Marrow through the Warren's learned routes.         | [[marrows\|Marrow's]] | No     | Available |
 | Observe the Marrows canal and identify the watcher.          | [[serin-haut]]      | No     | Available |
 | Examine the Vretek/Brol letter, silver, or signet ring.     | The crate's origin  | No     | Available |
 
@@ -111,8 +111,8 @@ Serin Haut is a [[dravosi-crown]] spy working in Calveno as a Tessarine trader. 
 
 | Place                                      | Why it matters now                                      |
 | ------------------------------------------ | ------------------------------------------------------- |
-| [[marrows|Marrow's]]                       | The crate is currently on Marrow's shelf here.          |
-| [[warren|The Warren]]                      | The settlement's learned routes control access to Marrow. |
+| [[marrows\|Marrow's]]                       | The crate is currently on Marrow's shelf here.          |
+| [[warren\|The Warren]]                      | The settlement's learned routes control access to Marrow. |
 | Marrows canal                              | Serin watches this area for a claimant.                 |
 
 ## Useful things

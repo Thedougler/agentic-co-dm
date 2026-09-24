@@ -131,7 +131,7 @@ Nona protects people through a network whose survival requires transactional pre
 | [[rattkin-runs-and-black-jaw-run]] | Family network Nona keeps alive through coded trust, couriers, and ships. |
 | [[the-black-jaw-run]] | The Calveno family Run she anchors at the Warren. |
 | [[perrin-black-jaw]] | Grandson and favor-debtor. He is part of the crew that arrived at Aruhe after the raid. |
-| [[madam-hino|Madam Hino]] | One of the only people said to know Hino's true appearance; Nona is sworn to keep that secret. |
+| [[madam-hino\|Madam Hino]] | One of the only people said to know Hino's true appearance; Nona is sworn to keep that secret. |
 | [[Enzo]] · [[Ruk]] | Visible boundary of the safehouse. Ruk has guarded Passage witnesses for Nona. |
 | [[delmar-fisk]] | Captain-facing talent. Ask him to choose which passage is safe. |
 | [[crissdalynn-khinriss]] | Map-reading asset. Invite her to compare Aruhe and Maw routes. |

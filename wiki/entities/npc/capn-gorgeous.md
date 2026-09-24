@@ -31,7 +31,7 @@ tier: supporting
 |              |                                                             |
 | ------------ | ----------------------------------------------------------- |
 | **Species**  | [[Human]] (Dravosi)                                              |
-| **Role**     | Enforcer for [[Uncertainty|HCS Surety]], hold inspection detail                |
+| **Role**     | Enforcer for [[Uncertainty\|HCS Surety]], hold inspection detail                |
 | **Status**   | Deceased, Session 01 (Boarding of [[the Saltwright]])             |
 | **Relation** | Rupert Knighton's son                                         |
 

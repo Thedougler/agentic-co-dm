@@ -72,7 +72,7 @@ flexGrow=1
 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
-| [[master-miki-trox|Master Miki Trox]] | Leader | Preserve the trials | Leads the order |
+| [[master-miki-trox\|Master Miki Trox]] | Leader | Preserve the trials | Leads the order |
 
 ### Chain of Action
 

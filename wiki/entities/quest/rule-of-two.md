@@ -42,8 +42,8 @@ last_advanced: "Unknown"
 
 |                 |                                                                 |
 | --------------- | --------------------------------------------------------------- |
-| **Opposition**  | [[talon-skarn|Talon Skarn]] and [[talon-vantyrus|Talon Vantyrus]]. |
-| **Target**      | [[crissdalynn-khinriss|Crissdalynn Khinriss]], a Fate Spinner carrier. |
+| **Opposition**  | [[talon-skarn\|Talon Skarn]] and [[talon-vantyrus\|Talon Vantyrus]]. |
+| **Target**      | [[crissdalynn-khinriss\|Crissdalynn Khinriss]], a Fate Spinner carrier. |
 | **Faction**     | [[Countless]], a breakaway Sentinel order.                      |
 | **Scope**       | Midchain routes, grey markets, and Sentinel waystations.        |
 | **Reward**      | No reward is promised; leverage over Countless's route network is possible. |
@@ -74,7 +74,7 @@ Vantyrus leads Countless through covert routes, hired blades, paid contacts, and
 
 |                  |                                                                 |
 | ---------------- | --------------------------------------------------------------- |
-| **Driver**       | The contest between [[talon-skarn|Skarn]] and [[talon-vantyrus|Vantyrus]]. |
+| **Driver**       | The contest between [[talon-skarn\|Skarn]] and [[talon-vantyrus\|Vantyrus]]. |
 | **Wants**        | Skarn wants to overthrow Vantyrus; Vantyrus wants control and the Fate Spinner's transformation gift. |
 | **Current move** | Skarn schemes openly while Vantyrus treats the attempt as a standing threat; Countless continues the carrier hunt. |
 | **Next move**    | Countless sweeps pilgrim routes, grey markets, and Sentinel waystations through one-job contacts. |
@@ -94,16 +94,16 @@ Vantyrus leads Countless through covert routes, hired blades, paid contacts, and
 | Lead | Points toward | Found? | State |
 | ---- | ------------- | ------ | ----- |
 | Follow the missing names and blank ledgers left by one-job contacts. | [[Countless]] | No | Available |
-| Track the hunt for the Fate Spinner carrier. | [[crissdalynn-khinriss|Crissdalynn]] | Yes | Active |
-| Approach one Talon through the apprentice-master contest. | [[talon-skarn|Skarn]] or [[talon-vantyrus|Vantyrus]] | No | Available; the choice changes who gains leverage |
+| Track the hunt for the Fate Spinner carrier. | [[crissdalynn-khinriss\|Crissdalynn]] | Yes | Active |
+| Approach one Talon through the apprentice-master contest. | [[talon-skarn\|Skarn]] or [[talon-vantyrus\|Vantyrus]] | No | Available; the choice changes who gains leverage |
 
 ## People & factions
 
 | Entity | Role in the quest | Wants / pressure |
 | ------ | ----------------- | ---------------- |
-| [[talon-vantyrus|Talon Vantyrus]] | Leader of Countless and Skarn's target. | Wants survival, control, and the Fate Spinner's transformation gift. |
-| [[talon-skarn|Talon Skarn]] | Apprentice and challenger. | Wants to overthrow Vantyrus and take the order's power. |
-| [[crissdalynn-khinriss|Crissdalynn Khinriss]] | Fate Spinner carrier in the crossfire. | Must avoid becoming Countless's leverage. |
+| [[talon-vantyrus\|Talon Vantyrus]] | Leader of Countless and Skarn's target. | Wants survival, control, and the Fate Spinner's transformation gift. |
+| [[talon-skarn\|Talon Skarn]] | Apprentice and challenger. | Wants to overthrow Vantyrus and take the order's power. |
+| [[crissdalynn-khinriss\|Crissdalynn Khinriss]] | Fate Spinner carrier in the crossfire. | Must avoid becoming Countless's leverage. |
 | [[Countless]] | Breakaway Sentinel order. | Wants Fate Spinner carriers while keeping its chain hidden. |
 
 ## Relevant places
@@ -118,7 +118,7 @@ Vantyrus leads Countless through covert routes, hired blades, paid contacts, and
 
 | Entity | Use in play |
 | ------ | ----------- |
-| [[fate-spinner|Fate Spinner]] | Identifies the gift Countless wants and explains why Crissdalynn is targeted. |
+| [[fate-spinner\|Fate Spinner]] | Identifies the gift Countless wants and explains why Crissdalynn is targeted. |
 | Missing names and blank ledgers | Show where Countless's one-job network has acted without exposing its patron. |
 | [[Uncertainty]] | Its arrival in Midchain waters changes which Sentinel visitors Countless tracks. |
 

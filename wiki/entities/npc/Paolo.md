@@ -78,7 +78,7 @@ Paolo talks brightly through embarrassment and avoids letting a capsize define h
 | Connection | Meaning |
 | --- | --- |
 | [[calven-and-calveno]] | Paolo works its canals as a gondolier. |
-| [[crissdalynn-khinriss|Crissdalynn]] | Grabbed Paolo after the capsize and recovered his dropped belongings. |
-| [[perrin-black-jaw|Perrin]] | Jumped in and righted the gondola. |
-| [[delmar-fisk|Delmar]] | Threw Paolo a line. |
+| [[crissdalynn-khinriss\|Crissdalynn]] | Grabbed Paolo after the capsize and recovered his dropped belongings. |
+| [[perrin-black-jaw\|Perrin]] | Jumped in and righted the gondola. |
+| [[delmar-fisk\|Delmar]] | Threw Paolo a line. |
 | [[Mercatura]] | The canal-wall accident occurred nearby. |

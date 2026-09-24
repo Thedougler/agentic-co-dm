@@ -74,6 +74,6 @@ Madam Hino speaks in brief, formal commands and avoids discussing her true appea
 
 | Connection | Meaning |
 | --- | --- |
-| [[ryu-no-kage|Ryu no Kage]] | Madam Hino leads the shadow organization. |
-| [[biggu-baito|Biggu Baito]] | Head general and one of the only people said to know her appearance. |
-| [[nona-black-jaw|Nona Black-Jaw]] | One of the only people said to know Hino's appearance; sworn to secrecy. |
+| [[ryu-no-kage\|Ryu no Kage]] | Madam Hino leads the shadow organization. |
+| [[biggu-baito\|Biggu Baito]] | Head general and one of the only people said to know her appearance. |
+| [[nona-black-jaw\|Nona Black-Jaw]] | One of the only people said to know Hino's appearance; sworn to secrecy. |

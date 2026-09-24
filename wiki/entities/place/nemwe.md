@@ -46,8 +46,8 @@ The [[dravosi-crown|Dravosi Crown]] raised Nemwe's watchtower and abandoned it w
 | Field | Detail |
 |---|---|
 | Type | Abandoned watchtower island |
-| Region | [[midchain-north|The Northern Midchain]] |
-| Controlled By | Unclaimed (former [[dravosi-crown|Dravosi Crown]] outpost) |
+| Region | [[midchain-north\|The Northern Midchain]] |
+| Controlled By | Unclaimed (former [[dravosi-crown\|Dravosi Crown]] outpost) |
 | Known For | A working signal-fire nobody has dismantled |
 
 ## Where

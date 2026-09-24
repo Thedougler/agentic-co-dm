@@ -71,7 +71,7 @@ The clan patrols the island's northeast and northwest. It shares kinship with th
 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
-| [[mizobasho-red-tail|Mizobasho Red Tail]] | Leader | Protect the northern marshes | Leads the clan |
+| [[mizobasho-red-tail\|Mizobasho Red Tail]] | Leader | Protect the northern marshes | Leads the clan |
 
 ### Chain of Action
 

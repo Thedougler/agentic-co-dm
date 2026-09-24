@@ -94,6 +94,6 @@ Purple-caste enforcers are drawn from the warrior line of [[Grung]] caste societ
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
-| Stay outside 10 feet | No target has closed within Binding Tongue's range yet | The enforcer has to close on foot first, losing the turn it would've spent setting Vashu up | [[vashu-the-weeping-veil|Vashu, the Weeping Veil]] |
+| Stay outside 10 feet | No target has closed within Binding Tongue's range yet | The enforcer has to close on foot first, losing the turn it would've spent setting Vashu up | [[vashu-the-weeping-veil\|Vashu, the Weeping Veil]] |
 | Break the grapple immediately | Binding Tongue has landed and the enforcer is maintaining it | The enforcer can't use Binding Tongue again until it lets go, and Vashu loses the opening it was feeding her Pressure Point | [[Calveno Sewer Magazines]] |
-| Isolate it from Vashu | Vashu is no longer within 5 feet of the same target | Pack Tactics drops out and the enforcer fights alone at a flat +4 with no advantage | [[grung-clans|Grung Clans]] |
+| Isolate it from Vashu | Vashu is no longer within 5 feet of the same target | Pack Tactics drops out and the enforcer fights alone at a flat +4 with no advantage | [[grung-clans\|Grung Clans]] |

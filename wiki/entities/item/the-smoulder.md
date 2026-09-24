@@ -43,7 +43,7 @@ The batch [[Studio Orsini]] packed at double density by a jammed press, which no
 | One thing | Dropped or thrown, it fills a 15-foot radius with heavy smoke for 10 minutes, and wind does not move it. |
 | Rarity justification | Above a Common Spell Scroll of Fog Cloud, which needs the spell on a caster's list and a caster's concentration to hold; level with Dust of Disappearance (Uncommon, single use, a guaranteed area effect, no attunement). Anyone can drop this one, and nothing the party is concentrating on pays for it. |
 | Attunement reason | None. Single use, one power, no bonus to attack rolls, damage rolls, saving throws, or AC. |
-| PC connection | Both of the crew's casters hold concentration with no protection on it, so the last thing they can spend on breaking line of sight is a spell. [[crissdalynn-khinriss|Crissdalynn]] and [[delmar-fisk|Delmar]] also want the wall between a lost first round and the door. |
+| PC connection | Both of the crew's casters hold concentration with no protection on it, so the last thing they can spend on breaking line of sight is a spell. [[crissdalynn-khinriss\|Crissdalynn]] and [[delmar-fisk\|Delmar]] also want the wall between a lost first round and the door. |
 | Current holder | Board stock at [[La Gatta]], sold at 60 gp under the Seconds discount, and Nicco cheerfully tells buyers it does not smoke. |
 | Narrative hook | The bottom tier watches every deal, and this is the only thing on the board that ends being watched. Nicco knows exactly who has bought one. |
 

@@ -69,9 +69,9 @@ The evidence supports Tyr as an active patron or deity in the campaign's religio
 
 | Knower | Knowledge | Certainty | Basis |
 | ------ | -------- | --------- | ----- |
-| [[aleksander-malone|Aleksander Malone]] | Knows Tyr as the patron whose confirmed heresy calls him from Blackrule. | knows | Training and service at Blackrule |
-| [[corvin-ashe|Corvin Ashe]] | Knows Tyr as his patron but can no longer hear Tyr's warnings. | knows | His own lost connection at Sorrowbell |
-| [[dravosi-crown|Dravosi Crown]] | Treats Tyr as the religious authority behind heresy enforcement. | suspects | Institutional practice and Crown assignments |
+| [[aleksander-malone\|Aleksander Malone]] | Knows Tyr as the patron whose confirmed heresy calls him from Blackrule. | knows | Training and service at Blackrule |
+| [[corvin-ashe\|Corvin Ashe]] | Knows Tyr as his patron but can no longer hear Tyr's warnings. | knows | His own lost connection at Sorrowbell |
+| [[dravosi-crown\|Dravosi Crown]] | Treats Tyr as the religious authority behind heresy enforcement. | suspects | Institutional practice and Crown assignments |
 
 ### Party Knowledge
 
@@ -87,8 +87,8 @@ The evidence supports Tyr as an active patron or deity in the campaign's religio
 
 | Account | Held by | Relation to truth | Why they believe it |
 | ------- | ------- | ----------------- | -------------------- |
-| Tyr's confirmed heresy calls the Hound to act. | [[dravosi-crown|Dravosi Crown]] | partial | Crown doctrine and Malone's training |
-| Tyr protects a bishop who speaks for the faith. | [[corvin-ashe|Corvin Ashe]] | false or outdated | Ashe's office and his lost warnings |
+| Tyr's confirmed heresy calls the Hound to act. | [[dravosi-crown\|Dravosi Crown]] | partial | Crown doctrine and Malone's training |
+| Tyr protects a bishop who speaks for the faith. | [[corvin-ashe\|Corvin Ashe]] | false or outdated | Ashe's office and his lost warnings |
 
 ### Common telling
 

@@ -74,7 +74,7 @@ The established record does not make every detail of the capture, escape, or bur
 | Knower | Knowledge | Certainty | Basis |
 | --- | --- | --- | --- |
 | [[Hinewai]] | The crime's aftermath and the grief-bound law it produced | knows | Personal and inherited memory |
-| [[grung-clans|Grung clans]] | Their historical connection to the capture and its consequences | knows / disputes | Clan history; exact accounts are not recorded |
+| [[grung-clans\|Grung clans]] | Their historical connection to the capture and its consequences | knows / disputes | Clan history; exact accounts are not recorded |
 | [[the-unnamed-companion]] | The companion's role in the escape | deceased / historical record | The established account of the escape |
 
 ### Party Knowledge

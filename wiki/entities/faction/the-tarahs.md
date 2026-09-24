@@ -95,8 +95,8 @@ flexGrow=1
 
 | Asset | Type | Location | What it enables | Condition |
 | --- | --- | --- | --- | --- |
-| Operating ships | Force / Access | Near [[calveno|Calveno]] | Movement, arrival, and possible Rattkin-taking | Active; names and number unknown |
-| Reputation for taking [[rattkin|Rattkin]] | Influence / Information | Calveno-area port talk | Makes the faction a credible suspect | Active but unverified in detail |
+| Operating ships | Force / Access | Near [[calveno\|Calveno]] | Movement, arrival, and possible Rattkin-taking | Active; names and number unknown |
+| Reputation for taking [[rattkin\|Rattkin]] | Influence / Information | Calveno-area port talk | Makes the faction a credible suspect | Active but unverified in detail |
 
 ## People & Structure
 
@@ -116,16 +116,16 @@ No named Tarahs member is confirmed. The faction's internal structure and chain 
 
 | Place | Presence | What they control or need here | Current pressure |
 | --- | --- | --- | --- |
-| [[calveno|Calveno]] | Temporary / Contested | Ship arrivals and the local reputation that makes them a suspect | Port politics and Black-Jaw Run response are undefined |
-| [[the-black-jaw-run|Black-Jaw Run]] routes | Contested | Their ships may intersect the Run's movements | Rattkin-taking reputation can provoke attacks |
+| [[calveno\|Calveno]] | Temporary / Contested | Ship arrivals and the local reputation that makes them a suspect | Port politics and Black-Jaw Run response are undefined |
+| [[the-black-jaw-run\|Black-Jaw Run]] routes | Contested | Their ships may intersect the Run's movements | Rattkin-taking reputation can provoke attacks |
 
 ## Connections
 
 | Faction / person | Stance | What The Tarahs wants from them | Leverage, debt, or friction |
 | --- | --- | --- | --- |
-| [[the-black-jaw-run|Black-Jaw Run]] | Rival / Unknown | Not established | The Run treats them as a possible Rattkin-taking threat |
-| [[nona-black-jaw|Nona Black-Jaw]] | Distrusted | Not established | She assumed they had taken Perrin and called off attacks once that proved false |
-| [[rattkin|Rattkin]] | Hostile / Unknown | Not established | The faction is known for taking them |
+| [[the-black-jaw-run\|Black-Jaw Run]] | Rival / Unknown | Not established | The Run treats them as a possible Rattkin-taking threat |
+| [[nona-black-jaw\|Nona Black-Jaw]] | Distrusted | Not established | She assumed they had taken Perrin and called off attacks once that proved false |
+| [[rattkin\|Rattkin]] | Hostile / Unknown | Not established | The faction is known for taking them |
 
 ### Party
 

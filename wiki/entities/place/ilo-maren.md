@@ -45,7 +45,7 @@ Ilo Maren's free-diving culture harvests bioluminescent kelp beds found almost n
 | Field | Detail |
 |---|---|
 | Type | Free-diving harvest island |
-| Region | [[midchain-north|The Northern Midchain]] |
+| Region | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | A matriarchal diving culture |
 | Known For | A bioluminescent-kelp harvest festival that lights the whole bay |
 

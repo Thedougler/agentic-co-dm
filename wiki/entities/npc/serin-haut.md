@@ -84,4 +84,4 @@ She becomes evasive when anyone connects her to courier Dren's death, the watche
 | [[calven-and-calveno]] | Place where she works undercover. |
 | [[Marrows]] | Canal she watches while waiting for the crate claimant. |
 | Ferrin Locke | His signed deal is in her strongbox; no live owner page is established. |
-| [[warren-marrows-crate|Warren (Marrow's Crate)]] | Her current mission and the crate she watches. |
+| [[warren-marrows-crate\|Warren (Marrow's Crate)]] | Her current mission and the crate she watches. |

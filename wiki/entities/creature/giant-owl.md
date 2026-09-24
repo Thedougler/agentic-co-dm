@@ -84,5 +84,5 @@ The owl hunts the forested highlands of the Crown Islands and the volcanic slope
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
-| Approach or rob its nest | A clutch of eggs or a fledgling is present | The parent dives in total silence and rakes with its talons before the first warning cry lands | [[high-eyrie|The High Eyrie]] |
+| Approach or rob its nest | A clutch of eggs or a fledgling is present | The parent dives in total silence and rakes with its talons before the first warning cry lands | [[high-eyrie\|The High Eyrie]] |
 | Track what it's watching | It's fixed, unmoving, on one spot for several minutes | Something is there worth a look — the owl's stare is a free clue, if a PC thinks to read it | [[sentinels-of-the-eyrie]] |

@@ -77,4 +77,4 @@ She becomes immovable when someone disputes a ruling, tries to bypass entry, or 
 | ---------- | ------- |
 | [[The Mud Pits]] | The fighting pit she has run for fifteen years; she controls entry, matchups, betting runners, and bout endings. |
 | [[Kalowe]] | Her home island and the setting for the pit. |
-| [[the-kessen|The Kessen]] | The pit is connected through Vort Kessen's retirement there, but is not part of that league. |
+| [[the-kessen\|The Kessen]] | The pit is connected through Vort Kessen's retirement there, but is not part of that league. |

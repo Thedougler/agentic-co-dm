@@ -85,9 +85,9 @@ The full voice, doctrine, and sample lines live on [[talon-vantyrus]].
 
 | Connection | Meaning |
 | --- | --- |
-| [[countless]] | Osset leads the faction under the name [[talon-vantyrus|Talon Vantyrus]]. |
+| [[countless]] | Osset leads the faction under the name [[talon-vantyrus\|Talon Vantyrus]]. |
 | [[sentinels-of-the-eyrie]] | Former member; he left during the schism and was once a master among them. |
 | [[crissdalynn-khinriss]] | Sentinel whose Long Sight Osset is quietly reading for the Countless; she has not heard his original name from the Eyrie. |
-| [[master-kyzil|Master Kyzil]] | His most gifted student at the High Eyrie. Osset asked him to leave the Sentinels with him; Kyzil refused and believes his old master died decades ago. |
+| [[master-kyzil\|Master Kyzil]] | His most gifted student at the High Eyrie. Osset asked him to leave the Sentinels with him; Kyzil refused and believes his old master died decades ago. |
 | [[lavinia-sordi]] | Osset sold her the cursed Cloak of Displacement while using the Osset name. |
 | [[delmar-fisk]] | Found Osset's name on a scrap at the Cabinet of Morsani in Session 08. |

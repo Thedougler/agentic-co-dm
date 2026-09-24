@@ -35,7 +35,7 @@ tier: supporting
 |               |                                                                |
 | ------------- | -------------------------------------------------------------- |
 | **Species**   | [[Human]]                                                           |
-| **Post**      | Formerly [[Uncertainty|HCS Surety]], under [[barnaby-rook]] |
+| **Post**      | Formerly [[Uncertainty\|HCS Surety]], under [[barnaby-rook]] |
 | **Rank**      | Rated Bosun                                                     |
 | **Crew Role** | Bosun / Rigger                                                  |
 | **Wage**      | 8 gp/week (bosun rate)                                          |

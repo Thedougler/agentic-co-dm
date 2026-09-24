@@ -66,14 +66,14 @@ The family shares the capital with its loyal shadow organization, the [[ryu-no-k
 | Asset | Type | Location | What it enables | Condition |
 | --- | --- | --- | --- | --- |
 | Harbor and rice wealth | Wealth | [[Zennitana]] | Royal authority and trade | Active |
-| [[ryu-no-kage|Ryu no Kage]] | Force | [[Zennitana]] | Covert protection | Loyal |
+| [[ryu-no-kage\|Ryu no Kage]] | Force | [[Zennitana]] | Covert protection | Loyal |
 
 ## People & Structure
 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
-| [[kinryu-omusubi|Kinryu Omusubi]] | Leader | Maintain royal authority | Leads the family |
-| [[ryu-no-kage|Ryu no Kage]] | Shadow organization | Protect the family | Loyal but covert |
+| [[kinryu-omusubi\|Kinryu Omusubi]] | Leader | Maintain royal authority | Leads the family |
+| [[ryu-no-kage\|Ryu no Kage]] | Shadow organization | Protect the family | Loyal but covert |
 
 ### Chain of Action
 

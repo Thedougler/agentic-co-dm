@@ -66,8 +66,8 @@ The Sentinels teach [[long-reach]] as a martial technique to every apprentice, b
 | --- | --- | --- | --- |
 | [[sentinels-of-the-eyrie]] | Long Sight is rarer than Long Reach and withheld from most members. | knows | Taught and guarded within the order. |
 | [[master-kyzil]] | He is a senior Sentinel with access to the order's guarded traditions; the exact extent of his Long Sight knowledge is not recorded. | knows / unknown extent | Position within the order; no specific disclosure is recorded. |
-| [[crissdalynn-khinriss|Crissdalynn]] | She is the current known carrier or subject associated with Long Sight. | knows / unknown extent | Her established connection to the technique and her Sentinel pilgrimage. |
-| [[Osset|Osset / Talon Vantyrus]] | He is trying to read Crissdalynn's Long Sight for Countless. | knows the objective; unknown method | [[Osset]]'s current objective and the active [[long-sight-hunt]]. |
+| [[crissdalynn-khinriss\|Crissdalynn]] | She is the current known carrier or subject associated with Long Sight. | knows / unknown extent | Her established connection to the technique and her Sentinel pilgrimage. |
+| [[Osset\|Osset / Talon Vantyrus]] | He is trying to read Crissdalynn's Long Sight for Countless. | knows the objective; unknown method | [[Osset]]'s current objective and the active [[long-sight-hunt]]. |
 | [[Countless]] | The order is pursuing the information or gift it believes Long Sight can expose. | knows the objective; incomplete chain | One-job contacts, route pressure, and the active hunt. |
 
 ### Party Knowledge
@@ -85,7 +85,7 @@ The Sentinels teach [[long-reach]] as a martial technique to every apprentice, b
 | Account | Held by | Relation to truth | Why they believe it |
 | --- | --- | --- | --- |
 | Long Sight is a rare Sentinel discipline guarded from most of the order. | [[sentinels-of-the-eyrie]] | partial | It is part of the order's restricted tradition. |
-| Long Sight can expose the gift Countless seeks. | [[Countless]] and [[talon-vantyrus|Talon Vantyrus]] | unknown / possibly partial | Their pursuit of Crissdalynn and the Fate Spinner. |
+| Long Sight can expose the gift Countless seeks. | [[Countless]] and [[talon-vantyrus\|Talon Vantyrus]] | unknown / possibly partial | Their pursuit of Crissdalynn and the Fate Spinner. |
 
 ### Common telling
 
@@ -139,9 +139,9 @@ The characters can learn that Long Sight is a restricted Sentinel technique whos
 | [[long-reach]] | Common Sentinel martial technique contrasted with Long Sight's rarity. | Shows what ordinary Sentinel training does and does not reveal. |
 | [[sentinels-of-the-eyrie]] | Order that guards and teaches the technique. | Provides witnesses, restrictions, and access pressure. |
 | [[high-eyrie]] | Sentinel stronghold where restricted traditions and founding records are held. | Gives the party a concrete place to investigate the technique. |
-| [[crissdalynn-khinriss|Crissdalynn]] | Current known carrier or subject. | Makes the lore a live protection problem rather than an abstract secret. |
+| [[crissdalynn-khinriss\|Crissdalynn]] | Current known carrier or subject. | Makes the lore a live protection problem rather than an abstract secret. |
 | [[long-sight-hunt]] | Active pursuit built around the technique and its supposed value. | Supplies route pressure, agents, and consequences. |
-| [[soul-incarnate|Soul Incarnate]] | Transformation technique whose associated gift Countless wants. | Defines the danger behind Countless's interest without defining Long Sight's mechanics. |
+| [[soul-incarnate\|Soul Incarnate]] | Transformation technique whose associated gift Countless wants. | Defines the danger behind Countless's interest without defining Long Sight's mechanics. |
 
 ## Open Canon
 

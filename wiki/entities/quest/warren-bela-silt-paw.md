@@ -43,7 +43,7 @@ tier: supporting
 | **Quest giver** | No quest giver is established.              |
 | **Region**      | [[Warren]] beneath Calveno's Le Paludi.     |
 | **Scope**       | Local                                      |
-| **Opposition**  | A [[water-weird|Water Weird]] holds Bela.   |
+| **Opposition**  | A [[water-weird\|Water Weird]] holds Bela.   |
 | **Reward**      | Bela's gratitude, plus access to the cache if it remains recoverable. |
 | **Last change** | Bela remains trapped while the source clock continues. |
 
@@ -72,7 +72,7 @@ Bela is alive but exhausted in the flooded sub-chamber. The Water Weird holds he
 
 |                  |                                                   |
 | ---------------- | ------------------------------------------------- |
-| **Driver**       | [[water-weird|Water Weird]]                       |
+| **Driver**       | [[water-weird\|Water Weird]]                       |
 | **Wants**        | Its motive is not established; it currently holds the flooded chamber. |
 | **Current move** | It keeps Bela in the flooded sub-chamber.         |
 | **Next move**    | No next move is established beyond continuing to hold the chamber. |
@@ -93,14 +93,14 @@ Bela is alive but exhausted in the flooded sub-chamber. The Water Weird holds he
 | ---- | ------------- | ------ | ----- |
 | Ask Warren elders or [[Passage]] guides about the flooded sub-chamber. | [[Warren]] | No | Available |
 | Follow wet footprints, route marks, or other traces through the Warren. | [[Warren]] | No | Available |
-| Prepare for the water with the chamber's potions of water breathing if they can be reached. | [[water-weird|Water Weird]] | No | Available |
+| Prepare for the water with the chamber's potions of water breathing if they can be reached. | [[water-weird\|Water Weird]] | No | Available |
 
 ## People & factions
 
 | Entity | Role in the quest | Wants / pressure |
 | ------ | ----------------- | ---------------- |
-| [[bela-silt-paw|Bela Silt-Paw]] | Trapped scout and rescue subject. | Survive the flooded chamber and return to the Warren. |
-| [[water-weird|Water Weird]] | Active obstacle holding the chamber. | Its motive is not established. |
+| [[bela-silt-paw\|Bela Silt-Paw]] | Trapped scout and rescue subject. | Survive the flooded chamber and return to the Warren. |
+| [[water-weird\|Water Weird]] | Active obstacle holding the chamber. | Its motive is not established. |
 | [[Passage]] | Warren route network and possible source of guidance. | Protect its routes and communities under pressure. |
 
 ## Relevant places

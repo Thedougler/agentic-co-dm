@@ -74,6 +74,6 @@ He becomes guarded when anyone pressures him to trust an untested object, route,
 | Connection | Meaning |
 | --- | --- |
 | [[Nino]] | Swam ashore with Sandro onto [[Aruhe]]; Sandro has not told her what happened to Tomo. |
-| [[nona-black-jaw]] | Chasing the raid that took Sandro captive with roughly five hundred other [[calven-and-calveno]] during [[il-gioco-delle-beffe|La Finestra]]. |
+| [[nona-black-jaw]] | Chasing the raid that took Sandro captive with roughly five hundred other [[calven-and-calveno]] during [[il-gioco-delle-beffe\|La Finestra]]. |
 | [[Grung]] | His captors on the raid; two were already dead on the beach after the wreck, and Sandro has not told Nino what killed them. |
 | [[Vethka]] | Wrecked fleet ship where Sandro and Nino shelter after it sailed for [[Karath]] and was wrecked on Aruhe. |

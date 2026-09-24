@@ -56,7 +56,7 @@ The monks and villagers are generally kind-spoken and friendly despite the harsh
 
 | Knower | Knowledge | Certainty | Basis |
 | --- | --- | --- | --- |
-| [[yuki-no-kibo|Yuki no Kibo]] | Semuanya values survival, breeding, and hunting above abstract morality. | knows | Taught doctrine |
+| [[yuki-no-kibo\|Yuki no Kibo]] | Semuanya values survival, breeding, and hunting above abstract morality. | knows | Taught doctrine |
 | Mountain villagers | The order's survival practice and the albino-scale tradition. | suspects | Community practice |
 
 ### Party Knowledge
@@ -76,7 +76,7 @@ The monks and villagers are generally kind-spoken and friendly despite the harsh
 | Account | Held by | Relation to truth | Why they believe it |
 | --- | --- | --- | --- |
 | The winds of Semuanya cause albino scales. | Mountain residents | unknown | Local tradition and observation |
-| Survival is Semuanya's clearest will. | [[yuki-no-kibo|Yuki no Kibo]] | partial | Taught doctrine |
+| Survival is Semuanya's clearest will. | [[yuki-no-kibo\|Yuki no Kibo]] | partial | Taught doctrine |
 
 ### Common telling
 
@@ -136,7 +136,7 @@ The characters can learn that the Yuki no Kibo's harsh trials are religious prac
 
 | Page | Relationship | Table relevance |
 | --- | --- | --- |
-| [[yuki-no-kibo|Yuki no Kibo]] | Worships and interprets Semuanya. | Holds the living practice of this doctrine. |
+| [[yuki-no-kibo\|Yuki no Kibo]] | Worships and interprets Semuanya. | Holds the living practice of this doctrine. |
 | [[Shōrin Hakushin-ji]] | Mountain temple where the doctrine is practiced. | Makes survival theology physically testable. |
 | [[Totemo Tokage]] | Island where this account is located. | Bounds the claim's scope. |
 

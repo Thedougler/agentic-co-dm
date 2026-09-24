@@ -47,9 +47,9 @@ summary: "Front in which Kyzil mistakes Osset, Vantyrus's original name, for a t
 |                 |                                                                 |
 | --------------- | --------------------------------------------------------------- |
 | **Quest giver** | [[sentinels-of-the-eyrie]] |
-| **Region**      | [[high-eyrie|High Eyrie]] |
+| **Region**      | [[high-eyrie\|High Eyrie]] |
 | **Scope**       | Regional |
-| **Opposition**  | [[master-kyzil]] and [[Talon Vantyrus]]'s [[Countless|Countless]] |
+| **Opposition**  | [[master-kyzil]] and [[Talon Vantyrus]]'s [[Countless\|Countless]] |
 | **Reward**      | Information, leverage, or alliance position gained through resolving the identity question; no formal reward is established. |
 | **Last change** | The front was recorded as active pressure on 2026-09-18. |
 
@@ -106,7 +106,7 @@ Osset is Vantyrus's original name, not a confirmed third actor. [[master-kyzil]]
 | Entity | Role in the quest | Wants / pressure |
 | ------ | ----------------- | ---------------- |
 | [[master-kyzil]] | Source of the mistaken third-actor reading. | Treats Osset as a third actor; deeper motive Unknown. |
-| [[Talon Vantyrus]] | Person whose original name is Osset. | Leads [[Countless|the Countless]] under that alias. |
+| [[Talon Vantyrus]] | Person whose original name is Osset. | Leads [[Countless\|the Countless]] under that alias. |
 | [[sentinels-of-the-eyrie]] | Faction whose response is distorted by the naming mistake. | Preserve its account and respond to the pressure. |
 
 ## Relevant places

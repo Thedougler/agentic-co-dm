@@ -41,7 +41,7 @@ _Wondrous Item, Uncommon._
 | One thing | Nothing reaches a sleeping camp or a moored ship unannounced. |
 | Rarity justification | Narrower than Rope of Climbing (uncommon, unlimited uses, works anywhere) and than the Alarm spell a ritual caster gets free every night. This works only while the chime sits still, once between long rests, and gives no bonus to any roll. |
 | Attunement reason | No attack, damage, AC, or save modifier, and one power only. The attunement tree has no branch for it. |
-| PC connection | The crew's damage sits almost entirely in [[delmar-fisk|Delmar]] and [[crissdalynn-khinriss|Crissdalynn]]'s melee lanes, so losing a first round costs them more than hit points do. |
+| PC connection | The crew's damage sits almost entirely in [[delmar-fisk\|Delmar]] and [[crissdalynn-khinriss\|Crissdalynn]]'s melee lanes, so losing a first round costs them more than hit points do. |
 | Current holder | [[giacomo-moretti]], on the signal-gear shelf at [[Moretti & Sons Chandlery]]. |
 | Narrative hook | Whoever struck out that name on the rim used the clapper's own wire to do it. |
 
