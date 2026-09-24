@@ -15,7 +15,7 @@ lifecycle: canon
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T04:56:01Z
-updated: 2026-09-12T04:56:01Z
+updated: 2026-09-23T00:00:00Z
 type: recap
 campaign: shattered-sea
 visibility: dm
@@ -31,16 +31,18 @@ relationships:
 Played 2026-05-10. Opening fight of the Shattered Sea.
 
 > [!narration] Recap
-> Last time on the Shattered Sea, you chose the hold of the Saltwright over surrender. Beaumont Sel kept Barnaby Rook at the wheel while the first of the Dravosi Crown boarding party came down the ladder. You dropped the Dravosi Enforcer they called Cap'n Gorgeous, and the black powder left Delmar Fisk and Crissdalynn Khinriss deaf in the blast. Perrin Black-Jaw had covered the doorway in an illusion. Gorgeous and two Dravosi deckhands went through it and did not come back up.
+> Rook's inspection party climbed down into the Saltwright's hold expecting manifests, and found you waiting in the dark between the cargo. Beaumont Sel had the Crown captain's ear up on deck, which bought you the moment you needed. Perrin put a doorway on the bulkhead where no doorway was. The first man through it carried a crossbow into a room too tight to use one, and three of you hit him before he worked out where his door had gone. He made no sound at all, and the men with him shouted the only name they had for him, Cap'n Gorgeous, as he dropped. Two deckhands walked into the same doorway behind him, and the hold kept them. The shot that killed him went off inside a room six feet high, and the report of it rang in Delmar's and Crissdalynn's ears for the rest of the fight.
 >
-> Delmar launched Crissdalynn through the hatch. Her wings opened and knocked the nearest Crown sailors off their feet. Perrin and Jean-Claude Tabarnack came up through a gap in the decking, and both Enforcers died in the crush. The last deckhand let his sword fall. From the gangplank of the HCS Surety, Rook named him a turncoat. Delmar asked whether he would rather fight for men who had threatened to shoot him, or for men who would protect him. Geoffrey Draves said he would do whatever kept him alive today, picked the sword back up, and joined you. He was the whole of your crew.
+> The hold was only half the ship. Delmar threw Crissdalynn up into the daylight, and the fight went up with her. Her wings opened over the deck and put the nearest Crown sailors on the boards. Perrin and Jean-Claude came up behind her through a split in the deck, and the two enforcers waiting up there did not get a second turn.
 >
-> Jean-Claude hit the gangplank with a rush of water and threw Rook overboard. A Dravosi Alchemist released a canister. Jean-Claude and Perrin stayed on their feet in the cloud. Crissdalynn blew it back. Jean-Claude knew that gas for his sister Simone's toxin, and he did not tell you. The Alchemist went down. Rook hauled himself over the Surety's rail, raised his flintlock at Beaumont, and fired. The round struck Beaumont's salvaged shell at the shoulder and spun into the water. Rook was back aboard the Crown cutter, that flintlock already fired at Beaumont, and the gangplank fight was still live.
+> What was left of the boarding party was one young sailor with a carpenter's hands, and he did the arithmetic and laid his cutlass down. Rook called across the water from the Crown cutter's gangplank, "I'll shoot you myself for that, you turncoat." Delmar asked him the only question left in the room, which crew he meant to die for, the one that had just promised to shoot him or the one still on its feet. Geoffrey Draves said he intended to be alive at the end of the day, which was the whole of his politics just then, and he bent and picked the cutlass back up and stood with you. That made him your first recruit, and for the length of that fight your only one.
+>
+> Then Jean-Claude took the plank away from them. He turned the flask loose along the boards, and the water swept Rook off his feet and over the side. The Crown answered with an alchemist, a canister broke across the gap, and the cloud came down the plank at you. Jean-Claude and Perrin stood in the middle of it and stayed up. Crissdalynn caught the cloud in a gust of wind and handed it back, and the alchemist went down at her own rail.
+>
+> Rook came back over the rail soaked to the elbows, and the first thing he did once he was steady was put his flintlock on Beaumont. The ball struck the bright plate patched into Beaumont's shell at the shoulder and went whining away over the water, and Beaumont did not shift his feet. Rook was back on his own deck with one pistol spent, the plank still ran between the two hulls, and the fight on it had decided nothing.
 
 ## Wiki facts
 
-[[geoffrey-draves]] defected and joined the party. [[jean-claude-tabarnack]] recognized Simone's toxin and kept that fact from the table. [[barnaby-rook]] returned to the cutter that would become [[Uncertainty]], flintlock already fired at Beaumont Sel.
+[[geoffrey-draves]] defected and joined the party during the boarding. [[jean-claude-tabarnack]] recognized his sister [[simone-tabarnack|Simone]]'s toxin in the alchemist's canister and kept that fact from the table, and the narration above keeps it out of what the players hear. [[barnaby-rook]] returned to the cutter that would become [[Uncertainty]] with one flintlock spent on [[beaumont-sel|Beaumont Sel]] and a second pistol still loaded.
 
-## Loose threads
-
-Rook is still aboard the Surety. The boarding fight is not finished. See [[Session-02-Recap]] and [[story-so-far]].
+[[barnaby-rook]] is still aboard the [[hcs-surety|Surety]], and the boarding fight is unfinished, which is where [[Session-02-Recap]] starts and where [[story-so-far]] picks the campaign up.
