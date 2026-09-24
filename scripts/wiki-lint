@@ -118,10 +118,11 @@ def structural_main(argv: list[str]) -> int:
         if scope:
             scope.resolve(vault)
         identities = []
+        identity_stats = {"scanned": 0, "compared": 0, "index": {"hits": 0, "misses": 0}}
         started = time.monotonic()
         if scope:
-            from tools.wiki_ops.identity import scan_identities
-            identities = scan_identities(vault, scope=scope)
+            from tools.wiki_ops.identity import scan_identity_report
+            identities, identity_stats = scan_identity_report(vault, scope=scope, persist=True)
         timing["tools/wiki_ops/identity.py"] = int((time.monotonic() - started) * 1000)
         ambiguous_identities = [item.to_dict() for item in identities if item.status == "ambiguous"]
         extra: list[str] = []
@@ -138,7 +139,7 @@ def structural_main(argv: list[str]) -> int:
         else:
             code, report = 0, source
         timing["tools/lint_wiki.py"] = int((time.monotonic() - started) * 1000)
-        report["identity"] = {"status": "ambiguous" if ambiguous_identities else "resolved", "ambiguous": ambiguous_identities, "scanned": len(identities)}
+        report["identity"] = {"status": "ambiguous" if ambiguous_identities else "resolved", "ambiguous": ambiguous_identities, "scanned": identity_stats["scanned"], "compared": identity_stats["compared"], "index": identity_stats["index"]}
         if ambiguous_identities:
             report["identity_ambiguous"] = True
         if args.template:

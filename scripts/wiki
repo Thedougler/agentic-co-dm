@@ -262,6 +262,7 @@ def _compute_lint(
     hard_keys: set[str] = set()
     hits = misses = vale_skipped = 0
     pending: list[str] = []
+    identity: dict[str, Any] | None = None
     for relative in paths:
         cached = lookup_entry(cache, vault, relative, digest)
         if cached is not None:
@@ -278,6 +279,8 @@ def _compute_lint(
         report = _run_structural(vault, pending)
         elapsed = elapsed_ms(started)
         current_findings = _flatten(report, vault)
+        if isinstance(report.get("identity"), dict):
+            identity = report["identity"]
         grouped: dict[str, list[dict[str, Any]]] = {relative: [] for relative in pending}
         for item in current_findings:
             if item["file"] in grouped:
@@ -315,6 +318,10 @@ def _compute_lint(
         page_bytes=page_bytes,
         file_order=paths,
     )
+    # Identity runs only for cache misses; a fully cached lint scans nothing.
+    result["identity"] = identity if identity is not None else {
+        "status": "skipped", "ambiguous": [], "scanned": 0, "compared": 0, "index": {"hits": 0, "misses": 0},
+    }
     ledger = _ledger()
     result["ledger"] = ledger
     # Lint scope describes checker output; operational ledger state is reported

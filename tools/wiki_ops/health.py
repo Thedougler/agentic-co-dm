@@ -897,4 +897,6 @@ def build_health_snapshot(
             "act": [],
         },
     }
+    if isinstance(lint.get("identity"), Mapping):
+        snapshot["identity"] = _clone(lint["identity"])
     return snapshot

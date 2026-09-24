@@ -106,16 +106,28 @@ class VaultFixture(unittest.TestCase):
 FIXTURE = Path(__file__).parent / "fixtures" / "wiki_ops"
 
 def test_cli_contracts_and_environment_discovery():
-    for script in ("scripts/wiki-bulk-ops", "scripts/wiki-lint", "scripts/wiki-identity", "scripts/wiki-reveal"):
+    for script in ("scripts/wiki-bulk-ops", "scripts/wiki-lint", "scripts/wiki-reveal"):
         result = run_cli(script, "--help")
         assert result.returncode == 0
         assert "usage:" in result.stdout
 
-def test_identity_cli_json_and_ambiguous_status():
-    result = run_cli("scripts/wiki-identity", "scan", "--json", vault=FIXTURE)
-    payload = assert_json(result, returncode=2)
-    assert payload["ambiguous"] == 2
-    assert payload["scanned"] == 2
+def test_wiki_lint_identity_block_reports_ambiguous_status(tmp_path: Path):
+    import shutil
+
+    vault = tmp_path / "vault"
+    shutil.copytree(FIXTURE, vault)
+    result = run_cli(
+        "scripts/wiki-lint", "--json", "--no-vale", "--no-template",
+        "--scope", "files:fisks-captains.md,fisks-fleet.md", vault=vault,
+    )
+    assert result.stdout.strip(), result.stderr
+    identity = json.loads(result.stdout)["identity"]
+    assert identity["status"] == "ambiguous"
+    assert len(identity["ambiguous"]) == 2
+    assert identity["scanned"] == 2
+    assert identity["compared"] >= 2
+    assert set(identity["index"]) == {"hits", "misses"}
+    assert (vault / "_meta" / "identity-index.json").is_file()
 
 
 def test_reveal_cli_lists_gate_and_type_from_frontmatter(tmp_path: Path):
@@ -521,9 +533,7 @@ def test_scope_and_cli_pipeline_resolve_typed_surface(tmp_path: Path):
     assert directory.resolved_files == ["entities/guard.md"]
     typed = parse_scope("type:npc").resolve(tmp_path)
     assert typed.resolved_files == ["entities/guard.md"]
-    result = run_cli("wiki-identity", "resolve", "entities/guard.md", vault=tmp_path)
-    payload = assert_json(result)
-    assert payload["status"] == "resolved"
+    assert resolve_identity(tmp_path, "entities/guard.md").status == "resolved"
 
 def _fake_qmd(path: Path, body: str) -> Path:
     script = path / "qmd"
@@ -1012,3 +1022,134 @@ def test_lint_wiki_has_no_lifecycle_or_trust_machinery(tmp_path: Path):
     schema = report.get("schema", {})
     assert "allowed_lifecycles" not in schema
     assert "required_trust_fields" not in schema
+
+
+def _identity_vault(root: Path) -> Path:
+    """Build a small typed vault: one near-duplicate pair plus unrelated pages."""
+    def page(relative: str, title: str, body: str, page_type: str = "npc") -> None:
+        path = root / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(f"---\ntitle: {title}\ntype: {page_type}\n---\n{body}\n", encoding="utf-8")
+
+    shared = "The harbour master keeps a ledger of every hull that enters the strait. " * 4
+    page("entities/npc/harbour-master.md", "Harbour Master", shared)
+    page("entities/npc/harbour-keeper.md", "Harbour Keeper", shared + "She hates fog.")
+    for index, letter in enumerate("qwxzv"):
+        page(f"entities/npc/unrelated-{index}.md", f"Unrelated {index}", letter * (40 + index * 17))
+    page("entities/place/quay.md", "Quay", shared, page_type="place")
+    page("entities/npc/_index.md", "NPC Index", "Index page.")
+    return root
+
+
+def _identity_dicts(vault: Path, **kwargs) -> list[dict]:
+    return [item.to_dict() for item in scan_identities(vault, **kwargs)]
+
+
+def test_identity_index_cold_warm_and_edit_refresh(tmp_path: Path):
+    from tools.wiki_ops.identity import scan_identity_report
+    from tools.wiki_ops.lint_cache import identity_index_path
+
+    vault = _identity_vault(tmp_path / "vault")
+    cold, cold_stats = scan_identity_report(vault, persist=True)
+    assert identity_index_path(vault).is_file()
+    warm, warm_stats = scan_identity_report(vault, persist=True)
+    assert [item.to_dict() for item in warm] == [item.to_dict() for item in cold]  # (a)
+    assert warm_stats["index"] == {"hits": 8, "misses": 0}
+    assert cold_stats["index"]["misses"] == 8
+
+    edited = vault / "entities/npc/unrelated-0.md"  # (b)
+    edited.write_text(edited.read_text(encoding="utf-8") + "More q.\n", encoding="utf-8")
+    after, stats = scan_identity_report(vault, persist=True)
+    assert stats["index"] == {"hits": 7, "misses": 1}
+    fresh = tmp_path / "fresh"
+    import shutil
+    shutil.copytree(vault, fresh)
+    identity_index_path(fresh).unlink()
+    assert [item.to_dict() for item in after] == _identity_dicts(fresh)
+    row = json.loads(identity_index_path(vault).read_text(encoding="utf-8"))["rows"]["entities/npc/unrelated-0.md"]
+    assert row["size"] == edited.stat().st_size and row["mtime_ns"] == edited.stat().st_mtime_ns
+    assert "lifecycle" not in row
+
+
+def test_identity_index_rebuilds_on_corruption_or_version(tmp_path: Path):
+    from tools.wiki_ops.identity import scan_identity_report
+    from tools.wiki_ops.lint_cache import identity_index_path
+
+    vault = _identity_vault(tmp_path)
+    expected = _identity_dicts(vault)
+    scan_identity_report(vault, persist=True)
+    path = identity_index_path(vault)
+    for broken in ("{", json.dumps({**json.loads(path.read_text(encoding="utf-8")), "version": 99})):  # (c)
+        path.write_text(broken, encoding="utf-8")
+        results, stats = scan_identity_report(vault, persist=True)
+        assert [item.to_dict() for item in results] == expected
+        assert stats["index"] == {"hits": 0, "misses": 8}
+        assert json.loads(path.read_text(encoding="utf-8"))["version"] == 1
+
+
+def test_identity_index_drops_deleted_rows_and_prunes_pairs(tmp_path: Path):
+    from tools.wiki_ops.identity import scan_identity_report
+    from tools.wiki_ops.lint_cache import identity_index_path
+
+    vault = _identity_vault(tmp_path)
+    scan_identity_report(vault, persist=True)
+    before = json.loads(identity_index_path(vault).read_text(encoding="utf-8"))
+    gone = before["rows"]["entities/npc/harbour-keeper.md"]["content_sha256"]
+    assert any(gone in key for key in before["pairs"])
+    (vault / "entities/npc/harbour-keeper.md").unlink()  # (d)
+    scan_identity_report(vault, persist=True)
+    after = json.loads(identity_index_path(vault).read_text(encoding="utf-8"))
+    assert "entities/npc/harbour-keeper.md" not in after["rows"]
+    assert not any(gone in key for key in after["pairs"])
+
+
+def test_identity_scoped_run_compares_selected_and_candidates_only(tmp_path: Path):
+    from tools.wiki_ops.identity import scan_identity_report
+
+    vault = _identity_vault(tmp_path)
+    scope = parse_scope("files:entities/npc/harbour-master.md").resolve(vault)
+    results, stats = scan_identity_report(vault, scope=scope)  # (e)
+    assert [item.path for item in results] == ["entities/npc/harbour-master.md"]
+    assert stats["scanned"] == 1
+    assert stats["compared"] == 2 < 8
+
+
+def test_identity_index_resolution_matches_cold_walk(tmp_path: Path):
+    from tools.wiki_ops.identity import _path_for, scan_identity_report
+    from tools.wiki_ops.lint_cache import identity_index_path
+
+    vault = _identity_vault(tmp_path).resolve()
+    cold = {raw: resolve_identity(vault, raw).to_dict() for raw in ("harbour-master", "entities/npc/unrelated-2.md", "_index")}
+    cold_paths = {raw: _path_for(vault, raw) for raw in ("harbour-keeper", "_index", "entities/place/quay.md")}
+    scan_identity_report(vault, persist=True)  # (f)
+    assert identity_index_path(vault).is_file()
+    assert {raw: resolve_identity(vault, raw).to_dict() for raw in cold} == cold
+    assert {raw: _path_for(vault, raw) for raw in cold_paths} == cold_paths
+
+
+def test_rules_digest_change_keeps_identity_index(tmp_path: Path):
+    from tools.wiki_ops import lint_cache
+    from tools.wiki_ops.identity import scan_identity_report
+
+    vault = _identity_vault(tmp_path)
+    cache = lint_cache.load_cache(vault)
+    lint_cache.update_entry(cache, vault, "entities/place/quay.md", "digest-1", {}, {})
+    lint_cache.save_cache(vault, cache)
+    scan_identity_report(vault, persist=True)
+    pairs = json.loads(lint_cache.identity_index_path(vault).read_text(encoding="utf-8"))["pairs"]
+    assert lint_cache.lookup_entry(lint_cache.load_cache(vault), vault, "entities/place/quay.md", "digest-2") is None  # (g)
+    _, stats = scan_identity_report(vault, persist=True)
+    assert stats["index"]["misses"] == 0
+    assert json.loads(lint_cache.identity_index_path(vault).read_text(encoding="utf-8"))["pairs"] == pairs
+
+
+def test_identity_threshold_lists_candidates_without_choosing(tmp_path: Path):
+    vault = _identity_vault(tmp_path)
+    results = {item.path: item for item in scan_identities(vault)}  # (h)
+    master = results["entities/npc/harbour-master.md"]
+    keeper = results["entities/npc/harbour-keeper.md"]
+    assert master.status == keeper.status == "ambiguous"
+    assert [item["path"] for item in master.candidates] == ["entities/npc/harbour-keeper.md"]
+    assert [item["path"] for item in keeper.candidates] == ["entities/npc/harbour-master.md"]
+    assert "canonical_path" not in master.signals and "canonical_path" not in keeper.signals
+    assert all(item.status == "resolved" for path, item in results.items() if "unrelated" in path)
