@@ -28,7 +28,7 @@ relationships:
 ---
 # Session 01 - Recap
 
-Played 2026-05-10. Opening fight of the Shattered Sea.
+Played 2026-05-10. Opening fight of the Shattered Sea. Read [[Session-00-Prologue|the primer]] first if the table is new to the sea.
 
 > [!narration] Intro to the Shattered Sea
 > Rook's inspection party came down into the Saltwright's hold expecting manifests, and found you waiting in the dark between the cargo. Beaumont Sel had the Crown captain talking up on deck, which bought you the moment. Perrin put a doorway on the bulkhead where no doorway was. The first man through it carried a crossbow into a room too tight to use one, and the three of you hit him before he found his door again. He made no sound, and the men with him shouted the only name they had for him, Cap'n Gorgeous, as he went down. The shot that killed him went off in a room six feet high, and Delmar and Crissdalynn heard almost nothing for the rest of the fight.

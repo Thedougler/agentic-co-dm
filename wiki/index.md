@@ -748,6 +748,7 @@
 
 - [[story-so-far]] — Sessions 01–11 from the Saltwright hold to an otter-camp cliffhanger on Aruhe; Season 2's live handle is the Hungry Isle.## Journal
 
+- [[journal/sessions/shattered-sea/00/Session-00-Prologue]] — Player primer: the sea, the powers, the cost of passage, and the four strangers who wash onto the Saltwright.
 - [[journal/sessions/shattered-sea/01/Session-01-Recap]] — The crew chose the Saltwright hold and took Geoffrey Draves.
 - [[journal/sessions/shattered-sea/02/Session-02-Recap]] — They took the HCS Surety and took three hull strikes from below.
 - [[journal/sessions/shattered-sea/03/Session-03-Recap]] — They killed the whip-shark, renamed Uncertainty, and made landfall at Calveno.
