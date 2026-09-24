@@ -33,12 +33,12 @@ File:
 - No `[!secret]` / `[!mechanic]` on this surface
 - No spaces in basename; no `Aruhe` / `00` prefixes
 
-Align with `wiki/AGENTS.md` session-folder + page-filename rules. Load `obsidian-markdown` for formatting and Markdown standards. The `[!narration] Recap` is player-facing: `theatre-of-the-mind` owns its craft (`references/scenes.md` § Session recap). `writing-for-humans` owns the Wiki facts. After any write, run `wiki lint <recap-path>` on the recap; the single agent-facing command reports every checker finding.
+Align with `wiki/AGENTS.md` session-folder + page-filename rules. Load `obsidian-markdown` for formatting and Markdown standards. The `[!narration] Recap` is player-facing: `theatre-of-the-mind` owns its craft (`references/recaps.md`). `writing-for-humans` owns the Wiki facts. After any write, run `wiki lint <recap-path>` on the recap; the single agent-facing command reports every checker finding.
 
 ## Procedure
 
 1. **Orient.** Confirm campaign slug and session number (ask rather than guess). Prefer `hot.md` + that session folder over full index/log. Gather the play evidence: the raw transcript or play notes, and any evidence packet (the session's transcript companion, or a packet from `reconciling-session-evidence`). The packet gives the order of events; the raw play gives the moments.
-2. **Write the recap.** Load `theatre-of-the-mind` and write the narration as a **story** from its Session recap recipe, then run its final check. Earlier recaps give continuity facts only; the story is built new from the play. Then the optional short Wiki facts list for the vault (names as wikilinks, clocks moved, next handles).
+2. **Write the recap.** Load `theatre-of-the-mind` and write the narration as a **story** from its recaps reference (moment list first), then run its recap final check. Earlier recaps give continuity facts only; the story is built new from the play. Then the optional short Wiki facts list for the vault (names as wikilinks, clocks moved, next handles).
 3. **File.** Write the live path `wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md`. Then one done-summary.
 4. **Stop.** Return the recap path. Do not cascade other skills from this skill.
 

@@ -17,7 +17,7 @@ Each recipe gives: **Job** (what the block must do), **Build** (what goes in),
 - Action: combat opening state
 - Moments: social scene, suspense, revelation, return to a known place
 - Movement: travel, transition, vehicle
-- Other: business, recap, session recap, handout, vision
+- Other: business, handout, vision (recaps: [recaps.md](recaps.md))
 
 ## Handles
 
@@ -100,7 +100,9 @@ what leads.
   sentence one or two, with the frame folded around it. Then the people or
   threat in motion, every handle on the list (routes, cover, objects, someone
   to talk to), and one sense beyond sight. When play resumes mid-scene from last
-  session, open on the exact frozen moment: who is where, what is mid-motion.
+  session, the table already holds the place: open on the exact frozen moment
+  (who is where, what is mid-motion), then bring back only the anchor, what
+  changed, and what they need to act this turn.
 - **End:** The demand, the attack about to land, the stranger's question, the
   thing that is about to get away.
 
@@ -108,9 +110,11 @@ what leads.
 
 - **Job:** Put the new information source in front of the party so the scene
   can turn.
-- **Build:** A calmer frame with a sense beyond sight, then the anchor: the
-  person, document, body, or sign that holds the new information, doing
-  something. Give the players something to handle (the map, the ledger, the
+- **Build:** A calmer pace, with the situation still in the first sentence:
+  who is here, or who was here and what they left (a camp abandoned mid-meal,
+  a desk with the drawers pulled out). Then a sense beyond sight, and the
+  anchor: the person, document, body, or sign that holds the new information,
+  doing something or still showing what was done to it. Give the players something to handle (the map, the ledger, the
   grave marker) and someone to talk to. Show the evidence; the players draw
   the conclusion.
 - **End:** The NPC's first line, the object laid in front of them, the
@@ -359,40 +363,6 @@ every handle, each in its layer (§ Layers):
   prices the sources establish; a missing detail goes back to the owner skill
   as a gap.
 - **End:** The person who deals with the party noticing them.
-
-### Recap
-
-- **Job:** Bring the table back to where they stopped, read aloud as the
-  session starts.
-- **Build:** Past tense, a short paragraph, only what play made true, told as a
-  short story with the party as "you": the one or two moments the table will
-  remember, then the spot where play stopped. Then switch to present tense for
-  tonight's opening situation.
-- **End:** The live pressure that starts tonight.
-
-### Session recap
-
-- **Job:** Retell a whole session so the players relive it: the moments they
-  cheered, groaned, and laughed at, told well enough that they want to read it
-  aloud, ending on where they stand now.
-- **Sources:** Play evidence only. An evidence packet gives the order of
-  events; the raw transcript or play notes give the **moments**. The table's
-  own reactions mark them: laughter, cheering, swearing, a gasp, a big roll, a
-  line everyone repeated. Search the raw play for those reactions and read
-  what happened around each one. Prep the table never reached stays out.
-- **Build:** Past tense, the party as "you", each character by name when they
-  act. Group the session into its movements, a paragraph each, and spend the
-  words on the moments while travel and routine pass in a clause. Each moment
-  gets its setup, the character's choice made in their own style, what it
-  caused, and the one specific detail that made the table react (the table
-  leg she fought with after her sword stuck, the lantern that missed and lit
-  the bar). Heroics show the
-  risk, the choice, and the payoff; comedy gets its setup, then the turn, told
-  straight. Every player character gets at least one moment of their own.
-  Dice and rules become fiction: a critical hit is a shot that goes exactly
-  where it was aimed, a failed save is a body that stops obeying. A line a
-  player or NPC said at the table can be quoted word for word.
-- **End:** The cliffhanger as live pressure, told in the moment it stopped.
 
 ### Handout
 

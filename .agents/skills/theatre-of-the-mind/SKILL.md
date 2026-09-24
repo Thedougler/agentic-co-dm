@@ -51,7 +51,7 @@ what). File what constitution X makes canon. Follow `docs/agents/work.md`.
 ### 1. Pick the mode
 
 **Situated.** A moment in play, where the party is somewhere and something is
-happening: session-beat slots, scene openings, NPC meetings, combat, recaps,
+happening: session-beat slots, scene openings, NPC meetings, combat,
 transitions. Second person ("you"), present tense. Read
 [references/scenes.md](references/scenes.md): its handle, layer, and spine
 sections, then the recipe for your surface.
@@ -62,12 +62,17 @@ described as it always is. Third person, present tense. Read
 [references/portraits.md](references/portraits.md) and use the recipe for your
 subject.
 
+**Recap.** A retelling of play that already happened: a session recap page,
+or the recap read aloud as a session starts. Past tense, the party as "you".
+Read [references/recaps.md](references/recaps.md); it replaces steps 2 to 6
+with its moment list and story, and its final check replaces the situated
+items below.
+
 No party, encounter, or table state supplied for an owner page → portrait.
 
 ### 2. Gather the facts
 
-Read the parent (the beat page, the owner page, or for a recap the play
-evidence), every owner page the scene
+Read the parent (the beat page or the owner page), every owner page the scene
 touches (the place and region, and every person, creature, item, and hazard
 present or linked), and every spoken block before this one, including earlier
 narration of this place or person. Owner pages hold what the beat leaves out.
@@ -203,7 +208,9 @@ Done when a full pass of the final check changes nothing.
   sets the cup down hard enough to slop it" instead of angry. A person's
   mood shows in what their body does, a thing's purpose in how it is used,
   and a page label (the name a DM's notes give a voice, a zone, or a plan)
-  becomes what the characters actually meet. Size shows by
+  becomes what the characters actually meet. Something the characters
+  cannot see exists only as what they sense of it (a step with no body on
+  it, a chain ticking in empty air), however well you know what it is. Size shows by
   what it does ("it rolls, and the wave off its back slaps the pilings"), or
   by a familiar comparison (two wagon lengths). Weather, magic, and a place's
   history and working life show by their effects (rainwater ankle-deep in the
@@ -253,8 +260,7 @@ layer.
 | How the Scene Resolves / Exit | A few sentences |
 | Wiki portrait | One full paragraph covering the whole subject |
 | Place portrait with a place-design packet | As long as every tell in the packet needs, folded onto owner nouns first |
-| Recap read aloud as a session starts | A short story paragraph, then tonight's opening |
-| Session recap page | A paragraph for each movement of the session, as long as its moments need |
+| Recap (read aloud, or the session recap page) | recaps.md |
 
 ## Hard lines
 
@@ -332,8 +338,6 @@ the list again.
       matters right now, and what has changed? (Portrait) Does every Build
       item the sources give and every tell appear, so a player could sketch
       and handle the whole subject, with no party, scene, or event?
-      (Session recap) Could each player retell their character's best
-      moment from it, and say where the party stands now?
 - [ ] **Compress.** Does the first sentence give the situation or the
       danger (a caption fails), is there one anchor, does each person and
       creature come across as one feature and one behavior (not a list of
@@ -353,8 +357,8 @@ the list again.
 - [ ] **Speakable.** Read aloud, does every sentence fit one breath, with
       every place named as a stranger would, every direction one a body
       knows (no north, south, east, or west), no grid distance, no
-      semicolon or colon, and one paragraph (two when loaded, one per
-      movement in a session recap) that moves the eye?
+      semicolon or colon, and one paragraph (two when loaded) that moves
+      the eye?
 - [ ] **Hands off.** Does every "you" place the characters, let the world act
       on them, or give what their senses plainly take in, with nothing
       decided for them?
